@@ -1,0 +1,13 @@
+#events,#gamedata/events/events.json,u9?0
+#chunks,#gamedata/tables/common/chunks.json,u9?0
+#presence,#gamedata/tables/common/presence.json,u9?0
+#marketing,#gamedata/tables/common/marketing.json,u9?0
+#mp_spawn_influencers,#gamedata/tables/mp/mp_spawn_influencers.json,u9?0
+#mp_spawn_influencers_override,#gamedata/tables/mp/mp_spawn_influencers_override.json,u9?0
+#wz_spawn_influencers,#gamedata/tables/wz/wz_spawn_influencers.json,u9?0
+#wz_spawn_influencers_override,#gamedata/tables/wz/wz_spawn_influencers_override.json,u9?0
+#arena_levels,#gamedata/tables/common/arena_levels.json,u9?0
+#mp_codcaster_color_list,#gamedata/tables/mp/mp_codcaster_color_list.json,u9?0
+#mp_codcaster_logo_list,#gamedata/tables/mp/mp_codcaster_logo_list.json,u9?0
+#mp_spawn_lists,#gamedata/tables/mp/mp_spawn_lists.json,u9?0
+#wz_spawn_lists,#gamedata/tables/wz/wz_spawn_lists.json,u9?0
