@@ -38,7 +38,7 @@ function __init__()
     
     if ( zm_powerups::function_cc33adc8() )
     {
-        zm_powerups::add_zombie_powerup( "shield_charge", "p7_zm_zod_nitrous_tank", #"hash_3f5e4aa38f9aeba5", &func_drop_when_players_own, 1, 0, 0 );
+        zm_powerups::add_zombie_powerup( "shield_charge", "p7_zm_zod_nitrous_tank", #"zombie/powerup_shield_charge", &func_drop_when_players_own, 1, 0, 0 );
         zm_powerups::powerup_set_statless_powerup( "shield_charge" );
     }
     

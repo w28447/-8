@@ -1338,7 +1338,7 @@ function function_b750bd91( localclientnum, newval, str_ww )
         level.var_39ab105d = [];
     }
     
-    var_740e1e0e = level.var_39ab105d[ str_ww ];
+    mdl_rune = level.var_39ab105d[ str_ww ];
     var_408c2f30 = "";
     var_f5257d20 = "";
     
@@ -1350,21 +1350,21 @@ function function_b750bd91( localclientnum, newval, str_ww )
             level.var_6ca19725[ str_ww ] = undefined;
         }
         
-        if ( isdefined( var_740e1e0e ) )
+        if ( isdefined( mdl_rune ) )
         {
-            if ( isdefined( var_740e1e0e.var_f5257d20 ) )
+            if ( isdefined( mdl_rune.var_f5257d20 ) )
             {
-                var_740e1e0e playsound( localclientnum, var_740e1e0e.var_f5257d20 );
+                mdl_rune playsound( localclientnum, mdl_rune.var_f5257d20 );
             }
             
-            var_740e1e0e delete();
+            mdl_rune delete();
             level.var_39ab105d[ str_ww ] = undefined;
         }
         
         return;
     }
     
-    if ( !isdefined( n_fx ) && !isdefined( var_740e1e0e ) )
+    if ( !isdefined( n_fx ) && !isdefined( mdl_rune ) )
     {
         if ( newval == 1 )
         {
@@ -1433,14 +1433,14 @@ function function_b750bd91( localclientnum, newval, str_ww )
         
         n_fx = playfx( localclientnum, str_fx, s_pos.origin, anglestoforward( s_pos.angles ), anglestoup( s_pos.angles ) );
         var_cfc545ad = function_985f4598( str_ww );
-        var_740e1e0e = util::spawn_model( localclientnum, var_cfc545ad, s_pos.origin );
-        var_740e1e0e setscale( var_88dfc0c9 );
-        var_740e1e0e thread zm_red_ww_quests::function_58806d4f( localclientnum, undefined, 1 );
-        var_740e1e0e playsound( localclientnum, var_408c2f30 );
-        var_740e1e0e.var_b3673abf = var_740e1e0e playloopsound( #"hash_bd407bab72c8280" );
-        var_740e1e0e.var_f5257d20 = var_f5257d20;
+        mdl_rune = util::spawn_model( localclientnum, var_cfc545ad, s_pos.origin );
+        mdl_rune setscale( var_88dfc0c9 );
+        mdl_rune thread zm_red_ww_quests::function_58806d4f( localclientnum, undefined, 1 );
+        mdl_rune playsound( localclientnum, var_408c2f30 );
+        mdl_rune.var_b3673abf = mdl_rune playloopsound( #"hash_bd407bab72c8280" );
+        mdl_rune.var_f5257d20 = var_f5257d20;
         level.var_6ca19725[ str_ww ] = n_fx;
-        level.var_39ab105d[ str_ww ] = var_740e1e0e;
+        level.var_39ab105d[ str_ww ] = mdl_rune;
     }
 }
 

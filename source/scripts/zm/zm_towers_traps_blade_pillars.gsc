@@ -21,18 +21,18 @@
 #using scripts\zm_common\zm_unitrigger;
 #using scripts\zm_common\zm_utility;
 
-#namespace namespace_a5b1b1d7;
+#namespace zm_traps_blade_pillars;
 
-// Namespace namespace_a5b1b1d7/namespace_3c5019f6
+// Namespace zm_traps_blade_pillars/zm_towers_traps_blade_pillars
 // Params 0, eflags: 0x2
 // Checksum 0xdf76dd1c, Offset: 0x1d8
 // Size: 0x44
 function autoexec __init__system__()
 {
-    system::register( #"hash_55c1d88784016490", &__init__, &__main__, undefined );
+    system::register( #"zm_traps_blade_pillars", &__init__, &__main__, undefined );
 }
 
-// Namespace namespace_a5b1b1d7/namespace_3c5019f6
+// Namespace zm_traps_blade_pillars/zm_towers_traps_blade_pillars
 // Params 0
 // Checksum 0x7df4cf45, Offset: 0x228
 // Size: 0x3c
@@ -42,7 +42,7 @@ function __init__()
     callback::on_finalize_initialization( &init );
 }
 
-// Namespace namespace_a5b1b1d7/namespace_3c5019f6
+// Namespace zm_traps_blade_pillars/zm_towers_traps_blade_pillars
 // Params 0
 // Checksum 0x80f724d1, Offset: 0x270
 // Size: 0x4
@@ -51,7 +51,7 @@ function __main__()
     
 }
 
-// Namespace namespace_a5b1b1d7/namespace_3c5019f6
+// Namespace zm_traps_blade_pillars/zm_towers_traps_blade_pillars
 // Params 0
 // Checksum 0xcde21560, Offset: 0x280
 // Size: 0x24
@@ -60,7 +60,7 @@ function init()
     callback::on_connect( &function_96e29e5f );
 }
 
-// Namespace namespace_a5b1b1d7/namespace_3c5019f6
+// Namespace zm_traps_blade_pillars/zm_towers_traps_blade_pillars
 // Params 0
 // Checksum 0x80f724d1, Offset: 0x2b0
 // Size: 0x4
@@ -69,7 +69,7 @@ function function_96e29e5f()
     
 }
 
-// Namespace namespace_a5b1b1d7/namespace_3c5019f6
+// Namespace zm_traps_blade_pillars/zm_towers_traps_blade_pillars
 // Params 0
 // Checksum 0x4503da3d, Offset: 0x2c0
 // Size: 0x174
@@ -88,7 +88,7 @@ function function_286b5fa9()
     zm_traps::register_trap_damage( "blade_pillar", &player_damage, &damage );
 }
 
-// Namespace namespace_a5b1b1d7/namespace_3c5019f6
+// Namespace zm_traps_blade_pillars/zm_towers_traps_blade_pillars
 // Params 1
 // Checksum 0x83b12ead, Offset: 0x440
 // Size: 0x20, Type: bool
@@ -97,7 +97,7 @@ function function_f0f82833( e_ent )
     return e_ent.script_noteworthy == "blade_pillar";
 }
 
-// Namespace namespace_a5b1b1d7/namespace_3c5019f6
+// Namespace zm_traps_blade_pillars/zm_towers_traps_blade_pillars
 // Params 0
 // Checksum 0x6e8b8a54, Offset: 0x468
 // Size: 0xbe
@@ -112,7 +112,7 @@ function function_d8e7a5e6()
     self.soul_whale = soul_whale;
 }
 
-// Namespace namespace_a5b1b1d7/namespace_3c5019f6
+// Namespace zm_traps_blade_pillars/zm_towers_traps_blade_pillars
 // Params 0
 // Checksum 0xb769be1d, Offset: 0x530
 // Size: 0x2f4
@@ -156,7 +156,7 @@ function function_8fe2d903()
     }
 }
 
-// Namespace namespace_a5b1b1d7/namespace_3c5019f6
+// Namespace zm_traps_blade_pillars/zm_towers_traps_blade_pillars
 // Params 0
 // Checksum 0x80f724d1, Offset: 0x830
 // Size: 0x4
@@ -165,7 +165,7 @@ function function_96f77ea4()
     
 }
 
-// Namespace namespace_a5b1b1d7/namespace_3c5019f6
+// Namespace zm_traps_blade_pillars/zm_towers_traps_blade_pillars
 // Params 1
 // Checksum 0x566d8889, Offset: 0x840
 // Size: 0x1a0
@@ -189,7 +189,7 @@ function function_45a2294f( str_id )
     level notify( #"traps_available", { #var_be3f58a:str_id } );
 }
 
-// Namespace namespace_a5b1b1d7/namespace_3c5019f6
+// Namespace zm_traps_blade_pillars/zm_towers_traps_blade_pillars
 // Params 0
 // Checksum 0x702d94db, Offset: 0x9e8
 // Size: 0xec
@@ -222,7 +222,7 @@ function function_6f34f900()
     }
 }
 
-// Namespace namespace_a5b1b1d7/namespace_3c5019f6
+// Namespace zm_traps_blade_pillars/zm_towers_traps_blade_pillars
 // Params 1
 // Checksum 0xbb28f6e3, Offset: 0xae0
 // Size: 0x62
@@ -239,7 +239,7 @@ function activate_trap( e_player )
     }
 }
 
-// Namespace namespace_a5b1b1d7/namespace_3c5019f6
+// Namespace zm_traps_blade_pillars/zm_towers_traps_blade_pillars
 // Params 1
 // Checksum 0x51597eed, Offset: 0xb50
 // Size: 0x4e
@@ -250,7 +250,7 @@ function deactivate_trap( e_trap )
     self notify( #"deactivate" );
 }
 
-// Namespace namespace_a5b1b1d7/namespace_3c5019f6
+// Namespace zm_traps_blade_pillars/zm_towers_traps_blade_pillars
 // Params 1
 // Checksum 0x4f4ecc4d, Offset: 0xba8
 // Size: 0x28c
@@ -290,7 +290,7 @@ function damage( e_trap )
     self thread zm_towers_util::function_ae1b4f5b( 90, 75, 25 );
 }
 
-// Namespace namespace_a5b1b1d7/namespace_3c5019f6
+// Namespace zm_traps_blade_pillars/zm_towers_traps_blade_pillars
 // Params 1
 // Checksum 0xc8a62039, Offset: 0xe40
 // Size: 0x12c
@@ -320,7 +320,7 @@ function player_damage( t_damage )
     self setstance( "crouch" );
 }
 
-// Namespace namespace_a5b1b1d7/namespace_3c5019f6
+// Namespace zm_traps_blade_pillars/zm_towers_traps_blade_pillars
 // Params 4
 // Checksum 0x3f866014, Offset: 0xf78
 // Size: 0x16c

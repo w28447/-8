@@ -321,7 +321,7 @@ function private function_3d5e8286()
     self.fovcosinez = 0;
     self.closest_player_override = &zm_utility::function_c52e1749;
     self.var_1a60ad62 = 0;
-    self.var_b7ba7211 = 0;
+    self.pain_cooldown = 0;
     self.var_9d9575a4 = 0;
     self.ignore_nuke = 1;
     self.lightning_chain_immune = 1;
@@ -583,7 +583,7 @@ function private function_ebf85268( inflictor, attacker, damage, idflags, meanso
     
     if ( !( isdefined( self.var_48baa747 ) && self.var_48baa747 ) && !( isdefined( self.var_e9ed8a62 ) && self.var_e9ed8a62 ) && self.var_c59e2dbf > self.maxhealth * self ai::function_9139c839().var_96b9b674 / 100 )
     {
-        if ( self.var_b7ba7211 < gettime() && hasasm( self ) && self function_ebbebf56() >= 1 )
+        if ( self.pain_cooldown < gettime() && hasasm( self ) && self function_ebbebf56() >= 1 )
         {
             self.var_1cfbbe3d = 1;
         }
@@ -712,7 +712,7 @@ function private werewolfshouldshowpain( entity )
 function private function_4014790a( entity )
 {
     entity.var_1cfbbe3d = undefined;
-    entity.var_b7ba7211 = gettime() + int( entity ai::function_9139c839().var_bd87ef4d * 1000 );
+    entity.pain_cooldown = gettime() + int( entity ai::function_9139c839().var_bd87ef4d * 1000 );
     entity.blockingpain = 1;
     function_43f02cf0( entity );
 }
@@ -846,7 +846,7 @@ function private werewolftargetservice( entity )
         }
     #/
     
-    entity.favoriteenemy = entity.var_93a62fe;
+    entity.favoriteenemy = entity.closest_valid_player;
     
     if ( entity ai::has_behavior_attribute( "patrol" ) && entity ai::get_behavior_attribute( "patrol" ) )
     {
@@ -893,9 +893,9 @@ function private werewolftargetservice( entity )
         return 0;
     }
     
-    if ( isdefined( entity.var_93a62fe ) )
+    if ( isdefined( entity.closest_valid_player ) )
     {
-        targetpos = getclosestpointonnavmesh( entity.var_93a62fe.origin, 100, self getpathfindingradius() );
+        targetpos = getclosestpointonnavmesh( entity.closest_valid_player.origin, 100, self getpathfindingradius() );
         
         if ( !isdefined( targetpos ) )
         {

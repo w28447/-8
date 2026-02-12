@@ -146,7 +146,7 @@ function function_ad26976()
 // Params 2
 // Checksum 0xaf74e8d4, Offset: 0x9f8
 // Size: 0x1b4
-function function_211e7277( point, var_8bd17d7d )
+function function_211e7277( point, angle_forward )
 {
     nearby_players = getplayers( undefined, point.origin, 256 );
     move_pos = point.origin;
@@ -165,7 +165,7 @@ function function_211e7277( point, var_8bd17d7d )
             if ( distance( player.origin, point.origin ) < 16 && player.sessionstate == "playing" )
             {
                 var_93a4284 = 1;
-                n_forward = var_8bd17d7d;
+                n_forward = angle_forward;
                 n_forward *= ( 32, 32, 0 );
                 move_pos += n_forward;
                 break;
@@ -273,12 +273,12 @@ function elevator_kill_player( t_damage )
             if ( level.inprematchperiod )
             {
                 point = struct::get( t_damage.target );
-                var_8bd17d7d = anglestoforward( point.angles );
-                var_8bd17d7d = vectornormalize( var_8bd17d7d );
+                angle_forward = anglestoforward( point.angles );
+                angle_forward = vectornormalize( angle_forward );
                 
                 if ( isdefined( point ) )
                 {
-                    e_player function_211e7277( point, var_8bd17d7d );
+                    e_player function_211e7277( point, angle_forward );
                 }
                 
                 continue;
@@ -355,12 +355,12 @@ function function_26ab1b5e( t_damage )
                             }
                             
                             point = struct::get( "elevator_teleport_" + var_96c44bd9, "targetname" );
-                            var_8bd17d7d = anglestoforward( point.angles );
-                            var_8bd17d7d = vectornormalize( var_8bd17d7d );
+                            angle_forward = anglestoforward( point.angles );
+                            angle_forward = vectornormalize( angle_forward );
                             
                             if ( isdefined( point ) )
                             {
-                                player function_211e7277( point, var_8bd17d7d );
+                                player function_211e7277( point, angle_forward );
                             }
                             
                             continue;

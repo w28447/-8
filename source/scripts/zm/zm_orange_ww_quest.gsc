@@ -186,7 +186,7 @@ function function_a28a5c21()
     s_result = self waittill( #"trigger_activated" );
     e_who = s_result.e_who;
     self playsound( #"hash_345f1d31b52a4589" );
-    e_who thread zm_orange_util::function_51b752a9( #"hash_3b257ebd55a83e3d" );
+    e_who thread zm_orange_util::function_51b752a9( #"vox_icicle_pickup" );
     level zm_ui_inventory::function_7df6bb60( "zm_orange_ww_quest", 1 );
     self zm_unitrigger::unregister_unitrigger( self.s_unitrigger );
     level flag::set( #"hash_550c8dc4c89d7873" );
@@ -334,12 +334,12 @@ function function_993730f4()
 // Size: 0x6c
 function function_a67de655( e_player )
 {
-    e_player zm_orange_util::function_51b752a9( #"hash_7e030fccc2c5a121" );
+    e_player zm_orange_util::function_51b752a9( #"vox_pickup_generic" );
     wait 1;
     
     if ( level.var_98138d6b > 1 )
     {
-        level.var_1c53964e thread zm_hms_util::function_6a0d675d( #"hash_7cc5c64ef2e9f6bf" );
+        level.var_1c53964e thread zm_hms_util::function_6a0d675d( #"vox_key_pickup" );
     }
 }
 

@@ -328,14 +328,14 @@ function overridedamage_player( e_inflictor, e_attacker, n_damage, n_dflags, str
         var_d0621c54 = n_damage;
     }
     
-    var_754eb193 = int( var_d0621c54 / 2 );
+    n_new_damage = int( var_d0621c54 / 2 );
     
     if ( isdefined( self.var_99b2032f ) && self.var_99b2032f )
     {
-        var_754eb193 = 0;
+        n_new_damage = 0;
     }
     
-    return var_754eb193;
+    return n_new_damage;
 }
 
 // Namespace ct_firebreak_tutorial/ct_firebreak_tutorial

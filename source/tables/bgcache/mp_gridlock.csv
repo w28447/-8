@@ -395,7 +395,7 @@ soundalias,#hash_bbafec33c2adca2
 soundalias,#hash_bd53719309b6fc1
 soundalias,#hash_c266934b6e24701
 soundalias,#hash_ca467b11bcaf711
-soundalias,#hash_cc693b3173e7565
+soundalias,#exp_concussive_large
 soundalias,#hash_e9079ea0995dab8
 soundalias,#vox_tvoi_tutor_crash_final_score_earn_4
 soundalias,#hash_e9de0cecbdc8973
@@ -445,7 +445,7 @@ soundalias,#hash_25a264b901d17919
 soundalias,#hash_267821e3be703ce7
 soundalias,#hash_26bf012beaa38162
 soundalias,#hash_2730ba20330dff4a
-soundalias,#hash_2748aa2e6dc57ae0
+soundalias,#dst_car_tire_deflate
 soundalias,#hash_28328610c057a0b7
 soundalias,#hash_290256f0b80d4f19
 soundalias,#dst_paper
@@ -587,7 +587,7 @@ soundalias,#hash_633b9532cf0da169
 soundalias,#hash_6349af28658d6d14
 soundalias,#hash_65337304c8c7b0cd
 soundalias,#hash_663899d42687914d
-soundalias,#hash_66aa6b049c23fa3f
+soundalias,#exp_incindiary_large
 soundalias,#hash_66f25a8f7113d138
 soundalias,#hash_66f25b8f7113d2eb
 soundalias,#hash_67e1b634a1e1c1ba
@@ -617,7 +617,7 @@ soundalias,#hash_77516f2cb5929643
 soundalias,#hash_77a39cb220d8ab15
 soundalias,#hash_77ae18c6b0d66864
 soundalias,#hash_77ae1ec6b0d67296
-soundalias,#hash_77b737b3d5bea0e9
+soundalias,#amb_chimes
 soundalias,#hash_7809ea482909306c
 soundalias,#hash_7815e8cf92df5b5b
 soundalias,#hash_786dd82792eda658
@@ -626,12 +626,12 @@ soundalias,#hash_79e7070c3130f4a9
 soundalias,#exp_veh_plane_spinout_lp
 soundalias,#hash_7ac5fa6568de2461
 soundalias,#hash_7b03a9cee3b85887
-soundalias,#hash_7c2e59ca3ee725e5
+soundalias,#exp_veh_med
 soundalias,#hash_7d8a713978eb1fe0
 soundalias,#hash_7e17e533381a8506
 soundalias,#hash_7eb51f1a0028ab28
 soundalias,#hash_7eb61b52bfff40f7
-soundalias,#hash_7eede30e6e0cbe65
+soundalias,#amb_occ_fan
 soundalias,#hash_7f118ea3a4874268
 soundalias,#hash_7fe19ceed35907ce
 client_fx,#hash_108737043f604f2

@@ -4140,10 +4140,10 @@ function look_along_path()
 // Size: 0x23c
 function function_412e04fa( node )
 {
-    var_208965cf = node.spawnflags & 262144;
-    var_a26a51ba = node.spawnflags & 524288;
+    peekleft = node.spawnflags & 262144;
+    peekright = node.spawnflags & 524288;
     
-    if ( !var_208965cf && !var_a26a51ba )
+    if ( !peekleft && !peekright )
     {
         self botsetlookangles( node.angles );
         return;
@@ -4152,7 +4152,7 @@ function function_412e04fa( node )
     noderight = anglestoright( node.angles );
     rotation = isfullcovernode( node ) ? 20 : 45;
     
-    if ( var_208965cf && var_a26a51ba )
+    if ( peekleft && peekright )
     {
         if ( isfullcovernode( node ) )
         {
@@ -4173,7 +4173,7 @@ function function_412e04fa( node )
             rotation *= -1;
         }
     }
-    else if ( var_a26a51ba )
+    else if ( peekright )
     {
         rotation *= -1;
     }

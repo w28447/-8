@@ -282,7 +282,7 @@ function function_e8d6a81b( e_item )
 {
     s_punch_card = level.var_5a599dbf[ level.var_3d015a65 ];
     s_punch_card.in_inventory = 1;
-    self thread zm_vo::function_a2bd5a0c( #"hash_7e030fccc2c5a121" );
+    self thread zm_vo::function_a2bd5a0c( #"vox_pickup_generic" );
     
     if ( isdefined( e_item ) )
     {

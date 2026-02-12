@@ -275,9 +275,9 @@ function function_47a88a0c( n_to_spawn = 1, var_1fafa3fc, b_force_spawn = 0, var
         {
             s_spawn_loc = var_eb3a8721;
         }
-        else if ( isdefined( level.var_b106cd7a ) )
+        else if ( isdefined( level.werewolf_spawn_func ) )
         {
-            s_spawn_loc = [[ level.var_b106cd7a ]]();
+            s_spawn_loc = [[ level.werewolf_spawn_func ]]();
         }
         else if ( level.zm_loc_types[ #"werewolf_location" ].size > 0 )
         {
@@ -314,9 +314,9 @@ function function_47a88a0c( n_to_spawn = 1, var_1fafa3fc, b_force_spawn = 0, var
             
             n_spawned++;
             
-            if ( isdefined( level.var_7e40409b ) )
+            if ( isdefined( level.werewolf_on_spawned ) )
             {
-                ai thread [[ level.var_7e40409b ]]( s_spawn_loc );
+                ai thread [[ level.werewolf_on_spawned ]]( s_spawn_loc );
             }
             
             if ( isdefined( var_1fafa3fc ) )

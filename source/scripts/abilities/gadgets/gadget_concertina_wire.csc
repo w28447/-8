@@ -163,7 +163,7 @@ function function_1c2930c7( localclientnum )
             continue;
         }
         
-        if ( isdefined( level.var_87226c31.bundle.var_8fa9aac4 ) ? level.var_87226c31.bundle.var_8fa9aac4 : 0 )
+        if ( isdefined( level.var_87226c31.bundle.showprevis ) ? level.var_87226c31.bundle.showprevis : 0 )
         {
             if ( var_b43e8dc2.var_bf9ca9b0 )
             {

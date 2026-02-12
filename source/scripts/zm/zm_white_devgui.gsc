@@ -39,7 +39,7 @@
             zm_devgui::zombie_devgui_open_sesame();
         }
         
-        level.old_dog_spawn = &zombie_dog_util::function_62db7b1c;
+        level.old_dog_spawn = &zombie_dog_util::spawn_single_dog;
         zm_white_special_rounds::function_6acd363d( 1 );
     }
 
@@ -97,7 +97,7 @@
                     break;
                 case #"skip3":
                     function_3db5079();
-                    namespace_a01a2431::function_256cc56e();
+                    zm_white_ww_quest_weapon::function_256cc56e();
                     break;
                 case #"cheat1":
                     iprintlnbold( "<dev string:x368>" + level.var_276bd207[ 0 ] + level.var_276bd207[ 1 ] + level.var_276bd207[ 2 ] + level.var_276bd207[ 3 ] );

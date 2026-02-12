@@ -67,7 +67,7 @@ function setdefaultcallbacks()
     level.callbackplayermelee = &globallogic_player::callback_playermelee;
     level.callbackactorspawned = &globallogic_actor::callback_actorspawned;
     level.callbackactorcloned = &globallogic_actor::callback_actorcloned;
-    level.var_6788bf11 = &globallogic_scriptmover::function_8c7ec52f;
+    level.callbackscriptmoverdamage = &globallogic_scriptmover::callback_scriptmoverdamage;
     level.callbackvehiclespawned = &globallogic_vehicle::callback_vehiclespawned;
     level.callbackplayermigrated = &globallogic_player::callback_playermigrated;
     level.callbackhostmigration = &hostmigration::callback_hostmigration;

@@ -28,17 +28,17 @@ function __init__()
 {
     clientfield::register( "toplayer", "nosferatu_damage_fx", 8000, 1, "counter", &nosferatudamagefx, 0, 0 );
     clientfield::register( "actor", "nosferatu_spawn_fx", 8000, 1, "counter", &nosferatu_spawn_fx, 0, 0 );
-    clientfield::register( "actor", "nfrtu_silver_hit_fx", 8000, 1, "counter", &function_6b82c26d, 0, 0 );
+    clientfield::register( "actor", "nfrtu_silver_hit_fx", 8000, 1, "counter", &nosferatusilverhitfx, 0, 0 );
     clientfield::register( "actor", "summon_nfrtu", 8000, 1, "int", &function_4207e678, 0, 0 );
     clientfield::register( "actor", "nfrtu_move_dash", 8000, 1, "int", &function_a354a47f, 0, 0 );
-    ai::add_archetype_spawn_function( #"nosferatu", &function_5ec9aadb );
+    ai::add_archetype_spawn_function( #"nosferatu", &nosferatuonspawned );
 }
 
 // Namespace zm_ai_nosferatu/zm_ai_nosferatu
 // Params 7, eflags: 0x4
 // Checksum 0x6a878a8a, Offset: 0x3c0
 // Size: 0x6c
-function private function_6b82c26d( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function private nosferatusilverhitfx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( newval == 1 )
     {
@@ -106,7 +106,7 @@ function private function_a354a47f( localclientnum, oldval, newval, bnewent, bin
 // Params 1, eflags: 0x4
 // Checksum 0xee577042, Offset: 0x640
 // Size: 0x12c
-function private function_5ec9aadb( localclientnum )
+function private nosferatuonspawned( localclientnum )
 {
     if ( zm_custom::function_901b751c( #"zmhealthregenrate" ) == 2 && zm_custom::function_901b751c( #"zmhealthregendelay" ) == 1 )
     {

@@ -283,7 +283,7 @@ function private travel_dist()
                     if ( isdefined( self.outsidedeathcircle ) && self.outsidedeathcircle )
                     {
                         self stats::function_d40764f3( #"hash_630fffa7f053a2b7", int( distance ) );
-                        self match_record::function_34800eec( #"hash_630fffa7f053a2b7", int( distance ) );
+                        self match_record::inc_player_stat( #"hash_630fffa7f053a2b7", int( distance ) );
                     }
                 }
             }

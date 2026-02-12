@@ -341,7 +341,7 @@ function function_62ef723( activator, laststate, state )
         return;
     }
     
-    if ( isdefined( self.var_7dee147e ) && self.var_7dee147e )
+    if ( isdefined( self.boastplaying ) && self.boastplaying )
     {
         return;
     }
@@ -353,7 +353,7 @@ function function_62ef723( activator, laststate, state )
         
         if ( dot < -0.8 && distance < 24 )
         {
-            self.var_7dee147e = 1;
+            self.boastplaying = 1;
             activator playboast( "boast_tambour_tribute" );
             activator stats::function_d40764f3( #"tanbor_fudgely_interactions", 1 );
             level thread function_274ee8b5( self, activator );
@@ -374,6 +374,6 @@ function function_274ee8b5( dynent, var_8a50fb55 )
         waitframe( 1 );
     }
     
-    dynent.var_7dee147e = 0;
+    dynent.boastplaying = 0;
 }
 

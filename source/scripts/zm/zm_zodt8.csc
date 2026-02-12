@@ -79,8 +79,8 @@ function event_handler[level_init] main( eventstruct )
     level.var_d0ab70a2 = #"gamedata/weapons/zm/zm_zodt8_weapons.csv";
     zodt8_pap_quest::init();
     zodt8_sentinel::init();
-    namespace_4a807bff::init();
-    namespace_b45e3f05::init();
+    zodt8_wonder_weapon_quest::init();
+    zodt8_side_quests::init();
     zodt8_narrative::init();
     zm_audio_sq::init();
     load::main();

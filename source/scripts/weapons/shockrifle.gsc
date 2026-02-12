@@ -576,7 +576,7 @@ function function_92eabc2f( ent, var_51415470 )
     {
         if ( ent clientfield::get_to_player( "vision_pulse_active" ) == 1 )
         {
-            ent [[ level.shutdown_vision_pulse ]]( 0, 1, ent.var_1ad61d27 );
+            ent [[ level.shutdown_vision_pulse ]]( 0, 1, ent.visionpulseweapon );
             waitframe( 1 );
         }
         

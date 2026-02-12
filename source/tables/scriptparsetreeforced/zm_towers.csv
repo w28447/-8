@@ -5,7 +5,7 @@ server,#scripts/zm/zm_towers_traps_hellpools.gsc
 server,#scripts/zm/weapons/zm_weap_crossbow.gsc
 server,#scripts/zm/zm_towers_ffotd.gsc
 server,#scripts/zm/ai/zm_ai_gladiator.gsc
-server,#script_22272f0ebd9de783
+server,#scripts\zm\zm_towers_traps_blade_pillars.gsc
 server,#scripts/zm_common/util/ai_gladiator_util.gsc
 server,#scripts/zm/ai/zm_ai_tiger.gsc
 server,#scripts/zm/powerup/zm_powerup_free_perk.gsc

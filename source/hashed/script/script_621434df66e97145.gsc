@@ -48,10 +48,10 @@ function preload()
 function init()
 {
     level thread init_weapons_locker();
-    level thread function_33e9442f();
-    level thread function_31c7123b();
-    level thread function_d8a7606();
-    level thread function_982029e3();
+    level thread init_ray_gun_case();
+    level thread init_shower_trap();
+    level thread init_fire_trap();
+    level thread init_spinning_trap();
 }
 
 // Namespace namespace_87b5173f/namespace_87b5173f
@@ -95,7 +95,7 @@ function init_weapons_locker()
 // Params 0
 // Checksum 0x7ddb91a3, Offset: 0x958
 // Size: 0x1f4
-function function_33e9442f()
+function init_ray_gun_case()
 {
     level.s_ray_gun_case = struct::get( "s_ray_gun_case", "targetname" );
     level.s_ray_gun_case.s_case = struct::get( "rg_case", "targetname" );
@@ -121,7 +121,7 @@ function function_33e9442f()
 // Params 0
 // Checksum 0xc1640e9b, Offset: 0xb58
 // Size: 0x278
-function function_31c7123b()
+function init_shower_trap()
 {
     level.s_shower_trap = struct::get( "s_shower_trap", "targetname" );
     s_trap = level.s_shower_trap;
@@ -421,7 +421,7 @@ function function_13e49422( trap )
 // Params 0
 // Checksum 0x33bc82dc, Offset: 0x1a80
 // Size: 0x290
-function function_d8a7606()
+function init_fire_trap()
 {
     level.s_fire_trap = struct::get( "s_fire_trap", "targetname" );
     s_trap = level.s_fire_trap;
@@ -716,7 +716,7 @@ function function_867c70bf()
 // Params 0
 // Checksum 0xf85c33c5, Offset: 0x2a68
 // Size: 0x2b8
-function function_982029e3()
+function init_spinning_trap()
 {
     level.s_spinning_trap = struct::get( "s_spinning_trap", "targetname" );
     s_trap = level.s_spinning_trap;

@@ -348,8 +348,8 @@ function function_5c5680f5( var_5ea5c94d )
     level notify( #"force_transformations" );
     level function_ae76e58d();
     level thread function_482a7a01();
-    level.var_b106cd7a = &function_de5e2c78;
-    level.var_7e40409b = &function_83275bc3;
+    level.werewolf_spawn_func = &function_de5e2c78;
+    level.werewolf_on_spawned = &function_83275bc3;
     clientfield::set( "" + #"hash_2709d50a7b0a2b01", 1 );
     level thread scene::init_streamer( #"aib_t8_zm_mnsn_hallion_intro", #"allies", 0, 0 );
     level boss_teleport_players( 1 );
@@ -444,8 +444,8 @@ function function_43f5567a( var_5ea5c94d, ended_early )
     level.var_eeb98313 = undefined;
     level.custom_spawnplayer = undefined;
     level.disable_nuke_delay_spawning = 0;
-    level.var_b106cd7a = &zm_mansion_special_rounds::function_50ec1ddf;
-    level.var_7e40409b = &zombie_werewolf_util::function_774f6e70;
+    level.werewolf_spawn_func = &zm_mansion_special_rounds::function_50ec1ddf;
+    level.werewolf_on_spawned = &zombie_werewolf_util::function_774f6e70;
 }
 
 // Namespace mansion_boss_ww/zm_mansion_boss_ww
@@ -665,7 +665,7 @@ function boss_teleport_players( var_a88dacea )
         var_45e1b44b.scene_ents[ #"fakeactor 1" ] thread function_8d29523e( #"boss_invisible" );
         var_45e1b44b.scene_ents[ #"fakeactor 1" ] function_d84758c();
         wait 0.2;
-        level notify( #"hash_1b248026aeb05066" );
+        level notify( #"boss_intro_done" );
         level.var_b88cf121 = 1;
         level zm_audio::sndvoxoverride( 0 );
         return;
@@ -702,7 +702,7 @@ function function_52818528()
     wait n_wait;
     mansion_util::function_2057ddc1( undefined, "werewolf", "intro", undefined, #"werewolf_intro", 10, 1, 0, 1 );
     wait 1;
-    mansion_util::function_2057ddc1( undefined, "druid_arena", "enter", undefined, #"hash_6ffba77e7b683b46", 10, 1 );
+    mansion_util::function_2057ddc1( undefined, "druid_arena", "enter", undefined, #"druid_arena_enter", 10, 1 );
 }
 
 // Namespace mansion_boss_ww/zm_mansion_boss_ww
@@ -728,7 +728,7 @@ function function_528abede( s_loc, var_79bdd0d5 )
         self val::set( "bossfight_intro", "disable_weapons", 1 );
         level waittill( #"hash_4b195fabca6f5aaf" );
         self thread lui::screen_fade_in( 0.1 );
-        level waittill( #"hash_1b248026aeb05066" );
+        level waittill( #"boss_intro_done" );
         self val::reset( "bossfight_intro", "freezecontrols" );
         self val::reset( "bossfight_intro", "disable_weapons" );
     }
@@ -1848,7 +1848,7 @@ function function_677a2503( var_754a5572 = 1 )
         v_loc = undefined;
     }
     
-    mansion_util::function_2057ddc1( v_loc, "werewolf", "enemy_enter", undefined, #"hash_3738d07fc833937e" );
+    mansion_util::function_2057ddc1( v_loc, "werewolf", "enemy_enter", undefined, #"werewolf_enemy_enter" );
 }
 
 // Namespace mansion_boss_ww/zm_mansion_boss_ww
@@ -2084,14 +2084,14 @@ function function_47e0a10b( n_stage )
         level thread function_1025059f( var_883035ad, n_statue, level.s_boss.var_2d102ea7 );
     }
     
-    level thread function_64000eab();
+    level thread destrovox dest();
 }
 
 // Namespace mansion_boss_ww/zm_mansion_boss_ww
 // Params 0
 // Checksum 0xf6bf46cf, Offset: 0x73f0
 // Size: 0x11c
-function function_64000eab()
+function destrovox dest()
 {
     level endon( #"hash_38f29f9cb03586ea", #"hash_348a23891a681a5f", #"end_game", #"intermission" );
     
@@ -2591,7 +2591,7 @@ function function_e9cc6379( var_4642da4d, var_732926d1 = 0 )
             }
             
             level waittill( #"hash_71dbe2201553374b" );
-            ai_nosferatu = zm_ai_nosferatu::function_74f25f8a( 1, undefined, 1, n_round );
+            ai_nosferatu = zm_ai_nosferatu::spawn_single_nosferatu( 1, undefined, 1, n_round );
             
             if ( isalive( ai_nosferatu ) )
             {
@@ -2862,8 +2862,8 @@ function function_8f28b521()
         level.var_1821f542 = 0;
         level.var_df7e1ee2 = 0;
         level.var_4d950fdc = 0;
-        level.var_b106cd7a = &function_de5e2c78;
-        level.var_7e40409b = &function_83275bc3;
+        level.werewolf_spawn_func = &function_de5e2c78;
+        level.werewolf_on_spawned = &function_83275bc3;
         level thread zm_transform::function_e95ec8df( 1 );
         level thread function_482a7a01();
         level function_ae76e58d();

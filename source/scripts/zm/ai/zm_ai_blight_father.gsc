@@ -99,7 +99,7 @@ function __init__()
     level thread aat::register_immunity( "zm_aat_kill_o_watt", #"blight_father", 1, 1, 1 );
     level thread aat::register_immunity( "zm_aat_plasmatic_burst", #"blight_father", 1, 1, 1 );
     blight_father_spawner = getent( "zombie_spawner_blight_father", "targetname" );
-    zm_transform::function_cfca77a7( blight_father_spawner, #"blight_father", &function_39212989, 10, &function_3a0cdf7f, &function_8e4c43d3, "aib_vign_zm_zod_bltfthr_spawn_pre_split", "aib_vign_zm_zod_bltfthr_spawn_post_split" );
+    zm_transform::function_cfca77a7( blight_father_spawner, #"blight_father", &function_39212989, 10, &transform_start, &function_8e4c43d3, "aib_vign_zm_zod_bltfthr_spawn_pre_split", "aib_vign_zm_zod_bltfthr_spawn_post_split" );
     zm_spawner::register_zombie_death_event_callback( &killed_callback );
     callback::on_ai_killed( &function_7bef9c3c );
     zm_round_spawning::register_archetype( #"blight_father", &function_633d7436, &round_spawn, undefined, 300 );
@@ -938,7 +938,7 @@ function private function_911c3934( entity )
         }
     #/
     
-    if ( !isdefined( entity.var_93a62fe ) )
+    if ( !isdefined( entity.closest_valid_player ) )
     {
         if ( isdefined( self.ignore_player ) )
         {
@@ -1018,11 +1018,11 @@ function private function_911c3934( entity )
     }
     else
     {
-        targetpos = entity.var_93a62fe.origin;
+        targetpos = entity.closest_valid_player.origin;
         zm_utility::function_64259898( targetpos );
     }
     
-    entity.favoriteenemy = entity.var_93a62fe;
+    entity.favoriteenemy = entity.closest_valid_player;
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
@@ -3654,7 +3654,7 @@ function function_39212989()
 // Params 0
 // Checksum 0xbe12c35a, Offset: 0xc368
 // Size: 0x12
-function function_3a0cdf7f()
+function transform_start()
 {
     self.b_ignore_cleanup = 1;
 }

@@ -9,11 +9,11 @@ physpreset,#p7_ceiling_fan_metal_motor
 physpreset,#hash_233f75e19277d3cf
 physpreset,#hash_259f146613c9e5d3
 physpreset,#hash_2d2315df8c3e1636
-physpreset,#hash_2e1a6a36da3d4fc3
+physpreset,#sandbag
 physpreset,#helmet
 physpreset,#p7_supply_briefcase_02
 physpreset,#p7_medical_surgical_tray_tools_bloody
-physpreset,#hash_408bcb61fe20d903
+physpreset,#ashtray
 physpreset,#p7_bag_cement_blue
 physpreset,#p7_sin_boxes_chinese_medicin_sgl_01
 physpreset,#p7_debris_trash_snack_bag_06
@@ -24599,7 +24599,7 @@ image,d#i_attach_t8_ar_accurate_grip_sig_01_s
 image,d#i_wpn_t8_knife_combat_grip_n
 image,d#i_wpn_t8_knife_combat_grip_o
 image,d#i_wpn_t8_knife_combat_grip_m
-image,d#hash_27d2980e98d88c55
+image,d#$alpha
 image,d#fxt8_water_ripple_anim_mask
 image,#i_mtl_p7_slu_meter_electric_01_base_burnt_n
 image,#i_mtl_p7_slu_meter_electric_01_base_burnt_m
@@ -59369,7 +59369,7 @@ material,#hash_15f66eb32439250d
 material,d#ei/gfx_smk_whisp_anim_02_high_gray_lit
 material,d#hash_15ff0e3297252568
 material,#hash_15ff13cb75dc41fc
-material,#hash_16026d20e691b59d
+material,#generic_filter_zm_wormhole
 material,d#hash_160282329728205b
 material,#mc/mtl_p8_box_electric_commercial_decal_sign_02
 material,#mc/mtl_p8_box_electric_commercial_decal_sign_01
@@ -67283,7 +67283,7 @@ sharedweaponsounds,#hash_367e85d5f5c45ca
 sharedweaponsounds,d#ballistic
 sharedweaponsounds,#hash_b2107e63787b0c3
 sharedweaponsounds,d#bowie
-sharedweaponsounds,#hash_1d67e7e14d596701
+sharedweaponsounds,#battle_shield
 sharedweaponsounds,#rocketshield
 sharedweaponsounds,d#dog_melee
 sharedweaponsounds,d#knife
@@ -68548,7 +68548,7 @@ xmodel,#p8_conduit_metal_pipe_1_straight_8_rust
 xmodel,#p8_zm_whi_conc_sidwalk_slab_01_edge_decal
 xmodel,#hash_2e33378a2f88eac8
 xmodel,#p8_zm_man_dinnerware_tea_cup_01_plate
-xmodel,#hash_2e4fec9ed26690ce
+xmodel,#wpn_t7_zmb_dlc2_shield_dmg01_view
 xmodel,#p7_hazmat_gloves
 xmodel,#hash_2e76f3bc34d85b61
 xmodel,#hash_2e7eca5d6ac1021c
@@ -68977,7 +68977,7 @@ xmodel,#hash_3eaa4d14f6425ba1
 xmodel,#p8_zm_whi_operational_posters_apd_01b
 xmodel,#p8_zm_whi_operational_posters_apd_01a
 xmodel,#p7_fxanim_cp_biodomes_floating_debris_01_smod
-xmodel,#hash_3ebb082a36ccc8d2
+xmodel,#wpn_t7_zmb_dlc2_shield_view
 xmodel,#p8_zm_whi_laundry_dress_shirt
 xmodel,#p8_wz_nt_garage_door_residential_cream
 xmodel,#p7_jun_radio_panel
@@ -70763,7 +70763,7 @@ fx,#hash_245f01a020ea2562
 fx,d#hash_247c28b43c001b30
 fx,d#zm_ai/fx8_dog_lightning_spawn
 fx,#hash_249dba1d4bc59388
-fx,d#hash_249f091d13da3663
+fx,d#zm_ai/fx8_dog_eye_glow
 fx,#hash_24a1ed7fe233c494
 fx,#hash_24fb9f1cba33a365
 fx,#hash_251307aa9b1c5042
@@ -71709,7 +71709,7 @@ fx,#hash_1fe7b0ba967e52f6
 fx,#hash_200de2be21c77806
 fx,#hash_201378189651055d
 fx,#hash_21c1f4b1b35d63a5
-fx,d#hash_21f397376b81d9ef
+fx,d#impacts/fx_bul_impact_blood_body_fatal
 fx,d#hash_22a28243e6e34fe5
 fx,#hash_22cb3301cfdca2af
 fx,d#hash_230c8843e73df620
@@ -71760,7 +71760,7 @@ fx,#hash_3501c71cc987ea78
 fx,#hash_351403a768806cc8
 fx,#hash_351405a76880702e
 fx,#hash_351406a7688071e1
-fx,#hash_353c849eb4131856
+fx,#weapon/fx_brass_knuckle_taunt_sparks
 fx,d#hash_355250d9e62066d7
 fx,#hash_358533e8293f131d
 fx,d#hash_35bb5ad9e67960de
@@ -71844,7 +71844,7 @@ fx,#hash_56e64fabf583208c
 fx,#hash_56ed5babf589539e
 fx,#hash_573924a536b6fc39
 fx,d#hash_57759c5fdd88c512
-fx,d#hash_58a46bbe91ae7b30
+fx,d#weapon/fx_muz_sm_pistol_3p
 fx,d#hash_58ab77be91b4ae42
 fx,#hash_58c25eabf156f81c
 fx,#hash_58c964b815e4f69e
@@ -71955,7 +71955,7 @@ tagfx,d#hash_6e2aaec79231acde
 tagfx,#weapon_katana_zmb_smoke_3p
 tagfx,#hash_72b452f64919b510
 tagfx,#hash_76190d2d09c1ca70
-character,#hash_4febe8d7596e488e
+character,#c_t8_zmb_dlc3_mannequin_ally
 character,#c_t8_c_zom_avagadro
 character,d#hash_5a6bb7233cd3bb69
 character,#c_zom_der_hellhound
@@ -72796,7 +72796,7 @@ fx,d#hash_7243ee8129521697
 fx,#hash_72a9af87bf643abd
 fx,d#hash_72ed0fd388f8051e
 fx,#hash_751b9a4bf53bfb69
-fx,#hash_784654a9ee535459
+fx,#impacts/fx_bul_impact_concrete_sm
 fx,#hash_7ab3f7caf7bc6d91
 fx,#zm_ai/fx8_cata_plasma_blast
 fx,d#hash_7b951deec27b35c1
@@ -72963,8 +72963,8 @@ animmappingtable,#hash_269b106288719564
 statuseffect,#hash_19533caf858a9f3b
 statuseffect,#hash_320c81d91eb89d73
 statuseffect,#avogadro_shock_slowed
-beam,#hash_5baeea64e2d2e8b
-beam,#hash_32870a226efa65af
+beam,#flamethrower_beam_3p
+beam,#flamethrower_beam
 staticlevelfxlist,#maps/zm/zm_white.d3dbsp
 weapon,#hero_flamethrower_t8_lv2_zm
 weapon,#hero_flamethrower_t8_lv1_zm

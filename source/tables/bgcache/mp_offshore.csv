@@ -287,7 +287,7 @@ soundalias,#vox_tvoi_tutor_fire_slide_11_1
 soundalias,#vox_tvoi_tutor_fire_slide_11_0
 soundalias,#hash_c266934b6e24701
 soundalias,#hash_c36768f32b12846
-soundalias,#hash_cc693b3173e7565
+soundalias,#exp_concussive_large
 soundalias,#vox_tvoi_tutor_fire_gas_gauge_00
 soundalias,#hash_e9079ea0995dab8
 soundalias,#hash_f9b7edd1ef40353
@@ -312,7 +312,7 @@ soundalias,#hash_14876e22977a8688
 soundalias,#hash_14f2bccca428bce3
 soundalias,#hash_175668cc7f8f0a81
 soundalias,#hash_179f3eb184c245d2
-soundalias,#hash_18fd772f4ee1e48b
+soundalias,#amb_bones
 soundalias,#hash_190b07f7f27c8cbb
 soundalias,#hash_197d58a505b7838e
 soundalias,#exp_barrel
@@ -407,9 +407,9 @@ soundalias,#hash_3b66638c6f40e4d3
 soundalias,#hash_3b66818c6f4117cd
 soundalias,#hash_3b6983b084cfef53
 soundalias,#hash_3bcea9f518db70c5
-soundalias,#hash_3c418d9dc13f5194
-soundalias,#hash_3c418f9dc13f54fa
-soundalias,#hash_3c41909dc13f56ad
+soundalias,#amb_chain_swing_1
+soundalias,#amb_chain_swing_3
+soundalias,#amb_chain_swing_2
 soundalias,#vox_tvoi_tutor_fire_core_enemy1_kill
 soundalias,#vox_tvoi_tutor_fire_core_button_rele
 soundalias,#hash_3dc8e508b25425a5
@@ -502,7 +502,7 @@ soundalias,#hash_5f07c850bd480725
 soundalias,#hash_5f0cf846c1e5f92e
 soundalias,#hash_5f31d854d3a377aa
 soundalias,#hash_5f6e6dc213939355
-soundalias,#hash_5fb0f9207a4ac1fb
+soundalias,#amb_rope_creak
 soundalias,#hash_5fbc57fe7327e948
 soundalias,#hash_601ad697b9b41f49
 soundalias,#amb_tree_leaves
@@ -524,7 +524,7 @@ soundalias,#hash_653fc5310ae8738c
 soundalias,#hash_65cb67301b463f0b
 soundalias,#hash_65cb68301b4640be
 soundalias,#hash_669af60182d87bbb
-soundalias,#hash_66aa6b049c23fa3f
+soundalias,#exp_incindiary_large
 soundalias,#hash_67e1b634a1e1c1ba
 soundalias,#hash_681a8047a838e565
 soundalias,#hash_681a9247a83903fb
@@ -594,7 +594,7 @@ client_fx,#hash_1dc986e00ac2d9b1
 client_fx,#hash_1f1f6ba9fb9ace3c
 client_fx,#hash_207d3cd1f679b67b
 client_fx,#hash_2147dab1373ff1d8
-client_fx,#hash_21f397376b81d9ef
+client_fx,#impacts/fx_bul_impact_blood_body_fatal
 client_fx,#ui/fx_dom_cap_indicator_neutral_r120
 client_fx,#hash_2618b5463c248896
 client_fx,#hash_27604ee16fb27e93

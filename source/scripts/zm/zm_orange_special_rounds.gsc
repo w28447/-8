@@ -143,7 +143,7 @@ function function_c7e59327()
 // Size: 0x2e, Type: bool
 function function_82e6d4e0()
 {
-    ai = zombie_dog_util::function_62db7b1c();
+    ai = zombie_dog_util::spawn_single_dog();
     
     if ( isdefined( ai ) )
     {

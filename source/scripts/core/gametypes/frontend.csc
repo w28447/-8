@@ -719,10 +719,10 @@ function entityspawned( localclientnum )
     // Size: 0x182, Type: dev
     function function_da10fc8f( localclientnum, imagepath )
     {
-        var_38b900c2 = getent( localclientnum, "<dev string:x9f>", "<dev string:xb6>" );
-        var_51a0f339 = getent( localclientnum, "<dev string:xc3>", "<dev string:xb6>" );
-        var_38b900c2 show();
-        var_51a0f339 hide();
+        black_backing = getent( localclientnum, "<dev string:x9f>", "<dev string:xb6>" );
+        white_backing = getent( localclientnum, "<dev string:xc3>", "<dev string:xb6>" );
+        black_backing show();
+        white_backing hide();
         function_45180840( localclientnum );
         
         do
@@ -731,8 +731,8 @@ function entityspawned( localclientnum )
         }
         while ( function_6911e8d( localclientnum ) );
         
-        var_38b900c2 hide();
-        var_51a0f339 show();
+        black_backing hide();
+        white_backing show();
         waitframe( 1 );
         function_c6df7fed( localclientnum );
         
@@ -743,8 +743,8 @@ function entityspawned( localclientnum )
         while ( function_6911e8d( localclientnum ) );
         
         function_84469b54( imagepath );
-        var_38b900c2 show();
-        var_51a0f339 hide();
+        black_backing show();
+        white_backing hide();
         waitframe( 1 );
     }
 
@@ -887,10 +887,10 @@ function entityspawned( localclientnum )
         self notify( "<dev string:x154>" );
         self endon( "<dev string:x154>" );
         function_25485718();
-        var_38b900c2 = getent( localclientnum, "<dev string:x9f>", "<dev string:xb6>" );
-        var_51a0f339 = getent( localclientnum, "<dev string:xc3>", "<dev string:xb6>" );
-        var_38b900c2 show();
-        var_51a0f339 hide();
+        black_backing = getent( localclientnum, "<dev string:x9f>", "<dev string:xb6>" );
+        white_backing = getent( localclientnum, "<dev string:xc3>", "<dev string:xb6>" );
+        black_backing show();
+        white_backing hide();
         args = strtok( state, "<dev string:x167>" );
         mode = int( args[ 0 ] );
         character_index = int( args[ 1 ] );
@@ -1180,10 +1180,10 @@ function entityspawned( localclientnum )
         var_c58c03de = int( args[ 2 ] );
         filter = args[ 3 ];
         function_25485718();
-        var_38b900c2 = getent( localclientnum, "<dev string:x9f>", "<dev string:xb6>" );
-        var_51a0f339 = getent( localclientnum, "<dev string:xc3>", "<dev string:xb6>" );
-        var_38b900c2 show();
-        var_51a0f339 hide();
+        black_backing = getent( localclientnum, "<dev string:x9f>", "<dev string:xb6>" );
+        white_backing = getent( localclientnum, "<dev string:xc3>", "<dev string:xb6>" );
+        black_backing show();
+        white_backing hide();
         weapon = getweapon( weapon_name );
         target = struct::get( #"weapon_icon_staging" );
         weapon_model = spawn( localclientnum, target.origin, "<dev string:x2b4>" );
@@ -1449,10 +1449,10 @@ function entityspawned( localclientnum )
         jumpkit = int( args[ 0 ] );
         type = int( args[ 1 ] );
         function_25485718();
-        var_38b900c2 = getent( localclientnum, "<dev string:x9f>", "<dev string:xb6>" );
-        var_51a0f339 = getent( localclientnum, "<dev string:xc3>", "<dev string:xb6>" );
-        var_38b900c2 show();
-        var_51a0f339 hide();
+        black_backing = getent( localclientnum, "<dev string:x9f>", "<dev string:xb6>" );
+        white_backing = getent( localclientnum, "<dev string:xc3>", "<dev string:xb6>" );
+        black_backing show();
+        white_backing hide();
         
         if ( jumpkit == -1 )
         {
@@ -2360,7 +2360,7 @@ function function_4fc36b1a( localclientnum, xuid )
     {
         if ( character_customization::function_aa5382ed( var_d53ddee1, level.var_4c6f850d[ xuid ], 0 ) )
         {
-            if ( function_9bed6a71( localclientnum, 1 ) == xuid && isdefined( level.var_47863282 ) && xuid == level.var_47863282 && !( isdefined( level.var_c8fac6ea ) && level scene::is_playing( level.var_c8fac6ea ) ) )
+            if ( function_9bed6a71( localclientnum, 1 ) == xuid && isdefined( level.var_47863282 ) && xuid == level.var_47863282 && !( isdefined( level.aar_scene ) && level scene::is_playing( level.aar_scene ) ) )
             {
                 function_a71254a9( localclientnum, 0, undefined, 1 );
                 [[ level.cycle_frozen_moment_char_current ]]->function_39a68bf2();
@@ -3721,7 +3721,7 @@ function function_317ab257( localclientnum, menu_name, var_83a11058 )
     level endon( #"disconnect" );
     level endon( menu_name + "_closed" );
     self endon( #"cancel_deathfx" );
-    var_cc8a3490 = #"hash_521de69029125f63";
+    body_fx = #"hash_521de69029125f63";
     var_7d89d45 = #"hash_33ffd8c85b4da392";
     var_e04a6c21 = #"hash_4c04b62047703a60";
     
@@ -3734,7 +3734,7 @@ function function_317ab257( localclientnum, menu_name, var_83a11058 )
     
     if ( isdefined( var_2ae2bfde ) )
     {
-        var_cc8a3490 = isdefined( var_2ae2bfde.var_cc8a3490 ) ? var_2ae2bfde.var_cc8a3490 : #"hash_521de69029125f63";
+        body_fx = isdefined( var_2ae2bfde.body_fx ) ? var_2ae2bfde.body_fx : #"hash_521de69029125f63";
         var_7d89d45 = isdefined( var_2ae2bfde.var_7d89d45 ) ? var_2ae2bfde.var_7d89d45 : #"hash_521de69029125f63";
         var_e04a6c21 = isdefined( var_2ae2bfde.var_e04a6c21 ) ? var_2ae2bfde.var_e04a6c21 : #"hash_4c04b62047703a60";
     }
@@ -3746,14 +3746,14 @@ function function_317ab257( localclientnum, menu_name, var_83a11058 )
     
     if ( isdefined( character_model ) )
     {
-        var_5f26f63 = character_model gettagangles( "j_spine4" );
+        body_angles = character_model gettagangles( "j_spine4" );
         body_origin = character_model gettagorigin( "j_spine4" );
         
-        if ( isdefined( var_5f26f63 ) && isdefined( body_origin ) )
+        if ( isdefined( body_angles ) && isdefined( body_origin ) )
         {
-            var_5f26f63 += v_forward;
-            body_origin += anglestoforward( ( 0, var_5f26f63[ 1 ], 0 ) );
-            [[ self ]]->function_82e05d64().var_d35ebd8e = playfx( localclientnum, var_cc8a3490, body_origin, anglestoforward( var_5f26f63 ), anglestoup( var_5f26f63 ) );
+            body_angles += v_forward;
+            body_origin += anglestoforward( ( 0, body_angles[ 1 ], 0 ) );
+            [[ self ]]->function_82e05d64().var_d35ebd8e = playfx( localclientnum, body_fx, body_origin, anglestoforward( body_angles ), anglestoup( body_angles ) );
             wait 0.3;
         }
     }
@@ -3880,32 +3880,32 @@ function function_73b8462a( localclientnum, menu_name, state )
     
     if ( isdefined( fields ) && isdefined( fields.aarscene ) )
     {
-        level.var_c8fac6ea = fields.aarscene;
+        level.aar_scene = fields.aarscene;
     }
     else if ( currentsessionmode() == 0 )
     {
-        level.var_c8fac6ea = "scene_frontend_aar_zm";
+        level.aar_scene = "scene_frontend_aar_zm";
     }
     else if ( currentsessionmode() == 3 )
     {
-        level.var_c8fac6ea = "scene_frontend_aar_wz";
+        level.aar_scene = "scene_frontend_aar_wz";
     }
     else if ( util::is_arena_lobby() )
     {
-        level.var_c8fac6ea = "scene_frontend_aar_arena";
+        level.aar_scene = "scene_frontend_aar_arena";
     }
     else
     {
-        level.var_c8fac6ea = "scene_frontend_aar";
+        level.aar_scene = "scene_frontend_aar";
     }
     
-    if ( !level scene::is_playing( level.var_c8fac6ea ) )
+    if ( !level scene::is_playing( level.aar_scene ) )
     {
         [[ var_d0b01271 ]]->set_character_mode( session_mode );
         [[ var_d0b01271 ]]->set_character_index( character_index );
         [[ var_d0b01271 ]]->function_77e3be08();
         [[ var_d0b01271 ]]->update( undefined );
-        level thread scene::play( level.var_c8fac6ea );
+        level thread scene::play( level.aar_scene );
     }
 }
 
@@ -3915,10 +3915,10 @@ function function_73b8462a( localclientnum, menu_name, state )
 // Size: 0x4e
 function function_48fb04a7( localclientnum, menu_name )
 {
-    if ( isdefined( level.var_c8fac6ea ) )
+    if ( isdefined( level.aar_scene ) )
     {
-        level thread scene::stop( level.var_c8fac6ea );
-        level.var_c8fac6ea = undefined;
+        level thread scene::stop( level.aar_scene );
+        level.aar_scene = undefined;
     }
 }
 

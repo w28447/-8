@@ -1114,15 +1114,15 @@ function function_de3936f8( var_ffb1863c )
         return;
     }
     
-    var_287a8343 = zm_utility::get_player_weapon_limit( self );
+    n_weapon_limit = zm_utility::get_player_weapon_limit( self );
     var_3ba4bf7d = self getweaponslistprimaries();
     
-    if ( var_3ba4bf7d.size > var_287a8343 )
+    if ( var_3ba4bf7d.size > n_weapon_limit )
     {
         self zm_melee_weapon::take_fallback_weapon();
         var_3ba4bf7d = self getweaponslistprimaries();
         
-        if ( var_3ba4bf7d.size > var_287a8343 )
+        if ( var_3ba4bf7d.size > n_weapon_limit )
         {
             self zm_stats::increment_map_cheat_stat( "cheat_too_many_weapons" );
             self zm_stats::increment_client_stat( "cheat_too_many_weapons", 0 );

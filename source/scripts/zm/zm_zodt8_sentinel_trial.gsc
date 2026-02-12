@@ -2006,7 +2006,7 @@ function function_ad0eee44( str_element )
         if ( str_element == #"fire" )
         {
             mdl_artifact playsound( #"hash_58d1c989a1ea4137" );
-            level thread function_53802e89( #"hash_74cb038c7565ddc9", mdl_artifact.origin, array( 1, 3, 2, 4 ) );
+            level thread function_53802e89( #"vox_m_quest_cat_sentinel", mdl_artifact.origin, array( 1, 3, 2, 4 ) );
         }
         else
         {
@@ -2574,7 +2574,7 @@ function function_22651585()
     s_pickup = spawnstruct();
     s_pickup.origin = v_spawn;
     e_player = s_pickup zm_unitrigger::function_fac87205( #"hash_14754dac7b0290c6" );
-    level thread function_53802e89( #"hash_2e8d8d922535b1db", mdl_artifact.origin, array( 3, 4, 1, 2 ) );
+    level thread function_53802e89( #"vox_m_quest_sentinel_artifact", mdl_artifact.origin, array( 3, 4, 1, 2 ) );
     mdl_artifact playsound( #"hash_58d1c989a1ea4137" );
     s_pickup struct::delete();
     mdl_artifact clientfield::set( "" + #"sentinel_shader", 0 );
@@ -3920,7 +3920,7 @@ function function_8ec70b18( var_5ea5c94d )
         function_1cfbff5e();
         level thread function_365aa198();
         level thread function_cfd304b3();
-        util::delay( 3.5, undefined, &function_53802e89, #"hash_4ba720f616544675", struct::get( #"sun_coyote" ).origin, array( 4, 3, 2, 1 ) );
+        util::delay( 3.5, undefined, &function_53802e89, #"vox_m_quest_ambient_change", struct::get( #"sun_coyote" ).origin, array( 4, 3, 2, 1 ) );
         level flag::wait_till( #"hash_349bc60cedc7491e" );
         streamermodelhint( #"p8_zm_zod_teleport_symbol", 10 );
         streamermodelhint( #"hash_15e8ba772c745d63", 10 );
@@ -5537,20 +5537,20 @@ function function_63a0f09e( b_success = 1, var_d1a2823e = 1 )
 // Params 3
 // Checksum 0x90d0e58a, Offset: 0x145a0
 // Size: 0xf2, Type: bool
-function function_d4b31d36( v_origin, var_39acfdda, str_category = #"m_quest" )
+function function_d4b31d36( v_origin, str_subcategory, str_category = #"m_quest" )
 {
-    level endon( var_39acfdda + "vo_end" );
-    level util::delay_notify( 10, var_39acfdda + "vo_end", var_39acfdda + "vo_played" );
+    level endon( str_subcategory + "vo_end" );
+    level util::delay_notify( 10, str_subcategory + "vo_end", str_subcategory + "vo_played" );
     
     do
     {
         var_27b13fab = zm_utility::get_closest_player( v_origin );
-        b_played = var_27b13fab zm_audio::create_and_play_dialog( str_category, var_39acfdda );
+        b_played = var_27b13fab zm_audio::create_and_play_dialog( str_category, str_subcategory );
         waitframe( 1 );
     }
     while ( b_played !== 1 );
     
-    level notify( var_39acfdda + "vo_played" );
+    level notify( str_subcategory + "vo_played" );
     return true;
 }
 

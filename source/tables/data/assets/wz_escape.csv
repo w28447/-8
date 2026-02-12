@@ -12,7 +12,7 @@ physpreset,#p7_brick_worn_painted_white_01
 physpreset,#p7_medical_surgical_tray_tools_bloody
 physpreset,d#hash_3de3522b741ff939
 physpreset,d#hash_3df75e2b7430b6a7
-physpreset,#hash_408bcb61fe20d903
+physpreset,#ashtray
 physpreset,d#p7_medical_gauze_roll_sealed
 physpreset,d#hash_5aab125f983dd8b6
 physpreset,#hash_5c2d217edb4867d8
@@ -31793,7 +31793,7 @@ image,d#i_attach_t8_ar_accurate_grip_sig_01_g
 image,d#i_attach_t8_ar_accurate_grip_sig_01_n
 image,d#i_attach_t8_ar_accurate_grip_sig_01_s
 image,d#i_veh_t8_decal_moulding_c
-image,d#hash_27d2980e98d88c55
+image,d#$alpha
 image,#i_mtl_veh_t7_zmb_zod_train_trim_01_m
 image,#i_mtl_veh_t7_zmb_zod_train_trim_01_n
 image,d#i_attach_t8_pistol_standard_barrel_s
@@ -48003,7 +48003,7 @@ scriptbundle,#gear_list_good_nothing
 scriptbundle,d#wraith_fire_custom_settings
 scriptbundle,d#loc_armor_large
 rumble,d#hash_449520f94829141
-rumble,d#hash_4ceacd890f3b6ec
+rumble,d#reload_clipin
 rumble,d#defaultweapon_melee
 rumble,d#grenade_launcher_fire
 rumble,d#hash_fabc1315d6d6be0
@@ -66452,12 +66452,12 @@ fx,d#hash_23eb31bab2fd967a
 fx,d#hash_23fdcf1e0d4ffeeb
 fx,d#hash_247c28b43c001b30
 fx,#zm_ai/fx8_dog_lightning_spawn
-fx,#hash_249f091d13da3663
+fx,#zm_ai/fx8_dog_eye_glow
 fx,#hash_24e2c7fb0b7375eb
 fx,d#hash_24fb9f1cba33a365
 fx,d#hash_251b3417b0b3f2c8
 fx,#hash_257cab7973b26272
-fx,d#hash_25a99eb176affd8d
+fx,d#explosions/fx_exp_equipment_lg
 fx,d#hash_260fafe2e7ced71c
 fx,d#hash_264f9fe57a63a952
 fx,d#hash_26d0cedbeb39c5dd
@@ -66540,7 +66540,7 @@ fx,d#hash_3cfd91e852a6eced
 fx,d#hash_3d4d6663770c0e14
 fx,d#hash_3d70aa7090b628a2
 fx,#hash_3dc804f42eb9ceb8
-fx,d#hash_3e78af902f84621e
+fx,d#explosions/fx_vexp_hunter_death
 fx,d#hash_3e95cda1a373d79a
 fx,d#hash_3e99f483a765a91e
 fx,d#hash_3ed01954f57c3043
@@ -66570,7 +66570,7 @@ fx,d#hash_468595ecc1b3a341
 fx,#hash_468642e9ef8ab913
 fx,d#hash_471c2ac454e42597
 fx,#hash_477ffae0b0471892
-fx,d#hash_47b11ac110f88641
+fx,d#player/fx_plyr_tablet_activation
 fx,d#hash_47b3d809d3e1669c
 fx,d#hash_47b9e409d3e5e6ae
 fx,d#hash_4857bf41d47ef138
@@ -66724,7 +66724,7 @@ fx,d#hash_6cd2fb29bb0f309f
 fx,d#hash_6ce02086fc656138
 fx,d#hash_6d18ace02157cb7a
 fx,d#hash_6d1df188763b8ed2
-fx,#hash_6d27931954af2ff1
+fx,#weapon/fx_muz_veh_minigun_lg_3p
 fx,d#hash_6d9a36ac32c18d74
 fx,#hash_6e28b500f355520c
 fx,d#hash_6e68fc37599a8e13
@@ -66737,7 +66737,7 @@ fx,d#hash_6f2c651fcb460b80
 fx,#hash_6fec94225bb3270f
 fx,d#hash_7020c91e247f443b
 fx,d#hash_7078b4e4e1897123
-fx,d#hash_709dc68733f89cc8
+fx,d#player/fx_plyr_tablet_activation_loop
 fx,d#hash_710b1d86dabf86b8
 fx,d#hash_71f5fe165871c0e5
 fx,#hash_71f98cd65b1ad5f1
@@ -67256,7 +67256,7 @@ fx,d#hash_202ecf70123d8603
 fx,d#hash_20b6c2a57c7b374f
 fx,#hash_2147dab1373ff1d8
 fx,#hash_21e2ff6136bedeca
-fx,d#hash_21f397376b81d9ef
+fx,d#impacts/fx_bul_impact_blood_body_fatal
 fx,#hash_21f9281b0c6faa93
 fx,d#hash_22a28243e6e34fe5
 fx,d#hash_230c8843e73df620

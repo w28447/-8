@@ -398,15 +398,15 @@ function soul_catcher_state_manager()
     
     if ( self.script_noteworthy == "rune_3" )
     {
-        self.var_740e1e0e = getent( "rune_3", "targetname" );
+        self.mdl_rune = getent( "rune_3", "targetname" );
     }
     else if ( self.script_noteworthy == "rune_2" )
     {
-        self.var_740e1e0e = getent( "rune_2", "targetname" );
+        self.mdl_rune = getent( "rune_2", "targetname" );
     }
     else if ( self.script_noteworthy == "rune_1" )
     {
-        self.var_740e1e0e = getent( "rune_1", "targetname" );
+        self.mdl_rune = getent( "rune_1", "targetname" );
     }
     
     self waittill( #"first_zombie_killed_in_zone" );
@@ -416,7 +416,7 @@ function soul_catcher_state_manager()
         self.t_hurt show();
     }
     
-    self.var_740e1e0e clientfield::set( "" + #"hash_5ecbfb9042fc7f38", 1 );
+    self.mdl_rune clientfield::set( "" + #"hash_5ecbfb9042fc7f38", 1 );
     self.s_scene scene::play( "Start" );
     self flag::set( #"wolf_intro_anim_complete" );
     self waittill( #"finished_eating" );
@@ -428,8 +428,8 @@ function soul_catcher_state_manager()
     }
     
     self notify( #"hash_1c2dd0a16f7ac134" );
-    self.var_740e1e0e clientfield::set( "" + #"hash_5ecbfb9042fc7f38", 0 );
-    self.var_740e1e0e setmodel( "p8_zm_esc_dream_catcher" );
+    self.mdl_rune clientfield::set( "" + #"hash_5ecbfb9042fc7f38", 0 );
+    self.mdl_rune setmodel( "p8_zm_esc_dream_catcher" );
     self.s_scene scene::play( "Depart" );
 }
 

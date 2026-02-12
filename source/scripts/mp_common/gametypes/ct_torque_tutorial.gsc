@@ -2186,7 +2186,7 @@ function function_bfebe12d()
     self thread ct_utils::function_61c3d59c( var_ec746d30, undefined, undefined );
     self thread ct_vo::function_831e0584( array( "vox_tvoi_tutor_torq_final_2_strike_ready" ) );
     self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_torq_final_2_strike_ready_nag" );
-    self waittill( #"hash_6e666a0689c3fd62" );
+    self waittill( #"swat_team_called" );
     ct_utils::function_9aca2fa0( "ct_action2" );
     level.b_killstreak_used = 1;
     self thread ct_utils::function_61c3d59c( #"hash_5c2b727f43f4c8ef" );
@@ -2483,7 +2483,7 @@ function function_344aee09( _hash )
         
         if ( isalive( level.var_7afae51f ) )
         {
-            level.var_7afae51f concertina_wire::function_4ee7d46a( 1 );
+            level.var_7afae51f concertina_wire::destroyconcertinawire( 1 );
         }
         
         if ( _hash == #"death" )
@@ -2981,7 +2981,7 @@ function function_400149db()
     {
         if ( isdefined( concertinawire ) && !( isdefined( concertinawire.b_valid ) && concertinawire.b_valid ) )
         {
-            concertinawire concertina_wire::function_4ee7d46a( 1 );
+            concertinawire concertina_wire::destroyconcertinawire( 1 );
         }
     }
 }

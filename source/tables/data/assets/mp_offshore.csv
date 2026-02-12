@@ -6,7 +6,7 @@ physpreset,#hash_1f21250a9bc4b2cd
 physpreset,#hash_23b1a4759b8c144c
 physpreset,d#hash_260836fb8b5de3f9
 physpreset,#hash_2d2315df8c3e1636
-physpreset,#hash_2e1a6a36da3d4fc3
+physpreset,#sandbag
 physpreset,#hash_37a6f1b88647ea58
 physpreset,#p7_clipboard_01_wpaper
 physpreset,#p7_cup_coffee_mug
@@ -23521,7 +23521,7 @@ xmodel,#p8_food_scale_digital
 xmodel,#p7_zm_asc_battery_auto_wire
 xmodel,#p8_fxanim_gp_foliage_vines_banyan_02_smod
 xmodel,#p8_stone_walkway_cracked_01_01
-xmodel,#hash_6710bdae561eefa1
+xmodel,#p7_fxanim_cp_sgen_monkey_jar_mod
 xmodel,#p7_pipe_metal_hp_12_elbow_90_red
 xmodel,#p8_sandbag_barricade_single_01
 xmodel,#p8_sandbag_barricade_single_02
@@ -23961,7 +23961,7 @@ fx,#hash_1e1594f4e5d1ff47
 fx,d#hash_1f1f6ba9fb9ace3c
 fx,#hash_200f622fe59abb84
 fx,#hash_2147dab1373ff1d8
-fx,d#hash_21f397376b81d9ef
+fx,d#impacts/fx_bul_impact_blood_body_fatal
 fx,d#hash_2618b5463c248896
 fx,d#hash_27604ee16fb27e93
 fx,d#hash_292665b1a78d5f6e

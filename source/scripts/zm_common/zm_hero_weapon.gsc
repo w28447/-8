@@ -644,7 +644,7 @@ function hero_weapon_ready( n_slot, w_hero )
     
     if ( bgb::is_enabled( #"zm_bgb_arsenal_accelerator" ) )
     {
-        self zm_stats::increment_challenge_stat( #"hash_1f20f53b7084fdcb" );
+        self zm_stats::increment_challenge_stat( #"gum_gobbler_arsenal_accelerator" );
     }
     
     if ( zm_utility::is_standard() )

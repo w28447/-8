@@ -370,7 +370,7 @@ string,#hash_68d9a667406d9e2e
 string,#hash_68e088397871d66a
 string,#hash_68e57135d661fd2f
 string,#hash_68f33faa5abddd73
-string,#hash_69256172c78db147
+string,#zombie/powerup_small_ammo
 string,#zombie/perk_slider
 string,#hash_6942dfa9737b6ac8
 string,#zombie/perk_cooldown
@@ -413,7 +413,7 @@ string,#hash_765b6a6e9523c15a
 string,#hash_7667bd0f83307360
 string,#hash_767128c196a4a356
 string,#hash_7693de01f82d93f0
-string,#hash_774207d74b355a8a
+string,#zombie/powerup_double_points
 string,#hash_782714d88bdaa1b6
 string,#hash_78597c05547d1f2d
 string,#hash_791fe9da17cf7059

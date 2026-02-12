@@ -176,9 +176,9 @@ function function_a97f7327()
 // Size: 0xb4
 function function_40dfd00b( n_round_number )
 {
-    var_c66743a5 = array::random( array( #"catalyst_corrosive", #"catalyst_electric", #"catalyst_plasma", #"catalyst_water" ) );
+    str_catalyst = array::random( array( #"catalyst_corrosive", #"catalyst_electric", #"catalyst_plasma", #"catalyst_water" ) );
     zm_utility::function_9b7bc715( #"catalyst", 1 );
-    zm_transform::function_bdd8aba6( var_c66743a5 );
+    zm_transform::function_bdd8aba6( str_catalyst );
 }
 
 // Namespace zm_mansion_zstandard/zm_mansion_zstandard
@@ -188,7 +188,7 @@ function function_40dfd00b( n_round_number )
 function function_2ce29db3( n_round )
 {
     zm_utility::function_9b7bc715( #"nosferatu", 1 );
-    zm_ai_nosferatu::function_74f25f8a( 1 );
+    zm_ai_nosferatu::spawn_single_nosferatu( 1 );
 }
 
 // Namespace zm_mansion_zstandard/zm_mansion_zstandard

@@ -116,7 +116,7 @@ function event_handler[level_init] main( eventstruct )
     namespace_9d58c1cd::init_clientfields();
     zm_escape_util::init_clientfields();
     namespace_1063645::init_clientfields();
-    namespace_b99141ed::init_clientfields();
+    fast_travel_hellholes::init_clientfields();
     level._effect[ #"headshot" ] = #"zombie/fx_bul_flesh_head_fatal_zmb";
     level._effect[ #"headshot_nochunks" ] = #"zombie/fx_bul_flesh_head_nochunks_zmb";
     level._effect[ #"bloodspurt" ] = #"zombie/fx_bul_flesh_neck_spurt_zmb";
@@ -127,7 +127,7 @@ function event_handler[level_init] main( eventstruct )
     level.default_start_location = "prison";
     level.default_game_mode = "zclassic";
     level.disableclassselection = 0;
-    level.var_22fda912 = &function_9f50079d;
+    level.var_22fda912 = &offhand_weapon_override;
     level.zombiemode_offhand_weapon_give_override = &offhand_weapon_give_override;
     level.var_d0ab70a2 = #"gamedata/weapons/zm/zm_escape_weapons.csv";
     level._allow_melee_weapon_switching = 1;
@@ -137,7 +137,7 @@ function event_handler[level_init] main( eventstruct )
     level._effect[ #"poltergeist" ] = #"hash_64ab8440e31c3057";
     level.var_a9c40fde = &function_2d2f3503;
     level.var_1e480ea7 = &function_bcc6a9d8;
-    namespace_b99141ed::init();
+    fast_travel_hellholes::init();
     paschal::init();
     zm_escape_achievement::init();
     level.custom_spawner_entry[ #"crawl" ] = &zm_spawner::function_45bb11e4;
@@ -315,7 +315,7 @@ function function_7722c6f0( var_404e4288, var_8dd554ee )
 // Size: 0x50, Type: bool
 function function_e5086229( var_404e4288, var_8dd554ee )
 {
-    ai = zombie_dog_util::function_62db7b1c( 1 );
+    ai = zombie_dog_util::spawn_single_dog( 1 );
     
     if ( isdefined( ai ) )
     {
@@ -869,7 +869,7 @@ function function_17ac86f7()
 // Params 0
 // Checksum 0x804da50, Offset: 0x4d38
 // Size: 0x54
-function function_9f50079d()
+function offhand_weapon_override()
 {
     level.var_9d1d502c = 1;
     zm_loadout::register_tactical_grenade_for_level( #"zhield_spectral_dw", 1 );
@@ -1362,7 +1362,7 @@ function function_172ac1b5()
         {
             var_46bf10d9 notify( #"hash_13c5316203561c4f" );
             var_46bf10d9 notify( #"fully_charged" );
-            var_46bf10d9.var_740e1e0e setmodel( "<dev string:x4ba>" );
+            var_46bf10d9.mdl_rune setmodel( "<dev string:x4ba>" );
         }
         
         level.n_soul_catchers_charged = level.var_4952e1.size;

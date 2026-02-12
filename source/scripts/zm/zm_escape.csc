@@ -77,7 +77,7 @@ function event_handler[level_init] main( eventstruct )
     zm_escape_util::init_clientfields();
     paschal::init();
     namespace_1063645::init_clientfields();
-    namespace_b99141ed::init_clientfields();
+    fast_travel_hellholes::init_clientfields();
     zm_utility::function_beed5764( "rob_zm_eyes_red", #"zm_ai/fx8_zombie_eye_glow_red" );
     level._effect[ #"headshot" ] = #"zombie/fx_bul_flesh_head_fatal_zmb";
     level._effect[ #"headshot_nochunks" ] = #"zombie/fx_bul_flesh_head_nochunks_zmb";

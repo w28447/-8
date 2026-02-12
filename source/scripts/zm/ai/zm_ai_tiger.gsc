@@ -105,7 +105,7 @@ function private function_10687511( entity )
     
     zombie_poi = entity zm_utility::get_zombie_point_of_interest( entity.origin );
     entity zombie_utility::run_ignore_player_handler();
-    entity.favoriteenemy = entity.var_93a62fe;
+    entity.favoriteenemy = entity.closest_valid_player;
     
     if ( isdefined( zombie_poi ) && isdefined( zombie_poi[ 1 ] ) )
     {

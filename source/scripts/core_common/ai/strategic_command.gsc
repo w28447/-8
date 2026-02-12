@@ -623,7 +623,7 @@ function private _debuggameobjects()
             origin = missioncomponent.origin;
             identifiertext = missioncomponent.scriptbundlename + "<dev string:x104>" + index + "<dev string:xa2>";
             origintext = "<dev string:x195>" + int( origin[ 0 ] ) + "<dev string:x19f>" + int( origin[ 1 ] ) + "<dev string:x19f>" + int( origin[ 2 ] ) + "<dev string:x1a4>";
-            var_4fea471b = "<dev string:x1a9>" + missioncomponent.script_team + "<dev string:xa2>";
+            teamtext = "<dev string:x1a9>" + missioncomponent.script_team + "<dev string:xa2>";
             var_fabc86d6 = "<dev string:x1b1>" + ( isdefined( missioncomponent.var_3093fd62 ) ? "<dev string:x1c4>" : "<dev string:x1cc>" );
             var_f3fe7e2c = "<dev string:x1d5>" + ( isdefined( missioncomponent.var_4702e184 ) ? missioncomponent.var_4702e184 : "<dev string:x1df>" ) + "<dev string:xa2>";
             var_2aac6b87 = "<dev string:x1e2>" + ( isdefined( missioncomponent.var_eba32ac6 ) ? missioncomponent.var_eba32ac6 : "<dev string:x1df>" ) + "<dev string:xa2>";
@@ -686,7 +686,7 @@ function private _debuggameobjects()
             }
             
             textcolor = isdefined( errortext ) ? ( 1, 0, 0 ) : ( 1, 1, 1 );
-            function_15462dcd( origin, textcolor, "<dev string:x21e>", identifiertext, statustext, origintext, var_4fea471b, var_fabc86d6, var_f3fe7e2c, var_2aac6b87, tacpointtext, errortext );
+            function_15462dcd( origin, textcolor, "<dev string:x21e>", identifiertext, statustext, origintext, teamtext, var_fabc86d6, var_f3fe7e2c, var_2aac6b87, tacpointtext, errortext );
             recordsphere( origin, 20, statuscolor );
         #/
     }
@@ -705,7 +705,7 @@ function private _debuggameobjects()
             origintext = "<dev string:x195>" + int( origin[ 0 ] ) + "<dev string:x19f>" + int( origin[ 1 ] ) + "<dev string:x19f>" + int( origin[ 2 ] ) + "<dev string:x1a4>";
             var_7358fe8e = "<dev string:x2b3>";
             var_8de0589e = "<dev string:x2c2>";
-            var_4fea471b = "<dev string:x1a9>" + function_9e72a96( gameobject.team ) + "<dev string:xa2>";
+            teamtext = "<dev string:x1a9>" + function_9e72a96( gameobject.team ) + "<dev string:xa2>";
             var_8dbcaed7 = "<dev string:x2d3>" + ( isdefined( gameobject.absolute_visible_and_interact_team ) ? function_9e72a96( gameobject.absolute_visible_and_interact_team ) : "<dev string:x1df>" ) + "<dev string:xa2>";
             tacpointtext = "<dev string:x1fa>";
             errortext = undefined;
@@ -783,7 +783,7 @@ function private _debuggameobjects()
             }
             
             textcolor = isdefined( errortext ) ? ( 1, 0, 0 ) : ( 1, 1, 1 );
-            function_15462dcd( origin, textcolor, "<dev string:x21e>", identifiertext, var_5f5e2bd5, var_8de0589e, origintext, var_7358fe8e, var_4fea471b, var_8dbcaed7, var_f3fe7e2c, var_2aac6b87, tacpointtext, var_d8e00365, errortext );
+            function_15462dcd( origin, textcolor, "<dev string:x21e>", identifiertext, var_5f5e2bd5, var_8de0589e, origintext, var_7358fe8e, teamtext, var_8dbcaed7, var_f3fe7e2c, var_2aac6b87, tacpointtext, var_d8e00365, errortext );
             recordsphere( origin, 17, statuscolor, "<dev string:x21e>" );
         #/
     }
@@ -803,7 +803,7 @@ function private _debuggameobjects()
             origin = breadcrumb.origin;
             identifiertext = "<dev string:x342>" + index + "<dev string:xa2>";
             origintext = "<dev string:x195>" + int( origin[ 0 ] ) + "<dev string:x19f>" + int( origin[ 1 ] ) + "<dev string:x19f>" + int( origin[ 2 ] ) + "<dev string:x1a4>";
-            var_4fea471b = "<dev string:x1a9>" + breadcrumb.script_team + "<dev string:xa2>";
+            teamtext = "<dev string:x1a9>" + breadcrumb.script_team + "<dev string:xa2>";
             statuscolor = ( 1, 1, 1 );
             tacpointtext = "<dev string:x1fa>";
             errortext = undefined;
@@ -825,7 +825,7 @@ function private _debuggameobjects()
             
             recordsphere( origin, 14, statuscolor );
             textcolor = isdefined( errortext ) ? ( 1, 0, 0 ) : ( 1, 1, 1 );
-            function_15462dcd( origin, textcolor, "<dev string:x21e>", identifiertext, origintext, var_4fea471b, tacpointtext, errortext );
+            function_15462dcd( origin, textcolor, "<dev string:x21e>", identifiertext, origintext, teamtext, tacpointtext, errortext );
         #/
     }
 

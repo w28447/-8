@@ -466,35 +466,35 @@ function function_f909006c( currentevent )
         
         do
         {
-            var_e0aa3530 = var_dcbc5c97[ index ];
+            uievent = var_dcbc5c97[ index ];
             
-            if ( var_e0aa3530.time - starttime < timeelapsed )
+            if ( uievent.time - starttime < timeelapsed )
             {
-                if ( var_e0aa3530.bookmarkname == #"medal" )
+                if ( uievent.bookmarkname == #"medal" )
                 {
                     medalstruct = {};
-                    medalstruct.medal_index = var_e0aa3530.eventdata.tableindex;
+                    medalstruct.medal_index = uievent.eventdata.tableindex;
                     
                     if ( !util::function_8570168d() && isdefined( medalstruct.medal_index ) )
                     {
                         luinotifyevent( #"medal_received", 1, medalstruct.medal_index );
                     }
                 }
-                else if ( var_e0aa3530.bookmarkname == #"score_event" )
+                else if ( uievent.bookmarkname == #"score_event" )
                 {
-                    if ( isdefined( var_e0aa3530.eventdata.event_info ) )
+                    if ( isdefined( uievent.eventdata.event_info ) )
                     {
-                        label = rank::getscoreinfolabel( var_e0aa3530.eventdata.event_info );
-                        score = rank::getscoreinfovalue( var_e0aa3530.eventdata.event_info );
-                        combatefficiencyscore = rank::function_4587103( var_e0aa3530.eventdata.event_info );
-                        eventindex = level.scoreinfo[ var_e0aa3530.eventdata.event_info ][ #"row" ];
+                        label = rank::getscoreinfolabel( uievent.eventdata.event_info );
+                        score = rank::getscoreinfovalue( uievent.eventdata.event_info );
+                        combatefficiencyscore = rank::function_4587103( uievent.eventdata.event_info );
+                        eventindex = level.scoreinfo[ uievent.eventdata.event_info ][ #"row" ];
                     }
                     else
                     {
-                        label = var_e0aa3530.eventdata.label;
-                        score = var_e0aa3530.eventdata.score;
-                        combatefficiencyscore = var_e0aa3530.eventdata.combatefficiencyscore;
-                        eventindex = var_e0aa3530.eventdata.eventindex;
+                        label = uievent.eventdata.label;
+                        score = uievent.eventdata.score;
+                        combatefficiencyscore = uievent.eventdata.combatefficiencyscore;
+                        eventindex = uievent.eventdata.eventindex;
                     }
                     
                     if ( !isdefined( label ) )
@@ -2411,12 +2411,12 @@ function private function_d832ee94( preparinginformation, bookmark )
         preparinginformation.currentevent.var_b86d6c40 = [];
     }
     
-    var_e0aa3530 = {};
-    var_e0aa3530.bookmarkname = bookmark.bookmarkname;
-    var_e0aa3530.time = bookmark.time + 50;
-    var_e0aa3530.player = bookmark.var_81538b15;
-    var_e0aa3530.eventdata = bookmark.eventdata;
-    array::push( preparinginformation.currentevent.var_b86d6c40, var_e0aa3530, preparinginformation.currentevent.var_b86d6c40.size );
+    uievent = {};
+    uievent.bookmarkname = bookmark.bookmarkname;
+    uievent.time = bookmark.time + 50;
+    uievent.player = bookmark.var_81538b15;
+    uievent.eventdata = bookmark.eventdata;
+    array::push( preparinginformation.currentevent.var_b86d6c40, uievent, preparinginformation.currentevent.var_b86d6c40.size );
 }
 
 // Namespace potm/potm_shared

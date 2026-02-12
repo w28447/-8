@@ -1040,7 +1040,7 @@ string,#zmui/fmj_desc
 string,#hash_38a2cf22c48d6c3
 string,#hash_40c47b72c083914
 string,#hash_43b319457bc818e
-string,#hash_47e1955bea1fc19
+string,#mpui/camo_flectarn
 string,#mpui/extclip2
 string,#hash_5be026b2781b8c9
 string,#hash_5d7eb1442a4f213
@@ -1067,7 +1067,7 @@ string,#mpui/ir
 string,#mpui/is
 string,#mpui/gl
 string,#mpui/dw
-string,#hash_11844df90c43c32c
+string,#mpui/camo_dante
 string,#mpui/sf
 string,#mpui/rf
 string,#hash_11cfa6d5f521dede
@@ -1076,7 +1076,7 @@ string,#mpui/uber
 string,#mpui/barrelchoke_desc
 string,#hash_13f64b913a8510ce
 string,#hash_14b9981c6e3d2f76
-string,#hash_15b50559752dd744
+string,#mpui/camo_redhex
 string,#hash_15cf0d46af70291b
 string,#mpui/null
 string,#mpui/grip
@@ -1091,7 +1091,7 @@ string,#hash_193c1c010f81e229
 string,#hash_1960a6223dd21d1a
 string,#mpui/barrelchoke
 string,#hash_1c07c87a45375aaf
-string,#hash_1c93858d6991c626
+string,#mpui/camo_integer
 string,#zmui/mms_desc
 string,#mpui/steadyaim2
 string,#hash_208eb7d41301aac0
@@ -1099,9 +1099,9 @@ string,#hash_21868d247829d827
 string,#hash_226442eca8affe87
 string,#hash_22ec60cd78b8277f
 string,#hash_23184906a849ac54
-string,#hash_23d45d79e7cc975d
+string,#mpui/camo_jungle
 string,#mpui/dualoptic_desc
-string,#hash_2462544f3066322a
+string,#mpui/camo_huntsman
 string,#hash_246c7d9118b22299
 string,#hash_24a3e0f402bfd000
 string,#hash_24c9561478db5594
@@ -1116,7 +1116,7 @@ string,#mpui/pistolscope
 string,#hash_26adc6b84f143b29
 string,#mpui/fmj2_desc
 string,#hash_28f8d698fe4d79d2
-string,#hash_2903042e98504cc7
+string,#zmui/high_caliber_2_desc
 string,#mpui/holdbreath_desc
 string,#hash_29d1b41ee09e09b8
 string,#hash_2a634db8501d93aa
@@ -1124,7 +1124,7 @@ string,#hash_2aa6fa1848766679
 string,#hash_2b0fae1c09a3d8a9
 string,#hash_2b27d20d2cfc1069
 string,#hash_2b3d791eb05ec296
-string,#hash_2b40461a235c9616
+string,#mpui/camo_ardent
 string,#mpui/acog_desc
 string,#mpui/stabilizer_desc
 string,#mpui/holdbreath
@@ -1133,14 +1133,14 @@ string,#hash_2d003d6a1240093c
 string,#hash_2d85a60f366822d1
 string,#mpui/reflex
 string,#hash_2f6eb9c102b831ad
-string,#hash_2f75827412f48897
+string,#mpui/camo_burnt
 string,#mpui/fmj2
 string,#hash_3041bf105b58c16a
 string,#mpui/ir_desc
 string,#hash_30f532e9051a3691
 string,#hash_31e9d057a03398bf
 string,#hash_3279150dc6bd1b3b
-string,#hash_3292e34998476e76
+string,#mpui/camo_snowjob
 string,#hash_33105d49e7fd102e
 string,#hash_33c5a3d6ed967788
 string,#hash_33f013eacb53964c
@@ -1174,7 +1174,7 @@ string,#hash_3de8e053a2e6c69b
 string,#hash_3dfd2cf9c5589207
 string,#hash_3e42591da1c1538f
 string,#mpui/steadyaim_desc
-string,#hash_3e968f73a7d7e44e
+string,#mpui/camo_chameleon
 string,#mpui/gl_desc
 string,#hash_3ee20f103a454178
 string,#mpui/is_desc
@@ -1188,9 +1188,9 @@ string,#mpui/damage_desc
 string,#hash_420861c64b6e9e7c
 string,#mpui/supply
 string,#hash_43374b5ab9becdaa
-string,#hash_4361bc63de0848d3
+string,#mpui/camo_jungletek
 string,#hash_43b0cfc850dbcc04
-string,#hash_44149fa37d4d853f
+string,#mpui/camo_bliss
 string,#mpui/suppressed
 string,#hash_452fd06faf792671
 string,#mpui/hipgrip_desc
@@ -1199,7 +1199,7 @@ string,#mpui/quickdraw_desc
 string,#mpui/adsreload_desc
 string,#hash_4973da5ba484b2ae
 string,#hash_49e88c8053d4f73e
-string,#hash_4a324d42cf256472
+string,#mpui/camo_heatstroke
 string,#hash_4a584bc8c443f246
 string,#hash_4a6f079813e273c3
 string,#hash_4b105b524a93b53d
@@ -1213,7 +1213,7 @@ string,#hash_4ed6f1ab0cbc899b
 string,#mpui/sf_desc
 string,#hash_4f0d8ebb363015e0
 string,#hash_4f23c6ecb321fa19
-string,#hash_502cca55de20d536
+string,#mpui/camo_fear
 string,#hash_506621193b404166
 string,#mpui/vzoom_desc
 string,#hash_50acb81dbe07fbfe
@@ -1225,7 +1225,7 @@ string,#mpui/extrapellets
 string,#hash_54e4fb1367aa3001
 string,#zmui/extrapellets_desc
 string,#hash_556fbdaebf02d158
-string,#hash_56074383a6c3b738
+string,#zmui/high_caliber_desc
 string,#hash_560d002c6e40e5df
 string,#hash_561a6371fe1e6f3a
 string,#mpui/steadyaim2_desc
@@ -1234,23 +1234,23 @@ string,#hash_58b7aeee47f428da
 string,#mpui/reflex_desc
 string,#mpui/grip2
 string,#mpui/hipgrip
-string,#hash_5abca820cfab2cd8
+string,#mpui/camo_arctic
 string,#hash_5acae5f224c146a9
 string,#mpui/adsreload
-string,#hash_5b7536f294f156a6
+string,#mpui/camo_battle
 string,#hash_5c28147c226eb600
 string,#mpui/mixclip
 string,#mpui/mms_desc
 string,#hash_5dc620aa9640e528
 string,#hash_5e2c81adb5a5264a
 string,#hash_5e6ae4119dda43e0
-string,#hash_5ec68d99caf17930
+string,#mpui/camo_contagious
 string,#hash_5f17105e484faba8
 string,#mpui/extrapellets_desc
 string,#mpui/fastreload_desc
 string,#hash_6063cd6ae0f6ce28
 string,#hash_607993fb651c3014
-string,#hash_60a2e99cf0e191e1
+string,#mpui/camo_interpol
 string,#mpui/extbarrel2_desc
 string,#zmui/barrelchoke_desc
 string,#mpui/steadyaim
@@ -1260,7 +1260,7 @@ string,#hash_627f640830ae263b
 string,#hash_628b6122d68a8d45
 string,#hash_629d187300caa85d
 string,#hash_6370b5a97249c317
-string,#hash_639a907fae7467b1
+string,#mpui/camo_6speed
 string,#mpui/clantag
 string,#mpui/burst2_desc
 string,#mpui/pistolscope_desc
@@ -1279,7 +1279,7 @@ string,#mpui/burst2
 string,#hash_6aee422878d572b9
 string,#hash_6c1e82cce2e2763e
 string,#hash_6c8d7834e1591a50
-string,#hash_6d832831f5532f00
+string,#mpui/camo_wmd
 string,#hash_6e155a8da74ae1b6
 string,#hash_6e2fd7423cbe42b0
 string,#hash_6e86b49d6d5196af
@@ -1297,7 +1297,7 @@ string,#hash_7564cce16f4274f6
 string,#mpui/damage
 string,#hash_758d93baadbc199d
 string,#hash_75c36a6b651e7775
-string,#hash_7664f631b276facc
+string,#mpui/camo_ash
 string,#hash_768c5aeecc2d7cc4
 string,#mpui/grip2_desc
 string,#hash_7725a43a5e8755ad
@@ -1318,7 +1318,7 @@ string,#hash_7bf8bcf55e2bd26e
 string,#mpui/mms
 string,#hash_7d3e69af1a992cec
 string,#hash_7d4c19fb8173c5ee
-string,#hash_7db4187f695ce2a6
+string,#mpui/camo_woodlums
 string,#hash_7e31505384e0837a
 string,#mpui/tacknife_desc
 string,#hash_7e6ea41ef4c9afe6
@@ -1451,7 +1451,7 @@ soundalias,#hash_c58912b0aa33a1b
 soundalias,#hash_c9e0250c7ad3925
 soundalias,#hash_ca467b11bcaf711
 soundalias,#hash_cab99574f050bc3
-soundalias,#hash_cc693b3173e7565
+soundalias,#exp_concussive_large
 soundalias,#hash_ce515264013b887
 soundalias,#hash_cf3aa6b3dd99f5d
 soundalias,#hash_d76aadb39668a12
@@ -1468,11 +1468,11 @@ soundalias,#hash_e9079ea0995dab8
 soundalias,#hash_f2341c60812b833
 soundalias,#hash_f32d9de6827bf7d
 soundalias,#hash_f7960ad68ff0bbf
-soundalias,#hash_fa5251783ef5dda
+soundalias,#wpn_ray_reload_open
 soundalias,#vox_tvoi_tutor_prop_remove_dart_0
 soundalias,#vox_tvoi_tutor_prop_remove_dart_1
 soundalias,#hash_101aa41260505836
-soundalias,#hash_1070373238c27af0
+soundalias,#wpn_ray_1straise
 soundalias,#hash_107101a266a9daf9
 soundalias,#hash_10a55dcffe9f020b
 soundalias,#vox_tvoi_tutor_prop_tempest_chain_0
@@ -1574,7 +1574,7 @@ soundalias,#hash_1daa81803e88056b
 soundalias,#hash_1dad6859b37990f4
 soundalias,#hash_1dc9fb231d695ce1
 soundalias,#fly_step_gondola_exit
-soundalias,#hash_1e30410f212b9527
+soundalias,#zmb_vocals_zombie_taunt
 soundalias,#hash_1e30eb5009b2fe93
 soundalias,#hash_1e3fe7dc6b3e5eff
 soundalias,#hash_1e74a799d96a6c35
@@ -1648,7 +1648,7 @@ soundalias,#hash_271fdedb26bc021c
 soundalias,#hash_2730ba20330dff4a
 soundalias,#hash_273c1ce675562cf7
 soundalias,#hash_2744eedf35da17de
-soundalias,#hash_2748aa2e6dc57ae0
+soundalias,#dst_car_tire_deflate
 soundalias,#hash_27497acbb40081bf
 soundalias,#hash_27d4b58709146f51
 soundalias,#hash_27eab07b6b3528fe
@@ -1662,7 +1662,7 @@ soundalias,#hash_29217c110f63a6a9
 soundalias,#hash_293cda1c9ebecfd3
 soundalias,#hash_2951d0b6a2584b6d
 soundalias,#hash_296a0bc26a231636
-soundalias,#hash_29a8faa6f42580d8
+soundalias,#fly_zombie_jumpland_soft
 soundalias,#hash_29b844df7fe39fb7
 soundalias,#dst_paper
 soundalias,#hash_29dc37fa39080c5f
@@ -1687,7 +1687,7 @@ soundalias,#hash_2c208e600e6ddca6
 soundalias,#hash_2c45ec433bbc1fcc
 soundalias,#hash_2ca6411fde5a8e5f
 soundalias,#hash_2ca6571fde5ab3c1
-soundalias,#hash_2cbaef780a09adf3
+soundalias,#wpn_ray_reload_battery_in
 soundalias,#hash_2cbd1a72d59eecdd
 soundalias,#hash_2ce5e8e291cc8524
 soundalias,#hash_2d336fa78e90d0db
@@ -1738,7 +1738,7 @@ soundalias,#hash_310e1517e8130d26
 soundalias,#hash_312343edef77b727
 soundalias,#hash_312902468db2f202
 soundalias,#hash_31f8c69b72449884
-soundalias,#hash_32ada8b7c04d80d5
+soundalias,#fly_zombie_ground_climbout
 soundalias,#hash_32c61d9b5703074c
 soundalias,#hash_33226cabd7bb66c8
 soundalias,#hash_3341661f66c0a3f6
@@ -1762,7 +1762,7 @@ soundalias,#hash_353c434eb51d3f25
 soundalias,#vox_tvoi_tutor_prop_enemy_seeker_0
 soundalias,#vox_tvoi_tutor_prop_enemy_seeker_1
 soundalias,#hash_354a10fe1f24ce2d
-soundalias,#hash_3556f0168269756e
+soundalias,#wpn_ray_reload_close
 soundalias,#hash_35602caf690c5e3b
 soundalias,#hash_356788f1bc49991c
 soundalias,#hash_356d6b6c67f96531
@@ -1783,7 +1783,7 @@ soundalias,#hash_373e680ef615b078
 soundalias,#hash_373e690ef615b22b
 soundalias,#hash_3783f0d674758d4e
 soundalias,#hash_37a8de4d53277755
-soundalias,#hash_37ac9d9515ed7e04
+soundalias,#fly_zombie_mantle_fast
 soundalias,#hash_37b1391b96540ad4
 soundalias,#hash_37b243120715d21a
 soundalias,#hash_37d9fb06ff58fb0b
@@ -1820,9 +1820,9 @@ soundalias,#hash_3b7e2bb6ace0e522
 soundalias,#hash_3b9dd4c5d6f92f56
 soundalias,#hash_3bc2da728e53501a
 soundalias,#hash_3be84c0ec3f931f6
-soundalias,#hash_3c418d9dc13f5194
-soundalias,#hash_3c418f9dc13f54fa
-soundalias,#hash_3c41909dc13f56ad
+soundalias,#amb_chain_swing_1
+soundalias,#amb_chain_swing_3
+soundalias,#amb_chain_swing_2
 soundalias,#hash_3c50be48813b4bd6
 soundalias,#hash_3c7b9b222c1518b3
 soundalias,#hash_3cb90a4d134c56af
@@ -1836,7 +1836,7 @@ soundalias,#hash_3da30b35c0a7bf05
 soundalias,#hash_3da84622f4be7b95
 soundalias,#hash_3dbfa6bf28cd58d5
 soundalias,#hash_3dcda752a9227b3d
-soundalias,#hash_3e0fb2f5216eecea
+soundalias,#zmb_vocals_zombie_attack_melee
 soundalias,#hash_3e570ab23217a16f
 soundalias,#hash_3e5a4dbc35d1e68a
 soundalias,#hash_3e65fd5b6012894a
@@ -1855,7 +1855,7 @@ soundalias,#hash_402477ac273029a0
 soundalias,#hash_402e6af29fd7bc51
 soundalias,#hash_403ba8c0b5d62e30
 soundalias,#hash_40b398365d3eb8d3
-soundalias,#hash_4103624dc73c8d1d
+soundalias,#fly_zombie_jumpland_hard
 soundalias,#hash_4129cf9133e09d53
 soundalias,#hash_413633b75d32e3f5
 soundalias,#hash_41e48d1190624d6c
@@ -1890,7 +1890,7 @@ soundalias,#hash_45a4e1bd38393752
 soundalias,#hash_45a87a32ed98445a
 soundalias,#hash_464c2d9f1fbac6ad
 soundalias,#hash_4651e8d8f91bb66e
-soundalias,#hash_4662aa46ab686497
+soundalias,#fly_zombie_mantle_slow
 soundalias,#hash_46c4843e8f5d2451
 soundalias,#hash_46e57be3cc9f9cd7
 soundalias,#hash_46f63960638b7110
@@ -2028,7 +2028,7 @@ soundalias,#vox_tvoi_tutor_prop_distract_enemy_nag
 soundalias,#hash_5756e1f22e05204d
 soundalias,#hash_576ab2d7c42eaaa0
 soundalias,#hash_57fd18dc7aee0f17
-soundalias,#hash_580111ae24dbed71
+soundalias,#zmb_vocals_zombie_taunt_v1
 soundalias,#hash_58218bc4f7624185
 soundalias,#hash_582a25f644eed979
 soundalias,#hash_587654df1eb82b80
@@ -2152,7 +2152,7 @@ soundalias,#hash_663899d42687914d
 soundalias,#vox_tvoi_tutor_prop_start_0
 soundalias,#vox_tvoi_tutor_prop_start_1
 soundalias,#hash_66859e1fcb3cc7ff
-soundalias,#hash_66aa6b049c23fa3f
+soundalias,#exp_incindiary_large
 soundalias,#hash_66d62b23f37ef212
 soundalias,#hash_66edd342df7791fd
 soundalias,#hash_672528a60ddbd2d7
@@ -2234,7 +2234,7 @@ soundalias,#hash_72725b98cf0834ac
 soundalias,#hash_727e6c2742c80347
 soundalias,#hash_72832ea588285c8a
 soundalias,#hash_7285bee27c8053db
-soundalias,#hash_72d9f45576dd1490
+soundalias,#wpn_melee_knife_whoosh_npc
 soundalias,#hash_72fb532186659f02
 soundalias,#hash_730da6ec14a6e38d
 soundalias,#hash_7322c2a68e655fa1
@@ -2315,7 +2315,7 @@ soundalias,#hash_78ea3de9255fb546
 soundalias,#hash_79041053f1a7e71c
 soundalias,#hash_79051c58cffee589
 soundalias,#hash_7981a130700fa8ce
-soundalias,#hash_799617f904484f80
+soundalias,#wpn_ray_reload_battery_out
 soundalias,#hash_79b5f8aff21e8f90
 soundalias,#hash_79d857062d2bcd5f
 soundalias,#hash_79e4424e39ce67a7
@@ -2334,7 +2334,7 @@ soundalias,#hash_7b03a9cee3b85887
 soundalias,#hash_7b41cf42e1b9847b
 soundalias,#hash_7b57908242cf03b1
 soundalias,#hash_7c29b9d5d359f7a3
-soundalias,#hash_7c2e59ca3ee725e5
+soundalias,#exp_veh_med
 soundalias,#hash_7c801dfcb10c3c94
 soundalias,#hash_7c8779985c404f70
 soundalias,#hash_7c8c356945d5ecae
@@ -2343,7 +2343,7 @@ soundalias,#hash_7ccc879d1043ab94
 soundalias,#hash_7cd4bad20412dbb1
 soundalias,#hash_7d6fa40d452c969f
 soundalias,#hash_7de3c8cbfea5b024
-soundalias,#hash_7dfe4a134dd58e0a
+soundalias,#fly_step_crawler
 soundalias,#amb_wood_creak_hvy
 soundalias,#hash_7e17e533381a8506
 soundalias,#hash_7e20fcc1c031c2d6
@@ -2353,7 +2353,7 @@ soundalias,#hash_7eb87373ea436e57
 soundalias,#hash_7ecf4f1b4f28ffba
 soundalias,#vox_tvoi_tutor_prop_one_enemy_nag
 soundalias,#hash_7eec7295fd5eb076
-soundalias,#hash_7eede30e6e0cbe65
+soundalias,#amb_occ_fan
 soundalias,#hash_7ef1f2f4e7038740
 soundalias,#hash_7ef4e76095421d2d
 soundalias,#hash_7efc9c5a2c702d50
@@ -2420,7 +2420,7 @@ client_fx,#hash_2a59ec613aa53582
 client_fx,#hash_2b3021da94a64978
 client_fx,#fire/fx_fire_ai_human_leg_left_loop
 client_fx,#hash_2db874adacf534fa
-client_fx,#hash_2e27aa600ae32a4d
+client_fx,#explosions/fx_vexp_truck_pickup
 client_fx,#hash_2e94c3f0bd739180
 client_fx,#hash_2f7007b301e85690
 client_fx,#hash_30c6743904798c76

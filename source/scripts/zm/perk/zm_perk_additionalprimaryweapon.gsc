@@ -149,9 +149,9 @@ function take_additional_primary_weapon_perk( b_pause, str_perk, str_result, n_s
     if ( isdefined( self.var_2a62e678 ) && self hasweapon( self.var_2a62e678 ) )
     {
         var_3ba4bf7d = self getweaponslistprimaries();
-        var_287a8343 = zm_utility::get_player_weapon_limit( self );
+        n_weapon_limit = zm_utility::get_player_weapon_limit( self );
         
-        if ( var_3ba4bf7d.size > var_287a8343 )
+        if ( var_3ba4bf7d.size > n_weapon_limit )
         {
             if ( zm_perks::function_e56d8ef4( #"specialty_additionalprimaryweapon" ) && !zm_trial_disable_perks::is_active() )
             {

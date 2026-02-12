@@ -81,7 +81,7 @@ function function_1c4f9c3f( s_params )
         if ( n_dist <= 130 )
         {
             player zm_perk_stronghold::add_armor();
-            player zm_perk_stronghold::function_c25b980c();
+            player zm_perk_stronghold::damage_boost();
         }
     }
 }

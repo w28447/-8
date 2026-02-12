@@ -13,7 +13,7 @@ function autoexec init()
 {
     brutusinterface::registerbrutusinterfaceattributes();
     registerbehaviorscriptfunctions();
-    spawner::add_archetype_spawn_function( #"brutus", &function_517fd069 );
+    spawner::add_archetype_spawn_function( #"brutus", &archetypebrutusblackboardinit );
 }
 
 /#
@@ -22,7 +22,7 @@ function autoexec init()
     // Params 0, eflags: 0x4
     // Checksum 0x36df914c, Offset: 0xe8
     // Size: 0x24, Type: dev
-    function private function_651f04c3()
+    function private archetypebrutusinit()
     {
         assert( isdefined( self.ai ) );
     }
@@ -33,7 +33,7 @@ function autoexec init()
 // Params 0, eflags: 0x4
 // Checksum 0xf6244d97, Offset: 0x118
 // Size: 0x62
-function private function_517fd069()
+function private archetypebrutusblackboardinit()
 {
     blackboard::createblackboardforentity( self );
     ai::createinterfaceforentity( self );
@@ -57,7 +57,7 @@ function private function_3cdbfffd( entity )
 function private function_666b2409( entity )
 {
     self.__blackboard = undefined;
-    self function_517fd069();
+    self archetypebrutusblackboardinit();
 }
 
 // Namespace archetypebrutus/archetype_brutus

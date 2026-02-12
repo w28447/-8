@@ -877,14 +877,14 @@ function function_422fdfd4( entity, attacker, weapon, var_5457dc44, hitloc, poin
     
     if ( !var_30362eca )
     {
-        var_b1c1c5cf = isdefined( var_c6cc6205 ) ? var_c6cc6205 : entity ai::function_9139c839().damagescale;
+        n_damage_scale = isdefined( var_c6cc6205 ) ? var_c6cc6205 : entity ai::function_9139c839().damagescale;
     }
     else if ( var_30362eca )
     {
-        var_b1c1c5cf = isdefined( var_fff93f95 ) ? var_fff93f95 : entity ai::function_9139c839().weakpointdamagescale;
+        n_damage_scale = isdefined( var_fff93f95 ) ? var_fff93f95 : entity ai::function_9139c839().weakpointdamagescale;
     }
     
-    return { #damage_scale:var_b1c1c5cf, #var_84ed9a13:var_84ed9a13, #registerzombie_bgb_used_reinforce:registerzombie_bgb_used_reinforce };
+    return { #damage_scale:n_damage_scale, #var_84ed9a13:var_84ed9a13, #registerzombie_bgb_used_reinforce:registerzombie_bgb_used_reinforce };
 }
 
 // Namespace ct_ai_blight_father/ct_ai_blight_father

@@ -27,7 +27,7 @@ function autoexec __init__system__()
 // Size: 0x374
 function __init__()
 {
-    level.var_477ad229 = getweapon( "ray_gun_mk2v" );
+    level.w_ray_gun_mk2v = getweapon( "ray_gun_mk2v" );
     level.var_5bda3938 = getweapon( "ray_gun_mk2v_upgraded" );
     level.var_f3d38af6 = lightning_chain::create_lightning_chain_params();
     level.var_f3d38af6.max_arcs = 6;
@@ -39,7 +39,7 @@ function __init__()
     level.var_f3d38af6.no_fx = 1;
     level.var_f3d38af6.clientside_fx = 0;
     level.var_f3d38af6.str_mod = "MOD_ELECTROCUTED";
-    callback::add_weapon_fired( level.var_477ad229, &on_weapon_fired );
+    callback::add_weapon_fired( level.w_ray_gun_mk2v, &on_weapon_fired );
     callback::add_weapon_fired( level.var_5bda3938, &on_weapon_fired );
     callback::function_4b58e5ab( &function_ae5c4e8b );
     callback::on_ai_killed( &on_ai_killed );
@@ -100,7 +100,7 @@ function on_ai_killed( s_params )
 // Size: 0x3c, Type: bool
 function function_4e923311( weapon )
 {
-    return isdefined( weapon ) && ( weapon == level.var_477ad229 || weapon == level.var_5bda3938 );
+    return isdefined( weapon ) && ( weapon == level.w_ray_gun_mk2v || weapon == level.var_5bda3938 );
 }
 
 // Namespace zm_weap_ray_gun_mk2v/zm_weap_ray_gun_mk2v

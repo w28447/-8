@@ -64,15 +64,15 @@ function init()
     level.mdl_ring_middle linkto( level.mdl_ring_middle.e_linkto );
     level.mdl_ring_inner.e_linkto = getent( "ring_inner_linkto", "targetname" );
     level.mdl_ring_inner linkto( level.mdl_ring_inner.e_linkto );
-    level.mdl_ring_outer.var_846c254a = getent( level.mdl_ring_outer.target, "targetname" );
-    level.mdl_ring_middle.var_846c254a = getent( level.mdl_ring_middle.target, "targetname" );
-    level.mdl_ring_inner.var_846c254a = getent( level.mdl_ring_inner.target, "targetname" );
-    level.mdl_ring_outer.var_846c254a linkto( level.mdl_ring_outer );
-    level.mdl_ring_middle.var_846c254a linkto( level.mdl_ring_middle );
-    level.mdl_ring_inner.var_846c254a linkto( level.mdl_ring_inner );
-    level.mdl_ring_outer.v_start = level.mdl_ring_outer.var_846c254a.origin;
-    level.mdl_ring_middle.v_start = level.mdl_ring_middle.var_846c254a.origin;
-    level.mdl_ring_inner.v_start = level.mdl_ring_inner.var_846c254a.origin;
+    level.mdl_ring_outer.e_pos = getent( level.mdl_ring_outer.target, "targetname" );
+    level.mdl_ring_middle.e_pos = getent( level.mdl_ring_middle.target, "targetname" );
+    level.mdl_ring_inner.e_pos = getent( level.mdl_ring_inner.target, "targetname" );
+    level.mdl_ring_outer.e_pos linkto( level.mdl_ring_outer );
+    level.mdl_ring_middle.e_pos linkto( level.mdl_ring_middle );
+    level.mdl_ring_inner.e_pos linkto( level.mdl_ring_inner );
+    level.mdl_ring_outer.v_start = level.mdl_ring_outer.e_pos.origin;
+    level.mdl_ring_middle.v_start = level.mdl_ring_middle.e_pos.origin;
+    level.mdl_ring_inner.v_start = level.mdl_ring_inner.e_pos.origin;
     mdl_stone = getent( "stone_obs", "targetname" );
     mdl_stone ghost();
     level thread function_5f259315();
@@ -113,7 +113,7 @@ function function_30fcf7ae()
     
     if ( isalive( e_player_random ) )
     {
-        e_player_random thread zm_vo::function_a2bd5a0c( #"hash_22f0e4f17e4e1994", 0, 1 );
+        e_player_random thread zm_vo::function_a2bd5a0c( #"vox_light_beam_react_first", 0, 1 );
     }
     
     level.e_blue clientfield::set( "" + #"blue_ray", 1 );
@@ -321,7 +321,7 @@ function init_step_4( var_a276c861 )
         
         if ( isalive( e_player_random ) )
         {
-            e_player_random thread zm_vo::function_a2bd5a0c( #"hash_5927981205a122fc", 0, 1 );
+            e_player_random thread zm_vo::function_a2bd5a0c( #"vox_observatory_defend_comp", 0, 1 );
         }
         
         level flag::wait_till( #"greenhouse_open" );
@@ -833,13 +833,13 @@ function function_ea49787e( a_ents )
 function function_f856cc2()
 {
     level.mdl_ring_outer.e_linkto delete();
-    level.mdl_ring_outer.var_846c254a delete();
+    level.mdl_ring_outer.e_pos delete();
     level.mdl_ring_outer delete();
     level.mdl_ring_middle.e_linkto delete();
-    level.mdl_ring_middle.var_846c254a delete();
+    level.mdl_ring_middle.e_pos delete();
     level.mdl_ring_middle delete();
     level.mdl_ring_inner.e_linkto delete();
-    level.mdl_ring_inner.var_846c254a delete();
+    level.mdl_ring_inner.e_pos delete();
     level.mdl_ring_inner delete();
     level.e_blue delete();
     level.e_red delete();
@@ -2189,7 +2189,7 @@ function function_d89f5961()
     {
         if ( isalive( e_player ) )
         {
-            e_player zm_vo::function_a2bd5a0c( #"hash_5da859125becfdfa", 0, 1 );
+            e_player zm_vo::function_a2bd5a0c( #"vox_observatory_defend", 0, 1 );
             break;
         }
     }

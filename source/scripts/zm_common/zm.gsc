@@ -1057,7 +1057,7 @@ function init_function_overrides()
     level.prevent_player_damage = &zm_player::player_prevent_damage;
     level.callbackactorkilled = &actor_killed_override;
     level.callbackactordamage = &actor_damage_override_wrapper;
-    level.var_6788bf11 = &globallogic_scriptmover::function_8c7ec52f;
+    level.callbackscriptmoverdamage = &globallogic_scriptmover::callback_scriptmoverdamage;
     level.callbackvehicledamage = &vehicle_damage_override;
     level.callbackvehiclekilled = &globallogic_vehicle::callback_vehiclekilled;
     level.callbackvehicleradiusdamage = &globallogic_vehicle::callback_vehicleradiusdamage;

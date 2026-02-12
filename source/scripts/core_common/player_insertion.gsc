@@ -2662,7 +2662,7 @@ function function_2e54d73e( insertion, passenger, vehicle )
 // Params 2, eflags: 0x4
 // Checksum 0x79820c09, Offset: 0xa790
 // Size: 0xb2
-function private function_ced05c63( note, payload )
+function private press_switchp( note, payload )
 {
     teammates = getplayers( self.team );
     
@@ -2688,7 +2688,7 @@ function function_2d683dc2( aircraft )
     self endon( #"disconnect", #"death" );
     self function_b9a53f50();
     self function_b80277f7();
-    self function_ced05c63( #"hash_3a41cbe85bdb81e1", { #player:self } );
+    self press_switchp( #"hash_3a41cbe85bdb81e1", { #player:self } );
     self function_1c06c249( aircraft );
     self startcameratween( 0.5 );
     util::wait_network_frame();

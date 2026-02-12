@@ -133,7 +133,7 @@ function event_handler[level_init] main( eventstruct )
     level._effect[ #"switch_sparks" ] = #"electric/fx8_sparks_burst_dir_sm_orange_os";
     level.default_start_location = "zone_temple_of_apollo";
     level.default_game_mode = "zclassic";
-    level.var_22fda912 = &function_9f50079d;
+    level.var_22fda912 = &offhand_weapon_override;
     level.zombiemode_offhand_weapon_give_override = &offhand_weapon_give_override;
     
     if ( zm_custom::function_901b751c( #"zmpowerdoorstate" ) == 0 )
@@ -1277,7 +1277,7 @@ function function_6f6cc58( e_player )
 // Params 0
 // Checksum 0x4980c039, Offset: 0x4940
 // Size: 0x24
-function function_9f50079d()
+function offhand_weapon_override()
 {
     zm_loadout::register_tactical_grenade_for_level( "zhield_zpear_dw", 1 );
 }
@@ -1400,7 +1400,7 @@ function play_outro()
         }
     }
     
-    namespace_c8efdadc::function_53bac096( 1 );
+    zm_red_challenges_apollo::function_53bac096( 1 );
     
     foreach ( e_player in util::get_active_players() )
     {
@@ -2539,7 +2539,7 @@ function function_fbf0e632()
         if ( level flag::get( "<dev string:x25b8>" ) )
         {
             n_amount = level.var_8b7ab859 / 4;
-            self zm_red_challenges_rewards::function_53a333a8( undefined, n_amount );
+            self zm_red_challenges_rewards::give_tribute( undefined, n_amount );
         }
     }
 
@@ -2619,7 +2619,7 @@ function function_fbf0e632()
         zm_devgui::zombie_devgui_open_sesame();
         level zm_utility::function_9ad5aeb1( 1 );
         wait 1;
-        level flag::set( #"hash_4083e9da0ba41dec" );
+        level flag::set( #"pegasus_ride_started" );
         var_ff91be3a = struct::get_array( "<dev string:x25fb>", "<dev string:x44>" );
         var_a10268d3 = level.players;
         
@@ -2654,7 +2654,7 @@ function function_fbf0e632()
         level flag::set( #"hash_3dba794053dea40e" );
         level flag::set( "<dev string:x25b8>" );
         level flag::set( #"hash_32ff7a456732ef09" );
-        level flag::set( #"hash_4083e9da0ba41dec" );
+        level flag::set( #"pegasus_ride_started" );
         level flag::set( #"pap_quest_completed" );
         level flag::set( #"zm_red_fasttravel_open" );
         level flag::set( #"cage_dropped" );
@@ -2671,11 +2671,11 @@ function function_fbf0e632()
         level thread scene::play( #"p8_fxanim_zm_red_omphalos_crystal_left_bundle", "<dev string:x2622>" );
         level thread scene::play( #"p8_fxanim_zm_red_omphalos_crystal_front_bundle", "<dev string:x2622>" );
         level scene::play( #"p8_fxanim_zm_red_omphalos_crystal_right_bundle", "<dev string:x2622>" );
-        var_6800d950 = getent( "<dev string:x262c>", "<dev string:x44>" );
+        mdl_pap_clip = getent( "<dev string:x262c>", "<dev string:x44>" );
         
-        if ( isdefined( var_6800d950 ) )
+        if ( isdefined( mdl_pap_clip ) )
         {
-            var_6800d950 delete();
+            mdl_pap_clip delete();
         }
         
         level flag::set( #"eagle_attack" );
@@ -2688,7 +2688,7 @@ function function_fbf0e632()
     // Size: 0x2c, Type: dev
     function function_f39d0796()
     {
-        level flag::set( #"hash_4083e9da0ba41dec" );
+        level flag::set( #"pegasus_ride_started" );
     }
 
     // Namespace zm_red/zm_red

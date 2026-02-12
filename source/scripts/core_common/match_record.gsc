@@ -176,7 +176,7 @@ function function_ded5f5b6( ... )
 // Params 1, eflags: 0x20 variadic
 // Checksum 0xf4a8584d, Offset: 0x7a8
 // Size: 0xcc
-function function_34800eec( ... )
+function inc_player_stat( ... )
 {
     player = self;
     assert( isplayer( player ) );

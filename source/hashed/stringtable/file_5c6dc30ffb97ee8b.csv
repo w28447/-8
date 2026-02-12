@@ -63,8 +63,8 @@
 #hash_210628c39deb6c83,#loot_stream,6295217,400,9295217,12,25,50,2
 #loot_emote_exotic_shared_megaphone,#loot_stream,5946119,300,8946119,5,25,50,1
 #loot_emote_exotic_shared_megaphone,#loot_stream,6946119,300,9946119,3,25,50,2
-#hash_ec37a45b8b03c5f,#hash_731315ef3fb1ae07,5919843,400,8919843,9,25,50,1
-#hash_ec37a45b8b03c5f,#hash_731315ef3fb1ae07,6919843,400,9919843,12,25,50,2
+#loot_emote_exotic_shared_mic_drop,#hash_731315ef3fb1ae07,5919843,400,8919843,9,25,50,1
+#loot_emote_exotic_shared_mic_drop,#hash_731315ef3fb1ae07,6919843,400,9919843,12,25,50,2
 #loot_emote_exotic_shared_paper,#loot_stream,5572510,300,8572510,5,25,50,1
 #loot_emote_exotic_shared_paper,#loot_stream,6572510,300,9572510,3,25,50,2
 #loot_emote_exotic_shared_police_badge,#loot_stream,5885998,300,8885998,5,25,50,1

@@ -216,7 +216,7 @@ function function_26956e1e( b_skipped )
 function function_710d3ac7()
 {
     level.var_b2b15659 = 1;
-    self zm_vo::function_a2bd5a0c( #"hash_7cddd6b0ff9e4d32", 0, 0, 9999, 1 );
+    self zm_vo::function_a2bd5a0c( #"vox_rough_statue_pickup", 0, 0, 9999, 1 );
     level.var_b2b15659 = 0;
 }
 
@@ -554,7 +554,7 @@ function function_10692994()
     level flag::set( #"hash_30e0e4bbbfc9b7d8" );
     e_player = s_waitresult.e_who;
     level.var_b2b15659 = 1;
-    e_player zm_vo::function_a2bd5a0c( #"hash_79d38c133d9291c4", 0, 0, 9999, 1 );
+    e_player zm_vo::function_a2bd5a0c( #"vox_serket_spile_pickup", 0, 0, 9999, 1 );
     level.var_b2b15659 = 0;
 }
 
@@ -779,7 +779,7 @@ function function_a616131a( b_skipped )
     e_player = s_loc zm_unitrigger::function_fac87205( &function_5f2a9b69 );
     mdl_jar delete();
     level.var_b2b15659 = 1;
-    e_player thread zm_vo::function_a2bd5a0c( #"hash_2b2a7c0ea867948e", 0, 0, 9999, 1 );
+    e_player thread zm_vo::function_a2bd5a0c( #"vox_imp_jar_pickup", 0, 0, 9999, 1 );
     level.var_b2b15659 = 0;
 }
 
@@ -1199,7 +1199,7 @@ function function_1da98a12()
     s_waitresult = s_loc waittill( #"trigger_activated" );
     e_player = s_waitresult.e_who;
     level.var_b2b15659 = 1;
-    e_player thread zm_vo::function_a2bd5a0c( #"hash_1c667d0f1af843a9", 0, 0, 9999, 1 );
+    e_player thread zm_vo::function_a2bd5a0c( #"vox_box_feed_elixir", 0, 0, 9999, 1 );
     level.var_b2b15659 = 0;
     level flag::set( #"hash_77ff9a8101ea687b" );
 }

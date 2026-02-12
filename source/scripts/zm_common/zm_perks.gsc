@@ -1020,9 +1020,9 @@ function perk_think( perk )
     self set_perk_clientfield( perk, 0 );
     self.perk_purchased = undefined;
     
-    if ( isdefined( level.var_a903ab55 ) )
+    if ( isdefined( level.perk_lost_func ) )
     {
-        self [[ level.var_a903ab55 ]]( perk );
+        self [[ level.perk_lost_func ]]( perk );
     }
     
     self function_2ac7579( -1, 0, level._custom_perks[ hash( perk ) ].alias );
@@ -3576,9 +3576,9 @@ function function_329ae65e( perk, n_slot )
         }
     }
     
-    if ( isdefined( level.var_a903ab55 ) )
+    if ( isdefined( level.perk_lost_func ) )
     {
-        self [[ level.var_a903ab55 ]]( perk );
+        self [[ level.perk_lost_func ]]( perk );
     }
     
     arrayremovevalue( self.var_466b927f, perk, 0 );
@@ -4433,7 +4433,7 @@ function function_528f82a9()
 // Params 1
 // Checksum 0x52fffa29, Offset: 0xca38
 // Size: 0x2a
-function function_c709e667( str_name )
+function ublepointsvox_powerup( str_name )
 {
     return isinarray( level.var_5355c665, str_name );
 }

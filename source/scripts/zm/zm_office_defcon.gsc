@@ -109,7 +109,7 @@ function defcon_sign_setup()
             
             if ( level.zombie_vars[ #"zombie_powerup_bonfire_sale_on" ] == 0 )
             {
-                level thread namespace_8f53e87b::play_pentagon_announcer_vox( #"hash_450f3dd9fe21becd", level.defcon_level );
+                level thread namespace_8f53e87b::play_pentagon_announcer_vox( #"vox_pentagon_defcon", level.defcon_level );
             }
             
             level thread defcon_sign_lights();
@@ -126,7 +126,7 @@ function defcon_sign_setup()
                 }
                 else
                 {
-                    level thread namespace_8f53e87b::play_pentagon_announcer_vox( #"hash_450f3dd9fe21becd", level.defcon_level );
+                    level thread namespace_8f53e87b::play_pentagon_announcer_vox( #"vox_pentagon_defcon", level.defcon_level );
                 }
             }
             
@@ -600,7 +600,7 @@ function function_cacd3270()
         
         if ( level.zombie_vars[ #"zombie_powerup_bonfire_sale_on" ] == 0 || !level flag::get( "<dev string:x43>" ) )
         {
-            level thread namespace_8f53e87b::play_pentagon_announcer_vox( #"hash_450f3dd9fe21becd", level.defcon_level );
+            level thread namespace_8f53e87b::play_pentagon_announcer_vox( #"vox_pentagon_defcon", level.defcon_level );
         }
         
         level thread defcon_sign_lights();

@@ -964,20 +964,20 @@ function private function_2798bb2( elephant, rider )
 // Params 3, eflags: 0x4
 // Checksum 0x2707aa3c, Offset: 0x43c8
 // Size: 0x4f8
-function private function_e5f2ff53( elephant, var_a4946e52, targetname )
+function private function_e5f2ff53( elephant, ridertag, targetname )
 {
     if ( !isdefined( elephant.ai.riders ) )
     {
         elephant.ai.riders = [];
     }
     
-    var_a02578 = self gettagorigin( var_a4946e52 );
-    var_cfdbb182 = self gettagangles( var_a4946e52 );
-    rider = spawnactor( #"spawner_zm_towers_boss_rider", var_a02578, var_cfdbb182, targetname, 1 );
+    var_a02578 = self gettagorigin( ridertag );
+    riderangles = self gettagangles( ridertag );
+    rider = spawnactor( #"spawner_zm_towers_boss_rider", var_a02578, riderangles, targetname, 1 );
     assert( isdefined( rider ) );
     rider attach( "p7_shr_weapon_spear_lrg", "tag_weapon_right" );
     rider.var_c8ec4813 = 1;
-    rider linkto( self, var_a4946e52, ( 0, 0, 0 ), ( 0, 0, 0 ) );
+    rider linkto( self, ridertag, ( 0, 0, 0 ), ( 0, 0, 0 ) );
     array::add( elephant.ai.riders, rider );
     rider.ai.spearweapon = getweapon( "rider_spear_projectile" );
     rider.ai.elephant = elephant;

@@ -2147,16 +2147,16 @@ function propabilitykeysvisible( visible, override )
 // Size: 0xe2
 function function_2b14e8b1()
 {
-    if ( !isdefined( self.var_b251eb4f ) )
+    if ( !isdefined( self.prophidden ) )
     {
-        self.var_b251eb4f = 1;
+        self.prophidden = 1;
     }
     else
     {
-        self.var_b251eb4f = !self.var_b251eb4f;
+        self.prophidden = !self.prophidden;
     }
     
-    if ( self.var_b251eb4f )
+    if ( self.prophidden )
     {
         self clientfield::set_to_player( "PROP.hide_prop", 1 );
         

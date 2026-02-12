@@ -90,7 +90,7 @@ function __main__()
     if ( zm_custom::function_901b751c( #"zmwonderweaponisenabled" ) )
     {
         level thread function_6e094214();
-        level thread function_7b5a8c15();
+        level thread nosferatu_summon();
         level thread function_bc8c390e();
         getweapon( #"zitem_chaos_lvl3_part_3" ).var_62a98b13 = #"hash_3b036955869eed34";
         zm_crafting::function_d1f16587( #"zblueprint_chaos_lvl3", &ww_lvl3_crafted );
@@ -971,7 +971,7 @@ function function_21db5b62( player )
 // Params 0
 // Checksum 0x487ed26a, Offset: 0x3560
 // Size: 0xdc
-function function_7b5a8c15()
+function nosferatu_summon()
 {
     level flag::wait_till( "bile_collected" );
     callback::remove_on_ai_killed( &function_9a0471ab );
@@ -1077,7 +1077,7 @@ function function_d8648a1e( e_player )
     s_loc = struct::get( "nosferatu_pos" );
     s_bile = struct::get( "s_bile" );
     self.var_76a23f3 = util::spawn_model( #"hash_36f02881e6dba006", s_bile.origin, s_bile.angles );
-    ai_nosferatu = zm_ai_nosferatu::function_74f25f8a( 1, s_loc, 1, 35 );
+    ai_nosferatu = zm_ai_nosferatu::spawn_single_nosferatu( 1, s_loc, 1, 35 );
     
     if ( isalive( ai_nosferatu ) )
     {
@@ -1177,7 +1177,7 @@ function function_d2278936( e_player )
         
         if ( isdefined( s_spawn_loc ) )
         {
-            ai_nosferatu = zm_ai_nosferatu::function_74f25f8a( 1, s_spawn_loc, 0, level.round_number );
+            ai_nosferatu = zm_ai_nosferatu::spawn_single_nosferatu( 1, s_spawn_loc, 0, level.round_number );
             
             if ( isdefined( ai_nosferatu ) )
             {

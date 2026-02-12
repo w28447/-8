@@ -41,11 +41,11 @@ function init()
     level.var_ce53172d = 30;
     level.dog_spawn_func = &function_e1c262fb;
     level.dog_on_spawned = &function_c79d744e;
-    level.var_29a8e07 = &function_d075d6e9;
-    level.var_d9334d8b = &function_2438d55e;
-    level.var_ae4acb3f = &function_18f5f327;
-    level.var_b106cd7a = &function_50ec1ddf;
-    level.var_7e40409b = &zombie_werewolf_util::function_774f6e70;
+    level.bat_spawn_func = &function_d075d6e9;
+    level.bat_on_spawned = &function_2438d55e;
+    level.nosferatu_on_spawned = &function_18f5f327;
+    level.werewolf_spawn_func = &function_50ec1ddf;
+    level.werewolf_on_spawned = &zombie_werewolf_util::function_774f6e70;
     level.var_aab23eac = &function_84c5200d;
     level.var_8a5c1a7a = 1;
     level.custom_dog_target_validity_check = &function_bc0facd3;
@@ -710,7 +710,7 @@ function function_d1371239( var_a9e4d1ee )
         
         do
         {
-            ai = zombie_dog_util::function_62db7b1c( 1, undefined );
+            ai = zombie_dog_util::spawn_single_dog( 1, undefined );
             var_18f8f237--;
             waitframe( 1 );
         }

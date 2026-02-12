@@ -116,7 +116,7 @@ function event_handler[level_init] main( eventstruct )
     level.default_game_mode = "zclassic";
     level.disableclassselection = 0;
     callback::on_ai_spawned( &function_8c000d3b );
-    level.var_22fda912 = &function_9f50079d;
+    level.var_22fda912 = &offhand_weapon_override;
     level.zombiemode_offhand_weapon_give_override = &offhand_weapon_give_override;
     level.var_d0ab70a2 = #"gamedata/weapons/zm/zm_orange_weapons.csv";
     level._allow_melee_weapon_switching = 1;
@@ -138,7 +138,7 @@ function event_handler[level_init] main( eventstruct )
     level zm_orange_ee_misc::preload();
     level zm_orange_ee_dynamite::init();
     level zm_orange_ee_tundragun::init();
-    level namespace_5449c7ba::init();
+    level zm_orange_ee_sams_box::init();
     level zm_orange_ee_yellow_snow::preload();
     level zm_orange_fasttravel_ziplines::init();
     level zm_orange_fasttravel_flinger::init();
@@ -178,7 +178,7 @@ function event_handler[level_init] main( eventstruct )
     level thread zm_orange_ee_misc::main();
     level thread zm_orange_ee_dynamite::main();
     level thread zm_orange_ee_tundragun::main();
-    level thread namespace_5449c7ba::main();
+    level thread zm_orange_ee_sams_box::main();
     level thread zm_orange_ee_freeze_mode::main();
     level thread zm_orange_fasttravel_flinger::main();
     level thread zm_orange_fasttravel_ziplines::main();
@@ -233,7 +233,7 @@ function event_handler[level_init] main( eventstruct )
 // Params 0
 // Checksum 0xe059aebb, Offset: 0x1758
 // Size: 0x2c
-function function_9f50079d()
+function offhand_weapon_override()
 {
     zm_loadout::register_tactical_grenade_for_level( #"zhield_riot_dw", 1 );
 }
@@ -922,7 +922,7 @@ function function_c8ce0a17( var_404e4288, var_8dd554ee )
 function function_e5086229( var_404e4288, var_8dd554ee )
 {
     level flag::set( #"disable_special_rounds" );
-    ai = zombie_dog_util::function_62db7b1c( 1 );
+    ai = zombie_dog_util::spawn_single_dog( 1 );
     
     if ( isdefined( ai ) )
     {

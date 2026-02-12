@@ -269,7 +269,7 @@ function freeze()
     }
     else
     {
-        self.var_b030dabb = { #n_count:1, #b_ignore_cleanup:self.b_ignore_cleanup, #var_dbcf9b4b:self.is_inert };
+        self.var_b030dabb = { #n_count:1, #b_ignore_cleanup:self.b_ignore_cleanup, #b_inert:self.is_inert };
     }
     
     self thread function_bf97ba95();
@@ -302,7 +302,7 @@ function unfreeze()
     if ( var_b030dabb.n_count == 0 )
     {
         self setentitypaused( 0 );
-        self.is_inert = var_b030dabb.var_dbcf9b4b;
+        self.is_inert = var_b030dabb.b_inert;
         self.b_ignore_cleanup = var_b030dabb.b_ignore_cleanup;
         self.var_b030dabb = undefined;
     }

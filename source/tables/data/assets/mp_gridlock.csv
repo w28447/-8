@@ -19,14 +19,14 @@ physpreset,d#hash_2dde11734bce6259
 physpreset,#p7_brick_worn_painted_white_01
 physpreset,#hash_37a6f1b88647ea58
 physpreset,#hash_3ebbe1918e54893d
-physpreset,#hash_408bcb61fe20d903
+physpreset,#ashtray
 physpreset,#hash_4195e8f5d68dc0a6
 physpreset,#p7_debris_trash_snack_bag_05
 physpreset,#p7_debris_trash_snack_bag_06
 physpreset,#p7_debris_trash_snack_bag_07
 physpreset,#p7_debris_trash_snack_bag_02
 physpreset,#p7_debris_trash_snack_bag_03
-physpreset,#hash_4d2fdc9bc6b02255
+physpreset,#boot
 physpreset,#p7_debris_trash_cup_coffee_02
 physpreset,#hash_503e238f61e8dade
 physpreset,#p7_clipboard_01_wpaper
@@ -33989,7 +33989,7 @@ physpreset,#hash_5c4fae1eea294484
 physpreset,d#hash_5d4384a8d215e8d0
 physpreset,#hash_5f26c6699f8b1c00
 physpreset,#p7_bottle_glass_wine_01
-physpreset,#hash_695e6bd10c7f85e8
+physpreset,#p7_food_fruit
 physpreset,#hash_6c3541d637690d46
 xmodel,#p8_wood_beam_generic_03
 xmodel,#p8_wood_beam_generic_01

@@ -497,7 +497,7 @@ function function_166fb685( var_85dcb56c )
         self zm_perks::function_2ac7579( self.var_7d46fb46, 2, #"perk_wolf_protector" );
     }
     
-    self thread function_7d72c6f9( var_85dcb56c );
+    self thread cooldown_bar( var_85dcb56c );
     wait var_85dcb56c;
     self thread reset_cooldown();
 }
@@ -506,7 +506,7 @@ function function_166fb685( var_85dcb56c )
 // Params 1
 // Checksum 0x82f10cb7, Offset: 0x1708
 // Size: 0x160
-function function_7d72c6f9( var_85dcb56c )
+function cooldown_bar( var_85dcb56c )
 {
     self endon( #"disconnect", #"hash_7c5d9af32e10c147" );
     self.var_72c60d5 = var_85dcb56c;

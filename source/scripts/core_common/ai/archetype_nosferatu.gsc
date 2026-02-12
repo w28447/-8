@@ -48,7 +48,7 @@ function autoexec init()
 {
     namespace_b3c8cf82::function_da6eecb2();
     registerbehaviorscriptfunctions();
-    spawner::add_archetype_spawn_function( #"nosferatu", &function_5b800648 );
+    spawner::add_archetype_spawn_function( #"nosferatu", &archetypenosferatuinit );
     clientfield::register( "actor", "nfrtu_leap_melee_rumb", 8000, 1, "counter" );
 }
 
@@ -56,7 +56,7 @@ function autoexec init()
 // Params 0, eflags: 0x4
 // Checksum 0x22f59577, Offset: 0x370
 // Size: 0x4a
-function private function_dbd0360f()
+function private archetypenosferatublackboardinit()
 {
     blackboard::createblackboardforentity( self );
     self.___archetypeonanimscriptedcallback = &function_f8ab724f;
@@ -79,17 +79,17 @@ function private function_b1df7220( entity )
 function private function_f8ab724f( entity )
 {
     self.__blackboard = undefined;
-    self function_dbd0360f();
+    self archetypenosferatublackboardinit();
 }
 
 // Namespace archetypenosferatu/archetype_nosferatu
 // Params 0, eflags: 0x4
 // Checksum 0xf2c10870, Offset: 0x418
 // Size: 0xb4
-function private function_5b800648()
+function private archetypenosferatuinit()
 {
     assert( isdefined( self.ai ) );
-    function_dbd0360f();
+    archetypenosferatublackboardinit();
     self.ignorepathenemyfightdist = 1;
     self.var_ceed8829 = 1;
     self.zigzag_activation_distance = 400;
@@ -146,8 +146,8 @@ function private registerbehaviorscriptfunctions()
     behaviortreenetworkutility::registerbehaviortreescriptapi( #"hash_77c524bf92130b36", &function_e0ad0db2 );
     assert( isscriptfunctionptr( &function_b75dd595 ) );
     behaviorstatemachine::registerbsmscriptapiinternal( #"hash_544b52e495ac560e", &function_b75dd595 );
-    assert( isscriptfunctionptr( &function_8b2173e0 ) );
-    behaviorstatemachine::registerbsmscriptapiinternal( #"hash_4d02bd1f2f959be9", &function_8b2173e0 );
+    assert( isscriptfunctionptr( &nosferatumovedash ) );
+    behaviorstatemachine::registerbsmscriptapiinternal( #"nosferatumovedash", &nosferatumovedash );
     assert( isscriptfunctionptr( &function_b758de87 ) );
     behaviorstatemachine::registerbsmscriptapiinternal( #"hash_ee12d5fffc3b8bb", &function_b758de87 );
     animationstatenetwork::registeranimationmocomp( "mocomp_nfrtu_leap_attack", &function_1ad502a0, &function_3511ecd1, &function_b472ba3d );
@@ -205,7 +205,7 @@ function private function_b75dd595( entity )
 // Params 1, eflags: 0x4
 // Checksum 0x49fdd6c6, Offset: 0xec0
 // Size: 0x78, Type: bool
-function private function_8b2173e0( entity )
+function private nosferatumovedash( entity )
 {
     var_d86ae1c4 = spawnstruct();
     var_d86ae1c4.enemy = entity.enemy;

@@ -114,7 +114,7 @@ function function_b23e4b45()
     
     if ( self oob::istouchinganyoobtrigger() || !function_d55a99f2( 300, 1, 1 ) )
     {
-        function_afd97197();
+        mine_destroy();
         return;
     }
     
@@ -209,7 +209,7 @@ function function_b23e4b45()
         }
         else
         {
-            function_afd97197();
+            mine_destroy();
             return;
         }
     }
@@ -218,13 +218,13 @@ function function_b23e4b45()
     {
         if ( is_in_water( self.origin ) )
         {
-            function_afd97197();
+            mine_destroy();
             return;
         }
         
         if ( !function_d15dd929( self getpathfindingradius(), self.origin ) )
         {
-            function_afd97197();
+            mine_destroy();
             return;
         }
         
@@ -1305,7 +1305,7 @@ function function_313aa1b8()
 // Params 0
 // Checksum 0x666e45b7, Offset: 0x35b0
 // Size: 0x24
-function function_afd97197()
+function mine_destroy()
 {
     self vehicle_ai::set_state( "death" );
 }

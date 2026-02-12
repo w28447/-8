@@ -173,9 +173,9 @@ function givekillstats( smeansofdeath, weapon, evictim )
 // Params 6
 // Checksum 0x6397aac6, Offset: 0x668
 // Size: 0xdc
-function function_e93cd1bb( event, var_ba01256c, weapon, attacker, victim, var_586a3b24 )
+function function_e93cd1bb( event, scoreeventobj, weapon, attacker, victim, var_586a3b24 )
 {
-    if ( !isdefined( var_ba01256c ) )
+    if ( !isdefined( scoreeventobj ) )
     {
         return 0;
     }
@@ -197,14 +197,14 @@ function function_e93cd1bb( event, var_ba01256c, weapon, attacker, victim, var_5
 // Params 2
 // Checksum 0xba6583f7, Offset: 0x750
 // Size: 0xd8, Type: bool
-function function_969ea48d( var_ba01256c, weapon )
+function function_969ea48d( scoreeventobj, weapon )
 {
-    if ( !isdefined( var_ba01256c ) )
+    if ( !isdefined( scoreeventobj ) )
     {
         return false;
     }
     
-    scoreevents = function_3cbc4c6c( var_ba01256c.var_2e4a8800 );
+    scoreevents = function_3cbc4c6c( scoreeventobj.var_2e4a8800 );
     
     if ( !isdefined( scoreevents ) || !isdefined( scoreevents.var_1253685d ) )
     {
@@ -215,7 +215,7 @@ function function_969ea48d( var_ba01256c, weapon )
     
     if ( rank::function_ca5d4a8( scoreevents.var_1253685d ) )
     {
-        function_e93cd1bb( scoreevents.var_1253685d, var_ba01256c, weapon, self, undefined, 0 );
+        function_e93cd1bb( scoreevents.var_1253685d, scoreeventobj, weapon, self, undefined, 0 );
     }
     
     return true;
@@ -252,14 +252,14 @@ function function_52ca9649( event )
 // Params 2
 // Checksum 0x795d0c69, Offset: 0x928
 // Size: 0x84
-function function_fc47f2ff( var_ba01256c, weapon )
+function function_fc47f2ff( scoreeventobj, weapon )
 {
-    if ( !isdefined( var_ba01256c ) )
+    if ( !isdefined( scoreeventobj ) )
     {
         return 0;
     }
     
-    scoreevents = function_3cbc4c6c( var_ba01256c.var_2e4a8800 );
+    scoreevents = function_3cbc4c6c( scoreeventobj.var_2e4a8800 );
     
     if ( !isdefined( scoreevents ) || !isdefined( scoreevents.var_1253685d ) )
     {
@@ -335,9 +335,9 @@ function private function_b78294bf( victim, weapon, attackerweapon, var_67660cb2
             }
         }
         
-        if ( isdefined( scoreevents ) && isdefined( scoreevents.var_170b3630 ) )
+        if ( isdefined( scoreevents ) && isdefined( scoreevents.assistscoreevent ) )
         {
-            scoreevents::processscoreevent( scoreevents.var_170b3630, self, victim, weapon );
+            scoreevents::processscoreevent( scoreevents.assistscoreevent, self, victim, weapon );
         }
     }
     
@@ -614,9 +614,9 @@ function function_24d66e59( inflictor, meansofdeath, victim, attacker, weapon, v
             {
                 scoreevents::processscoreevent( scoreevents.var_2eaed769, effect.var_4b22e697, victim, effect.var_3d1ed4bd );
             }
-            else if ( isdefined( scoreevents.var_170b3630 ) )
+            else if ( isdefined( scoreevents.assistscoreevent ) )
             {
-                scoreevents::processscoreevent( scoreevents.var_170b3630, effect.var_4b22e697, victim, effect.var_3d1ed4bd );
+                scoreevents::processscoreevent( scoreevents.assistscoreevent, effect.var_4b22e697, victim, effect.var_3d1ed4bd );
             }
         }
         
@@ -796,37 +796,37 @@ function private function_d68ae402( inflictor, meansofdeath, victim, attacker, s
             case 1:
                 break;
             case 2:
-                if ( isdefined( scoreevents.var_d58bd0e9 ) )
+                if ( isdefined( scoreevents.multikill2scoreevent ) )
                 {
-                    scoreevents::processscoreevent( scoreevents.var_d58bd0e9, attacker, victim, weapon );
+                    scoreevents::processscoreevent( scoreevents.multikill2scoreevent, attacker, victim, weapon );
                 }
                 
                 break;
             case 3:
-                if ( isdefined( scoreevents.var_6643c0a0 ) )
+                if ( isdefined( scoreevents.multikill3scoreevent ) )
                 {
-                    scoreevents::processscoreevent( scoreevents.var_6643c0a0, attacker, victim, weapon );
+                    scoreevents::processscoreevent( scoreevents.multikill3scoreevent, attacker, victim, weapon );
                 }
                 
                 break;
             case 4:
-                if ( isdefined( scoreevents.var_16abf654 ) )
+                if ( isdefined( scoreevents.multikill4scoreevent ) )
                 {
-                    scoreevents::processscoreevent( scoreevents.var_16abf654, attacker, victim, weapon );
+                    scoreevents::processscoreevent( scoreevents.multikill4scoreevent, attacker, victim, weapon );
                 }
                 
                 break;
             case 5:
-                if ( isdefined( scoreevents.var_1b8b6771 ) )
+                if ( isdefined( scoreevents.multikill5scoreevent ) )
                 {
-                    scoreevents::processscoreevent( scoreevents.var_1b8b6771, attacker, victim, weapon );
+                    scoreevents::processscoreevent( scoreevents.multikill5scoreevent, attacker, victim, weapon );
                 }
                 
                 break;
             default:
-                if ( attacker.multikills[ var_ac4c1 ].kills > 5 && isdefined( scoreevents.var_67b4a761 ) )
+                if ( attacker.multikills[ var_ac4c1 ].kills > 5 && isdefined( scoreevents.multikill6scoreevent ) )
                 {
-                    scoreevents::processscoreevent( scoreevents.var_67b4a761, attacker, victim, weapon );
+                    scoreevents::processscoreevent( scoreevents.multikill6scoreevent, attacker, victim, weapon );
                 }
                 
                 break;
@@ -913,14 +913,14 @@ function private updatemultikill( inflictor, meansofdeath, victim, attacker, sco
         }
     }
     
-    if ( isdefined( scoreevents ) && isdefined( scoreevents.var_2ecceeab ) && ( !( isdefined( victim.var_60a9eae7 ) ? victim.var_60a9eae7 : 0 ) || !isdefined( scoreevents.var_8600aca4 ) ) )
+    if ( isdefined( scoreevents ) && isdefined( scoreevents.killscoreevent ) && ( !( isdefined( victim.var_60a9eae7 ) ? victim.var_60a9eae7 : 0 ) || !isdefined( scoreevents.var_8600aca4 ) ) )
     {
-        scoreevents::processscoreevent( scoreevents.var_2ecceeab, attacker, victim, weapon );
+        scoreevents::processscoreevent( scoreevents.killscoreevent, attacker, victim, weapon );
     }
     
     attacker function_8279d8bf( weapon, scoreevents );
     
-    if ( isdefined( scoreevents ) && isdefined( scoreevents.var_2892e164 ) || isdefined( level.specweapons ) && isdefined( level.specweapons[ var_f801f37e.name ] ) && isdefined( level.specweapons[ var_f801f37e.name ].var_ec2a6a4c ) )
+    if ( isdefined( scoreevents ) && isdefined( scoreevents.saviorscoreevent ) || isdefined( level.specweapons ) && isdefined( level.specweapons[ var_f801f37e.name ] ) && isdefined( level.specweapons[ var_f801f37e.name ].var_ec2a6a4c ) )
     {
         if ( level.teambased && isdefined( victim ) && isdefined( victim.damagedplayers ) )
         {
@@ -938,9 +938,9 @@ function private updatemultikill( inflictor, meansofdeath, victim, attacker, sco
                         [[ level.specweapons[ var_f801f37e.name ].var_ec2a6a4c ]]( attacker, victim, entitydamaged.entity, time, weapon, level.specweapons[ var_f801f37e.name ].weapon );
                     }
                     
-                    if ( isdefined( scoreevents ) && isdefined( scoreevents.var_2892e164 ) )
+                    if ( isdefined( scoreevents ) && isdefined( scoreevents.saviorscoreevent ) )
                     {
-                        scoreevents::processscoreevent( scoreevents.var_2892e164, attacker, victim, weapon );
+                        scoreevents::processscoreevent( scoreevents.saviorscoreevent, attacker, victim, weapon );
                     }
                 }
             }

@@ -34,15 +34,15 @@ function init_shared()
     weaponobjects::function_e6400478( #"eq_shroud", &function_2fb567f2, 1 );
     globallogic_score::register_kill_callback( getweapon( "eq_shroud" ), &function_75f9989a );
     globallogic_score::function_86f90713( getweapon( "eq_shroud" ), &function_75f9989a );
-    level.var_9bc205c6 = getweapon( "eq_shroud" );
+    level.shroudweapon = getweapon( "eq_shroud" );
     
     if ( getgametypesetting( #"competitivesettings" ) === 1 )
     {
         level.var_88c99ac4 = getscriptbundle( "shroud_custom_settings_comp" );
     }
-    else if ( isdefined( level.var_9bc205c6.customsettings ) )
+    else if ( isdefined( level.shroudweapon.customsettings ) )
     {
-        level.var_88c99ac4 = getscriptbundle( level.var_9bc205c6.customsettings );
+        level.var_88c99ac4 = getscriptbundle( level.shroudweapon.customsettings );
     }
     else
     {
@@ -61,12 +61,12 @@ function function_1c601b99()
 {
     if ( isdefined( level.var_1b900c1d ) )
     {
-        [[ level.var_1b900c1d ]]( level.var_9bc205c6, &function_bff5c062 );
+        [[ level.var_1b900c1d ]]( level.shroudweapon, &function_bff5c062 );
     }
     
     if ( isdefined( level.var_a5dacbea ) )
     {
-        [[ level.var_a5dacbea ]]( level.var_9bc205c6, &weaponobjects::function_127fb8f3 );
+        [[ level.var_a5dacbea ]]( level.shroudweapon, &weaponobjects::function_127fb8f3 );
     }
 }
 

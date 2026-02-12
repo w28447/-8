@@ -504,7 +504,7 @@ function function_12944b2e()
         {
             var_9b1b2f2d = struct::get( #"hash_224dd0372d9a6eff" );
             e_player = var_9b1b2f2d zm_unitrigger::function_fac87205( "", ( 96, 180, 96 ), 1 );
-            e_player thread zm_vo::function_a2bd5a0c( #"hash_c393cb786feb084", 0, 0, 9999, 1 );
+            e_player thread zm_vo::function_a2bd5a0c( #"vox_m_quest_collect_charcoal", 0, 0, 9999, 1 );
             e_player playsound( #"hash_35c03e3efe6d4487" );
             
             foreach ( var_d3c8748e in var_4d573637 )
@@ -610,7 +610,7 @@ function function_12bc0c40( var_c58a9909 )
             var_749ba981 waittill( #"movedone" );
             var_749ba981 playsound( #"hash_119d4d341483b32c" );
             var_536e9d28 = s_loc zm_unitrigger::function_fac87205( "", 96, 1 );
-            var_536e9d28 thread zm_vo::function_a2bd5a0c( #"hash_13750f5daa5486e6", 0, 0, 9999, 1 );
+            var_536e9d28 thread zm_vo::function_a2bd5a0c( #"vox_m_quest_collect_wood", 0, 0, 9999, 1 );
             var_536e9d28 playsound( #"hash_30b990837c062495" );
             level.var_5cb7d214.n_wood++;
             
@@ -684,7 +684,7 @@ function function_965e1613()
             if ( isdefined( e_player ) )
             {
                 e_player playsound( #"hash_1c2e8e92fd97011f" );
-                e_player thread zm_vo::function_a2bd5a0c( #"hash_44a710040a5cf058", 0, 0, 9999, 1 );
+                e_player thread zm_vo::function_a2bd5a0c( #"vox_m_quest_collect_skull", 0, 0, 9999, 1 );
             }
             
             break;
@@ -830,7 +830,7 @@ function function_523131e6()
         s_waitresult = level waittill( #"hash_694f58e8bc5dd48" );
         level.var_5cb7d214.n_dung++;
         e_player = s_waitresult.e_player;
-        e_player thread zm_vo::function_a2bd5a0c( #"hash_2e56a3f1fc967c9b", 0, 0, 9999, 1 );
+        e_player thread zm_vo::function_a2bd5a0c( #"vox_m_quest_collect_dung", 0, 0, 9999, 1 );
         
         if ( level.var_5cb7d214.n_dung >= 1 )
         {
@@ -877,7 +877,7 @@ function mix_fertilizer_setup( b_skipped )
     e_player playsound( #"hash_338c802929e278d4" );
     level clientfield::set( "" + #"hash_5a3e1454226ef7a4", 0 );
     mdl_fertilizer delete();
-    e_player thread zm_vo::function_a2bd5a0c( #"hash_4529b90b3d008c9f", 0, 0, 9999, 1 );
+    e_player thread zm_vo::function_a2bd5a0c( #"vox_m_quest_build_fertilizer", 0, 0, 9999, 1 );
 }
 
 // Namespace zm_towers_main_quest/zm_towers_main_quest
@@ -1110,7 +1110,7 @@ function function_8be7b779()
     
     if ( isdefined( e_player ) )
     {
-        e_player zm_vo::function_a2bd5a0c( #"hash_2b150384d50cde7c", 0, 0, 9999, 1 );
+        e_player zm_vo::function_a2bd5a0c( #"vox_m_quest_danu_complete", 0, 0, 9999, 1 );
     }
 }
 
@@ -2777,7 +2777,7 @@ function function_2c1ae777()
     
     if ( zm_utility::is_player_valid( self, 0, 0 ) )
     {
-        self thread zm_vo::function_a2bd5a0c( #"hash_3cfc741d08bb9eb3", 0, 0, 9999, 1 );
+        self thread zm_vo::function_a2bd5a0c( #"vox_m_quest_catacomb_enter", 0, 0, 9999, 1 );
     }
 }
 
@@ -3151,7 +3151,7 @@ function function_af7564d9( s_params )
     v_fx_origin = self gettagorigin( "J_SpineUpper" );
     str_zone = self zm_utility::get_current_zone();
     str_archetype = self.archetype;
-    var_1e137cec = self.subarchetype;
+    str_subarchetype = self.subarchetype;
     var_7663fec2 = self.var_661d1e79;
     e_player = s_params.eattacker;
     w_weapon = s_params.weapon;
@@ -3208,7 +3208,7 @@ function function_af7564d9( s_params )
             break;
     }
     
-    if ( !var_d6241ccb && !( isdefined( var_7663fec2 ) && var_7663fec2 ) && var_1e137cec !== #"catalyst_electric" )
+    if ( !var_d6241ccb && !( isdefined( var_7663fec2 ) && var_7663fec2 ) && str_subarchetype !== #"catalyst_electric" )
     {
         return;
     }
@@ -4422,7 +4422,7 @@ function private function_1b37b8c4()
                 #/
                 
                 e_player = waitresult.attacker;
-                e_player thread zm_vo::function_a2bd5a0c( #"hash_3e1ae214416bcbca", 1, 0, 9999, 1 );
+                e_player thread zm_vo::function_a2bd5a0c( #"vox_m_quest_water_resp", 1, 0, 9999, 1 );
             }
             else
             {
@@ -5074,7 +5074,7 @@ function private function_b06cc4d9()
     level flag::set( #"hash_6b64093194524df3" );
     e_player = s_waitresult.e_who;
     e_player playsound( #"hash_2a02753bc05ff3de" );
-    e_player zm_vo::function_a2bd5a0c( #"hash_671a04c9b101659c", 0, 0, 9999, 1 );
+    e_player zm_vo::function_a2bd5a0c( #"vox_m_quest_key_pickup", 0, 0, 9999, 1 );
     level thread registerpost_chem_lab_touching_();
 }
 

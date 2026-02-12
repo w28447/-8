@@ -383,7 +383,7 @@ scriptbundle,#c_t8_mp_zombie_male_gib_def
 scriptbundle,#p8_fxanim_mp_austria_floating_cars_pickup_01_bundle
 scriptbundle,#p8_fxanim_mp_austria_finger_trap_01_bundle
 scriptbundle,#p8_fxanim_mp_hacienda_clock_grandfather_bundle
-string,#hash_e428880b38b4d8d
+string,#OBJECTIVES_COOP_WAYPOINT_HACK
 objective,#hash_4a72ffa3664320bc
 fx,#hash_1cbaa2a759708ece
 fx,#hash_3c9948ab313a6483
@@ -443,7 +443,7 @@ soundalias,#hash_bd53719309b6fc1
 soundalias,#hash_c266934b6e24701
 soundalias,#hash_c55588f84ee8615
 soundalias,#hash_ca467b11bcaf711
-soundalias,#hash_cc693b3173e7565
+soundalias,#exp_concussive_large
 soundalias,#amb_silo
 soundalias,#amb_sink
 soundalias,#hash_f4a72822d8a6073
@@ -488,7 +488,7 @@ soundalias,#hash_26bf012beaa38162
 soundalias,#vox_plr_8_skit8_2
 soundalias,#vox_plr_8_skit8_0
 soundalias,#hash_2730ba20330dff4a
-soundalias,#hash_2748aa2e6dc57ae0
+soundalias,#dst_car_tire_deflate
 soundalias,#amb_flag
 soundalias,#hash_293cda1c9ebecfd3
 soundalias,#dst_paper
@@ -609,7 +609,7 @@ soundalias,#hash_59fdc63637a8f995
 soundalias,#hash_5b18895703fba823
 soundalias,#vox_plr_8_skit2_1
 soundalias,#hash_5ca8d4adbb8576c5
-soundalias,#hash_5d12032de66d68e5
+soundalias,#amb_bell
 soundalias,#vox_plr_7_skit2_0
 soundalias,#hash_5ddab8a3b115543c
 soundalias,#hash_5dfd4690ebab105c
@@ -633,7 +633,7 @@ soundalias,#vox_plr_6_skit8_1
 soundalias,#hash_644ee63458e922f6
 soundalias,#hash_660c8c03843a2d97
 soundalias,#hash_663899d42687914d
-soundalias,#hash_66aa6b049c23fa3f
+soundalias,#exp_incindiary_large
 soundalias,#vox_plr_6_skit7_0
 soundalias,#hash_67e1b634a1e1c1ba
 soundalias,#hash_683fa9c204fffef2
@@ -675,7 +675,7 @@ soundalias,#hash_79e7070c3130f4a9
 soundalias,#exp_veh_plane_spinout_lp
 soundalias,#hash_7ac5fa6568de2461
 soundalias,#hash_7b03a9cee3b85887
-soundalias,#hash_7c2e59ca3ee725e5
+soundalias,#exp_veh_med
 soundalias,#vox_plr_5_skit4_1
 soundalias,#vox_plr_7_skit6_2
 soundalias,#vox_plr_7_skit6_0

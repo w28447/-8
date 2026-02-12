@@ -88,7 +88,7 @@ function private function_3aa023f1( name, entity )
 // Params 3, eflags: 0x4
 // Checksum 0xb507ccf3, Offset: 0x588
 // Size: 0x48
-function private function_69db754( name, gibflag, entity )
+function private _getgibpiece( name, gibflag, entity )
 {
     gibpieces = function_3aa023f1( name, entity );
     return gibpieces[ gibflag ];
@@ -376,7 +376,7 @@ function annihilate( entity )
         return false;
     }
     
-    gibpiecestruct = function_69db754( entity.gibdef, 2, entity );
+    gibpiecestruct = _getgibpiece( entity.gibdef, 2, entity );
     
     if ( isdefined( gibpiecestruct ) )
     {

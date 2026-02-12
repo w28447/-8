@@ -1308,8 +1308,8 @@ function function_f0b16c98( w_curr, n_dist_sq_max )
         }
     }
     
-    var_c581a3b2 = getaiteamarray( level.zombie_team );
-    a_ai_zombies = arraysortclosest( var_c581a3b2, var_2ed6f142, 12 );
+    a_ai_zombie_team = getaiteamarray( level.zombie_team );
+    a_ai_zombies = arraysortclosest( a_ai_zombie_team, var_2ed6f142, 12 );
     
     for ( i = 0; i < a_ai_zombies.size ; i++ )
     {

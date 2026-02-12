@@ -74,7 +74,7 @@ function __main__()
 // Params 0, eflags: 0x4
 // Checksum 0x651d8c0c, Offset: 0x500
 // Size: 0x62
-function private function_517fd069()
+function private archetypebrutusblackboardinit()
 {
     blackboard::createblackboardforentity( self );
     ai::createinterfaceforentity( self );
@@ -98,7 +98,7 @@ function private function_3cdbfffd( entity )
 function private function_666b2409( entity )
 {
     self.__blackboard = undefined;
-    self function_517fd069();
+    self archetypebrutusblackboardinit();
 }
 
 // Namespace wz_ai_brutus/wz_ai_brutus
@@ -107,7 +107,7 @@ function private function_666b2409( entity )
 // Size: 0x27e
 function function_debbd9da()
 {
-    self function_517fd069();
+    self archetypebrutusblackboardinit();
     self wz_ai_utils::function_9758722( "walk" );
     aiutility::addaioverridedamagecallback( self, &function_83a6d3ae );
     self callback::function_d8abfc3d( #"on_ai_melee", &wz_ai_zombie::zombie_on_melee );

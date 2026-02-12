@@ -185,7 +185,7 @@ function function_1c2930c7( localclientnum )
             continue;
         }
         
-        if ( isdefined( level.smartcoversettings.bundle.var_8fa9aac4 ) ? level.smartcoversettings.bundle.var_8fa9aac4 : 0 )
+        if ( isdefined( level.smartcoversettings.bundle.showprevis ) ? level.smartcoversettings.bundle.showprevis : 0 )
         {
             if ( var_b43e8dc2.var_bf9ca9b0 )
             {

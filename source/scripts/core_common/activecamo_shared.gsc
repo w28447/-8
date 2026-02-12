@@ -433,7 +433,7 @@ function init_stages( activecamo, var_3a8a1e00, isdeath )
                     
                     if ( isdefined( camo_stat ) && camo_stat < stage.info.var_e2dbd42d )
                     {
-                        var_7dfd59c3 = isdefined( stats::function_af5584ca( stage.info.permanentstatname ) ) ? stats::function_af5584ca( stage.info.permanentstatname ) : 0;
+                        var_7dfd59c3 = isdefined( stats::get_stat_challenge_tier( stage.info.permanentstatname ) ) ? stats::get_stat_challenge_tier( stage.info.permanentstatname ) : 0;
                         
                         if ( var_7dfd59c3 > 0 )
                         {
@@ -667,7 +667,7 @@ function function_1af985ba( weapon )
         return;
     }
     
-    var_dfcb2df3 = isdefined( stats::function_af5584ca( var_19bbfaaf ) ) ? stats::function_af5584ca( var_19bbfaaf ) : 0;
+    var_dfcb2df3 = isdefined( stats::get_stat_challenge_tier( var_19bbfaaf ) ) ? stats::get_stat_challenge_tier( var_19bbfaaf ) : 0;
     
     if ( var_dfcb2df3 > 0 )
     {
@@ -694,7 +694,7 @@ function function_cd9deb9e( weapon )
         return;
     }
     
-    var_dfcb2df3 = isdefined( stats::function_af5584ca( var_19bbfaaf ) ) ? stats::function_af5584ca( var_19bbfaaf ) : 0;
+    var_dfcb2df3 = isdefined( stats::get_stat_challenge_tier( var_19bbfaaf ) ) ? stats::get_stat_challenge_tier( var_19bbfaaf ) : 0;
     
     if ( var_dfcb2df3 > 0 )
     {

@@ -21,7 +21,7 @@ function init()
     clientfield::register( "scriptmover", "" + #"hash_4bea78fdf78a2613", 1, 1, "int", &function_c8043066, 0, 0 );
     clientfield::register( "scriptmover", "" + #"orb_explosion", 1, 1, "int", &orb_explosion, 0, 0 );
     clientfield::register( "scriptmover", "" + #"hash_6e2f9a57d1bc4b6a", 1, 1, "int", &function_e5437696, 0, 0 );
-    clientfield::register( "scriptmover", "" + #"ritual_gobo", 1, 1, "int", &function_d598fd7e, 0, 0 );
+    clientfield::register( "scriptmover", "" + #"ritual_gobo", 1, 1, "int", &ritual_circle, 0, 0 );
     clientfield::register( "scriptmover", "" + #"seagull_fx", 1, 1, "int", &seagull_fx, 0, 0 );
     clientfield::register( "scriptmover", "" + #"hash_7c708a514455bf88", 1, 1, "int", &function_430edc4e, 0, 0 );
     clientfield::register( "scriptmover", "" + #"hash_592c96b2803d9fd5", 1, 1, "int", &function_a4c0dc8a, 0, 0 );
@@ -168,7 +168,7 @@ function function_e5437696( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0x972f051a, Offset: 0x1550
 // Size: 0xec
-function function_d598fd7e( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function ritual_circle( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( newval == 1 )
     {

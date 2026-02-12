@@ -85,7 +85,7 @@ function function_6645d04c()
 // Size: 0xb6c
 function zone_init()
 {
-    level flag::init( #"hash_4083e9da0ba41dec" );
+    level flag::init( #"pegasus_ride_started" );
     level flag::init( "always_on" );
     level flag::set( "always_on" );
     zm_zonemgr::zone_init( "zone_temple_of_apollo" );
@@ -126,7 +126,7 @@ function zone_init()
     zm_zonemgr::add_adjacent_zone( "zone_spartan_monument_east", "zone_spartan_monument_upper", #"hash_cfcbf5509bfbc1b", 0 );
     zm_zonemgr::add_adjacent_zone( "zone_spartan_monument_east", "zone_spartan_monument_west", #"hash_cfcbf5509bfbc1b", 0 );
     zm_zonemgr::add_adjacent_zone( "zone_spartan_monument_upper", "zone_spartan_monument_west", #"hash_cfcbf5509bfbc1b", 0 );
-    zm_zonemgr::add_adjacent_zone( "zone_river_upper", "zone_river_lower", #"hash_4083e9da0ba41dec", 0 );
+    zm_zonemgr::add_adjacent_zone( "zone_river_upper", "zone_river_lower", #"pegasus_ride_started", 0 );
     zm_zonemgr::add_adjacent_zone( "zone_river_lower", "zone_cliff_tombs_upper", "connect_river_acheron_to_cliff_tombs", 0 );
     zm_zonemgr::add_adjacent_zone( "zone_cliff_tombs_upper", "zone_cliff_tombs_forge", #"connect_cliff_zones", 0 );
     zm_zonemgr::add_adjacent_zone( "zone_cliff_tombs_upper", "zone_cliff_tombs_center", #"connect_cliff_zones", 0 );
@@ -545,7 +545,7 @@ function function_17ac86f7()
 // Params 4
 // Checksum 0x82bbb5a7, Offset: 0x2960
 // Size: 0x104
-function function_f7a190a8( str_wait_flag, var_ab660f9a, str_location, var_39acfdda )
+function function_f7a190a8( str_wait_flag, var_ab660f9a, str_location, str_subcategory )
 {
     level endon( #"end_game" );
     self endon( #"death" );
@@ -566,6 +566,6 @@ function function_f7a190a8( str_wait_flag, var_ab660f9a, str_location, var_39acf
         wait 0.5;
     }
     
-    self thread zm_audio::function_713192b1( str_location, var_39acfdda );
+    self thread zm_audio::function_713192b1( str_location, str_subcategory );
 }
 

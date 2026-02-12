@@ -227,19 +227,19 @@ function private function_6aad582c( e_player )
 {
     e_player endoncallback( &function_3741630d, #"disconnect" );
     
-    if ( e_player zm_characters::is_character( array( #"hash_3c0932fa55ee6e5b" ) ) )
+    if ( e_player zm_characters::is_character( array( #"prt_zm_brigadier" ) ) )
     {
         var_59c8624c = #"hash_24f1e841c9ab0766";
     }
-    else if ( e_player zm_characters::is_character( array( #"hash_5ebf024e1559c04a" ) ) )
+    else if ( e_player zm_characters::is_character( array( #"prt_zm_butler" ) ) )
     {
         var_59c8624c = #"hash_680df11406aaad0d";
     }
-    else if ( e_player zm_characters::is_character( array( #"hash_4e8f51ec275a4a38" ) ) )
+    else if ( e_player zm_characters::is_character( array( #"prt_zm_gunslinger" ) ) )
     {
         var_59c8624c = #"hash_14367bddc8694d4f";
     }
-    else if ( e_player zm_characters::is_character( array( #"hash_515977e191d13967" ) ) )
+    else if ( e_player zm_characters::is_character( array( #"prt_zm_psychic" ) ) )
     {
         var_59c8624c = #"hash_53875c52fa6301c0";
     }
@@ -267,19 +267,19 @@ function private function_3741630d( var_c34665fc )
 function function_9ea70701()
 {
     var_56980742 = struct::get( "s_int_t_c" );
-    var_56980742.var_690ea031 = array( #"hash_515977e191d13967" );
+    var_56980742.var_690ea031 = array( #"prt_zm_psychic" );
     var_56980742.var_59c8624c = #"hash_4ff92627bab81ee4";
     var_56980742.s_unitrigger_stub = var_56980742 zm_unitrigger::create( "", 64, &function_33864e5d );
     var_91f0b44f = struct::get( "s_int_amu" );
-    var_91f0b44f.var_690ea031 = array( #"hash_515977e191d13967" );
+    var_91f0b44f.var_690ea031 = array( #"prt_zm_psychic" );
     var_91f0b44f.var_59c8624c = #"hash_502b8782f8b740c";
     var_91f0b44f.s_unitrigger_stub = var_91f0b44f zm_unitrigger::create( "", 64, &function_33864e5d );
     var_fb14f184 = struct::get( "s_int_n_p" );
-    var_fb14f184.var_690ea031 = array( #"hash_5ebf024e1559c04a" );
+    var_fb14f184.var_690ea031 = array( #"prt_zm_butler" );
     var_fb14f184.var_59c8624c = #"hash_7172cde1ce628720";
     var_fb14f184.s_unitrigger_stub = var_fb14f184 zm_unitrigger::create( "", 64, &function_33864e5d );
     var_64dd4c0d = struct::get( "s_int_a_p" );
-    var_64dd4c0d.var_690ea031 = array( #"hash_3c0932fa55ee6e5b" );
+    var_64dd4c0d.var_690ea031 = array( #"prt_zm_brigadier" );
     var_64dd4c0d.var_59c8624c = #"hash_26c5ceaa58dd1ddc";
     var_64dd4c0d.s_lookat = struct::get( "s_int_a_p_lookat", "targetname" );
     var_64dd4c0d.s_unitrigger_stub = var_64dd4c0d zm_unitrigger::create( "", 64, &function_33864e5d );
@@ -378,7 +378,7 @@ function function_a3a23636()
             
             if ( b_play_vo && !( isdefined( level.var_d2867f97 ) && level.var_d2867f97 ) )
             {
-                level.var_d2867f97 = e_player zm_vo::function_a2bd5a0c( #"hash_4a084873bbb64d39", 0, 0, 9999 );
+                level.var_d2867f97 = e_player zm_vo::function_a2bd5a0c( #"vox_knight_trap_react_first", 0, 0, 9999 );
             }
         }
         
@@ -475,7 +475,7 @@ function function_70c90053()
 // Params 2
 // Checksum 0x99b9245, Offset: 0x1df8
 // Size: 0x9e
-function function_e432aeb6( str_category, var_39acfdda )
+function function_e432aeb6( str_category, str_subcategory )
 {
     if ( level.var_359223a8.size )
     {
@@ -485,7 +485,7 @@ function function_e432aeb6( str_category, var_39acfdda )
         return 1;
     }
     
-    self.var_631a26f0[ str_category ][ var_39acfdda ] = undefined;
+    self.var_631a26f0[ str_category ][ str_subcategory ] = undefined;
     return 0;
 }
 
@@ -524,7 +524,7 @@ function private function_2d4ce142( n_voice )
 // Params 2
 // Checksum 0xd9c6657b, Offset: 0x2080
 // Size: 0x34e, Type: bool
-function function_c8d42aba( str_category, var_39acfdda )
+function function_c8d42aba( str_category, str_subcategory )
 {
     a_e_players = util::get_players();
     
@@ -573,7 +573,7 @@ function function_c8d42aba( str_category, var_39acfdda )
 // Params 2
 // Checksum 0x705c421c, Offset: 0x23d8
 // Size: 0xc0, Type: bool
-function function_4928382a( str_category, var_39acfdda )
+function function_4928382a( str_category, str_subcategory )
 {
     a_e_players = util::get_players();
     
@@ -591,7 +591,7 @@ function function_4928382a( str_category, var_39acfdda )
 // Params 2
 // Checksum 0x15b8def5, Offset: 0x24a0
 // Size: 0x74, Type: bool
-function function_658ce256( str_category, var_39acfdda )
+function function_658ce256( str_category, str_subcategory )
 {
     if ( math::cointoss( 16 ) )
     {
@@ -637,7 +637,7 @@ function function_df8a01f3()
 // Params 2
 // Checksum 0xdac4bfaf, Offset: 0x26a0
 // Size: 0x5c, Type: bool
-function function_edae33b5( str_category, var_39acfdda )
+function function_edae33b5( str_category, str_subcategory )
 {
     if ( math::cointoss( 16 ) )
     {
@@ -652,7 +652,7 @@ function function_edae33b5( str_category, var_39acfdda )
 // Params 2
 // Checksum 0xba053010, Offset: 0x2708
 // Size: 0x74, Type: bool
-function function_fe8cce7a( str_category, var_39acfdda )
+function function_fe8cce7a( str_category, str_subcategory )
 {
     if ( math::cointoss( 16 ) )
     {
@@ -668,7 +668,7 @@ function function_fe8cce7a( str_category, var_39acfdda )
 // Params 2
 // Checksum 0x749cc7d3, Offset: 0x2788
 // Size: 0x74, Type: bool
-function function_bb1888fe( str_category, var_39acfdda )
+function function_bb1888fe( str_category, str_subcategory )
 {
     if ( math::cointoss( 25 ) )
     {
@@ -684,7 +684,7 @@ function function_bb1888fe( str_category, var_39acfdda )
 // Params 2
 // Checksum 0xc028f3c0, Offset: 0x2808
 // Size: 0x74, Type: bool
-function function_f26d178f( str_category, var_39acfdda )
+function function_f26d178f( str_category, str_subcategory )
 {
     if ( math::cointoss( 16 ) )
     {
@@ -700,7 +700,7 @@ function function_f26d178f( str_category, var_39acfdda )
 // Params 2
 // Checksum 0xf9aa8192, Offset: 0x2888
 // Size: 0xfa, Type: bool
-function function_1f4ab5ec( str_category, var_39acfdda )
+function function_1f4ab5ec( str_category, str_subcategory )
 {
     n_chance = randomint( 10 );
     

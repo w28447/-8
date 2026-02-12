@@ -9,7 +9,7 @@ physpreset,d#hash_2dde11734bce6259
 physpreset,#hash_37a4397b805ad372
 physpreset,#hash_37a6f1b88647ea58
 physpreset,#hash_43d7e4f72db83a15
-physpreset,#hash_4d2fdc9bc6b02255
+physpreset,#boot
 physpreset,#p7_debris_trash_cup_coffee_02
 physpreset,#hash_503e238f61e8dade
 physpreset,#p7_clipboard_01_wpaper
@@ -17,7 +17,7 @@ physpreset,#hash_5c2d217edb4867d8
 physpreset,#hash_5ceaa57dd3d5ebb1
 physpreset,#p7_world_globe_vintage_01
 physpreset,#hash_6d3562f6377ac3d8
-physpreset,#hash_7909e4d5d48113fe
+physpreset,#glove
 physpreset,#p7_tools_hammer
 physpreset,#hash_7b9f145dc80ed9c4
 physpreset,d#hash_7f10d2bf08c8cb38
@@ -44238,7 +44238,7 @@ physpreset,#book
 physpreset,#hash_5023e52287f5a333
 physpreset,#hash_550e3f1b89d837dc
 physpreset,d#hash_5d4384a8d215e8d0
-physpreset,#hash_695e6bd10c7f85e8
+physpreset,#p7_food_fruit
 physpreset,#hash_6c3541d637690d46
 xmodel,#p8_wood_beam_generic_02
 xmodel,#p8_wood_beam_generic_03

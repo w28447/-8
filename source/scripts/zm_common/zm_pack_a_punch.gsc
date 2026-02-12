@@ -893,7 +893,7 @@ function private function_222c0292( current_weapon, packa_rollers, pap_machine, 
         }
         
         self zm_stats::function_c0c6ab19( #"weapons_packed" );
-        self contracts::increment_zm_contract( #"hash_b6b948aac4bd4c" );
+        self contracts::increment_zm_contract( #"contract_zm_pack_a_punch" );
         
         if ( !pap_machine.var_a86430cb )
         {

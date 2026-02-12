@@ -98,8 +98,8 @@ function event_handler[level_init] main( eventstruct )
     zm::init_fx();
     zodt8_pap_quest::init();
     zodt8_sentinel::init();
-    namespace_4a807bff::init();
-    namespace_b45e3f05::init();
+    zodt8_wonder_weapon_quest::init();
+    zodt8_side_quests::init();
     zodt8_achievements::init();
     zodt8_narrative::init();
     zm_audio_sq::init();
@@ -2485,14 +2485,14 @@ function function_b5f302d5()
         music::setmusicstate( "location_underwater", self );
     }
     
-    self function_e4aee0bb();
+    self water_exit_vo();
 }
 
 // Namespace zm_zodt8/zm_zodt8
 // Params 0
 // Checksum 0xcc7eecec, Offset: 0xaf30
 // Size: 0x16c
-function function_e4aee0bb()
+function water_exit_vo()
 {
     if ( ( !( isdefined( level.water_drained_fore ) && level.water_drained_fore ) || !( isdefined( level.water_drained_aft ) && level.water_drained_aft ) ) && !level flag::get( #"catalyst_encounters_completed" ) )
     {

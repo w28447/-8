@@ -1005,7 +1005,7 @@
         var_473e8b8d = var_7723a9cd + "<dev string:xd7c>";
         var_ca180226 = level.script + "<dev string:xd84>";
         var_19494914 = level.script + "<dev string:xd8c>";
-        var_155d523d = "<dev string:xd93>";
+        dir_zone = "<dev string:xd93>";
         var_7770e500 = "<dev string:xdae>";
         var_d6ade535 = "<dev string:xdcc>";
         fprintln( file, "<dev string:xdf2>" );
@@ -1013,7 +1013,7 @@
         fprintln( file, "<dev string:xe9a>" );
         fprintln( file, "<dev string:xea4>" + var_7e52c89c + "<dev string:xebd>" );
         fprintln( file, "<dev string:xed1>" + var_44c49e4e + "<dev string:xebd>" );
-        fprintln( file, "<dev string:xeea>" + var_473e8b8d + "<dev string:xeff>" + var_155d523d );
+        fprintln( file, "<dev string:xeea>" + var_473e8b8d + "<dev string:xeff>" + dir_zone );
         fprintln( file, "<dev string:xf06>" + var_7e52c89c + "<dev string:xeff>" + var_d6ade535 );
         fprintln( file, "<dev string:xf1b>" + var_44c49e4e + "<dev string:xeff>" + var_7770e500 );
         fprintln( file, "<dev string:xf30>" );
@@ -1147,7 +1147,7 @@
         var_ca180226 = level.script + "<dev string:xd84>";
         var_19494914 = level.script + "<dev string:xd8c>";
         var_b522696f = "<dev string:x1005>" + platform + "<dev string:x100d>";
-        var_155d523d = "<dev string:xd93>";
+        dir_zone = "<dev string:xd93>";
         var_7770e500 = "<dev string:xdae>";
         var_d6ade535 = "<dev string:xdcc>";
         file = openfile( var_7e52c89c, "<dev string:x101c>" );

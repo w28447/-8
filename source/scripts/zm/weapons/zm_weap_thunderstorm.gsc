@@ -525,8 +525,8 @@ function function_9c1450b8( var_10d4f67d, n_player_index )
     {
         case #"heavy":
         case #"miniboss":
-            var_b1c1c5cf = zm_equipment::function_7d948481( 0.1, 0.25, 0.25, 1 );
-            var_5d7b4163 = zm_equipment::function_379f6b5d( 500, var_b1c1c5cf, 1, 4, 50 );
+            n_damage_scale = zm_equipment::function_7d948481( 0.1, 0.25, 0.25, 1 );
+            var_5d7b4163 = zm_equipment::function_379f6b5d( 500, n_damage_scale, 1, 4, 50 );
             self thread function_7c333a0f( var_10d4f67d, var_5d7b4163, n_player_index );
             break;
         default:

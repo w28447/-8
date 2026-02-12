@@ -319,8 +319,8 @@ function private initzmbehaviorsandasm()
     behaviortreenetworkutility::registerbehaviortreescriptapi( #"findnodesservice", &findnodesservice );
     assert( isscriptfunctionptr( &zombieattackableobjectservice ) );
     behaviortreenetworkutility::registerbehaviortreescriptapi( #"zombieattackableobjectservice", &zombieattackableobjectservice );
-    assert( isscriptfunctionptr( &function_fb814207 ) );
-    behaviortreenetworkutility::registerbehaviortreescriptapi( #"zombiefindfleshservice", &function_fb814207, 2 );
+    assert( isscriptfunctionptr( &findfleshservice ) );
+    behaviortreenetworkutility::registerbehaviortreescriptapi( #"zombiefindfleshservice", &findfleshservice, 2 );
     assert( isscriptfunctionptr( &function_f637b05d ) );
     behaviortreenetworkutility::registerbehaviortreescriptapi( #"hash_712f0844b14c72fe", &function_f637b05d, 1 );
     assert( isscriptfunctionptr( &zombieenteredplayable ) );
@@ -340,7 +340,7 @@ function private initzmbehaviorsandasm()
 // Params 1
 // Checksum 0x1d602c1, Offset: 0x2d98
 // Size: 0x44
-function function_fb814207( behaviortreeentity )
+function findfleshservice( behaviortreeentity )
 {
     if ( isdefined( self.var_72411ccf ) )
     {
@@ -446,12 +446,12 @@ function zombiefindflesh( behaviortreeentity )
     behaviortreeentity zombie_utility::run_ignore_player_handler();
     designated_target = 0;
     
-    if ( isdefined( behaviortreeentity.var_93a62fe ) && isdefined( behaviortreeentity.var_93a62fe.b_is_designated_target ) && behaviortreeentity.var_93a62fe.b_is_designated_target )
+    if ( isdefined( behaviortreeentity.closest_valid_player ) && isdefined( behaviortreeentity.closest_valid_player.b_is_designated_target ) && behaviortreeentity.closest_valid_player.b_is_designated_target )
     {
         designated_target = 1;
     }
     
-    if ( !isdefined( behaviortreeentity.var_93a62fe ) && !isdefined( zombie_poi ) && !isdefined( behaviortreeentity.attackable ) )
+    if ( !isdefined( behaviortreeentity.closest_valid_player ) && !isdefined( zombie_poi ) && !isdefined( behaviortreeentity.attackable ) )
     {
         if ( isdefined( behaviortreeentity.ignore_player ) )
         {
@@ -487,7 +487,7 @@ function zombiefindflesh( behaviortreeentity )
     if ( !isdefined( level.var_4bde8b8f ) || ![[ level.var_4bde8b8f ]]() )
     {
         behaviortreeentity.enemyoverride = behaviortreeentity.zombie_poi;
-        behaviortreeentity.favoriteenemy = behaviortreeentity.var_93a62fe;
+        behaviortreeentity.favoriteenemy = behaviortreeentity.closest_valid_player;
     }
     
     if ( isdefined( behaviortreeentity.v_zombie_custom_goal_pos ) )
@@ -596,7 +596,7 @@ function zombiefindflesh( behaviortreeentity )
 // Size: 0x3e
 function function_f637b05d( behaviortreeentity )
 {
-    behaviortreeentity.var_93a62fe = zm_utility::get_closest_valid_player( behaviortreeentity.origin, behaviortreeentity.ignore_player );
+    behaviortreeentity.closest_valid_player = zm_utility::get_closest_valid_player( behaviortreeentity.origin, behaviortreeentity.ignore_player );
 }
 
 // Namespace zm_behavior/zm_behavior

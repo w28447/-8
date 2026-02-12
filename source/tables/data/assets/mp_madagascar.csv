@@ -12325,7 +12325,7 @@ image,d#i_wpn_t8_eqp_briefcase_bomb_computer_n
 image,d#i_mtl_veh_t8_civ_forklift_modular_decal_scratch_c
 image,#i_mtl_p8_mad_school_flagpole_wood_01_c
 image,#i_mtl_p8_mad_school_flagpole_wood_01_n
-image,d#hash_27d2980e98d88c55
+image,d#$alpha
 image,d#fxt8_water_ripple_anim_mask
 image,#i_mtl_p7_zm_shi_net_fishing_set_c
 image,#i_mtl_p7_zm_shi_net_fishing_set_n
@@ -30940,7 +30940,7 @@ physpreset,#p7_bucket_plastic_5_gal_lid
 physpreset,#hash_5c4fae1eea294484
 physpreset,d#hash_5d4384a8d215e8d0
 physpreset,#hash_5f26c6699f8b1c00
-physpreset,#hash_695e6bd10c7f85e8
+physpreset,#p7_food_fruit
 physpreset,#p7_vase_clay_egyptian_02
 physpreset,d#p7_vase_clay_egyptian_01
 physpreset,#p7_basket_wicker_01

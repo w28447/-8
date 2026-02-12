@@ -31,7 +31,7 @@ localizeentry,d#hash_40c47b72c083914
 localizeentry,d#hash_43b319457bc818e
 localizeentry,d#wz/attach_fastmag_desc
 localizeentry,d#hash_46fc5dc1191b406
-localizeentry,d#hash_47e1955bea1fc19
+localizeentry,d#mpui/camo_flectarn
 localizeentry,d#wz/attach_extbarrel
 localizeentry,#hash_4938f240cc79a5a
 localizeentry,d#hash_494d4b5b743c649
@@ -58,7 +58,7 @@ localizeentry,d#weapon/shotgun_pump_t8
 localizeentry,d#weapon/smg_accurate_t8
 localizeentry,d#mpui/extclip
 localizeentry,d#hash_870732dcf823d00
-localizeentry,d#hash_8b67b8f9d9a7f0e
+localizeentry,d#heroes/spectre
 localizeentry,d#hash_9340177dbe3be9f
 localizeentry,d#hash_963e4c4a1430d25
 localizeentry,#hash_99fc2e66d019964
@@ -99,7 +99,7 @@ localizeentry,d#mpui/ir
 localizeentry,d#mpui/is
 localizeentry,d#mpui/gl
 localizeentry,d#mpui/dw
-localizeentry,d#hash_11844df90c43c32c
+localizeentry,d#mpui/camo_dante
 localizeentry,d#hash_11894c88451b8c54
 localizeentry,d#mpui/sf
 localizeentry,d#mpui/rf
@@ -132,7 +132,7 @@ localizeentry,d#weapon/launcher_standard_operator_t8_wz_desc
 localizeentry,d#weapon/ar_peacekeeper_t8
 localizeentry,d#weapon/pistol_fullauto_t8_desc
 localizeentry,d#hash_159422619daa50d8
-localizeentry,d#hash_15b50559752dd744
+localizeentry,d#mpui/camo_redhex
 localizeentry,d#hash_15cf0d46af70291b
 localizeentry,d#mpui/null
 localizeentry,d#hash_16025ca2b9dd4da3
@@ -179,7 +179,7 @@ localizeentry,d#hash_1c067a1967345eb9
 localizeentry,d#hash_1c07c87a45375aaf
 localizeentry,#hash_1c59b497e5ef478f
 localizeentry,d#hash_1c70bbcd2c405970
-localizeentry,d#hash_1c93858d6991c626
+localizeentry,d#mpui/camo_integer
 localizeentry,d#hash_1c96f39a878e18d3
 localizeentry,d#hash_1d0dd1366200e856
 localizeentry,d#zmui/mms_desc
@@ -232,12 +232,12 @@ localizeentry,d#hash_23b156b9a286f6c8
 localizeentry,d#wz/attach_stock
 localizeentry,d#weapon/sig_blade
 localizeentry,#hash_23cdac040fa39008
-localizeentry,d#hash_23d45d79e7cc975d
+localizeentry,d#mpui/camo_jungle
 localizeentry,d#mpui/dualoptic_desc
 localizeentry,d#weapon/ar_an94_t8
 localizeentry,d#hash_2443dac0d8af3240
 localizeentry,d#hash_244ee9beaa552ff7
-localizeentry,d#hash_2462544f3066322a
+localizeentry,d#mpui/camo_huntsman
 localizeentry,d#hash_246c7d9118b22299
 localizeentry,d#hash_24a3e0f402bfd000
 localizeentry,#hash_24b4aea3bce3281e
@@ -272,7 +272,7 @@ localizeentry,#hash_280bd22ee043e988
 localizeentry,d#weapon/smg_accurate_t8_wz_desc
 localizeentry,d#mpui/fmj2_desc
 localizeentry,d#hash_28f8d698fe4d79d2
-localizeentry,d#hash_2903042e98504cc7
+localizeentry,d#zmui/high_caliber_2_desc
 localizeentry,d#hash_290718641d507e03
 localizeentry,d#wz/attach_acog_desc
 localizeentry,#hash_29317a827be61b95
@@ -300,7 +300,7 @@ localizeentry,d#hash_2b13aa9e715385af
 localizeentry,d#hash_2b2096d421c8cd24
 localizeentry,d#hash_2b27d20d2cfc1069
 localizeentry,d#hash_2b3d791eb05ec296
-localizeentry,d#hash_2b40461a235c9616
+localizeentry,d#mpui/camo_ardent
 localizeentry,d#mpui/acog_desc
 localizeentry,d#hash_2b9883e118f9fa0b
 localizeentry,d#weapon/sniper_quickscope_t8_operator
@@ -329,7 +329,7 @@ localizeentry,d#weapon/melee_slaybell_t8_desc
 localizeentry,d#hash_2f3db08411548b58
 localizeentry,d#hash_2f6eb9c102b831ad
 localizeentry,d#hash_2f7231dcf7961528
-localizeentry,d#hash_2f75827412f48897
+localizeentry,d#mpui/camo_burnt
 localizeentry,d#hash_2f951a0817f78b9d
 localizeentry,d#mpui/fmj2
 localizeentry,d#hash_301d068f12af5636
@@ -338,13 +338,13 @@ localizeentry,d#mpui/ir_desc
 localizeentry,d#hash_30ebd9a564f8adc2
 localizeentry,d#hash_30f532e9051a3691
 localizeentry,#hash_310ad55f171e194e
-localizeentry,d#hash_318a13787fd10f6a
+localizeentry,d#heroes/mercenary
 localizeentry,d#hash_31b5340e9a1b398c
 localizeentry,d#hash_31e9d057a03398bf
 localizeentry,d#weapon/ar_standard_t8
 localizeentry,d#hash_3279150dc6bd1b3b
 localizeentry,d#hash_328a07093267e5d5
-localizeentry,d#hash_3292e34998476e76
+localizeentry,d#mpui/camo_snowjob
 localizeentry,d#weapon/sig_bow
 localizeentry,d#hash_32dc94fba031bc78
 localizeentry,d#hash_33105d49e7fd102e
@@ -412,7 +412,7 @@ localizeentry,#hash_3b65f8d23493d947
 localizeentry,d#hash_3b6aef472fd03c04
 localizeentry,d#hash_3b719a225449db88
 localizeentry,#hash_3b760b1efcb1bee4
-localizeentry,d#hash_3b87d7eb92a261aa
+localizeentry,d#heroes/enforcer
 localizeentry,d#mpui/camo_darkmatter
 localizeentry,d#hash_3bb4fa8f6dc7bb6e
 localizeentry,d#weapon/melee_secretsanta_t8_desc
@@ -440,7 +440,7 @@ localizeentry,d#hash_3dfd2cf9c5589207
 localizeentry,d#hash_3e078f77e046350d
 localizeentry,d#hash_3e42591da1c1538f
 localizeentry,d#mpui/steadyaim_desc
-localizeentry,d#hash_3e968f73a7d7e44e
+localizeentry,d#mpui/camo_chameleon
 localizeentry,d#weapon/sniper_damagesemi_t8_desc
 localizeentry,d#mpui/gl_desc
 localizeentry,d#hash_3ee20f103a454178
@@ -471,11 +471,11 @@ localizeentry,d#weapon/tr_powersemi_t8
 localizeentry,#hash_42b309155f05e081
 localizeentry,d#mpui/supply
 localizeentry,d#hash_43374b5ab9becdaa
-localizeentry,d#hash_4361bc63de0848d3
+localizeentry,d#mpui/camo_jungletek
 localizeentry,d#zombie/cymbal_monkey
 localizeentry,d#hash_43b0cfc850dbcc04
 localizeentry,d#wz/attach_stock_desc
-localizeentry,d#hash_44149fa37d4d853f
+localizeentry,d#mpui/camo_bliss
 localizeentry,d#weapon/ar_peacekeeper_t8_desc
 localizeentry,d#hash_44d6863447b03eff
 localizeentry,d#mpui/suppressed
@@ -507,7 +507,7 @@ localizeentry,d#hash_4911d1f708fff427
 localizeentry,d#hash_4911d2f708fff5da
 localizeentry,d#hash_4911d3f708fff78d
 localizeentry,d#mpui/adsreload_desc
-localizeentry,d#hash_4947abbb91b5fbfe
+localizeentry,d#heroes/outrider
 localizeentry,d#weapon/melee_slaybell_t8
 localizeentry,d#hash_496edb1627c797ee
 localizeentry,d#hash_4973da5ba484b2ae
@@ -516,7 +516,7 @@ localizeentry,#hash_499b538a67933900
 localizeentry,#hash_49bc6c07c0e8d845
 localizeentry,d#hash_49e88c8053d4f73e
 localizeentry,d#hash_4a24740941328c2e
-localizeentry,d#hash_4a324d42cf256472
+localizeentry,d#mpui/camo_heatstroke
 localizeentry,d#weapon/lmg_spray_t8_operator
 localizeentry,d#hash_4a584bc8c443f246
 localizeentry,d#hash_4a6f079813e273c3
@@ -555,7 +555,7 @@ localizeentry,d#weapon/sniper_powerbolt_t8
 localizeentry,d#weapon/lmg_arav
 localizeentry,d#hash_4feb8755eff8941b
 localizeentry,d#hash_502b6147b487d459
-localizeentry,d#hash_502cca55de20d536
+localizeentry,d#mpui/camo_fear
 localizeentry,d#weapon/tr_powersemi_operator
 localizeentry,d#weapon/sensor_dart
 localizeentry,d#hash_504b5346d29dabe0
@@ -594,7 +594,7 @@ localizeentry,#hash_552e95261f2d04be
 localizeentry,d#weapon/lmg_double_t8
 localizeentry,d#zmui/extrapellets_desc
 localizeentry,d#hash_556fbdaebf02d158
-localizeentry,d#hash_56074383a6c3b738
+localizeentry,d#zmui/high_caliber_desc
 localizeentry,d#hash_560d002c6e40e5df
 localizeentry,d#hash_561a6371fe1e6f3a
 localizeentry,d#hash_561bb2bb72747013
@@ -635,7 +635,7 @@ localizeentry,d#hash_5a52f106fb9b2ed6
 localizeentry,d#weapon/tr_longburst_t8
 localizeentry,d#mpui/hipgrip
 localizeentry,d#hash_5a9b060c653e2953
-localizeentry,d#hash_5abca820cfab2cd8
+localizeentry,d#mpui/camo_arctic
 localizeentry,d#hash_5acae5f224c146a9
 localizeentry,d#hash_5acc6565befe7e0a
 localizeentry,d#mpui/adsreload
@@ -643,7 +643,7 @@ localizeentry,d#hash_5b1189ff13cd8b59
 localizeentry,d#hash_5b39e262a5ec4163
 localizeentry,d#hash_5b467b9821009507
 localizeentry,d#weapon/sniper_damagesemi_t8
-localizeentry,d#hash_5b7536f294f156a6
+localizeentry,d#mpui/camo_battle
 localizeentry,#hash_5bb56d2da8ca648b
 localizeentry,d#weapon/hero_pineapplegun
 localizeentry,d#hash_5c0d9b140a188ce0
@@ -670,7 +670,7 @@ localizeentry,d#hash_5e2c81adb5a5264a
 localizeentry,d#hash_5e6231434add15a2
 localizeentry,d#hash_5e6ae4119dda43e0
 localizeentry,d#hash_5e961d682f4b127b
-localizeentry,d#hash_5ec68d99caf17930
+localizeentry,d#mpui/camo_contagious
 localizeentry,d#hash_5f17105e484faba8
 localizeentry,d#hash_5f1c07e495c6fe3d
 localizeentry,d#mpui/extrapellets_desc
@@ -683,7 +683,7 @@ localizeentry,d#hash_6063cd6ae0f6ce28
 localizeentry,#hash_6067ee4630b093db
 localizeentry,d#hash_607993fb651c3014
 localizeentry,d#zmweapon/spork_knife
-localizeentry,d#hash_60a2e99cf0e191e1
+localizeentry,d#mpui/camo_interpol
 localizeentry,d#hash_60a58c15a0b5dd6e
 localizeentry,d#mpui/extbarrel2_desc
 localizeentry,d#hash_60aeeec1490ce332
@@ -714,7 +714,7 @@ localizeentry,#hash_6307bc66ed7bd51d
 localizeentry,d#weapon/melee_club_t8_desc
 localizeentry,d#hash_636a90d5add778dc
 localizeentry,d#hash_6370b5a97249c317
-localizeentry,d#hash_639a907fae7467b1
+localizeentry,d#mpui/camo_6speed
 localizeentry,d#weapon/shotgun_fullauto_t8
 localizeentry,d#wz/basketball
 localizeentry,d#weapon/tr_damageburst_t8_desc
@@ -792,7 +792,7 @@ localizeentry,d#hash_6d0c15c50ea1e609
 localizeentry,d#weapon/tr_midburst_t8
 localizeentry,#hash_6d66150f48016807
 localizeentry,d#hash_6d806763ad7c0609
-localizeentry,d#hash_6d832831f5532f00
+localizeentry,d#mpui/camo_wmd
 localizeentry,d#hash_6e155a8da74ae1b6
 localizeentry,d#killstreak/dart_desc
 localizeentry,d#hash_6e2fd7423cbe42b0
@@ -848,7 +848,7 @@ localizeentry,d#mpui/damage
 localizeentry,d#hash_758d93baadbc199d
 localizeentry,d#wz/attach_fastmag
 localizeentry,d#hash_75910f89d3c7bccc
-localizeentry,d#hash_759cb09309cf4447
+localizeentry,d#heroes/battery
 localizeentry,#hash_75a83b86aa7dd7e3
 localizeentry,#hash_75a83c86aa7dd996
 localizeentry,d#hash_75c36a6b651e7775
@@ -856,7 +856,7 @@ localizeentry,d#hash_75f4748eff6544f4
 localizeentry,d#hash_75fcbf4af5ba2b2e
 localizeentry,#hash_763edb9060c94c5f
 localizeentry,d#hash_7645db46e9fdd615
-localizeentry,d#hash_7664f631b276facc
+localizeentry,d#mpui/camo_ash
 localizeentry,d#hash_76801161d67ae0f5
 localizeentry,d#hash_768c5aeecc2d7cc4
 localizeentry,d#hash_76b39c94b6f50858
@@ -893,7 +893,7 @@ localizeentry,#weapon/smg_fastfire_t8_wz_desc
 localizeentry,#hash_7a96bc1343d46e4f
 localizeentry,d#zmweapon/blundergat
 localizeentry,d#mpui/rangefinder_desc
-localizeentry,d#hash_7b43a0c37a409a85
+localizeentry,d#heroes/reaper
 localizeentry,d#hash_7b4c84d5307fea60
 localizeentry,d#weapon/melee_demohammer_t8_desc
 localizeentry,d#hash_7bb31f180eab141c
@@ -916,7 +916,7 @@ localizeentry,d#hash_7d4c19fb8173c5ee
 localizeentry,d#warzone/blundergat_desc
 localizeentry,#hash_7d7d8d5f3f0f5b63
 localizeentry,d#hash_7db2a66c408c59e0
-localizeentry,d#hash_7db4187f695ce2a6
+localizeentry,d#mpui/camo_woodlums
 localizeentry,d#weapon/hawk
 localizeentry,#hash_7dbf9926c8866a51
 localizeentry,d#hash_7dcf96f7c666feb3

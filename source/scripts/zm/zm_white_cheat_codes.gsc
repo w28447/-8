@@ -73,7 +73,7 @@ function fall()
         {
             if ( math::cointoss( 33 ) )
             {
-                zombie zombie_utility::setup_zombie_knockdown( zombie.var_93a62fe );
+                zombie zombie_utility::setup_zombie_knockdown( zombie.closest_valid_player );
             }
         }
     }
@@ -395,11 +395,11 @@ function soda()
 // Params 2
 // Checksum 0xccbd3fba, Offset: 0x1408
 // Size: 0x92
-function function_28e2ddd5( n_perk_cost, var_c6ce6ade )
+function function_28e2ddd5( n_perk_cost, n_perk_slot )
 {
     assert( isdefined( level.var_1b64d570 ), "<dev string:x20a>" );
     
-    if ( var_c6ce6ade == level.var_1b64d570 )
+    if ( n_perk_slot == level.var_1b64d570 )
     {
         n_perk_cost *= 0.5;
     }

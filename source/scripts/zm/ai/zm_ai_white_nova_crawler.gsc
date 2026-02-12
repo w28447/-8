@@ -752,7 +752,7 @@ function private function_ac651298( inflictor, attacker, damage, flags, meansofd
 // Size: 0x22
 function private function_677d42d1( entity )
 {
-    entity.favoriteenemy = entity.var_93a62fe;
+    entity.favoriteenemy = entity.closest_valid_player;
 }
 
 // Namespace zm_ai_white_nova_crawler/zm_ai_white_nova_crawler

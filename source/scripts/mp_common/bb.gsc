@@ -197,7 +197,7 @@ function function_6661621a()
     mploadout.killstreak2 = self.killstreak.size < 1 ? 0 : hash( self.killstreak[ 1 ] );
     mploadout.killstreak3 = self.killstreak.size < 2 ? 0 : hash( self.killstreak[ 2 ] );
     talents = self function_4a9f1384( self.class_num );
-    mploadout.var_942f949 = talents.size < 0 ? 0 : talents[ 0 ];
+    mploadout.talent0 = talents.size < 0 ? 0 : talents[ 0 ];
     mploadout.talent1 = talents.size < 1 ? 0 : talents[ 1 ];
     mploadout.talent2 = talents.size < 2 ? 0 : talents[ 2 ];
     mploadout.talent3 = talents.size < 3 ? 0 : talents[ 3 ];
@@ -206,7 +206,7 @@ function function_6661621a()
     wildcards = self function_6f2c0492( self.class_num );
     mploadout.wildcard0 = wildcards.size < 0 ? 0 : wildcards[ 0 ];
     mploadout.wildcard1 = wildcards.size < 1 ? 0 : wildcards[ 1 ];
-    mploadout.var_13573300 = wildcards.size < 2 ? 0 : wildcards[ 2 ];
+    mploadout.wildcard2 = wildcards.size < 2 ? 0 : wildcards[ 2 ];
     
     if ( isdefined( self.playerrole ) && isdefined( self.playerrole.var_c21d61e9 ) )
     {

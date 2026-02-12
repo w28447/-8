@@ -4661,7 +4661,7 @@ xanim,d#vm_shotgun_full_auto_fire_ads
 xanim,d#vm_smg_folding_reload
 xanim,d#hash_699ec2efbb71f285
 xanim,#vm_com_hello_bare_hands
-xanim,d#hash_69a79068dae16b85
+xanim,d#vm_zipline_loop
 xanim,#hash_69ac04f83e805c7d
 xanim,d#vm_action_figure_melee_in
 xanim,d#hash_69b659372cb6cc25
@@ -39775,7 +39775,7 @@ image,d#hash_27d0c53cb4e0c503
 image,d#i_c_t8_mp_spe_nomad_heist_chain_o
 image,d#i_c_t8_mp_spe_nomad_heist_chain_n
 image,d#i_c_t8_mp_spe_nomad_heist_chain_c
-image,d#hash_27d2980e98d88c55
+image,d#$alpha
 image,d#i_attach_t8_pistol_standard_barrel_s
 image,d#i_attach_t8_pistol_standard_barrel_g
 image,d#i_attach_t8_pistol_standard_barrel_c
@@ -71576,7 +71576,7 @@ scriptbundle,#cdp_pilot1_kls_attack_chopper
 scriptbundle,d#trejo
 scriptbundle,#small_vehicle_death_influencer_def
 rumble,d#hash_449520f94829141
-rumble,d#hash_4ceacd890f3b6ec
+rumble,d#reload_clipin
 rumble,d#defaultweapon_melee
 rumble,#grenade_launcher_fire
 rumble,#blade_lunge_loop
@@ -95200,7 +95200,7 @@ fx,#hash_251b3417b0b3f2c8
 fx,#hash_253c31a9114d6029
 fx,#hash_254a1d8449f67078
 fx,#weapon/fx8_equip_smart_cover_microwave
-fx,#hash_25a99eb176affd8d
+fx,#explosions/fx_exp_equipment_lg
 fx,#hash_260fafe2e7ced71c
 fx,d#hash_264f9fe57a63a952
 fx,#hash_265bfe5b88c91c26
@@ -95334,7 +95334,7 @@ fx,#hash_3d70aa7090b628a2
 fx,#hash_3d9f642212d18fe2
 fx,#hash_3df9e714f4acb3a1
 fx,#hash_3e00d314f4b2b053
-fx,#hash_3e78af902f84621e
+fx,#explosions/fx_vexp_hunter_death
 fx,#hash_3e95cda1a373d79a
 fx,#hash_3e99f483a765a91e
 fx,#hash_3e9cc01de58ae921
@@ -95381,7 +95381,7 @@ fx,d#hash_468595ecc1b3a341
 fx,d#hash_471c2ac454e42597
 fx,#hash_474c4d87482063e0
 fx,#hash_474c4e8748206593
-fx,#hash_47b11ac110f88641
+fx,#player/fx_plyr_tablet_activation
 fx,d#hash_47b3d809d3e1669c
 fx,d#hash_47b9e409d3e5e6ae
 fx,d#hash_48099ab1b258e0ba
@@ -95627,7 +95627,7 @@ fx,#hash_6fdd06476c7a5a10
 fx,d#hash_7020c91e247f443b
 fx,d#hash_7078b4e4e1897123
 fx,#hash_708765aa3f48456d
-fx,#hash_709dc68733f89cc8
+fx,#player/fx_plyr_tablet_activation_loop
 fx,#hash_70c448aa3f7bc244
 fx,#hash_70c76baa3f7e3394
 fx,d#hash_710b1d86dabf86b8
@@ -96448,7 +96448,7 @@ fx,d#hash_2027e37012378951
 fx,d#hash_202ecf70123d8603
 fx,#hash_20b6c2a57c7b374f
 fx,#hash_2138834c276ea0fb
-fx,d#hash_21f397376b81d9ef
+fx,d#impacts/fx_bul_impact_blood_body_fatal
 fx,#player/fx8_plyr_footstep_tracker_r
 fx,#player/fx8_plyr_footstep_tracker_l
 fx,d#hash_2281683050932c1a
@@ -98790,7 +98790,7 @@ fx,d#hash_77fa3a55891f3666
 fx,d#hash_7941c54e18fc7811
 fx,#hash_7b797d0f50397615
 fx,#hash_7cb4e6e4ffb7bc9c
-fx,d#hash_7e4a861318714ac9
+fx,d#weapon/fx_hero_annhilatr_death_blood
 tagfx,#icepick_smartcover
 tagfx,#hash_3af69bfbfda4469a
 tagfx,d#hash_7b9be9b65f3fb86f
@@ -99888,7 +99888,7 @@ playerroletemplate,d#hash_62361c68e083d401
 playerroletemplate,d#hash_63b894fa4d634238
 playerroletemplate,d#prt_wz_engineer
 playerroletemplate,d#prt_wz_swatpolice
-playerroletemplate,d#hash_76cce42bfc9866cd
+playerroletemplate,d#prt_wz_reaper_bo4
 playerroletemplate,d#prt_wz_recon
 playerroletemplate,d#prt_wz_buffassault
 playerroletemplate,d#prt_wz_battery

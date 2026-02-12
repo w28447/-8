@@ -38,7 +38,7 @@ physpreset,d#default
 physpreset,#hash_6d3562f6377ac3d8
 physpreset,#hash_715fa5c9c471e804
 physpreset,#picture_frame
-physpreset,#hash_728d8a88bc780760
+physpreset,#pillow
 physpreset,#hash_7b9f145dc80ed9c4
 physpreset,#hash_7edc79ed94dc4ed0
 physpreset,d#hash_7f10d2bf08c8cb38
@@ -48379,7 +48379,7 @@ physpreset,d#hash_5d4384a8d215e8d0
 physpreset,#p7_diner_table_salt
 physpreset,#canteen
 physpreset,#p7_picture_frame_square_01
-physpreset,#hash_695e6bd10c7f85e8
+physpreset,#p7_food_fruit
 physpreset,#hash_6c3541d637690d46
 physpreset,d#brick
 xmodel,#p8_vista_ac_duct_sq_sml_feet

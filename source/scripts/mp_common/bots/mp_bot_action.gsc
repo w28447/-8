@@ -82,7 +82,7 @@ function register_weapons()
     bot_action::function_f4302f2a( #"gadget_medicalinjectiongun", &bot_action::function_2c39b990, &bot_action::function_a9847723 );
     self function_b7cdffc();
     self function_d5ef6ef3();
-    self function_c2e797aa();
+    self ll_tag();
 }
 
 // Namespace mp_bot_action/mp_bot_action
@@ -197,7 +197,7 @@ function function_d5ef6ef3()
 // Params 0
 // Checksum 0x2460e7c6, Offset: 0x1850
 // Size: 0x3c4
-function function_c2e797aa()
+function ll_tag()
 {
     bot_action::function_c67ea19e( #"ac130", &bot_action::function_791f5097, &bot_action::function_29163ca5 );
     bot_action::function_c67ea19e( #"ai_tank_marker", &bot_action::function_791f5097, &bot_action::function_29163ca5 );

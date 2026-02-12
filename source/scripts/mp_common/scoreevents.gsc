@@ -1111,7 +1111,7 @@ function scoreeventplayerkill( data, time )
             attacker.pers[ #"tomahawks" ]++;
             attacker.tomahawks = attacker.pers[ #"tomahawks" ];
             processscoreevent( #"hatchet_kill", attacker, victim, weapon );
-            attacker contracts::increment_contract( #"hash_172456fa969d6c82" );
+            attacker contracts::increment_contract( #"contract_mp_combat_axe_kill" );
             
             if ( isdefined( data.victim.explosiveinfo[ #"projectile_bounced" ] ) && data.victim.explosiveinfo[ #"projectile_bounced" ] == 1 )
             {
@@ -1436,12 +1436,12 @@ function multikill( killcount, weapon )
         if ( var_8a4cfbd )
         {
             self stats::function_dad108fa( #"hash_2fa96b97166080d2", 1 );
-            self contracts::increment_contract( #"hash_7861508178a93a0f" );
+            self contracts::increment_contract( #"contract_mp_specialist_equipment_multikills" );
         }
         else if ( weapon.issignatureweapon )
         {
             self stats::function_dad108fa( #"hash_cb8c5c845093e02", 1 );
-            self contracts::increment_contract( #"hash_3f50e5536ee788ab" );
+            self contracts::increment_contract( #"contract_mp_specialist_weapon_multikills" );
         }
     }
     
@@ -1993,7 +1993,7 @@ function updateoneshotmultikills( victim, weapon, firsttimedamaged, meansofdeath
         if ( meansofdeath == "MOD_HEAD_SHOT" )
         {
             var_f9d69b3b = self stats::get_stat_global( #"kill_enemy_one_bullet_headshot" );
-            var_35635206 = self stats::function_af5584ca( #"kill_enemy_one_bullet_headshot" );
+            var_35635206 = self stats::get_stat_challenge_tier( #"kill_enemy_one_bullet_headshot" );
             var_413c3e61 = 1;
             
             if ( isdefined( var_35635206 ) )

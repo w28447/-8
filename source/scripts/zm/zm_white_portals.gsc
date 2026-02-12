@@ -1021,7 +1021,7 @@ function function_a09d62f1()
         {
             if ( zm_utility::is_player_valid( e_user ) && math::cointoss() )
             {
-                e_user thread zm_hms_util::function_51b752a9( #"hash_7832a05d73569401" );
+                e_user thread zm_hms_util::function_51b752a9( #"vox_mmtd_place" );
             }
             
             level.var_868c98df--;

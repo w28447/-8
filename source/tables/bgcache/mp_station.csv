@@ -309,7 +309,7 @@ scriptbundle,#p8_fxanim_gp_wire_sparking_med_thick_bundle
 scriptbundle,#p8_fxanim_sta_garage_door_bundle_close
 scriptbundle,#p8_fxanim_mp_station_rat_02_bundle
 scriptbundle,#p8_fxanim_sta_helicopter_flyover_bundle
-string,#hash_e428880b38b4d8d
+string,#OBJECTIVES_COOP_WAYPOINT_HACK
 objective,#hash_5f5d7bf9f14c0a8f
 fx,#hash_781f8fd9e3343ba
 radiant_exploder,#exp_lgt_draft
@@ -353,7 +353,7 @@ soundalias,#hash_bd53719309b6fc1
 soundalias,#hash_c266934b6e24701
 soundalias,#hash_c4a4d3584e7ac22
 soundalias,#hash_ca467b11bcaf711
-soundalias,#hash_cc693b3173e7565
+soundalias,#exp_concussive_large
 soundalias,#hash_ff3cf1531831e5b
 soundalias,#hash_101aa41260505836
 soundalias,#hash_127c91df9b564016
@@ -368,7 +368,7 @@ soundalias,#amb_servers
 soundalias,#exp_barrel
 soundalias,#hash_1a6485b96677518d
 soundalias,#hash_1b210e4678f7229a
-soundalias,#hash_1b2199f9127d2b68
+soundalias,#evt_door_open
 soundalias,#hash_1c4c102504aad736
 soundalias,#hash_1e40cef876810a8f
 soundalias,#amb_turbine
@@ -390,7 +390,7 @@ soundalias,#hash_25a264b901d17919
 soundalias,#hash_267821e3be703ce7
 soundalias,#hash_26bf012beaa38162
 soundalias,#hash_2730ba20330dff4a
-soundalias,#hash_2748aa2e6dc57ae0
+soundalias,#dst_car_tire_deflate
 soundalias,#amb_flag
 soundalias,#dst_paper
 soundalias,#hash_2a1ab8d0c34b5f47
@@ -499,7 +499,7 @@ soundalias,#amb_gust_dry
 soundalias,#hash_656187a5fae91b1c
 soundalias,#hash_663899d42687914d
 soundalias,#hash_668dfcbb61723329
-soundalias,#hash_66aa6b049c23fa3f
+soundalias,#exp_incindiary_large
 soundalias,#hash_67d59a1f91047d68
 soundalias,#hash_67e1b634a1e1c1ba
 soundalias,#amb_paper_rustle
@@ -545,12 +545,12 @@ soundalias,#exp_veh_plane_spinout_lp
 soundalias,#hash_7ac5fa6568de2461
 soundalias,#hash_7b03a9cee3b85887
 soundalias,#hash_7b8fd9edee437591
-soundalias,#hash_7c2e59ca3ee725e5
+soundalias,#exp_veh_med
 soundalias,#hash_7c9f1b248a3ae43c
-soundalias,#hash_7ccc0d8d49bc9724
+soundalias,#evt_door_close
 soundalias,#hash_7e17e533381a8506
 soundalias,#hash_7eb51f1a0028ab28
-soundalias,#hash_7eede30e6e0cbe65
+soundalias,#amb_occ_fan
 soundalias,#hash_7f118ea3a4874268
 soundalias,#hash_7f640942ba0c38b0
 soundalias,#hash_7fe19ceed35907ce

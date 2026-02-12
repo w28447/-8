@@ -165,7 +165,7 @@ function function_74872db6()
 // Params 1
 // Checksum 0x27da1dde, Offset: 0x858
 // Size: 0x24
-function function_cb0be2c5( n_round_number )
+function intro_stoker( n_round_number )
 {
     zm_ai_stoker::spawn_single( 1 );
 }
@@ -236,7 +236,7 @@ function defend_areas()
     util::delay( 4, undefined, &zm_utility::function_11101458, str_next_defend );
     wait 15;
     zm_zonemgr::function_8caa21df( s_defend_area.a_str_zones );
-    zm_round_spawning::function_306ce518( #"stoker", &function_cb0be2c5 );
+    zm_round_spawning::function_306ce518( #"stoker", &intro_stoker );
     var_cec10eb3 = 20;
     level thread zm_utility::function_33798535( s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7, undefined, undefined, var_cec10eb3 );
     level flag::wait_till( "started_defend_area" );

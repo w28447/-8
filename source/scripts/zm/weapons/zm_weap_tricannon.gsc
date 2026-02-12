@@ -36,8 +36,8 @@ function __init__()
     callback::add_weapon_fired( getweapon( #"ww_tricannon_fire_t8" + "_upgraded" ), &function_5a24e804 );
     callback::add_weapon_fired( getweapon( #"ww_tricannon_water_t8" ), &function_14d49bd7 );
     callback::add_weapon_fired( getweapon( #"ww_tricannon_water_t8" + "_upgraded" ), &function_14d49bd7 );
-    namespace_9ff9f642::register_slowdown( #"hash_7dd6cbed104dd8bd", 0.75, 1 );
-    namespace_9ff9f642::register_slowdown( #"hash_7eece5e5a5f9cc4d", 0.85, 1 );
+    namespace_9ff9f642::register_slowdown( #"tricannon_water_slowdown", 0.75, 1 );
+    namespace_9ff9f642::register_slowdown( #"tricannon_water_slowdown_heavy", 0.85, 1 );
     namespace_9ff9f642::register_slowdown( #"hash_64aafe3cc04860be", 0.65, 1 );
     namespace_9ff9f642::register_slowdown( #"hash_111531769a0bf9e", 0.77, 1 );
     namespace_9ff9f642::register_burn( #"hash_6adb03deacc3534", 200, 5 );
@@ -416,16 +416,16 @@ function function_14d49bd7( weapon )
     
     if ( weapon == getweapon( #"ww_tricannon_water_t8" + "_upgraded" ) )
     {
-        var_bdbde2d2 = #"hash_64aafe3cc04860be";
+        str_slowdown = #"hash_64aafe3cc04860be";
         n_duration = 5;
     }
     else
     {
-        var_bdbde2d2 = #"hash_7dd6cbed104dd8bd";
+        str_slowdown = #"tricannon_water_slowdown";
         n_duration = 4;
     }
     
-    self function_cee7424b( v_impact, var_bdbde2d2, n_duration );
+    self function_cee7424b( v_impact, str_slowdown, n_duration );
 }
 
 // Namespace zm_weap_tricannon/zm_weap_tricannon
@@ -451,7 +451,7 @@ function function_2d6e2fb( e_shot )
 // Params 3
 // Checksum 0x41b540b9, Offset: 0x1858
 // Size: 0x1fc
-function function_cee7424b( v_impact, var_bdbde2d2, n_duration )
+function function_cee7424b( v_impact, str_slowdown, n_duration )
 {
     n_time_passed = 0;
     
@@ -464,18 +464,18 @@ function function_cee7424b( v_impact, var_bdbde2d2, n_duration )
         {
             if ( ai.zm_ai_category === #"heavy" || ai.zm_ai_category === #"miniboss" )
             {
-                if ( var_bdbde2d2 == #"hash_64aafe3cc04860be" )
+                if ( str_slowdown == #"hash_64aafe3cc04860be" )
                 {
                     ai thread namespace_9ff9f642::slowdown( #"hash_111531769a0bf9e" );
                 }
                 else
                 {
-                    ai thread namespace_9ff9f642::slowdown( #"hash_7eece5e5a5f9cc4d" );
+                    ai thread namespace_9ff9f642::slowdown( #"tricannon_water_slowdown_heavy" );
                 }
             }
             else
             {
-                ai thread namespace_9ff9f642::slowdown( var_bdbde2d2 );
+                ai thread namespace_9ff9f642::slowdown( str_slowdown );
             }
             
             ai clientfield::set( "water_tricannon_slow_fx", 1 );
@@ -501,7 +501,7 @@ function function_16149496()
     {
         waitframe( 1 );
     }
-    while ( isdefined( self.a_n_slowdown_timeouts[ #"hash_7dd6cbed104dd8bd" ] ) || isdefined( self.a_n_slowdown_timeouts[ #"hash_64aafe3cc04860be" ] ) || isdefined( self.a_n_slowdown_timeouts[ #"hash_7eece5e5a5f9cc4d" ] ) || isdefined( self.a_n_slowdown_timeouts[ #"hash_f87f19d867f4e2e" ] ) );
+    while ( isdefined( self.a_n_slowdown_timeouts[ #"tricannon_water_slowdown" ] ) || isdefined( self.a_n_slowdown_timeouts[ #"hash_64aafe3cc04860be" ] ) || isdefined( self.a_n_slowdown_timeouts[ #"tricannon_water_slowdown_heavy" ] ) || isdefined( self.a_n_slowdown_timeouts[ #"hash_f87f19d867f4e2e" ] ) );
     
     self clientfield::set( "water_tricannon_slow_fx", 0 );
 }

@@ -128,7 +128,7 @@ function event_handler[level_init] main( eventstruct )
     level._effect[ #"animscript_gibtrail_fx" ] = "_t6/trail/fx_trail_blood_streak";
     level._effect[ #"switch_sparks" ] = "_t6/env/electrical/fx_elec_wire_spark_burst";
     level.default_game_mode = "zclassic";
-    level.var_22fda912 = &function_9f50079d;
+    level.var_22fda912 = &offhand_weapon_override;
     level.zombiemode_offhand_weapon_give_override = &offhand_weapon_give_override;
     level.var_d0ab70a2 = #"gamedata/weapons/zm/zm_white_weapons.csv";
     level._allow_melee_weapon_switching = 1;
@@ -139,11 +139,11 @@ function event_handler[level_init] main( eventstruct )
     level zm_white_portals::init_clientfields();
     level zm_white_mee::preload();
     level zm_white_toast::preload();
-    level namespace_a01a2431::preload();
+    level zm_white_ww_quest_weapon::preload();
     level namespace_87b5173f::preload();
     level zm_white_ww_quest_mk2v::preload();
     level zm_white_ww_quest_mk2x::preload();
-    level namespace_825eac6b::preload();
+    level zm_white_ww_quest_mk2y::preload();
     level zm_white_ww_quest_mk2z::preload();
     level zm_white_computer_system::preload();
     level zm_white_cheat_codes::init();
@@ -188,12 +188,12 @@ function event_handler[level_init] main( eventstruct )
     level thread zm_white_audio_interactables::init();
     level thread zm_white_computer_system::init();
     level thread zm_white_mee::init();
-    level thread namespace_a01a2431::init();
+    level thread zm_white_ww_quest_weapon::init();
     level thread namespace_87b5173f::init();
     level thread zm_white_ww_quest_modkit::init();
     level thread zm_white_ww_quest_mk2v::init();
     level thread zm_white_ww_quest_mk2x::init();
-    level thread namespace_825eac6b::init();
+    level thread zm_white_ww_quest_mk2y::init();
     
     /#
         level thread zm_white_devgui::init();
@@ -565,7 +565,7 @@ function function_6762e94d()
 // Params 0
 // Checksum 0x79317323, Offset: 0x29d0
 // Size: 0x2c
-function function_9f50079d()
+function offhand_weapon_override()
 {
     zm_loadout::register_tactical_grenade_for_level( #"zhield_riot_dw", 1 );
 }
@@ -1169,7 +1169,7 @@ function function_c8ce0a17( var_404e4288, var_8dd554ee )
 function function_e5086229( var_404e4288, var_8dd554ee )
 {
     level flag::set( #"disable_special_rounds" );
-    ai = zombie_dog_util::function_62db7b1c( 1 );
+    ai = zombie_dog_util::spawn_single_dog( 1 );
     
     if ( isdefined( ai ) )
     {

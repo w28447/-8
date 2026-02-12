@@ -49,20 +49,20 @@ function private __main__()
         prompt = #"hash_60606b68e93a29c8";
     }
     
-    level.var_8e4168e9 = "bowie_knife";
-    level.var_63af3e00 = "bowie_flourish";
+    level.str_bowie_knife = "bowie_knife";
+    level.str_bowie_flourish = "bowie_flourish";
     var_57858dd5 = "zombie_fists_bowie";
     
     if ( zm_maptable::get_story() == 1 )
     {
-        level.var_8e4168e9 = "bowie_knife_story_1";
-        level.var_63af3e00 = "bowie_flourish_story_1";
+        level.str_bowie_knife = "bowie_knife_story_1";
+        level.str_bowie_flourish = "bowie_flourish_story_1";
         var_57858dd5 = "zombie_fists_bowie_story_1";
     }
     
-    zm_melee_weapon::init( level.var_8e4168e9, level.var_63af3e00, cost, "bowie_upgrade", prompt, "bowie", undefined );
-    zm_melee_weapon::set_fallback_weapon( level.var_8e4168e9, var_57858dd5 );
-    level.w_bowie_knife = getweapon( hash( level.var_8e4168e9 ) );
+    zm_melee_weapon::init( level.str_bowie_knife, level.str_bowie_flourish, cost, "bowie_upgrade", prompt, "bowie", undefined );
+    zm_melee_weapon::set_fallback_weapon( level.str_bowie_knife, var_57858dd5 );
+    level.w_bowie_knife = getweapon( hash( level.str_bowie_knife ) );
 }
 
 // Namespace zm_weap_bowie/zm_weap_bowie

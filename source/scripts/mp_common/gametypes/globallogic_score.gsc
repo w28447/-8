@@ -882,7 +882,7 @@ function function_37d62931( player, amount )
 // Params 4
 // Checksum 0xd1688f71, Offset: 0x28f0
 // Size: 0x352
-function _setplayerscore( player, score, var_e21e8076, var_53c3aa0b )
+function _setplayerscore( player, score, obj_score, var_53c3aa0b )
 {
     if ( score != player.pers[ #"score" ] )
     {
@@ -897,20 +897,20 @@ function _setplayerscore( player, score, var_e21e8076, var_53c3aa0b )
         player.rolescore = player.pers[ #"rolescore" ];
     }
     
-    if ( isdefined( var_e21e8076 ) && var_e21e8076 != player.pers[ #"objscore" ] )
+    if ( isdefined( obj_score ) && obj_score != player.pers[ #"objscore" ] )
     {
         if ( isarenamode() )
         {
-            amount = var_e21e8076 - player.pers[ #"objscore" ] + player stats::get_stat( #"playerstatsbygametype", level.var_12323003, #"objective_score", #"arenavalue" );
+            amount = obj_score - player.pers[ #"objscore" ] + player stats::get_stat( #"playerstatsbygametype", level.var_12323003, #"objective_score", #"arenavalue" );
             player stats::set_stat( #"playerstatsbygametype", level.var_12323003, #"objective_score", #"arenavalue", amount );
         }
         else
         {
-            amount = var_e21e8076 - player.pers[ #"objscore" ] + player stats::get_stat( #"playerstatsbygametype", level.var_12323003, #"objective_score", #"statvalue" );
+            amount = obj_score - player.pers[ #"objscore" ] + player stats::get_stat( #"playerstatsbygametype", level.var_12323003, #"objective_score", #"statvalue" );
             player stats::set_stat( #"playerstatsbygametype", level.var_12323003, #"objective_score", #"statvalue", amount );
         }
         
-        player.pers[ #"objscore" ] = var_e21e8076;
+        player.pers[ #"objscore" ] = obj_score;
         player.objscore = player.pers[ #"objscore" ];
     }
 }
@@ -954,11 +954,11 @@ function function_889ed975( player, score_add, var_252f7989, var_f8258842 )
     #/
     
     score = player.pers[ #"score" ] + score_add;
-    var_e21e8076 = player.pers[ #"objscore" ];
+    obj_score = player.pers[ #"objscore" ];
     
     if ( isdefined( var_252f7989 ) )
     {
-        var_e21e8076 += var_252f7989;
+        obj_score += var_252f7989;
     }
     
     var_53c3aa0b = player.pers[ #"rolescore" ];
@@ -968,7 +968,7 @@ function function_889ed975( player, score_add, var_252f7989, var_f8258842 )
         var_53c3aa0b += var_f8258842;
     }
     
-    _setplayerscore( player, score, var_e21e8076, var_53c3aa0b );
+    _setplayerscore( player, score, obj_score, var_53c3aa0b );
 }
 
 // Namespace globallogic_score/globallogic_score

@@ -112,7 +112,7 @@ function group_mega_round_end_abcd_talking( localclientnum = 0 )
     wait 10;
     previs_model = spawn( localclientnum, ( 0, 0, 0 ), "script_model" );
     previs_weapon = getweapon( #"eq_alarm" );
-    var_5929417d = 0;
+    show_previs = 0;
     var_2e40ce22 = 0;
     var_d4d81eb4 = 0;
     
@@ -120,7 +120,7 @@ function group_mega_round_end_abcd_talking( localclientnum = 0 )
     {
         var_fdadca2a = previs_weapon;
         
-        if ( !var_5929417d )
+        if ( !show_previs )
         {
             if ( var_2e40ce22 == 1 )
             {
@@ -147,7 +147,7 @@ function group_mega_round_end_abcd_talking( localclientnum = 0 )
             waitframe( 1 );
         }
         
-        var_5929417d = 0;
+        show_previs = 0;
         
         if ( getdvarint( #"hash_4df6a4cc1cfae912", 1 ) == 0 )
         {
@@ -184,7 +184,7 @@ function group_mega_round_end_abcd_talking( localclientnum = 0 )
         
         if ( function_c7b681af( localclientnum ) )
         {
-            var_5929417d = 1;
+            show_previs = 1;
             continue;
         }
         

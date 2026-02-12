@@ -1920,9 +1920,9 @@ function function_7d1d0e65( localclientnum, oldval, newval, bnewent, binitialsna
                     
                     break;
                 case 2:
-                    if ( isdefined( var_b5ddf091.active ) && isdefined( var_b5ddf091.var_2f451e59 ) )
+                    if ( isdefined( var_b5ddf091.active ) && isdefined( var_b5ddf091.tag_active ) )
                     {
-                        handle = util::playfxontag( localclientnum, var_b5ddf091.active, self, var_b5ddf091.var_2f451e59 );
+                        handle = util::playfxontag( localclientnum, var_b5ddf091.active, self, var_b5ddf091.tag_active );
                         
                         if ( !isdefined( self.fx_handles[ #"malfunction" ] ) )
                         {

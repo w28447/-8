@@ -563,7 +563,7 @@ soundalias,#hash_bbafec33c2adca2
 soundalias,#hash_bd53719309b6fc1
 soundalias,#hash_c266934b6e24701
 soundalias,#hash_ca467b11bcaf711
-soundalias,#hash_cc693b3173e7565
+soundalias,#exp_concussive_large
 soundalias,#hash_eb5bffa1c857b20
 soundalias,#hash_eb5c2fa1c858039
 soundalias,#hash_101aa41260505836
@@ -574,7 +574,7 @@ soundalias,#hash_127c91df9b564016
 soundalias,#hash_12b24433ad0bb1f0
 soundalias,#hash_1358357952f89d8d
 soundalias,#hash_1484326ad783ce67
-soundalias,#hash_14ba33934a647b11
+soundalias,#aml_chicken_wing_small
 soundalias,#hash_14e6aa140485ba14
 soundalias,#hash_153cb65adb3c6503
 soundalias,#hash_159a438804321ccb
@@ -603,7 +603,7 @@ soundalias,#hash_267821e3be703ce7
 soundalias,#hash_26bf012beaa38162
 soundalias,#hash_26e23949955baf6f
 soundalias,#hash_2730ba20330dff4a
-soundalias,#hash_2748aa2e6dc57ae0
+soundalias,#dst_car_tire_deflate
 soundalias,#hash_27bbcfa04a0c92de
 soundalias,#hash_287ce2ab4cdf4992
 soundalias,#dst_paper
@@ -689,7 +689,7 @@ soundalias,#hash_50c442f3b2e6dc83
 soundalias,#hash_5241882a79fff7a3
 soundalias,#hash_5290e69e5616b714
 soundalias,#hash_52e48b5f823b83bf
-soundalias,#hash_53275ca0fc64314e
+soundalias,#aml_chicken_cluck
 soundalias,#dst_server
 soundalias,#hash_54538dea28a0400e
 soundalias,#hash_547104dd82ba9c7c
@@ -729,7 +729,7 @@ soundalias,#hash_64f1ed0ed35b9a58
 soundalias,#hash_65337304c8c7b0cd
 soundalias,#hash_65bf06eb04f593c2
 soundalias,#hash_663899d42687914d
-soundalias,#hash_66aa6b049c23fa3f
+soundalias,#exp_incindiary_large
 soundalias,#hash_67e1b634a1e1c1ba
 soundalias,#hash_68b8beb0257da073
 soundalias,#hash_68d529ce159011b5
@@ -766,12 +766,12 @@ soundalias,#exp_veh_plane_spinout_lp
 soundalias,#hash_7ac5fa6568de2461
 soundalias,#hash_7b03a9cee3b85887
 soundalias,#hash_7bf4f5f3a8077efb
-soundalias,#hash_7c2e59ca3ee725e5
+soundalias,#exp_veh_med
 soundalias,#hash_7ce1bd644bbc4639
 soundalias,#hash_7d6048cbcdd07cb8
 soundalias,#hash_7e17e533381a8506
 soundalias,#hash_7eb51f1a0028ab28
-soundalias,#hash_7eede30e6e0cbe65
+soundalias,#amb_occ_fan
 soundalias,#hash_7f118ea3a4874268
 soundalias,#hash_7fe19ceed35907ce
 client_fx,#hash_15df7a3c718102a

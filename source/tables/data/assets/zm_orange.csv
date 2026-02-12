@@ -4,7 +4,7 @@ physpreset,#p7_debris_trash_drink_carrier_01
 physpreset,#hash_1f21250a9bc4b2cd
 physpreset,#hash_26d16c8cce3659f5
 physpreset,#hash_2d2315df8c3e1636
-physpreset,#hash_2e1a6a36da3d4fc3
+physpreset,#sandbag
 physpreset,#helmet
 physpreset,#p7_brick_worn_painted_white_01
 physpreset,#hash_38a39c6f239ce676
@@ -1772,7 +1772,7 @@ xanim,#ai_zombie_base_run_au_v5_pain_chest_f_alt
 xanim,#ai_zombie_base_sprint_ad_sidestep_right_long
 xanim,#hash_6950fa3b901765b9
 xanim,d#ai_direwolf_base_run_turn_r_90
-xanim,d#hash_69a79068dae16b85
+xanim,d#vm_zipline_loop
 xanim,#vm_raygun_fire
 xanim,#ai_zombie_base_traverse_ground_climbout_fast
 xanim,#ai_zombie_base_walk_ad_v4_pain_chest_f
@@ -23670,7 +23670,7 @@ image,d#i_wpn_t8_knife_combat_grip_o
 image,d#i_wpn_t8_knife_combat_grip_m
 image,#i_mtl_p8_mad_school_flagpole_wood_01_c
 image,#i_mtl_p8_mad_school_flagpole_wood_01_n
-image,d#hash_27d2980e98d88c55
+image,d#$alpha
 image,d#fxt8_water_ripple_anim_mask
 image,#i_mtl_p7_slu_meter_electric_01_base_burnt_n
 image,#i_mtl_p7_slu_meter_electric_01_base_burnt_m
@@ -32658,7 +32658,7 @@ attachment,d#custom2
 attachment,d#hash_7459a0af8e8f912b
 klf,#hash_7e40ceb2a4157424
 fx,#hash_4bbff7c7f470b97
-fx,d#hash_865f57f450c5951
+fx,d#impacts/fx_knife_impact_assassination_back
 lightdescription,#hash_6384cdcf32fd9375
 fx,#hash_b8393525d10f33f
 klf,#hash_3b36c4b308648175
@@ -40609,7 +40609,7 @@ material,#mc/mtl_p7_panel_bridge_damaged_trim
 material,d#hash_15fb8e3297221611
 material,d#ei/gfx_smk_whisp_anim_02_high_gray_lit
 material,d#hash_15ff0e3297252568
-material,#hash_16026d20e691b59d
+material,#generic_filter_zm_wormhole
 material,d#hash_160282329728205b
 material,#hash_1603caef79be2cbb
 material,#mc/mtl_p8_box_electric_commercial_decal_sign_02
@@ -48724,7 +48724,7 @@ sharedweaponsounds,d#smg
 sharedweaponsounds,#hash_367e85d5f5c45ca
 sharedweaponsounds,#hash_b2107e63787b0c3
 sharedweaponsounds,d#bowie
-sharedweaponsounds,#hash_1d67e7e14d596701
+sharedweaponsounds,#battle_shield
 sharedweaponsounds,#rocketshield
 sharedweaponsounds,d#dog_melee
 sharedweaponsounds,d#knife
@@ -49850,7 +49850,7 @@ xmodel,#p8_geo_ice_rock_pile_02
 xmodel,#p8_foliage_grass_blades_tall_xlrg
 xmodel,#p8_wmd_signage_crane
 xmodel,#hash_2e4a3522e3a52439
-xmodel,#hash_2e4fec9ed26690ce
+xmodel,#wpn_t7_zmb_dlc2_shield_dmg01_view
 xmodel,#p8_ice_rock_pile_02_dark
 xmodel,#hash_2e7a69bab3dec2dd
 xmodel,#p8_zm_esc_light_spot_head
@@ -50219,7 +50219,7 @@ xmodel,#hash_3ea650440e91d802
 xmodel,#hash_3eaa4d14f6425ba1
 xmodel,#p7_fxanim_cp_biodomes_floating_debris_01_smod
 xmodel,#p7_fence_metal_corrugated_framed_white
-xmodel,#hash_3ebb082a36ccc8d2
+xmodel,#wpn_t7_zmb_dlc2_shield_view
 xmodel,#hash_3ebda8dbb5816ffa
 xmodel,#p7_zm_zod_boxer_gym_ibeam_32_01_dark_green
 xmodel,#hash_3eccd8e94489adca
@@ -51121,7 +51121,7 @@ xmodel,#p7_zm_asc_battery_auto_wire
 xmodel,#hash_66f9b1f85901ca3a
 xmodel,#hash_66fab81d4d8930e7
 xmodel,#p7_zm_debris_newspaper_german_02_burnt
-xmodel,#hash_6710bdae561eefa1
+xmodel,#p7_fxanim_cp_sgen_monkey_jar_mod
 xmodel,d#wpn_t7_grenade_incendiary_projectile
 xmodel,#p7_box_copy_paper_sheet
 xmodel,#p7_zm_tra_silo_metal_mid
@@ -51903,7 +51903,7 @@ fx,d#hash_23fdcf1e0d4ffeeb
 fx,#hash_245b448e535388fc
 fx,d#hash_247c28b43c001b30
 fx,d#zm_ai/fx8_dog_lightning_spawn
-fx,d#hash_249f091d13da3663
+fx,d#zm_ai/fx8_dog_eye_glow
 fx,#hash_24a1ed7fe233c494
 fx,#hash_24adcf11ec41cc20
 fx,#hash_24de180f6bbe0f46
@@ -52763,7 +52763,7 @@ fx,#hash_1f7c9c39945dcfd7
 fx,#hash_200de2be21c77806
 fx,#hash_201378189651055d
 fx,#hash_21383e5ecbc0a610
-fx,d#hash_21f397376b81d9ef
+fx,d#impacts/fx_bul_impact_blood_body_fatal
 fx,#hash_221d0b2f91cd066a
 fx,#hash_226a08026254f0fe
 fx,d#hash_22a28243e6e34fe5
@@ -52883,7 +52883,7 @@ fx,#hash_56ed5babf589539e
 fx,#hash_573924a536b6fc39
 fx,d#hash_57759c5fdd88c512
 fx,#hash_583f62de8a161abd
-fx,d#hash_58a46bbe91ae7b30
+fx,d#weapon/fx_muz_sm_pistol_3p
 fx,d#hash_58ab77be91b4ae42
 fx,#hash_58c25eabf156f81c
 fx,#hash_58c964b815e4f69e
@@ -54336,8 +54336,8 @@ aitype,d#spawner_zm_wolf_ally
 character,#c_t8_zmb_ora_zombie_electric
 character,#c_t8_zmb_3rdclass_male1
 character,#c_t8_zmb_3rdclass_male2
-character,#hash_7337adb379995edf
-character,#hash_7337aeb379996092
+character,#c_t8_zmb_ora_zombie_male2
+character,#c_t8_zmb_ora_zombie_male1
 surfacefxtable,#hash_1ddc5d1c66a9ea41
 surfacefxtable,#hash_232d78154eff4288
 surfacefxtable,d#surface_enter
@@ -54360,8 +54360,8 @@ animmappingtable,#hash_13b1ea38b9421ce0
 animmappingtable,#hash_309b0a08ff43015d
 statuseffect,#hash_19533caf858a9f3b
 statuseffect,#avogadro_shock_slowed
-beam,#hash_5baeea64e2d2e8b
-beam,#hash_32870a226efa65af
+beam,#flamethrower_beam_3p
+beam,#flamethrower_beam
 staticlevelfxlist,#maps/zm/zm_orange.d3dbsp
 weapon,#eq_nesting_doll_grenade_niko_zm
 weapon,#eq_nesting_doll_grenade_takeo_zm
@@ -54391,7 +54391,7 @@ aitype,#spawner_zm_zombie_orange_soldier
 aitype,#spawner_zm_zombie
 aitype,#spawner_zm_zombie_electric
 aitype,#spawner_zm_zombie_zod
-character,#hash_6c258fe575114eac
+character,#c_zom_der_zombie2
 weapon,#ww_tesla_sniper_t8_zm
 weapon,#hero_minigun_t8_lv3_zm
 weapon,#hero_minigun_t8_lv2_zm

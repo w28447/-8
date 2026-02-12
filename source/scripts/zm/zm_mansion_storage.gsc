@@ -873,7 +873,7 @@ function function_35ab22f4()
     {
         if ( !( isdefined( var_2cbc52e0.var_14466805 ) && var_2cbc52e0.var_14466805 ) && zm_utility::is_player_valid( var_2cbc52e0 ) )
         {
-            var_2cbc52e0 thread zm_vo::function_a2bd5a0c( #"hash_528e304a3656551c", 1 );
+            var_2cbc52e0 thread zm_vo::function_a2bd5a0c( #"vox_shoot_pool_interact", 1 );
             var_2cbc52e0.var_14466805 = 1;
             return;
         }
@@ -1025,14 +1025,14 @@ function function_cd9f1d74( n_reward )
             if ( isdefined( var_b7a9df7c ) )
             {
                 mdl_elixir = util::spawn_model( var_b7a9df7c, s_shelf.origin, s_shelf.angles );
-                var_7b57e2cc = util::spawn_model( #"p8_zm_elixir_bottle_plain_sight_lid", s_shelf.origin + ( 0, 0, 6.75 ), s_shelf.angles );
+                mdl_lid = util::spawn_model( #"p8_zm_elixir_bottle_plain_sight_lid", s_shelf.origin + ( 0, 0, 6.75 ), s_shelf.angles );
                 
                 if ( isdefined( mdl_elixir ) )
                 {
                     var_47323b73 = mdl_elixir zm_unitrigger::create( &function_cc012e8d, 64 );
                     mdl_elixir thread function_67c3a7dd();
                     var_47323b73.mdl_elixir = mdl_elixir;
-                    var_47323b73.var_7b57e2cc = var_7b57e2cc;
+                    var_47323b73.mdl_lid = mdl_lid;
                     var_47323b73.str_elixir = str_elixir;
                 }
                 
@@ -1075,7 +1075,7 @@ function function_67c3a7dd()
         }
         
         self delete();
-        var_163c35fc.var_7b57e2cc delete();
+        var_163c35fc.mdl_lid delete();
         str_bgb = var_163c35fc.str_elixir;
         player thread function_7f4f9503( str_bgb );
         zm_unitrigger::unregister_unitrigger( var_163c35fc );

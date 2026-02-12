@@ -36,7 +36,7 @@ function init()
     }
     
     function_a8243f37();
-    namespace_c8efdadc::init();
+    zm_red_challenges_apollo::init();
     level.var_6463d67c = 100;
     level.var_48e2ab90 = 0.3;
     level.var_b4ff4ec = &function_529e8585;
@@ -187,7 +187,7 @@ function function_2c76782d()
         if ( !namespace_5c5619de::is_active() && e_player.var_9e09931e != 0 )
         {
             e_player function_123bcbcf();
-            e_player function_53a333a8( undefined );
+            e_player give_tribute( undefined );
             continue;
         }
         
@@ -241,7 +241,7 @@ function function_3165516b( var_1e2067f4, n_phase )
     self clientfield::set( "" + #"hash_47490b879090eb55", 0 );
     self clientfield::set( "" + #"hash_7b1dd5c08e2585c", 0 );
     wait 1.3;
-    level thread namespace_c8efdadc::function_9c8540b4( self, var_a3f33bc5 );
+    level thread zm_red_challenges_apollo::function_9c8540b4( self, var_a3f33bc5 );
 }
 
 // Namespace zm_red_challenges_rewards/zm_red_challenges_rewards
@@ -285,13 +285,13 @@ function function_123bcbcf()
             switch ( str_reward )
             {
                 case #"double_points":
-                    self thread function_d36fb590( "double_points", 6, 1 );
+                    self thread give_powerup_reward( "double_points", 6, 1 );
                     break;
                 case #"insta_kill":
-                    self thread function_d36fb590( "insta_kill", 6, 1 );
+                    self thread give_powerup_reward( "insta_kill", 6, 1 );
                     break;
                 case #"extra_life":
-                    self thread function_d36fb590( "self_revive", 6, 1 );
+                    self thread give_powerup_reward( "self_revive", 6, 1 );
                     self.var_6482c679 = 1;
                     break;
                 case #"bowie_knife":
@@ -321,10 +321,10 @@ function function_123bcbcf()
             switch ( str_reward )
             {
                 case #"full_ammo":
-                    self thread function_d36fb590( "full_ammo", 15, 1 );
+                    self thread give_powerup_reward( "full_ammo", 15, 1 );
                     break;
                 case #"fire_sale":
-                    self thread function_d36fb590( "fire_sale", 15, 1 );
+                    self thread give_powerup_reward( "fire_sale", 15, 1 );
                     break;
                 case #"weapon":
                     self thread give_weapon_reward( 1, 15, 1, undefined );
@@ -357,7 +357,7 @@ function function_123bcbcf()
                     self thread function_7dc3dfdb( 15 );
                     break;
                 case #"weapon_power":
-                    self thread function_d36fb590( "hero_weapon_power", 15, 2 );
+                    self thread give_powerup_reward( "hero_weapon_power", 15, 2 );
                     break;
                 case #"weapon":
                     self thread give_weapon_reward( 2, 15, 1, undefined );
@@ -415,7 +415,7 @@ function function_123bcbcf()
                     self.var_123836f9++;
                     break;
                 case #"extra_life":
-                    self thread function_d36fb590( "self_revive", 15, 1 );
+                    self thread give_powerup_reward( "self_revive", 15, 1 );
                     self.var_17d719b9 = 1;
                     break;
                 case #"pegasus":
@@ -520,7 +520,7 @@ function function_29e6dc49( var_be164210 = 1, var_6c9485fc = 15 )
 // Params 3
 // Checksum 0x275938de, Offset: 0x1970
 // Size: 0x24c
-function function_d36fb590( var_aa4f9213, var_6c9485fc = 15, var_b7e0faf0 = 1 )
+function give_powerup_reward( var_aa4f9213, var_6c9485fc = 15, var_b7e0faf0 = 1 )
 {
     self endon( #"death" );
     
@@ -715,7 +715,7 @@ function function_e2a25377( str_weapon_name )
 // Params 3
 // Checksum 0x1db8c41d, Offset: 0x2178
 // Size: 0x324
-function function_53a333a8( var_ecffa2a8, var_41f9c5ff = undefined, var_893baaf = undefined )
+function give_tribute( var_ecffa2a8, var_41f9c5ff = undefined, var_893baaf = undefined )
 {
     if ( isbot( self ) )
     {
@@ -1118,12 +1118,12 @@ function function_566c19d5( var_3d01acc1, n_index )
     for ( var_70eb710b = 0; var_70eb710b < var_3d01acc1.size ; var_70eb710b++ )
     {
         str_weapon = var_3d01acc1[ n_index ];
-        var_b2425ef = str_weapon + "_upgraded";
+        str_weapon_upgraded = str_weapon + "_upgraded";
         b_found = 0;
         
         foreach ( wpn in a_player_weapons )
         {
-            if ( wpn.name == str_weapon || wpn.name == var_b2425ef )
+            if ( wpn.name == str_weapon || wpn.name == str_weapon_upgraded )
             {
                 b_found = 1;
                 break;

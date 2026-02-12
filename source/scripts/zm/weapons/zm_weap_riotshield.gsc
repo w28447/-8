@@ -434,8 +434,8 @@ function function_4aa5e0c7( inflictor, attacker, damage, flags, meansofdeath, we
 {
     if ( weapon.isriotshield && meansofdeath != "MOD_MELEE" && meansofdeath != "MOD_IMPACT" && meansofdeath != "MOD_ELECTROCUTED" )
     {
-        var_754eb193 = damage + damage * 0.2 * math::clamp( level.round_number - 10, 0, 20 );
-        return var_754eb193;
+        n_new_damage = damage + damage * 0.2 * math::clamp( level.round_number - 10, 0, 20 );
+        return n_new_damage;
     }
     
     return -1;

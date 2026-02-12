@@ -949,7 +949,7 @@ function private function_f4fc9e92( entity )
         entity.favoriteenemy = undefined;
     }
     
-    if ( isdefined( entity.var_93a62fe ) )
+    if ( isdefined( entity.closest_valid_player ) )
     {
         zm_behavior::zombiefindflesh( entity );
         return;
@@ -985,7 +985,7 @@ function private function_f1d5bfef( entity )
     if ( var_9c273f20.size > 0 )
     {
         var_9c273f20 = arraysortclosest( var_9c273f20, entity.origin );
-        entity.var_93a62fe = var_9c273f20[ 0 ];
+        entity.closest_valid_player = var_9c273f20[ 0 ];
         return;
     }
     

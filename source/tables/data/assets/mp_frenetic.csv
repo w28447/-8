@@ -7,7 +7,7 @@ physpreset,d#hash_17c1d95413facedb
 physpreset,d#hash_260836fb8b5de3f9
 physpreset,#helmet
 physpreset,d#p7_supply_briefcase_02
-physpreset,#hash_351057b38db1fc85
+physpreset,#floodlight
 physpreset,#hash_373d13b18b9d67d6
 physpreset,#hash_37a4397b805ad372
 physpreset,#hash_3be7b524420dc0bb
@@ -23,7 +23,7 @@ physpreset,#hash_5f291023be02f060
 physpreset,#hash_65148e1ddc4e6921
 physpreset,d#default
 physpreset,#hash_715fa5c9c471e804
-physpreset,#hash_728d8a88bc780760
+physpreset,#pillow
 physpreset,#p7_tools_hammer
 physpreset,#hash_7b9f145dc80ed9c4
 physpreset,#hash_7bd4cb158cb2eae1
@@ -13690,7 +13690,7 @@ physpreset,#p7_bucket_plastic_5_gal_lid
 physpreset,#hash_5c4fae1eea294484
 physpreset,d#hash_5d4384a8d215e8d0
 physpreset,#hash_62668f696856a49b
-physpreset,#hash_695e6bd10c7f85e8
+physpreset,#p7_food_fruit
 physpreset,#hash_6c3541d637690d46
 physpreset,#p7_container_aid_box
 physpreset,#p7_water_cooler_digital_bottle

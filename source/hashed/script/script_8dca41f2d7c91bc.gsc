@@ -333,7 +333,7 @@ function function_4ff0c5fd( e_player )
             {
                 if ( var_1cda8410.size < 6 )
                 {
-                    ai_zombie = zm_red_ww_quests::function_eeed4f2f( s_spawn );
+                    ai_zombie = zm_red_ww_quests::catalyst_single_spawn( s_spawn );
                     n_wait_time = 0.5;
                     var_275162bd = 1;
                 }
@@ -387,7 +387,7 @@ function function_4ff0c5fd( e_player )
                 if ( var_1cda8410.size < 1 )
                 {
                     s_spawn = struct::get( "s_ww_d_spawn_bl" );
-                    ai_zombie = zm_red_ww_quests::function_7a15e228( s_spawn );
+                    ai_zombie = zm_red_ww_quests::blightfather_single_spawn( s_spawn );
                     n_wait_time = 2;
                     var_275162bd = 1;
                     continue;

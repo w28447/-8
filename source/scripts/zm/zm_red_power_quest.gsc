@@ -996,7 +996,7 @@ function function_b3d827f()
         
         if ( e_player zm_audio::can_speak() )
         {
-            e_player thread zm_vo::function_a2bd5a0c( #"hash_497fcbdaee283347", 0.5, 1, 10000, 0 );
+            e_player thread zm_vo::function_a2bd5a0c( #"vox_sent_artifact_stuck", 0.5, 1, 10000, 0 );
         }
     }
     
@@ -1222,7 +1222,7 @@ function function_a5b8e88f( var_ddab7294 = 0 )
         }
     }
     
-    function_350204ca( #"hash_4f27038870dd43b0" );
+    function_350204ca( #"vox_zombies_awaken" );
     wait 6;
     level.var_ac6d10d4 = undefined;
     zm_trial::function_ae725d63();
@@ -1305,7 +1305,7 @@ function pegasus_intro()
     level flag::set( #"pegasus_entry" );
     level.musicsystemoverride = 0;
     level thread zm_audio::sndmusicsystem_playstate( "poweron_event_complete", zm_utility::is_trials() );
-    level thread function_350204ca( #"hash_62be5a478a16c968" );
+    level thread function_350204ca( #"vox_pegasus_react_first" );
     playsoundatposition( #"hash_2642ecae6103f09b", var_10d4f67d.origin );
     var_10d4f67d clientfield::increment( "" + #"register_pegasus" );
     var_10d4f67d clientfield::set( "" + #"pegasus_teleport", 1 );
@@ -1975,7 +1975,7 @@ function function_d8db57f6()
     }
     
     wait 3;
-    function_350204ca( #"hash_6e38772014019f10" );
+    function_350204ca( #"vox_spartoi_react_first" );
     level flag::wait_till( #"spartoi_resurrect" );
     var_1679e8e = function_22230e37();
     
@@ -2027,13 +2027,13 @@ function function_f95a14a0()
     
     switch ( self.subarchetype )
     {
-        case #"hash_fd7b9665529dd42":
+        case #"skeleton_helmet_sword_and_shield":
             var_704f0f40 = #"p8_fxanim_zm_red_spartoi_rise_bundle";
             break;
         case #"skeleton_spear":
             var_704f0f40 = #"p8_fxanim_zm_red_spartoi_rise_spear_no_helm_bundle";
             break;
-        case #"hash_1520c8987a671df0":
+        case #"skeleton_helmet_spear":
             var_704f0f40 = #"p8_fxanim_zm_red_spartoi_rise_spear_bundle";
             break;
     }

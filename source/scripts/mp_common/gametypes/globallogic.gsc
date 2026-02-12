@@ -2411,7 +2411,7 @@ function function_566a70ad( var_c139bfe2 )
 // Params 3
 // Checksum 0xe4b44f4e, Offset: 0x7d08
 // Size: 0x44
-function function_2556afb5( scale_start, scale_end, transition_time )
+function homunculushomunculus_random( scale_start, scale_end, transition_time )
 {
     level.var_49d9aa70 = scale_end;
     setslowmotion( scale_start, scale_end, transition_time );
@@ -3151,7 +3151,7 @@ function private beacon_cp_biodomes_server_room_top_floor_door_rumble()
     
     if ( !isdefined( level.skipgameend ) || !level.skipgameend )
     {
-        display_transition::function_19adc0b7( outcome );
+        display_transition::display_match_end( outcome );
     }
     
     if ( util::function_8570168d() )
@@ -3161,7 +3161,7 @@ function private beacon_cp_biodomes_server_room_top_floor_door_rumble()
     
     function_bd1e54e7( outcome );
     
-    if ( util::isoneround() && !display_transition::function_81d670f5() )
+    if ( util::isoneround() && !display_transition::using_new_transitions() )
     {
         globallogic_utils::executepostroundevents();
     }
@@ -5073,7 +5073,7 @@ function function_b9b7618()
         util::registerroundwinlimit( 0, 10 );
     }
     
-    if ( !display_transition::function_81d670f5() )
+    if ( !display_transition::using_new_transitions() )
     {
         globallogic_utils::registerpostroundevent( &killcam::function_a26057ee );
         globallogic_utils::registerpostroundevent( &potm::post_round_potm );

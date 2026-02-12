@@ -14,7 +14,7 @@ function register( id, version, script_noteworthy, var_92f252fd, var_af245552 )
 {
     zm_sq_modules::function_d8383812( id, version, script_noteworthy, &is_soul_capture, &soul_captured, 1 );
     s_sc = struct::get( script_noteworthy, "script_noteworthy" );
-    s_sc.var_f929d531 = getent( s_sc.var_5ca82ce, "targetname" );
+    s_sc.var_f929d531 = getent( s_sc.player_area, "targetname" );
     s_sc.var_f929d531.id = id;
     s_sc.var_92f252fd = var_92f252fd;
     s_sc.var_af245552 = var_af245552;

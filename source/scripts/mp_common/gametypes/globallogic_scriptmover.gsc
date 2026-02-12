@@ -9,7 +9,7 @@
 // Params 16
 // Checksum 0x6a1a1149, Offset: 0x88
 // Size: 0x3a4
-function function_8c7ec52f( einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, iboneindex, imodelindex, spartname, isurfacetype, vsurfacenormal )
+function callback_scriptmoverdamage( einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, iboneindex, imodelindex, spartname, isurfacetype, vsurfacenormal )
 {
     if ( !isdefined( self.attackerdata ) )
     {

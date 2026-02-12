@@ -164,7 +164,7 @@ function function_90a833e2()
     level flag::init( #"hash_148f48be55e871df" );
     level flag::init( #"hash_32ff7a456732ef09" );
     level flag::init( #"pegasus_ride" );
-    level flag::init( #"hash_517afb4f86e5037b" );
+    level flag::init( #"pegasus_ride_done" );
     level flag::init( #"hash_1981012de509765d" );
     level flag::init( #"pegasus_takeoff" );
     level flag::init( #"hash_67695ee69c57c0b2" );
@@ -197,8 +197,8 @@ function pap_quest_init()
     mdl_blocker setinvisibletoall();
     mdl_weapon_clip = getent( "pap_arena_weapon_clip", "targetname" );
     mdl_weapon_clip notsolid();
-    var_740e1e0e = getent( "pegasus_ride_rune", "targetname" );
-    var_740e1e0e hide();
+    mdl_rune = getent( "pegasus_ride_rune", "targetname" );
+    mdl_rune hide();
     
     if ( zm_utility::is_standard() )
     {
@@ -206,12 +206,12 @@ function pap_quest_init()
         level flag::set( "power_on" );
         level flag::set( #"pap_quest_completed" );
         level flag::set( #"zm_red_fasttravel_open" );
-        level flag::set( #"hash_4083e9da0ba41dec" );
-        var_6800d950 = getent( "pap_chaos_clip", "targetname" );
+        level flag::set( #"pegasus_ride_started" );
+        mdl_pap_clip = getent( "pap_chaos_clip", "targetname" );
         
-        if ( isdefined( var_6800d950 ) )
+        if ( isdefined( mdl_pap_clip ) )
         {
-            var_6800d950 delete();
+            mdl_pap_clip delete();
         }
         
         var_71da3f5a = getentarray( "cage_defender", "targetname" );
@@ -278,11 +278,11 @@ function function_ce84849b( var_5ea5c94d )
         level function_23f28dd1( 0 );
     }
     
-    var_6800d950 = getent( "pap_chaos_clip", "targetname" );
+    mdl_pap_clip = getent( "pap_chaos_clip", "targetname" );
     
-    if ( isdefined( var_6800d950 ) )
+    if ( isdefined( mdl_pap_clip ) )
     {
-        var_6800d950 delete();
+        mdl_pap_clip delete();
     }
     
     level function_6e57d6c6( 0 );
@@ -320,7 +320,7 @@ function function_ff356649()
     self endon( "e3af97150979316" );
     a_str_vo = [];
     
-    if ( self zm_characters::is_character( array( #"prt_zm_bruno", #"hash_14e91ceb9a7b3eb6" ) ) )
+    if ( self zm_characters::is_character( array( #"prt_zm_bruno", #"prt_zm_bruno_dlc0" ) ) )
     {
         a_str_vo[ a_str_vo.size ] = #"hash_3f6bf8f6cd5e63ff";
         a_str_vo[ a_str_vo.size ] = #"hash_3f6bf7f6cd5e624c";
@@ -336,13 +336,13 @@ function function_ff356649()
         return;
     }
     
-    if ( self zm_characters::is_character( array( #"prt_zm_scarlett", #"hash_1a427f842f175b3c" ) ) )
+    if ( self zm_characters::is_character( array( #"prt_zm_scarlett", #"prt_zm_scarlett_dlc0" ) ) )
     {
         a_str_vo[ a_str_vo.size ] = #"hash_57e4fdf6dacd37be";
         a_str_vo[ a_str_vo.size ] = #"hash_57e4fef6dacd3971";
         a_str_vo[ a_str_vo.size ] = #"hash_57e4fbf6dacd3458";
     }
-    else if ( self zm_characters::is_character( array( #"prt_zm_diego", #"hash_26072a3b34719d22" ) ) )
+    else if ( self zm_characters::is_character( array( #"prt_zm_diego", #"prt_zm_diego_dlc0" ) ) )
     {
         a_str_vo[ a_str_vo.size ] = #"hash_45e1aff6d067b934";
         a_str_vo[ a_str_vo.size ] = #"hash_45e1b0f6d067bae7";
@@ -556,7 +556,7 @@ function function_62cca067( var_46bfea0 )
                 {
                     if ( zombie_utility::is_player_valid( a_players[ i ] ) && a_players[ i ] util::is_player_looking_at( self.origin ) )
                     {
-                        a_players[ i ] thread zm_vo::function_a2bd5a0c( #"hash_594153ac5ecbee27", 0, 1, 9999, 1 );
+                        a_players[ i ] thread zm_vo::function_a2bd5a0c( #"vox_gegenees_react_first", 0, 1, 9999, 1 );
                         level flag::set( #"gegenees_spotted" );
                         break;
                     }
@@ -973,7 +973,7 @@ function function_79c0fdf3()
             {
                 if ( zm_utility::is_player_valid( a_players[ i ] ) && a_players[ i ] util::is_looking_at( self, 0.9, 1 ) )
                 {
-                    a_players[ i ] zm_vo::function_a2bd5a0c( #"hash_2c93f0b3c3d6f320", 0, 1, 9999, 1 );
+                    a_players[ i ] zm_vo::function_a2bd5a0c( #"vox_pegasus_los", 0, 1, 9999, 1 );
                     level notify( #"pegasus_spotted" );
                     break;
                 }
@@ -1150,14 +1150,14 @@ function function_3ca8556b( s_ride )
 {
     self thread scene::play( "aib_zm_red_vign_peg_inair_flapattack_01", "loop", self );
     self thread function_810c4f44( s_ride );
-    var_740e1e0e = getent( "pegasus_ride_rune", "targetname" );
-    var_740e1e0e show();
+    mdl_rune = getent( "pegasus_ride_rune", "targetname" );
+    mdl_rune show();
     level thread function_fd484520();
     level.var_7dab4a52.var_1d920c6c = s_ride thread zm_unitrigger::create( &function_852915f8, 200, &function_e11818f4 );
     level flag::wait_till( #"pegasus_takeoff" );
     level flag::wait_till( #"pegasus_ride" );
     zm_bgb_anywhere_but_here::function_886fce8f( 0 );
-    var_740e1e0e delete();
+    mdl_rune delete();
     level.var_90b150cb = self;
     level thread function_fe0a763c();
 }
@@ -1427,7 +1427,7 @@ function function_fe0a763c()
         }
     }
     
-    level flag::set( #"hash_4083e9da0ba41dec" );
+    level flag::set( #"pegasus_ride_started" );
     var_cb5f57f5 = [];
     a_players = getplayers();
     
@@ -1511,7 +1511,7 @@ function function_fe0a763c()
     level thread function_8c5f16dd();
     scene::add_scene_func( #"cin_zm_red_pegasus_ride", &function_a965580a, "play" );
     scene::add_scene_func( #"cin_zm_red_pegasus_ride", &function_e45ae8f4, "skip_started" );
-    scene::add_scene_func( #"cin_zm_red_pegasus_ride", &function_366b0011, "done" );
+    scene::add_scene_func( #"cin_zm_red_pegasus_ride", &pegasus_ride_done, "done" );
     level thread zm_audio::sndmusicsystem_playstate( "the_ride" );
     level thread lui::screen_fade_in( 0.5 );
     var_ff91be3a = struct::get_array( "s_zm_red_p_t_d_s", "targetname" );
@@ -1647,9 +1647,9 @@ function function_e45ae8f4( a_ents )
 // Params 1
 // Checksum 0xf9dca68e, Offset: 0x5f50
 // Size: 0x2c
-function function_366b0011( a_ents )
+function pegasus_ride_done( a_ents )
 {
-    level flag::set( #"hash_517afb4f86e5037b" );
+    level flag::set( #"pegasus_ride_done" );
 }
 
 // Namespace zm_red_pap_quest/zm_red_pap_quest
@@ -1669,7 +1669,7 @@ function function_a965580a( a_ents )
         {
             if ( !level flag::get( #"hash_1981012de509765d" ) )
             {
-                a_players[ i ] zm_vo::function_a2bd5a0c( #"hash_7c7b6f1e2af646b3", 0, 1, 9999, 1 );
+                a_players[ i ] zm_vo::function_a2bd5a0c( #"vox_pegasus_ride_light", 0, 1, 9999, 1 );
             }
         }
         
@@ -1684,7 +1684,7 @@ function function_a965580a( a_ents )
     {
         if ( !level flag::get( #"hash_1981012de509765d" ) )
         {
-            player zm_vo::function_a2bd5a0c( #"hash_cee28f993ae4965", 0, 1, 9999, 1 );
+            player zm_vo::function_a2bd5a0c( #"vox_pegasus_ride_waterfall", 0, 1, 9999, 1 );
         }
     }
 }
@@ -1722,7 +1722,7 @@ function function_8c5f16dd()
         {
             if ( !level flag::get( #"hash_1981012de509765d" ) )
             {
-                a_players[ i ] zm_vo::function_a2bd5a0c( #"hash_2e113992e6d1dc21", 0, 1, 9999, 1 );
+                a_players[ i ] zm_vo::function_a2bd5a0c( #"vox_pegasus_ride_dark", 0, 1, 9999, 1 );
             }
         }
         
@@ -2312,7 +2312,7 @@ function rock_fall()
             
             if ( isdefined( mdl_rock ) )
             {
-                mdl_rock thread function_c67711a8( s_goal, n_time );
+                mdl_rock thread rock_launch( s_goal, n_time );
             }
             
             wait randomfloatrange( 0.2, 1 );
@@ -2324,7 +2324,7 @@ function rock_fall()
 // Params 2
 // Checksum 0xe53ad860, Offset: 0x7fb8
 // Size: 0x8c
-function function_c67711a8( s_goal, n_time )
+function rock_launch( s_goal, n_time )
 {
     self setscale( randomfloatrange( 0.25, 0.6 ) );
     self moveto( s_goal.origin, n_time );
@@ -2362,7 +2362,7 @@ function function_23f28dd1( var_5ea5c94d )
     {
         if ( isalive( a_players[ i ] ) && a_players[ i ] istouching( var_c096d4d1 ) )
         {
-            a_players[ i ] thread zm_vo::function_a2bd5a0c( #"hash_41371e6903720ece", 1.5, 1, 9999, 1 );
+            a_players[ i ] thread zm_vo::function_a2bd5a0c( #"vox_zeus_eagle_attack_react", 1.5, 1, 9999, 1 );
             break;
         }
     }
@@ -2454,7 +2454,7 @@ function function_1707def1()
             
             if ( isdefined( a_players ) && isalive( a_players[ 0 ] ) )
             {
-                a_players[ 0 ] zm_vo::function_a2bd5a0c( #"hash_c12560526404585", 0.5, 1, 9999, 1 );
+                a_players[ 0 ] zm_vo::function_a2bd5a0c( #"vox_fast_port_react", 0.5, 1, 9999, 1 );
                 level notify( #"vo_fasttravel" );
             }
         }
@@ -3086,7 +3086,7 @@ function on_player_spawned()
 {
     self thread function_2e4c26ff();
     
-    if ( self zm_characters::is_character( array( #"prt_zm_bruno", #"hash_14e91ceb9a7b3eb6" ) ) )
+    if ( self zm_characters::is_character( array( #"prt_zm_bruno", #"prt_zm_bruno_dlc0" ) ) )
     {
         self.a_str_vo = [];
         self.a_str_vo[ self.a_str_vo.size ] = #"hash_5fb45a950319ba97";
@@ -3103,7 +3103,7 @@ function on_player_spawned()
 // Params 2
 // Checksum 0x88d2967a, Offset: 0xa5a0
 // Size: 0x70, Type: bool
-function function_e432aeb6( str_category, var_39acfdda )
+function function_e432aeb6( str_category, str_subcategory )
 {
     str_vo = array::random( self.a_str_vo );
     
@@ -3149,7 +3149,7 @@ function function_229fd7e9()
 // Params 2
 // Checksum 0x7977277e, Offset: 0xa720
 // Size: 0x118, Type: bool
-function function_118e5303( str_category, var_39acfdda )
+function function_118e5303( str_category, str_subcategory )
 {
     a_str_vo = array( #"hash_fb4780da8c3e82e", #"hash_fb4790da8c3e9e1", #"hash_fb4760da8c3e4c8", #"hash_fb4770da8c3e67b", #"hash_fb47c0da8c3eefa" );
     str_vo = array::random( a_str_vo );
@@ -3170,7 +3170,7 @@ function function_118e5303( str_category, var_39acfdda )
 // Params 2
 // Checksum 0x633381cd, Offset: 0xa840
 // Size: 0x118, Type: bool
-function function_e7e0d76b( str_category, var_39acfdda )
+function function_e7e0d76b( str_category, str_subcategory )
 {
     a_str_vo = array( #"hash_45f33af562e8c0c3", #"hash_45f339f562e8bf10", #"hash_45f33cf562e8c429", #"hash_45f33bf562e8c276", #"hash_45f33ef562e8c78f" );
     str_vo = array::random( a_str_vo );

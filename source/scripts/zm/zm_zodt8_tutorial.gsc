@@ -712,7 +712,7 @@ function function_43b2606b()
 function function_f761f5e4()
 {
     self.dontspeak = 1;
-    zm_characters::set_character( array( #"prt_zm_bruno", #"hash_14e91ceb9a7b3eb6" ) );
+    zm_characters::set_character( array( #"prt_zm_bruno", #"prt_zm_bruno_dlc0" ) );
     self.var_c27f1e90[ 0 ] = #"specialty_staminup";
     self.var_c27f1e90[ 1 ] = #"specialty_extraammo";
     self.var_c27f1e90[ 2 ] = #"specialty_cooldown";
@@ -836,7 +836,7 @@ function function_513e90cf()
         }
     }
     
-    zm_characters::set_character( array( #"prt_zm_diego", #"hash_26072a3b34719d22" ) );
+    zm_characters::set_character( array( #"prt_zm_diego", #"prt_zm_diego_dlc0" ) );
     music::setmusicstate( "tutorial_beginner_start" );
     self function_204dd117( "tutorial_beginner_start" );
     self takeallweapons();
@@ -1232,7 +1232,7 @@ function function_88b4ae49()
 // Size: 0x764
 function function_bfd3a7b1()
 {
-    zm_characters::set_character( array( #"prt_zm_scarlett", #"hash_1a427f842f175b3c" ) );
+    zm_characters::set_character( array( #"prt_zm_scarlett", #"prt_zm_scarlett_dlc0" ) );
     self function_204dd117( "tutorial_intermediate_start" );
     music::setmusicstate( "tutorial_intermediate_start" );
     var_1c8259f7 = getweapon( "zitem_rocketshield_part_2" );
@@ -1279,7 +1279,7 @@ function function_bfd3a7b1()
     music::setmusicstate( "tutorial_intermediate_end" );
     self lui::screen_fade_out( 5 );
     level thread bot::remove_bot( level.tutorialbot );
-    zm_characters::set_character( array( #"prt_zm_stanton", #"hash_5a906d7137467771" ) );
+    zm_characters::set_character( array( #"prt_zm_stanton", #"prt_zm_stanton_dlc0" ) );
     self function_204dd117( "tutorial_advanced_start" );
     self.is_drinking = 0;
     a_pap = struct::get_array( "pap_quest_interact", "targetname" );
@@ -1491,7 +1491,7 @@ function bot()
 {
     self.reset_score = self.score;
     trigger::wait_till( "tutorial_spawn_nuke" );
-    self thread function_e054ad69();
+    self thread nuke_vo();
     var_7d37d68d = getnode( "tutorial_bot_spawn", "targetname" );
     sessionmode = currentsessionmode();
     
@@ -1500,7 +1500,7 @@ function bot()
         waitframe( 1 );
     }
     
-    bot.var_29b433bd = int( zm_characters::get_character_index( array( #"prt_zm_bruno", #"hash_14e91ceb9a7b3eb6" ) ) );
+    bot.var_29b433bd = int( zm_characters::get_character_index( array( #"prt_zm_bruno", #"prt_zm_bruno_dlc0" ) ) );
     bot bot::allow_all( 0 );
     bot thread bot::fixed_spawn_override( var_7d37d68d.origin, var_7d37d68d.angles[ 1 ], bot bot::get_nearest_node( var_7d37d68d.origin ) );
     waitframe( 1 );
@@ -1527,7 +1527,7 @@ function bot()
 // Params 0
 // Checksum 0x82e9257, Offset: 0x7030
 // Size: 0x6c
-function function_e054ad69()
+function nuke_vo()
 {
     self endon( #"nuke_triggered" );
     level function_68da8e33( #"hash_4570b02abda4a10" );

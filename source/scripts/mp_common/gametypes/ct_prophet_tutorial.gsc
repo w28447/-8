@@ -2068,14 +2068,14 @@ function overridedamage_player( e_inflictor, e_attacker, n_damage, n_dflags, str
     
     if ( isdefined( level.var_8ca3c62 ) && level.var_8ca3c62 == 9 )
     {
-        var_754eb193 = int( var_d0621c54 * 0.25 );
+        n_new_damage = int( var_d0621c54 * 0.25 );
     }
     else
     {
-        var_754eb193 = int( var_d0621c54 / 2 );
+        n_new_damage = int( var_d0621c54 / 2 );
     }
     
-    return var_754eb193;
+    return n_new_damage;
 }
 
 // Namespace ct_prophet_tutorial/ct_prophet_tutorial

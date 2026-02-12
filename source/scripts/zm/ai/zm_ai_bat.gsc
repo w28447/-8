@@ -68,7 +68,7 @@ function autoexec __init__system__()
 // Size: 0x1a4
 function __init__()
 {
-    vehicle::add_main_callback( "bat", &function_6c223039 );
+    vehicle::add_main_callback( "bat", &batonspawned );
     spawner::function_89a2cd87( #"bat", &function_141c342b );
     zm_transform::function_cfca77a7( #"spawner_zm_nosferatu", #"hash_791d597ac0457860", undefined, 0, undefined, undefined );
     level thread function_1b029905();
@@ -86,7 +86,7 @@ function __init__()
 // Params 0
 // Checksum 0xbad5b947, Offset: 0x470
 // Size: 0x26c
-function function_6c223039()
+function batonspawned()
 {
     self useanimtree( "generic" );
     initblackboard();
@@ -843,9 +843,9 @@ function function_2e37549f( b_force_spawn = 0, var_eb3a8721, n_round_number )
     {
         s_spawn_loc = var_eb3a8721;
     }
-    else if ( isdefined( level.var_29a8e07 ) )
+    else if ( isdefined( level.bat_spawn_func ) )
     {
-        s_spawn_loc = [[ level.var_29a8e07 ]]();
+        s_spawn_loc = [[ level.bat_spawn_func ]]();
     }
     else if ( isdefined( level.zm_loc_types[ #"bat_location" ] ) && level.zm_loc_types[ #"bat_location" ].size > 0 )
     {
@@ -870,9 +870,9 @@ function function_2e37549f( b_force_spawn = 0, var_eb3a8721, n_round_number )
             ai.angles = s_spawn_loc.angles;
         }
         
-        if ( isdefined( level.var_d9334d8b ) )
+        if ( isdefined( level.bat_on_spawned ) )
         {
-            ai thread [[ level.var_d9334d8b ]]( s_spawn_loc );
+            ai thread [[ level.bat_on_spawned ]]( s_spawn_loc );
         }
     }
     

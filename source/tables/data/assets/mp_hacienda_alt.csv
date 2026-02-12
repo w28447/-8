@@ -14,7 +14,7 @@ physpreset,#hash_259f146613c9e5d3
 physpreset,d#hash_260836fb8b5de3f9
 physpreset,#hash_26d16c8cce3659f5
 physpreset,d#hash_2dde11734bce6259
-physpreset,#hash_2e1a6a36da3d4fc3
+physpreset,#sandbag
 physpreset,#p7_cai_cookware_metal_jug
 physpreset,#hash_30d30d3a00b9d2a3
 physpreset,d#p7_supply_briefcase_02
@@ -23,8 +23,8 @@ physpreset,#hash_37a6f1b88647ea58
 physpreset,#p7_medical_surgical_tray_tools_bloody
 physpreset,#hash_3be7b524420dc0bb
 physpreset,#hash_3ebbe1918e54893d
-physpreset,#hash_408bcb61fe20d903
-physpreset,#hash_4d2fdc9bc6b02255
+physpreset,#ashtray
+physpreset,#boot
 physpreset,#hash_503e238f61e8dade
 physpreset,#hash_54dac4ada83bcd7d
 physpreset,#p7_cup_coffee_mug
@@ -37,10 +37,10 @@ physpreset,#p7_world_globe_vintage_01
 physpreset,#hash_65148e1ddc4e6921
 physpreset,d#default
 physpreset,#hash_715fa5c9c471e804
-physpreset,#hash_728d8a88bc780760
+physpreset,#pillow
 physpreset,#hash_734a4793a7fe791f
 physpreset,#hash_751ecdbf540223b6
-physpreset,#hash_7909e4d5d48113fe
+physpreset,#glove
 physpreset,#p7_eth_decor_01_statue_elephant
 physpreset,#p7_tools_hammer
 physpreset,#hash_7b39c4e3d9cc0579
@@ -34693,7 +34693,7 @@ physpreset,#hash_62668f696856a49b
 physpreset,#hash_6535279eca48032c
 physpreset,#p7_picture_frame_square_01
 physpreset,#p7_bottle_glass_wine_01
-physpreset,#hash_695e6bd10c7f85e8
+physpreset,#p7_food_fruit
 physpreset,#hash_6c3541d637690d46
 physpreset,d#p7_vase_clay_egyptian_01
 physpreset,#hash_775adecec52f77c6
@@ -36991,7 +36991,7 @@ fx,d#hash_1df2cd45565d5db3
 fx,d#hash_1f1f6ba9fb9ace3c
 fx,#hash_212bce954d1e21ea
 fx,#hash_2147dab1373ff1d8
-fx,d#hash_21f397376b81d9ef
+fx,d#impacts/fx_bul_impact_blood_body_fatal
 fx,d#hash_2618b5463c248896
 fx,#hash_26cac40560ae5f7d
 fx,d#hash_27604ee16fb27e93

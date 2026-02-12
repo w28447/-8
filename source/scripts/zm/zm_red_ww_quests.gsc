@@ -2887,7 +2887,7 @@ function function_79a8a785( var_542837e6, e_player )
     if ( isdefined( e_player ) && !( isdefined( e_player.var_ce51262c ) && e_player.var_ce51262c ) )
     {
         e_player.var_ce51262c = 1;
-        e_player thread zm_vo::function_a2bd5a0c( #"hash_179377c40c9fbe52", 0, 1, 9999, 1 );
+        e_player thread zm_vo::function_a2bd5a0c( #"vox_light_pickup", 0, 1, 9999, 1 );
     }
     
     e_player flag::set( "carrying_light_energy" );
@@ -3854,7 +3854,7 @@ function function_ac211843( b_failed )
     if ( isdefined( s_result.e_who ) && !( isdefined( s_result.e_who.var_9cf704b7 ) && s_result.e_who.var_9cf704b7 ) )
     {
         s_result.e_who.var_9cf704b7 = 1;
-        s_result.e_who thread zm_vo::function_a2bd5a0c( #"hash_379aab9b6f7dc5f4", 0, 1, 9999, 1 );
+        s_result.e_who thread zm_vo::function_a2bd5a0c( #"vox_sapling_react_first", 0, 1, 9999, 1 );
     }
     
     self flag::clear( #"seedling_available" );
@@ -5415,7 +5415,7 @@ function function_6df333f3( e_player )
             {
                 if ( self.targetname === #"earth" )
                 {
-                    ai_zombie = function_eeed4f2f( s_spawn );
+                    ai_zombie = catalyst_single_spawn( s_spawn );
                     n_wait_time = 0.5;
                 }
                 else if ( self.targetname === #"air" )
@@ -5443,7 +5443,7 @@ function function_6df333f3( e_player )
                     }
                     
                     s_spawn = struct::get( "s_ww_d_spawn_bl" );
-                    ai_zombie = function_7a15e228( s_spawn );
+                    ai_zombie = blightfather_single_spawn( s_spawn );
                     n_wait_time = 2;
                 }
                 
@@ -5522,7 +5522,7 @@ function function_a6300fa2( ai_zombie )
 // Params 1
 // Checksum 0xf0512d5f, Offset: 0x153a0
 // Size: 0x150
-function function_eeed4f2f( s_spawn_loc )
+function catalyst_single_spawn( s_spawn_loc )
 {
     if ( !isdefined( s_spawn_loc ) )
     {
@@ -5581,7 +5581,7 @@ function function_3f05435f()
 // Params 1
 // Checksum 0xefa82204, Offset: 0x155b0
 // Size: 0xc0
-function function_7a15e228( s_spawn_loc )
+function blightfather_single_spawn( s_spawn_loc )
 {
     a_sp_blightfather = getspawnerarray( "zombie_blight_father_spawner", "script_noteworthy" );
     ai = zombie_utility::spawn_zombie( a_sp_blightfather[ 0 ], "scorpion" );

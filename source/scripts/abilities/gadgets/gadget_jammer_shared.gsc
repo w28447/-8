@@ -19,18 +19,18 @@
 // Size: 0x10c
 function init_shared()
 {
-    if ( !isdefined( level.var_578f7c6d ) )
+    if ( !isdefined( level.jammersettings ) )
     {
-        level.var_578f7c6d = spawnstruct();
+        level.jammersettings = spawnstruct();
     }
     
-    if ( !isdefined( level.var_578f7c6d.weapontypeoverrides ) )
+    if ( !isdefined( level.jammersettings.weapontypeoverrides ) )
     {
-        level.var_578f7c6d.weapontypeoverrides = [];
+        level.jammersettings.weapontypeoverrides = [];
     }
     
-    level.var_578f7c6d.weapon = getweapon( #"eq_emp_grenade" );
-    level.var_578f7c6d.customsettings = getscriptbundle( level.var_578f7c6d.weapon.customsettings );
+    level.jammersettings.weapon = getweapon( #"eq_emp_grenade" );
+    level.jammersettings.customsettings = getscriptbundle( level.jammersettings.weapon.customsettings );
     weaponobjects::function_e6400478( #"eq_emp_grenade", &function_1a50ce7b, 1 );
     registerclientfields();
     setupcallbacks();
@@ -102,7 +102,7 @@ function function_48c30195( entity, shouldignore )
 // Size: 0x1e
 function function_86e3d17a()
 {
-    return level.var_578f7c6d.customsettings.var_3bd9b483;
+    return level.jammersettings.customsettings.var_3bd9b483;
 }
 
 // Namespace jammer/gadget_jammer_shared
@@ -120,7 +120,7 @@ function register( entity, var_448f97f2 )
 // Size: 0x36
 function function_4e7e56a8( weapon, callbackfunction )
 {
-    level.var_578f7c6d.weapontypeoverrides[ weapon.name ] = callbackfunction;
+    level.jammersettings.weapontypeoverrides[ weapon.name ] = callbackfunction;
 }
 
 // Namespace jammer/gadget_jammer_shared
@@ -131,7 +131,7 @@ function function_1c601b99()
 {
     if ( isdefined( level.var_1b900c1d ) )
     {
-        [[ level.var_1b900c1d ]]( level.var_578f7c6d.weapon, &function_bff5c062 );
+        [[ level.var_1b900c1d ]]( level.jammersettings.weapon, &function_bff5c062 );
     }
 }
 
@@ -179,14 +179,14 @@ function on_player_killed( params )
     
     if ( self.var_fe1ebada == params.eattacker )
     {
-        scoreevents::processscoreevent( #"disruptor_kill", self.var_fe1ebada, undefined, level.var_578f7c6d.weapon );
-        params.eattacker function_be7a08a8( level.var_578f7c6d.weapon, 1 );
+        scoreevents::processscoreevent( #"disruptor_kill", self.var_fe1ebada, undefined, level.jammersettings.weapon );
+        params.eattacker function_be7a08a8( level.jammersettings.weapon, 1 );
         return;
     }
     
     if ( isdefined( self.var_fe1ebada.team ) && isdefined( params.eattacker.team ) && self.var_fe1ebada.team == params.eattacker.team )
     {
-        scoreevents::processscoreevent( #"disruptor_assist", self.var_fe1ebada, undefined, level.var_578f7c6d.weapon );
+        scoreevents::processscoreevent( #"disruptor_assist", self.var_fe1ebada, undefined, level.jammersettings.weapon );
     }
 }
 
@@ -211,8 +211,8 @@ function private function_7d81a4ff( watcher, player )
     }
     
     self.owner = player;
-    self.weapon = level.var_578f7c6d.weapon;
-    self setweapon( level.var_578f7c6d.weapon );
+    self.weapon = level.jammersettings.weapon;
+    self setweapon( level.jammersettings.weapon );
     self setteam( player getteam() );
     self.team = player getteam();
     self clientfield::set( "enemyequip", 1 );
@@ -236,7 +236,7 @@ function private function_7d81a4ff( watcher, player )
 // Size: 0x44
 function private function_2572e9cc( attackingplayer, var_fb5e3b16 )
 {
-    scoreevents::processscoreevent( var_fb5e3b16, attackingplayer, undefined, level.var_578f7c6d.weapon );
+    scoreevents::processscoreevent( var_fb5e3b16, attackingplayer, undefined, level.jammersettings.weapon );
 }
 
 // Namespace jammer/gadget_jammer_shared
@@ -245,7 +245,7 @@ function private function_2572e9cc( attackingplayer, var_fb5e3b16 )
 // Size: 0x254
 function private function_87c540c0( jammer, origin, attackingplayer )
 {
-    entities = getentitiesinradius( origin, level.var_578f7c6d.weapon.explosionradius );
+    entities = getentitiesinradius( origin, level.jammersettings.weapon.explosionradius );
     var_545dd758 = 0;
     var_480b4b92 = 0;
     
@@ -255,7 +255,7 @@ function private function_87c540c0( jammer, origin, attackingplayer )
         {
             if ( !var_480b4b92 && isplayer( entity ) && entity hastalent( #"talent_resistance" ) && util::function_fbce7263( entity.team, attackingplayer.team ) )
             {
-                attackingplayer damagefeedback::update( undefined, undefined, "resistance", level.var_578f7c6d.weapon );
+                attackingplayer damagefeedback::update( undefined, undefined, "resistance", level.jammersettings.weapon );
                 var_480b4b92 = 1;
             }
             
@@ -278,7 +278,7 @@ function private function_87c540c0( jammer, origin, attackingplayer )
     
     if ( var_545dd758 >= 2 )
     {
-        scoreevents::processscoreevent( #"hash_208b61a32a38340e", attackingplayer, undefined, level.var_578f7c6d.weapon );
+        scoreevents::processscoreevent( #"hash_208b61a32a38340e", attackingplayer, undefined, level.jammersettings.weapon );
     }
 }
 
@@ -318,12 +318,12 @@ function private function_e27c41b4( jammer, entity, attackingplayer )
         return false;
     }
     
-    if ( isdefined( level.var_578f7c6d.weapontypeoverrides[ weapon.name ] ) )
+    if ( isdefined( level.jammersettings.weapontypeoverrides[ weapon.name ] ) )
     {
         function_1c430dad( entity, 1 );
         function_58f8bf08( jammer, attackingplayer, undefined );
         function_2e6238c0( weapon, entity.owner );
-        thread [[ level.var_578f7c6d.weapontypeoverrides[ weapon.name ] ]]( entity, attackingplayer );
+        thread [[ level.jammersettings.weapontypeoverrides[ weapon.name ] ]]( entity, attackingplayer );
         return true;
     }
     
@@ -343,9 +343,9 @@ function private function_b8c5ab9c( jammer, player, attackingplayer )
     player.isjammed = 1;
     player.var_fe1ebada = attackingplayer;
     player setempjammed( 1 );
-    scoreevents::processscoreevent( #"disrupted_enemy", attackingplayer, undefined, level.var_578f7c6d.weapon );
+    scoreevents::processscoreevent( #"disrupted_enemy", attackingplayer, undefined, level.jammersettings.weapon );
     function_58f8bf08( jammer, attackingplayer, player );
-    wait level.var_578f7c6d.customsettings.var_f29418f1;
+    wait level.jammersettings.customsettings.var_f29418f1;
     
     if ( !isdefined( player ) )
     {
@@ -393,7 +393,7 @@ function private function_ca8a005e( jammer, gadget, attackingplayer )
         return;
     }
     
-    gadget dodamage( 1000, gadget.origin, attackingplayer, jammer, undefined, "MOD_GRENADE_SPLASH", 0, level.var_578f7c6d.weapon );
+    gadget dodamage( 1000, gadget.origin, attackingplayer, jammer, undefined, "MOD_GRENADE_SPLASH", 0, level.jammersettings.weapon );
     function_58f8bf08( jammer, attackingplayer, undefined );
 }
 
@@ -597,9 +597,9 @@ function private function_3a3a2ea9( jammer )
 // Size: 0x8c
 function private function_58f8bf08( jammer, attackingplayer, victim )
 {
-    if ( damagefeedback::dodamagefeedback( level.var_578f7c6d.weapon, attackingplayer ) )
+    if ( damagefeedback::dodamagefeedback( level.jammersettings.weapon, attackingplayer ) )
     {
-        attackingplayer thread damagefeedback::update( "MOD_UNKNOWN", jammer, undefined, level.var_578f7c6d.weapon, victim, 0, undefined, 0, 0, 1 );
+        attackingplayer thread damagefeedback::update( "MOD_UNKNOWN", jammer, undefined, level.jammersettings.weapon, victim, 0, undefined, 0, 0, 1 );
     }
 }
 

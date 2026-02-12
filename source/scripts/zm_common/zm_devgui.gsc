@@ -1732,14 +1732,14 @@
                     break;
                 case #"ammodown":
                     players = getplayers();
-                    array::thread_all( players, &function_dc7312be );
+                    array::thread_all( players, &zombie_devgui_take_ammo );
                     break;
                 case #"player1_ammodown":
                     players = getplayers();
                     
                     if ( players.size >= 1 )
                     {
-                        players[ 0 ] thread function_dc7312be();
+                        players[ 0 ] thread zombie_devgui_take_ammo();
                     }
                     
                     break;
@@ -1748,7 +1748,7 @@
                     
                     if ( players.size >= 2 )
                     {
-                        players[ 1 ] thread function_dc7312be();
+                        players[ 1 ] thread zombie_devgui_take_ammo();
                     }
                     
                     break;
@@ -1757,7 +1757,7 @@
                     
                     if ( players.size >= 3 )
                     {
-                        players[ 2 ] thread function_dc7312be();
+                        players[ 2 ] thread zombie_devgui_take_ammo();
                     }
                     
                     break;
@@ -1766,7 +1766,7 @@
                     
                     if ( players.size >= 4 )
                     {
-                        players[ 3 ] thread function_dc7312be();
+                        players[ 3 ] thread zombie_devgui_take_ammo();
                     }
                     
                     break;
@@ -2223,10 +2223,10 @@
                     zombie_devgui_goto_round( level.round_number - 1 );
                     break;
                 case #"chest_warp":
-                    array::thread_all( getplayers(), &function_4bb7eb36 );
+                    array::thread_all( getplayers(), &zombie_devgui_chest_warp );
                     break;
                 case #"pap_warp":
-                    array::thread_all( getplayers(), &function_84f0a909 );
+                    array::thread_all( getplayers(), &zombie_devgui_pap_warp );
                     break;
                 case #"chest_move":
                     if ( isdefined( level.chest_accessed ) )
@@ -2290,16 +2290,16 @@
                     zombie_devgui_pack_current_weapon();
                     break;
                 case #"rank_up_player":
-                    function_8c9f2dea();
+                    zombie_devgui_rank_up_player();
                     break;
                 case #"hash_5605531ad17b5408":
                     function_b7ef4b8();
                     break;
                 case #"rank_max_player":
-                    function_9b4d61fa();
+                    zombie_devgui_rank_max_player();
                     break;
                 case #"rank_zero_player":
-                    function_cdc3d061();
+                    zombie_devgui_rank_zero_player();
                     break;
                 case #"repack_current_weapon":
                     zombie_devgui_repack_current_weapon();
@@ -2308,22 +2308,22 @@
                     zombie_devgui_unpack_current_weapon();
                     break;
                 case #"rank_up_current_weapon":
-                    function_c8949116();
+                    zombie_devgui_rank_up_current_weapon();
                     break;
                 case #"hash_769c6d03952dd107":
                     function_9d21f44b();
                     break;
                 case #"rank_max_current_weapon":
-                    function_e2a97bab();
+                    zombie_devgui_rank_max_current_weapon();
                     break;
                 case #"rank_zero_current_weapon":
-                    function_1a560cfc();
+                    zombie_devgui_rank_zero_current_weapon();
                     break;
                 case #"rank_max_all_weapons":
-                    function_c8ee84ba();
+                    zombie_devgui_rank_max_all_weapons();
                     break;
                 case #"rank_zero_all_weapons":
-                    function_c83c6fa();
+                    zombie_devgui_rank_zero_all_weapons();
                     break;
                 case #"reopt_current_weapon":
                     zombie_devgui_reopt_current_weapon();
@@ -2407,10 +2407,10 @@
                     devgui_zombie_spawn();
                     break;
                 case #"spawn_dummy":
-                    function_6f066ef();
+                    devgui_zombie_spawn_dummy();
                     break;
                 case #"spawn_near":
-                    function_7c17d00f();
+                    devgui_zombie_spawn_near();
                     break;
                 case #"spawn_all":
                     devgui_all_spawn();
@@ -2428,7 +2428,7 @@
                     zombie_devgui_draw_traversals();
                     break;
                 case #"dump_traversals":
-                    function_bbeaa2da();
+                    zombie_devgui_dump_traversals();
                     break;
                 case #"debug_hud":
                     array::thread_all( getplayers(), &devgui_debug_hud );
@@ -2443,7 +2443,7 @@
                     robotsupportsovercover_manager_();
                     break;
                 case #"debug_counts":
-                    function_92523b12();
+                    zombie_devgui_debug_counts();
                     break;
                 case #"hash_604a84ea1690f781":
                     thread function_3a5618f8();
@@ -2670,7 +2670,7 @@
     // Params 0
     // Checksum 0xef4f4c73, Offset: 0x8328
     // Size: 0xdc, Type: dev
-    function function_6f066ef()
+    function devgui_zombie_spawn_dummy()
     {
         player = getplayers()[ 0 ];
         forward = anglestoforward( player.angles );
@@ -2688,7 +2688,7 @@
     // Params 0
     // Checksum 0x9f850ba9, Offset: 0x8410
     // Size: 0xd4, Type: dev
-    function function_7c17d00f()
+    function devgui_zombie_spawn_near()
     {
         player = getplayers()[ 0 ];
         forward = anglestoforward( player.angles );
@@ -2900,7 +2900,7 @@
     // Params 0
     // Checksum 0x143802e7, Offset: 0x8e98
     // Size: 0x1ac, Type: dev
-    function function_dc7312be()
+    function zombie_devgui_take_ammo()
     {
         assert( isdefined( self ) );
         assert( isplayer( self ) );
@@ -2978,7 +2978,7 @@
     // Params 0
     // Checksum 0xf0749d8d, Offset: 0x9290
     // Size: 0x1e4, Type: dev
-    function function_4bb7eb36()
+    function zombie_devgui_chest_warp()
     {
         entnum = self getentitynumber();
         chest = level.chests[ level.chest_index ];
@@ -3012,7 +3012,7 @@
     // Params 0
     // Checksum 0x2f128ae2, Offset: 0x9480
     // Size: 0x1fc, Type: dev
-    function function_84f0a909()
+    function zombie_devgui_pap_warp()
     {
         entnum = self getentitynumber();
         paps = getentarray( "<dev string:xcd9>", "<dev string:xbd1>" );
@@ -4147,7 +4147,7 @@
     // Params 0
     // Checksum 0xa54b50bd, Offset: 0xc348
     // Size: 0x12e, Type: dev
-    function function_c8949116()
+    function zombie_devgui_rank_up_current_weapon()
     {
         players = getplayers();
         level.devcheater = 1;
@@ -4195,7 +4195,7 @@
     // Params 0
     // Checksum 0x62e369c5, Offset: 0xc5b8
     // Size: 0x10e, Type: dev
-    function function_e2a97bab()
+    function zombie_devgui_rank_max_current_weapon()
     {
         players = getplayers();
         level.devcheater = 1;
@@ -4218,7 +4218,7 @@
     // Params 0
     // Checksum 0x9947fa85, Offset: 0xc6d0
     // Size: 0xee, Type: dev
-    function function_1a560cfc()
+    function zombie_devgui_rank_zero_current_weapon()
     {
         players = getplayers();
         level.devcheater = 1;
@@ -4240,7 +4240,7 @@
     // Params 0
     // Checksum 0xc2291b56, Offset: 0xc7c8
     // Size: 0x150, Type: dev
-    function function_c8ee84ba()
+    function zombie_devgui_rank_max_all_weapons()
     {
         players = getplayers();
         level.devcheater = 1;
@@ -4274,7 +4274,7 @@
     // Params 0
     // Checksum 0x49b128d3, Offset: 0xc920
     // Size: 0x138, Type: dev
-    function function_c83c6fa()
+    function zombie_devgui_rank_zero_all_weapons()
     {
         players = getplayers();
         level.devcheater = 1;
@@ -4344,7 +4344,7 @@
     // Params 0
     // Checksum 0xf0ed7a7a, Offset: 0xcc20
     // Size: 0xde, Type: dev
-    function function_8c9f2dea()
+    function zombie_devgui_rank_up_player()
     {
         players = getplayers();
         level.devcheater = 1;
@@ -4388,7 +4388,7 @@
     // Params 0
     // Checksum 0x7185f53a, Offset: 0xcdf8
     // Size: 0xbe, Type: dev
-    function function_9b4d61fa()
+    function zombie_devgui_rank_max_player()
     {
         players = getplayers();
         level.devcheater = 1;
@@ -4409,7 +4409,7 @@
     // Params 0
     // Checksum 0x657cd36d, Offset: 0xcec0
     // Size: 0x9e, Type: dev
-    function function_cdc3d061()
+    function zombie_devgui_rank_zero_player()
     {
         players = getplayers();
         level.devcheater = 1;
@@ -4784,7 +4784,7 @@
     // Params 0
     // Checksum 0xc5efc42e, Offset: 0xded0
     // Size: 0x3e, Type: dev
-    function function_92523b12()
+    function zombie_devgui_debug_counts()
     {
         if ( !isdefined( level.var_5171ee4a ) )
         {
@@ -4907,7 +4907,7 @@
     // Params 0
     // Checksum 0xb1a6a467, Offset: 0xe3d0
     // Size: 0x1cc, Type: dev
-    function function_bbeaa2da()
+    function zombie_devgui_dump_traversals()
     {
         nodes = getallnodes();
         var_43e9aabd = [];

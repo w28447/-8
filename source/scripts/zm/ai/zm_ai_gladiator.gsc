@@ -299,11 +299,11 @@ function private gladiatortargetservice( entity )
     
     if ( entity.subarchetype == #"gladiator_marauder" && !( isdefined( entity.var_4f1b8d2b ) && entity.var_4f1b8d2b ) )
     {
-        entity.favoriteenemy = entity.var_93a62fe;
+        entity.favoriteenemy = entity.closest_valid_player;
     }
     else if ( entity.subarchetype == #"gladiator_destroyer" )
     {
-        entity.favoriteenemy = entity.var_93a62fe;
+        entity.favoriteenemy = entity.closest_valid_player;
     }
     
     if ( isdefined( entity.zombie_poi ) && isdefined( entity.zombie_poi[ 1 ] ) )

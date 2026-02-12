@@ -219,7 +219,7 @@ soundalias,#hash_bbafec33c2adca2
 soundalias,#hash_bd53719309b6fc1
 soundalias,#hash_c266934b6e24701
 soundalias,#hash_ca467b11bcaf711
-soundalias,#hash_cc693b3173e7565
+soundalias,#exp_concussive_large
 soundalias,#hash_e60cfcf17a4f76f
 soundalias,#hash_e60d0cf17a4f922
 soundalias,#hash_e9e50726ced8693
@@ -252,12 +252,12 @@ soundalias,#hash_23a8d14db44a77a5
 soundalias,#hash_23b0991f9e05a62c
 soundalias,#hash_24341b2153efa720
 soundalias,#hash_248083eb8b59e6a3
-soundalias,#hash_2549cc0c1d5fe7a3
+soundalias,#fxa_vent_spin_wobble
 soundalias,#hash_25a264b901d17919
 soundalias,#hash_267821e3be703ce7
 soundalias,#hash_26bf012beaa38162
 soundalias,#hash_2730ba20330dff4a
-soundalias,#hash_2748aa2e6dc57ae0
+soundalias,#dst_car_tire_deflate
 soundalias,#hash_2810aba2c5a266a8
 soundalias,#dst_paper
 soundalias,#hash_2a1ab8d0c34b5f47
@@ -364,10 +364,10 @@ soundalias,#hash_633b9532cf0da169
 soundalias,#hash_655da476017283df
 soundalias,#hash_65f24e989cf891b3
 soundalias,#hash_663899d42687914d
-soundalias,#hash_66aa6b049c23fa3f
+soundalias,#exp_incindiary_large
 soundalias,#hash_67e1b634a1e1c1ba
 soundalias,#hash_683fa9c204fffef2
-soundalias,#hash_68a1c85cc4bd629c
+soundalias,#fxa_vent_spin_fast
 soundalias,#hash_68b8beb0257da073
 soundalias,#hash_68d529ce159011b5
 soundalias,#hash_69f9f3e122dbb898
@@ -375,7 +375,7 @@ soundalias,#hash_6a7bbff93ccc7ab7
 soundalias,#hash_6abe483482efa584
 soundalias,#hash_6c5be5a0764e1e3c
 soundalias,#hash_6d60852ef9ecfe86
-soundalias,#hash_6d6d850a5d8b2baf
+soundalias,#fxa_vent_spin_slow
 soundalias,#hash_6fd3bb29121cc5d4
 soundalias,#hash_712e3703787e4a71
 soundalias,#hash_7155287f79a59b72
@@ -399,7 +399,7 @@ soundalias,#exp_veh_plane_spinout_lp
 soundalias,#hash_7ac5fa6568de2461
 soundalias,#hash_7b03a9cee3b85887
 soundalias,#hash_7b0cc91c8136ee38
-soundalias,#hash_7c2e59ca3ee725e5
+soundalias,#exp_veh_med
 soundalias,#hash_7c716b8ac8bdcaf4
 soundalias,#hash_7e17e533381a8506
 soundalias,#hash_7e702280d0261c6c

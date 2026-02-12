@@ -27,7 +27,7 @@
 10010,#hash_3ffc3d28289d21bb,1,#hash_3ffc3d28289d21bb,3,1,u9?0
 10011,#contract_mp_headshot,1,#contract_mp_headshot,3,1,u9?0
 10012,#hash_4c15367eed618401,1,#hash_4c15367eed618401,3,1,u9?0
-10013,#hash_172456fa969d6c82,1,#hash_172456fa969d6c82,3,1,u9?0
+10013,#contract_mp_combat_axe_kill,1,#contract_mp_combat_axe_kill,3,1,u9?0
 10014,#hash_6696408f54c6ada7,1,#hash_6696408f54c6ada7,3,1,u9?0
 10015,#contract_mp_molotov_kill,1,#contract_mp_molotov_kill,3,1,u9?0
 10016,#hash_4a7d49c14e026e91,1,#hash_4a7d49c14e026e91,3,1,u9?0
@@ -39,9 +39,9 @@
 10022,#contract_mp_pickup_weapon_kills,1,#contract_mp_pickup_weapon_kills,3,1,u9?0
 10023,#contract_mp_hotswap_multikill,1,#contract_mp_hotswap_multikill,3,1,u9?0
 10024,#contract_mp_attachments3_primary_ekia,1,#contract_mp_attachments3_primary_ekia,3,1,u9?0
-10025,#hash_d18e3651f508489,1,#hash_d18e3651f508489,3,1,u9?0
-10026,#hash_264228bd931f8deb,1,#hash_264228bd931f8deb,3,1,u9?0
-10027,#hash_469703d9a67cf0dd,1,#hash_469703d9a67cf0dd,3,1,u9?0
+10025,#contract_mp_attachments5_primary_ekia,1,#contract_mp_attachments5_primary_ekia,3,1,u9?0
+10026,#contract_mp_attachments3_secondary_ekia,1,#contract_mp_attachments3_secondary_ekia,3,1,u9?0
+10027,#contract_mp_attachments5_secondary_ekia,1,#contract_mp_attachments5_secondary_ekia,3,1,u9?0
 10028,#contract_mp_overkill,1,#contract_mp_overkill,3,1,u9?0
 10029,#contract_mp_class_5_perks,1,#contract_mp_class_5_perks,3,1,u9?0
 10030,#contract_mp_class_gluttony,1,#contract_mp_class_gluttony,3,1,u9?0
@@ -62,10 +62,10 @@
 10045,#hash_31951837e7c9b9ef,1,#hash_31951837e7c9b9ef,3,1,u9?0
 10046,#hash_276886a0fbac5de0,1,#hash_276886a0fbac5de0,3,1,u9?0
 10047,#hash_741b3c0ab3e7a55f,1,#hash_741b3c0ab3e7a55f,3,1,u9?0
-10048,#hash_3f50e5536ee788ab,1,#hash_3f50e5536ee788ab,3,1,u9?0
-10049,#hash_7861508178a93a0f,1,#hash_7861508178a93a0f,3,1,u9?0
-10050,#hash_31a6484e36a0a20f,1,#hash_31a6484e36a0a20f,3,1,u9?0
-10051,#hash_6b52fb637a3c29cb,1,#hash_6b52fb637a3c29cb,3,1,u9?0
+10048,#contract_mp_specialist_weapon_multikills,1,#contract_mp_specialist_weapon_multikills,3,1,u9?0
+10049,#contract_mp_specialist_equipment_multikills,1,#contract_mp_specialist_equipment_multikills,3,1,u9?0
+10050,#contract_mp_specialist_weapon_ekia,1,#contract_mp_specialist_weapon_ekia,3,1,u9?0
+10051,#contract_mp_specialist_equipment_ekia,1,#contract_mp_specialist_equipment_ekia,3,1,u9?0
 10052,#contract_mp_hardcore_ekia,1,#contract_mp_hardcore_ekia,3,1,u9?0
 10053,#contract_mp_headshots_hardcore,1,#contract_mp_headshots_hardcore,3,1,u9?0
 10054,#contract_mp_multikill_2_or_better,1,#contract_mp_multikill_2_or_better,3,1,u9?0
@@ -123,7 +123,7 @@
 30012,#contract_zm_equip_kills,1,#contract_zm_equip_kills,3,0,u9?0
 30013,#contract_zm_explosive_kills,1,#contract_zm_explosive_kills,3,0,u9?0
 30014,#contract_zm_points,1,#contract_zm_points,3,0,u9?0
-30015,#hash_b6b948aac4bd4c,1,#hash_b6b948aac4bd4c,3,0,u9?0
+30015,#contract_zm_pack_a_punch,1,#contract_zm_pack_a_punch,3,0,u9?0
 30016,#contract_zm_shield_kills,1,#contract_zm_shield_kills,3,0,u9?0
 30017,#contract_zm_perks,1,#contract_zm_perks,3,0,u9?0
 30018,#contract_zm_magicbox,1,#contract_zm_magicbox,3,0,u9?0

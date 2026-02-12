@@ -474,7 +474,7 @@ function get_stat_challenge( statname )
 // Params 1
 // Checksum 0xc7f22abc, Offset: 0x1298
 // Size: 0x3a
-function function_af5584ca( statname )
+function get_stat_challenge_tier( statname )
 {
     return self get_stat( #"playerstatslist", statname, #"challengetier" );
 }
@@ -483,7 +483,7 @@ function function_af5584ca( statname )
 // Params 2
 // Checksum 0x2b3e299a, Offset: 0x12e0
 // Size: 0x5a, Type: bool
-function function_8e071909( statname, value )
+function set_stat_challenge_tier( statname, value )
 {
     if ( !function_f94325d3() )
     {
@@ -497,7 +497,7 @@ function function_8e071909( statname, value )
 // Params 1
 // Checksum 0xd26fae90, Offset: 0x1348
 // Size: 0x52
-function function_878e75b7( statname )
+function get_stat_challenge_gametype( statname )
 {
     return self get_stat( #"playerstatsbygametype", util::get_gametype_name(), statname, #"challengevalue" );
 }

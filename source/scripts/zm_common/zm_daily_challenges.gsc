@@ -200,7 +200,7 @@ function death_check_for_challenge_updates( e_attacker )
                 
                 break;
             case #"miniboss":
-                e_attacker zm_stats::increment_challenge_stat( #"hash_258c10d310bf4203" );
+                e_attacker zm_stats::increment_challenge_stat( #"zm_daily_kills_miniboss" );
                 
                 /#
                     debug_print( "<dev string:x128>" );
@@ -246,7 +246,7 @@ function death_check_for_challenge_updates( e_attacker )
             
             break;
         case #"stoker":
-            e_attacker zm_stats::increment_challenge_stat( #"hash_2eb016a9af7e8a3" );
+            e_attacker zm_stats::increment_challenge_stat( #"zm_daily_kills_stoker" );
             
             /#
                 debug_print( "<dev string:x1c3>" );
@@ -344,7 +344,7 @@ function death_check_for_challenge_updates( e_attacker )
     
     if ( zm_loadout::is_hero_weapon( w_damage ) )
     {
-        e_attacker zm_stats::increment_challenge_stat( #"hash_730e40ef22de352" );
+        e_attacker zm_stats::increment_challenge_stat( #"zm_daily_kills_hero_weapon" );
         
         /#
             debug_print( "<dev string:x2bc>" );
@@ -489,7 +489,7 @@ function earned_points_tracking()
         }
         else
         {
-            player zm_stats::increment_challenge_stat( #"hash_67970ded10f84169", n_points, 1 );
+            player zm_stats::increment_challenge_stat( #"zm_daily_earn_points", n_points, 1 );
         }
         
         /#

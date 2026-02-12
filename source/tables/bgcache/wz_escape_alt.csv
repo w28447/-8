@@ -1376,7 +1376,7 @@ gesturetable,#hash_73c524ecdadd3e26
 gesturetable,#hash_7e54e4c0fdc5b747
 gesturetable,#hash_7e8743a2c914c5a2
 rumble,#hash_449520f94829141
-rumble,#hash_4ceacd890f3b6ec
+rumble,#reload_clipin
 rumble,#defaultweapon_melee
 rumble,#grenade_launcher_fire
 rumble,#hash_fabc1315d6d6be0
@@ -7082,7 +7082,7 @@ string,#zmui/fmj_desc
 string,#hash_38a2cf22c48d6c3
 string,#hash_40c47b72c083914
 string,#hash_43b319457bc818e
-string,#hash_47e1955bea1fc19
+string,#mpui/camo_flectarn
 string,#wz/attach_extbarrel
 string,#hash_4938f240cc79a5a
 string,#hash_4baf5d49abad672
@@ -7124,7 +7124,7 @@ string,#mpui/ir
 string,#mpui/is
 string,#mpui/gl
 string,#mpui/dw
-string,#hash_11844df90c43c32c
+string,#mpui/camo_dante
 string,#mpui/sf
 string,#mpui/rf
 string,#hash_11cfa6d5f521dede
@@ -7142,7 +7142,7 @@ string,#weapon/ar_galil_t8
 string,#hash_14b9981c6e3d2f76
 string,#weapon/gadget_cleanse
 string,#weapon/ar_peacekeeper_t8
-string,#hash_15b50559752dd744
+string,#mpui/camo_redhex
 string,#hash_15cf0d46af70291b
 string,#mpui/null
 string,#hash_161c216ed83a1283
@@ -7166,7 +7166,7 @@ string,#hash_1baf554773e559a1
 string,#hash_1bf992decba13b2b
 string,#hash_1c067a1967345eb9
 string,#hash_1c07c87a45375aaf
-string,#hash_1c93858d6991c626
+string,#mpui/camo_integer
 string,#zmui/mms_desc
 string,#mpui/steadyaim2
 string,#hash_1ec02a95496f3883
@@ -7189,10 +7189,10 @@ string,#hash_23184906a849ac54
 string,#hash_239b4d30eb78175e
 string,#wz/attach_stock
 string,#weapon/sig_blade
-string,#hash_23d45d79e7cc975d
+string,#mpui/camo_jungle
 string,#mpui/dualoptic_desc
 string,#weapon/ar_an94_t8
-string,#hash_2462544f3066322a
+string,#mpui/camo_huntsman
 string,#hash_246c7d9118b22299
 string,#hash_24a3e0f402bfd000
 string,#hash_24c9561478db5594
@@ -7211,7 +7211,7 @@ string,#hash_26adc6b84f143b29
 string,#hash_27ca9e9ddb30522a
 string,#mpui/fmj2_desc
 string,#hash_28f8d698fe4d79d2
-string,#hash_2903042e98504cc7
+string,#zmui/high_caliber_2_desc
 string,#mpui/holdbreath_desc
 string,#hash_29965b65bca9cd7b
 string,#weapon/sniper_powersemi_t8
@@ -7225,7 +7225,7 @@ string,#hash_2b0fae1c09a3d8a9
 string,#hash_2b2096d421c8cd24
 string,#hash_2b27d20d2cfc1069
 string,#hash_2b3d791eb05ec296
-string,#hash_2b40461a235c9616
+string,#mpui/camo_ardent
 string,#mpui/acog_desc
 string,#hash_2b9883e118f9fa0b
 string,#weapon/sniper_quickscope_t8_operator
@@ -7243,7 +7243,7 @@ string,#mpui/reflex
 string,#weapon/melee_coinbag_t8
 string,#hash_2f3db08411548b58
 string,#hash_2f6eb9c102b831ad
-string,#hash_2f75827412f48897
+string,#mpui/camo_burnt
 string,#hash_2f951a0817f78b9d
 string,#mpui/fmj2
 string,#hash_3041bf105b58c16a
@@ -7256,7 +7256,7 @@ string,#weapon/ar_standard_t8
 string,#hash_3262d00bd8c46e0d
 string,#hash_3279150dc6bd1b3b
 string,#hash_328a07093267e5d5
-string,#hash_3292e34998476e76
+string,#mpui/camo_snowjob
 string,#weapon/sig_bow
 string,#hash_33105d49e7fd102e
 string,#hash_33c5a3d6ed967788
@@ -7301,7 +7301,7 @@ string,#hash_3de8e053a2e6c69b
 string,#hash_3dfd2cf9c5589207
 string,#hash_3e42591da1c1538f
 string,#mpui/steadyaim_desc
-string,#hash_3e968f73a7d7e44e
+string,#mpui/camo_chameleon
 string,#mpui/gl_desc
 string,#hash_3ee20f103a454178
 string,#hash_3ef744e8fe8025ee
@@ -7323,10 +7323,10 @@ string,#weapon/tr_powersemi_t8
 string,#hash_42b309155f05e081
 string,#mpui/supply
 string,#hash_43374b5ab9becdaa
-string,#hash_4361bc63de0848d3
+string,#mpui/camo_jungletek
 string,#zombie/cymbal_monkey
 string,#hash_43b0cfc850dbcc04
-string,#hash_44149fa37d4d853f
+string,#mpui/camo_bliss
 string,#mpui/suppressed
 string,#hash_452fd06faf792671
 string,#hash_453ecbd9693dd1d3
@@ -7350,7 +7350,7 @@ string,#hash_4973da5ba484b2ae
 string,#weapon/melee_stopsign_t8
 string,#hash_499b538a67933900
 string,#hash_49e88c8053d4f73e
-string,#hash_4a324d42cf256472
+string,#mpui/camo_heatstroke
 string,#weapon/lmg_spray_t8_operator
 string,#hash_4a584bc8c443f246
 string,#hash_4a6f079813e273c3
@@ -7369,7 +7369,7 @@ string,#mpui/sf_desc
 string,#hash_4f0d8ebb363015e0
 string,#hash_4f23c6ecb321fa19
 string,#weapon/sniper_powerbolt_t8
-string,#hash_502cca55de20d536
+string,#mpui/camo_fear
 string,#weapon/tr_powersemi_operator
 string,#weapon/sensor_dart
 string,#hash_506621193b404166
@@ -7389,7 +7389,7 @@ string,#hash_552e95261f2d04be
 string,#weapon/lmg_double_t8
 string,#zmui/extrapellets_desc
 string,#hash_556fbdaebf02d158
-string,#hash_56074383a6c3b738
+string,#zmui/high_caliber_desc
 string,#hash_560d002c6e40e5df
 string,#hash_561a6371fe1e6f3a
 string,#weapon/basketball
@@ -7406,12 +7406,12 @@ string,#weapon/smg_standard_t8
 string,#mpui/grip2
 string,#weapon/tr_longburst_t8
 string,#mpui/hipgrip
-string,#hash_5abca820cfab2cd8
+string,#mpui/camo_arctic
 string,#hash_5acae5f224c146a9
 string,#mpui/adsreload
 string,#hash_5b1189ff13cd8b59
 string,#weapon/sniper_damagesemi_t8
-string,#hash_5b7536f294f156a6
+string,#mpui/camo_battle
 string,#weapon/hero_pineapplegun
 string,#hash_5c28147c226eb600
 string,#weapon/sniper_locus_t8
@@ -7423,7 +7423,7 @@ string,#hash_5dc620aa9640e528
 string,#hash_5e2c81adb5a5264a
 string,#hash_5e6231434add15a2
 string,#hash_5e6ae4119dda43e0
-string,#hash_5ec68d99caf17930
+string,#mpui/camo_contagious
 string,#hash_5f17105e484faba8
 string,#mpui/extrapellets_desc
 string,#hash_5ff76c7784c93de4
@@ -7432,7 +7432,7 @@ string,#weapon/ar_stealth_t8_operator
 string,#hash_6063cd6ae0f6ce28
 string,#hash_607993fb651c3014
 string,#zmweapon/spork_knife
-string,#hash_60a2e99cf0e191e1
+string,#mpui/camo_interpol
 string,#mpui/extbarrel2_desc
 string,#hash_60aeeec1490ce332
 string,#zmui/barrelchoke_desc
@@ -7444,7 +7444,7 @@ string,#hash_628b6122d68a8d45
 string,#hash_629d187300caa85d
 string,#hash_62b7667af7867ca0
 string,#hash_6370b5a97249c317
-string,#hash_639a907fae7467b1
+string,#mpui/camo_6speed
 string,#weapon/shotgun_fullauto_t8
 string,#mpui/clantag
 string,#killstreak/invalid_location
@@ -7487,7 +7487,7 @@ string,#weapon/tr_leveraction_t8
 string,#hash_6c8d7834e1591a50
 string,#weapon/smg_accurate_t8_operator
 string,#weapon/tr_midburst_t8
-string,#hash_6d832831f5532f00
+string,#mpui/camo_wmd
 string,#hash_6e155a8da74ae1b6
 string,#killstreak/dart_desc
 string,#hash_6e2fd7423cbe42b0
@@ -7523,7 +7523,7 @@ string,#hash_758d93baadbc199d
 string,#wz/attach_fastmag
 string,#hash_75910f89d3c7bccc
 string,#hash_75c36a6b651e7775
-string,#hash_7664f631b276facc
+string,#mpui/camo_ash
 string,#hash_768c5aeecc2d7cc4
 string,#mpui/grip2_desc
 string,#weapon/lmg_stealth_t8
@@ -7555,7 +7555,7 @@ string,#mpui/mms
 string,#hash_7d24166bf7f8b2f7
 string,#hash_7d3e69af1a992cec
 string,#hash_7d4c19fb8173c5ee
-string,#hash_7db4187f695ce2a6
+string,#mpui/camo_woodlums
 string,#weapon/hawk
 string,#hash_7dbf9926c8866a51
 string,#weapon/smg_minigun_t8
@@ -7679,7 +7679,7 @@ soundalias,#evt_skydive_parachute_open
 soundalias,#hash_c36768f32b12846
 soundalias,#hash_c77575655235ebb
 soundalias,#hash_c96d25e393dd132
-soundalias,#hash_cc693b3173e7565
+soundalias,#exp_concussive_large
 soundalias,#hash_d6fe5a5829acf43
 soundalias,#hash_d956db2a914514e
 soundalias,#hash_da0ce4ac0e1c127
@@ -8044,7 +8044,7 @@ soundalias,#hash_5f4703a1c4ae8b1b
 soundalias,#hash_5f82ba2378a02a6a
 soundalias,#fly_pickup_armor_light
 soundalias,#hash_5f99276d742fee75
-soundalias,#hash_5fb0f9207a4ac1fb
+soundalias,#amb_rope_creak
 soundalias,#fly_pickup_paintcan
 soundalias,#hash_5fbc57fe7327e948
 soundalias,#hash_5fe2ed383ca518d2
@@ -8083,7 +8083,7 @@ soundalias,#hash_648df838ffb718fe
 soundalias,#evt_elevator_button_bell
 soundalias,#evt_skydive_wind_heavy
 soundalias,#hash_6560397aabc76c2f
-soundalias,#hash_66aa6b049c23fa3f
+soundalias,#exp_incindiary_large
 soundalias,#amb_buoy
 soundalias,#hash_66edd342df7791fd
 soundalias,#hash_672528a60ddbd2d7
@@ -8364,7 +8364,7 @@ client_fx,#hash_20b6c2a57c7b374f
 client_fx,#hash_2147dab1373ff1d8
 client_fx,#hash_21676a58d92eb053
 client_fx,#hash_21e2ff6136bedeca
-client_fx,#hash_21f397376b81d9ef
+client_fx,#impacts/fx_bul_impact_blood_body_fatal
 client_fx,#hash_21f9281b0c6faa93
 client_fx,#hash_22422ba79bd4eaaa
 client_fx,#hash_224ed66be5768225
@@ -8374,14 +8374,14 @@ client_fx,#hash_247c28b43c001b30
 client_fx,#hash_24886715795bf94d
 client_fx,#hash_248afd498edf55f3
 client_fx,#hash_2494713158da09ea
-client_fx,#hash_249f091d13da3663
+client_fx,#zm_ai/fx8_dog_eye_glow
 client_fx,#hash_24e2c7fb0b7375eb
 client_fx,#hash_24fb9f1cba33a365
 client_fx,#hash_251b3417b0b3f2c8
 client_fx,#player/fx8_plyr_emote_homunc_green_end
 client_fx,#hash_257cab7973b26272
 client_fx,#hash_2595016468b075ce
-client_fx,#hash_25a99eb176affd8d
+client_fx,#explosions/fx_exp_equipment_lg
 client_fx,#hash_25c1e3b03689a0aa
 client_fx,#hash_25c81e489c5f97e0
 client_fx,#hash_260d3851e5c54b7e
@@ -8491,7 +8491,7 @@ client_fx,#hash_3dc7d36c5af8f770
 client_fx,#hash_3dcedf6c5aff2a82
 client_fx,#hash_3e014af37ce6e996
 client_fx,#hash_3e0e5fc58a3259eb
-client_fx,#hash_3e78af902f84621e
+client_fx,#explosions/fx_vexp_hunter_death
 client_fx,#hash_3e98cf73d20c60bb
 client_fx,#hash_3e99f483a765a91e
 client_fx,#hash_3f210a924e439b20
@@ -8738,7 +8738,7 @@ client_fx,#hash_6cc41a3d453701d3
 client_fx,#hash_6cd2fb29bb0f309f
 client_fx,#hash_6d0b462715d6d1e8
 client_fx,#hash_6d1df188763b8ed2
-client_fx,#hash_6d27931954af2ff1
+client_fx,#weapon/fx_muz_veh_minigun_lg_3p
 client_fx,#hash_6d42a10bff69a7cc
 client_fx,#hash_6d49ad0bff6fdade
 client_fx,#hash_6d9a36ac32c18d74

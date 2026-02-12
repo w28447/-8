@@ -31,8 +31,8 @@ function __init__()
 // Params 1
 // Checksum 0x5bac26ab, Offset: 0x128
 // Size: 0x3c
-function function_4a9c8bba( var_d90c942a )
+function function_4a9c8bba( radiationweapon )
 {
-    self battlechatter::function_bd715920( var_d90c942a, undefined, self geteye(), self );
+    self battlechatter::function_bd715920( radiationweapon, undefined, self geteye(), self );
 }
 

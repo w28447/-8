@@ -4995,24 +4995,24 @@ function function_8aab5d53( player, var_55716d54 )
     
     while ( isdefined( player ) && isdefined( player.vh_vehicle ) )
     {
-        var_42775dfe = 0;
+        boostcooldown = 0;
         
         if ( player function_b835102b() )
         {
-            var_42775dfe = player function_dd63190a();
+            boostcooldown = player function_dd63190a();
         }
         else
         {
-            var_759ec838 = player getvehicleboosttime();
+            boosttime = player getvehicleboosttime();
             boosttimeleft = player getvehicleboosttimeleft();
             
-            if ( var_759ec838 > 0 )
+            if ( boosttime > 0 )
             {
-                var_42775dfe = boosttimeleft / var_759ec838;
+                boostcooldown = boosttimeleft / boosttime;
             }
         }
         
-        player clientfield::set_player_uimodel( "vehicle.bindingCooldown" + var_55716d54 + ".cooldown", var_42775dfe );
+        player clientfield::set_player_uimodel( "vehicle.bindingCooldown" + var_55716d54 + ".cooldown", boostcooldown );
         wait 0.05;
     }
 }

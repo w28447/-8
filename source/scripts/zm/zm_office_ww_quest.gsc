@@ -401,7 +401,7 @@ function function_9257b202( e_player )
     
     if ( zm_vo::is_player_valid( e_player ) )
     {
-        e_player zm_vo::function_a2bd5a0c( #"hash_7fe91aa83c27c4b8", undefined, 1 );
+        e_player zm_vo::function_a2bd5a0c( #"vox_code_sequence_complete", undefined, 1 );
     }
 }
 
@@ -560,7 +560,7 @@ function function_36664799()
             
             level.s_ww_quest_reward.var_c2b00281 delete();
             e_player notify( #"hash_5a48f79b359c304" );
-            e_player thread zm_vo::function_a2bd5a0c( #"hash_71ef2a712e8d604e" );
+            e_player thread zm_vo::function_a2bd5a0c( #"vox_box_wonder" );
             zm_weapons::add_limited_weapon( w_freezegun.name, 2 );
             exploder::stop_exploder( "fx_project_skadi_cold_mist" );
             zm_unitrigger::unregister_unitrigger( self.stub );

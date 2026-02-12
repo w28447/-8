@@ -2493,7 +2493,7 @@ function function_223ff464()
         
         for ( index = 0; index < marksmanarray.size ; index++ )
         {
-            if ( self stats::function_af5584ca( marksmanarray[ index ] ) === 1 )
+            if ( self stats::get_stat_challenge_tier( marksmanarray[ index ] ) === 1 )
             {
                 self stats::function_dad108fa( #"mastery_marksman", 1 );
             }
@@ -2526,7 +2526,7 @@ function function_f4106216()
 {
     if ( !( self stats::get_stat( #"playerstatslist", #"hash_195a18a5697c5c96" ) === 1 ) )
     {
-        challengetier = self stats::function_af5584ca( "shutdown_gravslam_before_impact" );
+        challengetier = self stats::get_stat_challenge_tier( "shutdown_gravslam_before_impact" );
         
         if ( !isdefined( challengetier ) )
         {
@@ -2535,7 +2535,7 @@ function function_f4106216()
         
         if ( challengetier > 0 )
         {
-            self stats::function_8e071909( "stats_gravity_slam_shutdown", challengetier );
+            self stats::set_stat_challenge_tier( "stats_gravity_slam_shutdown", challengetier );
         }
         
         challengevalue = self stats::get_stat_challenge( "shutdown_gravslam_before_impact" );

@@ -24,9 +24,9 @@
 #using scripts\zm_common\zm_weapons;
 #using scripts\zm_common\zm_zonemgr;
 
-#namespace namespace_b99141ed;
+#namespace fast_travel_hellholes;
 
-// Namespace namespace_b99141ed/zm_escape_fast_travel_hellholes
+// Namespace fast_travel_hellholes/zm_escape_fast_travel_hellholes
 // Params 0
 // Checksum 0x71b47f43, Offset: 0x318
 // Size: 0x17a
@@ -54,7 +54,7 @@ function init()
     level.var_a38d293a = 22;
 }
 
-// Namespace namespace_b99141ed/zm_escape_fast_travel_hellholes
+// Namespace fast_travel_hellholes/zm_escape_fast_travel_hellholes
 // Params 0
 // Checksum 0x46f418e9, Offset: 0x4a0
 // Size: 0x44
@@ -63,7 +63,7 @@ function init_clientfields()
     clientfield::register( "toplayer", "" + #"hash_275c4e6783b917f8", 1, 1, "int" );
 }
 
-// Namespace namespace_b99141ed/zm_escape_fast_travel_hellholes
+// Namespace fast_travel_hellholes/zm_escape_fast_travel_hellholes
 // Params 0
 // Checksum 0x69e82707, Offset: 0x4f0
 // Size: 0xe
@@ -72,7 +72,7 @@ function function_cdbbf1ee()
     self.var_9c7b96ed = [];
 }
 
-// Namespace namespace_b99141ed/zm_escape_fast_travel_hellholes
+// Namespace fast_travel_hellholes/zm_escape_fast_travel_hellholes
 // Params 0
 // Checksum 0x7ceebdad, Offset: 0x508
 // Size: 0x20a
@@ -112,7 +112,7 @@ function function_b6a3df03()
     }
 }
 
-// Namespace namespace_b99141ed/zm_escape_fast_travel_hellholes
+// Namespace fast_travel_hellholes/zm_escape_fast_travel_hellholes
 // Params 2
 // Checksum 0xd7338e60, Offset: 0x720
 // Size: 0x7a8
@@ -271,7 +271,7 @@ function function_c52e8ba( player, var_8d5d092c )
     return b_result;
 }
 
-// Namespace namespace_b99141ed/zm_escape_fast_travel_hellholes
+// Namespace fast_travel_hellholes/zm_escape_fast_travel_hellholes
 // Params 1
 // Checksum 0x6a542e5d, Offset: 0xed0
 // Size: 0xae
@@ -296,7 +296,7 @@ function function_640bb879( e_unitrigger )
     return n_cost;
 }
 
-// Namespace namespace_b99141ed/zm_escape_fast_travel_hellholes
+// Namespace fast_travel_hellholes/zm_escape_fast_travel_hellholes
 // Params 1
 // Checksum 0x2abc47e9, Offset: 0xf88
 // Size: 0x3ec
@@ -367,7 +367,7 @@ function function_47dec08f( e_unitrigger )
     self thread function_402d070f();
 }
 
-// Namespace namespace_b99141ed/zm_escape_fast_travel_hellholes
+// Namespace fast_travel_hellholes/zm_escape_fast_travel_hellholes
 // Params 0, eflags: 0x4
 // Checksum 0x51c5ed88, Offset: 0x1380
 // Size: 0x9e
@@ -382,7 +382,7 @@ function private function_f789d6ed()
     level.var_f49050a9 = undefined;
 }
 
-// Namespace namespace_b99141ed/zm_escape_fast_travel_hellholes
+// Namespace fast_travel_hellholes/zm_escape_fast_travel_hellholes
 // Params 0
 // Checksum 0x7d217858, Offset: 0x1428
 // Size: 0x62
@@ -396,7 +396,7 @@ function function_fa3bdfb7()
     return s_spawn_loc;
 }
 
-// Namespace namespace_b99141ed/zm_escape_fast_travel_hellholes
+// Namespace fast_travel_hellholes/zm_escape_fast_travel_hellholes
 // Params 0, eflags: 0x4
 // Checksum 0x287c10a7, Offset: 0x1498
 // Size: 0xcc
@@ -421,7 +421,7 @@ function private function_c179676a()
     self switchtoweaponimmediate( w_current, 1 );
 }
 
-// Namespace namespace_b99141ed/zm_escape_fast_travel_hellholes
+// Namespace fast_travel_hellholes/zm_escape_fast_travel_hellholes
 // Params 0, eflags: 0x4
 // Checksum 0x72b97317, Offset: 0x1570
 // Size: 0x84
@@ -433,7 +433,7 @@ function private function_402d070f()
     self clientfield::set_to_player( "" + #"hash_275c4e6783b917f8", 0 );
 }
 
-// Namespace namespace_b99141ed/zm_escape_fast_travel_hellholes
+// Namespace fast_travel_hellholes/zm_escape_fast_travel_hellholes
 // Params 1
 // Checksum 0x129f2cd6, Offset: 0x1600
 // Size: 0x96
@@ -454,7 +454,7 @@ function function_d7af842d( e_unitrigger )
     return var_d5376a79;
 }
 
-// Namespace namespace_b99141ed/zm_escape_fast_travel_hellholes
+// Namespace fast_travel_hellholes/zm_escape_fast_travel_hellholes
 // Params 5
 // Checksum 0xae59a495, Offset: 0x16a0
 // Size: 0x1e2
@@ -494,7 +494,7 @@ function function_429e121c( var_5cc91e3c, var_8d5d092c, var_67cba496, var_374f0c
     }
 }
 
-// Namespace namespace_b99141ed/zm_escape_fast_travel_hellholes
+// Namespace fast_travel_hellholes/zm_escape_fast_travel_hellholes
 // Params 2
 // Checksum 0x2dab3409, Offset: 0x1890
 // Size: 0x116
@@ -527,7 +527,7 @@ function function_eef4fa8c( var_8d5d092c, var_418e2265 )
     }
 }
 
-// Namespace namespace_b99141ed/zm_escape_fast_travel_hellholes
+// Namespace fast_travel_hellholes/zm_escape_fast_travel_hellholes
 // Params 0
 // Checksum 0xd884c493, Offset: 0x19b0
 // Size: 0x34

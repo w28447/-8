@@ -56,7 +56,7 @@ function __init__()
     level thread aat::register_immunity( "zm_aat_plasmatic_burst", #"zombie_dog", 0, 1, 1 );
     dog_spawner_init();
     level thread dog_clip_monitor();
-    zm_round_spawning::register_archetype( #"zombie_dog", &function_b168b424, &dog_round_spawn, &function_62db7b1c, 25 );
+    zm_round_spawning::register_archetype( #"zombie_dog", &function_b168b424, &dog_round_spawn, &spawn_single_dog, 25 );
     zm_score::function_e5d6e6dd( #"zombie_dog", 60 );
     callback::function_74872db6( &function_81f9083e );
 }
@@ -948,7 +948,7 @@ function function_b168b424( var_dbce0c44 )
 // Size: 0x3c, Type: bool
 function dog_round_spawn()
 {
-    ai = function_62db7b1c();
+    ai = spawn_single_dog();
     
     if ( isdefined( ai ) )
     {
@@ -963,7 +963,7 @@ function dog_round_spawn()
 // Params 2
 // Checksum 0xd5e55241, Offset: 0x2d40
 // Size: 0x900
-function function_62db7b1c( b_force_spawn = 0, var_eb3a8721 )
+function spawn_single_dog( b_force_spawn = 0, var_eb3a8721 )
 {
     if ( !b_force_spawn && !function_c1faf4d5() )
     {

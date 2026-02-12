@@ -325,7 +325,7 @@ localizeentry,d#hash_68d9a667406d9e2e
 localizeentry,#hash_68e088397871d66a
 localizeentry,#hash_68e57135d661fd2f
 localizeentry,#hash_68f33faa5abddd73
-localizeentry,#hash_69256172c78db147
+localizeentry,#zombie/powerup_small_ammo
 localizeentry,#zombie/perk_slider
 localizeentry,#hash_6942dfa9737b6ac8
 localizeentry,#zombie/perk_cooldown
@@ -365,7 +365,7 @@ localizeentry,#hash_765b6a6e9523c15a
 localizeentry,#hash_7667bd0f83307360
 localizeentry,#hash_767128c196a4a356
 localizeentry,d#hash_7693de01f82d93f0
-localizeentry,#hash_774207d74b355a8a
+localizeentry,#zombie/powerup_double_points
 localizeentry,#hash_782714d88bdaa1b6
 localizeentry,#hash_78597c05547d1f2d
 localizeentry,#hash_791fe9da17cf7059

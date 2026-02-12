@@ -1133,7 +1133,7 @@ function function_dab36dc8()
 // Params 1
 // Checksum 0x2ebe2527, Offset: 0x3b08
 // Size: 0x6a6
-function bleed_out( var_40d90c02 )
+function bleed_out( squad_wipe )
 {
     self endon( #"player_revived", #"death", #"disconnect" );
     self thread function_dab36dc8();
@@ -1171,7 +1171,7 @@ function bleed_out( var_40d90c02 )
         var_620529b4 thread globallogic_score::givekillstats( self.laststandparams.smeansofdeath, self.laststandparams.sweapon, self, var_620529b4 );
         var_620529b4 clientfield::set_player_uimodel( "hudItems.playerKills", var_620529b4.kills );
         
-        if ( var_40d90c02 )
+        if ( squad_wipe )
         {
             function_f887b191( self, var_620529b4, 0, 4 );
         }

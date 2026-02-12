@@ -26,7 +26,7 @@ function autoexec init()
 {
     registerbehaviorscriptfunctions();
     spawner::add_archetype_spawn_function( #"skeleton", &function_f31535d8 );
-    spawner::add_archetype_spawn_function( #"skeleton", &function_a1acece9 );
+    spawner::add_archetype_spawn_function( #"skeleton", &archetypeskeletoninit );
     level.var_cc1828c = [ #"walk":4 ];
 }
 
@@ -72,7 +72,7 @@ function private registerbehaviorscriptfunctions()
 // Params 0, eflags: 0x4
 // Checksum 0x88ea9986, Offset: 0x4f8
 // Size: 0x29c
-function private function_a1acece9()
+function private archetypeskeletoninit()
 {
     self.ignorepathenemyfightdist = 1;
     self.cant_move_cb = &zombiebehavior::function_79fe956f;
@@ -82,18 +82,18 @@ function private function_a1acece9()
     self setup_variant_type();
     self callback::function_d8abfc3d( #"hash_dfbeaa068b23e7c", &setup_variant_type );
     
-    if ( self.subarchetype == #"hash_fd7b9665529dd42" )
+    if ( self.subarchetype == #"skeleton_helmet_sword_and_shield" )
     {
         self attach( #"c_t8_zmb_dlc2_skeleton_helmet", "j_head" );
         self attach( #"c_t8_zmb_dlc2_skeleton_sword", "tag_weapon_right" );
         self attach( #"c_t8_zmb_dlc2_skeleton_shield", "tag_weapon_left" );
     }
-    else if ( self.subarchetype == #"hash_1520c8987a671df0" )
+    else if ( self.subarchetype == #"skeleton_helmet_spear" )
     {
         self attach( #"c_t8_zmb_dlc2_skeleton_helmet", "j_head" );
         self attach( #"c_t8_zmb_dlc2_skeleton_spear", "tag_weapon_right" );
     }
-    else if ( self.subarchetype == #"hash_342763a42d8fbca" )
+    else if ( self.subarchetype == #"skeleton_sword_and_shield" )
     {
         self attach( #"c_t8_zmb_dlc2_skeleton_sword", "tag_weapon_right" );
         self attach( #"c_t8_zmb_dlc2_skeleton_shield", "tag_weapon_left" );

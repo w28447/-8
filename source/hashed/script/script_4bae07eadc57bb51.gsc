@@ -963,7 +963,7 @@ function dog_ambush()
             }
         }
         
-        e_dog = zombie_dog_util::function_62db7b1c( 0, array::random( var_4974e492 ) );
+        e_dog = zombie_dog_util::spawn_single_dog( 0, array::random( var_4974e492 ) );
         
         if ( isdefined( e_dog ) )
         {
@@ -1122,7 +1122,7 @@ function function_8039854f()
     if ( a_players.size > 0 )
     {
         e_player = array::random( a_players );
-        e_player thread zm_vo::function_a2bd5a0c( #"hash_52de71efb1e8de2b", undefined, 1 );
+        e_player thread zm_vo::function_a2bd5a0c( #"vox_groom_lake_arrive", undefined, 1 );
     }
     
     self function_55ca39d8();

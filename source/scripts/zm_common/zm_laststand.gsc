@@ -1282,9 +1282,9 @@ function function_76043ec3()
                 }
             }
             
-            if ( isdefined( self.var_ff5f8752 ) )
+            if ( isdefined( self.selfrevivevox ) )
             {
-                self thread zm_audio::create_and_play_dialog( #"revive", self.var_ff5f8752 );
+                self thread zm_audio::create_and_play_dialog( #"revive", self.selfrevivevox );
             }
             
             self thread auto_revive( self, 1, 1 );
@@ -1546,19 +1546,19 @@ function function_8fd9d8b9( e_reviver )
     self endon( #"death" );
     zm_vo::vo_stop();
     
-    if ( e_reviver === self && isdefined( self.var_ff5f8752 ) )
+    if ( e_reviver === self && isdefined( self.selfrevivevox ) )
     {
         self.last_vo_played_time = 0;
-        zm_audio::create_and_play_dialog( #"revive", self.var_ff5f8752 );
+        zm_audio::create_and_play_dialog( #"revive", self.selfrevivevox );
     }
     
     self notify( #"hash_1fe68a6b935c321d", { #reviver:e_reviver } );
     
     if ( !isdefined( self.var_6d772cb ) && !( isdefined( self.var_54cb40e6 ) && self.var_54cb40e6 ) )
     {
-        if ( isplayer( e_reviver ) && isdefined( e_reviver.var_c107ed3 ) )
+        if ( isplayer( e_reviver ) && isdefined( e_reviver.supportvox ) )
         {
-            self thread zm_audio::create_and_play_dialog( #"revive", e_reviver.var_c107ed3, undefined, 1 );
+            self thread zm_audio::create_and_play_dialog( #"revive", e_reviver.supportvox, undefined, 1 );
         }
     }
 }

@@ -27934,7 +27934,7 @@ behaviorstatemachine,#hash_35f6c92c54af5866
 behaviorstatemachine,#hash_4069d2ce0a56ea8e
 behaviorstatemachine,#hash_40b21eded7004351
 behaviorstatemachine,#hash_4b834f94f3beb8a7
-behaviorstatemachine,#hash_63b6c9dc46276bb3
+behaviorstatemachine,#zm_blight_father_locomotion.ai_bsm
 ttf,d#hash_1a8171252437b019
 ttf,d#hash_495d9aa3ae4fa2a8
 ttf,d#hash_5f6a0e624346a9d9
@@ -30088,7 +30088,7 @@ material,#mc/mtl_c_t8_zmb_dlc2_gegenees_bone_sword
 material,d#hash_15fb8e3297221611
 material,d#ei/gfx_smk_whisp_anim_02_high_gray_lit
 material,d#hash_15ff0e3297252568
-material,#hash_16026d20e691b59d
+material,#generic_filter_zm_wormhole
 material,d#hash_160282329728205b
 material,#hash_160b33509376d2bd
 material,d#ei/gfx_gib_glass_02_lit
@@ -34809,7 +34809,7 @@ physpreset,d#hash_406e3357a210075d
 physpreset,#hash_46350949ad443fa7
 physpreset,#hash_5023e52287f5a333
 physpreset,d#gib
-physpreset,#hash_695e6bd10c7f85e8
+physpreset,#p7_food_fruit
 physpreset,#p7_vase_clay_egyptian_01
 physpreset,#hash_6fe1e89bffc046df
 physpreset,#p7_basket_wicker_01
@@ -35773,7 +35773,7 @@ xmodel,#p7_foliage_leaves_ivy_dead_32x32
 xmodel,#p7_foliage_leaves_ivy_dead_32x16
 xmodel,#c_t8_zmb_dlc2_zombie_male_body4_skin3
 xmodel,#c_t8_zmb_dlc2_zombie_male_body4_skin2
-xmodel,#hash_2e4fec9ed26690ce
+xmodel,#wpn_t7_zmb_dlc2_shield_dmg01_view
 xmodel,#p8_ice_rock_pile_02_dark
 xmodel,#hash_2e5a94408fefc57d
 xmodel,#p8_foliage_flower_spanish_bluebell_med_b
@@ -36118,7 +36118,7 @@ xmodel,#p8_zm_red_statue_king_01_bronze
 xmodel,#hash_3e9aca2f85523d28
 xmodel,#p8_zm_red_archimedes_mirror
 xmodel,#hash_3eb235e18cf92f86
-xmodel,#hash_3ebb082a36ccc8d2
+xmodel,#wpn_t7_zmb_dlc2_shield_view
 xmodel,#p8_marble_statue_05
 xmodel,#p8_marble_statue_01
 xmodel,#p8_stairs_stone_set_01_step_connector
@@ -40031,7 +40031,7 @@ scriptbundle,#fxb8_zm_char_cata_cor
 scriptbundle,#p8_fxanim_zm_red_wall_roots_01_bundle
 scriptbundle,#p8_fxanim_zm_red_gaia_spikes_bundle
 scriptbundle,d#c_t8_zmb_3rdclass_male_gib_def
-animmappingtable,#hash_4aa266d36b656264
+animmappingtable,#zm_catalyst_corrosive.ai_am
 statuseffect,#hash_12a64221f4d27f9b
 beam,#hash_5951cbcebc33e477
 beam,#beam8_zm_red_peg_lightning_strike
@@ -40118,7 +40118,7 @@ aitype,#spawner_zm_zombie_red_female2
 aitype,#spawner_zm_zombie
 aitype,#spawner_zm_zombie_red_female_body2_skin2
 character,#c_t8_zmb_catalyst_electric
-character,#hash_6c258fe575114eac
+character,#c_zom_der_zombie2
 scriptbundle,#cin_zm_red_mid
 scriptbundle,#aib_vign_cust_red_gegn_snake_jump
 scriptbundle,#aib_vign_cust_zm_red_gegn_spear_intro
@@ -40166,7 +40166,7 @@ scriptbundle,#zblueprint_red_strike
 fx,#hash_5377c7cab22b323f
 scriptbundle,#ztable_red_strike
 xanim,#ai_t8_zm_zod_catalyst_electric_death_01
-animmappingtable,#hash_5c0107e7c1ad341b
+animmappingtable,#zm_catalyst_electric.ai_am
 aitype,#spawner_zm_catalyst_electric
 entitylist,#maps/zm/zm_red.d3dbsp
 col_map,#maps/zm/zm_red.d3dbsp

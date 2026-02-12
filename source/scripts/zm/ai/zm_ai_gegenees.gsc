@@ -804,7 +804,7 @@ function private gegeneestargetservice( entity )
     
     entity.zombie_poi = entity zm_utility::get_zombie_point_of_interest( entity.origin );
     entity zombie_utility::run_ignore_player_handler();
-    entity.favoriteenemy = entity.var_93a62fe;
+    entity.favoriteenemy = entity.closest_valid_player;
     entity.var_d7e69143 = 0;
     
     if ( isdefined( entity.zombie_poi ) && isdefined( entity.zombie_poi[ 1 ] ) )

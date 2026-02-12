@@ -3876,40 +3876,40 @@ function private function_629fa2c8( var_5b9ba5a5, e_player )
             str_vo_line = #"hash_e6dbc38573eb591";
             break;
         case #"ghost_disappears":
-            str_vo_line = #"hash_75dd4d3a12f7a4ff";
+            str_vo_line = #"vox_m_quest_ghost_gone";
             break;
         case #"hash_2ea20c8cd81b5464":
             str_vo_line = #"hash_2db7e999104e9d85";
             break;
         case #"hash_72bb7bc935d4da67":
-            str_vo_line = #"hash_7908358765812286";
+            str_vo_line = #"vox_m_quest_ghost_riot";
             break;
         case #"hash_fd8e78c22906fc1":
-            str_vo_line = #"hash_5f84ae79adca64b4";
+            str_vo_line = #"vox_m_quest_ghost_docks";
             break;
         case #"hash_115ac6d40d4cc85b":
-            str_vo_line = #"hash_459548ac9c477e2e";
+            str_vo_line = #"vox_m_quest_boat_react";
             break;
         case #"hash_1d191ca6765471c6":
             str_vo_line = #"hash_58698646dc41b7cc";
             break;
         case #"hash_7cf90fc327de893e":
-            str_vo_line = #"hash_346283ac47189915";
+            str_vo_line = #"vox_m_quest_ghost_spoon";
             break;
         case #"hash_7ab135537c096a5a":
-            str_vo_line = #"hash_4de71ac9ed523e0f";
+            str_vo_line = #"vox_m_quest_ghost_murder";
             break;
         case #"hash_4c753651e8079572":
-            str_vo_line = #"hash_6a36332b44f8f69";
+            str_vo_line = #"vox_m_quest_ghost_power";
             break;
         case #"hash_487ac9fba78b1604":
-            str_vo_line = #"hash_6aa237e9482e5cd2";
+            str_vo_line = #"vox_m_quest_bout_react";
             break;
         case #"hash_57a7dd2d1b78a952":
             str_vo_line = #"hash_449831e8d03243ab";
             break;
         case #"hash_1e0663f4102106fa":
-            str_vo_line = #"hash_21d36ad9aebdc862";
+            str_vo_line = #"vox_m_quest_ghost_shower";
             break;
         case #"hash_46252c9e0b200ae6":
             str_vo_line = #"hash_420cd62afa5f7e5f";

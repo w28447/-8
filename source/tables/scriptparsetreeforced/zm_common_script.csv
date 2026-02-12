@@ -8,7 +8,7 @@ server,#scripts/zm_common/ai/planner_zm_generic_commander.gsc
 server,#scripts/zm_common/ai/planner_zm_generic_squad.gsc
 server,#scripts/zm/perk/zm_perk_electric_cherry.gsc
 server,#scripts/zm_common/zm_camos.gsc
-server,#script_4b0b3de126cf7c9a
+server,#scripts\zm\powerup\zm_powerup_pap.gsc
 server,#script_301f64a4090c381a
 server,#scripts/zm/powerup/zm_powerup_bonfire_sale.gsc
 server,#scripts/zm/perk/zm_perk_widows_wine.gsc
@@ -60,7 +60,7 @@ client,#scripts/zm/powerup/zm_powerup_bonfire_sale.csc
 client,#scripts/zm/perk/zm_perk_widows_wine.csc
 client,#scripts/zm/powerup/zm_powerup_nuke.csc
 client,#scripts/zm/powerup/zm_powerup_bonus_points_player.csc
-client,#script_26b191e111bca72e
+client,#scripts\zm\powerup\zm_powerup_pap.csc
 client,#scripts/zm/powerup/zm_powerup_insta_kill.csc
 client,#scripts/zm/powerup/zm_powerup_carpenter.csc
 client,#scripts/zm/powerup/zm_powerup_fire_sale.csc

@@ -585,7 +585,7 @@ function play_outro_movie( show_black_screen = 1 )
 // Params 0, eflags: 0x4
 // Checksum 0xb94396a0, Offset: 0x1a38
 // Size: 0x17c
-function private function_1bc580af()
+function private _play_outro_movie_for_player()
 {
     lui_menu = get_luimenu( "full_screen_movie" );
     [[ lui_menu ]]->open( self );
@@ -897,7 +897,7 @@ function open_generic_script_dialog( title, description )
     dialog = self openluimenu( "ScriptMessageDialog_Compact" );
     self setluimenudata( dialog, #"title", title );
     self setluimenudata( dialog, #"description", description );
-    self.var_520fb18c = dialog;
+    self.generic_script_dialog = dialog;
     
     do
     {
@@ -908,7 +908,7 @@ function open_generic_script_dialog( title, description )
     while ( menu != "ScriptMessageDialog_Compact" || response != "close" );
     
     self closeluimenu( dialog );
-    self.var_520fb18c = undefined;
+    self.generic_script_dialog = undefined;
 }
 
 // Namespace lui/lui_shared
@@ -919,9 +919,9 @@ function function_5ce0a623( str_notify )
 {
     if ( str_notify == "close_generic_script_dialog" )
     {
-        if ( isdefined( self.var_520fb18c ) )
+        if ( isdefined( self.generic_script_dialog ) )
         {
-            self closeluimenu( self.var_520fb18c );
+            self closeluimenu( self.generic_script_dialog );
         }
     }
 }

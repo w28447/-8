@@ -392,7 +392,7 @@ function intro_zombie_dog( n_round_number )
     
     while ( n_spawn_count < 3 )
     {
-        e_nova_crawler = zombie_dog_util::function_62db7b1c( 1, undefined );
+        e_nova_crawler = zombie_dog_util::spawn_single_dog( 1, undefined );
         
         if ( isdefined( e_nova_crawler ) )
         {
@@ -486,7 +486,7 @@ function function_a39e7a56()
             
             if ( level flag::get( #"hash_50990d5b9376f50d" ) )
             {
-                ai = zombie_dog_util::function_62db7b1c( 0 );
+                ai = zombie_dog_util::spawn_single_dog( 0 );
                 
                 if ( isdefined( ai ) )
                 {

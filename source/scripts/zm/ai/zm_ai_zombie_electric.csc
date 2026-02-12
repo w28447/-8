@@ -23,10 +23,10 @@ function __init__()
 {
     ai::add_archetype_spawn_function( #"zombie", &function_65089f84 );
     clientfield::register( "actor", "zm_ai/zombie_electric_fx_clientfield", 21000, 1, "int", &zombie_electric_fx, 0, 0 );
-    clientfield::register( "actor", "zombie_electric_burst_clientfield", 21000, 1, "counter", &function_8f477183, 0, 0 );
-    clientfield::register( "actor", "zombie_electric_water_aoe_clientfield", 21000, 1, "counter", &function_c9f98c07, 0, 0 );
-    clientfield::register( "actor", "zombie_electric_burst_stun_friendly_clientfield", 21000, 1, "int", &function_93585307, 0, 0 );
-    clientfield::register( "toplayer", "zombie_electric_burst_postfx_clientfield", 21000, 1, "counter", &function_4d29fadf, 0, 0 );
+    clientfield::register( "actor", "zombie_electric_burst_clientfield", 21000, 1, "counter", &zombie_electric_burst_fx, 0, 0 );
+    clientfield::register( "actor", "zombie_electric_water_aoe_clientfield", 21000, 1, "counter", &zombie_electric_water_aoe_fx, 0, 0 );
+    clientfield::register( "actor", "zombie_electric_burst_stun_friendly_clientfield", 21000, 1, "int", &zombie_electric_burst_stun_friendly_fx, 0, 0 );
+    clientfield::register( "toplayer", "zombie_electric_burst_postfx_clientfield", 21000, 1, "counter", &zombie_electric_burst_postfx, 0, 0 );
 }
 
 // Namespace zm_ai_zombie_electric/zm_ai_zombie_electric
@@ -68,7 +68,7 @@ function private zombie_electric_fx( localclientnum, oldval, newval, bnewent, bi
 // Params 7, eflags: 0x4
 // Checksum 0x9f0f1a25, Offset: 0x570
 // Size: 0x9c
-function private function_8f477183( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function private zombie_electric_burst_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     self util::waittill_dobj( localclientnum );
     
@@ -82,7 +82,7 @@ function private function_8f477183( localclientnum, oldval, newval, bnewent, bin
 // Params 7, eflags: 0x4
 // Checksum 0x187f96bd, Offset: 0x618
 // Size: 0x9c
-function private function_c9f98c07( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function private zombie_electric_water_aoe_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     self util::waittill_dobj( localclientnum );
     
@@ -96,7 +96,7 @@ function private function_c9f98c07( localclientnum, oldval, newval, bnewent, bin
 // Params 7, eflags: 0x4
 // Checksum 0x94f3792f, Offset: 0x6c0
 // Size: 0x84
-function private function_4d29fadf( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
+function private zombie_electric_burst_postfx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
     self util::waittill_dobj( localclientnum );
     
@@ -110,7 +110,7 @@ function private function_4d29fadf( localclientnum, oldval, newval, bnewent, bin
 // Params 7, eflags: 0x4
 // Checksum 0x2ecb0b5d, Offset: 0x750
 // Size: 0x1ae
-function private function_93585307( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function private zombie_electric_burst_stun_friendly_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     self util::waittill_dobj( localclientnum );
     

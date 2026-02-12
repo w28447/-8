@@ -152,7 +152,7 @@ soundalias,#hash_419e84642ebe554
 soundalias,#hash_516ed1c643c02fa
 soundalias,#hash_62332d89ae65200
 soundalias,#hash_63025a235c373d2
-soundalias,#hash_671d9f49327ff84
+soundalias,#evt_crane_move
 soundalias,#hash_6799f17d17bd52a
 soundalias,#hash_679a117d17bd890
 soundalias,#hash_68d8ab1e0216cfb
@@ -165,7 +165,7 @@ soundalias,#hash_aba5ed6b60d87b2
 soundalias,#hash_b258a3d47ed538c
 soundalias,#hash_bd53719309b6fc1
 soundalias,#hash_c266934b6e24701
-soundalias,#hash_cc693b3173e7565
+soundalias,#exp_concussive_large
 soundalias,#hash_101aa41260505836
 soundalias,#hash_12b24433ad0bb1f0
 soundalias,#hash_1358357952f89d8d
@@ -258,7 +258,7 @@ soundalias,#hash_6237abae59de3cd8
 soundalias,#hash_6237aeae59de41f1
 soundalias,#hash_63bcbf23c737f161
 soundalias,#hash_663c8f1dec203b61
-soundalias,#hash_66aa6b049c23fa3f
+soundalias,#exp_incindiary_large
 soundalias,#hash_67e1b634a1e1c1ba
 soundalias,#hash_68d360aa565ed76a
 soundalias,#hash_694aaf72eca0e4dc

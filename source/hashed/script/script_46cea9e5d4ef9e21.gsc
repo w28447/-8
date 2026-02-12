@@ -617,7 +617,7 @@ function private function_f50cec70()
     
     level.var_988ed695++;
     zm_vo::function_3c173d37( s_result.e_grabber.origin, 512 );
-    s_result.e_grabber zm_vo::function_a2bd5a0c( #"hash_6ae96725c891addc", 0, 1, 9999 );
+    s_result.e_grabber zm_vo::function_a2bd5a0c( #"vox_zmb_blood_pickup", 0, 1, 9999 );
 }
 
 // Namespace namespace_1063645/namespace_fdf9d496

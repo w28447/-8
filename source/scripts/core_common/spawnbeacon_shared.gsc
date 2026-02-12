@@ -797,9 +797,9 @@ function destroyspawnbeacon( destroyedbyenemy )
         var_505e3308 = self.angles;
     }
     
-    var_8fec56c4 = anglestoforward( var_505e3308 );
-    var_61753233 = anglestoup( var_505e3308 );
-    playfx( #"hash_695b2e7e4b63a645", var_b0e81be9, var_8fec56c4, var_61753233 );
+    tag_base_forward = anglestoforward( var_505e3308 );
+    tag_base_up = anglestoup( var_505e3308 );
+    playfx( #"hash_695b2e7e4b63a645", var_b0e81be9, tag_base_forward, tag_base_up );
     
     if ( !( isdefined( spawnbeacon.var_4fc7245b ) ? spawnbeacon.var_4fc7245b : 0 ) && ( isdefined( level.var_6cd68fbe ) ? level.var_6cd68fbe : 0 ) && isdefined( player ) )
     {

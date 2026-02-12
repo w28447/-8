@@ -701,15 +701,15 @@ function bombs()
         bombzone.oncantuse = &oncantuse;
         bombzone.useweapon = getweapon( #"briefcase_bomb" );
         bombzone.visuals[ 0 ].killcament = spawn( "script_model", bombzone.visuals[ 0 ].origin + ( 0, 0, 128 ) );
-        var_69bc8821 = spawn( "script_model", trigger.origin );
-        var_69bc8821.objectiveid = gameobjects::get_next_obj_id();
-        var_69bc8821.curorigin = trigger.origin;
-        var_69bc8821.ownerteam = game.defenders;
-        var_69bc8821.team = game.defenders;
-        var_69bc8821.type = "Waypoint";
-        objective_add( var_69bc8821.objectiveid, "invisible", var_69bc8821, waypointname );
-        var_69bc8821 gameobjects::set_visible_team( #"any" );
-        bombzone.waypoint = var_69bc8821;
+        bombwaypoint = spawn( "script_model", trigger.origin );
+        bombwaypoint.objectiveid = gameobjects::get_next_obj_id();
+        bombwaypoint.curorigin = trigger.origin;
+        bombwaypoint.ownerteam = game.defenders;
+        bombwaypoint.team = game.defenders;
+        bombwaypoint.type = "Waypoint";
+        objective_add( bombwaypoint.objectiveid, "invisible", bombwaypoint, waypointname );
+        bombwaypoint gameobjects::set_visible_team( #"any" );
+        bombzone.waypoint = bombwaypoint;
         
         if ( isdefined( level.bomb_zone_fixup ) )
         {
@@ -737,7 +737,7 @@ function bombs()
         }
         
         level.bombzones[ level.bombzones.size ] = bombzone;
-        level.var_b10236da[ level.var_b10236da.size ] = var_69bc8821;
+        level.var_b10236da[ level.var_b10236da.size ] = bombwaypoint;
         bombzone.bombdefusetrig = getent( visuals[ 0 ].target, "targetname" );
         assert( isdefined( bombzone.bombdefusetrig ) );
         bombzone.bombdefusetrig.origin += ( 0, 0, -10000 );

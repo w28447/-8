@@ -77,7 +77,7 @@ function set_default_callbacks()
     level.callbackactordamage = &globallogic_actor::callback_actordamage;
     level.callbackactorkilled = &globallogic_actor::callback_actorkilled;
     level.callbackactorcloned = &globallogic_actor::callback_actorcloned;
-    level.var_6788bf11 = &globallogic_scriptmover::function_8c7ec52f;
+    level.callbackscriptmoverdamage = &globallogic_scriptmover::callback_scriptmoverdamage;
     level.callbackvehiclespawned = &globallogic_vehicle::callback_vehiclespawned;
     level.callbackvehicledamage = &globallogic_vehicle::callback_vehicledamage;
     level.callbackvehiclekilled = &globallogic_vehicle::callback_vehiclekilled;

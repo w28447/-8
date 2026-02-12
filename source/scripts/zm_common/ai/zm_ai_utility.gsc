@@ -62,9 +62,9 @@ function private function_637778cf()
     self.var_95d94ac4 = settingsbundle.stunduration;
     self.score_event = settingsbundle.scoreevent;
     
-    if ( isdefined( settingsbundle.var_5c3586f3 ) )
+    if ( isdefined( settingsbundle.powerupdroplist ) )
     {
-        self.powerups = arraycopy( settingsbundle.var_5c3586f3 );
+        self.powerups = arraycopy( settingsbundle.powerupdroplist );
         self thread function_3edc6292();
     }
     
@@ -85,14 +85,14 @@ function private function_a19d7104( settingsbundle )
         return;
     }
     
-    if ( !isdefined( level.var_532264f5 ) )
+    if ( !isdefined( level.weapon_damage_scale_overrides ) )
     {
-        level.var_532264f5 = [];
+        level.weapon_damage_scale_overrides = [];
     }
     
-    if ( !isdefined( level.var_532264f5[ settingsbundle.name ] ) )
+    if ( !isdefined( level.weapon_damage_scale_overrides[ settingsbundle.name ] ) )
     {
-        level.var_532264f5[ settingsbundle.name ] = [];
+        level.weapon_damage_scale_overrides[ settingsbundle.name ] = [];
     }
     
     foreach ( var_e8d7c6d7 in settingsbundle.weapondamagescaleoverrides )
@@ -103,7 +103,7 @@ function private function_a19d7104( settingsbundle )
             continue;
         }
         
-        level.var_532264f5[ settingsbundle.name ][ var_e8d7c6d7.weaponid ] = { #var_c6cc6205:var_e8d7c6d7.damagescale, #var_fff93f95:var_e8d7c6d7.weakpointdamagescale, #var_8e22aa87:var_e8d7c6d7.instakilldamagescale, #var_fac896db:var_e8d7c6d7.var_97b22faa };
+        level.weapon_damage_scale_overrides[ settingsbundle.name ][ var_e8d7c6d7.weaponid ] = { #var_c6cc6205:var_e8d7c6d7.damagescale, #var_fff93f95:var_e8d7c6d7.weakpointdamagescale, #var_8e22aa87:var_e8d7c6d7.instakilldamagescale, #var_fac896db:var_e8d7c6d7.instakillweakpointdamagescale };
     }
     
     settingsbundle.var_6199bcd5 = 1;
@@ -115,7 +115,7 @@ function private function_a19d7104( settingsbundle )
 // Size: 0x7a, Type: bool
 function function_94d76123( weapon )
 {
-    if ( isdefined( self.var_76167463 ) && isdefined( weapon ) && isdefined( level.var_532264f5 ) && isdefined( level.var_532264f5[ self.var_76167463 ] ) && isdefined( level.var_532264f5[ self.var_76167463 ][ weapon.name ] ) )
+    if ( isdefined( self.var_76167463 ) && isdefined( weapon ) && isdefined( level.weapon_damage_scale_overrides ) && isdefined( level.weapon_damage_scale_overrides[ self.var_76167463 ] ) && isdefined( level.weapon_damage_scale_overrides[ self.var_76167463 ][ weapon.name ] ) )
     {
         return true;
     }
@@ -129,7 +129,7 @@ function function_94d76123( weapon )
 // Size: 0x2a
 function function_86cb3728( weapon )
 {
-    return level.var_532264f5[ self.var_76167463 ][ weapon.name ];
+    return level.weapon_damage_scale_overrides[ self.var_76167463 ][ weapon.name ];
 }
 
 // Namespace zm_ai_utility/zm_ai_utility
@@ -410,11 +410,11 @@ function function_422fdfd4( entity, attacker, weapon, var_5457dc44, hitloc, poin
     
     if ( entity function_94d76123( weapon ) )
     {
-        var_532264f5 = entity function_86cb3728( weapon );
-        var_c6cc6205 = isdefined( var_b85996d4 ) ? var_b85996d4 : var_532264f5.var_c6cc6205;
-        var_fff93f95 = isdefined( var_159ce525 ) ? var_159ce525 : var_532264f5.var_fff93f95;
-        var_cee56a92 = isdefined( var_ddd319d6 ) ? var_ddd319d6 : var_532264f5.var_8e22aa87;
-        var_e008ecea = isdefined( var_d2314927 ) ? var_d2314927 : var_532264f5.var_fac896db;
+        weapon_damage_scale_overrides = entity function_86cb3728( weapon );
+        var_c6cc6205 = isdefined( var_b85996d4 ) ? var_b85996d4 : weapon_damage_scale_overrides.var_c6cc6205;
+        var_fff93f95 = isdefined( var_159ce525 ) ? var_159ce525 : weapon_damage_scale_overrides.var_fff93f95;
+        var_cee56a92 = isdefined( var_ddd319d6 ) ? var_ddd319d6 : weapon_damage_scale_overrides.var_8e22aa87;
+        var_e008ecea = isdefined( var_d2314927 ) ? var_d2314927 : weapon_damage_scale_overrides.var_fac896db;
     }
     else
     {
@@ -426,19 +426,19 @@ function function_422fdfd4( entity, attacker, weapon, var_5457dc44, hitloc, poin
     
     if ( !var_201ce857 && !var_30362eca )
     {
-        var_b1c1c5cf = isdefined( var_c6cc6205 ) ? var_c6cc6205 : entity ai::function_9139c839().damagescale;
+        n_damage_scale = isdefined( var_c6cc6205 ) ? var_c6cc6205 : entity ai::function_9139c839().damagescale;
     }
     else if ( !var_201ce857 && var_30362eca )
     {
-        var_b1c1c5cf = isdefined( var_fff93f95 ) ? var_fff93f95 : entity ai::function_9139c839().weakpointdamagescale;
+        n_damage_scale = isdefined( var_fff93f95 ) ? var_fff93f95 : entity ai::function_9139c839().weakpointdamagescale;
     }
     else if ( var_201ce857 && !var_30362eca )
     {
-        var_b1c1c5cf = isdefined( var_cee56a92 ) ? var_cee56a92 : entity ai::function_9139c839().instakilldamagescale;
+        n_damage_scale = isdefined( var_cee56a92 ) ? var_cee56a92 : entity ai::function_9139c839().instakilldamagescale;
     }
     else
     {
-        var_b1c1c5cf = isdefined( var_e008ecea ) ? var_e008ecea : entity ai::function_9139c839().var_97b22faa;
+        n_damage_scale = isdefined( var_e008ecea ) ? var_e008ecea : entity ai::function_9139c839().instakillweakpointdamagescale;
     }
     
     if ( var_8d3f5b7d )
@@ -447,40 +447,40 @@ function function_422fdfd4( entity, attacker, weapon, var_5457dc44, hitloc, poin
         
         if ( var_30362eca && attacker hasperk( #"specialty_mod_awareness" ) )
         {
-            if ( var_b1c1c5cf < 1 )
+            if ( n_damage_scale < 1 )
             {
-                var_b1c1c5cf += 0.2;
+                n_damage_scale += 0.2;
             }
             else
             {
-                var_b1c1c5cf *= 1.2;
+                n_damage_scale *= 1.2;
             }
         }
         else if ( registerzombie_bgb_used_reinforce && var_84ed9a13.type == #"armor" && weaponhasattachment( weapon, "fmj2" ) )
         {
             if ( self.zm_ai_category == #"boss" )
             {
-                var_b1c1c5cf *= 1.1;
+                n_damage_scale *= 1.1;
             }
             else
             {
-                var_b1c1c5cf = min( 1, var_b1c1c5cf + 0.1 );
+                n_damage_scale = min( 1, n_damage_scale + 0.1 );
             }
         }
-        else if ( has_weakpoints && !registerzombie_bgb_used_reinforce && weaponhasattachment( weapon, "fmj" ) && var_b1c1c5cf < 1 )
+        else if ( has_weakpoints && !registerzombie_bgb_used_reinforce && weaponhasattachment( weapon, "fmj" ) && n_damage_scale < 1 )
         {
             if ( self.zm_ai_category == #"boss" )
             {
-                var_b1c1c5cf *= 1.1;
+                n_damage_scale *= 1.1;
             }
             else
             {
-                var_b1c1c5cf = min( 1, var_b1c1c5cf + 0.1 );
+                n_damage_scale = min( 1, n_damage_scale + 0.1 );
             }
         }
     }
     
-    return { #damage_scale:var_b1c1c5cf, #var_84ed9a13:var_84ed9a13, #registerzombie_bgb_used_reinforce:registerzombie_bgb_used_reinforce, #var_201ce857:var_201ce857 };
+    return { #damage_scale:n_damage_scale, #var_84ed9a13:var_84ed9a13, #registerzombie_bgb_used_reinforce:registerzombie_bgb_used_reinforce, #var_201ce857:var_201ce857 };
 }
 
 // Namespace zm_ai_utility/zm_ai_utility
@@ -674,7 +674,7 @@ function function_991333ce( entity, ai_array )
                 enemy.favoriteenemy = undefined;
             }
             
-            enemy.var_93a62fe = undefined;
+            enemy.closest_valid_player = undefined;
             enemy setgoal( enemy.origin );
         }
     }

@@ -221,8 +221,8 @@ function function_f63feeb6( einflictor, eattacker, idamage, flags, meansofdeath,
     
     if ( isplayer( einflictor ) && meansofdeath === "MOD_BURNED" && !( isdefined( self.is_on_fire ) && self.is_on_fire ) )
     {
-        var_bb6709b6 = zm_equipment::function_379f6b5d( 16 );
-        self namespace_9ff9f642::burn( weapon.name, eattacker, weapon, var_bb6709b6 );
+        n_burn_damage = zm_equipment::function_379f6b5d( 16 );
+        self namespace_9ff9f642::burn( weapon.name, eattacker, weapon, n_burn_damage );
     }
     
     if ( isplayer( einflictor ) && !( isdefined( self.var_d9e7a08a ) && self.var_d9e7a08a ) && meansofdeath === "MOD_BURNED" )
@@ -377,8 +377,8 @@ function private function_e296efef( w_flamethrower, e_player )
     
     if ( !( isdefined( self.is_on_fire ) && self.is_on_fire ) )
     {
-        var_bb6709b6 = zm_equipment::function_379f6b5d( 16 );
-        self namespace_9ff9f642::burn( w_flamethrower.name, e_player, w_flamethrower, var_bb6709b6 );
+        n_burn_damage = zm_equipment::function_379f6b5d( 16 );
+        self namespace_9ff9f642::burn( w_flamethrower.name, e_player, w_flamethrower, n_burn_damage );
     }
 }
 

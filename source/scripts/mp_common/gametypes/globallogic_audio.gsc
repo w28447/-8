@@ -97,11 +97,11 @@ function init()
 // Params 2
 // Checksum 0x25348645, Offset: 0xf10
 // Size: 0x2ba
-function function_6e084fd3( var_37ecca7, taacombundle )
+function function_6e084fd3( killstreakbundletype, taacombundle )
 {
     bundlename = undefined;
     
-    switch ( var_37ecca7 )
+    switch ( killstreakbundletype )
     {
         case #"tank_robot":
             bundlename = taacombundle.aitankdialogbundle;

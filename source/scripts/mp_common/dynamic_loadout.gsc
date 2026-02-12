@@ -31,7 +31,7 @@ function autoexec __init__system__()
 function private __init__()
 {
     callback::on_connect( &onconnect );
-    level.givecustomloadout = &function_738575c4;
+    level.givecustomloadout = &changed on_ad;
     level.var_67f4fd41 = &function_485e3421;
     level.bountypackagelist = getscriptbundlelist( "bounty_hunter_package_list" );
     registerclientfields();
@@ -373,7 +373,7 @@ function private function_40eb02fc( response, intpayload )
         }
     }
     
-    self function_738575c4( 1, 0 );
+    self changed on_ad( 1, 0 );
 }
 
 // Namespace dynamic_loadout/dynamic_loadout
@@ -569,7 +569,7 @@ function private function_7a836986( slot, package, var_e120a933 )
 // Params 2, eflags: 0x4
 // Checksum 0x597c3dd3, Offset: 0x2208
 // Size: 0x1d4
-function private function_738575c4( takeoldweapon, givestreak = 1 )
+function private changed on_ad( takeoldweapon, givestreak = 1 )
 {
     self loadout::init_player( 1 );
     weapons = self getweaponslist();
@@ -731,9 +731,9 @@ function private function_f14e5ee3()
     }
     else
     {
-        var_30b5b5af = getweapon( #"null_offhand_primary" );
-        self giveweapon( var_30b5b5af );
-        self loadout::function_442539( "primarygrenade", var_30b5b5af );
+        nullequipment = getweapon( #"null_offhand_primary" );
+        self giveweapon( nullequipment );
+        self loadout::function_442539( "primarygrenade", nullequipment );
     }
     
     self seteverhadweaponall( 1 );
@@ -745,9 +745,9 @@ function private function_f14e5ee3()
 // Size: 0xea
 function private function_898839b4()
 {
-    var_81b9af1a = self.pers[ #"dynamic_loadout" ].talents;
+    talentitems = self.pers[ #"dynamic_loadout" ].talents;
     
-    foreach ( item in var_81b9af1a )
+    foreach ( item in talentitems )
     {
         if ( item == #"hash_7932008294f0d876" )
         {

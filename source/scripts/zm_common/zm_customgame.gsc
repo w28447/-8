@@ -1831,32 +1831,32 @@ function private function_6607cdee( einflictor, eattacker, idamage, idflags, sme
 // Size: 0x172
 function private function_cd05a082()
 {
-    var_320de887 = function_901b751c( #"zmpointsfixed" );
-    var_46e28538 = function_901b751c( #"zmpointsstarting" ) * 100;
+    b_points_fixed = function_901b751c( #"zmpointsfixed" );
+    n_starting_points = function_901b751c( #"zmpointsstarting" ) * 100;
     var_1f9ee1b2 = function_901b751c( #"hash_5566698b97a6282e" );
-    var_58d18c72 = function_901b751c( #"zmpointslosstype" );
-    var_523e89f3 = function_901b751c( #"zmpointslosspercent" );
-    var_39215b53 = function_901b751c( #"zmpointslossvalue" );
+    n_points_loss_type = function_901b751c( #"zmpointslosstype" );
+    n_points_loss_percent = function_901b751c( #"zmpointslosspercent" );
+    n_points_loss_value = function_901b751c( #"zmpointslossvalue" );
     
-    if ( var_46e28538 != 500 )
+    if ( n_starting_points != 500 )
     {
-        level.player_starting_points = var_46e28538;
+        level.player_starting_points = n_starting_points;
     }
     
-    if ( var_320de887 )
+    if ( b_points_fixed )
     {
         level.var_894a83d8 = 1;
     }
     
-    if ( var_58d18c72 )
+    if ( n_points_loss_type )
     {
-        if ( var_58d18c72 == 1 )
+        if ( n_points_loss_type == 1 )
         {
-            level.var_a2d8b7eb = var_523e89f3 / 100;
+            level.var_a2d8b7eb = n_points_loss_percent / 100;
             return;
         }
         
-        level.var_39e18a71 = var_39215b53;
+        level.var_39e18a71 = n_points_loss_value;
     }
 }
 

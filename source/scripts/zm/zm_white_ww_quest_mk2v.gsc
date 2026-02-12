@@ -181,7 +181,7 @@ function private function_1129876d()
         
         if ( s_notify zm_hms_util::function_69320b44( "zm_aat_kill_o_watt" ) )
         {
-            self function_d41d20b1();
+            self open_panel();
             break;
         }
     }
@@ -194,7 +194,7 @@ function private function_1129876d()
 // Params 0, eflags: 0x4
 // Checksum 0xa71ef497, Offset: 0xae8
 // Size: 0x114
-function private function_d41d20b1()
+function private open_panel()
 {
     v_force = anglestoforward( self.angles );
     v_force *= 0.2;
@@ -219,7 +219,7 @@ function private function_9d66ea6f( e_item, e_player )
     #/
     
     level.var_9eccff99.e_player = e_player;
-    namespace_a01a2431::function_605e5c25( e_player );
+    zm_white_ww_quest_weapon::function_605e5c25( e_player );
     e_player.var_9c20e2c9 = 1;
     e_player playsound( "evt_canister_pickup" );
     zm_ui_inventory::function_7df6bb60( "zm_white_ww_mod_phase", 0, e_player );

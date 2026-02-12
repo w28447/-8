@@ -147,7 +147,7 @@ soundalias,#hash_a703693a7d7419a
 soundalias,#hash_aba5ed6b60d87b2
 soundalias,#hash_bd53719309b6fc1
 soundalias,#hash_c266934b6e24701
-soundalias,#hash_cc693b3173e7565
+soundalias,#exp_concussive_large
 soundalias,#amb_wind_right
 soundalias,#hash_101aa41260505836
 soundalias,#hash_12b24433ad0bb1f0
@@ -255,7 +255,7 @@ soundalias,#hash_6237aeae59de41f1
 soundalias,#hash_6287c53be5a867dc
 soundalias,#amb_water_lap
 soundalias,#hash_653fc5310ae8738c
-soundalias,#hash_66aa6b049c23fa3f
+soundalias,#exp_incindiary_large
 soundalias,#amb_wind_left
 soundalias,#hash_67e1b634a1e1c1ba
 soundalias,#amb_wind_hollow
@@ -303,7 +303,7 @@ client_fx,#hash_1bb3f9710a6415c8
 client_fx,#hash_1dc986e00ac2d9b1
 client_fx,#hash_1f1f6ba9fb9ace3c
 client_fx,#hash_2147dab1373ff1d8
-client_fx,#hash_21f397376b81d9ef
+client_fx,#impacts/fx_bul_impact_blood_body_fatal
 client_fx,#ui/fx_dom_cap_indicator_neutral_r120
 client_fx,#hash_2618b5463c248896
 client_fx,#hash_27604ee16fb27e93

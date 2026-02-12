@@ -43,11 +43,11 @@ function private __init__()
     
     zm_cleanup::function_cdf5a512( #"skeleton", &function_ad4293a8 );
     zm_trial_special_enemy::function_95c1dd81( #"skeleton", &function_8609d56e );
-    level.var_5fc2833 = getentarray( "zombie_skeleton_spawner", "script_noteworthy" );
+    level.a_sp_skeleton = getentarray( "zombie_skeleton_spawner", "script_noteworthy" );
     level.var_7b7fd31e = getentarray( "zombie_skeleton_spear_spawner", "script_noteworthy" );
     level.var_ea48e91 = getentarray( "zombie_skeleton_helmet_spawner", "script_noteworthy" );
     level.var_c34db86 = getentarray( "zombie_skeleton_helmet_spear_spawner", "script_noteworthy" );
-    level.var_5781a278 = arraycombine( level.var_5fc2833, level.var_7b7fd31e, 0, 0 );
+    level.var_5781a278 = arraycombine( level.a_sp_skeleton, level.var_7b7fd31e, 0, 0 );
     level.var_5781a278 = arraycombine( level.var_5781a278, level.var_ea48e91, 0, 0 );
     level.var_5781a278 = arraycombine( level.var_5781a278, level.var_c34db86, 0, 0 );
 }
@@ -145,23 +145,23 @@ function function_1ea880bd( b_force_spawn = 0, var_eb3a8721, round_number, b_spe
     {
         if ( b_helmet )
         {
-            var_5fc2833 = level.var_c34db86;
+            a_sp_skeleton = level.var_c34db86;
         }
         else
         {
-            var_5fc2833 = level.var_7b7fd31e;
+            a_sp_skeleton = level.var_7b7fd31e;
         }
     }
     else if ( b_helmet )
     {
-        var_5fc2833 = level.var_ea48e91;
+        a_sp_skeleton = level.var_ea48e91;
     }
     else
     {
-        var_5fc2833 = level.var_5fc2833;
+        a_sp_skeleton = level.a_sp_skeleton;
     }
     
-    ai = zombie_utility::spawn_zombie( array::random( var_5fc2833 ), undefined, undefined, round_number );
+    ai = zombie_utility::spawn_zombie( array::random( a_sp_skeleton ), undefined, undefined, round_number );
     
     if ( isdefined( ai ) )
     {

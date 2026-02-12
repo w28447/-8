@@ -3596,7 +3596,7 @@ xanim,#pb_brawler_male_draft_idle_transition_5
 xanim,#pb_brawler_male_draft_idle_transition_4
 xanim,#hash_6991c93f51936551
 xanim,#vm_com_hello_bare_hands
-xanim,d#hash_69a79068dae16b85
+xanim,d#vm_zipline_loop
 xanim,#hash_69ac04f83e805c7d
 xanim,#ai_base_rifle_crc_exposed_dth_r_chest_hvy
 xanim,#viewmodel_base_t7_crawl_r
@@ -15792,7 +15792,7 @@ image,#i_veh_t8_decal_moulding_o
 image,d#i_veh_t8_decal_moulding_c
 image,#i_veh_t8_decal_moulding_r
 image,d#hash_27ccc4712f559c0b
-image,d#hash_27d2980e98d88c55
+image,d#$alpha
 image,d#i_attach_t8_pistol_standard_barrel_s
 image,d#i_attach_t8_pistol_standard_barrel_g
 image,d#i_attach_t8_pistol_standard_barrel_c
@@ -32699,7 +32699,7 @@ material,#hash_5b7e1f2bd4d61454
 material,d#mc/mtl_wpn_t8_sig_radiation_device_decals
 material,d#mc/mtl_wpn_t8_sig_battle_shield_window_rear
 material,#hash_5b90df0ebddb0666
-material,#hash_5ba4c122834b052c
+material,#generic_filter_screen_futz
 material,#mc/mtl_veh_t7_drone_hunter_wing_dark
 material,d#hash_5bb7a9de67800501
 material,d#mc/attach_t8_pistol_burst_clip_01
@@ -34685,7 +34685,7 @@ sharedweaponsounds,#hash_976e198cea3170c
 sharedweaponsounds,#hash_d82ec7c5469e656
 sharedweaponsounds,d#lmg
 sharedweaponsounds,#bowie
-sharedweaponsounds,#hash_1d67e7e14d596701
+sharedweaponsounds,#battle_shield
 sharedweaponsounds,#dog_melee
 sharedweaponsounds,#fist
 sharedweaponsounds,d#knife
@@ -36313,7 +36313,7 @@ fx,#hash_ee6d0101181356f
 fx,d#killstreaks/fx_air_drop_marker_white
 fx,#ui/fx_koth_marker_contested
 fx,#hash_f07f477a362d3a4
-fx,#hash_f1d44009bb4439b
+fx,#killstreaks/fx_mship_lights
 fx,#ui/fx_koth_marker_blue
 fx,#hash_f5dbdc2be3a4bc1
 fx,d#hash_f764ea920ba56f1
@@ -36443,7 +36443,7 @@ fx,#ui/fx_koth_marker_neutral_window
 fx,#hash_253c31a9114d6029
 fx,#hash_25713b475769a73f
 fx,#weapon/fx8_equip_smart_cover_microwave
-fx,#hash_25a99eb176affd8d
+fx,#explosions/fx_exp_equipment_lg
 fx,#hash_260fafe2e7ced71c
 fx,d#hash_264f9fe57a63a952
 fx,#hash_2675398c3793c87e
@@ -36573,7 +36573,7 @@ fx,#hash_3d9f642212d18fe2
 fx,#hash_3db1ecb54b192a49
 fx,#hash_3df9e714f4acb3a1
 fx,#hash_3e00d314f4b2b053
-fx,#hash_3e78af902f84621e
+fx,#explosions/fx_vexp_hunter_death
 fx,#hash_3e95cda1a373d79a
 fx,#hash_3e99f483a765a91e
 fx,#hash_3ed01954f57c3043
@@ -36620,9 +36620,9 @@ fx,d#hash_44eb0997b3f838c7
 fx,#hash_450abeb490a2a2f8
 fx,#ui/fx_koth_marker_white_window
 fx,#hash_4577512c54141f2e
-fx,#hash_45ad5fa219eaa81f
+fx,#killstreaks/fx_vtol_exhaust_engine
 fx,#hash_460a8e9e9f2dfd8c
-fx,#hash_4621b74bc87fdbe6
+fx,#light/fx_light_robot_set_yellow
 fx,d#hash_4648a6c2c5ebc58e
 fx,d#hash_46599cc2c5fa27c3
 fx,d#hash_468595ecc1b3a341
@@ -36632,7 +36632,7 @@ fx,d#hash_471c2ac454e42597
 fx,#hash_4787670e055111d8
 fx,#hash_478e730e055744ea
 fx,#ui/fx_koth_marker_orng_window
-fx,#hash_47b11ac110f88641
+fx,#player/fx_plyr_tablet_activation
 fx,d#hash_47b3d809d3e1669c
 fx,d#hash_47b9e409d3e5e6ae
 fx,d#hash_48099ab1b258e0ba
@@ -36694,7 +36694,7 @@ fx,#hash_504a7038160e47dd
 fx,d#hash_505391476800a162
 fx,#ui/fx_koth_marker_yellow_window
 fx,#hash_50b25e352ba908d0
-fx,#hash_50cc4655c9eaa8b4
+fx,#light/fx_light_robot_set_lg_yellow
 fx,#hash_50e269dfa9bb6a69
 fx,d#hash_5136c746fd9646fd
 fx,d#hash_5153fcbb5a54fde2
@@ -36874,7 +36874,7 @@ fx,d#hash_7078b4e4e1897123
 fx,#hash_708765aa3f48456d
 fx,#light/fx_light_robot_set_base_blink_lg
 fx,d#player/fx8_plyr_shocked_stage1_3p
-fx,#hash_709dc68733f89cc8
+fx,#player/fx_plyr_tablet_activation_loop
 fx,#hash_709ffb1b1429c3cc
 fx,#hash_70c448aa3f7bc244
 fx,#hash_70c76baa3f7e3394
@@ -37404,7 +37404,7 @@ fx,#hash_a018fb4bf0206a7
 fx,#ui/fx8_ui_ct_marker_team_b180
 fx,#ui/fx8_ui_ct_marker_team_b135
 fx,#hash_a5536494420137f
-fx,#hash_a82764355d9e89b
+fx,#blood/fx_ability_blood_decal_augmentation
 fx,#hash_aca3add9d97dcb1
 fx,#hash_b635021402ccb62
 fx,#hash_b6ec0adad053d36
@@ -37517,9 +37517,9 @@ fx,#hash_20c42b8374c1d1e8
 fx,#hash_2138834c276ea0fb
 fx,#hash_21727afc6e002c98
 fx,#hash_2186b7c6aea2cea8
-fx,#hash_21a35a9f8c081fea
+fx,#light/fx_ability_glow_chest_ravage_core
 fx,#hash_21d4895c4f2d3a27
-fx,d#hash_21f397376b81d9ef
+fx,d#impacts/fx_bul_impact_blood_body_fatal
 fx,#hash_223d261706bc60a1
 fx,#player/fx8_plyr_footstep_tracker_r
 fx,#player/fx8_plyr_footstep_tracker_l
@@ -37582,7 +37582,7 @@ fx,#hash_2cf426fd6fec8605
 fx,#hash_2d6433effb9c5c33
 fx,d#hash_2db874adacf534fa
 fx,#killstreaks/fx_vtol_exp
-fx,#hash_2dd59b07c2ea8004
+fx,#explosions/fx_exp_drone_death
 fx,#hash_2df3b455c7b042a4
 fx,#hash_2df3b755c7b047bd
 fx,#hash_2e0096e150933469
@@ -38575,7 +38575,7 @@ fx,d#hash_4e9a695b8617145b
 fx,d#hash_4ebf63a96e625a07
 fx,#hash_4ec326755bb805e2
 fx,#hash_4f1bf2d51dc4eeb4
-fx,#hash_51d2dcb013a19287
+fx,#electric/fx_ability_elec_surge_short_pamws
 fx,d#hash_527582018254cdd3
 fx,d#hash_5339af87b1ad0da7
 fx,#blood/fx8_blood_cam_impact_spray_zm
@@ -39150,9 +39150,9 @@ scriptbundle,#killstreak_supply_drop
 scriptbundle,#killstreak_remote_missile
 scriptbundle,#killstreak_supply_drop_combat_robot
 statuseffect,#shock_rifle_shock
-beam,#hash_5baeea64e2d2e8b
+beam,#flamethrower_beam_3p
 beam,#hash_2d684446c3912ebe
-beam,#hash_32870a226efa65af
+beam,#flamethrower_beam
 beam,#hash_588a791abc7cd186
 physpreset,#hash_4d8627ba7f0b5854
 weapon,#eq_tripwire_mp
@@ -39297,7 +39297,7 @@ weapon,#melee_bowie_bloody_mp
 weapon,#hero_bowlauncher_mp
 weapon,#hero_minigun_mp
 weapon,#sig_buckler_turret_mp
-weapon,#hash_4e81ab43a74f9f59
+weapon,#lmg_light_robot_mp
 weapon,#sig_minigun_turret_24_mp
 weapon,#hash_4eb46077410a74cf
 weapon,#hero_lightninggun_mp

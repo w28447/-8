@@ -55,7 +55,7 @@ function private function_a5ce91f1( val )
 // Params 0
 // Checksum 0x680aa0af, Offset: 0x280
 // Size: 0x52, Type: bool
-function function_81d670f5()
+function using_new_transitions()
 {
     if ( isdefined( level.var_d1455682 ) )
     {
@@ -107,7 +107,7 @@ function function_12d1f62a( outcome )
 // Params 1
 // Checksum 0x50db3d52, Offset: 0x458
 // Size: 0xbc
-function function_19adc0b7( outcome )
+function display_match_end( outcome )
 {
     player::function_2f80d95b( &function_3f65d5d3 );
     function_e6b4f2f7( outcome );
@@ -364,7 +364,7 @@ function private function_ba94df6c()
 // Size: 0x64
 function function_9185f489( transition, outcome )
 {
-    globallogic::function_2556afb5( transition.var_20c0730c, transition.var_18d4b2ad, float( transition.var_3efb751d ) / 1000 );
+    globallogic::homunculushomunculus_random( transition.var_20c0730c, transition.var_18d4b2ad, float( transition.var_3efb751d ) / 1000 );
 }
 
 // Namespace display_transition/display_transition

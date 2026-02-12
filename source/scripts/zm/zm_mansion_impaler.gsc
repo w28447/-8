@@ -328,7 +328,7 @@ function cleanup_step_4( var_5ea5c94d, ended_early )
 // Size: 0x64
 function init_step_5( var_a276c861 )
 {
-    level thread function_886c88e();
+    level thread crossbow_pickup();
     level thread open_crypt();
     
     if ( !var_a276c861 )
@@ -1252,7 +1252,7 @@ function function_d7d6b759()
 // Params 0
 // Checksum 0x3959069f, Offset: 0x4930
 // Size: 0x134
-function function_886c88e()
+function crossbow_pickup()
 {
     level endon( #"hash_38fe2a57d5f9d6ba" );
     var_a8534fa4 = struct::get( "s_imp" );
@@ -1362,7 +1362,7 @@ function function_d23a6d02()
         if ( zm_utility::can_use( e_player, 1 ) && level flag::get( #"hash_864c8ec1475abdc" ) )
         {
             e_player zm_weapons::weapon_give( level.w_crossbow );
-            e_player thread zm_vo::function_a2bd5a0c( #"hash_5b257b4bd8a2c6ec", 1 );
+            e_player thread zm_vo::function_a2bd5a0c( #"vox_crossbow_pickup", 1 );
             e_player thread function_a9bfed2d();
             level flag::set( #"hash_61263135b6fb6340" );
         }
@@ -1428,7 +1428,7 @@ function function_a9bfed2d()
         
         if ( isdefined( s_spawn_loc ) )
         {
-            ai_nosferatu = zm_ai_nosferatu::function_74f25f8a( 1, s_spawn_loc, b_crimson, level.round_number );
+            ai_nosferatu = zm_ai_nosferatu::spawn_single_nosferatu( 1, s_spawn_loc, b_crimson, level.round_number );
             
             if ( isdefined( ai_nosferatu ) )
             {

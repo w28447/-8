@@ -192,7 +192,7 @@ function function_e8ad1d81( position, owner, normal, velocity, killcament, weapo
     var_96609105 = vectornormalize( velocity );
     var_87d082a9 = vectorscale( var_96609105, -1 );
     var_d6d43109 = 1;
-    var_e76400c0 = undefined;
+    wallpos = undefined;
     wallnormal = undefined;
     var_693f108f = undefined;
     var_8eb0a180 = getweapon( #"wraith_fire_fire" );
@@ -263,7 +263,7 @@ function function_e8ad1d81( position, owner, normal, velocity, killcament, weapo
         
         if ( var_693f108f > 10 )
         {
-            var_e76400c0 = originalposition;
+            wallpos = originalposition;
             wallnormal = var_493d36f9;
             var_d6d43109 = sqrt( 1 - var_69d15ad0[ #"fraction" ] );
             var_959a2a8b = 1;
@@ -328,7 +328,7 @@ function function_e8ad1d81( position, owner, normal, velocity, killcament, weapo
     
     rotation = randomint( 360 );
     
-    if ( normal[ 2 ] < 0.1 && !isdefined( var_e76400c0 ) )
+    if ( normal[ 2 ] < 0.1 && !isdefined( wallpos ) )
     {
         black = ( 0.1, 0.1, 0.1 );
         trace = hitpos( startpos, startpos + normal * -1 * 70 + ( 0, 0, -1 ) * 70, black );
@@ -342,7 +342,7 @@ function function_e8ad1d81( position, owner, normal, velocity, killcament, weapo
     }
     
     var_87d082a9 = normal;
-    level function_8a03d3f3( owner, position, startpos, var_87d082a9, var_d6d43109, rotation, killcament, weapon, customsettings, team, var_e76400c0, wallnormal, var_693f108f );
+    level function_8a03d3f3( owner, position, startpos, var_87d082a9, var_d6d43109, rotation, killcament, weapon, customsettings, team, wallpos, wallnormal, var_693f108f );
 }
 
 // Namespace wraith_fire/wraith_fire
@@ -360,7 +360,7 @@ function function_523961e2( startpos, normal, var_4997e17c, fxindex, fxcount, de
 // Params 13
 // Checksum 0x5d59b051, Offset: 0x1360
 // Size: 0x10b0
-function function_8a03d3f3( owner, impactpos, startpos, normal, multiplier, rotation, killcament, weapon, customsettings, team, var_e76400c0, wallnormal, var_693f108f )
+function function_8a03d3f3( owner, impactpos, startpos, normal, multiplier, rotation, killcament, weapon, customsettings, team, wallpos, wallnormal, var_693f108f )
 {
     defaultdistance = customsettings.var_6193a41b * multiplier;
     defaultdropdistance = getdvarint( #"hash_4270b8db6cf2ceff", 90 );
@@ -521,7 +521,7 @@ function function_8a03d3f3( owner, impactpos, startpos, normal, multiplier, rota
             level.var_d3b05dcb[ level.var_d3b05dcb.size ] = e_light_fx;
         }
         
-        if ( !isdefined( var_e76400c0 ) )
+        if ( !isdefined( wallpos ) )
         {
             var_af1bdf1 = function_a25dee15( var_8eb0a180, var_6b23e1c9, normal, int( customsettings.var_b79d64a9 ), team );
             var_af1bdf1 function_4e5a1dd3( mdl_anchor );
@@ -533,8 +533,8 @@ function function_8a03d3f3( owner, impactpos, startpos, normal, multiplier, rota
         return;
     }
     
-    thread damageeffectarea( owner, startpos, killcament, normal, var_8eb0a180, customsettings, multiplier, var_e76400c0, wallnormal, var_693f108f, mdl_anchor );
-    thread function_9464e4ad( owner, startpos, killcament, normal, var_8eb0a180, customsettings, multiplier, var_e76400c0, wallnormal, var_693f108f, mdl_anchor );
+    thread damageeffectarea( owner, startpos, killcament, normal, var_8eb0a180, customsettings, multiplier, wallpos, wallnormal, var_693f108f, mdl_anchor );
+    thread function_9464e4ad( owner, startpos, killcament, normal, var_8eb0a180, customsettings, multiplier, wallpos, wallnormal, var_693f108f, mdl_anchor );
     var_b1dd2ca0 = getarraykeys( locations[ #"loc" ] );
     
     foreach ( lockey in var_b1dd2ca0 )
@@ -657,7 +657,7 @@ function function_4e5a1dd3( mdl_anchor )
 // Params 11
 // Checksum 0xab9bf636, Offset: 0x2768
 // Size: 0x698
-function damageeffectarea( owner, position, killcament, normal, weapon, customsettings, radius_multiplier, var_e76400c0, wallnormal, var_cbaaea69, mdl_anchor )
+function damageeffectarea( owner, position, killcament, normal, weapon, customsettings, radius_multiplier, wallpos, wallnormal, var_cbaaea69, mdl_anchor )
 {
     level endon( #"game_ended" );
     radius = customsettings.var_6193a41b * radius_multiplier;
@@ -666,9 +666,9 @@ function damageeffectarea( owner, position, killcament, normal, weapon, customse
     trigger_radius_height = height * 2;
     spawnflags = function_30125f88();
     
-    if ( isdefined( var_e76400c0 ) && isdefined( wallnormal ) )
+    if ( isdefined( wallpos ) && isdefined( wallnormal ) )
     {
-        var_21f4217c = var_e76400c0 + vectorscale( wallnormal, 12 ) - ( 0, 0, var_cbaaea69 );
+        var_21f4217c = wallpos + vectorscale( wallnormal, 12 ) - ( 0, 0, var_cbaaea69 );
         var_289a74bc = spawn( "trigger_radius", var_21f4217c, spawnflags, 12, var_cbaaea69 );
         var_289a74bc function_4e5a1dd3( mdl_anchor );
         
@@ -884,7 +884,7 @@ function stopfiresound()
 // Params 11
 // Checksum 0x923229b2, Offset: 0x30b8
 // Size: 0x3dc
-function function_9464e4ad( owner, position, killcament, normal, weapon, customsettings, radius_multiplier, var_e76400c0, wallnormal, var_cbaaea69, mdl_anchor )
+function function_9464e4ad( owner, position, killcament, normal, weapon, customsettings, radius_multiplier, wallpos, wallnormal, var_cbaaea69, mdl_anchor )
 {
     level endon( #"game_ended" );
     radius = customsettings.var_6193a41b * radius_multiplier;
@@ -893,9 +893,9 @@ function function_9464e4ad( owner, position, killcament, normal, weapon, customs
     trigger_radius_height = height * 2;
     spawnflags = function_30125f88();
     
-    if ( isdefined( var_e76400c0 ) && isdefined( wallnormal ) )
+    if ( isdefined( wallpos ) && isdefined( wallnormal ) )
     {
-        var_21f4217c = var_e76400c0 + vectorscale( wallnormal, 12 ) - ( 0, 0, var_cbaaea69 );
+        var_21f4217c = wallpos + vectorscale( wallnormal, 12 ) - ( 0, 0, var_cbaaea69 );
         var_289a74bc = spawn( "trigger_radius", var_21f4217c, spawnflags, 12, var_cbaaea69 );
         var_289a74bc function_4e5a1dd3( mdl_anchor );
     }

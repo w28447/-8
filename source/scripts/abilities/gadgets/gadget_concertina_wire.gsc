@@ -32,7 +32,7 @@ function init_shared( var_4b51853b )
     level.var_87226c31.var_546a220c = "concertina_wire_objective_default";
     level.var_87226c31.var_925bbb2 = [];
     level.var_87226c31.objectivezones = [];
-    level.var_94029383 = &function_4ee7d46a;
+    level.var_94029383 = &destroyconcertinawire;
     setdvar( #"hash_430cc236fe8b2561", 8 );
     ability_player::register_gadget_should_notify( 37, 1 );
     weaponobjects::function_e6400478( #"eq_concertina_wire", &function_57955e51, 1 );
@@ -172,7 +172,7 @@ function function_42b34d5a()
     {
         if ( isdefined( concertinawire ) )
         {
-            concertinawire function_4ee7d46a( 1 );
+            concertinawire destroyconcertinawire( 1 );
         }
     }
 }
@@ -194,7 +194,7 @@ function function_e4f3f17()
     
     if ( isdefined( self ) )
     {
-        self function_4ee7d46a( 1 );
+        self destroyconcertinawire( 1 );
     }
 }
 
@@ -562,7 +562,7 @@ function function_fc4df41e( watcher, owner )
     
     if ( isdefined( var_26c9fcc2 ) )
     {
-        var_26c9fcc2 function_4ee7d46a( 1 );
+        var_26c9fcc2 destroyconcertinawire( 1 );
     }
     
     if ( isdefined( level.onconcertinawireplaced ) )
@@ -672,7 +672,7 @@ function function_a1253947()
 // Params 1
 // Checksum 0xc9c23367, Offset: 0x2530
 // Size: 0x54c
-function function_4ee7d46a( isselfdestruct )
+function destroyconcertinawire( isselfdestruct )
 {
     concertinawire = self;
     concertinawire notify( #"hash_c72d58e3d4735b" );
@@ -793,7 +793,7 @@ function onkilled( var_c946c04c )
         concertinawire [[ level.var_c560f03 ]]( var_c946c04c.attacker, concertinawire.var_d02ddb8e );
     }
     
-    concertinawire thread function_4ee7d46a( 0 );
+    concertinawire thread destroyconcertinawire( 0 );
 }
 
 // Namespace concertina_wire/gadget_concertina_wire
@@ -1228,7 +1228,7 @@ function function_639cb9da()
         return;
     }
     
-    self function_4ee7d46a( 1 );
+    self destroyconcertinawire( 1 );
 }
 
 // Namespace concertina_wire/gadget_concertina_wire
@@ -1316,7 +1316,7 @@ function function_18dd6b22( concertinawire )
         
         if ( waitresult.type == "base_piece_broken" )
         {
-            concertinawire function_4ee7d46a( 0 );
+            concertinawire destroyconcertinawire( 0 );
         }
     }
 }

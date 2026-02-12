@@ -423,7 +423,7 @@ soundalias,#hash_bd53719309b6fc1
 soundalias,#hash_c266934b6e24701
 soundalias,#hash_ca467b11bcaf711
 soundalias,#hash_cb198a299a56aa3
-soundalias,#hash_cc693b3173e7565
+soundalias,#exp_concussive_large
 soundalias,#hash_e095e483463882b
 soundalias,#amb_sink
 soundalias,#hash_fc452f2a7883a1f
@@ -465,7 +465,7 @@ soundalias,#hash_25f5a826653a3d26
 soundalias,#hash_267821e3be703ce7
 soundalias,#hash_26bf012beaa38162
 soundalias,#hash_2730ba20330dff4a
-soundalias,#hash_2748aa2e6dc57ae0
+soundalias,#dst_car_tire_deflate
 soundalias,#amb_flag
 soundalias,#dst_paper
 soundalias,#hash_2a1ab8d0c34b5f47
@@ -566,7 +566,7 @@ soundalias,#hash_6237aeae59de41f1
 soundalias,#hash_6246cfdabe2f2930
 soundalias,#hash_633b9532cf0da169
 soundalias,#hash_663899d42687914d
-soundalias,#hash_66aa6b049c23fa3f
+soundalias,#exp_incindiary_large
 soundalias,#hash_66bf4dbabf6ad256
 soundalias,#hash_675a2478c16df65b
 soundalias,#hash_67a2fae308e7ae92
@@ -603,7 +603,7 @@ soundalias,#hash_79e7070c3130f4a9
 soundalias,#exp_veh_plane_spinout_lp
 soundalias,#hash_7ac5fa6568de2461
 soundalias,#hash_7b03a9cee3b85887
-soundalias,#hash_7c2e59ca3ee725e5
+soundalias,#exp_veh_med
 soundalias,#hash_7c47214c3c5724b2
 soundalias,#hash_7c47334c3c574348
 soundalias,#hash_7dafadd5c6a1c68c

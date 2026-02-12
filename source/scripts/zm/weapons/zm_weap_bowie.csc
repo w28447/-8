@@ -27,17 +27,17 @@ function private __init__()
 // Size: 0xc6
 function private __main__()
 {
-    level.var_8e4168e9 = "bowie_knife";
-    level.var_63af3e00 = "bowie_flourish";
+    level.str_bowie_knife = "bowie_knife";
+    level.str_bowie_flourish = "bowie_flourish";
     var_57858dd5 = "zombie_fists_bowie";
     
     if ( zm_maptable::get_story() == 1 )
     {
-        level.var_8e4168e9 = "bowie_knife_story_1";
-        level.var_63af3e00 = "bowie_flourish_story_1";
+        level.str_bowie_knife = "bowie_knife_story_1";
+        level.str_bowie_flourish = "bowie_flourish_story_1";
         var_57858dd5 = "zombie_fists_bowie_story_1";
     }
     
-    level.w_bowie_knife = getweapon( hash( level.var_8e4168e9 ) );
+    level.w_bowie_knife = getweapon( hash( level.str_bowie_knife ) );
 }
 

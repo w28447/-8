@@ -508,8 +508,8 @@ function function_c6551b38( var_dd74d130 )
 // Size: 0x25a
 function function_2c022ba8( e_player, e_grenade )
 {
-    var_b1c1c5cf = zm_equipment::function_7d948481( 0.1, 0.25, 0.25, 1 );
-    var_5d7b4163 = zm_equipment::function_379f6b5d( 500, var_b1c1c5cf, 1, 4, 50 );
+    n_damage_scale = zm_equipment::function_7d948481( 0.1, 0.25, 0.25, 1 );
+    var_5d7b4163 = zm_equipment::function_379f6b5d( 500, n_damage_scale, 1, 4, 50 );
     
     switch ( self.zm_ai_category )
     {

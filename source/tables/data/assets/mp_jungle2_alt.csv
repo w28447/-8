@@ -8,7 +8,7 @@ physpreset,d#hash_260836fb8b5de3f9
 physpreset,#hash_37a6f1b88647ea58
 physpreset,#hash_3ebbe1918e54893d
 physpreset,d#default
-physpreset,#hash_728d8a88bc780760
+physpreset,#pillow
 physconstraints,#hash_cc17bb22de03b7a
 physconstraints,#hash_1899275a54d23a47
 physconstraints,#hash_4cb9894b834da970
@@ -13749,7 +13749,7 @@ fx,d#hash_1dc986e00ac2d9b1
 fx,d#hash_1df2cd45565d5db3
 fx,d#hash_1f1f6ba9fb9ace3c
 fx,#hash_2147dab1373ff1d8
-fx,d#hash_21f397376b81d9ef
+fx,d#impacts/fx_bul_impact_blood_body_fatal
 fx,d#hash_2618b5463c248896
 fx,d#hash_27604ee16fb27e93
 fx,d#hash_292665b1a78d5f6e

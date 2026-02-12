@@ -1293,10 +1293,10 @@ function function_f29e63ea( node )
         return undefined;
     }
     
-    var_208965cf = node.spawnflags & 262144;
-    var_a26a51ba = node.spawnflags & 524288;
+    peekleft = node.spawnflags & 262144;
+    peekright = node.spawnflags & 524288;
     
-    if ( !var_208965cf && !var_a26a51ba )
+    if ( !peekleft && !peekright )
     {
         return undefined;
     }
@@ -1304,7 +1304,7 @@ function function_f29e63ea( node )
     noderight = anglestoright( node.angles );
     offsetdir = noderight;
     
-    if ( var_208965cf && var_a26a51ba )
+    if ( peekleft && peekright )
     {
         if ( isdefined( self.enemylastseenpos ) )
         {
@@ -1318,7 +1318,7 @@ function function_f29e63ea( node )
             offsetdir = ( 0, 0, 0 ) - offsetdir;
         }
     }
-    else if ( var_208965cf )
+    else if ( peekleft )
     {
         offsetdir = ( 0, 0, 0 ) - offsetdir;
     }

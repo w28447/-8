@@ -1974,9 +1974,9 @@ function powerup_timeout()
     self powerup_show();
     wait_time = 15;
     
-    if ( isdefined( level.var_977f68ea ) )
+    if ( isdefined( level._powerup_timeout_custom_time ) )
     {
-        time = [[ level.var_977f68ea ]]( self );
+        time = [[ level._powerup_timeout_custom_time ]]( self );
         
         if ( time == 0 )
         {

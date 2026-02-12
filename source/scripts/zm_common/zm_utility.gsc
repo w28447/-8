@@ -167,7 +167,7 @@ function is_grief()
 // Params 6
 // Checksum 0xa99d7c79, Offset: 0xa40
 // Size: 0xfa
-function function_d6046228( str_classic, var_756ee4e5, var_bcb9de3e, var_299ea954, str_trials, var_1e31f083 )
+function function_d6046228( str_classic, var_756ee4e5, str_rush, var_299ea954, str_trials, var_1e31f083 )
 {
     if ( is_trials() )
     {
@@ -186,9 +186,9 @@ function function_d6046228( str_classic, var_756ee4e5, var_bcb9de3e, var_299ea95
         {
             return var_299ea954;
         }
-        else if ( isdefined( var_bcb9de3e ) )
+        else if ( isdefined( str_rush ) )
         {
-            return var_bcb9de3e;
+            return str_rush;
         }
     }
     
@@ -6311,14 +6311,14 @@ function function_508f636d()
 // Params 2
 // Checksum 0x63d64f22, Offset: 0xea58
 // Size: 0xb2, Type: bool
-function function_850e7499( weapon, var_20c27a34 = 0 )
+function function_850e7499( weapon, zombie_transformtransform = 0 )
 {
     if ( weapon === getweapon( #"eq_wraith_fire" ) || weapon === getweapon( #"eq_wraith_fire_extra" ) )
     {
         return true;
     }
     
-    if ( var_20c27a34 && weapon === getweapon( #"wraith_fire_fire" ) )
+    if ( zombie_transformtransform && weapon === getweapon( #"wraith_fire_fire" ) )
     {
         return true;
     }

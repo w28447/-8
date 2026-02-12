@@ -1957,11 +1957,11 @@ function function_3c07c22e()
         
         if ( randomint( 100 ) < 50 )
         {
-            mansion_util::function_2057ddc1( self.origin, "knight_trap", "kill", array( 0 ), #"hash_59600c8c9675d5f9", var_1ef7b21, 1, 1 );
+            mansion_util::function_2057ddc1( self.origin, "knight_trap", "kill", array( 0 ), #"knight_trap_kill0", var_1ef7b21, 1, 1 );
             continue;
         }
         
-        mansion_util::function_2057ddc1( self.origin, "knight_trap", "kill", array( 1 ), #"hash_59600b8c9675d446", var_1ef7b21, 1, 1 );
+        mansion_util::function_2057ddc1( self.origin, "knight_trap", "kill", array( 1 ), #"knight_trap_kill1", var_1ef7b21, 1, 1 );
     }
 }
 
@@ -2457,7 +2457,7 @@ function trigger_forest_entrance()
     
     if ( isdefined( player ) )
     {
-        player thread zm_vo::function_a2bd5a0c( #"hash_7cedb4ec0f14ff50", 1 );
+        player thread zm_vo::function_a2bd5a0c( #"vox_forest_door_unlock", 1 );
     }
     
     level thread function_a112ed5e();

@@ -17,18 +17,18 @@
 #using scripts\zm_common\zm_utility;
 #using scripts\zm_common\zm_weapons;
 
-#namespace namespace_47a807c3;
+#namespace zm_powerup_pack_a_punch;
 
-// Namespace namespace_47a807c3/namespace_33e4d1e0
+// Namespace zm_powerup_pack_a_punch/zm_powerup_pap
 // Params 0, eflags: 0x2
 // Checksum 0x4463b3d2, Offset: 0x118
 // Size: 0x3c
 function autoexec __init__system__()
 {
-    system::register( #"hash_7587f8ddd6b0d47a", &__init__, undefined, undefined );
+    system::register( #"zm_powerup_pack_a_punch", &__init__, undefined, undefined );
 }
 
-// Namespace namespace_47a807c3/namespace_33e4d1e0
+// Namespace zm_powerup_pack_a_punch/zm_powerup_pap
 // Params 0
 // Checksum 0x80f724d1, Offset: 0x160
 // Size: 0x4
@@ -37,7 +37,7 @@ function __init__()
     
 }
 
-// Namespace namespace_47a807c3/namespace_33e4d1e0
+// Namespace zm_powerup_pack_a_punch/zm_powerup_pap
 // Params 1
 // Checksum 0xf6b66dbf, Offset: 0x170
 // Size: 0xcc
@@ -52,7 +52,7 @@ function function_8d37256a( e_player )
     level thread zm_powerups::show_on_hud( e_player.team, "pack_a_punch" );
 }
 
-// Namespace namespace_47a807c3/namespace_33e4d1e0
+// Namespace zm_powerup_pack_a_punch/zm_powerup_pap
 // Params 0
 // Checksum 0xdd66d06f, Offset: 0x248
 // Size: 0x5c
@@ -67,7 +67,7 @@ function function_ad31c153()
     }
 }
 
-// Namespace namespace_47a807c3/namespace_33e4d1e0
+// Namespace zm_powerup_pack_a_punch/zm_powerup_pap
 // Params 1
 // Checksum 0x38563a0f, Offset: 0x2b0
 // Size: 0x254
@@ -112,7 +112,7 @@ function function_81eaae89( e_player )
     e_player thread function_40935801();
 }
 
-// Namespace namespace_47a807c3/namespace_33e4d1e0
+// Namespace zm_powerup_pack_a_punch/zm_powerup_pap
 // Params 0
 // Checksum 0x1015031d, Offset: 0x510
 // Size: 0x224
@@ -149,7 +149,7 @@ function function_40935801()
     }
 }
 
-// Namespace namespace_47a807c3/namespace_33e4d1e0
+// Namespace zm_powerup_pack_a_punch/zm_powerup_pap
 // Params 1
 // Checksum 0x1835b255, Offset: 0x740
 // Size: 0x254
@@ -191,7 +191,7 @@ function function_35ae342e( e_player )
     e_player thread function_d0ea0364( w_upgrade_weapon );
 }
 
-// Namespace namespace_47a807c3/namespace_33e4d1e0
+// Namespace zm_powerup_pack_a_punch/zm_powerup_pap
 // Params 1, eflags: 0x4
 // Checksum 0x6e3ed17d, Offset: 0x9a0
 // Size: 0x204

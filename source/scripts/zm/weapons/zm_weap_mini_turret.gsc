@@ -66,8 +66,8 @@ function function_2994c93( v_origin, v_angles, player )
 // Size: 0xd2
 function function_58c4db23( inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype )
 {
-    var_b1c1c5cf = zm_equipment::function_7d948481( 0.1, 0.1, 0.1, 1 );
-    var_5d7b4163 = zm_equipment::function_379f6b5d( damage, var_b1c1c5cf, 0.3, 4, 40 );
+    n_damage_scale = zm_equipment::function_7d948481( 0.1, 0.1, 0.1, 1 );
+    var_5d7b4163 = zm_equipment::function_379f6b5d( damage, n_damage_scale, 0.3, 4, 40 );
     return var_5d7b4163;
 }
 

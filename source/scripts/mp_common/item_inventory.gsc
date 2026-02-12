@@ -1069,9 +1069,9 @@ function private function_6c36ab6b()
         
         if ( isdefined( itementry ) && !( isdefined( itementry.consumable ) && itementry.consumable ) && isarray( itementry.talents ) )
         {
-            foreach ( var_9de7969b in itementry.talents )
+            foreach ( itemtalent in itementry.talents )
             {
-                self addtalent( var_9de7969b.talent );
+                self addtalent( itemtalent.talent );
             }
         }
     }
@@ -1082,9 +1082,9 @@ function private function_6c36ab6b()
         
         if ( isdefined( itementry ) && isarray( itementry.talents ) )
         {
-            foreach ( var_9de7969b in itementry.talents )
+            foreach ( itemtalent in itementry.talents )
             {
-                self addtalent( var_9de7969b.talent );
+                self addtalent( itemtalent.talent );
             }
         }
     }

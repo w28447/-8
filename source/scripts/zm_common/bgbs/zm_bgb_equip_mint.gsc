@@ -51,7 +51,7 @@ function activation()
         }
     }
     
-    self zm_stats::increment_challenge_stat( #"hash_47646e52fcbb190e" );
+    self zm_stats::increment_challenge_stat( #"gum_gobbler_equip_mint" );
 }
 
 // Namespace zm_bgb_equip_mint/zm_bgb_equip_mint

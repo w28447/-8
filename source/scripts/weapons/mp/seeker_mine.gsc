@@ -304,7 +304,7 @@ function function_3019d870( origin, angles )
     
     for ( i = 0; i < mines.size - 2 ; i++ )
     {
-        mines[ i ] seeker_mine::function_afd97197();
+        mines[ i ] seeker_mine::mine_destroy();
     }
     
     if ( isdefined( level.var_9bf1e805 ) )
@@ -360,7 +360,7 @@ function watchabandoned()
         {
             self notify( #"abandoned" );
             self.abandoned = 1;
-            self function_afd97197();
+            self mine_destroy();
             break;
         }
         
@@ -440,7 +440,7 @@ function function_53df8a4c( entnum, abandoned = 0 )
         {
             mine.owner = undefined;
             mine.abandoned = abandoned;
-            mine function_afd97197();
+            mine mine_destroy();
         }
     }
 }
@@ -659,7 +659,7 @@ function watchtargetdeath( seekermine )
     
     if ( isdefined( seekermine ) )
     {
-        seekermine function_afd97197();
+        seekermine mine_destroy();
     }
 }
 
@@ -771,7 +771,7 @@ function cleartarget( target, var_26b2b1bb, seekermine )
     
     if ( isdefined( seekermine ) )
     {
-        seekermine function_afd97197();
+        seekermine mine_destroy();
     }
 }
 
@@ -779,9 +779,9 @@ function cleartarget( target, var_26b2b1bb, seekermine )
 // Params 0
 // Checksum 0x305447a7, Offset: 0x2810
 // Size: 0x3c
-function function_afd97197()
+function mine_destroy()
 {
-    self seeker_mine::function_afd97197();
+    self seeker_mine::mine_destroy();
     self clientfield::set( "enemyvehicle", 0 );
 }
 

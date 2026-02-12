@@ -261,15 +261,15 @@ function function_d74dcf11()
     
     for ( i = 1; i <= 2 ; i++ )
     {
-        var_5bb38717 = struct::get( "powerup_cell_" + i, "targetname" );
-        var_5bb38717.var_ce471a57 = var_d0686fde[ i - 1 ];
+        s_power_up = struct::get( "powerup_cell_" + i, "targetname" );
+        s_power_up.var_ce471a57 = var_d0686fde[ i - 1 ];
         var_74e47e53 = level.zombie_powerups[ var_d0686fde[ i - 1 ] ].model_name;
-        var_2f217f28 = util::spawn_model( var_74e47e53, var_5bb38717.origin + ( 0, 0, 40 ), var_5bb38717.angles );
+        var_2f217f28 = util::spawn_model( var_74e47e53, s_power_up.origin + ( 0, 0, 40 ), s_power_up.angles );
         var_2f217f28 thread function_468c20be();
         var_2f217f28 clientfield::set( "powerup_fx", 1 );
-        var_5bb38717.var_2f217f28 = var_2f217f28;
+        s_power_up.var_2f217f28 = var_2f217f28;
         var_da5e0bea = getent( "cell_shock_box_" + i, "script_string" );
-        var_da5e0bea thread function_13ee3d14( i, var_5bb38717 );
+        var_da5e0bea thread function_13ee3d14( i, s_power_up );
     }
 }
 
@@ -277,12 +277,12 @@ function function_d74dcf11()
 // Params 2
 // Checksum 0x9b4b127, Offset: 0x1520
 // Size: 0x15e
-function function_13ee3d14( n_index, var_5bb38717 )
+function function_13ee3d14( n_index, s_power_up )
 {
     self waittill( #"hash_7e1d78666f0be68b" );
-    var_5bb38717.var_2f217f28 notify( #"finish_wobble" );
-    var_5bb38717.var_2f217f28 delete();
-    spawn_infinite_powerup_drop( var_5bb38717.origin, var_5bb38717.var_ce471a57 );
+    s_power_up.var_2f217f28 notify( #"finish_wobble" );
+    s_power_up.var_2f217f28 delete();
+    spawn_infinite_powerup_drop( s_power_up.origin, s_power_up.var_ce471a57 );
     mdl_door = getent( "powerup_cell_door_" + n_index, "targetname" );
     
     if ( n_index == 1 )

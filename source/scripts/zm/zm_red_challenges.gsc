@@ -1079,7 +1079,7 @@ function function_4a88eb80()
             if ( b_reward )
             {
                 player zm_red_util::function_9ab191d3( 0 );
-                player zm_red_challenges_rewards::function_53a333a8( level.s_active_challenge.n_id );
+                player zm_red_challenges_rewards::give_tribute( level.s_active_challenge.n_id );
                 continue;
             }
             
@@ -1229,7 +1229,7 @@ function function_1d60215()
             
             if ( isdefined( player.var_b05f25ad ) && player.var_b05f25ad && dt <= 2 )
             {
-                player zm_red_challenges_rewards::function_53a333a8( level.s_active_challenge.n_id );
+                player zm_red_challenges_rewards::give_tribute( level.s_active_challenge.n_id );
                 continue;
             }
             
@@ -1507,7 +1507,7 @@ function soul_capture( s_struct, ai_killed )
 {
     if ( zm_utility::is_player_valid( ai_killed.attacker, 0, 1 ) )
     {
-        ai_killed.attacker zm_red_challenges_rewards::function_53a333a8( level.s_active_challenge.n_id );
+        ai_killed.attacker zm_red_challenges_rewards::give_tribute( level.s_active_challenge.n_id );
     }
 }
 
@@ -1533,7 +1533,7 @@ function function_5ee56208( var_5acfb6d )
                 if ( var_72192bfa === var_5acfb6d )
                 {
                     self zm_red_util::function_76f2fea0( 1 );
-                    self zm_red_challenges_rewards::function_53a333a8( level.s_active_challenge.n_id );
+                    self zm_red_challenges_rewards::give_tribute( level.s_active_challenge.n_id );
                 }
                 else
                 {
@@ -1570,7 +1570,7 @@ function function_9ffc76ea( str_notify )
             }
         }
         
-        e_player zm_red_challenges_rewards::function_53a333a8( level.s_active_challenge.n_id, undefined, var_c4979a70 );
+        e_player zm_red_challenges_rewards::give_tribute( level.s_active_challenge.n_id, undefined, var_c4979a70 );
     }
 }
 
@@ -1600,7 +1600,7 @@ function function_bf582bc8( var_ecffa2a8, n_damage )
         
         if ( self.health == self.maxhealth )
         {
-            self zm_red_challenges_rewards::function_53a333a8( level.s_active_challenge.n_id, undefined, n_damage );
+            self zm_red_challenges_rewards::give_tribute( level.s_active_challenge.n_id, undefined, n_damage );
             break;
         }
         else
@@ -1609,7 +1609,7 @@ function function_bf582bc8( var_ecffa2a8, n_damage )
             
             if ( n_delta >= 50 )
             {
-                self zm_red_challenges_rewards::function_53a333a8( level.s_active_challenge.n_id, undefined, n_damage );
+                self zm_red_challenges_rewards::give_tribute( level.s_active_challenge.n_id, undefined, n_damage );
                 n_start_health += 50;
             }
         }
@@ -1632,7 +1632,7 @@ function function_5e882c6f( e_player, var_2b625b6e )
         
         if ( level.var_2c5f83d === var_a24af036 )
         {
-            e_player zm_red_challenges_rewards::function_53a333a8( level.s_active_challenge.n_id );
+            e_player zm_red_challenges_rewards::give_tribute( level.s_active_challenge.n_id );
         }
     }
 }

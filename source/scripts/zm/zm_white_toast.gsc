@@ -1276,7 +1276,7 @@ function function_8149ceff()
                 if ( e_player zm_audio::can_speak() )
                 {
                     zm_hms_util::function_3c173d37();
-                    e_player zm_hms_util::function_51b752a9( #"hash_79b9be92b942990d", -1, 0, 1 );
+                    e_player zm_hms_util::function_51b752a9( #"vox_boss_electric_warn", -1, 0, 1 );
                     b_spoke = 1;
                 }
             }
@@ -1501,7 +1501,7 @@ function function_be93a2bf()
 {
     if ( level.var_65e355f > 1 && level.var_5233174e > 4 )
     {
-        ai = zombie_dog_util::function_62db7b1c( 0 );
+        ai = zombie_dog_util::spawn_single_dog( 0 );
         
         if ( isdefined( ai ) )
         {

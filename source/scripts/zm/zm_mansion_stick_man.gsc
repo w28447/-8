@@ -735,7 +735,7 @@ function private function_959fcbff( player )
     wait 2;
     level.var_e34d55ef setmodel( #"p8_zm_man_dead_tree_branches_burned" );
     
-    if ( player zm_characters::is_character( array( #"hash_5ebf024e1559c04a" ) ) )
+    if ( player zm_characters::is_character( array( #"prt_zm_butler" ) ) )
     {
         player thread function_3ce20299();
     }
@@ -983,7 +983,7 @@ function private function_614e461()
     
     if ( var_6a01d8dc != 12 )
     {
-        self zm_vo::function_a2bd5a0c( #"hash_13b42abbc5ae2147", 0, 1, 9999, 1, 1 );
+        self zm_vo::function_a2bd5a0c( #"vox_plr_ghost_react", 0, 1, 9999, 1, 1 );
         return;
     }
     
@@ -1244,7 +1244,7 @@ function function_6ae66179()
             continue;
         }
         
-        player thread zm_vo::function_a2bd5a0c( #"hash_7b5ae04f082da5a6", 0, 1 );
+        player thread zm_vo::function_a2bd5a0c( #"vox_headstone_react", 0, 1 );
         player thread function_50955e48();
         player thread function_d14e2180( self.stub.var_d62b4d4 );
         level thread zm_unitrigger::unregister_unitrigger( self.stub );
@@ -1651,7 +1651,7 @@ function function_48aadc5d()
 function private function_aad579ef()
 {
     self endon( #"death" );
-    self zm_vo::function_a2bd5a0c( #"hash_4790127983f61eff", 0, 1, 9999 );
+    self zm_vo::function_a2bd5a0c( #"vox_stone_drink_revive_react", 0, 1, 9999 );
     
     if ( getplayers().size > 1 )
     {
@@ -1773,7 +1773,7 @@ function function_cdacc87c()
     
     if ( isdefined( e_player_random ) )
     {
-        e_player_random zm_vo::function_a2bd5a0c( #"hash_16869727f81b98d0", 0, 1, 9999 );
+        e_player_random zm_vo::function_a2bd5a0c( #"vox_cemetary_defend", 0, 1, 9999 );
     }
     
     level flag::wait_till( #"hash_6a70f9021505a71e" );
@@ -1782,7 +1782,7 @@ function function_cdacc87c()
     
     if ( isdefined( e_player_random ) )
     {
-        e_player_random zm_vo::function_a2bd5a0c( #"hash_637b438e59b6efa2", 0, 1, 9999 );
+        e_player_random zm_vo::function_a2bd5a0c( #"vox_cemetary_defend_comp", 0, 1, 9999 );
     }
 }
 
@@ -1926,7 +1926,7 @@ function wave_2()
             b_crimson = 0;
         }
         
-        ai_nos = zm_ai_nosferatu::function_74f25f8a( 1, a_s_locs[ x ], b_crimson );
+        ai_nos = zm_ai_nosferatu::spawn_single_nosferatu( 1, a_s_locs[ x ], b_crimson );
         
         if ( isdefined( ai_nos ) )
         {

@@ -411,11 +411,11 @@ function get_loot_weapons()
     
     lootweapons = self function_cf9658ca();
     var_a448692e = [];
-    var_bc8a634e = associativearray( #"ar_galil_t8", 1 );
+    ignoreweapons = associativearray( #"ar_galil_t8", 1 );
     
     foreach ( weaponname in lootweapons )
     {
-        if ( isdefined( var_bc8a634e[ weaponname ] ) )
+        if ( isdefined( ignoreweapons[ weaponname ] ) )
         {
             continue;
         }

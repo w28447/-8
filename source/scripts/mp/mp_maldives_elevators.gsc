@@ -113,8 +113,8 @@ function on_game_playing()
         
         foreach ( door in elevator.doors )
         {
-            door.var_856b91cc = struct::get( door.target );
-            door.open_to = struct::get( door.var_856b91cc.target );
+            door.close_to = struct::get( door.target );
+            door.open_to = struct::get( door.close_to.target );
             
             if ( door.script_noteworthy !== "top" && door.script_noteworthy !== "bottom" )
             {
@@ -245,8 +245,8 @@ function open_door( location )
 function close_door( elevator )
 {
     self.state = "closed";
-    var_856b91cc = self.var_856b91cc;
-    self moveto( ( var_856b91cc.origin[ 0 ], var_856b91cc.origin[ 1 ], self.origin[ 2 ] ), 0.37 );
+    close_to = self.close_to;
+    self moveto( ( close_to.origin[ 0 ], close_to.origin[ 1 ], self.origin[ 2 ] ), 0.37 );
     self waittill( #"movedone", #"death" );
     
     if ( isdefined( self ) )

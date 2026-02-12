@@ -226,7 +226,7 @@ scriptbundle,#p8_fxanim_mp_silo_netting_orange_05_bundle
 scriptbundle,#p8_fxanim_mp_silo_satelite_01_bundle
 scriptbundle,#p8_fxanim_mp_silo_netting_orange_06_bundle
 menu,#elevator
-string,#hash_e428880b38b4d8d
+string,#OBJECTIVES_COOP_WAYPOINT_HACK
 eventstring,#floor
 objective,#hash_4a72ffa3664320bc
 objective,#hash_5f5d7bf9f14c0a8f
@@ -271,7 +271,7 @@ soundalias,#hash_bce4c947d361ec7
 soundalias,#hash_bd53719309b6fc1
 soundalias,#hash_c266934b6e24701
 soundalias,#hash_c4a4d3584e7ac22
-soundalias,#hash_cc693b3173e7565
+soundalias,#exp_concussive_large
 soundalias,#hash_d76aadb39668a12
 soundalias,#hash_da9b897f42c4253
 soundalias,#hash_da9bb97f42c476c
@@ -279,7 +279,7 @@ soundalias,#hash_da9bc97f42c491f
 soundalias,#hash_da9bd97f42c4ad2
 soundalias,#hash_da9be97f42c4c85
 soundalias,#amb_silo_elev_loop
-soundalias,#hash_ea468b0e309c6d5
+soundalias,#amb_sign
 soundalias,#hash_ed48b121a56b336
 soundalias,#hash_f7960ad68ff0bbf
 soundalias,#hash_fd5a0a07bb1c8df
@@ -540,7 +540,7 @@ soundalias,#hash_64b625ab8706f109
 soundalias,#hash_657e8ed3dbc52ebe
 soundalias,#hash_662cc921feebd61b
 soundalias,#vox_tvoi_tutor_ruin_final_1_comp
-soundalias,#hash_66aa6b049c23fa3f
+soundalias,#exp_incindiary_large
 soundalias,#hash_67adb4bc04b6108f
 soundalias,#hash_67ba645b2ef8664f
 soundalias,#hash_67e1b634a1e1c1ba

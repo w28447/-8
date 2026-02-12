@@ -228,7 +228,7 @@ function function_87bf6422( killstreak )
         return false;
     }
     
-    player notify( #"hash_6e666a0689c3fd62" );
+    player notify( #"swat_team_called" );
     player thread function_6936559a( context );
     player thread spawn_swat_team( player, context, player.origin );
     util::function_5a68c330( 21, player.team, player getentitynumber(), level.killstreaks[ #"swat_team" ].uiname );

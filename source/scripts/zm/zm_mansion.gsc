@@ -329,7 +329,7 @@ function on_player_spawned()
     self thread function_3cdddd34();
     self.var_aed1893c = [];
     
-    if ( self zm_characters::is_character( array( #"hash_5ebf024e1559c04a" ) ) )
+    if ( self zm_characters::is_character( array( #"prt_zm_butler" ) ) )
     {
         self zm_audio::function_87714659( &zm_mansion_sound::function_c8d42aba, #"revive", #"down" );
         self zm_audio::function_87714659( &zm_mansion_sound::function_e432aeb6, #"pap", #"wait" );
@@ -1940,7 +1940,7 @@ function function_c8ce0a17( var_404e4288, var_8dd554ee )
         b_crimson = 1;
     }
     
-    ai = zm_ai_nosferatu::function_74f25f8a( 0, undefined, b_crimson );
+    ai = zm_ai_nosferatu::spawn_single_nosferatu( 0, undefined, b_crimson );
     
     if ( isdefined( ai ) )
     {
@@ -2289,13 +2289,13 @@ function function_ff767eac()
                 zombie_werewolf_util::function_47a88a0c( 1, undefined, 1 );
                 break;
             case #"hash_141442e4fca71a1d":
-                zombie_dog_util::function_62db7b1c( 1, undefined );
+                zombie_dog_util::spawn_single_dog( 1, undefined );
                 break;
             case #"hash_50f5df2c61fab9c0":
-                zm_ai_nosferatu::function_74f25f8a( 1, undefined );
+                zm_ai_nosferatu::spawn_single_nosferatu( 1, undefined );
                 break;
             case #"hash_737d2d8656f8cee":
-                zm_ai_nosferatu::function_74f25f8a( 1, undefined, 1 );
+                zm_ai_nosferatu::spawn_single_nosferatu( 1, undefined, 1 );
                 break;
             case #"reset_rings":
                 level.mdl_ring_outer rotateto( level.mdl_ring_outer.v_start, 1 );

@@ -237,7 +237,7 @@ function function_2713a96a()
             
             if ( level.var_1b737b93 === 1 )
             {
-                e_who thread zm_orange_util::function_51b752a9( #"hash_34b136597d3788ee" );
+                e_who thread zm_orange_util::function_51b752a9( #"vox_crank_attach" );
             }
             
             self thread function_665b4fa6();

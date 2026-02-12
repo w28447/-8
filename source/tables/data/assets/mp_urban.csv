@@ -27,7 +27,7 @@ physpreset,#hash_65148e1ddc4e6921
 physpreset,d#default
 physpreset,#hash_6d3562f6377ac3d8
 physpreset,#hash_715fa5c9c471e804
-physpreset,#hash_728d8a88bc780760
+physpreset,#pillow
 physpreset,#p7_tools_hammer
 physpreset,#hash_7b9f145dc80ed9c4
 physpreset,#hash_7d18644260d51b91
@@ -30177,7 +30177,7 @@ physpreset,#hash_5c4fae1eea294484
 physpreset,d#hash_5d4384a8d215e8d0
 physpreset,#p7_diner_table_salt
 physpreset,#hash_62668f696856a49b
-physpreset,#hash_695e6bd10c7f85e8
+physpreset,#p7_food_fruit
 physpreset,#hash_6c3541d637690d46
 physpreset,d#brick
 physpreset,#hash_7c8269a9c8880da7
@@ -32103,7 +32103,7 @@ fx,d#hash_1f0623bbb94aa556
 fx,d#hash_1f1f6ba9fb9ace3c
 fx,#hash_1f41a2bd4eb2cbb3
 fx,#hash_2147dab1373ff1d8
-fx,d#hash_21f397376b81d9ef
+fx,d#impacts/fx_bul_impact_blood_body_fatal
 fx,d#hash_2618b5463c248896
 fx,d#hash_27604ee16fb27e93
 fx,d#hash_292665b1a78d5f6e

@@ -191,7 +191,7 @@ function function_d332685()
     
     if ( level.var_79260935.var_f4c36022 === 0 && level.var_79260935.var_30df7623 === 0 )
     {
-        e_who thread zm_orange_util::function_51b752a9( #"hash_18bc664341e86310" );
+        e_who thread zm_orange_util::function_51b752a9( #"vox_punchcard_1_pickup" );
         level zm_ui_inventory::function_7df6bb60( "zm_orange_zipquest_keycard_1", 1 );
     }
     else
@@ -234,7 +234,7 @@ function function_f83bfaa()
         {
             if ( level.var_79260935.var_30df7623 == 0 )
             {
-                e_who thread zm_orange_util::function_51b752a9( #"hash_6997edb52b235dd9" );
+                e_who thread zm_orange_util::function_51b752a9( #"vox_punchcard_1_insert" );
                 self function_61298be5();
             }
             else
@@ -246,7 +246,7 @@ function function_f83bfaa()
             continue;
         }
         
-        e_who thread zm_orange_util::function_51b752a9( #"hash_6997edb52b235dd9" );
+        e_who thread zm_orange_util::function_51b752a9( #"vox_punchcard_1_insert" );
         self function_61298be5();
         e_who thread zm_orange_util::function_51b752a9( #"hash_6b8c87cc827523c2" );
         self function_2ec6a1aa();
@@ -607,7 +607,7 @@ function function_1f269398()
     
     if ( level.var_98138d6b > 1 )
     {
-        level.var_1c53964e thread zm_hms_util::function_6a0d675d( #"hash_4b68766a3d07f0da", 0 );
+        level.var_1c53964e thread zm_hms_util::function_6a0d675d( #"vox_vault_defend", 0 );
     }
     
     level flag::set( #"infinite_round_spawning" );
@@ -623,7 +623,7 @@ function function_1f269398()
     
     if ( level.var_98138d6b > 1 )
     {
-        level.var_1c53964e zm_hms_util::function_6a0d675d( #"hash_4b68766a3d07f0da", 1 );
+        level.var_1c53964e zm_hms_util::function_6a0d675d( #"vox_vault_defend", 1 );
     }
     
     level flag::set( #"vault_unlocked" );
@@ -728,12 +728,12 @@ function function_be4c3b3e()
 // Size: 0x6c
 function function_7c831be0( e_player )
 {
-    e_player zm_orange_util::function_51b752a9( #"hash_7809b2dff89ac8d0" );
+    e_player zm_orange_util::function_51b752a9( #"vox_musicbox_pickup" );
     wait 1;
     
     if ( level.var_98138d6b > 1 )
     {
-        level.var_1c53964e thread zm_hms_util::function_6a0d675d( #"hash_7809b2dff89ac8d0" );
+        level.var_1c53964e thread zm_hms_util::function_6a0d675d( #"vox_musicbox_pickup" );
     }
 }
 

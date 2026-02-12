@@ -837,7 +837,7 @@ function remove_on_offhand_fire( func, obj )
 // Params 2
 // Checksum 0xfbf1a71a, Offset: 0x1df8
 // Size: 0x3c
-function function_4b7977fe( func, obj )
+function on_grenade_launcher_fired( func, obj )
 {
     add_callback( #"grenade_launcher_fired", func, obj );
 }
@@ -846,7 +846,7 @@ function function_4b7977fe( func, obj )
 // Params 2
 // Checksum 0xc315505c, Offset: 0x1e40
 // Size: 0x3c
-function function_61583a71( func, obj )
+function remove_on_grenade_launcher_fired( func, obj )
 {
     remove_callback( #"grenade_launcher_fired", func, obj );
 }
@@ -1382,7 +1382,7 @@ function event_handler[event_e9b4bb47] function_7dba9a1( eventstruct )
 // Params 1, eflags: 0x40
 // Checksum 0x261a9ab8, Offset: 0x2f68
 // Size: 0x74
-function event_handler[player_boast] function_3b159f77( eventstruct )
+function event_handler[player_boast] codecallback_playerboast( eventstruct )
 {
     self endon( #"disconnect" );
     
@@ -1456,7 +1456,7 @@ function event_handler[actor_cloned] codecallback_actorcloned( eventstruct )
 // Size: 0xd8
 function event_handler[event_1524de24] function_5b0a9275( eventstruct )
 {
-    [[ level.var_6788bf11 ]]( eventstruct.inflictor, eventstruct.attacker, eventstruct.amount, eventstruct.flags, eventstruct.mod, eventstruct.weapon, eventstruct.position, eventstruct.direction, eventstruct.hit_location, eventstruct.damage_origin, eventstruct.time_offset, eventstruct.bone_index, eventstruct.model_index, eventstruct.part_name, eventstruct.surface_type, eventstruct.normal );
+    [[ level.callbackscriptmoverdamage ]]( eventstruct.inflictor, eventstruct.attacker, eventstruct.amount, eventstruct.flags, eventstruct.mod, eventstruct.weapon, eventstruct.position, eventstruct.direction, eventstruct.hit_location, eventstruct.damage_origin, eventstruct.time_offset, eventstruct.bone_index, eventstruct.model_index, eventstruct.part_name, eventstruct.surface_type, eventstruct.normal );
 }
 
 // Namespace callback/vehicle_spawned
@@ -1732,7 +1732,7 @@ function abort_level()
     level.callbackplayermelee = &callback_void;
     level.callbackactordamage = &callback_void;
     level.callbackactorkilled = &callback_void;
-    level.var_6788bf11 = &callback_void;
+    level.callbackscriptmoverdamage = &callback_void;
     level.callbackvehicledamage = &callback_void;
     level.callbackvehiclekilled = &callback_void;
     level.callbackactorspawned = &callback_void;
@@ -1770,7 +1770,7 @@ function event_handler[freefall] function_5019e563( eventstruct )
 // Params 1, eflags: 0x40
 // Checksum 0xa8dcf8f4, Offset: 0x4298
 // Size: 0x2c
-function event_handler[parachute] function_87b05fa3( eventstruct )
+function event_handler[parachute] codecallback_parachute( eventstruct )
 {
     self callback( #"parachute", eventstruct );
 }
@@ -1815,11 +1815,11 @@ function event_handler[event_d6f9e6ad] function_8877d89( eventstruct )
 
 #/
 
-// Namespace callback/event_31e1c5e9
+// Namespace callback/trigger_spawned
 // Params 1, eflags: 0x40
 // Checksum 0x315da427, Offset: 0x43b8
 // Size: 0x5c
-function event_handler[event_31e1c5e9] function_7d45bff( eventstruct )
+function event_handler[trigger_spawned] codecallback_triggerspawned( eventstruct )
 {
     self endon( #"death" );
     level flagsys::wait_till( "system_init_complete" );
@@ -1881,7 +1881,7 @@ function event_handler[bot_stop_update] codecallback_botstopupdate( eventstruct 
 // Params 1, eflags: 0x40
 // Checksum 0x25fb09ce, Offset: 0x45d8
 // Size: 0x34
-function event_handler[voice_event] function_451258ba( eventstruct )
+function event_handler[voice_event] codecallback_voiceevent( eventstruct )
 {
     self voice_events::function_c710099c( eventstruct.event, eventstruct.params );
 }

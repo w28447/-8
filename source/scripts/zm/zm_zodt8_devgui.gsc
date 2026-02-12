@@ -90,7 +90,7 @@
             case #"hash_687e53bfcb79ec3b":
                 if ( isdefined( level.chests ) && isdefined( level.chest_index ) && isdefined( level.chests[ level.chest_index ].zbarrier ) )
                 {
-                    level.chests[ level.chest_index ].zbarrier thread namespace_b45e3f05::function_8baed388();
+                    level.chests[ level.chest_index ].zbarrier thread zodt8_side_quests::function_8baed388();
                 }
                 
                 break;
@@ -223,7 +223,7 @@
     function function_649d5f75()
     {
         a_e_players = getplayers();
-        namespace_4a807bff::function_8498110e( a_e_players[ 0 ] );
+        zodt8_wonder_weapon_quest::function_8498110e( a_e_players[ 0 ] );
     }
 
     // Namespace zm_zodt8_devgui/zm_zodt8_devgui
@@ -239,16 +239,16 @@
             switch ( var_99416cd7 )
             {
                 case #"decay":
-                    namespace_4a807bff::function_ca37502d( e_player );
+                    zodt8_wonder_weapon_quest::function_ca37502d( e_player );
                     break;
                 case #"plasma":
-                    namespace_4a807bff::function_1b182e8c( e_player );
+                    zodt8_wonder_weapon_quest::function_1b182e8c( e_player );
                     break;
                 case #"purity":
-                    namespace_4a807bff::function_b9b7b8c( e_player );
+                    zodt8_wonder_weapon_quest::function_b9b7b8c( e_player );
                     break;
                 case #"radiance":
-                    namespace_4a807bff::function_b3695700( e_player );
+                    zodt8_wonder_weapon_quest::function_b3695700( e_player );
                     break;
             }
         }
@@ -267,13 +267,13 @@
             switch ( str_color )
             {
                 case #"red":
-                    namespace_b45e3f05::give_flare( "<dev string:x567>" );
+                    zodt8_side_quests::give_flare( "<dev string:x567>" );
                     break;
                 case #"green":
-                    namespace_b45e3f05::give_flare( "<dev string:x56d>" );
+                    zodt8_side_quests::give_flare( "<dev string:x56d>" );
                     break;
                 case #"blue":
-                    namespace_b45e3f05::give_flare( "<dev string:x575>" );
+                    zodt8_side_quests::give_flare( "<dev string:x575>" );
                     break;
             }
         }

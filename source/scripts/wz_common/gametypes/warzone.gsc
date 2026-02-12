@@ -2210,7 +2210,7 @@ function event_handler[freefall] function_5019e563( eventstruct )
 // Params 1, eflags: 0x40
 // Checksum 0x777ff0b0, Offset: 0x7618
 // Size: 0x44
-function event_handler[parachute] function_87b05fa3( eventstruct )
+function event_handler[parachute] codecallback_parachute( eventstruct )
 {
     if ( eventstruct.parachute )
     {

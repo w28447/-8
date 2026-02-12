@@ -549,8 +549,8 @@ function function_2a9a30bb( death, inflictor, attacker, damage, flags, mod, weap
     }
     
     n_damage = damage;
-    var_bb6709b6 = zm_equipment::function_379f6b5d( 100 );
-    self namespace_9ff9f642::burn( #"zhield_zword_turret", attacker, weapon, var_bb6709b6 );
+    n_burn_damage = zm_equipment::function_379f6b5d( 100 );
+    self namespace_9ff9f642::burn( #"zhield_zword_turret", attacker, weapon, n_burn_damage );
     
     switch ( self.zm_ai_category )
     {

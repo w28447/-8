@@ -582,12 +582,12 @@ function on_death( einflictor, eattacker, idamage, smeansofdeath, weapon, vdir, 
     bundle = self.var_22a05c26;
     var_7d4f75e = isdefined( vehicle.var_7d4f75e ) ? vehicle.var_7d4f75e : 0;
     var_a9911aeb = bundle.kstype;
-    var_a8527b41 = vehicle.originalteam;
-    var_ebe66d84 = vehicle.killstreak_id;
+    vehicle_original_team = vehicle.originalteam;
+    vehicle_killstreak_id = vehicle.killstreak_id;
     
     if ( !var_7d4f75e )
     {
-        killstreakrules::killstreakstop( var_a9911aeb, var_a8527b41, var_ebe66d84 );
+        killstreakrules::killstreakstop( var_a9911aeb, vehicle_original_team, vehicle_killstreak_id );
     }
     
     vehicle clientfield::set( "enemyvehicle", 0 );
@@ -608,7 +608,7 @@ function on_death( einflictor, eattacker, idamage, smeansofdeath, weapon, vdir, 
     
     if ( var_7d4f75e )
     {
-        killstreakrules::killstreakstop( var_a9911aeb, var_a8527b41, var_ebe66d84 );
+        killstreakrules::killstreakstop( var_a9911aeb, vehicle_original_team, vehicle_killstreak_id );
     }
     
     if ( isdefined( vehicle ) )

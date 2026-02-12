@@ -960,7 +960,7 @@ scriptbundle,#defaultscriptbundle
 scriptbundlelist,#hash_4828ba03b928f289
 rumble,#defaultrumble
 rumble,#defaultweapon_fire
-aimtable,#hash_4163309711ca68a9
+aimtable,#$default_aim_table
 animselectortable,#default.ai_ast
 animstatemachine,#default.ai_asm
 behaviortree,#default.ai_bt

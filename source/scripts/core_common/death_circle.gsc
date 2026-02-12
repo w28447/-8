@@ -793,7 +793,7 @@ function private function_ce0f27e0()
         {
             var_7dbb0472 = int( gettime() - player.var_1f1736dc );
             player stats::function_d40764f3( #"hash_44caad08afb32e51", var_7dbb0472 );
-            player match_record::function_34800eec( #"hash_3e8d4387ea9e7f42", var_7dbb0472 );
+            player match_record::inc_player_stat( #"hash_3e8d4387ea9e7f42", var_7dbb0472 );
         }
     }
 }
@@ -929,7 +929,7 @@ function private function_dc15ad60()
                     
                     player dodamage( damage, origin, level.deathcircle, undefined, undefined, "MOD_DEATH_CIRCLE" );
                     player stats::function_d40764f3( #"hash_3498c2a577aa328e", int( damage ) );
-                    player match_record::function_34800eec( #"hash_3498c2a577aa328e", int( damage ) );
+                    player match_record::inc_player_stat( #"hash_3498c2a577aa328e", int( damage ) );
                 }
                 
                 continue;

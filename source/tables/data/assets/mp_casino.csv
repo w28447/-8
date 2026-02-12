@@ -32,7 +32,7 @@ physpreset,#p7_divider_rope_01_sign
 physpreset,d#default
 physpreset,#hash_6c93b7b3ae579a30
 physpreset,#hash_715fa5c9c471e804
-physpreset,#hash_728d8a88bc780760
+physpreset,#pillow
 physpreset,#hash_734a4793a7fe791f
 physpreset,#hash_751ecdbf540223b6
 physpreset,#p7_eth_decor_01_statue_elephant
@@ -33274,7 +33274,7 @@ physpreset,d#hash_5d4384a8d215e8d0
 physpreset,#p7_diner_table_salt
 physpreset,#hash_6535279eca48032c
 physpreset,#p7_bottle_glass_wine_01
-physpreset,#hash_695e6bd10c7f85e8
+physpreset,#p7_food_fruit
 physpreset,#hash_6c3541d637690d46
 physpreset,#hash_775adecec52f77c6
 xmodel,#hash_3047982bab3169
@@ -35726,7 +35726,7 @@ fx,d#hash_1df2cd45565d5db3
 fx,d#hash_1f1f6ba9fb9ace3c
 fx,#hash_212bce954d1e21ea
 fx,#hash_2147dab1373ff1d8
-fx,d#hash_21f397376b81d9ef
+fx,d#impacts/fx_bul_impact_blood_body_fatal
 fx,#hash_23d037b655510068
 fx,d#hash_2618b5463c248896
 fx,#hash_269f259a4cd762e8

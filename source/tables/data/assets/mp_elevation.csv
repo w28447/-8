@@ -13,7 +13,7 @@ physpreset,#hash_3ebbe1918e54893d
 physpreset,#hash_4195e8f5d68dc0a6
 physpreset,#hash_43d7e4f72db83a15
 physpreset,#hash_4c5369a4293b73ea
-physpreset,#hash_4d2fdc9bc6b02255
+physpreset,#boot
 physpreset,#p7_debris_trash_cup_coffee_02
 physpreset,#p7_medical_gauze_roll_sealed
 physpreset,#p7_medical_gauze_pads_box
@@ -21,7 +21,7 @@ physpreset,#p7_medical_gauze_pads_box_blue
 physpreset,#p7_medical_gauze_sanitation_towels_02
 physpreset,#hash_624de6e4c9fe2254
 physpreset,d#default
-physpreset,#hash_728d8a88bc780760
+physpreset,#pillow
 physpreset,#hash_794cbbc3d49e6788
 physpreset,#p7_cai_incense_cone_burner_01_lid
 physpreset,#hash_7b9f145dc80ed9c4
@@ -32433,7 +32433,7 @@ physpreset,#hash_5c4fae1eea294484
 physpreset,d#hash_5d4384a8d215e8d0
 physpreset,#p7_diner_table_salt
 physpreset,#hash_62668f696856a49b
-physpreset,#hash_695e6bd10c7f85e8
+physpreset,#p7_food_fruit
 physpreset,#hash_6c3541d637690d46
 xmodel,#p8_wood_beam_generic_01
 xmodel,#p8_lv8_door_wood_painted_01_left
@@ -34801,7 +34801,7 @@ fx,d#hash_1f1f6ba9fb9ace3c
 fx,#hash_200f622fe59abb84
 fx,#hash_212bce954d1e21ea
 fx,#hash_2147dab1373ff1d8
-fx,d#hash_21f397376b81d9ef
+fx,d#impacts/fx_bul_impact_blood_body_fatal
 fx,d#hash_2618b5463c248896
 fx,#hash_269f259a4cd762e8
 fx,d#hash_27604ee16fb27e93

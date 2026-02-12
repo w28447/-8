@@ -50,7 +50,7 @@ function init_clientfields()
     clientfield::register( "world", "" + #"hash_31a98ee76e835504", 1, 1, "int", &function_eae1fc85, 0, 0 );
     clientfield::register( "world", "" + #"hash_3284b0cf34bfe44e", 1, 1, "int", &function_85c61737, 0, 0 );
     clientfield::register( "world", "" + #"hash_b143d97bf92fc66", 1, 1, "counter", &function_e322771e, 0, 0 );
-    clientfield::register( "world", "" + #"hash_28f972533bb468fd", 1, 1, "int", &function_d20d32f2, 0, 0 );
+    clientfield::register( "world", "" + #"hash_28f972533bb468fd", 1, 1, "int", &ititcomplet, 0, 0 );
 }
 
 // Namespace zm_office_ee_pernell_archive/zm_office_ee_pernell_archive
@@ -106,7 +106,7 @@ function function_e322771e( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0x6400f78, Offset: 0x668
 // Size: 0x5c
-function function_d20d32f2( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function ititcomplet( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     level.var_4a2723a3 scene::play( "state_15" );
 }

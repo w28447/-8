@@ -400,7 +400,7 @@ function function_8f6cb08()
     
     if ( level.var_b4fe6eed && b_spawned && isdefined( self.e_killer ) )
     {
-        self.e_killer thread zm_orange_util::function_51b752a9( #"hash_4c18ae1377d349ed" );
+        self.e_killer thread zm_orange_util::function_51b752a9( #"vox_dynamite_zombie_drop" );
         level.var_b4fe6eed = 0;
     }
     

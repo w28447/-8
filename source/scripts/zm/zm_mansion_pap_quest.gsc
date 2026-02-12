@@ -637,7 +637,7 @@ function function_686b9870()
         
         if ( zm_utility::is_player_valid( player ) && !var_f7a8259e )
         {
-            player thread zm_vo::function_a2bd5a0c( #"hash_7edbe7e0a2def479", 1 );
+            player thread zm_vo::function_a2bd5a0c( #"vox_forest_locked_gate", 1 );
             self delete();
         }
         else if ( var_f7a8259e )
@@ -732,7 +732,7 @@ function function_93e11617( a_ents, e_player )
     
     if ( zm_utility::is_player_valid( e_player ) )
     {
-        e_player thread zm_vo::function_a2bd5a0c( #"hash_29c7299aeeb543d1" );
+        e_player thread zm_vo::function_a2bd5a0c( #"vox_forest_gate_unlock" );
     }
 }
 
@@ -883,7 +883,7 @@ function function_1c62cd2()
     self endon( #"death" );
     var_9d90ef8b = scene::function_12479eba( #"aib_vign_cust_zm_mnsn_forest_gate_intro" );
     wait var_9d90ef8b * 0.8;
-    mansion_util::function_2057ddc1( level.var_a6583e6d.origin, "werewolf", "react_first", array( 0, 1 ), #"hash_1c4067bfba5af231" );
+    mansion_util::function_2057ddc1( level.var_a6583e6d.origin, "werewolf", "react_first", array( 0, 1 ), #"werewolf_react_first" );
 }
 
 // Namespace mansion_pap/zm_mansion_pap_quest
@@ -896,7 +896,7 @@ function function_74bb3b2()
     
     foreach ( s_wolf in a_s_wolves )
     {
-        ai_wolf = zombie_dog_util::function_62db7b1c( 1, s_wolf );
+        ai_wolf = zombie_dog_util::spawn_single_dog( 1, s_wolf );
         
         if ( isdefined( ai_wolf ) )
         {
@@ -1747,9 +1747,9 @@ function function_16288b92( str_type, s_loc, mdl_key, vol_transform )
             
             if ( s_trophy.targetname == "monkey_loc" )
             {
-                var_7b57e2cc = getent( "monkey_lid", "targetname" );
-                var_7b57e2cc rotateroll( -27, 0.5 );
-                var_7b57e2cc playsound( #"hash_56315c5fd55c0092" );
+                mdl_lid = getent( "monkey_lid", "targetname" );
+                mdl_lid rotateroll( -27, 0.5 );
+                mdl_lid playsound( #"hash_56315c5fd55c0092" );
             }
             
             level flag::wait_till( var_47323b73.str_flag );
@@ -1759,9 +1759,9 @@ function function_16288b92( str_type, s_loc, mdl_key, vol_transform )
             
             if ( s_trophy.targetname == "monkey_loc" )
             {
-                var_7b57e2cc = getent( "monkey_lid", "targetname" );
-                var_7b57e2cc rotateroll( 27, 0.5 );
-                var_7b57e2cc playsound( #"hash_3d156fc836a3f16" );
+                mdl_lid = getent( "monkey_lid", "targetname" );
+                mdl_lid rotateroll( 27, 0.5 );
+                mdl_lid playsound( #"hash_3d156fc836a3f16" );
             }
             
             e_fx delete();
@@ -2067,7 +2067,7 @@ function function_51367ff6( v_loc )
     
     if ( isdefined( e_proclaimer ) && zm_utility::is_player_valid( e_proclaimer ) )
     {
-        e_proclaimer zm_vo::function_a2bd5a0c( #"hash_69cfed93cf2b2ec5", 1.9, 1, 9999, 0 );
+        e_proclaimer zm_vo::function_a2bd5a0c( #"vox_altar_nosferatu_react", 1.9, 1, 9999, 0 );
     }
 }
 

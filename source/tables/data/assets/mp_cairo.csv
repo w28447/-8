@@ -15,7 +15,7 @@ physpreset,#hash_37a4397b805ad372
 physpreset,#hash_37a6f1b88647ea58
 physpreset,#hash_3be7b524420dc0bb
 physpreset,#hash_3f8f279f390590eb
-physpreset,#hash_408bcb61fe20d903
+physpreset,#ashtray
 physpreset,#hash_431c97927d212ebd
 physpreset,#p7_debris_trash_snack_bag_05
 physpreset,#p7_debris_trash_snack_bag_06
@@ -32,7 +32,7 @@ physpreset,d#default
 physpreset,#hash_6bf7ea30dba8a3d1
 physpreset,#hash_6bfdf75daa259df3
 physpreset,#picture_frame
-physpreset,#hash_728d8a88bc780760
+physpreset,#pillow
 physpreset,#hash_7342842c3a9f6b06
 physpreset,#hash_7b9f145dc80ed9c4
 physpreset,#hash_7bd4cb158cb2eae1
@@ -27577,7 +27577,7 @@ physpreset,#hash_5c4fae1eea294484
 physpreset,d#hash_5d4384a8d215e8d0
 physpreset,#hash_5f26c6699f8b1c00
 physpreset,#p7_bottle_glass_wine_01
-physpreset,#hash_695e6bd10c7f85e8
+physpreset,#p7_food_fruit
 physpreset,#hash_6c3541d637690d46
 xmodel,#hash_f1c2278600acf
 xmodel,#p8_wood_beam_generic_03

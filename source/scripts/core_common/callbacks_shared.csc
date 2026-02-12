@@ -1380,7 +1380,7 @@ function event_handler[freefall] function_5019e563( eventstruct )
 // Params 1, eflags: 0x40
 // Checksum 0x9594aa6, Offset: 0x30c0
 // Size: 0x5c
-function event_handler[parachute] function_87b05fa3( eventstruct )
+function event_handler[parachute] codecallback_parachute( eventstruct )
 {
     self callback( #"parachute", eventstruct );
     self entity_callback( #"parachute", eventstruct.localclientnum, eventstruct );

@@ -5373,7 +5373,7 @@ gesture,#hash_5107e96ed517401
 gesture,#hash_53d7df670856145
 gesture,#hash_54386d7bab31331
 gesture,#hash_5fcf38371610f68
-gesture,#hash_68d7ce2e7cf19a6
+gesture,#boast_mic_drop
 gesture,#hash_695042b8a78d950
 gesture,#hash_6ef3acbeeb52abe
 gesture,#hash_71332d3f616ccf9
@@ -5731,7 +5731,7 @@ gesture,#hash_6942eb7d1a4776dc
 gesture,#boast_victory_dance
 gesture,#hash_6a34568beed5f965
 gesture,#boast_finger_spin_fem
-gesture,#hash_6a5388254998d5b1
+gesture,#boast_mic_drop_fem
 gesture,#hash_6a5fa36fd78469ec
 gesture,#boast_was_i_shot
 gesture,#hash_6a84ba6c15cd8cab
@@ -5763,7 +5763,7 @@ gesture,#hash_725a866804d93fa3
 gesture,#hash_729bd7bce17e5b3d
 gesture,#hash_72d30e2c9775835a
 gesture,#hash_72e31a79799aaf61
-gesture,#hash_73218d50d57cdf5f
+gesture,#boast_30_fem
 gesture,#boast_guitar_playing_fem
 gesture,#boast_dog_tags
 gesture,#boast_the_wave
@@ -5835,7 +5835,7 @@ gesturetable,#hash_7e8743a2c914c5a2
 rumble,#combat_robot_land
 rumble,#damage_light
 rumble,#hash_449520f94829141
-rumble,#hash_4ceacd890f3b6ec
+rumble,#reload_clipin
 rumble,#defaultweapon_melee
 rumble,#doublejump_rumble_start
 rumble,#plane_rumble
@@ -13954,7 +13954,7 @@ xanim,#vm_shotgun_full_auto_fire_ads
 xanim,#vm_smg_folding_reload
 xanim,#pb_brawler_crouch2prone
 xanim,#hash_699ec2efbb71f285
-xanim,#hash_69a79068dae16b85
+xanim,#vm_zipline_loop
 xanim,#hash_69a88d3dd4dd4313
 xanim,#hash_69a88e3dd4dd44c6
 xanim,#vm_action_figure_melee_in
@@ -17155,7 +17155,7 @@ material,#score_bar_bg
 material,#damage_feedback_flak
 string,#hash_a7f00a5f3194d
 string,#hash_100d75bdc47d9e
-string,#hash_10fee2023ccc2b
+string,#contract/attachments3_secondary_ekia_desc
 string,#hash_275bdf937d6f16
 string,#hash_2f7961351f7f7c
 string,#hash_427a38ed7574ba
@@ -17202,7 +17202,7 @@ string,#hash_172576cea7f1af3
 string,#hash_180813cf2be95ea
 string,#hash_187aad79c5ab44c
 string,#score/vision_pulse_assist
-string,#hash_1c32f00015d190f
+string,#contract/specialist_equipment_multikills_desc
 string,#hash_1c39d89a906e940
 string,#hash_1c39e89a906eaf3
 string,#hash_1caa389a90d1220
@@ -17278,7 +17278,7 @@ string,#hash_3184402c05ae6ab
 string,#hash_31da86564f9e7ed
 string,#zmui/fmj_desc
 string,#emotes/cherry_bomb
-string,#hash_33980b071901ecf
+string,#contract/hotswap_multikills
 string,#hash_386705bd8002561
 string,#hash_386715bd8002714
 string,#hash_386735bd8002a7a
@@ -17306,7 +17306,7 @@ string,#contract/play_public_match_games_desc
 string,#hash_46c164bab128c08
 string,#hash_46faf6f91049ff0
 string,#hash_47c434412f73222
-string,#hash_47e1955bea1fc19
+string,#mpui/camo_flectarn
 string,#hash_49ae19c5f05ea90
 string,#hash_49c5d6ce52125b6
 string,#hash_49ccbb27710362d
@@ -17708,7 +17708,7 @@ string,#mpui/gl
 string,#hash_11716505e897ca4d
 string,#emotes/icu
 string,#mpui/dw
-string,#hash_11844df90c43c32c
+string,#mpui/camo_dante
 string,#hash_11918fdcc7284eee
 string,#hash_119ffc049b3dbaab
 string,#hash_11a27c48ce7e1e00
@@ -17810,7 +17810,7 @@ string,#hash_156f3eb4f1059f75
 string,#zm_contract/explosive_kills_desc
 string,#hash_15b32efe6350b741
 string,#hash_15b42a93c929118a
-string,#hash_15b50559752dd744
+string,#mpui/camo_redhex
 string,#score/hacked_uav
 string,#hash_15cf0d46af70291b
 string,#hash_15d9e6b10ac220dc
@@ -17934,7 +17934,7 @@ string,#hash_1a7e00d0d7fa3d73
 string,#hash_1a866074f81f7230
 string,#hash_1a872599a8845aa5
 string,#hash_1a8763cb080f29d5
-string,#hash_1a87ffe007cd5f6c
+string,#mpui/lockon_only
 string,#score/disruptor_kill
 string,#hash_1a9faa870dbd2b70
 string,#hash_1a9fab870dbd2d23
@@ -17987,7 +17987,7 @@ string,#hash_1c6c9decd238b61d
 string,#hash_1c72fd2f303d7d2e
 string,#hash_1c778cfca2fe2290
 string,#hash_1c89b529fb254b37
-string,#hash_1c93858d6991c626
+string,#mpui/camo_integer
 string,#hash_1cc6074a001e1722
 string,#hash_1cccdf3e71b5d14b
 string,#hash_1cccf42405720988
@@ -18003,7 +18003,7 @@ string,#hash_1d2987d73ad2598c
 string,#score/rcxd_kill
 string,#hash_1d34be815a6e8760
 string,#hash_1d3d5f2370873255
-string,#hash_1d53f9779cf2942d
+string,#contract/specialist_weapon_ekia
 string,#emotes/close_call
 string,#hash_1d7bc2dac7c54225
 string,#emotes/shush
@@ -18029,7 +18029,7 @@ string,#hash_1e707de859bae530
 string,#hash_1e74ae356247c01a
 string,#hash_1e889b8dd57dca44
 string,#hash_1e8b2f238626167a
-string,#hash_1ea3e52553a4e545
+string,#contract/specialist_equipment_multikills
 string,#score/stim_kill
 string,#hash_1edeaea75ff5929a
 string,#contract/hellstorm_kills_desc
@@ -18107,7 +18107,7 @@ string,#hash_2116ac2b57c4ad7b
 string,#hash_21225d12bb851e2c
 string,#score/hacked_rcxd
 string,#score/hacked_disruptor
-string,#hash_2134d5f76749f9bf
+string,#contract/specialist_equipment_ekia_desc
 string,#hash_2137a2e83efbaa9d
 string,#hash_21470103c18f7bfd
 string,#hash_2148659a87162a77
@@ -18163,9 +18163,9 @@ string,#hash_23793a65c44aca7f
 string,#hash_2383ff0d216f591a
 string,#emotes/mic_drop
 string,#hash_238a5cea9242f65f
-string,#hash_23a508474af5d42f
+string,#mpui/bolt_action
 string,#score/flag_grab
-string,#hash_23d45d79e7cc975d
+string,#mpui/camo_jungle
 string,#emotes/speed_demon
 string,#hash_23daf89b7268f90b
 string,#hash_23dd904dba1c6b24
@@ -18182,9 +18182,9 @@ string,#weapon/ar_an94_t8
 string,#hash_24225c96ed63b645
 string,#mpui/pump
 string,#score/still_alive_large_bonus
-string,#hash_2447e6c50de541fd
+string,#mpui/semi_auto
 string,#hash_245e18d58bd29452
-string,#hash_2462544f3066322a
+string,#mpui/camo_huntsman
 string,#hash_2466871d19356c80
 string,#hash_246c7d9118b22299
 string,#hash_24949f1d50a8a1a8
@@ -18336,7 +18336,7 @@ string,#hash_28e560dc0fc2888b
 string,#hash_28f8d698fe4d79d2
 string,#hash_28f91e4c9a916c82
 string,#hash_28f96f700fd703b0
-string,#hash_2903042e98504cc7
+string,#zmui/high_caliber_2_desc
 string,#hash_29039037f5a90db0
 string,#hash_29039137f5a90f63
 string,#hash_292d02aa3338a8ba
@@ -18390,13 +18390,13 @@ string,#zm_contract/smg_kills_desc
 string,#weapon/ar_doublebarrel_t8
 string,#emotes/bubbles
 string,#hash_2b082ab65e0ce211
-string,#hash_2b0ba0fd1be8c752
+string,#zm_contract/pack_a_punch_desc
 string,#hash_2b0fae1c09a3d8a9
 string,#hash_2b27d20d2cfc1069
 string,#hash_2b299b2c390eda43
 string,#hash_2b3b512ed39878b6
 string,#hash_2b3d791eb05ec296
-string,#hash_2b40461a235c9616
+string,#mpui/camo_ardent
 string,#contract/multikill_3_or_better
 string,#hash_2b6d17fb221c0b8f
 string,#hash_2b80206858ebf347
@@ -18513,7 +18513,7 @@ string,#emotes/im_the_tree-placeholder
 string,#hash_2f6eb9c102b831ad
 string,#hash_2f6ec545187372ef
 string,#hash_2f6f403a949082b2
-string,#hash_2f75827412f48897
+string,#mpui/camo_burnt
 string,#hash_2f8bb64325eeac62
 string,#hash_2f973fa6cb4c4c6f
 string,#hash_2fb3131835600a7c
@@ -18575,13 +18575,13 @@ string,#hash_326997583fdb3b4e
 string,#hash_3279150dc6bd1b3b
 string,#hash_327b92f099f4b62e
 string,#hash_327e35e0c2a044b4
-string,#hash_3292e34998476e76
+string,#mpui/camo_snowjob
 string,#contract/gunship_kills_desc
 string,#hash_32a30b4709f59a72
 string,#hash_32d3e77bbb434752
 string,#zm_contract/classic_rounds_desc
 string,#hash_32fb238dad4cad83
-string,#hash_32fe051f51155d11
+string,#contract/attachments3_secondary_ekia
 string,#hash_3302fc33c18f9062
 string,#emotes/boogaloo
 string,#hash_33105d49e7fd102e
@@ -18632,7 +18632,7 @@ string,#hash_347504f7414c2861
 string,#score/killed_defender
 string,#hash_3496862576522f10
 string,#hash_34a1412bd528e2b8
-string,#hash_34b9c2282a63d5dc
+string,#mpui/full_auto
 string,#hash_34ba64196d3915cf
 string,#hash_34c5c38792458392
 string,#hash_34cf0d722c8c4882
@@ -18687,7 +18687,7 @@ string,#hash_3731ed3521569a15
 string,#hash_374dcbac8f358d32
 string,#emotes/sleepy
 string,#hash_37882745a027d6c6
-string,#hash_37985d4852ef634d
+string,#contract/specialist_weapon_multikills
 string,#hash_37a585f10db42cd6
 string,#hash_37a722e15f6ca95a
 string,#hash_37a880a6c19fb58f
@@ -18741,7 +18741,7 @@ string,#mpui/killcounter
 string,#hash_39532c0759be0628
 string,#hash_3974ac045b456608
 string,#mpui/extbarrel2
-string,#hash_39805e8219046e77
+string,#contract/specialist_weapon_multikills_desc
 string,#hash_3988ded028ad8813
 string,#hash_398f6e53238f019b
 string,#mpui/grip_desc
@@ -18858,7 +18858,7 @@ string,#hash_3e6de6e1b244aa9b
 string,#emotes/good_job
 string,#hash_3e94e68f8da53992
 string,#hash_3e954cd4aca24196
-string,#hash_3e968f73a7d7e44e
+string,#mpui/camo_chameleon
 string,#hash_3ea3e1b1a4fccde6
 string,#hash_3ec09f1d5f890168
 string,#hash_3ec0a01d5f89031b
@@ -18922,7 +18922,7 @@ string,#hash_40a537df4e105ddb
 string,#hash_40a7bfecb265ebf6
 string,#hash_40c36cf0b6ed5b01
 string,#hash_40c7d5c770dfcce5
-string,#hash_40d983f1118110a3
+string,#contract/combat_axe_kills_desc
 string,#mpui/fastlockon
 string,#hash_40efb898ab135095
 string,#hash_40fb554f4ca18e70
@@ -18941,7 +18941,7 @@ string,#mpui/mixclip_desc
 string,#hash_4169caaf649733eb
 string,#hash_41746926408b72ed
 string,#hash_417472ec44d85adc
-string,#hash_4180961353c85f0f
+string,#contract/attachments5_primary_ekia
 string,#hash_4189ac87a715908b
 string,#weapon/pistol_burst_t8
 string,#score/ice_pick_shutdown
@@ -18997,7 +18997,7 @@ string,#hash_43374b5ab9becdaa
 string,#hash_4354ce586f246cf5
 string,#hash_435dc732ad175fa7
 string,#hash_435fa7e1fd0d6431
-string,#hash_4361bc63de0848d3
+string,#mpui/camo_jungletek
 string,#contract/pistol_kills
 string,#hash_437df738324383d2
 string,#hash_438e6348929a6111
@@ -19010,7 +19010,7 @@ string,#hash_43dac25dc601c8cd
 string,#score/shamrock_enemy_deposit
 string,#hash_43fcbe340404e167
 string,#hash_43fe6cadb07b27b2
-string,#hash_44149fa37d4d853f
+string,#mpui/camo_bliss
 string,#hash_4428582a3a279e88
 string,#zmscore/open_door
 string,#hash_443df3798bb4f99a
@@ -19143,7 +19143,7 @@ string,#mpui/adsreload_desc
 string,#hash_4928c806d9124136
 string,#hash_493896cffd4b3eb7
 string,#weapon/melee_slaybell_t8
-string,#hash_4953dbaa91647587
+string,#contract/attachments5_secondary_ekia
 string,#hash_4956ceda68d39424
 string,#hash_4973da5ba484b2ae
 string,#weapon/melee_stopsign_t8
@@ -19164,7 +19164,7 @@ string,#hash_4a0bcd8f9bd6da40
 string,#hash_4a121fc2f4c37c19
 string,#hash_4a13bf8a44475d80
 string,#hash_4a2ec97650a90bcb
-string,#hash_4a324d42cf256472
+string,#mpui/camo_heatstroke
 string,#hash_4a584bc8c443f246
 string,#hash_4a5e12f6beaf91f8
 string,#hash_4a608d3fbb6904f9
@@ -19296,7 +19296,7 @@ string,#hash_4f328d20aa0e3e8e
 string,#weapon/sniper_powerbolt_t8
 string,#hash_4f6039c88a14de84
 string,#hash_4f62c811527ed6e8
-string,#hash_4f6b3bc14fc4bd9e
+string,#contract/play_ctf_desc
 string,#hash_4f7b5f6b0d0dd6ba
 string,#hash_4f9629defd152a00
 string,#hash_4f99bcb4b9950fd9
@@ -19313,7 +19313,7 @@ string,#zm_contract/magicbox_desc
 string,#hash_50133454135e1e2a
 string,#hash_501e3ab95c242212
 string,#hash_502a083c6a539223
-string,#hash_502cca55de20d536
+string,#mpui/camo_fear
 string,#hash_5034a38eb120453c
 string,#zm_contract/magicbox
 string,#hash_504d0c3a65fc01b3
@@ -19476,7 +19476,7 @@ string,#hash_556fbdaebf02d158
 string,#emotes/times_up
 string,#hash_55d8280cb49ca691
 string,#hash_55e874d67d806e5b
-string,#hash_56074383a6c3b738
+string,#zmui/high_caliber_desc
 string,#hash_560d002c6e40e5df
 string,#hash_56112328235060d8
 string,#hash_561a6371fe1e6f3a
@@ -19565,7 +19565,7 @@ string,#emotes/blind_luck
 string,#emotes/you_missed_it
 string,#hash_599f36fd5981b9d9
 string,#hash_59a4c0cc6b9eabb0
-string,#hash_59aa227403cf2741
+string,#contract/hotswap_multikills_desc
 string,#weapon/smg_standard_t8
 string,#hash_59d8f5ea27f1cde1
 string,#hash_59e00c2b556a460b
@@ -19603,7 +19603,7 @@ string,#hash_5a79acd7b52e5dfe
 string,#hash_5a8684ec0091f62b
 string,#mpui/hipgrip
 string,#hash_5aac06b447c12b80
-string,#hash_5abca820cfab2cd8
+string,#mpui/camo_arctic
 string,#hash_5acae5f224c146a9
 string,#hash_5ad64e6ad693fc17
 string,#hash_5ad7fc7ed848bfa1
@@ -19633,7 +19633,7 @@ string,#hash_5b57ca9476df902b
 string,#hash_5b6171c70ed24a7b
 string,#hash_5b6c9258c15463be
 string,#score/escort_robot_reboot
-string,#hash_5b7536f294f156a6
+string,#mpui/camo_battle
 string,#hash_5b7869449fe46050
 string,#hash_5b7d92d01367c28d
 string,#emotes/scallywag
@@ -19650,7 +19650,7 @@ string,#hash_5bdf2332dc6aab47
 string,#hash_5bdf2432dc6aacfa
 string,#hash_5bdf2532dc6aaead
 string,#hash_5be3bc56da64c14f
-string,#hash_5be3e03706267915
+string,#contract/specialist_equipment_ekia
 string,#hash_5befe7797bce6583
 string,#hash_5bf1ed2cc3b74f86
 string,#hash_5c015018c35f2955
@@ -19729,7 +19729,7 @@ string,#hash_5e7562c02254f1b3
 string,#score/purifier_shutdown
 string,#hash_5ea0fcd2bbc57d4f
 string,#hash_5ebe96a28ae3d025
-string,#hash_5ec68d99caf17930
+string,#mpui/camo_contagious
 string,#hash_5ecc73f51bce9de6
 string,#hash_5ed9d75091fdb706
 string,#score/swat_grenade_kill_blinded_enemy
@@ -19774,13 +19774,13 @@ string,#hash_60321c76c7981d76
 string,#hash_603975bc30519d35
 string,#hash_604f9c909aa14286
 string,#hash_60560252cd80c556
-string,#hash_605752ea765651a9
+string,#contract/combat_axe_kills
 string,#hash_6063cd6ae0f6ce28
 string,#hash_607993fb651c3014
 string,#hash_607eb3ebecaa26ac
 string,#zmscore/alive_round_end
 string,#contract/play_infection
-string,#hash_60a2e99cf0e191e1
+string,#mpui/camo_interpol
 string,#hash_60a3cb06a22ff689
 string,#hash_60a58c15a0b5dd6e
 string,#mpui/extbarrel2_desc
@@ -19878,7 +19878,7 @@ string,#hash_63752840e40f3c8d
 string,#hash_637d8e77ecba98e7
 string,#hash_6380149948c2822f
 string,#hash_6398b9906e6019dc
-string,#hash_639a907fae7467b1
+string,#mpui/camo_6speed
 string,#hash_639f7debeee28feb
 string,#hash_63a2474ab3946f78
 string,#weapon/shotgun_fullauto_t8
@@ -20003,7 +20003,7 @@ string,#zm_contract/gauntlet_silver
 string,#hash_67d7198c5a50646c
 string,#hash_680be25fbf7de3d4
 string,#hash_68169bcad3ce18c2
-string,#hash_681f77325f2a4097
+string,#contract/specialist_weapon_ekia_desc
 string,#emotes/unstoppable
 string,#hash_6842b9fbd4273313
 string,#hash_6842e9cc12c1faba
@@ -20120,7 +20120,7 @@ string,#hash_6c6a1bb98aa145e3
 string,#emotes/stubborn
 string,#hash_6c77910f61aee275
 string,#hash_6c7cf85b494507e4
-string,#hash_6c7f93f478dc82c2
+string,#zm_contract/pack_a_punch
 string,#zm_contract/special_kills
 string,#hash_6c8d7834e1591a50
 string,#hash_6c9261890b006e97
@@ -20147,10 +20147,10 @@ string,#hash_6d48ee9b11a07ab7
 string,#hash_6d497d1a1b1f0c91
 string,#hash_6d49b9d160b37de6
 string,#hash_6d556c8a2a657497
-string,#hash_6d5a7ba8f5515881
+string,#contract/attachments5_primary_ekia_desc
 string,#hash_6d63fe35c4c77289
 string,#hash_6d675782f6271d93
-string,#hash_6d832831f5532f00
+string,#mpui/camo_wmd
 string,#contract/play_prop_hunt_desc
 string,#hash_6d99ea20b9cb0556
 string,#hash_6da055292a91f706
@@ -20258,7 +20258,7 @@ string,#weapon/pistol_fullauto_t8
 string,#emotes/touchdown
 string,#hash_718aad96adb251ab
 string,#hash_719285f3b4706051
-string,#hash_719c8f681cfe5019
+string,#contract/attachments5_secondary_ekia_desc
 string,#hash_71a3569f51e77572
 string,#mpui/damage2
 string,#hash_71b73a2e06b481c9
@@ -20362,7 +20362,7 @@ string,#score/bomb_detonated
 string,#hash_7631f7ec4ff792b3
 string,#hash_763d25ddd92d9530
 string,#emotes/pop_it_And_lock_it
-string,#hash_7664f631b276facc
+string,#mpui/camo_ash
 string,#hash_7672595e7184fd2b
 string,#hash_768c5aeecc2d7cc4
 string,#emotes/en_garde
@@ -20479,7 +20479,7 @@ string,#hash_7b20b2c9de1f2be5
 string,#hash_7b20b3c9de1f2d98
 string,#hash_7b20b4c9de1f2f4b
 string,#emotes/pushups
-string,#hash_7b3fe150d7b4cbae
+string,#contract/play_ctf
 string,#zm_contract/pistol_kills
 string,#hash_7b5830cb082cb512
 string,#hash_7b69e094402f2cb4
@@ -20536,7 +20536,7 @@ string,#hash_7d4c19fb8173c5ee
 string,#score/war_killed_defender_in_zone
 string,#hash_7d7503807cd964dc
 string,#hash_7d8432226fc83696
-string,#hash_7db4187f695ce2a6
+string,#mpui/camo_woodlums
 string,#emotes/chef_zom_bay
 string,#weapon/smg_minigun_t8
 string,#hash_7ddc3102370f358d
@@ -20707,7 +20707,7 @@ fx,#hash_7b951deec27b35c1
 fx,#killstreaks/fx_air_drop_marker_red
 fx,#hash_7d69ee9822b45157
 fx,#explosions/fx8_exp_equipment_lg
-fx,#hash_7e4a861318714ac9
+fx,#weapon/fx_hero_annhilatr_death_blood
 lui_menu_data,#endalpha
 lui_menu_data,#material
 lui_menu_data,#starttime
@@ -20916,7 +20916,7 @@ client_fx,#hash_2027e37012378951
 client_fx,#hash_202ecf70123d8603
 client_fx,#hash_20be4018daff2722
 client_fx,#hash_21676a58d92eb053
-client_fx,#hash_21f397376b81d9ef
+client_fx,#impacts/fx_bul_impact_blood_body_fatal
 client_fx,#_t6/weapon/claymore/fx_claymore_laser
 client_fx,#hash_22422ba79bd4eaaa
 client_fx,#hash_224ed66be5768225
@@ -21290,7 +21290,7 @@ client_fx,#hash_7c8eb8a0655e7382
 client_fx,#fire/fx_fire_ai_robot_leg_left_os
 client_fx,#fire/fx_fire_ai_robot_leg_left_loop
 client_fx,#hash_7d69ee9822b45157
-client_fx,#hash_7e4a861318714ac9
+client_fx,#weapon/fx_hero_annhilatr_death_blood
 client_fx,#hash_7ec434e0dd9c06bb
 client_fx,#hash_7edcc6c60385d08e
 client_fx,#hash_7f06bcdfdf44b707

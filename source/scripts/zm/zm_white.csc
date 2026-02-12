@@ -90,7 +90,7 @@ function event_handler[level_init] main( eventstruct )
     level zm_white_computer_system::preload();
     level zm_white_special_rounds::register_clientfields();
     level zm_white_portals::init_clientfields();
-    level namespace_a01a2431::preload();
+    level zm_white_ww_quest_weapon::preload();
     level namespace_87b5173f::init();
     level zm_white_ww_quest_mk2v::preload();
     level zm_white_ww_quest_mk2x::preload();

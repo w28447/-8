@@ -946,9 +946,9 @@ function function_f15c4657()
     }
     
     level.sam_clue_dig_traversal++;
-    str_alias = #"hash_63097ff550404256" + level.sam_clue_dig_traversal + "_pickup";
+    str_alias = #"vox_artifact_" + level.sam_clue_dig_traversal + "_pickup";
     
-    if ( self zm_characters::is_character( array( #"hash_5ebf024e1559c04a" ) ) && level.sam_clue_dig_traversal == 3 )
+    if ( self zm_characters::is_character( array( #"prt_zm_butler" ) ) && level.sam_clue_dig_traversal == 3 )
     {
         self zm_vo::function_a2bd5a0c( #"hash_4c470787fc7738eb" );
         self playsoundtoplayer( #"hash_663346a99e3bdffc", self );
@@ -1178,7 +1178,7 @@ function function_268efa09( b_active = 0 )
 // Params 9
 // Checksum 0x1ece246f, Offset: 0x3578
 // Size: 0x344
-function function_2057ddc1( v_loc, str_cat, var_bff0cf99, var_440d7980, var_d8ad5f6e, var_1ef7b21 = 10, b_wait_if_busy = 1, var_39238c39 = 0, var_eb20a7c = 0 )
+function function_2057ddc1( v_loc, str_cat, str_subcat, var_440d7980, var_d8ad5f6e, var_1ef7b21 = 10, b_wait_if_busy = 1, var_39238c39 = 0, var_eb20a7c = 0 )
 {
     level endon( #"end_game", #"intermission" );
     
@@ -1222,7 +1222,7 @@ function function_2057ddc1( v_loc, str_cat, var_bff0cf99, var_440d7980, var_d8ad
                     vox_idgun_upgrade_ready_orb_ = 0;
                 }
                 
-                str_vo = "vox_" + str_cat + "_" + var_bff0cf99 + "_plr_" + n_character_index + "_" + vox_idgun_upgrade_ready_orb_;
+                str_vo = "vox_" + str_cat + "_" + str_subcat + "_plr_" + n_character_index + "_" + vox_idgun_upgrade_ready_orb_;
                 
                 if ( isdefined( var_eb20a7c ) && var_eb20a7c )
                 {

@@ -446,7 +446,7 @@ function zombshell_cooldown( var_85dcb56c )
         self zm_perks::function_2ac7579( self.var_849c3bcf, 2, #"perk_zombshell" );
     }
     
-    self thread function_7d72c6f9( var_85dcb56c );
+    self thread cooldown_bar( var_85dcb56c );
     wait var_85dcb56c;
     self thread reset_cooldown();
 }
@@ -455,7 +455,7 @@ function zombshell_cooldown( var_85dcb56c )
 // Params 1
 // Checksum 0xbf56aa91, Offset: 0x16d8
 // Size: 0x160
-function function_7d72c6f9( var_85dcb56c )
+function cooldown_bar( var_85dcb56c )
 {
     self endon( #"disconnect", #"hash_4aaf55c36b37725e" );
     self.var_fc63c7bc = var_85dcb56c;

@@ -152,7 +152,7 @@ function private function_e75e796()
     self.health = self.maxhealth;
     self.var_490042cd = gettime();
     
-    if ( self.subarchetype === #"hash_fd7b9665529dd42" || self.subarchetype === #"hash_1520c8987a671df0" )
+    if ( self.subarchetype === #"skeleton_helmet_sword_and_shield" || self.subarchetype === #"skeleton_helmet_spear" )
     {
         namespace_81245006::initweakpoints( self, #"c_t8_zmb_skeleton_helmet_weakpoint_def" );
     }
@@ -393,16 +393,16 @@ function private function_42a1dabd()
         var_ee3cfcfe scene::stop( var_67f0b3a6 );
         var_cee6fc30 = #"ai_t8_zm_red_spar_swrd_rebuild_01";
         
-        if ( self.subarchetype == #"skeleton_spear" || self.subarchetype == #"hash_1520c8987a671df0" )
+        if ( self.subarchetype == #"skeleton_spear" || self.subarchetype == #"skeleton_helmet_spear" )
         {
             var_cee6fc30 = #"ai_t8_zm_red_spar_spear_rebuild_01";
         }
         
-        var_93a62fe = zm_utility::get_closest_valid_player( self.origin, self.ignore_player );
+        closest_valid_player = zm_utility::get_closest_valid_player( self.origin, self.ignore_player );
         
-        if ( isdefined( var_93a62fe ) )
+        if ( isdefined( closest_valid_player ) )
         {
-            angles = vectortoangles( vectornormalize( var_93a62fe.origin - self.origin ) );
+            angles = vectortoangles( vectornormalize( closest_valid_player.origin - self.origin ) );
             self forceteleport( self.origin, angles );
             var_ee3cfcfe.angles = angles;
         }
@@ -411,15 +411,15 @@ function private function_42a1dabd()
         var_708e5e40.angles = ( var_ee3cfcfe.angles[ 0 ], var_ee3cfcfe.angles[ 1 ] + 90, var_ee3cfcfe.angles[ 2 ] );
         var_704f0f40 = #"p8_fxanim_zm_red_spartoi_rise_no_helm_bundle";
         
-        if ( self.subarchetype == #"hash_fd7b9665529dd42" && !( isdefined( self.var_992c3917 ) && self.var_992c3917 ) )
+        if ( self.subarchetype == #"skeleton_helmet_sword_and_shield" && !( isdefined( self.var_992c3917 ) && self.var_992c3917 ) )
         {
             var_704f0f40 = #"p8_fxanim_zm_red_spartoi_rise_bundle";
         }
-        else if ( self.subarchetype == #"hash_1520c8987a671df0" && !( isdefined( self.var_992c3917 ) && self.var_992c3917 ) )
+        else if ( self.subarchetype == #"skeleton_helmet_spear" && !( isdefined( self.var_992c3917 ) && self.var_992c3917 ) )
         {
             var_704f0f40 = #"p8_fxanim_zm_red_spartoi_rise_spear_bundle";
         }
-        else if ( self.subarchetype == #"hash_1520c8987a671df0" || self.subarchetype == #"skeleton_spear" )
+        else if ( self.subarchetype == #"skeleton_helmet_spear" || self.subarchetype == #"skeleton_spear" )
         {
             var_704f0f40 = #"p8_fxanim_zm_red_spartoi_rise_spear_no_helm_bundle";
         }

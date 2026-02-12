@@ -20,7 +20,7 @@ physpreset,#p7_brick_worn_painted_white_01
 physpreset,#hash_37a6f1b88647ea58
 physpreset,#hash_3be7b524420dc0bb
 physpreset,#hash_3ebbe1918e54893d
-physpreset,#hash_408bcb61fe20d903
+physpreset,#ashtray
 physpreset,#hash_431c97927d212ebd
 physpreset,#p7_bag_cement_blue
 physpreset,#p7_debris_trash_snack_bag_06
@@ -36,7 +36,7 @@ physpreset,#hash_5f291023be02f060
 physpreset,#hash_624de6e4c9fe2254
 physpreset,#p7_bag_cement_red
 physpreset,d#default
-physpreset,#hash_728d8a88bc780760
+physpreset,#pillow
 physpreset,#hash_746553b910857e5e
 physpreset,#p7_tools_hammer
 physpreset,#p7_cai_incense_cone_burner_01_lid
@@ -38707,7 +38707,7 @@ physpreset,#p7_diner_table_salt
 physpreset,#hash_5f26c6699f8b1c00
 physpreset,#p7_picture_frame_square_01
 physpreset,#p7_bottle_glass_wine_01
-physpreset,#hash_695e6bd10c7f85e8
+physpreset,#p7_food_fruit
 physpreset,#hash_6c3541d637690d46
 physpreset,#p7_water_cooler_digital_bottle
 physpreset,#p7_basket_wicker_01
@@ -41653,7 +41653,7 @@ fx,#hash_1e33826c1a410891
 fx,d#hash_1f1f6ba9fb9ace3c
 fx,#hash_212bce954d1e21ea
 fx,#hash_2147dab1373ff1d8
-fx,d#hash_21f397376b81d9ef
+fx,d#impacts/fx_bul_impact_blood_body_fatal
 fx,d#hash_2618b5463c248896
 fx,#hash_269f259a4cd762e8
 fx,d#hash_27604ee16fb27e93

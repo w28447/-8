@@ -379,7 +379,7 @@ function private function_dd2db3df()
 // Params 4, eflags: 0x4
 // Checksum 0xb548e59a, Offset: 0x1768
 // Size: 0xa8
-function private function_95785950( var_c625106d, var_86163b89, n_stage, var_39acfdda )
+function private function_95785950( var_c625106d, var_86163b89, n_stage, str_subcategory )
 {
     self notify( "683195b7da79b6b9" );
     self endon( "683195b7da79b6b9" );
@@ -394,7 +394,7 @@ function private function_95785950( var_c625106d, var_86163b89, n_stage, var_39a
             continue;
         }
         
-        zm_audio::function_bca32e49( "m_quest", var_39acfdda );
+        zm_audio::function_bca32e49( "m_quest", str_subcategory );
     }
 }
 

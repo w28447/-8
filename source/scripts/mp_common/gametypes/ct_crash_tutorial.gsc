@@ -922,7 +922,7 @@ function function_9b2c973f()
     level endon( #"squad_dead" );
     a_bots = self ct_bots::function_71ec2b36();
     var_c5a2f4b9 = a_bots.size;
-    var_c378327e = 0;
+    n_start_ammo = 0;
     var_2cf11630 = 0;
     n_start_health = 0;
     n_current_health = 0;
@@ -933,11 +933,11 @@ function function_9b2c973f()
     foreach ( bot in a_bots )
     {
         n_start_health += bot.health;
-        var_c378327e += bot getammocount( bot.currentweapon );
+        n_start_ammo += bot getammocount( bot.currentweapon );
     }
     
     var_9192acd9 = int( n_start_health * 0.5 );
-    var_8fe4b14 = int( var_c378327e * 0.5 );
+    var_8fe4b14 = int( n_start_ammo * 0.5 );
     
     while ( true )
     {
@@ -2220,7 +2220,7 @@ function ammo_watch( str_event )
     
     while ( true )
     {
-        var_75d65e7e = self getammocount( self.currentweapon );
+        n_ammo_start = self getammocount( self.currentweapon );
         self.var_1e0b475b = 0;
         s_result = level.players[ 0 ] waittill( #"supplypod_placed" );
         
@@ -2231,7 +2231,7 @@ function ammo_watch( str_event )
             wait randomfloatrange( 1, 2.5 );
             var_d9fa3a2c = self getammocount( self.currentweapon );
             
-            if ( var_d9fa3a2c <= var_75d65e7e && !( isdefined( self.var_1e0b475b ) && self.var_1e0b475b ) )
+            if ( var_d9fa3a2c <= n_ammo_start && !( isdefined( self.var_1e0b475b ) && self.var_1e0b475b ) )
             {
                 if ( isdefined( str_event ) )
                 {

@@ -566,7 +566,7 @@ soundalias,#hash_bce4c947d361ec7
 soundalias,#hash_bd53719309b6fc1
 soundalias,#hash_c266934b6e24701
 soundalias,#hash_ca467b11bcaf711
-soundalias,#hash_cc693b3173e7565
+soundalias,#exp_concussive_large
 soundalias,#hash_d76aadb39668a12
 soundalias,#hash_eb5bffa1c857b20
 soundalias,#hash_eb5c2fa1c858039
@@ -629,7 +629,7 @@ soundalias,#hash_26bf012beaa38162
 soundalias,#hash_271fdedb26bc021c
 soundalias,#hash_2730ba20330dff4a
 soundalias,#hash_273c1ce675562cf7
-soundalias,#hash_2748aa2e6dc57ae0
+soundalias,#dst_car_tire_deflate
 soundalias,#amb_flag
 soundalias,#hash_27b256569e7a0420
 soundalias,#hash_27b257569e7a05d3
@@ -819,7 +819,7 @@ soundalias,#hash_657e8ed3dbc52ebe
 soundalias,#hash_662cc921feebd61b
 soundalias,#hash_663899d42687914d
 soundalias,#hash_668dfcbb61723329
-soundalias,#hash_66aa6b049c23fa3f
+soundalias,#exp_incindiary_large
 soundalias,#hash_67adb4bc04b6108f
 soundalias,#hash_67ba645b2ef8664f
 soundalias,#hash_67e1b634a1e1c1ba
@@ -885,7 +885,7 @@ soundalias,#hash_7ac5fa6568de2461
 soundalias,#hash_7b03a9cee3b85887
 soundalias,#hash_7b57908242cf03b1
 soundalias,#hash_7c29b9d5d359f7a3
-soundalias,#hash_7c2e59ca3ee725e5
+soundalias,#exp_veh_med
 soundalias,#hash_7ccc879d1043ab94
 soundalias,#hash_7d6048cbcdd07cb8
 soundalias,#hash_7d96acf7489adb0b
@@ -920,7 +920,7 @@ client_fx,#hash_1f1f6ba9fb9ace3c
 client_fx,#hash_21268f9d29d2fed9
 client_fx,#hash_212bce954d1e21ea
 client_fx,#hash_2147dab1373ff1d8
-client_fx,#hash_21f397376b81d9ef
+client_fx,#impacts/fx_bul_impact_blood_body_fatal
 client_fx,#ui/fx_dom_cap_indicator_neutral_r120
 client_fx,#hash_2618b5463c248896
 client_fx,#hash_269f259a4cd762e8

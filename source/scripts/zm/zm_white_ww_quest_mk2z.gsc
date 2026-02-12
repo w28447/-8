@@ -247,7 +247,7 @@ function private function_9d66ea6f( e_item, e_player )
     #/
     
     level.var_74170866.e_player = e_player;
-    namespace_a01a2431::function_605e5c25( e_player );
+    zm_white_ww_quest_weapon::function_605e5c25( e_player );
     e_player.var_9c20e2c9 = 1;
     e_player playsound( "evt_canister_pickup" );
     zm_ui_inventory::function_7df6bb60( "zm_white_ww_mod_phase", 3, e_player );

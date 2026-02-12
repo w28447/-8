@@ -58,7 +58,7 @@ function ee_schuster_step1_setup( var_5ea5c94d )
     
     foreach ( e_player in a_e_players )
     {
-        if ( e_player zm_characters::is_character( array( #"prt_zm_richtofen", #"hash_2bcebdf1bef33311", #"hash_5a715cb0a6e071ae" ) ) )
+        if ( e_player zm_characters::is_character( array( #"prt_zm_richtofen", #"prt_zm_richtofen_ofc", #"hash_5a715cb0a6e071ae" ) ) )
         {
             foreach ( var_9dc0380f in var_66ef9199 )
             {
@@ -73,7 +73,7 @@ function ee_schuster_step1_setup( var_5ea5c94d )
             continue;
         }
         
-        if ( e_player zm_characters::is_character( array( #"prt_zm_dempsey", #"hash_36bc80636f0fdac4" ) ) )
+        if ( e_player zm_characters::is_character( array( #"prt_zm_dempsey", #"prt_zm_dempsey_ofc" ) ) )
         {
             foreach ( var_9dc0380f in var_66ef9199 )
             {
@@ -88,7 +88,7 @@ function ee_schuster_step1_setup( var_5ea5c94d )
             continue;
         }
         
-        if ( e_player zm_characters::is_character( array( #"prt_zm_takeo", #"hash_6df0037e3f390b15" ) ) )
+        if ( e_player zm_characters::is_character( array( #"prt_zm_takeo", #"prt_zm_takeo_ofc" ) ) )
         {
             foreach ( var_9dc0380f in var_66ef9199 )
             {
@@ -103,7 +103,7 @@ function ee_schuster_step1_setup( var_5ea5c94d )
             continue;
         }
         
-        if ( e_player zm_characters::is_character( array( #"prt_zm_nikolai", #"hash_46b92e1337b43236" ) ) )
+        if ( e_player zm_characters::is_character( array( #"prt_zm_nikolai", #"prt_zm_nikolai_ofc" ) ) )
         {
             foreach ( var_9dc0380f in var_66ef9199 )
             {

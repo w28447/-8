@@ -357,7 +357,7 @@ function private brutustargetservice( entity )
         return 0;
     }
     
-    entity.favoriteenemy = entity.var_93a62fe;
+    entity.favoriteenemy = entity.closest_valid_player;
     
     if ( !isdefined( entity.favoriteenemy ) || zm_behavior::zombieshouldmoveawaycondition( entity ) )
     {

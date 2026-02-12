@@ -123,7 +123,7 @@ function on_player_spawned()
     self callback::on_death( &on_death );
     self callback::on_weapon_change( &on_weapon_change );
     self callback::on_grenade_fired( &on_grenade_fired );
-    self callback::function_4b7977fe( &function_4b7977fe );
+    self callback::on_grenade_launcher_fired( &on_grenade_launcher_fired );
     self function_2a928426();
 }
 
@@ -1692,7 +1692,7 @@ function on_grenade_fired( params )
 // Params 1
 // Checksum 0x8c5332c, Offset: 0x44c8
 // Size: 0xbc
-function function_4b7977fe( params )
+function on_grenade_launcher_fired( params )
 {
     grenade = params.projectile;
     weapon = params.weapon;

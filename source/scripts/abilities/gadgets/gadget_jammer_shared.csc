@@ -11,12 +11,12 @@
 // Size: 0x8c
 function init_shared()
 {
-    if ( !isdefined( level.var_578f7c6d ) )
+    if ( !isdefined( level.jammersettings ) )
     {
-        level.var_578f7c6d = spawnstruct();
+        level.jammersettings = spawnstruct();
     }
     
-    level.var_578f7c6d.weapon = getweapon( #"gadget_jammer" );
+    level.jammersettings.weapon = getweapon( #"gadget_jammer" );
     
     if ( !isdefined( level.var_6d8e6535 ) )
     {

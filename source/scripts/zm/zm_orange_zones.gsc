@@ -565,7 +565,7 @@ function function_17ac86f7()
 // Params 4
 // Checksum 0x57b25690, Offset: 0x2928
 // Size: 0x14c
-function function_f7a190a8( str_wait_flag, var_ab660f9a, str_location, var_39acfdda )
+function function_f7a190a8( str_wait_flag, var_ab660f9a, str_location, str_subcategory )
 {
     level endon( #"end_game" );
     self endon( #"death" );
@@ -591,7 +591,7 @@ function function_f7a190a8( str_wait_flag, var_ab660f9a, str_location, var_39acf
         wait 0.5;
     }
     
-    self thread zm_audio::function_713192b1( str_location, var_39acfdda );
+    self thread zm_audio::function_713192b1( str_location, str_subcategory );
 }
 
 // Namespace zm_orange_zones/zm_orange_zones
@@ -636,7 +636,7 @@ function function_9d1d7efd()
             if ( a_players[ 0 ] zm_audio::can_speak() && !level flag::get( #"hell_on_earth" ) )
             {
                 player = array::random( a_players );
-                player thread zm_orange_util::function_51b752a9( #"hash_14a884c0dda265b2", -1, 0, 1 );
+                player thread zm_orange_util::function_51b752a9( #"vox_lighthouse_enter", -1, 0, 1 );
                 break;
             }
         }
@@ -697,7 +697,7 @@ function function_cbb8e588()
                 
                 if ( player cansee( blood ) && player zm_audio::can_speak() && !level flag::get( #"hell_on_earth" ) )
                 {
-                    player zm_orange_util::function_51b752a9( #"hash_21c0a11438981749" );
+                    player zm_orange_util::function_51b752a9( #"vox_artifact_react" );
                     return;
                 }
             }

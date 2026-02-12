@@ -7324,7 +7324,7 @@ image,d#i_wpn_t8_eqp_briefcase_bomb_computer_c
 image,d#i_wpn_t8_eqp_briefcase_bomb_computer_o
 image,d#i_wpn_t8_eqp_briefcase_bomb_computer_n
 image,d#i_veh_t8_decal_moulding_c
-image,d#hash_27d2980e98d88c55
+image,d#$alpha
 image,#i_mtl_p7_slu_meter_electric_01_base_burnt_n
 image,#i_mtl_p7_slu_meter_electric_01_base_burnt_m
 image,#i_mtl_p8_col_vista_foliage_jungle_tree_palm_lrg_proxy_normal
@@ -16422,7 +16422,7 @@ fx,d#hash_1df2cd45565d5db3
 fx,d#hash_1f1f6ba9fb9ace3c
 fx,#hash_1f41a2bd4eb2cbb3
 fx,#hash_2147dab1373ff1d8
-fx,d#hash_21f397376b81d9ef
+fx,d#impacts/fx_bul_impact_blood_body_fatal
 fx,#hash_249ef0e7b081bf36
 fx,d#hash_2618b5463c248896
 fx,d#hash_27604ee16fb27e93

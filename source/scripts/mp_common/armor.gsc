@@ -23,8 +23,8 @@ function event_handler[gametype_init] main( eventstruct )
 // Size: 0xbc
 function function_9c8b5737()
 {
-    self.lightarmor = { #amount:0, #max:0, #var_2274e560:1, #var_cdeeec29:1 };
-    self.var_59a874a7 = { #var_2274e560:1, #var_cdeeec29:1 };
+    self.lightarmor = { #amount:0, #max:0, #entity_damage_scale:1, #var_cdeeec29:1 };
+    self.var_59a874a7 = { #entity_damage_scale:1, #var_cdeeec29:1 };
     self set_armor( 0, 0, 0, 1, 0 );
 }
 
@@ -65,7 +65,7 @@ function setlightarmorhp( newvalue )
 // Params 3
 // Checksum 0xabce6fa5, Offset: 0x3c0
 // Size: 0x11c
-function setlightarmor( optionalarmorvalue, var_2274e560, var_cdeeec29 )
+function setlightarmor( optionalarmorvalue, entity_damage_scale, var_cdeeec29 )
 {
     self notify( #"give_light_armor" );
     
@@ -84,12 +84,12 @@ function setlightarmor( optionalarmorvalue, var_2274e560, var_cdeeec29 )
     
     self.lightarmor.max = optionalarmorvalue;
     
-    if ( !isdefined( var_2274e560 ) )
+    if ( !isdefined( entity_damage_scale ) )
     {
-        var_2274e560 = 1;
+        entity_damage_scale = 1;
     }
     
-    self.lightarmor.var_2274e560 = var_2274e560;
+    self.lightarmor.entity_damage_scale = entity_damage_scale;
     
     if ( !isdefined( var_cdeeec29 ) )
     {
@@ -204,7 +204,7 @@ function get_armor()
 // Params 13
 // Checksum 0x3f1ef331, Offset: 0x820
 // Size: 0x28e
-function set_armor( amount, max_armor, armortier, var_2274e560 = 1, var_cdeeec29 = 1, var_5164d2e2 = 1, var_e6683a43 = 1, var_22c3ab38 = 1, var_9f307988 = 1, var_7a80f06e = 1, explosive_damage_scale = 1, var_35e3563e = 1, var_4aad1e44 = undefined )
+function set_armor( amount, max_armor, armortier, entity_damage_scale = 1, var_cdeeec29 = 1, var_5164d2e2 = 1, var_e6683a43 = 1, var_22c3ab38 = 1, var_9f307988 = 1, var_7a80f06e = 1, explosive_damage_scale = 1, var_35e3563e = 1, var_4aad1e44 = undefined )
 {
     assert( isdefined( amount ) );
     
@@ -215,7 +215,7 @@ function set_armor( amount, max_armor, armortier, var_2274e560 = 1, var_cdeeec29
     
     self.var_d6f11c60 = undefined;
     self.var_e6c1bab8 = undefined;
-    self.var_59a874a7.var_2274e560 = var_2274e560;
+    self.var_59a874a7.entity_damage_scale = entity_damage_scale;
     self.var_59a874a7.var_22c3ab38 = var_22c3ab38;
     self.var_59a874a7.var_9f307988 = var_9f307988;
     self.var_59a874a7.var_7a80f06e = var_7a80f06e;
@@ -487,16 +487,16 @@ function apply_damage( weapon, damage, smeansofdeath, eattacker, shitloc )
     }
     
     var_737c8f6e *= isdefined( weapon.var_ed6ea786 ) && weapon.var_ed6ea786 ? self.var_59a874a7.var_e6683a43 : self.var_59a874a7.var_cdeeec29;
-    var_2274e560 = weapon.var_7b0ea85;
+    entity_damage_scale = weapon.var_7b0ea85;
     
     if ( getdvarint( #"survival_prototype", 0 ) )
     {
-        var_2274e560 = self.var_59a874a7.var_5164d2e2;
+        entity_damage_scale = self.var_59a874a7.var_5164d2e2;
     }
     
     if ( weapon_utils::isexplosivedamage( smeansofdeath ) )
     {
-        var_2274e560 = self.var_59a874a7.explosive_damage_scale;
+        entity_damage_scale = self.var_59a874a7.explosive_damage_scale;
         var_737c8f6e = self.var_59a874a7.var_35e3563e;
     }
     else
@@ -505,32 +505,32 @@ function apply_damage( weapon, damage, smeansofdeath, eattacker, shitloc )
         {
             if ( weapon_utils::ispunch( weapon ) )
             {
-                var_2274e560 *= self.var_59a874a7.var_22c3ab38;
+                entity_damage_scale *= self.var_59a874a7.var_22c3ab38;
             }
             else
             {
-                var_2274e560 *= self.var_59a874a7.var_9f307988;
+                entity_damage_scale *= self.var_59a874a7.var_9f307988;
             }
         }
         else if ( smeansofdeath == "MOD_MELEE_WEAPON_BUTT" )
         {
             if ( function_7538fede( weapon ) )
             {
-                var_2274e560 *= self.var_59a874a7.var_9f307988;
+                entity_damage_scale *= self.var_59a874a7.var_9f307988;
             }
             else
             {
-                var_2274e560 *= self.var_59a874a7.var_7a80f06e;
+                entity_damage_scale *= self.var_59a874a7.var_7a80f06e;
             }
         }
         else
         {
-            var_2274e560 *= weapon.var_ed6ea786 ? self.var_59a874a7.var_5164d2e2 : self.var_59a874a7.var_2274e560;
+            entity_damage_scale *= weapon.var_ed6ea786 ? self.var_59a874a7.var_5164d2e2 : self.var_59a874a7.entity_damage_scale;
         }
         
         if ( isdefined( self.var_59a874a7 ) && isdefined( self.var_59a874a7.var_735ae1ee ) )
         {
-            var_2274e560 += ( 1 - var_2274e560 ) * ( 1 - self.var_59a874a7.var_735ae1ee.( shitloc ) );
+            entity_damage_scale += ( 1 - entity_damage_scale ) * ( 1 - self.var_59a874a7.var_735ae1ee.( shitloc ) );
         }
     }
     
@@ -540,7 +540,7 @@ function apply_damage( weapon, damage, smeansofdeath, eattacker, shitloc )
     if ( var_aacd5df1 > 0 )
     {
         armor_damage = float( math::clamp( var_aacd5df1, 0, self.armor ) );
-        var_e27873f2 = damage * ( 1 - var_2274e560 );
+        var_e27873f2 = damage * ( 1 - entity_damage_scale );
         var_b1417997 = math::clamp( var_aacd5df1 - self.armor, 0, var_aacd5df1 );
         var_9bb721d3 = var_e27873f2 * var_b1417997 / var_aacd5df1;
         self.armor -= int( ceil( armor_damage ) );
@@ -611,7 +611,7 @@ function apply_damage( weapon, damage, smeansofdeath, eattacker, shitloc )
         var_d72bd991.var_a74d2db8 = gettime();
     }
     
-    remaining_damage = int( ceil( math::clamp( damage * var_2274e560 + var_9bb721d3, 0, damage ) ) );
+    remaining_damage = int( ceil( math::clamp( damage * entity_damage_scale + var_9bb721d3, 0, damage ) ) );
     return remaining_damage;
 }
 

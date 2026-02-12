@@ -104,7 +104,7 @@ function function_27c82a36( entity, catalyst_type )
 // Params 3
 // Checksum 0x567ea6ca, Offset: 0x4d0
 // Size: 0xe0
-function function_84c6177b( spawner, catalyst_type, location )
+function spawncatalyst( spawner, catalyst_type, location )
 {
     spawner.script_forcespawn = 1;
     entity = zombie_utility::spawn_zombie( spawner, undefined, location );

@@ -224,7 +224,7 @@ function function_a84fcb78( var_3a553e99 )
     if ( var_3a553e99 % var_cf385861 == 0 )
     {
         self add_armor();
-        self function_c25b980c();
+        self damage_boost();
     }
 }
 
@@ -241,7 +241,7 @@ function add_armor()
 // Params 0
 // Checksum 0xe7f3c346, Offset: 0xaf8
 // Size: 0x5a
-function function_c25b980c()
+function damage_boost()
 {
     if ( !isdefined( self.var_807f94d7 ) )
     {

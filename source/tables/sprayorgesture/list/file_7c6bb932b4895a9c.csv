@@ -21,7 +21,7 @@ type,name
 #gesture,#hash_3c1aeb02f664c10c
 #gesture,#hash_175f7e8811cfcf53
 #gesture,#hash_15dcf381051fb6aa
-#gesture,#hash_ec37a45b8b03c5f
+#gesture,#loot_emote_exotic_shared_mic_drop
 #gesture,#loot_emote_exotic_shared_finger_spin
 #gesture,#hash_61bc88f336591d1f
 #gesture,#hash_53e2ef3b00c546d5
@@ -207,7 +207,7 @@ type,name
 #gesture,#loot_emote_exotic_shared_spike_football
 #gesture,#hash_7b24d03b0073110d
 #gesture,#loot_emote_exotic_shared_snowball
-#gesture,#hash_b84100de113439d
+#gesture,#loot_emote_exotic_shared_30
 #gesture,#loot_emote_shared_nay
 #gesture,#hash_60cf517e2b45d8bf
 #gesture,#loot_emote_exotic_shared_magician_hat

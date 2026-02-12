@@ -187,7 +187,7 @@ function function_e8ad1d81( position, owner, normal, velocity, killcament, weapo
     var_77261b6 = vectornormalize( velocity );
     var_1f254a06 = vectorscale( var_77261b6, -1 );
     var_d6d43109 = 1;
-    var_e76400c0 = undefined;
+    wallpos = undefined;
     wallnormal = undefined;
     var_693f108f = undefined;
     molotovfireweapon = getweapon( #"molotov_fire" );
@@ -258,7 +258,7 @@ function function_e8ad1d81( position, owner, normal, velocity, killcament, weapo
         
         if ( var_693f108f > 10 )
         {
-            var_e76400c0 = originalposition;
+            wallpos = originalposition;
             wallnormal = var_493d36f9;
             var_d6d43109 = sqrt( 1 - var_69d15ad0[ #"fraction" ] );
             var_959a2a8b = 1;
@@ -323,7 +323,7 @@ function function_e8ad1d81( position, owner, normal, velocity, killcament, weapo
     
     rotation = randomint( 360 );
     
-    if ( normal[ 2 ] < 0.1 && !isdefined( var_e76400c0 ) )
+    if ( normal[ 2 ] < 0.1 && !isdefined( wallpos ) )
     {
         black = ( 0.1, 0.1, 0.1 );
         trace = hitpos( startpos, startpos + normal * -1 * 70 + ( 0, 0, -1 ) * 70, black );
@@ -337,7 +337,7 @@ function function_e8ad1d81( position, owner, normal, velocity, killcament, weapo
     }
     
     var_1f254a06 = normal;
-    level function_8a03d3f3( owner, position, startpos, var_1f254a06, var_d6d43109, rotation, killcament, weapon, customsettings, team, var_e76400c0, wallnormal, var_693f108f );
+    level function_8a03d3f3( owner, position, startpos, var_1f254a06, var_d6d43109, rotation, killcament, weapon, customsettings, team, wallpos, wallnormal, var_693f108f );
 }
 
 // Namespace molotov/molotov
@@ -405,7 +405,7 @@ function function_31f342a2( origin, var_9c7e3678 )
 // Params 13
 // Checksum 0xb4dbd043, Offset: 0x14d0
 // Size: 0xfa8
-function function_8a03d3f3( owner, impactpos, startpos, normal, multiplier, rotation, killcament, weapon, customsettings, team, var_e76400c0, wallnormal, var_693f108f )
+function function_8a03d3f3( owner, impactpos, startpos, normal, multiplier, rotation, killcament, weapon, customsettings, team, wallpos, wallnormal, var_693f108f )
 {
     defaultdistance = customsettings.var_6193a41b * multiplier;
     defaultdropdistance = getdvarint( #"hash_4a8fc6d7cacea9d5", 90 );
@@ -543,7 +543,7 @@ function function_8a03d3f3( owner, impactpos, startpos, normal, multiplier, rota
     {
         playfx( level._effect[ #"hash_31b6cc906e6d0ae0" ], var_6b23e1c9, forward, normal, 0, team );
         
-        if ( !isdefined( var_e76400c0 ) )
+        if ( !isdefined( wallpos ) )
         {
             spawntimedfx( molotovfireweapon, var_6b23e1c9, normal, int( customsettings.var_b79d64a9 ), team );
         }
@@ -569,8 +569,8 @@ function function_8a03d3f3( owner, impactpos, startpos, normal, multiplier, rota
     var_4b424bc1 = level.var_a88ac760[ var_bf264593 ];
     var_4b424bc1.var_46ee5246 = int( gettime() + customsettings.var_b79d64a9 * 1000 );
     var_4b424bc1.origin = startpos;
-    thread damageeffectarea( owner, startpos, killcament, normal, molotovfireweapon, customsettings, multiplier, var_e76400c0, wallnormal, var_693f108f, var_4b424bc1.var_46ee5246 );
-    thread function_9464e4ad( owner, startpos, killcament, normal, molotovfireweapon, customsettings, multiplier, var_e76400c0, wallnormal, var_693f108f, var_4b424bc1.var_46ee5246 );
+    thread damageeffectarea( owner, startpos, killcament, normal, molotovfireweapon, customsettings, multiplier, wallpos, wallnormal, var_693f108f, var_4b424bc1.var_46ee5246 );
+    thread function_9464e4ad( owner, startpos, killcament, normal, molotovfireweapon, customsettings, multiplier, wallpos, wallnormal, var_693f108f, var_4b424bc1.var_46ee5246 );
     var_b1dd2ca0 = getarraykeys( locations[ #"loc" ] );
     
     foreach ( lockey in var_b1dd2ca0 )
@@ -645,7 +645,7 @@ function function_42b9fdbe( weapon, loc, normal, duration, team )
 // Params 11
 // Checksum 0xf49b8dc2, Offset: 0x25d0
 // Size: 0x6c0
-function damageeffectarea( owner, position, killcament, normal, weapon, customsettings, radius_multiplier, var_e76400c0, wallnormal, var_cbaaea69, damageendtime )
+function damageeffectarea( owner, position, killcament, normal, weapon, customsettings, radius_multiplier, wallpos, wallnormal, var_cbaaea69, damageendtime )
 {
     level endon( #"game_ended" );
     radius = customsettings.var_6193a41b * radius_multiplier;
@@ -653,9 +653,9 @@ function damageeffectarea( owner, position, killcament, normal, weapon, customse
     trigger_radius_position = position - ( 0, 0, height );
     trigger_radius_height = height * 2;
     
-    if ( isdefined( var_e76400c0 ) && isdefined( wallnormal ) )
+    if ( isdefined( wallpos ) && isdefined( wallnormal ) )
     {
-        var_21f4217c = var_e76400c0 + vectorscale( wallnormal, 12 ) - ( 0, 0, var_cbaaea69 );
+        var_21f4217c = wallpos + vectorscale( wallnormal, 12 ) - ( 0, 0, var_cbaaea69 );
         var_289a74bc = spawn( "trigger_radius", var_21f4217c, 0, 12, var_cbaaea69 );
         
         /#
@@ -799,7 +799,7 @@ function stopfiresound()
 // Params 11
 // Checksum 0x89c2716e, Offset: 0x2cf8
 // Size: 0x384
-function function_9464e4ad( owner, position, killcament, normal, weapon, customsettings, radius_multiplier, var_e76400c0, wallnormal, var_cbaaea69, damageendtime )
+function function_9464e4ad( owner, position, killcament, normal, weapon, customsettings, radius_multiplier, wallpos, wallnormal, var_cbaaea69, damageendtime )
 {
     level endon( #"game_ended" );
     radius = customsettings.var_6193a41b * radius_multiplier;
@@ -807,9 +807,9 @@ function function_9464e4ad( owner, position, killcament, normal, weapon, customs
     trigger_radius_position = position - ( 0, 0, height );
     trigger_radius_height = height * 2;
     
-    if ( isdefined( var_e76400c0 ) && isdefined( wallnormal ) )
+    if ( isdefined( wallpos ) && isdefined( wallnormal ) )
     {
-        var_21f4217c = var_e76400c0 + vectorscale( wallnormal, 12 ) - ( 0, 0, var_cbaaea69 );
+        var_21f4217c = wallpos + vectorscale( wallnormal, 12 ) - ( 0, 0, var_cbaaea69 );
         var_289a74bc = spawn( "trigger_radius", var_21f4217c, 0, 12, var_cbaaea69 );
     }
     

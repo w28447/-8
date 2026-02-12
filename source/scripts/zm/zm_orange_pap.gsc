@@ -592,7 +592,7 @@ function apc_restart_retreat()
     wait 4;
     level.musicsystemoverride = 1;
     music::setmusicstate( "golden_pap_defend" );
-    level thread zm_orange_util::function_fd24e47f( #"hash_84fa084a2617bf4", -1, 0, 1 );
+    level thread zm_orange_util::function_fd24e47f( #"vox_golden_pap_react", -1, 0, 1 );
 }
 
 // Namespace zm_orange_pap/zm_orange_pap
@@ -767,7 +767,7 @@ function function_feee6e66()
     }
     else
     {
-        s_results.e_who thread zm_orange_util::function_51b752a9( #"hash_7e030fccc2c5a121" );
+        s_results.e_who thread zm_orange_util::function_51b752a9( #"vox_pickup_generic" );
     }
     
     level flag::set( #"hash_3310bb35ce396e49" );

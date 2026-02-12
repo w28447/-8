@@ -84,7 +84,7 @@ function marker_state_changed( localclientnum, oldval, newval, bnewent, binitial
 // Params 1
 // Checksum 0xbdf79daf, Offset: 0x4a0
 // Size: 0x94
-function function_6f798989( var_a27f7ab4 )
+function hideprevis( var_a27f7ab4 )
 {
     if ( function_9d295a8c( self.localclientnum ) )
     {
@@ -108,7 +108,7 @@ function function_6f798989( var_a27f7ab4 )
 function previs( localclientnum, invalid )
 {
     self notify( #"stop_previs" );
-    self endoncallback( &function_6f798989, #"death", #"weapon_change", #"stop_previs" );
+    self endoncallback( &hideprevis, #"death", #"weapon_change", #"stop_previs" );
     level.var_9c4cdb79[ localclientnum ] show();
     function_3e8d9b27( !invalid, localclientnum );
     

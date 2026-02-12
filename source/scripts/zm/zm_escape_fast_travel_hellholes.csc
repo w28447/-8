@@ -3,9 +3,9 @@
 #using scripts\core_common\struct;
 #using scripts\core_common\util_shared;
 
-#namespace namespace_b99141ed;
+#namespace fast_travel_hellholes;
 
-// Namespace namespace_b99141ed/zm_escape_fast_travel_hellholes
+// Namespace fast_travel_hellholes/zm_escape_fast_travel_hellholes
 // Params 0
 // Checksum 0x7ab361f6, Offset: 0xb8
 // Size: 0x5c
@@ -14,7 +14,7 @@ function init_clientfields()
     clientfield::register( "toplayer", "" + #"hash_275c4e6783b917f8", 1, 1, "int", &function_9997d53a, 0, 0 );
 }
 
-// Namespace namespace_b99141ed/zm_escape_fast_travel_hellholes
+// Namespace fast_travel_hellholes/zm_escape_fast_travel_hellholes
 // Params 7
 // Checksum 0xa9bf4e2c, Offset: 0x120
 // Size: 0x8c

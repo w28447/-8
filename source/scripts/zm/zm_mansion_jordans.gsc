@@ -927,7 +927,7 @@ function function_1d7382d0()
 // Size: 0x182, Type: bool
 function function_ffc00d17( var_10372151 )
 {
-    var_30cf8a0a = 1;
+    b_stance_check = 1;
     b_lookat_check = 1;
     
     if ( !isdefined( var_10372151 ) )
@@ -939,7 +939,7 @@ function function_ffc00d17( var_10372151 )
     {
         if ( self getstance() != var_10372151.script_string )
         {
-            var_30cf8a0a = 0;
+            b_stance_check = 0;
             
             /#
                 iprintlnbold( "<dev string:x7e>" );
@@ -971,7 +971,7 @@ function function_ffc00d17( var_10372151 )
         }
     }
     
-    return var_30cf8a0a && b_lookat_check;
+    return b_stance_check && b_lookat_check;
 }
 
 // Namespace mansion_jordans/zm_mansion_jordans

@@ -458,7 +458,7 @@ function death_check_for_challenge_updates( e_attacker )
                 #/
                 
                 e_attacker zm_stats::increment_challenge_stat( #"sniper_kills" );
-                e_attacker zm_stats::function_c0c6ab19( #"hash_2333d2f2b7271a56" );
+                e_attacker zm_stats::function_c0c6ab19( #"kills_sniper_rifles" );
                 e_attacker contracts::increment_zm_contract( #"contract_zm_sniper_kills" );
                 break;
             case #"tr":
@@ -467,7 +467,7 @@ function death_check_for_challenge_updates( e_attacker )
                 #/
                 
                 e_attacker zm_stats::increment_challenge_stat( #"tr_kills" );
-                e_attacker zm_stats::function_c0c6ab19( #"hash_26d8f2fa0846a614" );
+                e_attacker zm_stats::function_c0c6ab19( #"kills_tactical_rifles" );
                 e_attacker contracts::increment_zm_contract( #"contract_zm_tr_kills" );
                 break;
         }
@@ -1001,62 +1001,62 @@ function function_a3cd4521()
     level flag::wait_till( "gameplay_started" );
     var_a9d7bd6 = 0;
     
-    if ( self stats::function_af5584ca( #"kills" ) == 5 )
+    if ( self stats::get_stat_challenge_tier( #"kills" ) == 5 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"zombie_hunter_kill_melee" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"zombie_hunter_kill_melee" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"zombie_hunter_kill_headshot" ) == 5 )
+    if ( self stats::get_stat_challenge_tier( #"zombie_hunter_kill_headshot" ) == 5 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"zombie_hunter_kill_crawler" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"zombie_hunter_kill_crawler" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"zombie_hunter_kill_packapunch" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"zombie_hunter_kill_packapunch" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"double_pap_kills" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"double_pap_kills" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"zombie_hunter_kill_explosives" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"zombie_hunter_kill_explosives" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"heavy_kills" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"heavy_kills" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"mini_boss_kills" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"mini_boss_kills" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"catalysts_killed" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"catalysts_killed" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"aat_catalyst_kills" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"aat_catalyst_kills" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"catalyst_transformation_denials" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"catalyst_transformation_denials" ) == 3 )
     {
         var_a9d7bd6++;
     }
@@ -1070,62 +1070,62 @@ function function_a3cd4521()
     
     var_a9d7bd6 = 0;
     
-    if ( self stats::function_af5584ca( #"survivalist_buy_magic_box" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"survivalist_buy_magic_box" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"survivalist_buy_perk" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"survivalist_buy_perk" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"survivalist_buy_wallbuy" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"survivalist_buy_wallbuy" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"survivalist_buy_door" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"survivalist_buy_door" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"survivalist_revive" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"survivalist_revive" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"survivalist_survive_rounds" ) == 5 )
+    if ( self stats::get_stat_challenge_tier( #"survivalist_survive_rounds" ) == 5 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"rounds_no_downs" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"rounds_no_downs" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"rounds_no_damage" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"rounds_no_damage" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"survivalist_powerup" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"survivalist_powerup" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"points_spent" ) == 5 )
+    if ( self stats::get_stat_challenge_tier( #"points_spent" ) == 5 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"fast_travels" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"fast_travels" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"perks_full" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"perks_full" ) == 3 )
     {
         var_a9d7bd6++;
     }
@@ -1139,62 +1139,62 @@ function function_a3cd4521()
     
     var_a9d7bd6 = 0;
     
-    if ( self stats::function_af5584ca( #"pap_activation" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"pap_activation" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"pap_weapon_packed" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"pap_weapon_packed" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"pap_weapon_double_packed" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"pap_weapon_double_packed" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"shield_kills" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"shield_kills" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"shields_built" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"shields_built" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_3e5b9b81d573d194" ) == 5 )
+    if ( self stats::get_stat_challenge_tier( #"hash_3e5b9b81d573d194" ) == 5 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_4aa750e907d2acba" ) == 5 )
+    if ( self stats::get_stat_challenge_tier( #"hash_4aa750e907d2acba" ) == 5 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_43bd32b7705f38fd" ) == 5 )
+    if ( self stats::get_stat_challenge_tier( #"hash_43bd32b7705f38fd" ) == 5 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_35c05a1d6c5fb3e1" ) == 5 )
+    if ( self stats::get_stat_challenge_tier( #"hash_35c05a1d6c5fb3e1" ) == 5 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"scepter_revives" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"scepter_revives" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"special_weapon_levels" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"special_weapon_levels" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"maxed_special_weapon_kills" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"maxed_special_weapon_kills" ) == 3 )
     {
         var_a9d7bd6++;
     }
@@ -1208,62 +1208,62 @@ function function_a3cd4521()
     
     var_a9d7bd6 = 0;
     
-    if ( self stats::function_af5584ca( #"hash_41d41d501c70fb30" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"hash_41d41d501c70fb30" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_133575f669ffc55c" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"gum_gobbler_pop_shocks" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"gum_gobbler_burned_out" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"gum_gobbler_burned_out" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_19d6a97f1553f96f" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"hash_19d6a97f1553f96f" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_3ebae93ea866519c" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"hash_3ebae93ea866519c" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_1f20f53b7084fdcb" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"gum_gobbler_arsenal_accelerator" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_733e96c5baacb1da" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"hash_733e96c5baacb1da" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_108042c8bd6693fb" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"hash_108042c8bd6693fb" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_5d098efca02f7c99" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"hash_5d098efca02f7c99" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"nowhere_but_there_revives" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"nowhere_but_there_revives" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_47646e52fcbb190e" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"gum_gobbler_equip_mint" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"talisman_used" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"talisman_used" ) == 3 )
     {
         var_a9d7bd6++;
     }
@@ -1277,62 +1277,62 @@ function function_a3cd4521()
     
     var_a9d7bd6 = 0;
     
-    if ( self stats::function_af5584ca( #"pistol_kills" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"pistol_kills" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"shotgun_kills" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"shotgun_kills" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"ar_kills" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"ar_kills" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"lmg_kills" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"lmg_kills" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"sniper_kills" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"sniper_kills" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"smg_kills" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"smg_kills" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"tr_kills" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"tr_kills" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"frag_kills" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"frag_kills" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"acid_bomb_kills" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"acid_bomb_kills" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"wraith_fire_kills" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"wraith_fire_kills" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"sentry_kills" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"sentry_kills" ) == 3 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"claymore_kills" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"claymore_kills" ) == 3 )
     {
         var_a9d7bd6++;
     }
@@ -1346,62 +1346,62 @@ function function_a3cd4521()
     
     var_a9d7bd6 = 0;
     
-    if ( self stats::function_af5584ca( #"bowie_kills" ) == 5 )
+    if ( self stats::get_stat_challenge_tier( #"bowie_kills" ) == 5 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_63e3f06d30760b7e" ) == 5 )
+    if ( self stats::get_stat_challenge_tier( #"hash_63e3f06d30760b7e" ) == 5 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_2a72be53205a8db3" ) == 5 )
+    if ( self stats::get_stat_challenge_tier( #"hash_2a72be53205a8db3" ) == 5 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_3a43a56f5f2aeacc" ) == 5 )
+    if ( self stats::get_stat_challenge_tier( #"hash_3a43a56f5f2aeacc" ) == 5 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_733f619bc1c13bdd" ) == 5 )
+    if ( self stats::get_stat_challenge_tier( #"hash_733f619bc1c13bdd" ) == 5 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_7ac3980eb0c9f12d" ) == 5 )
+    if ( self stats::get_stat_challenge_tier( #"hash_7ac3980eb0c9f12d" ) == 5 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_d0eb45f997dadf0" ) == 5 )
+    if ( self stats::get_stat_challenge_tier( #"hash_d0eb45f997dadf0" ) == 5 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"perk_mule_kick_kills" ) == 5 )
+    if ( self stats::get_stat_challenge_tier( #"perk_mule_kick_kills" ) == 5 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"perk_electric_cherry_kills" ) == 5 )
+    if ( self stats::get_stat_challenge_tier( #"perk_electric_cherry_kills" ) == 5 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"perk_deadshot_kills" ) == 5 )
+    if ( self stats::get_stat_challenge_tier( #"perk_deadshot_kills" ) == 5 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"perk_slider_kills" ) == 5 )
+    if ( self stats::get_stat_challenge_tier( #"perk_slider_kills" ) == 5 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"perk_stronghold_headshots" ) == 5 )
+    if ( self stats::get_stat_challenge_tier( #"perk_stronghold_headshots" ) == 5 )
     {
         var_a9d7bd6++;
     }
@@ -1415,62 +1415,62 @@ function function_a3cd4521()
     
     var_a9d7bd6 = 0;
     
-    if ( self stats::function_af5584ca( #"hash_16aa183f2c51f999" ) == 1 )
+    if ( self stats::get_stat_challenge_tier( #"hash_16aa183f2c51f999" ) == 1 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_69f53cb2579fba3e" ) == 1 )
+    if ( self stats::get_stat_challenge_tier( #"hash_69f53cb2579fba3e" ) == 1 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_6d551a71b5461906" ) == 1 )
+    if ( self stats::get_stat_challenge_tier( #"hash_6d551a71b5461906" ) == 1 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_405387fd6efe78b3" ) == 1 )
+    if ( self stats::get_stat_challenge_tier( #"hash_405387fd6efe78b3" ) == 1 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"darkops_kills" ) == 1 )
+    if ( self stats::get_stat_challenge_tier( #"darkops_kills" ) == 1 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_47685630580f6b5f" ) == 1 )
+    if ( self stats::get_stat_challenge_tier( #"hash_47685630580f6b5f" ) == 1 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_34f185c936027147" ) == 1 )
+    if ( self stats::get_stat_challenge_tier( #"hash_34f185c936027147" ) == 1 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_2eed193144ed0fee" ) == 1 )
+    if ( self stats::get_stat_challenge_tier( #"hash_2eed193144ed0fee" ) == 1 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_c59a95e3be43538" ) == 1 )
+    if ( self stats::get_stat_challenge_tier( #"hash_c59a95e3be43538" ) == 1 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_7a406e363a7db141" ) == 1 )
+    if ( self stats::get_stat_challenge_tier( #"hash_7a406e363a7db141" ) == 1 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_758b3285de8999f" ) == 1 )
+    if ( self stats::get_stat_challenge_tier( #"hash_758b3285de8999f" ) == 1 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_40d2ff74fd37a2ab" ) == 1 )
+    if ( self stats::get_stat_challenge_tier( #"hash_40d2ff74fd37a2ab" ) == 1 )
     {
         var_a9d7bd6++;
     }
@@ -1552,57 +1552,57 @@ function function_6cc59b84()
 {
     var_a9d7bd6 = 0;
     
-    if ( self stats::function_af5584ca( #"hash_16aa183f2c51f999" ) == 1 )
+    if ( self stats::get_stat_challenge_tier( #"hash_16aa183f2c51f999" ) == 1 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_69f53cb2579fba3e" ) == 1 )
+    if ( self stats::get_stat_challenge_tier( #"hash_69f53cb2579fba3e" ) == 1 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_6d551a71b5461906" ) == 1 )
+    if ( self stats::get_stat_challenge_tier( #"hash_6d551a71b5461906" ) == 1 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_405387fd6efe78b3" ) == 1 )
+    if ( self stats::get_stat_challenge_tier( #"hash_405387fd6efe78b3" ) == 1 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"darkops_kills" ) == 1 )
+    if ( self stats::get_stat_challenge_tier( #"darkops_kills" ) == 1 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_47685630580f6b5f" ) == 1 )
+    if ( self stats::get_stat_challenge_tier( #"hash_47685630580f6b5f" ) == 1 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_34f185c936027147" ) == 1 )
+    if ( self stats::get_stat_challenge_tier( #"hash_34f185c936027147" ) == 1 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_c59a95e3be43538" ) == 1 )
+    if ( self stats::get_stat_challenge_tier( #"hash_c59a95e3be43538" ) == 1 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_7a406e363a7db141" ) == 1 )
+    if ( self stats::get_stat_challenge_tier( #"hash_7a406e363a7db141" ) == 1 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_758b3285de8999f" ) == 1 )
+    if ( self stats::get_stat_challenge_tier( #"hash_758b3285de8999f" ) == 1 )
     {
         var_a9d7bd6++;
     }
     
-    if ( self stats::function_af5584ca( #"hash_40d2ff74fd37a2ab" ) == 1 )
+    if ( self stats::get_stat_challenge_tier( #"hash_40d2ff74fd37a2ab" ) == 1 )
     {
         var_a9d7bd6++;
     }

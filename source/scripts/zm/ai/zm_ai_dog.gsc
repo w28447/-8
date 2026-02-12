@@ -39,7 +39,7 @@ function __init__()
 // Size: 0x5a
 function function_b9d56970()
 {
-    self.var_93a62fe = zm_utility::get_closest_valid_player( self.origin, undefined, 1 );
+    self.closest_valid_player = zm_utility::get_closest_valid_player( self.origin, undefined, 1 );
     self.closest_player_override = &zm_utility::function_c52e1749;
     self.var_ef1ed308 = &function_ea61b64a;
 }
@@ -639,7 +639,7 @@ function function_5e50d260( dog )
         return;
     }
     
-    if ( !isdefined( dog.var_93a62fe ) || dog.favoriteenemy == dog.var_93a62fe )
+    if ( !isdefined( dog.closest_valid_player ) || dog.favoriteenemy == dog.closest_valid_player )
     {
         return;
     }
@@ -651,18 +651,18 @@ function function_5e50d260( dog )
         return;
     }
     
-    new_target_dist = dog zm_utility::approximate_path_dist( dog.var_93a62fe );
+    new_target_dist = dog zm_utility::approximate_path_dist( dog.closest_valid_player );
     
     if ( isdefined( dog.var_90957231 ) )
     {
         if ( isdefined( new_target_dist ) && dog.var_90957231 - new_target_dist > 200 )
         {
-            dog function_e856134( dog, dog.var_93a62fe );
+            dog function_e856134( dog, dog.closest_valid_player );
         }
     }
     else if ( isdefined( new_target_dist ) )
     {
-        dog function_e856134( dog, dog.var_93a62fe );
+        dog function_e856134( dog, dog.closest_valid_player );
     }
     
     dog.var_2eda3fd0 = 0;

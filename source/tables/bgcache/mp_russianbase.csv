@@ -188,7 +188,7 @@ scriptbundle,#sb_mp_draft_common_allies
 scriptbundle,#gameobject_mp_silo_elevator_call_button
 scriptbundle,#p8_fxanim_mp_wmd_hanging_missile_bundle
 scriptbundle,#p7_fxanim_cp_lotus_mobile_shops_merch_int_wires_bundle
-string,#hash_e428880b38b4d8d
+string,#OBJECTIVES_COOP_WAYPOINT_HACK
 objective,#hash_4a72ffa3664320bc
 radiant_exploder,#exp_lgt_draft
 radiant_exploder,#fxexp_cleanroom_on
@@ -231,11 +231,11 @@ soundalias,#hash_bbafec33c2adca2
 soundalias,#hash_bd53719309b6fc1
 soundalias,#hash_c266934b6e24701
 soundalias,#hash_ca467b11bcaf711
-soundalias,#hash_cc693b3173e7565
+soundalias,#exp_concussive_large
 soundalias,#hash_da461a1d0dc8d1f
 soundalias,#hash_da477a1d0dcb281
 soundalias,#hash_101aa41260505836
-soundalias,#hash_103c3a992ceffa20
+soundalias,#amb_train_cars
 soundalias,#hash_127c91df9b564016
 soundalias,#hash_129678d4171a455b
 soundalias,#hash_12b24433ad0bb1f0
@@ -271,7 +271,7 @@ soundalias,#hash_25a264b901d17919
 soundalias,#hash_267821e3be703ce7
 soundalias,#hash_26bf012beaa38162
 soundalias,#hash_2730ba20330dff4a
-soundalias,#hash_2748aa2e6dc57ae0
+soundalias,#dst_car_tire_deflate
 soundalias,#hash_2937fb58b49bbac0
 soundalias,#dst_paper
 soundalias,#hash_2ae5a87884deaf5d
@@ -381,7 +381,7 @@ soundalias,#hash_6237abae59de3cd8
 soundalias,#hash_6237aeae59de41f1
 soundalias,#hash_6458f9f7bac2784b
 soundalias,#hash_663899d42687914d
-soundalias,#hash_66aa6b049c23fa3f
+soundalias,#exp_incindiary_large
 soundalias,#hash_67e1b634a1e1c1ba
 soundalias,#amb_wind_hollow
 soundalias,#hash_68b8beb0257da073
@@ -422,13 +422,13 @@ soundalias,#hash_7ac5fa6568de2461
 soundalias,#hash_7b03a9cee3b85887
 soundalias,#hash_7b6af4c427172417
 soundalias,#hash_7c147251b3517b87
-soundalias,#hash_7c2e59ca3ee725e5
+soundalias,#exp_veh_med
 soundalias,#hash_7e17e533381a8506
 soundalias,#hash_7e2a62ba84003ebd
 soundalias,#hash_7eaf25e4214302d5
 soundalias,#hash_7eb51f1a0028ab28
 soundalias,#hash_7eb7c73e0206c620
-soundalias,#hash_7eede30e6e0cbe65
+soundalias,#amb_occ_fan
 soundalias,#hash_7f118ea3a4874268
 soundalias,#hash_7f192f45970ed683
 soundalias,#hash_7fe19ceed35907ce

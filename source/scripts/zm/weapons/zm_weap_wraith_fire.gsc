@@ -50,9 +50,9 @@ function __main__()
 // Size: 0xd2
 function function_36a0ef3( inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype )
 {
-    var_b1c1c5cf = zm_equipment::function_7d948481( 0.1, 0.25, 0.25, 1 );
-    var_bb6709b6 = zm_equipment::function_379f6b5d( damage, var_b1c1c5cf, 1, 4, 40 );
-    return var_bb6709b6;
+    n_damage_scale = zm_equipment::function_7d948481( 0.1, 0.25, 0.25, 1 );
+    n_burn_damage = zm_equipment::function_379f6b5d( damage, n_damage_scale, 1, 4, 40 );
+    return n_burn_damage;
 }
 
 // Namespace zm_weap_wraith_fire/zm_weap_wraith_fire
@@ -62,8 +62,8 @@ function function_36a0ef3( inflictor, attacker, damage, flags, meansofdeath, wea
 function function_2b4945e4( inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype )
 {
     self namespace_9ff9f642::burn( #"eq_wraith_fire", attacker, getweapon( #"eq_wraith_fire" ), 50 );
-    var_b1c1c5cf = zm_equipment::function_7d948481( 0.1, 0.25, 0.25, 1 );
-    n_damage = zm_equipment::function_379f6b5d( damage, var_b1c1c5cf, 1, 4, 40 );
+    n_damage_scale = zm_equipment::function_7d948481( 0.1, 0.25, 0.25, 1 );
+    n_damage = zm_equipment::function_379f6b5d( damage, n_damage_scale, 1, 4, 40 );
     return n_damage;
 }
 

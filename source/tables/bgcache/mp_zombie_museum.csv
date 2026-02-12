@@ -414,7 +414,7 @@ scriptbundle,#aib_vign_tplt_prebtl_zmb_trapped_behind_wndw_02
 scriptbundle,#p8_fxanim_mp_zmuseum_duckboat_float_01_bundle
 scriptbundle,#c_t8_zmb_3rdclass_male_gib_def
 scriptbundle,#p8_fxanim_zm_red_shrine_hemera_bundle
-string,#hash_e428880b38b4d8d
+string,#OBJECTIVES_COOP_WAYPOINT_HACK
 objective,#hash_4a72ffa3664320bc
 fx,#hash_1cbaa2a759708ece
 fx,#hash_311a865a91014b22
@@ -470,7 +470,7 @@ soundalias,#hash_bbafec33c2adca2
 soundalias,#hash_bd53719309b6fc1
 soundalias,#hash_c266934b6e24701
 soundalias,#hash_ca467b11bcaf711
-soundalias,#hash_cc693b3173e7565
+soundalias,#exp_concussive_large
 soundalias,#hash_eb83441654685fb
 soundalias,#amb_sink
 soundalias,#vox_muse_lobby_pa
@@ -518,7 +518,7 @@ soundalias,#hash_25a264b901d17919
 soundalias,#hash_267821e3be703ce7
 soundalias,#hash_26bf012beaa38162
 soundalias,#hash_2730ba20330dff4a
-soundalias,#hash_2748aa2e6dc57ae0
+soundalias,#dst_car_tire_deflate
 soundalias,#hash_27bbcfa04a0c92de
 soundalias,#dst_paper
 soundalias,#hash_2a81771fae4971ac
@@ -663,7 +663,7 @@ soundalias,#amb_water_lap
 soundalias,#hash_644ee63458e922f6
 soundalias,#amb_gust_dry
 soundalias,#hash_663899d42687914d
-soundalias,#hash_66aa6b049c23fa3f
+soundalias,#exp_incindiary_large
 soundalias,#hash_67e1b634a1e1c1ba
 soundalias,#hash_683c92b782a85b92
 soundalias,#hash_68b8beb0257da073
@@ -698,7 +698,7 @@ soundalias,#hash_79e7070c3130f4a9
 soundalias,#exp_veh_plane_spinout_lp
 soundalias,#hash_7ac5fa6568de2461
 soundalias,#hash_7b03a9cee3b85887
-soundalias,#hash_7c2e59ca3ee725e5
+soundalias,#exp_veh_med
 soundalias,#hash_7d42bc198f84a5f0
 soundalias,#hash_7dd41c4f97785b39
 soundalias,#hash_7e17e533381a8506

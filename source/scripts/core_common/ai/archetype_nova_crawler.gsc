@@ -13,7 +13,7 @@ function autoexec init()
 {
     novacrawlerinterface::registernovacrawlerinterfaceattributes();
     registerbehaviorscriptfunctions();
-    spawner::add_archetype_spawn_function( #"nova_crawler", &function_ea4610a7 );
+    spawner::add_archetype_spawn_function( #"nova_crawler", &archetypenovacrawlerblackboardinit );
 }
 
 /#
@@ -22,7 +22,7 @@ function autoexec init()
     // Params 0, eflags: 0x4
     // Checksum 0xedab19b3, Offset: 0xe8
     // Size: 0x24, Type: dev
-    function private function_32107b12()
+    function private archetypenovacrawlerinit()
     {
         assert( isdefined( self.ai ) );
     }
@@ -33,7 +33,7 @@ function autoexec init()
 // Params 0, eflags: 0x4
 // Checksum 0x28b8c8ec, Offset: 0x118
 // Size: 0x62
-function private function_ea4610a7()
+function private archetypenovacrawlerblackboardinit()
 {
     blackboard::createblackboardforentity( self );
     ai::createinterfaceforentity( self );
@@ -57,7 +57,7 @@ function private function_b11c2bcd( entity )
 function private function_80f18700( entity )
 {
     self.__blackboard = undefined;
-    self function_ea4610a7();
+    self archetypenovacrawlerblackboardinit();
 }
 
 // Namespace archetypenovacrawler/archetype_nova_crawler

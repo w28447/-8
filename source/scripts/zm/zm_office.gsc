@@ -98,7 +98,7 @@ function event_handler[level_init] main( eventstruct )
     level.default_start_location = "start_room";
     level.default_game_mode = "zclassic";
     level.disableclassselection = 0;
-    level.var_22fda912 = &function_9f50079d;
+    level.var_22fda912 = &offhand_weapon_override;
     level.zombiemode_offhand_weapon_give_override = &offhand_weapon_give_override;
     level.var_d0ab70a2 = #"hash_2ed6ad41883dc026";
     level._allow_melee_weapon_switching = 1;
@@ -275,7 +275,7 @@ function function_c8ce0a17( var_404e4288, var_8dd554ee )
 function function_e5086229( var_404e4288, var_8dd554ee )
 {
     level flag::set( #"disable_special_rounds" );
-    ai = zombie_dog_util::function_62db7b1c( 1 );
+    ai = zombie_dog_util::spawn_single_dog( 1 );
     
     if ( isdefined( ai ) )
     {
@@ -384,7 +384,7 @@ function function_785cadc4()
 // Params 0
 // Checksum 0x2db5bea7, Offset: 0x1fe0
 // Size: 0x2c
-function function_9f50079d()
+function offhand_weapon_override()
 {
     zm_loadout::register_tactical_grenade_for_level( #"zhield_riot_dw", 1 );
 }

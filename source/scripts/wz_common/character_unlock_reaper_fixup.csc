@@ -18,7 +18,7 @@ function autoexec __init__system__()
 // Size: 0x74
 function __init__()
 {
-    character_unlock_fixup::register_character_unlock( #"reaper_unlock", #"hash_76cce42bfc9866cd", #"cu35_item", &function_d95e620c, #"hash_555c37b28c4a770c", #"hash_555c3ab28c4a7c25" );
+    character_unlock_fixup::register_character_unlock( #"reaper_unlock", #"prt_wz_reaper_bo4", #"cu35_item", &function_d95e620c, #"hash_555c37b28c4a770c", #"hash_555c3ab28c4a7c25" );
 }
 
 // Namespace character_unlock_reaper_fixup/character_unlock_reaper_fixup

@@ -55,7 +55,7 @@ function finalize_init()
         
         /#
             level thread devgui_setup();
-            level.var_b4ef4d73 = 1;
+            level.white_flag_f = 1;
         #/
     }
 }
@@ -70,22 +70,22 @@ function on_player_connect()
     self.shlocalh = 0;
     self.var_45ce0c21 = 0;
     
-    if ( self is_contract_active( #"contract_zm_no_pap" ) || isdefined( level.var_b4ef4d73 ) && level.var_b4ef4d73 )
+    if ( self is_contract_active( #"contract_zm_no_pap" ) || isdefined( level.white_flag_f ) && level.white_flag_f )
     {
         self thread function_677a89c8();
     }
     
-    if ( self is_contract_active( #"contract_zm_perks" ) || isdefined( level.var_b4ef4d73 ) && level.var_b4ef4d73 )
+    if ( self is_contract_active( #"contract_zm_perks" ) || isdefined( level.white_flag_f ) && level.white_flag_f )
     {
         self thread function_30dc9a23();
     }
     
-    if ( self is_contract_active( #"contract_zm_same_shield" ) || isdefined( level.var_b4ef4d73 ) && level.var_b4ef4d73 )
+    if ( self is_contract_active( #"contract_zm_same_shield" ) || isdefined( level.white_flag_f ) && level.white_flag_f )
     {
         self thread function_9d5cd9ee();
     }
     
-    if ( self is_contract_active( #"contract_zm_same_location" ) || isdefined( level.var_b4ef4d73 ) && level.var_b4ef4d73 )
+    if ( self is_contract_active( #"contract_zm_same_location" ) || isdefined( level.white_flag_f ) && level.white_flag_f )
     {
         self thread function_51db541e();
     }

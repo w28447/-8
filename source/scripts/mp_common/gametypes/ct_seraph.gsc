@@ -387,7 +387,7 @@ function function_1ca79c02( var_edc95125 )
     level.var_284fdd1c = 0;
     e_player = getplayers()[ 0 ];
     e_player thread function_5ccd53d5();
-    level thread function_f704f55c();
+    level thread robot_manager();
     
     while ( true )
     {
@@ -602,7 +602,7 @@ function function_861806d6()
 // Params 0
 // Checksum 0xcb0116c9, Offset: 0x1e48
 // Size: 0xe8
-function function_f704f55c()
+function robot_manager()
 {
     level endon( #"mission_failed", #"mission_success", #"times_up" );
     

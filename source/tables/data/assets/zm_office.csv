@@ -5,11 +5,11 @@ physpreset,#p7_medical_cot
 physpreset,#hash_1f21250a9bc4b2cd
 physpreset,#hash_260836fb8b5de3f9
 physpreset,#hash_2d2315df8c3e1636
-physpreset,#hash_2e1a6a36da3d4fc3
+physpreset,#sandbag
 physpreset,#p7_supply_briefcase_02
 physpreset,#hash_37a4397b805ad372
 physpreset,#hash_3f8f279f390590eb
-physpreset,#hash_408bcb61fe20d903
+physpreset,#ashtray
 physpreset,#p7_debris_trash_snack_bag_06
 physpreset,#p7_debris_trash_snack_bag_07
 physpreset,#p7_debris_trash_snack_bag_02
@@ -13864,7 +13864,7 @@ image,#i_mtl_p7_zm_moo_vent_metal_01_n
 image,#i_mtl_p7_zm_moo_vent_metal_01_m
 image,#i_t8_zm_off_room_labels_c
 image,#i_t8_zm_off_room_labels_n
-image,d#hash_27d2980e98d88c55
+image,d#$alpha
 image,d#fxt8_water_ripple_anim_mask
 image,#i_mtl_p7_slu_meter_electric_01_base_burnt_n
 image,#i_mtl_p7_slu_meter_electric_01_base_burnt_m
@@ -21290,7 +21290,7 @@ material,#mc/mtl_p8_fire_extinguisher_01_dmg_metal_02
 material,#mc/mtl_p7_zm_asc_wires_bunker_set_dirt
 material,d#ei/gfx_smk_whisp_anim_02_high_gray_lit
 material,d#hash_15ff0e3297252568
-material,#hash_16026d20e691b59d
+material,#generic_filter_zm_wormhole
 material,d#hash_160282329728205b
 material,d#mc/mtl_c_t8_zmb_ofc_hero_nikolai_canteen
 material,#mc/mtl_p7_slu_cooler_refrigerator_glass
@@ -25727,7 +25727,7 @@ gesture,d#hash_796e778b9fe922f0
 sharedweaponsounds,#hash_367e85d5f5c45ca
 sharedweaponsounds,#hash_b2107e63787b0c3
 sharedweaponsounds,d#bowie
-sharedweaponsounds,#hash_1d67e7e14d596701
+sharedweaponsounds,#battle_shield
 sharedweaponsounds,#rocketshield
 sharedweaponsounds,d#dog_melee
 sharedweaponsounds,d#knife
@@ -26434,7 +26434,7 @@ xmodel,#p8_zm_off_table_wood_wall
 xmodel,#p7_zm_asc_airduct_s_short
 xmodel,#p7_electrical_box_set2_box01
 xmodel,#hash_2df4fef722e7caed
-xmodel,#hash_2e4fec9ed26690ce
+xmodel,#wpn_t7_zmb_dlc2_shield_dmg01_view
 xmodel,#hash_2e76f3bc34d85b61
 xmodel,#p8_zm_off_sidehall_ceiling_a
 xmodel,#p7_zm_debris_newspaper_german_01_burnt
@@ -26698,7 +26698,7 @@ xmodel,#p8_zm_off_cord_electronic_06
 xmodel,#p8_zm_off_cord_electronic_07
 xmodel,#p8_zm_off_cord_electronic_04
 xmodel,#p8_zm_off_cord_electronic_05
-xmodel,#hash_3ebb082a36ccc8d2
+xmodel,#wpn_t7_zmb_dlc2_shield_view
 xmodel,#p7_mou_cabinet_filing_02
 xmodel,#hash_3ef4fe639b1c493c
 xmodel,#p7_zm_moo_signage_aircraft_01
@@ -27745,7 +27745,7 @@ fx,d#zombie/fx_tesla_shock_eyes_zmb
 fx,d#hash_23eb31bab2fd967a
 fx,d#hash_247c28b43c001b30
 fx,d#zm_ai/fx8_dog_lightning_spawn
-fx,d#hash_249f091d13da3663
+fx,d#zm_ai/fx8_dog_eye_glow
 fx,#hash_24a1ed7fe233c494
 fx,#hash_24fb9f1cba33a365
 fx,#hash_259bb7806d596ed3
@@ -28364,7 +28364,7 @@ fx,#hash_1f7c9c39945dcfd7
 fx,#hash_200de2be21c77806
 fx,#hash_200f622fe59abb84
 fx,#hash_201378189651055d
-fx,d#hash_21f397376b81d9ef
+fx,d#impacts/fx_bul_impact_blood_body_fatal
 fx,d#hash_22a28243e6e34fe5
 fx,d#hash_230c8843e73df620
 fx,d#hash_235bfad7772a8570
@@ -28466,7 +28466,7 @@ fx,#hash_56e64fabf583208c
 fx,#hash_56ed5babf589539e
 fx,#hash_573924a536b6fc39
 fx,d#hash_57759c5fdd88c512
-fx,d#hash_58a46bbe91ae7b30
+fx,d#weapon/fx_muz_sm_pistol_3p
 fx,d#hash_58ab77be91b4ae42
 fx,#hash_58c25eabf156f81c
 fx,#hash_58c964b815e4f69e
@@ -29258,8 +29258,8 @@ scriptbundle,#p8_zm_gravityspikes_miniboss_trap_scene
 scriptbundle,#p8_zm_flame_tornado_miniboss_scene
 animmappingtable,#hash_13b1ea38b9421ce0
 statuseffect,#hash_19533caf858a9f3b
-beam,#hash_5baeea64e2d2e8b
-beam,#hash_32870a226efa65af
+beam,#flamethrower_beam_3p
+beam,#flamethrower_beam
 staticlevelfxlist,#maps/zm/zm_office.d3dbsp
 weapon,#hero_flamethrower_t8_lv2_zm
 weapon,#hero_flamethrower_t8_lv1_zm

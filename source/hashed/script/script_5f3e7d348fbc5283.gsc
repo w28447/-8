@@ -36,16 +36,16 @@ function private function_7e4aeb0b()
     item_world::function_4de3ca98();
     var_595e1a69 = getdynentarray( #"hash_37a64c24861c7172" );
     
-    foreach ( var_534542fd in var_595e1a69 )
+    foreach ( e_pot in var_595e1a69 )
     {
-        item_world::function_160294c7( var_534542fd );
+        item_world::function_160294c7( e_pot );
     }
     
     var_595e1a69 = getdynentarray( #"hash_7d60590fc39ccb98" );
     
-    foreach ( var_534542fd in var_595e1a69 )
+    foreach ( e_pot in var_595e1a69 )
     {
-        item_world::function_160294c7( var_534542fd );
+        item_world::function_160294c7( e_pot );
     }
 }
 

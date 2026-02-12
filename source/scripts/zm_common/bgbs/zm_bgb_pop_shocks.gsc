@@ -191,14 +191,14 @@ function tesla_death( player )
     player endon( #"disconnect" );
     self thread function_f724a242( 1 );
     wait 2;
-    player zm_stats::increment_challenge_stat( #"hash_133575f669ffc55c" );
+    player zm_stats::increment_challenge_stat( #"gum_gobbler_pop_shocks" );
     
     foreach ( weapon in player getweaponslist() )
     {
         if ( weapon.statname == #"bowie_knife" )
         {
-            player stats::function_e24eec31( weapon, #"hash_657e22dcdd18da77", 1 );
-            player stats::inc_stat( #"item_stats", weapon.name, #"hash_657e22dcdd18da77", #"statvalue", 1 );
+            player stats::function_e24eec31( weapon, #"popshockkills", 1 );
+            player stats::inc_stat( #"item_stats", weapon.name, #"popshockkills", #"statvalue", 1 );
         }
     }
     

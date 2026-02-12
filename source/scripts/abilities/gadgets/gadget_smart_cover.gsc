@@ -735,9 +735,9 @@ function function_2a494565( isselfdestruct )
         
         var_b0e81be9 = isdefined( self gettagorigin( "tag_cover_base_d0" ) ) ? self gettagorigin( "tag_cover_base_d0" ) : self.origin;
         var_505e3308 = isdefined( self gettagangles( "tag_cover_base_d0" ) ) ? self gettagangles( "tag_cover_base_d0" ) : self.angles;
-        var_8fec56c4 = anglestoforward( var_505e3308 );
-        var_61753233 = anglestoup( var_505e3308 );
-        playfx( var_415135a0, var_b0e81be9, var_8fec56c4, var_61753233 );
+        tag_base_forward = anglestoforward( var_505e3308 );
+        tag_base_up = anglestoup( var_505e3308 );
+        playfx( var_415135a0, var_b0e81be9, tag_base_forward, tag_base_up );
         
         if ( isdefined( var_72db9941 ) )
         {
@@ -916,15 +916,15 @@ function function_d2368084( einflictor, eattacker, idamage, idflags, smeansofdea
 // Size: 0x232
 function function_20be77a3( smartcover )
 {
-    smartcover.var_eda9690f = [];
+    smartcover.collisionspheres = [];
     forwardangles = anglestoforward( smartcover.angles );
     rightangles = anglestoright( smartcover.angles );
     var_526ec5aa = smartcover.origin + ( 0, 0, 1 ) * getdvarfloat( #"hash_4d17057924212aa9", 1 );
-    smartcover.var_eda9690f[ smartcover.var_eda9690f.size ] = var_526ec5aa + forwardangles * getdvarfloat( #"hash_477cc29b988c0b75", 1 );
-    smartcover.var_eda9690f[ smartcover.var_eda9690f.size ] = smartcover.var_eda9690f[ 0 ] + ( 0, 0, 1 ) * getdvarfloat( #"hash_41cfd0e34c53ef02", 1 );
+    smartcover.collisionspheres[ smartcover.collisionspheres.size ] = var_526ec5aa + forwardangles * getdvarfloat( #"hash_477cc29b988c0b75", 1 );
+    smartcover.collisionspheres[ smartcover.collisionspheres.size ] = smartcover.collisionspheres[ 0 ] + ( 0, 0, 1 ) * getdvarfloat( #"hash_41cfd0e34c53ef02", 1 );
     backpoint = var_526ec5aa + forwardangles * getdvarfloat( #"hash_7f893c50ae5356c8", 1 );
-    smartcover.var_eda9690f[ smartcover.var_eda9690f.size ] = backpoint + rightangles * getdvarfloat( #"hash_70ce44b2b0b4005", 1 );
-    smartcover.var_eda9690f[ smartcover.var_eda9690f.size ] = backpoint - rightangles * getdvarfloat( #"hash_70ce44b2b0b4005", 1 );
+    smartcover.collisionspheres[ smartcover.collisionspheres.size ] = backpoint + rightangles * getdvarfloat( #"hash_70ce44b2b0b4005", 1 );
+    smartcover.collisionspheres[ smartcover.collisionspheres.size ] = backpoint - rightangles * getdvarfloat( #"hash_70ce44b2b0b4005", 1 );
 }
 
 // Namespace smart_cover/gadget_smart_cover
@@ -1195,13 +1195,13 @@ function private function_4e6d9621( smartcover, origins, radii )
 {
     assert( isarray( origins ) );
     assert( !isarray( radii ) || origins.size == radii.size );
-    assert( isdefined( smartcover.var_eda9690f ) && smartcover.var_eda9690f.size > 0 );
+    assert( isdefined( smartcover.collisionspheres ) && smartcover.collisionspheres.size > 0 );
     
-    foreach ( var_592587c3 in smartcover.var_eda9690f )
+    foreach ( collisionsphere in smartcover.collisionspheres )
     {
         for ( index = 0; index < origins.size ; index++ )
         {
-            distance = distancesquared( origins[ index ], var_592587c3 );
+            distance = distancesquared( origins[ index ], collisionsphere );
             radius = isarray( radii ) ? radii[ index ] : radii;
             combinedradius = radius + getdvarfloat( #"hash_4d17057924212aa9", 1 );
             
@@ -1209,7 +1209,7 @@ function private function_4e6d9621( smartcover, origins, radii )
             {
                 /#
                     sphere( origins[ index ], radius, ( 0, 0, 1 ), 0.5, 0, 10, 500 );
-                    sphere( var_592587c3, getdvarfloat( #"hash_4d17057924212aa9", 1 ), ( 1, 0, 0 ), 0.5, 0, 10, 500 );
+                    sphere( collisionsphere, getdvarfloat( #"hash_4d17057924212aa9", 1 ), ( 1, 0, 0 ), 0.5, 0, 10, 500 );
                 #/
             }
             

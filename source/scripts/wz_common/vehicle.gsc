@@ -350,9 +350,9 @@ function is_staircase_up( attackingplayer = undefined, jammer = undefined )
     params = spawnstruct();
     emp_duration = 30;
     
-    if ( isdefined( level.var_578f7c6d.customsettings.var_3bd9b483 ) )
+    if ( isdefined( level.jammersettings.customsettings.var_3bd9b483 ) )
     {
-        emp_duration = level.var_578f7c6d.customsettings.var_3bd9b483;
+        emp_duration = level.jammersettings.customsettings.var_3bd9b483;
     }
     
     params.param0 = emp_duration;
@@ -728,7 +728,7 @@ function function_3054737a( vehicle )
         return;
     }
     
-    vehicle.session = { #vehicle:vehicle.vehicletype, #var_2dbaf8ca:vehicle.origin[ 0 ], #var_1ff15d37:vehicle.origin[ 1 ], #var_16f7d5d0:vehicle.origin[ 0 ], #var_4ba3155:vehicle.origin[ 1 ], #var_c87538d9:vehicle.trackingindex, #start_time:gettime(), #end_time:0, #start_health:vehicle.health, #end_health:vehicle.health, #first_player:int( self getxuid( 1 ) ), #var_efe98761:1, #var_309ad81f:0, #var_5ba0df6e:0, #var_770fd50d:0, #var_33f48e5a:0, #var_ecd1fe60:0, #vehicle_kills:0, #var_ffb0c509:0, #var_45bf3627:0, #raw\russian\sound\vox\scripted\isa\vox_isa_encourage_lost_01.SN65.xenon.snd:0, #passenger_kills:0 };
+    vehicle.session = { #vehicle:vehicle.vehicletype, #var_2dbaf8ca:vehicle.origin[ 0 ], #var_1ff15d37:vehicle.origin[ 1 ], #var_16f7d5d0:vehicle.origin[ 0 ], #var_4ba3155:vehicle.origin[ 1 ], #vehicle_id:vehicle.trackingindex, #start_time:gettime(), #end_time:0, #start_health:vehicle.health, #end_health:vehicle.health, #first_player:int( self getxuid( 1 ) ), #var_efe98761:1, #var_309ad81f:0, #var_5ba0df6e:0, #var_770fd50d:0, #var_33f48e5a:0, #var_ecd1fe60:0, #vehicle_kills:0, #var_ffb0c509:0, #var_45bf3627:0, #raw\russian\sound\vox\scripted\isa\vox_isa_encourage_lost_01.SN65.xenon.snd:0, #passenger_kills:0 };
 }
 
 // Namespace wz_vehicle/vehicle
@@ -1011,7 +1011,7 @@ function private function_df786031()
 // Params 0, eflags: 0x4
 // Checksum 0xbefe616, Offset: 0x3b60
 // Size: 0x1c, Type: bool
-function private function_ea4291d3()
+function private anim_exposed_de()
 {
     return isdefined( self.locked_on ) && self.locked_on > 0;
 }
@@ -1027,7 +1027,7 @@ function private function_b3caeebc( player )
     
     while ( true )
     {
-        if ( self function_ea4291d3() )
+        if ( self anim_exposed_de() )
         {
             player clientfield::set_player_uimodel( "vehicle.missileLock", 2 );
             self playsoundtoplayer( #"hash_445c9fb1793c4259", player );
@@ -1256,7 +1256,7 @@ function event_handler[exit_vehicle] codecallback_vehicleexit( eventstruct )
         self clientfield::set_to_player( "toggle_vehicle_sensor", 0 );
     }
     
-    if ( vehicle function_ea4291d3() )
+    if ( vehicle anim_exposed_de() )
     {
         wz_progression::on_exit_locked_on_vehicle( self );
     }
@@ -1407,11 +1407,11 @@ function event_handler[change_seat] function_2aa4e6cf( eventstruct )
     vehicle function_388973e4( isemped );
 }
 
-// Namespace wz_vehicle/event_44d3f985
+// Namespace wz_vehicle/vehicle_leanout
 // Params 1, eflags: 0x40
 // Checksum 0x67ba7a40, Offset: 0x4c98
 // Size: 0xbc
-function event_handler[event_44d3f985] function_2d7f6e48( eventstruct )
+function event_handler[vehicle_leanout] function_2d7f6e48( eventstruct )
 {
     if ( !isplayer( self ) )
     {
@@ -3771,17 +3771,17 @@ function private function_479389f3()
     height = self.height;
     assert( isdefined( self.radius ) );
     assert( isdefined( self.height ) );
-    var_33a206d0 = [];
-    var_33a206d0[ #"leftrear" ] = self gettagorigin( "tag_ground_contact_left_rear" );
-    var_33a206d0[ #"leftmiddle" ] = self gettagorigin( "tag_ground_contact_left_middle" );
-    var_33a206d0[ #"leftfront" ] = self gettagorigin( "tag_ground_contact_left_front" );
-    var_8fc02d3b = [];
-    var_8fc02d3b[ #"rightrear" ] = self gettagorigin( "tag_ground_contact_right_rear" );
-    var_8fc02d3b[ #"rightmiddle" ] = self gettagorigin( "tag_ground_contact_right_middle" );
-    var_8fc02d3b[ #"rightfront" ] = self gettagorigin( "tag_ground_contact_right_front" );
+    lefttags = [];
+    lefttags[ #"leftrear" ] = self gettagorigin( "tag_ground_contact_left_rear" );
+    lefttags[ #"leftmiddle" ] = self gettagorigin( "tag_ground_contact_left_middle" );
+    lefttags[ #"leftfront" ] = self gettagorigin( "tag_ground_contact_left_front" );
+    righttags = [];
+    righttags[ #"rightrear" ] = self gettagorigin( "tag_ground_contact_right_rear" );
+    righttags[ #"rightmiddle" ] = self gettagorigin( "tag_ground_contact_right_middle" );
+    righttags[ #"rightfront" ] = self gettagorigin( "tag_ground_contact_right_front" );
     var_df47b913 = [];
     
-    foreach ( tag, origin in var_33a206d0 )
+    foreach ( tag, origin in lefttags )
     {
         if ( !isdefined( origin ) )
         {
@@ -3793,7 +3793,7 @@ function private function_479389f3()
     
     var_dc8469e2 = [];
     
-    foreach ( tag, origin in var_8fc02d3b )
+    foreach ( tag, origin in righttags )
     {
         if ( !isdefined( origin ) )
         {
@@ -3819,8 +3819,8 @@ function private function_479389f3()
         
         if ( trace[ #"fraction" ] < 1 )
         {
-            var_b0e8278f += var_33a206d0[ tag ];
-            var_4c962569 += trace[ #"position" ][ 2 ] - var_33a206d0[ tag ][ 2 ];
+            var_b0e8278f += lefttags[ tag ];
+            var_4c962569 += trace[ #"position" ][ 2 ] - lefttags[ tag ][ 2 ];
             avgnormal += trace[ #"normal" ];
             var_e10b67f7[ tag ] = trace;
         }
@@ -3838,8 +3838,8 @@ function private function_479389f3()
         
         if ( trace[ #"fraction" ] < 1 )
         {
-            var_b0e8278f += var_8fc02d3b[ tag ];
-            var_4c962569 += trace[ #"position" ][ 2 ] - var_8fc02d3b[ tag ][ 2 ];
+            var_b0e8278f += righttags[ tag ];
+            var_4c962569 += trace[ #"position" ][ 2 ] - righttags[ tag ][ 2 ];
             avgnormal += trace[ #"normal" ];
             var_d3532cfe[ tag ] = trace;
         }

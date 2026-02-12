@@ -98,17 +98,17 @@ function function_b65fd5ae( params )
         self.var_4592c713 = 0;
     }
     
-    var_bdbde2d2 = #"freezegun_slowdown";
+    str_slowdown = #"freezegun_slowdown";
     
     if ( self.var_4592c713 || params.weapon == level.w_freezegun_upgraded )
     {
-        var_bdbde2d2 = #"hash_5a1a7bceb3b8fded";
+        str_slowdown = #"hash_5a1a7bceb3b8fded";
     }
     
     if ( self.archetype != #"zombie_dog" )
     {
-        self thread namespace_9ff9f642::slowdown( var_bdbde2d2 );
-        self thread slow_watcher( var_bdbde2d2 );
+        self thread namespace_9ff9f642::slowdown( str_slowdown );
+        self thread slow_watcher( str_slowdown );
     }
     
     if ( !( getdvarint( #"splitscreen_playercount", 1 ) > 2 ) )
@@ -121,14 +121,14 @@ function function_b65fd5ae( params )
 // Params 1
 // Checksum 0x8577ad4, Offset: 0x720
 // Size: 0x92
-function slow_watcher( var_bdbde2d2 )
+function slow_watcher( str_slowdown )
 {
     self notify( #"hash_7898db449656ed5a" );
     self endon( #"death", #"hash_7898db449656ed5a" );
     self.var_4592c713 = 1;
     n_wait = 10;
     
-    if ( var_bdbde2d2 == #"hash_5a1a7bceb3b8fded" )
+    if ( str_slowdown == #"hash_5a1a7bceb3b8fded" )
     {
         n_wait = 15;
     }

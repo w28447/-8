@@ -197,7 +197,7 @@ scriptbundle,#p8_fxanim_mp_maldives_dock_straps_bundle
 scriptbundle,#p8_fxanim_mp_maldives_dock_speed_boat_bundle
 scriptbundle,#p8_fxanim_mp_mal_crab_orange_eat_01_bundle
 scriptbundle,#p8_fxanim_mp_mal_crab_03_bundle
-string,#hash_e428880b38b4d8d
+string,#OBJECTIVES_COOP_WAYPOINT_HACK
 string,#hash_1258c631be445822
 string,#hash_29965b65bca9cd7b
 string,#hash_310ad55f171e194e
@@ -211,7 +211,7 @@ radiant_exploder,#hash_5cfa031a3f697a07
 radiant_exploder,#hash_718a43483283cbf3
 radiant_exploder,#hash_718a44483283cda6
 radiant_exploder,#hash_718a45483283cf59
-soundalias,#hash_796d04249a4d45
+soundalias,#amb_fan_large
 soundalias,#hash_94b5f3bad73031
 soundalias,#hash_9c60a4b93776bb
 soundalias,#hash_f1cc09c79489c1
@@ -243,7 +243,7 @@ soundalias,#hash_bd53719309b6fc1
 soundalias,#hash_c266934b6e24701
 soundalias,#hash_c4a4d3584e7ac22
 soundalias,#hash_ca467b11bcaf711
-soundalias,#hash_cc693b3173e7565
+soundalias,#exp_concussive_large
 soundalias,#evt_laser_button
 soundalias,#hash_f8d2d12b31cfa1d
 soundalias,#hash_101aa41260505836
@@ -287,7 +287,7 @@ soundalias,#hash_26b3854d91ceec6f
 soundalias,#hash_26bf012beaa38162
 soundalias,#hash_26c7edcfeefb9db5
 soundalias,#hash_2730ba20330dff4a
-soundalias,#hash_2748aa2e6dc57ae0
+soundalias,#dst_car_tire_deflate
 soundalias,#amb_flag
 soundalias,#hash_279f3078be685e6f
 soundalias,#hash_28d36107a7c5bb44
@@ -409,7 +409,7 @@ soundalias,#amb_wind_line_l
 soundalias,#amb_wind_line_r
 soundalias,#hash_6588467465c85700
 soundalias,#hash_663899d42687914d
-soundalias,#hash_66aa6b049c23fa3f
+soundalias,#exp_incindiary_large
 soundalias,#evt_elevator_stop
 soundalias,#hash_67e1b634a1e1c1ba
 soundalias,#hash_68b8beb0257da073
@@ -445,7 +445,7 @@ soundalias,#exp_veh_plane_spinout_lp
 soundalias,#hash_7ac5fa6568de2461
 soundalias,#hash_7b03a9cee3b85887
 soundalias,#hash_7c0ea1d56c2afc2b
-soundalias,#hash_7c2e59ca3ee725e5
+soundalias,#exp_veh_med
 soundalias,#hash_7c3c891b334ff517
 soundalias,#hash_7c5be2e90a66d8b5
 soundalias,#hash_7d4eb0bd7c52b57f

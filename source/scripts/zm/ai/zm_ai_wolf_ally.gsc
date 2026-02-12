@@ -102,7 +102,7 @@ function private function_7728abc3()
         self.ignore_nuke = 1;
         self.ignore_all_poi = 1;
         self.instakill_func = &zm_powerups::function_16c2586a;
-        self.var_84f9cc2e = 0;
+        self.attack_cooldown = 0;
         self.var_1dddf9ab = &function_18da2db6;
         self.var_951e8469 = 0;
         self.next_move_time = 0;
@@ -137,7 +137,7 @@ function private function_6ca1cd82( entity, player, duration, color )
                 player_centroid = player_owner getcentroid();
                 color = ( 1, 0, 0 );
                 
-                if ( gettime() > self.var_84f9cc2e )
+                if ( gettime() > self.attack_cooldown )
                 {
                     color = ( 0, 1, 0 );
                 }
@@ -304,7 +304,7 @@ function private function_af59b7a5( entity )
         entity.favoriteenemy = get_favorite_enemy( entity );
     }
     
-    if ( gettime() > entity.var_84f9cc2e && isdefined( entity.favoriteenemy ) && isalive( entity.favoriteenemy ) )
+    if ( gettime() > entity.attack_cooldown && isdefined( entity.favoriteenemy ) && isalive( entity.favoriteenemy ) )
     {
         if ( isdefined( level.enemy_location_override_func ) )
         {
@@ -411,11 +411,11 @@ function private function_dba8e076( entity )
         
         if ( players.size > 0 )
         {
-            entity.var_93a62fe = arraygetclosest( entity.origin, players );
+            entity.closest_valid_player = arraygetclosest( entity.origin, players );
             return;
         }
         
-        entity.var_93a62fe = undefined;
+        entity.closest_valid_player = undefined;
     }
 }
 
@@ -475,9 +475,9 @@ function private function_f00b611e()
     {
         result = self.player_owner;
     }
-    else if ( isdefined( self.var_93a62fe ) )
+    else if ( isdefined( self.closest_valid_player ) )
     {
-        result = self.var_93a62fe;
+        result = self.closest_valid_player;
     }
     
     return result;
@@ -506,7 +506,7 @@ function private function_18da2db6()
 // Size: 0x1c, Type: bool
 function private function_804dd716( entity )
 {
-    return gettime() > entity.var_84f9cc2e;
+    return gettime() > entity.attack_cooldown;
 }
 
 // Namespace zm_ai_wolf_ally/zm_ai_wolf_ally
@@ -517,7 +517,7 @@ function private function_ba0f4046( entity )
 {
     result = 0;
     
-    if ( gettime() > entity.var_84f9cc2e && !( isdefined( entity.ignoreall ) && entity.ignoreall ) && !( isdefined( level.intermission ) && level.intermission ) && function_bd0a9007( entity, entity.favoriteenemy ) )
+    if ( gettime() > entity.attack_cooldown && !( isdefined( entity.ignoreall ) && entity.ignoreall ) && !( isdefined( level.intermission ) && level.intermission ) && function_bd0a9007( entity, entity.favoriteenemy ) )
     {
         var_7e0e6341 = entity ai::function_9139c839();
         distance_sq = distancesquared( entity.origin, entity.favoriteenemy.origin );
@@ -553,11 +553,11 @@ function private function_f7c7a416( entity )
                 
                 if ( isdefined( var_7e0e6341 ) && isdefined( var_7e0e6341.damagescale ) )
                 {
-                    var_b1c1c5cf = var_7e0e6341.damagescale;
+                    n_damage_scale = var_7e0e6341.damagescale;
                     
-                    if ( var_b1c1c5cf > 0 && var_b1c1c5cf < 1 )
+                    if ( n_damage_scale > 0 && n_damage_scale < 1 )
                     {
-                        var_64cc5e50 = 1 / var_b1c1c5cf;
+                        var_64cc5e50 = 1 / n_damage_scale;
                         n_base_damage *= var_64cc5e50;
                     }
                 }
@@ -608,7 +608,7 @@ function private function_f7c7a416( entity )
                 }
             }
             
-            self.var_84f9cc2e = gettime() + 500;
+            self.attack_cooldown = gettime() + 500;
         }
         
         entity callback::callback( #"on_ai_melee" );
@@ -702,7 +702,7 @@ function private function_87660c12( entity )
 // Size: 0x2ea, Type: bool
 function function_14a8c157( entity )
 {
-    if ( isdefined( entity.enemy ) && gettime() > entity.var_84f9cc2e )
+    if ( isdefined( entity.enemy ) && gettime() > entity.attack_cooldown )
     {
         if ( !btapi_shouldchargemelee( entity ) )
         {

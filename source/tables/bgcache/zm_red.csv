@@ -296,7 +296,7 @@ model,#c_t8_zmb_dlc2_zombie_female_body1_g_rarmoff
 model,#p8_fxanim_zm_red_gear_wall_02_mod
 model,#c_t8_zmb_dlc2_zombie_male_body4_skin3
 model,#c_t8_zmb_dlc2_zombie_male_body4_skin2
-model,#hash_2e4fec9ed26690ce
+model,#wpn_t7_zmb_dlc2_shield_dmg01_view
 model,#p8_zm_chaos_portal_01_chunk_03_red
 model,#fx_axis_createfx
 model,#c_t8_zmb_dlc2_zombie_male_body1_g_rarmoff
@@ -423,7 +423,7 @@ model,#p8_fxp_fluid_tendril_1_water
 model,#hash_3e9aca2f85523d28
 model,#p8_fxanim_zm_red_ww_hand_charon_mod
 model,#p8_zm_red_archimedes_mirror
-model,#hash_3ebb082a36ccc8d2
+model,#wpn_t7_zmb_dlc2_shield_view
 model,#p8_zm_red_shrine_ouranos_feather
 model,#c_t8_zmb_dlc2_zombie_male_body2_g_llegoff
 model,#c_t8_zmb_hero_bruno_body_igc
@@ -988,7 +988,7 @@ character,#c_t8_zmb_dlc2_zombie_male1
 character,#c_t8_zmb_dlc2_zombie_male4
 character,#hash_66dad92934d9a1a1
 character,#c_t8_zmb_dlc1_alistair1_igc
-character,#hash_6c258fe575114eac
+character,#c_zom_der_zombie2
 character,#c_t8_zmb_hero_bruno1_igc
 character,#hash_75ada3ee1ba2dc59
 character,#hash_77884389918aee65
@@ -3834,7 +3834,7 @@ string,#zmweapon/riotshield
 string,#hash_40c47b72c083914
 string,#hash_41c78eae0a58032
 string,#hash_43b319457bc818e
-string,#hash_47e1955bea1fc19
+string,#mpui/camo_flectarn
 string,#mpui/extclip2
 string,#hash_53f8ce3091d435c
 string,#hash_54d93a685e1f42c
@@ -3901,7 +3901,7 @@ string,#mpui/ir
 string,#mpui/is
 string,#mpui/gl
 string,#mpui/dw
-string,#hash_11844df90c43c32c
+string,#mpui/camo_dante
 string,#mpui/sf
 string,#mpui/rf
 string,#hash_11cfa6d5f521dede
@@ -3928,7 +3928,7 @@ string,#hash_145f1e36dfff4c6b
 string,#hash_14b9981c6e3d2f76
 string,#hash_1516f25ae34907a6
 string,#hash_1517f0bbb322181e
-string,#hash_15b50559752dd744
+string,#mpui/camo_redhex
 string,#hash_15b57cf1d527f801
 string,#hash_15cf0d46af70291b
 string,#mpui/null
@@ -3958,7 +3958,7 @@ string,#hash_1c07c87a45375aaf
 string,#hash_1c085e4db0b218f9
 string,#hash_1c6da12a0fbd82d8
 string,#hash_1c8a5493dc5fcd7a
-string,#hash_1c93858d6991c626
+string,#mpui/camo_integer
 string,#hash_1de8074c3eafd78e
 string,#zmui/mms_desc
 string,#mpui/steadyaim2
@@ -3977,10 +3977,10 @@ string,#hash_22ec60cd78b8277f
 string,#hash_23184906a849ac54
 string,#hash_238c297b9cef431e
 string,#hash_23a486d7f7c86208
-string,#hash_23d45d79e7cc975d
+string,#mpui/camo_jungle
 string,#mpui/dualoptic_desc
 string,#hash_2428c7882076afc2
-string,#hash_2462544f3066322a
+string,#mpui/camo_huntsman
 string,#hash_246c7d9118b22299
 string,#hash_248c775f6ad7c8e5
 string,#hash_24a3e0f402bfd000
@@ -4002,7 +4002,7 @@ string,#hash_27cdd9110057055c
 string,#hash_286cefa4bc6e994f
 string,#mpui/fmj2_desc
 string,#hash_28f8d698fe4d79d2
-string,#hash_2903042e98504cc7
+string,#zmui/high_caliber_2_desc
 string,#hash_2910970920dd3ee3
 string,#mpui/holdbreath_desc
 string,#hash_29d1b41ee09e09b8
@@ -4012,7 +4012,7 @@ string,#hash_2aa6fa1848766679
 string,#hash_2b0fae1c09a3d8a9
 string,#hash_2b27d20d2cfc1069
 string,#hash_2b3d791eb05ec296
-string,#hash_2b40461a235c9616
+string,#mpui/camo_ardent
 string,#mpui/acog_desc
 string,#mpui/stabilizer_desc
 string,#mpui/holdbreath
@@ -4030,7 +4030,7 @@ string,#hash_2e94430f1fc60691
 string,#hash_2f3ffd00c724e116
 string,#hash_2f60988e7a5d5bf8
 string,#hash_2f6eb9c102b831ad
-string,#hash_2f75827412f48897
+string,#mpui/camo_burnt
 string,#hash_2fa0e740320682d2
 string,#mpui/fmj2
 string,#hash_30332a826f8e13e4
@@ -4048,7 +4048,7 @@ string,#hash_325135d069c6e5f7
 string,#hash_3255047731d03c2a
 string,#hash_3279150dc6bd1b3b
 string,#hash_327b9f441a6e0541
-string,#hash_3292e34998476e76
+string,#mpui/camo_snowjob
 string,#hash_32a859886bcbfb10
 string,#hash_330a65e00da6ea85
 string,#hash_33105d49e7fd102e
@@ -4084,7 +4084,7 @@ string,#hash_39b642cbfd1606d2
 string,#hash_39bac218bf0160b1
 string,#hash_3a294441722f3c4d
 string,#hash_3a319fea8f608182
-string,#hash_3a74252088bdde6d
+string,#zombie/repair_shield_spear
 string,#hash_3aa47b7b8258ebd2
 string,#mpui/reddot_desc
 string,#hash_3ae42f7d6eabab5a
@@ -4109,13 +4109,13 @@ string,#hash_3dfd2cf9c5589207
 string,#hash_3e27be7b0510a43b
 string,#hash_3e42591da1c1538f
 string,#mpui/steadyaim_desc
-string,#hash_3e968f73a7d7e44e
+string,#mpui/camo_chameleon
 string,#hash_3eb3dfbc9d3bc2bf
 string,#mpui/gl_desc
 string,#hash_3ee20f103a454178
 string,#hash_3ee9cef44af6161a
 string,#mpui/is_desc
-string,#hash_3f5e4aa38f9aeba5
+string,#zombie/powerup_shield_charge
 string,#hash_3fcd7430982303db
 string,#mpui/fastlockon
 string,#hash_40ecf90fa5d89c66
@@ -4131,15 +4131,15 @@ string,#hash_42cb69becded0870
 string,#hash_42da633feb35d41e
 string,#mpui/supply
 string,#hash_43374b5ab9becdaa
-string,#hash_4361bc63de0848d3
+string,#mpui/camo_jungletek
 string,#hash_43b0cfc850dbcc04
-string,#hash_44149fa37d4d853f
-string,#hash_44897e9801153878
+string,#mpui/camo_bliss
+string,#zombie/grab_shield_spear
 string,#mpui/suppressed
 string,#hash_452fd06faf792671
 string,#hash_4559e7775ede2f66
 string,#hash_4597718560da3ea2
-string,#hash_45ac048d97119e00
+string,#zombie/craft_shield_spear
 string,#hash_45b295f718835a41
 string,#mpui/hipgrip_desc
 string,#hash_45fd3f34a60262a3
@@ -4154,7 +4154,7 @@ string,#zmweapon/ww_crossbow_t8_upgraded
 string,#hash_4973da5ba484b2ae
 string,#hash_49b4beddb9e489aa
 string,#hash_49e88c8053d4f73e
-string,#hash_4a324d42cf256472
+string,#mpui/camo_heatstroke
 string,#hash_4a584bc8c443f246
 string,#hash_4a6f079813e273c3
 string,#hash_4aa00a9bc891ac28
@@ -4174,7 +4174,7 @@ string,#mpui/sf_desc
 string,#hash_4f0d8ebb363015e0
 string,#hash_4f23c6ecb321fa19
 string,#hash_4f55839413fe0046
-string,#hash_502cca55de20d536
+string,#mpui/camo_fear
 string,#hash_506621193b404166
 string,#hash_50663d02f6b02c16
 string,#mpui/vzoom_desc
@@ -4197,7 +4197,7 @@ string,#mpui/extrapellets
 string,#hash_54e4fb1367aa3001
 string,#zmui/extrapellets_desc
 string,#hash_556fbdaebf02d158
-string,#hash_56074383a6c3b738
+string,#zmui/high_caliber_desc
 string,#hash_560d002c6e40e5df
 string,#hash_561a6371fe1e6f3a
 string,#hash_56698a0a66eec888
@@ -4215,12 +4215,12 @@ string,#mpui/grip2
 string,#hash_5a2c2b30f6dc5c82
 string,#mpui/hipgrip
 string,#hash_5aabbca03c1acbc8
-string,#hash_5abca820cfab2cd8
+string,#mpui/camo_arctic
 string,#hash_5acae5f224c146a9
 string,#hash_5ad486b4756bedee
 string,#mpui/adsreload
 string,#hash_5b07fa123f86d7e0
-string,#hash_5b7536f294f156a6
+string,#mpui/camo_battle
 string,#hash_5c28147c226eb600
 string,#hash_5cb96dd4092c2ea0
 string,#hash_5cb96fd4092c3206
@@ -4239,7 +4239,7 @@ string,#hash_5e781f6f61833c14
 string,#hash_5e7b4f837b6c6744
 string,#hash_5e941bfa3ee0c59e
 string,#hash_5ea2a3a13605ccd9
-string,#hash_5ec68d99caf17930
+string,#mpui/camo_contagious
 string,#hash_5eee473576f81bf6
 string,#hash_5ef6d21d81a0250b
 string,#hash_5f17105e484faba8
@@ -4249,7 +4249,7 @@ string,#hash_5fe4e8fa43024e11
 string,#mpui/fastreload_desc
 string,#hash_6063cd6ae0f6ce28
 string,#hash_607993fb651c3014
-string,#hash_60a2e99cf0e191e1
+string,#mpui/camo_interpol
 string,#hash_60a3e7841c86cad1
 string,#mpui/extbarrel2_desc
 string,#zmui/barrelchoke_desc
@@ -4270,7 +4270,7 @@ string,#hash_62f3c85e5de910a3
 string,#hash_632b14cdd8900a35
 string,#hash_6336c110420ae95e
 string,#hash_6370b5a97249c317
-string,#hash_639a907fae7467b1
+string,#mpui/camo_6speed
 string,#hash_63b3c4fb5611225c
 string,#hash_63b3c5fb5611240f
 string,#hash_63b3c6fb561125c2
@@ -4316,7 +4316,7 @@ string,#hash_6c7060c02cfbede4
 string,#hash_6c8d7834e1591a50
 string,#hash_6cc43e140b155820
 string,#hash_6d78c0c2901bd46a
-string,#hash_6d832831f5532f00
+string,#mpui/camo_wmd
 string,#hash_6e155a8da74ae1b6
 string,#hash_6e2fd7423cbe42b0
 string,#hash_6e86b49d6d5196af
@@ -4351,7 +4351,7 @@ string,#hash_758d93baadbc199d
 string,#hash_758d9ac1d50488b4
 string,#hash_75c36a6b651e7775
 string,#hash_76208e521ab783c1
-string,#hash_7664f631b276facc
+string,#mpui/camo_ash
 string,#hash_768c5aeecc2d7cc4
 string,#hash_76aaf69e54bf876d
 string,#mpui/grip2_desc
@@ -4391,7 +4391,7 @@ string,#hash_7cf0aaa08ece2918
 string,#hash_7d3a87af11535537
 string,#hash_7d3e69af1a992cec
 string,#hash_7d4c19fb8173c5ee
-string,#hash_7db4187f695ce2a6
+string,#mpui/camo_woodlums
 string,#hash_7de869e5ba802015
 string,#hash_7deb7f6f097ee442
 string,#hash_7e2a644ef69ba66f
@@ -5850,7 +5850,7 @@ soundalias,#hash_1e191cb2143b9391
 soundalias,#zmb_gaia_hand_deposit
 soundalias,#hash_1e2283ef73442430
 soundalias,#hash_1e2887a33211a780
-soundalias,#hash_1e30410f212b9527
+soundalias,#zmb_vocals_zombie_taunt
 soundalias,#hash_1e329197dee1519d
 soundalias,#hash_1e3312d30c58f0ba
 soundalias,#hash_1e33d0e0e74b3a2c
@@ -6323,7 +6323,7 @@ soundalias,#hash_2998153bf427e653
 soundalias,#hash_2998163bf427e806
 soundalias,#hash_2998173bf427e9b9
 soundalias,#hash_2998193bf427ed1f
-soundalias,#hash_29a8faa6f42580d8
+soundalias,#fly_zombie_jumpland_soft
 soundalias,#hash_29adaa286b368166
 soundalias,#hash_29b800ce6b191301
 soundalias,#hash_29bde7b6709bcdb9
@@ -6625,8 +6625,8 @@ soundalias,#hash_30a26c61cba41ca8
 soundalias,#hash_30a4fafe64f76cbf
 soundalias,#hash_30b9f9343dfe3508
 soundalias,#hash_30c158da46215d2f
-soundalias,#hash_30c8c2d825e081e2
-soundalias,#hash_30c8c3d825e08395
+soundalias,#zmb_perks_packa_knuckle_0
+soundalias,#zmb_perks_packa_knuckle_1
 soundalias,#zmb_hellhound_loop_fire
 soundalias,#hash_30d5126b5c084bf0
 soundalias,#hash_30d5166b5c0852bc
@@ -6755,7 +6755,7 @@ soundalias,#zmb_perks_packa_upgrade
 soundalias,#hash_329003fa3cbc92be
 soundalias,#hash_32a86c56459a5b56
 soundalias,#hash_32a9ac7ac2292688
-soundalias,#hash_32ada8b7c04d80d5
+soundalias,#fly_zombie_ground_climbout
 soundalias,#hash_32b497c800dce5d0
 soundalias,#hash_32bc7d39932b0f91
 soundalias,#hash_32bc7e39932b1144
@@ -6953,7 +6953,7 @@ soundalias,#hash_378998e3e53981b6
 soundalias,#hash_3791248064be5f0a
 soundalias,#hash_379a32f2a175b545
 soundalias,#hash_37a45ebc4f106b9c
-soundalias,#hash_37ac9d9515ed7e04
+soundalias,#fly_zombie_mantle_fast
 soundalias,#hash_37b2309d9c8e0ea5
 soundalias,#hash_37b2bf0b37157bf5
 soundalias,#zmb_hemera_light_transfer
@@ -7238,7 +7238,7 @@ soundalias,#hash_3dd9e717288b7f75
 soundalias,#hash_3df21bb173a0b6c7
 soundalias,#hash_3df5396258847d29
 soundalias,#hash_3e0425871d9d2d3b
-soundalias,#hash_3e0fb2f5216eecea
+soundalias,#zmb_vocals_zombie_attack_melee
 soundalias,#hash_3e12cdedd7b6d1d6
 soundalias,#hash_3e1cb51f1e4c027a
 soundalias,#hash_3e4b8c1799b98793
@@ -7342,7 +7342,7 @@ soundalias,#hash_40e8e3be1a559184
 soundalias,#hash_40f399d890bf5272
 soundalias,#hash_40f93f81c44b9e40
 soundalias,#hash_40feb358258a2a2c
-soundalias,#hash_4103624dc73c8d1d
+soundalias,#fly_zombie_jumpland_hard
 soundalias,#hash_410387e1dbc67f71
 soundalias,#hash_4125284d6ba8c9cb
 soundalias,#hash_4125f996df00a018
@@ -7544,7 +7544,7 @@ soundalias,#hash_4642dd2d46d79ca2
 soundalias,#hash_464e03be34823d06
 soundalias,#hash_46536874f4ffe918
 soundalias,#hash_46583fd3867f90d7
-soundalias,#hash_4662aa46ab686497
+soundalias,#fly_zombie_mantle_slow
 soundalias,#hash_4682d2b5478d9ff4
 soundalias,#hash_4682d3b5478da1a7
 soundalias,#hash_4682d4b5478da35a
@@ -8201,7 +8201,7 @@ soundalias,#hash_57e4fdf6dacd37be
 soundalias,#hash_57e4fef6dacd3971
 soundalias,#hash_57e8b3f5e47838cb
 soundalias,#hash_57f7a8a10722c251
-soundalias,#hash_580111ae24dbed71
+soundalias,#zmb_vocals_zombie_taunt_v1
 soundalias,#hash_5811272757c62ffd
 soundalias,#hash_58192bc650304beb
 soundalias,#hash_581b3b27da3ead87
@@ -8519,7 +8519,7 @@ soundalias,#hash_5f45bff571105ec2
 soundalias,#hash_5f45c0f571106075
 soundalias,#hash_5f47423247c92702
 soundalias,#hash_5f5002686176097f
-soundalias,#hash_5f55df07d8c1256c
+soundalias,#zmb_vocals_hellhound_bite
 soundalias,#hash_5f603f275b881ac5
 soundalias,#hash_5f6b730c30da027d
 soundalias,#hash_5f794c7252943ffb

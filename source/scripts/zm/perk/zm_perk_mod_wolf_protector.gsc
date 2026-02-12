@@ -56,7 +56,7 @@ function function_27473e44()
     if ( zm_powerups::function_cc33adc8() )
     {
         zm_powerups::add_zombie_powerup( "wolf_bonus_points", "zombie_z_money_icon", #"zombie_powerup_bonus_points", &zm_powerups::func_should_never_drop, 1, 0, 0 );
-        zm_powerups::add_zombie_powerup( "wolf_bonus_ammo", "p7_zm_power_up_max_ammo", #"hash_69256172c78db147", &zm_powerups::func_should_never_drop, 1, 0, 0 );
+        zm_powerups::add_zombie_powerup( "wolf_bonus_ammo", "p7_zm_power_up_max_ammo", #"zombie/powerup_small_ammo", &zm_powerups::func_should_never_drop, 1, 0, 0 );
         zm_powerups::add_zombie_powerup( "wolf_bonus_hero_power", "p8_zm_powerup_full_power", #"zombie_powerup_free_perk", &zm_powerup_hero_weapon_power::function_7e51ac0f, 1, 0, 0 );
     }
 }

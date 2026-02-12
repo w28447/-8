@@ -344,7 +344,7 @@ scriptbundle,#p8_fxanim_mp_hacienda_chandelier_01_bundle
 scriptbundle,#p8_fxanim_mp_hacienda_peacock_bundle
 scriptbundle,#p8_fxanim_mp_hacienda_clock_grandfather_bundle
 scriptbundle,#p8_fxanim_mp_hacienda_helicopter_flyover_bundle
-string,#hash_e428880b38b4d8d
+string,#OBJECTIVES_COOP_WAYPOINT_HACK
 objective,#hash_5a01ec6072c4b0a2
 radiant_exploder,#hash_7e17d35a668424
 radiant_exploder,#fxexp_fountain_jet_01
@@ -431,7 +431,7 @@ soundalias,#hash_bef5ab94d3ebe5e
 soundalias,#hash_c266934b6e24701
 soundalias,#hash_c51adb5aaeeb4d9
 soundalias,#hash_ca467b11bcaf711
-soundalias,#hash_cc693b3173e7565
+soundalias,#exp_concussive_large
 soundalias,#hash_ceeedc2d3091882
 soundalias,#hash_d186ec624023680
 soundalias,#hash_dc9c1729dee1adc
@@ -542,7 +542,7 @@ soundalias,#hash_26bf012beaa38162
 soundalias,#hash_26f8ae96092bed2e
 soundalias,#hash_2709e21bac032076
 soundalias,#hash_2730ba20330dff4a
-soundalias,#hash_2748aa2e6dc57ae0
+soundalias,#dst_car_tire_deflate
 soundalias,#hash_2755ac518eec18cb
 soundalias,#hash_27c225548ecceb7c
 soundalias,#hash_287197aa5217b0c2
@@ -846,7 +846,7 @@ soundalias,#hash_65d466bba3b91632
 soundalias,#hash_663899d42687914d
 soundalias,#hash_665260a4e4e82064
 soundalias,#hash_668dfcbb61723329
-soundalias,#hash_66aa6b049c23fa3f
+soundalias,#exp_incindiary_large
 soundalias,#hash_66b53f24193139d1
 soundalias,#hash_67e1b634a1e1c1ba
 soundalias,#hash_67f44dfda2dd2b20
@@ -932,7 +932,7 @@ soundalias,#hash_7b87df5d7358b3a3
 soundalias,#hash_7ba26dd26f822300
 soundalias,#hash_7bd4e47a01a4902d
 soundalias,#hash_7c1bb4081dc0641b
-soundalias,#hash_7c2e59ca3ee725e5
+soundalias,#exp_veh_med
 soundalias,#hash_7c397f7175b4455e
 soundalias,#hash_7cba31c0913fd47d
 soundalias,#hash_7d6048cbcdd07cb8
@@ -970,7 +970,7 @@ client_fx,#hash_1f1f6ba9fb9ace3c
 client_fx,#hash_207d3cd1f679b67b
 client_fx,#hash_212bce954d1e21ea
 client_fx,#hash_2147dab1373ff1d8
-client_fx,#hash_21f397376b81d9ef
+client_fx,#impacts/fx_bul_impact_blood_body_fatal
 client_fx,#hash_2618b5463c248896
 client_fx,#hash_27604ee16fb27e93
 client_fx,#hash_28d89d447c354265

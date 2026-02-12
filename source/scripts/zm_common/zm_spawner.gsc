@@ -1676,7 +1676,7 @@ function zombie_death_event( zombie )
     {
         if ( isdefined( zombie.script_parameters ) )
         {
-            attacker notify( #"zombie_death_params", { #params:zombie.script_parameters, #var_3ef38c68:isdefined( zombie.completed_emerging_into_playable_area ) && zombie.completed_emerging_into_playable_area } );
+            attacker notify( #"zombie_death_params", { #params:zombie.script_parameters, #in_playable_space:isdefined( zombie.completed_emerging_into_playable_area ) && zombie.completed_emerging_into_playable_area } );
         }
         
         if ( isdefined( zombie.b_widows_wine_cocoon ) && isdefined( zombie.e_widows_wine_player ) )
@@ -2583,17 +2583,17 @@ function zombie_complete_emerging_into_playable_area()
     }
     else
     {
-        self.var_93a62fe = zm_utility::get_closest_valid_player( self.origin, self.ignore_player, 1 );
+        self.closest_valid_player = zm_utility::get_closest_valid_player( self.origin, self.ignore_player, 1 );
         
-        if ( isdefined( self.var_93a62fe ) && ( !ai::has_behavior_attribute( "scripted_mode" ) || ai::get_behavior_attribute( "scripted_mode" ) !== 1 ) )
+        if ( isdefined( self.closest_valid_player ) && ( !ai::has_behavior_attribute( "scripted_mode" ) || ai::get_behavior_attribute( "scripted_mode" ) !== 1 ) )
         {
-            if ( isdefined( self.var_93a62fe.last_valid_position ) )
+            if ( isdefined( self.closest_valid_player.last_valid_position ) )
             {
-                self setgoal( self.var_93a62fe.last_valid_position );
+                self setgoal( self.closest_valid_player.last_valid_position );
             }
             else
             {
-                goalpos = getclosestpointonnavmesh( self.var_93a62fe.origin, 100, self getpathfindingradius() );
+                goalpos = getclosestpointonnavmesh( self.closest_valid_player.origin, 100, self getpathfindingradius() );
                 
                 if ( !isdefined( goalpos ) )
                 {

@@ -988,7 +988,7 @@ function gondola_moving_vo()
                 level.var_b9656485++;
             }
             
-            level thread function_6a4544e();
+            level thread gondola_ride_vo();
         }
     }
 }
@@ -1033,7 +1033,7 @@ function function_dc269d0d( a_zombies, e_gondola )
 // Params 0
 // Checksum 0xf166c488, Offset: 0x3db8
 // Size: 0xa4
-function function_6a4544e()
+function gondola_ride_vo()
 {
     wait 7;
     var_1b66809c = array_players_on_gondola();

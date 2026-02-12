@@ -81,7 +81,7 @@ function __init__()
     clientfield::register( "actor", "nfrtu_move_dash", 8000, 1, "int" );
     zm_score::function_e5d6e6dd( #"nosferatu", 60 );
     zm_score::function_e5d6e6dd( #"crimson_nosferatu", 80 );
-    zm_round_spawning::register_archetype( #"nosferatu", &function_cf877849, &round_spawn, &function_74f25f8a, 25 );
+    zm_round_spawning::register_archetype( #"nosferatu", &function_cf877849, &round_spawn, &spawn_single_nosferatu, 25 );
     zm_round_spawning::register_archetype( #"crimson_nosferatu", &function_97f1f86e, &function_a8a8c2fb, undefined, 100 );
     zm_round_spawning::function_306ce518( #"crimson_nosferatu", &function_57abef39 );
     level.var_243137e = getentarray( "zombie_nosferatu_spawner", "script_noteworthy" );
@@ -134,7 +134,7 @@ function private registerbehaviorscriptfunctions()
     assert( !isdefined( &function_344a0412 ) || isscriptfunctionptr( &function_344a0412 ) );
     assert( !isdefined( undefined ) || isscriptfunctionptr( undefined ) );
     behaviortreenetworkutility::registerbehaviortreeaction( #"hash_4a2ea3c9e174122a", undefined, &function_344a0412, undefined );
-    animationstatenetwork::registernotetrackhandlerfunction( "summon_nfrtu", &function_76d6482e );
+    animationstatenetwork::registernotetrackhandlerfunction( "summon_nfrtu", &summonnosferatu );
 }
 
 // Namespace zm_ai_nosferatu/zm_ai_nosferatu
@@ -473,7 +473,7 @@ function function_97f1f86e( var_dbce0c44 )
 // Size: 0x3c, Type: bool
 function round_spawn()
 {
-    ai = function_74f25f8a();
+    ai = spawn_single_nosferatu();
     
     if ( isdefined( ai ) )
     {
@@ -490,7 +490,7 @@ function round_spawn()
 // Size: 0x44, Type: bool
 function function_a8a8c2fb()
 {
-    ai = function_74f25f8a( 0, undefined, 1 );
+    ai = spawn_single_nosferatu( 0, undefined, 1 );
     
     if ( isdefined( ai ) )
     {
@@ -505,7 +505,7 @@ function function_a8a8c2fb()
 // Params 4
 // Checksum 0x8a68dceb, Offset: 0x19f0
 // Size: 0x248
-function function_74f25f8a( b_force_spawn = 0, var_eb3a8721, b_crimson = 0, round_number )
+function spawn_single_nosferatu( b_force_spawn = 0, var_eb3a8721, b_crimson = 0, round_number )
 {
     if ( !b_force_spawn && !function_1c0cad2c() )
     {
@@ -549,9 +549,9 @@ function function_74f25f8a( b_force_spawn = 0, var_eb3a8721, b_crimson = 0, roun
         ai thread zombie_utility::round_spawn_failsafe();
         ai forceteleport( s_spawn_loc.origin, s_spawn_loc.angles );
         
-        if ( isdefined( level.var_ae4acb3f ) )
+        if ( isdefined( level.nosferatu_on_spawned ) )
         {
-            ai thread [[ level.var_ae4acb3f ]]( s_spawn_loc );
+            ai thread [[ level.nosferatu_on_spawned ]]( s_spawn_loc );
         }
         
         var_46d2ec35 = get_favorite_enemy();
@@ -887,7 +887,7 @@ function private function_7fef620b( entity )
 // Params 1, eflags: 0x4
 // Checksum 0xd325f755, Offset: 0x2828
 // Size: 0x3d4
-function private function_76d6482e( entity )
+function private summonnosferatu( entity )
 {
     if ( isdefined( level.zm_loc_types[ #"nosferatu_location" ] ) && level.zm_loc_types[ #"nosferatu_location" ].size >= 1 )
     {
@@ -971,7 +971,7 @@ function function_13b48cdd( var_c9528359, queryresult )
         {
             do
             {
-                ai = function_74f25f8a( 1, undefined );
+                ai = spawn_single_nosferatu( 1, undefined );
                 var_18f8f237--;
                 waitframe( 1 );
             }

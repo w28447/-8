@@ -740,7 +740,7 @@ function function_61e129a8()
     
     do
     {
-        if ( level flag::get( #"crawler_step_started" ) && !level flag::get( #"crawler_step_complete" ) || level flag::get( #"hash_6ebb9d0d0539bf68" ) && !level flag::get( #"hash_7c2ae917559738ec" ) )
+        if ( level flag::get( #"crawler_step_started" ) && !level flag::get( #"crawler_step_complete" ) || level flag::get( #"mannequin_step_started" ) && !level flag::get( #"hash_7c2ae917559738ec" ) )
         {
             b_delayed = 1;
             wait 1;

@@ -10,7 +10,7 @@ server,#scripts/zm/powerup/zm_powerup_bonus_points_player.gsc
 server,#scripts/zm/powerup/zm_powerup_nuke.gsc
 server,#scripts/zm_common/bgbs/zm_bgb_talkin_bout_regeneration.gsc
 server,#scripts/zm/powerup/zm_powerup_bonus_points_team.gsc
-server,#script_4b0b3de126cf7c9a
+server,#scripts\zm\powerup\zm_powerup_pap.gsc
 server,#scripts/zm_common/bgbs/zm_bgb_reign_drops.gsc
 server,#scripts/zm/powerup/zm_powerup_carpenter.gsc
 server,#scripts/zm_common/bgbs/zm_bgb_temporal_gift.gsc
@@ -156,7 +156,7 @@ client,#scripts/zm/powerup/zm_powerup_bonfire_sale.csc
 client,#scripts/zm/perk/zm_perk_widows_wine.csc
 client,#scripts/zm/powerup/zm_powerup_nuke.csc
 client,#scripts/zm/powerup/zm_powerup_bonus_points_player.csc
-client,#script_26b191e111bca72e
+client,#scripts\zm\powerup\zm_powerup_pap.csc
 client,#scripts/zm_common/bgbs/zm_bgb_reign_drops.csc
 client,#scripts/zm_common/bgbs/zm_bgb_talkin_bout_regeneration.csc
 client,#scripts/zm/powerup/zm_powerup_bonus_points_team.csc

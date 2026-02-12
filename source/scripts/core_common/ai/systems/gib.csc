@@ -183,7 +183,7 @@ function function_c0099e86( entity, gibflag )
 // Params 2, eflags: 0x4
 // Checksum 0x1d780e81, Offset: 0xa38
 // Size: 0xc8
-function private function_69db754( entity, gibflag )
+function private _getgibpiece( entity, gibflag )
 {
     if ( isplayer( entity ) || entity isplayercorpse() )
     {
@@ -367,7 +367,7 @@ function private _gibpiecetag( localclientnum, entity, gibflag )
         return;
     }
     
-    gibpiece = function_69db754( entity, gibflag );
+    gibpiece = _getgibpiece( entity, gibflag );
     
     if ( isdefined( gibpiece ) )
     {
@@ -438,7 +438,7 @@ function private _gibentity( localclientnum, gibflags, shouldspawngibs )
                 }
                 else
                 {
-                    gibpiece = function_69db754( entity, currentgibflag );
+                    gibpiece = _getgibpiece( entity, currentgibflag );
                     
                     if ( isdefined( gibpiece ) )
                     {
@@ -461,7 +461,7 @@ function private _gibentity( localclientnum, gibflags, shouldspawngibs )
             }
             else
             {
-                gibpiece = function_69db754( entity, currentgibflag );
+                gibpiece = _getgibpiece( entity, currentgibflag );
                 
                 if ( isdefined( gibpiece ) )
                 {

@@ -2189,7 +2189,7 @@ function kill_anything_blocking_goal( goal )
         
         if ( entity.team === self.team && entity.item.name === #"eq_concertina_wire" )
         {
-            entity concertina_wire::function_4ee7d46a( 0 );
+            entity concertina_wire::destroyconcertinawire( 0 );
             return 1;
         }
         

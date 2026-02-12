@@ -419,13 +419,13 @@ soundalias,#hash_bef5ab94d3ebe5e
 soundalias,#hash_c266934b6e24701
 soundalias,#hash_c2e6a22fdb70a38
 soundalias,#hash_ca467b11bcaf711
-soundalias,#hash_cc693b3173e7565
+soundalias,#exp_concussive_large
 soundalias,#hash_e82634d1ede3c3c
 soundalias,#hash_101aa41260505836
 soundalias,#hash_127c91df9b564016
 soundalias,#hash_12b24433ad0bb1f0
 soundalias,#hash_1358357952f89d8d
-soundalias,#hash_14ba33934a647b11
+soundalias,#aml_chicken_wing_small
 soundalias,#hash_14e6aa140485ba14
 soundalias,#hash_153cb65adb3c6503
 soundalias,#hash_15e932d0a298c96c
@@ -452,7 +452,7 @@ soundalias,#hash_25a264b901d17919
 soundalias,#hash_267821e3be703ce7
 soundalias,#hash_26bf012beaa38162
 soundalias,#hash_2730ba20330dff4a
-soundalias,#hash_2748aa2e6dc57ae0
+soundalias,#dst_car_tire_deflate
 soundalias,#hash_288df532f652e987
 soundalias,#dst_paper
 soundalias,#hash_2b220a25df7a7b3d
@@ -517,7 +517,7 @@ soundalias,#hash_4f8c480d8e8f07b6
 soundalias,#hash_501eff91f639c23e
 soundalias,#hash_5241882a79fff7a3
 soundalias,#hash_5290e69e5616b714
-soundalias,#hash_53275ca0fc64314e
+soundalias,#aml_chicken_cluck
 soundalias,#dst_server
 soundalias,#hash_54538dea28a0400e
 soundalias,#hash_547104dd82ba9c7c
@@ -550,7 +550,7 @@ soundalias,#hash_633b9532cf0da169
 soundalias,#hash_633bcc488ff36c4f
 soundalias,#hash_65337304c8c7b0cd
 soundalias,#hash_663899d42687914d
-soundalias,#hash_66aa6b049c23fa3f
+soundalias,#exp_incindiary_large
 soundalias,#hash_67e1b634a1e1c1ba
 soundalias,#hash_684ebfd285756d50
 soundalias,#hash_684ec0d285756f03
@@ -591,10 +591,10 @@ soundalias,#exp_veh_plane_spinout_lp
 soundalias,#hash_7ac5fa6568de2461
 soundalias,#hash_7b03a9cee3b85887
 soundalias,#hash_7b448f45c1ef682b
-soundalias,#hash_7c2e59ca3ee725e5
+soundalias,#exp_veh_med
 soundalias,#hash_7e17e533381a8506
 soundalias,#hash_7eb51f1a0028ab28
-soundalias,#hash_7eede30e6e0cbe65
+soundalias,#amb_occ_fan
 soundalias,#hash_7f118ea3a4874268
 soundalias,#hash_7fe19ceed35907ce
 client_fx,#ui/fx_dom_cap_indicator_team_r90

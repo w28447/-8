@@ -1239,7 +1239,7 @@ function function_301c4be2( stat_name, value )
         return;
     }
     
-    self match_record::function_34800eec( stat_name, value );
+    self match_record::inc_player_stat( stat_name, value );
 }
 
 // Namespace zm_stats/zm_stats
@@ -1253,7 +1253,7 @@ function function_8f10788e( stat_name )
         return;
     }
     
-    self match_record::function_34800eec( stat_name, 1 );
+    self match_record::inc_player_stat( stat_name, 1 );
 }
 
 // Namespace zm_stats/zm_stats

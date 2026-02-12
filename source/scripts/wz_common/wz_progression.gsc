@@ -1318,7 +1318,7 @@ function function_393ec79e( params )
         if ( isdefined( self.outsidedeathcircle ) && self.outsidedeathcircle )
         {
             self stats::function_d40764f3( #"hash_154d42f200303577", 1 );
-            self match_record::function_34800eec( #"hash_154d42f200303577", 1 );
+            self match_record::inc_player_stat( #"hash_154d42f200303577", 1 );
         }
     }
 }

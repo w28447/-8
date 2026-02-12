@@ -412,7 +412,7 @@ function function_51817689()
         if ( isplayer( e_player ) && isactor( ai_victim ) )
         {
             str_archetype = ai_victim.archetype;
-            var_1e137cec = ai_victim.subarchetype;
+            str_subarchetype = ai_victim.subarchetype;
             
             switch ( str_archetype )
             {
@@ -458,9 +458,9 @@ function function_51817689()
                         e_player.var_ea819a71 = array( e_player.var_ea819a71 );
                     }
                     
-                    if ( !isinarray( e_player.var_ea819a71, var_1e137cec ) )
+                    if ( !isinarray( e_player.var_ea819a71, str_subarchetype ) )
                     {
-                        e_player.var_ea819a71[ e_player.var_ea819a71.size ] = var_1e137cec;
+                        e_player.var_ea819a71[ e_player.var_ea819a71.size ] = str_subarchetype;
                     }
                     
                     break;

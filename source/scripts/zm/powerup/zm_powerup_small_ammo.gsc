@@ -35,7 +35,7 @@ function __init__()
     
     if ( zm_powerups::function_cc33adc8() )
     {
-        zm_powerups::add_zombie_powerup( "small_ammo", "p7_zm_power_up_max_ammo", #"hash_69256172c78db147", &zm_powerups::func_should_never_drop, 1, 0, 0 );
+        zm_powerups::add_zombie_powerup( "small_ammo", "p7_zm_power_up_max_ammo", #"zombie/powerup_small_ammo", &zm_powerups::func_should_never_drop, 1, 0, 0 );
     }
 }
 

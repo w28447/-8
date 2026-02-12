@@ -190,7 +190,7 @@ function event_handler[level_init] main( eventstruct )
     level.var_290ac2c3 = &function_f1e7bc35;
     level.var_ea32773 = &function_8e4eff2b;
     level thread zm_towers_special_rounds::init();
-    level.var_22fda912 = &function_9f50079d;
+    level.var_22fda912 = &offhand_weapon_override;
     level.zombiemode_offhand_weapon_give_override = &offhand_weapon_give_override;
     level.var_d0ab70a2 = #"gamedata/weapons/zm/zm_towers_weapons.csv";
     level._allow_melee_weapon_switching = 1;
@@ -566,7 +566,7 @@ function door_price_reduction_for_solo()
 // Params 0
 // Checksum 0x6d5d5bfe, Offset: 0x3758
 // Size: 0x24
-function function_9f50079d()
+function offhand_weapon_override()
 {
     zm_loadout::register_tactical_grenade_for_level( "zhield_zword_dw", 1 );
 }
@@ -689,7 +689,7 @@ function init_announcer()
     zm_audio::sndannouncervoxadd( #"hash_550bed5125d97a89", #"hash_36a8b8db648b289b" );
     zm_audio::sndannouncervoxadd( #"hash_31347fc188da1db6", #"hash_2b7cdada327d66e8" );
     zm_audio::sndannouncervoxadd( #"hash_6c9a2587a2563721", #"hash_195ac056692d16d7" );
-    zm_audio::sndannouncervoxadd( #"special_round_start", #"hash_1efab4e86747e0f6" );
+    zm_audio::sndannouncervoxadd( #"special_round_start", #"vox_special_round_start" );
     zm_audio::sndannouncervoxadd( #"hash_18134dc5b9b39a96", #"hash_71004562f08075fe" );
     zm_audio::sndannouncervoxadd( #"hash_589679a12150767a", #"hash_37fd0c2a4b8e0a74" );
     zm_audio::sndannouncervoxadd( #"hash_582eea77824b014d", #"hash_38dd82e156d0465" );
@@ -699,8 +699,8 @@ function init_announcer()
     zm_audio::sndannouncervoxadd( #"hash_20c64c155f7a0065", #"hash_21bdbf69a0d0a799" );
     zm_audio::sndannouncervoxadd( #"hash_355567a6fa6d44d1", #"hash_594f2e892ce6cc37" );
     zm_audio::sndannouncervoxadd( #"pap_quest_completed", #"hash_20930393d4b597bd" );
-    zm_audio::sndannouncervoxadd( #"hash_28dbb5b91d8a954e", #"hash_2b2a7c0ea867948e" );
-    zm_audio::sndannouncervoxadd( #"hash_3d5fccf222ba3ab6", #"hash_2b150384d50cde7c" );
+    zm_audio::sndannouncervoxadd( #"hash_28dbb5b91d8a954e", #"vox_imp_jar_pickup" );
+    zm_audio::sndannouncervoxadd( #"hash_3d5fccf222ba3ab6", #"vox_m_quest_danu_complete" );
     zm_audio::sndannouncervoxadd( #"hash_5719edb294612f4c", #"hash_e36933881b70a00" );
     zm_audio::sndannouncervoxadd( #"hash_42bbe4989b9a4cbe", #"hash_7ce238dcabc6916d" );
     zm_audio::sndannouncervoxadd( #"hash_41d25c641d7c8484", #"hash_21f31b9d98f1e332" );
@@ -712,12 +712,12 @@ function init_announcer()
     zm_audio::sndannouncervoxadd( #"hash_73183fb7534361f", #"hash_f9de473901d0e7d" );
     zm_audio::sndannouncervoxadd( #"hash_6211a32e1a9f23fa", #"hash_518bb65266b74f86" );
     zm_audio::sndannouncervoxadd( #"hash_24e22336a0d988d0", #"hash_7af55f23689f2eb4" );
-    zm_audio::sndannouncervoxadd( #"hash_43b0860b33146764", #"hash_2cef54d67ed44093" );
-    zm_audio::sndannouncervoxadd( #"hash_c8182d04e7f43c9", #"hash_5850b57ef4133eea" );
-    zm_audio::sndannouncervoxadd( #"hash_77080de04389f4df", #"hash_33d02faecbf4ced5" );
+    zm_audio::sndannouncervoxadd( #"hash_43b0860b33146764", #"vox_m_quest_fury_start" );
+    zm_audio::sndannouncervoxadd( #"hash_c8182d04e7f43c9", #"vox_m_quest_fury_arrive" );
+    zm_audio::sndannouncervoxadd( #"hash_77080de04389f4df", #"vox_m_quest_fury_kill" );
     zm_audio::sndannouncervoxadd( #"hash_1b8dd2e5977116cb", #"hash_58fcefd43425141f" );
-    zm_audio::sndannouncervoxadd( #"hash_436d318af3fd771f", #"hash_5e7804dc338f11b6" );
-    zm_audio::sndannouncervoxadd( #"hash_62c7007e0bc4eab6", #"hash_621cc4c04ffd6c81" );
+    zm_audio::sndannouncervoxadd( #"hash_436d318af3fd771f", #"vox_m_quest_wrath_arrive" );
+    zm_audio::sndannouncervoxadd( #"hash_62c7007e0bc4eab6", #"vox_m_quest_wrath_kill" );
 }
 
 // Namespace zm_towers/zm_towers

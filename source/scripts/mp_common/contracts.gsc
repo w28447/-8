@@ -240,11 +240,11 @@ function on_ekia( weapon )
     
     if ( var_8a4cfbd )
     {
-        player increment_contract( #"hash_6b52fb637a3c29cb" );
+        player increment_contract( #"contract_mp_specialist_equipment_ekia" );
     }
     else if ( weapon.issignatureweapon )
     {
-        player increment_contract( #"hash_31a6484e36a0a20f" );
+        player increment_contract( #"contract_mp_specialist_weapon_ekia" );
     }
     
     loadout_primary_weapon = player loadout::function_18a77b37( "primary" );
@@ -261,7 +261,7 @@ function on_ekia( weapon )
         }
         else if ( loadout_secondary_weapon === weapon && var_31d860d9 >= 3 )
         {
-            player function_fd9fb79b( #"hash_264228bd931f8deb" );
+            player function_fd9fb79b( #"contract_mp_attachments3_secondary_ekia" );
         }
     }
     
@@ -269,13 +269,13 @@ function on_ekia( weapon )
     {
         if ( loadout_primary_weapon === weapon && var_2d9746d0 >= 5 )
         {
-            player function_fd9fb79b( #"hash_d18e3651f508489" );
+            player function_fd9fb79b( #"contract_mp_attachments5_primary_ekia" );
             return;
         }
         
         if ( loadout_secondary_weapon === weapon && var_31d860d9 >= 5 )
         {
-            player function_fd9fb79b( #"hash_469703d9a67cf0dd" );
+            player function_fd9fb79b( #"contract_mp_attachments5_secondary_ekia" );
         }
     }
 }

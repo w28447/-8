@@ -227,13 +227,13 @@ function function_e08cd7b( category, subcategory )
 // Params 2
 // Checksum 0x779401cb, Offset: 0xe40
 // Size: 0xe8, Type: bool
-function function_8123b826( str_category, var_39acfdda )
+function function_8123b826( str_category, str_subcategory )
 {
     zm_audio::play_vo_internal( self.str_vo_being_spoken, undefined );
     
-    if ( isdefined( self.var_fbbeefe6 ) && isdefined( level.sndplayervox[ str_category ] ) && isdefined( level.sndplayervox[ str_category ][ var_39acfdda ] ) )
+    if ( isdefined( self.var_fbbeefe6 ) && isdefined( level.sndplayervox[ str_category ] ) && isdefined( level.sndplayervox[ str_category ][ str_subcategory ] ) )
     {
-        vox = level.sndplayervox[ str_category ][ var_39acfdda ];
+        vox = level.sndplayervox[ str_category ][ str_subcategory ];
         str_alias = vox.suffix + "_plr_5_" + self.var_fbbeefe6;
         
         if ( soundexists( str_alias ) )

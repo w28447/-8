@@ -316,15 +316,15 @@ function function_926fcb2f( b_success )
 function function_ecd8cc50()
 {
     waypointname = #"hash_3489718f227fba3";
-    var_69bc8821 = spawn( "script_model", self.origin );
-    var_69bc8821.objectiveid = gameobjects::get_next_obj_id();
-    var_69bc8821.curorigin = self.origin;
-    var_69bc8821.ownerteam = game.defenders;
-    var_69bc8821.team = game.defenders;
-    var_69bc8821.type = "Waypoint";
-    objective_add( var_69bc8821.objectiveid, "invisible", var_69bc8821, waypointname );
-    var_69bc8821 gameobjects::set_visible_team( "none" );
-    self.waypoint = var_69bc8821;
+    bombwaypoint = spawn( "script_model", self.origin );
+    bombwaypoint.objectiveid = gameobjects::get_next_obj_id();
+    bombwaypoint.curorigin = self.origin;
+    bombwaypoint.ownerteam = game.defenders;
+    bombwaypoint.team = game.defenders;
+    bombwaypoint.type = "Waypoint";
+    objective_add( bombwaypoint.objectiveid, "invisible", bombwaypoint, waypointname );
+    bombwaypoint gameobjects::set_visible_team( "none" );
+    self.waypoint = bombwaypoint;
 }
 
 // Namespace ct_ruin/ct_ruin

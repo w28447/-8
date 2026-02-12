@@ -251,7 +251,7 @@ function gadget_vision_pulse_start( slot, weapon )
     self.visionpulseactivatetime = gettime();
     enemyarray = level.players;
     visionpulsearray = arraysort( enemyarray, self._pulse_ent.origin, 1, undefined, weapon.gadget_pulse_max_range );
-    self.var_1ad61d27 = weapon;
+    self.visionpulseweapon = weapon;
     self.visionpulseorigin = self._pulse_ent.origin;
     self.visionpulsearray = [];
     self.visionpulseoriginarray = [];
