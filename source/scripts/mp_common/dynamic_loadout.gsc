@@ -615,9 +615,9 @@ function private function_d2f0197a()
 // Params 1, eflags: 0x4
 // Checksum 0x5192167f, Offset: 0x24f8
 // Size: 0x4a
-function private function_659633d8( var_31e314e8 )
+function private function_659633d8( package_armor )
 {
-    switch ( var_31e314e8.name )
+    switch ( package_armor.name )
     {
         case #"gear_armor_tier_two":
             return #"specialty_armor_tier_two";
@@ -632,14 +632,14 @@ function private function_659633d8( var_31e314e8 )
 // Params 1, eflags: 0x4
 // Checksum 0x83d1a519, Offset: 0x2588
 // Size: 0xda
-function private function_51a2c3b3( var_31e314e8 )
+function private function_51a2c3b3( package_armor )
 {
-    if ( !isdefined( var_31e314e8 ) )
+    if ( !isdefined( package_armor ) )
     {
         return;
     }
     
-    switch ( var_31e314e8.name )
+    switch ( package_armor.name )
     {
         case #"gear_armor_tier_two":
             playfxontag( #"hash_56c8182de62c1c6", self, "j_spineupper" );
@@ -655,9 +655,9 @@ function private function_51a2c3b3( var_31e314e8 )
 // Params 1, eflags: 0x4
 // Checksum 0x2e21dac, Offset: 0x2670
 // Size: 0x44
-function private function_52630bb( var_31e314e8 )
+function private function_52630bb( package_armor )
 {
-    armor_perk = function_659633d8( var_31e314e8 );
+    armor_perk = function_659633d8( package_armor );
     self setperk( armor_perk );
 }
 
@@ -665,9 +665,9 @@ function private function_52630bb( var_31e314e8 )
 // Params 1, eflags: 0x4
 // Checksum 0xbd644381, Offset: 0x26c0
 // Size: 0x44
-function private function_2b71fd3( var_31e314e8 )
+function private function_2b71fd3( package_armor )
 {
-    armor_perk = function_659633d8( var_31e314e8 );
+    armor_perk = function_659633d8( package_armor );
     self unsetperk( armor_perk );
 }
 

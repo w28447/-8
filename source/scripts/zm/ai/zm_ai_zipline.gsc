@@ -108,16 +108,16 @@ function function_dc61ccae( vnd_start, var_6f06d19d, var_ca144d1e )
         
         if ( enabled )
         {
-            var_8e89eaf2 = self gettagorigin( "tag_weapon_left" );
+            tag_left_origin = self gettagorigin( "tag_weapon_left" );
             var_bb4eaebf = getvehiclenode( vnd_start.target, "targetname" );
-            var_3573db0e = function_61418721( var_8e89eaf2, vnd_start.origin, var_bb4eaebf.origin );
-            var_f687fa19 = var_3573db0e - var_8e89eaf2;
+            var_3573db0e = function_61418721( tag_left_origin, vnd_start.origin, var_bb4eaebf.origin );
+            var_f687fa19 = var_3573db0e - tag_left_origin;
             var_56b5839 = length( var_f687fa19 );
             
             /#
                 sphere( self.var_b20b0960.origin, 2, ( 0, 1, 0 ), 0.3, 0, 8, 1 );
-                line( var_8e89eaf2, var_3573db0e, ( 1, 1, 0 ) );
-                sphere( var_8e89eaf2, 2, ( 1, 0.5, 0 ), 0.3, 0, 8, 1 );
+                line( tag_left_origin, var_3573db0e, ( 1, 1, 0 ) );
+                sphere( tag_left_origin, 2, ( 1, 0.5, 0 ), 0.3, 0, 8, 1 );
             #/
             
             if ( isdefined( var_6f06d19d ) && isdefined( var_ca144d1e ) )
@@ -137,22 +137,22 @@ function function_dc61ccae( vnd_start, var_6f06d19d, var_ca144d1e )
                     #/
                 }
                 
-                var_3a080e11 = function_61418721( var_8e89eaf2, var_6f06d19d, var_ca144d1e );
+                var_3a080e11 = function_61418721( tag_left_origin, var_6f06d19d, var_ca144d1e );
                 var_2eb8d479 = var_3a080e11 + ( 0, 0, 1 );
                 forward = vectornormalize( var_bb4eaebf.origin - vnd_start.origin );
                 right = vectorcross( ( 0, 0, 1 ), forward );
                 up = vectorcross( forward, right );
                 angles = axistoangles( forward, up );
-                var_c246e8d5 = coordtransformtranspose( var_3a080e11, var_8e89eaf2, angles );
+                var_c246e8d5 = coordtransformtranspose( var_3a080e11, tag_left_origin, angles );
                 var_e941deaa = vectornormalize( var_c246e8d5 );
                 
                 /#
-                    line( var_8e89eaf2, var_8e89eaf2 + var_c246e8d5, ( 1, 0, 1 ) );
+                    line( tag_left_origin, tag_left_origin + var_c246e8d5, ( 1, 0, 1 ) );
                     line( var_6f06d19d, var_ca144d1e, ( 1, 0.5, 0 ) );
-                    line( var_8e89eaf2, var_3a080e11, ( 1, 1, 0 ) );
+                    line( tag_left_origin, var_3a080e11, ( 1, 1, 0 ) );
                     sphere( var_6f06d19d, 8, ( 1, 0.5, 0 ), 0.3, 0, 8, 1 );
                     sphere( var_ca144d1e, 8, ( 1, 0.5, 0 ), 0.3, 0, 8, 1 );
-                    record3dtext( "<dev string:xae>" + var_c246e8d5, var_8e89eaf2 + var_c246e8d5, ( 1, 1, 1 ), "<dev string:xb1>" );
+                    record3dtext( "<dev string:xae>" + var_c246e8d5, tag_left_origin + var_c246e8d5, ( 1, 1, 1 ), "<dev string:xb1>" );
                 #/
             }
             

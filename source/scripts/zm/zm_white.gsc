@@ -1037,7 +1037,7 @@ function sndfunctions()
     
     zm_utility::add_sound( "zmb_heavy_door_open", "zmb_heavy_door_open" );
     zm_audio::loadplayervoicecategories( #"gamedata/audio/zm/zm_common_vox.csv" );
-    zm_audio::loadplayervoicecategories( #"hash_6d9aadb58948623b" );
+    zm_audio::loadplayervoicecategories( #"gamedata/audio/zm/zm_story1_vox.csv" );
     zm_audio::loadplayervoicecategories( #"gamedata/audio/zm/zm_white_vox.csv" );
     level thread setup_personality_character_exerts();
     level thread setupmusic();

@@ -1592,7 +1592,7 @@ function function_16e2f075( params )
             damageamount = 30;
         }
         
-        self dodamage( damageamount, self.origin, params.wire.owner, params.wire, undefined, "MOD_IMPACT", 0, level.var_87226c31.concertinawireweapon );
+        self dodamage( damageamount, self.origin, params.wire.owner, params.wire, undefined, "MOD_IMPACT", 0, level.concertinawiresettings.concertinawireweapon );
     }
     
     if ( isdefined( level.var_f2e76de4 ) )

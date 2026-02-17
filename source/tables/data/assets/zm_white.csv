@@ -41,7 +41,7 @@ physpreset,#p7_medical_surgical_tools_clamps
 physpreset,#p7_eth_decor_01_statue_elephant
 physpreset,#p7_tools_hammer
 physpreset,#hash_7b9f145dc80ed9c4
-physpreset,#hash_7f10d2bf08c8cb38
+physpreset,#toolbox
 physconstraints,d#hash_f4957780e9b7d1e
 physconstraints,d#hash_15def351e1a96176
 physconstraints,d#hash_15def651e1a9668f
@@ -34221,7 +34221,7 @@ klf,#hash_76c2b7d41d526cca
 klf,#hash_78abc349ffeb3b71
 klf,d#hash_7bbc2161ab4e37b9
 stringtable,#gamedata/audio/zm/zm_white_vox.csv
-stringtable,#hash_6d9aadb58948623b
+stringtable,#gamedata/audio/zm/zm_story1_vox.csv
 stringtable,#gamedata/weapons/zm/zm_white_weapons.csv
 glasses,#maps/zm/zm_white.d3dbsp
 scriptparsetree,#hash_174ce72cc0f850
@@ -34539,7 +34539,7 @@ animselectortable,#zm_mannequin.ai_ast
 animselectortable,d#default.ai_ast
 animselectortable,#zm_dog_electric.ai_ast
 animselectortable,#hash_2f25f391768679e7
-animselectortable,#hash_39d3a662cbad64aa
+animselectortable,#zm_zombie.ai_ast
 animselectortable,#zm_avogadro.ai_ast
 animselectortable,d#zm_wolf_ally.ai_ast
 animselectortable,#zm_nova_crawler.ai_ast
@@ -34552,12 +34552,12 @@ animstatemachine,#zm_zombie.ai_asm
 animstatemachine,#zm_avogadro.ai_asm
 animstatemachine,d#zm_wolf_ally.ai_asm
 animstatemachine,#zm_nova_crawler.ai_asm
-behaviortree,#hash_264b6e230a9c0d1
-behaviortree,#hash_68d154668dad8b5
-behaviortree,#hash_1d89eba8365c59c1
+behaviortree,#zm_avogadro.ai_bt
+behaviortree,#zm_weeping_angel.ai_bt
+behaviortree,#zm_mannequin_ally.ai_bt
 behaviortree,d#default.ai_bt
 behaviortree,d#hash_59a40f30e23d37bb
-behaviortree,#hash_5c4ec524eae977ce
+behaviortree,#zm_dog.ai_bt
 behaviortree,#hash_6a4c5de8082e458d
 behaviorstatemachine,#hash_4069d2ce0a56ea8e
 ttf,d#hash_1a8171252437b019
@@ -67353,7 +67353,7 @@ animmappingtable,#hash_1448cef0ccfeb2d3
 animmappingtable,d#hash_3beae0b0bebee921
 animmappingtable,d#hash_599a1630e234ef1b
 animmappingtable,#hash_694341b93236ca2e
-behaviortree,#hash_13a7f138b939d440
+behaviortree,#zm_zombie.ai_bt
 ttf,d#hash_3d04d3341e66fd2c
 ttf,d#hash_49f222979b2ad835
 ttf,d#hash_6597013bd55835bd

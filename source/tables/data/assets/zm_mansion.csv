@@ -8,7 +8,7 @@ physpreset,d#hash_5aab125f983dd8b6
 physpreset,#hash_5c2d217edb4867d8
 physpreset,d#default
 physpreset,#p7_eth_decor_01_statue_elephant
-physpreset,#hash_7f10d2bf08c8cb38
+physpreset,#toolbox
 physconstraints,#hash_4f293bd7d600848
 physconstraints,#hash_b1458e56145255e
 physconstraints,#hash_e2e1c149942d1d7
@@ -37435,7 +37435,7 @@ aimtable,d#soldier_aim
 animselectortable,#hash_1bc31544a73647f3
 animselectortable,#zm_stoker.ai_ast
 animselectortable,#zm_dog.ai_ast
-animselectortable,#hash_39d3a662cbad64aa
+animselectortable,#zm_zombie.ai_ast
 animselectortable,#zm_blight_father.ai_ast
 animselectortable,#hash_6ab864203b2b11ff
 animselectortable,#zm_nosferatu.ai_ast
@@ -37446,8 +37446,8 @@ animstatemachine,#zm_zombie.ai_asm
 animstatemachine,#zm_blight_father.ai_asm
 animstatemachine,#zm_werewolf.ai_asm
 animstatemachine,#zm_nosferatu.ai_asm
-behaviortree,#hash_2d2fdc5bc6d1011c
-behaviortree,#hash_5c4ec524eae977ce
+behaviortree,#zm_stoker.ai_bt
+behaviortree,#zm_dog.ai_bt
 behaviorstatemachine,#hash_315fabddced2cfbd
 behaviorstatemachine,#hash_35f6c92c54af5866
 behaviorstatemachine,#hash_4069d2ce0a56ea8e
@@ -50717,10 +50717,10 @@ footsteptable,#hash_6c383188c39dc42b
 footsteptable,#hash_78c774673e4b1875
 animmappingtable,#hash_62b9be449756478c
 animmappingtable,#hash_6db34335f66cc585
-behaviortree,#hash_13a7f138b939d440
-behaviortree,#hash_269ceb2bc33812cd
-behaviortree,#hash_2700eb461b3d4f5f
-behaviortree,#hash_2a6233304904b267
+behaviortree,#zm_zombie.ai_bt
+behaviortree,#zm_blight_father.ai_bt
+behaviortree,#zm_werewolf.ai_bt
+behaviortree,#zm_nosferatu.ai_bt
 ttf,d#hash_3d04d3341e66fd2c
 ttf,d#hash_49f222979b2ad835
 ttf,d#hash_6597013bd55835bd

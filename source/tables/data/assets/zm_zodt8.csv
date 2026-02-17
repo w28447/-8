@@ -22,7 +22,7 @@ physpreset,#hash_746553b910857e5e
 physpreset,#p7_tools_hammer
 physpreset,#hash_7b39c4e3d9cc0579
 physpreset,#hash_7b9f145dc80ed9c4
-physpreset,#hash_7f10d2bf08c8cb38
+physpreset,#toolbox
 physconstraints,#hash_44a75beda25efcb
 physconstraints,#hash_4f293bd7d600848
 physconstraints,d#hash_15def351e1a96176
@@ -35118,7 +35118,7 @@ klf,d#hash_6fa77179ac54a023
 klf,#hash_706772dada60dfad
 stringtable,#gamedata/weapons/zm/zm_zodt8_weapons.csv
 stringtable,#gamedata/audio/zm/zm_zodt8_vox.csv
-stringtable,#hash_5963a3db3032ab46
+stringtable,#gamedata/audio/zm/zm_story2_vox.csv
 glasses,#maps/zm/zm_zodt8.d3dbsp
 scriptparsetree,#scripts/zm/zm_zodt8.gsc
 scriptparsetree,#scripts/core_common/ai/archetype_catalyst.gsc
@@ -35303,13 +35303,13 @@ rumble,#hash_7b580995b5562bfc
 aimtable,d#soldier_aim
 animselectortable,#hash_cbcfb5ac200c4f3
 animselectortable,#zm_stoker.ai_ast
-animselectortable,#hash_39d3a662cbad64aa
+animselectortable,#zm_zombie.ai_ast
 animselectortable,#zm_blight_father.ai_ast
 animstatemachine,#hash_cbd125ac200ec08
 animstatemachine,#zm_stoker.ai_asm
 animstatemachine,#zm_zombie.ai_asm
 animstatemachine,#zm_blight_father.ai_asm
-behaviortree,#hash_2d2fdc5bc6d1011c
+behaviortree,#zm_stoker.ai_bt
 behaviortree,#hash_4d28747a078a76eb
 behaviorstatemachine,#hash_35f6c92c54af5866
 behaviorstatemachine,#hash_4069d2ce0a56ea8e
@@ -43550,8 +43550,8 @@ footsteptable,#hash_4f3c8e4cb98783fc
 footsteptable,#hash_5b564e8417ce45f7
 footsteptable,#hash_69f44606aefb8527
 animmappingtable,#hash_4d1e5b7a0781f7eb
-behaviortree,#hash_13a7f138b939d440
-behaviortree,#hash_269ceb2bc33812cd
+behaviortree,#zm_zombie.ai_bt
+behaviortree,#zm_blight_father.ai_bt
 ttf,d#hash_3d04d3341e66fd2c
 ttf,d#hash_49f222979b2ad835
 ttf,d#hash_6597013bd55835bd

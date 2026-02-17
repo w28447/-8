@@ -13,7 +13,7 @@ physpreset,#hash_5ceaa57dd3d5ebb1
 physpreset,d#default
 physpreset,#p7_tools_hammer
 physpreset,#hash_7bd4cb158cb2eae1
-physpreset,#hash_7f10d2bf08c8cb38
+physpreset,#toolbox
 physconstraints,d#hash_15def351e1a96176
 physconstraints,d#hash_15def651e1a9668f
 physconstraints,#hash_2608f3747c9f5826
@@ -30625,7 +30625,7 @@ klf,#hash_7c481fd0a12316ce
 klf,#hash_7dab0fd2938c2dd4
 stringtable,#gamedata/weapons/zm/zm_escape_weapons.csv
 stringtable,#gamedata/audio/zm/zm_escape_vox.csv
-stringtable,#hash_6d9aadb58948623b
+stringtable,#gamedata/audio/zm/zm_story1_vox.csv
 glasses,#maps/zm/zm_escape.d3dbsp
 scriptparsetree,#scripts/zm/zm_escape_vo_hooks.gsc
 scriptparsetree,#scripts/zm/weapons/zm_weap_blundergat.gsc
@@ -30884,7 +30884,7 @@ rumble,d#zm_weap_scepter_ray_hit_rumble
 aimtable,d#soldier_aim
 animselectortable,d#default.ai_ast
 animselectortable,#zm_dog.ai_ast
-animselectortable,#hash_39d3a662cbad64aa
+animselectortable,#zm_zombie.ai_ast
 animselectortable,#zm_brutus.ai_ast
 animselectortable,#zm_ghost_hound.ai_ast
 animselectortable,#zm_ghost.ai_ast
@@ -30895,9 +30895,9 @@ animstatemachine,#zm_brutus.ai_asm
 animstatemachine,#zm_ghost_hound.ai_asm
 animstatemachine,#zm_ghost.ai_asm
 behaviortree,d#default.ai_bt
-behaviortree,#hash_5c4ec524eae977ce
+behaviortree,#zm_dog.ai_bt
 behaviortree,#zm_ghost_hound.ai_bt
-behaviortree,#hash_73cff1cdfacd7d0b
+behaviortree,#zm_ghost.ai_bt
 behaviorstatemachine,#hash_4db649357ed3369
 behaviorstatemachine,#hash_4069d2ce0a56ea8e
 ttf,d#hash_1a8171252437b019
@@ -39220,8 +39220,8 @@ animmappingtable,#hash_6340acf92722dab3
 animmappingtable,#zm_ghost_hound.ai_am
 animmappingtable,#hash_70e46a62f12fd8fb
 animmappingtable,#hash_73c5d8cdfac4fe0b
-behaviortree,#hash_13a7f138b939d440
-behaviortree,#hash_634bb5f9272cf183
+behaviortree,#zm_zombie.ai_bt
+behaviortree,#zm_brutus.ai_bt
 ttf,d#hash_3d04d3341e66fd2c
 ttf,d#hash_49f222979b2ad835
 ttf,d#hash_6597013bd55835bd

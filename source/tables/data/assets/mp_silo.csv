@@ -10,7 +10,7 @@ physpreset,#p7_cup_coffee_mug
 physpreset,#hash_65148e1ddc4e6921
 physpreset,d#default
 physpreset,#hash_7b9f145dc80ed9c4
-physpreset,d#hash_7f10d2bf08c8cb38
+physpreset,d#toolbox
 physconstraints,#hash_fe9c6b81e03887
 physconstraints,#hash_10d8ddbd97269bb0
 physconstraints,#hash_1c719b3e9bc19dcb
@@ -15155,7 +15155,7 @@ xcam,#ui_cam_endgame_mp_apartments
 bgcache,#mp_silo
 texturecombo,#mp_silo
 objective,#hash_4a72ffa3664320bc
-objective,#hash_5f5d7bf9f14c0a8f
+objective,#mp_interact
 navmesh,#mp_silo
 navvolume,#mp_silo
 triggerlist,#maps/mp/mp_silo.d3dbsp

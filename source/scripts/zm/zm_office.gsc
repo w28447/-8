@@ -452,7 +452,7 @@ function sndfunctions()
 function custom_add_vox()
 {
     zm_audio::loadplayervoicecategories( #"gamedata/audio/zm/zm_common_vox.csv" );
-    zm_audio::loadplayervoicecategories( #"hash_6d9aadb58948623b" );
+    zm_audio::loadplayervoicecategories( #"gamedata/audio/zm/zm_story1_vox.csv" );
     zm_audio::loadplayervoicecategories( #"gamedata/audio/zm/zm_office_vox.csv" );
 }
 

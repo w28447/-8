@@ -40,7 +40,7 @@ physpreset,#hash_715fa5c9c471e804
 physpreset,#picture_frame
 physpreset,#hash_7b9f145dc80ed9c4
 physpreset,#hash_7ebfc5d2f21cc410
-physpreset,d#hash_7f10d2bf08c8cb38
+physpreset,d#toolbox
 physconstraints,#hash_86fa77f0dffdd1
 physconstraints,#hash_ed5249db7f26c8
 physconstraints,#hash_2eab058845d2d4a
@@ -26410,7 +26410,7 @@ xcam,#ui_cam_draft_common_zoom
 xcam,#ui_cam_endgame_mp_apartments
 bgcache,#mp_station
 texturecombo,#mp_station
-objective,#hash_5f5d7bf9f14c0a8f
+objective,#mp_interact
 navmesh,#mp_station
 navvolume,#mp_station
 triggerlist,#maps/mp/mp_station.d3dbsp

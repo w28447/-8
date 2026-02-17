@@ -991,7 +991,7 @@ function function_45b0f2f3( str_weapon_name )
 function custom_add_vox()
 {
     zm_audio::loadplayervoicecategories( #"gamedata/audio/zm/zm_common_vox.csv" );
-    zm_audio::loadplayervoicecategories( #"hash_6d9aadb58948623b" );
+    zm_audio::loadplayervoicecategories( #"gamedata/audio/zm/zm_story1_vox.csv" );
     zm_audio::loadplayervoicecategories( #"gamedata/audio/zm/zm_escape_vox.csv" );
     level.sndweaponpickupoverride = array( #"spoon", #"spork", #"spknifeork", #"tomahawk", #"blundergat", #"acidgat", #"magmagat", #"magmagat_unfinished" );
 }

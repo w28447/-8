@@ -74,11 +74,11 @@ function function_806b0f85( attacker, weapon )
 // Size: 0x15e, Type: bool
 function function_6190ae9e( origin, angles, player )
 {
-    if ( isdefined( level.var_87226c31.bundle.var_bc78f60e ) )
+    if ( isdefined( level.concertinawiresettings.bundle.var_bc78f60e ) )
     {
-        length2 = ( level.var_87226c31.bundle.var_bc78f60e + level.var_87226c31.bundle.maxwidth ) * ( level.var_87226c31.bundle.var_bc78f60e + level.var_87226c31.bundle.maxwidth );
+        length2 = ( level.concertinawiresettings.bundle.var_bc78f60e + level.concertinawiresettings.bundle.maxwidth ) * ( level.concertinawiresettings.bundle.var_bc78f60e + level.concertinawiresettings.bundle.maxwidth );
         
-        foreach ( protectedzone in level.var_87226c31.objectivezones )
+        foreach ( protectedzone in level.concertinawiresettings.objectivezones )
         {
             if ( isdefined( protectedzone ) )
             {
@@ -101,7 +101,7 @@ function function_6190ae9e( origin, angles, player )
 // Size: 0x34
 function addprotectedzone( zone )
 {
-    array::add( level.var_87226c31.objectivezones, zone );
+    array::add( level.concertinawiresettings.objectivezones, zone );
 }
 
 // Namespace concertina_wire/gadget_concertina_wire
@@ -110,6 +110,6 @@ function addprotectedzone( zone )
 // Size: 0x34
 function removeprotectedzone( zone )
 {
-    arrayremovevalue( level.var_87226c31.objectivezones, zone );
+    arrayremovevalue( level.concertinawiresettings.objectivezones, zone );
 }
 

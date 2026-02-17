@@ -1519,7 +1519,7 @@ function microwaveentity( entity )
                     entity viewkick( int( 25 * viewkickscalar ), turret.origin );
                     entity.microwaveshellshockandviewkicktime = time;
                     entity thread status_effect::status_effect_apply( var_756fda07, level.smartcoversettings.smartcoverweapon, self, 0 );
-                    var_83cd8106 = level.smartcoversettings.bundle.var_5223868e;
+                    var_83cd8106 = level.smartcoversettings.bundle.microwaverumblelow;
                     
                     if ( isdefined( var_83cd8106 ) )
                     {

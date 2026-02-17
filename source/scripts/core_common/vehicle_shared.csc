@@ -863,11 +863,11 @@ function function_34105b89( localclientnum, groupid, ison )
         return;
     }
     
-    foreach ( var_b969bea7 in bone_group )
+    foreach ( control_bone in bone_group )
     {
-        if ( isdefined( var_b969bea7 ) && isdefined( var_b969bea7.var_f08513a ) )
+        if ( isdefined( control_bone ) && isdefined( control_bone.var_f08513a ) )
         {
-            self function_d309e55a( var_b969bea7.var_f08513a, ison );
+            self function_d309e55a( control_bone.var_f08513a, ison );
         }
     }
 }

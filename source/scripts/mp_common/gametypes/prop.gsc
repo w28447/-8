@@ -2999,12 +2999,12 @@ function function_bfc79664( var_167fb943, remainingtime )
     
     self thread function_e60dbbee( var_ed3bdaed + var_e03c6413 );
     waittillframeend();
-    self.var_650b1469 = undefined;
+    self.sd_breacherbre = undefined;
     self.var_9d62f0b2 = undefined;
     
     if ( remainingtime > 8 )
     {
-        self.var_650b1469 = self.origin;
+        self.sd_breacherbre = self.origin;
         self.var_9d62f0b2 = self.angles;
         gameobject_link = util::spawn_model( "tag_origin", self.origin, self.angles );
         self playerlinkto( gameobject_link, "tag_origin", 0, 30, 30, 30, 30 );
@@ -4136,9 +4136,9 @@ function function_416db484( isvisible )
         self solid();
         self function_d25cfae3( 1 );
         
-        if ( isdefined( self.var_650b1469 ) )
+        if ( isdefined( self.sd_breacherbre ) )
         {
-            self setorigin( self.var_650b1469 );
+            self setorigin( self.sd_breacherbre );
             self setplayerangles( self.var_9d62f0b2 );
         }
         

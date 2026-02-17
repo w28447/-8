@@ -8454,10 +8454,10 @@ xcam,d#ui_cam_mp_endgame_common
 xcam,#ui_cam_endgame_mp_apartments
 bgcache,#mp_maldives
 texturecombo,#mp_maldives
-objective,#hash_29c4014321b74a4e
-objective,#hash_40710e41148ebeaf
-objective,#hash_5da71e6986b8967b
-objective,#hash_6cdc62e83235d743
+objective,#mp_maldives_interact_send_elevator_down
+objective,#mp_maldives_interact_laser
+objective,#mp_maldives_interact_send_elevator_up
+objective,#mp_maldives_interact_call_elevator
 navmesh,#mp_maldives
 navvolume,#mp_maldives
 triggerlist,#maps/mp/mp_maldives.d3dbsp

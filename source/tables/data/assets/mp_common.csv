@@ -30,7 +30,7 @@ physpreset,d#p7_debris_metal_scrap_02
 physpreset,d#default
 physpreset,#hash_79bb603a0af079cc
 physpreset,#hash_7e9dc75db9646819
-physpreset,#hash_7f10d2bf08c8cb38
+physpreset,#toolbox
 physconstraints,#hash_1b86dbabb5ce950
 physconstraints,#hash_716e58d6bd9fe44
 physconstraints,#hash_c5a76fe12d7992e
@@ -24802,7 +24802,7 @@ attachment,d#custom2
 attachment,d#hash_70bf3b69d261cf29
 attachment,d#hash_71bbc3c006d9e6d2
 attachment,d#hash_7459a0af8e8f912b
-attachment,d#hash_78573f87ad6a6329
+attachment,d#damage_launcher
 attachment,d#hash_7a1bb4a785d32862
 attachment,d#hash_7a412e9d47cad02e
 attachment,d#dualoptic
@@ -27783,9 +27783,9 @@ tacticalquery,#swat_engage_enemy
 tacticalquery,#mp_seeker_seek_no_enemy_fallback
 tacticalquery,#swat_tacquery_seek
 tacticalquery,#ai_tank_combat
-tacticalquery,#hash_1ae4e8d9e3113f92
+tacticalquery,#mp_dog_escort
 tacticalquery,#tank_robot_tacquery_seek
-tacticalquery,#hash_2a6331fb6068b5e8
+tacticalquery,#mp_dog_patrol
 tacticalquery,#mp_dog_spawn
 tacticalquery,#supply_drop_deploy
 tacticalquery,#mp_seeker_seek_no_enemy
@@ -27793,14 +27793,14 @@ tacticalquery,#tank_robot_tacquery_wander
 tacticalquery,#mp_dog_arrival
 tacticalquery,#hash_4124bac3faf6beba
 tacticalquery,#ai_tank_wander
-tacticalquery,#hash_4ccdabef18d5b89b
+tacticalquery,#mp_dog_escort_staycourse
 tacticalquery,#mp_dog_spawn_fallback
-tacticalquery,#hash_504fc41bb2733e49
+tacticalquery,#bot_tacquery_nearest_point_nodeless
 tacticalquery,#swat_team_deploy
 tacticalquery,#mp_dog_spawn_fallback_2
 tacticalquery,#swat_team_leave
-tacticalquery,d#hash_5fabcf03fbb3413b
-tacticalquery,#hash_646655d1b1c3cc9b
+tacticalquery,d#bot_tacquery_space_seeds
+tacticalquery,#mp_dog_patrol_enemy
 tacticalquery,#tank_robot_tacquery_combat
 ragdoll,#hash_1961b4608c15f61a
 ragdoll,d#mp_dog
@@ -34754,7 +34754,7 @@ impactsoundstable,#hash_7e602393a94cd0bb
 impactsoundstable,#hash_7ee61e7fed713f5f
 footsteptable,#hash_2a3d7a3cc00e86cc
 footsteptable,d#hash_3008da66d91b8ad7
-footsteptable,#hash_67d08819892d6ef3
+footsteptable,#dogstep
 scriptbundle,#bot_tacstate_mp_hard
 scriptbundle,#player_helicopter_pilot
 scriptbundle,#mp_resist_blind
@@ -36373,7 +36373,7 @@ fx,#ui/fx8_infil_marker_shoutcaster_allies_window
 fx,#hash_18b7f732ac5279df
 fx,d#hash_18f27b1c327d01ec
 fx,#hash_190601c442398dc1
-fx,#hash_19099e5a4d4881c3
+fx,#weapon/fx8_equip_seeker_prong_vm_active
 fx,#hash_191255acc865a9fc
 fx,#killstreaks/fx_sc_lights_red
 fx,d#hash_197d45e7d1977763
@@ -37023,7 +37023,7 @@ postfxbundle,d#pstfx_slowed
 postfxbundle,#hash_3b4e3282e8a33852
 postfxbundle,d#pstfx_shock_charge
 postfxbundle,#hash_4a0f29be359da433
-postfxbundle,#hash_4a2ff0184eaf16f8
+postfxbundle,#pstfx_airsupport_thermal
 postfxbundle,#hash_4bc228d5f3bcffe5
 postfxbundle,#hash_594d5293046135ff
 postfxbundle,d#hash_5a76eaaf7f7e3de5
@@ -37039,7 +37039,7 @@ postfxbundle,#hash_6e028564ad263785
 postfxbundle,#postfx_hitzone
 postfxbundle,#pstfx_health_regen
 postfxbundle,#hash_778f4a554a5cfc33
-postfxbundle,#hash_7b151cdfeb0cc373
+postfxbundle,#pstfx_recon_car
 postfxbundle,#pstfx_sprite_rain_loop
 renderoverridebundle,#hash_14be6378dfef6b7
 renderoverridebundle,#hash_68bd6efcb1324e3

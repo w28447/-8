@@ -42,7 +42,7 @@ physpreset,#p7_tools_hammer
 physpreset,#p7_cai_incense_cone_burner_01_lid
 physpreset,#hash_7b9f145dc80ed9c4
 physpreset,#hash_7bd4cb158cb2eae1
-physpreset,d#hash_7f10d2bf08c8cb38
+physpreset,d#toolbox
 physconstraints,#hash_86fa77f0dffdd1
 physconstraints,#hash_ae66b623e59643
 physconstraints,#hash_4f2769f468f8526

@@ -43,9 +43,9 @@ function function_341e5a97( localclientnum, oldval, newval, bnewent, binitialsna
     {
         settingsbundle = self ai::function_9139c839();
         
-        if ( isdefined( settingsbundle ) && isdefined( settingsbundle.var_d354164e ) )
+        if ( isdefined( settingsbundle ) && isdefined( settingsbundle.zombiesplitmdls ) )
         {
-            foreach ( var_127d3a7a in settingsbundle.var_d354164e )
+            foreach ( var_127d3a7a in settingsbundle.zombiesplitmdls )
             {
                 if ( self.model === var_127d3a7a.var_a3c9023c )
                 {

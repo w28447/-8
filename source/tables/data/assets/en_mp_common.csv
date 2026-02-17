@@ -1241,7 +1241,7 @@ localizeentry,#hash_163aa7dcd7ddd8ec
 localizeentry,#hash_164e8c39b318786e
 localizeentry,d#hash_165a8932254a9933
 localizeentry,#hash_166110ecd159bd91
-localizeentry,#hash_16620b98386e49e4
+localizeentry,#codcaster/an_killed_defuser
 localizeentry,#hash_1664c230fd3cc01e
 localizeentry,#hash_1667f9ecd15fb52a
 localizeentry,d#mpui/grip
@@ -1456,7 +1456,7 @@ localizeentry,#codcaster/xray_enemy
 localizeentry,#hash_1a92742820764565
 localizeentry,#hash_1a92e320da679749
 localizeentry,#hash_1a96b4c95e637091
-localizeentry,#hash_1a96c1697352ae01
+localizeentry,#codcaster/an_ctf_flagdrop
 localizeentry,#hash_1a99dc20da6daa12
 localizeentry,#hash_1a9ae1e6bc1cfedc
 localizeentry,#hash_1a9b712beb2f4fce
@@ -1800,9 +1800,9 @@ localizeentry,#hash_20c94ee47ec3de9c
 localizeentry,#hash_20d05d6c6e78d6bd
 localizeentry,#hash_20db8e45641c5a7d
 localizeentry,#hash_20e65c6c8bdcaffd
-localizeentry,#hash_20eb21b355414bb4
+localizeentry,#codcaster/an_all_points_capture
 localizeentry,#hash_20ebedeae7f41879
-localizeentry,#hash_20f6e830967c008f
+localizeentry,#codcaster/an_uplink_long_shot
 localizeentry,#hash_210196e571fd76ff
 localizeentry,#hash_2108735b7ce669d6
 localizeentry,#hash_210eb4456447f4a8
@@ -2095,7 +2095,7 @@ localizeentry,#hash_2633d5c570d3524c
 localizeentry,#hash_2636d2199228bc01
 localizeentry,#hash_263a92f92ec58254
 localizeentry,#hash_264080246caf58d3
-localizeentry,#hash_2644be4a0b6230c6
+localizeentry,#codcaster/an_last_man_standing
 localizeentry,#mp/kill_denied
 localizeentry,#hash_264c43ffbc5b21cc
 localizeentry,#hash_264f7a2747449c57
@@ -2596,7 +2596,7 @@ localizeentry,#hash_2faec3fa0da19995
 localizeentry,#hash_2fb8cbd68ffdb1a4
 localizeentry,#hash_2fbcb5665e4850e0
 localizeentry,#hash_2fc1c781a3139358
-localizeentry,#hash_2fc2d3b5ce14ddb9
+localizeentry,#codcaster/an_hardpoint_capturing
 localizeentry,d#mpui/fmj2
 localizeentry,#hash_2fc853cf29dd10d1
 localizeentry,#hash_2fcfb5dadef3ae4c
@@ -2957,7 +2957,7 @@ localizeentry,d#hash_360742434808cf8e
 localizeentry,#hash_360fdcc877177c1b
 localizeentry,#hash_362766ae8b331118
 localizeentry,#hash_36294e38884be41b
-localizeentry,#hash_3632d27cec99b46e
+localizeentry,#codcaster/an_uplink_ball_pickup
 localizeentry,#hash_3634b6c8773657c6
 localizeentry,#hash_3639648f8d9cc2fc
 localizeentry,#hash_363b6496a0f66560
@@ -3724,7 +3724,7 @@ localizeentry,#hash_4397bfa546f8eab9
 localizeentry,#hash_43a5718a3700e144
 localizeentry,d#hash_43b0cfc850dbcc04
 localizeentry,d#hash_43b7168b75575032
-localizeentry,#hash_43b7769694185b80
+localizeentry,#codcaster/an_bomb_planting
 localizeentry,#hash_43b8ddc408686e9c
 localizeentry,#hash_43ba1103429f483e
 localizeentry,#hash_43c8ac9335afaa5e
@@ -3927,7 +3927,7 @@ localizeentry,#hash_46eef9e73c03a0eb
 localizeentry,#hash_46f0440233c88e09
 localizeentry,d#hash_4700b975ef762ce2
 localizeentry,#hash_4700c6c74502d0a8
-localizeentry,#hash_4703a5c10af7c5fa
+localizeentry,#codcaster/an_dom_capture_point
 localizeentry,#hash_4709af82d9edebd4
 localizeentry,#hash_47122144424b6f9e
 localizeentry,#hash_4714b326182c5253
@@ -4413,7 +4413,7 @@ localizeentry,#hash_4f0fa5381239e9f5
 localizeentry,#hash_4f1085327ef82034
 localizeentry,#hash_4f1086327ef821e7
 localizeentry,#hash_4f1087327ef8239a
-localizeentry,#hash_4f19f398c0bddf5c
+localizeentry,#codcaster/an_hardpoint_contest
 localizeentry,#hash_4f1acb7c5e9ab4b0
 localizeentry,d#hash_4f23c6ecb321fa19
 localizeentry,#hash_4f2ee3d3d0063918
@@ -4972,7 +4972,7 @@ localizeentry,#weapon/baseweapon
 localizeentry,#hash_5951e9071df73a84
 localizeentry,#hash_5953b8cab946b1db
 localizeentry,#hash_595457af60d45035
-localizeentry,#hash_5959cda41cb7f190
+localizeentry,#codcaster/an_uplink_dunk
 localizeentry,#hash_595c788b606eb9eb
 localizeentry,#hash_595d5ff7c52d0f12
 localizeentry,#hash_5962d5bdac2bff52
@@ -5151,7 +5151,7 @@ localizeentry,d#hash_5c2a786ab2a51fa9
 localizeentry,#hash_5c2b727f43f4c8ef
 localizeentry,#hash_5c2ea8e47b34ab01
 localizeentry,#hash_5c379fe47a704ff2
-localizeentry,#hash_5c3d481e648655cd
+localizeentry,#codcaster/an_uplink_ball_reset
 localizeentry,#hash_5c45c02b0c078b38
 localizeentry,#hash_5c45c12b0c078ceb
 localizeentry,d#hash_5c4b68d4f7c51908
@@ -6269,7 +6269,7 @@ localizeentry,d#hash_7085044e7b80d5a3
 localizeentry,#hash_708c1ff90fbb88bd
 localizeentry,d#hash_708e783c525f2fa8
 localizeentry,#hash_7090d48f0bbdfa80
-localizeentry,#hash_709c9f798d0e02e4
+localizeentry,#codcaster/an_called_a_scorestreak
 localizeentry,d#hash_709fb6b7fdde6aa8
 localizeentry,#hash_709fc3020ccc2372
 localizeentry,#hash_70b422359693f3e1

@@ -201,10 +201,10 @@ string,#OBJECTIVES_COOP_WAYPOINT_HACK
 string,#hash_1258c631be445822
 string,#hash_29965b65bca9cd7b
 string,#hash_310ad55f171e194e
-objective,#hash_29c4014321b74a4e
-objective,#hash_40710e41148ebeaf
-objective,#hash_5da71e6986b8967b
-objective,#hash_6cdc62e83235d743
+objective,#mp_maldives_interact_send_elevator_down
+objective,#mp_maldives_interact_laser
+objective,#mp_maldives_interact_send_elevator_up
+objective,#mp_maldives_interact_call_elevator
 radiant_exploder,#hash_7e17d35a668424
 radiant_exploder,#hash_3fc296996157c7b9
 radiant_exploder,#hash_5cfa031a3f697a07

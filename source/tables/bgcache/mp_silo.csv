@@ -229,7 +229,7 @@ menu,#elevator
 string,#OBJECTIVES_COOP_WAYPOINT_HACK
 eventstring,#floor
 objective,#hash_4a72ffa3664320bc
-objective,#hash_5f5d7bf9f14c0a8f
+objective,#mp_interact
 radiant_exploder,#fxexp_alarm_lights
 radiant_exploder,#exp_lgt_draft
 radiant_exploder,#hash_9edd8ddde0df571

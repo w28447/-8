@@ -45,7 +45,7 @@ physpreset,#p7_eth_decor_01_statue_elephant
 physpreset,#p7_tools_hammer
 physpreset,#hash_7b39c4e3d9cc0579
 physpreset,#hash_7b9f145dc80ed9c4
-physpreset,d#hash_7f10d2bf08c8cb38
+physpreset,d#toolbox
 physconstraints,#hash_86fa77f0dffdd1
 physconstraints,#hash_539826ffcc447b1
 physconstraints,#hash_9f4c43b440d493a

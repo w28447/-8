@@ -125,9 +125,9 @@ function setup()
     level thread function_26185fc3();
     level.a_ai_targets = [];
     
-    if ( isdefined( level.var_87226c31.bundle.timeout ) && level.var_87226c31.bundle.timeout > 0 )
+    if ( isdefined( level.concertinawiresettings.bundle.timeout ) && level.concertinawiresettings.bundle.timeout > 0 )
     {
-        level.var_805601a1 = level.var_87226c31.bundle.timeout;
+        level.var_805601a1 = level.concertinawiresettings.bundle.timeout;
     }
     
     if ( isdefined( level.smartcoversettings.bundle.timeout ) && level.smartcoversettings.bundle.timeout > 0 )
@@ -135,7 +135,7 @@ function setup()
         level.var_b22514ca = level.smartcoversettings.bundle.timeout;
     }
     
-    level.var_87226c31.bundle.timeout = 0;
+    level.concertinawiresettings.bundle.timeout = 0;
     level.smartcoversettings.bundle.timeout = 0;
     level.var_e8126cf6 = 0;
     level.var_d1f07c87 = 0;
@@ -150,7 +150,7 @@ function function_3661baa8()
 {
     if ( isdefined( level.var_805601a1 ) )
     {
-        level.var_87226c31.bundle.timeout = level.var_805601a1;
+        level.concertinawiresettings.bundle.timeout = level.var_805601a1;
     }
     
     if ( isdefined( level.var_b22514ca ) )
@@ -1437,16 +1437,16 @@ function function_74d4f033( var_f3aa6dfe )
     var_7dd5b77 = [];
     var_7dd5b77[ 2 ] = "s_torque_tut_fin1_goodplace_barricade";
     var_7dd5b77[ 1 ] = "s_torque_tut_fin1_goodplace_razorwire";
-    var_9d1d9d2d = [];
-    var_9d1d9d2d[ 2 ] = "good_barricade_placement";
-    var_9d1d9d2d[ 1 ] = "good_razorwire_placement";
+    le_weapon_ta = [];
+    le_weapon_ta[ 2 ] = "good_barricade_placement";
+    le_weapon_ta[ 1 ] = "good_razorwire_placement";
     var_7429705d = struct::get_array( var_7dd5b77[ var_f3aa6dfe ] );
     var_4cd2162 = arraygetclosest( self.origin, var_7429705d );
     var_effd527b = self function_9326b2b2( var_f3aa6dfe, var_4cd2162, 48 );
     
     if ( isdefined( var_effd527b ) && var_effd527b )
     {
-        level notify( var_9d1d9d2d[ var_f3aa6dfe ] );
+        level notify( le_weapon_ta[ var_f3aa6dfe ] );
     }
     
     self thread function_f22f1511( var_f3aa6dfe );
@@ -2688,7 +2688,7 @@ function function_d5935c84()
     
     while ( true )
     {
-        foreach ( razorwire in level.var_87226c31.var_925bbb2 )
+        foreach ( razorwire in level.concertinawiresettings.var_925bbb2 )
         {
             if ( !isdefined( razorwire ) )
             {

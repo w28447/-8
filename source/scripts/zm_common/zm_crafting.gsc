@@ -1831,7 +1831,7 @@ function private function_df8ce6e2( player )
     {
         if ( isdefined( self.stub.blueprint.var_54a97edd.isriotshield ) && self.stub.blueprint.var_54a97edd.isriotshield && isdefined( player.player_shield_reset_health ) && isdefined( player.var_d3345483 ) && player.var_d3345483 )
         {
-            var_d97673ff = 1;
+            tag_origin_noz = 1;
         }
         else
         {
@@ -1846,7 +1846,7 @@ function private function_df8ce6e2( player )
         return;
     }
     
-    if ( isdefined( var_d97673ff ) && var_d97673ff )
+    if ( isdefined( tag_origin_noz ) && tag_origin_noz )
     {
         var_f66d1847 = self.stub function_ceac3bf9( player, 1 );
     }
@@ -1901,7 +1901,7 @@ function private function_df8ce6e2( player )
     
     if ( isdefined( self.stub.blueprint.var_54a97edd.isriotshield ) && self.stub.blueprint.var_54a97edd.isriotshield )
     {
-        if ( isdefined( var_d97673ff ) && var_d97673ff )
+        if ( isdefined( tag_origin_noz ) && tag_origin_noz )
         {
             player [[ player.player_shield_reset_health ]]( undefined, 1 );
         }
@@ -1911,7 +1911,7 @@ function private function_df8ce6e2( player )
         }
     }
     
-    if ( !( isdefined( var_d97673ff ) && var_d97673ff ) )
+    if ( !( isdefined( tag_origin_noz ) && tag_origin_noz ) )
     {
         player zm_weapons::weapon_give( self.stub.blueprint.var_54a97edd );
     }

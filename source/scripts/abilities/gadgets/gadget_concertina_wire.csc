@@ -13,12 +13,12 @@ function init_shared( var_4b51853b )
     clientfield::register( "scriptmover", "concertinaWire_placed", 1, 5, "float", &function_6873a657, 0, 0 );
     clientfield::register( "scriptmover", "concertinaWireDestroyed", 1, 1, "int", &function_8455c7c0, 0, 0 );
     clientfield::register( "scriptmover", "concertinaWireDroopyBits", 1, 3, "int", &function_3a927971, 0, 0 );
-    level.var_87226c31 = spawnstruct();
-    level.var_87226c31.bundle = getscriptbundle( var_4b51853b );
-    level.var_87226c31.concertinawireweapon = getweapon( #"eq_concertina_wire" );
-    level.var_87226c31.var_546a220c = "concertina_wire_objective_default";
-    level.var_87226c31.var_925bbb2 = [];
-    deployable::register_deployable( level.var_87226c31.concertinawireweapon, 1 );
+    level.concertinawiresettings = spawnstruct();
+    level.concertinawiresettings.bundle = getscriptbundle( var_4b51853b );
+    level.concertinawiresettings.concertinawireweapon = getweapon( #"eq_concertina_wire" );
+    level.concertinawiresettings.var_546a220c = "concertina_wire_objective_default";
+    level.concertinawiresettings.var_925bbb2 = [];
+    deployable::register_deployable( level.concertinawiresettings.concertinawireweapon, 1 );
 }
 
 // Namespace concertina_wire/gadget_concertina_wire
@@ -94,7 +94,7 @@ function function_6873a657( localclientnum, oldval, newval, bnewent, binitialsna
     self endon( #"death" );
     self util::waittill_dobj( localclientnum );
     
-    if ( !isdefined( level.var_87226c31 ) || !isdefined( level.var_87226c31.bundle ) || !isdefined( level.var_87226c31.bundle.deployanim ) )
+    if ( !isdefined( level.concertinawiresettings ) || !isdefined( level.concertinawiresettings.bundle ) || !isdefined( level.concertinawiresettings.bundle.deployanim ) )
     {
         return;
     }
@@ -104,22 +104,22 @@ function function_6873a657( localclientnum, oldval, newval, bnewent, binitialsna
     
     if ( bnewent || newval == 1 )
     {
-        self setanim( level.var_87226c31.bundle.deployanim, 1, var_f56117a2, 0 );
+        self setanim( level.concertinawiresettings.bundle.deployanim, 1, var_f56117a2, 0 );
     }
     
     if ( bwastimejump )
     {
-        currentanimtime = self getanimtime( level.var_87226c31.bundle.deployanim );
+        currentanimtime = self getanimtime( level.concertinawiresettings.bundle.deployanim );
         
         if ( var_f56117a2 < currentanimtime || bnewent )
         {
-            self setanimtime( level.var_87226c31.bundle.deployanim, var_f56117a2 );
+            self setanimtime( level.concertinawiresettings.bundle.deployanim, var_f56117a2 );
         }
         
         return;
     }
     
-    self setanimtime( level.var_87226c31.bundle.deployanim, var_f56117a2 );
+    self setanimtime( level.concertinawiresettings.bundle.deployanim, var_f56117a2 );
 }
 
 // Namespace concertina_wire/gadget_concertina_wire
@@ -132,7 +132,7 @@ function function_1c2930c7( localclientnum )
     player notify( #"hash_5c7dbac0591cb11f" );
     player endon( #"hash_5c7dbac0591cb11f", #"game_ended" );
     level endon( #"game_ended" );
-    level.var_87226c31.var_aef370a9[ localclientnum ] = 1;
+    level.concertinawiresettings.var_aef370a9[ localclientnum ] = 1;
     var_ccfe777 = 0;
     
     while ( true )
@@ -145,7 +145,7 @@ function function_1c2930c7( localclientnum )
             break;
         }
         
-        var_b43e8dc2 = player function_287dcf4b( level.var_87226c31.bundle.var_63aab046, level.var_87226c31.bundle.maxwidth, 0, 0, level.var_87226c31.concertinawireweapon );
+        var_b43e8dc2 = player function_287dcf4b( level.concertinawiresettings.bundle.var_63aab046, level.concertinawiresettings.bundle.maxwidth, 0, 0, level.concertinawiresettings.concertinawireweapon );
         
         if ( !isdefined( var_b43e8dc2 ) && !var_ccfe777 )
         {
@@ -163,7 +163,7 @@ function function_1c2930c7( localclientnum )
             continue;
         }
         
-        if ( isdefined( level.var_87226c31.bundle.showprevis ) ? level.var_87226c31.bundle.showprevis : 0 )
+        if ( isdefined( level.concertinawiresettings.bundle.showprevis ) ? level.concertinawiresettings.bundle.showprevis : 0 )
         {
             if ( var_b43e8dc2.var_bf9ca9b0 )
             {

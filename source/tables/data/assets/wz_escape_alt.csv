@@ -28,7 +28,7 @@ physpreset,d#p7_debris_metal_scrap_02
 physpreset,d#default
 physpreset,#p7_furnishings_cairo_chest_sm
 physpreset,#hash_7bd4cb158cb2eae1
-physpreset,#hash_7f10d2bf08c8cb38
+physpreset,#toolbox
 physconstraints,d#hash_d5b7a4e528392a
 physconstraints,#hash_21ba429fdc58ac8
 physconstraints,#hash_36600e7ceceba64
@@ -62379,7 +62379,7 @@ sharedweaponsounds,d#hash_5e3081d2362bd322
 sharedweaponsounds,d#rifle
 sharedweaponsounds,d#shotgun
 sharedweaponsounds,d#hash_74b924daa49aba34
-sharedweaponsounds,d#hash_7b3d6cb4a5fffb22
+sharedweaponsounds,d#coinbag
 sharedweaponsounds,d#hash_7c5173e46579be0f
 fx,#hash_91ae1e46281b192
 fx,#hash_48da2896148d9169
@@ -62619,7 +62619,7 @@ xmodel,#hash_42e50f8b5b8fd99
 xmodel,#hash_434612ca0068209
 xmodel,d#wpn_t8_sig_grapple_gun_view
 xmodel,#p7_wes_telegraph_bulb
-xmodel,#hash_44c6652ef176d27
+xmodel,#p8_zm_whi_bed_wood_queen_02_frame_boxspring
 xmodel,#p8_fxanim_zm_esc_power_panel_phouse_06_mod
 xmodel,d#wpn_t8_tac_rifle_mid_burst_mk2_world
 xmodel,#hash_472f2e4db905624
