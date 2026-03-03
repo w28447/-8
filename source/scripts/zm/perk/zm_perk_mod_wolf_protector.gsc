@@ -50,7 +50,7 @@ function function_27473e44()
     zm_perks::register_perk_threads( #"specialty_mod_wolf_protector", &give_perk, &take_perk );
     callback::on_ai_killed( &on_ai_killed );
     zm_powerups::register_powerup( "wolf_bonus_points", &function_5517e41a );
-    zm_powerups::register_powerup( "wolf_bonus_ammo", &zm_powerup_small_ammo::function_81558cdf );
+    zm_powerups::register_powerup( "wolf_bonus_ammo", &zm_powerup_small_ammo::grab_small_ammo );
     zm_powerups::register_powerup( "wolf_bonus_hero_power", &zm_powerup_hero_weapon_power::hero_weapon_power );
     
     if ( zm_powerups::function_cc33adc8() )

@@ -2,8 +2,8 @@ type,name
 techset,d#hash_13b5e1db9658f56c
 image,#killcamindicator
 image,d#t7_hud_mp_notifications_xp_blue
-streamkey,#hash_8a83f139175c17a
-streamkey,#hash_7c5b0232dc127c6b
+streamkey,#wz_common_fj_stream
+streamkey,#wz_common_fj_loaded
 streamkey,#hash_651cd5c23232f2f0
 streamkey,#hash_4c2635862e1897bd
 sound,#wz_common.fj

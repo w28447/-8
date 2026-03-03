@@ -750,7 +750,7 @@
 #background,749,749,#ui_icon_callingcards_zm_gauntlet_red_gold,7#hash_6fe7fa4d03bbf1d6,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
 #background,750,750,#ui_icon_callingcards_zm_gauntlet_red_silver,7#hash_6acf000f1e87f95,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
 #background,751,751,#ui_icon_callingcards_zm_gauntlet_red_bronze,7#hash_645d41d5a9ebd580,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
-#background,752,752,#hash_5af03ac2f41f4a3d,7#hash_2d617d2a72b07fc6,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
+#background,752,752,#loot_ui_icon_callingcards_hades_mastercraft,7#hash_2d617d2a72b07fc6,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,753,753,#loot_ui_icon_callingcards_sdm_mastercraft,7#hash_78deadafc6ce6ae7,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,754,754,#loot_ui_icon_callingcards_summerbreak_07,7#hash_670e1c04abf1f098,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,755,755,#loot_ui_icon_callingcards_summerbreak_02,7#hash_670e2104abf1f917,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
@@ -790,7 +790,7 @@
 #background,789,789,#ui_icon_callingcards_zm_gauntlet_unsinkable_darkmatter,7#hash_4332d8f07e036a0,1,0,0,0,#global,#,#,#,#,#,#ui_icon_callingcards_zm_gauntlet_unsinkable_darkmatter,#,#,u9?0,#
 #background,790,790,#ui_icon_callingcards_zm_gauntlet_unsinkable_diamond,7#hash_16d05ba4b4674597,1,0,0,0,#global,#,#,#,#,#,#ui_icon_callingcards_zm_gauntlet_unsinkable_diamond,#,#,u9?0,#
 #background,791,791,#ui_icon_callingcards_zm_gauntlet_unsinkable_platinum,7#hash_2abfe9a2e45cc95a,1,0,0,0,#global,#,#,#,#,#,#ui_icon_callingcards_zm_gauntlet_unsinkable_platinum,#,#,u9?0,#
-#background,792,792,#hash_7b3ef12304073586,7#hash_3a790183857d9f0,1,0,0,0,#default,#hash_5bd04e15802702be,#,#,#,#,#hash_19a415d7ae531245,#,#,u9?0,#
+#background,792,792,#hash_7b3ef12304073586,7#hash_3a790183857d9f0,1,0,0,0,#default,#hash_5bd04e15802702be,#,#,#,#,#loot_ui_icon_callingcards_twitch_steampunk,#,#,u9?0,#
 #background,793,793,#loot_ui_icon_callingcards_zombiediner_01,7#hash_6b1d11dc4e70b5cc,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,794,794,#loot_ui_icon_callingcards_zombiediner_07,7#hash_6b1d14dc4e70bae5,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,795,795,#loot_ui_icon_callingcards_zombiediner_03,7#hash_6b1d13dc4e70b932,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
@@ -805,9 +805,9 @@
 #background,804,804,#loot_ui_icon_callingcards_zombiecamp_05,7#hash_4f5e425ce2087c0b,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,805,805,#loot_ui_icon_callingcards_zombiecamp_06,7#hash_4f5e435ce2087dbe,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,806,806,#hash_b68c32a1ece956d,7#hash_4f5e445ce2087f71,1,0,0,0,#loot,#,#,#,#,#,#loot_ui_icon_callingcards_zombiecamp_02,#,#,u9?0,#
-#background,807,807,#hash_65dfe2d95ac05f49,7#hash_3e94e68f8da53992,1,0,0,0,#global,#,#,#,#,#,#hash_65dfe2d95ac05f49,#,#,u9?0,#
-#background,808,808,#hash_1072ed50a19b2248,7#hash_274f515771df012b,1,0,0,0,#global,#,#,#,#,#,#hash_1072ed50a19b2248,#,#,u9?0,#
-#background,809,809,#hash_4e582d557c6428db,7#hash_7f3c274061602f58,1,0,0,0,#global,#,#,#,#,#,#hash_4e582d557c6428db,#,#,u9?0,#
+#background,807,807,#ui_icon_callingcards_zm_gauntlet_white_bronze,7#hash_3e94e68f8da53992,1,0,0,0,#global,#,#,#,#,#,#ui_icon_callingcards_zm_gauntlet_white_bronze,#,#,u9?0,#
+#background,808,808,#ui_icon_callingcards_zm_gauntlet_white_silver,7#hash_274f515771df012b,1,0,0,0,#global,#,#,#,#,#,#ui_icon_callingcards_zm_gauntlet_white_silver,#,#,u9?0,#
+#background,809,809,#ui_icon_callingcards_zm_gauntlet_white_gold,7#hash_7f3c274061602f58,1,0,0,0,#global,#,#,#,#,#,#ui_icon_callingcards_zm_gauntlet_white_gold,#,#,u9?0,#
 #background,810,810,#loot_ui_icon_callingcards_superheroes_01,7#hash_668a6f5c4bd2dd3d,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,811,811,#loot_ui_icon_callingcards_superheroes_02,7#hash_668a6c5c4bd2d824,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,812,812,#loot_ui_icon_callingcards_superheroes_03,7#hash_668a6d5c4bd2d9d7,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
@@ -832,6 +832,6 @@
 #background,831,831,#hash_68726b68845dcfdb,7#hash_43f58ec900544698,1,0,0,0,#default,#,#,#,#,#,#,#,#,u9?0,#
 #background,832,832,#hash_68726a68845dce28,7#hash_43f58fc90054484b,1,0,0,0,#default,#,#,#,#,#,#,#,#,u9?0,#
 #background,833,833,#hash_686efd68845adf1a,7#hash_43f90cc900575289,1,0,0,0,#default,#,#,#,#,#,#,#,#,u9?0,#
-#background,834,834,#hash_89e0e884bc4175a,7#hash_4f99bcb4b9950fd9,1,0,0,0,#global,#,#,#,#,#,#hash_89e0e884bc4175a,#,#,u9?0,#
-#background,835,835,#hash_1033bed995477163,7#hash_1205c092befa358e,1,0,0,0,#global,#,#,#,#,#,#hash_1033bed995477163,#,#,u9?0,#
-#background,836,836,#hash_54c5a98c8ab9f6b4,7#hash_3650b64360ea0fff,1,0,0,0,#global,#,#,#,#,#,#hash_54c5a98c8ab9f6b4,#,#,u9?0,#
+#background,834,834,#ui_icon_callingcards_zm_gauntlet_orange_bronze,7#hash_4f99bcb4b9950fd9,1,0,0,0,#global,#,#,#,#,#,#ui_icon_callingcards_zm_gauntlet_orange_bronze,#,#,u9?0,#
+#background,835,835,#ui_icon_callingcards_zm_gauntlet_orange_silver,7#hash_1205c092befa358e,1,0,0,0,#global,#,#,#,#,#,#ui_icon_callingcards_zm_gauntlet_orange_silver,#,#,u9?0,#
+#background,836,836,#ui_icon_callingcards_zm_gauntlet_orange_gold,7#hash_3650b64360ea0fff,1,0,0,0,#global,#,#,#,#,#,#ui_icon_callingcards_zm_gauntlet_orange_gold,#,#,u9?0,#

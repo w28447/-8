@@ -23,18 +23,18 @@
 #using scripts\zm_common\zm_vo;
 #using scripts\zm_common\zm_zonemgr;
 
-#namespace namespace_273ad667;
+#namespace zm_escape_weap_quest_spork;
 
-// Namespace namespace_273ad667/namespace_273ad667
+// Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
 // Params 0, eflags: 0x2
 // Checksum 0x7f6e9973, Offset: 0x220
 // Size: 0x44
 function autoexec __init__system__()
 {
-    system::register( #"hash_1f7228023b83d053", &__init__, &__main__, undefined );
+    system::register( #"zm_escape_weap_quest_spork", &__init__, &__main__, undefined );
 }
 
-// Namespace namespace_273ad667/namespace_273ad667
+// Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
 // Params 0
 // Checksum 0x6d71f371, Offset: 0x270
 // Size: 0x294
@@ -56,7 +56,7 @@ function __init__()
     callback::on_connect( &vtol_dig );
 }
 
-// Namespace namespace_273ad667/namespace_273ad667
+// Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
 // Params 0
 // Checksum 0xcee99620, Offset: 0x510
 // Size: 0x1d4
@@ -81,7 +81,7 @@ function __main__()
     level function_f519d04e();
 }
 
-// Namespace namespace_273ad667/namespace_273ad667
+// Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
 // Params 0
 // Checksum 0xfd42c3ba, Offset: 0x6f0
 // Size: 0xdc
@@ -96,7 +96,7 @@ function vtol_dig()
     self clientfield::set_to_player( "" + #"fill_blood", 1 );
 }
 
-// Namespace namespace_273ad667/namespace_273ad667
+// Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
 // Params 0
 // Checksum 0x826eba7, Offset: 0x7d8
 // Size: 0xb2
@@ -113,7 +113,7 @@ function function_537f413d()
     }
 }
 
-// Namespace namespace_273ad667/namespace_273ad667
+// Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
 // Params 1
 // Checksum 0x3a7107c5, Offset: 0x898
 // Size: 0x138
@@ -141,7 +141,7 @@ function function_3a563d3c( params )
     }
 }
 
-// Namespace namespace_273ad667/namespace_273ad667
+// Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
 // Params 1
 // Checksum 0x7db82db2, Offset: 0x9d8
 // Size: 0x220
@@ -173,7 +173,7 @@ function function_cd53088e( params )
     }
 }
 
-// Namespace namespace_273ad667/namespace_273ad667
+// Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
 // Params 0, eflags: 0x4
 // Checksum 0x51950e30, Offset: 0xc00
 // Size: 0xf4
@@ -194,7 +194,7 @@ function private function_5ec2f851()
     }
 }
 
-// Namespace namespace_273ad667/namespace_273ad667
+// Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
 // Params 1
 // Checksum 0x510024d7, Offset: 0xd00
 // Size: 0x18c
@@ -238,7 +238,7 @@ function function_85cfc2a3( e_player )
     }
 }
 
-// Namespace namespace_273ad667/namespace_273ad667
+// Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
 // Params 0
 // Checksum 0x22c4c74b, Offset: 0xe98
 // Size: 0x98
@@ -263,7 +263,7 @@ function function_7927b4f1()
     }
 }
 
-// Namespace namespace_273ad667/namespace_273ad667
+// Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
 // Params 1
 // Checksum 0x6e2bf000, Offset: 0xf38
 // Size: 0x1a2
@@ -292,7 +292,7 @@ function function_7127bd6c( var_8c79ac3f )
     }
 }
 
-// Namespace namespace_273ad667/namespace_273ad667
+// Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
 // Params 1
 // Checksum 0xc5bbfc5, Offset: 0x10e8
 // Size: 0x26, Type: bool
@@ -312,7 +312,7 @@ function function_3bc828f8( weapon_type )
     }
 }
 
-// Namespace namespace_273ad667/namespace_273ad667
+// Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
 // Params 1
 // Checksum 0x309c6474, Offset: 0x1198
 // Size: 0x7c, Type: bool
@@ -321,7 +321,7 @@ function function_34b43e30( e_player )
     return e_player hasweapon( getweapon( #"spoon_alcatraz" ) ) && !e_player flag::get( #"hash_6b33efdeedf241f" ) && e_player util::is_looking_at( self.origin );
 }
 
-// Namespace namespace_273ad667/namespace_273ad667
+// Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
 // Params 1
 // Checksum 0x25285653, Offset: 0x1220
 // Size: 0x4e, Type: bool
@@ -330,7 +330,7 @@ function function_c5c760a1( e_player )
     return e_player flag::get( #"hash_30ae3926b2d211db" ) && !e_player flag::get( #"hash_3ade5b9424a14f81" );
 }
 
-// Namespace namespace_273ad667/namespace_273ad667
+// Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
 // Params 0
 // Checksum 0xd6f4116, Offset: 0x1278
 // Size: 0xcc
@@ -350,7 +350,7 @@ function function_f519d04e()
     level function_48d7e846();
 }
 
-// Namespace namespace_273ad667/namespace_273ad667
+// Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
 // Params 0
 // Checksum 0x1e701d34, Offset: 0x1350
 // Size: 0x214
@@ -384,7 +384,7 @@ function function_834ba04a()
     self delete();
 }
 
-// Namespace namespace_273ad667/namespace_273ad667
+// Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
 // Params 0
 // Checksum 0x8f7fecbf, Offset: 0x1570
 // Size: 0x2a4
@@ -426,7 +426,7 @@ function function_48d7e846()
     level flag::set( #"hash_29dc018e9551ecf" );
 }
 
-// Namespace namespace_273ad667/namespace_273ad667
+// Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
 // Params 2
 // Checksum 0x5b3d6b0d, Offset: 0x1820
 // Size: 0x1e4, Type: bool
@@ -466,7 +466,7 @@ function function_adc74a0d( e_grenade, n_grenade_charge_power )
     return false;
 }
 
-// Namespace namespace_273ad667/namespace_273ad667
+// Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
 // Params 2
 // Checksum 0x7bf08d4b, Offset: 0x1a10
 // Size: 0xcc
@@ -481,7 +481,7 @@ function function_55a05382( mdl_tomahawk, mdl_spork )
     self clientfield::set_to_player( "" + #"hash_cc5b97a575d4d6d", 0 );
 }
 
-// Namespace namespace_273ad667/namespace_273ad667
+// Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
 // Params 1
 // Checksum 0x34bedd39, Offset: 0x1ae8
 // Size: 0x54, Type: bool
@@ -492,7 +492,7 @@ function function_14a795c2( e_player )
 
 /#
 
-    // Namespace namespace_273ad667/namespace_273ad667
+    // Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
     // Params 0
     // Checksum 0xb1e5db77, Offset: 0x1b48
     // Size: 0x7c, Type: dev
@@ -507,7 +507,7 @@ function function_14a795c2( e_player )
         }
     }
 
-    // Namespace namespace_273ad667/namespace_273ad667
+    // Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
     // Params 1
     // Checksum 0x7fc64fa, Offset: 0x1bd0
     // Size: 0x8a, Type: dev
@@ -524,7 +524,7 @@ function function_14a795c2( e_player )
         }
     }
 
-    // Namespace namespace_273ad667/namespace_273ad667
+    // Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
     // Params 0
     // Checksum 0xdbbee279, Offset: 0x1c68
     // Size: 0x168, Type: dev
@@ -549,7 +549,7 @@ function function_14a795c2( e_player )
         }
     }
 
-    // Namespace namespace_273ad667/namespace_273ad667
+    // Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
     // Params 0
     // Checksum 0xe05bd3be, Offset: 0x1dd8
     // Size: 0x240, Type: dev

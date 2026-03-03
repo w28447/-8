@@ -114,14 +114,14 @@ function function_114f128a( delaysec )
 // Params 14
 // Checksum 0x33096311, Offset: 0xa50
 // Size: 0x330
-function add_circle( var_3b9f4abf, mapwidth = 0, mapheight = 0, radius = 0, damage = 0, damageinterval = 0, waitsec = 0, scalesec = 0, var_227b1773 = 0, var_42682706 = 0, var_83c673f5 = 0, var_55ad5e4 = 0, var_c3bf31b = 0, var_18fa918d = 0 )
+function add_circle( maporigin, mapwidth = 0, mapheight = 0, radius = 0, damage = 0, damageinterval = 0, waitsec = 0, scalesec = 0, var_227b1773 = 0, var_42682706 = 0, var_83c673f5 = 0, var_55ad5e4 = 0, var_c3bf31b = 0, var_18fa918d = 0 )
 {
     assert( radius <= 150000, "<dev string:xa0>" + "<dev string:xbb>" + radius + "<dev string:xc7>" + 150000 );
     var_55ad5e4 = int( var_55ad5e4 * 1000 );
     var_c3bf31b = int( var_c3bf31b * 1000 );
     waitsec *= level.var_326f5774;
     scalesec *= level.deathcircletimescale;
-    circle = { #var_3b9f4abf:var_3b9f4abf, #mapwidth:mapwidth, #mapheight:mapheight, #origin:var_3b9f4abf, #radius:radius, #radiussq:radius * radius, #damage:damage, #damageinterval:damageinterval, #waitsec:waitsec, #scalesec:scalesec, #var_227b1773:var_227b1773, #var_42682706:var_42682706, #var_83c673f5:var_83c673f5, #var_55ad5e4:var_55ad5e4, #var_c3bf31b:var_c3bf31b, #var_18fa918d:var_18fa918d };
+    circle = { #maporigin:maporigin, #mapwidth:mapwidth, #mapheight:mapheight, #origin:maporigin, #radius:radius, #radiussq:radius * radius, #damage:damage, #damageinterval:damageinterval, #waitsec:waitsec, #scalesec:scalesec, #var_227b1773:var_227b1773, #var_42682706:var_42682706, #var_83c673f5:var_83c673f5, #var_55ad5e4:var_55ad5e4, #var_c3bf31b:var_c3bf31b, #var_18fa918d:var_18fa918d };
     level.deathcircles[ level.deathcircles.size ] = circle;
     level thread shuffle_circles();
     return circle;
@@ -183,7 +183,7 @@ function private shuffle_circles()
     
     foreach ( circle in level.deathcircles )
     {
-        circle.origin = circle.var_3b9f4abf;
+        circle.origin = circle.maporigin;
     }
     
     level flagsys::set( #"hash_43bac6444a9b65f3" );
@@ -337,7 +337,7 @@ function private function_a84cfbd0( var_b0b91d4, circle, nextcircle, oobtriggers
 // Size: 0x154
 function private function_3e47f08b( circle )
 {
-    if ( !isdefined( circle.var_3b9f4abf ) || !isdefined( circle.mapwidth ) || !isdefined( circle.mapheight ) )
+    if ( !isdefined( circle.maporigin ) || !isdefined( circle.mapwidth ) || !isdefined( circle.mapheight ) )
     {
         return undefined;
     }
@@ -357,7 +357,7 @@ function private function_3e47f08b( circle )
         yoffset = randomfloatrange( halfheight * -1, halfheight );
     }
     
-    origin = ( circle.var_3b9f4abf[ 0 ] + xoffset, circle.var_3b9f4abf[ 1 ] + yoffset, circle.var_3b9f4abf[ 2 ] );
+    origin = ( circle.maporigin[ 0 ] + xoffset, circle.maporigin[ 1 ] + yoffset, circle.maporigin[ 2 ] );
     return origin;
 }
 
@@ -1538,18 +1538,18 @@ function function_4dc40125()
         sphere( origin, var_e96493f7, color );
         circle( origin, circle.radius, color, 0, 1 );
         
-        if ( isdefined( circle.var_3b9f4abf ) && isdefined( circle.mapwidth ) && isdefined( circle.mapheight ) )
+        if ( isdefined( circle.maporigin ) && isdefined( circle.mapwidth ) && isdefined( circle.mapheight ) )
         {
-            var_3b9f4abf = ( circle.var_3b9f4abf[ 0 ], circle.var_3b9f4abf[ 1 ], origin[ 2 ] );
+            maporigin = ( circle.maporigin[ 0 ], circle.maporigin[ 1 ], origin[ 2 ] );
             var_e96493f7 = 20 * var_36b41a8;
             halfwidth = circle.mapwidth / 2;
             halfheight = circle.mapheight / 2;
-            var_b99d691b = var_3b9f4abf + ( halfwidth, halfheight, 0 );
-            var_91d25b4a = var_3b9f4abf + ( halfwidth, halfheight * -1, 0 );
-            var_3c4ec32 = var_3b9f4abf + ( halfwidth * -1, halfheight * -1, 0 );
-            var_55e2210d = var_3b9f4abf + ( halfwidth * -1, halfheight, 0 );
-            sphere( var_3b9f4abf, var_e96493f7, ( 1, 0, 1 ) );
-            print3d( var_3b9f4abf, "<dev string:x5c8>", ( 1, 1, 1 ), 1, var_36b41a8 );
+            var_b99d691b = maporigin + ( halfwidth, halfheight, 0 );
+            var_91d25b4a = maporigin + ( halfwidth, halfheight * -1, 0 );
+            var_3c4ec32 = maporigin + ( halfwidth * -1, halfheight * -1, 0 );
+            var_55e2210d = maporigin + ( halfwidth * -1, halfheight, 0 );
+            sphere( maporigin, var_e96493f7, ( 1, 0, 1 ) );
+            print3d( maporigin, "<dev string:x5c8>", ( 1, 1, 1 ), 1, var_36b41a8 );
             sphere( var_b99d691b, var_e96493f7, ( 1, 0, 1 ) );
             print3d( var_b99d691b, "<dev string:x5d7>", ( 1, 1, 1 ), 1, var_36b41a8 );
             sphere( var_91d25b4a, var_e96493f7, ( 1, 0, 1 ) );

@@ -1,8 +1,8 @@
 type,name
 techset,d#hash_13b5e1db9658f56c
 image,#killcamindicator
-streamkey,#hash_547d10f8e32d299e
-streamkey,#hash_5411794bd187429f
+streamkey,#zm_common_fj_stream
+streamkey,#zm_common_fj_loaded
 streamkey,#hash_3649201eedce3f0c
 streamkey,#hash_465cbfba15cbc979
 sound,#zm_common.fj

@@ -1576,11 +1576,11 @@ function function_70e963be( entry, localclientnum )
 // Size: 0xb0
 function function_3dc16db1( mode, index )
 {
-    foreach ( var_dea538a3 in level.var_e362b5d9 )
+    foreach ( frozen_moment in level.var_e362b5d9 )
     {
-        if ( var_dea538a3.mode == mode && var_dea538a3.role_index == index )
+        if ( frozen_moment.mode == mode && frozen_moment.role_index == index )
         {
-            return var_dea538a3.list_index;
+            return frozen_moment.list_index;
         }
     }
 }
@@ -1593,11 +1593,11 @@ function function_4a6953b8()
 {
     selectable = array::filter( level.var_e362b5d9, 0, &function_70e963be );
     
-    foreach ( var_dea538a3 in selectable )
+    foreach ( frozen_moment in selectable )
     {
-        if ( var_dea538a3.mode == 0 )
+        if ( frozen_moment.mode == 0 )
         {
-            return var_dea538a3.list_index;
+            return frozen_moment.list_index;
         }
     }
 }
@@ -1611,11 +1611,11 @@ function function_31a3348c( session_mode )
     selectable = array::filter( level.var_e362b5d9, 0, &function_70e963be );
     var_e362b5d9 = [];
     
-    foreach ( var_dea538a3 in selectable )
+    foreach ( frozen_moment in selectable )
     {
-        if ( var_dea538a3.mode == session_mode )
+        if ( frozen_moment.mode == session_mode )
         {
-            var_e362b5d9[ var_e362b5d9.size ] = var_dea538a3.list_index;
+            var_e362b5d9[ var_e362b5d9.size ] = frozen_moment.list_index;
         }
     }
     
@@ -1632,14 +1632,14 @@ function function_31a3348c( session_mode )
 function function_deed1dbf( localclientnum )
 {
     var_b4a66a1f = util::spawn_model( localclientnum, "tag_origin", ( 0, 0, 0 ), ( 0, 0, 0 ) );
-    var_b4a66a1f.targetname = "var_dea538a3_character";
-    level.var_dea538a3_character = character_customization::function_dd295310( var_b4a66a1f, localclientnum, 1 );
+    var_b4a66a1f.targetname = "frozen_moment_character";
+    level.frozen_moment_character = character_customization::function_dd295310( var_b4a66a1f, localclientnum, 1 );
     var_e7eccf53 = util::spawn_model( localclientnum, "tag_origin", ( 0, 0, 0 ), ( 0, 0, 0 ) );
-    var_e7eccf53.targetname = "cycle_var_dea538a3_char_current";
-    level.cycle_var_dea538a3_char_current = character_customization::function_dd295310( var_e7eccf53, localclientnum, 1 );
+    var_e7eccf53.targetname = "cycle_frozen_moment_char_current";
+    level.cycle_frozen_moment_char_current = character_customization::function_dd295310( var_e7eccf53, localclientnum, 1 );
     var_354d3ff2 = util::spawn_model( localclientnum, "tag_origin", ( 0, 0, 0 ), ( 0, 0, 0 ) );
-    var_354d3ff2.targetname = "cycle_var_dea538a3_char_next";
-    level.cycle_var_dea538a3_char_next = character_customization::function_dd295310( var_354d3ff2, localclientnum, 1 );
+    var_354d3ff2.targetname = "cycle_frozen_moment_char_next";
+    level.cycle_frozen_moment_char_next = character_customization::function_dd295310( var_354d3ff2, localclientnum, 1 );
     attempts = 0;
     limit = 20;
     
@@ -2363,7 +2363,7 @@ function function_4fc36b1a( localclientnum, xuid )
             if ( function_9bed6a71( localclientnum, 1 ) == xuid && isdefined( level.var_47863282 ) && xuid == level.var_47863282 && !( isdefined( level.aar_scene ) && level scene::is_playing( level.aar_scene ) ) )
             {
                 function_a71254a9( localclientnum, 0, undefined, 1 );
-                [[ level.cycle_var_dea538a3_char_current ]]->function_39a68bf2();
+                [[ level.cycle_frozen_moment_char_current ]]->function_39a68bf2();
                 stopmaincamxcam( localclientnum );
                 function_e56abdb( localclientnum, 1 );
             }
@@ -2406,7 +2406,7 @@ function function_ce0c92c1( localclientnum, var_dde5862c )
             {
                 level.var_37fcc91f = undefined;
                 
-                if ( [[ level.cycle_var_dea538a3_char_next ]]->function_ea4ac9f8() )
+                if ( [[ level.cycle_frozen_moment_char_next ]]->function_ea4ac9f8() )
                 {
                     level notify( #"hash_5661859119127749" );
                 }
@@ -2414,7 +2414,7 @@ function function_ce0c92c1( localclientnum, var_dde5862c )
                 {
                     level notify( #"hash_4cfb73b5657634d1" );
                     function_a71254a9( localclientnum, 0, undefined, 1 );
-                    [[ level.cycle_var_dea538a3_char_current ]]->function_39a68bf2();
+                    [[ level.cycle_frozen_moment_char_current ]]->function_39a68bf2();
                     stopmaincamxcam( localclientnum );
                     level.var_494e824d = 0;
                     function_6e9fbb54( localclientnum );
@@ -2426,7 +2426,7 @@ function function_ce0c92c1( localclientnum, var_dde5862c )
                 level.var_37fcc91f = undefined;
                 level.var_3cea0f38 = 0;
                 level notify( #"hash_1ac908ea1013c378" );
-                [[ level.cycle_var_dea538a3_char_next ]]->function_39a68bf2();
+                [[ level.cycle_frozen_moment_char_next ]]->function_39a68bf2();
                 function_6e9fbb54( localclientnum, function_9bed6a71( localclientnum, 1 ) );
             }
         }
@@ -2451,12 +2451,12 @@ function function_79b4e640( localclientnum )
         if ( isdefined( level.var_202758dc ) && isdefined( level.var_723bf922 ) )
         {
             function_a71254a9( localclientnum, 0, undefined, 1 );
-            var_2c72511b = [[ level.cycle_var_dea538a3_char_current ]]->get_character_index();
-            var_f5bfdfe7 = [[ level.cycle_var_dea538a3_char_next ]]->get_character_index();
-            temp = level.cycle_var_dea538a3_char_current;
-            level.cycle_var_dea538a3_char_current = level.cycle_var_dea538a3_char_next;
-            level.cycle_var_dea538a3_char_next = temp;
-            [[ level.cycle_var_dea538a3_char_next ]]->function_39a68bf2();
+            var_2c72511b = [[ level.cycle_frozen_moment_char_current ]]->get_character_index();
+            var_f5bfdfe7 = [[ level.cycle_frozen_moment_char_next ]]->get_character_index();
+            temp = level.cycle_frozen_moment_char_current;
+            level.cycle_frozen_moment_char_current = level.cycle_frozen_moment_char_next;
+            level.cycle_frozen_moment_char_next = temp;
+            [[ level.cycle_frozen_moment_char_next ]]->function_39a68bf2();
             stopmaincamxcam( localclientnum );
             level.var_47863282 = level.var_202758dc;
             level.var_3cea0f38 = 0;
@@ -2503,10 +2503,10 @@ function function_6e9fbb54( localclientnum, var_baeecec7 = undefined )
         var_53511779 = level.var_e362b5d9[ var_6d8e8e31 ].scene;
         forcestreambundle( var_53511779 );
         params = { #var_c76f3e47:1, #var_d8cb38a9:1, #var_8d3b5f69:1 };
-        [[ level.cycle_var_dea538a3_char_current ]]->function_15a8906a( level.var_4c6f850d[ level.var_47863282 ] );
-        [[ level.cycle_var_dea538a3_char_current ]]->update( params );
+        [[ level.cycle_frozen_moment_char_current ]]->function_15a8906a( level.var_4c6f850d[ level.var_47863282 ] );
+        [[ level.cycle_frozen_moment_char_current ]]->update( params );
         
-        while ( ![[ level.cycle_var_dea538a3_char_current ]]->function_ea4ac9f8() )
+        while ( ![[ level.cycle_frozen_moment_char_current ]]->function_ea4ac9f8() )
         {
             wait 0.1;
         }
@@ -2529,7 +2529,7 @@ function function_6e9fbb54( localclientnum, var_baeecec7 = undefined )
     {
         level.var_3cea0f38 = 1;
         
-        while ( ![[ level.cycle_var_dea538a3_char_current ]]->function_ea4ac9f8() )
+        while ( ![[ level.cycle_frozen_moment_char_current ]]->function_ea4ac9f8() )
         {
             wait 0.1;
         }
@@ -2583,8 +2583,8 @@ function function_6e9fbb54( localclientnum, var_baeecec7 = undefined )
             if ( isdefined( level.var_723bf922 ) )
             {
                 params = { #var_c76f3e47:1, #var_d8cb38a9:1, #var_8d3b5f69:1 };
-                [[ level.cycle_var_dea538a3_char_next ]]->function_15a8906a( level.var_4c6f850d[ level.var_202758dc ] );
-                [[ level.cycle_var_dea538a3_char_next ]]->update( params );
+                [[ level.cycle_frozen_moment_char_next ]]->function_15a8906a( level.var_4c6f850d[ level.var_202758dc ] );
+                [[ level.cycle_frozen_moment_char_next ]]->update( params );
             }
             
             return;
@@ -3138,11 +3138,11 @@ function pulse_controller_color()
 // Size: 0xa8
 function private function_70733b8c( session_mode, character_index )
 {
-    foreach ( var_dea538a3 in level.var_e362b5d9 )
+    foreach ( frozen_moment in level.var_e362b5d9 )
     {
-        if ( var_dea538a3.role_index == character_index && var_dea538a3.mode == session_mode )
+        if ( frozen_moment.role_index == character_index && frozen_moment.mode == session_mode )
         {
-            return var_dea538a3;
+            return frozen_moment;
         }
     }
 }
@@ -3201,11 +3201,11 @@ function function_a71254a9( localclientnum, play, player_data, var_1c5551d6 = 0,
                 }
             }
             
-            [[ level.var_dea538a3_character ]]->function_15a8906a( player_data );
+            [[ level.frozen_moment_character ]]->function_15a8906a( player_data );
             params = { #scene:var_53511779, #var_c76f3e47:1, #var_d8cb38a9:1, #var_8d3b5f69:1, #scene_shot:scene_shot };
-            [[ level.var_dea538a3_character ]]->update( params );
-            character_index = [[ level.var_dea538a3_character ]]->get_character_index();
-            character_mode = [[ level.var_dea538a3_character ]]->get_character_mode();
+            [[ level.frozen_moment_character ]]->update( params );
+            character_index = [[ level.frozen_moment_character ]]->get_character_index();
+            character_mode = [[ level.frozen_moment_character ]]->get_character_mode();
             var_6d8e8e31 = isdefined( function_3dc16db1( character_mode, character_index ) ) ? function_3dc16db1( character_mode, character_index ) : 0;
             level.var_8013e6bd = var_53511779;
             level.var_4e236556 = player_data;
@@ -3222,7 +3222,7 @@ function function_a71254a9( localclientnum, play, player_data, var_1c5551d6 = 0,
     
     if ( !play && isdefined( level.var_8013e6bd ) )
     {
-        [[ level.var_dea538a3_character ]]->function_39a68bf2();
+        [[ level.frozen_moment_character ]]->function_39a68bf2();
         fbc = getuimodel( getglobaluimodel(), "lobbyRoot.fullscreenBlackCount" );
         
         if ( var_1c5551d6 )
@@ -3248,8 +3248,8 @@ function function_e56abdb( localclientnum, var_d50f88e0 = 0 )
 {
     if ( isdefined( level.var_494e824d ) && level.var_494e824d )
     {
-        [[ level.cycle_var_dea538a3_char_current ]]->function_39a68bf2();
-        [[ level.cycle_var_dea538a3_char_next ]]->function_39a68bf2();
+        [[ level.cycle_frozen_moment_char_current ]]->function_39a68bf2();
+        [[ level.cycle_frozen_moment_char_next ]]->function_39a68bf2();
         fbc = getuimodel( getglobaluimodel(), "lobbyRoot.fullscreenBlackCount" );
         
         if ( var_d50f88e0 )
@@ -3979,11 +3979,11 @@ function function_c4db2740( localclientnum, prev_menu )
 // Params 4
 // Checksum 0x9219234a, Offset: 0xf0b8
 // Size: 0xd4
-function function_ebc650f4( localclientnum, entities, var_dea538a3, scene_shot )
+function function_ebc650f4( localclientnum, entities, frozen_moment, scene_shot )
 {
     if ( isdefined( level.var_494e824d ) && level.var_494e824d )
     {
-        if ( [[ level.cycle_var_dea538a3_char_next ]]->function_ea4ac9f8() )
+        if ( [[ level.cycle_frozen_moment_char_next ]]->function_ea4ac9f8() )
         {
             if ( !isdefined( level.var_37fcc91f ) )
             {

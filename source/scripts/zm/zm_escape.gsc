@@ -1,8 +1,8 @@
-#using script_22ebc4167e3bcd3f;
+#using scripts\zm\zm_escape_weap_quest_spoon.gsc;
 #using script_2ba3951675c7ee1c;
 #using script_36222395658446f5;
 #using script_46cea9e5d4ef9e21;
-#using script_61ef84ea1a82c001;
+#using scripts\zm\zm_escape_weap_quest_spork.gsc;
 #using script_668c4fbb94671fb4;
 #using scripts\core_common\ai\zombie_utility;
 #using scripts\core_common\array_shared;
@@ -113,7 +113,7 @@ function event_handler[level_init] main( eventstruct )
     clientfield::register( "toplayer", "" + #"player_pbg_bank", 1, 1, "int" );
     clientfield::register( "vehicle", "" + #"gondola_light", 1, 1, "int" );
     zm_escape_catwalk_event::init_clientfields();
-    namespace_9d58c1cd::init_clientfields();
+    zm_escape_weap_quest_spoon::init_clientfields();
     zm_escape_util::init_clientfields();
     namespace_1063645::init_clientfields();
     fast_travel_hellholes::init_clientfields();
@@ -186,7 +186,7 @@ function event_handler[level_init] main( eventstruct )
     level thread function_2141ca97();
     level thread function_8d0c655f();
     level thread function_11794ed8();
-    level thread namespace_9d58c1cd::main();
+    level thread zm_escape_weap_quest_spoon::main();
     level thread namespace_1063645::function_fb0bd6b9();
     level.var_6f6cc58 = &zm_escape_util::function_34b291c3;
     
@@ -1291,7 +1291,7 @@ function function_172ac1b5()
     {
         zm_devgui::zombie_devgui_open_sesame();
         level thread zm_escape_catwalk_event::function_e11ac4f5();
-        namespace_9d58c1cd::function_7101d54f();
+        zm_escape_weap_quest_spoon::function_7101d54f();
         var_ccc575d7 = getent( "<dev string:x3be>", "<dev string:x3ce>" );
         var_ccc575d7 notify( #"blast_attack" );
         level.var_af325495 = 1;

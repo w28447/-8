@@ -4514,7 +4514,7 @@ image,#i_mtl_p8_chi_pipe_cloth_2_m
 image,#i_mtl_p8_chi_pipe_cloth_2_n
 image,#i_mtl_t8_dirt_rocky_01_r
 image,d#i_c_t8_detail_metal_brushed_horiz_n
-image,#hash_244a8161eaf223a
+image,#i_mtl_p8_foliage_grass_blades_tall_med_proxy_specular
 image,d#i_wpn_t8_eqp_briefcase_bomb_bottom_s
 image,d#i_wpn_t8_eqp_briefcase_bomb_bottom_o
 image,d#i_wpn_t8_eqp_briefcase_bomb_bottom_n
@@ -4870,7 +4870,7 @@ image,d#i_veh_t8_mil_heli_light_optic_m
 image,d#i_veh_t8_mil_heli_light_optic_o
 image,d#i_veh_t8_mil_heli_light_optic_n
 image,#i_t7_cru_metal_railing_trim_black_03_n
-image,#hash_e683f42ceedb2ee
+image,#i_mtl_p8_kit_zod_mai_05_door_frame_set_metal_05_m
 image,#i_mtl_p8_usa_ventilation_duct_shaft_03_m
 image,#i_mtl_p8_usa_ventilation_duct_shaft_03_n
 image,#i_mtl_p8_usa_ventilation_duct_shaft_03_o
@@ -5245,8 +5245,8 @@ image,#i_c_t7_battery_body1_webgear_ir
 image,d#fxt8_debris_ember_mask
 image,#cookie_flicker06
 image,#hash_1956fbb0a9985efd
-image,#hash_19782cf28a3587f6
-image,#hash_197839f28a359e0d
+image,#i_mtl_p8_foliage_seaweed_clump_03_c
+image,#i_mtl_p8_foliage_seaweed_clump_03_n
 image,#i_p7_wes_trophy_taxidermy_bear_log_g
 image,#i_p7_wes_trophy_taxidermy_bear_log_c
 image,#i_p7_wes_trophy_taxidermy_bear_log_n
@@ -5352,7 +5352,7 @@ image,#i_mtl_p8_mal_power_core_main_center_g
 image,#i_mtl_p8_mal_power_core_main_center_m
 image,#i_mtl_p8_mal_power_core_main_center_n
 image,#i_mtl_p8_mal_power_core_main_center_s
-image,#hash_1caef05b229435f4
+image,#i_mtl_p8_foliage_grass_blades_tall_med_proxy_normal
 image,d#i_veh_t8_metal_painted_01_c
 image,#hash_1ce1b229f4fdf020
 image,d#i_t8_micro_moss_base_01_n
@@ -5490,8 +5490,8 @@ image,#i_c_t7_outrider_body3_gear1_g
 image,#i_c_t7_outrider_body3_gear1_c
 image,#i_c_t7_outrider_body3_gear1_o
 image,#i_c_t7_outrider_body3_gear1_n
-image,#hash_20c740f28df76bf2
-image,#hash_20c745f28df77471
+image,#i_mtl_p8_foliage_seaweed_clump_02_n
+image,#i_mtl_p8_foliage_seaweed_clump_02_c
 image,#hash_20cf00a8760f72b3
 image,#hash_20cf04a8760f797f
 image,#hash_20cf07a8760f7e98
@@ -5804,8 +5804,8 @@ image,#i_c_bc_femalesoldier_grenade_ao
 image,#i_mtl_p7_coral_aquarium_c
 image,#i_mtl_p7_coral_aquarium_n
 image,#hash_2a9473711816627d
-image,#hash_2aa28bf293e332a3
-image,#hash_2aa296f293e34554
+image,#i_mtl_p8_foliage_seaweed_clump_01_n
+image,#i_mtl_p8_foliage_seaweed_clump_01_c
 image,#hash_2aab35ccb6a09561
 image,#hash_2abfa51233c318ac
 image,#i_t7_sand_windswept_01_r
@@ -5852,7 +5852,7 @@ image,d#i_t7_micro_dusty_01_c
 image,#hash_2be955bc8c0ae66b
 image,#hash_2bfb943b5066c8ec
 image,#i_mtl_p8_col_signage_hazard_02_g
-image,#hash_2c0b3c004439319c
+image,#i_mtl_p8_zm_esc_cell_bed_metal_01_m
 image,#i_mtl_p7_debris_glass_shards_edge_n
 image,#i_mtl_p7_debris_glass_shards_edge_c
 image,#i_c_t7_firebreak_body2_vest_b_dng
@@ -6002,7 +6002,7 @@ image,#i_t8_concrete_painted_stains_01_n
 image,#i_t8_concrete_painted_stains_01_r
 image,#i_mtl_p7_chair_lab_01_metal_weathered_n
 image,#i_mtl_p7_chair_lab_01_metal_weathered_g
-image,#hash_30f9c8a129d5cc1b
+image,#i_mtl_p8_usa_snow_gear_first_aid_decal_03_c
 image,#i_mtl_p7_mp_flag_pole_o
 image,#i_mtl_p7_mp_flag_pole_c
 image,#i_mtl_p7_mp_flag_pole_g
@@ -6083,7 +6083,7 @@ image,d#$gray_32_one_channel
 image,#i_t7_metal_edge_wear_01_g
 image,#i_t7_metal_edge_wear_01_c
 image,#i_t7_metal_edge_wear_01_s
-image,#hash_332b6223c380aaba
+image,#i_mtl_p8_geo_flat_rock_01_rock_dark_c
 image,#hash_33626398778f294c
 image,#hash_33626f98778f3db0
 image,#hash_33627398778f447c
@@ -6566,8 +6566,8 @@ image,#i_c_t7_battery_body1_pants
 image,#i_mtl_p8_col_conveyor_unit_metal_white_n
 image,#i_mtl_p8_col_conveyor_unit_metal_white_m
 image,#i_mtl_p8_cas_c4_explosive_tape_n
-image,#hash_43dcfc3c9af8c514
-image,#hash_43dcff3c9af8ca2d
+image,#i_mtl_p8_wmd_truss_metal_roof_01_n
+image,#i_mtl_p8_wmd_truss_metal_roof_01_m
 image,#i_t7_metal_grate_trim_01_n
 image,#i_t7_metal_grate_trim_01_o
 image,#i_t7_metal_grate_trim_01_c
@@ -6636,7 +6636,7 @@ image,#hash_46354429c3e26336
 image,#hash_46354529c3e264e9
 image,#hash_46354c29c3e270ce
 image,#hash_46355029c3e2779a
-image,#hash_4636bb005318b629
+image,#i_mtl_p8_zm_esc_cell_bed_metal_02_m
 image,#hash_464610d59b7b69f1
 image,#i_t8_reveal_dust_01_r
 image,#hash_46536cd857c1564d
@@ -6799,8 +6799,8 @@ image,d#fxt8_decal_blood_fatal_03
 image,#i_t7_micro_wood_oak_unfinished_n
 image,#i_t7_micro_wood_oak_unfinished_c
 image,d#i_mtl_t8_micro_metal_rust_01_n
-image,#hash_4c33ed60b506b2fc
-image,#hash_4c33f260b506bb7b
+image,#i_mtl_p8_chi_antenna_roof_decal_01_n
+image,#i_mtl_p8_chi_antenna_roof_decal_01_c
 image,#i_mtl_p8_ice_large_rock_01_dark_c
 image,d#i_veh_t8_mil_heli_light_seat_ir
 image,#i_mtl_p8_chi_fan_roof_metal_01_n
@@ -6867,7 +6867,7 @@ image,#i_p7_light_wall_runner_led_n
 image,#i_p7_light_wall_runner_led_o
 image,#i_p7_light_wall_runner_led_s
 image,#i_p7_light_wall_runner_led_t
-image,#hash_4e383706a5b19961
+image,#i_mtl_p8_chi_antenna_roof_battery_m
 image,#i_mtl_p8_cos_train_gate_main_poles_n
 image,#i_mtl_p8_cos_train_gate_main_poles_m
 image,d#fxt_trail_laser
@@ -6985,7 +6985,7 @@ image,#i_mtl_p7_crate_lab_plastic_locking_s
 image,#hash_51ec225227589726
 image,#i_c_t7_techno_body1_neckwrap_ir
 image,d#i_c_char_gear_dark_gray_ir
-image,#hash_51fcfd70420b24a2
+image,#i_mtl_p8_zm_esc_lamp_01_dirt_m
 image,d#i_t7_glass_edge_trim_n
 image,#i_t7_glass_edge_trim_c
 image,d#i_t7_veh_decal_greeble_07_s
@@ -7186,7 +7186,7 @@ image,#i_mtl_p7_light_fixture_led_ceiling_01_g
 image,#i_mtl_p7_light_fixture_led_ceiling_01_n
 image,#i_mtl_p7_light_fixture_led_ceiling_01_o
 image,#hash_57f37304a43ce444
-image,#hash_57f86b82aa1d4904
+image,#i_mtl_p8_foliage_grass_blades_tall_med_proxy_distance
 image,#hash_58122cee56f521d8
 image,#hash_58122eee56f5253e
 image,#i_mtl_p8_ice_med_rock_02_02_dark_c
@@ -7660,7 +7660,7 @@ image,#hash_68407a2c554c2907
 image,#i_t8_dirt_road_tire_tracks_o
 image,#i_mtl_p8_usa_snow_gear_first_aid_cloth_01_m
 image,#i_mtl_p8_usa_snow_gear_first_aid_cloth_01_n
-image,#hash_684706ddb6d52e7e
+image,#i_mtl_p8_geo_flat_rock_01_rock_01_dark_c
 image,#hash_684ec56b757e0940
 image,#hash_684ee16b757e38d4
 image,#hash_684ee26b757e3a87
@@ -7826,7 +7826,7 @@ image,d#$gray_one_channel
 image,#hash_6ce973bd8f13e583
 image,#hash_6ce975bd8f13e8e9
 image,#i_mtl_p8_mal_evil_sliding_doors_glass_m
-image,#hash_6d1bfe58af1e9f2c
+image,#i_mtl_p8_ice_controlroom_wall_panel_circuit_01_decal_01_c
 image,#i_t8_metal_paint_scratched_01_rust_r
 image,#i_t8_metal_paint_scratched_01_rust_n
 image,#i_veh_t8_decal_dirt_01_c
@@ -7946,7 +7946,7 @@ image,#i_mtl_p8_geo_basalt_rock_pillar_rough_blend_g
 image,#i_mtl_p8_ice_med_rock_02_04_dark_c
 image,d#i_t7_veh_decal_panelcut_01_n
 image,d#i_t7_veh_decal_panelcut_01_r
-image,#hash_7172880c6e3ec4b9
+image,#i_mtl_p8_geo_flat_rock_01_rock_02_dark_c
 image,d#i_t7_micro_metal_bare_scuffed_01_n
 image,d#i_t7_micro_metal_bare_scuffed_01_g
 image,d#i_t7_micro_metal_bare_scuffed_01_c
@@ -7992,7 +7992,7 @@ image,#i_mtl_p8_cos_console_control_lrg_a_plastic_button_yellow_m
 image,#i_mtl_p8_cos_console_control_lrg_a_plastic_button_yellow_n
 image,#i_mtl_p8_industrial_scissor_lift_nail_m
 image,d#i_t8_metal_bare_steel_worn_01_512_n
-image,#hash_72c619b398467c71
+image,#i_mtl_p8_zm_esc_lab_monitor_main_n
 image,#i_t7_metal_panel_safehouse_moblie_03_n
 image,d#i_mtl_p7_cai_mobile_shops_civ_01_metal_decal_01_c
 image,#i_t8_decal_graphics_signage_ice_beyond_point_01_c
@@ -8005,8 +8005,8 @@ image,#i_c_t7_techno_gear_7_c
 image,d#i_t7_micro_metal_grunge_scratch_fine_01_s
 image,d#i_t7_micro_metal_grunge_scratch_fine_01_g
 image,d#i_t7_micro_metal_grunge_scratch_fine_01_n
-image,#hash_7330c1418817c5d9
-image,#hash_7330ca418817d524
+image,#i_mtl_p8_col_coat_lab_hanging_cloth_decal_n
+image,#i_mtl_p8_col_coat_lab_hanging_cloth_decal_a
 image,#i_t8_decal_tech_detail_high_tech_45_c
 image,#i_t8_decal_tech_detail_high_tech_45_o
 image,#i_t8_decal_tech_detail_high_tech_45_n
@@ -8032,7 +8032,7 @@ image,#i_c_t7_battery_body1_collar1_n
 image,#i_c_t7_battery_body1_collar1_o
 image,#i_c_t7_battery_body1_collar1_c
 image,#i_c_t7_battery_body1_collar1_g
-image,#hash_7460b053ea441666
+image,#i_mtl_p8_foliage_grass_blades_tall_med_proxy_albedo
 image,#hash_746df04267c7e934
 image,#i_c_t7_blockout_battery_body1_beltwidget_c
 image,#i_c_t7_blockout_battery_body1_beltwidget_g
@@ -8225,9 +8225,9 @@ image,#i_c_t7_battery_hairshell1_c
 image,#i_mtl_p8_box_cardboard_c
 image,#i_veh_t8_glass_pattern_02_n
 image,#i_mtl_p8_wz_supply_stash_decal_label_c
-image,#hash_7b06a8a04ab90f41
+image,#i_mtl_p8_zm_esc_infirmary_bathtub_dirt2_r
 image,d#i_c_t8_detail_leather_wallet_n
-image,#hash_7b25a1cbb282c9e7
+image,#i_mtl_p7_cai_table_vendor_wood_cornermetal_g
 image,d#i_wpn_t8_eqp_briefcase_bomb_foam_detail_g
 image,d#i_wpn_t8_eqp_briefcase_bomb_foam_detail_n
 image,d#i_wpn_t8_eqp_briefcase_bomb_foam_detail_s
@@ -8292,7 +8292,7 @@ image,#zm_vinylsiding_yellow_n
 image,d#i_mtl_p8_wz_ep_ball_soccer_n
 image,d#i_mtl_p8_wz_ep_ball_soccer_c
 image,d#i_mtl_p8_wz_ep_ball_soccer_g
-image,#hash_7cab2d1f21a2bb94
+image,#i_mtl_p8_foliage_grass_blades_tall_med_proxy_depth
 image,#i_c_t7_battery_body1_webgear_s
 image,#i_c_t7_battery_body1_webgear_o
 image,#i_c_t7_battery_body1_webgear_n
@@ -8354,8 +8354,8 @@ image,#i_c_t7_battery_left_arm_wrap_viewarm_g
 image,#i_c_t7_battery_left_arm_wrap_viewarm_n
 image,#i_mtl_p8_mal_control_room_console_01_o
 image,#hash_7f5540cc9e133f12
-image,#hash_7f7bdb1416389535
-image,#hash_7f7bde1416389a4e
+image,#i_mtl_p8_wz_rock_formation_sharp_01_n
+image,#i_mtl_p8_wz_rock_formation_sharp_01_c
 image,#i_mtl_p8_usa_snow_gear_backpack_decal_02_n
 image,#i_mtl_p8_usa_snow_gear_backpack_decal_02_c
 image,d#i_t8_decal_tech_detail_high_tech_66_c

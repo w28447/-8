@@ -31,7 +31,7 @@ function autoexec __init__system__()
 // Size: 0x84
 function __init__()
 {
-    zm_powerups::register_powerup( "small_ammo", &function_81558cdf );
+    zm_powerups::register_powerup( "small_ammo", &grab_small_ammo );
     
     if ( zm_powerups::function_cc33adc8() )
     {
@@ -43,7 +43,7 @@ function __init__()
 // Params 1
 // Checksum 0x9006c652, Offset: 0x1f8
 // Size: 0x6c
-function function_81558cdf( player )
+function grab_small_ammo( player )
 {
     if ( zm_powerups::function_cfd04802( #"small_ammo" ) )
     {
@@ -51,7 +51,7 @@ function function_81558cdf( player )
         return;
     }
     
-    level thread function_8be02874( self, player );
+    level thread small_ammo_powerup( self, player );
 }
 
 // Namespace zm_powerup_small_ammo/zm_powerup_small_ammo
@@ -76,7 +76,7 @@ function function_d7d24283( e_powerup, player )
 // Params 2
 // Checksum 0xc04a1e8f, Offset: 0x2f0
 // Size: 0x12c
-function function_8be02874( drop_item, player )
+function small_ammo_powerup( drop_item, player )
 {
     players = getplayers( player.team );
     
@@ -100,7 +100,7 @@ function function_8be02874( drop_item, player )
         function_ae7afb91( player );
     }
     
-    level thread function_71bf1101( drop_item, player.team );
+    level thread small_ammo_on_hud( drop_item, player.team );
 }
 
 // Namespace zm_powerup_small_ammo/zm_powerup_small_ammo
@@ -147,7 +147,7 @@ function function_ae7afb91( player )
 // Params 2
 // Checksum 0xaf2e4378, Offset: 0x610
 // Size: 0x5c
-function function_71bf1101( drop_item, player_team )
+function small_ammo_on_hud( drop_item, player_team )
 {
     players = getplayers( player_team );
     players[ 0 ] playsoundtoteam( "zmb_full_ammo", player_team );

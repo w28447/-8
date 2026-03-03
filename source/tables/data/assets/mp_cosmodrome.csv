@@ -8000,7 +8000,7 @@ image,#i_mtl_p7_slu_foliage_dandelion_flowers_proxy_specular
 image,#i_mtl_p8_wmd_box_electrical_metal_05_m
 image,#hash_56165fbd62e840
 image,#hash_56235fbd62fe57
-image,#hash_6573c03b39043e
+image,#i_mtl_p8_wz_foliage_bush_coyote_02_dry_proxy_normal
 image,#hash_65b8b4c20e3480
 image,d#i_mtl_p7_wall_mobile_dep_decal_details_01_normal_m
 image,#i_mtl_p8_wmd_box_electric_set_06_part_04_n
@@ -8309,8 +8309,8 @@ image,#i_t8_metal_corrugated_wide_01_g
 image,#i_t8_metal_corrugated_wide_01_o
 image,#i_t8_metal_corrugated_wide_01_n
 image,#i_t8_metal_corrugated_wide_01_s
-image,d#hash_6a40a4ae9e5bed8
-image,d#hash_6a40d4ae9e5c3f1
+image,d#i_mtl_p8_zm_esc_gondola_decal_line_n
+image,d#i_mtl_p8_zm_esc_gondola_decal_line_m
 image,#i_mtl_p8_satellite_dish_pillar_n
 image,#i_mtl_p8_satellite_dish_pillar_m
 image,#i_mtl_p8_debris_asphalt_chunks_md_1_and_2_n
@@ -8890,7 +8890,7 @@ image,#hash_11b0cf3b4a85edc3
 image,#hash_11b0d03b4a85ef76
 image,#hash_11b0dd3b4a86058d
 image,#hash_11b8627f75d9e517
-image,#hash_11cf30c7e3376994
+image,#i_mtl_p8_zm_zod_gauge_panel_engine_room_decal_08_c
 image,#i_mtl_p8_mphd_rollup_door_decal_chain_01_s
 image,#i_mtl_p8_mphd_rollup_door_decal_chain_01_c
 image,#i_mtl_p8_mphd_rollup_door_decal_chain_01_g
@@ -9055,8 +9055,8 @@ image,#i_p8_usa_water_generator_tank_gauge_c
 image,#hash_147975ab2fc217a2
 image,#i_mtl_p8_usa_electric_box_ext_roof_01_decal_details_n
 image,#i_mtl_p8_usa_electric_box_ext_roof_01_decal_details_c
-image,#hash_148965e5e2e3d2dc
-image,#hash_148968e5e2e3d7f5
+image,#i_mtl_p8_zm_man_music_instrument_drum_metal_01_n
+image,#i_mtl_p8_zm_man_music_instrument_drum_metal_01_m
 image,#i_mtl_p8_cos_nitrogen_cart_metal_m
 image,#i_mtl_p8_cos_nitrogen_cart_metal_n
 image,#i_t8_zm_esc_micro_heavy_rust_01_c
@@ -9067,7 +9067,7 @@ image,#i_mtl_p7_pipe_metal_hp_12_support_m
 image,#i_mtl_p7_pipe_metal_hp_12_support_n
 image,#i_mtl_p8_col_sewer_grate_metal_set_weld_a
 image,#i_p8_wz_skt_duct_rect_sml_screw_c
-image,#hash_14c14341908a71ec
+image,#i_mtl_p8_zm_zod_pump_engine_room_metal_rust_03_c
 image,#i_mtl_p8_cos_missile_launcher_vista_rocket_decal_03_c
 image,#i_mtl_p8_cos_cooling_unit_decal_details_c
 image,#i_mtl_p7_zm_asc_rocket_blast_set_decal_label_c
@@ -9110,9 +9110,9 @@ image,#i_rmtl_p8_portable_radio_bluetooth_metal_decal_screw_n
 image,#hash_158eb4f7ea1b5741
 image,#i_mtl_veh_t8_vintage_gaz66_troops_body_wood_m
 image,#i_mtl_veh_t8_vintage_gaz66_troops_body_wood_n
-image,#hash_1598142568c0ed76
-image,#hash_1598152568c0ef29
-image,#hash_1598212568c1038d
+image,#i_mtl_p8_wmd_door_frame_decal_01_n
+image,#i_mtl_p8_wmd_door_frame_decal_01_o
+image,#i_mtl_p8_wmd_door_frame_decal_01_c
 image,#i_mtl_p7_tape_masking_black_s
 image,#i_mtl_p7_tape_masking_black_g
 image,#i_mtl_p7_tape_masking_black_c
@@ -9228,7 +9228,7 @@ image,#i_mtl_p8_ibeam_01_straight_01_c
 image,d#i_mtl_p7_zm_asc_console_desk_leather_g
 image,#i_mtl_p8_usa_vent_horizontal_01_proxy_depth
 image,#i_mtl_p8_cos_dest_electrical_boxes_metal_c
-image,#hash_18366e1b07fc3c34
+image,#i_mtl_p8_wz_foliage_bush_coyote_02_dry_proxy_albedo
 image,#i_t8_micro_stone_01_r
 image,d#i_t8_micro_stone_01_g
 image,#i_mtl_p8_cos_numberboard_dirt01_c
@@ -9292,8 +9292,8 @@ image,d#i_t7_micro_wood_oak_32x32_unfinished_g
 image,d#i_t7_micro_wood_oak_32x32_unfinished_n
 image,#i_mtl_p8_cos_rocket_cone_rust_metal_dirty_02_c
 image,d#fxt8_debris_ember_mask
-image,#hash_1937c33dd0cef0f3
-image,#hash_1937c43dd0cef2a6
+image,#i_mtl_p8_zm_zod_gauge_panel_engine_room_metal_a_m
+image,#i_mtl_p8_zm_zod_gauge_panel_engine_room_metal_a_n
 image,#hash_19446e475d4dc6c0
 image,#i_t7_out_decal_grunge_dirt_r
 image,d#i_mtl_p7_mou_light_pole_bolt_n
@@ -9640,7 +9640,7 @@ image,#i_c_t7_outrider_body3_gear1_c
 image,#i_c_t7_outrider_body3_gear1_o
 image,#i_c_t7_outrider_body3_gear1_n
 image,#hash_20c30ed643d81491
-image,#hash_20c6bef35e44dde0
+image,#i_mtl_p8_zm_zod_bed_bunk_third_class_berths_decal_line_01_n
 image,#i_t7_glass_dirty_green_c
 image,#i_c_t7_techno_body1_arm_rt_c_c
 image,#i_c_t7_techno_body1_arm_rt_c_g
@@ -9818,8 +9818,8 @@ image,#i_mtl_p8_cos_meter_electric_02_base_03_m
 image,#i_p8_usa_generator_metal_tank_c
 image,#i_p8_usa_generator_metal_tank_g
 image,#i_p8_usa_generator_metal_tank_n
-image,#hash_23f317f657571cb5
-image,#hash_23f31af6575721ce
+image,#i_mtl_p8_wmd_door_frame_single_decal_rust_01_c
+image,#i_mtl_p8_wmd_door_frame_single_decal_rust_01_n
 image,#i_c_t7_battery_20_ir
 image,d#i_c_hro_player_cyberarm_viewarm_g
 image,d#i_c_hro_player_cyberarm_viewarm_o
@@ -9848,8 +9848,8 @@ image,#i_t7_dlc1_metal_trim_ibeam_02_m
 image,#i_t7_dlc1_metal_trim_ibeam_02_n
 image,#hash_2495d47f80f9448d
 image,#i_mtl_veh_mphd_uaz_dials_c
-image,#hash_24a04bdabc7f658a
-image,#hash_24a05cdabc7f826d
+image,#i_mtl_p8_wmd_door_frame_single_dirt_01_c
+image,#i_mtl_p8_wmd_door_frame_single_dirt_01_r
 image,#i_mtl_p8_cos_blast_deflector_lift_tilingmetal_m
 image,#i_mtl_p8_mphd_rollup_door_metal_01_m
 image,#i_mtl_p8_mphd_rollup_door_metal_01_n
@@ -9870,7 +9870,7 @@ image,d#i_veh_t8_metal_bare_scuffed_02_g
 image,#i_p7_foliage_tree_heath_leaves_n
 image,#i_p7_foliage_tree_heath_leaves_c
 image,#i_p7_foliage_tree_heath_leaves_t
-image,#hash_254209d70822009f
+image,#i_mtl_p7_slu_foliage_dandelion_weed_proxy_distance
 image,#i_t7_micro_metal_steel_cable_n
 image,d#fxt8_spark_rndhit_hdr
 image,#i_t8_micro_metal_patina_01_c
@@ -10109,8 +10109,8 @@ image,d#i_t8_metal_cable_01_n
 image,d#i_t8_metal_cable_01_o
 image,#i_veh_t8_decal_gauge_36_e
 image,#i_c_bc_femalesoldier_grenade_ao
-image,#hash_2a7d0a3f622a7858
-image,#hash_2a7d0d3f622a7d71
+image,#i_mtl_p8_zm_zod_water_pump_steel_metal_001_m
+image,#i_mtl_p8_zm_zod_water_pump_steel_metal_001_n
 image,#hash_2a7f53f90fef1113
 image,#hash_2a7f54f90fef12c6
 image,#hash_2a8145ce7514c977
@@ -10119,12 +10119,12 @@ image,#i_mtl_p8_zm_man_ornate_wood_wall_grunge_01_c
 image,#i_mtl_p8_cos_launch_poster_soldier_c
 image,#i_mtl_p8_cos_lightbox_metal_03_n
 image,#i_mtl_p8_cos_lightbox_metal_03_m
-image,#hash_2aa2d4c7560c6d97
+image,#i_mtl_p8_zm_zod_electric_switchboard_glass_c
 image,#i_mtl_p8_wmd_signal_train_01_m
 image,#i_mtl_p8_wmd_signal_train_01_n
 image,#i_mtl_p8_planter_concrete_lrg_concrete_01_c
 image,#i_mtl_p8_cos_rocket_catwalk_flap_burn_c
-image,#hash_2aadfe5b65eea149
+image,#i_mtl_p8_zm_zod_crafting_table_tool_pot_decal_rust_01_c
 image,#i_c_gen_eye_battery_c
 image,#i_t8_metal_grate_trim_01_s
 image,#i_t8_metal_grate_trim_01_o
@@ -10200,8 +10200,8 @@ image,#i_t8_moss_round_03_g
 image,#i_t8_moss_round_03_c
 image,#i_mtl_p7_debris_glass_shards_edge_n
 image,#i_mtl_p7_debris_glass_shards_edge_c
-image,#hash_2c1b25f65bd0e73f
-image,#hash_2c1b28f65bd0ec58
+image,#i_mtl_p8_wmd_door_frame_single_decal_rust_02_n
+image,#i_mtl_p8_wmd_door_frame_single_decal_rust_02_c
 image,#i_mtl_p8_spray_paint_can_camo_dirt_c
 image,d#fxt8_smk_sm_thick_bulb_anim
 image,#i_mtl_p8_cos_monument_russian_street_decal_01_grunge_c
@@ -10242,7 +10242,7 @@ image,#hash_2d322ef36f60a930
 image,#i_mtl_p8_col_rock_smooth_set_01_lrg_02_n
 image,#i_mtl_p8_col_rock_smooth_set_01_lrg_02_o
 image,#i_mtl_p8_col_rock_smooth_set_01_lrg_02_c
-image,#hash_2d4b4f7b6cc8ccbf
+image,#i_mtl_p7_zm_asc_floor_gantry_metal_01_m
 image,#i_mtl_p7_zm_asc_floor_gantry_metal_01_n
 image,#i_mtl_p8_cos_debris_rocket_med_02_metal_grey1_m
 image,#i_mtl_p8_cos_debris_rocket_med_02_metal_grey1_n
@@ -10337,7 +10337,7 @@ image,#i_t7_rock_barnacles_cluster_01_blend_n
 image,#i_mtl_p7_slu_plywood_old_01_m
 image,#i_mtl_p7_slu_plywood_old_01_n
 image,#i_mtl_p7_wire_spool_cables_n
-image,#hash_2f0e45a1db9e0ea3
+image,#i_mtl_p8_spa_heater_patio_nail_m
 image,#i_p8_wz_foliage_wild_grass_01_r
 image,d#fxt8_light_incandescent_hot
 image,#i_veh_t7_mphd_hind_decal_tail_caution_rus_c
@@ -10442,8 +10442,8 @@ image,#i_t8_metal_painted_lrg_white_n
 image,#i_t8_metal_painted_lrg_white_c
 image,#i_t8_metal_painted_lrg_white_g
 image,#i_t7_micro_wood_plank_03_g
-image,#hash_318cf6b7f459609c
-image,#hash_318cfbb7f459691b
+image,#i_mtl_p8_metal_tank_water_rust_04_c
+image,#i_mtl_p8_metal_tank_water_rust_04_n
 image,#i_t7_detail_rust_01
 image,#i_t8_ceramic_panels_2x1_01_n
 image,#i_t8_ceramic_panels_2x1_01_g
@@ -10590,8 +10590,8 @@ image,d#i_wpn_t8_eqp_briefcase_bomb_computer_decals_s
 image,d#i_wpn_t8_eqp_briefcase_bomb_computer_decals_c
 image,d#i_wpn_t8_eqp_briefcase_bomb_computer_decals_g
 image,d#fxt8_water_splash_mask
-image,#hash_340543a24e35ec74
-image,#hash_340546a24e35f18d
+image,#i_mtl_p8_zm_zod_water_pump_steel_metal_m
+image,#i_mtl_p8_zm_zod_water_pump_steel_metal_n
 image,#i_mtl_p8_cos_rocket_stripe_decal_01_m
 image,#i_mtl_p8_cos_rocket_stripe_decal_01_c
 image,#i_t7_decal_damage_concrete_cracks_01_n
@@ -10645,7 +10645,7 @@ image,#hash_352616773839e5d2
 image,#hash_35261b773839ee51
 image,#hash_35261f773839f51d
 image,#hash_35262b77383a0981
-image,#hash_35336df0bc65c148
+image,#i_mtl_p8_zm_vapor_altar_ra_metal_decal_n
 image,d#i_veh_t7_detail_noise_02
 image,d#i_veh_t7_detail_noise_01
 image,#i_t7_metal_trim_flashing_o
@@ -10758,7 +10758,7 @@ image,#hash_37729722e3bf4ae8
 image,#hash_37729822e3bf4c9b
 image,#hash_3772c2350a49552e
 image,d#i_veh_t8_glass_pattern_09_n
-image,#hash_377db5dac79eb768
+image,#i_mtl_p8_wmd_door_frame_single_dirt_03_c
 image,#i_mtl_p8_cos_pole_telephone_metal_m
 image,#i_mtl_p8_cos_pole_telephone_metal_n
 image,d#$occlusion_black
@@ -11072,8 +11072,8 @@ image,#i_t8_zm_esc_ground_plate_metal_01_o
 image,#i_t8_zm_esc_ground_plate_metal_01_n
 image,#i_t8_zm_esc_ground_plate_metal_01_g
 image,#i_t8_zm_esc_ground_plate_metal_01_c
-image,#hash_3d88d4814c9ef700
-image,#hash_3d88d7814c9efc19
+image,#i_mtl_p8_wmd_door_frame_single_normal_m
+image,#i_mtl_p8_wmd_door_frame_single_normal_n
 image,#i_t8_geo_dirt_rocky_05_c
 image,#i_t8_geo_dirt_rocky_05_n
 image,#hash_3d90f23794bac860
@@ -11101,7 +11101,7 @@ image,d#i_t7_metal_worn_gold_g
 image,#i_t7_metal_worn_gold_s
 image,#i_mtl_p8_kit_ice_gen_01_roof_bottom_set_03_m
 image,d#black_color
-image,#hash_3df2bddacaa6e340
+image,#i_mtl_p8_wmd_door_frame_single_dirt_02_r
 image,#hash_3e0a2ff981804861
 image,#hash_3e0a33f981804f2d
 image,d#fxt8_dust_mote
@@ -11201,7 +11201,7 @@ image,#i_mtl_p8_usa_wall_coat_rack_section_c
 image,#hash_3f9d7263fdf8047a
 image,#i_mtl_p8_cos_cargo_palette_canvas_tarp_metal_01_n
 image,#i_mtl_p8_cos_cargo_palette_canvas_tarp_metal_01_m
-image,#hash_3fbe5c8bc02b09b1
+image,#i_mtl_p8_zm_zod_electric_switchboard_gauges_c
 image,#i_t8_decal_graphics_numbers_comsat_3_reveal_white_r
 image,#i_mtl_p8_pharmaceutical_tank_drawbench03_n
 image,d#$white_ao
@@ -11226,8 +11226,8 @@ image,#i_mtl_p8_nt4_soviet_teleprinter_text_m
 image,#hash_40763a74fc5d9179
 image,#i_mtl_p7_slu_antenna_set_metal02_m
 image,#i_mtl_p7_slu_antenna_set_metal02_n
-image,#hash_407ea7f978191770
-image,#hash_407eb4f978192d87
+image,#i_mtl_p8_cos_dest_electrical_boxes_scratch_c
+image,#i_mtl_p8_cos_dest_electrical_boxes_scratch_n
 image,#i_mtl_p8_satellite_dish_lower_n
 image,#i_mtl_p8_satellite_dish_lower_m
 image,#i_mtl_p8_zm_esc_box_electric_main_n
@@ -11267,7 +11267,7 @@ image,d#i_t8_metal_panel_trim_01b_n
 image,d#i_t8_metal_panel_trim_01b_o
 image,#i_mtl_p8_wz_supply_stash_decal_health_patch_c
 image,#hash_4144c7800dd096ae
-image,#hash_414948d50b463ae9
+image,#i_mtl_p8_zm_man_music_instrument_drum_dirt_01_c
 image,#i_mtl_p8_sta_roof_ac_unit_nut_n
 image,#hash_41652dd7eaad1905
 image,#i_t7_decal_grunge_stain_adobe_bottom_01_c
@@ -11310,10 +11310,10 @@ image,#hash_421b03537cfad9b0
 image,#hash_421b06537cfadec9
 image,#i_c_nrc_assault_3_pouch_4_c
 image,#i_mtl_t7_decal_grunge_rust_04a_c
-image,#hash_4235517f3cbbed8c
-image,#hash_4235557f3cbbf458
-image,#hash_4235567f3cbbf60b
-image,#hash_4235577f3cbbf7be
+image,#i_mtl_p8_wmd_door_frame_decal_line_c
+image,#i_mtl_p8_wmd_door_frame_decal_line_o
+image,#i_mtl_p8_wmd_door_frame_decal_line_n
+image,#i_mtl_p8_wmd_door_frame_decal_line_m
 image,#i_mtl_veh_mphd_uaz_int_chair_m
 image,#i_mtl_veh_mphd_uaz_int_chair_n
 image,#i_mtl_veh_mphd_uaz_int_chair_o
@@ -11690,7 +11690,7 @@ image,#hash_4a668a4100d623fa
 image,#i_mtl_p8_cos_satellite_dish_vista_metal_a_n
 image,#i_mtl_p8_cos_cooling_unit_decal_line_02_n
 image,#i_c_gen_african_insidemouth_teeth_c
-image,#hash_4a85623615142abc
+image,#i_mtl_p8_pharmaceutical_tank_drawbench02_n
 image,#i_c_t7_techno_body1_baremetal_ir
 image,#i_p8_usa_vent_horizontal_01_metal_01_o
 image,#i_p8_usa_vent_horizontal_01_metal_01_m
@@ -11737,7 +11737,7 @@ image,#hash_4b758f1451fb254b
 image,#i_p8_zm_off_office_papers_03_c
 image,#i_p8_zm_off_office_papers_03_n
 image,#i_t8_micro_stone_granite_g
-image,#hash_4b98c051124d3b84
+image,#i_mtl_p8_wz_foliage_bush_coyote_02_dry_proxy_specular
 image,#hash_4ba5a1b76f211292
 image,#hash_4ba5b2b76f212f75
 image,#i_t8_decal_damage_asphalt_cracks_01_n
@@ -11841,7 +11841,7 @@ image,#hash_4dae8421e236c52f
 image,#hash_4dae8521e236c6e2
 image,#i_mtl_p8_cos_industrial_machinery_panel_decal_11_n
 image,#i_mtl_p8_cos_industrial_machinery_panel_decal_11_c
-image,#hash_4db56037f98df92e
+image,#i_mtl_p8_cos_console_sml_base_g
 image,#i_t7_decal_damage_burn_impact_02_n
 image,#fx_decal_burnt_paper_c
 image,#i_mtl_p8_door_metal_industrial_03_m
@@ -12000,7 +12000,7 @@ image,d#i_t7_decal_grunge_algae_wet_r
 image,#hash_50c2aab98f60dfd5
 image,#hash_50c2adb98f60e4ee
 image,d#$occlusion_50
-image,#hash_50d000dad5c5f2d9
+image,#i_mtl_p8_wmd_door_frame_single_dirt_04_c
 image,#hash_50db25062d951ccd
 image,#i_mtl_p8_cos_shelf_container_parts_02_s
 image,#i_mtl_p8_cos_shelf_container_parts_02_n
@@ -12235,7 +12235,7 @@ image,#i_t7_rubber_roof_granular_n
 image,#i_mtl_p8_col_light_floodlight_exterior_m
 image,#i_mtl_p8_col_light_floodlight_exterior_n
 image,#i_p8_nt4_wall_clock_n
-image,#hash_551b9ffc91dc1382
+image,#i_mtl_p8_wz_bullet_train_seat_detail_keyhole_n
 image,#i_c_t7_warrior_body1_lights_ir
 image,#i_veh_t8_soviet_civ_sedan_midsize_interior_03_o
 image,#i_veh_t8_soviet_civ_sedan_midsize_interior_03_n
@@ -12268,7 +12268,7 @@ image,d#i_t8_micro_metal_painted_rough_01_g
 image,#i_mtl_veh_mphd_hind_decal_c
 image,#i_mtl_p8_pallet_rack_set_decal_04_c
 image,#hash_5585e67a73a9e090
-image,d#hash_559392b809245db0
+image,d#i_mtl_p8_metal_tank_water_rust_08_c
 image,d#i_mtl_p8_metal_tank_water_rust_08_n
 image,#i_mtl_veh_t8_vintage_gaz66_oilcan_baffle_oilbox_n
 image,#i_mtl_veh_t8_vintage_gaz66_oilcan_baffle_oilbox_o
@@ -12361,7 +12361,7 @@ image,#i_mtl_p8_cos_pipes_modular_connector_decal_rust_02_n
 image,#i_mtl_p8_cos_pipes_modular_connector_decal_rust_02_c
 image,#i_c_t7_warrior_head1_haircards2_c
 image,#i_c_t7_warrior_head1_haircards2_n
-image,#hash_5753dd975beeb39f
+image,#i_mtl_p8_wmd_door_frame_single_decal_scratch_c
 image,d#fxt8_fire_sm_lick_tall_anim_hdr
 image,#i_mtl_p8_cos_floor_gantry_center_decal_net_n
 image,#i_mtl_p8_cos_floor_gantry_center_decal_net_c
@@ -13116,7 +13116,7 @@ image,#i_mtl_p8_col_conveyor_unit_panel_box_decal_key_n
 image,#i_t8_concrete_damaged_norebar_02_r
 image,#hash_66e64b3cf1d47ba8
 image,#i_t8_decal_grunge_drywall_sealer_line_r
-image,#hash_66f221c26415f1ea
+image,#i_mtl_p8_zm_zod_package_mail_room_paper_n
 image,#i_c_t7_techno_pouch_duo_c
 image,#i_mtl_p7_books_office_n
 image,#i_mtl_p7_books_office_c
@@ -13485,7 +13485,7 @@ image,#i_t8_decal_damage_concrete_sidewalk_seam_01_n
 image,#i_mtl_p8_debris_asphalt_chunks_md_1_and_2_smooth_m
 image,#i_mtl_p7_slu_meter_electric_01_base_part_m
 image,#i_mtl_p7_slu_meter_electric_01_base_part_n
-image,#hash_6d1bfe58af1e9f2c
+image,#i_mtl_p8_ice_controlroom_wall_panel_circuit_01_decal_01_c
 image,#i_mtl_veh_mphd_uaz_front_light_glass_s
 image,#i_mtl_veh_mphd_uaz_front_light_glass_n
 image,#i_mtl_veh_mphd_uaz_front_light_glass_c
@@ -13505,7 +13505,7 @@ image,#hash_6d64f7b54a250626
 image,#i_mtl_veh_mphd_uaz_und_chassis_02_n
 image,#i_mtl_veh_mphd_uaz_und_chassis_02_o
 image,#i_mtl_veh_mphd_uaz_und_chassis_02_m
-image,#hash_6d7340ddaebc1fcb
+image,#i_mtl_p8_zm_zod_pump_engine_room_tiling_01_m
 image,#i_veh_t8_vintage_gaz66_under_pieces_o
 image,#i_veh_t8_vintage_gaz66_under_pieces_n
 image,#i_t8_plastic_floor_epoxy_flake_01_c
@@ -13656,7 +13656,7 @@ image,d#i_t8_micro_paint_02_g
 image,d#i_t8_micro_paint_02_c
 image,d#i_t8_micro_ceiling_tile_back_01_n
 image,d#i_t8_micro_ceiling_tile_back_01_c
-image,#hash_70cc051fa77c3836
+image,#i_mtl_p8_wz_foliage_bush_coyote_02_dry_proxy_depth
 image,#i_mtl_p7_railway_docking_bumper_paintedmetal_c
 image,d#i_t7_micro_cloth_cotton_02_n
 image,d#i_t7_micro_cloth_cotton_02_c
@@ -13736,8 +13736,8 @@ image,#i_mtl_p8_cos_beta_recorder_n
 image,#i_mtl_p8_cos_beta_recorder_o
 image,d#$blacktransparent_color
 image,#i_t7_metal_copper_oxidized_01_desaturated_c
-image,#hash_71e0ee93f05b8b4b
-image,#hash_71e0ef93f05b8cfe
+image,#i_mtl_p8_wmd_door_frame_single_03_n
+image,#i_mtl_p8_wmd_door_frame_single_03_m
 image,#i_veh_t8_mil_truck_technical_screws_decal_01_c
 image,#i_veh_t8_mil_truck_technical_screws_decal_01_o
 image,#i_veh_t8_mil_truck_technical_screws_decal_01_n
@@ -13804,8 +13804,8 @@ image,d#i_t7_micro_metal_grunge_scratch_fine_01_s
 image,d#i_t7_micro_metal_grunge_scratch_fine_01_g
 image,#i_t7_micro_metal_grunge_scratch_fine_01_c
 image,d#i_t7_micro_metal_grunge_scratch_fine_01_n
-image,#hash_7330c1418817c5d9
-image,#hash_7330ca418817d524
+image,#i_mtl_p8_col_coat_lab_hanging_cloth_decal_n
+image,#i_mtl_p8_col_coat_lab_hanging_cloth_decal_a
 image,#hash_7334c943e2b14d39
 image,d#i_t8_micro_metal_rust_02_g
 image,#i_mtl_p7_slu_box_electric_set_decal_wires_c
@@ -13819,7 +13819,7 @@ image,#i_p8_mp_bomb_crate_whole_destroyed_caution_c
 image,#hash_737a161fa53d136b
 image,#i_mtl_p8_cos_gantry_grapple_support_o
 image,#i_mtl_p8_cos_gantry_grapple_support_m
-image,#hash_739a76fc29566335
+image,#i_mtl_p8_col_parking_lot_rollup_decal_n
 image,#i_mtl_p8_col_parking_lot_rollup_decal_c
 image,#i_t8_decal_tech_detail_screw_03_n
 image,#hash_73c539bd95ae7a37
@@ -14087,7 +14087,7 @@ image,#i_mtl_p8_foliage_plant_desert_saltbush_04_proxy_distance
 image,#i_mtl_veh_t8_glass_pattern_03_t
 image,d#fxt_smk_billow_thick_anim
 image,#i_mtl_p8_cos_industrial_machinery_panel_decal_c
-image,#hash_7953c1f77d085983
+image,#i_mtl_p8_wmd_door_frame_single_decal_pit_n
 image,#i_mtl_veh_mphd_uaz_int_engine_m
 image,#i_mtl_veh_mphd_uaz_int_engine_o
 image,#i_mtl_veh_mphd_uaz_int_engine_n

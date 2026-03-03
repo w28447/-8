@@ -5,18 +5,18 @@
 #using scripts\core_common\system_shared;
 #using scripts\core_common\util_shared;
 
-#namespace namespace_273ad667;
+#namespace zm_escape_weap_quest_spork;
 
-// Namespace namespace_273ad667/namespace_273ad667
+// Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
 // Params 0, eflags: 0x2
 // Checksum 0xb1a8e7fa, Offset: 0x1b0
 // Size: 0x3c
 function autoexec __init__system__()
 {
-    system::register( #"hash_1f7228023b83d053", &__init__, undefined, undefined );
+    system::register( #"zm_escape_weap_quest_spork", &__init__, undefined, undefined );
 }
 
-// Namespace namespace_273ad667/namespace_273ad667
+// Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
 // Params 0
 // Checksum 0xe6c6a80e, Offset: 0x1f8
 // Size: 0x21a
@@ -31,7 +31,7 @@ function __init__()
     level._effect[ #"hash_7bd7f11175082774" ] = #"hash_aca33e8f743523b";
 }
 
-// Namespace namespace_273ad667/namespace_273ad667
+// Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
 // Params 7
 // Checksum 0xe7b3ce5e, Offset: 0x420
 // Size: 0x11c
@@ -53,7 +53,7 @@ function function_9e8baed0( localclientnum, oldval, newval, bnewent, binitialsna
     self.var_a57cfdf7 hide();
 }
 
-// Namespace namespace_273ad667/namespace_273ad667
+// Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
 // Params 7
 // Checksum 0xec43922e, Offset: 0x548
 // Size: 0x4ca
@@ -116,7 +116,7 @@ function function_f72f97af( localclientnum, oldval, newval, bnewent, binitialsna
     }
 }
 
-// Namespace namespace_273ad667/namespace_273ad667
+// Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
 // Params 1, eflags: 0x4
 // Checksum 0xa52a9d3e, Offset: 0xa20
 // Size: 0x74
@@ -131,7 +131,7 @@ function private function_f8f90b83( var_c34665fc )
     }
 }
 
-// Namespace namespace_273ad667/namespace_273ad667
+// Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
 // Params 7
 // Checksum 0xa7067f27, Offset: 0xaa0
 // Size: 0x1fc
@@ -160,7 +160,7 @@ function function_b42c46e3( localclientnum, oldval, newval, bnewent, binitialsna
     }
 }
 
-// Namespace namespace_273ad667/namespace_273ad667
+// Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
 // Params 7
 // Checksum 0xd378b571, Offset: 0xca8
 // Size: 0x462
@@ -201,7 +201,7 @@ function function_1d683667( localclientnum, oldval, newval, bnewent, binitialsna
     }
 }
 
-// Namespace namespace_273ad667/namespace_273ad667
+// Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
 // Params 7
 // Checksum 0xaedf8254, Offset: 0x1118
 // Size: 0xda

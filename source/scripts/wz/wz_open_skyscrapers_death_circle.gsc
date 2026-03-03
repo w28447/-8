@@ -23,10 +23,10 @@ function function_6f6f5189()
     if ( isarray( level.deathcircles ) && level.deathcircles.size > 0 )
     {
         finalcircle = level.deathcircles[ level.deathcircles.size - 1 ];
-        level.var_5c8bbb85 = finalcircle.var_3b9f4abf;
-        level.var_6d8a1d51 = finalcircle.mapwidth;
-        level.var_2a9f2129 = finalcircle.mapheight;
-        level.var_398d38ce = finalcircle.radius;
+        level.final_circle_origin = finalcircle.maporigin;
+        level.final_circle_width = finalcircle.mapwidth;
+        level.final_circle_height = finalcircle.mapheight;
+        level.final_circle_radius = finalcircle.radius;
         
         if ( !isdefined( level.var_6f535d7f ) )
         {
@@ -52,9 +52,9 @@ function function_6f6f5189()
             function_320393b9();
         }
         
-        finalcircle.var_3b9f4abf = level.var_5c8bbb85;
-        finalcircle.mapwidth = level.var_6d8a1d51;
-        finalcircle.mapheight = level.var_2a9f2129;
+        finalcircle.maporigin = level.final_circle_origin;
+        finalcircle.mapwidth = level.final_circle_width;
+        finalcircle.mapheight = level.final_circle_height;
     }
     
     if ( util::get_game_type() == "warzone_dbno" || util::get_game_type() == "warzone_hot_pursuit" || util::get_game_type() == "warzone_pandemic_quad" )
@@ -278,49 +278,49 @@ function function_9d313516( var_6b4cdf43 )
         case 0:
             break;
         case 1:
-            level.var_5c8bbb85 = ( 29566, 24509, 0 );
-            level.var_2a9f2129 = 57527;
-            level.var_6d8a1d51 = 56045;
+            level.final_circle_origin = ( 29566, 24509, 0 );
+            level.final_circle_height = 57527;
+            level.final_circle_width = 56045;
             break;
         case 2:
-            level.var_5c8bbb85 = ( -29567, 24509, 0 );
-            level.var_2a9f2129 = 57527;
-            level.var_6d8a1d51 = 56045;
+            level.final_circle_origin = ( -29567, 24509, 0 );
+            level.final_circle_height = 57527;
+            level.final_circle_width = 56045;
             break;
         case 3:
-            level.var_5c8bbb85 = ( 29566, -33018, 0 );
-            level.var_2a9f2129 = 57527;
-            level.var_6d8a1d51 = 56045;
+            level.final_circle_origin = ( 29566, -33018, 0 );
+            level.final_circle_height = 57527;
+            level.final_circle_width = 56045;
             break;
         case 4:
-            level.var_5c8bbb85 = ( -29567, -33018, 0 );
-            level.var_2a9f2129 = 57527;
-            level.var_6d8a1d51 = 56045;
+            level.final_circle_origin = ( -29567, -33018, 0 );
+            level.final_circle_height = 57527;
+            level.final_circle_width = 56045;
             break;
         case 5:
-            level.var_5c8bbb85 = ( 29566, -4254, 0 );
-            level.var_2a9f2129 = 115055;
-            level.var_6d8a1d51 = 56045;
+            level.final_circle_origin = ( 29566, -4254, 0 );
+            level.final_circle_height = 115055;
+            level.final_circle_width = 56045;
             break;
         case 6:
-            level.var_5c8bbb85 = ( -29567, -4254, 0 );
-            level.var_2a9f2129 = 115055;
-            level.var_6d8a1d51 = 56045;
+            level.final_circle_origin = ( -29567, -4254, 0 );
+            level.final_circle_height = 115055;
+            level.final_circle_width = 56045;
             break;
         case 7:
-            level.var_5c8bbb85 = ( -1544, -33018, 0 );
-            level.var_2a9f2129 = 57527;
-            level.var_6d8a1d51 = 112090;
+            level.final_circle_origin = ( -1544, -33018, 0 );
+            level.final_circle_height = 57527;
+            level.final_circle_width = 112090;
             break;
         case 8:
-            level.var_5c8bbb85 = ( -1544, 24509, 0 );
-            level.var_2a9f2129 = 57527;
-            level.var_6d8a1d51 = 112090;
+            level.final_circle_origin = ( -1544, 24509, 0 );
+            level.final_circle_height = 57527;
+            level.final_circle_width = 112090;
             break;
         case 9:
-            level.var_5c8bbb85 = ( -1544, -4254, 0 );
-            level.var_2a9f2129 = 57527;
-            level.var_6d8a1d51 = 56045;
+            level.final_circle_origin = ( -1544, -4254, 0 );
+            level.final_circle_height = 57527;
+            level.final_circle_width = 56045;
             break;
         case 10:
             function_1e92e76c();
@@ -439,9 +439,9 @@ function function_9c000dd6()
 function function_69e60a10( var_e4204b3 )
 {
     hint = struct::get( var_e4204b3 );
-    level.var_5c8bbb85 = hint.origin;
-    level.var_2a9f2129 = hint.height;
-    level.var_6d8a1d51 = hint.width;
+    level.final_circle_origin = hint.origin;
+    level.final_circle_height = hint.height;
+    level.final_circle_width = hint.width;
 }
 
 // Namespace wz_open_skyscrapers_death_circle/wz_open_skyscrapers_death_circle
@@ -450,9 +450,9 @@ function function_69e60a10( var_e4204b3 )
 // Size: 0x3a
 function function_9873bbc3()
 {
-    level.var_5c8bbb85 = ( 23460, 47303, 0 );
-    level.var_2a9f2129 = 6319;
-    level.var_6d8a1d51 = 4400;
+    level.final_circle_origin = ( 23460, 47303, 0 );
+    level.final_circle_height = 6319;
+    level.final_circle_width = 4400;
 }
 
 // Namespace wz_open_skyscrapers_death_circle/wz_open_skyscrapers_death_circle
@@ -461,9 +461,9 @@ function function_9873bbc3()
 // Size: 0x3e
 function function_d1fa217c()
 {
-    level.var_5c8bbb85 = ( 50576, -650, 4890 );
-    level.var_2a9f2129 = 15125;
-    level.var_6d8a1d51 = 6890;
+    level.final_circle_origin = ( 50576, -650, 4890 );
+    level.final_circle_height = 15125;
+    level.final_circle_width = 6890;
 }
 
 // Namespace wz_open_skyscrapers_death_circle/wz_open_skyscrapers_death_circle
@@ -472,9 +472,9 @@ function function_d1fa217c()
 // Size: 0x3e
 function function_1129bcc8()
 {
-    level.var_5c8bbb85 = ( 4994, 18165, 4469 );
-    level.var_2a9f2129 = 8415;
-    level.var_6d8a1d51 = 9875;
+    level.final_circle_origin = ( 4994, 18165, 4469 );
+    level.final_circle_height = 8415;
+    level.final_circle_width = 9875;
 }
 
 // Namespace wz_open_skyscrapers_death_circle/wz_open_skyscrapers_death_circle
@@ -483,9 +483,9 @@ function function_1129bcc8()
 // Size: 0x3e
 function function_2c08463c()
 {
-    level.var_5c8bbb85 = ( 29394, 4439, 4067 );
-    level.var_2a9f2129 = 4690;
-    level.var_6d8a1d51 = 4971;
+    level.final_circle_origin = ( 29394, 4439, 4067 );
+    level.final_circle_height = 4690;
+    level.final_circle_width = 4971;
 }
 
 // Namespace wz_open_skyscrapers_death_circle/wz_open_skyscrapers_death_circle
@@ -494,9 +494,9 @@ function function_2c08463c()
 // Size: 0x3e
 function function_10922af0()
 {
-    level.var_5c8bbb85 = ( -11592, 43535, 1350 );
-    level.var_2a9f2129 = 19691;
-    level.var_6d8a1d51 = 22406;
+    level.final_circle_origin = ( -11592, 43535, 1350 );
+    level.final_circle_height = 19691;
+    level.final_circle_width = 22406;
 }
 
 // Namespace wz_open_skyscrapers_death_circle/wz_open_skyscrapers_death_circle
@@ -505,9 +505,9 @@ function function_10922af0()
 // Size: 0x3e
 function function_ee550b9a()
 {
-    level.var_5c8bbb85 = ( 2589, -49423, 4700 );
-    level.var_2a9f2129 = 3991;
-    level.var_6d8a1d51 = 4994;
+    level.final_circle_origin = ( 2589, -49423, 4700 );
+    level.final_circle_height = 3991;
+    level.final_circle_width = 4994;
 }
 
 // Namespace wz_open_skyscrapers_death_circle/wz_open_skyscrapers_death_circle
@@ -516,9 +516,9 @@ function function_ee550b9a()
 // Size: 0x3e
 function function_7896ad1d()
 {
-    level.var_5c8bbb85 = ( 10826, -44160, 4090 );
-    level.var_2a9f2129 = 6105;
-    level.var_6d8a1d51 = 6717;
+    level.final_circle_origin = ( 10826, -44160, 4090 );
+    level.final_circle_height = 6105;
+    level.final_circle_width = 6717;
 }
 
 // Namespace wz_open_skyscrapers_death_circle/wz_open_skyscrapers_death_circle
@@ -527,9 +527,9 @@ function function_7896ad1d()
 // Size: 0x3e
 function function_b4f48010()
 {
-    level.var_5c8bbb85 = ( -18312, -25582, 1300 );
-    level.var_2a9f2129 = 1759;
-    level.var_6d8a1d51 = 3157;
+    level.final_circle_origin = ( -18312, -25582, 1300 );
+    level.final_circle_height = 1759;
+    level.final_circle_width = 3157;
 }
 
 // Namespace wz_open_skyscrapers_death_circle/wz_open_skyscrapers_death_circle
@@ -538,9 +538,9 @@ function function_b4f48010()
 // Size: 0x3e
 function function_4045ad15()
 {
-    level.var_5c8bbb85 = ( -44862, 27369, 1400 );
-    level.var_2a9f2129 = 3663;
-    level.var_6d8a1d51 = 2856;
+    level.final_circle_origin = ( -44862, 27369, 1400 );
+    level.final_circle_height = 3663;
+    level.final_circle_width = 2856;
 }
 
 // Namespace wz_open_skyscrapers_death_circle/wz_open_skyscrapers_death_circle
@@ -549,9 +549,9 @@ function function_4045ad15()
 // Size: 0x3e
 function function_b1f34ec5()
 {
-    level.var_5c8bbb85 = ( 2839, 27576, 2395 );
-    level.var_2a9f2129 = 2677;
-    level.var_6d8a1d51 = 5310;
+    level.final_circle_origin = ( 2839, 27576, 2395 );
+    level.final_circle_height = 2677;
+    level.final_circle_width = 5310;
 }
 
 // Namespace wz_open_skyscrapers_death_circle/wz_open_skyscrapers_death_circle
@@ -560,9 +560,9 @@ function function_b1f34ec5()
 // Size: 0x3a
 function function_116b8cff()
 {
-    level.var_5c8bbb85 = ( 33403, -43940, 0 );
-    level.var_2a9f2129 = 9250;
-    level.var_6d8a1d51 = 13493;
+    level.final_circle_origin = ( 33403, -43940, 0 );
+    level.final_circle_height = 9250;
+    level.final_circle_width = 13493;
 }
 
 // Namespace wz_open_skyscrapers_death_circle/wz_open_skyscrapers_death_circle
@@ -571,9 +571,9 @@ function function_116b8cff()
 // Size: 0x3a
 function function_81e9f1be()
 {
-    level.var_5c8bbb85 = ( -40308, -12226, 0 );
-    level.var_2a9f2129 = 12239;
-    level.var_6d8a1d51 = 8766;
+    level.final_circle_origin = ( -40308, -12226, 0 );
+    level.final_circle_height = 12239;
+    level.final_circle_width = 8766;
 }
 
 // Namespace wz_open_skyscrapers_death_circle/wz_open_skyscrapers_death_circle
@@ -582,9 +582,9 @@ function function_81e9f1be()
 // Size: 0x3a
 function function_dbb233d6()
 {
-    level.var_5c8bbb85 = ( -24173, -49307, 0 );
-    level.var_2a9f2129 = 16635;
-    level.var_6d8a1d51 = 21438;
+    level.final_circle_origin = ( -24173, -49307, 0 );
+    level.final_circle_height = 16635;
+    level.final_circle_width = 21438;
 }
 
 // Namespace wz_open_skyscrapers_death_circle/wz_open_skyscrapers_death_circle
@@ -593,9 +593,9 @@ function function_dbb233d6()
 // Size: 0x3a
 function function_8114ea4f()
 {
-    level.var_5c8bbb85 = ( -21373, -4119, 0 );
-    level.var_2a9f2129 = 8803;
-    level.var_6d8a1d51 = 12317;
+    level.final_circle_origin = ( -21373, -4119, 0 );
+    level.final_circle_height = 8803;
+    level.final_circle_width = 12317;
 }
 
 // Namespace wz_open_skyscrapers_death_circle/wz_open_skyscrapers_death_circle
@@ -604,9 +604,9 @@ function function_8114ea4f()
 // Size: 0x3a
 function function_3ab57f72()
 {
-    level.var_5c8bbb85 = ( 35398, 21980, 0 );
-    level.var_2a9f2129 = 7735;
-    level.var_6d8a1d51 = 11563;
+    level.final_circle_origin = ( 35398, 21980, 0 );
+    level.final_circle_height = 7735;
+    level.final_circle_width = 11563;
 }
 
 // Namespace wz_open_skyscrapers_death_circle/wz_open_skyscrapers_death_circle
@@ -615,9 +615,9 @@ function function_3ab57f72()
 // Size: 0x3a
 function function_918f3f42()
 {
-    level.var_5c8bbb85 = ( -31295, 25841, 0 );
-    level.var_2a9f2129 = 11340;
-    level.var_6d8a1d51 = 15061;
+    level.final_circle_origin = ( -31295, 25841, 0 );
+    level.final_circle_height = 11340;
+    level.final_circle_width = 15061;
 }
 
 // Namespace wz_open_skyscrapers_death_circle/wz_open_skyscrapers_death_circle
@@ -626,9 +626,9 @@ function function_918f3f42()
 // Size: 0x3a
 function function_4d20b749()
 {
-    level.var_5c8bbb85 = ( -52516, -37189, 0 );
-    level.var_2a9f2129 = 6412;
-    level.var_6d8a1d51 = 11232;
+    level.final_circle_origin = ( -52516, -37189, 0 );
+    level.final_circle_height = 6412;
+    level.final_circle_width = 11232;
 }
 
 // Namespace wz_open_skyscrapers_death_circle/wz_open_skyscrapers_death_circle
@@ -644,12 +644,12 @@ function function_320393b9()
     }
     
     var_f4a0340a = array::randomize( level.var_590e0497 );
-    var_8ecddd2c = level.var_6d8a1d51 / 2;
-    var_788ab0a6 = level.var_2a9f2129 / 2;
-    min_x = level.var_5c8bbb85[ 0 ] - var_8ecddd2c;
-    max_x = level.var_5c8bbb85[ 0 ] + var_8ecddd2c;
-    min_y = level.var_5c8bbb85[ 1 ] - var_788ab0a6;
-    max_y = level.var_5c8bbb85[ 1 ] + var_788ab0a6;
+    var_8ecddd2c = level.final_circle_width / 2;
+    var_788ab0a6 = level.final_circle_height / 2;
+    min_x = level.final_circle_origin[ 0 ] - var_8ecddd2c;
+    max_x = level.final_circle_origin[ 0 ] + var_8ecddd2c;
+    min_y = level.final_circle_origin[ 1 ] - var_788ab0a6;
+    max_y = level.final_circle_origin[ 1 ] + var_788ab0a6;
     var_68daafed = 0;
     
     foreach ( safe in var_f4a0340a )
@@ -657,9 +657,9 @@ function function_320393b9()
         if ( safe.origin[ 0 ] >= min_x && safe.origin[ 0 ] <= max_x && safe.origin[ 1 ] >= min_y && safe.origin[ 1 ] <= max_y )
         {
             var_68daafed = 1;
-            level.var_5c8bbb85 = safe.origin;
-            level.var_6d8a1d51 = level.var_398d38ce * 1.5;
-            level.var_2a9f2129 = level.var_398d38ce * 1.5;
+            level.final_circle_origin = safe.origin;
+            level.final_circle_width = level.final_circle_radius * 1.5;
+            level.final_circle_height = level.final_circle_radius * 1.5;
             return;
         }
     }
@@ -680,8 +680,8 @@ function function_fdabbb8a()
 {
     a_locs = array( ( 50636, 27500, 0 ), ( 39800, 10650, 0 ), ( 28434, 13200, 0 ), ( 14714, 13200, 0 ), ( 10100, 30360, 0 ), ( -15238, 20633, 0 ), ( -18050, 32800, 0 ), ( -25222, 17560, 0 ), ( -17800, 5010, 0 ), ( -22150, -15590, 0 ), ( -2182, 5150, 0 ), ( 16500, -15333, 0 ), ( 33150, -4070, 0 ), ( 54138, -21735, 0 ), ( 35700, -25830, 0 ), ( 24186, -53500, 0 ), ( 13700, -56167, 0 ), ( 2500, -48500, 0 ), ( -2500, -32870, 0 ), ( -10630, -58215, 0 ), ( -15600, -36000, 0 ), ( -29414, -57500, 0 ), ( -43878, -54055, 0 ), ( -57318, -46600, 0 ), ( -35000, -34500, 0 ), ( -56300, -28583, 0 ), ( -41446, -28327, 0 ), ( -50000, -11500, 0 ), ( -56300, 4000, 0 ), ( -56550, 22500, 0 ), ( 13100, -23270, 0 ) );
     v_loc = array::random( a_locs );
-    level.var_5c8bbb85 = v_loc;
-    level.var_2a9f2129 = randomint( 9000 );
-    level.var_6d8a1d51 = randomint( 9000 );
+    level.final_circle_origin = v_loc;
+    level.final_circle_height = randomint( 9000 );
+    level.final_circle_width = randomint( 9000 );
 }
 

@@ -9066,7 +9066,7 @@ image,#i_mtl_p8_chi_pipe_cloth_2_o
 image,#i_t7_glass_reinforced_opaque_c
 image,#i_mtl_p7_sin_box_street_electric_large_worn_concrete_n
 image,#i_mtl_p7_sin_box_street_electric_large_worn_concrete_c
-image,#hash_244a8161eaf223a
+image,#i_mtl_p8_foliage_grass_blades_tall_med_proxy_specular
 image,d#i_veh_t8_grunge_rust_02_g
 image,#i_t7_ban_rock_mineral_deposit_01_n
 image,d#i_wpn_t8_eqp_briefcase_bomb_bottom_s
@@ -9411,7 +9411,7 @@ image,#hash_a401248ff04434d
 image,#hash_a474168cbeeb80b
 image,#i_mtl_t7_plastic_tarp_reinforced_clear_n
 image,#i_mtl_t7_plastic_tarp_reinforced_clear_a
-image,d#hash_a501eb282443cdb
+image,d#i_mtl_p8_slu_machine_washing_blue_decal_03_c
 image,#i_c_t7_techno_body1_shoulderguard_left_ir
 image,#i_mtl_p8_ice_rock_wall_01_a_dark_c
 image,#hash_a63e750d174fd2b
@@ -10294,7 +10294,7 @@ image,#hash_1caa5ff004d1a0c5
 image,#hash_1caa60f004d1a278
 image,#i_t8_rock_jagged_mossy_02_n
 image,#hash_1caa67f004d1ae5d
-image,#hash_1caef05b229435f4
+image,#i_mtl_p8_foliage_grass_blades_tall_med_proxy_normal
 image,d#i_t7_snow_powder_02_n
 image,d#i_t7_snow_powder_02_c
 image,#i_t7_snow_powder_02_r
@@ -10387,7 +10387,7 @@ image,d#i_mtl_p7_street_safety_cone_g
 image,d#i_mtl_p7_street_safety_cone_n
 image,d#i_mtl_p7_street_safety_cone_o
 image,d#$white_diffuse_hdr
-image,#hash_1f392339c625a8f9
+image,#i_mtl_p8_ice_foliage_shrub_01_grp_proxy_specular
 image,#hash_1f45dd28cbe96352
 image,#hash_1f45f128cbe9854e
 image,#hash_1f45f228cbe98701
@@ -10557,9 +10557,9 @@ image,d#i_mtl_veh_t8_civ_forklift_modular_decal_engine_detail_c
 image,d#i_mtl_veh_t8_civ_forklift_modular_body_01_m
 image,d#i_mtl_veh_t8_civ_forklift_modular_body_01_o
 image,d#i_mtl_veh_t8_civ_forklift_modular_body_01_n
-image,#hash_22632993ab468ddf
-image,#hash_22632c93ab4692f8
-image,#hash_22633693ab46a3f6
+image,#i_mtl_p8_ice_foliage_shrub_01_set_branch_04_c
+image,#i_mtl_p8_ice_foliage_shrub_01_set_branch_04_n
+image,#i_mtl_p8_ice_foliage_shrub_01_set_branch_04_t
 image,#i_veh_t8_civ_snowcat_thread_m
 image,#i_veh_t8_civ_snowcat_thread_n
 image,#i_veh_t8_civ_snowcat_thread_o
@@ -12196,7 +12196,7 @@ image,#i_mtl_p7_foliage_grass_dry_02_snow_proxy_albedo
 image,#i_mtl_p7_spl_first_aid_box_m
 image,#i_mtl_p7_spl_first_aid_box_o
 image,#i_mtl_p7_spl_first_aid_box_n
-image,#hash_449f1b8937fd8709
+image,#i_mtl_p8_ice_bunker_door_01_decal_03_r
 image,#i_mtl_p8_ice_rock_pile_02_n
 image,#i_mtl_p8_ice_rock_pile_02_o
 image,#i_t7_ban_concrete_poured_bunker_dirty_01_c
@@ -12361,7 +12361,7 @@ image,#i_t8_zm_esc_concrete_slabs_dust_2x2_r
 image,#i_t8_zm_esc_concrete_slabs_dust_2x2_c
 image,d#i_veh_t8_decal_panel_03_o
 image,d#i_veh_t8_decal_panel_03_n
-image,d#hash_48311ecdf06104ad
+image,d#i_mtl_p8_microwave_oven_stainless_01_decal09_n
 image,d#i_veh_t8_decal_panel_03_c
 image,d#i_veh_t8_decal_panel_03_g
 image,d#i_veh_t8_decal_panel_03_s
@@ -12537,8 +12537,8 @@ image,#hash_4c30982b89b51e71
 image,#i_t7_glass_snow_buildup_01_backlit_g
 image,#i_t7_glass_snow_buildup_01_backlit_c
 image,d#i_mtl_t8_micro_metal_rust_01_n
-image,#hash_4c33ed60b506b2fc
-image,#hash_4c33f260b506bb7b
+image,#i_mtl_p8_chi_antenna_roof_decal_01_n
+image,#i_mtl_p8_chi_antenna_roof_decal_01_c
 image,#i_mtl_p8_foliage_grass_blades_tall_lrg_proxy_distance
 image,#i_mtl_p8_ice_large_rock_01_dark_c
 image,#hash_4c6a476527a0d459
@@ -12631,7 +12631,7 @@ image,#hash_4e1efdcd31e8a185
 image,#hash_4e1f11cd31e8c381
 image,#i_p7_zm_asc_panel_glass_yellow_10_c
 image,#hash_4e29ac40ce215293
-image,#hash_4e383706a5b19961
+image,#i_mtl_p8_chi_antenna_roof_battery_m
 image,#i_mtl_p7_machine_pipe_module_01_n
 image,d#i_mtl_p7_stepladder_n
 image,d#i_mtl_p7_stepladder_o
@@ -12857,7 +12857,7 @@ image,#i_mtl_p7_mou_electrical_panel_set_pane_m
 image,#i_mtl_p7_mou_electrical_panel_set_pane_n
 image,#hash_529fd81aa1fce816
 image,#hash_529fd91aa1fce9c9
-image,#hash_52a020e0d3b7bc48
+image,#i_mtl_p7_zur_foliage_grass_small_snow_proxy_specular
 image,d#i_veh_t8_decal_sign_square_half_01_c
 image,d#i_mtl_veh_t8_civ_forklift_modular_decal_vent_ac_n
 image,d#i_mtl_veh_t8_civ_forklift_modular_decal_vent_ac_c
@@ -13110,7 +13110,7 @@ image,#i_t8_moss_lava_field_h
 image,d#fxt8_fire_sm_lick_tall_anim_hdr
 image,d#dimitars_phong_test_n
 image,#i_mtl_p8_col_conveyor_unit_logo_05_c
-image,#hash_5777c8f9a6ebd1c3
+image,#i_mtl_p8_ice_foliage_shrub_01_grp_proxy_distance
 image,#hash_57852116773ae8b3
 image,#i_mtl_p8_zm_cart_mail_vintage_set_decal_06_c
 image,#i_mtl_p7_panels_metal_wall_exterior_access_01_g
@@ -13131,7 +13131,7 @@ image,#hash_57df9f251ec87fdd
 image,#i_veh_t8_mil_truck_hemtt_exterior_03_multi_m
 image,#i_t8_zm_esc_gravel_dust_01_r
 image,#i_t8_zm_esc_gravel_dust_01_c
-image,#hash_57f86b82aa1d4904
+image,#i_mtl_p8_foliage_grass_blades_tall_med_proxy_distance
 image,d#fxt8_liquid_string_mask
 image,#i_mtl_p7_zm_asc_light_cage_warning_metal_n
 image,#hash_5821b28b44fc7cd0
@@ -13564,7 +13564,7 @@ image,#i_t8_dirt_road_tire_tracks_rocks_n
 image,#i_t8_dirt_road_tire_tracks_rocks_r
 image,#hash_618d66f2f300dab1
 image,#hash_61a326b826555199
-image,#hash_61b1cce13954cbbc
+image,#i_mtl_p7_zm_asc_airduct_decal_02_c
 image,d#i_veh_t8_glass_scratched_01_g
 image,d#i_wpn_t8_eqp_briefcase_bomb_computer_decal_c2
 image,d#i_t7_micro_metal_painted_rough_01_n
@@ -13578,7 +13578,7 @@ image,#i_t8_micro_metal_brushed_swirl_01_n
 image,#i_mtl_p7_foliage_grass_dry_02_snow_proxy_normal
 image,d#i_mtl_p7_barrier_block_concrete_rusty_n
 image,#hash_6215b24cee88ed80
-image,#hash_62181f0c293923f9
+image,#i_mtl_p8_ice_foliage_shrub_01_grp_proxy_albedo
 image,d#i_veh_t8_decal_sign_square_half_03_c
 image,d#i_t7_metal_worn_copper_base_s
 image,d#i_t7_metal_worn_copper_base_g
@@ -13597,7 +13597,7 @@ image,#i_metal_trim_ext_dlc1_n
 image,#i_t8_decal_tech_detail_screw_01_g
 image,d#i_t8_decal_tech_detail_screw_01_c
 image,d#i_t8_decal_tech_detail_screw_01_s
-image,#hash_6279de17480360ea
+image,#i_mtl_p7_zur_foliage_grass_small_snow_proxy_normal
 image,#hash_62893880a234b8cb
 image,#hash_628f97753098e622
 image,#hash_628f98753098e7d5
@@ -13829,9 +13829,9 @@ image,#i_veh_t8_decal_rust_03_n
 image,#i_veh_t8_decal_rust_03_c
 image,#i_mtl_p8_curb_concrete_01_damage_n
 image,#i_mtl_p8_curb_concrete_01_damage_c
-image,#hash_67960a938a7d7b72
-image,#hash_67960f938a7d83f1
-image,#hash_679615938a7d8e23
+image,#i_mtl_p8_ice_foliage_shrub_01_set_branch_03_c
+image,#i_mtl_p8_ice_foliage_shrub_01_set_branch_03_n
+image,#i_mtl_p8_ice_foliage_shrub_01_set_branch_03_t
 image,#i_mtl_p7_medical_first_aid_case_01_leather_detailmaps1_c
 image,#i_mtl_p8_chi_camera_security_bubble_glass_g
 image,d#i_mtl_p7_crate_ammo_metal_small_n
@@ -13911,7 +13911,7 @@ image,#hash_68cf89887a3041bc
 image,d#i_t7_decal_grunge_rust_orange_drips
 image,d#fxt_lf_artifact_15a
 image,d#i_t8_micro_snow_01_n
-image,#hash_68df9c91e4e9b92b
+image,#i_mtl_p7_foliage_grass_dry_02_snow_proxy_distance
 image,d#i_mtl_veh_t8_civ_forklift_modular_forklift_rail_01_o
 image,d#i_mtl_veh_t8_civ_forklift_modular_forklift_rail_01_n
 image,d#i_mtl_veh_t8_civ_forklift_modular_forklift_rail_01_m
@@ -14112,7 +14112,7 @@ image,d#i_t7_decal_damage_glass_bullet_hit_03_c
 image,d#i_t7_decal_damage_glass_bullet_hit_03_n
 image,#i_t7_decal_grunge_water_puddle_06_r
 image,d#i_p8_mp_bomb_crate_labels_c
-image,#hash_6cb76a8ad9706570
+image,#i_mtl_p7_zur_foliage_grass_small_snow_proxy_albedo
 image,#hash_6cb7c28e7b35a69a
 image,#i_mtl_p8_col_light_traffic_light_c
 image,#i_mtl_p8_col_light_traffic_light_g
@@ -14207,10 +14207,10 @@ image,#i_t7_decal_water_wall_running_02_r
 image,#hash_6ea20ce6868c77c2
 image,d#fxt8_fire_md_lick_dissipate_anim_hdr
 image,d#i_t7_cloth_leather_black_n
-image,#hash_6ee44c938e3dfa98
-image,#hash_6ee456938e3e0b96
-image,#hash_6ee463938e3e21ad
-image,#hash_6ee6a41f09b906ab
+image,#i_mtl_p8_ice_foliage_shrub_01_set_branch_02_t
+image,#i_mtl_p8_ice_foliage_shrub_01_set_branch_02_n
+image,#i_mtl_p8_ice_foliage_shrub_01_set_branch_02_c
+image,#i_mtl_p8_ice_foliage_shrub_01_grp_proxy_normal
 image,#i_mtl_p7_tools_hammer_n
 image,#i_c_t7_techno_head6_face_skin1_g
 image,d#i_c_gen_detail_plastic_circle_mesh_n
@@ -14463,7 +14463,7 @@ image,d#fxt8_spark_omni_alpha
 image,#hash_7435d39120aeea58
 image,#hash_7435d49120aeec0b
 image,#hash_7435e09120af006f
-image,#hash_7438fe55dafeeeda
+image,#i_mtl_p7_zur_foliage_grass_small_snow_proxy_distance
 image,d#i_t7_detail_asphalt_01
 image,#i_mtl_p8_box_electric_commercial_lrg_01_m
 image,#i_mtl_p7_sgen_corridor_02_set_red_worn_n
@@ -14477,7 +14477,7 @@ image,#i_c_t7_battery_body1_collar1_n
 image,#i_c_t7_battery_body1_collar1_o
 image,#i_c_t7_battery_body1_collar1_c
 image,#i_c_t7_battery_body1_collar1_g
-image,#hash_7460b053ea441666
+image,#i_mtl_p8_foliage_grass_blades_tall_med_proxy_albedo
 image,#hash_7462e54d4b881d86
 image,#i_veh_t8_mil_truck_hemtt_decal_interior_61_c
 image,#i_veh_t8_mil_truck_hemtt_decal_interior_61_n
@@ -14595,7 +14595,7 @@ image,#i_mtl_p8_col_conveyor_unit_bolt_m
 image,#i_c_t7_techno_body1_leg_armor_ir
 image,#i_mtl_p7_conduit_rust_pipes_n
 image,#i_mtl_p7_conduit_rust_pipes_c
-image,#hash_76ce5c67fafaa0ad
+image,#i_mtl_p8_ice_foliage_shrub_01_grp_proxy_depth
 image,d#i_t7_decal_snow_powder_01_c
 image,#hash_76ea8d4f2ccef07f
 image,#hash_76eaa04f2ccf10c8
@@ -14756,7 +14756,7 @@ image,#i_veh_t8_decal_hinge_07_n
 image,#i_veh_t8_decal_hinge_07_o
 image,d#fxt8_spark_streak_wiggle_hdr
 image,#hash_7a379d71068e12be
-image,#hash_7a38763b54750322
+image,#i_mtl_p7_zur_foliage_grass_small_snow_proxy_depth
 image,d#i_mtl_mtl_veh_t8_mil_helicopter_transport_head_01_ir
 image,d#i_mtl_p7_light_floodlight_c
 image,d#i_mtl_p7_light_floodlight_m
@@ -14887,7 +14887,7 @@ image,#i_p8_foliage_tree_spruce_norway_branch_03_t
 image,#i_p8_foliage_tree_spruce_norway_branch_03_m
 image,#i_p8_foliage_tree_spruce_norway_branch_03_n
 image,#i_p8_foliage_tree_spruce_norway_branch_03_c
-image,#hash_7cab2d1f21a2bb94
+image,#i_mtl_p8_foliage_grass_blades_tall_med_proxy_depth
 image,#i_c_t7_battery_body1_webgear_s
 image,#i_c_t7_battery_body1_webgear_o
 image,#i_c_t7_battery_body1_webgear_n
@@ -14910,7 +14910,7 @@ image,#i_t8_metal_grate_01_n
 image,#i_t8_metal_grate_01_o
 image,#i_t8_metal_grate_01_m
 image,#i_t8_metal_grate_01_g
-image,#hash_7da57dafc2da548c
+image,#i_mtl_p7_foliage_grass_dry_03_snow_proxy_distance
 image,#i_t7_shr_snow_swept_r
 image,#i_t7_shr_snow_swept_n
 image,#hash_7dbb5791cbcaf3f9

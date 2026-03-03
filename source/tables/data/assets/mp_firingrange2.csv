@@ -5664,7 +5664,7 @@ image,d#i_mtl_p7_debris_metal_scrap_01_g
 image,#i_t7_decal_grunge_rust_blend_r
 image,#i_t7_decal_grunge_rust_blend_c
 image,#i_t7_decal_grunge_rust_blend_g
-image,#hash_10f799cdd4296dc
+image,#i_mtl_p7_jun_corrugated_metal_4x8_dmg_proxy_depth
 image,#i_veh_mphd_chinook_under_02_multi_m
 image,d#i_mtl_p7_barrel_metal_55gal_lid_ao
 image,d#fxt8_fog_slow_md_anim
@@ -5838,7 +5838,7 @@ image,#i_mtl_p8_wz_supply_stash_health_extras_c
 image,#i_c_t7_techno_body1_arm_left_c
 image,#i_c_t7_techno_body1_arm_left_g
 image,#i_c_t7_techno_body1_arm_left_n
-image,#hash_47d6e63d0880ead
+image,#i_mtl_p7_corrugated_sheet_metal_rust_01_proxy_depth
 image,#i_veh_mphd_chinook_under_03_multi_m
 image,#i_t7_mud_sludge_wet_01_r
 image,#i_t7_mud_sludge_wet_01_c
@@ -6114,7 +6114,7 @@ image,#i_mtl_p7_hydraulic_pump_motor_o
 image,#i_mtl_p7_hydraulic_pump_motor_c
 image,#i_mtl_p7_hydraulic_pump_motor_g
 image,#i_mtl_p7_hydraulic_pump_motor_s
-image,d#hash_b8d1b3174270dcb
+image,d#i_mtl_p7_fir_rock_cliff_cluster_a_n
 image,#hash_b8d1c3174270f7e
 image,#i_mtl_p7_suspension_bridge_bolt_01_m
 image,#i_mtl_p7_suspension_bridge_bolt_01_o
@@ -6257,8 +6257,8 @@ image,#i_t7_fir_truck_track_n
 image,#i_mtl_p7_hedgehog_metal_tile02_c
 image,#i_mtl_p7_hedgehog_metal_tile02_n
 image,#i_mtl_p8_sewer_entrance_concrete_02_m
-image,#hash_e2a6dbc7c5eaef3
-image,#hash_e2a6ebc7c5eb0a6
+image,#i_mtl_p7_mou_barricade_metal_set_m
+image,#i_mtl_p7_mou_barricade_metal_set_n
 image,#i_t7_concrete_wall_grunge_01_c
 image,d#i_veh_t8_mil_heli_light_optic_m
 image,d#i_veh_t8_mil_heli_light_optic_o
@@ -6273,7 +6273,7 @@ image,d#i_c_hro_soldier_cyberhand_world_ir
 image,#i_mtl_p7_fir_foliage_tree_vista_02_proxy_depth
 image,#i_c_t7_warrior_body1_cloth_mid_ir
 image,#i_mtl_p7_fir_foliage_tree_vista_01_group_proxy_depth
-image,#hash_ea96da0962a06c2
+image,#i_mtl_p7_corrugated_sheet_metal_rust_02_proxy_albedo
 image,#decal_wood_splinter_end01_n
 image,#decal_wood_splinter_end01_c
 image,#i_c_t7_mp_common_pouch5_g
@@ -6351,7 +6351,7 @@ image,#i_c_t7_warrior_head1_beardcards_c
 image,d#i_t7_micro_metal_painted_01_c
 image,d#i_t7_micro_metal_painted_01_g
 image,d#i_t7_micro_metal_painted_01_n
-image,#hash_10c5829e9a1eb43b
+image,#i_mtl_p7_jun_corrugated_metal_02_proxy_normal
 image,d#i_mtl_veh_t8_zur_nw_foundry_set_metal_01_m
 image,#i_mtl_p7_foliage_grass_tussock_dry_c
 image,d#i_t8_micro_cloth_canvas_01_n
@@ -6363,8 +6363,8 @@ image,#i_t7_wes_wood_cedar_worn_c
 image,#i_mtl_mtl_veh_mphd_m35_base_body03_grill_a
 image,#i_mtl_p7_fir_fence_wood_wood02_n
 image,#i_mtl_p7_fir_fence_wood_wood02_m
-image,#hash_11146019cfbef6e8
-image,#hash_11146319cfbefc01
+image,#i_mtl_p7_rus_box_electric_set_part_m
+image,#i_mtl_p7_rus_box_electric_set_part_n
 image,#i_c_t7_battery_body1_ammo_belt_o
 image,#i_c_t7_battery_body1_ammo_belt_g
 image,#i_t7_metal_aged_trim_beam_01_n
@@ -6390,7 +6390,7 @@ image,#hash_11764fe8cae5147c
 image,#hash_117654e8cae51cfb
 image,d#i_mtl_veh_t7_dlc_weathered_paint_02_c
 image,#hash_11945f72dc363dfb
-image,#hash_119f718c8c4bf6a9
+image,#i_mtl_p7_jun_corrugated_metal_02_proxy_specular
 image,#hash_11b3fa0c86dbc30f
 image,d#i_t7_glass_dirty_grimes_01_cracked_n
 image,d#hash_11d2daaebd9386f9
@@ -6530,7 +6530,7 @@ image,#i_mtl_p7_debris_trash_snack_bag_07_c
 image,#i_mtl_p7_debris_trash_snack_bag_07_n
 image,#i_p7_debris_trash_cup_red_02_g
 image,#i_c_t7_warrior_body1_straps_ir
-image,#hash_14a959f5ab13ee5c
+image,#i_mtl_p7_jun_corrugated_metal_4x8_dmg_proxy_normal
 image,d#i_mtl_mtl_veh_t8_decal_screw_hex_inset_a
 image,d#fxt_decal_blood_fatal_01_n
 image,#i_p7_bucket_janitor_plastic_rolling_s
@@ -6598,7 +6598,7 @@ image,#i_c_t7_battery_black_ir
 image,#i_mtl_p7_fir_floodlight_speaker_tall_decal_06_n
 image,#i_mtl_p7_fir_floodlight_speaker_tall_decal_06_m
 image,d#fxt_spark_single_mask
-image,#hash_164ef5b25ea9246e
+image,#i_mtl_p7_corrugated_sheet_metal_rust_02_proxy_specular
 image,#i_c_t7_warrior_body1_hand_a1_o
 image,#i_c_t7_warrior_body1_hand_a1_n
 image,#i_c_t7_warrior_body1_hand_a1_g
@@ -6621,7 +6621,7 @@ image,d#i_t7_decal_blood_splatter_03_c
 image,#hash_16b00c2d40e1e4bc
 image,#hash_16b00d2d40e1e66f
 image,#hash_16b0152d40e1f407
-image,d#hash_16b3893e3b9da468
+image,d#i_mtl_p7_cai_train_subway_inside_stainless1_s
 image,#i_t7_asphalt_dirty_dark_desert_c
 image,#hash_16c5fd9302b37372
 image,#hash_16d218ad36c402d3
@@ -6743,7 +6743,7 @@ image,#i_t7_decal_damage_concrete_cracks_04_c
 image,#hash_19f928875bf218b0
 image,#i_p8_mphd_towel_a_n_3
 image,#i_p8_mphd_towel_a_n_4
-image,#hash_1a243c998defa220
+image,#i_mtl_p7_corrugated_sheet_metal_rust_02_proxy_normal
 image,d#i_t7_detail_hexagon_01
 image,d#i_t8_decal_nail_01_g
 image,d#i_t8_decal_nail_01_c
@@ -7285,8 +7285,8 @@ image,#i_veh_mphd_chinook_reactor_01_n
 image,#i_veh_mphd_chinook_reactor_01_o
 image,#i_t7_wood_beam_worn_oak_c
 image,#i_t7_wood_beam_worn_oak_n
-image,#hash_273575846749d06b
-image,#hash_273579846749d737
+image,#i_mtl_p7_zm_asc_angle_plate_green_g
+image,#i_mtl_p7_zm_asc_angle_plate_green_c
 image,#i_t7_linoleum_floor_tile_grout_c
 image,#i_t7_linoleum_floor_tile_grout_n
 image,#i_t7_dlc1_glass_window_warehouse_c
@@ -7313,7 +7313,7 @@ image,#i_mtl_p7_corrugated_sheet_metal_rust_03_proxy_depth
 image,d#i_c_gen_head_thickness_2_t
 image,#i_mtl_t8_metal_deck_painted_01_g
 image,#i_c_t7_warrior_body1_hand_a1_ir
-image,#hash_279eada6b8318ef8
+image,#i_mtl_p7_jun_corrugated_metal_8x8_dmg_proxy_normal
 image,#i_mtl_p7_mou_trash_can_set_m
 image,#i_mtl_p7_mou_trash_can_set_n
 image,#i_mtl_p7_dock_wood_rustic_set_decal_04_c
@@ -7440,7 +7440,7 @@ image,#i_c_bc_femalesoldier_grenade_ao
 image,d#fxt8_spark_streak_wiggle_alpha
 image,#i_mtl_p7_fir_ammo_crate_lid_side_c
 image,#i_mtl_p7_fir_ammo_crate_lid_side_n
-image,#hash_2a9dcd649c550e29
+image,#i_mtl_p7_jun_corrugated_metal_02_proxy_albedo
 image,#i_mtl_p7_jun_sheet_metal_2x8_2_m
 image,#i_mtl_p7_fir_rock_boulder_lrg_02_g_n
 image,#i_mtl_p7_fir_rock_boulder_lrg_02_g_m
@@ -7567,7 +7567,7 @@ image,d#fxt_gib_concrete_01
 image,d#fxt_gib_concrete_02
 image,d#i_mtl_p7_zur_train_wreckage_set_dmg_n
 image,d#fxt_gel_splat_string_n
-image,#hash_2ddaf49eff280752
+image,#i_mtl_p7_jun_corrugated_metal_4x8_dmg_proxy_specular
 image,#i_t7_zm_ctl_stone_wall_block_grout_r
 image,#i_c_t7_techno_body1_shoulderguard_left_c
 image,#i_c_t7_techno_body1_shoulderguard_left_g
@@ -7656,7 +7656,7 @@ image,#i_t7_wood_plywood_trim_n
 image,d#i_t7_micro_metal_bare_01_s
 image,d#i_t7_micro_metal_bare_01_g
 image,#i_t7_decal_grunge_dust_wall_01_c
-image,#hash_3001adf8088b0df9
+image,#i_mtl_p7_corrugated_sheet_metal_rust_01_proxy_albedo
 image,#hash_30095cfaa6a170e0
 image,#i_mtl_p7_light_bulb_cfl_c
 image,d#i_t8_micro_cloth_leather_01_n
@@ -7777,7 +7777,7 @@ image,#hash_32540151cc33a57d
 image,d#i_veh_t8_decal_sign_cut_canopy_c
 image,#i_mtl_p7_shr_wood_plank_old_v1_128_n
 image,#i_mtl_p7_shr_wood_plank_old_v1_128_m
-image,#hash_326fecaa00c222f9
+image,#i_mtl_p7_corrugated_sheet_metal_rust_01_proxy_specular
 image,#hash_32785e8fbd630007
 image,#i_mtl_p7_zm_ori_wood_planks_dmg_set_01_m
 image,#hash_3287099ecab90b36
@@ -7930,7 +7930,7 @@ image,d#fxt8_fire_md_base_anim_alpha
 image,#hash_3657a9aea666efa4
 image,#hash_36740fde7fae8a27
 image,d#i_mtl_p7_fir_foliage_tree_palm_leaves_01_light_c
-image,#hash_3687841fc4bd7dbd
+image,#i_mtl_p7_jun_corrugated_metal_02_proxy_depth
 image,d#i_mtl_t8_license_morocco_decal_series_c
 image,d#i_mtl_t8_license_morocco_decal_series_n
 image,d#i_veh_t8_mil_heli_light_seat_o
@@ -7981,7 +7981,7 @@ image,d#i_mtl_p7_jun_door_hut_bamboo_rope_n
 image,d#i_mtl_p7_wall_mobile_dep_decal_details_01_c
 image,d#i_mtl_p7_wall_mobile_dep_decal_details_01_n
 image,#i_mtl_p7_wall_mobile_dep_decal_details_01_m
-image,#hash_3748a7d4dd18d500
+image,#i_mtl_p7_jun_foliage_bush_01_proxy_distance
 image,#i_t7_mud_footprints_n
 image,#i_t7_mud_footprints_r
 image,d#fxt8_liquid_splat
@@ -8244,7 +8244,7 @@ image,d#i_t7_micro_metal_grunge_pockmarks_01_c
 image,#i_mtl_veh_t7_dmg_scrapes_chips_6_s
 image,#i_mtl_veh_t7_dmg_scrapes_chips_6_g
 image,#i_mtl_veh_t7_dmg_scrapes_chips_6_c
-image,#hash_3cd0330ae90af0ab
+image,#i_mtl_p7_corrugated_sheet_metal_rust_01_proxy_normal
 image,d#fxt8_smk_md_thick_scatter_anim
 image,d#fxt8_decal_mltv_burn
 image,#i_mtl_t7_metal_trim_weld_01_a
@@ -8269,8 +8269,8 @@ image,d#i_mtl_p7_fir_tool_chest_rolling_set_n
 image,d#i_mtl_p7_fir_tool_chest_rolling_set_m
 image,d#i_t7_decal_damage_burned_c
 image,#i_t7_decal_damage_burned_n
-image,#hash_3dabf8c0cd0466bc
-image,#hash_3dabfbc0cd046bd5
+image,#i_mtl_p7_light_fluorescent_metal_01_m
+image,#i_mtl_p7_light_fluorescent_metal_01_n
 image,#i_t7_zm_moo_metal_support_panel_01_paint_c
 image,#i_t7_zm_moo_metal_support_panel_01_paint_g
 image,#i_t7_zm_moo_metal_support_panel_01_paint_s
@@ -8317,7 +8317,7 @@ image,#i_mtl_veh_t7_dmg_scrapes_chips_9_s
 image,#i_mtl_veh_t7_dmg_scrapes_chips_9_g
 image,#i_mtl_veh_t7_dmg_scrapes_chips_9_c
 image,#hash_3ed7aef533a5aa6e
-image,#hash_3ed8e2b36f656711
+image,#i_mtl_p7_zm_tra_fence_chainlink_post_metal_m
 image,#i_mtl_p7_zm_kin_pipes_metal_set_c
 image,#i_mtl_p7_zm_kin_pipes_metal_set_g
 image,#i_mtl_p7_zm_kin_pipes_metal_set_n
@@ -9159,7 +9159,7 @@ image,#i_mtl_p7_fir_plywood_wall_wood_frame_m
 image,#i_t7_decal_painted_camo_desert_c
 image,d#i_t8_decal_tech_detail_low_tech_07_r
 image,d#i_t8_decal_tech_detail_low_tech_07_n
-image,d#hash_52fa0f52d6ce70fe
+image,d#i_mtl_p7_fir_tool_chest_rolling_set_03_m
 image,d#fxt8_spark_streak_abnorm_hdr
 image,#i_mtl_p7_fir_foliage_tree_vista_05_proxy_albedo
 image,d#i_c_gen_detail_jeans_n
@@ -9268,7 +9268,7 @@ image,#i_c_t7_battery_body1_lights_c
 image,#i_mtl_veh_t7_dmg_scrapes_chips_5_c
 image,#i_mtl_veh_t7_dmg_scrapes_chips_5_g
 image,#i_mtl_veh_t7_dmg_scrapes_chips_5_s
-image,#hash_5542518139bad6ce
+image,#i_mtl_p7_jun_corrugated_metal_4x8_dmg_proxy_albedo
 image,#i_t8_decal_tech_detail_keyhole_c
 image,#i_t8_decal_tech_detail_keyhole_o
 image,#i_t8_decal_tech_detail_keyhole_n
@@ -9390,8 +9390,8 @@ image,#i_t7_fir_plywood_natural_4_n
 image,#i_mtl_t8_license_cali_c
 image,#i_mtl_t8_license_cali_n
 image,#i_mtl_t8_license_cali_o
-image,#hash_57ffd63ca264360b
-image,#hash_57ffd73ca26437be
+image,#i_mtl_p7_fir_vent_wall_metal_set_main_n
+image,#i_mtl_p7_fir_vent_wall_metal_set_main_m
 image,#i_t7_fir_tarp_no_framing_c
 image,#i_t7_fir_tarp_no_framing_g
 image,#i_t7_fir_tarp_no_framing_n
@@ -9420,7 +9420,7 @@ image,#hash_5866c9bf5e8a2729
 image,d#i_t8_gloss_noise_grunge_01_g
 image,#hash_586f839a0b2fb2bc
 image,#hash_586f869a0b2fb7d5
-image,#hash_587b4ec91ee97d10
+image,#i_mtl_p7_corrugated_sheet_metal_rust_02_proxy_depth
 image,d#i_veh_t8_glass_pattern_03b_n
 image,d#i_veh_t8_glass_pattern_03b_o
 image,d#i_veh_t8_glass_pattern_03b_g
@@ -9450,7 +9450,7 @@ image,d#i_veh_t8_concrete_bare_weathered_01_n
 image,#hash_5914ba4ee553bba0
 image,#i_t8_rubber_floor_anti_slip_01_n
 image,#i_mtl_p7_fir_foliage_tree_vista_07_proxy_distance
-image,d#hash_596f5852d9d70b49
+image,d#i_mtl_p7_fir_tool_chest_rolling_set_02_m
 image,#i_t7_decal_stamp_plywood_01_c
 image,#hash_5982b5f5a1f31878
 image,#i_mtl_p7_zm_der_window_warehouse_frame_02_n
@@ -9827,8 +9827,8 @@ image,#i_t7_wood_plywood_trim_dirty_c
 image,d#hash_62c2d456a0c093de
 image,#i_mtl_p7_fir_foliage_tree_vista_03_proxy_depth
 image,#i_veh_mphd_chinook_frame_01_multi_m
-image,#hash_632dbfe60aef90a6
-image,#hash_632dcce60aefa6bd
+image,#i_mtl_p7_zm_tra_fence_chainlink_metal_decal_c
+image,#i_mtl_p7_zm_tra_fence_chainlink_metal_decal_n
 image,#hash_632dcf75cef2686d
 image,#i_mtl_p7_light_emergency_a_c
 image,#i_mtl_p7_light_emergency_a_g
@@ -10461,7 +10461,7 @@ image,d#i_t8_decal_tech_detail_low_tech_15_n
 image,d#i_t8_decal_tech_detail_low_tech_15_o
 image,d#i_t8_decal_tech_detail_low_tech_15_c
 image,d#i_t8_decal_tech_detail_low_tech_15_r
-image,#hash_6f5d0401a8226eda
+image,#i_mtl_p7_jun_corrugated_metal_8x8_dmg_proxy_albedo
 image,#i_mtl_p7_zm_ori_concrete_wall_damaged_01_blend_r
 image,#i_t7_asphalt_damaged_dark_r
 image,#hash_6f83d8f107d5106f
@@ -10503,7 +10503,7 @@ image,#i_mtl_p7_ram_castle_door_hinge_o
 image,#i_mtl_p7_ram_castle_door_hinge_c
 image,#i_mtl_p7_ram_castle_door_hinge_g
 image,#hash_7035b004c10ef496
-image,d#hash_704a98bf18a8a48c
+image,d#i_mtl_p7_mou_barrel_metal_02_decal_02_n
 image,#i_veh_t8_plastic_rough_heavy_01_n
 image,#i_mtl_p7_wes_basin_metal_set_decal_rust
 image,#i_mtl_p7_zm_der_plank_wood_01_n
@@ -10552,7 +10552,7 @@ image,d#i_t7_micro_metal_bare_scuffed_01_g
 image,d#i_t7_micro_metal_bare_scuffed_01_c
 image,#i_mtl_p7_fir_rock_rough_lrg_01_n
 image,#hash_718b0529dc6f6129
-image,#hash_719d0098f7f751d6
+image,#i_mtl_p7_jun_corrugated_metal_8x8_dmg_proxy_specular
 image,d#i_t7_micro_metal_rust_heavy_01_g
 image,d#i_t7_micro_metal_rust_heavy_01_c
 image,#i_t7_micro_metal_rust_heavy_01_n
@@ -10736,7 +10736,7 @@ image,d#i_t7_micro_metal_painted_02_g
 image,d#i_t7_micro_metal_painted_02_c
 image,#i_mtl_p7_zm_kin_stairs_wood_r
 image,#hash_7689157fd47fa730
-image,#hash_7699d5a89d96640b
+image,#i_mtl_p7_jun_corrugated_metal_8x8_proxy_specular
 image,#i_veh_mphd_chinook_cockpit_interior_n
 image,#i_veh_mphd_chinook_cockpit_interior_c
 image,#i_veh_mphd_chinook_cockpit_interior_g
@@ -10998,7 +10998,7 @@ image,d#i_wpn_t8_eqp_briefcase_bomb_circuit_g
 image,d#i_wpn_t8_eqp_briefcase_bomb_circuit_o
 image,d#i_wpn_t8_eqp_briefcase_bomb_circuit_n
 image,d#i_wpn_t8_eqp_briefcase_bomb_circuit_s
-image,#hash_7c66f36a51a16848
+image,#i_mtl_p7_jun_corrugated_metal_8x8_dmg_proxy_depth
 image,#i_mtl_p7_fir_targetdummy_rail_wood_01_side_c
 image,#i_mtl_p7_fir_targetdummy_rail_wood_01_side_g
 image,#i_mtl_p7_fir_targetdummy_rail_wood_01_side_n

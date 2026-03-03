@@ -119,7 +119,7 @@ function function_1792ae3( e_item )
     if ( isdefined( s_reel ) )
     {
         s_reel.in_inventory = 1;
-        str_alias = #"hash_3b57b74e2c90aee5" + level.var_804a56e3 + 1 + "_pickup";
+        str_alias = #"vox_audio_reel_" + level.var_804a56e3 + 1 + "_pickup";
         self thread zm_vo::function_a2bd5a0c( str_alias );
         
         if ( isdefined( e_item ) )

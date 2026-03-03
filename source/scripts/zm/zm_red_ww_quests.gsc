@@ -978,7 +978,7 @@ function function_887b7e4b( str_hand, var_b6bc44ed )
     s_quest.var_a1327d58 notify( #"hand_returned" );
     s_quest thread function_530d7ea0( 0 );
     s_quest.var_a1327d58.var_481aa649 = 1;
-    s_quest.var_a1327d58.var_c76a870a = var_b6bc44ed;
+    s_quest.var_a1327d58.n_ammo_count = var_b6bc44ed;
     s_quest.var_a1327d58 thread function_4c66319a( str_hand );
 }
 
@@ -1575,10 +1575,10 @@ function function_4c66319a( str_hand )
             e_player zm_weapons::weapon_give( w_hand );
             self.holding_weapon = 0;
             
-            if ( isdefined( self.var_c76a870a ) )
+            if ( isdefined( self.n_ammo_count ) )
             {
-                e_player setweaponammoclip( w_hand, self.var_c76a870a );
-                self.var_c76a870a = undefined;
+                e_player setweaponammoclip( w_hand, self.n_ammo_count );
+                self.n_ammo_count = undefined;
             }
             
             mdl_uncharged_hand thread scene::stop( s_quest.var_99aa2e37 );

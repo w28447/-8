@@ -4,9 +4,9 @@
 #using scripts\core_common\ai\systems\planner;
 #using scripts\zm_common\ai\planner_zm_squad_utility;
 
-#namespace namespace_42cba673;
+#namespace plannerzmgenericsquad;
 
-// Namespace namespace_42cba673/planner_zm_generic_squad
+// Namespace plannerzmgenericsquad/planner_zm_generic_squad
 // Params 1
 // Checksum 0xa1801263, Offset: 0xa8
 // Size: 0x32

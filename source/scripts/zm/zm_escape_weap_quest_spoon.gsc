@@ -28,9 +28,9 @@
 #using scripts\zm_common\zm_unitrigger;
 #using scripts\zm_common\zm_utility;
 
-#namespace namespace_9d58c1cd;
+#namespace zm_escape_weap_quest_spoon;
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 0
 // Checksum 0xbb7c8bc6, Offset: 0x3b0
 // Size: 0x124
@@ -43,7 +43,7 @@ function init_clientfields()
     clientfield::register( "scriptmover", "elevator_rumble", 1, 1, "counter" );
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 0
 // Checksum 0x3be1886e, Offset: 0x4e0
 // Size: 0x19c
@@ -76,7 +76,7 @@ function main()
     level thread crane_shock_box();
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 0
 // Checksum 0xac5f1a00, Offset: 0x688
 // Size: 0x64
@@ -85,7 +85,7 @@ function init_steps()
     zm_sq::register( #"spoon_quest", #"1", #"spoon_quest_step_1", &step_1, &step_1_cleanup );
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 1
 // Checksum 0xfed47f58, Offset: 0x6f8
 // Size: 0xb6
@@ -98,7 +98,7 @@ function step_1( var_a276c861 )
     level waittill( var_b09af3eb + "completed", var_b09af3eb + "skipped_over", var_b09af3eb + "ended_early" );
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 2
 // Checksum 0x459d7295, Offset: 0x7b8
 // Size: 0x14
@@ -107,7 +107,7 @@ function step_1_cleanup( var_a276c861, var_19e802fa )
     
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 0
 // Checksum 0x6888e1ef, Offset: 0x7d8
 // Size: 0xfc
@@ -124,7 +124,7 @@ function function_6b107487()
     level flag::set( #"hash_dd62a8822ea4a38" );
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 0, eflags: 0x4
 // Checksum 0xe8555d30, Offset: 0x8e0
 // Size: 0x5c
@@ -135,7 +135,7 @@ function private function_5ae9d41e()
     self clientfield::increment( "elevator_rumble" );
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 0
 // Checksum 0x385919e, Offset: 0x948
 // Size: 0x360
@@ -192,7 +192,7 @@ function function_3fcb1e5e()
     }
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 0
 // Checksum 0x81e0c1ef, Offset: 0xcb0
 // Size: 0xac
@@ -205,7 +205,7 @@ function function_1c5d2f2()
     var_e0ed1d92 thread function_6b107487();
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 0
 // Checksum 0x68614eec, Offset: 0xd68
 // Size: 0x184
@@ -225,7 +225,7 @@ function setup_docks_crane()
     var_4e8f9a1c show();
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 0
 // Checksum 0xf8fcf3aa, Offset: 0xef8
 // Size: 0x2ea
@@ -277,7 +277,7 @@ function crane_shock_box()
     }
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 1
 // Checksum 0xadac2911, Offset: 0x11f0
 // Size: 0x132
@@ -310,7 +310,7 @@ function function_1c670b79( var_217fca51 )
     }
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 1
 // Checksum 0xaa53e3b2, Offset: 0x1330
 // Size: 0xf4
@@ -327,7 +327,7 @@ function function_6ff33a91( var_217fca51 )
     function_ac52c6f1();
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 0, eflags: 0x4
 // Checksum 0x5c9f8672, Offset: 0x1430
 // Size: 0x12c
@@ -344,7 +344,7 @@ function private function_ac52c6f1()
     callback::on_spawned( &function_b6cda2d6 );
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 1
 // Checksum 0x3ba500ee, Offset: 0x1568
 // Size: 0x192
@@ -374,7 +374,7 @@ function function_88cbb4b3( player )
     return 1;
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 0
 // Checksum 0xac2c55f, Offset: 0x1708
 // Size: 0x156
@@ -401,7 +401,7 @@ function function_c5e0a9a4()
     }
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 0, eflags: 0x4
 // Checksum 0x38edcb82, Offset: 0x1868
 // Size: 0x4e
@@ -413,7 +413,7 @@ function private function_eebe4e13()
     self.var_6b910e38 = undefined;
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 0
 // Checksum 0x989d498a, Offset: 0x18c0
 // Size: 0xe4
@@ -425,7 +425,7 @@ function function_b6cda2d6()
     }
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 1
 // Checksum 0xe1ce050b, Offset: 0x19b0
 // Size: 0x64e
@@ -526,7 +526,7 @@ function function_32fbad12( a_ents )
     }
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 1
 // Checksum 0x164a7ec7, Offset: 0x2008
 // Size: 0x254
@@ -571,7 +571,7 @@ function function_4afd150e( a_ents )
     }
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 3
 // Checksum 0xa74a608d, Offset: 0x2268
 // Size: 0x242
@@ -607,7 +607,7 @@ function function_6098c5c( var_fdc7d6b5, v_origin, var_965869c9 )
     }
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 0
 // Checksum 0xf7e1c865, Offset: 0x24b8
 // Size: 0xfc
@@ -638,7 +638,7 @@ function function_d0bb3c35()
     self delete();
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 0
 // Checksum 0x9653ac27, Offset: 0x25c0
 // Size: 0x12e
@@ -667,7 +667,7 @@ function function_5753ae89()
     }
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 1
 // Checksum 0x2d5e1ac7, Offset: 0x26f8
 // Size: 0x2c
@@ -676,7 +676,7 @@ function function_2084efc3( str_notify )
     callback::remove_on_connect( &function_5753ae89 );
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 2
 // Checksum 0x2541ab14, Offset: 0x2730
 // Size: 0x18a
@@ -705,7 +705,7 @@ function function_48e7a1d7( e_grenade, n_grenade_charge_power )
     return 0;
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 2
 // Checksum 0x6c5ae905, Offset: 0x28c8
 // Size: 0xc4
@@ -727,7 +727,7 @@ function function_be995f48( mdl_tomahawk, mdl_powerup )
 
 /#
 
-    // Namespace namespace_9d58c1cd/namespace_9d58c1cd
+    // Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
     // Params 0
     // Checksum 0x9a367df0, Offset: 0x2998
     // Size: 0xfc, Type: dev
@@ -748,7 +748,7 @@ function function_be995f48( mdl_tomahawk, mdl_powerup )
         adddebugcommand( "<dev string:x2a6>" );
     }
 
-    // Namespace namespace_9d58c1cd/namespace_9d58c1cd
+    // Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
     // Params 1
     // Checksum 0x1f1c3425, Offset: 0x2aa0
     // Size: 0x252, Type: dev
@@ -792,7 +792,7 @@ function function_be995f48( mdl_tomahawk, mdl_powerup )
         }
     }
 
-    // Namespace namespace_9d58c1cd/namespace_9d58c1cd
+    // Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
     // Params 0
     // Checksum 0xe87f8261, Offset: 0x2d00
     // Size: 0xd4, Type: dev

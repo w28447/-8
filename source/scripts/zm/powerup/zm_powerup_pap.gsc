@@ -41,7 +41,7 @@ function __init__()
 // Params 1
 // Checksum 0xf6b66dbf, Offset: 0x170
 // Size: 0xcc
-function function_8d37256a( e_player )
+function grab_pack_a_punch( e_player )
 {
     foreach ( player in level.activeplayers )
     {
@@ -153,7 +153,7 @@ function function_40935801()
 // Params 1
 // Checksum 0x1835b255, Offset: 0x740
 // Size: 0x254
-function function_35ae342e( e_player )
+function pack_a_punch_powerup( e_player )
 {
     if ( e_player isthrowinggrenade() )
     {

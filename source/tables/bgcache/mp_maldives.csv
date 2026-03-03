@@ -336,7 +336,7 @@ soundalias,#hash_3f8d713abf4d10fe
 soundalias,#hash_408929f0e391d654
 soundalias,#amb_generator
 soundalias,#hash_417dd681de72d64c
-soundalias,#hash_41e8ba5fb1e09c9d
+soundalias,#amb_boat_creak
 soundalias,#hash_436a4f77c54e7912
 soundalias,#hash_438b930b61d96f77
 soundalias,#hash_438dac17f69b90a2
@@ -444,7 +444,7 @@ soundalias,#hash_79e7070c3130f4a9
 soundalias,#exp_veh_plane_spinout_lp
 soundalias,#hash_7ac5fa6568de2461
 soundalias,#hash_7b03a9cee3b85887
-soundalias,#hash_7c0ea1d56c2afc2b
+soundalias,#amb_generic_fan
 soundalias,#exp_veh_med
 soundalias,#hash_7c3c891b334ff517
 soundalias,#hash_7c5be2e90a66d8b5

@@ -7371,7 +7371,7 @@ image,d#i_c_ega_soldier_3_knife_c
 image,#i_t8_dirt_rocky_03_gravel_c
 image,#i_t8_dirt_rocky_03_gravel_r
 image,#i_mtl_p7_magazine_front_hunting_04_c
-image,d#hash_77933ec53e1894f
+image,d#i_mtl_p8_wz_skt_speaker_array_decal_bare_metal_g
 image,#i_veh_t8_civ_truck_med_decals_bumper03_dirty_c
 image,#i_mtl_p7_debris_trash_bottle_water_01_n
 image,#i_mtl_p7_debris_trash_bottle_water_01_c
@@ -7510,7 +7510,7 @@ image,#hash_a5a9d01f7728fba
 image,#hash_a5a9e01f772916d
 image,#i_t7_stone_pebbles_01_c
 image,#i_t7_stone_pebbles_01_n
-image,d#hash_a670cee54521f1b
+image,d#i_mtl_p8_wz_skt_vending_machine_logo_04_c
 image,#i_veh_t8_civ_truck_med_decals_cigarette_dirty_c
 image,#i_veh_t8_civ_truck_med_decals_cigarette_dirty_n
 image,#i_mtl_p7_fir_barrier_concrete_01_g
@@ -7518,7 +7518,7 @@ image,#i_mtl_p7_fir_barrier_concrete_01_c
 image,#i_mtl_p7_fir_barrier_concrete_01_o
 image,#i_mtl_p7_fir_barrier_concrete_01_n
 image,#i_mtl_p7_fir_barrier_concrete_01_s
-image,#hash_a76dfcc210e216d
+image,#i_mtl_p8_col_platform_raised_screw_n
 image,#i_c_t7_warrior_body1_emissive_e
 image,d#i_mtl_p8_wz_skt_trash_can_05_base_r
 image,#i_mtl_p7_boxing_dirty_c
@@ -7857,7 +7857,7 @@ image,#i_p7_ntx_bathrobe_hanging_stitches_n
 image,#i_p7_ntx_bathrobe_hanging_stitches_c
 image,d#fxt_smk_tendril_1
 image,d#fxt_smk_tendril_2
-image,d#hash_1220db061b025e60
+image,d#i_mtl_p8_kit_spa_cen_02_set_concrete_dirt_decal_c
 image,#i_veh_t8_civ_truck_med_decal_button04_c
 image,#i_mtl_p7_soc_food_snacks_logo_10_c
 image,#hash_12312a06b9517754
@@ -7934,7 +7934,7 @@ image,#i_c_t7_battery_hairshell2_c
 image,d#$reveal
 image,d#fxt_fog_slow_lg_anim
 image,d#$camo_base_detail
-image,d#hash_138aca44883cc4b6
+image,d#i_mtl_p8_wz_skt_vending_machine_set_decal01_g
 image,#i_mtl_p8_wz_skt_garage_pipes_sprinkler_details_r
 image,#i_mtl_p8_wz_skt_garage_pipes_sprinkler_details_n
 image,#i_mtl_p8_wz_skt_garage_pipes_sprinkler_details_c
@@ -8555,8 +8555,8 @@ image,#i_t8_decal_tech_detail_high_tech_32_n
 image,#i_t8_decal_tech_detail_high_tech_32_c
 image,#fxt_bio_fly_top
 image,d#i_c_t7_gunslinger_fabric_n
-image,#hash_20eb4a7992ca7f66
-image,#hash_20eb577992ca957d
+image,#i_mtl_p7_zm_tra_sign_decal_06_n
+image,#i_mtl_p7_zm_tra_sign_decal_06_c
 image,d#global_rope_lbrown_dark_c
 image,#hash_20f1709580a799f9
 image,#hash_20f17f9580a7b376
@@ -8957,9 +8957,9 @@ image,#hash_29cd58213c9b9780
 image,#hash_29cd59213c9b9933
 image,#i_mtl_p7_eth_cave_torch_label_c
 image,#hash_29e5271683656ca0
-image,#hash_29ee018af98f2f79
-image,#hash_29ee0b8af98f4077
-image,#hash_29ee0c8af98f422a
+image,#i_mtl_p7_zm_tra_sign_decal_20_c
+image,#i_mtl_p7_zm_tra_sign_decal_20_m
+image,#i_mtl_p7_zm_tra_sign_decal_20_n
 image,#hash_2a0b01800570df8a
 image,#hash_2a0b06800570e809
 image,d#i_veh_t8_decal_grunge_concrete_drip_02b_blend_r
@@ -8968,7 +8968,7 @@ image,#i_veh_t8_decal_gasdoor_02_r
 image,#i_veh_t8_decal_gasdoor_02_n
 image,#hash_2a27635db3b586d6
 image,#hash_2a2882540b234262
-image,#hash_2a2c506b29eb5c5b
+image,#i_mtl_p8_foliage_flower_african_daisies_sml_proxy_distance
 image,#i_t8_sand_debris_01_r
 image,#i_t8_sand_debris_01_c
 image,#hash_2a439b51210fce59
@@ -9094,7 +9094,7 @@ image,d#i_veh_t8_greeble_01_o
 image,#hash_2d97224064d78788
 image,d#core_glass_plain_c
 image,d#fxt_gib_concrete_02
-image,d#hash_2db4af794e2d1178
+image,d#i_mtl_p8_wz_skt_vending_machine_set_metal_01_r
 image,d#fxt8_light_artifact_14
 image,#hash_2dd8aba0bf8e78e0
 image,#i_c_t7_techno_body1_shoulderguard_left_c
@@ -9261,7 +9261,7 @@ image,#i_veh_t8_civ_truck_med_decals_custom01_dirty_n
 image,#i_t7_detail_rust_01
 image,#i_veh_t8_civ_truck_med_decal_cells_shape_n
 image,#i_veh_t8_civ_truck_med_decal_cells_shape_c
-image,d#hash_31a6e1253f88ed6b
+image,d#i_mtl_p8_wz_skt_skateboard_longboard_01_wood_n
 image,#i_p7_sign_safety_horizontal_c
 image,#i_p7_sign_safety_horizontal_n
 image,#i_mtl_p8_wz_skt_hat_mesh_01_g
@@ -9530,7 +9530,7 @@ image,#hash_372c9545b8826ce9
 image,#hash_372db60463c2a3ff
 image,#hash_372db90463c2a918
 image,#hash_372dbd0463c2afe4
-image,d#hash_37322bf33ad5a31d
+image,d#i_mtl_p8_wz_skt_trash_can_set_05_decal_c
 image,#i_mtl_p8_col_desk_office_wood_m
 image,d#i_mtl_p8_lab_tech_rack_metal_painted_04_m
 image,d#i_mtl_p7_wall_mobile_dep_decal_details_01_c
@@ -9592,7 +9592,7 @@ image,#hash_38ab3272f51b11e7
 image,#hash_38ab3372f51b139a
 image,#hash_38ab3472f51b154d
 image,d#i_mtl_t7_metal_paint_scratched_01_g
-image,d#hash_38bff82e8dc198d5
+image,d#i_mtl_p8_wz_skt_trash_can_set_decal_c
 image,#i_t7_wood_worn_v2_g
 image,#i_t7_wood_worn_v2_c
 image,d#i_mtl_brick_cocaine_wrapper_n
@@ -10538,7 +10538,7 @@ image,#hash_4dac7b0a1b54667c
 image,#hash_4dac7c0a1b54682f
 image,#i_t7_rubber_trim_strip_n
 image,#hash_4de0c43e6094bc9b
-image,#hash_4de5653c57e04567
+image,#i_mtl_p8_wz_skt_dub_exterior_poolside_lounge_chair_wood_01g
 image,d#i_mtl_p8_col_sneeze_guard_metal_m
 image,#hash_4df201c8a7625099
 image,#i_mtl_veh_t7_dmg_scrapes_chips_4_o
@@ -10625,8 +10625,8 @@ image,#i_p7_aqu_railings_set_metal_rust_m
 image,#i_p7_aqu_railings_set_metal_rust_n
 image,#i_p7_aqu_railings_set_metal_rust_g
 image,#i_p7_aqu_railings_set_metal_rust_c
-image,d#hash_4f96177314c6a3f2
-image,d#hash_4f96187314c6a5a5
+image,d#i_mtl_p8_wz_skt_vending_machine_logo_04_c_02
+image,d#i_mtl_p8_wz_skt_vending_machine_logo_04_c_03
 image,#i_mtl_p7_toolbox_handheld_small_blue_c
 image,#i_mtl_p7_chair_cafe_wood_n
 image,#i_mtl_p7_chair_cafe_wood_g
@@ -11549,7 +11549,7 @@ image,#i_t8_wood_planks_4x1_long_01_o
 image,#i_t8_wood_planks_4x1_long_01_n
 image,d#i_t7_glass_dirty_grimes_02_g
 image,d#i_t7_glass_dirty_grimes_02_c
-image,d#hash_6268e64344b5a2a0
+image,d#i_mtl_p8_wz_skt_skateboard_modern_01_trucks_metal_g
 image,#i_t8_decal_tech_detail_screw_01_g
 image,d#i_t8_decal_tech_detail_screw_01_c
 image,d#i_t8_decal_tech_detail_screw_01_n
@@ -11722,7 +11722,7 @@ image,#i_c_t7_warrior_body1_plastic_c
 image,#i_c_t7_warrior_body1_plastic_o
 image,#i_c_t7_warrior_body1_plastic_n
 image,#i_t7_wood_plywood_splintered_n
-image,d#hash_66524996deb31d25
+image,d#i_mtl_p8_wz_skt_skateboard_longboard_01_rubber_m
 image,d#$spec_simple
 image,d#i_t7_decal_damage_burn_impact_01_c
 image,#i_c_t7_warrior_head1_beardshell_c
@@ -12048,7 +12048,7 @@ image,#hash_6d14daa1259c2113
 image,#hash_6d14dea1259c27df
 image,#i_t7_wood_trim_16x128_01_c
 image,#i_t7_wood_trim_16x128_01_n
-image,#hash_6d1bfe58af1e9f2c
+image,#i_mtl_p8_ice_controlroom_wall_panel_circuit_01_decal_01_c
 image,#i_mtl_p8_computer_classroom_keyboard_plastic01_n
 image,#i_mtl_p8_computer_classroom_keyboard_plastic01_m
 image,#i_t8_metal_paint_scratched_01_rust_r
@@ -12066,7 +12066,7 @@ image,#i_mtl_p7_light_led_ceiling_01_c
 image,#i_mtl_p7_light_led_ceiling_01_m
 image,#i_mtl_p8_spa_magazine_tourist_01_c
 image,#hash_6da3f06ddcc92df8
-image,d#hash_6db7fceb46b55849
+image,d#i_mtl_p8_wz_skt_vending_machine_set_logo_03_c
 image,#hash_6dba7465de842ad4
 image,#hash_6dba7565de842c87
 image,#i_mtl_p7_slu_light_flourescent_ceiling_n
@@ -12160,7 +12160,7 @@ image,#i_mtl_p7_slu_camera_security_set_decal_c
 image,#i_mtl_p7_slu_camera_security_set_decal_n
 image,#hash_701ccd9c5d71d54c
 image,#hash_701cd29c5d71ddcb
-image,d#hash_704a98bf18a8a48c
+image,d#i_mtl_p7_mou_barrel_metal_02_decal_02_n
 image,#i_veh_t8_plastic_rough_heavy_01_n
 image,#i_mtl_p7_wes_basin_metal_set_decal_rust
 image,#hash_7066d69ec453c039
@@ -12398,8 +12398,8 @@ image,#hash_7574021d32bdf34f
 image,d#i_t7_micro_metal_painted_scuffed_01_c
 image,d#i_t7_micro_metal_painted_scuffed_01_g
 image,d#i_t7_micro_metal_painted_scuffed_01_n
-image,#hash_758db662d6787fd3
-image,#hash_758db762d6788186
+image,#i_mtl_p7_zm_tra_sign_yield_02_m
+image,#i_mtl_p7_zm_tra_sign_yield_02_n
 image,#i_mtl_p7_debris_trash_paper_03_c
 image,#i_mtl_p7_debris_trash_paper_03_n
 image,d#i_veh_t8_decal_gauge_27_c
@@ -12474,7 +12474,7 @@ image,d#i_mtl_p7_debris_metal_scrap_02_s
 image,#i_t7_grass_lawn_medium_small_green_c
 image,#i_t7_grass_lawn_medium_small_green_g
 image,#i_t7_grass_lawn_medium_small_green_n
-image,#hash_771ebb7baeda197d
+image,#i_mtl_p8_wz_skt_airduct_c_t_rust_c
 image,#i_mtl_p8_cell_antenna_roof_decal_02_n
 image,#i_t7_brick_worn_dirty_red_c
 image,#i_t7_brick_worn_dirty_red_n
@@ -12865,8 +12865,8 @@ image,d#i_wpn_t8_eqp_briefcase_bomb_glass_o
 image,d#i_wpn_t8_eqp_briefcase_bomb_glass_g
 image,d#i_wpn_t8_eqp_briefcase_bomb_glass_c
 image,d#i_wpn_t8_eqp_briefcase_bomb_glass_s
-image,#hash_7fe735b9db8e4bdf
-image,#hash_7fe738b9db8e50f8
+image,#i_mtl_p7_inf_vista_stalingrad_bldg_08_metal_c
+image,#i_mtl_p7_inf_vista_stalingrad_bldg_08_metal_n
 image,#i_mtl_p8_stand_postcard_m
 image,#i_mtl_p8_stand_postcard_n
 image,#i_t7_metal_rust_ceiling_01_n

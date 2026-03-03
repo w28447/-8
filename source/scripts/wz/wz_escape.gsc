@@ -165,7 +165,7 @@ function function_69e60a10( var_e4204b3 )
 {
     finalcircle = level.deathcircles[ level.deathcircles.size - 1 ];
     hint = struct::get( var_e4204b3 );
-    finalcircle.var_3b9f4abf = hint.origin;
+    finalcircle.maporigin = hint.origin;
     finalcircle.mapwidth = 1024;
     finalcircle.mapheight = 1024;
 }

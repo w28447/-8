@@ -3,9 +3,9 @@
 #using scripts\core_common\system_shared;
 #using scripts\core_common\util_shared;
 
-#namespace namespace_9d58c1cd;
+#namespace zm_escape_weap_quest_spoon;
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 0
 // Checksum 0x80f724d1, Offset: 0x230
 // Size: 0x4
@@ -14,7 +14,7 @@ function init()
     
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 0
 // Checksum 0xb53ed20d, Offset: 0x240
 // Size: 0x19c
@@ -27,7 +27,7 @@ function init_clientfields()
     clientfield::register( "world", "p_w_o_num_03", 1, getminbitcountfornum( 10 ), "int", &function_68a0de20, 0, 0 );
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 0
 // Checksum 0x80f724d1, Offset: 0x3e8
 // Size: 0x4
@@ -36,7 +36,7 @@ function main()
     
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 7
 // Checksum 0x6887082, Offset: 0x3f8
 // Size: 0x8c
@@ -46,7 +46,7 @@ function function_d38f33fb( localclientnum, oldval, newval, bnewent, binitialsna
     s_number function_ba8cd0cf( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump );
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 7
 // Checksum 0xc4149931, Offset: 0x490
 // Size: 0x8c
@@ -56,7 +56,7 @@ function function_c5199710( localclientnum, oldval, newval, bnewent, binitialsna
     s_number function_ba8cd0cf( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump );
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 7
 // Checksum 0xd5d89043, Offset: 0x528
 // Size: 0x8c
@@ -66,7 +66,7 @@ function function_68a0de20( localclientnum, oldval, newval, bnewent, binitialsna
     s_number function_ba8cd0cf( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump );
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 7
 // Checksum 0x9de7415d, Offset: 0x5c0
 // Size: 0x35e
@@ -133,7 +133,7 @@ function function_ba8cd0cf( localclientnum, oldval, newval, bnewent, binitialsna
     level.var_22a393d4[ level.var_22a393d4.size ] = self.mdl_paper;
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 1
 // Checksum 0xbe9d5075, Offset: 0x928
 // Size: 0x2f4
@@ -198,7 +198,7 @@ function function_386b1e70( localclientnum )
     }
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 1
 // Checksum 0x77328f3a, Offset: 0xc28
 // Size: 0x3c4
@@ -286,7 +286,7 @@ function function_43c140b4( localclientnum )
     }
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 7
 // Checksum 0x912bf96a, Offset: 0xff8
 // Size: 0x64
@@ -295,7 +295,7 @@ function play_elevator_rumble( localclientnum, oldval, newval, bnewent, binitial
     self playrumbleonentity( localclientnum, #"hash_64b33287bc9d79f5" );
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
+// Namespace zm_escape_weap_quest_spoon/zm_escape_weap_quest_spoon
 // Params 7
 // Checksum 0xcb12775d, Offset: 0x1068
 // Size: 0x364

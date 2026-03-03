@@ -1,6 +1,6 @@
 type,name
-streamkey,#hash_e15733ab0187a53
-streamkey,#hash_112e0b4d7d8adbfa
+streamkey,#mp_grind_fj_stream
+streamkey,#mp_grind_fj_loaded
 streamkey,#hash_3fee1f55b6f0b3e5
 streamkey,#hash_1ba4b6cd8b9388e0
 sound,#mp_grind.fj

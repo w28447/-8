@@ -491,7 +491,7 @@ soundalias,#hash_18e8eb5557ea77fc
 soundalias,#exp_barrel
 soundalias,#hash_1a6485b96677518d
 soundalias,#hash_1c4045d3bb8067d5
-soundalias,#hash_1f0074f93c4b7b43
+soundalias,#amb_fan_generic
 soundalias,#hash_1f9b1d980061ea0e
 soundalias,#hash_1ff8bec27dfc1b70
 soundalias,#vox_muse_exhibit_moon_6
@@ -560,7 +560,7 @@ soundalias,#hash_3f3c885c546076e2
 soundalias,#hash_3f8d713abf4d10fe
 soundalias,#hash_412405ca0ff49480
 soundalias,#amb_generator
-soundalias,#hash_41e8ba5fb1e09c9d
+soundalias,#amb_boat_creak
 soundalias,#hash_42fc14ac8b8a952f
 soundalias,#hash_436a4f77c54e7912
 soundalias,#hash_438b930b61d96f77

@@ -1,8 +1,8 @@
-#component_pickup,#hash_d094a602078e8fe,#hash_34c0c21c9d50cfe1,0,0,FALSE,FALSE,FALSE,FALSE
-#component_pickup,#hash_d0949602078e74b,#hash_53b8c70d7b01c10a,0,0,FALSE,FALSE,FALSE,FALSE
-#component_pickup,#hash_d0948602078e598,#hash_722821dfa4b0a277,0,0,FALSE,FALSE,FALSE,FALSE
-#component_pickup,#hash_d094f602078f17d,#hash_4d608248f63260a8,0,0,FALSE,FALSE,FALSE,FALSE
-#component_pickup,#hash_d094e602078efca,#hash_35a30591398dd13d,0,0,FALSE,FALSE,FALSE,FALSE
+#component_pickup,#audio_reel_1,#vox_audio_reel_1_pickup,0,0,FALSE,FALSE,FALSE,FALSE
+#component_pickup,#audio_reel_2,#vox_audio_reel_2_pickup,0,0,FALSE,FALSE,FALSE,FALSE
+#component_pickup,#audio_reel_3,#vox_audio_reel_3_pickup,0,0,FALSE,FALSE,FALSE,FALSE
+#component_pickup,#audio_reel_4,#vox_audio_reel_4_pickup,0,0,FALSE,FALSE,FALSE,FALSE
+#component_pickup,#audio_reel_5,#vox_audio_reel_5_pickup,0,0,FALSE,FALSE,FALSE,FALSE
 #component_pickup,#hash_322909f92aa04801,#hash_76984f04e0e02a0,0,0,FALSE,FALSE,FALSE,FALSE
 #component_pickup,#hash_322906f92aa042e8,#hash_21417c426795348b,0,0,FALSE,FALSE,FALSE,FALSE
 #component_pickup,#hash_322907f92aa0449b,#hash_7e900095cf362c1e,0,0,FALSE,FALSE,FALSE,FALSE

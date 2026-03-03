@@ -686,7 +686,7 @@ function function_6c31bcd3()
 {
     self endon( #"disconnect" );
     self thread acid_trap_think();
-    self thread function_5a8a4082();
+    self thread spin_trap_think();
     self thread fan_trap_think();
     self thread function_d291665f();
     self flag::wait_till_all( level.var_409cb3de );
@@ -769,7 +769,7 @@ function function_352a977a()
 // Params 0
 // Checksum 0xd362561a, Offset: 0x3228
 // Size: 0x1b4
-function function_5a8a4082()
+function spin_trap_think()
 {
     self endon( #"disconnect" );
     s_spin_trap_place_loc = struct::get( "s_spin_trap_place_loc" );
@@ -984,7 +984,7 @@ function function_68eca9eb()
 {
     self endon( #"disconnect" );
     level.t_g_o_s4 = getent( "t_g_o_s4", "targetname" );
-    self thread ee_exp_monkey_fire_();
+    self thread function_da7db256();
     self flag::wait_till( #"hash_21827937692e2aba" );
     self construction();
 }
@@ -993,7 +993,7 @@ function function_68eca9eb()
 // Params 0
 // Checksum 0x2c0ba604, Offset: 0x3d78
 // Size: 0x15e
-function ee_exp_monkey_fire_()
+function function_da7db256()
 {
     self endon( #"disconnect", #"hash_21827937692e2aba" );
     

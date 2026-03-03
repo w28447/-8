@@ -246,12 +246,12 @@ function function_161106e1( localclientnum )
     while ( !( isdefined( level.gameended ) && level.gameended ) )
     {
         w_currentweapon = getcurrentweapon( localclientnum );
-        var_4c47f204 = getweaponammoclip( localclientnum, w_currentweapon );
+        n_ammocount = getweaponammoclip( localclientnum, w_currentweapon );
         n_clipsize = w_currentweapon.clipsize;
         
         if ( n_clipsize > 0 )
         {
-            var_102d6996 = var_4c47f204 / n_clipsize;
+            var_102d6996 = n_ammocount / n_clipsize;
         }
         else
         {

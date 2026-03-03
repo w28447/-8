@@ -987,7 +987,7 @@
 #mastercraft_hades_snake,#camo_active_sig_lmg_spray_venom_base,#mastercraft,#,#,#,#,#,#ultra,#,#lmg_spray_t8,TRUE
 #mastercraft_hades_snake,#hash_6c9b96da0996fb0f,#gesture,#,#,#,#,#,#legendary,#,#,FALSE
 #mastercraft_hades_snake,#loot_ui_icon_stickers_hades_mastercraft,#sticker,#,#,#,#,#,#common,#,#,FALSE
-#mastercraft_hades_snake,#hash_5af03ac2f41f4a3d,#calling_card,#,#,#,#,#,#rare,#,#,FALSE
+#mastercraft_hades_snake,#loot_ui_icon_callingcards_hades_mastercraft,#calling_card,#,#,#,#,#,#rare,#,#,FALSE
 #mastercraft_sdm_wetworks,#camo_active_sig_sniper_powersemi_vietnam_base,#mastercraft,#,#,#,#,#,#ultra,#,#sniper_powersemi_t8,TRUE
 #mastercraft_sdm_wetworks,#hash_417f247f92bbd13f,#gesture,#,#,#,#,#,#legendary,#,#,FALSE
 #mastercraft_sdm_wetworks,#loot_ui_icon_stickers_sdm_mastercraft,#sticker,#,#,#,#,#,#common,#,#,FALSE
@@ -1312,7 +1312,7 @@
 #hash_2c7d83fa4acfe17,#camo_active_sig_tr_longburst_scrimshaw_base,#mastercraft,#,#,#,#,#,#ultra,#,#tr_longburst_t8,TRUE
 #hash_2c7d83fa4acfe17,#hash_687bf72dbf4322d6,#no_dupe_crate,#,#,#,#,#,#,#,#,FALSE
 #hash_6c86260ff6cdaf19,#hash_21c8ff48f7098f22,#gesture,#,#,#,#,#,#legendary,#,#,TRUE
-#hash_6c86260ff6cdaf19,#hash_3c1e200fadfb073c,#sticker,#,#,#,#,#,#common,#,#,TRUE
+#hash_6c86260ff6cdaf19,#loot_ui_icon_stickers_gks_mastercraft,#sticker,#,#,#,#,#,#common,#,#,TRUE
 #hash_6c86260ff6cdaf19,#camo_active_sig_smg_accurate_darkunicorn_base,#mastercraft,#,#,#,#,#,#ultra,#,#smg_accurate_t8,TRUE
 #hash_6c86260ff6cdaf19,#hash_687bf72dbf4322d6,#no_dupe_crate,#,#,#,#,#,#,#,#,FALSE
 #hash_36fa10a8f534504b,#hash_4e9d6008197c7785,#reticle,#,#,#,#,#,#legendary,#holo,#,TRUE
@@ -1320,7 +1320,7 @@
 #hash_36fa10a8f534504b,#camo_active_sig_smg_fastfire_voyage_base,#mastercraft,#,#,#,#,#,#ultra,#,#smg_fastfire_t8,TRUE
 #hash_36fa10a8f534504b,#hash_687bf72dbf4322d6,#no_dupe_crate,#,#,#,#,#,#,#,#,FALSE
 #hash_44b958641a06a3bb,#hash_36337e7c0f77f671,#gesture,#,#,#,#,#,#legendary,#,#,TRUE
-#hash_44b958641a06a3bb,#hash_1b1300f59d64684e,#sticker,#,#,#,#,#,#common,#,#,TRUE
+#hash_44b958641a06a3bb,#loot_ui_icon_stickers_kn57_mastercraft,#sticker,#,#,#,#,#,#common,#,#,TRUE
 #hash_44b958641a06a3bb,#camo_active_sig_ar_modular_faberge_base,#mastercraft,#,#,#,#,#,#ultra,#,#ar_modular_t8,TRUE
 #hash_44b958641a06a3bb,#hash_687bf72dbf4322d6,#no_dupe_crate,#,#,#,#,#,#,#,#,FALSE
 #hash_3a8f1af95869c291,#camo_active_sig_tr_midburst_bomber_base,#mastercraft,#,#,#,#,#,#ultra,#,#tr_midburst_t8,TRUE

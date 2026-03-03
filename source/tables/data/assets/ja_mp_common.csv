@@ -2,7 +2,7 @@ type,name
 techset,d#hash_13b5e1db9658f56c
 image,#killcamindicator
 image,#uie_t7_hud_mp_notifications_xp
-streamkey,#hash_3e8800adaf425283
+streamkey,#mp_common_en_stream
 streamkey,#mp_common_en_loaded
 streamkey,#hash_4865481749aa2db5
 streamkey,#hash_49f09b10812aa7d0

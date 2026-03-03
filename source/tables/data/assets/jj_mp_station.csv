@@ -1,6 +1,6 @@
 type,name
-streamkey,#hash_73497b899edf2399
-streamkey,#hash_73c702ae1a3a95c4
+streamkey,#mp_station_fj_stream
+streamkey,#mp_station_fj_loaded
 streamkey,#hash_488a541b2533d74f
 streamkey,#hash_32ceba7883c083c6
 sound,#mp_station.fj
