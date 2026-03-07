@@ -400,7 +400,7 @@ function enable_groom_lake()
     level flag::set( #"hash_537cc10c9deca9da" );
     level flag::set( #"hash_381e771ed6c80ccb" );
     zm_office_teleporters::function_bb3f9afd();
-    level.var_a23b5c5 movez( 150, 1 );
+    level.e_cage_portal_blocker movez( 150, 1 );
 }
 
 // Namespace zm_office_zstandard/zm_office_zstandard

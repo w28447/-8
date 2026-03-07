@@ -132,8 +132,8 @@ function function_bda82828()
     var_3e910f73 = getent( "mdl_power_bullet", "targetname" );
     var_3e910f73.origin += ( 0, 0, 2048 );
     var_3e910f73 thread zm_red_util::barrier_impact();
-    var_4ec3364d = getent( "perseus_amphitheater_clip", "targetname" );
-    var_4ec3364d notsolid();
+    mdl_perseus_clip = getent( "perseus_amphitheater_clip", "targetname" );
+    mdl_perseus_clip notsolid();
     level clientfield::set( "" + #"amphi_blood", 1 );
     a_n_sections = [];
     level.var_2f2b78fb.var_9400690b = [];
@@ -184,8 +184,8 @@ function function_bda82828()
     s_loc struct::delete();
     zm_powerups::function_74b8ec6b( #"nuke" );
     var_3e910f73.origin -= ( 0, 0, 2048 );
-    var_4ec3364d solid();
-    var_4ec3364d thread zm_red_util::barrier_impact();
+    mdl_perseus_clip solid();
+    mdl_perseus_clip thread zm_red_util::barrier_impact();
     exploder::exploder( "Fxexp_barrier_amph" );
     
     if ( function_71ac80d2() )
@@ -634,7 +634,7 @@ function function_e059d0e1()
 function function_95d6655b()
 {
     level endon( #"hash_4d8091aa6a26d815" );
-    var_168ccd6b = getent( "vol_power_quest_kill_zone", "targetname" );
+    vol_kill_zone = getent( "vol_power_quest_kill_zone", "targetname" );
     level.zones[ #"zone_amphitheater" ].is_spawning_allowed = 0;
     wait 2;
     
@@ -642,7 +642,7 @@ function function_95d6655b()
     {
         foreach ( ai_zombie in getaiteamarray( level.zombie_team ) )
         {
-            if ( !( isdefined( ai_zombie.var_ae4569d5 ) && ai_zombie.var_ae4569d5 ) && ai_zombie istouching( var_168ccd6b ) && isdefined( ai_zombie ) )
+            if ( !( isdefined( ai_zombie.var_ae4569d5 ) && ai_zombie.var_ae4569d5 ) && ai_zombie istouching( vol_kill_zone ) && isdefined( ai_zombie ) )
             {
                 ai_zombie thread despawn_zombie();
             }
@@ -850,11 +850,11 @@ function perseus_amphitheater()
     mdl_perseus playsound( #"hash_4917791296076e1d" );
     wait 4;
     exploder::stop_exploder( "Fxexp_barrier_amph_perseus" );
-    var_4ec3364d = getent( "perseus_amphitheater_clip", "targetname" );
+    mdl_perseus_clip = getent( "perseus_amphitheater_clip", "targetname" );
     
-    if ( isdefined( var_4ec3364d ) )
+    if ( isdefined( mdl_perseus_clip ) )
     {
-        var_4ec3364d delete();
+        mdl_perseus_clip delete();
     }
 }
 
@@ -964,9 +964,9 @@ function function_aab4eb23()
         
         if ( isplayer( e_attacker ) && zm_utility::is_player_valid( e_attacker, 0, 0, 0 ) )
         {
-            var_168ccd6b = getent( "vol_power_quest_kill_zone", "targetname" );
+            vol_kill_zone = getent( "vol_power_quest_kill_zone", "targetname" );
             
-            if ( e_attacker istouching( var_168ccd6b ) )
+            if ( e_attacker istouching( vol_kill_zone ) )
             {
                 break;
             }

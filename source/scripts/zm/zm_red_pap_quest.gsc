@@ -487,7 +487,7 @@ function function_9e285681( var_bc66d64b )
     {
         while ( true )
         {
-            ai_gegenees = zombie_utility::spawn_zombie( level.var_b3d6ef3b[ 0 ], "gegenees", var_46bfea0, var_bc66d64b );
+            ai_gegenees = zombie_utility::spawn_zombie( level.a_sp_gegenees[ 0 ], "gegenees", var_46bfea0, var_bc66d64b );
             
             if ( isdefined( ai_gegenees ) )
             {
@@ -1303,13 +1303,13 @@ function pegasus_strike( ai_target )
 function function_fd484520()
 {
     level endon( #"pegasus_ride" );
-    var_cfb8558b = getent( "trigger_pegasus_takeoff", "targetname" );
+    t_takeoff = getent( "trigger_pegasus_takeoff", "targetname" );
     
     while ( true )
     {
         foreach ( player in util::get_human_players( #"allies" ) )
         {
-            if ( zombie_utility::is_player_valid( player ) && player istouching( var_cfb8558b ) )
+            if ( zombie_utility::is_player_valid( player ) && player istouching( t_takeoff ) )
             {
                 level.var_9ab86086 = 1;
                 continue;
@@ -1329,7 +1329,7 @@ function function_fd484520()
 // Size: 0x16a
 function function_852915f8( e_player )
 {
-    var_cfb8558b = getent( "trigger_pegasus_takeoff", "targetname" );
+    t_takeoff = getent( "trigger_pegasus_takeoff", "targetname" );
     
     if ( level flag::get( #"hash_32ff7a456732ef09" ) )
     {
@@ -1338,7 +1338,7 @@ function function_852915f8( e_player )
             str_prompt = zm_utility::function_d6046228( #"hash_1bda4036c638cd3e", #"hash_3255047731d03c2a" );
             self sethintstringforplayer( e_player, str_prompt );
         }
-        else if ( getplayers().size > 1 && e_player istouching( var_cfb8558b ) )
+        else if ( getplayers().size > 1 && e_player istouching( t_takeoff ) )
         {
             self sethintstringforplayer( e_player, #"hash_60a3e7841c86cad1" );
         }
@@ -2178,7 +2178,7 @@ function function_d1f0f2db()
 {
     level endon( #"egg_free" );
     level flag::wait_till( #"cage_dropped" );
-    ai_gegenees = zombie_gegenees_util::function_2ce6dcd4( level.var_b3d6ef3b[ 0 ], struct::get( "serpent_cage_defender" ), level.round_number );
+    ai_gegenees = zombie_gegenees_util::function_2ce6dcd4( level.a_sp_gegenees[ 0 ], struct::get( "serpent_cage_defender" ), level.round_number );
     
     if ( isalive( ai_gegenees ) )
     {
@@ -2977,9 +2977,9 @@ function function_d420d273()
         return 0;
     }
     
-    var_a44eef3a = getent( "trigger_pap_arena", "targetname" );
+    t_pap_arena = getent( "trigger_pap_arena", "targetname" );
     
-    if ( self istouching( var_a44eef3a ) )
+    if ( self istouching( t_pap_arena ) )
     {
         return 0;
     }

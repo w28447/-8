@@ -1177,17 +1177,17 @@ function function_9f0de8b3()
 function function_9768c04b()
 {
     level endon( #"end_crypt_unlock" );
-    var_7853cc7c = getent( "imp_symbol_base", "targetname" );
+    mdl_symbol_base = getent( "imp_symbol_base", "targetname" );
     level.var_6a17ff24 = 0;
     callback::on_ai_killed( &on_nosferatu_killed );
-    var_7853cc7c clientfield::set( "" + #"hash_3d5a64bed5e39d24", 1 );
+    mdl_symbol_base clientfield::set( "" + #"hash_3d5a64bed5e39d24", 1 );
     
     while ( !level flag::get( #"hash_54326b9f13bd4f1" ) )
     {
         level flag::wait_till( #"hash_2e0f59cef233a264" );
-        var_7853cc7c clientfield::set( "" + #"hash_3d5a64bed5e39d24", 0 );
+        mdl_symbol_base clientfield::set( "" + #"hash_3d5a64bed5e39d24", 0 );
         function_cc11b6fd();
-        var_7853cc7c clientfield::set( "" + #"hash_3d5a64bed5e39d24", 1 );
+        mdl_symbol_base clientfield::set( "" + #"hash_3d5a64bed5e39d24", 1 );
     }
 }
 
@@ -1306,12 +1306,12 @@ function open_crypt()
 function function_520a8a02()
 {
     level endon( #"hash_69c33933b1ab3e2b" );
-    var_77663e28 = getent( "t_imp_in", "targetname" );
+    t_arena = getent( "t_imp_in", "targetname" );
     mdl_gates = getentarray( "mdl_crp_gates", "targetname" );
     
     while ( !level flag::get( #"hash_61263135b6fb6340" ) )
     {
-        if ( array::is_touching( util::get_active_players(), var_77663e28 ) )
+        if ( array::is_touching( util::get_active_players(), t_arena ) )
         {
             if ( !level flag::get( #"hash_864c8ec1475abdc" ) )
             {
@@ -1328,7 +1328,7 @@ function function_520a8a02()
         wait 0.5;
     }
     
-    var_77663e28 delete();
+    t_arena delete();
 }
 
 // Namespace mansion_impaler/zm_mansion_impaler

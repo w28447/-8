@@ -3354,9 +3354,9 @@ function function_49b3f5aa()
     level endon( #"end_game", #"free_ankh" + "_ended_early", #"end_of_round", #"hash_6a89add74b46c461" );
     n_random_wait = randomfloatrange( 10, 30 );
     wait n_random_wait;
-    var_d5bd9bcb = getaiarchetypearray( #"gegenees" );
+    a_ai_gegenees = getaiarchetypearray( #"gegenees" );
     
-    if ( zm_round_spawning::function_d0db51fc( #"gegenees" ) || var_d5bd9bcb.size > 0 )
+    if ( zm_round_spawning::function_d0db51fc( #"gegenees" ) || a_ai_gegenees.size > 0 )
     {
         return;
     }

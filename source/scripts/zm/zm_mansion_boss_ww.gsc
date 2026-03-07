@@ -124,9 +124,9 @@ function init_traps()
     
     for ( i = 1; i <= 4 ; i++ )
     {
-        var_4ee50cee = struct::get( "boss_sigil_" + i, "targetname" );
-        e_sigil = util::spawn_model( var_4ee50cee.model, var_4ee50cee.origin, var_4ee50cee.angles );
-        e_sigil.targetname = var_4ee50cee.targetname;
+        s_sigil = struct::get( "boss_sigil_" + i, "targetname" );
+        e_sigil = util::spawn_model( s_sigil.model, s_sigil.origin, s_sigil.angles );
+        e_sigil.targetname = s_sigil.targetname;
         e_sigil.var_33fc862a = 0;
         level.var_60ce0a79[ i ] = e_sigil;
     }
@@ -2154,7 +2154,7 @@ function function_1025059f( var_2175ea54, n_statue, var_2d102ea7, var_b7daddf4 =
     if ( isdefined( var_2175ea54 ) )
     {
         e_sigil = level.var_60ce0a79[ var_2175ea54 ];
-        var_8f6b69b0 = level.var_60ce0a79[ var_2d102ea7 ];
+        e_boss_sigil = level.var_60ce0a79[ var_2d102ea7 ];
         var_23ee4083 = vectortoangles( e_sigil.origin - e_statue.origin );
         var_23ee4083 = var_23ee4083;
     }
@@ -2189,7 +2189,7 @@ function function_1025059f( var_2175ea54, n_statue, var_2d102ea7, var_b7daddf4 =
         
         if ( e_statue.var_d707e889[ e_statue.var_ae187a59 ] == var_2d102ea7 )
         {
-            var_6286c268 = math::clamp( var_8f6b69b0.var_33fc862a + 1, 0, 3 );
+            var_6286c268 = math::clamp( e_boss_sigil.var_33fc862a + 1, 0, 3 );
             e_sigil thread function_6045e0ac( var_6286c268 );
             e_statue clientfield::set( "" + #"hash_6ad20bd0d84e8602", 0 );
             e_statue clientfield::set( "" + #"hash_4ca506515aec02d3", 1 );
@@ -2198,8 +2198,8 @@ function function_1025059f( var_2175ea54, n_statue, var_2d102ea7, var_b7daddf4 =
         }
         else if ( isdefined( e_statue.var_5f88b76a ) && e_statue.var_5f88b76a && var_953184dc )
         {
-            var_6286c268 = math::clamp( var_8f6b69b0.var_33fc862a - 1, 0, 3 );
-            var_8f6b69b0 thread function_6045e0ac( var_6286c268 );
+            var_6286c268 = math::clamp( e_boss_sigil.var_33fc862a - 1, 0, 3 );
+            e_boss_sigil thread function_6045e0ac( var_6286c268 );
             e_statue.var_5f88b76a = 0;
         }
     }

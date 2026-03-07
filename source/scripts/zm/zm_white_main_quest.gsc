@@ -236,8 +236,8 @@ function function_1b65b427()
     s_hint = struct::get( "mars_hint", "targetname" );
     s_hint zm_unitrigger::create( "", 72 );
     s_hint thread function_550420a3();
-    level.var_f1921b3 = getent( "e_tobias", "targetname" );
-    level.var_f1921b3 thread function_931fd8c2();
+    level.s_marlton_door = getent( "e_tobias", "targetname" );
+    level.s_marlton_door thread function_931fd8c2();
     var_fba5dd09 = struct::get( "marlton_door_scene", "targetname" );
     level.var_55c50ef4 = var_fba5dd09.scene_ents[ #"prop 1" ];
     level.var_55c50ef4.name = "marl";
@@ -1735,10 +1735,10 @@ function zm_white_main_quest_step1_setup( var_5ea5c94d )
         level flag::wait_till( #"mq_computer_activated" );
         level zm_hms_util::pause_zombies( 1, 0 );
         
-        if ( isdefined( level.var_18f1ca6e ) )
+        if ( isdefined( level.e_face_screen ) )
         {
-            level.var_18f1ca6e playsound( #"hash_656964552426f55" );
-            level.var_18f1ca6e playloopsound( #"amb_rushmore" );
+            level.e_face_screen playsound( #"hash_656964552426f55" );
+            level.e_face_screen playloopsound( #"amb_rushmore" );
         }
         
         wait 11;
@@ -1807,7 +1807,7 @@ function function_e3642d44()
 {
     level endon( #"end_game", #"mq_computer_activated", #"hash_63d6d5191ca09cae" );
     level.var_5dd0d3ff thread zm_hms_util::function_6a0d675d( #"hash_561c4b05a7df08b1", 0, 1 );
-    level.var_18f1ca6e thread zm_white_computer_system::function_6ef53601( "dynamic" );
+    level.e_face_screen thread zm_white_computer_system::function_6ef53601( "dynamic" );
     wait 180;
     level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_273bd180af5b9dc0", 0, 1 );
     wait 180;
@@ -2137,8 +2137,8 @@ function zm_white_main_quest_step8_cleanup( var_5ea5c94d, ended_early )
 {
     if ( var_5ea5c94d || ended_early )
     {
-        var_1c91a56e = struct::get( "apd_door_scene", "targetname" );
-        var_1c91a56e thread scene::play( "open" );
+        s_apd_door = struct::get( "apd_door_scene", "targetname" );
+        s_apd_door thread scene::play( "open" );
         level flag::set( #"boss_fight_complete" );
     }
 }
@@ -2157,8 +2157,8 @@ function zm_white_main_quest_step9_setup( var_5ea5c94d )
         level.e_shard show();
         level.e_shard clientfield::set( "fx_shard_glow_clientfield", 1 );
         waitframe( 1 );
-        var_1c91a56e = struct::get( "apd_door_scene", "targetname" );
-        var_1c91a56e thread scene::play( "open" );
+        s_apd_door = struct::get( "apd_door_scene", "targetname" );
+        s_apd_door thread scene::play( "open" );
         zm_hms_util::function_3c173d37();
         level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_53c2cc547088e4a2", 0, 0, 1 );
         level.e_shard zm_unitrigger::create( &function_ec299a8d, ( 72, 72, 128 ) );
@@ -2255,7 +2255,7 @@ function play_outro()
     exploder::stop_exploder( "fxexp_script_power_on_lgt_house_red" );
     waitframe( 1 );
     exploder::stop_exploder( "fxexp_script_power_on_lgt_house_reinsel" );
-    level.var_1fff8fd2 stoploopsound();
+    level.e_sfx_apd_top stoploopsound();
     waitframe( 1 );
     exploder::stop_exploder( "fxexp_script_power_on_lgt_house_shed" );
     waitframe( 1 );
@@ -3497,7 +3497,7 @@ function function_c9d90b42()
     exploder::exploder( "fxexp_script_power_on_lgt_house_red" );
     waitframe( 1 );
     exploder::exploder( "fxexp_script_power_on_lgt_house_reinsel" );
-    level.var_1fff8fd2 playloopsound( "evt_apd_loop" );
+    level.e_sfx_apd_top playloopsound( "evt_apd_loop" );
     waitframe( 1 );
     exploder::exploder( "fxexp_script_power_on_lgt_house_shed" );
     waitframe( 1 );
@@ -3511,19 +3511,19 @@ function function_c9d90b42()
     
     if ( level.var_bcaf8591 >= 4 )
     {
-        level.var_7a86ba58 zm_white_special_rounds::function_ccc74648( "string_06" );
+        level.e_vent_screen zm_white_special_rounds::function_ccc74648( "string_06" );
     }
     else
     {
-        level.var_7a86ba58 zm_white_special_rounds::function_ccc74648( "string_05" );
+        level.e_vent_screen zm_white_special_rounds::function_ccc74648( "string_05" );
     }
     
     level.var_f13364b4.s_keypad thread zm_white_computer_system::function_44748fe7();
     zm_white_computer_system::function_9a2a7f26();
     zm_white_computer_system::function_52838f02( "keypad", 1 );
-    level.var_18f1ca6e thread zm_white_computer_system::function_6ef53601( "style1" );
+    level.e_face_screen thread zm_white_computer_system::function_6ef53601( "style1" );
     level zm_white_computer_system::reset_computer( 0 );
-    level.var_18f1ca6e thread zm_white_computer_system::function_cafaeead();
+    level.e_face_screen thread zm_white_computer_system::function_cafaeead();
     zm_white_computer_system::function_792d350a( 0 );
     exploder::exploder( "fxexp_script_computersystem_screen" );
 }
@@ -3577,7 +3577,7 @@ function function_12ea5b51()
     exploder::stop_exploder( "fxexp_script_power_on_lgt_house_red" );
     waitframe( 1 );
     exploder::stop_exploder( "fxexp_script_power_on_lgt_house_reinsel" );
-    level.var_1fff8fd2 stoploopsound();
+    level.e_sfx_apd_top stoploopsound();
     waitframe( 1 );
     exploder::stop_exploder( "fxexp_script_power_on_lgt_house_shed" );
     waitframe( 1 );
@@ -3590,11 +3590,11 @@ function function_12ea5b51()
     level notify( #"end_computer" );
     zm_white_computer_system::function_31890499();
     zm_white_computer_system::function_52838f02( "both", 0 );
-    level.var_18f1ca6e thread zm_white_computer_system::function_a196c54b();
-    level.var_18f1ca6e stoploopsound();
+    level.e_face_screen thread zm_white_computer_system::function_a196c54b();
+    level.e_face_screen stoploopsound();
     zm_white_computer_system::function_792d350a( 1 );
     exploder::stop_exploder( "fxexp_script_computersystem_screen" );
-    level.var_7a86ba58 zm_white_special_rounds::function_1bce0fd();
+    level.e_vent_screen zm_white_special_rounds::function_1bce0fd();
     var_4b4e7150 = [];
     
     if ( !isdefined( var_4b4e7150 ) )
@@ -4414,9 +4414,9 @@ function function_bd754711()
             
             level flag::set( #"circuit_step_complete" );
             
-            if ( isdefined( level.var_18f1ca6e ) )
+            if ( isdefined( level.e_face_screen ) )
             {
-                level.var_18f1ca6e playloopsound( #"amb_rushmore" );
+                level.e_face_screen playloopsound( #"amb_rushmore" );
             }
             
             self zm_unitrigger::unregister_unitrigger( self.s_unitrigger );

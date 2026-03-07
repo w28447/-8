@@ -90,9 +90,9 @@ function init_flags()
 // Size: 0x2f4
 function init_quest()
 {
-    var_e3d10631 = getentarray( "private_mannequin_parts", "targetname" );
+    a_e_private_mannequin_parts = getentarray( "private_mannequin_parts", "targetname" );
     
-    foreach ( e_part in var_e3d10631 )
+    foreach ( e_part in a_e_private_mannequin_parts )
     {
         e_part hide();
     }
@@ -153,18 +153,18 @@ function delete_entities()
         var_3984178 delete();
     }
     
-    var_e3d10631 = getentarray( "private_mannequin_parts", "targetname" );
-    var_f0aefc5c = getent( "pernell_key", "targetname" );
-    var_6e32b553 = getent( "pernell_drawer", "targetname" );
+    a_e_private_mannequin_parts = getentarray( "private_mannequin_parts", "targetname" );
+    e_pernell_key = getent( "pernell_key", "targetname" );
+    e_pernell_drawer = getent( "pernell_drawer", "targetname" );
     mannequin_ally_spawner = getent( "mannequin_ally_spawner", "targetname" );
     
-    foreach ( e_part in var_e3d10631 )
+    foreach ( e_part in a_e_private_mannequin_parts )
     {
         e_part delete();
     }
     
-    var_f0aefc5c delete();
-    var_6e32b553 delete();
+    e_pernell_key delete();
+    e_pernell_drawer delete();
     mannequin_ally_spawner delete();
 }
 
@@ -314,11 +314,11 @@ function function_eb06b83()
     e_who thread zm_audio::create_and_play_dialog( #"component_pickup", #"generic" );
     level flag::set( "pernell_key_acquired" );
     zm_ui_inventory::function_7df6bb60( "zm_white_private_mannequin_key_part", 1 );
-    var_f0aefc5c = getent( "pernell_key", "targetname" );
+    e_pernell_key = getent( "pernell_key", "targetname" );
     
-    if ( isdefined( var_f0aefc5c ) )
+    if ( isdefined( e_pernell_key ) )
     {
-        var_f0aefc5c delete();
+        e_pernell_key delete();
     }
     
     zm_unitrigger::unregister_unitrigger( self.s_unitrigger );
@@ -334,13 +334,13 @@ function function_65066810()
     level flag::wait_till( "pernell_key_acquired" );
     s_waitresult = self waittill( #"trigger_activated" );
     e_who = s_waitresult.e_who;
-    var_6e32b553 = getent( "pernell_drawer", "targetname" );
+    e_pernell_drawer = getent( "pernell_drawer", "targetname" );
     
-    if ( isdefined( var_6e32b553 ) )
+    if ( isdefined( e_pernell_drawer ) )
     {
-        var_7b8000e5 = anglestoright( var_6e32b553.angles ) * 16;
-        var_6e32b553 playsound( "zmb_ee_drawer_open" );
-        var_6e32b553 moveto( var_6e32b553.origin + var_7b8000e5, 0.33 );
+        var_7b8000e5 = anglestoright( e_pernell_drawer.angles ) * 16;
+        e_pernell_drawer playsound( "zmb_ee_drawer_open" );
+        e_pernell_drawer moveto( e_pernell_drawer.origin + var_7b8000e5, 0.33 );
     }
     
     zm_unitrigger::unregister_unitrigger( self.s_unitrigger );
@@ -546,9 +546,9 @@ function function_88265619()
 {
     level endon( #"game_ended", #"hash_48039f3a4c1a3248" );
     level.var_f5746584 = 0;
-    var_e3d10631 = getentarray( "private_mannequin_parts", "targetname" );
-    var_a2c75164 = getent( "mannequin_ally_door", "targetname" );
-    assert( isdefined( var_a2c75164 ), "<dev string:x1a4>" );
+    a_e_private_mannequin_parts = getentarray( "private_mannequin_parts", "targetname" );
+    e_mannequin_door = getent( "mannequin_ally_door", "targetname" );
+    assert( isdefined( e_mannequin_door ), "<dev string:x1a4>" );
     
     while ( true )
     {
@@ -559,35 +559,35 @@ function function_88265619()
             wait 45;
         }
         
-        var_a2c75164 function_a51b6403( 1 );
+        e_mannequin_door function_a51b6403( 1 );
         
-        foreach ( e_part in var_e3d10631 )
+        foreach ( e_part in a_e_private_mannequin_parts )
         {
             e_part show();
         }
         
         level clientfield::set( "" + #"hash_681de2aa531ffcd0", 0 );
-        var_e3d10631[ 0 ] zm_unitrigger::create( &function_11862a9b, 96, undefined, 1, 1 );
-        var_e3d10631[ 0 ] thread function_1e88595a();
+        a_e_private_mannequin_parts[ 0 ] zm_unitrigger::create( &function_11862a9b, 96, undefined, 1, 1 );
+        a_e_private_mannequin_parts[ 0 ] thread function_1e88595a();
         
         if ( level.var_f5746584 == 0 )
         {
-            var_e3d10631[ 0 ].s_unitrigger.cost = 0;
+            a_e_private_mannequin_parts[ 0 ].s_unitrigger.cost = 0;
         }
         else
         {
-            var_e3d10631[ 0 ].s_unitrigger.cost = 3000;
+            a_e_private_mannequin_parts[ 0 ].s_unitrigger.cost = 3000;
         }
         
         level flag::wait_till( #"hash_6202f3e00d7008b0" );
         
-        foreach ( e_part in var_e3d10631 )
+        foreach ( e_part in a_e_private_mannequin_parts )
         {
             e_part hide();
         }
         
-        zm_unitrigger::unregister_unitrigger( var_e3d10631[ 0 ].s_unitrigger );
-        level.var_1a612d42 = var_e3d10631[ 0 ].var_1a612d42;
+        zm_unitrigger::unregister_unitrigger( a_e_private_mannequin_parts[ 0 ].s_unitrigger );
+        level.var_1a612d42 = a_e_private_mannequin_parts[ 0 ].var_1a612d42;
         level.var_1a612d42.eligible_leader = 1;
         
         if ( isdefined( level.mannequin_ally_spawner ) )
@@ -605,7 +605,7 @@ function function_88265619()
         
         wait 1.5;
         level.mannequin_ally thread zm_hms_util::function_6a0d675d( "vox_adam_activated" );
-        var_a2c75164 function_a51b6403( 0 );
+        e_mannequin_door function_a51b6403( 0 );
     }
 }
 
@@ -634,17 +634,17 @@ function function_26edbcdc( inflictor, attacker, damage, flags, meansofdeath, we
 function function_8527738e()
 {
     level._effect[ #"hash_fc6d4d4b4df98f8" ] = #"hash_4419642343624864";
-    level.var_c8b6a556 = getent( "pernel_paper_stack", "targetname" );
-    level.var_c8b6a556 setcandamage( 1 );
-    level.var_c8b6a556 val::set( "private_mannequin_quest_paper_stack", "allowDeath", 0 );
-    s_notify = level.var_c8b6a556 waittill( #"damage" );
-    level.var_c8b6a556.tag = util::spawn_model( "tag_origin", level.var_c8b6a556.origin );
-    level.var_c8b6a556.tag.angles = level.var_c8b6a556.angles;
-    playfxontag( level._effect[ #"hash_fc6d4d4b4df98f8" ], level.var_c8b6a556.tag, "tag_origin" );
-    level.var_c8b6a556 hide();
+    level.e_paper_stack = getent( "pernel_paper_stack", "targetname" );
+    level.e_paper_stack setcandamage( 1 );
+    level.e_paper_stack val::set( "private_mannequin_quest_paper_stack", "allowDeath", 0 );
+    s_notify = level.e_paper_stack waittill( #"damage" );
+    level.e_paper_stack.tag = util::spawn_model( "tag_origin", level.e_paper_stack.origin );
+    level.e_paper_stack.tag.angles = level.e_paper_stack.angles;
+    playfxontag( level._effect[ #"hash_fc6d4d4b4df98f8" ], level.e_paper_stack.tag, "tag_origin" );
+    level.e_paper_stack hide();
     wait 5;
-    level.var_c8b6a556.tag delete();
-    level.var_c8b6a556 delete();
+    level.e_paper_stack.tag delete();
+    level.e_paper_stack delete();
 }
 
 // Namespace zm_white_private_mannequin/zm_white_private_mannequin

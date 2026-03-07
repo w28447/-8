@@ -808,9 +808,9 @@ function function_704f6133()
     mdl_artifact clientfield::set( "activate_sentinel_artifact", 1 );
     mdl_artifact bobbing( ( 0, 0, 1 ), 0.5, 5 );
     level thread scene::play( "p8_fxanim_zm_zod_sent_trail1_boat_bundle", "boat_idle" );
-    var_198b4e5c = getentarray( "fc_hatch_cover", "targetname" );
+    a_e_blocker = getentarray( "fc_hatch_cover", "targetname" );
     
-    foreach ( e_blocker in var_198b4e5c )
+    foreach ( e_blocker in a_e_blocker )
     {
         e_blocker disconnectpaths();
     }
@@ -938,9 +938,9 @@ function function_6058ef28()
     level flag::set( "flag_open_cargo_hold_power_door" );
     level exploder::exploder( "fxexp_power_trail_burst_iceberg" );
     level thread scene::play( "p8_fxanim_zm_zod_sent_trail2_cargo_hatch_bundle" );
-    var_198b4e5c = getentarray( "fc_hatch_cover", "targetname" );
+    a_e_blocker = getentarray( "fc_hatch_cover", "targetname" );
     
-    foreach ( e_blocker in var_198b4e5c )
+    foreach ( e_blocker in a_e_blocker )
     {
         e_blocker connectpaths();
         e_blocker delete();
@@ -1024,7 +1024,7 @@ function function_ea9f953( b_fore = 1, b_aft = 1 )
         t_use_water_pump_fore = getent( "t_use_water_pump_fore", "targetname" );
         var_52a797c0 = struct::get( "water_pump_fore", "targetname" );
         var_52a797c0 scene::play( #"p8_fxanim_zm_zod_water_pump_bundle", "end" );
-        level thread function_b0a7ca7( t_use_water_pump_fore, var_52a797c0, level.e_clip_water_fore, "water_drained_fore", 40, level.var_1b85943e, -1.5, "fxexp_ambient_drain_cargo", "exp_lgt_underwater_cargo", "sfx_waterdrain_fore" );
+        level thread water_pump( t_use_water_pump_fore, var_52a797c0, level.e_clip_water_fore, "water_drained_fore", 40, level.var_1b85943e, -1.5, "fxexp_ambient_drain_cargo", "exp_lgt_underwater_cargo", "sfx_waterdrain_fore" );
         level exploder::exploder( "exp_lgt_underwater_cargo" );
     }
     
@@ -1033,7 +1033,7 @@ function function_ea9f953( b_fore = 1, b_aft = 1 )
         t_use_water_pump_aft = getent( "t_use_water_pump_aft", "targetname" );
         var_a3423419 = struct::get( "water_pump_aft", "targetname" );
         var_a3423419 scene::play( #"p8_fxanim_zm_zod_water_pump_bundle", "end" );
-        level thread function_b0a7ca7( t_use_water_pump_aft, var_a3423419, level.e_clip_water_aft, "water_drained_aft", 30, level.var_7836c664, -0.75, "fxexp_ambient_drain_boilers", "exp_lgt_underwater_engine", "sfx_waterdrain_aft" );
+        level thread water_pump( t_use_water_pump_aft, var_a3423419, level.e_clip_water_aft, "water_drained_aft", 30, level.var_7836c664, -0.75, "fxexp_ambient_drain_boilers", "exp_lgt_underwater_engine", "sfx_waterdrain_aft" );
         level exploder::exploder( "exp_lgt_underwater_engine" );
     }
 }
@@ -1042,7 +1042,7 @@ function function_ea9f953( b_fore = 1, b_aft = 1 )
 // Params 10, eflags: 0x4
 // Checksum 0x127412d0, Offset: 0x5618
 // Size: 0x29c
-function private function_b0a7ca7( var_32be30af, var_4c2f2156, var_eb6a4856, var_bbaf1a87, n_time, var_65feb6ff, var_c6653d4, var_ff884319, var_90c00a3d, var_4cdff787 )
+function private water_pump( var_32be30af, var_4c2f2156, var_eb6a4856, var_bbaf1a87, n_time, var_65feb6ff, var_c6653d4, var_ff884319, var_90c00a3d, var_4cdff787 )
 {
     self notify( var_bbaf1a87 + "_water_pump" );
     self endon( var_bbaf1a87 + "_water_pump" );
@@ -1057,7 +1057,7 @@ function private function_b0a7ca7( var_32be30af, var_4c2f2156, var_eb6a4856, var
     }
     
     var_32be30af setvisibletoall();
-    var_a33249cf = var_4c2f2156.scene_ents[ #"prop 1" ];
+    mdl_water_pump = var_4c2f2156.scene_ents[ #"prop 1" ];
     waitresult = var_32be30af waittill( #"trigger" );
     var_32be30af setinvisibletoall();
     
@@ -1066,14 +1066,14 @@ function private function_b0a7ca7( var_32be30af, var_4c2f2156, var_eb6a4856, var
         waitresult.activator notify( #"hash_361427de75870cde" );
     }
     
-    var_a33249cf playsound( #"hash_7dbe54dbc8709530" );
-    var_a33249cf playloopsound( #"hash_5f1c2aeb92331d60" );
+    mdl_water_pump playsound( #"hash_7dbe54dbc8709530" );
+    mdl_water_pump playloopsound( #"hash_5f1c2aeb92331d60" );
     level clientfield::set( var_4cdff787, 1 );
     var_4c2f2156 thread function_1d8df872( 1 );
     function_b40f577b( var_eb6a4856, var_bbaf1a87, n_time, var_65feb6ff, var_c6653d4, var_ff884319, var_90c00a3d, 1 );
     var_4c2f2156 thread function_1d8df872( 0 );
-    var_a33249cf playsound( #"hash_1fc479499a911511" );
-    var_a33249cf stoploopsound();
+    mdl_water_pump playsound( #"hash_1fc479499a911511" );
+    mdl_water_pump stoploopsound();
     level clientfield::set( var_4cdff787, 0 );
 }
 

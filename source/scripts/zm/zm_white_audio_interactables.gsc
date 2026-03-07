@@ -45,18 +45,18 @@ function function_f339b159()
     foreach ( s_punch_card in level.var_5a599dbf )
     {
         s_punch_card.is_collected = 0;
-        s_punch_card.var_453ce50f = getent( s_punch_card.target, "targetname" );
+        s_punch_card.e_punch_card = getent( s_punch_card.target, "targetname" );
         s_unitrigger = s_punch_card zm_unitrigger::create( "", 64 );
         s_punch_card thread function_c7d4845();
     }
     
     level.var_b53764f7 = 0;
-    level.var_af224340 = getent( "punch_card_screen", "targetname" );
-    level.var_af224340 hide();
+    level.e_punch_card_screen = getent( "punch_card_screen", "targetname" );
+    level.e_punch_card_screen hide();
     level thread function_19daa1b1();
     level flag::init( #"hash_7b2be1fafb5f35c7" );
-    level.var_da4b53f8 = getent( "punch_card_anim", "targetname" );
-    level.var_da4b53f8 hide();
+    level.e_punch_card_anim = getent( "punch_card_anim", "targetname" );
+    level.e_punch_card_anim hide();
 }
 
 // Namespace zm_white_audio_interactables/zm_white_audio_interactables
@@ -78,7 +78,7 @@ function function_c7d4845()
         
         level.var_389d1b12 += 1;
         self.is_collected = 1;
-        self.var_453ce50f delete();
+        self.e_punch_card delete();
     }
     
     zm_unitrigger::unregister_unitrigger( self.s_unitrigger );
@@ -97,7 +97,7 @@ function function_445e3d3d()
         
         if ( level.var_b53764f7 < level.var_389d1b12 )
         {
-            level.var_da4b53f8 function_7a70f281();
+            level.e_punch_card_anim function_7a70f281();
             wait 3;
             level.var_b53764f7 += 1;
             
@@ -121,7 +121,7 @@ function function_445e3d3d()
 function function_19daa1b1()
 {
     level flag::wait_till( "power_on1" );
-    level.var_af224340 show();
+    level.e_punch_card_screen show();
     var_acb5313f = struct::get( "punch_card_computer_trigger", "targetname" );
     s_unitrigger = var_acb5313f zm_unitrigger::create( "", 64 );
     var_acb5313f thread function_445e3d3d();
@@ -408,19 +408,19 @@ function function_8c80503()
 function function_d4c6dc0d()
 {
     self.var_b21e0263 = 1;
-    var_df4e73a7 = getentarray( self.target2, "targetname" );
-    var_df4e73a7[ 0 ] playsound( #"hash_3cca3c060dacc7de" );
-    var_df4e73a7[ 0 ] playloopsound( #"hash_14cf26f9ee5a9962" );
+    a_e_audio_reel = getentarray( self.target2, "targetname" );
+    a_e_audio_reel[ 0 ] playsound( #"hash_3cca3c060dacc7de" );
+    a_e_audio_reel[ 0 ] playloopsound( #"hash_14cf26f9ee5a9962" );
     
-    while ( self.var_b21e0263 && var_df4e73a7.size > 0 )
+    while ( self.var_b21e0263 && a_e_audio_reel.size > 0 )
     {
-        var_df4e73a7[ 0 ] rotatepitch( 45, 1 );
+        a_e_audio_reel[ 0 ] rotatepitch( 45, 1 );
         wait 0.1;
-        var_df4e73a7[ 1 ] rotatepitch( 60, 1 );
+        a_e_audio_reel[ 1 ] rotatepitch( 60, 1 );
         wait 0.9;
     }
     
-    var_df4e73a7[ 0 ] stoploopsound( 0.5 );
+    a_e_audio_reel[ 0 ] stoploopsound( 0.5 );
     playsoundatposition( #"hash_1f7edbf8f3a60766", self.origin );
 }
 
@@ -457,9 +457,9 @@ function function_ac06ab3a()
     level.var_804a56e3 = 0;
     level.var_ba07f1de = zm_hms_util::function_bffcedde( "white_audio_reel", "targetname", "script_int" );
     
-    foreach ( var_2e2b46e8 in level.var_ba07f1de )
+    foreach ( e_audio_reel in level.var_ba07f1de )
     {
-        var_2e2b46e8 zm_item_pickup::item_pickup_init( &function_1792ae3, 1 );
+        e_audio_reel zm_item_pickup::item_pickup_init( &function_1792ae3, 1 );
     }
     
     level.var_e046b238 = struct::get( #"audio_reel_player" );

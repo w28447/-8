@@ -76,7 +76,7 @@ function sams_box_step1_setup( var_5ea5c94d )
         s_vault_keyhole thread function_3590cb58();
     }
     
-    level.var_79260935.var_6388e36f = struct::get( "keycard_machine", "targetname" );
+    level.var_79260935.s_keycard_machine = struct::get( "keycard_machine", "targetname" );
     
     if ( !var_5ea5c94d )
     {
@@ -87,8 +87,8 @@ function sams_box_step1_setup( var_5ea5c94d )
         }
         
         level flag::wait_till( "power_on3" );
-        level.var_79260935.var_6388e36f zm_unitrigger::create( "", 64 );
-        level.var_79260935.var_6388e36f thread function_f83bfaa();
+        level.var_79260935.s_keycard_machine zm_unitrigger::create( "", 64 );
+        level.var_79260935.s_keycard_machine thread function_f83bfaa();
         level flag::wait_till( #"hash_7220fbbcfb27dbd4" );
     }
 }
@@ -316,11 +316,11 @@ function sams_box_step1_cleanup( var_5ea5c94d, ended_early )
         switch ( level.var_79260935.var_30df7623 )
         {
             case 0:
-                level.var_79260935.var_6388e36f function_61298be5();
-                level.var_79260935.var_6388e36f function_2ec6a1aa();
+                level.var_79260935.s_keycard_machine function_61298be5();
+                level.var_79260935.s_keycard_machine function_2ec6a1aa();
                 break;
             case 1:
-                level.var_79260935.var_6388e36f function_2ec6a1aa();
+                level.var_79260935.s_keycard_machine function_2ec6a1aa();
                 break;
             default:
                 break;
@@ -338,8 +338,8 @@ function sams_box_step2_setup( var_5ea5c94d )
 {
     if ( !var_5ea5c94d )
     {
-        level.var_79260935.var_6388e36f zm_unitrigger::create( "", 64 );
-        level.var_79260935.var_6388e36f thread function_6c5a5d32();
+        level.var_79260935.s_keycard_machine zm_unitrigger::create( "", 64 );
+        level.var_79260935.s_keycard_machine thread function_6c5a5d32();
         level flag::wait_till( #"hash_4119ce1986c28b9d" );
     }
 }

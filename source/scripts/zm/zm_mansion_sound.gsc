@@ -348,9 +348,9 @@ function function_a3a23636()
 {
     level endon( #"end_game" );
     level flag::wait_till_any( array( #"power_on", #"power_on1", #"hash_2daf5bdda85cc660" ) );
-    var_79bd8bd4 = getent( "knight_model_cemetery", "targetname" );
-    var_38c25a0c = getent( "knight_model_greenhouse", "targetname" );
-    var_170ef705 = getent( "knight_model_main_hall", "targetname" );
+    mdl_knight_cemetery = getent( "knight_model_cemetery", "targetname" );
+    mdl_knight_greenhouse = getent( "knight_model_greenhouse", "targetname" );
+    mdl_knight_main_hall = getent( "knight_model_main_hall", "targetname" );
     
     while ( !( isdefined( level.var_d2867f97 ) && level.var_d2867f97 ) && !level flag::get_all( array( #"knight_main_hall_stationed", #"knight_cemetery_stationed", #"knight_greenhouse_stationed" ) ) )
     {
@@ -363,15 +363,15 @@ function function_a3a23636()
                 continue;
             }
             
-            if ( isdefined( var_79bd8bd4 ) && e_player util::is_player_looking_at( var_79bd8bd4.origin ) && distance2dsquared( var_79bd8bd4.origin, e_player.origin ) < 65536 )
+            if ( isdefined( mdl_knight_cemetery ) && e_player util::is_player_looking_at( mdl_knight_cemetery.origin ) && distance2dsquared( mdl_knight_cemetery.origin, e_player.origin ) < 65536 )
             {
                 b_play_vo = 1;
             }
-            else if ( isdefined( var_38c25a0c ) && e_player util::is_player_looking_at( var_38c25a0c.origin ) && distance2dsquared( var_38c25a0c.origin, e_player.origin ) < 65536 )
+            else if ( isdefined( mdl_knight_greenhouse ) && e_player util::is_player_looking_at( mdl_knight_greenhouse.origin ) && distance2dsquared( mdl_knight_greenhouse.origin, e_player.origin ) < 65536 )
             {
                 b_play_vo = 1;
             }
-            else if ( isdefined( var_170ef705 ) && e_player util::is_player_looking_at( var_170ef705.origin ) && distance2dsquared( var_170ef705.origin, e_player.origin ) < 65536 )
+            else if ( isdefined( mdl_knight_main_hall ) && e_player util::is_player_looking_at( mdl_knight_main_hall.origin ) && distance2dsquared( mdl_knight_main_hall.origin, e_player.origin ) < 65536 )
             {
                 b_play_vo = 1;
             }

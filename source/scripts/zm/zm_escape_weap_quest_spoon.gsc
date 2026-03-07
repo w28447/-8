@@ -150,29 +150,29 @@ function function_3fcb1e5e()
         var_8dfff656 = randomint( 10 );
     }
     
-    var_679f0ee5 = struct::get_array( "nixie_tubes", "script_noteworthy" );
+    a_s_nixie_tubes = struct::get_array( "nixie_tubes", "script_noteworthy" );
     
-    foreach ( var_18b64c03 in var_679f0ee5 )
+    foreach ( s_nixie_tube in a_s_nixie_tubes )
     {
-        switch ( var_18b64c03.script_string )
+        switch ( s_nixie_tube.script_string )
         {
             case #"nixie_tube_trigger_1":
-                var_18b64c03.var_825e7054 = var_8171dd3a;
-                var_18b64c03.str_hint_string = #"";
+                s_nixie_tube.var_825e7054 = var_8171dd3a;
+                s_nixie_tube.str_hint_string = #"";
                 var_f6cdf98c = "n_c_w_p_01";
                 var_49d93843 = #"hash_30683ab79a855d68";
                 str_clientfield_name = "p_w_o_num_01";
                 break;
             case #"nixie_tube_trigger_2":
-                var_18b64c03.var_825e7054 = var_8dfff656;
-                var_18b64c03.str_hint_string = #"";
+                s_nixie_tube.var_825e7054 = var_8dfff656;
+                s_nixie_tube.str_hint_string = #"";
                 var_f6cdf98c = "n_c_w_p_02";
                 var_49d93843 = #"hash_30683db79a856281";
                 str_clientfield_name = "p_w_o_num_02";
                 break;
             case #"nixie_tube_trigger_3":
-                var_18b64c03.var_825e7054 = var_44e1e41b;
-                var_18b64c03.str_hint_string = #"";
+                s_nixie_tube.var_825e7054 = var_44e1e41b;
+                s_nixie_tube.str_hint_string = #"";
                 var_f6cdf98c = "n_c_w_p_03";
                 var_49d93843 = #"hash_30683cb79a8560ce";
                 str_clientfield_name = "p_w_o_num_03";
@@ -180,7 +180,7 @@ function function_3fcb1e5e()
         }
         
         s_paper = struct::get( var_f6cdf98c );
-        s_paper.script_int = var_18b64c03.var_825e7054;
+        s_paper.script_int = s_nixie_tube.var_825e7054;
         
         if ( s_paper.script_int == 0 )
         {

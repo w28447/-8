@@ -84,12 +84,12 @@ function function_d839264a()
 {
     a_s_buttons = struct::get_array( "car_platform_button" );
     mdl_platform = getent( "car_platform", "targetname" );
-    var_90fcac95 = getent( "car_platform_clip", "targetname" );
+    mdl_platform_clip = getent( "car_platform_clip", "targetname" );
     var_a9f61c2f = getentarray( "car_platform", "script_linkto" );
     var_ebd977d = getentarray( "car_platform_panel", "script_interact_group" );
     mdl_platform.var_8090ebe4 = getnodearray( "car_platform_traverse", "targetname" );
-    var_90fcac95 linkto( mdl_platform );
-    var_90fcac95 disconnectpaths();
+    mdl_platform_clip linkto( mdl_platform );
+    mdl_platform_clip disconnectpaths();
     
     foreach ( nd_traverse in mdl_platform.var_8090ebe4 )
     {

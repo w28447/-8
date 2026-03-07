@@ -130,7 +130,7 @@ function function_ca3efcd8()
     var_369dd48c = array( "mq_computer_activated", "keypad_debug" );
     level function_31890499();
     level flag::wait_till_any( var_369dd48c );
-    level.var_18f1ca6e thread function_6ef53601( "style1" );
+    level.e_face_screen thread function_6ef53601( "style1" );
     init_keypad();
 }
 
@@ -150,7 +150,7 @@ function init_keypad()
     
     if ( zm_utility::is_ee_enabled() )
     {
-        level.var_18f1ca6e thread function_cafaeead();
+        level.e_face_screen thread function_cafaeead();
     }
 }
 
@@ -232,10 +232,10 @@ function function_f359c8a0( s_key, e_player )
             
             playsoundatposition( "zmb_comp_keypad_press_" + s_key.script_int, self.origin );
             function_52838f02( "both", 1 );
-            level.var_18f1ca6e function_b2fba7f5();
-            level.var_18f1ca6e thread function_a196c54b();
-            level.var_18f1ca6e thread function_450060dd();
-            level.var_18f1ca6e.is_idling = 0;
+            level.e_face_screen function_b2fba7f5();
+            level.e_face_screen thread function_a196c54b();
+            level.e_face_screen thread function_450060dd();
+            level.e_face_screen.is_idling = 0;
             break;
         case #"enter":
             if ( level.var_f13364b4.var_b1e1ac14 < 4 )
@@ -281,9 +281,9 @@ function function_f359c8a0( s_key, e_player )
 function reset_computer( n_delay = 1 )
 {
     wait n_delay;
-    level.var_18f1ca6e notify( #"hash_23cb7679bd15f5aa" );
+    level.e_face_screen notify( #"hash_23cb7679bd15f5aa" );
     reset_code();
-    level.var_18f1ca6e.is_idling = 1;
+    level.e_face_screen.is_idling = 1;
 }
 
 // Namespace zm_white_computer_system/zm_white_computer_system
@@ -1097,11 +1097,11 @@ function delete_entities()
 {
     for ( i = 0; i < 4 ; i++ )
     {
-        var_51d09dba = getent( "code_display_digit" + i, "script_noteworthy" );
+        e_code_display_digit = getent( "code_display_digit" + i, "script_noteworthy" );
         
-        if ( isdefined( var_51d09dba ) )
+        if ( isdefined( e_code_display_digit ) )
         {
-            var_51d09dba delete();
+            e_code_display_digit delete();
         }
     }
 }
@@ -1115,7 +1115,7 @@ function clock_init( n_id )
     self.var_5543b573 = n_id;
     self.var_2b315dde[ 0 ] = "string";
     self.var_731ce5fc[ 0 ] = "string";
-    self.var_e3a88238 = getent( "computersystem_clock_colon", "targetname" );
+    self.e_clock_colon = getent( "computersystem_clock_colon", "targetname" );
     
     for ( i = 0; i < 4 ; i++ )
     {
@@ -1131,8 +1131,8 @@ function clock_init( n_id )
 function clock_countdown()
 {
     self.var_4cdc88ae = 1;
-    level.var_18f1ca6e function_b2fba7f5();
-    level.var_18f1ca6e thread function_a196c54b();
+    level.e_face_screen function_b2fba7f5();
+    level.e_face_screen thread function_a196c54b();
     self endon( #"hash_10b7419f15453a9e" );
     self function_80707067();
     self function_5e0b6734( 1, 0, 1, 0, 1 );
@@ -1318,7 +1318,7 @@ function function_58dddc4e()
 // Size: 0x9c
 function function_80707067()
 {
-    self.var_e3a88238 show();
+    self.e_clock_colon show();
     self.var_2b315dde[ 3 ] show();
     self.var_2b315dde[ 2 ] show();
     self.var_2b315dde[ 1 ] show();
@@ -1331,7 +1331,7 @@ function function_80707067()
 // Size: 0x9c
 function function_eb17b80b()
 {
-    self.var_e3a88238 hide();
+    self.e_clock_colon hide();
     self.var_2b315dde[ 3 ] hide();
     self.var_2b315dde[ 2 ] hide();
     self.var_2b315dde[ 1 ] hide();
@@ -1362,11 +1362,11 @@ function function_7a1b3cff()
 // Size: 0xac
 function function_45822b7e()
 {
-    level.var_18f1ca6e = getent( "face_screen", "targetname" );
-    level.var_cb1cac73 = getent( "computer_system_extras", "targetname" );
-    level.var_cb1cac73 hidepart( "tag_control_panel" );
+    level.e_face_screen = getent( "face_screen", "targetname" );
+    level.e_computer_system_extras = getent( "computer_system_extras", "targetname" );
+    level.e_computer_system_extras hidepart( "tag_control_panel" );
     level thread function_a3442c46( "0" );
-    level.var_18f1ca6e thread function_a196c54b();
+    level.e_face_screen thread function_a196c54b();
 }
 
 // Namespace zm_white_computer_system/zm_white_computer_system
@@ -1378,30 +1378,30 @@ function function_a3442c46( s_stage )
     switch ( s_stage )
     {
         case #"0":
-            level.var_cb1cac73 hidepart( "tag_lights" );
-            level.var_cb1cac73 hidepart( "tag_stage_01" );
-            level.var_cb1cac73 hidepart( "tag_stage_02" );
-            level.var_cb1cac73 hidepart( "tag_stage_03" );
-            level.var_cb1cac73 hidepart( "tag_stage_04" );
-            level.var_cb1cac73 hidepart( "tag_stage_05" );
+            level.e_computer_system_extras hidepart( "tag_lights" );
+            level.e_computer_system_extras hidepart( "tag_stage_01" );
+            level.e_computer_system_extras hidepart( "tag_stage_02" );
+            level.e_computer_system_extras hidepart( "tag_stage_03" );
+            level.e_computer_system_extras hidepart( "tag_stage_04" );
+            level.e_computer_system_extras hidepart( "tag_stage_05" );
             exploder::stop_exploder( "fxexp_script_computersystem_screen" );
             break;
         case #"1":
-            level.var_cb1cac73 showpart( "tag_stage_01" );
-            level.var_cb1cac73 showpart( "tag_lights" );
+            level.e_computer_system_extras showpart( "tag_stage_01" );
+            level.e_computer_system_extras showpart( "tag_lights" );
             exploder::exploder( "fxexp_script_computersystem_screen" );
             break;
         case #"2":
-            level.var_cb1cac73 showpart( "tag_stage_02" );
+            level.e_computer_system_extras showpart( "tag_stage_02" );
             break;
         case #"3":
-            level.var_cb1cac73 showpart( "tag_stage_03" );
+            level.e_computer_system_extras showpart( "tag_stage_03" );
             break;
         case #"4":
-            level.var_cb1cac73 showpart( "tag_stage_04" );
+            level.e_computer_system_extras showpart( "tag_stage_04" );
             break;
         case #"5":
-            level.var_cb1cac73 showpart( "tag_stage_05" );
+            level.e_computer_system_extras showpart( "tag_stage_05" );
             break;
     }
 }
@@ -1493,7 +1493,7 @@ function function_cafaeead()
         {
             if ( !level.countdown_clock.var_4cdc88ae && level.var_f13364b4.var_b1e1ac14 == 0 )
             {
-                level.var_18f1ca6e thread function_67621880();
+                level.e_face_screen thread function_67621880();
             }
         }
         
@@ -1527,7 +1527,7 @@ function function_67621880()
 // Size: 0x26
 function function_b2fba7f5()
 {
-    level.var_18f1ca6e notify( #"hash_3f68e1ecf3892766" );
+    level.e_face_screen notify( #"hash_3f68e1ecf3892766" );
     self.var_1549a0a5 = 0;
 }
 
@@ -1551,8 +1551,8 @@ function function_a196c54b()
 // Size: 0x44
 function function_9a2a7f26()
 {
-    level.var_cb1cac73 showpart( "tag_control_panel" );
-    level.var_cb1cac73 showpart( "tag_lights" );
+    level.e_computer_system_extras showpart( "tag_control_panel" );
+    level.e_computer_system_extras showpart( "tag_lights" );
 }
 
 // Namespace zm_white_computer_system/zm_white_computer_system
@@ -1561,8 +1561,8 @@ function function_9a2a7f26()
 // Size: 0x44
 function function_31890499()
 {
-    level.var_cb1cac73 hidepart( "tag_control_panel" );
-    level.var_cb1cac73 hidepart( "tag_lights" );
+    level.e_computer_system_extras hidepart( "tag_control_panel" );
+    level.e_computer_system_extras hidepart( "tag_lights" );
 }
 
 // Namespace zm_white_computer_system/zm_white_computer_system
@@ -1571,11 +1571,11 @@ function function_31890499()
 // Size: 0xb4
 function function_d83247cd()
 {
-    level.var_5d577798 = getent( "code_printer_monitor", "targetname" );
-    level.var_5d577798 showpart( "tag_screen_static" );
-    level.var_5d577798 hidepart( "tag_screen_unbroken" );
-    level.var_5d577798 hidepart( "tag_screen_broken" );
-    level.var_5d577798 playloopsound( #"hash_340bf847392d3d2f" );
+    level.e_code_printer_monitor = getent( "code_printer_monitor", "targetname" );
+    level.e_code_printer_monitor showpart( "tag_screen_static" );
+    level.e_code_printer_monitor hidepart( "tag_screen_unbroken" );
+    level.e_code_printer_monitor hidepart( "tag_screen_broken" );
+    level.e_code_printer_monitor playloopsound( #"hash_340bf847392d3d2f" );
 }
 
 // Namespace zm_white_computer_system/zm_white_computer_system
@@ -1584,11 +1584,11 @@ function function_d83247cd()
 // Size: 0xb4
 function function_5fbede7a()
 {
-    level.var_5d577798 hidepart( "tag_screen_static" );
-    level.var_5d577798 showpart( "tag_screen_unbroken" );
-    level.var_5d577798 hidepart( "tag_screen_broken" );
-    level.var_5d577798 playloopsound( #"hash_781ac45f11aba91e" );
-    level.var_5d577798 playsound( #"hash_d959f93f00640e9" );
+    level.e_code_printer_monitor hidepart( "tag_screen_static" );
+    level.e_code_printer_monitor showpart( "tag_screen_unbroken" );
+    level.e_code_printer_monitor hidepart( "tag_screen_broken" );
+    level.e_code_printer_monitor playloopsound( #"hash_781ac45f11aba91e" );
+    level.e_code_printer_monitor playsound( #"hash_d959f93f00640e9" );
 }
 
 // Namespace zm_white_computer_system/zm_white_computer_system
@@ -1597,18 +1597,18 @@ function function_5fbede7a()
 // Size: 0x1a4
 function function_60f15ca8()
 {
-    var_a94d1ca3 = getent( "code_printer_paper", "targetname" );
+    e_code_printer_paper = getent( "code_printer_paper", "targetname" );
     level._effect[ #"hash_ae7ff67227046f2" ] = #"hash_731cff4f6f2d012d";
-    var_73a8928d = var_a94d1ca3.origin;
-    level.var_5d577798 stoploopsound();
-    level.var_5d577798 playsound( #"hash_42924f60b7b4c07a" );
-    playfxontag( level._effect[ #"hash_ae7ff67227046f2" ], level.var_5d577798, "tag_fx" );
-    level.var_5d577798 hidepart( "tag_screen_static" );
-    level.var_5d577798 showpart( "tag_screen_broken" );
-    level.var_5d577798 hidepart( "tag_screen_unbroken" );
+    var_73a8928d = e_code_printer_paper.origin;
+    level.e_code_printer_monitor stoploopsound();
+    level.e_code_printer_monitor playsound( #"hash_42924f60b7b4c07a" );
+    playfxontag( level._effect[ #"hash_ae7ff67227046f2" ], level.e_code_printer_monitor, "tag_fx" );
+    level.e_code_printer_monitor hidepart( "tag_screen_static" );
+    level.e_code_printer_monitor showpart( "tag_screen_broken" );
+    level.e_code_printer_monitor hidepart( "tag_screen_unbroken" );
     wait 2;
-    var_a94d1ca3 playsound( #"hash_51945414465e1801" );
-    var_a94d1ca3 moveto( var_73a8928d + ( 0, -6, 0 ), 0.3 );
+    e_code_printer_paper playsound( #"hash_51945414465e1801" );
+    e_code_printer_paper moveto( var_73a8928d + ( 0, -6, 0 ), 0.3 );
 }
 
 // Namespace zm_white_computer_system/zm_white_computer_system

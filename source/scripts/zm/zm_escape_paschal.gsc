@@ -2232,7 +2232,7 @@ function step_4( var_a276c861 )
     level flag::init( #"hash_66efd29e4fb12cb5" );
     level flag::init( #"hash_46e13471f21f98d0" );
     level flag::init( #"hash_6bacf600a3126b18" );
-    level.var_d668eae7[ 0 ] spawner::add_spawn_function( &function_90ce7724 );
+    level.a_sp_brutus[ 0 ] spawner::add_spawn_function( &function_90ce7724 );
     
     if ( var_a276c861 )
     {
@@ -2321,7 +2321,7 @@ function step_4_cleanup( var_a276c861, var_19e802fa )
         e_player bgb_pack::function_ac9cb612( 0 );
     }
     
-    level.var_d668eae7[ 0 ] spawner::remove_spawn_function( &function_90ce7724 );
+    level.a_sp_brutus[ 0 ] spawner::remove_spawn_function( &function_90ce7724 );
     
     if ( isdefined( level.var_dc4013b0 ) )
     {
@@ -2974,7 +2974,7 @@ function private function_2e3734e2()
     
     if ( !isdefined( level.var_dc4013b0 ) )
     {
-        level.var_dc4013b0 = zombie_utility::spawn_zombie( level.var_d668eae7[ 0 ], undefined, level.s_brutus_spawn );
+        level.var_dc4013b0 = zombie_utility::spawn_zombie( level.a_sp_brutus[ 0 ], undefined, level.s_brutus_spawn );
     }
     
     level.var_dc4013b0.b_alerted = 0;
@@ -3413,7 +3413,7 @@ function private function_474ba3b0()
     level endon( #"hash_6048c3f423fd987" );
     level waittill( #"spawn_dog_patrol" );
     s_brutus_spawn = struct::get( "p_s_4_br_stun_spawn" );
-    var_996029a9 = zombie_utility::spawn_zombie( level.var_d668eae7[ 0 ] );
+    var_996029a9 = zombie_utility::spawn_zombie( level.a_sp_brutus[ 0 ] );
     waitframe( 1 );
     var_996029a9 forceteleport( s_brutus_spawn.origin, s_brutus_spawn.angles );
     var_996029a9 val::set( #"hash_1742bf14f2dc303f", "ignoreall", 1 );
@@ -5166,8 +5166,8 @@ function function_37d4f9( var_f6d24584, n_brutus = 0, var_b8fc6ea2 = 0, var_4977
             wait 1.6;
         }
         
-        var_f12715f5 = struct::get_array( #"hash_3ea8e97c5c09e1a5", "variantname" );
-        s_location = array::random( var_f12715f5 );
+        a_s_brutus_location = struct::get_array( #"hash_3ea8e97c5c09e1a5", "variantname" );
+        s_location = array::random( a_s_brutus_location );
         level.var_ebd424be = s_location.script_int;
         
         if ( !var_49770f00 )

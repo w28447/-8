@@ -91,9 +91,9 @@ function function_b540b576()
     level.var_ba07f1de = zm_hms_util::function_bffcedde( "office_audio_reel", "targetname", "script_int" );
     level.var_804a56e3 = 0;
     
-    foreach ( var_2e2b46e8 in level.var_ba07f1de )
+    foreach ( e_audio_reel in level.var_ba07f1de )
     {
-        var_2e2b46e8 zm_item_pickup::item_pickup_init( &function_1792ae3, 1 );
+        e_audio_reel zm_item_pickup::item_pickup_init( &function_1792ae3, 1 );
     }
     
     screen_a = getent( "projecter_screen_a", "targetname" );
@@ -633,19 +633,19 @@ function function_b116e882( var_237f80b0, var_54bb7f87, var_5876458 )
 function function_d4c6dc0d()
 {
     self.var_b21e0263 = 1;
-    var_df4e73a7 = getentarray( self.target2, "targetname" );
-    var_df4e73a7[ 0 ] playsound( #"hash_3cca3c060dacc7de" );
-    var_df4e73a7[ 0 ] playloopsound( #"hash_14cf26f9ee5a9962" );
+    a_e_audio_reel = getentarray( self.target2, "targetname" );
+    a_e_audio_reel[ 0 ] playsound( #"hash_3cca3c060dacc7de" );
+    a_e_audio_reel[ 0 ] playloopsound( #"hash_14cf26f9ee5a9962" );
     
-    while ( self.var_b21e0263 && var_df4e73a7.size > 0 )
+    while ( self.var_b21e0263 && a_e_audio_reel.size > 0 )
     {
-        var_df4e73a7[ 0 ] rotatepitch( 45, 1 );
+        a_e_audio_reel[ 0 ] rotatepitch( 45, 1 );
         wait 0.1;
-        var_df4e73a7[ 1 ] rotatepitch( 60, 1 );
+        a_e_audio_reel[ 1 ] rotatepitch( 60, 1 );
         wait 0.9;
     }
     
-    var_df4e73a7[ 0 ] stoploopsound( 0.5 );
+    a_e_audio_reel[ 0 ] stoploopsound( 0.5 );
     playsoundatposition( #"hash_1f7edbf8f3a60766", self.origin );
 }
 
@@ -879,7 +879,7 @@ function function_9209d032()
     zm_office_zones::function_cada51b5( 0 );
     zm_office_teleporters::enable_cage_portal( 0 );
     exploder::stop_exploder( "fx_exp_teleporter_hangar_warmup" );
-    level.var_a23b5c5.origin = level.var_a23b5c5.v_start_pos;
+    level.e_cage_portal_blocker.origin = level.e_cage_portal_blocker.v_start_pos;
     callback::remove_on_ai_spawned( &function_db17af3a );
     function_275db54d();
     level thread function_8213feb8();

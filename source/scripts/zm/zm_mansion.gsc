@@ -1092,22 +1092,22 @@ function function_38c64c43()
                 switch ( var_839c3bf7.script_int )
                 {
                     case 0:
-                        var_e09cfdd5 = "p8_zm_man_tea_room_door_frame_top_earth";
+                        mdl_sigil = "p8_zm_man_tea_room_door_frame_top_earth";
                         break;
                     case 1:
-                        var_e09cfdd5 = "p8_zm_man_tea_room_door_frame_top_fire";
+                        mdl_sigil = "p8_zm_man_tea_room_door_frame_top_fire";
                         break;
                     case 2:
-                        var_e09cfdd5 = "p8_zm_man_tea_room_door_frame_top_air";
+                        mdl_sigil = "p8_zm_man_tea_room_door_frame_top_air";
                         break;
                     case 3:
-                        var_e09cfdd5 = "p8_zm_man_tea_room_door_frame_top_water";
+                        mdl_sigil = "p8_zm_man_tea_room_door_frame_top_water";
                         break;
                 }
                 
-                if ( isdefined( var_e09cfdd5 ) )
+                if ( isdefined( mdl_sigil ) )
                 {
-                    var_454e1877.var_e09cfdd5 = util::spawn_model( var_e09cfdd5, var_454e1877.origin, var_454e1877.angles );
+                    var_454e1877.mdl_sigil = util::spawn_model( mdl_sigil, var_454e1877.origin, var_454e1877.angles );
                 }
             }
         }
@@ -1242,10 +1242,10 @@ function function_2d164b86()
     }
     
     mdl_artifact = getent( "artifact_mind", "script_noteworthy" );
-    var_3f772556 = getent( "artifact_mind_card", "targetname" );
-    var_3f772556 linkto( mdl_artifact );
+    mdl_artifact_card = getent( "artifact_mind_card", "targetname" );
+    mdl_artifact_card linkto( mdl_artifact );
     mdl_artifact clientfield::set( "" + #"activate_mansion_artifact", 1 );
-    var_3f772556 clientfield::set( "" + #"hash_44ee99a6591fe600", 1 );
+    mdl_artifact_card clientfield::set( "" + #"hash_44ee99a6591fe600", 1 );
     mdl_artifact notsolid();
     mdl_artifact bobbing( ( 0, 0, 1 ), 0.5, 5 );
     fx_holder = util::spawn_model( "tag_origin", mdl_artifact.origin, mdl_artifact.angles );
@@ -1298,9 +1298,9 @@ function function_2d164b86()
     }
     
     mdl_artifact clientfield::set( "" + #"activate_mansion_artifact", 2 );
-    var_3f772556 clientfield::set( "" + #"hash_44ee99a6591fe600", 0 );
+    mdl_artifact_card clientfield::set( "" + #"hash_44ee99a6591fe600", 0 );
     wait 3;
-    var_3f772556 delete();
+    mdl_artifact_card delete();
     mdl_artifact setmodel( #"hash_57d5802b9383f9c7" );
     mdl_artifact clientfield::set( "" + #"activate_mansion_artifact", 3 );
     var_8a281f69 = getvehiclenode( "power_on_projectile_path_1", "targetname" );
@@ -2329,12 +2329,12 @@ function function_ff767eac()
                 level.var_71561996 = 1;
                 level thread open_sesame();
             case #"hash_7b299dd5674009bb":
-                var_99a245 = getent( "<dev string:x3bf9>", "<dev string:x90>" );
-                var_d8f56b29 = getent( "<dev string:x3c12>", "<dev string:x90>" );
-                var_aa527474 = getent( "<dev string:x3c28>", "<dev string:x90>" );
-                var_99a245 magicgrenadetype( getweapon( #"eq_frag_grenade" ), var_99a245.origin + ( 0, 0, 24 ), ( 0, 0, 1 ), 0.1 );
-                var_d8f56b29 magicgrenadetype( getweapon( #"eq_frag_grenade" ), var_d8f56b29.origin + ( 0, 0, 24 ), ( 0, 0, 1 ), 0.1 );
-                var_aa527474 magicgrenadetype( getweapon( #"eq_frag_grenade" ), var_aa527474.origin + ( 0, 0, 24 ), ( 0, 0, 1 ), 0.1 );
+                mdl_gazing_stone_main_hall = getent( "<dev string:x3bf9>", "<dev string:x90>" );
+                mdl_gazing_stone_cellar = getent( "<dev string:x3c12>", "<dev string:x90>" );
+                mdl_gazing_stone_library = getent( "<dev string:x3c28>", "<dev string:x90>" );
+                mdl_gazing_stone_main_hall magicgrenadetype( getweapon( #"eq_frag_grenade" ), mdl_gazing_stone_main_hall.origin + ( 0, 0, 24 ), ( 0, 0, 1 ), 0.1 );
+                mdl_gazing_stone_cellar magicgrenadetype( getweapon( #"eq_frag_grenade" ), mdl_gazing_stone_cellar.origin + ( 0, 0, 24 ), ( 0, 0, 1 ), 0.1 );
+                mdl_gazing_stone_library magicgrenadetype( getweapon( #"eq_frag_grenade" ), mdl_gazing_stone_library.origin + ( 0, 0, 24 ), ( 0, 0, 1 ), 0.1 );
                 
                 if ( cmd !== "<dev string:x3c3f>" )
                 {

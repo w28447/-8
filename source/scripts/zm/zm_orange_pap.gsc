@@ -60,12 +60,12 @@ function main()
     
     foreach ( t_pap_rock_damage in a_t_pap_rock_damage )
     {
-        var_5d8f658e = getent( t_pap_rock_damage.target, "targetname" );
-        var_5d8f658e delete();
+        e_pap_rock = getent( t_pap_rock_damage.target, "targetname" );
+        e_pap_rock delete();
         t_pap_rock_damage delete();
     }
     
-    level.t_pap_rock_damage.var_5d8f658e = getent( level.t_pap_rock_damage.target, "targetname" );
+    level.t_pap_rock_damage.e_pap_rock = getent( level.t_pap_rock_damage.target, "targetname" );
     zm_sq::register( #"pap_rock", #"step_1", #"pap_rock_step1", &pap_rock_step1_setup, &pap_rock_step1_cleanup );
     zm_sq::register( #"pap_rock", #"step_2", #"pap_rock_step2", &pap_rock_step2_setup, &pap_rock_step2_cleanup );
     zm_sq::start( #"pap_rock", !zm_utility::is_standard() );
@@ -244,7 +244,7 @@ function function_5c189332()
     
     exploder::stop_exploder( "fxexp_fire_fx_ship_stage_1" );
     exploder::stop_exploder( "fxexp_fire_fx_ship_stage_2" );
-    level.var_9cc989a5 = getent( "ship_fore_fire_clip", "targetname" );
+    level.e_ship_fore_fire_clip = getent( "ship_fore_fire_clip", "targetname" );
     level.var_a385f14 = getent( "water_pipe_damage_trigger", "targetname" );
     level.var_a385f14 thread function_3f5218e3();
 }
@@ -285,7 +285,7 @@ function function_7f6c9513()
     wait 1;
     exploder::exploder( "fxexp_fire_fx_ship_stage_2" );
     level flag::set( #"hash_6f7fd3d4d070db87" );
-    level.var_9cc989a5 delete();
+    level.e_ship_fore_fire_clip delete();
 }
 
 // Namespace zm_orange_pap/zm_orange_pap
@@ -317,7 +317,7 @@ function function_56db9cdc()
         {
             level flag::set( #"hash_3028604821838259" );
             level thread function_50779c1f();
-            level.var_ab11c23d playsound( #"hash_6a8b750c09391a81" );
+            level.e_lighthouse_light playsound( #"hash_6a8b750c09391a81" );
             playsoundatposition( #"hash_1172b7ba38df5cd4", ( -105, -3451, 607 ) );
             s_notify = level waittilltimeout( 120, #"hash_39b6629ce957cce9" );
             
@@ -326,7 +326,7 @@ function function_56db9cdc()
                 level waittill( #"hash_355e5e0bbf3760db" );
             }
             
-            if ( isdefined( level.var_ab11c23d.b_blue ) && level.var_ab11c23d.b_blue )
+            if ( isdefined( level.e_lighthouse_light.b_blue ) && level.e_lighthouse_light.b_blue )
             {
                 exploder::stop_exploder( "fxexp_pap_light_icefloe" );
             }
@@ -357,7 +357,7 @@ function function_56db9cdc()
         
         if ( level flag::get( #"hash_5a3d0402a5557739" ) )
         {
-            level.var_ab11c23d clientfield::set( "lighthouse_on", 2 );
+            level.e_lighthouse_light clientfield::set( "lighthouse_on", 2 );
         }
         
         zm_orange_lighthouse::function_da304f6e( 0 );
@@ -618,7 +618,7 @@ function pap_rock_step1_setup( var_5ea5c94d )
     if ( !var_5ea5c94d )
     {
         level flag::init( #"hash_3310bb35ce396e49" );
-        level.t_pap_rock_damage.var_5d8f658e clientfield::set( "zm_orange_pap_rock_glow", 1 );
+        level.t_pap_rock_damage.e_pap_rock clientfield::set( "zm_orange_pap_rock_glow", 1 );
         level.t_pap_rock_damage thread function_513d3be1();
         level flag::wait_till( #"hash_3310bb35ce396e49" );
     }
@@ -639,12 +639,12 @@ function pap_rock_step1_cleanup( var_5ea5c94d, ended_early )
         level flag::set( #"hash_3310bb35ce396e49" );
     }
     
-    if ( isdefined( level.t_pap_rock_damage.var_5d8f658e.s_unitrigger ) )
+    if ( isdefined( level.t_pap_rock_damage.e_pap_rock.s_unitrigger ) )
     {
-        zm_unitrigger::unregister_unitrigger( level.t_pap_rock_damage.var_5d8f658e.s_unitrigger );
+        zm_unitrigger::unregister_unitrigger( level.t_pap_rock_damage.e_pap_rock.s_unitrigger );
     }
     
-    level.t_pap_rock_damage.var_5d8f658e delete();
+    level.t_pap_rock_damage.e_pap_rock delete();
     level.t_pap_rock_damage delete();
 }
 
@@ -690,14 +690,14 @@ function pap_rock_step2_cleanup( var_5ea5c94d, ended_early )
     
     if ( level.var_98138d6b > 0 )
     {
-        if ( level.var_ab11c23d.var_3931cef9 == 2 )
+        if ( level.e_lighthouse_light.n_light_state == 2 )
         {
-            level.var_ab11c23d clientfield::set( "lighthouse_on", 3 );
+            level.e_lighthouse_light clientfield::set( "lighthouse_on", 3 );
             level.var_7d8bf93f function_e3921120( 1 );
         }
         else
         {
-            level.var_ab11c23d clientfield::set( "lighthouse_on", 2 );
+            level.e_lighthouse_light clientfield::set( "lighthouse_on", 2 );
         }
         
         zm_orange_lighthouse::function_1f29d511();
@@ -732,7 +732,7 @@ function function_513d3be1()
 {
     self endon( #"death" );
     self waittill( #"damage" );
-    level.t_pap_rock_damage.var_5d8f658e thread function_451e442e();
+    level.t_pap_rock_damage.e_pap_rock thread function_451e442e();
 }
 
 // Namespace zm_orange_pap/zm_orange_pap

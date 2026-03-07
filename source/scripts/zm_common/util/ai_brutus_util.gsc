@@ -45,9 +45,9 @@ function autoexec __init__system__()
 function __init__()
 {
     clientfield::register( "actor", "brutus_lock_down", 1, 1, "int" );
-    level.var_d668eae7 = getentarray( "brutus_zombie_spawner", "script_noteworthy" );
+    level.a_sp_brutus = getentarray( "brutus_zombie_spawner", "script_noteworthy" );
     
-    if ( level.var_d668eae7.size == 0 )
+    if ( level.a_sp_brutus.size == 0 )
     {
         assertmsg( "<dev string:x38>" );
         return;
@@ -75,12 +75,12 @@ function __main__()
 // Size: 0x346
 function enable_brutus()
 {
-    array::thread_all( level.var_d668eae7, &spawner::add_spawn_function, &brutus_prespawn );
+    array::thread_all( level.a_sp_brutus, &spawner::add_spawn_function, &brutus_prespawn );
     
-    for ( i = 0; i < level.var_d668eae7.size ; i++ )
+    for ( i = 0; i < level.a_sp_brutus.size ; i++ )
     {
-        level.var_d668eae7[ i ].is_enabled = 1;
-        level.var_d668eae7[ i ].script_forcespawn = 1;
+        level.a_sp_brutus[ i ].is_enabled = 1;
+        level.a_sp_brutus[ i ].script_forcespawn = 1;
     }
     
     level.var_57d61da9 = struct::get_array( "brutus_location", "script_noteworthy" );
@@ -131,7 +131,7 @@ function enable_brutus()
     if ( !level.var_4d04bf1 )
     {
         level.custom_perk_validation = &check_perk_machine_valid;
-        level.var_1c4fa781 = &check_craftable_table_valid;
+        level.custom_craftable_validation = &check_craftable_table_valid;
     }
 }
 
@@ -169,7 +169,7 @@ function brutus_spawning_logic()
             continue;
         }
         
-        ai_brutus = zombie_utility::spawn_zombie( level.var_d668eae7[ 0 ] );
+        ai_brutus = zombie_utility::spawn_zombie( level.a_sp_brutus[ 0 ] );
         
         if ( isalive( ai_brutus ) )
         {
@@ -206,7 +206,7 @@ function private function_f332f2b7( n_spawn, str_zone_name, var_dde9ff11, var_68
     
     while ( var_33882d9b < n_spawn )
     {
-        ai_brutus = zombie_utility::spawn_zombie( level.var_d668eae7[ 0 ] );
+        ai_brutus = zombie_utility::spawn_zombie( level.a_sp_brutus[ 0 ] );
         
         if ( isdefined( ai_brutus ) )
         {

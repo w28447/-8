@@ -289,7 +289,7 @@ function function_30a6ae7c()
 function function_7722c6f0( var_404e4288, var_8dd554ee )
 {
     level.brutus_do_prologue = undefined;
-    ai_brutus = zombie_utility::spawn_zombie( level.var_d668eae7[ 0 ] );
+    ai_brutus = zombie_utility::spawn_zombie( level.a_sp_brutus[ 0 ] );
     
     if ( isdefined( ai_brutus ) )
     {

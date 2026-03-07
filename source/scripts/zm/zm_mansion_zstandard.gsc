@@ -446,23 +446,23 @@ function function_ac904e5e()
 // Size: 0xdc
 function function_f3859095()
 {
-    var_82c8a927 = getent( "pap_lock_main_hall", "targetname" );
-    var_a82b1de9 = getent( "pap_lock_library", "targetname" );
-    var_34cbce37 = getent( "pap_lock_greenhouse", "targetname" );
+    mdl_lock_main_hall = getent( "pap_lock_main_hall", "targetname" );
+    mdl_lock_library = getent( "pap_lock_library", "targetname" );
+    mdl_lock_greenhouse = getent( "pap_lock_greenhouse", "targetname" );
     
-    if ( isdefined( var_82c8a927 ) )
+    if ( isdefined( mdl_lock_main_hall ) )
     {
-        var_82c8a927 delete();
+        mdl_lock_main_hall delete();
     }
     
-    if ( isdefined( var_a82b1de9 ) )
+    if ( isdefined( mdl_lock_library ) )
     {
-        var_a82b1de9 delete();
+        mdl_lock_library delete();
     }
     
-    if ( isdefined( var_34cbce37 ) )
+    if ( isdefined( mdl_lock_greenhouse ) )
     {
-        var_34cbce37 delete();
+        mdl_lock_greenhouse delete();
     }
 }
 

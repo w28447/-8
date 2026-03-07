@@ -166,7 +166,7 @@ function function_94c0714()
 {
     level endon( #"hash_2b7c76b6b0dfc0fd" );
     level flag::set( "bunker_boss_event" );
-    level.var_f8fdb172 function_13456343();
+    level.e_apd_computer_screens function_13456343();
     level thread function_1e689ec8();
     
     /#
@@ -185,7 +185,7 @@ function function_94c0714()
     level.zmannouncerprefix = "";
     level.musicsystemoverride = 1;
     music::setmusicstate( "boss_battle_preamble" );
-    level.var_f8fdb172 function_2a8ad7ea();
+    level.e_apd_computer_screens function_2a8ad7ea();
     level notify( #"preamble_started" );
     
     /#
@@ -266,8 +266,8 @@ function function_ca3759b1()
     
     music::setmusicstate( "boss_battle_avogadro_intro" );
     exploder::exploder( "fxexp_pyramid_open" );
-    var_1c91a56e = struct::get( "apd_door_scene", "targetname" );
-    var_1c91a56e scene::play( "open" );
+    s_apd_door = struct::get( "apd_door_scene", "targetname" );
+    s_apd_door scene::play( "open" );
     
     /#
         if ( getdvarint( #"zm_debug_ee", 0 ) )
@@ -370,7 +370,7 @@ function function_ca3759b1()
     zm_white_util::function_f2fa71ce();
     zm_white_util::function_364cd8c0( "apd_lockdown" );
     level flag::clear( "world_is_paused" );
-    level.var_f8fdb172 function_3ea7f25d();
+    level.e_apd_computer_screens function_3ea7f25d();
     level thread canister_instruct();
     level thread function_abb0b62();
     level thread downed_react();
@@ -457,7 +457,7 @@ function function_ca3759b1()
     level.var_8200dc81 zm_hms_util::function_6a0d675d( #"hash_1617ecba0bd3c76c", 1, 0, 1 );
     zm_hms_util::function_3c173d37();
     level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_1617ecba0bd3c76c", 2, 0, 1 );
-    level.var_f8fdb172 function_43124a8f();
+    level.e_apd_computer_screens function_43124a8f();
     
     /#
         if ( getdvarint( #"zm_debug_ee", 0 ) )
@@ -471,17 +471,17 @@ function function_ca3759b1()
     #/
     
     function_3b0da1a8( #"hash_17f86af9c5a89e4e" );
-    level.var_f8fdb172 function_2a8ad7ea();
+    level.e_apd_computer_screens function_2a8ad7ea();
     exploder::exploder( "fxexp_pyramid_transmit" );
     playsoundatposition( #"hash_5c68b001a4e41ad3", ( 0, 0, 0 ) );
-    var_94db4a2f = struct::get( "cp_toast_apd_diner", "script_noteworthy" );
-    var_94db4a2f thread function_8c2bda65( 3, 1 );
-    var_59c92575 = struct::get( "cp_toast_apd_lounge", "script_noteworthy" );
-    var_59c92575 thread function_8c2bda65( 3, 1 );
-    var_e2649117 = struct::get( "cp_toast_apd", "script_noteworthy" );
-    var_e2649117 thread function_8c2bda65( 3, 1 );
-    var_6bff6faa = struct::get( "cp_toast_apd_beds", "script_noteworthy" );
-    var_6bff6faa thread function_8c2bda65( 3, 1 );
+    diner_canister = struct::get( "cp_toast_apd_diner", "script_noteworthy" );
+    diner_canister thread function_8c2bda65( 3, 1 );
+    lounge_canister = struct::get( "cp_toast_apd_lounge", "script_noteworthy" );
+    lounge_canister thread function_8c2bda65( 3, 1 );
+    storage_canister = struct::get( "cp_toast_apd", "script_noteworthy" );
+    storage_canister thread function_8c2bda65( 3, 1 );
+    beds_canister = struct::get( "cp_toast_apd_beds", "script_noteworthy" );
+    beds_canister thread function_8c2bda65( 3, 1 );
     zm_hms_util::function_3c173d37();
     level.e_shard zm_hms_util::function_6a0d675d( #"vox_boss_success", 0, 0, 1 );
     level function_45b60e0e();
@@ -519,7 +519,7 @@ function function_ca3759b1()
         s_wallbuy.trigger_stub function_cf62f3c7();
     }
     
-    level s_construction_push_point_a_markets();
+    level hash_6513373502cc589c();
     level flag::set( #"boss_fight_complete" );
 }
 
@@ -548,8 +548,8 @@ function function_a29438da()
 // Size: 0x84
 function function_3418b6f6()
 {
-    var_1c91a56e = struct::get( "apd_door_scene", "targetname" );
-    var_1c91a56e thread scene::play( "close" );
+    s_apd_door = struct::get( "apd_door_scene", "targetname" );
+    s_apd_door thread scene::play( "close" );
     wait 2;
     exploder::exploder_stop( "fxexp_pyramid_open" );
     exploder::exploder_stop( "fxexp_pyramid_capture" );
@@ -694,7 +694,7 @@ function function_26739c84()
 // Params 0
 // Checksum 0xa66692a1, Offset: 0x37b8
 // Size: 0xcc
-function s_construction_push_point_a_markets()
+function hash_6513373502cc589c()
 {
     level endon( #"hash_5aa1c9627e8626e0" );
     zm_hms_util::function_3c173d37();
@@ -1054,7 +1054,7 @@ function spawn_boss()
     level.e_avogadro.var_885c1824 = undefined;
     level.e_avogadro.vol_no_charge = getent( "vol_avogadro_no_charge", "targetname" );
     level.e_avogadro.vol_retreat = getent( "vol_avogadro_retreat", "targetname" );
-    level.e_avogadro.var_77ef4a35 = struct::get( "avogadro_retreat_point", "targetname" );
+    level.e_avogadro.vol_retreat_point = struct::get( "avogadro_retreat_point", "targetname" );
     level.e_avogadro thread function_e5e69e2c();
     level.e_avogadro.name = "avog";
     level.e_avogadro.isspeaking = 0;
@@ -1429,17 +1429,17 @@ function function_b58e5865()
         level.e_partner delete();
     }
     
-    var_e3d10631 = getentarray( "private_mannequin_parts", "targetname" );
-    var_a2c75164 = getent( "mannequin_ally_door", "targetname" );
-    zm_unitrigger::unregister_unitrigger( var_e3d10631[ 0 ].s_unitrigger );
+    a_e_private_mannequin_parts = getentarray( "private_mannequin_parts", "targetname" );
+    e_mannequin_door = getent( "mannequin_ally_door", "targetname" );
+    zm_unitrigger::unregister_unitrigger( a_e_private_mannequin_parts[ 0 ].s_unitrigger );
     
-    if ( isdefined( var_a2c75164.v_start_pos ) )
+    if ( isdefined( e_mannequin_door.v_start_pos ) )
     {
-        var_a2c75164 playsound( "evt_bunker_door_interior_close" );
-        var_a2c75164 moveto( var_a2c75164.v_start_pos, 1 );
+        e_mannequin_door playsound( "evt_bunker_door_interior_close" );
+        e_mannequin_door moveto( e_mannequin_door.v_start_pos, 1 );
     }
     
-    foreach ( e_part in var_e3d10631 )
+    foreach ( e_part in a_e_private_mannequin_parts )
     {
         e_part hide();
     }
@@ -1780,33 +1780,33 @@ function function_a6a4a162()
     {
         case #"sc_toast_diner":
             function_12a92019( "diner" );
-            level.var_f8fdb172 function_f757dba3();
+            level.e_apd_computer_screens function_f757dba3();
             break;
         case #"sc_toast_lounge":
             function_12a92019( "lounge" );
-            level.var_f8fdb172 function_47550faa();
+            level.e_apd_computer_screens function_47550faa();
             break;
         case #"sc_toast_storage":
             function_12a92019( "storage" );
-            level.var_f8fdb172 function_8c41f9de();
+            level.e_apd_computer_screens function_8c41f9de();
             break;
         case #"sc_toast_beds":
             function_12a92019( "beds" );
-            level.var_f8fdb172 function_d0dd97c4();
+            level.e_apd_computer_screens function_d0dd97c4();
             break;
     }
     
     function_2dfd8e82();
     self thread function_8c2bda65( 3, 1 );
     var_4a373f57 = getent( self.target, "targetname" );
-    var_703d991b = undefined;
+    apd_canister = undefined;
     
     switch ( self.script_string )
     {
         case #"sc_toast_diner":
-            var_703d991b = struct::get( "cp_toast_apd_diner", "script_noteworthy" );
+            apd_canister = struct::get( "cp_toast_apd_diner", "script_noteworthy" );
             level function_594dae();
-            var_703d991b thread function_8c2bda65( 3, 0 );
+            apd_canister thread function_8c2bda65( 3, 0 );
             zm_hms_util::function_3c173d37();
             level.var_8200dc81 zm_hms_util::function_6a0d675d( #"hash_278f7dd58492d72f", 0, 0, 1 );
             level thread function_377062e2();
@@ -1814,9 +1814,9 @@ function function_a6a4a162()
             exploder::exploder( "fxexp_elec_diner" );
             break;
         case #"sc_toast_lounge":
-            var_703d991b = struct::get( "cp_toast_apd_lounge", "script_noteworthy" );
+            apd_canister = struct::get( "cp_toast_apd_lounge", "script_noteworthy" );
             level function_6fd6c18f();
-            var_703d991b thread function_8c2bda65( 3, 0 );
+            apd_canister thread function_8c2bda65( 3, 0 );
             zm_hms_util::function_3c173d37();
             level.var_8200dc81 zm_hms_util::function_6a0d675d( #"hash_5aa17424c77358bf", 0, 0, 1 );
             level thread function_377062e2();
@@ -1824,9 +1824,9 @@ function function_a6a4a162()
             exploder::exploder( "fxexp_elec_lounge" );
             break;
         case #"sc_toast_storage":
-            var_703d991b = struct::get( "cp_toast_apd", "script_noteworthy" );
+            apd_canister = struct::get( "cp_toast_apd", "script_noteworthy" );
             level function_6f083d9c();
-            var_703d991b thread function_8c2bda65( 3, 0 );
+            apd_canister thread function_8c2bda65( 3, 0 );
             zm_hms_util::function_3c173d37();
             level.var_8200dc81 zm_hms_util::function_6a0d675d( #"hash_6a8081b211c908ce", 0, 0, 1 );
             level thread function_377062e2();
@@ -1834,9 +1834,9 @@ function function_a6a4a162()
             exploder::exploder( "fxexp_elec_storage" );
             break;
         case #"sc_toast_beds":
-            var_703d991b = struct::get( "cp_toast_apd_beds", "script_noteworthy" );
+            apd_canister = struct::get( "cp_toast_apd_beds", "script_noteworthy" );
             level function_8ba67fdc();
-            var_703d991b thread function_8c2bda65( 3, 0 );
+            apd_canister thread function_8c2bda65( 3, 0 );
             zm_hms_util::function_3c173d37();
             level.var_8200dc81 zm_hms_util::function_6a0d675d( #"hash_740bffff7149b220", 0, 0, 1 );
             level thread function_377062e2();
@@ -1957,15 +1957,15 @@ function function_8db56cee()
 // Size: 0x144
 function function_d30f74b8()
 {
-    level.var_22cd4e60 = [];
-    level.var_f48e1692 = [];
-    level.var_f861a2bc = [];
-    level.var_9e318617 = [];
-    level.var_79d7145f = [];
-    level.var_f48e1692 = getentarray( "beds_wire_set", "targetname" );
-    level.var_f861a2bc = getentarray( "diner_wire_set", "targetname" );
-    level.var_9e318617 = getentarray( "lounge_wire_set", "targetname" );
-    level.var_79d7145f = getentarray( "storage_wire_set", "targetname" );
+    level.a_e_apd_wire_set = [];
+    level.a_e_beds_wire = [];
+    level.a_e_diner_wire = [];
+    level.a_e_lounge_wire = [];
+    level.a_e_storage_wire = [];
+    level.a_e_beds_wire = getentarray( "beds_wire_set", "targetname" );
+    level.a_e_diner_wire = getentarray( "diner_wire_set", "targetname" );
+    level.a_e_lounge_wire = getentarray( "lounge_wire_set", "targetname" );
+    level.a_e_storage_wire = getentarray( "storage_wire_set", "targetname" );
     level function_54f91945();
     level function_45b60e0e();
     level function_976e7caa();
@@ -1998,7 +1998,7 @@ function function_3507dc95()
 // Size: 0xd8
 function function_8ba67fdc()
 {
-    foreach ( wire in level.var_f48e1692 )
+    foreach ( wire in level.a_e_beds_wire )
     {
         if ( wire.script_noteworthy === "apd_wire" )
         {
@@ -2017,7 +2017,7 @@ function function_8ba67fdc()
 // Size: 0xd8
 function function_54f91945()
 {
-    foreach ( wire in level.var_f48e1692 )
+    foreach ( wire in level.a_e_beds_wire )
     {
         if ( wire.script_noteworthy === "apd_wire" )
         {
@@ -2036,7 +2036,7 @@ function function_54f91945()
 // Size: 0xd8
 function function_594dae()
 {
-    foreach ( wire in level.var_f861a2bc )
+    foreach ( wire in level.a_e_diner_wire )
     {
         if ( wire.script_noteworthy === "apd_wire" )
         {
@@ -2055,7 +2055,7 @@ function function_594dae()
 // Size: 0xd8
 function function_45b60e0e()
 {
-    foreach ( wire in level.var_f861a2bc )
+    foreach ( wire in level.a_e_diner_wire )
     {
         if ( wire.script_noteworthy === "apd_wire" )
         {
@@ -2074,7 +2074,7 @@ function function_45b60e0e()
 // Size: 0xd8
 function function_6fd6c18f()
 {
-    foreach ( wire in level.var_9e318617 )
+    foreach ( wire in level.a_e_lounge_wire )
     {
         if ( wire.script_noteworthy === "apd_wire" )
         {
@@ -2093,7 +2093,7 @@ function function_6fd6c18f()
 // Size: 0xd8
 function function_976e7caa()
 {
-    foreach ( wire in level.var_9e318617 )
+    foreach ( wire in level.a_e_lounge_wire )
     {
         if ( wire.script_noteworthy === "apd_wire" )
         {
@@ -2112,7 +2112,7 @@ function function_976e7caa()
 // Size: 0xd8
 function function_6f083d9c()
 {
-    foreach ( wire in level.var_79d7145f )
+    foreach ( wire in level.a_e_storage_wire )
     {
         if ( wire.script_noteworthy === "apd_wire" )
         {
@@ -2131,7 +2131,7 @@ function function_6f083d9c()
 // Size: 0xd8
 function function_2cdb9672()
 {
-    foreach ( wire in level.var_79d7145f )
+    foreach ( wire in level.a_e_storage_wire )
     {
         if ( wire.script_noteworthy === "apd_wire" )
         {
@@ -2150,8 +2150,8 @@ function function_2cdb9672()
 // Size: 0x4c
 function apd_computer_screens_init()
 {
-    level.var_f8fdb172 = getent( "apd_computer_screens", "targetname" );
-    level.var_f8fdb172 function_2a8ad7ea();
+    level.e_apd_computer_screens = getent( "apd_computer_screens", "targetname" );
+    level.e_apd_computer_screens function_2a8ad7ea();
 }
 
 // Namespace zm_white_toast/zm_white_toast

@@ -283,110 +283,110 @@ class class_727456f3
         switch ( var_c0a091bc )
         {
             case 1:
-                var_ec059365 = struct::get( "elevator_doors_parking_1", "targetname" );
+                s_elevator_doors_parking_1 = struct::get( "elevator_doors_parking_1", "targetname" );
                 
-                if ( isdefined( var_ec059365 ) )
+                if ( isdefined( s_elevator_doors_parking_1 ) )
                 {
-                    var_ec059365 scene::play( "shot 5" );
+                    s_elevator_doors_parking_1 scene::play( "shot 5" );
                 }
                 
                 break;
             case 2:
-                var_fdb736c8 = struct::get( "elevator_doors_parking_2", "targetname" );
+                s_elevator_doors_parking_2 = struct::get( "elevator_doors_parking_2", "targetname" );
                 
-                if ( isdefined( var_fdb736c8 ) )
+                if ( isdefined( s_elevator_doors_parking_2 ) )
                 {
-                    var_fdb736c8 scene::play( "shot 1" );
+                    s_elevator_doors_parking_2 scene::play( "shot 1" );
                 }
                 
                 break;
             case 3:
-                var_fdb736c8 = struct::get( "elevator_doors_parking_2", "targetname" );
+                s_elevator_doors_parking_2 = struct::get( "elevator_doors_parking_2", "targetname" );
                 
-                if ( isdefined( var_fdb736c8 ) )
+                if ( isdefined( s_elevator_doors_parking_2 ) )
                 {
-                    var_fdb736c8 scene::play( "shot 3" );
+                    s_elevator_doors_parking_2 scene::play( "shot 3" );
                 }
                 
                 break;
             case 4:
-                var_fdb736c8 = struct::get( "elevator_doors_parking_2", "targetname" );
+                s_elevator_doors_parking_2 = struct::get( "elevator_doors_parking_2", "targetname" );
                 
-                if ( isdefined( var_fdb736c8 ) )
+                if ( isdefined( s_elevator_doors_parking_2 ) )
                 {
-                    var_fdb736c8 scene::play( "shot 5" );
+                    s_elevator_doors_parking_2 scene::play( "shot 5" );
                 }
                 
                 break;
             case 6:
-                var_33141036 = struct::get( "elevator_doors_lobby", "targetname" );
+                s_elevator_doors_lobby = struct::get( "elevator_doors_lobby", "targetname" );
                 
-                if ( isdefined( var_33141036 ) )
+                if ( isdefined( s_elevator_doors_lobby ) )
                 {
-                    var_33141036 scene::play( "shot 1" );
+                    s_elevator_doors_lobby scene::play( "shot 1" );
                 }
                 
                 break;
             case 7:
-                var_33141036 = struct::get( "elevator_doors_lobby", "targetname" );
+                s_elevator_doors_lobby = struct::get( "elevator_doors_lobby", "targetname" );
                 
-                if ( isdefined( var_33141036 ) )
+                if ( isdefined( s_elevator_doors_lobby ) )
                 {
-                    var_33141036 scene::play( "shot 3" );
+                    s_elevator_doors_lobby scene::play( "shot 3" );
                 }
                 
                 break;
             case 45:
-                var_c21420c2 = struct::get( "elevator_doors_mall", "targetname" );
+                s_elevator_doors_mall = struct::get( "elevator_doors_mall", "targetname" );
                 
-                if ( isdefined( var_c21420c2 ) )
+                if ( isdefined( s_elevator_doors_mall ) )
                 {
-                    var_c21420c2 scene::play( "shot 1" );
+                    s_elevator_doors_mall scene::play( "shot 1" );
                 }
                 
                 break;
             case 46:
-                var_c21420c2 = struct::get( "elevator_doors_mall", "targetname" );
+                s_elevator_doors_mall = struct::get( "elevator_doors_mall", "targetname" );
                 
-                if ( isdefined( var_c21420c2 ) )
+                if ( isdefined( s_elevator_doors_mall ) )
                 {
-                    var_c21420c2 scene::play( "shot 3" );
+                    s_elevator_doors_mall scene::play( "shot 3" );
                 }
                 
                 break;
             case 57:
-                var_f4b63da3 = struct::get( "elevator_doors_park", "targetname" );
+                s_elevator_doors_park = struct::get( "elevator_doors_park", "targetname" );
                 
-                if ( isdefined( var_f4b63da3 ) )
+                if ( isdefined( s_elevator_doors_park ) )
                 {
-                    var_f4b63da3 scene::play( "shot 1" );
+                    s_elevator_doors_park scene::play( "shot 1" );
                 }
                 
                 break;
             case 58:
-                var_f4b63da3 = struct::get( "elevator_doors_park", "targetname" );
+                s_elevator_doors_park = struct::get( "elevator_doors_park", "targetname" );
                 
-                if ( isdefined( var_f4b63da3 ) )
+                if ( isdefined( s_elevator_doors_park ) )
                 {
-                    var_f4b63da3 scene::play( "shot 3" );
+                    s_elevator_doors_park scene::play( "shot 3" );
                 }
                 
                 break;
             case 59:
-                var_f4b63da3 = struct::get( "elevator_doors_park", "targetname" );
+                s_elevator_doors_park = struct::get( "elevator_doors_park", "targetname" );
                 
-                if ( isdefined( var_f4b63da3 ) )
+                if ( isdefined( s_elevator_doors_park ) )
                 {
-                    var_f4b63da3 scene::play( "shot 5" );
+                    s_elevator_doors_park scene::play( "shot 5" );
                 }
                 
                 break;
             case 97:
-                var_b3888c6e = struct::get( "elevator_doors_roof", "targetname" );
+                s_elevator_doors_roof = struct::get( "elevator_doors_roof", "targetname" );
                 
-                if ( isdefined( var_b3888c6e ) )
+                if ( isdefined( s_elevator_doors_roof ) )
                 {
-                    var_b3888c6e scene::play( "shot 5", undefined, undefined, undefined, undefined, 0 );
+                    s_elevator_doors_roof scene::play( "shot 5", undefined, undefined, undefined, undefined, 0 );
                 }
                 
                 break;
@@ -412,110 +412,110 @@ class class_727456f3
         switch ( var_c0a091bc )
         {
             case 1:
-                var_ec059365 = struct::get( "elevator_doors_parking_1", "targetname" );
+                s_elevator_doors_parking_1 = struct::get( "elevator_doors_parking_1", "targetname" );
                 
-                if ( isdefined( var_ec059365 ) )
+                if ( isdefined( s_elevator_doors_parking_1 ) )
                 {
-                    var_ec059365 scene::play( "shot 6" );
+                    s_elevator_doors_parking_1 scene::play( "shot 6" );
                 }
                 
                 break;
             case 2:
-                var_fdb736c8 = struct::get( "elevator_doors_parking_2", "targetname" );
+                s_elevator_doors_parking_2 = struct::get( "elevator_doors_parking_2", "targetname" );
                 
-                if ( isdefined( var_fdb736c8 ) )
+                if ( isdefined( s_elevator_doors_parking_2 ) )
                 {
-                    var_fdb736c8 scene::play( "shot 2" );
+                    s_elevator_doors_parking_2 scene::play( "shot 2" );
                 }
                 
                 break;
             case 3:
-                var_fdb736c8 = struct::get( "elevator_doors_parking_2", "targetname" );
+                s_elevator_doors_parking_2 = struct::get( "elevator_doors_parking_2", "targetname" );
                 
-                if ( isdefined( var_fdb736c8 ) )
+                if ( isdefined( s_elevator_doors_parking_2 ) )
                 {
-                    var_fdb736c8 scene::play( "shot 4" );
+                    s_elevator_doors_parking_2 scene::play( "shot 4" );
                 }
                 
                 break;
             case 4:
-                var_fdb736c8 = struct::get( "elevator_doors_parking_2", "targetname" );
+                s_elevator_doors_parking_2 = struct::get( "elevator_doors_parking_2", "targetname" );
                 
-                if ( isdefined( var_fdb736c8 ) )
+                if ( isdefined( s_elevator_doors_parking_2 ) )
                 {
-                    var_fdb736c8 scene::play( "shot 6" );
+                    s_elevator_doors_parking_2 scene::play( "shot 6" );
                 }
                 
                 break;
             case 6:
-                var_33141036 = struct::get( "elevator_doors_lobby", "targetname" );
+                s_elevator_doors_lobby = struct::get( "elevator_doors_lobby", "targetname" );
                 
-                if ( isdefined( var_33141036 ) )
+                if ( isdefined( s_elevator_doors_lobby ) )
                 {
-                    var_33141036 scene::play( "shot 2" );
+                    s_elevator_doors_lobby scene::play( "shot 2" );
                 }
                 
                 break;
             case 7:
-                var_33141036 = struct::get( "elevator_doors_lobby", "targetname" );
+                s_elevator_doors_lobby = struct::get( "elevator_doors_lobby", "targetname" );
                 
-                if ( isdefined( var_33141036 ) )
+                if ( isdefined( s_elevator_doors_lobby ) )
                 {
-                    var_33141036 scene::play( "shot 4" );
+                    s_elevator_doors_lobby scene::play( "shot 4" );
                 }
                 
                 break;
             case 45:
-                var_c21420c2 = struct::get( "elevator_doors_mall", "targetname" );
+                s_elevator_doors_mall = struct::get( "elevator_doors_mall", "targetname" );
                 
-                if ( isdefined( var_c21420c2 ) )
+                if ( isdefined( s_elevator_doors_mall ) )
                 {
-                    var_c21420c2 scene::play( "shot 2" );
+                    s_elevator_doors_mall scene::play( "shot 2" );
                 }
                 
                 break;
             case 46:
-                var_c21420c2 = struct::get( "elevator_doors_mall", "targetname" );
+                s_elevator_doors_mall = struct::get( "elevator_doors_mall", "targetname" );
                 
-                if ( isdefined( var_c21420c2 ) )
+                if ( isdefined( s_elevator_doors_mall ) )
                 {
-                    var_c21420c2 scene::play( "shot 4" );
+                    s_elevator_doors_mall scene::play( "shot 4" );
                 }
                 
                 break;
             case 57:
-                var_f4b63da3 = struct::get( "elevator_doors_park", "targetname" );
+                s_elevator_doors_park = struct::get( "elevator_doors_park", "targetname" );
                 
-                if ( isdefined( var_f4b63da3 ) )
+                if ( isdefined( s_elevator_doors_park ) )
                 {
-                    var_f4b63da3 scene::play( "shot 2" );
+                    s_elevator_doors_park scene::play( "shot 2" );
                 }
                 
                 break;
             case 58:
-                var_f4b63da3 = struct::get( "elevator_doors_park", "targetname" );
+                s_elevator_doors_park = struct::get( "elevator_doors_park", "targetname" );
                 
-                if ( isdefined( var_f4b63da3 ) )
+                if ( isdefined( s_elevator_doors_park ) )
                 {
-                    var_f4b63da3 scene::play( "shot 4" );
+                    s_elevator_doors_park scene::play( "shot 4" );
                 }
                 
                 break;
             case 59:
-                var_f4b63da3 = struct::get( "elevator_doors_park", "targetname" );
+                s_elevator_doors_park = struct::get( "elevator_doors_park", "targetname" );
                 
-                if ( isdefined( var_f4b63da3 ) )
+                if ( isdefined( s_elevator_doors_park ) )
                 {
-                    var_f4b63da3 scene::play( "shot 6" );
+                    s_elevator_doors_park scene::play( "shot 6" );
                 }
                 
                 break;
             case 97:
-                var_b3888c6e = struct::get( "elevator_doors_roof", "targetname" );
+                s_elevator_doors_roof = struct::get( "elevator_doors_roof", "targetname" );
                 
-                if ( isdefined( var_b3888c6e ) )
+                if ( isdefined( s_elevator_doors_roof ) )
                 {
-                    var_b3888c6e scene::play( "shot 6" );
+                    s_elevator_doors_roof scene::play( "shot 6" );
                 }
                 
                 break;
@@ -882,9 +882,9 @@ function autoexec __init__system__()
 function __init__()
 {
     clientfield::register( "toplayer", "elevator_floor_selection", 1, 1, "int" );
-    var_78f0e5f1 = struct::get_array( "scriptbundle_elevators", "classname" );
+    a_elevators = struct::get_array( "scriptbundle_elevators", "classname" );
     
-    foreach ( s_instance in var_78f0e5f1 )
+    foreach ( s_instance in a_elevators )
     {
         var_1313d6ba = s_instance init_elevator();
         
@@ -991,9 +991,9 @@ function __main__()
 // Size: 0x2cc
 function function_a7d817a6()
 {
-    var_78f0e5f1 = struct::get_array( "scriptbundle_elevators", "classname" );
+    a_elevators = struct::get_array( "scriptbundle_elevators", "classname" );
     
-    foreach ( s_instance in var_78f0e5f1 )
+    foreach ( s_instance in a_elevators )
     {
         if ( s_instance.var_1313d6ba.m_s_bundle.var_46d9acb0 == "auto_up" || s_instance.var_1313d6ba.m_s_bundle.var_46d9acb0 == "auto_down" )
         {

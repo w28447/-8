@@ -213,11 +213,11 @@ function init_sticks()
 {
     var_e036b66c = getentarray( "stick_man_stick", "script_noteworthy" );
     
-    foreach ( var_1f23d8cf in var_e036b66c )
+    foreach ( mdl_stick in var_e036b66c )
     {
-        var_1f23d8cf.s_form = struct::get( var_1f23d8cf.target );
-        var_1f23d8cf.s_fall = struct::get( var_1f23d8cf.targetname );
-        var_1f23d8cf thread function_e8f819b0();
+        mdl_stick.s_form = struct::get( mdl_stick.target );
+        mdl_stick.s_fall = struct::get( mdl_stick.targetname );
+        mdl_stick thread function_e8f819b0();
     }
     
     level.var_94975706 = 0;
@@ -251,7 +251,7 @@ function function_e8f819b0()
             s_scene scene::play( "Shot 1" );
             s_target = struct::get( self.target );
             var_47323b73 = s_target zm_unitrigger::create( undefined, ( 92, 92, 100 ), &function_ff1dea25 );
-            var_47323b73.var_1f23d8cf = self;
+            var_47323b73.mdl_stick = self;
             break;
         }
     }
@@ -275,7 +275,7 @@ function function_ff1dea25()
             continue;
         }
         
-        level thread function_1ca135cf( self.stub.var_1f23d8cf.script_int );
+        level thread function_1ca135cf( self.stub.mdl_stick.script_int );
         zm_unitrigger::unregister_unitrigger( self.stub );
     }
 }
@@ -462,10 +462,10 @@ function private function_2345b68a()
         mdl_pic.mdl_bd setmodel( mdl_pic.var_3916fb8b );
     }
     
-    var_6adbf325 = getent( "pic_gypsy", "targetname" );
-    var_1b2ca394 = getent( "pic_brigadier", "targetname" );
-    var_3c9ce3a9 = getent( "pic_butler", "targetname" );
-    var_36ebb951 = getent( "pic_gunslinger", "targetname" );
+    mdl_pic_gypsy = getent( "pic_gypsy", "targetname" );
+    mdl_pic_brigadier = getent( "pic_brigadier", "targetname" );
+    mdl_pic_butler = getent( "pic_butler", "targetname" );
+    mdl_pic_gunslinger = getent( "pic_gunslinger", "targetname" );
     level.var_ead1145a = function_8a51807c();
     level.var_ead1145a thread function_4aa24b78();
     level.var_ead1145a thread function_c5c7d880();
@@ -473,24 +473,24 @@ function private function_2345b68a()
     switch ( level.var_ead1145a.str_name )
     {
         case #"pic_gypsy":
-            s_loc = var_6adbf325.s_loc;
+            s_loc = mdl_pic_gypsy.s_loc;
             s_trig = struct::get( s_loc.target );
-            mdl_pic = var_6adbf325;
+            mdl_pic = mdl_pic_gypsy;
             break;
         case #"pic_brigadier":
-            s_loc = var_1b2ca394.s_loc;
+            s_loc = mdl_pic_brigadier.s_loc;
             s_trig = struct::get( s_loc.target );
-            mdl_pic = var_1b2ca394;
+            mdl_pic = mdl_pic_brigadier;
             break;
         case #"pic_butler":
-            s_loc = var_3c9ce3a9.s_loc;
+            s_loc = mdl_pic_butler.s_loc;
             s_trig = struct::get( s_loc.target );
-            mdl_pic = var_3c9ce3a9;
+            mdl_pic = mdl_pic_butler;
             break;
         case #"pic_gunslinger":
-            s_loc = var_36ebb951.s_loc;
+            s_loc = mdl_pic_gunslinger.s_loc;
             s_trig = struct::get( s_loc.target );
-            mdl_pic = var_36ebb951;
+            mdl_pic = mdl_pic_gunslinger;
             break;
     }
     
@@ -654,8 +654,8 @@ function private function_8a51807c()
     
     if ( a_players.size > 1 )
     {
-        var_5eb47b1d = util::get_active_players();
-        player = array::random( var_5eb47b1d );
+        a_active_players = util::get_active_players();
+        player = array::random( a_active_players );
     }
     
     if ( !isdefined( player ) )
@@ -2299,15 +2299,15 @@ function function_2c554640()
 {
     level flag::wait_till( #"all_players_spawned" );
     a_s_locs = array::randomize( struct::get_array( "portrait_loc" ) );
-    var_6adbf325 = getent( "pic_gypsy", "targetname" );
-    var_1b2ca394 = getent( "pic_brigadier", "targetname" );
-    var_3c9ce3a9 = getent( "pic_butler", "targetname" );
-    var_36ebb951 = getent( "pic_gunslinger", "targetname" );
-    var_6adbf325.var_3916fb8b = #"p8_zm_headstone_engraving_1950";
-    var_1b2ca394.var_3916fb8b = #"p8_zm_headstone_engraving_1918";
-    var_3c9ce3a9.var_3916fb8b = #"p8_zm_headstone_engraving_1927";
-    var_36ebb951.var_3916fb8b = #"p8_zm_headstone_engraving_1945";
-    level.var_d70578ff = array( var_6adbf325, var_1b2ca394, var_3c9ce3a9, var_36ebb951 );
+    mdl_pic_gypsy = getent( "pic_gypsy", "targetname" );
+    mdl_pic_brigadier = getent( "pic_brigadier", "targetname" );
+    mdl_pic_butler = getent( "pic_butler", "targetname" );
+    mdl_pic_gunslinger = getent( "pic_gunslinger", "targetname" );
+    mdl_pic_gypsy.var_3916fb8b = #"p8_zm_headstone_engraving_1950";
+    mdl_pic_brigadier.var_3916fb8b = #"p8_zm_headstone_engraving_1918";
+    mdl_pic_butler.var_3916fb8b = #"p8_zm_headstone_engraving_1927";
+    mdl_pic_gunslinger.var_3916fb8b = #"p8_zm_headstone_engraving_1945";
+    level.var_d70578ff = array( mdl_pic_gypsy, mdl_pic_brigadier, mdl_pic_butler, mdl_pic_gunslinger );
     
     for ( i = 0; i < level.var_d70578ff.size ; i++ )
     {

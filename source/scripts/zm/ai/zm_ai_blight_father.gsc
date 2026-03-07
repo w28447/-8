@@ -3580,10 +3580,10 @@ function private function_8e8b1dfc( var_c45ef84c, blight_father, weapon )
 // Size: 0x60
 function function_3dbdca02()
 {
-    level.var_1b8dabf3++;
+    level.n_blightfather_alive++;
     level.zombie_ai_limit--;
     self waittill( #"death" );
-    level.var_1b8dabf3--;
+    level.n_blightfather_alive--;
     level.zombie_ai_limit++;
     level notify( #"hash_5fb3aa7a0745af2c" );
 }
@@ -3766,10 +3766,10 @@ function function_633d7436( var_dbce0c44 )
 // Size: 0xbc, Type: bool
 function function_858c7fa5()
 {
-    var_c64622d1 = function_a24ee603();
+    n_blight_father_alive = function_a24ee603();
     var_3b01e91c = function_2f701be7();
     
-    if ( !( isdefined( level.var_a2831281 ) && level.var_a2831281 ) && ( isdefined( level.var_153e9058 ) && level.var_153e9058 || var_c64622d1 >= var_3b01e91c || !level flag::get( "spawn_zombies" ) ) )
+    if ( !( isdefined( level.var_a2831281 ) && level.var_a2831281 ) && ( isdefined( level.var_153e9058 ) && level.var_153e9058 || n_blight_father_alive >= var_3b01e91c || !level flag::get( "spawn_zombies" ) ) )
     {
         return false;
     }

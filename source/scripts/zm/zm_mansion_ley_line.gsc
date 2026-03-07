@@ -211,8 +211,8 @@ function cleanup_step_1( var_5ea5c94d, ended_early )
         level flag::set( str_flag );
     }
     
-    var_2782a2fe = getent( "beam_man", "targetname" );
-    var_2782a2fe clientfield::set( "" + #"ley_lines", 1 );
+    e_beam_man = getent( "beam_man", "targetname" );
+    e_beam_man clientfield::set( "" + #"ley_lines", 1 );
 }
 
 // Namespace namespace_a8113e97/zm_mansion_ley_line
@@ -462,9 +462,9 @@ function function_fde77b55( mdl_coil )
         if ( level flag::get_all( a_str_flags ) )
         {
             level scene::play( #"p8_fxanim_zm_man_beam_device_bundle", "shot 2" );
-            var_2782a2fe = getent( "beam_man", "targetname" );
-            var_2782a2fe playsound( #"hash_4a842fe16ea6db6a" );
-            var_2782a2fe clientfield::set( "" + #"ley_lines", 1 );
+            e_beam_man = getent( "beam_man", "targetname" );
+            e_beam_man playsound( #"hash_4a842fe16ea6db6a" );
+            e_beam_man clientfield::set( "" + #"ley_lines", 1 );
             level flag::set( #"ley_start" );
             continue;
         }
@@ -776,8 +776,8 @@ function function_71d1b235()
     level.mdl_rings showpart( "link_ring2_jnt", "p8_fxanim_zm_man_atlas_rings_mod", 1 );
     level.mdl_rings showpart( "link_ring3_jnt", "p8_fxanim_zm_man_atlas_rings_mod", 1 );
     function_f856cc2();
-    var_1ed057a1 = getent( "beam_obs", "targetname" );
-    var_1ed057a1 clientfield::set( "" + #"ley_lines", 2 );
+    e_beam_obs = getent( "beam_obs", "targetname" );
+    e_beam_obs clientfield::set( "" + #"ley_lines", 2 );
     wait 4;
     e_head disconnectpaths();
     var_9283def2 = array( "zone_main_hall", "zone_main_hall_north", "zone_start_east", "zone_start_west", "zone_grand_staircase" );
@@ -1002,13 +1002,13 @@ function function_5164d716()
 {
     level endon( #"wheel_locked", #"greenhouse_open" );
     level flag::wait_till( #"hash_702dbaf6695a5607" );
-    var_e0cc1e20 = getent( "trigger_obs_wheel_lock", "targetname" );
-    var_e0cc1e20.health = 99999;
+    t_wheel = getent( "trigger_obs_wheel_lock", "targetname" );
+    t_wheel.health = 99999;
     
     while ( true )
     {
-        s_notify = var_e0cc1e20 waittill( #"damage" );
-        var_e0cc1e20.health += s_notify.amount;
+        s_notify = t_wheel waittill( #"damage" );
+        t_wheel.health += s_notify.amount;
         
         if ( isdefined( s_notify.attacker ) && isplayer( s_notify.attacker ) && mansion_util::is_shield( s_notify.weapon ) && s_notify.mod === "MOD_MELEE" && isdefined( level.n_turns ) && level.n_turns > 15 )
         {
@@ -1017,7 +1017,7 @@ function function_5164d716()
             mdl_door_right = getent( "mdl_telescope_observatory_door_right", "targetname" );
             mdl_wheel stoploopsound();
             mdl_door_right stoploopsound();
-            var_e0cc1e20 delete();
+            t_wheel delete();
             level scene::stop( #"p8_fxanim_zm_man_dome_crank_bundle" );
             level thread scene::play( #"p8_fxanim_zm_man_dome_crank_bundle", "open" );
             level flag::set( #"wheel_locked" );

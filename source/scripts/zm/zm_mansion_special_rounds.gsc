@@ -235,11 +235,11 @@ function function_e1c262fb( entity )
     
     if ( isdefined( entity ) && isdefined( entity.favoriteenemy ) && zm_utility::is_player_valid( entity.favoriteenemy ) )
     {
-        var_46d2ec35 = entity.favoriteenemy;
+        e_favorite_enemy = entity.favoriteenemy;
     }
     else
     {
-        var_46d2ec35 = get_favorite_enemy();
+        e_favorite_enemy = get_favorite_enemy();
     }
     
     var_ae51d146 = 400 * 400;
@@ -252,12 +252,12 @@ function function_e1c262fb( entity )
             continue;
         }
         
-        if ( !isalive( var_46d2ec35 ) )
+        if ( !isalive( e_favorite_enemy ) )
         {
             return array::random( a_locs );
         }
         
-        n_dist_squared = distancesquared( a_locs[ i ].origin, var_46d2ec35.origin );
+        n_dist_squared = distancesquared( a_locs[ i ].origin, e_favorite_enemy.origin );
         
         if ( n_dist_squared > var_ae51d146 && n_dist_squared < var_5c124858 )
         {
@@ -266,7 +266,7 @@ function function_e1c262fb( entity )
         }
     }
     
-    return arraygetclosest( var_46d2ec35.origin, a_locs );
+    return arraygetclosest( e_favorite_enemy.origin, a_locs );
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
@@ -568,11 +568,11 @@ function function_50ec1ddf()
     }
     
     a_s_spawn_locs = struct::get_array( "werewolf_location", "script_noteworthy" );
-    var_46d2ec35 = get_favorite_enemy();
+    e_favorite_enemy = get_favorite_enemy();
     
-    if ( isdefined( var_46d2ec35 ) )
+    if ( isdefined( e_favorite_enemy ) )
     {
-        a_s_spawn_locs = array::get_all_closest( var_46d2ec35.origin, a_s_spawn_locs );
+        a_s_spawn_locs = array::get_all_closest( e_favorite_enemy.origin, a_s_spawn_locs );
     }
     else
     {

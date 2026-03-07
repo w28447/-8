@@ -86,18 +86,18 @@ function private function_5c0a0b26( zombie, var_167b5341 )
 // Size: 0xbc
 function function_6268b69f()
 {
-    var_47469148 = getaiarchetypearray( #"werewolf" );
-    var_492bcd12 = var_47469148.size;
+    a_ai_werewolf = getaiarchetypearray( #"werewolf" );
+    n_werewolf_alive = a_ai_werewolf.size;
     
-    foreach ( ai_werewolf in var_47469148 )
+    foreach ( ai_werewolf in a_ai_werewolf )
     {
         if ( !isalive( ai_werewolf ) )
         {
-            var_492bcd12--;
+            n_werewolf_alive--;
         }
     }
     
-    return var_492bcd12;
+    return n_werewolf_alive;
 }
 
 // Namespace zombie_werewolf_util/ai_werewolf_util
@@ -106,10 +106,10 @@ function function_6268b69f()
 // Size: 0xbc, Type: bool
 function function_15d944aa()
 {
-    var_492bcd12 = function_6268b69f();
+    n_werewolf_alive = function_6268b69f();
     var_2bf29cda = function_1f269f0f();
     
-    if ( !( isdefined( level.var_76934955 ) && level.var_76934955 ) && ( isdefined( level.var_fe2bb2ac ) && level.var_fe2bb2ac || var_492bcd12 >= var_2bf29cda || !level flag::get( "spawn_zombies" ) ) )
+    if ( !( isdefined( level.var_76934955 ) && level.var_76934955 ) && ( isdefined( level.var_fe2bb2ac ) && level.var_fe2bb2ac || n_werewolf_alive >= var_2bf29cda || !level flag::get( "spawn_zombies" ) ) )
     {
         return false;
     }
@@ -269,7 +269,7 @@ function function_47a88a0c( n_to_spawn = 1, var_1fafa3fc, b_force_spawn = 0, var
         }
         
         players = getplayers();
-        var_46d2ec35 = get_favorite_enemy();
+        e_favorite_enemy = get_favorite_enemy();
         
         if ( isdefined( var_eb3a8721 ) )
         {
@@ -306,9 +306,9 @@ function function_47a88a0c( n_to_spawn = 1, var_1fafa3fc, b_force_spawn = 0, var
                 ai.var_cf3ac201 = 1;
             }
             
-            if ( isdefined( var_46d2ec35 ) )
+            if ( isdefined( e_favorite_enemy ) )
             {
-                ai.favoriteenemy = var_46d2ec35;
+                ai.favoriteenemy = e_favorite_enemy;
                 ai.favoriteenemy.hunted_by++;
             }
             

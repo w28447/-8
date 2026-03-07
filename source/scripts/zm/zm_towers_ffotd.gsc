@@ -26,6 +26,6 @@ function __init__()
 // Size: 0x4e
 function __main__()
 {
-    var_bb230d1 = spawncollision( "collision_bullet_wall_128x128x10", "collider", ( 940, 948, -216 ), ( 0, 45, 0 ) );
+    e_gate_col = spawncollision( "collision_bullet_wall_128x128x10", "collider", ( 940, 948, -216 ), ( 0, 45, 0 ) );
 }
 

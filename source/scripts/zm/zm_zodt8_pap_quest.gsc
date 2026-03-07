@@ -170,11 +170,11 @@ function function_d6076798( var_c41947a6 = 0 )
     
     if ( self.prefabname === "poop_deck_pap_location" )
     {
-        var_96bd0a5d = getent( "poop_deck_PAP_box", "targetname" );
+        e_pap_box = getent( "poop_deck_PAP_box", "targetname" );
         
-        if ( isdefined( var_96bd0a5d ) )
+        if ( isdefined( e_pap_box ) )
         {
-            var_96bd0a5d delete();
+            e_pap_box delete();
         }
     }
     

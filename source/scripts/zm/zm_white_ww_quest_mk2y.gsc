@@ -46,12 +46,12 @@ function init()
     level flag::init( #"hash_7a55d8f4bd6917cb" );
     var_cf398736 = struct::get_array( "mk2y_canister" );
     var_cf398736 = array::randomize( var_cf398736 );
-    level.var_23674b8f.var_5dca8c75 = var_cf398736[ 0 ];
+    level.var_23674b8f.s_mk2y_canister = var_cf398736[ 0 ];
     
-    foreach ( var_5dca8c75 in var_cf398736 )
+    foreach ( s_mk2y_canister in var_cf398736 )
     {
-        var_d77110f1 = struct::get( var_5dca8c75.target );
-        var_5dca8c75.var_ceb354bf = util::spawn_model( var_d77110f1.model, var_d77110f1.origin, var_d77110f1.angles );
+        var_d77110f1 = struct::get( s_mk2y_canister.target );
+        s_mk2y_canister.var_ceb354bf = util::spawn_model( var_d77110f1.model, var_d77110f1.origin, var_d77110f1.angles );
     }
 }
 
@@ -140,21 +140,21 @@ function private start_step_1()
 {
     level endon( #"insanity_mode_triggered" );
     level thread function_cbeb9a33();
-    var_5dca8c75 = level.var_23674b8f.var_5dca8c75;
-    var_5dca8c75.e_canister = util::spawn_model( var_5dca8c75.model, var_5dca8c75.origin, var_5dca8c75.angles );
+    s_mk2y_canister = level.var_23674b8f.s_mk2y_canister;
+    s_mk2y_canister.e_canister = util::spawn_model( s_mk2y_canister.model, s_mk2y_canister.origin, s_mk2y_canister.angles );
     level.var_23674b8f.n_step = 1;
     
-    if ( isdefined( level.var_23674b8f.var_5dca8c75.var_ceb354bf ) )
+    if ( isdefined( level.var_23674b8f.s_mk2y_canister.var_ceb354bf ) )
     {
-        exploder::exploder( "fxexp_mk2_y_smoke_emit_" + level.var_23674b8f.var_5dca8c75.script_string );
+        exploder::exploder( "fxexp_mk2_y_smoke_emit_" + level.var_23674b8f.s_mk2y_canister.script_string );
         level flag::set( #"hash_3a183a144032bbf3" );
         level flag::wait_till( #"hash_7ae84eb618c9266b" );
-        level.var_23674b8f.var_5dca8c75.var_ceb354bf delete();
-        exploder::stop_exploder( "fxexp_mk2_y_smoke_emit_" + level.var_23674b8f.var_5dca8c75.script_string );
-        exploder::exploder( "fxexp_mk2_y_dirt_reveal_" + level.var_23674b8f.var_5dca8c75.script_string );
+        level.var_23674b8f.s_mk2y_canister.var_ceb354bf delete();
+        exploder::stop_exploder( "fxexp_mk2_y_smoke_emit_" + level.var_23674b8f.s_mk2y_canister.script_string );
+        exploder::exploder( "fxexp_mk2_y_dirt_reveal_" + level.var_23674b8f.s_mk2y_canister.script_string );
     }
     
-    s_unitrigger = var_5dca8c75.e_canister zm_item_pickup::create_item_pickup( &function_9d66ea6f, &function_f6048ee, &function_5b4f9f76, 96 );
+    s_unitrigger = s_mk2y_canister.e_canister zm_item_pickup::create_item_pickup( &function_9d66ea6f, &function_f6048ee, &function_5b4f9f76, 96 );
     zm_unitrigger::unitrigger_force_per_player_triggers( s_unitrigger );
 }
 
@@ -164,7 +164,7 @@ function private start_step_1()
 // Size: 0xfa, Type: bool
 function function_33d9b1f8()
 {
-    target = level.var_23674b8f.var_5dca8c75.var_ceb354bf;
+    target = level.var_23674b8f.s_mk2y_canister.var_ceb354bf;
     
     if ( isdefined( target ) && distancesquared( self.origin, target.origin ) < 262144 )
     {
@@ -195,12 +195,12 @@ function function_1f955544()
     
     while ( true )
     {
-        if ( !isdefined( level.var_23674b8f.var_5dca8c75.var_ceb354bf ) )
+        if ( !isdefined( level.var_23674b8f.s_mk2y_canister.var_ceb354bf ) )
         {
             break;
         }
         
-        if ( distancesquared( self.origin, level.var_23674b8f.var_5dca8c75.var_ceb354bf.origin ) < 6400 )
+        if ( distancesquared( self.origin, level.var_23674b8f.s_mk2y_canister.var_ceb354bf.origin ) < 6400 )
         {
             self thread function_62970384();
             break;
@@ -252,13 +252,13 @@ function private function_9d66ea6f( e_item, e_player )
 // Size: 0x104
 function cleanup_step_1()
 {
-    exploder::stop_exploder( "fxexp_mk2_y_smoke_emit_" + level.var_23674b8f.var_5dca8c75.script_string );
+    exploder::stop_exploder( "fxexp_mk2_y_smoke_emit_" + level.var_23674b8f.s_mk2y_canister.script_string );
     level flag::clear( #"hash_3a183a144032bbf3" );
     
-    if ( isdefined( level.var_23674b8f.var_5dca8c75.e_canister ) && isdefined( level.var_23674b8f.var_5dca8c75.e_canister.s_unitrigger ) )
+    if ( isdefined( level.var_23674b8f.s_mk2y_canister.e_canister ) && isdefined( level.var_23674b8f.s_mk2y_canister.e_canister.s_unitrigger ) )
     {
-        zm_unitrigger::unregister_unitrigger( level.var_23674b8f.var_5dca8c75.e_canister.s_unitrigger );
-        level.var_23674b8f.var_5dca8c75.e_canister delete();
+        zm_unitrigger::unregister_unitrigger( level.var_23674b8f.s_mk2y_canister.e_canister.s_unitrigger );
+        level.var_23674b8f.s_mk2y_canister.e_canister delete();
     }
 }
 
@@ -294,7 +294,7 @@ function private start_step_2()
         iprintlnbold( "<dev string:x65>" + level.var_23674b8f.var_80284ca5[ 0 ].script_noteworthy + "<dev string:x81>" + level.var_23674b8f.var_80284ca5[ 1 ].script_noteworthy );
     #/
     
-    s_canister = level.var_23674b8f.var_5dca8c75;
+    s_canister = level.var_23674b8f.s_mk2y_canister;
     level.var_23674b8f.e_wisp = util::spawn_model( #"tag_origin", s_canister.origin - ( 0, 0, 64 ), s_canister.angles );
     e_wisp = level.var_23674b8f.e_wisp;
     e_wisp.e_model = util::spawn_model( #"p7_zm_ori_orb_wind", e_wisp.origin, e_wisp.angles );
@@ -487,13 +487,13 @@ function start_step_3()
         level.var_23674b8f.e_player thread zm_white_util::function_491673da( #"hash_6942fd3186464801" );
     }
     
-    var_3d7dfe05 = struct::get( "mk2y_defend" );
-    n_time = distance( e_wisp.origin, var_3d7dfe05.origin ) / 400;
-    e_wisp moveto( var_3d7dfe05.origin, n_time );
+    s_mk2y_defend = struct::get( "mk2y_defend" );
+    n_time = distance( e_wisp.origin, s_mk2y_defend.origin ) / 400;
+    e_wisp moveto( s_mk2y_defend.origin, n_time );
     e_wisp waittill( #"movedone" );
-    var_3d7dfe05 = struct::get( "mk2y_defend" );
-    var_3d7dfe05 zm_unitrigger::function_fac87205( &function_18a1849f, 96, 0, 1 );
-    level.var_23674b8f.var_fead3ae9 = util::spawn_model( var_3d7dfe05.model, var_3d7dfe05.origin, var_3d7dfe05.angles );
+    s_mk2y_defend = struct::get( "mk2y_defend" );
+    s_mk2y_defend zm_unitrigger::function_fac87205( &function_18a1849f, 96, 0, 1 );
+    level.var_23674b8f.var_fead3ae9 = util::spawn_model( s_mk2y_defend.model, s_mk2y_defend.origin, s_mk2y_defend.angles );
     level.var_23674b8f.var_fead3ae9 thread function_2b0060b8();
     playsoundatposition( "evt_rgun_frame_putback", ( 1046, -1606, -259 ) );
     namespace_bd74bbd2::start( #"sc_mk2y" );

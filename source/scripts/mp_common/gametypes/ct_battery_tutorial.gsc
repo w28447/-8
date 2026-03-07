@@ -2448,11 +2448,11 @@ function function_e7a8d041()
     level.players[ 0 ] endon( #"death" );
     self endon( #"death", #"explode" );
     level endon( #"window_hit" );
-    var_e5784d10 = getent( "vol_window_target", "targetname" );
+    t_window = getent( "vol_window_target", "targetname" );
     
     while ( true )
     {
-        if ( self istouching( var_e5784d10 ) )
+        if ( self istouching( t_window ) )
         {
             level flag::set( "window_hit" );
         }

@@ -372,7 +372,7 @@ function function_7b6777c5( t_spawner )
         {
             while ( !isdefined( e_enemy ) )
             {
-                e_enemy = zombie_utility::spawn_zombie( level.var_d668eae7[ 0 ], undefined, var_adad907f );
+                e_enemy = zombie_utility::spawn_zombie( level.a_sp_brutus[ 0 ], undefined, var_adad907f );
                 waitframe( 1 );
             }
             

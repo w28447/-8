@@ -172,14 +172,14 @@ function sun_deck_watcher()
 // Size: 0x43c
 function function_d096f18f()
 {
-    level.var_ab11c23d notify( #"hash_78fc5bbd712046b0" );
-    level.var_ab11c23d rotateto( ( 10, level.var_ab11c23d.angles[ 1 ] - 5, 0 ), 0.2 );
-    level.var_ab11c23d waittill( #"rotatedone" );
-    level.var_ab11c23d rotatevelocity( ( 0, -1440, 0 ), 4.5, 3 );
+    level.e_lighthouse_light notify( #"hash_78fc5bbd712046b0" );
+    level.e_lighthouse_light rotateto( ( 10, level.e_lighthouse_light.angles[ 1 ] - 5, 0 ), 0.2 );
+    level.e_lighthouse_light waittill( #"rotatedone" );
+    level.e_lighthouse_light rotatevelocity( ( 0, -1440, 0 ), 4.5, 3 );
     level thread function_39d9b290();
     exploder::exploder( "fxexp_portal_115_start" );
     wait 5;
-    level.var_ab11c23d rotateto( ( -90, level.var_ab11c23d.angles[ 1 ], 0 ), 0.2 );
+    level.e_lighthouse_light rotateto( ( -90, level.e_lighthouse_light.angles[ 1 ], 0 ), 0.2 );
     level zm_orange_util::function_fd24e47f( #"vox_sky_portal_react", -1, 1 );
     var_6df66af8 = float( soundgetplaybacktime( #"hash_2e5e53739622d4e5" ) ) / 1000;
     s_start = struct::get( "pablo_rise_start" );

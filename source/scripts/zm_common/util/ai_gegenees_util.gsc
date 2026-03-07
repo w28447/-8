@@ -41,11 +41,11 @@ function __init__()
     
     if ( zm_utility::is_standard() )
     {
-        zm_round_spawning::register_archetype( #"gegenees", &function_7107da88, &round_spawn, undefined, int( level.var_b3d6ef3b[ 0 ] ai::function_9139c839().var_dbb3ef3d / 2 ) );
+        zm_round_spawning::register_archetype( #"gegenees", &function_7107da88, &round_spawn, undefined, int( level.a_sp_gegenees[ 0 ] ai::function_9139c839().var_dbb3ef3d / 2 ) );
     }
     else
     {
-        zm_round_spawning::register_archetype( #"gegenees", &function_7107da88, &round_spawn, undefined, level.var_b3d6ef3b[ 0 ] ai::function_9139c839().var_dbb3ef3d );
+        zm_round_spawning::register_archetype( #"gegenees", &function_7107da88, &round_spawn, undefined, level.a_sp_gegenees[ 0 ] ai::function_9139c839().var_dbb3ef3d );
     }
     
     zm_round_spawning::function_306ce518( #"gegenees", &function_c1a0ea97 );
@@ -57,7 +57,7 @@ function __init__()
 // Size: 0x4c
 function __main__()
 {
-    zm_score::function_e5d6e6dd( #"gegenees", level.var_b3d6ef3b[ 0 ] ai::function_9139c839().var_1be2be91 );
+    zm_score::function_e5d6e6dd( #"gegenees", level.a_sp_gegenees[ 0 ] ai::function_9139c839().var_1be2be91 );
 }
 
 // Namespace zombie_gegenees_util/ai_gegenees_util
@@ -67,7 +67,7 @@ function __main__()
 function private function_b656013e()
 {
     level endon( #"game_over" );
-    bundle = level.var_b3d6ef3b[ 0 ] ai::function_9139c839();
+    bundle = level.a_sp_gegenees[ 0 ] ai::function_9139c839();
     bundle.var_250a1683 = 750;
     
     while ( !level flag::exists( #"pap_quest_completed" ) )
@@ -87,9 +87,9 @@ function private function_b656013e()
 // Size: 0x10e
 function function_ea46ca6f()
 {
-    level.var_b3d6ef3b = getentarray( "zombie_gegenees_spawner", "script_noteworthy" );
+    level.a_sp_gegenees = getentarray( "zombie_gegenees_spawner", "script_noteworthy" );
     
-    if ( level.var_b3d6ef3b.size == 0 )
+    if ( level.a_sp_gegenees.size == 0 )
     {
         assertmsg( "<dev string:x38>" );
         return;
@@ -97,10 +97,10 @@ function function_ea46ca6f()
     
     spawner::add_archetype_spawn_function( #"gegenees", &gegenees_init );
     
-    foreach ( var_6ad43ef7 in level.var_b3d6ef3b )
+    foreach ( sp_gegenees in level.a_sp_gegenees )
     {
-        var_6ad43ef7.is_enabled = 1;
-        var_6ad43ef7.script_forcespawn = 1;
+        sp_gegenees.is_enabled = 1;
+        sp_gegenees.script_forcespawn = 1;
     }
 }
 
@@ -251,7 +251,7 @@ function private function_7e791d5d( einflictor, eattacker, idamage, idflags, sme
 // Size: 0x292
 function function_7107da88( var_dbce0c44 )
 {
-    var_8cf00d40 = int( floor( var_dbce0c44 / level.var_b3d6ef3b[ 0 ] ai::function_9139c839().var_dbb3ef3d ) );
+    var_8cf00d40 = int( floor( var_dbce0c44 / level.a_sp_gegenees[ 0 ] ai::function_9139c839().var_dbb3ef3d ) );
     
     if ( zm_utility::is_standard() )
     {
@@ -366,7 +366,7 @@ function spawn_single( b_force_spawn = 0, var_eb3a8721, var_bc66d64b )
         return undefined;
     }
     
-    ai = function_2ce6dcd4( level.var_b3d6ef3b[ 0 ], s_spawn_loc, var_bc66d64b );
+    ai = function_2ce6dcd4( level.a_sp_gegenees[ 0 ], s_spawn_loc, var_bc66d64b );
     
     if ( isdefined( ai ) )
     {
@@ -396,10 +396,10 @@ function spawn_single( b_force_spawn = 0, var_eb3a8721, var_bc66d64b )
 // Size: 0xbc, Type: bool
 function function_48c60fc2()
 {
-    var_d6ddc067 = function_13080a96();
+    n_gegenees_alive = function_13080a96();
     var_ba74cbf9 = function_5685dac6();
     
-    if ( !( isdefined( level.var_a2831281 ) && level.var_a2831281 ) && ( isdefined( level.var_153e9058 ) && level.var_153e9058 || var_d6ddc067 >= var_ba74cbf9 || !level flag::get( "spawn_zombies" ) ) )
+    if ( !( isdefined( level.var_a2831281 ) && level.var_a2831281 ) && ( isdefined( level.var_153e9058 ) && level.var_153e9058 || n_gegenees_alive >= var_ba74cbf9 || !level flag::get( "spawn_zombies" ) ) )
     {
         return false;
     }
@@ -439,18 +439,18 @@ function function_13080a96()
         return [[ level.var_95c10956 ]]();
     }
     
-    var_d5bd9bcb = getaiarchetypearray( #"gegenees" );
-    var_d6ddc067 = var_d5bd9bcb.size;
+    a_ai_gegenees = getaiarchetypearray( #"gegenees" );
+    n_gegenees_alive = a_ai_gegenees.size;
     
-    foreach ( ai_gegenees in var_d5bd9bcb )
+    foreach ( ai_gegenees in a_ai_gegenees )
     {
         if ( !isalive( ai_gegenees ) )
         {
-            var_d6ddc067--;
+            n_gegenees_alive--;
         }
     }
     
-    return var_d6ddc067;
+    return n_gegenees_alive;
 }
 
 // Namespace zombie_gegenees_util/ai_gegenees_util
@@ -459,7 +459,7 @@ function function_13080a96()
 // Size: 0x90
 function function_2ce6dcd4( spawner, s_spot, var_bc66d64b )
 {
-    ai_gegenees = zombie_utility::spawn_zombie( level.var_b3d6ef3b[ 0 ], "gegenees", s_spot, var_bc66d64b );
+    ai_gegenees = zombie_utility::spawn_zombie( level.a_sp_gegenees[ 0 ], "gegenees", s_spot, var_bc66d64b );
     
     if ( isdefined( ai_gegenees ) )
     {

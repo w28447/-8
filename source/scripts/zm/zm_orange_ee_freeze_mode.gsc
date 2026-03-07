@@ -80,8 +80,8 @@ function freeze_quest_cleanup( var_a276c861, var_19e802fa )
         return;
     }
     
-    var_e08890fb = getent( "freeze_mode_button", "targetname" );
-    var_e08890fb movez( var_e08890fb.script_int, 2, 0.2, 0.2 );
+    e_freeze_button = getent( "freeze_mode_button", "targetname" );
+    e_freeze_button movez( e_freeze_button.script_int, 2, 0.2, 0.2 );
     wait 1.5;
     var_57e06cb = struct::get( "freeze_mode_struct", "targetname" );
     var_57e06cb zm_hms_util::function_6099877a( 72, "end_game", #"hash_6001ebf204288bf8", #"hash_3fe9eae6f03accce" );

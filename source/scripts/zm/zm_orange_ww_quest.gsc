@@ -349,7 +349,7 @@ function function_a67de655( e_player )
 // Size: 0xdc
 function ww_quest_step4_setup( var_5ea5c94d )
 {
-    level.s_ww_quest.var_aaedf111 = getent( "ww_quest_safe_door", "targetname" );
+    level.s_ww_quest.e_safe_door = getent( "ww_quest_safe_door", "targetname" );
     level.s_ww_quest.s_safe = struct::get( "ww_quest_safe_use", "targetname" );
     
     if ( !var_5ea5c94d )
@@ -369,7 +369,7 @@ function ww_quest_step4_cleanup( var_5ea5c94d, ended_early )
     if ( var_5ea5c94d || ended_early )
     {
         level zm_ui_inventory::function_7df6bb60( "zm_orange_ww_quest", 0 );
-        level.s_ww_quest.var_aaedf111 function_8613de32();
+        level.s_ww_quest.e_safe_door function_8613de32();
         level flag::set( #"ww_safe_opened" );
     }
     
@@ -386,7 +386,7 @@ function function_731665dd()
     s_results = self waittill( #"trigger_activated" );
     e_who = s_results.e_who;
     level zm_ui_inventory::function_7df6bb60( "zm_orange_ww_quest", 0 );
-    level.s_ww_quest.var_aaedf111 function_8613de32();
+    level.s_ww_quest.e_safe_door function_8613de32();
     level thread function_29d4087d( e_who );
     level flag::set( #"ww_safe_opened" );
 }
@@ -430,15 +430,15 @@ function function_29d4087d( player )
 // Size: 0x164
 function ww_quest_step5_setup( var_5ea5c94d )
 {
-    level.s_ww_quest.var_a90a158b = getent( "ww_quest_vril_device", "targetname" );
-    level.s_ww_quest.var_e0942fa0 = struct::get( "ww_quest_vril_device_struct", "targetname" );
-    level.s_ww_quest.var_e0942fa0.var_b9989e12 = hash( level.s_ww_quest.var_e0942fa0.script_noteworthy );
-    level.s_ww_quest.var_e0942fa0.var_c5e93537 = getent( level.s_ww_quest.var_e0942fa0.target, "targetname" );
+    level.s_ww_quest.e_vril_device = getent( "ww_quest_vril_device", "targetname" );
+    level.s_ww_quest.s_vril_device = struct::get( "ww_quest_vril_device_struct", "targetname" );
+    level.s_ww_quest.s_vril_device.var_b9989e12 = hash( level.s_ww_quest.s_vril_device.script_noteworthy );
+    level.s_ww_quest.s_vril_device.var_c5e93537 = getent( level.s_ww_quest.s_vril_device.target, "targetname" );
     
     if ( !var_5ea5c94d )
     {
-        level.s_ww_quest.var_e0942fa0.var_7944be4a = 0;
-        zm_sq_modules::function_3f808d3d( level.s_ww_quest.var_e0942fa0.var_b9989e12 );
+        level.s_ww_quest.s_vril_device.var_7944be4a = 0;
+        zm_sq_modules::function_3f808d3d( level.s_ww_quest.s_vril_device.var_b9989e12 );
         level flag::wait_till( #"hash_174f5682aa48c4b" );
     }
 }
@@ -452,11 +452,11 @@ function ww_quest_step5_cleanup( var_5ea5c94d, ended_early )
     if ( var_5ea5c94d || ended_early )
     {
         level flag::set( #"hash_174f5682aa48c4b" );
-        level.s_ww_quest.var_a90a158b clientfield::set( "vril_device_glow", 1 );
+        level.s_ww_quest.e_vril_device clientfield::set( "vril_device_glow", 1 );
     }
     
-    level.s_ww_quest.var_a90a158b clientfield::set( "vril_device_glow", 1 );
-    level.s_ww_quest.var_e0942fa0.var_c5e93537 delete();
+    level.s_ww_quest.e_vril_device clientfield::set( "vril_device_glow", 1 );
+    level.s_ww_quest.s_vril_device.var_c5e93537 delete();
 }
 
 // Namespace zm_orange_ww_quest/zm_orange_ww_quest
@@ -543,7 +543,7 @@ function ww_quest_step6_cleanup( var_5ea5c94d, ended_early )
         level flag::set( #"hash_45b20bfeff570913" );
     }
     
-    level.s_ww_quest.var_a90a158b delete();
+    level.s_ww_quest.e_vril_device delete();
     level zm_ui_inventory::function_7df6bb60( "zm_orange_ww_quest", 3 );
     level.s_ww_quest.s_safe zm_unitrigger::unregister_unitrigger( level.s_ww_quest.s_safe.s_unitrigger );
 }
@@ -669,16 +669,16 @@ function function_2b590a59()
 // Size: 0x14c
 function ww_quest_step9_setup( var_5ea5c94d )
 {
-    level.s_ww_quest.var_16c37c7f = struct::get( "reward_crate_dg1", "targetname" );
-    var_16c37c7f = level.s_ww_quest.var_16c37c7f;
-    var_16c37c7f.e_lid = getent( var_16c37c7f.var_c8166135, "targetname" );
-    var_16c37c7f.e_lock = getent( var_16c37c7f.target_lock, "targetname" );
-    var_16c37c7f.e_weapon = getent( var_16c37c7f.target_weapon, "targetname" );
+    level.s_ww_quest.s_reward_crate = struct::get( "reward_crate_dg1", "targetname" );
+    s_reward_crate = level.s_ww_quest.s_reward_crate;
+    s_reward_crate.e_lid = getent( s_reward_crate.var_c8166135, "targetname" );
+    s_reward_crate.e_lock = getent( s_reward_crate.target_lock, "targetname" );
+    s_reward_crate.e_weapon = getent( s_reward_crate.target_weapon, "targetname" );
     
     if ( !var_5ea5c94d )
     {
-        var_16c37c7f zm_unitrigger::create( &function_54e8826c, 64 );
-        var_16c37c7f thread function_400a7216();
+        s_reward_crate zm_unitrigger::create( &function_54e8826c, 64 );
+        s_reward_crate thread function_400a7216();
         level flag::wait_till( #"hash_44512b5e960df8f0" );
     }
 }
@@ -689,18 +689,18 @@ function ww_quest_step9_setup( var_5ea5c94d )
 // Size: 0x114
 function ww_quest_step9_cleanup( var_5ea5c94d, ended_early )
 {
-    var_16c37c7f = level.s_ww_quest.var_16c37c7f;
+    s_reward_crate = level.s_ww_quest.s_reward_crate;
     
     if ( var_5ea5c94d || ended_early )
     {
-        var_16c37c7f.e_lid rotatepitch( -90, 0.5 );
-        var_16c37c7f.e_lid waittill( #"rotatedone" );
-        var_16c37c7f.e_weapon movez( 24, 0.5 );
-        var_16c37c7f.e_weapon waittill( #"movedone" );
+        s_reward_crate.e_lid rotatepitch( -90, 0.5 );
+        s_reward_crate.e_lid waittill( #"rotatedone" );
+        s_reward_crate.e_weapon movez( 24, 0.5 );
+        s_reward_crate.e_weapon waittill( #"movedone" );
         level flag::set( #"hash_44512b5e960df8f0" );
     }
     
-    var_16c37c7f zm_unitrigger::unregister_unitrigger( var_16c37c7f.s_unitrigger );
+    s_reward_crate zm_unitrigger::unregister_unitrigger( s_reward_crate.s_unitrigger );
 }
 
 // Namespace zm_orange_ww_quest/zm_orange_ww_quest
@@ -758,11 +758,11 @@ function function_735037d4()
 // Size: 0x94
 function registertank_activatedtargetservice( var_5ea5c94d )
 {
-    var_16c37c7f = level.s_ww_quest.var_16c37c7f;
+    s_reward_crate = level.s_ww_quest.s_reward_crate;
     
     if ( !var_5ea5c94d )
     {
-        var_16c37c7f.e_weapon zm_orange_util::start_zombies_collision_manager( getweapon( "ww_tesla_sniper_t8" ), &function_b8f6f344 );
+        s_reward_crate.e_weapon zm_orange_util::start_zombies_collision_manager( getweapon( "ww_tesla_sniper_t8" ), &function_b8f6f344 );
         level flag::wait_till( #"hash_65f4eac55edea07f" );
     }
 }
@@ -773,13 +773,13 @@ function registertank_activatedtargetservice( var_5ea5c94d )
 // Size: 0x144
 function ww_quest_step10_cleanup( var_5ea5c94d, ended_early )
 {
-    var_16c37c7f = level.s_ww_quest.var_16c37c7f;
+    s_reward_crate = level.s_ww_quest.s_reward_crate;
     
     if ( var_5ea5c94d || ended_early )
     {
-        if ( isdefined( var_16c37c7f.e_weapon ) )
+        if ( isdefined( s_reward_crate.e_weapon ) )
         {
-            var_16c37c7f.e_weapon delete();
+            s_reward_crate.e_weapon delete();
         }
         
         a_e_players = getplayers();

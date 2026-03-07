@@ -35,18 +35,18 @@ function init()
         function_7a7d15c8( var_4f61dc22 );
     }
     
-    level.var_d5fff1a7 = getent( "jfk_room_oscar_left_0", "targetname" );
-    level.var_a83c1620 = getent( "jfk_room_oscar_left_1", "targetname" );
-    level.var_3830a0d3 = getent( "jfk_room_oscar_right_0", "targetname" );
-    level.var_2a66053e = getent( "jfk_room_oscar_right_1", "targetname" );
-    level.var_a83c1620 hide();
-    level.var_2a66053e hide();
-    level.var_3830a0d3.angles += ( 20, 0, 0 );
+    level.e_oscar_left_0 = getent( "jfk_room_oscar_left_0", "targetname" );
+    level.e_oscar_left_1 = getent( "jfk_room_oscar_left_1", "targetname" );
+    level.e_oscar_right_0 = getent( "jfk_room_oscar_right_0", "targetname" );
+    level.e_oscar_right_1 = getent( "jfk_room_oscar_right_1", "targetname" );
+    level.e_oscar_left_1 hide();
+    level.e_oscar_right_1 hide();
+    level.e_oscar_right_0.angles += ( 20, 0, 0 );
     level flag::init( #"hash_7b1fd4fc459e497c" );
-    zm_sq::register( #"hash_6039fc2dd130edf5", #"step_1", #"hash_5873576264199a27", &function_4ac6cf37, &function_cb27a665 );
-    zm_sq::start( #"hash_6039fc2dd130edf5" );
-    zm_sq::register( #"hash_6039fc2dd130edf5", #"step_2", #"hash_5873586264199bda", &function_955fffb1, &function_fabb1fba );
-    zm_sq::start( #"hash_6039fc2dd130edf5" );
+    zm_sq::register( #"ee_oscars", #"step_1", #"hash_5873576264199a27", &function_4ac6cf37, &function_cb27a665 );
+    zm_sq::start( #"ee_oscars" );
+    zm_sq::register( #"ee_oscars", #"step_2", #"hash_5873586264199bda", &function_955fffb1, &function_fabb1fba );
+    zm_sq::start( #"ee_oscars" );
 }
 
 // Namespace namespace_a35b0e2/namespace_a35b0e2
@@ -147,8 +147,8 @@ function function_955fffb1( var_5ea5c94d )
         var_52020ab3.var_47323b73 = var_52020ab3 zm_unitrigger::create( "", 64, &function_715c9476, 1, 0 );
         var_2d8940a6 = struct::get( "jfk_room_oscar_right_trigger" );
         var_2d8940a6.var_47323b73 = var_2d8940a6 zm_unitrigger::create( "", 64, &function_63f29ee9, 1, 0 );
-        level.var_a83c1620 hide();
-        level.var_2a66053e hide();
+        level.e_oscar_left_1 hide();
+        level.e_oscar_right_1 hide();
         level flag::wait_till( #"hash_7b1fd4fc459e497c" );
     }
 }
@@ -202,8 +202,8 @@ function function_715c9476()
 // Size: 0xfc
 function function_63f29ee9()
 {
-    var_c4cb303c = getent( "jfk_room_oscar_right_0", "targetname" );
-    var_c4cb303c rotateto( var_c4cb303c.angles - ( 20, 0, 0 ), 0.15 );
+    e_oscar_right = getent( "jfk_room_oscar_right_0", "targetname" );
+    e_oscar_right rotateto( e_oscar_right.angles - ( 20, 0, 0 ), 0.15 );
     waitresult = self waittill( #"trigger" );
     level.var_db90b274--;
     self playsound( #"hash_5104efdd2ef71e39" );
@@ -223,11 +223,11 @@ function function_bd81f4e2( user )
 {
     if ( level.var_db90b274 <= 0 )
     {
-        level.var_a83c1620 show();
-        level.var_2a66053e show();
+        level.e_oscar_left_1 show();
+        level.e_oscar_right_1 show();
         wait 0.1;
-        level.var_d5fff1a7 hide();
-        level.var_3830a0d3 hide();
+        level.e_oscar_left_0 hide();
+        level.e_oscar_right_0 hide();
         playsoundatposition( #"hash_4b169927b4789180", ( 0, 0, 0 ) );
         
         /#

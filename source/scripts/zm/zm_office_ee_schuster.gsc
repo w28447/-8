@@ -245,13 +245,13 @@ function function_d4c6dc0d()
 {
     self.var_b21e0263 = 1;
     e_recorder = getent( self.target2, "targetname" );
-    var_df4e73a7 = getentarray( e_recorder.target, "targetname" );
+    a_e_audio_reel = getentarray( e_recorder.target, "targetname" );
     
-    while ( self.var_b21e0263 && var_df4e73a7.size > 0 )
+    while ( self.var_b21e0263 && a_e_audio_reel.size > 0 )
     {
-        var_df4e73a7[ 0 ] rotatepitch( 45, 1 );
+        a_e_audio_reel[ 0 ] rotatepitch( 45, 1 );
         wait 0.1;
-        var_df4e73a7[ 1 ] rotatepitch( 60, 1 );
+        a_e_audio_reel[ 1 ] rotatepitch( 60, 1 );
         wait 0.9;
     }
 }

@@ -104,7 +104,7 @@
                     if ( level flag::get( #"hash_6f7fd3d4d070db87" ) == 0 )
                     {
                         exploder::exploder( "<dev string:x936>" );
-                        level.var_9cc989a5 delete();
+                        level.e_ship_fore_fire_clip delete();
                         level flag::set( #"hash_6f7fd3d4d070db87" );
                     }
                     

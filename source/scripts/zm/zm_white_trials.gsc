@@ -216,11 +216,11 @@ function spawn_boss()
 {
     level endon( #"end_game", #"hash_7646638df88a3656" );
     exploder::exploder( "fxexp_pyramid_open" );
-    var_1c91a56e = struct::get( "apd_door_scene", "targetname" );
+    s_apd_door = struct::get( "apd_door_scene", "targetname" );
     level waittill( #"zombie_total_set" );
     n_threshold = level.total_zombies_killed - level.zombie_total_subtract + level.zombie_total;
     s_notify = level waittill( #"hash_715188521b564b16" );
-    var_1c91a56e scene::play( "open" );
+    s_apd_door scene::play( "open" );
     zm_white_toast::spawn_boss();
     
     if ( isdefined( level.e_avogadro ) )
@@ -235,8 +235,8 @@ function spawn_boss()
 // Size: 0x84
 function function_e478fb2a()
 {
-    var_1c91a56e = struct::get( "apd_door_scene", "targetname" );
-    var_1c91a56e thread scene::play_from_time( "close", undefined, undefined, 1, 1 );
+    s_apd_door = struct::get( "apd_door_scene", "targetname" );
+    s_apd_door thread scene::play_from_time( "close", undefined, undefined, 1, 1 );
     exploder::exploder_stop( "fxexp_pyramid_open" );
     exploder::exploder_stop( "fxexp_pyramid_capture" );
 }

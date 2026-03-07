@@ -252,7 +252,7 @@ function private function_d60f39c2( entity, player, duration, color )
                     retreat = " retreat";
                     
                     /#
-                        line( level.e_avogadro.var_77ef4a35.origin, end, ( 1, 1, 0 ) );
+                        line( level.e_avogadro.vol_retreat_point.origin, end, ( 1, 1, 0 ) );
                     #/
                 }
                 
@@ -1343,7 +1343,7 @@ function private function_ad642b3a( entity )
 {
     result = 0;
     
-    if ( self.var_b90a4dc9 == 4 && isdefined( level.e_avogadro ) && isdefined( level.e_avogadro.vol_retreat ) && isdefined( level.e_avogadro.var_77ef4a35 ) && entity istouching( entity.vol_retreat ) )
+    if ( self.var_b90a4dc9 == 4 && isdefined( level.e_avogadro ) && isdefined( level.e_avogadro.vol_retreat ) && isdefined( level.e_avogadro.vol_retreat_point ) && entity istouching( entity.vol_retreat ) )
     {
         result = 1;
     }
@@ -1359,7 +1359,7 @@ function private function_65a26b34( entity, asmstatename )
 {
     entity zombie_utility::set_zombie_run_cycle( "run" );
     animationstatenetworkutility::requeststate( entity, asmstatename );
-    var_e22f98ec = getclosestpointonnavmesh( level.e_avogadro.var_77ef4a35.origin, 100, entity getpathfindingradius() );
+    var_e22f98ec = getclosestpointonnavmesh( level.e_avogadro.vol_retreat_point.origin, 100, entity getpathfindingradius() );
     entity setgoal( var_e22f98ec );
     entity.var_f10dd7ca = gettime();
     return 5;

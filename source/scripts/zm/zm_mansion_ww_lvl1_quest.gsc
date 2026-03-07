@@ -262,14 +262,14 @@ function function_8b4cc6ae( origin, arc_angle_degrees = 90, do_trace, e_ignore )
 function function_2325482e()
 {
     mdl_weapon = util::spawn_model( level.s_ww_lock.model, level.s_ww_lock.origin, level.s_ww_lock.angles );
-    var_cb31d9aa = getent( "trigger_lookat_ww_case", "targetname" );
-    var_cb31d9aa thread function_7e7626b5();
+    t_lookat_ww_case = getent( "trigger_lookat_ww_case", "targetname" );
+    t_lookat_ww_case thread function_7e7626b5();
     level flag::wait_till( #"hash_65224b2f37fb9446" );
     level notify( #"ww_case_completed" );
     
-    if ( isdefined( var_cb31d9aa ) )
+    if ( isdefined( t_lookat_ww_case ) )
     {
-        var_cb31d9aa delete();
+        t_lookat_ww_case delete();
     }
     
     level thread zm_unitrigger::unregister_unitrigger( level.s_ww_lock.s_unitrigger );

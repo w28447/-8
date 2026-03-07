@@ -63,7 +63,7 @@ function main()
     zm_sq::register( #"hash_729a1e4eb041be9b", #"step_1", #"trinket_quest", &trinket_quest, &trinket_quest_cleanup );
     zm_sq::register( #"edge_of_the_world", #"step_1", #"edge_quest", &edge_quest, &edge_quest_cleanup );
     zm_sq::register( #"edge_of_the_world", #"step_2", #"edge_quest", &function_8bc27fd3, &security_balcony_time_ );
-    level.var_4ac8ef63 = getent( "edge_flinger_spot", "targetname" );
+    level.e_edge_spot = getent( "edge_flinger_spot", "targetname" );
     level flag::init( #"hash_72bd35eacb1940de" );
     level flag::init( #"hash_59d5ba61f4b8f405" );
     zm_sq::register( #"hash_66685502a7dee586", #"step_1", #"hash_66685502a7dee586", &function_a589e722, &function_239ae2e1 );
@@ -967,13 +967,13 @@ function edge_watcher()
     
     while ( !level flag::get( #"edge_launched" ) )
     {
-        if ( self istouching( level.var_4ac8ef63 ) && !( isdefined( level.var_4ac8ef63.b_claimed ) && level.var_4ac8ef63.b_claimed ) )
+        if ( self istouching( level.e_edge_spot ) && !( isdefined( level.e_edge_spot.b_claimed ) && level.e_edge_spot.b_claimed ) )
         {
-            level.var_4ac8ef63.b_claimed = 1;
+            level.e_edge_spot.b_claimed = 1;
             wait 0.5;
             self thread function_bc1ff036();
             
-            while ( self istouching( level.var_4ac8ef63 ) )
+            while ( self istouching( level.e_edge_spot ) )
             {
                 var_68460903 = self getnormalizedcameramovement();
                 
@@ -982,7 +982,7 @@ function edge_watcher()
                 
                 if ( abs( var_68460903[ 1 ] ) < 0.9 || self getstance() != "crouch" )
                 {
-                    level.var_4ac8ef63.b_claimed = 0;
+                    level.e_edge_spot.b_claimed = 0;
                     wait 3;
                     self thread edge_watcher();
                     return;
@@ -991,7 +991,7 @@ function edge_watcher()
                 waitframe( 1 );
             }
             
-            level.var_4ac8ef63.b_claimed = 0;
+            level.e_edge_spot.b_claimed = 0;
             wait 3;
         }
         
@@ -1009,7 +1009,7 @@ function function_bc1ff036()
     self endon( #"death" );
     wait 2.4;
     
-    if ( level.var_4ac8ef63.b_claimed )
+    if ( level.e_edge_spot.b_claimed )
     {
         self.var_e5340f3e = 1;
     }

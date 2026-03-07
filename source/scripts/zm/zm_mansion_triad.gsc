@@ -75,8 +75,8 @@ function function_6eb39fe4()
 // Size: 0xf4
 function function_b8cc9d7e()
 {
-    var_74abfa21 = getent( "knight_model_cemetery", "targetname" );
-    var_74abfa21 hidepart( "tag_stone_01", "p8_zm_man_statue_kisa_stone_01", 1 );
+    mdl_knight_cem = getent( "knight_model_cemetery", "targetname" );
+    mdl_knight_cem hidepart( "tag_stone_01", "p8_zm_man_statue_kisa_stone_01", 1 );
     var_4703a54b = getent( "knight_model_main_hall", "targetname" );
     var_4703a54b hidepart( "tag_stone_02", "p8_zm_man_statue_kisa_stone_02", 1 );
     var_5528f605 = getent( "knight_model_greenhouse", "targetname" );
@@ -96,9 +96,9 @@ function function_c6e2a4fd()
     mdl_stone ghost();
     var_5757942c = getentarray( "kp_mark", "targetname" );
     
-    foreach ( var_5f3c4fab in var_5757942c )
+    foreach ( mdl_kp_mark in var_5757942c )
     {
-        var_5f3c4fab ghost();
+        mdl_kp_mark ghost();
     }
     
     a_s_fireplaces = struct::get_array( "fireplace_location" );
@@ -328,51 +328,51 @@ function cleanup_step_2( var_5ea5c94d, ended_early )
     level flag::set( #"knight_greenhouse_stationed" );
     var_5757942c = getentarray( "kp_mark", "targetname" );
     
-    foreach ( var_5f3c4fab in var_5757942c )
+    foreach ( mdl_kp_mark in var_5757942c )
     {
-        var_5f3c4fab delete();
+        mdl_kp_mark delete();
     }
     
-    var_8de0a1bb = getent( "knight_model_main_hall", "targetname" );
+    mdl_kp_main = getent( "knight_model_main_hall", "targetname" );
     
-    if ( isdefined( var_8de0a1bb ) )
+    if ( isdefined( mdl_kp_main ) )
     {
-        var_8de0a1bb delete();
+        mdl_kp_main delete();
     }
     
-    var_cbf2d010 = getent( "knight_model_cemetery", "targetname" );
+    mdl_kp_cemetery = getent( "knight_model_cemetery", "targetname" );
     
-    if ( isdefined( var_cbf2d010 ) )
+    if ( isdefined( mdl_kp_cemetery ) )
     {
-        var_cbf2d010 delete();
+        mdl_kp_cemetery delete();
     }
     
-    var_41f3c120 = getent( "knight_model_greenhouse", "targetname" );
+    mdl_kp_greenhouse = getent( "knight_model_greenhouse", "targetname" );
     
-    if ( isdefined( var_41f3c120 ) )
+    if ( isdefined( mdl_kp_greenhouse ) )
     {
-        var_41f3c120 delete();
+        mdl_kp_greenhouse delete();
     }
     
-    var_d29db808 = getent( "kp_upg_main", "targetname" );
+    mdl_kp_upg_main = getent( "kp_upg_main", "targetname" );
     
-    if ( isdefined( var_d29db808 ) )
+    if ( isdefined( mdl_kp_upg_main ) )
     {
-        var_d29db808 delete();
+        mdl_kp_upg_main delete();
     }
     
-    var_2332b25b = getent( "kp_upg_dead", "targetname" );
+    mdl_kp_upg_dead = getent( "kp_upg_dead", "targetname" );
     
-    if ( isdefined( var_2332b25b ) )
+    if ( isdefined( mdl_kp_upg_dead ) )
     {
-        var_2332b25b delete();
+        mdl_kp_upg_dead delete();
     }
     
-    var_c6ce47 = getent( "kp_upg_green", "targetname" );
+    mdl_kp_upg_green = getent( "kp_upg_green", "targetname" );
     
-    if ( isdefined( var_c6ce47 ) )
+    if ( isdefined( mdl_kp_upg_green ) )
     {
-        var_c6ce47 delete();
+        mdl_kp_upg_green delete();
     }
 }
 
@@ -512,24 +512,24 @@ function init_step_4( var_a276c861 )
     
     if ( !isdefined( level.var_fbcb1d5b ) )
     {
-        var_e0d9e42f = struct::get( "kp1_end" );
-        level.var_fbcb1d5b = util::spawn_model( #"p8_zm_man_statue_kisa_stone_02", var_e0d9e42f.origin );
+        s_kp1_end = struct::get( "kp1_end" );
+        level.var_fbcb1d5b = util::spawn_model( #"p8_zm_man_statue_kisa_stone_02", s_kp1_end.origin );
         util::wait_network_frame();
         level.var_fbcb1d5b clientfield::set( "" + #"wisp_fx", 1 );
     }
     
     if ( !isdefined( level.var_abe1b67c ) )
     {
-        var_c1395057 = struct::get( "kp2_end" );
-        level.var_abe1b67c = util::spawn_model( #"p8_zm_man_statue_kisa_stone_01", var_c1395057.origin );
+        s_kp2_end = struct::get( "kp2_end" );
+        level.var_abe1b67c = util::spawn_model( #"p8_zm_man_statue_kisa_stone_01", s_kp2_end.origin );
         util::wait_network_frame();
         level.var_abe1b67c clientfield::set( "" + #"wisp_fx", 1 );
     }
     
     if ( !isdefined( level.var_c22f75e6 ) )
     {
-        var_4c27be7b = struct::get( "kp3_end" );
-        level.var_c22f75e6 = util::spawn_model( #"p8_zm_man_statue_kisa_stone_03", var_4c27be7b.origin );
+        s_kp3_end = struct::get( "kp3_end" );
+        level.var_c22f75e6 = util::spawn_model( #"p8_zm_man_statue_kisa_stone_03", s_kp3_end.origin );
         util::wait_network_frame();
         level.var_c22f75e6 clientfield::set( "" + #"wisp_fx", 1 );
     }
@@ -1025,21 +1025,21 @@ function function_265858d6()
             switch ( self.stub.script_string )
             {
                 case #"main_hall":
-                    var_64403099 = getent( "knight_model_main_hall", "targetname" );
-                    var_64403099 thread function_30fe35b( "tag_stone_02", "p8_zm_man_statue_kisa_stone_02", 1.5 );
-                    var_64403099 util::delay( 1.5, undefined, &scene::play, #"p8_fxanim_zm_man_ka01_bundle", "crumble", var_64403099 );
+                    mdl_knight = getent( "knight_model_main_hall", "targetname" );
+                    mdl_knight thread function_30fe35b( "tag_stone_02", "p8_zm_man_statue_kisa_stone_02", 1.5 );
+                    mdl_knight util::delay( 1.5, undefined, &scene::play, #"p8_fxanim_zm_man_ka01_bundle", "crumble", mdl_knight );
                     level flag::set( #"hash_775ff2ad49f494a7" );
                     break;
                 case #"cemetery":
-                    var_64403099 = getent( "knight_model_cemetery", "targetname" );
-                    var_64403099 thread function_30fe35b( "tag_stone_01", "p8_zm_man_statue_kisa_stone_01", 1.5 );
-                    var_64403099 util::delay( 1.5, undefined, &scene::play, #"p8_fxanim_zm_man_ka03_bundle", "crumble", var_64403099 );
+                    mdl_knight = getent( "knight_model_cemetery", "targetname" );
+                    mdl_knight thread function_30fe35b( "tag_stone_01", "p8_zm_man_statue_kisa_stone_01", 1.5 );
+                    mdl_knight util::delay( 1.5, undefined, &scene::play, #"p8_fxanim_zm_man_ka03_bundle", "crumble", mdl_knight );
                     level flag::set( #"hash_7583b516d2aab62e" );
                     break;
                 case #"greenhouse":
-                    var_64403099 = getent( "knight_model_greenhouse", "targetname" );
-                    var_64403099 thread function_30fe35b( "tag_stone_03", "p8_zm_man_statue_kisa_stone_03", 1.5 );
-                    var_64403099 util::delay( 1.5, undefined, &scene::play, #"p8_fxanim_zm_man_ka02_bundle", "crumble", var_64403099 );
+                    mdl_knight = getent( "knight_model_greenhouse", "targetname" );
+                    mdl_knight thread function_30fe35b( "tag_stone_03", "p8_zm_man_statue_kisa_stone_03", 1.5 );
+                    mdl_knight util::delay( 1.5, undefined, &scene::play, #"p8_fxanim_zm_man_ka02_bundle", "crumble", mdl_knight );
                     level flag::set( #"hash_4ee2d51615eadbb" );
                     break;
             }
@@ -1270,11 +1270,11 @@ function function_138b784e( var_f0e6c7a2, ent )
     if ( level.var_7f30bc18 >= n_souls_required )
     {
         level.var_7f30bc18 = 0;
-        var_a4e33d04 = getent( "kp_mark_lion", "script_noteworthy" );
+        mdl_mark_lion = getent( "kp_mark_lion", "script_noteworthy" );
         
-        if ( isdefined( var_a4e33d04 ) )
+        if ( isdefined( mdl_mark_lion ) )
         {
-            var_a4e33d04 delete();
+            mdl_mark_lion delete();
         }
         
         zm_sq_modules::function_2a94055d( #"soul_capture_kp1" );
@@ -1363,11 +1363,11 @@ function function_25d21cdb( var_f0e6c7a2, ent )
     if ( level.var_6d7e18b3 >= n_souls_required )
     {
         level.var_6d7e18b3 = 0;
-        var_bd9c1ba7 = getent( "kp_mark_cobra", "script_noteworthy" );
+        mdl_mark_cobra = getent( "kp_mark_cobra", "script_noteworthy" );
         
-        if ( isdefined( var_bd9c1ba7 ) )
+        if ( isdefined( mdl_mark_cobra ) )
         {
-            var_bd9c1ba7 delete();
+            mdl_mark_cobra delete();
         }
         
         zm_sq_modules::function_2a94055d( #"soul_capture_kp2" );
@@ -1456,11 +1456,11 @@ function function_28082147( var_f0e6c7a2, ent )
     if ( level.var_3224a1fd >= n_souls_required )
     {
         level.var_3224a1fd = 0;
-        var_6c6c7d49 = getent( "kp_mark_wolf", "script_noteworthy" );
+        mdl_mark_wolf = getent( "kp_mark_wolf", "script_noteworthy" );
         
-        if ( isdefined( var_6c6c7d49 ) )
+        if ( isdefined( mdl_mark_wolf ) )
         {
-            var_6c6c7d49 delete();
+            mdl_mark_wolf delete();
         }
         
         zm_sq_modules::function_2a94055d( #"soul_capture_kp3" );
@@ -1695,8 +1695,8 @@ function private function_df2c4d2d()
 {
     level endoncallback( &function_46b38ca2, #"hash_3a7ba7e53fa848e9", #"end_game" );
     var_2db98020 = 0;
-    var_12bee25f = struct::get( #"kp1_end" );
-    level.var_411ea43b = util::spawn_model( "tag_origin", var_12bee25f.origin, var_12bee25f.angles );
+    s_knight_1 = struct::get( #"kp1_end" );
+    level.var_411ea43b = util::spawn_model( "tag_origin", s_knight_1.origin, s_knight_1.angles );
     waitframe( 1 );
     
     while ( !( isdefined( var_2db98020 ) && var_2db98020 ) )
@@ -2480,24 +2480,24 @@ function function_a112ed5e()
     array::run_all( util::get_active_players(), &val::set, "boss_door_opening", "takedamage", 0 );
     wait 1;
     array::run_all( util::get_active_players(), &clientfield::increment_to_player, "" + #"mansion_mq_rumble", 1 );
-    var_3f81f68b = getent( "relic_greenhouse", "targetname" );
-    var_b32bc0a = getent( "relic_cemetery", "targetname" );
-    var_d73febbe = getent( "relic_forest", "targetname" );
+    mdl_relic_greenhouse = getent( "relic_greenhouse", "targetname" );
+    mdl_relic_cemetery = getent( "relic_cemetery", "targetname" );
+    mdl_relic_forest = getent( "relic_forest", "targetname" );
     mdl_door = getent( "forest_stone_holder", "targetname" );
     
-    if ( isdefined( var_3f81f68b ) && isdefined( var_b32bc0a ) && isdefined( var_d73febbe ) )
+    if ( isdefined( mdl_relic_greenhouse ) && isdefined( mdl_relic_cemetery ) && isdefined( mdl_relic_forest ) )
     {
         mdl_door clientfield::set( "" + #"stone_glow", 0 );
-        var_3f81f68b clientfield::set( "" + #"stone_glow", 0 );
-        var_b32bc0a clientfield::set( "" + #"stone_glow", 0 );
-        var_d73febbe clientfield::set( "" + #"stone_glow", 0 );
+        mdl_relic_greenhouse clientfield::set( "" + #"stone_glow", 0 );
+        mdl_relic_cemetery clientfield::set( "" + #"stone_glow", 0 );
+        mdl_relic_forest clientfield::set( "" + #"stone_glow", 0 );
         wait 1.25;
         level.var_bc889083 show();
         level.var_bc889083 = undefined;
         mdl_door delete();
-        var_3f81f68b delete();
-        var_b32bc0a delete();
-        var_d73febbe delete();
+        mdl_relic_greenhouse delete();
+        mdl_relic_cemetery delete();
+        mdl_relic_forest delete();
     }
     
     level scene::play( #"p8_fxanim_zm_man_druid_door_bundle" );

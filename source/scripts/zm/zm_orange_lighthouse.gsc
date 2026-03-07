@@ -65,7 +65,7 @@ function __main__()
 {
     level.var_f92c8836 = struct::get_array( "lighthouse_trap_switch", "script_noteworthy" );
     array::run_all( level.var_f92c8836, &trap_switch_init );
-    level.var_ab11c23d = getent( "lighthouse_light", "targetname" );
+    level.e_lighthouse_light = getent( "lighthouse_light", "targetname" );
     level thread function_ad646ef8( 0 );
     level.var_98138d6b = 0;
     level thread function_b87894c1( "power_on1" );
@@ -100,12 +100,12 @@ function function_6a10478()
 {
     if ( level flag::get( #"hash_5a3d0402a5557739" ) )
     {
-        level.var_ab11c23d clientfield::set( "lighthouse_on", 2 );
+        level.e_lighthouse_light clientfield::set( "lighthouse_on", 2 );
         function_1f29d511();
     }
     else
     {
-        level.var_ab11c23d clientfield::set( "lighthouse_on", 1 );
+        level.e_lighthouse_light clientfield::set( "lighthouse_on", 1 );
     }
     
     function_da304f6e( 3 );
@@ -117,10 +117,10 @@ function function_6a10478()
 // Size: 0x84
 function function_da304f6e( n_state )
 {
-    if ( level.var_ab11c23d.var_3931cef9 !== n_state )
+    if ( level.e_lighthouse_light.n_light_state !== n_state )
     {
-        level.var_ab11c23d notify( #"hash_78fc5bbd712046b0" );
-        level.var_ab11c23d.var_3931cef9 = n_state;
+        level.e_lighthouse_light notify( #"hash_78fc5bbd712046b0" );
+        level.e_lighthouse_light.n_light_state = n_state;
         
         if ( !is_trap_active() )
         {
@@ -135,19 +135,19 @@ function function_da304f6e( n_state )
 // Size: 0xea
 function function_d85bd834()
 {
-    switch ( level.var_ab11c23d.var_3931cef9 )
+    switch ( level.e_lighthouse_light.n_light_state )
     {
         case 0:
-            level.var_ab11c23d thread function_1aeab14e();
+            level.e_lighthouse_light thread function_1aeab14e();
             break;
         case 1:
-            level.var_ab11c23d thread lighthouse_freakout();
+            level.e_lighthouse_light thread lighthouse_freakout();
             break;
         case 2:
-            level.var_ab11c23d thread function_92b102fc();
+            level.e_lighthouse_light thread function_92b102fc();
             break;
         case 3:
-            level.var_ab11c23d thread function_dbad2f5a();
+            level.e_lighthouse_light thread function_dbad2f5a();
             break;
     }
 }
@@ -160,7 +160,7 @@ function function_dbad2f5a()
 {
     self endon( #"death", #"hash_78fc5bbd712046b0" );
     level endon( #"end_game" );
-    self thread function_1b488412( level.var_3428b470.origin, 1 );
+    self thread function_1b488412( level.s_power_intro.origin, 1 );
     wait 5;
     level thread function_da304f6e( 0 );
 }
@@ -178,7 +178,7 @@ function function_1aeab14e()
     
     if ( level flag::get( #"hash_5a3d0402a5557739" ) )
     {
-        level.var_ab11c23d clientfield::set( "lighthouse_on", 2 );
+        level.e_lighthouse_light clientfield::set( "lighthouse_on", 2 );
     }
     
     if ( self.angles[ 0 ] != 0 )
@@ -221,7 +221,7 @@ function function_92b102fc()
     
     if ( level flag::get( #"hash_5a3d0402a5557739" ) )
     {
-        level.var_ab11c23d clientfield::set( "lighthouse_on", 3 );
+        level.e_lighthouse_light clientfield::set( "lighthouse_on", 3 );
     }
 }
 
@@ -328,8 +328,8 @@ function function_320f5fb3()
 // Size: 0x94
 function function_602d605()
 {
-    level.var_ab11c23d clientfield::set( "lighthouse_on", 2 );
-    level.var_ab11c23d.b_blue = 1;
+    level.e_lighthouse_light clientfield::set( "lighthouse_on", 2 );
+    level.e_lighthouse_light.b_blue = 1;
     
     if ( level flag::get( #"hash_3028604821838259" ) )
     {
@@ -358,13 +358,13 @@ function function_1baa684c( str_flag )
     switch ( str_flag )
     {
         case #"power_on1":
-            level.var_3428b470 = struct::get( "power_intro_1" );
+            level.s_power_intro = struct::get( "power_intro_1" );
             break;
         case #"power_on2":
-            level.var_3428b470 = struct::get( "power_intro_2" );
+            level.s_power_intro = struct::get( "power_intro_2" );
             break;
         case #"power_on3":
-            level.var_3428b470 = struct::get( "power_intro_3" );
+            level.s_power_intro = struct::get( "power_intro_3" );
             break;
     }
 }
@@ -375,7 +375,7 @@ function function_1baa684c( str_flag )
 // Size: 0x39a
 function function_ad646ef8( n_state )
 {
-    e_lighthouse = level.var_ab11c23d;
+    e_lighthouse = level.e_lighthouse_light;
     
     if ( e_lighthouse.var_58df9892 !== n_state )
     {
@@ -469,7 +469,7 @@ function function_71399d9c()
     self.vh_target = vh_target;
     self function_1b488412( vh_target.origin, 1 );
     self waittill( #"rotatedone" );
-    level.var_ab11c23d clientfield::set( "lighthouse_on", 4 );
+    level.e_lighthouse_light clientfield::set( "lighthouse_on", 4 );
     self.vh_target clientfield::set( "" + #"hash_19bce46b8ab82440", 1 );
     self.vh_target thread function_18f63949();
     self function_2b2f2a7f();
@@ -490,7 +490,7 @@ function function_2b2f2a7f()
     t_trap enablelinkto();
     t_trap linkto( self.vh_target );
     self.t_trap = t_trap;
-    t_trap.activated_by_player = level.var_ab11c23d.activated_by_player;
+    t_trap.activated_by_player = level.e_lighthouse_light.activated_by_player;
 }
 
 // Namespace zm_orange_lighthouse/zm_orange_lighthouse
@@ -517,7 +517,7 @@ function function_18f63949()
     {
         if ( self.b_moving )
         {
-            level.var_ab11c23d function_1b488412( self.origin, 0.1 );
+            level.e_lighthouse_light function_1b488412( self.origin, 0.1 );
         }
         
         wait 0.1;
@@ -532,7 +532,7 @@ function function_fc65cb61()
 {
     self endon( #"death" );
     self waittill( #"reached_end_node" );
-    level.var_ab11c23d thread function_76ff758d();
+    level.e_lighthouse_light thread function_76ff758d();
 }
 
 // Namespace zm_orange_lighthouse/zm_orange_lighthouse
@@ -597,7 +597,7 @@ function shoot_trap_target( v_target, e_activator )
 function trigger_trap_explosion( v_pos, e_activator )
 {
     a_e_ai = e_activator getenemiesinradius( v_pos, 250 );
-    array::thread_all( a_e_ai, &zm_trap_electric::damage, level.var_ab11c23d );
+    array::thread_all( a_e_ai, &zm_trap_electric::damage, level.e_lighthouse_light );
     
     if ( a_e_ai.size > 0 )
     {
@@ -611,7 +611,7 @@ function trigger_trap_explosion( v_pos, e_activator )
     {
         if ( distancesquared( v_pos, e_player.origin ) <= var_6cb5ae98 )
         {
-            e_player thread zm_trap_electric::player_damage( level.var_ab11c23d );
+            e_player thread zm_trap_electric::player_damage( level.e_lighthouse_light );
         }
     }
     
@@ -695,11 +695,11 @@ function function_ea089392()
 function function_2ad3b642( s_trap )
 {
     self thread zm_audio::create_and_play_dialog( #"trap_lighthouse", #"activate" );
-    level.var_ab11c23d.var_223285b1 = s_trap.var_223285b1;
-    level.var_ab11c23d.var_3f813eec = s_trap.travel_speed;
-    level.var_ab11c23d.var_d9ae30d6 = self;
+    level.e_lighthouse_light.var_223285b1 = s_trap.var_223285b1;
+    level.e_lighthouse_light.var_3f813eec = s_trap.travel_speed;
+    level.e_lighthouse_light.var_d9ae30d6 = self;
     playsoundatposition( #"zmb_cha_ching", ( 1692, 444, 134 ) );
-    level.var_ab11c23d.activated_by_player = self;
+    level.e_lighthouse_light.activated_by_player = self;
     level thread function_ad646ef8( 3 );
     array::run_all( level.var_f92c8836, &function_f7e6bf61, 1 );
     array::thread_all( level.var_f92c8836, &function_76adab5e );
@@ -751,7 +751,7 @@ function electrocute_player()
     
     if ( !( isdefined( self.b_no_trap_damage ) && self.b_no_trap_damage ) )
     {
-        self thread zm_traps::player_elec_damage( level.var_ab11c23d );
+        self thread zm_traps::player_elec_damage( level.e_lighthouse_light );
         self status_effect::status_effect_apply( shock_status_effect, undefined, self, 0 );
     }
 }
@@ -787,7 +787,7 @@ function function_85d3d607( e_player )
     }
     else
     {
-        switch ( level.var_ab11c23d.var_58df9892 )
+        switch ( level.e_lighthouse_light.var_58df9892 )
         {
             case 0:
                 self zm_hms_util::function_b2e1326( 0 );
@@ -837,7 +837,7 @@ function function_72d528e6()
             continue;
         }
         
-        if ( zm_utility::is_player_valid( e_who ) && level.var_ab11c23d.var_58df9892 === 2 )
+        if ( zm_utility::is_player_valid( e_who ) && level.e_lighthouse_light.var_58df9892 === 2 )
         {
             if ( level flag::get( #"half_price_traps" ) )
             {
@@ -878,7 +878,7 @@ function function_f7e6bf61( b_on )
 // Size: 0xca
 function function_76adab5e()
 {
-    switch ( level.var_ab11c23d.var_58df9892 )
+    switch ( level.e_lighthouse_light.var_58df9892 )
     {
         case 0:
             self.mdl_light setmodel( "p8_zm_off_trap_switch_light" );
@@ -907,7 +907,7 @@ function function_1e43f3c7()
 // Size: 0x1c, Type: bool
 function is_trap_active()
 {
-    return level.var_ab11c23d.var_58df9892 > 2;
+    return level.e_lighthouse_light.var_58df9892 > 2;
 }
 
 // Namespace zm_orange_lighthouse/zm_orange_lighthouse
@@ -929,10 +929,10 @@ function function_2853c44e( e_trap )
     level notify( #"trap_kill", { #e_victim:self, #e_trap:e_trap } );
     level notify( #"hash_5e2619172b4487dd", { #n_count:1 } );
     
-    if ( isdefined( level.var_ab11c23d.activated_by_player ) && isplayer( level.var_ab11c23d.activated_by_player ) )
+    if ( isdefined( level.e_lighthouse_light.activated_by_player ) && isplayer( level.e_lighthouse_light.activated_by_player ) )
     {
-        level.var_ab11c23d.activated_by_player zm_stats::increment_challenge_stat( #"zombie_hunter_kill_trap" );
-        level.var_ab11c23d.activated_by_player contracts::increment_zm_contract( #"contract_zm_trap_kills" );
+        level.e_lighthouse_light.activated_by_player zm_stats::increment_challenge_stat( #"zombie_hunter_kill_trap" );
+        level.e_lighthouse_light.activated_by_player contracts::increment_zm_contract( #"contract_zm_trap_kills" );
     }
     
     self dodamage( 20000, e_trap.origin, undefined, e_trap, undefined, "MOD_BURNED", 0, undefined );

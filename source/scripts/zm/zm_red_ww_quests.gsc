@@ -2676,8 +2676,8 @@ function function_60f650e3()
     self.var_20a6106d[ 0 ] = struct::get( "s_light_shrine_brazier1" );
     self.var_20a6106d[ 1 ] = struct::get( "s_light_shrine_brazier2" );
     self.var_20a6106d[ 2 ] = struct::get( "s_light_shrine_brazier3" );
-    self.var_29aa427b = getent( "e_hemera_combat_weapon_clip", "targetname" );
-    self.var_29aa427b.origin = ( self.var_29aa427b.origin[ 0 ], self.var_29aa427b.origin[ 1 ], self.var_29aa427b.origin[ 2 ] + 3000 );
+    self.e_weapon_clip = getent( "e_hemera_combat_weapon_clip", "targetname" );
+    self.e_weapon_clip.origin = ( self.e_weapon_clip.origin[ 0 ], self.e_weapon_clip.origin[ 1 ], self.e_weapon_clip.origin[ 2 ] + 3000 );
     var_d445485f = struct::get_array( "s_ww_light_source_brazier", "targetname" );
     
     foreach ( var_542837e6 in var_d445485f )
@@ -3266,9 +3266,9 @@ function light_countdown( n_time )
 // Size: 0xe2
 function function_35d91981( e_player )
 {
-    self.var_29aa427b.origin = ( self.var_29aa427b.origin[ 0 ], self.var_29aa427b.origin[ 1 ], self.var_29aa427b.origin[ 2 ] - 3000 );
+    self.e_weapon_clip.origin = ( self.e_weapon_clip.origin[ 0 ], self.e_weapon_clip.origin[ 1 ], self.e_weapon_clip.origin[ 2 ] - 3000 );
     e_player waittill( #"hash_4d89e2bb8e3d1eb3", #"disconnect" );
-    self.var_29aa427b.origin = ( self.var_29aa427b.origin[ 0 ], self.var_29aa427b.origin[ 1 ], self.var_29aa427b.origin[ 2 ] + 3000 );
+    self.e_weapon_clip.origin = ( self.e_weapon_clip.origin[ 0 ], self.e_weapon_clip.origin[ 1 ], self.e_weapon_clip.origin[ 2 ] + 3000 );
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests

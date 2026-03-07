@@ -633,7 +633,7 @@ function function_2b2e8766()
         }
     }
     
-    if ( self.str_location === "facility" && var_745ac235.size > 0 && self.var_320be97e === 0 && !( var_745ac235.size == 1 && isdefined( level.var_4ac8ef63.b_claimed ) && level.var_4ac8ef63.b_claimed ) )
+    if ( self.str_location === "facility" && var_745ac235.size > 0 && self.var_320be97e === 0 && !( var_745ac235.size == 1 && isdefined( level.e_edge_spot.b_claimed ) && level.e_edge_spot.b_claimed ) )
     {
         self.var_ad63608b++;
     }

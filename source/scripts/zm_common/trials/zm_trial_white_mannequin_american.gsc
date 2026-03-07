@@ -38,8 +38,8 @@ function __init__()
 // Size: 0x228
 function private on_begin()
 {
-    var_a2c75164 = getent( "mannequin_ally_door", "targetname" );
-    var_a2c75164 zm_white_private_mannequin::function_a51b6403( 1 );
+    e_mannequin_door = getent( "mannequin_ally_door", "targetname" );
+    e_mannequin_door zm_white_private_mannequin::function_a51b6403( 1 );
     wait 1;
     level.var_1a612d42 = getplayers()[ 0 ];
     level.var_1a612d42.eligible_leader = 1;
@@ -53,7 +53,7 @@ function private on_begin()
         level thread function_7532e17c( level.mannequin_ally );
     }
     
-    var_a2c75164 zm_white_private_mannequin::function_a51b6403( 0 );
+    e_mannequin_door zm_white_private_mannequin::function_a51b6403( 0 );
     callback::function_33f0ddd3( &function_33f0ddd3 );
     level zm_trial::function_25ee130( 1 );
     

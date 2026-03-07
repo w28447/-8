@@ -477,12 +477,12 @@ function all_challenges_completed()
 // Size: 0xfc
 function function_561fda29()
 {
-    var_16c37c7f = struct::get( "reward_crate_thunder", "targetname" );
-    var_16c37c7f.e_lid = getent( var_16c37c7f.var_c8166135, "targetname" );
-    var_16c37c7f.e_lock = getent( var_16c37c7f.target_lock, "targetname" );
-    var_16c37c7f.e_weapon = getent( var_16c37c7f.target_weapon, "targetname" );
-    var_16c37c7f zm_unitrigger::create( &function_54e8826c, 64 );
-    var_16c37c7f thread function_400a7216();
+    s_reward_crate = struct::get( "reward_crate_thunder", "targetname" );
+    s_reward_crate.e_lid = getent( s_reward_crate.var_c8166135, "targetname" );
+    s_reward_crate.e_lock = getent( s_reward_crate.target_lock, "targetname" );
+    s_reward_crate.e_weapon = getent( s_reward_crate.target_weapon, "targetname" );
+    s_reward_crate zm_unitrigger::create( &function_54e8826c, 64 );
+    s_reward_crate thread function_400a7216();
 }
 
 // Namespace zm_orange_challenges/zm_orange_challenges
@@ -734,8 +734,8 @@ function function_2ae162bf()
     var_d6578e1f.var_db24b7da = struct::get( "soup_ingredient_dropoff", "targetname" );
     var_d6578e1f.var_db24b7da zm_unitrigger::create( &function_7327ab9f, 64 );
     var_d6578e1f.var_db24b7da thread function_4ab0f49a( var_d6578e1f );
-    var_d6578e1f.var_735249ac = getent( "soup_pot", "targetname" );
-    var_d6578e1f.var_735249ac thread function_48f86741( var_d6578e1f );
+    var_d6578e1f.e_soup_pot = getent( "soup_pot", "targetname" );
+    var_d6578e1f.e_soup_pot thread function_48f86741( var_d6578e1f );
 }
 
 // Namespace zm_orange_challenges/zm_orange_challenges
@@ -748,9 +748,9 @@ function function_1de4dc2b()
     var_d6578e1f = self.var_d6578e1f;
     var_db24b7da = var_d6578e1f.var_db24b7da;
     var_db24b7da zm_unitrigger::unregister_unitrigger( var_db24b7da.s_unitrigger );
-    var_735249ac = var_d6578e1f.var_735249ac;
-    var_735249ac setcandamage( 0 );
-    var_735249ac val::reset( "challenges", "allowdeath" );
+    e_soup_pot = var_d6578e1f.e_soup_pot;
+    e_soup_pot setcandamage( 0 );
+    e_soup_pot val::reset( "challenges", "allowdeath" );
 }
 
 // Namespace zm_orange_challenges/zm_orange_challenges
@@ -988,8 +988,8 @@ function vox_rounds round()
 // Size: 0x184
 function function_a0ce7b0f()
 {
-    self.var_1ef4f1fa = getent( "whack_a_mole_start", "targetname" );
-    var_1ef4f1fa = self.var_1ef4f1fa;
+    self.e_whack_a_mole_start = getent( "whack_a_mole_start", "targetname" );
+    e_whack_a_mole_start = self.e_whack_a_mole_start;
     self.var_975e7731 = getentarray( "whack_a_mole_target", "targetname" );
     
     foreach ( var_deeb8287 in self.var_975e7731 )
@@ -1000,9 +1000,9 @@ function function_a0ce7b0f()
         var_deeb8287.var_4e749208 = var_deeb8287.var_107ca298 + ( 0, 0, 56 );
     }
     
-    var_1ef4f1fa setcandamage( 1 );
-    var_1ef4f1fa val::set( "challenges", "allowdeath", 0 );
-    var_1ef4f1fa thread whack_a_mole_start_watcher( self );
+    e_whack_a_mole_start setcandamage( 1 );
+    e_whack_a_mole_start val::set( "challenges", "allowdeath", 0 );
+    e_whack_a_mole_start thread whack_a_mole_start_watcher( self );
 }
 
 // Namespace zm_orange_challenges/zm_orange_challenges
@@ -1181,10 +1181,10 @@ function function_b0770e43()
         }
     }
     
-    var_1ef4f1fa = self.var_1ef4f1fa;
-    var_1ef4f1fa setcandamage( 1 );
-    var_1ef4f1fa val::set( "challenges", "allowdeath", 0 );
-    var_1ef4f1fa thread whack_a_mole_start_watcher( self );
+    e_whack_a_mole_start = self.e_whack_a_mole_start;
+    e_whack_a_mole_start setcandamage( 1 );
+    e_whack_a_mole_start val::set( "challenges", "allowdeath", 0 );
+    e_whack_a_mole_start thread whack_a_mole_start_watcher( self );
 }
 
 // Namespace zm_orange_challenges/zm_orange_challenges
@@ -1396,14 +1396,14 @@ function function_89754c19( var_d6578e1f )
 // Size: 0x568
 function function_dfeb1c1b()
 {
-    var_7176f841 = struct::get_array( "pablo_soup_ingredients", "targetname" );
+    a_s_soup_ingredients = struct::get_array( "pablo_soup_ingredients", "targetname" );
     a_s_meats = [];
     a_s_spices = [];
     a_s_vegetables = [];
     
-    foreach ( var_33e4d4f0 in var_7176f841 )
+    foreach ( s_soup_ingredient in a_s_soup_ingredients )
     {
-        if ( var_33e4d4f0.script_string === "meats" )
+        if ( s_soup_ingredient.script_string === "meats" )
         {
             if ( !isdefined( a_s_meats ) )
             {
@@ -1414,11 +1414,11 @@ function function_dfeb1c1b()
                 a_s_meats = array( a_s_meats );
             }
             
-            a_s_meats[ a_s_meats.size ] = var_33e4d4f0;
+            a_s_meats[ a_s_meats.size ] = s_soup_ingredient;
             continue;
         }
         
-        if ( var_33e4d4f0.script_string === "spices" )
+        if ( s_soup_ingredient.script_string === "spices" )
         {
             if ( !isdefined( a_s_spices ) )
             {
@@ -1429,7 +1429,7 @@ function function_dfeb1c1b()
                 a_s_spices = array( a_s_spices );
             }
             
-            a_s_spices[ a_s_spices.size ] = var_33e4d4f0;
+            a_s_spices[ a_s_spices.size ] = s_soup_ingredient;
             continue;
         }
         
@@ -1442,7 +1442,7 @@ function function_dfeb1c1b()
             a_s_vegetables = array( a_s_vegetables );
         }
         
-        a_s_vegetables[ a_s_vegetables.size ] = var_33e4d4f0;
+        a_s_vegetables[ a_s_vegetables.size ] = s_soup_ingredient;
     }
     
     self.a_s_ingredients = [];
@@ -1618,7 +1618,7 @@ function function_4ab0f49a( var_d6578e1f )
             playsoundatposition( #"hash_45b15e2671c49618", self.origin );
             var_d6578e1f.n_current_progress++;
             var_d6578e1f function_544b63c0( var_d6578e1f.n_current_progress );
-            var_d6578e1f.var_735249ac setmodel( "p8_zm_ora_kitchenware_soup_pot" );
+            var_d6578e1f.e_soup_pot setmodel( "p8_zm_ora_kitchenware_soup_pot" );
             
             if ( var_d6578e1f.n_current_progress >= var_d6578e1f.n_goal )
             {
@@ -1645,7 +1645,7 @@ function function_65a629f5()
         waitframe( 1 );
     }
     
-    self.var_735249ac setmodel( "p8_cas_kitchenware_soup_pot" );
+    self.e_soup_pot setmodel( "p8_cas_kitchenware_soup_pot" );
     level flag::clear( #"hash_84593b9650c7abf" );
 }
 
@@ -1671,7 +1671,7 @@ function function_48f86741( var_d6578e1f )
             
             if ( var_d6578e1f.n_current_progress >= var_d6578e1f.n_goal )
             {
-                var_d6578e1f.var_735249ac setmodel( "p8_zm_ora_kitchenware_soup_pot" );
+                var_d6578e1f.e_soup_pot setmodel( "p8_zm_ora_kitchenware_soup_pot" );
                 var_d6578e1f thread function_65a629f5();
                 var_d6578e1f notify( var_d6578e1f.str_notify );
             }

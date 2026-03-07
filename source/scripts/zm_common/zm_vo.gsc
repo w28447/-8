@@ -876,9 +876,9 @@ function function_2ee2ece4( var_79dbc69 = 1 )
 // Size: 0x9a, Type: bool
 function function_45e29f06()
 {
-    var_5eb47b1d = util::get_active_players();
+    a_active_players = util::get_active_players();
     
-    foreach ( player in var_5eb47b1d )
+    foreach ( player in a_active_players )
     {
         if ( is_player_speaking( player ) )
         {

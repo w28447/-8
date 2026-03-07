@@ -64,7 +64,7 @@ function private on_begin()
 function private on_end( round_reset )
 {
     level notify( #"hash_2b53ed06a97eb26c" );
-    level.var_ab11c23d function_f223e16f( round_reset );
+    level.e_lighthouse_light function_f223e16f( round_reset );
     callback::function_824d206( &function_33f0ddd3 );
     level zm_trial::function_25ee130( 0 );
     
@@ -128,28 +128,28 @@ function private setup_lighthouse()
         }
     }
     
-    if ( level.var_ab11c23d.var_58df9892 == 3 || level.var_ab11c23d.var_58df9892 == 8 )
+    if ( level.e_lighthouse_light.var_58df9892 == 3 || level.e_lighthouse_light.var_58df9892 == 8 )
     {
-        level.var_ab11c23d notify( #"hash_1aa56851d9d4ec0d" );
+        level.e_lighthouse_light notify( #"hash_1aa56851d9d4ec0d" );
         
-        if ( isdefined( level.var_ab11c23d.vh_target ) )
+        if ( isdefined( level.e_lighthouse_light.vh_target ) )
         {
-            level.var_ab11c23d.vh_target.b_moving = 0;
-            level.var_ab11c23d.vh_target clientfield::set( "" + #"hash_19bce46b8ab82440", 0 );
+            level.e_lighthouse_light.vh_target.b_moving = 0;
+            level.e_lighthouse_light.vh_target clientfield::set( "" + #"hash_19bce46b8ab82440", 0 );
             waitframe( 1 );
-            level.var_ab11c23d.vh_target delete();
+            level.e_lighthouse_light.vh_target delete();
         }
         
-        if ( isdefined( level.var_ab11c23d.t_trap ) )
+        if ( isdefined( level.e_lighthouse_light.t_trap ) )
         {
-            level.var_ab11c23d.t_trap notify( #"trap_done" );
+            level.e_lighthouse_light.t_trap notify( #"trap_done" );
             waitframe( 1 );
-            level.var_ab11c23d.t_trap delete();
+            level.e_lighthouse_light.t_trap delete();
         }
     }
     
     level thread zm_orange_lighthouse::function_ad646ef8( 0 );
-    level.var_ab11c23d thread function_dbad2f5a();
+    level.e_lighthouse_light thread function_dbad2f5a();
 }
 
 // Namespace zm_orange_trial_lighthouse_beam/zm_orange_trial_lighthouse_beam
@@ -159,7 +159,7 @@ function private setup_lighthouse()
 function function_dbad2f5a()
 {
     self endon( #"death", #"hash_2b53ed06a97eb26c" );
-    level.var_ab11c23d notify( #"hash_78fc5bbd712046b0" );
+    level.e_lighthouse_light notify( #"hash_78fc5bbd712046b0" );
     
     for ( vh_target = spawner::simple_spawn_single( getent( "virgil", "targetname" ) ); !isdefined( vh_target ) ; vh_target = spawner::simple_spawn_single( getent( "virgil", "targetname" ) ) )
     {
@@ -176,7 +176,7 @@ function function_dbad2f5a()
     self.vh_target.e_spotlight enablelinkto();
     self.vh_target.e_spotlight linkto( self.vh_target, "tag_origin", ( 0, 0, 390 ), ( 90, 0, 0 ) );
     self waittill( #"rotatedone" );
-    level.var_ab11c23d clientfield::set( "lighthouse_on", 3 );
+    level.e_lighthouse_light clientfield::set( "lighthouse_on", 3 );
     self.vh_target.e_spotlight clientfield::set( "" + #"trials_lighthouse_beam", 2 );
     self.vh_target thread zm_orange_lighthouse::function_18f63949();
     self zm_orange_lighthouse::function_2b2f2a7f();
@@ -243,7 +243,7 @@ function private function_1e902f3b()
     while ( true )
     {
         var_f2b6fe6e = 0;
-        n_distance = distancesquared( level.var_ab11c23d.vh_target.origin, self.origin );
+        n_distance = distancesquared( level.e_lighthouse_light.vh_target.origin, self.origin );
         
         if ( n_distance < 30000 )
         {
@@ -271,7 +271,7 @@ function private function_1e902f3b()
 // Size: 0x58
 function function_91f0d131()
 {
-    n_distance = distancesquared( level.var_ab11c23d.vh_target.origin, self.origin );
+    n_distance = distancesquared( level.e_lighthouse_light.vh_target.origin, self.origin );
     
     if ( n_distance < 30000 )
     {

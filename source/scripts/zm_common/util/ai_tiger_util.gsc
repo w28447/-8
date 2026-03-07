@@ -31,9 +31,9 @@ function autoexec __init__system__()
 // Size: 0xb4
 function __init__()
 {
-    level.var_4ead8122 = getentarray( "zombie_tiger_spawner", "script_noteworthy" );
+    level.a_sp_tiger = getentarray( "zombie_tiger_spawner", "script_noteworthy" );
     
-    if ( level.var_4ead8122.size == 0 )
+    if ( level.a_sp_tiger.size == 0 )
     {
         assertmsg( "<dev string:x38>" );
         return;
@@ -48,7 +48,7 @@ function __init__()
 // Size: 0x7c
 function __main__()
 {
-    zm_score::function_e5d6e6dd( #"tiger", level.var_4ead8122[ 0 ] ai::function_9139c839().var_7a715ab5 );
+    zm_score::function_e5d6e6dd( #"tiger", level.a_sp_tiger[ 0 ] ai::function_9139c839().var_7a715ab5 );
     spawner::add_archetype_spawn_function( #"tiger", &function_fe4c8547 );
 }
 
@@ -98,7 +98,7 @@ function spawn_single( b_force_spawn = 0, var_eb3a8721 )
         return undefined;
     }
     
-    ai = zombie_utility::spawn_zombie( level.var_4ead8122[ 0 ], "tiger" );
+    ai = zombie_utility::spawn_zombie( level.a_sp_tiger[ 0 ], "tiger" );
     
     if ( isdefined( ai ) )
     {
@@ -123,10 +123,10 @@ function spawn_single( b_force_spawn = 0, var_eb3a8721 )
 // Size: 0x9a, Type: bool
 function function_66cfd7d()
 {
-    var_6ecc1639 = function_ba8172ca();
+    n_tiger_alive = function_ba8172ca();
     var_b3c0e90e = function_cbfb0da4();
     
-    if ( var_6ecc1639 >= var_b3c0e90e || !level flag::get( "spawn_zombies" ) || isdefined( level.var_5e45f817 ) && level.var_5e45f817 )
+    if ( n_tiger_alive >= var_b3c0e90e || !level flag::get( "spawn_zombies" ) || isdefined( level.var_5e45f817 ) && level.var_5e45f817 )
     {
         return false;
     }
@@ -172,18 +172,18 @@ function function_cbfb0da4()
 // Size: 0xbc
 function function_ba8172ca()
 {
-    var_cf9c1780 = getaiarchetypearray( #"tiger" );
-    var_6ecc1639 = var_cf9c1780.size;
+    a_ai_tiger = getaiarchetypearray( #"tiger" );
+    n_tiger_alive = a_ai_tiger.size;
     
-    foreach ( ai_tiger in var_cf9c1780 )
+    foreach ( ai_tiger in a_ai_tiger )
     {
         if ( !isalive( ai_tiger ) )
         {
-            var_6ecc1639--;
+            n_tiger_alive--;
         }
     }
     
-    return var_6ecc1639;
+    return n_tiger_alive;
 }
 
 // Namespace zombie_tiger_util/ai_tiger_util

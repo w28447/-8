@@ -84,15 +84,15 @@ function init( var_5ea5c94d )
         level.var_2ff50a = spawnstruct();
     #/
     
-    level.var_eab529d7 = getent( "key_main_hall", "targetname" );
-    level.var_eab529d7 hide();
-    level.var_eab529d7.var_db9b80c9 = "main_hall";
-    level.var_192555d1 = getent( "key_library", "targetname" );
-    level.var_192555d1 hide();
-    level.var_192555d1.var_db9b80c9 = "library";
-    level.var_a46e88e5 = getent( "key_greenhouse", "targetname" );
-    level.var_a46e88e5 hide();
-    level.var_a46e88e5.var_db9b80c9 = "greenhouse";
+    level.mdl_key_main_hall = getent( "key_main_hall", "targetname" );
+    level.mdl_key_main_hall hide();
+    level.mdl_key_main_hall.var_db9b80c9 = "main_hall";
+    level.mdl_key_library = getent( "key_library", "targetname" );
+    level.mdl_key_library hide();
+    level.mdl_key_library.var_db9b80c9 = "library";
+    level.mdl_key_greenhouse = getent( "key_greenhouse", "targetname" );
+    level.mdl_key_greenhouse hide();
+    level.mdl_key_greenhouse.var_db9b80c9 = "greenhouse";
     level.a_str_zones = array::randomize( array( "main_hall", "library", "greenhouse" ) );
     level.var_28edc152 = array( "cemetery", "garden" );
     level.var_c25e1f9c = array( 0, 1 );
@@ -157,23 +157,23 @@ function init_clientfields()
 // Size: 0x20c
 function function_a7faeaaf()
 {
-    var_82c8a927 = getent( "pap_lock_main_hall", "targetname" );
-    var_a82b1de9 = getent( "pap_lock_library", "targetname" );
-    var_34cbce37 = getent( "pap_lock_greenhouse", "targetname" );
+    mdl_lock_main_hall = getent( "pap_lock_main_hall", "targetname" );
+    mdl_lock_library = getent( "pap_lock_library", "targetname" );
+    mdl_lock_greenhouse = getent( "pap_lock_greenhouse", "targetname" );
     
-    if ( isdefined( var_82c8a927 ) )
+    if ( isdefined( mdl_lock_main_hall ) )
     {
-        var_82c8a927 delete();
+        mdl_lock_main_hall delete();
     }
     
-    if ( isdefined( var_a82b1de9 ) )
+    if ( isdefined( mdl_lock_library ) )
     {
-        var_a82b1de9 delete();
+        mdl_lock_library delete();
     }
     
-    if ( isdefined( var_34cbce37 ) )
+    if ( isdefined( mdl_lock_greenhouse ) )
     {
-        var_34cbce37 delete();
+        mdl_lock_greenhouse delete();
     }
     
     if ( zm_utility::is_standard() )
@@ -255,12 +255,12 @@ function function_7255025f()
 {
     if ( zm_utility::is_standard() || zm_custom::function_901b751c( #"zmpapenabled" ) == 2 )
     {
-        var_99a245 = getent( "gazing_stone_main_hall", "targetname" );
-        var_d8f56b29 = getent( "gazing_stone_cellar", "targetname" );
-        var_aa527474 = getent( "gazing_stone_library", "targetname" );
-        var_99a245 delete();
-        var_d8f56b29 delete();
-        var_aa527474 delete();
+        mdl_gazing_stone_main_hall = getent( "gazing_stone_main_hall", "targetname" );
+        mdl_gazing_stone_cellar = getent( "gazing_stone_cellar", "targetname" );
+        mdl_gazing_stone_library = getent( "gazing_stone_library", "targetname" );
+        mdl_gazing_stone_main_hall delete();
+        mdl_gazing_stone_cellar delete();
+        mdl_gazing_stone_library delete();
         return;
     }
     
@@ -271,11 +271,11 @@ function function_7255025f()
     var_b4c5b933 = struct::get( "mh_cpt3", "script_noteworthy" );
     a_s_pts = array( var_d8358012, var_a7181dd8, var_b4c5b933 );
     s_pt = array::random( a_s_pts );
-    var_99a245 = getent( "gazing_stone_main_hall", "targetname" );
-    var_99a245.origin = s_pt.origin;
-    var_99a245.angles = s_pt.angles;
+    mdl_gazing_stone_main_hall = getent( "gazing_stone_main_hall", "targetname" );
+    mdl_gazing_stone_main_hall.origin = s_pt.origin;
+    mdl_gazing_stone_main_hall.angles = s_pt.angles;
     var_7a3eaf5e = getent( "main_hall_v_" + s_pt.script_int, "targetname" );
-    var_7a3eaf5e thread function_39549562( s_pt.script_string, var_99a245 );
+    var_7a3eaf5e thread function_39549562( s_pt.script_string, mdl_gazing_stone_main_hall );
     zm_sq_modules::function_d8383812( #"sc_mh1", 8000, var_d8358012, &function_bbceb70a, &function_9ce2b677, 1 );
     zm_sq_modules::function_d8383812( #"sc_mh2", 8000, var_a7181dd8, &function_bbceb70a, &function_9ce2b677, 1 );
     zm_sq_modules::function_d8383812( #"sc_mh3", 8000, var_b4c5b933, &function_bbceb70a, &function_9ce2b677, 1 );
@@ -283,11 +283,11 @@ function function_7255025f()
     var_5245e75 = struct::get( "cl_cpt2", "script_noteworthy" );
     a_s_cellar = array( var_b3513ad0, var_5245e75 );
     s_cellar = array::random( a_s_cellar );
-    var_d8f56b29 = getent( "gazing_stone_cellar", "targetname" );
-    var_d8f56b29.origin = s_cellar.origin;
-    var_d8f56b29.angles = s_cellar.angles;
+    mdl_gazing_stone_cellar = getent( "gazing_stone_cellar", "targetname" );
+    mdl_gazing_stone_cellar.origin = s_cellar.origin;
+    mdl_gazing_stone_cellar.angles = s_cellar.angles;
     var_e298d09d = getent( "cellar_v_" + s_cellar.script_int, "targetname" );
-    var_e298d09d thread function_39549562( s_cellar.script_string, var_d8f56b29 );
+    var_e298d09d thread function_39549562( s_cellar.script_string, mdl_gazing_stone_cellar );
     zm_sq_modules::function_d8383812( #"sc_cl1", 8000, var_b3513ad0, &function_995220a5, &function_da937c94, 1 );
     zm_sq_modules::function_d8383812( #"sc_cl2", 8000, var_5245e75, &function_995220a5, &function_da937c94, 1 );
     var_bc650319 = struct::get( "lb_cpt1", "script_noteworthy" );
@@ -295,11 +295,11 @@ function function_7255025f()
     var_36df7810 = struct::get( "lb_cpt3", "script_noteworthy" );
     a_s_library = array( var_bc650319, var_cd1aa484, var_36df7810 );
     var_e009cb59 = array::random( a_s_library );
-    var_aa527474 = getent( "gazing_stone_library", "targetname" );
-    var_aa527474.origin = var_e009cb59.origin;
-    var_aa527474.angles = var_e009cb59.angles;
+    mdl_gazing_stone_library = getent( "gazing_stone_library", "targetname" );
+    mdl_gazing_stone_library.origin = var_e009cb59.origin;
+    mdl_gazing_stone_library.angles = var_e009cb59.angles;
     var_453c074e = getent( "library_v_" + var_e009cb59.script_int, "targetname" );
-    var_453c074e thread function_39549562( var_e009cb59.script_string, var_aa527474 );
+    var_453c074e thread function_39549562( var_e009cb59.script_string, mdl_gazing_stone_library );
     zm_sq_modules::function_d8383812( #"sc_lb1", 8000, var_bc650319, &function_2ec958b6, &function_2c902b77, 1 );
     zm_sq_modules::function_d8383812( #"sc_lb2", 8000, var_cd1aa484, &function_2ec958b6, &function_2c902b77, 1 );
     zm_sq_modules::function_d8383812( #"sc_lb3", 8000, var_36df7810, &function_2ec958b6, &function_2c902b77, 1 );
@@ -348,8 +348,8 @@ function function_9ce2b677( var_f0e6c7a2, ent )
     {
         level flag::set( "bedroom_charged" );
         zm_sq_modules::function_2a94055d( var_f0e6c7a2.script_string );
-        var_99a245 = getent( "gazing_stone_main_hall", "targetname" );
-        var_99a245 clientfield::set( "" + #"hash_6babc320ed9a08f1", 1 );
+        mdl_gazing_stone_main_hall = getent( "gazing_stone_main_hall", "targetname" );
+        mdl_gazing_stone_main_hall clientfield::set( "" + #"hash_6babc320ed9a08f1", 1 );
         
         if ( !var_f0e6c7a2 flag::exists( "flag_gazing_stone_in_use" ) )
         {
@@ -373,10 +373,10 @@ function function_9ce2b677( var_f0e6c7a2, ent )
         }
         
         var_47323b73.str_hint = function_639c87e1( var_47323b73.var_1ed09409 );
-        var_47323b73.mdl_key = level.var_eab529d7;
+        var_47323b73.mdl_key = level.mdl_key_main_hall;
         var_47323b73.s_loc = struct::get( "key_main_hall_loc" );
         var_47323b73.var_e62bb9d2 = getent( "gazing_stone_main_hall", "targetname" );
-        var_99a245 thread function_8b6c61d3( level.var_eab529d7 );
+        mdl_gazing_stone_main_hall thread function_8b6c61d3( level.mdl_key_main_hall );
         var_f0e6c7a2 thread zm_mansion_sound::function_70c90053();
         
         /#
@@ -424,8 +424,8 @@ function function_2c902b77( var_f0e6c7a2, ent )
     {
         level flag::set( "library_charged" );
         zm_sq_modules::function_2a94055d( var_f0e6c7a2.script_string );
-        var_aa527474 = getent( "gazing_stone_library", "targetname" );
-        var_aa527474 clientfield::set( "" + #"hash_6babc320ed9a08f1", 1 );
+        mdl_gazing_stone_library = getent( "gazing_stone_library", "targetname" );
+        mdl_gazing_stone_library clientfield::set( "" + #"hash_6babc320ed9a08f1", 1 );
         
         if ( !var_f0e6c7a2 flag::exists( "flag_gazing_stone_in_use" ) )
         {
@@ -457,11 +457,11 @@ function function_2c902b77( var_f0e6c7a2, ent )
             var_47323b73.str_hint = function_639c87e1( var_47323b73.var_1ed09409 );
         }
         
-        var_47323b73.mdl_key = level.var_192555d1;
+        var_47323b73.mdl_key = level.mdl_key_library;
         var_47323b73.s_loc = struct::get( "key_library_loc" );
         var_47323b73.vol_transform = getent( "vol_transform_library", "targetname" );
         var_47323b73.var_e62bb9d2 = getent( "gazing_stone_library", "targetname" );
-        var_aa527474 thread function_8b6c61d3( level.var_192555d1 );
+        mdl_gazing_stone_library thread function_8b6c61d3( level.mdl_key_library );
         var_f0e6c7a2 thread zm_mansion_sound::function_70c90053();
         
         /#
@@ -509,8 +509,8 @@ function function_da937c94( var_f0e6c7a2, ent )
     {
         level flag::set( "cellar_charged" );
         zm_sq_modules::function_2a94055d( var_f0e6c7a2.script_string );
-        var_d8f56b29 = getent( "gazing_stone_cellar", "targetname" );
-        var_d8f56b29 clientfield::set( "" + #"hash_6babc320ed9a08f1", 1 );
+        mdl_gazing_stone_cellar = getent( "gazing_stone_cellar", "targetname" );
+        mdl_gazing_stone_cellar clientfield::set( "" + #"hash_6babc320ed9a08f1", 1 );
         
         if ( !var_f0e6c7a2 flag::exists( "flag_gazing_stone_in_use" ) )
         {
@@ -542,11 +542,11 @@ function function_da937c94( var_f0e6c7a2, ent )
             var_47323b73.str_hint = function_639c87e1( var_47323b73.var_1ed09409 );
         }
         
-        var_47323b73.mdl_key = level.var_a46e88e5;
+        var_47323b73.mdl_key = level.mdl_key_greenhouse;
         var_47323b73.s_loc = struct::get( "key_greenhouse_loc" );
         var_47323b73.vol_transform = getent( "vol_transform_greenhouse", "targetname" );
         var_47323b73.var_e62bb9d2 = getent( "gazing_stone_cellar", "targetname" );
-        var_d8f56b29 thread function_8b6c61d3( level.var_a46e88e5 );
+        mdl_gazing_stone_cellar thread function_8b6c61d3( level.mdl_key_greenhouse );
         var_f0e6c7a2 thread zm_mansion_sound::function_70c90053();
         
         /#
@@ -3483,11 +3483,11 @@ function function_e8355769( vol_defend, str_flag )
 // Size: 0xc4
 function function_4a648207()
 {
-    var_8c877776 = getent( "c_hook_floor", "targetname" );
-    var_3c51b3a1 = getent( "c_horseshoe_floor", "targetname" );
+    e_marker_hook = getent( "c_hook_floor", "targetname" );
+    e_marker_horseshoe = getent( "c_horseshoe_floor", "targetname" );
     registerambush_enemy = getent( "c_star_floor", "targetname" );
-    var_8c877776 notsolid();
-    var_3c51b3a1 notsolid();
+    e_marker_hook notsolid();
+    e_marker_horseshoe notsolid();
     registerambush_enemy notsolid();
 }
 
@@ -3994,47 +3994,47 @@ function trigger_think()
         switch ( self.stub.var_db9b80c9 )
         {
             case #"main_hall":
-                if ( isdefined( level.var_eab529d7 ) )
+                if ( isdefined( level.mdl_key_main_hall ) )
                 {
-                    if ( isdefined( level.var_eab529d7.fx_org ) )
+                    if ( isdefined( level.mdl_key_main_hall.fx_org ) )
                     {
-                        level.var_eab529d7.fx_org thread function_67a6aea8();
+                        level.mdl_key_main_hall.fx_org thread function_67a6aea8();
                     }
                     
                     level zm_ui_inventory::function_7df6bb60( #"pap_1", 1 );
                     level flag::set( "crystal_main_hall" );
-                    playsoundatposition( #"hash_7a91182f3727ce9", level.var_eab529d7.origin );
-                    level.var_eab529d7 delete();
+                    playsoundatposition( #"hash_7a91182f3727ce9", level.mdl_key_main_hall.origin );
+                    level.mdl_key_main_hall delete();
                 }
                 
                 break;
             case #"library":
-                if ( isdefined( level.var_192555d1 ) )
+                if ( isdefined( level.mdl_key_library ) )
                 {
-                    if ( isdefined( level.var_192555d1.fx_org ) )
+                    if ( isdefined( level.mdl_key_library.fx_org ) )
                     {
-                        level.var_192555d1.fx_org thread function_67a6aea8();
+                        level.mdl_key_library.fx_org thread function_67a6aea8();
                     }
                     
                     level zm_ui_inventory::function_7df6bb60( #"pap_2", 1 );
                     level flag::set( "crystal_library" );
-                    playsoundatposition( #"hash_7a91182f3727ce9", level.var_192555d1.origin );
-                    level.var_192555d1 delete();
+                    playsoundatposition( #"hash_7a91182f3727ce9", level.mdl_key_library.origin );
+                    level.mdl_key_library delete();
                 }
                 
                 break;
             case #"greenhouse":
-                if ( isdefined( level.var_a46e88e5 ) )
+                if ( isdefined( level.mdl_key_greenhouse ) )
                 {
-                    if ( isdefined( level.var_a46e88e5.fx_org ) )
+                    if ( isdefined( level.mdl_key_greenhouse.fx_org ) )
                     {
-                        level.var_a46e88e5.fx_org thread function_67a6aea8();
+                        level.mdl_key_greenhouse.fx_org thread function_67a6aea8();
                     }
                     
                     level zm_ui_inventory::function_7df6bb60( #"pap_3", 1 );
                     level flag::set( "crystal_greenhouse" );
-                    playsoundatposition( #"hash_7a91182f3727ce9", level.var_a46e88e5.origin );
-                    level.var_a46e88e5 delete();
+                    playsoundatposition( #"hash_7a91182f3727ce9", level.mdl_key_greenhouse.origin );
+                    level.mdl_key_greenhouse delete();
                 }
                 
                 break;

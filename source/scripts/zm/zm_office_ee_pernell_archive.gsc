@@ -68,22 +68,22 @@ function init_flags()
 // Size: 0x69c
 function init_quest()
 {
-    level.var_595db1e1 = struct::get( "fix_server", "targetname" );
+    level.s_fix_server = struct::get( "fix_server", "targetname" );
     level.s_fix_server_spark_fx = struct::get( "fix_server_spark_fx", "targetname" );
-    level.var_a73534b7 = struct::get( "punch_card_insert", "targetname" );
-    level.var_af224340 = getent( "punch_card_screen", "targetname" );
-    level.var_af224340 hide();
-    level.var_9c0c4b0d = struct::get_array( "aat_dmg_fx", "targetname" );
-    array::sort_by_script_int( level.var_9c0c4b0d, 1 );
+    level.s_punch_card_insert = struct::get( "punch_card_insert", "targetname" );
+    level.e_punch_card_screen = getent( "punch_card_screen", "targetname" );
+    level.e_punch_card_screen hide();
+    level.a_s_aat_dmg_fx = struct::get_array( "aat_dmg_fx", "targetname" );
+    array::sort_by_script_int( level.a_s_aat_dmg_fx, 1 );
     level.var_67599dfe = [];
     
-    for ( i = 0; i < level.var_9c0c4b0d.size ; i++ )
+    for ( i = 0; i < level.a_s_aat_dmg_fx.size ; i++ )
     {
         level.var_67599dfe[ i ] = 0;
     }
     
-    var_b3edfb92 = getent( "server_part_placement", "targetname" );
-    var_b3edfb92 hide();
+    e_server_part_placement = getent( "server_part_placement", "targetname" );
+    e_server_part_placement hide();
     var_240bceab = array( #"hash_1a4bbbe1a3b57e4f" );
     var_e4158c30 = array( #"hash_7544aa4a3281de20" );
     var_19bb8831 = array( #"hash_cfe3836bc9ca39", #"hash_4b18b104deb5d028" );
@@ -102,14 +102,14 @@ function init_quest()
     level.var_a035a0b9 = zm_hms_util::function_bffcedde( "office_punch_card", "targetname", "script_int" );
     level.var_3d015a65 = 0;
     
-    foreach ( var_453ce50f in level.var_a035a0b9 )
+    foreach ( e_punch_card in level.var_a035a0b9 )
     {
-        var_453ce50f zm_item_pickup::item_pickup_init( &function_e8d6a81b, 1 );
+        e_punch_card zm_item_pickup::item_pickup_init( &function_e8d6a81b, 1 );
     }
     
-    var_453ce50f = getent( "punch_card_anim", "targetname" );
-    assert( isdefined( var_453ce50f ), "<dev string:x38>" );
-    var_453ce50f hide();
+    e_punch_card = getent( "punch_card_anim", "targetname" );
+    assert( isdefined( e_punch_card ), "<dev string:x38>" );
+    e_punch_card hide();
     zm_sq::register( #"pernell_archive", #"step_1", #"pernell_archive_step1", &pernell_archive_step1_setup, &pernell_archive_step1_cleanup );
     zm_sq::register( #"pernell_archive", #"step_2", #"pernell_archive_step2", &pernell_archive_step2_setup, &pernell_archive_step2_cleanup );
     zm_sq::start( #"pernell_archive" );
@@ -144,15 +144,15 @@ function pernell_archive_step1_setup( var_5ea5c94d )
         var_185199a1 delete();
         zm_unitrigger::unregister_unitrigger( s_server_part_pickup.s_unitrigger );
         s_server_part_pickup struct::delete();
-        level.var_595db1e1 zm_unitrigger::create( #"", 64, &function_e4fcfb0a );
+        level.s_fix_server zm_unitrigger::create( #"", 64, &function_e4fcfb0a );
         level flag::wait_till( #"hash_5516784173c2ee27" );
-        playsoundatposition( #"hash_359664e44a2bb635", level.var_595db1e1.origin );
+        playsoundatposition( #"hash_359664e44a2bb635", level.s_fix_server.origin );
         level clientfield::set( "" + #"hash_3284b0cf34bfe44e", 0 );
         level clientfield::increment( "" + #"hash_b143d97bf92fc66", 1 );
         level.var_67599dfe[ 0 ] = 1;
-        zm_unitrigger::unregister_unitrigger( level.var_595db1e1.s_unitrigger );
-        var_ae88db53 = getent( "server_damage_trigger", "targetname" );
-        var_ae88db53 function_a546fd97();
+        zm_unitrigger::unregister_unitrigger( level.s_fix_server.s_unitrigger );
+        e_server_damage_trigger = getent( "server_damage_trigger", "targetname" );
+        e_server_damage_trigger function_a546fd97();
         level flag::wait_till( #"server_fixed" );
     }
 }
@@ -175,7 +175,7 @@ function pernell_archive_step1_cleanup( var_5ea5c94d, ended_early )
         s_server_part_pickup struct::delete();
     }
     
-    zm_unitrigger::unregister_unitrigger( level.var_595db1e1.s_unitrigger );
+    zm_unitrigger::unregister_unitrigger( level.s_fix_server.s_unitrigger );
 }
 
 // Namespace zm_office_ee_pernell_archive/zm_office_ee_pernell_archive
@@ -222,7 +222,7 @@ function function_a546fd97()
         {
             var_863c08bb += s_notify.amount;
             var_9ce2f88b = var_863c08bb / 15000;
-            var_5c3100f7 = int( min( floor( var_9ce2f88b * level.var_9c0c4b0d.size ), level.var_9c0c4b0d.size ) );
+            var_5c3100f7 = int( min( floor( var_9ce2f88b * level.a_s_aat_dmg_fx.size ), level.a_s_aat_dmg_fx.size ) );
             
             for ( i = 0; i < var_5c3100f7 ; i++ )
             {
@@ -375,7 +375,7 @@ function function_54db89ef()
             function_2f5993d6();
             level thread function_9f206255();
             level flag::wait_till( "card_inserted" );
-            zm_hms_util::function_52c3fe8d( s_card.vo_line, level.var_a73534b7.origin );
+            zm_hms_util::function_52c3fe8d( s_card.vo_line, level.s_punch_card_insert.origin );
             
             if ( s_card.vo_line[ 0 ] == #"hash_217e6ae56b61ad3b" )
             {
@@ -403,9 +403,9 @@ function function_54db89ef()
 // Size: 0xa4
 function function_24510350()
 {
-    level.var_af224340 show();
+    level.e_punch_card_screen show();
     level clientfield::set( "" + #"hash_31a98ee76e835504", 0 );
-    s_unitrigger = level.var_a73534b7 zm_unitrigger::create( &function_814ee815, 64, &function_445e3d3d );
+    s_unitrigger = level.s_punch_card_insert zm_unitrigger::create( &function_814ee815, 64, &function_445e3d3d );
     s_unitrigger thread function_54db89ef();
 }
 
@@ -415,21 +415,21 @@ function function_24510350()
 // Size: 0x1ac
 function function_9f206255()
 {
-    var_453ce50f = getent( "punch_card_anim", "targetname" );
-    assert( isdefined( var_453ce50f ), "<dev string:x38>" );
-    var_453ce50f show();
-    v_starting_origin = var_453ce50f.origin;
-    var_5287d229 = var_453ce50f.angles;
-    v_forward = anglestoforward( var_453ce50f.angles );
+    e_punch_card = getent( "punch_card_anim", "targetname" );
+    assert( isdefined( e_punch_card ), "<dev string:x38>" );
+    e_punch_card show();
+    v_starting_origin = e_punch_card.origin;
+    var_5287d229 = e_punch_card.angles;
+    v_forward = anglestoforward( e_punch_card.angles );
     wait 0.5;
-    var_453ce50f playsound( "evt_ee_punchcard_insert" );
-    var_453ce50f moveto( var_453ce50f.origin + v_forward * -14, 3 );
+    e_punch_card playsound( "evt_ee_punchcard_insert" );
+    e_punch_card moveto( e_punch_card.origin + v_forward * -14, 3 );
     wait 1;
     level flag::set( #"card_inserted" );
-    var_453ce50f waittill( #"movedone" );
-    var_453ce50f hide();
-    var_453ce50f.origin = v_starting_origin;
-    var_453ce50f.angles = var_5287d229;
+    e_punch_card waittill( #"movedone" );
+    e_punch_card hide();
+    e_punch_card.origin = v_starting_origin;
+    e_punch_card.angles = var_5287d229;
     level flag::clear( #"card_inserted" );
 }
 

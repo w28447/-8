@@ -1101,9 +1101,9 @@ function function_fb3ab798( var_4e4cc9a9 = 1 )
                 break;
             }
             
-            var_168ccd6b = getent( "vol_power_quest_kill_zone", "targetname" );
+            vol_kill_zone = getent( "vol_power_quest_kill_zone", "targetname" );
             
-            if ( e_attacker istouching( var_168ccd6b ) )
+            if ( e_attacker istouching( vol_kill_zone ) )
             {
                 break;
             }

@@ -356,10 +356,10 @@ function function_c9cd31( b_force_spawn = 0, var_eb3a8721 )
 // Size: 0xbc, Type: bool
 function function_e4d7ae2b()
 {
-    var_3e8b490d = function_78913059();
+    n_gladiators_alive = function_78913059();
     var_10833f75 = function_45876e23();
     
-    if ( !( isdefined( level.var_76934955 ) && level.var_76934955 ) && ( isdefined( level.var_fe2bb2ac ) && level.var_fe2bb2ac || var_3e8b490d >= var_10833f75 || !level flag::get( "spawn_zombies" ) ) )
+    if ( !( isdefined( level.var_76934955 ) && level.var_76934955 ) && ( isdefined( level.var_fe2bb2ac ) && level.var_fe2bb2ac || n_gladiators_alive >= var_10833f75 || !level flag::get( "spawn_zombies" ) ) )
     {
         return false;
     }
@@ -373,18 +373,18 @@ function function_e4d7ae2b()
 // Size: 0xbc
 function function_78913059()
 {
-    var_80074df6 = getaiarchetypearray( #"gladiator" );
-    var_3e8b490d = var_80074df6.size;
+    a_ai_gladiator = getaiarchetypearray( #"gladiator" );
+    n_gladiators_alive = a_ai_gladiator.size;
     
-    foreach ( ai in var_80074df6 )
+    foreach ( ai in a_ai_gladiator )
     {
         if ( !isalive( ai ) )
         {
-            var_3e8b490d--;
+            n_gladiators_alive--;
         }
     }
     
-    return var_3e8b490d;
+    return n_gladiators_alive;
 }
 
 // Namespace zombie_gladiator_util/ai_gladiator_util

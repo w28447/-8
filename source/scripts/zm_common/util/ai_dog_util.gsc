@@ -1172,10 +1172,10 @@ function spawn_single_dog( b_force_spawn = 0, var_eb3a8721 )
 // Size: 0x96, Type: bool
 function function_c1faf4d5()
 {
-    var_d881b102 = function_bb101706();
+    n_dog_alive = function_bb101706();
     var_672d3c4 = function_71e3c90d();
     
-    if ( !( isdefined( level.var_2b94ce72 ) && level.var_2b94ce72 ) && ( isdefined( level.var_15747fb1 ) && level.var_15747fb1 || var_d881b102 >= var_672d3c4 ) )
+    if ( !( isdefined( level.var_2b94ce72 ) && level.var_2b94ce72 ) && ( isdefined( level.var_15747fb1 ) && level.var_15747fb1 || n_dog_alive >= var_672d3c4 ) )
     {
         return false;
     }
@@ -1228,17 +1228,17 @@ function function_71e3c90d()
 // Size: 0xbc
 function function_bb101706()
 {
-    var_cbfe0149 = getaiarchetypearray( #"zombie_dog" );
-    var_d881b102 = var_cbfe0149.size;
+    a_ai_dog = getaiarchetypearray( #"zombie_dog" );
+    n_dog_alive = a_ai_dog.size;
     
-    foreach ( ai_dog in var_cbfe0149 )
+    foreach ( ai_dog in a_ai_dog )
     {
         if ( !isalive( ai_dog ) )
         {
-            var_d881b102--;
+            n_dog_alive--;
         }
     }
     
-    return var_d881b102;
+    return n_dog_alive;
 }
 

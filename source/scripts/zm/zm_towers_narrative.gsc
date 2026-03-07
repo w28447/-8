@@ -875,8 +875,8 @@ function function_89add587( a_ents )
     if ( s_closest == self )
     {
         level scene::remove_scene_func( self.scriptbundlename, &function_89add587, "play" );
-        var_110cafc1 = a_ents[ #"prop 1" ];
-        var_8a88c4c8 linkto( var_110cafc1, var_8a88c4c8.var_ab585079 );
+        mdl_acid_trap = a_ents[ #"prop 1" ];
+        var_8a88c4c8 linkto( mdl_acid_trap, var_8a88c4c8.var_ab585079 );
     }
 }
 

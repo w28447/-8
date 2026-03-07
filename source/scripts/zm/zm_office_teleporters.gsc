@@ -86,10 +86,10 @@ function init_clientfields()
 // Size: 0x84
 function function_93530fe9()
 {
-    var_89b4f417 = getent( "warroom_map_opaque", "script_noteworthy" );
-    var_89b4f417 show();
-    var_5485b418 = getent( "warroom_map_transp", "script_noteworthy" );
-    var_5485b418 hide();
+    e_warroom_map_opaque = getent( "warroom_map_opaque", "script_noteworthy" );
+    e_warroom_map_opaque show();
+    e_warroom_map_transp = getent( "warroom_map_transp", "script_noteworthy" );
+    e_warroom_map_transp hide();
 }
 
 // Namespace zm_office_teleporters/zm_office_teleporters
@@ -98,12 +98,12 @@ function function_93530fe9()
 // Size: 0xac
 function function_884a609e()
 {
-    var_89b4f417 = getent( "warroom_map_opaque", "script_noteworthy" );
-    var_89b4f417 hide();
-    var_5485b418 = getent( "warroom_map_transp", "script_noteworthy" );
-    var_5485b418 show();
+    e_warroom_map_opaque = getent( "warroom_map_opaque", "script_noteworthy" );
+    e_warroom_map_opaque hide();
+    e_warroom_map_transp = getent( "warroom_map_transp", "script_noteworthy" );
+    e_warroom_map_transp show();
     waitframe( 1 );
-    var_5485b418 clientfield::set( "war_room_map_control", 1 );
+    e_warroom_map_transp clientfield::set( "war_room_map_control", 1 );
 }
 
 // Namespace zm_office_teleporters/zm_office_teleporters
@@ -1274,11 +1274,11 @@ function cage_portal_init()
     level.s_cage_portal = struct::get( "cage_portal" );
     level.s_cage_portal.var_a1cf77d2 = util::spawn_model( "tag_origin", level.s_cage_portal.origin, level.s_cage_portal.angles );
     level.s_cage_portal.n_dest = 3;
-    level.var_a23b5c5 = getent( "cage_portal_blocker", "targetname" );
-    level.var_a23b5c5.v_start_pos = level.var_a23b5c5.origin;
-    getent( "bunker_gate", "targetname" ) linkto( level.var_a23b5c5 );
-    getent( "bunker_gate_2", "targetname" ) linkto( level.var_a23b5c5 );
-    getent( "bunker_gate_3", "targetname" ) linkto( level.var_a23b5c5 );
+    level.e_cage_portal_blocker = getent( "cage_portal_blocker", "targetname" );
+    level.e_cage_portal_blocker.v_start_pos = level.e_cage_portal_blocker.origin;
+    getent( "bunker_gate", "targetname" ) linkto( level.e_cage_portal_blocker );
+    getent( "bunker_gate_2", "targetname" ) linkto( level.e_cage_portal_blocker );
+    getent( "bunker_gate_3", "targetname" ) linkto( level.e_cage_portal_blocker );
 }
 
 // Namespace zm_office_teleporters/zm_office_teleporters
@@ -1298,8 +1298,8 @@ function enable_cage_portal( b_enable = 1 )
     {
         level.s_cage_portal zm_unitrigger::create( "", 32, &portal_think, 0, 0 );
         function_60abbae4( 1 );
-        level.var_a23b5c5 playsound( #"hash_123af2d6dc30025a" );
-        level.var_a23b5c5 movez( 150, 1 );
+        level.e_cage_portal_blocker playsound( #"hash_123af2d6dc30025a" );
+        level.e_cage_portal_blocker movez( 150, 1 );
         return;
     }
     

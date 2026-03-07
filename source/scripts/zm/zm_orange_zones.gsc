@@ -206,8 +206,8 @@ function function_49054104()
 function grotto_tunnel_watcher()
 {
     level endon( #"end_game" );
-    var_752cf781 = getent( "grotto_tunnel_big_blocker", "targetname" );
-    var_752cf781 disconnectpaths();
+    e_big_blocker = getent( "grotto_tunnel_big_blocker", "targetname" );
+    e_big_blocker disconnectpaths();
     a_s_spawn_points = struct::get_array( "grotto_tunnel", "psuedo_zone" );
     var_ef7245fb = struct::get_array( "grotto_tunnel_crawl_spawn", "prefabname" );
     a_s_spawn_points = arraycombine( a_s_spawn_points, var_ef7245fb, 0, 0 );
@@ -218,8 +218,8 @@ function grotto_tunnel_watcher()
     }
     
     level flag::wait_till( "grotto_tunnel_open" );
-    var_752cf781 connectpaths();
-    var_752cf781 delete();
+    e_big_blocker connectpaths();
+    e_big_blocker delete();
     
     foreach ( s_spawn_point in a_s_spawn_points )
     {

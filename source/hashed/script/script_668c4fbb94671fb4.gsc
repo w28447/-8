@@ -375,11 +375,11 @@ function private function_23fa3cae()
         level.var_d8e7f0cf[ level.var_d8e7f0cf.size ] = array( var_8171dd3a, var_8dfff656, var_44e1e41b );
     }
     
-    var_679f0ee5 = struct::get_array( "nixie_tubes", "script_noteworthy" );
+    a_s_nixie_tubes = struct::get_array( "nixie_tubes", "script_noteworthy" );
     
-    foreach ( var_18b64c03 in var_679f0ee5 )
+    foreach ( s_nixie_tube in a_s_nixie_tubes )
     {
-        switch ( var_18b64c03.script_string )
+        switch ( s_nixie_tube.script_string )
         {
             case #"nixie_tube_trigger_1":
                 n_code = var_8171dd3a;
@@ -1551,7 +1551,7 @@ function private function_b88f57f9()
     
     if ( level.brutus_count + 1 <= level.brutus_max_count )
     {
-        ai_brutus = zombie_utility::spawn_zombie( level.var_d668eae7[ 0 ] );
+        ai_brutus = zombie_utility::spawn_zombie( level.a_sp_brutus[ 0 ] );
         
         if ( isalive( ai_brutus ) )
         {
