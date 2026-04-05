@@ -725,7 +725,7 @@ function function_82732ced()
     else
     {
         var_7afe66bc = function_e5ca5733( self.archetype );
-        assert( var_7afe66bc, "<dev string:xd2>" + function_9e72a96( self.archetype ) + "<dev string:xee>" );
+        assert( var_7afe66bc, "<dev string:xd2>" + hashtostring( self.archetype ) + "<dev string:xee>" );
     }
     
     self.var_f256a4d9 = var_7afe66bc;
@@ -805,7 +805,7 @@ function function_acaab828( b_disabled = 1 )
 // Params 0
 // Checksum 0xe23813da, Offset: 0x2480
 // Size: 0x1c
-function function_ffc2d0bc()
+function get_player_score()
 {
     return self.pers[ #"score" ];
 }

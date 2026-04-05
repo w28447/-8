@@ -294,10 +294,10 @@ function reset_codes()
     level flag::clear( #"hash_315d0bf1d50724f0" );
     level flag::clear( #"hash_130656ec8ad5480d" );
     level flag::clear( #"hash_130656ec8ad5480d" );
-    level.var_f13364b4.a_n_codes[ level.var_f13364b4.var_8deb4ed2 ].var_544c05c6 = 1;
-    level.var_f13364b4.a_n_codes[ level.var_f13364b4.var_a7450be4 ].var_544c05c6 = 1;
-    level.var_f13364b4.a_n_codes[ level.var_f13364b4.var_72c3e48c ].var_544c05c6 = 1;
-    level.var_f13364b4.a_n_codes[ level.var_f13364b4.var_98e79e76 ].var_544c05c6 = 1;
+    level.var_f13364b4.a_n_codes[ level.var_f13364b4.n_code_private_mannequin ].var_544c05c6 = 1;
+    level.var_f13364b4.a_n_codes[ level.var_f13364b4.n_code_sawyer ].var_544c05c6 = 1;
+    level.var_f13364b4.a_n_codes[ level.var_f13364b4.n_code_mccain ].var_544c05c6 = 1;
+    level.var_f13364b4.a_n_codes[ level.var_f13364b4.n_code_pernell ].var_544c05c6 = 1;
 }
 
 // Namespace zm_white_private_mannequin/zm_white_private_mannequin

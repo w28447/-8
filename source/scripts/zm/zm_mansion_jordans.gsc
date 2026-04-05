@@ -55,12 +55,12 @@ function init()
 // Size: 0x244
 function register_steps()
 {
-    zm_sq::register( #"zm_jordans_painting", #"step_1", #"jordans_painting_step_1", &function_f62d9f65, &function_6134319c );
-    zm_sq::register( #"zm_jordans_reward", #"step_1", #"jordans_reward_step_1", &function_653412f4, &function_f1611d1 );
-    zm_sq::register( #"zm_jordans_reward", #"step_2", #"jordans_reward_step_2", &function_db5aff40, &function_4056f452 );
-    zm_sq::register( #"zm_jordans_reward", #"step_3", #"jordans_reward_step_3", &function_c7da583f, &function_2a93c8cc );
-    zm_sq::register( #"zm_jordans_reward", #"step_4", #"jordans_reward_step_4", &function_ae072499, &function_57e9237a );
-    zm_sq::register( #"zm_jordans_reward", #"step_5", #"jordans_reward_step_5", &function_9c3b8102, &function_4a0f87c7 );
+    zm_sq::register( #"zm_jordans_painting", #"step_1", #"jordans_painting_step_1", &jordans_painting_init_step_1, &jordans_painting_cleanup_step_1 );
+    zm_sq::register( #"zm_jordans_reward", #"step_1", #"jordans_reward_step_1", &jordans_reward_init_step_1, &jordans_reward_cleanup_step_1 );
+    zm_sq::register( #"zm_jordans_reward", #"step_2", #"jordans_reward_step_2", &jordans_reward_init_step_2, &jordans_reward_cleanup_step_2 );
+    zm_sq::register( #"zm_jordans_reward", #"step_3", #"jordans_reward_step_3", &jordans_reward_init_step_3, &jordans_reward_cleanup_step_3 );
+    zm_sq::register( #"zm_jordans_reward", #"step_4", #"jordans_reward_step_4", &jordans_reward_init_step_4, &jordans_reward_cleanup_step_4 );
+    zm_sq::register( #"zm_jordans_reward", #"step_5", #"jordans_reward_step_5", &jordans_reward_init_step_5, &jordans_reward_cleanup_step_5 );
 }
 
 // Namespace mansion_jordans/zm_mansion_jordans
@@ -81,7 +81,7 @@ function function_da66169f()
 // Params 1
 // Checksum 0xf8b75dd2, Offset: 0x688
 // Size: 0x2a4
-function function_653412f4( var_a276c861 )
+function jordans_reward_init_step_1( var_a276c861 )
 {
     level.var_46169cd9 = 0;
     level.w_homunculus = getweapon( #"homunculus" );
@@ -123,7 +123,7 @@ function function_653412f4( var_a276c861 )
 // Params 2
 // Checksum 0x881a709b, Offset: 0x938
 // Size: 0x1aa
-function function_f1611d1( var_a276c861, ended_early )
+function jordans_reward_cleanup_step_1( var_a276c861, ended_early )
 {
     callback::remove_on_connect( &function_dd162dbf );
     
@@ -400,7 +400,7 @@ function function_fefbf8c2( e_grenade )
 // Params 1
 // Checksum 0xf876e5e9, Offset: 0x1750
 // Size: 0x264
-function function_db5aff40( var_a276c861 )
+function jordans_reward_init_step_2( var_a276c861 )
 {
     if ( !var_a276c861 )
     {
@@ -447,7 +447,7 @@ function function_db5aff40( var_a276c861 )
 // Params 2
 // Checksum 0x40e5c0a0, Offset: 0x19c0
 // Size: 0xb4
-function function_4056f452( var_a276c861, ended_early )
+function jordans_reward_cleanup_step_2( var_a276c861, ended_early )
 {
     foreach ( var_c453fc76 in level.var_1c929a74 )
     {
@@ -603,7 +603,7 @@ function function_5a7f565a()
 // Params 1
 // Checksum 0xd5d27c20, Offset: 0x21c8
 // Size: 0x556
-function function_c7da583f( var_a276c861 )
+function jordans_reward_init_step_3( var_a276c861 )
 {
     if ( !var_a276c861 )
     {
@@ -697,7 +697,7 @@ function function_c7da583f( var_a276c861 )
 // Params 2
 // Checksum 0x23e02f09, Offset: 0x2728
 // Size: 0x134
-function function_2a93c8cc( var_a276c861, ended_early )
+function jordans_reward_cleanup_step_3( var_a276c861, ended_early )
 {
     foreach ( var_29c75f3 in level.var_a690f86 )
     {
@@ -803,7 +803,7 @@ function function_4c925e67()
 // Params 1
 // Checksum 0x1553f664, Offset: 0x2bb0
 // Size: 0x2c0
-function function_ae072499( var_a276c861 )
+function jordans_reward_init_step_4( var_a276c861 )
 {
     if ( !var_a276c861 )
     {
@@ -864,7 +864,7 @@ function function_ae072499( var_a276c861 )
 // Params 2
 // Checksum 0x8b49c017, Offset: 0x2e78
 // Size: 0xfa
-function function_57e9237a( var_a276c861, ended_early )
+function jordans_reward_cleanup_step_4( var_a276c861, ended_early )
 {
     if ( isdefined( level.var_93aa61b1 ) )
     {
@@ -978,11 +978,11 @@ function function_ffc00d17( var_10372151 )
 // Params 2
 // Checksum 0x38493e8, Offset: 0x3270
 // Size: 0xb2, Type: bool
-function function_9215e9d( var_1e99deea, var_711067a4 )
+function function_9215e9d( t_unitrigger, var_711067a4 )
 {
     self endon( #"left_trigger", #"death" );
-    var_1e99deea endon( #"death" );
-    self thread function_123c7022( var_1e99deea, var_711067a4 );
+    t_unitrigger endon( #"death" );
+    self thread function_123c7022( t_unitrigger, var_711067a4 );
     n_time = 1;
     
     if ( isdefined( var_711067a4.script_float ) )
@@ -999,17 +999,17 @@ function function_9215e9d( var_1e99deea, var_711067a4 )
 // Params 2
 // Checksum 0xa2dca37a, Offset: 0x3330
 // Size: 0xae
-function function_123c7022( var_1e99deea, var_711067a4 )
+function function_123c7022( t_unitrigger, var_711067a4 )
 {
     self endon( #"hash_36de4efbe292709d", #"death" );
-    var_1e99deea endon( #"death" );
+    t_unitrigger endon( #"death" );
     
     do
     {
         wait 0.2;
         var_6e84d29e = self function_ffc00d17( var_711067a4 );
     }
-    while ( self istouching( var_1e99deea ) && var_6e84d29e );
+    while ( self istouching( t_unitrigger ) && var_6e84d29e );
     
     self notify( #"left_trigger" );
 }
@@ -1172,7 +1172,7 @@ function function_220b84f3()
 // Params 1
 // Checksum 0xeb530b5, Offset: 0x3b08
 // Size: 0x194
-function function_9c3b8102( var_a276c861 )
+function jordans_reward_init_step_5( var_a276c861 )
 {
     var_decc00a1 = level.var_93aa61b1[ level.var_93aa61b1.size - 1 ];
     
@@ -1203,7 +1203,7 @@ function function_9c3b8102( var_a276c861 )
 // Params 2
 // Checksum 0x7b28c97, Offset: 0x3ca8
 // Size: 0x14
-function function_4a0f87c7( var_a276c861, ended_early )
+function jordans_reward_cleanup_step_5( var_a276c861, ended_early )
 {
     
 }
@@ -1265,7 +1265,7 @@ function function_70d155c5()
         /#
             if ( isdefined( var_16c042b8 ) )
             {
-                iprintlnbold( "<dev string:xd7>" + function_9e72a96( var_16c042b8 ) );
+                iprintlnbold( "<dev string:xd7>" + hashtostring( var_16c042b8 ) );
             }
         #/
     }
@@ -1290,7 +1290,7 @@ function function_1704df5e()
     var_c2415b72 = zm_weapons::get_base_weapon( var_c2415b72 );
     
     /#
-        iprintlnbold( "<dev string:x67>" + self getentnum() + "<dev string:xec>" + function_9e72a96( var_c2415b72.name ) );
+        iprintlnbold( "<dev string:x67>" + self getentnum() + "<dev string:xec>" + hashtostring( var_c2415b72.name ) );
     #/
     
     while ( self function_1ec86044( var_c2415b72 ) || isdefined( level.pap_machine ) && level.pap_machine.pack_player === self || self scene::function_c935c42() )
@@ -1423,7 +1423,7 @@ function function_6366a177( s_lookat, var_3ac8690f, var_149b3205 )
 // Params 1
 // Checksum 0xf5af67c9, Offset: 0x4830
 // Size: 0xbc
-function function_f62d9f65( var_a276c861 )
+function jordans_painting_init_step_1( var_a276c861 )
 {
     level flag::init( #"hash_11cbce4fcf9f3aec" );
     s_painting = struct::get( #"gato_saltando_pos", "targetname" );
@@ -1435,7 +1435,7 @@ function function_f62d9f65( var_a276c861 )
 // Params 2
 // Checksum 0xb5e81dd9, Offset: 0x48f8
 // Size: 0x14
-function function_6134319c( var_a276c861, ended_early )
+function jordans_painting_cleanup_step_1( var_a276c861, ended_early )
 {
     
 }
@@ -1466,11 +1466,11 @@ function function_eb269563()
 // Params 2
 // Checksum 0x1bf213a3, Offset: 0x4a58
 // Size: 0xdc
-function function_e92918f6( var_1e99deea, s_lookat )
+function function_e92918f6( t_unitrigger, s_lookat )
 {
     self endoncallback( &function_dc123817, #"left_trigger", #"death" );
     self.var_4522314f = 1;
-    self thread function_da604bc0( var_1e99deea, s_lookat.origin );
+    self thread function_da604bc0( t_unitrigger, s_lookat.origin );
     wait 30;
     
     if ( level flag::get( #"hash_11cbce4fcf9f3aec" ) )
@@ -1529,7 +1529,7 @@ function function_dc123817( str_notify )
 // Params 2
 // Checksum 0x81d4672d, Offset: 0x4db8
 // Size: 0xbc
-function function_da604bc0( var_1e99deea, var_1611e2c0 )
+function function_da604bc0( t_unitrigger, var_1611e2c0 )
 {
     self endon( #"hash_36de4efbe292709d", #"death" );
     
@@ -1541,7 +1541,7 @@ function function_da604bc0( var_1e99deea, var_1611e2c0 )
     {
         wait 0.2;
     }
-    while ( function_533ca98d( var_1e99deea, var_1611e2c0 ) );
+    while ( function_533ca98d( t_unitrigger, var_1611e2c0 ) );
     
     self notify( #"left_trigger" );
     
@@ -1554,9 +1554,9 @@ function function_da604bc0( var_1e99deea, var_1611e2c0 )
 // Params 2
 // Checksum 0x2350fcb6, Offset: 0x4e80
 // Size: 0x5c, Type: bool
-function function_533ca98d( var_1e99deea, var_1611e2c0 )
+function function_533ca98d( t_unitrigger, var_1611e2c0 )
 {
-    return isdefined( var_1e99deea ) && self istouching( var_1e99deea ) && self util::is_looking_at( var_1611e2c0, 0.89 );
+    return isdefined( t_unitrigger ) && self istouching( t_unitrigger ) && self util::is_looking_at( var_1611e2c0, 0.89 );
 }
 
 /#

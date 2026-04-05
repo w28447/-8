@@ -73,7 +73,7 @@ function main()
     zm_sq::register( #"ww_quest", #"hash_532d2da7fe5bfe2e", #"ww_quest_step7", &ww_quest_step7_setup, &ww_quest_step7_cleanup );
     zm_sq::register( #"ww_quest", #"hash_52f633bb8e8c32e4", #"ww_quest_step8", &ww_quest_step8_setup, &ww_quest_step8_cleanup );
     zm_sq::register( #"ww_quest", #"hash_43fb367b319214fa", #"ww_quest_step9", &ww_quest_step9_setup, &ww_quest_step9_cleanup );
-    zm_sq::register( #"ww_quest", #"hash_1ec16bb3298bdc60", #"ww_quest_step10", &registertank_activatedtargetservice, &ww_quest_step10_cleanup );
+    zm_sq::register( #"ww_quest", #"hash_1ec16bb3298bdc60", #"ww_quest_step10", &ww_quest_step10_setup, &ww_quest_step10_cleanup );
     level.s_ww_quest.s_campfire = struct::get( "ww_quest_campfire", "targetname" );
     s_campfire = level.s_ww_quest.s_campfire;
     level.s_ww_quest.s_icicle_in_pot = struct::get( "icicle_in_pot", "targetname" );
@@ -756,7 +756,7 @@ function function_735037d4()
 // Params 1
 // Checksum 0x404bed7e, Offset: 0x2940
 // Size: 0x94
-function registertank_activatedtargetservice( var_5ea5c94d )
+function ww_quest_step10_setup( var_5ea5c94d )
 {
     s_reward_crate = level.s_ww_quest.s_reward_crate;
     

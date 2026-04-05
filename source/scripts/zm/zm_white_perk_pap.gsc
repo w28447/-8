@@ -180,9 +180,9 @@ function function_22bf8bd4( var_3e311473 )
     
     foreach ( var_5baafbb2 in level.var_76a7ad28 )
     {
-        assert( isdefined( var_5baafbb2.var_3468124 ), "<dev string:xab>" );
+        assert( isdefined( var_5baafbb2.s_vapor_altar ), "<dev string:xab>" );
         
-        if ( var_5baafbb2.var_3468124.script_int == var_3e311473 )
+        if ( var_5baafbb2.s_vapor_altar.script_int == var_3e311473 )
         {
             var_fc50707f = getentarray( "zm_random_machine_blocker", "script_noteworthy" );
             var_46d6340f = arraygetclosest( var_5baafbb2.origin, var_fc50707f );
@@ -258,7 +258,7 @@ function function_71461330()
 // Size: 0x16c
 function function_4204dba2()
 {
-    e_machine = self.var_3468124.mdl_altar;
+    e_machine = self.s_vapor_altar.mdl_altar;
     var_2379bb0e = spawn( "script_model", e_machine.origin );
     var_2379bb0e.angles = e_machine.angles;
     var_2379bb0e setmodel( e_machine.model );

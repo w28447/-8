@@ -51515,7 +51515,7 @@ xmodel,#hash_1a9a5d892c13904d
 xmodel,#p8_foliage_weeds_tall_straight_16_drk
 xmodel,#p8_debris_concrete_rubble_01_scatter_medium_128_01
 xmodel,#p8_zm_zod_bookcase_capt
-xmodel,#hash_1aacbdd34c6d9abe
+xmodel,#c_t8_zmb_dlc1_hero_scarlett_head1_igc
 xmodel,#hash_1aaf171f499e9b68
 xmodel,#hash_1aaf1b1f499ea234
 xmodel,#hash_1aaf1d1f499ea59a
@@ -52213,7 +52213,7 @@ xmodel,#hash_33fc5a4ea9658835
 xmodel,#p7_box_wood_wine_storage
 xmodel,#p8_zm_man_exterior_trim_middle_32_01
 xmodel,#hash_341215021ff0173a
-xmodel,#hash_3416c55d74d956ea
+xmodel,#c_t8_zmb_dlc1_alistair_head1_igc
 xmodel,#hash_3421177a100e4351
 xmodel,#hash_342a5a846d5e48f7
 xmodel,#hash_342e2e3d3e573a34
@@ -53112,7 +53112,7 @@ xmodel,#hash_51720ddbfc7a1ed6
 xmodel,#hash_517ac54fee023219
 xmodel,#p8_zm_man_trap_electric_floor
 xmodel,#p8_usa_canister_oil_metal
-xmodel,#hash_51b7c0623b5a64b8
+xmodel,#c_t8_zmb_dlc1_hero_scarlett_body1_igc
 xmodel,#p7_zm_kin_light_sconce_wall
 xmodel,#hash_51dc81908a835583
 xmodel,#hash_51e276e16fe2998b
@@ -53583,7 +53583,7 @@ xmodel,d#p7_fxp_debris_wood_splinter_02
 xmodel,d#p7_fxp_debris_wood_splinter_03
 xmodel,d#p7_fxp_debris_wood_splinter_01
 xmodel,#p8_col_rocks_sm_beach_06_muddy
-xmodel,#hash_617060aa9cf1216a
+xmodel,#c_t8_zmb_dlc1_alistair_body1
 xmodel,#hash_6171c980fe94de1f
 xmodel,d#fx_pistol_shell
 xmodel,#p8_zm_man_main_hall_bridge_column_short
@@ -57244,7 +57244,7 @@ fx,#hash_7e758fbefd585fba
 fx,#hash_7e8001befd6175f5
 fx,#hash_7f3bd1e736bb4859
 fx,#hash_7f8663a0117229ca
-character,#hash_340e0ee87d76f6e6
+character,#c_t8_mp_spe_ruin1
 character,#c_t8_zmb_dlc1_werewolf1
 surfacefxtable,d#zm_wolf_footstep
 surfacefxtable,#zm_cata_elec_footstep

@@ -323,7 +323,7 @@ function function_af2eff2e()
         }
         
         callback::on_connect( &function_76007e28 );
-        self thread function_1525b94c();
+        self thread start_next_challenge();
         
         if ( self.script_location != "frozen_crevasse" )
         {
@@ -347,7 +347,7 @@ function function_2a4de81f()
 // Params 0
 // Checksum 0xcab59cf7, Offset: 0x1aa0
 // Size: 0xf4
-function function_1525b94c()
+function start_next_challenge()
 {
     n_size = self.a_s_challenges.size;
     
@@ -591,7 +591,7 @@ function start_challenge()
         self function_98233b53();
     }
     
-    self function_1525b94c();
+    self start_next_challenge();
 }
 
 // Namespace zm_orange_challenges/zm_orange_challenges

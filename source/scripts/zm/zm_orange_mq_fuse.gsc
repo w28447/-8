@@ -195,11 +195,11 @@ function function_206702d8()
     e_door = getent( "grover", "targetname" );
     playsoundatposition( "zmb_lighthouse_double_door", ( -472, 1172, 315 ) );
     e_door rotateyaw( 148, 0.5, 0.1, 0.1 );
-    var_cee2ebbb = getent( e_door.target, "targetname" );
+    e_door_target = getent( e_door.target, "targetname" );
     
-    if ( isdefined( var_cee2ebbb ) )
+    if ( isdefined( e_door_target ) )
     {
-        var_cee2ebbb delete();
+        e_door_target delete();
     }
 }
 

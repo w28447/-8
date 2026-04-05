@@ -2478,7 +2478,7 @@ function debug_print( message, weapon )
             
             if ( isdefined( weapon ) )
             {
-                weaponname = "<dev string:x5c>" + function_9e72a96( weapon.name );
+                weaponname = "<dev string:x5c>" + hashtostring( weapon.name );
             }
             
             self iprintlnbold( "<dev string:x69>" + message + weaponname );

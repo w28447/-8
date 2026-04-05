@@ -12,7 +12,7 @@ server,#scripts/zm_common/util/ai_nova_crawler_util.gsc
 server,#scripts/zm/zm_trap_electric.gsc
 server,#scripts/zm/zm_hms_util.gsc
 server,#script_779829d4760d3187
-server,#script_6630cc78c80e1cac
+server,#scripts\zm\zm_office_ee_oscars.gsc
 server,#script_509877e6baede031
 server,#scripts/zm/zm_office_umbrella.gsc
 server,#scripts/zm/zm_office_ee_schuster.gsc

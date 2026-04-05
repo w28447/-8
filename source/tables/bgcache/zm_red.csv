@@ -81,7 +81,7 @@ model,#c_t8_zmb_blightfather_tongue2
 model,#c_t8_zmb_dlc2_zombie_female_body3_g_upclean
 model,#hash_d8483cb5cc65489
 model,#hash_d8eb4e9e250cdc3
-model,#hash_dc55f51e41dfa0c
+model,#c_t8_zmb_dlc2_hero_bruno_head_glow_igc
 model,#p8_zm_red_ballista_stand
 model,#p8_fxp_fluid_splash_mud
 model,#p8_zm_zod_pap_plinth_sequence_earth
@@ -332,7 +332,7 @@ model,#hash_339dd502ea58d99e
 model,#p8_zm_red_shield_part_strap
 model,#c_t8_zmb_dlc2_zombie_female_body1_g_upclean
 model,#p8_zm_red_ankh_chaos_whole
-model,#hash_3416c55d74d956ea
+model,#c_t8_zmb_dlc1_alistair_head1_igc
 model,#c_zom_zod_zombie_fem_body1_g_rarmspawn
 model,#c_t8_zmb_blightfather_elbow1_ri
 model,#c_t8_zmb_blightfather_elbow1_le
@@ -668,7 +668,7 @@ model,#p7_fxp_debris_wood_splinter_02
 model,#p7_fxp_debris_wood_splinter_03
 model,#p7_fxp_debris_wood_splinter_01
 model,#c_t8_zmb_dlc2_zombie_male_body3_g_rlegoff
-model,#hash_617060aa9cf1216a
+model,#c_t8_zmb_dlc1_alistair_body1
 model,#fx_pistol_shell
 model,#hash_61790877a7f8e580
 model,#p8_fxp_fluid_spill_2_water_dark
@@ -981,7 +981,7 @@ character,#hash_53d8655bc4775f2f
 character,#hash_57444f97e51d7d72
 character,#c_t8_zmb_dlc2_perseus1
 character,#hash_5ed780ccf081fd2d
-character,#hash_6421ebb04e6b9a74
+character,#c_t8_zmb_dlc2_hero_bruno1_glow_igc
 character,#c_t8_zmb_dlc2_zombie_male2
 character,#c_t8_zmb_dlc2_zombie_male3
 character,#c_t8_zmb_dlc2_zombie_male1

@@ -1804,7 +1804,7 @@ function private register_state( name, enter, update, exit, target_update, debug
 // Size: 0x16c
 function private set_state( entity, state_name )
 {
-    assert( isdefined( level.zombie_states[ state_name ] ), "<dev string:x38>" + ( ishash( state_name ) ? function_9e72a96( state_name ) : state_name ) );
+    assert( isdefined( level.zombie_states[ state_name ] ), "<dev string:x38>" + ( ishash( state_name ) ? hashtostring( state_name ) : state_name ) );
     state = level.zombie_states[ state_name ];
     
     if ( isdefined( entity.current_state ) )
@@ -2312,11 +2312,11 @@ function function_54fc0f3e()
             {
                 if ( getdvarint( #"recorder_enablerec", 0 ) )
                 {
-                    record3dtext( function_9e72a96( self.current_state.name ), self.origin, ( 0, 1, 1 ), "<dev string:x71>", self );
+                    record3dtext( hashtostring( self.current_state.name ), self.origin, ( 0, 1, 1 ), "<dev string:x71>", self );
                 }
                 else
                 {
-                    print3d( self.origin, function_9e72a96( self.current_state.name ), ( 0, 1, 1 ), 1, 1 );
+                    print3d( self.origin, hashtostring( self.current_state.name ), ( 0, 1, 1 ), 1, 1 );
                 }
                 
                 if ( isdefined( self.current_state.debug_func ) )

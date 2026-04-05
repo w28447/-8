@@ -38,8 +38,8 @@ function __main__()
     
     foreach ( var_9dc0380f in var_66ef9199 )
     {
-        var_5ee87ca5 = getentarray( var_9dc0380f.target, "targetname" );
-        array::run_all( var_5ee87ca5, &hide );
+        a_e_triggers = getentarray( var_9dc0380f.target, "targetname" );
+        array::run_all( a_e_triggers, &hide );
     }
     
     level flag::init( #"hash_519e40d088b134" );
@@ -138,9 +138,9 @@ function ee_schuster_step1_cleanup( var_5ea5c94d, ended_early )
         
         foreach ( var_9dc0380f in var_66ef9199 )
         {
-            if ( isdefined( var_9dc0380f.var_b53bedef ) )
+            if ( isdefined( var_9dc0380f.a_e_trigs ) )
             {
-                array::delete_all( var_9dc0380f.var_b53bedef );
+                array::delete_all( var_9dc0380f.a_e_trigs );
             }
         }
     }
@@ -152,8 +152,8 @@ function ee_schuster_step1_cleanup( var_5ea5c94d, ended_early )
 // Size: 0x94
 function function_84471080( var_9dc0380f, e_player )
 {
-    var_5ee87ca5 = getentarray( var_9dc0380f.target, "targetname" );
-    array::run_all( var_5ee87ca5, &showtoplayer, e_player );
+    a_e_triggers = getentarray( var_9dc0380f.target, "targetname" );
+    array::run_all( a_e_triggers, &showtoplayer, e_player );
     e_player clientfield::set_to_player( "audio_log_ball_fx", var_9dc0380f.var_614bfc5c + 1 );
 }
 
@@ -163,11 +163,11 @@ function function_84471080( var_9dc0380f, e_player )
 // Size: 0xe0
 function function_488e39dc()
 {
-    self.var_b53bedef = getentarray( self.target, "targetname" );
+    self.a_e_trigs = getentarray( self.target, "targetname" );
     
-    foreach ( e_trig in self.var_b53bedef )
+    foreach ( e_trig in self.a_e_trigs )
     {
-        e_trig.var_6a633cb2 = self;
+        e_trig.s_audio_log = self;
         
         if ( e_trig.classname == "trigger_use_touch_new" )
         {
@@ -190,7 +190,7 @@ function function_20b4f09a()
     self setcursorhint( "HINT_NOICON" );
     self sethintstring( "" );
     s_notify = self waittill( #"trigger" );
-    self.var_6a633cb2 thread function_8c80503();
+    self.s_audio_log thread function_8c80503();
 }
 
 // Namespace zm_office_ee_schuster/zm_office_ee_schuster
@@ -201,7 +201,7 @@ function function_938d4207()
 {
     self endon( #"death" );
     s_notify = self waittill( #"damage" );
-    self.var_6a633cb2 thread function_8c80503();
+    self.s_audio_log thread function_8c80503();
 }
 
 // Namespace zm_office_ee_schuster/zm_office_ee_schuster
@@ -210,7 +210,7 @@ function function_938d4207()
 // Size: 0x1a4
 function function_8c80503()
 {
-    array::delete_all( self.var_b53bedef );
+    array::delete_all( self.a_e_trigs );
     
     switch ( self.var_614bfc5c )
     {

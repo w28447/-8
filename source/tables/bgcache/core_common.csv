@@ -5043,7 +5043,7 @@ model,#c_t8_mp_spe_outrider_arms1_cst
 model,#wpn_t8_zm_knife_01_world
 model,#c_t8_mp_spe_spectre_torso1_viewbody1
 aitype,#$default_aitype
-character,#hash_228d6995eaf4053
+character,#c_t8_bo_3rd_male4
 character,#c_t8_bo_3rd_male1
 character,#c_t8_mp_swatbuddy2
 character,#c_t8_mp_spe_nomad_dog1_frontend

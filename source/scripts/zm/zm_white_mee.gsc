@@ -1379,14 +1379,14 @@ function function_4b660ce0()
 // Size: 0x1fa
 function function_3117c10()
 {
-    var_28560003 = getentarray( "teddy_bear", "targetname" );
+    a_e_teddy_bears = getentarray( "teddy_bear", "targetname" );
     
-    foreach ( var_7da32058 in var_28560003 )
+    foreach ( e_teddy_bear in a_e_teddy_bears )
     {
         unitrigger_stub = spawnstruct();
-        unitrigger_stub.related_parent = var_7da32058;
-        unitrigger_stub.origin = var_7da32058.origin;
-        unitrigger_stub.angles = var_7da32058.angles;
+        unitrigger_stub.related_parent = e_teddy_bear;
+        unitrigger_stub.origin = e_teddy_bear.origin;
+        unitrigger_stub.angles = e_teddy_bear.angles;
         unitrigger_stub.script_unitrigger_type = "unitrigger_box_use";
         unitrigger_stub.cursor_hint = "HINT_NOICON";
         unitrigger_stub.script_width = 64;
@@ -1397,10 +1397,10 @@ function function_3117c10()
         unitrigger_stub.hint_string = undefined;
         unitrigger_stub.hint_parm1 = undefined;
         unitrigger_stub.hint_parm2 = undefined;
-        unitrigger_stub.e_model = var_7da32058;
+        unitrigger_stub.e_model = e_teddy_bear;
         unitrigger_stub.e_model playloopsound( #"hash_1fd4928ce5489175" );
         zm_unitrigger::register_static_unitrigger( unitrigger_stub, &function_15534b78 );
-        var_7da32058.unitrigger_stub = unitrigger_stub;
+        e_teddy_bear.unitrigger_stub = unitrigger_stub;
     }
     
     level.meteor_counter = 0;

@@ -364,7 +364,7 @@ function function_a0f5819b( b_on = 1 )
         }
         
         level.var_bceee222 = undefined;
-        level.s_pap_quest.var_69e563d = level.s_pap_quest.a_s_locations[ i ];
+        level.s_pap_quest.s_last_loc = level.s_pap_quest.a_s_locations[ i ];
         zodt8_pap_quest::function_ef3c219a();
     }
     
@@ -1193,8 +1193,8 @@ function function_ebb2139()
 function function_5daf1bb7()
 {
     level flag::set( #"hash_480b6b675a3076ec" );
-    var_fcec724a = struct::get( #"floaters_fx" );
-    playrumbleonposition( "grenade_rumble", var_fcec724a.origin );
+    s_fx_loc = struct::get( #"floaters_fx" );
+    playrumbleonposition( "grenade_rumble", s_fx_loc.origin );
     level waittill( #"start_of_round" );
     level flag::set( #"activate_sea_walkers" );
     exploder::exploder( "exp_eye_glow" );
@@ -2051,7 +2051,7 @@ function function_73bdaf30()
         }
     }
     
-    var_425fb862 = level.var_4fe2f84d[ #"zblueprint_shield_dual_wield" ];
+    var_425fb862 = level.a_t_crafting[ #"zblueprint_shield_dual_wield" ];
     
     foreach ( struct in var_425fb862 )
     {
@@ -2111,7 +2111,7 @@ function function_9693e041( player )
     
     if ( player hasweapon( w_frost_shield ) )
     {
-        if ( isdefined( self.blueprint.var_54a97edd.isriotshield ) && self.blueprint.var_54a97edd.isriotshield && isdefined( player.player_shield_reset_health ) && isdefined( player.var_d3345483 ) && player.var_d3345483 )
+        if ( isdefined( self.blueprint.w_result.isriotshield ) && self.blueprint.w_result.isriotshield && isdefined( player.player_shield_reset_health ) && isdefined( player.var_d3345483 ) && player.var_d3345483 )
         {
             self.hint_string = zm_utility::function_d6046228( #"hash_5c35bbb6c39ba19a", #"hash_3bf7b3dc87b1015e" );
             _shad_turret_debug_server = 1;
@@ -3051,7 +3051,7 @@ function function_1f7f2030( var_2c2d042a )
         
         while ( true )
         {
-            print3d( self.origin, function_9e72a96( str_text ), ( 1, 1, 0 ), 1, 1, 30 );
+            print3d( self.origin, hashtostring( str_text ), ( 1, 1, 0 ), 1, 1, 30 );
             wait 0.5;
         }
     }

@@ -143,8 +143,8 @@ function event_handler[level_init] main( eventstruct )
     mansion_storage::init();
     mansion_pap::init_clientfields();
     mansion_pap::function_7255025f();
-    namespace_a8113e97::init();
-    namespace_b6ca3ccc::init();
+    mansion_ley_line::init();
+    mansion_stick_man::init();
     mansion_triad::init();
     mansion_impaler::init();
     mansion_a_skeet_fink::init();
@@ -261,7 +261,7 @@ function event_handler[level_init] main( eventstruct )
         level thread devgui_setup();
     #/
     
-    function_2c7766d0();
+    init_fasttravel();
     function_7abcb565();
     function_38c64c43();
     level thread function_fa17b8da();
@@ -1592,7 +1592,7 @@ function debris_scene( str_targetname, str_script_flag, var_d46cd47, var_d6d5180
 // Params 0
 // Checksum 0xecb98938, Offset: 0x66b0
 // Size: 0x66
-function function_2c7766d0()
+function init_fasttravel()
 {
     zm_fasttravel::function_44a82004( "power_on1" );
     level.var_5bfd847e = #"power_on1";

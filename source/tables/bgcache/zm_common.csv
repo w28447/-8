@@ -3147,7 +3147,7 @@ model,#wpn_t8_sniper_koshka_scope_sig_02_world
 model,#wpn_t8_zm_perk_bottle_electricburst_world
 model,#wpn_t8_zm_knife_01_world
 aitype,#spawner_zm_wolf_ally
-character,#hash_228d6995eaf4053
+character,#c_t8_bo_3rd_male4
 character,#c_t8_bo_3rd_male1
 character,#c_t8_zmb_1stclass_male2
 character,#c_t8_zmb_1stclass_male1

@@ -62,7 +62,7 @@ function main()
     zm_sq::register( #"hash_5e38e846ce88405b", #"step_1", #"hash_2572fbc6efde23a8", &function_48a634b7, &function_ee63b8a7 );
     zm_sq::register( #"hash_729a1e4eb041be9b", #"step_1", #"trinket_quest", &trinket_quest, &trinket_quest_cleanup );
     zm_sq::register( #"edge_of_the_world", #"step_1", #"edge_quest", &edge_quest, &edge_quest_cleanup );
-    zm_sq::register( #"edge_of_the_world", #"step_2", #"edge_quest", &function_8bc27fd3, &security_balcony_time_ );
+    zm_sq::register( #"edge_of_the_world", #"step_2", #"edge_quest", &function_8bc27fd3, &function_f2bde2d9 );
     level.e_edge_spot = getent( "edge_flinger_spot", "targetname" );
     level flag::init( #"hash_72bd35eacb1940de" );
     level flag::init( #"hash_59d5ba61f4b8f405" );
@@ -1054,7 +1054,7 @@ function function_8bc27fd3( var_5ea5c94d )
 // Params 2
 // Checksum 0x2085ba10, Offset: 0x3828
 // Size: 0xd0
-function security_balcony_time_( var_5ea5c94d, ended_early )
+function function_f2bde2d9( var_5ea5c94d, ended_early )
 {
     if ( var_5ea5c94d || ended_early )
     {

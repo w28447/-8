@@ -1115,31 +1115,31 @@ function function_de3936f8( var_ffb1863c )
     }
     
     n_weapon_limit = zm_utility::get_player_weapon_limit( self );
-    var_3ba4bf7d = self getweaponslistprimaries();
+    a_w_primaries = self getweaponslistprimaries();
     
-    if ( var_3ba4bf7d.size > n_weapon_limit )
+    if ( a_w_primaries.size > n_weapon_limit )
     {
         self zm_melee_weapon::take_fallback_weapon();
-        var_3ba4bf7d = self getweaponslistprimaries();
+        a_w_primaries = self getweaponslistprimaries();
         
-        if ( var_3ba4bf7d.size > n_weapon_limit )
+        if ( a_w_primaries.size > n_weapon_limit )
         {
             self zm_stats::increment_map_cheat_stat( "cheat_too_many_weapons" );
             self zm_stats::increment_client_stat( "cheat_too_many_weapons", 0 );
             self zm_stats::increment_client_stat( "cheat_total", 0 );
             self playlocalsound( level.zmb_laugh_alias );
             
-            if ( isdefined( var_ffb1863c ) && self hasweapon( var_ffb1863c ) && isinarray( var_3ba4bf7d, var_ffb1863c ) )
+            if ( isdefined( var_ffb1863c ) && self hasweapon( var_ffb1863c ) && isinarray( a_w_primaries, var_ffb1863c ) )
             {
                 self takeweapon( var_ffb1863c );
             }
-            else if ( isinarray( var_3ba4bf7d, self.currentweapon ) )
+            else if ( isinarray( a_w_primaries, self.currentweapon ) )
             {
                 self takeweapon( self.currentweapon );
             }
             else
             {
-                self takeweapon( var_3ba4bf7d[ 0 ] );
+                self takeweapon( a_w_primaries[ 0 ] );
             }
             
             wait 1;
@@ -1343,7 +1343,7 @@ function player_prevent_damage( einflictor, eattacker, idamage, idflags, smeanso
     /#
         if ( isai( eattacker ) && self.ignoreme )
         {
-            println( "<dev string:x185>" + function_9e72a96( eattacker.archetype ) + "<dev string:x1be>" + smeansofdeath );
+            println( "<dev string:x185>" + hashtostring( eattacker.archetype ) + "<dev string:x1be>" + smeansofdeath );
         }
         
         if ( isdefined( self.bgb_in_plain_sight_active ) && self.bgb_in_plain_sight_active )
@@ -1352,7 +1352,7 @@ function player_prevent_damage( einflictor, eattacker, idamage, idflags, smeanso
             
             if ( isai( eattacker ) )
             {
-                str += function_9e72a96( eattacker.archetype );
+                str += hashtostring( eattacker.archetype );
             }
             else if ( isdefined( eattacker ) )
             {

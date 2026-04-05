@@ -3386,7 +3386,7 @@ function play_sound_2d( sound )
 // Size: 0x6c
 function include_weapon( weapon_name, in_box )
 {
-    println( "<dev string:x22f>" + function_9e72a96( weapon_name ) );
+    println( "<dev string:x22f>" + hashtostring( weapon_name ) );
     
     if ( !isdefined( in_box ) )
     {
@@ -6604,7 +6604,7 @@ function is_jumping()
 // Params 3
 // Checksum 0x66d87381, Offset: 0xf570
 // Size: 0x262
-function function_9f7fd525( var_c61df77f = "zombie_location", a_str_zones, var_a6f0ec9f = 1 )
+function get_spawn_locs( var_c61df77f = "zombie_location", a_str_zones, var_a6f0ec9f = 1 )
 {
     a_s_locs = [];
     

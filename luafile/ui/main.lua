@@ -176,12 +176,12 @@ else
 				require( "x64:1824fcd24cd5764" )
 			end
 		elseif CoD.isWarzone then
-			require( "x64:8f9e828ebdeac4c" )
+			require( "ui/uieditor/menus/hud/hud_wz_require" )
 			require( "x64:be322a54ff91a9a" )
 			require( "x64:9aedfb02e1b42ad" )
 			require( "x64:ad86e26de1fa54e" )
 		else
-			require( "x64:eb491e34e330ae0" )
+			require( "ui/uieditor/menus/hud/hud_mp_require" )
 			require( "x64:6b7fc557f641386" )
 			require( "x64:f1b9c001eb57aa3" )
 			require( "x64:be322a54ff91a9a" )

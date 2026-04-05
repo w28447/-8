@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/vehiclehuds/agr/vhud_agr_reticle" )
 require( "x64:bf7ef70b7404b31" )
-require( "x64:e1ae605b30b1f72" )
+require( "ui/uieditor/widgets/vehiclehuds/ai_tank/vhud_ai_tank_button_layout" )
 
 CoD.vhud_ai_tank_internal = InheritFrom( LUI.UIElement )
 CoD.vhud_ai_tank_internal.__defaultWidth = 1920

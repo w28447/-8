@@ -98,16 +98,16 @@ function init()
         level.var_f13364b4.a_n_codes[ 1004 ] = { #var_544c05c6:1, #var_d9d9d617:&function_cd2168cb };
         level.var_f13364b4.a_n_codes[ 1005 ] = { #var_544c05c6:1, #var_d9d9d617:&function_6b002f3c };
         level thread function_6338402();
-        level.var_f13364b4.var_8deb4ed2 = 7626;
-        level.var_f13364b4.a_n_codes[ level.var_f13364b4.var_8deb4ed2 ] = { #var_544c05c6:1, #var_d9d9d617:&function_c9dcb3aa };
-        level.var_f13364b4.var_a7450be4 = function_4696e086( 1, &function_69dd6c5b );
-        level.var_f13364b4.var_72c3e48c = function_4696e086( 1, &function_97ab5da4 );
-        level.var_f13364b4.var_98e79e76 = function_4696e086( 1, &function_9a405843 );
+        level.var_f13364b4.n_code_private_mannequin = 7626;
+        level.var_f13364b4.a_n_codes[ level.var_f13364b4.n_code_private_mannequin ] = { #var_544c05c6:1, #var_d9d9d617:&function_c9dcb3aa };
+        level.var_f13364b4.n_code_sawyer = function_4696e086( 1, &function_69dd6c5b );
+        level.var_f13364b4.n_code_mccain = function_4696e086( 1, &function_97ab5da4 );
+        level.var_f13364b4.n_code_pernell = function_4696e086( 1, &function_9a405843 );
         level.var_f13364b4.var_3c358113 = function_4696e086( 1, &function_7ddee93a );
         level.var_f13364b4.var_c8629019 = function_4696e086( 1, &function_68dfeba9 );
         level.var_f13364b4.var_becc7ced = function_4696e086( 1, &function_68dfeba9 );
         level.var_f13364b4.var_5beab72b = function_4696e086( 1, &function_68dfeba9 );
-        level.var_d7e5aaac = array( level.var_f13364b4.var_8deb4ed2, level.var_f13364b4.var_a7450be4, level.var_f13364b4.var_72c3e48c, level.var_f13364b4.var_98e79e76, level.var_f13364b4.var_c8629019, level.var_f13364b4.var_becc7ced, level.var_f13364b4.var_5beab72b, level.var_f13364b4.var_3c358113 );
+        level.var_d7e5aaac = array( level.var_f13364b4.n_code_private_mannequin, level.var_f13364b4.n_code_sawyer, level.var_f13364b4.n_code_mccain, level.var_f13364b4.n_code_pernell, level.var_f13364b4.var_c8629019, level.var_f13364b4.var_becc7ced, level.var_f13364b4.var_5beab72b, level.var_f13364b4.var_3c358113 );
         level thread function_ca3efcd8();
         function_7ee18649();
         return;
@@ -759,7 +759,7 @@ function function_c9dcb3aa()
     level flag::set( #"hash_3ee874ebee843004" );
     
     /#
-        iprintlnbold( "<dev string:x21b>" + level.var_f13364b4.var_a7450be4 );
+        iprintlnbold( "<dev string:x21b>" + level.var_f13364b4.n_code_sawyer );
     #/
 }
 
@@ -774,13 +774,13 @@ function function_69dd6c5b()
         level flag::set( #"hash_315d0bf1d50724f0" );
         
         /#
-            iprintlnbold( "<dev string:x242>" + level.var_f13364b4.var_72c3e48c );
+            iprintlnbold( "<dev string:x242>" + level.var_f13364b4.n_code_mccain );
         #/
         
         return;
     }
     
-    level.var_f13364b4.a_n_codes[ level.var_f13364b4.var_a7450be4 ].var_544c05c6++;
+    level.var_f13364b4.a_n_codes[ level.var_f13364b4.n_code_sawyer ].var_544c05c6++;
 }
 
 // Namespace zm_white_computer_system/zm_white_computer_system
@@ -796,13 +796,13 @@ function function_97ab5da4()
         level flag::set( #"hash_359cbec050523f4" );
         
         /#
-            iprintlnbold( "<dev string:x269>" + level.var_f13364b4.var_98e79e76 );
+            iprintlnbold( "<dev string:x269>" + level.var_f13364b4.n_code_pernell );
         #/
         
         return;
     }
     
-    level.var_f13364b4.a_n_codes[ level.var_f13364b4.var_72c3e48c ].var_544c05c6++;
+    level.var_f13364b4.a_n_codes[ level.var_f13364b4.n_code_mccain ].var_544c05c6++;
 }
 
 // Namespace zm_white_computer_system/zm_white_computer_system
@@ -819,7 +819,7 @@ function function_9a405843()
         return;
     }
     
-    level.var_f13364b4.a_n_codes[ level.var_f13364b4.var_98e79e76 ].var_544c05c6++;
+    level.var_f13364b4.a_n_codes[ level.var_f13364b4.n_code_pernell ].var_544c05c6++;
 }
 
 // Namespace zm_white_computer_system/zm_white_computer_system
@@ -991,7 +991,7 @@ function function_7ee18649()
     var_2ec8989 = zm_hms_util::function_bffcedde( "mesh_code_display_01", "script_noteworthy", "script_int" );
     level.var_f140d610 = var_2ec8989[ var_127789d1 ];
     level.var_f140d610 function_f0af359();
-    level.var_f140d610 function_66365668( function_da24090c( level.var_f13364b4.var_a7450be4 ) );
+    level.var_f140d610 function_66365668( function_da24090c( level.var_f13364b4.n_code_sawyer ) );
     level.var_f140d610 showpart( "tag_code_paper_1" );
     a_e_paper = zm_hms_util::function_bffcedde( "sawyer_authorization_code", "targetname", "script_int" );
     
@@ -1004,10 +1004,10 @@ function function_7ee18649()
     }
     
     waitframe( 1 );
-    level.var_ff8f72ad function_66365668( function_da24090c( level.var_f13364b4.var_72c3e48c ) );
+    level.var_ff8f72ad function_66365668( function_da24090c( level.var_f13364b4.n_code_mccain ) );
     level.var_ff8f72ad showpart( "tag_code_paper_2" );
     waitframe( 1 );
-    level.var_d2e0194f function_66365668( function_da24090c( level.var_f13364b4.var_98e79e76 ) );
+    level.var_d2e0194f function_66365668( function_da24090c( level.var_f13364b4.n_code_pernell ) );
     level.var_d2e0194f showpart( "tag_code_paper_3" );
     level.var_a91ec5cd function_66365668( function_da24090c( level.var_f13364b4.var_3c358113 ) );
     level.var_b6696062 function_66365668( function_da24090c( level.var_f13364b4.var_c8629019 ) );

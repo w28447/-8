@@ -154,7 +154,7 @@ function function_93eab559()
         return;
     }
     
-    level thread p9_wood_lumber_01_1x4_64_01();
+    level thread function_2a2428df();
     wait 1;
     level thread zm_audio::sndannouncerplayvox( "dogstart" );
 }
@@ -493,7 +493,7 @@ function function_38c0c907()
 // Params 0
 // Checksum 0x424b4ce0, Offset: 0x13c0
 // Size: 0x74
-function p9_wood_lumber_01_1x4_64_01()
+function function_2a2428df()
 {
     players = getplayers();
     num = randomintrange( 0, players.size );

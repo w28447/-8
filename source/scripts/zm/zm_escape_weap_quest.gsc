@@ -63,7 +63,7 @@ function function_bad944b5()
     
     level flag::init( #"soul_catchers_charged" );
     level flag::init( #"tomahawk_pickup_complete" );
-    level.var_4952e1 = [];
+    level.a_s_soul_catchers = [];
     level.var_b5ca4338 = [];
     level.var_6aa46602 = [];
     level.n_soul_catchers_charged = 0;
@@ -73,20 +73,20 @@ function function_bad944b5()
     
     for ( i = 0; i < level.var_49662f50.size ; i++ )
     {
-        level.var_4952e1[ i ] = level.var_49662f50[ i ];
+        level.a_s_soul_catchers[ i ] = level.var_49662f50[ i ];
         level.var_b5ca4338[ i ] = getent( level.var_49662f50[ i ].target, "targetname" );
         level.var_6aa46602[ i ] = struct::get( level.var_49662f50[ i ].var_799fb8e9 );
     }
     
-    for ( i = 0; i < level.var_4952e1.size ; i++ )
+    for ( i = 0; i < level.a_s_soul_catchers.size ; i++ )
     {
-        level.var_4952e1[ i ].var_43bd3b5 = 0;
-        level.var_4952e1[ i ].var_aa1a7f2e = 0;
-        level.var_4952e1[ i ].s_scene = level.var_6aa46602[ i ];
-        level.var_4952e1[ i ] thread soul_catcher_check();
-        level.var_4952e1[ i ] thread soul_catcher_state_manager();
-        level.var_4952e1[ i ] thread wolf_head_removal( "tomahawk_door_sign_" + i + 1 );
-        level.var_b5ca4338[ i ] = getent( level.var_4952e1[ i ].target, "targetname" );
+        level.a_s_soul_catchers[ i ].var_43bd3b5 = 0;
+        level.a_s_soul_catchers[ i ].var_aa1a7f2e = 0;
+        level.a_s_soul_catchers[ i ].s_scene = level.var_6aa46602[ i ];
+        level.a_s_soul_catchers[ i ] thread soul_catcher_check();
+        level.a_s_soul_catchers[ i ] thread soul_catcher_state_manager();
+        level.a_s_soul_catchers[ i ] thread wolf_head_removal( "tomahawk_door_sign_" + i + 1 );
+        level.var_b5ca4338[ i ] = getent( level.a_s_soul_catchers[ i ].target, "targetname" );
     }
     
     level thread soul_catchers_charged();
@@ -154,11 +154,11 @@ function check_for_zombie_in_wolf_area()
         return false;
     }
     
-    for ( i = 0; i < level.var_4952e1.size ; i++ )
+    for ( i = 0; i < level.a_s_soul_catchers.size ; i++ )
     {
         if ( self istouching( level.var_b5ca4338[ i ] ) )
         {
-            if ( !level.var_4952e1[ i ].is_charged && !level.var_4952e1[ i ].var_aa1a7f2e )
+            if ( !level.a_s_soul_catchers[ i ].is_charged && !level.a_s_soul_catchers[ i ].var_aa1a7f2e )
             {
                 return true;
             }
@@ -186,11 +186,11 @@ function function_d2093ddd( willbekilled, inflictor, attacker, damage, flags, mo
     
     if ( isplayer( attacker ) && ( isdefined( willbekilled ) && willbekilled || damage >= self.health ) )
     {
-        for ( i = 0; i < level.var_4952e1.size ; i++ )
+        for ( i = 0; i < level.a_s_soul_catchers.size ; i++ )
         {
             if ( self istouching( level.var_b5ca4338[ i ] ) )
             {
-                if ( !level.var_4952e1[ i ].is_charged && !( isdefined( level.var_4952e1[ i ].var_aa1a7f2e ) && level.var_4952e1[ i ].var_aa1a7f2e ) && level.var_4952e1[ i ].var_43bd3b5 < 6 )
+                if ( !level.a_s_soul_catchers[ i ].is_charged && !( isdefined( level.a_s_soul_catchers[ i ].var_aa1a7f2e ) && level.a_s_soul_catchers[ i ].var_aa1a7f2e ) && level.a_s_soul_catchers[ i ].var_43bd3b5 < 6 )
                 {
                     self.ignoreall = 1;
                     self.allowdeath = 0;
@@ -202,7 +202,7 @@ function function_d2093ddd( willbekilled, inflictor, attacker, damage, flags, mo
                     self notsolid();
                     self setteam( util::get_enemy_team( self.team ) );
                     attacker notify( #"hash_2706d6137c04adf4" );
-                    self.var_cfd3756 = level.var_4952e1[ i ];
+                    self.var_cfd3756 = level.a_s_soul_catchers[ i ];
                     self.var_cfd3756.var_aa1a7f2e = 1;
                     
                     if ( self.var_cfd3756.var_43bd3b5 == 0 )
@@ -471,7 +471,7 @@ function soul_catchers_charged()
 {
     while ( true )
     {
-        if ( level.n_soul_catchers_charged >= level.var_4952e1.size )
+        if ( level.n_soul_catchers_charged >= level.a_s_soul_catchers.size )
         {
             level flag::set( #"soul_catchers_charged" );
             level notify( #"soul_catchers_charged" );
@@ -507,7 +507,7 @@ function soul_catcher_check()
     
     self thread function_41b1af8c();
     
-    if ( level.n_soul_catchers_charged >= level.var_4952e1.size )
+    if ( level.n_soul_catchers_charged >= level.a_s_soul_catchers.size )
     {
         level flag::set( #"soul_catchers_charged" );
     }
@@ -634,8 +634,8 @@ function private function_74c96a90( e_activator )
 function tomahawk_pickup()
 {
     level flag::wait_till( #"soul_catchers_charged" );
-    var_fd22f9df = struct::get( "tom_pil" );
-    mdl_tomahawk = var_fd22f9df.scene_ents[ #"prop 2" ];
+    s_tomahawk_scene = struct::get( "tom_pil" );
+    mdl_tomahawk = s_tomahawk_scene.scene_ents[ #"prop 2" ];
     mdl_tomahawk waittill( #"tomahawk_ready_for_pickup" );
     wait 0.5;
     mdl_tomahawk playloopsound( #"amb_tomahawk_swirl" );
@@ -680,9 +680,9 @@ function tomahawk_pickup()
 // Size: 0x64
 function function_5fd2c72e()
 {
-    var_f14a8b00 = struct::get( "tom_pil" );
+    s_tomahawk_pillar = struct::get( "tom_pil" );
     str_shot_name = "Shot " + level.n_soul_catchers_charged + 1;
-    var_f14a8b00 thread scene::play( str_shot_name );
+    s_tomahawk_pillar thread scene::play( str_shot_name );
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
@@ -712,8 +712,8 @@ function function_f0ef3897( e_player )
 {
     e_player notify( #"obtained_tomahawk" );
     e_player endon( #"obtained_tomahawk", #"disconnect" );
-    var_fd22f9df = struct::get( "tom_pil" );
-    mdl_tomahawk = var_fd22f9df.scene_ents[ #"prop 2" ];
+    s_tomahawk_scene = struct::get( "tom_pil" );
+    mdl_tomahawk = s_tomahawk_scene.scene_ents[ #"prop 2" ];
     mdl_tomahawk setinvisibletoplayer( e_player );
     self setinvisibletoplayer( e_player );
     e_player zm_utility::disable_player_move_states( 1 );
@@ -804,8 +804,8 @@ function function_6300f001()
     
     self endon( #"disconnect" );
     var_6668e57a = getent( "rt_pickup_trigger", "script_noteworthy" );
-    var_fd22f9df = struct::get( "tom_pil" );
-    mdl_tomahawk = var_fd22f9df.scene_ents[ #"prop 2" ];
+    s_tomahawk_scene = struct::get( "tom_pil" );
+    mdl_tomahawk = s_tomahawk_scene.scene_ents[ #"prop 2" ];
     
     while ( isplayer( self ) )
     {

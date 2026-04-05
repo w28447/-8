@@ -38878,7 +38878,7 @@ luafile,#ui/uieditor/menus/hud/t7hud_zm_factory.lua
 luafile,#ui/uieditor/widgets/hud/deadspectate/deadspectate.lua
 luafile,#ui/uieditor/widgets/hud/zm_ammowidgetfactory/zmammo_bgbcarouselbuttonfactory.lua
 luafile,#ui/uieditor/widgets/hud/zm_revive/zm_selfrevivecounter.lua
-luafile,#hash_2ccaf5d37fe32146
+luafile,#ui/uieditor/luielems/zm_laststand/zm_laststand_client.lua
 luafile,#ui/uieditor/luielems/zm/zm_build_progress.lua
 luafile,d#ui/uieditor/widgets/common/commoncornerpips01.lua
 luafile,#ui/uieditor/widgets/hud/zm_perks/zmperkvaporcooldownpulse.lua
@@ -38907,7 +38907,7 @@ luafile,#hash_32f73fcc5d2b4e5f
 luafile,#ui/uieditor/widgets/zmfrontend/zmaartrialtabroundstattall.lua
 luafile,#hash_338bf1b3e25f6217
 luafile,#ui/uieditor/widgets/hud/scoreinfo/scoreinfo_ticketsystemlifelist.lua
-luafile,#hash_340365f9dad36bd5
+luafile,#ui/uieditor/luielems/zm_laststand/self_revive_visuals_rush.lua
 luafile,#ui/uieditor/widgets/demo/democontrolsbutton.lua
 luafile,#hash_3420e7862df09aa8
 luafile,#ui/uieditor/widgets/systemoverlays/systemoverlay_democustomizehighlightreel_layout.lua
@@ -38999,7 +38999,7 @@ luafile,#ui/uieditor/menus/fileshare/popups/fileshareoptions.lua
 luafile,d#ui/uieditor/widgets/startmenu/startmenu_options_slider_control_item.lua
 luafile,#ui/uieditor/widgets/hud/core_ammowidget/ammowidgetzm_abilityitem.lua
 luafile,d#ui/uieditor/widgets/startmenu/options/startmenu_options_controllerlayout.lua
-luafile,#hash_46f417a74d9ab424
+luafile,#ui/uieditor/menus/hud/hud_zm_require.lua
 luafile,#hash_47059018031bacae
 luafile,#ui/uieditor/widgets/hud/zm_ammowidgetfactory/zmammocontainerfactory.lua
 luafile,#ui/uieditor/widgets/hud/zm_fx/zmfx_flsh1.lua
@@ -39098,7 +39098,7 @@ luafile,d#ui/uieditor/widgets/pc/hud/hud_keypromptframe_ability.lua
 luafile,#hash_5b8be9fbe1e45774
 luafile,#hash_5ba6fd9ae97a92b3
 luafile,#ui/uieditor/widgets/notifications/notificationqueuewidgets/mp/camochallengenotification.lua
-luafile,#hash_5bb0bf039b835f66
+luafile,#ui/uieditor/widgets/pc/theater/pc_theater_keyboard_shortcut_container.lua
 luafile,#ui/uieditor/luielems/zm/zm_game_timer.lua
 luafile,#ui/uieditor/widgets/prompt_arrow.lua
 luafile,#ui/uieditor/widgets/demo/demopip.lua
@@ -39212,7 +39212,7 @@ luafile,d#ui/uieditor/widgets/common/commonlistbutton.lua
 luafile,d#ui/uieditor/widgets/systemoverlays/systemoverlay_alertstatusbar.lua
 luafile,d#ui/uieditor/widgets/systemoverlays/systemoverlay_layout_genericforeground_full.lua
 luafile,#ui/uieditor/widgets/hud/zm_ammowidgetfactory/zmammo_bgbcarouselfactory_internal.lua
-luafile,#hash_711a88176079ebcb
+luafile,#ui/uieditor/menus/hud/equipment/empgrenade/emprebootindicator.lua
 luafile,#ui/uieditor/widgets/hud/cp_damagewidget/damagewidget_panel.lua
 luafile,#hash_71caf700bf95ea25
 luafile,#ui/uieditor/widgets/hud/zm_perks/zmperkvaporitemchargecountlistwidget.lua
@@ -39274,7 +39274,7 @@ luafile,#ui/uieditor/widgets/mphudwidgets/outofbounds/outofbounds_sidebar.lua
 luafile,#ui/uieditor/widgets/hud/core_ammowidget/ammowidgetzm_weaponlistpip.lua
 luafile,#ui/uieditor/widgets/mphudwidgets/scorepopup/mpscr.lua
 luafile,d#ui/uieditor/widgets/cac/newbreadcrumbcount.lua
-luafile,#hash_7f67a07c4e1d567a
+luafile,#ui/uieditor/luielems/zm_laststand/self_revive_visuals.lua
 luafile,#ui/uieditor/widgets/notifications/medals/notification_medals.lua
 luafile,#ui/uieditor/widgets/hud/core_ammowidget/ammowidgetzm_ammomodifier.lua
 luafile,#ui/uieditor/widgets/hud/zm_perks/zmperkvapordeadshotcountlist.lua
@@ -52028,7 +52028,7 @@ tagfx,#hash_4e9499d26862b62a
 tagfx,#hash_515695e4143f9c04
 tagfx,#hash_515d81e4144598b6
 tagfx,#hash_64ac4e4bac87b7d0
-character,d#hash_228d6995eaf4053
+character,d#c_t8_bo_3rd_male4
 character,d#c_t8_bo_3rd_male1
 character,d#hash_296a2437d42f6a54
 character,d#hash_5485d8593d4db74b

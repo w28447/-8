@@ -184,7 +184,7 @@ function gadgets_save_power( game_ended )
         gadgetweapon = self._gadgets_player[ slot ];
         powerleft = self gadgetpowerchange( slot, 0 );
         var_51ec1787 = self function_adc6203f( slot );
-        deployed = self function_36dfc05f( slot );
+        deployed = self gadgetisdeployed( slot );
         
         if ( game_ended && ( deployed || util::gadget_is_in_use( slot ) ) )
         {
@@ -1477,7 +1477,7 @@ function function_fc4dc54( var_6fcde3b6 = 0 )
     {
         if ( ishash( str ) )
         {
-            str = function_9e72a96( str );
+            str = hashtostring( str );
         }
         
         toprint = "<dev string:x38>" + str;
@@ -1637,7 +1637,7 @@ function function_fc4dc54( var_6fcde3b6 = 0 )
                 var_1a27a47a = "<dev string:x1b3>";
             }
             
-            var_eb49090f = function_9e72a96( function_b14806c6( i, session_mode ) );
+            var_eb49090f = hashtostring( function_b14806c6( i, session_mode ) );
             var_4f6b7b98 = var_1a27a47a + "<dev string:x1c2>" + ( isdefined( var_eb49090f ) ? var_eb49090f : "<dev string:x1c8>" ) + "<dev string:x1cf>";
             
             if ( !isdefined( var_d59b8ebf.enabled ) || var_d59b8ebf.enabled == 0 )
@@ -2325,7 +2325,7 @@ function function_fc4dc54( var_6fcde3b6 = 0 )
                 {
                     n_power = self gadgetpowerget( i );
                     
-                    if ( !self util::gadget_is_in_use( i ) && !self function_36dfc05f( i ) && n_power < self._gadgets_player[ i ].gadget_powermax )
+                    if ( !self util::gadget_is_in_use( i ) && !self gadgetisdeployed( i ) && n_power < self._gadgets_player[ i ].gadget_powermax )
                     {
                         self gadgetpowerset( i, self._gadgets_player[ i ].gadget_powermax );
                     }

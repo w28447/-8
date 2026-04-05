@@ -369,7 +369,7 @@ function function_8e0b371()
     {
         if ( isalive( self ) )
         {
-            str_location = function_ab7f70b9( self );
+            str_location = get_location_string( self );
             self zm_hud::function_29780fb5( isdefined( str_location ) ? str_location : #"" );
         }
         else
@@ -385,7 +385,7 @@ function function_8e0b371()
 // Params 1
 // Checksum 0x8fae6807, Offset: 0x20e0
 // Size: 0x5a
-function function_ab7f70b9( e_player )
+function get_location_string( e_player )
 {
     str_zone = e_player zm_zonemgr::get_player_zone();
     
@@ -561,7 +561,7 @@ function function_f7a190a8( str_wait_flag, var_ab660f9a, str_location, str_subca
         wait var_ab660f9a;
     }
     
-    for ( var_33625d75 = function_ab7f70b9( self ); var_33625d75 === str_location ; var_33625d75 = function_ab7f70b9( self ) )
+    for ( var_33625d75 = get_location_string( self ); var_33625d75 === str_location ; var_33625d75 = get_location_string( self ) )
     {
         wait 0.5;
     }

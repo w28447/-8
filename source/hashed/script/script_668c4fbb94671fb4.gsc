@@ -1506,8 +1506,8 @@ function private function_7de21668()
 {
     self endon( #"death" );
     self.goalradius = 64;
-    var_397f8272 = struct::get_array( "cellblocks_final_path", "script_noteworthy" );
-    var_25d70459 = arraygetclosest( self.origin, var_397f8272 );
+    a_s_final_path = struct::get_array( "cellblocks_final_path", "script_noteworthy" );
+    var_25d70459 = arraygetclosest( self.origin, a_s_final_path );
     s_next_pos = struct::get( var_25d70459.target, "targetname" );
     self setgoal( var_25d70459.origin );
     self waittill( #"goal" );
@@ -1822,22 +1822,22 @@ function private function_eee2ccd4( str_zone )
 {
     var_7d53907e = getnode( str_zone, "targetname" );
     var_f3f7c164 = struct::get_array( var_7d53907e.target );
-    var_5ab4bb90 = [];
+    a_s_zombie_spawn_locations = [];
     
     foreach ( s_spawner in var_f3f7c164 )
     {
         if ( s_spawner.script_noteworthy != "dog_location" && s_spawner.script_noteworthy != "brutus_location" && s_spawner.script_noteworthy != "wait_location" )
         {
-            if ( !isdefined( var_5ab4bb90 ) )
+            if ( !isdefined( a_s_zombie_spawn_locations ) )
             {
-                var_5ab4bb90 = [];
+                a_s_zombie_spawn_locations = [];
             }
-            else if ( !isarray( var_5ab4bb90 ) )
+            else if ( !isarray( a_s_zombie_spawn_locations ) )
             {
-                var_5ab4bb90 = array( var_5ab4bb90 );
+                a_s_zombie_spawn_locations = array( a_s_zombie_spawn_locations );
             }
             
-            var_5ab4bb90[ var_5ab4bb90.size ] = s_spawner;
+            a_s_zombie_spawn_locations[ a_s_zombie_spawn_locations.size ] = s_spawner;
         }
     }
     
@@ -1845,7 +1845,7 @@ function private function_eee2ccd4( str_zone )
     
     for ( i = 0; i < var_8f2dfb2c ; i++ )
     {
-        s_spawn_location = array::random( var_5ab4bb90 );
+        s_spawn_location = array::random( a_s_zombie_spawn_locations );
         e_enemy = undefined;
         
         while ( !isdefined( e_enemy ) )
@@ -1996,8 +1996,8 @@ function private function_cdc8090a()
     level scene::add_scene_func( #"aib_vign_zm_mob_spoon_ghost_stab", &function_e78de01b, "init" );
     level thread scene::init( #"aib_vign_zm_mob_spoon_ghost_stab" );
     level.var_acc853e7 thread function_7f71a2b2( self );
-    var_e4f517f0 = getentarray( "zm_spinning_trap", "script_noteworthy" );
-    array::thread_all( var_e4f517f0, &function_f8da844f, self );
+    a_t_spinning_traps = getentarray( "zm_spinning_trap", "script_noteworthy" );
+    array::thread_all( a_t_spinning_traps, &function_f8da844f, self );
     s_result = level.var_acc853e7 waittill( #"death", #"hash_436fe34b5e12d99a" );
     var_7df17d61 = level.var_acc853e7.origin;
     
@@ -3100,8 +3100,8 @@ function private function_dc369dee( var_b51b4b08 )
 function private function_34e153c7()
 {
     exploder::exploder( "lgtexp_comm_monitors_on" );
-    var_3ab52107 = array( 0, 1, 2, 3, 4, 5 );
-    var_3ab52107 = array::randomize( var_3ab52107 );
+    a_n_symbols = array( 0, 1, 2, 3, 4, 5 );
+    a_n_symbols = array::randomize( a_n_symbols );
     level.var_72ea8db7 = [];
     
     for ( i = 0; i < 6 ; i++ )
@@ -3115,10 +3115,10 @@ function private function_34e153c7()
             level.var_72ea8db7 = array( level.var_72ea8db7 );
         }
         
-        level.var_72ea8db7[ level.var_72ea8db7.size ] = var_3ab52107[ i ];
+        level.var_72ea8db7[ level.var_72ea8db7.size ] = a_n_symbols[ i ];
     }
     
-    var_3ab52107 = array::randomize( var_3ab52107 );
+    a_n_symbols = array::randomize( a_n_symbols );
     level.var_e2279748 = [];
     
     for ( i = 0; i < 6 ; i++ )
@@ -3132,7 +3132,7 @@ function private function_34e153c7()
             level.var_e2279748 = array( level.var_e2279748 );
         }
         
-        level.var_e2279748[ level.var_e2279748.size ] = var_3ab52107[ i ];
+        level.var_e2279748[ level.var_e2279748.size ] = a_n_symbols[ i ];
     }
     
     level.var_62f48651 = [];
@@ -3153,9 +3153,9 @@ function private function_34e153c7()
         level.var_62f48651[ level.var_62f48651.size ] = n_result;
     }
     
-    level.var_6df70f90 = getentarray( "jcc_01", "targetname" );
+    level.a_mdl_monitors = getentarray( "jcc_01", "targetname" );
     
-    foreach ( mdl_monitor in level.var_6df70f90 )
+    foreach ( mdl_monitor in level.a_mdl_monitors )
     {
         var_aa794395 = mdl_monitor.origin + anglestoforward( mdl_monitor.angles ) * -15;
         mdl_monitor.t_interact = spawn( "trigger_radius_use", var_aa794395, 0, 64, 64 );
@@ -3168,7 +3168,7 @@ function private function_34e153c7()
     
     self waittill( #"death", #"hash_300e9fed7925cd69" );
     
-    foreach ( mdl_monitor in level.var_6df70f90 )
+    foreach ( mdl_monitor in level.a_mdl_monitors )
     {
         mdl_monitor setmodel( #"p8_zm_esc_comm_monitor_sml_01_screen_off" );
         mdl_monitor.t_interact delete();
@@ -3209,11 +3209,11 @@ function function_a9c796c9( var_ad361c37 )
 function private function_3f41df11( var_aa11c23c )
 {
     var_aa11c23c endon( #"death", #"hash_300e9fed7925cd69" );
-    var_fda10a91 = array( #"hash_7b807c00f606fd42", #"hash_7b807b00f606fb8f", #"hash_7b807a00f606f9dc", #"hash_7b807900f606f829", #"hash_7b807800f606f676", #"hash_7b807700f606f4c3", #"hash_7b807600f606f310", #"hash_7b808500f6070c8d", #"hash_7b808400f6070ada", #"hash_7b7cf700f603e56c", #"hash_7b7cf800f603e71f", #"hash_7b7cf900f603e8d2" );
+    a_str_monitors = array( #"hash_7b807c00f606fd42", #"hash_7b807b00f606fb8f", #"hash_7b807a00f606f9dc", #"hash_7b807900f606f829", #"hash_7b807800f606f676", #"hash_7b807700f606f4c3", #"hash_7b807600f606f310", #"hash_7b808500f6070c8d", #"hash_7b808400f6070ada", #"hash_7b7cf700f603e56c", #"hash_7b7cf800f603e71f", #"hash_7b7cf900f603e8d2" );
     n_ph = level.var_72ea8db7[ self.script_int ];
-    var_d7fe6e89 = var_fda10a91[ n_ph ];
+    var_d7fe6e89 = a_str_monitors[ n_ph ];
     var_888f63a1 = level.var_e2279748[ n_ph ] + 6;
-    var_6695748c = var_fda10a91[ var_888f63a1 ];
+    var_6695748c = a_str_monitors[ var_888f63a1 ];
     self setmodel( var_d7fe6e89 );
     var_a9ef48ba = var_6695748c;
     
@@ -4424,12 +4424,12 @@ function private function_ff88f6aa( v_teleport_position )
 function private function_9b1d9d6a()
 {
     var_2d52f9db = struct::get( "p_l_exp" );
-    var_fe4d15a4 = var_2d52f9db.scene_ents[ #"prop 1" ];
+    mdl_lighthouse = var_2d52f9db.scene_ents[ #"prop 1" ];
     var_2287bf7c = [];
     
     foreach ( e_player in util::get_players() )
     {
-        if ( isalive( e_player ) && var_fe4d15a4 sightconetrace( e_player getweaponmuzzlepoint(), e_player, e_player getweaponforwarddir(), 70 ) )
+        if ( isalive( e_player ) && mdl_lighthouse sightconetrace( e_player getweaponmuzzlepoint(), e_player, e_player getweaponforwarddir(), 70 ) )
         {
             if ( !isdefined( var_2287bf7c ) )
             {

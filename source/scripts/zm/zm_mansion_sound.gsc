@@ -49,7 +49,7 @@ function private function_96da6081()
     
     foreach ( s_roll in a_s_rolls )
     {
-        s_roll.var_255658de = util::spawn_model( #"p8_zm_zod_phonograph_opera_roll", s_roll.origin, s_roll.angles );
+        s_roll.mdl_roll = util::spawn_model( #"p8_zm_zod_phonograph_opera_roll", s_roll.origin, s_roll.angles );
         s_roll.s_unitrigger_stub = s_roll zm_unitrigger::create( "", 64, &function_aba430c2 );
     }
     
@@ -77,9 +77,9 @@ function private function_aba430c2()
     s_result.activator playsound( #"hash_7e0e4a1fb470d18f" );
     s_result.activator.registerraz_locationinvalidposmenu = self.stub.related_parent.script_int;
     
-    if ( isdefined( self.stub.related_parent.var_255658de ) )
+    if ( isdefined( self.stub.related_parent.mdl_roll ) )
     {
-        self.stub.related_parent.var_255658de delete();
+        self.stub.related_parent.mdl_roll delete();
     }
     
     zm_unitrigger::unregister_unitrigger( self.stub.related_parent.s_unitrigger_stub );
@@ -107,19 +107,19 @@ function private function_63c3fd24()
         
         e_player = s_result.activator;
         
-        if ( !isdefined( self.stub.related_parent.var_255658de ) && isdefined( e_player.registerraz_locationinvalidposmenu ) )
+        if ( !isdefined( self.stub.related_parent.mdl_roll ) && isdefined( e_player.registerraz_locationinvalidposmenu ) )
         {
-            self.stub.related_parent.var_255658de = util::spawn_model( #"p8_zm_zod_phonograph_opera_roll", self.stub.related_parent.origin, self.stub.related_parent.angles );
-            self.stub.related_parent.var_255658de playsound( #"hash_343bf66b64f5830e" );
-            self.stub.related_parent.var_255658de thread function_f2d27140( e_player.registerraz_locationinvalidposmenu );
-            self.stub.related_parent.var_255658de.registerraz_locationinvalidposmenu = e_player.registerraz_locationinvalidposmenu;
+            self.stub.related_parent.mdl_roll = util::spawn_model( #"p8_zm_zod_phonograph_opera_roll", self.stub.related_parent.origin, self.stub.related_parent.angles );
+            self.stub.related_parent.mdl_roll playsound( #"hash_343bf66b64f5830e" );
+            self.stub.related_parent.mdl_roll thread function_f2d27140( e_player.registerraz_locationinvalidposmenu );
+            self.stub.related_parent.mdl_roll.registerraz_locationinvalidposmenu = e_player.registerraz_locationinvalidposmenu;
             e_player.registerraz_locationinvalidposmenu = undefined;
             continue;
         }
         
-        if ( isdefined( self.stub.related_parent.var_255658de ) )
+        if ( isdefined( self.stub.related_parent.mdl_roll ) )
         {
-            self.stub.related_parent.var_255658de thread function_f2d27140( self.stub.related_parent.var_255658de.registerraz_locationinvalidposmenu );
+            self.stub.related_parent.mdl_roll thread function_f2d27140( self.stub.related_parent.mdl_roll.registerraz_locationinvalidposmenu );
             continue;
         }
         
@@ -356,7 +356,7 @@ function function_a3a23636()
     {
         b_play_vo = 0;
         
-        foreach ( e_player in zm_vo::function_347f7d34() )
+        foreach ( e_player in zm_vo::get_valid_players() )
         {
             if ( !isdefined( e_player ) )
             {

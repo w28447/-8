@@ -58,7 +58,7 @@ function init()
     zm_sq::register( #"ww_quest", #"hash_396293edac63aa6f", #"hash_396293edac63aa6f", &function_dd053937, &function_4509873 );
     zm_sq::register( #"ww_quest", #"hash_776efec5f9b03a68", #"hash_776efec5f9b03a68", &function_a616131a, &function_605806f );
     zm_sq::register( #"ww_quest", #"hash_7e929133c03a391b", #"hash_7e929133c03a391b", &function_ac4e38bc, &function_8c32234c );
-    zm_sq::register( #"ww_quest", #"place_impervious_jar", #"place_impervious_jar", &function_ec26e009, &function_4877f171 );
+    zm_sq::register( #"ww_quest", #"place_impervious_jar", #"place_impervious_jar", &place_impervious_jar_setup, &place_impervious_jar_cleanup );
     zm_sq::register( #"ww_quest", #"hash_530b93342f7f39ae", #"hash_530b93342f7f39ae", &function_bbdde10e, &function_40f77b4a );
     zm_sq::register( #"ww_quest", #"hash_38a9bcd55c0565ca", #"hash_38a9bcd55c0565ca", &function_ab13e06, &function_868dcb6d );
     zm_sq::register( #"ww_quest", #"hash_2512f1281c5c7237", #"hash_2512f1281c5c7237", &function_869d271a, &function_79875787 );
@@ -521,12 +521,12 @@ function function_1c380f29( b_skipped, var_19e802fa )
 // Size: 0x72
 function function_69a2caa1( e_player )
 {
-    var_7b371ada = level.var_f49fd32c;
+    mdl_spile = level.var_f49fd32c;
     var_5168e40f = 0;
     
-    if ( isdefined( var_7b371ada ) && isdefined( e_player ) )
+    if ( isdefined( mdl_spile ) && isdefined( e_player ) )
     {
-        var_5168e40f = e_player zm_utility::is_player_looking_at( var_7b371ada.origin, 0.9, 0 );
+        var_5168e40f = e_player zm_utility::is_player_looking_at( mdl_spile.origin, 0.9, 0 );
     }
     
     return var_5168e40f;
@@ -846,8 +846,8 @@ function function_8c32234c( b_skipped, var_19e802fa )
     v_origin = s_spile.origin;
     v_angles = s_spile.angles;
     s_spile struct::delete();
-    var_7b371ada = util::spawn_model( #"p8_zm_gla_spile_serket_01", v_origin, v_angles );
-    var_7b371ada thread function_336ee69f();
+    mdl_spile = util::spawn_model( #"p8_zm_gla_spile_serket_01", v_origin, v_angles );
+    mdl_spile thread function_336ee69f();
     t_trigger = getent( "t_ww_quest_spile_damage_trigger", "targetname" );
     t_trigger delete();
     level zm_ui_inventory::function_7df6bb60( #"hash_46e7cf2b7aa7c22", 0 );
@@ -869,7 +869,7 @@ function function_336ee69f()
 // Params 1
 // Checksum 0x8134809d, Offset: 0x32d0
 // Size: 0x54
-function function_ec26e009( b_skipped )
+function place_impervious_jar_setup( b_skipped )
 {
     if ( b_skipped )
     {
@@ -884,7 +884,7 @@ function function_ec26e009( b_skipped )
 // Params 2
 // Checksum 0x5ae255e6, Offset: 0x3330
 // Size: 0x13c
-function function_4877f171( b_skipped, var_19e802fa )
+function place_impervious_jar_cleanup( b_skipped, var_19e802fa )
 {
     level flag::set( #"hash_30ca6a723fbb84e9" );
     s_jar = struct::get( "s_ww_quest_jar_under_tree" );

@@ -473,9 +473,9 @@ function init_reward()
     level.s_ww_quest_reward = struct::get( "ww_quest_reward" );
     level.s_ww_quest_reward.var_8387846a = getentarray( "ww_crate", "targetname" );
     array::run_all( level.s_ww_quest_reward.var_8387846a, &hide );
-    level.s_ww_quest_reward.var_6b49892a = getent( "ww_crate_hinge", "targetname" );
-    level.s_ww_quest_reward.var_c2b00281 = getent( "ww_reward_pickup", "targetname" );
-    level.s_ww_quest_reward.var_c2b00281 hide();
+    level.s_ww_quest_reward.e_crate_hinge = getent( "ww_crate_hinge", "targetname" );
+    level.s_ww_quest_reward.e_reward_pickup = getent( "ww_reward_pickup", "targetname" );
+    level.s_ww_quest_reward.e_reward_pickup hide();
     level.s_ww_quest_reward.var_5e34c88c = 0;
     level.s_ww_quest_reward.w_freezegun = getweapon( #"ww_freezegun_t8" );
 }
@@ -487,7 +487,7 @@ function init_reward()
 function function_68f68bb4()
 {
     array::run_all( self.var_8387846a, &show );
-    self.var_c2b00281 show();
+    self.e_reward_pickup show();
     exploder::exploder( "fx_project_skadi_cold_mist" );
     self zm_unitrigger::create( &function_2b049ee1, 64, &function_36664799, 1, 0 );
 }
@@ -558,7 +558,7 @@ function function_36664799()
                 e_player zm_weapons::weapon_give( w_freezegun, 1 );
             }
             
-            level.s_ww_quest_reward.var_c2b00281 delete();
+            level.s_ww_quest_reward.e_reward_pickup delete();
             e_player notify( #"hash_5a48f79b359c304" );
             e_player thread zm_vo::function_a2bd5a0c( #"vox_box_wonder" );
             zm_weapons::add_limited_weapon( w_freezegun.name, 2 );
@@ -567,8 +567,8 @@ function function_36664799()
             continue;
         }
         
-        level.s_ww_quest_reward.var_6b49892a playsound( #"hash_49e33105c3290371" );
-        level.s_ww_quest_reward.var_6b49892a rotatepitch( 110, 1 );
+        level.s_ww_quest_reward.e_crate_hinge playsound( #"hash_49e33105c3290371" );
+        level.s_ww_quest_reward.e_crate_hinge rotatepitch( 110, 1 );
         level.s_ww_quest_reward.var_5e34c88c = 1;
     }
 }
@@ -774,9 +774,9 @@ function function_69d0da21()
     level.s_code4 function_c9559668();
     level.s_code4 zm_unitrigger::create( &function_3db792dd, 64, &function_e0c5fd41, 1, 0 );
     level.s_code4 thread function_28e65bfe();
-    level.var_390ebc02 = getent( "sadako_mover", "targetname" );
-    level.var_a585b402 = getent( "sadako_screen", "targetname" );
-    level.var_a585b402 thread function_c056a0ad();
+    level.e_code4_mover = getent( "sadako_mover", "targetname" );
+    level.e_code4_screen = getent( "sadako_screen", "targetname" );
+    level.e_code4_screen thread function_c056a0ad();
 }
 
 // Namespace zm_office_ww_quest/zm_office_ww_quest
@@ -799,7 +799,7 @@ function function_e0c5fd41()
     waitresult = self waittill( #"trigger" );
     function_85bd10();
     waitframe( 1 );
-    level.var_390ebc02 function_90489a6();
+    level.e_code4_mover function_90489a6();
     zm_unitrigger::unregister_unitrigger( self.stub );
 }
 

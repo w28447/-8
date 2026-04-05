@@ -4422,7 +4422,7 @@ model,#c_t8_mp_spe_ruin_viewarms1_cst
 model,#c_t8_mp_spe_outrider_arms1_cst
 model,#c_t8_mp_spe_spectre_torso1_viewbody1
 aitype,#spawner_boct_zombie_wz
-character,#hash_228d6995eaf4053
+character,#c_t8_bo_3rd_male4
 character,#c_t8_bo_3rd_male1
 character,#c_t8_zmb_1stclass_male1
 character,#c_t8_mp_spe_hacker1

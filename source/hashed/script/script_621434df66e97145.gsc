@@ -128,7 +128,7 @@ function init_shower_trap()
     s_trap._trap_type = "acid";
     s_trap.e_volume = getent( s_trap.target, "targetname" );
     s_trap.e_volume._trap_type = "acid";
-    s_trap.var_28ea1870 = struct::get_array( s_trap.target3, "targetname" );
+    s_trap.a_s_trap_fx = struct::get_array( s_trap.target3, "targetname" );
     s_trap.a_s_buttons = struct::get_array( s_trap.target2, "targetname" );
     s_trap.a_e_lights = getentarray( s_trap.target4, "targetname" );
     s_trap.a_s_panels = struct::get_array( s_trap.target5, "targetname" );
@@ -306,20 +306,20 @@ function shower_trap_fx( var_9d9f02b4 )
 {
     if ( var_9d9f02b4 )
     {
-        foreach ( var_9e659454 in self.var_28ea1870 )
+        foreach ( s_trap_fx in self.a_s_trap_fx )
         {
-            var_9e659454.mdl_fx = util::spawn_model( "tag_origin", var_9e659454.origin, var_9e659454.angles );
-            var_9e659454.mdl_fx clientfield::set( "shower_trap_fx", 1 );
+            s_trap_fx.mdl_fx = util::spawn_model( "tag_origin", s_trap_fx.origin, s_trap_fx.angles );
+            s_trap_fx.mdl_fx clientfield::set( "shower_trap_fx", 1 );
         }
         
         return;
     }
     
-    foreach ( var_9e659454 in self.var_28ea1870 )
+    foreach ( s_trap_fx in self.a_s_trap_fx )
     {
-        var_9e659454.mdl_fx clientfield::set( "shower_trap_fx", 0 );
+        s_trap_fx.mdl_fx clientfield::set( "shower_trap_fx", 0 );
         waitframe( 1 );
-        var_9e659454.mdl_fx delete();
+        s_trap_fx.mdl_fx delete();
     }
 }
 
@@ -428,7 +428,7 @@ function init_fire_trap()
     s_trap._trap_type = "fire";
     s_trap.e_volume = getent( s_trap.target, "targetname" );
     s_trap.e_volume._trap_type = "fire";
-    s_trap.var_28ea1870 = struct::get_array( s_trap.target3, "targetname" );
+    s_trap.a_s_trap_fx = struct::get_array( s_trap.target3, "targetname" );
     s_trap.a_s_buttons = struct::get_array( s_trap.target2, "targetname" );
     s_trap.a_e_lights = getentarray( s_trap.target4, "targetname" );
     s_trap.a_s_panels = struct::get_array( s_trap.target5, "targetname" );
@@ -627,20 +627,20 @@ function fire_trap_fx( var_9d9f02b4 )
 {
     if ( var_9d9f02b4 )
     {
-        foreach ( var_9e659454 in self.var_28ea1870 )
+        foreach ( s_trap_fx in self.a_s_trap_fx )
         {
-            var_9e659454.mdl_fx = util::spawn_model( "tag_origin", var_9e659454.origin, var_9e659454.angles );
-            var_9e659454.mdl_fx clientfield::set( "fire_trap_fx", 1 );
+            s_trap_fx.mdl_fx = util::spawn_model( "tag_origin", s_trap_fx.origin, s_trap_fx.angles );
+            s_trap_fx.mdl_fx clientfield::set( "fire_trap_fx", 1 );
         }
         
         return;
     }
     
-    foreach ( var_9e659454 in self.var_28ea1870 )
+    foreach ( s_trap_fx in self.a_s_trap_fx )
     {
-        var_9e659454.mdl_fx clientfield::set( "fire_trap_fx", 0 );
+        s_trap_fx.mdl_fx clientfield::set( "fire_trap_fx", 0 );
         waitframe( 1 );
-        var_9e659454.mdl_fx delete();
+        s_trap_fx.mdl_fx delete();
     }
 }
 

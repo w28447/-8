@@ -116,8 +116,8 @@ function function_6b107487()
     level flag::set( #"hash_ed90925c898d1b0" );
     self thread scene::play( "Shot 1" );
     wait 1;
-    var_e690c4cd = self.scene_ents[ #"prop 1" ];
-    var_e690c4cd thread function_5ae9d41e();
+    mdl_elevator = self.scene_ents[ #"prop 1" ];
+    mdl_elevator thread function_5ae9d41e();
     level thread zm_escape_vo_hooks::function_c179111e();
     self thread scene::play( "Shot 2" );
     wait getanimlength( #"hash_591fb71679a08ed8" );
@@ -212,11 +212,11 @@ function function_1c5d2f2()
 function setup_docks_crane()
 {
     level flag::wait_till( "start_zombie_round_logic" );
-    var_217fca51 = struct::get( "docks_crane" );
-    scene::add_scene_func( var_217fca51.scriptbundlename, &function_32fbad12, "Shot 2" );
-    var_4e8f9a1c = var_217fca51.scene_ents[ #"skeleton_arm" ];
+    s_crane_scene = struct::get( "docks_crane" );
+    scene::add_scene_func( s_crane_scene.scriptbundlename, &function_32fbad12, "Shot 2" );
+    var_4e8f9a1c = s_crane_scene.scene_ents[ #"skeleton_arm" ];
     var_4e8f9a1c ghost();
-    var_965869c9 = var_217fca51.scene_ents[ #"crane" ];
+    var_965869c9 = s_crane_scene.scene_ents[ #"crane" ];
     var_965869c9 hidepart( "jnt_skeleton", "p8_fxanim_zm_esc_crane_mod", 1 );
     var_965869c9.targetname = "docks_crane_link";
     level.var_965869c9 = var_965869c9;
@@ -232,7 +232,7 @@ function setup_docks_crane()
 function crane_shock_box()
 {
     var_da5e0bea = getent( "crane_shock_box", "script_string" );
-    var_217fca51 = struct::get( "docks_crane" );
+    s_crane_scene = struct::get( "docks_crane" );
     
     while ( true )
     {
@@ -245,7 +245,7 @@ function crane_shock_box()
         
         level flag::set( #"hash_2444d210a1dd0dd" );
         wait 1.6;
-        var_217fca51 thread scene::play( "Shot 2" );
+        s_crane_scene thread scene::play( "Shot 2" );
         n_anim_length = getanimlength( #"hash_3fbc33140c093c0d" );
         n_anim_length -= 3.9;
         wait n_anim_length;
@@ -260,7 +260,7 @@ function crane_shock_box()
                     continue;
                 }
                 
-                e_player thread function_1c670b79( var_217fca51 );
+                e_player thread function_1c670b79( s_crane_scene );
             }
         }
         
@@ -269,7 +269,7 @@ function crane_shock_box()
         level flag::clear( #"hash_6f71660057a5952f" );
         var_da5e0bea.var_8dfa1155 = 1;
         var_da5e0bea notify( #"turn_off" );
-        var_217fca51 thread scene::play( "Shot 1" );
+        s_crane_scene thread scene::play( "Shot 1" );
         n_anim_length = getanimlength( #"hash_923a7a2394d952d" );
         wait n_anim_length;
         level flag::clear( #"hash_2444d210a1dd0dd" );
@@ -281,7 +281,7 @@ function crane_shock_box()
 // Params 1
 // Checksum 0xadac2911, Offset: 0x11f0
 // Size: 0x132
-function function_1c670b79( var_217fca51 )
+function function_1c670b79( s_crane_scene )
 {
     self endon( #"death", #"disconnect" );
     level endon( #"hash_2fd493c2a926e006", #"hash_66f358c0066d77d8" );
@@ -302,7 +302,7 @@ function function_1c670b79( var_217fca51 )
             
             if ( e_tomahawk istouching( var_47c6201 ) )
             {
-                level thread function_6ff33a91( var_217fca51 );
+                level thread function_6ff33a91( s_crane_scene );
             }
             
             waitframe( 1 );
@@ -314,15 +314,15 @@ function function_1c670b79( var_217fca51 )
 // Params 1
 // Checksum 0xaa53e3b2, Offset: 0x1330
 // Size: 0xf4
-function function_6ff33a91( var_217fca51 )
+function function_6ff33a91( s_crane_scene )
 {
     level notify( #"hash_4302325b2fe2d5d8" );
     level endon( #"hash_4302325b2fe2d5d8" );
     level flag::set( #"hash_66f358c0066d77d8" );
-    var_217fca51 thread scene::play( "Shot 3" );
+    s_crane_scene thread scene::play( "Shot 3" );
     n_anim_length = getanimlength( #"hash_2bf732b76b5383ba" );
     wait n_anim_length;
-    mdl_spoon = var_217fca51.scene_ents[ #"skeleton_arm" ];
+    mdl_spoon = s_crane_scene.scene_ents[ #"skeleton_arm" ];
     mdl_spoon hide();
     function_ac52c6f1();
 }
@@ -505,21 +505,21 @@ function function_32fbad12( a_ents )
     
     if ( isdefined( var_d147b93a ) )
     {
-        var_30e2502e = util::spawn_model( var_d147b93a, v_origin, v_angles );
+        mdl_random_item = util::spawn_model( var_d147b93a, v_origin, v_angles );
         
         if ( isdefined( var_3f2fddcb ) )
         {
-            level.var_ca0f81c1 = var_30e2502e;
-            var_30e2502e setscale( var_3f2fddcb );
+            level.var_ca0f81c1 = mdl_random_item;
+            mdl_random_item setscale( var_3f2fddcb );
             var_3f2fddcb = undefined;
         }
         
-        var_30e2502e linkto( var_965869c9, "tag_net_3" );
+        mdl_random_item linkto( var_965869c9, "tag_net_3" );
         level flag::wait_till_clear( #"hash_2444d210a1dd0dd" );
         
-        if ( isdefined( var_30e2502e ) )
+        if ( isdefined( mdl_random_item ) )
         {
-            var_30e2502e delete();
+            mdl_random_item delete();
         }
         
         level.var_ca0f81c1 = undefined;
@@ -564,10 +564,10 @@ function function_4afd150e( a_ents )
     
     if ( isdefined( var_d147b93a ) )
     {
-        var_30e2502e = util::spawn_model( var_d147b93a, v_origin, v_angles );
-        var_30e2502e linkto( var_965869c9, "tag_net_3" );
+        mdl_random_item = util::spawn_model( var_d147b93a, v_origin, v_angles );
+        mdl_random_item linkto( var_965869c9, "tag_net_3" );
         level flag::wait_till_clear( #"hash_2444d210a1dd0dd" );
-        var_30e2502e delete();
+        mdl_random_item delete();
     }
 }
 

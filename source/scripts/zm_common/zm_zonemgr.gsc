@@ -1741,7 +1741,7 @@ function private function_8a9003ae()
         var_2451ad27 = math::clamp( getdvarint( #"hash_4f0caa9b1c47489c", 0 ), 0, var_5380428d.size - 1 );
         
         /#
-            var_4b0b7fff = function_9e72a96( var_5380428d[ var_2451ad27 ] );
+            var_4b0b7fff = hashtostring( var_5380428d[ var_2451ad27 ] );
         #/
         
         foreach ( zone in level.zones )
@@ -1812,7 +1812,7 @@ function private function_8a9003ae()
 // Params 2
 // Checksum 0x56b59371, Offset: 0x54a8
 // Size: 0x19c
-function function_54fc7938( player_ent, var_5d02daa5 )
+function get_zone_path( player_ent, var_5d02daa5 )
 {
     assert( isplayer( player_ent ) );
     assert( isentity( var_5d02daa5 ) || ishash( var_5d02daa5 ) || isstring( var_5d02daa5 ) );

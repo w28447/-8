@@ -518,7 +518,7 @@ function function_944278fd( n_count, var_6448415b = 0, var_29a34c68 = 1000, var_
 // Params 6
 // Checksum 0xff2a798b, Offset: 0x1cd0
 // Size: 0x18e
-function function_db21e968( var_36778522, var_6448415b = 0, var_29a34c68 = 800, var_719f528b = 1600, var_c69d025b = 50, var_677d04ac = 1 )
+function function_db21e968( n_maxcount, var_6448415b = 0, var_29a34c68 = 800, var_719f528b = 1600, var_c69d025b = 50, var_677d04ac = 1 )
 {
     level endon( #"combattraining_logic_finished" );
     self notify( #"hash_3bd66153d302d5e3" );
@@ -530,9 +530,9 @@ function function_db21e968( var_36778522, var_6448415b = 0, var_29a34c68 = 800, 
     {
         self function_27bf93d( var_719f528b + 50, 1 );
         
-        if ( var_36778522 > level.a_ai_zombies.size )
+        if ( n_maxcount > level.a_ai_zombies.size )
         {
-            n_count = var_36778522 - level.a_ai_zombies.size;
+            n_count = n_maxcount - level.a_ai_zombies.size;
             self function_944278fd( n_count, var_6448415b, var_29a34c68, var_719f528b, var_c69d025b, 1 );
         }
         

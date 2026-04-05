@@ -1393,7 +1393,7 @@ function register_trap_damage( str_trap, func_player_damage, func_damage )
 // Params 3
 // Checksum 0xf26f7d7a, Offset: 0x3f70
 // Size: 0x8e
-function function_60d9e800( str_trap, var_75734507, var_53d35f37 )
+function register_trap_lights( str_trap, var_75734507, var_53d35f37 )
 {
     assert( isdefined( str_trap ), "<dev string:x38>" );
     _register_undefined_trap( str_trap );

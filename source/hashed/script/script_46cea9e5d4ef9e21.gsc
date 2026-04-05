@@ -166,10 +166,10 @@ function function_97f8efcd()
         }
         
         s_target = struct::get( s_tube.target );
-        var_68c9a993 = util::spawn_model( #"p8_zm_esc_nixie_tubes", s_target.origin, s_target.angles );
-        s_tube.mdl_tube.var_68c9a993 = var_68c9a993;
-        var_68c9a993 ghost();
-        var_68c9a993 notsolid();
+        mdl_fake_tube = util::spawn_model( #"p8_zm_esc_nixie_tubes", s_target.origin, s_target.angles );
+        s_tube.mdl_tube.mdl_fake_tube = mdl_fake_tube;
+        mdl_fake_tube ghost();
+        mdl_fake_tube notsolid();
     }
     
     wait 0.75;
@@ -224,9 +224,9 @@ function function_172e72fa()
             s_tube thread function_d6ae109c( 0 );
         }
         
-        if ( isdefined( s_tube.mdl_tube.var_68c9a993 ) )
+        if ( isdefined( s_tube.mdl_tube.mdl_fake_tube ) )
         {
-            s_tube.mdl_tube.var_68c9a993 delete();
+            s_tube.mdl_tube.mdl_fake_tube delete();
         }
     }
 }
@@ -360,9 +360,9 @@ function function_290d172d()
         {
             var_dc40fc85 = s_tube.mdl_tube sightconetrace( s_result.activator getweaponmuzzlepoint(), s_result.activator, s_result.activator getweaponforwarddir(), 15 );
             
-            if ( isdefined( s_tube.mdl_tube.var_68c9a993 ) )
+            if ( isdefined( s_tube.mdl_tube.mdl_fake_tube ) )
             {
-                var_6c48173b = s_tube.mdl_tube.var_68c9a993 sightconetrace( s_result.activator getweaponmuzzlepoint(), s_result.activator, s_result.activator getweaponforwarddir(), 20 );
+                var_6c48173b = s_tube.mdl_tube.mdl_fake_tube sightconetrace( s_result.activator getweaponmuzzlepoint(), s_result.activator, s_result.activator getweaponforwarddir(), 20 );
             }
             
             if ( isdefined( var_dc40fc85 ) && var_dc40fc85 || isdefined( var_6c48173b ) && var_6c48173b )

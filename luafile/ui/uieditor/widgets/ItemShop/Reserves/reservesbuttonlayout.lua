@@ -4,7 +4,7 @@ require( "x64:277d08dca360631" )
 require( "x64:3b50d7628cfd730" )
 require( "x64:27d8fc35e68e24e" )
 require( "x64:6ffd0cbc81f637b" )
-require( "x64:40d0ea25e914a88" )
+require( "ui/uieditor/widgets/itemshop/reserves/reservesofferscarousel" )
 require( "x64:35653ef4ad2299d" )
 
 CoD.ReservesButtonLayout = InheritFrom( LUI.UIElement )

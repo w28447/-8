@@ -87,7 +87,7 @@ function function_250232f4( localclientnum )
     scene::add_scene_func( #"p8_fxanim_core_frontend_zm_lab_bottle_fluids_bundle", &function_24222bb4, "skip_to_idle" );
     
     /#
-        level.var_49f26c00.var_557a03e6 = array( #"p8_zm_elixir_aftertaste_ui", #"p8_zm_elixir_alchemical_antithesis_ui", #"p8_zm_elixir_always_done_swiftly_ui", #"p8_zm_elixir_anti_entrapment_ui", #"p8_zm_elixir_anywhere_but_here_ui", #"p8_zm_elixir_arsenal_accelerator_ui", #"p8_zm_elixir_blood_debt_ui", #"hash_1a7c490a566d667", #"p8_zm_elixir_burned_out_ui", #"p8_zm_elixir_cache_back_ui", #"hash_58b3b4e50c5ad8b5", #"p8_zm_elixir_ctrl_z_ui", #"hash_5e08e862c962617a", #"p8_zm_elixir_dead_of_nuclear_winter_ui", #"p8_zm_elixir_equip_mint_ui", #"p8_zm_elixir_extra_credit_ui", #"p8_zm_elixir_free_fire_ui", #"p8_zm_elixir_head_scan_ui", #"p8_zm_elixir_immolation_liquidation_ui", #"p8_zm_elixir_in_plain_sight_ui", #"p8_zm_elixir_join_the_party_ui", #"p8_zm_elixir_kill_joy_ui", #"p8_zm_elixir_licensed_contractor_ui", #"p8_zm_elixir_newtonian_negation_ui", #"p8_zm_elixir_now_you_see_me_ui", #"p8_zm_elixir_nowhere_but_there_ui", #"p8_zm_elixir_phantom_reload_ui", #"p8_zm_elixir_point_drops_ui", #"p8_zm_elixir_pop_shocks_ui", #"p8_zm_elixir_power_keg_ui", #"hash_7b8c2e9a197a1cbb", #"p8_zm_elixir_shields_up_ui", #"p8_zm_elixir_stock_option_ui", #"p8_zm_elixir_sword_flay_ui", #"p8_zm_elixir_temporal_gift_ui", #"p8_zm_elixir_undead_man_walking_ui", #"p8_zm_elixir_wall_power_ui", #"p8_zm_elixir_wall_to_wall_savings_ui", #"p8_zm_elixir_whos_keeping_score_ui" );
+        level.var_49f26c00.a_str_bottles = array( #"p8_zm_elixir_aftertaste_ui", #"p8_zm_elixir_alchemical_antithesis_ui", #"p8_zm_elixir_always_done_swiftly_ui", #"p8_zm_elixir_anti_entrapment_ui", #"p8_zm_elixir_anywhere_but_here_ui", #"p8_zm_elixir_arsenal_accelerator_ui", #"p8_zm_elixir_blood_debt_ui", #"hash_1a7c490a566d667", #"p8_zm_elixir_burned_out_ui", #"p8_zm_elixir_cache_back_ui", #"hash_58b3b4e50c5ad8b5", #"p8_zm_elixir_ctrl_z_ui", #"hash_5e08e862c962617a", #"p8_zm_elixir_dead_of_nuclear_winter_ui", #"p8_zm_elixir_equip_mint_ui", #"p8_zm_elixir_extra_credit_ui", #"p8_zm_elixir_free_fire_ui", #"p8_zm_elixir_head_scan_ui", #"p8_zm_elixir_immolation_liquidation_ui", #"p8_zm_elixir_in_plain_sight_ui", #"p8_zm_elixir_join_the_party_ui", #"p8_zm_elixir_kill_joy_ui", #"p8_zm_elixir_licensed_contractor_ui", #"p8_zm_elixir_newtonian_negation_ui", #"p8_zm_elixir_now_you_see_me_ui", #"p8_zm_elixir_nowhere_but_there_ui", #"p8_zm_elixir_phantom_reload_ui", #"p8_zm_elixir_point_drops_ui", #"p8_zm_elixir_pop_shocks_ui", #"p8_zm_elixir_power_keg_ui", #"hash_7b8c2e9a197a1cbb", #"p8_zm_elixir_shields_up_ui", #"p8_zm_elixir_stock_option_ui", #"p8_zm_elixir_sword_flay_ui", #"p8_zm_elixir_temporal_gift_ui", #"p8_zm_elixir_undead_man_walking_ui", #"p8_zm_elixir_wall_power_ui", #"p8_zm_elixir_wall_to_wall_savings_ui", #"p8_zm_elixir_whos_keeping_score_ui" );
         level.var_49f26c00.a_str_talismans = array( #"p8_zm_talisman_box_guarantee_box_only", #"p8_zm_talisman_box_guarantee_lmg", #"hash_199da03ac6e12953", #"p8_zm_talisman_coagulant", #"p8_zm_talisman_extra_claymore", #"p8_zm_talisman_extra_frag", #"p8_zm_talisman_extra_mini_turret", #"p8_zm_talisman_extra_molotov", #"p8_zm_talisman_extra_semtex", #"p8_zm_talisman_hero_weapon_lvl3", #"p8_zm_talisman_impatient", #"p8_zm_talisman_pap_cost", #"p8_zm_talisman_perk_mod_single", #"hash_27dae06ec588c817", #"hash_27dae16ec588c9ca", #"hash_27dae26ec588cb7d", #"hash_27dadb6ec588bf98", #"p8_zm_talisman_perk_vapor_permanent_1", #"p8_zm_talisman_perk_vapor_permanent_2", #"p8_zm_talisman_perk_vapor_permanent_3", #"p8_zm_talisman_perk_vapor_permanent_4", #"hash_22e20f33489f2582", #"hash_22e20e33489f23cf", #"hash_22e20d33489f221c", #"hash_22e20c33489f2069", #"p8_zm_talisman_shield_durability_legendary", #"p8_zm_talisman_shield_durability_rare", #"p8_zm_talisman_shield_price", #"p8_zm_talisman_spec_weapon_duration", #"p8_zm_talisman_spec_weapon_lvl2", #"hash_14e3ae5974c15925", #"p8_zm_talisman_start_weapon_ar", #"p8_zm_talisman_start_weapon_lmg", #"p8_zm_talisman_start_weapon_monkey", #"p8_zm_talisman_start_weapon_smg" );
     #/
     
@@ -287,10 +287,10 @@ function function_250232f4( localclientnum )
                 var_37982bf6 = isdefined( level.var_49f26c00.var_887781fe ) ? level.var_49f26c00.var_887781fe : "<dev string:x482>";
                 var_544c750 = isdefined( level.var_49f26c00.var_84c77a9e ) ? level.var_49f26c00.var_84c77a9e : "<dev string:x482>";
                 str_talisman = isdefined( level.var_49f26c00.var_f6e518bb ) ? level.var_49f26c00.var_f6e518bb : "<dev string:x482>";
-                debug2dtext( ( 35, 150, 0 ), "<dev string:x485>" + function_9e72a96( var_28da8e7b ), ( 1, 1, 1 ), 1, ( 0, 0, 0 ), 1, 1, 1 );
-                debug2dtext( ( 35, 170, 0 ), "<dev string:x491>" + function_9e72a96( var_37982bf6 ), ( 1, 1, 1 ), 1, ( 0, 0, 0 ), 1, 1, 1 );
-                debug2dtext( ( 35, 190, 0 ), "<dev string:x49d>" + function_9e72a96( var_544c750 ), ( 1, 1, 1 ), 1, ( 0, 0, 0 ), 1, 1, 1 );
-                debug2dtext( ( 35, 210, 0 ), "<dev string:x4a9>" + function_9e72a96( str_talisman ), ( 1, 1, 1 ), 1, ( 0, 0, 0 ), 1, 1, 1 );
+                debug2dtext( ( 35, 150, 0 ), "<dev string:x485>" + hashtostring( var_28da8e7b ), ( 1, 1, 1 ), 1, ( 0, 0, 0 ), 1, 1, 1 );
+                debug2dtext( ( 35, 170, 0 ), "<dev string:x491>" + hashtostring( var_37982bf6 ), ( 1, 1, 1 ), 1, ( 0, 0, 0 ), 1, 1, 1 );
+                debug2dtext( ( 35, 190, 0 ), "<dev string:x49d>" + hashtostring( var_544c750 ), ( 1, 1, 1 ), 1, ( 0, 0, 0 ), 1, 1, 1 );
+                debug2dtext( ( 35, 210, 0 ), "<dev string:x4a9>" + hashtostring( str_talisman ), ( 1, 1, 1 ), 1, ( 0, 0, 0 ), 1, 1, 1 );
             }
             
             waitframe( 1 );
@@ -1541,9 +1541,9 @@ function function_365bef4( localclientnum, b_debug = 0 )
         /#
             if ( b_debug )
             {
-                level.var_49f26c00.var_6138b381 = array::random( array::exclude( level.var_49f26c00.var_557a03e6, level.var_49f26c00.var_6138b381 ) );
-                level.var_49f26c00.var_887781fe = array::random( array::exclude( level.var_49f26c00.var_557a03e6, array( level.var_49f26c00.var_6138b381 ) ) );
-                level.var_49f26c00.var_84c77a9e = array::random( array::exclude( level.var_49f26c00.var_557a03e6, array( level.var_49f26c00.var_6138b381, level.var_49f26c00.var_887781fe ) ) );
+                level.var_49f26c00.var_6138b381 = array::random( array::exclude( level.var_49f26c00.a_str_bottles, level.var_49f26c00.var_6138b381 ) );
+                level.var_49f26c00.var_887781fe = array::random( array::exclude( level.var_49f26c00.a_str_bottles, array( level.var_49f26c00.var_6138b381 ) ) );
+                level.var_49f26c00.var_84c77a9e = array::random( array::exclude( level.var_49f26c00.a_str_bottles, array( level.var_49f26c00.var_6138b381, level.var_49f26c00.var_887781fe ) ) );
                 level.var_49f26c00.var_f6e518bb = array::random( level.var_49f26c00.a_str_talismans );
                 
                 if ( math::cointoss() )
@@ -2146,7 +2146,7 @@ function function_24222bb4( localclientnum, a_ents )
     if ( self.scriptbundlename === #"p8_fxanim_core_frontend_zm_lab_bottles_bundle" )
     {
         level scene::stop( #"hash_4aaa115910b7d3ec" );
-        function_4df2b792( localclientnum, a_ents[ #"bottle1" ], a_ents[ #"bottle2" ], a_ents[ #"bottle3" ] );
+        setup_bottles( localclientnum, a_ents[ #"bottle1" ], a_ents[ #"bottle2" ], a_ents[ #"bottle3" ] );
         var_ed6f73d2 = function_6127ea37( localclientnum, 1 );
         var_df3fd74f = function_6127ea37( localclientnum, 2 );
         var_ed7a73c4 = function_6127ea37( localclientnum, 3 );
@@ -2176,7 +2176,7 @@ function function_24222bb4( localclientnum, a_ents )
 function function_de0d6843( localclientnum, a_ents )
 {
     self endon( #"hash_200ae59dc85ae6f" );
-    function_4df2b792( localclientnum, a_ents[ #"bottle1" ], a_ents[ #"bottle2" ], a_ents[ #"bottle3" ] );
+    setup_bottles( localclientnum, a_ents[ #"bottle1" ], a_ents[ #"bottle2" ], a_ents[ #"bottle3" ] );
     a_ents[ #"bottle1" ] thread fill_bottle( localclientnum, #"bottle1_dropped", #"bottle1_start_fill", 0.5, 1 );
     a_ents[ #"bottle2" ] thread fill_bottle( localclientnum, #"bottle2_dropped", #"bottle2_start_fill", 0.6, 2 );
     a_ents[ #"bottle3" ] thread fill_bottle( localclientnum, #"bottle3_dropped", #"bottle3_start_fill", 0.7, 3 );
@@ -2186,7 +2186,7 @@ function function_de0d6843( localclientnum, a_ents )
 // Params 4
 // Checksum 0xf8504865, Offset: 0xa358
 // Size: 0x60c
-function function_4df2b792( localclientnum, var_56448842, var_cf59fa73, var_bb17d1ef )
+function setup_bottles( localclientnum, var_56448842, var_cf59fa73, var_bb17d1ef )
 {
     function_6198ffc( 5, 0 );
     var_56448842.mdl_bottle = util::spawn_model( localclientnum, "tag_origin", var_56448842 gettagorigin( "bottle_01_link_jnt" ), var_56448842 gettagangles( "bottle_01_link_jnt" ) );
@@ -2523,7 +2523,7 @@ function function_a05c4ea5( str_color )
 // Params 2
 // Checksum 0xebb4c3e4, Offset: 0xb908
 // Size: 0x1cc
-function function_9b8f7969( var_803342ff, var_ee6bcd51 = #"hash_39fc63d10a03dd55" )
+function function_9b8f7969( var_803342ff, str_rob = #"hash_39fc63d10a03dd55" )
 {
     if ( !isdefined( self ) )
     {
@@ -2543,30 +2543,30 @@ function function_9b8f7969( var_803342ff, var_ee6bcd51 = #"hash_39fc63d10a03dd55
     
     if ( isdefined( self.var_40fbce61 ) )
     {
-        self stoprenderoverridebundle( var_ee6bcd51 );
+        self stoprenderoverridebundle( str_rob );
     }
     
-    self playrenderoverridebundle( var_ee6bcd51 );
-    self.var_40fbce61 = var_ee6bcd51;
+    self playrenderoverridebundle( str_rob );
+    self.var_40fbce61 = str_rob;
     
     if ( var_1467a3fb == -1 || var_1467a3fb == -1 )
     {
-        self function_78233d29( var_ee6bcd51, "", "Brightness", 0.1 );
+        self function_78233d29( str_rob, "", "Brightness", 0.1 );
     }
     else
     {
-        self function_78233d29( var_ee6bcd51, "", "Brightness", 1 );
+        self function_78233d29( str_rob, "", "Brightness", 1 );
     }
     
-    self function_78233d29( var_ee6bcd51, "", "Alpha", 1 );
-    self function_78233d29( var_ee6bcd51, "", "Tint", var_1467a3fb );
+    self function_78233d29( str_rob, "", "Alpha", 1 );
+    self function_78233d29( str_rob, "", "Tint", var_1467a3fb );
 }
 
 // Namespace zm_laboratory/frontend_zm_laboratory
 // Params 3
 // Checksum 0xb441de79, Offset: 0xbae0
 // Size: 0x398
-function function_7492cbc7( var_a82b834c = 0.5, var_ee6bcd51 = #"hash_6f36cd3b18334e2e", var_d2e7cd73 = 0 )
+function function_7492cbc7( var_a82b834c = 0.5, str_rob = #"hash_6f36cd3b18334e2e", var_d2e7cd73 = 0 )
 {
     self notify( #"hash_333aed9939c9fe17" );
     self endoncallback( &function_9330010b, #"hash_333aed9939c9fe17", #"death" );
@@ -2577,27 +2577,27 @@ function function_7492cbc7( var_a82b834c = 0.5, var_ee6bcd51 = #"hash_6f36cd3b18
         self stoprenderoverridebundle( self.var_40fbce61 );
     }
     
-    self playrenderoverridebundle( var_ee6bcd51 );
-    self.var_40fbce61 = var_ee6bcd51;
+    self playrenderoverridebundle( str_rob );
+    self.var_40fbce61 = str_rob;
     var_31876922 = array::random( level.var_49f26c00.var_66baa9e8 );
     var_ca93c4d5 = array::random( array::exclude( level.var_49f26c00.var_66baa9e8, var_31876922 ) );
     
     while ( true )
     {
-        self function_78233d29( var_ee6bcd51, "", "Alpha", 1 );
+        self function_78233d29( str_rob, "", "Alpha", 1 );
         
         if ( var_31876922 == -1 || var_ca93c4d5 == -1 )
         {
-            self function_78233d29( var_ee6bcd51, "", "Brightness", 1 );
+            self function_78233d29( str_rob, "", "Brightness", 1 );
         }
         else
         {
-            self function_78233d29( var_ee6bcd51, "", "Brightness", 1 );
+            self function_78233d29( str_rob, "", "Brightness", 1 );
         }
         
         if ( var_d2e7cd73 )
         {
-            self function_78233d29( var_ee6bcd51, "", "Tint", var_ca93c4d5 );
+            self function_78233d29( str_rob, "", "Tint", var_ca93c4d5 );
             wait var_a82b834c;
         }
         else
@@ -2612,13 +2612,13 @@ function function_7492cbc7( var_a82b834c = 0.5, var_ee6bcd51 = #"hash_6f36cd3b18
                 
                 if ( n_timer >= n_time_end )
                 {
-                    self function_78233d29( var_ee6bcd51, "", "Tint", var_ca93c4d5 );
+                    self function_78233d29( str_rob, "", "Tint", var_ca93c4d5 );
                     break;
                 }
                 else
                 {
                     var_ae74c01c = mapfloat( n_time_start, n_time_end, var_31876922, var_ca93c4d5, n_timer );
-                    self function_78233d29( var_ee6bcd51, "", "Tint", var_ae74c01c );
+                    self function_78233d29( str_rob, "", "Tint", var_ae74c01c );
                 }
                 
                 waitframe( 1 );

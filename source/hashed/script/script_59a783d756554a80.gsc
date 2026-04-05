@@ -19,7 +19,7 @@
 // Size: 0x4c
 function init()
 {
-    callback::on_spawned( &function_ea6a4006 );
+    callback::on_spawned( &setup_character_vo );
     
     if ( !zm_utility::is_standard() )
     {
@@ -31,7 +31,7 @@ function init()
 // Params 0
 // Checksum 0xa0d00f5a, Offset: 0x188
 // Size: 0x9c
-function function_ea6a4006()
+function setup_character_vo()
 {
     if ( !zm_trial::is_trial_mode() && !zm_utility::is_standard() )
     {
@@ -289,7 +289,7 @@ function function_d7b93e68( e_player, n_index )
 // Size: 0x42
 function function_d62aaf66()
 {
-    a_players = zm_vo::function_347f7d34();
+    a_players = zm_vo::get_valid_players();
     e_player = array::random( a_players );
     return e_player;
 }

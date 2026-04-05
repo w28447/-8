@@ -30,7 +30,7 @@ function init()
     if ( zm_utility::is_ee_enabled() )
     {
         init_records();
-        function_d6fec498();
+        init_reels();
         function_ecba80df();
         function_922ff46a();
         init_orbs();
@@ -121,7 +121,7 @@ function function_aef698f1()
 // Params 0
 // Checksum 0x8e371ca5, Offset: 0x798
 // Size: 0x1dc
-function function_d6fec498()
+function init_reels()
 {
     level.s_audiologs.s_reels = spawnstruct();
     level.s_audiologs.s_reels.n_collected = 0;

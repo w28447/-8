@@ -199,7 +199,7 @@ model,#hash_1a4d37bd06710226
 model,#c_t8_zmb_1stclass_male_body2_split
 model,#hash_1a721386209d0027
 model,#hash_1a8e66a7966f8086
-model,#hash_1aacbdd34c6d9abe
+model,#c_t8_zmb_dlc1_hero_scarlett_head1_igc
 model,#hash_1b19928f8d99c9e1
 model,#p8_fxp_fluid_droplet_blood_dark_half_hirez
 model,#c_t8_zmb_dlc1_zombie_1stclass_male_body1_split
@@ -403,7 +403,7 @@ model,#hash_33b901d9d2b450ef
 model,#hash_33b902d9d2b452a2
 model,#p8_zm_man_book_04_lrg
 model,#hash_33fc5a4ea9658835
-model,#hash_3416c55d74d956ea
+model,#c_t8_zmb_dlc1_alistair_head1_igc
 model,#hash_3459703c571f7b1d
 model,#hash_34641e2856606680
 model,#c_t8_zmb_blightfather_elbow1_ri
@@ -655,7 +655,7 @@ model,#hash_5138f8ae1fa0a249
 model,#p8_zm_man_main_hall_ceiling_window_panel_01_dmg_01
 model,#p8_zm_man_main_hall_ceiling_window_panel_01_dmg_02
 model,#p8_zm_man_main_hall_ceiling_window_panel_01_dmg_03
-model,#hash_51b7c0623b5a64b8
+model,#c_t8_zmb_dlc1_hero_scarlett_body1_igc
 model,#p8_zm_man_door_room_entrance_rt_full
 model,#p8_fxanim_zm_vapor_altar_ra_mod
 model,#p8_zm_man_door_room_hinge
@@ -785,7 +785,7 @@ model,#hash_616114fc5cdd0943
 model,#p7_fxp_debris_wood_splinter_02
 model,#p7_fxp_debris_wood_splinter_03
 model,#p7_fxp_debris_wood_splinter_01
-model,#hash_617060aa9cf1216a
+model,#c_t8_zmb_dlc1_alistair_body1
 model,#fx_pistol_shell
 model,#p8_zm_man_gate_metal_01_right
 model,#c_t8_zmb_dlc1_nosferatu_chunk_larm
@@ -1126,7 +1126,7 @@ character,#hash_2f2c0a0fc58e8443
 character,#c_t8_zmb_dlc1_zombie_3rdclass_female2_nohat
 character,#c_t8_zmb_catalyst_electric
 character,#c_t8_zmb_dlc1_zombie_2ndclass_female2_nohat
-character,#hash_340e0ee87d76f6e6
+character,#c_t8_mp_spe_ruin1
 character,#c_t8_zmb_dlc1_zombie_1stclass_male1_skin3
 character,#c_t8_zmb_dlc1_zombie_1stclass_male1_skin2
 character,#hash_3999e7c7720e4aa5

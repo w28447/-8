@@ -4287,7 +4287,7 @@ function enable_laser( b_enable, n_index )
                         wait 0.3;
                     }
                     
-                    dynamic_spawn_hud settext( "<dev string:x3d2>" + function_9e72a96( vehicleassets[ type_index ].name ) );
+                    dynamic_spawn_hud settext( "<dev string:x3d2>" + hashtostring( vehicleassets[ type_index ].name ) );
                     dynamic_spawn_dummy_model setmodel( vehicleassets[ type_index ].model );
                     dynamic_spawn_dummy_model show();
                     dynamic_spawn_dummy_model notsolid();

@@ -2031,12 +2031,12 @@ function function_61c3d59c( str_text, a_str_vo, var_5b811c5d, var_23301438 = 0 )
         {
             if ( isdefined( var_23301438 ) && var_23301438 )
             {
-                var_669c07e = #"oneline";
+                str_open = #"oneline";
                 var_6c5a96b8 = #"oneline";
             }
             else
             {
-                var_669c07e = #"defaultstate";
+                str_open = #"defaultstate";
                 var_6c5a96b8 = "DefaultState";
             }
             

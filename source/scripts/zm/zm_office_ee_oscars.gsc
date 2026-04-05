@@ -7,9 +7,9 @@
 #using scripts\zm_common\zm_unitrigger;
 #using scripts\zm_common\zm_vo;
 
-#namespace namespace_a35b0e2;
+#namespace zm_office_ee_oscars;
 
-// Namespace namespace_a35b0e2/namespace_a35b0e2
+// Namespace zm_office_ee_oscars/zm_office_ee_oscars
 // Params 0, eflags: 0x2
 // Checksum 0x1ec98dac, Offset: 0x1e0
 // Size: 0x3c
@@ -18,7 +18,7 @@ function autoexec __init__system__()
     system::register( #"hash_4fac8791c22b4bd7", &init, undefined, undefined );
 }
 
-// Namespace namespace_a35b0e2/namespace_a35b0e2
+// Namespace zm_office_ee_oscars/zm_office_ee_oscars
 // Params 0
 // Checksum 0x8ceda820, Offset: 0x228
 // Size: 0x31c
@@ -27,12 +27,12 @@ function init()
     level.var_143be9f3 = 0;
     level.var_4850c7c6 = 0;
     level.var_db90b274 = 2;
-    level.var_cf5d426a = array( "oscar_prelim_1", "oscar_prelim_2", "oscar_prelim_3", "oscar_prelim_4", "oscar_prelim_5" );
-    level.var_41770f71 = [];
+    level.a_str_oscar_prelim = array( "oscar_prelim_1", "oscar_prelim_2", "oscar_prelim_3", "oscar_prelim_4", "oscar_prelim_5" );
+    level.a_e_oscar_prelim = [];
     
-    foreach ( var_4f61dc22 in level.var_cf5d426a )
+    foreach ( str_oscar_prelim in level.a_str_oscar_prelim )
     {
-        function_7a7d15c8( var_4f61dc22 );
+        function_7a7d15c8( str_oscar_prelim );
     }
     
     level.e_oscar_left_0 = getent( "jfk_room_oscar_left_0", "targetname" );
@@ -43,17 +43,17 @@ function init()
     level.e_oscar_right_1 hide();
     level.e_oscar_right_0.angles += ( 20, 0, 0 );
     level flag::init( #"hash_7b1fd4fc459e497c" );
-    zm_sq::register( #"ee_oscars", #"step_1", #"hash_5873576264199a27", &function_4ac6cf37, &function_cb27a665 );
+    zm_sq::register( #"ee_oscars", #"step_1", #"ee_oscars_step1", &ee_oscars_step1_setup, &ee_oscars_step1_cleanup );
     zm_sq::start( #"ee_oscars" );
-    zm_sq::register( #"ee_oscars", #"step_2", #"hash_5873586264199bda", &function_955fffb1, &function_fabb1fba );
+    zm_sq::register( #"ee_oscars", #"step_2", #"ee_oscars_step2", &ee_oscars_step2_setup, &ee_oscars_step2_cleanup );
     zm_sq::start( #"ee_oscars" );
 }
 
-// Namespace namespace_a35b0e2/namespace_a35b0e2
+// Namespace zm_office_ee_oscars/zm_office_ee_oscars
 // Params 1
 // Checksum 0x776c0240, Offset: 0x550
 // Size: 0x8c
-function function_4ac6cf37( var_5ea5c94d )
+function ee_oscars_step1_setup( var_5ea5c94d )
 {
     if ( !var_5ea5c94d )
     {
@@ -72,47 +72,47 @@ function function_4ac6cf37( var_5ea5c94d )
     }
 }
 
-// Namespace namespace_a35b0e2/namespace_a35b0e2
+// Namespace zm_office_ee_oscars/zm_office_ee_oscars
 // Params 2
 // Checksum 0x27799125, Offset: 0x5e8
 // Size: 0xa0
-function function_cb27a665( var_5ea5c94d, ended_early )
+function ee_oscars_step1_cleanup( var_5ea5c94d, ended_early )
 {
     if ( var_5ea5c94d || ended_early )
     {
-        foreach ( var_637c224f in level.var_41770f71 )
+        foreach ( e_oscar_prelim in level.a_e_oscar_prelim )
         {
-            var_637c224f.e_trigger delete();
+            e_oscar_prelim.e_trigger delete();
         }
     }
 }
 
-// Namespace namespace_a35b0e2/namespace_a35b0e2
+// Namespace zm_office_ee_oscars/zm_office_ee_oscars
 // Params 1
 // Checksum 0xda25e29c, Offset: 0x690
 // Size: 0xb6
-function function_7a7d15c8( var_4f61dc22 )
+function function_7a7d15c8( str_oscar_prelim )
 {
     level.var_143be9f3++;
-    var_637c224f = getent( var_4f61dc22, "targetname" );
-    array::add( level.var_41770f71, var_637c224f );
-    var_637c224f.angles += ( 20, 0, 0 );
-    var_637c224f.e_trigger = getent( var_4f61dc22 + "_trigger", "targetname" );
+    e_oscar_prelim = getent( str_oscar_prelim, "targetname" );
+    array::add( level.a_e_oscar_prelim, e_oscar_prelim );
+    e_oscar_prelim.angles += ( 20, 0, 0 );
+    e_oscar_prelim.e_trigger = getent( str_oscar_prelim + "_trigger", "targetname" );
 }
 
-// Namespace namespace_a35b0e2/namespace_a35b0e2
+// Namespace zm_office_ee_oscars/zm_office_ee_oscars
 // Params 0
 // Checksum 0xab5f13d2, Offset: 0x750
 // Size: 0x80
 function function_2d023c13()
 {
-    foreach ( var_637c224f in level.var_41770f71 )
+    foreach ( e_oscar_prelim in level.a_e_oscar_prelim )
     {
-        var_637c224f.e_trigger thread function_d10bef80();
+        e_oscar_prelim.e_trigger thread function_d10bef80();
     }
 }
 
-// Namespace namespace_a35b0e2/namespace_a35b0e2
+// Namespace zm_office_ee_oscars/zm_office_ee_oscars
 // Params 0
 // Checksum 0x2cb058d7, Offset: 0x7d8
 // Size: 0xfc
@@ -127,19 +127,19 @@ function function_d10bef80()
         
         if ( waitresult.weapon == getweapon( #"bowie_knife_story_1" ) )
         {
-            var_637c224f = getent( self.target, "targetname" );
-            var_637c224f rotateto( var_637c224f.angles - ( 20, 0, 0 ), 0.15 );
+            e_oscar_prelim = getent( self.target, "targetname" );
+            e_oscar_prelim rotateto( e_oscar_prelim.angles - ( 20, 0, 0 ), 0.15 );
             var_b45fe0b3 = 1;
             level.var_4850c7c6++;
         }
     }
 }
 
-// Namespace namespace_a35b0e2/namespace_a35b0e2
+// Namespace zm_office_ee_oscars/zm_office_ee_oscars
 // Params 1
 // Checksum 0xcc5ae09, Offset: 0x8e0
 // Size: 0x12c
-function function_955fffb1( var_5ea5c94d )
+function ee_oscars_step2_setup( var_5ea5c94d )
 {
     if ( !var_5ea5c94d )
     {
@@ -153,11 +153,11 @@ function function_955fffb1( var_5ea5c94d )
     }
 }
 
-// Namespace namespace_a35b0e2/namespace_a35b0e2
+// Namespace zm_office_ee_oscars/zm_office_ee_oscars
 // Params 2
 // Checksum 0x1639e575, Offset: 0xa18
 // Size: 0xe4
-function function_fabb1fba( var_5ea5c94d, ended_early )
+function ee_oscars_step2_cleanup( var_5ea5c94d, ended_early )
 {
     if ( var_5ea5c94d || ended_early )
     {
@@ -179,7 +179,7 @@ function function_fabb1fba( var_5ea5c94d, ended_early )
     }
 }
 
-// Namespace namespace_a35b0e2/namespace_a35b0e2
+// Namespace zm_office_ee_oscars/zm_office_ee_oscars
 // Params 0
 // Checksum 0x462cbcef, Offset: 0xb08
 // Size: 0x9c
@@ -196,7 +196,7 @@ function function_715c9476()
     level thread function_bd81f4e2( waitresult.activator );
 }
 
-// Namespace namespace_a35b0e2/namespace_a35b0e2
+// Namespace zm_office_ee_oscars/zm_office_ee_oscars
 // Params 0
 // Checksum 0x48f1bbb4, Offset: 0xbb0
 // Size: 0xfc
@@ -215,7 +215,7 @@ function function_63f29ee9()
     level thread function_bd81f4e2( waitresult.activator );
 }
 
-// Namespace namespace_a35b0e2/namespace_a35b0e2
+// Namespace zm_office_ee_oscars/zm_office_ee_oscars
 // Params 1
 // Checksum 0xf385ab46, Offset: 0xcb8
 // Size: 0x154

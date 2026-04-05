@@ -47,7 +47,7 @@ function init()
     zm_sq_modules::function_d8383812( #"soul_capture_forest", 8000, #"kp_forest", &is_soul_capture_forest, &function_b570f926, 1 );
     init_flags();
     register_steps();
-    level thread function_c6e2a4fd();
+    level thread init_components();
     level thread function_6eb39fe4();
     level thread function_b8cc9d7e();
 }
@@ -77,21 +77,21 @@ function function_b8cc9d7e()
 {
     mdl_knight_cem = getent( "knight_model_cemetery", "targetname" );
     mdl_knight_cem hidepart( "tag_stone_01", "p8_zm_man_statue_kisa_stone_01", 1 );
-    var_4703a54b = getent( "knight_model_main_hall", "targetname" );
-    var_4703a54b hidepart( "tag_stone_02", "p8_zm_man_statue_kisa_stone_02", 1 );
-    var_5528f605 = getent( "knight_model_greenhouse", "targetname" );
-    var_5528f605 hidepart( "tag_stone_03", "p8_zm_man_statue_kisa_stone_03", 1 );
+    mdl_knight_mh = getent( "knight_model_main_hall", "targetname" );
+    mdl_knight_mh hidepart( "tag_stone_02", "p8_zm_man_statue_kisa_stone_02", 1 );
+    mdl_knight_gh = getent( "knight_model_greenhouse", "targetname" );
+    mdl_knight_gh hidepart( "tag_stone_03", "p8_zm_man_statue_kisa_stone_03", 1 );
 }
 
 // Namespace mansion_triad/zm_mansion_triad
 // Params 0
 // Checksum 0x973b34f0, Offset: 0xfe8
 // Size: 0x1d8
-function function_c6e2a4fd()
+function init_components()
 {
     level flag::wait_till( "all_players_spawned" );
     level thread forest_entrance();
-    level thread zmb_ee_key_pickupmemberdeath();
+    level thread function_61047642();
     mdl_stone = getent( "stone_forest", "targetname" );
     mdl_stone ghost();
     var_5757942c = getentarray( "kp_mark", "targetname" );
@@ -2050,7 +2050,7 @@ function function_de68c9b7( s_params )
 function function_5ffc956( v_zombie_origin )
 {
     level endon( #"end_game", #"hash_6402d013069eb3a" );
-    e_closest_player = arraygetclosest( v_zombie_origin, zm_vo::function_347f7d34() );
+    e_closest_player = arraygetclosest( v_zombie_origin, zm_vo::get_valid_players() );
     
     if ( isalive( e_closest_player ) && e_closest_player util::is_player_looking_at( v_zombie_origin ) && distance2dsquared( v_zombie_origin, e_closest_player.origin ) < 147456 )
     {
@@ -2198,7 +2198,7 @@ function forest_assault()
     callback::on_ai_killed( &function_de68c9b7 );
     wait 2;
     level thread mansion_util::function_bb613572( function_d11cc23b(), #"hash_6402d013069eb3a" );
-    level thread _angles_cp_medal_no_deaths();
+    level thread function_d217c492();
     level flag::wait_till( "forest_final" );
     function_b5ab717();
     level thread function_3d151222( #"forest", #"defend_comp" );
@@ -2249,7 +2249,7 @@ function private function_3d151222( var_f49ead21, var_5e1197bc )
 // Params 0
 // Checksum 0x5ef1d6b8, Offset: 0x88d8
 // Size: 0x3b8
-function _angles_cp_medal_no_deaths()
+function function_d217c492()
 {
     function_f0a7d11b();
     wait 10;
@@ -2370,7 +2370,7 @@ function function_9b73d9d3( params )
 // Params 0
 // Checksum 0xe5f62e09, Offset: 0x8df0
 // Size: 0x8e
-function zmb_ee_key_pickupmemberdeath()
+function function_61047642()
 {
     for ( var_1363654e = 1; var_1363654e < 4 ; var_1363654e++ )
     {
@@ -2453,7 +2453,7 @@ function trigger_forest_entrance()
         wait 0.1;
     }
     
-    player = array::random( zm_vo::function_347f7d34() );
+    player = array::random( zm_vo::get_valid_players() );
     
     if ( isdefined( player ) )
     {

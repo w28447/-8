@@ -1300,12 +1300,12 @@ function function_85903699()
     s_goto = struct::get( "s_assault_pack_goto_" + self.n_index );
     self.s_pod = struct::get( s_goto.target );
     self.s_cover = struct::get( self.s_pod.target );
-    self.var_df772c06 = struct::get( "face_second_battle" );
-    self.s_lookat = self.var_df772c06;
+    self.s_face = struct::get( "face_second_battle" );
+    self.s_lookat = self.s_face;
     wait self.n_wait;
     self thread ct_utils::function_5b59f3b7( s_goto.origin, s_goto.angles, 16 );
     self waittill( #"goal" );
-    self function_89cd182c( self.var_df772c06 );
+    self function_89cd182c( self.s_face );
     
     if ( s_goto.script_noteworthy === "crouch" )
     {
@@ -1352,21 +1352,21 @@ function function_68ac03e( s_loc )
     
     if ( self.n_index === 1 || self.n_index === 2 )
     {
-        var_df772c06 = struct::get( "s_bathhouse_face_1" );
+        s_face = struct::get( "s_bathhouse_face_1" );
     }
     else
     {
-        var_df772c06 = struct::get( "s_bathhouse_face_2" );
+        s_face = struct::get( "s_bathhouse_face_2" );
     }
     
-    self function_89cd182c( var_df772c06 );
+    self function_89cd182c( s_face );
     level flag::wait_till( "flash_bang_done" );
     wait randomfloatrange( 0.8, 1.5 );
     self bot_stance::stand();
     self thread ct_utils::function_5b59f3b7( s_cover.origin, s_cover.angles, 16 );
     self waittill( #"goal" );
     wait 0.3;
-    self function_89cd182c( var_df772c06 );
+    self function_89cd182c( s_face );
 }
 
 // Namespace ct_crash_tutorial/ct_crash_tutorial
@@ -1403,7 +1403,7 @@ function function_d43893a9( s_loc )
 // Params 1
 // Checksum 0x3d4336e4, Offset: 0x62b0
 // Size: 0xfc
-function function_bd8a36e( var_df772c06 )
+function function_bd8a36e( s_face )
 {
     self endon( #"death" );
     self thread ct_utils::function_5b59f3b7( self.s_cover.origin, self.s_cover.angles, 16 );
@@ -1413,7 +1413,7 @@ function function_bd8a36e( var_df772c06 )
         waitframe( 1 );
     }
     
-    self function_89cd182c( var_df772c06 );
+    self function_89cd182c( s_face );
     wait 2;
     
     if ( self.s_cover.script_noteworthy === "crouch" )
@@ -1421,7 +1421,7 @@ function function_bd8a36e( var_df772c06 )
         self bot_stance::crouch();
     }
     
-    self function_89cd182c( var_df772c06 );
+    self function_89cd182c( s_face );
 }
 
 // Namespace ct_crash_tutorial/ct_crash_tutorial
@@ -1462,7 +1462,7 @@ function function_da2f82f1( n_radius )
 function function_b03052f5()
 {
     self endon( #"death" );
-    self function_89cd182c( self.var_df772c06 );
+    self function_89cd182c( self.s_face );
     wait 1.5;
     self bot_action::reset();
     wait 2;
@@ -1494,7 +1494,7 @@ function function_13b1605()
             a_bots[ i ] function_da2f82f1( 32 );
         }
         
-        a_bots[ i ] thread function_bd8a36e( a_bots[ i ].var_df772c06 );
+        a_bots[ i ] thread function_bd8a36e( a_bots[ i ].s_face );
     }
     
     wait 2;
@@ -2195,16 +2195,16 @@ function function_44b78b73()
     self takeweapon( getweapon( #"ar_accurate_t8" ) );
     self giveweapon( getweapon( #"ar_fastfire_t8", "elo", "fastreload", "fastreload2", "quickdraw", "quickdraw2" ) );
     self giveweapon( getweapon( #"pistol_standard_t8" ) );
-    var_3ba4bf7d = self getweaponslistprimaries();
+    a_w_primaries = self getweaponslistprimaries();
     
-    for ( i = 0; i < var_3ba4bf7d.size ; i++ )
+    for ( i = 0; i < a_w_primaries.size ; i++ )
     {
-        self giveweapon( var_3ba4bf7d[ i ] );
-        self givemaxammo( var_3ba4bf7d[ i ] );
+        self giveweapon( a_w_primaries[ i ] );
+        self givemaxammo( a_w_primaries[ i ] );
     }
     
-    self switchtoweapon( var_3ba4bf7d[ 0 ] );
-    self setspawnweapon( var_3ba4bf7d[ 0 ] );
+    self switchtoweapon( a_w_primaries[ 0 ] );
+    self setspawnweapon( a_w_primaries[ 0 ] );
 }
 
 // Namespace ct_crash_tutorial/ct_crash_tutorial
@@ -2581,9 +2581,9 @@ function function_fa5d9e36()
     
     while ( true )
     {
-        var_3ba4bf7d = self getweaponslistprimaries();
+        a_w_primaries = self getweaponslistprimaries();
         
-        foreach ( w_primary in var_3ba4bf7d )
+        foreach ( w_primary in a_w_primaries )
         {
             if ( self getammocount( w_primary ) < 10 )
             {

@@ -226,7 +226,7 @@ function event_handler[level_init] main( eventstruct )
         level.chest_index = array::find( level.chests, var_2d50e3c1 );
     }
     
-    zm_crafting::function_d1f16587( #"zblueprint_shield_zhield_zpear", &function_4479ec95 );
+    zm_crafting::function_d1f16587( #"zblueprint_shield_zhield_zpear", &shield_crafted );
     
     if ( !zm_custom::function_901b751c( #"zmequipmentisenabled" ) )
     {
@@ -516,7 +516,7 @@ function function_3f6e4b5f()
 // Params 1
 // Checksum 0x7bf57a85, Offset: 0x26a8
 // Size: 0x1a
-function function_4479ec95( e_player )
+function shield_crafted( e_player )
 {
     level.var_f9e5f55a = 1;
 }
@@ -2780,13 +2780,13 @@ function function_fbf0e632()
         
         foreach ( i, e_player in getplayers() )
         {
-            var_3ba4bf7d = e_player getweaponslistprimaries();
+            a_w_primaries = e_player getweaponslistprimaries();
             
-            if ( var_3ba4bf7d.size > 1 )
+            if ( a_w_primaries.size > 1 )
             {
                 w_current = e_player getcurrentweapon();
                 
-                if ( isdefined( w_current ) && isinarray( var_3ba4bf7d, w_current ) )
+                if ( isdefined( w_current ) && isinarray( a_w_primaries, w_current ) )
                 {
                     e_player takeweapon( w_current );
                 }

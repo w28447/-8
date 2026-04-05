@@ -1866,19 +1866,19 @@ function function_5b1e9ed4( modulename, bookmarkname, time, var_81538b15, var_f2
     
     if ( !isdefined( var_900768bc ) )
     {
-        println( function_9e72a96( modulename ) + "<dev string:x6b2>" + bookmarkname + "<dev string:x6cf>" + inflictorenttype + "<dev string:x6de>" + var_6f810a5 + "<dev string:x6f4>" );
+        println( hashtostring( modulename ) + "<dev string:x6b2>" + bookmarkname + "<dev string:x6cf>" + inflictorenttype + "<dev string:x6de>" + var_6f810a5 + "<dev string:x6f4>" );
         return undefined;
     }
     
     if ( var_7491f0eb && isdefined( var_81538b15 ) && isplayer( var_81538b15 ) && !isalive( var_81538b15 ) )
     {
-        println( function_9e72a96( modulename ) + "<dev string:x6b2>" + bookmarkname + "<dev string:x6cf>" + inflictorenttype + "<dev string:x6de>" + var_6f810a5 + "<dev string:x720>" + var_81538b15 getentitynumber() + "<dev string:x731>" );
+        println( hashtostring( modulename ) + "<dev string:x6b2>" + bookmarkname + "<dev string:x6cf>" + inflictorenttype + "<dev string:x6de>" + var_6f810a5 + "<dev string:x720>" + var_81538b15 getentitynumber() + "<dev string:x731>" );
         return undefined;
     }
     
     if ( isdefined( level.infinalkillcam ) && level.infinalkillcam )
     {
-        println( function_9e72a96( modulename ) + "<dev string:x6b2>" + bookmarkname + "<dev string:x6cf>" + inflictorenttype + "<dev string:x6de>" + var_6f810a5 + "<dev string:x743>" );
+        println( hashtostring( modulename ) + "<dev string:x6b2>" + bookmarkname + "<dev string:x6cf>" + inflictorenttype + "<dev string:x6de>" + var_6f810a5 + "<dev string:x743>" );
         return undefined;
     }
     
@@ -2143,7 +2143,7 @@ function function_66d09fea( bookmarkname, var_81538b15, var_f28fb772, einflictor
     
     if ( game.var_691bbcd2 )
     {
-        println( function_9e72a96( game.var_8ea529d1 ) + "<dev string:x87e>" );
+        println( hashtostring( game.var_8ea529d1 ) + "<dev string:x87e>" );
         return;
     }
     

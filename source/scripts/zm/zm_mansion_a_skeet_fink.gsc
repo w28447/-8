@@ -68,7 +68,7 @@ function init()
     zm_sq_modules::function_d8383812( "ee_asf_altar", 8000, #"a_skeet_fink_charge", &function_123eb361, &function_9bb74431, 1 );
     register_steps();
     level.w_stake_knife = getweapon( #"stake_knife" );
-    level thread function_93bd3e32();
+    level thread start_a_skeet_fink();
 }
 
 // Namespace mansion_a_skeet_fink/zm_mansion_a_skeet_fink
@@ -77,22 +77,22 @@ function init()
 // Size: 0x184
 function register_steps()
 {
-    zm_sq::register( #"zm_mansion_a_skeet_fink", #"step_1", #"a_skeet_fink_step_1", &function_ff75fde6, &function_ff3b1efd );
-    zm_sq::register( #"zm_mansion_a_skeet_fink", #"step_2", #"a_skeet_fink_step_2", &function_39e0636, &function_4fccc01f );
-    zm_sq::register( #"zm_mansion_a_skeet_fink", #"step_3", #"a_skeet_fink_step_3", &function_15c82a8a, &function_62856590 );
-    zm_sq::register( #"zm_mansion_a_skeet_fink", #"step_4", #"a_skeet_fink_step_4", &function_2879cfed, &function_354f0b24 );
+    zm_sq::register( #"zm_mansion_a_skeet_fink", #"step_1", #"a_skeet_fink_step_1", &a_skeet_fink_init_step_1, &a_skeet_fink_cleanup_step_1 );
+    zm_sq::register( #"zm_mansion_a_skeet_fink", #"step_2", #"a_skeet_fink_step_2", &a_skeet_fink_init_step_2, &a_skeet_fink_cleanup_step_2 );
+    zm_sq::register( #"zm_mansion_a_skeet_fink", #"step_3", #"a_skeet_fink_step_3", &a_skeet_fink_init_step_3, &a_skeet_fink_cleanup_step_3 );
+    zm_sq::register( #"zm_mansion_a_skeet_fink", #"step_4", #"a_skeet_fink_step_4", &a_skeet_fink_init_step_4, &a_skeet_fink_cleanup_step_4 );
 }
 
 // Namespace mansion_a_skeet_fink/zm_mansion_a_skeet_fink
 // Params 0
 // Checksum 0x251bde7d, Offset: 0x970
 // Size: 0x18c
-function function_93bd3e32()
+function start_a_skeet_fink()
 {
     level flagsys::wait_till( "start_zombie_round_logic" );
     clientfield::set( "" + #"hash_3b4f11e825b1f62b", 1 );
     
-    foreach ( s_unitrigger_stub in level.var_4fe2f84d[ #"zblueprint_mansion_a_skeet_fink" ] )
+    foreach ( s_unitrigger_stub in level.a_t_crafting[ #"zblueprint_mansion_a_skeet_fink" ] )
     {
         s_unitrigger_stub.locked = 1;
     }
@@ -149,7 +149,7 @@ function function_f2971bfd( b_respawn = 0 )
 // Params 1
 // Checksum 0x2cbc6ee5, Offset: 0xd18
 // Size: 0x3f4
-function function_ff75fde6( var_a276c861 )
+function a_skeet_fink_init_step_1( var_a276c861 )
 {
     zm_melee_weapon::init( #"stake_knife", #"stake_knife_flourish", undefined, "", undefined, "bowie", undefined );
     zm_loadout::register_melee_weapon_for_level( #"stake_knife" );
@@ -203,7 +203,7 @@ function function_ff75fde6( var_a276c861 )
 // Params 2
 // Checksum 0x43c30968, Offset: 0x1118
 // Size: 0x24
-function function_ff3b1efd( var_a276c861, ended_early )
+function a_skeet_fink_cleanup_step_1( var_a276c861, ended_early )
 {
     function_834e6f7();
 }
@@ -301,7 +301,7 @@ function function_834e6f7()
 // Params 1
 // Checksum 0xdd889a0, Offset: 0x15f8
 // Size: 0x424
-function function_39e0636( var_a276c861 )
+function a_skeet_fink_init_step_2( var_a276c861 )
 {
     level flag::init( #"hash_6df692c4073d421b" );
     level clientfield::set( "" + #"hash_155407a9010f2b23", 1 );
@@ -349,7 +349,7 @@ function function_39e0636( var_a276c861 )
 // Params 2
 // Checksum 0xf3abea17, Offset: 0x1a28
 // Size: 0x1d4
-function function_4fccc01f( var_a276c861, ended_early )
+function a_skeet_fink_cleanup_step_2( var_a276c861, ended_early )
 {
     level clientfield::set( "" + #"hash_155407a9010f2b23", 0 );
     a_s_damage = struct::get_array( #"a_skeet_fink_damage", "targetname" );
@@ -480,7 +480,7 @@ function function_c4542a0c( t_trig )
 // Params 1
 // Checksum 0x85cc1cd, Offset: 0x20a0
 // Size: 0x39c
-function function_15c82a8a( var_a276c861 )
+function a_skeet_fink_init_step_3( var_a276c861 )
 {
     if ( level flag::get( #"hash_6df692c4073d421b" ) )
     {
@@ -562,7 +562,7 @@ function private function_eb6f728f()
 // Params 2
 // Checksum 0xade1d65f, Offset: 0x2580
 // Size: 0xac
-function function_62856590( var_a276c861, ended_early )
+function a_skeet_fink_cleanup_step_3( var_a276c861, ended_early )
 {
     var_4b9c76d7 = struct::get( "a_skeet_fink_charge", "targetname" );
     
@@ -641,18 +641,18 @@ function function_ed59d8e4()
 // Params 1
 // Checksum 0x8759e2a5, Offset: 0x28d8
 // Size: 0x12c
-function function_2879cfed( var_a276c861 )
+function a_skeet_fink_init_step_4( var_a276c861 )
 {
     if ( level flag::get( #"hash_6df692c4073d421b" ) )
     {
-        foreach ( s_unitrigger_stub in level.var_4fe2f84d[ #"zblueprint_mansion_a_skeet_fink" ] )
+        foreach ( s_unitrigger_stub in level.a_t_crafting[ #"zblueprint_mansion_a_skeet_fink" ] )
         {
             s_unitrigger_stub.locked = undefined;
         }
         
         zm::function_84d343d( #"stake_knife", &zm_mansion::function_78f60fd5 );
         zm::register_vehicle_damage_callback( &zm_mansion::function_293e7d89 );
-        zm_crafting::function_d1f16587( #"zblueprint_mansion_a_skeet_fink", &function_36194a5f );
+        zm_crafting::function_d1f16587( #"zblueprint_mansion_a_skeet_fink", &a_skeet_fink_crafted );
     }
 }
 
@@ -660,7 +660,7 @@ function function_2879cfed( var_a276c861 )
 // Params 2
 // Checksum 0x400cd60e, Offset: 0x2a10
 // Size: 0x14
-function function_354f0b24( var_a276c861, ended_early )
+function a_skeet_fink_cleanup_step_4( var_a276c861, ended_early )
 {
     
 }
@@ -669,7 +669,7 @@ function function_354f0b24( var_a276c861, ended_early )
 // Params 1
 // Checksum 0xd580754c, Offset: 0x2a30
 // Size: 0xc4
-function function_36194a5f( e_player )
+function a_skeet_fink_crafted( e_player )
 {
     unitrigger_stub = self.stub;
     unitrigger_stub.model setmodel( #"wpn_t8_zm_knife_stake_world" );

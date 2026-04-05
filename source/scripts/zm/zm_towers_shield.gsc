@@ -196,7 +196,7 @@ function function_28f576a9( player )
     
     if ( player hasweapon( w_shield_upgraded ) )
     {
-        if ( isdefined( self.blueprint.var_54a97edd.isriotshield ) && self.blueprint.var_54a97edd.isriotshield && isdefined( player.player_shield_reset_health ) && isdefined( player.var_d3345483 ) && player.var_d3345483 )
+        if ( isdefined( self.blueprint.w_result.isriotshield ) && self.blueprint.w_result.isriotshield && isdefined( player.player_shield_reset_health ) && isdefined( player.var_d3345483 ) && player.var_d3345483 )
         {
             self.cost = self zm_crafting::function_ceac3bf9( player, 1 );
             self.hint_string = zm_utility::function_d6046228( #"hash_4b00caebf5058f14", #"hash_5db3ede8aef13738" );
@@ -263,7 +263,7 @@ function function_22d79d55( player )
     
     if ( player zm_crafting::function_2d53738e( w_shield_upgraded ) )
     {
-        if ( isdefined( self.stub.blueprint.var_54a97edd.isriotshield ) && self.stub.blueprint.var_54a97edd.isriotshield && isdefined( player.player_shield_reset_health ) && isdefined( player.var_d3345483 ) && player.var_d3345483 )
+        if ( isdefined( self.stub.blueprint.w_result.isriotshield ) && self.stub.blueprint.w_result.isriotshield && isdefined( player.player_shield_reset_health ) && isdefined( player.var_d3345483 ) && player.var_d3345483 )
         {
             tag_origin_noz = 1;
         }

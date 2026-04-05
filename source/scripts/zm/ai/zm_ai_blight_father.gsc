@@ -329,7 +329,7 @@ function private killed_callback( e_attacker )
     
     if ( level flag::get( "zombie_drop_powerups" ) && !zm_utility::is_standard() )
     {
-        self thread zm_powerups::specific_powerup_drop( self.var_d0686fde, self.origin, undefined, undefined, undefined, undefined, undefined, undefined, 0, 1 );
+        self thread zm_powerups::specific_powerup_drop( self.a_str_powerups, self.origin, undefined, undefined, undefined, undefined, undefined, undefined, 0, 1 );
     }
 }
 
@@ -1029,14 +1029,14 @@ function private function_911c3934( entity )
 // Params 1
 // Checksum 0xdd9ad022, Offset: 0x4ba8
 // Size: 0x66, Type: bool
-function function_51dbdb8f( var_9cb85074 )
+function function_51dbdb8f( w_poi )
 {
-    if ( !isdefined( var_9cb85074 ) || !isarray( level.var_fe96a4c4 ) )
+    if ( !isdefined( w_poi ) || !isarray( level.var_fe96a4c4 ) )
     {
         return false;
     }
     
-    if ( isinarray( level.var_fe96a4c4, var_9cb85074 ) )
+    if ( isinarray( level.var_fe96a4c4, w_poi ) )
     {
         return true;
     }

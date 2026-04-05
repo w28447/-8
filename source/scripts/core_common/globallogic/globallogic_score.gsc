@@ -1197,7 +1197,7 @@ function function_d3ca3608( eventname )
                 level.var_10cd7193 = [];
             }
             
-            eventstr = ishash( eventname ) ? function_9e72a96( eventname ) : eventname;
+            eventstr = ishash( eventname ) ? hashtostring( eventname ) : eventname;
             
             if ( !isdefined( level.var_10cd7193 ) )
             {

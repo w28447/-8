@@ -50912,7 +50912,7 @@ scriptbundle,#aib_vign_tplt_prebtl_animatronic_zmb_04
 scriptbundle,#aib_vign_tplt_prebtl_animatronic_zmb_05
 scriptbundle,#c_t8_mp_zombie_male_gib_def
 scriptbundle,d#c_t8_zmb_3rdclass_male_gib_def
-character,#hash_c43367b77e2ed49
+character,#c_t8_zmb_3rdclass_male2_ghost
 character,#hash_1d1fa7ab1a8bd350
 character,#hash_1d1fa8ab1a8bd503
 character,#hash_2073a5b32e79df7a

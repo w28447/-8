@@ -95,7 +95,7 @@ function init( var_5ea5c94d )
     level.mdl_key_greenhouse.var_db9b80c9 = "greenhouse";
     level.a_str_zones = array::randomize( array( "main_hall", "library", "greenhouse" ) );
     level.var_28edc152 = array( "cemetery", "garden" );
-    level.var_c25e1f9c = array( 0, 1 );
+    level.a_n_index = array( 0, 1 );
     level thread setup_clocks();
     
     if ( !zm_utility::is_standard() )
@@ -372,7 +372,7 @@ function function_9ce2b677( var_f0e6c7a2, ent )
             var_47323b73.var_1ed09409 = function_4e8b75e0();
         }
         
-        var_47323b73.str_hint = function_639c87e1( var_47323b73.var_1ed09409 );
+        var_47323b73.str_hint = get_key_location( var_47323b73.var_1ed09409 );
         var_47323b73.mdl_key = level.mdl_key_main_hall;
         var_47323b73.s_loc = struct::get( "key_main_hall_loc" );
         var_47323b73.var_e62bb9d2 = getent( "gazing_stone_main_hall", "targetname" );
@@ -454,7 +454,7 @@ function function_2c902b77( var_f0e6c7a2, ent )
         }
         else
         {
-            var_47323b73.str_hint = function_639c87e1( var_47323b73.var_1ed09409 );
+            var_47323b73.str_hint = get_key_location( var_47323b73.var_1ed09409 );
         }
         
         var_47323b73.mdl_key = level.mdl_key_library;
@@ -539,7 +539,7 @@ function function_da937c94( var_f0e6c7a2, ent )
         }
         else
         {
-            var_47323b73.str_hint = function_639c87e1( var_47323b73.var_1ed09409 );
+            var_47323b73.str_hint = get_key_location( var_47323b73.var_1ed09409 );
         }
         
         var_47323b73.mdl_key = level.mdl_key_greenhouse;
@@ -1461,8 +1461,8 @@ function function_212eae28( str_model )
 // Size: 0xa6
 function function_4e8b75e0()
 {
-    n_random = array::random( level.var_c25e1f9c );
-    arrayremovevalue( level.var_c25e1f9c, n_random );
+    n_random = array::random( level.a_n_index );
+    arrayremovevalue( level.a_n_index, n_random );
     
     switch ( n_random )
     {
@@ -1481,7 +1481,7 @@ function function_4e8b75e0()
 // Params 1
 // Checksum 0xcddda057, Offset: 0x64d8
 // Size: 0x176
-function function_639c87e1( str_type )
+function get_key_location( str_type )
 {
     switch ( str_type )
     {
@@ -1611,12 +1611,12 @@ function function_16288b92( str_type, s_loc, mdl_key, vol_transform )
             level thread function_49eab22d( s_key );
             break;
         case #"painting":
-            var_ff4b3a13 = getent( s_stub.str_hint, "targetname" );
+            mdl_painting = getent( s_stub.str_hint, "targetname" );
             var_19762c3e = 96;
             str_loc = s_stub.str_hint;
             v_offset = ( 0, 0, 0 );
             
-            if ( var_ff4b3a13.targetname == "painting_4" )
+            if ( mdl_painting.targetname == "painting_4" )
             {
                 v_offset = ( 0, 0, -16 );
             }
@@ -1639,11 +1639,11 @@ function function_16288b92( str_type, s_loc, mdl_key, vol_transform )
                 s_clue = array::random( struct::get_array( "painting_clue_garden" ) );
             }
             
-            s_spawnpt = struct::get( var_ff4b3a13.target );
-            s_portal = struct::get( var_ff4b3a13.script_noteworthy );
+            s_spawnpt = struct::get( mdl_painting.target );
+            s_portal = struct::get( mdl_painting.script_noteworthy );
             
             /#
-                var_ff4b3a13 thread function_debf98ad();
+                mdl_painting thread function_debf98ad();
             #/
             
             /#
@@ -1653,13 +1653,13 @@ function function_16288b92( str_type, s_loc, mdl_key, vol_transform )
             var_47323b73 = s_spawnpt zm_unitrigger::create( &function_7c097281, 64, &function_450b01a5 );
             var_47323b73.str_flag = "painting_clue";
             var_47323b73.mdl_clue = getent( str_clue, "targetname" );
-            var_47323b73.var_ff4b3a13 = var_ff4b3a13;
+            var_47323b73.mdl_painting = mdl_painting;
             var_47323b73.v_offset = v_offset;
             var_47323b73.str_flag = "painting_clue";
             var_47323b73.str_clue = str_clue;
             level flag::wait_till( "painting_clue" );
-            var_ff4b3a13 clientfield::set( "" + #"hash_11eb6b7dc7db71ad", 0 );
-            var_ff4b3a13 playsound( #"hash_20df90b365932d7c" );
+            mdl_painting clientfield::set( "" + #"hash_11eb6b7dc7db71ad", 0 );
+            mdl_painting playsound( #"hash_20df90b365932d7c" );
             wait 2;
             e_fx = util::spawn_model( #"tag_origin", s_spawnpt.origin );
             e_fx playsound( "zmb_sq_souls_release" );
@@ -1667,14 +1667,14 @@ function function_16288b92( str_type, s_loc, mdl_key, vol_transform )
             e_fx delete();
             
             /#
-                var_ff4b3a13 debug_draw_stop();
+                mdl_painting debug_draw_stop();
             #/
             
             /#
                 s_spawnpt debug_draw_stop();
             #/
             
-            nd_start = getvehiclenode( var_ff4b3a13.targetname + "_spline", "targetname" );
+            nd_start = getvehiclenode( mdl_painting.targetname + "_spline", "targetname" );
             e_trail = util::spawn_model( "tag_origin", nd_start.origin, nd_start.angles );
             e_trail thread function_c9c7a593();
             e_trail thread function_7ff450ae();
@@ -1683,7 +1683,7 @@ function function_16288b92( str_type, s_loc, mdl_key, vol_transform )
                 e_trail thread function_debf98ad();
             #/
             
-            e_trail show_trail( nd_start, var_ff4b3a13 );
+            e_trail show_trail( nd_start, mdl_painting );
             e_trail thread scene::play( #"aib_vign_zm_mnsn_ghost_idle_01", e_trail );
             e_trail.mdl_head thread scene::play( #"aib_vign_zm_mnsn_ghost_idle_01", e_trail.mdl_head );
             s_loc = s_portal;
@@ -2590,11 +2590,11 @@ function function_d93fdc8f()
     level endon( #"end_game" );
     self endon( #"death" );
     wait 1;
-    var_844489a = self mansion_util::_print_player_out();
+    s_player_index = self mansion_util::_print_player_out();
     
-    if ( isdefined( var_844489a ) )
+    if ( isdefined( s_player_index ) )
     {
-        n_player_index = var_844489a.n_index;
+        n_player_index = s_player_index.n_index;
         
         switch ( n_player_index )
         {
@@ -2617,9 +2617,9 @@ function function_d93fdc8f()
         wait 1;
         self function_4e550169( str_vo );
         
-        if ( isdefined( var_844489a ) )
+        if ( isdefined( s_player_index ) )
         {
-            e_player = var_844489a.e_player;
+            e_player = s_player_index.e_player;
             
             if ( zm_utility::is_player_valid( e_player ) && !( isdefined( e_player.var_85028f37 ) && e_player.var_85028f37 ) )
             {
@@ -2639,11 +2639,11 @@ function function_679cf27a()
 {
     level endon( #"end_game" );
     self endon( #"death" );
-    var_844489a = self mansion_util::_print_player_out();
+    s_player_index = self mansion_util::_print_player_out();
     
-    if ( isdefined( var_844489a ) )
+    if ( isdefined( s_player_index ) )
     {
-        n_player_index = var_844489a.n_index;
+        n_player_index = s_player_index.n_index;
         
         switch ( n_player_index )
         {
@@ -2674,11 +2674,11 @@ function function_7c045e39()
     level endon( #"end_game" );
     self endon( #"death" );
     level waittill( #"hash_5927e3d93a01cc61" );
-    var_844489a = self mansion_util::_print_player_out();
+    s_player_index = self mansion_util::_print_player_out();
     
-    if ( isdefined( var_844489a ) )
+    if ( isdefined( s_player_index ) )
     {
-        n_player_index = var_844489a.n_index;
+        n_player_index = s_player_index.n_index;
         
         switch ( n_player_index )
         {
@@ -2712,11 +2712,11 @@ function function_52980a22()
     while ( true )
     {
         self waittill( #"ghost_lost" );
-        var_844489a = self mansion_util::_print_player_out();
+        s_player_index = self mansion_util::_print_player_out();
         
-        if ( isdefined( var_844489a ) )
+        if ( isdefined( s_player_index ) )
         {
-            n_player_index = var_844489a.n_index;
+            n_player_index = s_player_index.n_index;
             
             switch ( n_player_index )
             {
@@ -2858,7 +2858,7 @@ function function_d480d1a3()
 // Params 2
 // Checksum 0xd9ec4d3c, Offset: 0xab00
 // Size: 0x53c
-function show_trail( nd_start, var_ff4b3a13 )
+function show_trail( nd_start, mdl_painting )
 {
     self setmodel( #"c_t8_zmb_dlc1_catherine_ghost_body" );
     
@@ -2881,7 +2881,7 @@ function show_trail( nd_start, var_ff4b3a13 )
     self.var_c176969a.var_6353e3f1 = 1;
     self.var_c176969a setspeed( 7 );
     
-    if ( isdefined( var_ff4b3a13 ) )
+    if ( isdefined( mdl_painting ) )
     {
         if ( !isdefined( nd_start.var_7eedec61 ) )
         {
@@ -3198,11 +3198,11 @@ function function_b5697137()
     level endon( #"end_game" );
     self endon( #"death" );
     level waittill( #"ghostleading_halfway" );
-    var_844489a = self mansion_util::_print_player_out();
+    s_player_index = self mansion_util::_print_player_out();
     
-    if ( isdefined( var_844489a ) )
+    if ( isdefined( s_player_index ) )
     {
-        n_player_index = var_844489a.n_index;
+        n_player_index = s_player_index.n_index;
         
         switch ( n_player_index )
         {
@@ -3246,11 +3246,11 @@ function function_9874e47()
     level endon( #"end_game" );
     self endon( #"death", #"hash_10580fbe74622186" );
     level waittill( #"hash_5ed8f262549ea460" );
-    var_844489a = self mansion_util::_print_player_out();
+    s_player_index = self mansion_util::_print_player_out();
     
-    if ( isdefined( var_844489a ) )
+    if ( isdefined( s_player_index ) )
     {
-        n_player_index = var_844489a.n_index;
+        n_player_index = s_player_index.n_index;
         
         switch ( n_player_index )
         {
@@ -3280,11 +3280,11 @@ function function_58cb08ba()
 {
     level endon( #"end_game" );
     self endon( #"death" );
-    var_844489a = self mansion_util::_print_player_out();
+    s_player_index = self mansion_util::_print_player_out();
     
-    if ( isdefined( var_844489a ) )
+    if ( isdefined( s_player_index ) )
     {
-        n_player_index = var_844489a.n_index;
+        n_player_index = s_player_index.n_index;
         
         switch ( n_player_index )
         {
@@ -4122,7 +4122,7 @@ function function_eecfbd25()
     // Size: 0x1ee, Type: dev
     function function_f728c266()
     {
-        switch ( function_9e72a96( self.id ) )
+        switch ( hashtostring( self.id ) )
         {
             case #"sc_mh1":
                 break;

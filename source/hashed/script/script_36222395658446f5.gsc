@@ -1433,8 +1433,8 @@ function function_666a9223()
         level flag::set( #"hash_66f358c0066d77d8" );
         level flag::set( #"spoon_quest_completed" );
         level flag::set( #"hash_29dc018e9551ecf" );
-        var_217fca51 = struct::get( "<dev string:x2b6>" );
-        mdl_spoon = var_217fca51.scene_ents[ #"skeleton_arm" ];
+        s_crane_scene = struct::get( "<dev string:x2b6>" );
+        mdl_spoon = s_crane_scene.scene_ents[ #"skeleton_arm" ];
         mdl_spoon hide();
         
         foreach ( player in level.players )

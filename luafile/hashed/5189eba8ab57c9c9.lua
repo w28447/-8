@@ -1,6 +1,6 @@
 require( "x64:3ff0962d6263ce2" )
 require( "x64:7978b51255faa9f" )
-require( "x64:8fae367edb12f66" )
+require( "ui/uieditor/widgets/itemshop/reserves/reservesmeter" )
 require( "x64:4eb3d9feda3ad66" )
 require( "x64:f3949c53c73a596" )
 

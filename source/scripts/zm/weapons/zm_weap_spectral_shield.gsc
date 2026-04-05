@@ -1616,7 +1616,7 @@ function function_d0b3a2c6()
 {
     self endon( #"death" );
     
-    if ( isdefined( self.stub.blueprint ) && isdefined( self.stub.blueprint.var_54a97edd ) && self.stub.blueprint.var_54a97edd === level.var_d7e67022 )
+    if ( isdefined( self.stub.blueprint ) && isdefined( self.stub.blueprint.w_result ) && self.stub.blueprint.w_result === level.var_d7e67022 )
     {
         if ( isdefined( self.stub.model ) )
         {
@@ -1654,7 +1654,7 @@ function function_9693e041( player )
     
     if ( player hasweapon( level.var_637136f3 ) )
     {
-        if ( isdefined( self.blueprint.var_54a97edd.isriotshield ) && self.blueprint.var_54a97edd.isriotshield && isdefined( player.player_shield_reset_health ) && isdefined( player.var_d3345483 ) && player.var_d3345483 )
+        if ( isdefined( self.blueprint.w_result.isriotshield ) && self.blueprint.w_result.isriotshield && isdefined( player.player_shield_reset_health ) && isdefined( player.var_d3345483 ) && player.var_d3345483 )
         {
             self.cost = self zm_crafting::function_ceac3bf9( player, 1 );
             self.hint_string = zm_utility::function_d6046228( #"hash_35387f35bd87b96b", #"hash_3ee2e0100fefb461" );
@@ -1706,7 +1706,7 @@ function function_df8ce6e2( player )
     
     if ( player zm_crafting::function_2d53738e( w_shield_upgraded ) )
     {
-        if ( isdefined( self.stub.blueprint.var_54a97edd.isriotshield ) && self.stub.blueprint.var_54a97edd.isriotshield && isdefined( player.player_shield_reset_health ) && isdefined( player.var_d3345483 ) && player.var_d3345483 )
+        if ( isdefined( self.stub.blueprint.w_result.isriotshield ) && self.stub.blueprint.w_result.isriotshield && isdefined( player.player_shield_reset_health ) && isdefined( player.var_d3345483 ) && player.var_d3345483 )
         {
             tag_origin_noz = 1;
         }
@@ -1766,7 +1766,7 @@ function function_df8ce6e2( player )
         player thread zm_weapons::weapon_give( w_shield_upgraded );
     }
     
-    player notify( #"hash_77d44943fb143b18", { #weapon:self.stub.blueprint.var_54a97edd } );
+    player notify( #"hash_77d44943fb143b18", { #weapon:self.stub.blueprint.w_result } );
     return false;
 }
 

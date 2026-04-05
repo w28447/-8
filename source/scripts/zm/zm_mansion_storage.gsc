@@ -77,8 +77,8 @@ function register_steps()
     zm_sq::register( #"hash_4c0e5e4b34877996", #"step_2", #"hash_5b60b651867b65f8", &function_4e14c2d7, &function_21e10c11 );
     zm_sq::register( #"hash_65636bbec86da22c", #"step_1", #"hash_1551692125951197", &function_6c1be65c, &function_e4b6830d );
     zm_sq::register( #"hash_65636bbec86da22c", #"step_2", #"hash_15516a212595134a", &function_28995f54, &function_f5692472 );
-    zm_sq::register( #"zm_storage_billiards", #"step_1", #"storage_billiards_step_1", &function_ffc4a06a, &function_a4daedbe );
-    zm_sq::register( #"zm_storage_billiards", #"step_2", #"storage_billiards_step_2", &function_f21f0537, &function_2ff803fa );
+    zm_sq::register( #"zm_storage_billiards", #"step_1", #"storage_billiards_step_1", &storage_billiards_init_step_1, &storage_billiards_cleanup_step_1 );
+    zm_sq::register( #"zm_storage_billiards", #"step_2", #"storage_billiards_step_2", &storage_billiards_init_step_2, &storage_billiards_cleanup_step_2 );
 }
 
 // Namespace mansion_storage/zm_mansion_storage
@@ -722,7 +722,7 @@ function function_b601eebc()
 // Params 1
 // Checksum 0xcb1091ce, Offset: 0x2b20
 // Size: 0x194
-function function_ffc4a06a( var_a276c861 )
+function storage_billiards_init_step_1( var_a276c861 )
 {
     level flag::init( #"hash_4207012c64662b4d" );
     level thread function_68e49445();
@@ -750,7 +750,7 @@ function function_ffc4a06a( var_a276c861 )
 // Params 2
 // Checksum 0x1662748e, Offset: 0x2cc0
 // Size: 0x36
-function function_a4daedbe( var_a276c861, ended_early )
+function storage_billiards_cleanup_step_1( var_a276c861, ended_early )
 {
     if ( var_a276c861 || ended_early )
     {
@@ -907,7 +907,7 @@ function function_35ab22f4()
 // Params 1
 // Checksum 0x677e021e, Offset: 0x3440
 // Size: 0x242
-function function_f21f0537( var_a276c861 )
+function storage_billiards_init_step_2( var_a276c861 )
 {
     if ( !isdefined( level.var_691e2bc4 ) )
     {
@@ -948,7 +948,7 @@ function function_f21f0537( var_a276c861 )
 // Params 2
 // Checksum 0xe6c2ca2d, Offset: 0x3690
 // Size: 0x26
-function function_2ff803fa( var_a276c861, ended_early )
+function storage_billiards_cleanup_step_2( var_a276c861, ended_early )
 {
     if ( var_a276c861 || ended_early )
     {

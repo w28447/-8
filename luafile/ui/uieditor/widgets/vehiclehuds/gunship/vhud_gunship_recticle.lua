@@ -1,6 +1,6 @@
 require( "x64:934d3e795785e73" )
 require( "x64:93945e49af17e9d" )
-require( "x64:2012d3c45495393" )
+require( "ui/uieditor/widgets/vehiclehuds/gunship/vhud_gunship_flare_dock" )
 require( "x64:e7022b38d489ba3" )
 require( "x64:5c14ad695a9a1a8" )
 require( "x64:9679faabe7638d9" )

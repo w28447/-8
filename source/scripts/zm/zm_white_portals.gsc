@@ -107,7 +107,7 @@ function function_24167ed8()
 // Size: 0xe0
 function function_ab07399f()
 {
-    foreach ( t_crafting in level.var_4fe2f84d[ #"ztable_white_open" ] )
+    foreach ( t_crafting in level.a_t_crafting[ #"ztable_white_open" ] )
     {
         if ( isdefined( t_crafting.var_4f749ffe ) )
         {

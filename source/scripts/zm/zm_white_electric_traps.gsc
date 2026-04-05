@@ -60,7 +60,7 @@ function __main__()
     
     foreach ( var_edf030ab in var_c6eff49f )
     {
-        var_edf030ab thread function_c6e2a4fd();
+        var_edf030ab thread init_components();
     }
 }
 
@@ -68,7 +68,7 @@ function __main__()
 // Params 0
 // Checksum 0x2b06968f, Offset: 0x3f8
 // Size: 0x2a4
-function function_c6e2a4fd()
+function init_components()
 {
     var_5dac9747 = self.target2 + "_" + self.script_noteworthy;
     str_trigger = self.target3 + "_" + self.script_noteworthy;

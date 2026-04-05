@@ -784,7 +784,7 @@ function function_e1c4ab06( params )
                 /#
                     if ( isalive( ai ) && !isdefined( ai.maxhealth ) && isdefined( ai.archetype ) )
                     {
-                        iprintlnbold( "<dev string:x38>" + function_9e72a96( ai.archetype ) + "<dev string:x62>" );
+                        iprintlnbold( "<dev string:x38>" + hashtostring( ai.archetype ) + "<dev string:x62>" );
                     }
                 #/
                 
@@ -1021,7 +1021,7 @@ function function_b3ac0cab( params )
     /#
         if ( !isdefined( self.maxhealth ) && isdefined( self.archetype ) )
         {
-            iprintlnbold( "<dev string:x38>" + function_9e72a96( self.archetype ) + "<dev string:x62>" );
+            iprintlnbold( "<dev string:x38>" + hashtostring( self.archetype ) + "<dev string:x62>" );
         }
     #/
     

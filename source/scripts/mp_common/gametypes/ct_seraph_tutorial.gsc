@@ -2121,10 +2121,10 @@ function function_e47d773c()
 // Params 3
 // Checksum 0xea9ab713, Offset: 0x8b70
 // Size: 0x196
-function function_b8fea992( var_cd83876, var_264ee2f5, str_endon_notify )
+function function_b8fea992( str_spawn_locs, var_264ee2f5, str_endon_notify )
 {
     level endon( #"combattraining_logic_finished", str_endon_notify );
-    a_s_locs = struct::get_array( var_cd83876, "targetname" );
+    a_s_locs = struct::get_array( str_spawn_locs, "targetname" );
     n_index = 0;
     var_d7e81496 = 0;
     

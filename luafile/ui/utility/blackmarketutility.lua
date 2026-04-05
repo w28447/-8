@@ -1,4 +1,4 @@
-require( "x64:13bf102cb2353b4" )
+require( "ui/utility/blackmarkettableutility" )
 require( "ui/utility/overlayutility" )
 
 CoD.BlackMarketUtility = {}

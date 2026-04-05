@@ -1,4 +1,4 @@
-require( "x64:595834f2b669b05" )
+require( "ui/uieditor/widgets/itemshop/reserves/reservespromointernal" )
 
 CoD.ReservesPromoContainer = InheritFrom( LUI.UIElement )
 CoD.ReservesPromoContainer.__defaultWidth = 556

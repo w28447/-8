@@ -613,7 +613,7 @@ function private function_10801ad3()
     foreach ( player in getplayers() )
     {
         player.var_42a4759e = {};
-        player.var_42a4759e.score = player zm_score::function_ffc2d0bc();
+        player.var_42a4759e.score = player zm_score::get_player_score();
         player.var_42a4759e.score_total = player.score_total;
         
         if ( player.sessionstate == "spectator" )

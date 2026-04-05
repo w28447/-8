@@ -2473,11 +2473,11 @@ function function_384bed55( b_on = 1 )
 function function_269d9f82( str_barrier, b_on = 1 )
 {
     var_d3c21d73 = ( 0, 0, 48 );
-    var_d23fea4f = struct::get_array( str_barrier, "targetname" );
+    a_s_positions = struct::get_array( str_barrier, "targetname" );
     
     if ( isdefined( b_on ) && b_on )
     {
-        foreach ( s_position in var_d23fea4f )
+        foreach ( s_position in a_s_positions )
         {
             s_position.mdl_pos = util::spawn_model( "tag_origin", s_position.origin, s_position.angles );
             s_position.mdl_pos clientfield::set( "" + #"hash_1b509b0ba634a25a", 1 );
@@ -2491,7 +2491,7 @@ function function_269d9f82( str_barrier, b_on = 1 )
         return;
     }
     
-    foreach ( s_position in var_d23fea4f )
+    foreach ( s_position in a_s_positions )
     {
         if ( isdefined( s_position.mdl_pos ) )
         {

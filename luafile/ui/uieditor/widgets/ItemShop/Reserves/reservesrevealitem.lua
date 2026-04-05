@@ -13,7 +13,7 @@ require( "x64:aa11b1a6e6a8f94" )
 require( "x64:41862aa95cc4411" )
 require( "x64:6f549ceba4460d0" )
 require( "x64:4ff4b0d88f02661" )
-require( "x64:29ae524ca420e01" )
+require( "ui/uieditor/widgets/itemshop/reserves/reservesrevealdupeicon" )
 require( "x64:6c3c5c1fee889b5" )
 
 CoD.ReservesRevealItem = InheritFrom( LUI.UIElement )

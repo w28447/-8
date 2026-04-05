@@ -647,7 +647,7 @@ function function_44a776ee()
             
             if ( isdefined( node ) )
             {
-                iprintln( "<dev string:x5a>" + function_9e72a96( keys[ i ] ) );
+                iprintln( "<dev string:x5a>" + hashtostring( keys[ i ] ) );
             }
         }
     #/
@@ -1335,7 +1335,7 @@ function function_c1c2fc5b( n_to_spawn )
         return;
     }
     
-    var_8deb2034 = var_f1c4ec4f.a_loc_types[ #"bat_location" ];
+    a_s_zone_spawners = var_f1c4ec4f.a_loc_types[ #"bat_location" ];
     
     foreach ( var_c92978fa in getarraykeys( var_f1c4ec4f.adjacent_zones ) )
     {
@@ -1346,23 +1346,23 @@ function function_c1c2fc5b( n_to_spawn )
         {
             foreach ( s_spawner in var_9387e4ab )
             {
-                if ( !isdefined( var_8deb2034 ) )
+                if ( !isdefined( a_s_zone_spawners ) )
                 {
-                    var_8deb2034 = [];
+                    a_s_zone_spawners = [];
                 }
-                else if ( !isarray( var_8deb2034 ) )
+                else if ( !isarray( a_s_zone_spawners ) )
                 {
-                    var_8deb2034 = array( var_8deb2034 );
+                    a_s_zone_spawners = array( a_s_zone_spawners );
                 }
                 
-                var_8deb2034[ var_8deb2034.size ] = s_spawner;
+                a_s_zone_spawners[ a_s_zone_spawners.size ] = s_spawner;
             }
         }
     }
     
     while ( n_spawned < n_to_spawn )
     {
-        s_pos = array::random( var_8deb2034 );
+        s_pos = array::random( a_s_zone_spawners );
         
         if ( isdefined( s_pos ) )
         {
@@ -1370,7 +1370,7 @@ function function_c1c2fc5b( n_to_spawn )
             
             if ( isdefined( ai ) )
             {
-                arrayremovevalue( var_8deb2034, s_pos );
+                arrayremovevalue( a_s_zone_spawners, s_pos );
                 n_spawned++;
                 zm_mansion_special_rounds::function_f46db405();
             }
@@ -1620,7 +1620,7 @@ function function_25058256()
 {
     level flagsys::wait_till( #"load_main_complete" );
     
-    foreach ( s_stub in level.var_4fe2f84d[ #"zblueprint_chaos_lvl3" ] )
+    foreach ( s_stub in level.a_t_crafting[ #"zblueprint_chaos_lvl3" ] )
     {
         s_stub.var_c060d2c8 = 0;
     }
@@ -1644,7 +1644,7 @@ function ww_lvl3_crafted( e_player )
     
     e_player zm_weapons::weapon_take( level.var_6fe89212 );
     e_player thread zm_vo::function_a2bd5a0c( #"hash_1bee1f8c64cef00f", 1 );
-    e_player zm_weapons::weapon_give( unitrigger_stub.blueprint.var_54a97edd );
+    e_player zm_weapons::weapon_give( unitrigger_stub.blueprint.w_result );
     wait 0.1;
     unitrigger_stub zm_crafting::reset_table();
     unitrigger_stub.prompt_and_visibility_func = &function_7aa50bb7;

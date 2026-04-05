@@ -1160,40 +1160,40 @@ function function_e4dcca48()
     self.var_481aa649 = 0;
     self.var_c2f3a87c = 0;
     var_369ce419 = self.chest_user;
-    var_63f52acb = self.zbarrier.weapon_model;
+    mdl_weapon_model = self.zbarrier.weapon_model;
     
-    if ( isdefined( var_63f52acb ) )
+    if ( isdefined( mdl_weapon_model ) )
     {
-        var_63f52acb endon( #"death" );
+        mdl_weapon_model endon( #"death" );
     }
     
-    for ( var_1e99deea = undefined; !isdefined( var_1e99deea ) ; var_1e99deea = zm_unitrigger::function_f1794fbf( self.unitrigger_stub, var_369ce419 ) )
+    for ( t_unitrigger = undefined; !isdefined( t_unitrigger ) ; t_unitrigger = zm_unitrigger::function_f1794fbf( self.unitrigger_stub, var_369ce419 ) )
     {
         util::wait_network_frame();
     }
     
-    var_1e99deea endon( #"kill_trigger" );
+    t_unitrigger endon( #"kill_trigger" );
     
     while ( true )
     {
         self.var_c2f3a87c = 0;
         
-        if ( isdefined( var_369ce419 ) && isdefined( var_63f52acb ) )
+        if ( isdefined( var_369ce419 ) && isdefined( mdl_weapon_model ) )
         {
-            if ( var_369ce419 util::is_looking_at( var_63f52acb ) )
+            if ( var_369ce419 util::is_looking_at( mdl_weapon_model ) )
             {
                 self.var_c2f3a87c = 1;
             }
         }
         
-        if ( isdefined( var_369ce419 ) && var_369ce419 meleebuttonpressed() && self.var_c2f3a87c && var_369ce419 istouching( var_1e99deea ) )
+        if ( isdefined( var_369ce419 ) && var_369ce419 meleebuttonpressed() && self.var_c2f3a87c && var_369ce419 istouching( t_unitrigger ) )
         {
             self.var_481aa649 = 1;
             self.var_75c86f89 = var_369ce419;
             
-            if ( isdefined( var_63f52acb ) )
+            if ( isdefined( mdl_weapon_model ) )
             {
-                var_63f52acb clientfield::set( "powerup_fx", 1 );
+                mdl_weapon_model clientfield::set( "powerup_fx", 1 );
             }
             
             var_369ce419 thread zm_audio::create_and_play_dialog( #"magicbox", #"share" );
@@ -1682,7 +1682,7 @@ function function_db355791( player, weapon, var_21b5a3f4 = 1 )
 function function_4aa1f177( player )
 {
     a_weapons = array::randomize( getarraykeys( level.zombie_weapons ) );
-    var_b865ddb7 = a_weapons[ 0 ];
+    w_first = a_weapons[ 0 ];
     w_second = a_weapons[ 1 ];
     
     if ( isdefined( player ) )
@@ -1729,7 +1729,7 @@ function function_4aa1f177( player )
     
     if ( isdefined( player ) )
     {
-        if ( a_weapons[ 0 ] === var_b865ddb7 && a_weapons[ 1 ] === w_second )
+        if ( a_weapons[ 0 ] === w_first && a_weapons[ 1 ] === w_second )
         {
             var_d07a7ff9 = 1;
             var_bf43f78f = randomfloat( 100 );

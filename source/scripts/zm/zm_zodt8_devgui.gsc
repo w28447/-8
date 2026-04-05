@@ -302,9 +302,9 @@
         
         if ( round_number >= 8 )
         {
-            assert( isdefined( level.var_4fe2f84d[ #"zblueprint_shield_dual_wield" ] ) );
+            assert( isdefined( level.a_t_crafting[ #"zblueprint_shield_dual_wield" ] ) );
             
-            foreach ( trigger in level.var_4fe2f84d[ #"zblueprint_shield_dual_wield" ] )
+            foreach ( trigger in level.a_t_crafting[ #"zblueprint_shield_dual_wield" ] )
             {
                 trigger.crafted = 1;
                 trigger.blueprint = trigger.craftfoundry;

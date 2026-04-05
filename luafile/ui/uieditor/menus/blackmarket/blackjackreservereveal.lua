@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframeidentity" )
 require( "x64:2d64ca9d3c705ce" )
 require( "x64:de4c66b722f8d67" )
-require( "x64:e46165d5c607ec3" )
+require( "ui/uieditor/widgets/itemshop/reserves/reservesrevealitem" )
 require( "x64:28b39fa069d1324" )
 require( "x64:43a18b0c952dcc0" )
 

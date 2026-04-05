@@ -550,7 +550,7 @@ localizeentry,#hash_88f3d374c07d9de
 localizeentry,#hash_89191b4581f8996
 localizeentry,#hash_89634192f81b831
 localizeentry,#hash_897061e92ee5bfc
-localizeentry,#hash_898e3eb1fcc7d86
+localizeentry,#mp/battleshield_hint_press
 localizeentry,#zmui/bgb_licensed_contractor
 localizeentry,#hash_89f586b5b1dcef0
 localizeentry,#menu/rules_hardcore_hint
@@ -6692,7 +6692,7 @@ localizeentry,#hash_6891cbab469619df
 localizeentry,#hash_6892ed10e8bf4877
 localizeentry,#hash_6895ec226bdef158
 localizeentry,#hash_689b6c9c8ba8a257
-localizeentry,#hash_689e067f1a8b2f83
+localizeentry,#mp/battleshield_hint_toggle
 localizeentry,#hash_68a89bb505765b35
 localizeentry,#hash_68a92677478f2e1b
 localizeentry,#menu/delete
@@ -6899,7 +6899,7 @@ localizeentry,#hash_6b82a3618872b025
 localizeentry,#hash_6b83f54f0b0ce513
 localizeentry,#hash_6b8a596a6e17eb28
 localizeentry,#hash_6b8c9a439eff8195
-localizeentry,#hash_6b9271b74c9e78d1
+localizeentry,#mp/radiation_field_hint
 localizeentry,#hash_6b9675b360750903
 localizeentry,#hash_6b9783b2f9fc5872
 localizeentry,#hash_6b9859b2937b216e
@@ -7157,7 +7157,7 @@ localizeentry,#hash_6ed3516ab9485d19
 localizeentry,#hash_6ed6ef7b33a09183
 localizeentry,#hash_6ed6f16e719818bc
 localizeentry,#hash_6eda885f0bb2915a
-localizeentry,#hash_6edf1a87591e1a19
+localizeentry,#mp/radiation_field_hint_press
 localizeentry,#hash_6ee92514250f3100
 localizeentry,#hash_6ee9796129c8602e
 localizeentry,#hash_6eed2099b101a416

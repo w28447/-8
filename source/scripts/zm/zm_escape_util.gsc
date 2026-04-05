@@ -346,7 +346,7 @@ function function_8164716a()
         
         foreach ( s_blueprint in var_5601237b )
         {
-            if ( s_blueprint.var_54a97edd == getweapon( #"zhield_spectral_dw" ) )
+            if ( s_blueprint.w_result == getweapon( #"zhield_spectral_dw" ) )
             {
                 level flag::set( #"hash_7039457b1cc827de" );
                 break;

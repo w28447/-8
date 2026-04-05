@@ -402,7 +402,7 @@ function function_a340f5a2()
     
     foreach ( s_altar in level.var_76a7ad28 )
     {
-        s_altar.var_3468124 zm_perks::function_efd2c9e6();
+        s_altar.s_vapor_altar zm_perks::function_efd2c9e6();
     }
     
     foreach ( e_pap in level.var_4d8e32c8 )
@@ -1019,7 +1019,7 @@ function function_737be926()
         
         foreach ( s_altar in level.var_76a7ad28 )
         {
-            s_altar.var_3468124 zm_perks::function_efd2c9e6();
+            s_altar.s_vapor_altar zm_perks::function_efd2c9e6();
         }
         
         foreach ( e_pap in level.var_4d8e32c8 )

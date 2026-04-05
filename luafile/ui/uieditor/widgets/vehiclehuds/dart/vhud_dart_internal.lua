@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/vehiclehuds/dart/vhud_dart_reticle" )
-require( "x64:f72f7312b3f60f6" )
+require( "ui/uieditor/widgets/vehiclehuds/dart/vhud_dart_pc_reticlebacking" )
 
 CoD.vhud_dart_internal = InheritFrom( LUI.UIElement )
 CoD.vhud_dart_internal.__defaultWidth = 1920

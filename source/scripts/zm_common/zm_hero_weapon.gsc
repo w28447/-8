@@ -1103,7 +1103,7 @@ function function_29e4516d()
     }
     
     n_power = self gadgetpowerget( level.var_a53a05b5 );
-    is_deployed = self function_36dfc05f( level.var_a53a05b5 );
+    is_deployed = self gadgetisdeployed( level.var_a53a05b5 );
     
     if ( n_power > 50 && !is_deployed )
     {

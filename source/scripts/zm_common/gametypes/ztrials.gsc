@@ -332,7 +332,7 @@ function private function_b8839207( e_door, n_cost )
         
         foreach ( round_info in level.var_6d87ac05.rounds )
         {
-            adddebugcommand( "<dev string:xeb>" + round_info.round + "<dev string:x10e>" + function_9e72a96( round_info.name ) + "<dev string:x112>" + round_info.round + "<dev string:x116>" + round_info.round + "<dev string:x138>" );
+            adddebugcommand( "<dev string:xeb>" + round_info.round + "<dev string:x10e>" + hashtostring( round_info.name ) + "<dev string:x112>" + round_info.round + "<dev string:x116>" + round_info.round + "<dev string:x138>" );
         }
         
         for ( i = 0; i <= 3 ; i++ )

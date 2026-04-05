@@ -29,9 +29,9 @@
 #using scripts\zm_common\zm_vo;
 #using scripts\zm_common\zm_zonemgr;
 
-#namespace namespace_b6ca3ccc;
+#namespace mansion_stick_man;
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0x3953a79c, Offset: 0x628
 // Size: 0x2bc
@@ -47,7 +47,7 @@ function init()
     clientfield::register( "allplayers", "" + #"hash_30aa04edc476253f", 8000, 1, "int" );
     register_steps();
     init_flags();
-    function_c6e2a4fd();
+    init_components();
     
     if ( zm_utility::is_ee_enabled() )
     {
@@ -59,13 +59,13 @@ function init()
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0x725a58bc, Offset: 0x8f0
 // Size: 0xcc
-function function_c6e2a4fd()
+function init_components()
 {
-    level.var_d70578ff = [];
+    level.a_mdl_pics = [];
     level.player_out_of_playable_area_override = &function_8b12e689;
     mdl_stone = getent( "health_stone", "targetname" );
     mdl_stone setinvisibletoall();
@@ -74,7 +74,7 @@ function function_c6e2a4fd()
     array::thread_all( var_fe0f27ef, &function_7c9b48a9 );
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0x5b087673, Offset: 0x9c8
 // Size: 0x1e4
@@ -97,7 +97,7 @@ function init_flags()
     level flag::init( #"cemetery_open" );
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0x364f0987, Offset: 0xbb8
 // Size: 0x44
@@ -107,7 +107,7 @@ function start_stick_man()
     zm_sq::start( #"zm_mansion_stick_man" );
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0xcfc214b3, Offset: 0xc08
 // Size: 0x124
@@ -118,7 +118,7 @@ function register_steps()
     zm_sq::register( #"zm_mansion_stick_man", #"step_3", #"stick_man_step_3", &init_step_3, &cleanup_step_3 );
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 1
 // Checksum 0xd3c7674e, Offset: 0xd38
 // Size: 0x17c
@@ -144,7 +144,7 @@ function init_step_1( var_a276c861 )
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 2
 // Checksum 0xdade489e, Offset: 0xec0
 // Size: 0x28c
@@ -182,7 +182,7 @@ function cleanup_step_1( var_a276c861, var_19e802fa )
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0x9dbf78f1, Offset: 0x1158
 // Size: 0x198
@@ -205,28 +205,28 @@ function function_55b79f54()
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0xf3a59301, Offset: 0x12f8
 // Size: 0x16c
 function init_sticks()
 {
-    var_e036b66c = getentarray( "stick_man_stick", "script_noteworthy" );
+    a_mdl_sticks = getentarray( "stick_man_stick", "script_noteworthy" );
     
-    foreach ( mdl_stick in var_e036b66c )
+    foreach ( mdl_stick in a_mdl_sticks )
     {
         mdl_stick.s_form = struct::get( mdl_stick.target );
         mdl_stick.s_fall = struct::get( mdl_stick.targetname );
         mdl_stick thread function_e8f819b0();
     }
     
-    level.var_94975706 = 0;
+    level.n_sticks = 0;
     level waittill( #"hash_68c10418963ac1fc" );
     array::run_all( getentarray( "stick_man_stick", "script_noteworthy" ), &delete );
     hidemiscmodels( "misc_sticks" );
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0xf62c2e90, Offset: 0x1470
 // Size: 0x1da
@@ -257,7 +257,7 @@ function function_e8f819b0()
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0xa6af9c4b, Offset: 0x1658
 // Size: 0xb8
@@ -280,15 +280,15 @@ function function_ff1dea25()
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 1
 // Checksum 0x93e9824e, Offset: 0x1718
 // Size: 0x1a4
 function function_1ca135cf( n_int )
 {
-    level.var_94975706++;
+    level.n_sticks++;
     
-    if ( level.var_94975706 >= 5 )
+    if ( level.n_sticks >= 5 )
     {
         level flag::set( #"stick_done" );
     }
@@ -298,7 +298,7 @@ function function_1ca135cf( n_int )
     s_scene = struct::get( str_scene, "scriptbundlename" );
     s_scene scene::play( "Shot 2" );
     
-    if ( level.var_94975706 == 1 )
+    if ( level.n_sticks == 1 )
     {
         e_bush = getent( "burning_man_shrub", "targetname" );
         e_bush clientfield::set( "" + #"stick_fire", 1 );
@@ -309,7 +309,7 @@ function function_1ca135cf( n_int )
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 1
 // Checksum 0xf1386e2c, Offset: 0x18c8
 // Size: 0x8c
@@ -324,7 +324,7 @@ function function_4b15ba35( a_ents )
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0xfa0e54d7, Offset: 0x1960
 // Size: 0x19c
@@ -351,7 +351,7 @@ function function_7c9b48a9()
     self.var_8be24fed delete();
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0xaa1fa6ce, Offset: 0x1b08
 // Size: 0xce
@@ -375,7 +375,7 @@ function function_f2071006()
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 1
 // Checksum 0xef4e0f5d, Offset: 0x1be0
 // Size: 0x184
@@ -406,7 +406,7 @@ function init_step_2( var_a276c861 )
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 2
 // Checksum 0x9f73e9ba, Offset: 0x1d70
 // Size: 0x1dc
@@ -446,13 +446,13 @@ function cleanup_step_2( var_5ea5c94d, ended_early )
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0, eflags: 0x4
 // Checksum 0xcbe6f55e, Offset: 0x1f58
 // Size: 0x3fc
 function private function_2345b68a()
 {
-    foreach ( mdl_pic in level.var_d70578ff )
+    foreach ( mdl_pic in level.a_mdl_pics )
     {
         if ( isdefined( mdl_pic.s_trig.s_unitrigger ) )
         {
@@ -504,7 +504,7 @@ function private function_2345b68a()
     #/
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0, eflags: 0x4
 // Checksum 0x30448702, Offset: 0x2360
 // Size: 0xd4
@@ -531,7 +531,7 @@ function private function_44a7951d()
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0, eflags: 0x4
 // Checksum 0x4d72e0c6, Offset: 0x2440
 // Size: 0xa4
@@ -549,7 +549,7 @@ function private function_4aa24b78()
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0, eflags: 0x4
 // Checksum 0xc5659002, Offset: 0x24f0
 // Size: 0x4cc
@@ -642,7 +642,7 @@ function private function_36d70cbd()
     level thread function_d8ca90b7();
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0, eflags: 0x4
 // Checksum 0x1b746967, Offset: 0x29c8
 // Size: 0x166
@@ -682,7 +682,7 @@ function private function_8a51807c()
     return player;
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0, eflags: 0x4
 // Checksum 0xbdea5eb6, Offset: 0x2b38
 // Size: 0x1e8
@@ -716,7 +716,7 @@ function private function_d8ca90b7()
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 1, eflags: 0x4
 // Checksum 0x908eeb, Offset: 0x2d28
 // Size: 0xba4
@@ -839,7 +839,7 @@ function private function_959fcbff( player )
     player thread function_614e461();
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0, eflags: 0x4
 // Checksum 0xf5c3b1cc, Offset: 0x38d8
 // Size: 0xe0
@@ -857,7 +857,7 @@ function private function_3b71b7a7()
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0, eflags: 0x4
 // Checksum 0xe02bc902, Offset: 0x39c0
 // Size: 0x154
@@ -885,7 +885,7 @@ function private function_25a79bc1()
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0, eflags: 0x4
 // Checksum 0xe10b3bcc, Offset: 0x3b20
 // Size: 0xa0
@@ -897,7 +897,7 @@ function private function_3ce20299()
     level notify( #"hash_132b5b79b9aeaf9e" );
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0, eflags: 0x4
 // Checksum 0x365a2ac7, Offset: 0x3bc8
 // Size: 0xa8
@@ -910,7 +910,7 @@ function private function_eabb32ca()
     level notify( #"hash_132b5b79b9aeaf9e" );
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0, eflags: 0x4
 // Checksum 0xb30b56ec, Offset: 0x3c78
 // Size: 0x228
@@ -938,7 +938,7 @@ function private function_9e01297e()
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0, eflags: 0x4
 // Checksum 0x20485fbb, Offset: 0x3ea8
 // Size: 0xa6
@@ -956,7 +956,7 @@ function private function_e7144c05()
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0, eflags: 0x4
 // Checksum 0xfd2eff24, Offset: 0x3f58
 // Size: 0x58
@@ -971,7 +971,7 @@ function private function_e84d4271()
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0, eflags: 0x4
 // Checksum 0xce7d2c46, Offset: 0x3fb8
 // Size: 0x144
@@ -992,7 +992,7 @@ function private function_614e461()
     self zm_vo::vo_say( #"hash_686081486f39f8a5", 0, 1, 9999, 1, 1 );
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0xe4dc593f, Offset: 0x4108
 // Size: 0x140
@@ -1017,7 +1017,7 @@ function function_c5c7d880()
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 1
 // Checksum 0x725e7941, Offset: 0x4250
 // Size: 0x2e
@@ -1029,7 +1029,7 @@ function function_707f7801( _hash )
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0, eflags: 0x4
 // Checksum 0x9aa92af, Offset: 0x4288
 // Size: 0x28c
@@ -1067,7 +1067,7 @@ function private stick_guide()
     level.e_guide thread lead_player( nd_start, player );
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0x89f65a6f, Offset: 0x4520
 // Size: 0x1bc
@@ -1089,7 +1089,7 @@ function function_6f6fef08()
     mdl_stone thread function_31e641f5();
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0xab67cc94, Offset: 0x46e8
 // Size: 0x4d4
@@ -1158,7 +1158,7 @@ function function_31e641f5()
     level thread zm_unitrigger::unregister_unitrigger( self.s_unitrigger );
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0xc0f924aa, Offset: 0x4bc8
 // Size: 0x186
@@ -1179,7 +1179,7 @@ function function_e3eb2cfd()
     var_47323b73 = mdl_stone zm_unitrigger::create( undefined, 96, &function_c9ebaa3 );
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0xbdf5c1c2, Offset: 0x4d58
 // Size: 0xb0
@@ -1201,7 +1201,7 @@ function function_c9ebaa3()
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0x8433bbdf, Offset: 0x4e10
 // Size: 0x10c
@@ -1221,7 +1221,7 @@ function function_78a99a79()
     level flag::set( #"cemetery_open" );
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0x17a0d119, Offset: 0x4f28
 // Size: 0x150
@@ -1252,7 +1252,7 @@ function function_6ae66179()
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0x614ef992, Offset: 0x5080
 // Size: 0x1cc
@@ -1282,7 +1282,7 @@ function function_50955e48()
     self thread zm_vo::function_a2bd5a0c( "vox_wicker_comp_react", 0, 1, 9999, 1, 0, 0 );
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 1
 // Checksum 0xd2bb4d80, Offset: 0x5258
 // Size: 0x78
@@ -1294,7 +1294,7 @@ function function_599edfb8( a_ents )
     level notify( #"hash_68c10418963ac1fc" );
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 1, eflags: 0x4
 // Checksum 0x994e671a, Offset: 0x52d8
 // Size: 0x124
@@ -1315,7 +1315,7 @@ function private function_d14e2180( var_d62b4d4 )
     self clientfield::set( "" + #"sacrifice_player", 0 );
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 1, eflags: 0x4
 // Checksum 0x82eb5b88, Offset: 0x5408
 // Size: 0xce
@@ -1338,7 +1338,7 @@ function private function_a0a113c9( str_notify )
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0, eflags: 0x4
 // Checksum 0x6b156504, Offset: 0x54e0
 // Size: 0x7e
@@ -1352,7 +1352,7 @@ function private function_79ad31a0()
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0xaf1955, Offset: 0x5568
 // Size: 0xe8
@@ -1385,7 +1385,7 @@ function trigger_stick_man()
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0, eflags: 0x4
 // Checksum 0x63f170cf, Offset: 0x5658
 // Size: 0x254
@@ -1429,7 +1429,7 @@ function private player_stuck()
     self thread function_21f38255( b_watcher );
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 1, eflags: 0x4
 // Checksum 0x37b92485, Offset: 0x58b8
 // Size: 0x1bc
@@ -1458,7 +1458,7 @@ function private function_21f38255( b_watcher )
     level flag::clear( #"stick_ready" );
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0, eflags: 0x4
 // Checksum 0xca3262d5, Offset: 0x5a80
 // Size: 0x17a
@@ -1478,7 +1478,7 @@ function private function_1e60e7d2()
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 1, eflags: 0x4
 // Checksum 0x4834de47, Offset: 0x5c08
 // Size: 0xbc
@@ -1495,7 +1495,7 @@ function private function_be4a0b7a( n_timeout )
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 2
 // Checksum 0x99fb3b7e, Offset: 0x5cd0
 // Size: 0x5cc
@@ -1551,7 +1551,7 @@ function lead_player( nd_start, player )
     self delete();
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 1
 // Checksum 0x394c6a27, Offset: 0x62a8
 // Size: 0x34c
@@ -1604,7 +1604,7 @@ function function_45cfa31( mdl_ghost )
     self zm_vo::vo_say( var_80192cb1, 0, 1, 9999, 1, 1, 1 );
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0x1bb41119, Offset: 0x6600
 // Size: 0x1d0
@@ -1644,7 +1644,7 @@ function function_48aadc5d()
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0, eflags: 0x4
 // Checksum 0x4f0207f9, Offset: 0x67d8
 // Size: 0x14e
@@ -1670,7 +1670,7 @@ function private function_aad579ef()
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 1
 // Checksum 0x3a5e96c6, Offset: 0x6930
 // Size: 0xa0
@@ -1688,7 +1688,7 @@ function function_9bd05071( player )
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 1
 // Checksum 0x449cde95, Offset: 0x69d8
 // Size: 0xa4
@@ -1705,7 +1705,7 @@ function init_step_3( var_a276c861 )
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 2
 // Checksum 0xcd4c886, Offset: 0x6a88
 // Size: 0x1ce
@@ -1739,7 +1739,7 @@ function cleanup_step_3( var_5ea5c94d, ended_early )
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0x38447bbe, Offset: 0x6c60
 // Size: 0x19c
@@ -1761,7 +1761,7 @@ function cemetery_defend()
     level thread function_8f5a048e();
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0xd98bc73c, Offset: 0x6e08
 // Size: 0x10c
@@ -1786,7 +1786,7 @@ function function_cdacc87c()
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0x1a749d13, Offset: 0x6f20
 // Size: 0x27c
@@ -1849,7 +1849,7 @@ function wave_1()
     level thread function_2bffa0a5();
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 1
 // Checksum 0xcb481ada, Offset: 0x71a8
 // Size: 0x18
@@ -1858,7 +1858,7 @@ function function_c9775ddf( params )
     level.var_ba177d48--;
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0x18937f5, Offset: 0x71c8
 // Size: 0x5c
@@ -1874,7 +1874,7 @@ function function_2bffa0a5()
     level flag::set( #"hash_684b700932f4018f" );
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0xa8316a16, Offset: 0x7230
 // Size: 0x374
@@ -1955,7 +1955,7 @@ function wave_2()
     level thread function_93b1a1a4();
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 1
 // Checksum 0x4158a0a2, Offset: 0x75b0
 // Size: 0x18
@@ -1964,7 +1964,7 @@ function function_d1027329( params )
     level.var_3c6f81fe--;
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0xab59ed46, Offset: 0x75d0
 // Size: 0x74
@@ -1980,7 +1980,7 @@ function function_93b1a1a4()
     level flag::set( #"hash_6100d5ec10bed5cc" );
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0xc9ddc075, Offset: 0x7650
 // Size: 0x224
@@ -2034,7 +2034,7 @@ function wave_3()
     level thread function_b77d225a();
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 1
 // Checksum 0xb712d2c8, Offset: 0x7880
 // Size: 0x18
@@ -2043,7 +2043,7 @@ function function_10aefe00( params )
     level.var_50b2aa84--;
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0x19f2810e, Offset: 0x78a0
 // Size: 0x5c
@@ -2059,7 +2059,7 @@ function function_b77d225a()
     level flag::set( #"hash_12f4b41ff140e181" );
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0x5945e0eb, Offset: 0x7908
 // Size: 0x43c
@@ -2150,7 +2150,7 @@ function wave_4()
     level thread function_2268f8e8();
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 1
 // Checksum 0x171e75d6, Offset: 0x7d50
 // Size: 0x18
@@ -2159,7 +2159,7 @@ function function_1736030d( params )
     level.var_a908db33--;
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0x4fbb06fb, Offset: 0x7d70
 // Size: 0x54
@@ -2175,7 +2175,7 @@ function function_2268f8e8()
     level flag::set( #"hash_6a70f9021505a71e" );
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0xf363b056, Offset: 0x7dd0
 // Size: 0xce
@@ -2188,7 +2188,7 @@ function function_8f5a048e()
     level.var_84b2907f = undefined;
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 1
 // Checksum 0x6e912eb4, Offset: 0x7ea8
 // Size: 0xc8
@@ -2213,7 +2213,7 @@ function function_cd4923( ai )
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 1
 // Checksum 0xed049110, Offset: 0x7f78
 // Size: 0x1f2
@@ -2247,7 +2247,7 @@ function function_9ca03a70( str_script_noteworthy = "bat_location" )
     return array::remove_undefined( a_s_spawns );
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 1
 // Checksum 0x5890d288, Offset: 0x8178
 // Size: 0x5c
@@ -2259,7 +2259,7 @@ function function_9c6147b1( n_max = 24 )
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0x9de39252, Offset: 0x81e0
 // Size: 0x6c
@@ -2271,7 +2271,7 @@ function function_f3668a9()
     level flag::set( #"zombie_drop_powerups" );
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0x4a09e80f, Offset: 0x8258
 // Size: 0x15c
@@ -2291,7 +2291,7 @@ function function_97ea199a()
     level thread mansion_util::function_f1c106b( "loc3", 0 );
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0xa73697e9, Offset: 0x83c0
 // Size: 0x446
@@ -2307,25 +2307,25 @@ function function_2c554640()
     mdl_pic_brigadier.var_3916fb8b = #"p8_zm_headstone_engraving_1918";
     mdl_pic_butler.var_3916fb8b = #"p8_zm_headstone_engraving_1927";
     mdl_pic_gunslinger.var_3916fb8b = #"p8_zm_headstone_engraving_1945";
-    level.var_d70578ff = array( mdl_pic_gypsy, mdl_pic_brigadier, mdl_pic_butler, mdl_pic_gunslinger );
+    level.a_mdl_pics = array( mdl_pic_gypsy, mdl_pic_brigadier, mdl_pic_butler, mdl_pic_gunslinger );
     
-    for ( i = 0; i < level.var_d70578ff.size ; i++ )
+    for ( i = 0; i < level.a_mdl_pics.size ; i++ )
     {
-        level.var_d70578ff[ i ].origin = a_s_locs[ i ].origin;
-        level.var_d70578ff[ i ].angles = a_s_locs[ i ].angles;
-        level.var_d70578ff[ i ].s_loc = a_s_locs[ i ];
-        level.var_d70578ff[ i ] setscale( a_s_locs[ i ].modelscale );
-        level.var_d70578ff[ i ].s_trig = struct::get( a_s_locs[ i ].target );
-        level.var_d70578ff[ i ].s_trig.n_character_index = level.var_d70578ff[ i ].character_index;
-        level.var_d70578ff[ i ].s_trig zm_unitrigger::create( undefined, ( 64, 64, 100 ), &turn_to_zombie_damage_ );
-        level.var_d70578ff[ i ].mdl_bd = util::spawn_model( level.var_d70578ff[ i ].var_3916fb8b, a_s_locs[ i ].origin + anglestoup( level.var_d70578ff[ i ].angles ) * -19, a_s_locs[ i ].angles );
-        level.var_d70578ff[ i ].mdl_bd setscale( 0.55 );
-        var_fbd8294c = util::spawn_model( #"p8_zm_headstone_engraving_died", a_s_locs[ i ].origin + anglestoup( level.var_d70578ff[ i ].angles ) * -12, a_s_locs[ i ].angles );
+        level.a_mdl_pics[ i ].origin = a_s_locs[ i ].origin;
+        level.a_mdl_pics[ i ].angles = a_s_locs[ i ].angles;
+        level.a_mdl_pics[ i ].s_loc = a_s_locs[ i ];
+        level.a_mdl_pics[ i ] setscale( a_s_locs[ i ].modelscale );
+        level.a_mdl_pics[ i ].s_trig = struct::get( a_s_locs[ i ].target );
+        level.a_mdl_pics[ i ].s_trig.n_character_index = level.a_mdl_pics[ i ].character_index;
+        level.a_mdl_pics[ i ].s_trig zm_unitrigger::create( undefined, ( 64, 64, 100 ), &turn_to_zombie_damage_ );
+        level.a_mdl_pics[ i ].mdl_bd = util::spawn_model( level.a_mdl_pics[ i ].var_3916fb8b, a_s_locs[ i ].origin + anglestoup( level.a_mdl_pics[ i ].angles ) * -19, a_s_locs[ i ].angles );
+        level.a_mdl_pics[ i ].mdl_bd setscale( 0.55 );
+        var_fbd8294c = util::spawn_model( #"p8_zm_headstone_engraving_died", a_s_locs[ i ].origin + anglestoup( level.a_mdl_pics[ i ].angles ) * -12, a_s_locs[ i ].angles );
         var_fbd8294c setscale( 0.55 );
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0x33d9b32a, Offset: 0x8810
 // Size: 0xe8
@@ -2347,7 +2347,7 @@ function turn_to_zombie_damage_()
     }
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 0
 // Checksum 0x130e8680, Offset: 0x8900
 // Size: 0x22
@@ -2361,7 +2361,7 @@ function function_8b12e689()
     return undefined;
 }
 
-// Namespace namespace_b6ca3ccc/zm_mansion_stick_man
+// Namespace mansion_stick_man/zm_mansion_stick_man
 // Params 1
 // Checksum 0xbd8e6677, Offset: 0x8930
 // Size: 0x100
