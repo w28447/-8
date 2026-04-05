@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f5244d58c75c316021b603516a53917874dd69f3c7661fdcfe11f4f9b20083fa
-size 289
+{
+    "backingsmall": "image#hash_75692c1dbf2e3c49",
+    "widget": "BadasseryMedal",
+    "name": "events_radiation_field_multikill_2",
+    "backinglarge": "image#hash_75692c1dbf2e3c49",
+    "iconsmall": "image#hash_776d1b4ece5247fc",
+    "iconlarge": "image#hash_776d1b4ece5247fc"
+}

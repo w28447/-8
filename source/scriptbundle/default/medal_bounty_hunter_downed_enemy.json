@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6c6eca5f55035fd4c8fe5ccd8d61fb419f0ebf931a96b98f5fcc1123a3bf359c
-size 417
+{
+    "description": "localized17#medal/bounty_hunter_downed_enemy_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_bounty_hunter_downed_enemy",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#hash_a5ed5970eb3881b",
+    "stringref": "localized17#medal/bounty_hunter_downed_enemy",
+    "iconlarge": "image#hash_49eed175696e37bb"
+}

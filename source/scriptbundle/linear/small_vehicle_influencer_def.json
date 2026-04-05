@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ab3e36d6f6507010e1a5c8a922b33378b8a1e951b39bcd907d575940ecf5136a
-size 227
+{
+    "type": "linear",
+    "vmtype": "server",
+    "threat_score_max_same": 4,
+    "range_max": 750,
+    "name": "small_vehicle_influencer_def",
+    "score_min": 1,
+    "lifetime": 5,
+    "threat_score_max_other": 4
+}

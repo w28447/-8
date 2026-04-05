@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:38e6bacb8378d44212120376f540be3753991ff73b792677003e0a661b6c4e43
-size 240
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_you_just_cant_beat_a_person_who_wont_give_up",
+    "quote": "localized17#hash_201e20ba1b451361",
+    "author": "localized17#hash_2c4c94f7199199a5"
+}

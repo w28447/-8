@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b202eaa805ba4398e7240b0475d008f229802fb83560bf3cb5c7a9942a651dc0
-size 187
+{
+    "loot03_ui_icon_blackmarket_itemshop_bundle_demohammer:hash_6c274f86": "image#loot03_ui_icon_blackmarket_itemshop_bundle_demohammer",
+    "name": "melee_demohammer_bundle_shop"
+}

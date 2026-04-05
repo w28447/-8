@@ -1,3 +1,80 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:503e06df89bca85ed941bb25fc8306aafd7be00939d62e782bd1c6cabe0e9618
-size 2365
+{
+    "keys": [
+        {
+            "name": "#zm_mansion_fj_stream",
+            "xPakEntry": {
+                "key": "#hash_e719b446e2117621",
+                "offset": 0,
+                "size": 0,
+                "xpakIndex": 0,
+                "compressed": false,
+                "valid": false,
+                "adjacentLeftType": 0,
+                "adjacentRightType": 0,
+                "adjacentLeft": 0,
+                "adjacentRight": 0
+            },
+            "size": 268288,
+            "unk44": 512,
+            "unk46": 5,
+            "keyFlags": 3
+        },
+        {
+            "name": "#zm_mansion_fj_loaded",
+            "xPakEntry": {
+                "key": "#hash_e441b123c35f53de",
+                "offset": 0,
+                "size": 0,
+                "xpakIndex": 0,
+                "compressed": false,
+                "valid": false,
+                "adjacentLeftType": 0,
+                "adjacentRightType": 0,
+                "adjacentLeft": 0,
+                "adjacentRight": 0
+            },
+            "size": 2048,
+            "unk44": 512,
+            "unk46": 5,
+            "keyFlags": 1
+        },
+        {
+            "name": "#hash_657d043830b9353e",
+            "xPakEntry": {
+                "key": "#hash_e7f7840612a68f1b",
+                "offset": 0,
+                "size": 0,
+                "xpakIndex": 0,
+                "compressed": false,
+                "valid": false,
+                "adjacentLeftType": 0,
+                "adjacentRightType": 0,
+                "adjacentLeft": 0,
+                "adjacentRight": 0
+            },
+            "size": 4096,
+            "unk44": 512,
+            "unk46": 5,
+            "keyFlags": 3
+        },
+        {
+            "name": "#hash_6a656434e956bd3f",
+            "xPakEntry": {
+                "key": "#hash_e441b123c35f53de",
+                "offset": 0,
+                "size": 0,
+                "xpakIndex": 0,
+                "compressed": false,
+                "valid": false,
+                "adjacentLeftType": 0,
+                "adjacentRightType": 0,
+                "adjacentLeft": 0,
+                "adjacentRight": 0
+            },
+            "size": 2048,
+            "unk44": 512,
+            "unk46": 5,
+            "keyFlags": 1
+        }
+    ]
+}

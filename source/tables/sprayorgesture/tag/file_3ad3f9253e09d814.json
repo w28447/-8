@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6189f58c7c021ce7f7670ec7703b723021b072d6fdd251bef5aee5ef1199ec0b
-size 293
+{
+    "name": "#hash_3ad3f9253e09d814",
+    "type": "#tag",
+    "material": "#hash_69ade482789e4210",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_626f717d17a08170",
+        "icon": "image#loot_ui_icon_tags_warriors_ajax",
+        "isdefault": 0
+    }
+}

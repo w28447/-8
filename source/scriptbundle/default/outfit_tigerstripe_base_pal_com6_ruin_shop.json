@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:99bf5beac0f6e9181f0a53fd3e0c0f3e626e19b8462ca6a0cd7e6182993d9c5f
-size 137
+{
+    "hash_3b27f83909d8ab03:hash_6c274f86": "image#hash_3b27f83909d8ab03",
+    "name": "outfit_tigerstripe_base_pal_com6_ruin_shop"
+}

@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:89b5b37274bbe94aec011b9052ecde13d96428da7096b017b4ffd5ca8213a660
-size 500
+{
+    "buttonimage": "image#ui_menu_blackmarket_shamrockandawe_01",
+    "popupimage": "image#ui_menu_blackmarket_shamrockandawe_large_01",
+    "nametext": "localized17#hash_3c3daa7993ced02",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
+    "name": "shamrock_shock_and_awe_2019",
+    "desctext": "localized17#hash_6528fd38cc10bf92",
+    "previewimage": "image#ui_menu_blackmarket_shamrockandawe_preview_01",
+    "reserveimage": "image#ui_menu_blackmarket_shamrockandawe_wide_01"
+}

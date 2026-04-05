@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6d1bf564956556b0ddc270a78aab9f16d1d055268f279b32f1b4e7004a28ab3c
-size 295
+{
+    "name": "#hash_7e1c6fd1fee137bc",
+    "type": "#tag",
+    "material": "#hash_237495af92356628",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_5df99a8051805288",
+        "icon": "image#loot_ui_icon_tags_warriors_torque",
+        "isdefault": 0
+    }
+}

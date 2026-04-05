@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f3988aca0896533ae36ac966157aa659afed6d3f28bb3926441eeaeefebf4ba8
-size 1034
+{
+    "itemlist": [
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&launcher_standard_t8_item",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&cluster_semtex_wz_item",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&concussion_wz_item",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "maxweight": 50,
+            "available": 1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 12000,
+    "type": "itemspawnlist",
+    "hash_345eba59": 4,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "supply_stash_slot_limit_world_high_value",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0,
+    "supplystash": 1
+}

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:11dd54924cd34b98998881a48b0819a1dc08a37f9b0af32f6e5fa9bd844f9681
-size 228
+{
+    "hash_94166112": "model#",
+    "name": "c_t8_bo_wingsuit_merica",
+    "icon": "loot_ui_icon_jumppacks_wingsuit_merica",
+    "largeicon": "loot_ui_icon_jumppacks_wingsuit_merica_large",
+    "hash_5677bd3d": "model#"
+}

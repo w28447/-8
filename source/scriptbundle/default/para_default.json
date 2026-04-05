@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fcac5af03f1ff360fe7a73f6423b024acf7436185a3909af41d95af8d18fc79d
-size 229
+{
+    "name": "para_default",
+    "parachute": "weapon#parachute_wz",
+    "icon": "loot_ui_icon_jumppacks_parachute_default",
+    "largeicon": "loot_ui_icon_jumppacks_parachute_default_large",
+    "parachutelit": "model#"
+}

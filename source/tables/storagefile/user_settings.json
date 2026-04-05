@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9a29211fcf80c61dd082df32333a75a264d1d97c607f0e3dbddb1b0554f0e741
-size 362
+{
+    "nameStr": "user_settings",
+    "name": "#user_settings",
+    "ddlPath": "#gamedata/ddl/generated/profile_common.ddl",
+    "files": [
+        {
+            "fileName": "user_settings"
+        }
+    ],
+    "size": 3072,
+    "readOnLogin": true,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
+}

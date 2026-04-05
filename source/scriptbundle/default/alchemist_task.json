@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8fd547e635136bfb6e01b00cdf386a596db9a4490d1cf5a0d8015ff056474416
-size 318
+{
+    "callingtask": "#hash_67f429ee3f93764d",
+    "configstringfiletype": "scriptbundle",
+    "image": "image#ui_icon_zm_calling_tasks_elixirused",
+    "dailytarget": 25,
+    "name": "alchemist_task",
+    "taskname": "localized17#hash_30bbd96bc85e8938",
+    "descsimple": "localized17#hash_41bef1e20669e99b"
+}

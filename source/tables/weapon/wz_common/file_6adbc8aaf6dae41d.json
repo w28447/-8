@@ -1,3 +1,89 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:04f76974408c28bf181a407dfa966cc3344fa1065702206885c024c9cb40fe27
-size 3573
+{
+    "name": "#hash_6adbc8aaf6dae41d",
+    "baseWeapon": "#hash_5cbd4b0312ddb5ff",
+    "displayname": "#weapon/tripwire",
+    "weapon40": "#hash_6adbc8aaf6dae41d",
+    "weapon70": "#eq_tripwire",
+    "streamkey": "#hash_33ba12bbc94be0bd",
+    "worldModelTagRight": "tag_weapon_right",
+    "worldModelTagLeft": "tag_weapon_left",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_weapon_left",
+    "scrstr_11a4": "tag_inhand",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 200,
+    "soundrattlerangemax": 600,
+    "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "WARZONE",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": true,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": true,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "sound90": "#hash_a9f83dd9717b805",
+    "soundc0": "#hash_462d0e554ac5e796",
+    "firesound": "#hash_4f4ad2924a596c86",
+    "firesoundplayer": "#hash_46b331928d7425ab",
+    "gadgetreadysoundplayer": "#hash_70411b49aeaa8f87",
+    "sound660": "#uin_unavailable_charging",
+    "projexplosionsound": "#exp_tripwire",
+    "projexplosionsoundplayer": "#exp_tripwire",
+    "sound7d0": "#hash_a5579115a16f4fb",
+    "hitsound": "#hash_644a18cd873e501d",
+    "tunables1": "#hash_5e7d21903c182e4f",
+    "tunables2": "#hash_5e7d21903c182e4f",
+    "cacWeaponXCam": "#hash_4c52178dd6886a99",
+    "sharedWeaponSounds": "#equipment",
+    "statusEffects": [
+        {
+            "effect": "#hash_a608bf886a137e8e",
+            "statusEffects:unk8": "[ll0x0=fa00000032][f0x0=7.00649e-44][f0x4=3.50325e-43] 32 00 00 00 fa 00 00 00",
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        }
+    ],
+    "customsettings": "#tripwire_custom_settings",
+    "#hash_2e4a8800": "#eq_tripwire_scoreevents",
+    "projectilemodel": "#hash_22e8d1ae72884594",
+    "viewmodel": [
+        "#wpn_t8_eqp_tripwire_slingshot_view"
+    ],
+    "worldModel": [
+        "#wpn_t8_eqp_tripwire_slingshot_world"
+    ],
+    "gadgetIconAvailable": "#ui_icon_equipment_eq_tripwire",
+    "inventoryIconZm": "#ui_icon_equipment_tripwire_dark",
+    "hudIcon": "#ui_icon_equipment_tripwire",
+    "image_e90": "#ui_icon_obit_tripwire",
+    "image_1048": "#ui_icon_equipment_tripwire",
+    "rumble_de8": "#grenade_rumble",
+    "fx_f00": "#hash_dfdd021d80dd8fc6",
+    "underwaterExplosionSurfaceFX": [
+        "#hash_5f190015ac9ded95",
+        "#hash_1206d75150c2464e",
+        "#hash_260fafe2e7ced71c"
+    ],
+    "#hash_96850284": "#jammer_tripwire",
+    "#hash_26f68e75": "#icepick_tripwire",
+    "normalImpactFX": "#hash_3d863221d143a54e",
+    "bounceImpactFX": "#hash_65f5dfacee65c150",
+    "normalImpactSounds": "#hash_e8e0a97bbbf0b555",
+    "bounceImpactSounds": "#hash_7905f2122952daa8"
+}

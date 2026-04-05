@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d1b437c8b491149d04be065bbb2f533a2412f3515004ee7d0eef4f9a24f792e3
-size 580
+{
+    "hinttext": "localized17#menu/hit_markers_hint",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value3": "2",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "allow_hit_markers",
+    "displayname": "localized17#menu/hit_markers",
+    "label1": "localized17#menu/disabled",
+    "label3": "localized17#menu/enabled",
+    "label2": "localized17#menu/off_for_tacticals",
+    "hash_54e336e4": 0,
+    "optionscount": 3,
+    "hash_765cfd09": 0,
+    "setting": "allowhitmarkers",
+    "isenableddisabled": 0
+}

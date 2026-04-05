@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fd0d7c4b22b2df1f2d2d737204d5435e687f5558554368338b53041aa47fd04b
-size 285
+{
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
+    "widget": "BadasseryMedal",
+    "name": "events_tempest_collateral_kill",
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_302f134ce7bed15a",
+    "iconlarge": "image#hash_302f134ce7bed15a"
+}

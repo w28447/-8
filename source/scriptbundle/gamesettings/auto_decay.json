@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8b4d3886d3274ce671915b8f8c73fa4b2d87d05ed2a32a648f1115177f70e217
-size 761
+{
+    "hinttext": "localized17#menu/auto_decay_time_hint",
+    "configstringfiletype": "scriptbundle",
+    "value8": "15",
+    "value9": "20",
+    "value2": "1",
+    "value3": "2",
+    "value1": "0",
+    "value6": "5",
+    "value7": "10",
+    "value4": "3",
+    "value5": "4",
+    "value11": "30",
+    "value10": "25",
+    "value12": "45",
+    "type": "gamesettings",
+    "label": "localized17#menu/x_seconds",
+    "hash_5a6dee5a": 0,
+    "name": "auto_decay",
+    "displayname": "localized17#menu/auto_decay_time",
+    "label1": "localized17#menu/disabled",
+    "label2": "localized17#menu/1_second",
+    "hash_54e336e4": 0,
+    "optionscount": 12,
+    "hash_765cfd09": 0,
+    "setting": "autoDecayTime",
+    "isenableddisabled": 0
+}

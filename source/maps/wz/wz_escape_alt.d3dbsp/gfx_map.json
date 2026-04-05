@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5aa2f4be62fceba276934d295e40d6e6ce8098d9c8a8c92bdf801129a68fd91c
-size 351
+{
+    "name": "#maps/wz/wz_escape_alt.d3dbsp",
+    "baseName": "wz_escape_alt",
+    "lutMaterial": "#hash_33fd8dd681a14d35",
+    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "unk550": [
+        "#hash_3bbc41c0fab9117c",
+        "#hash_3bbc41c0fab9117c",
+        "#hash_3bbc41c0fab9117c",
+        "#hash_3bbc41c0fab9117c"
+    ]
+}

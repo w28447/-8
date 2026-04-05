@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4dd8a54317e008ea06e188d7fcffbd8db5d08c1660c1acfa56ba30412ccc2b19
-size 355
+{
+    "detailsicon": "image#loot07_ui_icon_blackmarket_itemdetail_bundle_tedd",
+    "loot07_ui_icon_blackmarket_itemshop_bundle_tedd": "image#loot07_ui_icon_blackmarket_itemshop_bundle_tedd",
+    "nametext": "localized17#menu/contract_tedd",
+    "name": "loot_character_tedd_sunset_bundle_shop",
+    "desctext": "localized17#hash_77e06ce609d9272a"
+}

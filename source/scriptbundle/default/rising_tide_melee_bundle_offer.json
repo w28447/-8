@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a58244f0de71a1869ac01743f22d0674ca9ea5ef1a87c96160cc9d3134643d91
-size 529
+{
+    "buttonimage": "image#ui_icon_blackmarket_promos_rising_tide_button_small",
+    "popupimage": "image#ui_icon_blackmarket_promos_rising_tide_large",
+    "nametext": "localized17#hash_4acbcd847d11b9d3",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
+    "name": "rising_tide_melee_bundle_offer",
+    "desctext": "localized17#hash_446d8fcf964b8585",
+    "previewimage": "image#ui_icon_blackmarket_promos_rising_tide_preview",
+    "reserveimage": "image#ui_icon_blackmarket_promos_rising_tide_button_large"
+}

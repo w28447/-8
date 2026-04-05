@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0a7b73fb2b498d550a99cb1d87c435fe549c980b78282f3e1d198d7de559632c
-size 643
+{
+    "name": "mp_jungle2_alt.en",
+    "zone": "mp_jungle2_alt",
+    "gameLanguage": "english",
+    "soundLanguage": "en",
+    "nameHash": "#mp_jungle2_alt.en",
+    "patchZone": true,
+    "alias": [],
+    "duck": [],
+    "ambients": [],
+    "scriptIdLookups": [],
+    "streamKeysSABL": {
+        "streamKey1": "#mp_jungle2_alt_en_stream",
+        "dataSize1": 2048,
+        "fileKey": "#mp_jungle2_alt_en_loaded",
+        "fileLen": 2048
+    },
+    "streamKeysSABS": {
+        "streamKey1": "#hash_59754a8cd836e65b",
+        "dataSize1": 2048,
+        "fileKey": "#hash_1925365807a102f2",
+        "fileLen": 2048
+    }
+}

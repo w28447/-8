@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:30b6991f0dba28f178b7360969c9e420bdc925ed92e770242567c26c199e1dfa
-size 550
+{
+    "buttonimage": "image#ui_icon_blackmarket_promos_summer_battery_button_small",
+    "popupimage": "image#ui_icon_blackmarket_promos_summer_battery_large_preview",
+    "nametext": "localized17#hash_617fe0a3e2ee2e72",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
+    "name": "daysofsummer_triple_play_01",
+    "desctext": "localized17#hash_7329da835eb1d0e2",
+    "previewimage": "image#ui_icon_blackmarket_promos_summer_battery_item_detail",
+    "reserveimage": "image#ui_icon_blackmarket_promos_summer_battery_button_large"
+}

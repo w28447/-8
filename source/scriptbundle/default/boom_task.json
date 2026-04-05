@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3e9bebc9d39559fb4ac50c14732d4611a15e8348c6fbf16cc394bb46b3b048aa
-size 302
+{
+    "callingtask": "#explosions",
+    "configstringfiletype": "scriptbundle",
+    "image": "image#ui_icon_zm_calling_tasks_explosion",
+    "dailytarget": 100,
+    "name": "boom_task",
+    "taskname": "localized17#hash_2ce2f2315e90d031",
+    "descsimple": "localized17#hash_432042eb16be5070"
+}

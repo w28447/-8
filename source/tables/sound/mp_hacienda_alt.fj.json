@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9b487e48ec116f406756fc565b92fcfa42e59ba34142f071faace9efd85bd483
-size 654
+{
+    "name": "mp_hacienda_alt.fj",
+    "zone": "mp_hacienda_alt",
+    "gameLanguage": "japanese_full",
+    "soundLanguage": "fj",
+    "nameHash": "#mp_hacienda_alt.fj",
+    "patchZone": true,
+    "alias": [],
+    "duck": [],
+    "ambients": [],
+    "scriptIdLookups": [],
+    "streamKeysSABL": {
+        "streamKey1": "#mp_hacienda_alt_fj_stream",
+        "dataSize1": 2048,
+        "fileKey": "#mp_hacienda_alt_fj_loaded",
+        "fileLen": 2048
+    },
+    "streamKeysSABS": {
+        "streamKey1": "#hash_58443843ab31c7aa",
+        "dataSize1": 2048,
+        "fileKey": "#hash_200bb4d00766a03b",
+        "fileLen": 2048
+    }
+}

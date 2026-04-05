@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1953278950c2e49123148544d78450a68ed5221dd18c2236cb3293d45e3ebfdb
-size 450
+{
+    "description": "localized17#medal/overwatch_helicopter_killjoy_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_overwatch_helicopter_killjoy",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_destroy_overwatch",
+    "stringref": "localized17#medal/overwatch_helicopter_killjoy",
+    "iconlarge": "image#ui_icon_medal_destroy_overwatch_large"
+}

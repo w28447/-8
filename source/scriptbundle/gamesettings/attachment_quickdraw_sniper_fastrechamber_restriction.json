@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d8f38c4282650f0fb0a1b24f31b480edf51130b199844922682d721d789f3b4b
-size 426
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_quickdraw_sniper_fastrechamber_restriction",
+    "displayname": "localized17#weapon/sniper_fastrechamber_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__sniper_fastrechamber_t8__attachments__quickdraw",
+    "isenableddisabled": 0
+}

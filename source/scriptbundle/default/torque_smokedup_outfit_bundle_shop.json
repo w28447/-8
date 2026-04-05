@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:09de1f281dfafda2219ecb873d910d219c740a9b8d1490bfef934bef27d9e370
-size 361
+{
+    "loot04_ui_icon_blackmarket_itemshop_smoked_torque:hash_6c274f86": "image#loot04_ui_icon_blackmarket_itemshop_smoked_torque",
+    "nametext": "localized17#hash_38bdbc7fa039790b",
+    "name": "torque_smokedup_outfit_bundle_shop",
+    "desctext": "localized17#hash_f9b8c6094f0fe1d",
+    "heroes/engineer:hash_975cc0d1": "localized17#heroes/engineer"
+}

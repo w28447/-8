@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ec8b06ddacd7c11a142fd6b66785405d3b60e7a83fc17c766bfe2b93f519c2f3
-size 291
+{
+    "backingsmall": "image#hash_75692c1dbf2e3c49",
+    "widget": "BadasseryMedal",
+    "name": "events_hellstorm_missile_multikill_3",
+    "backinglarge": "image#hash_75692c1dbf2e3c49",
+    "iconsmall": "image#hash_776d1b4ece5247fc",
+    "iconlarge": "image#hash_776d1b4ece5247fc"
+}

@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:47924f872bf587edb6050877e1e5a83b896bae7173220cacd6bc0e9231a1b5a8
-size 331
+{
+    "lootid": "#charm_lucky_cat",
+    "hash_ff3063df": "model#",
+    "image": "ui_icon_weapon_charms_cat",
+    "name": "charm_lucky_cat",
+    "displayname": "localized17#menu/charm_lucky_cat",
+    "icon": "ui_icon_weapon_charms_cat",
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_cat"
+}

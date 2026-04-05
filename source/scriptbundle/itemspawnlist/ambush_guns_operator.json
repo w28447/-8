@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:43193632d9934a693a28883c0ae3a503428bd0b0807f3165c6434d81d961eb97
-size 845
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&sniper_fastrechamber_t8_operator_item",
+            "childitementry_1": "scriptbundle&ammo_type_338_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&sniper_quickscope_t8_operator_item",
+            "childitementry_1": "scriptbundle&ammo_type_338_item",
+            "maxweight": 100,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 2,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "ambush_guns_operator",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

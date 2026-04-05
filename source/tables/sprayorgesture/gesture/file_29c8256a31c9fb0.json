@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bcc3c3f9185abdc7fdff74e1f1d7d0317b8836bc4a5ce42403d22d88514bd232
-size 335
+{
+    "name": "#hash_29c8256a31c9fb0",
+    "type": "#gesture",
+    "gesture": "#hash_1fb1db5c3a8b9246",
+    "gesture2": "#hash_530cc649998513b9",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/scuttlebutt_polly",
+        "icon": "image#ui_icon_emotes_parrot",
+        "isdefault": 0
+    }
+}

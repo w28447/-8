@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7a0a9f4ea54f6f712f4422d86068f09f6f1c9ea6faea82054132c46519f3e1f1
-size 350
+{
+    "name": "#loot_emote_exotic_shared_raving_dance",
+    "type": "#gesture",
+    "gesture": "#boast_raving_dance",
+    "gesture2": "#hash_158afc35dc80ca3d",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/lose_yourself",
+        "icon": "image#ui_icon_emotes_ravingdance",
+        "isdefault": 0
+    }
+}

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:273a458b11ce6b800dd006c8d83d81a2ceaf32b9b2a0725177e8aebb14fbd47c
-size 375
+{
+    "detailsicon": "image#loot07_ui_icon_blackmarket_itemdetail_deep_voyage",
+    "loot07_ui_icon_blackmarket_itemshop_deep_voyage:hash_6c274f86": "image#loot07_ui_icon_blackmarket_itemshop_deep_voyage",
+    "nametext": "localized17#hash_3824d76b4a721017",
+    "name": "mastercraft_deepvoyage_sunset_bundle_shop",
+    "desctext": "localized17#hash_188c7e0d25ff32a6"
+}

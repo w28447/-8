@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5963b1e4b8f3f79ed21ef4f3b0aa6e9918db6e5cfca47c480c3347f046bf6023
-size 275
+{
+    "destroyed": "#hash_5550161284eb6dde",
+    "ready": "#hash_4e3650f5af9da11e",
+    "configstringfiletype": "scriptbundle",
+    "type": "mpdialog_scorestreak",
+    "vmtype": "both",
+    "name": "cdp_taacom_kls_swat_team",
+    "timeout": "#hash_17b0a469182cbd2b"
+}

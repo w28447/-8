@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6bb2f02c8f30fb7916bc1faf7b7477d04a169e3c0d76de344aeaea924c3091b1
-size 401
+{
+    "hinttext": "localized17#hash_61a4dbc3e9d98238",
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "ability_enabled",
+    "displayname": "localized17#menu/special_weaponry",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "specialistAbilityEnabled_allies_1",
+    "isenableddisabled": 1
+}

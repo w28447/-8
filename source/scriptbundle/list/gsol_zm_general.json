@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:97f083152f9c30924d69525e2c514a53ecad87730834e2c2449c33a379bae0f7
-size 468
+{
+    "name": "#gsol_zm_general",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#zm_startround",
+        "#gamesettings/#zm_roundcap",
+        "#gamesettings/#zm_timecap",
+        "#gamesettings/#zm_showtimer",
+        "#gamesettings/#zm_killcap",
+        "#gamesettings/#zm_specialrounds",
+        "#gamesettings/#zm_trapsenabled",
+        "#gamesettings/#zm_allowstartingweapon",
+        "#gamesettings/#zm_headshots"
+    ]
+}

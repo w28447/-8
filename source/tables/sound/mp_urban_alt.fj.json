@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:65db6d81fe5ef038a8ff53f0297e3e589e9f50df174d69c7e6bd0da385feaf89
-size 539
+{
+    "name": "mp_urban_alt.fj",
+    "zone": "mp_urban_alt",
+    "gameLanguage": "japanese_full",
+    "soundLanguage": "fj",
+    "nameHash": "#mp_urban_alt.fj",
+    "patchZone": false,
+    "alias": [],
+    "duck": [],
+    "ambients": [],
+    "scriptIdLookups": [],
+    "streamKeysSABL": {
+        "streamKey1": "#mp_urban_alt_fj_stream",
+        "dataSize1": 2048,
+        "fileKey": "#mp_urban_alt_fj_loaded",
+        "fileLen": 2048
+    },
+    "streamKeysSABS": {
+        "dataSize1": 0,
+        "fileLen": 0
+    }
+}

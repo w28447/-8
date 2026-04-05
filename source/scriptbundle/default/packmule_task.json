@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:afbbe80f2e2efe8966e0c1e3a8eaa4118855d10e8183a97a3f2a39844501f5e2
-size 309
+{
+    "callingtask": "#weapons_packed",
+    "configstringfiletype": "scriptbundle",
+    "image": "image#ui_icon_zm_calling_tasks_wpnspacked",
+    "dailytarget": 5,
+    "name": "packmule_task",
+    "taskname": "localized17#hash_4e141bff36e4287c",
+    "descsimple": "localized17#hash_56d2601cf5da034f"
+}

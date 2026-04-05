@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cd1a06958ed56c73a6a7d3a47242f9dc020470c0d529c6dd12b50d971ee1c1ce
-size 395
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_extclip_tr_midburst_restriction",
+    "displayname": "localized17#weapon/tr_midburst_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__tr_midburst_t8__attachments__extclip",
+    "isenableddisabled": 0
+}

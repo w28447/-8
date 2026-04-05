@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:614dcbb5180564beb3b1a3dad6f030799d54a6cdc7f5c3c1e2d1727c1b320c58
-size 348
+{
+    "killcambackdist": 400,
+    "killcamtype": 5,
+    "type": "killcam",
+    "vmtype": "none",
+    "killcamgroundupdist": 25,
+    "name": "killcam_drone_strike",
+    "explosive fast": "localized17#explosive fast",
+    "killcamupdist": 150,
+    "killcamwallsidedist": 30,
+    "killcamwalloutdist": 10,
+    "killcamgroundbackdist": 50
+}

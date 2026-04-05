@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b8598d0dfdf708df02277517ffecba8f52e578f7d57b5d2419ab4957845b62f6
-size 343
+{
+    "name": "#maps/zm/zm_escape.d3dbsp",
+    "baseName": "zm_escape",
+    "lutMaterial": "#mtl_lut_zm_escape",
+    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "unk550": [
+        "#img_trim_lut_zm_escape",
+        "#img_trim_lut_zm_escape",
+        "#img_trim_lut_zm_escape",
+        "#img_trim_lut_zm_escape"
+    ]
+}

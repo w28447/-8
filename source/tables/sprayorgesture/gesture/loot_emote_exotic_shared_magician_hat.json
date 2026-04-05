@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9cc1b8aef5f6324216b27848a271944bf0778acaefe720ff8d706a38cd86bb03
-size 345
+{
+    "name": "#loot_emote_exotic_shared_magician_hat",
+    "type": "#gesture",
+    "gesture": "#boast_magician_hat",
+    "gesture2": "#boast_magician_hat_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/the_prestige",
+        "icon": "image#hash_1712765d9878801e",
+        "isdefault": 0
+    }
+}

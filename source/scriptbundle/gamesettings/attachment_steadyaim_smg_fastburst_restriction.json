@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f97394cb3bf24e8667125dac877bb42b588dc60202368618f1da1ed2685426bd
-size 405
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_steadyaim_smg_fastburst_restriction",
+    "displayname": "localized17#weapon/smg_fastburst_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__smg_fastburst_t8__attachments__steadyaim",
+    "isenableddisabled": 0
+}

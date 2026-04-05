@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a39360db34db53d78890ab9c4d420756000099a4fc4417b27a50107a54fc591b
-size 186
+{
+    "hash_3828e8f7a5308585:hash_6c274f86": "image#hash_3828e8f7a5308585",
+    "name": "outfit_warrior_epic1_wetworks_battery",
+    "desctext": "localized17#hash_64306618adf645a9"
+}

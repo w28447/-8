@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:04316c724c93c3a8d0554cecd7aa1c4134d477df8e4ef0fefeac1c21ae859e9c
-size 424
+{
+    "detailsicon": "image#loot06_ui_icon_blackmarket_itemdetail_bundle_superhero_firebreak",
+    "loot06_ui_icon_blackmarket_itemshop_bundle_superhero_firebreak:hash_6c274f86": "image#loot06_ui_icon_blackmarket_itemshop_bundle_superhero_firebreak",
+    "nametext": "localized17#hash_1242bf8ec8dd205e",
+    "name": "outfit_super_hero_epic1_firebreak_bundle_shop",
+    "desctext": "localized17#hash_1c76e89605095e6e"
+}

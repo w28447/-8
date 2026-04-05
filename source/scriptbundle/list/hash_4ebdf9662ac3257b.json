@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb85ae13c2678cb04e77f01b6edc3d54988572ca46ee5fb3e4494a708c4731a1
-size 277
+{
+    "name": "#hash_4ebdf9662ac3257b",
+    "type": "gamesettingoptioncategory",
+    "bundles": [
+        "#gamesettingoptioncategory/#gsoc_zm_health",
+        "#gamesettingoptioncategory/#gsoc_zm_points",
+        "#gamesettingoptioncategory/#gsoc_zm_laststand"
+    ]
+}

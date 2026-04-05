@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fa7b2f030632a3f8aab1893ac3d7cf7f96f105c41f52b5d0af69ea2d0c04df35
-size 276
+{
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
+    "widget": "BadasseryMedal",
+    "name": "events_swat_team_kill",
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_776d1b4ece5247fc",
+    "iconlarge": "image#hash_776d1b4ece5247fc"
+}

@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fa28fb3a430a0bf6cba62c72297aa419b70ae0b2706ab0c246c2f4982a00048e
-size 419
+{
+    "hinttext": "localized17#menu/voip_killers_hear_victim_hint",
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "voip_killers_hear_victim",
+    "displayname": "localized17#menu/voip_killers_hear_victim",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 1,
+    "setting": "voipKillersHearVictim",
+    "isenableddisabled": 1
+}

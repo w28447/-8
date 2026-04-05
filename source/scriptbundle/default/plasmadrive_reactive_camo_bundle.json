@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3f9095e62866a9f466d908242862ea63334c9dd022b0ae927929d5b4cd7c6738
-size 287
+{
+    "loot04_ui_icon_blackmarket_itemshop_bundle_plasmadrive": "image#loot04_ui_icon_blackmarket_itemshop_bundle_plasmadrive",
+    "nametext": "localized17#hash_6770e37c52589aa0",
+    "name": "plasmadrive_reactive_camo_bundle",
+    "desctext": "localized17#hash_391ce1dd6d8cf068"
+}

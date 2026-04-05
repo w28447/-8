@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:26c1c6e0831476262b917597f86986fbb947cc8e39ae37c1cf12d03ac150580f
-size 190
+{
+    "msarate": 1.1,
+    "configstringfiletype": "scriptbundle",
+    "type": "mission_settings",
+    "mstype": "escort",
+    "vmtype": "both",
+    "name": "mission_settings_escort"
+}

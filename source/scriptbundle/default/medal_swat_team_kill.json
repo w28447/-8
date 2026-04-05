@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:331457ed59babee2c708d1d1d2fba79269ca4ef527716cd780549d41bbec0a0b
-size 396
+{
+    "description": "localized17#medal/swat_team_kill_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_swat_team_kill",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_strike_team",
+    "stringref": "localized17#medal/swat_team_kill",
+    "iconlarge": "image#ui_icon_medal_strike_team_large"
+}

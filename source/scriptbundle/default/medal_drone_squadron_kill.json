@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1a4df9f6d07ff7d595c91d20619c376e708231eab5575d68f84b14d6246081b3
-size 415
+{
+    "description": "localized17#medal/drone_squadron_kill_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_drone_squadron_kill",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_covering_fire",
+    "stringref": "localized17#medal/drone_squadron_kill",
+    "iconlarge": "image#ui_icon_medal_covering_fire_large"
+}

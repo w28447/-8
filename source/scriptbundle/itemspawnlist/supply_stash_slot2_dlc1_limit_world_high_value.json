@@ -1,3 +1,66 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e98d67d19d658fe9defe430a884f7639c22e12a189f72a9f0f971aac810d61da
-size 2167
+{
+    "itemlist": [
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&armor_item_medium",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&armor_item_large",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&health_item_large",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&ar_standard_t8_gold_item",
+            "childitementry_2": "scriptbundle&ammo_type_556_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&ar_accurate_t8_gold_item",
+            "childitementry_2": "scriptbundle&ammo_type_556_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&lmg_heavy_t8_item",
+            "childitementry_2": "scriptbundle&ammo_type_50cal_item",
+            "childitementry_1": "scriptbundle&ammo_type_50cal_item",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&sniper_powersemi_t8_item",
+            "childitementry_2": "scriptbundle&ammo_type_338_item",
+            "childitementry_1": "scriptbundle&ammo_type_338_item",
+            "maxweight": 50,
+            "available": 1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 12000,
+    "type": "itemspawnlist",
+    "hash_345eba59": 7,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "supply_stash_slot2_dlc1_limit_world_high_value",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0,
+    "supplystash": 1
+}

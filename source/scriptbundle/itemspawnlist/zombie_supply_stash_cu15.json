@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1781d10b83dd1f2a47d1544dc74a11dd9f01ed501aa0b589e75b2f1f412d5f39
-size 886
+{
+    "itemlist": [
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&zombie_supply_stash_guns_gold_or_purple",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&supply_stash_zombie_items",
+            "maxweight": 50,
+            "available": 3
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&cu15_item",
+            "maxweight": 50,
+            "available": 1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 3,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "zombie_supply_stash_cu15",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0,
+    "supplystash": 1
+}

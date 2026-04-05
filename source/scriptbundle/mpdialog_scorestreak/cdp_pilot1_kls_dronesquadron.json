@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b7b1c03c3abb82617293ae942d88a03dcd2150fae85df02d772073d2590c22f8
-size 238
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "mpdialog_scorestreak",
+    "vmtype": "both",
+    "timecheck": "#hash_1d4227ee4497a1bd",
+    "name": "cdp_pilot1_kls_dronesquadron",
+    "arrive": "#hash_18a13991b1354e59"
+}

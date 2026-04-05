@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5321367268e3d86a2812f244737cf5f56957e495f70cf8403de3a08271d28e43
-size 1254
+{
+    "name": "#zitem_acid_gat_part_3_zm",
+    "baseWeapon": "#zitem_acid_gat_part_3",
+    "streamkey": "#hash_536f6b445dadbdbb",
+    "worldModelTagRight": "tag_weapon_right",
+    "worldModelTagLeft": "tag_weapon_left",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_inhand",
+    "scrstr_11a4": "tag_inhand",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "ZOMBIES",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "tunables1": "#zitem_acid_gat_part_3_tunables_zm",
+    "viewmodel": [
+        "#viewmodel_default"
+    ],
+    "worldModel": [
+        "#hash_129f38c2612a52ce"
+    ]
+}

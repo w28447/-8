@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:307217ee277051de557fec69756d79079b25b2292f4bd4842ae3986b812c153d
-size 287
+{
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
+    "widget": "BadasseryMedal",
+    "name": "events_molotov_cocktail_exploded",
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_2a693da6bebbeb01",
+    "iconlarge": "image#hash_2a693da6bebbeb01"
+}

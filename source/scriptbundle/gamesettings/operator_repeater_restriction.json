@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bb84ec927f6b627f32ec4ef4c86c71ba49b81ef5c3c619c0ac2559a1af5fa205
-size 594
+{
+    "descriptionimage": "image#ui_icon_attachment_tr_midburst_opmod_burstaccelerator",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "operator_repeater_restriction",
+    "displayname": "localized17#hash_7796b0ee44bdcbc9",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__tr_midburst_t8__attachments__uber",
+    "isenableddisabled": 0
+}

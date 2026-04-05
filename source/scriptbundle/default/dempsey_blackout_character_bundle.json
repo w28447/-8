@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6888261848f11a20973ec060a86c0c173f884ed97aa5ff2b0cb051952bbd06e1
-size 528
+{
+    "buttonimage": "image#ui_icon_blackmarket_promos_dempsey_button_small",
+    "popupimage": "image#ui_icon_blackmarket_promos_dempsey_large_preview",
+    "nametext": "localized17#hash_31c0ad0f49c3e60d",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
+    "name": "dempsey_blackout_character_bundle",
+    "desctext": "localized17#hash_3e04cea4bbfd5737",
+    "previewimage": "image#ui_icon_blackmarket_promos_dempsey_item_detail",
+    "reserveimage": "image#ui_icon_blackmarket_promos_dempsey_button_large"
+}

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dbe181c85fbcafae16567b5f206f7c94cbac367f133bd7671a038d7731c14f99
-size 239
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_we_may_stumble_and_fall_but_shall_rise_again",
+    "quote": "localized17#hash_5b79dcd1ce883d0",
+    "author": "localized17#hash_42a45a3e084ee000"
+}

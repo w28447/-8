@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a0d1a8a27be9bf992e27e9ead89ad478e43b6e688af050311ee14ef05885b197
-size 385
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "scope_elo_smg_handling_restriction",
+    "displayname": "localized17#weapon/smg_handling_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__smg_handling_t8__attachments__elo",
+    "isenableddisabled": 0
+}

@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e204673cecde1d1c9a94be4fbb708304b7410fa47c20f7b50da4e7040f236439
-size 341
+{
+    "name": "#loot_emote_exotic_shared_finger_spin",
+    "type": "#gesture",
+    "gesture": "#boast_finger_spin",
+    "gesture2": "#boast_finger_spin_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/baller",
+        "icon": "image#ui_icon_emotes_finger_spin",
+        "isdefault": 0
+    }
+}

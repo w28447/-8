@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f7fe1893ab066af4274e70db27026ef4a0947531c9f993a5e5037c5f368766ab
-size 403
+{
+    "hinttext": "localized17#menu/score_reset_on_death_hint",
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "score_reset_on_death",
+    "displayname": "localized17#menu/score_reset_on_death",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "scoreResetOnDeath",
+    "isenableddisabled": 1
+}

@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a7ba44dfbae1fa226eac1a02369dfb32a5fd1a7cdbf72d899a8a4913ebaf58fd
-size 332
+{
+    "name": "#loot_emote_exotic_shared_dog_tags",
+    "type": "#gesture",
+    "gesture": "#boast_dog_tags",
+    "gesture2": "#boast_dog_tags_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/confirmed",
+        "icon": "image#ui_icon_emotes_dog_tags",
+        "isdefault": 0
+    }
+}

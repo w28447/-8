@@ -1,3 +1,80 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8b65f01068235e47846d1358ade38ac75dab0c987e01faa67a1d3d706b0321f4
-size 2363
+{
+    "keys": [
+        {
+            "name": "#mp_embassy_en_stream",
+            "xPakEntry": {
+                "key": "#hash_f506aadf6373bd67",
+                "offset": 0,
+                "size": 0,
+                "xpakIndex": 0,
+                "compressed": false,
+                "valid": false,
+                "adjacentLeftType": 0,
+                "adjacentRightType": 0,
+                "adjacentLeft": 0,
+                "adjacentRight": 0
+            },
+            "size": 6144,
+            "unk44": 512,
+            "unk46": 5,
+            "keyFlags": 3
+        },
+        {
+            "name": "#mp_embassy_en_loaded",
+            "xPakEntry": {
+                "key": "#hash_fe2039e300044687",
+                "offset": 0,
+                "size": 0,
+                "xpakIndex": 0,
+                "compressed": false,
+                "valid": false,
+                "adjacentLeftType": 0,
+                "adjacentRightType": 0,
+                "adjacentLeft": 0,
+                "adjacentRight": 0
+            },
+            "size": 2048,
+            "unk44": 512,
+            "unk46": 5,
+            "keyFlags": 1
+        },
+        {
+            "name": "#hash_4e7ae341063145c2",
+            "xPakEntry": {
+                "key": "#hash_fe2039e300044687",
+                "offset": 0,
+                "size": 0,
+                "xpakIndex": 0,
+                "compressed": false,
+                "valid": false,
+                "adjacentLeftType": 0,
+                "adjacentRightType": 0,
+                "adjacentLeft": 0,
+                "adjacentRight": 0
+            },
+            "size": 2048,
+            "unk44": 512,
+            "unk46": 5,
+            "keyFlags": 3
+        },
+        {
+            "name": "#hash_7ec35a18b2c2f8c3",
+            "xPakEntry": {
+                "key": "#hash_fe2039e300044687",
+                "offset": 0,
+                "size": 0,
+                "xpakIndex": 0,
+                "compressed": false,
+                "valid": false,
+                "adjacentLeftType": 0,
+                "adjacentRightType": 0,
+                "adjacentLeft": 0,
+                "adjacentRight": 0
+            },
+            "size": 2048,
+            "unk44": 512,
+            "unk46": 5,
+            "keyFlags": 1
+        }
+    ]
+}

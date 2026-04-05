@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c7836ab39c7b42c617a14f86506bbbff05c108173cda1a6376bc1d9b4b8c321c
-size 168
+{
+    "loot03_ui_icon_blackmarket_item_shop_wingsuit_benjamins": "image#loot03_ui_icon_blackmarket_item_shop_wingsuit_benjamins",
+    "name": "jumppack_heist_shop"
+}

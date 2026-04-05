@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5e46c68d19969a4cf7f1b5e766831633922056b2fe89f983f4b950d08b9b51cc
-size 237
+{
+    "nametext": "localized17#hash_22654c1dda327657",
+    "name": "outfit_warrior_com1_bundle_ajax_shop",
+    "desctext": "localized17#hash_5d8932596e241d6b",
+    "heroes/swatpolice:hash_975cc0d1": "localized17#heroes/swatpolice"
+}

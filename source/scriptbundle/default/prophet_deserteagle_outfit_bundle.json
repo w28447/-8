@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8c044ef96ed35782a9a0828c1e632b8cdeee06a0094dfad8abbfc1e5f8d35376
-size 558
+{
+    "buttonimage": "image#ui_icon_blackmarket_promos_bundle_blackknight_button_small",
+    "popupimage": "image#ui_icon_blackmarket_promos_blackknight_large_preview",
+    "nametext": "localized17#hash_3832ed7c6a055720",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
+    "name": "prophet_deserteagle_outfit_bundle",
+    "desctext": "localized17#hash_1a5ddd0cc6e6d5e8",
+    "previewimage": "image#ui_icon_blackmarket_promos_blackknight_item_detail",
+    "reserveimage": "image#ui_icon_blackmarket_promos_bundle_blackknight_button_large"
+}

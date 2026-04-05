@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:32a37faadb181c54709d21cbd65c65f429a141ee2358fbf1d4564e7323293b15
-size 1367
+{
+    "name": "#scavenger_item_wz",
+    "baseWeapon": "#scavenger_item",
+    "weapon70": "#weapon_null",
+    "streamkey": "#hash_412f61d317bf1ce1",
+    "worldModelTagRight": "tag_weapon_right",
+    "worldModelTagLeft": "tag_weapon_left",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_inhand",
+    "scrstr_11a4": "tag_inhand",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "WARZONE",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "tunables1": "#scavenger_item_tunables_wz",
+    "handModel": "#viewmodel_hands_no_model",
+    "viewmodel": [
+        "#wpn_t7_grenade_frag_view"
+    ],
+    "worldModel": [
+        "#hash_46893daaac2e3fde"
+    ],
+    "reticleCenter": "#reticle_center_cross"
+}

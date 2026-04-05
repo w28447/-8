@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:73083f5d10bdd0a2889470623ba6542ac1b8eed9a6633e91073630aa2aaf496e
-size 361
+{
+    "hinttext": "localized17#menu/cap_decay_hint",
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "cap_decay",
+    "displayname": "localized17#menu/cap_decay",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "capDecay",
+    "isenableddisabled": 1
+}

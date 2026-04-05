@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9477daa395ee53801c3100cc7679795cd4638fbb9290cb594a9150a366d78863
-size 246
+{
+    "type": "linear",
+    "vmtype": "server",
+    "threat_score_max_same": 6,
+    "range_min": 1,
+    "range_max": 750,
+    "name": "human_death_influencer_def",
+    "score_min": 1,
+    "lifetime": 1,
+    "threat_score_max_other": 6
+}

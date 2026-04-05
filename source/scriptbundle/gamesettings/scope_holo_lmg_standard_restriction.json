@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f915f19119b6bd622cfcc67af426ced20d9cb0aa7cb4f72dbb1f974fe61d1efe
-size 387
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "scope_holo_lmg_standard_restriction",
+    "displayname": "localized17#weapon/lmg_standard_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__lmg_standard_t8__attachments__holo",
+    "isenableddisabled": 0
+}

@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ad9f3fce939e9a5d02c867337f9f30dc4459b4d190a14707ef856adf25bce6f1
-size 765
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&vehicle_list_zodiac_wz",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "maxweight": 1,
+            "available": 0
+        },
+        {
+            "minweight": 1,
+            "maxweight": 1,
+            "available": 0
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 10000,
+    "type": "itemspawnlist",
+    "hash_345eba59": 3,
+    "vehiclespawner": 1,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "open_skyscraper_vehicles_zodiac_hijacked",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

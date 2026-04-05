@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5dd8c2438836b7c591f22502e8517c5ffd1b362f862322a4c0763ca9ab29b74c
-size 326
+{
+    "hash_3828e8f7a5308585:hash_6c274f86": "image#hash_3828e8f7a5308585",
+    "nametext": "localized17#hash_774a850bb51691fb",
+    "name": "outfit_warrior_epic1_wetworks_battery_sunset_bundle_shop",
+    "desctext": "localized17#hash_2b7f2d614d161f1d",
+    "heroes/battery:hash_975cc0d1": "localized17#heroes/battery"
+}

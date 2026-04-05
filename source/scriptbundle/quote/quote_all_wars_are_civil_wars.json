@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0a6f8283bdb99ad58ebd3b6471fc79747b5d614d206ae5d0843fc8281b324a33
-size 218
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_all_wars_are_civil_wars",
+    "quote": "localized17#hash_6a91f66350fcacb",
+    "author": "localized17#hash_42d73ed351df3f28"
+}

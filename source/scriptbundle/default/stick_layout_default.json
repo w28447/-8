@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4f782bc6fb77dcefd85683815d7b87a58bbd1182b4f09f232594706a3bc99b3b
-size 550
+{
+    "menu/move_back": "localized17#menu/move_back",
+    "xenon_stick_move": "image#xenon_stick_move",
+    "name": "stick_layout_default",
+    "xenon_stick_turn": "image#xenon_stick_turn",
+    "hash_c724d0d1": "enum:0",
+    "hash_27793ef5304e6191:hash_53e7bdc7": "localized17#hash_27793ef5304e6191",
+    "hash_6190a394a838ade9:hash_92e90c8c": "localized17#hash_6190a394a838ade9",
+    "menu/look_down": "localized17#menu/look_down",
+    "menu/move_forward": "localized17#menu/move_forward",
+    "menu/look_up": "localized17#menu/look_up"
+}

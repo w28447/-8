@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fff5bc2cc1a53c621338da972881a85230af200567b5bad4b471492aa5261844
-size 222
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_real_and_lasting_victories",
+    "quote": "localized17#hash_5ac5a006e780d375",
+    "author": "localized17#hash_3b2c579857277e86"
+}

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:11b0637f0fae765e6141bed6225dd7ef6f797a33879f0bb149f5403b3874b203
-size 191
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "humansettings",
+    "chargemeleedist": 140,
+    "vmtype": "server",
+    "name": "human_settings",
+    "normalmeleedist": 74
+}

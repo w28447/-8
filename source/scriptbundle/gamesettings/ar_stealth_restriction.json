@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9f06d99d8bd950ffebf00fc7e4507195a7367d6c6278f4ebfc5db3b97ae6d8ce
-size 560
+{
+    "descriptionimage": "image#ui_icon_weapon_ar_stealth_render_xl",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "ar_stealth_restriction",
+    "displayname": "localized17#weapon/ar_stealth_t8",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__ar_stealth_t8__restricted",
+    "isenableddisabled": 0
+}

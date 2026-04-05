@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:793d86f2695f5bdf78a33b60502e68ac984a47b2836eb3cd23f5a0e3ea194aeb
-size 275
+{
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
+    "widget": "BadasseryMedal",
+    "name": "events_stim_vanguard",
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_4c2f93a823e00ed2",
+    "iconlarge": "image#hash_4c2f93a823e00ed2"
+}

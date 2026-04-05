@@ -1,3 +1,52 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:19049f14bb9daca21f7cd5f56268b6bb0e15748ca8a0355fd2477556cfd919d9
-size 1421
+{
+    "itemlist": [
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&cu07_item",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&supply_stash_slot1_dlc1",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&supply_stash_slot2_dlc1",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&supply_stash_slot3_dlc1",
+            "maxweight": 50,
+            "available": 2
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&supply_stash_slot4_dlc1",
+            "maxweight": 50,
+            "available": 2
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&supply_stash_slot5_dlc1",
+            "maxweight": 50,
+            "available": 2
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 12000,
+    "type": "itemspawnlist",
+    "hash_345eba59": 6,
+    "vehiclespawner": 0,
+    "hash_9b009839": 10,
+    "hash_dc7ffbef": 0,
+    "name": "supply_stash_cu07",
+    "supplystashweight": 100,
+    "hash_dc91e192": 1,
+    "supplystash": 1
+}

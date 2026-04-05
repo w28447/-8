@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:115986062eadd477bc59e600f4d559e30d2c55cb1fb4d18aa2f32723d7049049
-size 306
+{
+    "callingtask": "#perks_used",
+    "configstringfiletype": "scriptbundle",
+    "image": "image#ui_icon_zm_calling_tasks_perksused",
+    "dailytarget": 15,
+    "name": "perkaholic_task",
+    "taskname": "localized17#hash_1d74d59fd76455f2",
+    "descsimple": "localized17#hash_c2c06eaefd0067d"
+}

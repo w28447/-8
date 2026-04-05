@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7b75ffab70fe2bad1f11ed00cac07370bffd7f5bcff1ce8c452cef73661aa169
-size 252
+{
+    "nametext": "localized17#hash_7aea0616c48332df",
+    "name": "outfit_warrior_epic1_wetworks_seraph_sunset_bundle_shop",
+    "desctext": "localized17#hash_2b7f2d614d161f1d",
+    "heroes/enforcer:hash_975cc0d1": "localized17#heroes/enforcer"
+}

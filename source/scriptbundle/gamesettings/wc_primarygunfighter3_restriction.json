@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ff4a6d9cf68706ca48c2d2640499c00dccfaef2997a362542242023e7259b420
-size 605
+{
+    "descriptionimage": "image#ui_icon_wildcard_primarygunfighter03_large",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "wc_primarygunfighter3_restriction",
+    "displayname": "localized17#bonuscard/primary_gunfighter_3",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__bonuscard_primary_gunfighter_3__restricted",
+    "isenableddisabled": 0
+}

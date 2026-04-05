@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:42a1da6199721f51afa7c079f43be220d9037d6e245c4e4fdea567155d86d123
-size 222
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_essence_of_war_is_violence",
+    "quote": "localized17#hash_46861c0f49281c81",
+    "author": "localized17#hash_6661f2da15e59beb"
+}

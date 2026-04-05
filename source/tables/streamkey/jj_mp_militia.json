@@ -1,3 +1,80 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e3a2fe2b387b94b61c05569dbdf19e343fcda7f6c125fb43b433423478f6f1a7
-size 2363
+{
+    "keys": [
+        {
+            "name": "#mp_militia_fj_stream",
+            "xPakEntry": {
+                "key": "#hash_e441b123c35f53de",
+                "offset": 0,
+                "size": 0,
+                "xpakIndex": 0,
+                "compressed": false,
+                "valid": false,
+                "adjacentLeftType": 0,
+                "adjacentRightType": 0,
+                "adjacentLeft": 0,
+                "adjacentRight": 0
+            },
+            "size": 2048,
+            "unk44": 512,
+            "unk46": 5,
+            "keyFlags": 3
+        },
+        {
+            "name": "#mp_militia_fj_loaded",
+            "xPakEntry": {
+                "key": "#hash_e441b123c35f53de",
+                "offset": 0,
+                "size": 0,
+                "xpakIndex": 0,
+                "compressed": false,
+                "valid": false,
+                "adjacentLeftType": 0,
+                "adjacentRightType": 0,
+                "adjacentLeft": 0,
+                "adjacentRight": 0
+            },
+            "size": 2048,
+            "unk44": 512,
+            "unk46": 5,
+            "keyFlags": 1
+        },
+        {
+            "name": "#hash_31fde4467b2338f2",
+            "xPakEntry": {
+                "key": "#hash_e441b123c35f53de",
+                "offset": 0,
+                "size": 0,
+                "xpakIndex": 0,
+                "compressed": false,
+                "valid": false,
+                "adjacentLeftType": 0,
+                "adjacentRightType": 0,
+                "adjacentLeft": 0,
+                "adjacentRight": 0
+            },
+            "size": 2048,
+            "unk44": 512,
+            "unk46": 5,
+            "keyFlags": 3
+        },
+        {
+            "name": "#hash_6219a13d2b440393",
+            "xPakEntry": {
+                "key": "#hash_e441b123c35f53de",
+                "offset": 0,
+                "size": 0,
+                "xpakIndex": 0,
+                "compressed": false,
+                "valid": false,
+                "adjacentLeftType": 0,
+                "adjacentRightType": 0,
+                "adjacentLeft": 0,
+                "adjacentRight": 0
+            },
+            "size": 2048,
+            "unk44": 512,
+            "unk46": 5,
+            "keyFlags": 1
+        }
+    ]
+}

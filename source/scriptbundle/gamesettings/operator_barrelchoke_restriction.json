@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d343b9e941bc976a8624fc2b0bbac222423b2232e12838fd2f1d84c114c67ef6
-size 554
+{
+    "descriptionimage": "image#ui_icon_attachment_chokedbarrel",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "operator_barrelchoke_restriction",
+    "displayname": "localized17#mpui/barrelchoke",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "attachmentRestrictions__barrelchoke",
+    "isenableddisabled": 0
+}

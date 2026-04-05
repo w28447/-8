@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c6e33532e9b22c815b9b46e3bff11de3e00133b6acc0a1c41a92d6cfa8069727
-size 830
+{
+    "name": "#gsol_mp_rf_restriction",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_rf_ar_modular_restriction",
+        "#gamesettings/#attachment_rf_ar_stealth_restriction",
+        "#gamesettings/#attachment_rf_lmg_heavy_restriction",
+        "#gamesettings/#attachment_rf_lmg_spray_restriction",
+        "#gamesettings/#attachment_rf_pistol_burst_restriction",
+        "#gamesettings/#attachment_rf_pistol_fullauto_restriction",
+        "#gamesettings/#attachment_rf_shotgun_pump_restriction",
+        "#gamesettings/#attachment_rf_smg_capacity_restriction",
+        "#gamesettings/#attachment_rf_smg_fastburst_restriction",
+        "#gamesettings/#attachment_rf_smg_standard_restriction",
+        "#gamesettings/#attachment_rf_sniper_fastrechamber_restriction"
+    ]
+}

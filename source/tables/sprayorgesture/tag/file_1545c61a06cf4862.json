@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:71c7ccaf0b26a02b8145c25717a1084ae720729cd5e9525e02b70bb74f8970fe
-size 294
+{
+    "name": "#hash_1545c61a06cf4862",
+    "type": "#tag",
+    "material": "#hash_72cc08e5024e2196",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_1cccf42405720988",
+        "icon": "image#loot_ui_icon_tags_vehicles_drone",
+        "isdefault": 0
+    }
+}

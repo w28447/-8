@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e47158248c44183b35884edbcfa653de56878310ae320a1bd2cf85d8d44bf5e0
-size 1194
+{
+    "name": "#zombie_ai_defaultmelee",
+    "baseWeapon": "#zombie_ai_defaultmelee",
+    "streamkey": "#hash_76d94ebabff17512",
+    "worldModelTagRight": "tag_weapon_right",
+    "worldModelTagLeft": "tag_weapon_left",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_weapon_right",
+    "scrstr_11a4": "tag_weapon_left",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "unknown",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "tunables1": "#zombie_ai_defaultmelee_tunables",
+    "sharedWeaponSounds": "#hash_74b924daa49aba34"
+}

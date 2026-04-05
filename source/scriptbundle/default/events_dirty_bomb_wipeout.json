@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dc1bd9de027e7501f4be84264d57483e30c807da88d3f27da5f0ae3bf0b03511
-size 280
+{
+    "backingsmall": "image#hash_75692c1dbf2e3c49",
+    "widget": "BadasseryMedal",
+    "name": "events_dirty_bomb_wipeout",
+    "backinglarge": "image#hash_75692c1dbf2e3c49",
+    "iconsmall": "image#hash_776d1b4ece5247fc",
+    "iconlarge": "image#hash_776d1b4ece5247fc"
+}

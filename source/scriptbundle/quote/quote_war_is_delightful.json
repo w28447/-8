@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5fb07d6d60beefc6609804a99d01437adf8806c2ea38972ee01af66fa0eddff0
-size 213
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_war_is_delightful",
+    "quote": "localized17#hash_5f85a6d97d4f7097",
+    "author": "localized17#hash_12dbf3056a8d9813"
+}

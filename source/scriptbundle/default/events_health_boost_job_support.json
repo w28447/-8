@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0a9146a58601125a19fc385f9f1ce89c95fc2e1404e515e6fd2804417ee40f98
-size 286
+{
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
+    "widget": "BadasseryMedal",
+    "name": "events_health_boost_job_support",
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_2f8853f57a4bee70",
+    "iconlarge": "image#hash_2f8853f57a4bee70"
+}

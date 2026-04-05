@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d71c1cd2dede22cce90ff4b72a713a62306cdca8a86958fb5016cc8a7c91f217
-size 319
+{
+    "mod": "MOD_DEATH_CIRCLE",
+    "configstringfiletype": "scriptbundle",
+    "type": "meansofdeath",
+    "name": "mod_death_circle",
+    "displayname": "localized17#hash_1525cc239faaec26",
+    "icon": "image#ui_icon_meansofdeath_death_circle",
+    "iconlarge": "image#ui_icon_meansofdeath_death_circle_xl"
+}

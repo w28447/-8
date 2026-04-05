@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:70b0e18dbd365649d602d63b23fad9851c5f50b571931d87878f761988483005
-size 239
+{
+    "attack_chopper_kill": "#attack_chopper_kill",
+    "configstringfiletype": "scriptbundle",
+    "type": "scoreevents",
+    "vmtype": "both",
+    "name": "helicopter_comlink_mp_scoreevents",
+    "customsettingstype": "ability"
+}

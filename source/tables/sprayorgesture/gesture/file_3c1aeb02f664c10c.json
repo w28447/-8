@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:462650a5af53fffab71ed5ff157aa067c44065a5e3f8f24c7d22a30f3faa0e32
-size 329
+{
+    "name": "#hash_3c1aeb02f664c10c",
+    "type": "#gesture",
+    "gesture": "#hash_7fe46920b6be1822",
+    "gesture2": "#hash_54386d7bab31331",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/campfire",
+        "icon": "image#ui_icon_emotes_camp_fire",
+        "isdefault": 0
+    }
+}

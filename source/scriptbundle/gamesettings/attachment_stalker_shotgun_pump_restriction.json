@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f208fd6230ee4d12475b80f3797df51c2a59893725eb09e5670dc386e72a98ee
-size 398
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_stalker_shotgun_pump_restriction",
+    "displayname": "localized17#weapon/shotgun_pump_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__shotgun_pump_t8__attachments__stalker",
+    "isenableddisabled": 0
+}

@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7fecdf8dc972a27ff8e3200f265a189fd2c8568ad25b75907816e7032cc4ad2d
-size 402
+{
+    "description": "localized17#medal/backstabber_kill_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_backstabber_kill",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_backstabber",
+    "stringref": "localized17#medal/backstabber_kill",
+    "iconlarge": "image#ui_icon_medal_backstabber_large"
+}

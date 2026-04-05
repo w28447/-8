@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d91f9c25df0c3e91e5d11171f109744b2b9bbcb48579ef6a7297137e3d73043a
-size 265
+{
+    "loot04_ui_icon_blackmarket_itemshop_bundle_venom": "image#loot04_ui_icon_blackmarket_itemshop_bundle_venom",
+    "nametext": "localized17#hash_ee567911dd1ce83",
+    "name": "mastercraft_hades_snake",
+    "desctext": "localized17#hash_347854080522fbb1"
+}

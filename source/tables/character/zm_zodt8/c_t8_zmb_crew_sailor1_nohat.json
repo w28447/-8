@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2ec7e5f9a8f34af85c3771d8db41d85516a195d6291fd1bcad613b8bcb07551b
-size 861
+{
+    "name": "#c_t8_zmb_crew_sailor1_nohat",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 2,
+    "bodyImpactType": 2,
+    "gibDef": "#c_t8_zmb_crew_sailor_gib_def",
+    "fxDef": "#fxd8_zm_char_zombie_base_body",
+    "body": "#c_t8_zmb_crew_sailor_body1",
+    "headAlias": "#hash_e12e15b05a54b6c5",
+    "damagedTorso_Clean": "#hash_371151f0f31212b7",
+    "damagedTorso_RightArmGone": "#hash_626489cd76f97104",
+    "damagedTorso_LeftArmGone": "#hash_4596408b9a85dc3e",
+    "damagedTorso_HeadGone": "#c_t8_zmb_crew_sailor_body1_g_behead",
+    "damagedLegs_Clean": "#c_t8_zmb_crew_sailor_body1_g_lowclean",
+    "damagedLegs_RightLegGone": "#c_t8_zmb_crew_sailor_body1_g_rlegoff",
+    "damagedLegs_LeftLegGone": "#c_t8_zmb_crew_sailor_body1_g_llegoff",
+    "damagedLegs_NoLegs": "#c_t8_zmb_crew_sailor_body1_g_blegsoff"
+}

@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2f05072ec20fe0035f061b995c2eace022811414f8ee3f238242d14676f193a7
-size 398
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_extclip_smg_fastfire_restriction",
+    "displayname": "localized17#weapon/smg_fastfire_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__smg_fastfire_t8__attachments__extclip",
+    "isenableddisabled": 0
+}

@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:71c4a8049f56f1074358d965a910aa1e39869b591ad6b54ede7e3dcc4a7476da
-size 319
+{
+    "name": "#hash_15b1a12f3de1c7a4",
+    "type": "#gesture",
+    "gesture": "#boast_waiting",
+    "gesture2": "#hash_749718066f6ea9f5",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/waiting",
+        "icon": "image#ui_icon_emotes_waiting",
+        "isdefault": 0
+    }
+}

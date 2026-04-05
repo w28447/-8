@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d18b8e2344ddd35d20b10764120fb67fe0811a52a0be458b46c96f231d60b93b
-size 319
+{
+    "hash_4fe91b6f0833b56:hash_6c274f86": "image#hash_4fe91b6f0833b56",
+    "nametext": "localized17#hash_2cb9313fe8363d77",
+    "name": "outfit_snake_legendary2_seraph_sunset_bundle_shop",
+    "desctext": "localized17#hash_2b7f2d614d161f1d",
+    "heroes/enforcer:hash_975cc0d1": "localized17#heroes/enforcer"
+}

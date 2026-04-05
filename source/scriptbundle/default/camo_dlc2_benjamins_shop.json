@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5c4c4b97aa935c8ee1d89cb07605e931ceba02cbbc95130fa6c3b1a7705397f0
-size 177
+{
+    "loot03_ui_icon_blackmarket_itemshop_camo_benjamins:hash_6c274f86": "image#loot03_ui_icon_blackmarket_itemshop_camo_benjamins",
+    "name": "camo_dlc2_benjamins_shop"
+}

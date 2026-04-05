@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d8f2cc2787d4cf54c7a3c1b7781a62f5a3a6809cec733c9b80bd2f74b3097f86
-size 325
+{
+    "lootid": "#charm_steak",
+    "hash_ff3063df": "model#",
+    "image": "ui_icon_weapon_charms_steak",
+    "name": "charm_steak",
+    "displayname": "localized17#menu/charm_steak",
+    "icon": "ui_icon_weapon_charms_steak",
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_steak"
+}

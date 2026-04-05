@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b4a5bdf83f59f0cbc3af504c251b3720f59edaa7708652a8f9ab14554360bd98
-size 346
+{
+    "name": "#maps/mp/mp_militia.d3dbsp",
+    "baseName": "mp_militia",
+    "lutMaterial": "#lut_mp_militia",
+    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "unk550": [
+        "#img_trim_lut_mp_militia",
+        "#img_trim_lut_mp_militia",
+        "#img_trim_lut_mp_militia",
+        "#img_trim_lut_mp_militia"
+    ]
+}

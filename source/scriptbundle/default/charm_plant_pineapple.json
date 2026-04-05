@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:56936496db19232ac44c99dc0d734fe36b517e3d4e4c7ef7f9e502b9630f56c2
-size 361
+{
+    "lootid": "#charm_pineapple",
+    "hash_ff3063df": "model#",
+    "image": "ui_icon_weapon_charms_pineapple",
+    "name": "charm_plant_pineapple",
+    "displayname": "localized17#menu/charm_plant_pineapple",
+    "icon": "ui_icon_weapon_charms_pineapple",
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_pineapple"
+}

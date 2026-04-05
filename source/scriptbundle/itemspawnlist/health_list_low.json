@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:62598bce7679549c813f87680314ecda4fb5e1727e1177b73a12479d5409ca66
-size 1069
+{
+    "itemlist": [
+        {
+            "minweight": 500,
+            "itementry": "scriptbundle&health_item_small",
+            "maxweight": 500,
+            "available": -1
+        },
+        {
+            "minweight": 400,
+            "itementry": "scriptbundle&health_item_small",
+            "childitementry_1": "scriptbundle&health_item_small",
+            "maxweight": 400,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&health_item_small",
+            "childitementry_2": "scriptbundle&health_item_small",
+            "childitementry_1": "scriptbundle&health_item_small",
+            "maxweight": 100,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 200,
+    "type": "itemspawnlist",
+    "hash_345eba59": 3,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "health_list_low",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

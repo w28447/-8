@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e47c5042d9dfe305397726c97104af19dfda5af575ad9e13f3d8140005f89773
-size 323
+{
+    "callingtask": "#kills_equipment",
+    "configstringfiletype": "scriptbundle",
+    "image": "image#ui_icon_zm_calling_tasks_specialweapon",
+    "dailytarget": 100,
+    "name": "specialslaughter_task",
+    "taskname": "localized17#hash_4831910c1554ab14",
+    "descsimple": "localized17#hash_6c50c48a187b1737"
+}

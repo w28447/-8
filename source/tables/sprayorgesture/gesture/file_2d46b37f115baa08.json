@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1041f1cd34c97087bc292040c30a3db47ab3864909e7ca8136eaf8a52285bf4f
-size 325
+{
+    "name": "#hash_2d46b37f115baa08",
+    "type": "#gesture",
+    "gesture": "#hash_1f4e7d61e9e2782a",
+    "gesture2": "#hash_35f3d9394deb0585",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/tworque",
+        "icon": "image#ui_icon_emotes_twerk",
+        "isdefault": 0
+    }
+}

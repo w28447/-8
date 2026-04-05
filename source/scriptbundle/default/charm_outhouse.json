@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ee44a62ffcb459e169f7b60ca344309ecdc7d7c3d2fd55824abeee7d09fd399d
-size 343
+{
+    "lootid": "#charm_outhouse",
+    "hash_ff3063df": "model#",
+    "image": "ui_icon_weapon_charms_outhouse",
+    "name": "charm_outhouse",
+    "displayname": "localized17#menu/charm_outhouse",
+    "icon": "ui_icon_weapon_charms_outhouse",
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_outhouse"
+}

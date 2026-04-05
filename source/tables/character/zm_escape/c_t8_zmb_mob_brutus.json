@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:daa094afb391a888bd8b5dd89da5e8798748cc91a3ac4088ed1f7b35503a9b67
-size 326
+{
+    "name": "#c_t8_zmb_mob_brutus",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "destructibleDef": "#c_t8_zmb_mob_brutus_dst_def",
+    "body": "#c_t8_zmb_mob_brutus_body",
+    "head": "#c_t8_zmb_mob_brutus_head",
+    "hat": "#c_t8_zmb_mob_brutus_helmet"
+}

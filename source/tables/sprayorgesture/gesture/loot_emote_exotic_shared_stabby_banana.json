@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f2fb38f790d638c8701c1a6678628ac9001296a6d2f63010e06e2e3f4b211871
-size 1147
+{
+    "name": "#loot_emote_exotic_shared_stabby_banana",
+    "type": "#gesture",
+    "gesture": "#boast_stabby_banana",
+    "gesture2": "#boast_stabby_banana_fem",
+    "sub": [
+        {
+            "gesture": "#boast_stabby_banana_alt",
+            "gesture2": "#boast_stabby_banana_fem_alt",
+            "roles": [
+                "#prt_mp_enforcer",
+                "#prt_wz_enforcer",
+                "#prt_mp_firebreak",
+                "#prt_wz_firebreak",
+                "#hash_42e7a274de12337e",
+                "#hash_7beba0d40d750e10",
+                "#hash_6c8d991db6f42c4a",
+                "#hash_57d9e98fa3f08f76",
+                "#hash_203a1dcc75cf8c53",
+                "#hash_76ccdd2bfc985ae8",
+                "#prt_wz_spectre",
+                "#prt_mp_spectre",
+                "#prt_mp_reaper",
+                "#prt_wz_reaper_bo4",
+                "#prt_wz_reaper_bo4"
+            ]
+        }
+    ],
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/stabby_bananerson",
+        "icon": "image#ui_icon_emotes_s2_stabby_banana",
+        "isdefault": 0
+    }
+}

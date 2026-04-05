@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:faf6e1752d2b791061fdbdacb1a4375d25383df6f7773f824d32fe1cf1cae372
-size 321
+{
+    "name": "#loot_emote_shared_clapping",
+    "type": "#gesture",
+    "gesture": "#boast_clapping",
+    "gesture2": "#boast_clapping_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/bravo",
+        "icon": "image#ui_icon_emotes_clapping",
+        "isdefault": 1
+    }
+}

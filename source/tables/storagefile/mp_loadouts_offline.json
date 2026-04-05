@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:41fd1a62e052224c28e947d8b9d750e4df25957ae9e3217607687a9c1e65fe20
-size 386
+{
+    "nameStr": "mp_loadouts_offline",
+    "name": "#mp_loadouts_offline",
+    "ddlPath": "#gamedata/ddl/generated/mp_loadouts_offline.ddl",
+    "files": [
+        {
+            "fileName": "mp_loadouts_offline"
+        }
+    ],
+    "size": 20480,
+    "readOnLogin": true,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
+}

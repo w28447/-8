@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3f8e92e8b5db058f30df5072f7da7ed3397105d7ac1f99ecc511f713c4671bbe
-size 963
+{
+    "name": "#gsol_mp_extclip_restriction",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_extclip_ar_modular_restriction",
+        "#gamesettings/#attachment_extclip_ar_standard_restriction",
+        "#gamesettings/#attachment_extclip_lmg_heavy_restriction",
+        "#gamesettings/#attachment_extclip_lmg_standard_restriction",
+        "#gamesettings/#attachment_extclip_pistol_burst_restriction",
+        "#gamesettings/#attachment_extclip_pistol_standard_restriction",
+        "#gamesettings/#attachment_extclip_shotgun_semiauto_restriction",
+        "#gamesettings/#attachment_extclip_smg_accurate_restriction",
+        "#gamesettings/#attachment_extclip_smg_capacity_restriction",
+        "#gamesettings/#attachment_extclip_smg_fastfire_restriction",
+        "#gamesettings/#attachment_extclip_sniper_powersemi_restriction",
+        "#gamesettings/#attachment_extclip_tr_midburst_restriction"
+    ]
+}

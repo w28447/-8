@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2dcf46003a46d99561dadd38026d993b4a532563047ed80143c21c39faa2edcb
-size 342
+{
+    "name": "#loot_emote_shared_slit_throat",
+    "type": "#gesture",
+    "gesture": "#boast_slit_throat",
+    "gesture2": "#boast_slit_throat_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#hash_6703ab4b9c45dd96",
+        "icon": "image#ui_icon_emotes_slit_throat",
+        "isdefault": 0
+    }
+}

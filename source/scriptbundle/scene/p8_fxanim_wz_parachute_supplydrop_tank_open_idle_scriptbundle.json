@@ -1,3 +1,151 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f91f7a54c2d8169b94ce7fb101d7d51f555e2e5a36e94bb9d105368bb5f7f157
-size 3634
+{
+    "objects": [
+        {
+            "mainanim": "anim#hash_780b50c0a9393f1d",
+            "model": "model#p8_fxanim_wz_parachute_supplydrop_tank_mod",
+            "type": "prop",
+            "vmtype": "server",
+            "name": "p8_fxanim_wz_parachute_supplydrop_tank_open_idle_scriptbundle_prop_1",
+            "team": "any"
+        },
+        {
+            "mainanim": "anim#hash_77322c90462ba8c",
+            "model": "model#c_t7_ally_fb",
+            "type": "prop",
+            "vmtype": "server",
+            "name": "p8_fxanim_wz_parachute_supplydrop_tank_open_idle_scriptbundle_prop_2",
+            "team": "any"
+        },
+        {
+            "mainanim": "anim#hash_ac2d4936b932903",
+            "model": "model#c_t7_ally_fb",
+            "type": "prop",
+            "vmtype": "server",
+            "name": "p8_fxanim_wz_parachute_supplydrop_tank_open_idle_scriptbundle_prop_3",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        },
+        {
+            "vmtype": "server",
+            "team": "any"
+        }
+    ],
+    "scenetype": "scene",
+    "configstringfiletype": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "server",
+    "name": "p8_fxanim_wz_parachute_supplydrop_tank_open_idle_scriptbundle",
+    "nextscenemode": "init"
+}

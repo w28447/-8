@@ -1,3 +1,67 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ed893e91b6b854611f60cecde2c6287920a766ef940d68d8605c21b87b7b44ba
-size 2450
+{
+    "name": "#hero_minigun_t8_lv3_Grenade_zm",
+    "baseWeapon": "#hero_minigun_t8_lv3_Grenade",
+    "displayname": "#hash_4e6ad0a0aed9c99",
+    "weapon70": "#hero_minigun_t8_lv1",
+    "streamkey": "#hash_1a7d88761abdf0ad",
+    "scrstr_8c8": [
+        "tag_handle_base"
+    ],
+    "worldModelTagRight": "tag_weapon_right",
+    "worldModelTagLeft": "tag_weapon_left",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_inhand",
+    "scrstr_11a4": "tag_inhand",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 300,
+    "soundrattlerangemax": 700,
+    "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "ZOMBIES",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "sound90": "#hash_11838bf1c43660d7",
+    "firesound": "#wpn_grenade_throw",
+    "firesoundplayer": "#wpn_grenade_throw",
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "gadgetreadysoundplayer": "#hash_6f5b79a1a69b43a8",
+    "projexplosionsound": "#wpn_grenade_explode",
+    "tunables1": "#hero_minigun_t8_lv3_Grenade_tunables_zm",
+    "cacWeaponXCam": "#hash_9c4ea39463d14ac",
+    "sharedWeaponSounds": "#equipment",
+    "#hash_2e4a8800": "#eq_frag_grenade_mp_scoreevents",
+    "projectilemodel": "#wpn_t8_zm_minigun_world",
+    "viewmodel": [
+        "#wpn_t8_zm_minigun_view"
+    ],
+    "worldModel": [
+        "#wpn_t8_zm_minigun_world"
+    ],
+    "image_e90": "#t7_hud_icon_menu_frag_kf",
+    "rumble_de8": "#grenade_rumble",
+    "fx_ed8": "#hash_b12af50d1a26758",
+    "fx_f00": "#hash_80e7395fb42d35f6",
+    "fx_f08": "#hash_212a4a61f9e7ab9e",
+    "underwaterExplosionSurfaceFX": [
+        "#hash_fb70232b2892e045",
+        "#hash_c15b461b7420c6d2",
+        "#hash_bb3f97cf646813ac"
+    ],
+    "normalImpactFX": "#hash_c80a3191309d3449",
+    "bounceImpactFX": "#grenade_bounce",
+    "dudImpactFX": "#grenade_dud",
+    "normalImpactSounds": "#hash_e8e0a97bbbf0b555",
+    "bounceImpactSounds": "#hash_3ee4dcc0ba26eaad"
+}

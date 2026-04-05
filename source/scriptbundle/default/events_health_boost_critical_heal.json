@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2dc8c7c7c066df3c8f4cd07d3876bd0eae079bd6c9c76498304bd38ccf425c18
-size 288
+{
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
+    "widget": "BadasseryMedal",
+    "name": "events_health_boost_critical_heal",
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_21559845ab83594b",
+    "iconlarge": "image#hash_21559845ab83594b"
+}

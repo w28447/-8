@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:057762544b956a4e1edca3fa44e47590f43b81ec1dc5460e267c21d8e9db3984
-size 331
+{
+    "name": "#hash_61bc88f336591d1f",
+    "type": "#gesture",
+    "gesture": "#hash_753c78be81e68b72",
+    "gesture2": "#hash_2be6552eda9f2eed",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/make_it_rain",
+        "icon": "image#hash_1e58ea36e77f6fd5",
+        "isdefault": 0
+    }
+}

@@ -1,3 +1,98 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5fc1d335207295c5b87d2d349ff467d75260d5dea4557265a875dbcfc6c63c73
-size 3255
+{
+    "name": "#pistol_topbreak_t8_zm",
+    "baseWeapon": "#pistol_topbreak_t8",
+    "displayname": "#weapon/pistol_topbreak_t8",
+    "weapon70": "#pistol_topbreak_t8",
+    "streamkey": "#hash_5fbf2baef1a2a9c4",
+    "scrstr_8c8": [
+        "tag_clan_tag",
+        "tag_camo_darkmatter",
+        "tag_camo_diamond"
+    ],
+    "worldModelTagRight": "tag_weapon_right",
+    "worldModelTagLeft": "tag_weapon_left",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_weapon_right",
+    "scrstr_11a4": "tag_weapon_left",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "#hash_5b73038c": 1,
+    "#hash_6566504b": 4,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "ZOMBIES",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.1 1",
+            "0.2 0",
+            "1 0"
+        ],
+        [
+            "0 1",
+            "0.0524 0.9014",
+            "0.1251 0.4004",
+            "0.2517 0.1204",
+            "0.5021 0.0508",
+            "1 0.05"
+        ]
+    ],
+    "firesounddistant": "#hash_f74753fbac3a42d",
+    "firesound": "#hash_17d8f19c3bab926",
+    "firesoundplayer": "#hash_78e5ee1a06d5724b",
+    "sound1d0": "#hash_17d8f19c3bab926",
+    "sound1e0": "#hash_22478e79f6ed4610",
+    "sound200": "#hash_78e5ee1a06d5724b",
+    "sound210": "#hash_78f4297a28091f71",
+    "sound240": "#hash_6329b05b647edd44",
+    "sound250": "#hash_7ed0935bbc956025",
+    "sound610": "#hash_72a07537a35e0368",
+    "sound800": "#hash_21cba6ae89a3493c",
+    "sound810": "#hash_21cba6ae89a3493c",
+    "tunables1": "#pistol_topbreak_t8_tunables_zm",
+    "weaponCamo": "#hash_3d696a3142afc98b",
+    "cacWeaponXCam": "#ui_cam_cac_pistol_topbreak",
+    "cacAttachmentsXCam": "#ui_cam_cac_pistol_topbreak",
+    "weaponIconXCam": "#hash_16d2791a641b8f64",
+    "attachments": [
+        "#hash_f459a0af8e8f912b"
+    ],
+    "attachmentUniques": [
+        "#hash_6d5da4c74dc6e246"
+    ],
+    "sharedWeaponSounds": "#pistol",
+    "ballisticDesc": "#hash_fa8de762a01fac90",
+    "tracers": [
+        "#shotgun",
+        "#hash_c627e8ce4cc5b8fb"
+    ],
+    "viewmodel": [
+        "#wpn_t8_zm_pistol_webly_view"
+    ],
+    "worldModel": [
+        "#wpn_t8_zm_pistol_webly_world"
+    ],
+    "reticleSide": "#reticle_side_small",
+    "inventoryIconZm": "#hash_faaaacd7f5bba0c7",
+    "image_e90": "#t7_icon_weapon_pistol_shotgun_kf",
+    "fireRumble": "#shotgun_fire",
+    "rumble_dc8": "#hash_f1fceb6e20f9fbdc",
+    "fx_bc8": "#hash_e1e9b23b3f789a92",
+    "fx_bd0": "#hash_e1e2a63b3f726780",
+    "normalImpactFX": "#hash_e1b4c700060ee40c",
+    "exitImpactFX": "#hash_83b4b1d145ec9892",
+    "normalImpactSounds": "#bullet_impact",
+    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+}

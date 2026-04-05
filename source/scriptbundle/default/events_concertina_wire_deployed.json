@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b4c59887d966bd85a1a69de333acefe3803dda4b3717ab8790b601bde977e007
-size 284
+{
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
+    "widget": "BadasseryMedal",
+    "name": "events_concertina_wire_deployed",
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_6c274f8e42db1be",
+    "iconlarge": "image#hash_6c274f8e42db1be"
+}

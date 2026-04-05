@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a57cc7ef54032f0ba71e82ee66347b38344d247bbda032d9b14cfb8e117ca14c
-size 392
+{
+    "backingsmall": "image#t7_hud_medal_backing_match_completion",
+    "widget": "BadasseryMedal",
+    "name": "t7_hud_medal_completed_match",
+    "backinglarge": "image#t7_hud_medal_backing_match_completion_lrg",
+    "iconsmall": "image#t7_hud_medal_completed_match",
+    "stringref": "localized17#medal/completed_match",
+    "iconlarge": "image#t7_hud_medal_completed_match_lrg"
+}

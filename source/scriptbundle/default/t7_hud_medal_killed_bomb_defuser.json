@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:65a1e52d90d01230d87375d8f5b303f07e4c920fecf69cfcf2c66211e73b3266
-size 392
+{
+    "backingsmall": "image#t7_hud_medal_backing_gamemode",
+    "widget": "BadasseryMedal",
+    "name": "t7_hud_medal_killed_bomb_defuser",
+    "backinglarge": "image#t7_hud_medal_backing_gamemode_lrg",
+    "iconsmall": "image#t7_hud_medal_killed_bomb_defuser",
+    "stringref": "localized17#medal/killed_bomb_defuser",
+    "iconlarge": "image#t7_hud_medal_killed_bomb_defuser_lrg"
+}

@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:32b97f47fac2323ad6b013f926180400bdb07d5dfc5792500a76847d4ea838f2
-size 420
+{
+    "surfacefxtable_vtollanding": "surface_fx_table#player_vtol_drop",
+    "configstringfiletype": "scriptbundle",
+    "type": "aifxtable",
+    "vmtype": "client",
+    "surfacefxtable_footstep": "surface_fx_table#player_footstep",
+    "name": "c_54i_robot_grunt_fx_table",
+    "surfacefxtable_landing": "surface_fx_table#player_jump_start",
+    "surfacefxtable_jumping": "surface_fx_table#player_jump_start"
+}

@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7debec07a9ad3d8d3ee235f83454c68c983634ed210d407c4455a0c6e106d5a4
-size 406
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_killcounter_smg_capacity_restriction",
+    "displayname": "localized17#weapon/smg_capacity_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__smg_capacity_t8__attachments__killcounter",
+    "isenableddisabled": 0
+}

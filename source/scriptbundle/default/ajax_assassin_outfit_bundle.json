@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:becaf11526804a95d151ef2aad919e90f7a2a99a20fe4f6a5e09306b2dc578b8
-size 417
+{
+    "buttonimage": "image#hash_15ce9ac6d61b640b",
+    "popupimage": "image#hash_51a2ef7f4f52386d",
+    "nametext": "localized17#hash_20c5774d8fe1faa4",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
+    "name": "ajax_assassin_outfit_bundle",
+    "desctext": "localized17#hash_91e004ca409480c",
+    "previewimage": "image#hash_42e16039af0d6278",
+    "reserveimage": "image#hash_47de49373a264a93"
+}

@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e99a0cc951555f461023c114b7911adf65ac8658d7ba70751c81f314fe1bf7e8
-size 651
+{
+    "hinttext": "localized17#menu/team_score_per_death_hint",
+    "configstringfiletype": "scriptbundle",
+    "value8": "25",
+    "value2": "1",
+    "value3": "2",
+    "value1": "0",
+    "value6": "5",
+    "value7": "10",
+    "value4": "3",
+    "value5": "4",
+    "type": "gamesettings",
+    "label": "localized17#menu/x_points",
+    "hash_5a6dee5a": 0,
+    "name": "team_score_per_death",
+    "displayname": "localized17#menu/team_score_per_death",
+    "label2": "localized17#menu/1_point",
+    "hash_54e336e4": 0,
+    "optionscount": 8,
+    "hash_765cfd09": 0,
+    "setting": "teamScorePerDeath",
+    "isenableddisabled": 0
+}

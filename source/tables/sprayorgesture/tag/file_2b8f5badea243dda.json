@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6f2aa9f0ff209bc5775b3a275de13b73b4e69202b026c36a620defab58308f81
-size 302
+{
+    "name": "#hash_2b8f5badea243dda",
+    "type": "#tag",
+    "material": "#hash_3a7dc0d81bece136",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_5477c418b90ef112",
+        "icon": "image#loot_ui_icon_tags_halloweenevent_monster",
+        "isdefault": 0
+    }
+}

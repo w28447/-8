@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:44fa463073635a2e9a557a3927908911346629fd62f1414c1f9b5b248e206484
-size 679
+{
+    "molotov_cocktail_multikill_2": "#molotov_cocktail_multikill_2",
+    "molotov_cocktail_multikill_2": "#molotov_cocktail_multikill_2",
+    "molotov_kill": "#molotov_kill",
+    "configstringfiletype": "scriptbundle",
+    "type": "scoreevents",
+    "molotov_burn": "#molotov_burn",
+    "vmtype": "both",
+    "molotov_cocktail_multikill_2": "#molotov_cocktail_multikill_2",
+    "name": "dot_molotov_scoreevents",
+    "customsettingstype": "status effect",
+    "molotov_cocktail_multikill_2": "#molotov_cocktail_multikill_2",
+    "hash_4edb96d5817acc7b:hash_170b3630": "#hash_4edb96d5817acc7b",
+    "molotov_cocktail_multikill_2": "#molotov_cocktail_multikill_2"
+}

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6ab63aa053abf7bcfd80cfc1538f7bc20d62c2f1e10a3f9e70350ca665bcc732
-size 236
+{
+    "name": "#hash_2f666bb2f4cb8be9",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "body": "#c_t8_zmb_dlc0_hero_bruno_body1_igc",
+    "head": "#hash_544c2d6ec40d6b80"
+}

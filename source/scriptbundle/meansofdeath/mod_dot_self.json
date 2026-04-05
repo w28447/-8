@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2f525db5d21cf98b5b9251eb46b162a5ec90a069b0c2716fc8bfcc5ef3258005
-size 301
+{
+    "mod": "MOD_DOT_SELF",
+    "configstringfiletype": "scriptbundle",
+    "type": "meansofdeath",
+    "name": "mod_dot_self",
+    "displayname": "localized17#hash_73eeb74ccec149c7",
+    "icon": "image#ui_icon_meansofdeath_suicide",
+    "iconlarge": "image#ui_icon_meansofdeath_suicide_xl"
+}

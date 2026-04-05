@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:569dd2c8a6f3eb2dd24271ad5e71e3e52f0bc1e1b48bddef5ada817cd9e34e94
-size 349
+{
+    "detailsicon": "image#loot07_ui_icon_blackmarket_itemdetail_russman",
+    "loot07_ui_icon_blackmarket_itemshop_russman": "image#loot07_ui_icon_blackmarket_itemshop_russman",
+    "nametext": "localized17#menu/contract_russman",
+    "name": "loot_character_russman_sunset_bundle_shop",
+    "desctext": "localized17#hash_620de274e6fc062c"
+}

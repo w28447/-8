@@ -1,3 +1,158 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:10908c9b4450e4420c60f463ce00c0b98a64427da54c781b5c9306791cab50c5
-size 6019
+{
+    "name": "#vehicle_t8_mil_helicopter_light_gunner_wz_green",
+    "type": "helicopter",
+    "scriptVehicleType": "helicopter_light",
+    "cameraTag": "tag_body",
+    "archeType": "#none",
+    "unk38": "#none",
+    "spawnerType": "#none",
+    "spawnInfluencers1": "#none",
+    "spawnInfluencers2": "#none",
+    "exhaustFx": "#hash_5fa1874396786bd7",
+    "exhaustFxTag1": "tag_body",
+    "unk1340": "#hash_12c0d224e578c92a",
+    "unk1350": "#hash_12c0d224e578c92a",
+    "scriptBundleSettings": "#helicopter_wz_bundle_settings",
+    "deathFx": "#hash_4475fd2c32ab3987",
+    "deathFxTag": "tag_deathfx",
+    "deathFxSound": "#hash_626995667a4ff5c",
+    "unk11f4": [
+        "tag_tail_rotor",
+        "tag_main_rotor"
+    ],
+    "targetTags": [
+        "tag_missle_target"
+    ],
+    "skidSpeedMin": 100,
+    "skidSpeedMax": 600,
+    "peelSpeedMax": 600,
+    "model": "#hash_4e2722b4c60f098d",
+    "deathModel": "#veh_t8_mil_helicopter_light_debris_fuselage",
+    "soundDef": "#hash_70aa32f249d9e457",
+    "compassIconMaterial": "#hash_169458fb2df20b0e",
+    "lightCollisionRumble": "#hash_6e2cf62b0e7ea6a0",
+    "heavyCollisionRumble": "#hash_62c9299e7f036f23",
+    "destructibleDef": "#hash_5c3d091261d63ba3",
+    "tacticalModeIcon": "#hash_e79c5098faff525b",
+    "steerAxisName": "AXIS_LSTICK",
+    "unk1608": "BUTTON_RTRIG",
+    "unk1618": "BUTTON_LTRIG",
+    "unk1648": "BUTTON_B",
+    "unk1658": "BUTTON_RSTICK",
+    "bundle": {
+        "huds": [
+            {
+                "bindings": [
+                    {
+                        "none": "#none",
+                        "hash_7aecb1d7": 0,
+                        "hash_5145090d78d3a9f6:hash_4be786c9": "localized17#hash_5145090d78d3a9f6",
+                        "hash_334a8e60": "left",
+                        "prompt": "+switchseat"
+                    },
+                    {
+                        "none": "#none",
+                        "hash_7aecb1d7": 0,
+                        "hash_1c59b497e5ef478f:hash_4be786c9": "localized17#hash_1c59b497e5ef478f",
+                        "hash_334a8e60": "left",
+                        "prompt": "+speed_throw"
+                    }
+                ],
+                "widgets": [
+                    {
+                        "hash_513059ad": 0,
+                        "hash_310cbc9": 1
+                    },
+                    {
+                        "hash_513059ad": 0,
+                        "hash_310cbc9": 14
+                    },
+                    {
+                        "hash_513059ad": 10,
+                        "hash_310cbc9": 15
+                    },
+                    {
+                        "hash_513059ad": 0,
+                        "hash_310cbc9": 12
+                    },
+                    {
+                        "hash_56e69a26093aa88d:hash_5c178a00": "localized17#hash_56e69a26093aa88d",
+                        "hash_513059ad": 0,
+                        "hash_310cbc9": 16
+                    }
+                ],
+                "hash_56985ec1": 0,
+                "hash_94307ac7": 0,
+                "hash_24c083a4": 0,
+                "hash_aa779930": "VehicleHUD_GroundVehicle",
+                "hash_bf777968": "1 1 1 1",
+                "hash_9b2a3de7": "IsAttackMode"
+            },
+            {
+                "bindings": [
+                    {
+                        "none": "#none",
+                        "hash_7aecb1d7": 0,
+                        "hash_5145090d78d3a9f6:hash_4be786c9": "localized17#hash_5145090d78d3a9f6",
+                        "hash_334a8e60": "left",
+                        "prompt": "+switchseat"
+                    },
+                    {
+                        "GAMEPAD": "#GAMEPAD",
+                        "hash_7aecb1d7": 0,
+                        "hash_6615f9892006f4f4:hash_4be786c9": "localized17#hash_6615f9892006f4f4",
+                        "hash_334a8e60": "left",
+                        "prompt": "+lookstick"
+                    },
+                    {
+                        "GAMEPAD": "#GAMEPAD",
+                        "hash_7aecb1d7": 0,
+                        "menu/strafe": "localized17#menu/strafe",
+                        "hash_334a8e60": "left",
+                        "prompt": "+movestick"
+                    },
+                    {
+                        "none": "#none",
+                        "hash_7aecb1d7": 0,
+                        "hash_6601cb85da109187:hash_4be786c9": "localized17#hash_6601cb85da109187",
+                        "hash_334a8e60": "left",
+                        "prompt": "+vehiclemovedown"
+                    },
+                    {
+                        "none": "#none",
+                        "hash_7aecb1d7": 0,
+                        "hash_36567bb8c49ec72d:hash_4be786c9": "localized17#hash_36567bb8c49ec72d",
+                        "hash_334a8e60": "left",
+                        "prompt": "+vehiclemoveup"
+                    }
+                ],
+                "widgets": [
+                    {
+                        "hash_513059ad": 0,
+                        "hash_310cbc9": 1
+                    },
+                    {
+                        "hash_513059ad": 0,
+                        "hash_310cbc9": 14
+                    },
+                    {
+                        "hash_513059ad": 10,
+                        "hash_310cbc9": 15
+                    },
+                    {
+                        "hash_513059ad": 0,
+                        "hash_310cbc9": 12
+                    }
+                ],
+                "hash_56985ec1": 0,
+                "hash_94307ac7": 0,
+                "hash_24c083a4": 0,
+                "hash_aa779930": "VehicleHUD_GroundVehicle",
+                "hash_bf777968": "1 1 1 1",
+                "hash_9b2a3de7": "IsVehicleOwner"
+            }
+        ],
+        "healthpoolsize": 3000,
+        "hash_7812fce8": 1
+    }
+}

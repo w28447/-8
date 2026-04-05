@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:32efe4482f7a1b13fe34fe8d8d246bea890b5f619a8d7fb18e3709f9c39e700f
-size 342
+{
+    "killcambackdist": 150,
+    "configstringfiletype": "scriptbundle",
+    "type": "killcam",
+    "vmtype": "none",
+    "killcamgroundupdist": 25,
+    "name": "killcam_ac130",
+    "none": "localized17#none",
+    "killcamupdist": 10,
+    "killcamwallsidedist": 30,
+    "killcamwalloutdist": 10,
+    "killcamgroundbackdist": 50
+}

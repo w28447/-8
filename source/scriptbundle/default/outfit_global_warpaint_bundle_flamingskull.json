@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c2d2b63e7ca805db002d66dfe1b4649766e388350aad3c45d2f8d9db2bea263c
-size 135
+{
+    "hash_27b0f28e5be8b84:hash_6c274f86": "image#hash_27b0f28e5be8b84",
+    "name": "outfit_global_warpaint_bundle_flamingskull"
+}

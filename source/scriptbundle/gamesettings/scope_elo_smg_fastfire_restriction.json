@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1e6a2605ccc6220ad8c3b332381f223943bb9f52714dfb5fa009303372557891
-size 385
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "scope_elo_smg_fastfire_restriction",
+    "displayname": "localized17#weapon/smg_fastfire_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__smg_fastfire_t8__attachments__elo",
+    "isenableddisabled": 0
+}

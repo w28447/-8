@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ce0f58172568718804fa6fb337e8f670ee62e5fbcc95c145c764e9fc24d277f1
-size 418
+{
+    "backingsmall": "image#t7_hud_medal_backing_badassery",
+    "widget": "BadasseryMedal",
+    "name": "t7_hud_medal_comeback_from_deathstreak",
+    "backinglarge": "image#t7_hud_medal_backing_badassery_lrg",
+    "iconsmall": "image#t7_hud_medal_comeback_from_deathstreak",
+    "stringref": "localized17#medal/comeback_from_deathstreak",
+    "iconlarge": "image#t7_hud_medal_comeback_from_deathstreak_lrg"
+}

@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2022325e62699311d4a4c62a4174e5415f65127ecdf1e94e52c604a0659d8892
-size 567
+{
+    "descriptionimage": "image#ui_icon_hero_annihilator_mp",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "ability_annihilator_restriction",
+    "displayname": "localized17#weapon/hero_annihilator",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__hero_annihilator__restricted",
+    "isenableddisabled": 0
+}

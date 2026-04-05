@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:68605d4c1ce3de7962a72c097f2827d5d5efbf36bdcffd0df11a6f322f8e26c3
-size 286
+{
+    "backingsmall": "image#hash_75692c1dbf2e3c49",
+    "widget": "BadasseryMedal",
+    "name": "events_grapple_slam_multikill_6",
+    "backinglarge": "image#hash_75692c1dbf2e3c49",
+    "iconsmall": "image#hash_776d1b4ece5247fc",
+    "iconlarge": "image#hash_776d1b4ece5247fc"
+}

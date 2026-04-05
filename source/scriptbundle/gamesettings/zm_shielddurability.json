@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f268be2a5853ba514b68fb216c7d91250a91af716d8c5f3337e2d105dfc5b6a3
-size 605
+{
+    "hinttext": "localized17#hash_3ceaa20255e67434",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value3": "2",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "zm_shielddurability",
+    "displayname": "localized17#hash_12acdfa5f7b5f5cc",
+    "label1": "localized17#hash_8547de6ff2e6e2a",
+    "label3": "localized17#hash_3d70f0da8afd383a",
+    "label2": "localized17#hash_4bf59e78dfb9da30",
+    "hash_54e336e4": 0,
+    "optionscount": 3,
+    "hash_765cfd09": 0,
+    "setting": "zmShieldDurability",
+    "isenableddisabled": 0
+}

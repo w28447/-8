@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7ca932013f93514d71eae165ce969aa3ea2965aa20f084cf731b5ea45c5e101f
-size 506
+{
+    "hash_2703f9fb7e481f6d:hash_c7bd8867": "localized17#hash_2703f9fb7e481f6d",
+    "popupimage": "image#ui_icon_weapon_sniper_locus_render",
+    "ui_icon_weapon_sniper_locus_render": "image#ui_icon_weapon_sniper_locus_render",
+    "nametext": "localized17#weapon/sniper_locus_t8",
+    "categorytext": "localized17#mpui/bm_bribe",
+    "name": "sniper_locus_t8_bribe",
+    "desctext": "localized17#weapon/sniper_locus_t8_desc",
+    "weapon/sniper_locus_t8": "localized17#weapon/sniper_locus_t8"
+}

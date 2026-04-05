@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:58e18415bf2f8f5d0dbe750754264a03d99b5d0ce1b6fbeffd7b0f72dfa9d7bb
-size 380
+{
+    "detailsicon": "image#loot07_ui_icon_blackmarket_itemdetail_smg_standard",
+    "loot07_ui_icon_blackmarket_itemshop_smg_standard:hash_6c274f86": "image#loot07_ui_icon_blackmarket_itemshop_smg_standard",
+    "nametext": "localized17#hash_2f9f939dc0976184",
+    "name": "loot_smg_standard_sig_01_sunset_bundle_shop",
+    "desctext": "localized17#hash_345a87eae99799a5"
+}

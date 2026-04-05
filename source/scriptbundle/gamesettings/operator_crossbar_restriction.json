@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:60c1e0feb18a67557ab91cc19627cb75bc8b8374194cc379538c68740eaac6cd
-size 582
+{
+    "descriptionimage": "image#ui_icon_attachment_hades_opmod_sentry_grip",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "operator_crossbar_restriction",
+    "displayname": "localized17#weapon/uber_sentrygrip",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__lmg_spray_t8__attachments__uber",
+    "isenableddisabled": 0
+}

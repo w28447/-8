@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5a19573b944c1b03f8cf848deeeee193463a2c846c7709767bc4c094d8b22d1c
-size 436
+{
+    "description": "localized17#medal/kill_enemy_who_killed_teammate_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_kill_enemy_who_killed_teammate",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_avenger",
+    "stringref": "localized17#medal/kill_enemy_who_killed_teammate",
+    "iconlarge": "image#ui_icon_medal_avenger_large"
+}

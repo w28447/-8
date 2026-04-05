@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aa88e9d38edff7634e320329dc3132c152a4b3514e143f86ff6a98797eaed97d
-size 250
+{
+    "name": "#c_t8_zmb_ofc_hero_takeo1_igc",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "body": "#c_t8_zmb_ofc_hero_takeo_body1_igc",
+    "head": "#c_t8_zmb_ofc_hero_takeo_head1"
+}

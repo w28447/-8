@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:71fc4092330a1a463414adeb0e81a23557153a64c77ba42b570d86ef501fb35a
-size 250
+{
+    "hash_94166112": "model#",
+    "name": "c_t8_bo_wingsuit_crashing_waves",
+    "icon": "loot_ui_icon_jumppacks_wingsuit_crashing_wave",
+    "largeicon": "loot_ui_icon_jumppacks_wingsuit_crashing_wave_large",
+    "hash_5677bd3d": "model#"
+}

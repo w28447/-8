@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6ef1c934eba0680a56c5af8b4e363eab4c4894963883fc81be0f5e734025803b
-size 400
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_extclip2_lmg_standard_restriction",
+    "displayname": "localized17#weapon/lmg_standard_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__lmg_standard_t8__attachments__extclip2",
+    "isenableddisabled": 0
+}

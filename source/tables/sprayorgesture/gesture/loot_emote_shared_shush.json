@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3116f540b254133041d7edfc22a5f3ed73e9a076d8209c66c734b0c08ed8c57c
-size 312
+{
+    "name": "#loot_emote_shared_shush",
+    "type": "#gesture",
+    "gesture": "#boast_shush",
+    "gesture2": "#boast_shush_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/shush",
+        "icon": "image#ui_icon_emotes_s2_shush",
+        "isdefault": 0
+    }
+}

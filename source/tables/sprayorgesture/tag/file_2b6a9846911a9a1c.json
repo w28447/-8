@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:609b12f1c20bc79d0235ff49f93fa7c8b32d237dc2fc52595f44b69bf0332c1f
-size 301
+{
+    "name": "#hash_2b6a9846911a9a1c",
+    "type": "#tag",
+    "material": "#hash_1441bcf47459d190",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_1c39e89a906eaf3",
+        "icon": "image#loot_ui_icon_tags_random_set_3_3_battery",
+        "isdefault": 0
+    }
+}

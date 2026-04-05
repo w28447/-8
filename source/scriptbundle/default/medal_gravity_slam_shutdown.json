@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c3176154b9ccbf8c512afb751cb47474f145e2ca36c44db6b2ffe4e147a7290e
-size 391
+{
+    "description": "localized17#hash_1caaff6bc9ba13b6",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_gravity_slam_shutdown",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_you_redone",
+    "stringref": "localized17#medal/shutdown",
+    "iconlarge": "image#ui_icon_medal_you_redone_large"
+}

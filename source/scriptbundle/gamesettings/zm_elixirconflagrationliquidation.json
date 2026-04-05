@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4cc9f344b208f8ed4edaa3227836ba5d5997703a479cbbcacd31677ac763da99
-size 706
+{
+    "hinttext": "localized17#hash_7b4ad964d68438a4",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value3": "2",
+    "value1": "0",
+    "value4": "3",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "zm_elixirconflagrationliquidation",
+    "displayname": "localized17#hash_6f9b37384da693c9",
+    "label4": "localized17#hash_1f0968aad9d63087",
+    "label1": "localized17#hash_68b65fb510ccd214",
+    "label3": "localized17#hash_68b65fb510ccd214",
+    "label2": "localized17#hash_1ac823ffd3e68662",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "zmElixirConflagrationLiquidation",
+    "isenableddisabled": 0
+}

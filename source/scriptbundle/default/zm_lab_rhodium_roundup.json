@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:46d9cc1b04e463b0f96b34167f3501b051f2381bbe9c130980981a3119e68816
-size 565
+{
+    "globstate": 8,
+    "numplasma": 0,
+    "hash_92340672": 0,
+    "skuid": 0,
+    "hash_b889f476": 0,
+    "droptype": 7,
+    "plasmaprice": 60,
+    "descriptiontext": "localized17#zmui/rhodium_roundup_desc",
+    "hash_51a0da4c": 0,
+    "name": "zm_lab_rhodium_roundup",
+    "popupname": "localized17#zmui/rhodium_roundup_title",
+    "hash_619ae0f2": 1,
+    "hash_39661d6e": 0,
+    "descriptiontitle": "localized17#zmui/rhodium_roundup_title",
+    "ui_icon_laboratory_aboffer3": "image#ui_icon_laboratory_aboffer3",
+    "hash_e8a9006": "white"
+}

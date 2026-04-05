@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3b4469cf149298c56a5de61f72106c12a67a150ff5bc4cee084317432f6f2bc4
-size 209
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_never_give_in",
+    "quote": "localized17#hash_1d6be99cecc8f20d",
+    "author": "localized17#hash_28304a9b00e1403e"
+}

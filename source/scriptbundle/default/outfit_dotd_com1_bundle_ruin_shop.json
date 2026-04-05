@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:25c162e4e489fcc106cbf641badc8915e176f650e3fc1e7766772584951dcc28
-size 232
+{
+    "nametext": "localized17#hash_2ddfd4dacf1faf6f",
+    "name": "outfit_dotd_com1_bundle_ruin_shop",
+    "desctext": "localized17#hash_5d8932596e241d6b",
+    "heroes/mercenary:hash_975cc0d1": "localized17#heroes/mercenary"
+}

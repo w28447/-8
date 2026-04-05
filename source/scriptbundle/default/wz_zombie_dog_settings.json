@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b8186d489c44f1e13e430ada39a5b48189cc44f5cea5d76e7b6405389fab1e0e
-size 432
+{
+    "hash_10460f1e": 1,
+    "scoreevent": "#kill_dog",
+    "configstringfiletype": "scriptbundle",
+    "maxhealth": 100,
+    "instakilldamagescale": 1,
+    "name": "wz_zombie_dog_settings",
+    "minhealth": 100,
+    "weakpointdamagescale": 1,
+    "hash_250a1683": 100,
+    "hash_97b22faa": 1,
+    "damagescale": 1,
+    "category": "#popcorn",
+    "hash_854eebd": 0,
+    "stunduration": 1,
+    "animationspeed": 1
+}

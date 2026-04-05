@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:98cf5c722f0e7d5fb3ef3164cf683cbbf8b3407494ad21e040f134d737a49336
-size 735
+{
+    "contentsdetaileddescincludelist": [
+        {
+            "hash_4f3d3e5e7b6182ef:hash_826726a": "localized17#hash_4f3d3e5e7b6182ef"
+        },
+        {
+            "heroes/trapper:hash_826726a": "localized17#heroes/trapper"
+        }
+    ],
+    "contracticon": "image#hash_5058f75abc7e8c41",
+    "hash_d0100eab": 2,
+    "relateditemname": "localized17#heroes/trapper",
+    "contracttitle": "localized17#hash_4f3d3e5e7b6182ef",
+    "name": "loot_contract_nomad_muertos",
+    "contractdescription": "localized17#hash_25105a1e4c1d1e63",
+    "white": "#white",
+    "hash_65626f95894681ce:hash_1c057e8c": "image#hash_65626f95894681ce",
+    "hash_1228188324cf56e:hash_e08fc162": "localized17#hash_1228188324cf56e"
+}

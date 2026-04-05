@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f8b1ce622ffb69eeb72456c45365d3d436373288e1fc174500b8288002031204
-size 352
+{
+    "lootid": "#charm_monty_bar",
+    "hash_ff3063df": "model#",
+    "image": "ui_icon_weapon_charms_drmontybar",
+    "name": "charm_monty_bar",
+    "displayname": "localized17#menu/charm_monty_bar",
+    "icon": "ui_icon_weapon_charms_drmontybar",
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_drmontybar"
+}

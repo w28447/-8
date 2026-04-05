@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f07ef06d5c95ddf7fb9fd36266594f69244d684622c2e416369aac51d999c947
-size 771
+{
+    "hasmigration": 0,
+    "lobbymode": 1,
+    "id": 2401,
+    "settingscount": 1,
+    "backtarget": "director_online",
+    "maxlocalclientsnetwork": 1,
+    "mainmode": 3,
+    "hash_d16ccae8": 1,
+    "isprivate": 1,
+    "showteams": 1,
+    "lobbytype": 0,
+    "menumusic": "lobby_wz",
+    "room": "warzone",
+    "hash_7f60c82f": 12,
+    "kicker": "localized17#hash_5dd231fd15db7531",
+    "isadvertised": 0,
+    "maxclients": 12,
+    "name": "director_online_wz_custom",
+    "networkmode": 2,
+    "errtarget": "director_online_wz_custom",
+    "egamemodes": 1,
+    "hash_ec76767d": 5,
+    "title": "localized17#hash_27307830087a401",
+    "hash_f68d7d0": 2,
+    "isgame": 0,
+    "maxlocalclients": 2,
+    "hash_38c7a0d1": "showdirectorcustom"
+}

@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:271b3c804478a8a6da14cd3a2dfdfdc67d1c4218b56086b2ed39864fcc14c8bb
-size 398
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "areaofeffect",
+    "earthquakescale": 0.6,
+    "effectradius": 350,
+    "vmtype": "client",
+    "name": "zm_aoe_chaos_bolt",
+    "hash_a8609f98": "rumble&damage_light",
+    "endrumble": "rumble&damage_heavy",
+    "earthquakeduration": 2,
+    "loop_effect": "fx#hash_120056d3027a73cb",
+    "startrumble": "rumble&damage_heavy"
+}

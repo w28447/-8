@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5d4ab58938c933acdbf19cbc2a84c206c346bd9d0a60f8a1932872985f865320
-size 277
+{
+    "loot04_ui_icon_blackmarket_itemshop_bundle_dogfight": "image#loot04_ui_icon_blackmarket_itemshop_bundle_dogfight",
+    "nametext": "localized17#hash_83cd2f0bd1783b0",
+    "name": "dogfight_reactive_camo_bundle",
+    "desctext": "localized17#hash_1c7324492864ad18"
+}

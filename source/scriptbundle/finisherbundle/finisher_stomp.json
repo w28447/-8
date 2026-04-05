@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8b0dbaf3876dbae05c8a9c0e0ac06f71f2c0c05695301c049073d269ef722f88
-size 223
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "finisherbundle",
+    "victim_gesture": "gesture#hash_52cee8c3bfe8d3a2",
+    "name": "finisher_stomp",
+    "attacker_gesture": "gesture#hash_170df6c04258259"
+}

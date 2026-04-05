@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6df062aaa234aaea1130ce427f656a596f4c535db0708a31334348ddc8d4154b
-size 326
+{
+    "name": "#hash_3eb9c4854170cb00",
+    "type": "#gesture",
+    "gesture": "#boast_pogo_slam",
+    "gesture2": "#boast_pogo_slam_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/pogo_slam",
+        "icon": "image#ui_icon_emotes_s2_pogo_slam",
+        "isdefault": 0
+    }
+}

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5a0c4c05aea6b70edea82a4d8bf3302a5d839a94649bcc4d72dfc7d3f63f3583
-size 236
+{
+    "name": "#hash_162c7501bb4e5e35",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 2,
+    "bodyImpactType": 2,
+    "ragdollDef": "#gladiator",
+    "body": "#c_t8_zmb_dlc0_zombie_destroyer_body1_igc"
+}

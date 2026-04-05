@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f0eb41887eb2974c21719e9b9a81bc94864839421708b4af557436218e3c07c4
-size 1094
+{
+    "name": "#loot_emote_shared_brains",
+    "type": "#gesture",
+    "gesture": "#boast_brains",
+    "gesture2": "#boast_brains_fem",
+    "sub": [
+        {
+            "gesture": "#boast_brains_alt",
+            "gesture2": "#boast_brains_fem_alt",
+            "roles": [
+                "#prt_mp_enforcer",
+                "#prt_wz_enforcer",
+                "#prt_mp_firebreak",
+                "#prt_wz_firebreak",
+                "#hash_42e7a274de12337e",
+                "#hash_7beba0d40d750e10",
+                "#hash_6c8d991db6f42c4a",
+                "#hash_57d9e98fa3f08f76",
+                "#hash_203a1dcc75cf8c53",
+                "#hash_76ccdd2bfc985ae8",
+                "#prt_wz_spectre",
+                "#prt_mp_spectre",
+                "#prt_mp_reaper",
+                "#hash_76ccdd2bfc985ae8",
+                "#prt_wz_reaper_bo4"
+            ]
+        }
+    ],
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/chef_zom_bay",
+        "icon": "image#ui_icon_emotes_brains",
+        "isdefault": 0
+    }
+}

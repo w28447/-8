@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7e7dac97d6b2b4ccfd807ffc70d45b73dcd5d4c303217c35bde69118ec90b309
-size 321
+{
+    "callingtask": "#kills_sniper_rifles",
+    "configstringfiletype": "scriptbundle",
+    "image": "image#ui_icon_zm_calling_tasks_sniperrifle",
+    "dailytarget": 375,
+    "name": "sniperrifles_task",
+    "taskname": "localized17#hash_3cd9cb94c3c3ca74",
+    "descsimple": "localized17#hash_5b89c14a7fc78ed7"
+}

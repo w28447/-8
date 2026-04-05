@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bf0d3150b37ec8c45e77984fcf867623cceba3ccf5a66883029c6f5624d87625
-size 352
+{
+    "popupimage": "image#hash_379167a282a093c5",
+    "nametext": "localized17#hash_1717ff140f30014c",
+    "categorytext": "localized17#mpui/bm_bribe",
+    "name": "half_off_no_dupe_crate",
+    "stackimage": "image#hash_7aea57ba30cd6491",
+    "desctext": "localized17#hash_25039894ff5be6b4",
+    "previewimage": "image#hash_7aea57ba30cd6491"
+}

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8c1089f9370b412785693e69f0db4f46166fb690eb24bb28f86996ba9ee86235
-size 187
+{
+    "name": "#hash_1750425f1ada63b1",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "body": "#c_zom_der_nikolai_mpc_fb"
+}

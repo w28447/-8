@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c6f40ae930b55b231e6fc527f8e1f4349e151e726db8c152a49d522a07862d0c
-size 423
+{
+    "description": "localized17#medal/kill_enemy_one_bullet_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_kill_enemy_one_bullet",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_oneshotonekill",
+    "stringref": "localized17#medal/kill_enemy_one_bullet",
+    "iconlarge": "image#ui_icon_medal_oneshotonekill_large"
+}

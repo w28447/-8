@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1ac68ce9222bd125449586038bb608f01ed0e198ce777c01a4ea98e678e1d1c4
-size 160
+{
+    "loot04_ui_icon_blackmarket_itemshop_camo_armor:hash_6c274f86": "image#loot04_ui_icon_blackmarket_itemshop_camo_armor",
+    "name": "camo_dlc3_armor"
+}

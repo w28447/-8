@@ -1,3 +1,141 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9f1e3c336f41ac5956b4d9c230351f8bc5c28f85969e64686f9162311eb27eec
-size 6459
+{
+    "name": "#hash_74a7b1f09eb77129",
+    "displayName": "#heroes/technomancer",
+    "mpDialog": "#prophet",
+    "playerSoundsTable": "#hash_8b6c2bcaaa94ab4",
+    "playerFXTable": "#hash_133d2326a92c76be",
+    "image_50": "#personalize_t7_hud_mp_weapon_hero_lightninggun_available",
+    "image_58": "#t7_mp_loadingportrait_weapon_prophet",
+    "image_60": "#t7_mp_loadingportrait_ability_prophet",
+    "image_68": "#hash_9ea48da163aebba0",
+    "image_70": "#hash_9ea48da163aebba0",
+    "image_78": "#hash_9ea48da163aebba0",
+    "image_80": "#hash_9ea48da163aebba0",
+    "image_88": "#hash_9ea48da163aebba0",
+    "positionDraftPortrait": "#ui_icon_specialist_portrait_draft_prophet",
+    "dogtagFriendly": "#hash_7601ce85023e827e",
+    "dogTagEnemy": "#hash_56d109b8fddb8ed9",
+    "tagFxSet": "#hash_424e59e0891b13d0",
+    "characterFootsteps": "#hash_7052cf78616e4c73",
+    "characterFootstepsQuiet": "#hash_783ab8b555ce9413",
+    "characterFootstepsNPC": "#hash_3008da66d91b8ad7",
+    "characterFootstepsNPCLoud": "#hash_237a21af974e9d2f",
+    "characterFootstepsNPCQuiet": "#hash_22eae0dda1cf3d31",
+    "bundle": {
+        "arenaLobbyScenes": [
+            {
+                "scene": "scriptbundle&scene_frontend_t8_arena_male_team_0"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_arena_male_team_1"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_arena_male_team_2"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_arena_male_team_3"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_arena_male_team_4"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_arena_male_team_5"
+            }
+        ],
+        "heroicScenes": [
+            {
+                "scene": "scriptbundle&default_end_game_scene"
+            }
+        ],
+        "lobbyScenes": [
+            {
+                "scene": "scriptbundle&scene_frontend_t8_mp_male_team_0"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_mp_male_team_1"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_mp_male_team_2"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_mp_male_team_3"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_mp_male_team_4"
+            },
+            {
+                "scene": "scriptbundle&scene_frontend_t8_mp_male_team_5"
+            }
+        ],
+        "heroicPoses": [
+            {
+                "scene": "scriptbundle&default_end_game_pose"
+            }
+        ],
+        "hash_b85069c": "t7_mp_notification_weapon_prophet",
+        "hash_2ac4bdf5cbb026a6:hash_7c1ccfd6": "localized17#hash_2ac4bdf5cbb026a6",
+        "hash_be6ea125": "scriptbundle&scene_frontend_t8_wz_male_unlock",
+        "hash_49ef20fb729908af:hash_9dadc42e": "localized17#hash_49ef20fb729908af",
+        "hash_21d76663beb85390:hash_9113ab87": "localized17#hash_21d76663beb85390",
+        "digitalblood": 0,
+        "ui_menu_specialist_hud_poster_frame_locked": "image#ui_menu_specialist_hud_poster_frame_locked",
+        "hash_67e06199": 0,
+        "intromovie": "<unk19>:ct_tutoprophet_loadingmovie",
+        "ctmap": "mp_seaside",
+        "hash_bb70c379": "scriptbundle&scene_frontend_t8_male_customization",
+        "hash_819846c7": 0,
+        "hash_deddce19": 0,
+        "fullname": "localized17#heroes/technomancer",
+        "hash_5331abe0": 0,
+        "hash_5a3160b12a246ea9:hash_f1f952cc": "localized17#hash_5a3160b12a246ea9",
+        "hash_e9b3b4c7": "dm",
+        "hash_6c0a990a": "enum:2",
+        "hash_636a57c125ad61ca:hash_8f6fff1c": "localized17#hash_636a57c125ad61ca",
+        "hubscene": "scriptbundle&scene_frontend_hub_t8_mp_technomancer",
+        "ui_icon_specialist_bio_prophet:hash_df4c987": "image#ui_icon_specialist_bio_prophet",
+        "hash_55f31ab6": "<unk19>:ct_skirmishoutro_prophet",
+        "hash_27ec863426c7f9ef:hash_9cb75220": "localized17#hash_27ec863426c7f9ef",
+        "hash_c6376b99": 0,
+        "hash_8d924963": 0,
+        "hash_11d9a7667005bd90:hash_cff52e6": "localized17#hash_11d9a7667005bd90",
+        "hash_e97eda81": 0,
+        "mpdialog": "scriptbundle&prophet",
+        "hash_8df0287c": 0,
+        "hash_6a6d76a8": "dm",
+        "hash_a19fcbe8": "dm",
+        "ui_icon_ct_preview_ct_tutoprophet_loadingmovie:hash_54f4a8a8": "image#ui_icon_ct_preview_ct_tutoprophet_loadingmovie",
+        "ui_icon_ct_preview_ct_skirmishoutro_prophet:hash_837988ce": "image#ui_icon_ct_preview_ct_skirmishoutro_prophet",
+        "hash_721fcbbd4924caa1:hash_a38fcede": "image#hash_721fcbbd4924caa1",
+        "hash_49a55967": 1,
+        "hash_8ef1b43f": 0,
+        "hash_148d6d91": 1,
+        "hash_16d4f9160c1078e9:hash_4dfce91b": "localized17#hash_16d4f9160c1078e9",
+        "hash_31e0d93e7cea5b0b:hash_c83058bc": "image#hash_31e0d93e7cea5b0b",
+        "hash_bce604f2": "mp_seaside",
+        "hash_840e885e0995fd4:hash_a7588c27": "localized17#hash_840e885e0995fd4",
+        "hash_be8a5804": "mp_prophet_equipment",
+        "hash_5c403974": 7,
+        "hash_2b2c7e74787b96e9:hash_900e3f74": "localized17#hash_2b2c7e74787b96e9",
+        "hash_6b928faf": "mp_prophet_weapon",
+        "hash_4b7b8f85e5375505:hash_662d70e1": "image#hash_4b7b8f85e5375505",
+        "hash_c42060d": "mp_seaside",
+        "fullbodyexplosion": "fx#weapon/fx_hero_annhilatr_death_blood",
+        "hash_2081b2ed": "scriptbundle&scene_frontend_inspection_male",
+        "hash_ac7bddbe": 0,
+        "nationality": "localized17#hash_378e9287360338a6",
+        "hash_50505213038a045a:hash_7d89c31c": "localized17#hash_50505213038a045a",
+        "hash_a360a89c": "dm",
+        "hash_c10e5242": "ct_prophet",
+        "hash_7ea4277b": 0,
+        "hash_4828dced395cf7cd:hash_ca4b9cde": "image#hash_4828dced395cf7cd",
+        "hash_2e84063c": "mp_prophet_weapon",
+        "hash_22b55286": "mp_prophet_equipment",
+        "hash_3ab3c1e3": "mp_seaside",
+        "hash_49a891cb0a25d88a:hash_4747b9c": "localized17#hash_49a891cb0a25d88a",
+        "hash_4c65efc8": "scriptbundle&scene_frontend_t8_prophet",
+        "hash_1b216715": 0,
+        "hash_abe565b3": 0,
+        "hash_203d75bb": "mp_seaside",
+        "hash_9c1be670": 0
+    }
+}

@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7437a67d6ba494558651c598556e4bd318757194530a9985100726bdbfafb002
-size 244
+{
+    "nametext": "localized17#hash_238489b797b392b8",
+    "name": "outfit_zombie_epic1_ajax_sunset_bundle_shop",
+    "desctext": "localized17#hash_2b7f2d614d161f1d",
+    "heroes/swatpolice:hash_975cc0d1": "localized17#heroes/swatpolice"
+}

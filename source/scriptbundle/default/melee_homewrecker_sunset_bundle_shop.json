@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2a29d298577274e10d1d1f751b025f173991cbb413a76ef73be7a3580a3d91c2
-size 295
+{
+    "detailsicon": "image#hash_6e81e150dfd3a368",
+    "hash_4fb2120b73412e83:hash_6c274f86": "image#hash_4fb2120b73412e83",
+    "nametext": "localized17#weapon/melee_demohammer_t8",
+    "name": "melee_homewrecker_sunset_bundle_shop",
+    "desctext": "localized17#hash_70c4c886baf196fd"
+}

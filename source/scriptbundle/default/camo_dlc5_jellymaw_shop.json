@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4934e3ba3865fa2bf770239e702d99a61ee4bf711fef86fafcfc952c1919a9d2
-size 234
+{
+    "detailsicon": "image#loot07_ui_icon_blackmarket_itemdetail_gorger",
+    "loot07_ui_icon_blackmarket_itemshop_gorger:hash_6c274f86": "image#loot07_ui_icon_blackmarket_itemshop_gorger",
+    "name": "camo_dlc5_jellymaw_shop"
+}

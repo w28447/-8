@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fcfa2d5aa8e14dba7bcb89593816a413358c7010336c144628dcee1105f68e3b
-size 362
+{
+    "detailsicon": "image#loot07_ui_icon_blackmarket_itemdetail_afterburner",
+    "loot07_ui_icon_blackmarket_itemshop_afterburner": "image#loot07_ui_icon_blackmarket_itemshop_afterburner",
+    "nametext": "localized17#hash_5e6ae4119dda43e0",
+    "name": "mastercraft_afterburner_sunset_bundle_shop",
+    "desctext": "localized17#hash_32d4b25228c51a89"
+}

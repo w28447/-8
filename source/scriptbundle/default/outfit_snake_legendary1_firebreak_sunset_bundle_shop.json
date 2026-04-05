@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2ea3c90b0bdf56fcb4c18872429134982ce209d87e5369ca0221e62a11cdfa14
-size 326
+{
+    "hash_10c8afa4d0bfa620:hash_6c274f86": "image#hash_10c8afa4d0bfa620",
+    "nametext": "localized17#hash_605969a737686528",
+    "name": "outfit_snake_legendary1_firebreak_sunset_bundle_shop",
+    "desctext": "localized17#hash_2b7f2d614d161f1d",
+    "heroes/firebreak:hash_975cc0d1": "localized17#heroes/firebreak"
+}

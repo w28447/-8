@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a0b972501e6e305af47aaccdb3810cdf58932326d726fc7e6bce8f6a1a3e0e4c
-size 197
+{
+    "loot03_ui_icon_blackmarket_itemshop_camo_cherryblossom:hash_6c274f86": "image#loot03_ui_icon_blackmarket_itemshop_camo_cherryblossom",
+    "name": "weaponcamo_cherryblossom_bundle_shop"
+}

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c2508a27572de6d03726586279022b4bd744e9a7b45aad5988ec28cf1e69bff4
-size 165
+{
+    "name": "#hash_7046a5a0343dc92a",
+    "type": "gamesettingoptioncategory",
+    "bundles": [
+        "#gamesettingoptioncategory/#gsoc_zm_general"
+    ]
+}

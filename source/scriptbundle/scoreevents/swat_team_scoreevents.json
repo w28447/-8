@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6248df212c68004b0996e9fe197d09df04be47d1486e89d2ed533e11a266d832
-size 217
+{
+    "swat_team_kill": "#swat_team_kill",
+    "configstringfiletype": "scriptbundle",
+    "type": "scoreevents",
+    "vmtype": "both",
+    "name": "swat_team_scoreevents",
+    "customsettingstype": "ability"
+}

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0a1724b4352271bcd105ab087bdc2c76679ce14e60e1862a34a6c001a6b85607
-size 359
+{
+    "detailsicon": "image#loot07_ui_icon_blackmarket_itemdetail_melee_club",
+    "loot07_ui_icon_blackmarket_itemshop_melee_club:hash_6c274f86": "image#loot07_ui_icon_blackmarket_itemshop_melee_club",
+    "nametext": "localized17#weapon/melee_club_t8",
+    "name": "melee_club_sunset_bundle_shop",
+    "desctext": "localized17#hash_154484c4d52c1934"
+}

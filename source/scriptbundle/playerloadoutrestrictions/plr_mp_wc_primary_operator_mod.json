@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4439bf9a606cf70b3b33dd8b0d6d8ffdd1dd715019770e79ae1647a507d14660
-size 439
+{
+    "hash_ab1984e9": 0,
+    "hash_934131b6": 0,
+    "configstringfiletype": "scriptbundle",
+    "numprimaryweapons": 0,
+    "hash_882b6b71": 1,
+    "type": "playerloadoutrestrictions",
+    "hash_355c3581": 0,
+    "name": "plr_mp_wc_primary_operator_mod",
+    "bonuscard_primary_operator_mod": "#bonuscard_primary_operator_mod",
+    "hash_25a22f4": 0,
+    "hash_cd3db98c": 0,
+    "hash_a2ef45f8": 0,
+    "hash_c3fc8c73": 0
+}

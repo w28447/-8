@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0d515949c41587e623794db40f124729425d680cc4f49bb243bd1b92b1b056ba
-size 439
+{
+    "hash_ab1984e9": 0,
+    "hash_934131b6": 0,
+    "configstringfiletype": "scriptbundle",
+    "numprimaryweapons": 0,
+    "hash_882b6b71": 0,
+    "type": "playerloadoutrestrictions",
+    "hash_355c3581": 1,
+    "name": "plr_mp_wc_primary_gunfighter_2",
+    "bonuscard_primary_gunfighter_2": "#bonuscard_primary_gunfighter_2",
+    "hash_25a22f4": 0,
+    "hash_cd3db98c": 0,
+    "hash_a2ef45f8": 0,
+    "hash_c3fc8c73": 0
+}

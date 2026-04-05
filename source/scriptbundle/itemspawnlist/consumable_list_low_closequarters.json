@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0b1b8dbf00ce6c73e91243093e5dfa462194dcbcde6aecfa04b7f1c7ca861b15
-size 1038
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&perk_item_brawler",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&perk_item_consumer",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&perk_item_lightweight",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&perk_item_brawler",
+            "maxweight": 200,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 4,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "consumable_list_low_closequarters",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

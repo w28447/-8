@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ddcd5bb93e53712c40000089a3a48257d0372645acb31a3147219dd7db17ef85
-size 245
+{
+    "name": "#c_t8_mp_spe_seraph1_skin1",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "body": "#c_t8_mp_spe_seraph_body1_skin1",
+    "head": "#c_t8_mp_spe_seraph_head1_skin1"
+}

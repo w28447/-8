@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:43925d1018622ab825cbc5be2f303bced0c6bbc37d581f38ce0661e16cb14bbe
-size 348
+{
+    "lootid": "#charm_20_side_dice",
+    "hash_ff3063df": "model#",
+    "image": "ui_icon_weapon_charms_dice_20",
+    "name": "charm_20_sided_dice",
+    "displayname": "localized17#menu/charm_dice_20",
+    "icon": "ui_icon_weapon_charms_dice_20",
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_dice_20"
+}

@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d7d6749c4efbbd24ba557d27ef2ba79db8b3e10b95864a55a918a349d847c1d7
-size 602
+{
+    "configstringfiletype": "scriptbundle",
+    "leftstraightanim": "playeranim#hash_75a5d99ad9e4ae11",
+    "type": "turretanims",
+    "hash_57e2e1d0ca38035a:hash_9323d5c1": "playeranim#hash_57e2e1d0ca38035a",
+    "centerstraightanim": "playeranim#hash_5b7f6293bfc58106",
+    "vmtype": "none",
+    "name": "player_turret_cargo_truck_driver_anims",
+    "aimpitchangleu": 90,
+    "aimpitchangled": 90,
+    "hash_57e2e1d0ca38035a:hash_9b47c071": "playeranim#hash_57e2e1d0ca38035a",
+    "rightstraightanim": "playeranim#hash_85884a3e58a2f2",
+    "aimyawangler": 35,
+    "aimyawanglel": 35
+}

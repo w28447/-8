@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b8836f9c2b5e6dc0c4e52be11720700a1c34874730b36ca419f1b144ad657e40
-size 854
+{
+    "hinttext": "localized17#menu/bomb_timer_hint",
+    "configstringfiletype": "scriptbundle",
+    "value8": "45",
+    "value9": "60",
+    "value2": "5",
+    "value3": "7.5",
+    "value1": "2.5",
+    "value6": "20",
+    "value7": "30",
+    "value4": "10",
+    "value5": "15",
+    "value11": "120",
+    "value10": "90",
+    "value12": "150",
+    "type": "gamesettings",
+    "label": "localized17#menu/x_seconds",
+    "hash_5a6dee5a": 0,
+    "name": "bomb_timer",
+    "displayname": "localized17#menu/bomb_timer",
+    "label9": "localized17#menu/1_minute",
+    "hash_54e336e4": 0,
+    "optionscount": 12,
+    "label10": "localized17#menu/1_5_minutes",
+    "label11": "localized17#menu/2_minutes",
+    "label12": "localized17#menu/2_5_minutes",
+    "hash_765cfd09": 0,
+    "setting": "bombTimer",
+    "isenableddisabled": 0
+}

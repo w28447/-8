@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2af28353ba21ba58b6f25f2e3ae59bcc86d87c17d1b4674bb5d6a65a20b9aeee
-size 224
+{
+    "name": "#c_t8_mp_swatbuddy2",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "body": "#c_t8_mp_swatbuddy_body2",
+    "head": "#c_t8_mp_swatbuddy_head2"
+}

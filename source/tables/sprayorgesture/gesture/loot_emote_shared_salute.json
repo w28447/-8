@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:13cd19c4d48f86a98c57f67197ea942ad4a4b036c3e0e05cfa0dc53d57c4784b
-size 364
+{
+    "name": "#loot_emote_shared_salute",
+    "type": "#gesture",
+    "gesture": "#boast_salute",
+    "gesture2": "#boast_salute_fem",
+    "bundle": {
+        "type": "#gesture",
+        "entitlement": "#hash_16d83fd17a87c96b",
+        "title": "localized18#emotes/salute",
+        "icon": "image#ui_icon_emotes_salute",
+        "isdefault": 0
+    }
+}

@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9da58c11c345ffda9a3a36e24a6f7941349877afc2a08b8a9a7c2fec0a8e60f9
-size 334
+{
+    "name": "#hash_65802de7ac08fb4a",
+    "type": "#gesture",
+    "gesture": "#hash_1a041e2cec56927b",
+    "gesture2": "#hash_3d7bfc265d531324",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/beach_baller",
+        "icon": "image#ui_icon_emotes_beachball",
+        "isdefault": 0
+    }
+}

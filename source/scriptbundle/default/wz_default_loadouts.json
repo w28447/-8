@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:94117e35abdddca8f0816da57a9b5002d46bb6f13fb981121e3d28034e8227f3
-size 689
+{
+    "hash_71dab9659ba194f4:hash_9027ef1e": "#hash_71dab9659ba194f4",
+    "hash_71dab7659ba1918e:hash_68c52059": "#hash_71dab7659ba1918e",
+    "hash_71daba659ba196a7:hash_b255336c": "#hash_71daba659ba196a7",
+    "loot_emote_shared_chest_pound": "#loot_emote_shared_chest_pound",
+    "hash_71dabb659ba1985a:hash_7afec4cc": "#hash_71dabb659ba1985a",
+    "loot_emote_shared_clapping": "#loot_emote_shared_clapping",
+    "loot_emote_shared_fist_bump": "#loot_emote_shared_fist_bump",
+    "hash_71daba659ba196a7:hash_fafb44c3": "#hash_71daba659ba196a7",
+    "loot_emote_shared_thumbs_up": "#loot_emote_shared_thumbs_up",
+    "name": "wz_default_loadouts",
+    "sessionmode": "wz"
+}

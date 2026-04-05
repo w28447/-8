@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6b1609d17d003c5d215b1b37c238c362baa8a93e0951c33ed789e9f3c31489d6
-size 1189
+{
+    "name": "#loot_emote_exotic_shared_lunchtime",
+    "type": "#gesture",
+    "gesture": "#boast_lunchtime",
+    "gesture2": "#boast_lunchtime_fem",
+    "sub": [
+        {
+            "gesture": "#hash_28516e73ae466fa5",
+            "roles": [
+                "#hash_76ccdd2bfc985ae8"
+            ]
+        },
+        {
+            "gesture": "#boast_lunchtime_alt",
+            "gesture2": "#boast_lunchtime_fem_alt",
+            "roles": [
+                "#prt_mp_firebreak",
+                "#prt_wz_firebreak",
+                "#prt_mp_enforcer",
+                "#prt_wz_enforcer",
+                "#hash_42e7a274de12337e",
+                "#hash_7beba0d40d750e10",
+                "#hash_6c8d991db6f42c4a",
+                "#hash_57d9e98fa3f08f76",
+                "#hash_203a1dcc75cf8c53",
+                "#prt_mp_spectre",
+                "#prt_wz_spectre",
+                "#prt_mp_reaper",
+                "#prt_wz_reaper_bo4"
+            ]
+        }
+    ],
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/nom_nom_nom",
+        "icon": "image#ui_icon_emotes_s2_lunchtime",
+        "isdefault": 0
+    }
+}

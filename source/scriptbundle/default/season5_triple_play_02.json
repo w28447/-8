@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a83b832d220fee0634227bd84f70aff8f51df9cda4a277e2266518dde9074656
-size 537
+{
+    "buttonimage": "image#ui_icon_blackmarket_promos_torque_algae_button_small",
+    "popupimage": "image#ui_icon_blackmarket_promos_torque_algae_large_preview",
+    "nametext": "localized17#hash_1cba159f28b3f3b8",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
+    "name": "season5_triple_play_02",
+    "desctext": "localized17#hash_6a1dd1eeed625390",
+    "previewimage": "image#ui_icon_blackmarket_promos_torque_algae_item_detail",
+    "reserveimage": "image#ui_icon_blackmarket_promos_torque_algae_button_large"
+}

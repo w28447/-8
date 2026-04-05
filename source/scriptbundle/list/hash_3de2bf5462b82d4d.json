@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c87d5826bcdaf9bb89e1650e2736b7675176131d94a74dfe6ca5d94126dee0f2
-size 403
+{
+    "name": "#hash_3de2bf5462b82d4d",
+    "type": "playersettingoption",
+    "bundles": [
+        "#codcaster_qs_xray",
+        "#codcaster_qs_listen_in",
+        "#codcaster_qs_specialists_voices",
+        "#codcaster_qs_player_list",
+        "#codcaster_qs_player_hud",
+        "#codcaster_qs_player_card",
+        "#codcaster_qs_loadout",
+        "#codcaster_qs_battle_chatter"
+    ]
+}

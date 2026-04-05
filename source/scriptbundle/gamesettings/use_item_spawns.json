@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:613ad8ef5a92493e406f3bf7e18d91b79824e1da7cb545635943603c4c48cab1
-size 379
+{
+    "hinttext": "localized17#menu/use_item_spawns",
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "use_item_spawns",
+    "displayname": "localized17#menu/use_item_spawns",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "useItemSpawns",
+    "isenableddisabled": 1
+}

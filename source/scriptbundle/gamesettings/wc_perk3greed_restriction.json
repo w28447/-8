@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cf41bba3db7493e6c565c59dc80149b42788f710680f4ce92bf90d8410576f25
-size 569
+{
+    "descriptionimage": "image#ui_icon_wildcard_greed03_large",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "wc_perk3greed_restriction",
+    "displayname": "localized17#bonuscard/perk_3_greed",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__bonuscard_perk_3_greed__restricted",
+    "isenableddisabled": 0
+}

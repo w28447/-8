@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d14dc4ee971f686db035eb6efcaec840eea1ee27aa72e6c7d3a5ee9ef0543827
-size 291
+{
+    "name": "#hash_8807c30484803fd",
+    "type": "#tag",
+    "material": "#hash_f997132485319b9",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_27d1b8fe67ce58ef",
+        "icon": "image#loot_ui_icon_tags_poster_seraph",
+        "isdefault": 0
+    }
+}

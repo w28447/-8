@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ebcfbc9f6c6bb6e12fc9b2cf5224689a69b5fcd30dccb920a7a24829a851f5d1
-size 560
+{
+    "contracticon": "image#hash_6e6f283d9a09cf56",
+    "contracttitle": "localized17#hash_62cffc9e930fd359",
+    "name": "loot_contract_afterglow",
+    "loot07_ui_icon_blackmarket_itemdetail_afterglow:hash_4b258f2c": "image#loot07_ui_icon_blackmarket_itemdetail_afterglow",
+    "contractdescription": "localized17#hash_5757dd7c7f262f49",
+    "white": "#white",
+    "loot07_ui_icon_blackmarket_itemshop_afterglow": "image#loot07_ui_icon_blackmarket_itemshop_afterglow",
+    "hash_56f7044c4efd19f3:hash_e08fc162": "localized17#hash_56f7044c4efd19f3"
+}

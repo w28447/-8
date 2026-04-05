@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d247aaf74297ca027ae109e570d8e8d5325c87c251605efd8848e95c7d16191a
-size 224
+{
+    "name": "#gsol_zm_shield",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#zm_shield",
+        "#gamesettings/#zm_shielddurability",
+        "#gamesettings/#zm_craftingkeyline"
+    ]
+}

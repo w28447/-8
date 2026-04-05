@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ef12d14bc36475024eea110f17455d815bb1472ba0a4161818ca7b35d8659ed5
-size 237
+{
+    "nametext": "localized17#hash_76e80415ea30232f",
+    "name": "outfit_dotd_com1_bundle_crash_shop",
+    "desctext": "localized17#hash_5d8932596e241d6b",
+    "heroes/buffassault:hash_975cc0d1": "localized17#heroes/buffassault"
+}

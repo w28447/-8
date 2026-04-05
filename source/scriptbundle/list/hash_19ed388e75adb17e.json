@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cc83c8125092323860ba0afaf8930215567a530c7644284750ad435b8de9b98f
-size 765
+{
+    "name": "#hash_19ed388e75adb17e",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#equipment_swatgrenade_restriction",
+        "#gamesettings/#equipment_sextemcluster_restriction",
+        "#gamesettings/#equipment_supplypod_restriction",
+        "#gamesettings/#equipment_reactorcore_restriction",
+        "#gamesettings/#equipment_tripwire_restriction",
+        "#gamesettings/#equipment_seekermine_restriction",
+        "#gamesettings/#equipment_sensordart_restriction",
+        "#gamesettings/#equipment_grapple_restriction",
+        "#gamesettings/#equipment_spawnbeacon_restriction",
+        "#gamesettings/#equipment_concertinawire_restriction",
+        "#gamesettings/#equipment_empgrenade_restriction"
+    ]
+}

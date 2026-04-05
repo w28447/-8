@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6bbb14d74c872e0f672f7c4c021af524061ae57ed30e1374499c2e88e92a4444
-size 230
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_death_comes_to_all_build_a_monument",
+    "quote": "localized17#hash_5cef7e331df84465",
+    "author": "localized17#hash_2ac7a73724128e9"
+}

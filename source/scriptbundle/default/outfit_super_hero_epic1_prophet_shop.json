@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:936c7d28f48b67f0a5b342a6cbda1ab1c58f3c74fcd2f99754141e3c36d1382f
-size 280
+{
+    "detailsicon": "image#loot07_ui_icon_blackmarket_itemdetail_superhero_prophet",
+    "loot07_ui_icon_blackmarket_itemshop_superhero_prophet:hash_6c274f86": "image#loot07_ui_icon_blackmarket_itemshop_superhero_prophet",
+    "name": "outfit_super_hero_epic1_prophet_shop"
+}

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d7ca9e6ad3d8d7adc3dfab73039cc7b4506d79f41464f6e95dc4406279545e54
-size 292
+{
+    "callingtask": "#rush_points",
+    "configstringfiletype": "scriptbundle",
+    "image": "image#personalize_t7_hud_mp_weapon_hero_chemgun",
+    "name": "makeyourpoint_task",
+    "taskname": "localized17#hash_200c0216b858b7",
+    "descsimple": "localized17#hash_6c6c3a960e5fe13e"
+}

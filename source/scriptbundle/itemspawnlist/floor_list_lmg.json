@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bb7975c8c5f65ff2fc8889d722a925582acc01a10bfbb9842a7bbbccb62c05cb
-size 563
+{
+    "itemlist": [
+        {
+            "minweight": 300,
+            "itementry": "scriptbundle&lmg_standard_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_762_item",
+            "maxweight": 380,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 1,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "floor_list_lmg",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

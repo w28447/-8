@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9149f33fa5da58d7cd1935a6c604b9172c556e40fa8000d41fb3b5dca5cfbf1a
-size 412
+{
+    "buttonimage": "image#uie_ui_menu_blackmarket_triple_play_frame_01",
+    "popupimage": "image#hash_2e0f7461fb53785d",
+    "nametext": "localized17#hash_1cba159f28b3f3b8",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
+    "name": "triple_play_feb2019",
+    "desctext": "localized17#hash_35340a3b679e069e",
+    "previewimage": "image#ui_icon_blackmarket_contracts_preview_triple_play_01"
+}

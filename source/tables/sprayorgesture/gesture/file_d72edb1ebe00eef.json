@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ae4da1a6c12a1547105507aca1f85907a38de672fd333c8616285fa3ad111a57
-size 326
+{
+    "name": "#hash_d72edb1ebe00eef",
+    "type": "#gesture",
+    "gesture": "#boast_ruin_dance",
+    "gesture2": "#boast_ruin_dance_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/funky_fresh",
+        "icon": "image#ui_icon_emotes_ruindance",
+        "isdefault": 0
+    }
+}

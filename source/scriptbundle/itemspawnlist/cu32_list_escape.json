@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0aef21d96d35ea7242b30edd6c42a336ba7f168455aab8c984b97dde32e848b5
-size 509
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&cu32_item",
+            "maxweight": 1,
+            "available": 1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 8000,
+    "type": "itemspawnlist",
+    "hash_345eba59": 1,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 1,
+    "name": "cu32_list_escape",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

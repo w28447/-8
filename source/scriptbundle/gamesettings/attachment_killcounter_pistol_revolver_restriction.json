@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ffc44a4bb77097529cb39ea41bda3a1cf69165e4aa0c5504ca87c3d71de68ea1
-size 415
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_killcounter_pistol_revolver_restriction",
+    "displayname": "localized17#weapon/pistol_revolver_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__pistol_revolver_t8__attachments__killcounter",
+    "isenableddisabled": 0
+}

@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cb96fc087557528ec3c6300d440d1acac0ba76022668564e24209970bf12b16e
-size 272
+{
+    "name": "#c_t8_mp_spe_reaper1",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 5,
+    "bodyImpactType": 6,
+    "ragdollDef": "#hash_83b0a45f1f7c3431",
+    "body": "#c_t8_mp_spe_reaper_body1",
+    "head": "#c_t8_mp_spe_reaper_head1"
+}

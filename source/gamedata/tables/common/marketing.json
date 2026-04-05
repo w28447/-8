@@ -1,3 +1,44 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:068f9e905d3238c76acbc4791be9e59245eb5fa21a7ab38b7224e8f1c5cb595e
-size 834
+[
+    {
+        "channel_type": 0,
+        "id": 0,
+        "location": 0,
+        "max_msgs": 0,
+        "name": "test_message"
+    },
+    {
+        "channel_type": 1,
+        "id": 1,
+        "location": 1,
+        "max_msgs": 4,
+        "name": "motd"
+    },
+    {
+        "channel_type": 0,
+        "id": 3,
+        "location": 3,
+        "max_msgs": 5,
+        "name": "crm_featured"
+    },
+    {
+        "channel_type": 0,
+        "id": 4,
+        "location": 4,
+        "max_msgs": 1,
+        "name": "registration"
+    },
+    {
+        "channel_type": 0,
+        "id": 5,
+        "location": 5,
+        "max_msgs": 1,
+        "name": "coupons"
+    },
+    {
+        "channel_type": 2,
+        "id": 6,
+        "location": 6,
+        "max_msgs": 4,
+        "name": "motd_trial"
+    }
+]

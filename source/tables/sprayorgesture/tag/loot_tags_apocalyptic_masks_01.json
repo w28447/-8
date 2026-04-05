@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a957c58e6a0e37e57e44cdac490092974a4e9485ada6feb95cbae075f117e26c
-size 291
+{
+    "name": "#loot_tags_apocalyptic_masks_01",
+    "type": "#tag",
+    "material": "#hash_2b1b59c4281dbc5d",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_65989a36da04c328",
+        "icon": "image#hash_13610464d854f64",
+        "isdefault": 0
+    }
+}

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b23e6e72035f017863106c00620f3da3c3c3898650f684722a428c15319f0d77
-size 312
+{
+    "hash_2b11959f3fa25f8:hash_6c274f86": "image#hash_2b11959f3fa25f8",
+    "nametext": "localized17#hash_2bfa226644532471",
+    "name": "prophet_skipper_outfit_bundle_shop",
+    "desctext": "localized17#hash_3a12aae3895342cb",
+    "heroes/technomancer:hash_975cc0d1": "localized17#heroes/technomancer"
+}

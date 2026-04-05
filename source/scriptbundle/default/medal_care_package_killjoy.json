@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7de09034cec3249fbae36ccb659e68ae016c72bf13fee9fbb196a08ab7264b58
-size 389
+{
+    "description": "localized17#hash_7334249088c111a6",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_care_package_killjoy",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_no_tip",
+    "stringref": "localized17#hash_307e48b70e2108d6",
+    "iconlarge": "image#ui_icon_medal_no_tip_large"
+}

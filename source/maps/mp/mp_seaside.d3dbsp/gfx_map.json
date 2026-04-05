@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:37fe36b18ff4c4750f4cff32077656f718b42e7fdb13ee37a0c700bb41e9a671
-size 346
+{
+    "name": "#maps/mp/mp_seaside.d3dbsp",
+    "baseName": "mp_seaside",
+    "lutMaterial": "#lut_mp_seaside",
+    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "unk550": [
+        "#img_trim_lut_mp_seaside",
+        "#img_trim_lut_mp_seaside",
+        "#img_trim_lut_mp_seaside",
+        "#img_trim_lut_mp_seaside"
+    ]
+}

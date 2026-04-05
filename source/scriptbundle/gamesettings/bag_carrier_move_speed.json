@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fe178781cde4076388e1358ea5315d58044acf5a77e611e26f65e751448feb47
-size 590
+{
+    "hinttext": "localized17#hash_5f5ce5309b90aae8",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value3": "1.5",
+    "value1": ".5",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "bag_carrier_move_speed",
+    "displayname": "localized17#menu/bag_carrier_move_speed",
+    "label1": "localized17#menu/slow",
+    "label3": "localized17#menu/fast",
+    "label2": "localized17#menu/normal",
+    "hash_54e336e4": 0,
+    "optionscount": 3,
+    "hash_765cfd09": 0,
+    "setting": "bountyBagOMoneyMoveScale",
+    "isenableddisabled": 0
+}

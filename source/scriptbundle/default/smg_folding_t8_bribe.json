@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c0e05b4dc30555550ad31a731cbc28ac1b99fe66c1b2e5153cfeccfba6c04a5a
-size 498
+{
+    "hash_2703f9fb7e481f6d:hash_c7bd8867": "localized17#hash_2703f9fb7e481f6d",
+    "popupimage": "image#ui_icon_weapon_smg_folding_render",
+    "ui_icon_weapon_smg_folding_render": "image#ui_icon_weapon_smg_folding_render",
+    "nametext": "localized17#weapon/smg_folding_t8",
+    "categorytext": "localized17#mpui/bm_bribe",
+    "name": "smg_folding_t8_bribe",
+    "desctext": "localized17#weapon/smg_folding_t8_desc",
+    "weapon/smg_folding_t8": "localized17#weapon/smg_folding_t8"
+}

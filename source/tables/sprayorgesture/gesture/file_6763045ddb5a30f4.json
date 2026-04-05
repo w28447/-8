@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4637200180505ad4c2e941f211ab21dbda37ae30ce8df8088e84d1a1ea3db84b
-size 337
+{
+    "name": "#hash_6763045ddb5a30f4",
+    "type": "#gesture",
+    "gesture": "#hash_64ce761954436ffe",
+    "gesture2": "#hash_70f16dba52e5d5a9",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/kiss_the_cook",
+        "icon": "image#ui_icon_emotes_kissthecook",
+        "isdefault": 0
+    }
+}

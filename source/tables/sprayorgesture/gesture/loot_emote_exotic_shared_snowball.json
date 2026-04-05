@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dcb94505a185d91b8ba26fa25bc073824642945a68a104191318e3a24c1dc363
-size 335
+{
+    "name": "#loot_emote_exotic_shared_snowball",
+    "type": "#gesture",
+    "gesture": "#boast_snowball",
+    "gesture2": "#boast_snowball_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/snow_day",
+        "icon": "image#ui_icon_emotes_s2_snow_ball",
+        "isdefault": 0
+    }
+}

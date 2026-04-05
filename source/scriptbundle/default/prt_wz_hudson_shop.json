@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1eb0bb613193ec19977ebd3fcc7c1b42cd13b43a470b1d2e6b4d3082ce58148a
-size 215
+{
+    "detailsicon": "image#loot07_ui_icon_blackmarket_itemdetail_hudson",
+    "loot07_ui_icon_blackmarket_itemshop_hudson": "image#loot07_ui_icon_blackmarket_itemshop_hudson",
+    "name": "prt_wz_hudson_shop"
+}

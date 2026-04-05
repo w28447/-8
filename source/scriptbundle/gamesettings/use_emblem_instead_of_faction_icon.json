@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c8b256101c25c6782580f0eb0f465c6a36897ab6152ea7b8c4b6e3efaee6abc3
-size 416
+{
+    "hinttext": "localized17#hash_650a622aefd1ec25",
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "use_emblem_instead_of_faction_icon",
+    "displayname": "localized17#hash_333fb7ac95179b0b",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "useEmblemInsteadOfFactionIcon",
+    "isenableddisabled": 1
+}

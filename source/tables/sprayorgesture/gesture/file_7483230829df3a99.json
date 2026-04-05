@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:de53b19170645ac6cc7452b46c8ead744c3d1258f13fed043f9441189f303ae0
-size 365
+{
+    "name": "#hash_7483230829df3a99",
+    "type": "#gesture",
+    "gesture": "#hash_2f6a64e0e303c8ea",
+    "gesture2": "#hash_53d7df670856145",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/im_the_tree-placeholder",
+        "icon": "image#ui_icon_specialist_portrait_hud_ruin_critical",
+        "isdefault": 0
+    }
+}

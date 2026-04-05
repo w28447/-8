@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a01e25b18d0d4a671596c6c0a548d9c62ffd936944f0629985d3c6b6864983e6
-size 234
+{
+    "hash_94166112": "model#",
+    "name": "c_t8_bo_wingsuit_tropbird",
+    "icon": "loot_ui_icon_jumppacks_wingsuit_tropbird",
+    "largeicon": "loot_ui_icon_jumppacks_wingsuit_tropbird_large",
+    "hash_5677bd3d": "model#"
+}

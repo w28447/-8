@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8ee15fce17fe36f8b3dffe04a17393d5f08bcd77c8db0016e922d27743aa53ee
-size 283
+{
+    "detailsicon": "image#loot_04_ui_icon_blackmarket_stream_camo_active_treasure",
+    "loot04_ui_icon_blackmarket_itemshop_camo_active_treasure:hash_6c274f86": "image#loot04_ui_icon_blackmarket_itemshop_camo_active_treasure",
+    "name": "camo_active_dlc3_treasure_wrapper"
+}

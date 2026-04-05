@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:47adc7aa7bf16ae65e0898e2f1e12de86954529faf2be5248ba498cd540c49c9
-size 1952
+{
+    "hash_309c231f667ce11": "3位:&&1",
+    "hash_4df55b9b501cd6e": "1位:&&1",
+    "hash_51a0f083a5566a3": "^3&&1^7長押しで蘇生",
+    "hash_6f642c413cada13": "^3[{+actionslot 4}]^7 でドラゴンファイア",
+    "warzone/button_finish": "^3[{+activate}]^7 ヒューミリエーション",
+    "hash_d0e6185dd4d6c37": "蘇生中、緊急リザーブを消費",
+    "hash_ddc319addc8bcb2": "GAME OVER",
+    "hash_145440ac41347bd4": "パワーコア展開",
+    "hash_1458857df9447fb3": "パワーコアをハッキング",
+    "hash_14cc93f11ba8334a": "$(clientName)に蘇生が必要",
+    "hash_19a78c0c5f7dd76f": "アクション",
+    "hash_1a39c44a001adc00": "パワーコア使用不可",
+    "mp/secondplace_name": "2位:&&1",
+    "mp/team_eliminated": "&&1が全滅",
+    "hash_24bb668f17a9cc67": "インターバル",
+    "hash_2a668959254d54e6": "^3[{+actionslot 4}]^7 でパワーコア",
+    "hash_2ea29b19d0e205e7": "弾薬 フル",
+    "hash_3267fdfd0c2b7fdc": "ディプロイシップを破壊した",
+    "hash_33e29c2dd8e2d480": "$(clientName)に蘇生されています",
+    "hash_40b506f518b169b8": "ドラゴンファイアをハッキング",
+    "hash_4403919077b48aaf": "ハーフタイム",
+    "mp/wins": "&&1の勝利！",
+    "hash_5378ad2a180f684c": "防衛",
+    "mp/match_bonus_is": "マッチボーナス: ^3&&1XP",
+    "hash_5a016c9fd0f137e5": "ドラゴンファイア使用可能",
+    "hash_5a11b7ef0cd7e33b": "体力パック フル",
+    "hash_62af47ae5592dbf8": "ラウンド終了",
+    "warzone/button_revive": "^3[{+activate}]^7 蘇生",
+    "mp/host_endgame_response": "ラウンド中のみゲームを終了できる",
+    "hash_6f6e84671b89c829": "蘇生中、緊急リザーブを使用",
+    "hash_76d4a80b0b67fb9e": "パワーコア破壊",
+    "hash_77965c9740b1082d": "アクション",
+    "hash_77a390bf067ca1f1": "ドラゴンファイア使用不可"
+}

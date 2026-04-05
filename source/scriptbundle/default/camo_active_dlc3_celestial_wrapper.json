@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ea3bd04492c608da925f8981b95a2fa1daa2cf878a7479e435786d776043bb40
-size 201
+{
+    "loot04_ui_icon_blackmarket_itemshop_camo_active_celestial:hash_6c274f86": "image#loot04_ui_icon_blackmarket_itemshop_camo_active_celestial",
+    "name": "camo_active_dlc3_celestial_wrapper"
+}

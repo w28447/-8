@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:203ec941300a1480e1d8ef1255a11e4319cac37941a8424ad1ae1dffa1956a01
-size 273
+{
+    "backingsmall": "image#hash_75692c1dbf2e3c49",
+    "widget": "BadasseryMedal",
+    "name": "events_multikill_3",
+    "backinglarge": "image#hash_75692c1dbf2e3c49",
+    "iconsmall": "image#hash_776d1b4ece5247fc",
+    "iconlarge": "image#hash_776d1b4ece5247fc"
+}

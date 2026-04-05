@@ -1,3 +1,68 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fcbc4b74598794f11827286d566d32f8acc878607c846258e4076a3c6f4fa1bf
-size 1901
+{
+    "itemlist": [
+        {
+            "minweight": 500,
+            "itementry": "scriptbundle&global_list_guns_small_dlc1",
+            "maxweight": 500,
+            "available": -1
+        },
+        {
+            "minweight": 400,
+            "itementry": "scriptbundle&farm_list_health",
+            "maxweight": 400,
+            "available": -1
+        },
+        {
+            "minweight": 150,
+            "itementry": "scriptbundle&farm_list_equipment",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 90,
+            "itementry": "scriptbundle&farm_list_gear",
+            "maxweight": 90,
+            "available": -1
+        },
+        {
+            "minweight": 105,
+            "itementry": "scriptbundle&farm_list_consumable",
+            "maxweight": 180,
+            "available": -1
+        },
+        {
+            "minweight": 250,
+            "itementry": "scriptbundle&farm_list_attachment",
+            "maxweight": 250,
+            "available": -1
+        },
+        {
+            "minweight": 300,
+            "itementry": "scriptbundle&farm_list_ammo",
+            "maxweight": 300,
+            "available": -1
+        },
+        {
+            "minweight": 60,
+            "itementry": "scriptbundle&storage_list",
+            "maxweight": 60,
+            "available": -1
+        },
+        {
+            "minweight": 70,
+            "itementry": "scriptbundle&farm_list_armor_shards",
+            "maxweight": 70,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 9,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "farm_list_items_small_dlc1",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

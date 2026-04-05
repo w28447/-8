@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a770b9de40188509e20b03f863f35d17502461ae35e77ad4503ebb99c06f90e2
-size 1054
+{
+    "name": "#c_t8_zmb_2ndclass_female2_hat2",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 2,
+    "bodyImpactType": 2,
+    "destructibleDef": "#c_t8_zmb_2ndclass_female2_hat2_dst_def",
+    "gibDef": "#c_t8_zmb_2ndclass_female1_gib_def",
+    "fxDef": "#fxd8_zm_char_zombie_base_body",
+    "body": "#c_t8_zmb_2ndclass_female_body2",
+    "headAlias": "#hash_2a9633190b2b12c6",
+    "hat": "#hash_6969921ecef50d7",
+    "damagedTorso_Clean": "#c_t8_zmb_2ndclass_female_body2_g_upclean",
+    "damagedTorso_RightArmGone": "#c_t8_zmb_2ndclass_female_body2_g_rarmoff",
+    "damagedTorso_LeftArmGone": "#c_t8_zmb_2ndclass_female_body2_g_larmoff",
+    "damagedTorso_HeadGone": "#c_t8_zmb_2ndclass_female_body1_g_behead",
+    "damagedLegs_Clean": "#c_t8_zmb_2ndclass_female_body2_g_lowclean",
+    "damagedLegs_RightLegGone": "#c_t8_zmb_2ndclass_female_body2_g_rlegoff",
+    "damagedLegs_LeftLegGone": "#c_t8_zmb_2ndclass_female_body2_g_llegoff",
+    "damagedLegs_NoLegs": "#c_t8_zmb_2ndclass_female_body2_g_blegsoff"
+}

@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3447f453a7c47ea5c33cbcca566bd81c0380e97e0a92859547e8dc85888b3f80
-size 668
+{
+    "name": "mp_firingrange2_alt.en",
+    "zone": "mp_firingrange2_alt",
+    "gameLanguage": "english",
+    "soundLanguage": "en",
+    "nameHash": "#mp_firingrange2_alt.en",
+    "patchZone": true,
+    "alias": [],
+    "duck": [],
+    "ambients": [],
+    "scriptIdLookups": [],
+    "streamKeysSABL": {
+        "streamKey1": "#mp_firingrange2_alt_en_stream",
+        "dataSize1": 2048,
+        "fileKey": "#mp_firingrange2_alt_en_loaded",
+        "fileLen": 2048
+    },
+    "streamKeysSABS": {
+        "streamKey1": "#hash_7e27a4925d21189a",
+        "dataSize1": 2048,
+        "fileKey": "#hash_42f63d345851bd8b",
+        "fileLen": 2048
+    }
+}

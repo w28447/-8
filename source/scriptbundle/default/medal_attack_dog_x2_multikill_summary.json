@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3107d4e37e107f2533093de5d611acfb4384e9c1643cfb1771de2cb6a71a0531
-size 401
+{
+    "description": "localized17#hash_3d4fe5387b7a7a1d",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_attack_dog_x2_multikill_summary",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_k9_unit",
+    "stringref": "localized17#hash_12cb9f1737e6b11",
+    "iconlarge": "image#ui_icon_medal_k9_unit_large"
+}

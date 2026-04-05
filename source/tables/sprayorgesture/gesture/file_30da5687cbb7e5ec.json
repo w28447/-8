@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9ef812c0c9a9d4fc3e0705894a58233342d6695bc12661be957c7ea97eafb108
-size 332
+{
+    "name": "#hash_30da5687cbb7e5ec",
+    "type": "#gesture",
+    "gesture": "#hash_287d5793b6fba873",
+    "gesture2": "#hash_7135a60365f103fc",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/call_of_night",
+        "icon": "image#hash_32f8a4d6452dcfea",
+        "isdefault": 0
+    }
+}

@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:99ccef84ca22ff85cc3fe1dd894b7a1293c0eece6ac953e3dc9641b79fbc0144
-size 637
+{
+    "name": "mp_mountain2.fj",
+    "zone": "mp_mountain2",
+    "gameLanguage": "japanese_full",
+    "soundLanguage": "fj",
+    "nameHash": "#mp_mountain2.fj",
+    "patchZone": true,
+    "alias": [],
+    "duck": [],
+    "ambients": [],
+    "scriptIdLookups": [],
+    "streamKeysSABL": {
+        "streamKey1": "#mp_mountain2_fj_stream",
+        "dataSize1": 2048,
+        "fileKey": "#mp_mountain2_fj_loaded",
+        "fileLen": 2048
+    },
+    "streamKeysSABS": {
+        "streamKey1": "#hash_64720d1a83458b8",
+        "dataSize1": 2048,
+        "fileKey": "#hash_b1e5262f7fe3f35",
+        "fileLen": 2048
+    }
+}

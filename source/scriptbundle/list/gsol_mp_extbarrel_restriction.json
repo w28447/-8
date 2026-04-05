@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6585ab2ed02a342ceebfbb4336a83fab43bbae644f6f696e191316f6f074880f
-size 1061
+{
+    "name": "#gsol_mp_extbarrel_restriction",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_extbarrel_ar_accurate_restriction",
+        "#gamesettings/#attachment_extbarrel_ar_damage_restriction",
+        "#gamesettings/#attachment_extbarrel_ar_standard_restriction",
+        "#gamesettings/#attachment_extbarrel_ar_stealth_restriction",
+        "#gamesettings/#attachment_extbarrel_pistol_revolver_restriction",
+        "#gamesettings/#attachment_extbarrel_pistol_standard_restriction",
+        "#gamesettings/#attachment_extbarrel_shotgun_pump_restriction",
+        "#gamesettings/#attachment_extbarrel_shotgun_semiauto_restriction",
+        "#gamesettings/#attachment_extbarrel_smg_accurate_restriction",
+        "#gamesettings/#attachment_extbarrel_smg_capacity_restriction",
+        "#gamesettings/#attachment_extbarrel_smg_standard_restriction",
+        "#gamesettings/#attachment_extbarrel_tr_longburst_restriction",
+        "#gamesettings/#attachment_extbarrel_tr_powersemi_restriction"
+    ]
+}

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:77c43b722252e17d6433ccc6c18c8ea2c3234dd6b6ef16bff8a400d09c6a0664
-size 235
+{
+    "backingsmall": "image#$white",
+    "widget": "BadasseryMedal",
+    "name": "events_sensor_dart_objective_multikill_3",
+    "backinglarge": "image#$white",
+    "iconsmall": "image#$white",
+    "iconlarge": "image#$white"
+}

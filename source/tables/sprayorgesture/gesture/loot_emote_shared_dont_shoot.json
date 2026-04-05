@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7996a22cfb154ae1c9f45734a0be30e56211beae5583ac1eb56c1e3285eed1b4
-size 337
+{
+    "name": "#loot_emote_shared_dont_shoot",
+    "type": "#gesture",
+    "gesture": "#boast_dont_shoot",
+    "gesture2": "#boast_dont_shoot_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/dont_shoot",
+        "icon": "image#ui_icon_emotes_s2_dont_shoot",
+        "isdefault": 0
+    }
+}

@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b9e8daac14dbfe0bf457b16cb7b412d4c17f1fd6e72dc7c6ba2f65462f8ba714
-size 168
+{
+    "name": "#maps/mp/mp_cairo.d3dbsp",
+    "baseName": "mp_cairo",
+    "lutMaterial": "#lut_mp_cairo",
+    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca"
+}

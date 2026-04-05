@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5c1cbc0fc89d86e313f4283dce9e8288aa030e39533a0d975a3b56945f7b90e7
-size 336
+{
+    "name": "#maps/zm/zm_white.d3dbsp",
+    "baseName": "zm_white",
+    "lutMaterial": "#mtl_lut_zm_white",
+    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "unk550": [
+        "#img_trim_lut_zm_white",
+        "#img_trim_lut_zm_white",
+        "#img_trim_lut_zm_white",
+        "#img_trim_lut_zm_white"
+    ]
+}

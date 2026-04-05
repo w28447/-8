@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:966c1e5a2634b624cbdc8041fedbbbfcb06fe4b25a8ee1d2c7dc472d7b8c3f36
-size 570
+{
+    "descriptionimage": "image#ui_icon_perk_deadsilence_large",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "perk_deadsilence_restriction",
+    "displayname": "localized17#menu/talent_dead_silence",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__talent_deadsilence__restricted",
+    "isenableddisabled": 0
+}

@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2873d7b199462880f8a530db87821f7ee37ce57e9619c4db4dd626eafb71e357
-size 168
+{
+    "loot03_ui_icon_blackmarket_itemshop_camo_donuts:hash_6c274f86": "image#loot03_ui_icon_blackmarket_itemshop_camo_donuts",
+    "name": "camo_dlc2_donuts_shop"
+}

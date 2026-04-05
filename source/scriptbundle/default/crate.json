@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0b77df4a4c8ffe4ea903d61cf01aab76efa95f5308ebe0d69e61d251dde0eed1
-size 331
+{
+    "popupimage": "image#ui_icon_blackmarket_reserves_crate_large",
+    "nametext": "localized17#hash_683a7ef42505fce5",
+    "categorytext": "localized17#hash_683a7ef42505fce5",
+    "name": "crate",
+    "desctext": "localized17#hash_70439483603981ef",
+    "previewimage": "image#ui_icon_blackmarket_reserves_crate_small"
+}

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e367bec15fb80e447f23aaa873f49d39f6d217b411af96e2bcee8eb87c557f27
-size 261
+{
+    "name": "#gsol_mp_extbarrel2_restriction",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_extbarrel2_pistol_revolver_restriction",
+        "#gamesettings/#attachment_extbarrel2_smg_accurate_restriction"
+    ]
+}

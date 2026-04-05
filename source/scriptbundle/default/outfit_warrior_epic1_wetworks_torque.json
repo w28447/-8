@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c31bf785801b25444e37aae174f8d118ec4f371313587d3ed641510b31a99d3b
-size 185
+{
+    "hash_14ea14dbba8d15cd:hash_6c274f86": "image#hash_14ea14dbba8d15cd",
+    "name": "outfit_warrior_epic1_wetworks_torque",
+    "desctext": "localized17#hash_4b1c665352aaf234"
+}

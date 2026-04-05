@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dfb9ed23e1245251d40eccbb75d7958f6f9229bc7a8fc926714438b1d743056b
-size 707
+{
+    "doppelbotsdistribution": "greedy",
+    "companionsfocus": "inherit from doppelbot",
+    "configstringfiletype": "scriptbundle",
+    "doppelbotsallowground": 1,
+    "type": "strategicbundle",
+    "doppelbotsfocus": "follow player",
+    "vmtype": "server",
+    "companionsinteractions": "inherit from doppelbot",
+    "name": "default_strategicbundle",
+    "doppelbotstactics": "aggressive",
+    "doppelbotsinteractions": "first come first served",
+    "doppelbotspriority": "(-4) unimportant",
+    "companionspriority": "inherit from doppelbot",
+    "companionsdistribution": "inherit from doppelbot",
+    "companionstactics": "inherit from doppelbot",
+    "companionsallowground": 1
+}

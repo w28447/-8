@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:75108443198de5db52400c08a4d3f96e78d73fe4f24bcab6aa07393bf8db3ebb
-size 300
+{
+    "name": "#hash_429d8afea36c56b4",
+    "type": "#tag",
+    "material": "#hash_4b0f7189a8da9130",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_15f6265e44ff1076",
+        "icon": "image#loot_ui_icon_tags_vehicles_cargo_truck",
+        "isdefault": 0
+    }
+}

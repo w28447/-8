@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2b58e877077ea00adf6a45b908537f05cf39a58a5f9e536ff2b7484249913f5b
-size 435
+{
+    "name": "#maps/wz/wz_open_skyscrapers.d3dbsp",
+    "baseName": "wz_open_skyscrapers",
+    "lutMaterial": "#lut_wz_skyscrapers_summer",
+    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "unk550": [
+        "#img_trim_lut_wz_open_skyscraper_summer",
+        "#img_trim_lut_wz_open_skyscraper_summer",
+        "#img_trim_lut_wz_open_skyscraper_summer",
+        "#img_trim_lut_wz_open_skyscraper_summer"
+    ]
+}

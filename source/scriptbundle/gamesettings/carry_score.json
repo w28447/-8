@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9d7678767a0c9426f53b3efcd96d981f648f3c08f5713043017c429fa1da30bf
-size 635
+{
+    "hinttext": "localized17#menu/carry_score_hint",
+    "configstringfiletype": "scriptbundle",
+    "value8": "8",
+    "value9": "9",
+    "value2": "2",
+    "value3": "3",
+    "value1": "1",
+    "value6": "6",
+    "value7": "7",
+    "value4": "4",
+    "value5": "5",
+    "type": "gamesettings",
+    "label": "localized17#menu/x_points",
+    "hash_5a6dee5a": 0,
+    "name": "carry_score",
+    "displayname": "localized17#menu/carry_score",
+    "label1": "localized17#menu/1_point",
+    "hash_54e336e4": 0,
+    "optionscount": 9,
+    "hash_765cfd09": 0,
+    "setting": "carryScore",
+    "isenableddisabled": 0
+}

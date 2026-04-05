@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ae5c5bb712f6b9a9ac7f0622aec0e1d96a29b8b94729c43b8b5aaf4444143f20
-size 413
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_suppressed_pistol_standard_restriction",
+    "displayname": "localized17#weapon/pistol_standard_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__pistol_standard_t8__attachments__suppressed",
+    "isenableddisabled": 0
+}

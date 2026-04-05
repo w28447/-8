@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d2df73fee47b9b73da28812159b2ac398b111dbed98263e843c9f09e306aa565
-size 301
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "scoreevents",
+    "vmtype": "both",
+    "name": "eq_molotov_mp_scoreevents",
+    "molotov_cocktail_exploded": "#molotov_cocktail_exploded",
+    "molotov_cocktail_threw": "#molotov_cocktail_threw",
+    "customsettingstype": "ability"
+}

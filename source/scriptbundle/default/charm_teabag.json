@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:14f9bd2d2354d99e47ae9fa73a072e9d2950f5cc9c5b8e4d4309755054f8edcc
-size 332
+{
+    "lootid": "#charm_teabag",
+    "hash_ff3063df": "model#",
+    "image": "ui_icon_weapon_charms_teabag",
+    "name": "charm_teabag",
+    "displayname": "localized17#menu/charm_tea_bag",
+    "icon": "ui_icon_weapon_charms_teabag",
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_teabag"
+}

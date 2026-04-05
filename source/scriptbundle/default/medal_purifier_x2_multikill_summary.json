@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:37334a2c8bfd6291d7f52d926498a85dae20ddca1822d6fc077ca5137f13519c
-size 398
+{
+    "description": "localized17#hash_41afc1948219ec6e",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_purifier_x2_multikill_summary",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_melted",
+    "stringref": "localized17#hash_4b47cdbde3e08096",
+    "iconlarge": "image#ui_icon_medal_melted_large"
+}

@@ -1,3 +1,74 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ad177e4f1eb1e3a68def8e1cc1dcc18fdb5b2a00a966b9f2752432517c869350
-size 2058
+{
+    "name": "#hash_378e89d277157e87",
+    "model": "#hash_395422a17a7072ac",
+    "clientOnly": false,
+    "syncBaseHealthWithEntity": false,
+    "pieces": [
+        {
+            "stages": [
+                {
+                    "unk28": "tag_base_link_d0"
+                },
+                {
+                    "name": "#hash_5a4d8c26d0968ebb",
+                    "unk28": "tag_base_link_d1"
+                },
+                {},
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_764a8ac061b3a8a0",
+            "unk268": 50,
+            "hideBones": [
+                22,
+                23,
+                26,
+                27
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "tag_top_link_d0"
+                },
+                {
+                    "name": "#hash_5a4d8c26d0968ebb",
+                    "unk28": "tag_top_link_d1"
+                },
+                {},
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_764a8bc061b3aa53",
+            "unk268": 50,
+            "hideBones": [
+                20,
+                21,
+                24,
+                25
+            ]
+        }
+    ]
+}

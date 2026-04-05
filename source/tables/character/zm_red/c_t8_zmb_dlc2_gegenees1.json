@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:38a35948fbd7287e077b14765ac46b56859640e19e1dc7022805da7de545cb6a
-size 283
+{
+    "name": "#c_t8_zmb_dlc2_gegenees1",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "destructibleDef": "#c_t8_zmb_dlc2_gegenees1_dst_def",
+    "ragdollDef": "#gegenees",
+    "body": "#c_t8_zmb_dlc2_gegenees_fb1"
+}

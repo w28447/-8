@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:57f7c9daf10a9835ab3fa0ab29d7b4b0dfaac07cb60eab3ed12c2808add2f475
-size 298
+{
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
+    "widget": "BadasseryMedal",
+    "name": "events_battle_shield_objective_shield_block",
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_76e7d0f6d24c3240",
+    "iconlarge": "image#hash_76e7d0f6d24c3240"
+}

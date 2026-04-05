@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:105138351c4e8e6805cc92f0a89970d3b02be5184d35215eeac994d8128c86a2
-size 673
+{
+    "name": "mp_firingrange2_alt.fj",
+    "zone": "mp_firingrange2_alt",
+    "gameLanguage": "japanese_full",
+    "soundLanguage": "fj",
+    "nameHash": "#mp_firingrange2_alt.fj",
+    "patchZone": true,
+    "alias": [],
+    "duck": [],
+    "ambients": [],
+    "scriptIdLookups": [],
+    "streamKeysSABL": {
+        "streamKey1": "#mp_firingrange2_alt_fj_stream",
+        "dataSize1": 2048,
+        "fileKey": "#mp_firingrange2_alt_fj_loaded",
+        "fileLen": 2048
+    },
+    "streamKeysSABS": {
+        "streamKey1": "#hash_32d3112f34890067",
+        "dataSize1": 2048,
+        "fileKey": "#hash_73a9a26aeb2ec2e",
+        "fileLen": 2048
+    }
+}

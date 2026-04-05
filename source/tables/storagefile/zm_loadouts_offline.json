@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4134bb04c75be2128de9eb724eff8cd6ecac37dc5d11928dcae07c4825c4214c
-size 386
+{
+    "nameStr": "zm_loadouts_offline",
+    "name": "#zm_loadouts_offline",
+    "ddlPath": "#gamedata/ddl/generated/zm_loadouts_offline.ddl",
+    "files": [
+        {
+            "fileName": "zm_loadouts_offline"
+        }
+    ],
+    "size": 67100,
+    "readOnLogin": true,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
+}

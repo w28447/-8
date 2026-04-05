@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:18c693f443cb239b2e4165e7b0694a9f2efa4f8f7a0b3112673d2dfd5af7b79c
-size 394
+{
+    "description": "localized17#medal/final_survivor_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_final_survivor",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_clean_bill",
+    "stringref": "localized17#medal/final_survivor",
+    "iconlarge": "image#ui_icon_medal_clean_bill_large"
+}

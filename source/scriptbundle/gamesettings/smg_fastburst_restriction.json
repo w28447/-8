@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cca435f7ed76f2c6c1560d2bf4c61d044e7d1886cf88f3ba27b1c346a7c90f84
-size 565
+{
+    "descriptionimage": "image#ui_icon_weapon_smg_fastburst_xl",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "smg_fastburst_restriction",
+    "displayname": "localized17#weapon/smg_fastburst_t8",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__smg_fastburst_t8__restricted",
+    "isenableddisabled": 0
+}

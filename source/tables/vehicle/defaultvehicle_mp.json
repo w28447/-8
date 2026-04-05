@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b150a3db272f5a584c85ff35365ff159d5bfdce41850f0730e1e56572583875d
-size 153
+{
+    "name": "#defaultvehicle_mp",
+    "type": "wheels4",
+    "skidSpeedMin": 0,
+    "skidSpeedMax": 0,
+    "peelSpeedMax": 0,
+    "bundle": {}
+}

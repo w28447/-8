@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:62d7542fe0e208e19d0152d63ac16955a4a6d6fb57d0dc184b053a476398173d
-size 371
+{
+    "detailsicon": "image#loot07_ui_icon_blackmarket_itemdetail_bundle_full_stop",
+    "loot07_ui_icon_blackmarket_itemshop_bundle_full_stop": "image#loot07_ui_icon_blackmarket_itemshop_bundle_full_stop",
+    "nametext": "localized17#weapon/melee_stopsign_t8",
+    "name": "melee_stopsign_sunset_bundle_shop",
+    "desctext": "localized17#hash_36d8b1cb710e0481"
+}

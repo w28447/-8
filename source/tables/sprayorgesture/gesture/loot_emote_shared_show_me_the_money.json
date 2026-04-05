@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:311cc10981dce097a5d3c38a364b176a022d64ac505837c39f5c9020e9b3ba3c
-size 359
+{
+    "name": "#loot_emote_shared_show_me_the_money",
+    "type": "#gesture",
+    "gesture": "#boast_show_me_the_money",
+    "gesture2": "#boast_show_me_the_money_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/pay_day",
+        "icon": "image#ui_icon_emotes_show_me_the_money",
+        "isdefault": 0
+    }
+}

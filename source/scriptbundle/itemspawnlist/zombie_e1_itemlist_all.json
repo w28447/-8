@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7a65679c65fd21de91184e85a557a957389144a8ae5dd67fd81569852a7ec0d7
-size 1354
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&ray_gun_t8_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&sniper_powerbolt_t8_gold_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&sensor_dart_wz_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&ammo_type_50cal_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&armor_item_large",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&health_item_large",
+            "maxweight": 1,
+            "available": 1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 6,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "zombie_e1_itemlist_all",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

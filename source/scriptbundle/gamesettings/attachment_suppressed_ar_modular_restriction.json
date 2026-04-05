@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:48e53cc517b10e7b44c2f45299bcc3d0c0f9306d7424a9aa1fce7ab6c88346a6
-size 398
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_suppressed_ar_modular_restriction",
+    "displayname": "localized17#weapon/ar_modular_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__ar_modular_t8__attachments__suppressed",
+    "isenableddisabled": 0
+}

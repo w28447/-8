@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:00415e048bfe6efd81cdc41886ba2e0d8c9b6d2d02c0b7a0d5d7dc59942d8b79
-size 413
+{
+    "hinttext": "localized17#hash_5c7406872850387e",
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "ability_on_respawn",
+    "displayname": "localized17#menu/ability_on_respawn",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "specialistAbilityReadyOnRespawn_allies_1",
+    "isenableddisabled": 1
+}

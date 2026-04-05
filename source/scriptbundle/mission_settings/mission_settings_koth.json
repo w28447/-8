@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b996dfd6251b3ae1f0c42edbd2649a2ce74038840c3a2fa3ddde181c5e787683
-size 203
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "mission_settings",
+    "mstype": "koth",
+    "vmtype": "both",
+    "name": "mission_settings_koth",
+    "msaudioplaybackthrottle": 5000
+}

@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:227b2d0610150f635aae333b4d93c9047c8b78c595bb5b486a5fb07a1225fd5f
-size 387
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "scope_holo_tr_longburst_restriction",
+    "displayname": "localized17#weapon/tr_longburst_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__tr_longburst_t8__attachments__holo",
+    "isenableddisabled": 0
+}

@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:447323905e5e3b09546fb11951bb9840e94f38895b1b20b12fc5f157b4b9eb9c
-size 403
+{
+    "description": "localized17#medal/killed_bomb_planter_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_killed_bomb_planter",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_task_force",
+    "stringref": "localized17#medal/killed_bomb_planter",
+    "iconlarge": "image#ui_icon_medal_task_force"
+}

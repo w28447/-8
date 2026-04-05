@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ca55a6e6d5ea7ba6b246e0d6909f03832fc8d46cb2110ccbaac8833713bf3ae1
-size 287
+{
+    "detailsicon": "image#hash_7b7b63906d4c0edc",
+    "hash_2275c3fe3954c5a7:hash_6c274f86": "image#hash_2275c3fe3954c5a7",
+    "nametext": "localized17#hash_32dc94fba031bc78",
+    "name": "ar_modular_mk2_sunset_bundle_shop",
+    "desctext": "localized17#hash_2425540c4351c45a"
+}

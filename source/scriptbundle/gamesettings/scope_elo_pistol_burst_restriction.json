@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dcb2b61466cb52e60d442821a9610c9e95f3b1ed8a77dfecbb7a577af7b98149
-size 385
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "scope_elo_pistol_burst_restriction",
+    "displayname": "localized17#weapon/pistol_burst_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__pistol_burst_t8__attachments__elo",
+    "isenableddisabled": 0
+}

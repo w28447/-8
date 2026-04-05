@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b5b2c924244ecb33556387bd0cea8f642ac212fede2aff2cb0218a03a5d5a1c0
-size 193
+{
+    "name": "#c_t8_zmb_dlc0_elephant1",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 2,
+    "bodyImpactType": 2,
+    "body": "#c_t8_zmb_dlc0_elephant_body1"
+}

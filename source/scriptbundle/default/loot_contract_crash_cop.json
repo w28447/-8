@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:34e97d47af629f08de9d11e6d8ff2aa85e9c32091a067a320d700d7be15764d9
-size 744
+{
+    "contentsdetaileddescincludelist": [
+        {
+            "hash_6ed6f16e719818bc:hash_826726a": "localized17#hash_6ed6f16e719818bc"
+        },
+        {
+            "heroes/buffassault:hash_826726a": "localized17#heroes/buffassault"
+        }
+    ],
+    "contracticon": "image#hash_5947883ecc75021",
+    "hash_d0100eab": 2,
+    "relateditemname": "localized17#heroes/buffassault",
+    "contracttitle": "localized17#hash_6ed6f16e719818bc",
+    "name": "loot_contract_crash_cop",
+    "contractdescription": "localized17#hash_5d723ae8855383fa",
+    "white": "#white",
+    "hash_1acfc0046503e008:hash_1c057e8c": "image#hash_1acfc0046503e008",
+    "hash_202b143ac8709224:hash_e08fc162": "localized17#hash_202b143ac8709224"
+}

@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:928a0f738acc7ad7e649daa6b3f68ef19d57fb6de49bcc2c803f3caa2a8bc794
-size 863
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&itemlist_cymbol_monkey",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&smoke_grenade_wz_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&acid_bomb_wz_item",
+            "maxweight": 100,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 3,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "equipment_list_zombie_ambush",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

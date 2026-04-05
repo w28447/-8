@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb01fbbcecb261e68ee2b5f20c3408ff5b979ec56a4b88a7642809fc86c8b5c6
-size 237
+{
+    "nametext": "localized17#hash_17bbdd87c62cbcf2",
+    "name": "outfit_dotd_com1_bundle_firebreak_shop",
+    "desctext": "localized17#hash_5d8932596e241d6b",
+    "heroes/firebreak:hash_975cc0d1": "localized17#heroes/firebreak"
+}

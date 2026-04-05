@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7d579705a4584ed266736d5c14cee30468a8fab4d609b6f8a4a9c98a771c5563
-size 387
+{
+    "description": "localized17#medal/longshot_kill_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_longshot_kill",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_longshot",
+    "stringref": "localized17#medal/longshot_kill",
+    "iconlarge": "image#ui_icon_medal_longshot_large"
+}

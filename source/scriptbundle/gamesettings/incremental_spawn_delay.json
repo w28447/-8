@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fd93fa0718c3da39ee716d7350c8c84f9f0b1af4ffa018d74a1ca1922128f615
-size 905
+{
+    "hinttext": "localized17#menu/incremental_spawn_delay_hint",
+    "configstringfiletype": "scriptbundle",
+    "value8": "6",
+    "value9": "7",
+    "value2": "1",
+    "value3": "2",
+    "value1": "0",
+    "value6": "4",
+    "value7": "5",
+    "value4": "2.5",
+    "value5": "3",
+    "value11": "9",
+    "value10": "8",
+    "value13": "15",
+    "value12": "10",
+    "value15": "40",
+    "value14": "30",
+    "value17": "60",
+    "value16": "50",
+    "type": "gamesettings",
+    "label": "localized17#menu/x_seconds",
+    "hash_5a6dee5a": 0,
+    "name": "incremental_spawn_delay",
+    "displayname": "localized17#menu/incremental_spawn_delay",
+    "label1": "localized17#menu/disabled",
+    "label2": "localized17#menu/1_second",
+    "hash_54e336e4": 0,
+    "optionscount": 17,
+    "hash_765cfd09": 0,
+    "setting": "incrementalSpawnDelay",
+    "isenableddisabled": 0
+}

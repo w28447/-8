@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:525974d8a3ddb3791fe81e1d8fb4e4170f34a5b73f6a5c92e080322cb5333d55
-size 734
+{
+    "name": "#veh_wingsuit_player",
+    "type": "helicopter",
+    "scoreType": "none",
+    "cameraTag": "tag_driver",
+    "archeType": "#none",
+    "unk38": "#none",
+    "spawnerType": "#none",
+    "spawnInfluencers1": "#none",
+    "spawnInfluencers2": "#none",
+    "skidSpeedMin": 100,
+    "skidSpeedMax": 600,
+    "peelSpeedMax": 600,
+    "model": "#hash_5cfb80bde1c055ac",
+    "deathModel": "#hash_5cfb80bde1c055ac",
+    "tacticalModeIcon": "#hash_99d3717d7c3a9ecc",
+    "steerAxisName": "AXIS_LSTICK",
+    "attackButtonName": "BUTTON_RSTICK",
+    "unk1618": "BUTTON_RSHLDR",
+    "steerGraphName": "heli_hind_steer.graph",
+    "bundle": {
+        "healthpoolsize": 1000,
+        "hash_7812fce8": 1
+    }
+}

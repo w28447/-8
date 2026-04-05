@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e17f0ee4cf1f084762d61a26f5c45d159302c82b5a7a320a63f08cb315c7ebd4
-size 853
+{
+    "itemlist": [
+        {
+            "minweight": 20,
+            "itementry": "scriptbundle&attachment_list_good",
+            "maxweight": 30,
+            "available": -1
+        },
+        {
+            "minweight": 90,
+            "itementry": "scriptbundle&attachment_list_med",
+            "maxweight": 135,
+            "available": -1
+        },
+        {
+            "minweight": 90,
+            "itementry": "scriptbundle&attachment_list_low",
+            "maxweight": 135,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 3,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "fracking_list_attachment",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

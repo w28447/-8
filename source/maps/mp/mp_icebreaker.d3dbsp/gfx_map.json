@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cdf470daebebffd9189ce54eb5a44977fb22e53b5375b07279cb8186f774377f
-size 367
+{
+    "name": "#maps/mp/mp_icebreaker.d3dbsp",
+    "baseName": "mp_icebreaker",
+    "lutMaterial": "#lut_mp_icebreaker",
+    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "unk550": [
+        "#img_trim_lut_mp_icebreaker",
+        "#img_trim_lut_mp_icebreaker",
+        "#img_trim_lut_mp_icebreaker",
+        "#img_trim_lut_mp_icebreaker"
+    ]
+}

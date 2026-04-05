@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:26a3ea78e644ed4c040bd36ba34a1b3035fba5b45a3d6084c46a318d1f080b2d
-size 244
+{
+    "nametext": "localized17#hash_326eb1964a3a3f9f",
+    "name": "outfit_warrior_base_pal_exo2_recon_sunset_bundle_shop",
+    "desctext": "localized17#hash_2b7f2d614d161f1d",
+    "heroes/recon:hash_975cc0d1": "localized17#heroes/recon"
+}

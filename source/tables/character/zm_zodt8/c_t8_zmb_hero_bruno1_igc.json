@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e574868ee7ed059f83720568267b238e2433a7974490a52f9717a4eac37a9a95
-size 240
+{
+    "name": "#c_t8_zmb_hero_bruno1_igc",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "body": "#c_t8_zmb_hero_bruno_body_igc",
+    "head": "#c_t8_zmb_hero_bruno_head_igc"
+}

@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f26153b7ac6f389851c61ab9dd6a0b62c64b0d9f6b0deb8f2539e086c50a74ea
-size 165
+{
+    "loot02_ui_icon_blackmarket_itemshop_takeo_01:hash_6c274f86": "image#loot02_ui_icon_blackmarket_itemshop_takeo_01",
+    "name": "loot_character_takeo_ofc"
+}

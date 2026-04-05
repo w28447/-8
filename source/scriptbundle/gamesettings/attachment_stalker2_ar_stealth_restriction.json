@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:894cb41c94b91f1ba1ac199d32cdfb7ffb2103e01d903bce5ed311f54c2825a5
-size 394
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_stalker2_ar_stealth_restriction",
+    "displayname": "localized17#weapon/ar_stealth_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__ar_stealth_t8__attachments__stalker2",
+    "isenableddisabled": 0
+}

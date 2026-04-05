@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2e04271ba8b48756da3c7dfed00c931f6f37990e76f62d96d5f0737e1aecda4f
-size 675
+{
+    "hinttext": "localized17#hash_4f7ec984946d14b3",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value3": "2",
+    "value1": "0",
+    "value4": "3",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "zm_powerupsmaxammo",
+    "displayname": "localized17#hash_565cb32f9d914063",
+    "label4": "localized17#hash_1f0968aad9d63087",
+    "label1": "localized17#hash_68b65fb510ccd214",
+    "label3": "localized17#hash_68b65fb510ccd214",
+    "label2": "localized17#hash_1ac823ffd3e68662",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "zmPowerupMaxAmmo",
+    "isenableddisabled": 0
+}

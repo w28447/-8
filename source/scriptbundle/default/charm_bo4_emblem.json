@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2a3a1cfa3de82221aa1a764d93b2684d5fd8fe07c111459f370a1392bede64aa
-size 355
+{
+    "lootid": "#charm_bo4_emblem",
+    "hash_ff3063df": "model#",
+    "image": "ui_icon_weapon_charms_bo4_emblem",
+    "name": "charm_bo4_emblem",
+    "displayname": "localized17#menu/charm_bo4_emblem",
+    "icon": "ui_icon_weapon_charms_bo4_emblem",
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_bo4_emblem"
+}

@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fbfa24e8742f7d8f58472f32354ebeb65ae4d9cee1743a1a4f7f0b1a6b9e0c99
-size 659
+{
+    "hinttext": "localized17#menu/points_per_weapon_kill_hint",
+    "configstringfiletype": "scriptbundle",
+    "value8": "25",
+    "value2": "1",
+    "value3": "2",
+    "value1": "0",
+    "value6": "5",
+    "value7": "10",
+    "value4": "3",
+    "value5": "4",
+    "type": "gamesettings",
+    "label": "localized17#menu/x_points",
+    "hash_5a6dee5a": 0,
+    "name": "points_per_weapon_kill",
+    "displayname": "localized17#menu/points_per_weapon_kill",
+    "label2": "localized17#menu/1_point",
+    "hash_54e336e4": 0,
+    "optionscount": 8,
+    "hash_765cfd09": 0,
+    "setting": "pointsPerWeaponKill",
+    "isenableddisabled": 0
+}

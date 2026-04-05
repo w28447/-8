@@ -1,3 +1,49 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7e50199306750347d23f5bb32c3f433ca439e81c96c7c9d25d121ac7c5cb1346
-size 1347
+{
+    "name": "#hash_6ab83c5d6e5d413",
+    "model": "#veh_t8_mil_atv_recon_grn",
+    "unk20": "#veh_t8_mil_atv_recon_dead_grn",
+    "clientOnly": false,
+    "syncBaseHealthWithEntity": false,
+    "pieces": [
+        {
+            "stages": [
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin",
+                    "unk2c": [
+                        "tag_rollbar_rear"
+                    ]
+                },
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_252d2196e9e0bebc",
+            "unk268": 1000,
+            "hideBones": [
+                31,
+                70,
+                136,
+                139,
+                184
+            ]
+        }
+    ]
+}

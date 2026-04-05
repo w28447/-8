@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bee641ad26d25b063fa971510c85f0c58be80706ab725ce7cbc455bb2e3f86b6
-size 381
+{
+    "hash_aa7fbf8b": "j_head",
+    "configstringfiletype": "scriptbundle",
+    "c_t8_zmb_crew_sailor_hat1": "model#c_t8_zmb_crew_sailor_hat1",
+    "type": "destructiblecharacterdef",
+    "hash_cb768102": "helmet",
+    "vmtype": "both",
+    "name": "c_t8_zmb_crew_sailor_dst_def",
+    "piececount": 1,
+    "c_t8_zmb_crew_sailor_hat1": "model#c_t8_zmb_crew_sailor_hat1"
+}

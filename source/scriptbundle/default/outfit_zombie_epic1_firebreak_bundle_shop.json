@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b0916d21aa95a83d85bdfe27fa075d8a78adeeb4ed31fc15e8e615c3e96dfac7
-size 420
+{
+    "detailsicon": "image#loot05_ui_icon_blackmarket_itemdetail_bundle_astronaut_firebreak",
+    "loot05_ui_icon_blackmarket_itemshop_bundle_astronaut_firebreak:hash_6c274f86": "image#loot05_ui_icon_blackmarket_itemshop_bundle_astronaut_firebreak",
+    "nametext": "localized17#mpui/firebreak_zombie",
+    "name": "outfit_zombie_epic1_firebreak_bundle_shop",
+    "desctext": "localized17#hash_27a2987bb0507f6b"
+}

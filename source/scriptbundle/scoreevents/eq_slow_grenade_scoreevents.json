@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6adbcd655c3f06ef9ce1b07ba6769b9e7a400e24d173d69efe7ab7cee791acc2
-size 821
+{
+    "concussion_grenade_multikill_2": "#concussion_grenade_multikill_2",
+    "concussion_grenade_multikill_2": "#concussion_grenade_multikill_2",
+    "concussion_grenade_kill": "#concussion_grenade_kill",
+    "hash_1352459d518467e4:hash_2eaed769": "#hash_1352459d518467e4",
+    "configstringfiletype": "scriptbundle",
+    "type": "scoreevents",
+    "hash_7b589b3c0bd1a913:hash_1253685d": "#hash_7b589b3c0bd1a913",
+    "vmtype": "both",
+    "concussion_grenade_multikill_2": "#concussion_grenade_multikill_2",
+    "name": "eq_slow_grenade_scoreevents",
+    "customsettingstype": "status effect",
+    "concussion_grenade_multikill_2": "#concussion_grenade_multikill_2",
+    "concussion_grenade_assist": "#concussion_grenade_assist",
+    "concussion_grenade_multikill_2": "#concussion_grenade_multikill_2"
+}

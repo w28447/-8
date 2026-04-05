@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b8dfb6f5fadedd05538685382a1947e17d4b39eb555dbaa424fe9500630476a4
-size 187
+{
+    "loot03_ui_icon_blackmarket_itemshop_camo_zombie_flick:hash_6c274f86": "image#loot03_ui_icon_blackmarket_itemshop_camo_zombie_flick",
+    "name": "warpaint_daysofsummer_bundle"
+}

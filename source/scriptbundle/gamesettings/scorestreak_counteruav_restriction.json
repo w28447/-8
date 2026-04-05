@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c82e491efd27094aa7dbee437b879a990a1f6b76874bbe675a7550f04f9e3904
-size 554
+{
+    "descriptionimage": "image#ui_icon_scorestreaks_cuav",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "scorestreak_counteruav_restriction",
+    "displayname": "localized17#killstreak/cuav",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__counteruav__restricted",
+    "isenableddisabled": 0
+}

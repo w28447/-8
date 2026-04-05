@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:31210ebf58f485ee88b3fa4a960889dd20cb1e7db24aa656705fecbd57dc412b
-size 387
+{
+    "description": "localized17#medal/killstreak_15_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_killstreak_15",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_ruthless",
+    "stringref": "localized17#medal/killstreak_15",
+    "iconlarge": "image#ui_icon_medal_ruthless_large"
+}

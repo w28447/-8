@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1bf15c6bf6a77dbb60fb2f1f67e3d8aac78448e18726463ea2b0628156aa97ff
-size 404
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_fastreload_smg_handling_restriction",
+    "displayname": "localized17#weapon/smg_handling_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__smg_handling_t8__attachments__fastreload",
+    "isenableddisabled": 0
+}

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9b2fd2e66da3372fe07c129f9ab23ecb414865532fe15f1abf4d959415854935
-size 230
+{
+    "backingsmall": "image#$white",
+    "widget": "BadasseryMedal",
+    "name": "events_battle_command_command_combo",
+    "backinglarge": "image#$white",
+    "iconsmall": "image#$white",
+    "iconlarge": "image#$white"
+}

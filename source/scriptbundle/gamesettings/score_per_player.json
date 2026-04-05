@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:63443f4cc88215d16bd8cf403d4d9d2efed6e8ff232b653995715ed28eff4687
-size 505
+{
+    "hinttext": "localized17#menu/scoring_hint",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "score_per_player",
+    "displayname": "localized17#menu/scoring",
+    "label1": "localized17#menu/constant",
+    "label2": "localized17#menu/player_additive",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "scorePerPlayer",
+    "isenableddisabled": 0
+}

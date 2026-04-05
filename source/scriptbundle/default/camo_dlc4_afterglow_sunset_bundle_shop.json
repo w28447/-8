@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1f7a3a76222873697263cd7ecce4005628ebd78385abfa7d84abe48853867862
-size 352
+{
+    "detailsicon": "image#loot07_ui_icon_blackmarket_itemdetail_afterglow",
+    "loot07_ui_icon_blackmarket_itemshop_afterglow": "image#loot07_ui_icon_blackmarket_itemshop_afterglow",
+    "nametext": "localized17#hash_62cffc9e930fd359",
+    "name": "camo_dlc4_afterglow_sunset_bundle_shop",
+    "desctext": "localized17#hash_2d1fd44c8a9f2a26"
+}

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:512b1b6a281dd0d63c0975b1d4cf450663cced24bde894d79a1317143b590549
-size 285
+{
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
+    "widget": "BadasseryMedal",
+    "name": "events_battle_command_vanguard",
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_4c2f93a823e00ed2",
+    "iconlarge": "image#hash_4c2f93a823e00ed2"
+}

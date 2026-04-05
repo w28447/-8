@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:93c1d8121207b9dc1bc7a9762ff2b75fb99ed979ca2b77f3a3d94355337201cf
-size 129
+{
+    "hash_1ca2448ea62f942c:hash_6c274f86": "image#hash_1ca2448ea62f942c",
+    "name": "outfit_dotd_exo2_bundle_nomad_shop"
+}

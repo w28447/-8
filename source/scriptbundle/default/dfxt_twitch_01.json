@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:107c6b04b39aa6eba873cdd3811604a183d6262f2531dc7fa7c786d2ed2e8e4e
-size 447
+{
+    "hash_6a36c78c": "j_wrist_le",
+    "hash_82aadb9b": "j_knee_le",
+    "dropoff": "fx#hash_432b1dc6fbe37489",
+    "contrails": "fx#hash_2bd9596be0908e3a",
+    "name": "dfxt_twitch_01",
+    "icon": "loot_ui_icon_jumppacks_trail_twitch_2",
+    "hash_ccb00fe4": "j_wrist_ri",
+    "body_trail_3p": "fx#hash_2bce8ed8f05e1f21",
+    "largeicon": "loot_ui_icon_jumppacks_trail_twitch_2_large",
+    "body_trail": "fx#hash_2bd57ad8f0641bd3"
+}

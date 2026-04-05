@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:214a326f1cfda26ae75716498704dcc91c6be7a9f79db9d13e4a1bb6f32fbd1f
-size 370
+{
+    "lootid": "#charm_shotgun_round",
+    "hash_ff3063df": "model#",
+    "image": "ui_icon_weapon_charms_shotgunshell",
+    "name": "charm_shotgun_shell",
+    "displayname": "localized17#menu/charm_shotgun_shell",
+    "icon": "ui_icon_weapon_charms_shotgunshell",
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_shotgunshell"
+}

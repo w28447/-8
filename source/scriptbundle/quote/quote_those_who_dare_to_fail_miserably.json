@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bd793302b461660909bdb0a0afd88914c65179dbc8c0332b40d9d52571dc7e44
-size 228
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_those_who_dare_to_fail_miserably",
+    "quote": "localized17#hash_1f946f92280225c2",
+    "author": "localized17#hash_7728c6a04ce9faa2"
+}

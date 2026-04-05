@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:db470fbbb26e0fbe175f49c31aded1656dcc73467306c995d5ffae39ff81fbf7
-size 541
+{
+    "purifier_multikill_2": "#purifier_multikill_2",
+    "purifier_multikill_2": "#purifier_multikill_2",
+    "purifier_kill": "#purifier_kill",
+    "configstringfiletype": "scriptbundle",
+    "type": "scoreevents",
+    "vmtype": "both",
+    "purifier_multikill_2": "#purifier_multikill_2",
+    "name": "hero_flamethrower_scoreevents",
+    "customsettingstype": "ability",
+    "purifier_multikill_2": "#purifier_multikill_2",
+    "purifier_shutdown": "#purifier_shutdown",
+    "purifier_multikill_2": "#purifier_multikill_2"
+}

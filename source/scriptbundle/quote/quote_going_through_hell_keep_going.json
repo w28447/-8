@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:48b9f9987b64865d0b8768f0d74a4dc4c92828e48ac588d322f4e8dea93869bd
-size 225
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_going_through_hell_keep_going",
+    "quote": "localized17#hash_42fb366b3556a354",
+    "author": "localized17#hash_4e55371bb0e6c43f"
+}

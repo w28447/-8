@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0342766a8f64084656c6abe22609c5d79443e056d4e343b2ef3cd9b3acf4bcba
-size 399
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "scope_holo_sniper_powersemi_restriction",
+    "displayname": "localized17#weapon/sniper_powersemi_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__sniper_powersemi_t8__attachments__holo",
+    "isenableddisabled": 0
+}

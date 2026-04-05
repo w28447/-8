@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:806075a8ef174828638cbd4e448c0908fc97e58efbae2ac2ba385d83c638c0b8
-size 222
+{
+    "hash_438736c3d218187d:hash_6c274f86": "image#hash_438736c3d218187d",
+    "nametext": "localized17#hash_a53c4a75c24f26f",
+    "name": "gesture_dance_bundle",
+    "desctext": "localized17#hash_7768d1ab91854421"
+}

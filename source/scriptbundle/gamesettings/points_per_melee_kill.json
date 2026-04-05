@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3cead287d60a67ec4f4039d2af4b9ff1dd123edce08dd2fc3921ee805cd0324e
-size 655
+{
+    "hinttext": "localized17#menu/points_per_melee_kill_hint",
+    "configstringfiletype": "scriptbundle",
+    "value8": "25",
+    "value2": "1",
+    "value3": "2",
+    "value1": "0",
+    "value6": "5",
+    "value7": "10",
+    "value4": "3",
+    "value5": "4",
+    "type": "gamesettings",
+    "label": "localized17#menu/x_points",
+    "hash_5a6dee5a": 0,
+    "name": "points_per_melee_kill",
+    "displayname": "localized17#menu/points_per_melee_kill",
+    "label2": "localized17#menu/1_point",
+    "hash_54e336e4": 0,
+    "optionscount": 8,
+    "hash_765cfd09": 0,
+    "setting": "pointsPerMeleeKill",
+    "isenableddisabled": 0
+}

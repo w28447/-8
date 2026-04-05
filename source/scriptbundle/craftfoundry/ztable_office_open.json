@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ea234b794562cd462b747bb0e6a7ac89175e5f893e8d65809d485ec6fba71da8
-size 312
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "craftfoundry",
+    "blueprintcount": 2,
+    "blueprint01": "scriptbundle&zblueprint_shield_zhield_riot",
+    "blueprint02": "scriptbundle&zblueprint_office_teleporter_modifier",
+    "name": "ztable_office_open",
+    "displayname": "Open Table"
+}

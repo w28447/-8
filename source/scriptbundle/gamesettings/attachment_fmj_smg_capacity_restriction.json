@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9e0fb32e65dbfd9448f89deb05fe4eac03ca6c5e81b1a7aafdc1b6eb81577651
-size 390
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_fmj_smg_capacity_restriction",
+    "displayname": "localized17#weapon/smg_capacity_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__smg_capacity_t8__attachments__fmj",
+    "isenableddisabled": 0
+}

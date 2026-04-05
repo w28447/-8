@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0e64dc8483cff36306139cbc103920dafd09cbf5efdf35e4b6e261e304e113bc
-size 236
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_failure_is_the_opportunity_to_begin_again",
+    "quote": "localized17#hash_1f231ae14334d9d",
+    "author": "localized17#hash_79ee544e752d9455"
+}

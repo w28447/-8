@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b47b13a1386535022ddef6ae880dfa44f542a8423b8df8f8b24ce078c5a29021
-size 758
+{
+    "contracticon": "image#loot07_ui_icon_blackmarket_contracts_kn57_mastercraft",
+    "relateditemname": "localized17#weapon/ar_modular_t8",
+    "contracttitle": "localized17#hash_4e6d1f0c88daebf4",
+    "name": "loot_contract_kn57_mastercraft",
+    "hash_69b5a265": "core_frontend_ar_modular_sig_03",
+    "loot07_ui_icon_blackmarket_itemdetail_kn57_mastercraft:hash_4b258f2c": "image#loot07_ui_icon_blackmarket_itemdetail_kn57_mastercraft",
+    "contractdescription": "localized17#hash_7680bf2bc2219eb1",
+    "white": "#white",
+    "loot07_ui_icon_blackmarket_itemshop_kn57_mastercraft:hash_1c057e8c": "image#loot07_ui_icon_blackmarket_itemshop_kn57_mastercraft",
+    "hash_38a22173c1eaa7fc:hash_e08fc162": "localized17#hash_38a22173c1eaa7fc"
+}

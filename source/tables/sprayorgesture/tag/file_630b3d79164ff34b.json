@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:61e2e7f3030cc6565e9d10e95a4613a5ee29d9ca20ef57fe87920c01027932e5
-size 293
+{
+    "name": "#hash_630b3d79164ff34b",
+    "type": "#tag",
+    "material": "#hash_4edfb9263e00b80f",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_143efc7eae27514e",
+        "icon": "image#loot_ui_icon_tags_barbarians_03",
+        "isdefault": 0
+    }
+}

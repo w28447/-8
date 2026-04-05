@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1cbd96b6c59ec357742af9ca1e99429a07aeaa29a0735e405c6eaf3c09b1cd53
-size 392
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_fmj2_tr_powersemi_restriction",
+    "displayname": "localized17#weapon/tr_powersemi_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__tr_powersemi_t8__attachments__fmj2",
+    "isenableddisabled": 0
+}

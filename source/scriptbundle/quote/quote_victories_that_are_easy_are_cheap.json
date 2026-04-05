@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1441d2e05ecdcd60ad999c1730fecbcd0b5d859043c6f392f1e2647e5260b72a
-size 229
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_victories_that_are_easy_are_cheap",
+    "quote": "localized17#hash_7cf0832868fe3d44",
+    "author": "localized17#hash_5ad8b0da27d51fc9"
+}

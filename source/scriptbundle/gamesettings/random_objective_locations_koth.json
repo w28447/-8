@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eac53846deb135f8d5d2368ad59f880998196707d290a1105c47ffc5b421177d
-size 569
+{
+    "hinttext": "localized17#menu/random_objective_locations_hint",
+    "configstringfiletype": "scriptbundle",
+    "value2": "2",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "random_objective_locations_koth",
+    "displayname": "localized17#menu/random_objective_locations",
+    "label1": "localized17#menu/linear",
+    "label2": "localized17#menu/random_after_first",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "randomObjectiveLocations",
+    "isenableddisabled": 0
+}

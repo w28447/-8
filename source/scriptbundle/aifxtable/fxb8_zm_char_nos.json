@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:354b90965c69d5b5e929fea136c7d6b1a0b45f580a801c85fa9e376e8335b556
-size 410
+{
+    "surfacefxtable_vtollanding": "surface_fx_table#player_vtol_drop",
+    "configstringfiletype": "scriptbundle",
+    "type": "aifxtable",
+    "vmtype": "client",
+    "surfacefxtable_footstep": "surface_fx_table#zm_nos_footstep",
+    "name": "fxb8_zm_char_nos",
+    "surfacefxtable_landing": "surface_fx_table#player_jump_start",
+    "surfacefxtable_jumping": "surface_fx_table#player_jump_start"
+}

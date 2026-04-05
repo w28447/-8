@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1c4248d838a2a1082148b61024e6b0d2ba942db3a79ecc0079fe1921790e61b7
-size 337
+{
+    "name": "#hash_63a644aa6e07c0b6",
+    "type": "#gesture",
+    "gesture": "#hash_66afec3130bd0eb7",
+    "gesture2": "#hash_43c96c0e32e9ba80",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/jack_of_all_treats",
+        "icon": "image#hash_52981ed34c8dacf9",
+        "isdefault": 0
+    }
+}

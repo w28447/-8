@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:869fbfff58fdee6c822f7941e49fac707260677e7373e82d0674430308c7a75d
-size 339
+{
+    "contracticon": "image#hash_16f8b4a8b0da9df5",
+    "ui_icon_blackmarket_lockskull_256": "image#ui_icon_blackmarket_lockskull_256",
+    "name": "loot_season_1_postseason_all_rng",
+    "bannerimage": "image#hash_2fc620e4c5d0b7a9",
+    "white": "#white",
+    "hash_7049321b7939a00d:hash_1c057e8c": "image#hash_7049321b7939a00d"
+}

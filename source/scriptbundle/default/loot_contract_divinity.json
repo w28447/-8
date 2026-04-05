@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c1d88dd3b586475ddabd150406e172c69213dfb9851289dec29c369a222ba111
-size 390
+{
+    "contracticon": "image#hash_70c13cd2e6939430",
+    "relateditemname": "localized17#weapon/pistol_standard_t8",
+    "contracttitle": "localized17#weapon/pistol_standard_t8",
+    "name": "loot_contract_divinity",
+    "hash_24df94f20f8b9a2d:hash_4b258f2c": "image#hash_24df94f20f8b9a2d",
+    "contractdescription": "localized17#weapon/pistol_standard_t8",
+    "white": "#white"
+}

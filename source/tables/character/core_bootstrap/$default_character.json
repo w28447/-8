@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:556aafe78c89d31a25590068b7db4e52970f12b5edc8efa13d5760d29ad6423c
-size 142
+{
+    "name": "#$default_character",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1
+}

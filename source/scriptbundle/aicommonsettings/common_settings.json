@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:40379a96a1ace5838cd147b9124abc98d16180d72bebdd4eb58bd045e0a3cc99
-size 200
+{
+    "shortwalkdist": 150,
+    "maxmeleeplayerattackers": 1,
+    "configstringfiletype": "scriptbundle",
+    "type": "aicommonsettings",
+    "vmtype": "server",
+    "name": "common_settings"
+}

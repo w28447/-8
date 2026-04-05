@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bb01d4655c328c449157fdae62fea355fea601a1719dc1720970406f9846dced
-size 281
+{
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
+    "widget": "BadasseryMedal",
+    "name": "events_attack_dog_defended",
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_2f8853f57a4bee70",
+    "iconlarge": "image#hash_2f8853f57a4bee70"
+}

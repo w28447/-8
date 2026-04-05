@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:12cf7f1cbf940ac334f28dc9ca9f3db2234ca5f15262911f6633c6ede53f69e9
-size 350
+{
+    "name": "#maps/zm/zm_mansion.d3dbsp",
+    "baseName": "zm_mansion",
+    "lutMaterial": "#mtl_lut_zm_mansion",
+    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "unk550": [
+        "#img_trim_lut_zm_mansion",
+        "#img_trim_lut_zm_mansion",
+        "#img_trim_lut_zm_mansion",
+        "#img_trim_lut_zm_mansion"
+    ]
+}

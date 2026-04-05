@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b03a858f66bcd696dcc8ff7459ecb9b05cf4b066a870319ca59911819ecdce78
-size 352
+{
+    "name": "#loot_emote_shared_victory_dance",
+    "type": "#gesture",
+    "gesture": "#boast_victory_dance",
+    "gesture2": "#boast_victory_dance_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/winner_winner",
+        "icon": "image#ui_icon_emotes_s3_victory_dance",
+        "isdefault": 0
+    }
+}

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b3067bfd42f840fb78c12a3a93bf47316eff0d704b1e8de532539579e4885b49
-size 249
+{
+    "configstringfiletype": "scriptbundle",
+    "desc": "localized17#hash_11030590b5199416",
+    "image": "image#loot02_ui_icon_outfit_holidays_extra_warpaint_krampus_stanton",
+    "stat": "#reward_4",
+    "name": "zm_winter_2018_reward_4"
+}

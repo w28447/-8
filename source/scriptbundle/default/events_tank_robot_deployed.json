@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a767eeb0aeda75bab021c5b104f85877f4bc0115e2d8ba7de6834ca86ce83564
-size 279
+{
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
+    "widget": "BadasseryMedal",
+    "name": "events_tank_robot_deployed",
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_6c274f8e42db1be",
+    "iconlarge": "image#hash_6c274f8e42db1be"
+}

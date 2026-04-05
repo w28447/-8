@@ -1,3 +1,64 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:65d7bd7712b818c5e6385a901c98402f4e3168e0cd63c1bbf1e95e7d4d7ce702
-size 1791
+{
+    "itemlist": [
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&launcher_standard_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_rocket_double_item",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&perk_item_deadsilence",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&perk_item_lightweight",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&health_item_large",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&backpack_item",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&sensor_dart_wz_item",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&perk_item_looter",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "maxweight": 50,
+            "available": 1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 12000,
+    "type": "itemspawnlist",
+    "hash_345eba59": 8,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "supply_drop_slot3_heavy_metal_heroes",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0,
+    "supplystash": 1
+}

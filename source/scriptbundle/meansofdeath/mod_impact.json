@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a18d3bfe981d912a54a9c263cfa73ceaa1bcb2123dbcdd9b558c2c0924146661
-size 287
+{
+    "mod": "MOD_IMPACT",
+    "configstringfiletype": "scriptbundle",
+    "type": "meansofdeath",
+    "name": "mod_impact",
+    "displayname": "localized17#ui/mod_impact",
+    "icon": "image#ui_icon_meansofdeath_impact",
+    "iconlarge": "image#ui_icon_meansofdeath_impact_xl"
+}

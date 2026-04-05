@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ac2c0e1184b7aa14e5b4b6a7657b69a34abb88565662cc8cc7c55788c01f20c0
-size 219
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_fear_cloaked_in_courage",
+    "quote": "localized17#hash_35f836cf11d55c52",
+    "author": "localized17#hash_2dcf07b96e8cefe0"
+}

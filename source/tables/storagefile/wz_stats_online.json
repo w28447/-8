@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bfe5e82485b3acd9124152d35eb87d039339cb5a7f54b2e4a776d8e8d554f4fe
-size 364
+{
+    "nameStr": "wz_stats_online",
+    "name": "#wz_stats_online",
+    "ddlPath": "#gamedata/ddl/generated/wz_stats.ddl",
+    "files": [
+        {
+            "fileName": "wz_stats_online"
+        }
+    ],
+    "size": 125000,
+    "readOnLogin": true,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
+}

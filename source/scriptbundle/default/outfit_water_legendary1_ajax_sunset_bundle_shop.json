@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a7f5fba9545bff2e5d151b600c637abae3b53be5b31e555dd28d1b4155569261
-size 248
+{
+    "nametext": "localized17#hash_3c15a6995173d09f",
+    "name": "outfit_water_legendary1_ajax_sunset_bundle_shop",
+    "desctext": "localized17#hash_2b7f2d614d161f1d",
+    "heroes/swatpolice:hash_975cc0d1": "localized17#heroes/swatpolice"
+}

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ca39ea7a52064fd789b5aab2f41cc528670e9eccb6b8efb658d00e8477db2d74
-size 289
+{
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
+    "widget": "BadasseryMedal",
+    "name": "events_swat_team_objective_defense",
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_2f8853f57a4bee70",
+    "iconlarge": "image#hash_2f8853f57a4bee70"
+}

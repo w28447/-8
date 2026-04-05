@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:af55e32345e28c57f1748b712ca30c05e97868f15acd50c0504f36ad8ec35cd1
-size 250
+{
+    "nametext": "localized17#hash_17596507123b59fd",
+    "name": "outfit_warrior_base_pal_exo2_battery_sunset_bundle_shop",
+    "desctext": "localized17#hash_2b7f2d614d161f1d",
+    "heroes/battery:hash_975cc0d1": "localized17#heroes/battery"
+}

@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:659a03ced37b0c6f6094b966f4e7239dbc5a53aede411a072d2021e941aee857
-size 463
+{
+    "contracticon": "image#hash_8a7037152920b58",
+    "relateditemname": "localized17#weapon/sniper_powerbolt_t8",
+    "contracttitle": "localized17#hash_452fd06faf792671",
+    "name": "loot_contract_valkyrie",
+    "contractdescription": "localized17#hash_7680bf2bc2219eb1",
+    "white": "#white",
+    "hash_7c1aeddf12a07116:hash_1c057e8c": "image#hash_7c1aeddf12a07116",
+    "hash_485e43ae0c8e5c85:hash_e08fc162": "localized17#hash_485e43ae0c8e5c85"
+}

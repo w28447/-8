@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:330e204ecadf4f27d5216c4c9ffa5934c881152814412eb61f573c39fe96bcd5
-size 384
+{
+    "backingsmall": "image#t7_hud_medal_backing_gamemode",
+    "widget": "BadasseryMedal",
+    "name": "t7_hud_medal_retrieve_own_tags",
+    "backinglarge": "image#t7_hud_medal_backing_gamemode_lrg",
+    "iconsmall": "image#t7_hud_medal_retrieve_own_tags",
+    "stringref": "localized17#medal/retrieve_own_tags",
+    "iconlarge": "image#t7_hud_medal_retrieve_own_tags_lrg"
+}

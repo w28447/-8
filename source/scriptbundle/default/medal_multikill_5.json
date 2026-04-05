@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e3ab3ee13ee2ee3f78a37a3b04f872aa661ed2f30e24138d79e623c7a24c19ad
-size 385
+{
+    "description": "localized17#medal/multikill_5_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_multikill_5",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_frenzykill",
+    "stringref": "localized17#medal/multikill_5",
+    "iconlarge": "image#ui_icon_medal_frenzykill_large"
+}

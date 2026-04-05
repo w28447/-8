@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a1d6b01a12df066ae03d9b84dd4a66986f6ce7f0238ea1314866723e3033357b
-size 624
+{
+    "name": "mp_slums2.fj",
+    "zone": "mp_slums2",
+    "gameLanguage": "japanese_full",
+    "soundLanguage": "fj",
+    "nameHash": "#mp_slums2.fj",
+    "patchZone": true,
+    "alias": [],
+    "duck": [],
+    "ambients": [],
+    "scriptIdLookups": [],
+    "streamKeysSABL": {
+        "streamKey1": "#mp_slums2_fj_stream",
+        "dataSize1": 2048,
+        "fileKey": "#mp_slums2_fj_loaded",
+        "fileLen": 2048
+    },
+    "streamKeysSABS": {
+        "streamKey1": "#hash_25e342351c76fbd9",
+        "dataSize1": 2048,
+        "fileKey": "#hash_5341c95e82b44204",
+        "fileLen": 2048
+    }
+}

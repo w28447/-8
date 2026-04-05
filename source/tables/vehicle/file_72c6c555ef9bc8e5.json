@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c15a6ecdc6d9cb34a0b31c7d3c5a40fcc281034ff568c18e013e275a75242bac
-size 1199
+{
+    "name": "#hash_72c6c555ef9bc8e5",
+    "type": "helicopter",
+    "scriptVehicleType": "bat",
+    "scoreType": "_bat",
+    "archeType": "#bat",
+    "unk38": "#none",
+    "spawnerType": "#none",
+    "spawnInfluencers1": "#none",
+    "spawnInfluencers2": "#none",
+    "exhaustFxTag1": "tag_origin",
+    "scriptBundleSettings": "#batsettings",
+    "deathFx": "#hash_1159e7d49f176aba",
+    "targetTags": [
+        "j_spine4"
+    ],
+    "skidSpeedMin": 100,
+    "skidSpeedMax": 600,
+    "peelSpeedMax": 600,
+    "model": "#c_t8_zmb_dlc1_nosferatu_fb1",
+    "deathModel": "#c_t8_zmb_dlc1_nosferatu_fb1",
+    "soundDef": "#hash_65d530ba4a0e2654",
+    "compassIconMaterial": "#t7_hud_minimap_enemy_hunter",
+    "animStateMachine": "#bat.ai_asm",
+    "animSelectorTable": "#hash_1bc31544a73647f3",
+    "animMappingTable": "#bat.ai_am",
+    "steerAxisName": "AXIS_LSTICK",
+    "gasAxisName": "AXIS_LSTICK",
+    "attackButtonName": "BUTTON_RTRIG",
+    "attackSecondaryButtonName": "BUTTON_LTRIG",
+    "unk1608": "BUTTON_RSHLDR",
+    "unk1618": "BUTTON_LSHLDR",
+    "unk1648": "BUTTON_Y",
+    "bundle": {
+        "healthpoolsize": 650,
+        "hash_7812fce8": 2
+    }
+}

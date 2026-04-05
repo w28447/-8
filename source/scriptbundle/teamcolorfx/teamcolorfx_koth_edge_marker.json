@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:830124bf69ca29ecbc856fcbc132360e6052b17ab94613f438ae0584545b6ba5
-size 1225
+{
+    "objects": [
+        {
+            "colorid": "fx#ui/fx_koth_marker_red"
+        },
+        {
+            "colorid": "fx#ui/fx_koth_marker_red"
+        },
+        {
+            "colorid": "fx#ui/fx_koth_marker_orng"
+        },
+        {
+            "colorid": "fx#ui/fx_koth_marker_orng"
+        },
+        {
+            "colorid": "fx#ui/fx_koth_marker_yellow"
+        },
+        {
+            "colorid": "fx#ui/fx_koth_marker_yellow"
+        },
+        {
+            "colorid": "fx#ui/fx_koth_marker_green"
+        },
+        {
+            "colorid": "fx#ui/fx_koth_marker_green"
+        },
+        {
+            "colorid": "fx#ui/fx_koth_marker_blue"
+        },
+        {
+            "colorid": "fx#ui/fx_koth_marker_blue"
+        },
+        {
+            "colorid": "fx#ui/fx_koth_marker_blue"
+        },
+        {
+            "colorid": "fx#ui/fx_koth_marker_blue"
+        },
+        {
+            "colorid": "fx#ui/fx_koth_marker_white"
+        },
+        {
+            "colorid": "fx#ui/fx_koth_marker_white"
+        }
+    ],
+    "configstringfiletype": "scriptbundle",
+    "type": "teamcolorfx",
+    "vmtype": "both",
+    "name": "teamcolorfx_koth_edge_marker"
+}

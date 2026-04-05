@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a09054edebace2fd1e82fbd1ac3df9ff58fe244d0243e2a77e171b00dfc3204a
-size 355
+{
+    "lootid": "#charm_flat_earth",
+    "hash_ff3063df": "model#",
+    "image": "ui_icon_weapon_charms_flat_earth",
+    "name": "charm_flat_earth",
+    "displayname": "localized17#menu/charm_flat_earth",
+    "icon": "ui_icon_weapon_charms_flat_earth",
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_flat_earth"
+}

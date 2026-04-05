@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2f56a3c3bbafd1e0b712507d3b3a43128aaa92a0377cbb3eb1dae4bab1d1e880
-size 914
+{
+    "packageitems": [
+        {
+            "item": "#smg_fastfire_t8"
+        }
+    ],
+    "attachmentupgrades": [
+        {
+            "purchasecost": 500,
+            "attachmentlist": "steadyaim"
+        },
+        {
+            "purchasecost": 1000,
+            "attachmentlist": "fmj+extclip"
+        },
+        {
+            "purchasecost": 1500,
+            "attachmentlist": "steadyaim2+extclip+uber"
+        }
+    ],
+    "hash_ef921c3c": 1,
+    "configstringfiletype": "scriptbundle",
+    "tracktier": 0,
+    "type": "bountyhunterpackage",
+    "hash_85d7cf08": 1,
+    "refillammo": 0,
+    "hash_ee686ece": 0,
+    "refillcost": 250,
+    "name": "package_smg_fastfire",
+    "packagetype": "primary",
+    "purchasecost": 1500,
+    "startammo": 1,
+    "hash_673a16ad": 1,
+    "hash_11b09a45": 3,
+    "hash_741010b5": 1,
+    "hash_782dbf79": 1,
+    "hash_767b7337": 1
+}

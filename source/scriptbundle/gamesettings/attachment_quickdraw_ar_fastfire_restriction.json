@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:68a5f40e4e10cccb6fc1a031a9948186fef2077b00644553a165f17aadd8d52d
-size 399
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_quickdraw_ar_fastfire_restriction",
+    "displayname": "localized17#weapon/ar_fastfire_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__ar_fastfire_t8__attachments__quickdraw",
+    "isenableddisabled": 0
+}

@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5812153cb3a80f20cecf044dcd53c3049876a591e05d7e8fbc7ef7a79fbdee41
-size 298
+{
+    "name": "#hash_46f80ac1c4728bb7",
+    "type": "#tag",
+    "material": "#hash_6474f2b7adadf32b",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_75f0dd0d04a0a79c",
+        "icon": "image#loot_ui_icon_tags_caricature_battery",
+        "isdefault": 0
+    }
+}

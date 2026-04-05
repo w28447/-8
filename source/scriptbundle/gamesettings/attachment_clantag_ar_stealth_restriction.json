@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:759bce50b517ca8f9736be3baaa216a714d05344d5ee3220914b64e5ce8c0221
-size 392
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_clantag_ar_stealth_restriction",
+    "displayname": "localized17#weapon/ar_stealth_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__ar_stealth_t8__attachments__clantag",
+    "isenableddisabled": 0
+}

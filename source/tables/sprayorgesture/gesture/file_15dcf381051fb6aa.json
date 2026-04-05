@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7f07e72b91cd1d788b9338330f82608575a9b17237b1bad76db019575584a7f2
-size 324
+{
+    "name": "#hash_15dcf381051fb6aa",
+    "type": "#gesture",
+    "gesture": "#hash_19dd299fc99cfac7",
+    "gesture2": "#hash_61a2acfeec44a7f0",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/selfie",
+        "icon": "image#ui_icon_emotes_selfy",
+        "isdefault": 0
+    }
+}

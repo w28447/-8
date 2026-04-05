@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d4b4f304fe7d4c314969871dc26918be489b987ff1aad87f92c476a685df22f7
-size 954
+{
+    "hash_7a4375969e311723:hash_4dbc4aee": "localized18#hash_7a4375969e311723",
+    "hash_11928e3b": 0,
+    "configstringfiletype": "scriptbundle",
+    "result": "weapon#pistol_topbreak_t8_zm",
+    "type": "craftblueprint",
+    "hash_3c809ce0": 0,
+    "hash_e414062": 0,
+    "component01": "weapon#zitem_office_audio_reel_1_zm",
+    "component02": "weapon#zitem_office_audio_reel_2_zm",
+    "component03": "weapon#zitem_office_audio_reel_3_zm",
+    "component04": "weapon#zitem_office_audio_reel_4_zm",
+    "component05": "weapon#zitem_office_audio_reel_5_zm",
+    "name": "zblueprint_office_audio_reels",
+    "displayname": "office_audio_reels",
+    "hash_7a4375969e311723:hash_391591d0": "localized18#hash_7a4375969e311723",
+    "postcraft": "one_time_craft",
+    "hash_7a4375969e311723:hash_abd9b2d0": "localized18#hash_7a4375969e311723",
+    "componentcount": 5,
+    "takecomponents": 1,
+    "hash_318c150c": "section_quests"
+}

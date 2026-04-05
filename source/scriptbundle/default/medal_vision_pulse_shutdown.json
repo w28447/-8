@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b27eb6a0937eb5cfaad00c4fdd8735c748a78e3187e3c6daec299ccef7c57dec
-size 418
+{
+    "description": "localized17#hash_775753876a2537ea",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_vision_pulse_shutdown",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_counter_intelligence",
+    "stringref": "localized17#hash_78c3093a38bc1b6c",
+    "iconlarge": "image#ui_icon_medal_counter_intelligence_large"
+}

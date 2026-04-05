@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:11d31282447e999559ab5959fd1b8c4b7502a2d3c292aef67282f0641d4e59f4
-size 448
+{
+    "contentsdetaileddescincludelist": [
+        {
+            "hash_17eb0d40b45d38c6:hash_826726a": "localized17#hash_17eb0d40b45d38c6"
+        }
+    ],
+    "hash_d0100eab": 1,
+    "relateditemname": "localized17#heroes/trapper",
+    "contracttitle": "localized17#hash_17eb0d40b45d38c6",
+    "name": "loot_contract_nomad_hunter",
+    "white": "#white",
+    "hash_40534ffb27a37ede:hash_e08fc162": "localized17#hash_40534ffb27a37ede"
+}

@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2dd7c903a5a0535f4cf4444f7245ba5d472c2c3e6f0294000418533f3bff6610
-size 297
+{
+    "name": "#hash_6c2bb8a2dec25277",
+    "type": "#tag",
+    "material": "#hash_455d21cd1cbef883",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_4d1b2c8cebf0ea2e",
+        "icon": "image#loot_ui_icon_tags_muertos_firebreak",
+        "isdefault": 0
+    }
+}

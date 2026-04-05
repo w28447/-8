@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8d0ae6183ce85428f5738918789b7f19511afe6fc62483f596e77e29237c9bd6
-size 242
+{
+    "name": "c_t8_bo_parachute_chinese",
+    "parachute": "weapon#parachute_wz",
+    "icon": "loot_ui_icon_jumppacks_parachute_chinese",
+    "largeicon": "loot_ui_icon_jumppacks_parachute_chinese_large",
+    "parachutelit": "model#"
+}

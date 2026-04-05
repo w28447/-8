@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0f6d706b091a430f826ae28cd82abadd4e801af45e929678c1765b5ea9192e3b
-size 317
+{
+    "hash_5ee3f5bd": "mp_seaside",
+    "defaultgametype": "control",
+    "abbreviation": "mp",
+    "name": "sessionmode_mp",
+    "selectdescription": "localized17#menu/multiplayer_desc",
+    "displayname": "localized17#menu/multiplayer",
+    "defaultmap": "mp_seaside",
+    "hash_fba50b79": "control_cwl"
+}

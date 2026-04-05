@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e3c433ccf47810af59d53ccb3b6aeb52e4751821c0ec1211cda9320be5f62259
-size 353
+{
+    "name": "#maps/mp/mp_frenetic.d3dbsp",
+    "baseName": "mp_frenetic",
+    "lutMaterial": "#lut_mp_frenetic",
+    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "unk550": [
+        "#img_trim_lut_mp_frenetic",
+        "#img_trim_lut_mp_frenetic",
+        "#img_trim_lut_mp_frenetic",
+        "#img_trim_lut_mp_frenetic"
+    ]
+}

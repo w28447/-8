@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:12aa72410fa79d89808a98a5ffeb564325bca58b1f633df00f0e550c5a5cac74
-size 405
+{
+    "description": "localized17#hash_378859e28590dd80",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_sparrow_multikill_x2",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_mp_sparrow_multikill",
+    "stringref": "localized17#hash_41a54217700f3d98",
+    "iconlarge": "image#ui_icon_mp_sparrow_multikill_large"
+}

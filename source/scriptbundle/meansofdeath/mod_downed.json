@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:da4496aaecb924bbdc740e9edea8af49b913ea2c02ef4bf97b4bdb99050352c8
-size 287
+{
+    "mod": "MOD_DOWNED",
+    "configstringfiletype": "scriptbundle",
+    "type": "meansofdeath",
+    "name": "mod_downed",
+    "displayname": "localized17#ui/mod_downed",
+    "icon": "image#ui_icon_meansofdeath_downed",
+    "iconlarge": "image#ui_icon_meansofdeath_downed_xl"
+}

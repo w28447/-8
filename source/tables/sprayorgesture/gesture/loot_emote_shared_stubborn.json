@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8d2b2cd7e6400c2c97e8ab4c56021955fe932a5ee05661b5e60c5342e235d1a4
-size 324
+{
+    "name": "#loot_emote_shared_stubborn",
+    "type": "#gesture",
+    "gesture": "#boast_stubborn",
+    "gesture2": "#boast_stubborn_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/stubborn",
+        "icon": "image#ui_icon_emotes_stubborn",
+        "isdefault": 0
+    }
+}

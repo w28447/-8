@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1db8f2d11fda306d71f4bcf8a61dc385f12e86bcd641c8d2413c345531e03271
-size 381
+{
+    "detailsicon": "image#loot07_ui_icon_blackmarket_itemdetail_liquidator",
+    "loot07_ui_icon_blackmarket_itemshop_liquidator:hash_6c274f86": "image#loot07_ui_icon_blackmarket_itemshop_liquidator",
+    "nametext": "localized17#hash_31e500a2133a5596",
+    "name": "loot_character_replacer_leisure_sunset_bundle_shop",
+    "desctext": "localized17#hash_1304d844aa160ac9"
+}

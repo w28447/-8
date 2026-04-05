@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ed04e873cd6dfffe022f1fb00ac74a489c8b595518ea9893b98f0e7c1b7d7932
-size 922
+{
+    "name": "#gsol_mp_dualoptic_restriction",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#scope_dualoptic_ar_accurate_restriction",
+        "#gamesettings/#scope_dualoptic_ar_damage_restriction",
+        "#gamesettings/#scope_dualoptic_ar_fastfire_restriction",
+        "#gamesettings/#scope_dualoptic_lmg_heavy_restriction",
+        "#gamesettings/#scope_dualoptic_lmg_spray_restriction",
+        "#gamesettings/#scope_dualoptic_lmg_standard_restriction",
+        "#gamesettings/#scope_dualoptic_smg_accurate_restriction",
+        "#gamesettings/#scope_dualoptic_smg_fastfire_restriction",
+        "#gamesettings/#scope_dualoptic_sniper_powerbolt_restriction",
+        "#gamesettings/#scope_dualoptic_sniper_powersemi_restriction",
+        "#gamesettings/#scope_dualoptic_tr_longburst_restriction",
+        "#gamesettings/#scope_dualoptic_tr_powersemi_restriction"
+    ]
+}

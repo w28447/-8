@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e2b0aa4d21ab2a6454e051e2103f1a9f2088f412440b9591a0468ab985baa1fd
-size 386
+{
+    "name": "#loot_emote_shared_sitting_bull",
+    "type": "#gesture",
+    "gesture": "#boast_sitting_bull",
+    "gesture2": "#boast_sitting_bull_fem",
+    "bundle": {
+        "type": "#gesture",
+        "entitlement": "#blackops_pack",
+        "title": "localized18#emotes/sitting_bull",
+        "icon": "image#ui_icon_emotes_sitting_bull",
+        "isdefault": 0
+    }
+}

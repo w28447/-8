@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0e7112835e39c1eed6a63877254a99fc1b16d6ba451d865023e079bc395cfd36
-size 565
+{
+    "descriptionimage": "image#ui_icon_hero_lightninggun_mp",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "ability_lightninggun_restriction",
+    "displayname": "localized17#weapon/hero_lightninggun",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__shock_rifle__restricted",
+    "isenableddisabled": 0
+}

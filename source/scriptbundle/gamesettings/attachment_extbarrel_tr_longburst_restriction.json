@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f01051f1a7b8197fbfbe41827a6a9893c7de6a621e36300764d9c51dc9e7ecf7
-size 402
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_extbarrel_tr_longburst_restriction",
+    "displayname": "localized17#weapon/tr_longburst_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__tr_longburst_t8__attachments__extbarrel",
+    "isenableddisabled": 0
+}

@@ -1,3 +1,47 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5dc1853c6a692ef5ecae822c35d5c4423ffc25289a2d5f340bde08b614bb3b52
-size 1332
+{
+    "name": "#hash_5ce7e15dfecaac3a",
+    "model": "#p7_mou_tank_horizontal_snow_dest",
+    "clientOnly": false,
+    "syncBaseHealthWithEntity": false,
+    "pieces": [
+        {
+            "stages": [
+                {
+                    "unk28": "tag_d0"
+                },
+                {
+                    "name": "#hash_7b6af4c427172417",
+                    "unk28": "tag_d1"
+                },
+                {
+                    "name": "#hash_475c36587c7352c5",
+                    "unk28": "tag_d2"
+                },
+                {
+                    "name": "#hash_5044a589fa9ac12",
+                    "unk28": "tag_d3"
+                },
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 1,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_4973e16434fb9437",
+            "unk268": 1200,
+            "hideBones": [
+                27,
+                28,
+                29,
+                30
+            ]
+        }
+    ]
+}

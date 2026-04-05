@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a14017d4b89f7586c2a3a5e5c6e0d880d8e365f020e980026383ede85a981caf
-size 311
+{
+    "callingtask": "#boxbuys",
+    "configstringfiletype": "scriptbundle",
+    "image": "image#ui_icon_zm_calling_tasks_boxbuys",
+    "dailytarget": 10,
+    "name": "itsamystery_task_holiday",
+    "taskname": "localized17#hash_26554bd9ba571ffd",
+    "descsimple": "localized17#hash_5637b3827f75d90d"
+}

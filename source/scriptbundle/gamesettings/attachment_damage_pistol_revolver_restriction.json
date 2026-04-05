@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0eeed33075202d2e18456bc0420b9e22ea8a5231ae0a21065458ddb6069db983
-size 405
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_damage_pistol_revolver_restriction",
+    "displayname": "localized17#weapon/pistol_revolver_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__pistol_revolver_t8__attachments__damage",
+    "isenableddisabled": 0
+}

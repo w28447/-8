@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:292b5bb75d4b715c05a5c19bd69b36e2cabeebaa1e12e3f03a9cde3d56abf1d5
-size 220
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_only_dead_seen_end_of_war",
+    "quote": "localized17#hash_44cf167f6d533cf",
+    "author": "localized17#hash_7608d8a9066ccfa3"
+}

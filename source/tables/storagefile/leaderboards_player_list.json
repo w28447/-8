@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1775b2de2fd9cc981e7780d647892f5f9419d0bb7e716ad19c114b887e8a2c2d
-size 405
+{
+    "nameStr": "leaderboards_player_list",
+    "name": "#leaderboards_player_list",
+    "ddlPath": "#gamedata/ddl/generated/leaderboards_player_list.ddl",
+    "files": [
+        {
+            "fileName": "leaderboards_player_list"
+        }
+    ],
+    "size": 4096,
+    "readOnLogin": true,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
+}

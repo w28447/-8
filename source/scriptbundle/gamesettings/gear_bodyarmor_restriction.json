@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:20669230868fa405dc19288c2293855cbc564d78451b23f3ac02878dac3fcf2e
-size 553
+{
+    "descriptionimage": "image#ui_icon_gear_p8_mp_spe_armor_medium",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "gear_bodyarmor_restriction",
+    "displayname": "localized17#talent/armor",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__gear_armor__restricted",
+    "isenableddisabled": 0
+}

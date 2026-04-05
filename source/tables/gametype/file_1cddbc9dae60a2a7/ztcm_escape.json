@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:48b8cb5d28f2d0f2ab089071f4a06f4121681600d1e57ed842b6556d46bf67e1
-size 1039
+{
+    "uniqueID": 6,
+    "nameStr": "ztcm_escape",
+    "unk8": "ztcm_escape",
+    "baseGameType": "ztcm",
+    "groupName": "ztcm",
+    "scoreInfoFile": "gamedata/tables/zm/scoreinfo/zm_scoreinfo_base.csv",
+    "name": "#ztcm_escape",
+    "nameRef": "#hash_a0c874bb44f2179",
+    "nameRefCaps": "#hash_a0c874bb44f2179",
+    "descriptionRef": "#hash_a0c874bb44f2179",
+    "baseGameTypeHash": "#ztcm_escape",
+    "isHardcoreAvailable": false,
+    "isTeamBased": false,
+    "hideHudScore": false,
+    "image": "#ui_icon_gamemode_zm_treyarchmutations_large",
+    "unka8": 1,
+    "unkac": 1,
+    "bundle": {
+        "hash_e779605d": 1,
+        "hash_93590cb": 1,
+        "hash_470ee0da": 0,
+        "hash_4442cc93": 0,
+        "switchsides": 0,
+        "scoreboard_4": "score",
+        "scoreboard_5": "kills",
+        "scoreboard_1": "downs",
+        "scoreboard_2": "revives",
+        "scoreboard_3": "headshots",
+        "displayroundswitch": 1,
+        "displayroundend": 1,
+        "hash_e71fd632": 0
+    }
+}

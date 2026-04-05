@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0951788538f633159cba4f77116a4d08f19b3141e36a4a8fb4c04404659276ff
-size 233
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_both_sides_consider_themselves_beaten",
+    "quote": "localized17#hash_19520ebe822f5ab4",
+    "author": "localized17#hash_62c813bdbe21acdf"
+}

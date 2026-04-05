@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:62825b162d9426aa73bf0727e8da81d54be8a7c1910db8f627d81b6964e620df
-size 304
+{
+    "mod": "MOD_HEAD_SHOT",
+    "configstringfiletype": "scriptbundle",
+    "type": "meansofdeath",
+    "name": "mod_head_shot",
+    "displayname": "localized17#hash_874506d3bfcc38c",
+    "icon": "image#ui_icon_meansofdeath_headshot",
+    "iconlarge": "image#ui_icon_meansofdeath_headshot_xl"
+}

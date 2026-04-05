@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:87c762ff26e297ecbbce24dba048bd8d941e18c6d3b2cb51715dde99e650bb43
-size 397
+{
+    "description": "localized17#hash_7f5ab83d17fcf7cd",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_molotov_multikill_x2_summary",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_crispy",
+    "stringref": "localized17#hash_73539bf7aa0d6b4e",
+    "iconlarge": "image#ui_icon_medal_crispy_large"
+}

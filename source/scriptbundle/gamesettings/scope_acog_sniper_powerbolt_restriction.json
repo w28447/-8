@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:41666d5f3f1b4efa1ccbc729d48d73619f0a5ee57b5920448babc2fb33936e6e
-size 399
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "scope_acog_sniper_powerbolt_restriction",
+    "displayname": "localized17#weapon/sniper_powerbolt_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__sniper_powerbolt_t8__attachments__acog",
+    "isenableddisabled": 0
+}

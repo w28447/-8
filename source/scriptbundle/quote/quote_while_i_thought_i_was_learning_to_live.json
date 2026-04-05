@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0a3889b88ba55a78e9ef7daebd7488e0a693116530a374dc2e2e57127db115ab
-size 234
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_while_i_thought_i_was_learning_to_live",
+    "quote": "localized17#hash_1ac2e97547963402",
+    "author": "localized17#hash_1b5f2386c532a991"
+}

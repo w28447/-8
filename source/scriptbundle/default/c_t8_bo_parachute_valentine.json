@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8a2ac7177ce4e872f46847c4a421c67296923b0420d856d28c4888e906298c2f
-size 248
+{
+    "name": "c_t8_bo_parachute_valentine",
+    "parachute": "weapon#parachute_wz",
+    "icon": "loot_ui_icon_jumppacks_parachute_valentine",
+    "largeicon": "loot_ui_icon_jumppacks_parachute_valentine_large",
+    "parachutelit": "model#"
+}

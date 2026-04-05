@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a71467e73e78e873b3902125e7f3a70c31a13ef5e20fc7d2f6333534574c08b8
-size 284
+{
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
+    "widget": "BadasseryMedal",
+    "name": "events_sensor_dart_demolition",
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_6f6829873b518cfe",
+    "iconlarge": "image#hash_6f6829873b518cfe"
+}

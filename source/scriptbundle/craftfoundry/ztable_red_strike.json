@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bd32bb2ce7ecf6da563bb83e8b02f83e01d67aac316ebb653ac67fd420838745
-size 229
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "craftfoundry",
+    "blueprintcount": 1,
+    "blueprint01": "scriptbundle&zblueprint_red_strike",
+    "name": "ztable_red_strike",
+    "displayname": "Red Strike"
+}

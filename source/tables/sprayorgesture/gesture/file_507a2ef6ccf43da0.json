@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4a83a220e4525c44a8e333ec2029fabbc9e17b193bff0cfbf3b6740dce2721e2
-size 337
+{
+    "name": "#hash_507a2ef6ccf43da0",
+    "type": "#gesture",
+    "gesture": "#hash_64defd85143ff6d6",
+    "gesture2": "#hash_5107e96ed517401",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/breakn_for_beats",
+        "icon": "image#ui_icon_emotes_popnlock6",
+        "isdefault": 0
+    }
+}

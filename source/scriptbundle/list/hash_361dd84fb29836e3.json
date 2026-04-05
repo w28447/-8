@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f959e8637d43aef90c2ea1714d9a0a60f2acf73966d2bb8c1abb33a90117aabd
-size 396
+{
+    "name": "#hash_361dd84fb29836e3",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#wc_overkill_restriction",
+        "#gamesettings/#wc_primarygunfighter1_restriction",
+        "#gamesettings/#wc_primarygunfighter2_restriction",
+        "#gamesettings/#wc_primarygunfighter3_restriction",
+        "#gamesettings/#wc_primaryoperatormod_restriction"
+    ]
+}

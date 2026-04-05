@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c8e3793abd8a08568ebd21b6f92014f408c4cb1916a20ff0353bb50b3f5b0881
-size 405
+{
+    "description": "localized17#hash_239d68bcebb09934",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_concertina_wire_multikill_x2_summary",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_caught",
+    "stringref": "localized17#hash_6b1470d79554f6a8",
+    "iconlarge": "image#ui_icon_medal_caught_large"
+}

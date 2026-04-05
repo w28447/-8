@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d05b99a67ad295f516e87566e9f993e409d3fdeff5ef66d25447472dbdfff2c1
-size 292
+{
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
+    "widget": "BadasseryMedal",
+    "name": "events_swat_grenade_disoriented_enemy",
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_2a693da6bebbeb01",
+    "iconlarge": "image#hash_2a693da6bebbeb01"
+}

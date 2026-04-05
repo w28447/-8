@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:805ee6e435d68dd0a48f0c5c8795d3fad95b15c76c810b894e6ba40e16851a3a
-size 329
+{
+    "name": "#hash_507a32f6ccf4446c",
+    "type": "#gesture",
+    "gesture": "#hash_64df0185143ffda2",
+    "gesture2": "#hash_467050b8161b8b3d",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/king_tut",
+        "icon": "image#ui_icon_emotes_poplock2",
+        "isdefault": 0
+    }
+}

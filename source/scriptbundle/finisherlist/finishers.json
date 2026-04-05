@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:759fb50d4a62b078a642c8c9ed29a6b28907a331e9187f821909db7723c37b34
-size 675
+{
+    "finishers": [
+        {
+            "finisherbundle": "scriptbundle&finisher_default"
+        },
+        {
+            "finisherbundle": "scriptbundle&finisher_stomp"
+        },
+        {
+            "finisherbundle": "scriptbundle&finisher_elbow"
+        },
+        {
+            "finisherbundle": "scriptbundle&finisher_knee_to_face"
+        },
+        {
+            "finisherbundle": "scriptbundle&finisher_groin_kick"
+        },
+        {
+            "finisherbundle": "scriptbundle&finisher_spectre"
+        }
+    ],
+    "configstringfiletype": "scriptbundle",
+    "type": "finisherlist",
+    "name": "finishers",
+    "hash_88198b12": 6
+}

@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:edb3fb1d35be2ce47bdce158322260992cbfece37fb01603278812ff86af2669
-size 572
+{
+    "name": "#rcbomb_waypoint",
+    "hAlign": "LEFT",
+    "vAlign": "TOP",
+    "waypointOffset": "0, 0, 0",
+    "waypointShowDistance": false,
+    "waypointHideArrow": false,
+    "waypointClamp": false,
+    "waypointFadeWhenTargeted": false,
+    "waypointFadeWhenInCombat": false,
+    "waypointShowDistanceWhenFar": false,
+    "waypointShowDistanceWhenFarDist": 0,
+    "waypointForceOffscreenStyle": false,
+    "waypointHideWhenNotVisible": false,
+    "shouldCullDistance": false,
+    "cullDistance": 0,
+    "hasLowAmmoState": false,
+    "bundle": {}
+}

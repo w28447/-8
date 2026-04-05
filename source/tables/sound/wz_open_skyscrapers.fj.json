@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6599a8ef4d1154b757b9ea1e6ebf167248f97d4ea01f2f804bb82708a39a9c2b
-size 401
+{
+    "name": "",
+    "zone": "",
+    "gameLanguage": "",
+    "soundLanguage": "",
+    "nameHash": "#wz_open_skyscrapers.fj",
+    "patchZone": false,
+    "alias": [],
+    "duck": [],
+    "ambients": [],
+    "scriptIdLookups": [],
+    "streamKeysSABL": {
+        "dataSize1": 0,
+        "fileLen": 0
+    },
+    "streamKeysSABS": {
+        "dataSize1": 0,
+        "fileLen": 0
+    }
+}

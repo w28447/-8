@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9950f7b5090b8d2b35311a98b42a94c1574eee8de3dcf5e6c5ccf09f9fb6afbf
-size 784
+{
+    "name": "#vehicle_zmb_air_alcatraz_plane",
+    "type": "plane",
+    "scoreType": "none",
+    "archeType": "#none",
+    "unk38": "#none",
+    "spawnerType": "#none",
+    "spawnInfluencers1": "#none",
+    "spawnInfluencers2": "#none",
+    "deathFx": "#hash_11c84a4f2b0183f9",
+    "deathFxSound": "#hash_626995667a4ff5c",
+    "skidSpeedMin": 100,
+    "skidSpeedMax": 600,
+    "peelSpeedMax": 600,
+    "model": "#hash_1e99caf690b5897c",
+    "steerAxisName": "AXIS_LSTICK",
+    "gasButtonName": "BUTTON_LTRIG",
+    "reverseBrakeButtonName": "BUTTON_RTRIG",
+    "attackButtonName": "BUTTON_RTRIG",
+    "attackSecondaryButtonName": "BUTTON_RTRIG",
+    "unk1648": "BUTTON_RTRIG",
+    "bundle": {
+        "healthpoolsize": 650,
+        "hash_7812fce8": 2
+    }
+}

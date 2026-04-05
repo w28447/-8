@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:df6c406898e1160115393f67c1aa842cd0988760d282b7e035cba4b5f5e7c702
-size 379
+{
+    "description": "localized17#medal/dart_kill_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_dart_kill",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_jetfighter",
+    "stringref": "localized17#medal/dart_kill",
+    "iconlarge": "image#ui_icon_medal_jetfighter_large"
+}

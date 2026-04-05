@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:57c8d96b9a2bbab4b522ac92d0499100a63b3fb25c5a3ce6cc6a59b03f4f3245
-size 355
+{
+    "name": "#maps/mp/mp_geothermal.d3dbsp",
+    "baseName": "mp_geothermal",
+    "lutMaterial": "#lut_mp_geothermal",
+    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "unk550": [
+        "#img_trim_lut_geothermal",
+        "#img_trim_lut_geothermal",
+        "#img_trim_lut_geothermal",
+        "#img_trim_lut_geothermal"
+    ]
+}

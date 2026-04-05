@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c3fcfebdc31af93c484be6abcbe0aaf4c19bf28ea94d7310f9233eca0b644ed6
-size 766
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&vehicle_list_attack_heli_wz",
+            "maxweight": 1,
+            "available": 3
+        },
+        {
+            "minweight": 1,
+            "maxweight": 1,
+            "available": 0
+        },
+        {
+            "minweight": 1,
+            "maxweight": 1,
+            "available": 0
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 20000,
+    "type": "itemspawnlist",
+    "hash_345eba59": 3,
+    "vehiclespawner": 1,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 1,
+    "name": "open_skyscraper_vehicles_attack_heli",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

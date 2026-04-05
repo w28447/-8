@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9f764a6c5ea0806762f58654ee0a09786958261a050e463267f59448f4dd541e
-size 379
+{
+    "hinttext": "localized17#menu/rules_hardcore_hint",
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "hardcore_mode",
+    "displayname": "localized17#menu/rules_hardcore",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "hardcoreMode",
+    "isenableddisabled": 1
+}

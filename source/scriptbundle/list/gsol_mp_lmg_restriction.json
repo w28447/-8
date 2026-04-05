@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e5d79b5cebafca37217c687cf320f8a0cc80f076e34085405712a7330c13e6f9
-size 253
+{
+    "name": "#gsol_mp_lmg_restriction",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#lmg_heavy_restriction",
+        "#gamesettings/#lmg_spray_restriction",
+        "#gamesettings/#lmg_standard_restriction"
+    ]
+}

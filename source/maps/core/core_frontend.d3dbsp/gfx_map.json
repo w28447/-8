@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eff8085666a3b4b74ef887bdb5e5152e11fb033831e409fd2fd32c5dfda19a27
-size 392
+{
+    "name": "#maps/core/core_frontend.d3dbsp",
+    "baseName": "core_frontend",
+    "lutMaterial": "#lut_frontend",
+    "lutMaterialALT": "#luts_t7_zmc_frontend",
+    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "unk550": [
+        "#img_trim_lut_frontend",
+        "#img_trim_lut_frontend",
+        "#img_trim_lut_frontend",
+        "#img_trim_lut_frontend"
+    ]
+}

@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b4c719e6654f8b8c67611ceac3bf477dc5b2971e7dadc317a39600c85875a30c
-size 1044
+{
+    "name": "#none",
+    "baseWeapon": "#none",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
+    "weaponheadobjectiveheight": 0,
+    "sessionMode": "unknown",
+    "bDrawOffhandModelInHand": false,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 0",
+            "1 0"
+        ],
+        [
+            "0 0",
+            "1 0"
+        ]
+    ],
+    "sound800": "#hash_5fd68d0455a0b8",
+    "sound810": "#hash_5fd68d0455a0b8",
+    "sound820": "#hash_5fd68d0455a0b8",
+    "tunables1": "#none",
+    "tunables2": "#none"
+}

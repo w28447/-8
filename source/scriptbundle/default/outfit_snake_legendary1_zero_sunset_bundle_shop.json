@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:43aef3342281a5d86c02b16a9a61946e526d4e30de060099021ba637fd756e86
-size 331
+{
+    "hash_7a04394b2028f761:hash_6c274f86": "image#hash_7a04394b2028f761",
+    "nametext": "localized17#hash_6def2b64720e54b5",
+    "name": "outfit_snake_legendary1_zero_sunset_bundle_shop",
+    "desctext": "localized17#hash_2b7f2d614d161f1d",
+    "hash_4e06263ae2b9a394:hash_975cc0d1": "localized17#hash_4e06263ae2b9a394"
+}

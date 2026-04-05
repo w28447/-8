@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bcd6e0f4ff152b27d92ff9be3b2e4ed704f9800603ffe6cff55ac594f64df4ad
-size 239
+{
+    "hash_11e9f2f0cfc349d4:hash_6c274f86": "image#hash_11e9f2f0cfc349d4",
+    "nametext": "localized17#hash_2d85a60f366822d1",
+    "name": "mastercraft_zerog_sunset_bundle_shop",
+    "desctext": "localized17#hash_2f61d1a69acbe6be"
+}

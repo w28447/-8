@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9fd413d4685c7d5e7cd4f8f5747058545c85facbedc1828db801f54c1e0ea23e
-size 393
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_steadyaim_lmg_spray_restriction",
+    "displayname": "localized17#weapon/lmg_spray_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__lmg_spray_t8__attachments__steadyaim",
+    "isenableddisabled": 0
+}

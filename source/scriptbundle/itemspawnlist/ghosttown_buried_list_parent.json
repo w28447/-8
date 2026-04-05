@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:70fa7c84c8ee5c90388de11510695d4c7e49df760b4142cb9d247e15caf0bff5
-size 551
+{
+    "itemlist": [
+        {
+            "minweight": 500,
+            "itementry": "scriptbundle&ghosttown_list_item_default_zombies",
+            "maxweight": 500,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 196,
+    "type": "itemspawnlist",
+    "hash_345eba59": 1,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "ghosttown_buried_list_parent",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

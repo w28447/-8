@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f458c5d0448f9bde3b3bc276deba6334f352ce9492797b359ff9494efb9c6b9d
-size 344
+{
+    "name": "#c_t8_zmb_titanic_stoker",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "destructibleDef": "#c_t8_zmb_titanic_stoker_dst_def",
+    "gibDef": "#c_default_annhilate_gib_def",
+    "fxDef": "#fxd8_zm_char_stoker_body",
+    "body": "#c_t8_zmb_titanic_stoker_body1"
+}

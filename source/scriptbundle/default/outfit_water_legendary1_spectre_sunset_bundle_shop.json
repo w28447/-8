@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:334eb60d97e5d4b64938d1576258c6c81d1927fac4571f78e57015c435a363a0
-size 245
+{
+    "nametext": "localized17#hash_5a7a12e43f1f8c40",
+    "name": "outfit_water_legendary1_spectre_sunset_bundle_shop",
+    "desctext": "localized17#hash_2b7f2d614d161f1d",
+    "heroes/spectre:hash_975cc0d1": "localized17#heroes/spectre"
+}

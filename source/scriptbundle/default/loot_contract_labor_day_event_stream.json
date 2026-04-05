@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c565a7f9f184d12a11e4492471549777361e75775320cfd17c7740010f35f674
-size 256
+{
+    "contracticon": "image#hash_4814b081c6258b0f",
+    "contracttitle": "localized17#hash_296cd3ad1eb3d47c",
+    "name": "loot_contract_labor_day_event_stream",
+    "contractdescription": "localized17#hash_7b30a8bb6f59fe8b",
+    "white": "#white"
+}

@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:02dd727ee7a89169212fec4db5c51e6a96fe9958b2b96a5675d73eab81c09f9f
-size 116
+{
+    "hash_7495ad4d2269f0d1": "^3[{+activate}]^7 Close",
+    "hash_7d24166bf7f8b2f7": "^3[{+activate}]^7 Open"
+}

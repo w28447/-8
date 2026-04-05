@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:67475b5be87d18c764ec08c71d430d4daf33b9b8a9727a1f46c7d8eae589d732
-size 222
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_incoming_fire_right_of_way",
+    "quote": "localized17#hash_3f06dd80043e6c95",
+    "author": "localized17#hash_4e55371bb0e6c43f"
+}

@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:648f26750aebf11729346417bc677daa799cf129e7ebae5e360f964ba6359685
-size 846
+{
+    "name": "#gsol_zm_specialzombies",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#zm_heavystate",
+        "#gamesettings/#zm_heavyfrequency",
+        "#gamesettings/#zm_heavydamagemult",
+        "#gamesettings/#zm_heavyhealthmult",
+        "#gamesettings/#zm_minibossstate",
+        "#gamesettings/#zm_minibossfrequency",
+        "#gamesettings/#zm_minibossdamagemult",
+        "#gamesettings/#zm_minibosshealthmult",
+        "#gamesettings/#zm_popcornstate",
+        "#gamesettings/#zm_popcornspawnfreq",
+        "#gamesettings/#zm_popcorndamagemult",
+        "#gamesettings/#zm_popcornhealthmult",
+        "#gamesettings/#zm_enhancedstate",
+        "#gamesettings/#zm_enhancedfrequency",
+        "#gamesettings/#zm_enhanceddamagemult",
+        "#gamesettings/#zm_enhancedhealthmult"
+    ]
+}

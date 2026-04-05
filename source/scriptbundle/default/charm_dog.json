@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a5fe5494c94dc2e838422401d76d12998ce64eec07bc5d7f856a289c6f8bb401
-size 313
+{
+    "lootid": "#charm_dog",
+    "hash_ff3063df": "model#",
+    "image": "ui_icon_weapon_charms_dog",
+    "name": "charm_dog",
+    "displayname": "localized17#menu/charm_dog",
+    "icon": "ui_icon_weapon_charms_dog",
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_dog"
+}

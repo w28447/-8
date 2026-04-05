@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7f3c86ffedeabef419b3e3a494fb19ce6ba5bb28e0dabbd2ec537c371b17cf01
-size 140
+{
+    "lootid": "#charm_bomb_rockget",
+    "hash_ff3063df": "model#",
+    "name": "charm_bomb_rockget",
+    "hash_ef5ad2b3": "model#"
+}

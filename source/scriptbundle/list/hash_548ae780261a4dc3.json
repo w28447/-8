@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:524ea30b0af04aacd85e433f788db2413cbc50f02adf4b56eb3656b69acbc3a5
-size 411
+{
+    "name": "#hash_548ae780261a4dc3",
+    "type": "gamesettingoptioncategory",
+    "bundles": [
+        "#gamesettingoptioncategory/#gsoc_zm_standardweapons",
+        "#gamesettingoptioncategory/#gsoc_zm_specialweapons",
+        "#gamesettingoptioncategory/#gsoc_zm_wonderweapons",
+        "#gamesettingoptioncategory/#gsoc_zm_equipment",
+        "#gamesettingoptioncategory/#gsoc_zm_shield"
+    ]
+}

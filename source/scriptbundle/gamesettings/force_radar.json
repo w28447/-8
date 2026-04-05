@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:16fd14d3aa321cc66bcc5abb93d73760e6d004bff202938d602aa50b442778dc
-size 564
+{
+    "hinttext": "localized17#hash_6302d1893f001487",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value3": "2",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "force_radar",
+    "displayname": "localized17#hash_2c997f72713632d1",
+    "label1": "localized17#menu/normal",
+    "label3": "localized17#menu/constant",
+    "label2": "localized17#menu/sweeping",
+    "hash_54e336e4": 0,
+    "optionscount": 3,
+    "hash_765cfd09": 0,
+    "setting": "forceRadar",
+    "isenableddisabled": 0
+}

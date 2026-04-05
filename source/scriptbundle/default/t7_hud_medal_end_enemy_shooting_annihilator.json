@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:22c10d32cd94b45c6e9853ce3a444934b8c013fabd99ab8cfb83f0c0624468be
-size 441
+{
+    "backingsmall": "image#t7_hud_medal_backing_specialist_killjoy",
+    "widget": "BadasseryMedal",
+    "name": "t7_hud_medal_end_enemy_shooting_annihilator",
+    "backinglarge": "image#t7_hud_medal_backing_specialist_killjoy_lrg",
+    "iconsmall": "image#t7_hud_medal_end_enemy_shooting_annihilator",
+    "stringref": "localized17#hash_72bd2a46e831d177",
+    "iconlarge": "image#t7_hud_medal_end_enemy_shooting_annihilator_lrg"
+}

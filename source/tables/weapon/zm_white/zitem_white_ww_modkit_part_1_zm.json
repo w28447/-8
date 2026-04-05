@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7d2bc1a57746ee6ca93330a0ba96cd81c13e2b5f8b41cd7fc7c1b56c4296718c
-size 1314
+{
+    "name": "#zitem_white_ww_modkit_part_1_zm",
+    "baseWeapon": "#zitem_white_ww_modkit_part_1",
+    "streamkey": "#hash_4560b1dad221664a",
+    "worldModelTagRight": "tag_weapon_right",
+    "worldModelTagLeft": "tag_weapon_left",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_inhand",
+    "scrstr_11a4": "tag_inhand",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "ZOMBIES",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "tunables1": "#hash_577df5b9a9f2cae4",
+    "viewmodel": [
+        "#viewmodel_default"
+    ],
+    "worldModel": [
+        "#p8_zm_whi_chemistry_kit_cables_02"
+    ],
+    "inventoryIconZm": "#$blacktransparent"
+}

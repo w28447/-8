@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:74f54d6238009676b495e718b0823187f23ded2116895d5b12e70f7bbc3b6dfa
-size 339
+{
+    "name": "#maps/mp/mp_casino.d3dbsp",
+    "baseName": "mp_casino",
+    "lutMaterial": "#lut_mp_casino",
+    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "unk550": [
+        "#img_trim_lut_mp_casino",
+        "#img_trim_lut_mp_casino",
+        "#img_trim_lut_mp_casino",
+        "#img_trim_lut_mp_casino"
+    ]
+}

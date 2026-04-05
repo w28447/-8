@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3786f99dfdafdc34c82935f661dc5ccc0e3127238143dd2d721d202cb84214dc
-size 296
+{
+    "durations": [
+        {
+            "duration": 1,
+            "archetype": "human",
+            "effecttype": "cold"
+        }
+    ],
+    "configstringfiletype": "scriptbundle",
+    "type": "weapondamageeffectype",
+    "name": "damageeffecttype_cold",
+    "hash_c672f15f": 1
+}

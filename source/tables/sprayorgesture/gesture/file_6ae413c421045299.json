@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:69b0aa14894c6afd24e08f7d30ff12906fe82634d17bec42206d72ef76eb6e90
-size 570
+{
+    "name": "#hash_6ae413c421045299",
+    "type": "#gesture",
+    "gesture": "#hash_9a3bba0e9ef6376",
+    "gesture2": "#hash_33972e18414aa961",
+    "sub": [
+        {
+            "gesture": "#hash_2cf005611f0afb80",
+            "roles": [
+                "#hash_76ccdd2bfc985ae8",
+                "#prt_wz_reaper_bo4",
+                "#prt_mp_reaper"
+            ]
+        }
+    ],
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/tko",
+        "icon": "image#hash_1d1a60af29f10ba2",
+        "isdefault": 0
+    }
+}

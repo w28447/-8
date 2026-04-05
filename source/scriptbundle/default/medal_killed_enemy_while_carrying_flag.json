@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:21b6dcea97c357c5fe6de454a93e7ed034307c61af946426a9499e88e7eb8d8f
-size 440
+{
+    "description": "localized17#medal/killed_enemy_while_carrying_flag_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_killed_enemy_while_carrying_flag",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_denied",
+    "stringref": "localized17#medal/killed_enemy_while_carrying_flag",
+    "iconlarge": "image#ui_icon_medal_denied_large"
+}

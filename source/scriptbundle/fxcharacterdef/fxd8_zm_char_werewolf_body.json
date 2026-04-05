@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3fe005ea6dd49a33e0649a050920aa96dffed216736b40c70269944b9348330b
-size 275
+{
+    "effectcount": 1,
+    "configstringfiletype": "scriptbundle",
+    "type": "fxcharacterdef",
+    "vmtype": "client",
+    "name": "fxd8_zm_char_werewolf_body",
+    "hash_a0d91763": "tag_eye",
+    "hash_524decea28717b7c:hash_c7a3c7dd": "fx#hash_524decea28717b7c"
+}

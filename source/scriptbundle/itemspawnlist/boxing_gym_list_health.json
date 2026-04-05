@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:09c7275e27f2eec3593986ad1664c9f026320d55ad1a7d9b8e95ac7722a62871
-size 503
+{
+    "itemlist": [
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&wz_default_list_health",
+            "maxweight": 50,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 1,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "boxing_gym_list_health",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:41533273a220607eba6be4cc0eb998eb88aea7ad7ea354877be3a40f3f794c4e
-size 504
+{
+    "weakpoints": [
+        {
+            "hash_8223b0cf": 0,
+            "type": "#weakpoint",
+            "hash_910e2f9b": "j_helmet",
+            "hash_51e8b151": "j_head",
+            "activebydefault": 1,
+            "hitradius": 12,
+            "health": 2
+        }
+    ],
+    "configstringfiletype": "scriptbundle",
+    "model": "model#c_t8_zmb_dlc2_skeleton_fb",
+    "type": "characterweakpointsettings",
+    "name": "c_t8_zmb_skeleton_weakpoint_def",
+    "hash_96a09826": 1
+}

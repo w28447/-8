@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6afff7041f0a576c3d39ff13eee314bedf3554553e3b07a7a24d10b6ad70e01a
-size 389
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_clantag_ar_damage_restriction",
+    "displayname": "localized17#weapon/ar_damage_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__ar_damage_t8__attachments__clantag",
+    "isenableddisabled": 0
+}

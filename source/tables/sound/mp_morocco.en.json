@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c1bd404c4f4e13fedaabbcc70cf092300c64f1449bb2a6f8e69bbc1826990dab
-size 622
+{
+    "name": "mp_morocco.en",
+    "zone": "mp_morocco",
+    "gameLanguage": "english",
+    "soundLanguage": "en",
+    "nameHash": "#mp_morocco.en",
+    "patchZone": true,
+    "alias": [],
+    "duck": [],
+    "ambients": [],
+    "scriptIdLookups": [],
+    "streamKeysSABL": {
+        "streamKey1": "#mp_morocco_en_stream",
+        "dataSize1": 2048,
+        "fileKey": "#mp_morocco_en_loaded",
+        "fileLen": 2048
+    },
+    "streamKeysSABS": {
+        "streamKey1": "#hash_3a1688ea08716cc8",
+        "dataSize1": 2048,
+        "fileKey": "#hash_da5096c53b0c7e5",
+        "fileLen": 2048
+    }
+}

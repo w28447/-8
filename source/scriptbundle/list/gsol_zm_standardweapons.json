@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f9bbdf8a3029adada67bcfe2854ae95787de868a78486cef12ea0596538a3725
-size 416
+{
+    "name": "#gsol_zm_standardweapons",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#zm_weapshotgun",
+        "#gamesettings/#zm_weapsmg",
+        "#gamesettings/#zm_weapar",
+        "#gamesettings/#zm_weaptr",
+        "#gamesettings/#zm_weaplmg",
+        "#gamesettings/#zm_weapsniper",
+        "#gamesettings/#zm_weapknife",
+        "#gamesettings/#zm_weapmelee"
+    ]
+}

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:48a1ba66c6d718e2e75e828ec1a613ec75326fe087667ebc7a1bd9fd2f344145
-size 236
+{
+    "name": "c_t8_bo_parachute_diner",
+    "parachute": "weapon#parachute_wz",
+    "icon": "loot_ui_icon_jumppacks_parachute_diner",
+    "largeicon": "loot_ui_icon_jumppacks_parachute_diner_large",
+    "parachutelit": "model#"
+}

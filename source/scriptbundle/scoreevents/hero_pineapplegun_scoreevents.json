@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6f4b9e6848b5b9eafe029ccc9b2a6a80e041a77e4b0bc2217e4d6fc21f3efa84
-size 641
+{
+    "war_machine_multikill_2": "#war_machine_multikill_2",
+    "war_machine_multikill_2": "#war_machine_multikill_2",
+    "war_machine_kill": "#war_machine_kill",
+    "configstringfiletype": "scriptbundle",
+    "type": "scoreevents",
+    "vmtype": "both",
+    "war_machine_multikill_2": "#war_machine_multikill_2",
+    "name": "hero_pineapplegun_scoreevents",
+    "customsettingstype": "ability",
+    "war_machine_multikill_2": "#war_machine_multikill_2",
+    "war_machine_shutdown": "#war_machine_shutdown",
+    "war_machine_demolition": "#war_machine_demolition",
+    "war_machine_multikill_2": "#war_machine_multikill_2"
+}

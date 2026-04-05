@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fafcc39faf3c3adc95a10ad7b1c1fb24df447793e727eb3785b71d52fcad76a0
-size 231
+{
+    "hash_94166112": "model#",
+    "name": "c_t8_bo_wingsuit_chinese",
+    "icon": "loot_ui_icon_jumppacks_wingsuit_chinese",
+    "largeicon": "loot_ui_icon_jumppacks_wingsuit_chinese_large",
+    "hash_5677bd3d": "model#"
+}

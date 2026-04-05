@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:618a5852377904b1b9bb2b43fcd6eae1ac998d404d8c2299d85f6f5d0b738e24
-size 332
+{
+    "name": "#loot_emote_exotic_shared_slapshot",
+    "type": "#gesture",
+    "gesture": "#boast_slapshot",
+    "gesture2": "#boast_slapshot_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/5_hole",
+        "icon": "image#ui_icon_emotes_s3_slapshot",
+        "isdefault": 0
+    }
+}

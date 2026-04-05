@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:13e9d43f3af6bb0ad6f77e4bb4817eb0223d7cda6c22ac2db92e4e9ffde66279
-size 216
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_from_my_rotting_body",
+    "quote": "localized17#hash_2e651ee2f4d4585b",
+    "author": "localized17#hash_3197dd47faa11736"
+}

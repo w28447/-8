@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aacf74da57450b5e4acab3fdf34c0c8e27a6a8e8ec632a00733343ba15be1594
-size 450
+{
+    "description": "localized17#medal/bounty_hunter_revived_teammate_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_bounty_hunter_revived_teammate",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_guardian_angel",
+    "stringref": "localized17#medal/bounty_hunter_revived_teammate",
+    "iconlarge": "image#ui_icon_medal_guardian_angel_large"
+}

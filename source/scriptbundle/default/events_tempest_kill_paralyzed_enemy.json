@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:380a7b96d9e7a654cef6bc4b58a704e3f77ed77c4db5e157ef4c1c2880e49d2f
-size 290
+{
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
+    "widget": "BadasseryMedal",
+    "name": "events_tempest_kill_paralyzed_enemy",
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_776d1b4ece5247fc",
+    "iconlarge": "image#hash_776d1b4ece5247fc"
+}

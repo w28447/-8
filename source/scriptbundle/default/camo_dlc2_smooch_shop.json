@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7992fc3d288cd8daaef5099ab2aa003f2dad6466241a573d10031d49090df16b
-size 116
+{
+    "hash_404f1a80965d0c60:hash_6c274f86": "image#hash_404f1a80965d0c60",
+    "name": "camo_dlc2_smooch_shop"
+}

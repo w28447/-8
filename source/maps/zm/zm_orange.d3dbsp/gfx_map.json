@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:067cc1a456816a6f006f30e683f6a41995960d1e3bc62b755b957b76416d67b0
-size 343
+{
+    "name": "#maps/zm/zm_orange.d3dbsp",
+    "baseName": "zm_orange",
+    "lutMaterial": "#mtl_lut_zm_orange",
+    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "unk550": [
+        "#img_trim_lut_zm_orange",
+        "#img_trim_lut_zm_orange",
+        "#img_trim_lut_zm_orange",
+        "#img_trim_lut_zm_orange"
+    ]
+}

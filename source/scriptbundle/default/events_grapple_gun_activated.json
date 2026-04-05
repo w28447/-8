@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8e196d91f5b44619f359672a6d30b4a2443245a3588ef402d005b3d1ef07e231
-size 283
+{
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
+    "widget": "BadasseryMedal",
+    "name": "events_grapple_gun_activated",
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_21559845ab83594b",
+    "iconlarge": "image#hash_21559845ab83594b"
+}

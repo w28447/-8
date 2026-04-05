@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9502241b3596c9356f1d33edb4681dc660c4d399ccb9ecde8ad0f2d5a61b3f89
-size 410
+{
+    "name": "#c_t8_zmb_dlc0_zombie_destroyer1",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 2,
+    "bodyImpactType": 2,
+    "destructibleDef": "#c_t8_zmb_dlc0_zombie_destroyer1_dst_def",
+    "gibDef": "#c_default_annhilate_gib_def",
+    "ragdollDef": "#gladiator",
+    "body": "#c_t8_zmb_dlc0_zombie_destroyer_body1",
+    "head": "#c_t8_zmb_dlc0_zombie_destroyer_head"
+}

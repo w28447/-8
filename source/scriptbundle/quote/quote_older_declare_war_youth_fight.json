@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0a587eeb25e45602ef7c9f6c8779b0e1db043aa9ec876eb71c4174422ba32240
-size 224
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_older_declare_war_youth_fight",
+    "quote": "localized17#hash_2f1434ac8a968a0",
+    "author": "localized17#hash_376586f2b5b21bdc"
+}

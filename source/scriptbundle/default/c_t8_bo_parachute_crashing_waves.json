@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ea07fce0c72554651b91ac4957b0060fc47b1744b2ce8037a3622fbd7656a7a5
-size 261
+{
+    "name": "c_t8_bo_parachute_crashing_waves",
+    "parachute": "weapon#parachute_wz",
+    "icon": "loot_ui_icon_jumppacks_parachute_crashing_wave",
+    "largeicon": "loot_ui_icon_jumppacks_parachute_crashing_wave_large",
+    "parachutelit": "model#"
+}

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b0d3c0f598ff73342e492769ec4d8c4a6a029c48bee2533704d7189b32fdaed7
-size 298
+{
+    "effectcount": 1,
+    "configstringfiletype": "scriptbundle",
+    "type": "fxcharacterdef",
+    "vmtype": "client",
+    "name": "c_zsf_robot_grunt_fx_def_death",
+    "hash_a0d91763": "j_spineupper",
+    "explosions/fx_exp_robot_torso_death": "fx#explosions/fx_exp_robot_torso_death"
+}

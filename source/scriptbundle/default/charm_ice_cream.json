@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:339abe9c0e23371b7d5b6876a1ac6eac30475fbf3e084f6e12764acf2403ab02
-size 349
+{
+    "lootid": "#charm_ice_cream",
+    "hash_ff3063df": "model#",
+    "image": "ui_icon_weapon_charms_ice_cream",
+    "name": "charm_ice_cream",
+    "displayname": "localized17#menu/charm_ice_cream",
+    "icon": "ui_icon_weapon_charms_ice_cream",
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_ice_cream"
+}

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1fd5c19c78e495f5602953c1c7a3584736020973080c38bf09ee5cb0eaa158e0
-size 322
+{
+    "callingtask": "#kills_tactical_rifles",
+    "configstringfiletype": "scriptbundle",
+    "image": "image#ui_icon_zm_callings_tacticalrifle",
+    "dailytarget": 750,
+    "name": "tacticalrifles_task",
+    "taskname": "localized17#hash_151a1264ca159432",
+    "descsimple": "localized17#hash_792642fd140871bd"
+}

@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:553a2d093293061a734acf19905216a11d8e2b48e49ff39908bad3e42024be63
-size 251
+{
+    "detailsicon": "image#loot07_ui_icon_blackmarket_itemdetail_incandescent",
+    "loot07_ui_icon_blackmarket_itemshop_incandescent": "image#loot07_ui_icon_blackmarket_itemshop_incandescent",
+    "name": "camo_active_dlc5_phased_wrapper_shop"
+}

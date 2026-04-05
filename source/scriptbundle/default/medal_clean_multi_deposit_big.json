@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9a239b3da2623b3bf20dac88f242d438a0db69695c6ed1c2592136c943a61b6d
-size 415
+{
+    "description": "localized17#medal/clean_multi_deposit_big_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_clean_multi_deposit_big",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_jackpot",
+    "stringref": "localized17#medal/clean_multi_deposit_big",
+    "iconlarge": "image#ui_icon_medal_jackpot_large"
+}

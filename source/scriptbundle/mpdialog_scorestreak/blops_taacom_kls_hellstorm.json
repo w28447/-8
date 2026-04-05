@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:532a143d636013ac3a6a6cf0c1a6ce4f5a20e306c4002f0a2859f41319254476
-size 443
+{
+    "destroyed": "#hash_60826fc3445693",
+    "ready": "#hash_4fbe59ffa19f7d8f",
+    "configstringfiletype": "scriptbundle",
+    "type": "mpdialog_scorestreak",
+    "killmultiple": "#hash_5cef18aad818704f",
+    "vmtype": "both",
+    "name": "blops_taacom_kls_hellstorm",
+    "kill1": "#hash_5fc05b23e1aafb9a",
+    "kill3": "#hash_5fc05923e1aaf834",
+    "kill2": "#hash_5fc05a23e1aaf9e7",
+    "killnone": "#hash_362a659f9ca5cad6"
+}

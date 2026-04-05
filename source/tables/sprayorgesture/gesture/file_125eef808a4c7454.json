@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:802eb749a521b70cbf7d60de4f41d915281aa80c3dceae18169dc6694b8e07a7
-size 1072
+{
+    "name": "#hash_125eef808a4c7454",
+    "type": "#gesture",
+    "gesture": "#hash_79da8990dc9218de",
+    "gesture2": "#hash_6611288b471f1ac9",
+    "sub": [
+        {
+            "gesture": "#hash_4d0da48b393b52ce",
+            "gesture2": "#hash_21ddf72b34243641",
+            "roles": [
+                "#hash_76ccdd2bfc985ae8",
+                "#prt_mp_firebreak",
+                "#prt_wz_firebreak",
+                "#prt_mp_enforcer",
+                "#prt_wz_enforcer",
+                "#hash_42e7a274de12337e",
+                "#hash_7beba0d40d750e10",
+                "#hash_6c8d991db6f42c4a",
+                "#hash_57d9e98fa3f08f76",
+                "#hash_203a1dcc75cf8c53",
+                "#prt_mp_spectre",
+                "#prt_wz_spectre",
+                "#prt_mp_reaper",
+                "#prt_wz_reaper_bo4"
+            ]
+        }
+    ],
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/la_rosa_mortal",
+        "icon": "image#ui_icon_emotes_flamenco",
+        "isdefault": 0
+    }
+}

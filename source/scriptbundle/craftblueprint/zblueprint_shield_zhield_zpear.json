@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:69811b27997627e110130da8c6872b43592de4a09a17ef761db7bbcab1032d10
-size 1099
+{
+    "hash_6adaea9a0756a29e:hash_4050486a": "localized18#hash_6adaea9a0756a29e",
+    "zombie/craft_shield_spear:hash_4dbc4aee": "localized18#zombie/craft_shield_spear",
+    "hash_11928e3b": -90,
+    "configstringfiletype": "scriptbundle",
+    "hash_5ed001ba2e3c097:hash_fe8a5e39": "localized18#hash_5ed001ba2e3c097",
+    "result": "weapon#zhield_zpear_dw_zm",
+    "type": "craftblueprint",
+    "hash_3c809ce0": 16,
+    "hash_e414062": 0,
+    "component01": "weapon#zitem_zhield_zpear_part_1_zm",
+    "component02": "weapon#zitem_zhield_zpear_part_2_zm",
+    "component03": "weapon#zitem_zhield_zpear_part_3_zm",
+    "name": "zblueprint_shield_zhield_zpear",
+    "displayname": "Spear and Shield",
+    "zombie/grab_shield_spear:hash_391591d0": "localized18#zombie/grab_shield_spear",
+    "zombie/repair_shield_spear:hash_1238231a": "localized18#zombie/repair_shield_spear",
+    "postcraft": "persistent_buy",
+    "hash_3e27be7b0510a43b:hash_abd9b2d0": "localized18#hash_3e27be7b0510a43b",
+    "componentcount": 3,
+    "hash_c028dcfe": 1,
+    "hash_318c150c": "section_shield"
+}

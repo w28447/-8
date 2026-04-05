@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:12478c516b092d8514787d1d380a72bc47712742588ef8c46643643e4217653c
-size 307
+{
+    "callingtask": "#zearned",
+    "configstringfiletype": "scriptbundle",
+    "image": "image#ui_icon_zm_calling_tasks_zearned",
+    "dailytarget": 100000,
+    "name": "moneyhungry_task",
+    "taskname": "localized17#hash_4c04ae20fe407db3",
+    "descsimple": "localized17#hash_237437962058e06a"
+}

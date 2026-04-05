@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:feabd9165c04502f6717569b84073fe8442ad9c9435b64f74d103f5e10ebd318
-size 506
+{
+    "hash_2703f9fb7e481f6d:hash_c7bd8867": "localized17#hash_2703f9fb7e481f6d",
+    "popupimage": "image#ui_icon_weapon_tr_flechette_render",
+    "ui_icon_weapon_tr_flechette_render": "image#ui_icon_weapon_tr_flechette_render",
+    "nametext": "localized17#weapon/tr_flechette_t8",
+    "categorytext": "localized17#mpui/bm_bribe",
+    "name": "tr_flechette_t8_bribe",
+    "desctext": "localized17#weapon/tr_flechette_t8_desc",
+    "weapon/tr_flechette_t8": "localized17#weapon/tr_flechette_t8"
+}

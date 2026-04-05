@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b096d82df64b2f6d206f8db3c448226729b27a409e6693f8fabdb7630bc78e03
-size 247
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "craftfoundry",
+    "blueprintcount": 1,
+    "blueprint01": "scriptbundle&zblueprint_mansion_silver_bullet",
+    "name": "ztable_silver_bullets",
+    "displayname": "Silver Bullet"
+}

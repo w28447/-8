@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b15627ec8bf9eb45181a5050f46918602e24458e14e178dece2f7dd3ebd1131f
-size 306
+{
+    "callingtask": "#headshots",
+    "configstringfiletype": "scriptbundle",
+    "image": "image#ui_icon_zm_calling_tasks_headshots",
+    "dailytarget": 300,
+    "name": "headhunter_task",
+    "taskname": "localized17#hash_187aad79c5ab44c",
+    "descsimple": "localized17#hash_6902d4dc8a715a7f"
+}

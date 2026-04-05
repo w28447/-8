@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2b8a352133f5c713147844492a7a083aa76e2dccb611a9ad342d93ab031ca326
-size 387
+{
+    "description": "localized17#medal/uav_killjoy_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_uav_killjoy",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_fly_swatter",
+    "stringref": "localized17#medal/uav_killjoy",
+    "iconlarge": "image#ui_icon_medal_fly_swatter_large"
+}

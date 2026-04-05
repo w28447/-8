@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:787a1fd72158f1c10608ba5da2349d1bb58eb47880ef4b1fff5fc572ad0db16a
-size 389
+{
+    "name": "#gsol_mp_gear_restriction",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#gear_equipmentcharge_restriction",
+        "#gamesettings/#gear_medicalgun_restriction",
+        "#gamesettings/#gear_comsecdevice_restriction",
+        "#gamesettings/#gear_bodyarmor_restriction",
+        "#gamesettings/#gear_acousticsensor_restriction"
+    ]
+}

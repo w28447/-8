@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:08080ec30fd668f8c93265c322578ace5e3518f33a75b568c1fbe9ca923cd0e0
-size 222
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_victory_is_always_possible",
+    "quote": "localized17#hash_16589ae4da7012d5",
+    "author": "localized17#hash_2ac4acce05a93d99"
+}

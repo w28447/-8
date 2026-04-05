@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f9179c2a91e49477bfd06cd50f10f42daaa743d4ccc06527df035d929bb7e26e
-size 398
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_stalker_smg_fastfire_restriction",
+    "displayname": "localized17#weapon/smg_fastfire_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__smg_fastfire_t8__attachments__stalker",
+    "isenableddisabled": 0
+}

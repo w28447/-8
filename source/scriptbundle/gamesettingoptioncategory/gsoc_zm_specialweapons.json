@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:75254adec4ed16c625e16e672af3b33ed6ae47a8c3fa9fb814e22b0317ed6b16
-size 339
+{
+    "configstringfiletype": "scriptbundle",
+    "hash_ce9b2d06": "gsol_zm_specialweapons",
+    "type": "gamesettingoptioncategory",
+    "name": "gsoc_zm_specialweapons",
+    "hash_40c3c9f045a1912d:hash_dea17465": "localized17#hash_40c3c9f045a1912d",
+    "hash_3f52af57d201c5b0:hash_608158f2": "localized17#hash_3f52af57d201c5b0"
+}

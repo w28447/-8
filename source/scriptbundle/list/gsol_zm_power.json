@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a2fca6e90876be2fece3888867874c0b22cff65eda852916a7cd7e4ee3c44f5d
-size 179
+{
+    "name": "#gsol_zm_power",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#zm_powerstate",
+        "#gamesettings/#zm_powerdoorstate"
+    ]
+}

@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:319aa67dfc082904429a3d4472ad8cdfe410e4afb5403332f6940043e14787bd
-size 1075
+{
+    "name": "#gsol_mp_suppressed_restriction",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_suppressed_ar_modular_restriction",
+        "#gamesettings/#attachment_suppressed_ar_standard_restriction",
+        "#gamesettings/#attachment_suppressed_ar_stealth_restriction",
+        "#gamesettings/#attachment_suppressed_lmg_spray_restriction",
+        "#gamesettings/#attachment_suppressed_pistol_burst_restriction",
+        "#gamesettings/#attachment_suppressed_pistol_standard_restriction",
+        "#gamesettings/#attachment_suppressed_smg_accurate_restriction",
+        "#gamesettings/#attachment_suppressed_smg_fastburst_restriction",
+        "#gamesettings/#attachment_suppressed_smg_handling_restriction",
+        "#gamesettings/#attachment_suppressed_smg_standard_restriction",
+        "#gamesettings/#attachment_suppressed_sniper_fastrechamber_restriction",
+        "#gamesettings/#attachment_suppressed_tr_longburst_restriction",
+        "#gamesettings/#attachment_suppressed_tr_midburst_restriction"
+    ]
+}

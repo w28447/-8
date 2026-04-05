@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:45f709faaf70d9ddfc47c263234023812713b20203b1b7ea5f2c91c959cd25ac
-size 160
+{
+    "loot03_ui_icon_blackmarket_item_shop_wingsuit_elvis": "image#loot03_ui_icon_blackmarket_item_shop_wingsuit_elvis",
+    "name": "jumppack_elvis_shop"
+}

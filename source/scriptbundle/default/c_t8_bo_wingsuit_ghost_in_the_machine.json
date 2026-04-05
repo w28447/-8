@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:574d9b4b94da8819a7a62271074ab0fcb71889004f976f071426f025fa0e31e7
-size 262
+{
+    "hash_94166112": "model#",
+    "name": "c_t8_bo_wingsuit_ghost_in_the_machine",
+    "icon": "loot_ui_icon_jumppacks_wingsuit_ghost_in_machine",
+    "largeicon": "loot_ui_icon_jumppacks_wingsuit_ghost_in_machine_large",
+    "hash_5677bd3d": "model#"
+}

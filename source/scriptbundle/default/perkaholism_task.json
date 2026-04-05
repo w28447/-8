@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:85d15b92f9c3215a92ca98f5fedea660f33467dc2b01ee98c266a3287932fb44
-size 296
+{
+    "callingtask": "#perks_activated",
+    "configstringfiletype": "scriptbundle",
+    "image": "image#personalize_t7_hud_mp_weapon_hero_chemgun",
+    "name": "perkaholism_task",
+    "taskname": "localized17#hash_5801d6992b6896bf",
+    "descsimple": "localized17#hash_3546c0001f9140d6"
+}

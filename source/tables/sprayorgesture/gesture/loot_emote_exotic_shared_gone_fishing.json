@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9e24e652f477223b3227afb04f87c71a4e4d779417fddecfd859f8977b45221b
-size 347
+{
+    "name": "#loot_emote_exotic_shared_gone_fishing",
+    "type": "#gesture",
+    "gesture": "#boast_gone_fishing",
+    "gesture2": "#boast_gone_fishing_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/cod_fish",
+        "icon": "image#ui_icon_emotes_gone_fishing",
+        "isdefault": 0
+    }
+}

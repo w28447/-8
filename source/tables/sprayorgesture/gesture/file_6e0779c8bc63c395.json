@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5d2c0d6fcb15b4ea5badddacbb6d83929cc99c3cb334602d5971d08f6b7b4e4e
-size 327
+{
+    "name": "#hash_6e0779c8bc63c395",
+    "type": "#gesture",
+    "gesture": "#boast_birthday",
+    "gesture2": "#hash_2164b48a19574349",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/birthday_blowout",
+        "icon": "image#hash_1518e07f3a9add0",
+        "isdefault": 0
+    }
+}

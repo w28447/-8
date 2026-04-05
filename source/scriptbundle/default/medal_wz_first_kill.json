@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:636fcc3737c57f013fd6ecbfe54a4baf60ceda02e57f25118dcd3e5177334df6
-size 397
+{
+    "description": "localized17#hash_716a1ba26da0ea29",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_wz_first_kill",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_wz_first_blood",
+    "stringref": "localized17#hash_2cd3e66312b86f7",
+    "iconlarge": "image#ui_icon_medal_wz_first_blood_large"
+}

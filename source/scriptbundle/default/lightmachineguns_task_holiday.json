@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8649ca70db7d7e7dc863a013f86a3e7ffa6c44e5585ed080a2ffe0a9fab16473
-size 315
+{
+    "callingtask": "#kills_lmg",
+    "configstringfiletype": "scriptbundle",
+    "image": "image#ui_icon_zm_calling_tasks_lmg",
+    "dailytarget": 750,
+    "name": "lightmachineguns_task_holiday",
+    "taskname": "localized17#hash_7116f3eec93fa7e1",
+    "descsimple": "localized17#hash_36fb3075fb836d51"
+}

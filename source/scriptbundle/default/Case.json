@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2eaeda0361a6e591c980b0fecb7c4fb2478c6ef7a081473bd910e012f5dd9727
-size 322
+{
+    "popupimage": "image#ui_icon_blackmarket_reserves_case_large",
+    "nametext": "localized17#hash_d004f2913090a",
+    "categorytext": "localized17#hash_d004f2913090a",
+    "name": "case",
+    "desctext": "localized17#hash_4a5115be25660aba",
+    "previewimage": "image#ui_icon_blackmarket_reserves_case_small"
+}

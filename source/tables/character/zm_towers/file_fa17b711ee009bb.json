@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8be3b77e5f1618a8c23f2176edcb36549496c91e4691cb5adbb17dad37d18483
-size 200
+{
+    "name": "#hash_fa17b711ee009bb",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 2,
+    "bodyImpactType": 2,
+    "body": "#c_t8_zmb_dlc0_elephant_husk_body1_evil"
+}

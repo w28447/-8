@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a5cc5164d162901729ea825908f4add1e1507977d64a2a392800deec3e05d36d
-size 647
+{
+    "name": "mp_hacienda_alt.en",
+    "zone": "mp_hacienda_alt",
+    "gameLanguage": "english",
+    "soundLanguage": "en",
+    "nameHash": "#mp_hacienda_alt.en",
+    "patchZone": true,
+    "alias": [],
+    "duck": [],
+    "ambients": [],
+    "scriptIdLookups": [],
+    "streamKeysSABL": {
+        "streamKey1": "#mp_hacienda_alt_en_stream",
+        "dataSize1": 2048,
+        "fileKey": "#mp_hacienda_alt_en_loaded",
+        "fileLen": 2048
+    },
+    "streamKeysSABS": {
+        "streamKey1": "#hash_4e4f64008694983f",
+        "dataSize1": 2048,
+        "fileKey": "#hash_bcaf7174eb838d6",
+        "fileLen": 2048
+    }
+}

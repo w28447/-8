@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5cc39fcb4767de7ea121bcf9a4e22b2a3c3a7bd4b457ffcd805a599d006f9fd0
-size 221
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_warfare_base_on_deception",
+    "quote": "localized17#hash_329cddbfa42d2e3f",
+    "author": "localized17#hash_2551258f55a72a7c"
+}

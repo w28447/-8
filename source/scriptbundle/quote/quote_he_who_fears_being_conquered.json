@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7143c05aa9d0defe79b72e70d0324d046cd94eb9ad1053feda0030e264b61589
-size 224
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_he_who_fears_being_conquered",
+    "quote": "localized17#hash_350dbb22308e9f7e",
+    "author": "localized17#hash_63ab71c957f7ca17"
+}

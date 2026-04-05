@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f323f3d014a1529e15cfb4383c1e0b1b699aa43b23b21191a9bad9d8c9325e4d
-size 1040
+{
+    "name": "#vehicle_t8_drone_cuav_mp",
+    "type": "helicopter",
+    "scoreType": "_vtol",
+    "archeType": "#none",
+    "unk38": "#none",
+    "spawnerType": "#none",
+    "spawnInfluencers1": "#none",
+    "spawnInfluencers2": "#none",
+    "deathFx": "#explosions/fx_vexp_hunter_death",
+    "deathFxTag": "tag_deathfx",
+    "deathFxSound": "#hash_23a5c1da224897cc",
+    "targetTags": [
+        "tag_fx_death"
+    ],
+    "skidSpeedMin": 100,
+    "skidSpeedMax": 600,
+    "peelSpeedMax": 600,
+    "model": "#veh_t8_drone_cuav_mp_light_vista",
+    "deathModel": "#veh_t8_drone_cuav_mp_light_vista",
+    "enemyModel": "#veh_t8_drone_cuav_mp_dark_vista",
+    "soundDef": "#hash_f837378dcf85646",
+    "compassIconMaterial": "#compass_vtol",
+    "steerAxisName": "AXIS_LSTICK",
+    "attackButtonName": "BUTTON_RTRIG",
+    "attackSecondaryButtonName": "BUTTON_LTRIG",
+    "unk1608": "BUTTON_RSHLDR",
+    "unk1618": "BUTTON_LSHLDR",
+    "bundle": {
+        "healthpoolsize": 650,
+        "hash_7812fce8": 2
+    }
+}

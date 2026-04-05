@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5af15a2f7977b38b097c0679e8b9f3d0f38b9cece61f9abbe238cbfb9417b286
-size 217
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_teamwork_is_essential",
+    "quote": "localized17#hash_2bc6dedd8c3a79cd",
+    "author": "localized17#hash_4e55371bb0e6c43f"
+}

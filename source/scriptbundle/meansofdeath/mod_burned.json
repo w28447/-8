@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7f45852c75dd3a13e50fc781a33aadf6800a05406122f0253272a7b6f8e4486b
-size 287
+{
+    "mod": "MOD_BURNED",
+    "configstringfiletype": "scriptbundle",
+    "type": "meansofdeath",
+    "name": "mod_burned",
+    "displayname": "localized17#ui/mod_burned",
+    "icon": "image#ui_icon_meansofdeath_burned",
+    "iconlarge": "image#ui_icon_meansofdeath_burned_xl"
+}

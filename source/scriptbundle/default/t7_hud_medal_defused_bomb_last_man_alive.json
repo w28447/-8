@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7443068956a52ea028d39d5fe965019a6712d0a8c2bad5342da7ac22c7e639b6
-size 424
+{
+    "backingsmall": "image#t7_hud_medal_backing_gamemode",
+    "widget": "BadasseryMedal",
+    "name": "t7_hud_medal_defused_bomb_last_man_alive",
+    "backinglarge": "image#t7_hud_medal_backing_gamemode_lrg",
+    "iconsmall": "image#t7_hud_medal_defused_bomb_last_man_alive",
+    "stringref": "localized17#medal/defused_bomb_last_man_alive",
+    "iconlarge": "image#t7_hud_medal_defused_bomb_last_man_alive_lrg"
+}

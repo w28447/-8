@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9087aeb2de32313a2a32e6f5515af180aca59de66eb99ad287f624749b4c9a85
-size 234
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_the_measure_of_a_man_is_way_he_bears_up",
+    "quote": "localized17#hash_7a8f5f20c466d0be",
+    "author": "localized17#hash_5bdb98d0bc3c972"
+}

@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:928ab24edf4606f4537d3f7c5d79fd037c56cf73548b469efb886c94feb260fe
-size 633
+{
+    "name": "#gsol_zm_powerups",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#zm_powerups",
+        "#gamesettings/#zm_powerupfrequency",
+        "#gamesettings/#zm_powerupsislimited",
+        "#gamesettings/#zm_poweruplimit",
+        "#gamesettings/#zm_powerups2x",
+        "#gamesettings/#zm_powerupscarpenter",
+        "#gamesettings/#zm_powerupschaos",
+        "#gamesettings/#zm_powerupsfiresale",
+        "#gamesettings/#zm_powerupsinsta",
+        "#gamesettings/#zm_powerupsmaxammo",
+        "#gamesettings/#zm_powerupsnuke",
+        "#gamesettings/#zm_powerupsspecweap"
+    ]
+}

@@ -1,3 +1,82 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e4ccb63cba9e24172ede68062a422f6f33f6e6edcff2d41304c598dedb84b869
-size 2927
+{
+    "name": "#mute_smoke_mp",
+    "baseWeapon": "#mute_smoke",
+    "displayname": "#weapon/mute_smoke",
+    "weapon70": "#mute_smoke",
+    "luigiReticleWidget": "LauncherMultiReticle",
+    "streamkey": "#hash_649e43898942f278",
+    "worldModelTagRight": "tag_weapon_right",
+    "worldModelTagLeft": "tag_weapon_left",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_weapon_right",
+    "scrstr_11a4": "tag_weapon_left",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "MULTIPLAYER",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.2517 1",
+            "0.5006 1",
+            "1 0.0507"
+        ],
+        [
+            "0 1",
+            "0.2517 1",
+            "0.5006 1",
+            "1 0.0507"
+        ]
+    ],
+    "firesoundplayer": "#hash_2641c0abf6064ffb",
+    "gadgetreadysoundplayer": "#hash_d590deaa2a34876",
+    "sound660": "#uin_unavailable_charging",
+    "projexplosionsound": "#hash_20aa78ea8f6ca697",
+    "projexplosionsoundplayer": "#hash_20aa78ea8f6ca697",
+    "projsmokestartsound": "#hash_488015793c3928c8",
+    "projsmokeloopsound": "#hash_580af487d81a82d8",
+    "sound800": "#hash_54f28bb508a46096",
+    "sound810": "#hash_54f28bb508a46096",
+    "tunables1": "#mute_smoke_tunables_mp",
+    "cacWeaponXCam": "#hash_256a079440b7ee50",
+    "weaponIconXCam": "#hash_54f441a98077ae28",
+    "sharedWeaponSounds": "#launcher",
+    "customsettings": "#mute_smoke_custom_settings",
+    "projectilemodel": "#wpn_t8_eqp_smoke_charge_projectile",
+    "#hash_4bcd08b0": "#p8_mp_gadget_targeting_donut",
+    "viewmodel": [
+        "#wpn_t8_eqp_smoke_charge_view"
+    ],
+    "worldModel": [
+        "#wpn_t8_eqp_smoke_charge_world"
+    ],
+    "gadgetIconAvailable": "#ui_icon_ability_mutesmokecharge_dark",
+    "gadgetIconUnavailable": "#hash_a2e127e06b87d255",
+    "reticleCenter": "#emp_reticle",
+    "inventoryIconZm": "#ui_icon_ability_mutesmokecharge_dark",
+    "hudIcon": "#hash_a2e127e06b87d255",
+    "image_e90": "#hash_a2e127e06b87d255",
+    "fireRumble": "#launcher_fire",
+    "underwaterExplosionSurfaceFX": [
+        "#hash_5f190015ac9ded95",
+        "#hash_1206d75150c2464e",
+        "#hash_260fafe2e7ced71c"
+    ],
+    "bounceImpactFX": "#grenade_bounce",
+    "bounceImpactSounds": "#hash_c6d8f2152c519b03"
+}

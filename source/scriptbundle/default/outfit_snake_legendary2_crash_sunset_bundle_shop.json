@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f6d6cd901019f51622920fa22aa4247ffbc14dcd1c3f049689675d0c199908d3
-size 251
+{
+    "nametext": "localized17#hash_726c3e54092e5e04",
+    "name": "outfit_snake_legendary2_crash_sunset_bundle_shop",
+    "desctext": "localized17#hash_2b7f2d614d161f1d",
+    "heroes/buffassault:hash_975cc0d1": "localized17#heroes/buffassault"
+}

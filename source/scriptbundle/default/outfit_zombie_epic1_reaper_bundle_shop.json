@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cfe9bfb99d90bdb9a39144295fdf42beace8035c6cbf19774afb840309eb564c
-size 399
+{
+    "detailsicon": "image#loot05_ui_icon_blackmarket_itemdetail_bundle_grinder_reaper",
+    "loot05_ui_icon_blackmarket_itemshop_bundle_grinder_reaper:hash_6c274f86": "image#loot05_ui_icon_blackmarket_itemshop_bundle_grinder_reaper",
+    "nametext": "localized17#mpui/reaper_zombie",
+    "name": "outfit_zombie_epic1_reaper_bundle_shop",
+    "desctext": "localized17#hash_7f28cb19ccc52d25"
+}

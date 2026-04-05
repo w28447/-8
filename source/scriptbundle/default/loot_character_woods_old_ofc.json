@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2f4bd6bf7764b7cb40f6b65dfc8c203cfee5ca76e5e6ce5e8b2b67255551bf52
-size 171
+{
+    "loot04_ui_icon_blackmarket_itemshop_woods_old:hash_6c274f86": "image#loot04_ui_icon_blackmarket_itemshop_woods_old",
+    "name": "loot_character_woods_old_ofc"
+}

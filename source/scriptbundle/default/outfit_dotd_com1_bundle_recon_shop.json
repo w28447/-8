@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c0e13c3b2817298231b12675a3bb7f9b78b82abaeea88ddec061af397daa0d24
-size 225
+{
+    "nametext": "localized17#hash_5b41b8c337d122a6",
+    "name": "outfit_dotd_com1_bundle_recon_shop",
+    "desctext": "localized17#hash_5d8932596e241d6b",
+    "heroes/recon:hash_975cc0d1": "localized17#heroes/recon"
+}

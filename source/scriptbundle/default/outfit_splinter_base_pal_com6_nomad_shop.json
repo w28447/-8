@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:45a2f6ddbfcfe5e5610cef63bf4643a2bd149883675c505f94e0f5dc34c8f69b
-size 135
+{
+    "hash_79cc18b04f3ffd49:hash_6c274f86": "image#hash_79cc18b04f3ffd49",
+    "name": "outfit_splinter_base_pal_com6_nomad_shop"
+}

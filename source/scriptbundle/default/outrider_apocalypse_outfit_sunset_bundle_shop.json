@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5c1ca0a9c8a0ca474eac25090effe269a00cfd5bb6faf6bff675dcb503915199
-size 242
+{
+    "nametext": "localized17#hash_3ab07b5825f0895f",
+    "name": "outrider_apocalypse_outfit_sunset_bundle_shop",
+    "desctext": "localized17#hash_2b7f2d614d161f1d",
+    "heroes/outrider:hash_975cc0d1": "localized17#heroes/outrider"
+}

@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bde879ba1317e8321081701eca916b4a70aa27c7e8a4d13f2ae29fc72f5c0d71
-size 415
+{
+    "hinttext": "localized17#menu/flag_can_be_neutralized_hint",
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "flag_can_be_neutralized",
+    "displayname": "localized17#menu/flag_can_be_neutralized",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "flagCanBeNeutralized",
+    "isenableddisabled": 1
+}

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:419a8000ecbc950129d45a804356692529479a624d2c6655555d3a976f09f50d
-size 281
+{
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
+    "widget": "BadasseryMedal",
+    "name": "events_attack_chopper_kill",
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_776d1b4ece5247fc",
+    "iconlarge": "image#hash_776d1b4ece5247fc"
+}

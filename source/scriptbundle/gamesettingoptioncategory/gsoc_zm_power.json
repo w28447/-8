@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b580255206105e9b2d5373e40c92950bc86e7647dfa5eca068db09333fc7f562
-size 321
+{
+    "configstringfiletype": "scriptbundle",
+    "hash_ce9b2d06": "gsol_zm_power",
+    "type": "gamesettingoptioncategory",
+    "name": "gsoc_zm_power",
+    "hash_40c3c9f045a1912d:hash_dea17465": "localized17#hash_40c3c9f045a1912d",
+    "hash_6130854862af31c0:hash_608158f2": "localized17#hash_6130854862af31c0"
+}

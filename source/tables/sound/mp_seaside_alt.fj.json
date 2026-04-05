@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1acc6afd2a91ecce061b048d7a965e3cac259b0e800c3751deef5d98ff7a9eb3
-size 649
+{
+    "name": "mp_seaside_alt.fj",
+    "zone": "mp_seaside_alt",
+    "gameLanguage": "japanese_full",
+    "soundLanguage": "fj",
+    "nameHash": "#mp_seaside_alt.fj",
+    "patchZone": true,
+    "alias": [],
+    "duck": [],
+    "ambients": [],
+    "scriptIdLookups": [],
+    "streamKeysSABL": {
+        "streamKey1": "#mp_seaside_alt_fj_stream",
+        "dataSize1": 2048,
+        "fileKey": "#mp_seaside_alt_fj_loaded",
+        "fileLen": 2048
+    },
+    "streamKeysSABS": {
+        "streamKey1": "#hash_29357653e3afc21f",
+        "dataSize1": 2048,
+        "fileKey": "#hash_689f01147333a8b6",
+        "fileLen": 2048
+    }
+}

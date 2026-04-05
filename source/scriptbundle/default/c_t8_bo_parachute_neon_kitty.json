@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3f1a31c587ad9fe6d26415575644ce2a775bf4c1fe2bdc301e84b3873800d285
-size 251
+{
+    "name": "c_t8_bo_parachute_neon_kitty",
+    "parachute": "weapon#parachute_wz",
+    "icon": "loot_ui_icon_jumppacks_parachute_neon_kitty",
+    "largeicon": "loot_ui_icon_jumppacks_parachute_neon_kitty_large",
+    "parachutelit": "model#"
+}

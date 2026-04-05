@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cc2182345e02c7d6b1db2527e7fe82a25c2939bc2dace819e3809321b8eebec2
-size 361
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "mpdialog_scorestreak",
+    "damaged": "#hash_69b9963179042247",
+    "vmtype": "both",
+    "timecheck": "#hash_280cfef2b466bd24",
+    "name": "cdp_pilot1_kls_attack_chopper",
+    "arrive": "#hash_b38ff943d83e2fe",
+    "timeout": "#hash_2802ecf2b45e4a09",
+    "kill": "#hash_2f039d8059cc9119"
+}

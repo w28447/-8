@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f86dedc8d2ae5e07b157ce54e7070cb3b93866e581fe369a9085db1ac1a4c7d5
-size 404
+{
+    "name": "#gsol_mp_ar_restriction",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#ar_accurate_restriction",
+        "#gamesettings/#ar_damage_restriction",
+        "#gamesettings/#ar_fastfire_restriction",
+        "#gamesettings/#ar_modular_restriction",
+        "#gamesettings/#ar_standard_restriction",
+        "#gamesettings/#ar_stealth_restriction"
+    ]
+}

@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:10c5c469db8fb81575e28a85cd7cf4aa868f9b1453a7792c6d0253b309c3400f
-size 335
+{
+    "name": "#hash_10eb98c5aecfec2",
+    "type": "#gesture",
+    "gesture": "#hash_5fd4063f6de09a70",
+    "gesture2": "#boast_seraph_cowboy",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/annihilation",
+        "icon": "image#ui_icon_emotes_seraph_cowboy",
+        "isdefault": 0
+    }
+}

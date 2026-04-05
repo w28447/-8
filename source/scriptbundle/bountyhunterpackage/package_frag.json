@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:31c7d6fe32671e62d1f2c115a0d939db149d92511c8ecfc26dc6632093dfa211
-size 523
+{
+    "packageitems": [
+        {
+            "item": "#frag_grenade"
+        }
+    ],
+    "hash_ef921c3c": 1,
+    "configstringfiletype": "scriptbundle",
+    "tracktier": 0,
+    "type": "bountyhunterpackage",
+    "hash_85d7cf08": 1,
+    "refillammo": 0,
+    "hash_ee686ece": 0,
+    "refillcost": 0,
+    "name": "package_frag",
+    "packagetype": "equipment",
+    "purchasecost": 500,
+    "startammo": 2,
+    "hash_673a16ad": 1,
+    "hash_741010b5": 1,
+    "hash_782dbf79": 1,
+    "hash_767b7337": 1
+}

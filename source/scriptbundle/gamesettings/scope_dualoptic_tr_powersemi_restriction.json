@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d66f8ba1cb5d1ce8624cf4227dbba0109df52cd1444f291b781e2e92f1fcbe9e
-size 397
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "scope_dualoptic_tr_powersemi_restriction",
+    "displayname": "localized17#weapon/tr_powersemi_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__tr_powersemi_t8__attachments__dualoptic",
+    "isenableddisabled": 0
+}

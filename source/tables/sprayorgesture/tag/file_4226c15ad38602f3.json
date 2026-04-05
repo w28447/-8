@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6c6255c64328a2d9f3fc5e513a7e71d8380fb07b3fb79175fb5de5ba53ddc864
-size 297
+{
+    "name": "#hash_4226c15ad38602f3",
+    "type": "#tag",
+    "material": "#hash_589e4cc405b3b497",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_58b427a5f6cb3a9e",
+        "icon": "image#loot_ui_icon_tags_hipster_firebreak",
+        "isdefault": 0
+    }
+}

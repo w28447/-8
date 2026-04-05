@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a2b5574bab42149635844d4d92b8af807c497d384185b0d9ca61fe8e36d4e91c
-size 251
+{
+    "name": "c_t8_bo_parachute_union_jack",
+    "parachute": "weapon#parachute_wz",
+    "icon": "loot_ui_icon_jumppacks_parachute_union_jack",
+    "largeicon": "loot_ui_icon_jumppacks_parachute_union_jack_large",
+    "parachutelit": "model#"
+}

@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2ff3b12dab8acad0ecc3b8da186db2241b2779fb2c7afaba67065792d0c8bc3b
-size 405
+{
+    "description": "localized17#hash_6527c5c8c5c7119a",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_gungame_regicide",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_gungame_regicide",
+    "stringref": "localized17#hash_272bc65953e06aaa",
+    "iconlarge": "image#ui_icon_medal_gungame_regicide_large"
+}

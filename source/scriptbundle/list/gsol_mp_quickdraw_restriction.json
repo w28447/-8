@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:65e64455334c31fef7ef0b5bee155e1bd932faea4068dc462291c43438d51ff9
-size 1287
+{
+    "name": "#gsol_mp_quickdraw_restriction",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_quickdraw_ar_accurate_restriction",
+        "#gamesettings/#attachment_quickdraw_ar_fastfire_restriction",
+        "#gamesettings/#attachment_quickdraw_ar_modular_restriction",
+        "#gamesettings/#attachment_quickdraw_ar_standard_restriction",
+        "#gamesettings/#attachment_quickdraw_lmg_heavy_restriction",
+        "#gamesettings/#attachment_quickdraw_lmg_standard_restriction",
+        "#gamesettings/#attachment_quickdraw_pistol_revolver_restriction",
+        "#gamesettings/#attachment_quickdraw_pistol_standard_restriction",
+        "#gamesettings/#attachment_quickdraw_shotgun_pump_restriction",
+        "#gamesettings/#attachment_quickdraw_smg_accurate_restriction",
+        "#gamesettings/#attachment_quickdraw_smg_fastfire_restriction",
+        "#gamesettings/#attachment_quickdraw_smg_handling_restriction",
+        "#gamesettings/#attachment_quickdraw_sniper_fastrechamber_restriction",
+        "#gamesettings/#attachment_quickdraw_sniper_quickscope_restriction",
+        "#gamesettings/#attachment_quickdraw_tr_longburst_restriction",
+        "#gamesettings/#attachment_quickdraw_tr_midburst_restriction"
+    ]
+}

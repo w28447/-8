@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:44a1d2ccbb01f73905c95fa902719d3a41f5b599df8114d2a171b5e27cce921d
-size 130
+{
+    "lootid": "#charm_petrock",
+    "hash_ff3063df": "model#",
+    "name": "charm_petrock",
+    "hash_ef5ad2b3": "model#"
+}

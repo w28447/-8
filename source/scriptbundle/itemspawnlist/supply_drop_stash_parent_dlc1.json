@@ -1,3 +1,51 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6828bc42c35942b5705d027040d95474ea92fb09eaf69fb93fc4d281928b2687
-size 1429
+{
+    "itemlist": [
+        {
+            "minweight": 10,
+            "itementry": "scriptbundle&supply_stash_slot1_dlc1",
+            "maxweight": 10,
+            "available": 1
+        },
+        {
+            "minweight": 10,
+            "itementry": "scriptbundle&supply_stash_slot2_dlc1",
+            "maxweight": 10,
+            "available": 1
+        },
+        {
+            "minweight": 10,
+            "itementry": "scriptbundle&supply_stash_slot3_dlc1",
+            "maxweight": 10,
+            "available": 2
+        },
+        {
+            "minweight": 10,
+            "itementry": "scriptbundle&supply_stash_slot4_dlc1",
+            "maxweight": 10,
+            "available": 2
+        },
+        {
+            "minweight": 10,
+            "itementry": "scriptbundle&supply_stash_slot5_dlc1",
+            "maxweight": 10,
+            "available": 2
+        },
+        {
+            "minweight": 10,
+            "itementry": "scriptbundle&supply_drop_operator_or_specialist",
+            "maxweight": 10,
+            "available": 1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 6,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "supply_drop_stash_parent_dlc1",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0,
+    "supplystash": 1
+}

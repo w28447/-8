@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bbfcfdd2c0399b0f073fc47dcb01f3e349c8298a7157c1c30372278fb35d3111
-size 557
+{
+    "buttonimage": "image#ui_icon_blackmarket_promos_the_professional_button_small",
+    "popupimage": "image#ui_icon_blackmarket_promos_the_professional_large_preview",
+    "nametext": "localized17#hash_3c87adcaa0945c33",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
+    "name": "seraph_heist_outfit_bundle",
+    "desctext": "localized17#hash_2ed1f37a79f5cd25",
+    "previewimage": "image#ui_icon_blackmarket_promos_the_professional_item_detail",
+    "reserveimage": "image#ui_icon_blackmarket_promos_the_professional_button_large"
+}

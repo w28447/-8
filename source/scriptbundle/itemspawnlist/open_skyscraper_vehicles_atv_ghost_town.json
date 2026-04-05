@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:293a449d08ff12d5ce75f5ad52f311469cb9223ae55b72dc0d28d47cfd49a1d0
-size 761
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&vehicle_list_atv_wz",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "maxweight": 1,
+            "available": 0
+        },
+        {
+            "minweight": 1,
+            "maxweight": 1,
+            "available": 0
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 12000,
+    "type": "itemspawnlist",
+    "hash_345eba59": 3,
+    "vehiclespawner": 1,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 1,
+    "name": "open_skyscraper_vehicles_atv_ghost_town",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

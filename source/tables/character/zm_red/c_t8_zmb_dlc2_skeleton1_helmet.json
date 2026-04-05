@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a7bf94849ce59278b6e97afa71310136f54c6310ca9ade508978279ac462b9af
-size 313
+{
+    "name": "#c_t8_zmb_dlc2_skeleton1_helmet",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 9,
+    "bodyImpactType": 9,
+    "destructibleDef": "#c_t8_zmb_dlc2_skeleton_helmet_sword_dst_def",
+    "fxDef": "#fxd8_zm_char_spartoi_body",
+    "body": "#c_t8_zmb_dlc2_skeleton_fb"
+}

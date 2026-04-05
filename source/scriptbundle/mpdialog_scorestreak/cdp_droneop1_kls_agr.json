@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1c7a5469ddfe25039a181328b033bdc90ca697be2ba2d941ae6860dbdeee8565
-size 312
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "mpdialog_scorestreak",
+    "damaged": "#hash_4efa6a11ccd41601",
+    "vmtype": "both",
+    "timecheck": "#hash_71518ea493051afe",
+    "name": "cdp_droneop1_kls_agr",
+    "timeout": "#hash_71477ca492fca7e3",
+    "kill": "#hash_21a22d86ab051937"
+}

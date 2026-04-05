@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:924d8f166ad56a812c28f1987ac9e427a5cdfd6fb7b7b7c151a0250400b66aa6
-size 211
+{
+    "loot03_ui_icon_blackmarket_itemshop_bundle_vampire_hunter:hash_6c274f86": "image#loot03_ui_icon_blackmarket_itemshop_bundle_vampire_hunter",
+    "name": "mastercraft_vampire_hunter_pixel_bundle_shop"
+}

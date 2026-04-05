@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b5e8a8df7d51d85c9854ed1e6f2f651bdf05e36271d2f621fda4c5d47dca8a4a
-size 430
+{
+    "backingsmall": "image#t7_hud_medal_backing_badassery",
+    "widget": "BadasseryMedal",
+    "name": "t7_hud_medal_kill_enemy_injuring_teammate",
+    "backinglarge": "image#t7_hud_medal_backing_badassery_lrg",
+    "iconsmall": "image#t7_hud_medal_kill_enemy_injuring_teammate",
+    "stringref": "localized17#medal/kill_enemy_injuring_teammate",
+    "iconlarge": "image#t7_hud_medal_kill_enemy_injuring_teammate_lrg"
+}

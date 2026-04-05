@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8b259165721cb21f48fd0a9a0e4be85b91792c14f56d75ab2d3602ca6a0c762c
-size 390
+{
+    "detailsicon": "image#loot07_ui_icon_blackmarket_itemdetail_tactical_unicorn",
+    "loot07_ui_icon_blackmarket_itemshop_tactical_unicorn:hash_6c274f86": "image#loot07_ui_icon_blackmarket_itemshop_tactical_unicorn",
+    "nametext": "localized17#hash_60adf9df17b1db3",
+    "name": "loot_smg_accurate_sig_01_sunset_bundle_shop",
+    "desctext": "localized17#hash_827c7e586187b3a"
+}

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0f0e06d73e5e0a25653f147dd8f4abb50e9cba4104b29bc2676565d8743f6c53
-size 336
+{
+    "name": "#gsol_mp_quickdraw2_restriction",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_quickdraw2_ar_fastfire_restriction",
+        "#gamesettings/#attachment_quickdraw2_sniper_quickscope_restriction",
+        "#gamesettings/#attachment_quickdraw2_tr_longburst_restriction"
+    ]
+}

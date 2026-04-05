@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6ef150cfb3ce569e1c3607b347085b929a27030b039a14f53bf7c0fb486889fb
-size 409
+{
+    "description": "localized17#hash_2ed622b3e97d3bc3",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_bounty_hunter_melee_downed_enemy",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_aggression",
+    "stringref": "localized17#hash_71cb511ab36ba14c",
+    "iconlarge": "image#ui_icon_medal_aggression_large"
+}

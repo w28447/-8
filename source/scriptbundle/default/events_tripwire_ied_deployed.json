@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:942d6bc2305da8123a3639c6f89628ee2a20a77e2fc01432d3488b049a787d66
-size 281
+{
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
+    "widget": "BadasseryMedal",
+    "name": "events_tripwire_ied_deployed",
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_6c274f8e42db1be",
+    "iconlarge": "image#hash_6c274f8e42db1be"
+}

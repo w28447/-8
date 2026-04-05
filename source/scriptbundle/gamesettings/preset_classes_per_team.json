@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:343edc8afc8690d8fa196946dbe0aa07899982f6872d99be61e0027f51f12224
-size 541
+{
+    "hinttext": "localized17#menu/preset_classes_per_team_hint",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "preset_classes_per_team",
+    "displayname": "localized17#menu/preset_classes_per_team",
+    "label1": "localized17#menu/global",
+    "label2": "localized17#menu/per_team",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "presetClassesPerTeam",
+    "isenableddisabled": 0
+}

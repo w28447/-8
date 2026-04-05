@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f6de16940601582b4dc3991f080d46360cdd557cc604a53c6a7767974e071ff6
-size 350
+{
+    "name": "#loot_emote_exotic_shared_drone_control",
+    "type": "#gesture",
+    "gesture": "#boast_drone_control",
+    "gesture2": "#boast_drone_control_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/muav",
+        "icon": "image#ui_icon_emotes_s3_drone_control",
+        "isdefault": 0
+    }
+}

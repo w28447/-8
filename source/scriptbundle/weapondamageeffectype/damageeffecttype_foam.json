@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb6bbcfb3fadfb4900167787e052c93ac38d5d1c76dc9884e8be22b5cbbda326
-size 296
+{
+    "durations": [
+        {
+            "duration": 1,
+            "archetype": "human",
+            "effecttype": "foam"
+        }
+    ],
+    "configstringfiletype": "scriptbundle",
+    "type": "weapondamageeffectype",
+    "name": "damageeffecttype_foam",
+    "hash_c672f15f": 1
+}

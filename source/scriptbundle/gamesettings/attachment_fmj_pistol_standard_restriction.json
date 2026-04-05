@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:382925f3482097ba0354ab868a00af96d12c76460e0d03ff5114c32316521799
-size 399
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_fmj_pistol_standard_restriction",
+    "displayname": "localized17#weapon/pistol_standard_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__pistol_standard_t8__attachments__fmj",
+    "isenableddisabled": 0
+}

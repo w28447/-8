@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a0ce51cf6067ccb8df81c855ced378b45836f07ba546c6a4251a2849cb4c593d
-size 381
+{
+    "nameStr": "mp_combat_training",
+    "name": "#mp_combat_training",
+    "ddlPath": "#gamedata/ddl/generated/mp_combat_training.ddl",
+    "files": [
+        {
+            "fileName": "mp_combat_training"
+        }
+    ],
+    "size": 1024,
+    "readOnLogin": true,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
+}

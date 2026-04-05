@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6352d9ccfd14ed446582266a14115df660de2428f2d484e09945b8738eb0b01c
-size 129
+{
+    "hash_2b62cf6a2ae00130:hash_6c274f86": "image#hash_2b62cf6a2ae00130",
+    "name": "outfit_dotd_exo2_bundle_recon_shop"
+}

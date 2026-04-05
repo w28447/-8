@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:684560ade1be6b3fcfbaa6431e570838895006e0da78481e4d716874dbe214d1
-size 628
+{
+    "entries": [
+        {
+            "value": "localized17#hash_2b492273e167ae4d"
+        },
+        {
+            "value": "localized17#hash_2b492173e167ac9a"
+        },
+        {
+            "value": "localized17#hash_2b492073e167aae7"
+        },
+        {
+            "value": "localized17#hash_2b491f73e167a934"
+        },
+        {
+            "value": "localized17#hash_2b491e73e167a781"
+        },
+        {
+            "value": "localized17#hash_2b491d73e167a5ce"
+        },
+        {
+            "value": "localized17#hash_2b491c73e167a41b"
+        }
+    ],
+    "name": "lsl_reticle_holo"
+}

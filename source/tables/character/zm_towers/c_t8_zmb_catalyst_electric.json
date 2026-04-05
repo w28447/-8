@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:01083b7d35ad38a6a98471cd6f0b890067c71a64582c7e880b939468bd03fadc
-size 294
+{
+    "name": "#c_t8_zmb_catalyst_electric",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 2,
+    "bodyImpactType": 2,
+    "fxDef": "#fxd8_zm_char_cata_elec_body",
+    "body": "#c_t8_zmb_catalyst_electric_body",
+    "head": "#c_t8_zmb_catalyst_electric_head"
+}

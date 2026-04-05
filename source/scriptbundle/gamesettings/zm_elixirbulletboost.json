@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ed29e0acb2a71b207b169cca82c6dc6bfe227f20d107ed6e3d67b61c9b770934
-size 680
+{
+    "hinttext": "localized17#hash_7b4ad964d68438a4",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value3": "2",
+    "value1": "0",
+    "value4": "3",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "zm_elixirbulletboost",
+    "displayname": "localized17#zmui/bgb_bullet_boost",
+    "label4": "localized17#hash_1f0968aad9d63087",
+    "label1": "localized17#hash_68b65fb510ccd214",
+    "label3": "localized17#hash_68b65fb510ccd214",
+    "label2": "localized17#hash_1ac823ffd3e68662",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "zmElixirBulletBoost",
+    "isenableddisabled": 0
+}

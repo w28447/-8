@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4b88c6bbe0310623cd39fefc8180ba19ed354ffb14912e16f6ff8d033c949cfe
-size 392
+{
+    "hinttext": "localized17#hash_4b390b2b92354b2c",
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "allow_gestures_camera_rotate",
+    "displayname": "localized17#menu/gesture_camera",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "boastAllowCam",
+    "isenableddisabled": 1
+}

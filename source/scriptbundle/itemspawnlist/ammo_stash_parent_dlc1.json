@@ -1,3 +1,47 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2e68658ad0a18b7f7ea2636def195e043b1610964250008dbb006cdebc19141f
-size 1316
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&ammo_stash_slot1_dlc1",
+            "maxweight": 100,
+            "available": 1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&ammo_stash_slot2_dlc1",
+            "maxweight": 100,
+            "available": 3
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&ammo_stash_slot3_dlc1",
+            "maxweight": 100,
+            "available": 3
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&ammo_stash_slot4_dlc1",
+            "maxweight": 100,
+            "available": 1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&ammo_stash_slot5_dlc1",
+            "maxweight": 100,
+            "available": 1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 4000,
+    "type": "itemspawnlist",
+    "hash_345eba59": 5,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "ammo_stash_parent_dlc1",
+    "displayname": "localized18#wz/equipment_stash",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0,
+    "supplystash": 1
+}

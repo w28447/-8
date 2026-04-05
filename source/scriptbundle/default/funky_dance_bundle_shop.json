@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9eeae1227491c92cda8753b0237593a82177401dad0432805183fdae6709b909
-size 226
+{
+    "hash_727a70862390dcd4:hash_6c274f86": "image#hash_727a70862390dcd4",
+    "nametext": "localized17#hash_5b1e339e53535e65",
+    "name": "funky_dance_bundle_shop",
+    "desctext": "localized17#hash_7b677afbe905366f"
+}

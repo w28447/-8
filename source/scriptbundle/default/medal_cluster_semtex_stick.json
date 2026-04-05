@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:32580bd4ebe0e2071a2ef98acfe5e68a0bd59157acdd32a842272c07768252c4
-size 387
+{
+    "description": "localized17#hash_2c42b494ae97a0dd",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_cluster_semtex_stick",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_stuck",
+    "stringref": "localized17#hash_6d215bf0234debcb",
+    "iconlarge": "image#ui_icon_medal_stuck_large"
+}

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8061124c9eea68a84fbb7aa5b7baf503351b3da55c646ab96654d3cfd26551c0
-size 235
+{
+    "defaultgametype": "zclassic",
+    "abbreviation": "zm",
+    "name": "sessionmode_zm",
+    "selectdescription": "localized17#menu/zombies_desc",
+    "displayname": "localized17#menu/zombies",
+    "defaultmap": "zm_zodt8"
+}

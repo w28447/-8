@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:07a1a980f3d783d1e5c0b8bc529c6c65ef404d50c496a16e00d8cd19d88012a7
-size 300
+{
+    "durations": [
+        {
+            "duration": 1,
+            "archetype": "human",
+            "effecttype": "emp"
+        }
+    ],
+    "configstringfiletype": "scriptbundle",
+    "type": "weapondamageeffectype",
+    "name": "damageeffecttype_empdamage",
+    "hash_c672f15f": 1
+}

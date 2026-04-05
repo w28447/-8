@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:643d6580c1171af5e65d47d540ccfd6ba726f9dfeba4ff985a11c8e633d14a59
-size 284
+{
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
+    "widget": "BadasseryMedal",
+    "name": "events_battle_command_wipeout",
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_7b5d6c1f7e52bb59",
+    "iconlarge": "image#hash_7b5d6c1f7e52bb59"
+}

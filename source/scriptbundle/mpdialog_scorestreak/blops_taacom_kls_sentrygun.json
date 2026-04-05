@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b3dfddb7530595abb3e07b51b243c11d054b89c768e3c95a156b6a73d2a5c499
-size 467
+{
+    "destroyed": "#hash_53047519bdad0cb2",
+    "ready": "#hash_3ae009d3f4a71b52",
+    "beinghacked": "#hash_2fa0dd9d217a076f",
+    "configstringfiletype": "scriptbundle",
+    "type": "mpdialog_scorestreak",
+    "vmtype": "both",
+    "name": "blops_taacom_kls_sentrygun",
+    "firewallbeinghacked": "#hash_3b243365ad1bb2cf",
+    "timeout": "#hash_689a6aab2ec2f5b6",
+    "firewallhacked": "#hash_16ec59f7b723122f",
+    "hacked": "#hash_753cf88d4d47940f"
+}

@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7001dd4c9249740c2b30fe58c1dc0f760344ff8b0d9c81c2f5e67ad9bbbf7ebc
-size 423
+{
+    "description": "localized17#medal/comeback_from_deathstreak_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_comeback_from_deathstreak",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_comeback",
+    "stringref": "localized17#medal/comeback_from_deathstreak",
+    "iconlarge": "image#ui_icon_medal_comeback_large"
+}

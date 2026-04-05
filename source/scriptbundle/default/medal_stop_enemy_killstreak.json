@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:15842ade54bed1261611a7ddb8f21872a7c11bef4db0c768db7222ccfa691744
-size 411
+{
+    "description": "localized17#medal/stop_enemy_killstreak_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_stop_enemy_killstreak",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_buzzkill",
+    "stringref": "localized17#medal/stop_enemy_killstreak",
+    "iconlarge": "image#ui_icon_medal_buzzkill_large"
+}

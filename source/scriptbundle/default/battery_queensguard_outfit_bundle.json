@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:adcbeafc6424fff1ff239819151ff9bd74173b57d353edb74a16a678d2fa1c33
-size 423
+{
+    "buttonimage": "image#hash_2a78043adfae6b2b",
+    "popupimage": "image#hash_205647bd40020046",
+    "nametext": "localized17#hash_2f9b7ff23b521e70",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
+    "name": "battery_queensguard_outfit_bundle",
+    "desctext": "localized17#hash_57e945da865e7ad8",
+    "previewimage": "image#hash_447bef8c2985e67d",
+    "reserveimage": "image#hash_602b2b02bb7fcb3"
+}

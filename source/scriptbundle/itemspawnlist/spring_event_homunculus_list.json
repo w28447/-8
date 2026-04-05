@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:976fe1e4d832439e6c5e3f7dba8136dd36e9055176073646ea4ceb5b1973dc7f
-size 842
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&guns_gold_parent_dlc1",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&health_item_large",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&armor_shard_item",
+            "maxweight": 1,
+            "available": 3
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 3,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "spring_event_homunculus_list",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

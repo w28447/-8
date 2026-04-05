@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:93741319b5427c49f0d4f9248d84e70ec8eb20afaa470bdceeefabdae7de7af0
-size 335
+{
+    "name": "#hash_2fc88a1a5434285b",
+    "type": "#gesture",
+    "gesture": "#hash_5c1ad2f494847927",
+    "gesture2": "#hash_22f1ba535333b3e2",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/west_coast_ivory",
+        "icon": "image#hash_5b4a3e7901210995",
+        "isdefault": 0
+    }
+}

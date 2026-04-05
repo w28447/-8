@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:27b0fe2939906e85987ff36af5163654a71564d923e29cbf74598e71866caa16
-size 412
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_extclip2_shotgun_semiauto_restriction",
+    "displayname": "localized17#weapon/shotgun_semiauto_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__shotgun_semiauto_t8__attachments__extclip2",
+    "isenableddisabled": 0
+}

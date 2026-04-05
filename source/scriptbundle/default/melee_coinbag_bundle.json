@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4bee3ba1a1eb63dab2e1d9ee73799bc88b5b7764364a0fcc642d80d241bf640e
-size 538
+{
+    "buttonimage": "image#ui_icon_blackmarket_promos_melee_coinbag_button_small",
+    "popupimage": "image#ui_icon_blackmarket_promos_melee_coinbag_large_preview",
+    "nametext": "localized17#hash_4525e140496dab4",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
+    "name": "melee_coinbag_bundle",
+    "desctext": "localized17#hash_7fb289bcdbfc28bc",
+    "previewimage": "image#ui_icon_blackmarket_promos_melee_coinbag_item_detail",
+    "reserveimage": "image#ui_icon_blackmarket_promos_melee_coinbag_button_large"
+}

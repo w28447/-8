@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:240d2e34b8456e9de7aef1964e345e198b447c3d82e04a62d12b1d3fce076b94
-size 283
+{
+    "detailsicon": "image#hash_7026cc7c28e37921",
+    "hash_51ff2d05aab13453:hash_6c274f86": "image#hash_51ff2d05aab13453",
+    "nametext": "localized17#weapon/melee_stopsign_t8",
+    "name": "melee_stopsign_bundle_shop",
+    "desctext": "localized17#hash_44aec6c6824b6e90"
+}

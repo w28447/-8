@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2d6ea39af536d2c29a5a4b573c0ac92210bed17a281f02af5ddfc1feb2fbbed1
-size 371
+{
+    "hash_fb8bfacd": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "resistance",
+    "hash_a079a0f6": "none",
+    "hash_215422c5": "none",
+    "hash_3311c640": "none",
+    "hash_45d2ebc2": "none",
+    "hash_57618ec7": "none",
+    "hash_6aa3b54b": "none",
+    "hash_7cedd9df": "none",
+    "hash_8e287c54": "none",
+    "name": "mp_resist_base"
+}

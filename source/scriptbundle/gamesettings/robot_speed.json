@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f2d7c44447c2d93808279115166c457f0b8bb2c400216d6e57ecf1348f438236
-size 551
+{
+    "hinttext": "localized17#menu/robot_speed_hint",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value3": "2",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "robot_speed",
+    "displayname": "localized17#menu/robot_speed",
+    "label1": "localized17#menu/slow",
+    "label3": "localized17#menu/fast",
+    "label2": "localized17#menu/normal",
+    "hash_54e336e4": 0,
+    "optionscount": 3,
+    "hash_765cfd09": 0,
+    "setting": "robotSpeed",
+    "isenableddisabled": 0
+}

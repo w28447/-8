@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3cdd408ca5cbc4bdcdfb5cb2de63a53114c578b950c67b2a92fd5bcfa4b5b70f
-size 344
+{
+    "detailsicon": "image#loot07_ui_icon_blackmarket_itemdetail_sergei",
+    "loot04_ui_icon_blackmarket_itemshop_sergei": "image#loot04_ui_icon_blackmarket_itemshop_sergei",
+    "nametext": "localized17#menu/contract_sergei",
+    "name": "loot_character_sergei_sunset_bundle_shop",
+    "desctext": "localized17#hash_4f9480ed63df01a8"
+}

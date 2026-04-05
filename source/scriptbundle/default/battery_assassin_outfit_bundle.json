@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:abcb13d86759983e1cf399c72e557d146995f550d38f07ba86a87ce035bfd9ba
-size 528
+{
+    "buttonimage": "image#ui_icon_blackmarket_promos_gangster_button_small",
+    "popupimage": "image#ui_icon_blackmarket_promos_gangster_large_preview",
+    "nametext": "localized17#hash_e60183a6d481a4b",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
+    "name": "battery_assassin_outfit_bundle",
+    "desctext": "localized17#hash_77cf65d9bb189c5d",
+    "previewimage": "image#ui_icon_blackmarket_promos_gangster_item_detail",
+    "reserveimage": "image#ui_icon_blackmarket_promos_gangster_button_large"
+}

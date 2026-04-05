@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e350679395f44a00f3eee9a8d365573f57bde8c4039f6f2ae036481335c0a659
-size 401
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_steadyaim2_tr_midburst_restriction",
+    "displayname": "localized17#weapon/tr_midburst_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__tr_midburst_t8__attachments__steadyaim2",
+    "isenableddisabled": 0
+}

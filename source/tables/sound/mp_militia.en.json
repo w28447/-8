@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5fb9b115c101580035a43d40dcb13ced3f47f9d77ea91337fe362a2de2ad94e5
-size 623
+{
+    "name": "mp_militia.en",
+    "zone": "mp_militia",
+    "gameLanguage": "english",
+    "soundLanguage": "en",
+    "nameHash": "#mp_militia.en",
+    "patchZone": true,
+    "alias": [],
+    "duck": [],
+    "ambients": [],
+    "scriptIdLookups": [],
+    "streamKeysSABL": {
+        "streamKey1": "#mp_militia_en_stream",
+        "dataSize1": 2048,
+        "fileKey": "#mp_militia_en_loaded",
+        "fileLen": 2048
+    },
+    "streamKeysSABS": {
+        "streamKey1": "#hash_148865e9f5c11367",
+        "dataSize1": 2048,
+        "fileKey": "#hash_68efeee16feaff2e",
+        "fileLen": 2048
+    }
+}

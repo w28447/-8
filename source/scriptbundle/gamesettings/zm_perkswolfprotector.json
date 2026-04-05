@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7a48a411791c196487a1e3d8b26dc5399158b2ee23b81a1e0eb19a156815ecac
-size 682
+{
+    "hinttext": "localized17#hash_7bc66459969f4d51",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value3": "2",
+    "value1": "0",
+    "value4": "3",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "zm_perkswolfprotector",
+    "displayname": "localized17#hash_30055ed20d2baf3d",
+    "label4": "localized17#hash_1f0968aad9d63087",
+    "label1": "localized17#hash_68b65fb510ccd214",
+    "label3": "localized17#hash_68b65fb510ccd214",
+    "label2": "localized17#hash_1ac823ffd3e68662",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "zmPerksWolfProtector",
+    "isenableddisabled": 0
+}

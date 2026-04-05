@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ff49208e0ee951dc9040853f992e3d76adc6aec03ffd9e11a2aa6476dc1ba374
-size 385
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "scope_reflex_ar_stealth_restriction",
+    "displayname": "localized17#weapon/ar_stealth_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__ar_stealth_t8__attachments__reflex",
+    "isenableddisabled": 0
+}

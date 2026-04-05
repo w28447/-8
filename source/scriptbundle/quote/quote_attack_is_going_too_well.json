@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:77150ee6ca8d71fdfa43f32e1a82868924397e0c25ebc64da1708d87695df7d1
-size 220
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_attack_is_going_too_well",
+    "quote": "localized17#hash_65ef192379be83d7",
+    "author": "localized17#hash_6dd43640e0dd2745"
+}

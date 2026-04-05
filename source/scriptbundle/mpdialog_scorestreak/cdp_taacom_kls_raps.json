@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dfc78ff50aa92094b6990e0b43045c0d4f24c638eb6ba25e162502b6c332c28b
-size 464
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "mpdialog_scorestreak",
+    "vmtype": "both",
+    "name": "cdp_taacom_kls_raps",
+    "hash_6beeccf963d1ff13:hash_6f9447b2": "#hash_6beeccf963d1ff13",
+    "hash_6beecbf963d1fd60:hash_61d32c30": "#hash_6beecbf963d1fd60",
+    "hash_6beecef963d20279:hash_506f8969": "#hash_6beecef963d20279",
+    "hash_6beecdf963d200c6:hash_b6b855f9": "#hash_6beecdf963d200c6",
+    "hacked": "#hash_3dc631caeafb8f4"
+}

@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4dd4bfe14255568da724f4cd47e419ceff5249e3163888c35f7201aba2c31990
-size 632
+{
+    "globstate": 8,
+    "numplasma": 0,
+    "hash_92340672": 0,
+    "skuid": 0,
+    "hash_b889f476": 0,
+    "bannertitle": "localized17#zmui/special_offer_available",
+    "droptype": 14,
+    "plasmaprice": 100,
+    "descriptiontext": "localized17#zmui/tungsten_tripler_desc",
+    "hash_51a0da4c": 0,
+    "name": "zm_lab_tungsten_tripler",
+    "popupname": "localized17#zmui/tungsten_tripler_title",
+    "hash_619ae0f2": 1,
+    "hash_39661d6e": 0,
+    "descriptiontitle": "localized17#zmui/tungsten_tripler_title",
+    "ui_icon_laboratory_tripler": "image#ui_icon_laboratory_tripler",
+    "hash_e8a9006": "blue"
+}

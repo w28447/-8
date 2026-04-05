@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5a9d138a7fb21930346564597024eb233c11f4fc967d991c047c18a5e196470a
-size 617
+{
+    "hash_fb8bfacd": 2,
+    "hash_2668aeeec5bed896:hash_11f91d6a": "image#hash_2668aeeec5bed896",
+    "configstringfiletype": "scriptbundle",
+    "hash_426758cb22a6aa7f:hash_5d66bb63": "localized17#hash_426758cb22a6aa7f",
+    "type": "resistance",
+    "hash_a079a0f6": "none",
+    "hash_215422c5": "stagger",
+    "hash_3311c640": "deaf",
+    "hash_45d2ebc2": "none",
+    "hash_57618ec7": "none",
+    "hash_6aa3b54b": "none",
+    "hash_7cedd9df": "none",
+    "hash_8e287c54": "none",
+    "hash_7ca07ba7e2400b51:hash_3cf30434": "localized17#hash_7ca07ba7e2400b51",
+    "name": "mp_resist_shellshock"
+}

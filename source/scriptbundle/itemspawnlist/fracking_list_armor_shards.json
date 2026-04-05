@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:162a387dfb632f1b678aecd590d1fae0d46672e846dee43eb723154bd5778406
-size 740
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&armor_shard_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 20,
+            "itementry": "scriptbundle&armor_shard_item",
+            "childitementry_1": "scriptbundle&armor_shard_item",
+            "maxweight": 20,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 2,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "fracking_list_armor_shards",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

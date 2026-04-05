@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a7752d7dfe75d1231a1f6f4fcc1d5878a4f01e5e31fa7e26f1a0c4c7624658c1
-size 639
+{
+    "name": "#misc_camera",
+    "type": "plane",
+    "scoreType": "none",
+    "archeType": "#none",
+    "unk38": "#none",
+    "spawnerType": "#none",
+    "spawnInfluencers1": "#none",
+    "spawnInfluencers2": "#none",
+    "skidSpeedMin": 100,
+    "skidSpeedMax": 600,
+    "peelSpeedMax": 600,
+    "model": "#tag_origin_animate",
+    "steerAxisName": "AXIS_LSTICK",
+    "gasButtonName": "BUTTON_LTRIG",
+    "reverseBrakeButtonName": "BUTTON_B",
+    "attackButtonName": "BUTTON_RTRIG",
+    "attackSecondaryButtonName": "BUTTON_RSHLDR",
+    "bundle": {
+        "healthpoolsize": 650,
+        "hash_7812fce8": 2
+    }
+}

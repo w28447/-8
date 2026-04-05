@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:68bc49430cd467f3524366e671b08309cf742f171e67feb96c4bfc0cdff4ebd0
-size 1324
+{
+    "objects": [
+        {
+            "colorid": "fx#ui/fx_ctf_flag_base_team_red"
+        },
+        {
+            "colorid": "fx#ui/fx_ctf_flag_base_team_red"
+        },
+        {
+            "colorid": "fx#ui/fx_ctf_flag_base_team_red"
+        },
+        {
+            "colorid": "fx#ui/fx_ctf_flag_base_team_red"
+        },
+        {
+            "colorid": "fx#ui/fx_ctf_flag_base_team_yellow"
+        },
+        {
+            "colorid": "fx#ui/fx_ctf_flag_base_team_yellow"
+        },
+        {
+            "colorid": "fx#ui/fx_ctf_flag_base_team_green"
+        },
+        {
+            "colorid": "fx#ui/fx_ctf_flag_base_team_green"
+        },
+        {
+            "colorid": "fx#ui/fx_ctf_flag_base_team_green"
+        },
+        {
+            "colorid": "fx#ui/fx_ctf_flag_base_team_green"
+        },
+        {
+            "colorid": "fx#ui/fx_ctf_flag_base_team_green"
+        },
+        {
+            "colorid": "fx#ui/fx_ctf_flag_base_team_green"
+        },
+        {
+            "colorid": "fx#ui/fx_ctf_flag_base_team_yellow"
+        },
+        {
+            "colorid": "fx#ui/fx_ctf_flag_base_team_yellow"
+        }
+    ],
+    "configstringfiletype": "scriptbundle",
+    "type": "teamcolorfx",
+    "vmtype": "both",
+    "name": "teamcolorfx_ctf_flag_base"
+}

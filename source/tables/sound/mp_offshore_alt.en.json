@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a59eda7e2f797e569c84b4561d4f3e79d6ef0d7fe9265eb5c8400189ab34acb0
-size 648
+{
+    "name": "mp_offshore_alt.en",
+    "zone": "mp_offshore_alt",
+    "gameLanguage": "english",
+    "soundLanguage": "en",
+    "nameHash": "#mp_offshore_alt.en",
+    "patchZone": true,
+    "alias": [],
+    "duck": [],
+    "ambients": [],
+    "scriptIdLookups": [],
+    "streamKeysSABL": {
+        "streamKey1": "#mp_offshore_alt_en_stream",
+        "dataSize1": 2048,
+        "fileKey": "#mp_offshore_alt_en_loaded",
+        "fileLen": 2048
+    },
+    "streamKeysSABS": {
+        "streamKey1": "#hash_30e39215dc723fba",
+        "dataSize1": 2048,
+        "fileKey": "#hash_4c225d9047abacab",
+        "fileLen": 2048
+    }
+}

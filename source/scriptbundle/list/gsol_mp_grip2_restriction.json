@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bc6e55bcc1d1ae2e3ccc00143e0c73f2dad140af1093fa4d7a99ae3a0df9e4ae
-size 315
+{
+    "name": "#gsol_mp_grip2_restriction",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_grip2_ar_accurate_restriction",
+        "#gamesettings/#attachment_grip2_smg_accurate_restriction",
+        "#gamesettings/#attachment_grip2_sniper_powersemi_restriction"
+    ]
+}

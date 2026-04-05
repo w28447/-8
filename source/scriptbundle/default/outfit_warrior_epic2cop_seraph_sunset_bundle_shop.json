@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6a29d638a79f4aad8daef11b412d4fc11524cc309c0cf91a74185f1b1730c88e
-size 252
+{
+    "hash_20768a52ba1603b4:hash_6c274f86": "image#hash_20768a52ba1603b4",
+    "nametext": "localized17#hash_3963c3e923f20726",
+    "name": "outfit_warrior_epic2cop_seraph_sunset_bundle_shop",
+    "desctext": "localized17#hash_2266e082f03a6d9e"
+}

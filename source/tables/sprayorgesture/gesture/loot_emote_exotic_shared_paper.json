@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:19ffa5a15a1d1549e5b84ff94b05989457a3e0871fd357bd349a64784822f61c
-size 335
+{
+    "name": "#loot_emote_exotic_shared_paper",
+    "type": "#gesture",
+    "gesture": "#hash_4589fc15480441c4",
+    "gesture2": "#hash_7488e1b2d6fb8eb7",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/paper",
+        "icon": "image#ui_icon_emotes_s2_paper",
+        "isdefault": 0
+    }
+}

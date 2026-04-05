@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1ae0a9f9aa78a6b1e6cd5825183d951e816ffba5ae792a77d3ee39fd12a2ce92
-size 235
+{
+    "detailsicon": "image#hash_544b0822623cfbb3",
+    "hash_43b09e1e70941c7c:hash_6c274f86": "image#hash_43b09e1e70941c7c",
+    "name": "camo_dlc4_picnic_royale_bundle_shop",
+    "desctext": "localized17#hash_77c1a06713e4383b"
+}

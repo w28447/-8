@@ -1,3 +1,62 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a9ac2a19b22011bf92ad9c6360ecb97d4421c78ac985c51a418d0d2fe976fadc
-size 1708
+{
+    "itemlist": [
+        {
+            "minweight": 10,
+            "itementry": "scriptbundle&ammo_type_9mm_item",
+            "maxweight": 10,
+            "available": 1
+        },
+        {
+            "minweight": 10,
+            "itementry": "scriptbundle&ammo_type_45_item",
+            "maxweight": 10,
+            "available": 1
+        },
+        {
+            "minweight": 10,
+            "itementry": "scriptbundle&ammo_type_556_item",
+            "maxweight": 10,
+            "available": 1
+        },
+        {
+            "minweight": 10,
+            "itementry": "scriptbundle&ammo_type_762_item",
+            "maxweight": 10,
+            "available": 1
+        },
+        {
+            "minweight": 10,
+            "itementry": "scriptbundle&ammo_type_338_item",
+            "maxweight": 10,
+            "available": 1
+        },
+        {
+            "minweight": 10,
+            "itementry": "scriptbundle&ammo_type_12ga_item",
+            "maxweight": 10,
+            "available": 1
+        },
+        {
+            "minweight": 10,
+            "itementry": "scriptbundle&ammo_type_50cal_item",
+            "maxweight": 10,
+            "available": 1
+        },
+        {
+            "minweight": 4,
+            "itementry": "scriptbundle&ammo_type_rocket_item",
+            "maxweight": 4,
+            "available": 1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 8,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "zombie_itemlist_ammo_list",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

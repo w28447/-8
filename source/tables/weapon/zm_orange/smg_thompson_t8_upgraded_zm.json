@@ -1,3 +1,110 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4b1ea11879d13026972b6c0cbf4867037337e2fb485737e6032ad7d8ffcc6015
-size 3645
+{
+    "name": "#smg_thompson_t8_upgraded_zm",
+    "baseWeapon": "#smg_thompson_t8_upgraded",
+    "displayname": "#zmweapon/smg_thompson_upgraded",
+    "xhash_60": "#hash_6a85c7077c69a36f",
+    "weapon70": "#smg_thompson_t8",
+    "streamkey": "#hash_266c5ce010786283",
+    "scrstr_8c8": [
+        "tag_clan_tag",
+        "tag_camo_darkmatter",
+        "tag_camo_diamond"
+    ],
+    "worldModelTagRight": "tag_weapon_right",
+    "worldModelTagLeft": "tag_weapon_left",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_weapon_right",
+    "scrstr_11a4": "tag_weapon_left",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "ZOMBIES",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.0303 0.95",
+            "0.2242 0.5",
+            "0.4 0.1",
+            "0.4992 0.05",
+            "0.7426 0.001",
+            "1 0"
+        ],
+        [
+            "0 1",
+            "0.0605 1",
+            "0.2242 0.7161",
+            "0.375 0.3412",
+            "0.4992 0.0032",
+            "0.7426 0",
+            "1 0"
+        ]
+    ],
+    "firesounddistant": "#hash_1fa3c110880b1635",
+    "sound140": "#hash_6b42e374726cf3c6",
+    "sound150": "#hash_66124274b86c88eb",
+    "sound180": "#hash_4dbc4a54bac5f3db",
+    "sound190": "#hash_6abac088fe5e6d1a",
+    "sound1d0": "#hash_45e877bfba7e9d14",
+    "sound1e0": "#hash_380aa9e5b46e7fb8",
+    "sound200": "#hash_4e801abf7763e755",
+    "sound210": "#hash_17d1d4e632c60859",
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "sound600": "#hash_209cb2974ae55ec0",
+    "sound610": "#hash_209cb2974ae55ec0",
+    "sound800": "#hash_5ee962527afebfb1",
+    "sound810": "#hash_5ee962527afebfb1",
+    "tunables1": "#smg_thompson_t8_upgraded_tunables_zm",
+    "weaponCamo": "#hash_389f387c5867a829",
+    "cacWeaponXCam": "#ui_cam_cac_smg_thompson",
+    "cacAttachmentsXCam": "#ui_cam_cac_smg_thompson",
+    "attachments": [
+        "#hash_f459a0af8e8f912b"
+    ],
+    "attachmentUniques": [
+        "#hash_3a3514276f465f82"
+    ],
+    "sharedWeaponSounds": "#smg",
+    "ballisticDesc": "#hash_e269fccbe6d86a70",
+    "tracers": [
+        "#hash_a6d5c1a903fba6f4",
+        "#hash_e0e8c9de7086f843"
+    ],
+    "viewmodel": [
+        "#wpn_t8_zm_smg_thompson_view"
+    ],
+    "worldModel": [
+        "#wpn_t8_zm_smg_thompson_world"
+    ],
+    "clipmodel": [
+        "#wpn_t8_zm_smg_thompson_mag_world"
+    ],
+    "reticleSide": "#reticle_side_small",
+    "inventoryIconZm": "#ui_icon_weapons_zm_thompson",
+    "fireRumble": "#smg_fire",
+    "fx_bc8": "#hash_e4926fc53b8a66e6",
+    "fx_bd0": "#hash_ba3fc955623adaa0",
+    "fx_c80": "#hash_8a5567d0168ae02f",
+    "fx_c88": "#hash_8a5567d0168ae02f",
+    "fx_c90": "#hash_8a5567d0168ae02f",
+    "fx_c98": "#hash_8a5567d0168ae02f",
+    "normalImpactFX": "#hash_9cafc46b8c735870",
+    "exitImpactFX": "#hash_d6ef4fc6c00cc18e",
+    "normalImpactSounds": "#bullet_impact",
+    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+}

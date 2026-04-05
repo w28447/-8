@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:12bd4107ef6816f1fe663b045e176d31da0a0ad1a62df715fd4cc11593785145
-size 555
+{
+    "buttonimage": "image#ui_icon_blackmarket_promos_dragon_slayer_button_small",
+    "popupimage": "image#ui_icon_blackmarket_promos_dragon_slayer_large_preview",
+    "nametext": "localized17#hash_14c20b3a0525b2f1",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
+    "name": "firebreak_dragonslayer_outfit_bundle",
+    "desctext": "localized17#hash_762f942cc3415e4b",
+    "previewimage": "image#ui_icon_blackmarket_promos_dragon_slayer_item_detail",
+    "reserveimage": "image#ui_icon_blackmarket_promos_dragon_slayer_button_large"
+}

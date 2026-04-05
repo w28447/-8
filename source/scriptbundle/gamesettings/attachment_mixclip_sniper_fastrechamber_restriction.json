@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2aa95ae792a6e678f3d381668aaae6d00012959ca89c150988fc494194f0f738
-size 422
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_mixclip_sniper_fastrechamber_restriction",
+    "displayname": "localized17#weapon/sniper_fastrechamber_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__sniper_fastrechamber_t8__attachments__mixclip",
+    "isenableddisabled": 0
+}

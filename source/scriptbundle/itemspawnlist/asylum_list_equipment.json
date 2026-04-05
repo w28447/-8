@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:33d69fbb1fdb9cfecb099862d39714241cc611c818528ec12de373de6d2d5671
-size 1019
+{
+    "itemlist": [
+        {
+            "minweight": 7,
+            "itementry": "scriptbundle&equipment_list_good",
+            "maxweight": 7,
+            "available": -1
+        },
+        {
+            "minweight": 30,
+            "itementry": "scriptbundle&equipment_list_med",
+            "maxweight": 30,
+            "available": -1
+        },
+        {
+            "minweight": 30,
+            "itementry": "scriptbundle&equipment_list_low",
+            "maxweight": 30,
+            "available": -1
+        },
+        {
+            "minweight": 40,
+            "itementry": "scriptbundle&equipment_list_zombie",
+            "maxweight": 40,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 4,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "asylum_list_equipment",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

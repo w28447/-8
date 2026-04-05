@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4945bb64c1ab1ae086c9548f2cb139a755a619787521e36128933902ee651d46
-size 406
+{
+    "nameStr": "mp_loadouts_arena_custom",
+    "name": "#mp_loadouts_arena_custom",
+    "ddlPath": "#gamedata/ddl/generated/mp_loadouts_arena_custom.ddl",
+    "files": [
+        {
+            "fileName": "mp_loadouts_arena_custom"
+        }
+    ],
+    "size": 20480,
+    "readOnLogin": true,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
+}

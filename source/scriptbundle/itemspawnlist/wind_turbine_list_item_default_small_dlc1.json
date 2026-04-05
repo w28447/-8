@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:164d00b4dd70f6cb93bf7638ec8931b3367bfe4da9d81bb005c589c38319f39b
-size 673
+{
+    "itemlist": [
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&wind_turbine_list_items_small_dlc1",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 50,
+            "maxweight": 50,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 196,
+    "type": "itemspawnlist",
+    "hash_345eba59": 2,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "wind_turbine_list_item_default_small_dlc1",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

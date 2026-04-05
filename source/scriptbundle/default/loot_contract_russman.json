@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dd2d25a89abb6c015b001cbe9c0509227eaaf3e8850ae71028e7cdd5c519496f
-size 575
+{
+    "contracticon": "image#loot07_ui_icon_blackmarket_contracts_russman",
+    "contracttitle": "localized17#menu/contract_russman",
+    "name": "loot_contract_russman",
+    "loot07_ui_icon_blackmarket_itemdetail_russman:hash_4b258f2c": "image#loot07_ui_icon_blackmarket_itemdetail_russman",
+    "contractdescription": "localized17#menu/blackout_character",
+    "white": "#white",
+    "loot07_ui_icon_blackmarket_itemshop_russman": "image#loot07_ui_icon_blackmarket_itemshop_russman",
+    "hash_40e92fc140b5e991:hash_e08fc162": "localized17#hash_40e92fc140b5e991"
+}

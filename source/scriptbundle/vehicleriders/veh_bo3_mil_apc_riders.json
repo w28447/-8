@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0f4841730a5d22e9b5b50c06c894711fc731c1c45ad42e5815c3bae683464fb5
-size 1186
+{
+    "objects": [
+        {
+            "exitgroundanim": "anim#bo3_ai_crew_cougar_driver_exit",
+            "aligntag": "tag_driver",
+            "rideanim": "anim#bo3_ai_crew_cougar_driver_idle",
+            "position": "driver"
+        },
+        {
+            "exitgroundanim": "anim#bo3_ai_crew_cougar_passenger_exit",
+            "aligntag": "tag_passenger",
+            "rideanim": "anim#bo3_ai_crew_cougar_passenger_idle",
+            "position": "passenger1"
+        },
+        {
+            "exitgroundanim": "anim#bo3_ai_crew_cougar_guy0_exit",
+            "aligntag": "tag_passenger",
+            "rideanim": "anim#bo3_ai_crew_cougar_guy0_idle",
+            "position": "crew1"
+        },
+        {
+            "exitgroundanim": "anim#bo3_ai_crew_cougar_guy1_exit",
+            "aligntag": "tag_passenger",
+            "rideanim": "anim#bo3_ai_crew_cougar_guy1_idle",
+            "position": "crew2"
+        }
+    ],
+    "configstringfiletype": "scriptbundle",
+    "model": "model#veh_t7_mil_apc",
+    "type": "vehicleriders",
+    "vmtype": "both",
+    "dropspeed": 250,
+    "name": "veh_bo3_mil_apc_riders",
+    "highexitlandheight": 32
+}

@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e2d155c7a9f1027dc6ddbecf7369174bfa94a10543998d2226d1c6eda846c251
-size 379
+{
+    "effectcount": 2,
+    "configstringfiletype": "scriptbundle",
+    "type": "fxcharacterdef",
+    "hash_6675a54c73addf25:hash_70f592cb": "fx#hash_6675a54c73addf25",
+    "vmtype": "client",
+    "name": "fxd8_zm_char_spartoi_body",
+    "hash_a0d91763": "j_spine4",
+    "hash_70c604c24563ff7a:hash_c7a3c7dd": "fx#hash_70c604c24563ff7a",
+    "hash_edb57500": "j_head"
+}

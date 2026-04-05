@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b29e9bfa29842375006f3518aa46bb009f5822be122d1fa6d25d49f4f8f157f3
-size 617
+{
+    "hash_3a476c8d0f5e5d6c:hash_1087836d": "#hash_3a476c8d0f5e5d6c",
+    "configstringfiletype": "scriptbundle",
+    "type": "mpdialog_scorestreak",
+    "killmultiple": "#hash_7dfcdfd42c0bd834",
+    "vmtype": "both",
+    "remoteoperatorremoved": "#hash_6131b08ccc3259a5",
+    "name": "blops_pilot2_kls_mothership",
+    "arrive": "#hash_61ba3ea9607bfa34",
+    "timeout": "#hash_19cce7f4f7678bd2",
+    "kill": "#hash_1462b29bff7b634f",
+    "weapondestroyed": "#hash_5ce90f176a42185d",
+    "kill1": "#hash_1f18fd131eaa0f1a",
+    "kill3": "#hash_1f18fb131eaa0bb4",
+    "kill2": "#hash_1f18fc131eaa0d67"
+}

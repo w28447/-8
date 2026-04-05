@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7eeb0c15958c950b9c72189805298a1571b72a1c7d959e9034b6931a92887d05
-size 248
+{
+    "nametext": "localized17#hash_539e0b798546e3ff",
+    "name": "outfit_snake_legendary1_outrider_sunset_bundle_shop",
+    "desctext": "localized17#hash_2b7f2d614d161f1d",
+    "heroes/outrider:hash_975cc0d1": "localized17#heroes/outrider"
+}

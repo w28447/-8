@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fc661a3ca510aaeed6c61da9fd232c8d193b7974cabf5486880cb66b9a4909cc
-size 465
+{
+    "description": "localized17#medal/elimination_and_last_player_alive_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_elimination_and_last_player_alive",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_last_man_standing",
+    "stringref": "localized17#medal/elimination_and_last_player_alive",
+    "iconlarge": "image#ui_icon_medal_last_man_standing_large"
+}

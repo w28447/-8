@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6141dad20f766a9032dcbee6c034f29d71a15281cc4f5e2c0776543bfeb014c2
-size 305
+{
+    "mod": "MOD_BLED_OUT",
+    "configstringfiletype": "scriptbundle",
+    "type": "meansofdeath",
+    "name": "mod_bled_out",
+    "displayname": "localized17#hash_31f078edfb799219",
+    "icon": "image#ui_icon_meansofdeath_bleed_out",
+    "iconlarge": "image#ui_icon_meansofdeath_bleed_out_xl"
+}

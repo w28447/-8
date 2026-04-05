@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2fd82e76431e88567a1753ec4ae4dd2d2c8c37b307bad15343e03f1059171b1f
-size 427
+{
+    "backingsmall": "image#t7_hud_medal_backing_badassery",
+    "widget": "BadasseryMedal",
+    "name": "medal_end_enemy_using_battle_shield",
+    "backinglarge": "image#t7_hud_medal_backing_badassery_lrg",
+    "iconsmall": "image#t7_hud_medal_kill_enemy_who_has_powerarmor",
+    "stringref": "localized17#medal/end_enemy_using_battle_shield",
+    "iconlarge": "image#t7_hud_medal_kill_enemy_who_has_powerarmor_lrg"
+}

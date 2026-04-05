@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:76fdfe0214874f6e709aefe69112b311863892e6f7eb12382e6f4dca03257aee
-size 436
+{
+    "name": "#hash_4389adf5bae5d049",
+    "type": "gpadbuttonlayout",
+    "bundles": [
+        "#button_layout_default",
+        "#button_layout_experimental",
+        "#button_layout_lefty",
+        "#button_layout_nomad",
+        "#button_layout_charlie",
+        "#button_layout_gunslinger",
+        "#button_layout_bumper_jumper",
+        "#button_layout_bumper_tactical",
+        "#button_layout_stick_move"
+    ]
+}

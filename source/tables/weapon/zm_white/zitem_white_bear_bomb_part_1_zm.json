@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0e09aad0f18eaa8918b33f6e75dc217eb646922a7fc61fa704a6b3b9e98e8106
-size 1307
+{
+    "name": "#zitem_white_bear_bomb_part_1_zm",
+    "baseWeapon": "#zitem_white_bear_bomb_part_1",
+    "streamkey": "#hash_313341505538c65a",
+    "worldModelTagRight": "tag_weapon_right",
+    "worldModelTagLeft": "tag_weapon_left",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_inhand",
+    "scrstr_11a4": "tag_inhand",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "ZOMBIES",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "tunables1": "#hash_6e3bb2f4e9dc9eb4",
+    "viewmodel": [
+        "#viewmodel_default"
+    ],
+    "worldModel": [
+        "#p7_zm_der_trap_control_box"
+    ],
+    "inventoryIconZm": "#$blacktransparent"
+}

@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e063bff922458bef71675efb2388aa0b4cdf572ba852ce8c1f579436d4aaa434
-size 494
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&wz_ball",
+            "maxweight": 1,
+            "available": 3
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 1,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "open_skyscraper_basketball_list",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

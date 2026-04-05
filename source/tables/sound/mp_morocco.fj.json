@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a1e397e74196053e9c950965efcd787af2db992cf2ab7106d950c35057a20e00
-size 629
+{
+    "name": "mp_morocco.fj",
+    "zone": "mp_morocco",
+    "gameLanguage": "japanese_full",
+    "soundLanguage": "fj",
+    "nameHash": "#mp_morocco.fj",
+    "patchZone": true,
+    "alias": [],
+    "duck": [],
+    "ambients": [],
+    "scriptIdLookups": [],
+    "streamKeysSABL": {
+        "streamKey1": "#mp_morocco_fj_stream",
+        "dataSize1": 2048,
+        "fileKey": "#mp_morocco_fj_loaded",
+        "fileLen": 2048
+    },
+    "streamKeysSABS": {
+        "streamKey1": "#hash_5e2e483999658e61",
+        "dataSize1": 2048,
+        "fileKey": "#hash_366df35c439e8b1c",
+        "fileLen": 2048
+    }
+}

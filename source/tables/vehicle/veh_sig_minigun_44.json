@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:13580eccd675ff5d0c33b3f17ae6fcfaaf5e9217d66136c6b305fc49abdfa5f4
-size 812
+{
+    "name": "#veh_sig_minigun_44",
+    "type": "artillery",
+    "scriptVehicleType": "swivel_mount",
+    "scoreType": "none",
+    "cameraTag": "tag_driver_camera",
+    "archeType": "#none",
+    "unk38": "#none",
+    "spawnerType": "#none",
+    "spawnInfluencers1": "#none",
+    "spawnInfluencers2": "#none",
+    "deathFx": "#explosions/fx_exp_equipment_lg",
+    "deathFxTag": "tag_fx",
+    "skidSpeedMin": 100,
+    "skidSpeedMax": 600,
+    "peelSpeedMax": 600,
+    "futzName": "#hash_45fb162abe4d4c98",
+    "model": "#hash_253fe56e77e698b3",
+    "deathModel": "#tag_origin",
+    "compassIconMaterial": "#compass_turret_white",
+    "steerAxisName": "AXIS_LSTICK",
+    "attackButtonName": "BUTTON_RTRIG",
+    "bundle": {
+        "healthpoolsize": 650,
+        "hash_7812fce8": 2
+    }
+}

@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3e8c4bab374ddb36340664e2db913993c27a5a65ad3b9053fd3342a6e7409d20
-size 779
+{
+    "itemlist": [
+        {
+            "minweight": 80,
+            "itementry": "scriptbundle&health_item_small",
+            "maxweight": 80,
+            "available": -1
+        },
+        {
+            "minweight": 0,
+            "itementry": "scriptbundle&perk_item_outlander",
+            "maxweight": 10,
+            "available": -1
+        },
+        {
+            "minweight": 80,
+            "maxweight": 80,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 3,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "health_stash_slot3",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

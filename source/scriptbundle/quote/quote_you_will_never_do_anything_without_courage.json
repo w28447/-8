@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:61f5cf102ca242b487fee6150d6c359325b6a89da933eb758d64b7553a6eb05e
-size 238
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_you_will_never_do_anything_without_courage",
+    "quote": "localized17#hash_6f78cffb7482eefe",
+    "author": "localized17#hash_7659b9020b4f9544"
+}

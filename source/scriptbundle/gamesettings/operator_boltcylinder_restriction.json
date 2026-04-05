@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:366c7a1324ca197b982a7d768c5cf850dda221137e0c79845de9cd02ed55e40c
-size 603
+{
+    "descriptionimage": "image#ui_icon_attachment_sniper_quickrechamber_opmod",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "operator_boltcylinder_restriction",
+    "displayname": "localized17#weapon/uber_boltcylinder",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__sniper_fastrechamber_t8__attachments__uber",
+    "isenableddisabled": 0
+}

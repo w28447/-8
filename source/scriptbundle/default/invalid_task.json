@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f3b777d60220b81e5dec413022a456c8f373e9c5bf7715f3cc6b9fbd6c7319b5
-size 284
+{
+    "callingtask": "#invalid",
+    "configstringfiletype": "scriptbundle",
+    "image": "image#personalize_t7_hud_mp_weapon_hero_chemgun",
+    "name": "invalid_task",
+    "taskname": "localized17#hash_526fcc5b87e9beb9",
+    "descsimple": "localized17#hash_38fffddab31096c8"
+}

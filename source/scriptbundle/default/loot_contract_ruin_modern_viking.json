@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e6380d1e0fbc731cf164c1bbb5f830b90003aa51a694f4bfd77e92d1e51e3f50
-size 648
+{
+    "contentsdetaileddescincludelist": [
+        {
+            "hash_2644cc8d6e0f3c69:hash_826726a": "localized17#hash_2644cc8d6e0f3c69"
+        }
+    ],
+    "contracticon": "image#hash_3df484a208e77e2b",
+    "hash_d0100eab": 1,
+    "relateditemname": "localized17#heroes/mercenary",
+    "contracttitle": "localized17#hash_2644cc8d6e0f3c69",
+    "name": "loot_contract_ruin_modern_viking",
+    "contractdescription": "localized17#hash_5f3abaf73890048b",
+    "white": "#white",
+    "hash_7b6abf0a2fda66db:hash_1c057e8c": "image#hash_7b6abf0a2fda66db",
+    "hash_7e38c55c1dbd99da:hash_e08fc162": "localized17#hash_7e38c55c1dbd99da"
+}

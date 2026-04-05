@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5ee56b001107a327f4a2a2c3c9f25d5fdb88270db43f33ea562df95c8ae497a3
-size 501
+{
+    "hinttext": "localized17#hash_755ef364a09a319d",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "disable_cac",
+    "displayname": "localized17#hash_3d4382cb3e4bbfd3",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "disableCAC",
+    "isenableddisabled": 0
+}

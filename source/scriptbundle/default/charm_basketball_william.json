@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f865a7ca9fdb0866417f2de2bb07d0598693109546e10c43df236c4f58b26c52
-size 403
+{
+    "lootid": "#charm_basketball_william",
+    "hash_ff3063df": "model#",
+    "image": "ui_icon_weapon_charms_basketball_william",
+    "name": "charm_basketball_william",
+    "displayname": "localized17#menu/charm_basketball_william",
+    "icon": "ui_icon_weapon_charms_basketball_william",
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_basketball_william"
+}

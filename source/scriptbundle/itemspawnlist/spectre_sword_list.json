@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:97e0d4edd54d4c0330246c6ff3acdd2e693423d0e679b4b822950511e958956a
-size 521
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&sig_blade_wz_item",
+            "maxweight": 1,
+            "available": 25
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 10000,
+    "type": "itemspawnlist",
+    "hash_345eba59": 1,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "spectre_sword_list",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

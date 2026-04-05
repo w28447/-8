@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4c9d10cf29b0c0418a37c833e5dee33975f1dc6be494a0a0e211b25adb5ae6b6
-size 1585
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&ar_accurate_t8_gold_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&ar_damage_t8_gold_item",
+            "childitementry_1": "scriptbundle&ammo_type_762_item",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&ar_modular_t8_gold_item",
+            "childitementry_1": "scriptbundle&ammo_type_762_item",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&ar_fastfire_t8_gold_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&ar_stealth_t8_gold_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
+            "maxweight": 200,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 200,
+    "type": "itemspawnlist",
+    "hash_345eba59": 5,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 1,
+    "name": "guns_gold_ars",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

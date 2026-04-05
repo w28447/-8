@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:925beca0aee58f8c5cf46b513fcded7fede29f4e625e88c3bf20413cfcc9cc2e
-size 408
+{
+    "hash_aa7fbf8b": "j_head",
+    "configstringfiletype": "scriptbundle",
+    "hash_2a5ce0ecde1ae7e4:hash_c83371f4": "model#hash_2a5ce0ecde1ae7e4",
+    "type": "destructiblecharacterdef",
+    "hash_cb768102": "helmet",
+    "vmtype": "both",
+    "name": "c_t8_zmb_dlc1_zombie_1stclass_female_dst_def",
+    "piececount": 1,
+    "hash_2a5ce0ecde1ae7e4:hash_19e4a0d": "model#hash_2a5ce0ecde1ae7e4"
+}

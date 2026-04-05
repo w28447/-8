@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:47881f8272bde3073f7264fb945e217c199ab3e11be36b44da5c8553fcb201bb
-size 230
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_make_war_that_we_may_live_in_peace",
+    "quote": "localized17#hash_213d21f5840b481b",
+    "author": "localized17#hash_7659b9020b4f9544"
+}

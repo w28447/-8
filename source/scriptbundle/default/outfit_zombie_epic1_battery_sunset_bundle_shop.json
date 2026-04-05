@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d2e89a4f5f4f53fa7b835930fef96d5b8ae39c21724b3a715d5c4e7b0c5cf284
-size 241
+{
+    "nametext": "localized17#hash_5fce652ea5a5449e",
+    "name": "outfit_zombie_epic1_battery_sunset_bundle_shop",
+    "desctext": "localized17#hash_2b7f2d614d161f1d",
+    "heroes/battery:hash_975cc0d1": "localized17#heroes/battery"
+}

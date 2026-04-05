@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:040e19de176b14e8d80b3f4fffc33bc97df0bc79a4d40f0c0f5b87e57ce8e978
-size 299
+{
+    "callingtask": "#kills_pistol",
+    "configstringfiletype": "scriptbundle",
+    "image": "image#ui_icon_zm_callings_pistol",
+    "dailytarget": 500,
+    "name": "pistols_task",
+    "taskname": "localized17#hash_5ae1f8d5b0301198",
+    "descsimple": "localized17#hash_1f3a2d066852fcbb"
+}

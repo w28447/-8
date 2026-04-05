@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:81eb8d0cd1a6a0b37f449cd024f0ace7759a298450f10abc76c00de837bdea7b
-size 324
+{
+    "name": "#loot_emote_shared_warm_up",
+    "type": "#gesture",
+    "gesture": "#boast_warm_up",
+    "gesture2": "#boast_warm_up_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/loosen_up",
+        "icon": "image#ui_icon_emotes_s3_warm_up",
+        "isdefault": 0
+    }
+}

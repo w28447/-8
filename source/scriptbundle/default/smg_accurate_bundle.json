@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:92d3ced845da379a72e58b8b9ea009518e329039e57da49d15a74ac6fc344671
-size 549
+{
+    "buttonimage": "image#ui_icon_blackmarket_promos_tactical_unicorn_button_small",
+    "popupimage": "image#ui_icon_blackmarket_promos_tactical_unicorn_large_preview",
+    "nametext": "localized17#hash_60adf9df17b1db3",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
+    "name": "smg_accurate_bundle",
+    "desctext": "localized17#hash_399b7f2e5c3f210c",
+    "previewimage": "image#ui_icon_blackmarket_promos_tactical_unicorn_item_detail",
+    "reserveimage": "image#ui_icon_blackmarket_promos_tactical_unicorn_button_large"
+}

@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7c85d2855e00220ff2cc3c52103da8c38166189bc4c224ce3f0de4f66a82d995
-size 360
+{
+    "name": "#maps/mp/mp_elevation.d3dbsp",
+    "baseName": "mp_elevation",
+    "lutMaterial": "#lut_mp_elevation",
+    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "unk550": [
+        "#img_trim_lut_mp_elevation",
+        "#img_trim_lut_mp_elevation",
+        "#img_trim_lut_mp_elevation",
+        "#img_trim_lut_mp_elevation"
+    ]
+}

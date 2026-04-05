@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1eedeecb3822f270dce9c4820474c897ba2a324ee932686fbe0e8b60f7fdf086
-size 251
+{
+    "hash_1acfc0046503e008:hash_6c274f86": "image#hash_1acfc0046503e008",
+    "nametext": "localized17#hash_6ed6f16e719818bc",
+    "name": "outfit_warrior_epic2cop_crash_sunset_bundle_shop",
+    "desctext": "localized17#hash_7af944308703ea3c"
+}

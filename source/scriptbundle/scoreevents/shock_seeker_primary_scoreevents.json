@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9a9e6e99fe40711eb29cf72e355be8a3e7ab420542fa9cacb7318416330c8c6b
-size 901
+{
+    "seeker_shock_mine_multikill_2": "#seeker_shock_mine_multikill_2",
+    "seeker_shock_mine_multikill_2": "#seeker_shock_mine_multikill_2",
+    "seeker_shock_mine_killed_paralyzed_enemy": "#seeker_shock_mine_killed_paralyzed_enemy",
+    "hash_615d2e02d1d3769c:hash_2eaed769": "#hash_615d2e02d1d3769c",
+    "configstringfiletype": "scriptbundle",
+    "type": "scoreevents",
+    "seeker_shock_mine_paralyzed_enemy": "#seeker_shock_mine_paralyzed_enemy",
+    "vmtype": "both",
+    "seeker_shock_mine_multikill_2": "#seeker_shock_mine_multikill_2",
+    "name": "shock_seeker_primary_scoreevents",
+    "customsettingstype": "status effect",
+    "seeker_shock_mine_multikill_2": "#seeker_shock_mine_multikill_2",
+    "hash_fcd2ff3a": 1,
+    "seeker_shock_mine_paralyze_assist": "#seeker_shock_mine_paralyze_assist",
+    "seeker_shock_mine_multikill_2": "#seeker_shock_mine_multikill_2"
+}

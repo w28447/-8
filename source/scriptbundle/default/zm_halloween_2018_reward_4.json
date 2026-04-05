@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3b263f79944a117adc99e97d8bab38497264ab129a2734a439ca5f2dd1deb1f9
-size 250
+{
+    "configstringfiletype": "scriptbundle",
+    "desc": "localized17#hash_36ef6e85c0fee3b0",
+    "image": "image#loot_ui_icon_outfit_halloween_extra_warpaint_alien_scarlett",
+    "stat": "#reward_4",
+    "name": "zm_halloween_2018_reward_4"
+}

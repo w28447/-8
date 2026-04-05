@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:da23a9801a411130916dc8ea5619953b3c503d3aa8b6e9cce34aabbdb09455ea
-size 271
+{
+    "name": "#hash_444fa69478105ce1",
+    "type": "playersettingoption",
+    "bundles": [
+        "#codcaster_ds_xray_1p_allies",
+        "#codcaster_ds_xray_1p_enemies",
+        "#codcaster_ds_xray_air_allies",
+        "#codcaster_ds_xray_air_enemies"
+    ]
+}

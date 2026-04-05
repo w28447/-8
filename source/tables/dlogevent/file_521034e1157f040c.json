@@ -1,3 +1,406 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f8e54a2c16dee3afd34cbcf305997853cc9689cb4affa349f2e2729150f64ecc
-size 11485
+{
+    "name": "#hash_521034e1157f040c",
+    "ddlDef": "#hash_2bb273eea68aa4b4",
+    "unk18": 0,
+    "unk19": 1,
+    "unk1a": 0,
+    "unk1b": 0,
+    "unk1c": 0,
+    "rate": 1,
+    "fields": [
+        {
+            "name": "#telemetry",
+            "arraySize": 0,
+            "members": {
+                "name": "#telemetry_header",
+                "members": [
+                    {
+                        "name": "#hash_f2ad74d8edb8204",
+                        "scrName": "#hash_50f7aa03",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#action_type",
+                        "scrName": "#hash_42e28add",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#title_id",
+                        "scrName": "#hash_8f4c2b40",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#build_version",
+                        "scrName": "#hash_26065d8a",
+                        "type": "STRING",
+                        "len": 32
+                    },
+                    {
+                        "name": "#platform",
+                        "scrName": "#platform",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#source_version",
+                        "scrName": "#hash_a56621db",
+                        "type": "UINT16"
+                    },
+                    {
+                        "name": "#hash_56a1b6d783aa7a25",
+                        "scrName": "#hash_ee3228f8",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#changelist_number",
+                        "scrName": "#hash_e632366e",
+                        "type": "INT32"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#client",
+            "arraySize": 0,
+            "members": {
+                "name": "#client_header",
+                "members": [
+                    {
+                        "name": "#user_id",
+                        "scrName": "#hash_fada396e",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#user_session_id",
+                        "scrName": "#hash_e004f74d",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#uno_id",
+                        "scrName": "#hash_e7339473",
+                        "type": "UINT64"
+                    }
+                ]
+            }
+        }
+    ],
+    "members": [
+        {
+            "name": "#smartcover_toggle",
+            "scrName": "#hash_b212528f",
+            "type": "BOOL"
+        },
+        {
+            "name": "#healthbar_show_enemy",
+            "scrName": "#hash_4e99bdd0",
+            "type": "BOOL"
+        },
+        {
+            "name": "#semtex_toggle",
+            "scrName": "#hash_f5a3140a",
+            "type": "BOOL"
+        },
+        {
+            "name": "#show_real_names",
+            "scrName": "#hash_6d6497db",
+            "type": "BOOL"
+        },
+        {
+            "name": "#altads_toggle",
+            "scrName": "#hash_17332b1a",
+            "type": "BOOL"
+        },
+        {
+            "name": "#out_of_ammo_auto_weapon_change",
+            "scrName": "#hash_4019f0e5",
+            "type": "BOOL"
+        },
+        {
+            "name": "#trophysystem_toggle",
+            "scrName": "#hash_fb302573",
+            "type": "BOOL"
+        },
+        {
+            "name": "#hash_13f420e6664a4f4b",
+            "scrName": "#hash_d908fbab",
+            "type": "BOOL"
+        },
+        {
+            "name": "#smokescreen_toggle",
+            "scrName": "#hash_e2e8dc33",
+            "type": "BOOL"
+        },
+        {
+            "name": "#grapple_autohold",
+            "scrName": "#hash_16064c00",
+            "type": "BOOL"
+        },
+        {
+            "name": "#display_crosshair",
+            "scrName": "#hash_145e23e0",
+            "type": "BOOL"
+        },
+        {
+            "name": "#weapon_cycle_disable_wrap",
+            "scrName": "#hash_8b89a2ed",
+            "type": "BOOL"
+        },
+        {
+            "name": "#combataxe_toggle",
+            "scrName": "#hash_2c159f65",
+            "type": "BOOL"
+        },
+        {
+            "name": "#ui_play_intro_movies",
+            "scrName": "#hash_f5954253",
+            "type": "BOOL"
+        },
+        {
+            "name": "#vehicle_alternate_control",
+            "scrName": "#hash_21e5e453",
+            "type": "BOOL"
+        },
+        {
+            "name": "#cursor_immediate_lock_map",
+            "scrName": "#hash_dd2f4d18",
+            "type": "BOOL"
+        },
+        {
+            "name": "#chat_profanity_filter",
+            "scrName": "#hash_f8c53e8",
+            "type": "BOOL"
+        },
+        {
+            "name": "#radiation_inversecam",
+            "scrName": "#hash_9346e1b5",
+            "type": "BOOL"
+        },
+        {
+            "name": "#claymore_toggle",
+            "scrName": "#hash_cd11a8b4",
+            "type": "BOOL"
+        },
+        {
+            "name": "#seeker_mine_toggle",
+            "scrName": "#hash_747e0e5b",
+            "type": "BOOL"
+        },
+        {
+            "name": "#radiation_toggle",
+            "scrName": "#hash_beb75161",
+            "type": "BOOL"
+        },
+        {
+            "name": "#hitmarkers_damage_type",
+            "scrName": "#hash_6c2bb38d",
+            "type": "BOOL"
+        },
+        {
+            "name": "#cymbal_monkey_toggle",
+            "scrName": "#hash_4a550175",
+            "type": "BOOL"
+        },
+        {
+            "name": "#tripwire_alternate",
+            "scrName": "#hash_166e0c27",
+            "type": "BOOL"
+        },
+        {
+            "name": "#zm_cartoonmode",
+            "scrName": "#hash_61fa4759",
+            "type": "BOOL"
+        },
+        {
+            "name": "#windows_key_disable",
+            "scrName": "#hash_cccdc5d3",
+            "type": "BOOL"
+        },
+        {
+            "name": "#show_global_chat",
+            "scrName": "#hash_d65b8f7a",
+            "type": "BOOL"
+        },
+        {
+            "name": "#hash_47195f6ac6b6fe6f",
+            "scrName": "#hash_fc8ddc27",
+            "type": "BOOL"
+        },
+        {
+            "name": "#concertina_toggle",
+            "scrName": "#hash_cab25830",
+            "type": "BOOL"
+        },
+        {
+            "name": "#cursor_immediate_lock_inventory",
+            "scrName": "#hash_bfcc6854",
+            "type": "BOOL"
+        },
+        {
+            "name": "#molotov_toggle",
+            "scrName": "#hash_d78ee498",
+            "type": "BOOL"
+        },
+        {
+            "name": "#cg_fov_default",
+            "scrName": "#hash_9742973d",
+            "type": "INT8"
+        },
+        {
+            "name": "#health_regen_toggle",
+            "scrName": "#hash_c2437633",
+            "type": "BOOL"
+        },
+        {
+            "name": "#sensordart_toggle",
+            "scrName": "#hash_c434610f",
+            "type": "BOOL"
+        },
+        {
+            "name": "#hitmarkers_enable",
+            "scrName": "#hash_c42b21bf",
+            "type": "BOOL"
+        },
+        {
+            "name": "#spawnbeacon_toggle",
+            "scrName": "#hash_39e9cf7c",
+            "type": "BOOL"
+        },
+        {
+            "name": "#fraggrenade_toggle",
+            "scrName": "#hash_2b1bebcf",
+            "type": "BOOL"
+        },
+        {
+            "name": "#show_team_chat",
+            "scrName": "#hash_8c430058",
+            "type": "BOOL"
+        },
+        {
+            "name": "#vehicle_alternate_control_water",
+            "scrName": "#hash_d96edc29",
+            "type": "BOOL"
+        },
+        {
+            "name": "#m_mousesensitivity",
+            "scrName": "#hash_53eeb09f",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#supplypod_toggle",
+            "scrName": "#hash_60bf0845",
+            "type": "BOOL"
+        },
+        {
+            "name": "#healthbar_show_ally",
+            "scrName": "#hash_e3877ff1",
+            "type": "BOOL"
+        },
+        {
+            "name": "#swatgrenade_toggle",
+            "scrName": "#hash_c81a7dd8",
+            "type": "BOOL"
+        },
+        {
+            "name": "#weapon_cycle_delay",
+            "scrName": "#hash_f9a31d69",
+            "type": "INT16"
+        },
+        {
+            "name": "#slowgrenade_toggle",
+            "scrName": "#hash_f54323e0",
+            "type": "BOOL"
+        }
+    ],
+    "unk60": [
+        {
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_855c9a40dc060cf",
+                "s3u10": "#hash_2",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    0
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_775a1eb90e25df27",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_1",
+                "unk28": [
+                    0,
+                    5,
+                    4
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 0.1,
+            "s3u8": {
+                "s31u0": "#hash_5509b91edf99f9a4",
+                "s3u10": "#hash_6",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_1",
+                "unk28": [
+                    2,
+                    3,
+                    9
+                ]
+            }
+        },
+        {
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_415a3e8b41b48599",
+                "s3u10": "#hash_4",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_a",
+                "unk28": [
+                    2,
+                    3,
+                    5
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_68cc9f8f64640d09",
+                "s3u10": "#hash_7",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    2,
+                    3
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_7b52e3919e2a5b79",
+                "s3u10": "#hash_9",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    2
+                ]
+            }
+        }
+    ]
+}

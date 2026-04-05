@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a96ab64a5ee1a7ecba8db34fbbc744a2b3a120bb92a439fe5abe9b58f5470903
-size 391
+{
+    "hinttext": "localized17#hash_6deb9ade400a54ed",
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "time_pauses_when_in_zone",
+    "displayname": "localized17#menu/time_pause",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "timePausesWhenInZone",
+    "isenableddisabled": 1
+}

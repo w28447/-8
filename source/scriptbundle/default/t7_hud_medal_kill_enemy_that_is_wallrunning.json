@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bf154d194a338fb60b112665ce7c1d4adf77f04b598d3c59ec1ca9d05509e300
-size 423
+{
+    "backingsmall": "image#t7_hud_medal_backing_badassery",
+    "widget": "BadasseryMedal",
+    "name": "t7_hud_medal_kill_enemy_that_is_wallrunning",
+    "backinglarge": "image#t7_hud_medal_backing_badassery_lrg",
+    "iconsmall": "image#t7_hud_medal_kill_enemy_that_is_wallrunning",
+    "stringref": "localized17#hash_48354b3631f7944b",
+    "iconlarge": "image#t7_hud_medal_kill_enemy_that_is_wallrunning_lrg"
+}

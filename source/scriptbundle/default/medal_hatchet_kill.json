@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2b01fed28419b78aac25f1654cd41d8bd3535677a9ffcb98e6f1c9a82e64d48c
-size 386
+{
+    "description": "localized17#medal/hatchet_kill_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_hatchet_kill",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_choppedup",
+    "stringref": "localized17#medal/hatchet_kill",
+    "iconlarge": "image#ui_icon_medal_choppedup_large"
+}

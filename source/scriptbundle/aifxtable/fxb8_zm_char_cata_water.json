@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:011438bd1930d71b04ff9f81b9bcd0f40b79fecc704e95d82e1f3c2025361443
-size 510
+{
+    "surfacefxtable_vtollanding": "surface_fx_table#player_vtol_drop",
+    "configstringfiletype": "scriptbundle",
+    "type": "aifxtable",
+    "vmtype": "client",
+    "surfacefxtable_footstep": "surface_fx_table#zm_cata_water_footstep",
+    "name": "fxb8_zm_char_cata_water",
+    "surfacefxtable_landing": "surface_fx_table#player_jump_start",
+    "hash_4dbce506dd3f2df0:hash_306eaa3a": "surface_fx_table#hash_4dbce506dd3f2df0",
+    "surfacefxtable_jumping": "surface_fx_table#player_jump_start"
+}

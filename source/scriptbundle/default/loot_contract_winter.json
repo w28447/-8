@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a38818b6ae939ee77849511c33028112946c3ff005589a20a328636fdd30c9b8
-size 239
+{
+    "contracticon": "image#hash_589d5b6fc130d79e",
+    "contracttitle": "localized17#hash_754695d357c8c6a8",
+    "name": "loot_contract_winter",
+    "contractdescription": "localized17#hash_37378f3ec4b1cef",
+    "white": "#white"
+}

@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9c4dd10cc8bf711f57766011416a0bfef9625595c2ac1f1d662ef8d4ccb4adc0
-size 358
+{
+    "lootid": "#charm_donut_horn",
+    "hash_ff3063df": "model#",
+    "image": "ui_icon_weapon_charms_donut_horn",
+    "name": "charm_donut_horn",
+    "displayname": "localized17#menu/charm_donut_unicorn",
+    "icon": "ui_icon_weapon_charms_donut_horn",
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_donut_horn"
+}

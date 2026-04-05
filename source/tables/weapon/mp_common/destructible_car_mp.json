@@ -1,3 +1,42 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ed35465c0ea526481a391f7d93f54bae9eba77d67ab8147fed520c7ea6e86db4
-size 1504
+{
+    "name": "#destructible_car_mp",
+    "baseWeapon": "#destructible_car",
+    "displayname": "#weapon/m2fraggrenade",
+    "weapon70": "#destructible_car",
+    "streamkey": "#hash_5341d3a07008958",
+    "worldModelTagRight": "tag_weapon_right",
+    "worldModelTagLeft": "tag_weapon_left",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_inhand",
+    "scrstr_11a4": "tag_inhand",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "MULTIPLAYER",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "projexplosionsound": "#wpn_grenade_explode",
+    "tunables1": "#destructible_car_tunables_mp",
+    "viewmodel": [
+        "#wpn_t7_grenade_frag_view"
+    ],
+    "reticleCenter": "#reticle_center_cross",
+    "inventoryIconZm": "#hud_obit_exploding_car",
+    "image_e90": "#hud_obit_exploding_car",
+    "fx_f00": "#hash_80e7395fb42d35f6"
+}

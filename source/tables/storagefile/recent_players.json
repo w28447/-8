@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2bca0e7dec9d3b1e4bfa0268c4a7a0aa9b72c2fff0b2d53f63d8261f82226054
-size 366
+{
+    "nameStr": "recent_players",
+    "name": "#recent_players",
+    "ddlPath": "#gamedata/ddl/generated/recent_players.ddl",
+    "files": [
+        {
+            "fileName": "recent_players"
+        }
+    ],
+    "size": 2048,
+    "readOnLogin": true,
+    "readOnly": false,
+    "sendToServer": false,
+    "useScratch": false,
+    "optional": false
+}

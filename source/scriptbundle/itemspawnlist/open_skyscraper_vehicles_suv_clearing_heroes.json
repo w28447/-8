@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:75d79324ef3bc4a5e78d598cf071b4a58590cfa47534e0c9612a3b37e113e87a
-size 739
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&suv_police_wz_vehicle",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "maxweight": 1,
+            "available": 0
+        },
+        {
+            "minweight": 1,
+            "maxweight": 1,
+            "available": 0
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 3,
+    "vehiclespawner": 1,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "open_skyscraper_vehicles_suv_clearing_heroes",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:95b5bd168bd174b40d48e0908c01391fa1fcde4ae2e6d8035428aa8a17092756
-size 239
+{
+    "name": "c_t8_bo_parachute_merica",
+    "parachute": "weapon#parachute_wz",
+    "icon": "loot_ui_icon_jumppacks_parachute_merica",
+    "largeicon": "loot_ui_icon_jumppacks_parachute_merica_large",
+    "parachutelit": "model#"
+}

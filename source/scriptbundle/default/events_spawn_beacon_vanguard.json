@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c14a69e15834962b6bb69f4f0e241c58ae8377aa1987da846697fa02ec6ebf73
-size 283
+{
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
+    "widget": "BadasseryMedal",
+    "name": "events_spawn_beacon_vanguard",
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_4c2f93a823e00ed2",
+    "iconlarge": "image#hash_4c2f93a823e00ed2"
+}

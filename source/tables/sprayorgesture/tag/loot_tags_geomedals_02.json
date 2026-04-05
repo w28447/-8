@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:08a3045beb0a5324a014360f0afc80ec35753d209ad0eeee7e84b5d7233a630c
-size 284
+{
+    "name": "#loot_tags_geomedals_02",
+    "type": "#tag",
+    "material": "#hash_6b04520b02dfc0a4",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_47766086f6ac33d7",
+        "icon": "image#hash_37d368fd4f740ef1",
+        "isdefault": 0
+    }
+}

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8e5c7868f971794758d90139c4937e44e6540d31d3b422fe6458f96d11736cf9
-size 162
+{
+    "type": "linear",
+    "vmtype": "server",
+    "range_max": 1000,
+    "name": "protect_entity_influencer_def",
+    "score_min": 6,
+    "lifetime": 5
+}

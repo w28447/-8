@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a87cb0ffd4b95126f0d176ca3dfbcbf16f26138cc630f1feaa966ebdf7d07898
-size 332
+{
+    "name": "#hash_507a35f6ccf44985",
+    "type": "#gesture",
+    "gesture": "#hash_64df0085143ffbef",
+    "gesture2": "#hash_64e4768da6168e38",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/hot_steppin",
+        "icon": "image#ui_icon_emotes_poplock1",
+        "isdefault": 0
+    }
+}

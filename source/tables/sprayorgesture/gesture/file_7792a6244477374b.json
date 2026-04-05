@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:91c18bd7b98fd8e4b74ef1c5587d4f747c6488121931468ab93c8adbaa3fbdc9
-size 354
+{
+    "name": "#hash_7792a6244477374b",
+    "type": "#gesture",
+    "gesture": "#hash_4cd6cd4beea89213",
+    "gesture2": "#hash_68f93dafebed4da6",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/place_holder",
+        "icon": "image#ui_icon_specialist_portrait_hud_ruin_healing",
+        "isdefault": 0
+    }
+}

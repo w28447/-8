@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:08222062bea6f66eaceb60f2a73f34dc21a0d37a01ddec2fd569bc244dc1538b
-size 705
+{
+    "hasmigration": 0,
+    "lobbymode": 2,
+    "id": 2402,
+    "backtarget": "director_online",
+    "maxlocalclientsnetwork": 1,
+    "mainmode": 3,
+    "hash_d16ccae8": 1,
+    "isprivate": 1,
+    "showteams": 1,
+    "lobbytype": 0,
+    "menumusic": "lobby_wz",
+    "room": "mp_theater",
+    "hash_7f60c82f": 1,
+    "kicker": "localized17#hash_4af936327eca036",
+    "isadvertised": 0,
+    "maxclients": 1,
+    "name": "director_online_wz_theater",
+    "networkmode": 2,
+    "errtarget": "director_online_wz_theater",
+    "egamemodes": 4,
+    "hash_ec76767d": 8,
+    "title": "localized17#hash_74c78b93031d0f44",
+    "hash_f68d7d0": 2,
+    "isgame": 0,
+    "maxlocalclients": 1
+}

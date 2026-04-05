@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a19ba39ac9e61f67320acd1f37086f3a48654c97e9203a49bd254347e6f94ad5
-size 670
+{
+    "hinttext": "localized17#menu/setbacks_hint",
+    "configstringfiletype": "scriptbundle",
+    "value8": "7",
+    "value9": "8",
+    "value2": "1",
+    "value3": "2",
+    "value1": "0",
+    "value6": "5",
+    "value7": "6",
+    "value4": "3",
+    "value5": "4",
+    "value11": "10",
+    "value10": "9",
+    "type": "gamesettings",
+    "label": "localized17#menu/x_weapons",
+    "hash_5a6dee5a": 0,
+    "name": "setbacks",
+    "displayname": "localized17#menu/setbacks",
+    "label2": "localized17#menu/x_weapon",
+    "hash_54e336e4": 0,
+    "optionscount": 11,
+    "hash_765cfd09": 0,
+    "setting": "setbacks",
+    "isenableddisabled": 0
+}

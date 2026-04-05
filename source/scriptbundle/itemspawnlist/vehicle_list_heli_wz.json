@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:df4add04d7bc999359b0a87b4e2a0475c114475e148963f8bba8354e36a75dc4
-size 1092
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&helicopter_light_wz_vehicle_tan",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&helicopter_light_wz_vehicle_grey",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&helicopter_light_wz_vehicle_dark",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&helicopter_light_wz_vehicle_black",
+            "maxweight": 1,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 4000,
+    "type": "itemspawnlist",
+    "hash_345eba59": 4,
+    "vehiclespawner": 1,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 1,
+    "name": "vehicle_list_heli_wz",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

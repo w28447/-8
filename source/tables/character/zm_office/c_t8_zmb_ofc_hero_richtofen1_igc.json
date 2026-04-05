@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5916271ab543be9d5079ce3783d4c974511da1cbd1eb7210b7fe3193ec6cdfac
-size 262
+{
+    "name": "#c_t8_zmb_ofc_hero_richtofen1_igc",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "body": "#c_t8_zmb_ofc_hero_richtofen_body1_igc",
+    "head": "#c_t8_zmb_ofc_hero_richtofen_head1"
+}

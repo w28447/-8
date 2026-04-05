@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:379271826a33d17a4f5d88632f45113cf68eebb2024a41c534577a29be777340
-size 468
+{
+    "contracticon": "image#loot03_ui_icon_blackmarket_contracts_misty",
+    "contracttitle": "localized17#menu/contract_misty",
+    "name": "loot_contract_misty",
+    "contractdescription": "localized17#menu/blackout_character",
+    "white": "#white",
+    "loot03_ui_icon_blackmarket_contracts_misty_tall:hash_1c057e8c": "image#loot03_ui_icon_blackmarket_contracts_misty_tall",
+    "hash_490d8ac5a53902e6:hash_e08fc162": "localized17#hash_490d8ac5a53902e6"
+}

@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4e875e13c9b6b583dcfbb775e64fe93484f1dd2c93ceef89d084cfbf0f9b4e7d
-size 351
+{
+    "lootid": "#charm_eggplant",
+    "hash_ff3063df": "model#",
+    "image": "ui_icon_weapon_charms_eggplant",
+    "name": "charm_plant_eggplant",
+    "displayname": "localized17#hash_2bfc921caac510fb",
+    "icon": "ui_icon_weapon_charms_eggplant",
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_eggplant"
+}

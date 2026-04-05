@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:062a932392741038745065da4031a20795caf079d61331432a966bf78c57688e
-size 321
+{
+    "hash_394bade17416e5b:hash_6c274f86": "image#hash_394bade17416e5b",
+    "nametext": "localized17#hash_7757157cca531029",
+    "name": "outfit_warrior_epic1_crash_sunset_bundle_shop",
+    "desctext": "localized17#hash_2b7f2d614d161f1d",
+    "heroes/buffassault:hash_975cc0d1": "localized17#heroes/buffassault"
+}

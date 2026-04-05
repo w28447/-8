@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:115b6c21689fc1e24f10610cc3532cb5a57f6eb78db532feae661565a09c0893
-size 642
+{
+    "name": "#hash_a8f031f7c7b2ed8",
+    "type": "weapondeathfx",
+    "bundles": [
+        "#weapondeathfx_default",
+        "#weapondeathfx_money",
+        "#weapondeathfx_fireworks",
+        "#weapondeathfx_confetti",
+        "#weapondeathfx_rainbow",
+        "#weapondeathfx_soul",
+        "#weapondeathfx_stuffing",
+        "#weapondeathfx_raven",
+        "#weapondeathfx_blackhole",
+        "#weapondeathfx_lava",
+        "#weapondeathfx_water",
+        "#weapondeathfx_anime",
+        "#weapondeathfx_comic",
+        "#weapondeathfx_electric",
+        "#weapondeathfx_ice",
+        "#weapondeathfx_nature"
+    ]
+}

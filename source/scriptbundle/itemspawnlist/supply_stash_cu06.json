@@ -1,3 +1,58 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:47c32412d0b438d564f64620e9e6759397f64a899796a676730b9719969b8d53
-size 1587
+{
+    "itemlist": [
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&cu06_item",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&supply_stash_slot1_dlc1",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&supply_stash_slot2_dlc1",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&supply_stash_slot3_dlc1",
+            "maxweight": 50,
+            "available": 2
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&molotov_wz_item",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&supply_stash_slot5_dlc1",
+            "maxweight": 50,
+            "available": 2
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&flamethrower_wz_item",
+            "maxweight": 50,
+            "available": 1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 12000,
+    "type": "itemspawnlist",
+    "hash_345eba59": 7,
+    "vehiclespawner": 0,
+    "hash_9b009839": 10,
+    "hash_dc7ffbef": 0,
+    "name": "supply_stash_cu06",
+    "supplystashweight": 100,
+    "hash_dc91e192": 1,
+    "supplystash": 1
+}

@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:84ae2338559c632929bed77f3d2e6f7bf7c557e72a6fecf5ef7b0667c9faf43f
-size 384
+{
+    "hinttext": "localized17#menu/zone_decay_hint",
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "decay_captured_zones",
+    "displayname": "localized17#menu/zone_decay",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "decayCapturedZones",
+    "isenableddisabled": 1
+}

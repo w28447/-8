@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3b28fa3337894e19fe2174e657e1834f1c08d462bac1d997ea02d061289653f1
-size 633
+{
+    "name": "mp_mountain2.en",
+    "zone": "mp_mountain2",
+    "gameLanguage": "english",
+    "soundLanguage": "en",
+    "nameHash": "#mp_mountain2.en",
+    "patchZone": true,
+    "alias": [],
+    "duck": [],
+    "ambients": [],
+    "scriptIdLookups": [],
+    "streamKeysSABL": {
+        "streamKey1": "#mp_mountain2_en_stream",
+        "dataSize1": 2048,
+        "fileKey": "#mp_mountain2_en_loaded",
+        "fileLen": 2048
+    },
+    "streamKeysSABS": {
+        "streamKey1": "#hash_4f436dcfec19b991",
+        "dataSize1": 2048,
+        "fileKey": "#hash_2c3918cd439560ec",
+        "fileLen": 2048
+    }
+}

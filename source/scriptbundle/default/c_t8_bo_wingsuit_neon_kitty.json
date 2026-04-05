@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aa024e44a2649c2c67d022c4e9e59c9e0d23f6123b7fd445d45365c979612482
-size 240
+{
+    "hash_94166112": "model#",
+    "name": "c_t8_bo_wingsuit_neon_kitty",
+    "icon": "loot_ui_icon_jumppacks_wingsuit_neon_kitty",
+    "largeicon": "loot_ui_icon_jumppacks_wingsuit_neon_kitty_large",
+    "hash_5677bd3d": "model#"
+}

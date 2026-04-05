@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:32f89dd990b0c3b212137cc6ee1b151c73e993e41ca2d01b8057e8386826ab95
-size 511
+{
+    "lootid": "#hash_29a9bd2389b3c356",
+    "hash_33427ef35e3515b5:hash_904b37bc": "impact_fx_table#hash_33427ef35e3515b5",
+    "image": "loot04_ui_icon_blackmarket_reserves_death_fx_numbers",
+    "name": "weapondeathfx_raven",
+    "displayname": "localized17#hash_ebd88797aaa2574",
+    "icon": "loot04_ui_icon_cac_death_fx_numbers",
+    "hash_696b011f5349704d:hash_eeb78b92": "impact_fx_table#hash_696b011f5349704d",
+    "previewimage": "image#loot04_ui_icon_blackmarket_reserves_death_fx_numbers"
+}

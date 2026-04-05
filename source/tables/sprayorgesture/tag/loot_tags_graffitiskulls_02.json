@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:050b37eb6362bd04e362f904ec45acd883b6cefc4eaa698c26480bc8fdc3167b
-size 289
+{
+    "name": "#loot_tags_graffitiskulls_02",
+    "type": "#tag",
+    "material": "#hash_7a0f2f7929d8b66b",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_38541eab072dc81b",
+        "icon": "image#hash_20362c440e59f334",
+        "isdefault": 0
+    }
+}

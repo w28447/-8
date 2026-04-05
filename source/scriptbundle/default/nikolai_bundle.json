@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f97d217e165e5585a40feca99fd8c76455ebdcfbca1317195494715a8dd5690a
-size 507
+{
+    "buttonimage": "image#ui_icon_blackmarket_promos_nikolai_button_small",
+    "popupimage": "image#ui_icon_blackmarket_promos_nikolai_large_preview",
+    "nametext": "localized17#menu/bundle_nikolai",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
+    "name": "nikolai_bundle",
+    "desctext": "localized17#hash_33bf922743377e89",
+    "previewimage": "image#ui_icon_blackmarket_promos_nikolai_item_detail",
+    "reserveimage": "image#ui_icon_blackmarket_promos_nikolai_button_large"
+}

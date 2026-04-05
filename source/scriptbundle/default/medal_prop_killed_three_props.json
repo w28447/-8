@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:458db3236d3dd520e7634289da85eb7c539d4c61be965d00cfd24bbabfebb59b
-size 419
+{
+    "description": "localized17#medal/prop_killed_three_props_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_prop_killed_three_props",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_prop_shot",
+    "stringref": "localized17#medal/prop_killed_three_props",
+    "iconlarge": "image#ui_icon_medal_prop_shot_large"
+}

@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9b0644953db6c7e35c271664de9c33c34ae57362b009161396c6d89b140b569d
-size 390
+{
+    "hinttext": "localized17#menu/force_respawn_hint",
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "player_force_respawn",
+    "displayname": "localized17#menu/force_respawn",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "playerForceRespawn",
+    "isenableddisabled": 1
+}

@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:43a3997cfba93e15f9ad748d8fbbd1fa17969158ddfdea0e8181c5dc08a310f3
-size 283
+{
+    "name": "#hash_75dd06ac0a61959f",
+    "type": "#tag",
+    "material": "#hash_767675b144301fbb",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_44630bed7ddeb3d7",
+        "icon": "image#hash_7afee301f0d411e2",
+        "isdefault": 0
+    }
+}

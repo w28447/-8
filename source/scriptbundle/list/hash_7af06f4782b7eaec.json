@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:271305d0ba431db0c3a15d21bc8d766730b35e9006fec65c399b63554be56e08
-size 538
+{
+    "name": "#hash_7af06f4782b7eaec",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#pistol_standard_restriction",
+        "#gamesettings/#pistol_burst_restriction",
+        "#gamesettings/#pistol_revolver_restriction",
+        "#gamesettings/#shotgun_pump_restriction",
+        "#gamesettings/#shotgun_semiauto_restriction",
+        "#gamesettings/#launcher_standard_restriction",
+        "#gamesettings/#knife_loadout_restriction",
+        "#gamesettings/#melee_secretsanta_restriction"
+    ]
+}

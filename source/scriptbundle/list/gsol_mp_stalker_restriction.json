@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:48f150db227468944599b975e10c3005ff07faf1c9e8697616b6070c663c893d
-size 1113
+{
+    "name": "#gsol_mp_stalker_restriction",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_stalker_ar_fastfire_restriction",
+        "#gamesettings/#attachment_stalker_ar_modular_restriction",
+        "#gamesettings/#attachment_stalker_ar_standard_restriction",
+        "#gamesettings/#attachment_stalker_ar_stealth_restriction",
+        "#gamesettings/#attachment_stalker_lmg_standard_restriction",
+        "#gamesettings/#attachment_stalker_pistol_fullauto_restriction",
+        "#gamesettings/#attachment_stalker_pistol_revolver_restriction",
+        "#gamesettings/#attachment_stalker_shotgun_pump_restriction",
+        "#gamesettings/#attachment_stalker_smg_fastfire_restriction",
+        "#gamesettings/#attachment_stalker_smg_handling_restriction",
+        "#gamesettings/#attachment_stalker_smg_standard_restriction",
+        "#gamesettings/#attachment_stalker_sniper_fastrechamber_restriction",
+        "#gamesettings/#attachment_stalker_sniper_quickscope_restriction",
+        "#gamesettings/#attachment_stalker_tr_midburst_restriction"
+    ]
+}

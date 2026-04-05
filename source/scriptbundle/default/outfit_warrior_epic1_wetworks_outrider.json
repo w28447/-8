@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:790c4738ba3efea8657041c99a0ac39100ff370e9eef14252d4d3e0b06ff0d40
-size 197
+{
+    "loot03_ui_icon_blackmarket_itemshop_camo_zombie_flick:hash_6c274f86": "image#loot03_ui_icon_blackmarket_itemshop_camo_zombie_flick",
+    "name": "outfit_warrior_epic1_wetworks_outrider"
+}

@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:89189fb10d6e1590406a60f3395a215cf109f3d55fd4de13ef876b97974f2d0d
-size 591
+{
+    "hinttext": "localized17#hash_4cbd10791149a91d",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value3": "2",
+    "value1": "0",
+    "value6": "5",
+    "value7": "10",
+    "value4": "3",
+    "value5": "4",
+    "type": "gamesettings",
+    "label": "localized17#menu/x_seconds",
+    "hash_5a6dee5a": 0,
+    "name": "spawn_health_boost_time",
+    "displayname": "localized17#hash_747d9334adc84253",
+    "hash_54e336e4": 0,
+    "optionscount": 7,
+    "hash_765cfd09": 0,
+    "setting": "killPointsInEnemyProtectedZone",
+    "isenableddisabled": 0
+}

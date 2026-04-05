@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8287bc4bea537ecd999003782d6e6a43bf8556655cee6f3fbaa480f80d7a0b6f
-size 556
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&farmtown_list_item_default_small_dlc1",
+            "maxweight": 100,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 420,
+    "type": "itemspawnlist",
+    "hash_345eba59": 1,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "farmtown_list_parent_small_dlc1",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

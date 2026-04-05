@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:db7e92d005a6f7973cd2f51efe7d0c167e3605132b3a2acd216be90b0cae3c22
-size 295
+{
+    "callingtask": "#rush_powerups",
+    "configstringfiletype": "scriptbundle",
+    "image": "image#personalize_t7_hud_mp_weapon_hero_chemgun",
+    "name": "powergrabber_task",
+    "taskname": "localized17#hash_221913cb478991fc",
+    "descsimple": "localized17#hash_56a92f0e586643cf"
+}

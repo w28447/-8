@@ -1,3 +1,71 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6ba6c766b83512f52a49dfc53efd6a6028920b015b519c0b4d3d8537af9d7ee3
-size 2289
+{
+    "itemlist": [
+        {
+            "minweight": 200,
+            "itementry": "scriptbundle&ar_accurate_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 200,
+            "itementry": "scriptbundle&ar_fastfire_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 200,
+            "itementry": "scriptbundle&ar_damage_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_762_item",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 200,
+            "itementry": "scriptbundle&ar_stealth_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 150,
+            "itementry": "scriptbundle&ar_modular_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_762_item",
+            "maxweight": 150,
+            "available": -1
+        },
+        {
+            "minweight": 150,
+            "itementry": "scriptbundle&ar_standard_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
+            "maxweight": 150,
+            "available": -1
+        },
+        {
+            "minweight": 150,
+            "itementry": "scriptbundle&ar_galil_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
+            "maxweight": 150,
+            "available": -1
+        },
+        {
+            "minweight": 150,
+            "itementry": "scriptbundle&ar_standard_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
+            "maxweight": 150,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 200,
+    "type": "itemspawnlist",
+    "hash_345eba59": 8,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 1,
+    "name": "guns_ars_dlc1",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

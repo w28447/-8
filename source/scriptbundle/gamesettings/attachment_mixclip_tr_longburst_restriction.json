@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0ffe096899b5b2c2b3fca68b36b3de4ae54dccbadb809e9c1593d1405bedad92
-size 398
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_mixclip_tr_longburst_restriction",
+    "displayname": "localized17#weapon/tr_longburst_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__tr_longburst_t8__attachments__mixclip",
+    "isenableddisabled": 0
+}

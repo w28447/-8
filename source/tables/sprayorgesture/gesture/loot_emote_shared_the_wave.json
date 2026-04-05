@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f19421a4149ac51ccfad8086c0f47e8b8fce5d91d1e756da8179bc9ff39367a3
-size 323
+{
+    "name": "#loot_emote_shared_the_wave",
+    "type": "#gesture",
+    "gesture": "#boast_the_wave",
+    "gesture2": "#boast_the_wave_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/the_wave",
+        "icon": "image#ui_icon_emotes_s2_wave",
+        "isdefault": 0
+    }
+}

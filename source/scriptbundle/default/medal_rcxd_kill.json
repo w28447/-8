@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9dbe4bd5dacff84b135bd17ccdcacbd3c135fb5a935ed5a452403b66f009b0a7
-size 371
+{
+    "description": "localized17#medal/rcxd_kill_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_rcxd_kill",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_kaboom",
+    "stringref": "localized17#medal/rcxd_kill",
+    "iconlarge": "image#ui_icon_medal_kaboom_large"
+}

@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:73558d6f8adfb172e2642b98399e614cf3caf1fddd446de811467970fdc24ed0
-size 493
+{
+    "zmstartweapons": [
+        {
+            "weapon": "#pistol_topbreak_t8"
+        },
+        {
+            "weapon": "#tr_leveraction_t8"
+        },
+        {
+            "weapon": "#pistol_standard_t8"
+        },
+        {
+            "weapon": "#pistol_burst_t8"
+        },
+        {
+            "weapon": "#smg_handling_t8"
+        },
+        {
+            "weapon": "#shotgun_pump_t8"
+        }
+    ],
+    "name": "zmstartweapontable",
+    "hash_16977adf": 6
+}

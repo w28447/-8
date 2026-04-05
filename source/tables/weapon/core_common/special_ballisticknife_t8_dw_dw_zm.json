@@ -1,3 +1,73 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bf345f0fe3d4399dcdd6d5ec029a44d7d42385da2d5a78ee7885e26522adfd6a
-size 2727
+{
+    "name": "#special_ballisticknife_t8_dw_dw_zm",
+    "baseWeapon": "#special_ballisticknife_t8_dw_dw",
+    "displayname": "#weapon/special_ballisticknife_t8",
+    "weapon70": "#special_ballisticknife_t8_dw",
+    "dualwieldWeaponName": "#special_ballisticknife_t8_lh_lh_zm",
+    "streamkey": "#hash_4b75357cdd7c0884",
+    "scrstr_8c8": [
+        "tag_camo_darkmatter",
+        "tag_camo_diamond"
+    ],
+    "scrstr_8d8": [
+        "tag_ik_loc_le_dw"
+    ],
+    "worldModelTagRight": "tag_weapon_right",
+    "worldModelTagLeft": "tag_weapon_right",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_weapon_right",
+    "scrstr_11a4": "tag_weapon_left",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "#hash_5b73038c": 1,
+    "#hash_6566504b": 4,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "ZOMBIES",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": true,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "sound90": "#hash_216f906579fc3e07",
+    "firesound": "#hash_6fb83eb099d08f17",
+    "firesoundplayer": "#hash_5d898619c6dc1a15",
+    "sound240": "#hash_5993e31af4dd53ec",
+    "sound250": "#hash_55a9361a61a0ccad",
+    "tunables1": "#special_ballisticknife_t8_dw_dw_tunables_zm",
+    "weaponCamo": "#hash_1389711caf25c0a3",
+    "attachments": [
+        "#hash_f459a0af8e8f912b"
+    ],
+    "attachmentUniques": [
+        "#hash_6b5af65db8be708c"
+    ],
+    "sharedWeaponSounds": "#ballistic",
+    "projectilemodel": "#wpn_t8_loot_knife_ballistic_blade_projectile",
+    "viewmodel": [
+        "#wpn_t8_loot_knife_ballistic_view"
+    ],
+    "worldModel": [
+        "#wpn_t8_loot_knife_ballistic_world"
+    ],
+    "reticleCenter": "#knife_ballistic_reticle",
+    "inventoryIconZm": "#ui_icon_weapons_zm_special_ballisticknife",
+    "image_e90": "#ui_icon_obit_special_ballistic_knife",
+    "image_e98": "#ui_icon_obit_special_ballistic_knife",
+    "image_ea0": "#ui_icon_obit_special_ballistic_knife",
+    "fireRumble": "#pistol_fire",
+    "meleeImpactRumble": "#defaultweapon_melee",
+    "fx_bc8": "#hash_3e3caddc73aa8167",
+    "fx_bd0": "#hash_3e35a1dc73a44e55",
+    "fx_f00": "#hash_5fdd021d80dd8fc6",
+    "normalImpactFX": "#hash_25f3e55b8e1070ab",
+    "bounceImpactFX": "#hash_61b4c700060ee40c",
+    "bounceImpactSounds": "#hash_29ab4424affe55ad"
+}

@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e95b903bcf8820b8e0532325808e04484ec275e69aa04417b20de716ed187ee0
-size 412
+{
+    "description": "localized17#medal/clean_multi_deny_tacos_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_clean_multi_deny_tacos",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_allgone",
+    "stringref": "localized17#medal/clean_multi_deny_tacos",
+    "iconlarge": "image#ui_icon_medal_allgone_large"
+}

@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f95ef61717a72bbd5b752ea2f4896d355af6df792b0ccc95b1d1ebd20d0f7eea
-size 366
+{
+    "name": "#gsol_zm_health",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#zm_healthstarting",
+        "#gamesettings/#zm_healthregendelay",
+        "#gamesettings/#zm_healthregenrate",
+        "#gamesettings/#zm_healthonkill",
+        "#gamesettings/#zm_healthdrain",
+        "#gamesettings/#zm_friendly_fire_type"
+    ]
+}

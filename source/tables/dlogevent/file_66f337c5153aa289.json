@@ -1,3 +1,654 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:62ebd0955e5b37069e896d672d343030343eda17b4e23dc38fa4ee31852db3c8
-size 18161
+{
+    "name": "#hash_66f337c5153aa289",
+    "ddlDef": "#hash_2199a85b78d6235d",
+    "unk18": 0,
+    "unk19": 1,
+    "unk1a": 0,
+    "unk1b": 0,
+    "unk1c": 0,
+    "rate": 1,
+    "fields": [
+        {
+            "name": "#telemetry",
+            "arraySize": 0,
+            "members": {
+                "name": "#telemetry_header",
+                "members": [
+                    {
+                        "name": "#hash_f2ad74d8edb8204",
+                        "scrName": "#hash_50f7aa03",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#action_type",
+                        "scrName": "#hash_42e28add",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#title_id",
+                        "scrName": "#hash_8f4c2b40",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#build_version",
+                        "scrName": "#hash_26065d8a",
+                        "type": "STRING",
+                        "len": 32
+                    },
+                    {
+                        "name": "#platform",
+                        "scrName": "#platform",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#source_version",
+                        "scrName": "#hash_a56621db",
+                        "type": "UINT16"
+                    },
+                    {
+                        "name": "#hash_56a1b6d783aa7a25",
+                        "scrName": "#hash_ee3228f8",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#changelist_number",
+                        "scrName": "#hash_e632366e",
+                        "type": "INT32"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#client",
+            "arraySize": 0,
+            "members": {
+                "name": "#client_header",
+                "members": [
+                    {
+                        "name": "#user_id",
+                        "scrName": "#hash_fada396e",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#user_session_id",
+                        "scrName": "#hash_e004f74d",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#uno_id",
+                        "scrName": "#hash_e7339473",
+                        "type": "UINT64"
+                    }
+                ]
+            }
+        }
+    ],
+    "members": [
+        {
+            "name": "#vsync",
+            "scrName": "#hash_af362d02",
+            "type": "BOOL"
+        },
+        {
+            "name": "#ssr",
+            "scrName": "#hash_d1b74200",
+            "type": "BOOL"
+        },
+        {
+            "name": "#shader_warming",
+            "scrName": "#hash_99740a4",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_3f8ede290237f45",
+            "scrName": "#hash_ef78241d",
+            "type": "BOOL"
+        },
+        {
+            "name": "#hash_479281cb96c5c29",
+            "scrName": "#hash_c366d2e8",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#aspect_ratio",
+            "scrName": "#hash_f3044402",
+            "type": "INT32"
+        },
+        {
+            "name": "#ssao_technique",
+            "scrName": "#hash_97bc292c",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_636fa57dc7c7380",
+            "scrName": "#hash_b04e1958",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#config_version",
+            "scrName": "#hash_fabf6b8c",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_c33472150c59327",
+            "scrName": "#hash_16261fb6",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#hash_e5ae34dc2fc2a8e",
+            "scrName": "#hash_7522a48d",
+            "type": "STRING",
+            "len": 64
+        },
+        {
+            "name": "#worker_threads",
+            "scrName": "#hash_3b3ddc4c",
+            "type": "INT32"
+        },
+        {
+            "name": "#fullscreen_resolution",
+            "scrName": "#hash_345e1b62",
+            "type": "STRING",
+            "len": 16
+        },
+        {
+            "name": "#splitscreen_orientation",
+            "scrName": "#hash_709c0d48",
+            "type": "BOOL"
+        },
+        {
+            "name": "#hash_142c297539db271b",
+            "scrName": "#hash_74d4f922",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#hash_147e6efaa5286f59",
+            "scrName": "#hash_4e92fd6d",
+            "type": "BOOL"
+        },
+        {
+            "name": "#music_scale",
+            "scrName": "#hash_827b3206",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#refresh_rate",
+            "scrName": "#hash_ed940150",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#hash_1626188c0e090458",
+            "scrName": "#hash_8d1ff5e2",
+            "type": "BOOL"
+        },
+        {
+            "name": "#sfx_scale",
+            "scrName": "#hash_85aeb6c0",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#window_maximized",
+            "scrName": "#hash_b7da079a",
+            "type": "BOOL"
+        },
+        {
+            "name": "#voice_input_device",
+            "scrName": "#hash_d5a68d8e",
+            "type": "STRING",
+            "len": 128
+        },
+        {
+            "name": "#oit",
+            "scrName": "#hash_6e969001",
+            "type": "BOOL"
+        },
+        {
+            "name": "#resolution_percent",
+            "scrName": "#hash_833c55d2",
+            "type": "INT32"
+        },
+        {
+            "name": "#aa_technique",
+            "scrName": "#hash_f332da55",
+            "type": "INT32"
+        },
+        {
+            "name": "#mouse_ads_use_monitor_distance",
+            "scrName": "#hash_6914cec9",
+            "type": "BOOL"
+        },
+        {
+            "name": "#smooth_framerate",
+            "scrName": "#hash_3390b1e2",
+            "type": "BOOL"
+        },
+        {
+            "name": "#voice_push_to_talk",
+            "scrName": "#hash_f9fc057b",
+            "type": "BOOL"
+        },
+        {
+            "name": "#audio_scale_when_speaking",
+            "scrName": "#hash_9dee4f32",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#show_performance_graph",
+            "scrName": "#hash_faedf4ce",
+            "type": "INT32"
+        },
+        {
+            "name": "#vsync_menu",
+            "scrName": "#hash_d16965dd",
+            "type": "BOOL"
+        },
+        {
+            "name": "#voice_output_volume",
+            "scrName": "#hash_d0b87d9f",
+            "type": "INT32"
+        },
+        {
+            "name": "#disable_dynamic_light_shadows",
+            "scrName": "#hash_6886700f",
+            "type": "BOOL"
+        },
+        {
+            "name": "#mouse_ads_monitor_distance_coefficient",
+            "scrName": "#hash_269b59e0",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#window_x",
+            "scrName": "#hash_5f6ee855",
+            "type": "INT32"
+        },
+        {
+            "name": "#window_y",
+            "scrName": "#hash_51d94d2a",
+            "type": "INT32"
+        },
+        {
+            "name": "#last_driver_nvidia",
+            "scrName": "#hash_5da2ba92",
+            "type": "INT32"
+        },
+        {
+            "name": "#display_adapter",
+            "scrName": "#hash_be9a7ce8",
+            "type": "INT32"
+        },
+        {
+            "name": "#disable_dynamic_sun_shadows",
+            "scrName": "#hash_c5e1345c",
+            "type": "BOOL"
+        },
+        {
+            "name": "#hash_2e3aa1f8f9b20ec3",
+            "scrName": "#hash_94720287",
+            "type": "BOOL"
+        },
+        {
+            "name": "#oit_layers",
+            "scrName": "#hash_7fe20321",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_30d8f5939d58ba43",
+            "scrName": "#hash_34704f3d",
+            "type": "BOOL"
+        },
+        {
+            "name": "#window_width",
+            "scrName": "#hash_8803eb20",
+            "type": "INT32"
+        },
+        {
+            "name": "#voice_va_sensitivity",
+            "scrName": "#hash_1e1bd6d",
+            "type": "INT32"
+        },
+        {
+            "name": "#mute_music",
+            "scrName": "#hash_d6636513",
+            "type": "BOOL"
+        },
+        {
+            "name": "#texture_quality",
+            "scrName": "#hash_6d4b2f89",
+            "type": "INT32"
+        },
+        {
+            "name": "#fx_shadows",
+            "scrName": "#hash_1fde4687",
+            "type": "BOOL"
+        },
+        {
+            "name": "#fullscreen_mode",
+            "scrName": "#hash_3918f305",
+            "type": "INT32"
+        },
+        {
+            "name": "#master_scale",
+            "scrName": "#hash_86bfa511",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#monitor",
+            "scrName": "#monitor",
+            "type": "INT32"
+        },
+        {
+            "name": "#mouse_vertical_look",
+            "scrName": "#hash_2fe92af3",
+            "type": "BOOL"
+        },
+        {
+            "name": "#shadow_viewmodel_self",
+            "scrName": "#hash_972b53be",
+            "type": "INT32"
+        },
+        {
+            "name": "#mouse_acceleration",
+            "scrName": "#hash_de333d82",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#video_memory",
+            "scrName": "#hash_60b0829b",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#relative_ads_fov",
+            "scrName": "#hash_f46b7cc1",
+            "type": "BOOL"
+        },
+        {
+            "name": "#hash_4c21c0b60674426a",
+            "scrName": "#hash_8f8b6d53",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#backbuffer_count",
+            "scrName": "#hash_249682a3",
+            "type": "INT32"
+        },
+        {
+            "name": "#shadow_filtering",
+            "scrName": "#hash_79182dd0",
+            "type": "BOOL"
+        },
+        {
+            "name": "#last_recommended_driver_nvidia",
+            "scrName": "#hash_12c17d14",
+            "type": "INT32"
+        },
+        {
+            "name": "#voice_input_volume",
+            "scrName": "#hash_fe294858",
+            "type": "INT32"
+        },
+        {
+            "name": "#automatic_process_priority",
+            "scrName": "#hash_de672a61",
+            "type": "BOOL"
+        },
+        {
+            "name": "#hash_5099e577769a5d26",
+            "scrName": "#hash_6bc6546b",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_519c9a1c0f342950",
+            "scrName": "#hash_f82c6e4d",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_535789c84c7b3551",
+            "scrName": "#hash_7bd4c4a6",
+            "type": "INT32"
+        },
+        {
+            "name": "#sound_occlusion",
+            "scrName": "#hash_326db728",
+            "type": "BOOL"
+        },
+        {
+            "name": "#voice_scale",
+            "scrName": "#hash_e530d219",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#fullscreen_preferred_mode",
+            "scrName": "#hash_d069c2ee",
+            "type": "INT32"
+        },
+        {
+            "name": "#enable_voice",
+            "scrName": "#hash_b11fda47",
+            "type": "BOOL"
+        },
+        {
+            "name": "#dedicated_player_shadow",
+            "scrName": "#hash_24bc66a0",
+            "type": "INT32"
+        },
+        {
+            "name": "#volumetric_light_quality",
+            "scrName": "#hash_428b29a9",
+            "type": "INT32"
+        },
+        {
+            "name": "#fov",
+            "scrName": "#fov",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#texture_filter",
+            "scrName": "#hash_5ee93a33",
+            "type": "INT32"
+        },
+        {
+            "name": "#cinematic_scale",
+            "scrName": "#hash_3b9b39ae",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#hash_5fe1d750a2b763f5",
+            "scrName": "#hash_314d0c8d",
+            "type": "INT32"
+        },
+        {
+            "name": "#display_gamma",
+            "scrName": "#hash_3c4be6c8",
+            "type": "INT32"
+        },
+        {
+            "name": "#enable_scale_when_speaking",
+            "scrName": "#hash_f411e345",
+            "type": "BOOL"
+        },
+        {
+            "name": "#mouse_filter",
+            "scrName": "#hash_26feaf20",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#mute_voice",
+            "scrName": "#hash_f470226a",
+            "type": "BOOL"
+        },
+        {
+            "name": "#auto_cull_radius",
+            "scrName": "#hash_c95b6fa9",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#max_fps",
+            "scrName": "#hash_4a42746f",
+            "type": "INT32"
+        },
+        {
+            "name": "#hardware_checksum",
+            "scrName": "#hash_ce95a85b",
+            "type": "INT32"
+        },
+        {
+            "name": "#subsurface_scattering",
+            "scrName": "#hash_780fed4",
+            "type": "BOOL"
+        },
+        {
+            "name": "#play_intro_movies",
+            "scrName": "#hash_d03c6ad9",
+            "type": "BOOL"
+        },
+        {
+            "name": "#mouse_sensitivity",
+            "scrName": "#hash_8a6c7c4b",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#last_driver_amd",
+            "scrName": "#hash_d6115652",
+            "type": "INT32"
+        },
+        {
+            "name": "#mute_master",
+            "scrName": "#hash_c2c1b2f2",
+            "type": "BOOL"
+        },
+        {
+            "name": "#window_height",
+            "scrName": "#hash_6e8d914e",
+            "type": "INT32"
+        },
+        {
+            "name": "#motion_blur",
+            "scrName": "#hash_72ec38ca",
+            "type": "INT32"
+        },
+        {
+            "name": "#hash_77afa9e0a9f1e113",
+            "scrName": "#hash_e1fced9a",
+            "type": "INT32"
+        },
+        {
+            "name": "#motion_blur_quality",
+            "scrName": "#hash_1935aef",
+            "type": "INT32"
+        },
+        {
+            "name": "#volumetric_light_sample_mult",
+            "scrName": "#hash_b57255bd",
+            "type": "FLOAT"
+        },
+        {
+            "name": "#mesh_quality",
+            "scrName": "#hash_8617ce80",
+            "type": "INT32"
+        },
+        {
+            "name": "#max_fps_menu",
+            "scrName": "#hash_af92279e",
+            "type": "INT32"
+        },
+        {
+            "name": "#hdr_display_mode",
+            "scrName": "#hash_79d01c76",
+            "type": "INT32"
+        }
+    ],
+    "unk60": [
+        {
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_855c9a40dc060cf",
+                "s3u10": "#hash_2",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    0
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_775a1eb90e25df27",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_1",
+                "unk28": [
+                    0,
+                    5,
+                    4
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 0.05,
+            "s3u8": {
+                "s31u0": "#hash_5509b91edf99f9a4",
+                "s3u10": "#hash_6",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_1",
+                "unk28": [
+                    2,
+                    3,
+                    9
+                ]
+            }
+        },
+        {
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_415a3e8b41b48599",
+                "s3u10": "#hash_4",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_a",
+                "unk28": [
+                    2,
+                    3,
+                    5
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_68cc9f8f64640d09",
+                "s3u10": "#hash_7",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    2,
+                    3
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_7b52e3919e2a5b79",
+                "s3u10": "#hash_9",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    2
+                ]
+            }
+        }
+    ]
+}

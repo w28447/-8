@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f900698331b84332db11706acbcbc2eb9023daeab3ab15b4636528220bf4d437
-size 545
+{
+    "pb_death_base_pose": "playeranim#pb_death_base_pose",
+    "configstringfiletype": "scriptbundle",
+    "type": "ragdollsettings",
+    "ai_robot_base_stn_exposed_dth_pose": "anim#ai_robot_base_stn_exposed_dth_pose",
+    "ai_wrlrd_stn_combat_dth_pose": "anim#ai_wrlrd_stn_combat_dth_pose",
+    "name": "ragdollsettings",
+    "humanidleanim": "anim#ai_base_rifle_stn_exposed_dth_pose",
+    "ai_fem_rifle_stn_exposed_dth_pose": "anim#ai_fem_rifle_stn_exposed_dth_pose",
+    "ai_zombie_base_dth_pose": "anim#ai_zombie_base_dth_pose"
+}

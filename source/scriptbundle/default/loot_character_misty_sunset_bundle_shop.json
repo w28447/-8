@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f52896a176541c1097c2ac70b12e33220eef810441ef7f10f20331487ab7db3b
-size 292
+{
+    "loot03_ui_icon_blackmarket_contracts_misty_tall:hash_6c274f86": "image#loot03_ui_icon_blackmarket_contracts_misty_tall",
+    "nametext": "localized17#menu/contract_misty",
+    "name": "loot_character_misty_sunset_bundle_shop",
+    "desctext": "localized17#hash_4ab5a09f4ea74a95"
+}

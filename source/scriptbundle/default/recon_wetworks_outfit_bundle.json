@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7b1f8613591a29740d10ec08ddecf841fb88112813b0b1f69c27f00a6bfc1c2a
-size 523
+{
+    "buttonimage": "image#ui_icon_blackmarket_promos_frogman_button_small",
+    "popupimage": "image#ui_icon_blackmarket_promos_frogman_large_preview",
+    "nametext": "localized17#hash_2c90250580654022",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
+    "name": "recon_wetworks_outfit_bundle",
+    "desctext": "localized17#hash_6d182448bc5f99f2",
+    "previewimage": "image#ui_icon_blackmarket_promos_frogman_item_detail",
+    "reserveimage": "image#ui_icon_blackmarket_promos_frogman_button_large"
+}

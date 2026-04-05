@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:64c3c126b85ef5c223b6a135cb9f7b824ede22b301aa60a1b2faee3f691fac0d
-size 396
+{
+    "backingsmall": "image#t7_hud_medal_backing_gamemode",
+    "widget": "BadasseryMedal",
+    "name": "t7_hud_medal_quickly_secure_point",
+    "backinglarge": "image#t7_hud_medal_backing_gamemode_lrg",
+    "iconsmall": "image#t7_hud_medal_quickly_secure_point",
+    "stringref": "localized17#medal/quickly_secure_point",
+    "iconlarge": "image#t7_hud_medal_quickly_secure_point_lrg"
+}

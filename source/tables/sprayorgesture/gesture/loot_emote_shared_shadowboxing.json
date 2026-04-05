@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:72ac824fa1cfdfc1a86de38845b3a058c460452e7cae4bb5b92bf6676514f4d6
-size 347
+{
+    "name": "#loot_emote_shared_shadowboxing",
+    "type": "#gesture",
+    "gesture": "#boast_shadowboxing",
+    "gesture2": "#boast_shadowboxing_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/shadowboxing",
+        "icon": "image#ui_icon_emotes_s2_shadowboxing",
+        "isdefault": 0
+    }
+}

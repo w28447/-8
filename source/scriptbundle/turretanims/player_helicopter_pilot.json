@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:142195421ffb412747658aa182e50d077c7d9c26bf51b8151f718e2474a2544d
-size 416
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "turretanims",
+    "hash_764fa926bc5e5d11:hash_9323d5c1": "playeranim#hash_764fa926bc5e5d11",
+    "centerstraightanim": "playeranim#hash_6b8648706933ad67",
+    "vmtype": "none",
+    "name": "player_helicopter_pilot",
+    "aimpitchangleu": 90,
+    "aimpitchangled": 90,
+    "hash_764fa926bc5e5d11:hash_9b47c071": "playeranim#hash_764fa926bc5e5d11"
+}

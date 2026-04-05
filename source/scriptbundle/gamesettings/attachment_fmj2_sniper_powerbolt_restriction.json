@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a99c3b4b06286e752cb524ead961184014f48f313d5b5cab43fe6e646777b331
-size 404
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_fmj2_sniper_powerbolt_restriction",
+    "displayname": "localized17#weapon/sniper_powerbolt_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__sniper_powerbolt_t8__attachments__fmj2",
+    "isenableddisabled": 0
+}

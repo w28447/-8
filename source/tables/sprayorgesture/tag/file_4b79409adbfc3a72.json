@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b39cf07dcedaa016b732355d12e33d05e66e7628bec45cc3638b3f81e8787026
-size 291
+{
+    "name": "#hash_4b79409adbfc3a72",
+    "type": "#tag",
+    "material": "#hash_6cdd4ba410e2cc06",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_4a5ebc66509f181",
+        "icon": "image#loot_ui_icon_tags_hipster_ajax",
+        "isdefault": 0
+    }
+}

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:97f1089fa937e8fe4d701a0e93ace1a71a9b05f4d48331ec8c3a3b503fd4fbdc
-size 284
+{
+    "backingsmall": "image#hash_75692c1dbf2e3c49",
+    "widget": "BadasseryMedal",
+    "name": "events_tank_robot_multikill_4",
+    "backinglarge": "image#hash_75692c1dbf2e3c49",
+    "iconsmall": "image#hash_776d1b4ece5247fc",
+    "iconlarge": "image#hash_776d1b4ece5247fc"
+}

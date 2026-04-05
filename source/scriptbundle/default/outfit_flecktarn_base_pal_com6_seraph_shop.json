@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a1525501acf8ce6ff7b1d8f72ca521764bdd314ccec489075f425f5050a64f8e
-size 137
+{
+    "hash_4f370367670b9afe:hash_6c274f86": "image#hash_4f370367670b9afe",
+    "name": "outfit_flecktarn_base_pal_com6_seraph_shop"
+}

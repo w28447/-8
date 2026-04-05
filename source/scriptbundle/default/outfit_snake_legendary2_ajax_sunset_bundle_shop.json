@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c8387c24aa55881c18120a72a60d5de3e4b5167b633853f4cbb7db33af99bce7
-size 248
+{
+    "nametext": "localized17#hash_26cec93e356f2abd",
+    "name": "outfit_snake_legendary2_ajax_sunset_bundle_shop",
+    "desctext": "localized17#hash_2b7f2d614d161f1d",
+    "heroes/swatpolice:hash_975cc0d1": "localized17#heroes/swatpolice"
+}

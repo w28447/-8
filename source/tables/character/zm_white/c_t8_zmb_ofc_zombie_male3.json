@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:695e4c505d56232a699624034e8e205b98d644eb54850a1bfa60876a5f1e8715
-size 879
+{
+    "name": "#c_t8_zmb_ofc_zombie_male3",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 2,
+    "bodyImpactType": 2,
+    "gibDef": "#c_t8_zmb_ofc_zombie_male1_gib_def",
+    "body": "#c_t8_zmb_ofc_zombie_male_body3",
+    "headAlias": "#hash_1aae719deb3bcc1e",
+    "damagedTorso_Clean": "#c_t8_zmb_ofc_zombie_male_body3_g_upclean",
+    "damagedTorso_RightArmGone": "#c_t8_zmb_ofc_zombie_male_body3_g_rarmoff",
+    "damagedTorso_LeftArmGone": "#c_t8_zmb_ofc_zombie_male_body3_g_larmoff",
+    "damagedTorso_HeadGone": "#hash_7de94f2c812ace80",
+    "damagedLegs_Clean": "#c_t8_zmb_ofc_zombie_male_body3_g_lowclean",
+    "damagedLegs_RightLegGone": "#c_t8_zmb_ofc_zombie_male_body3_g_rlegoff",
+    "damagedLegs_LeftLegGone": "#c_t8_zmb_ofc_zombie_male_body3_g_llegoff",
+    "damagedLegs_NoLegs": "#c_t8_zmb_ofc_zombie_male_body3_g_blegsoff"
+}

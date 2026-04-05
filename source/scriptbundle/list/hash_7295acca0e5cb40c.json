@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5c4d9ce46f9e6957476799f7ae2e45668dce7dda4d98bb3aed26e0384187fa1e
-size 320
+{
+    "name": "#hash_7295acca0e5cb40c",
+    "type": "lobbymenu",
+    "bundles": [
+        "#director_lan_zm",
+        "#director_online_zm_public",
+        "#director_online_zm_custom",
+        "#director_online_zm_theater",
+        "#director_online_zm_pregame",
+        "#director_online_zm_private"
+    ]
+}

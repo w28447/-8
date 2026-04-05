@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9d7f57b0b0e6ac7a43a83875f9fc108539019930a2d367667d16b378aa5717db
-size 280
+{
+    "name": "#hash_7262c7ca0e318854",
+    "type": "lobbymenu",
+    "bundles": [
+        "#director_lan_mp",
+        "#director_online_mp_public",
+        "#director_online_mp_custom",
+        "#director_online_mp_theater",
+        "#director_online_mp_pregame"
+    ]
+}

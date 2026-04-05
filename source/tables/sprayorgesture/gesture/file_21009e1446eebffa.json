@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a77c28973c8555cc534ba17fe9df619a52a70648f2eec542cc2e3f6d4edda2d5
-size 334
+{
+    "name": "#hash_21009e1446eebffa",
+    "type": "#gesture",
+    "gesture": "#hash_48502325712d4710",
+    "gesture2": "#hash_57c60b1f3bf3ded3",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/death_circle-ph",
+        "icon": "image#hash_136d3d0e42ba87c9",
+        "isdefault": 0
+    }
+}

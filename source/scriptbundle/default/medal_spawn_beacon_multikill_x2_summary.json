@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5937a6f9c45d14ca41f633593da4ae4c8c92768bc6def8956a94239aad55d16f
-size 397
+{
+    "description": "localized17#hash_77c83037dcf4c1a6",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_spawn_beacon_multikill_x2_summary",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#hash_155d9827f68f59ef",
+    "stringref": "localized17#hash_3e29d59cc30b914e",
+    "iconlarge": "image#hash_8d998f28ba67fff"
+}

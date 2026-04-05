@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cb002770af8aa776027adf77d98fe8ebcbd124b89526417f9528edf9e7afb33a
-size 1119
+{
+    "name": "#gsol_mp_fmj_restriction",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_fmj_ar_accurate_restriction",
+        "#gamesettings/#attachment_fmj_ar_damage_restriction",
+        "#gamesettings/#attachment_fmj_ar_standard_restriction",
+        "#gamesettings/#attachment_fmj_lmg_spray_restriction",
+        "#gamesettings/#attachment_fmj_lmg_standard_restriction",
+        "#gamesettings/#attachment_fmj_pistol_fullauto_restriction",
+        "#gamesettings/#attachment_fmj_pistol_standard_restriction",
+        "#gamesettings/#attachment_fmj_smg_capacity_restriction",
+        "#gamesettings/#attachment_fmj_smg_fastfire_restriction",
+        "#gamesettings/#attachment_fmj_smg_standard_restriction",
+        "#gamesettings/#attachment_fmj_sniper_powerbolt_restriction",
+        "#gamesettings/#attachment_fmj_sniper_powersemi_restriction",
+        "#gamesettings/#attachment_fmj_sniper_quickscope_restriction",
+        "#gamesettings/#attachment_fmj_tr_longburst_restriction",
+        "#gamesettings/#attachment_fmj_tr_powersemi_restriction"
+    ]
+}

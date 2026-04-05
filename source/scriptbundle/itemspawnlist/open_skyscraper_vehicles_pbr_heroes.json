@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6a34701cbc3907a55dc6bdb6167d89d8cbabd8dc571588292a7f31574ce8ce8b
-size 758
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&pbr_wz_vehicle_police",
+            "maxweight": 1,
+            "available": 3
+        },
+        {
+            "minweight": 1,
+            "maxweight": 1,
+            "available": 0
+        },
+        {
+            "minweight": 1,
+            "maxweight": 1,
+            "available": 0
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 8000,
+    "type": "itemspawnlist",
+    "hash_345eba59": 3,
+    "vehiclespawner": 1,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 1,
+    "name": "open_skyscraper_vehicles_pbr_heroes",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

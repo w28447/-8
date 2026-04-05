@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a1f00d2c136b93a1c4c8120a33ffa3d80054e2e52726fa5372962a4b0c996f4c
-size 243
+{
+    "name": "#hash_7b603ffbde556ad3",
+    "type": "gpadsticklayout",
+    "bundles": [
+        "#stick_layout_default",
+        "#stick_layout_southpaw",
+        "#stick_layout_legacy",
+        "#stick_layout_legacy_southpaw"
+    ]
+}

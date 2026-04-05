@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:983c775b62d7978fb89cf5489ae7a9be6f68421ec22f08522abff90a53cc5e67
-size 498
+{
+    "hash_2703f9fb7e481f6d:hash_c7bd8867": "localized17#hash_2703f9fb7e481f6d",
+    "popupimage": "image#ui_icon_weapon_ar_standard_render",
+    "ui_icon_weapon_ar_standard_render": "image#ui_icon_weapon_ar_standard_render",
+    "nametext": "localized17#weapon/ar_standard_t8",
+    "categorytext": "localized17#mpui/bm_bribe",
+    "name": "ar_standard_t8_bribe",
+    "desctext": "localized17#weapon/ar_standard_t8_desc",
+    "weapon/ar_standard_t8": "localized17#weapon/ar_standard_t8"
+}

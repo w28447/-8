@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:774de3eb6742056524c8b082413b542a51774a5d008b08c251489046c54a2e28
-size 282
+{
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
+    "widget": "BadasseryMedal",
+    "name": "events_spawn_beacon_insertion",
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_6c274f8e42db1be",
+    "iconlarge": "image#hash_6c274f8e42db1be"
+}

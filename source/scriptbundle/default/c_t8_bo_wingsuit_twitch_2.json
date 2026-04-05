@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2cfdf56fd78fd2166a5daa18c8f9bb5359077bdbd5a4d9e6d070a6635b37830d
-size 234
+{
+    "hash_94166112": "model#",
+    "name": "c_t8_bo_wingsuit_twitch_2",
+    "icon": "loot_ui_icon_jumppacks_wingsuit_twitch_2",
+    "largeicon": "loot_ui_icon_jumppacks_wingsuit_twitch_2_large",
+    "hash_5677bd3d": "model#"
+}

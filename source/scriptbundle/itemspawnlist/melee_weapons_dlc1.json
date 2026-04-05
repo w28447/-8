@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:17b93555ae92432109d6306259dcf8f20a2b0c7de776e30f7e047414629097cb
-size 523
+{
+    "itemlist": [
+        {
+            "minweight": 10,
+            "itementry": "scriptbundle&melee_bowie_t8_item",
+            "maxweight": 10,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 200,
+    "type": "itemspawnlist",
+    "hash_345eba59": 1,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 1,
+    "name": "melee_weapons_dlc1",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

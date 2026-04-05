@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e322b9c2b4726bedb54275d2d8b4ec35dba5610665c98f072ee4e881312fd8f4
-size 314
+{
+    "mod": "MOD_EXPLOSIVE",
+    "configstringfiletype": "scriptbundle",
+    "type": "meansofdeath",
+    "name": "mod_explosive",
+    "displayname": "localized17#ui/mod_explosive",
+    "icon": "image#ui_icon_meansofdeath_explosive_death",
+    "iconlarge": "image#ui_icon_meansofdeath_explosive_death_xl"
+}

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:618e32c8f79e5996e4d9528d7ee0c41994a1bb005f71846c1b10350fc4d4dfa0
-size 208
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_so_much_owed",
+    "quote": "localized17#hash_70a424b50769c491",
+    "author": "localized17#hash_28304a9b00e1403e"
+}

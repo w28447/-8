@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fa2b9d32100d86927e987a7e227d43e2a12e141d532bdd1a64c21b96362c96e1
-size 425
+{
+    "name": "#gsol_mp_stabilizer_restriction",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_stabilizer_pistol_revolver_restriction",
+        "#gamesettings/#attachment_stabilizer_sniper_fastrechamber_restriction",
+        "#gamesettings/#attachment_stabilizer_sniper_powerbolt_restriction",
+        "#gamesettings/#attachment_stabilizer_sniper_powersemi_restriction"
+    ]
+}

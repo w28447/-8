@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9836f5e55d6efbf1d6880db58d1a59939d432a115fc5b0741bcaf2ae22576f62
-size 330
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "scoreevents",
+    "battle_command_activated": "#battle_command_activated",
+    "vmtype": "both",
+    "name": "gadget_combat_efficiency_scoreevents",
+    "customsettingstype": "ability",
+    "battle_command_objective_defense": "#battle_command_objective_defense"
+}

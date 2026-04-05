@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:64e28ab615b865dc299f14b04169f387cbda7a0613327cea31360e1aa2126294
-size 471
+{
+    "entries": [
+        {
+            "value": "localized17#hash_3e2d70a02b0c343a"
+        },
+        {
+            "value": "localized17#hash_3e2d71a02b0c35ed"
+        },
+        {
+            "value": "localized17#hash_3e2d6ea02b0c30d4"
+        },
+        {
+            "value": "localized17#hash_3e2d6fa02b0c3287"
+        },
+        {
+            "value": "localized17#hash_3e2d6ca02b0c2d6e"
+        }
+    ],
+    "name": "lsl_reticle_dualoptic"
+}

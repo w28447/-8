@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1149c3befe8a7a35c9956bc8570a778198f817d008f7864f90337e65425d38ab
-size 236
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_accept_the_challenge_so_can_feel_victory",
+    "quote": "localized17#hash_737b592f96f93b84",
+    "author": "localized17#hash_634634cfd78bd43d"
+}

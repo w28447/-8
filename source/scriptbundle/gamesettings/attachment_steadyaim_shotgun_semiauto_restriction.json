@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b04447ff1ba506a030c3aff3a8d981049c3fb2cfa378728abe8210840d2e18f2
-size 414
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_steadyaim_shotgun_semiauto_restriction",
+    "displayname": "localized17#weapon/shotgun_semiauto_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__shotgun_semiauto_t8__attachments__steadyaim",
+    "isenableddisabled": 0
+}

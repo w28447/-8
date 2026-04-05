@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a7a108f24a6a225c7d0a3e96faf80eeb5e96cf73f47b2bbabe84cc9075fcd2c8
-size 370
+{
+    "description": "localized17#medal/zeroed_out_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_zeroed_out",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#hash_50085f46aaa077ec",
+    "stringref": "localized17#medal/zeroed_out",
+    "iconlarge": "image#hash_50085f46aaa077ec"
+}

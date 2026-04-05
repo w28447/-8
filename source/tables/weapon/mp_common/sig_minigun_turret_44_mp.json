@@ -1,3 +1,99 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:93c70b7813b991b0323d91cd1371df68b64b9c03555e3d3c83649875670d48ee
-size 3578
+{
+    "name": "#sig_minigun_turret_44_mp",
+    "baseWeapon": "#sig_minigun_turret_44",
+    "displayname": "#hash_28e56245387c39fd",
+    "weapon70": "#sig_minigun",
+    "streamkey": "#hash_25ef519930ba5230",
+    "worldModelTagRight": "tag_weapon_right",
+    "worldModelTagLeft": "tag_weapon_left",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_weapon_right",
+    "scrstr_11a4": "tag_weapon_left",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "MULTIPLAYER",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.002 1",
+            "0.1 0.75",
+            "0.25 0.35",
+            "0.5 0.1",
+            "1 0.05"
+        ],
+        [
+            "0 1",
+            "0.002 1",
+            "0.1 0.8",
+            "0.25 0.6",
+            "0.5 0.15",
+            "1 0.05"
+        ]
+    ],
+    "firesound": "#hash_1a8618a42206290a",
+    "firesoundplayer": "#hash_43d97fa3f0ea530f",
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "projexplosionsound": "#wpn_grenade_explode",
+    "projexplosionsoundplayer": "#wpn_grenade_explode",
+    "sound800": "#hash_5d8b6dc75a094136",
+    "sound810": "#hash_5d8b6dc75a094136",
+    "sound830": "#hash_5f97c9610e83c252",
+    "sound840": "#hash_7a5614b91f27d6ca",
+    "tunables1": "#sig_minigun_turret_44_tunables_mp",
+    "sharedWeaponSounds": "#rifle",
+    "tracers": [
+        "#hash_17bf123db6369ed1",
+        "#hash_55561bc3da6b4eb6"
+    ],
+    "statusEffects": [
+        {
+            "effect": "#suppress",
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        }
+    ],
+    "turretAnimSettings": "#sig_reaper_turret_44_anims",
+    "gadgetIconAvailable": "#hash_ea6351c461085379",
+    "gadgetIconUnavailable": "#hash_ea6351c461085379",
+    "reticleCenter": "#hash_1439ce5fc334afa9",
+    "inventoryIconZm": "#hash_ea6351c461085379",
+    "hudIcon": "#hash_ea6351c461085379",
+    "image_e90": "#hash_ea6351c461085379",
+    "fireRumble": "#heavygun_fire",
+    "fx_bc8": "#hash_d88f4cfcb96c6e35",
+    "fx_bd0": "#hash_d88f4cfcb96c6e35",
+    "fx_bd8": "#hash_44d4962da4f033c8",
+    "fx_c80": "#hash_9c7f0dbc37829f85",
+    "fx_c88": "#hash_9c7f0dbc37829f85",
+    "fx_c90": "#hash_9c7f0dbc37829f85",
+    "fx_c98": "#hash_9c7f0dbc37829f85",
+    "normalImpactFX": "#hash_dc5dac9355d4dd1c",
+    "exitImpactFX": "#hash_c00b5ef5792265c2",
+    "normalImpactSounds": "#hash_f8e291a8acdea947",
+    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+}

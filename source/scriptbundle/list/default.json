@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8cb99832a69347064dc169761ea86589ff4896d846060754dac369d9f4693c9f
-size 115
+{
+    "name": "#default",
+    "type": "collectible",
+    "bundles": [
+        "#collectible/#default"
+    ]
+}

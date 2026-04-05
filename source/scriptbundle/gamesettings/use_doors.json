@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3584eadf905ecce2562db67d2d6f5f2dbd1a0fc4f0b625ac9b14f7904dfd5ce9
-size 317
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "use_doors",
+    "displayname": "localized17#hash_243d89217c18bb4f",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "use_doors",
+    "isenableddisabled": 1
+}

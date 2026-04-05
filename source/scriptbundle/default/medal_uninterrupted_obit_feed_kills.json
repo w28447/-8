@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:48b3c9e05c6096a1ca6c2861f71c8dbc4070f50076171112b7bff31aa21b0348
-size 435
+{
+    "description": "localized17#medal/uninterrupted_obit_feed_kills_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_uninterrupted_obit_feed_kills",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_quadfeed",
+    "stringref": "localized17#medal/uninterrupted_obit_feed_kills",
+    "iconlarge": "image#ui_icon_medal_quadfeed_large"
+}

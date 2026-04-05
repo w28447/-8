@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0d4bb985d960d565597a66678e8db26f9f675871fed9e5a3b3ba76dd898861ca
-size 308
+{
+    "hash_118382efaaccec10:hash_6c274f86": "image#hash_118382efaaccec10",
+    "nametext": "localized17#hash_74ecabcf8ec003cd",
+    "name": "outrider_buccaneer_outfit_bundle_shop",
+    "desctext": "localized17#hash_31ae452a4a77ff7",
+    "heroes/outrider:hash_975cc0d1": "localized17#heroes/outrider"
+}

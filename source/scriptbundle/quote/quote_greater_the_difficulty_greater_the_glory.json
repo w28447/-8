@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:324ad2b2bbc5931d146a802dcd5cc3097a785132228d7fe00554cbad24905122
-size 236
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_greater_the_difficulty_greater_the_glory",
+    "quote": "localized17#hash_37aa9e0ccde9b7c3",
+    "author": "localized17#hash_34e77381df6b20af"
+}

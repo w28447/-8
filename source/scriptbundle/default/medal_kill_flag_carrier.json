@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a7632d43dcb2fb00d42bbd29b0cd42cdd147926d0d80c637605a4a421cdda6d1
-size 399
+{
+    "description": "localized17#medal/kill_flag_carrier_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_kill_flag_carrier",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_takedown",
+    "stringref": "localized17#medal/kill_flag_carrier",
+    "iconlarge": "image#ui_icon_medal_takedown_large"
+}

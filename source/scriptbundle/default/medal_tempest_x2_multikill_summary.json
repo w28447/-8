@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5b2524cc1481979f09c65a3e0353a302ab7c52df3236286b70a1c0a93358898b
-size 399
+{
+    "description": "localized17#hash_25af78c1d864167e",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_tempest_x2_multikill_summary",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_tempest",
+    "stringref": "localized17#hash_39bbf62370c9fac6",
+    "iconlarge": "image#ui_icon_medal_tempest_large"
+}

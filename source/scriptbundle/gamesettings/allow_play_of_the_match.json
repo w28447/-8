@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:109d682e66cef9633ec9f0093b56ec28dbcf98b31ca750bd0fddf86396db20f5
-size 414
+{
+    "hinttext": "localized17#menu/allow_play_of_the_match_hint",
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "allow_play_of_the_match",
+    "displayname": "localized17#menu/allow_play_of_the_match",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "allowPlayOfTheMatch",
+    "isenableddisabled": 1
+}

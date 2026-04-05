@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a998153aa4db70a8935d1f0a940d29c3cc35449758406baec49205e9dd14cf22
-size 747
+{
+    "contentsdetaileddescincludelist": [
+        {
+            "hash_605969a737686528:hash_826726a": "localized17#hash_605969a737686528"
+        },
+        {
+            "heroes/firebreak:hash_826726a": "localized17#heroes/firebreak"
+        }
+    ],
+    "contracticon": "image#hash_299b05b8fd65032",
+    "hash_d0100eab": 2,
+    "relateditemname": "localized17#heroes/firebreak",
+    "contracttitle": "localized17#hash_605969a737686528",
+    "name": "loot_contract_firebreak_snakeskin",
+    "contractdescription": "localized17#hash_88f3d374c07d9de",
+    "white": "#white",
+    "hash_10c8afa4d0bfa620:hash_1c057e8c": "image#hash_10c8afa4d0bfa620",
+    "hash_338c5acca44862e1:hash_e08fc162": "localized17#hash_338c5acca44862e1"
+}

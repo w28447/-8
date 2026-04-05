@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c321b914854a708eb67649d0cd0eebbb7e78b5399594b17af52ac063c089b517
-size 466
+{
+    "description": "localized17#medal/war_killed_enemy_while_capping_control_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_war_killed_enemy_while_capping_control",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_aggression",
+    "stringref": "localized17#medal/war_killed_enemy_while_capping_control",
+    "iconlarge": "image#ui_icon_medal_aggression_large"
+}

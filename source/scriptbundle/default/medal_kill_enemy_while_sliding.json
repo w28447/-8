@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:72c0a6af38c49b320a5ab8fcf13b0a33ca9fa555bd4d3f22f892aea36e6843fd
-size 420
+{
+    "description": "localized17#medal/kill_enemy_while_sliding_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_kill_enemy_while_sliding",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_low_blow",
+    "stringref": "localized17#medal/kill_enemy_while_sliding",
+    "iconlarge": "image#ui_icon_medal_low_blow_large"
+}

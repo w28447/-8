@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eefbf943bb007079bc24e6b0ed625057a5b7df0b4d7a1565bcf74d7bfb98682f
-size 329
+{
+    "name": "#hash_389b23eece045425",
+    "type": "#gesture",
+    "gesture": "#hash_596a7f418ed8390b",
+    "gesture2": "#hash_212fccaf5b0870d4",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/the_horror",
+        "icon": "image#hash_1c493da37e2617e2",
+        "isdefault": 0
+    }
+}

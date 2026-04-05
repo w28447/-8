@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5b5fa04c86d6024a0115dc06141597c0421a20cbd32ccbfb0a698bde50d5b350
-size 867
+{
+    "itemlist": [
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&ray_gun_mk2x_t8_item",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&ray_gun_mk2y_t8_item",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&ray_gun_mk2z_t8_item",
+            "maxweight": 50,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 3,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "zombie_supply_stash_raygun_mk_variants",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

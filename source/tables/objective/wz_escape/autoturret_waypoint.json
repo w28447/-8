@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aba970e2ecbc3db8e32b671e48a81be910c21a574d2d1cfa979168263bd8e3b1
-size 576
+{
+    "name": "#autoturret_waypoint",
+    "hAlign": "LEFT",
+    "vAlign": "TOP",
+    "waypointOffset": "0, 0, 0",
+    "waypointShowDistance": false,
+    "waypointHideArrow": false,
+    "waypointClamp": false,
+    "waypointFadeWhenTargeted": false,
+    "waypointFadeWhenInCombat": false,
+    "waypointShowDistanceWhenFar": false,
+    "waypointShowDistanceWhenFarDist": 0,
+    "waypointForceOffscreenStyle": false,
+    "waypointHideWhenNotVisible": false,
+    "shouldCullDistance": false,
+    "cullDistance": 0,
+    "hasLowAmmoState": false,
+    "bundle": {}
+}

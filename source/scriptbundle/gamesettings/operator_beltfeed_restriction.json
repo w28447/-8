@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:84c22bb3975c57f1a107c785aeaa1603e2870aa1b60cc307da7ae56d981667a9
-size 584
+{
+    "descriptionimage": "image#ui_icon_attachment_smgcapacity_opmod_beltfed",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "operator_beltfeed_restriction",
+    "displayname": "localized17#weapon/uber_beltfed",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__smg_capacity_t8__attachments__uber",
+    "isenableddisabled": 0
+}

@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ea11fa75e75e009a1fc3829130efd1b5bb4f482d1f009359386fb4efbf028ff1
-size 568
+{
+    "descriptionimage": "image#ui_icon_equipment_trophy_system",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "equipment_trophysystem_restriction",
+    "displayname": "localized17#weapon/trophy_system",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__trophy_system__restricted",
+    "isenableddisabled": 0
+}

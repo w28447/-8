@@ -1,3 +1,71 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ac61e31f825d2727f5bcb95fca3119d07f46f3dfca7886b8027f83b78b2de3c6
-size 2292
+{
+    "itemlist": [
+        {
+            "minweight": 75,
+            "itementry": "scriptbundle&smg_handling_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_9mm_item",
+            "maxweight": 75,
+            "available": -1
+        },
+        {
+            "minweight": 75,
+            "itementry": "scriptbundle&smg_fastfire_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_45_item",
+            "maxweight": 75,
+            "available": -1
+        },
+        {
+            "minweight": 150,
+            "itementry": "scriptbundle&smg_standard_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_9mm_item",
+            "maxweight": 160,
+            "available": -1
+        },
+        {
+            "minweight": 115,
+            "itementry": "scriptbundle&smg_capacity_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_9mm_item",
+            "maxweight": 120,
+            "available": -1
+        },
+        {
+            "minweight": 150,
+            "itementry": "scriptbundle&smg_accurate_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_45_item",
+            "maxweight": 160,
+            "available": -1
+        },
+        {
+            "minweight": 115,
+            "itementry": "scriptbundle&smg_fastburst_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_45_item",
+            "maxweight": 120,
+            "available": -1
+        },
+        {
+            "minweight": 75,
+            "itementry": "scriptbundle&smg_mp40_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_9mm_item",
+            "maxweight": 75,
+            "available": -1
+        },
+        {
+            "minweight": 120,
+            "itementry": "scriptbundle&smg_folding_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_9mm_item",
+            "maxweight": 150,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 200,
+    "type": "itemspawnlist",
+    "hash_345eba59": 8,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 1,
+    "name": "guns_smgs_dlc1",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

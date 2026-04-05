@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:297f3cf820f44a7571ab17b13506a1c92bc9863df5cbc367dbdc8238c9630c37
-size 293
+{
+    "name": "#hash_545e3f6588310fe8",
+    "type": "#tag",
+    "material": "#hash_7e233e1bd4be2404",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_246c148e69edaef",
+        "icon": "image#loot_ui_icon_tags_dinohunters_02",
+        "isdefault": 0
+    }
+}

@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a89dfed0a6e6079da8c2b0a18d4bc9be097a28a4b4214a8fb982bd29b5e79ef9
-size 187
+{
+    "loot03_ui_icon_blackmarket_itemshop_bundle_enforcer:hash_6c274f86": "image#loot03_ui_icon_blackmarket_itemshop_bundle_enforcer",
+    "name": "mastercraft_enforcer_bundle_shop"
+}

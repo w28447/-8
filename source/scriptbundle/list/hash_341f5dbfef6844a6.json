@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:55fbef88597cf2edf4389f529d65ad3208a4310aa0f1ac6f9ce7137222a30dfe
-size 159
+{
+    "name": "#hash_341f5dbfef6844a6",
+    "type": "lobbymenu",
+    "bundles": [
+        "#director_online",
+        "#director_online_theater"
+    ]
+}

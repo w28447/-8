@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:85d2fc4c61d55a7d9cfe27b5503e780a1898b631c5650e5ebf7e075f6360b93f
-size 402
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_extbarrel_smg_capacity_restriction",
+    "displayname": "localized17#weapon/smg_capacity_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__smg_capacity_t8__attachments__extbarrel",
+    "isenableddisabled": 0
+}

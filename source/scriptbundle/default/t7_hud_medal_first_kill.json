@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5f4a469ad8dd63a2936fa0c08b7a16d3ec5fbdf15d7fefb7b8bd0f7164e88687
-size 358
+{
+    "backingsmall": "image#t7_hud_medal_backing_badassery",
+    "widget": "BadasseryMedal",
+    "name": "t7_hud_medal_first_kill",
+    "backinglarge": "image#t7_hud_medal_backing_badassery_lrg",
+    "iconsmall": "image#t7_hud_medal_first_kill",
+    "stringref": "localized17#medal/first_kill",
+    "iconlarge": "image#t7_hud_medal_first_kill_lrg"
+}

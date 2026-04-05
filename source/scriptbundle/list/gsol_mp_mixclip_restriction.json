@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2c902e9e3b0654343868fb20a4a1905e4ae9ee3be376f7198dea5269a6be1705
-size 611
+{
+    "name": "#gsol_mp_mixclip_restriction",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_mixclip_ar_modular_restriction",
+        "#gamesettings/#attachment_mixclip_lmg_spray_restriction",
+        "#gamesettings/#attachment_mixclip_pistol_fullauto_restriction",
+        "#gamesettings/#attachment_mixclip_smg_fastburst_restriction",
+        "#gamesettings/#attachment_mixclip_smg_standard_restriction",
+        "#gamesettings/#attachment_mixclip_sniper_fastrechamber_restriction",
+        "#gamesettings/#attachment_mixclip_tr_longburst_restriction"
+    ]
+}

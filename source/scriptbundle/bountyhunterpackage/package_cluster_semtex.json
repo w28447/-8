@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c352765b921524118540e413c330539c5b1ffaa79774884a18a6f18302b8c766
-size 546
+{
+    "packageitems": [
+        {
+            "item": "#eq_cluster_semtex_grenade"
+        }
+    ],
+    "hash_ef921c3c": 1,
+    "configstringfiletype": "scriptbundle",
+    "tracktier": 0,
+    "type": "bountyhunterpackage",
+    "hash_85d7cf08": 1,
+    "refillammo": 0,
+    "hash_ee686ece": 0,
+    "refillcost": 0,
+    "name": "package_cluster_semtex",
+    "packagetype": "equipment",
+    "purchasecost": 750,
+    "startammo": 2,
+    "hash_673a16ad": 1,
+    "hash_741010b5": 1,
+    "hash_782dbf79": 1,
+    "hash_767b7337": 1
+}

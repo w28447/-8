@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:04562db528a3bd2ae5f42f10a2ec248dbf2ae12ab69ab9f1eb83c89b232ebd41
-size 404
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_suppressed_smg_handling_restriction",
+    "displayname": "localized17#weapon/smg_handling_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__smg_handling_t8__attachments__suppressed",
+    "isenableddisabled": 0
+}

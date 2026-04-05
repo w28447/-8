@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b89e3c59c064b6f554dbd49e9f290d7627a3a0e6d38b793ee3eed1d17028fdd0
-size 373
+{
+    "lootid": "#charm_avocado_toast",
+    "hash_ff3063df": "model#",
+    "image": "ui_icon_weapon_charms_avocado_toast",
+    "name": "charm_avocado_toast",
+    "displayname": "localized17#menu/charm_avocado_toast",
+    "icon": "ui_icon_weapon_charms_avocado_toast",
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_avocado_toast"
+}

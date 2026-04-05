@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ac99d1deb61416c4b7f2fe23153ae77fee470d7718701c1e90580d5902e98e01
-size 255
+{
+    "name": "c_t8_bo_parachute_celestial_origin",
+    "parachute": "weapon#parachute_wz",
+    "icon": "loot_ui_icon_jumppacks_parachute_celestial",
+    "largeicon": "loot_ui_icon_jumppacks_parachute_celestial_large",
+    "parachutelit": "model#"
+}

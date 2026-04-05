@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:973e981ff1b4425835c4091f5bf4c4b313d3e91bf7de0fd6cc071f2ca9a3925e
-size 291
+{
+    "backingsmall": "image#hash_75692c1dbf2e3c49",
+    "widget": "BadasseryMedal",
+    "name": "events_artillery_barrage_multikill_6",
+    "backinglarge": "image#hash_75692c1dbf2e3c49",
+    "iconsmall": "image#hash_776d1b4ece5247fc",
+    "iconlarge": "image#hash_776d1b4ece5247fc"
+}

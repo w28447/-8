@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4734c6af67f128eb78d3455acceceffa6cf2b3899e8b5ab4ae2ec7d4ce53a4be
-size 330
+{
+    "name": "#hash_28c051f377bb0382",
+    "type": "#gesture",
+    "gesture": "#boast_mobile_ops",
+    "gesture2": "#boast_mobile_ops_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/mobile_ops",
+        "icon": "image#ui_icon_emotes_s2_mobile_ops",
+        "isdefault": 0
+    }
+}

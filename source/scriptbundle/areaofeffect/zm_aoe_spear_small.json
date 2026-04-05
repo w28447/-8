@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:39c1c92c32c03fb2b7dad943eae2f8b80e8982c6b0990545d35b264961aded7d
-size 446
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "areaofeffect",
+    "earthquakescale": 0.4,
+    "effectradius": 350,
+    "vmtype": "client",
+    "end_effect": "fx#hash_595ec25b8b3b0e9b",
+    "name": "zm_aoe_spear_small",
+    "hash_a8609f98": "rumble&damage_light",
+    "endrumble": "rumble&damage_heavy",
+    "earthquakeduration": 2,
+    "loop_effect": "fx#hash_154f7e9ec688102d",
+    "startrumble": "rumble&damage_heavy"
+}

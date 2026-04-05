@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:14b8877918a296a45cd69b4df9b91f65bdfbb90d6291302c0ccc1fe4a7e5a807
-size 376
+{
+    "name": "#c_t8_zmb_blightfather1_noreveal",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 2,
+    "bodyImpactType": 2,
+    "destructibleDef": "#c_t8_zmb_blightfather1_dst_def_noreveal",
+    "ragdollDef": "#hash_37dfd3e67b2689ae",
+    "body": "#c_t8_zmb_blightfather_body1_noreveal",
+    "head": "#c_t8_zmb_blightfather_head1_noreveal"
+}

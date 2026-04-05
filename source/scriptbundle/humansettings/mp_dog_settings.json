@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1cd5e2a986a5364407f5a57fb9382e6fbf67d3df1d43cc56946faefe535378f2
-size 192
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "humansettings",
+    "chargemeleedist": 160,
+    "vmtype": "server",
+    "name": "mp_dog_settings",
+    "normalmeleedist": 64
+}

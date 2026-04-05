@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:533d5f32f94f489bf0ce01018722d4789fc102fccc32cb166cd58b807e2faaf3
-size 326
+{
+    "hash_406d64b331cbbb3b:hash_6c274f86": "image#hash_406d64b331cbbb3b",
+    "nametext": "localized17#hash_e2a0e51a0bbeb49",
+    "name": "outfit_warrior_epic1_prophet_sunset_bundle_shop",
+    "desctext": "localized17#hash_2b7f2d614d161f1d",
+    "heroes/technomancer:hash_975cc0d1": "localized17#heroes/technomancer"
+}

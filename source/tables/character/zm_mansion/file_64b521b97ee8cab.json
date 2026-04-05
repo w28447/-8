@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8bcf0aa82a4613487964d9493528ed38851f00d1e134324685d9b2a5a76f2c90
-size 283
+{
+    "name": "#hash_64b521b97ee8cab",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 2,
+    "bodyImpactType": 2,
+    "gibDef": "#c_t8_zmb_dlc1_nosferatu1_gib_def",
+    "ragdollDef": "#nosferatu",
+    "body": "#c_t8_zmb_dlc1_nosferatu_humanoid_fb1"
+}

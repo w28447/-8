@@ -1,3 +1,45 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b7e4d116909979ed61d54620b2e0b4e58f131ce533550c8444915339f00a22f5
-size 1220
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&resource_item_paint",
+            "maxweight": 1,
+            "available": 100
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&resource_item_paint",
+            "maxweight": 1,
+            "available": 100
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&resource_item_paint",
+            "maxweight": 1,
+            "available": 100
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&resource_item_paint",
+            "maxweight": 1,
+            "available": 100
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&resource_item_paint",
+            "maxweight": 1,
+            "available": 75
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 1024,
+    "type": "itemspawnlist",
+    "hash_345eba59": 5,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 1,
+    "name": "resource_item_paint_list",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

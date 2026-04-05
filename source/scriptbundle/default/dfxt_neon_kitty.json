@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:410aefad6b4f2a7e14679e3b940e59e7180c1b28bfd1ad1cdc4f92e7c966107e
-size 452
+{
+    "hash_6a36c78c": "j_wrist_le",
+    "hash_82aadb9b": "j_knee_le",
+    "dropoff": "fx#hash_2755559d0ab813ce",
+    "contrails": "fx#hash_413e29a5a22e02c3",
+    "name": "dfxt_neon_kitty",
+    "icon": "loot_ui_icon_jumppacks_trail_neon_kitty",
+    "hash_ccb00fe4": "j_wrist_ri",
+    "body_trail_3p": "fx#hash_1424ad47ed0b6540",
+    "largeicon": "loot_ui_icon_jumppacks_trail_neon_kitty_large",
+    "body_trail": "fx#hash_142bb947ed119852"
+}

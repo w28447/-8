@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3bdcfeef9bd6309edf63588090e11f13eefc4f8936228ab8327911daf1bb872e
-size 215
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_without_will_to_win",
+    "quote": "localized17#hash_78e43e7628790071",
+    "author": "localized17#hash_62c9860d3541cf7e"
+}

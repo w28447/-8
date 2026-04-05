@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2002b1561d7f13c43112b16f5a3b0f5d797b7677cf70b07e35b0f03bcdcf8825
-size 648
+{
+    "hinttext": "localized17#menu/wave_spawn_delay_hint",
+    "configstringfiletype": "scriptbundle",
+    "value8": "30",
+    "value2": "2.5",
+    "value3": "5",
+    "value1": "0",
+    "value6": "15",
+    "value7": "20",
+    "value4": "7.5",
+    "value5": "10",
+    "type": "gamesettings",
+    "label": "localized17#menu/x_seconds",
+    "hash_5a6dee5a": 0,
+    "name": "wave_respawn_delay",
+    "displayname": "localized17#menu/wave_spawn_delay",
+    "label1": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
+    "optionscount": 8,
+    "hash_765cfd09": 0,
+    "setting": "waveRespawnDelay",
+    "isenableddisabled": 0
+}

@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9e95b48b907857ceb395e879e4be8fcf465bec130010eba3a4aad9d26c4a73d7
-size 297
+{
+    "name": "#hash_36efbcfc7274d1a3",
+    "type": "#tag",
+    "material": "#hash_2ffabbf2edd9332f",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_353177512f75fb16",
+        "icon": "image#loot_ui_icon_tags_vampire_hunter_01",
+        "isdefault": 0
+    }
+}

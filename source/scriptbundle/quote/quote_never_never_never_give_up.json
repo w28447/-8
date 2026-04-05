@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7eecce2f484bd9df51205843bba32e96970d0004f0785e7c91408391a2c9e1da
-size 221
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_never_never_never_give_up",
+    "quote": "localized17#hash_36c295381b1e9b9d",
+    "author": "localized17#hash_28304a9b00e1403e"
+}

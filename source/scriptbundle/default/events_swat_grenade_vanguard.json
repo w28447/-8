@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:37691842d936ae24364a1b1960b627b4f87531d86d5ae15cb5e652dc1d5bdf51
-size 283
+{
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
+    "widget": "BadasseryMedal",
+    "name": "events_swat_grenade_vanguard",
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_4c2f93a823e00ed2",
+    "iconlarge": "image#hash_4c2f93a823e00ed2"
+}

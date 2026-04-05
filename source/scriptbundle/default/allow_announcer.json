@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:44ddaeeeea3702a47b5a8f7fbeb927fbd3ca0a9dd34d90c7d8afe479814227bc
-size 299
+{
+    "hinttext": "localized17#menu/announcer_hint",
+    "hash_5a6dee5a": 0,
+    "name": "allow_announcer",
+    "displayname": "localized17#menu/announcer",
+    "hash_54e336e4": 0,
+    "optionscount": 0,
+    "hash_765cfd09": 0,
+    "setting": "allowAnnouncer",
+    "isenableddisabled": 1
+}

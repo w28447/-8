@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:229df9efdec8c257cdf5144d9cf91ac360d95d84478c4893223a72e50ed7cbe7
-size 205
+{
+    "loot04_ui_icon_blackmarket_itemshop_bundle_tr_midburst:hash_6c274f86": "image#loot04_ui_icon_blackmarket_itemshop_bundle_tr_midburst",
+    "name": "camo_active_sig_tr_midburst_bomber_base_shop"
+}

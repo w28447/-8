@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:318d5a596571e7bff5a1f3a5c0bc9122f79bde4eb11a10c0f2ca956acfc47865
-size 297
+{
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
+    "widget": "BadasseryMedal",
+    "name": "events_artillery_barrage_objective_defense",
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_2f8853f57a4bee70",
+    "iconlarge": "image#hash_2f8853f57a4bee70"
+}

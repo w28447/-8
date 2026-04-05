@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7edf05c554daa9e4dd127e710f64b29ac0916a12433a5961cd9d0c5a3b7aa50d
-size 537
+{
+    "globstate": 1,
+    "numplasma": 0,
+    "hash_92340672": 0,
+    "skuid": 0,
+    "hash_b889f476": 0,
+    "droptype": 2,
+    "plasmaprice": 30,
+    "descriptiontext": "localized17#zmui/carbon_combo_desc",
+    "hash_51a0da4c": 0,
+    "name": "zm_lab_carbon_combo",
+    "popupname": "localized17#zmui/carbon_combo",
+    "hash_619ae0f2": 1,
+    "hash_39661d6e": 0,
+    "descriptiontitle": "localized17#zmui/carbon_combo",
+    "ui_icon_laboratory_offer1": "image#ui_icon_laboratory_offer1",
+    "hash_e8a9006": "white"
+}

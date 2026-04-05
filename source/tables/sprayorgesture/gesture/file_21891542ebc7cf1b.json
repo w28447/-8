@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:802c26a6d96b3f62a8114a7018f26cec81e997ff3825df6dcaebe02be28916fc
-size 337
+{
+    "name": "#hash_21891542ebc7cf1b",
+    "type": "#gesture",
+    "gesture": "#hash_179463a7c99b37c3",
+    "gesture2": "#hash_656d857fe23bde76",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/shooting_blanks",
+        "icon": "image#ui_icon_emotes_jokersgun",
+        "isdefault": 0
+    }
+}

@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0379254a8a9af4e277356837e71759d52a730c50a2c885ebd598f4e68d87c1a4
-size 348
+{
+    "name": "#loot_emote_exotic_shared_police_badge",
+    "type": "#gesture",
+    "gesture": "#boast_police_badge",
+    "gesture2": "#boast_police_badge_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/bookem",
+        "icon": "image#ui_icon_emotes_s3_police_badge",
+        "isdefault": 0
+    }
+}

@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb764406b234361aa64b4a0a5425263ec38464b9cb19f6496370217bbf804cf8
-size 344
+{
+    "lootid": "#charm_bullet",
+    "hash_ff3063df": "model#",
+    "image": "ui_icon_weapon_charms_bullet",
+    "name": "charm_sniper_round",
+    "displayname": "localized17#menu/charm_sniper_bullet",
+    "icon": "ui_icon_weapon_charms_bullet",
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_bullet"
+}

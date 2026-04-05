@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:11ee8a3f03bf0f2fa6e2d0c85892dcca5edc2456f3e4efbd48bff7865cb436cd
-size 436
+{
+    "backingsmall": "image#t7_hud_medal_backing_gamemode",
+    "widget": "BadasseryMedal",
+    "name": "t7_hud_medal_flag_carrier_kill_return_close",
+    "backinglarge": "image#t7_hud_medal_backing_gamemode_lrg",
+    "iconsmall": "image#t7_hud_medal_flag_carrier_kill_return_close",
+    "stringref": "localized17#medal/flag_carrier_kill_return_close",
+    "iconlarge": "image#t7_hud_medal_flag_carrier_kill_return_close_lrg"
+}

@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:69273e7e08d932eb109bd81e55663bfe5ad0e9505d0bed0505c941fb8f13322b
-size 473
+{
+    "smoke_multikill_2": "#smoke_multikill_2",
+    "smoke_multikill_2": "#smoke_multikill_2",
+    "smoke_kill": "#smoke_kill",
+    "configstringfiletype": "scriptbundle",
+    "type": "scoreevents",
+    "vmtype": "both",
+    "smoke_multikill_2": "#smoke_multikill_2",
+    "name": "eq_smoke_scoreevents",
+    "customsettingstype": "ability",
+    "smoke_multikill_2": "#smoke_multikill_2",
+    "hash_fcd2ff3a": 1,
+    "smoke_multikill_2": "#smoke_multikill_2"
+}

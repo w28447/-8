@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:090143d8a1af502fa9ea496dff58f0dc66834ae5513ac8a5b6f7900b46740ceb
-size 523
+{
+    "buttonimage": "image#ui_icon_blackmarket_promos_hudson_button_small",
+    "popupimage": "image#ui_icon_blackmarket_promos_hudson_large_preview",
+    "nametext": "localized17#hash_1ce9792483411e5d",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
+    "name": "hudson_blackout_character_bundle",
+    "desctext": "localized17#hash_7e12d747636ecb67",
+    "previewimage": "image#ui_icon_blackmarket_promos_hudson_item_detail",
+    "reserveimage": "image#ui_icon_blackmarket_promos_hudson_button_large"
+}

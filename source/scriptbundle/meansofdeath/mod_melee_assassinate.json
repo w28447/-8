@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0e296aa80367bd986b8a388308692f86cd352a43c505f1f604feb994c3f977a2
-size 327
+{
+    "mod": "MOD_MELEE_ASSASSINATE",
+    "configstringfiletype": "scriptbundle",
+    "type": "meansofdeath",
+    "name": "mod_melee_assassinate",
+    "displayname": "localized17#hash_7de533f7739da407",
+    "icon": "image#ui_icon_meansofdeath_assassinate",
+    "iconlarge": "image#ui_icon_meansofdeath_assassinate_xl"
+}

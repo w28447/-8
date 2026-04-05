@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4bc8c49a033a8b4f5792b24d49ce66d5346f47bd05e69080fdf26511ba459a9f
-size 251
+{
+    "name": "#c_t8_mp_spe_engineer1_skin1",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "body": "#c_t8_mp_spe_engineer_body1_skin1",
+    "head": "#c_t8_mp_spe_engineer_head1_skin1"
+}

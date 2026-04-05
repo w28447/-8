@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9ba14f09a1e083ec8e39fb5e556ac5f3c1475adb6b17298b9fc60a62e164bc4e
-size 406
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_grip2_sniper_powersemi_restriction",
+    "displayname": "localized17#weapon/sniper_powersemi_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__sniper_powersemi_t8__attachments__grip2",
+    "isenableddisabled": 0
+}

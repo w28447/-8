@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:384c9b3de4a2725992f3b9d9582da87a67728ecab60f3f79572445eb5210b1b7
-size 340
+{
+    "lootid": "#charm_lil_ray",
+    "hash_ff3063df": "model#",
+    "image": "ui_icon_weapon_charms_lil_ray",
+    "name": "charm_lil_ray",
+    "displayname": "localized17#hash_581f48e2025c4244",
+    "icon": "ui_icon_weapon_charms_lil_ray",
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_lil_ray"
+}

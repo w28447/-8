@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:386c3aef611485143f476451ea0b7cea440e2644c38c02e070c9ed9aef91c28d
-size 282
+{
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
+    "widget": "BadasseryMedal",
+    "name": "events_cluster_semtex_threw",
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_308d7b53ad12375a",
+    "iconlarge": "image#hash_308d7b53ad12375a"
+}

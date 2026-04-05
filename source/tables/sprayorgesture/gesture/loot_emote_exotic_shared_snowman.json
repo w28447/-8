@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:74007196e36cd781adb0d7283f3908570b6dca386faea72d498384c6ab05285c
-size 336
+{
+    "name": "#loot_emote_exotic_shared_snowman",
+    "type": "#gesture",
+    "gesture": "#boast_snowman",
+    "gesture2": "#boast_snowman_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#hash_3cfb9d25ba3f855c",
+        "icon": "image#ui_icon_emotes_s2_snowman",
+        "isdefault": 0
+    }
+}

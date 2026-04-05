@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:73e3fa061ccf368627394b453fc4b623f3e0230da72067b1b5567c2e99446647
-size 470
+{
+    "name": "#hash_1e2b8d2d3ab47434",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#player_num_lives",
+        "#gamesettings/#player_respawn_delay",
+        "#gamesettings/#player_force_respawn",
+        "#gamesettings/#wave_respawn_delay",
+        "#gamesettings/#spawn_suicide_penalty",
+        "#gamesettings/#spawn_teamkilled_penalty",
+        "#gamesettings/#spawn_select",
+        "#gamesettings/#team_num_lives"
+    ]
+}

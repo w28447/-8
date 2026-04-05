@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6fa4d0d19dee8f44b3bb4d5c90e8ba6469d649f4e358858e66d8452f059315e7
-size 229
+{
+    "hash_3d2ed2ca90af8fe5:hash_6c274f86": "image#hash_3d2ed2ca90af8fe5",
+    "nametext": "localized17#hash_3041bf105b58c16a",
+    "name": "mastercraft_vampire_hunter",
+    "desctext": "localized17#hash_1a96fb3ef33c416a"
+}

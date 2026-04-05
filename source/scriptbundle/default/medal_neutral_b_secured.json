@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:56e0d25270b9f37b9ff3335cab0446d2bc4dd4e475aba5a3a5f0795b2f3b9070
-size 401
+{
+    "description": "localized17#medal/neutral_b_secured_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_neutral_b_secured",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_opening_move",
+    "stringref": "localized17#medal/neutral_b_secured",
+    "iconlarge": "image#ui_icon_medal_opening_move"
+}

@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a8aae2d71e02967a1f5c02b4455ec6863e3a69c3d62d484504d4d414cd41e752
-size 420
+{
+    "durations": [
+        {
+            "duration": 1,
+            "archetype": "human",
+            "effecttype": "flash"
+        },
+        {
+            "duration": 1,
+            "archetype": "mp_dog",
+            "effecttype": "flash"
+        }
+    ],
+    "configstringfiletype": "scriptbundle",
+    "type": "weapondamageeffectype",
+    "name": "damageeffecttype_flash",
+    "hash_c672f15f": 2
+}

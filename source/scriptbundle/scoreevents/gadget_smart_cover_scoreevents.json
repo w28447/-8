@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2c447de2d7c939d7cd3cc9873193410f41b7d7b66429b5bf899403a96ae2a1ff
-size 718
+{
+    "deployable_cover_multikill_2": "#deployable_cover_multikill_2",
+    "deployable_cover_multikill_2": "#deployable_cover_multikill_2",
+    "deployable_cover_kill": "#deployable_cover_kill",
+    "configstringfiletype": "scriptbundle",
+    "type": "scoreevents",
+    "deployable_cover_deployed": "#deployable_cover_deployed",
+    "vmtype": "both",
+    "deployable_cover_multikill_2": "#deployable_cover_multikill_2",
+    "name": "gadget_smart_cover_scoreevents",
+    "customsettingstype": "ability",
+    "deployable_cover_multikill_2": "#deployable_cover_multikill_2",
+    "deployable_cover_shutdown": "#deployable_cover_shutdown",
+    "deployable_cover_multikill_2": "#deployable_cover_multikill_2"
+}

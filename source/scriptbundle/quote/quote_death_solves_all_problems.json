@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7641e78946189d1b7b04162521c0a4c2c92788f546ebc06dec4e5439a7387f2d
-size 221
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_death_solves_all_problems",
+    "quote": "localized17#hash_2a949cf6eb9a8797",
+    "author": "localized17#hash_6c4fa9b472882f7e"
+}

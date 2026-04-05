@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:edb8b7578e88c58aa4f07c0e0e9d74208a3498736f31b2dbb101ca7c585486bf
-size 327
+{
+    "configstringfiletype": "scriptbundle",
+    "hash_ce9b2d06": "gsol_zm_talismans",
+    "type": "gamesettingoptioncategory",
+    "name": "gsoc_zm_talismans",
+    "hash_40c3c9f045a1912d:hash_dea17465": "localized17#hash_40c3c9f045a1912d",
+    "hash_4813595698c26eb:hash_608158f2": "localized17#hash_4813595698c26eb"
+}

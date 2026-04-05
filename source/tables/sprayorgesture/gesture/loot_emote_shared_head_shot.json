@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:95a3e889f412f4a19b174bf60e2b9066dc44353ee463930f2945f17c7ca5724c
-size 333
+{
+    "name": "#loot_emote_shared_head_shot",
+    "type": "#gesture",
+    "gesture": "#boast_head_shot",
+    "gesture2": "#boast_head_shot_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/poppin_grapes",
+        "icon": "image#ui_icon_emotes_head_shot",
+        "isdefault": 0
+    }
+}

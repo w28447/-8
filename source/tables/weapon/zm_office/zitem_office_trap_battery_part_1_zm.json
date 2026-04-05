@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:40dd0216e18253c7a3d516866f431a8c9f9b8b79da955edb9e5b240d0dae1e3d
-size 1303
+{
+    "name": "#zitem_office_trap_battery_part_1_zm",
+    "baseWeapon": "#hash_31fb0b01bd55c7bf",
+    "streamkey": "#hash_571b85bc5ae4a7d",
+    "worldModelTagRight": "tag_weapon_right",
+    "worldModelTagLeft": "tag_weapon_left",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_inhand",
+    "scrstr_11a4": "tag_inhand",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "ZOMBIES",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "tunables1": "#hash_2eff5bc43e9a54e5",
+    "viewmodel": [
+        "#viewmodel_default"
+    ],
+    "worldModel": [
+        "#p7_zm_der_trap_control_box"
+    ],
+    "inventoryIconZm": "#$blacktransparent"
+}

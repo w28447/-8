@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c2128811c4f7fe288d606e2d0f03a87838a0d4b08028a5d7e9b21d49d16b90cb
-size 759
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&vehicle_list_tank_wz",
+            "maxweight": 1,
+            "available": 2
+        },
+        {
+            "minweight": 1,
+            "maxweight": 1,
+            "available": 0
+        },
+        {
+            "minweight": 1,
+            "maxweight": 1,
+            "available": 0
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 20000,
+    "type": "itemspawnlist",
+    "hash_345eba59": 3,
+    "vehiclespawner": 1,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 1,
+    "name": "open_skyscraper_vehicles_tank_heroes",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

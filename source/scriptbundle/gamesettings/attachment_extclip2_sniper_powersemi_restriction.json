@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e6850327d109be760bc124752274081f4b4fdff62f79440bfdf90ba809821d47
-size 412
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_extclip2_sniper_powersemi_restriction",
+    "displayname": "localized17#weapon/sniper_powersemi_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__sniper_powersemi_t8__attachments__extclip2",
+    "isenableddisabled": 0
+}

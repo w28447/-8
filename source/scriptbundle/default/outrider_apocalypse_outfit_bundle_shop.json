@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d181ac99f9cf1767751f37bca55589190c2b513a4f05e6e6229e1ddac3571ee8
-size 323
+{
+    "loot05_ui_icon_blackmarket_itemshop_bundle_apocalypse_outrider:hash_6c274f86": "image#loot05_ui_icon_blackmarket_itemshop_bundle_apocalypse_outrider",
+    "nametext": "localized17#hash_16a5a72deae8f8b3",
+    "name": "outrider_apocalypse_outfit_bundle_shop",
+    "desctext": "localized17#hash_7a42ef2e0cfb52a5"
+}

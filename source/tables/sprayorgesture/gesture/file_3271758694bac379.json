@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1d34fa7a2bc2c56c287a252404b36a764a61a0cfdcf8486f0ada1f7394f47e67
-size 330
+{
+    "name": "#hash_3271758694bac379",
+    "type": "#gesture",
+    "gesture": "#hash_624b211304edd177",
+    "gesture2": "#hash_11aa992272feb040",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/barn_burner",
+        "icon": "image#hash_67632f73604cb68b",
+        "isdefault": 0
+    }
+}

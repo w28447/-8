@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:18eed1704176a8410650ca1d1e67d5636f408be0406fb14471ff69ed6a568327
-size 339
+{
+    "name": "#hash_4b8add27ad045f0c",
+    "type": "#gesture",
+    "gesture": "#hash_4c1fb006080f4da3",
+    "gesture2": "#hash_138943942de7330c",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/scottish_unicorn",
+        "icon": "image#ui_icon_emotes_s2_ratchet",
+        "isdefault": 0
+    }
+}

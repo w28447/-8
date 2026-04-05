@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5e7d44e3a6885ba9a8b2997b6d519ad2d13c942d386318f90a8eb561675f50a9
-size 348
+{
+    "name": "#loot_emote_shared_finger_glasses",
+    "type": "#gesture",
+    "gesture": "#boast_finger_glasses",
+    "gesture2": "#boast_finger_glasses_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/i_can_see",
+        "icon": "image#ui_icon_emotes_fingerglasses",
+        "isdefault": 0
+    }
+}

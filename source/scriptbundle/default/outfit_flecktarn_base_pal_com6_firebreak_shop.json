@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e45fc24d91cb5f64d6d620b91e6bb943741cc7349b88ced6cbe7828c010289ab
-size 140
+{
+    "hash_1b5fb461775ae76e:hash_6c274f86": "image#hash_1b5fb461775ae76e",
+    "name": "outfit_flecktarn_base_pal_com6_firebreak_shop"
+}

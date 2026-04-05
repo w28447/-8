@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e195d2d30dd4f2e99f19b43ad3fc92a431f6fc8ff253731c5b80b0d066f2d0ec
-size 248
+{
+    "configstringfiletype": "scriptbundle",
+    "desc": "localized17#hash_33ad8bf503f3a0b4",
+    "image": "image#loot02_ui_icon_outfit_holidays_extra_warpaint_dragon_stanton",
+    "stat": "#reward_2",
+    "name": "zm_winter_2018_reward_2"
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:14883c2da558c5a34e6e501fc609ef0f996ba5a78b6eb3609754bac453bbf561
-size 382
+{
+    "nameStr": "craft_paintshopdata",
+    "name": "#craft_paintshopdata",
+    "ddlPath": "#gamedata/ddl/generated/class_paintshop.ddl",
+    "files": [
+        {
+            "fileName": "craft_paintshopdata"
+        }
+    ],
+    "size": 28672,
+    "readOnLogin": false,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": true
+}

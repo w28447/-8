@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e3457570e5bcdd26dd9677b939cc2600abafabff25d9bc14dbe74dd52a78420a
-size 428
+{
+    "description": "localized17#medal/kill_enemy_injuring_teammate_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_kill_enemy_injuring_teammate",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_savior",
+    "stringref": "localized17#medal/kill_enemy_injuring_teammate",
+    "iconlarge": "image#ui_icon_medal_savior_large"
+}

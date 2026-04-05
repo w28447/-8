@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1d29007c8d41171b19a7595410200cfb4ac0d5da02818b60b4241aedce469fb2
-size 406
+{
+    "description": "localized17#hash_3a1e617f1d018e94",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_gravity_slam_multikill_x2",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_blast_radius",
+    "stringref": "localized17#hash_632c82c8c8b73ac8",
+    "iconlarge": "image#ui_icon_medal_blast_radius_large"
+}

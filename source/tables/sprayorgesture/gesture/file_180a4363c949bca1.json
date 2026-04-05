@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:58cd0dce4734ab2b883b5c207e7271532647131254337605df81b7a6b4a8b9e3
-size 330
+{
+    "name": "#hash_180a4363c949bca1",
+    "type": "#gesture",
+    "gesture": "#hash_2e772fde10382f6",
+    "gesture2": "#hash_4fa534f2805280e1",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/icu",
+        "icon": "image#ui_icon_emotes_s2_watching_you",
+        "isdefault": 0
+    }
+}

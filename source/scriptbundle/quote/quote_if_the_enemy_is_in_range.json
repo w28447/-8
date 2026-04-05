@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:18a65d8fe39a0328257fb576b51cb856ca1d0c21baa68e6d98079d033c8ef315
-size 220
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_if_the_enemy_is_in_range",
+    "quote": "localized17#hash_6d3d203dda6b97b6",
+    "author": "localized17#hash_6dd43640e0dd2745"
+}

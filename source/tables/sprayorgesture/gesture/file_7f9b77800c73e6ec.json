@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:42479d5eaad9156d8374db90f0e2e017f25f875772f87266decbed4417add9de
-size 334
+{
+    "name": "#hash_7f9b77800c73e6ec",
+    "type": "#gesture",
+    "gesture": "#hash_23eafd7f832f21f7",
+    "gesture2": "#hash_2916b7de979b48c0",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/you_smell_bacon",
+        "icon": "image#hash_12510cb2b896708d",
+        "isdefault": 0
+    }
+}

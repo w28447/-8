@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a138d665083db27b8e7ed6d702276d7b0c621ba2e1c92b714a3f17ba555e099c
-size 212
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_plans_are_useless",
+    "quote": "localized17#hash_35092abdcf1a507f",
+    "author": "localized17#hash_f35fc9fbb6bdbe2"
+}

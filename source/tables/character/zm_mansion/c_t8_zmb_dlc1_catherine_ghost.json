@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:be0b65ab1ba6d970b640b37ef6dcfae315b1e8bc1df48a61f437df5c699044fc
-size 257
+{
+    "name": "#c_t8_zmb_dlc1_catherine_ghost",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "body": "#c_t8_zmb_dlc1_catherine_ghost_body",
+    "head": "#c_t8_zmb_dlc1_catherine_ghost_head"
+}

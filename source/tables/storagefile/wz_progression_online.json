@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1180322301a5c82c774d55e75ae45cb6e37cdfa04aeed5642b04f0b4bb36005e
-size 388
+{
+    "nameStr": "wz_progression_online",
+    "name": "#wz_progression_online",
+    "ddlPath": "#gamedata/ddl/generated/wz_progression.ddl",
+    "files": [
+        {
+            "fileName": "wz_progression_online"
+        }
+    ],
+    "size": 112640,
+    "readOnLogin": true,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
+}

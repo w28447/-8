@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0418f233258fb3dddb069d675224ec31f4319ab17e3868c3c24b3f23a3645a7a
-size 332
+{
+    "radiation_field_kill": "#radiation_field_kill",
+    "configstringfiletype": "scriptbundle",
+    "type": "scoreevents",
+    "vmtype": "both",
+    "name": "gadget_radiation_field_mp_scoreevents",
+    "customsettingstype": "ability",
+    "radiation_field_shutdown": "#radiation_field_shutdown",
+    "hash_fcd2ff3a": 1
+}

@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:00a52b53905374d0691b4bb971cec1fc40624d21c6e33452df4cd0363ed75ca9
-size 294
+{
+    "name": "#hash_4deb3278c32408b5",
+    "type": "#tag",
+    "material": "#hash_33a588a3fab84219",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_1405bd1d2de2edbe",
+        "icon": "image#loot_ui_icon_tags_muertos_seraph",
+        "isdefault": 0
+    }
+}

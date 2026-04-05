@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3815dc75381b035221f68f9885998a167db60cbfcae2b22a1c6cf60d18dbe853
-size 222
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_if_you_feel_down_yesterday",
+    "quote": "localized17#hash_671fa29325f4784b",
+    "author": "localized17#hash_3293e98966efd5eb"
+}

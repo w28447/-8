@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fb2f3a91b2567fbfbd171de538b19a7cb3d7bb4b957ce9cca75a3bf033e6d4f8
-size 364
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "mpdialog_scorestreak",
+    "damaged": "#hash_152cdc0aa3362a38",
+    "vmtype": "both",
+    "timecheck": "#hash_430c053687827ccb",
+    "name": "blops_pilot2_kls_attack_chopper",
+    "arrive": "#hash_33e3d28c849836b3",
+    "timeout": "#hash_43167736878b9306",
+    "kill": "#hash_11b2be0c694a595c"
+}

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c705a77966366dd3f5ca139e6bc5adcf4f8b220d768c76add1996bfc324d821d
-size 228
+{
+    "hash_94166112": "model#",
+    "name": "c_t8_bo_wingsuit_kraken",
+    "icon": "loot_ui_icon_jumppacks_wingsuit_kraken",
+    "largeicon": "loot_ui_icon_jumppacks_wingsuit_kraken_large",
+    "hash_5677bd3d": "model#"
+}

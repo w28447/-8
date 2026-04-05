@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ca301aed14533007677ebb660e49b61cf23c86f074152369808247d14f813c94
-size 469
+{
+    "nameStr": "team_data",
+    "name": "#team_data",
+    "ddlPath": "#gamedata/ddl/generated/team_data.ddl",
+    "files": [
+        {
+            "fileName": "team_data"
+        },
+        {
+            "fileName": "team_data_1"
+        },
+        {
+            "fileName": "team_data_2"
+        }
+    ],
+    "size": 2048,
+    "readOnLogin": false,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": true
+}

@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:064623e09091c947d8a6c2a804bf2dae78f56bb475bac2be4ecb08feafa22d34
-size 153
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "mpdialog_scorestreak",
+    "vmtype": "both",
+    "name": "cdp_droneop1_kls_carepackage"
+}

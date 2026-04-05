@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:51bddada12b5c1d59565c59a7dce0a50a6377a50b875249d6d7213e083f14167
-size 396
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_damage_tr_longburst_restriction",
+    "displayname": "localized17#weapon/tr_longburst_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__tr_longburst_t8__attachments__damage",
+    "isenableddisabled": 0
+}

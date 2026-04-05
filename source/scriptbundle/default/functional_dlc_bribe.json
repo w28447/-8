@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e8f42a63e0b331ab98244f8a5b93a0d054355ed097751c87162607fafa72975d
-size 368
+{
+    "buttonimage": "image#hash_4d0d3e52fedf9a80",
+    "popupimage": "image#hash_4ed843ea722d2d8e",
+    "nametext": "localized17#hash_448260d8cfcab193",
+    "categorytext": "localized17#mpui/bm_bribe",
+    "name": "functional_dlc_bribe",
+    "desctext": "localized17#hash_b51caa0abca8b45",
+    "previewimage": "image#ui_icon_blackmarket_stream_weapon_ultra"
+}

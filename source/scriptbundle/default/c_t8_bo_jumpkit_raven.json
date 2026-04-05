@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0cb62b2ad8eb11f78791522efe5c369641ff10d7bb6e0a57f75cfa823702d62d
-size 382
+{
+    "lootid": "#hash_59ebb3e88c72c85d",
+    "wingsuit": "scriptbundle&c_t8_bo_wingsuit_raven",
+    "feature": "loot_season_05",
+    "name": "c_t8_bo_jumpkit_raven",
+    "displayname": "localized17#hash_312562fbade6a775",
+    "hash_4fa85a25": "scriptbundle&dfxt_raven",
+    "entitlement": "#hash_5bd04e15802702be",
+    "parachute": "scriptbundle&c_t8_bo_parachute_raven"
+}

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f2e1f25be9e7f12cd62a926e9d989f5c56a3ab882ce5fa230be3bf58757177e9
-size 245
+{
+    "name": "c_t8_bo_parachute_st_patty",
+    "parachute": "weapon#parachute_wz",
+    "icon": "loot_ui_icon_jumppacks_parachute_st_patty",
+    "largeicon": "loot_ui_icon_jumppacks_parachute_st_patty_large",
+    "parachutelit": "model#"
+}

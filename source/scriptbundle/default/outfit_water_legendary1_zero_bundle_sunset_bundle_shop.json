@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a51bdb01a74d28d8dc2a0513297b8e59bab2f2b343755ee0abb80a4704fcc377
-size 466
+{
+    "detailsicon": "image#loot07_ui_icon_blackmarket_itemdetail_water_zero",
+    "loot07_ui_icon_blackmarket_itemshop_water_zero:hash_6c274f86": "image#loot07_ui_icon_blackmarket_itemshop_water_zero",
+    "nametext": "localized17#hash_1264a46ec0d1a356",
+    "name": "outfit_water_legendary1_zero_bundle_sunset_bundle_shop",
+    "desctext": "localized17#hash_2b7f2d614d161f1d",
+    "hash_4e06263ae2b9a394:hash_975cc0d1": "localized17#hash_4e06263ae2b9a394"
+}

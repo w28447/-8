@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4d1971483352b899b126254b163588d86254f19e17f08af334d6bcca3aa5d0aa
-size 309
+{
+    "name": "#loot_emote_shared_nay",
+    "type": "#gesture",
+    "gesture": "#boast_nay",
+    "gesture2": "#boast_nay_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/disapprove",
+        "icon": "image#ui_icon_emotes_s2_nay",
+        "isdefault": 0
+    }
+}

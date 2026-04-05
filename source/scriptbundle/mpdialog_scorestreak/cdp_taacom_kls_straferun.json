@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4a695ead1161c27f24ec6ec1d61f1cd28ae2c232a9f486c74e8fad81257a3bbb
-size 443
+{
+    "destroyed": "#hash_2c223c64a38aa4d7",
+    "ready": "#hash_29efaa7e8202e3b3",
+    "configstringfiletype": "scriptbundle",
+    "type": "mpdialog_scorestreak",
+    "vmtype": "both",
+    "name": "cdp_taacom_kls_straferun",
+    "hash_1abcc24108c8c6d1:hash_6f9447b2": "#hash_1abcc24108c8c6d1",
+    "hash_1abcbf4108c8c1b8:hash_61d32c30": "#hash_1abcbf4108c8c1b8",
+    "hash_1abcc14108c8c51e:hash_b6b855f9": "#hash_1abcc14108c8c51e"
+}

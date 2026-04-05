@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9ab6609ab84d5ba64b2033284cd37cb5691d60f921f05f69d8d0881b7c8418c9
-size 329
+{
+    "name": "#loot_emote_shared_after_you",
+    "type": "#gesture",
+    "gesture": "#boast_after_you",
+    "gesture2": "#boast_after_you_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/after_you",
+        "icon": "image#ui_icon_emotes_after_you",
+        "isdefault": 0
+    }
+}

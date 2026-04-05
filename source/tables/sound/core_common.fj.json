@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:62d402d2b3019d4cb1d78b2891708be219409eb86ea00ce1b706d4ec735738e7
-size 634
+{
+    "name": "core_common.fj",
+    "zone": "core_common",
+    "gameLanguage": "japanese_full",
+    "soundLanguage": "fj",
+    "nameHash": "#core_common.fj",
+    "patchZone": true,
+    "alias": [],
+    "duck": [],
+    "ambients": [],
+    "scriptIdLookups": [],
+    "streamKeysSABL": {
+        "streamKey1": "#hash_308ef3a161d6e024",
+        "dataSize1": 2048,
+        "fileKey": "#hash_597dd14e21059661",
+        "fileLen": 2048
+    },
+    "streamKeysSABS": {
+        "streamKey1": "#hash_1823b40263fa6ed6",
+        "dataSize1": 2048,
+        "fileKey": "#hash_444e677862c11087",
+        "fileLen": 2048
+    }
+}

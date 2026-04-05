@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f1c326192574e47dc3709e3d209b46c4f9f81edba54e340c8b448afde70639de
-size 320
+{
+    "name": "#hash_7264a0feb2456e35",
+    "type": "#tag",
+    "material": "#hash_68c57245a99fe4b2",
+    "bundle": {
+        "type": "#tag",
+        "entitlement": "#blackops_pack",
+        "title": "localized18#hash_47110103bbe21b5a",
+        "icon": "image#ui_icon_tags_sku",
+        "isdefault": 0
+    }
+}

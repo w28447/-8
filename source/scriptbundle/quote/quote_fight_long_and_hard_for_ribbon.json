@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:682bc3243bb3aa266cfaf2f9413292e30dbf444a435b30e3048c77574132e755
-size 226
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_fight_long_and_hard_for_ribbon",
+    "quote": "localized17#hash_6bb2abb490f6b47b",
+    "author": "localized17#hash_63ab71c957f7ca17"
+}

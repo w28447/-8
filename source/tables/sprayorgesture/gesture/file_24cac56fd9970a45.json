@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:94772ee0fe1331ec81734eee3ecb8966d6612d03d0ec685d7b58af00ea87ee4f
-size 331
+{
+    "name": "#hash_24cac56fd9970a45",
+    "type": "#gesture",
+    "gesture": "#hash_559f4b4c4c8d3b12",
+    "gesture2": "#hash_6df22cff7db952cd",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/bonesy_jones",
+        "icon": "image#hash_60428b62a6abb92b",
+        "isdefault": 0
+    }
+}

@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c7778696d650195fad339884593532f05b45e9696bdf69610d46add649ef2b41
-size 340
+{
+    "lootid": "#charm_codfish",
+    "hash_ff3063df": "model#",
+    "image": "ui_icon_weapon_charms_cod_fish",
+    "name": "charm_codfish",
+    "displayname": "localized17#menu/charm_codfish",
+    "icon": "ui_icon_weapon_charms_cod_fish",
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_cod_fish"
+}

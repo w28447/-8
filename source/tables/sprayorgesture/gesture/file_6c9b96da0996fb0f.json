@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:21091eef40e4331ab545d28d65f9f0d9e2512668ae4241a14bdf59f796b85642
-size 331
+{
+    "name": "#hash_6c9b96da0996fb0f",
+    "type": "#gesture",
+    "gesture": "#hash_47bfcd992dc282c9",
+    "gesture2": "#hash_24509e2f628bbb72",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/smoke_bombed",
+        "icon": "image#hash_43c208d016c4fced",
+        "isdefault": 0
+    }
+}

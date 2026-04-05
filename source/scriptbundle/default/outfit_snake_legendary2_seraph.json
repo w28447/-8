@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7000c1f710292755c3d5b1cdcdf0c6ba8e5c9f96107754e06f3dc15847bc91a7
-size 123
+{
+    "hash_4fe91b6f0833b56:hash_6c274f86": "image#hash_4fe91b6f0833b56",
+    "name": "outfit_snake_legendary2_seraph"
+}

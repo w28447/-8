@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6e106969d52540a378f3aa539c038780fc4b1287eaabf744522b8ad5b0b82ddf
-size 241
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_we_dont_rise_to_the_level_of_our_expectations",
+    "quote": "localized17#hash_6f11386fb986a12d",
+    "author": "localized17#hash_5d5e4846433e6cfa"
+}

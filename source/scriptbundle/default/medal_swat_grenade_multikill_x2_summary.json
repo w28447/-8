@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b7611e01043e9432e749c63d9f3323865f597f0036ce18049c929f6b98fe8696
-size 408
+{
+    "description": "localized17#hash_42a4f3bd69a2d58c",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_swat_grenade_multikill_x2_summary",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_lightsout",
+    "stringref": "localized17#hash_38e52794596fe800",
+    "iconlarge": "image#ui_icon_medal_lightsout_large"
+}

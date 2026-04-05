@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:04001956c443448e042307b23970156ac60444f378a47adff88d90b2d0dd24a9
-size 189
+{
+    "name": "#hash_2ebbbf66e99bd4d8",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 0,
+    "bodyImpactType": 0,
+    "body": "#c_zom_der_richtofen_mpc_fb"
+}

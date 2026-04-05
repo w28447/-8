@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b47111bbf9278628dc6450574326f363432e48a03a26dc851dd23e823fdc2ce7
-size 308
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "craftfoundry",
+    "blueprintcount": 2,
+    "blueprint01": "scriptbundle&zblueprint_shield_spectral_shield",
+    "blueprint02": "scriptbundle&zblueprint_acid_gat_build_kit",
+    "name": "ztable_escape_open",
+    "displayname": "Open Table"
+}

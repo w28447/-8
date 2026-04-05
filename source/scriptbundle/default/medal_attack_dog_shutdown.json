@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:03fbd229da402bf1e2ada6393c2cfa483612fca1a1b139e14466622da3d2f81d
-size 389
+{
+    "description": "localized17#hash_1e365fee1097639d",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_attack_dog_shutdown",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_roll_over",
+    "stringref": "localized17#medal/killed_dog",
+    "iconlarge": "image#ui_icon_medal_roll_over_large"
+}

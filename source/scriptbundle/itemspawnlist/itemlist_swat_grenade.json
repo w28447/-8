@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:069509def435511e12357ff9ef009fe1770ec15afb50b094066b846a1e325914
-size 745
+{
+    "itemlist": [
+        {
+            "minweight": 400,
+            "itementry": "scriptbundle&swat_grenade_wz_item",
+            "maxweight": 400,
+            "available": -1
+        },
+        {
+            "minweight": 0,
+            "itementry": "scriptbundle&swat_grenade_wz_item",
+            "childitementry_1": "scriptbundle&swat_grenade_wz_item",
+            "maxweight": 0,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 2,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "itemlist_swat_grenade",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

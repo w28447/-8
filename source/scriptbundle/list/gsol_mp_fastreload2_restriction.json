@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:13922c636ee0f8eef37d48e5b43d65813891d2d0c2eb23f34575c158d729084c
-size 260
+{
+    "name": "#gsol_mp_fastreload2_restriction",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_fastreload2_ar_fastfire_restriction",
+        "#gamesettings/#attachment_fastreload2_smg_handling_restriction"
+    ]
+}

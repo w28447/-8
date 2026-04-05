@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fbbc9cffac843854e08ac43ba6514ea45c7412aad527ece41f94e2e08a3360ce
-size 372
+{
+    "name": "#maps/mp/mp_cosmodrome.d3dbsp",
+    "baseName": "mp_cosmodrome",
+    "lutMaterial": "#lut_mp_cosmodrome2",
+    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "unk550": [
+        "#img_trim_lut_mp_cosmodrome2",
+        "#img_trim_lut_mp_cosmodrome2",
+        "#img_trim_lut_mp_cosmodrome2",
+        "#img_trim_lut_mp_cosmodrome2"
+    ]
+}

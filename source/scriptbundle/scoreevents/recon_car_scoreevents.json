@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0d6b168260ce1feda6741cdd3f1fc9d466cdec0c8cdf0d5700b00412aa07ff57
-size 207
+{
+    "rcxd_kill": "#rcxd_kill",
+    "configstringfiletype": "scriptbundle",
+    "type": "scoreevents",
+    "vmtype": "both",
+    "name": "recon_car_scoreevents",
+    "customsettingstype": "ability"
+}

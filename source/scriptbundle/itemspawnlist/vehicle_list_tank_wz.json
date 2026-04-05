@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4570adfeb59a9e6a124419fe8117b2fb63f1c7511febb8964ec9991d6e6155fd
-size 1045
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&tank_wz_vehicle_black",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&tank_wz_vehicle_green",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&tank_wz_vehicle_grey",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&tank_wz_vehicle_tan",
+            "maxweight": 1,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 4000,
+    "type": "itemspawnlist",
+    "hash_345eba59": 4,
+    "vehiclespawner": 1,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 1,
+    "name": "vehicle_list_tank_wz",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

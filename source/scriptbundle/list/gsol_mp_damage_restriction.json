@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6d6947dff25fdd6b428b71822ab0f617ffba23e2868f8115bf05757021721134
-size 1180
+{
+    "name": "#gsol_mp_damage_restriction",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_damage_ar_damage_restriction",
+        "#gamesettings/#attachment_damage_ar_standard_restriction",
+        "#gamesettings/#attachment_damage_ar_stealth_restriction",
+        "#gamesettings/#attachment_damage_launcher_standard_restriction",
+        "#gamesettings/#attachment_damage_lmg_heavy_restriction",
+        "#gamesettings/#attachment_damage_pistol_fullauto_restriction",
+        "#gamesettings/#attachment_damage_pistol_revolver_restriction",
+        "#gamesettings/#attachment_damage_smg_fastburst_restriction",
+        "#gamesettings/#attachment_damage_smg_standard_restriction",
+        "#gamesettings/#attachment_damage_sniper_fastrechamber_restriction",
+        "#gamesettings/#attachment_damage_sniper_powerbolt_restriction",
+        "#gamesettings/#attachment_damage_sniper_powersemi_restriction",
+        "#gamesettings/#attachment_damage_sniper_quickscope_restriction",
+        "#gamesettings/#attachment_damage_tr_longburst_restriction",
+        "#gamesettings/#attachment_damage_tr_powersemi_restriction"
+    ]
+}

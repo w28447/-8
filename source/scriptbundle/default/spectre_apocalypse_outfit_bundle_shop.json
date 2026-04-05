@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4b065430f5906e15105d4b695c0152b50cca01aa63b5a9d3e94d99d4da5c6381
-size 320
+{
+    "loot05_ui_icon_blackmarket_itemshop_bundle_apocalypse_spectre:hash_6c274f86": "image#loot05_ui_icon_blackmarket_itemshop_bundle_apocalypse_spectre",
+    "nametext": "localized17#hash_1ceccd01eaab99b9",
+    "name": "spectre_apocalypse_outfit_bundle_shop",
+    "desctext": "localized17#hash_121794d4a78bbc93"
+}

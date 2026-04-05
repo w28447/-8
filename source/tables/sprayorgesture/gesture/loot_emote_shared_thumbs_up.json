@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:406623810bc4eae24b7a0085a70d8b6947e817ffce6e2e5bd390ad3e2c44af1c
-size 328
+{
+    "name": "#loot_emote_shared_thumbs_up",
+    "type": "#gesture",
+    "gesture": "#boast_thumbs_up",
+    "gesture2": "#boast_thumbs_up_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/good_job",
+        "icon": "image#ui_icon_emotes_thumbs_up",
+        "isdefault": 1
+    }
+}

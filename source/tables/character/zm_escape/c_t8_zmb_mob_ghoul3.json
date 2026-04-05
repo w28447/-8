@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:175036112ba70cf3ac7f153ac16843cb4cbc541a84ff36d06ae205e9825d0895
-size 227
+{
+    "name": "#c_t8_zmb_mob_ghoul3",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "fxDef": "#fxd8_zm_char_ghost_body",
+    "body": "#c_t8_zmb_mob_ghoul_body3"
+}

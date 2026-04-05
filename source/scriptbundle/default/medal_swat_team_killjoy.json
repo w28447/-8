@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:94dea24684c792f48b9966139af87cc619f5c6ebb23ad5462748dd2e604eeaac
-size 391
+{
+    "description": "localized17#medal/swat_team_killjoy_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_swat_team_killjoy",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#hash_1885a2e2348db249",
+    "stringref": "localized17#medal/swat_team_killjoy",
+    "iconlarge": "image#hash_2f822aa05429936d"
+}

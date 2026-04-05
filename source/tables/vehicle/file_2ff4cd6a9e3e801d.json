@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:438cb9f5829c3e622a802294085602458d377f8a9a5fee5281c2b97805389c52
-size 954
+{
+    "name": "#hash_2ff4cd6a9e3e801d",
+    "type": "plane",
+    "scoreType": "none",
+    "archeType": "#none",
+    "unk38": "#none",
+    "spawnerType": "#none",
+    "spawnInfluencers1": "#none",
+    "spawnInfluencers2": "#none",
+    "vehicleRidersBundle": "#veh_bo3_mil_apc_riders",
+    "deathFx": "#hash_1b470bd0c4267ac4",
+    "deathFxTag": "tag_origin",
+    "deathFxSound": "#hash_2149db0c502305e3",
+    "skidSpeedMin": 20,
+    "skidSpeedMax": 100,
+    "peelSpeedMax": 600,
+    "model": "#hash_3ca7a57704956ea8",
+    "deathModel": "#hash_3ca7a57704956ea8",
+    "steerAxisName": "AXIS_LSTICK",
+    "handBrakeButtonName": "BUTTON_B",
+    "attackButtonName": "BUTTON_RTRIG",
+    "attackSecondaryButtonName": "BUTTON_RSHLDR",
+    "unk1608": "BUTTON_A",
+    "unk1648": "BUTTON_Y",
+    "shootshock": "tankblast",
+    "rumbletype": "tank_rumble",
+    "bundle": {
+        "healthpoolsize": 650,
+        "hash_7812fce8": 2
+    }
+}

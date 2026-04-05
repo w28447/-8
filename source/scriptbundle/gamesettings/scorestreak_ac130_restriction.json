@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7c97d9b59a2fb484e4d752418772fa7ab0aa124dee2fddc8ae568af5b0415d5d
-size 554
+{
+    "descriptionimage": "image#ui_icon_scorestreaks_cargo_gunship",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "scorestreak_ac130_restriction",
+    "displayname": "localized17#killstreak/ac130",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__ac130__restricted",
+    "isenableddisabled": 0
+}

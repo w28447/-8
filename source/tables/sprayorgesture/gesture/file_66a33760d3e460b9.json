@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f4ce592689dcde56337a1e78e9e02c91f40ce8796e655f52b1d7bfa149b6d357
-size 325
+{
+    "name": "#hash_66a33760d3e460b9",
+    "type": "#gesture",
+    "gesture": "#hash_7c7dd50d84f7845f",
+    "gesture2": "#hash_61ca4ae65d42a8c8",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/barney",
+        "icon": "image#ui_icon_emotes_hang10",
+        "isdefault": 0
+    }
+}

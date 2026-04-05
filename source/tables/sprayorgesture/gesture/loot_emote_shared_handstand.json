@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:74db5810053c4050954698e229f898e4dcc76925f540b31f31888acfd26896f8
-size 329
+{
+    "name": "#loot_emote_shared_handstand",
+    "type": "#gesture",
+    "gesture": "#boast_handstand",
+    "gesture2": "#boast_handstand_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/handstand",
+        "icon": "image#ui_icon_emotes_handstand",
+        "isdefault": 0
+    }
+}

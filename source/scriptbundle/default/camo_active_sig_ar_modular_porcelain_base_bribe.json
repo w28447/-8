@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:26629623b4c9170d917771bcf71f97e85182d45f98ff0d9d6d5ba539ba004448
-size 577
+{
+    "hash_44a39e95faef0a4c:hash_c7bd8867": "localized17#hash_44a39e95faef0a4c",
+    "popupimage": "image#hash_6e9c6886b08f7af9",
+    "hash_6e9c6886b08f7af9:hash_5162d01b": "image#hash_6e9c6886b08f7af9",
+    "nametext": "localized17#hash_2b27d20d2cfc1069",
+    "categorytext": "localized17#mpui/bm_bribe",
+    "name": "camo_active_sig_ar_modular_porcelain_base_bribe",
+    "desctext": "localized17#hash_4a824b60a4b1eb63",
+    "weapon/ar_modular_t8": "localized17#weapon/ar_modular_t8",
+    "hash_2b27d20d2cfc1069:hash_c1acffb6": "localized17#hash_2b27d20d2cfc1069"
+}

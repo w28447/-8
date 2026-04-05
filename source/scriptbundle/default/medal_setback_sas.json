@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:122dfef8b16f6b200b470ec6769d52d98c7b1847a3f7ec2936af0f78e345f03c
-size 385
+{
+    "description": "localized17#medal/setback_sas_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_setback_sas",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_bankrupted",
+    "stringref": "localized17#medal/setback_sas",
+    "iconlarge": "image#ui_icon_medal_bankrupted_large"
+}

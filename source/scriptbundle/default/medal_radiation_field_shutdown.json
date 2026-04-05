@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:72a7ea5e3d1cf1f2c5b7ffde55a8e820943a3fb21ed37c843563253039d10331
-size 426
+{
+    "description": "localized17#medal/radiation_field_shutdown_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_radiation_field_shutdown",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_kill_switch",
+    "stringref": "localized17#medal/radiation_field_shutdown",
+    "iconlarge": "image#ui_icon_medal_kill_switch_large"
+}

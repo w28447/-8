@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bb36ee6baed2c0d368f712316bd3d33d22ba069d70dddf34b9110e4e3b5e751f
-size 260
+{
+    "name": "#c_t8_zmb_ofc_hero_nikolai1_igc",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "body": "#c_t8_zmb_ofc_hero_nikolai_body1_igc",
+    "head": "#c_t8_zmb_ofc_hero_nikolai_head1_igc"
+}

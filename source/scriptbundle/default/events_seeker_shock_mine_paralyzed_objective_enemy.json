@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:024a79f2c47f5814d7d12d2d53e8bbed47c29a9003ca99b2ac994c55e0042a2f
-size 305
+{
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
+    "widget": "BadasseryMedal",
+    "name": "events_seeker_shock_mine_paralyzed_objective_enemy",
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_76e7d0f6d24c3240",
+    "iconlarge": "image#hash_76e7d0f6d24c3240"
+}

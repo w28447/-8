@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ccee7c72f1295173bda311c53f26f66f0f34f185e2a6a7d9fe2505579d0b2959
-size 319
+{
+    "hash_5212e377151cfe44:hash_6c274f86": "image#hash_5212e377151cfe44",
+    "hash_161f2b91915541dd:hash_a7e24e41": "localized17#hash_161f2b91915541dd",
+    "nametext": "localized17#hash_4c4c275e493a4dc1",
+    "name": "loot_tags_bundle_altdimensions_shop",
+    "desctext": "localized17#hash_474e6eef447ed124"
+}

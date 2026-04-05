@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:41fc052ef1e0666dd68b5ae7854defe389fd96f6dc8902c74bd76106a1e3ca45
-size 502
+{
+    "itemlist": [
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&wz_default_list_health",
+            "maxweight": 50,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 1,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "graveyard_list_health",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

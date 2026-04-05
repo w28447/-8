@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0d1b432e6cad6d66636b0497b5c7e1d780286f37b225599ef688883927216ec2
-size 908
+{
+    "hinttext": "localized17#menu/spawn_teamkilled_penalty_hint",
+    "configstringfiletype": "scriptbundle",
+    "value8": "7",
+    "value9": "8",
+    "value2": "1",
+    "value3": "2",
+    "value1": "0",
+    "value6": "5",
+    "value7": "6",
+    "value4": "3",
+    "value5": "4",
+    "value11": "10",
+    "value10": "9",
+    "value13": "14",
+    "value12": "12",
+    "value15": "16",
+    "value14": "15",
+    "value17": "20",
+    "value16": "18",
+    "type": "gamesettings",
+    "label": "localized17#menu/x_seconds",
+    "hash_5a6dee5a": 0,
+    "name": "spawn_teamkilled_penalty",
+    "displayname": "localized17#menu/spawn_teamkilled_penalty",
+    "label1": "localized17#menu/disabled",
+    "label2": "localized17#menu/1_second",
+    "hash_54e336e4": 0,
+    "optionscount": 17,
+    "hash_765cfd09": 0,
+    "setting": "spawnteamkilledpenalty",
+    "isenableddisabled": 0
+}

@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e8072a75d1d9f266db2a91c272b2ee7648d53fe3df5b19ecc1990f6d178441ed
-size 549
+{
+    "descriptionimage": "image#ui_icon_weapon_lmg_hades_xl",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "lmg_spray_restriction",
+    "displayname": "localized17#weapon/lmg_spray_t8",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__lmg_spray_t8__restricted",
+    "isenableddisabled": 0
+}

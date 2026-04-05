@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3f24352e8ca4f8d5014da2bc0bbb43e2dd6c960d3558a1d92093432e79bf9b8a
-size 347
+{
+    "lootid": "#hash_6ac17458ca821fe7",
+    "hash_ff3063df": "model#",
+    "image": "ui_icon_weapon_charms_melon",
+    "name": "charm_plant_melon",
+    "displayname": "localized17#menu/charm_plant_melon",
+    "icon": "ui_icon_weapon_charms_melon",
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_melon"
+}

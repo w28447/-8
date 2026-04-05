@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:beb8134f7a898d89d60ca2dcc2a83d20dc945bcd8c21880e12f6707be8e1534c
-size 1056
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&resource_item_paint",
+            "maxweight": 1,
+            "available": 100
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&resource_item_paint",
+            "maxweight": 1,
+            "available": 100
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&resource_item_paint",
+            "maxweight": 1,
+            "available": 100
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&resource_item_paint",
+            "maxweight": 1,
+            "available": 75
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 600,
+    "type": "itemspawnlist",
+    "hash_345eba59": 4,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 1,
+    "name": "resource_item_paint_list_furniture",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

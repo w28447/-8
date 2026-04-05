@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:196cb3c36afe98ba2651d6526b95acb0baf953a2aafa8251d265ec956e2dd0d0
-size 286
+{
+    "backingsmall": "image#hash_75692c1dbf2e3c49",
+    "widget": "BadasseryMedal",
+    "name": "events_gravity_slam_multikill_6",
+    "backinglarge": "image#hash_75692c1dbf2e3c49",
+    "iconsmall": "image#hash_776d1b4ece5247fc",
+    "iconlarge": "image#hash_776d1b4ece5247fc"
+}

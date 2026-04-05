@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:43a93caa7982a5353fc99b1b03bd126d50e890b247222c3e8fdbddf4d131b64d
-size 381
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_fmj_lmg_spray_restriction",
+    "displayname": "localized17#weapon/lmg_spray_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__lmg_spray_t8__attachments__fmj",
+    "isenableddisabled": 0
+}

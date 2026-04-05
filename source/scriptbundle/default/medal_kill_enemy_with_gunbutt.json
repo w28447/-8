@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:953f587248786004831b41939629d47d91ded68c99e2f63a77acbbe89efce7a4
-size 425
+{
+    "description": "localized17#medal/kill_enemy_with_gunbutt_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_kill_enemy_with_gunbutt",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_nose_breaker",
+    "stringref": "localized17#medal/kill_enemy_with_gunbutt",
+    "iconlarge": "image#ui_icon_medal_nose_breaker_large"
+}

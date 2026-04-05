@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:29aac16e1b9b1855329ae7302c854068874b452ad5a23182bd8f6ca8bd386d5d
-size 375
+{
+    "detailsicon": "image#loot07_ui_icon_blackmarket_itemdetail_bundle_replacer",
+    "loot07_ui_icon_blackmarket_itemshop_bundle_replacer": "image#loot07_ui_icon_blackmarket_itemshop_bundle_replacer",
+    "nametext": "localized17#hash_33f43c99f9b7ab59",
+    "name": "replacer_tr_longburst_mk2_sunset_bundle_shop",
+    "desctext": "localized17#hash_e39f94a569d8d12"
+}

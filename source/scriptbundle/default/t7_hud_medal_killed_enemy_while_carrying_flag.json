@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ff60df10698306295aacc426d06b4485ef50f332fb5d4fa60444281f725a723d
-size 444
+{
+    "backingsmall": "image#t7_hud_medal_backing_gamemode",
+    "widget": "BadasseryMedal",
+    "name": "t7_hud_medal_killed_enemy_while_carrying_flag",
+    "backinglarge": "image#t7_hud_medal_backing_gamemode_lrg",
+    "iconsmall": "image#t7_hud_medal_killed_enemy_while_carrying_flag",
+    "stringref": "localized17#medal/killed_enemy_while_carrying_flag",
+    "iconlarge": "image#t7_hud_medal_killed_enemy_while_carrying_flag_lrg"
+}

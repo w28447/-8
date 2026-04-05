@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:442ecc120e36380b88489b2de67afea83e005d3d5bb0724ad0bf41ca53f03619
-size 364
+{
+    "backingsmall": "image#t7_hud_medal_backing_gamemode",
+    "widget": "BadasseryMedal",
+    "name": "t7_hud_medal_flag_capture",
+    "backinglarge": "image#t7_hud_medal_backing_gamemode_lrg",
+    "iconsmall": "image#t7_hud_medal_flag_capture",
+    "stringref": "localized17#medal/flag_capture",
+    "iconlarge": "image#t7_hud_medal_flag_capture_lrg"
+}

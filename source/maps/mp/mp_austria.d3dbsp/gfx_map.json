@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6766c8c6bba8c89a4e29f8b316745d1f98ba185f098b67e6a55d105285cdbfa0
-size 334
+{
+    "name": "#maps/mp/mp_austria.d3dbsp",
+    "baseName": "mp_austria",
+    "lutMaterial": "#lut_mp_austria",
+    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "unk550": [
+        "#img_trim_lut_austria",
+        "#img_trim_lut_austria",
+        "#img_trim_lut_austria",
+        "#img_trim_lut_austria"
+    ]
+}

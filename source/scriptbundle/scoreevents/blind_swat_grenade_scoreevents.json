@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f44b7814f1d4816357fb14b4f348d75e617fb965207eb12def7aa51854c8f021
-size 758
+{
+    "swat_grenade_multikill_2": "#swat_grenade_multikill_2",
+    "swat_grenade_multikill_2": "#swat_grenade_multikill_2",
+    "hash_6da3ec0deab3fd5f:hash_2eaed769": "#hash_6da3ec0deab3fd5f",
+    "configstringfiletype": "scriptbundle",
+    "hash_3e3b11a9": 0.5,
+    "type": "scoreevents",
+    "swat_grenade_blinded_enemy": "#swat_grenade_blinded_enemy",
+    "vmtype": "both",
+    "swat_grenade_multikill_2": "#swat_grenade_multikill_2",
+    "name": "blind_swat_grenade_scoreevents",
+    "customsettingstype": "status effect",
+    "swat_grenade_multikill_2": "#swat_grenade_multikill_2",
+    "hash_fcd2ff3a": 1,
+    "hash_50758e6ecb611127:hash_170b3630": "#hash_50758e6ecb611127",
+    "swat_grenade_multikill_2": "#swat_grenade_multikill_2"
+}

@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8ebc845a4dfe230aa55d5b216db2927fb7289a8fb570095b12960867750c4b49
-size 419
+{
+    "buttonimage": "image#hash_5516d6d24dd339e4",
+    "popupimage": "image#hash_6fd0d7cf8e1eb5c5",
+    "nametext": "localized17#hash_615c3077e0fe80b5",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
+    "name": "nomad_detective_outfit_bundle",
+    "desctext": "localized17#hash_4dad6063be85329f",
+    "previewimage": "image#hash_105520d5f257c70",
+    "reserveimage": "image#hash_39fd6ca713a3d96c"
+}

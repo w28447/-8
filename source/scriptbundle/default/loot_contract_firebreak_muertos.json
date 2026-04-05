@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6a335fd4f323261123c140d4dbf7c33c456462f2a3d04d5398955f7a7a72024e
-size 745
+{
+    "contentsdetaileddescincludelist": [
+        {
+            "hash_74949c76508e944f:hash_826726a": "localized17#hash_74949c76508e944f"
+        },
+        {
+            "heroes/firebreak:hash_826726a": "localized17#heroes/firebreak"
+        }
+    ],
+    "contracticon": "image#hash_643448de997d0d2e",
+    "hash_d0100eab": 2,
+    "relateditemname": "localized17#heroes/firebreak",
+    "contracttitle": "localized17#hash_74949c76508e944f",
+    "name": "loot_contract_firebreak_muertos",
+    "contractdescription": "localized17#hash_25105a1e4c1d1e63",
+    "white": "#white",
+    "hash_69164c20fbcba78d:hash_1c057e8c": "image#hash_69164c20fbcba78d",
+    "hash_1228188324cf56e:hash_e08fc162": "localized17#hash_1228188324cf56e"
+}

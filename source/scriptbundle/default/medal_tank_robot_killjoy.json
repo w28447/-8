@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f809c299e7fa99efd079377637f5851c8aaa643c64012cb0f788f0e9a4fd6339
-size 403
+{
+    "description": "localized17#hash_1ad2499a4dae3666",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_tank_robot_killjoy",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_destroy_mantis",
+    "stringref": "localized17#hash_3ec5b746ee2cfc96",
+    "iconlarge": "image#ui_icon_medal_destroy_mantis_large"
+}

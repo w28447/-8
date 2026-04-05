@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bbe7e4b92e89da4e54290637ea84d896ac16e3feec706041b8f42ac336df68fb
-size 667
+{
+    "hinttext": "localized17#menu/flag_respawn_time_hint",
+    "configstringfiletype": "scriptbundle",
+    "value8": "50",
+    "value9": "60",
+    "value2": "5",
+    "value3": "10",
+    "value1": "1",
+    "value6": "30",
+    "value7": "40",
+    "value4": "15",
+    "value5": "20",
+    "type": "gamesettings",
+    "label": "localized17#menu/x_seconds",
+    "hash_5a6dee5a": 0,
+    "name": "flag_respawn_time",
+    "displayname": "localized17#menu/flag_respawn_time",
+    "label1": "localized17#menu/1_second",
+    "hash_54e336e4": 0,
+    "optionscount": 9,
+    "hash_765cfd09": 0,
+    "setting": "flagRespawnTime",
+    "isenableddisabled": 0
+}

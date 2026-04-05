@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ebbf32e2e4269c5d0cff1887c777469feca244719f8f5a31259b772af9ca6a4c
-size 184
+{
+    "name": "#gsol_mp_fastlockon_restriction",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#scope_fastlockon_launcher_standard_restriction"
+    ]
+}

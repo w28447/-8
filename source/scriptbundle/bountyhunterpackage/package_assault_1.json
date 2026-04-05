@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e5d1e0e60185cfa7b7612bf03c1e9571c9eb5a43227cb66f27f1601a158e8088
-size 530
+{
+    "packageitems": [
+        {
+            "item": "#talent_scavenger"
+        }
+    ],
+    "hash_ef921c3c": 1,
+    "configstringfiletype": "scriptbundle",
+    "tracktier": 1,
+    "type": "bountyhunterpackage",
+    "hash_85d7cf08": 1,
+    "refillammo": 0,
+    "hash_ee686ece": 0,
+    "refillcost": 0,
+    "name": "package_assault_1",
+    "packagetype": "assault",
+    "purchasecost": 500,
+    "startammo": 2,
+    "hash_673a16ad": 1,
+    "hash_741010b5": 1,
+    "hash_782dbf79": 1,
+    "hash_767b7337": 1
+}

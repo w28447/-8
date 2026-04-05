@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b43d02e88404c520c06ee004ec92045ea2412941f3037ee9f601dfe9970f6556
-size 374
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "scope_ir_lmg_heavy_restriction",
+    "displayname": "localized17#weapon/lmg_heavy_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__lmg_heavy_t8__attachments__ir",
+    "isenableddisabled": 0
+}

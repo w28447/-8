@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ba05a72f38eef11194685d2dc5002aba298c717968376e681e70088cf415c60a
-size 328
+{
+    "hash_17378747fae53f4e:hash_6c274f86": "image#hash_17378747fae53f4e",
+    "nametext": "localized17#hash_64d08a562e3eee22",
+    "name": "outfit_warrior_epic2_zero_sunset_bundle_shop",
+    "desctext": "localized17#hash_2b7f2d614d161f1d",
+    "hash_4e06263ae2b9a394:hash_975cc0d1": "localized17#hash_4e06263ae2b9a394"
+}

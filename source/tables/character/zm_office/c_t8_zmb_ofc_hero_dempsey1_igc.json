@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f8d7922e9aefa69b83cc0b48b6cb34253864d48a0d8b3aeed3cc40d2b2ee4d2b
-size 256
+{
+    "name": "#c_t8_zmb_ofc_hero_dempsey1_igc",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "body": "#c_t8_zmb_ofc_hero_dempsey_body1_igc",
+    "head": "#c_t8_zmb_ofc_hero_dempsey_head1"
+}

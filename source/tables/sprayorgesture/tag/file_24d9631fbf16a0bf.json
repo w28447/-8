@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6f61bdad1fceff313e7e8148617e7f517b59a9b55038fb0f114afb5196a9c7aa
-size 296
+{
+    "name": "#hash_24d9631fbf16a0bf",
+    "type": "#tag",
+    "material": "#hash_1cea12fde491a32b",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_59e00c2b556a460b",
+        "icon": "image#loot_ui_icon_tags_warriors_battery",
+        "isdefault": 0
+    }
+}

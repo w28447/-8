@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b535fc480dfb7e893dbba3a24739c2f49fbfbb57a97d843c77a51125eadddbb8
-size 403
+{
+    "contracticon": "image#hash_397de39ba6e31753",
+    "contracttitle": "localized17#menu/contract_richtofen",
+    "name": "loot_contract_richtofen",
+    "contractdescription": "localized17#menu/blackout_character",
+    "white": "#white",
+    "hash_327a4adce2d60323:hash_1c057e8c": "image#hash_327a4adce2d60323",
+    "hash_621dc92c959f9a02:hash_e08fc162": "localized17#hash_621dc92c959f9a02"
+}

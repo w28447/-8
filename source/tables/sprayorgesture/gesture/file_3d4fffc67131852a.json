@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a0d64d2383c6917fe1e5d390f9c98e293b492314ed5c16151171280eb46908ea
-size 342
+{
+    "name": "#hash_3d4fffc67131852a",
+    "type": "#gesture",
+    "gesture": "#hash_abfa651376e17c",
+    "gesture2": "#hash_1b0f2dff8a86a8f",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/prophet_like_its_hot",
+        "icon": "image#ui_icon_emotes_prophetdance",
+        "isdefault": 0
+    }
+}

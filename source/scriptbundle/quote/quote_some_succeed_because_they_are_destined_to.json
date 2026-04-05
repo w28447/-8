@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3cf88cdf22cfb407486b901a5ac2331f8a0ae1090b8078b5f99132bec04cfa7f
-size 236
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_some_succeed_because_they_are_destined_to",
+    "quote": "localized17#hash_8a7cdb1c2df5838",
+    "author": "localized17#hash_4e55371bb0e6c43f"
+}

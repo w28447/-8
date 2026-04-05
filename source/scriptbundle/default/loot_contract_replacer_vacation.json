@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:498b196b2aeae23575fca2ff73257c49f2c4817b890844ef4f9f46c984752bd9
-size 588
+{
+    "contracticon": "image#hash_7f6b8b47541339d2",
+    "contracttitle": "localized17#hash_31e500a2133a5596",
+    "name": "loot_contract_replacer_vacation",
+    "loot07_ui_icon_blackmarket_itemdetail_liquidator:hash_4b258f2c": "image#loot07_ui_icon_blackmarket_itemdetail_liquidator",
+    "contractdescription": "localized17#menu/blackout_character",
+    "white": "#white",
+    "loot07_ui_icon_blackmarket_itemshop_liquidator:hash_1c057e8c": "image#loot07_ui_icon_blackmarket_itemshop_liquidator",
+    "hash_209ef2c49fb1a166:hash_e08fc162": "localized17#hash_209ef2c49fb1a166"
+}

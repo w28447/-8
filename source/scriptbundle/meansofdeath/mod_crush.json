@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:530f19b0b3e75c7ca09883b8a0c015365e1bc9176e29c8172300dc461f833952
-size 286
+{
+    "mod": "MOD_CRUSH",
+    "configstringfiletype": "scriptbundle",
+    "type": "meansofdeath",
+    "name": "mod_crush",
+    "displayname": "localized17#ui/mod_crush",
+    "icon": "image#ui_icon_meansofdeath_crushed",
+    "iconlarge": "image#ui_icon_meansofdeath_crushed_xl"
+}

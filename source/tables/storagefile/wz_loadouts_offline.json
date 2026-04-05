@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a45951d80743511d14a87fb62c7d0d0ced4153c6875ee46b1532c30a7490a62a
-size 386
+{
+    "nameStr": "wz_loadouts_offline",
+    "name": "#wz_loadouts_offline",
+    "ddlPath": "#gamedata/ddl/generated/wz_loadouts_offline.ddl",
+    "files": [
+        {
+            "fileName": "wz_loadouts_offline"
+        }
+    ],
+    "size": 53248,
+    "readOnLogin": true,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
+}

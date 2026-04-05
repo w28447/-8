@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5d49eab2ce651ad78ac8808feb99fdcf6cfbecf9f589348b289fa6151516fc48
-size 367
+{
+    "name": "#maps/mp/mp_nuketown_4.d3dbsp",
+    "baseName": "mp_nuketown_4",
+    "lutMaterial": "#lut_mp_nuketown_4",
+    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "unk550": [
+        "#img_trim_lut_mp_nuketown_4",
+        "#img_trim_lut_mp_nuketown_4",
+        "#img_trim_lut_mp_nuketown_4",
+        "#img_trim_lut_mp_nuketown_4"
+    ]
+}

@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c666e398d201a0f2c00b7edaecce0195283fc4892dde6016d08f991650b49693
-size 549
+{
+    "name": "mp_russianbase.fj",
+    "zone": "mp_russianbase",
+    "gameLanguage": "japanese_full",
+    "soundLanguage": "fj",
+    "nameHash": "#mp_russianbase.fj",
+    "patchZone": false,
+    "alias": [],
+    "duck": [],
+    "ambients": [],
+    "scriptIdLookups": [],
+    "streamKeysSABL": {
+        "streamKey1": "#mp_russianbase_fj_stream",
+        "dataSize1": 2048,
+        "fileKey": "#mp_russianbase_fj_loaded",
+        "fileLen": 2048
+    },
+    "streamKeysSABS": {
+        "dataSize1": 0,
+        "fileLen": 0
+    }
+}

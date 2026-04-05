@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:67e99ad1fbb6da3638937bab9e17de124890ae935c5d97bf1fcbfa5fdd4170d4
-size 241
+{
+    "type": "linear",
+    "vmtype": "server",
+    "threat_score_max_same": 6,
+    "range_min": 1,
+    "range_max": 750,
+    "name": "player_influencer_def",
+    "score_min": 1,
+    "lifetime": 5,
+    "threat_score_max_other": 6
+}

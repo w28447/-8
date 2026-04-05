@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:23f5e7cf698128d40f73c769bb2445f98ad8e8baf6a032af45b66ce9d3dbbca9
-size 527
+{
+    "tempest_multikill_2": "#tempest_multikill_2",
+    "tempest_multikill_2": "#tempest_multikill_2",
+    "tempest_kill": "#tempest_kill",
+    "configstringfiletype": "scriptbundle",
+    "type": "scoreevents",
+    "vmtype": "both",
+    "tempest_multikill_2": "#tempest_multikill_2",
+    "name": "hero_lightninggun_scoreevents",
+    "customsettingstype": "ability",
+    "tempest_multikill_2": "#tempest_multikill_2",
+    "tempest_shutdown": "#tempest_shutdown",
+    "tempest_multikill_2": "#tempest_multikill_2"
+}

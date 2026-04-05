@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8fe2b63e7c6938a5d8a94c12b14023a7ff97efd03ab2a08c57c27a770eed1976
-size 399
+{
+    "detailsicon": "image#loot06_ui_icon_blackmarket_itemdetail_bundle_action_figure",
+    "loot06_ui_icon_blackmarket_itemshop_bundle_action_figure:hash_6c274f86": "image#loot06_ui_icon_blackmarket_itemshop_bundle_action_figure",
+    "nametext": "localized17#weapon/melee_actionfigure_t8",
+    "name": "melee_action_figure_bundle_shop",
+    "desctext": "localized17#hash_32e8f0930029a80f"
+}

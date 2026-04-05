@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1513764b8ae854b43bf8c1820452431be66ddea74953745b33dd22fe86d1db32
-size 408
+{
+    "name": "#gsol_mp_equipment_restriction",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#equipment_trophysystem_restriction",
+        "#gamesettings/#equipment_combataxe_restriction",
+        "#gamesettings/#equipment_fraggrenade_restriction",
+        "#gamesettings/#equipment_molotov_restriction",
+        "#gamesettings/#equipment_concussion_restriction"
+    ]
+}

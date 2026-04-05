@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:84329017ab5160495d53491b0b277787514867e183a136a1ad3b4daf841ce7a6
-size 234
+{
+    "backingsmall": "image#$white",
+    "widget": "BadasseryMedal",
+    "name": "events_hellstorm_missile_objective_kill",
+    "backinglarge": "image#$white",
+    "iconsmall": "image#$white",
+    "iconlarge": "image#$white"
+}

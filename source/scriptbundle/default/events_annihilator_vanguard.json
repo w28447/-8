@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:32d57bc30759356c0a12387d995e9d2c2837632d02fc2a026d97545f65cd199b
-size 282
+{
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
+    "widget": "BadasseryMedal",
+    "name": "events_annihilator_vanguard",
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_4c2f93a823e00ed2",
+    "iconlarge": "image#hash_4c2f93a823e00ed2"
+}

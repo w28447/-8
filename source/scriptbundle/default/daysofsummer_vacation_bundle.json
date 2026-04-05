@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ca941425a11487b290e7ea7962440e8852ed59fcc5cc545db11fd9b2209d70ff
-size 555
+{
+    "buttonimage": "image#ui_icon_blackmarket_promos_summer_menendez_button_small",
+    "popupimage": "image#ui_icon_blackmarket_promos_summer_menendez_large_preview",
+    "nametext": "localized17#hash_6030a439ce848337",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
+    "name": "daysofsummer_vacation_bundle",
+    "desctext": "localized17#hash_2143d92784606069",
+    "previewimage": "image#ui_icon_blackmarket_promos_summer_menendez_item_detail",
+    "reserveimage": "image#ui_icon_blackmarket_promos_summer_menendez_button_large"
+}

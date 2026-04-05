@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7ad109707449c6ae812fad8285cff609c3da54813babda8c1f0a03c9edd6fdad
-size 255
+{
+    "name": "#gsol_mp_pistolscope_restriction",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#scope_pistolscope_pistol_revolver_restriction",
+        "#gamesettings/#scope_pistolscope_smg_fastburst_restriction"
+    ]
+}

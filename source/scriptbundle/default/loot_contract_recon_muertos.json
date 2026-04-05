@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:12cd2784deb20d116dbc2e8b3a6bde440eafb698b83d09f5087f5d6ece18533e
-size 729
+{
+    "contentsdetaileddescincludelist": [
+        {
+            "hash_5bc13ff3ae2edc33:hash_826726a": "localized17#hash_5bc13ff3ae2edc33"
+        },
+        {
+            "heroes/recon:hash_826726a": "localized17#heroes/recon"
+        }
+    ],
+    "contracticon": "image#hash_4e90e0ff50b671c9",
+    "hash_d0100eab": 2,
+    "relateditemname": "localized17#heroes/recon",
+    "contracttitle": "localized17#hash_5bc13ff3ae2edc33",
+    "name": "loot_contract_recon_muertos",
+    "contractdescription": "localized17#hash_25105a1e4c1d1e63",
+    "white": "#white",
+    "hash_6eb65c5623257c76:hash_1c057e8c": "image#hash_6eb65c5623257c76",
+    "hash_1228188324cf56e:hash_e08fc162": "localized17#hash_1228188324cf56e"
+}

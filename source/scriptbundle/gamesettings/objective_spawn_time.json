@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:14b5e051a2e578c6f4595d8093a0631991cba10be57e40cac200329395c71228
-size 681
+{
+    "hinttext": "localized17#menu/objective_spawn_time_hint",
+    "configstringfiletype": "scriptbundle",
+    "value2": "5",
+    "value3": "10",
+    "value1": "0",
+    "value6": "45",
+    "value7": "60",
+    "value4": "15",
+    "value5": "30",
+    "type": "gamesettings",
+    "label": "localized17#menu/x_seconds",
+    "hash_5a6dee5a": 0,
+    "name": "objective_spawn_time",
+    "displayname": "localized17#menu/objective_spawn_time",
+    "label7": "localized17#menu/1_minute",
+    "label1": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
+    "optionscount": 7,
+    "hash_765cfd09": 0,
+    "setting": "objectiveSpawnTime",
+    "isenableddisabled": 0
+}

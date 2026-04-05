@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f10c529ad639976905e5ffa030f87c12cf4d21bf528a42525336489fcda3bd72
-size 530
+{
+    "hash_2703f9fb7e481f6d:hash_c7bd8867": "localized17#hash_2703f9fb7e481f6d",
+    "popupimage": "image#ui_icon_weapon_pistol_fullauto_render",
+    "ui_icon_weapon_pistol_fullauto_render": "image#ui_icon_weapon_pistol_fullauto_render",
+    "nametext": "localized17#weapon/pistol_fullauto_t8",
+    "categorytext": "localized17#mpui/bm_bribe",
+    "name": "pistol_fullauto_t8_bribe",
+    "desctext": "localized17#weapon/pistol_fullauto_t8_desc",
+    "weapon/pistol_fullauto_t8": "localized17#weapon/pistol_fullauto_t8"
+}

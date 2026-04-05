@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7b70524370c555f4c62836d6ea67ff493255b3451fadcc509752bc61204cebab
-size 367
+{
+    "name": "#gsol_mp_is_restriction",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#scope_is_sniper_fastrechamber_restriction",
+        "#gamesettings/#scope_is_sniper_powerbolt_restriction",
+        "#gamesettings/#scope_is_sniper_powersemi_restriction",
+        "#gamesettings/#scope_is_sniper_quickscope_restriction"
+    ]
+}

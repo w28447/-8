@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a57f6822db505e54a1f8ea72aa4ffc6913e6ca880a3d3147546ed8a7e14df383
-size 381
+{
+    "hinttext": "localized17#menu/use_spawngroups",
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "use_spawn_groups",
+    "displayname": "localized17#menu/use_spawngroups",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "useSpawnGroups",
+    "isenableddisabled": 1
+}

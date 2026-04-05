@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8fc8ae93d74d324660bb4e7007c03e4a9564f869374891f735bab7f6e57964ae
-size 127
+{
+    "name": "#hash_ed3d542cb4745c53",
+    "clientOnly": false,
+    "syncBaseHealthWithEntity": false,
+    "pieces": []
+}

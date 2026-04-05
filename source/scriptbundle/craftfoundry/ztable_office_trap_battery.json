@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a2ec0a9283a8c6c473cdd87cef415cb0251d7269a74dde97a0d0aaf60c5e8d00
-size 256
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "craftfoundry",
+    "blueprintcount": 1,
+    "blueprint01": "scriptbundle&zblueprint_office_trap_battery",
+    "name": "ztable_office_trap_battery",
+    "displayname": "office_trap_battery"
+}

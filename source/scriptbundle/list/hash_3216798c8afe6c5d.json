@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cdc7970735b39c997dce6f896570f7d175b31f0f1cefec83508fddce8b25b0a6
-size 428
+{
+    "name": "#hash_3216798c8afe6c5d",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#wc_perk1gluttony_restriction",
+        "#gamesettings/#wc_perk1greed_restriction",
+        "#gamesettings/#wc_perk2gluttony_restriction",
+        "#gamesettings/#wc_perk2greed_restriction",
+        "#gamesettings/#wc_perk3gluttony_restriction",
+        "#gamesettings/#wc_perk3greed_restriction"
+    ]
+}

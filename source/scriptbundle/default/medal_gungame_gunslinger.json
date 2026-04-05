@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:429ed6f381220b57a2cec820ad9ffb53485fa9aa5e815f44a451695148bdecf0
-size 411
+{
+    "description": "localized17#hash_6b43c083ad8b9928",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_gungame_gunslinger",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_gungame_gunslinger",
+    "stringref": "localized17#hash_7ee98ba3e10b5460",
+    "iconlarge": "image#ui_icon_medal_gungame_gunslinger_large"
+}

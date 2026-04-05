@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:023b081408c2437e39f27c32690abf51502dcb31076b827abe3b1ecd693ef7ec
-size 399
+{
+    "description": "localized17#medal/tank_robot_kill_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_tank_robot_kill",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_mantis_kill",
+    "stringref": "localized17#medal/tank_robot_kill",
+    "iconlarge": "image#ui_icon_medal_mantis_kill_large"
+}

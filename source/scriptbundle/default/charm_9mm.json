@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4cbb5b739102c070272218c553f25e2fb7268919ca7a1cd88eda83241f0e0c5c
-size 389
+{
+    "lootid": "#hash_652641dab6cbb097",
+    "hash_ff3063df": "model#",
+    "image": "ui_icon_weapon_charms_9mmbullet",
+    "name": "charm_9mm",
+    "displayname": "localized17#menu/charm_9mm",
+    "entitlement": "#hash_377b58d9f38de25f",
+    "icon": "ui_icon_weapon_charms_9mmbullet",
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_9mmbullet"
+}

@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4b1b35ca86ed4e110a58a48dc8747fd7233859dd0e83eb6485dcb2f0ce2a683a
-size 408
+{
+    "description": "localized17#medal/survive_30_seconds_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_survive_30_seconds",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_survivalist",
+    "stringref": "localized17#medal/survive_30_seconds",
+    "iconlarge": "image#ui_icon_medal_survivalist_large"
+}

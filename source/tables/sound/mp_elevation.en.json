@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:acf4987d0fcbfe2f8256ec42a0430b6efb93e1275a27aeef8b18807979f263ec
-size 633
+{
+    "name": "mp_elevation.en",
+    "zone": "mp_elevation",
+    "gameLanguage": "english",
+    "soundLanguage": "en",
+    "nameHash": "#mp_elevation.en",
+    "patchZone": true,
+    "alias": [],
+    "duck": [],
+    "ambients": [],
+    "scriptIdLookups": [],
+    "streamKeysSABL": {
+        "streamKey1": "#mp_elevation_en_stream",
+        "dataSize1": 2048,
+        "fileKey": "#mp_elevation_en_loaded",
+        "fileLen": 2048
+    },
+    "streamKeysSABS": {
+        "streamKey1": "#hash_22f230243c00aca5",
+        "dataSize1": 2048,
+        "fileKey": "#hash_2b9dfa6f98ad9ea0",
+        "fileLen": 2048
+    }
+}

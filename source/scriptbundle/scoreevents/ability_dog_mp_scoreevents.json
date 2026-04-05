@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bfe95ead3a25801bed3960c928f3626496e79111e901776d0502ba849523d2b8
-size 614
+{
+    "attack_dog_multikill_2": "#attack_dog_multikill_2",
+    "attack_dog_multikill_2": "#attack_dog_multikill_2",
+    "attack_dog_kill": "#attack_dog_kill",
+    "configstringfiletype": "scriptbundle",
+    "type": "scoreevents",
+    "attack_dog_savior": "#attack_dog_savior",
+    "vmtype": "both",
+    "attack_dog_multikill_2": "#attack_dog_multikill_2",
+    "name": "ability_dog_mp_scoreevents",
+    "customsettingstype": "ability",
+    "attack_dog_multikill_2": "#attack_dog_multikill_2",
+    "attack_dog_shutdown": "#attack_dog_shutdown",
+    "attack_dog_multikill_2": "#attack_dog_multikill_2"
+}

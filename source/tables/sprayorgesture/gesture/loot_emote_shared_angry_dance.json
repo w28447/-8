@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e8555af124e3cfa88b2ab6ef3b9c0bca93ff546f1f25775e53fb6d9bd5614b12
-size 335
+{
+    "name": "#loot_emote_shared_angry_dance",
+    "type": "#gesture",
+    "gesture": "#boast_angry_dance",
+    "gesture2": "#boast_angry_dance_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/damn_son",
+        "icon": "image#ui_icon_emotes_angrydance",
+        "isdefault": 0
+    }
+}

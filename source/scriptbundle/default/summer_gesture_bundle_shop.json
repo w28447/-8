@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9f4735eae1b45ea3b726e59f2e0534249807d28b56265a1e3a72ec105ae5762d
-size 279
+{
+    "detailsicon": "image#hash_240f7e1511d8549a",
+    "hash_315ef2f10a03c099:hash_6c274f86": "image#hash_315ef2f10a03c099",
+    "nametext": "localized17#hash_462f5601dbd1e777",
+    "name": "summer_gesture_bundle_shop",
+    "desctext": "localized17#hash_759ecf4976d3ba9"
+}

@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:422672a973cc690e598933bc8b9603aa01c4f194760e11baa5959689b209aa0c
-size 349
+{
+    "hash_ab1984e9": 1,
+    "hash_934131b6": 3,
+    "configstringfiletype": "scriptbundle",
+    "numprimaryweapons": 1,
+    "hash_882b6b71": 0,
+    "type": "playerloadoutrestrictions",
+    "hash_355c3581": 3,
+    "name": "plr_mp_default",
+    "hash_25a22f4": 1,
+    "hash_cd3db98c": 1,
+    "hash_a2ef45f8": 1,
+    "hash_c3fc8c73": 0
+}

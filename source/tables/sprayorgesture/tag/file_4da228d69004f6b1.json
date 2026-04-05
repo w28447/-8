@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4dd4085bd55e9347f630c5ef800b091a84bf7e41c0fb43b4b6a86c1c9cecc87e
-size 295
+{
+    "name": "#hash_4da228d69004f6b1",
+    "type": "#tag",
+    "material": "#hash_5f2f26fd475ca0ad",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_1e889b8dd57dca44",
+        "icon": "image#loot_ui_icon_tags_muertos_battery",
+        "isdefault": 0
+    }
+}

@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3d124163a0fb70f7ef11c94fa1c58b8a55be04f692b04890db5376145347c441
-size 248
+{
+    "type": "linear",
+    "vmtype": "server",
+    "threat_score_max_same": 8,
+    "range_min": 1,
+    "range_max": 750,
+    "name": "warlord_death_influencer_def",
+    "score_min": 1,
+    "lifetime": 1,
+    "threat_score_max_other": 8
+}

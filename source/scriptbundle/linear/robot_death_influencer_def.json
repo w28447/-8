@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:66d27fe22dea8b682355831825ed189768b8478fa7317bae4842c8b1435ce33c
-size 225
+{
+    "type": "linear",
+    "vmtype": "server",
+    "threat_score_max_same": 6,
+    "range_max": 750,
+    "name": "robot_death_influencer_def",
+    "score_min": 1,
+    "lifetime": 1,
+    "threat_score_max_other": 6
+}

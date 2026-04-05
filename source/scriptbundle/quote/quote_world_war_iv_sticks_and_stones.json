@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:44abf77b9edc5be100e2ad20a28ea4ada8fe2d6cba9d2821ae2c0476561e328c
-size 226
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_world_war_iv_sticks_and_stones",
+    "quote": "localized17#hash_74ecb3da55cd2b31",
+    "author": "localized17#hash_55029251f18892e2"
+}

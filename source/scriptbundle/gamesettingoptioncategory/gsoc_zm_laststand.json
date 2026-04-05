@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:37c50d4bd18576649e9333fa6bd8a2e5856ba932d47cb1e9bac22f49a3120442
-size 329
+{
+    "configstringfiletype": "scriptbundle",
+    "hash_ce9b2d06": "gsol_zm_laststand",
+    "type": "gamesettingoptioncategory",
+    "name": "gsoc_zm_laststand",
+    "hash_40c3c9f045a1912d:hash_dea17465": "localized17#hash_40c3c9f045a1912d",
+    "hash_328fced519ebf460:hash_608158f2": "localized17#hash_328fced519ebf460"
+}

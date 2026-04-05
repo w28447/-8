@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c7a9ba9aecf8a9e3c3b483b645afb8765a12775d35088f01940d15cf9bc92f36
-size 277
+{
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
+    "widget": "BadasseryMedal",
+    "name": "events_stim_aggression",
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_293248ef2404a550",
+    "iconlarge": "image#hash_293248ef2404a550"
+}

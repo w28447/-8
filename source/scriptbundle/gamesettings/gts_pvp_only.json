@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:20bcc6b692fa9cf119151e2e100ac6dcfbfaba5e197c9a9988f0602469e3e0d1
-size 372
+{
+    "hinttext": "localized17#hash_47953193b6483ff4",
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "gts_pvp_only",
+    "displayname": "localized17#hash_36bb6b193fbf5f34",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "pvpOnly",
+    "isenableddisabled": 1
+}

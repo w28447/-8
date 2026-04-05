@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c15326796f810c3abd7dffb6060ced5fc23fd17955a8571fcce365d703fc666f
-size 938
+{
+    "hash_b82706bc": "j_elbow_le",
+    "configstringfiletype": "scriptbundle",
+    "hash_4c6c7dc7ad4c89dd:hash_306147e8": "fx#hash_4c6c7dc7ad4c89dd",
+    "hash_390dd50": "j_elbow_ri",
+    "type": "playeroutfitgibdef",
+    "hash_9e818b85": "j_elbow_le",
+    "vmtype": "both",
+    "name": "gd_c_t8_mp_spe_reaper_apocalypse_arms1",
+    "hash_5d9986a93fe4b4b:hash_cea65af7": "fx#hash_5d9986a93fe4b4b",
+    "hash_3c05597b99cbec42:hash_22eae8ce": "fx#hash_3c05597b99cbec42",
+    "c_t8_mp_spe_reaper_apocalypse_arms1_s_larm": "model#c_t8_mp_spe_reaper_apocalypse_arms1_s_larm",
+    "hash_3c05597b99cbec42:hash_ad0a3f9a": "fx#hash_3c05597b99cbec42",
+    "hash_b22f1c8195d08d2:hash_814636c2": "fx#hash_b22f1c8195d08d2",
+    "hash_5367906a77da6c4c:hash_4d894723": "fx#hash_5367906a77da6c4c",
+    "c_t8_mp_spe_reaper_apocalypse_arms1_s_rarm": "model#c_t8_mp_spe_reaper_apocalypse_arms1_s_rarm",
+    "hash_de0f9457": "j_elbow_ri"
+}

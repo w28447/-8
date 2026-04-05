@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:96adc8031c600298de3c2d06e3049b2a04387f381bf8b70c2cb3bda8c9b8d7aa
-size 380
+{
+    "description": "localized17#hash_7bb8d4862f9f491",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_scythe_multikill_2",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#hash_39a4f09573dabecb",
+    "stringref": "localized17#hash_dbf49092fbfafbf",
+    "iconlarge": "image#hash_310b94d89eafceb"
+}

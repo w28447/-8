@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:032735aeb298cde6d6220d691ac6c0fee7fcbb263bff6cd9fdc88e075e20b561
-size 388
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_rf_smg_standard_restriction",
+    "displayname": "localized17#weapon/smg_standard_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__smg_standard_t8__attachments__rf",
+    "isenableddisabled": 0
+}

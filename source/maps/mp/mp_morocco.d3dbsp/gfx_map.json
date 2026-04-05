@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:795172d48a76fe6a5ff8ba84079311423a076950282ad3af9527792434c82330
-size 346
+{
+    "name": "#maps/mp/mp_morocco.d3dbsp",
+    "baseName": "mp_morocco",
+    "lutMaterial": "#lut_mp_morocco",
+    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "unk550": [
+        "#img_trim_lut_mp_morocco",
+        "#img_trim_lut_mp_morocco",
+        "#img_trim_lut_mp_morocco",
+        "#img_trim_lut_mp_morocco"
+    ]
+}

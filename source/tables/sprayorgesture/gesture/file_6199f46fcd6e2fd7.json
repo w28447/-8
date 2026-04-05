@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2be9a2c4e6e80bfa31a0548d595bbd1128373461e131df4189a7771c05351c79
-size 337
+{
+    "name": "#hash_6199f46fcd6e2fd7",
+    "type": "#gesture",
+    "gesture": "#hash_4c09f7ad61d9221f",
+    "gesture2": "#hash_135899c4777c365a",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/lord_of_death",
+        "icon": "image#ui_icon_emotes_skullthrone",
+        "isdefault": 0
+    }
+}

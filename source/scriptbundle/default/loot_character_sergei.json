@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4c3b0a0729cbcfbc0e2cba1cf5dccd67c873fef84fc04e6d8d7823996a039def
-size 144
+{
+    "loot04_ui_icon_blackmarket_itemshop_sergei": "image#loot04_ui_icon_blackmarket_itemshop_sergei",
+    "name": "loot_character_sergei"
+}

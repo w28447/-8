@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:16d733c96e256ff5af3f3ad305aa46b064bae03f19102126b20d966dcf7bab58
-size 915
+{
+    "attack_chopper_multikill_2": "#attack_chopper_multikill_2",
+    "attack_chopper_multikill_6": "#attack_chopper_multikill_6",
+    "attack_chopper_kill": "#attack_chopper_kill",
+    "configstringfiletype": "scriptbundle",
+    "type": "scoreevents",
+    "attack_chopper_deployed": "#attack_chopper_deployed",
+    "attack_chopper_objective_kill": "#attack_chopper_objective_kill",
+    "vmtype": "both",
+    "attack_chopper_multikill_4": "#attack_chopper_multikill_4",
+    "name": "helicopter_gunner_scoreevents",
+    "customsettingstype": "ability",
+    "attack_chopper_multikill_5": "#attack_chopper_multikill_5",
+    "attack_chopper_assist": "#attack_chopper_assist",
+    "attack_chopper_objective_assist": "#attack_chopper_objective_assist",
+    "attack_chopper_multikill_3": "#attack_chopper_multikill_3",
+    "attack_chopper_objective_multikill_3": "#attack_chopper_objective_multikill_3"
+}

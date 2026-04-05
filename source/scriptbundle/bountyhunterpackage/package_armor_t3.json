@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9b4096760653b518b57afb8e20bf23ff5955f6c4739bda37ec9f5bcabcde1530
-size 554
+{
+    "packageitems": [
+        {
+            "item": "#gear_armor_tier_three"
+        }
+    ],
+    "hash_ef921c3c": 1,
+    "configstringfiletype": "scriptbundle",
+    "tracktier": 0,
+    "type": "bountyhunterpackage",
+    "hash_85d7cf08": 1,
+    "refillammo": 0,
+    "hash_ee686ece": 1,
+    "refillcost": 0,
+    "name": "package_armor_t3",
+    "packagetype": "armor",
+    "armor": 150,
+    "purchasecost": 2000,
+    "startammo": 2,
+    "hash_673a16ad": 1,
+    "hash_741010b5": 5,
+    "hash_782dbf79": 1,
+    "hash_767b7337": 0.5
+}

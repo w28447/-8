@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:40a700dd2b940f8cd4aa740c78b312338d6a940424d59d8b52998c6ec8586215
-size 333
+{
+    "name": "#hash_3b21d549ba47f39b",
+    "type": "#gesture",
+    "gesture": "#hash_1c2a0b4f14b0da6",
+    "gesture2": "#hash_f364bb533fe09b1",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/glorious_day",
+        "icon": "image#ui_icon_emotes_s3_rainbow",
+        "isdefault": 0
+    }
+}

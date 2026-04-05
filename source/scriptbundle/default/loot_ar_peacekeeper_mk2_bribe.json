@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:60708d95c563b337d23b2fc3817cc5bfcfb7b1da5b99fb21287cb573ebc1063f
-size 537
+{
+    "hash_2703f9fb7e481f6d:hash_c7bd8867": "localized17#hash_2703f9fb7e481f6d",
+    "popupimage": "image#ui_icon_weapon_ar_peacekeeper_mk2_render",
+    "ui_icon_weapon_ar_peacekeeper_mk2_render": "image#ui_icon_weapon_ar_peacekeeper_mk2_render",
+    "nametext": "localized17#hash_290718641d507e03",
+    "categorytext": "localized17#mpui/bm_bribe",
+    "name": "loot_ar_peacekeeper_mk2_bribe",
+    "desctext": "localized17#hash_37eb07ec7dd694fa",
+    "hash_290718641d507e03:hash_c1acffb6": "localized17#hash_290718641d507e03"
+}

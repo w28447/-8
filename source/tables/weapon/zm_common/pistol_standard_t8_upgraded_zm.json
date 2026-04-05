@@ -1,3 +1,118 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e050f794ead99087eaad3967c2083e70c88843645bf407e9b6ba53be24b5cd68
-size 4140
+{
+    "name": "#pistol_standard_t8_upgraded_zm",
+    "baseWeapon": "#pistol_standard_t8_upgraded",
+    "displayname": "#zmweapon/pistol_standard_t8_upgraded",
+    "xhash_60": "#hash_4e9634318c928516",
+    "weapon70": "#pistol_standard_t8",
+    "streamkey": "#hash_54944277e86d443e",
+    "scrstr_8c8": [
+        "tag_clan_tag",
+        "tag_camo_darkmatter",
+        "tag_camo_diamond"
+    ],
+    "worldModelTagRight": "tag_weapon_right",
+    "worldModelTagLeft": "tag_weapon_left",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_119c": "tag_slide_animate",
+    "scrstr_11a0": "tag_weapon_right",
+    "scrstr_11a4": "tag_weapon_left",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "#hash_5b73038c": 3,
+    "#hash_6566504b": 0,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "ZOMBIES",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.1 1",
+            "0.2 0",
+            "1 0"
+        ],
+        [
+            "0 1",
+            "0.0524 0.9014",
+            "0.1251 0.4004",
+            "0.2517 0.1204",
+            "0.5021 0.0508",
+            "1 0.05"
+        ]
+    ],
+    "firesounddistant": "#hash_f74753fbac3a42d",
+    "sound140": "#hash_35d9c70ac029b947",
+    "sound150": "#hash_34e9d80a2f767f02",
+    "sound1d0": "#hash_2dfbf84e4dada927",
+    "sound1e0": "#hash_22478e79f6ed4610",
+    "sound200": "#hash_29a5094dba1592e2",
+    "sound210": "#hash_78f4297a28091f71",
+    "sound240": "#hash_5993e31af4dd53ec",
+    "sound250": "#hash_55a9361a61a0ccad",
+    "sound260": "#hash_515f54aa1f553686",
+    "sound600": "#hash_72a07537a35e0368",
+    "sound610": "#hash_72a07537a35e0368",
+    "sound800": "#hash_21cba6ae89a3493c",
+    "sound810": "#hash_21cba6ae89a3493c",
+    "sound820": "#hash_21cba6ae89a3493c",
+    "tunables1": "#pistol_standard_t8_upgraded_tunables_zm",
+    "weaponCamo": "#hash_a63bdc3da119f9bc",
+    "cacWeaponXCam": "#ui_cam_cac_pistol_standard",
+    "cacAttachmentsXCam": "#ui_cam_cac_pistol_standard",
+    "weaponIconXCam": "#hash_e42584bd33a7bcef",
+    "attachments": [
+        "#hash_f459a0af8e8f912b"
+    ],
+    "attachmentUniques": [
+        "#hash_ddfb5793aa787d8d"
+    ],
+    "sharedWeaponSounds": "#pistol",
+    "ballisticDesc": "#hash_fa8de762a01fac90",
+    "tracers": [
+        "#hash_9cbad1eae7ceaf2c",
+        "#hash_c627e8ce4cc5b8fb"
+    ],
+    "viewmodel": [
+        "#wpn_t8_pistol_standard_view",
+        "#wpn_t8_pistol_standard_sig_01_view",
+        "#wpn_t8_pistol_standard_sig_02_view"
+    ],
+    "worldModel": [
+        "#wpn_t8_pistol_standard_world",
+        "#wpn_t8_pistol_standard_sig_01_world",
+        "#wpn_t8_pistol_standard_sig_02_world"
+    ],
+    "clipmodel": [
+        "#wpn_t8_pistol_standard_clip_world",
+        "#wpn_t8_pistol_standard_clip_world",
+        "#wpn_t8_pistol_standard_clip_sig_02_world"
+    ],
+    "reticleSide": "#reticle_side_small",
+    "inventoryIconZm": "#ui_icon_weapons_zm_pistolstandard",
+    "image_e90": "#ui_icon_obit_pistol_standard",
+    "fireRumble": "#pistol_fire",
+    "rumble_dc8": "#hash_b7945215019ab043",
+    "rumble_e20": "#hash_b22cc8a226215312",
+    "fx_bc8": "#hash_785b070ad413a638",
+    "fx_bd0": "#hash_59dcccd22b7d037e",
+    "fx_bd8": "#hash_f282363a66bd14e2",
+    "fx_c80": "#hash_8a5567d0168ae02f",
+    "fx_c88": "#hash_8a5567d0168ae02f",
+    "fx_c90": "#hash_8d185de6377a14df",
+    "fx_c98": "#hash_8a5567d0168ae02f",
+    "normalImpactFX": "#hash_e1b4c700060ee40c",
+    "exitImpactFX": "#hash_83b4b1d145ec9892",
+    "normalImpactSounds": "#bullet_impact",
+    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+}

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aeb91e2ca63f9bbdc6337e2612e578c798a5a7f385075c07f8cf51c6e68b4e2e
-size 287
+{
+    "detailsicon": "image#hash_32210f7ab6b4e86",
+    "hash_177d46cf3e0b5135:hash_6c274f86": "image#hash_177d46cf3e0b5135",
+    "nametext": "localized17#hash_53865018e035a1dd",
+    "name": "ruin_apocalypse_outfit_bundle_shop",
+    "desctext": "localized17#hash_263f4ceea8f0a5e7"
+}

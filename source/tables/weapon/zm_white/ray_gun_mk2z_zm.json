@@ -1,3 +1,82 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2c28bcb3714dc30b5dff0cb1cdc7025ef3738b80d5255c453962e816401dff8c
-size 2724
+{
+    "name": "#ray_gun_mk2z_zm",
+    "baseWeapon": "#ray_gun_mk2z",
+    "displayname": "#zmweapon/ray_gun_mk2z",
+    "weapon70": "#ray_gun_mk2",
+    "streamkey": "#hash_58637b726d05588d",
+    "worldModelTagRight": "tag_weapon_right",
+    "worldModelTagLeft": "tag_weapon_left",
+    "scrstr_118c": "tag_flash",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_weapon_right",
+    "scrstr_11a4": "tag_weapon_left",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "ZOMBIES",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.1 1",
+            "0.2 0",
+            "1 0"
+        ],
+        [
+            "0 1",
+            "0.0524 0.9014",
+            "0.1251 0.4004",
+            "0.2517 0.1204",
+            "0.5021 0.0508",
+            "1 0.05"
+        ]
+    ],
+    "sound90": "#hash_44f407588f82aa53",
+    "firesound": "#hash_1c3534ce92c118f7",
+    "firesoundplayer": "#hash_2aee85ce9a5bee52",
+    "sound220": "#hash_1c3534ce92c118f7",
+    "sound230": "#hash_2aee85ce9a5bee52",
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "sound4e0": "#hash_55bca176b2a2d59d",
+    "sound4f0": "#gear_player",
+    "sound500": "#hash_55bca176b2a2d59d",
+    "sound510": "#gear_player",
+    "projexplosionsound": "#hash_31763f478cb96e80",
+    "sound800": "#hash_6f5f990a945df8f8",
+    "sound810": "#hash_21cba6ae89a3493c",
+    "tunables1": "#ray_gun_mk2z_tunables_zm",
+    "sharedWeaponSounds": "#hash_b2107e63787b0c3",
+    "tracers": [
+        "#hash_1b65e8b55dee64aa",
+        "#hash_1b65e8b55dee64aa"
+    ],
+    "projectilemodel": "#tag_flash",
+    "viewmodel": [
+        "#wpn_t8_zm_raygun_mk2_view_purple"
+    ],
+    "worldModel": [
+        "#wpn_t8_zm_raygun_mk2_world_purple"
+    ],
+    "reticleSide": "#reticle_side_small",
+    "inventoryIconZm": "#ui_icon_weapons_zm_raygun_mk2_magenta",
+    "fireRumble": "#defaultweapon_fire",
+    "fx_bc8": "#hash_5c1d405afbb88ee2",
+    "fx_bd0": "#hash_65e952dd71f12095",
+    "fx_be0": "#hash_532e319b69427908",
+    "normalImpactFX": "#hash_5b656e496f266f15"
+}

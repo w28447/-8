@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9395ac7683a239fcc7651406d6995defcfef60170f459759ffb478c5d65564f5
-size 336
+{
+    "name": "#hash_210628c39deb6c83",
+    "type": "#gesture",
+    "gesture": "#hash_9e665de6f03ece",
+    "gesture2": "#hash_47d831017b7edd9",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/bending_reality",
+        "icon": "image#ui_icon_emotes_matrixdodge",
+        "isdefault": 0
+    }
+}

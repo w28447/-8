@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a1317cad8e3dacd830baa08005f99636c2ecd95b8ba5b23cbcb9a6270d13d05d
-size 549
+{
+    "buttonimage": "image#ui_icon_blackmarket_promos_seraph_catacomb_button_small",
+    "popupimage": "image#ui_icon_blackmarket_promos_seraph_catacomb_large_preview",
+    "nametext": "localized17#hash_1cba159f28b3f3b8",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
+    "name": "season5_triple_play_03",
+    "desctext": "localized17#hash_49fd2bc030165b2d",
+    "previewimage": "image#ui_icon_blackmarket_promos_seraph_catacomb_item_detail",
+    "reserveimage": "image#ui_icon_blackmarket_promos_seraph_catacomb_button_large"
+}

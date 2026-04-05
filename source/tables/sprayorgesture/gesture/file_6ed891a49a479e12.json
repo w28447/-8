@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:19e81951e47e8d032d99de7168f459619555f7a7f4caa661768e3b2f88e9eb8d
-size 335
+{
+    "name": "#hash_6ed891a49a479e12",
+    "type": "#gesture",
+    "gesture": "#hash_7608bcdfbb3684b0",
+    "gesture2": "#hash_75d347a0b1487533",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/devils_diary",
+        "icon": "image#ui_icon_emotes_bookofhell",
+        "isdefault": 0
+    }
+}

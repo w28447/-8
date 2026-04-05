@@ -1,3 +1,84 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b8272039fb7ee0c75f201b038fce3706ab4340421c0c73b72ac34428ec01639d
-size 3326
+{
+    "name": "#hash_62fb4f8a9caa979a",
+    "baseWeapon": "#hash_66401df7cd6bf292",
+    "displayname": "#weapon/fraggrenade",
+    "weapon70": "#eq_cluster_semtex_grenade",
+    "streamkey": "#hash_72d80a1a6a531c38",
+    "worldModelTagRight": "tag_accessory_left",
+    "worldModelTagLeft": "tag_weapon_left",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_inhand",
+    "scrstr_11a4": "tag_inhand",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 300,
+    "soundrattlerangemax": 700,
+    "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "MULTIPLAYER",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": true,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "firesound": "#wpn_grenade_throw",
+    "firesoundplayer": "#wpn_grenade_throw",
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "gadgetreadysoundplayer": "#hash_6f5b79a1a69b43a8",
+    "projexplosionsound": "#hash_117d3a361091a4a5",
+    "tunables1": "#hash_1981acf2c6ae47e1",
+    "cacWeaponXCam": "#hash_e602e473c324fc07",
+    "sharedWeaponSounds": "#equipment",
+    "statusEffects": [
+        {
+            "effect": "#hash_a608bf886a137e8e",
+            "statusEffects:unk8": "[ll0x0=12c00000064][f0x0=1.4013e-43][f0x4=4.2039e-43] 64 00 00 00 2c 01 00 00",
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        }
+    ],
+    "#hash_2e4a8800": "#eq_cluster_semtex_scoreevents",
+    "projectilemodel": "#hash_7ccbeda8d7b8477c",
+    "viewmodel": [
+        "#wpn_t8_eqp_semtex_cluster_view"
+    ],
+    "worldModel": [
+        "#wpn_t8_eqp_semtex_cluster_world"
+    ],
+    "gadgetIconAvailable": "#t7_hud_icon_menu_frag",
+    "gadgetIconUnavailable": "#t7_hud_icon_menu_frag",
+    "reticleCenter": "#reticle_center_cross",
+    "reticleSide": "#reticle_side_round",
+    "inventoryIconZm": "#t7_hud_icon_menu_frag_pu",
+    "hudIcon": "#t7_hud_mp_inventory_grenade",
+    "image_e90": "#ui_icon_obit_semtex",
+    "image_eb0": "#hud_grenadeicon",
+    "rumble_de8": "#grenade_rumble",
+    "fx_f00": "#hash_dfdd021d80dd8fc6",
+    "underwaterExplosionSurfaceFX": [
+        "#hash_fb70232b2892e045",
+        "#hash_c15b461b7420c6d2",
+        "#hash_bb3f97cf646813ac"
+    ],
+    "normalImpactFX": "#hash_25bf0d1ebd614ccd",
+    "bounceImpactFX": "#grenade_bounce",
+    "dudImpactFX": "#grenade_dud",
+    "normalImpactSounds": "#hash_e8e0a97bbbf0b555",
+    "bounceImpactSounds": "#grenade_bounce"
+}

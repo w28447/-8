@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c23a3a7039395ef36f24b708df82baa08b6540fb02660cb6cad20eae4aa3813c
-size 787
+{
+    "hasmigration": 0,
+    "lobbymode": 4,
+    "id": 1500,
+    "settingscount": 1,
+    "backtarget": "director_lan",
+    "maxlocalclientsnetwork": 2,
+    "mainmode": 1,
+    "hash_d16ccae8": 1,
+    "isprivate": 1,
+    "showteams": 1,
+    "lobbytype": 0,
+    "menumusic": "lobby_mp",
+    "room": "auto",
+    "hash_7f60c82f": 1,
+    "kicker": "localized17#hash_51f548d4609d9566",
+    "isadvertised": 0,
+    "maxclients": 1,
+    "name": "director_lan_mp_training",
+    "networkmode": 1,
+    "errtarget": "director_lan_mp_training",
+    "egamemodes": 1,
+    "hash_ec76767d": 5,
+    "title": "localized17#hash_51f548d4609d9566",
+    "hash_f68d7d0": 0,
+    "isgame": 0,
+    "maxlocalclients": 1,
+    "hash_38c7a0d1": "showdirectorcustom",
+    "hash_f0c68dbb": 1
+}

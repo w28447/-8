@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f566c8126e8e3323e0c2aee840f71ca20384e8bc5d77c6bef0bcad59c2a51b1d
-size 1095
+{
+    "name": "#loot_emote_exotic_shared_heartattack",
+    "type": "#gesture",
+    "gesture": "#boast_heartattack",
+    "gesture2": "#boast_heartattack_fem",
+    "sub": [
+        {
+            "gesture": "#boast_heartattack_alt",
+            "gesture2": "#boast_heartattack_alt_fem",
+            "roles": [
+                "#prt_mp_firebreak",
+                "#prt_wz_firebreak",
+                "#prt_mp_enforcer",
+                "#prt_wz_enforcer",
+                "#hash_42e7a274de12337e",
+                "#hash_7beba0d40d750e10",
+                "#hash_6c8d991db6f42c4a",
+                "#hash_57d9e98fa3f08f76",
+                "#hash_203a1dcc75cf8c53",
+                "#hash_76ccdd2bfc985ae8",
+                "#prt_wz_spectre",
+                "#prt_mp_spectre",
+                "#prt_mp_reaper",
+                "#prt_wz_reaper_bo4"
+            ]
+        }
+    ],
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/heart_attack_2.0",
+        "icon": "image#ui_icon_emotes_s3_heartattack",
+        "isdefault": 0
+    }
+}

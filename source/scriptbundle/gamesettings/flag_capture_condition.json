@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1b2d2b0fb3bad5e13c6f1c8f409b5f6f79ebc6dd40cd524d61ff87c14b15dca3
-size 544
+{
+    "hinttext": "localized17#menu/flag_capture_condition_hint",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "flag_capture_condition",
+    "displayname": "localized17#menu/flag_capture_condition",
+    "label1": "localized17#menu/disabled",
+    "label2": "localized17#menu/flag_at_base",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "flagCaptureCondition",
+    "isenableddisabled": 0
+}

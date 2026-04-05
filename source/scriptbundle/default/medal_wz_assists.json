@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:20d835c6e3ba13a25fc63d26cb097f464db797cd67d52e21743a50ec7da2a514
-size 387
+{
+    "description": "localized17#hash_262744e67e20f7c0",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_wz_assists",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_wz_assists",
+    "stringref": "localized17#hash_6a26639391a4a5d8",
+    "iconlarge": "image#ui_icon_medal_wz_assists_large"
+}

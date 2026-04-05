@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4bbc9f3ea3922f896e022d3facd7f366b9919f757dad957c13b5a6b37ae1a0f7
-size 540
+{
+    "buttonimage": "image#ui_icon_blackmarket_promos_bundle_blackknight_button_small",
+    "popupimage": "image#ui_icon_blackmarket_promos_blackknight_large_preview",
+    "nametext": "localized17#menu/bundle_titan",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
+    "name": "lmg_standard_bundle",
+    "desctext": "localized17#hash_523b5f07b353fb02",
+    "previewimage": "image#ui_icon_blackmarket_promos_blackknight_item_detail",
+    "reserveimage": "image#ui_icon_blackmarket_promos_bundle_blackknight_button_large"
+}

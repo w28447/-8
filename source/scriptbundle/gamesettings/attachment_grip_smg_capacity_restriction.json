@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:308553acce419107201719264f5f4f3fc1fe117075bbbee53a8b896cec6ba37d
-size 392
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_grip_smg_capacity_restriction",
+    "displayname": "localized17#weapon/smg_capacity_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__smg_capacity_t8__attachments__grip",
+    "isenableddisabled": 0
+}

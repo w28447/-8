@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f891741a0dc2c64b2fe295a7ae6aa9deeb9982cc65f34b59a659986b99a2ede0
-size 644
+{
+    "name": "mp_icebreaker.fj",
+    "zone": "mp_icebreaker",
+    "gameLanguage": "japanese_full",
+    "soundLanguage": "fj",
+    "nameHash": "#mp_icebreaker.fj",
+    "patchZone": true,
+    "alias": [],
+    "duck": [],
+    "ambients": [],
+    "scriptIdLookups": [],
+    "streamKeysSABL": {
+        "streamKey1": "#mp_icebreaker_fj_stream",
+        "dataSize1": 2048,
+        "fileKey": "#mp_icebreaker_fj_loaded",
+        "fileLen": 2048
+    },
+    "streamKeysSABS": {
+        "streamKey1": "#hash_67c6799c79c70684",
+        "dataSize1": 2048,
+        "fileKey": "#hash_61d22ccbe98b59c1",
+        "fileLen": 2048
+    }
+}

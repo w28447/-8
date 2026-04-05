@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:262e2e89f2cbd43af0c63d89043cea7a51aa439b7441d6205e126e00a66e2111
-size 346
+{
+    "name": "#maps/mp/mp_embassy.d3dbsp",
+    "baseName": "mp_embassy",
+    "lutMaterial": "#lut_mp_embassy",
+    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "unk550": [
+        "#img_trim_lut_mp_embassy",
+        "#img_trim_lut_mp_embassy",
+        "#img_trim_lut_mp_embassy",
+        "#img_trim_lut_mp_embassy"
+    ]
+}

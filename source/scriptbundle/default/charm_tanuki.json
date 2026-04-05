@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bf1a5816633e9b776103fc257cdda0cd448c0cb14b8e7c575c1fc44ef0f22b73
-size 331
+{
+    "lootid": "#charm_tanuki",
+    "hash_ff3063df": "model#",
+    "image": "ui_icon_weapon_charms_tanuki",
+    "name": "charm_tanuki",
+    "displayname": "localized17#menu/charm_tanuki",
+    "icon": "ui_icon_weapon_charms_tanuki",
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_tanuki"
+}

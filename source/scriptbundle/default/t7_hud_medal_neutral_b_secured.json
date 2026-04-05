@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:587a70cc9c757724fc1b42dfd3b3d8b07e15d602f34fb55e327b6c5c9fbea336
-size 384
+{
+    "backingsmall": "image#t7_hud_medal_backing_gamemode",
+    "widget": "BadasseryMedal",
+    "name": "t7_hud_medal_neutral_b_secured",
+    "backinglarge": "image#t7_hud_medal_backing_gamemode_lrg",
+    "iconsmall": "image#t7_hud_medal_neutral_b_secured",
+    "stringref": "localized17#medal/neutral_b_secured",
+    "iconlarge": "image#t7_hud_medal_neutral_b_secured_lrg"
+}

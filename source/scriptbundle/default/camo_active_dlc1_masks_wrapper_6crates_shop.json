@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d4555cc2ffc2df01d4d0a82ad30d772efd36b328e3b314f0be16eaf8da091140
-size 297
+{
+    "detailsicon": "image#hash_53c56698fa5eb1c7",
+    "hash_53c56698fa5eb1c7:hash_6c274f86": "image#hash_53c56698fa5eb1c7",
+    "nametext": "localized17#hash_2865013f2bbd7a81",
+    "name": "camo_active_dlc1_masks_wrapper_6crates_shop",
+    "desctext": "localized17#hash_3ac5bad39c107f64"
+}

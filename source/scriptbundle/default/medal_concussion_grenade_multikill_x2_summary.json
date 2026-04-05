@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c90432bf9535f3e3b4b8817f764766108a6bdb07d4451149ffdaef9d7d9e9905
-size 412
+{
+    "description": "localized17#hash_6c39c9038c26b1e5",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_concussion_grenade_multikill_x2_summary",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_finished",
+    "stringref": "localized17#hash_3782b311b465cbba",
+    "iconlarge": "image#ui_icon_medal_finished_large"
+}

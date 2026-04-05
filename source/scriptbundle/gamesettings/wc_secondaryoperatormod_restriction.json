@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c26454660ed58fd7581a5be3ffaba05a7911f247756042eb64c63395b3b7192f
-size 613
+{
+    "descriptionimage": "image#ui_icon_wildcard_secondaryopperatormod_large",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "wc_secondaryoperatormod_restriction",
+    "displayname": "localized17#bonuscard/secondary_operator_mod",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__bonuscard_secondary_operator_mod__restricted",
+    "isenableddisabled": 0
+}

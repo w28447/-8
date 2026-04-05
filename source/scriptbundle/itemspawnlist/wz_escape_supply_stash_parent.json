@@ -1,3 +1,46 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:81e2439cddb46db1f59f0ebee0104398273b2fa2daf2400ae22517e7a145b125
-size 1269
+{
+    "itemlist": [
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&supply_stash_slot1_dlc1",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&supply_stash_slot2_dlc1",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&supply_stash_slot3_dlc1",
+            "maxweight": 50,
+            "available": 2
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&supply_stash_slot4_dlc1",
+            "maxweight": 50,
+            "available": 2
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&supply_stash_slot5_dlc1",
+            "maxweight": 50,
+            "available": 2
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 4000,
+    "type": "itemspawnlist",
+    "hash_345eba59": 5,
+    "vehiclespawner": 0,
+    "hash_9b009839": 10,
+    "hash_dc7ffbef": 0,
+    "name": "wz_escape_supply_stash_parent",
+    "supplystashweight": 100,
+    "hash_dc91e192": 1,
+    "supplystash": 1
+}

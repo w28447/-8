@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:baef06cea4779689b136282caf9fc667694729474c2eed25bae2d2802177081a
-size 278
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "scoreevents",
+    "vmtype": "both",
+    "name": "eq_seeker_mine_mp_scoreevents",
+    "customsettingstype": "ability",
+    "hash_2cc3287407441d3e:hash_3143c814": "#hash_2cc3287407441d3e",
+    "hash_fcd2ff3a": 1
+}

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:76d3f1fbe79877d182d0900de1e9c3c38499b01c33458ea6590c63dd0cf43733
-size 173
+{
+    "name": "#gsol_zm_packapunch",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#zm_pack",
+        "#gamesettings/#zm_superpack"
+    ]
+}

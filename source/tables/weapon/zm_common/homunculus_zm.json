@@ -1,3 +1,51 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:799f7f7b876f877b58cae4424fa304601726544668a67a09f5c9261b55a24130
-size 1944
+{
+    "name": "#homunculus_zm",
+    "baseWeapon": "#homunculus",
+    "displayname": "#zmweapon/homunculus",
+    "weapon70": "#zombie_homunculus",
+    "streamkey": "#hash_199debe65871b6ce",
+    "worldModelTagRight": "tag_weapon_right",
+    "worldModelTagLeft": "tag_weapon_left",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_weapon_right",
+    "scrstr_11a4": "tag_inhand",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "ZOMBIES",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "firesound": "#hash_18a7a691819573df",
+    "firesoundplayer": "#hash_33e1a791d94f57da",
+    "gadgetreadysoundplayer": "#hash_5069ed8fdae493ce",
+    "sound660": "#hash_4b624dad2a08a6cd",
+    "tunables1": "#homunculus_tunables_zm",
+    "projectilemodel": "#c_t8_zmb_homunculus_fb1",
+    "viewmodel": [
+        "#wpn_t8_zm_homunculus_view"
+    ],
+    "worldModel": [
+        "#wpn_t8_zm_homunculus_world"
+    ],
+    "gadgetIconAvailable": "#ui_icon_equipment_zm_homunculus",
+    "gadgetIconUnavailable": "#ui_icon_equipment_zm_homunculus_dark",
+    "inventoryIconZm": "#ui_icon_equipment_zm_homunculus",
+    "hudIcon": "#ui_icon_equipment_zm_homunculus",
+    "image_e90": "#ui_icon_equipment_zm_homunculus",
+    "image_1048": "#ui_icon_equipment_zm_homunculus",
+    "fx_ed8": "#explosions/fx_exp_grenade_default",
+    "bounceImpactSounds": "#hash_9ab32ccf7222471"
+}

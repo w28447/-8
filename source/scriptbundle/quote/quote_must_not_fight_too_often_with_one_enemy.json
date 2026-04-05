@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dbff131fd0e4568a0ecfa1329b3d962630b522c55bfdb4542453a5de751e179d
-size 232
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_must_not_fight_too_often_with_one_enemy",
+    "quote": "localized17#hash_d5d9977caf27a",
+    "author": "localized17#hash_63ab71c957f7ca17"
+}

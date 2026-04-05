@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:18996d0662cd463ea5cd5beca83b5af17b4ab6be4d29e02b3ca8213195687eb0
-size 224
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_only_two_forces_in_the_world",
+    "quote": "localized17#hash_1a3030b44ad99200",
+    "author": "localized17#hash_63ab71c957f7ca17"
+}

@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f3c8a217d123ecfe45e15f405c5cf942e8b9a9f5b2a0ad601b6d642c3d7de946
-size 564
+{
+    "descriptionimage": "image#ui_icon_sig_buckler_dw_mp",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "ability_sig_buckler_dw_restriction",
+    "displayname": "localized17#weapon/sig_buckler_dw",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__sig_buckler_dw__restricted",
+    "isenableddisabled": 0
+}

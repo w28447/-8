@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0d946650bfe084f52e410dc48b5b866bff050a3f826290fc15e9ade88ddf94c3
-size 378
+{
+    "detailsicon": "image#loot07_ui_icon_blackmarket_itemdetail_melee_slaybell",
+    "loot07_ui_icon_blackmarket_itemshop_melee_slaybell:hash_6c274f86": "image#loot07_ui_icon_blackmarket_itemshop_melee_slaybell",
+    "nametext": "localized17#weapon/melee_slaybell_t8",
+    "name": "melee_slaybell_sunset_bundle_shop",
+    "desctext": "localized17#hash_e0e97d07450bff8"
+}

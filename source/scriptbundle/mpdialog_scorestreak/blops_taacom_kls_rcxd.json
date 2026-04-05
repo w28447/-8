@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a5da3aebdac47627d1d166d69e88336071d33ba459314d9cb68d616f9069dade
-size 230
+{
+    "destroyed": "#hash_10c39c57317b32f7",
+    "ready": "#hash_4db3df0f6899b4d3",
+    "configstringfiletype": "scriptbundle",
+    "type": "mpdialog_scorestreak",
+    "vmtype": "both",
+    "name": "blops_taacom_kls_rcxd"
+}

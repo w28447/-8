@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8d30b68ace57c4487c39eff2421237a0effcf067f68fc5e1f5d00c81ac8d01b7
-size 235
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_hardships_often_prepare_ordinary_people",
+    "quote": "localized17#hash_13aefd40569cb116",
+    "author": "localized17#hash_6ed6ef7b33a09183"
+}

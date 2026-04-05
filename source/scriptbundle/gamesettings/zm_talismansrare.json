@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4b1d0eaad5a71acdca1bf76dc31fa55900cb42ef2767580d7d88bfdd3b2792f9
-size 671
+{
+    "hinttext": "localized17#hash_622dd92835a9122",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value3": "2",
+    "value1": "0",
+    "value4": "3",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "zm_talismansrare",
+    "displayname": "localized17#hash_1d14011b788d0cf7",
+    "label4": "localized17#hash_1f0968aad9d63087",
+    "label1": "localized17#hash_68b65fb510ccd214",
+    "label3": "localized17#hash_68b65fb510ccd214",
+    "label2": "localized17#hash_1ac823ffd3e68662",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "zmTalismansRare",
+    "isenableddisabled": 0
+}

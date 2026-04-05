@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a6b48fae7001e2d58136f8a0317bdf52b65188079f57bb2d4463a58354d382bd
-size 229
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_in_peace_wise_man_prepares_for_war",
+    "quote": "localized17#hash_2c082fd7e81e49b5",
+    "author": "localized17#hash_2333b51c3e52c2b"
+}

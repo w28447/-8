@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7a5d676dbdbfdd2be12aac547c288cb8a50678312d4f2d8d8caeea334d3888c9
-size 398
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_clantag_smg_accurate_restriction",
+    "displayname": "localized17#weapon/smg_accurate_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__smg_accurate_t8__attachments__clantag",
+    "isenableddisabled": 0
+}

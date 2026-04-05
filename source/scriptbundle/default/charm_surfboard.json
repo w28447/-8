@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0b8bdaf3c7384e0e9a0747ade7a1da0eee1cf09851d3e61359a250059c2a358d
-size 349
+{
+    "lootid": "#charm_surfboard",
+    "hash_ff3063df": "model#",
+    "image": "ui_icon_weapon_charms_surfboard",
+    "name": "charm_surfboard",
+    "displayname": "localized17#menu/charm_surfboard",
+    "icon": "ui_icon_weapon_charms_surfboard",
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_surfboard"
+}

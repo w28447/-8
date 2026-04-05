@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e23d28e756da7089f5e4ced49f766efd1a24f39c273cfd9c8827d8dd2a26a74e
-size 111
+{
+    "defaultimage": "image#ui_icon_hvo_base",
+    "name": "basic_hvo",
+    "associatedgamemode": "none"
+}

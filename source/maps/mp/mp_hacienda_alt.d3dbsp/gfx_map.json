@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4e9294dfb7c45b53e51303e3112d21de4dfc76942887da84270d8a0ebaf9eff2
-size 381
+{
+    "name": "#maps/mp/mp_hacienda_alt.d3dbsp",
+    "baseName": "mp_hacienda_alt",
+    "lutMaterial": "#lut_mp_hacienda_alt",
+    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "unk550": [
+        "#img_trim_lut_mp_hacienda_alt",
+        "#img_trim_lut_mp_hacienda_alt",
+        "#img_trim_lut_mp_hacienda_alt",
+        "#img_trim_lut_mp_hacienda_alt"
+    ]
+}

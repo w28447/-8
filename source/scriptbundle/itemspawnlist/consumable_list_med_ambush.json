@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3e22bcde0db5a2b70e15a08065a5698f84d08c1e437a8eb3f2df06d739243004
-size 1382
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&perk_item_awareness",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&perk_item_looter",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&perk_item_squadlink",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&perk_item_reinforced",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&perk_item_awareness",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&perk_item_drifter",
+            "maxweight": 200,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 6,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "consumable_list_med_ambush",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

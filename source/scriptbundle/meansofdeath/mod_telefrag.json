@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a64109b8fd24c24f52b26e29b72cc1e77b0bb59e66308debd8cf154c09a013a7
-size 295
+{
+    "mod": "MOD_TELEFRAG",
+    "configstringfiletype": "scriptbundle",
+    "type": "meansofdeath",
+    "name": "mod_telefrag",
+    "displayname": "localized17#ui/mod_telefrag",
+    "icon": "image#ui_icon_meansofdeath_suicide",
+    "iconlarge": "image#ui_icon_meansofdeath_suicide_xl"
+}

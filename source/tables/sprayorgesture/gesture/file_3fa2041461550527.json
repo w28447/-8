@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8b7fac398d61ee9c5928b383429ac5b3b88c4b6b0990d9f67684407aa67e49cc
-size 341
+{
+    "name": "#hash_3fa2041461550527",
+    "type": "#gesture",
+    "gesture": "#hash_681e08ab8afe6005",
+    "gesture2": "#hash_3ff97812c42c33fe",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/shaking_in_my_boots",
+        "icon": "image#ui_icon_emotes_so_scared",
+        "isdefault": 0
+    }
+}

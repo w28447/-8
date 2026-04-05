@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b976c3f3830b30fa728f34eb3dae7b3b2a17c68da93979fe9f73bff67c0802ba
-size 220
+{
+    "name": "#c_t8_zmb_ora_pablo",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 0,
+    "bodyImpactType": 0,
+    "body": "#hash_2264b73572a0e4a1",
+    "head": "#hash_16295a6b4402b21f"
+}

@@ -1,3 +1,113 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:319565aff32a3aa3d82e99c4ee6e9bfeec57702fd7e0bf407fda0b477e236619
-size 4176
+{
+    "name": "#hero_flamethrower_t8_lv2_mp",
+    "baseWeapon": "#hero_flamethrower_t8_lv2",
+    "displayname": "#hash_4a081ed23f9db2d8",
+    "weapon70": "#hero_flamethrower_t8_lv1",
+    "streamkey": "#hash_534f233eef6f7b84",
+    "scrstr_8c8": [
+        "tag_exhaust_flame",
+        "tag_exhaust_cap"
+    ],
+    "worldModelTagRight": "tag_weapon_right",
+    "worldModelTagLeft": "tag_weapon_left",
+    "scrstr_118c": "tag_exhaust_air_fx",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_weapon_right",
+    "scrstr_11a4": "tag_weapon_left",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "MULTIPLAYER",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.03 0.95",
+            "0.1 0.5",
+            "0.25 0.25",
+            "0.5 0.01",
+            "0.75 0.005",
+            "1 0"
+        ],
+        [
+            "0 1",
+            "0.03 1",
+            "0.1 0.6",
+            "0.2 0.35",
+            "0.3 0.1",
+            "0.375 0.02",
+            "1 0"
+        ]
+    ],
+    "sound140": "#hash_6f21ddfc19f9f7f3",
+    "sound150": "#hash_4f5626fc98ae856e",
+    "sound180": "#hash_32bb69fd6e0406b9",
+    "sound190": "#hash_241d26fd668010e0",
+    "sound1c0": "#hash_639c5bc114d49927",
+    "sound1f0": "#hash_5f456cc0813c82e2",
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "sound320": "#hash_43cdf5ac74e6f6af",
+    "sound3b0": "#hash_496bb6ac2f4469ca",
+    "gadgetreadysoundplayer": "#hash_40f93f81c44b9e40",
+    "#hash_fb22040b": "#hash_6aa35ab86c22666e",
+    "sound660": "#hash_315685483901984c",
+    "sound800": "#hash_41b8cf5f69b41ad4",
+    "sound810": "#hash_41b8cf5f69b41ad4",
+    "tunables1": "#hero_flamethrower_t8_lv2_tunables_zm",
+    "cacWeaponXCam": "#hash_db5c34f7d9e1861",
+    "sharedWeaponSounds": "#hash_3a2265757f78be8c",
+    "flameTableFirstPerson": "#hash_7c9e63bac4fc46ba",
+    "flameTableThirdPerson": "#hash_6efa585a41207471",
+    "statusEffects": [
+        {
+            "effect": "#dot_purifier",
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "effect": "#wound_purifier",
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        },
+        {
+            "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
+        }
+    ],
+    "#hash_2e4a8800": "#hero_flamethrower_scoreevents",
+    "#hash_8456d4d": "#damageeffecttype_fire",
+    "viewmodel": [
+        "#wpn_t8_zm_flamethrower_lvl2_view"
+    ],
+    "worldModel": [
+        "#wpn_t8_zm_flamethrower_lvl2_world"
+    ],
+    "gadgetIconAvailable": "#ui_icon_equipment_zm_flamethrower_lvl2",
+    "gadgetIconUnavailable": "#ui_icon_equipment_zm_flamethrower_lvl2_dark",
+    "reticleCenter": "#hud_flamethrower_reticle",
+    "inventoryIconZm": "#ui_icon_equipment_zm_flamethrower_lvl2",
+    "hudIcon": "#ui_icon_equipment_zm_flamethrower_lvl2",
+    "image_e90": "#ui_icon_equipment_zm_flamethrower_lvl2",
+    "image_1048": "#ui_icon_equipment_zm_flamethrower_lvl2",
+    "fireRumble": "#flamethrower",
+    "beam_e58": "#flamethrower_beam",
+    "beam_e60": "#flamethrower_beam_3p",
+    "beam_e68": "#hash_ecdf74613c27651",
+    "beam_e70": "#hash_2e4d796fdefb28b5",
+    "fx_be0": "#hash_2e23855e7c53a525"
+}

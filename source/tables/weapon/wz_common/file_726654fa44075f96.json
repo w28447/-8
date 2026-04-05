@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a105914c49c4623f4f56aa37d1884076b4eec58cdbb1abe13193212d237c4a30
-size 1281
+{
+    "name": "#hash_726654fa44075f96",
+    "baseWeapon": "#hash_7637baffed0925ea",
+    "displayname": "#hash_239b4d30eb78175e",
+    "streamkey": "#hash_409e6ab7746bc440",
+    "worldModelTagRight": "tag_weapon_right",
+    "worldModelTagLeft": "tag_weapon_left",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_weapon_right",
+    "scrstr_11a4": "tag_weapon_left",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "WARZONE",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "sound830": "#hash_571a12038dc944c1",
+    "tunables1": "#hash_73b99ec5708d8271",
+    "worldModel": [
+        "#p8_wz_ammo_pickup_762"
+    ]
+}

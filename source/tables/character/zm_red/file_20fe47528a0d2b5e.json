@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:310abc721a0ccc673b7ee5ecf38988f8d63b54c2050627026f6497cfe3f1d99b
-size 261
+{
+    "name": "#hash_20fe47528a0d2b5e",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "fxDef": "#fxd8_zm_char_werewolf_body",
+    "ragdollDef": "#werewolf",
+    "body": "#hash_3a05f4a919bf3c97"
+}

@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a977e39699bb53c28f17cf4bf19607d9068258fb6f7284a2c65dd48b4b93fa84
-size 381
+{
+    "destroyed": "#destroyed",
+    "ready": "#ready",
+    "beinghacked": "#being_hacked",
+    "configstringfiletype": "scriptbundle",
+    "type": "mpdialog_scorestreak",
+    "vmtype": "both",
+    "name": "cdp_taacom_kls_sentrygun",
+    "firewallbeinghacked": "#being_hacked_fw",
+    "timeout": "#timeout",
+    "firewallhacked": "#hacked_fw",
+    "hacked": "#hacked"
+}

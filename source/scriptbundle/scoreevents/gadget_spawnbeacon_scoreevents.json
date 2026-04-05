@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c0b1d504049b3d03a1a6760f55fef47909f3350286b4867b4ddda7c662abc25f
-size 689
+{
+    "spawn_beacon_multikill_2": "#spawn_beacon_multikill_2",
+    "spawn_beacon_multikill_2": "#spawn_beacon_multikill_2",
+    "spawn_beacon_kill": "#spawn_beacon_kill",
+    "configstringfiletype": "scriptbundle",
+    "type": "scoreevents",
+    "spawn_beacon_insertion": "#spawn_beacon_insertion",
+    "vmtype": "both",
+    "spawn_beacon_multikill_2": "#spawn_beacon_multikill_2",
+    "name": "gadget_spawnbeacon_scoreevents",
+    "customsettingstype": "ability",
+    "spawn_beacon_multikill_2": "#spawn_beacon_multikill_2",
+    "forward_spawn_deactivated": "#forward_spawn_deactivated",
+    "hash_fcd2ff3a": 1,
+    "spawn_beacon_multikill_2": "#spawn_beacon_multikill_2"
+}

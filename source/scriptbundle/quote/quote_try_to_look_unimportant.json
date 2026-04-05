@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0afed71a25fbc748d1c65c8e5c5155572dc35c7efef81ae439cc611fc7bdfcc1
-size 219
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_try_to_look_unimportant",
+    "quote": "localized17#hash_27eb0792bfeed064",
+    "author": "localized17#hash_6dd43640e0dd2745"
+}

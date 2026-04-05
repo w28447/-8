@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb3abfd5e28d2ad6d57a23a081c9008024dfeef0e3017e44cc7fa451aa655252
-size 428
+{
+    "description": "localized17#medal/attack_chopper_killjoy_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_attack_chopper_killjoy",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_destroy_chopper",
+    "stringref": "localized17#medal/attack_chopper_killjoy",
+    "iconlarge": "image#ui_icon_medal_destroy_chopper_large"
+}

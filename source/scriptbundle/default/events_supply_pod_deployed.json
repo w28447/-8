@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:094d92131eebc182b185cc89ca0fb83c669c2de76af09b539b43bdccba795879
-size 279
+{
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
+    "widget": "BadasseryMedal",
+    "name": "events_supply_pod_deployed",
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_6c274f8e42db1be",
+    "iconlarge": "image#hash_6c274f8e42db1be"
+}

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:135cfeb2c211875e34900971d62b8c151dda75300681c8a304c97239d3caf042
-size 417
+{
+    "buttonimage": "image#uie_ui_menu_blackmarket_starterpack_01",
+    "popupimage": "image#ui_menu_blackmarket_starterpack_large_01",
+    "nametext": "localized17#hash_58fea0d1b9638539",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
+    "name": "starter_pack_season_3",
+    "desctext": "localized17#hash_14c04588ecaecf13",
+    "previewimage": "image#ui_menu_blackmarket_starterpack_preview_01"
+}

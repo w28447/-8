@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:63fd7420ea8fddb207b22f86c19849e0ad1d5e9c943b5e95095505b447cdc19f
-size 335
+{
+    "name": "#hash_19ae996070e9abc0",
+    "type": "#gesture",
+    "gesture": "#hash_1a80e87079a17dc6",
+    "gesture2": "#hash_62fb656e15c6fa11",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/here_boy",
+        "icon": "image#ui_icon_emotes_s2_dog_whistle",
+        "isdefault": 0
+    }
+}

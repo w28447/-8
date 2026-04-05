@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:690e8c11ff10d73beb97018caceaf161b69d9533e33887864dc817c9a364a2b3
-size 40
+{
+    "name": "charm_ice_cream_shop"
+}

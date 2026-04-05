@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cd2ea909ab98c6dd0bd47330a7e694b651b9e3cb418871bc53d44712e78a8877
-size 338
+{
+    "lootid": "#charm_crystals",
+    "hash_ff3063df": "model#",
+    "image": "ui_icon_weapon_charms_crystal",
+    "name": "charm_crystal",
+    "displayname": "localized17#menu/charm_crystal",
+    "icon": "ui_icon_weapon_charms_crystal",
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_crystal"
+}

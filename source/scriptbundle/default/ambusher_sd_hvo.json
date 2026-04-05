@@ -1,3 +1,42 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a71bac866463e12b614a86ed4bbe0a6b0fe8c32a4a4d67212b7b425ceb1c31af
-size 1391
+{
+    "statsarray": [
+        {
+            "hash_82670522": "stats_tripwire_ied_kill",
+            "stattype": "playerstatslist",
+            "hash_26568428": 1,
+            "displaystatname": "localized17#hash_68da827cf0f9863b"
+        },
+        {
+            "stattype": "objectiveekia",
+            "hash_26568428": 1,
+            "displaystatname": "localized17#hash_5d1ab6f5e0227795"
+        },
+        {
+            "hash_82670522": "stats_shutdowns",
+            "stattype": "playerstatslist",
+            "hash_26568428": 1,
+            "displaystatname": "localized17#hash_158193577a14c86e"
+        },
+        {
+            "stattype": "damagedone",
+            "hash_26568428": 1,
+            "displaystatname": "localized17#hash_5418827f408e5ca2"
+        },
+        {
+            "hash_82670522": "stats_headshot",
+            "stattype": "playerstatslist",
+            "hash_26568428": 1,
+            "displaystatname": "localized17#hash_619e74f99b27b9ae"
+        },
+        {
+            "stattype": "objectivescore",
+            "hash_26568428": 1,
+            "displaystatname": "localized17#hash_6abbd7a88ee593ed"
+        }
+    ],
+    "hash_447510ee": "prt_mp_trapper",
+    "defaultimage": "image#ui_icon_hvo_base",
+    "cardname": "localized17#hash_25d0df4a29037d70",
+    "name": "ambusher_sd_hvo",
+    "associatedgamemode": "sd"
+}

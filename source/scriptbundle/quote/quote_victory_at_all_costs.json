@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4d89e7813a5038a4c586526489ce6aad8778e08936008c594354e327ce47e4c5
-size 216
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_victory_at_all_costs",
+    "quote": "localized17#hash_31f9694c556ccfc6",
+    "author": "localized17#hash_28304a9b00e1403e"
+}

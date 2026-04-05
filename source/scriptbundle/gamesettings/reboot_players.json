@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:727103b6f2a2cbcfdcced9c537fe0533eb501d69a1ca4b4a15b2dad35ba78696
-size 568
+{
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "reboot_players",
+    "displayname": "localized17#menu/reboot_players",
+    "label1": "localized17#menu/auto",
+    "label2": "localized17#menu/interactive",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hinttext2": "localized17#menu/reboot_interactive_hint",
+    "hinttext1": "localized17#menu/reboot_auto_hint",
+    "hash_765cfd09": 0,
+    "setting": "rebootPlayers",
+    "isenableddisabled": 0
+}

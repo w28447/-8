@@ -1,3 +1,56 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e7b31e8755d0dd77955bd94b0a60a1dfe99c97fa1df7159be73492c71fb6c465
-size 1703
+{
+    "itemlist": [
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&wz_open_skyscrapers_wallbuy_guns_ar",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&wz_open_skyscrapers_wallbuy_guns_smg",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&wz_open_skyscrapers_wallbuy_guns_shotgun",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 25,
+            "itementry": "scriptbundle&wz_open_skyscrapers_wallbuy_guns_tr",
+            "maxweight": 25,
+            "available": -1
+        },
+        {
+            "minweight": 25,
+            "itementry": "scriptbundle&wz_open_skyscrapers_wallbuy_guns_lmg",
+            "maxweight": 25,
+            "available": -1
+        },
+        {
+            "minweight": 25,
+            "itementry": "scriptbundle&wz_open_skyscrapers_wallbuy_guns_sniper",
+            "maxweight": 25,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&wz_open_skyscrapers_wallbuy_guns_zombie",
+            "maxweight": 100,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 7,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "wz_open_skyscrapers_wallbuy_guns_list_boxing_gym",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

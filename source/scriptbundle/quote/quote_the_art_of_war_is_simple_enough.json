@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:65f87ee7eb484ae75a1ee92d164c5e3e8ebb486230c3abe6f3602db991c692dd
-size 226
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_the_art_of_war_is_simple_enough",
+    "quote": "localized17#hash_32205aa967e12c4",
+    "author": "localized17#hash_62c813bdbe21acdf"
+}

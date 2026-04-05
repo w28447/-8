@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f2951f26b99214d6833d186f0163f5170f5742562aa2f0a09ae7ba0d39ac86df
-size 1005
+{
+    "name": "#wpn_t8_eqp_supply_pod_destructible",
+    "model": "#wpn_t8_eqp_supply_pod_prop",
+    "clientOnly": false,
+    "syncBaseHealthWithEntity": false,
+    "pieces": [
+        {
+            "stages": [
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 1,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_6afd8b31574c4bb6",
+            "unk268": 500,
+            "hideBones": [
+                31
+            ]
+        }
+    ]
+}

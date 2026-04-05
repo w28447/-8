@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d5c43e4acdef0efcf0c9c596f61cb48474914b92e868d76f5f93f212e93362b3
-size 462
+{
+    "contentsdetaileddescincludelist": [
+        {
+            "hash_e2a0e51a0bbeb49:hash_826726a": "localized17#hash_e2a0e51a0bbeb49"
+        }
+    ],
+    "hash_d0100eab": 1,
+    "relateditemname": "localized17#heroes/technomancer",
+    "contracttitle": "localized17#hash_e2a0e51a0bbeb49",
+    "name": "loot_contract_prophet_egyptian_warrior",
+    "white": "#white",
+    "hash_40534ffb27a37ede:hash_e08fc162": "localized17#hash_40534ffb27a37ede"
+}

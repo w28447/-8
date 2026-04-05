@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ceb4b9157465ed5373418d7865f3e2f41afef431055fe497e14c5f47efa8c2b0
-size 335
+{
+    "name": "#loot_emote_shared_face_palm",
+    "type": "#gesture",
+    "gesture": "#boast_face_palm",
+    "gesture2": "#boast_face_palm_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/unbelievable",
+        "icon": "image#ui_icon_emotes_s3_face_palm",
+        "isdefault": 0
+    }
+}

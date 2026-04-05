@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:07378df98ecb3a1b5fe1bdf1ad975d61e1f2c703e4aaa34270fa1acfb01f8f9f
-size 316
+{
+    "name": "#gsol_mp_perk3_restriction",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#perk_ghost_restriction",
+        "#gamesettings/#perk_teamlink_restriction",
+        "#gamesettings/#perk_deadsilence_restriction",
+        "#gamesettings/#perk_tracker_restriction"
+    ]
+}

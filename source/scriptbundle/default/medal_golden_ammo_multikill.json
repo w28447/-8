@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2b2dce7dd25827453e2cf5c41a0e62ddf41a807900eb9f5f08a4a97428f19eee
-size 416
+{
+    "description": "localized17#hash_6c18fff2b6b47d12",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_golden_ammo_multikill",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_equipment_multikill",
+    "stringref": "localized17#hash_6fdbaa724f43d324",
+    "iconlarge": "image#ui_icon_medal_equipment_multikill_large"
+}

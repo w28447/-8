@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cfaf4d4f79a9fd9b53a64a0e5186632cd6608fd3c16b206e14e2a4fd2286c31b
-size 676
+{
+    "configstringfiletype": "scriptbundle",
+    "leftstraightanim": "playeranim#hash_17b66539637f86e8",
+    "type": "turretanims",
+    "hash_4911c37eedd0a49a:hash_6d779d90": "playeranim#hash_4911c37eedd0a49a",
+    "centerstraightanim": "playeranim#hash_a1444a76031a5e6",
+    "vmtype": "none",
+    "hash_70c68c23b29e2e8b:hash_642f6589": "playeranim#hash_70c68c23b29e2e8b",
+    "name": "player_turret_zodiac_driver_anims",
+    "aimpitchangleu": 90,
+    "aimpitchangled": 90,
+    "hash_5b7056008aea236:hash_71b4ed58": "playeranim#hash_5b7056008aea236",
+    "rightstraightanim": "playeranim#hash_17b65339637f6852",
+    "aimyawangler": 35,
+    "aimyawanglel": 35
+}

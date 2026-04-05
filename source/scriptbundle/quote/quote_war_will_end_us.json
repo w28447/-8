@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e5191d43043b426374ee84f02766649cadfb952dadc04725633959833c973ff6
-size 211
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_war_will_end_us",
+    "quote": "localized17#hash_3c0a73d1c97f5d9d",
+    "author": "localized17#hash_3293e98966efd5eb"
+}

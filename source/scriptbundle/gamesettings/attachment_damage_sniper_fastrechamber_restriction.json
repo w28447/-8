@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0a827d00f2fe0f1df251ddd1035535a89753d88358150c6dbc7b7761bc31d2ee
-size 420
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_damage_sniper_fastrechamber_restriction",
+    "displayname": "localized17#weapon/sniper_fastrechamber_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__sniper_fastrechamber_t8__attachments__damage",
+    "isenableddisabled": 0
+}

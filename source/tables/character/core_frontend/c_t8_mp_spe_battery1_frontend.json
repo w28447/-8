@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9228ca05b28fb0c42906067dfadc31be437c9a778c0c14fd5a43b668454531cf
-size 239
+{
+    "name": "#c_t8_mp_spe_battery1_frontend",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "body": "#c_t8_mp_spe_battery_body1",
+    "head": "#c_t8_mp_spe_battery_head1"
+}

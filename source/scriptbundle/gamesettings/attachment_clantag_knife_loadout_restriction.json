@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:886c376b408082327170632e10aed7c2e8a515c1e5bd9ed1bca82e4e03730824
-size 395
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_clantag_knife_loadout_restriction",
+    "displayname": "localized17#weapon/knife_loadout",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__knife_loadout__attachments__clantag",
+    "isenableddisabled": 0
+}

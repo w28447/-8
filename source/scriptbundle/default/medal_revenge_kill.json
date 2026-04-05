@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4c574cb387bc41ab397b9425843fcbef6db97068207a684272b14431f11a9dd3
-size 382
+{
+    "description": "localized17#medal/revenge_kill_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_revenge_kill",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_revenge",
+    "stringref": "localized17#medal/revenge_kill",
+    "iconlarge": "image#ui_icon_medal_revenge_large"
+}

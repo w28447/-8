@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ac7d97539c9f6ddef071337a6df5ffe0d13aa6d2cd95395160417004d507e087
-size 388
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_rf_shotgun_pump_restriction",
+    "displayname": "localized17#weapon/shotgun_pump_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__shotgun_pump_t8__attachments__rf",
+    "isenableddisabled": 0
+}

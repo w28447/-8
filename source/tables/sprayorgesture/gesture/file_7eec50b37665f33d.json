@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d578b5f0fa69d318742bace79c3f59d780ce9f3adbea69d337e3497c15ee1b29
-size 334
+{
+    "name": "#hash_7eec50b37665f33d",
+    "type": "#gesture",
+    "gesture": "#hash_10b043abfb5e8003",
+    "gesture2": "#hash_5dcc509199e859ac",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/come_at_me_boet",
+        "icon": "image#hash_2dbed21008f14ee1",
+        "isdefault": 0
+    }
+}

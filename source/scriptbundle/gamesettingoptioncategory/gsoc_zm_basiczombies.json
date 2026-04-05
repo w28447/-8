@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:027c68369c9f780b7c9d49a203474311ee1ff12aafeb139a79d40763ba95e91d
-size 335
+{
+    "configstringfiletype": "scriptbundle",
+    "hash_ce9b2d06": "gsol_zm_basiczombies",
+    "type": "gamesettingoptioncategory",
+    "name": "gsoc_zm_basiczombies",
+    "hash_40c3c9f045a1912d:hash_dea17465": "localized17#hash_40c3c9f045a1912d",
+    "hash_537ff9ff1184154d:hash_608158f2": "localized17#hash_537ff9ff1184154d"
+}

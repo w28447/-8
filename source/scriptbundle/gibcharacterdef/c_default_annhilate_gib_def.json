@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2b913b85b875c29342f6be1faae3388f799d3ccb9f614f5313d3eb62baeb12bc
-size 401
+{
+    "hash_ac8f613d": "j_head",
+    "configstringfiletype": "scriptbundle",
+    "type": "gibcharacterdef",
+    "blood/fx_blood_impact_exp_body_lg": "fx#blood/fx_blood_impact_exp_body_lg",
+    "vmtype": "both",
+    "name": "c_default_annhilate_gib_def",
+    "impacts/fx_bul_impact_blood_head_fatal_exit": "fx#impacts/fx_bul_impact_blood_head_fatal_exit",
+    "hash_86de3f71": "j_spinelower"
+}

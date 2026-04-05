@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:519a5d62e16a5cfde2028d75fe179931b3a8ffb39fe4739204e5784b71e48e71
-size 201
+{
+    "loot03_ui_icon_blackmarket_itemshop_camo_zombie_flick:hash_6c274f86": "image#loot03_ui_icon_blackmarket_itemshop_camo_zombie_flick",
+    "name": "camo_active_dlc2_zombie_flick_wrapper_shop"
+}

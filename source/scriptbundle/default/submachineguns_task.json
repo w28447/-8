@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:01a1bd562de914f4f77f31e0bb6a4e658c7864c182c98924bf5f4220577e7783
-size 300
+{
+    "callingtask": "#kills_smg",
+    "configstringfiletype": "scriptbundle",
+    "image": "image#ui_icon_zm_callings_smg",
+    "dailytarget": 750,
+    "name": "submachineguns_task",
+    "taskname": "localized17#hash_36e1f2f5ef335ab4",
+    "descsimple": "localized17#hash_153adb80597ade17"
+}

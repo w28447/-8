@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ccf74ce42bf2ec80f94801e276e8017134576ac5c63d9c85aa5af670241d1f9c
-size 339
+{
+    "name": "#hash_204a5805ee0eb4e1",
+    "type": "#gesture",
+    "gesture": "#hash_5a1fca53de7144ff",
+    "gesture2": "#hash_5b7c535b68887a28",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/cardboard_camo",
+        "icon": "image#ui_icon_emotes_cardboardbox",
+        "isdefault": 0
+    }
+}

@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8ccfccc5ff537a894ee50ac86bb4ccdd3cd875386527629bf70f13ea80df1a8d
-size 384
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "scope_holo_tr_midburst_restriction",
+    "displayname": "localized17#weapon/tr_midburst_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__tr_midburst_t8__attachments__holo",
+    "isenableddisabled": 0
+}

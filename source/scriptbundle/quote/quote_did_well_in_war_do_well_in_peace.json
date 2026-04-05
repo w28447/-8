@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:50c41afbf57ef5958d786b2dd6a5fba43d5ca9042a7ea6d0b282e0698057aebe
-size 228
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_did_well_in_war_do_well_in_peace",
+    "quote": "localized17#hash_7ac9e803540654aa",
+    "author": "localized17#hash_3dceff520577a217"
+}

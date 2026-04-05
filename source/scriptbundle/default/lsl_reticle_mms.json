@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:59ebfad81fbf8ff0619b85fe11ba138f366562659ff253770a3a11715ea1e98f
-size 465
+{
+    "entries": [
+        {
+            "value": "localized17#hash_792167e188fc3232"
+        },
+        {
+            "value": "localized17#hash_792168e188fc33e5"
+        },
+        {
+            "value": "localized17#hash_792165e188fc2ecc"
+        },
+        {
+            "value": "localized17#hash_792166e188fc307f"
+        },
+        {
+            "value": "localized17#hash_792163e188fc2b66"
+        }
+    ],
+    "name": "lsl_reticle_mms"
+}

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4380573e9924e1726213ab6eaa7a840671a4eb46f3889533be176f215c6c4ac8
-size 236
+{
+    "name": "c_t8_bo_parachute_raven",
+    "parachute": "weapon#parachute_wz",
+    "icon": "loot_ui_icon_jumppacks_parachute_raven",
+    "largeicon": "loot_ui_icon_jumppacks_parachute_raven_large",
+    "parachutelit": "model#"
+}

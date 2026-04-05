@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e43ac276b107b8fec68b4f5bac178396b19b8fefdaa54de75e1c504295f36c77
-size 210
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_who_dares_wins",
+    "quote": "localized17#hash_6c3e07743beb9873",
+    "author": "localized17#hash_6e3e8915a0f8a32c"
+}

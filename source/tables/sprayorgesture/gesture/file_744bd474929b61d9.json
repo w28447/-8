@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:625627cd141c0e45f72ca3b16e31be27a146d889fd4ebccb9de47802bb905a9a
-size 335
+{
+    "name": "#hash_744bd474929b61d9",
+    "type": "#gesture",
+    "gesture": "#boast_coconut_drink",
+    "gesture2": "#boast_coconut_drink_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/happy_hour",
+        "icon": "image#ui_icon_emotes_coconutdrink",
+        "isdefault": 0
+    }
+}

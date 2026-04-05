@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d114bff92f3ea3f2c6cace1d0133ff126f9a09b3b88f2bad0b2a1da65bf05eea
-size 707
+{
+    "contracticon": "image#hash_56da16753b8ff8a5",
+    "relateditemname": "localized17#weapon/ar_damage_t8",
+    "contracttitle": "localized17#menu/contract_afterburner",
+    "name": "loot_contract_rampart_mastercraft_presunset",
+    "hash_69b5a265": "core_frontend_ar_damage_sig_02",
+    "loot07_ui_icon_blackmarket_itemdetail_afterburner:hash_4b258f2c": "image#loot07_ui_icon_blackmarket_itemdetail_afterburner",
+    "contractdescription": "localized17#hash_7680bf2bc2219eb1",
+    "white": "#white",
+    "loot07_ui_icon_blackmarket_itemshop_afterburner": "image#loot07_ui_icon_blackmarket_itemshop_afterburner",
+    "hash_44003ec88899f334:hash_e08fc162": "localized17#hash_44003ec88899f334"
+}

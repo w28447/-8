@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1d8138225891d9353ee41b4a4b61c0fc3207da3fff2a8f2d56b8affb06f98eff
-size 329
+{
+    "destroyed": "#hash_3a22a14f4eea0256",
+    "ready": "#hash_279d7ff1b0e37c06",
+    "configstringfiletype": "scriptbundle",
+    "type": "mpdialog_scorestreak",
+    "vmtype": "both",
+    "distancecheck": "#hash_62344cc28cefcdaf",
+    "name": "blops_taacom_kls_dronesquadron",
+    "timeout": "#hash_2942a2109b919033"
+}

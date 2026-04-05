@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:613987398b2db358a9d2f9b15087c80a3da818967d04ece49e2d134261d6c40f
-size 397
+{
+    "description": "localized17#medal/clear_2_attackers_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_clear_2_attackers",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_wipeout",
+    "stringref": "localized17#medal/clear_2_attackers",
+    "iconlarge": "image#ui_icon_medal_wipeout_large"
+}

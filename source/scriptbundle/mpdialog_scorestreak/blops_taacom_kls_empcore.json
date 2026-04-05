@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b05f838532307b1553611da8b8cd8c8350aabe8f22667661e6bac7c330a5a16c
-size 423
+{
+    "destroyed": "#hash_40b620ae06d908e0",
+    "ready": "#hash_30af7c63959e7bc8",
+    "beinghacked": "#hash_348c095dec590e55",
+    "configstringfiletype": "scriptbundle",
+    "type": "mpdialog_scorestreak",
+    "vmtype": "both",
+    "name": "blops_taacom_kls_empcore",
+    "firewallbeinghacked": "#hash_53453bd10d49bb0d",
+    "firewallhacked": "#hash_33622b237a64a4ad",
+    "hacked": "#hash_40f0f180b5c774b5"
+}

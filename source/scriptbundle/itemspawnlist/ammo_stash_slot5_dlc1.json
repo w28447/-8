@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:34b9ce5fb414698df12acaa4ca3b6e639a2d669dc8f66a7fad34e6d9031ee055
-size 630
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&armor_shard_item",
+            "childitementry_2": "scriptbundle&armor_shard_item",
+            "childitementry_1": "scriptbundle&armor_shard_item",
+            "maxweight": 100,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 1,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "ammo_stash_slot5_dlc1",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

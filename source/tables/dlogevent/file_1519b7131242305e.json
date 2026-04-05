@@ -1,3 +1,828 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1a2aa228c5e494ebc4fbcfc6536ef57be5281174742e9dd867a726f296203e82
-size 22035
+{
+    "name": "#hash_1519b7131242305e",
+    "ddlDef": "#hash_7ca9cfe5e228f0c6",
+    "unk18": 0,
+    "unk19": 1,
+    "unk1a": 0,
+    "unk1b": 0,
+    "unk1c": 0,
+    "rate": 1,
+    "fields": [
+        {
+            "name": "#telemetry",
+            "arraySize": 0,
+            "members": {
+                "name": "#telemetry_header",
+                "members": [
+                    {
+                        "name": "#hash_f2ad74d8edb8204",
+                        "scrName": "#hash_50f7aa03",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#action_type",
+                        "scrName": "#hash_42e28add",
+                        "type": "XHASH"
+                    },
+                    {
+                        "name": "#title_id",
+                        "scrName": "#hash_8f4c2b40",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#build_version",
+                        "scrName": "#hash_26065d8a",
+                        "type": "STRING",
+                        "len": 32
+                    },
+                    {
+                        "name": "#platform",
+                        "scrName": "#platform",
+                        "type": "INT32"
+                    },
+                    {
+                        "name": "#source_version",
+                        "scrName": "#hash_a56621db",
+                        "type": "UINT16"
+                    },
+                    {
+                        "name": "#hash_56a1b6d783aa7a25",
+                        "scrName": "#hash_ee3228f8",
+                        "type": "UINT32"
+                    },
+                    {
+                        "name": "#changelist_number",
+                        "scrName": "#hash_e632366e",
+                        "type": "INT32"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "#client",
+            "arraySize": 0,
+            "members": {
+                "name": "#client_header",
+                "members": [
+                    {
+                        "name": "#user_id",
+                        "scrName": "#hash_fada396e",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#user_session_id",
+                        "scrName": "#hash_e004f74d",
+                        "type": "UINT64"
+                    },
+                    {
+                        "name": "#uno_id",
+                        "scrName": "#hash_e7339473",
+                        "type": "UINT64"
+                    }
+                ]
+            }
+        }
+    ],
+    "members": [
+        {
+            "name": "#quickspray",
+            "scrName": "#hash_7b6588a2",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#weapoffhandspecial",
+            "scrName": "#hash_4935996f",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#hash_127574968f6ab5b",
+            "scrName": "#hash_411d546c",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#scores",
+            "scrName": "#scores",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#quickcycle_health",
+            "scrName": "#hash_c1d7d86c",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#togglebreath",
+            "scrName": "#hash_1c4528fe",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#armorrepair",
+            "scrName": "#hash_c10478c1",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#usebgb4",
+            "scrName": "#hash_9a751cd2",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#usebgb3",
+            "scrName": "#hash_53740ec9",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#usebgb2",
+            "scrName": "#hash_c1f56bd2",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#usebgb1",
+            "scrName": "#hash_e524b230",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#map",
+            "scrName": "#map",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#autorun",
+            "scrName": "#hash_a85cc52a",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#sprint",
+            "scrName": "#sprint",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#moveleft",
+            "scrName": "#hash_64e4c0f3",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#vehiclealtcontrol",
+            "scrName": "#hash_7d0cbd38",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#lookdown",
+            "scrName": "#hash_382db8af",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#raisestance",
+            "scrName": "#hash_83b8ea3f",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#hold_sprint",
+            "scrName": "#hash_79544ce9",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#toggleinventoryzm",
+            "scrName": "#hash_5671fcdb",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#hash_188c9f291eebf570",
+            "scrName": "#hash_77d5f0c6",
+            "type": "INT8"
+        },
+        {
+            "name": "#back",
+            "scrName": "#back",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#weapswitchprimary",
+            "scrName": "#hash_4e9f005f",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#stance",
+            "scrName": "#stance",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#scorestreak3",
+            "scrName": "#hash_d63185cf",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#scorestreak2",
+            "scrName": "#hash_74ee809",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#scorestreak1",
+            "scrName": "#hash_f9944c94",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#scorestreak4",
+            "scrName": "#hash_e3e32132",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#inventory",
+            "scrName": "#inventory",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#forward",
+            "scrName": "#forward",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#pickup",
+            "scrName": "#pickup",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#quickcycle_equipment",
+            "scrName": "#hash_3788f728",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#weapnext",
+            "scrName": "#hash_ce482a80",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#quickcallout",
+            "scrName": "#hash_d75b5b7f",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#left",
+            "scrName": "#left",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#smoke",
+            "scrName": "#hash_57bd26d1",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#toggleinventory",
+            "scrName": "#hash_16a4410a",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#gostand",
+            "scrName": "#hash_1bf82caf",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#lookup",
+            "scrName": "#lookup",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#togglemap",
+            "scrName": "#hash_e8bd98c4",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#attack",
+            "scrName": "#attack",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#lowerstance",
+            "scrName": "#hash_e2cd998a",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#togglescores",
+            "scrName": "#hash_ffb75c13",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#hash_38860be8fb273455",
+            "scrName": "#hash_ebf6b2cf",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#chatmodeteam",
+            "scrName": "#hash_f87935ca",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#breath_sprint",
+            "scrName": "#hash_62994c3",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#ui_contextual_1",
+            "scrName": "#hash_739a1a84",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#ui_contextual_2",
+            "scrName": "#hash_d042d3d4",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#ui_contextual_3",
+            "scrName": "#hash_5b63eae",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#weapprev",
+            "scrName": "#hash_848633ba",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#chatmodelast",
+            "scrName": "#hash_24bcf6b8",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#inventoryzm",
+            "scrName": "#hash_cae09f98",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#gocrouch",
+            "scrName": "#hash_ac1f1653",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#holdbreath",
+            "scrName": "#hash_cd65ed4e",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#hash_4fca6732aca41b2e",
+            "scrName": "#hash_c84fa172",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#vehicleattack",
+            "scrName": "#hash_e0d2e95b",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#slide",
+            "scrName": "#slide",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#hash_54c88672dfdcc78a",
+            "scrName": "#hash_163c76a7",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#chatmodeparty",
+            "scrName": "#hash_7687923a",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#handbrake",
+            "scrName": "#hash_20c0fc39",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#talk",
+            "scrName": "#hash_c2eb0485",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#chooseclass_10",
+            "scrName": "#hash_ed45a4a0",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#chooseclass_11",
+            "scrName": "#hash_3bf1c1fb",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#chooseclass_12",
+            "scrName": "#hash_12c96fa7",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#quickconsume2",
+            "scrName": "#hash_1fe9c355",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#quickconsume1",
+            "scrName": "#hash_362befd9",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#hash_5d0b479ede0393d4",
+            "scrName": "#hash_e05a9619",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#switchseat",
+            "scrName": "#hash_48d0f7d4",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#flourish",
+            "scrName": "#hash_dbaa27ba",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#mantle",
+            "scrName": "#mantle",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#activate",
+            "scrName": "#activate",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#togglescoreswz",
+            "scrName": "#hash_6fff00ee",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#togglescoreszm",
+            "scrName": "#hash_23975de8",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#movedown",
+            "scrName": "#hash_9ecac7c3",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#centerview",
+            "scrName": "#hash_c4f280a1",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#weapswitchsecondary",
+            "scrName": "#hash_9b9c9a44",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#vehicleboost",
+            "scrName": "#hash_73edf7d2",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#toggleprone",
+            "scrName": "#hash_ba6ac50b",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#hash_6a928eea40351a0f",
+            "scrName": "#hash_28efa829",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#goprone",
+            "scrName": "#hash_23571b5b",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#chooseclass_5",
+            "scrName": "#hash_808e599a",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#chooseclass_4",
+            "scrName": "#hash_7237bced",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#chooseclass_7",
+            "scrName": "#hash_5f6f975d",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#chooseclass_6",
+            "scrName": "#hash_c9a46bc5",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#chooseclass_1",
+            "scrName": "#hash_bbbfcfec",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#chooseclass_3",
+            "scrName": "#hash_250c2297",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#chooseclass_2",
+            "scrName": "#hash_1646850c",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#chooseclass_9",
+            "scrName": "#hash_bacbce14",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#chooseclass_8",
+            "scrName": "#hash_a50aa292",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#moveright",
+            "scrName": "#hash_4372ff28",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#chatmodepublic",
+            "scrName": "#hash_a7d20898",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#togglecrouch",
+            "scrName": "#hash_3cfaf703",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#scoreswz",
+            "scrName": "#hash_ba0082b",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#scoreszm",
+            "scrName": "#hash_51d9910d",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#calloutwheel",
+            "scrName": "#hash_c04a4706",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#right",
+            "scrName": "#right",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#melee",
+            "scrName": "#melee",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#raisestancejump",
+            "scrName": "#hash_970b07ca",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#hash_78ac9e7c35c462a6",
+            "scrName": "#hash_676102f1",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#hash_78ac9f7c35c46459",
+            "scrName": "#hash_dd2bee95",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#hash_78aca07c35c4660c",
+            "scrName": "#hash_cb8c4b3a",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#hash_78aca17c35c467bf",
+            "scrName": "#hash_95215e71",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#hash_78aca37c35c46b25",
+            "scrName": "#hash_798ca748",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#prone",
+            "scrName": "#prone",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#vehiclehorn",
+            "scrName": "#hash_cfcd89d6",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#melee_zoom",
+            "scrName": "#hash_c07c883",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#frag",
+            "scrName": "#frag",
+            "type": "STRING",
+            "len": 24
+        },
+        {
+            "name": "#speed_throw",
+            "scrName": "#hash_e8a259dc",
+            "type": "STRING",
+            "len": 24
+        }
+    ],
+    "unk60": [
+        {
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_855c9a40dc060cf",
+                "s3u10": "#hash_2",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    0
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_775a1eb90e25df27",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_1",
+                "unk28": [
+                    0,
+                    5,
+                    4
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 0.1,
+            "s3u8": {
+                "s31u0": "#hash_5509b91edf99f9a4",
+                "s3u10": "#hash_6",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_1",
+                "unk28": [
+                    2,
+                    3,
+                    9
+                ]
+            }
+        },
+        {
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_415a3e8b41b48599",
+                "s3u10": "#hash_4",
+                "s3u18": "#hash_4000",
+                "s3u1c": "#hash_a",
+                "unk28": [
+                    2,
+                    3,
+                    5
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_7",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_68cc9f8f64640d09",
+                "s3u10": "#hash_7",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    2,
+                    3
+                ]
+            }
+        },
+        {
+            "s3u0": "#hash_1",
+            "s3u14": "#hash_1",
+            "s3u18": 1,
+            "s3u1c": 1,
+            "s3u8": {
+                "s31u0": "#hash_7b52e3919e2a5b79",
+                "s3u10": "#hash_9",
+                "s3u18": "#hash_4000",
+                "unk28": [
+                    2
+                ]
+            }
+        }
+    ]
+}

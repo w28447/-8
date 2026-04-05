@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:206c56815267f2168f2b7b43131a253f44e5f79ca9d6652e40e1036184565ab3
-size 382
+{
+    "lootid": "#charm_basketball_hoop",
+    "hash_ff3063df": "model#",
+    "image": "ui_icon_weapon_charms_basketballhoop",
+    "name": "charm_basketball_hoop",
+    "displayname": "localized17#menu/charm_basketball_hoop",
+    "icon": "ui_icon_weapon_charms_basketballhoop",
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_basketballhoop"
+}

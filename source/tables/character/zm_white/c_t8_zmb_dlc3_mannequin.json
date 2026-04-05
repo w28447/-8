@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c517e9291f8fad6a83b6e48bbe0ccf1392305e12b9250b9530b7e680043d2c47
-size 191
+{
+    "name": "#c_t8_zmb_dlc3_mannequin",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 5,
+    "bodyImpactType": 5,
+    "bodyAlias": "#hash_55d70ded04de0c3c"
+}

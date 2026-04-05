@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:742cb6f52f727fcc5354d9887a101110433aae5b1aa682790fa133609ec7e3be
-size 849
+{
+    "itemlist": [
+        {
+            "minweight": 7,
+            "itementry": "scriptbundle&equipment_list_good",
+            "maxweight": 7,
+            "available": -1
+        },
+        {
+            "minweight": 20,
+            "itementry": "scriptbundle&equipment_list_med",
+            "maxweight": 20,
+            "available": -1
+        },
+        {
+            "minweight": 20,
+            "itementry": "scriptbundle&equipment_list_low",
+            "maxweight": 20,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 3,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "construction_list_equipment",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

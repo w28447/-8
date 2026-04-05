@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b7abaa4ea30df8a18bde9219293cc9c00c298babb649831ac2a68c7907fcd4c0
-size 305
+{
+    "callingtask": "#kills_melee",
+    "configstringfiletype": "scriptbundle",
+    "image": "image#ui_icon_zm_callings_knife",
+    "dailytarget": 75,
+    "name": "closeandpersonal_task",
+    "taskname": "localized17#hash_1572f2621ade6e5b",
+    "descsimple": "localized17#hash_23b9c649361c3542"
+}

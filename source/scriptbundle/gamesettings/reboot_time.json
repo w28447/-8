@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8b900e3b9efb1683eff6f0d3cb88524885d31ff023816e819fc4e72db464423a
-size 792
+{
+    "hinttext": "localized17#menu/reboot_time_hint",
+    "configstringfiletype": "scriptbundle",
+    "value8": "8",
+    "value9": "9",
+    "value2": "2",
+    "value3": "3",
+    "value1": "1",
+    "value6": "6",
+    "value7": "7",
+    "value4": "4",
+    "value5": "5",
+    "value11": "15",
+    "value10": "10",
+    "value13": "25",
+    "value12": "20",
+    "value15": "45",
+    "value14": "30",
+    "value16": "60",
+    "type": "gamesettings",
+    "label": "localized17#menu/x_seconds",
+    "hash_5a6dee5a": 0,
+    "name": "reboot_time",
+    "displayname": "localized17#menu/reboot_time",
+    "label1": "localized17#menu/1_second",
+    "hash_54e336e4": 0,
+    "optionscount": 16,
+    "hash_765cfd09": 0,
+    "setting": "rebootTime",
+    "isenableddisabled": 0
+}

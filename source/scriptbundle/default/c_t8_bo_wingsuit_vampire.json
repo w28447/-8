@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:662f953f01d2f2849024e2a69fa9e1be6548ac1f9a3f6c02611a6091bd7e08f7
-size 231
+{
+    "hash_94166112": "model#",
+    "name": "c_t8_bo_wingsuit_vampire",
+    "icon": "loot_ui_icon_jumppacks_wingsuit_vampire",
+    "largeicon": "loot_ui_icon_jumppacks_wingsuit_vampire_large",
+    "hash_5677bd3d": "model#"
+}

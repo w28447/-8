@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:469518429efaa1e26274e357817dd6fb404bda5072d1bede72567d463861bf62
-size 372
+{
+    "description": "localized17#medal/headshot_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_headshot",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_headshot",
+    "stringref": "localized17#medal/headshot",
+    "iconlarge": "image#ui_icon_medal_headshot_large"
+}

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:299a712cd8092f3f9fe0bfa689cf04fe8f66e424af38c40e0e919f891f3b50c3
-size 415
+{
+    "detailsicon": "image#loot06_ui_icon_blackmarket_itemdetail_bundle_superhero_spectre",
+    "loot06_ui_icon_blackmarket_itemshop_bundle_superhero_spectre:hash_6c274f86": "image#loot06_ui_icon_blackmarket_itemshop_bundle_superhero_spectre",
+    "nametext": "localized17#hash_5155b96ec36b1c99",
+    "name": "outfit_super_hero_epic1_spectre_bundle_shop",
+    "desctext": "localized17#hash_ed11155c0c41333"
+}

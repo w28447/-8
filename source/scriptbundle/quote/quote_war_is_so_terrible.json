@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d990dc9e01a817f69682d436c595420b4995bfbc7647b0ee7f0629b853bf6f1c
-size 214
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_war_is_so_terrible",
+    "quote": "localized17#hash_257c20846d409ae9",
+    "author": "localized17#hash_137ebe4137de5cc4"
+}

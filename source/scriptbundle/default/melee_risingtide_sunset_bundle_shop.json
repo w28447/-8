@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7a85f9d17be8ac5fd6cd1ddda942c25c68189d9f4bbae0361058444a7a6aa25a
-size 371
+{
+    "detailsicon": "image#loot07_ui_icon_blackmarket_itemdetail_rising_tide",
+    "loot07_ui_icon_blackmarket_itemshop_rising_tide:hash_6c274f86": "image#loot07_ui_icon_blackmarket_itemshop_rising_tide",
+    "nametext": "localized17#weapon/melee_cutlass_t8",
+    "name": "melee_risingtide_sunset_bundle_shop",
+    "desctext": "localized17#hash_15835a1c86d35a2b"
+}

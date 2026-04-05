@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:42a6198be81c805a146846ba9403ffe204896db9222664b7fa5a26aea53f5cb3
-size 293
+{
+    "detailsicon": "image#hash_24caa7867c84aec7",
+    "hash_6f49439bc209345e:hash_6c274f86": "image#hash_6f49439bc209345e",
+    "nametext": "localized17#menu/bundle_titan",
+    "name": "loot_lmg_standard_sig_01_sunset_bundle_shop",
+    "desctext": "localized17#hash_4dbd8a1edff189df"
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ad367ed4276820b023724f267be07bb05a8c50e170b892d9908c65d580c2a3aa
-size 364
+{
+    "nameStr": "zm_stats_online",
+    "name": "#zm_stats_online",
+    "ddlPath": "#gamedata/ddl/generated/zm_stats.ddl",
+    "files": [
+        {
+            "fileName": "zm_stats_online"
+        }
+    ],
+    "size": 129024,
+    "readOnLogin": true,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
+}

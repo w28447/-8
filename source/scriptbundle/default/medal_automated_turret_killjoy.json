@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2b253505f6c1d80b948379ebb083d26cbdc065561a8f3f2cf7522ab812ad23fd
-size 420
+{
+    "description": "localized17#medal/automated_turret_killjoy_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_automated_turret_killjoy",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_scrapped",
+    "stringref": "localized17#medal/automated_turret_killjoy",
+    "iconlarge": "image#ui_icon_medal_scrapped_large"
+}

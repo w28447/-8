@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:22df24df65e106333ee727c544ba9c5ae8139ba21757de66e256629d54273559
-size 378
+{
+    "hinttext": "localized17#menu/dog_tags_hint",
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "dropped_tag_respawn",
+    "displayname": "localized17#menu/dog_tags",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "droppedTagRespawn",
+    "isenableddisabled": 1
+}

@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ae60a7a7a30cb47a2de8f0c0240d4b487967794b8207c1f808ce2fa7425042af
-size 736
+{
+    "hinttext": "localized17#menu/max_allocation_hint",
+    "configstringfiletype": "scriptbundle",
+    "value8": "10",
+    "value9": "11",
+    "value2": "4",
+    "value3": "5",
+    "value1": "3",
+    "value6": "8",
+    "value7": "9",
+    "value4": "6",
+    "value5": "7",
+    "value11": "13",
+    "value10": "12",
+    "value13": "15",
+    "value12": "14",
+    "value15": "17",
+    "value14": "16",
+    "type": "gamesettings",
+    "label": "localized17#menu/noloc",
+    "hash_5a6dee5a": 0,
+    "name": "max_allocation",
+    "displayname": "localized17#menu/max_allocation",
+    "hash_54e336e4": 0,
+    "optionscount": 15,
+    "hash_765cfd09": 0,
+    "setting": "maxAllocation",
+    "isenableddisabled": 0
+}

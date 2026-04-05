@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bf190684d6376b7a6e1269841ee19813e4286406e24aefdcac54d07dac21bfbb
-size 542
+{
+    "damageevaded": "#hash_5e162d6ab6be45f8",
+    "wavestartfinal": "#hash_620904e9da740f1c",
+    "configstringfiletype": "scriptbundle",
+    "type": "mpdialog_scorestreak",
+    "killmultiple": "#hash_341ef3a7bada94f6",
+    "vmtype": "both",
+    "name": "blops_pilot1_kls_straferun",
+    "arrive": "#hash_787b06a9a986ccec",
+    "wavestart": "#hash_28de9e71ba13a4e1",
+    "kill1": "#hash_54c46476cf1585eb",
+    "kill3": "#hash_54c46676cf158951",
+    "kill2": "#hash_54c46576cf15879e",
+    "killnone": "#hash_7eb1eaad9c8021fa"
+}

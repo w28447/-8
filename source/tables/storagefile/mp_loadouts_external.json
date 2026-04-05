@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:938a7d09d028762bde1acb9d1fe602518bb392428d7a6591eb4e4576914708ef
-size 388
+{
+    "nameStr": "mp_loadouts_external",
+    "name": "#mp_loadouts_external",
+    "ddlPath": "#gamedata/ddl/generated/mp_loadouts_external.ddl",
+    "files": [
+        {
+            "fileName": "mp_loadouts_external"
+        }
+    ],
+    "size": 2048,
+    "readOnLogin": true,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": true
+}

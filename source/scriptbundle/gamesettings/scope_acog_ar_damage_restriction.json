@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4772772350c9817192e1ef46f85e7c07c04f6880d1c99cd41c5eecbbe767ada7
-size 378
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "scope_acog_ar_damage_restriction",
+    "displayname": "localized17#weapon/ar_damage_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__ar_damage_t8__attachments__acog",
+    "isenableddisabled": 0
+}

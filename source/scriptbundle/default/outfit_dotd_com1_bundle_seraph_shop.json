@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eedf734cef1b0367023389016211b76f89f1bfc8238094103c946f23daed653e
-size 232
+{
+    "nametext": "localized17#hash_625b9ebf75df252c",
+    "name": "outfit_dotd_com1_bundle_seraph_shop",
+    "desctext": "localized17#hash_5d8932596e241d6b",
+    "heroes/enforcer:hash_975cc0d1": "localized17#heroes/enforcer"
+}

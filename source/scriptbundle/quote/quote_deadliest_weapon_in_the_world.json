@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0bf137ad4be5f7a598a39f2eff89848f4c6b10ab6751c45f4260bf1acd41a0fa
-size 225
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_deadliest_weapon_in_the_world",
+    "quote": "localized17#hash_7fe8347c2703a7d6",
+    "author": "localized17#hash_1bbdca87bfb59b6b"
+}

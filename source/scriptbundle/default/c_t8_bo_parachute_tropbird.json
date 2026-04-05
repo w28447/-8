@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7a0aa3bc66cea0ecb46129b81eb80ba7940c6cb5de75199b0afde117ec32a328
-size 245
+{
+    "name": "c_t8_bo_parachute_tropbird",
+    "parachute": "weapon#parachute_wz",
+    "icon": "loot_ui_icon_jumppacks_parachute_tropbird",
+    "largeicon": "loot_ui_icon_jumppacks_parachute_tropbird_large",
+    "parachutelit": "model#"
+}

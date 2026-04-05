@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5cb50ad29163dee3e7d7663f8b6768d3178136cd43cbb097f39d5baa6b75282a
-size 499
+{
+    "itemlist": [
+        {
+            "minweight": 15,
+            "itementry": "scriptbundle&melee_spork_t8_item",
+            "maxweight": 15,
+            "available": 1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 1,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "zombie_bathtub_ee_list",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

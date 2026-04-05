@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9b55626bef9a6a07932381250ad185ebafd2aa836472ebf83ec2710f69eaf91f
-size 462
+{
+    "frag_multikill_2": "#frag_multikill_2",
+    "frag_multikill_2": "#frag_multikill_2",
+    "frag_grenade_kill": "#frag_grenade_kill",
+    "configstringfiletype": "scriptbundle",
+    "type": "scoreevents",
+    "vmtype": "both",
+    "frag_multikill_2": "#frag_multikill_2",
+    "name": "eq_frag_grenade_mp_scoreevents",
+    "customsettingstype": "ability",
+    "frag_multikill_2": "#frag_multikill_2",
+    "frag_multikill_2": "#frag_multikill_2"
+}

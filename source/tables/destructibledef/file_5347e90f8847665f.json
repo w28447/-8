@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:565c0910a6f4cafe3b2cae5c53877542acfcdaa0c410c9bd246875e82b050428
-size 1049
+{
+    "name": "#hash_5347e90f8847665f",
+    "model": "#hash_51e140cc39bb3fae",
+    "clientOnly": false,
+    "syncBaseHealthWithEntity": false,
+    "pieces": [
+        {
+            "stages": [
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {
+                    "unk28": "tag_origin"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_15263c434967b5e8",
+            "unk268": 2100,
+            "hideBones": [
+                31
+            ]
+        }
+    ]
+}

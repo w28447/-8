@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:22ac94c0ed40f5fbe822fabc381e98f44001593c84a654a257b13c52a762731c
-size 1396
+{
+    "itemlist": [
+        {
+            "minweight": 150,
+            "itementry": "scriptbundle&supply_stash_zombie_health",
+            "maxweight": 150,
+            "available": 2
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&supply_stash_zombie_equipment",
+            "maxweight": 100,
+            "available": 1
+        },
+        {
+            "minweight": 300,
+            "itementry": "scriptbundle&supply_stash_zombie_armor",
+            "maxweight": 300,
+            "available": 1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&backpack_item",
+            "maxweight": 150,
+            "available": 0
+        },
+        {
+            "minweight": 150,
+            "itementry": "scriptbundle&supply_stash_zombie_perks",
+            "maxweight": 200,
+            "available": 1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&melee_weapons",
+            "maxweight": 100,
+            "available": 1
+        }
+    ],
+    "hash_3d685b35": 1,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 6,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "supply_stash_zombie_items",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

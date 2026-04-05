@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2820ee44fae94f4cfccb74f6733c2272ddb44ca8fb37a51f78ecc87e35cfef8e
-size 253
+{
+    "contracticon": "image#hash_221207f35e4a7eb6",
+    "contracttitle": "localized17#hash_1a61eb9a004903e",
+    "name": "loot_contract_season_2_bonus_stream",
+    "contractdescription": "localized17#hash_a353ee576962c69",
+    "white": "#white"
+}

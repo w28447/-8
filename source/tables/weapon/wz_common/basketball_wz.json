@@ -1,3 +1,55 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5ea7fe2b498c02adf16b4549ff35ed8417c33f41171f2cccbb9940430837787c
-size 1981
+{
+    "name": "#basketball_wz",
+    "baseWeapon": "#basketball",
+    "displayname": "#weapon/basketball",
+    "weapon70": "#ball",
+    "streamkey": "#hash_3e0e9ed4e589e2fc",
+    "worldModelTagRight": "tag_weapon_right",
+    "worldModelTagLeft": "tag_weapon_left",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_inhand",
+    "scrstr_11a4": "tag_inhand",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "#hash_5b73038c": 1,
+    "#hash_6566504b": 3,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "WARZONE",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "sound800": "#hash_5fd68d0455a0b8",
+    "sound810": "#hash_5fd68d0455a0b8",
+    "tunables1": "#basketball_tunables_wz",
+    "attachments": [
+        "#hash_f459a0af8e8f912b"
+    ],
+    "attachmentUniques": [
+        "#hash_46c4a738ee047fa"
+    ],
+    "sharedWeaponSounds": "#hash_5e3081d2362bd322",
+    "projectilemodel": "#p7_fir_ball_sports_basketball",
+    "viewmodel": [
+        "#wpn_t8_basketball_view"
+    ],
+    "worldModel": [
+        "#wpn_t8_basketball_world"
+    ],
+    "gadgetIconAvailable": "#ui_icon_inventory_p7_fir_ball_sports_basketball",
+    "inventoryIconZm": "#ui_icon_inventory_p7_fir_ball_sports_basketball",
+    "hudIcon": "#ui_icon_inventory_p7_fir_ball_sports_basketball",
+    "image_e90": "#ui_icon_meansofdeath_basketball",
+    "image_1048": "#ui_icon_inventory_p7_fir_ball_sports_basketball",
+    "fireRumble": "#defaultweapon_melee",
+    "bounceImpactSounds": "#hash_3bab1cd48f7e5af9"
+}

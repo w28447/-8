@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7126a6d5a3e33fb6d060d1e8be93557f69b121ba098e9673460616e6ce4e34d8
-size 619
+{
+    "name": "mp_grind.fj",
+    "zone": "mp_grind",
+    "gameLanguage": "japanese_full",
+    "soundLanguage": "fj",
+    "nameHash": "#mp_grind.fj",
+    "patchZone": true,
+    "alias": [],
+    "duck": [],
+    "ambients": [],
+    "scriptIdLookups": [],
+    "streamKeysSABL": {
+        "streamKey1": "#mp_grind_fj_stream",
+        "dataSize1": 2048,
+        "fileKey": "#mp_grind_fj_loaded",
+        "fileLen": 2048
+    },
+    "streamKeysSABS": {
+        "streamKey1": "#hash_3fee1f55b6f0b3e5",
+        "dataSize1": 2048,
+        "fileKey": "#hash_1ba4b6cd8b9388e0",
+        "fileLen": 2048
+    }
+}

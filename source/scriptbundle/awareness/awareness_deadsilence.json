@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:526184aed65a9b1eddbc704e598dff13345d5e4455d2a7faca1160b3ec5c1d79
-size 577
+{
+    "hash_2b6e9133": 0.075,
+    "hash_fe0aa1d2": 0.15,
+    "configstringfiletype": "scriptbundle",
+    "hash_6cb0467e": 0,
+    "hash_dbf6038b": 0.1,
+    "hash_ad484b97": 0.01,
+    "type": "awareness",
+    "hash_6ae8117c": 0.15,
+    "hash_abea5dd8": 0.15,
+    "hash_3b22f5be": 0.025,
+    "vmtype": "client",
+    "name": "awareness_deadsilence",
+    "hash_7c9cab4f": 1,
+    "hash_37bac39d": 0.5,
+    "hash_dccff18f": 0.05,
+    "hash_146483e7": 0.15,
+    "hash_a3d426e6": 0.2,
+    "hash_301350af": 0.05,
+    "hash_293163bd": 125,
+    "hash_a8e88375": 0.15
+}

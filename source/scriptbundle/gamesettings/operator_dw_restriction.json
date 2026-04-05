@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:298cc2da2fda0652e7320c6f45aa5286170a7a4fccf22097309727e8d7b216de
-size 536
+{
+    "descriptionimage": "image#ui_icon_attachment_saug_opmod_dual_wield",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "operator_dw_restriction",
+    "displayname": "localized17#mpui/dw",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "attachmentRestrictions__dw",
+    "isenableddisabled": 0
+}

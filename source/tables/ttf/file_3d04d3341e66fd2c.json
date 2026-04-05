@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8aff81c946a3e539d28fdfe696b88da466feaf3220258908c23aeb65b5d363fe
-size 151
+{
+    "name": "#hash_3d04d3341e66fd2c",
+    "filename": "#hash_6cd6b044be907b15",
+    "next": "#hash_495d9aa3ae4fa2a8",
+    "kerningCache": true
+}

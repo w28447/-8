@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e444a37b18d4095d26914187240664af308fcd35c014c2ecb2dab552f7a44692
-size 230
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_want_end_to_beginneings_of_all_wars",
+    "quote": "localized17#hash_6e2d11d3828533b2",
+    "author": "localized17#hash_f396c3c36e8339c"
+}

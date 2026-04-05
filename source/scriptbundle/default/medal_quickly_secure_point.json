@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ebed876b54022d5340f4d2cf7aecb2d915b5cffd4d0355f1fed82e4d2ebd81b8
-size 424
+{
+    "description": "localized17#medal/quickly_secure_point_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_quickly_secure_point",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_forward_position",
+    "stringref": "localized17#medal/quickly_secure_point",
+    "iconlarge": "image#ui_icon_medal_forward_position_large"
+}

@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d60884e4836e937551b51ee12e77abd5850fbb397c9c2bdb10acb883860f48e7
-size 629
+{
+    "name": "mp_militia.fj",
+    "zone": "mp_militia",
+    "gameLanguage": "japanese_full",
+    "soundLanguage": "fj",
+    "nameHash": "#mp_militia.fj",
+    "patchZone": true,
+    "alias": [],
+    "duck": [],
+    "ambients": [],
+    "scriptIdLookups": [],
+    "streamKeysSABL": {
+        "streamKey1": "#mp_militia_fj_stream",
+        "dataSize1": 2048,
+        "fileKey": "#mp_militia_fj_loaded",
+        "fileLen": 2048
+    },
+    "streamKeysSABS": {
+        "streamKey1": "#hash_31fde4467b2338f2",
+        "dataSize1": 2048,
+        "fileKey": "#hash_6219a13d2b440393",
+        "fileLen": 2048
+    }
+}

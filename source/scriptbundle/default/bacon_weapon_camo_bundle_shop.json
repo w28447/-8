@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:79e2b044e56e60edf2dd10b1f467d6c654b04f6a4f209874d74d8e81644f306b
-size 272
+{
+    "loot04_ui_icon_blackmarket_itemshop_bundle_bacon": "image#loot04_ui_icon_blackmarket_itemshop_bundle_bacon",
+    "nametext": "localized17#hash_67482b250cb6e063",
+    "name": "bacon_weapon_camo_bundle_shop",
+    "desctext": "localized17#hash_7382211b29b0b735"
+}

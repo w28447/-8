@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e79f0b32e543c83b433f1e49976329537bc969f19b4960a861d0e871ffb63c49
-size 628
+{
+    "name": "mp_jungle2.fj",
+    "zone": "mp_jungle2",
+    "gameLanguage": "japanese_full",
+    "soundLanguage": "fj",
+    "nameHash": "#mp_jungle2.fj",
+    "patchZone": true,
+    "alias": [],
+    "duck": [],
+    "ambients": [],
+    "scriptIdLookups": [],
+    "streamKeysSABL": {
+        "streamKey1": "#mp_jungle2_fj_stream",
+        "dataSize1": 2048,
+        "fileKey": "#mp_jungle2_fj_loaded",
+        "fileLen": 2048
+    },
+    "streamKeysSABS": {
+        "streamKey1": "#hash_786eb3034665106",
+        "dataSize1": 2048,
+        "fileKey": "#hash_62c083047f068b17",
+        "fileLen": 2048
+    }
+}

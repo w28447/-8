@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fec1f4e8496dfb4220d753cd4831671ad3bdc36638864d755e6be7d447256e15
-size 392
+{
+    "backingsmall": "image#t7_hud_medal_backing_gamemode",
+    "widget": "BadasseryMedal",
+    "name": "t7_hud_medal_killed_bomb_planter",
+    "backinglarge": "image#t7_hud_medal_backing_gamemode_lrg",
+    "iconsmall": "image#t7_hud_medal_killed_bomb_planter",
+    "stringref": "localized17#medal/killed_bomb_planter",
+    "iconlarge": "image#t7_hud_medal_killed_bomb_planter_lrg"
+}

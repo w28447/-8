@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c952a9c7839775eeead320853259b4e72870002893f297e10d6a0a5bd3eadcaa
-size 246
+{
+    "nametext": "localized17#hash_2b13337a845adb3b",
+    "name": "outfit_summer_legendary1_battery_sunset_bundle_shop",
+    "desctext": "localized17#hash_2b7f2d614d161f1d",
+    "heroes/battery:hash_975cc0d1": "localized17#heroes/battery"
+}

@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5b1524b0ee55d6c98e0297d543af3073191fe00cdbaf7ba0b8d2149da4c79c2d
-size 344
+{
+    "name": "#loot_emote_exotic_shared_scissors",
+    "type": "#gesture",
+    "gesture": "#hash_4bf60df36f88fdd1",
+    "gesture2": "#hash_34772cc4659db49a",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/scissors",
+        "icon": "image#ui_icon_emotes_s2_scissors",
+        "isdefault": 0
+    }
+}

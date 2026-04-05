@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6c0700d457388db6074ceb9320d2e0f79de1a0a8c20836ed78a69161ef2f8585
-size 609
+{
+    "name": "#default",
+    "bundle": {
+        "digitalblood": 0,
+        "hash_67e06199": 0,
+        "hash_819846c7": 0,
+        "hash_deddce19": 0,
+        "hash_5331abe0": 0,
+        "hash_6c0a990a": "enum:2",
+        "hash_c6376b99": 0,
+        "hash_8d924963": 0,
+        "hash_e97eda81": 0,
+        "hash_8df0287c": 0,
+        "hash_49a55967": 0,
+        "hash_8ef1b43f": 0,
+        "hash_148d6d91": 0,
+        "hash_5c403974": 0,
+        "hash_ac7bddbe": 0,
+        "hash_7ea4277b": 0,
+        "hash_1b216715": 0,
+        "hash_abe565b3": 0,
+        "hash_9c1be670": 0
+    }
+}

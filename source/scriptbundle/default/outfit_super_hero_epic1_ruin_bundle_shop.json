@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c97032a58f63abca60e65eea73587a6c21c8c1b388eaab1f7fad1ffbb1a7caea
-size 404
+{
+    "detailsicon": "image#loot06_ui_icon_blackmarket_itemdetail_bundle_superhero_ruin",
+    "loot06_ui_icon_blackmarket_itemshop_bundle_superhero_ruin:hash_6c274f86": "image#loot06_ui_icon_blackmarket_itemshop_bundle_superhero_ruin",
+    "nametext": "localized17#hash_355fa1c371975bb5",
+    "name": "outfit_super_hero_epic1_ruin_bundle_shop",
+    "desctext": "localized17#hash_311caa96894fe39f"
+}

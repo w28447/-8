@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5f29289e8372ac5ab66c21ab60b030d4dfc616b31bb544a23676e4e4d50986ec
-size 324
+{
+    "name": "#loot_emote_shared_tai_chi",
+    "type": "#gesture",
+    "gesture": "#boast_tai_chi",
+    "gesture2": "#boast_tai_chi_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/five_elements",
+        "icon": "image#hash_5115d0a652ed5785",
+        "isdefault": 0
+    }
+}

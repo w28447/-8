@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:87799c9d9b805ac08716cc84d559c20ae30672af89b47c7609b2354d649eb0a2
-size 410
+{
+    "backingsmall": "image#t7_hud_medal_backing_badassery",
+    "widget": "BadasseryMedal",
+    "name": "t7_hud_medal_kill_enemy_with_gunbutt",
+    "backinglarge": "image#t7_hud_medal_backing_badassery_lrg",
+    "iconsmall": "image#t7_hud_medal_kill_enemy_with_gunbutt",
+    "stringref": "localized17#medal/kill_enemy_with_gunbutt",
+    "iconlarge": "image#t7_hud_medal_kill_enemy_with_gunbutt_lrg"
+}

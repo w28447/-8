@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:420e96981d9b428e48b5e1949db07db302b2d8187a2a195b3582684db8d9cdc2
-size 327
+{
+    "hash_14ea14dbba8d15cd:hash_6c274f86": "image#hash_14ea14dbba8d15cd",
+    "nametext": "localized17#hash_62e6fdf373d57013",
+    "name": "outfit_warrior_epic1_wetworks_torque_sunset_bundle_shop",
+    "desctext": "localized17#hash_2b7f2d614d161f1d",
+    "heroes/engineer:hash_975cc0d1": "localized17#heroes/engineer"
+}

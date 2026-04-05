@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:75ad3e7659b2065fe3a0d4d4d3be51edf9998d96bfc770bac480312e38a94b9a
-size 294
+{
+    "backingsmall": "image#hash_75692c1dbf2e3c49",
+    "widget": "BadasseryMedal",
+    "name": "events_attack_dog_objective_multikill_3",
+    "backinglarge": "image#hash_75692c1dbf2e3c49",
+    "iconsmall": "image#hash_776d1b4ece5247fc",
+    "iconlarge": "image#hash_776d1b4ece5247fc"
+}

@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d4d7d8905849c47f4430dd288dea8662ba6258cb2261c82c943f3ebe079a3086
-size 550
+{
+    "hinttext": "localized17#hash_72e585c5b6dd6261",
+    "configstringfiletype": "scriptbundle",
+    "value2": "2",
+    "value3": "3",
+    "value1": "1",
+    "value4": "4",
+    "value5": "5",
+    "type": "gamesettings",
+    "label": "localized17#menu/x_zones",
+    "hash_5a6dee5a": 0,
+    "name": "zone_count",
+    "displayname": "localized17#menu/multi_zone",
+    "label1": "localized17#menu/1_zone",
+    "hash_54e336e4": 0,
+    "optionscount": 5,
+    "hash_765cfd09": 0,
+    "setting": "zoneCount",
+    "isenableddisabled": 0
+}

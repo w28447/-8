@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:abfd17b78003ec0a61235cc1d5864cd36390886555d0898a5f97d5046693a646
-size 396
+{
+    "backingsmall": "image#t7_hud_medal_backing_gamemode",
+    "widget": "BadasseryMedal",
+    "name": "t7_hud_medal_kill_confirmed_multi",
+    "backinglarge": "image#t7_hud_medal_backing_gamemode_lrg",
+    "iconsmall": "image#t7_hud_medal_kill_confirmed_multi",
+    "stringref": "localized17#medal/kill_confirmed_multi",
+    "iconlarge": "image#t7_hud_medal_kill_confirmed_multi_lrg"
+}

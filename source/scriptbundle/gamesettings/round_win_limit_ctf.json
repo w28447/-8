@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:65e7e88e09f3fe4b4740fa4e96613f8c3839c1b0f7bdb92b2af4406b23af4fa4
-size 721
+{
+    "hinttext": "localized17#menu/round_win_limit_hint",
+    "configstringfiletype": "scriptbundle",
+    "value8": "7",
+    "value9": "8",
+    "value2": "1",
+    "value3": "2",
+    "value1": "0",
+    "value6": "5",
+    "value7": "6",
+    "value4": "3",
+    "value5": "4",
+    "value10": "9",
+    "type": "gamesettings",
+    "label": "localized17#menu/x_rounds",
+    "hash_5a6dee5a": 1,
+    "name": "round_win_limit_ctf",
+    "displayname": "localized17#menu/round_win_limit",
+    "label1": "localized17#menu/unlimited",
+    "label2": "localized17#menu/1_round",
+    "hash_54e336e4": 0,
+    "optionscount": 10,
+    "hash_765cfd09": 0,
+    "setting": "roundWinLimit",
+    "isenableddisabled": 0
+}

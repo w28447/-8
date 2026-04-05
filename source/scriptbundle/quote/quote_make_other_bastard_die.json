@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:54de2010049b9372f1a74846685e24b39bbf26af2cc0cc9e55d2cbc4a42f98ac
-size 218
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_make_other_bastard_die",
+    "quote": "localized17#hash_4f576e09edc7c073",
+    "author": "localized17#hash_634634cfd78bd43d"
+}

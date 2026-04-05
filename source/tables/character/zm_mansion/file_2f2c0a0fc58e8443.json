@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dc8ea71d74ed5f725bb401e39efda2cb1db7a0b6b1b7d9e49d39cca96cceb6ba
-size 238
+{
+    "name": "#hash_2f2c0a0fc58e8443",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "body": "#hash_5b168f8d846f5330",
+    "head": "#c_t8_zmb_dlc1_hero_butler_head1_glow"
+}

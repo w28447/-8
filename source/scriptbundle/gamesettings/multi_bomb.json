@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ec2bfb0d72f4dfd836221e53f0c5ed4da11c9b1d943bb0f154066b9b987fce57
-size 365
+{
+    "hinttext": "localized17#menu/multi_bomb_hint",
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "multi_bomb",
+    "displayname": "localized17#menu/multi_bomb",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "multiBomb",
+    "isenableddisabled": 1
+}

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:33d4d8cc5b12d9b5ceedca16e40270b80a47d331044fce2225300f37bba6e996
-size 223
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_some_people_live_a_lifetime",
+    "quote": "localized17#hash_2c23eaae485026ee",
+    "author": "localized17#hash_4e1b34796de81429"
+}

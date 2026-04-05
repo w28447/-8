@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1138398d7b0d0e7335b3f8021cb7b56073c66671fc72a0f686c05366b76af72c
-size 247
+{
+    "name": "#c_t8_zmb_dlc1_alistair1_igc",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "body": "#c_t8_zmb_dlc1_alistair_body1",
+    "head": "#c_t8_zmb_dlc1_alistair_head1_igc"
+}

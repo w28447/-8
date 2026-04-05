@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:544a300dc7209b707fa3c0826f19be5bc35624a648853209548b603dda266461
-size 469
+{
+    "name": "#hash_30157c260765cc9b",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#mp_player_max_health",
+        "#specialist_healing_enabled",
+        "#gamesettings/#heal_speed",
+        "#gamesettings/#mp_friendly_fire_type",
+        "#gamesettings/#mp_teamkill_punish_count",
+        "#gamesettings/#mp_only_headshots",
+        "#gamesettings/#allow_hit_markers",
+        "#gamesettings/#mp_competitive_settings"
+    ]
+}

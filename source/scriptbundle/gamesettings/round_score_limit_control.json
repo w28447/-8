@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:594522e5b4b31f16ec0c5077d87aef87b9296035648b3742a314f1f34b6bb6f4
-size 898
+{
+    "hinttext": "localized17#hash_2b0c3265afb0727c",
+    "configstringfiletype": "scriptbundle",
+    "value8": "75",
+    "value9": "100",
+    "value2": "25",
+    "value3": "50",
+    "value1": "0",
+    "value6": "65",
+    "value7": "70",
+    "value4": "55",
+    "value5": "60",
+    "value11": "150",
+    "value10": "125",
+    "value13": "200",
+    "value12": "175",
+    "value15": "250",
+    "value14": "225",
+    "value17": "500",
+    "value16": "375",
+    "value19": "1000",
+    "value18": "750",
+    "type": "gamesettings",
+    "label": "localized17#menu/x_points",
+    "hash_5a6dee5a": 1,
+    "name": "round_score_limit_control",
+    "displayname": "localized17#menu/round_score_limit",
+    "label1": "localized17#menu/unlimited",
+    "hash_54e336e4": 0,
+    "optionscount": 19,
+    "hash_765cfd09": 0,
+    "setting": "scoreLimit",
+    "isenableddisabled": 0
+}

@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:017071bebac164dc8dee3c75ca4f0d042d769d84b838e00f6411d3dcf504a032
-size 414
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "scope_fastlockon_launcher_standard_restriction",
+    "displayname": "localized17#weapon/launcher_standard_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__launcher_standard_t8__attachments__fastlockon",
+    "isenableddisabled": 0
+}

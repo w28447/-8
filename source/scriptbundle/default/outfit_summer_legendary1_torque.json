@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e8a7539a24b619dbbec8c86ae0a68260a6a63c7caf55150cac275bc96b64cacb
-size 182
+{
+    "loot04_ui_icon_blackmarket_itemshop_smoked_torque:hash_6c274f86": "image#loot04_ui_icon_blackmarket_itemshop_smoked_torque",
+    "name": "outfit_summer_legendary1_torque"
+}

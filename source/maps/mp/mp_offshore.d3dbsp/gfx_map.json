@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:232bd1ba4eecf062ea239d429d70b65f77b410a0592f4c61c8b5de052c3a890b
-size 353
+{
+    "name": "#maps/mp/mp_offshore.d3dbsp",
+    "baseName": "mp_offshore",
+    "lutMaterial": "#lut_mp_offshore",
+    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "unk550": [
+        "#img_trim_lut_mp_offshore",
+        "#img_trim_lut_mp_offshore",
+        "#img_trim_lut_mp_offshore",
+        "#img_trim_lut_mp_offshore"
+    ]
+}

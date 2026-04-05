@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:213c5899d256d125d19e1a4b053b1665b890bd77d852477c3f1c4e605bf45d3b
-size 354
+{
+    "name": "#loot_emote_shared_guitar_playing",
+    "type": "#gesture",
+    "gesture": "#boast_guitar_playing",
+    "gesture2": "#boast_guitar_playing_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/sweet_shred",
+        "icon": "image#ui_icon_emotes_s3_guitar_playing",
+        "isdefault": 0
+    }
+}

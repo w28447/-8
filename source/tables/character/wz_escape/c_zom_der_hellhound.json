@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e2d7dde708900ebd3ba0742f1f503d7bff44b82e9587089da235e64bc9c04526
-size 183
+{
+    "name": "#c_zom_der_hellhound",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 2,
+    "bodyImpactType": 2,
+    "body": "#c_zom_der_hellhound_fb"
+}

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d9a3ed51bcca267359016ccd453bdc31160f13c5652ad159c8795c95e2224451
-size 296
+{
+    "detailsicon": "image#hash_268d77ce8e6914d0",
+    "hash_3327cc44f9337eef:hash_6c274f86": "image#hash_3327cc44f9337eef",
+    "nametext": "localized17#hash_50cdecea3f72dfb3",
+    "name": "loot_ar_accurate_sig_01_sunset_bundle_shop",
+    "desctext": "localized17#hash_33dbc247bcd59d3a"
+}

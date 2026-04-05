@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:51764e2153b61af40009930a5ca4fcec5c21ec63848771f9015d574972490b6e
-size 420
+{
+    "description": "localized17#medal/spectre_blade_throw_kill_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_spectre_blade_throw_kill",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_bullseye",
+    "stringref": "localized17#medal/spectre_blade_throw_kill",
+    "iconlarge": "image#ui_icon_medal_bullseye_large"
+}

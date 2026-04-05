@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9c019e759df18b7b78523c82f3535db5706e81687d0b2a544694914370ad574d
-size 225
+{
+    "hash_94166112": "model#",
+    "name": "c_t8_bo_wingsuit_diner",
+    "icon": "loot_ui_icon_jumppacks_wingsuit_diner",
+    "largeicon": "loot_ui_icon_jumppacks_wingsuit_diner_large",
+    "hash_5677bd3d": "model#"
+}

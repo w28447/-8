@@ -1,3 +1,47 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7278a6cc52ed07011df3703ed67c948a615bcb77456a78cc5ed4cdf5105bd5d5
-size 1265
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&health_stash_slot1",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&health_stash_slot2",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&health_stash_slot3",
+            "maxweight": 1,
+            "available": 3
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&health_stash_slot4",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&cu03_item",
+            "maxweight": 1,
+            "available": 1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 4000,
+    "type": "itemspawnlist",
+    "hash_345eba59": 5,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "health_stash_cu03",
+    "displayname": "localized18#wz/medical_stash",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0,
+    "supplystash": 1
+}

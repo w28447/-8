@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ad2a5f431cbda50b43961210be2ce24046e9db8900c2d6ed5c739b69225583aa
-size 581
+{
+    "descriptionimage": "image#ui_icon_wildcard_gluttony03_large",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "wc_perk3gluttony_restriction",
+    "displayname": "localized17#bonuscard/perk_3_gluttony",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__bonuscard_perk_3_gluttony__restricted",
+    "isenableddisabled": 0
+}

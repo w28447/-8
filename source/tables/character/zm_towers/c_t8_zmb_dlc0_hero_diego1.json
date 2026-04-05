@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0c05d9bc688489641e3f5087e5f4aefa28b31348465c8f012a21ddce232d130c
-size 248
+{
+    "name": "#c_t8_zmb_dlc0_hero_diego1",
+    "skeleton": "unknown",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "body": "#c_t8_zmb_dlc0_hero_diego_body1",
+    "head": "#c_t8_zmb_dlc0_hero_diego_head1"
+}

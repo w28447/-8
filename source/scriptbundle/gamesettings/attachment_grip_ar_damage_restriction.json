@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5d5d60ef2f42f625986a28c438d5255b78e640ddfe312dec687803b10b82908c
-size 383
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_grip_ar_damage_restriction",
+    "displayname": "localized17#weapon/ar_damage_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__ar_damage_t8__attachments__grip",
+    "isenableddisabled": 0
+}

@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d17d7bcfa14ea2406412a04f48282129501c092faf764d359c2b02269fc81bf1
-size 390
+{
+    "description": "localized17#medal/shroud_multikill_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_shroud_multikill_2",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#hash_39a4f19573dac07e",
+    "stringref": "localized17#medal/shroud_multikill",
+    "iconlarge": "image#hash_76739cfae3eef88e"
+}

@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:78d655ba13e0b82f0a5b9187e76d28f02fb4f9fa3e6c75acda78bcccec42f6ce
-size 227
+{
+    "hash_fbb8bae83651449:hash_6c274f86": "image#hash_fbb8bae83651449",
+    "nametext": "localized17#hash_3d0c5101ae879588",
+    "name": "ar_modular_mk2_bundle_shop",
+    "desctext": "localized17#hash_55e287052de07890"
+}

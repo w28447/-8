@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a9af3d65824941c3534547f885a1d7de49674149d550d3c44cf7a0d0cc46d0e5
-size 320
+{
+    "name": "#gsol_zm_laststand",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#zm_laststandduration",
+        "#gamesettings/#zm_laststandcount",
+        "#gamesettings/#zm_selfrevivecount",
+        "#gamesettings/#zm_retainweapons",
+        "#gamesettings/#zm_perkdecay"
+    ]
+}

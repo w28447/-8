@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eedc207a1e97e6ab2a5f8e6c3b40cd739e56e3272e69bdec1d26a0d0a87127c5
-size 342
+{
+    "name": "#hash_51621610d162233",
+    "type": "#gesture",
+    "gesture": "#boast_summer_boombox",
+    "gesture2": "#boast_summer_boombox_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#hash_6df10bc44b4914ff",
+        "icon": "image#ui_icon_emotes_summer_boombox",
+        "isdefault": 0
+    }
+}

@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:158ba52452be40af4980358c9f7dcf991bc1cdbfcf168461815c4f626728f633
-size 570
+{
+    "name": "#dart_waypoint",
+    "hAlign": "LEFT",
+    "vAlign": "TOP",
+    "waypointOffset": "0, 0, 0",
+    "waypointShowDistance": false,
+    "waypointHideArrow": false,
+    "waypointClamp": false,
+    "waypointFadeWhenTargeted": false,
+    "waypointFadeWhenInCombat": false,
+    "waypointShowDistanceWhenFar": false,
+    "waypointShowDistanceWhenFarDist": 0,
+    "waypointForceOffscreenStyle": false,
+    "waypointHideWhenNotVisible": false,
+    "shouldCullDistance": false,
+    "cullDistance": 0,
+    "hasLowAmmoState": false,
+    "bundle": {}
+}

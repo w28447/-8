@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d964951bf6bc33f293ea000788eacb72eeb975cd18449b6dac438c52401cf3b8
-size 334
+{
+    "name": "#loot_emote_shared_fist_bump",
+    "type": "#gesture",
+    "gesture": "#boast_fist_bump",
+    "gesture2": "#boast_fist_bump_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#hash_7ae49f9fae53e72b",
+        "icon": "image#ui_icon_emotes_fist_bump",
+        "isdefault": 1
+    }
+}

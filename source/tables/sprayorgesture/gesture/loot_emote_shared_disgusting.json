@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:edff4ecc8961b389eb94cd2a94fe7427e6aadb24c97b02d0e93fae64b99db247
-size 331
+{
+    "name": "#loot_emote_shared_disgusting",
+    "type": "#gesture",
+    "gesture": "#boast_disgusting",
+    "gesture2": "#boast_disgusting_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/oh_snap",
+        "icon": "image#ui_icon_emotes_disgusting",
+        "isdefault": 1
+    }
+}

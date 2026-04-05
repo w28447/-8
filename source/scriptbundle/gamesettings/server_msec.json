@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:76c316eafa83dd6549bd59e10dafe2d71a0bcf6f8fadddaa08da777a5aecf912
-size 493
+{
+    "hinttext": "localized17#menu/server_rate_hint",
+    "configstringfiletype": "scriptbundle",
+    "value2": "16",
+    "value1": "50",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "server_msec",
+    "displayname": "localized17#menu/server_rate",
+    "label1": "localized17#menu/normal",
+    "label2": "localized17#menu/fast",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "servermsec",
+    "isenableddisabled": 0
+}

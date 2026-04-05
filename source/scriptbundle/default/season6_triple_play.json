@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:06dd76af53fe024ca0039f5241d69834b0a29601371248d24c2c7f825341a236
-size 514
+{
+    "buttonimage": "image#ui_icon_blackmarket_promos_silvera_button_small",
+    "popupimage": "image#ui_icon_blackmarket_promos_silvera_large_preview",
+    "nametext": "localized17#hash_1cba159f28b3f3b8",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
+    "name": "season6_triple_play",
+    "desctext": "localized17#hash_4bbe0196ec220754",
+    "previewimage": "image#ui_icon_blackmarket_promos_silvera_item_detail",
+    "reserveimage": "image#ui_icon_blackmarket_promos_silvera_button_large"
+}

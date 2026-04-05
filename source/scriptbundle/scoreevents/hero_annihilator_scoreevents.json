@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:35eceffe351e41d2fa0180a6a0b63da57373df37f97d50ef274bb7c9b0118cb5
-size 582
+{
+    "annihilator_multikill_2": "#annihilator_multikill_2",
+    "annihilator_multikill_2": "#annihilator_multikill_2",
+    "annihilator_kill": "#annihilator_kill",
+    "configstringfiletype": "scriptbundle",
+    "type": "scoreevents",
+    "vmtype": "both",
+    "annihilator_multikill_2": "#annihilator_multikill_2",
+    "name": "hero_annihilator_scoreevents",
+    "customsettingstype": "ability",
+    "annihilator_multikill_2": "#annihilator_multikill_2",
+    "annihilator_shutdown": "#annihilator_shutdown",
+    "annihilator_multikill_2": "#annihilator_multikill_2"
+}

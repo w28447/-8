@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2af0bf6691e05d889a21e138a1e343ed8dfcc1dca95cc665aa9b316e5bba21b7
-size 129
+{
+    "hash_2c3fb94b33630981:hash_6c274f86": "image#hash_2c3fb94b33630981",
+    "name": "outfit_marauder_rare4_battery_shop"
+}

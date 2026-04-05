@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b690d54bbe67707e015818fdeb3fa318a67e0c567ea8dfb09fb585e3aeafb4f6
-size 210
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_die_like_a_dog",
+    "quote": "localized17#hash_35daeed1a6aac67c",
+    "author": "localized17#hash_7b728f3215143808"
+}

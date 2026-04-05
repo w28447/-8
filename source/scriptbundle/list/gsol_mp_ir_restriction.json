@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f707a0bf8c14dc394dfdd9f34b10d12f949e1eab97a0c58e9d5d3819b92fc335
-size 900
+{
+    "name": "#gsol_mp_ir_restriction",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#scope_ir_ar_accurate_restriction",
+        "#gamesettings/#scope_ir_ar_standard_restriction",
+        "#gamesettings/#scope_ir_ar_stealth_restriction",
+        "#gamesettings/#scope_ir_lmg_heavy_restriction",
+        "#gamesettings/#scope_ir_lmg_standard_restriction",
+        "#gamesettings/#scope_ir_smg_accurate_restriction",
+        "#gamesettings/#scope_ir_smg_standard_restriction",
+        "#gamesettings/#scope_ir_sniper_powerbolt_restriction",
+        "#gamesettings/#scope_ir_sniper_powersemi_restriction",
+        "#gamesettings/#scope_ir_sniper_quickscope_restriction",
+        "#gamesettings/#scope_ir_tr_longburst_restriction",
+        "#gamesettings/#scope_ir_tr_midburst_restriction",
+        "#gamesettings/#scope_ir_tr_powersemi_restriction"
+    ]
+}

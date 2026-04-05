@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:200db3331135ed7c9101bac60e310e8eb40f195b37844485ecac9a2d409dc17a
-size 679
+{
+    "itemlist": [
+        {
+            "minweight": 500,
+            "itementry": "scriptbundle&wz_escape_dest_powerhouse_list_items",
+            "maxweight": 500,
+            "available": -1
+        },
+        {
+            "minweight": 32,
+            "maxweight": 55,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 420,
+    "type": "itemspawnlist",
+    "hash_345eba59": 2,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "wz_escape_dest_powerhouse_list_item_default",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

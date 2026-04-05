@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6aeb59776e8cb21474bdacd0d55c4e5e7c3d35506b7683b4bcd9511642184833
-size 668
+{
+    "hinttext": "localized17#hash_4eaa4b1161122c5d",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value3": "2",
+    "value1": "0",
+    "value4": "3",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "zm_perksactive",
+    "displayname": "localized17#hash_5b1b8e8216554a4b",
+    "label4": "localized17#hash_1f0968aad9d63087",
+    "label1": "localized17#hash_68b65fb510ccd214",
+    "label3": "localized17#hash_68b65fb510ccd214",
+    "label2": "localized17#hash_1ac823ffd3e68662",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "zmPerksActive",
+    "isenableddisabled": 0
+}

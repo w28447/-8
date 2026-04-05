@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:783c4b2f09f3d51306eef1de90256c7cb233b1fcf9fe1aba2b638085c746c4c8
-size 379
+{
+    "lootid": "#charm_computer_teeth",
+    "hash_ff3063df": "model#",
+    "image": "ui_icon_weapon_charms_computer_teeth",
+    "name": "charm_computer_teeth",
+    "displayname": "localized17#menu/charm_computer_teeth",
+    "icon": "ui_icon_weapon_charms_computer_teeth",
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_computer_teeth"
+}

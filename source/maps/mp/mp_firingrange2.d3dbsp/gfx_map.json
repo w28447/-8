@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d7aa7b0e94c8cc0c628725b60074e6e09d8e41f9bfe5e51534b3f681121baeeb
-size 381
+{
+    "name": "#maps/mp/mp_firingrange2.d3dbsp",
+    "baseName": "mp_firingrange2",
+    "lutMaterial": "#lut_mp_firingrange2",
+    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "unk550": [
+        "#img_trim_lut_mp_firingrange2",
+        "#img_trim_lut_mp_firingrange2",
+        "#img_trim_lut_mp_firingrange2",
+        "#img_trim_lut_mp_firingrange2"
+    ]
+}

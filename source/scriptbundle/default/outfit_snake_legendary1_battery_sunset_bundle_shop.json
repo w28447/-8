@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b5d6526350248695d23dd9429f849bf6815441a610cbfb469afc349d5fd7a1d9
-size 318
+{
+    "hash_f8134f89700dcc0:hash_6c274f86": "image#hash_f8134f89700dcc0",
+    "nametext": "localized17#hash_26985ee22eb834ce",
+    "name": "outfit_snake_legendary1_battery_sunset_bundle_shop",
+    "desctext": "localized17#hash_2b7f2d614d161f1d",
+    "heroes/battery:hash_975cc0d1": "localized17#heroes/battery"
+}

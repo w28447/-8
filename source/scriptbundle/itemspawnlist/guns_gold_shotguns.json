@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:08611b446787f920885ea90fa50746c29da9cecfb69df0367856b15cf94a2589
-size 855
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&shotgun_pump_t8_gold_item",
+            "childitementry_1": "scriptbundle&ammo_type_12ga_item",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&shotgun_semiauto_t8_gold_item",
+            "childitementry_1": "scriptbundle&ammo_type_12ga_item",
+            "maxweight": 200,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 200,
+    "type": "itemspawnlist",
+    "hash_345eba59": 2,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 1,
+    "name": "guns_gold_shotguns",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

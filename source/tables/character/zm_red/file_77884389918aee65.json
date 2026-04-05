@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2ced63c87f7342dd4d54a239321fb763a8c9abbcc81db78d2122d572641232a6
-size 233
+{
+    "name": "#hash_77884389918aee65",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "body": "#c_t8_zmb_hero_stanton_body1_igc",
+    "head": "#hash_616687f6e797a664"
+}

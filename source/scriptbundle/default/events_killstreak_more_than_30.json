@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:98556b0dfa642fe0357e42d8f1ff7a950e5439a0cd21549c7265b5cb03e37736
-size 285
+{
+    "backingsmall": "image#hash_75692c1dbf2e3c49",
+    "widget": "BadasseryMedal",
+    "name": "events_killstreak_more_than_30",
+    "backinglarge": "image#hash_75692c1dbf2e3c49",
+    "iconsmall": "image#hash_776d1b4ece5247fc",
+    "iconlarge": "image#hash_776d1b4ece5247fc"
+}

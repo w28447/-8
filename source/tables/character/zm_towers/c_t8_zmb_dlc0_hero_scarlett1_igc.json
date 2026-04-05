@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:438465a76f29b70d0797655fb9c44cbb1eedcd5bfc7f8aea81158b491f900653
-size 266
+{
+    "name": "#c_t8_zmb_dlc0_hero_scarlett1_igc",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "body": "#c_t8_zmb_dlc0_hero_scarlett_body1_igc",
+    "head": "#c_t8_zmb_dlc0_hero_scarlett_head1_igc"
+}

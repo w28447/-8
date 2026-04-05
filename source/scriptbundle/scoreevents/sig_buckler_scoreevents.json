@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:45fa41caec4739dec4f868649b3d0d5e6faf9ec06565de963e355fe293dc1749
-size 645
+{
+    "battle_shield_multikill_2": "#battle_shield_multikill_2",
+    "battle_shield_multikill_2": "#battle_shield_multikill_2",
+    "battle_shield_kill": "#battle_shield_kill",
+    "configstringfiletype": "scriptbundle",
+    "type": "scoreevents",
+    "vmtype": "both",
+    "battle_shield_multikill_2": "#battle_shield_multikill_2",
+    "name": "sig_buckler_scoreevents",
+    "customsettingstype": "ability",
+    "battle_shield_multikill_2": "#battle_shield_multikill_2",
+    "battle_shield_shutdown": "#battle_shield_shutdown",
+    "shield_assist": "#shield_assist",
+    "battle_shield_multikill_2": "#battle_shield_multikill_2"
+}

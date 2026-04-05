@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9e3d79272090f635165cec4eed58acbb14a45a7a58a6b7e69cde5e31d393ae62
-size 369
+{
+    "backingsmall": "image#t7_hud_medal_backing_specialist_killjoy",
+    "widget": "BadasseryMedal",
+    "name": "t7_hud_medal_hazmat",
+    "backinglarge": "image#t7_hud_medal_backing_specialist_killjoy_lrg",
+    "iconsmall": "image#hash_7a8561beee7f4ece",
+    "stringref": "localized17#hash_7b9854877ab767b5",
+    "iconlarge": "image#hash_7a8561beee7f4ece"
+}

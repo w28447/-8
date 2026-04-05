@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1c593a21d115d6f699c1ff24ef89a05af8ba88b34a21c0b3ec1c5da61508942a
-size 407
+{
+    "description": "localized17#medal/gunship_killjoy_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_gunship_killjoy",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_destroy_gunship",
+    "stringref": "localized17#medal/gunship_killjoy",
+    "iconlarge": "image#ui_icon_medal_destroy_gunship_large"
+}

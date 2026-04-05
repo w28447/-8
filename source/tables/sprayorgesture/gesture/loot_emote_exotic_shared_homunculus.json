@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9771d6f4b2b8e2c4221b5d82e316baed61a8a2d5e1837e3e034884002248d1e5
-size 347
+{
+    "name": "#loot_emote_exotic_shared_homunculus",
+    "type": "#gesture",
+    "gesture": "#boast_homunculus",
+    "gesture2": "#boast_homunculus_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/homunc-a-shuffle",
+        "icon": "image#ui_icon_emotes_homunculus",
+        "isdefault": 0
+    }
+}

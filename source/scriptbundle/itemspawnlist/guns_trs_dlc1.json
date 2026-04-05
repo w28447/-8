@@ -1,3 +1,43 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6057dd3e27e0026c35a81122001ad0a4023712862cb3500b0e12b74c30457069
-size 1321
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&tr_midburst_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&tr_longburst_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&tr_powersemi_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_762_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&sniper_mini14_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
+            "maxweight": 100,
+            "available": 0
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 200,
+    "type": "itemspawnlist",
+    "hash_345eba59": 4,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 1,
+    "name": "guns_trs_dlc1",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

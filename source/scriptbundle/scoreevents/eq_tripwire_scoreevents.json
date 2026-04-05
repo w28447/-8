@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:175c54609a217880ed0b6b278e2ca96ac1beb29e7a4b2d5426681f58b413c98f
-size 842
+{
+    "tripwire_ied_multikill_2": "#tripwire_ied_multikill_2",
+    "tripwire_ied_multikill_6": "#tripwire_ied_multikill_6",
+    "tripwire_ied_kill": "#tripwire_ied_kill",
+    "configstringfiletype": "scriptbundle",
+    "type": "scoreevents",
+    "tripwire_ied_deployed": "#tripwire_ied_deployed",
+    "vmtype": "both",
+    "tripwire_ied_multikill_4": "#tripwire_ied_multikill_4",
+    "name": "eq_tripwire_scoreevents",
+    "customsettingstype": "ability",
+    "tripwire_ied_multikill_5": "#tripwire_ied_multikill_5",
+    "hash_2150d242911dfe3d:hash_3143c814": "#hash_2150d242911dfe3d",
+    "tripwire_ied_objective_defense": "#tripwire_ied_objective_defense",
+    "hash_fcd2ff3a": 1,
+    "tripwire_ied_multikill_3": "#tripwire_ied_multikill_3",
+    "tripwire_ied_objective_multikill_3": "#tripwire_ied_objective_multikill_3"
+}

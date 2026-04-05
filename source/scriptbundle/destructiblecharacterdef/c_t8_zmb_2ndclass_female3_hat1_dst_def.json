@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:584ead7345047347501e6110ad82228b20324f899c0e4696206efce375d250f9
-size 431
+{
+    "hash_aa7fbf8b": "j_head",
+    "configstringfiletype": "scriptbundle",
+    "c_t8_zmb_1stclass_female_hat1_skin2": "model#c_t8_zmb_1stclass_female_hat1_skin2",
+    "type": "destructiblecharacterdef",
+    "hash_cb768102": "helmet",
+    "vmtype": "both",
+    "name": "c_t8_zmb_2ndclass_female3_hat1_dst_def",
+    "piececount": 1,
+    "c_t8_zmb_1stclass_female_hat1_skin2": "model#c_t8_zmb_1stclass_female_hat1_skin2"
+}

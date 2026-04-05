@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7d3e24d51a32562150f1fac626af7c8c400eb8f03d8a6eea6b5bf68a5b13e875
-size 613
+{
+    "descriptionimage": "image#ui_icon_wildcard_secondarygunfighter03_large",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "wc_secondarygunfighter3_restriction",
+    "displayname": "localized17#bonuscard/secondary_gunfighter_3",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__bonuscard_secondary_gunfighter_3__restricted",
+    "isenableddisabled": 0
+}

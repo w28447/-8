@@ -1,3 +1,124 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:87929cbab17524c35f2e4c59dc73fd57a58a37591e4f38da33cc3c78cc275b51
-size 3716
+{
+    "categories": [
+        {
+            "icons": [
+                {
+                    "categoryicon": "image#ui_icon_contracts_dailymp"
+                },
+                {
+                    "categoryicon": "image#ui_icon_contracts_dailymp"
+                },
+                {
+                    "categoryicon": "image#ui_icon_contracts_dailywl"
+                },
+                {
+                    "categoryicon": "image#ui_icon_contracts_dailyzm"
+                },
+                {
+                    "categoryicon": "image#ui_icon_contracts_dailywz"
+                }
+            ],
+            "categoryname": "#play"
+        },
+        {
+            "icons": [
+                {
+                    "categoryicon": "image#ui_icon_contracts_combat"
+                },
+                {
+                    "categoryicon": "image#ui_icon_contracts_combat_hard"
+                }
+            ],
+            "categoryname": "#combat"
+        },
+        {
+            "icons": [
+                {
+                    "categoryicon": "image#ui_icon_contracts_equipment"
+                },
+                {
+                    "categoryicon": "image#ui_icon_contracts_equipment_hard"
+                }
+            ],
+            "categoryname": "#equipment"
+        },
+        {
+            "icons": [
+                {
+                    "categoryicon": "image#ui_icon_contracts_scorestreaks"
+                },
+                {
+                    "categoryicon": "image#ui_icon_contracts_scorestreaks_hard"
+                }
+            ],
+            "categoryname": "#scorestreak"
+        },
+        {
+            "icons": [
+                {
+                    "categoryicon": "image#ui_icon_contracts_objective"
+                },
+                {
+                    "categoryicon": "image#ui_icon_contracts_objective_hard"
+                }
+            ],
+            "categoryname": "#objective"
+        },
+        {
+            "icons": [
+                {
+                    "categoryicon": "image#ui_icon_contracts_specialists"
+                },
+                {
+                    "categoryicon": "image#ui_icon_contracts_specialists_hard"
+                }
+            ],
+            "categoryname": "#specialist"
+        },
+        {
+            "icons": [
+                {
+                    "categoryicon": "image#ui_icon_contracts_victory"
+                },
+                {
+                    "categoryicon": "image#ui_icon_contracts_victory_hard"
+                }
+            ],
+            "categoryname": "#victory"
+        },
+        {
+            "icons": [
+                {
+                    "categoryicon": "image#ui_icon_contracts_exploration"
+                },
+                {
+                    "categoryicon": "image#ui_icon_contracts_exploration_hard"
+                }
+            ],
+            "categoryname": "#exploration"
+        },
+        {
+            "icons": [
+                {
+                    "categoryicon": "image#ui_icon_contracts_objective"
+                },
+                {
+                    "categoryicon": "image#ui_icon_contracts_objective_hard"
+                }
+            ],
+            "categoryname": "#milestone"
+        },
+        {
+            "icons": [
+                {
+                    "categoryicon": "image#ui_icon_contracts_support"
+                },
+                {
+                    "categoryicon": "image#ui_icon_contracts_support_hard"
+                }
+            ],
+            "categoryname": "#support"
+        }
+    ],
+    "name": "loot_contract_categories"
+}

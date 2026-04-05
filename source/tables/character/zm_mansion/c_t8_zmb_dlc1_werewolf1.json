@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e2c2c7129eabcb0c9067a7afa655c6258ab74a94bfde58d3a139d2d58b7a6a82
-size 268
+{
+    "name": "#c_t8_zmb_dlc1_werewolf1",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 2,
+    "bodyImpactType": 2,
+    "fxDef": "#fxd8_zm_char_werewolf_body",
+    "ragdollDef": "#werewolf",
+    "body": "#c_t8_zmb_dlc1_werewolf_fb1"
+}

@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b47dadf58aa2c96f822c86920b27305f6d2f3acc1713388238348775648b14db
-size 827
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&floor_list_sniper",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&armor_item_large",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&backpack_item",
+            "maxweight": 1,
+            "available": 1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 3,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "blast_door_high_value",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

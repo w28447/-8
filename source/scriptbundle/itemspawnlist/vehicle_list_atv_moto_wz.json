@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a00cba7f437958ae9bab92ede12d3e99161258764ef3c8a47d466984b79a6a2c
-size 707
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&vehicle_list_atv_wz",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&vehicle_list_motorcycle_wz",
+            "maxweight": 1,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 4000,
+    "type": "itemspawnlist",
+    "hash_345eba59": 2,
+    "vehiclespawner": 1,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 1,
+    "name": "vehicle_list_atv_moto_wz",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

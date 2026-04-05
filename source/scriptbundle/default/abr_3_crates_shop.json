@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8ed6998efab35850d5bade3ff1aeff258f60b2f6da2fd0c7ae4aae80ef025f7d
-size 292
+{
+    "loot04_ui_icon_blackmarket_itemshop_bundle_tr_midburst_x3:hash_6c274f86": "image#loot04_ui_icon_blackmarket_itemshop_bundle_tr_midburst_x3",
+    "nametext": "localized17#hash_6f9bf9dfa2a0d053",
+    "name": "abr_3_crates_shop",
+    "desctext": "localized17#hash_4547df85a44a7660"
+}

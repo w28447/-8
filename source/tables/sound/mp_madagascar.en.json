@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ad1973cf7211cb7c2f78ceb94160ece5ca59a4994054985afd743384f840d648
-size 638
+{
+    "name": "mp_madagascar.en",
+    "zone": "mp_madagascar",
+    "gameLanguage": "english",
+    "soundLanguage": "en",
+    "nameHash": "#mp_madagascar.en",
+    "patchZone": true,
+    "alias": [],
+    "duck": [],
+    "ambients": [],
+    "scriptIdLookups": [],
+    "streamKeysSABL": {
+        "streamKey1": "#mp_madagascar_en_stream",
+        "dataSize1": 2048,
+        "fileKey": "#mp_madagascar_en_loaded",
+        "fileLen": 2048
+    },
+    "streamKeysSABS": {
+        "streamKey1": "#hash_5d7f2cead10e9bf4",
+        "dataSize1": 2048,
+        "fileKey": "#hash_306b5980b744ee91",
+        "fileLen": 2048
+    }
+}

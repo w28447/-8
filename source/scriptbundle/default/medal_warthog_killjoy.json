@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d180fe5ced19446f90f1e03b300e6241b52c3ed76d9402e08670fb9d9916e63a
-size 407
+{
+    "description": "localized17#medal/warthog_killjoy_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_warthog_killjoy",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_destroy_warthog",
+    "stringref": "localized17#medal/warthog_killjoy",
+    "iconlarge": "image#ui_icon_medal_destroy_warthog_large"
+}

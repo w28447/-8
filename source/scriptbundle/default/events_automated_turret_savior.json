@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:38b2263c6308443aefa0591042bd887b5a599747a631d5951b2b54b07cb717c1
-size 285
+{
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
+    "widget": "BadasseryMedal",
+    "name": "events_automated_turret_savior",
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_5811ad68c867dbfc",
+    "iconlarge": "image#hash_5811ad68c867dbfc"
+}

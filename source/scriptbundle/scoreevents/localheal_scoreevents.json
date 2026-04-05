@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:130f277f2395ee7daf54c9ba9b335ae2d3191a8dee0ca3e1f686326f2ba75518
-size 527
+{
+    "tak5_multikill_2": "#tak5_multikill_2",
+    "tak5_multikill_2": "#tak5_multikill_2",
+    "stim_kill": "#stim_kill",
+    "configstringfiletype": "scriptbundle",
+    "type": "scoreevents",
+    "stim_activate_stim": "#stim_activate_stim",
+    "vmtype": "both",
+    "tak5_multikill_2": "#tak5_multikill_2",
+    "name": "localheal_scoreevents",
+    "customsettingstype": "ability",
+    "tak5_multikill_2": "#tak5_multikill_2",
+    "tak5_shutdown": "#tak5_shutdown",
+    "tak5_multikill_2": "#tak5_multikill_2"
+}

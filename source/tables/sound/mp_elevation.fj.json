@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2bf6da325f678ebb51a447959455c01033fe941a91f872bb2b642739a700871e
-size 639
+{
+    "name": "mp_elevation.fj",
+    "zone": "mp_elevation",
+    "gameLanguage": "japanese_full",
+    "soundLanguage": "fj",
+    "nameHash": "#mp_elevation.fj",
+    "patchZone": true,
+    "alias": [],
+    "duck": [],
+    "ambients": [],
+    "scriptIdLookups": [],
+    "streamKeysSABL": {
+        "streamKey1": "#mp_elevation_fj_stream",
+        "dataSize1": 2048,
+        "fileKey": "#mp_elevation_fj_loaded",
+        "fileLen": 2048
+    },
+    "streamKeysSABS": {
+        "streamKey1": "#hash_7dd5d9472b0a0854",
+        "dataSize1": 2048,
+        "fileKey": "#hash_50c205dd11405af1",
+        "fileLen": 2048
+    }
+}

@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:37b510708ede387ab196429a80af4a9732634074d2315bd8cb74725a146d9bd1
-size 826
+{
+    "itemlist": [
+        {
+            "minweight": 3,
+            "itementry": "scriptbundle&gear_list_good",
+            "maxweight": 7,
+            "available": -1
+        },
+        {
+            "minweight": 20,
+            "itementry": "scriptbundle&gear_list_med",
+            "maxweight": 20,
+            "available": -1
+        },
+        {
+            "minweight": 55,
+            "itementry": "scriptbundle&gear_list_low",
+            "maxweight": 55,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 3,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "ghosttown_list_gear",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0788d9629b77fd76cf74aaae7040fd2db885d582e05cb29fb2a96e6dc932b3f3
-size 407
+{
+    "hinttext": "localized17#menu/ingame_team_change_hint",
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "allow_ingame_team_change",
+    "displayname": "localized17#menu/ingame_team_change",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "allowInGameTeamChange",
+    "isenableddisabled": 1
+}

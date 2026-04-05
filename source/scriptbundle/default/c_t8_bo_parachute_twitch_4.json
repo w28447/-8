@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:66fcc2de7d27aee27c637009818305b50a702b88de77138e6eabb4f2a117794c
-size 245
+{
+    "name": "c_t8_bo_parachute_twitch_4",
+    "parachute": "weapon#parachute_wz",
+    "icon": "loot_ui_icon_jumppacks_parachute_twitch_4",
+    "largeicon": "loot_ui_icon_jumppacks_parachute_twitch_4_large",
+    "parachutelit": "model#"
+}

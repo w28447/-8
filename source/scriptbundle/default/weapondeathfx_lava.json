@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3fac82b737fbbb96750e0e2a157f36b7777952fdb90371189b5e14d22ce8e674
-size 502
+{
+    "lootid": "#hash_3da862048f79db96",
+    "hash_376e4c8520f9f079:hash_904b37bc": "impact_fx_table#hash_376e4c8520f9f079",
+    "image": "loot04_ui_icon_blackmarket_reserves_death_fx_lava",
+    "name": "weapondeathfx_lava",
+    "displayname": "localized17#hash_256cae539ffe6011",
+    "icon": "loot04_ui_icon_cac_death_fx_lava",
+    "hash_7b6117d6d90b6b59:hash_eeb78b92": "impact_fx_table#hash_7b6117d6d90b6b59",
+    "previewimage": "image#loot04_ui_icon_blackmarket_reserves_death_fx_lava"
+}

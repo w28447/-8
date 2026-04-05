@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3523d842e0a5126006ec6316a9b067181584fb3ee86205dc789961bd8e4206ae
-size 189
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "scoreevents",
+    "vmtype": "both",
+    "name": "shock_rifle_shock_scoreevents",
+    "customsettingstype": "status effect"
+}

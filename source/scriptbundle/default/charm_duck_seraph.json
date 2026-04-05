@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8aaf92d6a2cde7f2d50b05acf52a186be0acda5742e8aade7bd95620ff909698
-size 360
+{
+    "lootid": "#charm_duck_seraph",
+    "hash_ff3063df": "model#",
+    "image": "ui_icon_weapon_charms_duck_seraph",
+    "name": "charm_duck_seraph",
+    "displayname": "localized17#hash_5d6a837091f6ae5a",
+    "icon": "ui_icon_weapon_charms_duck_seraph",
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_duck_seraph"
+}

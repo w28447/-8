@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5a0a6a8d7db6cc7ca3176e3be7a5e87d1c5920dfe938a9591d25d7bf3edd54e7
-size 400
+{
+    "description": "localized17#hash_76acfae8a597f2f7",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_spectre_blade_multikill_2",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_whirlwind",
+    "stringref": "localized17#hash_4bac34c02176b4cd",
+    "iconlarge": "image#ui_icon_medal_whirlwind_large"
+}

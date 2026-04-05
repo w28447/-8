@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:74f7bcb6c6a006e44b1d29995c96e852234cbbdbf190e90ac68ddf0025280485
-size 332
+{
+    "name": "#loot_emote_shared_van_dance",
+    "type": "#gesture",
+    "gesture": "#boast_van_dance",
+    "gesture2": "#boast_van_dance_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/van_dance",
+        "icon": "image#ui_icon_emotes_s2_van_dance",
+        "isdefault": 0
+    }
+}

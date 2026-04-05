@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:95ee2c8bec55d6d467b14af121440a037f6ca8196b6abf608fc9b3d0528b1f4f
-size 323
+{
+    "configstringfiletype": "scriptbundle",
+    "hash_ce9b2d06": "gsol_zm_health",
+    "type": "gamesettingoptioncategory",
+    "name": "gsoc_zm_health",
+    "hash_40c3c9f045a1912d:hash_dea17465": "localized17#hash_40c3c9f045a1912d",
+    "hash_543992bcee32bf93:hash_608158f2": "localized17#hash_543992bcee32bf93"
+}

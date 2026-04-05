@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:063792bcc1900d8ec92b0aacff4fe4d6c34a4e12afb04a62e9704bbb89645e59
-size 202
+{
+    "dart_kill": "#dart_kill",
+    "configstringfiletype": "scriptbundle",
+    "type": "scoreevents",
+    "vmtype": "both",
+    "name": "dart_scoreevents",
+    "customsettingstype": "ability"
+}

@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:138f68c7fcfc94aade1d03d2569ae4c43264305e8477de715bf893abccd5db6f
-size 566
+{
+    "descriptionimage": "image#ui_icon_equipment_emp_grenade",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "equipment_empgrenade_restriction",
+    "displayname": "localized17#weapon/eq_emp_grenade",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__eq_emp_grenade__restricted",
+    "isenableddisabled": 0
+}

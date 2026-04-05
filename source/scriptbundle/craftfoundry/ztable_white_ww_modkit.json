@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:43ce331e0e3cdee643a6f1e07f07ea3b9ee5bf547c204a17ace045d6a56c7425
-size 244
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "craftfoundry",
+    "blueprintcount": 1,
+    "blueprint01": "scriptbundle&zblueprint_white_ww_modkit",
+    "name": "ztable_white_ww_modkit",
+    "displayname": "WW Modkit Table"
+}

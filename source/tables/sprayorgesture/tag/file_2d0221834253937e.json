@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:68942107ced147de0dd6acb6cb4523d25d31529a1e7630d9c4252b1dbdc8f20a
-size 295
+{
+    "name": "#hash_2d0221834253937e",
+    "type": "#tag",
+    "material": "#hash_64c96eeaaea7f55a",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_3883819a0fc98d13",
+        "icon": "image#loot_ui_icon_tags_cutemonsters_03",
+        "isdefault": 0
+    }
+}

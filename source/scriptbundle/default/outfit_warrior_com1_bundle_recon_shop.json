@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:741d7676cf5f3ca9522aee8d88196429525b88f3b8487267e39a70c7430c208e
-size 228
+{
+    "nametext": "localized17#hash_14f2f1a82c766a8f",
+    "name": "outfit_warrior_com1_bundle_recon_shop",
+    "desctext": "localized17#hash_5d8932596e241d6b",
+    "heroes/recon:hash_975cc0d1": "localized17#heroes/recon"
+}

@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:19af792554a6bdaf25a4366ab7077cafa2ec2b5c03925051e46f2e59e040ed2d
-size 129
+{
+    "hash_2dcbefcc6fadbca7:hash_6c274f86": "image#hash_2dcbefcc6fadbca7",
+    "name": "outfit_global_warpaint_bundle_fern"
+}

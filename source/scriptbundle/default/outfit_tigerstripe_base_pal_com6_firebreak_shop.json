@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ccc952b313982750fd4e88cddbf44ace9e32ffd76c64e52525e6973c652e8086
-size 142
+{
+    "hash_26b89c404ee1c020:hash_6c274f86": "image#hash_26b89c404ee1c020",
+    "name": "outfit_tigerstripe_base_pal_com6_firebreak_shop"
+}

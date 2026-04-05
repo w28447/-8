@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:59985c3e9496613fe66b79b87d15527ac58f9c7936499317012fef867e661c0b
-size 397
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_killcounter_ar_damage_restriction",
+    "displayname": "localized17#weapon/ar_damage_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__ar_damage_t8__attachments__killcounter",
+    "isenableddisabled": 0
+}

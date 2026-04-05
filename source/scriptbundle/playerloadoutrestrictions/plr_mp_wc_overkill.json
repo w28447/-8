@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:09bc0fffd5061e8f737ff77127b1909c52d5ef3b774d522a442fde583176b08b
-size 404
+{
+    "hash_ab1984e9": -1,
+    "hash_934131b6": 0,
+    "configstringfiletype": "scriptbundle",
+    "numprimaryweapons": 1,
+    "hash_882b6b71": 0,
+    "type": "playerloadoutrestrictions",
+    "hash_355c3581": 0,
+    "name": "plr_mp_wc_overkill",
+    "bonuscard_overkill": "#bonuscard_overkill",
+    "hash_25a22f4": 0,
+    "hash_cd3db98c": 0,
+    "hash_a2ef45f8": 0,
+    "hash_c3fc8c73": 0
+}

@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2578e3889de443807b399ca496a055cc4661aa44bf13d5eac0bc1d31014f7b3b
-size 182
+{
+    "loot02_ui_icon_blackmarket_itemshop_camo_dlc1_roadhouse:hash_6c274f86": "image#loot02_ui_icon_blackmarket_itemshop_camo_dlc1_roadhouse",
+    "name": "camo_dlc1_roadhouse"
+}

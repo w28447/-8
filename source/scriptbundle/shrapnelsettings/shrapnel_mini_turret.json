@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a55a15e78ce42c0eacd17c471477934194a00a8b2c3b90e75766fc32053a5019
-size 367
+{
+    "hash_8bd09e10": 224,
+    "configstringfiletype": "scriptbundle",
+    "hash_41be15d0": 64,
+    "type": "shrapnelsettings",
+    "hash_49bb6ce5": 201,
+    "xmultiplier": 4,
+    "vmtype": "both",
+    "hash_fbc3b297": 5,
+    "name": "shrapnel_mini_turret",
+    "hash_ae9c702e": 4,
+    "hash_2790072b": 75,
+    "shrapnelfx": "fx#hash_66478d394cf5596d"
+}

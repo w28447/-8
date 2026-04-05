@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3c76f0873b22b6a5dd1419fc03cac2d020c0869edc0dde081b6879c67d1ba257
-size 663
+{
+    "itemlist": [
+        {
+            "minweight": 500,
+            "itementry": "scriptbundle&firing_range_list_items_dlc1",
+            "maxweight": 500,
+            "available": -1
+        },
+        {
+            "minweight": 32,
+            "maxweight": 55,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 128,
+    "type": "itemspawnlist",
+    "hash_345eba59": 2,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "firing_range_list_item_default_dlc1",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

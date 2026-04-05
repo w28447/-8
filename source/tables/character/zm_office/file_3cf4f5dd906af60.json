@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1c60109e36216115bb12424cab72f8a3e2eb95315276c91f67e8f6f2e6170b19
-size 186
+{
+    "name": "#hash_3cf4f5dd906af60",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "body": "#c_zom_der_dempsey_mpc_fb"
+}

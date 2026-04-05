@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9200e15ff9eb4ecd2410d84154246bab680717e01bd5f5ed7c0160aed37b8d6b
-size 223
+{
+    "name": "#hash_2bdf3d983cc69ab3",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "body": "#hash_2234f330d7ed502a",
+    "head": "#hash_237c4fc3c7b75e12"
+}

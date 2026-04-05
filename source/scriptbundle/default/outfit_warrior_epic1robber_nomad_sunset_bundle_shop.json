@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:57655e4627945b8303deb65213597c7a4d354395761c8f59c0db54ccc84adfe0
-size 254
+{
+    "hash_6c2a5b0dda1c2f0f:hash_6c274f86": "image#hash_6c2a5b0dda1c2f0f",
+    "nametext": "localized17#hash_2af17aa72622530e",
+    "name": "outfit_warrior_epic1robber_nomad_sunset_bundle_shop",
+    "desctext": "localized17#hash_3d862ad13069649c"
+}

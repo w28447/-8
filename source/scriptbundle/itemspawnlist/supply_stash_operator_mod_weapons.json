@@ -1,3 +1,98 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fe674c933c3e5e176f1d1eb36724953acdd0dee37219d09cf77e6648970f0be1
-size 3392
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&ar_fastfire_t8_operator_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&ar_stealth_t8_operator_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&tr_longburst_t8_operator_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&tr_midburst_t8_operator_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&tr_powersemi_t8_operator_item",
+            "childitementry_1": "scriptbundle&ammo_type_762_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&sniper_fastrechamber_t8_operator_item",
+            "childitementry_1": "scriptbundle&ammo_type_338_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&sniper_quickscope_t8_operator_item",
+            "childitementry_1": "scriptbundle&ammo_type_338_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&lmg_spray_t8_operator_item",
+            "childitementry_1": "scriptbundle&ammo_type_556_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&lmg_standard_t8_operator_item",
+            "childitementry_1": "scriptbundle&ammo_type_762_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&smg_accurate_t8_operator_item",
+            "childitementry_1": "scriptbundle&ammo_type_45_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&smg_fastfire_t8_operator_item",
+            "childitementry_1": "scriptbundle&ammo_type_45_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&pistol_revolver_t8_operator_item",
+            "childitementry_1": "scriptbundle&ammo_type_45_item",
+            "maxweight": 100,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 12,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "supply_stash_operator_mod_weapons",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

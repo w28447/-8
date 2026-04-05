@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:333803a7256f62b3b3352b8c7ca0862bdb9c01bf11c947ffc27fa97dcc43f84c
-size 531
+{
+    "hinttext": "localized17#menu/prematch_timer_hint",
+    "configstringfiletype": "scriptbundle",
+    "value2": "15",
+    "value3": "30",
+    "value1": "5",
+    "value4": "45",
+    "value5": "60",
+    "type": "gamesettings",
+    "label": "localized17#menu/x_seconds",
+    "hash_5a6dee5a": 0,
+    "name": "prematch_period",
+    "displayname": "localized17#menu/prematch_timer",
+    "hash_54e336e4": 0,
+    "optionscount": 5,
+    "hash_765cfd09": 0,
+    "setting": "prematchperiod",
+    "isenableddisabled": 0
+}

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:25b60333fd2b3c82785820e538633f4a1c3a1dc8fc393ecd106f58bf9825ff2d
-size 231
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "finisherbundle",
+    "victim_gesture": "gesture#hash_76c2cf1fe463c55e",
+    "name": "finisher_knee_to_face",
+    "attacker_gesture": "gesture#hash_2327dc51f099dde5"
+}

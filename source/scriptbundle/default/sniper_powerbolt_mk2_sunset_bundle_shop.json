@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bcb3a2b6e05f2cc70d1f9589e9e30880e113788f68d567b3df4e76a253f38eaa
-size 373
+{
+    "detailsicon": "image#loot07_ui_icon_blackmarket_itemdetail_mk2_paladin",
+    "loot07_ui_icon_blackmarket_itemshop_mk2_paladin:hash_6c274f86": "image#loot07_ui_icon_blackmarket_itemshop_mk2_paladin",
+    "nametext": "localized17#hash_76801161d67ae0f5",
+    "name": "sniper_powerbolt_mk2_sunset_bundle_shop",
+    "desctext": "localized17#hash_2a44d44810c0948a"
+}

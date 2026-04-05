@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:019512e05e2e97f37b93b6175d6ef0f7dca5bfee91e136faaccd0bde0ba44ee8
-size 183
+{
+    "name": "#gsol_zm_barricades",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#zm_doorstate",
+        "#gamesettings/#zm_barricadestate"
+    ]
+}

@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3e11acd4bb732efacfb974c3721c0bcd476059f4ac5deb77498d9c8d7ee78279
-size 906
+{
+    "name": "#gsol_mp_elo_restriction",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#scope_elo_ar_fastfire_restriction",
+        "#gamesettings/#scope_elo_ar_modular_restriction",
+        "#gamesettings/#scope_elo_ar_stealth_restriction",
+        "#gamesettings/#scope_elo_lmg_spray_restriction",
+        "#gamesettings/#scope_elo_pistol_burst_restriction",
+        "#gamesettings/#scope_elo_shotgun_pump_restriction",
+        "#gamesettings/#scope_elo_smg_capacity_restriction",
+        "#gamesettings/#scope_elo_smg_fastburst_restriction",
+        "#gamesettings/#scope_elo_smg_fastfire_restriction",
+        "#gamesettings/#scope_elo_smg_handling_restriction",
+        "#gamesettings/#scope_elo_smg_standard_restriction",
+        "#gamesettings/#scope_elo_sniper_quickscope_restriction",
+        "#gamesettings/#scope_elo_tr_midburst_restriction"
+    ]
+}

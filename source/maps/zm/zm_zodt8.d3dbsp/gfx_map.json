@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:42d2348236e127aae06668f0228e5c64db5b2ac4011f854799dfaceed8e7a44c
-size 336
+{
+    "name": "#maps/zm/zm_zodt8.d3dbsp",
+    "baseName": "zm_zodt8",
+    "lutMaterial": "#mtl_lut_zm_zodt8",
+    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "unk550": [
+        "#img_trim_lut_zm_zodt8",
+        "#img_trim_lut_zm_zodt8",
+        "#img_trim_lut_zm_zodt8",
+        "#img_trim_lut_zm_zodt8"
+    ]
+}

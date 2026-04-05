@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:63f0fb3178bbd5b240c45f076fee2df3257c89f9fc5eab9d3a744889815d27eb
-size 359
+{
+    "name": "#loot_emote_exotic_shared_spike_football",
+    "type": "#gesture",
+    "gesture": "#boast_spike_football",
+    "gesture2": "#boast_spike_football_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/touchdown",
+        "icon": "image#ui_icon_emotes_s2_spike_football",
+        "isdefault": 0
+    }
+}

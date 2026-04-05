@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:81d576f6549b70ab13046d6fde5f3e9b9c0dc550e2ab7cf82049c030221c60d6
-size 710
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&resource_item_paint",
+            "maxweight": 1,
+            "available": 100
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&resource_item_paint",
+            "maxweight": 1,
+            "available": 72
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 600,
+    "type": "itemspawnlist",
+    "hash_345eba59": 2,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 1,
+    "name": "wz_escape_resource_item_paint_list",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

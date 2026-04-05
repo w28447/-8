@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:97eb6500f5e544886cf7452a62b7d2cd02cfccffbfc234c1b8ffcdffa6eeb49d
-size 344
+{
+    "name": "#loot_emote_exotic_shared_mistletoe",
+    "type": "#gesture",
+    "gesture": "#boast_mistletoe",
+    "gesture2": "#boast_mistletoe_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#hash_4e0822d62e840995",
+        "icon": "image#ui_icon_emotes_s2_mistletoe",
+        "isdefault": 0
+    }
+}

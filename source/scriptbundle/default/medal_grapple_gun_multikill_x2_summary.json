@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:68d8702c6f9f121af99ed7dcabe019dcfc59de5212504b8f52634acc8ba7a65a
-size 411
+{
+    "description": "localized17#hash_6f47e5d6235e2efe",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_grapple_gun_multikill_x2_summary",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_cominginhot",
+    "stringref": "localized17#hash_10d6cf489450cb46",
+    "iconlarge": "image#ui_icon_medal_cominginhot_large"
+}

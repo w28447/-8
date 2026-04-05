@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5d2ad7ee0c3c5b84a5cc934140135da32fca8c87456442d4e92de6aa8cd88f57
-size 235
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "craftfoundry",
+    "blueprintcount": 1,
+    "blueprint01": "scriptbundle&zblueprint_trap_hellpools",
+    "name": "ztable_traps_hellpool",
+    "displayname": "Hellpool"
+}

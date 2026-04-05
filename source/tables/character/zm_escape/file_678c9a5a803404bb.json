@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:886c97449b465a27567041fe36e7ae8f2a4ed39d0123d17cf1626122574dc809
-size 233
+{
+    "name": "#hash_678c9a5a803404bb",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "fxDef": "#fxd8_zm_char_ghost_body",
+    "body": "#c_t8_zmb_mob_ghoul_body3_rob"
+}

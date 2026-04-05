@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bb9c562c9f161c4c844aa02abc01d408daef30a5e52e577d7e010fba034748cf
-size 429
+{
+    "backingsmall": "image#t7_hud_medal_backing_specialist_killjoy",
+    "widget": "BadasseryMedal",
+    "name": "t7_hud_medal_kill_enemy_that_pulsed_you",
+    "backinglarge": "image#t7_hud_medal_backing_specialist_killjoy_lrg",
+    "iconsmall": "image#t7_hud_medal_kill_enemy_that_pulsed_you",
+    "stringref": "localized17#hash_78c3093a38bc1b6c",
+    "iconlarge": "image#t7_hud_medal_kill_enemy_that_pulsed_you_lrg"
+}

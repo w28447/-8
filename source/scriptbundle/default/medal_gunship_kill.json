@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fb9001c9a01f6ec244dffe37ceba1a1e89399b5a39b9c97144ed130e05831f00
-size 398
+{
+    "description": "localized17#medal/gunship_kill_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_gunship_kill",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_dead_from_above",
+    "stringref": "localized17#medal/gunship_kill",
+    "iconlarge": "image#ui_icon_medal_dead_from_above_large"
+}

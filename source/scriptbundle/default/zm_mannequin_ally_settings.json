@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a1832be7daa07fee044b3d49d8b1eaf39f40c6f9e7990350700c1e1ad56888a8
-size 402
+{
+    "hash_10460f1e": 0,
+    "configstringfiletype": "scriptbundle",
+    "maxhealth": 100,
+    "instakilldamagescale": 1,
+    "name": "zm_mannequin_ally_settings",
+    "minhealth": 100,
+    "weakpointdamagescale": 1,
+    "hash_250a1683": 100,
+    "hash_97b22faa": 1,
+    "damagescale": 1,
+    "category": "#basic",
+    "hash_854eebd": 0,
+    "stunduration": 0,
+    "animationspeed": 1
+}

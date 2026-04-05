@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:00637cbd655c54ad7696766571b7d99ef37d58ffeca1feeb0f57c6c72ba8cb1a
-size 517
+{
+    "hash_2703f9fb7e481f6d:hash_c7bd8867": "localized17#hash_2703f9fb7e481f6d",
+    "popupimage": "image#ui_icon_weapon_ar_damage_mk2_render",
+    "ui_icon_weapon_ar_damage_mk2_render": "image#ui_icon_weapon_ar_damage_mk2_render",
+    "nametext": "localized17#hash_3985f2f816999c75",
+    "categorytext": "localized17#mpui/bm_bribe",
+    "name": "loot_ar_damage_mk2_bribe",
+    "desctext": "localized17#hash_7fea29adb337db5f",
+    "hash_3985f2f816999c75:hash_c1acffb6": "localized17#hash_3985f2f816999c75"
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9c4a55d2719b44fb6072c0f08b8f191c49fa04f760edab7195eb40ca7854de77
-size 393
+{
+    "hash_10460f1e": 0,
+    "configstringfiletype": "scriptbundle",
+    "maxhealth": 100,
+    "instakilldamagescale": 1,
+    "name": "zm_bat_settings",
+    "minhealth": 100,
+    "weakpointdamagescale": 1,
+    "hash_250a1683": 100,
+    "hash_97b22faa": 1,
+    "damagescale": 1,
+    "category": "#popcorn",
+    "hash_854eebd": 0,
+    "stunduration": 0,
+    "animationspeed": 1
+}

@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ffcc4d990ce72469123b9c7eca781f98186af8b02b93f3d145ff8e9b0128a929
-size 323
+{
+    "name": "#maps/zm/zm_red.d3dbsp",
+    "baseName": "zm_red",
+    "lutMaterial": "#luts_t7_default",
+    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "unk550": [
+        "#img_trim_lut_zm_red",
+        "#img_trim_lut_zm_red",
+        "#img_trim_lut_zm_red",
+        "#img_trim_lut_zm_red"
+    ]
+}

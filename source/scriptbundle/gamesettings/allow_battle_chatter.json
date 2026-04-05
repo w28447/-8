@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9f4692db34c2c8869bdaf8623c0d1d7f1f0678085a520c7c16929e379e59fab5
-size 390
+{
+    "hinttext": "localized17#menu/battlechatter_hint",
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "allow_battle_chatter",
+    "displayname": "localized17#menu/battlechatter",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "allowBattleChatter",
+    "isenableddisabled": 1
+}

@@ -1,3 +1,51 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0fda1c381c6dddb677796962c490308bf3b562a77366cda9bd3dba41b8ab239a
-size 1450
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&motorcycle_wz_vehicle_dark_grey",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&motorcycle_wz_vehicle_light_grey",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&motorcycle_wz_vehicle_metal_grey",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&motorcycle_wz_vehicle_olive",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&motorcycle_wz_vehicle_tan",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&motorcycle_wz_vehicle_white",
+            "maxweight": 1,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 4000,
+    "type": "itemspawnlist",
+    "hash_345eba59": 6,
+    "vehiclespawner": 1,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 1,
+    "name": "vehicle_list_motorcycle_wz",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

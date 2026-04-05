@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7fe7cfc3e28bb4a6a7db33f4e4574b0b0d079ca4ea2272d77f5135b31c5f10e3
-size 135
+{
+    "hash_3af68839cc9e024d:hash_6c274f86": "image#hash_3af68839cc9e024d",
+    "name": "outfit_splinter_base_pal_com6_crash_shop"
+}

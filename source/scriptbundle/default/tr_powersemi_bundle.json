@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:13f36397cc9a93ed107cd32fda4ba0c1c767f7f2c8ee4622e4e20cdb8ee0a62a
-size 506
+{
+    "buttonimage": "image#ui_icon_blackmarket_promos_auger_button_small",
+    "popupimage": "image#ui_icon_blackmarket_promos_auger_large_preview",
+    "nametext": "localized17#hash_29755dff3363137e",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
+    "name": "tr_powersemi_bundle",
+    "desctext": "localized17#hash_7a25c68e19a680ce",
+    "previewimage": "image#ui_icon_blackmarket_promos_auger_item_detail",
+    "reserveimage": "image#ui_icon_blackmarket_promos_auger_button_large"
+}

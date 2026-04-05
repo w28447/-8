@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:17732ab0b91abd081d944e91ce144ed6434eda91ff4bbc4bb8f36a5e7e557c48
-size 1043
+{
+    "uniqueID": 7,
+    "nameStr": "ztcm_mansion",
+    "unk8": "ztcm_mansion",
+    "baseGameType": "ztcm",
+    "groupName": "ztcm",
+    "scoreInfoFile": "gamedata/tables/zm/scoreinfo/zm_scoreinfo_base.csv",
+    "name": "#ztcm_mansion",
+    "nameRef": "#hash_a0c874bb44f2179",
+    "nameRefCaps": "#hash_a0c874bb44f2179",
+    "descriptionRef": "#hash_a0c874bb44f2179",
+    "baseGameTypeHash": "#ztcm_mansion",
+    "isHardcoreAvailable": false,
+    "isTeamBased": false,
+    "hideHudScore": false,
+    "image": "#ui_icon_gamemode_zm_treyarchmutations_large",
+    "unka8": 1,
+    "unkac": 1,
+    "bundle": {
+        "hash_e779605d": 1,
+        "hash_93590cb": 1,
+        "hash_470ee0da": 0,
+        "hash_4442cc93": 0,
+        "switchsides": 0,
+        "scoreboard_4": "score",
+        "scoreboard_5": "kills",
+        "scoreboard_1": "downs",
+        "scoreboard_2": "revives",
+        "scoreboard_3": "headshots",
+        "displayroundswitch": 1,
+        "displayroundend": 1,
+        "hash_e71fd632": 0
+    }
+}

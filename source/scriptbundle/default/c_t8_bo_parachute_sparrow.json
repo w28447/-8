@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:996d7aae918aefd8b7addb0be583e97256cf974d333fe2d76d6fe4560d6d73cd
-size 242
+{
+    "name": "c_t8_bo_parachute_sparrow",
+    "parachute": "weapon#parachute_wz",
+    "icon": "loot_ui_icon_jumppacks_parachute_sparrow",
+    "largeicon": "loot_ui_icon_jumppacks_parachute_sparrow_large",
+    "parachutelit": "model#"
+}

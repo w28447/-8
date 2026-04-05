@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:35726ae7226b853b9f84edea9d216dd35ce9512508810667671a1b040a1c1d7c
-size 392
+{
+    "name": "#hash_54c382e94429a878",
+    "type": "#gesture",
+    "gesture": "#boast_firebreak_dance",
+    "gesture2": "#boast_firebreak_dance_fem",
+    "bundle": {
+        "type": "#gesture",
+        "entitlement": "#hash_62f68e1583c62c6a",
+        "title": "localized18#emotes/firebreakin",
+        "icon": "image#ui_icon_emotes_firebreakdance",
+        "isdefault": 0
+    }
+}

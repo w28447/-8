@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:11ff98543b311fa93d9cebc9dc4860a12165e2866f9cecddb4467e94cb8e4f28
-size 183
+{
+    "name": "#c_t8_c_zom_avagadro",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 2,
+    "bodyImpactType": 2,
+    "body": "#c_t8_c_zom_avagadro_fb"
+}

@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:130a0270d9777605ebb3f895c0afb7b98d0f6961427230548a7f897d95ddfedc
-size 248
+{
+    "hash_41a3f668aeccea04:hash_6c274f86": "image#hash_41a3f668aeccea04",
+    "nametext": "localized17#hash_77dce7635423ba68",
+    "name": "camo_active_dlc1_cyberpunk_sunset_bundle_shop",
+    "desctext": "localized17#hash_35d6e1ddbf6fb3e9"
+}

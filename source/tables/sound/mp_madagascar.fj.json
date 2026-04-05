@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0c783f3338d8ba11a84f2790057c6cd8dab99fff60214590b40e30acd78628bc
-size 644
+{
+    "name": "mp_madagascar.fj",
+    "zone": "mp_madagascar",
+    "gameLanguage": "japanese_full",
+    "soundLanguage": "fj",
+    "nameHash": "#mp_madagascar.fj",
+    "patchZone": true,
+    "alias": [],
+    "duck": [],
+    "ambients": [],
+    "scriptIdLookups": [],
+    "streamKeysSABL": {
+        "streamKey1": "#mp_madagascar_fj_stream",
+        "dataSize1": 2048,
+        "fileKey": "#mp_madagascar_fj_loaded",
+        "fileLen": 2048
+    },
+    "streamKeysSABS": {
+        "streamKey1": "#hash_431d03278af930c5",
+        "dataSize1": 2048,
+        "fileKey": "#hash_4bc8cd72e7a622c0",
+        "fileLen": 2048
+    }
+}

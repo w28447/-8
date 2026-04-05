@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:80ff0d2e412137c8f22c027200d2ed73958b08ec1d2cc1b4a747ecc14fe49ce7
-size 325
+{
+    "name": "#maps/mp/mp_silo.d3dbsp",
+    "baseName": "mp_silo",
+    "lutMaterial": "#lut_mp_silo",
+    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "unk550": [
+        "#img_trim_lut_mp_silo",
+        "#img_trim_lut_mp_silo",
+        "#img_trim_lut_mp_silo",
+        "#img_trim_lut_mp_silo"
+    ]
+}

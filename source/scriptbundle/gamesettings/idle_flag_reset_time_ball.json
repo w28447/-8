@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e196728b0438557b8a9808878b931317ce4417429f25d72b0f158e48eda1da6d
-size 626
+{
+    "hinttext": "localized17#hash_5a8914dda1da4091",
+    "configstringfiletype": "scriptbundle",
+    "value2": "5",
+    "value3": "10",
+    "value1": "0",
+    "value6": "45",
+    "value7": "60",
+    "value4": "15",
+    "value5": "30",
+    "type": "gamesettings",
+    "label": "localized17#menu/x_seconds",
+    "hash_5a6dee5a": 0,
+    "name": "idle_flag_reset_time_ball",
+    "displayname": "localized17#hash_1122d81521503c7",
+    "label1": "localized17#menu/instant",
+    "hash_54e336e4": 0,
+    "optionscount": 7,
+    "hash_765cfd09": 0,
+    "setting": "idleFlagResetTime",
+    "isenableddisabled": 0
+}

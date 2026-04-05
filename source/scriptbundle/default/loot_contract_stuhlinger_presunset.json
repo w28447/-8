@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8627e6978361c13d19eb9aecf876ca34cfb6335aaeed495a34f0658b749579af
-size 652
+{
+    "contracticon": "image#loot06_ui_icon_blackmarket_contracts_stuhlinger",
+    "contracttitle": "localized17#menu/contract_stuhlinger",
+    "name": "loot_contract_stuhlinger_presunset",
+    "loot06_ui_icon_blackmarket_contracts_stuhlinger_itemdetail:hash_4b258f2c": "image#loot06_ui_icon_blackmarket_contracts_stuhlinger_itemdetail",
+    "contractdescription": "localized17#menu/blackout_character",
+    "white": "#white",
+    "loot06_ui_icon_blackmarket_contracts_stuhlinger_tall:hash_1c057e8c": "image#loot06_ui_icon_blackmarket_contracts_stuhlinger_tall",
+    "hash_74d15b181fda49b9:hash_e08fc162": "localized17#hash_74d15b181fda49b9"
+}

@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:808b42401720a219b84cf24eb6af588a9e7748313e16536e2dfcf7d8528dabe4
-size 245
+{
+    "nametext": "localized17#hash_61f8c357f10f74e1",
+    "name": "outfit_warrior_epic1_wetworks_recon_sunset_bundle_shop",
+    "desctext": "localized17#hash_2b7f2d614d161f1d",
+    "heroes/recon:hash_975cc0d1": "localized17#heroes/recon"
+}

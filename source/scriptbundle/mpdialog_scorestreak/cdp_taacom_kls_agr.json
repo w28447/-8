@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a48cb1dc641c00b05ef09d1b9f6bc37357ff2cf275c8c796759921e019c8c2e9
-size 226
+{
+    "destroyed": "#hash_5192fff1a9cf34ed",
+    "ready": "#hash_ace5cbb2f05aef9",
+    "configstringfiletype": "scriptbundle",
+    "type": "mpdialog_scorestreak",
+    "vmtype": "both",
+    "name": "cdp_taacom_kls_agr"
+}

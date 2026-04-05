@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c205fe4b0fe86d2c88d2ccb5ba5510d039391bf68fbb06bd257ce7a9a5c10240
-size 623
+{
+    "contracticon": "image#loot07_ui_icon_blackmarket_contracts_weaver",
+    "contracttitle": "localized17#hash_67e165c686d154cd",
+    "name": "loot_contract_grigori_weaver",
+    "loot07_ui_icon_blackmarket_contracts_weaver_itemdetail:hash_4b258f2c": "image#loot07_ui_icon_blackmarket_contracts_weaver_itemdetail",
+    "contractdescription": "localized17#menu/blackout_character",
+    "white": "#white",
+    "loot07_ui_icon_blackmarket_contracts_weaver_tall:hash_1c057e8c": "image#loot07_ui_icon_blackmarket_contracts_weaver_tall",
+    "hash_62c05d70bde3d2f7:hash_e08fc162": "localized17#hash_62c05d70bde3d2f7"
+}

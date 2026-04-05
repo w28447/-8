@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:960fa8de1bfb05762250aec9260aae49facc56528bbcb84d60056db202e67613
-size 373
+{
+    "detailsicon": "image#loot07_ui_icon_blackmarket_itemdetail_bundle_zombiearm",
+    "loot07_ui_icon_blackmarket_itemshop_bundle_zombiearm": "image#loot07_ui_icon_blackmarket_itemshop_bundle_zombiearm",
+    "nametext": "localized17#weapon/melee_zombiearm_t8",
+    "name": "melee_zombiearm_sunset_bundle_shop",
+    "desctext": "localized17#hash_4b902213e1369b7a"
+}

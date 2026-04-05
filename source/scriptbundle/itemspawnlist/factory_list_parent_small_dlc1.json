@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:789dbf7e8392577c0e618299581c024c501d8ab10f9ab6d5c0c34a919ec1d379
-size 552
+{
+    "itemlist": [
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&factory_list_item_default_small_dlc1",
+            "maxweight": 50,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 128,
+    "type": "itemspawnlist",
+    "hash_345eba59": 1,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "factory_list_parent_small_dlc1",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

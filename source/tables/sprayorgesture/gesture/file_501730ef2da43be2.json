@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e7ad4e1b33a0550fb17f5d7be5f6137b9097a2741fa22c58b9e235c7b819ab70
-size 332
+{
+    "name": "#hash_501730ef2da43be2",
+    "type": "#gesture",
+    "gesture": "#hash_4a0b62b78ef7b9f7",
+    "gesture2": "#hash_68b9c8dc0bd960c0",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/speed_demon",
+        "icon": "image#ui_icon_emotes_unicycle",
+        "isdefault": 0
+    }
+}

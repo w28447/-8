@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:44e94686dccc8fff4f63f70cc1057fa50057ec081dfda9ce906a25aa17b6ce4f
-size 281
+{
+    "detailsicon": "image#hash_2b48f6b8dbdd2fa5",
+    "hash_63f40573eafc5a84:hash_6c274f86": "image#hash_63f40573eafc5a84",
+    "nametext": "localized17#hash_26a03634ffff8b95",
+    "name": "tr_midburst_mk2_bundle_shop",
+    "desctext": "localized17#hash_1c08e1a81d65213f"
+}

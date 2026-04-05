@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:61472d9c2abe6a8a03b7c6dd58e19946a22a21e663104e18bd0f5f4f06b804f9
-size 424
+{
+    "description": "localized17#medal/hellstorm_missile_kill_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_hellstorm_missile_kill",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_raining_death",
+    "stringref": "localized17#medal/hellstorm_missile_kill",
+    "iconlarge": "image#ui_icon_medal_raining_death_large"
+}

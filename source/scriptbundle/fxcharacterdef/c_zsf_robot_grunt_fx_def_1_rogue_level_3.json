@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ef5292a01679d3f36b064fbdc7d4fc1f1b486bc9e316365d56728aeec7dff3a6
-size 1305
+{
+    "light/fx_light_robot_set_yellow:hash_b2353cab": "fx#light/fx_light_robot_set_yellow",
+    "effectcount": 10,
+    "light/fx_light_robot_set_blink_xlg_yellow": "fx#light/fx_light_robot_set_blink_xlg_yellow",
+    "electric/fx8_surge_short_robot": "fx#electric/fx8_surge_short_robot",
+    "hash_9cc4825d": "j_spine4",
+    "configstringfiletype": "scriptbundle",
+    "hash_702e93ea": "tag_light3",
+    "hash_e584ef2f": "head",
+    "type": "fxcharacterdef",
+    "light/fx_light_robot_set_yellow:hash_bd97e41e": "fx#light/fx_light_robot_set_yellow",
+    "light/fx_light_robot_set_lg_yellow:hash_70f592cb": "fx#light/fx_light_robot_set_lg_yellow",
+    "hash_c63a0367": "j_chest_door_dam",
+    "vmtype": "client",
+    "name": "c_zsf_robot_grunt_fx_def_1_rogue_level_3",
+    "hash_a0d91763": "tag_light1",
+    "light/fx_light_robot_set_yellow:hash_320e9190": "fx#light/fx_light_robot_set_yellow",
+    "light/fx_light_robot_set_lg_yellow:hash_c7a3c7dd": "fx#light/fx_light_robot_set_lg_yellow",
+    "light/fx_light_robot_set_yellow:hash_bae031ea": "fx#light/fx_light_robot_set_yellow",
+    "hash_edb57500": "tag_light2",
+    "hash_28d6463a": "head",
+    "hash_b0618344": "tag_light6",
+    "hash_743ecb88": "tag_light5",
+    "hash_434f4b19": "tag_light4",
+    "hash_97add4c7": "head"
+}

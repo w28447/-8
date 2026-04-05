@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:88b1dec287e9459e8d7689fd3020116f2cae3ca8248cb97ef7a6357125e11ecc
-size 432
+{
+    "description": "localized17#medal/prop_survived_entire_round_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_prop_survived_entire_round",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_plain_sight",
+    "stringref": "localized17#medal/prop_survived_entire_round",
+    "iconlarge": "image#ui_icon_medal_plain_sight_large"
+}

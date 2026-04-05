@@ -1,3 +1,52 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c42c6618cfd152db527977215e7fe9434839d0338f3a83f50c15880149f32d38
-size 1989
+{
+    "name": "#inventory_supplydrop_marker_mp",
+    "baseWeapon": "#inventory_supplydrop_marker",
+    "weapon70": "#supplydrop_marker",
+    "streamkey": "#hash_674e509d2dd441c7",
+    "worldModelTagRight": "tag_weapon_right",
+    "worldModelTagLeft": "tag_weapon_left",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_weapon_right",
+    "scrstr_11a4": "tag_inhand",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "MULTIPLAYER",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "firesound": "#wpn_grenade_throw",
+    "firesoundplayer": "#wpn_grenade_throw",
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "tunables1": "#supplydrop_marker_tunables_mp",
+    "weaponHeadObjective": "#hash_1b5a86007f598bbc",
+    "#hash_2e4a8800": "#swat_team_scoreevents",
+    "projectilemodel": "#wpn_t8_eqp_grenade_smoke_projectile",
+    "viewmodel": [
+        "#wpn_t8_eqp_grenade_smoke_view"
+    ],
+    "worldModel": [
+        "#wpn_t8_eqp_grenade_smoke_world"
+    ],
+    "gadgetIconAvailable": "#ui_icon_scorestreaks_swat",
+    "gadgetIconUnavailable": "#ui_icon_scorestreaks_swat",
+    "reticleSide": "#reticle_side_small",
+    "inventoryIconZm": "#ui_icon_scorestreaks_swat",
+    "hudIcon": "#hud_obit_crate",
+    "image_e90": "#ui_icon_obit_swatbuddy",
+    "image_1048": "#ui_icon_scorestreaks_carepackage",
+    "bounceImpactSounds": "#hash_c6d8f2152c519b03"
+}

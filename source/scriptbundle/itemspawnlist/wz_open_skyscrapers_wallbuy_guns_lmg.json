@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0b41a126dfc9568a300bdc9a5031e29929e30d68a066a0386a55bf8a46a1e145
-size 1056
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&lmg_double_t8_wallbuy_item",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&lmg_standard_t8_wallbuy_item",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&lmg_spray_t8_wallbuy_item",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "itementry": "scriptbundle&lmg_heavy_t8_wallbuy_item",
+            "maxweight": 1,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 4,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "wz_open_skyscrapers_wallbuy_guns_lmg",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

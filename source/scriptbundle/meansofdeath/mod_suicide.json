@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1174de9580deb932f3031f2126704e68a855d8366b0cbe71880759132b66d141
-size 292
+{
+    "mod": "MOD_SUICIDE",
+    "configstringfiletype": "scriptbundle",
+    "type": "meansofdeath",
+    "name": "mod_suicide",
+    "displayname": "localized17#ui/mod_suicide",
+    "icon": "image#ui_icon_meansofdeath_suicide",
+    "iconlarge": "image#ui_icon_meansofdeath_suicide_xl"
+}

@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:812f4643a748a2e598581f2a5e8354432e504212fcbf19e882b9a498ee07bb7e
-size 329
+{
+    "name": "#hash_5031bee2e7b8828b",
+    "type": "#gesture",
+    "gesture": "#hash_6600a7cd16cb76cd",
+    "gesture2": "#hash_528b556da5cd8086",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/blind_luck",
+        "icon": "image#hash_50916f1939f0b8e4",
+        "isdefault": 0
+    }
+}

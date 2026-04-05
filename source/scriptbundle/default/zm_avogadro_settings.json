@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b3bba36efc201a386a2d6531ed93e2ad81310856062ce1b3c517f83b622a19bc
-size 398
+{
+    "hash_10460f1e": 0,
+    "configstringfiletype": "scriptbundle",
+    "maxhealth": 1000,
+    "instakilldamagescale": 1,
+    "name": "zm_avogadro_settings",
+    "minhealth": 500,
+    "weakpointdamagescale": 1,
+    "hash_250a1683": 100,
+    "hash_97b22faa": 1,
+    "damagescale": 1,
+    "category": "#boss",
+    "hash_854eebd": 0.1,
+    "stunduration": 0,
+    "animationspeed": 1
+}

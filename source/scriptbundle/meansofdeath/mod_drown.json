@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8c15bbad1bfaf85af004d5c30c63f2069e996abd6bfc836f8401d6b25321055f
-size 286
+{
+    "mod": "MOD_DROWN",
+    "configstringfiletype": "scriptbundle",
+    "type": "meansofdeath",
+    "name": "mod_drown",
+    "displayname": "localized17#ui/mod_drown",
+    "icon": "image#ui_icon_meansofdeath_drowned",
+    "iconlarge": "image#ui_icon_meansofdeath_drowned_xl"
+}

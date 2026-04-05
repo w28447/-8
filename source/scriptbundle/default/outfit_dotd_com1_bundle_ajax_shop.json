@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:57c81d9733b41dee9be60aac55d6eccaece964769c574c2b0f34b39399ae344f
-size 232
+{
+    "nametext": "localized17#hash_4c2f0bb2c4954e",
+    "name": "outfit_dotd_com1_bundle_ajax_shop",
+    "desctext": "localized17#hash_5d8932596e241d6b",
+    "heroes/swatpolice:hash_975cc0d1": "localized17#heroes/swatpolice"
+}

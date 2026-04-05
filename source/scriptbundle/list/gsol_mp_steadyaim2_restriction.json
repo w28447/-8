@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9246e15e63038687ff912d62e3c9df91b4f1b2f45963e2036ed5d3ebbec7ce9c
-size 632
+{
+    "name": "#gsol_mp_steadyaim2_restriction",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_steadyaim2_ar_fastfire_restriction",
+        "#gamesettings/#attachment_steadyaim2_lmg_spray_restriction",
+        "#gamesettings/#attachment_steadyaim2_pistol_burst_restriction",
+        "#gamesettings/#attachment_steadyaim2_shotgun_semiauto_restriction",
+        "#gamesettings/#attachment_steadyaim2_smg_fastfire_restriction",
+        "#gamesettings/#attachment_steadyaim2_sniper_quickscope_restriction",
+        "#gamesettings/#attachment_steadyaim2_tr_midburst_restriction"
+    ]
+}

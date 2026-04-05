@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:25d7c5f35763a2fc0514198267d2cc21e1b3b22d45c7984e3c9eba511153beec
-size 309
+{
+    "mod": "MOD_TRIGGER_HURT",
+    "configstringfiletype": "scriptbundle",
+    "type": "meansofdeath",
+    "name": "mod_trigger_hurt",
+    "displayname": "localized17#hash_2b01f6e0ab206ffd",
+    "icon": "image#ui_icon_meansofdeath_suicide",
+    "iconlarge": "image#ui_icon_meansofdeath_suicide_xl"
+}

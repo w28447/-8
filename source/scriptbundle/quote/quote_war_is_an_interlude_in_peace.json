@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4875cce717b9ac069176ed840656786c69edab82baedc1c890e0ded181948283
-size 224
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_war_is_an_interlude_in_peace",
+    "quote": "localized17#hash_2b56530f4d8d8af8",
+    "author": "localized17#hash_3c90e2e4cc909a7b"
+}

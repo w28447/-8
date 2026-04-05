@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1333de72781975bef7d017aa5a86b13c316adcd9e2f98ec587ea7b297c703c47
-size 332
+{
+    "name": "#loot_emote_exotic_shared_mic_drop",
+    "type": "#gesture",
+    "gesture": "#boast_mic_drop",
+    "gesture2": "#boast_mic_drop_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/mic_drop",
+        "icon": "image#ui_icon_emotes_mike_drop",
+        "isdefault": 0
+    }
+}

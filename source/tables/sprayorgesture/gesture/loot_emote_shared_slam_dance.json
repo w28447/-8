@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a6b6c3b6ee3c34e383cb354ef9b72076e6684ba60192bc4256ab8482209fe7a9
-size 337
+{
+    "name": "#loot_emote_shared_slam_dance",
+    "type": "#gesture",
+    "gesture": "#boast_slam_dance",
+    "gesture2": "#boast_slam_dance_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/war_moshine",
+        "icon": "image#ui_icon_emotes_s3_slamdance",
+        "isdefault": 0
+    }
+}

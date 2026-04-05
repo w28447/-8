@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aaeae780c66095685bab41e0ad3326b1489635b2c069184cbe686a4de40ff0ae
-size 402
+{
+    "hinttext": "localized17#menu/scorestreaks_hint",
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "loadout_killstreaks_enabled",
+    "displayname": "localized17#menu/scorestreaks",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "loadoutKillstreaksEnabled",
+    "isenableddisabled": 1
+}

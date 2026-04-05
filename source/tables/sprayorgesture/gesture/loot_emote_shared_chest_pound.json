@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8c708abeb84875ed412372db3c2bdc28723c70e28e6eaa6099a175e2cefca4e5
-size 339
+{
+    "name": "#loot_emote_shared_chest_pound",
+    "type": "#gesture",
+    "gesture": "#boast_chest_pound",
+    "gesture2": "#boast_chest_pound_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/unstoppable",
+        "icon": "image#ui_icon_emotes_chest_pound",
+        "isdefault": 1
+    }
+}

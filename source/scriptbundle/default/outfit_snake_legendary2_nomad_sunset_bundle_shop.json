@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:69f4f73b437a8885895f6e83521a355c297d37b0dfcfe0c206a7ce6bb14a07c7
-size 243
+{
+    "nametext": "localized17#hash_19d835c5116a6e61",
+    "name": "outfit_snake_legendary2_nomad_sunset_bundle_shop",
+    "desctext": "localized17#hash_2b7f2d614d161f1d",
+    "heroes/trapper:hash_975cc0d1": "localized17#heroes/trapper"
+}

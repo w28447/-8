@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a0459ed73da604f3bc2cbfde75510f3dc5db15911b46c834222517f1f76ff665
-size 337
+{
+    "lootid": "#charm_grenade",
+    "hash_ff3063df": "model#",
+    "image": "ui_icon_weapon_charms_grenade",
+    "name": "charm_grenade",
+    "displayname": "localized17#menu/charm_grenade",
+    "icon": "ui_icon_weapon_charms_grenade",
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_grenade"
+}

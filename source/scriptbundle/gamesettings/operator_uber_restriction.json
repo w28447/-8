@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:71802ef941ba2cb198a90a16ce5bd17f56fb22ce0eb456f7fda9ef7d16ea24ff
-size 519
+{
+    "descriptionimage": "image#$blacktransparent",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "operator_uber_restriction",
+    "displayname": "localized17#mpui/uber",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "attachmentRestrictions__uber",
+    "isenableddisabled": 0
+}

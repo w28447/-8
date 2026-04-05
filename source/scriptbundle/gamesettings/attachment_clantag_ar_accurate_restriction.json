@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3ae21c2e95701762668d071db4f8d5ee88a00731a3af53059d580761d87c9ac2
-size 395
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_clantag_ar_accurate_restriction",
+    "displayname": "localized17#weapon/ar_accurate_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__ar_accurate_t8__attachments__clantag",
+    "isenableddisabled": 0
+}

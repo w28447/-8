@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:376b56b1e3fb051109974d9de0dc1838f2795dc06854e9dc0103d117553610d6
-size 339
+{
+    "killcambackdist": 150,
+    "killcamtype": 4,
+    "type": "killcam",
+    "vmtype": "none",
+    "killcamgroundupdist": 25,
+    "name": "killcam_explosive_core",
+    "explosive": "localized17#explosive",
+    "killcamupdist": 10,
+    "killcamwallsidedist": 30,
+    "killcamwalloutdist": 10,
+    "killcamgroundbackdist": 50
+}

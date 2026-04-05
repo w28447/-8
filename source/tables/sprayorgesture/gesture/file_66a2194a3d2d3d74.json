@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d25449303d233c753c9ca8b3bbda0e793d3983e4cb52d061d8b2adb0f151cf29
-size 330
+{
+    "name": "#hash_66a2194a3d2d3d74",
+    "type": "#gesture",
+    "gesture": "#hash_670659a6b0e5feba",
+    "gesture2": "#hash_5558f4bb878c8ab5",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/take_a_knee",
+        "icon": "image#hash_6cba3d9dfc1e3ef7",
+        "isdefault": 0
+    }
+}

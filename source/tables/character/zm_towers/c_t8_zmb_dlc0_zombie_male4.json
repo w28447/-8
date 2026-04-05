@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7a263a37d6d7dc50e42ef6c4f4e9f4ffbb6e8e444c9fdb7fe0571b864279c6e7
-size 1050
+{
+    "name": "#c_t8_zmb_dlc0_zombie_male4",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 2,
+    "bodyImpactType": 2,
+    "destructibleDef": "#c_t8_zmb_dlc0_zombie_male4_dst_def",
+    "gibDef": "#c_t8_zmb_dlc0_zombie_male1_gib_def",
+    "fxDef": "#fxd8_zm_char_zombie_base_body",
+    "body": "#c_t8_zmb_dlc0_zombie_male_body4",
+    "headAlias": "#hash_3c1a5330b7a71c4e",
+    "hat": "#c_t8_zmb_dlc0_zombie_male_helmet1",
+    "damagedTorso_Clean": "#c_t8_zmb_dlc0_zombie_male_body4_g_upclean",
+    "damagedTorso_RightArmGone": "#c_t8_zmb_dlc0_zombie_male_body4_g_rarmoff",
+    "damagedTorso_LeftArmGone": "#c_t8_zmb_dlc0_zombie_male_body4_g_larmoff",
+    "damagedTorso_HeadGone": "#hash_9bdd9b75c99850af",
+    "damagedLegs_Clean": "#c_t8_zmb_dlc0_zombie_male_body4_g_lowclean",
+    "damagedLegs_RightLegGone": "#c_t8_zmb_dlc0_zombie_male_body4_g_rlegoff",
+    "damagedLegs_LeftLegGone": "#c_t8_zmb_dlc0_zombie_male_body4_g_llegoff",
+    "damagedLegs_NoLegs": "#c_t8_zmb_dlc0_zombie_male_body4_g_blegsoff"
+}

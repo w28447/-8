@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3c535da00aabe00be2b90c986e38cc2d526098a0ff784b6ad9fc62e04a310bda
-size 337
+{
+    "lootid": "#charm_peach",
+    "hash_ff3063df": "model#",
+    "image": "ui_icon_weapon_charms_peach",
+    "name": "charm_plant_peach",
+    "displayname": "localized17#menu/charm_plant_peach",
+    "icon": "ui_icon_weapon_charms_peach",
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_peach"
+}

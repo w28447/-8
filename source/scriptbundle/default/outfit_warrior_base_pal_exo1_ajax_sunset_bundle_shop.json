@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a9be4d661630dc825c7d31d2efe621bea81aea41d95eedcbebf9b8c98a84e0fa
-size 254
+{
+    "hash_38bac0dcfaeeacd7:hash_6c274f86": "image#hash_38bac0dcfaeeacd7",
+    "nametext": "localized17#hash_55ea2d0c95af597a",
+    "name": "outfit_warrior_base_pal_exo1_ajax_sunset_bundle_shop",
+    "desctext": "localized17#hash_db339b4517da3ad"
+}

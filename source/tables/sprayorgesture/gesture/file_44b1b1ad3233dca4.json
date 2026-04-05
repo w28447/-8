@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cfb6b61d0159fa05ab3cffe68672712ce7caf647a2fecf2edcfb2ae31aae5d0c
-size 328
+{
+    "name": "#hash_44b1b1ad3233dca4",
+    "type": "#gesture",
+    "gesture": "#hash_46571ea35350ae21",
+    "gesture2": "#hash_51b790f5c610df8a",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/home_run",
+        "icon": "image#ui_icon_emotes_homerun",
+        "isdefault": 0
+    }
+}

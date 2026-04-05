@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f2be4308980b776c8d84d6a9eb9cc40cc7b461f63dacec11596a18d71a8221bf
-size 372
+{
+    "name": "#maps/mp/mp_zombie_museum.d3dbsp",
+    "baseName": "mp_zombie_museum",
+    "lutMaterial": "#lut_mp_zombie_museum",
+    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "unk550": [
+        "#img_trim_lut_mp_zm_museum",
+        "#img_trim_lut_mp_zm_museum",
+        "#img_trim_lut_mp_zm_museum",
+        "#img_trim_lut_mp_zm_museum"
+    ]
+}

@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bf7d87e087dc5622d642c0d21e8da1d5510d35beb62552fd81aafc06605e1861
-size 319
+{
+    "name": "#loot_emote_shared_pushups",
+    "type": "#gesture",
+    "gesture": "#boast_pushups",
+    "gesture2": "#boast_pushups_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/pushups",
+        "icon": "image#ui_icon_emotes_pushups",
+        "isdefault": 0
+    }
+}

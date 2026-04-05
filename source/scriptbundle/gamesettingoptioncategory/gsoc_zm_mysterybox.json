@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:44a7ab5747b54020c6c1c878e71fdb04a3f5d97800b34fa135f85b93cbccb4da
-size 331
+{
+    "configstringfiletype": "scriptbundle",
+    "hash_ce9b2d06": "gsol_zm_mysterybox",
+    "type": "gamesettingoptioncategory",
+    "name": "gsoc_zm_mysterybox",
+    "hash_40c3c9f045a1912d:hash_dea17465": "localized17#hash_40c3c9f045a1912d",
+    "hash_55cae34ed464d6d6:hash_608158f2": "localized17#hash_55cae34ed464d6d6"
+}

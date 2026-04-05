@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:38dc8beac3e949508425dc8f995f0ea390a7a31451ac3a0f66d24e6ddc6c8a54
-size 260
+{
+    "contracticon": "image#hash_186d825547b2f9d7",
+    "contracttitle": "localized17#hash_14fa1225514b2800",
+    "name": "loot_contract_fourth_of_july_event_stream",
+    "contractdescription": "localized17#hash_e07c4532c4bad77",
+    "white": "#white"
+}

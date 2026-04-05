@@ -1,3 +1,65 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0271f84e87f51e2d22a532102793dcf48df71ec6436bf4f8aaa46407b14a9bfe
-size 2401
+{
+    "name": "#hero_sword_pistol_lh_lv1_zm",
+    "baseWeapon": "#hero_sword_pistol_lh_lv1",
+    "displayname": "#weapon/hero_sword_pistol",
+    "weapon70": "#hero_sword_pistol_lv1",
+    "dualwieldWeaponName": "#hero_sword_pistol_lv1_zm",
+    "streamkey": "#hash_75870edeb3384db4",
+    "scrstr_8d8": [
+        "tag_ik_loc_le_dw"
+    ],
+    "worldModelTagRight": "tag_weapon_left",
+    "worldModelTagLeft": "tag_weapon_right",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_weapon_left",
+    "scrstr_11a4": "tag_weapon_left",
+    "weaponstarthitpoints": 0,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "#hash_5b73038c": 1,
+    "#hash_6566504b": 0,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "ZOMBIES",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "firesound": "#hash_16c30790b38cd2c5",
+    "firesoundplayer": "#hash_40317c908287dc4c",
+    "sound1d0": "#hash_5371619730c21655",
+    "sound200": "#hash_f15d6979a35fafc",
+    "sound230": "#hash_40317c908287dc4c",
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "#hash_fb22040b": "#hash_393167c337ae3a93",
+    "sound600": "#hash_5cb2134f89e238dd",
+    "sound610": "#hash_81ea4f68a87be88",
+    "tunables1": "#hero_sword_pistol_lh_lv1_tunables_zm",
+    "tracers": [
+        "#shotgun",
+        "#hash_75093ab7b848ed32"
+    ],
+    "viewmodel": [
+        "#wpn_t8_zm_melee_dw_hand_cannon_lvl1_view"
+    ],
+    "worldModel": [
+        "#wpn_t8_zm_melee_dw_hand_cannon_lvl1_world"
+    ],
+    "reticleCenter": "#reticle_flechette",
+    "inventoryIconZm": "#t7_icon_weapon_pistol_shotgun_pu",
+    "image_e90": "#t7_icon_weapon_pistol_shotgun_kf",
+    "fireRumble": "#shotgun_fire",
+    "fx_bc8": "#hash_cea1eec14b88828",
+    "fx_bd0": "#hash_cf12aec14bebb3a",
+    "viewPersistentEffectSet": "#hash_3ecfc013b8871d4b",
+    "worldPersistentEffectSet": "#hash_3ec9b413b8829d39",
+    "normalImpactFX": "#hash_6348e39e84aaee2a"
+}

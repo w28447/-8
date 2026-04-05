@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:68937d204b3f7975a09ece930e4b177931318e9a93ad93d0550d02cdea5209db
-size 417
+{
+    "backingsmall": "image#t7_hud_medal_backing_badassery",
+    "widget": "BadasseryMedal",
+    "name": "t7_hud_medal_kill_enemy_while_flashbanged",
+    "backinglarge": "image#t7_hud_medal_backing_badassery_lrg",
+    "iconsmall": "image#t7_hud_medal_kill_enemy_while_flashbanged",
+    "stringref": "localized17#hash_3760a0a558ff986e",
+    "iconlarge": "image#t7_hud_medal_kill_enemy_while_flashbanged_lrg"
+}

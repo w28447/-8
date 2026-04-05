@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7ac7400269d8639d6405f440806c4446d67a15d10ae17648bf2bff6cfc8cbc6e
-size 561
+{
+    "descriptionimage": "image#ui_icon_perk_dexterity_large",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "perk_dexterity_restriction",
+    "displayname": "localized17#menu/talent_dexterity",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__talent_dexterity__restricted",
+    "isenableddisabled": 0
+}

@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5377733f00c8385c621543dcf56ce6e73fe457c46fbe4245d33750b1254980e6
-size 426
+{
+    "hash_ab1984e9": 0,
+    "hash_934131b6": 0,
+    "configstringfiletype": "scriptbundle",
+    "numprimaryweapons": 0,
+    "hash_882b6b71": 0,
+    "type": "playerloadoutrestrictions",
+    "hash_355c3581": 0,
+    "name": "plr_mp_wc_perk_1_gluttony",
+    "bonuscard_perk_1_gluttony": "#bonuscard_perk_1_gluttony",
+    "hash_25a22f4": -1,
+    "hash_cd3db98c": -1,
+    "hash_a2ef45f8": 2,
+    "hash_c3fc8c73": 0
+}

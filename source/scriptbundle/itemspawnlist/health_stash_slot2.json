@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fa617a9fd95b7ab8282f3465a3404044d2380cd74991cc5a26851bc9b3513049
-size 773
+{
+    "itemlist": [
+        {
+            "minweight": 85,
+            "itementry": "scriptbundle&health_item_medium",
+            "maxweight": 85,
+            "available": -1
+        },
+        {
+            "minweight": 15,
+            "itementry": "scriptbundle&perk_item_medic",
+            "maxweight": 15,
+            "available": 1
+        },
+        {
+            "minweight": 0,
+            "maxweight": 0,
+            "available": 0
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 3,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "health_stash_slot2",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

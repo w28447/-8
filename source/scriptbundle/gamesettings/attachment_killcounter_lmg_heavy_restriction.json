@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b46fab440687f7b52662ed7c6ef353d32629c8991b1688541af10350b5c0fd9c
-size 397
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_killcounter_lmg_heavy_restriction",
+    "displayname": "localized17#weapon/lmg_heavy_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__lmg_heavy_t8__attachments__killcounter",
+    "isenableddisabled": 0
+}

@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9f0318bae9cc58e2ca2ae85ce13c4b8da4eef34d4e7d3cb547debb9bb99463cc
-size 998
+{
+    "name": "#c_t8_zmb_1stclass_female1_nohat",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 2,
+    "bodyImpactType": 2,
+    "gibDef": "#c_t8_zmb_1stclass_female_gib_def",
+    "fxDef": "#fxd8_zm_char_zombie_base_body",
+    "body": "#c_t8_zmb_1stclass_female_body1_skin6",
+    "headAlias": "#hash_11ea21d04670026b",
+    "damagedTorso_Clean": "#c_t8_zmb_1stclass_female_body1_g_upclean_skin6",
+    "damagedTorso_RightArmGone": "#c_t8_zmb_1stclass_female_body1_g_rarmoff_skin6",
+    "damagedTorso_LeftArmGone": "#c_t8_zmb_1stclass_female_body1_g_larmoff_skin6",
+    "damagedTorso_HeadGone": "#c_t8_zmb_1stclass_female_body1_g_behead",
+    "damagedLegs_Clean": "#c_t8_zmb_1stclass_female_body1_g_lowclean_skin6",
+    "damagedLegs_RightLegGone": "#c_t8_zmb_1stclass_female_body1_g_rlegoff_skin6",
+    "damagedLegs_LeftLegGone": "#c_t8_zmb_1stclass_female_body1_g_llegoff_skin6",
+    "damagedLegs_NoLegs": "#c_t8_zmb_1stclass_female_body1_g_blegsoff_skin6"
+}

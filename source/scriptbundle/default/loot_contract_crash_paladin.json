@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9714d8c6617d1bc11fb0c5ea65ad4ce8887763306e20be11833a7a7db550ba9f
-size 269
+{
+    "relateditemname": "localized17#heroes/buffassault",
+    "contracttitle": "localized17#hash_7757157cca531029",
+    "name": "loot_contract_crash_paladin",
+    "white": "#white",
+    "hash_40534ffb27a37ede:hash_e08fc162": "localized17#hash_40534ffb27a37ede"
+}

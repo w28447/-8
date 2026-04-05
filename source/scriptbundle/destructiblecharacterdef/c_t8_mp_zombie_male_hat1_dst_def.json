@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:664fa10f1cfd93790539ac1bc4f3c70d01b140e6a637fa2d76b7134ddbedf0b0
-size 381
+{
+    "hash_aa7fbf8b": "j_head",
+    "configstringfiletype": "scriptbundle",
+    "c_t8_mp_zombie_male_hat1": "model#c_t8_mp_zombie_male_hat1",
+    "type": "destructiblecharacterdef",
+    "hash_cb768102": "helmet",
+    "vmtype": "both",
+    "name": "c_t8_mp_zombie_male_hat1_dst_def",
+    "piececount": 1,
+    "c_t8_mp_zombie_male_hat1": "model#c_t8_mp_zombie_male_hat1"
+}

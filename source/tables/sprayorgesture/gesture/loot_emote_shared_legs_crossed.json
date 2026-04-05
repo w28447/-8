@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d0364151ec3c213b407c6e62db640c7d270fa494ec18f4dffa010fd4dc1dd622
-size 343
+{
+    "name": "#loot_emote_shared_legs_crossed",
+    "type": "#gesture",
+    "gesture": "#boast_legs_crossed",
+    "gesture2": "#boast_legs_crossed_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/tranquility",
+        "icon": "image#ui_icon_emotes_legs_crossed",
+        "isdefault": 0
+    }
+}

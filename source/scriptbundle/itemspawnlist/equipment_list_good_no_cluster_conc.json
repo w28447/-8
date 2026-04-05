@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b0a25788d3728557ebf521d1ee216480977f0c32f42bb6a549b593ca2d32a903
-size 515
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&sensor_dart_wz_item",
+            "maxweight": 200,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 1,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "equipment_list_good_no_cluster_conc",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:477dbc57d046676423d48789c33a8d24ad33dbeaee2bd6334fc788834f69dd56
-size 1028
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&extmag_wz_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&laser_sight_wz_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&extbarrel_wz_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&stock_wz_item",
+            "maxweight": 100,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 4,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "attachment_list_med_closequarters",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

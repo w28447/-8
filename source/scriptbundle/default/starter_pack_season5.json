@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:946905d8c0447d3757db16c2a6a0e58bf498de07982db67377f67c56b0f0dc49
-size 410
+{
+    "buttonimage": "image#hash_fad8466e5874fd4",
+    "popupimage": "image#hash_1c8756afa4400233",
+    "nametext": "localized17#hash_24e6737bf70259b3",
+    "categorytext": "localized17#hash_30951b5b7749b8df",
+    "name": "starter_pack_season5",
+    "desctext": "localized17#hash_65154c912bf5d5a5",
+    "previewimage": "image#hash_6a8126a123f05fa0",
+    "reserveimage": "image#hash_215712d49db315dc"
+}

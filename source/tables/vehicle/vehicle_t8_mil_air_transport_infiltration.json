@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2629615414e1f86dc3ff2aabfd5b073a25f59bdfbf1f1017a145e75c5d1eaae8
-size 177
+{
+    "name": "#vehicle_t8_mil_air_transport_infiltration",
+    "type": "wheels4",
+    "skidSpeedMin": 0,
+    "skidSpeedMax": 0,
+    "peelSpeedMax": 0,
+    "bundle": {}
+}

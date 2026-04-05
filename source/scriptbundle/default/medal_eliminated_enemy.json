@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a258766cc2bbaf1bbdf57182366adaa3fc145c854c22ac8f7d6fc9a9c649ec7d
-size 402
+{
+    "description": "localized17#medal/eliminated_enemy_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_eliminated_enemy",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_elimination",
+    "stringref": "localized17#medal/eliminated_enemy",
+    "iconlarge": "image#ui_icon_medal_elimination_large"
+}

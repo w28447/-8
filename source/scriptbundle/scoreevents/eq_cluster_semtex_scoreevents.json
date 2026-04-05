@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1556614c3781522119085a52b1d2e6bf00df9d404e4fea189f247e4e0271e40e
-size 660
+{
+    "cluster_semtex_multikill_2": "#cluster_semtex_multikill_2",
+    "cluster_semtex_multikill_2": "#cluster_semtex_multikill_2",
+    "cluster_semtex_kill": "#cluster_semtex_kill",
+    "configstringfiletype": "scriptbundle",
+    "type": "scoreevents",
+    "vmtype": "both",
+    "cluster_semtex_multikill_2": "#cluster_semtex_multikill_2",
+    "name": "eq_cluster_semtex_scoreevents",
+    "customsettingstype": "ability",
+    "cluster_semtex_multikill_2": "#cluster_semtex_multikill_2",
+    "hash_62fadae1e80b17b5:hash_84eddb70": "#hash_62fadae1e80b17b5",
+    "hash_fcd2ff3a": 1,
+    "cluster_semtex_multikill_2": "#cluster_semtex_multikill_2"
+}

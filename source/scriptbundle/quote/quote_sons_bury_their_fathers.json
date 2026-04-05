@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a8e270cbde47d50e8ea68610d88b9e05895a8b481c53a7a2649c01ae543bf427
-size 217
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_sons_bury_their_fathers",
+    "quote": "localized17#hash_209d630b9a319c6",
+    "author": "localized17#hash_79479e0bc9e14ff"
+}

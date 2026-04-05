@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:82c420926ecf06ae1d24362026196d4b96b0debc5d90e83247ae5431bd9641ae
-size 332
+{
+    "name": "#hash_4770fad97752a9f2",
+    "type": "#gesture",
+    "gesture": "#hash_32c00b9e72366fd0",
+    "gesture2": "#hash_2f66f209189aeb1b",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/sammy_bear",
+        "icon": "image#ui_icon_emotes_teddybear",
+        "isdefault": 0
+    }
+}

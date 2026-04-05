@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fd0147e2ec44af28db691685e412f2b09180f937d3db5cd1f542a184fc52198c
-size 351
+{
+    "name": "#loot_emote_exotic_shared_bottle_rocket",
+    "type": "#gesture",
+    "gesture": "#boast_bottle_rocket",
+    "gesture2": "#boast_bottle_rocket_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/rocketeer",
+        "icon": "image#ui_icon_emotes_bottlerocket",
+        "isdefault": 0
+    }
+}

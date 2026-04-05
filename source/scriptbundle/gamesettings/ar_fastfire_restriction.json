@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:64b8aa78befe7ac7bfd76ba0df5935a5c48f9af6c513009861c124c03bbbdf48
-size 562
+{
+    "descriptionimage": "image#ui_icon_weapon_ar_fastfire_view_xl",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "ar_fastfire_restriction",
+    "displayname": "localized17#weapon/ar_fastfire_t8",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__ar_fastfire_t8__restricted",
+    "isenableddisabled": 0
+}

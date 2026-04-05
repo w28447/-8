@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1051611c33464da1b93c848017d9225dc01d1aed16e7c2a6e92f1d2679b74c1e
-size 231
+{
+    "detailsicon": "image#loot07_ui_icon_blackmarket_itemdetail_nikolai",
+    "loot07_ui_icon_blackmarket_itemshop_nikolai": "image#loot07_ui_icon_blackmarket_itemshop_nikolai",
+    "name": "loot_character_nikolai_ofc_shop"
+}

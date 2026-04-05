@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d6ba4b86ccdce1c0ff5415605ccf2cdbb78b432770b1b8898f8fb14df6ae1bbc
-size 630
+{
+    "hinttext": "localized17#menu/carrier_armor_hint",
+    "configstringfiletype": "scriptbundle",
+    "value2": "100",
+    "value3": "200",
+    "value1": "0",
+    "value4": "50",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "carrier_armor",
+    "displayname": "localized17#menu/carrier_armor",
+    "label4": "localized17#menu/half",
+    "label1": "localized17#menu/disabled",
+    "label3": "localized17#menu/double",
+    "label2": "localized17#menu/normal",
+    "hash_54e336e4": 0,
+    "optionscount": 4,
+    "hash_765cfd09": 0,
+    "setting": "carrierArmor",
+    "isenableddisabled": 0
+}

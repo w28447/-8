@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2d3e0f9cc11a36ea019a18c4fce376ac530280a5f0b9af00c13ee8da4724105a
-size 520
+{
+    "right_leg_upper": 1,
+    "head": 1,
+    "left_arm_lower": 1,
+    "left_arm_upper": 1,
+    "configstringfiletype": "scriptbundle",
+    "left_leg_lower": 1,
+    "torso_upper": 1,
+    "torso_lower": 1,
+    "type": "locarmor",
+    "helmet": 1,
+    "right_arm_lower": 1,
+    "torso_mid": 1,
+    "name": "loc_armor_large",
+    "left_hand": 1,
+    "right_leg_lower": 1,
+    "right_arm_upper": 1,
+    "left_foot": 1,
+    "right_foot": 1,
+    "left_leg_upper": 1,
+    "neck": 1,
+    "right_hand": 1
+}

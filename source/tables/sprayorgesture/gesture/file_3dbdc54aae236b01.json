@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:21f3fd3bc773e5ea6a23ad06d622c247feb16a9e48c54d22ece4c065967231b4
-size 333
+{
+    "name": "#hash_3dbdc54aae236b01",
+    "type": "#gesture",
+    "gesture": "#hash_1937af03db52b360",
+    "gesture2": "#hash_79ed8590086048c3",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/the_jugglenaut",
+        "icon": "image#ui_icon_emotes_juggle",
+        "isdefault": 0
+    }
+}

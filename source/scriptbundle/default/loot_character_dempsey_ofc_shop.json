@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f03f21967607986a0a64783af9fefcdf9f2af7bd60b793af6f31138df6c939ca
-size 231
+{
+    "detailsicon": "image#loot07_ui_icon_blackmarket_itemdetail_dempsey",
+    "loot07_ui_icon_blackmarket_itemshop_dempsey": "image#loot07_ui_icon_blackmarket_itemshop_dempsey",
+    "name": "loot_character_dempsey_ofc_shop"
+}

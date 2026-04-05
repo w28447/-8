@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cb93873ba8033c4fec0a37f8ab13c8af63d2e9f8bccca8cc9da7729ff5aa501b
-size 181
+{
+    "name": "#gsol_mp_supply_restriction",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_supply_launcher_standard_restriction"
+    ]
+}

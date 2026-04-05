@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ad4bd014deaf0b66c764fe73f7a16c6b1fbdec073dc5dad401378b8cdacc744b
-size 955
+{
+    "name": "#gsol_zm_perks",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#zm_perksactive",
+        "#gamesettings/#zm_perksbandolier",
+        "#gamesettings/#zm_perksdeadshot",
+        "#gamesettings/#zm_perksdeathperception",
+        "#gamesettings/#zm_perksdyingwish",
+        "#gamesettings/#zm_perkselectricburst",
+        "#gamesettings/#zm_perksetherealrazor",
+        "#gamesettings/#zm_perksmulekick",
+        "#gamesettings/#zm_perksphdslider",
+        "#gamesettings/#zm_perksrevive",
+        "#gamesettings/#zm_perkssecretsauce",
+        "#gamesettings/#zm_perksstaminup",
+        "#gamesettings/#zm_perksstonecold",
+        "#gamesettings/#zm_perkscooldown",
+        "#gamesettings/#zm_perksvictorious",
+        "#gamesettings/#zm_perkswidow",
+        "#gamesettings/#zm_perkszombshell",
+        "#gamesettings/#zm_perkswolfprotector",
+        "#gamesettings/#zm_perksdeathdash"
+    ]
+}

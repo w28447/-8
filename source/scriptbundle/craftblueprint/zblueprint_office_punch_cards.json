@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:41a289035309f34648e46ac93ae8983e6143aa8e57ca7b2c15ee2600f148346a
-size 1096
+{
+    "hash_7a4375969e311723:hash_4dbc4aee": "localized18#hash_7a4375969e311723",
+    "hash_11928e3b": 0,
+    "configstringfiletype": "scriptbundle",
+    "result": "weapon#pistol_topbreak_t8_zm",
+    "type": "craftblueprint",
+    "hash_3c809ce0": 0,
+    "hash_e414062": 0,
+    "component01": "weapon#zitem_office_punch_card_1_zm",
+    "component02": "weapon#zitem_office_punch_card_2_zm",
+    "component03": "weapon#zitem_office_punch_card_3_zm",
+    "component04": "weapon#zitem_office_punch_card_4_zm",
+    "component05": "weapon#zitem_office_punch_card_5_zm",
+    "registerperk_packa_seepainterminate": "weapon#zitem_office_punch_card_6_zm",
+    "component07": "weapon#zitem_office_punch_card_7_zm",
+    "name": "zblueprint_office_punch_cards",
+    "displayname": "office_punch_cards",
+    "hash_7a4375969e311723:hash_391591d0": "localized18#hash_7a4375969e311723",
+    "postcraft": "one_time_craft",
+    "hash_7a4375969e311723:hash_abd9b2d0": "localized18#hash_7a4375969e311723",
+    "componentcount": 7,
+    "takecomponents": 1,
+    "hash_318c150c": "section_quests"
+}

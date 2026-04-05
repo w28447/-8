@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3957f0edd7560bb47a13355ebfa982106e83d3017841d17dca694c2e1bcbae9d
-size 186
+{
+    "name": "#maps/mp/mp_jungle2_alt.d3dbsp",
+    "baseName": "mp_jungle2_alt",
+    "lutMaterial": "#lut_mp_jungle2_alt",
+    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca"
+}

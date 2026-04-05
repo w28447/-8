@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c80aa75ac292b40d3d0000b2774a291f2e9b55e26314cf2dfb62517b61f99844
-size 253
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "craftfoundry",
+    "blueprintcount": 1,
+    "blueprint01": "scriptbundle&zblueprint_shield_zhield_zpear",
+    "name": "ztable_shield_zhield_zpear",
+    "displayname": "Spear and Shield"
+}

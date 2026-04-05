@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d0d99b6a0a9a8a95c1e23e1ef4dd269d0dfcf64be97e84e6d170834a7079c29a
-size 581
+{
+    "name": "#hash_5b56d51133efae32",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#allow_ingame_team_change",
+        "#gamesettings/#allow_spectating",
+        "#gamesettings/#disable_third_person_spectating",
+        "#gamesettings/#allow_map_scripting",
+        "#gamesettings/#voip_killers_hear_victim",
+        "#gamesettings/#allow_battle_chatter",
+        "#allow_announcer",
+        "#gamesettings/#allow_play_of_the_match",
+        "#gamesettings/#allow_gestures",
+        "#gamesettings/#allow_gestures_camera_rotate"
+    ]
+}

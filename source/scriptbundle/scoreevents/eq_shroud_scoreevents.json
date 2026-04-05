@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bd51845a6d93357c5afa5981499b2cc139c473a06b36d00ee5f472c3ad3a0f77
-size 530
+{
+    "shroud_multikill_2": "#shroud_multikill_2",
+    "shroud_multikill_2": "#shroud_multikill_2",
+    "shroud_kill": "#shroud_kill",
+    "configstringfiletype": "scriptbundle",
+    "type": "scoreevents",
+    "vmtype": "both",
+    "shroud_multikill_2": "#shroud_multikill_2",
+    "name": "eq_shroud_scoreevents",
+    "customsettingstype": "ability",
+    "shroud_multikill_2": "#shroud_multikill_2",
+    "shroud_shutdown": "#shroud_shutdown",
+    "hash_fcd2ff3a": 1,
+    "shroud_multikill_2": "#shroud_multikill_2"
+}

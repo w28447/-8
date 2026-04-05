@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:43fb647f4db4c813badb5d466f3ad9e76d5b9af01b9846e9971518a019e580be
-size 207
+{
+    "name": "#hash_78c3fd997749a371",
+    "type": "playersettingoption",
+    "bundles": [
+        "#codcaster_ls_equipment",
+        "#codcaster_ls_perks",
+        "#codcaster_ls_wildcards"
+    ]
+}

@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4fed1d160edc742635c92e81e43c24ae778e9138ec51acaec8dacb63a661a1c4
-size 390
+{
+    "description": "localized17#hash_3dc382d692884c0c",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_wz_quadkill",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_wz_quadkill",
+    "stringref": "localized17#hash_4d5ac6ac71b426a4",
+    "iconlarge": "image#ui_icon_medal_wz_quadkill_large"
+}

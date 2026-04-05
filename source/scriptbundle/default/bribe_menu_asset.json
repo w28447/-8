@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:55459a7d8bdabeed581fe0560a4ac5ce65dcc2d21899fc468d238f5433337bc3
-size 667
+{
+    "popupimage": "image#ui_icon_blackmarket_itemshop_weapon_bribe",
+    "nametext": "localized17#hash_7d7687106254cfde",
+    "categorytext": "localized17#mpui/bm_bribe",
+    "name": "bribe_menu_asset",
+    "stackimage": "image#ui_icon_blackmarket_reserves_weapon_bribe",
+    "desctext": "localized17#hash_14b6dedc2c899de5",
+    "weapon/ar_modular_t8": "localized17#weapon/ar_modular_t8",
+    "ui_icon_blackmarket_itemshop_weapon_bribe:hash_76dc8b88": "image#ui_icon_blackmarket_itemshop_weapon_bribe",
+    "previewimage": "image#ui_icon_blackmarket_reserves_weapon_bribe",
+    "hash_2b27d20d2cfc1069:hash_c1acffb6": "localized17#hash_2b27d20d2cfc1069"
+}

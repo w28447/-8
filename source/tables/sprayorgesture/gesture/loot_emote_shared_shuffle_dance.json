@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9c72447af689479ae1248361d06b39b6a0fcb0347ea947ea29e89614407e5ae1
-size 343
+{
+    "name": "#loot_emote_shared_shuffle_dance",
+    "type": "#gesture",
+    "gesture": "#boast_shuffle_dance",
+    "gesture2": "#boast_shuffle_dance_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/jump_start",
+        "icon": "image#ui_icon_emotes_s3_shuffle",
+        "isdefault": 0
+    }
+}

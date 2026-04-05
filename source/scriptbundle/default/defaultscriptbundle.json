@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e3048d17c464479870ccf4b3323fe54004825744c77e8966146e4463d4760816
-size 98
+{
+    "challengewidget": "Accuracy",
+    "vmtype": "none",
+    "name": "defaultscriptbundle"
+}

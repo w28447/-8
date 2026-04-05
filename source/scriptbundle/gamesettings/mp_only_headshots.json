@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d6075790d036a9d53ebecf50f5c0c1d3bbe3129df9cd68d07dbdb05e002f9845
-size 401
+{
+    "hinttext": "localized17#menu/headshotsonly_hint",
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "mp_only_headshots",
+    "displayname": "localized17#menu/headshotsonly",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "specialistOnlyHeadshots_allies_1",
+    "isenableddisabled": 1
+}

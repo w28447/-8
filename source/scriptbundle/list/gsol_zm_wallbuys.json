@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:45cae51c48e994040932f5d9f90bf7b61f7633ab3b149d3e84c68f6153355347
-size 135
+{
+    "name": "#gsol_zm_wallbuys",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#zm_wallbuys"
+    ]
+}

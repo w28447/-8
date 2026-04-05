@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:efbb3e41f462a8d029bd8e7c13cef7bc7acc8d0970ea9502384c02d20d08b32e
-size 170
+{
+    "loot03_ui_icon_blackmarket_item_shop_wingsuit_merica": "image#loot03_ui_icon_blackmarket_item_shop_wingsuit_merica",
+    "name": "jumppack_american_flag_shop"
+}

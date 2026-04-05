@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:673c62b03eb9195edad126415406271a3f47d645bc78bddc53357c84130f3d3c
-size 529
+{
+    "packageitems": [
+        {
+            "item": "#talent_teamlink"
+        }
+    ],
+    "hash_ef921c3c": 1,
+    "configstringfiletype": "scriptbundle",
+    "tracktier": 1,
+    "type": "bountyhunterpackage",
+    "hash_85d7cf08": 1,
+    "refillammo": 0,
+    "hash_ee686ece": 0,
+    "refillcost": 0,
+    "name": "package_support_1",
+    "packagetype": "support",
+    "purchasecost": 500,
+    "startammo": 2,
+    "hash_673a16ad": 1,
+    "hash_741010b5": 1,
+    "hash_782dbf79": 1,
+    "hash_767b7337": 1
+}

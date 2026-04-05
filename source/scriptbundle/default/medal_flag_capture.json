@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a5442cc276153f3d866f1d36baf0885817149acfeb096d4a0745347ea0a1aaee
-size 386
+{
+    "description": "localized17#medal/flag_capture_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_flag_capture",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_playmaker",
+    "stringref": "localized17#medal/flag_capture",
+    "iconlarge": "image#ui_icon_medal_playmaker_large"
+}

@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1c0883b5e5c2e4bd12bb02d1b15b5ebfd41b01c955e0c9857d737228c0766fef
-size 462
+{
+    "lootid": "#jumppack_american_flag",
+    "wingsuit": "scriptbundle&c_t8_bo_wingsuit_merica",
+    "image": "loot03_ui_icon_blackmarket_item_shop_wingsuit_preview_merica",
+    "name": "c_t8_bo_jumpkit_merica",
+    "displayname": "localized17#hash_e5f3773b06cdfea",
+    "preview_image": "loot03_ui_icon_blackmarket_item_shop_wingsuit_merica",
+    "hash_4fa85a25": "scriptbundle&dfxt_merica",
+    "parachute": "scriptbundle&c_t8_bo_parachute_merica"
+}

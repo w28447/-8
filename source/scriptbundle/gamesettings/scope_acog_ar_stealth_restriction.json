@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:71398d6708ef39e19c9a0efff56db601fbf919a7185cddcc726b47a1a62bc170
-size 381
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "scope_acog_ar_stealth_restriction",
+    "displayname": "localized17#weapon/ar_stealth_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__ar_stealth_t8__attachments__acog",
+    "isenableddisabled": 0
+}

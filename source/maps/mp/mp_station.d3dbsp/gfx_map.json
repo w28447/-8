@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:32492fca94709bd8367dd4db6499c250c798e5f79213399107d3c9f622116e9c
-size 352
+{
+    "name": "#maps/mp/mp_station.d3dbsp",
+    "baseName": "mp_station",
+    "lutMaterial": "#lut_mp_policestation",
+    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "unk550": [
+        "#img_trim_lut_mp_station",
+        "#img_trim_lut_mp_station",
+        "#img_trim_lut_mp_station",
+        "#img_trim_lut_mp_station"
+    ]
+}

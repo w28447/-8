@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:004ce78959f6c36aa4bced4e77018d881a6c4a03e0f3119a4bb0466caa36c116
-size 406
+{
+    "lootid": "#charm_paintshop",
+    "hash_ff3063df": "model#",
+    "description": "localized17#hash_66dc68e47cc7d3d",
+    "image": "ui_icon_weapon_charms_paintshop",
+    "name": "charm_paintshop",
+    "displayname": "localized17#menu/charm_paint_shop",
+    "icon": "ui_icon_weapon_charms_paintshop",
+    "hash_ef5ad2b3": "model#",
+    "previewimage": "image#ui_icon_weapon_charms_paintshop"
+}

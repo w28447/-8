@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7248bd1e09f254f560b7c6855f55879ed64edb806867c291b480e2c55f76e872
-size 408
+{
+    "description": "localized17#medal/kill_confirmed_multi_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_kill_confirmed_multi",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_clean_up",
+    "stringref": "localized17#medal/kill_confirmed_multi",
+    "iconlarge": "image#ui_icon_medal_clean_up_large"
+}

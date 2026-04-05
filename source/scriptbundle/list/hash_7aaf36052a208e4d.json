@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f9651a4fa3ca2e4532b3856af408a3bbf8fbe1f1e746b694a8aa1ac4375abe4a
-size 297
+{
+    "name": "#hash_7aaf36052a208e4d",
+    "type": "playersettingoption",
+    "bundles": [
+        "#codcaster_ds_overhead_name_allies",
+        "#codcaster_ds_overhead_name_enemies",
+        "#codcaster_ds_overhead_health_allies",
+        "#codcaster_ds_overhead_health_enemies"
+    ]
+}

@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7dcb4e1be7dd0e1770583247cc2e32692122e125b5c21170c63ac139a423a5e0
-size 533
+{
+    "name": "mp_urban_alt.en",
+    "zone": "mp_urban_alt",
+    "gameLanguage": "english",
+    "soundLanguage": "en",
+    "nameHash": "#mp_urban_alt.en",
+    "patchZone": false,
+    "alias": [],
+    "duck": [],
+    "ambients": [],
+    "scriptIdLookups": [],
+    "streamKeysSABL": {
+        "streamKey1": "#mp_urban_alt_en_stream",
+        "dataSize1": 2048,
+        "fileKey": "#mp_urban_alt_en_loaded",
+        "fileLen": 2048
+    },
+    "streamKeysSABS": {
+        "dataSize1": 0,
+        "fileLen": 0
+    }
+}

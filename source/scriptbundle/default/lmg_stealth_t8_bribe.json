@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:16d947bb84990c4f7b68562862c6ea7986a0b778d53ac6023dc9966ba1c331cc
-size 498
+{
+    "hash_2703f9fb7e481f6d:hash_c7bd8867": "localized17#hash_2703f9fb7e481f6d",
+    "popupimage": "image#ui_icon_weapon_lmg_stealth_render",
+    "ui_icon_weapon_lmg_stealth_render": "image#ui_icon_weapon_lmg_stealth_render",
+    "nametext": "localized17#weapon/lmg_stealth_t8",
+    "categorytext": "localized17#mpui/bm_bribe",
+    "name": "lmg_stealth_t8_bribe",
+    "desctext": "localized17#weapon/lmg_stealth_t8_desc",
+    "weapon/lmg_stealth_t8": "localized17#weapon/lmg_stealth_t8"
+}

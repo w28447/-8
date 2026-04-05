@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:54aa6c779a57dd2e13b0c46d242d1b5289c8413b2b4ad636db12997f058d6edf
-size 831
+{
+    "itemlist": [
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&ammo_list_good",
+            "maxweight": 80,
+            "available": -1
+        },
+        {
+            "minweight": 150,
+            "itementry": "scriptbundle&ammo_list_med",
+            "maxweight": 160,
+            "available": -1
+        },
+        {
+            "minweight": 150,
+            "itementry": "scriptbundle&ammo_list_low",
+            "maxweight": 160,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 3,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "hijacked_list_ammo",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

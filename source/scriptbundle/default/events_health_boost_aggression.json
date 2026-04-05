@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f8628fb948a08d7912c5ecfa20ec015de20e3f90d2907924b8774a562c6580d0
-size 285
+{
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
+    "widget": "BadasseryMedal",
+    "name": "events_health_boost_aggression",
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_293248ef2404a550",
+    "iconlarge": "image#hash_293248ef2404a550"
+}

@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ac86b55b7dc7dbf44daf23bd13f2f7b123ca0d22f50586cf34ca473b7c78675a
-size 319
+{
+    "name": "#loot_emote_shared_give_up",
+    "type": "#gesture",
+    "gesture": "#boast_give_up",
+    "gesture2": "#boast_give_up_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/i_give_up",
+        "icon": "image#hash_96d19147f2796ef",
+        "isdefault": 0
+    }
+}

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:47d94a08c4f816df36174c6499f27510a8f0b48673f43e91ed0ac8c09c624f43
-size 312
+{
+    "callingtask": "#hash_5d3dce1c38a95835",
+    "configstringfiletype": "scriptbundle",
+    "image": "image#zm_calling_tasks_killspacked",
+    "dailytarget": 750,
+    "name": "punchdrunk_task",
+    "taskname": "localized17#hash_a039acee4cc3d2a",
+    "descsimple": "localized17#hash_513a42e4c780bc85"
+}

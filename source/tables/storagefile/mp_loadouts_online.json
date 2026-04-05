@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8607f032464433c9fb0a69e5b240c88ebfa3ed7a5f461482efd788c5d0c1711e
-size 375
+{
+    "nameStr": "mp_loadouts_online",
+    "name": "#mp_loadouts_online",
+    "ddlPath": "#gamedata/ddl/generated/mp_loadouts.ddl",
+    "files": [
+        {
+            "fileName": "mp_loadouts_online"
+        }
+    ],
+    "size": 20480,
+    "readOnLogin": true,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
+}

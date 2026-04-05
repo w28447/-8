@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a6384665bc577a7d04676cef12d50b2bae4f411e92658e1cb7c415becc8df0ae
-size 244
+{
+    "destroyed": "#hash_337f01908473a952",
+    "ready": "#hash_4350700248a073f2",
+    "configstringfiletype": "scriptbundle",
+    "type": "mpdialog_scorestreak",
+    "vmtype": "both",
+    "name": "cdp_taacom_kls_overwatch_helicopter"
+}

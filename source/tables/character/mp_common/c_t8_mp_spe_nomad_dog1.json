@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f2a894faafc810fce29833d16bd37a26ac8003e66a8ca467ee72cd860cd7985b
-size 266
+{
+    "name": "#c_t8_mp_spe_nomad_dog1",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "ragdollDef": "#mp_dog",
+    "body": "#c_t8_mp_spe_nomad_dog_body1",
+    "head": "#c_t8_mp_spe_nomad_dog_head1"
+}

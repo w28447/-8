@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e7adbd35f1153f7fc5c9e875764f7b77d5c223fb91cef4455d349e3ba5c68904
-size 706
+{
+    "hinttext": "localized17#menu/round_limit_hint",
+    "configstringfiletype": "scriptbundle",
+    "value8": "7",
+    "value9": "8",
+    "value2": "1",
+    "value3": "2",
+    "value1": "0",
+    "value6": "5",
+    "value7": "6",
+    "value4": "3",
+    "value5": "4",
+    "value10": "9",
+    "type": "gamesettings",
+    "label": "localized17#menu/x_rounds",
+    "hash_5a6dee5a": 1,
+    "name": "round_limit",
+    "displayname": "localized17#hash_c3e6eece99d208c",
+    "label1": "localized17#menu/unlimited",
+    "label2": "localized17#menu/1_round",
+    "hash_54e336e4": 0,
+    "optionscount": 10,
+    "hash_765cfd09": 0,
+    "setting": "roundLimit",
+    "isenableddisabled": 0
+}

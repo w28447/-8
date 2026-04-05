@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7f1f2c75ae26e1c897a95ef96e0257ace8ea1d2dce8fc81f035fbcf6bdabe2ee
-size 448
+{
+    "backingsmall": "image#t7_hud_medal_backing_gamemode",
+    "widget": "BadasseryMedal",
+    "name": "t7_hud_medal_elimination_and_last_player_alive",
+    "backinglarge": "image#t7_hud_medal_backing_gamemode_lrg",
+    "iconsmall": "image#t7_hud_medal_elimination_and_last_player_alive",
+    "stringref": "localized17#medal/elimination_and_last_player_alive",
+    "iconlarge": "image#t7_hud_medal_elimination_and_last_player_alive_lrg"
+}

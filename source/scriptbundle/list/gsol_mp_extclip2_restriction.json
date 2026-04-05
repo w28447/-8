@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d8b3071d4332fdffb078c7f28379ac47f591fda551c613d01191c7d4d876dccd
-size 404
+{
+    "name": "#gsol_mp_extclip2_restriction",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_extclip2_lmg_standard_restriction",
+        "#gamesettings/#attachment_extclip2_pistol_burst_restriction",
+        "#gamesettings/#attachment_extclip2_shotgun_semiauto_restriction",
+        "#gamesettings/#attachment_extclip2_sniper_powersemi_restriction"
+    ]
+}

@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d6b270ada99894d32ef8b0c54be2ddd404193585faf6cd39c6c9e00d546ee46b
-size 1171
+{
+    "itemlist": [
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&grapple_wz_item",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 50,
+            "maxweight": 50,
+            "available": 0
+        },
+        {
+            "minweight": 50,
+            "maxweight": 50,
+            "available": 0
+        },
+        {
+            "minweight": 50,
+            "maxweight": 50,
+            "available": 0
+        },
+        {
+            "minweight": 50,
+            "maxweight": 50,
+            "available": 0
+        },
+        {
+            "minweight": 50,
+            "maxweight": 50,
+            "available": 0
+        },
+        {
+            "minweight": 50,
+            "maxweight": 50,
+            "available": 0
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 7,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "equipment_list_med_vehicle_test",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

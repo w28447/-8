@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6cd554a3dca4869f0926758dc643a0a65461eb8cfc604e0cb4e4fc8a2da4a197
-size 434
+{
+    "backingsmall": "image#t7_hud_medal_backing_badassery",
+    "widget": "BadasseryMedal",
+    "name": "t7_hud_medal_uninterrupted_obit_feed_kills",
+    "backinglarge": "image#t7_hud_medal_backing_badassery_lrg",
+    "iconsmall": "image#t7_hud_medal_uninterrupted_obit_feed_kills",
+    "stringref": "localized17#medal/uninterrupted_obit_feed_kills",
+    "iconlarge": "image#t7_hud_medal_uninterrupted_obit_feed_kills_lrg"
+}

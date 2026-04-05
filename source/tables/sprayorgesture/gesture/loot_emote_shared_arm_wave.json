@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:89e099095222f8bee08b6b3f353c7723f165b89a26d6fcedfbb7cd294b4e0bd3
-size 324
+{
+    "name": "#loot_emote_shared_arm_wave",
+    "type": "#gesture",
+    "gesture": "#boast_arm_wave",
+    "gesture2": "#boast_arm_wave_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/arm_wave",
+        "icon": "image#ui_icon_emotes_arm_wave",
+        "isdefault": 0
+    }
+}

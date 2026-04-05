@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4dae93b8dbc4417da20a564f4176554f141c695e7c08b6a93333cd5458f30eaa
-size 237
+{
+    "hash_329556e9764de4de:hash_6c274f86": "image#hash_329556e9764de4de",
+    "nametext": "localized17#hash_1a4c6ba687e91d2d",
+    "name": "camo_dlc4_zombie_maitai_bundle_shop",
+    "desctext": "localized17#hash_69d699a983b3b97"
+}

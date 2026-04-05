@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a50c1fd24b2e42def344f31e9c2aaf2795e7b6dff2dd7266899a979216d305a3
-size 386
+{
+    "hash_aa7fbf8b": "j_head",
+    "configstringfiletype": "scriptbundle",
+    "c_t8_zmb_crew_officer_hat1": "model#c_t8_zmb_crew_officer_hat1",
+    "type": "destructiblecharacterdef",
+    "hash_cb768102": "helmet",
+    "vmtype": "both",
+    "name": "c_t8_zmb_crew_officer_dst_def",
+    "piececount": 1,
+    "c_t8_zmb_crew_officer_hat1": "model#c_t8_zmb_crew_officer_hat1"
+}

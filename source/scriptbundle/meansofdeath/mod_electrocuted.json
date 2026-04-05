@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2dcaaf223abd8a940337f46647736ce3c57a3c642486e5d475f811d9293a53b8
-size 307
+{
+    "mod": "MOD_ELECTROCUTED",
+    "configstringfiletype": "scriptbundle",
+    "type": "meansofdeath",
+    "name": "mod_electrocuted",
+    "displayname": "localized17#ui/mod_electrocuted",
+    "icon": "image#ui_icon_meansofdeath_suicide",
+    "iconlarge": "image#ui_icon_meansofdeath_suicide_xl"
+}

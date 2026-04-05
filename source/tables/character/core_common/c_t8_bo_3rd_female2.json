@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e126a59b7ff1c2a47299479cfb69bf285220250aa226365b0f034887058858f5
-size 239
+{
+    "name": "#c_t8_bo_3rd_female2",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 1,
+    "bodyImpactType": 1,
+    "body": "#c_t8_bo_3rd_female_body1_black",
+    "head": "#c_t8_bo_3rd_female_head2_black"
+}

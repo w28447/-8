@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dc043b1bbf3a8e0470dda4b1566c703e3a8a29687edffee8236266b2e221d998
-size 466
+{
+    "hash_2703f9fb7e481f6d:hash_c7bd8867": "localized17#hash_2703f9fb7e481f6d",
+    "popupimage": "image#ui_icon_weapon_ar_an94_render",
+    "ui_icon_weapon_ar_an94_render": "image#ui_icon_weapon_ar_an94_render",
+    "nametext": "localized17#weapon/ar_an94_t8",
+    "categorytext": "localized17#mpui/bm_bribe",
+    "name": "ar_an94_t8_bribe",
+    "desctext": "localized17#weapon/ar_an94_t8_desc",
+    "weapon/ar_an94_t8": "localized17#weapon/ar_an94_t8"
+}

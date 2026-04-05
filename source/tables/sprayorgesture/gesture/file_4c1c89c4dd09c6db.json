@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f93a9dea5242d955221aa6cc43763959585e85ed9a8bcb621ef0c22e18d8d72a
-size 1061
+{
+    "name": "#hash_4c1c89c4dd09c6db",
+    "type": "#gesture",
+    "gesture": "#hash_19573c5c3498f772",
+    "gesture2": "#hash_2e883ff474fe5aed",
+    "sub": [
+        {
+            "gesture": "#hash_59f603f48d9fefda",
+            "gesture2": "#hash_880473efa88b015",
+            "roles": [
+                "#prt_mp_firebreak",
+                "#prt_wz_firebreak",
+                "#prt_mp_enforcer",
+                "#prt_wz_enforcer",
+                "#hash_42e7a274de12337e",
+                "#hash_7beba0d40d750e10",
+                "#hash_6c8d991db6f42c4a",
+                "#hash_57d9e98fa3f08f76",
+                "#hash_203a1dcc75cf8c53",
+                "#hash_76ccdd2bfc985ae8",
+                "#prt_wz_spectre",
+                "#prt_mp_spectre",
+                "#prt_mp_reaper",
+                "#prt_wz_reaper_bo4"
+            ]
+        }
+    ],
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/cheers",
+        "icon": "image#hash_735fef17faa20ad5",
+        "isdefault": 0
+    }
+}

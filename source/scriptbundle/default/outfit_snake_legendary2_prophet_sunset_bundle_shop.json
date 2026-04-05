@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:191b7e11b9609811cfcb8e892468da35f09fed013422445a8d824f8019f0cf8e
-size 255
+{
+    "nametext": "localized17#hash_2e0977873fff6924",
+    "name": "outfit_snake_legendary2_prophet_sunset_bundle_shop",
+    "desctext": "localized17#hash_2b7f2d614d161f1d",
+    "heroes/technomancer:hash_975cc0d1": "localized17#heroes/technomancer"
+}

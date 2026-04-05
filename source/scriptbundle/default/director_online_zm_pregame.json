@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:585a15cb75acada459a9793a185c9d0a040d1d1128a3ae58f2b6599c639e00d2
-size 726
+{
+    "hasmigration": 0,
+    "lobbymode": 1,
+    "id": 2304,
+    "settingscount": 1,
+    "backtarget": "director_online",
+    "maxlocalclientsnetwork": 1,
+    "mainmode": 2,
+    "hash_d16ccae8": 1,
+    "isprivate": 1,
+    "showteams": 1,
+    "lobbytype": 0,
+    "menumusic": "lobby_zm",
+    "room": "zombie",
+    "hash_7f60c82f": 4,
+    "kicker": "localized17#hash_5dd231fd15db7531",
+    "isadvertised": 0,
+    "maxclients": 4,
+    "name": "director_online_zm_pregame",
+    "networkmode": 2,
+    "errtarget": "director_online_zm_pregame",
+    "egamemodes": 2,
+    "hash_ec76767d": 0,
+    "title": "localized17#hash_27307830087a401",
+    "hash_f68d7d0": 2,
+    "isgame": 0,
+    "maxlocalclients": 2
+}

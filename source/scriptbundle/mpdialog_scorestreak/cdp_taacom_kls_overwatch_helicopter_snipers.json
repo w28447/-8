@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:70ab34e868e6660b3e6c7861bea18b1807265c7f51ac2d41ebd40ca1335bed04
-size 744
+{
+    "targetlost": "#hash_3c9bd4cbe9244c4f",
+    "configstringfiletype": "scriptbundle",
+    "type": "mpdialog_scorestreak",
+    "damaged": "#hash_418e28697a5ba1b3",
+    "killmultiple": "#hash_3e285f7efc5b50d9",
+    "secondarykillmultiple": "#hash_15c7167cf7908396",
+    "vmtype": "both",
+    "secondarytargetlost": "#hash_23c6abb3a2391d9a",
+    "secondarykill1": "#hash_522825c96d60cc36",
+    "name": "cdp_taacom_kls_overwatch_helicopter_snipers",
+    "damaged1": "#hash_77a8c6ba1229f0d6",
+    "secondarytargetaquired": "#hash_7363a26423df45a4",
+    "secondarykillnone": "#hash_20a2155a280b27b5",
+    "targetaquired": "#hash_32d5c7abb91e5db9",
+    "kill1": "#hash_53725559468689ad",
+    "killnone": "#hash_1191dc3b509ef8a4"
+}

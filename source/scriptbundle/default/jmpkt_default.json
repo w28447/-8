@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e058605f0397eb9c165a3e3c200e3776b90aeb80a4da8c37bae01a571de325be
-size 225
+{
+    "wingsuit": "scriptbundle&wing_default",
+    "name": "jmpkt_default",
+    "displayname": "localized17#menu/default",
+    "hash_4fa85a25": "scriptbundle&dfxt_default",
+    "parachute": "scriptbundle&para_default"
+}

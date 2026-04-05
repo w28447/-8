@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:28f41a44dbfee16e72ec1b6178d097a789324cebeb89aae1b4200108f1cf2670
-size 530
+{
+    "hash_2703f9fb7e481f6d:hash_c7bd8867": "localized17#hash_2703f9fb7e481f6d",
+    "popupimage": "image#ui_icon_weapon_ar_doublebarrel_render",
+    "ui_icon_weapon_ar_doublebarrel_render": "image#ui_icon_weapon_ar_doublebarrel_render",
+    "nametext": "localized17#weapon/ar_doublebarrel_t8",
+    "categorytext": "localized17#mpui/bm_bribe",
+    "name": "ar_doublebarrel_t8_bribe",
+    "desctext": "localized17#weapon/ar_doublebarrel_t8_desc",
+    "weapon/ar_doublebarrel_t8": "localized17#weapon/ar_doublebarrel_t8"
+}

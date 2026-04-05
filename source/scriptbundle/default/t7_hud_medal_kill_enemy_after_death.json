@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4573a561a5e63e4ca86bc9893cc8fdb440f31de0e2c0169e9ca26f4ca46174fb
-size 406
+{
+    "backingsmall": "image#t7_hud_medal_backing_badassery",
+    "widget": "BadasseryMedal",
+    "name": "t7_hud_medal_kill_enemy_after_death",
+    "backinglarge": "image#t7_hud_medal_backing_badassery_lrg",
+    "iconsmall": "image#t7_hud_medal_kill_enemy_after_death",
+    "stringref": "localized17#medal/kill_enemy_after_death",
+    "iconlarge": "image#t7_hud_medal_kill_enemy_after_death_lrg"
+}

@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:db09b9647ca33cc4d8585d94dee42390049a5d83112853d83d6c853633d1dd1e
-size 627
+{
+    "name": "core_common.en",
+    "zone": "core_common",
+    "gameLanguage": "english",
+    "soundLanguage": "en",
+    "nameHash": "#core_common.en",
+    "patchZone": true,
+    "alias": [],
+    "duck": [],
+    "ambients": [],
+    "scriptIdLookups": [],
+    "streamKeysSABL": {
+        "streamKey1": "#core_common_en_stream",
+        "dataSize1": 2048,
+        "fileKey": "#core_common_en_loaded",
+        "fileLen": 2048
+    },
+    "streamKeysSABS": {
+        "streamKey1": "#hash_5cdf378885f94873",
+        "dataSize1": 2048,
+        "fileKey": "#hash_785d7f6740bc21a",
+        "fileLen": 2048
+    }
+}

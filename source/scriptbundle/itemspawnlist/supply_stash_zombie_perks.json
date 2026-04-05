@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6f59b7106d87c0d00fd8633b9a869f5c28fb8343f5c8840c3c7dac72dec8dd23
-size 1038
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&perk_item_lightweight",
+            "maxweight": 140,
+            "available": -1
+        },
+        {
+            "minweight": 150,
+            "itementry": "scriptbundle&perk_item_deadsilence",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 150,
+            "itementry": "scriptbundle&perk_item_medic",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&perk_item_bloody_tracker",
+            "maxweight": 100,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 4,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "supply_stash_zombie_perks",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

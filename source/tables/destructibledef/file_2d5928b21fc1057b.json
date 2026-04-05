@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:01ab0e60877ec566230247968347d277acb4d5e5f5ace844f350f2f91fe9034d
-size 1022
+{
+    "name": "#hash_2d5928b21fc1057b",
+    "model": "#p8_zm_man_pap_gazing_stone_vase_03_allstates",
+    "clientOnly": false,
+    "syncBaseHealthWithEntity": false,
+    "pieces": [
+        {
+            "stages": [
+                {
+                    "unk28": "tag_d0"
+                },
+                {
+                    "unk28": "tag_d1"
+                },
+                {},
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 1,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_651354d63a792e5c",
+            "unk268": 10,
+            "hideBones": [
+                28,
+                29
+            ]
+        }
+    ]
+}

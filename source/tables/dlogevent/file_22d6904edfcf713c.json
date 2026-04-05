@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:382ad53f392fbb44d1b0dbeac54105d94a3ab024f24762d2194b385b7ca84eb3
-size 143
+{
+    "name": "#hash_22d6904edfcf713c",
+    "unk18": 0,
+    "unk19": 0,
+    "unk1a": 0,
+    "unk1b": 1,
+    "unk1c": 0,
+    "rate": 1
+}

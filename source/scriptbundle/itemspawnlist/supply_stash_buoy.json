@@ -1,3 +1,45 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:73250b7932eb311c239bef872d2757610dbcb43783b022eddf36a61bb07a342c
-size 1203
+{
+    "itemlist": [
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&supply_stash_slot1",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&supply_stash_slot2",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&supply_stash_slot3",
+            "maxweight": 50,
+            "available": 2
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&supply_stash_slot4",
+            "maxweight": 50,
+            "available": 2
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&supply_stash_slot5",
+            "maxweight": 50,
+            "available": 2
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 5,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "supply_stash_buoy",
+    "supplystashweight": 70,
+    "hash_dc91e192": 0,
+    "supplystash": 1
+}

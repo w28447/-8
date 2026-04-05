@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c3faf0d9d68bc476378d199303888713fbe110d739269ab99e0aeecf96b7771a
-size 339
+{
+    "name": "#maps/mp/mp_slums2.d3dbsp",
+    "baseName": "mp_slums2",
+    "lutMaterial": "#lut_mp_slums2",
+    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "unk550": [
+        "#img_trim_lut_mp_slums2",
+        "#img_trim_lut_mp_slums2",
+        "#img_trim_lut_mp_slums2",
+        "#img_trim_lut_mp_slums2"
+    ]
+}

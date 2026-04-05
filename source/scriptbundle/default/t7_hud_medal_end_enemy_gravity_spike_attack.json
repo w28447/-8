@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:733f5bab51f0d4aee3cc129d18871b50090047a3b07c336fff70d327bb37eba6
-size 441
+{
+    "backingsmall": "image#t7_hud_medal_backing_specialist_killjoy",
+    "widget": "BadasseryMedal",
+    "name": "t7_hud_medal_end_enemy_gravity_spike_attack",
+    "backinglarge": "image#t7_hud_medal_backing_specialist_killjoy_lrg",
+    "iconsmall": "image#t7_hud_medal_end_enemy_gravity_spike_attack",
+    "stringref": "localized17#hash_7420255af0388d5a",
+    "iconlarge": "image#t7_hud_medal_end_enemy_gravity_spike_attack_lrg"
+}

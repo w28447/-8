@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cba20b8ef48892b3c74b9cb2bef1ea858aa89bbc8fa8a235302a22b0f3437508
-size 340
+{
+    "name": "#loot_emote_shared_crane_kick",
+    "type": "#gesture",
+    "gesture": "#boast_crane_kick",
+    "gesture2": "#boast_crane_kick_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#hash_2991d0b9c1a7202",
+        "icon": "image#ui_icon_emotes_s3_crane_kick",
+        "isdefault": 0
+    }
+}

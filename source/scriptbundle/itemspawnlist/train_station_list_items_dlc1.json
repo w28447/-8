@@ -1,3 +1,74 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:543ce624e163ba3af20f931d714475ac6a1e8db420533a7e44616a709811be0d
-size 2148
+{
+    "itemlist": [
+        {
+            "minweight": 375,
+            "itementry": "scriptbundle&train_station_list_guns_dlc1",
+            "maxweight": 375,
+            "available": -1
+        },
+        {
+            "minweight": 400,
+            "itementry": "scriptbundle&train_station_list_health",
+            "maxweight": 400,
+            "available": -1
+        },
+        {
+            "minweight": 150,
+            "itementry": "scriptbundle&train_station_list_equipment",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 115,
+            "itementry": "scriptbundle&train_station_list_gear",
+            "maxweight": 115,
+            "available": -1
+        },
+        {
+            "minweight": 180,
+            "itementry": "scriptbundle&train_station_list_consumable",
+            "maxweight": 180,
+            "available": -1
+        },
+        {
+            "minweight": 270,
+            "itementry": "scriptbundle&train_station_list_attachment",
+            "maxweight": 270,
+            "available": -1
+        },
+        {
+            "minweight": 300,
+            "itementry": "scriptbundle&train_station_list_ammo",
+            "maxweight": 300,
+            "available": -1
+        },
+        {
+            "minweight": 60,
+            "itementry": "scriptbundle&storage_list",
+            "maxweight": 60,
+            "available": -1
+        },
+        {
+            "minweight": 45,
+            "itementry": "scriptbundle&world_base_event_parent",
+            "maxweight": 65,
+            "available": -1
+        },
+        {
+            "minweight": 70,
+            "itementry": "scriptbundle&train_station_list_armor_shards",
+            "maxweight": 70,
+            "available": 0
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 10,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "train_station_list_items_dlc1",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

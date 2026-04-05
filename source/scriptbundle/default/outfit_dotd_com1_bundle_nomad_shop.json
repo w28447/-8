@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f9b0da74d9a5484437f39615dc89932c194b0e730cb55974b59affebff637a46
-size 229
+{
+    "nametext": "localized17#hash_7264ff6ff1008512",
+    "name": "outfit_dotd_com1_bundle_nomad_shop",
+    "desctext": "localized17#hash_5d8932596e241d6b",
+    "heroes/trapper:hash_975cc0d1": "localized17#heroes/trapper"
+}

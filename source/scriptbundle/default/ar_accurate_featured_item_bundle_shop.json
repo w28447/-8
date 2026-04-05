@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:13a2c35ca2f2f12757eb1aa25842e2431fc569b54ffb7e7e6b85d2f2bcb34681
-size 291
+{
+    "detailsicon": "image#hash_34464f7b7dc299c6",
+    "hash_12de93ee266b1981:hash_6c274f86": "image#hash_12de93ee266b1981",
+    "nametext": "localized17#hash_7b6e3c5a75b5bd79",
+    "name": "ar_accurate_featured_item_bundle_shop",
+    "desctext": "localized17#hash_64a9b5a9501fea53"
+}

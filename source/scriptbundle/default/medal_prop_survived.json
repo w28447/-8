@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dfdfd9649e1010a8e7435a0e0b7022069499dfc44830be2cebd87a6d9b86ec30
-size 377
+{
+    "description": "localized17#medal/prop_survived_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_prop_survived",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#hash_1dce88a2694075d",
+    "stringref": "localized17#medal/prop_survived",
+    "iconlarge": "image#hash_78bd97874f92261"
+}

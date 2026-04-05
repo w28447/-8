@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:664b77fae6b380d00cdaf4949d3afd496a6639bafff72012062d42ee1291da91
-size 386
+{
+    "description": "localized17#medal/bomb_detonated_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_bomb_detonated",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_bomber",
+    "stringref": "localized17#medal/bomb_detonated",
+    "iconlarge": "image#ui_icon_medal_bomber_large"
+}

@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bed36272d65b3066aa5fbf7169c6fde73a9020c04de90cd08aef51100ec42b12
-size 994
+{
+    "hellstorm_missile_multikill_2": "#hellstorm_missile_multikill_2",
+    "hellstorm_missile_multikill_6": "#hellstorm_missile_multikill_6",
+    "hellstorm_missile_kill": "#hellstorm_missile_kill",
+    "configstringfiletype": "scriptbundle",
+    "hellstorm_missile_vanguard": "#hellstorm_missile_vanguard",
+    "type": "scoreevents",
+    "hellstorm_missile_activated": "#hellstorm_missile_activated",
+    "hellstorm_missile_objective_kill": "#hellstorm_missile_objective_kill",
+    "vmtype": "both",
+    "hellstorm_missile_multikill_4": "#hellstorm_missile_multikill_4",
+    "name": "remote_missile_bomblet_scoreevents",
+    "customsettingstype": "ability",
+    "hellstorm_missile_multikill_5": "#hellstorm_missile_multikill_5",
+    "hellstorm_missile_objective_defense": "#hellstorm_missile_objective_defense",
+    "hellstorm_missile_multikill_3": "#hellstorm_missile_multikill_3",
+    "hellstorm_missile_objective_multikill_3": "#hellstorm_missile_objective_multikill_3"
+}

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:406b0609aed692aef91cc4600b061ef9f45e9d2a8f4cad4f8ef51f1458328f04
-size 278
+{
+    "backingsmall": "image#hash_66e5ce08c5c7b0cf",
+    "widget": "BadasseryMedal",
+    "name": "events_war_machine_kill",
+    "backinglarge": "image#hash_66e5ce08c5c7b0cf",
+    "iconsmall": "image#hash_776d1b4ece5247fc",
+    "iconlarge": "image#hash_776d1b4ece5247fc"
+}

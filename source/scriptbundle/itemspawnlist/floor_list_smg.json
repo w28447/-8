@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3214f71b357fb3c5311d98fd0be8c2c3b400d1af55758518998bd9deb53a4e76
-size 1050
+{
+    "itemlist": [
+        {
+            "minweight": 75,
+            "itementry": "scriptbundle&smg_standard_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_9mm_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 75,
+            "itementry": "scriptbundle&smg_handling_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_9mm_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 75,
+            "itementry": "scriptbundle&smg_capacity_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_9mm_item",
+            "maxweight": 100,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 3,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "floor_list_smg",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

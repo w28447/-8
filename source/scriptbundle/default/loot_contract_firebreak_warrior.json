@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:533441d5ac8cce0d2c02b9f551b6e48bbcdccbb435b7398e839051fb5214c212
-size 511
+{
+    "contentsdetaileddescincludelist": [
+        {
+            "hash_280a44c85709ba6:hash_826726a": "localized17#hash_280a44c85709ba6"
+        }
+    ],
+    "contracticon": "image#ui_icon_hvo_killer_firebreak",
+    "hash_d0100eab": 1,
+    "relateditemname": "localized17#heroes/firebreak",
+    "contracttitle": "localized17#hash_280a44c85709ba6",
+    "name": "loot_contract_firebreak_warrior",
+    "white": "#white",
+    "hash_40534ffb27a37ede:hash_e08fc162": "localized17#hash_40534ffb27a37ede"
+}

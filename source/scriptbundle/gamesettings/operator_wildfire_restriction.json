@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6326971c2082412470de5baf04e69d06fe0c153b26cfe66dda4239f3f28148dd
-size 587
+{
+    "descriptionimage": "image#ui_icon_attachment_smg_accurate_opmod_wildfire",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "operator_wildfire_restriction",
+    "displayname": "localized17#weapon/uber_wildfire",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__smg_fastfire_t8__attachments__uber",
+    "isenableddisabled": 0
+}

@@ -1,3 +1,49 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1b83d5117b78a0b532e013cd198d0e5eff4aa346d5a9e3f644815d6856587303
-size 1521
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&sniper_quickscope_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_338_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&sniper_powerbolt_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_50cal_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&sniper_powersemi_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_338_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&sniper_fastrechamber_t8_item",
+            "childitementry_1": "scriptbundle&ammo_type_338_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&melee_bowie_t8_item",
+            "maxweight": 100,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 200,
+    "type": "itemspawnlist",
+    "hash_345eba59": 5,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 1,
+    "name": "ambush_guns",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

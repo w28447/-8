@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:732b67f951754d3a9fbba1304e7172b594651485b70d9e21fc16b5268daa1b48
-size 288
+{
+    "backingsmall": "image#hash_75692c1dbf2e3c49",
+    "widget": "BadasseryMedal",
+    "name": "events_drone_squadron_multikill_2",
+    "backinglarge": "image#hash_75692c1dbf2e3c49",
+    "iconsmall": "image#hash_776d1b4ece5247fc",
+    "iconlarge": "image#hash_776d1b4ece5247fc"
+}

@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:390947cd1c80cfedc02b4b0160e352e9558cfe2a3f6a4813114b7e4ae7fefc13
-size 296
+{
+    "name": "#hash_26534ece68db0d91",
+    "type": "#tag",
+    "material": "#hash_2a27198cf83671ed",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_859295736cd254c",
+        "icon": "image#loot_ui_icon_tags_heavenlybodies_02",
+        "isdefault": 0
+    }
+}

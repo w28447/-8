@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:107257c892861f45a1a5377beed9475722fc31680e9b160bdc3bf57fec357a41
-size 349
+{
+    "name": "#loot_emote_shared_nobody_just_saw_that",
+    "type": "#gesture",
+    "gesture": "#hash_4311c2912ba56e84",
+    "gesture2": "#hash_28b1f89d76314077",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/you_missed_it",
+        "icon": "image#hash_211185b27c38298e",
+        "isdefault": 0
+    }
+}

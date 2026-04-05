@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3d77c277485ef639f05eb50cea92a234c1ee1df26b450abb3c717caba392184b
-size 336
+{
+    "name": "#hash_18722a5abcde77e7",
+    "type": "#gesture",
+    "gesture": "#hash_75ef8444e50d8765",
+    "gesture2": "#hash_19010b47e0f5351e",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/bend_it",
+        "icon": "image#ui_icon_emotes_jugglesoccreball",
+        "isdefault": 0
+    }
+}

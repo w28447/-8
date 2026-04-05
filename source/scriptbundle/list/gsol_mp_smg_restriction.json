@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2027e5c3f4e150b804eb3e1ea7ca77aef3aa9ea46d37629b303f6cfcd43d9473
-size 416
+{
+    "name": "#gsol_mp_smg_restriction",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#smg_accurate_restriction",
+        "#gamesettings/#smg_capacity_restriction",
+        "#gamesettings/#smg_fastburst_restriction",
+        "#gamesettings/#smg_fastfire_restriction",
+        "#gamesettings/#smg_handling_restriction",
+        "#gamesettings/#smg_standard_restriction"
+    ]
+}

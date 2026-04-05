@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a8f5838aff523623b4ee8c1b3a12eac2606d26cde83fbe84c275d3fe84617843
-size 436
+{
+    "description": "localized17#medal/escort_robot_disable_near_goal_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_escort_robot_disable_near_goal",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_redzone",
+    "stringref": "localized17#medal/escort_robot_disable_near_goal",
+    "iconlarge": "image#ui_icon_medal_redzone_large"
+}

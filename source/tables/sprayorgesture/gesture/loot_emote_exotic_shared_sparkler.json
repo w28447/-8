@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:075fae47fb611a186aeb7d41e47561ef808d622919bc35099ca504a0dc8e65df
-size 329
+{
+    "name": "#loot_emote_exotic_shared_sparkler",
+    "type": "#gesture",
+    "gesture": "#boast_sparkler",
+    "gesture2": "#boast_sparkler_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/sparky",
+        "icon": "image#ui_icon_emotes_sparkler",
+        "isdefault": 0
+    }
+}

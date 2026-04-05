@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:992af6967427615e9246d7dea45dcbe82c7e132391a699ac1abb2d1e5b64ab58
-size 323
+{
+    "configstringfiletype": "scriptbundle",
+    "hash_ce9b2d06": "gsol_zm_shield",
+    "type": "gamesettingoptioncategory",
+    "name": "gsoc_zm_shield",
+    "hash_40c3c9f045a1912d:hash_dea17465": "localized17#hash_40c3c9f045a1912d",
+    "hash_5d5b0643252467de:hash_608158f2": "localized17#hash_5d5b0643252467de"
+}

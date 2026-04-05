@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:34c5b65531a2014154062acf88d0b0a91f19f798f6a9893071f262069eab9fc8
-size 551
+{
+    "descriptionimage": "image#ui_icon_equipment_eq_grapple",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "equipment_grapple_restriction",
+    "displayname": "localized17#weapon/grapple",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__eq_grapple__restricted",
+    "isenableddisabled": 0
+}

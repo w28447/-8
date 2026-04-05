@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a2361f69688a5064748a86bd21c0868cbbfb51eeebb32eec4e04d9611b3a2b87
-size 337
+{
+    "name": "#loot_emote_shared_was_i_shot",
+    "type": "#gesture",
+    "gesture": "#boast_was_i_shot",
+    "gesture2": "#boast_was_i_shot_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/close_call",
+        "icon": "image#ui_icon_emotes_s3_was_i_shot",
+        "isdefault": 0
+    }
+}

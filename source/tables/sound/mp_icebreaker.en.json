@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7c65eefe2d190f5a142f52adf4471222edb2b138e286d79476f90d2bfaaceff4
-size 638
+{
+    "name": "mp_icebreaker.en",
+    "zone": "mp_icebreaker",
+    "gameLanguage": "english",
+    "soundLanguage": "en",
+    "nameHash": "#mp_icebreaker.en",
+    "patchZone": true,
+    "alias": [],
+    "duck": [],
+    "ambients": [],
+    "scriptIdLookups": [],
+    "streamKeysSABL": {
+        "streamKey1": "#mp_icebreaker_en_stream",
+        "dataSize1": 2048,
+        "fileKey": "#mp_icebreaker_en_loaded",
+        "fileLen": 2048
+    },
+    "streamKeysSABS": {
+        "streamKey1": "#hash_1a7fe925f61a0a95",
+        "dataSize1": 2048,
+        "fileKey": "#hash_48ec3c24187c58b0",
+        "fileLen": 2048
+    }
+}

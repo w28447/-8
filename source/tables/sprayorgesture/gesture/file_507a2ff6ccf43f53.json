@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5fee3efd15da36907d1e1b4e508f99f3a48c493008264ec16d5e0d3c3d456cf5
-size 332
+{
+    "name": "#hash_507a2ff6ccf43f53",
+    "type": "#gesture",
+    "gesture": "#hash_64defe85143ff889",
+    "gesture2": "#hash_7b7c20c68322c632",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/wild_style",
+        "icon": "image#ui_icon_emotes_popnlock7",
+        "isdefault": 0
+    }
+}

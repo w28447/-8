@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:561a7929036e1fd0ebe0f28bcb8d0440ac03ba5035c9d9380a2560faefcbc666
-size 230
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_may_god_have_mercy_upon_my_enemies",
+    "quote": "localized17#hash_6ed299b1a7ef7fc1",
+    "author": "localized17#hash_634634cfd78bd43d"
+}

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b7708fcd9f228799f76998407398b9a07d32b98e093dd5ef5ed7c558f498aa10
-size 325
+{
+    "configstringfiletype": "scriptbundle",
+    "hash_ce9b2d06": "gsol_zm_elixirs",
+    "type": "gamesettingoptioncategory",
+    "name": "gsoc_zm_elixirs",
+    "hash_40c3c9f045a1912d:hash_dea17465": "localized17#hash_40c3c9f045a1912d",
+    "hash_19875581b4f83433:hash_608158f2": "localized17#hash_19875581b4f83433"
+}

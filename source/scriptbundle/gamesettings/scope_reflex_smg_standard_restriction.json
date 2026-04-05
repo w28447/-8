@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5ea3f81455287f7b7616ca25911387fb93d1663e49b18cc826536eef5a5518ef
-size 391
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "scope_reflex_smg_standard_restriction",
+    "displayname": "localized17#weapon/smg_standard_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__smg_standard_t8__attachments__reflex",
+    "isenableddisabled": 0
+}

@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c4d6c0b8c8eddd005ae4afa0a2aca81c8076862aec12b96254792ed2a6651486
-size 402
+{
+    "description": "localized17#hash_524dc21542343bb0",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_wz_zombie_kills",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_wz_zombie_kills",
+    "stringref": "localized17#hash_5e3dcba5f5f76268",
+    "iconlarge": "image#ui_icon_medal_wz_zombie_kills_large"
+}

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:28b42e5a0d574e99a7c2f10b74d48674d24a66068fc30b1abd68fcb79a1c21e5
-size 353
+{
+    "backingsmall": "image#t7_hud_medal_backing_badassery",
+    "widget": "BadasseryMedal",
+    "name": "medal_destroyed_mini_turret",
+    "backinglarge": "image#t7_hud_medal_backing_badassery_lrg",
+    "iconsmall": "image#hud_medal_empty",
+    "stringref": "localized17#medal/destroyed_mini_turret",
+    "iconlarge": "image#hud_medal_empty"
+}

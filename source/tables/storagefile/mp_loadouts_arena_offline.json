@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:af12c1198544084793b706abf6eb3f8ee891d57650b41eedc93afc45b3434481
-size 410
+{
+    "nameStr": "mp_loadouts_arena_offline",
+    "name": "#mp_loadouts_arena_offline",
+    "ddlPath": "#gamedata/ddl/generated/mp_loadouts_arena_offline.ddl",
+    "files": [
+        {
+            "fileName": "mp_loadouts_arena_offline"
+        }
+    ],
+    "size": 20480,
+    "readOnLogin": true,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
+}

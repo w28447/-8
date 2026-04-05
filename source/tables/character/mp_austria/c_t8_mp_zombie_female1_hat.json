@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0aeb183843971e2e5d9f4aeba90b29544a34f8a97b2111f09b80a0348fe3a1f1
-size 831
+{
+    "name": "#c_t8_mp_zombie_female1_hat",
+    "skeleton": "base",
+    "voice": "american",
+    "headImpactType": 2,
+    "bodyImpactType": 2,
+    "destructibleDef": "#c_t8_mp_zombie_female_hat1_dst_def",
+    "gibDef": "#c_t8_mp_zombie_male_gib_def",
+    "body": "#hash_50fd8025573bfce5",
+    "head": "#hash_5d8a59ad3b742000",
+    "hat": "#c_t8_mp_zombie_female_hat1",
+    "damagedTorso_Clean": "#hash_68ded8739f06f1aa",
+    "damagedTorso_RightArmGone": "#hash_149fcc3ae86054e1",
+    "damagedTorso_LeftArmGone": "#hash_4e34b11081931a47",
+    "damagedTorso_HeadGone": "#hash_57ecfe4843a0b0db",
+    "damagedLegs_Clean": "#hash_438ce36da50e37bb",
+    "damagedLegs_RightLegGone": "#hash_35d933733e3f60d3",
+    "damagedLegs_LeftLegGone": "#hash_65317c69c540acb1",
+    "damagedLegs_NoLegs": "#hash_4029d29b37847e7c"
+}

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:800675666068ee4685361e1eb91ee2defc533af3390145a5e4688ab8dbd94e3a
-size 190
+{
+    "name": "#gsol_mp_stabilizer2_restriction",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_stabilizer2_sniper_powerbolt_restriction"
+    ]
+}

@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0e8d4c13619806d961e15348f41c4992a3e7f362e7bdaff96f9ae28b1f540ff0
-size 346
+{
+    "name": "#loot_emote_exotic_shared_megaphone",
+    "type": "#gesture",
+    "gesture": "#boast_megaphone",
+    "gesture2": "#boast_megaphone_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/attention",
+        "icon": "image#ui_icon_emotes_s3_police_megaphone",
+        "isdefault": 0
+    }
+}

@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2860d0175a064b9a3c281cd6eb850cd3a14d90f0a611aa5fcabde0b79c380fe1
-size 411
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_quickdraw_pistol_standard_restriction",
+    "displayname": "localized17#weapon/pistol_standard_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__pistol_standard_t8__attachments__quickdraw",
+    "isenableddisabled": 0
+}

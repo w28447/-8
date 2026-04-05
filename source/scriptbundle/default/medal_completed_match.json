@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c9c2b43e68706d0881acd9f3dc832aeb7f5773718568941f4e3fb67c7c083bc1
-size 413
+{
+    "description": "localized17#medal/completed_match_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_completed_match",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_strength_and_honor",
+    "stringref": "localized17#medal/completed_match",
+    "iconlarge": "image#ui_icon_medal_strength_and_honor_large"
+}

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d4f019460631ef4e5484fceac9c73904a0c5c62a0726d2e62a22164eaa394450
-size 278
+{
+    "destroyed": "#hash_405c0526242e69bd",
+    "ready": "#hash_26934d6d61101909",
+    "configstringfiletype": "scriptbundle",
+    "type": "mpdialog_scorestreak",
+    "vmtype": "both",
+    "name": "cdp_taacom_kls_attack_chopper",
+    "hacked": "#hash_ebcb6accef8be8e"
+}

@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:12455bc1240a331316ded63cd4d1b603983793da1f9bdc340eb2aa86be22eb9a
-size 622
+{
+    "name": "#hash_2e88cd8cb0504108",
+    "type": "gamesettingoptioncategory",
+    "bundles": [
+        "#gamesettingoptioncategory/#gsoc_zm_power",
+        "#gamesettingoptioncategory/#gsoc_zm_barricades",
+        "#gamesettingoptioncategory/#gsoc_zm_mysterybox",
+        "#gamesettingoptioncategory/#gsoc_zm_perks",
+        "#gamesettingoptioncategory/#gsoc_zm_packapunch",
+        "#gamesettingoptioncategory/#gsoc_zm_powerups",
+        "#gamesettingoptioncategory/#gsoc_zm_wallbuys",
+        "#gamesettingoptioncategory/#gsoc_zm_elixirs",
+        "#gamesettingoptioncategory/#gsoc_zm_talismans"
+    ]
+}

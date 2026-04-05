@@ -1,3 +1,46 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f3534c644db5b7173b9042e7da261b3467dc2da6bb0c9de94cebe3eb6f0227d5
-size 1276
+{
+    "itemlist": [
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&supply_stash_slot1_dlc1",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&supply_stash_slot2_dlc1",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&supply_stash_slot3_dlc1",
+            "maxweight": 50,
+            "available": 2
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&supply_stash_slot4_dlc1",
+            "maxweight": 50,
+            "available": 2
+        },
+        {
+            "minweight": 50,
+            "itementry": "scriptbundle&supply_stash_slot5_dlc1",
+            "maxweight": 50,
+            "available": 2
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "hash_7fb0967b": 12000,
+    "type": "itemspawnlist",
+    "hash_345eba59": 5,
+    "vehiclespawner": 0,
+    "hash_9b009839": 32,
+    "hash_dc7ffbef": 0,
+    "name": "supply_stash_parent_big_team_battle",
+    "supplystashweight": 100,
+    "hash_dc91e192": 1,
+    "supplystash": 1
+}

@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:df96b8b95a4dda6117984cb29c3c694a9c97fba60e6599bc8fe359eceb094473
-size 461
+{
+    "name": "#gsol_mp_damage2_restriction",
+    "type": "gamesettingoption",
+    "bundles": [
+        "#gamesettings/#attachment_damage2_ar_damage_restriction",
+        "#gamesettings/#attachment_damage2_lmg_heavy_restriction",
+        "#gamesettings/#attachment_damage2_smg_fastburst_restriction",
+        "#gamesettings/#attachment_damage2_sniper_powerbolt_restriction",
+        "#gamesettings/#attachment_damage2_tr_powersemi_restriction"
+    ]
+}

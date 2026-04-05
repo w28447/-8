@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8fb25233d3ce805d50251c31d2b749e46cd5d381d25987d77ed191e4a6308ea5
-size 353
+{
+    "backingsmall": "image#t7_hud_medal_backing_badassery",
+    "widget": "BadasseryMedal",
+    "name": "medal_destroyed_cover",
+    "backinglarge": "image#t7_hud_medal_backing_badassery_lrg",
+    "iconsmall": "image#hash_5470a700e006d85e",
+    "stringref": "localized17#medal/destroyed_cover",
+    "iconlarge": "image#hash_5470a700e006d85e"
+}

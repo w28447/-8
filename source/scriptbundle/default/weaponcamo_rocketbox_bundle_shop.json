@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a1911e25dba7bc6614f37057feaf6589bf7a87477dee0e97b5c33318f08e2966
-size 185
+{
+    "loot03_ui_icon_blackmarket_itemshop_camo_roadhouse:hash_6c274f86": "image#loot03_ui_icon_blackmarket_itemshop_camo_roadhouse",
+    "name": "weaponcamo_rocketbox_bundle_shop"
+}

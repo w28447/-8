@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:036ca6db4b1612e55ab51121d5d9f77d9f75eb24315e30afc0fdcb4b7509d111
-size 326
+{
+    "name": "#hash_2fe4d7acab72f0d6",
+    "type": "#gesture",
+    "gesture": "#hash_5fcf38371610f68",
+    "gesture2": "#hash_2e1b37a13e659b2b",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/kingfish",
+        "icon": "image#hash_7ffeff0b6837fca3",
+        "isdefault": 0
+    }
+}

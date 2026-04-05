@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6b6dcff8e63ac9b69d8c0cf7eb959cfbb8734a6208b0ef9a68eefeeb60ddf016
-size 197
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "mpdialog_scorestreak",
+    "vmtype": "both",
+    "name": "blops_droneop2_kls_combatrobot",
+    "timeout": "#hash_27febd3993d1a668"
+}

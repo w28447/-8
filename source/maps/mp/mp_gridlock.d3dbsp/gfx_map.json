@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e9c54de49880395be9e0e3369992e23bcd11a0bb3a9a49a36e7b399279578af5
-size 353
+{
+    "name": "#maps/mp/mp_gridlock.d3dbsp",
+    "baseName": "mp_gridlock",
+    "lutMaterial": "#lut_mp_gridlock",
+    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "unk550": [
+        "#img_trim_lut_mp_gridlock",
+        "#img_trim_lut_mp_gridlock",
+        "#img_trim_lut_mp_gridlock",
+        "#img_trim_lut_mp_gridlock"
+    ]
+}

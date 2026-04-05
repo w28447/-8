@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2ed3864e1deeb046b2de0fc431b3e353d2c593e07350496a040ba39548180880
-size 473
+{
+    "lootid": "#jumppack_diner",
+    "wingsuit": "scriptbundle&c_t8_bo_wingsuit_diner",
+    "feature": "loot_season_05_mid",
+    "image": "loot_05_ui_icon_blackmarket_stream_jumppack_diner",
+    "name": "c_t8_bo_jumpkit_diner",
+    "displayname": "localized17#hash_5e575e624443053f",
+    "preview_image": "loot_05_ui_icon_blackmarket_stream_jumppack_diner",
+    "hash_4fa85a25": "scriptbundle&dfxt_hwy",
+    "parachute": "scriptbundle&c_t8_bo_parachute_diner"
+}

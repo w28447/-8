@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:748d3b46c260703401e09e61280df2d94f3322592252643c91c1446742e658f9
-size 335
+{
+    "name": "#loot_emote_shared_the_bernie",
+    "type": "#gesture",
+    "gesture": "#boast_the_bernie",
+    "gesture2": "#boast_the_bernie_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/so_bored",
+        "icon": "image#ui_icon_emotes_s3_the_bernie",
+        "isdefault": 0
+    }
+}

@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:734c5525e263330378faabc5d7c2e9c42e49f8131d760a9a9858c936573a36c4
-size 544
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "itementry": "scriptbundle&wz_open_skyscrapers_wallbuy_guns_sniper",
+            "maxweight": 100,
+            "available": -1
+        }
+    ],
+    "hash_3d685b35": 0,
+    "configstringfiletype": "scriptbundle",
+    "type": "itemspawnlist",
+    "hash_345eba59": 1,
+    "vehiclespawner": 0,
+    "hash_9b009839": -1,
+    "hash_dc7ffbef": 0,
+    "name": "wz_open_skyscrapers_wallbuy_guns_list_ambush",
+    "supplystashweight": 100,
+    "hash_dc91e192": 0
+}

@@ -1,3 +1,97 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:710bb9dc2a373b4d81a70b064dd370591a1ed0f78cbbb2de0ef24aadf13ff57c
-size 3300
+{
+    "name": "#zhield_spectral_dw_upgraded_zm",
+    "baseWeapon": "#zhield_spectral_dw_upgraded",
+    "displayname": "#zmweapon/shield_spectral_upg",
+    "altWeapon": "#zhield_spectral_turret_upgraded_zm",
+    "weapon70": "#zhield_spectral_dw",
+    "dualwieldWeaponName": "#zhield_spectral_lh_upgraded_zm",
+    "streamkey": "#hash_588d078b4a03671",
+    "worldModelTagRight": "tag_weapon_right",
+    "worldModelTagLeft": "tag_weapon_right",
+    "stowedModelTag": "tag_stowed_back",
+    "scrstr_11a0": "tag_weapon_right",
+    "scrstr_11a4": "tag_weapon_left",
+    "weaponstarthitpoints": 1000,
+    "soundrattlerangemin": 0,
+    "soundrattlerangemax": 0,
+    "#hash_5b73038c": 1,
+    "#hash_6566504b": 5,
+    "weaponheadobjectiveheight": 20,
+    "sessionMode": "ZOMBIES",
+    "bDrawOffhandModelInHand": true,
+    "lockonseekersearchsoundloops": false,
+    "lockonseekerlockedsoundloops": false,
+    "lockontargetlockedsoundloops": false,
+    "lockontargetfiredonsoundloops": false,
+    "forcedamageshellshockandrumble": false,
+    "#hash_965cc0b3": false,
+    "#hash_50d2316b": false,
+    "#hash_83b1dc1": false,
+    "#hash_2cf49821": false,
+    "#hash_d2751f9d": false,
+    "#hash_554be9f7": false,
+    "accuracyGraphKnot": [
+        [
+            "0 1",
+            "0.1 1",
+            "0.2 0",
+            "1 0"
+        ],
+        [
+            "0 1",
+            "0.0524 0.9014",
+            "0.1251 0.4004",
+            "0.2517 0.1204",
+            "0.5021 0.0508",
+            "1 0.05"
+        ]
+    ],
+    "firesounddistant": "#hash_f74753fbac3a42d",
+    "sound140": "#hash_4c444e794ffeba63",
+    "sound150": "#hash_1969577933820f3e",
+    "sound180": "#hash_78a009f4a2bb6134",
+    "sound190": "#hash_7dd0acf45cbbcf75",
+    "sound1c0": "#hash_4a917f39032aece",
+    "sound1d0": "#hash_5cd16589aa0ac902",
+    "sound1f0": "#hash_892c6f4236d8673",
+    "sound200": "#hash_7d093c892bb190c7",
+    "sound240": "#hash_631a067190b54300",
+    "sound250": "#hash_242aa17124751841",
+    "sound3e0": "#hash_60f9893b7fbb721d",
+    "gadgetreadysoundplayer": "#hash_e4fc19c0c8c3b87",
+    "sound660": "#uin_unavailable_charging",
+    "sound670": "#hash_2f3bcd050faf2acb",
+    "sound680": "#hash_5e8660540cb00c6",
+    "sound690": "#hash_2f94e5844185931f",
+    "sound6a0": "#hash_4acee684993f771a",
+    "sound6b0": "#hash_3987dc18bd5ea9d1",
+    "sound6c0": "#hash_1e69091865bbdbb8",
+    "sound800": "#hash_21cba6ae89a3493c",
+    "sound810": "#hash_21cba6ae89a3493c",
+    "tunables1": "#hash_4a2dad1015be5914",
+    "sharedWeaponSounds": "#battle_shield",
+    "viewmodel": [
+        "#hash_607323a4b934bd31"
+    ],
+    "worldModel": [
+        "#hash_6db3dde314ca084"
+    ],
+    "stowedmodel": [
+        "#hash_6db3dde314ca084"
+    ],
+    "gadgetIconAvailable": "#hash_93ef923686346dc9",
+    "gadgetIconUnavailable": "#hash_93ef923686346dc9",
+    "inventoryIconZm": "#hash_93ef923686346dc9",
+    "hudIcon": "#hash_93ef923686346dc9",
+    "image_e90": "#hash_93ef923686346dc9",
+    "image_1048": "#hash_93ef923686346dc9",
+    "fx_bd8": "#hash_f282363a66bd14e2",
+    "#hash_21329beb": [
+        {
+            "model": "#hash_6db3dde314ca084"
+        },
+        {
+            "model": "#hash_6db3dde314ca084"
+        }
+    ]
+}

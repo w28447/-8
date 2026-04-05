@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:95c1dbfe895b9f983187bd6de00f605f68a0dc6677233ce3fdd5e2c5b587e80a
-size 491
+{
+    "blade_multikill_2": "#blade_multikill_2",
+    "blade_multikill_2": "#blade_multikill_2",
+    "blade_kill": "#blade_kill",
+    "configstringfiletype": "scriptbundle",
+    "type": "scoreevents",
+    "vmtype": "both",
+    "blade_multikill_2": "#blade_multikill_2",
+    "name": "sig_blade_scoreevents",
+    "customsettingstype": "ability",
+    "blade_multikill_2": "#blade_multikill_2",
+    "blade_shutdown": "#blade_shutdown",
+    "blade_multikill_2": "#blade_multikill_2"
+}

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5b7278725a8921b1ee54bff7eb4d4f7222ae8c7c8b03fbebc480b3355c2efd77
-size 307
+{
+    "callingtask": "#kills_shotguns",
+    "configstringfiletype": "scriptbundle",
+    "image": "image#ui_icon_zm_calling_tasks_shotgun",
+    "dailytarget": 750,
+    "name": "shotguns_task",
+    "taskname": "localized17#hash_6eef3b21ce8a0e1",
+    "descsimple": "localized17#hash_6b9a45a8fa35a4c0"
+}

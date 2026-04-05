@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d1d5aa2930812bfbae83cb289cd95fe58fcc1a6665346ae9facf1544d81a4cf9
-size 555
+{
+    "descriptionimage": "image#ui_icon_gadget_cleanse_mp",
+    "configstringfiletype": "scriptbundle",
+    "value2": "1",
+    "value1": "0",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "ability_cleanse_restriction",
+    "displayname": "localized17#weapon/gadget_cleanse",
+    "label1": "localized17#menu/enabled",
+    "label2": "localized17#menu/disabled",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__eq_localheal__restricted",
+    "isenableddisabled": 0
+}

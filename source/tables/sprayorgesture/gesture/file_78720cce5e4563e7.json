@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1faa92f8d4bca343d09fe85ac42e1b33da7844d3d7a8c0f6819235dff3bc2814
-size 332
+{
+    "name": "#hash_78720cce5e4563e7",
+    "type": "#gesture",
+    "gesture": "#hash_3351dc50eeff2e6b",
+    "gesture2": "#boast_battery_tnt",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/cluster_funk",
+        "icon": "image#ui_icon_emotes_battery_tnt",
+        "isdefault": 0
+    }
+}

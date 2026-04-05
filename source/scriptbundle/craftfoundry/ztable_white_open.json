@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:812f8bbac719c1f779581e86ddc6664f859817d7d41485d509a77dbb53eddcee
-size 289
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "craftfoundry",
+    "blueprintcount": 2,
+    "blueprint01": "scriptbundle&zblueprint_zhield_white",
+    "blueprint02": "scriptbundle&zblueprint_white_mmtd",
+    "name": "ztable_white_open",
+    "displayname": "Open Table"
+}

@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:729ed74b93a05cbb074e75801704bf1ac31233949645887a967905388b712a64
-size 397
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_stalker2_tr_midburst_restriction",
+    "displayname": "localized17#weapon/tr_midburst_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__tr_midburst_t8__attachments__stalker2",
+    "isenableddisabled": 0
+}

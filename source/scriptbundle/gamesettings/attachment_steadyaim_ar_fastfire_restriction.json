@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8ca1e645721b2c1cd0f924209556d2d83c70024e0b531ddc3e657daf34aa7bd4
-size 399
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "attachment_steadyaim_ar_fastfire_restriction",
+    "displayname": "localized17#weapon/ar_fastfire_t8",
+    "hash_54e336e4": 0,
+    "optionscount": 2,
+    "hash_765cfd09": 0,
+    "setting": "itemRestrictions__ar_fastfire_t8__attachments__steadyaim",
+    "isenableddisabled": 0
+}

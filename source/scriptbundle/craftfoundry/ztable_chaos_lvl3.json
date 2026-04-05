@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6cd0d1b016801d5ba60917e27796c2dad6d23acd9f63b1db6bc86913af34481c
-size 232
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "craftfoundry",
+    "blueprintcount": 1,
+    "blueprint01": "scriptbundle&zblueprint_chaos_lvl3",
+    "name": "ztable_chaos_lvl3",
+    "displayname": "Silver Bullet"
+}

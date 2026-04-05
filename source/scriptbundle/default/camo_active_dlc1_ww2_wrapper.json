@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a138db8e08215b24dd68dfb2a925f8bd067396259fab13f92c530700ae75a861
-size 123
+{
+    "hash_73c3b4586b7d1296:hash_6c274f86": "image#hash_73c3b4586b7d1296",
+    "name": "camo_active_dlc1_ww2_wrapper"
+}

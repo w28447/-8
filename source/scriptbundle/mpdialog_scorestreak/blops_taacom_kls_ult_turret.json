@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f39f761dc27aa7e6b20fa56b98f9a44e8971c91b49fd21e18532b851dbb0793d
-size 236
+{
+    "destroyed": "#hash_31cd5b2b9f1f1bde",
+    "ready": "#hash_2d6085885c256f1e",
+    "configstringfiletype": "scriptbundle",
+    "type": "mpdialog_scorestreak",
+    "vmtype": "both",
+    "name": "blops_taacom_kls_ult_turret"
+}

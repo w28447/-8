@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c053abfbb72b5a8ad10f4e0e2b7b8331114e8d0cbbe7c64aac10d08a2746d9a3
-size 786
+{
+    "hasmigration": 1,
+    "lobbymode": 1,
+    "id": 2206,
+    "settingscount": 1,
+    "backtarget": "director_online",
+    "maxlocalclientsnetwork": 1,
+    "mainmode": 1,
+    "hash_d16ccae8": 1,
+    "isprivate": 1,
+    "showteams": 1,
+    "lobbytype": 0,
+    "menumusic": "lobby_mp",
+    "room": "arena_pose",
+    "hash_7f60c82f": 12,
+    "kicker": "localized17#hash_12df6ed539ca406a",
+    "isadvertised": 0,
+    "maxclients": 14,
+    "name": "director_online_mp_arena_custom",
+    "networkmode": 2,
+    "errtarget": "director_online_mp_arena_custom",
+    "egamemodes": 5,
+    "hash_ec76767d": 5,
+    "title": "localized17#hash_44b08b09636ecd9e",
+    "hash_f68d7d0": 2,
+    "isgame": 0,
+    "maxlocalclients": 2,
+    "hash_38c7a0d1": "showdirectorarena"
+}

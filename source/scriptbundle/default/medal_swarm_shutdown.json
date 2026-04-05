@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9f2e9e3e0c6c4ac70562df250358a04abe2e7bf4da5230c0995cb6596f144898
-size 400
+{
+    "description": "localized17#medal/swarm_shutdown_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_swarm_shutdown",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_destroy_swarm",
+    "stringref": "localized17#medal/swarm_shutdown",
+    "iconlarge": "image#ui_icon_medal_destroy_swarm_large"
+}

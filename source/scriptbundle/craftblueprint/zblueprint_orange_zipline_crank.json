@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6296740aa1ef46263322b0b14487257cb93237eef92c35dc2609ab43754ff165
-size 554
+{
+    "hash_11928e3b": 0,
+    "configstringfiletype": "scriptbundle",
+    "result": "weapon#pistol_topbreak_t8_zm",
+    "type": "craftblueprint",
+    "hash_3c809ce0": 0,
+    "hash_e414062": 0,
+    "component01": "weapon#zitem_orange_zipline_crank_part_1_zm",
+    "component02": "weapon#zitem_orange_zipline_crank_part_2_zm",
+    "name": "zblueprint_orange_zipline_crank",
+    "displayname": "orange_zipline_crank",
+    "postcraft": "one_time_craft",
+    "componentcount": 2,
+    "takecomponents": 1,
+    "hash_318c150c": "section_quests"
+}

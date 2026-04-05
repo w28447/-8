@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9ad43e585c7b9107d7b9757d13219eff019a12f8a2f4d81d490cfc2511ff904e
-size 360
+{
+    "nameStr": "external_data",
+    "name": "#external_data",
+    "ddlPath": "#gamedata/ddl/generated/external_data.ddl",
+    "files": [
+        {
+            "fileName": "external_data"
+        }
+    ],
+    "size": 1024,
+    "readOnLogin": true,
+    "readOnly": true,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
+}

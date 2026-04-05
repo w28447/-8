@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:68fba4bcde08db9d54609fd1edc66e5175a246c9b6dbd44ba88bfc2b5a327040
-size 339
+{
+    "name": "#loot_emote_shared_mad_respect",
+    "type": "#gesture",
+    "gesture": "#boast_mad_respect",
+    "gesture2": "#boast_mad_respect_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/mad_respect",
+        "icon": "image#ui_icon_emotes_mad_respect",
+        "isdefault": 0
+    }
+}

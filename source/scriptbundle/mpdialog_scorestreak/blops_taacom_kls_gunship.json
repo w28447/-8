@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9744425294145007a20a6f5509d7901dabf1ddd58e20ccb4295509b5f5404cbc
-size 303
+{
+    "destroyed": "#hash_4f0b345b67a09e54",
+    "ready": "#hash_6349798a35f1a58c",
+    "configstringfiletype": "scriptbundle",
+    "type": "mpdialog_scorestreak",
+    "vmtype": "both",
+    "name": "blops_taacom_kls_gunship",
+    "hash_735a6244d7ef29a1:hash_61d32c30": "#hash_735a6244d7ef29a1"
+}

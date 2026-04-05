@@ -1,3 +1,43 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:43c0c2c0d378d76a6d036ac576a1d9a15c24caaf0a8e18087a81958f5f7645bf
-size 981
+{
+    "nameStr": "custom_games_zm",
+    "name": "#custom_games_zm",
+    "ddlPath": "#gamedata/ddl/generated/zm_custom_game.ddl",
+    "files": [
+        {
+            "fileName": "custom_games_zm"
+        },
+        {
+            "fileName": "custom_games_zm_1"
+        },
+        {
+            "fileName": "custom_games_zm_2"
+        },
+        {
+            "fileName": "custom_games_zm_3"
+        },
+        {
+            "fileName": "custom_games_zm_4"
+        },
+        {
+            "fileName": "custom_games_zm_5"
+        },
+        {
+            "fileName": "custom_games_zm_6"
+        },
+        {
+            "fileName": "custom_games_zm_7"
+        },
+        {
+            "fileName": "custom_games_zm_8"
+        },
+        {
+            "fileName": "custom_games_zm_9"
+        }
+    ],
+    "size": 1024,
+    "readOnLogin": false,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
+}

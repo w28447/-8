@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:90d4a04b5c9e75a123f7c4831bd0bc9cd3398b22d85521c171e1c80a83ac52e0
-size 403
+{
+    "description": "localized17#medal/infected_survivor_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_infected_survivor",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_contagious",
+    "stringref": "localized17#medal/infected_survivor",
+    "iconlarge": "image#ui_icon_medal_contagious_large"
+}

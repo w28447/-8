@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:89e4d59099efaa0fb009ea1f5a66562b5bff5f03054e6ca73a56a9768999965c
-size 128
+{
+    "hash_4283ded2d317ae27:hash_6c274f86": "image#hash_4283ded2d317ae27",
+    "name": "camo_active_dlc4_115_wrapper_shop"
+}

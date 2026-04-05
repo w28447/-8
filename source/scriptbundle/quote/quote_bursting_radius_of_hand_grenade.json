@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b550d736a7ccecd0cd9b424991fb2d0ecd2b486ad52d17eacbc6dc0d8e99f888
-size 227
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_bursting_radius_of_hand_grenade",
+    "quote": "localized17#hash_5c75dcbae4ffded3",
+    "author": "localized17#hash_4e55371bb0e6c43f"
+}

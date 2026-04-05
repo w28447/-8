@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1a24be69180499fdf5769e604107877dfae5bfbd4567009626331db7f4ff929a
-size 578
+{
+    "hinttext": "localized17#menu/carrier_move_speed_hint",
+    "configstringfiletype": "scriptbundle",
+    "value2": "2",
+    "value3": "3",
+    "value1": "1",
+    "type": "gamesettings",
+    "hash_5a6dee5a": 0,
+    "name": "carrier_move_speed",
+    "displayname": "localized17#menu/carrier_move_speed",
+    "label1": "localized17#menu/slow",
+    "label3": "localized17#menu/fast",
+    "label2": "localized17#menu/normal",
+    "hash_54e336e4": 0,
+    "optionscount": 3,
+    "hash_765cfd09": 0,
+    "setting": "carrierMoveSpeed",
+    "isenableddisabled": 0
+}

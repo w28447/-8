@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:708776ef8f82ca29cd26036fa133478f03024b34e9066a3126f7a8ebc1fde633
-size 423
+{
+    "description": "localized17#medal/kill_enemy_when_injured_desc",
+    "backingsmall": "image#$whitetransparent",
+    "widget": "BadasseryMedal",
+    "name": "medal_kill_enemy_when_injured",
+    "backinglarge": "image#$whitetransparent",
+    "iconsmall": "image#ui_icon_medal_survivor_large",
+    "stringref": "localized17#medal/kill_enemy_when_injured",
+    "iconlarge": "image#ui_icon_medal_survivor_large"
+}

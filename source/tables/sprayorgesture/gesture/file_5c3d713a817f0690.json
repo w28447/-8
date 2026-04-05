@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:43acfcda94cfe31a5539b7860c9086e805a5995d1115fee422d2fafe5e456d69
-size 330
+{
+    "name": "#hash_5c3d713a817f0690",
+    "type": "#gesture",
+    "gesture": "#hash_2a5602d74154ebaa",
+    "gesture2": "#hash_7411c666cc107105",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/reconga",
+        "icon": "image#ui_icon_emotes_salsadance",
+        "isdefault": 0
+    }
+}

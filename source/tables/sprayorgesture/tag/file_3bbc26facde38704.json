@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a186bea4d0ba8c423748416338978908019f6df9fea161769be8bbabed76322b
-size 297
+{
+    "name": "#hash_3bbc26facde38704",
+    "type": "#tag",
+    "material": "#hash_660601e58d5fd628",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_79044eb379afed65",
+        "icon": "image#loot_ui_icon_tags_caricature_torque",
+        "isdefault": 0
+    }
+}

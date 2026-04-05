@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d979c9261aa58879528a6502abb0cd9d6cc72189bd1e7cc2e3fd5e6da7eda3ae
-size 210
+{
+    "configstringfiletype": "scriptbundle",
+    "type": "quote",
+    "name": "quote_war_is_a_crime",
+    "quote": "localized17#hash_66bb486aa0fb4acf",
+    "author": "localized17#hash_7b728f3215143808"
+}

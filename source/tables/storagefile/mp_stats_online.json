@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ff5ccffa2ef24a549088145e9a4b28f0924fed027ad9435e331849d3810303a4
-size 364
+{
+    "nameStr": "mp_stats_online",
+    "name": "#mp_stats_online",
+    "ddlPath": "#gamedata/ddl/generated/mp_stats.ddl",
+    "files": [
+        {
+            "fileName": "mp_stats_online"
+        }
+    ],
+    "size": 112640,
+    "readOnLogin": true,
+    "readOnly": false,
+    "sendToServer": true,
+    "useScratch": false,
+    "optional": false
+}

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ca0c0253e4c322fe2988a4e0f4221b22292efc9f45e956724b57cb60057bcb03
-size 307
+{
+    "callingtask": "#kills_ar",
+    "configstringfiletype": "scriptbundle",
+    "image": "image#ui_icon_zm_callings_assaultrifle",
+    "dailytarget": 750,
+    "name": "assaultrifles_task",
+    "taskname": "localized17#hash_16ea5e9adde003c8",
+    "descsimple": "localized17#hash_3c8307d3eba2468b"
+}
