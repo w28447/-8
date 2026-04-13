@@ -1,4 +1,4 @@
-require( "x64:2afa491a35484d6" )
+require( "ui/uieditor/widgets/pc/pc_telemetryitem" )
 
 CoD.PC_PerfStatsContainer = InheritFrom( LUI.UIElement )
 CoD.PC_PerfStatsContainer.__defaultWidth = 1000

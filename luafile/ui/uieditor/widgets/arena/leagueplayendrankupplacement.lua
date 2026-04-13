@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/aar_t8/levelup/aarlevelupoverlay_cornerbracketinternal" )
 require( "ui/uieditor/widgets/aar_t8/rewards/aarplayerreward_diagonalheaderinternal" )
-require( "x64:6031721cab048e6" )
-require( "x64:f2b91a797a4464b" )
+require( "ui/uieditor/widgets/arena/arenaleagueplayrubieslist" )
+require( "ui/uieditor/widgets/arena/leagueplayendrankposition" )
 
 CoD.LeaguePlayEndrankupplacement = InheritFrom( LUI.UIElement )
 CoD.LeaguePlayEndrankupplacement.__defaultWidth = 604

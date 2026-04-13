@@ -1,4 +1,4 @@
-require( "x64:3eb34e82acd68cf" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_dirtcar_shooter" )
 
 CoD[0x12E15CAA184F593] = InheritFrom( LUI.UIElement )
 CoD[0x12E15CAA184F593].__defaultWidth = 960

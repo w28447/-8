@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/footer/fe_leftcontainer_notlobby" )
-require( "x64:2cf4ad39ea2c548" )
+require( "ui/uieditor/widgets/itemshop/itemshopbackgroundblur" )
 require( "ui/uieditor/widgets/pc/pc_smallclosebutton" )
 require( "ui/uieditor/widgets/systemoverlays/featureoverlay_button_mouseonly" )
 

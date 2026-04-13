@@ -1,6 +1,6 @@
-require( "x64:d567dad3d4f87ba" )
-require( "x64:810ae5389ec6d7" )
-require( "x64:431a5037dc89b6f" )
+require( "ui/uieditor/widgets/mphudwidgets/bountyhunter/bountyhunterbuyinternal" )
+require( "ui/uieditor/widgets/mphudwidgets/bountyhunter/bountyhunteropenprompt" )
+require( "ui/uieditor/widgets/mphudwidgets/bountyhunter/bountyhunterradialtimer" )
 require( "x64:3e4f33ba044e8d1" )
 
 CoD.BountyHunterBuy = InheritFrom( CoD.Menu )

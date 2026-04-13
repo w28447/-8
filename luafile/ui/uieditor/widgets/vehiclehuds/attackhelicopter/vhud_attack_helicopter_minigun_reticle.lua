@@ -1,4 +1,4 @@
-require( "x64:b3d63c2af91409d" )
+require( "ui/uieditor/widgets/duplicatestateimage" )
 
 CoD.vhud_attack_helicopter_minigun_reticle = InheritFrom( LUI.UIElement )
 CoD.vhud_attack_helicopter_minigun_reticle.__defaultWidth = 10

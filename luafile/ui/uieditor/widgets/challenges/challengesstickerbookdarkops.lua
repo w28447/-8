@@ -1,6 +1,6 @@
-require( "x64:81384373cfadc50" )
+require( "ui/uieditor/widgets/challenges/challenges_callingcardprofiler_darkops" )
 require( "ui/uieditor/widgets/challenges/challenges_callingcardwidget" )
-require( "x64:79fe6ac43673588" )
+require( "ui/uieditor/widgets/challenges/challenges_framewidget_titlebackground" )
 require( "ui/uieditor/widgets/challenges/challenges_mastercallingcardwidget" )
 require( "ui/uieditor/widgets/scrollbars/verticalcounter" )
 

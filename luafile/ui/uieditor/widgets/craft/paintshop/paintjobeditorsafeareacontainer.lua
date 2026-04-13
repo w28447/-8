@@ -1,4 +1,4 @@
-require( "x64:4a46c5eb417fe54" )
+require( "ui/uieditor/widgets/craft/emblemeditor/emblemeditorlayerproperties" )
 
 CoD.PaintjobEditorSafeAreaContainer = InheritFrom( LUI.UIElement )
 CoD.PaintjobEditorSafeAreaContainer.__defaultWidth = 1920

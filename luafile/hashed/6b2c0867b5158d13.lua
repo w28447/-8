@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/endgameflow/finalkillcamwidget" )
 require( "ui/uieditor/widgets/endgameflow/killcamwidget" )
-require( "x64:8561c81010cda6d" )
+require( "ui/uieditor/widgets/endgameflow/playofthematchwidget" )
 
 CoD.KillcamMenu = InheritFrom( CoD.Menu )
 LUI.createMenu.KillcamMenu = function ( f1_arg0, f1_arg1 )

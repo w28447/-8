@@ -1,4 +1,4 @@
-require( "x64:704a0d70f9c7c02" )
+require( "ui/uieditor/widgets/demo/segmentbuttoninternal" )
 
 CoD.SegmentButton = InheritFrom( LUI.UIElement )
 CoD.SegmentButton.__defaultWidth = 321

@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/customgames/customgames_optioncategorybutton" )
-require( "x64:1391e29b3804784" )
+require( "ui/uieditor/widgets/codcaster/codcastersettingssidebarloadoutsettingscontainer" )
 
 CoD.CodCasterSettingsSideBarDisplaySettings = InheritFrom( LUI.UIElement )
 CoD.CodCasterSettingsSideBarDisplaySettings.__defaultWidth = 960

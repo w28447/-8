@@ -1,4 +1,4 @@
-require( "x64:5677da2fba4b1c9" )
+require( "ui/uieditor/widgets/zmhudwidgets/zm_title_fog" )
 
 CoD.ZMTributeSplash = InheritFrom( LUI.UIElement )
 CoD.ZMTributeSplash.__defaultWidth = 1920

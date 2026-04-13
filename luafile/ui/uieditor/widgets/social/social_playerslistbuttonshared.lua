@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/social/social_partymembericonlarge" )
-require( "x64:d0dd4bae5f1fadb" )
+require( "ui/uieditor/widgets/social/social_playerslistbutton_trial" )
 require( "ui/uieditor/widgets/social/social_playerslistrankinfo" )
-require( "x64:d2872b253938e36" )
+require( "ui/uieditor/widgets/pc/directorlobbyclanandmembernamecontainerpc" )
 
 CoD.Social_PlayersListButtonShared = InheritFrom( LUI.UIElement )
 CoD.Social_PlayersListButtonShared.__defaultWidth = 474

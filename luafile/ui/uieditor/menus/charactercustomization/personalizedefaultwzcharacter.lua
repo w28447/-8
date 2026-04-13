@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframe" )
 require( "x64:86b4582183041dd" )
 require( "ui/uieditor/widgets/common/common_tabbar_center" )
-require( "x64:9dc2d0c43534ce4" )
+require( "ui/uieditor/widgets/common/commontabbutton" )
 require( "ui/uieditor/widgets/pc/utility/xcammousecontrol" )
 
 CoD.PersonalizeDefaultWZCharacter = InheritFrom( CoD.Menu )

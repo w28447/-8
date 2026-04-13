@@ -1,5 +1,5 @@
-require( "x64:e01da863e7cc28f" )
-require( "x64:203538cb29e5bca" )
+require( "ui/uieditor/widgets/health/healthinfo" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_specialistescalation" )
 
 CoD.CodCasterPortraitPlayerCard = InheritFrom( LUI.UIElement )
 CoD.CodCasterPortraitPlayerCard.__defaultWidth = 320

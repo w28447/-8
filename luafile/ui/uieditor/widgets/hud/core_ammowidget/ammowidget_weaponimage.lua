@@ -1,5 +1,5 @@
-require( "x64:247246d7126f06b" )
-require( "x64:729e84a5e6a8211" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_powerweapondrain" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_weaponname" )
 
 CoD.AmmoWidget_WeaponImage = InheritFrom( LUI.UIElement )
 CoD.AmmoWidget_WeaponImage.__defaultWidth = 164

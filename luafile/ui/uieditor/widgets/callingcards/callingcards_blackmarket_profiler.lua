@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/blackmarket/bm_goldbarmed" )
-require( "x64:726ee02b8bfc586" )
+require( "ui/uieditor/widgets/blackmarket/bm_profilerlock" )
 require( "ui/uieditor/widgets/callingcards/callingcards_framewidget" )
-require( "x64:bc87ac3fc76bb82" )
+require( "ui/uieditor/widgets/itemshop/contracts/contractrarityheader" )
 
 CoD.CallingCards_BlackMarket_Profiler = InheritFrom( LUI.UIElement )
 CoD.CallingCards_BlackMarket_Profiler.__defaultWidth = 525

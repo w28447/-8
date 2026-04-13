@@ -1,4 +1,4 @@
-require( "x64:6605197a499f159" )
+require( "ui/uieditor/widgets/mp/specialisthub/hubtagbonusbutton_internal" )
 
 CoD.HubTagBonusButton = InheritFrom( LUI.UIElement )
 CoD.HubTagBonusButton.__defaultWidth = 152

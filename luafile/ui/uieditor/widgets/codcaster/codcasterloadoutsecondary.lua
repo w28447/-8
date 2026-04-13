@@ -1,6 +1,6 @@
-require( "x64:6c3d775b9bb460e" )
-require( "x64:4e0bfd4092177e1" )
-require( "x64:cebbbd9d9d61e8f" )
+require( "ui/uieditor/widgets/codcaster/codcasterloadoutmodulesecondaryattachment" )
+require( "ui/uieditor/widgets/codcaster/codcasterloadoutmodulesecondarywildcard" )
+require( "ui/uieditor/widgets/codcaster/codcasterloadoutsecondaryweapon" )
 
 CoD.CodCasterLoadoutSecondary = InheritFrom( LUI.UIElement )
 CoD.CodCasterLoadoutSecondary.__defaultWidth = 501

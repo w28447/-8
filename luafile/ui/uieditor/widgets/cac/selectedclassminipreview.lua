@@ -1,5 +1,5 @@
-require( "x64:fd561622867b8bd" )
-require( "x64:9c626a0110d2a99" )
+require( "ui/uieditor/widgets/cac/classminipreview" )
+require( "ui/uieditor/widgets/cac/customclasslistbutton" )
 
 CoD.SelectedClassMiniPreview = InheritFrom( LUI.UIElement )
 CoD.SelectedClassMiniPreview.__defaultWidth = 1920

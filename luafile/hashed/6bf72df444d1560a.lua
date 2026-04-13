@@ -1,6 +1,6 @@
 require( "x64:4214f1167c44c4c" )
-require( "x64:c598e2c46494586" )
-require( "x64:3f87e09b354d3dc" )
+require( "ui/uieditor/widgets/itemshop/supplychain/supplychaindetailimage3d" )
+require( "ui/uieditor/widgets/itemshop/supplychain/supplychaindetails_infopanel" )
 require( "ui/uieditor/widgets/pc/utility/xcammousecontrol" )
 
 CoD.WeaponBribeDetails = InheritFrom( LUI.UIElement )

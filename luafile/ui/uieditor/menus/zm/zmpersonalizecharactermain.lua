@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframe" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsbackground" )
-require( "x64:c191dad9fd5ceda" )
+require( "ui/uieditor/widgets/startmenu/startmenu_personalization_zm" )
 
 CoD.ZMPersonalizeCharacterMain = InheritFrom( CoD.Menu )
 LUI.createMenu.ZMPersonalizeCharacterMain = function ( f1_arg0, f1_arg1 )

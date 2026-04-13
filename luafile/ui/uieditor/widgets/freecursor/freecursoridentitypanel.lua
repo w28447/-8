@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/callingcards/callingcards_framewidget" )
-require( "x64:2eff9733aa0a59e" )
+require( "ui/uieditor/widgets/freecursor/infopanelsubwidgets/freecursorpartyleader" )
 
 CoD.freeCursorIdentityPanel = InheritFrom( LUI.UIElement )
 CoD.freeCursorIdentityPanel.__defaultWidth = 369

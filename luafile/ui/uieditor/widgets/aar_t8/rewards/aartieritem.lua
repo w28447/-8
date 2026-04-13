@@ -1,4 +1,4 @@
-require( "x64:bc369071cd70b7c" )
+require( "ui/uieditor/widgets/aar_t8/rewards/aartierpip" )
 
 CoD.AARTierItem = InheritFrom( LUI.UIElement )
 CoD.AARTierItem.__defaultWidth = 380

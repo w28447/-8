@@ -1,6 +1,6 @@
 require( "x64:b1264dcdcf2dd99" )
 require( "ui/uieditor/widgets/systemoverlays/featureoverlay_button" )
-require( "x64:91ee3f5c466ea3a" )
+require( "ui/uieditor/widgets/systemoverlays/systemoverlay_prestigerewards" )
 
 CoD.systemOverlay_Prestige = InheritFrom( LUI.UIElement )
 CoD.systemOverlay_Prestige.__defaultWidth = 1920

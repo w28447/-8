@@ -1,6 +1,6 @@
 require( "lua/shared/luaenum" )
 require( "ui/utility/overlayutility" )
-require( "x64:9cd20b96ee987a9" )
+require( "ui/utility/surveyutility" )
 
 CoD.AnalyticsUtility = {}
 CoD.AnalyticsUtility.SurveyResult = LuaEnum.createEnum( "Yes", "No", "SkipRead", "SkipBack" )

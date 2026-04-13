@@ -1,5 +1,5 @@
-require( "x64:abbd658ce01510c" )
-require( "x64:185563fab2ddf96" )
+require( "ui/uieditor/widgets/charactercustomization/wzcharacterinfocontainer" )
+require( "ui/uieditor/widgets/specialist/specialistpersonalizationbuttonoption" )
 
 CoD.StartMenu_Personalization_WZ = InheritFrom( LUI.UIElement )
 CoD.StartMenu_Personalization_WZ.__defaultWidth = 1920

@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/onoffvoip" )
 require( "ui/uieditor/widgets/scoreboard/scoreboardplayerwidget" )
-require( "x64:edc865de5fd7c3f" )
+require( "ui/uieditor/widgets/scoreboard/tabbedscoreboardffastatbox" )
 require( "ui/uieditor/widgets/scoreboard/tabbedscoreboardrank" )
 require( "ui/uieditor/widgets/scoreboard/tabbedscoreboardrowselected" )
 require( "ui/uieditor/widgets/scoreboard/tabbedscoreboardstatbox" )

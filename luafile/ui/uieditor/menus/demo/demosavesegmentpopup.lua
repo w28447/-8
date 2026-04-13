@@ -1,7 +1,7 @@
-require( "x64:c2f840fd2528321" )
+require( "ui/uieditor/widgets/craft/emblemeditor/emblemoptionsbutton" )
 require( "ui/uieditor/widgets/fileshare/fullscreenpopup/fullscreenpopuptemplate" )
 require( "ui/uieditor/widgets/footer/fe_leftcontainer_notlobby" )
-require( "x64:5498fd235ed9285" )
+require( "ui/uieditor/widgets/demo/demorenametextbox" )
 require( "x64:8a2bfd7fd77a149" )
 
 CoD.DemoSaveSegmentPopup = InheritFrom( CoD.Menu )

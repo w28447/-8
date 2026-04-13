@@ -1,7 +1,7 @@
-require( "x64:c2f840fd2528321" )
+require( "ui/uieditor/widgets/craft/emblemeditor/emblemoptionsbutton" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsmainframe" )
 require( "ui/uieditor/widgets/systemoverlays/systemoverlay_layout_foregroundmultilinetext" )
-require( "x64:bd4f2948bbf0002" )
+require( "ui/uieditor/widgets/utilities/imageprompt" )
 
 CoD.systemOverlay_Layout_Groups = InheritFrom( LUI.UIElement )
 CoD.systemOverlay_Layout_Groups.__defaultWidth = 1920

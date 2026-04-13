@@ -1,6 +1,6 @@
-require( "x64:f5fc069b41ddebe" )
-require( "x64:418c603e13e58f2" )
-require( "x64:1b01b9f64de6381" )
+require( "ui/uieditor/widgets/demo/demoplaybackcontrols" )
+require( "ui/uieditor/widgets/demo/democontextpanel" )
+require( "ui/uieditor/widgets/demo/demoicons" )
 require( "x64:8a2bfd7fd77a149" )
 
 CoD.Demo = InheritFrom( LUI.UIElement )

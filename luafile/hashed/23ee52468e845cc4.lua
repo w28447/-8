@@ -1,5 +1,5 @@
-require( "x64:7dacefed967e3df" )
-require( "x64:a88f2d181325438" )
+require( "ui/uieditor/widgets/common/commonbackingwithbrackets" )
+require( "ui/uieditor/widgets/notifications/xp/tierboostambientglow" )
 
 CoD.AARTierSkipNotification = InheritFrom( LUI.UIElement )
 CoD.AARTierSkipNotification.__defaultWidth = 258

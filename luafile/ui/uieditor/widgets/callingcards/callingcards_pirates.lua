@@ -1,5 +1,5 @@
-require( "x64:3d33ce699f2ae4d" )
-require( "x64:c61249ff76c1459" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_pirates_mast" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_pirates_pirate" )
 
 CoD[0x2610197D1A9043B] = InheritFrom( LUI.UIElement )
 CoD[0x2610197D1A9043B].__defaultWidth = 960

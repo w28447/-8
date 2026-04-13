@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/blackmarket/bm_goldbarmed" )
-require( "x64:94acc3cb318e13b" )
-require( "x64:8ffe7c4e01e7052" )
+require( "ui/uieditor/widgets/blackmarket/bm_lock" )
+require( "ui/uieditor/widgets/cac/itemnewbreadcrumbwidget" )
 require( "ui/uieditor/widgets/onoffimage" )
 require( "x64:2d361ac3553c22a" )
 

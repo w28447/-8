@@ -1,7 +1,7 @@
-require( "x64:f35eef72ee10697" )
-require( "x64:662766a1c1ca1e" )
-require( "x64:1ecbc1d1881ae6" )
-require( "x64:2f376e3ba06d89e" )
+require( "ui/uieditor/widgets/arena/arenakillcamplayerrank" )
+require( "ui/uieditor/widgets/endgameflow/killcamplayercard" )
+require( "ui/uieditor/widgets/endgameflow/killcamplayerhealth" )
+require( "ui/uieditor/widgets/endgameflow/killcamplayerrank" )
 
 CoD.PlayOfTheMatchCallingCard = InheritFrom( LUI.UIElement )
 CoD.PlayOfTheMatchCallingCard.__defaultWidth = 594

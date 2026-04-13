@@ -1,4 +1,4 @@
-require( "x64:673b9bfc92c298b" )
+require( "ui/uieditor/widgets/director/directorlobbymember" )
 
 CoD.PC_PartyListContainer = InheritFrom( LUI.UIElement )
 CoD.PC_PartyListContainer.__defaultWidth = 68

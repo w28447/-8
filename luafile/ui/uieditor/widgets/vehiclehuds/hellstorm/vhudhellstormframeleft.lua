@@ -1,5 +1,5 @@
-require( "x64:cc4bfb2bbbc1344" )
-require( "x64:667d91f6bed178d" )
+require( "ui/uieditor/widgets/vehiclehuds/hellstorm/vhudhellstormframealtitude" )
+require( "ui/uieditor/widgets/vehiclehuds/hellstorm/vhudhellstormframealtitudemeter" )
 
 CoD.vhudHellstormFrameLeft = InheritFrom( LUI.UIElement )
 CoD.vhudHellstormFrameLeft.__defaultWidth = 391

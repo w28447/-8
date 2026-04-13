@@ -1,6 +1,6 @@
-require( "x64:1c1299b38cb2e0e" )
-require( "x64:dd90405b817027f" )
-require( "x64:fa31663b3b7e3c1" )
+require( "ui/uieditor/widgets/codcaster/codcaster_annoncement_bg" )
+require( "ui/uieditor/widgets/codcaster/codcaster_announcementhighlight" )
+require( "ui/uieditor/widgets/codcaster/codcasterannouncementfeedtext" )
 
 CoD.CodCasterAnnouncementFeed = InheritFrom( LUI.UIElement )
 CoD.CodCasterAnnouncementFeed.__defaultWidth = 394

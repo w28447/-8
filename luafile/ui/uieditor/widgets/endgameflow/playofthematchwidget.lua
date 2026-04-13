@@ -1,8 +1,8 @@
-require( "x64:7dc0ea8ce2b240d" )
-require( "x64:6efebffc3eb56e9" )
-require( "x64:b8d257093c460e7" )
-require( "x64:fadee098e4860a0" )
-require( "x64:c57082506d1e1ad" )
+require( "ui/uieditor/widgets/endgameflow/codcasterteambasebar" )
+require( "ui/uieditor/widgets/endgameflow/codcasterteambaseglow" )
+require( "ui/uieditor/widgets/endgameflow/codcasterteamflare" )
+require( "ui/uieditor/widgets/endgameflow/codcasterteamglowdots" )
+require( "ui/uieditor/widgets/endgameflow/playofthematchgamertag" )
 
 CoD.PlayOfTheMatchWidget = InheritFrom( LUI.UIElement )
 CoD.PlayOfTheMatchWidget.__defaultWidth = 1920

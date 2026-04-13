@@ -1,8 +1,8 @@
 require( "ui/uieditor/widgets/aar_t8/rewards/aarrewardbacker" )
 require( "ui/uieditor/widgets/aar_t8/rewards/aarrewardheader" )
 require( "ui/uieditor/widgets/aar_t8/rewards/aarrewardsxp" )
-require( "x64:551bad30d5d02a9" )
-require( "x64:fbc37d5639d4910" )
+require( "ui/uieditor/widgets/aar_t8/rewards/aarspecialeventitem" )
+require( "ui/uieditor/widgets/aar_t8/rewards/aartieritem" )
 require( "ui/uieditor/widgets/pc/utility/verticallistspacer" )
 
 CoD.AARSpecialEventReward = InheritFrom( LUI.UIElement )

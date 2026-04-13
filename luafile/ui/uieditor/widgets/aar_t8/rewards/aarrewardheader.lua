@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/hud/corner9slice" )
-require( "x64:31fac280b1c11fc" )
+require( "ui/uieditor/widgets/notifications/notificationqueuewidgets/weaponlevelupheaderstripe" )
 
 CoD.AARRewardHeader = InheritFrom( LUI.UIElement )
 CoD.AARRewardHeader.__defaultWidth = 412

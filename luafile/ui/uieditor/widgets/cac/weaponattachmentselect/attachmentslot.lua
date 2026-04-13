@@ -1,10 +1,10 @@
 require( "ui/uieditor/widgets/cac/callouttierinternal" )
 require( "ui/uieditor/widgets/cac/customizeclassadd" )
-require( "x64:8ffe7c4e01e7052" )
+require( "ui/uieditor/widgets/cac/itemnewbreadcrumbwidget" )
 require( "ui/uieditor/widgets/cac/menuchooseclass/itemwidgets/itemhinttext" )
-require( "x64:6151942c381b5a6" )
+require( "ui/uieditor/widgets/cac/menuchooseclass/itemwidgets/itemhinttextbreadcrumb" )
 require( "ui/uieditor/widgets/cac/restricteditemwarning" )
-require( "x64:3e426332d66c91e" )
+require( "ui/uieditor/widgets/common/commonfocusbrackets" )
 require( "ui/uieditor/widgets/director/directorselectbuttonlines" )
 require( "ui/uieditor/widgets/onofftextimagebacking" )
 

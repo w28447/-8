@@ -1,6 +1,6 @@
-require( "x64:a77bf222df0af5c" )
-require( "x64:14999ad4356466" )
-require( "x64:8ac6f2757dec705" )
+require( "ui/uieditor/widgets/vehiclehuds/hellstorm/vhud_hellstormreticlefocus" )
+require( "ui/uieditor/widgets/vehiclehuds/hellstorm/vhud_hellstormring" )
+require( "ui/uieditor/widgets/vehiclehuds/hellstorm/vhud_hellstormringsmall" )
 
 CoD.vhud_hellstorm_CenterReticleWidget = InheritFrom( LUI.UIElement )
 CoD.vhud_hellstorm_CenterReticleWidget.__defaultWidth = 220

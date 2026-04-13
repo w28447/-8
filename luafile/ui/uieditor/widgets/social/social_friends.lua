@@ -1,10 +1,10 @@
 require( "ui/uieditor/widgets/scrollbars/verticalcounter" )
-require( "x64:53e6f1dc36a47c8" )
+require( "ui/uieditor/widgets/social/social_emptyframe" )
 require( "ui/uieditor/widgets/social/social_infopane" )
 require( "ui/uieditor/widgets/social/social_nofriends" )
 require( "ui/uieditor/widgets/social/social_playerslistbutton" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsbackground" )
-require( "x64:c32fc2ca012136a" )
+require( "ui/uieditor/widgets/pc/socialmenu/pc_socialmenu_sortbutton" )
 require( "ui/uieditor/widgets/pc_vscrolllist" )
 
 CoD.Social_Friends = InheritFrom( LUI.UIElement )

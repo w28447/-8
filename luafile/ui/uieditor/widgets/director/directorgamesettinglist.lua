@@ -1,5 +1,5 @@
 require( "ui/uieditor/menus/lobby/directorchoosemapandgametype" )
-require( "x64:41b4f8e8fb49420" )
+require( "ui/uieditor/widgets/director/directorgamerules" )
 require( "ui/uieditor/widgets/director/directormapandgametype" )
 
 CoD.DirectorGameSettingList = InheritFrom( LUI.UIElement )

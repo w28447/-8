@@ -1,4 +1,4 @@
-require( "x64:7574986257eb14e" )
+require( "ui/uieditor/widgets/hud/mpgametypes/mppropcontrolssafeareacontainer" )
 
 LUI.hudMenuType.mp_prop_controls = "hud"
 CoD.mp_prop_controls = InheritFrom( CoD.Menu )

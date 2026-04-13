@@ -1,9 +1,9 @@
-require( "x64:fbffc86e9a93477" )
-require( "x64:2d64ca9d3c705ce" )
-require( "x64:1e49bf76681d2a3" )
+require( "ui/uieditor/widgets/blackmarket/bm_iteminfopanel" )
+require( "ui/uieditor/widgets/common/commoncornerbrackets01" )
+require( "ui/uieditor/widgets/mp/specialisthub/hubgesturebutton" )
 require( "ui/uieditor/widgets/scrollbars/verticalcounter" )
 require( "x64:c7e896ee4bc3f8" )
-require( "x64:e092a33d3fffe9" )
+require( "ui/uieditor/widgets/pc/startmenu/pcstartmenuoptionsunbindkeybindmessage" )
 
 CoD.MPSpecialistHUBGesturesInternal = InheritFrom( LUI.UIElement )
 CoD.MPSpecialistHUBGesturesInternal.__defaultWidth = 1920

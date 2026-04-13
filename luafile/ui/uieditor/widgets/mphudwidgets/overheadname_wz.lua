@@ -1,5 +1,5 @@
-require( "x64:93a575a7ca17e04" )
-require( "x64:eece2ec012779d1" )
+require( "ui/uieditor/widgets/health/healthbar" )
+require( "ui/uieditor/widgets/mphudwidgets/overheadname_wz_nameandnumber" )
 require( "x64:8b34a2b55d6ff87" )
 
 CoD.OverheadName_WZ = InheritFrom( LUI.UIElement )

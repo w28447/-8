@@ -1,7 +1,7 @@
-require( "x64:1bc90c00f660da8" )
+require( "ui/uieditor/widgets/callingcards/callingcards_blackmarket_cardwidget" )
 require( "ui/uieditor/widgets/callingcards/callingcards_blackmarket_profiler" )
-require( "x64:79fe6ac43673588" )
-require( "x64:c438d75d63d852f" )
+require( "ui/uieditor/widgets/challenges/challenges_framewidget_titlebackground" )
+require( "ui/uieditor/widgets/playercard/selfidentitybadgepreview" )
 require( "ui/uieditor/widgets/scrollbars/verticalcounter" )
 
 CoD.CallingCards_Stickerbook_BlackMarket = InheritFrom( LUI.UIElement )

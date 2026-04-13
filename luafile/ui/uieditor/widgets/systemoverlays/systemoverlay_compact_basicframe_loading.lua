@@ -1,4 +1,4 @@
-require( "x64:ff767c56294d96c" )
+require( "ui/uieditor/widgets/systemoverlays/systemoverlay_connectinganim" )
 require( "ui/uieditor/widgets/systemoverlays/systemoverlay_supportwidget" )
 require( "x64:e1b76d902bbc762" )
 

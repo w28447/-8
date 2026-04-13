@@ -1,9 +1,9 @@
-require( "x64:fbffc86e9a93477" )
-require( "x64:2d64ca9d3c705ce" )
-require( "x64:71d2a0ed724628e" )
+require( "ui/uieditor/widgets/blackmarket/bm_iteminfopanel" )
+require( "ui/uieditor/widgets/common/commoncornerbrackets01" )
+require( "ui/uieditor/widgets/common/commonidentitywidgetstreamlinedsafeareacontainer" )
 require( "ui/uieditor/widgets/scrollbars/verticalcounter" )
-require( "x64:dd778a9bfa8090d" )
-require( "x64:f1e8b13ffafda55" )
+require( "ui/uieditor/widgets/specialist/jumpkititementry" )
+require( "ui/uieditor/widgets/specialist/jumpkitselected" )
 
 CoD.WZJumpKitSelectorInternal = InheritFrom( LUI.UIElement )
 CoD.WZJumpKitSelectorInternal.__defaultWidth = 1920

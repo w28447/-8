@@ -1,4 +1,4 @@
-require( "x64:e8dbd840828bc3" )
+require( "ui/uieditor/widgets/warzone/warzoneinventorymenuitem" )
 
 CoD.StartMenu_AttachmentList = InheritFrom( LUI.UIElement )
 CoD.StartMenu_AttachmentList.__defaultWidth = 652

@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/emptyfocusable" )
-require( "x64:d03b459fa976316" )
+require( "ui/uieditor/widgets/pc/dropdownlist_itemcontrol" )
 require( "x64:ec3aebbc4ad4b48" )
 
 CoD.PC_StartMenu_Options_Controls_TabContent_DropDownPresetKeybindings = InheritFrom( LUI.UIElement )

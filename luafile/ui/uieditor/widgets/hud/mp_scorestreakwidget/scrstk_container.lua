@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/hud/mp_scorestreakwidget/scrstk_combatefficiencybackglow" )
 require( "ui/uieditor/widgets/hud/mp_scorestreakwidget/scrstk_meter" )
-require( "x64:be811794932364b" )
+require( "ui/uieditor/widgets/hud/mp_scorestreakwidget/support_button" )
 
 CoD.ScrStk_Container = InheritFrom( LUI.UIElement )
 CoD.ScrStk_Container.__defaultWidth = 163

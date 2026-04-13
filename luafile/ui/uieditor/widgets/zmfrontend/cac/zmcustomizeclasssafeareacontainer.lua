@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/common/commonheader" )
-require( "x64:81a24c5340caa1e" )
-require( "x64:13057df4515f516" )
-require( "x64:421a7ba804db0fa" )
+require( "ui/uieditor/widgets/common/commontabbarbacking" )
+require( "ui/uieditor/widgets/zmfrontend/zmcustomclasstabs" )
+require( "ui/uieditor/widgets/zmfrontend/zmstorytabs" )
 
 CoD.ZMCustomizeClassSafeAreaContainer = InheritFrom( LUI.UIElement )
 CoD.ZMCustomizeClassSafeAreaContainer.__defaultWidth = 1920

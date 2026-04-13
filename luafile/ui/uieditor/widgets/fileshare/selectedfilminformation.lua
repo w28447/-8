@@ -1,4 +1,4 @@
-require( "x64:79fe6ac43673588" )
+require( "ui/uieditor/widgets/challenges/challenges_framewidget_titlebackground" )
 require( "ui/uieditor/widgets/fileshare/filesharebookmarkeditem" )
 require( "ui/uieditor/widgets/fileshare/selectedfilmsummaryinformation" )
 

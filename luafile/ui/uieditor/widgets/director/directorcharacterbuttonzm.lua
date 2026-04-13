@@ -1,5 +1,5 @@
-require( "x64:6fdf3ce4c17c64e" )
-require( "x64:740fb8de094e3e0" )
+require( "ui/uieditor/widgets/director/directordraftselectloadout" )
+require( "ui/uieditor/widgets/zmfrontend/zmloadoutpreviewlobbyclient" )
 
 CoD.DirectorCharacterButtonZM = InheritFrom( LUI.UIElement )
 CoD.DirectorCharacterButtonZM.__defaultWidth = 272

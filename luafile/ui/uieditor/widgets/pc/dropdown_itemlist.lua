@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/emptyfocusable" )
-require( "x64:6a09e0fce4b9806" )
-require( "x64:baff2229992d7b6" )
-require( "x64:59648045a39f73a" )
+require( "ui/uieditor/widgets/pc/dropdownlistitem" )
+require( "ui/uieditor/widgets/pc/PC_VScrollbar" )
+require( "ui/uieditor/widgets/pc/PC_VScrollList_List" )
 
 CoD.DropDown_ItemList = InheritFrom( LUI.UIElement )
 CoD.DropDown_ItemList.__defaultWidth = 364

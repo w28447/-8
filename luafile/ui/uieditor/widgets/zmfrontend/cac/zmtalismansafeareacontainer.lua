@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/common/common_tabbar_center" )
 require( "ui/uieditor/widgets/common/commonheader" )
-require( "x64:81a24c5340caa1e" )
-require( "x64:9dc2d0c43534ce4" )
+require( "ui/uieditor/widgets/common/commontabbarbacking" )
+require( "ui/uieditor/widgets/common/commontabbutton" )
 require( "ui/uieditor/widgets/header/header_container_frontend" )
 
 CoD.ZMTalismanSafeAreaContainer = InheritFrom( LUI.UIElement )

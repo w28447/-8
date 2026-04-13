@@ -1,4 +1,4 @@
-require( "x64:6650e87e9320a69" )
+require( "ui/uieditor/widgets/arena/arenaleagueeventtimer" )
 
 CoD.LeaguePlayEventTimeInfo = InheritFrom( LUI.UIElement )
 CoD.LeaguePlayEventTimeInfo.__defaultWidth = 800

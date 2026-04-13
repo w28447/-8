@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/footer/fe_leftcontainer_notlobby" )
 require( "ui/uieditor/widgets/menuspecificwidgets/scorestreaks/scorestreakvignettecontainer" )
 require( "ui/uieditor/widgets/systemoverlays/systemoverlay_alertstatusbar" )
-require( "x64:2e0d905bf8bc9a5" )
+require( "ui/uieditor/widgets/systemoverlays/systemoverlay_freecursor_full_basicframe" )
 
 CoD.systemOverlay_FreeCursor_Full_Layout = InheritFrom( LUI.UIElement )
 CoD.systemOverlay_FreeCursor_Full_Layout.__defaultWidth = 1920

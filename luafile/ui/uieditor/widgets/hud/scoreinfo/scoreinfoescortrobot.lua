@@ -1,4 +1,4 @@
-require( "x64:ae56105956b945c" )
+require( "ui/uieditor/widgets/hud/scoreinfo/scoreinfoescortrobotobjective" )
 
 CoD.ScoreInfoEscortRobot = InheritFrom( LUI.UIElement )
 CoD.ScoreInfoEscortRobot.__defaultWidth = 30

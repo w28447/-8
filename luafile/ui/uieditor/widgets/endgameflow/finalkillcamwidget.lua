@@ -1,7 +1,7 @@
-require( "x64:ec9c426ad19318" )
-require( "x64:9c845e427b3e350" )
-require( "x64:3d7fd4fcd481d79" )
-require( "x64:764072a8b023151" )
+require( "ui/uieditor/widgets/endgameflow/codcasterteambasegradient" )
+require( "ui/uieditor/widgets/endgameflow/finalkillcamplayerinfo" )
+require( "ui/uieditor/widgets/endgameflow/playofthematchcallingcard" )
+require( "ui/uieditor/widgets/endgameflow/playofthematchtitle" )
 
 CoD.FinalKillcamWidget = InheritFrom( LUI.UIElement )
 CoD.FinalKillcamWidget.__defaultWidth = 1920

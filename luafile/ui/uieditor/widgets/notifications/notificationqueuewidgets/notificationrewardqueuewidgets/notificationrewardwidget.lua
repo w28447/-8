@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/notifications/notificationqueuewidgets/notificationrewardqueuewidgets/iconrewardwidget" )
-require( "x64:31fac280b1c11fc" )
+require( "ui/uieditor/widgets/notifications/notificationqueuewidgets/weaponlevelupheaderstripe" )
 
 CoD.NotificationRewardWidget = InheritFrom( LUI.UIElement )
 CoD.NotificationRewardWidget.__defaultWidth = 384

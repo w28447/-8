@@ -1,5 +1,5 @@
-require( "x64:50ce70a16679544" )
-require( "x64:cb6e5e515b30cfd" )
+require( "ui/uieditor/widgets/hud/map/compassgroupmpcontainer" )
+require( "ui/uieditor/widgets/hud/mp_hacked/hud_hacked_map_widget" )
 
 CoD.CompassGroupMPContainerTransition = InheritFrom( LUI.UIElement )
 CoD.CompassGroupMPContainerTransition.__defaultWidth = 350

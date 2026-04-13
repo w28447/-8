@@ -1,5 +1,5 @@
-require( "x64:277736d6c11a9b6" )
-require( "x64:b15867d4020da07" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_grunt_gun" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_grunt_radio" )
 
 CoD[0x4D290CE58D45F81] = InheritFrom( LUI.UIElement )
 CoD[0x4D290CE58D45F81].__defaultWidth = 960

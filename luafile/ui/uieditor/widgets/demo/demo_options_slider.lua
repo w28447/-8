@@ -1,4 +1,4 @@
-require( "x64:7b22f584852cb0" )
+require( "ui/uieditor/widgets/demo/demo_options_slider_control_item" )
 require( "ui/uieditor/widgets/lobby/common/fe_focusbarcontainer" )
 require( "ui/uieditor/widgets/startmenu/startmenu_frame_nobg" )
 

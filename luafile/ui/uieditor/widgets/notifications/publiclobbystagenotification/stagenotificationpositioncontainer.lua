@@ -1,4 +1,4 @@
-require( "x64:9f968d7bee3f220" )
+require( "ui/uieditor/widgets/director/directorstageindicator" )
 
 CoD.StageNotificationPositionContainer = InheritFrom( LUI.UIElement )
 CoD.StageNotificationPositionContainer.__defaultWidth = 1920

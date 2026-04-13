@@ -1,4 +1,4 @@
-require( "x64:c2f840fd2528321" )
+require( "ui/uieditor/widgets/craft/emblemeditor/emblemoptionsbutton" )
 require( "ui/uieditor/widgets/systemoverlays/systemoverlay_layout_foregroundmultilinetext" )
 
 CoD.systemOverlay_SeasonPassUpsellFrame = InheritFrom( LUI.UIElement )

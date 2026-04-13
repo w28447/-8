@@ -1,5 +1,5 @@
-require( "x64:5121f7cbfe5fa89" )
-require( "x64:83fdf4983fb5894" )
+require( "ui/uieditor/widgets/genericpopups/kickerinternal" )
+require( "ui/uieditor/widgets/genericpopups/loot_bonustoastgenericbacking" )
 
 CoD.Toast_Container_BlackMarket = InheritFrom( LUI.UIElement )
 CoD.Toast_Container_BlackMarket.__defaultWidth = 340

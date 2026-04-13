@@ -1,4 +1,4 @@
-require( "x64:5c8b1128914b8a9" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_bomber_plane" )
 
 CoD[0x8ADB7D5ED7C6A8B] = InheritFrom( LUI.UIElement )
 CoD[0x8ADB7D5ED7C6A8B].__defaultWidth = 960

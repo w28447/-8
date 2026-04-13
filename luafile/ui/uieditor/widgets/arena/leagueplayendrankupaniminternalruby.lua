@@ -1,4 +1,4 @@
-require( "x64:ea0c802d8aee12d" )
+require( "ui/uieditor/widgets/arena/leagueplayendrankupruby" )
 
 CoD.LeaguePlayEndrankupAnimInternalRuby = InheritFrom( LUI.UIElement )
 CoD.LeaguePlayEndrankupAnimInternalRuby.__defaultWidth = 343

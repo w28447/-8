@@ -2,7 +2,7 @@ require( "ui/uieditor/widgets/director/directorselectbuttonlines" )
 require( "ui/uieditor/widgets/footer/footercontainer_frontend_right" )
 require( "x64:efe3159fb7dfed3" )
 require( "ui/uieditor/widgets/startmenu/startmenu_background" )
-require( "x64:f027dcc6409e42c" )
+require( "ui/uieditor/widgets/pc/pc_motd_buttons" )
 
 CoD.FTUEZMInventoryMenu = InheritFrom( CoD.Menu )
 LUI.createMenu.FTUEZMInventoryMenu = function ( f1_arg0, f1_arg1 )

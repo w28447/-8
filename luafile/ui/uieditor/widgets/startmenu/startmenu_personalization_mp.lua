@@ -1,11 +1,11 @@
 require( "ui/uieditor/menus/charactercustomization/personalizecharacter" )
-require( "x64:341ce33d59fafd1" )
-require( "x64:62080ad3aaa22da" )
+require( "ui/uieditor/widgets/cac/restricteditemwarningtext" )
+require( "ui/uieditor/widgets/common/commoninformationframe" )
 require( "ui/uieditor/widgets/lobby/common/layoutelements/commonbglayoutlinkline" )
 require( "ui/uieditor/widgets/lobby/common/layoutelements/commonsearchingbar" )
-require( "x64:50e26e98239f317" )
-require( "x64:a8235cfc956d5a0" )
-require( "x64:c3fa19037d61cad" )
+require( "ui/uieditor/widgets/mp/specialisthub/hubequipmentitem" )
+require( "ui/uieditor/widgets/mp/specialisthub/hubshowcasecheckbox" )
+require( "ui/uieditor/widgets/mp/specialisthub/hubspecialist_character" )
 
 CoD.StartMenu_Personalization_MP = InheritFrom( LUI.UIElement )
 CoD.StartMenu_Personalization_MP.__defaultWidth = 1920

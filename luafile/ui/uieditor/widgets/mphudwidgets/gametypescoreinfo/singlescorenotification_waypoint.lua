@@ -1,4 +1,4 @@
-require( "x64:6c3c8e6b1823b97" )
+require( "ui/uieditor/widgets/mphudwidgets/gametypescoreinfo/scorenotificationwaypoint" )
 
 CoD.SingleScoreNotification_Waypoint = InheritFrom( LUI.UIElement )
 CoD.SingleScoreNotification_Waypoint.__defaultWidth = 328

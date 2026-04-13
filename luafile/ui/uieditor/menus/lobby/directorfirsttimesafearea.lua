@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/emptyfocusable" )
 require( "ui/uieditor/widgets/startmenu/startmenu_options_safearea_container" )
 require( "ui/uieditor/widgets/startmenu/startmenu_options_safearea_hints" )
-require( "x64:79d9438392ec34e" )
+require( "ui/uieditor/widgets/pc/startmenu/pc_startmenu_options_hudbounds_hints" )
 
 CoD.DirectorFirstTimeSafeArea = InheritFrom( CoD.Menu )
 LUI.createMenu.DirectorFirstTimeSafeArea = function ( f1_arg0, f1_arg1 )

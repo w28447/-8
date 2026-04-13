@@ -1,5 +1,5 @@
-require( "x64:f01a3e1dd9d2c5c" )
-require( "x64:9b854af2f368571" )
+require( "ui/uieditor/widgets/vehiclehuds/hellstorm/vhud_hellstormbgframe" )
+require( "ui/uieditor/widgets/vehiclehuds/vhud_buttonprompt" )
 
 CoD.vhud_attack_helicopter_button_layout = InheritFrom( LUI.UIElement )
 CoD.vhud_attack_helicopter_button_layout.__defaultWidth = 1920

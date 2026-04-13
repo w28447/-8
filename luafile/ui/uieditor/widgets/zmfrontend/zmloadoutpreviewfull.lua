@@ -1,7 +1,7 @@
-require( "x64:c91cce0f79f8559" )
-require( "x64:9406ef3b6d8fbed" )
-require( "x64:3b385c2f583048b" )
-require( "x64:bad5476bc0399eb" )
+require( "ui/uieditor/widgets/zmfrontend/zmloadoutpreview" )
+require( "ui/uieditor/widgets/zmfrontend/zmloadoutpreviewactiveclass" )
+require( "ui/uieditor/widgets/zmfrontend/zmloadoutpreviewclasstabs" )
+require( "ui/uieditor/widgets/zmfrontend/zmloadoutpreviewselectclass" )
 require( "ui/uieditor/widgets/pc/pc_smallclosebutton" )
 
 CoD.ZMLoadoutPreviewFull = InheritFrom( LUI.UIElement )

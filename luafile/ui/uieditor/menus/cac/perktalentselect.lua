@@ -1,8 +1,8 @@
 require( "ui/uieditor/widgets/cac/cac_background_slide_panel_short" )
 require( "ui/uieditor/widgets/cac/cacheader" )
 require( "ui/uieditor/widgets/cac/itemnamedescunlocktext" )
-require( "x64:341ce33d59fafd1" )
-require( "x64:78eb499a96d6585" )
+require( "ui/uieditor/widgets/cac/restricteditemwarningtext" )
+require( "ui/uieditor/widgets/cac/talentselect/perktalentlistwidget" )
 require( "ui/uieditor/widgets/footer/footercontainer_frontend_right" )
 require( "ui/uieditor/widgets/header/header_container_frontend" )
 

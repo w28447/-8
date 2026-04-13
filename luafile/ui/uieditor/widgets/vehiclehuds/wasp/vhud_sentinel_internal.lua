@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/vehiclehuds/buttons/vhud_generic_button_layout" )
 require( "ui/uieditor/widgets/vehiclehuds/wasp/vhud_sentinel_iris" )
-require( "x64:42a47e92dfaccef" )
+require( "ui/uieditor/widgets/vehiclehuds/wasp/vhud_sentinel_outofrangelabels" )
 require( "ui/uieditor/widgets/vehiclehuds/wasp/vhud_sentinel_reticle" )
 
 CoD.VHUD_Sentinel_Internal = InheritFrom( LUI.UIElement )

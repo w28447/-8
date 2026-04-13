@@ -1,4 +1,4 @@
-require( "x64:db4b72e7fcf4b55" )
+require( "ui/uieditor/widgets/lobby/entitlementlistcontainer" )
 require( "ui/uieditor/widgets/startmenu/startmenu_codpoints" )
 require( "ui/uieditor/widgets/common/commoncheckbox" )
 require( "ui/uieditor/widgets/systemoverlays/featureoverlay_button_mouseonly" )

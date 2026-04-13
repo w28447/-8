@@ -1,4 +1,4 @@
-require( "x64:564ca313abeb19a" )
+require( "ui/uieditor/widgets/tablet/tak5/tabletconnectionarrow" )
 
 CoD.TabletIcePick_BackgroundPC = InheritFrom( LUI.UIElement )
 CoD.TabletIcePick_BackgroundPC.__defaultWidth = 272

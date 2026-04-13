@@ -1,6 +1,6 @@
-require( "x64:209a8467f45b10a" )
-require( "x64:20acfdece814a2a" )
-require( "x64:ff2ee65fc4b9370" )
+require( "ui/uieditor/widgets/scoreboard/wz/scoreboardmapwz" )
+require( "ui/uieditor/widgets/startmenu/startmenu_inventory" )
+require( "ui/uieditor/widgets/startmenu/startmenu_wzteamscoreboard" )
 
 CoD.ScoreboardWidgetWZ = InheritFrom( LUI.UIElement )
 CoD.ScoreboardWidgetWZ.__defaultWidth = 1920

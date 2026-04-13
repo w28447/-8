@@ -1,4 +1,4 @@
-require( "x64:379af6e9d2b74ff" )
+require( "ui/uieditor/widgets/challenges/nearcompletionbutton_internal" )
 
 CoD.Challenges_Summary_NearCompletionButton = InheritFrom( LUI.UIElement )
 CoD.Challenges_Summary_NearCompletionButton.__defaultWidth = 1175

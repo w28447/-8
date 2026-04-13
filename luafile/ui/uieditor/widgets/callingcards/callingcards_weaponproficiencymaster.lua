@@ -1,4 +1,4 @@
-require( "x64:7cced5eedbb6965" )
+require( "ui/uieditor/widgets/callingcards/callingcards_cowboybounce" )
 
 CoD[0x1F7D0795C43A08E] = InheritFrom( LUI.UIElement )
 CoD[0x1F7D0795C43A08E].__defaultWidth = 960

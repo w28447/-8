@@ -1,4 +1,4 @@
-require( "x64:fbffc86e9a93477" )
+require( "ui/uieditor/widgets/blackmarket/bm_iteminfopanel" )
 require( "x64:7b5952c3bc0ee42" )
 require( "ui/uieditor/widgets/scrollbars/verticalcounter" )
 require( "ui/uieditor/widgets/pc/utility/xcammousecontrol" )

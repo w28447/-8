@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/pc/hud/pc_progresscirclebacking" )
-require( "x64:ebb9f711d489cde" )
+require( "ui/uieditor/widgets/pc/hud/pc_seekermine_text" )
 
 CoD.seeker_mine_prompt = InheritFrom( CoD.Menu )
 LUI.createMenu.seeker_mine_prompt = function ( f1_arg0, f1_arg1 )

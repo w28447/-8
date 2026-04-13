@@ -1,5 +1,5 @@
-require( "x64:5f8cf56752aa71b" )
-require( "x64:d6501065ee1c789" )
+require( "ui/uieditor/widgets/commonbuttonoutline" )
+require( "ui/uieditor/widgets/director/directorlaboratorybuttonelixeroffer" )
 require( "ui/uieditor/widgets/store/storecommontextbacking" )
 
 CoD.DirectorLaboratoryButtonInternal = InheritFrom( LUI.UIElement )

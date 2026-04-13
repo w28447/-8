@@ -1,4 +1,4 @@
-require( "x64:77e6c8e4d1f495" )
+require( "ui/uieditor/widgets/vehiclehuds/vehicleradarrtt" )
 
 CoD.vehicleRadar = InheritFrom( LUI.UIElement )
 CoD.vehicleRadar.__defaultWidth = 280

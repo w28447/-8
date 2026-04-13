@@ -1,4 +1,4 @@
-require( "x64:ff936e9bc4df392" )
+require( "ui/uieditor/widgets/director/directortutorialmapselectitem_internal" )
 
 CoD.DirectorZMTutorialMapSelectItem = InheritFrom( LUI.UIElement )
 CoD.DirectorZMTutorialMapSelectItem.__defaultWidth = 246

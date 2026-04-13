@@ -1,4 +1,4 @@
-require( "x64:a4d69066248fe6b" )
+require( "ui/uieditor/widgets/mphudwidgets/readyevents/readyevents_scorestreaks" )
 
 CoD.ReadyEvents = InheritFrom( LUI.UIElement )
 CoD.ReadyEvents.__defaultWidth = 600

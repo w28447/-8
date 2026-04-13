@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframe" )
-require( "x64:71d2a0ed724628e" )
-require( "x64:78f2de84a7ce73e" )
-require( "x64:49eea36539ae3b3" )
+require( "ui/uieditor/widgets/common/commonidentitywidgetstreamlinedsafeareacontainer" )
+require( "ui/uieditor/widgets/specialist/specialistoutfitcategory" )
+require( "ui/uieditor/widgets/specialist/specialistoutfititementry" )
 require( "ui/uieditor/widgets/pc/utility/xcammousecontrol" )
 
 CoD.WZPersonalizeCharacter = InheritFrom( CoD.Menu )

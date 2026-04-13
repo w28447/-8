@@ -1,8 +1,8 @@
-require( "x64:de1e084b1f3792d" )
-require( "x64:62963bd5f35a7f6" )
-require( "x64:7c8f6290ec1890e" )
-require( "x64:63f019e9d0f8956" )
-require( "x64:1ef651f35122631" )
+require( "ui/uieditor/widgets/director/directorapploadoutnotification" )
+require( "ui/uieditor/widgets/director/directorblackmarketbutton" )
+require( "ui/uieditor/widgets/director/directorcontractsbutton" )
+require( "ui/uieditor/widgets/director/directorlaboratorybutton" )
+require( "ui/uieditor/widgets/director/directorpregamebuttoncontainer" )
 require( "ui/uieditor/widgets/onofftextimagebacking" )
 
 CoD.DirectorCommonSafeAreaBottomAndLeft = InheritFrom( LUI.UIElement )

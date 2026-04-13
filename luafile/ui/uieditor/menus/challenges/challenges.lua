@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframeidentity" )
-require( "x64:b157ebcd8b4adcc" )
+require( "ui/uieditor/widgets/challenges/challenges_safeareawidget" )
 
 local PostLoadFunc = function ( f1_arg0, f1_arg1 )
 	f1_arg0.disablePopupOpenCloseAnim = true

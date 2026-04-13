@@ -3,7 +3,7 @@ require( "x64:2e696224b0060b4" )
 require( "x64:b3acf028e6f3cc1" )
 require( "ui/uieditor/widgets/scoreboard/tabbedscoreboardfuibox" )
 require( "ui/uieditor/widgets/startmenu/startmenu_background" )
-require( "x64:f027dcc6409e42c" )
+require( "ui/uieditor/widgets/pc/pc_motd_buttons" )
 
 CoD.FTUEWZProgressionMenu = InheritFrom( CoD.Menu )
 LUI.createMenu.FTUEWZProgressionMenu = function ( f1_arg0, f1_arg1 )

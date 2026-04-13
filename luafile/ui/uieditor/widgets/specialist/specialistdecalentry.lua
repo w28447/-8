@@ -1,6 +1,6 @@
-require( "x64:8ffe7c4e01e7052" )
+require( "ui/uieditor/widgets/cac/itemnewbreadcrumbwidget" )
 require( "ui/uieditor/widgets/onoffimage" )
-require( "x64:99814ce8a424f57" )
+require( "ui/uieditor/widgets/specialist/specialistoutfitrowbacking" )
 
 CoD.SpecialistDecalEntry = InheritFrom( LUI.UIElement )
 CoD.SpecialistDecalEntry.__defaultWidth = 85

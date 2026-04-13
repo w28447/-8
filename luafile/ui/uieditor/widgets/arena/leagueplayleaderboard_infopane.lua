@@ -1,4 +1,4 @@
-require( "x64:f0229e4dd8ebd15" )
+require( "ui/uieditor/widgets/arena/arenainfowidget" )
 
 CoD.LeaguePlayLeaderboard_InfoPane = InheritFrom( LUI.UIElement )
 CoD.LeaguePlayLeaderboard_InfoPane.__defaultWidth = 1920

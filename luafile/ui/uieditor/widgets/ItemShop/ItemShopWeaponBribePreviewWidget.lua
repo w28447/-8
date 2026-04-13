@@ -1,4 +1,4 @@
-require( "x64:17c02756d343654" )
+require( "ui/uieditor/widgets/itemshop/weaponbribepreview" )
 
 CoD.ItemShopWeaponBribePreviewWidget = InheritFrom( LUI.UIElement )
 CoD.ItemShopWeaponBribePreviewWidget.__defaultWidth = 450

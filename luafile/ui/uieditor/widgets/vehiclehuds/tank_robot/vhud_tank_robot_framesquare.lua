@@ -1,5 +1,5 @@
 require( "x64:c7393046816f760" )
-require( "x64:8ac6f2757dec705" )
+require( "ui/uieditor/widgets/vehiclehuds/hellstorm/vhud_hellstormringsmall" )
 
 CoD.vhud_tank_robot_framesquare = InheritFrom( LUI.UIElement )
 CoD.vhud_tank_robot_framesquare.__defaultWidth = 1168
@@ -112,7 +112,7 @@ CoD.vhud_tank_robot_framesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local DotlineH = LUI.UIImage.new( 0.5, 0.5, -2, 2, 0.5, 0.5, -584, 584 )
 	DotlineH:setAlpha( 0.05 )
 	DotlineH:setZRot( 90 )
-	DotlineH:setImage( RegisterImage( 0xC49B0C8991A541F ) )
+	DotlineH:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
 	DotlineH:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DotlineH:setShaderVector( 0, 0, 0, 0, 0 )
 	DotlineH:setupNineSliceShader( 4, 8 )
@@ -121,7 +121,7 @@ CoD.vhud_tank_robot_framesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local DotLineV = LUI.UIImage.new( 0.5, 0.5, -2, 2, 0, 0, -4, 650 )
 	DotLineV:setAlpha( 0.05 )
-	DotLineV:setImage( RegisterImage( 0xC49B0C8991A541F ) )
+	DotLineV:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
 	DotLineV:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DotLineV:setShaderVector( 0, 0, 0, 0, 0 )
 	DotLineV:setupNineSliceShader( 4, 8 )

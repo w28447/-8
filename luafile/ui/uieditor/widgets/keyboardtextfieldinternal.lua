@@ -1,4 +1,4 @@
-require( "x64:c1c051c71207acb" )
+require( "ui/uieditor/widgets/keyboardtextfieldinputcontainer" )
 require( "ui/uieditor/widgets/common/commonlistbuttongenericshort" )
 
 CoD.KeyboardTextFieldInternal = InheritFrom( LUI.UIElement )

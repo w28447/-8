@@ -1,4 +1,4 @@
-require( "x64:812997896dcee2d" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_black_hole" )
 
 CoD[0xA27938018C1FFD4] = InheritFrom( LUI.UIElement )
 CoD[0xA27938018C1FFD4].__defaultWidth = 960

@@ -1,5 +1,5 @@
-require( "x64:638d9c46e59e807" )
-require( "x64:2c2bec7a9db1e9f" )
+require( "ui/uieditor/widgets/codcaster/codcasterminimapname" )
+require( "ui/uieditor/widgets/hud/map/compassgroupmpcontainertransition" )
 
 CoD.CodCasterMiniMap = InheritFrom( LUI.UIElement )
 CoD.CodCasterMiniMap.__defaultWidth = 841

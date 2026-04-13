@@ -1,4 +1,4 @@
-require( "x64:2d64ca9d3c705ce" )
+require( "ui/uieditor/widgets/common/commoncornerbrackets01" )
 require( "ui/uieditor/widgets/lobby/common/layoutelements/commonsearchingbar" )
 
 CoD.ReservesButtonLayoutBacking = InheritFrom( LUI.UIElement )

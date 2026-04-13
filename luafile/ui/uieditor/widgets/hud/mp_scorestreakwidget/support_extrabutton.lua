@@ -1,8 +1,8 @@
 require( "ui/uieditor/widgets/buttonprogressring" )
 require( "ui/uieditor/widgets/controllerdependent_textbox" )
-require( "x64:7740d6a36622800" )
-require( "x64:eb2b44d72f6861a" )
-require( "x64:e6b26605fb6b80c" )
+require( "ui/uieditor/widgets/hud/mp_scorestreakwidget/support_buttonarrow" )
+require( "ui/uieditor/widgets/hud/mp_scorestreakwidget/support_buttoninternal" )
+require( "ui/uieditor/widgets/hud/mp_scorestreakwidget/support_earningbar" )
 
 CoD.Support_ExtraButton = InheritFrom( LUI.UIElement )
 CoD.Support_ExtraButton.__defaultWidth = 40

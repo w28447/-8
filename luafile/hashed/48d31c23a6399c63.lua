@@ -1,6 +1,6 @@
 require( "x64:a8ce113b5f4e290" )
 require( "x64:ae760060dcb1016" )
-require( "x64:9bbe0011ba3f2ca" )
+require( "ui/uieditor/widgets/hud/wzweaponpickupholdbuttonicons" )
 
 CoD.TabbedMultiItemPickup_Header = InheritFrom( LUI.UIElement )
 CoD.TabbedMultiItemPickup_Header.__defaultWidth = 300

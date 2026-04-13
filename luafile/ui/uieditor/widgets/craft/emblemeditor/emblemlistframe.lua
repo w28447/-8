@@ -1,8 +1,8 @@
 require( "ui/uieditor/menus/craft/emblemeditor/emblemselectoptions" )
-require( "x64:2d64ca9d3c705ce" )
+require( "ui/uieditor/widgets/common/commoncornerbrackets01" )
 require( "ui/uieditor/widgets/craft/emblemeditor/emblemitem" )
-require( "x64:2321aa5d656b975" )
-require( "x64:96b29a3176ada0f" )
+require( "ui/uieditor/widgets/craft/emblemselectpreviewwidget" )
+require( "ui/uieditor/widgets/craft/slotsusedwidget" )
 require( "ui/uieditor/widgets/scrollbars/verticalcounter" )
 
 CoD.EmblemListFrame = InheritFrom( LUI.UIElement )

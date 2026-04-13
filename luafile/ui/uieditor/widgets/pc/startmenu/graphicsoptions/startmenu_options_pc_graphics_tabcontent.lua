@@ -1,8 +1,8 @@
 require( "ui/uieditor/widgets/pc/categoryexpendablebutton" )
 require( "ui/uieditor/widgets/pc/globaldropdown" )
 require( "ui/uieditor/widgets/pc/separationline_vertical" )
-require( "x64:8b075f4e512e795" )
-require( "x64:6ecfe9d4da6fd92" )
+require( "ui/uieditor/widgets/pc/startmenu/graphicsoptions/startmenu_options_pc_graphicsoptions_suboptionsnavigation" )
+require( "ui/uieditor/widgets/pc/startmenu/graphicsoptions/startmenu_options_pc_graphicsoptions_vrambar" )
 
 CoD.StartMenu_Options_PC_Graphics_TabContent = InheritFrom( LUI.UIElement )
 CoD.StartMenu_Options_PC_Graphics_TabContent.__defaultWidth = 1920

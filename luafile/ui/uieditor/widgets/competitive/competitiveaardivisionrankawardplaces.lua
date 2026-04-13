@@ -1,4 +1,4 @@
-require( "x64:6031721cab048e6" )
+require( "ui/uieditor/widgets/arena/arenaleagueplayrubieslist" )
 
 CoD.CompetitiveAARDivisionRankAwardPlaces = InheritFrom( LUI.UIElement )
 CoD.CompetitiveAARDivisionRankAwardPlaces.__defaultWidth = 600

@@ -1,4 +1,4 @@
-require( "x64:1391e29b3804784" )
+require( "ui/uieditor/widgets/codcaster/codcastersettingssidebarloadoutsettingscontainer" )
 require( "ui/uieditor/widgets/customgames/customgames_optioncategorybutton" )
 
 CoD.CodCasterSettingsSideBarLoadoutSettings = InheritFrom( LUI.UIElement )

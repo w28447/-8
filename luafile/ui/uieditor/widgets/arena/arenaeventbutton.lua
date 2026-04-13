@@ -1,4 +1,4 @@
-require( "x64:15c023510ca7d16" )
+require( "ui/uieditor/widgets/arena/arenaeventbuttoninternal" )
 require( "ui/uieditor/widgets/cac/newbreadcrumb" )
 
 CoD.ArenaEventButton = InheritFrom( LUI.UIElement )

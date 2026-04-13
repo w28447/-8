@@ -1,4 +1,4 @@
-require( "x64:96ef316933545b7" )
+require( "ui/uieditor/widgets/hud/gameendscore_wz/gameendscore_playerindentity" )
 require( "x64:6be4f736d62e809" )
 require( "x64:5422f1464c83779" )
 

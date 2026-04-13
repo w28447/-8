@@ -1,4 +1,4 @@
-require( "x64:dab8c3a6f5b136c" )
+require( "ui/uieditor/widgets/common/CommonPixelBacking" )
 
 CoD.IGRPerksListTitle = InheritFrom( LUI.UIElement )
 CoD.IGRPerksListTitle.__defaultWidth = 300

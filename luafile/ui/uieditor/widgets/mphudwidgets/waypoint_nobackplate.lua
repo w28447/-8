@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/mphudwidgets/waypointarrowcontainer" )
-require( "x64:7a2e403287c6522" )
+require( "ui/uieditor/widgets/mphudwidgets/waypointcentersimple" )
 
 CoD.Waypoint_NoBackplate = InheritFrom( LUI.UIElement )
 CoD.Waypoint_NoBackplate.__defaultWidth = 120

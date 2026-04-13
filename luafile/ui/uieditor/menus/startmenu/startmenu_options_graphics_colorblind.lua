@@ -5,7 +5,7 @@ require( "ui/uieditor/widgets/startmenu/options/flyout/startmenu_options_setting
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsbackground" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsmaincorners" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsmainframe" )
-require( "x64:a83717e9f99925a" )
+require( "ui/uieditor/widgets/startmenu/startmenu_options_graphics_colorblindminimappreview" )
 
 CoD.StartMenu_Options_Graphics_Colorblind = InheritFrom( CoD.Menu )
 LUI.createMenu.StartMenu_Options_Graphics_Colorblind = function ( f1_arg0, f1_arg1 )

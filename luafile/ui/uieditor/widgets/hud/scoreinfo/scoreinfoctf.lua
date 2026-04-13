@@ -1,4 +1,4 @@
-require( "x64:b1020a5873ba1d6" )
+require( "ui/uieditor/widgets/hud/scoreinfo/scoreinfoctf_flagstate" )
 
 CoD.ScoreInfoCTF = InheritFrom( LUI.UIElement )
 CoD.ScoreInfoCTF.__defaultWidth = 222

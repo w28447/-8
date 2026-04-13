@@ -1,4 +1,4 @@
-require( "x64:f7470f1be342d92" )
+require( "ui/uieditor/widgets/endgameflow/codcastermatchtitletext" )
 require( "x64:e6cc0e76ed868e0" )
 
 CoD.PLayOfTheMatchTitle = InheritFrom( LUI.UIElement )

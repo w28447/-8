@@ -1,5 +1,5 @@
 require( "ui/uieditor/menus/charactercustomization/personalizecharacter" )
-require( "x64:e2ecedbb00c2e1b" )
+require( "ui/uieditor/menus/charactercustomization/personalizedefaultwzcharacter" )
 require( "x64:86b4582183041dd" )
 require( "x64:ef912f3f903134c" )
 require( "ui/uieditor/widgets/scoreboard/tabbedscoreboardfuibox" )

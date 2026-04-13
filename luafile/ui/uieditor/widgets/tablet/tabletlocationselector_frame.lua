@@ -1,7 +1,7 @@
-require( "x64:8fd670b6e6a9526" )
-require( "x64:f9e504ad8b2d1e7" )
-require( "x64:e122b7636abd48c" )
-require( "x64:536dc2ca6c391e7" )
+require( "ui/uieditor/widgets/tablet/tabletlocationselector_grid" )
+require( "ui/uieditor/widgets/vehiclehuds/lightningstrike/vhud_lightningstrike_ambientgadget" )
+require( "ui/uieditor/widgets/vehiclehuds/lightningstrike/vhud_lightningstrike_ambientgadget_circle" )
+require( "ui/uieditor/widgets/vehiclehuds/lightningstrike/vhud_lightningstrike_ambientgadget_square" )
 
 CoD.TabletLocationSelector_Frame = InheritFrom( LUI.UIElement )
 CoD.TabletLocationSelector_Frame.__defaultWidth = 1106

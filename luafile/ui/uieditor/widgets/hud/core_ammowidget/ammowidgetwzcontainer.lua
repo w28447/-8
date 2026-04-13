@@ -1,6 +1,6 @@
-require( "x64:3f52fc5b4896818" )
-require( "x64:2a1b5374a7ef26a" )
-require( "x64:54f3e7b133e2ff2" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidgetwz" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidgetwz_abilityitem" )
+require( "ui/uieditor/widgets/warzone/warzonecontextualextraitems_rightalign" )
 
 CoD.AmmoWidgetWZContainer = InheritFrom( LUI.UIElement )
 CoD.AmmoWidgetWZContainer.__defaultWidth = 590

@@ -1,4 +1,4 @@
-require( "x64:97483b442684eeb" )
+require( "ui/uieditor/widgets/itemshop/reserves/reservesspecialcontractinternal" )
 
 CoD.ReservesSpecialContract = InheritFrom( LUI.UIElement )
 CoD.ReservesSpecialContract.__defaultWidth = 684

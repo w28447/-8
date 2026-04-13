@@ -1,4 +1,4 @@
-require( "x64:74a2834581ae4c5" )
+require( "ui/uieditor/widgets/vehiclehuds/mothership/vhud_ms_missileswidget" )
 require( "ui/uieditor/widgets/vehiclehuds/mothership/vhud_ms_notificationbox" )
 require( "ui/uieditor/widgets/vehiclehuds/wasp/vhud_sentinel_notificationline" )
 

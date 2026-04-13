@@ -1,10 +1,10 @@
 require( "ui/uieditor/widgets/aar_t8/levelup/aarxpmeter" )
-require( "x64:341ce33d59fafd1" )
-require( "x64:c048e011d7fa11c" )
+require( "ui/uieditor/widgets/cac/restricteditemwarningtext" )
+require( "ui/uieditor/widgets/cac/selectedclassminipreview" )
 require( "x64:e6df4068375d284" )
 require( "x64:b64d9dfa5911bd2" )
 require( "x64:753cb15c89114c6" )
-require( "x64:2190adaba331dcb" )
+require( "ui/uieditor/widgets/startmenu/startmenu_signatureitem" )
 require( "x64:b710bc406e458bd" )
 
 CoD.StartMenu_ChangeSpecialist = InheritFrom( LUI.UIElement )

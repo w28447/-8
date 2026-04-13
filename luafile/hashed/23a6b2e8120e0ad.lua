@@ -1,6 +1,6 @@
-require( "x64:94acc3cb318e13b" )
+require( "ui/uieditor/widgets/blackmarket/bm_lock" )
 require( "ui/uieditor/widgets/cac/cac_lock" )
-require( "x64:6151942c381b5a6" )
+require( "ui/uieditor/widgets/cac/menuchooseclass/itemwidgets/itemhinttextbreadcrumb" )
 require( "x64:d05b964dd39d3dc" )
 require( "x64:2d361ac3553c22a" )
 

@@ -1,4 +1,4 @@
-require( "x64:3f31dd4f77d0b44" )
+require( "ui/uieditor/widgets/vehiclehuds/ground/vehicleground_iris" )
 require( "ui/uieditor/widgets/vehiclehuds/ground/vehicleground_vignettecontainer" )
 
 CoD.vhud_sentinel_iris = InheritFrom( LUI.UIElement )

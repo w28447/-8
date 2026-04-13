@@ -1,5 +1,5 @@
-require( "x64:8e42b7d307aadbf" )
-require( "x64:62adff09117f331" )
+require( "ui/uieditor/widgets/arena/arenarankwidget" )
+require( "ui/uieditor/widgets/arena/arenarubies" )
 
 CoD.ButtonFrame_WorldLeagueProgress = InheritFrom( LUI.UIElement )
 CoD.ButtonFrame_WorldLeagueProgress.__defaultWidth = 647

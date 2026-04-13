@@ -1,5 +1,5 @@
-require( "x64:6733462913727bd" )
-require( "x64:c625dbd32f58fad" )
+require( "ui/uieditor/widgets/vehiclehuds/attackhelicopter/vhud_attack_helicopter_flare_counter" )
+require( "ui/uieditor/widgets/vehiclehuds/gunship/vhud_gunship_flare_indicator" )
 
 CoD.vhud_gunship_flare_dock = InheritFrom( LUI.UIElement )
 CoD.vhud_gunship_flare_dock.__defaultWidth = 256

@@ -1,4 +1,4 @@
-require( "x64:687850e3c8c6215" )
+require( "ui/uieditor/widgets/notifications/playercard/playercard_nameandclantag_internal" )
 
 CoD.PlayerCard_NameAndClanTag = InheritFrom( LUI.UIElement )
 CoD.PlayerCard_NameAndClanTag.__defaultWidth = 318

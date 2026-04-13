@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/callingcards/callingcards_framewidget" )
-require( "x64:5f8cf56752aa71b" )
+require( "ui/uieditor/widgets/commonbuttonoutline" )
 
 CoD.InspectCallingCardWidgetInternal = InheritFrom( LUI.UIElement )
 CoD.InspectCallingCardWidgetInternal.__defaultWidth = 348

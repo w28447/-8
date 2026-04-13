@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/emptyfocusable" )
-require( "x64:bdc4956715f81d7" )
+require( "ui/uieditor/widgets/pc/cyclinglist_arrow" )
 require( "ui/uieditor/widgets/pc/startmenu/pc_highlightborder" )
 
 CoD.CyclingList_ItemControl = InheritFrom( LUI.UIElement )

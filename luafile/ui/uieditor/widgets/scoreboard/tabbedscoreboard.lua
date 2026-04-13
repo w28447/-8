@@ -1,10 +1,10 @@
 require( "ui/uieditor/widgets/scoreboard/scoreboardgamestatus" )
 require( "ui/uieditor/widgets/scoreboard/scoreboardgamestatusscores" )
-require( "x64:8503431250d50b7" )
-require( "x64:67035dcc0ce94cc" )
+require( "ui/uieditor/widgets/scoreboard/scoreboardtabs" )
+require( "ui/uieditor/widgets/scoreboard/tabbedscoreboardheader" )
 require( "ui/uieditor/widgets/scoreboard/tabbedscoreboardscores" )
 require( "ui/uieditor/widgets/emptyfocusable" )
-require( "x64:dc94decf3a09a57" )
+require( "ui/uieditor/widgets/pc/hud/pctabbedscoreboardaccessmapprompt" )
 
 CoD.TabbedScoreboard = InheritFrom( LUI.UIElement )
 CoD.TabbedScoreboard.__defaultWidth = 1920

@@ -1,10 +1,10 @@
 require( "ui/uieditor/widgets/cac/cac_background_slide_panel" )
 require( "ui/uieditor/widgets/cac/itemnamedescunlocktext" )
-require( "x64:341ce33d59fafd1" )
+require( "ui/uieditor/widgets/cac/restricteditemwarningtext" )
 require( "ui/uieditor/widgets/common/commonheader" )
 require( "ui/uieditor/widgets/footer/footercontainer_frontend_right" )
 require( "ui/uieditor/widgets/header/header_container_frontend" )
-require( "x64:f36454e4aa0e1bb" )
+require( "ui/uieditor/widgets/zmfrontend/cac/zmitemgridbuttonsmall" )
 require( "ui/uieditor/widgets/pc/utility/xcammousecontrol" )
 
 CoD.ZMEquipmentSelect = InheritFrom( CoD.Menu )

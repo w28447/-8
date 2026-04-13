@@ -1,8 +1,8 @@
-require( "x64:4388b630d35560" )
-require( "x64:438bb630d35a79" )
-require( "x64:82f6f87abb3f4e" )
-require( "x64:82e0f87abb19ec" )
-require( "x64:61367168c92655f" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_party1" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_party2" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_racoonarm_l" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_racoonarm_r" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_vortex" )
 
 CoD[0x55901198AFBAC05] = InheritFrom( LUI.UIElement )
 CoD[0x55901198AFBAC05].__defaultWidth = 960

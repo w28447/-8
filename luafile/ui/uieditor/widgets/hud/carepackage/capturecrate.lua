@@ -1,4 +1,4 @@
-require( "x64:b6b5f594e0d79cf" )
+require( "ui/uieditor/widgets/hud/corner9slicewithblur" )
 
 CoD.CaptureCrate = InheritFrom( LUI.UIElement )
 CoD.CaptureCrate.__defaultWidth = 450

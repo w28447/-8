@@ -3,7 +3,7 @@ require( "x64:44da9c1f67fd1b1" )
 require( "x64:9e7a02187087234" )
 require( "x64:2686760003b88d" )
 require( "x64:a4bbe9addc978ed" )
-require( "x64:259226575a01bf0" )
+require( "ui/uieditor/widgets/mphudwidgets/minimapfogofwar" )
 
 CoD.SpawnSelectionMap = InheritFrom( LUI.UIElement )
 CoD.SpawnSelectionMap.__defaultWidth = 1920

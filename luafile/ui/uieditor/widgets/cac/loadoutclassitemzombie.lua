@@ -1,4 +1,4 @@
-require( "x64:3ad37e78efb57cc" )
+require( "ui/uieditor/widgets/cac/loadoutclassitemcontainerzombie" )
 
 CoD.LoadoutClassItemZombie = InheritFrom( LUI.UIElement )
 CoD.LoadoutClassItemZombie.__defaultWidth = 300

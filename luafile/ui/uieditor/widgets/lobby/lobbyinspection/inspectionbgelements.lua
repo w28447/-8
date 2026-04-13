@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/lobby/common/layoutelements/commonanalysingindicator" )
 require( "ui/uieditor/widgets/lobby/common/layoutelements/commonanalysingreticle" )
 require( "ui/uieditor/widgets/lobby/common/layoutelements/commonbglayoutelement02" )
-require( "x64:74864184d366296" )
+require( "ui/uieditor/widgets/lobby/common/layoutelements/commonbglayoutelement03" )
 require( "ui/uieditor/widgets/lobby/common/layoutelements/commonbglayoutlinkline" )
 
 CoD.InspectionBgElements = InheritFrom( LUI.UIElement )

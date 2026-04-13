@@ -1,7 +1,7 @@
 require( "ui/uieditor/menus/codcaster/editteamlogo" )
-require( "x64:316d9549bc3144a" )
-require( "x64:7f2eaaf0dc29512" )
-require( "x64:fc95c465fba6c23" )
+require( "ui/uieditor/widgets/codcaster/codcaster_color_element" )
+require( "ui/uieditor/widgets/codcaster/codcasterfakemap" )
+require( "ui/uieditor/widgets/codcaster/codcasterteamlogobutton" )
 require( "x64:d56f0abc01d5b34" )
 
 CoD.CodCasterTeamIdentitysettingscontainer = InheritFrom( LUI.UIElement )

@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/cac/cac_lock" )
-require( "x64:af90a79c38908dd" )
+require( "ui/uieditor/widgets/challenges/challenges_nearcompletion_croppedimage" )
 
 CoD.ChallengesNearCompletionWidgetSummary = InheritFrom( LUI.UIElement )
 CoD.ChallengesNearCompletionWidgetSummary.__defaultWidth = 1158

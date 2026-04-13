@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/bumperbuttonwithkeymousetext" )
-require( "x64:37113d6053cc9f6" )
+require( "ui/uieditor/widgets/director/directorfeaturedpip" )
 require( "ui/uieditor/widgets/bumperbuttonwithkeymouse" )
 
 CoD.DirectorFeaturedAccentCarousel = InheritFrom( LUI.UIElement )

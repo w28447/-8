@@ -1,7 +1,7 @@
-require( "x64:24cdc10be6c29c3" )
-require( "x64:48caaf1fed19249" )
-require( "x64:fbf715efc19873a" )
-require( "x64:338c91898254bcf" )
+require( "ui/uieditor/widgets/hud/gameendscore/gameendscorecenterarrow" )
+require( "ui/uieditor/widgets/hud/gameendscore/gameendscoreenemybacker" )
+require( "ui/uieditor/widgets/hud/gameendscore/gameendscoreteambacker" )
+require( "ui/uieditor/widgets/hud/gameendscore/gameendscoreteamicon" )
 
 CoD.GameEndScoreCenterWidget = InheritFrom( LUI.UIElement )
 CoD.GameEndScoreCenterWidget.__defaultWidth = 1920

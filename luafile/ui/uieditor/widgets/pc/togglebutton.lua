@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/emptyfocusable" )
-require( "x64:1ba14a6a952408f" )
-require( "x64:55b10f9afc8df1d" )
+require( "ui/uieditor/widgets/pc/startmenu/listitem" )
+require( "ui/uieditor/widgets/pc/togglebutton_button" )
 
 CoD.ToggleButton = InheritFrom( LUI.UIElement )
 CoD.ToggleButton.__defaultWidth = 810

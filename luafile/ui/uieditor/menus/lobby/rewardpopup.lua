@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/startmenu/startmenu_codpoints" )
-require( "x64:c13cdf83d1e2b76" )
+require( "ui/uieditor/widgets/store/storecommontextbacking02" )
 require( "ui/uieditor/widgets/systemoverlays/featureoverlay_button_mouseonly" )
 
 CoD.RewardPopup = InheritFrom( CoD.Menu )

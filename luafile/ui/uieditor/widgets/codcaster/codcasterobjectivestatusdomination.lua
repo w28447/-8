@@ -1,4 +1,4 @@
-require( "x64:5de488f119cdd59" )
+require( "ui/uieditor/widgets/codcaster/codcasterobjectivestatusdominationsite" )
 
 CoD.CodCasterObjectiveStatusDomination = InheritFrom( LUI.UIElement )
 CoD.CodCasterObjectiveStatusDomination.__defaultWidth = 412

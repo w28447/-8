@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidgetmp" )
-require( "x64:4e2da269453191d" )
+require( "ui/uieditor/widgets/hud/mp_hacked/hud_hacked_ammo_widget" )
 
 CoD.AmmoWidgetMPContainer = InheritFrom( LUI.UIElement )
 CoD.AmmoWidgetMPContainer.__defaultWidth = 590

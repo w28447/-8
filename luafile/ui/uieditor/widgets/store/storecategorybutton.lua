@@ -1,8 +1,8 @@
 require( "ui/uieditor/widgets/cac/cac_buttonboxlrgidle" )
 require( "ui/uieditor/widgets/cac/cac_buttonboxlrginactive" )
-require( "x64:1590f9a531858e0" )
-require( "x64:5f8cf56752aa71b" )
-require( "x64:1f846296f1a1b81" )
+require( "ui/uieditor/widgets/cac/cac_listbuttonlabel" )
+require( "ui/uieditor/widgets/commonbuttonoutline" )
+require( "ui/uieditor/widgets/director/DirectorSelectButtonMiniInternal" )
 
 CoD.StoreCategoryButton = InheritFrom( LUI.UIElement )
 CoD.StoreCategoryButton.__defaultWidth = 324

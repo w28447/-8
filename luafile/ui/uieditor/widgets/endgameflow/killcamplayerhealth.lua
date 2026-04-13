@@ -1,5 +1,5 @@
 require( "x64:b86237f42f877c0" )
-require( "x64:93a575a7ca17e04" )
+require( "ui/uieditor/widgets/health/healthbar" )
 
 CoD.KillcamPlayerHealth = InheritFrom( LUI.UIElement )
 CoD.KillcamPlayerHealth.__defaultWidth = 400

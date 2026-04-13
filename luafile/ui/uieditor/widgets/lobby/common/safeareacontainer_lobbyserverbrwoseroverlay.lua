@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/common/commonheader" )
-require( "x64:81a24c5340caa1e" )
+require( "ui/uieditor/widgets/common/commontabbarbacking" )
 require( "ui/uieditor/widgets/director/directorselect_tabbar_center" )
 require( "ui/uieditor/widgets/header/header_container_frontend" )
 

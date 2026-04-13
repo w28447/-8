@@ -1,6 +1,6 @@
-require( "x64:341ce33d59fafd1" )
+require( "ui/uieditor/widgets/cac/restricteditemwarningtext" )
 require( "x64:c894f1061c2c2a8" )
-require( "x64:2190adaba331dcb" )
+require( "ui/uieditor/widgets/startmenu/startmenu_signatureitem" )
 
 CoD.PositionDraft_FocusedCharacterInfo = InheritFrom( LUI.UIElement )
 CoD.PositionDraft_FocusedCharacterInfo.__defaultWidth = 1201

@@ -1,4 +1,4 @@
-require( "x64:b8cab39e4234d59" )
+require( "ui/uieditor/widgets/zmfrontend/zmaartimetext" )
 
 CoD.ZMAARTrialTime = InheritFrom( LUI.UIElement )
 CoD.ZMAARTrialTime.__defaultWidth = 200

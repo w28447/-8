@@ -1,9 +1,9 @@
 require( "x64:6ee653ade3452f5" )
 require( "ui/uieditor/widgets/vehiclehuds/dart/vhud_dart_centerreticleoutercircledots" )
-require( "x64:14999ad4356466" )
-require( "x64:d2b07b098532876" )
-require( "x64:b9c6f6499cb39da" )
-require( "x64:8819c673a5c0a5c" )
+require( "ui/uieditor/widgets/vehiclehuds/hellstorm/vhud_hellstormring" )
+require( "ui/uieditor/widgets/vehiclehuds/vhud_layoutdotlinegrid" )
+require( "ui/uieditor/widgets/vehiclehuds/vhud_layoutfuielements" )
+require( "ui/uieditor/widgets/vehiclehuds/vhud_layoutplusgridlarge" )
 
 CoD.vhud_dart_PC_reticleBacking = InheritFrom( LUI.UIElement )
 CoD.vhud_dart_PC_reticleBacking.__defaultWidth = 1920

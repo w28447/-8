@@ -1,8 +1,8 @@
 require( "ui/uieditor/widgets/freecursor/freecursordetaileddescriptioncontainer" )
 require( "ui/uieditor/widgets/freecursor/infopanelsubwidgets/freecursorbuttonpromptarea" )
-require( "x64:9a23af2a8d21742" )
-require( "x64:65ae4679e313a58" )
-require( "x64:c373acceaa4c882" )
+require( "ui/uieditor/widgets/freecursor/infopanelsubwidgets/freecursorcautioninfo" )
+require( "ui/uieditor/widgets/freecursor/infopanelsubwidgets/freecursorheaderinfo" )
+require( "ui/uieditor/widgets/freecursor/infopanelsubwidgets/freecursorplayercard" )
 
 CoD.TooltipFeatureTitle = InheritFrom( LUI.UIElement )
 CoD.TooltipFeatureTitle.__defaultWidth = 405

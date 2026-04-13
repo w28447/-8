@@ -1,5 +1,5 @@
 require( "ui/uieditor/menus/social/social_inviteplayerspopup" )
-require( "x64:673b9bfc92c298b" )
+require( "ui/uieditor/widgets/director/directorlobbymember" )
 
 CoD.DirectorPartyList = InheritFrom( LUI.UIElement )
 CoD.DirectorPartyList.__defaultWidth = 408

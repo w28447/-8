@@ -1,4 +1,4 @@
-require( "x64:fb1621df4e9688b" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_astromonkey" )
 
 CoD[0xC93CA98359EB427] = InheritFrom( LUI.UIElement )
 CoD[0xC93CA98359EB427].__defaultWidth = 960

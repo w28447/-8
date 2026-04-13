@@ -1,5 +1,5 @@
-require( "x64:68116bb31f713ff" )
-require( "x64:dd39f3a70898c77" )
+require( "ui/uieditor/widgets/scoreboard/wz/scoreboardmapkeywz" )
+require( "ui/uieditor/widgets/scoreboard/wz/scoreboardmapwzinternal" )
 
 CoD.ScoreboardMapWZ = InheritFrom( LUI.UIElement )
 CoD.ScoreboardMapWZ.__defaultWidth = 1920

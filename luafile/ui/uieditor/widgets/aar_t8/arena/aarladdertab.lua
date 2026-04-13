@@ -1,8 +1,8 @@
-require( "x64:f00a10fc8301da2" )
+require( "ui/uieditor/widgets/aar_t8/aarcommonbacking" )
 require( "ui/uieditor/widgets/aar_t8/arena/aar_leagueplayladderwidget" )
 require( "ui/uieditor/widgets/aar_t8/summary/aargameinfo" )
-require( "x64:a876df622faedff" )
-require( "x64:410e708eaf33033" )
+require( "ui/uieditor/widgets/arena/arenaleagueplay_ladderskilldivision" )
+require( "ui/uieditor/widgets/arena/leagueplay_aar_pointpanel" )
 
 CoD.AARLadderTab = InheritFrom( LUI.UIElement )
 CoD.AARLadderTab.__defaultWidth = 1920
@@ -75,7 +75,7 @@ CoD.AARLadderTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	
 	local Line = LUI.UIImage.new( 0, 0, 709, 711, 0, 0, 208.5, 710.5 )
 	Line:setAlpha( 0.05 )
-	Line:setImage( RegisterImage( 0xC49B0C8991A541F ) )
+	Line:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
 	Line:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	Line:setShaderVector( 0, 0, 0, 0, 0 )
 	Line:setupNineSliceShader( 4, 8 )

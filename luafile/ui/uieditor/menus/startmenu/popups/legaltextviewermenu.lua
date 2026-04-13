@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/footer/footercontainer_frontend_right" )
-require( "x64:bfd45228502765f" )
+require( "ui/uieditor/widgets/startmenu/options/legaltextviewerbody" )
 require( "ui/uieditor/widgets/pc/pc_eula_pages" )
 require( "x64:2b3a36f75bb6e0e" )
 

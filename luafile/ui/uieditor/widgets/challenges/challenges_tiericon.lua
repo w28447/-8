@@ -1,4 +1,4 @@
-require( "x64:4f4ebc58e721a19" )
+require( "ui/uieditor/widgets/callingcards/callingcardprofilerxp" )
 require( "ui/uieditor/widgets/store/storecommontextbacking" )
 
 CoD.Challenges_TierIcon = InheritFrom( LUI.UIElement )

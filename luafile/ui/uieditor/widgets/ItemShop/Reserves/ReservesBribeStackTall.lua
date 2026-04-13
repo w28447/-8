@@ -1,7 +1,7 @@
-require( "x64:e272191e46af824" )
-require( "x64:5f8cf56752aa71b" )
-require( "x64:e4ab7898d6eef2c" )
-require( "x64:d18f710d30d4ebf" )
+require( "ui/uieditor/widgets/common/commontooltip" )
+require( "ui/uieditor/widgets/commonbuttonoutline" )
+require( "ui/uieditor/widgets/itemshop/contracts/contractitemcostmulticurrency" )
+require( "ui/uieditor/widgets/itemshop/contracts/contractpurchasedbanner" )
 require( "ui/uieditor/widgets/store/storecommontextbacking" )
 
 CoD.ReservesBribeStackTall = InheritFrom( LUI.UIElement )

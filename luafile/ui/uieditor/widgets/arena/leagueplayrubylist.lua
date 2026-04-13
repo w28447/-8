@@ -1,4 +1,4 @@
-require( "x64:68d2be12a9d6269" )
+require( "ui/uieditor/widgets/arena/LeaguePlayRuby" )
 
 CoD.LeaguePlayRubyList = InheritFrom( LUI.UIElement )
 CoD.LeaguePlayRubyList.__defaultWidth = 150

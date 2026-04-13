@@ -1,6 +1,6 @@
-require( "x64:5cb43180fc65bb6" )
-require( "x64:3195d3ca15044e" )
-require( "x64:7b84dce3c602575" )
+require( "ui/uieditor/widgets/blackmarket/bm_goldbarlarge" )
+require( "ui/uieditor/widgets/blackmarket/tag_iteminfopanel" )
+require( "ui/uieditor/widgets/craft/emblemeditor/emblemdrawwidgetnoimage" )
 
 CoD.HUBTagPreview = InheritFrom( LUI.UIElement )
 CoD.HUBTagPreview.__defaultWidth = 547

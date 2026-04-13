@@ -1,4 +1,4 @@
-require( "x64:c61a61dbc4fee01" )
+require( "ui/uieditor/widgets/fileshare/fileshareselecteditempreview" )
 require( "ui/uieditor/widgets/fileshare/fullscreenpopup/fullscreenpopuptemplate" )
 require( "ui/uieditor/widgets/footer/fe_leftcontainer_notlobby" )
 

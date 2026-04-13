@@ -1,5 +1,5 @@
-require( "x64:f7a27cd81266e39" )
-require( "x64:9052afdd42d6865" )
+require( "ui/uieditor/widgets/hud/abilitycallout/abilitycallout_queue" )
+require( "ui/uieditor/widgets/hud/helpmessagecontainer" )
 require( "ui/uieditor/widgets/hud/safeframe_playercard" )
 
 CoD.Hud_SafeAreaContainer_Front = InheritFrom( LUI.UIElement )

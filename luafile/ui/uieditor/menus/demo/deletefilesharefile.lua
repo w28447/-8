@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframe" )
-require( "x64:dc0fc4f12ef5abe" )
+require( "ui/uieditor/widgets/fileshare/filesharecategorycontentlist" )
 require( "ui/uieditor/widgets/startmenu/startmenu_background" )
 
 CoD.DeleteFileshareFile = InheritFrom( CoD.Menu )

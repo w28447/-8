@@ -23,7 +23,7 @@ CoD.WeaponPersonalizationOptionsContainer.new = function ( f1_arg0, f1_arg1, f1_
 	
 	local Linker2 = LUI.UIImage.new( 0.5, 0.5, -737.5, -733.5, 0, 0, 0, 269 )
 	Linker2:setAlpha( 0.05 )
-	Linker2:setImage( RegisterImage( 0xC49B0C8991A541F ) )
+	Linker2:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
 	Linker2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	Linker2:setShaderVector( 0, 0, 0, 0, 0 )
 	Linker2:setupNineSliceShader( 4, 8 )
@@ -44,7 +44,7 @@ CoD.WeaponPersonalizationOptionsContainer.new = function ( f1_arg0, f1_arg1, f1_
 	
 	local Linker = LUI.UIImage.new( 0.5, 0.5, -443.5, -439.5, 0, 0, 0, 269 )
 	Linker:setAlpha( 0.05 )
-	Linker:setImage( RegisterImage( 0xC49B0C8991A541F ) )
+	Linker:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
 	Linker:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	Linker:setShaderVector( 0, 0, 0, 0, 0 )
 	Linker:setupNineSliceShader( 4, 8 )

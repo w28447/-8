@@ -1,7 +1,7 @@
 require( "ui/uieditor/menus/fileshare/popups/fileshareoptions" )
-require( "x64:e7c4814f0e345b8" )
+require( "ui/uieditor/widgets/fileshare/fileshareselectoritemwide" )
 require( "ui/uieditor/widgets/fileshare/filesharespinner" )
-require( "x64:d0268d71c916877" )
+require( "ui/uieditor/widgets/fileshare/selectedfilminformation" )
 require( "ui/uieditor/widgets/scrollbars/verticalcounter" )
 
 CoD.FileshareCategoryContentList = InheritFrom( LUI.UIElement )

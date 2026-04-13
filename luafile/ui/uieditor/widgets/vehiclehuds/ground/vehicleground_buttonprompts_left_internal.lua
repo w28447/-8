@@ -1,6 +1,6 @@
-require( "x64:de9e451ea80d529" )
-require( "x64:fb4ac1597b7dda8" )
-require( "x64:291b90da1df3a5f" )
+require( "ui/uieditor/widgets/vehiclehuds/vehiclebuttonprompt" )
+require( "ui/uieditor/widgets/vehiclehuds/vehicleholdbuttonprompt" )
+require( "ui/uieditor/widgets/vehiclehuds/vehicleholdswitchseat" )
 
 CoD.VehicleGround_ButtonPrompts_Left_Internal = InheritFrom( LUI.UIElement )
 CoD.VehicleGround_ButtonPrompts_Left_Internal.__defaultWidth = 1400

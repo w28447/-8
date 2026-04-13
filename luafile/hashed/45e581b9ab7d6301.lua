@@ -1,7 +1,7 @@
 require( "x64:6bffb9001264254" )
 require( "ui/uieditor/widgets/onoffimage" )
 require( "x64:150529e44cb94d7" )
-require( "x64:478f2bd71f935fd" )
+require( "ui/uieditor/widgets/warzone/warzoneinventorycounter" )
 
 CoD.MultiItemPickupWaypointItemKBM = InheritFrom( LUI.UIElement )
 CoD.MultiItemPickupWaypointItemKBM.__defaultWidth = 100

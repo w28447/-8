@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/common/common_tabbar_center" )
-require( "x64:81a24c5340caa1e" )
+require( "ui/uieditor/widgets/common/commontabbarbacking" )
 
 CoD.Challenges_SafeAreaWidget = InheritFrom( LUI.UIElement )
 CoD.Challenges_SafeAreaWidget.__defaultWidth = 1920

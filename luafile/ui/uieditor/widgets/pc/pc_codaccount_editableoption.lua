@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/emptyfocusable" )
-require( "x64:610fa6ebdf6af8b" )
+require( "ui/uieditor/widgets/pc/pc_codaccount_editableoption_editbox" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsmainframe" )
 require( "ui/uieditor/widgets/startmenu/startmenu_frame_nobg" )
 

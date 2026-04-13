@@ -1,4 +1,4 @@
-require( "x64:b139f35e8a97671" )
+require( "ui/uieditor/widgets/director/directorfindgamedetailmodes" )
 
 CoD.DirectorFindGamePlaylistInfoVerticalLayoutMP = InheritFrom( LUI.UIElement )
 CoD.DirectorFindGamePlaylistInfoVerticalLayoutMP.__defaultWidth = 524

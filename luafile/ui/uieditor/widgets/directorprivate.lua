@@ -1,10 +1,10 @@
 require( "ui/uieditor/widgets/common/commonheader" )
 require( "ui/uieditor/widgets/director/directorleaderactivity" )
-require( "x64:51ef3a2adbd471e" )
-require( "x64:fda45231af81f63" )
-require( "x64:7b2e5c29b34a47e" )
-require( "x64:dbdc73a4a6c0b46" )
-require( "x64:445928c36e455a1" )
+require( "ui/uieditor/widgets/director/directorlobbyposememberszm" )
+require( "ui/uieditor/widgets/director/directormapgametypeanddifficulty" )
+require( "ui/uieditor/widgets/director/directorreadybutton" )
+require( "ui/uieditor/widgets/director/directorzmlobbysettinglist" )
+require( "ui/uieditor/widgets/zmfrontend/zmloadoutpreviewinfo" )
 
 CoD.directorPrivate = InheritFrom( LUI.UIElement )
 CoD.directorPrivate.__defaultWidth = 1920

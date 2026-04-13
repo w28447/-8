@@ -1,4 +1,4 @@
-require( "x64:5cf841f7414a548" )
+require( "ui/uieditor/widgets/cac/loadoutclassitemcontainersecondary" )
 
 CoD.LoadoutClassItemSecondary = InheritFrom( LUI.UIElement )
 CoD.LoadoutClassItemSecondary.__defaultWidth = 374

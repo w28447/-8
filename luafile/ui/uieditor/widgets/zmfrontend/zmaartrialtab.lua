@@ -1,4 +1,4 @@
-require( "x64:f00a10fc8301da2" )
+require( "ui/uieditor/widgets/aar_t8/aarcommonbacking" )
 require( "ui/uieditor/widgets/zmfrontend/zmaartrialtabinternal" )
 
 CoD.ZMAARTrialTab = InheritFrom( LUI.UIElement )

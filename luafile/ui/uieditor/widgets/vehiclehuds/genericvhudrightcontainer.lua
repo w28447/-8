@@ -1,6 +1,6 @@
-require( "x64:a711f5c262e7f92" )
+require( "ui/uieditor/widgets/vehiclehuds/genericvhud3missilecounter" )
 require( "ui/uieditor/widgets/vehiclehuds/genericvhudinfoarea" )
-require( "x64:2ce116d9485ec2b" )
+require( "ui/uieditor/widgets/vehiclehuds/genericvhudprogressbar" )
 
 CoD.genericVHUDRightContainer = InheritFrom( LUI.UIElement )
 CoD.genericVHUDRightContainer.__defaultWidth = 133

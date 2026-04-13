@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/lobby/common/fe_focusbarcontainer" )
-require( "x64:dbd216abb19e109" )
+require( "ui/uieditor/widgets/pc/startmenu/dropdown/optiondropdownitem" )
 require( "ui/uieditor/widgets/scrollbars/verticalscrollbar" )
 require( "ui/uieditor/widgets/startmenu/startmenu_frame_nobg" )
 

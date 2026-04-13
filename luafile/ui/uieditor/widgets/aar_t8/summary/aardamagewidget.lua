@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/aar_t8/summary/aarperformancebg" )
-require( "x64:8330b7987fe0d45" )
+require( "ui/uieditor/widgets/aar_t8/summary/aarsubstat" )
 
 CoD.AARDamageWidget = InheritFrom( LUI.UIElement )
 CoD.AARDamageWidget.__defaultWidth = 340

@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/bumperbuttonwithkeymousetext" )
-require( "x64:81a24c5340caa1e" )
+require( "ui/uieditor/widgets/common/commontabbarbacking" )
 require( "ui/uieditor/widgets/cac/cactabbuttoninternal" )
 
 CoD.CustomGames_CatgeoryTabs = InheritFrom( LUI.UIElement )

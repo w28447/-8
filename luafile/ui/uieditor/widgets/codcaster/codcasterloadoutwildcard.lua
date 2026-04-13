@@ -1,4 +1,4 @@
-require( "x64:1f8ea4e2ff1d11b" )
+require( "ui/uieditor/widgets/codcaster/codcasterloadoutselectionwild" )
 
 CoD.CodCasterLoadoutWildcard = InheritFrom( LUI.UIElement )
 CoD.CodCasterLoadoutWildcard.__defaultWidth = 25

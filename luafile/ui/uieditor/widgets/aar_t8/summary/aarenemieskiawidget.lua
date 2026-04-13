@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/aar_t8/summary/aarperformancebg" )
-require( "x64:e0a647a9aa431ab" )
+require( "ui/uieditor/widgets/aar_t8/summary/aarstatline" )
 
 CoD.AAREnemiesKIAWidget = InheritFrom( LUI.UIElement )
 CoD.AAREnemiesKIAWidget.__defaultWidth = 340

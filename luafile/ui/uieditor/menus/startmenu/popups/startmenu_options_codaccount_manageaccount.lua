@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/backgroundframes/menuframeingame" )
 require( "ui/uieditor/widgets/common/commonheader" )
 require( "ui/uieditor/widgets/header/header_container_frontend" )
-require( "x64:d5b03c451ceb6e8" )
+require( "ui/uieditor/widgets/startmenu/options/startmenu_options_accountmanagementform" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsbackground" )
 
 CoD.StartMenu_Options_CoDAccount_ManageAccount = InheritFrom( CoD.Menu )

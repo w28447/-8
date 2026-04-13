@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/cac/menuchooseclass/itemwidgets/weaponlevelmetersmall" )
-require( "x64:6466c2aec2cf6a4" )
+require( "ui/uieditor/widgets/cac/menuchooseclass/itemwidgets/weaponlevelwidget" )
 
 CoD.ButtonWeaponLevel = InheritFrom( LUI.UIElement )
 CoD.ButtonWeaponLevel.__defaultWidth = 550

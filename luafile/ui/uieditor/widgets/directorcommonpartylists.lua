@@ -1,4 +1,4 @@
-require( "x64:a2bcf8aadb8131e" )
+require( "ui/uieditor/widgets/directorpublicplayerlistscontainer" )
 
 CoD.DirectorCommonPartyLists = InheritFrom( LUI.UIElement )
 CoD.DirectorCommonPartyLists.__defaultWidth = 1920

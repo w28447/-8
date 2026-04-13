@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/common/commonheader" )
 require( "ui/uieditor/widgets/footer/footercontainer_frontend_right" )
 require( "ui/uieditor/widgets/header/header_container_frontend" )
-require( "x64:341c1b90abc5f01" )
+require( "ui/uieditor/widgets/zmfrontend/directorzmtrialsinfointernal" )
 
 CoD.DirectorZMTrialsInfo = InheritFrom( CoD.Menu )
 LUI.createMenu.DirectorZMTrialsInfo = function ( f1_arg0, f1_arg1 )

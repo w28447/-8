@@ -1,6 +1,6 @@
-require( "x64:8a3543a913958f1" )
+require( "ui/uieditor/widgets/blackmarket/contracts/bm_contractprogress" )
 require( "ui/uieditor/widgets/fileshare/fullscreenpopup/fullscreenpopuptemplate" )
-require( "x64:5d80cb371475b19" )
+require( "ui/uieditor/widgets/itemshop/itemshopbutton" )
 
 CoD.BlackMarketContractReplacementConfirmation = InheritFrom( CoD.Menu )
 LUI.createMenu.BlackMarketContractReplacementConfirmation = function ( f1_arg0, f1_arg1 )

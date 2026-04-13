@@ -1,4 +1,4 @@
-require( "x64:de9e451ea80d529" )
+require( "ui/uieditor/widgets/vehiclehuds/vehiclebuttonprompt" )
 require( "ui/uieditor/widgets/controllerdependent_textbox" )
 
 CoD.vhud_dart_button_all = InheritFrom( LUI.UIElement )

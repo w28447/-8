@@ -1,4 +1,4 @@
-require( "x64:46e86762adf274e" )
+require( "ui/uieditor/widgets/vehiclehuds/attackhelicopter/vhud_attack_helicopter_rocket" )
 
 CoD.vhud_attack_helicopter_rocket_counter = InheritFrom( LUI.UIElement )
 CoD.vhud_attack_helicopter_rocket_counter.__defaultWidth = 150

@@ -1,8 +1,8 @@
-require( "x64:5f8cf56752aa71b" )
-require( "x64:e38247e77bdfbff" )
-require( "x64:c4fa18438e51aa4" )
+require( "ui/uieditor/widgets/commonbuttonoutline" )
+require( "ui/uieditor/widgets/customgames/customgames_officialbadgeicon" )
+require( "ui/uieditor/widgets/director/directormapandgametypeinternaltitles" )
 require( "ui/uieditor/widgets/director/directorpartyleaderonlyprompt" )
-require( "x64:fe5982d27a41c8" )
+require( "ui/uieditor/widgets/director/directorselectbuttonmode" )
 
 CoD.DirectorPreGameSetUpMatchContainer = InheritFrom( LUI.UIElement )
 CoD.DirectorPreGameSetUpMatchContainer.__defaultWidth = 372

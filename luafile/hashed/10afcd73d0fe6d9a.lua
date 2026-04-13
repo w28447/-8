@@ -1,6 +1,6 @@
 require( "x64:221cc7053ccdd4f" )
-require( "x64:46728994d8c06c0" )
-require( "x64:50e26e98239f317" )
+require( "ui/uieditor/widgets/common/commondetailpanel02" )
+require( "ui/uieditor/widgets/mp/specialisthub/hubequipmentitem" )
 
 CoD.SpecialistHeadquartersSpecialistInfo = InheritFrom( LUI.UIElement )
 CoD.SpecialistHeadquartersSpecialistInfo.__defaultWidth = 487

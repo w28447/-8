@@ -1,4 +1,4 @@
-require( "x64:c409b01f207c25a" )
+require( "ui/uieditor/widgets/arena/arenarubyprogressredbar" )
 
 CoD.ArenaRubyProgressThreeWidget = InheritFrom( LUI.UIElement )
 CoD.ArenaRubyProgressThreeWidget.__defaultWidth = 926

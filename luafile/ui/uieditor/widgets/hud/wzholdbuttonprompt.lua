@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/buttonprogressring" )
-require( "x64:ef0585bf703baa8" )
+require( "ui/uieditor/widgets/controllerdependent_textboxlargegamepad" )
 
 CoD.WZHoldButtonPrompt = InheritFrom( LUI.UIElement )
 CoD.WZHoldButtonPrompt.__defaultWidth = 89

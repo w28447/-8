@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/hud/obituary/obituaryblurbacking" )
-require( "x64:12d3ff0a1b8cdca" )
+require( "ui/uieditor/widgets/warzone/warzoneusetimerprogress" )
 
 CoD.prototype_self_revive = InheritFrom( CoD.Menu )
 LUI.createMenu.prototype_self_revive = function ( f1_arg0, f1_arg1 )

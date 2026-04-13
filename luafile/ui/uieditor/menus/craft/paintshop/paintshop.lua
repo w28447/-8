@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframe" )
 require( "ui/uieditor/widgets/cac/titledotswidget" )
-require( "x64:131d34d6abd22fe" )
-require( "x64:54a41db003228cc" )
+require( "ui/uieditor/widgets/craft/paintshop/paintjobselector" )
+require( "ui/uieditor/widgets/craft/paintshop/paintshopslotsfull" )
 require( "ui/uieditor/widgets/lobby/common/fe_buttonpanelshadercontainer" )
 require( "ui/uieditor/widgets/scrollbars/verticalcounter" )
 

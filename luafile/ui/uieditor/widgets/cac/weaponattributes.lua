@@ -1,4 +1,4 @@
-require( "x64:e4f4fd1023f5306" )
+require( "ui/uieditor/widgets/cac/weaponattachmentselect/mutualexclusivewarning" )
 require( "ui/uieditor/widgets/cac/weaponattributes/weaponattributeuberinfo" )
 require( "ui/uieditor/widgets/cac/weaponattributestat" )
 require( "ui/uieditor/widgets/cac/weaponattributevaluestat" )

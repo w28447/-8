@@ -1,4 +1,4 @@
-require( "x64:2cac675ab462d9" )
+require( "ui/uieditor/widgets/challenges/nearcompletionbutton" )
 
 CoD.ChallengesNearCompletionWidget = InheritFrom( LUI.UIElement )
 CoD.ChallengesNearCompletionWidget.__defaultWidth = 1100

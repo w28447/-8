@@ -1,9 +1,9 @@
 require( "ui/uieditor/widgets/craft/emblemeditor/craftlayernumber" )
-require( "x64:c2f840fd2528321" )
-require( "x64:96b29a3176ada0f" )
+require( "ui/uieditor/widgets/craft/emblemeditor/emblemoptionsbutton" )
+require( "ui/uieditor/widgets/craft/slotsusedwidget" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsmainframe" )
 require( "ui/uieditor/widgets/systemoverlays/systemoverlay_layout_foregroundmultilinetext" )
-require( "x64:3447fe281be3ac4" )
+require( "ui/uieditor/widgets/pc/emblemrenametextbox" )
 
 CoD.systemOverlay_SaveDecalGroupFrame = InheritFrom( LUI.UIElement )
 CoD.systemOverlay_SaveDecalGroupFrame.__defaultWidth = 1920

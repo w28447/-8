@@ -1,6 +1,6 @@
 require( "x64:6bffb9001264254" )
 require( "ui/uieditor/widgets/onoffimage" )
-require( "x64:478f2bd71f935fd" )
+require( "ui/uieditor/widgets/warzone/warzoneinventorycounter" )
 
 CoD.TabbedMultiItemPickupItem = InheritFrom( LUI.UIElement )
 CoD.TabbedMultiItemPickupItem.__defaultWidth = 100

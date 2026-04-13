@@ -1,6 +1,6 @@
-require( "x64:c2f840fd2528321" )
-require( "x64:96b29a3176ada0f" )
-require( "x64:c61a61dbc4fee01" )
+require( "ui/uieditor/widgets/craft/emblemeditor/emblemoptionsbutton" )
+require( "ui/uieditor/widgets/craft/slotsusedwidget" )
+require( "ui/uieditor/widgets/fileshare/fileshareselecteditempreview" )
 require( "ui/uieditor/widgets/footer/fe_footerrighslidein" )
 require( "ui/uieditor/widgets/theater/theater_hinttext" )
 

@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/callingcards/callingcards_framewidget" )
-require( "x64:5596080038cf83b" )
+require( "ui/uieditor/widgets/notifications/playercard/playercard_nameandclantag" )
 
 CoD.KillcamPlayerCard = InheritFrom( LUI.UIElement )
 CoD.KillcamPlayerCard.__defaultWidth = 318

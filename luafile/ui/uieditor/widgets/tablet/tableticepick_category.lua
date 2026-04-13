@@ -1,6 +1,6 @@
-require( "x64:6115f07e77033b8" )
-require( "x64:d3ed7e75d364b93" )
-require( "x64:85184c89209a1b" )
+require( "ui/uieditor/widgets/tablet/tableticepick_categoryprog" )
+require( "ui/uieditor/widgets/tablet/tableticepickgadget_bgelementgraph" )
+require( "ui/uieditor/widgets/tablet/tableticepickgadget_item" )
 
 CoD.TabletIcePick_Category = InheritFrom( LUI.UIElement )
 CoD.TabletIcePick_Category.__defaultWidth = 300

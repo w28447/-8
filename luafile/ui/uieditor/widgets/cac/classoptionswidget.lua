@@ -1,8 +1,8 @@
 require( "ui/uieditor/widgets/common/commonlistbuttongeneric" )
 require( "ui/uieditor/widgets/common/commonrightslideinpopup" )
 require( "ui/uieditor/widgets/footer/footerbutton_frontend_right" )
-require( "x64:30f6657af27fb76" )
-require( "x64:c83f9a398165f22" )
+require( "ui/uieditor/widgets/pc/pc_classoptionrenamebox" )
+require( "ui/uieditor/widgets/pc/pc_classoptionspopup" )
 require( "ui/uieditor/widgets/pc/pc_smallclosebutton" )
 require( "ui/uieditor/widgets/systemoverlays/featureoverlay_button_mouseonly" )
 

@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/common/commondetailpanel" )
-require( "x64:7fea65b501dd29d" )
-require( "x64:be167ee86fcf99d" )
-require( "x64:16e48ac85df931c" )
+require( "ui/uieditor/widgets/director/directorfindgameplaylistinfoverticallayoutmp" )
+require( "ui/uieditor/widgets/lobby/missingdlcnotification" )
+require( "ui/uieditor/widgets/notifications/xp/doublexpiconscenteraligned" )
 
 CoD.DirectorFindGamePlaylistInfoDescriptionPanel = InheritFrom( LUI.UIElement )
 CoD.DirectorFindGamePlaylistInfoDescriptionPanel.__defaultWidth = 540

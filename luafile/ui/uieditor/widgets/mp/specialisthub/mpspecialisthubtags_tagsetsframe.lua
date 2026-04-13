@@ -1,6 +1,6 @@
-require( "x64:2d64ca9d3c705ce" )
-require( "x64:87dfa54b5d08484" )
-require( "x64:a2cc8976ed23254" )
+require( "ui/uieditor/widgets/common/commoncornerbrackets01" )
+require( "ui/uieditor/widgets/mp/specialisthub/hubtagbutton" )
+require( "ui/uieditor/widgets/mp/specialisthub/hubtagpreview" )
 require( "ui/uieditor/widgets/scrollbars/verticalcounter" )
 require( "x64:c7e896ee4bc3f8" )
 

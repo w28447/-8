@@ -1,4 +1,4 @@
-require( "x64:4ceb8e53c9b511d" )
+require( "ui/uieditor/widgets/zmfrontend/cac/zmelixirslotinternal" )
 
 CoD.ZMPerkOption = InheritFrom( LUI.UIElement )
 CoD.ZMPerkOption.__defaultWidth = 132

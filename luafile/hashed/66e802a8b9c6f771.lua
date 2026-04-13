@@ -1,5 +1,5 @@
 require( "x64:5819df4f68fe0b3" )
-require( "x64:1f846296f1a1b81" )
+require( "ui/uieditor/widgets/director/DirectorSelectButtonMiniInternal" )
 
 CoD.BM_ActivateBountyButton = InheritFrom( LUI.UIElement )
 CoD.BM_ActivateBountyButton.__defaultWidth = 460

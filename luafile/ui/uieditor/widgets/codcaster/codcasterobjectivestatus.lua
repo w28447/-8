@@ -1,10 +1,10 @@
-require( "x64:95a97da93538517" )
-require( "x64:cf052d7532754d9" )
-require( "x64:5dc6cf80349818a" )
-require( "x64:5972a15b60b6833" )
-require( "x64:c5031fde3726237" )
-require( "x64:8a228085bff138c" )
-require( "x64:6ae8165b7fb8565" )
+require( "ui/uieditor/widgets/codcaster/codcasterobjectivestatuscontrol" )
+require( "ui/uieditor/widgets/codcaster/codcasterobjectivestatusctf" )
+require( "ui/uieditor/widgets/codcaster/codcasterobjectivestatusdomination" )
+require( "ui/uieditor/widgets/codcaster/codcasterobjectivestatushardpoint" )
+require( "ui/uieditor/widgets/codcaster/codcasterobjectivestatuslifecount" )
+require( "ui/uieditor/widgets/codcaster/codcasterobjectivestatussafeguard" )
+require( "ui/uieditor/widgets/codcaster/codcasterobjectivestatussd" )
 
 CoD.CodCasterObjectiveStatus = InheritFrom( LUI.UIElement )
 CoD.CodCasterObjectiveStatus.__defaultWidth = 520

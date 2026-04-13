@@ -1,4 +1,4 @@
-require( "x64:565777d401d7115" )
+require( "ui/uieditor/widgets/startmenu/startmenu_barracks_factioncalling_button_internal" )
 
 CoD.StartMenu_Barracks_FactionCalling_Button = InheritFrom( LUI.UIElement )
 CoD.StartMenu_Barracks_FactionCalling_Button.__defaultWidth = 543

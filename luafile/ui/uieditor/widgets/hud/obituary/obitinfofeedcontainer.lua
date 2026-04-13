@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/hud/console/console" )
-require( "x64:902a4f3984494c3" )
+require( "ui/uieditor/widgets/hud/obituary/obituary" )
 
 CoD.ObitInfoFeedContainer = InheritFrom( LUI.UIElement )
 CoD.ObitInfoFeedContainer.__defaultWidth = 500

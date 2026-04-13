@@ -1,4 +1,4 @@
-require( "x64:46728994d8c06c0" )
+require( "ui/uieditor/widgets/common/commondetailpanel02" )
 
 CoD.CustomizeIconDetails = InheritFrom( LUI.UIElement )
 CoD.CustomizeIconDetails.__defaultWidth = 400

@@ -1,9 +1,9 @@
-require( "x64:c2f840fd2528321" )
-require( "x64:96b29a3176ada0f" )
+require( "ui/uieditor/widgets/craft/emblemeditor/emblemoptionsbutton" )
+require( "ui/uieditor/widgets/craft/slotsusedwidget" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsmainframe" )
 require( "ui/uieditor/widgets/systemoverlays/systemoverlay_layout_foregroundmultilinetext" )
-require( "x64:bc7ea4f891a4cca" )
-require( "x64:3447fe281be3ac4" )
+require( "ui/uieditor/widgets/craft/craftauthorinfo" )
+require( "ui/uieditor/widgets/pc/emblemrenametextbox" )
 
 CoD.systemOverlay_SaveEmblemFrame = InheritFrom( LUI.UIElement )
 CoD.systemOverlay_SaveEmblemFrame.__defaultWidth = 1920

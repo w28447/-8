@@ -1,4 +1,4 @@
-require( "x64:1f846296f1a1b81" )
+require( "ui/uieditor/widgets/director/DirectorSelectButtonMiniInternal" )
 
 CoD.StartMenu_Options_CoDAccountButton = InheritFrom( LUI.UIElement )
 CoD.StartMenu_Options_CoDAccountButton.__defaultWidth = 514

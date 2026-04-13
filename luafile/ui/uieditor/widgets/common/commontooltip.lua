@@ -1,4 +1,4 @@
-require( "x64:213634351838d49" )
+require( "ui/uieditor/widgets/common/commontooltipbacking" )
 
 CoD.CommonToolTip = InheritFrom( LUI.UIElement )
 CoD.CommonToolTip.__defaultWidth = 292

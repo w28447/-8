@@ -1,4 +1,4 @@
-require( "x64:4753e4c4133046d" )
+require( "ui/uieditor/widgets/specialist/specialistoutfititementry_internal" )
 
 CoD.SpecialistOutfitItemEntry = InheritFrom( LUI.UIElement )
 CoD.SpecialistOutfitItemEntry.__defaultWidth = 69

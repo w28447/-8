@@ -1,8 +1,8 @@
-require( "x64:c33c440fae6bf85" )
-require( "x64:3317d177bae2759" )
+require( "ui/uieditor/widgets/blackmarket/doubleloot" )
+require( "ui/uieditor/widgets/hud/prematchcountdown/prematchcountdown_2xpnotification" )
 require( "ui/uieditor/widgets/hud/prematchcountdown/prematchcountdown_beginsin" )
 require( "ui/uieditor/widgets/hud/prematchcountdown/prematchcountdown_iconglowpanel" )
-require( "x64:59770670213dba2" )
+require( "ui/uieditor/widgets/hud/prematchcountdown/prematchcountdown_numbers" )
 
 CoD.PrematchCountdown = InheritFrom( LUI.UIElement )
 CoD.PrematchCountdown.__defaultWidth = 1920

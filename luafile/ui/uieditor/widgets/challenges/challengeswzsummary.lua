@@ -1,7 +1,7 @@
 require( "ui/uieditor/menus/challenges/challenges_nearcompletion" )
 require( "ui/uieditor/widgets/challenges/challenges_summary_nearcompletionbutton" )
-require( "x64:8bdf1ce4d590e4f" )
-require( "x64:66445678590dbdb" )
+require( "ui/uieditor/widgets/challenges/challenges_totalmasterprogress" )
+require( "ui/uieditor/widgets/challenges/challengessummarycategorylist_wz" )
 require( "x64:c7e896ee4bc3f8" )
 
 CoD.ChallengesWZSummary = InheritFrom( LUI.UIElement )

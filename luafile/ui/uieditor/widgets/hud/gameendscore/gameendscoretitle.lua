@@ -1,4 +1,4 @@
-require( "x64:68d7c6123742d10" )
+require( "ui/uieditor/widgets/hud/gameendscore/gameendscoretitleframe" )
 
 CoD.GameEndScoreTitle = InheritFrom( LUI.UIElement )
 CoD.GameEndScoreTitle.__defaultWidth = 960

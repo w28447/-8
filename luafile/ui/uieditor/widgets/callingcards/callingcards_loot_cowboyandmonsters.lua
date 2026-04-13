@@ -1,4 +1,4 @@
-require( "x64:302bdaa9b4d7f46" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_fish_donut" )
 
 CoD[0x60D0B6654F8E009] = InheritFrom( LUI.UIElement )
 CoD[0x60D0B6654F8E009].__defaultWidth = 960

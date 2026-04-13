@@ -1,5 +1,5 @@
-require( "x64:9165a1aef65c572" )
-require( "x64:5f8cf56752aa71b" )
+require( "ui/uieditor/widgets/blackmarket/contracts/bm_smallcontractstatuscontainer" )
+require( "ui/uieditor/widgets/commonbuttonoutline" )
 require( "ui/uieditor/widgets/store/storecommontextbacking" )
 
 CoD.DirectorContractsButtonInternal = InheritFrom( LUI.UIElement )

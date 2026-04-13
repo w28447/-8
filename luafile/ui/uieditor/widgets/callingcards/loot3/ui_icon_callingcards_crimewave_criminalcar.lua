@@ -1,5 +1,5 @@
-require( "x64:cac53608c125a69" )
-require( "x64:cac50608c125550" )
+require( "ui/uieditor/widgets/callingcards/loot3/ui_icon_callingcards_crimewave_wheelspin01" )
+require( "ui/uieditor/widgets/callingcards/loot3/ui_icon_callingcards_crimewave_wheelspin02" )
 
 CoD.ui_icon_callingcards_crimewave_criminalcar = InheritFrom( LUI.UIElement )
 CoD.ui_icon_callingcards_crimewave_criminalcar.__defaultWidth = 648

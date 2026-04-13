@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/vehiclehuds/buttons/vhud_button_backing_lines" )
-require( "x64:e09bcc7e0af69ad" )
+require( "ui/uieditor/widgets/vehiclehuds/mothership/vhud_ms_buttonwidgetcooldown" )
 
 CoD.vhud_ms_ButtonWidget = InheritFrom( LUI.UIElement )
 CoD.vhud_ms_ButtonWidget.__defaultWidth = 129

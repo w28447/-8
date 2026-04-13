@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/cac/cac_lock" )
 require( "ui/uieditor/widgets/callingcards/callingcards_framewidget" )
-require( "x64:5f8cf56752aa71b" )
+require( "ui/uieditor/widgets/commonbuttonoutline" )
 require( "ui/uieditor/widgets/startmenu/startmenu_identity_subtitle" )
 require( "ui/uieditor/widgets/store/storecommontextbacking" )
 

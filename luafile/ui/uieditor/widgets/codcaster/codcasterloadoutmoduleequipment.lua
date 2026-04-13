@@ -1,5 +1,5 @@
-require( "x64:7af080d08bebcad" )
-require( "x64:a31000bac763c70" )
+require( "ui/uieditor/widgets/codcaster/codcasterloadoutequipmentbackground" )
+require( "ui/uieditor/widgets/codcaster/codcasterloadoutperks" )
 
 CoD.CodCasterLoadoutModuleEquipment = InheritFrom( LUI.UIElement )
 CoD.CodCasterLoadoutModuleEquipment.__defaultWidth = 110

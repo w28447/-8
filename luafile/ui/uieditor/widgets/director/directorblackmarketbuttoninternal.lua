@@ -1,6 +1,6 @@
-require( "x64:c96de52191fe142" )
-require( "x64:5f8cf56752aa71b" )
-require( "x64:5f6bd8a847938ba" )
+require( "ui/uieditor/widgets/aar_t8/tierreward/aartierrewardlootcasemeter" )
+require( "ui/uieditor/widgets/commonbuttonoutline" )
+require( "ui/uieditor/widgets/loottierboostpercentcontraband" )
 require( "ui/uieditor/widgets/store/storecommontextbacking" )
 
 CoD.DirectorBlackMarketButtonInternal = InheritFrom( LUI.UIElement )

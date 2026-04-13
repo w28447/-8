@@ -1,4 +1,4 @@
-require( "x64:b5f9bf60f47a122" )
+require( "ui/uieditor/widgets/startmenu/startmenu_button_lg_internal" )
 
 CoD.StartMenu_Button_LG = InheritFrom( LUI.UIElement )
 CoD.StartMenu_Button_LG.__defaultWidth = 543

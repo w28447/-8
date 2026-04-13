@@ -1,4 +1,4 @@
-require( "x64:18dc11de922fa85" )
+require( "ui/uieditor/widgets/director/directorcodcastermemberinfo" )
 require( "ui/uieditor/widgets/director/directorteammemberempty" )
 
 CoD.DirectorCustomGameCodCaster = InheritFrom( LUI.UIElement )

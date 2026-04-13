@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/craft/paintshop/paintshopbuttonprompt" )
-require( "x64:2174e18747a4d29" )
+require( "ui/uieditor/widgets/leftstickpagination" )
 
 CoD.CraftNavigationWidget = InheritFrom( LUI.UIElement )
 CoD.CraftNavigationWidget.__defaultWidth = 400

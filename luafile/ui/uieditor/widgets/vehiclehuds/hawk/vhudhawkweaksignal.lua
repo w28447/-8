@@ -1,5 +1,5 @@
-require( "x64:41f1de05d25d54" )
-require( "x64:f3f161a118c1f4e" )
+require( "ui/uieditor/widgets/vehiclehuds/hawk/vhudhawkweaksignalbox" )
+require( "ui/uieditor/widgets/vehiclehuds/hawk/vhudhawkweaksignalwarningtext" )
 
 CoD.VHUDHawkWeakSignal = InheritFrom( LUI.UIElement )
 CoD.VHUDHawkWeakSignal.__defaultWidth = 195

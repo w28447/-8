@@ -1,4 +1,4 @@
-require( "x64:acbed692442191c" )
+require( "ui/uieditor/widgets/common/commoncornerpips02" )
 
 CoD.ItemHintText = InheritFrom( LUI.UIElement )
 CoD.ItemHintText.__defaultWidth = 282

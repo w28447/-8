@@ -1,5 +1,5 @@
 require( "x64:2e06eec4ea38539" )
-require( "x64:298bd344d764bb6" )
+require( "ui/uieditor/widgets/hud/wzholdbuttonprompt" )
 
 CoD.WZWeaponPickupHoldButtonIcons = InheritFrom( LUI.UIElement )
 CoD.WZWeaponPickupHoldButtonIcons.__defaultWidth = 40

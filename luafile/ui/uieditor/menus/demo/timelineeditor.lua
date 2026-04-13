@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframe" )
-require( "x64:5ad87449c5d7553" )
+require( "ui/uieditor/widgets/demo/segmentbutton" )
 require( "ui/uieditor/widgets/helperwidgets/textwithbg" )
 require( "ui/uieditor/widgets/startmenu/startmenu_background" )
 

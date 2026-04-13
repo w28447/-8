@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/cac/cac_labelnew" )
-require( "x64:5f8cf56752aa71b" )
+require( "ui/uieditor/widgets/commonbuttonoutline" )
 
 CoD.EmblemGroupNew_Internal = InheritFrom( LUI.UIElement )
 CoD.EmblemGroupNew_Internal.__defaultWidth = 144

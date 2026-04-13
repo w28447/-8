@@ -1,5 +1,5 @@
-require( "x64:ffdb3f7d41098b6" )
-require( "x64:f0302a2ab82b9aa" )
+require( "ui/uieditor/widgets/callingcards/loot3/ui_icon_callingcards_invasion_beam" )
+require( "ui/uieditor/widgets/callingcards/loot3/ui_icon_callingcards_invasion_lamb3" )
 
 CoD.ui_icon_callingcards_invasion_ufowbeam = InheritFrom( LUI.UIElement )
 CoD.ui_icon_callingcards_invasion_ufowbeam.__defaultWidth = 224

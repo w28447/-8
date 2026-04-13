@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/bumperbuttonwithkeymousetext" )
-require( "x64:391b667b0cbcc40" )
+require( "ui/uieditor/widgets/scoreboard/tabbedscoreboardtab" )
 
 CoD.ScoreboardTabs = InheritFrom( LUI.UIElement )
 CoD.ScoreboardTabs.__defaultWidth = 720

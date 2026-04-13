@@ -1,4 +1,4 @@
-require( "x64:55657a807fcb662" )
+require( "ui/uieditor/widgets/director/directortagsui3dplayer" )
 
 CoD.DirectorTagsUI3D = InheritFrom( LUI.UIElement )
 CoD.DirectorTagsUI3D.__defaultWidth = 500

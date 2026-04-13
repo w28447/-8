@@ -1,5 +1,5 @@
-require( "x64:a5324162e5573cf" )
-require( "x64:bb90b5ec911d16f" )
+require( "ui/uieditor/widgets/callingcards/callingcards_snakegods_asset_hero" )
+require( "ui/uieditor/widgets/callingcards/callingcards_snakegods_asset_lefthand" )
 
 CoD[0xC44AA3B51953556] = InheritFrom( LUI.UIElement )
 CoD[0xC44AA3B51953556].__defaultWidth = 960

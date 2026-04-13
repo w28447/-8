@@ -1,4 +1,4 @@
-require( "x64:4e2da269453191d" )
+require( "ui/uieditor/widgets/hud/mp_hacked/hud_hacked_ammo_widget" )
 require( "x64:ce17b68d261f93" )
 
 CoD.PlayerWidgetContainer = InheritFrom( LUI.UIElement )

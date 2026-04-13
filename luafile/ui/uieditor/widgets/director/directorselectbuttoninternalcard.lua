@@ -1,8 +1,8 @@
-require( "x64:3e426332d66c91e" )
+require( "ui/uieditor/widgets/common/commonfocusbrackets" )
 require( "ui/uieditor/widgets/director/directorpartyleaderonlyprompt" )
 require( "ui/uieditor/widgets/director/directorselectbuttonlines" )
-require( "x64:fe5982d27a41c8" )
-require( "x64:58d4fce5d3d555e" )
+require( "ui/uieditor/widgets/director/directorselectbuttonmode" )
+require( "ui/uieditor/widgets/notifications/xp/doublexpcardiconsleftaligned" )
 require( "x64:cb2c9edcb6bdc3" )
 
 CoD.DirectorSelectButtonInternalCard = InheritFrom( LUI.UIElement )

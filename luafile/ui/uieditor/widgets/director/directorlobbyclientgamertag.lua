@@ -1,4 +1,4 @@
-require( "x64:21d9e7c270adcd0" )
+require( "ui/uieditor/widgets/arena/arenadirectorlobbyrankicon" )
 require( "ui/uieditor/widgets/pc/utility/verticallistspacer" )
 
 CoD.DirectorLobbyClientGamertag = InheritFrom( LUI.UIElement )

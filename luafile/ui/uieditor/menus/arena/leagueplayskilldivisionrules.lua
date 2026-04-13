@@ -1,6 +1,6 @@
-require( "x64:53349419f3104a1" )
-require( "x64:f3fc0ec27ad5c4e" )
-require( "x64:e327b7f03479680" )
+require( "xui/uieditor/widgets/arena/arenaskilldivision" )
+require( "ui/uieditor/widgets/arena/leagueplayrulespopup" )
+require( "ui/uieditor/widgets/arena/leagueplayskilldivisionrankbacking" )
 
 CoD.LeaguePlaySkillDivisionRules = InheritFrom( CoD.Menu )
 LUI.createMenu.LeaguePlaySkillDivisionRules = function ( f1_arg0, f1_arg1 )

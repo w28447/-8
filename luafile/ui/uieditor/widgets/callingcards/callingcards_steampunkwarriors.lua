@@ -1,5 +1,5 @@
-require( "x64:694c561e07c3d3b" )
-require( "x64:f2a39fa4fd0066b" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_steampunkwarriors_gunarm" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_steampunkwarriors_shoulder" )
 
 CoD[0xB3EF12304073586] = InheritFrom( LUI.UIElement )
 CoD[0xB3EF12304073586].__defaultWidth = 960

@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/emptyfocusable" )
-require( "x64:9e0c5e651384e1b" )
-require( "x64:1ba14a6a952408f" )
+require( "ui/uieditor/widgets/pc/startmenu/controlsoptions/pc_startmenu_options_controls_keybind" )
+require( "ui/uieditor/widgets/pc/startmenu/listitem" )
 
 CoD.PC_StartMenu_Options_Controls_KeyBinder = InheritFrom( LUI.UIElement )
 CoD.PC_StartMenu_Options_Controls_KeyBinder.__defaultWidth = 750

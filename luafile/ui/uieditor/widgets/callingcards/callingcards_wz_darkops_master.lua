@@ -1,4 +1,4 @@
-require( "x64:e7d335abae7bbd4" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_techgunner_helicopter" )
 
 CoD[0xA6A41AD9A5A2C18] = InheritFrom( LUI.UIElement )
 CoD[0xA6A41AD9A5A2C18].__defaultWidth = 960

@@ -1,4 +1,4 @@
-require( "x64:7b70bc94aba2979" )
+require( "ui/uieditor/widgets/zmfrontend/zmbuttondifficultyinternal" )
 
 CoD.ZMDifficultySelectButton = InheritFrom( LUI.UIElement )
 CoD.ZMDifficultySelectButton.__defaultWidth = 246

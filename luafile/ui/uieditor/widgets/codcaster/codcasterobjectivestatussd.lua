@@ -1,5 +1,5 @@
-require( "x64:1cb861bc950b9a8" )
-require( "x64:1cb891bc950bec1" )
+require( "ui/uieditor/widgets/codcaster/codcasterbomba" )
+require( "ui/uieditor/widgets/codcaster/codcasterbombb" )
 
 CoD.CodCasterObjectiveStatusSD = InheritFrom( LUI.UIElement )
 CoD.CodCasterObjectiveStatusSD.__defaultWidth = 412

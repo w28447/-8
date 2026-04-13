@@ -1,4 +1,4 @@
-require( "x64:1b2a0d6dc1d4f04" )
+require( "ui/uieditor/widgets/warzone/warzoneresourcemenuitemsmall" )
 require( "x64:bf776923c7291f4" )
 
 CoD.StartMenu_ResourceList = InheritFrom( LUI.UIElement )

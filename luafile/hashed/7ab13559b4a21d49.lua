@@ -1,4 +1,4 @@
-require( "x64:48557ed02af231c" )
+require( "ui/uieditor/widgets/warzone/warzonekilleridentity" )
 require( "x64:6947112378e931b" )
 
 CoD.WZObituaryCalloutExpandedContainer = InheritFrom( LUI.UIElement )

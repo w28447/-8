@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/lobby/common/layoutelements/commonsearchingbar" )
-require( "x64:44ed4407955456a" )
+require( "ui/uieditor/widgets/tablet/tableticepickgadget_itemicon" )
 
 CoD.TabletIcePickGadget_ItemBlock = InheritFrom( LUI.UIElement )
 CoD.TabletIcePickGadget_ItemBlock.__defaultWidth = 144

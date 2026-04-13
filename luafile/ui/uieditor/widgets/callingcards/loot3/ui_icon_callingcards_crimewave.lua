@@ -1,5 +1,5 @@
-require( "x64:9a61afb49f90fa8" )
-require( "x64:f367664257175e1" )
+require( "ui/uieditor/widgets/callingcards/loot3/ui_icon_callingcards_crimewave_criminalcar" )
+require( "ui/uieditor/widgets/callingcards/loot3/ui_icon_callingcards_crimewave_policecar" )
 
 CoD[0x8F2997EDAA1CF79] = InheritFrom( LUI.UIElement )
 CoD[0x8F2997EDAA1CF79].__defaultWidth = 960

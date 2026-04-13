@@ -1,4 +1,4 @@
-require( "x64:15cf4f01e6aec35" )
+require( "ui/uieditor/widgets/barracks/specialeventprogresspip" )
 
 CoD.AARStepItem = InheritFrom( LUI.UIElement )
 CoD.AARStepItem.__defaultWidth = 380

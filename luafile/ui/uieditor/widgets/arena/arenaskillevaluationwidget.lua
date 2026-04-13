@@ -1,6 +1,6 @@
-require( "x64:e473f35708d423a" )
-require( "x64:7ec6bc10fa8e6b3" )
-require( "x64:226aaa4f7a48917" )
+require( "ui/uieditor/widgets/aar_t8/arena/aar_leagueplay_placementlist" )
+require( "ui/uieditor/widgets/arena/arenaeventtimerlarge" )
+require( "ui/uieditor/widgets/arena/arenaskillevaluationbg" )
 
 CoD.ArenaSkillEvaluationWidget = InheritFrom( LUI.UIElement )
 CoD.ArenaSkillEvaluationWidget.__defaultWidth = 960
@@ -18,7 +18,7 @@ CoD.ArenaSkillEvaluationWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local MatchesPlayedText2 = LUI.UIText.new( 0, 0, 142.5, 225.5, 0, 0, 329.5, 374.5 )
 	MatchesPlayedText2:setRGB( 0.92, 0.92, 0.92 )
-	MatchesPlayedText2:setText( CoD.ArenaLeaguePlayUtility.GetCompletedPlacementMatchesString( f1_arg1, 0xB67F7FB585D594C ) )
+	MatchesPlayedText2:setText( CoD.ArenaLeaguePlayUtility.GetCompletedPlacementMatchesString( f1_arg1, menu/empty ) )
 	MatchesPlayedText2:setTTF( "ttmussels_demibold" )
 	MatchesPlayedText2:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )
 	MatchesPlayedText2:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

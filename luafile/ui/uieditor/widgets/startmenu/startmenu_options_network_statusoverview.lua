@@ -1,4 +1,4 @@
-require( "x64:3e426332d66c91e" )
+require( "ui/uieditor/widgets/common/commonfocusbrackets" )
 require( "ui/uieditor/widgets/store/storecommontextbacking" )
 
 CoD.StartMenu_Options_Network_StatusOverview = InheritFrom( LUI.UIElement )

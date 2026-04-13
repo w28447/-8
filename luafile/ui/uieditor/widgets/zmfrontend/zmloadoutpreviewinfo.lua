@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/cac/restricteditemwarning" )
-require( "x64:341ce33d59fafd1" )
+require( "ui/uieditor/widgets/cac/restricteditemwarningtext" )
 require( "ui/uieditor/widgets/hud/corner9slice" )
 
 CoD.ZMLoadoutPreviewInfo = InheritFrom( LUI.UIElement )

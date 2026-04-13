@@ -1,6 +1,6 @@
 require( "x64:dd513db11e2bfb6" )
-require( "x64:88a4793bcdc6806" )
-require( "x64:69c5ab8a4b56a69" )
+require( "ui/uieditor/widgets/itemshop/reserves/reserveslootbribebuttoncontainer" )
+require( "ui/uieditor/widgets/itemshop/reserves/reserveslootbundlecratebuttoncontainer" )
 require( "ui/uieditor/widgets/itemshop/reserves/reserveslootcasebuttoncontainer" )
 
 CoD.ReservesLootButtonsGroup = InheritFrom( LUI.UIElement )

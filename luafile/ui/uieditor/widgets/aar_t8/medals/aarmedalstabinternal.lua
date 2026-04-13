@@ -1,4 +1,4 @@
-require( "x64:329a92dee2ea1ff" )
+require( "ui/uieditor/widgets/medals/medalstabinternal" )
 
 CoD.AARMedalsTabInternal = InheritFrom( LUI.UIElement )
 CoD.AARMedalsTabInternal.__defaultWidth = 1920

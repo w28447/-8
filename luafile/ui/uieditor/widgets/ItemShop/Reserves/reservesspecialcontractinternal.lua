@@ -1,8 +1,8 @@
-require( "x64:e272191e46af824" )
-require( "x64:266118fa96f77c8" )
-require( "x64:3c21aa1a96202c9" )
-require( "x64:95553e1dbf377f6" )
-require( "x64:8c811a1d34161cf" )
+require( "ui/uieditor/widgets/common/commontooltip" )
+require( "ui/uieditor/widgets/itemshop/contracts/contractactivebanner" )
+require( "ui/uieditor/widgets/itemshop/contracts/contractcompletebanner" )
+require( "ui/uieditor/widgets/itemshop/reserves/reservesspecialcontractprogressbar" )
+require( "ui/uieditor/widgets/itemshop/timerright" )
 
 CoD.ReservesSpecialContractInternal = InheritFrom( LUI.UIElement )
 CoD.ReservesSpecialContractInternal.__defaultWidth = 684

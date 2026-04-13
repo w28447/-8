@@ -1,5 +1,5 @@
-require( "x64:d18f710d30d4ebf" )
-require( "x64:afb605ef7458eea" )
+require( "ui/uieditor/widgets/itemshop/contracts/contractpurchasedbanner" )
+require( "ui/uieditor/widgets/itemshop/discounttimer" )
 
 CoD.ReservesPromoInternal = InheritFrom( LUI.UIElement )
 CoD.ReservesPromoInternal.__defaultWidth = 556

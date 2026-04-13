@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/cac/cac_background_slide_panel" )
 require( "ui/uieditor/widgets/cac/itemnamedescunlocktext" )
-require( "x64:bfdb5df2cebf5b2" )
-require( "x64:317e754536a5528" )
+require( "ui/uieditor/widgets/craft/paintshop/paintjobweaponselectsafeareacontainer" )
+require( "ui/uieditor/widgets/craft/paintshop/paintshopweaponselectwidget" )
 require( "ui/uieditor/widgets/pc/utility/xcammousecontrol" )
 
 CoD.PaintjobWeaponSelect = InheritFrom( CoD.Menu )

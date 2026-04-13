@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/cac/cac_lock" )
-require( "x64:5f8cf56752aa71b" )
+require( "ui/uieditor/widgets/commonbuttonoutline" )
 require( "ui/uieditor/widgets/startmenu/startmenu_imagecontainer" )
-require( "x64:6eff1fa68f9af5d" )
+require( "xui/uieditor/widgets/startmenu/startmenu_titleheader" )
 require( "ui/uieditor/widgets/store/storecommontextbacking" )
 
 CoD.StartMenu_Button_LG_Internal = InheritFrom( LUI.UIElement )

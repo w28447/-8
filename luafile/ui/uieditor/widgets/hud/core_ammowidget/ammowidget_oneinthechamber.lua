@@ -1,6 +1,6 @@
 require( "x64:f3f5b1130ad7b72" )
-require( "x64:d3b48853e408bdd" )
-require( "x64:729e84a5e6a8211" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_oic_bullets" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_weaponname" )
 
 CoD.AmmoWidget_OneInTheChamber = InheritFrom( LUI.UIElement )
 CoD.AmmoWidget_OneInTheChamber.__defaultWidth = 360

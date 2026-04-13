@@ -1,8 +1,8 @@
-require( "x64:3c12759cdd48c2d" )
-require( "x64:7b2b59e28ed4c45" )
-require( "x64:31fac280b1c11fc" )
-require( "x64:34c9f21854c740b" )
-require( "x64:507c4d91ba82906" )
+require( "ui/uieditor/widgets/notifications/notificationqueuewidgets/weaponlevelupbrackets" )
+require( "ui/uieditor/widgets/notifications/notificationqueuewidgets/weaponlevelupheaderright" )
+require( "ui/uieditor/widgets/notifications/notificationqueuewidgets/weaponlevelupheaderstripe" )
+require( "ui/uieditor/widgets/notifications/notificationqueuewidgets/weaponlevelupsidehashes" )
+require( "ui/uieditor/widgets/notifications/notificationqueuewidgets/weaponleveluptitle" )
 
 CoD.WeaponLevelUpNotification = InheritFrom( LUI.UIElement )
 CoD.WeaponLevelUpNotification.__defaultWidth = 612

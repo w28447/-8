@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframe" )
-require( "x64:ebc29631dee3ec5" )
-require( "x64:71d2a0ed724628e" )
+require( "ui/uieditor/widgets/challenges/challengesstickerbookdarkops" )
+require( "ui/uieditor/widgets/common/commonidentitywidgetstreamlinedsafeareacontainer" )
 require( "ui/uieditor/widgets/lobby/common/fe_buttonpanelshadercontainer" )
 
 CoD.ChallengesDarkOps = InheritFrom( CoD.Menu )

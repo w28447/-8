@@ -1,5 +1,5 @@
-require( "x64:6151942c381b5a6" )
-require( "x64:5f8cf56752aa71b" )
+require( "ui/uieditor/widgets/cac/menuchooseclass/itemwidgets/itemhinttextbreadcrumb" )
+require( "ui/uieditor/widgets/commonbuttonoutline" )
 require( "ui/uieditor/widgets/store/storecommontextbacking" )
 
 CoD.CharacterSelection_CustomCharacterButton_Internal = InheritFrom( LUI.UIElement )

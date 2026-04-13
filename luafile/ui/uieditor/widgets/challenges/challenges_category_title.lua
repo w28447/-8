@@ -1,4 +1,4 @@
-require( "x64:95d614a0f80206e" )
+require( "ui/uieditor/widgets/challenges/challenges_percentcompletewidget_lg" )
 
 CoD.Challenges_Category_Title = InheritFrom( LUI.UIElement )
 CoD.Challenges_Category_Title.__defaultWidth = 300

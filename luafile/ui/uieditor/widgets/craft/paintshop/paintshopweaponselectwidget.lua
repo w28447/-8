@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/bumperbuttonwithkeymousetext" )
-require( "x64:ffc2c7e4adad795" )
-require( "x64:a60f9dd8c2d255e" )
-require( "x64:c0cb09f85132dc0" )
+require( "ui/uieditor/widgets/cac/cactexttab" )
+require( "ui/uieditor/widgets/cac/weaponselect/weaponselectgriditem" )
+require( "ui/uieditor/widgets/cac/weaponvariants/weaponvariantlistwidget" )
 require( "ui/uieditor/widgets/bumperbuttonwithkeymouse" )
 
 CoD.PaintshopWeaponSelectWidget = InheritFrom( LUI.UIElement )

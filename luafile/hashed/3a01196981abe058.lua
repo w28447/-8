@@ -1,4 +1,4 @@
-require( "x64:8ffe7c4e01e7052" )
+require( "ui/uieditor/widgets/cac/itemnewbreadcrumbwidget" )
 require( "ui/uieditor/widgets/cac/menuchooseclass/itemwidgets/itemhinttext" )
 require( "x64:d87d8c56a6a0017" )
 

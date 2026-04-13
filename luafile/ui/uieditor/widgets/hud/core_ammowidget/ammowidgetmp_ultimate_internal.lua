@@ -1,10 +1,10 @@
 require( "ui/uieditor/widgets/controllerdependent_textbox" )
 require( "x64:9d92dce1e4291ce" )
 require( "x64:33ec8b4b2fb3c47" )
-require( "x64:3b8c4e45eb2b0d7" )
-require( "x64:64f4965c2a27a0f" )
-require( "x64:2485f9df271d384" )
-require( "x64:583b65a500f0240" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_abilitytext" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_heroempty" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidgetmp_ability_flash" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidgetmp_ultimate_progress_fill" )
 
 CoD.AmmoWidgetMP_Ultimate_Internal = InheritFrom( LUI.UIElement )
 CoD.AmmoWidgetMP_Ultimate_Internal.__defaultWidth = 268

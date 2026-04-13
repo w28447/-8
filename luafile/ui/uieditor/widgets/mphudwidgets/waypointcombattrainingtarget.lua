@@ -1,4 +1,4 @@
-require( "x64:7629ec7b99348f8" )
+require( "ui/uieditor/widgets/mphudwidgets/waypoint_textbgtraining" )
 require( "ui/uieditor/widgets/mphudwidgets/waypointarrowcontainer" )
 require( "ui/uieditor/widgets/mphudwidgets/waypointcenter" )
 require( "ui/uieditor/widgets/onoffimage" )

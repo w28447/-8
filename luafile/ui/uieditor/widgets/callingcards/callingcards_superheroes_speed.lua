@@ -1,5 +1,5 @@
-require( "x64:3f98cc5aa4a1ef3" )
-require( "x64:97380d5c4882c83" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_superheroes_speed_hero" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_superheroes_speed_lightning" )
 
 CoD[0x7A7AAB123C1192E] = InheritFrom( LUI.UIElement )
 CoD[0x7A7AAB123C1192E].__defaultWidth = 960

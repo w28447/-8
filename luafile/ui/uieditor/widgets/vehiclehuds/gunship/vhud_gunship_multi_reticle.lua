@@ -1,6 +1,6 @@
-require( "x64:3a5ede94234809" )
-require( "x64:b34a1785fca272a" )
-require( "x64:6fe8e87c3a6babf" )
+require( "ui/uieditor/widgets/vehiclehuds/gunship/vhud_gunship_recticle_105mm" )
+require( "ui/uieditor/widgets/vehiclehuds/gunship/vhud_gunship_recticle_25mm" )
+require( "ui/uieditor/widgets/vehiclehuds/gunship/vhud_gunship_recticle_40mm" )
 
 CoD.vhud_gunship_multi_reticle = InheritFrom( LUI.UIElement )
 CoD.vhud_gunship_multi_reticle.__defaultWidth = 200

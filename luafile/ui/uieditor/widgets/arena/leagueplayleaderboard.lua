@@ -1,4 +1,4 @@
-require( "x64:a876df622faedff" )
+require( "ui/uieditor/widgets/arena/arenaleagueplay_ladderskilldivision" )
 require( "ui/uieditor/widgets/arena/leagueplayleaderboardentry" )
 require( "ui/uieditor/widgets/scrollbars/verticalcounter" )
 

@@ -1,9 +1,9 @@
-require( "x64:f59c6c673920a4a" )
+require( "ui/uieditor/menus/startmenu/popups/legaltextviewermenu" )
 require( "ui/uieditor/widgets/backgroundframes/menuframeingame" )
 require( "ui/uieditor/widgets/common/commonheader" )
-require( "x64:1f846296f1a1b81" )
+require( "ui/uieditor/widgets/director/DirectorSelectButtonMiniInternal" )
 require( "ui/uieditor/widgets/header/header_container_frontend" )
-require( "x64:2b684c0293c27f9" )
+require( "ui/uieditor/widgets/startmenu/options/startmenu_options_registrationform" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsbackground" )
 
 CoD.StartMenu_Options_CoDAccount_NewAccount = InheritFrom( CoD.Menu )

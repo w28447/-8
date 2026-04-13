@@ -1,6 +1,6 @@
-require( "x64:71cd64e828f536" )
-require( "x64:abd9d2111472f07" )
-require( "x64:2260fedb8a3a02f" )
+require( "ui/uieditor/widgets/demo/demoplaybackcontrolsbackground" )
+require( "ui/uieditor/widgets/demo/demobuttonprompt" )
+require( "ui/uieditor/widgets/demo/democontrolsbutton" )
 
 CoD.DemoPlaybackControls = InheritFrom( LUI.UIElement )
 CoD.DemoPlaybackControls.__defaultWidth = 750

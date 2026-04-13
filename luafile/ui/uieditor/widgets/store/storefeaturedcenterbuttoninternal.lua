@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/store/storepricecontainer" )
 require( "ui/uieditor/widgets/store/storepricelabel" )
-require( "x64:f703f0eaf45d9b" )
+require( "ui/uieditor/widgets/store/storeproductnamelabel" )
 
 CoD.StoreFeaturedCenterButtonInternal = InheritFrom( LUI.UIElement )
 CoD.StoreFeaturedCenterButtonInternal.__defaultWidth = 324

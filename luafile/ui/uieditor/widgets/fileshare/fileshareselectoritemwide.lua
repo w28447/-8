@@ -1,4 +1,4 @@
-require( "x64:b192f2ad99871d9" )
+require( "ui/uieditor/widgets/fileshare/fileshareselectoritemwideinternal" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsmainframe" )
 
 CoD.FileshareSelectorItemWide = InheritFrom( LUI.UIElement )

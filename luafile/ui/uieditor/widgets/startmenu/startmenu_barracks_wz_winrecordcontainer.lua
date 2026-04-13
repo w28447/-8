@@ -1,6 +1,6 @@
-require( "x64:46728994d8c06c0" )
+require( "ui/uieditor/widgets/common/commondetailpanel02" )
 require( "x64:53c0405b8145697" )
-require( "x64:fc4c3dc5d489f9b" )
+require( "ui/uieditor/widgets/startmenu/startmenu_barracks_wz_winrecordwidget" )
 require( "ui/uieditor/widgets/startmenu/startmenu_button_lg" )
 
 CoD.StartMenu_Barracks_WZ_WinRecordContainer = InheritFrom( LUI.UIElement )

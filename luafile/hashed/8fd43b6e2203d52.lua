@@ -1,4 +1,4 @@
-require( "x64:c19fef5f3472006" )
+require( "ui/uieditor/widgets/hud/mpgametypes/oic_lifepip" )
 
 CoD.OneInTheChamberLives = InheritFrom( LUI.UIElement )
 CoD.OneInTheChamberLives.__defaultWidth = 150

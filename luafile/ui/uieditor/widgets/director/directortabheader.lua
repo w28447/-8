@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/bumperbuttonwithkeymousetext" )
-require( "x64:81a24c5340caa1e" )
-require( "x64:f05ce99c62baa19" )
+require( "ui/uieditor/widgets/common/commontabbarbacking" )
+require( "ui/uieditor/widgets/director/directorselectglowtab" )
 
 CoD.DirectorTabHeader = InheritFrom( LUI.UIElement )
 CoD.DirectorTabHeader.__defaultWidth = 1920

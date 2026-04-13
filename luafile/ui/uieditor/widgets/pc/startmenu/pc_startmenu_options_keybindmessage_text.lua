@@ -1,4 +1,4 @@
-require( "x64:37febb2086ad7e7" )
+require( "ui/uieditor/widgets/pc/startmenu/pc_startmenu_options_keybindmessage_stripes" )
 require( "ui/uieditor/widgets/pc/utility/verticallistspacer" )
 
 CoD.PC_StartMenu_Options_KeybindMessage_Text = InheritFrom( LUI.UIElement )

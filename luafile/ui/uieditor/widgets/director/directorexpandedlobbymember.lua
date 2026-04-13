@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/common/commoncornerpips01" )
 require( "ui/uieditor/widgets/director/directorbuttonadd" )
-require( "x64:61730f9c061ba21" )
-require( "x64:50279cd666ce7ee" )
+require( "ui/uieditor/widgets/director/directorexpandedlobbymemberinternal" )
+require( "ui/uieditor/widgets/director/directorpartybar" )
 require( "ui/uieditor/menus/social/social_playerdetailspopup" )
 
 CoD.DirectorExpandedLobbyMember = InheritFrom( LUI.UIElement )

@@ -1,8 +1,8 @@
-require( "x64:4d398821a441c41" )
-require( "x64:16a180f17b86d32" )
+require( "ui/uieditor/widgets/vehiclehuds/attackhelicopter/vhud_attack_helicopter_button_layout" )
+require( "ui/uieditor/widgets/vehiclehuds/attackhelicopter/vhud_attack_helicopter_reticle" )
 require( "ui/uieditor/widgets/vehiclehuds/ground/vehicleground_vignettecontainer" )
 require( "ui/uieditor/widgets/vehiclehuds/mothership/vhud_ms_iris" )
-require( "x64:8aedb8c71f568d4" )
+require( "ui/uieditor/widgets/vehiclehuds/mothership/vhud_ms_reticle" )
 
 CoD.vhud_attack_helicopter_internal = InheritFrom( LUI.UIElement )
 CoD.vhud_attack_helicopter_internal.__defaultWidth = 1920

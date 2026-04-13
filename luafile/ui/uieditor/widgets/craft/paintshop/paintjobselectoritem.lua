@@ -1,4 +1,4 @@
-require( "x64:2adb1c185994e7b" )
+require( "ui/uieditor/widgets/craft/paintshop/paintjobselectoritem_internal" )
 
 CoD.PaintjobSelectorItem = InheritFrom( LUI.UIElement )
 CoD.PaintjobSelectorItem.__defaultWidth = 274

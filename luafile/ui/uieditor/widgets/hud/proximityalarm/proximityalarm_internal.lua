@@ -1,4 +1,4 @@
-require( "x64:78b1cdf951f5003" )
+require( "ui/uieditor/widgets/hud/proximityalarm/proximityalarm_icon" )
 
 CoD.ProximityAlarm_Internal = InheritFrom( LUI.UIElement )
 CoD.ProximityAlarm_Internal.__defaultWidth = 296

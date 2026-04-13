@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/common/commoncheckbox" )
-require( "x64:f732d1ff8c659ed" )
+require( "ui/uieditor/widgets/social/social_playerslistbuttonshared" )
 
 CoD.Social_PlayersListButtonWithCheckbox = InheritFrom( LUI.UIElement )
 CoD.Social_PlayersListButtonWithCheckbox.__defaultWidth = 514

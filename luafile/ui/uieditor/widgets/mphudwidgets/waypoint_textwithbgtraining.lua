@@ -1,4 +1,4 @@
-require( "x64:b363529a2e34794" )
+require( "ui/uieditor/widgets/hud/textbackingcommonwithblur" )
 
 CoD.Waypoint_TextWithBGTraining = InheritFrom( LUI.UIElement )
 CoD.Waypoint_TextWithBGTraining.__defaultWidth = 384

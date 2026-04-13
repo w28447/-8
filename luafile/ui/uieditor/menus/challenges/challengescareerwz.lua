@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframeidentity" )
-require( "x64:b74057f7884b1f5" )
+require( "ui/uieditor/widgets/startmenu/startmenu_challengescareertab" )
 
 CoD.ChallengesCareerWZ = InheritFrom( CoD.Menu )
 LUI.createMenu.ChallengesCareerWZ = function ( f1_arg0, f1_arg1 )

@@ -1,4 +1,4 @@
-require( "x64:61dbb20c95d491d" )
+require( "ui/uieditor/widgets/callingcards/loot2/callingcards_loot2_vikingbattles_righthand" )
 
 CoD.callingcards_loot2_vikingbattles_characters = InheritFrom( LUI.UIElement )
 CoD.callingcards_loot2_vikingbattles_characters.__defaultWidth = 748

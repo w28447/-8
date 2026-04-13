@@ -1,7 +1,7 @@
 require( "ui/uieditor/menus/challenges/challenges_nearcompletion" )
 require( "ui/uieditor/widgets/challenges/challenges_summary_nearcompletionbutton" )
-require( "x64:8bdf1ce4d590e4f" )
-require( "x64:689566785b014fb" )
+require( "ui/uieditor/widgets/challenges/challenges_totalmasterprogress" )
+require( "ui/uieditor/widgets/challenges/challengessummarycategorylist_zm" )
 
 CoD.Challenges_ZM_Summary = InheritFrom( LUI.UIElement )
 CoD.Challenges_ZM_Summary.__defaultWidth = 1740

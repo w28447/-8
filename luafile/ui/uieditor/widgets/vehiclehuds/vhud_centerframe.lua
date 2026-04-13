@@ -1,4 +1,4 @@
-require( "x64:fd773d306b4ca26" )
+require( "ui/uieditor/widgets/vehiclehuds/vhud_centerframeleft" )
 
 CoD.vhud_CenterFrame = InheritFrom( LUI.UIElement )
 CoD.vhud_CenterFrame.__defaultWidth = 1920

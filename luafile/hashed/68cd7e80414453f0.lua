@@ -1,4 +1,4 @@
-require( "x64:dbbe35720247c09" )
+require( "ui/uieditor/menus/cac/wzpurchasecamo" )
 require( "x64:a4c60719b1e8805" )
 
 CoD.PerformanceOptionGrid = InheritFrom( LUI.UIElement )

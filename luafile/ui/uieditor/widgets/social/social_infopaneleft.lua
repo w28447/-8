@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/callingcards/callingcards_framewidget" )
-require( "x64:79fe6ac43673588" )
+require( "ui/uieditor/widgets/challenges/challenges_framewidget_titlebackground" )
 require( "ui/uieditor/widgets/common/commonsocialarrow" )
-require( "x64:1cff9ab810ca0ce" )
+require( "ui/uieditor/widgets/social/social_rankiconandranklargecontainer" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsmainframe" )
 require( "ui/uieditor/widgets/emptyfocusable" )
 

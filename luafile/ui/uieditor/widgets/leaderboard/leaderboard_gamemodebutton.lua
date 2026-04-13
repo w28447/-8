@@ -1,4 +1,4 @@
-require( "x64:d9107537d9e5739" )
+require( "ui/uieditor/widgets/leaderboard/leaderboard_gamemodebutton_internal" )
 
 CoD.Leaderboard_GameModeButton = InheritFrom( LUI.UIElement )
 CoD.Leaderboard_GameModeButton.__defaultWidth = 303

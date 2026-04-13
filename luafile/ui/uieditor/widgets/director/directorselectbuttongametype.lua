@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/director/directorpartyleaderonlyprompt" )
-require( "x64:1f846296f1a1b81" )
+require( "ui/uieditor/widgets/director/DirectorSelectButtonMiniInternal" )
 
 CoD.DirectorSelectButtonGameType = InheritFrom( LUI.UIElement )
 CoD.DirectorSelectButtonGameType.__defaultWidth = 300

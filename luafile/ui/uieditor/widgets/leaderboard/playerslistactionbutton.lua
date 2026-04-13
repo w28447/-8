@@ -1,4 +1,4 @@
-require( "x64:46897811dbbcd6f" )
+require( "ui/uieditor/widgets/common/commonlistbuttonshort_internal" )
 
 CoD.PlayersListActionButton = InheritFrom( LUI.UIElement )
 CoD.PlayersListActionButton.__defaultWidth = 151

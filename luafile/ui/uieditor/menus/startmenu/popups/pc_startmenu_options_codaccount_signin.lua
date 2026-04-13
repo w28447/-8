@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/backgroundframes/menuframeingame" )
 require( "ui/uieditor/widgets/common/commonheader" )
 require( "ui/uieditor/widgets/header/header_container_frontend" )
-require( "x64:ffc1d029868ae" )
+require( "ui/uieditor/widgets/startmenu/options/pc_startmenu_options_signinform" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsbackground" )
 
 CoD.PC_StartMenu_Options_CoDAccount_SignIn = InheritFrom( CoD.Menu )

@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframe" )
-require( "x64:6374709588b8a15" )
+require( "ui/uieditor/widgets/startmenu/startmenu_safeareacontainer" )
 
 CoD.SpecialistHeadquartersArchives = InheritFrom( CoD.Menu )
 LUI.createMenu.SpecialistHeadquartersArchives = function ( f1_arg0, f1_arg1 )

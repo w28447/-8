@@ -1,4 +1,4 @@
-require( "x64:e272191e46af824" )
+require( "ui/uieditor/widgets/common/commontooltip" )
 
 CoD.ReservesLootBundleCrateButton = InheritFrom( LUI.UIElement )
 CoD.ReservesLootBundleCrateButton.__defaultWidth = 160

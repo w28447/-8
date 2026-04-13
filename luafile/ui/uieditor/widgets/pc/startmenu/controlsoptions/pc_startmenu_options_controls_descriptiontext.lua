@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/freecursor/infopanelsubwidgets/freecursornolabelbuttonpromptarea" )
-require( "x64:b934bb48ed3be32" )
+require( "ui/uieditor/widgets/pc/startmenu/pc_startmenu_options_description_textbacking" )
 
 CoD.PC_StartMenu_Options_Controls_DescriptionText = InheritFrom( LUI.UIElement )
 CoD.PC_StartMenu_Options_Controls_DescriptionText.__defaultWidth = 673

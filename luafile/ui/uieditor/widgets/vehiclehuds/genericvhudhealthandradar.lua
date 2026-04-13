@@ -1,5 +1,5 @@
-require( "x64:9505c06d12eccc1" )
-require( "x64:b211c35aaad19f5" )
+require( "ui/uieditor/widgets/vehiclehuds/genericpooledvehiclehealthwidget" )
+require( "ui/uieditor/widgets/vehiclehuds/vehicleradar" )
 
 CoD.genericVHUDHealthAndRadar = InheritFrom( LUI.UIElement )
 CoD.genericVHUDHealthAndRadar.__defaultWidth = 293

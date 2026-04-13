@@ -1,11 +1,11 @@
-require( "x64:fc0f7412b0fb282" )
-require( "x64:39d9212b99bae0b" )
-require( "x64:277d08dca360631" )
-require( "x64:3b50d7628cfd730" )
-require( "x64:27d8fc35e68e24e" )
-require( "x64:6ffd0cbc81f637b" )
+require( "ui/uieditor/menus/itemshop/purchasebribestack" )
+require( "ui/uieditor/widgets/itemshop/reserves/reservesbribestack" )
+require( "ui/uieditor/widgets/itemshop/reserves/reservesbribestackcarousel" )
+require( "ui/uieditor/widgets/itemshop/reserves/reservesbuttonlayoutbacking" )
+require( "ui/uieditor/widgets/itemshop/reserves/reservescratecarousel" )
+require( "ui/uieditor/widgets/itemshop/reserves/reserveslootbuttonsgroup" )
 require( "ui/uieditor/widgets/itemshop/reserves/reservesofferscarousel" )
-require( "x64:35653ef4ad2299d" )
+require( "ui/uieditor/widgets/scrollbars/horizontalcountertriggerprompts" )
 
 CoD.ReservesButtonLayout = InheritFrom( LUI.UIElement )
 CoD.ReservesButtonLayout.__defaultWidth = 991

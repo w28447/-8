@@ -1,4 +1,4 @@
-require( "x64:41ad734fb8d6d92" )
+require( "ui/uieditor/widgets/common/CommonButtonOutlineThin" )
 require( "ui/uieditor/widgets/store/storecommontextbacking" )
 
 CoD.Prestige_PlayerLevelButtonInternal = InheritFrom( LUI.UIElement )

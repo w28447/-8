@@ -1,4 +1,4 @@
-require( "x64:e7c4814f0e345b8" )
+require( "ui/uieditor/widgets/fileshare/fileshareselectoritemwide" )
 require( "ui/uieditor/widgets/fileshare/filesharespinner" )
 
 CoD.FileshareCategoryContentListMini = InheritFrom( LUI.UIElement )

@@ -1,4 +1,4 @@
-require( "x64:a3dbd6e630f2045" )
+require( "ui/uieditor/widgets/hud/map/compassawarenessringsegment" )
 
 CoD.CompassAwarenessContainer = InheritFrom( LUI.UIElement )
 CoD.CompassAwarenessContainer.__defaultWidth = 330

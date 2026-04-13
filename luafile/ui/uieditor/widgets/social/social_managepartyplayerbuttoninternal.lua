@@ -1,12 +1,12 @@
 require( "ui/uieditor/widgets/callingcards/callingcards_framewidget" )
-require( "x64:5f8cf56752aa71b" )
+require( "ui/uieditor/widgets/commonbuttonoutline" )
 require( "ui/uieditor/widgets/director/directorpartybarinternal" )
 require( "ui/uieditor/widgets/director/directorpartyleader" )
 require( "x64:906749ab0d5bbee" )
-require( "x64:d1d5f6e1edad2b9" )
+require( "ui/uieditor/widgets/social/social_partyleadericonlarge" )
 require( "ui/uieditor/widgets/social/social_partymembericonlarge" )
-require( "x64:d0dd4bae5f1fadb" )
-require( "x64:81feaeb195cd2e0" )
+require( "ui/uieditor/widgets/social/social_playerslistbutton_trial" )
+require( "ui/uieditor/widgets/social/social_managepartyplayerrealnamecontainer" )
 
 CoD.Social_ManagePartyPlayerButtonInternal = InheritFrom( LUI.UIElement )
 CoD.Social_ManagePartyPlayerButtonInternal.__defaultWidth = 481

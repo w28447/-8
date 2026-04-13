@@ -1,6 +1,6 @@
-require( "x64:6d20cd5e7e2072b" )
+require( "ui/uieditor/widgets/director/directorcharacterbuttonzm" )
 require( "ui/uieditor/widgets/dynamiccontainerwidget" )
-require( "x64:310a25e996d432a" )
+require( "ui/uieditor/widgets/zmfrontend/zmloadoutpreviewordered" )
 
 CoD.DirectorLobbyPoseMembersZM = InheritFrom( LUI.UIElement )
 CoD.DirectorLobbyPoseMembersZM.__defaultWidth = 1920

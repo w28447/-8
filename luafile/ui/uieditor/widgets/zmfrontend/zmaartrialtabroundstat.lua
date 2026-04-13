@@ -1,4 +1,4 @@
-require( "x64:622b9213761be14" )
+require( "ui/uieditor/widgets/zmfrontend/zmaartrialtabroundstatdescription" )
 
 CoD.ZMAARTrialTabRoundStat = InheritFrom( LUI.UIElement )
 CoD.ZMAARTrialTabRoundStat.__defaultWidth = 390

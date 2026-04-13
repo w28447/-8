@@ -1,7 +1,7 @@
 require( "ui/uieditor/menus/challenges/challenges" )
-require( "x64:715c17feb5d981e" )
-require( "x64:f2b682f28d27631" )
-require( "x64:4f2b91f8688c47b" )
+require( "ui/uieditor/menus/challenges/challengesdarkops" )
+require( "ui/uieditor/widgets/challenges/challengessummarycategory" )
+require( "ui/uieditor/widgets/challenges/challengessummarydarkops" )
 
 CoD.ChallengesSummaryCategoryList_WZ = InheritFrom( LUI.UIElement )
 CoD.ChallengesSummaryCategoryList_WZ.__defaultWidth = 1175

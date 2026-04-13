@@ -1,4 +1,4 @@
-require( "x64:368f532cc98a68a" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_pirates_flag" )
 
 CoD.CallingCards_Asset_Pirates_Mast = InheritFrom( LUI.UIElement )
 CoD.CallingCards_Asset_Pirates_Mast.__defaultWidth = 1000

@@ -1,5 +1,5 @@
-require( "x64:22e9d2bd1a9e86a" )
-require( "x64:8575142f3bda12c" )
+require( "ui/uieditor/widgets/hud/speedometer/hud_speedometer_widget" )
+require( "ui/uieditor/widgets/vehiclehuds/hcxd/vhud_hcdx_hud" )
 
 CoD.VHUD_HCXD = InheritFrom( CoD.Menu )
 LUI.createMenu.VHUD_HCXD = function ( f1_arg0, f1_arg1 )

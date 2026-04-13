@@ -1,5 +1,5 @@
-require( "x64:e95436bf279d160" )
-require( "x64:7bfec74b48e738a" )
+require( "ui/uieditor/widgets/vehiclehuds/hellstorm/vhud_hellstorm_button_layout" )
+require( "ui/uieditor/widgets/vehiclehuds/hellstorm/vhud_hellstorm_proximitywarning" )
 require( "ui/uieditor/widgets/vehiclehuds/hellstorm/vhud_hellstorm_reticle" )
 
 CoD.vhud_hellstorm_internal = InheritFrom( LUI.UIElement )

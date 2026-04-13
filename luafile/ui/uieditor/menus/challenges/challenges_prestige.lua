@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframeidentity" )
-require( "x64:b157ebcd8b4adcc" )
+require( "ui/uieditor/widgets/challenges/challenges_safeareawidget" )
 
 CoD.Challenges_Prestige = InheritFrom( CoD.Menu )
 LUI.createMenu.Challenges_Prestige = function ( f1_arg0, f1_arg1 )

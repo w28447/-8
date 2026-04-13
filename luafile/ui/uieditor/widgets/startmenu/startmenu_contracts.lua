@@ -1,4 +1,4 @@
-require( "x64:c01c702d0c9c363" )
+require( "ui/uieditor/widgets/aar_t8/contracts/aarcontractstabinternal" )
 require( "ui/uieditor/widgets/emptyfocusable" )
 
 CoD.StartMenu_Contracts = InheritFrom( LUI.UIElement )

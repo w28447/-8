@@ -1,8 +1,8 @@
 require( "ui/uieditor/widgets/blackmarket/bm_goldbarmed" )
-require( "x64:94acc3cb318e13b" )
+require( "ui/uieditor/widgets/blackmarket/bm_lock" )
 require( "ui/uieditor/widgets/cac/cac_lock" )
-require( "x64:8ffe7c4e01e7052" )
-require( "x64:5f8cf56752aa71b" )
+require( "ui/uieditor/widgets/cac/itemnewbreadcrumbwidget" )
+require( "ui/uieditor/widgets/commonbuttonoutline" )
 
 CoD.StickerSetBonusDecal_Internal = InheritFrom( LUI.UIElement )
 CoD.StickerSetBonusDecal_Internal.__defaultWidth = 144

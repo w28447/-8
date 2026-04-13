@@ -1,8 +1,8 @@
-require( "x64:34cc6596da96a84" )
+require( "ui/uieditor/widgets/social/social_infopane_dlcstatus" )
 require( "ui/uieditor/widgets/social/social_infopane_party" )
 require( "ui/uieditor/widgets/social/social_infopane_presence" )
-require( "x64:f0a581682449185" )
-require( "x64:d085ca092d117e3" )
+require( "ui/uieditor/widgets/social/social_infopane_presence_joinable" )
+require( "ui/uieditor/widgets/social/social_infopane_trial" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsmainframe" )
 
 CoD.Social_InfoPaneRight = InheritFrom( LUI.UIElement )

@@ -1,7 +1,7 @@
-require( "x64:fbffc86e9a93477" )
-require( "x64:79fe6ac43673588" )
-require( "x64:c4873e75b9cce20" )
-require( "x64:2abfd6c268cb91b" )
+require( "ui/uieditor/widgets/blackmarket/bm_iteminfopanel" )
+require( "ui/uieditor/widgets/challenges/challenges_framewidget_titlebackground" )
+require( "ui/uieditor/widgets/craft/emblemeditor/decalpreview" )
+require( "ui/uieditor/widgets/craft/emblemeditor/stickersetdecal" )
 require( "ui/uieditor/widgets/scrollbars/verticalcounter" )
 
 CoD.DecalStickerSetFramePaintshop = InheritFrom( LUI.UIElement )

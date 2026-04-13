@@ -1,4 +1,4 @@
-require( "x64:bda9dc9c42ba19a" )
+require( "ui/uieditor/widgets/cac/newbreadcrumblarge" )
 
 CoD.ItemNewBreadcrumbWidget = InheritFrom( LUI.UIElement )
 CoD.ItemNewBreadcrumbWidget.__defaultWidth = 156

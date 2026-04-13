@@ -88,7 +88,7 @@ CoD.DupeMeterInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local Linker = LUI.UIImage.new( 0, 0, 82.5, 86.5, 0, 0, 0, 27 )
 	Linker:setAlpha( 0.6 )
 	Linker:setZRot( 90 )
-	Linker:setImage( RegisterImage( 0xC49B0C8991A541F ) )
+	Linker:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
 	Linker:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	Linker:setShaderVector( 0, 0, 0, 0, 0 )
 	Linker:setupNineSliceShader( 4, 8 )

@@ -1,5 +1,5 @@
 require( "x64:d4c7ad7229f3df2" )
-require( "x64:46728994d8c06c0" )
+require( "ui/uieditor/widgets/common/commondetailpanel02" )
 require( "ui/uieditor/widgets/lobby/common/layoutelements/commonbglayoutelement01" )
 require( "x64:fd8a24ee5f0cd96" )
 require( "x64:f0772236b235298" )

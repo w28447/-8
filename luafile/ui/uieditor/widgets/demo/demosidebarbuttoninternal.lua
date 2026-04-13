@@ -1,4 +1,4 @@
-require( "x64:7074d4a20877dae" )
+require( "ui/uieditor/widgets/demo/demosidebarbuttonicon" )
 
 CoD.DemoSideBarButtonInternal = InheritFrom( LUI.UIElement )
 CoD.DemoSideBarButtonInternal.__defaultWidth = 350

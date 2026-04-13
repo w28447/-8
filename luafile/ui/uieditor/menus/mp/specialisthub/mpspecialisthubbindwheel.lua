@@ -1,4 +1,4 @@
-require( "x64:4d5f4daea1dd74a" )
+require( "ui/uieditor/widgets/mp/specialisthub/mpspecialisthubbindwheel_safeareacontainer" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsbackground" )
 
 CoD.MPSpecialistHUBBindWheel = InheritFrom( CoD.Menu )

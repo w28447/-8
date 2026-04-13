@@ -1,6 +1,6 @@
-require( "x64:6fd55bf8b90635b" )
-require( "x64:12c969e93cb6be2" )
-require( "x64:42f4e7dac175b95" )
+require( "ui/uieditor/widgets/arena/leagueplayleaderboardentryclanname" )
+require( "ui/uieditor/widgets/arena/leagueplayleaderboardentryselection" )
+require( "ui/uieditor/widgets/arena/leagueplayrubylist" )
 
 CoD.LeaguePlayLeaderboardEntry = InheritFrom( LUI.UIElement )
 CoD.LeaguePlayLeaderboardEntry.__defaultWidth = 898

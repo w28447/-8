@@ -1,8 +1,8 @@
 require( "ui/uieditor/widgets/aar_t8/rewards/aarrewardbacker" )
-require( "x64:964f98242e1c7b3" )
+require( "ui/uieditor/widgets/aar_t8/rewards/aarrewardcontractdesc" )
 require( "ui/uieditor/widgets/aar_t8/rewards/aarrewardheader" )
-require( "x64:814c085d0bdb54a" )
-require( "x64:78b521390453e28" )
+require( "ui/uieditor/widgets/aar_t8/rewards/aarrewardsdynamicxp" )
+require( "ui/uieditor/widgets/aar_t8/rewards/aarrewardsvariablecontractreward" )
 require( "ui/uieditor/widgets/pc/utility/verticallistspacer" )
 
 CoD.AARContractReward = InheritFrom( LUI.UIElement )

@@ -1,11 +1,11 @@
 require( "ui/uieditor/widgets/cac/itemnamedescunlocktext" )
-require( "x64:341ce33d59fafd1" )
+require( "ui/uieditor/widgets/cac/restricteditemwarningtext" )
 require( "ui/uieditor/widgets/footer/footercontainer_frontend_right" )
 require( "ui/uieditor/widgets/scrollbars/verticalcounter" )
 require( "x64:5b3f12fb71c1346" )
 require( "x64:51417b7fe0a0948" )
 require( "x64:7046b0d9f3594f1" )
-require( "x64:602298da419f4f" )
+require( "ui/uieditor/widgets/pc/zm/pc_equippedbgbcontainer" )
 
 CoD.BubblegumBuffSelect = InheritFrom( CoD.Menu )
 LUI.createMenu.BubblegumBuffSelect = function ( f1_arg0, f1_arg1 )

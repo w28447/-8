@@ -1,4 +1,4 @@
-require( "x64:1b1fffce4a9b293" )
+require( "ui/uieditor/widgets/codcaster/codcasterlivescount2" )
 require( "x64:53a9daa62b22793" )
 
 CoD.CodCasterObjectiveStatusLifeTeam2 = InheritFrom( LUI.UIElement )

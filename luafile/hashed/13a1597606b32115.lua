@@ -1,6 +1,6 @@
 require( "x64:7859c4946b9af3c" )
-require( "x64:c048e011d7fa11c" )
-require( "x64:330e1ef77701a18" )
+require( "ui/uieditor/widgets/cac/selectedclassminipreview" )
+require( "ui/uieditor/widgets/common/radialtimer" )
 require( "x64:e6df4068375d284" )
 require( "ui/uieditor/widgets/dynamiccontainerwidget" )
 require( "ui/uieditor/widgets/footer/footercontainer_ingame_right" )
@@ -19,7 +19,7 @@ require( "x64:132e03577fedd0f" )
 require( "ui/uieditor/widgets/common/commonheader" )
 require( "ui/uieditor/widgets/emptyfocusable" )
 require( "ui/uieditor/widgets/header/header_container_frontend" )
-require( "x64:848cd399f32775f" )
+require( "ui/uieditor/widgets/pc/pcvoicechatwidget" )
 
 local f0_local0 = function ( f1_arg0, f1_arg1 )
 	if not CoD.IsPC and IsSplitscreenAndInGame( f1_arg1 ) then

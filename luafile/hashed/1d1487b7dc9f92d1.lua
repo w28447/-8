@@ -1,5 +1,5 @@
-require( "x64:5f8cf56752aa71b" )
-require( "x64:1a4e34b4805b325" )
+require( "ui/uieditor/widgets/commonbuttonoutline" )
+require( "ui/uieditor/widgets/commonbuttonoutlinelocked" )
 
 CoD.PrestigeAttachmentSlot = InheritFrom( LUI.UIElement )
 CoD.PrestigeAttachmentSlot.__defaultWidth = 100

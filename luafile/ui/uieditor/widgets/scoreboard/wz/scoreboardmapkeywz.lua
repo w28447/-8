@@ -1,6 +1,6 @@
-require( "x64:637063c9f34e6f3" )
-require( "x64:eda3c59d915dd99" )
-require( "x64:fd8754c012d4e07" )
+require( "ui/uieditor/widgets/warzone/warzonemapkeyitem" )
+require( "ui/uieditor/widgets/warzone/warzonemapkeyitemwithmarker" )
+require( "ui/uieditor/widgets/warzone/warzonemapkeyitemwithplayericon" )
 
 CoD.ScoreboardMapKeyWZ = InheritFrom( LUI.UIElement )
 CoD.ScoreboardMapKeyWZ.__defaultWidth = 271

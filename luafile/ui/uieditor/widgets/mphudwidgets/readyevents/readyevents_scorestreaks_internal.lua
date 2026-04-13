@@ -1,4 +1,4 @@
-require( "x64:608a04210db0950" )
+require( "ui/uieditor/widgets/mphudwidgets/readyevents/readyevents_scorestreaks_iconcontainer" )
 
 CoD.ReadyEvents_Scorestreaks_Internal = InheritFrom( LUI.UIElement )
 CoD.ReadyEvents_Scorestreaks_Internal.__defaultWidth = 300

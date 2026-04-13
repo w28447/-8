@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/director/directorplaylistoptioninternal" )
-require( "x64:1c3ea9f0ec2f9b6" )
+require( "ui/uieditor/widgets/zmfrontend/zmplaylistselected" )
 
 CoD.DirectorZMTutorialSelectItem = InheritFrom( LUI.UIElement )
 CoD.DirectorZMTutorialSelectItem.__defaultWidth = 512

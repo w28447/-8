@@ -1,5 +1,5 @@
-require( "x64:d38fc6c8498fc71" )
-require( "x64:c5bffd63a566ec6" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidgetmp_ultimate_progress_fillpulse" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidgetmp_ultimate_progress_pulse" )
 
 CoD.AmmoWidgetMP_Ultimate_Progress_Fill = InheritFrom( LUI.UIElement )
 CoD.AmmoWidgetMP_Ultimate_Progress_Fill.__defaultWidth = 110

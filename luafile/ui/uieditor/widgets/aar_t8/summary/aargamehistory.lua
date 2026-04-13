@@ -1,10 +1,10 @@
 require( "ui/uieditor/widgets/aar_t8/summary/aaraveragewidget" )
-require( "x64:92778f6892c4333" )
+require( "ui/uieditor/widgets/aar_t8/summary/aarcompacthistorymessage" )
 require( "ui/uieditor/widgets/aar_t8/summary/aargamehistoryavg" )
 require( "ui/uieditor/widgets/aar_t8/summary/aarnumericalstathistory" )
 require( "ui/uieditor/widgets/aar_t8/summary/aarstattypetabheader" )
 require( "ui/uieditor/widgets/aar_t8/summary/aarwinlosemessage" )
-require( "x64:194a3c2b978e81" )
+require( "ui/uieditor/widgets/common/commonsecondarytabbar" )
 
 CoD.AARGameHistory = InheritFrom( LUI.UIElement )
 CoD.AARGameHistory.__defaultWidth = 1160

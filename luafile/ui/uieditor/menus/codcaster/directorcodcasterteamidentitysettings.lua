@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframe" )
-require( "x64:e106dd7e1189ae6" )
+require( "ui/uieditor/widgets/codcaster/codcasterteamidentitysettingscontainer" )
 require( "ui/uieditor/widgets/lobby/common/fe_buttonpanelshadercontainer" )
 require( "ui/uieditor/widgets/lobby/common/fe_menu_leftgraphics" )
 require( "ui/uieditor/widgets/lobby/lobbystreamerblackfade" )

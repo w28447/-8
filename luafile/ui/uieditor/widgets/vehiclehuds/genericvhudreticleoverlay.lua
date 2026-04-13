@@ -1,10 +1,10 @@
 require( "ui/uieditor/widgets/vehiclehuds/genericvhuddamagearea" )
-require( "x64:a8d56a316c6ad40" )
-require( "x64:9c40147e90bec2c" )
-require( "x64:d84206e83dbcd1d" )
-require( "x64:93547a1e84ec106" )
-require( "x64:89111f3cd54c92f" )
-require( "x64:95d15a81bcb0281" )
+require( "ui/uieditor/widgets/vehiclehuds/genericvhudhealthandradar" )
+require( "ui/uieditor/widgets/vehiclehuds/genericvhudrightcontainer" )
+require( "ui/uieditor/widgets/vehiclehuds/genericvhudtimebar" )
+require( "ui/uieditor/widgets/vehiclehuds/missileproximityalert" )
+require( "ui/uieditor/widgets/vehiclehuds/vehiclecollisionwarning" )
+require( "ui/uieditor/widgets/vehiclehuds/vehiclemalfunctionwarning" )
 
 CoD.genericVHUDReticleOverlay = InheritFrom( LUI.UIElement )
 CoD.genericVHUDReticleOverlay.__defaultWidth = 1920

@@ -1,6 +1,6 @@
-require( "x64:b3bf131ef4361fc" )
-require( "x64:c3f792f661c64a2" )
-require( "x64:90c5cee147893f1" )
+require( "ui/uieditor/widgets/hud/safeareacontainers/hud_wz_safeareacontainer_back" )
+require( "ui/uieditor/widgets/hud/safeareacontainers/hud_wz_safeareacontainer_front" )
+require( "ui/uieditor/widgets/warzone/warzonestreamhider" )
 
 CoD.Hud_WZ_SafeAreaContainer = InheritFrom( LUI.UIElement )
 CoD.Hud_WZ_SafeAreaContainer.__defaultWidth = 1920

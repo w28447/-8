@@ -1,4 +1,4 @@
-require( "x64:13633ff3df9547a" )
+require( "ui/uieditor/widgets/cac/mark2bonusexpbadge" )
 
 CoD.LoadoutClassItemName = InheritFrom( LUI.UIElement )
 CoD.LoadoutClassItemName.__defaultWidth = 384

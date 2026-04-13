@@ -1,5 +1,5 @@
-require( "x64:3e426332d66c91e" )
-require( "x64:f9f0e41049e1efe" )
+require( "ui/uieditor/widgets/common/commonfocusbrackets" )
+require( "ui/uieditor/widgets/zmfrontend/laboratory/zm_laboratorydescriptiondivider" )
 
 CoD.ZMButtonDifficultyInternal = InheritFrom( LUI.UIElement )
 CoD.ZMButtonDifficultyInternal.__defaultWidth = 280

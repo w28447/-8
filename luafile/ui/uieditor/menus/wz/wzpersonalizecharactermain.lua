@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframe" )
 require( "ui/uieditor/widgets/common/common_tabbar_center" )
-require( "x64:62080ad3aaa22da" )
+require( "ui/uieditor/widgets/common/commoninformationframe" )
 require( "ui/uieditor/widgets/lobby/common/layoutelements/commonbglayoutlinkline" )
 
 CoD.WZPersonalizeCharacterMain = InheritFrom( CoD.Menu )

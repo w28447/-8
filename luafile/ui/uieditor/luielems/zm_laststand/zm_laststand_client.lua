@@ -1,5 +1,5 @@
-require( "x64:dddc350afc94b48" )
-require( "x64:ad2dd10539beaf7" )
+require( "ui/uieditor/widgets/zmhudwidgets/hud_zm_laststand_bleedout_perk_bar_item" )
+require( "ui/uieditor/widgets/zmhudwidgets/hud_zm_laststand_decorativebginternal" )
 
 CoD.zm_laststand_client = InheritFrom( CoD.Menu )
 LUI.createMenu.zm_laststand_client = function ( f1_arg0, f1_arg1 )

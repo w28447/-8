@@ -1,6 +1,6 @@
-require( "x64:13633ff3df9547a" )
-require( "x64:f4503439f328738" )
-require( "x64:3e426332d66c91e" )
+require( "ui/uieditor/widgets/cac/mark2bonusexpbadge" )
+require( "ui/uieditor/widgets/cac/weaponselect/weaponselectgriditeminternalname" )
+require( "ui/uieditor/widgets/common/commonfocusbrackets" )
 require( "ui/uieditor/widgets/director/directorselectbuttonlines" )
 require( "x64:fa09a25709d5433" )
 

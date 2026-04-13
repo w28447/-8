@@ -1,8 +1,8 @@
-require( "x64:1e4812bc9d39ec5" )
+require( "ui/uieditor/widgets/arena/arenaleagueplaybg" )
 require( "ui/uieditor/widgets/common/commonheader" )
 require( "ui/uieditor/widgets/footer/footercontainer_frontend_right" )
 require( "ui/uieditor/widgets/header/header_container_frontend" )
-require( "x64:f027dcc6409e42c" )
+require( "ui/uieditor/widgets/pc/pc_motd_buttons" )
 
 CoD.LeaguePlayEndRankUpRewards = InheritFrom( CoD.Menu )
 LUI.createMenu.LeaguePlayEndRankUpRewards = function ( f1_arg0, f1_arg1 )

@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/bumperbuttonwithkeymousetext" )
 require( "ui/uieditor/widgets/director/directorselecttexttab" )
-require( "x64:736f83e92990ede" )
+require( "ui/uieditor/widgets/startmenu/options/pc_startmenu_optionstabs_background" )
 
 CoD.PC_StartMenu_OptionsTabs = InheritFrom( LUI.UIElement )
 CoD.PC_StartMenu_OptionsTabs.__defaultWidth = 1920

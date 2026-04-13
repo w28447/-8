@@ -1,6 +1,6 @@
 require( "x64:2e06eec4ea38539" )
 require( "x64:d7c2833b4652c17" )
-require( "x64:9bbe0011ba3f2ca" )
+require( "ui/uieditor/widgets/hud/wzweaponpickupholdbuttonicons" )
 require( "ui/uieditor/widgets/pc/utility/verticallistspacer" )
 
 CoD.WeaponPickupPrompt = InheritFrom( LUI.UIElement )

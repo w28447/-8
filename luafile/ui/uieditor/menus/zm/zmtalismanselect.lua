@@ -1,8 +1,8 @@
 require( "ui/uieditor/widgets/cac/itemnamedescunlocktext" )
-require( "x64:341ce33d59fafd1" )
+require( "ui/uieditor/widgets/cac/restricteditemwarningtext" )
 require( "ui/uieditor/widgets/footer/footercontainer_frontend_right" )
 require( "ui/uieditor/widgets/scrollbars/verticalcounter" )
-require( "x64:1b3bebae5e3f953" )
+require( "ui/uieditor/widgets/zmfrontend/cac/zmtalismansafeareacontainer" )
 require( "x64:e692aea0c6bf292" )
 
 CoD.ZMTalismanSelect = InheritFrom( CoD.Menu )

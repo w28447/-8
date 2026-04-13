@@ -1,4 +1,4 @@
-require( "x64:73a9d7c1ffff91e" )
+require( "ui/uieditor/widgets/scoreboard/wz/scoreboardmapcolumnheadings" )
 
 CoD.ScoreboardMapColumnHeadingsContainer = InheritFrom( LUI.UIElement )
 CoD.ScoreboardMapColumnHeadingsContainer.__defaultWidth = 896

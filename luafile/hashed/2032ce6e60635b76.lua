@@ -6,7 +6,7 @@ require( "x64:c14d8a5595598f" )
 require( "x64:18d7d3476aa7979" )
 require( "x64:f28b5bda61ffbd8" )
 require( "x64:7718eaf8d3821ca" )
-require( "x64:708dbaf0f5b37d2" )
+require( "ui/uieditor/widgets/pc/hud/pc_killcamhint" )
 
 CoD.SpawnSelectKillcam = InheritFrom( LUI.UIElement )
 CoD.SpawnSelectKillcam.__defaultWidth = 1920

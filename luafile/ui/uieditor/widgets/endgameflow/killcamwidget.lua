@@ -1,7 +1,7 @@
-require( "x64:a3bf59b02ee9e3c" )
+require( "ui/uieditor/widgets/endgameflow/killcamplayerinfo" )
 require( "ui/uieditor/widgets/hud/killcam/killcamheader" )
-require( "x64:37c24d33c50231f" )
-require( "x64:bd15fd80b6b0985" )
+require( "ui/uieditor/widgets/hud/killcam/killcamkilledbyattachments" )
+require( "ui/uieditor/widgets/hud/killcam/killcamkilledbyequipment" )
 
 CoD.KillcamWidget = InheritFrom( LUI.UIElement )
 CoD.KillcamWidget.__defaultWidth = 1920

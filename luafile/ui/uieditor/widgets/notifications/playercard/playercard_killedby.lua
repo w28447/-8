@@ -3,7 +3,7 @@ require( "ui/uieditor/widgets/endgameflow/top3playerscoreblurbox" )
 require( "ui/uieditor/widgets/lobby/common/fe_buttonpanel" )
 require( "ui/uieditor/widgets/lobby/common/fe_buttonpanelshadercontainer" )
 require( "ui/uieditor/widgets/lobby/common/fe_panelnoblur" )
-require( "x64:8d3de31d16f3fdf" )
+require( "ui/uieditor/widgets/notifications/playercard/playercard_label" )
 
 CoD.PlayerCard_KilledBy = InheritFrom( LUI.UIElement )
 CoD.PlayerCard_KilledBy.__defaultWidth = 462

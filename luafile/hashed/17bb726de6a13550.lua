@@ -1,8 +1,8 @@
 require( "x64:dec4adeaa0cc751" )
-require( "x64:74864184d366296" )
+require( "ui/uieditor/widgets/lobby/common/layoutelements/commonbglayoutelement03" )
 require( "ui/uieditor/widgets/scoreboard/tabbedscoreboardfuibox" )
 require( "ui/uieditor/widgets/startmenu/startmenu_background" )
-require( "x64:f027dcc6409e42c" )
+require( "ui/uieditor/widgets/pc/pc_motd_buttons" )
 
 CoD.FTUEGameIntroduction = InheritFrom( CoD.Menu )
 LUI.createMenu.FTUEGameIntroduction = function ( f1_arg0, f1_arg1 )

@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/lobby/common/fe_focusbarcontainer" )
 require( "ui/uieditor/widgets/lobby/common/fe_titlenumbrdr" )
 require( "ui/uieditor/widgets/startmenu/startmenu_frame_nobg" )
-require( "x64:59857b73a9a23ab" )
+require( "ui/uieditor/widgets/startmenu/startmenu_options_sliderbar_bar" )
 
 local f0_local0 = function ( f1_arg0, f1_arg1 )
 	local f1_local0, f1_local1, f1_local2, f1_local3 = f1_arg0.FilledPartBg:getRect()

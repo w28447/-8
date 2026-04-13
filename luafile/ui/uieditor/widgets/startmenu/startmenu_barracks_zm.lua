@@ -1,6 +1,6 @@
 require( "x64:d4c7ad7229f3df2" )
-require( "x64:98c9e4ec10473c2" )
-require( "x64:7ade4fcc6d1f5c6" )
+require( "ui/uieditor/widgets/barracks/zmcallingswidget" )
+require( "ui/uieditor/widgets/barracks/zmspecialeventwidget" )
 require( "ui/uieditor/widgets/cac/cac_lock" )
 require( "x64:fee3cb6102ad77d" )
 require( "x64:d739459598d1b6a" )

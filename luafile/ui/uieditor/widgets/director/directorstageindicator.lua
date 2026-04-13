@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/director/directorstagebar" )
-require( "x64:87ae3dbc4c1c4da" )
+require( "ui/uieditor/widgets/director/directorstagespulsing" )
 
 CoD.DirectorStageIndicator = InheritFrom( LUI.UIElement )
 CoD.DirectorStageIndicator.__defaultWidth = 860

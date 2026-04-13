@@ -1,8 +1,8 @@
-require( "x64:c792dff66efd1a2" )
-require( "x64:795a0c7c6fc136d" )
-require( "x64:c0e5e43ea9f279d" )
-require( "x64:429130902fd2672" )
-require( "x64:1938733d0061a46" )
+require( "ui/uieditor/widgets/hud/gameendscore/gameendscorecenterwidget" )
+require( "ui/uieditor/widgets/hud/gameendscore/gameendscoreroundlist" )
+require( "ui/uieditor/widgets/hud/gameendscore/gameendscoreroundlistreverse" )
+require( "ui/uieditor/widgets/hud/gameendscore/gameendscoreroundtext" )
+require( "ui/uieditor/widgets/hud/gameendscore/gameendtime" )
 
 CoD.GameEndScoreOutcome = InheritFrom( LUI.UIElement )
 CoD.GameEndScoreOutcome.__defaultWidth = 1920

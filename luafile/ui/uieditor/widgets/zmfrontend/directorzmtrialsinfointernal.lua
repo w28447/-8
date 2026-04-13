@@ -1,4 +1,4 @@
-require( "x64:e3afa26bf197ec1" )
+require( "ui/uieditor/widgets/zmfrontend/directorzmtrialsinfodescriptiontall" )
 
 CoD.DirectorZMTrialsInfoInternal = InheritFrom( LUI.UIElement )
 CoD.DirectorZMTrialsInfoInternal.__defaultWidth = 1920

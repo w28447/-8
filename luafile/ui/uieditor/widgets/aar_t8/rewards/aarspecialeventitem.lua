@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/aar_t8/rewards/aarrewardbrackets" )
-require( "x64:952fac172835579" )
+require( "ui/uieditor/widgets/barracks/specialeventlargerewardwidget" )
 
 CoD.AARSpecialEventItem = InheritFrom( LUI.UIElement )
 CoD.AARSpecialEventItem.__defaultWidth = 380

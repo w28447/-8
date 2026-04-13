@@ -1,4 +1,4 @@
-require( "x64:93a575a7ca17e04" )
+require( "ui/uieditor/widgets/health/healthbar" )
 
 CoD.HealthBoostPlayerListWidget = InheritFrom( LUI.UIElement )
 CoD.HealthBoostPlayerListWidget.__defaultWidth = 175

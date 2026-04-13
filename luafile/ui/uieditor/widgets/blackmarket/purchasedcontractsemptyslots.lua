@@ -1,4 +1,4 @@
-require( "x64:acf82a98718baa9" )
+require( "ui/uieditor/widgets/common/commonemptyslot01" )
 
 CoD.PurchasedContractsEmptySlots = InheritFrom( LUI.UIElement )
 CoD.PurchasedContractsEmptySlots.__defaultWidth = 1288

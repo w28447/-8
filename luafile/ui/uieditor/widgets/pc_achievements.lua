@@ -1,6 +1,6 @@
-require( "x64:3d3abfba105a95" )
-require( "x64:978e56ada3acd1c" )
-require( "x64:4565d12133afcc3" )
+require( "ui/uieditor/widgets/pc/pc_achievement" )
+require( "ui/uieditor/widgets/pc/pc_achievements_totalpoints" )
+require( "ui/uieditor/widgets/pc_achievementdetailview" )
 require( "ui/uieditor/widgets/pc_vscrolllist" )
 
 CoD.PC_Achievements = InheritFrom( LUI.UIElement )

@@ -1,5 +1,5 @@
-require( "x64:a969aa55b2ced8" )
-require( "x64:945348cbcaea7d0" )
+require( "ui/uieditor/widgets/common/commonidentitymembernamestreamlined" )
+require( "ui/uieditor/widgets/common/commonplasmacurrency" )
 require( "x64:d516fec83a97b65" )
 require( "ui/uieditor/widgets/startmenu/startmenu_codpoints" )
 

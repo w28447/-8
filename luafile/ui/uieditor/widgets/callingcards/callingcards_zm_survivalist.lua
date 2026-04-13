@@ -1,4 +1,4 @@
-require( "x64:6021906931854d6" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_spiderleg_animated" )
 
 CoD[0xE9560377C67385F] = InheritFrom( LUI.UIElement )
 CoD[0xE9560377C67385F].__defaultWidth = 960

@@ -1,6 +1,6 @@
-require( "x64:f00a10fc8301da2" )
+require( "ui/uieditor/widgets/aar_t8/aarcommonbacking" )
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframe" )
-require( "x64:57cc8e6b7e37b6b" )
+require( "ui/uieditor/widgets/craft/paintshop/paintshopsafeareacontainer" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsbackground" )
 
 CoD.PaintshopChooseIcon = InheritFrom( CoD.Menu )

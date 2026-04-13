@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/mphudwidgets/waypoint_textwithbg" )
-require( "x64:960b8d226c888d2" )
+require( "ui/uieditor/widgets/mphudwidgets/waypointcapturedpercentmessagecontainer" )
 
 CoD.WaypointCaptured = InheritFrom( LUI.UIElement )
 CoD.WaypointCaptured.__defaultWidth = 1920

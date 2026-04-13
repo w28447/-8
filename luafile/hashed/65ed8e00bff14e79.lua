@@ -1,4 +1,4 @@
-require( "x64:62eee6f7ab7e3b3" )
+require( "ui/uieditor/widgets/zmhudwidgets/inventory/zminventorylistbackinginternaltip" )
 
 CoD.zm_red_challenges_widget_internal = InheritFrom( LUI.UIElement )
 CoD.zm_red_challenges_widget_internal.__defaultWidth = 360

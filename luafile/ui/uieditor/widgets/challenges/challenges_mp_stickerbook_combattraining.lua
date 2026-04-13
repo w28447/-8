@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/challenges/challenges_callingcardwidget" )
-require( "x64:79fe6ac43673588" )
+require( "ui/uieditor/widgets/challenges/challenges_framewidget_titlebackground" )
 require( "ui/uieditor/widgets/challenges/challenges_mastercallingcardwidget" )
-require( "x64:e5789686f9ce588" )
+require( "ui/uieditor/widgets/challenges/challengescallingcardprofilercombattraining" )
 
 CoD.Challenges_MP_Stickerbook_CombatTraining = InheritFrom( LUI.UIElement )
 CoD.Challenges_MP_Stickerbook_CombatTraining.__defaultWidth = 1920

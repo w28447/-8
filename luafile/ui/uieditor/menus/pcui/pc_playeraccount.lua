@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframe" )
 require( "ui/uieditor/widgets/common/common_tabbar_center" )
-require( "x64:81a24c5340caa1e" )
+require( "ui/uieditor/widgets/common/commontabbarbacking" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsbackground" )
 
 CoD.PC_PlayerAccount = InheritFrom( CoD.Menu )

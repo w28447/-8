@@ -1,6 +1,6 @@
-require( "x64:a5345e91e58dd3b" )
-require( "x64:b9363c1b28d579c" )
-require( "x64:28e0a7b4222359a" )
+require( "ui/uieditor/widgets/aar_t8/arena/aar_leagueplay_placementpip" )
+require( "ui/uieditor/widgets/arena/arenaeventprogressbuttondailybonus" )
+require( "ui/uieditor/widgets/arena/arenaeventprogressbuttonrank" )
 
 CoD.ArenaEventProgressButtonInternalLeaguePlay = InheritFrom( LUI.UIElement )
 CoD.ArenaEventProgressButtonInternalLeaguePlay.__defaultWidth = 382
@@ -70,7 +70,7 @@ CoD.ArenaEventProgressButtonInternalLeaguePlay.new = function ( f1_arg0, f1_arg1
 	local MatchesPlayedText2 = LUI.UIText.new( 0, 0, -16, 67, 0, 0, 33.5, 60.5 )
 	MatchesPlayedText2:setRGB( 0.92, 0.92, 0.92 )
 	MatchesPlayedText2:setAlpha( 0 )
-	MatchesPlayedText2:setText( CoD.ArenaLeaguePlayUtility.GetCompletedPlacementMatchesString( f1_arg1, 0xB67F7FB585D594C ) )
+	MatchesPlayedText2:setText( CoD.ArenaLeaguePlayUtility.GetCompletedPlacementMatchesString( f1_arg1, menu/empty ) )
 	MatchesPlayedText2:setTTF( "ttmussels_demibold" )
 	MatchesPlayedText2:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )
 	MatchesPlayedText2:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

@@ -1,5 +1,5 @@
-require( "x64:8b7a1fef811bc3a" )
-require( "x64:6a28b92b4010049" )
+require( "ui/uieditor/widgets/codcaster/codcaster_timer_nl" )
+require( "ui/uieditor/widgets/codcaster/codcasterteamscoreboardcolor" )
 
 CoD.CodCasterTeamScoreboard = InheritFrom( LUI.UIElement )
 CoD.CodCasterTeamScoreboard.__defaultWidth = 520

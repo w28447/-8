@@ -1,4 +1,4 @@
-require( "x64:95cf4441939020c" )
+require( "ui/uieditor/widgets/codcaster/codcasterminimap" )
 
 CoD.CodCasterMiniMapPosition = InheritFrom( LUI.UIElement )
 CoD.CodCasterMiniMapPosition.__defaultWidth = 1920

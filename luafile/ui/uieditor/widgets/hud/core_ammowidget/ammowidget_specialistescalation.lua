@@ -1,5 +1,5 @@
-require( "x64:35152a333fa2552" )
-require( "x64:6a82231f482914f" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_characterportrait" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_characterportraitbacking" )
 
 CoD.AmmoWidget_SpecialistEscalation = InheritFrom( LUI.UIElement )
 CoD.AmmoWidget_SpecialistEscalation.__defaultWidth = 278

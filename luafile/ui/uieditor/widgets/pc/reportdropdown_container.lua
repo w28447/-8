@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/emptyfocusable" )
-require( "x64:18d56e190302ee4" )
+require( "ui/uieditor/widgets/pc/dropdown_leftalign" )
 
 CoD.ReportDropdown_Container = InheritFrom( LUI.UIElement )
 CoD.ReportDropdown_Container.__defaultWidth = 348

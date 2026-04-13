@@ -1,5 +1,5 @@
-require( "x64:62adff09117f331" )
-require( "x64:d69f65024f3f205" )
+require( "ui/uieditor/widgets/arena/arenarubies" )
+require( "ui/uieditor/widgets/arena/leagueplayleaderboard_infopanewinstreak" )
 require( "ui/uieditor/widgets/callingcards/callingcards_framewidget" )
 require( "ui/uieditor/widgets/common/commonsocialarrow" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsmainframe" )

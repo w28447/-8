@@ -1,7 +1,7 @@
-require( "x64:ea5bc03da1b4195" )
-require( "x64:3296460d046f335" )
-require( "x64:96ce1eeb95b7136" )
-require( "x64:fa77b4b9e7997ad" )
+require( "ui/uieditor/menus/arena/arenagauntletprogressiondetails" )
+require( "ui/uieditor/menus/arena/arenaskillevaluationplacementmenu" )
+require( "ui/uieditor/menus/arena/leagueplayleaderboardmenu" )
+require( "ui/uieditor/widgets/arena/arenaeventprogressbuttoninternal" )
 
 CoD.ArenaEventProgressButton = InheritFrom( LUI.UIElement )
 CoD.ArenaEventProgressButton.__defaultWidth = 382

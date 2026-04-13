@@ -1,7 +1,7 @@
-require( "x64:aac73e3cb2db880" )
-require( "x64:15cf4f01e6aec35" )
-require( "x64:38e03e34ad8f0b5" )
-require( "x64:a5c094515c7c87e" )
+require( "ui/uieditor/widgets/barracks/barracks_timedisplaytext" )
+require( "ui/uieditor/widgets/barracks/specialeventprogresspip" )
+require( "ui/uieditor/widgets/barracks/specialeventrewardswidget" )
+require( "ui/uieditor/widgets/barracks/specialeventtaskwidget" )
 
 CoD.SpecialEventWidget = InheritFrom( LUI.UIElement )
 CoD.SpecialEventWidget.__defaultWidth = 477

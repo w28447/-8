@@ -1,5 +1,5 @@
-require( "x64:abd9d2111472f07" )
-require( "x64:439f1611752f8e0" )
+require( "ui/uieditor/widgets/demo/demobuttonprompt" )
+require( "ui/uieditor/widgets/demo/democontrolsspectatingbar" )
 
 local f0_local0 = function ( f1_arg0, f1_arg1 )
 	local f1_local0 = 0x3EF6A41762515E9

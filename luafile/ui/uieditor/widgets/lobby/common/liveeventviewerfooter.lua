@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/footer/fe_leftcontainer_notlobby" )
-require( "x64:f32d325330c30cd" )
+require( "ui/uieditor/widgets/lobby/common/liveeventviewerstreamercount" )
 require( "ui/uieditor/widgets/onoffimage" )
 
 CoD.LiveEventViewerFooter = InheritFrom( LUI.UIElement )

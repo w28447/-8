@@ -1,4 +1,4 @@
-require( "x64:f841dd83b370a80" )
+require( "ui/uieditor/widgets/challenges/challenges_category_buttoninternal" )
 
 CoD.ChallengesCategoryButton = InheritFrom( LUI.UIElement )
 CoD.ChallengesCategoryButton.__defaultWidth = 1000

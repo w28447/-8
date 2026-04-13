@@ -1,6 +1,6 @@
-require( "x64:686355579696a18" )
-require( "x64:94fbc5cbde7d92d" )
-require( "x64:192a347560f0f5d" )
+require( "ui/uieditor/widgets/barracks/specialeventrewardwidget" )
+require( "ui/uieditor/widgets/barracks/specialeventsmallrewardwidget" )
+require( "ui/uieditor/widgets/barracks/zmdailycallingstierskipnotification" )
 
 CoD.SpecialEventRewardsWidget = InheritFrom( LUI.UIElement )
 CoD.SpecialEventRewardsWidget.__defaultWidth = 453

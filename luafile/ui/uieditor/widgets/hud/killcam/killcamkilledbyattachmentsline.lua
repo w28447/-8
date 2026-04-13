@@ -1,4 +1,4 @@
-require( "x64:a1112c4f772a43c" )
+require( "ui/uieditor/widgets/hud/killcam/killcamkilledbyattachmentlabel" )
 
 CoD.KillcamKilledByAttachmentsLine = InheritFrom( LUI.UIElement )
 CoD.KillcamKilledByAttachmentsLine.__defaultWidth = 375

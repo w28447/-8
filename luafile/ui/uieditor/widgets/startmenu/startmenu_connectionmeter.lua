@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/startmenu/startmenu_connectionmeter_packetlossimage" )
 require( "ui/uieditor/widgets/startmenu/startmenu_connectionmeter_pingimage" )
-require( "x64:c3166633f638a68" )
+require( "ui/uieditor/widgets/startmenu/startmenu_stenciledconnectionmeter" )
 
 CoD.StartMenu_ConnectionMeter = InheritFrom( LUI.UIElement )
 CoD.StartMenu_ConnectionMeter.__defaultWidth = 745

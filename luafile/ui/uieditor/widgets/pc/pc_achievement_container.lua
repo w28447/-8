@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/director/directorselectbuttonlines" )
-require( "x64:3ff924af57d228a" )
+require( "ui/uieditor/widgets/pc/pc_achievement_completedtick" )
 
 CoD.PC_Achievement_Container = InheritFrom( LUI.UIElement )
 CoD.PC_Achievement_Container.__defaultWidth = 850

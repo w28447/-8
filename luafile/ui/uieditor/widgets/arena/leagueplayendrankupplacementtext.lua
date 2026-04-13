@@ -1,4 +1,4 @@
-require( "x64:fa4e13ca8783b9d" )
+require( "ui/uieditor/widgets/arena/leagueplayyouplaced" )
 
 CoD.LeaguePlayEndRankUpPlacementText = InheritFrom( LUI.UIElement )
 CoD.LeaguePlayEndRankUpPlacementText.__defaultWidth = 600

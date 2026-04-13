@@ -1,6 +1,6 @@
 require( "x64:1bbde4283bb35f8" )
-require( "x64:189db42984e831b" )
-require( "x64:7cfaa6a68d4fa26" )
+require( "ui/uieditor/widgets/customgames/customgames_mapmodeinfo" )
+require( "ui/uieditor/widgets/customgames/customgames_mapmodeslider" )
 require( "ui/uieditor/widgets/scrollbars/verticalcounter" )
 
 CoD.DirectorChooseMapFrame = InheritFrom( LUI.UIElement )

@@ -1,4 +1,4 @@
-require( "x64:95a71fda29b6a0a" )
+require( "ui/uieditor/widgets/hud/map/compassawarenessringzone" )
 
 CoD.CompassAwarenessRingSegment = InheritFrom( LUI.UIElement )
 CoD.CompassAwarenessRingSegment.__defaultWidth = 330

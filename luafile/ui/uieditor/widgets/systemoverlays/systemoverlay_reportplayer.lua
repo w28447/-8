@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/playercard/callingcard" )
-require( "x64:ade61cc095aa2bc" )
-require( "x64:42713807971f727" )
+require( "ui/uieditor/widgets/pc/pc_reporttextbox" )
+require( "ui/uieditor/widgets/pc/reportdropdown_container" )
 require( "ui/uieditor/widgets/systemoverlays/featureoverlay_button" )
 
 CoD.systemOverlay_reportPlayer = InheritFrom( LUI.UIElement )

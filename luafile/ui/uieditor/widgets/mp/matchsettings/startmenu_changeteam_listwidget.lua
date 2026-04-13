@@ -1,4 +1,4 @@
-require( "x64:8ea9fbf3bb18e48" )
+require( "ui/uieditor/widgets/mp/matchsettings/startmenu_changeteam_buttoninternal" )
 
 CoD.StartMenu_ChangeTeam_ListWidget = InheritFrom( LUI.UIElement )
 CoD.StartMenu_ChangeTeam_ListWidget.__defaultWidth = 200

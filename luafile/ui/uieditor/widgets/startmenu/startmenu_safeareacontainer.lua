@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/common/common_tabbar_center" )
 require( "ui/uieditor/widgets/common/commonheader" )
-require( "x64:bc6e2379d2241fb" )
-require( "x64:81a24c5340caa1e" )
+require( "ui/uieditor/widgets/common/commonidentitywidgetstreamlined" )
+require( "ui/uieditor/widgets/common/commontabbarbacking" )
 require( "ui/uieditor/widgets/header/header_container_frontend" )
 
 CoD.StartMenu_SafeAreaContainer = InheritFrom( LUI.UIElement )

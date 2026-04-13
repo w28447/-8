@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframe" )
-require( "x64:71d2a0ed724628e" )
-require( "x64:d57b004b57d33dd" )
+require( "ui/uieditor/widgets/common/commonidentitywidgetstreamlinedsafeareacontainer" )
+require( "ui/uieditor/widgets/mp/specialisthub/mpspecialisthubgesturesinternal" )
 
 CoD.MPSpecialistHUBGestures = InheritFrom( CoD.Menu )
 LUI.createMenu.MPSpecialistHUBGestures = function ( f1_arg0, f1_arg1 )

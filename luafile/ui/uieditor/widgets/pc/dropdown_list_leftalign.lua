@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/emptyfocusable" )
-require( "x64:70f1229dabae38" )
-require( "x64:baff2229992d7b6" )
-require( "x64:59648045a39f73a" )
+require( "ui/uieditor/widgets/pc/dropdown_listitem_leftalign" )
+require( "ui/uieditor/widgets/pc/PC_VScrollbar" )
+require( "ui/uieditor/widgets/pc/PC_VScrollList_List" )
 
 CoD.Dropdown_List_LeftAlign = InheritFrom( LUI.UIElement )
 CoD.Dropdown_List_LeftAlign.__defaultWidth = 364

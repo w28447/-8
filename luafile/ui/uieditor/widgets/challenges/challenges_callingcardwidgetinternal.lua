@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/cac/cac_lock" )
-require( "x64:3e426332d66c91e" )
+require( "ui/uieditor/widgets/common/commonfocusbrackets" )
 require( "ui/uieditor/widgets/director/directorselectbuttonlines" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsmainframe" )
 require( "x64:2d361ac3553c22a" )

@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframeidentity" )
-require( "x64:36fb83ae1c0a689" )
+require( "ui/uieditor/widgets/store/storecategorybutton" )
 require( "ui/uieditor/widgets/store/storerightpane" )
 require( "ui/uieditor/widgets/director/directorpregamebutton" )
 

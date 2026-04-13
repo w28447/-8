@@ -1,5 +1,5 @@
-require( "x64:4f2c3b37047aab0" )
-require( "x64:759d7e2ada50e5e" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_armyguy_arm" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_helicopter" )
 
 CoD[0x6D6AA0867968387] = InheritFrom( LUI.UIElement )
 CoD[0x6D6AA0867968387].__defaultWidth = 960

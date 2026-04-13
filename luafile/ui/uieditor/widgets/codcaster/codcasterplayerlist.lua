@@ -1,6 +1,6 @@
-require( "x64:33e1a0fa33f250e" )
-require( "x64:61746fdfad55210" )
-require( "x64:3cf319e54d85b71" )
+require( "ui/uieditor/widgets/codcaster/codcaster_playlist_infobg" )
+require( "ui/uieditor/widgets/codcaster/codcasternonteambasedplayerlistinternal" )
+require( "ui/uieditor/widgets/codcaster/codcasterplayerlistinternal" )
 
 CoD.CodCasterPlayerList = InheritFrom( LUI.UIElement )
 CoD.CodCasterPlayerList.__defaultWidth = 408

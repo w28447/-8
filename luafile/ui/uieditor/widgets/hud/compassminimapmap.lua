@@ -1,4 +1,4 @@
-require( "x64:259226575a01bf0" )
+require( "ui/uieditor/widgets/mphudwidgets/minimapfogofwar" )
 
 CoD.CompassMinimapMap = InheritFrom( LUI.UIElement )
 CoD.CompassMinimapMap.__defaultWidth = 192

@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/bumperbuttonwithkeymousetext" )
-require( "x64:9dc2d0c43534ce4" )
+require( "ui/uieditor/widgets/common/commontabbutton" )
 require( "ui/uieditor/widgets/tabbedwidgets/basictablist" )
 
 CoD.CommonTabBar = InheritFrom( LUI.UIElement )

@@ -1,8 +1,8 @@
 require( "ui/uieditor/widgets/vehiclehuds/buttons/vhud_generic_button_layout" )
 require( "ui/uieditor/widgets/vehiclehuds/ground/vehicleground_vignettecontainer" )
 require( "ui/uieditor/widgets/vehiclehuds/mothership/vhud_ms_iris" )
-require( "x64:8aedb8c71f568d4" )
-require( "x64:42a47e92dfaccef" )
+require( "ui/uieditor/widgets/vehiclehuds/mothership/vhud_ms_reticle" )
+require( "ui/uieditor/widgets/vehiclehuds/wasp/vhud_sentinel_outofrangelabels" )
 
 CoD.vhud_ms_Internal = InheritFrom( LUI.UIElement )
 CoD.vhud_ms_Internal.__defaultWidth = 1920

@@ -1,4 +1,4 @@
-require( "x64:3e426332d66c91e" )
+require( "ui/uieditor/widgets/common/commonfocusbrackets" )
 
 CoD.ZMItemSlotWide = InheritFrom( LUI.UIElement )
 CoD.ZMItemSlotWide.__defaultWidth = 300

@@ -1,4 +1,4 @@
-require( "x64:994b39b700bc4fe" )
+require( "ui/uieditor/widgets/scoreboard/wz/scoreboardmaprowheadings" )
 
 CoD.ScoreboardMapRowHeadingsContainer = InheritFrom( LUI.UIElement )
 CoD.ScoreboardMapRowHeadingsContainer.__defaultWidth = 40

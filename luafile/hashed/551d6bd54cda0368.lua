@@ -1,6 +1,6 @@
-require( "x64:68d2be12a9d6269" )
+require( "ui/uieditor/widgets/arena/LeaguePlayRuby" )
 require( "ui/uieditor/widgets/callingcards/callingcards_framewidget" )
-require( "x64:46728994d8c06c0" )
+require( "ui/uieditor/widgets/common/commondetailpanel02" )
 require( "x64:7e4e02d14f58fd3" )
 require( "x64:52c00340376bb87" )
 

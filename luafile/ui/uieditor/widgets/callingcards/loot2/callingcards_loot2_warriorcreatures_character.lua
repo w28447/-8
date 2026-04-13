@@ -1,5 +1,5 @@
-require( "x64:384afdd08f080ae" )
-require( "x64:cd4dbef75b3411f" )
+require( "ui/uieditor/widgets/callingcards/loot2/callingcards_loot2_warriorcreatures_hat" )
+require( "ui/uieditor/widgets/callingcards/loot2/callingcards_loot2_warriorcreatures_tail" )
 
 CoD.callingcards_loot2_warriorcreatures_character = InheritFrom( LUI.UIElement )
 CoD.callingcards_loot2_warriorcreatures_character.__defaultWidth = 639

@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/craft/emblemeditor/emblemeditorbuttonprompt" )
-require( "x64:c57e53135ec6f09" )
+require( "ui/uieditor/widgets/craft/paintshop/paintshopblendbuttonprompt" )
 require( "ui/uieditor/widgets/craft/paintshop/paintshopbuttonprompt" )
 require( "ui/uieditor/widgets/craft/paintshop/paintshopchooseside" )
 

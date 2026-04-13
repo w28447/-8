@@ -1,6 +1,6 @@
-require( "x64:c3028f94f53cf2e" )
-require( "x64:d2a12cc8ff589a9" )
-require( "x64:e0ca8a717281d46" )
+require( "ui/uieditor/widgets/vehiclehuds/compassgroupvehiclegps" )
+require( "ui/uieditor/widgets/vehiclehuds/genericvhudreticleoverlay" )
+require( "ui/uieditor/widgets/vehiclehuds/ground/vehicleground_abilitiesandammo" )
 
 CoD.VehicleHUD_GroundVehicle = InheritFrom( CoD.Menu )
 LUI.createMenu.VehicleHUD_GroundVehicle = function ( f1_arg0, f1_arg1 )

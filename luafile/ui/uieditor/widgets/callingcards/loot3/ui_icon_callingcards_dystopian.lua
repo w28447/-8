@@ -1,4 +1,4 @@
-require( "x64:2f2a70c58600680" )
+require( "ui/uieditor/widgets/callingcards/loot3/ui_icon_callingcards_dystopian_character" )
 
 CoD[0x720E7CB0E9CFA73] = InheritFrom( LUI.UIElement )
 CoD[0x720E7CB0E9CFA73].__defaultWidth = 960

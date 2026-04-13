@@ -1,5 +1,5 @@
-require( "x64:4e9bd79df2dd918" )
-require( "x64:c406e1f7d7b070f" )
+require( "ui/uieditor/widgets/hud/obituary/obituarycalloutcontainer" )
+require( "ui/uieditor/widgets/hud/obituary/obituarycalloutexpandedcontainer" )
 
 CoD.ObituaryCallout = InheritFrom( LUI.UIElement )
 CoD.ObituaryCallout.__defaultWidth = 280

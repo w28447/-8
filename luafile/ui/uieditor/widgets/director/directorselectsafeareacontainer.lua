@@ -1,5 +1,5 @@
-require( "x64:a5be31f9e599883" )
-require( "x64:3e338588f49ebed" )
+require( "ui/uieditor/widgets/director/directorfeaturedcarousel" )
+require( "ui/uieditor/widgets/director/directorpartylist" )
 require( "x64:a71173105d85c16" )
 
 CoD.DirectorSelectSafeAreaContainer = InheritFrom( LUI.UIElement )

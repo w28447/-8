@@ -1,6 +1,6 @@
 require( "x64:c036a164ffe44a7" )
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframeidentity" )
-require( "x64:86afde4aa6032c5" )
+require( "ui/uieditor/widgets/social/social_safeareacontainer" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsbackground" )
 
 CoD.Social_Main = InheritFrom( CoD.Menu )

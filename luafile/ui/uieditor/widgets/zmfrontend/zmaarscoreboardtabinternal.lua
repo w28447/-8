@@ -1,5 +1,5 @@
 require( "x64:1c6bd5c481bc2be" )
-require( "x64:1ff27ba8f489b41" )
+require( "ui/uieditor/widgets/zmfrontend/zmaargameinfo" )
 
 CoD.ZMAARScoreboardTabInternal = InheritFrom( LUI.UIElement )
 CoD.ZMAARScoreboardTabInternal.__defaultWidth = 1920

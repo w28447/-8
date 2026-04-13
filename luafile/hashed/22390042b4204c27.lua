@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframeidentity" )
-require( "x64:e7061dfbce6aa90" )
+require( "ui/uieditor/widgets/director/theater/directortheaterselectfile" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsbackground" )
 
 CoD.Theater_SelectFilm = InheritFrom( CoD.Menu )

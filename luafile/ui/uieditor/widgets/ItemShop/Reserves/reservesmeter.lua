@@ -1,4 +1,4 @@
-require( "x64:14861357805ac7b" )
+require( "ui/uieditor/widgets/itemshop/reserves/reservesmeterinternal" )
 
 CoD.ReservesMeter = InheritFrom( LUI.UIElement )
 CoD.ReservesMeter.__defaultWidth = 684

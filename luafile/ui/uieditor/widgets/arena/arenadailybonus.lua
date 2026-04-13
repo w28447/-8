@@ -1,4 +1,4 @@
-require( "x64:9f606d91eab9f64" )
+require( "ui/uieditor/widgets/arena/arenaeventtimer" )
 require( "ui/uieditor/widgets/common/commoncornerpips01" )
 
 CoD.ArenaDailyBonus = InheritFrom( LUI.UIElement )

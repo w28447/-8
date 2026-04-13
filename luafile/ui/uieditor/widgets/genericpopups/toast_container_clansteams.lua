@@ -1,6 +1,6 @@
-require( "x64:c136b2e24378a7" )
-require( "x64:1d8bce033cf1036" )
-require( "x64:e0a59bda074d3b" )
+require( "ui/uieditor/widgets/genericpopups/toast_container_clansteams_baking" )
+require( "ui/uieditor/widgets/genericpopups/toast_container_clansteams_checkmark" )
+require( "ui/uieditor/widgets/genericpopups/toast_container_texts" )
 require( "ui/uieditor/widgets/pc/utility/verticallistspacer" )
 
 CoD.Toast_Container_ClansTeams = InheritFrom( LUI.UIElement )

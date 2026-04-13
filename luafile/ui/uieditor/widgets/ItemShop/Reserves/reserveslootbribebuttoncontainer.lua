@@ -1,4 +1,4 @@
-require( "x64:269d1309407d42b" )
+require( "ui/uieditor/widgets/itemshop/reserves/reserveslootbribebutton" )
 
 CoD.ReservesLootBribeButtonContainer = InheritFrom( LUI.UIElement )
 CoD.ReservesLootBribeButtonContainer.__defaultWidth = 160

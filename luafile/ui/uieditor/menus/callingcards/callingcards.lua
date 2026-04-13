@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframeidentity" )
-require( "x64:b157ebcd8b4adcc" )
+require( "ui/uieditor/widgets/challenges/challenges_safeareawidget" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsbackground" )
 require( "x64:c7e896ee4bc3f8" )
 

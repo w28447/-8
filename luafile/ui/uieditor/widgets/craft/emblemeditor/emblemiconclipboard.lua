@@ -1,4 +1,4 @@
-require( "x64:ab8f7f2a4bde709" )
+require( "ui/uieditor/widgets/craft/craftlayercount" )
 require( "ui/uieditor/widgets/craft/paintshop/paintshopbuttonprompt" )
 require( "ui/uieditor/widgets/craft/paintshop/paintshopchooseside" )
 

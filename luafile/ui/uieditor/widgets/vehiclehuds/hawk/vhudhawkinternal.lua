@@ -1,5 +1,5 @@
-require( "x64:221a97cdde7b25d" )
-require( "x64:f027a1f1c4219b3" )
+require( "ui/uieditor/widgets/vehiclehuds/hawk/vhudhawkreticle" )
+require( "ui/uieditor/widgets/vehiclehuds/hawk/vhudhawkweaksignal" )
 require( "ui/uieditor/widgets/vehiclehuds/hellstorm/vhud_hellstorm_altwidget" )
 require( "ui/uieditor/widgets/vehiclehuds/hellstorm/vhud_hellstorm_speedwidget" )
 

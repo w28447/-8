@@ -1,4 +1,4 @@
-require( "x64:4a41f318bc01aae" )
+require( "ui/uieditor/widgets/codcaster/codcasterteamidentityinformationpanel" )
 require( "ui/uieditor/widgets/customgames/customgames_optioncategorybutton" )
 require( "x64:48be5c6feaceeb4" )
 require( "ui/uieditor/widgets/startmenu/options/flyout/startmenu_options_settingslider" )

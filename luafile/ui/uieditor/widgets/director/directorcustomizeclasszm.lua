@@ -1,10 +1,10 @@
-require( "x64:dadb11e1c159899" )
+require( "ui/uieditor/widgets/cac/loadoutclassitemzombie" )
 require( "ui/uieditor/widgets/cac/menuchooseclass/chooseclasslockedoverlay" )
 require( "x64:7046b0d9f3594f1" )
 require( "x64:d13dde082cbfc3a" )
 require( "x64:eddcb6b27ca1e41" )
 require( "x64:5dfd98ce8acdef7" )
-require( "x64:602298da419f4f" )
+require( "ui/uieditor/widgets/pc/zm/pc_equippedbgbcontainer" )
 
 CoD.DirectorCustomizeClassZM = InheritFrom( LUI.UIElement )
 CoD.DirectorCustomizeClassZM.__defaultWidth = 1920

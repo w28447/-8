@@ -1,4 +1,4 @@
-require( "x64:6f04ea11bdb2fba" )
+require( "ui/uieditor/widgets/hud/gameendscore/gameendscoregraphicframe" )
 require( "x64:666d2365354a2ea" )
 require( "x64:eacfc4f19b485e9" )
 

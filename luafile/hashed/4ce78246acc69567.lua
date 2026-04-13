@@ -1,4 +1,4 @@
-require( "x64:8ffe7c4e01e7052" )
+require( "ui/uieditor/widgets/cac/itemnewbreadcrumbwidget" )
 require( "x64:6c41982b9414c12" )
 
 CoD.ReticleSlot = InheritFrom( LUI.UIElement )

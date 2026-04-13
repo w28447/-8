@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/cac/cac_lock" )
-require( "x64:5f8cf56752aa71b" )
+require( "ui/uieditor/widgets/commonbuttonoutline" )
 require( "ui/uieditor/widgets/startmenu/startmenu_identity_subtitle" )
 require( "ui/uieditor/widgets/startmenu/startmenu_imagecontainer" )
 require( "ui/uieditor/widgets/store/storecommontextbacking" )

@@ -1,4 +1,4 @@
-require( "x64:9229932a76dab57" )
+require( "ui/uieditor/widgets/challenges/challengessummarycategory_internal" )
 
 CoD.ChallengesSummaryCategory = InheritFrom( LUI.UIElement )
 CoD.ChallengesSummaryCategory.__defaultWidth = 200

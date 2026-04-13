@@ -1,4 +1,4 @@
-require( "x64:a7a13e373e49761" )
+require( "ui/uieditor/widgets/healthbarwidget" )
 
 CoD.RadiationBlastHealthBar = InheritFrom( LUI.UIElement )
 CoD.RadiationBlastHealthBar.__defaultWidth = 142

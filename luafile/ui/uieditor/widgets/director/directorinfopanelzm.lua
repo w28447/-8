@@ -1,4 +1,4 @@
-require( "x64:339865a646f0160" )
+require( "ui/uieditor/widgets/zmfrontend/directorinfopanelbgzm" )
 require( "ui/uieditor/widgets/zmfrontend/zmtrialmedal" )
 
 CoD.DirectorInfoPanelZM = InheritFrom( LUI.UIElement )

@@ -1,6 +1,6 @@
-require( "x64:488c89835c36151" )
-require( "x64:170894c2be18f57" )
-require( "x64:7e1697b8a432349" )
+require( "ui/uieditor/widgets/zmhudwidgets/gameover/zm_hud_gameover_titlesequence" )
+require( "ui/uieditor/widgets/zmhudwidgets/rush/rush_gameover_scoreboard" )
+require( "ui/uieditor/widgets/zmhudwidgets/zm_restart_level_prompt" )
 
 CoD.zm_game_over = InheritFrom( CoD.Menu )
 CoD.zm_game_over.__stateMap = {

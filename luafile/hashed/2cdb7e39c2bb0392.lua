@@ -1,6 +1,6 @@
 require( "x64:a0123492fc86d33" )
-require( "x64:c2f9487384df3fe" )
-require( "x64:2614187a845d0b9" )
+require( "ui/uieditor/widgets/hud/gameendscore_wz/gameendscore_headerbarmid" )
+require( "ui/uieditor/widgets/hud/gameendscore_wz/gameendscore_headerbartip" )
 
 CoD.MeritOverlayManualHeader = InheritFrom( LUI.UIElement )
 CoD.MeritOverlayManualHeader.__defaultWidth = 1920

@@ -1,5 +1,5 @@
-require( "x64:3ff924af57d228a" )
-require( "x64:fd7d47c64b87ee4" )
+require( "ui/uieditor/widgets/pc/pc_achievement_completedtick" )
+require( "ui/uieditor/widgets/pc/pc_achievementdetailedview_points_bg" )
 require( "ui/uieditor/widgets/pc/utility/verticallistspacer" )
 
 CoD.PC_AchievementDetailedView_Points = InheritFrom( LUI.UIElement )

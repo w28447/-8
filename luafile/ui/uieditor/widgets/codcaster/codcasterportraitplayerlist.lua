@@ -1,5 +1,5 @@
-require( "x64:9d50734163c68d" )
-require( "x64:9d4d734163c174" )
+require( "ui/uieditor/widgets/codcaster/codcaster_player_portraittop_team1" )
+require( "ui/uieditor/widgets/codcaster/codcaster_player_portraittop_team2" )
 
 CoD.CodCasterPortraitPlayerList = InheritFrom( LUI.UIElement )
 CoD.CodCasterPortraitPlayerList.__defaultWidth = 1920

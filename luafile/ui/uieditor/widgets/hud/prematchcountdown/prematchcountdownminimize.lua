@@ -1,7 +1,7 @@
-require( "x64:3317d177bae2759" )
+require( "ui/uieditor/widgets/hud/prematchcountdown/prematchcountdown_2xpnotification" )
 require( "ui/uieditor/widgets/hud/prematchcountdown/prematchcountdown_beginsin" )
-require( "x64:59770670213dba2" )
-require( "x64:83184da3fe634f1" )
+require( "ui/uieditor/widgets/hud/prematchcountdown/prematchcountdown_numbers" )
+require( "ui/uieditor/widgets/hud/prematchcountdown/prematchcountdown_numberssmall" )
 
 CoD.PrematchCountdownMinimize = InheritFrom( LUI.UIElement )
 CoD.PrematchCountdownMinimize.__defaultWidth = 1920

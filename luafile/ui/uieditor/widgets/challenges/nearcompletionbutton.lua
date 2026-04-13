@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/cac/cac_lock" )
-require( "x64:af90a79c38908dd" )
-require( "x64:5f8cf56752aa71b" )
+require( "ui/uieditor/widgets/challenges/challenges_nearcompletion_croppedimage" )
+require( "ui/uieditor/widgets/commonbuttonoutline" )
 
 CoD.NearCompletionButton = InheritFrom( LUI.UIElement )
 CoD.NearCompletionButton.__defaultWidth = 1100

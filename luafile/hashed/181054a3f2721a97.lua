@@ -1,4 +1,4 @@
-require( "x64:24adaf674659a70" )
+require( "ui/uieditor/widgets/itemshop/contracts/contractactivebannerbacker" )
 
 CoD.WeaponBribeOwned = InheritFrom( LUI.UIElement )
 CoD.WeaponBribeOwned.__defaultWidth = 150

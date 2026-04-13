@@ -1,5 +1,5 @@
-require( "x64:8dff6ee9505174e" )
-require( "x64:6d4a92d6b62925f" )
+require( "ui/uieditor/widgets/vehiclehuds/vhud_layoutdotline" )
+require( "ui/uieditor/widgets/vehiclehuds/vhud_layoutdotlinever" )
 
 CoD.vhud_layoutDotlineGrid = InheritFrom( LUI.UIElement )
 CoD.vhud_layoutDotlineGrid.__defaultWidth = 1920

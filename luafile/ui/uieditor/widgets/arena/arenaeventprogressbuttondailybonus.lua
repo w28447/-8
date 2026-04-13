@@ -1,5 +1,5 @@
-require( "x64:bceefc58a6d5969" )
-require( "x64:c61bd4bc39f552b" )
+require( "ui/uieditor/widgets/arena/arenadailybonuslabel" )
+require( "ui/uieditor/widgets/arena/arenaeventtimersmall" )
 
 CoD.ArenaEventProgressButtonDailyBonus = InheritFrom( LUI.UIElement )
 CoD.ArenaEventProgressButtonDailyBonus.__defaultWidth = 144

@@ -5,7 +5,7 @@ require( "ui/uieditor/widgets/cac/weaponattributes" )
 require( "ui/uieditor/widgets/common/commonheader" )
 require( "ui/uieditor/widgets/footer/footercontainer_frontend_right" )
 require( "ui/uieditor/widgets/header/header_container_frontend" )
-require( "x64:ba5fa76d22ca8fe" )
+require( "ui/uieditor/widgets/zmfrontend/armory/armory_weaponlistwidget" )
 require( "x64:6ee653ade3452f5" )
 require( "ui/uieditor/widgets/pc/utility/xcammousecontrol" )
 

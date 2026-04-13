@@ -1,11 +1,11 @@
-require( "x64:12322cb4555c55d" )
+require( "ui/uieditor/widgets/codcaster/codcasterloadoutselectionheal" )
 require( "x64:9d92dce1e4291ce" )
 require( "x64:33ec8b4b2fb3c47" )
 require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_equipmentempty" )
-require( "x64:7175f021a6edb5" )
-require( "x64:2e88ac782aef92c" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_powerbasedcount" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidgetequipmenttext" )
 require( "x64:24b789df27433d6" )
-require( "x64:2485f9df271d384" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidgetmp_ability_flash" )
 
 CoD.AmmoWidgetMP_AbilityItem = InheritFrom( LUI.UIElement )
 CoD.AmmoWidgetMP_AbilityItem.__defaultWidth = 72

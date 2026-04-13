@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/common/commonheader" )
-require( "x64:22e8e07934d5342" )
-require( "x64:777135ab21d4ef5" )
+require( "ui/uieditor/widgets/director/directormatchmakingtimer" )
+require( "ui/uieditor/widgets/notifications/publiclobbystagenotification/stagenotificationpositioncontainer" )
 
 CoD.StageNotificationContainer = InheritFrom( LUI.UIElement )
 CoD.StageNotificationContainer.__defaultWidth = 1920

@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/cac/cacwildcardselectionanimcontainer" )
-require( "x64:2090633bd0ef906" )
+require( "ui/uieditor/widgets/cac/loadoutclassitemcontainer" )
 require( "ui/uieditor/widgets/cac/menuchooseclass/categoryheader" )
-require( "x64:c39acda87d5a335" )
+require( "ui/uieditor/widgets/cacwildcardselectionanimationprimary" )
 
 CoD.LoadoutClassItem = InheritFrom( LUI.UIElement )
 CoD.LoadoutClassItem.__defaultWidth = 356

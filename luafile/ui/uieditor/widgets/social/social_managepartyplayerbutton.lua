@@ -1,6 +1,6 @@
 require( "ui/uieditor/menus/social/social_inviteplayerspopup" )
 require( "ui/uieditor/widgets/director/directorbuttonadd" )
-require( "x64:157a3ec5bc59303" )
+require( "ui/uieditor/widgets/social/social_managepartyplayerbuttoninternal" )
 require( "ui/uieditor/menus/social/social_playerdetailspopup" )
 
 CoD.Social_ManagePartyPlayerButton = InheritFrom( LUI.UIElement )

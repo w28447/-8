@@ -1,4 +1,4 @@
-require( "x64:2f48341d0fd505e" )
+require( "ui/uieditor/widgets/vehiclehuds/hawk/vhudhawkinternal" )
 
 CoD.VHUDHawk = InheritFrom( CoD.Menu )
 LUI.createMenu.VHUDHawk = function ( f1_arg0, f1_arg1 )

@@ -1,4 +1,4 @@
-require( "x64:351793fe51beaa2" )
+require( "ui/uieditor/widgets/warzone/warzoneinventorymenuitemsmall" )
 require( "x64:bf776923c7291f4" )
 
 CoD.StartMenu_InventoryList = InheritFrom( LUI.UIElement )

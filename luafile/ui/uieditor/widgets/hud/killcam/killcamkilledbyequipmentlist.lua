@@ -1,4 +1,4 @@
-require( "x64:12998a17a57f686" )
+require( "ui/uieditor/widgets/hud/killcam/killcamkilledbyequipmentitem" )
 
 CoD.KillcamKilledByEquipmentList = InheritFrom( LUI.UIElement )
 CoD.KillcamKilledByEquipmentList.__defaultWidth = 495

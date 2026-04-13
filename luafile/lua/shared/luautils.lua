@@ -1,8 +1,8 @@
 require( "lua/shared/luareadonlytables" )
 require( "lua/shared/lobbydata" )
 require( "lua/shared/codshared" )
-require( "x64:85d6d26960f9bae" )
-require( "x64:75e553bec904d39" )
+require( "lua/shared/codloadoutsshared" )
+require( "lua/shared/codlootshared" )
 
 local f0_local0 = {}
 local f0_local1 = {}

@@ -1,9 +1,9 @@
 require( "ui/uieditor/widgets/hud/ingametalkerswidget" )
-require( "x64:50ce70a16679544" )
+require( "ui/uieditor/widgets/hud/map/compassgroupmpcontainer" )
 require( "ui/uieditor/widgets/hud/mp_voipwidget/voip_container" )
-require( "x64:74345ba46470062" )
-require( "x64:79177e5d8aa2dec" )
-require( "x64:47d0c77afa59c3a" )
+require( "ui/uieditor/widgets/hud/mp_voipwidget/voip_container_enemiesonly" )
+require( "ui/uieditor/widgets/warzone/warzonegamestatusindicatordisplay" )
+require( "ui/uieditor/widgets/warzone/warzonekills" )
 require( "x64:3824c4d8575c0b5" )
 
 CoD.Hud_WZ_SafeAreaContainer_Front = InheritFrom( LUI.UIElement )

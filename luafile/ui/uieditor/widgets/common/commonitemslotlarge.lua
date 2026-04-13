@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/cac/customizeclassadd" )
 require( "ui/uieditor/widgets/cac/menuchooseclass/itemwidgets/itemhinttext" )
 require( "ui/uieditor/widgets/cac/restricteditemwarning" )
-require( "x64:3e426332d66c91e" )
+require( "ui/uieditor/widgets/common/commonfocusbrackets" )
 require( "ui/uieditor/widgets/director/directorselectbuttonlines" )
 require( "ui/uieditor/widgets/onofftextimagebacking" )
 

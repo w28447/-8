@@ -1,6 +1,6 @@
-require( "x64:d212aaef11b3b80" )
+require( "ui/uieditor/widgets/endgameflow/killcamkillcount" )
 require( "x64:733a92eae7bba93" )
-require( "x64:f1259b8b773d765" )
+require( "ui/uieditor/widgets/notifications/playercard/playercardmenu" )
 
 CoD.AttackerVictimInfoBar = InheritFrom( LUI.UIElement )
 CoD.AttackerVictimInfoBar.__defaultWidth = 1920

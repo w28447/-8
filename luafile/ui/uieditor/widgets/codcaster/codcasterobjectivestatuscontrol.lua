@@ -1,4 +1,4 @@
-require( "x64:bbbdf370351d3bc" )
+require( "ui/uieditor/widgets/codcaster/codcasterobjectivestatuscontrolsite" )
 
 CoD.CodCasterObjectiveStatusControl = InheritFrom( LUI.UIElement )
 CoD.CodCasterObjectiveStatusControl.__defaultWidth = 412

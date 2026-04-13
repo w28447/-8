@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/hud/obituary/obituaryblurbacking" )
-require( "x64:76cc25e6b842a01" )
+require( "ui/uieditor/widgets/warzone/warzoneusetimer" )
 
 CoD.revive_hud = InheritFrom( CoD.Menu )
 LUI.createMenu.revive_hud = function ( f1_arg0, f1_arg1 )

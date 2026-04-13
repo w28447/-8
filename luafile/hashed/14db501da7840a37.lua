@@ -1,4 +1,4 @@
-require( "x64:52a3feb9a90b658" )
+require( "ui/uieditor/widgets/cac/customclasslistbuttoningame" )
 
 CoD.PC_HUD_FastLoadoutContainer_TinyLoadoutList = InheritFrom( LUI.UIElement )
 CoD.PC_HUD_FastLoadoutContainer_TinyLoadoutList.__defaultWidth = 380

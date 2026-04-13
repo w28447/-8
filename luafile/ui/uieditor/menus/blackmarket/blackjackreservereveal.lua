@@ -1,9 +1,9 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframeidentity" )
-require( "x64:2d64ca9d3c705ce" )
-require( "x64:de4c66b722f8d67" )
+require( "ui/uieditor/widgets/common/commoncornerbrackets01" )
+require( "ui/uieditor/widgets/itemshop/reserves/reservesreroll" )
 require( "ui/uieditor/widgets/itemshop/reserves/reservesrevealitem" )
-require( "x64:28b39fa069d1324" )
-require( "x64:43a18b0c952dcc0" )
+require( "ui/uieditor/widgets/itemshop/reserves/reservesskiprevealpromptcontainer" )
+require( "ui/uieditor/widgets/itemshop/supplychain/dupemeter" )
 
 CoD.BlackjackReserveReveal = InheritFrom( CoD.Menu )
 LUI.createMenu.BlackjackReserveReveal = function ( f1_arg0, f1_arg1 )

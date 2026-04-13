@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframe" )
-require( "x64:de039829a2f4ec4" )
+require( "ui/uieditor/widgets/craft/emblemeditor/emblemsafeareacontainer" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsbackground" )
 
 CoD.EmblemChooseIcon = InheritFrom( CoD.Menu )

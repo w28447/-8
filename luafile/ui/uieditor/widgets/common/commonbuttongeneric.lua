@@ -1,4 +1,4 @@
-require( "x64:c654dd6298985af" )
+require( "ui/uieditor/widgets/common/commonbuttongenericinternal" )
 
 CoD.CommonButtonGeneric = InheritFrom( LUI.UIElement )
 CoD.CommonButtonGeneric.__defaultWidth = 300

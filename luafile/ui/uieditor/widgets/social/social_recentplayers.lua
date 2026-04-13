@@ -1,6 +1,6 @@
 require( "ui/uieditor/menus/social/social_playerdetailspopup" )
 require( "ui/uieditor/widgets/scrollbars/verticalcounter" )
-require( "x64:53e6f1dc36a47c8" )
+require( "ui/uieditor/widgets/social/social_emptyframe" )
 require( "ui/uieditor/widgets/social/social_infopane" )
 require( "ui/uieditor/widgets/social/social_nofriends" )
 require( "ui/uieditor/widgets/social/social_playerslistbutton" )

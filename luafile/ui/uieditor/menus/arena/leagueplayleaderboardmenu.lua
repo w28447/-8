@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframe" )
 require( "ui/uieditor/widgets/common/common_tabbar_center" )
-require( "x64:9dc2d0c43534ce4" )
+require( "ui/uieditor/widgets/common/commontabbutton" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsbackground" )
 
 CoD.LeaguePlayLeaderboardMenu = InheritFrom( CoD.Menu )

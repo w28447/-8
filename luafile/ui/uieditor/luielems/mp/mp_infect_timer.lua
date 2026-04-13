@@ -1,4 +1,4 @@
-require( "x64:330e1ef77701a18" )
+require( "ui/uieditor/widgets/common/radialtimer" )
 
 CoD.mp_infect_timer = InheritFrom( CoD.Menu )
 LUI.createMenu.mp_infect_timer = function ( f1_arg0, f1_arg1 )

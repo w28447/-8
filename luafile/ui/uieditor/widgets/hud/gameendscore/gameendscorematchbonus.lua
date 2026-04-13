@@ -1,4 +1,4 @@
-require( "x64:f5a6fba96d34893" )
+require( "ui/uieditor/widgets/hud/gameendscore/gameendscorematchbonustitle" )
 require( "ui/uieditor/widgets/notifications/notificationqueuewidgets/notificationrewardqueuewidgets/notification2xpreward" )
 
 CoD.GameEndScoreMatchBonus = InheritFrom( LUI.UIElement )

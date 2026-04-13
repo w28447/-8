@@ -1,5 +1,5 @@
-require( "x64:e99196b904ad18" )
-require( "x64:4c9a492524a6a24" )
+require( "ui/uieditor/widgets/codcaster/codcastersettingfooter" )
+require( "ui/uieditor/widgets/codcaster/codcastersettingssidebarleftbuttoncontainer" )
 require( "ui/uieditor/widgets/header/header_container_frontend" )
 require( "x64:48be5c6feaceeb4" )
 require( "ui/uieditor/widgets/startmenu/options/flyout/startmenu_options_settingslider" )

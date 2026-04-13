@@ -1,8 +1,8 @@
 require( "x64:8d52912a320cd2e" )
-require( "x64:e01da863e7cc28f" )
+require( "ui/uieditor/widgets/health/healthinfo" )
 require( "x64:9690c6fa0e7be3f" )
-require( "x64:8e954fb331b89f8" )
-require( "x64:203538cb29e5bca" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_prompt" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_specialistescalation" )
 require( "x64:8d447a0d3920f3e" )
 
 CoD.PlayerWidget = InheritFrom( LUI.UIElement )

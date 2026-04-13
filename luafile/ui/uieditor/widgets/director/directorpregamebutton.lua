@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/cac/newbreadcrumb" )
 require( "x64:bb65ae797e77e7b" )
-require( "x64:1f846296f1a1b81" )
+require( "ui/uieditor/widgets/director/DirectorSelectButtonMiniInternal" )
 
 CoD.DirectorPreGameButton = InheritFrom( LUI.UIElement )
 CoD.DirectorPreGameButton.__defaultWidth = 230

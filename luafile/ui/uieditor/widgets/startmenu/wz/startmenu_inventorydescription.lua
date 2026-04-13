@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/common/commondetailpanel" )
-require( "x64:6b6b417224e88ee" )
-require( "x64:478f2bd71f935fd" )
-require( "x64:6812bcd114f374e" )
+require( "ui/uieditor/widgets/startmenu/wz/startmenu_inventorydescription_internal" )
+require( "ui/uieditor/widgets/warzone/warzoneinventorycounter" )
+require( "ui/uieditor/widgets/warzone/warzoneinventoryunlockmissionobjective" )
 
 CoD.StartMenu_InventoryDescription = InheritFrom( LUI.UIElement )
 CoD.StartMenu_InventoryDescription.__defaultWidth = 303

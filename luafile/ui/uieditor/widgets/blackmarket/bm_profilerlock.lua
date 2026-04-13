@@ -1,5 +1,5 @@
-require( "x64:94acc3cb318e13b" )
-require( "x64:8361a8d6fe55653" )
+require( "ui/uieditor/widgets/blackmarket/bm_lock" )
+require( "ui/uieditor/widgets/challenges/challenges_profilerlockbacking" )
 
 CoD.BM_ProfilerLock = InheritFrom( LUI.UIElement )
 CoD.BM_ProfilerLock.__defaultWidth = 52

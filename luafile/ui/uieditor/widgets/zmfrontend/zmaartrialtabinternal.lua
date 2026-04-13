@@ -1,7 +1,7 @@
-require( "x64:1ff27ba8f489b41" )
-require( "x64:5f956420e83938" )
-require( "x64:91ac5934d0654c2" )
-require( "x64:e181f9ba51cb7e8" )
+require( "ui/uieditor/widgets/zmfrontend/zmaargameinfo" )
+require( "ui/uieditor/widgets/zmfrontend/zmaartrialtabroundlist" )
+require( "ui/uieditor/widgets/zmfrontend/zmaartrialtabroundstat" )
+require( "ui/uieditor/widgets/zmfrontend/zmaartrialtime" )
 
 CoD.ZMAARTrialTabInternal = InheritFrom( LUI.UIElement )
 CoD.ZMAARTrialTabInternal.__defaultWidth = 1920

@@ -1,5 +1,5 @@
-require( "x64:be37b1a86741023" )
-require( "x64:8b667e4e3087d0a" )
+require( "ui/uieditor/widgets/codcaster/codcasterloadoutattachmentsbackground" )
+require( "ui/uieditor/widgets/codcaster/codcasterloadoutsecondaryattachment" )
 
 CoD.CodCasterLoadoutModuleSecondaryAttachment = InheritFrom( LUI.UIElement )
 CoD.CodCasterLoadoutModuleSecondaryAttachment.__defaultWidth = 110

@@ -1,4 +1,4 @@
-require( "x64:78c9be6c9bba008" )
+require( "ui/uieditor/widgets/zmfrontend/zmloadoutpreviewindexitem" )
 
 CoD.ZMLoadoutPreviewLobbyClient = InheritFrom( LUI.UIElement )
 CoD.ZMLoadoutPreviewLobbyClient.__defaultWidth = 272

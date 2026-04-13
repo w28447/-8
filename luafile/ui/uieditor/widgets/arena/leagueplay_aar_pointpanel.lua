@@ -1,6 +1,6 @@
-require( "x64:fe1159ce8fa444b" )
+require( "ui/uieditor/widgets/aar_t8/arena/aarladderpoints" )
 require( "ui/uieditor/widgets/lobby/common/layoutelements/commonsearchingbar" )
-require( "x64:564ca313abeb19a" )
+require( "ui/uieditor/widgets/tablet/tak5/tabletconnectionarrow" )
 
 CoD.LeaguePlay_AAR_PointPanel = InheritFrom( LUI.UIElement )
 CoD.LeaguePlay_AAR_PointPanel.__defaultWidth = 400

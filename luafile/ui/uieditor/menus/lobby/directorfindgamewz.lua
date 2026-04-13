@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/common/common_tabbar_center" )
 require( "ui/uieditor/widgets/common/commonheader" )
-require( "x64:d13d1dd926408a1" )
-require( "x64:d6084d285dc1ae8" )
+require( "ui/uieditor/widgets/director/directorfindgameplaylistinfomp" )
+require( "ui/uieditor/widgets/director/directorplaylistoption" )
 require( "ui/uieditor/widgets/footer/footercontainer_frontend_right" )
 require( "ui/uieditor/widgets/header/header_container_frontend" )
 

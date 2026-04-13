@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframe" )
 require( "ui/uieditor/widgets/common/common_tabbar_center" )
-require( "x64:71d2a0ed724628e" )
-require( "x64:329a92dee2ea1ff" )
+require( "ui/uieditor/widgets/common/commonidentitywidgetstreamlinedsafeareacontainer" )
+require( "ui/uieditor/widgets/medals/medalstabinternal" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsbackground" )
 
 CoD.Barracks_Medals = InheritFrom( CoD.Menu )

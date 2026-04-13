@@ -1,4 +1,4 @@
-require( "x64:a88f2d181325438" )
+require( "ui/uieditor/widgets/notifications/xp/tierboostambientglow" )
 
 CoD.ZMDailyCallingsTierSkipNotification = InheritFrom( LUI.UIElement )
 CoD.ZMDailyCallingsTierSkipNotification.__defaultWidth = 190

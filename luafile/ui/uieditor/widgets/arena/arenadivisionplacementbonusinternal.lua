@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/aar_t8/levelup/aarlevelupoverlay_cornerbracketinternal" )
 require( "ui/uieditor/widgets/aar_t8/rewards/aarplayerreward_diagonalheaderinternal" )
-require( "x64:a37f8d81f1bf774" )
+require( "ui/uieditor/widgets/competitive/competitive_ladderscore" )
 
 CoD.ArenaDivisionPlacementBonusInternal = InheritFrom( LUI.UIElement )
 CoD.ArenaDivisionPlacementBonusInternal.__defaultWidth = 700

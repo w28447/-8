@@ -1,4 +1,4 @@
-require( "x64:12b4bc8b9d0b461" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_cleantacoscounttext" )
 
 CoD.AmmoWidget_CleanTacos = InheritFrom( LUI.UIElement )
 CoD.AmmoWidget_CleanTacos.__defaultWidth = 105

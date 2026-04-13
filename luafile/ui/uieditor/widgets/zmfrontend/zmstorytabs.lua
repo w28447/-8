@@ -1,5 +1,5 @@
-require( "x64:36eac97d208251e" )
-require( "x64:194a3c2b978e81" )
+require( "ui/uieditor/widgets/cac/zmstorylistbutton" )
+require( "ui/uieditor/widgets/common/commonsecondarytabbar" )
 
 CoD.ZMStoryTabs = InheritFrom( LUI.UIElement )
 CoD.ZMStoryTabs.__defaultWidth = 1920

@@ -1,8 +1,8 @@
 require( "ui/uieditor/widgets/callingcards/callingcards_framewidget" )
 require( "x64:9887a95b9f9e7a4" )
-require( "x64:3e426332d66c91e" )
-require( "x64:9d7456f2e3445f3" )
-require( "x64:c28e38743b4ef50" )
+require( "ui/uieditor/widgets/common/commonfocusbrackets" )
+require( "ui/uieditor/widgets/director/directoexpandedlobbymember_trial" )
+require( "ui/uieditor/widgets/director/directorlobbymemberclanname" )
 require( "x64:88882bece551bf0" )
 require( "ui/uieditor/widgets/onoffvoip" )
 

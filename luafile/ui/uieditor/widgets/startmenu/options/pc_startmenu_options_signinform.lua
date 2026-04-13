@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/common/commondetailpanel" )
-require( "x64:aaa2f6ba4984209" )
-require( "x64:110e986e11c842b" )
+require( "ui/uieditor/widgets/pc/pc_codaccount_editableoption" )
+require( "ui/uieditor/widgets/startmenu/startmenu_options_buttonaction" )
 require( "ui/uieditor/widgets/startmenu/startmenu_options_simplecheckoption" )
 
 CoD.PC_StartMenu_Options_SignInForm = InheritFrom( LUI.UIElement )

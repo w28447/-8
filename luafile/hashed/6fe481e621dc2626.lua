@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/common/commoncornerpips01" )
 require( "x64:410513393f3b18c" )
-require( "x64:f027dcc6409e42c" )
+require( "ui/uieditor/widgets/pc/pc_motd_buttons" )
 
 CoD.BOPassPopup = InheritFrom( CoD.Menu )
 LUI.createMenu.BOPassPopup = function ( f1_arg0, f1_arg1 )

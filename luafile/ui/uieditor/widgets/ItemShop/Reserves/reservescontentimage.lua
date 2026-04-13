@@ -1,4 +1,4 @@
-require( "x64:2beee84909edb17" )
+require( "ui/uieditor/widgets/blackmarket/reserves/bm_reserves_charm" )
 
 CoD.ReservesContentImage = InheritFrom( LUI.UIElement )
 CoD.ReservesContentImage.__defaultWidth = 292

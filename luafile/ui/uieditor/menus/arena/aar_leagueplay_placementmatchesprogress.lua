@@ -1,5 +1,5 @@
-require( "x64:1e4812bc9d39ec5" )
-require( "x64:aad8c6cb8c21870" )
+require( "ui/uieditor/widgets/arena/arenaleagueplaybg" )
+require( "ui/uieditor/widgets/arena/arenaskillevaluationwidget" )
 require( "ui/uieditor/widgets/footer/footercontainer_frontend_right" )
 require( "ui/uieditor/widgets/systemoverlays/featureoverlay_button_mouseonly" )
 

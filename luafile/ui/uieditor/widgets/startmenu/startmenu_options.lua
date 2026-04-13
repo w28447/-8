@@ -1,12 +1,12 @@
 require( "ui/uieditor/menus/startmenu/popups/startmenu_options_codaccount_cta" )
 require( "ui/uieditor/menus/startmenu/popups/startmenu_options_codaccount_manageaccount" )
-require( "x64:73ff064d16a0105" )
-require( "x64:a1e3458734c429b" )
+require( "ui/uieditor/menus/startmenu/popups/startmenu_options_privacysettings" )
+require( "ui/uieditor/menus/startmenu/startmenu_options_main" )
 require( "x64:e6df4068375d284" )
-require( "x64:750f2874ca1277f" )
-require( "x64:c46d9902ea5afaf" )
+require( "ui/uieditor/widgets/startmenu/options/startmenu_options_codaccountbutton" )
+require( "ui/uieditor/widgets/startmenu/options/startmenu_options_privacysettingsbutton" )
 require( "ui/uieditor/widgets/startmenu/startmenu_button_sm" )
-require( "x64:29205f7f485f09d" )
+require( "ui/uieditor/widgets/startmenu/startmenu_quitbuttonfitted" )
 
 CoD.StartMenu_Options = InheritFrom( LUI.UIElement )
 CoD.StartMenu_Options.__defaultWidth = 1920

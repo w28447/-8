@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/footer/footercontainer_frontend_right" )
-require( "x64:a79adf0dbc1a1b6" )
-require( "x64:71c4c59d812255d" )
+require( "ui/uieditor/widgets/lobby/common/safeareacontainer_lobbyserverbrwoseroverlay" )
+require( "ui/uieditor/widgets/lobby/lists/localserverrowlist" )
 require( "ui/uieditor/widgets/scoreboard/tabbedscoreboardfuibox" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsbackground" )
 

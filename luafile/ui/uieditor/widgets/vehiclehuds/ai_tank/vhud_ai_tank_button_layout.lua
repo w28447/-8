@@ -1,4 +1,4 @@
-require( "x64:33abf882f693ea5" )
+require( "ui/uieditor/widgets/vehiclehuds/buttons/vhud_generic_gamepad_layout" )
 require( "ui/uieditor/widgets/vehiclehuds/buttons/vhud_generic_key_mouse_layout" )
 
 CoD.vhud_ai_tank_button_layout = InheritFrom( LUI.UIElement )

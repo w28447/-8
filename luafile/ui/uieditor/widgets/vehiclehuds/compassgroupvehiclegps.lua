@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/hud/compassminimapitems" )
-require( "x64:12bbcf811bbabdb" )
+require( "ui/uieditor/widgets/hud/compassminimapmap" )
 require( "ui/uieditor/widgets/hud/compassminimapoverlay" )
-require( "x64:ab6874427430d62" )
+require( "ui/uieditor/widgets/hud/map/compassgroupmpsmoke" )
 
 CoD.CompassGroupVehicleGPS = InheritFrom( LUI.UIElement )
 CoD.CompassGroupVehicleGPS.__defaultWidth = 270

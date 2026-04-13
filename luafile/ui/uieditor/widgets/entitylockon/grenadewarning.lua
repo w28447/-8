@@ -1,4 +1,4 @@
-require( "x64:9d631a7a85e5f82" )
+require( "ui/uieditor/widgets/entitylockon/grenadewarning_internal" )
 
 CoD.grenadeWarning = InheritFrom( LUI.UIElement )
 CoD.grenadeWarning.__defaultWidth = 130

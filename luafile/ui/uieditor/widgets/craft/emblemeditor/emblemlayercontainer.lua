@@ -1,6 +1,6 @@
-require( "x64:23ec83930548e6" )
-require( "x64:f3b993973c005c8" )
-require( "x64:13281f25b927039" )
+require( "ui/uieditor/widgets/craft/emblemeditor/emblemlayer" )
+require( "ui/uieditor/widgets/craft/emblemeditor/emblemlayerarrows" )
+require( "ui/uieditor/widgets/craft/emblemeditor/emblemlayerpositionwidget" )
 
 CoD.EmblemLayerContainer = InheritFrom( LUI.UIElement )
 CoD.EmblemLayerContainer.__defaultWidth = 172

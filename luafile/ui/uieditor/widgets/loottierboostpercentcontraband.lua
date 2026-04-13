@@ -1,4 +1,4 @@
-require( "x64:6735e84e8dd1117" )
+require( "ui/uieditor/widgets/itemshop/contracts/contractseasonalpromobacker" )
 
 CoD.LootTierBoostPercentContraband = InheritFrom( LUI.UIElement )
 CoD.LootTierBoostPercentContraband.__defaultWidth = 135

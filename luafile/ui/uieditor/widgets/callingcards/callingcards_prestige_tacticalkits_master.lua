@@ -1,4 +1,4 @@
-require( "x64:e554beb9f6a35a2" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_mech" )
 
 CoD[0xAE531861B4F05FA] = InheritFrom( LUI.UIElement )
 CoD[0xAE531861B4F05FA].__defaultWidth = 960

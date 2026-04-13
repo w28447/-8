@@ -1,4 +1,4 @@
-require( "x64:e9c0321bb7002d6" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_powerbasedcountpip" )
 
 CoD.AmmoWidget_PowerBasedCount = InheritFrom( LUI.UIElement )
 CoD.AmmoWidget_PowerBasedCount.__defaultWidth = 64

@@ -1,4 +1,4 @@
-require( "x64:d24e4a6046a91b2" )
+require( "ui/uieditor/widgets/vehiclehuds/mothership/vhud_ms_timebar" )
 
 CoD.vhud_hcxd_timebar = InheritFrom( LUI.UIElement )
 CoD.vhud_hcxd_timebar.__defaultWidth = 328

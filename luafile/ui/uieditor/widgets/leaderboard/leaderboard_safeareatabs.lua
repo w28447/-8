@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/common/common_tabbar_center" )
-require( "x64:81a24c5340caa1e" )
+require( "ui/uieditor/widgets/common/commontabbarbacking" )
 
 CoD.Leaderboard_SafeAreaTabs = InheritFrom( LUI.UIElement )
 CoD.Leaderboard_SafeAreaTabs.__defaultWidth = 1920

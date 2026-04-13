@@ -1,10 +1,10 @@
 require( "x64:6bffb9001264254" )
-require( "x64:93a575a7ca17e04" )
+require( "ui/uieditor/widgets/health/healthbar" )
 require( "x64:8d675186365db0e" )
 require( "x64:bf664385ad802d2" )
 require( "x64:8ad2c5f2a781472" )
 require( "x64:2824ac3e38d1e18" )
-require( "x64:ee88ebccb2271bc" )
+require( "ui/uieditor/widgets/warzone/warzone_emp_team" )
 
 CoD.WZTeamListItem = InheritFrom( LUI.UIElement )
 CoD.WZTeamListItem.__defaultWidth = 385

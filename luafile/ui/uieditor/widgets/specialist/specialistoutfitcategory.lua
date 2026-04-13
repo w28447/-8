@@ -1,4 +1,4 @@
-require( "x64:bffd00ef1fc082" )
+require( "ui/uieditor/widgets/specialist/specialistoutfitcategory_internal" )
 
 CoD.SpecialistOutfitCategory = InheritFrom( LUI.UIElement )
 CoD.SpecialistOutfitCategory.__defaultWidth = 280

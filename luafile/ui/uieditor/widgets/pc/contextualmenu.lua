@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/emptyfocusable" )
-require( "x64:4fd781f7e506216" )
+require( "ui/uieditor/widgets/pc/contextualmenuaction" )
 
 CoD.ContextualMenu = InheritFrom( LUI.UIElement )
 CoD.ContextualMenu.__defaultWidth = 233

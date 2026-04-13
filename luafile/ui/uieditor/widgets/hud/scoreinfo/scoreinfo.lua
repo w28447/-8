@@ -1,7 +1,7 @@
-require( "x64:76b89c73379cfb5" )
-require( "x64:68e8f00efa22b76" )
-require( "x64:662f5e0bf553163" )
-require( "x64:b606c2b63bb56d6" )
+require( "ui/uieditor/widgets/hud/scoreinfo/ScoreInfo_ScoreContainer" )
+require( "ui/uieditor/widgets/hud/scoreinfo/scoreinfoctf" )
+require( "ui/uieditor/widgets/hud/scoreinfo/scoreinfoescort" )
+require( "ui/uieditor/widgets/hud/scoreinfo/scoreinfoprop" )
 
 CoD.ScoreInfo = InheritFrom( LUI.UIElement )
 CoD.ScoreInfo.__defaultWidth = 210

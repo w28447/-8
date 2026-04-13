@@ -1,7 +1,7 @@
-require( "x64:2bf789c3c32d132" )
+require( "ui/uieditor/widgets/aar_t8/levelup/aarlevelupoverlay_levelupbg" )
 require( "x64:1a70a3d7e2725e9" )
 require( "ui/uieditor/widgets/footer/footercontainer_frontend_right" )
-require( "x64:4fef7f34e3f5ca0" )
+require( "ui/uieditor/widgets/notifications/xp/doublexpicon" )
 require( "x64:c7e896ee4bc3f8" )
 
 CoD.AARMeritReportOverlay = InheritFrom( CoD.Menu )

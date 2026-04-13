@@ -1,5 +1,5 @@
-require( "x64:fbffc86e9a93477" )
-require( "x64:c4873e75b9cce20" )
+require( "ui/uieditor/widgets/blackmarket/bm_iteminfopanel" )
+require( "ui/uieditor/widgets/craft/emblemeditor/decalpreview" )
 require( "ui/uieditor/widgets/craft/emblemeditor/emblemiconnew" )
 require( "ui/uieditor/widgets/scrollbars/verticalcounter" )
 

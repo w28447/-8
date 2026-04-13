@@ -1,6 +1,6 @@
-require( "x64:3e426332d66c91e" )
+require( "ui/uieditor/widgets/common/commonfocusbrackets" )
 require( "ui/uieditor/widgets/director/directorselectbuttonlines" )
-require( "x64:58d4fce5d3d555e" )
+require( "ui/uieditor/widgets/notifications/xp/doublexpcardiconsleftaligned" )
 
 CoD.DirectorZMMapSelectItemInternal = InheritFrom( LUI.UIElement )
 CoD.DirectorZMMapSelectItemInternal.__defaultWidth = 256

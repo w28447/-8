@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/customgames/customgames_optioncategorybutton" )
-require( "x64:fb61775b944bf26" )
+require( "ui/uieditor/widgets/customgames/customgames_restrictions_categorybutton" )
 require( "ui/uieditor/widgets/customgames/customgames_settingslider" )
 require( "ui/uieditor/widgets/gamesettings/gamesettings_selectediteminfo" )
 require( "ui/uieditor/widgets/scrollbars/verticalcounter" )

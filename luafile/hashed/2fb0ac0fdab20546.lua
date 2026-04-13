@@ -1,7 +1,7 @@
 require( "x64:e6df4068375d284" )
 require( "x64:b64d9dfa5911bd2" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsbackground" )
-require( "x64:2190adaba331dcb" )
+require( "ui/uieditor/widgets/startmenu/startmenu_signatureitem" )
 
 CoD.ChooseSpecialistMidMatch = InheritFrom( CoD.Menu )
 LUI.createMenu.ChooseSpecialistMidMatch = function ( f1_arg0, f1_arg1 )

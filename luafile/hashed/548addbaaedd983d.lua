@@ -1,4 +1,4 @@
-require( "x64:24cdc10be6c29c3" )
+require( "ui/uieditor/widgets/hud/gameendscore/gameendscorecenterarrow" )
 
 CoD.PositionDraft_CountdownTimerFUI = InheritFrom( LUI.UIElement )
 CoD.PositionDraft_CountdownTimerFUI.__defaultWidth = 800

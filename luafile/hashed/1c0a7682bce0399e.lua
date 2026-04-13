@@ -1,4 +1,4 @@
-require( "x64:acbed692442191c" )
+require( "ui/uieditor/widgets/common/commoncornerpips02" )
 
 CoD.Prestige_LevelProgressBar = InheritFrom( LUI.UIElement )
 CoD.Prestige_LevelProgressBar.__defaultWidth = 1102

@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframe" )
-require( "x64:e1b6065122832d3" )
-require( "x64:7196315b0b927fd" )
+require( "ui/uieditor/widgets/director/directorcustomizeclasszm" )
+require( "ui/uieditor/widgets/zmfrontend/cac/zmcustomizeclasssafeareacontainer" )
 require( "x64:6ee653ade3452f5" )
 
 CoD.ZMCustomizeClassMenu = InheritFrom( CoD.Menu )

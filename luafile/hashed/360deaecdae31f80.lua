@@ -1,7 +1,7 @@
-require( "x64:94acc3cb318e13b" )
-require( "x64:5f4d99916f6c43" )
-require( "x64:5f8cf56752aa71b" )
-require( "x64:1a4e34b4805b325" )
+require( "ui/uieditor/widgets/blackmarket/bm_lock" )
+require( "ui/uieditor/widgets/cac/equippedmarker" )
+require( "ui/uieditor/widgets/commonbuttonoutline" )
+require( "ui/uieditor/widgets/commonbuttonoutlinelocked" )
 
 CoD.SignatureCamoInternal = InheritFrom( LUI.UIElement )
 CoD.SignatureCamoInternal.__defaultWidth = 165

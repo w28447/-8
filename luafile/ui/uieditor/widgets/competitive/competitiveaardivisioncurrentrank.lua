@@ -1,5 +1,5 @@
-require( "x64:5879d06ca5a4b57" )
-require( "x64:3d775f8faa1b3e7" )
+require( "ui/uieditor/widgets/arena/arenaleagueplayrubiesdynamic" )
+require( "ui/uieditor/widgets/competitive/competitiveaardivisionrankawardtittle" )
 require( "ui/uieditor/widgets/lobby/common/fe_titlenumbrdr" )
 
 CoD.CompetitiveAARDivisionCurrentRank = InheritFrom( LUI.UIElement )

@@ -1,5 +1,5 @@
 require( "x64:e587cf1bb800f1f" )
-require( "x64:ca897ba9d64c37c" )
+require( "ui/uieditor/widgets/itemshop/reserves/reservesbribestacktall" )
 
 CoD.ReservesBribeStackCarouselTall = InheritFrom( LUI.UIElement )
 CoD.ReservesBribeStackCarouselTall.__defaultWidth = 240

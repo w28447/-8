@@ -1,4 +1,4 @@
-require( "x64:193addd21eecdda" )
+require( "ui/uieditor/widgets/codcaster/codcastersettingssidebarsettingstext" )
 require( "ui/uieditor/widgets/startmenu/options/flyout/startmenu_options_settingslider" )
 
 CoD.CodCasterSettingsSideBarDisplaySettingsContainer = InheritFrom( LUI.UIElement )

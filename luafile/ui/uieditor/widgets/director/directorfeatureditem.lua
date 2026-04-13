@@ -1,6 +1,6 @@
-require( "x64:6cc64e6f5d65b77" )
+require( "ui/uieditor/widgets/director/directorfeatureinteractprompt" )
 require( "ui/uieditor/widgets/director/directorpartyleaderonlyprompt" )
-require( "x64:39872a6aa619bf9" )
+require( "ui/uieditor/widgets/notifications/xp/doublexpcardiconsrightaligned" )
 
 CoD.DirectorFeaturedItem = InheritFrom( LUI.UIElement )
 CoD.DirectorFeaturedItem.__defaultWidth = 541

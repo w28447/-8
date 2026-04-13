@@ -1,4 +1,4 @@
-require( "x64:27a3dd7497157b6" )
+require( "ui/uieditor/widgets/specialist/specialistthemebutton_internal" )
 
 CoD.SpecialistThemeButton = InheritFrom( LUI.UIElement )
 CoD.SpecialistThemeButton.__defaultWidth = 280

@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/emptyfocusable" )
-require( "x64:ced5f2569bfff4a" )
+require( "ui/uieditor/widgets/systemoverlays/systemoverlay_freecursor_layout" )
 
 CoD.SystemOverlay_MessageDialog = InheritFrom( CoD.Menu )
 LUI.createMenu.SystemOverlay_MessageDialog = function ( f1_arg0, f1_arg1 )

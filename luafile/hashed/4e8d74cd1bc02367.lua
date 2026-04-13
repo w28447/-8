@@ -1,4 +1,4 @@
-require( "x64:9c7ca07e64b6632" )
+require( "ui/uieditor/widgets/vehiclehuds/ai_tank/vhud_ai_tank_internal" )
 
 CoD.VHUD_AI_Tank = InheritFrom( CoD.Menu )
 LUI.createMenu.VHUD_AI_Tank = function ( f1_arg0, f1_arg1 )

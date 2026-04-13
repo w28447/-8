@@ -1,4 +1,4 @@
-require( "x64:e09bcc7e0af69ad" )
+require( "ui/uieditor/widgets/vehiclehuds/mothership/vhud_ms_buttonwidgetcooldown" )
 
 CoD.vhud_ButtonPrompt = InheritFrom( LUI.UIElement )
 CoD.vhud_ButtonPrompt.__defaultWidth = 129

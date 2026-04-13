@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/emptyfocusable" )
-require( "x64:baff2229992d7b6" )
-require( "x64:59648045a39f73a" )
-require( "x64:8c7cd4f692e6a2c" )
+require( "ui/uieditor/widgets/pc/PC_VScrollbar" )
+require( "ui/uieditor/widgets/pc/PC_VScrollList_List" )
+require( "ui/uieditor/widgets/pc/socialmenu/pc_socialmenu_dropdownlistitem" )
 
 CoD.PCSocialMenu_DropDown_ItemList = InheritFrom( LUI.UIElement )
 CoD.PCSocialMenu_DropDown_ItemList.__defaultWidth = 364

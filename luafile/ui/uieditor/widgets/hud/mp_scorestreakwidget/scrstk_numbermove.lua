@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/hud/cp_damagewidget/damagewidgetmp_panelcontainer" )
-require( "x64:2958075134fe8aa" )
+require( "ui/uieditor/widgets/hud/mp_scorestreakwidget/scrstk_numbertext" )
 
 CoD.ScrStk_NumberMove = InheritFrom( LUI.UIElement )
 CoD.ScrStk_NumberMove.__defaultWidth = 79

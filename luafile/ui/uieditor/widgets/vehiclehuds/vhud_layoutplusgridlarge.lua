@@ -1,4 +1,4 @@
-require( "x64:e0c20c5908660cd" )
+require( "ui/uieditor/widgets/vehiclehuds/vhud_layoutplusgrid" )
 
 CoD.vhud_layoutPlusGridLarge = InheritFrom( LUI.UIElement )
 CoD.vhud_layoutPlusGridLarge.__defaultWidth = 883

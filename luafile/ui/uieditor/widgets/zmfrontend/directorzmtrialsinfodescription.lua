@@ -1,4 +1,4 @@
-require( "x64:91ac5934d0654c2" )
+require( "ui/uieditor/widgets/zmfrontend/zmaartrialtabroundstat" )
 require( "x64:25acac8f33a8459" )
 
 CoD.DirectorZMTrialsInfoDescription = InheritFrom( LUI.UIElement )

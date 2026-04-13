@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/common/commonheader" )
-require( "x64:3e338588f49ebed" )
+require( "ui/uieditor/widgets/director/directorpartylist" )
 require( "ui/uieditor/widgets/startmenu/startmenu_currencycounts" )
 
 CoD.StoreHeader = InheritFrom( LUI.UIElement )

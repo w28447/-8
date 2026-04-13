@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/hud/zm_roundwidget/zmrndcontainer" )
-require( "x64:5677da2fba4b1c9" )
+require( "ui/uieditor/widgets/zmhudwidgets/zm_title_fog" )
 
 CoD.ZM_Trials_Title_Splash = InheritFrom( LUI.UIElement )
 CoD.ZM_Trials_Title_Splash.__defaultWidth = 1920

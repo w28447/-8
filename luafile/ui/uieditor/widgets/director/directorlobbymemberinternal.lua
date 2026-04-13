@@ -1,4 +1,4 @@
-require( "x64:e19582705aab870" )
+require( "ui/uieditor/widgets/director/directorlobbymemberinternalcard" )
 
 CoD.DirectorLobbyMemberInternal = InheritFrom( LUI.UIElement )
 CoD.DirectorLobbyMemberInternal.__defaultWidth = 68

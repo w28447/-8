@@ -1,6 +1,6 @@
-require( "x64:760aff07f0f7242" )
-require( "x64:d6a3fb5a763b9aa" )
-require( "x64:9d7b2edcc3435f2" )
+require( "ui/uieditor/widgets/arena/arenarubyprogressfivewidget" )
+require( "ui/uieditor/widgets/arena/arenarubyprogressfourwidget" )
+require( "ui/uieditor/widgets/arena/arenarubyprogressthreewidget" )
 
 CoD.ArenaRubyProgressWidget = InheritFrom( LUI.UIElement )
 CoD.ArenaRubyProgressWidget.__defaultWidth = 926

@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/hud/compassminimapitems" )
-require( "x64:12bbcf811bbabdb" )
+require( "ui/uieditor/widgets/hud/compassminimapmap" )
 require( "ui/uieditor/widgets/hud/compassminimapoverlay" )
 
 CoD.vehicleRadarRTT = InheritFrom( LUI.UIElement )

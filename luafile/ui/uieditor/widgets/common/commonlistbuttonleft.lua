@@ -1,4 +1,4 @@
-require( "x64:e6316db56ce8fb5" )
+require( "ui/uieditor/widgets/common/commonlistbuttonleftinternal" )
 
 CoD.CommonListButtonLeft = InheritFrom( LUI.UIElement )
 CoD.CommonListButtonLeft.__defaultWidth = 500

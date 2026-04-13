@@ -1,5 +1,5 @@
-require( "x64:a90c651f34c6414" )
-require( "x64:ab46e4d00941143" )
+require( "ui/uieditor/widgets/callingcards/loot2/callingcards_loot2_surrealistlandscapes_book" )
+require( "ui/uieditor/widgets/callingcards/loot2/callingcards_loot2_surrealistlandscapes_stairs" )
 
 CoD[0xF9B8B7EB4A5FEE] = InheritFrom( LUI.UIElement )
 CoD[0xF9B8B7EB4A5FEE].__defaultWidth = 960

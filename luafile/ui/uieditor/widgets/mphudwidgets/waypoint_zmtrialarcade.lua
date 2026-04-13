@@ -1,4 +1,4 @@
-require( "x64:c404de47cc3aefe" )
+require( "ui/uieditor/widgets/mphudwidgets/waypoint_textbg_zm" )
 require( "ui/uieditor/widgets/mphudwidgets/waypointarrowcontainer" )
 require( "ui/uieditor/widgets/mphudwidgets/waypointcenter" )
 require( "ui/uieditor/widgets/mphudwidgets/waypointprogressbar" )

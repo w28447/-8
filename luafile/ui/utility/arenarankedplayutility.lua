@@ -205,9 +205,9 @@ CoD.ArenaRankedPlayUtility.PopulateRankedPlayWidget = function ( f20_arg0, f20_a
 	for f20_local13 = 1, f20_local4, 1 do
 		local self = LUI.UIImage.new( 0, 0, f20_local7, f20_local8, 0, 0, f20_local9, f20_local10 )
 		if f20_local13 <= f20_local12 then
-			self:setImage( RegisterImage( 0x43160B992233D7 ) )
+			self:setImage( RegisterImage( arena_star_icon ) )
 		else
-			self:setImage( RegisterImage( 0xECC3636F0ADB379 ) )
+			self:setImage( RegisterImage( arena_star_icon_empty ) )
 		end
 		f20_arg1:addElement( self )
 		if f20_local13 % f20_local0 == 0 then

@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/cac/restricteditemwarning" )
-require( "x64:5f8cf56752aa71b" )
+require( "ui/uieditor/widgets/commonbuttonoutline" )
 require( "x64:a6c788fd067cb9" )
 
 CoD.EquippedBGBInternal = InheritFrom( LUI.UIElement )

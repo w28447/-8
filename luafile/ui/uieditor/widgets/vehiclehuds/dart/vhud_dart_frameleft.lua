@@ -1,4 +1,4 @@
-require( "x64:cc4bfb2bbbc1344" )
+require( "ui/uieditor/widgets/vehiclehuds/hellstorm/vhudhellstormframealtitude" )
 
 CoD.vhud_dart_frameLeft = InheritFrom( LUI.UIElement )
 CoD.vhud_dart_frameLeft.__defaultWidth = 391

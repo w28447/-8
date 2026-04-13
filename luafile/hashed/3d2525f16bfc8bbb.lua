@@ -3,7 +3,7 @@ require( "x64:21f553dc351a375" )
 require( "x64:d40b3cbaff75c1b" )
 require( "x64:9b6351e62cb72af" )
 require( "x64:a3cd2c05bf5a4e0" )
-require( "x64:c74b18409878e59" )
+require( "ui/uieditor/widgets/director/directorselectbuttonspecialistheadquarters" )
 require( "x64:e1a4e89cbfd7d12" )
 
 CoD.SpecialistHeadquarters = InheritFrom( LUI.UIElement )

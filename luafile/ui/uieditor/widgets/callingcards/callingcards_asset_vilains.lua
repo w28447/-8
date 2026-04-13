@@ -1,5 +1,5 @@
-require( "x64:c8f44477e40f994" )
-require( "x64:cbc3f2d1c9436dd" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_vilains_fire" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_vilains_sky" )
 
 CoD[0xBD13AC1448D9700] = InheritFrom( LUI.UIElement )
 CoD[0xBD13AC1448D9700].__defaultWidth = 960

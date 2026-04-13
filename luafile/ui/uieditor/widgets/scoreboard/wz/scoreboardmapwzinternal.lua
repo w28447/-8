@@ -1,7 +1,7 @@
-require( "x64:4dfe5c6b3fbb32a" )
-require( "x64:e1a4ff2280da16d" )
-require( "x64:5e684e2d39669cd" )
-require( "x64:e5724ea40c9bd4e" )
+require( "ui/uieditor/widgets/scoreboard/wz/scoreboardgamestatusmapwz" )
+require( "ui/uieditor/widgets/scoreboard/wz/scoreboardmapcolumnheadingscontainer" )
+require( "ui/uieditor/widgets/scoreboard/wz/scoreboardmaprowheadingscontainer" )
+require( "ui/uieditor/widgets/warzone/warzoneplayermarker" )
 
 CoD.ScoreboardMapWZInternal = InheritFrom( LUI.UIElement )
 CoD.ScoreboardMapWZInternal.__defaultWidth = 967

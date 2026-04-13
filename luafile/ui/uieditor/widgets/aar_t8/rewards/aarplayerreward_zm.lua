@@ -1,6 +1,6 @@
-require( "x64:41c9011e64b1ca0" )
-require( "x64:151a9f89b614c73" )
-require( "x64:6d95e04b5d181c9" )
+require( "ui/uieditor/widgets/aar_t8/rewards/aarrewardbacker_zm" )
+require( "ui/uieditor/widgets/aar_t8/rewards/aarrewardheader_zm" )
+require( "ui/uieditor/widgets/aar_t8/rewards/aarrewarditem_zm" )
 require( "ui/uieditor/widgets/aar_t8/rewards/aarrewardsxp" )
 require( "ui/uieditor/widgets/pc/utility/verticallistspacer" )
 

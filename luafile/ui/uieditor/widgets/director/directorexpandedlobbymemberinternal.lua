@@ -1,12 +1,12 @@
 require( "ui/uieditor/widgets/callingcards/callingcards_framewidget" )
 require( "ui/uieditor/widgets/common/commoncornerpips01" )
-require( "x64:3e426332d66c91e" )
+require( "ui/uieditor/widgets/common/commonfocusbrackets" )
 require( "ui/uieditor/widgets/common/commonrankiconandrankvertical" )
-require( "x64:9d7456f2e3445f3" )
-require( "x64:556f545189e42ad" )
+require( "ui/uieditor/widgets/director/directoexpandedlobbymember_trial" )
+require( "ui/uieditor/widgets/director/directorexpandedlobbymemberwarnings" )
 require( "x64:88882bece551bf0" )
 require( "ui/uieditor/widgets/onoffvoip" )
-require( "x64:ea71cc10a0bd874" )
+require( "ui/uieditor/widgets/social/social_missingdlcnotification" )
 
 CoD.DirectorExpandedLobbyMemberInternal = InheritFrom( LUI.UIElement )
 CoD.DirectorExpandedLobbyMemberInternal.__defaultWidth = 425

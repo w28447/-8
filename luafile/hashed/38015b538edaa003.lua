@@ -1,4 +1,4 @@
-require( "x64:1ba9f25e364b71a" )
+require( "ui/uieditor/widgets/clans/clanoptionswidget" )
 
 CoD.ClanOptions = InheritFrom( CoD.Menu )
 LUI.createMenu.ClanOptions = function ( f1_arg0, f1_arg1 )

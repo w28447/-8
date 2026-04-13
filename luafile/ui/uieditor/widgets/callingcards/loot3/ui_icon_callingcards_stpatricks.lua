@@ -1,5 +1,5 @@
-require( "x64:3e1f5f928dd2916" )
-require( "x64:3e1f4f928dd2763" )
+require( "ui/uieditor/widgets/callingcards/loot3/ui_icon_callingcards_stpatricks1" )
+require( "ui/uieditor/widgets/callingcards/loot3/ui_icon_callingcards_stpatricks2" )
 
 CoD[0xC498757AF862212] = InheritFrom( LUI.UIElement )
 CoD[0xC498757AF862212].__defaultWidth = 960

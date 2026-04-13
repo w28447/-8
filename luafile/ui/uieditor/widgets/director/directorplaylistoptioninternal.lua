@@ -1,6 +1,6 @@
-require( "x64:dab8c3a6f5b136c" )
-require( "x64:5f8cf56752aa71b" )
-require( "x64:58d4fce5d3d555e" )
+require( "ui/uieditor/widgets/common/CommonPixelBacking" )
+require( "ui/uieditor/widgets/commonbuttonoutline" )
+require( "ui/uieditor/widgets/notifications/xp/doublexpcardiconsleftaligned" )
 
 CoD.DirectorPlaylistOptionInternal = InheritFrom( LUI.UIElement )
 CoD.DirectorPlaylistOptionInternal.__defaultWidth = 372

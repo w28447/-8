@@ -1,4 +1,4 @@
-require( "x64:be456922ade4fa6" )
+require( "ui/uieditor/widgets/social/social_partysettingsbuttoninternal" )
 
 CoD.Social_PartySettingsButton = InheritFrom( LUI.UIElement )
 CoD.Social_PartySettingsButton.__defaultWidth = 301

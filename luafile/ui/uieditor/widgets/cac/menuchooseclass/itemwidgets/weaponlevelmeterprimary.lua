@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/cac/menuchooseclass/itemwidgets/progressbarprimary" )
-require( "x64:6466c2aec2cf6a4" )
+require( "ui/uieditor/widgets/cac/menuchooseclass/itemwidgets/weaponlevelwidget" )
 
 CoD.WeaponLevelMeterPrimary = InheritFrom( LUI.UIElement )
 CoD.WeaponLevelMeterPrimary.__defaultWidth = 1580

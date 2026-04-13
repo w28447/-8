@@ -1,4 +1,4 @@
-require( "x64:35d8bc7f26bf149" )
+require( "ui/uieditor/widgets/arena/gauntlet/arenagauntlettierprogress" )
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframe" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsbackground" )
 

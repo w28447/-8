@@ -1,4 +1,4 @@
-require( "x64:9bfecaffe48d881" )
+require( "ui/uieditor/widgets/startmenu/startmenu_quitbutton" )
 
 CoD.StartMenu_Quit = InheritFrom( LUI.UIElement )
 CoD.StartMenu_Quit.__defaultWidth = 1920

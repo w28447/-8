@@ -1,5 +1,5 @@
-require( "x64:50ce70a16679544" )
-require( "x64:2085c7508126617" )
+require( "ui/uieditor/widgets/hud/map/compassgroupmpcontainer" )
+require( "ui/uieditor/widgets/vehiclehuds/hcxd/vhud_hcxd_timebar" )
 require( "x64:4929df020ef5e09" )
 
 CoD.vhud_hcdx_hud = InheritFrom( LUI.UIElement )

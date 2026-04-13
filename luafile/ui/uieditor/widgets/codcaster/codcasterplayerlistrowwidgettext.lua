@@ -1,4 +1,4 @@
-require( "x64:c5ca210e8cd6906" )
+require( "ui/uieditor/widgets/codcaster/codcasterplayerlistrowwidgettextinternal" )
 
 CoD.CodCasterPlayerListRowWidgetText = InheritFrom( LUI.UIElement )
 CoD.CodCasterPlayerListRowWidgetText.__defaultWidth = 165

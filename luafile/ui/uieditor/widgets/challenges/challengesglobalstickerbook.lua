@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/challenges/challenges_callingcardwidget" )
-require( "x64:79fe6ac43673588" )
+require( "ui/uieditor/widgets/challenges/challenges_framewidget_titlebackground" )
 require( "ui/uieditor/widgets/challenges/challenges_mastercallingcardwidget" )
-require( "x64:76f82c814686c59" )
+require( "ui/uieditor/widgets/challenges/challengescallingcardprofilerglobal" )
 
 CoD.ChallengesGlobalStickerbook = InheritFrom( LUI.UIElement )
 CoD.ChallengesGlobalStickerbook.__defaultWidth = 1725

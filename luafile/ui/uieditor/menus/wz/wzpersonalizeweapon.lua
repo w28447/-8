@@ -4,7 +4,7 @@ require( "x64:8a564360a773656" )
 require( "ui/uieditor/widgets/common/commonheader" )
 require( "ui/uieditor/widgets/footer/footercontainer_frontend_right" )
 require( "ui/uieditor/widgets/header/header_container_frontend" )
-require( "x64:e91724b6a77f8c9" )
+require( "ui/uieditor/widgets/warzone/wzpersonalizeweapon_weaponlistwidget" )
 require( "ui/uieditor/widgets/pc/utility/xcammousecontrol" )
 
 CoD.WZPersonalizeWeapon = InheritFrom( CoD.Menu )

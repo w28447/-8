@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/social/joinbuttonprompt" )
-require( "x64:b27a593c5400711" )
-require( "x64:564ca313abeb19a" )
+require( "ui/uieditor/widgets/tablet/tableticepick_backgroundpc" )
+require( "ui/uieditor/widgets/tablet/tak5/tabletconnectionarrow" )
 
 CoD.TabletIcePick_Prompt = InheritFrom( LUI.UIElement )
 CoD.TabletIcePick_Prompt.__defaultWidth = 272

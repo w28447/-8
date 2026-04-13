@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/callingcards/callingcards_framewidget" )
-require( "x64:14f5cb7dede32ce" )
+require( "ui/uieditor/widgets/systemoverlays/systemoverlay_prestigerewarditem" )
 
 CoD.systemOverlay_PrestigeRewards = InheritFrom( LUI.UIElement )
 CoD.systemOverlay_PrestigeRewards.__defaultWidth = 517

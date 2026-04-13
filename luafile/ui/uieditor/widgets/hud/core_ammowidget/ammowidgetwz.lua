@@ -1,6 +1,6 @@
-require( "x64:8d1adc2235d1aa2" )
-require( "x64:2cc2c5b13552602" )
-require( "x64:ec068c738d259b9" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_stockammo" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidgetwz_storageslot" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidgetwz_weaponinfo" )
 
 CoD.AmmoWidgetWZ = InheritFrom( LUI.UIElement )
 CoD.AmmoWidgetWZ.__defaultWidth = 591

@@ -1,4 +1,4 @@
-require( "x64:100e5d2a5970b5e" )
+require( "ui/uieditor/widgets/pc/pc_achievementdetailedview_desc_bg" )
 require( "ui/uieditor/widgets/pc/utility/verticallistspacer" )
 
 CoD.PC_AchievementDetailedView_Desc = InheritFrom( LUI.UIElement )

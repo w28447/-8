@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframeidentity" )
 require( "ui/uieditor/widgets/common/common_tabbar_center" )
-require( "x64:81a24c5340caa1e" )
-require( "x64:26953ab49613c9" )
+require( "ui/uieditor/widgets/common/commontabbarbacking" )
+require( "ui/uieditor/widgets/leaderboard/leaderboard_warningtext" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsbackground" )
 
 local PostLoadFunc = function ( f1_arg0, f1_arg1 )

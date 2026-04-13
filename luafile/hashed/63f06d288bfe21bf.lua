@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/vehiclehuds/buttons/vhud_generic_button_layout" )
-require( "x64:d2a12cc8ff589a9" )
+require( "ui/uieditor/widgets/vehiclehuds/genericvhudreticleoverlay" )
 
 CoD.VehicleHUD_Prompts = InheritFrom( CoD.Menu )
 LUI.createMenu.VehicleHUD_Prompts = function ( f1_arg0, f1_arg1 )

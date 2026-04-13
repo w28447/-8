@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/footer/fe_footercontainer_notlobby" )
-require( "x64:efb4937f8502f72" )
+require( "ui/uieditor/widgets/listbutton" )
 
 CoD.LiveEventViewerQualities = InheritFrom( CoD.Menu )
 LUI.createMenu.LiveEventViewerQualities = function ( f1_arg0, f1_arg1 )

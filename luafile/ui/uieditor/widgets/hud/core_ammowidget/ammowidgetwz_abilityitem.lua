@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/controllerdependent_textbox" )
 require( "x64:9d92dce1e4291ce" )
-require( "x64:1ebda7298b79984" )
-require( "x64:27890fc3c34fd7e" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidgetwz_equipmentempty" )
+require( "ui/uieditor/widgets/warzone/warzoneabilityitemcounter" )
 
 CoD.AmmoWidgetWZ_AbilityItem = InheritFrom( LUI.UIElement )
 CoD.AmmoWidgetWZ_AbilityItem.__defaultWidth = 72

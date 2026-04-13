@@ -1,4 +1,4 @@
-require( "x64:fd24c921a536ec2" )
+require( "ui/uieditor/widgets/codcaster/codcasterplayerlistheaderobjectivecolumn" )
 require( "ui/uieditor/widgets/helperwidgets/textwithbg" )
 
 CoD.CodCasterPlayerListHeaderWidget = InheritFrom( LUI.UIElement )

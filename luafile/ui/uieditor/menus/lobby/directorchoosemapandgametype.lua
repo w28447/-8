@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/common/commonheader" )
-require( "x64:a6e027ec2d1bee7" )
+require( "ui/uieditor/widgets/director/directortabheader" )
 require( "ui/uieditor/widgets/footer/footercontainer_frontend_right" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsbackground" )
 

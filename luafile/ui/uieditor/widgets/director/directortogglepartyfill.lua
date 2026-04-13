@@ -1,5 +1,5 @@
-require( "x64:669e5bae82c0f3e" )
-require( "x64:f1eadda0b2ffd89" )
+require( "ui/uieditor/widgets/director/directortogglepartyfillclientinternal" )
+require( "ui/uieditor/widgets/director/directortogglepartyfillinternal" )
 
 CoD.DirectorTogglePartyFill = InheritFrom( LUI.UIElement )
 CoD.DirectorTogglePartyFill.__defaultWidth = 396

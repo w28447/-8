@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/common/commonheader" )
 require( "ui/uieditor/widgets/director/directorfixedwidthheading" )
-require( "x64:2f210cb5e3fa853" )
+require( "ui/uieditor/widgets/director/directorgamesettinglist" )
 require( "ui/uieditor/widgets/director/directorteammember" )
 require( "ui/uieditor/widgets/footer/footercontainer_frontend_right" )
 require( "ui/uieditor/widgets/header/header_container_frontend" )

@@ -1,11 +1,11 @@
-require( "x64:9f606d91eab9f64" )
-require( "x64:3e426332d66c91e" )
-require( "x64:e38247e77bdfbff" )
-require( "x64:c4fa18438e51aa4" )
+require( "ui/uieditor/widgets/arena/arenaeventtimer" )
+require( "ui/uieditor/widgets/common/commonfocusbrackets" )
+require( "ui/uieditor/widgets/customgames/customgames_officialbadgeicon" )
+require( "ui/uieditor/widgets/director/directormapandgametypeinternaltitles" )
 require( "ui/uieditor/widgets/director/directorpartyleaderonlyprompt" )
 require( "ui/uieditor/widgets/director/directorselectbuttonlines" )
-require( "x64:fe5982d27a41c8" )
-require( "x64:d37cfee68621f73" )
+require( "ui/uieditor/widgets/director/directorselectbuttonmode" )
+require( "ui/uieditor/widgets/notifications/xp/doublexpiconsleftalignedfrontendsmall" )
 
 CoD.DirectorMapAndGameTypeInternal = InheritFrom( LUI.UIElement )
 CoD.DirectorMapAndGameTypeInternal.__defaultWidth = 384

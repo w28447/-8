@@ -1,7 +1,7 @@
-require( "x64:7757ffe244726b9" )
+require( "ui/uieditor/widgets/hud/mp_hacked/hud_hacked_score_widget" )
 require( "ui/uieditor/widgets/hud/scoreinfo/scoreinfo" )
 require( "ui/uieditor/widgets/hud/scoreinfo/scoreinfo_timer" )
-require( "x64:2b8a915cdb60244" )
+require( "ui/uieditor/widgets/mphudwidgets/bountyhunter/bountyhunterplayermoney" )
 
 CoD.ScoreInfoContainer = InheritFrom( LUI.UIElement )
 CoD.ScoreInfoContainer.__defaultWidth = 210

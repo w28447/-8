@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframeidentity" )
-require( "x64:99d9debb5e8ab3c" )
+require( "ui/uieditor/widgets/startmenu/startmenu_challengesoperationtab" )
 
 CoD.ChallengesOperationsWZ = InheritFrom( CoD.Menu )
 LUI.createMenu.ChallengesOperationsWZ = function ( f1_arg0, f1_arg1 )

@@ -2,7 +2,7 @@ require( "ui/uieditor/menus/hud/credit_fullscreen" )
 require( "ui/uieditor/menus/startmenu/popups/startmenu_options_codaccount_cta" )
 require( "ui/uieditor/menus/startmenu/popups/startmenu_options_codaccount_manageaccount" )
 require( "ui/uieditor/menus/startmenu/startmenu_options_network" )
-require( "x64:1f846296f1a1b81" )
+require( "ui/uieditor/widgets/director/DirectorSelectButtonMiniInternal" )
 require( "ui/uieditor/widgets/startmenu/startmenu_button_sm" )
 
 CoD.PC_CoDAccount = InheritFrom( LUI.UIElement )

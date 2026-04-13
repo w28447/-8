@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/fileshare/fullscreenpopup/fullscreenpopuptemplate" )
-require( "x64:5d80cb371475b19" )
+require( "ui/uieditor/widgets/itemshop/itemshopbutton" )
 require( "ui/uieditor/widgets/startmenu/startmenu_codpoints" )
 
 CoD.BOPassRedemptionPopup = InheritFrom( CoD.Menu )

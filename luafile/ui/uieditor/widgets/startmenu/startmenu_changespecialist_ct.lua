@@ -1,6 +1,6 @@
 require( "x64:b64d9dfa5911bd2" )
 require( "x64:753cb15c89114c6" )
-require( "x64:2190adaba331dcb" )
+require( "ui/uieditor/widgets/startmenu/startmenu_signatureitem" )
 
 CoD.StartMenu_ChangeSpecialist_CT = InheritFrom( LUI.UIElement )
 CoD.StartMenu_ChangeSpecialist_CT.__defaultWidth = 1725

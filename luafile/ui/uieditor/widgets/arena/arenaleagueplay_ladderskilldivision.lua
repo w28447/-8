@@ -1,6 +1,6 @@
-require( "x64:7ec6bc10fa8e6b3" )
-require( "x64:1268a8e6dcdbc03" )
-require( "x64:6aeaa2cf60227b7" )
+require( "ui/uieditor/widgets/arena/arenaeventtimerlarge" )
+require( "ui/uieditor/widgets/arena/arenaleagueplay_ladderskilldivisionsubtitle" )
+require( "ui/uieditor/widgets/arena/arenaleagueplay_ladderskilldivisiontitle" )
 
 CoD.ArenaLeaguePlay_LadderSkillDivision = InheritFrom( LUI.UIElement )
 CoD.ArenaLeaguePlay_LadderSkillDivision.__defaultWidth = 898

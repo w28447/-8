@@ -1,6 +1,6 @@
 require( "x64:683120446682173" )
 require( "ui/uieditor/widgets/notifications/notificationqueuewidgets/notificationrewardqueuewidgets/notification2xpweaponreward" )
-require( "x64:48e413a7c2e7936" )
+require( "ui/uieditor/widgets/notifications/xp/doublexppromotionalicon" )
 
 CoD.DoubleXPIconsCenterAligned = InheritFrom( LUI.UIElement )
 CoD.DoubleXPIconsCenterAligned.__defaultWidth = 216

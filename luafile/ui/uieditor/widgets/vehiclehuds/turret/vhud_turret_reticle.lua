@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/vehiclehuds/agr/vhud_agr_reticleoutsidedotsur" )
 require( "ui/uieditor/widgets/vehiclehuds/dart/vhud_dart_timebar" )
-require( "x64:d2a12cc8ff589a9" )
+require( "ui/uieditor/widgets/vehiclehuds/genericvhudreticleoverlay" )
 require( "ui/uieditor/widgets/vehiclehuds/turret/vhud_turret_damageicon" )
 require( "ui/uieditor/widgets/vehiclehuds/turret/vhud_turret_reticle_arrows" )
 require( "ui/uieditor/widgets/vehiclehuds/turret/vhud_turret_reticle_center" )

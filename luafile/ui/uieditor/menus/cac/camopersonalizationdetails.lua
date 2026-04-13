@@ -2,7 +2,7 @@ require( "ui/uieditor/widgets/backgroundframes/genericmenuframe" )
 require( "ui/uieditor/widgets/cac/cac_background_slide_panel_short" )
 require( "x64:10483efa771121d" )
 require( "x64:68bcc307dcc87ad" )
-require( "x64:604be692d92c68c" )
+require( "ui/uieditor/widgets/common/commonlistbuttonleft" )
 
 CoD.CamoPersonalizationDetails = InheritFrom( CoD.Menu )
 LUI.createMenu.CamoPersonalizationDetails = function ( f1_arg0, f1_arg1 )

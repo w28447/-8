@@ -1,4 +1,4 @@
-require( "x64:809a0a8e6f85f74" )
+require( "ui/uieditor/widgets/vehiclehuds/vehicleseatconfig_internal" )
 
 CoD.VehicleSeatConfig = InheritFrom( LUI.UIElement )
 CoD.VehicleSeatConfig.__defaultWidth = 150

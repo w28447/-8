@@ -1,9 +1,9 @@
 require( "ui/uieditor/widgets/reticles/mp/ripperlockarrowwidget" )
 require( "ui/uieditor/widgets/reticles/mp/ripperlocklinewidget" )
-require( "x64:6abd28efaee4794" )
-require( "x64:e358be42a3ac783" )
-require( "x64:5755ad48a1716dd" )
-require( "x64:6c4f02177d53c60" )
+require( "ui/uieditor/widgets/reticles/mp/spectrelockarrowwidgetglow01" )
+require( "ui/uieditor/widgets/reticles/mp/spectrelockcenterdot" )
+require( "ui/uieditor/widgets/reticles/mp/spectrelocklinearrows" )
+require( "ui/uieditor/widgets/reticles/mp/spectrelocklinewidgetnormal" )
 
 CoD.RipperLockReticle = InheritFrom( LUI.UIElement )
 CoD.RipperLockReticle.__defaultWidth = 100

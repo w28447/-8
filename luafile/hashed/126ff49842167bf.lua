@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/callingcards/callingcards_framewidget" )
-require( "x64:acbed692442191c" )
+require( "ui/uieditor/widgets/common/commoncornerpips02" )
 
 CoD.Prestige_PrestigeButton_Internal = InheritFrom( LUI.UIElement )
 CoD.Prestige_PrestigeButton_Internal.__defaultWidth = 400

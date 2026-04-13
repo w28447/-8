@@ -1,6 +1,6 @@
-require( "x64:8ffe7c4e01e7052" )
+require( "ui/uieditor/widgets/cac/itemnewbreadcrumbwidget" )
 require( "ui/uieditor/widgets/cac/restricteditemwarning" )
-require( "x64:3e426332d66c91e" )
+require( "ui/uieditor/widgets/common/commonfocusbrackets" )
 require( "ui/uieditor/widgets/director/directorselectbuttonlines" )
 
 CoD.SupportSelectionOptionInternal = InheritFrom( LUI.UIElement )

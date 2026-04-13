@@ -413,7 +413,7 @@ CoD.EmblemEditorColorMixer.new = function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3, 
 	
 	dividerV = LUI.UIImage.new( 0, 0, 90, 94, 0, 0, 0, 202 )
 	dividerV:setAlpha( 0.1 )
-	dividerV:setImage( RegisterImage( 0xC49B0C8991A541F ) )
+	dividerV:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
 	dividerV:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	dividerV:setShaderVector( 0, 0, 0, 0, 0 )
 	dividerV:setupNineSliceShader( 4, 8 )

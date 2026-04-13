@@ -1,10 +1,10 @@
-require( "x64:7a4af8bd7568030" )
-require( "x64:30b6383c771416e" )
-require( "x64:6f26d6ebdb5208b" )
-require( "x64:8eec6df22fcc7f" )
-require( "x64:3c40ae98a19ddf5" )
-require( "x64:16839327b099be7" )
-require( "x64:84a65387ed01e9b" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_ammocaliber" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_currentclippip" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_overheatmeter" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_singleshotpip" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_stockammo_emptypulse" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_stockammopip" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidgetvehiclereloadmeter" )
 
 CoD.AmmoWidget_StockAmmo = InheritFrom( LUI.UIElement )
 CoD.AmmoWidget_StockAmmo.__defaultWidth = 312

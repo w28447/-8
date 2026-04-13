@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/footer/fe_footerrighslidein" )
-require( "x64:8989b94e9945f9a" )
+require( "ui/uieditor/widgets/zmfrontend/laboratory/laboratoryplasma_popoutcontainer" )
 require( "ui/uieditor/widgets/pc/pc_smallclosebutton" )
 require( "ui/uieditor/widgets/systemoverlays/featureoverlay_button_mouseonly" )
 

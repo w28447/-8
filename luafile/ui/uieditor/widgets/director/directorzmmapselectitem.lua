@@ -1,4 +1,4 @@
-require( "x64:ade951b2d8c4d9a" )
+require( "ui/uieditor/menus/lobby/zm/directorzmtrialsinfo" )
 require( "ui/uieditor/widgets/director/directorzmmapselectiteminternal" )
 
 CoD.DirectorZMMapSelectItem = InheritFrom( LUI.UIElement )

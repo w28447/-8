@@ -1,8 +1,8 @@
-require( "x64:12366e7693fd432" )
-require( "x64:12365e7693fd27f" )
-require( "x64:12364e7693fd0cc" )
-require( "x64:23eb4a04efa29ae" )
-require( "x64:9275cf8360faa11" )
+require( "ui/uieditor/widgets/callingcards/loot2/callingcards_loot2_circusclown_fire01" )
+require( "ui/uieditor/widgets/callingcards/loot2/callingcards_loot2_circusclown_fire02" )
+require( "ui/uieditor/widgets/callingcards/loot2/callingcards_loot2_circusclown_fire03" )
+require( "ui/uieditor/widgets/callingcards/loot2/callingcards_loot2_circusclown_leftarm" )
+require( "ui/uieditor/widgets/callingcards/loot2/callingcards_loot2_circusclown_rightarm" )
 
 CoD[0x659E736527D287A] = InheritFrom( LUI.UIElement )
 CoD[0x659E736527D287A].__defaultWidth = 960

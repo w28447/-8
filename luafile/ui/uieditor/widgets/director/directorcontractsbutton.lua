@@ -1,5 +1,5 @@
 require( "x64:7a4ceca81c49387" )
-require( "x64:f82e80882a4dd63" )
+require( "ui/uieditor/widgets/director/directorcontractsbuttoninternal" )
 
 CoD.DirectorContractsButton = InheritFrom( LUI.UIElement )
 CoD.DirectorContractsButton.__defaultWidth = 354

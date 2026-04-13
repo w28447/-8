@@ -1,4 +1,4 @@
-require( "x64:61905ce88d4fbc5" )
+require( "ui/uieditor/widgets/callingcards/callingcards_summer_lenseflare" )
 
 CoD[0xD8E26CF160AEA12] = InheritFrom( LUI.UIElement )
 CoD[0xD8E26CF160AEA12].__defaultWidth = 960

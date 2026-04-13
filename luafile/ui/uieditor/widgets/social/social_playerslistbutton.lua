@@ -1,8 +1,8 @@
 require( "ui/uieditor/widgets/director/directorlobbyleader" )
 require( "ui/uieditor/widgets/onoffvoip" )
-require( "x64:f732d1ff8c659ed" )
+require( "ui/uieditor/widgets/social/social_playerslistbuttonshared" )
 require( "ui/uieditor/menus/social/social_playerdetailspopup" )
-require( "x64:aa1b2447c1715a3" )
+require( "ui/uieditor/widgets/social/social_playerslistbutton_joinandinvitebutton" )
 
 CoD.Social_PlayersListButton = InheritFrom( LUI.UIElement )
 CoD.Social_PlayersListButton.__defaultWidth = 474

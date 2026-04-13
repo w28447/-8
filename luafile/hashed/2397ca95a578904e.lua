@@ -1,4 +1,4 @@
-require( "x64:695c77ccd5cb3a6" )
+require( "ui/uieditor/widgets/director/trialversioncountdownwidget" )
 
 CoD.MainMenuTrialPrompt = InheritFrom( LUI.UIElement )
 CoD.MainMenuTrialPrompt.__defaultWidth = 400

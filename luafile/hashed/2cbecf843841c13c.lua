@@ -1,4 +1,4 @@
-require( "x64:8e42b7d307aadbf" )
+require( "ui/uieditor/widgets/arena/arenarankwidget" )
 
 CoD.ButtonFrame_ArenaBarracksStats_Firstplace = InheritFrom( LUI.UIElement )
 CoD.ButtonFrame_ArenaBarracksStats_Firstplace.__defaultWidth = 443

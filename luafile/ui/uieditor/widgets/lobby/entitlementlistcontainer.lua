@@ -1,4 +1,4 @@
-require( "x64:1404c0d595e4eb5" )
+require( "ui/uieditor/widgets/lobby/entitlementlistitem" )
 
 CoD.EntitlementListContainer = InheritFrom( LUI.UIElement )
 CoD.EntitlementListContainer.__defaultWidth = 1110

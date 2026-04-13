@@ -1,4 +1,4 @@
-require( "x64:e3c4faa7d21a5ee" )
+require( "ui/uieditor/widgets/hud/cancelchargeshot" )
 require( "x64:fd71a7363a0c5ba" )
 require( "x64:32860aa138745b2" )
 

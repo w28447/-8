@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframeidentity" )
 require( "ui/uieditor/widgets/startmenu/startmenu_currencycounts" )
-require( "x64:7f67615a49af700" )
+require( "ui/uieditor/widgets/store/store_nonfeaturedframe" )
 
 CoD.Store_DLC = InheritFrom( CoD.Menu )
 LUI.createMenu.Store_DLC = function ( f1_arg0, f1_arg1 )

@@ -1,4 +1,4 @@
-require( "x64:52cca38de53819f" )
+require( "ui/uieditor/widgets/motd/motd_bannerimage" )
 
 CoD.MOTD_BannerContainer = InheritFrom( LUI.UIElement )
 CoD.MOTD_BannerContainer.__defaultWidth = 328

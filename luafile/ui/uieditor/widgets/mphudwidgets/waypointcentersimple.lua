@@ -1,4 +1,4 @@
-require( "x64:1de8827d6e28e46" )
+require( "ui/uieditor/widgets/mphudwidgets/waypointiconsimple" )
 
 CoD.WaypointCenterSimple = InheritFrom( LUI.UIElement )
 CoD.WaypointCenterSimple.__defaultWidth = 76

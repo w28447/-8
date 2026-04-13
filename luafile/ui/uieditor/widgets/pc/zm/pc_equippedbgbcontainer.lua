@@ -1,4 +1,4 @@
-require( "x64:b57564707d9eb98" )
+require( "ui/uieditor/widgets/pc/zm/pc_equippedbgb" )
 
 CoD.PC_EquippedBGBContainer = InheritFrom( LUI.UIElement )
 CoD.PC_EquippedBGBContainer.__defaultWidth = 127

@@ -1,7 +1,7 @@
-require( "x64:228151985b0e431" )
-require( "x64:8ebe551764f08b5" )
-require( "x64:adb3511bd0cb347" )
-require( "x64:296ff295c5b9972" )
+require( "ui/uieditor/widgets/warzone/warzonedeathcamlabellarge" )
+require( "ui/uieditor/widgets/warzone/warzonedeathcamlineaccents" )
+require( "ui/uieditor/widgets/warzone/warzonedeathcamtrianglebgcorners" )
+require( "ui/uieditor/widgets/warzone/warzonewarningstripe" )
 
 CoD.KillcamMenu_WZ = InheritFrom( CoD.Menu )
 LUI.createMenu.KillcamMenu_WZ = function ( f1_arg0, f1_arg1 )

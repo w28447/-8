@@ -1,4 +1,4 @@
-require( "x64:46728994d8c06c0" )
+require( "ui/uieditor/widgets/common/commondetailpanel02" )
 require( "x64:b9a16de4d977bda" )
 require( "x64:c6c708ebd4ae043" )
 

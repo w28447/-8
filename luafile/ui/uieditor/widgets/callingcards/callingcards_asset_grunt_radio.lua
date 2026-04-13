@@ -1,4 +1,4 @@
-require( "x64:4e18fb91ac17c1f" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_grunt_radio_container" )
 
 CoD.CallingCards_Asset_grunt_radio = InheritFrom( LUI.UIElement )
 CoD.CallingCards_Asset_grunt_radio.__defaultWidth = 546

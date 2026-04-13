@@ -2,7 +2,7 @@ require( "ui/uieditor/widgets/cac/cacheader" )
 require( "ui/uieditor/widgets/cac/wildcardselect/wildcardselectionwidget" )
 require( "ui/uieditor/widgets/footer/footercontainer_frontend_right" )
 require( "ui/uieditor/widgets/header/header_container_frontend" )
-require( "x64:80e4f83e25db76c" )
+require( "ui/uieditor/widgets/pc/wilcardselect_pc_emptyfocusable" )
 
 CoD.WildcardSelect = InheritFrom( CoD.Menu )
 LUI.createMenu.WildcardSelect = function ( f1_arg0, f1_arg1 )

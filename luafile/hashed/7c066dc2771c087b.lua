@@ -1,4 +1,4 @@
-require( "x64:fc0f7412b0fb282" )
+require( "ui/uieditor/menus/itemshop/purchasebribestack" )
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframeidentity" )
 require( "x64:9fb6ca8791129aa" )
 require( "x64:4277e6cd270f883" )

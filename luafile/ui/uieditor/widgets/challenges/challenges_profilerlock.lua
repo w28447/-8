@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/cac/cac_lock" )
-require( "x64:8361a8d6fe55653" )
+require( "ui/uieditor/widgets/challenges/challenges_profilerlockbacking" )
 require( "ui/uieditor/widgets/pc/utility/verticallistspacer" )
 
 CoD.Challenges_ProfilerLock = InheritFrom( LUI.UIElement )

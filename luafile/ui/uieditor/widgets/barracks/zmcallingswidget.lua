@@ -1,5 +1,5 @@
-require( "x64:3b9fcb643fbe613" )
-require( "x64:46728994d8c06c0" )
+require( "ui/uieditor/widgets/barracks/specialeventwidget" )
+require( "ui/uieditor/widgets/common/commondetailpanel02" )
 
 CoD.ZMCallingsWidget = InheritFrom( LUI.UIElement )
 CoD.ZMCallingsWidget.__defaultWidth = 477

@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/pc/cyclinglist" )
-require( "x64:baff2229992d7b6" )
+require( "ui/uieditor/widgets/pc/PC_VScrollbar" )
 
 CoD.PC_StartMenu_Options_Controls_List = InheritFrom( LUI.UIElement )
 CoD.PC_StartMenu_Options_Controls_List.__defaultWidth = 695

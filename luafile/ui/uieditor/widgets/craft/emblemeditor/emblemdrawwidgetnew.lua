@@ -1,5 +1,5 @@
-require( "x64:5cb43180fc65bb6" )
-require( "x64:b49b35877fd007c" )
+require( "ui/uieditor/widgets/blackmarket/bm_goldbarlarge" )
+require( "ui/uieditor/widgets/craft/editordrawemblemfocusable" )
 
 local f0_local0 = function ( f1_arg0, f1_arg1, f1_arg2 )
 	if CoD.isPC then

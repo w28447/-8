@@ -1,4 +1,4 @@
-require( "x64:f3fc0ec27ad5c4e" )
+require( "ui/uieditor/widgets/arena/leagueplayrulespopup" )
 
 CoD.LeaguePlayContentRules = InheritFrom( CoD.Menu )
 LUI.createMenu.LeaguePlayContentRules = function ( f1_arg0, f1_arg1 )

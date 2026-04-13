@@ -1,7 +1,7 @@
-require( "x64:12cacdcc0738161" )
-require( "x64:c118f1e6b2011b2" )
-require( "x64:aed1e0f58da868f" )
-require( "x64:ac124c9aed21bc2" )
+require( "ui/uieditor/widgets/codcaster/codcasterbuttondoublepromptcontainer" )
+require( "ui/uieditor/widgets/codcaster/codcasterbuttonpromptcontainer" )
+require( "ui/uieditor/widgets/codcaster/codcasterbuttonpromptcontainer_onlykeyboardkey" )
+require( "ui/uieditor/widgets/footer/footercontainer_frontend_right_bg" )
 
 CoD.CodCasterButtons = InheritFrom( LUI.UIElement )
 CoD.CodCasterButtons.__defaultWidth = 1800

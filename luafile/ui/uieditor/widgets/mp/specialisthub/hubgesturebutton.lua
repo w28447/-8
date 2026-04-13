@@ -1,4 +1,4 @@
-require( "x64:79fcbfda569a792" )
+require( "ui/uieditor/widgets/mp/specialisthub/hubgesturebuttoninternal" )
 
 CoD.HubGestureButton = InheritFrom( LUI.UIElement )
 CoD.HubGestureButton.__defaultWidth = 152

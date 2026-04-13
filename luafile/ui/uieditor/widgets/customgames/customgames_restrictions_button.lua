@@ -1,4 +1,4 @@
-require( "x64:3e426332d66c91e" )
+require( "ui/uieditor/widgets/common/commonfocusbrackets" )
 require( "ui/uieditor/widgets/emptyfocusable" )
 require( "ui/uieditor/widgets/startmenu/options/flyout/startmenu_options_flyoutindicator" )
 require( "ui/uieditor/widgets/store/storecommontextbacking" )

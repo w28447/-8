@@ -1,9 +1,9 @@
-require( "x64:34b7fd0c151db2e" )
-require( "x64:24ebc9b16ab98c5" )
-require( "x64:877966f09b2444c" )
-require( "x64:d4aada18a6388eb" )
-require( "x64:98ada54f032daa3" )
-require( "x64:8b3af522c6cb7a3" )
+require( "ui/uieditor/widgets/hud/map/circularcompass" )
+require( "ui/uieditor/widgets/hud/map/compassawarenesscontainer" )
+require( "ui/uieditor/widgets/hud/map/compassawarenessringbacker" )
+require( "ui/uieditor/widgets/hud/map/compassgroupcontainer" )
+require( "ui/uieditor/widgets/hud/map/compassgroupsquare" )
+require( "ui/uieditor/widgets/minimap/minimapdetected" )
 
 CoD.CompassGroupMPContainer = InheritFrom( LUI.UIElement )
 CoD.CompassGroupMPContainer.__defaultWidth = 350

@@ -1,5 +1,5 @@
 require( "x64:e656d7766a8b00a" )
-require( "x64:b1c64f85af4ce49" )
+require( "ui/uieditor/widgets/director/directorconfigbutton" )
 
 CoD.DirectorLobbySettingList = InheritFrom( LUI.UIElement )
 CoD.DirectorLobbySettingList.__defaultWidth = 356

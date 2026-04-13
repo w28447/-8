@@ -1,10 +1,10 @@
 require( "x64:8d52912a320cd2e" )
-require( "x64:6a9f6e228c42bc6" )
+require( "ui/uieditor/widgets/health/healthinfozm" )
 require( "x64:e27b70e4e9a228" )
 require( "x64:6ab52417b210efb" )
 require( "x64:61911de5d586c0e" )
 require( "x64:279f0c61251e1f" )
-require( "x64:92b630a6698ccff" )
+require( "ui/uieditor/widgets/zmhudwidgets/hud_zm_trial_global_tracker" )
 
 CoD.PlayerWidget_ZM = InheritFrom( LUI.UIElement )
 CoD.PlayerWidget_ZM.__defaultWidth = 278

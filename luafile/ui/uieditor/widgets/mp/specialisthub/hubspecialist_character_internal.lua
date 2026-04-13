@@ -1,8 +1,8 @@
-require( "x64:94acc3cb318e13b" )
+require( "ui/uieditor/widgets/blackmarket/bm_lock" )
 require( "ui/uieditor/widgets/cac/cac_lock" )
 require( "ui/uieditor/widgets/cac/newbreadcrumbcount" )
 require( "ui/uieditor/widgets/common/commoncornerpips01" )
-require( "x64:5f8cf56752aa71b" )
+require( "ui/uieditor/widgets/commonbuttonoutline" )
 require( "ui/uieditor/widgets/mp/specialisthub/hubspecialist_characternewitem" )
 require( "x64:2d361ac3553c22a" )
 

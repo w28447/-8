@@ -1,4 +1,4 @@
-require( "x64:92371d2c5786619" )
+require( "ui/uieditor/widgets/hud/prematchcountdown/prematchcountdown_backing" )
 
 CoD.WZGameUpdateNotification = InheritFrom( LUI.UIElement )
 CoD.WZGameUpdateNotification.__defaultWidth = 500

@@ -1,6 +1,6 @@
 require( "x64:aa18a2396b77054" )
-require( "x64:ca1dc89b2aa714c" )
-require( "x64:b1b346e32476a2e" )
+require( "ui/uieditor/widgets/pc/pc_gridhorizontalscrollbar" )
+require( "ui/uieditor/widgets/scrollbars/horizontalcounter" )
 
 CoD.ActiveCamoGrid = InheritFrom( LUI.UIElement )
 CoD.ActiveCamoGrid.__defaultWidth = 1254

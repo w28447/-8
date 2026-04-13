@@ -1,9 +1,9 @@
 require( "ui/uieditor/widgets/bumperbuttonwithkeymousetext" )
-require( "x64:7198f4a2c6418a6" )
-require( "x64:341ce33d59fafd1" )
+require( "ui/uieditor/widgets/cac/equipmentselect/specialistequipmentnamedesc" )
+require( "ui/uieditor/widgets/cac/restricteditemwarningtext" )
 require( "ui/uieditor/widgets/cac/specialistissueequipmentwidget" )
-require( "x64:37113d6053cc9f6" )
-require( "x64:14ab47ffb48a077" )
+require( "ui/uieditor/widgets/director/directorfeaturedpip" )
+require( "ui/uieditor/widgets/pc/pc_tabsarrow" )
 
 CoD.SpecialistEquipmentTabListWidget = InheritFrom( LUI.UIElement )
 CoD.SpecialistEquipmentTabListWidget.__defaultWidth = 1920

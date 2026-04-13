@@ -1,5 +1,5 @@
-require( "x64:5e3a2795c098049" )
-require( "x64:b1e66064c1e62b6" )
+require( "ui/uieditor/widgets/callingcards/loot2/callingcards_loot2_vikingbattles_blood01" )
+require( "ui/uieditor/widgets/callingcards/loot2/callingcards_loot2_vikingbattles_characters" )
 
 CoD[0x8C2EA50F867B09B] = InheritFrom( LUI.UIElement )
 CoD[0x8C2EA50F867B09B].__defaultWidth = 960

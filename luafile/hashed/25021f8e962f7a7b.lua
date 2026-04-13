@@ -1,4 +1,4 @@
-require( "x64:acbed692442191c" )
+require( "ui/uieditor/widgets/common/commoncornerpips02" )
 require( "x64:9dbf14a95b962c1" )
 
 CoD.zm_red_available_item_text = InheritFrom( LUI.UIElement )

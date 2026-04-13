@@ -1,5 +1,5 @@
-require( "x64:1e10bd8956012bd" )
-require( "x64:f13c3cfcae3a2d7" )
+require( "ui/uieditor/widgets/mp/specialisthub/mpspecialisthubtags_safeareacontainer" )
+require( "ui/uieditor/widgets/mp/specialisthub/mpspecialisthubtags_tagframe" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsbackground" )
 
 CoD.MPSpecialistHUBTags = InheritFrom( CoD.Menu )

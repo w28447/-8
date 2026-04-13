@@ -1,4 +1,4 @@
-require( "x64:46897811dbbcd6f" )
+require( "ui/uieditor/widgets/common/commonlistbuttonshort_internal" )
 
 CoD.AutoAddFriendsButton = InheritFrom( LUI.UIElement )
 CoD.AutoAddFriendsButton.__defaultWidth = 303

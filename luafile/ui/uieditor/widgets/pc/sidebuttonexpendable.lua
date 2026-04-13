@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/emptyfocusable" )
-require( "x64:397017260be9959" )
+require( "ui/uieditor/widgets/pc/dropdown" )
 
 CoD.SideButtonExpendable = InheritFrom( LUI.UIElement )
 CoD.SideButtonExpendable.__defaultWidth = 390

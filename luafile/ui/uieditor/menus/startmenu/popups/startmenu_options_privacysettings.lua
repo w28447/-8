@@ -1,8 +1,8 @@
 require( "ui/uieditor/widgets/backgroundframes/menuframeingame" )
 require( "ui/uieditor/widgets/common/commonheader" )
 require( "ui/uieditor/widgets/header/header_container_frontend" )
-require( "x64:a4733827d6c5d52" )
-require( "x64:3696ed865d69c3c" )
+require( "ui/uieditor/widgets/startmenu/options/startmenu_options_privacysettingsmanagementform" )
+require( "ui/uieditor/widgets/startmenu/options/startmenu_options_privacysettingsstatewidget" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsbackground" )
 
 CoD.StartMenu_Options_PrivacySettings = InheritFrom( CoD.Menu )

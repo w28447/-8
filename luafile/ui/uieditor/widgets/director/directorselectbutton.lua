@@ -1,4 +1,4 @@
-require( "x64:ab3f46201c530b4" )
+require( "ui/uieditor/widgets/director/directorselectbuttoninternalcard" )
 
 CoD.DirectorSelectButton = InheritFrom( LUI.UIElement )
 CoD.DirectorSelectButton.__defaultWidth = 300

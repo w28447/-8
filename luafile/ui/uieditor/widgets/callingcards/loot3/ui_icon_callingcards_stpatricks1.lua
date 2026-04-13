@@ -1,4 +1,4 @@
-require( "x64:b7079cabff5b7aa" )
+require( "ui/uieditor/widgets/callingcards/loot3/ui_icon_callingcards_stpatricks_speedlines" )
 
 CoD.ui_icon_callingcards_stpatricks1 = InheritFrom( LUI.UIElement )
 CoD.ui_icon_callingcards_stpatricks1.__defaultWidth = 960

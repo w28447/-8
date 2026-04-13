@@ -1,4 +1,4 @@
-require( "x64:98643364c4fd6c1" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_pirates_sword" )
 
 CoD.CallingCards_Asset_Pirates_armwithsword = InheritFrom( LUI.UIElement )
 CoD.CallingCards_Asset_Pirates_armwithsword.__defaultWidth = 10

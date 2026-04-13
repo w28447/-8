@@ -1,4 +1,4 @@
-require( "x64:3a3b7481aa116b4" )
+require( "ui/uieditor/widgets/common/commonpixelbackingwithtoppadding" )
 
 CoD.LeaguePlayEventEndDelayLobbyMessage = InheritFrom( LUI.UIElement )
 CoD.LeaguePlayEventEndDelayLobbyMessage.__defaultWidth = 512

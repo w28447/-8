@@ -1,5 +1,5 @@
-require( "x64:f26a29f79cd73a1" )
-require( "x64:c19e7fbf81b62c9" )
+require( "ui/uieditor/widgets/codcaster/codcasterobjectivestatuslifeteam" )
+require( "ui/uieditor/widgets/codcaster/codcasterobjectivestatuslifeteam2" )
 
 CoD.CodCasterObjectiveStatusLifeCount = InheritFrom( LUI.UIElement )
 CoD.CodCasterObjectiveStatusLifeCount.__defaultWidth = 520

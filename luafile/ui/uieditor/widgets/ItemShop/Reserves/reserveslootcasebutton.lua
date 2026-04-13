@@ -1,5 +1,5 @@
-require( "x64:c96de52191fe142" )
-require( "x64:e272191e46af824" )
+require( "ui/uieditor/widgets/aar_t8/tierreward/aartierrewardlootcasemeter" )
+require( "ui/uieditor/widgets/common/commontooltip" )
 
 CoD.ReservesLootCaseButton = InheritFrom( LUI.UIElement )
 CoD.ReservesLootCaseButton.__defaultWidth = 160

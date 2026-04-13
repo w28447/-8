@@ -1,4 +1,4 @@
-require( "x64:571464036b79c4c" )
+require( "ui/uieditor/widgets/clans/claninboxrow" )
 
 CoD.Social_Inbox = InheritFrom( LUI.UIElement )
 CoD.Social_Inbox.__defaultWidth = 1920

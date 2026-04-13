@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/mphudwidgets/thrustmeter/thrustmeterchevron" )
-require( "x64:ed2ea2149105e13" )
+require( "ui/uieditor/widgets/mphudwidgets/thrustmeter/thrustmeterchevronthin" )
 
 CoD.ThrustMeterArrows = InheritFrom( LUI.UIElement )
 CoD.ThrustMeterArrows.__defaultWidth = 22

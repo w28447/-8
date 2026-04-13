@@ -1,4 +1,4 @@
-require( "x64:e82e6931d003ae7" )
+require( "ui/uieditor/widgets/codcaster/codcasterbuttonprompt" )
 
 CoD.CodCasterButtonPromptContainer = InheritFrom( LUI.UIElement )
 CoD.CodCasterButtonPromptContainer.__defaultWidth = 264

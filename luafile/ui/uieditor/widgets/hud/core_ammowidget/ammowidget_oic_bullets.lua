@@ -1,4 +1,4 @@
-require( "x64:1dd430b3d1a3a65" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_oic_bulletpip" )
 
 CoD.AmmoWidget_OIC_Bullets = InheritFrom( LUI.UIElement )
 CoD.AmmoWidget_OIC_Bullets.__defaultWidth = 100

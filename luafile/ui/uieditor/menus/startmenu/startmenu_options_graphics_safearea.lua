@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/emptyfocusable" )
 require( "ui/uieditor/widgets/startmenu/startmenu_options_safearea_container" )
 require( "ui/uieditor/widgets/startmenu/startmenu_options_safearea_hints" )
-require( "x64:79d9438392ec34e" )
+require( "ui/uieditor/widgets/pc/startmenu/pc_startmenu_options_hudbounds_hints" )
 
 CoD.StartMenu_Options_Graphics_SafeArea = InheritFrom( CoD.Menu )
 LUI.createMenu.StartMenu_Options_Graphics_SafeArea = function ( f1_arg0, f1_arg1 )

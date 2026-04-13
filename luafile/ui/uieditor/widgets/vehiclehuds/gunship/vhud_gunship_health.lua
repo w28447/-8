@@ -1,5 +1,5 @@
-require( "x64:2cd5497a304c464" )
-require( "x64:d24e4a6046a91b2" )
+require( "ui/uieditor/widgets/vehiclehuds/attackhelicopter/vhud_attack_helicopter_health" )
+require( "ui/uieditor/widgets/vehiclehuds/mothership/vhud_ms_timebar" )
 
 CoD.vhud_gunship_health = InheritFrom( LUI.UIElement )
 CoD.vhud_gunship_health.__defaultWidth = 353

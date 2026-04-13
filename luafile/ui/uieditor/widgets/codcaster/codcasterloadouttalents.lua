@@ -1,6 +1,6 @@
-require( "x64:d5101de353b0ea9" )
-require( "x64:be66d9365a7c497" )
-require( "x64:c28f92be0d05a85" )
+require( "ui/uieditor/widgets/codcaster/codcasterloadoutmoduleequipment" )
+require( "ui/uieditor/widgets/codcaster/codcasterloadoutmoduleperk" )
+require( "ui/uieditor/widgets/codcaster/codcasterloadoutmoduleperkwildcard" )
 
 CoD.CodCasterLoadoutTalents = InheritFrom( LUI.UIElement )
 CoD.CodCasterLoadoutTalents.__defaultWidth = 800

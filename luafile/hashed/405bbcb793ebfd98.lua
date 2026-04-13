@@ -1,6 +1,6 @@
 require( "x64:f57501704c2ea0d" )
 require( "x64:a9edd6e43be05c8" )
-require( "x64:455a007bcf31cdf" )
+require( "ui/uieditor/widgets/notifications/playercard/playercard_killedby" )
 
 CoD.DeathCamPlayerKilledBy = InheritFrom( LUI.UIElement )
 CoD.DeathCamPlayerKilledBy.__defaultWidth = 600

@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/common/commoncornerpips01" )
-require( "x64:3e426332d66c91e" )
+require( "ui/uieditor/widgets/common/commonfocusbrackets" )
 require( "ui/uieditor/widgets/director/directorselectbuttonlines" )
 require( "ui/uieditor/widgets/lobby/common/layoutelements/commonsearchingbar" )
 require( "ui/uieditor/widgets/store/storecommontextbacking" )

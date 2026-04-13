@@ -1,7 +1,7 @@
 require( "ui/uieditor/menus/lobby/common/popups/vodviewer" )
 require( "ui/uieditor/widgets/footer/footercontainer_frontend_right" )
-require( "x64:74864184d366296" )
-require( "x64:63b1db84578334f" )
+require( "ui/uieditor/widgets/lobby/common/layoutelements/commonbglayoutelement03" )
+require( "ui/uieditor/widgets/mp/specialisthub/hubweaponvideobutton" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsbackground" )
 
 CoD.MPSpecialistHUBWeapons = InheritFrom( CoD.Menu )

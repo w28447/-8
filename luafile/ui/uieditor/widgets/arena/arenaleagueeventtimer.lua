@@ -1,4 +1,4 @@
-require( "x64:7ec6bc10fa8e6b3" )
+require( "ui/uieditor/widgets/arena/arenaeventtimerlarge" )
 require( "ui/uieditor/widgets/pc/utility/verticallistspacer" )
 
 CoD.ArenaLeagueEventTimer = InheritFrom( LUI.UIElement )

@@ -1,5 +1,5 @@
-require( "x64:222cfc05e2b18bf" )
-require( "x64:a31000bac763c70" )
+require( "ui/uieditor/widgets/codcaster/codcasterloadoutperkbackground" )
+require( "ui/uieditor/widgets/codcaster/codcasterloadoutperks" )
 
 CoD.CodCasterLoadoutModulePerk = InheritFrom( LUI.UIElement )
 CoD.CodCasterLoadoutModulePerk.__defaultWidth = 110

@@ -1,4 +1,4 @@
-require( "x64:606f9d8814cb296" )
+require( "ui/uieditor/widgets/arena/arenarankwidgetinternal" )
 
 CoD.ArenaRankWidget = InheritFrom( LUI.UIElement )
 CoD.ArenaRankWidget.__defaultWidth = 128

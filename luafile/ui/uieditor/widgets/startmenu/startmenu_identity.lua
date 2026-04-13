@@ -4,7 +4,7 @@ require( "ui/uieditor/widgets/scoreboard/tabbedscoreboardfuibox" )
 require( "ui/uieditor/widgets/startmenu/startmenu_button_callingcards" )
 require( "ui/uieditor/widgets/startmenu/startmenu_button_emblem" )
 require( "ui/uieditor/widgets/startmenu/startmenu_button_hero" )
-require( "x64:56bec199ce0d80e" )
+require( "ui/uieditor/widgets/pc/startmenu/pc_startmenu_button_lg" )
 
 CoD.StartMenu_Identity = InheritFrom( LUI.UIElement )
 CoD.StartMenu_Identity.__defaultWidth = 1920

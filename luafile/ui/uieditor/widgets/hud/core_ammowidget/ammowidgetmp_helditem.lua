@@ -1,10 +1,10 @@
 require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_ball" )
-require( "x64:e8b4c435a1e7674" )
-require( "x64:b3ff9f106da5e7b" )
-require( "x64:18ced87ee825d0f" )
-require( "x64:df55cb39b6ff10b" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_carryitem_battery" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_cleantacos" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_cpdatapackage" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_ctfflag" )
 require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_sdbomb" )
-require( "x64:653dea5df24d16e" )
+require( "ui/uieditor/widgets/mphudwidgets/bountyhunter/ammowidget_bountybag" )
 
 CoD.AmmoWidgetMP_HeldItem = InheritFrom( LUI.UIElement )
 CoD.AmmoWidgetMP_HeldItem.__defaultWidth = 138

@@ -1,4 +1,4 @@
-require( "x64:92371d2c5786619" )
+require( "ui/uieditor/widgets/hud/prematchcountdown/prematchcountdown_backing" )
 
 CoD.PrematchCountdown_BeginsIn = InheritFrom( LUI.UIElement )
 CoD.PrematchCountdown_BeginsIn.__defaultWidth = 1200

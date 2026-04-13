@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/aar_t8/rewards/aarplayerreward_diagonalheaderinternal" )
 require( "ui/uieditor/widgets/footer/footercontainer_frontend_right" )
-require( "x64:2cf4ad39ea2c548" )
-require( "x64:95553e1dbf377f6" )
+require( "ui/uieditor/widgets/itemshop/itemshopbackgroundblur" )
+require( "ui/uieditor/widgets/itemshop/reserves/reservesspecialcontractprogressbar" )
 require( "ui/uieditor/widgets/lobby/common/layoutelements/commonbglayoutelement02" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsmainframe" )
 

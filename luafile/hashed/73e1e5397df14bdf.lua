@@ -1,4 +1,4 @@
-require( "x64:acbed692442191c" )
+require( "ui/uieditor/widgets/common/commoncornerpips02" )
 
 CoD.IcePickHacked = InheritFrom( LUI.UIElement )
 CoD.IcePickHacked.__defaultWidth = 320

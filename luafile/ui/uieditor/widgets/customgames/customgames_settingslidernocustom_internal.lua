@@ -1,4 +1,4 @@
-require( "x64:3e426332d66c91e" )
+require( "ui/uieditor/widgets/common/commonfocusbrackets" )
 require( "ui/uieditor/widgets/customgames/customgames_settingsliderlist" )
 require( "ui/uieditor/widgets/store/storecommontextbacking" )
 require( "x64:8a2bfd7fd77a149" )

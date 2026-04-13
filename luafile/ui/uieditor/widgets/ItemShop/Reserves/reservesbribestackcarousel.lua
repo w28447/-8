@@ -1,7 +1,7 @@
 require( "x64:e587cf1bb800f1f" )
-require( "x64:39d9212b99bae0b" )
-require( "x64:35653ef4ad2299d" )
-require( "x64:b1b346e32476a2e" )
+require( "ui/uieditor/widgets/ItemShop/Reserves/reservesbribestack" )
+require( "ui/uieditor/widgets/scrollbars/horizontalcountertriggerprompts" )
+require( "ui/uieditor/widgets/scrollbars/horizontalcounter" )
 
 CoD.ReservesBribeStackCarousel = InheritFrom( LUI.UIElement )
 CoD.ReservesBribeStackCarousel.__defaultWidth = 248

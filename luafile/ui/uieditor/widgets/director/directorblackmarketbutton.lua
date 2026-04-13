@@ -1,7 +1,7 @@
-require( "x64:8521e10695dbe4b" )
-require( "x64:f26e61036f85224" )
-require( "x64:5361fa275903692" )
-require( "x64:f91cf6839d25705" )
+require( "ui/uieditor/widgets/director/directorblackmarketbuttoninternal" )
+require( "ui/uieditor/widgets/director/directorblackmarketbuttoninternal_v2" )
+require( "ui/uieditor/widgets/director/directorlobbypartytierboost" )
+require( "ui/uieditor/widgets/director/directorlobbytierskipnotification" )
 
 CoD.DirectorBlackMarketButton = InheritFrom( LUI.UIElement )
 CoD.DirectorBlackMarketButton.__defaultWidth = 354

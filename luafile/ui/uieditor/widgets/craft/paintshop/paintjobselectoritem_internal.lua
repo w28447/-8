@@ -1,7 +1,7 @@
-require( "x64:ead428fc6c63720" )
+require( "ui/uieditor/widgets/cac/cac_icontokengrid" )
 require( "ui/uieditor/widgets/cac/cac_labelnew" )
 require( "ui/uieditor/widgets/cac/cac_lock" )
-require( "x64:3e426332d66c91e" )
+require( "ui/uieditor/widgets/common/commonfocusbrackets" )
 require( "ui/uieditor/widgets/director/directorselectbuttonlines" )
 
 CoD.PaintjobSelectorItem_Internal = InheritFrom( LUI.UIElement )

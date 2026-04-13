@@ -1,5 +1,5 @@
-require( "x64:93a575a7ca17e04" )
-require( "x64:9f7790271138ea3" )
+require( "ui/uieditor/widgets/health/healthbar" )
+require( "ui/uieditor/widgets/mphudwidgets/overheadname_playernameandclantag" )
 
 CoD.OverheadName_Killcam_WZ = InheritFrom( LUI.UIElement )
 CoD.OverheadName_Killcam_WZ.__defaultWidth = 200

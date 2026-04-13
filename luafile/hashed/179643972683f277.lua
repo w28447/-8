@@ -1,4 +1,4 @@
-require( "x64:1cd7f68136f9cc0" )
+require( "ui/uieditor/widgets/zmfrontend/laboratory/zm_laboratorydescriptiondividersecondary" )
 
 CoD.zm_red_location_text = InheritFrom( LUI.UIElement )
 CoD.zm_red_location_text.__defaultWidth = 360

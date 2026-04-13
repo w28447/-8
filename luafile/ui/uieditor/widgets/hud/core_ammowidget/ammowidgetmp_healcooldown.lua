@@ -1,10 +1,10 @@
-require( "x64:12322cb4555c55d" )
+require( "ui/uieditor/widgets/codcaster/codcasterloadoutselectionheal" )
 require( "ui/uieditor/widgets/controllerdependent_textbox" )
 require( "x64:33ec8b4b2fb3c47" )
 require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_equipmentempty" )
 require( "x64:24b789df27433d6" )
-require( "x64:2485f9df271d384" )
-require( "x64:37d12d08b0910b6" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidgetmp_ability_flash" )
+require( "ui/uieditor/widgets/mphudwidgets/bountyhunter/bountyhunterhealthcount" )
 
 CoD.AmmowidgetMP_HealCooldown = InheritFrom( LUI.UIElement )
 CoD.AmmowidgetMP_HealCooldown.__defaultWidth = 72

@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframeidentity" )
-require( "x64:d017063fe3d07bc" )
+require( "ui/uieditor/widgets/blackmarket/contracts/bm_contractsframe" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsbackground" )
 require( "ui/uieditor/widgets/store/storespinner" )
 

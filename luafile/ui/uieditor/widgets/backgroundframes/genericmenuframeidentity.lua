@@ -1,6 +1,6 @@
-require( "x64:7efaf2f566c4e95" )
+require( "ui/uieditor/widgets/backgroundframes/identitybadgeupperrightsafe" )
 require( "ui/uieditor/widgets/common/commonheader" )
-require( "x64:71d2a0ed724628e" )
+require( "ui/uieditor/widgets/common/commonidentitywidgetstreamlinedsafeareacontainere" )
 require( "ui/uieditor/widgets/footer/footercontainer_frontend_right" )
 require( "ui/uieditor/widgets/header/header_container_frontend" )
 

@@ -1,6 +1,6 @@
-require( "x64:94acc3cb318e13b" )
+require( "ui/uieditor/widgets/blackmarket/bm_lock" )
 require( "ui/uieditor/widgets/cac/restricteditemwarning" )
-require( "x64:3e426332d66c91e" )
+require( "ui/uieditor/widgets/common/commonfocusbrackets" )
 
 CoD.PositionDraft_Character = InheritFrom( LUI.UIElement )
 CoD.PositionDraft_Character.__defaultWidth = 168

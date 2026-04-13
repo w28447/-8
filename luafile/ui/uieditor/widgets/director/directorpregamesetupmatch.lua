@@ -1,4 +1,4 @@
-require( "x64:6a82c78839bab87" )
+require( "ui/uieditor/widgets/director/directorpregamesetupmatchcontainer" )
 
 CoD.DirectorPreGameSetUpMatch = InheritFrom( LUI.UIElement )
 CoD.DirectorPreGameSetUpMatch.__defaultWidth = 382

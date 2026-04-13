@@ -1,8 +1,8 @@
 require( "ui/uieditor/widgets/cac/loadoutclassitemname" )
-require( "x64:6151942c381b5a6" )
+require( "ui/uieditor/widgets/cac/menuchooseclass/itemwidgets/itemhinttextbreadcrumb" )
 require( "ui/uieditor/widgets/cac/menuchooseclass/itemwidgets/weaponlevelmeterprimary" )
 require( "ui/uieditor/widgets/cac/restricteditemwarning" )
-require( "x64:3e426332d66c91e" )
+require( "ui/uieditor/widgets/common/commonfocusbrackets" )
 require( "ui/uieditor/widgets/director/directorselectbuttonlines" )
 
 CoD.LoadoutClassItemContainerInternal = InheritFrom( LUI.UIElement )

@@ -1,4 +1,4 @@
-require( "x64:a5345e91e58dd3b" )
+require( "ui/uieditor/widgets/aar_t8/arena/aar_leagueplay_placementpip" )
 
 CoD.AAR_LeaguePlay_PlacementList = InheritFrom( LUI.UIElement )
 CoD.AAR_LeaguePlay_PlacementList.__defaultWidth = 500

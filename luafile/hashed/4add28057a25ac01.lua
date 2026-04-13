@@ -1,4 +1,4 @@
-require( "x64:a969aa55b2ced8" )
+require( "ui/uieditor/widgets/common/commonidentitymembernamestreamlined" )
 
 CoD.PaintCanIdentityWidget = InheritFrom( LUI.UIElement )
 CoD.PaintCanIdentityWidget.__defaultWidth = 530

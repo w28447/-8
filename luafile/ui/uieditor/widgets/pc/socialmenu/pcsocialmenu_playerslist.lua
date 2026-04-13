@@ -1,9 +1,9 @@
 require( "ui/uieditor/widgets/genericsimplebutton" )
 require( "ui/uieditor/widgets/pc/socialmenu/pcsocialmenu_playerlistitem" )
 require( "ui/uieditor/widgets/pc/socialmenu/pcsocialmenu_playersearchbox" )
-require( "x64:2999c27eea852ba" )
+require( "ui/uieditor/widgets/pc/socialmenu/pcsocialmenu_playersfiltertab" )
 require( "ui/uieditor/widgets/pc_vscrolllist" )
-require( "x64:49de12b828b3a4" )
+require( "ui/uieditor/widgets/social/pc_socialmenu_addfriendtextbox" )
 
 CoD.PCSocialMenu_PlayersList = InheritFrom( LUI.UIElement )
 CoD.PCSocialMenu_PlayersList.__defaultWidth = 626

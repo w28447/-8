@@ -1,6 +1,6 @@
 require( "x64:1bbde4283bb35f8" )
-require( "x64:4b67b3d78299a63" )
-require( "x64:c3fa19037d61cad" )
+require( "ui/uieditor/menus/wz/wzpersonalizecharacterinspect" )
+require( "ui/uieditor/widgets/mp/specialisthub/hubspecialist_character" )
 
 CoD.WZPersonalizeCharacter_StandardFrameWidget = InheritFrom( LUI.UIElement )
 CoD.WZPersonalizeCharacter_StandardFrameWidget.__defaultWidth = 906

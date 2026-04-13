@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/common/commondetailpanel" )
-require( "x64:110e986e11c842b" )
+require( "ui/uieditor/widgets/startmenu/startmenu_options_buttonaction" )
 require( "ui/uieditor/widgets/startmenu/startmenu_options_simplecheckoption" )
-require( "x64:37c2d1d7ea091ae" )
+require( "ui/uieditor/widgets/startmenu/startmenu_options_textboxoption" )
 require( "ui/uieditor/widgets/verticalscrollingtextbox" )
 
 CoD.StartMenu_Options_SignInForm = InheritFrom( LUI.UIElement )

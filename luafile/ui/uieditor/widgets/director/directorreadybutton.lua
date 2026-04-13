@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/border" )
-require( "x64:acbed692442191c" )
+require( "ui/uieditor/widgets/common/commoncornerpips02" )
 require( "ui/uieditor/widgets/director/directorselectbuttoninternal" )
-require( "x64:1f846296f1a1b81" )
+require( "ui/uieditor/widgets/director/DirectorSelectButtonMiniInternal" )
 
 CoD.DirectorReadyButton = InheritFrom( LUI.UIElement )
 CoD.DirectorReadyButton.__defaultWidth = 374

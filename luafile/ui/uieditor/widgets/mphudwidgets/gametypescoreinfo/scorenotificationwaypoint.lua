@@ -1,4 +1,4 @@
-require( "x64:5609625e0a9984a" )
+require( "ui/uieditor/widgets/mphudwidgets/gametypescoreinfo/scorenotificationwaypoint_capture" )
 require( "ui/uieditor/widgets/mphudwidgets/waypointcenter" )
 require( "x64:76c14e1bc07cd98" )
 

@@ -1,6 +1,6 @@
-require( "x64:b8f158fc5a82d1b" )
-require( "x64:6cebf5e7d0d5c7d" )
-require( "x64:b7436bffe7fccf1" )
+require( "ui/uieditor/widgets/cac/loadoutclassitemcontainerinternal" )
+require( "ui/uieditor/widgets/cac/weaponvariants/weaponvariantpip" )
+require( "ui/uieditor/widgets/cac/weaponvariants/weaponvarianttriggers" )
 
 CoD.LoadoutClassItemContainer = InheritFrom( LUI.UIElement )
 CoD.LoadoutClassItemContainer.__defaultWidth = 346

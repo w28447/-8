@@ -1,9 +1,9 @@
-require( "x64:1e4812bc9d39ec5" )
-require( "x64:6e89585b0aec491" )
+require( "ui/uieditor/widgets/arena/arenaleagueplaybg" )
+require( "ui/uieditor/widgets/arena/leagueplayendrankupaniminternal" )
 require( "ui/uieditor/widgets/common/commonheader" )
 require( "ui/uieditor/widgets/footer/footercontainer_frontend_right" )
 require( "ui/uieditor/widgets/header/header_container_frontend" )
-require( "x64:f027dcc6409e42c" )
+require( "ui/uieditor/widgets/pc/pc_motd_buttons" )
 
 CoD.LeaguePlayEndRankUpAnim = InheritFrom( CoD.Menu )
 LUI.createMenu.LeaguePlayEndRankUpAnim = function ( f1_arg0, f1_arg1 )

@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframe" )
-require( "x64:e9cfc3cb5356fa5" )
+require( "ui/uieditor/widgets/common/commontabbar" )
 
 CoD.WeaponTabbedAccessoriesSelect = InheritFrom( CoD.Menu )
 LUI.createMenu.WeaponTabbedAccessoriesSelect = function ( f1_arg0, f1_arg1 )

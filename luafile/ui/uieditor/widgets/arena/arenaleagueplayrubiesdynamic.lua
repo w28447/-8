@@ -1,4 +1,4 @@
-require( "x64:d2ef4b4071bcd0a" )
+require( "ui/uieditor/widgets/arena/arenaleagueplayrubies" )
 
 CoD.ArenaLeaguePlayRubiesDynamic = InheritFrom( LUI.UIElement )
 CoD.ArenaLeaguePlayRubiesDynamic.__defaultWidth = 140

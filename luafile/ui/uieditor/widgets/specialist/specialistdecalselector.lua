@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/social/joinbuttonprompt" )
-require( "x64:2f72126533b6116" )
+require( "ui/uieditor/widgets/specialist/specialistdecalentry" )
 
 CoD.SpecialistDecalSelector = InheritFrom( LUI.UIElement )
 CoD.SpecialistDecalSelector.__defaultWidth = 540

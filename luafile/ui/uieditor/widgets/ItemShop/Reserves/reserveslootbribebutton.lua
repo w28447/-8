@@ -1,4 +1,4 @@
-require( "x64:e272191e46af824" )
+require( "ui/uieditor/widgets/common/commontooltip" )
 
 CoD.ReservesLootBribeButton = InheritFrom( LUI.UIElement )
 CoD.ReservesLootBribeButton.__defaultWidth = 160

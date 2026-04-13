@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/common/commoncenteredpopup" )
-require( "x64:fe9df26e257edb3" )
+require( "ui/uieditor/widgets/customgames/customgames_settingslidernocustom" )
 require( "ui/uieditor/widgets/scrollbars/verticalcounter" )
 require( "ui/uieditor/widgets/pc/pc_smallclosebutton" )
 

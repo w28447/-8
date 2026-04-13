@@ -1,4 +1,4 @@
-require( "x64:34a92edebb7e23a" )
+require( "ui/uieditor/widgets/hud/mp_hacked/hud_hacked_streaks_widget" )
 require( "ui/uieditor/widgets/hud/mp_scorestreakwidget/scrstk_container" )
 
 CoD.ScrStk_ContainerWrapper = InheritFrom( LUI.UIElement )

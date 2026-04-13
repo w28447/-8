@@ -1,4 +1,4 @@
-require( "x64:1f846296f1a1b81" )
+require( "ui/uieditor/widgets/director/DirectorSelectButtonMiniInternal" )
 
 CoD.SurveyButton = InheritFrom( LUI.UIElement )
 CoD.SurveyButton.__defaultWidth = 400

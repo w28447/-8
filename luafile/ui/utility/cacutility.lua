@@ -2451,7 +2451,7 @@ CoD.CACUtility.GetCustomClassModel = function ( f95_arg0, f95_arg1, f95_arg2, f9
 			end
 		else
 			if not f98_arg2 then
-				f98_arg2 = 0xB67F7FB585D594C
+				f98_arg2 = menu/empty
 			end
 			local f98_local4 = f98_local0:create( "name" )
 			f98_local4:set( Engine[0xF9F1239CFD921FE]( f98_arg2 ) )
@@ -7061,9 +7061,9 @@ CoD.CACUtility.GetRemoveItemDescription = function ( f368_arg0, f368_arg1 )
 end
 
 CoD.CACUtility.RemoveEmptyString = function ( f369_arg0 )
-	if f369_arg0 == 0xB67F7FB585D594C then
+	if f369_arg0 == menu/empty then
 		return 0x0
-	elseif type( f369_arg0 ) == "string" and Engine[0xF9F1239CFD921FE]( 0xB67F7FB585D594C ) == f369_arg0 then
+	elseif type( f369_arg0 ) == "string" and Engine[0xF9F1239CFD921FE]( menu/empty ) == f369_arg0 then
 		return ""
 	else
 		return f369_arg0

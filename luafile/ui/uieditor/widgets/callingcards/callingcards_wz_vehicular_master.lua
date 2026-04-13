@@ -1,6 +1,6 @@
-require( "x64:d717612533034a4" )
-require( "x64:fca8b7caff8cb66" )
-require( "x64:f6ffffbea858c2c" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_cold_breath" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_firballs" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_robotdawg" )
 
 CoD[0x9F34ECBDE25BB8F] = InheritFrom( LUI.UIElement )
 CoD[0x9F34ECBDE25BB8F].__defaultWidth = 960

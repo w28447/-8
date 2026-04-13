@@ -1,7 +1,7 @@
-require( "x64:eb2be6535e5c73b" )
-require( "x64:378659febfa9fa6" )
-require( "x64:41c9011e64b1ca0" )
-require( "x64:151a9f89b614c73" )
+require( "ui/uieditor/widgets/aar_t8/rewards/aarclassrewardcacpreview_zm" )
+require( "ui/uieditor/widgets/aar_t8/rewards/aarclassrewardpreview_zm" )
+require( "ui/uieditor/widgets/aar_t8/rewards/aarrewardbacker_zm" )
+require( "ui/uieditor/widgets/aar_t8/rewards/aarrewardheader_zm" )
 require( "ui/uieditor/widgets/pc/utility/verticallistspacer" )
 
 CoD.AARClassReward_ZM = InheritFrom( LUI.UIElement )

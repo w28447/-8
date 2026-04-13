@@ -1,4 +1,4 @@
-require( "x64:d8954dabf937655" )
+require( "ui/uieditor/widgets/challenges/challengessummarydarkops_internal" )
 
 CoD.ChallengesSummaryDarkOps = InheritFrom( LUI.UIElement )
 CoD.ChallengesSummaryDarkOps.__defaultWidth = 200

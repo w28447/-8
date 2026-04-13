@@ -211,18 +211,18 @@ LUI.OverrideFunction_Remove = function ( f22_arg0, f22_arg1, f22_arg2 )
 	table.remove( f22_local0, LuaUtils.FindItemInArray( f22_local0, f22_arg2 ) )
 end
 
-require( "x64:7d42cfae6e90891" )
-require( "x64:4c3a3ee87cd66f3" )
+require( "ui/lui/luielement" )
+require( "ui/lui/luiroot" )
 require( "ui/lui/luitimer" )
-require( "x64:1a55ff918c73cd4" )
-require( "x64:b7dd1806fb18b7" )
-require( "x64:2cf17e1911faf98" )
+require( "ui/lui/luiimage" )
+require( "ui/lui/luilist" )
+require( "ui/lui/luitext" )
 require( "ui/lui/luiverticallist" )
-require( "x64:c3156467692bf47" )
-require( "x64:8e9b767aaa6fd74" )
+require( "ui/lui/luihorizontallist" )
+require( "ui/lui/luiframe" )
 require( "ui/lui/luigridlayout" )
-require( "x64:1845c3416695820" )
-require( "x64:280ec61da7bd5a7" )
+require( "ui/lui/luiwheellayout" )
+require( "ui/lui/luifixedaspectratioimage" )
 if not debug then
 	debug = {}
 end

@@ -1,4 +1,4 @@
-require( "x64:1053cc2f0b27dee" )
+require( "ui/uieditor/widgets/notifications/xp/doublexpcardiconsinternal" )
 
 CoD.DoubleXPCardIconsRightAligned = InheritFrom( LUI.UIElement )
 CoD.DoubleXPCardIconsRightAligned.__defaultWidth = 129

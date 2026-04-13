@@ -1,4 +1,4 @@
-require( "x64:5f8cf56752aa71b" )
+require( "ui/uieditor/widgets/commonbuttonoutline" )
 
 CoD.WeaponPersonalizeSlotInternal = InheritFrom( LUI.UIElement )
 CoD.WeaponPersonalizeSlotInternal.__defaultWidth = 152

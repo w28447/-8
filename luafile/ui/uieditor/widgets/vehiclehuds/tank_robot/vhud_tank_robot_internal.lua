@@ -1,4 +1,4 @@
-require( "x64:6300b2a585cf679" )
+require( "ui/uieditor/widgets/vehiclehuds/tank_robot/vhud_tank_robot_reticle" )
 
 CoD.vhud_tank_robot_internal = InheritFrom( LUI.UIElement )
 CoD.vhud_tank_robot_internal.__defaultWidth = 1920

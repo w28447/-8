@@ -1,4 +1,4 @@
-require( "x64:5150cdf5affac6" )
+require( "ui/uieditor/widgets/endgameflow/playofthematchgamertagbacking" )
 
 CoD.PlayOfTheMatchGamertag = InheritFrom( LUI.UIElement )
 CoD.PlayOfTheMatchGamertag.__defaultWidth = 1600

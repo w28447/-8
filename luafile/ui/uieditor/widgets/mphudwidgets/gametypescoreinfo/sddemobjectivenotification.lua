@@ -1,5 +1,5 @@
-require( "x64:6c3c8e6b1823b97" )
-require( "x64:40cf6dbf464a83d" )
+require( "ui/uieditor/widgets/mphudwidgets/gametypescoreinfo/scorenotificationwaypoint" )
+require( "ui/uieditor/widgets/mphudwidgets/gametypescoreinfo/sddemobjectivenotification_bombplanted" )
 
 CoD.SDDemObjectiveNotification = InheritFrom( LUI.UIElement )
 CoD.SDDemObjectiveNotification.__defaultWidth = 142

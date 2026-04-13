@@ -1,6 +1,6 @@
-require( "x64:79fe6ac43673588" )
-require( "x64:c4873e75b9cce20" )
-require( "x64:959b3179a015708" )
+require( "ui/uieditor/widgets/challenges/challenges_framewidget_titlebackground" )
+require( "ui/uieditor/widgets/craft/emblemeditor/decalpreview" )
+require( "ui/uieditor/widgets/craft/emblemeditor/decaltypebutton" )
 require( "ui/uieditor/widgets/craft/emblemeditor/emblemiconnew" )
 require( "ui/uieditor/widgets/scrollbars/verticalcounter" )
 

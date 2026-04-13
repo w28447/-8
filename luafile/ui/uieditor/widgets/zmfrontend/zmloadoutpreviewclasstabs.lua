@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/bumperbuttonwithkeymousetext" )
-require( "x64:ff6e730e9cff499" )
+require( "ui/uieditor/widgets/zmfrontend/zmloadoutpreviewclasspippc" )
 
 CoD.ZMLoadoutPreviewClassTabs = InheritFrom( LUI.UIElement )
 CoD.ZMLoadoutPreviewClassTabs.__defaultWidth = 316

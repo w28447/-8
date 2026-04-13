@@ -1,4 +1,4 @@
-require( "x64:46728994d8c06c0" )
+require( "ui/uieditor/widgets/common/commondetailpanel02" )
 require( "x64:a2b686853ff98c0" )
 require( "ui/uieditor/widgets/zmfrontend/zmtrialmedal" )
 

@@ -1,5 +1,5 @@
-require( "x64:1590f9a531858e0" )
-require( "x64:3e426332d66c91e" )
+require( "ui/uieditor/widgets/cac/cac_listbuttonlabel" )
+require( "ui/uieditor/widgets/common/commonfocusbrackets" )
 require( "ui/uieditor/widgets/director/directorselectbuttonlines" )
 
 CoD.CodCasterTeamLogoButton = InheritFrom( LUI.UIElement )

@@ -1,5 +1,5 @@
-require( "x64:5cb43180fc65bb6" )
-require( "x64:b49b35877fd007c" )
+require( "ui/uieditor/widgets/blackmarket/bm_goldbarlarge" )
+require( "ui/uieditor/widgets/craft/editordrawemblemfocusable" )
 
 CoD.EmblemDrawWidgetPreview = InheritFrom( LUI.UIElement )
 CoD.EmblemDrawWidgetPreview.__defaultWidth = 540

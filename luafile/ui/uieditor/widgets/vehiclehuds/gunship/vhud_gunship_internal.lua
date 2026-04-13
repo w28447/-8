@@ -1,6 +1,6 @@
-require( "x64:d03017b72a4f0bb" )
-require( "x64:413629d25e31f4c" )
-require( "x64:d2b07b098532876" )
+require( "ui/uieditor/widgets/vehiclehuds/gunship/vhud_gunship_buttonprompt" )
+require( "ui/uieditor/widgets/vehiclehuds/gunship/vhud_gunship_recticle" )
+require( "ui/uieditor/widgets/vehiclehuds/vhud_layoutdotlinegrid" )
 
 CoD.vhud_gunship_internal = InheritFrom( LUI.UIElement )
 CoD.vhud_gunship_internal.__defaultWidth = 1920

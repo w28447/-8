@@ -1,4 +1,4 @@
-require( "x64:56f246f7a61c753" )
+require( "ui/uieditor/widgets/specialist/jumpkitselected_internal" )
 
 CoD.JumpkitSelected = InheritFrom( LUI.UIElement )
 CoD.JumpkitSelected.__defaultWidth = 152

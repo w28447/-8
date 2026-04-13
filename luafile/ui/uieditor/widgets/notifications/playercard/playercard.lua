@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/callingcards/callingcards_framewidget" )
-require( "x64:8d3de31d16f3fdf" )
+require( "ui/uieditor/widgets/notifications/playercard/playercard_label" )
 
 CoD.PlayerCard = InheritFrom( LUI.UIElement )
 CoD.PlayerCard.__defaultWidth = 556

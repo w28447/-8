@@ -1,5 +1,5 @@
-require( "x64:3e426332d66c91e" )
-require( "x64:dab8c3a6f5b136c" )
+require( "ui/uieditor/widgets/common/commonfocusbrackets" )
+require( "ui/uieditor/widgets/common/CommonPixelBacking" )
 require( "ui/uieditor/widgets/director/directorselectbuttonlines" )
 
 CoD.Social_PartySettingsButtonInternal = InheritFrom( LUI.UIElement )

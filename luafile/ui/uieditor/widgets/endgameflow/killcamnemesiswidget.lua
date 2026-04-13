@@ -1,4 +1,4 @@
-require( "x64:30310b25e42d7ee" )
+require( "ui/uieditor/widgets/hud/killcam/killcamnemesisarrow" )
 
 CoD.KillcamNemesisWidget = InheritFrom( LUI.UIElement )
 CoD.KillcamNemesisWidget.__defaultWidth = 327

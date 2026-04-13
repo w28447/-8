@@ -1,4 +1,4 @@
-require( "x64:f2d4920f28ccd3c" )
+require( "ui/uieditor/widgets/warzone/warzonedpadbutton" )
 
 CoD.TabbedMultiItemPickup_NavigationPrompt = InheritFrom( LUI.UIElement )
 CoD.TabbedMultiItemPickup_NavigationPrompt.__defaultWidth = 64

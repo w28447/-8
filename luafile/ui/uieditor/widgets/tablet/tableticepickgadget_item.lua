@@ -1,4 +1,4 @@
-require( "x64:df74eb6f7a902b4" )
+require( "ui/uieditor/widgets/tablet/tableticepickgadget_itemblock" )
 
 CoD.TabletIcePickGadget_Item = InheritFrom( LUI.UIElement )
 CoD.TabletIcePickGadget_Item.__defaultWidth = 144

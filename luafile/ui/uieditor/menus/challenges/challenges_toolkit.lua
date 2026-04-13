@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframeidentity" )
 require( "ui/uieditor/widgets/common/common_tabbar_center" )
-require( "x64:81a24c5340caa1e" )
+require( "ui/uieditor/widgets/common/commontabbarbacking" )
 
 CoD.Challenges_Toolkit = InheritFrom( CoD.Menu )
 LUI.createMenu.Challenges_Toolkit = function ( f1_arg0, f1_arg1 )

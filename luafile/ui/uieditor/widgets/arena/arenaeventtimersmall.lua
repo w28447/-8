@@ -1,5 +1,5 @@
-require( "x64:eed3e1046bfa5f2" )
-require( "x64:ccd687a331e7a31" )
+require( "ui/uieditor/widgets/arena/arenaeventtimersmallendsin" )
+require( "ui/uieditor/widgets/arena/arenaeventtimersmallstartsin" )
 
 CoD.ArenaEventTimerSmall = InheritFrom( LUI.UIElement )
 CoD.ArenaEventTimerSmall.__defaultWidth = 140

@@ -4189,7 +4189,7 @@ end
 
 CoD.PCUtility.GetKeyboardKeybindOnly = function ( f427_arg0, f427_arg1 )
 	local f427_local0, f427_local1 = Engine[0x7C4C4DBF61B869E]( f427_arg0, f427_arg1, 0, true )
-	return f427_local1 or f427_local0 or "[" .. Engine[0xF9F1239CFD921FE]( 0xB67F7FB585D594C ) .. "]"
+	return f427_local1 or f427_local0 or "[" .. Engine[0xF9F1239CFD921FE]( menu/empty ) .. "]"
 end
 
 CoD.PCUtility.IsCurrentHudOccluded = function ( f428_arg0, f428_arg1 )

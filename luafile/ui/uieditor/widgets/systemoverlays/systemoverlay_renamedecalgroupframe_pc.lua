@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/craft/emblemeditor/craftlayernumber" )
-require( "x64:c2f840fd2528321" )
-require( "x64:3447fe281be3ac4" )
+require( "ui/uieditor/widgets/craft/emblemeditor/emblemoptionsbutton" )
+require( "ui/uieditor/widgets/pc/emblemrenametextbox" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsmainframe" )
 require( "ui/uieditor/widgets/systemoverlays/systemoverlay_layout_foregroundmultilinetext" )
 

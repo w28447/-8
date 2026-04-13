@@ -1,4 +1,4 @@
-require( "x64:6d00856fffb788b" )
+require( "ui/uieditor/widgets/hud/killcam/killcamkilledbyweapon" )
 require( "x64:e6cc0e76ed868e0" )
 
 CoD.KillcamHeader = InheritFrom( LUI.UIElement )

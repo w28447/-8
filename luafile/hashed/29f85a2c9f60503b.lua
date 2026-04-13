@@ -1,4 +1,4 @@
-require( "x64:e3e07a40c41859f" )
+require( "ui/uieditor/widgets/blackmarket/fx_emberadd" )
 require( "x64:de018cc57b5fcfd" )
 require( "x64:34bad1af88ea61f" )
 require( "x64:c703989346b8301" )

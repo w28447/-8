@@ -1,5 +1,5 @@
-require( "x64:f3b71d7ea8417f2" )
-require( "x64:51a3136d617a48d" )
+require( "ui/uieditor/widgets/director/directorlobbyclientgamertag" )
+require( "ui/uieditor/widgets/zmfrontend/zmreadyup" )
 
 CoD.DirectorCharacterZM = InheritFrom( LUI.UIElement )
 CoD.DirectorCharacterZM.__defaultWidth = 240

@@ -1,4 +1,4 @@
-require( "x64:bdc4956715f81d7" )
+require( "ui/uieditor/widgets/pc/cyclinglist_arrow" )
 
 CoD.ChangeLayerArrows = InheritFrom( LUI.UIElement )
 CoD.ChangeLayerArrows.__defaultWidth = 250

@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/bumperbuttonwithkeymousetext" )
-require( "x64:673b9bfc92c298b" )
+require( "ui/uieditor/widgets/director/directorlobbymember" )
 
 CoD.InspectionPlayerList = InheritFrom( LUI.UIElement )
 CoD.InspectionPlayerList.__defaultWidth = 1920

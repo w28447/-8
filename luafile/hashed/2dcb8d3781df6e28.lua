@@ -1,4 +1,4 @@
-require( "x64:cc9ca892a619096" )
+require( "ui/uieditor/widgets/blackmarket/bm_iteminfocompactpanel" )
 require( "x64:68bcc307dcc87ad" )
 require( "x64:b3df56b6d23c7ac" )
 

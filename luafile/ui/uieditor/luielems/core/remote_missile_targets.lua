@@ -1,4 +1,4 @@
-require( "x64:fb3b8c05a446f3c" )
+require( "ui/uieditor/widgets/vehiclehuds/remotemissiletarget" )
 
 CoD.remote_missile_targets = InheritFrom( CoD.Menu )
 LUI.createMenu.remote_missile_targets = function ( f1_arg0, f1_arg1 )

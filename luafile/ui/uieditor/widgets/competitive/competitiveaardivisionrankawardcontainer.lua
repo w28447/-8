@@ -1,5 +1,5 @@
-require( "x64:9ec6c73b605edb3" )
-require( "x64:3d775f8faa1b3e7" )
+require( "ui/uieditor/widgets/competitive/competitiveaardivisionrankawardplaces" )
+require( "ui/uieditor/widgets/competitive/competitiveaardivisionrankawardtittle" )
 require( "ui/uieditor/widgets/lobby/common/fe_titlenumbrdr" )
 
 CoD.CompetitiveAARDivisionRankAwardcontainer = InheritFrom( LUI.UIElement )

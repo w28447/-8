@@ -1,4 +1,4 @@
-require( "x64:4375d7f763f4320" )
+require( "ui/uieditor/widgets/endgameflow/codcasterteambasebarcolor" )
 
 CoD.CODCasterTeamBaseBar = InheritFrom( LUI.UIElement )
 CoD.CODCasterTeamBaseBar.__defaultWidth = 12

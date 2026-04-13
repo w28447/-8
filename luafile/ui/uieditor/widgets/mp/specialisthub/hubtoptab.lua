@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/bumperbuttonwithkeymousetext" )
-require( "x64:99377e746b9e938" )
-require( "x64:7e4c7adf0efc5a5" )
+require( "ui/uieditor/widgets/common/commonscalinglisthorizontalpips" )
+require( "ui/uieditor/widgets/mp/specialisthub/hubcharactertabitem" )
 
 CoD.HubTopTab = InheritFrom( LUI.UIElement )
 CoD.HubTopTab.__defaultWidth = 600

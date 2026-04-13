@@ -2,7 +2,7 @@ require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_backline" )
 require( "ui/uieditor/widgets/hud/cp_damagewidget/damagewidget_dot" )
 require( "ui/uieditor/widgets/hud/prematchcountdown/prematchcountdown_beginsin" )
 require( "ui/uieditor/widgets/hud/prematchcountdown/prematchcountdown_iconglowpanel" )
-require( "x64:2e8bda03f367af" )
+require( "ui/uieditor/widgets/hud/prematchcountdown/prematchcountdown_numbersinternal" )
 require( "ui/uieditor/widgets/lobby/common/fe_buttonpanel" )
 
 CoD.PrematchCountdown_Numbers = InheritFrom( LUI.UIElement )

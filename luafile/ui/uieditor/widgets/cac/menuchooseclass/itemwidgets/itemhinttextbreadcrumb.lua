@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/cac/newbreadcrumb" )
-require( "x64:acbed692442191c" )
+require( "ui/uieditor/widgets/common/commoncornerpips02" )
 require( "ui/uieditor/widgets/pc/utility/verticallistspacer" )
 
 CoD.ItemHintTextBreadcrumb = InheritFrom( LUI.UIElement )

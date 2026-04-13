@@ -1,4 +1,4 @@
-require( "x64:b333544afc2504a" )
+require( "ui/uieditor/widgets/hud/mpgametypes/mppropcontrolsinternal" )
 
 CoD.MPPropControlsSafeAreaContainer = InheritFrom( LUI.UIElement )
 CoD.MPPropControlsSafeAreaContainer.__defaultWidth = 1920

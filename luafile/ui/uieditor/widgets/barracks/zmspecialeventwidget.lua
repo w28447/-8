@@ -1,6 +1,6 @@
-require( "x64:3b9fcb643fbe613" )
-require( "x64:46728994d8c06c0" )
-require( "x64:31319dd92d58d3b" )
+require( "ui/uieditor/widgets/barracks/specialeventwidget" )
+require( "ui/uieditor/widgets/common/commondetailpanel02" )
+require( "ui/uieditor/widgets/startmenu/startmenu_barracks_factioncalling_button" )
 require( "ui/uieditor/widgets/startmenu/startmenu_button_lg" )
 
 CoD.ZMSpecialEventWidget = InheritFrom( LUI.UIElement )

@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/vehiclehuds/buttons/vhud_generic_button_layout" )
 require( "ui/uieditor/widgets/vehiclehuds/ground/vehicleground_vignettecontainer" )
-require( "x64:fd9c58738e6a329" )
+require( "ui/uieditor/widgets/vehiclehuds/turret/vhud_turret_reticle" )
 
 CoD.vhud_turret_internal = InheritFrom( LUI.UIElement )
 CoD.vhud_turret_internal.__defaultWidth = 1920

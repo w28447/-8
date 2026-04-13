@@ -1,7 +1,7 @@
-require( "x64:2bf789c3c32d132" )
-require( "x64:945c1007275eb71" )
-require( "x64:8d25a159c5da22e" )
-require( "x64:e9502b110907a96" )
+require( "ui/uieditor/widgets/aar_t8/levelup/aarlevelupoverlay_levelupbg" )
+require( "ui/uieditor/widgets/arena/arenadivisionplacementbonusinternal" )
+require( "ui/uieditor/widgets/arena/arenadivisionuptittleinternal" )
+require( "ui/uieditor/widgets/competitive/competitiveaardivisionrankawardcontainer" )
 require( "ui/uieditor/widgets/footer/footercontainer_frontend_right" )
 
 CoD.AAR_LeaguePlayDivPlacement = InheritFrom( CoD.Menu )

@@ -1,4 +1,4 @@
-require( "x64:e983712ed0b95d3" )
+require( "ui/uieditor/widgets/director/directorfindgameplaylistinfotimed2xp" )
 require( "ui/uieditor/widgets/notifications/notificationqueuewidgets/notificationrewardqueuewidgets/notification2xpreward" )
 
 CoD.DoubleXPPromotionalIcon = InheritFrom( LUI.UIElement )

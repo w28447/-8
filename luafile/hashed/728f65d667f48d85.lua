@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/hud/deadspectate/deadspectate" )
 require( "x64:248fb16d4210b9d" )
-require( "x64:248cf55ddbe77b" )
+require( "ui/uieditor/widgets/warzone/warzoneinventory" )
 
 CoD.WZHudMenus = InheritFrom( LUI.UIElement )
 CoD.WZHudMenus.__defaultWidth = 910

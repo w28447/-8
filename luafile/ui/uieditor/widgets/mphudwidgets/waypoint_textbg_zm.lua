@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/hud/corner9slice" )
 require( "x64:7122e658d3b8228" )
-require( "x64:37832f96cf49cd2" )
+require( "ui/uieditor/widgets/mphudwidgets/waypoint_textwithbg_zm" )
 
 CoD.Waypoint_TextBG_Zm = InheritFrom( LUI.UIElement )
 CoD.Waypoint_TextBG_Zm.__defaultWidth = 120

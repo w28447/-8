@@ -1,7 +1,7 @@
 require( "x64:c7393046816f760" )
-require( "x64:11189e39122045c" )
-require( "x64:804ba90b949afea" )
-require( "x64:b5b62ca685f6792" )
+require( "ui/uieditor/widgets/arena/arenaprogresswidgetrank" )
+require( "ui/uieditor/widgets/arena/arenaprogresswidgetrubyinfo" )
+require( "ui/uieditor/widgets/arena/arenarubyprogresswidget" )
 
 CoD.ArenaProgressWidget = InheritFrom( LUI.UIElement )
 CoD.ArenaProgressWidget.__defaultWidth = 1110

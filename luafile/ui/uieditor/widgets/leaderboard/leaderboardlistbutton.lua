@@ -1,4 +1,4 @@
-require( "x64:46897811dbbcd6f" )
+require( "ui/uieditor/widgets/common/commonlistbuttonshort_internal" )
 
 CoD.LeaderboardListButton = InheritFrom( LUI.UIElement )
 CoD.LeaderboardListButton.__defaultWidth = 303

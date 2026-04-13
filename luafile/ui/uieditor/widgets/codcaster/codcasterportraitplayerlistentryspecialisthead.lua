@@ -1,4 +1,4 @@
-require( "x64:2051412fc9f510b" )
+require( "ui/uieditor/widgets/codcaster/codcasterportraitplayerlistentryspecialistheadicon" )
 
 CoD.CodCasterPortraitPlayerListEntrySpecialistHead = InheritFrom( LUI.UIElement )
 CoD.CodCasterPortraitPlayerListEntrySpecialistHead.__defaultWidth = 133

@@ -1,4 +1,4 @@
-require( "x64:feb97a42d076e79" )
+require( "ui/uieditor/widgets/store/upsellbanner_internal" )
 
 CoD.UpsellBanner = InheritFrom( LUI.UIElement )
 CoD.UpsellBanner.__defaultWidth = 540

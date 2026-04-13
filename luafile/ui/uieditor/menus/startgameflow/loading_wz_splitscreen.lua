@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/notifications/xp/doublexpiconsleftaligned" )
-require( "x64:2d858628f53d460" )
+require( "ui/uieditor/widgets/startgameflow/loadingscreenloadbar" )
 require( "x64:bd860e6848b37d7" )
 require( "x64:6ee653ade3452f5" )
 require( "x64:c0887595cfb6bb1" )

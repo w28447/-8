@@ -1,4 +1,4 @@
-require( "x64:4c1e369e15a4502" )
+require( "ui/uieditor/widgets/common/commonctobjectivebacking" )
 
 CoD.ct_shared_ingame_objective = InheritFrom( CoD.Menu )
 CoD.ct_shared_ingame_objective.__stateMap = {

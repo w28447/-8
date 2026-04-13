@@ -1,4 +1,4 @@
-require( "x64:8ffe7c4e01e7052" )
+require( "ui/uieditor/widgets/cac/itemnewbreadcrumbwidget" )
 require( "x64:5f03a7cad3f6de0" )
 
 CoD.CamoSlot = InheritFrom( LUI.UIElement )

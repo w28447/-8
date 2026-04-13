@@ -1,6 +1,6 @@
-require( "x64:fbffc86e9a93477" )
-require( "x64:77520438c104615" )
-require( "x64:c438d75d63d852f" )
+require( "ui/uieditor/widgets/blackmarket/bm_iteminfopanel" )
+require( "ui/uieditor/widgets/craft/emblemeditor/emblemdrawwidgetpreview" )
+require( "ui/uieditor/widgets/playercard/selfidentitybadgepreview" )
 require( "ui/uieditor/widgets/scoreboard/tabbedscoreboardfuibox" )
 require( "x64:c7e896ee4bc3f8" )
 

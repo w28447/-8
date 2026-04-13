@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/onoffimage" )
-require( "x64:3b67ce93166e913" )
+require( "ui/uieditor/widgets/zmfrontend/cac/zmitemslotwide" )
 
 CoD.Armory_UberAttachmentSlot = InheritFrom( LUI.UIElement )
 CoD.Armory_UberAttachmentSlot.__defaultWidth = 325

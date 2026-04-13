@@ -1,5 +1,5 @@
-require( "x64:182408ff493d0c1" )
-require( "x64:ccda226110a5e1" )
+require( "ui/uieditor/widgets/hud/prematchcountdown/prematchcountdown_2xpbadge" )
+require( "ui/uieditor/widgets/hud/prematchcountdown/prematchcountdown_2xpweaponbadge" )
 require( "ui/uieditor/widgets/hud/prematchcountdown/prematchcountdown_beginsin" )
 require( "x64:683120446682173" )
 

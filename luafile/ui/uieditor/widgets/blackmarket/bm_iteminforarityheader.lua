@@ -1,4 +1,4 @@
-require( "x64:bc87ac3fc76bb82" )
+require( "ui/uieditor/widgets/itemshop/contracts/contractrarityheader" )
 
 CoD.BM_ItemInfoRarityHeader = InheritFrom( LUI.UIElement )
 CoD.BM_ItemInfoRarityHeader.__defaultWidth = 545

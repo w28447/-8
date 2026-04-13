@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/bumperbuttonwithkeymousetext" )
-require( "x64:a22e4c82c4ffe1a" )
-require( "x64:14ab47ffb48a077" )
+require( "ui/uieditor/widgets/cac/caccustomclasslistbutton" )
+require( "ui/uieditor/widgets/pc/pc_tabsarrow" )
 
 CoD.CustomClassTabs = InheritFrom( LUI.UIElement )
 CoD.CustomClassTabs.__defaultWidth = 1920

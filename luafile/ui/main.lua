@@ -13,7 +13,7 @@ f0_local0 = Engine.GetGlobalModel()
 f0_local0:create( "lobbyRoot.gameClient.isHost", true )
 if CoD.isFrontend then
 	require( "x64:2dd4ff313102b79" )
-	require( "x64:6eee5926f63b60b" )
+	require( "ui/uieditor/menus/core_frontend_require" )
 	LUI.createMenu.main = function ()
 		local f1_local0 = Engine.GetMaxControllerCount()
 		for f1_local1 = 0, f1_local0 - 1, 1 do
@@ -154,11 +154,11 @@ else
 		f0_local10 = true
 		if CoD.isCampaign then
 			require( "x64:a60cfdff30b341a" )
-			require( "x64:ad86e26de1fa54e" )
+			require( "ui/uieditor/widgets/reticles/rocketlaunchers/rocketlauncherreticle" )
 		elseif CoD.isZombie then
-			require( "x64:cb5bf4e094259d8" )
-			require( "x64:19c89699d4ccb93" )
-			require( "x64:9aedfb02e1b42ad" )
+			require( "ui/uieditor/menus/hud/hud_zm_require" )
+			require( "ui/uieditor/widgets/reticles/magnifier/magnifierreticle_ui3d" )
+			require( "ui/uieditor/widgets/demo/demo" )
 			if Engine.GetCurrentMap() == "zm_zod" then
 				require( "x64:2532ef6b6f817cc" )
 				require( "x64:e78fa14df4f0af7" )
@@ -169,25 +169,25 @@ else
 			elseif Engine.GetCurrentMap() == "zm_factory" then
 				require( "x64:e096ca64b60431f" )
 			elseif Engine.GetCurrentMap() == "zm_castle" then
-				require( "x64:82fa79a45ef9936" )
+				require( "ui/uieditor/menus/hud/t7hud_zm_castle" )
 			elseif Engine.GetCurrentMap() == "zm_island" then
-				require( "x64:e00202699294517" )
+				require( "ui/uieditor/menus/hud/t7hud_zm_island" )
 			else
-				require( "x64:1824fcd24cd5764" )
+				require( "ui/uieditor/menus/hud/t7hud_zm_factory" )
 			end
 		elseif CoD.isWarzone then
 			require( "ui/uieditor/menus/hud/hud_wz_require" )
 			require( "x64:be322a54ff91a9a" )
-			require( "x64:9aedfb02e1b42ad" )
-			require( "x64:ad86e26de1fa54e" )
+			require( "ui/uieditor/widgets/demo/demo" )
+			require( "ui/uieditor/widgets/reticles/rocketlaunchers/rocketlauncherreticle" )
 		else
 			require( "ui/uieditor/menus/hud/hud_mp_require" )
-			require( "x64:6b7fc557f641386" )
+			require( "ui/uieditor/menus/hud/hud_mp_ct_require" )
 			require( "x64:f1b9c001eb57aa3" )
 			require( "x64:be322a54ff91a9a" )
-			require( "x64:7c614e146b5eea5" )
-			require( "x64:9aedfb02e1b42ad" )
-			require( "x64:ad86e26de1fa54e" )
+			require( "ui/uieditor/widgets/mphudwidgets/codcaster/codcaster" )
+			require( "ui/uieditor/widgets/demo/demo" )
+			require( "ui/uieditor/widgets/reticles/rocketlaunchers/rocketlauncherreticle" )
 		end
 	end
 	
@@ -1740,7 +1740,7 @@ else
 	end
 	
 	if not CoD.isZombie then
-		require( "x64:d923ab4f5b48d75" )
+		require( "ui/uieditor/widgets/tablet/tabletlocationselector" )
 	end
 	f0_local4 = function ( f110_arg0, f110_arg1 )
 		if f0_local24( f110_arg1.controller ) then

@@ -1,8 +1,8 @@
 require( "ui/uieditor/widgets/cac/cac_lock" )
-require( "x64:8ffe7c4e01e7052" )
+require( "ui/uieditor/widgets/cac/itemnewbreadcrumbwidget" )
 require( "ui/uieditor/widgets/common/commoncornerpips01" )
 require( "ui/uieditor/widgets/onoffimage" )
-require( "x64:99814ce8a424f57" )
+require( "ui/uieditor/widgets/specialist/specialistoutfitrowbacking" )
 
 CoD.SpecialistOutfitItemEntry_Internal = InheritFrom( LUI.UIElement )
 CoD.SpecialistOutfitItemEntry_Internal.__defaultWidth = 69

@@ -1,4 +1,4 @@
-require( "x64:79a33fa130e04bc" )
+require( "ui/uieditor/widgets/codcaster/codcasterobjectivestatusflag" )
 
 CoD.CodCasterObjectiveStatusCTF = InheritFrom( LUI.UIElement )
 CoD.CodCasterObjectiveStatusCTF.__defaultWidth = 412

@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/emptyfocusable" )
-require( "x64:94bcc019394211c" )
+require( "ui/uieditor/widgets/systemoverlays/systemoverlay_freecursor_full_layout" )
 
 CoD.SystemOverlay_FreeCursor_Full = InheritFrom( CoD.Menu )
 LUI.createMenu.SystemOverlay_FreeCursor_Full = function ( f1_arg0, f1_arg1 )

@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/cac/cac_lock" )
 require( "ui/uieditor/widgets/callingcards/callingcards_framewidget" )
-require( "x64:b046df181a7627c" )
+require( "ui/uieditor/widgets/challenges/challengesglobalprogressbar" )
 require( "ui/uieditor/widgets/startmenu/startmenu_identity_subtitle" )
 require( "x64:c7e896ee4bc3f8" )
 

@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/scoreboard/tabbedscoreboardcolheaders" )
 require( "ui/uieditor/widgets/scoreboard/tabbedscoreboardrowleft" )
 require( "ui/uieditor/widgets/scoreboard/tabbedscoreboardrowright" )
-require( "x64:2721154d8bc6b19" )
+require( "ui/uieditor/widgets/scoreboard/tabbedscoreboardscoresffa" )
 
 CoD.TabbedScoreboardScores = InheritFrom( LUI.UIElement )
 CoD.TabbedScoreboardScores.__defaultWidth = 1920

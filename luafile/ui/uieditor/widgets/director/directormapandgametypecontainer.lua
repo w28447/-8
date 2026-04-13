@@ -1,4 +1,4 @@
-require( "x64:20b3eeae9b7d557" )
+require( "ui/uieditor/widgets/director/directormapandgametypeinternal" )
 
 CoD.DirectorMapAndGameTypeContainer = InheritFrom( LUI.UIElement )
 CoD.DirectorMapAndGameTypeContainer.__defaultWidth = 356

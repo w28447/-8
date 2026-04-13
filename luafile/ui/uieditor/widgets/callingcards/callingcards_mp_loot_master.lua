@@ -1,5 +1,5 @@
-require( "x64:76e516a6ca47720" )
-require( "x64:baf9927efcde965" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_sparkle_star" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_stingertail" )
 
 CoD[0xDF8326B7C9D17D4] = InheritFrom( LUI.UIElement )
 CoD[0xDF8326B7C9D17D4].__defaultWidth = 960

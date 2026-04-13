@@ -1,4 +1,4 @@
-require( "x64:e38247e77bdfbff" )
+require( "ui/uieditor/widgets/customgames/customgames_officialbadgeicon" )
 require( "ui/uieditor/widgets/startmenu/options/flyout/startmenu_options_customsettingsindicator" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsmainframe" )
 

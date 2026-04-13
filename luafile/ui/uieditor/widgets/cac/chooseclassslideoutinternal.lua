@@ -1,10 +1,10 @@
 require( "ui/uieditor/widgets/bumperbuttonwithkeymousetext" )
 require( "ui/uieditor/widgets/cac/classallocation" )
 require( "ui/uieditor/widgets/cac/menuchooseclass/chooseclasswidget" )
-require( "x64:b4c2a15a62cf08" )
-require( "x64:99377e746b9e938" )
+require( "ui/uieditor/widgets/cac/selectclasslistbutton" )
+require( "ui/uieditor/widgets/common/commonscalinglisthorizontalpips" )
 require( "ui/uieditor/widgets/emptyfocusable" )
-require( "x64:7933ec9a45ffdd9" )
+require( "ui/uieditor/widgets/pc/pc_chooseclasstabs" )
 
 CoD.ChooseClassSlideOutInternal = InheritFrom( LUI.UIElement )
 CoD.ChooseClassSlideOutInternal.__defaultWidth = 1920

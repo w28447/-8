@@ -1,4 +1,4 @@
-require( "x64:f94c92ca68ec385" )
+require( "ui/uieditor/widgets/craft/craftgradientbutton" )
 require( "ui/uieditor/widgets/craft/emblemeditor/colorpicker/emblemeditorgradienttypebutton" )
 require( "ui/uieditor/widgets/craft/emblemeditor/colorpicker/emblemgradientcolorbutton" )
 

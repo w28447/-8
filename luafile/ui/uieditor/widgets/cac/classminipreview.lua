@@ -1,7 +1,7 @@
-require( "x64:86addcd8b941876" )
-require( "x64:b850fac3ef8b863" )
-require( "x64:14da682871bc56e" )
-require( "x64:6dfdc4f59440b7c" )
+require( "ui/uieditor/widgets/cac/classminipreview/classminipreviewequipmentitem" )
+require( "ui/uieditor/widgets/cac/classminipreview/classminipreviewgearitem" )
+require( "ui/uieditor/widgets/cac/classminipreview/classminipreviewtalentitem" )
+require( "ui/uieditor/widgets/cac/classminipreview/classminipreviewweaponitem" )
 
 CoD.ClassMiniPreview = InheritFrom( LUI.UIElement )
 CoD.ClassMiniPreview.__defaultWidth = 1400

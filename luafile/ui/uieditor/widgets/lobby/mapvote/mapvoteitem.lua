@@ -1,5 +1,5 @@
-require( "x64:41ad734fb8d6d92" )
-require( "x64:eefb5b743bb9cd0" )
+require( "ui/uieditor/widgets/common/CommonButtonOutlineThin" )
+require( "ui/uieditor/widgets/lobby/mapvote/mapvotemapnamegamemodelayout" )
 require( "ui/uieditor/widgets/store/storecommontextbacking" )
 
 CoD.MapVoteItem = InheritFrom( LUI.UIElement )

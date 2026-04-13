@@ -1,5 +1,5 @@
-require( "x64:315a48f43c443a5" )
-require( "x64:ce2f5f6849507b6" )
+require( "ui/uieditor/widgets/vehiclehuds/gunship/vhud_gunship_ammo_count_internal" )
+require( "ui/uieditor/widgets/vehiclehuds/gunship/vhud_gunship_ammocounterframe" )
 
 CoD.vhud_tank_robot_rocket_counter = InheritFrom( LUI.UIElement )
 CoD.vhud_tank_robot_rocket_counter.__defaultWidth = 148

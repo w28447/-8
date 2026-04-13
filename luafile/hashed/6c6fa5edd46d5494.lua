@@ -1,4 +1,4 @@
-require( "x64:1cd7f68136f9cc0" )
+require( "ui/uieditor/widgets/zmfrontend/laboratory/zm_laboratorydescriptiondividersecondary" )
 require( "x64:399e4fa6c394b1b" )
 
 CoD.Tcm_Pause_Rules = InheritFrom( LUI.UIElement )

@@ -1,4 +1,4 @@
-require( "x64:40c2fb60fba6534" )
+require( "ui/uieditor/widgets/arena/playerinspection_infopanewinstreak" )
 require( "ui/uieditor/widgets/common/commonrankiconandranklarge" )
 require( "ui/uieditor/widgets/lobby/common/layoutelements/commonstripebarstencil" )
 

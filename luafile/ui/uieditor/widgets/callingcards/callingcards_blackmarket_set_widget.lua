@@ -1,4 +1,4 @@
-require( "x64:5d1185ed0a5c4a2" )
+require( "ui/uieditor/widgets/callingcards/callingcards_blackmarket_set_widgetinternal" )
 
 CoD.CallingCards_BlackMarket_Set_Widget = InheritFrom( LUI.UIElement )
 CoD.CallingCards_BlackMarket_Set_Widget.__defaultWidth = 453

@@ -1,8 +1,8 @@
 require( "ui/uieditor/widgets/cac/attachmentloadoutclasslistitem" )
-require( "x64:9c626a0110d2a99" )
+require( "ui/uieditor/widgets/cac/customclasslistbutton" )
 require( "ui/uieditor/widgets/cac/loadoutclassitem" )
 require( "ui/uieditor/widgets/cac/loadoutclassitemequipment" )
-require( "x64:3b14753712b858f" )
+require( "ui/uieditor/widgets/cac/loadoutclassitemsecondary" )
 
 CoD.ChooseClass_InGame = InheritFrom( LUI.UIElement )
 CoD.ChooseClass_InGame.__defaultWidth = 1920

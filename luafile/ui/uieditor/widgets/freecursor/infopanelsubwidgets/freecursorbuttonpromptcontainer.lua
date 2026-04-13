@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/freecursor/infopanelsubwidgets/freecursorbuttonprompt" )
-require( "x64:3fdb971f479eb0c" )
+require( "ui/uieditor/widgets/pc/freecursor/pc_tooltipspromptsbackground" )
 
 CoD.freeCursorButtonPromptContainer = InheritFrom( LUI.UIElement )
 CoD.freeCursorButtonPromptContainer.__defaultWidth = 792

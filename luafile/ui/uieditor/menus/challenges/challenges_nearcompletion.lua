@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframe" )
-require( "x64:cd4a942309c019a" )
-require( "x64:71d2a0ed724628e" )
+require( "ui/uieditor/widgets/challenges/challenges_framewidget_nearcompletion" )
+require( "ui/uieditor/widgets/common/commonidentitywidgetstreamlinedsafeareacontainer" )
 require( "ui/uieditor/widgets/lobby/common/fe_buttonpanelshadercontainer" )
 
 CoD.Challenges_NearCompletion = InheritFrom( CoD.Menu )

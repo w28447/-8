@@ -1,5 +1,5 @@
-require( "x64:41fdb2506284dda" )
-require( "x64:37583579a3dcbe" )
+require( "ui/uieditor/widgets/arena/arenaleagueplayruby" )
+require( "ui/uieditor/widgets/arena/arenaleagueplayrubyslot" )
 
 CoD.arenaLeaguePlayRubiesList = InheritFrom( LUI.UIElement )
 CoD.arenaLeaguePlayRubiesList.__defaultWidth = 140

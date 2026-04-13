@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/backgroundframes/menuframeingame" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsbackground" )
-require( "x64:6374709588b8a15" )
+require( "ui/uieditor/widgets/startmenu/startmenu_safeareacontainer" )
 require( "ui/uieditor/widgets/director/directorquitbuttoncontainer" )
 require( "x64:b710bc406e458bd" )
 

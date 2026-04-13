@@ -1,4 +1,4 @@
-require( "x64:b1b45f210299d24" )
+require( "ui/uieditor/widgets/startmenu/options/startmenu_options_privacysettingsscrollprompt" )
 require( "ui/uieditor/widgets/startmenu/startmenu_options_simplecheckoption" )
 
 CoD.StartMenu_Options_PrivacySettingsManagementForm = InheritFrom( LUI.UIElement )

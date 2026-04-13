@@ -1,7 +1,7 @@
 require( "x64:9b528a05aba52d6" )
-require( "x64:ba4dbda9ab6d277" )
-require( "x64:35653ef4ad2299d" )
-require( "x64:b1b346e32476a2e" )
+require( "ui/uieditor/widgets/itemshop/reserves/reserveslootpurchasebundlebuttoncontainer" )
+require( "ui/uieditor/widgets/scrollbars/horizontalcountertriggerprompts" )
+require( "ui/uieditor/widgets/scrollbars/horizontalcounter" )
 
 CoD.ReservesOffersCarousel = InheritFrom( LUI.UIElement )
 CoD.ReservesOffersCarousel.__defaultWidth = 248

@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/arabicaligntextbox" )
 require( "ui/uieditor/widgets/borderbakedsolid" )
 require( "ui/uieditor/widgets/genericpopups/matchstartradialtimer" )
-require( "x64:4dcb98330709b44" )
+require( "ui/uieditor/widgets/genericpopups/matchstartwarning_timerbkgd" )
 
 CoD.MatchStartWarningContainer = InheritFrom( LUI.UIElement )
 CoD.MatchStartWarningContainer.__defaultWidth = 300

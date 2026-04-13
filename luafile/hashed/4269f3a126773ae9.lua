@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/fileshare/fullscreenpopup/fullscreenpopuptemplate" )
-require( "x64:5d80cb371475b19" )
+require( "ui/uieditor/widgets/itemshop/itemshopbutton" )
 
 CoD.WZTrialUpsellPopup = InheritFrom( CoD.Menu )
 LUI.createMenu.WZTrialUpsellPopup = function ( f1_arg0, f1_arg1 )

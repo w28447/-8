@@ -1,4 +1,4 @@
-require( "x64:98b4302d64420a0" )
+require( "ui/uieditor/widgets/specialist/jumpkitbutton_internal" )
 
 CoD.JumpkitItemEntry = InheritFrom( LUI.UIElement )
 CoD.JumpkitItemEntry.__defaultWidth = 152

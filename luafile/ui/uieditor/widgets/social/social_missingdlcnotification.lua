@@ -1,4 +1,4 @@
-require( "x64:22394f0b69871b4" )
+require( "ui/uieditor/widgets/social/social_missingdlcnotification_internal" )
 
 CoD.Social_MissingDLCNotification = InheritFrom( LUI.UIElement )
 CoD.Social_MissingDLCNotification.__defaultWidth = 40

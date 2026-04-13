@@ -1,5 +1,5 @@
-require( "x64:6cd5e8b4612a4ef" )
-require( "x64:6cd5f8b4612a6a2" )
+require( "ui/uieditor/widgets/callingcards/callingcards_futureracing_asset01" )
+require( "ui/uieditor/widgets/callingcards/callingcards_futureracing_asset02" )
 
 CoD[0xF3C30F1F50D950A] = InheritFrom( LUI.UIElement )
 CoD[0xF3C30F1F50D950A].__defaultWidth = 960

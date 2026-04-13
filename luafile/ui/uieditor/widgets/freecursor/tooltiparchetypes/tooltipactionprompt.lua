@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/freecursor/freecursordetaileddescriptioncontainer" )
 require( "ui/uieditor/widgets/freecursor/freecursorheaderlabelcontainer" )
-require( "x64:6efca540339ed2f" )
-require( "x64:e92bbb6cf7249e8" )
+require( "ui/uieditor/widgets/freecursor/infopanelsubwidgets/freecursorbuttonpromptinfo" )
+require( "ui/uieditor/widgets/showhideimage" )
 
 CoD.TooltipActionPrompt = InheritFrom( LUI.UIElement )
 CoD.TooltipActionPrompt.__defaultWidth = 405

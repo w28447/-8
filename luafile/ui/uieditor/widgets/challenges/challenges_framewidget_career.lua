@@ -1,7 +1,7 @@
-require( "x64:fd01a46a0e352c9" )
+require( "ui/uieditor/menus/challenges/challenges_career" )
 require( "ui/uieditor/widgets/challenges/challenges_category_title" )
-require( "x64:79fe6ac43673588" )
-require( "x64:83b9fa839e546ff" )
+require( "ui/uieditor/widgets/challenges/challenges_framewidget_titlebackground" )
+require( "ui/uieditor/widgets/challenges/challengescategorybutton" )
 
 CoD.Challenges_FrameWidget_Career = InheritFrom( LUI.UIElement )
 CoD.Challenges_FrameWidget_Career.__defaultWidth = 1560

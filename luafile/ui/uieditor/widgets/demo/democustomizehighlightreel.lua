@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/cac/customization/cacgenericbutton" )
-require( "x64:f826b9e108697fc" )
+require( "ui/uieditor/widgets/demo/demo_options_slider" )
 require( "ui/uieditor/widgets/systemoverlays/systemoverlay_layout_foregroundmultilinetext" )
 
 CoD.DemoCustomizeHighlightReel = InheritFrom( LUI.UIElement )

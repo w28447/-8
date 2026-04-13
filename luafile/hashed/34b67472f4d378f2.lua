@@ -1,4 +1,4 @@
-require( "x64:395c63182187e85" )
+require( "ui/uieditor/widgets/zmfrontend/cac/zmtalismanslotinternal" )
 
 CoD.ZMTalismanListItem = InheritFrom( LUI.UIElement )
 CoD.ZMTalismanListItem.__defaultWidth = 142

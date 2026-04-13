@@ -1,4 +1,4 @@
-require( "x64:69fdc75e3255cd7" )
+require( "ui/uieditor/widgets/backgroundframes/genericmenuframecac" )
 require( "ui/uieditor/widgets/cac/customclasstabs" )
 require( "ui/uieditor/widgets/cac/menuchooseclass/chooseclassoverlay" )
 require( "ui/uieditor/widgets/cac/menuchooseclass/chooseclasswidget" )

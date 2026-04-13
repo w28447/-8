@@ -1,8 +1,8 @@
 require( "ui/uieditor/widgets/callingcards/callingcards_cardwidget" )
 require( "ui/uieditor/widgets/challenges/challenges_callingcardprofiler" )
-require( "x64:79fe6ac43673588" )
-require( "x64:76f82c814686c59" )
-require( "x64:c438d75d63d852f" )
+require( "ui/uieditor/widgets/challenges/challenges_framewidget_titlebackground" )
+require( "ui/uieditor/widgets/challenges/challengescallingcardprofilerglobal" )
+require( "ui/uieditor/widgets/playercard/selfidentitybadgepreview" )
 require( "ui/uieditor/widgets/scrollbars/verticalcounter" )
 
 local PostLoadFunc = function ( self, controller )

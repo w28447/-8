@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/emptyfocusable" )
-require( "x64:5c96c77ee312720" )
-require( "x64:807dca7a3470358" )
+require( "ui/uieditor/widgets/pc/craft/craftactionsliderwidget" )
+require( "ui/uieditor/widgets/pc/sliderbar_editbox" )
 
 CoD.CraftActionSlider = InheritFrom( LUI.UIElement )
 CoD.CraftActionSlider.__defaultWidth = 375

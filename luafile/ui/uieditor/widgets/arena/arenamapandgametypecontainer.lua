@@ -1,4 +1,4 @@
-require( "x64:7fd9d2ec206e221" )
+require( "ui/uieditor/widgets/arena/arenamapandgametypeinternal" )
 
 CoD.ArenaMapAndGameTypeContainer = InheritFrom( LUI.UIElement )
 CoD.ArenaMapAndGameTypeContainer.__defaultWidth = 356

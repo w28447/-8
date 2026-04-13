@@ -1,5 +1,5 @@
-require( "x64:9f0ef34539db58f" )
-require( "x64:40e70dea3532a08" )
+require( "ui/uieditor/widgets/arena/arenafindgamedetailmodes" )
+require( "ui/uieditor/widgets/competitive/competitiveoverviewarenarules" )
 
 CoD.CompetitiveOverviewProSerie = InheritFrom( LUI.UIElement )
 CoD.CompetitiveOverviewProSerie.__defaultWidth = 1920

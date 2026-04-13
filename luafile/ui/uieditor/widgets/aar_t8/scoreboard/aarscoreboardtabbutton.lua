@@ -1,4 +1,4 @@
-require( "x64:734464c97e2e0ae" )
+require( "ui/uieditor/widgets/aar_t8/aartabbuttoninternal" )
 
 CoD.AARScoreboardTabButton = InheritFrom( LUI.UIElement )
 CoD.AARScoreboardTabButton.__defaultWidth = 678

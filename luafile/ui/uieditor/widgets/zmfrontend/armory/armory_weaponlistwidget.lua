@@ -1,10 +1,10 @@
-require( "x64:ffc2c7e4adad795" )
-require( "x64:c0cb09f85132dc0" )
+require( "ui/uieditor/widgets/cac/cactexttab" )
+require( "ui/uieditor/widgets/cac/weaponvariants/weaponvariantlistwidget" )
 require( "ui/uieditor/widgets/common/common_tabbar_center" )
-require( "x64:ca1dc89b2aa714c" )
-require( "x64:1744d99b88fcb45" )
-require( "x64:eb8711f5087e974" )
-require( "x64:2a456a4b0756328" )
+require( "ui/uieditor/widgets/pc/pc_gridhorizontalscrollbar" )
+require( "ui/uieditor/widgets/warzone/warzonecontextualextraitemsarrow" )
+require( "ui/uieditor/widgets/zmfrontend/cac/zmitemgridbutton" )
+require( "ui/uieditor/widgets/zmfrontend/cac/zmsignatureweaponitemgridbutton" )
 
 CoD.Armory_WeaponListWidget = InheritFrom( LUI.UIElement )
 CoD.Armory_WeaponListWidget.__defaultWidth = 1920

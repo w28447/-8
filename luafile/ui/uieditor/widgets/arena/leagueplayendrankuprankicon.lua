@@ -1,4 +1,4 @@
-require( "x64:c8f0a033b64cc47" )
+require( "ui/uieditor/widgets/arena/leagueplayendrankuprank" )
 
 CoD.LeaguePlayEndRankUpRankIcon = InheritFrom( LUI.UIElement )
 CoD.LeaguePlayEndRankUpRankIcon.__defaultWidth = 450

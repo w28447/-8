@@ -1,8 +1,8 @@
 require( "ui/uieditor/widgets/backgroundframes/menuframeingame" )
-require( "x64:17dcd66c5f1d136" )
+require( "ui/uieditor/widgets/pc/utility/genericclickbutton" )
 require( "ui/uieditor/widgets/startmenu/options/flyout/startmenu_options_settingslider" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsbackground" )
-require( "x64:b42aabdb2e1a7d3" )
+require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsheader" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsmaincorners" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsmainframe" )
 

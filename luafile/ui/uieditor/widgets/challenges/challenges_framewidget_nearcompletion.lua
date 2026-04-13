@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/challenges/challenges_callingcardprofiler" )
-require( "x64:79fe6ac43673588" )
-require( "x64:2b8d81769d76c17" )
+require( "ui/uieditor/widgets/challenges/challenges_framewidget_titlebackground" )
+require( "ui/uieditor/widgets/challenges/challengesnearcompletionwidget" )
 
 CoD.Challenges_FrameWidget_NearCompletion = InheritFrom( LUI.UIElement )
 CoD.Challenges_FrameWidget_NearCompletion.__defaultWidth = 1620

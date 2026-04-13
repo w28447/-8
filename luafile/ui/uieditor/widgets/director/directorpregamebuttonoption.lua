@@ -1,6 +1,6 @@
-require( "x64:dab8c3a6f5b136c" )
+require( "ui/uieditor/widgets/common/CommonPixelBacking" )
 require( "ui/uieditor/widgets/director/directorselectbuttonlines" )
-require( "x64:1f846296f1a1b81" )
+require( "ui/uieditor/widgets/director/DirectorSelectButtonMiniInternal" )
 
 CoD.DirectorPreGameButtonOption = InheritFrom( LUI.UIElement )
 CoD.DirectorPreGameButtonOption.__defaultWidth = 250

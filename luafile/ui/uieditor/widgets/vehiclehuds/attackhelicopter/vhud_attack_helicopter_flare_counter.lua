@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/store/storecommontextbacking" )
-require( "x64:4858a496499ed06" )
+require( "ui/uieditor/widgets/vehiclehuds/attackhelicopter/vhud_attack_helicopter_flare" )
 
 CoD.vhud_attack_helicopter_flare_counter = InheritFrom( LUI.UIElement )
 CoD.vhud_attack_helicopter_flare_counter.__defaultWidth = 148

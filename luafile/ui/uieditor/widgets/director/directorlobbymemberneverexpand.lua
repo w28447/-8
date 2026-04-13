@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/director/directorbuttonadd" )
-require( "x64:8092b0c86b8a86c" )
+require( "ui/uieditor/widgets/director/directorlobbymemberinternalneverexpand" )
 require( "ui/uieditor/widgets/director/directorpartybarhorizontal" )
 require( "ui/uieditor/widgets/director/directorpartyleader" )
 require( "ui/uieditor/menus/social/social_playerdetailspopup" )

@@ -1,4 +1,4 @@
-require( "x64:c926437e6209de" )
+require( "ui/uieditor/widgets/utilities/imageprompt_internal" )
 
 CoD.ImagePrompt = InheritFrom( LUI.UIElement )
 CoD.ImagePrompt.__defaultWidth = 400

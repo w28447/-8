@@ -1,7 +1,7 @@
 require( "ui/uieditor/menus/craft/emblemeditor/emblemselectoptions" )
-require( "x64:2d64ca9d3c705ce" )
-require( "x64:97ab439bf0305bd" )
-require( "x64:2321aa5d656b975" )
+require( "ui/uieditor/widgets/common/commoncornerbrackets01" )
+require( "ui/uieditor/widgets/craft/emblemeditor/stickersetitem" )
+require( "ui/uieditor/widgets/craft/emblemselectpreviewwidget" )
 require( "ui/uieditor/widgets/scrollbars/verticalcounter" )
 
 CoD.StickerSetFrame = InheritFrom( LUI.UIElement )

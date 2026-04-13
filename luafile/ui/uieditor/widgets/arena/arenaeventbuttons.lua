@@ -1,5 +1,5 @@
-require( "x64:96ce1eeb95b7136" )
-require( "x64:2db805f1060283f" )
+require( "ui/uieditor/menus/arena/leagueplayleaderboardmenu" )
+require( "ui/uieditor/widgets/arena/arenaeventbutton" )
 
 CoD.ArenaEventButtons = InheritFrom( LUI.UIElement )
 CoD.ArenaEventButtons.__defaultWidth = 200

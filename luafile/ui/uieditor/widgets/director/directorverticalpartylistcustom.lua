@@ -1,5 +1,5 @@
 require( "ui/uieditor/menus/social/social_inviteplayerspopup" )
-require( "x64:b59e6af0a2c4a80" )
+require( "ui/uieditor/widgets/director/directorcustomgamemember" )
 
 CoD.DirectorVerticalPartyListCustom = InheritFrom( LUI.UIElement )
 CoD.DirectorVerticalPartyListCustom.__defaultWidth = 520

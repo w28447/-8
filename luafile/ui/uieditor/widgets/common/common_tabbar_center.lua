@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/bumperbuttonwithkeymousetext" )
 require( "ui/uieditor/widgets/director/directorselecttexttab" )
 require( "ui/uieditor/widgets/tabbedwidgets/basictablist" )
-require( "x64:14ab47ffb48a077" )
+require( "ui/uieditor/widgets/pc/pc_tabsarrow" )
 
 CoD.Common_Tabbar_Center = InheritFrom( LUI.UIElement )
 CoD.Common_Tabbar_Center.__defaultWidth = 3300

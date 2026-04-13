@@ -1,8 +1,8 @@
 require( "ui/uieditor/widgets/callingcards/callingcards_blackmarket_profiler" )
 require( "ui/uieditor/widgets/callingcards/callingcards_blackmarketmastercardwidget" )
 require( "ui/uieditor/widgets/callingcards/callingcardsset_blackmarketwidget" )
-require( "x64:79fe6ac43673588" )
-require( "x64:c438d75d63d852f" )
+require( "ui/uieditor/widgets/challenges/challenges_framewidget_titlebackground" )
+require( "ui/uieditor/widgets/playercard/selfidentitybadgepreview" )
 
 CoD.CallingCards_Stickerbook_Set_BlackMarket = InheritFrom( LUI.UIElement )
 CoD.CallingCards_Stickerbook_Set_BlackMarket.__defaultWidth = 1725

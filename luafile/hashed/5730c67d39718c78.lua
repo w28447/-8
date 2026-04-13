@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/hud/corner9slice" )
-require( "x64:e757ecab77bdc64" )
-require( "x64:c354b0a26f3b5f9" )
+require( "ui/uieditor/widgets/itemshop/supplychain/supplychainbumperpointers" )
+require( "ui/uieditor/widgets/startmenu/startmenu_smalltierlevel" )
 
 CoD.PC_Store_Refund_Korea_Product_Image = InheritFrom( LUI.UIElement )
 CoD.PC_Store_Refund_Korea_Product_Image.__defaultWidth = 349

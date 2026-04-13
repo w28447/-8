@@ -1,5 +1,5 @@
-require( "x64:f3b71d7ea8417f2" )
-require( "x64:a2d871ecfc40de" )
+require( "ui/uieditor/widgets/director/directorlobbyclientgamertag" )
+require( "ui/uieditor/widgets/director/directorstickypartystatus" )
 
 CoD.DirectorCharacterDynamic = InheritFrom( LUI.UIElement )
 CoD.DirectorCharacterDynamic.__defaultWidth = 240

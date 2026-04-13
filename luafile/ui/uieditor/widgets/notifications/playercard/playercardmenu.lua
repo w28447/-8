@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/callingcards/callingcards_framewidget" )
 require( "ui/uieditor/widgets/lobby/common/fe_panelnoblur" )
-require( "x64:8d3de31d16f3fdf" )
+require( "ui/uieditor/widgets/notifications/playercard/playercard_label" )
 
 CoD.PlayerCardMenu = InheritFrom( LUI.UIElement )
 CoD.PlayerCardMenu.__defaultWidth = 458

@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/vehiclehuds/buttons/vhud_generic_button_layout" )
 require( "ui/uieditor/widgets/vehiclehuds/ground/vehicleground_vignettecontainer" )
 require( "ui/uieditor/widgets/vehiclehuds/mothership/vhud_ms_iris" )
-require( "x64:b5455f43e394c57" )
+require( "ui/uieditor/widgets/vehiclehuds/mothership/vhud_ms_reticlegunner" )
 
 CoD.vhud_ms_GunnerInternal = InheritFrom( LUI.UIElement )
 CoD.vhud_ms_GunnerInternal.__defaultWidth = 1920

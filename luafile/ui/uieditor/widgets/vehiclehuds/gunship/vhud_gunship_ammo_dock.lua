@@ -1,6 +1,6 @@
-require( "x64:7847f3c43c89130" )
-require( "x64:3d8aab2f24f229b" )
-require( "x64:4b1bc8d6fac9d86" )
+require( "ui/uieditor/widgets/vehiclehuds/gunship/vhud_gunship_105mm_ammocounter" )
+require( "ui/uieditor/widgets/vehiclehuds/gunship/vhud_gunship_25mm_ammocounter" )
+require( "ui/uieditor/widgets/vehiclehuds/gunship/vhud_gunship_40mm_ammocounter" )
 
 CoD.vhud_gunship_ammo_dock = InheritFrom( LUI.UIElement )
 CoD.vhud_gunship_ammo_dock.__defaultWidth = 256

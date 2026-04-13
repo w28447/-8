@@ -1,7 +1,7 @@
-require( "x64:2cdae5a5c0acd06" )
-require( "x64:47b2d5d8d3d4cb4" )
-require( "x64:4d7d7b08e1c6bc" )
-require( "x64:12a5550a78e3459" )
+require( "ui/uieditor/widgets/aar_t8/summary/aarefficiencywidget" )
+require( "ui/uieditor/widgets/aar_t8/summary/aarkillswidget" )
+require( "ui/uieditor/widgets/aar_t8/summary/aarpaintcansstat" )
+require( "ui/uieditor/widgets/aar_t8/summary/aarsinglestat" )
 
 CoD.AARPerformanceWidgets = InheritFrom( LUI.UIElement )
 CoD.AARPerformanceWidgets.__defaultWidth = 1184

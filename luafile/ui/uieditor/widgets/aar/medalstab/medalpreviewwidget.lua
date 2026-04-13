@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/aar/medalstab/medalxpwidget" )
 require( "ui/uieditor/widgets/lobby/common/fe_titlenumbrdr" )
-require( "x64:564ca313abeb19a" )
+require( "ui/uieditor/widgets/tablet/tak5/tabletconnectionarrow" )
 
 CoD.MedalPreviewWidget = InheritFrom( LUI.UIElement )
 CoD.MedalPreviewWidget.__defaultWidth = 550

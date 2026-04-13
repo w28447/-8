@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/director/directormapandgametypecontainer" )
 require( "ui/uieditor/widgets/fileshare/filesharespinner" )
-require( "x64:a3a4f3b51153287" )
+require( "ui/uieditor/widgets/lobby/mapvote/mapvotenodemoselected" )
 require( "ui/uieditor/widgets/pc/pc_tooltipexceptionwidget" )
 
 CoD.DirectorMapAndGameType = InheritFrom( LUI.UIElement )

@@ -1,4 +1,4 @@
-require( "x64:b270dba58a72446" )
+require( "ui/uieditor/widgets/vehiclehuds/genericpooledvehiclehealthbar" )
 
 CoD.genericPooledVehicleHealthWidget = InheritFrom( LUI.UIElement )
 CoD.genericPooledVehicleHealthWidget.__defaultWidth = 94

@@ -29,7 +29,7 @@ CoD.ZMTalismanSlot.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local Box = LUI.UIImage.new( 0, 0, -63, 153, 0, 0, -63, 153 )
 	Box:setAlpha( 0.5 )
-	Box:setImage( RegisterImage( 0x3BCBBC8226622A5 ) )
+	Box:setImage( RegisterImage( uie_ui_menu_zombies_cac_talisman_box ) )
 	self:addElement( Box )
 	self.Box = Box
 	
@@ -77,7 +77,7 @@ CoD.ZMTalismanSlot.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	EmptyText = LUI.UIText.new( 0.5, 0.5, -100, 100, 0, 0, 114, 138 )
 	EmptyText:setRGB( 0.56, 0.56, 0.56 )
 	EmptyText:setAlpha( 0 )
-	EmptyText:setText( Engine[0xF9F1239CFD921FE]( 0xB67F7FB585D594C ) )
+	EmptyText:setText( Engine[0xF9F1239CFD921FE]( menu/empty ) )
 	EmptyText:setTTF( "dinnext_regular" )
 	EmptyText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	EmptyText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -87,7 +87,7 @@ CoD.ZMTalismanSlot.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	EmptyIcon = LUI.UIImage.new( 0.5, 0.5, -40, 40, 0.5, 0.5, -43, 37 )
 	EmptyIcon:setRGB( ColorSet.T8__BEIGE__HEADER.r, ColorSet.T8__BEIGE__HEADER.g, ColorSet.T8__BEIGE__HEADER.b )
 	EmptyIcon:setAlpha( 0 )
-	EmptyIcon:setImage( RegisterImage( 0x8813AFA41490306 ) )
+	EmptyIcon:setImage( RegisterImage( uie_ui_menu_zombies_cac_talisman_slot_empty ) )
 	EmptyIcon:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
 	self:addElement( EmptyIcon )
 	self.EmptyIcon = EmptyIcon

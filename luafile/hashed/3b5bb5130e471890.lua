@@ -1,6 +1,6 @@
 require( "x64:a8ce113b5f4e290" )
 require( "x64:2e06eec4ea38539" )
-require( "x64:9bbe0011ba3f2ca" )
+require( "ui/uieditor/widgets/hud/wzweaponpickupholdbuttonicons" )
 require( "ui/uieditor/widgets/pc/utility/verticallistspacer" )
 
 CoD.MultiItemPickupWaypoint_Header = InheritFrom( LUI.UIElement )

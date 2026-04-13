@@ -1,4 +1,4 @@
-require( "x64:5f8cf56752aa71b" )
+require( "ui/uieditor/widgets/commonbuttonoutline" )
 
 CoD.InspectionTrophyBackground = InheritFrom( LUI.UIElement )
 CoD.InspectionTrophyBackground.__defaultWidth = 250

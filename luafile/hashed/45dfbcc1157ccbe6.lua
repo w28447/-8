@@ -1,6 +1,6 @@
-require( "x64:f76d24ca4263dc4" )
-require( "x64:947b11345c2255a" )
-require( "x64:1ace8cbc7c8a477" )
+require( "ui/uieditor/widgets/itemshop/contracts/contractitemempty" )
+require( "ui/uieditor/widgets/itemshop/itemshopraritybackgroundstream" )
+require( "ui/uieditor/widgets/itemshop/supplychain/supplychaincontentimage" )
 
 CoD.BM_BountyBundleItemInternal = InheritFrom( LUI.UIElement )
 CoD.BM_BountyBundleItemInternal.__defaultWidth = 100

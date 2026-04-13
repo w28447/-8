@@ -1,8 +1,8 @@
 require( "ui/uieditor/widgets/common/commondetailpanel" )
-require( "x64:110e986e11c842b" )
-require( "x64:96a7f52b396ecf6" )
+require( "ui/uieditor/widgets/startmenu/startmenu_options_buttonaction" )
+require( "ui/uieditor/widgets/startmenu/startmenu_options_numoption" )
 require( "ui/uieditor/widgets/startmenu/startmenu_options_simplecheckoption" )
-require( "x64:37c2d1d7ea091ae" )
+require( "ui/uieditor/widgets/startmenu/startmenu_options_textboxoption" )
 
 CoD.StartMenu_Options_RegistrationForm = InheritFrom( LUI.UIElement )
 CoD.StartMenu_Options_RegistrationForm.__defaultWidth = 1920

@@ -1,5 +1,5 @@
-require( "x64:714a8bb51b2892" )
-require( "x64:286cf531f95c8bd" )
+require( "ui/uieditor/widgets/zmfrontend/zmloadoutpreviewitem" )
+require( "ui/uieditor/widgets/zmfrontend/zmloadoutpreviewlockedoverlay" )
 
 CoD.ZMLoadoutPreview = InheritFrom( LUI.UIElement )
 CoD.ZMLoadoutPreview.__defaultWidth = 272

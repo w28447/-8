@@ -1,5 +1,5 @@
-require( "x64:cc9ca892a619096" )
-require( "x64:262dfb7afe71b40" )
+require( "ui/uieditor/widgets/blackmarket/bm_iteminfocompactpanel" )
+require( "ui/uieditor/widgets/cac/menuchooseclass/itemwidgets/weaponpersonalizationtextbreadcrumb" )
 require( "ui/uieditor/widgets/director/directordividerwithgradient" )
 require( "ui/uieditor/widgets/onofftext" )
 

@@ -1,4 +1,4 @@
-require( "x64:3312cee82b37227" )
+require( "ui/uieditor/widgets/codcaster/codcasterloadoutselectionsecond" )
 
 CoD.CodCasterLoadoutSecondaryWeapon = InheritFrom( LUI.UIElement )
 CoD.CodCasterLoadoutSecondaryWeapon.__defaultWidth = 112

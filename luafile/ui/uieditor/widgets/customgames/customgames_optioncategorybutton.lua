@@ -1,4 +1,4 @@
-require( "x64:5d3ee5846655da6" )
+require( "ui/uieditor/widgets/customgames/customgames_optioncategorycustomlabel" )
 require( "ui/uieditor/widgets/startmenu/options/flyout/startmenu_options_flyoutindicator" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsmaincorners" )
 

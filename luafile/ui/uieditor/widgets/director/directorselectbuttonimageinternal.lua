@@ -1,6 +1,6 @@
-require( "x64:dab8c3a6f5b136c" )
-require( "x64:5f8cf56752aa71b" )
-require( "x64:fe5982d27a41c8" )
+require( "ui/uieditor/widgets/common/CommonPixelBacking" )
+require( "ui/uieditor/widgets/commonbuttonoutline" )
+require( "ui/uieditor/widgets/director/directorselectbuttonmode" )
 
 CoD.DirectorSelectButtonImageInternal = InheritFrom( LUI.UIElement )
 CoD.DirectorSelectButtonImageInternal.__defaultWidth = 301

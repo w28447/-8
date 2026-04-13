@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsfocusbar" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsmaincorners" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsmainframe" )
-require( "x64:9ec3447d523165" )
+require( "ui/uieditor/widgets/startmenu/options/startmenuoptionssubframe" )
 
 CoD.StartMenu_ChangeTeam_ButtonInternal = InheritFrom( LUI.UIElement )
 CoD.StartMenu_ChangeTeam_ButtonInternal.__defaultWidth = 200

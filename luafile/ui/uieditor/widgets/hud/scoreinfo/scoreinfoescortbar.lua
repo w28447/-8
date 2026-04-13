@@ -1,5 +1,5 @@
-require( "x64:33f282490497d27" )
-require( "x64:80cd6559c8c4ae9" )
+require( "ui/uieditor/widgets/hud/scoreinfo/scoreinfoescortbarprogress" )
+require( "ui/uieditor/widgets/hud/scoreinfo/scoreinfoescortrobot" )
 
 CoD.ScoreInfoEscortBar = InheritFrom( LUI.UIElement )
 CoD.ScoreInfoEscortBar.__defaultWidth = 164

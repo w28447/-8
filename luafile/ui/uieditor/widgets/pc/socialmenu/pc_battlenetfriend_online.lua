@@ -1,7 +1,7 @@
 require( "ui/uieditor/menus/social/social_playerdetailspopup" )
 require( "ui/uieditor/widgets/director/directorlobbyleader" )
 require( "ui/uieditor/widgets/emptyfocusable" )
-require( "x64:a637e411019b270" )
+require( "ui/uieditor/widgets/pc/socialmenu/pc_battlenetfriend_nameandrealid" )
 
 CoD.PC_BattlenetFriend_Online = InheritFrom( LUI.UIElement )
 CoD.PC_BattlenetFriend_Online.__defaultWidth = 400

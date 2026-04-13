@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/vehiclehuds/ground/vehicleground_vignetteback" )
-require( "x64:86230ebb093d3d7" )
+require( "ui/uieditor/widgets/vehiclehuds/ground/vehicleground_vignettefore" )
 
 CoD.VehicleGround_VignetteContainer = InheritFrom( LUI.UIElement )
 CoD.VehicleGround_VignetteContainer.__defaultWidth = 1920

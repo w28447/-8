@@ -1,5 +1,5 @@
-require( "x64:5f6bd8a847938ba" )
-require( "x64:bf2d1bc346498a7" )
+require( "ui/uieditor/widgets/loottierboostpercentcontraband" )
+require( "ui/uieditor/widgets/startmenu/startmenu_smalltierboostnotification" )
 
 CoD.StartMenu_SmallTierLevel = InheritFrom( LUI.UIElement )
 CoD.StartMenu_SmallTierLevel.__defaultWidth = 349

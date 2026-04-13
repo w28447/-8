@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/common/commonheader" )
 require( "ui/uieditor/widgets/footer/footercontainer_frontend_right" )
 require( "ui/uieditor/widgets/header/header_container_frontend" )
-require( "x64:62e8fbb31c4e196" )
+require( "ui/uieditor/widgets/lobby/lobbyinspection/inspectionwidget" )
 
 CoD.SinglePlayerInspection = InheritFrom( CoD.Menu )
 LUI.createMenu.SinglePlayerInspection = function ( f1_arg0, f1_arg1 )

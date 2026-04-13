@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/onoffimage" )
-require( "x64:8f24caf62e0fdce" )
+require( "ui/uieditor/widgets/scoreboard/tabbedscoreboardrowinternal" )
 
 CoD.TabbedScoreboardRowRight = InheritFrom( LUI.UIElement )
 CoD.TabbedScoreboardRowRight.__defaultWidth = 684

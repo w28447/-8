@@ -1,5 +1,5 @@
-require( "x64:46728994d8c06c0" )
-require( "x64:c193277e26ccdf1" )
+require( "ui/uieditor/widgets/common/commondetailpanel02" )
+require( "ui/uieditor/widgets/common/commonhudtiledbackground01" )
 require( "ui/uieditor/widgets/scoreboard/tabbedscoreboardcolheaders" )
 require( "ui/uieditor/widgets/scoreboard/tabbedscoreboardrowright" )
 require( "ui/uieditor/widgets/scrollbars/verticalcounter" )

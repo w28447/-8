@@ -1,4 +1,4 @@
-require( "x64:a7c4cf84718519f" )
+require( "ui/uieditor/widgets/pc/pc_achievements_totalpoints_circularprogress" )
 require( "ui/uieditor/widgets/pc/utility/verticallistspacer" )
 
 CoD.PC_Achievements_TotalPoints = InheritFrom( LUI.UIElement )

@@ -1,7 +1,7 @@
-require( "x64:f00a10fc8301da2" )
+require( "ui/uieditor/widgets/aar_t8/aarcommonbacking" )
 require( "ui/uieditor/widgets/aar_t8/rewards/aarweaponreward" )
 require( "ui/uieditor/widgets/aar_t8/summary/aarstattypetabheader" )
-require( "x64:194a3c2b978e81" )
+require( "ui/uieditor/widgets/common/commonsecondarytabbar" )
 
 CoD.AARRewardsTab = InheritFrom( LUI.UIElement )
 CoD.AARRewardsTab.__defaultWidth = 1920

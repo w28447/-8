@@ -3,7 +3,7 @@ require( "x64:48be5c6feaceeb4" )
 require( "x64:f93e6387e9d051" )
 require( "x64:1850ed39b9104e4" )
 require( "x64:b710bc406e458bd" )
-require( "x64:76b6893fa024ec2" )
+require( "ui/uieditor/widgets/pc/theater/pc_theater_keyboard_shortcut_legend" )
 
 CoD.StartMenu_Theater = InheritFrom( LUI.UIElement )
 CoD.StartMenu_Theater.__defaultWidth = 1920

@@ -1,5 +1,5 @@
-require( "x64:8024461f7066d0b" )
-require( "x64:17c02756d343654" )
+require( "ui/uieditor/widgets/itemshop/reserves/reservespreview" )
+require( "ui/uieditor/widgets/itemshop/weaponbribepreview" )
 
 CoD.ReservesPreviewContainer = InheritFrom( LUI.UIElement )
 CoD.ReservesPreviewContainer.__defaultWidth = 400

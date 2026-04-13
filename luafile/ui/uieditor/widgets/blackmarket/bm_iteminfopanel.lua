@@ -1,4 +1,4 @@
-require( "x64:3096a20718bc809" )
+require( "ui/uieditor/widgets/blackmarket/bm_iteminforarityheader" )
 require( "ui/uieditor/widgets/store/storecommontextbacking" )
 
 CoD.BM_ItemInfoPanel = InheritFrom( LUI.UIElement )

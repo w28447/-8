@@ -1,4 +1,4 @@
-require( "x64:62adff09117f331" )
+require( "ui/uieditor/widgets/arena/arenarubies" )
 
 CoD.CompetitiveOverviewRankBanner = InheritFrom( LUI.UIElement )
 CoD.CompetitiveOverviewRankBanner.__defaultWidth = 200

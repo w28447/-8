@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/mp/matchsettings/ingameplayerlistrow" )
-require( "x64:861b15626f96605" )
+require( "ui/uieditor/widgets/mp/matchsettings/startmenu_changeteam_listwidget" )
 
 local PostLoadFunc = function ( self, controller )
 	local f1_local0 = function ()

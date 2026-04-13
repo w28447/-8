@@ -1,4 +1,4 @@
-require( "x64:bdc4956715f81d7" )
+require( "ui/uieditor/widgets/pc/cyclinglist_arrow" )
 
 CoD.PC_PaintjobEditor_View = InheritFrom( LUI.UIElement )
 CoD.PC_PaintjobEditor_View.__defaultWidth = 250

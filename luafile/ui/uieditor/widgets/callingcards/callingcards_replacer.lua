@@ -1,6 +1,6 @@
-require( "x64:f7fbc54782f3af5" )
-require( "x64:f7fb954782f35dc" )
-require( "x64:1a2e59dc55c2814" )
+require( "ui/uieditor/widgets/callingcards/callingcards_replacer_cars1" )
+require( "ui/uieditor/widgets/callingcards/callingcards_replacer_cars2" )
+require( "ui/uieditor/widgets/callingcards/callingcards_replacer_scooter" )
 
 CoD[0x97E55AFDA50BA65] = InheritFrom( LUI.UIElement )
 CoD[0x97E55AFDA50BA65].__defaultWidth = 960

@@ -1,9 +1,9 @@
 require( "x64:dd513db11e2bfb6" )
-require( "x64:fc0f7412b0fb282" )
-require( "x64:be52530c0ca57a1" )
-require( "x64:87b99331f9f0f2e" )
+require( "ui/uieditor/menus/itemshop/purchasebribestack" )
+require( "ui/uieditor/menus/itemshop/purchasecodpoints" )
+require( "ui/uieditor/menus/itemshop/purchasereservesitem" )
 require( "x64:e6df4068375d284" )
-require( "x64:4c0abd9cc93e5f6" )
+require( "ui/uieditor/widgets/itemshop/reserves/reservesrerollitemdetails" )
 
 CoD.ReservesReroll = InheritFrom( LUI.UIElement )
 CoD.ReservesReroll.__defaultWidth = 250

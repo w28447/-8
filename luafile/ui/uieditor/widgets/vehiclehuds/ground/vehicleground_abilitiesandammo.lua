@@ -1,7 +1,7 @@
-require( "x64:f49ccb61b0dc65e" )
-require( "x64:419e0f1f4cff492" )
-require( "x64:93547a1e84ec106" )
-require( "x64:e504e72ff32d634" )
+require( "ui/uieditor/widgets/vehiclehuds/genericvhudreloadprompt" )
+require( "ui/uieditor/widgets/vehiclehuds/ground/vehicleground_buttonprompts_left" )
+require( "ui/uieditor/widgets/vehiclehuds/missileproximityalert" )
+require( "ui/uieditor/widgets/vehiclehuds/vehicleseatconfig" )
 require( "x64:4929df020ef5e09" )
 
 CoD.VehicleGround_AbilitiesAndAmmo = InheritFrom( LUI.UIElement )

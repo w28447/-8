@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframe" )
-require( "x64:abbd658ce01510c" )
+require( "ui/uieditor/widgets/charactercustomization/wzcharacterinfocontainer" )
 require( "ui/uieditor/widgets/common/common_tabbar_center" )
 
 CoD.DirectorChangeCharacter = InheritFrom( CoD.Menu )

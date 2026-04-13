@@ -1,5 +1,5 @@
-require( "x64:1690601ad3b4c05" )
-require( "x64:a0a33ed4962c6ec" )
+require( "ui/uieditor/widgets/hud/gameendscore/gameendscoreoutcomeffabar" )
+require( "ui/uieditor/widgets/hud/gameendscore/gameendscoreoutcomeffabarsmall" )
 
 CoD.GameEndScoreOutcomeFFA = InheritFrom( LUI.UIElement )
 CoD.GameEndScoreOutcomeFFA.__defaultWidth = 960

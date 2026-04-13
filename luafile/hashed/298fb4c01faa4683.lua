@@ -1,5 +1,5 @@
-require( "x64:e272191e46af824" )
-require( "x64:4dd810316f738ee" )
+require( "ui/uieditor/widgets/common/commontooltip" )
+require( "ui/uieditor/widgets/itemshop/contracts/contractitemcost" )
 
 CoD.BM_Bribe_Widget = InheritFrom( LUI.UIElement )
 CoD.BM_Bribe_Widget.__defaultWidth = 270

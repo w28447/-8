@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/footer/footercontainer_frontend_right" )
-require( "x64:262783dc22b4707" )
-require( "x64:606983d188de2b0" )
-require( "x64:3a1772776cde124" )
+require( "ui/uieditor/widgets/pc/bnetstore/pc_bnetstore_container" )
+require( "ui/uieditor/widgets/pc/bnetstore/pc_bnetstore_devslogos" )
+require( "ui/uieditor/widgets/pc/bnetstore/pc_bnetstore_keyart" )
 
 CoD.PC_BnetStore = InheritFrom( CoD.Menu )
 LUI.createMenu.PC_BnetStore = function ( f1_arg0, f1_arg1 )

@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/common/commonheader" )
-require( "x64:81a24c5340caa1e" )
+require( "ui/uieditor/widgets/common/commontabbarbacking" )
 require( "ui/uieditor/widgets/header/header_container_frontend" )
-require( "x64:614b957d206f438" )
+require( "ui/uieditor/widgets/zmfrontend/zmgamemodetabs" )
 
 CoD.DirectorHeaderTabSafeArea = InheritFrom( LUI.UIElement )
 CoD.DirectorHeaderTabSafeArea.__defaultWidth = 1920

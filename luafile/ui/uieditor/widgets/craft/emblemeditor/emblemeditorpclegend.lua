@@ -1,4 +1,4 @@
-require( "x64:82fe242c70e9018" )
+require( "ui/uieditor/widgets/craft/emblemeditor/emblemeditorpclegend_shortcuts" )
 require( "ui/uieditor/widgets/emptyfocusable" )
 
 CoD.EmblemEditorPCLegend = InheritFrom( LUI.UIElement )

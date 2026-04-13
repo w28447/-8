@@ -1,6 +1,6 @@
-require( "x64:139816fb8ad97ee" )
-require( "x64:8d1adc2235d1aa2" )
-require( "x64:2c8d446bfc8772" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_oneinthechamber" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_stockammo" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_weaponinfo" )
 require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidgetmp_helditem" )
 
 CoD.AmmoWidgetMP = InheritFrom( LUI.UIElement )

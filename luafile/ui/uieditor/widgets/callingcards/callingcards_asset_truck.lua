@@ -1,4 +1,4 @@
-require( "x64:170db364cb58ba9" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_truckwheelanimation" )
 
 CoD.CallingCards_Asset_truck = InheritFrom( LUI.UIElement )
 CoD.CallingCards_Asset_truck.__defaultWidth = 816

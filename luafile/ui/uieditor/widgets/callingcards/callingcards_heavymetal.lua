@@ -1,4 +1,4 @@
-require( "x64:1323f926c43b792" )
+require( "ui/uieditor/widgets/callingcards/loot3/ui_icon_callingcards_heavymetal_cop2" )
 
 CoD[0x14ECFF745AEB685] = InheritFrom( LUI.UIElement )
 CoD[0x14ECFF745AEB685].__defaultWidth = 960

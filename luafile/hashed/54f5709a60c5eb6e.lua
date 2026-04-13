@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframeidentity" )
-require( "x64:4578da2409f9269" )
-require( "x64:52e481f8ee460a4" )
-require( "x64:a6067d35a987dd5" )
+require( "ui/uieditor/widgets/blackmarket/contracts/bm_availablecontractslistcontainer" )
+require( "ui/uieditor/widgets/blackmarket/contracts/bm_contractdetails" )
+require( "ui/uieditor/widgets/blackmarket/contracts/bm_emptycontractslotcolumn" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsbackground" )
 
 CoD.BlackMarketContractSelect = InheritFrom( CoD.Menu )

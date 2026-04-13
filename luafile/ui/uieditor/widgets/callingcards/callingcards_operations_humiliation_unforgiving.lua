@@ -1,5 +1,5 @@
-require( "x64:4217923ce9c1614" )
-require( "x64:5f067625bb89e44" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_graphic_burstspin" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_swordstab" )
 
 CoD[0x4D725BD127611CA] = InheritFrom( LUI.UIElement )
 CoD[0x4D725BD127611CA].__defaultWidth = 960

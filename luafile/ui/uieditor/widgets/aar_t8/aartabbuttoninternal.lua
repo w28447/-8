@@ -1,4 +1,4 @@
-require( "x64:dbb73fb8fe6a257" )
+require( "ui/uieditor/widgets/aar_t8/aartabbutton" )
 require( "ui/uieditor/widgets/bumperbuttonwithkeymousetext" )
 
 CoD.AARTabButtonInternal = InheritFrom( LUI.UIElement )

@@ -1,9 +1,9 @@
 require( "x64:6c0a92e345d6635" )
-require( "x64:93a575a7ca17e04" )
-require( "x64:98de092f5b8db48" )
+require( "ui/uieditor/widgets/health/healthbar" )
+require( "ui/uieditor/widgets/health/healthboostnotificationcontainer" )
 require( "x64:89489cdb5ec7fcc" )
-require( "x64:9f7790271138ea3" )
-require( "x64:db399906c2727be" )
+require( "ui/uieditor/widgets/mphudwidgets/overheadname_playernameandclantag" )
+require( "ui/uieditor/widgets/mphudwidgets/overheadname_playernameandclantagglow" )
 require( "ui/uieditor/widgets/onoffimage" )
 
 CoD.OverheadName_MP = InheritFrom( LUI.UIElement )

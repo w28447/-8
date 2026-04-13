@@ -1,5 +1,5 @@
-require( "x64:e9cfc3cb5356fa5" )
-require( "x64:81a24c5340caa1e" )
+require( "ui/uieditor/widgets/common/commontabbar" )
+require( "ui/uieditor/widgets/common/commontabbarbacking" )
 
 CoD.EmblemSafeAreaContainer = InheritFrom( LUI.UIElement )
 CoD.EmblemSafeAreaContainer.__defaultWidth = 1920

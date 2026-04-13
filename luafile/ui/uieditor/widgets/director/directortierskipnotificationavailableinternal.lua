@@ -1,4 +1,4 @@
-require( "x64:7dacefed967e3df" )
+require( "ui/uieditor/widgets/common/commonbackingwithbrackets" )
 
 CoD.DirectorTierSkipNotificationAvailableInternal = InheritFrom( LUI.UIElement )
 CoD.DirectorTierSkipNotificationAvailableInternal.__defaultWidth = 650

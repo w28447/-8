@@ -1,4 +1,4 @@
-require( "x64:61a4811b8d5e2a3" )
+require( "ui/uieditor/widgets/director/directordraftselectloadoutinternal" )
 
 CoD.DirectorDraftSelectLoadout = InheritFrom( LUI.UIElement )
 CoD.DirectorDraftSelectLoadout.__defaultWidth = 75

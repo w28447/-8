@@ -1,4 +1,4 @@
-require( "x64:fbffc86e9a93477" )
+require( "ui/uieditor/widgets/blackmarket/bm_iteminfopanel" )
 require( "ui/uieditor/widgets/craft/emblemeditor/emblemdrawwidgetnew" )
 require( "ui/uieditor/widgets/scoreboard/tabbedscoreboardfuibox" )
 

@@ -1,5 +1,5 @@
 require( "x64:ceea494103cb1e2" )
-require( "x64:34096eb04183443" )
+require( "ui/uieditor/widgets/lobby/localserverrow" )
 require( "ui/uieditor/widgets/scrollbars/verticalcounter" )
 
 CoD.LocalServerRowList = InheritFrom( LUI.UIElement )

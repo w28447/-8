@@ -1,4 +1,4 @@
-require( "x64:f15c63f70691173" )
+require( "ui/uieditor/widgets/challenges/challenges_callingcardwidgetinternal" )
 
 CoD.Challenges_CallingCardWidget = InheritFrom( LUI.UIElement )
 CoD.Challenges_CallingCardWidget.__defaultWidth = 360

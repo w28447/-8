@@ -1,5 +1,5 @@
-require( "x64:a0ea5c4d6136584" )
-require( "x64:520ac0ef70d2063" )
+require( "ui/uieditor/widgets/blackmarket/contracts/bm_activecontractitemreward" )
+require( "ui/uieditor/widgets/blackmarket/contracts/bm_activecontractxpreward" )
 
 CoD.WZAARContractReward = InheritFrom( LUI.UIElement )
 CoD.WZAARContractReward.__defaultWidth = 345

@@ -1,5 +1,5 @@
-require( "x64:aed3f55b9ef43dd" )
-require( "x64:aba4f0586fe0e9f" )
+require( "ui/uieditor/widgets/vehiclehuds/vehicleseatconfig_seatpip" )
+require( "ui/uieditor/widgets/warzone/warzone_emp_vehicle" )
 
 CoD.VehicleSeatConfig_Internal = InheritFrom( LUI.UIElement )
 CoD.VehicleSeatConfig_Internal.__defaultWidth = 150

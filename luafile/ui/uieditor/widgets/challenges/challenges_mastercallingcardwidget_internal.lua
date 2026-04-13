@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/cac/cac_lock" )
 require( "ui/uieditor/widgets/cac/menuselectscreen/weaponnamewidget" )
 require( "ui/uieditor/widgets/callingcards/callingcards_framewidget" )
-require( "x64:3e426332d66c91e" )
+require( "ui/uieditor/widgets/common/commonfocusbrackets" )
 require( "ui/uieditor/widgets/director/directorselectbuttonlines" )
 require( "ui/uieditor/widgets/store/storecommontextbacking" )
 require( "x64:2d361ac3553c22a" )

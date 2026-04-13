@@ -1,6 +1,6 @@
-require( "x64:9f7790271138ea3" )
-require( "x64:330cd3bfe28d4dc" )
-require( "x64:ac5421509a88487" )
+require( "ui/uieditor/widgets/mphudwidgets/overheadname_playernameandclantag" )
+require( "ui/uieditor/widgets/mphudwidgets/overheadname_wz_playernumber" )
+require( "ui/uieditor/widgets/mphudwidgets/overheadnamewzcash" )
 
 CoD.OverheadName_WZ_NameAndNumber = InheritFrom( LUI.UIElement )
 CoD.OverheadName_WZ_NameAndNumber.__defaultWidth = 164

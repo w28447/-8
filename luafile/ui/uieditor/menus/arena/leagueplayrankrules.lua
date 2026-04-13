@@ -1,8 +1,8 @@
-require( "x64:681dcc0e5381c21" )
-require( "x64:c8a676aa01ca8ee" )
-require( "x64:68d2be12a9d6269" )
-require( "x64:f3fc0ec27ad5c4e" )
-require( "x64:2cf4ad39ea2c548" )
+require( "ui/uieditor/widgets/arena/leagueplayendrankrulesrewards" )
+require( "ui/uieditor/widgets/arena/leagueplayendrankrulesstreaks" )
+require( "ui/uieditor/widgets/arena/LeaguePlayRuby" )
+require( "ui/uieditor/widgets/arena/leagueplayrulespopup" )
+require( "ui/uieditor/widgets/itemshop/itemshopbackgroundblur" )
 
 CoD.LeaguePlayRankRules = InheritFrom( CoD.Menu )
 LUI.createMenu.LeaguePlayRankRules = function ( f1_arg0, f1_arg1 )

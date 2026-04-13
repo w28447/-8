@@ -1,4 +1,4 @@
-require( "x64:79fe6ac43673588" )
+require( "ui/uieditor/widgets/challenges/challenges_framewidget_titlebackground" )
 
 CoD.FileshareSelectedItemPreview = InheritFrom( LUI.UIElement )
 CoD.FileshareSelectedItemPreview.__defaultWidth = 500

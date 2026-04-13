@@ -1,6 +1,6 @@
 require( "x64:e4f3618aad5a562" )
-require( "x64:3ff924af57d228a" )
-require( "x64:b50aee012bc703d" )
+require( "ui/uieditor/widgets/pc/pc_achievement_completedtick" )
+require( "ui/uieditor/widgets/pc/pc_achievementnotification_texts" )
 
 CoD.PC_AchievementNotification = InheritFrom( LUI.UIElement )
 CoD.PC_AchievementNotification.__defaultWidth = 430

@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframeidentity" )
-require( "x64:f027dcc6409e42c" )
+require( "ui/uieditor/widgets/pc/pc_motd_buttons" )
 
 CoD.PostSeasonPopup = InheritFrom( CoD.Menu )
 LUI.createMenu.PostSeasonPopup = function ( f1_arg0, f1_arg1 )

@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/hud/corner9slice" )
 require( "x64:7122e658d3b8228" )
-require( "x64:ef354d5c59e8994" )
+require( "ui/uieditor/widgets/mphudwidgets/waypoint_textwithbgtraining" )
 
 CoD.Waypoint_TextBGTraining = InheritFrom( LUI.UIElement )
 CoD.Waypoint_TextBGTraining.__defaultWidth = 120

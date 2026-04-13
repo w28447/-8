@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/buttonprogressring" )
 require( "ui/uieditor/widgets/controllerdependent_textbox" )
-require( "x64:21cbd2e8fb322c5" )
+require( "ui/uieditor/widgets/mphudwidgets/readyevents/readyevents_scorestreaks_internal" )
 
 CoD.ReadyEvents_Scorestreaks = InheritFrom( LUI.UIElement )
 CoD.ReadyEvents_Scorestreaks.__defaultWidth = 300

@@ -1,4 +1,4 @@
-require( "x64:3817c701caa07b3" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_ghost_spin" )
 
 CoD[0x16E4D2022024D11] = InheritFrom( LUI.UIElement )
 CoD[0x16E4D2022024D11].__defaultWidth = 960

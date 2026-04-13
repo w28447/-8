@@ -1,4 +1,4 @@
-require( "x64:3f67573d4de18d5" )
+require( "ui/uieditor/widgets/arena/gauntlet/arenagauntletlossslot" )
 
 CoD.ArenaEventProgressButtonInternalGauntlet = InheritFrom( LUI.UIElement )
 CoD.ArenaEventProgressButtonInternalGauntlet.__defaultWidth = 382

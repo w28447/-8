@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/challenges/challenges_callingcardprofiler" )
 require( "ui/uieditor/widgets/challenges/challenges_callingcardwidget" )
-require( "x64:79fe6ac43673588" )
+require( "ui/uieditor/widgets/challenges/challenges_framewidget_titlebackground" )
 require( "ui/uieditor/widgets/challenges/challenges_mastercallingcardwidget" )
 
 CoD.ChallengesStickerbook = InheritFrom( LUI.UIElement )

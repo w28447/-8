@@ -1,4 +1,4 @@
-require( "x64:e95c2762ac5b4eb" )
+require( "ui/uieditor/widgets/vehiclehuds/attackhelicopter/vhud_attack_helicopter_internal" )
 
 CoD.VHUD_Attack_Helicopter = InheritFrom( CoD.Menu )
 LUI.createMenu.VHUD_Attack_Helicopter = function ( f1_arg0, f1_arg1 )

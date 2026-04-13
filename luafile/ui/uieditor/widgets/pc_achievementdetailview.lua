@@ -1,8 +1,8 @@
 require( "ui/uieditor/widgets/lobby/common/fe_titlenumbrdr" )
-require( "x64:ff272eb6e6aaf30" )
-require( "x64:caf3cedd5ac4996" )
-require( "x64:8ce4f97c9c109c1" )
-require( "x64:564ca313abeb19a" )
+require( "ui/uieditor/widgets/pc/pc_achievementdetailedview_desc" )
+require( "ui/uieditor/widgets/pc/pc_achievementdetailedview_points" )
+require( "ui/uieditor/widgets/pc_achievementprogressbar" )
+require( "ui/uieditor/widgets/tablet/tak5/tabletconnectionarrow" )
 
 CoD.PC_AchievementDetailView = InheritFrom( LUI.UIElement )
 CoD.PC_AchievementDetailView.__defaultWidth = 488

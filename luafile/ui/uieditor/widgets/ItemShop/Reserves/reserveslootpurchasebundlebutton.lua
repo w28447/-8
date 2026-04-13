@@ -1,6 +1,6 @@
-require( "x64:e272191e46af824" )
-require( "x64:d18f710d30d4ebf" )
-require( "x64:8c811a1d34161cf" )
+require( "ui/uieditor/widgets/common/commontooltip" )
+require( "ui/uieditor/widgets/itemshop/contracts/contractpurchasedbanner" )
+require( "ui/uieditor/widgets/itemshop/timerright" )
 
 CoD.ReservesLootPurchaseBundleButton = InheritFrom( LUI.UIElement )
 CoD.ReservesLootPurchaseBundleButton.__defaultWidth = 248

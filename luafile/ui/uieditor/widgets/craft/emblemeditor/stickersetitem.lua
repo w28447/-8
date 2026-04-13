@@ -1,4 +1,4 @@
-require( "x64:809c0509ebb6598" )
+require( "ui/uieditor/widgets/craft/emblemeditor/stickersetiteminternal" )
 
 CoD.StickerSetItem = InheritFrom( LUI.UIElement )
 CoD.StickerSetItem.__defaultWidth = 152

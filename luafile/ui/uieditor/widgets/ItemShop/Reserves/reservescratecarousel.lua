@@ -1,8 +1,8 @@
-require( "x64:be52530c0ca57a1" )
-require( "x64:87b99331f9f0f2e" )
-require( "x64:faa5e2f0fd53709" )
-require( "x64:35653ef4ad2299d" )
-require( "x64:b1b346e32476a2e" )
+require( "ui/uieditor/menus/itemshop/purchasecodpoints" )
+require( "ui/uieditor/menus/itemshop/purchasereservesitem" )
+require( "ui/uieditor/widgets/itemshop/reserves/reserveslootcratebuttoncontainer" )
+require( "ui/uieditor/widgets/scrollbars/horizontalcountertriggerprompts" )
+require( "ui/uieditor/widgets/scrollbars/horizontalcounter" )
 
 CoD.ReservesCrateCarousel = InheritFrom( LUI.UIElement )
 CoD.ReservesCrateCarousel.__defaultWidth = 248

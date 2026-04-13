@@ -1,7 +1,7 @@
 require( "x64:3a3f25394a55e03" )
 require( "x64:f7f8755bdbe6239" )
-require( "x64:e8dbd840828bc3" )
-require( "x64:f12de8d76142ccd" )
+require( "ui/uieditor/widgets/warzone/warzoneinventorymenuitem" )
+require( "ui/uieditor/widgets/warzone/warzoneinventorymenuitemattachmentsmall" )
 require( "x64:ac7ca8b9e6b6c7a" )
 
 CoD.StartMenu_Inventory_WeaponsDisplayPC = InheritFrom( LUI.UIElement )

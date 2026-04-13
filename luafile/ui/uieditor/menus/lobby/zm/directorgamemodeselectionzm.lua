@@ -1,7 +1,7 @@
-require( "x64:ade951b2d8c4d9a" )
-require( "x64:f6ae994925ce8e1" )
+require( "ui/uieditor/menus/lobby/zm/directorzmtrialsinfo" )
+require( "ui/uieditor/widgets/director/directorheadertabsafearea" )
 require( "ui/uieditor/widgets/footer/footercontainer_frontend_right" )
-require( "x64:662addde48b6aa5" )
+require( "ui/uieditor/widgets/zmfrontend/directorgamemodeselectionzminternal" )
 
 CoD.DirectorGamemodeSelectionZM = InheritFrom( CoD.Menu )
 LUI.createMenu.DirectorGamemodeSelectionZM = function ( f1_arg0, f1_arg1 )

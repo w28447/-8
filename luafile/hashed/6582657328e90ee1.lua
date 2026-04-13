@@ -1,5 +1,5 @@
-require( "x64:49297d254ade04b" )
-require( "x64:b7247b8f2275336" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidgetwzarmorshardunavailable_pc" )
+require( "ui/uieditor/widgets/warzone/warzonecasttimecontainer" )
 
 CoD.PlayerWidgetWZArmor = InheritFrom( LUI.UIElement )
 CoD.PlayerWidgetWZArmor.__defaultWidth = 64

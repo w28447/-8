@@ -1,8 +1,8 @@
-require( "x64:f00a10fc8301da2" )
+require( "ui/uieditor/widgets/aar_t8/aarcommonbacking" )
 require( "ui/uieditor/widgets/aar_t8/aartabheader" )
 require( "ui/uieditor/widgets/aar_t8/scoreboard/aarnemesis" )
 require( "ui/uieditor/widgets/aar_t8/scoreboard/aarscoreboardheader" )
-require( "x64:797033da1e8f2cb" )
+require( "ui/uieditor/widgets/aar_t8/scoreboard/aarscoreboardsafearea" )
 require( "ui/uieditor/widgets/scoreboard/tabbedscoreboardscores" )
 
 CoD.AARScoreboardTab = InheritFrom( LUI.UIElement )

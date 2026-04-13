@@ -1,7 +1,7 @@
 require( "ui/uieditor/menus/charactercustomization/personalizecharacter" )
-require( "x64:62080ad3aaa22da" )
+require( "ui/uieditor/widgets/common/commoninformationframe" )
 require( "ui/uieditor/widgets/lobby/common/layoutelements/commonbglayoutlinkline" )
-require( "x64:c3fa19037d61cad" )
+require( "ui/uieditor/widgets/mp/specialisthub/hubspecialist_character" )
 require( "ui/uieditor/widgets/scrollbars/verticalcounter" )
 
 CoD.StartMenu_Personalization_ZM = InheritFrom( LUI.UIElement )

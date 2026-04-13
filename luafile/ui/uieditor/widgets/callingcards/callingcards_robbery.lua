@@ -1,4 +1,4 @@
-require( "x64:730a2fde3110a47" )
+require( "ui/uieditor/widgets/callingcards/loot3/ui_icon_callingcards_robber_laser" )
 
 CoD[0xC92A2CB5341FC62] = InheritFrom( LUI.UIElement )
 CoD[0xC92A2CB5341FC62].__defaultWidth = 960

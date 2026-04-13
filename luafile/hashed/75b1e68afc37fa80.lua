@@ -2,7 +2,7 @@ require( "x64:1de9b3de837a34c" )
 require( "x64:54118f37219653d" )
 require( "x64:90bfa8fd4b71a33" )
 require( "x64:2e06eec4ea38539" )
-require( "x64:298bd344d764bb6" )
+require( "ui/uieditor/widgets/hud/wzholdbuttonprompt" )
 
 CoD.MultiItemPickupWaypoint = InheritFrom( LUI.UIElement )
 CoD.MultiItemPickupWaypoint.__defaultWidth = 1100

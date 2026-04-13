@@ -1,4 +1,4 @@
-require( "x64:7a560e82b430a7a" )
+require( "ui/uieditor/widgets/itemshop/reserves/reserveslootbundlecratebutton" )
 
 CoD.ReservesLootBundleCrateButtonContainer = InheritFrom( LUI.UIElement )
 CoD.ReservesLootBundleCrateButtonContainer.__defaultWidth = 160

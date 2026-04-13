@@ -1,5 +1,5 @@
-require( "x64:f00a10fc8301da2" )
-require( "x64:df000c52aa8e445" )
+require( "ui/uieditor/widgets/aar_t8/aarcommonbacking" )
+require( "ui/uieditor/widgets/zmfrontend/zmaarscoreboardtabinternal" )
 
 CoD.ZMAARScoreboardTab = InheritFrom( LUI.UIElement )
 CoD.ZMAARScoreboardTab.__defaultWidth = 1920

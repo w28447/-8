@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/cac/equippedscorestreaklistitem" )
-require( "x64:341ce33d59fafd1" )
+require( "ui/uieditor/widgets/cac/restricteditemwarningtext" )
 require( "ui/uieditor/widgets/cac/supportselectiondescription" )
 require( "ui/uieditor/widgets/cac/supportselectionoption" )
 require( "ui/uieditor/widgets/common/commondetailpanel" )

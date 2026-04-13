@@ -1,5 +1,5 @@
 require( "x64:7344a74ebe1d40c" )
-require( "x64:afb0fdb9191a2d2" )
+require( "ui/uieditor/widgets/startmenu/wz/startmenu_inventorydescription" )
 
 CoD.StartMenu_InventoryDualWeapons = InheritFrom( LUI.UIElement )
 CoD.StartMenu_InventoryDualWeapons.__defaultWidth = 450

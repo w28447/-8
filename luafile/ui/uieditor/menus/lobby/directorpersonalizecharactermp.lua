@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframe" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsbackground" )
-require( "x64:c6100ada0135336" )
+require( "ui/uieditor/widgets/startmenu/startmenu_personalization_mp" )
 
 CoD.DirectorPersonalizeCharacterMP = InheritFrom( CoD.Menu )
 LUI.createMenu.DirectorPersonalizeCharacterMP = function ( f1_arg0, f1_arg1 )

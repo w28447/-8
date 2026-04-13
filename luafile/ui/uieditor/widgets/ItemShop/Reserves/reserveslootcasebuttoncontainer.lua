@@ -1,4 +1,4 @@
-require( "x64:a05958464730fbf" )
+require( "ui/uieditor/widgets/itemshop/reserves/reserveslootcasebutton" )
 
 CoD.ReservesLootCaseButtonContainer = InheritFrom( LUI.UIElement )
 CoD.ReservesLootCaseButtonContainer.__defaultWidth = 160

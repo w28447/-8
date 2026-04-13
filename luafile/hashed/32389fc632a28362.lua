@@ -1,12 +1,12 @@
 require( "x64:8d52912a320cd2e" )
-require( "x64:35152a333fa2552" )
-require( "x64:8e954fb331b89f8" )
-require( "x64:d7a5c3c600baead" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_characterportrait" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_prompt" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidgetwz_abilityitem_heal" )
 require( "x64:892762a382e42c9" )
 require( "x64:d55d115474e5d67" )
 require( "x64:e104ba18fbd90a8" )
-require( "x64:3e25c2bb91944f2" )
-require( "x64:574bf6c47de6a59" )
+require( "ui/uieditor/widgets/warzone/warzonecontextualarmorstashitems" )
+require( "ui/uieditor/widgets/warzone/warzonecontextualextraitems_leftalign" )
 
 CoD.PlayerWidgetWZ = InheritFrom( LUI.UIElement )
 CoD.PlayerWidgetWZ.__defaultWidth = 278

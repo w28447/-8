@@ -1,5 +1,5 @@
-require( "x64:89b8bf47fae612b" )
-require( "x64:f6ee69da04dead6" )
+require( "ui/uieditor/widgets/hud/invalidcmdprompt" )
+require( "ui/uieditor/widgets/hud/proneblocked" )
 
 CoD.HelpMessageContainer = InheritFrom( LUI.UIElement )
 CoD.HelpMessageContainer.__defaultWidth = 1920

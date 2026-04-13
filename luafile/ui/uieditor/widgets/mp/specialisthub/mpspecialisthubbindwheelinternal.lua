@@ -1,8 +1,8 @@
-require( "x64:e53b80d4668a156" )
+require( "ui/uieditor/widgets/hud/mpwheelprompt" )
 require( "x64:d454b077a7fea61" )
 require( "x64:be39623686bc47e" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsmainframe" )
-require( "x64:b66780e6be048a1" )
+require( "ui/uieditor/widgets/director/directorsimplebutton" )
 require( "ui/uieditor/widgets/emptyfocusable" )
 
 CoD.MPSpecialistHUBBindWheelInternal = InheritFrom( LUI.UIElement )

@@ -1,8 +1,8 @@
-require( "x64:7412e6c494ab1c8" )
-require( "x64:34cd2d86af1385e" )
-require( "x64:cf90a501f0cd8ba" )
-require( "x64:a3f1c7ee8f95b76" )
-require( "x64:e32fe30fe56b49b" )
+require( "ui/uieditor/widgets/codcaster/codcasterloadoutselectionspec" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidgetmp_abilityitem" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidgetmp_healcooldown" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidgetmp_ultimate_internal" )
+require( "ui/uieditor/widgets/hud/mp_hacked/hud_hacked_hero_widget" )
 
 CoD.AmmoWidgetMP_Ultimate = InheritFrom( LUI.UIElement )
 CoD.AmmoWidgetMP_Ultimate.__defaultWidth = 268

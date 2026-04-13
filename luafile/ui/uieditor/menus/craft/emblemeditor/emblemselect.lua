@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframe" )
-require( "x64:71d2a0ed724628e" )
-require( "x64:149d8f176add71c" )
+require( "ui/uieditor/widgets/common/commonidentitywidgetstreamlinedsafeareacontainer" )
+require( "i/uieditor/widgets/craft/emblemeditor/emblemselectsafeareacontainer" )
 require( "ui/uieditor/widgets/playercard/selfidentitybadge" )
 
 CoD.EmblemSelect = InheritFrom( CoD.Menu )

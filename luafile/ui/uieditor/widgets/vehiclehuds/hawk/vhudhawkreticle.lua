@@ -1,8 +1,8 @@
 require( "x64:c7393046816f760" )
 require( "ui/uieditor/widgets/lobby/common/layoutelements/commonsearchingbar" )
-require( "x64:7589d159b20010b" )
-require( "x64:9454efb1a15a291" )
-require( "x64:8819c673a5c0a5c" )
+require( "ui/uieditor/widgets/vehiclehuds/hawk/vhudhawkframesquare" )
+require( "ui/uieditor/widgets/vehiclehuds/hawk/vhudhawkhealth" )
+require( "ui/uieditor/widgets/vehiclehuds/vhud_layoutplusgridlarge" )
 require( "x64:7c03458f023327" )
 
 CoD.VHUDHawkReticle = InheritFrom( LUI.UIElement )

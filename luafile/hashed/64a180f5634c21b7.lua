@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/store/storecommontextbacking" )
-require( "x64:b537a85bd588813" )
+require( "ui/uieditor/widgets/warzone/warzoneredeployment" )
 
 CoD.WZReinsertionPassengerCount = InheritFrom( LUI.UIElement )
 CoD.WZReinsertionPassengerCount.__defaultWidth = 1920

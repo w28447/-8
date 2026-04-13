@@ -1,4 +1,4 @@
-require( "x64:dc3c4513e156a36" )
+require( "ui/uieditor/widgets/craft/emblemeditor/emblemgroupnew_internal" )
 
 CoD.EmblemGroupNew = InheritFrom( LUI.UIElement )
 CoD.EmblemGroupNew.__defaultWidth = 144

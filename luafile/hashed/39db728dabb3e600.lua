@@ -1,4 +1,4 @@
-require( "x64:8fd69737f859814" )
+require( "ui/uieditor/widgets/vehiclehuds/gunship/vhud_gunship_internal" )
 
 CoD.VHUD_Gunship = InheritFrom( CoD.Menu )
 LUI.createMenu.VHUD_Gunship = function ( f1_arg0, f1_arg1 )

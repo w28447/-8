@@ -1,5 +1,5 @@
-require( "x64:f91d9d528eb4ebd" )
-require( "x64:1f846296f1a1b81" )
+require( "ui/uieditor/widgets/director/directorselectbuttonimageinternal" )
+require( "ui/uieditor/widgets/director/DirectorSelectButtonMiniInternal" )
 
 CoD.DirectorPreGameButtonLeftJustified = InheritFrom( LUI.UIElement )
 CoD.DirectorPreGameButtonLeftJustified.__defaultWidth = 212

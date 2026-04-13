@@ -1,4 +1,4 @@
-require( "x64:8f23f7c1fb7a83b" )
+require( "ui/uieditor/widgets/arena/leagueplaylisttextbox" )
 require( "ui/uieditor/widgets/director/directorplaylistheaderb" )
 
 CoD.ArenaFindGameDetailModes = InheritFrom( LUI.UIElement )

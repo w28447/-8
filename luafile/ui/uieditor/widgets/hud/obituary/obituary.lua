@@ -1,4 +1,4 @@
-require( "x64:e48baaf224320fd" )
+require( "ui/uieditor/widgets/hud/obituary/obituaryentry" )
 
 CoD.Obituary = InheritFrom( LUI.UIElement )
 CoD.Obituary.__defaultWidth = 500

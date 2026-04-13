@@ -1,7 +1,7 @@
-require( "x64:bb4d1a31de34c66" )
+require( "ui/uieditor/menus/social/social_partysettings" )
 require( "ui/uieditor/widgets/social/social_infopane" )
-require( "x64:5d1faa058a65aae" )
-require( "x64:2d685c8ddad85cf" )
+require( "ui/uieditor/widgets/social/social_managepartyplayerbutton" )
+require( "ui/uieditor/widgets/social/social_partysettingsbutton" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsbackground" )
 require( "ui/uieditor/widgets/pc_vscrolllist" )
 

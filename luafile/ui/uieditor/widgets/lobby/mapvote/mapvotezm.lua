@@ -1,5 +1,5 @@
-require( "x64:fda45231af81f63" )
-require( "x64:46349b7589a5cf8" )
+require( "ui/uieditor/widgets/director/directormapgametypeanddifficulty3" )
+require( "ui/uieditor/widgets/lobby/mapvote/mapvoteitemzm" )
 
 CoD.MapVoteZM = InheritFrom( LUI.UIElement )
 CoD.MapVoteZM.__defaultWidth = 394

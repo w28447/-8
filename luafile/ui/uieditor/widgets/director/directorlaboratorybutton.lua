@@ -1,6 +1,6 @@
-require( "x64:19825e759c0fc6c" )
-require( "x64:2e6578419b866ab" )
-require( "x64:f91cf6839d25705" )
+require( "ui/uieditor/menus/zm/laboratory" )
+require( "ui/uieditor/widgets/director/directorlaboratorybuttoninternal" )
+require( "ui/uieditor/widgets/director/directorlobbytierskipnotification" )
 require( "x64:7553d3c19005336" )
 
 CoD.DirectorLaboratoryButton = InheritFrom( LUI.UIElement )

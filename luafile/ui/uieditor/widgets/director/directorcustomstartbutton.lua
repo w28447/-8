@@ -1,6 +1,6 @@
-require( "x64:85bab6972d766d5" )
+require( "ui/uieditor/widgets/director/directorcustomgamebuttoncountdown" )
 require( "ui/uieditor/widgets/director/directorpartyleaderonlyprompt" )
-require( "x64:1f846296f1a1b81" )
+require( "ui/uieditor/widgets/director/DirectorSelectButtonMiniInternal" )
 
 CoD.DirectorCustomStartButton = InheritFrom( LUI.UIElement )
 CoD.DirectorCustomStartButton.__defaultWidth = 382

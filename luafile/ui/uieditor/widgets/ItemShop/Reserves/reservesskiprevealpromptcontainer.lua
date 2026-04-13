@@ -1,4 +1,4 @@
-require( "x64:ad993eba4cc581" )
+require( "ui/uieditor/widgets/itemshop/reserves/reservesskiprevealprompt" )
 
 CoD.ReservesSkipRevealPromptContainer = InheritFrom( LUI.UIElement )
 CoD.ReservesSkipRevealPromptContainer.__defaultWidth = 313

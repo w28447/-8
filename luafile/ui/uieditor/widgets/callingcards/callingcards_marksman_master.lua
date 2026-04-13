@@ -1,4 +1,4 @@
-require( "x64:5cc9b001c3ddd6f" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_spinburst_container" )
 
 CoD[0x3890464C4936BF0] = InheritFrom( LUI.UIElement )
 CoD[0x3890464C4936BF0].__defaultWidth = 960

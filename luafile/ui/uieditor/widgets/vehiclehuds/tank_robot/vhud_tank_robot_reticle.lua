@@ -1,8 +1,8 @@
-require( "x64:87cb9f30e25526f" )
-require( "x64:eb79bfc3338580d" )
-require( "x64:9e6258642c1a578" )
-require( "x64:a0a5b9dca620e75" )
-require( "x64:8819c673a5c0a5c" )
+require( "ui/uieditor/widgets/vehiclehuds/tank_robot/vhud_tank_robot_framesquare" )
+require( "ui/uieditor/widgets/vehiclehuds/tank_robot/vhud_tank_robot_health" )
+require( "ui/uieditor/widgets/vehiclehuds/tank_robot/vhud_tank_robot_rocket_counter" )
+require( "ui/uieditor/widgets/vehiclehuds/tank_robot/vhud_tank_robot_target_status" )
+require( "ui/uieditor/widgets/vehiclehuds/vhud_layoutplusgridlarge" )
 require( "x64:9d92dce1e4291ce" )
 require( "x64:7c03458f023327" )
 

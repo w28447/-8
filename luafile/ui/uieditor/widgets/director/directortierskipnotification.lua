@@ -1,7 +1,7 @@
-require( "x64:48f0ec6d3fba24f" )
-require( "x64:69ba5b942796499" )
-require( "x64:a3bfabf4c0510c9" )
-require( "x64:a88f2d181325438" )
+require( "ui/uieditor/widgets/director/directortierskipnotificationavailableinternal" )
+require( "ui/uieditor/widgets/director/directortierskipnotificationcompleteinternal" )
+require( "ui/uieditor/widgets/director/directortierskipnotificationcontractavailableinternal" )
+require( "ui/uieditor/widgets/notifications/xp/tierboostambientglow" )
 
 CoD.DirectorTierSkipNotification = InheritFrom( LUI.UIElement )
 CoD.DirectorTierSkipNotification.__defaultWidth = 800

@@ -1,5 +1,5 @@
-require( "x64:48782e5f4b7d1c9" )
-require( "x64:56366ce3f806699" )
+require( "ui/uieditor/widgets/codcaster/codcasterloadoutwildcard" )
+require( "ui/uieditor/widgets/codcaster/codcasterloadoutwildcardbackground" )
 
 CoD.CodCasterLoadoutModulePrimaryWildcard = InheritFrom( LUI.UIElement )
 CoD.CodCasterLoadoutModulePrimaryWildcard.__defaultWidth = 110

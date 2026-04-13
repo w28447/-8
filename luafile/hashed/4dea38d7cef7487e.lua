@@ -1,4 +1,4 @@
-require( "x64:bc87ac3fc76bb82" )
+require( "ui/uieditor/widgets/itemshop/contracts/contractrarityheader" )
 
 CoD.BM_BountyDetails = InheritFrom( LUI.UIElement )
 CoD.BM_BountyDetails.__defaultWidth = 800

@@ -1,6 +1,6 @@
-require( "x64:852e2707273b3e5" )
-require( "x64:39c9781a260736a" )
-require( "x64:8819c673a5c0a5c" )
+require( "ui/uieditor/widgets/vehiclehuds/hellstorm/vhud_hellstorm_button_all" )
+require( "ui/uieditor/widgets/vehiclehuds/hellstorm/vhud_hellstormlayouttracker" )
+require( "ui/uieditor/widgets/vehiclehuds/vhud_layoutplusgridlarge" )
 
 CoD.vhud_HellstormBGFrame = InheritFrom( LUI.UIElement )
 CoD.vhud_HellstormBGFrame.__defaultWidth = 1920

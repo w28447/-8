@@ -1,4 +1,4 @@
-require( "x64:9be650a0062d524" )
+require( "ui/uieditor/widgets/mphudwidgets/gametypescoreinfo/waypointradialtimer" )
 require( "ui/uieditor/widgets/mphudwidgets/gametypescoreinfo/waypointtimercountdown" )
 
 CoD.HardpointObjectiveNotification = InheritFrom( LUI.UIElement )

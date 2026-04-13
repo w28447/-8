@@ -1,6 +1,6 @@
-require( "x64:f0300a2ab82b644" )
-require( "x64:f0303a2ab82bb5d" )
-require( "x64:c35bb16c18d983" )
+require( "ui/uieditor/widgets/callingcards/loot3/ui_icon_callingcards_invasion_lamb1" )
+require( "ui/uieditor/widgets/callingcards/loot3/ui_icon_callingcards_invasion_lamb2" )
+require( "ui/uieditor/widgets/callingcards/loot3/ui_icon_callingcards_invasion_ufo" )
 
 CoD[0x95CA2F50E1B4B18] = InheritFrom( LUI.UIElement )
 CoD[0x95CA2F50E1B4B18].__defaultWidth = 960

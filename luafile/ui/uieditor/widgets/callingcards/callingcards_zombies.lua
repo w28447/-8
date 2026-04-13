@@ -1,4 +1,4 @@
-require( "x64:a8ca738c8ede92" )
+require( "ui/uieditor/widgets/callingcards/callingcards_asset_zombies_astronaut" )
 
 CoD[0xAF83B16AB3EE2AE] = InheritFrom( LUI.UIElement )
 CoD[0xAF83B16AB3EE2AE].__defaultWidth = 960

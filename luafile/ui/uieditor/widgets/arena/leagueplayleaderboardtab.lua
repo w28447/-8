@@ -1,6 +1,6 @@
-require( "x64:1e4812bc9d39ec5" )
+require( "ui/uieditor/widgets/arena/arenaleagueplaybg" )
 require( "ui/uieditor/widgets/arena/leagueplayleaderboard" )
-require( "x64:ea67ece3d7f7c7b" )
+require( "ui/uieditor/widgets/arena/leagueplayleaderboard_infopane" )
 require( "ui/uieditor/widgets/store/storecommontextbacking" )
 
 CoD.LeaguePlayLeaderboardTab = InheritFrom( LUI.UIElement )
@@ -61,7 +61,7 @@ CoD.LeaguePlayLeaderboardTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local Line = LUI.UIImage.new( 0, 0, 1235.5, 1239.5, 0, 0, 299.5, 907.5 )
 	Line:setAlpha( 0.05 )
-	Line:setImage( RegisterImage( 0xC49B0C8991A541F ) )
+	Line:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
 	Line:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	Line:setShaderVector( 0, 0, 0, 0, 0 )
 	Line:setupNineSliceShader( 4, 8 )

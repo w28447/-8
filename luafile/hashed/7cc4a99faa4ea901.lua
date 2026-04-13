@@ -1,4 +1,4 @@
-require( "x64:c598e2c46494586" )
+require( "ui/uieditor/widgets/itemshop/supplychain/supplychaindetailimage3d" )
 
 CoD.BM_BountyItemPreview = InheritFrom( LUI.UIElement )
 CoD.BM_BountyItemPreview.__defaultWidth = 1920
