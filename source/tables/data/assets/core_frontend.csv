@@ -51550,7 +51550,7 @@ image,d#i_c_t8_mp_spe_nomad_cop_head1_hair_haircard3_o
 image,d#i_c_t8_mp_spe_nomad_cop_head1_hair_haircard3_g
 image,d#i_c_t8_mp_spe_nomad_cop_head1_hair_haircard3_c
 image,d#i_c_t8_mp_spe_nomad_cop_head1_hair_haircard3_r
-image,d#hash_729be1de77ee233c
+image,d#uie_ui_hud_core_draft_nameplate_bars
 image,d#hash_729beda795bd7284
 image,d#i_veh_t8_detail_leather_01
 image,d#i_c_t8_mp_spe_recon_head1_helmet_cst_s
@@ -56476,7 +56476,7 @@ luafile,d#ui/uieditor/menus/startmenu/popups/startmenu_options_codaccount_cta.lu
 luafile,#ui/uieditor/widgets/systemoverlays/systemoverlay_classoptionsframe.lua
 luafile,#ui/uieditor/widgets/motd/motd_bannerrender.lua
 luafile,#ui/uieditor/widgets/itemshop/discounttiersnumber.lua
-luafile,#hash_1e2d79957e083b9
+luafile,#ui/uieditor/menus/itemshop/caseexchangecontractconfirmation.lua
 luafile,#ui/uieditor/widgets/craft/craftlayercount.lua
 luafile,#hash_1e9a92cb477cad1
 luafile,#ui/uieditor/widgets/competitive/competitive_ladderscore.lua
@@ -56533,24 +56533,24 @@ luafile,#ui/uieditor/widgets/startmenu/startmenu_barracks_wz.lua
 luafile,#ui/uieditor/menus/lobby/zm/directorgamemodeselectionzm.lua
 luafile,#ui/uieditor/widgets/challenges/challengesnearcompletionwidgetsummary.lua
 luafile,#ui/uieditor/widgets/scoreboard/scoreboardbuttonprompts.lua
-luafile,#hash_4c3c8648b90033b
+luafile,#ui/uieditor/widgets/aar_t8/squadsummary/aarsquadstat.lua
 luafile,d#ui/uieditor/widgets/director/directorquitbuttoncontainer.lua
 luafile,#ui/uieditor/widgets/footer/fe_footercontainermain.lua
 luafile,#hash_4d5132e1fda557b
 luafile,#ui/uieditor/widgets/director/directorcustomgamebuttoncountdown.lua
 luafile,#ui/uieditor/widgets/startmenu/startmenu_barracks_wz_winrecordcontainer.lua
 luafile,#ui/uieditor/widgets/itemshop/reserves/reservesbuttonlayout.lua
-luafile,#hash_5263fc2356acd64
+luafile,#ui/uieditor/widgets/aar_t8/squadsummary/aarsquadheader.lua
 luafile,d#hash_527f01cd83fe887
 luafile,#ui/uieditor/widgets/lobby/common/layoutelements/commonanalysingreticle.lua
 luafile,#ui/uieditor/widgets/blackmarket/bm_iteminforarityheader.lua
 luafile,#ui/uieditor/widgets/aar_t8/rewards/aarclassrewardcacpreview_zm.lua
 luafile,#ui/uieditor/widgets/aar_t8/scoreboard/aarscoreboardtab.lua
 luafile,d#ui/uieditor/widgets/backgroundframes/genericmenuframeidentity.lua
-luafile,#hash_55cd1d19edc6aae
+luafile,#ui/uieditor/menus/aar_t8/missionreward/aarmissionrewardoverlay.lua
 luafile,#ui/uieditor/widgets/craft/emblemeditor/colorpicker/emblemeditorcolortypeheader.lua
 luafile,#ui/uieditor/widgets/aar_t8/rewards/aarclassreward_zm.lua
-luafile,#hash_59801e90257f7d0
+luafile,#ui/uieditor/widgets/aar_t8/missionreward/aarmissionreward_characterlistitem.lua
 luafile,d#ui/uieditor/widgets/pc/socialmenu/pc_battlenetfriend_addfriend_name.lua
 luafile,#ui/uieditor/widgets/cac/weaponattributesbar.lua
 luafile,#ui/uieditor/widgets/arena/arenaeventprogressbuttondailybonus.lua
@@ -56644,7 +56644,7 @@ luafile,#ui/uieditor/widgets/craft/emblemeditor/decaltoolsframe.lua
 luafile,#ui/uieditor/widgets/challenges/challenges_mp_stickerbook_combattraining.lua
 luafile,#ui/uieditor/widgets/itemshop/itemshopbackgroundblur.lua
 luafile,#ui/uieditor/widgets/callingcards/callingcards_blackmarketmastercardwidget.lua
-luafile,#hash_b32da05bdd55ed6
+luafile,#ui/uieditor/widgets/aar_t8/merit/meritboarditem.lua
 luafile,#hash_b3ae8ee550e3bb4
 luafile,#ui/uieditor/menus/codcaster/editteamlogo.lua
 luafile,#ui/uieditor/widgets/aar_t8/tierreward/aartierrewardcolumnheaderhighlighted.lua
@@ -56715,7 +56715,7 @@ luafile,#hash_f48e483545a217f
 luafile,#ui/uieditor/widgets/craft/emblemeditor/stickersetdecal.lua
 luafile,#hash_f59c8d51caa8611
 luafile,#ui/uieditor/widgets/zmfrontend/laboratory/laboratoryplasma_codpointscost.lua
-luafile,#hash_f65d3e4b4d869cb
+luafile,#ui/uieditor/widgets/aar_t8/merit/meritoverlaymanuallayoutvertical.lua
 luafile,d#ui/uieditor/widgets/social/social_infopaneright.lua
 luafile,#ui/uieditor/widgets/arena/arenarubyprogresswidget.lua
 luafile,#ui/uieditor/widgets/pc/zm/pc_equippedbgb.lua
@@ -56748,7 +56748,7 @@ luafile,#ui/uieditor/widgets/arena/arenalobbybuttontext.lua
 luafile,#hash_10afcd73d0fe6d9a
 luafile,#ui/uieditor/widgets/director/directorselectbuttongametype.lua
 luafile,#hash_10d87e3f0a850ac9
-luafile,#hash_10e0584d21f9902c
+luafile,#ui/uieditor/menus/itemshop/itemshopcaseexchangeconfirmation.lua
 luafile,#ui/uieditor/widgets/director/directordraftselectloadoutinternal.lua
 luafile,#ui/uieditor/widgets/arena/playerinspection_infopanewinstreak.lua
 luafile,#ui/uieditor/widgets/director/directorfeaturedcarousel.lua
@@ -56763,7 +56763,7 @@ luafile,#ui/uieditor/widgets/craft/emblemeditor/decaltypebutton.lua
 luafile,#ui/uieditor/widgets/lobby/mapvote/mapvote.lua
 luafile,#ui/uieditor/widgets/cac/restricteditemwarning.lua
 luafile,#ui/uieditor/widgets/common/commonlistbuttonshort_internal.lua
-luafile,#hash_117fc9951cbcf694
+luafile,#ui/uieditor/widgets/aar_t8/squadsummary/aarsquadplacement.lua
 luafile,d#ui/uieditor/widgets/pc/notifications/pc_notif_timechoicebuttoncontainer.lua
 luafile,d#ui/uieditor/widgets/blackmarket/contracts/bm_contractdetailsinternal.lua
 luafile,d#ui/uieditor/widgets/battlenet/frontendbattlenet.lua
@@ -56835,7 +56835,7 @@ luafile,#hash_1578c3ad956e3ad8
 luafile,#ui/uieditor/widgets/startmenu/startmenu_barracks_factioncalling_button_internal.lua
 luafile,#ui/uieditor/widgets/scoreboard/tabbedscoreboardheaderteam.lua
 luafile,#ui/uieditor/widgets/aar_t8/tierreward/aartierrewardparticle.lua
-luafile,#hash_15c913aa3c7f7664
+luafile,#ui/uieditor/widgets/wzaar/wzaar_meritbreakdownline.lua
 luafile,#hash_15e3cea9f449882a
 luafile,d#ui/uieditor/widgets/common/common_tabbar_center.lua
 luafile,#ui/uieditor/widgets/barracks/specialeventtaskwidget.lua
@@ -56894,7 +56894,7 @@ luafile,#ui/uieditor/widgets/itemshop/itemshopraritybackground.lua
 luafile,#ui/uieditor/widgets/cac/weaponselect/weaponselectgriditeminternal.lua
 luafile,#ui/uieditor/widgets/craft/emblemeditor/emblemselectsafeareacontainer.lua
 luafile,#ui/uieditor/menus/lobby/common/popups/vodviewer.lua
-luafile,#hash_18d6d9944497a0ee
+luafile,#ui/uieditor/widgets/itemshop/supplychain/itemshopraritybackgroundstream_ultra.lua
 luafile,#hash_18da0ddebfae1af4
 luafile,#ui/uieditor/widgets/aar_t8/summary/aarsubstat.lua
 luafile,#ui/uieditor/widgets/aar_t8/rewards/aarspecialeventitem.lua
@@ -56939,7 +56939,7 @@ luafile,d#ui/uieditor/widgets/playercard/selfidentitybadge.lua
 luafile,#ui/uieditor/widgets/arena/leagueplayendrankladder.lua
 luafile,#ui/uieditor/widgets/craft/emblemeditor/emblemlayerarrows.lua
 luafile,#ui/uieditor/widgets/codcaster/codcasterteamidentityinformationpanel.lua
-luafile,#hash_1bd64966d934b616
+luafile,#ui/uieditor/menus/aar_t8/tierreward/aartierreward.lua
 luafile,#hash_1c0a7682bce0399e
 luafile,d#ui/uieditor/widgets/common/commonsocialarrow.lua
 luafile,#ui/uieditor/widgets/director/directormatchmakingtimer.lua
@@ -57080,7 +57080,7 @@ luafile,#ui/uieditor/widgets/itemshop/reserves/reservesrevealitem.lua
 luafile,#ui/uieditor/widgets/notifications/xp/tierboostnotification.lua
 luafile,#ui/uieditor/menus/cac/camopersonalizationdetails.lua
 luafile,#ui/uieditor/widgets/notifications/xp/doublexpiconscenteraligned.lua
-luafile,#hash_23ee52468e845cc4
+luafile,#ui/uieditor/widgets/aar_t8/tierreward/aartierskipnotification.lua
 luafile,#ui/uieditor/widgets/aar_t8/tierreward/aartierrewardshowcaseinternalcorerare.lua
 luafile,d#ui/uieditor/widgets/social/social_playerslistbuttonshared.lua
 luafile,#ui/uieditor/widgets/aar_t8/arena/aarladderpoints.lua
@@ -57161,7 +57161,7 @@ luafile,d#ui/uieditor/widgets/startmenu/startmenu_button_emblem_internal.lua
 luafile,#ui/uieditor/widgets/codcaster/codcasterfakemap.lua
 luafile,d#ui/uieditor/widgets/aar_t8/levelup/aarlevelcommonboxes.lua
 luafile,#ui/uieditor/widgets/gamesettings/gamesettings_zmgeneral.lua
-luafile,#hash_27cb94acb29df2d9
+luafile,#ui/uieditor/widgets/itemshop/supplychain/itemshopraritybackgroundstream_epic.lua
 luafile,#ui/uieditor/widgets/arena/leagueplayendrankuprankicon.lua
 luafile,#ui/uieditor/widgets/cac/weaponattachmentselect/attachmentdescriptioncontainer.lua
 luafile,#ui/uieditor/widgets/itemshop/contracts/contractrarityheader.lua
@@ -57215,7 +57215,7 @@ luafile,#hash_2af96f28d9f63ea7
 luafile,d#ui/uieditor/widgets/fe_nat.lua
 luafile,#hash_2b0cadde32b48d46
 luafile,#ui/uieditor/widgets/craft/paintshop/paintshopcolorswatchcontrols.lua
-luafile,#hash_2b30d5d3744cf52c
+luafile,#ui/uieditor/menus/itemshop/itemshopdetailssunset.lua
 luafile,#ui/uieditor/widgets/backgroundframes/backgroundpattern01.lua
 luafile,#ui/uieditor/widgets/cac/menuchooseclass/itemwidgets/weaponlevelmetersmall.lua
 luafile,#hash_2b5fe27a8384c79a
@@ -57227,18 +57227,18 @@ luafile,#ui/uieditor/widgets/aar_t8/summary/aarcompacthistorymessage.lua
 luafile,#ui/uieditor/widgets/aar_t8/arena/aar_leagueplay_placementlist.lua
 luafile,#hash_2bdb5f54a2304900
 luafile,#ui/uieditor/widgets/systemoverlays/systemoverlay_prestige.lua
-luafile,#hash_2c46b86aacbd9d7d
+luafile,#ui/uieditor/widgets/itemshop/supplychain/itemshopraritybackgroundstream_common.lua
 luafile,#ui/uieditor/widgets/gamesettings/gamesettings_perkrestriction.lua
 luafile,#ui/uieditor/menus/wz/wzpersonalizecharacterinspect.lua
 luafile,#ui/uieditor/widgets/gamesettings/gamesettings_equipmentrestriction.lua
-luafile,#hash_2c901c7c8895391c
+luafile,#ui/uieditor/widgets/aar_t8/merit/meritoverlaymanuallayoutverticalbg.lua
 luafile,#ui/uieditor/widgets/cac/classoptionswidget.lua
 luafile,#ui/uieditor/menus/aar_t8/levelup/aarprestigemasteroverlay.lua
 luafile,#ui/uieditor/widgets/director/directorexpandedlobbymemberinternal.lua
 luafile,#hash_2cbecf843841c13c
 luafile,#hash_2cd43730b78a33ce
 luafile,#ui/uieditor/widgets/itemshop/reserves/reserveslootpurchasebundlebuttoncontainer.lua
-luafile,#hash_2cdb7e39c2bb0392
+luafile,#ui/uieditor/widgets/aar_t8/merit/meritoverlaymanualheader.lua
 luafile,#ui/uieditor/widgets/directorpublic.lua
 luafile,#ui/uieditor/widgets/lobby/lobbyinspection/inspectiongamercardwidget.lua
 luafile,#ui/uieditor/menus/lobby/directorpersonalizecharactermp.lua
@@ -57308,7 +57308,7 @@ luafile,#ui/uieditor/widgets/zmfrontend/cac/zmtalismansafeareacontainer.lua
 luafile,#ui/uieditor/widgets/common/commontooltip.lua
 luafile,#ui/uieditor/widgets/zmfrontend/zmaartrialtab.lua
 luafile,#ui/uieditor/menus/gamesettings/gamesettings_scoperestrictionsettings.lua
-luafile,#hash_323a1f95bea01fe3
+luafile,#ui/uieditor/menus/blackmarket/contracts/blackmarketcontracts.lua
 luafile,#ui/uieditor/menus/lobby/directorcustomgamesetup.lua
 luafile,d#hash_32621bf43356e20e
 luafile,d#ui/uieditor/widgets/pc/socialmenu/pc_socialmenu_dropdownbnetstatus.lua
@@ -57455,10 +57455,10 @@ luafile,#ui/uieditor/widgets/itemshop/contracts/contractitem.lua
 luafile,#ui/uieditor/widgets/lobby/lobbyinspection/lobbyplayerinspectionplayerlevel.lua
 luafile,#hash_3c33333c7570ac54
 luafile,#hash_3c33bc8224e5f040
-luafile,#hash_3c3818990d374397
+luafile,#ui/uieditor/widgets/aar_t8/merit/meritreportheadertext.lua
 luafile,#hash_3c3d6368d1d1a5f3
 luafile,d#ui/uieditor/widgets/pc/notifications/pc_notif_background.lua
-luafile,#hash_3c560a1fc4fcc11b
+luafile,#ui/uieditor/widgets/aar_t8/merit/meritoverlayboardwithmedals.lua
 luafile,#ui/uieditor/widgets/zmfrontend/laboratory/laboratorymixagain.lua
 luafile,#ui/uieditor/widgets/aar_t8/rewards/aarrewardbacker_zm.lua
 luafile,#ui/uieditor/widgets/directortraining.lua
@@ -57606,7 +57606,7 @@ luafile,#ui/uieditor/widgets/pc/pc_gridhorizontalscrollbar.lua
 luafile,#ui/uieditor/widgets/director/directorfindgamedetailmodes.lua
 luafile,d#ui/uieditor/widgets/common/commonrightslideinpopup.lua
 luafile,#ui/uieditor/widgets/director/directorlobbymemberinternalneverexpand.lua
-luafile,#hash_450c6a2cd327d2cf
+luafile,#ui/uieditor/widgets/aar_t8/merit/meritoverlayboard.lua
 luafile,#ui/uieditor/widgets/lobby/spinner.lua
 luafile,#ui/uieditor/widgets/zmfrontend/zmgenericsummarystatwidget.lua
 luafile,d#ui/uieditor/widgets/pc/socialmenu/pc_battlenet_contextualmenu.lua
@@ -57783,7 +57783,7 @@ luafile,#hash_4ef25c512446746b
 luafile,#ui/uieditor/widgets/cac/loadoutclassitemcontainer.lua
 luafile,#ui/uieditor/widgets/cac/cacheader.lua
 luafile,d#ui/uieditor/widgets/notifications/notificationqueuewidgets/notificationrewardqueuewidgets/notification2xpblackmarketreward.lua
-luafile,#hash_4f5017013e50a29d
+luafile,#ui/uieditor/widgets/wzaar/wzaar_meritflare.lua
 luafile,#hash_4f63094840e1e8ac
 luafile,#ui/uieditor/menus/aar_t8/aar_t8_zm.lua
 luafile,#ui/uieditor/widgets/lobby/mapvote/mapvoteitem.lua
@@ -57892,7 +57892,7 @@ luafile,#ui/uieditor/widgets/arena/arenarankwidgetinternal.lua
 luafile,#ui/uieditor/widgets/zmfrontend/directorzmtrialsinfointernal.lua
 luafile,#ui/uieditor/widgets/arena/arenaeventprogressbuttoninternalgauntlet.lua
 luafile,#ui/uieditor/widgets/startmenu/startmenu_titleheader.lua
-luafile,#hash_54f5709a60c5eb6e
+luafile,#ui/uieditor/menus/blackmarket/contracts/blackmarketcontractselect.lua
 luafile,d#ui/uieditor/widgets/chat/chatclientchatentryplayername.lua
 luafile,#ui/uieditor/widgets/bumperbuttonwithkeymousenofocus.lua
 luafile,#ui/uieditor/widgets/aar_t8/levelup/aarlevelupoverlay_cornerbracketinternal.lua
@@ -57903,7 +57903,7 @@ luafile,d#ui/uieditor/widgets/blackmarket/contracts/bm_activecontractrewards.lua
 luafile,#ui/uieditor/menus/cac/weaponaccessoriesselect.lua
 luafile,#ui/uieditor/widgets/zmfrontend/zmaartrialtabinternal.lua
 luafile,#ui/uieditor/menus/challenges/challenges_operations.lua
-luafile,#hash_55ce69c244067955
+luafile,#ui/uieditor/widgets/wzaar/wzaar_meritprogressbar.lua
 luafile,#ui/uieditor/widgets/craft/emblemeditor/emblemeditorframe.lua
 luafile,#ui/uieditor/widgets/director/directorblackmarketbuttoninternal_v2.lua
 luafile,#ui/uieditor/widgets/itemshop/contracts/contractsupplychaindetails.lua
@@ -57938,12 +57938,12 @@ luafile,#ui/uieditor/widgets/director/directorplaylistoptioninternal.lua
 luafile,#hash_5875ef41a2d661d3
 luafile,#ui/uieditor/widgets/challenges/challenges_safeareawidget.lua
 luafile,d#ui/uieditor/widgets/onoffimage.lua
-luafile,#hash_58b24c4fc6232566
+luafile,#ui/uieditor/menus/aar_t8/meritreport/aarmeritreportoverlay.lua
 luafile,#hash_58baf04a4efcbdfb
 luafile,#ui/uieditor/widgets/mp/specialisthub/hubgesturebuttoninternal.lua
 luafile,#hash_5902204cfed834b7
 luafile,#ui/uieditor/menus/craft/emblemeditor/emblemselect.lua
-luafile,#hash_591b39f705c21da7
+luafile,#ui/uieditor/widgets/aar_t8/squadsummary/aarsquadrow.lua
 luafile,#ui/uieditor/widgets/itemshop/contracts/contractdetailspanelbacker.lua
 luafile,#ui/uieditor/widgets/warzone/wzpersonalizeweapon_itemgridbutton.lua
 luafile,#ui/uieditor/widgets/common/commonwipemeterwithglow.lua
@@ -57985,7 +57985,7 @@ luafile,#ui/uieditor/widgets/arena/arenamapandgametype.lua
 luafile,#ui/uieditor/widgets/aar_t8/tierreward/aartierrewardbackground_rare.lua
 luafile,d#ui/uieditor/widgets/social/social_playerslistbuttonwithcheckbox.lua
 luafile,#ui/uieditor/widgets/aar_t8/tierreward/aartierrewardshowcaseinternalultra.lua
-luafile,#hash_5bc18c646d0673e4
+luafile,#ui/uieditor/widgets/wzaar/wzaarmeritbreakdownlarge.lua
 luafile,#hash_5bcb4aae0345f860
 luafile,#ui/uieditor/widgets/lobby/common/vodpreviewwidget.lua
 luafile,d#ui/uieditor/widgets/pc/bnetstore/pc_bnetstore_keyart.lua
@@ -57995,7 +57995,7 @@ luafile,#ui/uieditor/widgets/itemshop/supplychain/streamitembonuswidget.lua
 luafile,#hash_5c216dc392d3bfec
 luafile,#ui/uieditor/widgets/itemshop/reserves/reserveslootcratebutton.lua
 luafile,#ui/uieditor/widgets/itemshop/contracts/contractseasonalbacker.lua
-luafile,#hash_5c34d1c191f5e4e1
+luafile,#ui/uieditor/widgets/wzaar/wzaar_igr_background.lua
 luafile,#ui/uieditor/widgets/challenges/challenges_callingcardwidget.lua
 luafile,#hash_5c457f71d421ca3f
 luafile,#ui/uieditor/widgets/aar_t8/summary/aarwinlosemessage.lua
@@ -58132,7 +58132,7 @@ luafile,d#ui/uieditor/widgets/social/social_managepartyplayerbuttonrankdetails.l
 luafile,#ui/uieditor/widgets/director/directorselectbuttonimageinternal.lua
 luafile,#hash_62a879321617f574
 luafile,#ui/uieditor/widgets/genericpopups/matchstartwarning_timerbkgd.lua
-luafile,#hash_63079302e190afb9
+luafile,#ui/uieditor/widgets/itemshop/supplychain/itemshopraritybackgroundstream_legendary.lua
 luafile,#ui/uieditor/widgets/cac/itemnamedescunlocktext.lua
 luafile,d#ui/uieditor/widgets/aar_t8/aarcommonbacking.lua
 luafile,#ui/uieditor/widgets/craft/paintshop/paintshopcolorlayerinfo.lua
@@ -58206,7 +58206,7 @@ luafile,#ui/uieditor/widgets/arena/arenaprogresswidget.lua
 luafile,d#ui/uieditor/widgets/pc/bnetstore/pc_bnetstore_purchasebutton.lua
 luafile,#hash_676fd6aa2d3b2f56
 luafile,#ui/uieditor/widgets/aar_t8/rewards/aarcurrencyitem.lua
-luafile,#hash_678b9b7d920a0a01
+luafile,#ui/uieditor/widgets/aar_t8/merit/meritreportwidget.lua
 luafile,#ui/uieditor/widgets/leaderboard/leaderboard.lua
 luafile,#hash_67acc57d1976fb0b
 luafile,d#ui/uieditor/widgets/startmenu/options/flyout/startmenu_options_settinginfo.lua
@@ -58333,7 +58333,7 @@ luafile,#ui/uieditor/widgets/social/social_missingdlcnotification_internal.lua
 luafile,d#ui/uieditor/widgets/loadinganimation/spinnerloadinganimation.lua
 luafile,#ui/uieditor/widgets/arena/gauntlet/arenagauntletlosstracker.lua
 luafile,#ui/uieditor/widgets/arena/gauntlet/arenagauntletprogressbar.lua
-luafile,#hash_702b59b873dcd88d
+luafile,#ui/uieditor/menus/itemshop/itemshopconfirmation.lua
 luafile,#ui/uieditor/widgets/itemshop/supplychain/streamlevel.lua
 luafile,#ui/uieditor/widgets/zmfrontend/laboratory/laboratoryelixirraritylabel.lua
 luafile,#ui/uieditor/menus/blackmarket/reservesspecialcontractmenu.lua
@@ -58371,7 +58371,7 @@ luafile,#ui/uieditor/widgets/director/directormatchmakingtimerinternal.lua
 luafile,#ui/uieditor/widgets/itemshop/supplychain/supplychaindetails.lua
 luafile,#hash_7261f2d321972cf9
 luafile,#ui/uieditor/widgets/itemshop/reserves/reservesspecialcontract.lua
-luafile,#hash_726b9ea4caf88f8e
+luafile,#ui/uieditor/menus/itemshop/itemshopdetails.lua
 luafile,#hash_72704edc5a8c26b8
 luafile,#ui/uieditor/menus/arena/arenaskillevaluationplacementmenu.lua
 luafile,#ui/uieditor/widgets/challenges/challenges_nearcompletion_croppedimage.lua
@@ -58450,7 +58450,7 @@ luafile,#ui/uieditor/widgets/challenges/challengesglobalprogressbar.lua
 luafile,#ui/uieditor/widgets/helperwidgets/textwithbg.lua
 luafile,#hash_771ac2132e96280f
 luafile,#hash_772e8aadb7455b73
-luafile,#hash_7732d0a37e004728
+luafile,#ui/uieditor/widgets/itemshop/supplychain/itemshopraritybackgroundstream_rare.lua
 luafile,d#ui/uieditor/widgets/craft/emblemeditor/emblemoptionsbutton_internal.lua
 luafile,#ui/uieditor/widgets/aar_t8/tierreward/aartierrewardfocusindicator.lua
 luafile,#ui/uieditor/widgets/itemshop/supplychain/supplychainstreaminternal.lua
@@ -58466,7 +58466,7 @@ luafile,#ui/uieditor/widgets/cac/menuchooseclass/itemwidgets/itemhinttextbreadcr
 luafile,#ui/uieditor/widgets/aar_t8/arena/aar_rankupstar.lua
 luafile,#ui/uieditor/widgets/challenges/challenges_framewidget_operations.lua
 luafile,#hash_77e4ae44062ad9ce
-luafile,#hash_77e54f043eaeccc2
+luafile,#ui/uieditor/widgets/aar_t8/merit/aarechelon.lua
 luafile,#ui/uieditor/widgets/zmfrontend/zmaartrialtabroundlist.lua
 luafile,#hash_77ff1d54fa3add5c
 luafile,#ui/uieditor/widgets/arena/arenaeventbutton.lua
@@ -58500,7 +58500,7 @@ luafile,#ui/uieditor/widgets/startmenu/startmenu_button_lg.lua
 luafile,#ui/uieditor/widgets/arena/arenadailybonus.lua
 luafile,d#ui/uieditor/widgets/chat/chatcliententrycontainer.lua
 luafile,#hash_796ad40bc4732c8a
-luafile,#hash_7971c6ef9e71af54
+luafile,#ui/uieditor/widgets/aar_t8/squadsummary/aarsquadplayer.lua
 luafile,#ui/uieditor/widgets/challenges/challengesglobalstickerbook.lua
 luafile,d#ui/uieditor/widgets/chat/chatclientchatentrystaticview.lua
 luafile,#ui/uieditor/widgets/cac/wildcardselect/wildcardslotcontainer.lua
@@ -58516,7 +58516,7 @@ luafile,#hash_79f58630a7722ac6
 luafile,d#ui/uieditor/widgets/social/social_infopane_presence_joinableicon.lua
 luafile,#ui/uieditor/widgets/itemshop/purchasereservesitembutton.lua
 luafile,d#ui/uieditor/widgets/common/commonidentitywidgetstreamlined.lua
-luafile,#hash_7a0adbeac4b7c657
+luafile,#ui/uieditor/menus/blackmarket/contracts/blackmarketcontractreplacementconfirmation.lua
 luafile,#hash_7a386347cd15bfe8
 luafile,#ui/uieditor/widgets/aar_t8/rewards/aartierpip.lua
 luafile,d#ui/uieditor/widgets/pc_simplevscrolllist.lua
@@ -58527,7 +58527,7 @@ luafile,d#ui/uieditor/widgets/startmenu/startmenu_options_safearea_container.lua
 luafile,d#ui/uieditor/widgets/startgameflow/loadingscreentalkerwidgetcpzm.lua
 luafile,#ui/uieditor/widgets/itemshop/contracts/contractseasonaloverlay_supplychain.lua
 luafile,d#ui/uieditor/widgets/social/social_optionsbuttonlist.lua
-luafile,#hash_7ac521f04c51592a
+luafile,#ui/uieditor/widgets/aar_t8/merit/challengecoin.lua
 luafile,#ui/uieditor/widgets/aar_t8/levelup/aarxpmeternextlevel.lua
 luafile,d#ui/uieditor/widgets/pc/startmenu/controlsoptions/pc_startmenu_options_controls_keybinder.lua
 luafile,#ui/uieditor/menus/challenges/challengesoperationswz.lua
@@ -76976,7 +76976,7 @@ tracer,d#hash_62bdd456ce2308cc
 tracer,#shotgun
 tracer,#hash_75093ab7b848ed32
 tracer,#hash_7a8e163093046e13
-scriptbundlelist,#hash_7c54326d486ccc9a
+scriptbundlelist,#laboratory_offer_list
 ttf,d#hash_32f4bc842302dae
 ttf,d#hash_2d5f2cb911698667
 ttf,d#hash_6872c9b44ecd89cf
@@ -79280,7 +79280,7 @@ scriptbundle,d#scene_frontend_t8_spectre
 scriptbundle,#c_t8_bo_parachute_valentine
 scriptbundle,d#scene_frontend_t8_reaper_02
 scriptbundlelist,#callout_wheel
-scriptbundlelist,#hash_5f2dc7a2fe7eedc5
+scriptbundlelist,#weaponcharm_list
 statuseffect,#stunned_slow_grenade
 statuseffect,d#hash_2d37104ba9e6e867
 beam,#hash_ecdf74613c27651
@@ -80533,4 +80533,4 @@ customizationtable,d#hash_7c5870d93ca02722
 scriptbundle,#weapondeathfx_fireworks
 playerroletemplate,d#prt_zm_bruno
 customizationtable,d#hash_28eccb19213dbb36
-scriptbundlelist,#hash_a8f031f7c7b2ed8
+scriptbundlelist,#weapondeathfx_list

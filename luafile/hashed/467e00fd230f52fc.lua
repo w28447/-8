@@ -102,7 +102,7 @@ CoD.bleedOutHealthWZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local bleedingOutRing = LUI.UIImage.new( 0.5, 0.5, -87, 87, 0.5, 0.5, -111, 63 )
 	bleedingOutRing:setImage( RegisterImage( 0x2E4DBA41E983343 ) )
-	bleedingOutRing:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD5CA1A25ED87F4F ) )
+	bleedingOutRing:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	bleedingOutRing:setShaderVector( 1, 0.5, 0, 0, 0 )
 	bleedingOutRing:setShaderVector( 2, 0.5, 0, 0, 0 )
 	bleedingOutRing:setShaderVector( 3, 0, 0, 0, 0 )
@@ -118,7 +118,7 @@ CoD.bleedOutHealthWZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local revivingRing = LUI.UIImage.new( 0.5, 0.5, -87, 87, 0.5, 0.5, -111, 63 )
 	revivingRing:setImage( RegisterImage( 0x2E4DBA41E983343 ) )
-	revivingRing:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD5CA1A25ED87F4F ) )
+	revivingRing:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	revivingRing:setShaderVector( 1, 0.5, 0, 0, 0 )
 	revivingRing:setShaderVector( 2, 0.5, 0, 0, 0 )
 	revivingRing:setShaderVector( 3, 0, 0, 0, 0 )

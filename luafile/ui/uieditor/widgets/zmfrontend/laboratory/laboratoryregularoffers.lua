@@ -84,13 +84,13 @@ CoD.LaboratoryRegularOffers.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		end
 	end, function ( f8_arg0, f8_arg1, f8_arg2 )
 		if CoD.ModelUtility.IsModelValueEqualToEnum( f8_arg2, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and CoD.ZMLaboratoryUtility.CanPurchase( f8_arg2, f8_arg0 ) and CoD.ModelUtility.IsModelValueEqualTo( f8_arg2, "Laboratory.disableInput", 0 ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif CoD.ModelUtility.IsModelValueEqualToEnum( f8_arg2, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and not CoD.ZMLaboratoryUtility.CanPurchase( f8_arg2, f8_arg0 ) and CoD.ModelUtility.IsModelValueEqualTo( f8_arg2, "Laboratory.disableInput", 0 ) and IsBooleanDvarSet( "laboratory_codpoints_enabled" ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif CoD.ModelUtility.IsModelValueEqualToEnum( f8_arg2, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and not CoD.ZMLaboratoryUtility.CanPurchase( f8_arg2, f8_arg0 ) and CoD.ModelUtility.IsModelValueEqualTo( f8_arg2, "Laboratory.disableInput", 0 ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -101,7 +101,7 @@ CoD.LaboratoryRegularOffers.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	TextBox = LUI.UIText.new( 0, 0, -26, 510, 0, 0, -15.5, 21.5 )
 	TextBox:setRGB( 0.58, 0.85, 1 )
-	TextBox:setText( LocalizeToUpperString( 0x7B562F0618E2CB7 ) )
+	TextBox:setText( LocalizeToUpperString( "zmui/concoctions" ) )
 	TextBox:setTTF( "skorzhen" )
 	TextBox:setLetterSpacing( 3 )
 	TextBox:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

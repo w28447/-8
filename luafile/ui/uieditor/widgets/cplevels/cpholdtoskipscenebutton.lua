@@ -33,7 +33,7 @@ CoD.CPHoldToSkipSceneButton.new = function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3,
 	
 	local progressMeter = LUI.UIImage.new( 0.5, 0.5, -17, 17, 0.5, 0.5, -17, 17 )
 	progressMeter:setImage( RegisterImage( 0x60E8FD9901EAF47 ) )
-	progressMeter:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD5CA1A25ED87F4F ) )
+	progressMeter:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	progressMeter:setShaderVector( 0, -0.05, 0, 0, 0 )
 	progressMeter:setShaderVector( 1, 0.5, 0, 0, 0 )
 	progressMeter:setShaderVector( 2, 0.5, 0, 0, 0 )

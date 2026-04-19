@@ -45,7 +45,7 @@ CoD.DirectorFeaturedCarousel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local TiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, -31, 0 )
 	TiledBacking:setRGB( 0.67, 0.67, 0.67 )
-	TiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking:setupNineSliceShader( 196, 88 )

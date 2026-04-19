@@ -17,7 +17,7 @@ CoD[0x141F5FCBDC4E50].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	spotlightColor:setRGB( 0.98, 0.87, 0 )
 	spotlightColor:setAlpha( 0.3 )
 	spotlightColor:setImage( RegisterImage( 0xCD389130C7FE72E ) )
-	spotlightColor:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	spotlightColor:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( spotlightColor )
 	self.spotlightColor = spotlightColor
 	
@@ -25,7 +25,7 @@ CoD[0x141F5FCBDC4E50].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	spotlightColor3:setRGB( 0.98, 0.87, 0 )
 	spotlightColor3:setAlpha( 0.3 )
 	spotlightColor3:setImage( RegisterImage( 0xCD389130C7FE72E ) )
-	spotlightColor3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	spotlightColor3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( spotlightColor3 )
 	self.spotlightColor3 = spotlightColor3
 	
@@ -33,7 +33,7 @@ CoD[0x141F5FCBDC4E50].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	spotlightColor4:setRGB( 0.98, 0.87, 0 )
 	spotlightColor4:setAlpha( 0.3 )
 	spotlightColor4:setImage( RegisterImage( 0xCD389130C7FE72E ) )
-	spotlightColor4:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	spotlightColor4:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( spotlightColor4 )
 	self.spotlightColor4 = spotlightColor4
 	
@@ -41,7 +41,7 @@ CoD[0x141F5FCBDC4E50].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	spotlightColor2:setRGB( 0.98, 0.87, 0 )
 	spotlightColor2:setAlpha( 0.6 )
 	spotlightColor2:setImage( RegisterImage( 0xCD389130C7FE72E ) )
-	spotlightColor2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	spotlightColor2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( spotlightColor2 )
 	self.spotlightColor2 = spotlightColor2
 	
@@ -68,7 +68,7 @@ CoD[0x141F5FCBDC4E50].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local torchFlames = LUI.UIImage.new( 0, 0, 116.5, 200.5, 0, 0, 36, 204 )
 	torchFlames:setImage( RegisterImage( 0xE3F87E34FC86F39 ) )
-	torchFlames:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9227A50BA2B8D21 ) )
+	torchFlames:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	torchFlames:setShaderVector( 0, 0, 5, 0, 0 )
 	torchFlames:setShaderVector( 1, 10, 0, 0, 0 )
 	self:addElement( torchFlames )
@@ -77,7 +77,7 @@ CoD[0x141F5FCBDC4E50].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local torchFlames2 = LUI.UIImage.new( 0, 0, 824.5, 902.5, 0, 0, 70, 216 )
 	torchFlames2:setZRot( 11 )
 	torchFlames2:setImage( RegisterImage( 0xE3F87E34FC86F39 ) )
-	torchFlames2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9227A50BA2B8D21 ) )
+	torchFlames2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	torchFlames2:setShaderVector( 0, 0, 5, 0, 0 )
 	torchFlames2:setShaderVector( 1, 10, 0, 0, 0 )
 	self:addElement( torchFlames2 )
@@ -85,7 +85,7 @@ CoD[0x141F5FCBDC4E50].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local torchFlames3 = LUI.UIImage.new( 0, 0, 408.5, 444.5, 0, 0, 99, 167 )
 	torchFlames3:setImage( RegisterImage( 0xE3F87E34FC86F39 ) )
-	torchFlames3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9227A50BA2B8D21 ) )
+	torchFlames3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	torchFlames3:setShaderVector( 0, 0, 5, 0, 0 )
 	torchFlames3:setShaderVector( 1, 10, 0, 0, 0 )
 	self:addElement( torchFlames3 )
@@ -93,7 +93,7 @@ CoD[0x141F5FCBDC4E50].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local torchFlames4 = LUI.UIImage.new( 0, 0, 298.5, 324.5, 0, 0, 126, 176 )
 	torchFlames4:setImage( RegisterImage( 0xE3F87E34FC86F39 ) )
-	torchFlames4:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9227A50BA2B8D21 ) )
+	torchFlames4:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	torchFlames4:setShaderVector( 0, 0, 5, 0, 0 )
 	torchFlames4:setShaderVector( 1, 10, 0, 0, 0 )
 	self:addElement( torchFlames4 )
@@ -101,7 +101,7 @@ CoD[0x141F5FCBDC4E50].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local torchFlames5 = LUI.UIImage.new( 0, 0, 895.5, 921.5, 0, 0, 115, 165 )
 	torchFlames5:setImage( RegisterImage( 0xE3F87E34FC86F39 ) )
-	torchFlames5:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9227A50BA2B8D21 ) )
+	torchFlames5:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	torchFlames5:setShaderVector( 0, 0, 5, 0, 0 )
 	torchFlames5:setShaderVector( 1, 10, 0, 0, 0 )
 	self:addElement( torchFlames5 )
@@ -109,7 +109,7 @@ CoD[0x141F5FCBDC4E50].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local pyramidSheen1 = LUI.UIImage.new( 0, 0, 533.5, 869.5, 0, 0, 7, 239 )
 	pyramidSheen1:setImage( RegisterImage( 0xA582D1981CFAA6C ) )
-	pyramidSheen1:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	pyramidSheen1:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	pyramidSheen1:setShaderVector( 0, 0, 1, 0, 0 )
 	pyramidSheen1:setShaderVector( 1, 0, 0, 0, 0 )
 	pyramidSheen1:setShaderVector( 2, 0, 1, 0, 0 )
@@ -120,13 +120,13 @@ CoD[0x141F5FCBDC4E50].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local sunrays = LUI.UIImage.new( 0, 0, 715.5, 979.5, 0, 0, -10, 150 )
 	sunrays:setImage( RegisterImage( 0xE28491BA6D0B35A ) )
-	sunrays:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	sunrays:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( sunrays )
 	self.sunrays = sunrays
 	
 	local pyramidSheen2 = LUI.UIImage.new( 0, 0, 520.5, 872.5, 0, 0, 130, 242 )
 	pyramidSheen2:setImage( RegisterImage( 0xA58301981CFAF85 ) )
-	pyramidSheen2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	pyramidSheen2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	pyramidSheen2:setShaderVector( 0, 0, 1, 0, 0 )
 	pyramidSheen2:setShaderVector( 1, 0, 0, 0, 0 )
 	pyramidSheen2:setShaderVector( 2, 0, 1, 0, 0 )

@@ -16,7 +16,7 @@ CoD.Toast_Container_ClansTeams_Checkmark.new = function ( f1_arg0, f1_arg1, f1_a
 	local CheckmarkBackingOutline = LUI.UIImage.new( 0, 1, 2, -2, 0, 1, 2, -2 )
 	CheckmarkBackingOutline:setRGB( 0, 0, 0 )
 	CheckmarkBackingOutline:setImage( RegisterImage( 0xF1E3082B39E99BB ) )
-	CheckmarkBackingOutline:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	CheckmarkBackingOutline:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	CheckmarkBackingOutline:setShaderVector( 0, 0, 0, 0, 0 )
 	CheckmarkBackingOutline:setupNineSliceShader( 6, 6 )
 	self:addElement( CheckmarkBackingOutline )

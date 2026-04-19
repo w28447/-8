@@ -10,8 +10,8 @@ CoD.PositionDraft_GametypeAndMap.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local Backer = LUI.UIImage.new( 0, 0, 45, 578, 0, 0, 27, 80 )
 	Backer:setRGB( 0, 0, 0 )
 	Backer:setAlpha( 0.7 )
-	Backer:setImage( RegisterImage( 0xD16B33E79A589C5 ) )
-	Backer:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE125638BF94665F ) )
+	Backer:setImage( RegisterImage( "uie_ui_hud_common_white_box" ) )
+	Backer:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	Backer:setShaderVector( 0, 0, 0, 0.05, 0 )
 	self:addElement( Backer )
 	self.Backer = Backer
@@ -19,7 +19,7 @@ CoD.PositionDraft_GametypeAndMap.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local Line = LUI.UIImage.new( 0, 0, 49, 533, 0, 0, 27, 28 )
 	Line:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	Line:setAlpha( 0.5 )
-	Line:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE125638BF94665F ) )
+	Line:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	Line:setShaderVector( 0, 0, 0, 0.2, 0 )
 	self:addElement( Line )
 	self.Line = Line
@@ -54,7 +54,7 @@ CoD.PositionDraft_GametypeAndMap.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local LED = LUI.UIImage.new( 0, 0, 36.5, 588.5, 0, 0, 24, 84 )
 	LED:setAlpha( 0.2 )
 	LED:setImage( RegisterImage( 0x5AA5A58DD99CB9F ) )
-	LED:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	LED:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( LED )
 	self.LED = LED
 	

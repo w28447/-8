@@ -81,14 +81,14 @@ CoD.DupeMeterInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	RerollIconPulse:setAlpha( 0 )
 	RerollIconPulse:setScale( 1.3, 1.3 )
 	RerollIconPulse:setImage( RegisterImage( 0xB259D817A83EFDB ) )
-	RerollIconPulse:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	RerollIconPulse:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( RerollIconPulse )
 	self.RerollIconPulse = RerollIconPulse
 	
 	local Linker = LUI.UIImage.new( 0, 0, 82.5, 86.5, 0, 0, 0, 27 )
 	Linker:setAlpha( 0.6 )
 	Linker:setZRot( 90 )
-	Linker:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
+	Linker:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
 	Linker:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	Linker:setShaderVector( 0, 0, 0, 0, 0 )
 	Linker:setupNineSliceShader( 4, 8 )

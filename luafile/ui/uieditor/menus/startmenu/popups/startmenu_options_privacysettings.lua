@@ -33,7 +33,7 @@ LUI.createMenu.StartMenu_Options_PrivacySettings = function ( f1_arg0, f1_arg1 )
 	
 	local CommonHeader = CoD.CommonHeader.new( f1_local1, f1_arg0, 0, 1, 0, 0, 0, 0, 0, 67 )
 	CommonHeader.BGSceneBlur:setAlpha( 0 )
-	CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x5EB6FED86163697 ) )
+	CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/privacy_settings" ) )
 	CommonHeader.subtitle.subtitle:setAlpha( 0 )
 	CommonHeader:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f2_local0 = model:get()
@@ -140,10 +140,10 @@ LUI.createMenu.StartMenu_Options_PrivacySettings = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f11_arg0, f11_arg1, f11_arg2 )
 		if CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToEnum( f11_arg2, "PrivacySettingManagementForm", "updateProgressState", Enum[0x65887EAAB38F9F8][0xF100F564F11A910] ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x6393FF34EA56966, Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
+			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
 			return true
 		elseif CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToEnum( f11_arg2, "PrivacySettingManagementForm", "updateProgressState", Enum[0x65887EAAB38F9F8][0xDE287BA1764B6AE] ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x6393FF34EA56966, nil, nil )
+			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, nil )
 			return true
 		else
 			return false

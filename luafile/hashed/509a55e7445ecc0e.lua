@@ -62,13 +62,13 @@ LUI.createMenu.FTUEWZInventoryMenu = function ( f1_arg0, f1_arg1 )
 	self.InventoryInfo = InventoryInfo
 	
 	local AttachmentInfo = CoD.FTUEDescriptionWidget.new( f1_local1, f1_arg0, 0.5, 0.5, -858.5, -557.5, 0, 0, 540, 599 )
-	AttachmentInfo.InventoryTitleLabel:setText( LocalizeToUpperString( 0x31E6136F9B444FB ) )
+	AttachmentInfo.InventoryTitleLabel:setText( LocalizeToUpperString( "menu/attachments" ) )
 	AttachmentInfo.AmmoTextBox:setText( Engine[0xF9F1239CFD921FE]( 0xD71011C74942E2F ) )
 	self:addElement( AttachmentInfo )
 	self.AttachmentInfo = AttachmentInfo
 	
 	local WeaponInfo = CoD.FTUEDescriptionWidget.new( f1_local1, f1_arg0, 0.5, 0.5, 557, 858, 0, 0, 277, 336 )
-	WeaponInfo.InventoryTitleLabel:setText( LocalizeToUpperString( 0x71489612B1BCA6F ) )
+	WeaponInfo.InventoryTitleLabel:setText( LocalizeToUpperString( "menu/weapon" ) )
 	WeaponInfo.AmmoTextBox:setText( Engine[0xF9F1239CFD921FE]( 0x4346B668FE3054 ) )
 	self:addElement( WeaponInfo )
 	self.WeaponInfo = WeaponInfo
@@ -88,7 +88,7 @@ LUI.createMenu.FTUEWZInventoryMenu = function ( f1_arg0, f1_arg1 )
 	local PCButton = nil
 	
 	PCButton = CoD.PC_MOTD_Buttons.new( f1_local1, f1_arg0, 0.18, 0.18, -120, 120, 0.8, 0.8, 0, 80 )
-	PCButton.OptionText:setText( LocalizeToUpperString( 0x6393FF34EA56966 ) )
+	PCButton.OptionText:setText( LocalizeToUpperString( "menu/continue" ) )
 	PCButton:linkToElementModel( self, "image", true, function ( model )
 		local f3_local0 = model:get()
 		if f3_local0 ~= nil then
@@ -126,7 +126,7 @@ LUI.createMenu.FTUEWZInventoryMenu = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f8_arg0, f8_arg1, f8_arg2 )
 		if not IsRepeatButtonPress( nil ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x6393FF34EA56966, nil, "MOUSE1" )
+			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, "MOUSE1" )
 			return true
 		else
 			return false

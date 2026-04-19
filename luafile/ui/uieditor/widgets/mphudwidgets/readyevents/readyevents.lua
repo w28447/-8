@@ -19,7 +19,7 @@ CoD.ReadyEvents.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	self.DarkenBG = DarkenBG
 	
 	local Description = LUI.UIText.new( 0.5, 0.5, -300, 300, 0.5, 0.5, 12, 42 )
-	Description:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	Description:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	Description:setTTF( "ttmussels_demibold" )
 	Description:setLetterSpacing( 0.5 )
 	Description:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

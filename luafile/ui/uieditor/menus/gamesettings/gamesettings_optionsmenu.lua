@@ -42,7 +42,7 @@ LUI.createMenu.GameSettings_OptionsMenu = function ( f1_arg0, f1_arg1 )
 		GoBack( self, f3_arg2 )
 		return true
 	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	self:addElement( GameSettingsOptionsContainer0 )
@@ -50,8 +50,8 @@ LUI.createMenu.GameSettings_OptionsMenu = function ( f1_arg0, f1_arg1 )
 	
 	local tileTexture = LUI.UIImage.new( 1, 1, -533, 4, 0, 1, 0, 0 )
 	tileTexture:setAlpha( 0.5 )
-	tileTexture:setImage( RegisterImage( 0xA38BB233841162F ) )
-	tileTexture:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD8EA9FE9B0BCF75 ) )
+	tileTexture:setImage( RegisterImage( "uie_t7_tile_texture" ) )
+	tileTexture:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	tileTexture:setShaderVector( 0, 30, 55, 0, 0 )
 	tileTexture:setShaderVector( 1, 0, 0, 0, 0 )
 	self:addElement( tileTexture )
@@ -106,7 +106,7 @@ LUI.createMenu.GameSettings_OptionsMenu = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f11_arg0, f11_arg1, f11_arg2 )
 		if IsPC() then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 			return true
 		else
 			return false

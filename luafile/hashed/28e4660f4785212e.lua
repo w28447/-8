@@ -35,7 +35,7 @@ LUI.createMenu.FTUEInfoScreen = function ( f1_arg0, f1_arg1 )
 	
 	local BackgroundImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BackgroundImage:setAlpha( 0.85 )
-	BackgroundImage:setImage( RegisterImage( 0x4BF88A437F4C579 ) )
+	BackgroundImage:setImage( RegisterImage( "uie_fe_cp_background" ) )
 	self:addElement( BackgroundImage )
 	self.BackgroundImage = BackgroundImage
 	
@@ -60,7 +60,7 @@ LUI.createMenu.FTUEInfoScreen = function ( f1_arg0, f1_arg1 )
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0.5, 0.5, -631, 648, 0.5, 0.5, 87.5, 336.5 )
 	NoiseTiledBacking:setAlpha( 0 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -95,8 +95,8 @@ LUI.createMenu.FTUEInfoScreen = function ( f1_arg0, f1_arg1 )
 	
 	local infoBracketBot = LUI.UIImage.new( 0.5, 0.5, -632, 649, 0.5, 0.5, 327, 335 )
 	infoBracketBot:setAlpha( 0 )
-	infoBracketBot:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	infoBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	infoBracketBot:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	infoBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	infoBracketBot:setShaderVector( 0, 0, 0, 0, 0 )
 	infoBracketBot:setupNineSliceShader( 16, 4 )
 	self:addElement( infoBracketBot )
@@ -160,7 +160,7 @@ LUI.createMenu.FTUEInfoScreen = function ( f1_arg0, f1_arg1 )
 	PCButton = nil
 	
 	PCButton = CoD.PC_MOTD_Buttons.new( f1_local1, f1_arg0, 0.5, 0.5, -632.5, -392.5, 0.5, 0.5, 372.5, 452.5 )
-	PCButton.OptionText:setText( LocalizeToUpperString( 0x6393FF34EA56966 ) )
+	PCButton.OptionText:setText( LocalizeToUpperString( "menu/continue" ) )
 	PCButton:linkToElementModel( self, "image", true, function ( model )
 		local f8_local0 = model:get()
 		if f8_local0 ~= nil then
@@ -191,7 +191,7 @@ LUI.createMenu.FTUEInfoScreen = function ( f1_arg0, f1_arg1 )
 	
 	PCButton2 = CoD.PC_MOTD_Buttons.new( f1_local1, f1_arg0, 0.5, 0.5, -380, -140, 0.5, 0.5, 372.5, 452.5 )
 	PCButton2:setAlpha( 0 )
-	PCButton2.OptionText:setText( LocalizeToUpperString( 0x6393FF34EA56966 ) )
+	PCButton2.OptionText:setText( LocalizeToUpperString( "menu/continue" ) )
 	PCButton2:linkToElementModel( self, "image", true, function ( model )
 		local f12_local0 = model:get()
 		if f12_local0 ~= nil then
@@ -243,28 +243,28 @@ LUI.createMenu.FTUEInfoScreen = function ( f1_arg0, f1_arg1 )
 	
 	local CornerPip = LUI.UIImage.new( 0.5, 0.5, -674, -651, 0.5, 0.5, -367, -344 )
 	CornerPip:setAlpha( 0.25 )
-	CornerPip:setImage( RegisterImage( 0x8DC834094E7A02C ) )
+	CornerPip:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
 	self:addElement( CornerPip )
 	self.CornerPip = CornerPip
 	
 	local CornerPip3 = LUI.UIImage.new( 0.5, 0.5, 670, 693, 0.5, 0.5, 353.5, 376.5 )
 	CornerPip3:setAlpha( 0.25 )
 	CornerPip3:setZRot( 180 )
-	CornerPip3:setImage( RegisterImage( 0x8DC834094E7A02C ) )
+	CornerPip3:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
 	self:addElement( CornerPip3 )
 	self.CornerPip3 = CornerPip3
 	
 	local CornerPip4 = LUI.UIImage.new( 0.5, 0.5, 670, 693, 0.5, 0.5, -367, -344 )
 	CornerPip4:setAlpha( 0.25 )
 	CornerPip4:setZRot( 270 )
-	CornerPip4:setImage( RegisterImage( 0x8DC834094E7A02C ) )
+	CornerPip4:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
 	self:addElement( CornerPip4 )
 	self.CornerPip4 = CornerPip4
 	
 	local CornerPip2 = LUI.UIImage.new( 0, 0, 297.5, 320.5, 0.5, 0.5, 353.5, 376.5 )
 	CornerPip2:setAlpha( 0.25 )
 	CornerPip2:setZRot( 90 )
-	CornerPip2:setImage( RegisterImage( 0x8DC834094E7A02C ) )
+	CornerPip2:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
 	self:addElement( CornerPip2 )
 	self.CornerPip2 = CornerPip2
 	
@@ -364,22 +364,22 @@ LUI.createMenu.FTUEInfoScreen = function ( f1_arg0, f1_arg1 )
 	end, function ( f24_arg0, f24_arg1, f24_arg2 )
 		local f24_local0 = nil
 		if not IsPC() and not IsRepeatButtonPress( f24_local0 ) and CoD.ModelUtility.IsModelValueEqualToEnum( f24_arg2, "FTUEInfo.layout", CoD.FTUEUtility.FTUELayouts.StoreUpsell ) then
-			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x85952ACC6D0C1B0, Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 750 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "MOUSE1" )
+			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/purchase", Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 750 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "MOUSE1" )
 			return true
 		elseif not IsPC() and not IsRepeatButtonPress( f24_local0 ) and CoD.ModelUtility.IsModelValueEqualToEnum( f24_arg2, "FTUEInfo.layout", CoD.FTUEUtility.FTUELayouts.PromoEvent ) then
-			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x29C903C6DF90D6F, Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 750 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "MOUSE1" )
+			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/black_market", Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 750 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "MOUSE1" )
 			return true
 		elseif not IsPC() and not IsRepeatButtonPress( f24_local0 ) and CoD.ModelUtility.IsModelValueEqualToEnum( f24_arg2, "FTUEInfo.layout", CoD.FTUEUtility.FTUELayouts.HoldButtonEntries1 ) then
-			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x6393FF34EA56966, Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 750 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "MOUSE1" )
+			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 750 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "MOUSE1" )
 			return true
 		elseif IsPC() and not IsRepeatButtonPress( f24_local0 ) and CoD.ModelUtility.IsModelValueEqualToEnum( f24_arg2, "FTUEInfo.layout", CoD.FTUEUtility.FTUELayouts.HoldButtonEntries1 ) then
-			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x6393FF34EA56966, Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 750 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "MOUSE1" )
+			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 750 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "MOUSE1" )
 			return true
 		elseif not IsPC() and not IsRepeatButtonPress( f24_local0 ) and not CoD.ModelUtility.IsModelValueEqualToEnum( f24_arg2, "FTUEInfo.layout", CoD.FTUEUtility.FTUELayouts.HoldButtonEntries1 ) then
-			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x6393FF34EA56966, nil, "MOUSE1" )
+			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, "MOUSE1" )
 			return true
 		elseif IsPC() and not IsRepeatButtonPress( f24_local0 ) and not CoD.ModelUtility.IsModelValueEqualToEnum( f24_arg2, "FTUEInfo.layout", CoD.FTUEUtility.FTUELayouts.HoldButtonEntries1 ) then
-			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x6393FF34EA56966, nil, "MOUSE1" )
+			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, "MOUSE1" )
 			return true
 		else
 			return false
@@ -405,7 +405,7 @@ LUI.createMenu.FTUEInfoScreen = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f26_arg0, f26_arg1, f26_arg2 )
 		if CoD.ModelUtility.IsModelValueEqualToEnum( f26_arg2, "FTUEInfo.layout", CoD.FTUEUtility.FTUELayouts.WarningEntry ) then
-			CoD.Menu.SetButtonLabel( f26_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+			CoD.Menu.SetButtonLabel( f26_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		elseif CoD.ModelUtility.IsModelValueEqualToEnum( f26_arg2, "FTUEInfo.layout", CoD.FTUEUtility.FTUELayouts.StoreUpsell ) then
 			CoD.Menu.SetButtonLabel( f26_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x3996BAAC73C3F6D, nil, nil )
@@ -482,10 +482,10 @@ CoD.FTUEInfoScreen.__resetProperties = function ( f29_arg0 )
 	f29_arg0.infoBracketBot:setAlpha( 0 )
 	f29_arg0.NoiseTiledBacking:setAlpha( 0 )
 	f29_arg0.PCButton2:setAlpha( 0 )
-	f29_arg0.PCButton2.OptionText:setText( LocalizeToUpperString( 0x6393FF34EA56966 ) )
+	f29_arg0.PCButton2.OptionText:setText( LocalizeToUpperString( "menu/continue" ) )
 	f29_arg0.ContentWarningText:setAlpha( 0 )
 	f29_arg0.FixedAspectRatioImage:setAlpha( 0 )
-	f29_arg0.PCButton.OptionText:setText( LocalizeToUpperString( 0x6393FF34EA56966 ) )
+	f29_arg0.PCButton.OptionText:setText( LocalizeToUpperString( "menu/continue" ) )
 end
 
 CoD.FTUEInfoScreen.__clipsPerState = {
@@ -594,7 +594,7 @@ CoD.FTUEInfoScreen.__clipsPerState = {
 			f34_arg0.clipFinished( f34_arg0.SingleEntryText )
 			f34_arg0.PCButton:completeAnimation()
 			f34_arg0.PCButton.OptionText:completeAnimation()
-			f34_arg0.PCButton.OptionText:setText( LocalizeToUpperString( 0x29C903C6DF90D6F ) )
+			f34_arg0.PCButton.OptionText:setText( LocalizeToUpperString( "menu/black_market" ) )
 			f34_arg0.clipFinished( f34_arg0.PCButton )
 			f34_arg0.PCButton2:completeAnimation()
 			f34_arg0.PCButton2.OptionText:completeAnimation()

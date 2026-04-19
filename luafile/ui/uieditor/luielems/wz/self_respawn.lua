@@ -25,7 +25,7 @@ LUI.createMenu.self_respawn = function ( f1_arg0, f1_arg1 )
 	
 	local BarForeground = LUI.UIImage.new( 0, 0, 817, 1063, 0, 0, 596.5, 619.5 )
 	BarForeground:setRGB( 0, 1, 0 )
-	BarForeground:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	BarForeground:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	BarForeground:setShaderVector( 1, 0, 0, 0, 0 )
 	BarForeground:setShaderVector( 2, 1, 0, 0, 0 )
 	BarForeground:setShaderVector( 3, 0, 0, 0, 0 )

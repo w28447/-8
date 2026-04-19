@@ -947,11 +947,11 @@ end
 
 CoD.PrestigeUtility.GetPrestigeMenuTitleString = function ( f53_arg0 )
 	if CoD.PrestigeUtility.GetPrestigeGameMode() == Enum.eModes[0xBF1DCC8138A9D39] then
-		return Engine[0xF9F1239CFD921FE]( 0x226E947798C9490 )
+		return Engine[0xF9F1239CFD921FE]( "menu/merit_record" )
 	elseif IsArenaMode() then
 		return Engine[0xF9F1239CFD921FE]( 0x4ACCE4091313402 )
 	else
-		return Engine[0xF9F1239CFD921FE]( 0xC15C09DDBBF595A )
+		return Engine[0xF9F1239CFD921FE]( "menu/progress_unlocks" )
 	end
 end
 
@@ -1056,7 +1056,7 @@ end
 
 local f0_local0 = {
 	SPECIALISTS = {
-		displayText = 0xFF94A9EB646C873,
+		displayText = "menu/specialists",
 		description = 0x840DDF6BE6B0F38,
 		image = "t7_icon_pbt_mp_battery_head1_skin1_rwd",
 		action = OpenChooseCharacterLoadout,
@@ -1206,8 +1206,8 @@ end
 
 CoD.PrestigeUtility.GetWLRewardsForRank = function ( f66_arg0, f66_arg1, f66_arg2, f66_arg3 )
 	local f66_local0 = {}
-	local f66_local1 = 0x7615068F50B3D66
-	local f66_local2 = 0x7615068F50B3D66
+	local f66_local1 = "blacktransparent"
+	local f66_local2 = "blacktransparent"
 	local f66_local3 = 0x0
 	local f66_local4 = CoD.ArenaLeaguePlayUtility.GetRubyCountForRank( f66_arg2 + 1 )
 	local f66_local5 = CoD.ArenaLeaguePlayUtility.GetRankInfoFieldAtRank( f66_arg2 + 1, "rankrewards", nil )
@@ -1218,7 +1218,7 @@ CoD.PrestigeUtility.GetWLRewardsForRank = function ( f66_arg0, f66_arg1, f66_arg
 		if f66_local5[2] then
 			f66_local2 = Engine[0xC53F8D38DF9042B]( f66_local5[2][0x26D6137EEC04671] )
 		end
-		f66_local3 = 0x2ACBA21D0C15241
+		f66_local3 = "menu/rewards"
 	else
 		local f66_local6 = CoD.ArenaLeaguePlayUtility.GetBestRank( f66_arg0 )
 		local f66_local7 = CoD.ArenaLeaguePlayUtility.GetFirstPlaceCount( f66_arg0 )
@@ -1250,7 +1250,7 @@ CoD.PrestigeUtility.GetWLRewardsForRank = function ( f66_arg0, f66_arg1, f66_arg
 			displayName = Engine[0xF9F1239CFD921FE]( 0x0 ),
 			description = Engine[0xF9F1239CFD921FE]( 0x0 ),
 			itemGroupName = f66_local6,
-			image = 0x7615068F50B3D66,
+			image = "blacktransparent",
 			loadoutReferenceHash = nil,
 			isPermanentlyUnlocked = false,
 			useWideLayout = false,
@@ -1266,14 +1266,14 @@ end
 CoD.PrestigeUtility.GetWZRewardsForRank = function ( f67_arg0, f67_arg1, f67_arg2, f67_arg3 )
 	local f67_local0 = {}
 	local f67_local1 = CoD.RankUtility.GetRankInfoField( f67_arg1, f67_arg2, 0x8DDC90A9D7C709D, 0x0 )
-	local f67_local2 = CoD.RankUtility.GetRankInfoField( f67_arg1, f67_arg2, 0x8027A8209C5D65F, 0x7615068F50B3D66 )
+	local f67_local2 = CoD.RankUtility.GetRankInfoField( f67_arg1, f67_arg2, 0x8027A8209C5D65F, "blacktransparent" )
 	local f67_local3 = f67_local2
 	if CoD.PrestigeUtility.SpecialWZRankRewardImages[f67_arg2] then
 		f67_local2 = CoD.PrestigeUtility.SpecialWZRankRewardImages[f67_arg2].image1
 		f67_local3 = CoD.PrestigeUtility.SpecialWZRankRewardImages[f67_arg2].image2
 	end
 	if CoD.PrestigeUtility.GetCurrentPLevel( f67_arg0 ) > 0 then
-		f67_local3 = CoD.RankUtility.GetRankInfoField( f67_arg1, f67_arg2, 0x8027A8209C5D65F, 0x7615068F50B3D66 )
+		f67_local3 = CoD.RankUtility.GetRankInfoField( f67_arg1, f67_arg2, 0x8027A8209C5D65F, "blacktransparent" )
 	end
 	local f67_local4 = CoD.RankUtility.GetRankInfoField( f67_arg1, f67_arg2 - 1, 0xA9FE1A4C26B89D9, 0 )
 	local f67_local5 = CoD.PrestigeUtility.UsingWidePermanentUnlockEntry( f67_arg1, f67_arg2 )
@@ -1306,7 +1306,7 @@ CoD.PrestigeUtility.GetWZRewardsForRank = function ( f67_arg0, f67_arg1, f67_arg
 					itemIndex = CoD.CACUtility.EmptyItemIndex,
 					displayName = Engine[0xF9F1239CFD921FE]( 0x0 ),
 					itemGroupName = "",
-					image = 0x7615068F50B3D66,
+					image = "blacktransparent",
 					loadoutReferenceHash = nil,
 					isPermanentlyUnlocked = false,
 					useWideLayout = f67_local5,
@@ -1338,7 +1338,7 @@ CoD.PrestigeUtility.GetRewardsForRank = function ( f68_arg0, f68_arg1, f68_arg2,
 					itemIndex = CoD.CACUtility.EmptyItemIndex,
 					displayName = Engine[0xF9F1239CFD921FE]( 0x0 ),
 					itemGroupName = "",
-					image = 0x7615068F50B3D66,
+					image = "blacktransparent",
 					loadoutReferenceHash = nil,
 					isPermanentlyUnlocked = false,
 					useWideLayout = false,
@@ -1458,12 +1458,12 @@ DataSources.PrestigeRankInfo = ListHelper_SetupDataSource( "PrestigeRankInfo", f
 					local f69_local12 = f69_local9 <= f69_local8
 					local f69_local13 = CoD.PrestigeUtility.GetRewardsForRank( f69_arg0, f69_local1, f69_local9, f69_local12 )
 					local f69_local14 = CoD.PrestigeUtility.UsingWidePermanentUnlockEntry( f69_local1, f69_local9 )
-					local f69_local15 = CoD.RankUtility.GetRankInfoField( f69_local1, f69_local9, 0x8027A8209C5D65F, 0x7615068F50B3D66 )
+					local f69_local15 = CoD.RankUtility.GetRankInfoField( f69_local1, f69_local9, 0x8027A8209C5D65F, "blacktransparent" )
 					if f69_local1 == Enum.eModes[0xBF1DCC8138A9D39] and CoD.PrestigeUtility.GetCurrentPLevel( f69_arg0, f69_local1 ) > 0 then
 						if CoD.PrestigeUtility.SpecialWZRankRewardImages[f69_local9] then
 							f69_local15 = CoD.PrestigeUtility.SpecialWZRankRewardImages[f69_local9].image1
 						else
-							f69_local15 = 0x7615068F50B3D66
+							f69_local15 = "blacktransparent"
 						end
 					end
 					table.insert( f69_local0, {
@@ -1755,7 +1755,7 @@ CoD.OverlayUtility.AddSystemOverlay( "EnterPrestigeMode", {
 			end
 			
 			table.insert( f83_local0, f83_local2( Engine[0xF9F1239CFD921FE]( 0xE574BBAD7F9CEAE, f83_local1 ), f83_local3, false ) )
-			table.insert( f83_local0, f83_local2( Engine[0xF9F1239CFD921FE]( 0xC2E92C54C2BE289 ), f83_local4, true ) )
+			table.insert( f83_local0, f83_local2( Engine[0xF9F1239CFD921FE]( "menu/cancel" ), f83_local4, true ) )
 			return f83_local0
 		end, true )
 		return "UnlockTokenMenuList"
@@ -1797,7 +1797,7 @@ CoD.OverlayUtility.AddSystemOverlay( "PrestigeFreshStart1", {
 			end
 			
 			table.insert( f88_local0, f88_local1( 0x395CB6A23357AF6, f88_local2, false ) )
-			table.insert( f88_local0, f88_local1( 0xC2E92C54C2BE289, f88_local3, true ) )
+			table.insert( f88_local0, f88_local1( "menu/cancel", f88_local3, true ) )
 			return f88_local0
 		end, true )
 		return "UnlockTokenMenuList"
@@ -1839,7 +1839,7 @@ CoD.OverlayUtility.AddSystemOverlay( "PrestigeFreshStart2", {
 			end
 			
 			table.insert( f93_local0, f93_local1( 0x395CB6A23357AF6, f93_local2, false ) )
-			table.insert( f93_local0, f93_local1( 0xC2E92C54C2BE289, f93_local3, true ) )
+			table.insert( f93_local0, f93_local1( "menu/cancel", f93_local3, true ) )
 			return f93_local0
 		end, true )
 		return "UnlockTokenMenuList"
@@ -1951,7 +1951,7 @@ CoD.OverlayUtility.AddSystemOverlay( "PermanentUnlockClassItem", {
 			end
 			
 			table.insert( f108_local0, f108_local1( 0x56A1934FFD3E74D, f108_local2, false ) )
-			table.insert( f108_local0, f108_local1( 0xC2E92C54C2BE289, f108_local3, true ) )
+			table.insert( f108_local0, f108_local1( "menu/cancel", f108_local3, true ) )
 			return f108_local0
 		end, true )
 		return "UnlockTokenMenuList"

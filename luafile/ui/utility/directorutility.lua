@@ -175,7 +175,7 @@ CoD.DirectorUtility.DirectorPartyListUpdateClientInfo = function ( f6_arg0, f6_a
 	local f6_local0 = 1
 	if f6_arg1.rankIcon == nil then
 		f6_local0 = 0
-		f6_arg1.rankIcon = 0x7615068F50B3D66
+		f6_arg1.rankIcon = "blacktransparent"
 	end
 	f6_arg1.displayRank = "0"
 	f6_arg1.rankTitle = ""
@@ -862,7 +862,7 @@ end
 
 CoD.DirectorUtility.PlaylistIDToPlaylistIcon = function ( f30_arg0 )
 	if not IsLobbyNetworkModeLive() then
-		return 0x7615068F50B3D66
+		return "blacktransparent"
 	end
 	local f30_local0 = Engine[0x3ACB99DBAD24D55]( f30_arg0 )
 	local f30_local1
@@ -874,12 +874,12 @@ CoD.DirectorUtility.PlaylistIDToPlaylistIcon = function ( f30_arg0 )
 			return f30_local1
 		end
 	end
-	f30_local1 = 0x7615068F50B3D66
+	f30_local1 = "blacktransparent"
 end
 
 CoD.DirectorUtility.PlaylistIDToPlaylistImage = function ( f31_arg0 )
 	if not IsLobbyNetworkModeLive() then
-		return 0x7615068F50B3D66
+		return "blacktransparent"
 	end
 	local f31_local0 = Engine[0x3ACB99DBAD24D55]( f31_arg0 )
 	local f31_local1
@@ -891,39 +891,39 @@ CoD.DirectorUtility.PlaylistIDToPlaylistImage = function ( f31_arg0 )
 			return f31_local1
 		end
 	end
-	f31_local1 = 0x7615068F50B3D66
+	f31_local1 = "blacktransparent"
 end
 
 CoD.DirectorUtility.PlaylistIDToPlaylistImageTileSideInfo = function ( f32_arg0 )
 	if not IsLobbyNetworkModeLive() then
-		return 0x7615068F50B3D66
+		return "blacktransparent"
 	else
 		local f32_local0 = Engine[0x3ACB99DBAD24D55]( f32_arg0 )
 		if f32_local0 then
 			local f32_local1 = f32_local0.imageTileSideInfo
 			if not f32_local1 then
-				f32_local1 = f32_local0.imageBackground or 0x7615068F50B3D66
+				f32_local1 = f32_local0.imageBackground or "blacktransparent"
 			end
 			return f32_local1
 		else
-			return 0x7615068F50B3D66
+			return "blacktransparent"
 		end
 	end
 end
 
 CoD.DirectorUtility.PlaylistIDToPlaylistImageTileSmall = function ( f33_arg0 )
 	if not IsLobbyNetworkModeLive() then
-		return 0x7615068F50B3D66
+		return "blacktransparent"
 	else
 		local f33_local0 = Engine[0x3ACB99DBAD24D55]( f33_arg0 )
 		if f33_local0 then
 			local f33_local1 = f33_local0.imageTileSmall
 			if not f33_local1 then
-				f33_local1 = f33_local0.imageBackground or 0x7615068F50B3D66
+				f33_local1 = f33_local0.imageBackground or "blacktransparent"
 			end
 			return f33_local1
 		else
-			return 0x7615068F50B3D66
+			return "blacktransparent"
 		end
 	end
 end
@@ -942,25 +942,25 @@ end
 
 CoD.DirectorUtility.PlaylistIDToZMPlaylistImage = function ( f35_arg0 )
 	if not IsLobbyNetworkModeLive() then
-		return 0x7615068F50B3D66
+		return "blacktransparent"
 	else
 		local f35_local0 = Engine[0x3ACB99DBAD24D55]( f35_arg0 )
 		if f35_local0 then
 			if f35_local0.isQuickplayCard then
-				return f35_local0.imageTileLarge or 0x7615068F50B3D66
+				return f35_local0.imageTileLarge or "blacktransparent"
 			elseif f35_local0[0xE45AEA6EE3C751B] then
 				local f35_local1 = f35_local0.imageTileSideInfo
 				if not f35_local1 then
-					f35_local1 = f35_local0.imageBackground or 0x7615068F50B3D66
+					f35_local1 = f35_local0.imageBackground or "blacktransparent"
 				end
 				return f35_local1
 			elseif not f35_local0.excludePublicLobby or CoD.DirectorUtility.IsPlaylistGametype( f35_local0, 0xBC1A39D743DD767 ) then
-				return f35_local0.imageTileLarge or 0x7615068F50B3D66
+				return f35_local0.imageTileLarge or "blacktransparent"
 			else
-				return f35_local0.imageTileSmall or 0x7615068F50B3D66
+				return f35_local0.imageTileSmall or "blacktransparent"
 			end
 		else
-			return 0x7615068F50B3D66
+			return "blacktransparent"
 		end
 	end
 end
@@ -1001,7 +1001,7 @@ end
 
 CoD.DirectorUtility.PlaylistIDToZMPlaylistDifficulty = function ( f38_arg0 )
 	if not IsLobbyNetworkModeLive() then
-		return 0x7615068F50B3D66
+		return "blacktransparent"
 	else
 		local f38_local0 = Engine[0x3ACB99DBAD24D55]( f38_arg0 )
 		if f38_local0 and f38_local0.excludePublicLobby and CoD.DirectorUtility.IsPlaylistGametype( f38_local0, 0x73B5B4896F886CB ) and CoD.ZombieUtility then
@@ -1013,7 +1013,7 @@ CoD.DirectorUtility.PlaylistIDToZMPlaylistDifficulty = function ( f38_arg0 )
 			}
 			return f38_local1[CoD.ZombieUtility.GetZMPlaylistDifficulty( f38_local0 ) + 1]
 		else
-			return 0x7615068F50B3D66
+			return "blacktransparent"
 		end
 	end
 end
@@ -1713,10 +1713,10 @@ CoD.DirectorUtility.GetFirstOrFeaturedPlaylistEntry = function ( f72_arg0, f72_a
 								}
 							end
 							if not f72_local21.iconBackground then
-								f72_local21.iconBackground = 0x7615068F50B3D66
+								f72_local21.iconBackground = "blacktransparent"
 							end
 							if not f72_local21.iconBackgroundFocus then
-								f72_local21.iconBackgroundFocus = 0x7615068F50B3D66
+								f72_local21.iconBackgroundFocus = "blacktransparent"
 							end
 						end
 					end
@@ -1916,8 +1916,8 @@ DataSources.DirectorExtraHomeButtons = ListHelper_SetupDataSource( "DirectorExtr
 			table.insert( f85_local0, {
 				models = {
 					subtitle = 0xD63F1918C92A85D,
-					iconBackground = 0x7615068F50B3D66,
-					iconBackgroundFocus = 0x7615068F50B3D66,
+					iconBackground = "blacktransparent",
+					iconBackgroundFocus = "blacktransparent",
 					showOnLeft = true,
 					small = true,
 					locked = false
@@ -1932,8 +1932,8 @@ DataSources.DirectorExtraHomeButtons = ListHelper_SetupDataSource( "DirectorExtr
 		table.insert( f85_local0, {
 			models = {
 				subtitle = 0xD7DF8AD7167B198,
-				iconBackground = 0x7615068F50B3D66,
-				iconBackgroundFocus = 0x7615068F50B3D66,
+				iconBackground = "blacktransparent",
+				iconBackgroundFocus = "blacktransparent",
 				showOnLeft = true,
 				small = true,
 				locked = false
@@ -1964,8 +1964,8 @@ DataSources.DirectorExtraHomeButtons = ListHelper_SetupDataSource( "DirectorExtr
 		table.insert( f85_local0, {
 			models = {
 				subtitle = 0x60E17AB37AB4874,
-				iconBackground = 0x7615068F50B3D66,
-				iconBackgroundFocus = 0x7615068F50B3D66,
+				iconBackground = "blacktransparent",
+				iconBackgroundFocus = "blacktransparent",
 				showOnLeft = true,
 				small = true,
 				locked = CoD.DirectorUtility.DisableForCurrentMilestone( f85_arg0 ) and not CoD.BaseUtility.IsDvarEnabled( "ui_showTheater" ),
@@ -2004,7 +2004,7 @@ DataSources.DirectorExtraHomeButtons = ListHelper_SetupDataSource( "DirectorExtr
 									locked = false,
 									iconBackground = f85_local9,
 									iconBackgroundFocus = f85_local10,
-									subtitle = 0x29C903C6DF90D6F,
+									subtitle = "menu/black_market",
 									small = false,
 									showForAllClients = true
 								},
@@ -2040,8 +2040,8 @@ DataSources.DirectorExtraHomeButtons = ListHelper_SetupDataSource( "DirectorExtr
 			table.insert( f85_local0, {
 				models = {
 					subtitle = 0x968A794E7F44FAD,
-					iconBackground = 0x7615068F50B3D66,
-					iconBackgroundFocus = 0x7615068F50B3D66,
+					iconBackground = "blacktransparent",
+					iconBackgroundFocus = "blacktransparent",
 					showOnLeft = true,
 					small = true,
 					locked = LuaUtils.OnlineOnlyDemo(),
@@ -2377,7 +2377,7 @@ DataSources.DirectorTheaterLandingPageModes = ListHelper_SetupDataSource( "Direc
 				local f108_local6 = CoD.DirectorUtility.GameModeData[f108_local4.eMode]
 				local f108_local7 = CoD.DirectorUtility.GameModeData[f108_local4.eMode].theaterButtonImage
 			end
-			local f108_local8 = f108_local6 and f108_local7 or 0x7615068F50B3D66
+			local f108_local8 = f108_local6 and f108_local7 or "blacktransparent"
 			local f108_local9 = CoD.isPC
 			if f108_local9 then
 				f108_local9 = CoD.DirectorUtility.IsMainModeLocked( f108_arg0, f108_local12 )
@@ -2797,8 +2797,8 @@ DataSources.DirectorPregameButtons = ListHelper_SetupDataSource( "DirectorPregam
 					}
 				} )
 				f115_local4( {
-					name = 0xFF94A9EB646C873,
-					subtitle = 0xFF94A9EB646C873,
+					name = "menu/specialists",
+					subtitle = "menu/specialists",
 					iconBackground = 0x214ECBA8C04D44C,
 					showPregameButton = true,
 					breadcrumbModel = DataSources.CharacterBreadcrumbs.recreateCharacterBreadcrumbModelsIfNeeded( f115_arg0, f115_local2 )

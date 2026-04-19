@@ -87,7 +87,7 @@ CoD.StartMenu_AmmoList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 		end
 	end, function ( f9_arg0, f9_arg1, f9_arg2 )
 		if IsGamepad( f9_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f9_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f9_arg0, f9_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( f9_arg0, f9_arg2, "stackCount", 0 ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0xC083113BC81F23F], 0xFFD03BF8361AC75, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
+			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0xC083113BC81F23F], "warzone/drop", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
 			return true
 		else
 			return false
@@ -103,7 +103,7 @@ CoD.StartMenu_AmmoList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 		end
 	end, function ( f11_arg0, f11_arg1, f11_arg2 )
 		if IsMouseOrKeyboard( f11_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f11_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f11_arg0, f11_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( f11_arg0, f11_arg2, "stackCount", 0 ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0xFFD03BF8361AC75, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "warzone/drop", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
@@ -174,13 +174,13 @@ CoD.StartMenu_AmmoList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 		end
 	end, function ( f19_arg0, f19_arg1, f19_arg2 )
 		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f19_arg0, f19_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.WZUtility.ScoreboardVisibilitySetAndPC( f19_arg2 ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( f19_arg0, f19_arg2, "stackCount", 0 ) and IsMouseOrKeyboard( f19_arg2 ) then
-			CoD.Menu.SetButtonLabel( f19_arg1, Enum.LUIButton[0x4D2505E19049444], 0xFFD03BF8361AC75, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE2" )
+			CoD.Menu.SetButtonLabel( f19_arg1, Enum.LUIButton[0x4D2505E19049444], "warzone/drop", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE2" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	List:AddContextualMenuAction( f1_arg0, f1_arg1, 0xFFD03BF8361AC75, function ( f20_arg0, f20_arg1, f20_arg2, f20_arg3 )
+	List:AddContextualMenuAction( f1_arg0, f1_arg1, "warzone/drop", function ( f20_arg0, f20_arg1, f20_arg2, f20_arg3 )
 		if not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f20_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f20_arg0, f20_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( f20_arg0, f20_arg2, "stackCount", 0 ) then
 			return function ( f21_arg0, f21_arg1, f21_arg2, f21_arg3 )
 				CoD.WZUtility.SendInventoryDropNotify( f21_arg2, f21_arg0 )
@@ -206,15 +206,15 @@ CoD.StartMenu_AmmoList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	HeaderImage = LUI.UIImage.new( 1, 1, -64, 0, 0, 0, 0, 64 )
 	HeaderImage:setAlpha( 0 )
-	HeaderImage:setImage( RegisterImage( 0x7615068F50B3D66 ) )
+	HeaderImage:setImage( RegisterImage( "blacktransparent" ) )
 	self:addElement( HeaderImage )
 	self.HeaderImage = HeaderImage
 	
 	BottomBracket9Slice = LUI.UIImage.new( 0, 0, -1, 203, 0, 0, -1, 8 )
 	BottomBracket9Slice:setRGB( 0.55, 0.54, 0.49 )
 	BottomBracket9Slice:setZRot( 180 )
-	BottomBracket9Slice:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	BottomBracket9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	BottomBracket9Slice:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	BottomBracket9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	BottomBracket9Slice:setShaderVector( 0, 0, 0, 0, 0 )
 	BottomBracket9Slice:setupNineSliceShader( 16, 4 )
 	self:addElement( BottomBracket9Slice )
@@ -222,7 +222,7 @@ CoD.StartMenu_AmmoList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	Title = LUI.UIText.new( 0, 0, 15, 115, 0, 0, 2, 24 )
 	Title:setRGB( 0, 0, 0 )
-	Title:setText( LocalizeToUpperString( 0xAF4C3A7E918E636 ) )
+	Title:setText( LocalizeToUpperString( "warzone/ammo" ) )
 	Title:setTTF( "ttmussels_regular" )
 	Title:setLetterSpacing( 4 )
 	Title:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

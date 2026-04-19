@@ -201,7 +201,7 @@ LUI.createMenu.WZPersonalizeCharacter = function ( f1_arg0, f1_arg1 )
 		CoD.PlayerRoleUtility.EquipOutfit( f22_arg1, f22_arg2, f22_arg0 )
 		return true
 	end, function ( f23_arg0, f23_arg1, f23_arg2 )
-		CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( themesPC )
@@ -240,7 +240,7 @@ LUI.createMenu.WZPersonalizeCharacter = function ( f1_arg0, f1_arg1 )
 		GoBack( self, f27_arg2 )
 		return true
 	end, function ( f28_arg0, f28_arg1, f28_arg2 )
-		CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

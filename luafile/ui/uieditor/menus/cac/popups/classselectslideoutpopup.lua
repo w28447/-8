@@ -98,7 +98,7 @@ LUI.createMenu.ClassSelectSlideoutPopup = function ( f1_arg0, f1_arg1 )
 			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x3996BAAC73C3F6D, nil, nil )
 			return true
 		else
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		end
 	end, false )

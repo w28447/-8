@@ -12,8 +12,8 @@ CoD.AARTierPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	
 	local FrameBorder = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	FrameBorder:setAlpha( 0 )
-	FrameBorder:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrameBorder:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrameBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FrameBorder:setupNineSliceShader( 12, 12 )
 	self:addElement( FrameBorder )
@@ -22,7 +22,7 @@ CoD.AARTierPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	local ImageX = LUI.UIImage.new( 0, 1, 2, -2, 0, 1, 2, -2 )
 	ImageX:setAlpha( 0 )
 	ImageX:setImage( RegisterImage( 0xCCAE79885973D29 ) )
-	ImageX:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	ImageX:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ImageX )
 	self.ImageX = ImageX
 	
@@ -30,7 +30,7 @@ CoD.AARTierPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	Glow:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
 	Glow:setAlpha( 0 )
 	Glow:setImage( RegisterImage( 0xC58FF2328701EBA ) )
-	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
 	
@@ -49,8 +49,8 @@ CoD.AARTierPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	local FocusBorder = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	FocusBorder:setRGB( ColorSet.WarzoneTeammate1.r, ColorSet.WarzoneTeammate1.g, ColorSet.WarzoneTeammate1.b )
 	FocusBorder:setAlpha( 0 )
-	FocusBorder:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FocusBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FocusBorder:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FocusBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FocusBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FocusBorder:setupNineSliceShader( 8, 8 )
 	self:addElement( FocusBorder )

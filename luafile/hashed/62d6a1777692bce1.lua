@@ -11,7 +11,7 @@ CoD.PositionDraft_StatusBannerFui.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local LayoutLineBR = LUI.UIImage.new( 0, 0, 20, 88, 0, 0, 15, 39 )
 	LayoutLineBR:setAlpha( 0.4 )
 	LayoutLineBR:setImage( RegisterImage( 0xE44ABB390F5F528 ) )
-	LayoutLineBR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	LayoutLineBR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	LayoutLineBR:setShaderVector( 0, 0, 1, 0, 0 )
 	LayoutLineBR:setShaderVector( 1, 0, 0, 0, 0 )
 	LayoutLineBR:setShaderVector( 2, 0, 1, 0, 0 )
@@ -37,13 +37,13 @@ CoD.PositionDraft_StatusBannerFui.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local Pip = LUI.UIImage.new( 0, 0, 80, 88, 0, 0, 0, 8 )
 	Pip:setImage( RegisterImage( 0x364778639313CE9 ) )
-	Pip:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Pip:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Pip )
 	self.Pip = Pip
 	
 	local Pip02 = LUI.UIImage.new( 0, 0, 80, 88, 0, 0, 46, 54 )
 	Pip02:setImage( RegisterImage( 0x364778639313CE9 ) )
-	Pip02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Pip02:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Pip02 )
 	self.Pip02 = Pip02
 	

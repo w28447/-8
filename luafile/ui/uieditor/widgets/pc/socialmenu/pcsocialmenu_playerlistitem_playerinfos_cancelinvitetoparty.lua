@@ -11,7 +11,7 @@ CoD.PCSocialMenu_PlayerListItem_PlayerInfos_CancelInviteToParty.new = function (
 	local Border = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Border:setRGB( 0.79, 0.73, 0 )
 	Border:setImage( RegisterImage( 0xF1E3082B39E99BB ) )
-	Border:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	Border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	Border:setShaderVector( 0, 0, 0, 0, 0 )
 	Border:setupNineSliceShader( 12, 16 )
 	self:addElement( Border )

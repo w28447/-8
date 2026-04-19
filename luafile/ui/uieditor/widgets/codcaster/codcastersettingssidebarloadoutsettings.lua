@@ -31,7 +31,7 @@ CoD.CodCasterSettingsSideBarLoadoutSettings.new = function ( f1_arg0, f1_arg1, f
 		SetFocusToElement( self, "OptionCategoryListPC", f3_arg2 )
 		return true
 	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, "ESCAPE" )
+		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 		return true
 	end, false )
 	self:addElement( OptionsListPC )
@@ -78,7 +78,7 @@ CoD.CodCasterSettingsSideBarLoadoutSettings.new = function ( f1_arg0, f1_arg1, f
 		end
 	end, function ( f9_arg0, f9_arg1, f9_arg2 )
 		if not IsMouse( f9_arg2 ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -147,7 +147,7 @@ CoD.CodCasterSettingsSideBarLoadoutSettings.new = function ( f1_arg0, f1_arg1, f
 		end
 	end, function ( f16_arg0, f16_arg1, f16_arg2 )
 		if not IsRepeatButtonPress( nil ) then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x820DDD869ABBFAA], 0x70A9FDC87CD3D48, nil, "Y" )
+			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x820DDD869ABBFAA], "menu/back", nil, "Y" )
 			return true
 		else
 			return false

@@ -10,7 +10,7 @@ CoD.CodCasterTeamIdentityInformation.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local outlinelogo3 = LUI.UIImage.new( 0, 0, 237, 553, 0, 0, 163, 217 )
 	outlinelogo3:setImage( RegisterImage( 0x1122167FC04DCF4 ) )
-	outlinelogo3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	outlinelogo3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	outlinelogo3:setShaderVector( 0, 0, 0, 0, 0 )
 	outlinelogo3:setupNineSliceShader( 20, 20 )
 	self:addElement( outlinelogo3 )
@@ -18,7 +18,7 @@ CoD.CodCasterTeamIdentityInformation.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local outlinelogo2 = LUI.UIImage.new( 0, 0, 237, 553, 0, 0, 58, 112 )
 	outlinelogo2:setImage( RegisterImage( 0x1122167FC04DCF4 ) )
-	outlinelogo2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	outlinelogo2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	outlinelogo2:setShaderVector( 0, 0, 0, 0, 0 )
 	outlinelogo2:setupNineSliceShader( 20, 20 )
 	self:addElement( outlinelogo2 )
@@ -26,7 +26,7 @@ CoD.CodCasterTeamIdentityInformation.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local outlinelogo = LUI.UIImage.new( 0, 0, 9, 201, 0, 0, 58, 250 )
 	outlinelogo:setImage( RegisterImage( 0x1122167FC04DCF4 ) )
-	outlinelogo:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	outlinelogo:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	outlinelogo:setShaderVector( 0, 0, 0, 0, 0 )
 	outlinelogo:setupNineSliceShader( 20, 20 )
 	self:addElement( outlinelogo )

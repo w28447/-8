@@ -23212,7 +23212,7 @@ image,d#ui_icon_weapon_charms_computer_teeth
 image,d#uie_ui_hud_highlight2
 image,#i_t7_decal_grunge_chemical_corrosion_02_r
 image,d#i_t7_veh_decal_keep_clear_c
-image,d#hash_729be1de77ee233c
+image,d#uie_ui_hud_core_draft_nameplate_bars
 image,d#i_t8_wpn_pistol_auto_mag_s
 image,d#i_t8_wpn_pistol_auto_mag_n
 image,d#i_t8_wpn_pistol_auto_mag_o
@@ -38726,7 +38726,7 @@ scriptbundle,#shroud_custom_settings_comp
 scriptbundle,#scene_rifle_m_stand_idle_lowready
 scriptbundle,#c_54i_grunt_fx_table
 scriptbundlelist,#callout_wheel
-scriptbundlelist,#hash_5f2dc7a2fe7eedc5
+scriptbundlelist,#weaponcharm_list
 statuseffect,#shock_seeker_no_response
 statuseffect,#stunned_slow_grenade
 statuseffect,d#dot_radiation_self_comp
@@ -39407,7 +39407,7 @@ scriptbundle,#killstreak_counteruav
 scriptbundle,#killstreak_drone_squadron
 scriptbundle,#killstreak_tank_robot
 scriptbundle,#killstreak_ultimate_turret
-scriptbundlelist,#hash_a8f031f7c7b2ed8
+scriptbundlelist,#weapondeathfx_list
 weapon,#sig_minigun_alt_mp
 weapon,#sig_minigun_mp
 vehicle,#archetype_mini_quadtank_ct

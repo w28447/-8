@@ -60,7 +60,7 @@ CoD.CharacterSelection_CustomCharacterFrameWidget.new = function ( f1_arg0, f1_a
 		end
 	end, function ( f8_arg0, f8_arg1, f8_arg2 )
 		if IsElementInState( f8_arg0, "DefaultState" ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -187,10 +187,10 @@ CoD.CharacterSelection_CustomCharacterFrameWidget.new = function ( f1_arg0, f1_a
 		end
 	end, function ( f25_arg0, f25_arg1, f25_arg2 )
 		if not CoD.ModelUtility.IsSelfModelValueTrue( f25_arg0, f25_arg2, "purchasable" ) and not CoD.ModelUtility.IsSelfModelValueTrue( f25_arg0, f25_arg2, "disabled" ) and not IsGameTrial() then
-			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif IsPC() and IsElementInState( f25_arg0, "Selected" ) and not IsGameTrial() then
-			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -293,7 +293,7 @@ CoD.CharacterSelection_CustomCharacterFrameWidget.new = function ( f1_arg0, f1_a
 	DotPipR01:setRGB( 0.38, 0.38, 0.4 )
 	DotPipR01:setAlpha( 0.2 )
 	DotPipR01:setImage( RegisterImage( 0x3854665C02218EF ) )
-	DotPipR01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DotPipR01:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotPipR01 )
 	self.DotPipR01 = DotPipR01
 	
@@ -301,7 +301,7 @@ CoD.CharacterSelection_CustomCharacterFrameWidget.new = function ( f1_arg0, f1_a
 	DotPipR02:setRGB( 0.38, 0.38, 0.4 )
 	DotPipR02:setAlpha( 0.2 )
 	DotPipR02:setImage( RegisterImage( 0x3854665C02218EF ) )
-	DotPipR02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DotPipR02:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotPipR02 )
 	self.DotPipR02 = DotPipR02
 	
@@ -309,7 +309,7 @@ CoD.CharacterSelection_CustomCharacterFrameWidget.new = function ( f1_arg0, f1_a
 	DotPipL02:setRGB( 0.38, 0.38, 0.4 )
 	DotPipL02:setAlpha( 0.2 )
 	DotPipL02:setImage( RegisterImage( 0x3854665C02218EF ) )
-	DotPipL02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DotPipL02:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotPipL02 )
 	self.DotPipL02 = DotPipL02
 	
@@ -317,7 +317,7 @@ CoD.CharacterSelection_CustomCharacterFrameWidget.new = function ( f1_arg0, f1_a
 	DotPipL01:setRGB( 0.38, 0.38, 0.4 )
 	DotPipL01:setAlpha( 0.2 )
 	DotPipL01:setImage( RegisterImage( 0x3854665C02218EF ) )
-	DotPipL01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DotPipL01:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotPipL01 )
 	self.DotPipL01 = DotPipL01
 	

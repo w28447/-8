@@ -12,7 +12,7 @@ CoD.vhud_dart_reticle_roll.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local HashBox = LUI.UIImage.new( 0.5, 0.5, -234, 234, 0.5, 0.5, -16, 16 )
 	HashBox:setImage( RegisterImage( 0x47998DA1CDBE45E ) )
-	HashBox:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	HashBox:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( HashBox )
 	self.HashBox = HashBox
 	

@@ -20,7 +20,7 @@ CoD.BountyHunterGenericBuy.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.BountyHunterGenericBuyInternal = BountyHunterGenericBuyInternal
 	
 	local Header = LUI.UIText.new( 0, 0, 3, 127, 0, 0, -21, -4 )
-	Header:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	Header:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	Header:setTTF( "ttmussels_demibold" )
 	Header:setLetterSpacing( 2 )
 	Header:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

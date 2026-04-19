@@ -43,8 +43,8 @@ CoD.EmblemEditorMaterialSwatch.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local Frame = LUI.UIImage.new( 0, 1, -2, 0, 0, 1, -2, 0 )
 	Frame:setAlpha( 0.2 )
-	Frame:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	Frame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	Frame:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	Frame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Frame:setShaderVector( 0, 0, 0, 0, 0 )
 	Frame:setupNineSliceShader( 16, 16 )
 	self:addElement( Frame )
@@ -97,7 +97,7 @@ CoD.EmblemEditorMaterialSwatch.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 		end
 	end, function ( f6_arg0, f6_arg1, f6_arg2 )
 		if not CoD.ModelUtility.IsSelfModelValueTrue( f6_arg0, f6_arg2, "isBMClassified" ) then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -127,7 +127,7 @@ CoD.EmblemEditorMaterialSwatch.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 		ClearMenuSavedState( f9_arg1 )
 		return true
 	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( lastSavedColor )
@@ -149,7 +149,7 @@ CoD.EmblemEditorMaterialSwatch.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local dividerV = LUI.UIImage.new( 0.5, 0.5, -353.5, -349.5, 0, 0, 1, 203 )
 	dividerV:setAlpha( 0.1 )
-	dividerV:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
+	dividerV:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
 	dividerV:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	dividerV:setShaderVector( 0, 0, 0, 0, 0 )
 	dividerV:setupNineSliceShader( 4, 8 )
@@ -158,7 +158,7 @@ CoD.EmblemEditorMaterialSwatch.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local dividerH = LUI.UIImage.new( 0, 0, 0, 877, 0, 0, 201, 205 )
 	dividerH:setAlpha( 0.2 )
-	dividerH:setImage( RegisterImage( 0x84B43D5B04D263A ) )
+	dividerH:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_line" ) )
 	dividerH:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	dividerH:setShaderVector( 0, 0, 0, 0, 0 )
 	dividerH:setupNineSliceShader( 8, 4 )
@@ -167,7 +167,7 @@ CoD.EmblemEditorMaterialSwatch.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local Materials = LUI.UIText.new( 0, 0, 0, 200, 0, 0, -17, -2 )
 	Materials:setRGB( 0.92, 0.89, 0.72 )
-	Materials:setText( LocalizeToUpperString( 0xE5BDA73054BDF29 ) )
+	Materials:setText( LocalizeToUpperString( "MENU/MATERIAL_PICKER" ) )
 	Materials:setTTF( "ttmussels_demibold" )
 	Materials:setLetterSpacing( 6 )
 	Materials:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

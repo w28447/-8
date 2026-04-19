@@ -28,7 +28,7 @@ CoD.SideButtonExpendable.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local highlightGrad01 = LUI.UIImage.new( 1, 1, 0, 90, 0, 1, 0, 0 )
 	highlightGrad01:setAlpha( 0 )
 	highlightGrad01:setImage( RegisterImage( 0x60024CE620BEE8B ) )
-	highlightGrad01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	highlightGrad01:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( highlightGrad01 )
 	self.highlightGrad01 = highlightGrad01
 	

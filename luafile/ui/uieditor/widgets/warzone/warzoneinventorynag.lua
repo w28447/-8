@@ -20,7 +20,7 @@ CoD.WarzoneInventoryNag.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	self.InventoryPromptImazge = InventoryPromptImazge
 	
 	local InventoryNag = LUI.UIText.new( 0, 0, 31, 217, 0, 0, 17, 35 )
-	InventoryNag:setText( LocalizeToUpperString( 0x1346019482BDC3C ) )
+	InventoryNag:setText( LocalizeToUpperString( "warzone/inventory" ) )
 	InventoryNag:setTTF( "ttmussels_regular" )
 	InventoryNag:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	InventoryNag:setShaderVector( 0, 0.6, 0, 0, 0 )
@@ -140,7 +140,7 @@ CoD.WarzoneInventoryNag.__resetProperties = function ( f11_arg0 )
 	f11_arg0.InventoryPromptImazge:setAlpha( 1 )
 	f11_arg0.InventoryNag:setLeftRight( 0, 0, 31, 217 )
 	f11_arg0.InventoryNag:setAlpha( 1 )
-	f11_arg0.InventoryNag:setText( LocalizeToUpperString( 0x1346019482BDC3C ) )
+	f11_arg0.InventoryNag:setText( LocalizeToUpperString( "warzone/inventory" ) )
 	f11_arg0.InventoryNag:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 end
 

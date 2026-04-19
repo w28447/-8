@@ -21,7 +21,7 @@ CoD.remoteMissileTargetLockonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	Base:setRGB( ColorSet.EnemyOrange_Bright.r, ColorSet.EnemyOrange_Bright.g, ColorSet.EnemyOrange_Bright.b )
 	Base:setAlpha( 0 )
 	Base:setImage( RegisterImage( 0xD32ADFCD1002BEC ) )
-	Base:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Base:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Base )
 	self.Base = Base
 	
@@ -79,14 +79,14 @@ CoD.remoteMissileTargetLockonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	local HawkEKIA = LUI.UIImage.new( 0.5, 0.5, -64, 64, 0.5, 0.5, -64, 64 )
 	HawkEKIA:setAlpha( 0 )
 	HawkEKIA:setImage( RegisterImage( 0x843E30E894F4116 ) )
-	HawkEKIA:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	HawkEKIA:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( HawkEKIA )
 	self.HawkEKIA = HawkEKIA
 	
 	local HawkEKIAAdd = LUI.UIImage.new( 0.5, 0.5, -32, 32, 0.5, 0.5, -32, 32 )
 	HawkEKIAAdd:setAlpha( 0 )
 	HawkEKIAAdd:setImage( RegisterImage( 0x81394B2D7137D5E ) )
-	HawkEKIAAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	HawkEKIAAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( HawkEKIAAdd )
 	self.HawkEKIAAdd = HawkEKIAAdd
 	

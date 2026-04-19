@@ -34,7 +34,7 @@ CoD.directorSelect.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local BackgroundImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BackgroundImage:setAlpha( 0.85 )
-	BackgroundImage:setImage( RegisterImage( 0x4BF88A437F4C579 ) )
+	BackgroundImage:setImage( RegisterImage( "uie_fe_cp_background" ) )
 	self:addElement( BackgroundImage )
 	self.BackgroundImage = BackgroundImage
 	
@@ -167,7 +167,7 @@ CoD.directorSelect.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x191CDDA584B4408, nil, "ui_confirm" )
 			return true
 		elseif not CoD.ModelUtility.IsSelfModelValueTrue( f13_arg0, f13_arg2, "locked" ) and CoD.DirectorUtility.ShowForAllClients( f13_arg0, f13_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f13_arg0, f13_arg2, "trialLocked" ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -236,7 +236,7 @@ CoD.directorSelect.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 		end
 	end, function ( f23_arg0, f23_arg1, f23_arg2 )
 		if not CoD.ModelUtility.IsSelfModelValueTrue( f23_arg0, f23_arg2, "locked" ) and CoD.DirectorUtility.ShowForAllClients( f23_arg0, f23_arg2 ) then
-			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -342,19 +342,19 @@ CoD.directorSelect.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x191CDDA584B4408, nil, "ui_confirm" )
 			return true
 		elseif CoD.DirectorUtility.ShowForAllClients( f36_arg0, f36_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f36_arg0, f36_arg2, "locked" ) then
-			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( f36_arg0, f36_arg2, "lockState", Enum[0xDACBB5C5F26BCD9][0x9B632F6362EA1BE] ) then
-			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( f36_arg0, f36_arg2, "lockState", Enum[0xDACBB5C5F26BCD9][0x4BDEB566326AC98] ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f36_arg0, f36_arg2, "mode", Enum.LobbyMainMode[0x79D01499920B292] ) then
-			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( f36_arg0, f36_arg2, "lockState", Enum[0xDACBB5C5F26BCD9][0x4BDEB566326AC98] ) then
-			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif CoD.DirectorUtility.ShowForAllClients( f36_arg0, f36_arg2 ) and CoD.ModelUtility.IsSelfModelValueTrue( f36_arg0, f36_arg2, "locked" ) then
-			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -439,10 +439,10 @@ CoD.directorSelect.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 			CoD.Menu.SetButtonLabel( f47_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x191CDDA584B4408, nil, "ui_confirm" )
 			return true
 		elseif not CoD.ModelUtility.IsSelfModelValueTrue( f47_arg0, f47_arg2, "locked" ) and CoD.DirectorUtility.ShowForAllClients( f47_arg0, f47_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f47_arg0, f47_arg2, "trialLocked" ) then
-			CoD.Menu.SetButtonLabel( f47_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f47_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif IsPC() and CoD.ModelUtility.IsSelfModelValueTrue( f47_arg0, f47_arg2, "locked" ) and CoD.DirectorUtility.ShowForAllClients( f47_arg0, f47_arg2 ) then
-			CoD.Menu.SetButtonLabel( f47_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f47_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

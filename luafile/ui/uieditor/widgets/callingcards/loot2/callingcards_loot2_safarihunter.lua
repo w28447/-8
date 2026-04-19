@@ -35,7 +35,7 @@ CoD[0x83DDFC8553ACB78].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local splash03 = LUI.UIImage.new( 0, 0, 272, 960, 0, 0, 48, 240 )
 	splash03:setImage( RegisterImage( 0x7FCBA5601192910 ) )
-	splash03:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	splash03:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( splash03 )
 	self.splash03 = splash03
 	
@@ -51,7 +51,7 @@ CoD[0x83DDFC8553ACB78].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local splash02 = LUI.UIImage.new( 0, 0, 272, 960, 0, 0, 48, 240 )
 	splash02:setImage( RegisterImage( 0x7FCBA5601192910 ) )
-	splash02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	splash02:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( splash02 )
 	self.splash02 = splash02
 	

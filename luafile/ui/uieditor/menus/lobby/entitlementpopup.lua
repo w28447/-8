@@ -33,7 +33,7 @@ LUI.createMenu.EntitlementPopup = function ( f1_arg0, f1_arg1 )
 	
 	local BackgroundImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BackgroundImage:setAlpha( 0.85 )
-	BackgroundImage:setImage( RegisterImage( 0x4BF88A437F4C579 ) )
+	BackgroundImage:setImage( RegisterImage( "uie_fe_cp_background" ) )
 	self:addElement( BackgroundImage )
 	self.BackgroundImage = BackgroundImage
 	
@@ -106,7 +106,7 @@ LUI.createMenu.EntitlementPopup = function ( f1_arg0, f1_arg1 )
 			modelName = "EntitlementAcknowledged"
 		} )
 	end, false )
-	featureOverlayButtonMouseOnly.featureOverlayButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( 0x6393FF34EA56966 ) )
+	featureOverlayButtonMouseOnly.featureOverlayButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/continue" ) )
 	PCDisclaimer = featureOverlayButtonMouseOnly
 	OptionDesc = featureOverlayButtonMouseOnly.subscribeToModel
 	CheckboxConfirm = Engine.GetGlobalModel()
@@ -200,7 +200,7 @@ LUI.createMenu.EntitlementPopup = function ( f1_arg0, f1_arg1 )
 	BoundaryBot2:setAlpha( 0.15 )
 	BoundaryBot2:setZRot( -90 )
 	BoundaryBot2:setImage( RegisterImage( 0x614FFDE5DDC2DFB ) )
-	BoundaryBot2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	BoundaryBot2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BoundaryBot2:setShaderVector( 0, 0, 0, 0, 0 )
 	BoundaryBot2:setupNineSliceShader( 66, 8 )
 	self:addElement( BoundaryBot2 )
@@ -210,7 +210,7 @@ LUI.createMenu.EntitlementPopup = function ( f1_arg0, f1_arg1 )
 	BoundaryBot:setAlpha( 0.15 )
 	BoundaryBot:setZRot( 90 )
 	BoundaryBot:setImage( RegisterImage( 0x614FFDE5DDC2DFB ) )
-	BoundaryBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	BoundaryBot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BoundaryBot:setShaderVector( 0, 0, 0, 0, 0 )
 	BoundaryBot:setupNineSliceShader( 66, 8 )
 	self:addElement( BoundaryBot )
@@ -221,7 +221,7 @@ LUI.createMenu.EntitlementPopup = function ( f1_arg0, f1_arg1 )
 	self.EntitlementItemList = EntitlementItemList
 	
 	local Banner = LUI.UIImage.new( 0.5, 0.5, -600, 600, 0.5, 0.5, -464.5, -344.5 )
-	Banner:setImage( RegisterImage( CoD.EntitlementUtility.GetBannerImage( f1_arg0, 0x7615068F50B3D66 ) ) )
+	Banner:setImage( RegisterImage( CoD.EntitlementUtility.GetBannerImage( f1_arg0, "blacktransparent" ) ) )
 	self:addElement( Banner )
 	self.Banner = Banner
 	

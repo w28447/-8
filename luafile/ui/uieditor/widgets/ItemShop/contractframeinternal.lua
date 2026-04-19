@@ -56,7 +56,7 @@ CoD.ContractFrameInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 		PlaySoundAlias( "uin_press_generic" )
 		return true
 	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( PurchasedContractsButton )
@@ -158,8 +158,8 @@ CoD.ContractFrameInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	infoBracketBot:setRGB( 0.98, 1, 0.89 )
 	infoBracketBot:setAlpha( 0.35 )
 	infoBracketBot:setZRot( 180 )
-	infoBracketBot:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	infoBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	infoBracketBot:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	infoBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	infoBracketBot:setShaderVector( 0, 0, 0, 0, 0 )
 	infoBracketBot:setupNineSliceShader( 16, 4 )
 	self:addElement( infoBracketBot )
@@ -169,8 +169,8 @@ CoD.ContractFrameInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	infoBracketBot2:setRGB( 0.98, 1, 0.89 )
 	infoBracketBot2:setAlpha( 0.35 )
 	infoBracketBot2:setZRot( 180 )
-	infoBracketBot2:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	infoBracketBot2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	infoBracketBot2:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	infoBracketBot2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	infoBracketBot2:setShaderVector( 0, 0, 0, 0, 0 )
 	infoBracketBot2:setupNineSliceShader( 16, 4 )
 	self:addElement( infoBracketBot2 )
@@ -217,7 +217,7 @@ CoD.ContractFrameInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 		CoD.ContractUtility.OpenContractDetails( self, f14_arg0, f14_arg2 )
 		return true
 	end, function ( f15_arg0, f15_arg1, f15_arg2 )
-		CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( PurchasedContractList )
@@ -262,7 +262,7 @@ CoD.ContractFrameInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 		end
 	end, function ( f20_arg0, f20_arg1, f20_arg2 )
 		if not CoD.ModelUtility.IsSelfModelValueTrue( f20_arg0, f20_arg2, "purchased" ) then
-			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

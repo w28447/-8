@@ -26,7 +26,7 @@ CoD.ZMInventoryListBackingInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local BaseGradientL = LUI.UIImage.new( -0.03, 0.5, 0, 0, 0, 1, 0, 0 )
 	BaseGradientL:setRGB( 0, 0, 0 )
 	BaseGradientL:setAlpha( 0.1 )
-	BaseGradientL:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDE760AC0E801E57 ) )
+	BaseGradientL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_gradient_normal" ) )
 	BaseGradientL:setShaderVector( 0, 0, 0, 0, 15 )
 	BaseGradientL:setShaderVector( 1, 0, 0, 0, 0 )
 	BaseGradientL:setShaderVector( 2, 0.5, 0, 0, 0 )
@@ -36,7 +36,7 @@ CoD.ZMInventoryListBackingInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local BaseGradientR = LUI.UIImage.new( 0.5, 1.03, 0, 0, 0, 1, 0, 0 )
 	BaseGradientR:setRGB( 0, 0, 0 )
 	BaseGradientR:setAlpha( 0.1 )
-	BaseGradientR:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDE760AC0E801E57 ) )
+	BaseGradientR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_gradient_normal" ) )
 	BaseGradientR:setShaderVector( 0, 0, 0, 0, 0 )
 	BaseGradientR:setShaderVector( 1, 0, 0, 0, 15 )
 	BaseGradientR:setShaderVector( 2, 0.5, 0, 0, 0 )
@@ -45,7 +45,7 @@ CoD.ZMInventoryListBackingInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local TextureMid = LUI.UIImage.new( 0, 1, 0, 0, 0.5, 0.5, -40, 40 )
 	TextureMid:setAlpha( 0.8 )
-	TextureMid:setImage( RegisterImage( 0xBB35BC5D2F0269C ) )
+	TextureMid:setImage( RegisterImage( "uie_zm_hud_inventory_backing_mid" ) )
 	TextureMid:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
 	TextureMid:setShaderVector( 0, 1, 0, 0, 0 )
 	TextureMid:setShaderVector( 1, 1, 0, 0, 0 )
@@ -63,18 +63,18 @@ CoD.ZMInventoryListBackingInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	self.End = End
 	
 	local BGTip = LUI.UIImage.new( 0, 0, -100, 0, 0, 0, -10, 90 )
-	BGTip:setImage( RegisterImage( 0x92701A5677AD076 ) )
+	BGTip:setImage( RegisterImage( "uie_zm_hud_inventory_framearrow" ) )
 	self:addElement( BGTip )
 	self.BGTip = BGTip
 	
 	local BGEnd = LUI.UIImage.new( 1, 1, 0, 100, 0, 0, -10, 90 )
 	BGEnd:setYRot( 180 )
-	BGEnd:setImage( RegisterImage( 0x92701A5677AD076 ) )
+	BGEnd:setImage( RegisterImage( "uie_zm_hud_inventory_framearrow" ) )
 	self:addElement( BGEnd )
 	self.BGEnd = BGEnd
 	
 	local DividerBottom = LUI.UIImage.new( 0.5, 0.5, -70, 70, 0, 0, 70, 90 )
-	DividerBottom:setImage( RegisterImage( 0xE7AE208C672D6E3 ) )
+	DividerBottom:setImage( RegisterImage( "uie_zm_hud_inventory_framedivider_horizontal" ) )
 	self:addElement( DividerBottom )
 	self.DividerBottom = DividerBottom
 	

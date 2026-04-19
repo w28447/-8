@@ -21,7 +21,7 @@ CoD.WarzoneQuickInventoryVignette.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local Image = LUI.UIImage.new( 0, 0, -107, 2027, 0, 0, -269, 479 )
 	Image:setRGB( 0, 0, 0 )
 	Image:setAlpha( 0.9 )
-	Image:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE125638BF94665F ) )
+	Image:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	Image:setShaderVector( 0, 0.2, 0.5, 0.2, 0.01 )
 	self:addElement( Image )
 	self.Image = Image
@@ -30,7 +30,7 @@ CoD.WarzoneQuickInventoryVignette.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	GridBaked:setAlpha( 0.1 )
 	GridBaked:setScale( 2, 2 )
 	GridBaked:setImage( RegisterImage( 0x4D0B6B42B9EA81F ) )
-	GridBaked:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	GridBaked:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	GridBaked:setShaderVector( 0, 0.03, 0.97, 0, 0 )
 	GridBaked:setShaderVector( 1, 0.05, 0.07, 0, 0 )
 	GridBaked:setShaderVector( 2, 0, 0.7, 0, 0 )

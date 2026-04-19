@@ -21,7 +21,7 @@ CoD.ZM_Restart_Level_Prompt.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 			end
 		}
 	} )
-	YesPrompt.Text:setText( LocalizeToUpperString( 0xDFD294FC69F682 ) )
+	YesPrompt.Text:setText( LocalizeToUpperString( "menu/yes" ) )
 	YesPrompt:registerEventHandler( "gain_focus", function ( element, event )
 		local f3_local0 = nil
 		if element.gainFocus then
@@ -66,7 +66,7 @@ CoD.ZM_Restart_Level_Prompt.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 			end
 		}
 	} )
-	NoPrompt.Text:setText( LocalizeToUpperString( 0x5C16E02B211A4F4 ) )
+	NoPrompt.Text:setText( LocalizeToUpperString( "menu/no" ) )
 	NoPrompt:registerEventHandler( "gain_focus", function ( element, event )
 		local f7_local0 = nil
 		if element.gainFocus then

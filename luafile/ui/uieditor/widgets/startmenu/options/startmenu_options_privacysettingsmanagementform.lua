@@ -69,7 +69,7 @@ CoD.StartMenu_Options_PrivacySettingsManagementForm.new = function ( f1_arg0, f1
 		end
 	end, function ( f8_arg0, f8_arg1, f8_arg2 )
 		if CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToEnum( f8_arg2, "PrivacySettingManagementForm", "updateProgressState", Enum[0x65887EAAB38F9F8][0x464A086C0CC2A87] ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -110,7 +110,7 @@ CoD.StartMenu_Options_PrivacySettingsManagementForm.new = function ( f1_arg0, f1
 	
 	Title = LUI.UIText.new( 0.5, 0.5, -795.5, -70.5, 0, 0, 206.5, 260.5 )
 	Title:setRGB( ColorSet.T8__BEIGE__HEADER.r, ColorSet.T8__BEIGE__HEADER.g, ColorSet.T8__BEIGE__HEADER.b )
-	Title:setText( LocalizeToUpperString( 0x5EB6FED86163697 ) )
+	Title:setText( LocalizeToUpperString( "menu/privacy_settings" ) )
 	Title:setTTF( "ttmussels_regular" )
 	Title:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Title:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

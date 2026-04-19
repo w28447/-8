@@ -1815,7 +1815,7 @@ DataSources.ClanJoinButtonList = ListHelper_SetupDataSource( "ClanJoinButtonList
 				params = f122_local2
 			} )
 			table.insert( f122_local3, {
-				displayText = 0xC2E92C54C2BE289,
+				displayText = "menu/cancel",
 				action = CoD.ClanUtility.ClanJoinPopupButtonPress,
 				params = {
 					event = LuaEnum.POPUP_ACTION.CANCEL
@@ -1829,7 +1829,7 @@ DataSources.ClanJoinButtonList = ListHelper_SetupDataSource( "ClanJoinButtonList
 			params = f122_local2
 		} )
 		table.insert( f122_local3, {
-			displayText = 0xC2E92C54C2BE289,
+			displayText = "menu/cancel",
 			action = CoD.ClanUtility.ClanJoinPopupButtonPress,
 			params = {
 				event = LuaEnum.POPUP_ACTION.CANCEL

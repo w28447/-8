@@ -20,7 +20,7 @@ CoD.SpecialDealTimer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	TextBox:setBackingXPadding( 6 )
 	TextBox:setBackingYPadding( 8 )
 	TextBox:setBackingImage( RegisterImage( 0x714F15AF25A104F ) )
-	TextBox:setBackingMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	TextBox:setBackingMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	TextBox:setBackingShaderVector( 0, 0, 0, 0, 0 )
 	TextBox:setupBackingNineSliceShader( 200, 20 )
 	TextBox:subscribeToGlobalModel( f1_arg1, "AutoEvents", "loot_special_deal_timer", function ( model )

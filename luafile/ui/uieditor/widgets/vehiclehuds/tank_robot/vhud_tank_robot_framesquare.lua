@@ -23,35 +23,35 @@ CoD.vhud_tank_robot_framesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local BoxT = LUI.UIImage.new( 0.5, 0.5, -4, 4, 0.5, 0.5, -71, -63 )
 	BoxT:setAlpha( 0.4 )
 	BoxT:setImage( RegisterImage( 0xD7C8DB42E3B4493 ) )
-	BoxT:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	BoxT:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BoxT )
 	self.BoxT = BoxT
 	
 	local BoxR = LUI.UIImage.new( 0.5, 0.5, 69, 77, 0.5, 0.5, -4, 4 )
 	BoxR:setAlpha( 0.4 )
 	BoxR:setImage( RegisterImage( 0xD7C8DB42E3B4493 ) )
-	BoxR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	BoxR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BoxR )
 	self.BoxR = BoxR
 	
 	local BoxB = LUI.UIImage.new( 0.5, 0.5, -4, 4, 0.5, 0.5, 69, 77 )
 	BoxB:setAlpha( 0.4 )
 	BoxB:setImage( RegisterImage( 0xD7C8DB42E3B4493 ) )
-	BoxB:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	BoxB:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BoxB )
 	self.BoxB = BoxB
 	
 	local BoxL = LUI.UIImage.new( 0.5, 0.5, -71, -63, 0.5, 0.5, -4, 4 )
 	BoxL:setAlpha( 0.4 )
 	BoxL:setImage( RegisterImage( 0xD7C8DB42E3B4493 ) )
-	BoxL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	BoxL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BoxL )
 	self.BoxL = BoxL
 	
 	local QuarterRing = LUI.UIImage.new( 0.5, 0.5, -90, 0, 0.5, 0.5, -90, 0 )
 	QuarterRing:setAlpha( 0.3 )
 	QuarterRing:setImage( RegisterImage( 0x935737CEC7B9628 ) )
-	QuarterRing:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	QuarterRing:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( QuarterRing )
 	self.QuarterRing = QuarterRing
 	
@@ -59,7 +59,7 @@ CoD.vhud_tank_robot_framesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	QuarterRing2:setAlpha( 0.3 )
 	QuarterRing2:setYRot( 180 )
 	QuarterRing2:setImage( RegisterImage( 0x935737CEC7B9628 ) )
-	QuarterRing2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	QuarterRing2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( QuarterRing2 )
 	self.QuarterRing2 = QuarterRing2
 	
@@ -68,7 +68,7 @@ CoD.vhud_tank_robot_framesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	QuarterRing3:setXRot( 180 )
 	QuarterRing3:setYRot( 180 )
 	QuarterRing3:setImage( RegisterImage( 0x935737CEC7B9628 ) )
-	QuarterRing3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	QuarterRing3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( QuarterRing3 )
 	self.QuarterRing3 = QuarterRing3
 	
@@ -76,14 +76,14 @@ CoD.vhud_tank_robot_framesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	QuarterRing4:setAlpha( 0.3 )
 	QuarterRing4:setXRot( 180 )
 	QuarterRing4:setImage( RegisterImage( 0x935737CEC7B9628 ) )
-	QuarterRing4:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	QuarterRing4:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( QuarterRing4 )
 	self.QuarterRing4 = QuarterRing4
 	
 	local BracketLeft = LUI.UIImage.new( 0, 0, 304, 364, 0.5, 0.5, -30, 30 )
 	BracketLeft:setAlpha( 0.3 )
 	BracketLeft:setImage( RegisterImage( 0x862965168D94F78 ) )
-	BracketLeft:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	BracketLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BracketLeft )
 	self.BracketLeft = BracketLeft
 	
@@ -91,28 +91,28 @@ CoD.vhud_tank_robot_framesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	BracketRight:setAlpha( 0.3 )
 	BracketRight:setYRot( 180 )
 	BracketRight:setImage( RegisterImage( 0x862965168D94F78 ) )
-	BracketRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	BracketRight:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BracketRight )
 	self.BracketRight = BracketRight
 	
 	local FuiLeft = LUI.UIImage.new( 0, 0, 224, 304, 0, 0, 541, 577 )
 	FuiLeft:setAlpha( 0.5 )
 	FuiLeft:setImage( RegisterImage( 0x184787ADFCE8425 ) )
-	FuiLeft:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	FuiLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FuiLeft )
 	self.FuiLeft = FuiLeft
 	
 	local FuiRight = LUI.UIImage.new( 0, 0, 954, 874, 0, 0, 541, 577 )
 	FuiRight:setAlpha( 0.5 )
 	FuiRight:setImage( RegisterImage( 0x184787ADFCE8425 ) )
-	FuiRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	FuiRight:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FuiRight )
 	self.FuiRight = FuiRight
 	
 	local DotlineH = LUI.UIImage.new( 0.5, 0.5, -2, 2, 0.5, 0.5, -584, 584 )
 	DotlineH:setAlpha( 0.05 )
 	DotlineH:setZRot( 90 )
-	DotlineH:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
+	DotlineH:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
 	DotlineH:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DotlineH:setShaderVector( 0, 0, 0, 0, 0 )
 	DotlineH:setupNineSliceShader( 4, 8 )
@@ -121,7 +121,7 @@ CoD.vhud_tank_robot_framesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local DotLineV = LUI.UIImage.new( 0.5, 0.5, -2, 2, 0, 0, -4, 650 )
 	DotLineV:setAlpha( 0.05 )
-	DotLineV:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
+	DotLineV:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
 	DotLineV:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DotLineV:setShaderVector( 0, 0, 0, 0, 0 )
 	DotLineV:setupNineSliceShader( 4, 8 )
@@ -131,14 +131,14 @@ CoD.vhud_tank_robot_framesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local FuiArrowLeft = LUI.UIImage.new( 0, 0, -26, 0, 0.5, 0.5, -13, 13 )
 	FuiArrowLeft:setZRot( 90 )
 	FuiArrowLeft:setImage( RegisterImage( 0x3213403D5FE9F16 ) )
-	FuiArrowLeft:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	FuiArrowLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FuiArrowLeft )
 	self.FuiArrowLeft = FuiArrowLeft
 	
 	local FuiArrowRight = LUI.UIImage.new( 1, 1, 0, 26, 0.5, 0.5, -13, 13 )
 	FuiArrowRight:setZRot( -90 )
 	FuiArrowRight:setImage( RegisterImage( 0x3213403D5FE9F16 ) )
-	FuiArrowRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	FuiArrowRight:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FuiArrowRight )
 	self.FuiArrowRight = FuiArrowRight
 	
@@ -161,13 +161,13 @@ CoD.vhud_tank_robot_framesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local FuiArrowTop = LUI.UIImage.new( 0.5, 0.5, -13, 13, 0, 0, -26, 0 )
 	FuiArrowTop:setImage( RegisterImage( 0x3213403D5FE9F16 ) )
-	FuiArrowTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	FuiArrowTop:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FuiArrowTop )
 	self.FuiArrowTop = FuiArrowTop
 	
 	local FuiArrowBot = LUI.UIImage.new( 0.5, 0.5, -13, 13, 0, 0, 676, 650 )
 	FuiArrowBot:setImage( RegisterImage( 0x3213403D5FE9F16 ) )
-	FuiArrowBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	FuiArrowBot:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FuiArrowBot )
 	self.FuiArrowBot = FuiArrowBot
 	

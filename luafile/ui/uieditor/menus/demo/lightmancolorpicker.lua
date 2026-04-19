@@ -186,7 +186,7 @@ LUI.createMenu.LightmanColorPicker = function ( f2_arg0, f2_arg1 )
 		SetGlobalModelValueFalse( "demo.showLightmanColorPicker" )
 		return true
 	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	ColorPicker.id = "ColorPicker"

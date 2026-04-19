@@ -15,7 +15,7 @@ CoD.CommonListButtonShort.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local TiledBacking = LUI.UIImage.new( -0, 1, 0, 0, -0, 1, 0, 0 )
 	TiledBacking:setAlpha( 0.5 )
-	TiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking:setupNineSliceShader( 196, 88 )
@@ -33,8 +33,8 @@ CoD.CommonListButtonShort.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local BotBar = LUI.UIImage.new( 0, 0, -1, 241, 0, 0, 85, 93 )
 	BotBar:setAlpha( 0.2 )
-	BotBar:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	BotBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	BotBar:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	BotBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BotBar:setShaderVector( 0, 0, 0, 0, 0 )
 	BotBar:setupNineSliceShader( 16, 4 )
 	self:addElement( BotBar )
@@ -43,14 +43,14 @@ CoD.CommonListButtonShort.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local DotRIght = LUI.UIImage.new( 0, 0, 238, 242, 0, 0, -2, 2 )
 	DotRIght:setAlpha( 0.2 )
 	DotRIght:setImage( RegisterImage( 0x3854665C02218EF ) )
-	DotRIght:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DotRIght:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotRIght )
 	self.DotRIght = DotRIght
 	
 	local DotLeft = LUI.UIImage.new( 0, 0, -2, 2, 0, 0, -2, 2 )
 	DotLeft:setAlpha( 0.2 )
 	DotLeft:setImage( RegisterImage( 0x3854665C02218EF ) )
-	DotLeft:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DotLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotLeft )
 	self.DotLeft = DotLeft
 	

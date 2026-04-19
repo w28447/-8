@@ -29,8 +29,8 @@ CoD.EmblemEditorGradient.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local Frame = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	Frame:setAlpha( 0.2 )
-	Frame:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	Frame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	Frame:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	Frame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Frame:setShaderVector( 0, 0, 0, 0, 0 )
 	Frame:setupNineSliceShader( 16, 16 )
 	self:addElement( Frame )
@@ -128,10 +128,10 @@ CoD.EmblemEditorGradient.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		end
 	end, function ( f12_arg0, f12_arg1, f12_arg2 )
 		if CoD.ModelUtility.IsModelValueEqualTo( f12_arg2, "Emblem.EmblemProperties.isGradientMode", 1 ) and not CoD.ModelUtility.IsModelValueEqualToEnum( f12_arg2, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif CoD.ModelUtility.IsModelValueEqualTo( f12_arg2, "Emblem.EmblemProperties.isGradientMode", 1 ) and CoD.ModelUtility.IsModelValueEqualToEnum( f12_arg2, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -202,10 +202,10 @@ CoD.EmblemEditorGradient.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		end
 	end, function ( f20_arg0, f20_arg1, f20_arg2 )
 		if CoD.ModelUtility.IsModelValueEqualTo( f20_arg2, "Emblem.EmblemProperties.isGradientMode", 1 ) and not CoD.ModelUtility.IsModelValueEqualToEnum( f20_arg2, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
-			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif CoD.ModelUtility.IsModelValueEqualTo( f20_arg2, "Emblem.EmblemProperties.isGradientMode", 1 ) and CoD.ModelUtility.IsModelValueEqualToEnum( f20_arg2, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
-			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -286,7 +286,7 @@ CoD.EmblemEditorGradient.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		end
 	end, function ( f29_arg0, f29_arg1, f29_arg2 )
 		if not IsDisabled( f29_arg0, f29_arg2 ) then
-			CoD.Menu.SetButtonLabel( f29_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f29_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

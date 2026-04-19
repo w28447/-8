@@ -41,7 +41,7 @@ CoD.PC_BnetStore_GiftButton_Texts.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	GiftPrice:setBackingAlpha( 0 )
 	GiftPrice:setBackingXPadding( 2 )
 	GiftPrice:setBackingImage( RegisterImage( 0x543EE2663FE7871 ) )
-	GiftPrice:setBackingMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	GiftPrice:setBackingMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	GiftPrice:setBackingShaderVector( 0, 0, 1, 0, 0 )
 	GiftPrice:setBackingShaderVector( 1, 0, 0, 0, 0 )
 	GiftPrice:setBackingShaderVector( 2, 0.46, 0.52, 0, 0 )

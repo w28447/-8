@@ -31,7 +31,7 @@ CoD.PaintshopSlotsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local Image = LUI.UIImage.new( 0, 0, -2, 182, 0, 0, 0, 29 )
 	Image:setAlpha( 0.5 )
 	Image:setImage( RegisterImage( 0x8F6569FEEE42A57 ) )
-	Image:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	Image:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Image:setShaderVector( 0, 0, 0, 0, 0 )
 	Image:setupNineSliceShader( 6, 6 )
 	self:addElement( Image )

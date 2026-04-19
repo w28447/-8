@@ -10,13 +10,13 @@ local f0_local0 = function ( f1_arg0, f1_arg1 )
 	elseif IsDemoContextPlaybackMode() then
 		f1_local0 = 0xC985CBA47878B1C
 	elseif IsDemoContextBasicMode() then
-		f1_local0 = 0x2466B35790D15BF
+		f1_local0 = "demo/basic_mode"
 	elseif IsDemoContextDirectorMode() then
-		f1_local0 = 0xFC244F0B9CC213B
+		f1_local0 = "demo/director_mode"
 	elseif IsDemoContextObjectLinkMode() then
-		f1_local0 = 0x2961AAF61FB5B21
+		f1_local0 = "demo/object_link_mode"
 	elseif IsDemoContextLighterMode() then
-		f1_local0 = 0xEBDDCC281D5C214
+		f1_local0 = "demo/lighter_mode"
 	elseif IsDemoContextHighlightReelMode() then
 		f1_local0 = 0xE4E395171E8600C
 	end
@@ -84,7 +84,7 @@ CoD.DemoContextPanel.new = function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3, f6_arg
 	
 	local ModeName = LUI.UIText.new( 0.5, 0.5, -145, 145, 0, 0, 5, 25 )
 	ModeName:setRGB( ColorSet.Orange.r, ColorSet.Orange.g, ColorSet.Orange.b )
-	ModeName:setText( Engine[0xF9F1239CFD921FE]( 0x2466B35790D15BF ) )
+	ModeName:setText( Engine[0xF9F1239CFD921FE]( "demo/basic_mode" ) )
 	ModeName:setTTF( "ttmussels_regular" )
 	ModeName:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	ModeName:setShaderVector( 0, 0.02, 0, 0, 0 )
@@ -131,8 +131,8 @@ CoD.DemoContextPanel.new = function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3, f6_arg
 	
 	local FrontendFrame = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	FrontendFrame:setAlpha( 0.2 )
-	FrontendFrame:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrontendFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrame:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrontendFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrame:setupNineSliceShader( 12, 12 )
 	self:addElement( FrontendFrame )
@@ -274,7 +274,7 @@ CoD.DemoContextPanel.__resetProperties = function ( f21_arg0 )
 	f21_arg0.ButtonPrompt:setTopBottom( 0, 0, -34, -4 )
 	f21_arg0.ButtonPrompt:setAlpha( 1 )
 	f21_arg0.ButtonPrompt.label:setText( LocalizeString( 0x11CF7B88D647093 ) )
-	f21_arg0.ModeName:setText( Engine[0xF9F1239CFD921FE]( 0x2466B35790D15BF ) )
+	f21_arg0.ModeName:setText( Engine[0xF9F1239CFD921FE]( "demo/basic_mode" ) )
 	f21_arg0.DemoControlsSpectatingBar:setAlpha( 1 )
 end
 
@@ -307,7 +307,7 @@ CoD.DemoContextPanel.__clipsPerState = {
 			f23_arg0.ButtonPrompt:setLeftRight( 0.5, 0.5, -115.5, 115.5 )
 			f23_arg0.ButtonPrompt:setTopBottom( 0, 0, 51, 81 )
 			f23_arg0.ButtonPrompt:setAlpha( 1 )
-			f23_arg0.ButtonPrompt.label:setText( LocalizeString( 0xC2E92C54C2BE289 ) )
+			f23_arg0.ButtonPrompt.label:setText( LocalizeString( "menu/cancel" ) )
 			f23_arg0.clipFinished( f23_arg0.ButtonPrompt )
 		end
 	},

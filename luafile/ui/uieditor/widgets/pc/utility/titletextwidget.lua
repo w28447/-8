@@ -16,7 +16,7 @@ CoD.TitleTextWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local itemName = LUI.UIText.new( 0, 0, 4, 109, 0.5, 0.5, -22, 26 )
 	itemName:setRGB( 0, 0, 0 )
-	itemName:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	itemName:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	itemName:setTTF( "ttmussels_demibold" )
 	itemName:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	itemName:setShaderVector( 0, 0.06, 0, 0, 0 )
@@ -33,7 +33,7 @@ CoD.TitleTextWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local Glow = LUI.UIImage.new( 0, 1, -80, 74, 0.5, 0.5, -45, 65 )
 	Glow:setAlpha( 0.14 )
 	Glow:setImage( RegisterImage( 0x1078C36A022A4FE ) )
-	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
 	

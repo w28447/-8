@@ -31,7 +31,7 @@ CoD.CraftGradientButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	self.GradientName = GradientName
 	
 	local Background = LUI.UIImage.new( -0.03, 1.03, 8, -8, 0, 1, 0, 0 )
-	Background:setImage( RegisterImage( 0x7615068F50B3D66 ) )
+	Background:setImage( RegisterImage( "blacktransparent" ) )
 	self:addElement( Background )
 	self.Background = Background
 	
@@ -47,8 +47,8 @@ CoD.CraftGradientButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local FrontendFrameSelected = LUI.UIImage.new( -0.46, 0.49, 113.5, 133.5, -0.02, 0.72, -4, 16 )
 	FrontendFrameSelected:setAlpha( 0 )
-	FrontendFrameSelected:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FrontendFrameSelected:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrameSelected:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FrontendFrameSelected:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrameSelected:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrameSelected:setupNineSliceShader( 14, 14 )
 	self:addElement( FrontendFrameSelected )

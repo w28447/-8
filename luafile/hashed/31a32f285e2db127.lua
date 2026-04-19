@@ -58,7 +58,7 @@ CoD.CamoFilterButtonList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 			return true
 		end
 	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( CamoFilterList )

@@ -27,7 +27,7 @@ CoD.TabbedScoreboardStatBox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.TintPC = TintPC
 	
 	local Value = LUI.UIText.new( 0.5, 0.5, -42, 42, 0.5, 0.5, -15, 15 )
-	Value:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	Value:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	Value:setTTF( "ttmussels_demibold" )
 	Value:setLetterSpacing( -1 )
 	Value:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

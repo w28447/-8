@@ -85,7 +85,7 @@ LUI.createMenu.PC_UI_FormationMenu = function ( f2_arg0, f2_arg1 )
 	self.ignoreCursor = true
 	
 	local Background = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	Background:setImage( RegisterImage( 0x4BF88A437F4C579 ) )
+	Background:setImage( RegisterImage( "uie_fe_cp_background" ) )
 	self:addElement( Background )
 	self.Background = Background
 	

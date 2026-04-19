@@ -36,7 +36,7 @@ CoD.SpecialistHeadquarters.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.MainInfoText = MainInfoText
 	
 	local DossierButton = CoD.DirectorSelectButtonSpecialistHeadquarters.new( f1_arg0, f1_arg1, 0.5, 0.5, -860, -464, 0.5, 0.5, -289, -149 )
-	DossierButton.Header:setText( LocalizeToUpperString( 0xAD5EF55000B9F90 ) )
+	DossierButton.Header:setText( LocalizeToUpperString( "menu/dossier" ) )
 	DossierButton:subscribeToGlobalModel( f1_arg1, "SpecialistHeadquarters", "ChosenSpecialistID", function ( model )
 		local f3_local0 = model:get()
 		if f3_local0 ~= nil then
@@ -326,7 +326,7 @@ CoD.SpecialistHeadquarters.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.PlayButton = PlayButton
 	
 	Specialists = CoD.SpecialistHeadquartersButton.new( f1_arg0, f1_arg1, 0.5, 0.5, 448, 860, 0.5, 0.5, -126.5, -59.5 )
-	Specialists.Header:setText( LocalizeToUpperString( 0xFF94A9EB646C873 ) )
+	Specialists.Header:setText( LocalizeToUpperString( "menu/specialists" ) )
 	Specialists:appendEventHandler( "on_session_start", function ( f40_arg0, f40_arg1 )
 		f40_arg1.menu = f40_arg1.menu or f1_arg0
 		CoD.Menu.UpdateButtonShownState( f40_arg0, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )

@@ -18,8 +18,8 @@ CoD.ChallengesCallingCardProfilerGlobal.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local CardIconBorder = LUI.UIImage.new( 0.5, 0.5, -262.5, 262.5, 0, 0, 0, 129 )
 	CardIconBorder:setAlpha( 0.15 )
-	CardIconBorder:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	CardIconBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	CardIconBorder:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	CardIconBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	CardIconBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	CardIconBorder:setupNineSliceShader( 12, 12 )
 	self:addElement( CardIconBorder )
@@ -121,8 +121,8 @@ CoD.ChallengesCallingCardProfilerGlobal.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local MasterBarBorder = LUI.UIImage.new( 0.5, 0.5, -247.5, 247.5, 0, 0, 294, 317 )
 	MasterBarBorder:setAlpha( 0.1 )
-	MasterBarBorder:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	MasterBarBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	MasterBarBorder:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	MasterBarBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	MasterBarBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	MasterBarBorder:setupNineSliceShader( 12, 12 )
 	self:addElement( MasterBarBorder )
@@ -130,7 +130,7 @@ CoD.ChallengesCallingCardProfilerGlobal.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local MasterBar = LUI.UIImage.new( 0.03, 0.97, 1, -1, 0, 0.03, 296, 294 )
 	MasterBar:setRGB( 1, 0.36, 0 )
-	MasterBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x910274CA3518744 ) )
+	MasterBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	MasterBar:setShaderVector( 1, 0, 0, 0, 0 )
 	MasterBar:setShaderVector( 2, 1, 0, 0, 0 )
 	MasterBar:setShaderVector( 3, 0, 0, 0, 0 )
@@ -188,7 +188,7 @@ CoD.ChallengesCallingCardProfilerGlobal.new = function ( f1_arg0, f1_arg1, f1_ar
 	local TitleBg = LUI.UIImage.new( 0.5, 0.5, -22.5, 22.5, 0, 0, 42, 87 )
 	TitleBg:setRGB( 0, 0, 0 )
 	TitleBg:setAlpha( 0.85 )
-	TitleBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE125638BF94665F ) )
+	TitleBg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	TitleBg:setShaderVector( 0, 0.02, 0.02, 0.02, 0.02 )
 	self:addElement( TitleBg )
 	self.TitleBg = TitleBg

@@ -59,7 +59,7 @@ CoD.AARTierRewardItemGlowAnimationEpic.new = function ( f1_arg0, f1_arg1, f1_arg
 	local CardCover = LUI.UIImage.new( 0, 1, -13, 13, 0, 1, -13, 13 )
 	CardCover:setAlpha( 0 )
 	CardCover:setImage( RegisterImage( 0xFAA6C81834660D3 ) )
-	CardCover:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	CardCover:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	CardCover:setShaderVector( 0, 0, 0, 0, 0 )
 	CardCover:setupNineSliceShader( 32, 32 )
 	CardCover:linkToElementModel( self, "rarity", true, function ( model )
@@ -74,7 +74,7 @@ CoD.AARTierRewardItemGlowAnimationEpic.new = function ( f1_arg0, f1_arg1, f1_arg
 	local fx = LUI.UIImage.new( 0, 0, -41, 350, 0, 0, -102, 528 )
 	fx:setAlpha( 0 )
 	fx:setImage( RegisterImage( 0x34A6AE39B472612 ) )
-	fx:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	fx:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	fx:linkToElementModel( self, "rarity", true, function ( model )
 		local f6_local0 = model:get()
 		if f6_local0 ~= nil then
@@ -87,7 +87,7 @@ CoD.AARTierRewardItemGlowAnimationEpic.new = function ( f1_arg0, f1_arg1, f1_arg
 	local fx2 = LUI.UIImage.new( 0, 0, -41, 350, 0, 0, -102, 528 )
 	fx2:setAlpha( 0 )
 	fx2:setImage( RegisterImage( 0xE99C0C0D9E5C860 ) )
-	fx2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	fx2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	fx2:linkToElementModel( self, "rarity", true, function ( model )
 		local f7_local0 = model:get()
 		if f7_local0 ~= nil then

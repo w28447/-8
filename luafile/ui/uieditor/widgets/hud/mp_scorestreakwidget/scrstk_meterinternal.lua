@@ -22,7 +22,7 @@ CoD.ScrStk_MeterInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	Fill:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
 	Fill:setXRot( 180 )
 	Fill:setImage( RegisterImage( 0xBECC85DF0ADD5A3 ) )
-	Fill:setMaterial( LUI.UIImage.GetCachedMaterial( 0x910274CA3518744 ) )
+	Fill:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	Fill:setShaderVector( 0, 1, 0, 0, 0 )
 	Fill:setShaderVector( 1, 0, 0, 0, 0 )
 	Fill:setShaderVector( 2, 1, 0, 0, 0 )
@@ -42,7 +42,7 @@ CoD.ScrStk_MeterInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	FocusMeterFill:setRGB( 0.15, 0.56, 0.88 )
 	FocusMeterFill:setAlpha( 0 )
 	FocusMeterFill:setImage( RegisterImage( 0xEA536493B5121C4 ) )
-	FocusMeterFill:setMaterial( LUI.UIImage.GetCachedMaterial( 0x910274CA3518744 ) )
+	FocusMeterFill:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	FocusMeterFill:setShaderVector( 0, 1, 0, 0, 0 )
 	FocusMeterFill:setShaderVector( 1, 0, 0, 0, 0 )
 	FocusMeterFill:setShaderVector( 2, 1, 0, 0, 0 )
@@ -53,7 +53,7 @@ CoD.ScrStk_MeterInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local CombatEfficiencyPulse = CoD.ScrStk_CombatEfficiencyPulse.new( f1_arg0, f1_arg1, 0.5, 0.5, -119, 113, 0, 1, 3, -3 )
 	CombatEfficiencyPulse:setAlpha( 0 )
-	CombatEfficiencyPulse:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	CombatEfficiencyPulse:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CombatEfficiencyPulse )
 	self.CombatEfficiencyPulse = CombatEfficiencyPulse
 	

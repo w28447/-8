@@ -14,7 +14,7 @@ CoD.PCSocialMenu_GenericButton_Container.new = function ( f1_arg0, f1_arg1, f1_a
 	self.Background = Background
 	
 	local Title = LUI.UIText.new( 0.05, 0.95, 0, 0, 0.5, 0.5, -8, 16 )
-	Title:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	Title:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	Title:setTTF( "ttmussels_demibold" )
 	Title:setLetterSpacing( 3 )
 	Title:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

@@ -85,7 +85,7 @@ CoD.SetBonusWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	HeaderGlow:setRGB( 0.42, 0.64, 0.28 )
 	HeaderGlow:setAlpha( 0.1 )
 	HeaderGlow:setImage( RegisterImage( 0xFAA6C81834660D3 ) )
-	HeaderGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	HeaderGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	HeaderGlow:setShaderVector( 0, 0, 0, 0, 0 )
 	HeaderGlow:setupNineSliceShader( 12, 12 )
 	self:addElement( HeaderGlow )

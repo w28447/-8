@@ -37,14 +37,14 @@ CoD.FullscreeenPupupSteamForm.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.DialogSpinner0 = DialogSpinner0
 	
 	local Title = LUI.UIText.new( 0, 0, 690, 990, 0, 0, 365, 437 )
-	Title:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	Title:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	Title:setTTF( "default" )
 	Title:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	self:addElement( Title )
 	self.Title = Title
 	
 	local Subtitle = LUI.UIText.new( 0, 0, 690, 1538, 0, 0, 435, 473 )
-	Subtitle:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	Subtitle:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	Subtitle:setTTF( "default" )
 	Subtitle:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Subtitle:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -52,14 +52,14 @@ CoD.FullscreeenPupupSteamForm.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.Subtitle = Subtitle
 	
 	local WorkingTitle = LUI.UIText.new( 0, 0, 690, 990, 0, 0, 365, 437 )
-	WorkingTitle:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	WorkingTitle:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	WorkingTitle:setTTF( "default" )
 	WorkingTitle:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	self:addElement( WorkingTitle )
 	self.WorkingTitle = WorkingTitle
 	
 	local DoneTitle = LUI.UIText.new( 0, 0, 690, 990, 0, 0, 365, 437 )
-	DoneTitle:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	DoneTitle:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	DoneTitle:setTTF( "default" )
 	DoneTitle:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	self:addElement( DoneTitle )
@@ -74,7 +74,7 @@ CoD.FullscreeenPupupSteamForm.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.ErrorTitle = ErrorTitle
 	
 	local ErrorSubtitle = LUI.UIText.new( 0, 0, 690, 1538, 0, 0, 435, 473 )
-	ErrorSubtitle:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	ErrorSubtitle:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	ErrorSubtitle:setTTF( "default" )
 	ErrorSubtitle:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	ErrorSubtitle:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -104,7 +104,7 @@ CoD.FullscreeenPupupSteamForm.__resetProperties = function ( f2_arg0 )
 	f2_arg0.ErrorSubtitle:setAlpha( 1 )
 	f2_arg0.Title:setAlpha( 1 )
 	f2_arg0.Subtitle:setAlpha( 1 )
-	f2_arg0.Subtitle:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	f2_arg0.Subtitle:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	f2_arg0.ErrorTitle:setAlpha( 0 )
 end
 

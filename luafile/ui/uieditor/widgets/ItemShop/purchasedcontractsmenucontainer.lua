@@ -19,7 +19,7 @@ CoD.PurchasedContractsMenuContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0.5, 0.5, -658, 658, 0.5, 0.5, -302, 328 )
 	NoiseTiledBacking:setAlpha( 0.4 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -28,7 +28,7 @@ CoD.PurchasedContractsMenuContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local DottedLineTop = LUI.UIImage.new( 0.5, 0.5, -658, 658, 0, 0, 221, 225 )
 	DottedLineTop:setAlpha( 0.35 )
-	DottedLineTop:setImage( RegisterImage( 0xB20AD7A31239369 ) )
+	DottedLineTop:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline_tiled" ) )
 	DottedLineTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DottedLineTop:setShaderVector( 0, 0, 0, 0, 0 )
 	DottedLineTop:setupNineSliceShader( 16, 4 )
@@ -37,7 +37,7 @@ CoD.PurchasedContractsMenuContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local DottedLineBtm = LUI.UIImage.new( 0.5, 0.5, -658, 658, 0, 0, 881, 885 )
 	DottedLineBtm:setAlpha( 0.35 )
-	DottedLineBtm:setImage( RegisterImage( 0xB20AD7A31239369 ) )
+	DottedLineBtm:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline_tiled" ) )
 	DottedLineBtm:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DottedLineBtm:setShaderVector( 0, 0, 0, 0, 0 )
 	DottedLineBtm:setupNineSliceShader( 16, 4 )
@@ -99,7 +99,7 @@ CoD.PurchasedContractsMenuContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 		end
 	end, function ( f4_arg0, f4_arg1, f4_arg2 )
 		if not IsMenuInState( f4_arg1, "NoContracts" ) then
-			CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

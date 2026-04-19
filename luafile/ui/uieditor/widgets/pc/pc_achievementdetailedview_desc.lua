@@ -22,7 +22,7 @@ CoD.PC_AchievementDetailedView_Desc.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local Name = LUI.UIText.new( 0, 1, 25, -25, 0, 0, 25, 50 )
 	Name:setRGB( 0.7, 0.67, 0.62 )
-	Name:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	Name:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	Name:setTTF( "ttmussels_demibold" )
 	Name:setLetterSpacing( 4 )
 	Name:setLineSpacing( 3 )
@@ -38,7 +38,7 @@ CoD.PC_AchievementDetailedView_Desc.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local Description = LUI.UIText.new( 0, 1, 25, -25, 0, 0, 71, 89 )
 	Description:setRGB( 0.49, 0.47, 0.45 )
-	Description:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	Description:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	Description:setTTF( "dinnext_regular" )
 	Description:setLetterSpacing( 1 )
 	Description:setLineSpacing( 3 )

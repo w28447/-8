@@ -52,7 +52,7 @@ CoD.CompetitiveOverviewRankBanner.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.rank = rank
 	
 	local firestreakflipbook = LUI.UIImage.new( 0.5, 0.5, -170, 170, 0.5, 0.5, -274, 66 )
-	firestreakflipbook:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9227A50BA2B8D21 ) )
+	firestreakflipbook:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	firestreakflipbook:setShaderVector( 0, 4, 4, 0, 0 )
 	firestreakflipbook:setShaderVector( 1, 8, 0, 0, 0 )
 	firestreakflipbook:subscribeToGlobalModel( f1_arg1, "LeaguePlay", "leaguePlayFirestreakIcon", function ( model )

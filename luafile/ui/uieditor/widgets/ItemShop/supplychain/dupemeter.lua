@@ -24,7 +24,7 @@ CoD.DupeMeter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 0, 171, 346, 0.09, 0.09, 0.5, 28.5 )
 	NoiseTiledBacking:setAlpha( 0.5 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -52,7 +52,7 @@ CoD.DupeMeter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	local Number = LUI.UIText.new( 0, 0, 304, 343, 0, 0, 6, 28 )
 	Number:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	Number:setAlpha( 0 )
-	Number:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	Number:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	Number:setTTF( "ttmussels_regular" )
 	Number:setLetterSpacing( 1 )
 	Number:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

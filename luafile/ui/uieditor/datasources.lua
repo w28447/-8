@@ -3593,7 +3593,7 @@ DataSources.DemoHighlightReelSettingsButtonList = ListHelper_SetupDataSource( "D
 	if f195_local1 == false then
 		local f195_local9 = {}
 		table.insert( f195_local9, {
-			name = 0x5C16E02B211A4F4,
+			name = "menu/no",
 			value = Enum.demoHighlightReelGameResultFilter[0x4C83F1397F960C8]
 		} )
 		table.insert( f195_local9, {
@@ -5069,7 +5069,7 @@ DataSources.XPProgressionBar = {
 		local f275_local8 = ""
 		if not (f275_local0 or f275_local5.nextRank <= CoD.RankUtility.GetRankCap()) or f275_local0 and f275_local5.nextRank >= CoD.RankUtility.GetParagonRankCap() then
 			f275_local8 = Engine[0xF9F1239CFD921FE]( 0x648FC67DF4BF35E )
-			f275_local5.nextRankIconMaterialName = 0x7615068F50B3D66
+			f275_local5.nextRankIconMaterialName = "blacktransparent"
 		elseif f275_local5.displayLevelForNextRank > 0 then
 			f275_local8 = Engine[0xF9F1239CFD921FE]( 0xBC1D826D76D607F, f275_local5.displayLevelForNextRank )
 		end
@@ -7612,7 +7612,7 @@ DataSources.CACCustomizationTabs = DataSourceHelpers.ListSetup( "CACCustomizatio
 		f416_local5( 0x55D96CC762EABDD, Enum.WeaponOptionFilter[0xA77C317111C4F95] )
 		f416_local5( 0xB06081B8B4567F2, Enum.WeaponOptionFilter[0xA37D61710E68BE9] )
 		if IsLive() then
-			f416_local5( 0x29C903C6DF90D6F, Enum.WeaponOptionFilter[0xA52D61710FD53A1] )
+			f416_local5( "menu/black_market", Enum.WeaponOptionFilter[0xA52D61710FD53A1] )
 		end
 	else
 		if not IsLive() or CoD.CACUtility.WeaponsWithNoMPCamos[f416_local4] == nil then
@@ -7622,7 +7622,7 @@ DataSources.CACCustomizationTabs = DataSourceHelpers.ListSetup( "CACCustomizatio
 			f416_local5( 0xB06081B8B4567F2, Enum.WeaponOptionFilter[0xA37D61710E68BE9] )
 		end
 		if IsLive() and CoD.BlackMarketUtility.WeaponsWithNoBMCamos[f416_local4] == nil then
-			f416_local5( 0x29C903C6DF90D6F, Enum.WeaponOptionFilter[0xA52D61710FD53A1] )
+			f416_local5( "menu/black_market", Enum.WeaponOptionFilter[0xA52D61710FD53A1] )
 		end
 	end
 	f416_local5( 0x843D640BA217F60, Enum.WeaponOptionFilter[0x17115CF3063829F] )
@@ -8001,7 +8001,7 @@ DataSources.CustomGamesOptionsDeleteButtonList = {
 				action = DeleteCustomGameYes
 			},
 			{
-				displayText = 0xC2E92C54C2BE289,
+				displayText = "menu/cancel",
 				displayImage = "",
 				displayDesc = "MENU_CUSTOMGAMES_CANCEL_DESC",
 				action = DeleteCustomGameNo
@@ -8029,13 +8029,13 @@ DataSources.CustomGamesLoadOptionsButtonList = {
 		f435_arg1.optionModels = {}
 		local f435_local0 = {
 			{
-				displayText = 0xDFD294FC69F682,
+				displayText = "menu/yes",
 				displayImage = "",
 				displayDesc = 0x0,
 				action = LoadFileshareCustomGame
 			},
 			{
-				displayText = 0x5C16E02B211A4F4,
+				displayText = "menu/no",
 				displayImage = "",
 				displayDesc = 0x0,
 				action = GoBack
@@ -8114,7 +8114,7 @@ DataSources.ChangeGameModeNavSecondary = {
 				action = nil
 			},
 			{
-				text = 0x5F155722E34DA5C,
+				text = "menu/recent",
 				image = "uie_t7_menu_startmenu_media_trending",
 				description = 0x0,
 				action = nil
@@ -8156,7 +8156,7 @@ DataSources.CustomGamesList = {
 				action = OpenTrendingCustomGames
 			},
 			{
-				text = Engine[0xF9F1239CFD921FE]( 0x5F155722E34DA5C ),
+				text = Engine[0xF9F1239CFD921FE]( "menu/recent" ),
 				image = "img_t7_menu_startmenu_media_trending",
 				description = Engine[0xF9F1239CFD921FE]( 0x8B650C1DBC3BABD ),
 				action = OpenrRecentCustomGames
@@ -8961,7 +8961,7 @@ DataSources.FileshareOptionsButtonList = ListHelper_SetupDataSource( "FileshareO
 	if not f474_local1 and f474_local3 ~= Engine.GetXUID64( f474_arg0 ) then
 		local f474_local4 = Engine.GetPlayerInfo( f474_arg0, f474_local3 )
 		table.insert( f474_local0, {
-			displayText = 0x74834ABE9827A3,
+			displayText = "menu/report_player",
 			displayImage = "uie_t7_icon_error_overlays",
 			displayDesc = 0x804C18CC814A475,
 			action = ShowReportPlayerDialog,
@@ -9009,7 +9009,7 @@ DataSources.FileshareOptionsDeleteButtonList = {
 				action = CoD.FileshareUtility.DeleteYes
 			},
 			{
-				displayText = 0xC2E92C54C2BE289,
+				displayText = "menu/cancel",
 				displayImage = "",
 				displayDesc = 0x38E4CB51F0AB9B7,
 				action = CoD.FileshareUtility.DeleteNo
@@ -10081,7 +10081,7 @@ DataSources.EmblemsList = {
 				f546_arg0.subTitle = ""
 			else
 				f546_arg0.emblemName = Engine[0xF9F1239CFD921FE]( 0xC4863A6FBA65F63 )
-				f546_arg0.emblemTitle = Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F )
+				f546_arg0.emblemTitle = Engine[0xF9F1239CFD921FE]( "menu/new" )
 				f546_arg0.emblemTextEntry = Engine[0xF9F1239CFD921FE]( 0x5D39DC4A7060698, CoD.CraftUtility.Emblems.GetTotalUsedEmblems( f545_arg0, Enum.StorageFileType[0x791C91FD2327632], nil ) + 1 )
 				f546_arg0.subTitle = Engine[0xF9F1239CFD921FE]( 0x9073B1D7922BADD )
 			end
@@ -10094,7 +10094,7 @@ DataSources.EmblemsList = {
 		if CoD.CraftUtility.Emblems.IsEditor( f545_arg1.menu ) and #f545_arg1.emblemList == f545_local1 + 1 and f545_arg2 == 1 then
 			f545_local4 = f545_local0:create( "isNonClickableEmblem" )
 			f545_local4:set( 1 )
-			f545_local3.emblemTitle = Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F )
+			f545_local3.emblemTitle = Engine[0xF9F1239CFD921FE]( "menu/new" )
 			f545_local3.emblemName = Engine[0xF9F1239CFD921FE]( 0xC4863A6FBA65F63 )
 			f545_local3.emblemTextEntry = "Emblem"
 			f545_local3.subTitle = Engine[0xF9F1239CFD921FE]( 0x1B943DE5127FAE0 )
@@ -10743,7 +10743,7 @@ DataSources.ClanTagPromptList = DataSourceHelpers.ListSetup( "ClanTagPromptList"
 		},
 		{
 			models = {
-				displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0xC2E92C54C2BE289 ) )
+				displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "menu/cancel" ) )
 			},
 			properties = {
 				action = function ( f577_arg0, f577_arg1, f577_arg2, f577_arg3, f577_arg4 )

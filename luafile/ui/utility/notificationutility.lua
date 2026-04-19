@@ -353,7 +353,7 @@ CoD.NotificationUtility.CreateNotification.WeaponLevelUp = function ( f15_arg0, 
 			return CoD.WeaponLevelUpNotification.new( f15_arg0.menu, f15_arg0.controller )
 		end
 	end
-	f15_local1 = 0x7615068F50B3D66
+	f15_local1 = "blacktransparent"
 end
 
 CoD.NotificationUtility.CreateNotification.RankUp = function ( f16_arg0, f16_arg1, f16_arg2 )
@@ -749,7 +749,7 @@ CoD.NotificationUtility.InitToastContainer = function ( f30_arg0, f30_arg1, f30_
 		end
 		local f31_local3 = f31_arg0.ToastContentLarge
 		if f31_local3 then
-			if f31_arg1.contentIcon == 0x7615068F50B3D66 then
+			if f31_arg1.contentIcon == "blacktransparent" then
 				f31_local3:setState( f30_arg1, "NoImage" )
 			else
 				f31_local3:setState( f30_arg1, "DefaultState" )
@@ -871,7 +871,7 @@ CoD.NotificationUtility.RewardCreateRewardWidget = function ( f42_arg0, f42_arg1
 		f42_local0:set( f42_arg1.imageName )
 	else
 		f42_local0 = f42_arg2:create( "icon" )
-		f42_local0:set( 0x7615068F50B3D66 )
+		f42_local0:set( "blacktransparent" )
 	end
 	f42_local0 = f42_arg2:create( "title" )
 	f42_local0:set( CoD.BaseUtility.LocalizeIfXHash( f42_arg1.text ) )
@@ -960,7 +960,7 @@ CoD.NotificationUtility.RewardShowNextItem = function ( f45_arg0, f45_arg1 )
 end
 
 CoD.NotificationUtility.ReadyEventsPostLoad = function ( f47_arg0, f47_arg1 )
-	local f47_local0 = RegisterImage( 0x7615068F50B3D66 )
+	local f47_local0 = RegisterImage( "blacktransparent" )
 	f47_arg0.playNotification = function ( f48_arg0, f48_arg1 )
 		f48_arg0.currentNotification = f48_arg1
 		f48_arg0.Scorestreak.ScorestreakInfo.Text:setText( f48_arg1.title or "" )

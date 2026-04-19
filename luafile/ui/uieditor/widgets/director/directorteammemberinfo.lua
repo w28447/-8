@@ -22,7 +22,7 @@ CoD.DirectorTeamMemberInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.SceneBlur = SceneBlur
 	
 	local BackingBorder = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	BackingBorder:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	BackingBorder:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	BackingBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	BackingBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingBorder:setupNineSliceShader( 196, 88 )
@@ -30,7 +30,7 @@ CoD.DirectorTeamMemberInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.BackingBorder = BackingBorder
 	
 	local BackingBorder2 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	BackingBorder2:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	BackingBorder2:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	BackingBorder2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	BackingBorder2:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingBorder2:setupNineSliceShader( 196, 88 )
@@ -39,7 +39,7 @@ CoD.DirectorTeamMemberInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local BackingEmblem = LUI.UIImage.new( 0, 0, 3, 82, 0, 0, 3, 82 )
 	BackingEmblem:setAlpha( 0.7 )
-	BackingEmblem:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	BackingEmblem:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	BackingEmblem:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	BackingEmblem:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingEmblem:setupNineSliceShader( 196, 88 )
@@ -136,7 +136,7 @@ CoD.DirectorTeamMemberInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.clantag = clantag
 	
 	local LeaderBacking = CoD.DirectorLobbyLeader.new( f1_arg0, f1_arg1, 0, 0, 4, 18, 0.5, 1.41, -38.5, -38.5 )
-	LeaderBacking:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	LeaderBacking:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	LeaderBacking:linkToElementModel( self, "info", true, function ( model )
 		local f7_local0 = model:get()
 		if f7_local0 ~= nil then
@@ -179,14 +179,14 @@ CoD.DirectorTeamMemberInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local SelectionOverlay = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	SelectionOverlay:setAlpha( 0 )
-	SelectionOverlay:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	SelectionOverlay:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( SelectionOverlay )
 	self.SelectionOverlay = SelectionOverlay
 	
 	local FrontendFrameSelected = LUI.UIImage.new( 0, 1, -4, 4, 0, 1, -4, 4 )
 	FrontendFrameSelected:setAlpha( 0 )
-	FrontendFrameSelected:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FrontendFrameSelected:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrameSelected:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FrontendFrameSelected:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrameSelected:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrameSelected:setupNineSliceShader( 12, 12 )
 	self:addElement( FrontendFrameSelected )
@@ -194,8 +194,8 @@ CoD.DirectorTeamMemberInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local FrontendFrameSelectedGlow = LUI.UIImage.new( 0.01, 0.99, -8, 8, 0.05, 0.95, -8, 8 )
 	FrontendFrameSelectedGlow:setAlpha( 0 )
-	FrontendFrameSelectedGlow:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FrontendFrameSelectedGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrameSelectedGlow:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FrontendFrameSelectedGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrameSelectedGlow:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrameSelectedGlow:setupNineSliceShader( 12, 12 )
 	self:addElement( FrontendFrameSelectedGlow )

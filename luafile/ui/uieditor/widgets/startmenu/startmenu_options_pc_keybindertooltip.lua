@@ -14,7 +14,7 @@ CoD.StartMenu_Options_PC_KeyBinderTooltip.new = function ( f1_arg0, f1_arg1, f1_
 	self.fullBacking = fullBacking
 	
 	local headerText = LUI.UIText.new( 0, 0, 11, 300, 0, 0, 9, 47 )
-	headerText:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	headerText:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	headerText:setTTF( "dinnext_regular" )
 	headerText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	headerText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -23,7 +23,7 @@ CoD.StartMenu_Options_PC_KeyBinderTooltip.new = function ( f1_arg0, f1_arg1, f1_
 	
 	local descText = LUI.UIText.new( 0, 0, 11, 300, 0, 0, 47, 77 )
 	descText:setRGB( 0.78, 0.78, 0.78 )
-	descText:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	descText:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	descText:setTTF( "dinnext_regular" )
 	descText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	descText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

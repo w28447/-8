@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/aar_t8/aarcommonbacking" )
-require( "x64:1a70a3d7e2725e9" )
+require( "ui/uieditor/widgets/aar_t8/merit/meritreportwidget" )
 require( "ui/uieditor/widgets/notifications/xp/doublexpicon" )
 require( "x64:6ee653ade3452f5" )
 

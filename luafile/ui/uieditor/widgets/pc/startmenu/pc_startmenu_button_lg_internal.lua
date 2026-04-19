@@ -25,7 +25,7 @@ CoD.PC_StartMenu_Button_LG_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.5 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -34,7 +34,7 @@ CoD.PC_StartMenu_Button_LG_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local NoiseTiledBackingAdd = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBackingAdd:setAlpha( 0.2 )
-	NoiseTiledBackingAdd:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBackingAdd:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBackingAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	NoiseTiledBackingAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBackingAdd:setupNineSliceShader( 196, 88 )
@@ -65,7 +65,7 @@ CoD.PC_StartMenu_Button_LG_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local TitleBgTexture = LUI.UIImage.new( 0, 1, 0, 0, 0.5, 0.5, -26.5, 22.5 )
 	TitleBgTexture:setAlpha( 0.5 )
-	TitleBgTexture:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TitleBgTexture:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TitleBgTexture:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TitleBgTexture:setShaderVector( 0, 0, 0, 0, 0 )
 	TitleBgTexture:setupNineSliceShader( 196, 88 )
@@ -86,7 +86,7 @@ CoD.PC_StartMenu_Button_LG_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local ButtonStateText = LUI.UIText.new( 0, 1, 0, 0, 0.5, 0.5, -18.5, 18.5 )
 	ButtonStateText:setAlpha( 0.5 )
-	ButtonStateText:setText( Engine[0xF9F1239CFD921FE]( 0x496C6F3083248E7 ) )
+	ButtonStateText:setText( Engine[0xF9F1239CFD921FE]( "menu/online_only" ) )
 	ButtonStateText:setTTF( "ttmussels_regular" )
 	ButtonStateText:setLetterSpacing( 4 )
 	ButtonStateText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -103,7 +103,7 @@ CoD.PC_StartMenu_Button_LG_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	NameEntryBorder:setRGB( 0.57, 0.57, 0.57 )
 	NameEntryBorder:setAlpha( 0 )
 	NameEntryBorder:setImage( RegisterImage( 0xF1E3082B39E99BB ) )
-	NameEntryBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	NameEntryBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	NameEntryBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	NameEntryBorder:setupNineSliceShader( 6, 6 )
 	self:addElement( NameEntryBorder )
@@ -111,8 +111,8 @@ CoD.PC_StartMenu_Button_LG_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local NameEntrySelected = LUI.UIImage.new( 0.5, 0.5, -82.5, 82.5, 0.5, 0.5, -19, 35 )
 	NameEntrySelected:setAlpha( 0 )
-	NameEntrySelected:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	NameEntrySelected:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	NameEntrySelected:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	NameEntrySelected:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	NameEntrySelected:setShaderVector( 0, 0, 0, 0, 0 )
 	NameEntrySelected:setupNineSliceShader( 6, 6 )
 	self:addElement( NameEntrySelected )

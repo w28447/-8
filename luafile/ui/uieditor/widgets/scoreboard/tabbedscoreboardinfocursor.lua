@@ -20,7 +20,7 @@ CoD.TabbedScoreboardInfoCursor.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local CursorGlow = LUI.UIImage.new( 0, 0, 0, 30, 0, 0, 0, 30 )
 	CursorGlow:setImage( RegisterImage( 0xF6FD4C7B4310756 ) )
-	CursorGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	CursorGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CursorGlow )
 	self.CursorGlow = CursorGlow
 	

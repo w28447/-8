@@ -10,7 +10,7 @@ CoD.CommonBackingWithBrackets.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.soundSet = "none"
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -23,7 +23,7 @@ CoD.CommonBackingWithBrackets.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local BGDotPatternLarge = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BGDotPatternLarge:setAlpha( 0.02 )
-	BGDotPatternLarge:setImage( RegisterImage( 0xFC21A8215EA012B ) )
+	BGDotPatternLarge:setImage( RegisterImage( "uie_ui_menu_common_button_bg_pattern_large" ) )
 	BGDotPatternLarge:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	BGDotPatternLarge:setShaderVector( 0, 0, 0, 0, 0 )
 	BGDotPatternLarge:setupNineSliceShader( 4, 4 )
@@ -32,8 +32,8 @@ CoD.CommonBackingWithBrackets.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local FrameBorder = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	FrameBorder:setAlpha( 0.05 )
-	FrameBorder:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrameBorder:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrameBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FrameBorder:setupNineSliceShader( 12, 12 )
 	self:addElement( FrameBorder )
@@ -42,8 +42,8 @@ CoD.CommonBackingWithBrackets.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local infoBracketTop = LUI.UIImage.new( 0, 1, -1, 1, 0, 0, -1, 7 )
 	infoBracketTop:setAlpha( 0.08 )
 	infoBracketTop:setZRot( 180 )
-	infoBracketTop:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	infoBracketTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	infoBracketTop:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	infoBracketTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	infoBracketTop:setShaderVector( 0, 0, 0, 0, 0 )
 	infoBracketTop:setupNineSliceShader( 16, 4 )
 	self:addElement( infoBracketTop )
@@ -51,8 +51,8 @@ CoD.CommonBackingWithBrackets.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local infoBracketBot = LUI.UIImage.new( 0, 1, -1, 1, 1, 1, -7, 1 )
 	infoBracketBot:setAlpha( 0.08 )
-	infoBracketBot:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	infoBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	infoBracketBot:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	infoBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	infoBracketBot:setShaderVector( 0, 0, 0, 0, 0 )
 	infoBracketBot:setupNineSliceShader( 16, 4 )
 	self:addElement( infoBracketBot )

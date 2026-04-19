@@ -423,7 +423,7 @@ DataSources.PCMOTDOptions = DataSourceHelpers.ListSetup( "PCMOTDOptions", functi
 				table.insert( f25_local0, CoD.MOTDUtility.packageMOTDButtonData( 0x977A022B8323362, f25_local3, f25_local6 ) )
 			end
 			if not f25_local7() then
-				table.insert( f25_local0, CoD.MOTDUtility.packageMOTDButtonData( 0x29C903C6DF90D6F, f25_local3, f25_local7 ) )
+				table.insert( f25_local0, CoD.MOTDUtility.packageMOTDButtonData( "menu/black_market", f25_local3, f25_local7 ) )
 			end
 			if not f25_local8() then
 				table.insert( f25_local0, CoD.MOTDUtility.packageMOTDButtonData( 0x90379DA9EEC8DB9, f25_local3, f25_local8 ) )
@@ -444,10 +444,10 @@ DataSources.PCMOTDOptions = DataSourceHelpers.ListSetup( "PCMOTDOptions", functi
 				table.insert( f25_local0, CoD.MOTDUtility.packageMOTDButtonData( 0xE1FEFD9287CA008, f25_local3, f25_local13 ) )
 			end
 			if not f25_local14() then
-				table.insert( f25_local0, CoD.MOTDUtility.packageMOTDButtonData( 0xDDDA371285672BD, f25_local3, f25_local14 ) )
+				table.insert( f25_local0, CoD.MOTDUtility.packageMOTDButtonData( "menu/play", f25_local3, f25_local14 ) )
 			end
 		end
-		table.insert( f25_local0, CoD.MOTDUtility.packageMOTDButtonData( 0x6C253CF816B40B5, f25_local4, AlwaysFalse ) )
+		table.insert( f25_local0, CoD.MOTDUtility.packageMOTDButtonData( "menu/close", f25_local4, AlwaysFalse ) )
 	end
 	return f25_local0
 end, true )
@@ -792,7 +792,7 @@ CoD.MOTDUtility.FeatureCard_AddFeatureCardsByLocation = function ( f63_arg0, f63
 					id = f63_local6.messageID,
 					name = f63_local6.title,
 					descriptionText = f63_local1( f63_local6, f63_arg2 ),
-					iconBackground = f63_local6.image or 0x7615068F50B3D66,
+					iconBackground = f63_local6.image or "blacktransparent",
 					action = f63_local7,
 					param = f63_local8,
 					actionString = f63_local6.action,
@@ -864,7 +864,7 @@ CoD.MOTDUtility.FeatureCard_SetPopupActionButtonName = function ( f68_arg0, f68_
 		elseif f68_local1 == "registration" then
 			CoD.Menu.SetButtonLabel( f68_arg3, Enum.LUIButton[0xC083113BC81F23F], 0x1AF6B0A327DB28A )
 		elseif f68_local1 == "depot" then
-			CoD.Menu.SetButtonLabel( f68_arg3, Enum.LUIButton[0xC083113BC81F23F], 0x29C903C6DF90D6F )
+			CoD.Menu.SetButtonLabel( f68_arg3, Enum.LUIButton[0xC083113BC81F23F], "menu/black_market" )
 		elseif f68_local1 == "shop" then
 			CoD.Menu.SetButtonLabel( f68_arg3, Enum.LUIButton[0xC083113BC81F23F], 0x90379DA9EEC8DB9 )
 		end

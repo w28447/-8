@@ -13,7 +13,7 @@ CoD.DossierProgressBulletPoint.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local DossierProgressBulletPoint = LUI.UIText.new( 0, 0, 37, 250, 0, 0, 5, 26 )
 	DossierProgressBulletPoint:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	DossierProgressBulletPoint:setAlpha( 0.5 )
-	DossierProgressBulletPoint:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	DossierProgressBulletPoint:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	DossierProgressBulletPoint:setTTF( "ttmussels_regular" )
 	DossierProgressBulletPoint:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	self:addElement( DossierProgressBulletPoint )
@@ -30,7 +30,7 @@ CoD.DossierProgressBulletPoint.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local Empty = LUI.UIImage.new( 0, 0, 0.5, 33.5, 0, 0, -1.5, 31.5 )
 	Empty:setScale( 0.67, 0.67 )
 	Empty:setImage( RegisterImage( 0xF53DA84C7B770BF ) )
-	Empty:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Empty:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Empty )
 	self.Empty = Empty
 	
@@ -50,13 +50,13 @@ CoD.DossierProgressBulletPoint.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	Glow:setRGB( 0.88, 0.8, 0.45 )
 	Glow:setAlpha( 0 )
 	Glow:setImage( RegisterImage( 0x1078C36A022A4FE ) )
-	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
 	
 	local CornerDots = LUI.UIImage.new( 0, 0, 3.5, 30.5, 0, 0, 1.5, 28.5 )
 	CornerDots:setScale( 1.5, 1.5 )
-	CornerDots:setImage( RegisterImage( 0x1735E8FCAB0ED9 ) )
+	CornerDots:setImage( RegisterImage( "uie_ui_menu_cac_allocation_pip_dots" ) )
 	self:addElement( CornerDots )
 	self.CornerDots = CornerDots
 	

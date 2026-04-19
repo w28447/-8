@@ -28,7 +28,7 @@ CoD.ArchivesVideoButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local TiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TiledBacking:setAlpha( 0.5 )
-	TiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking:setupNineSliceShader( 196, 88 )
@@ -37,7 +37,7 @@ CoD.ArchivesVideoButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local TiledBackingAdd = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TiledBackingAdd:setAlpha( 0 )
-	TiledBackingAdd:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBackingAdd:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBackingAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledBackingAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBackingAdd:setupNineSliceShader( 196, 88 )
@@ -58,7 +58,7 @@ CoD.ArchivesVideoButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local BracketL = LUI.UIImage.new( 1, 1, -105.5, -97.5, 0.5, 0.5, -10.5, 13.5 )
 	BracketL:setAlpha( 0 )
 	BracketL:setImage( RegisterImage( 0x6AA0A70F33D3978 ) )
-	BracketL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	BracketL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BracketL )
 	self.BracketL = BracketL
 	
@@ -66,14 +66,14 @@ CoD.ArchivesVideoButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	BracketR:setAlpha( 0 )
 	BracketR:setZRot( 180 )
 	BracketR:setImage( RegisterImage( 0x6AA0A70F33D3978 ) )
-	BracketR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	BracketR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BracketR )
 	self.BracketR = BracketR
 	
 	local LockedIcon = LUI.UIImage.new( 1, 1, -127.5, 0.5, 0.5, 0.5, -64, 64 )
 	LockedIcon:setAlpha( 0 )
 	LockedIcon:setScale( 0.25, 0.25 )
-	LockedIcon:setImage( RegisterImage( 0xE1E7C490B2BA4FB ) )
+	LockedIcon:setImage( RegisterImage( "uie_ui_icon_global_lock" ) )
 	LockedIcon:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	LockedIcon:setShaderVector( 0, 4, 0, 0, 0 )
 	self:addElement( LockedIcon )

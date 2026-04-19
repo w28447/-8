@@ -34,7 +34,7 @@ CoD.AARTierRewardColumnHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.CommonOuterGlow01 = CommonOuterGlow01
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -49,7 +49,7 @@ CoD.AARTierRewardColumnHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local CommonFrame01 = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	CommonFrame01:setAlpha( 0 )
 	CommonFrame01:setImage( RegisterImage( 0xCA6E5C175806396 ) )
-	CommonFrame01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	CommonFrame01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	CommonFrame01:setShaderVector( 0, 0, 0, 0, 0 )
 	CommonFrame01:setupNineSliceShader( 8, 8 )
 	self:addElement( CommonFrame01 )
@@ -98,7 +98,7 @@ CoD.AARTierRewardColumnHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local Tier = LUI.UIText.new( 0, 1, 3, -3, 0.5, 0.5, -9, 9 )
 	Tier:setRGB( 0.73, 0.74, 0.76 )
-	Tier:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	Tier:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	Tier:setTTF( "ttmussels_demibold" )
 	Tier:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	Tier:setShaderVector( 0, 1, 0, 0, 0 )

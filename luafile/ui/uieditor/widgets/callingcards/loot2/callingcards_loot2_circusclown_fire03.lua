@@ -10,7 +10,7 @@ CoD.callingcards_loot2_circusclown_fire03.new = function ( f1_arg0, f1_arg1, f1_
 	
 	local fire03 = LUI.UIImage.new( 0, 0, 0, 120, 0, 0, 24, 288 )
 	fire03:setImage( RegisterImage( 0x6A790D54B4178CC ) )
-	fire03:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	fire03:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( fire03 )
 	self.fire03 = fire03
 	

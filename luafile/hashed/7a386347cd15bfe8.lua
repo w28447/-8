@@ -41,7 +41,7 @@ CoD.SurveyResponseListItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 		end
 	end, function ( f5_arg0, f5_arg1, f5_arg2 )
 		if not CoD.ModelUtility.IsGlobalDataSourceModelValueTrue( f5_arg2, "SurveyQuestion", "answered" ) then
-			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

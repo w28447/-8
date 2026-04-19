@@ -216,7 +216,7 @@ LUI.createMenu.WZPersonalizeWeapon = function ( f1_arg0, f1_arg1 )
 			return true
 		end
 	end, function ( f15_arg0, f15_arg1, f15_arg2 )
-		CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( f16_arg0, f16_arg1, f16_arg2, f16_arg3 )

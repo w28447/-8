@@ -20,13 +20,13 @@ CoD.ui_icon_callingcards_dystopian_headglow.new = function ( f1_arg0, f1_arg1, f
 	
 	local eyeglow = LUI.UIImage.new( 0, 0, -3.5, 60.5, 0, 0, 20, 84 )
 	eyeglow:setImage( RegisterImage( 0x6DE7B21C34ECCEE ) )
-	eyeglow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	eyeglow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( eyeglow )
 	self.eyeglow = eyeglow
 	
 	local eyeglow2 = LUI.UIImage.new( 0, 0, 20.5, 84.5, 0, 0, 22, 86 )
 	eyeglow2:setImage( RegisterImage( 0x6DE7B21C34ECCEE ) )
-	eyeglow2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	eyeglow2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( eyeglow2 )
 	self.eyeglow2 = eyeglow2
 	

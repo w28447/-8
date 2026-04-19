@@ -19,7 +19,7 @@ CoD.StartMenu_ChangeSpecialist_CT.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local specialistRespawnDesc = LUI.UIText.new( 0.5, 0.5, -281.5, 281.5, 0.5, 0.5, -246, -213 )
 	specialistRespawnDesc:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	specialistRespawnDesc:setZoom( 10 )
-	specialistRespawnDesc:setText( LocalizeToUpperString( 0x666D479022F3E32 ) )
+	specialistRespawnDesc:setText( LocalizeToUpperString( "menu/specialist" ) )
 	specialistRespawnDesc:setTTF( "ttmussels_demibold" )
 	specialistRespawnDesc:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	specialistRespawnDesc:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

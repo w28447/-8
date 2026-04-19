@@ -86,7 +86,7 @@ CoD.CustomClassTabs.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 		CoD.GridAndListUtility.DoBumperGridButton( f5_arg1, f5_arg2, false )
 		return true
 	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( right )
@@ -130,7 +130,7 @@ CoD.CustomClassTabs.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 		CoD.GridAndListUtility.DoBumperGridButton( f10_arg1, f10_arg2, true )
 		return true
 	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( left )

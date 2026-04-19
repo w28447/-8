@@ -10,21 +10,21 @@ CoD.vhud_ModDNITime.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local ModDNI = LUI.UIImage.new( 0, 0, 21, 57, 0, 0, 24, 60 )
 	ModDNI:setImage( RegisterImage( 0xA99159E8773B43E ) )
-	ModDNI:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	ModDNI:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ModDNI )
 	self.ModDNI = ModDNI
 	
 	local ModDNIBracketB = LUI.UIImage.new( 0, 0, 15, 63, 0, 0, 45, 69 )
 	ModDNIBracketB:setAlpha( 0.2 )
 	ModDNIBracketB:setImage( RegisterImage( 0xAA0E9F848AD21D6 ) )
-	ModDNIBracketB:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	ModDNIBracketB:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ModDNIBracketB )
 	self.ModDNIBracketB = ModDNIBracketB
 	
 	local ModDNIBracketT = LUI.UIImage.new( 0, 0, 15, 63, 0, 0, 12, 36 )
 	ModDNIBracketT:setAlpha( 0.2 )
 	ModDNIBracketT:setImage( RegisterImage( 0xAA0DBF848AD0A0C ) )
-	ModDNIBracketT:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	ModDNIBracketT:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ModDNIBracketT )
 	self.ModDNIBracketT = ModDNIBracketT
 	
@@ -46,7 +46,7 @@ CoD.vhud_ModDNITime.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local ModDNI0 = LUI.UIImage.new( 0, 0, 14, 65, 0, 0, 16, 67 )
 	ModDNI0:setAlpha( 0 )
 	ModDNI0:setImage( RegisterImage( 0xA99159E8773B43E ) )
-	ModDNI0:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	ModDNI0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ModDNI0 )
 	self.ModDNI0 = ModDNI0
 	

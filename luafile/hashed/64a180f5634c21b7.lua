@@ -21,7 +21,7 @@ CoD.WZReinsertionPassengerCount.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 1, 1, -1800, -1673, 0, 0, 21, 90 )
 	NoiseTiledBacking:setAlpha( 0 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -109,7 +109,7 @@ CoD.WZReinsertionPassengerCount.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	border:setRGB( 0.07, 0.07, 0.07 )
 	border:setAlpha( 0 )
 	border:setImage( RegisterImage( 0xA3C76B80B69874D ) )
-	border:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	border:setShaderVector( 0, 0, 0, 0, 0 )
 	border:setupNineSliceShader( 12, 16 )
 	self:addElement( border )

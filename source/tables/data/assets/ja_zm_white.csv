@@ -129,7 +129,7 @@ localizeentry,#hash_32ffa10a8441dc9
 localizeentry,#hash_3300510a844307a
 localizeentry,#hash_3346a327a4a83f8
 localizeentry,#hash_34a2d35ea47fb45
-localizeentry,d#hash_3563fad2acf2d91
+localizeentry,d#menu/paused
 localizeentry,#hash_357151a1aa7e2a8
 localizeentry,#hash_3571b1a1aa7ecda
 localizeentry,#hash_3571c1a1aa7ee8d
@@ -3735,7 +3735,7 @@ localizeentry,#hash_53c797a1e4ddef5f
 localizeentry,#hash_53ef1b9ec0b4d854
 localizeentry,#hash_53f4514d440c7816
 localizeentry,#hash_53f9aac41c4fa384
-localizeentry,d#hash_5400a284adf5eac0
+localizeentry,d#zmtrials/trial_completed
 localizeentry,#hash_5419a1693d9888e0
 localizeentry,#hash_5420600a6e932508
 localizeentry,#hash_5420620a6e93286e
@@ -4874,7 +4874,7 @@ localizeentry,d#hash_70b9723e40288f9d
 localizeentry,#hash_70c531248fab2b5d
 localizeentry,#hash_70d7580a1876f8e0
 localizeentry,#hash_70d8170b897c02c6
-localizeentry,d#hash_70dfd294fc69f682
+localizeentry,d#menu/yes
 localizeentry,#hash_71016e43b6fe0570
 localizeentry,d#zombie/need_power
 localizeentry,#hash_71206ef74118ac38

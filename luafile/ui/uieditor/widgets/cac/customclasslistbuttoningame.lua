@@ -43,7 +43,7 @@ CoD.CustomClassListButtonInGame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local Equipped = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Equipped:setAlpha( 0 )
 	Equipped:setImage( RegisterImage( 0x8D73658E1267A41 ) )
-	Equipped:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Equipped:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Equipped )
 	self.Equipped = Equipped
 	

@@ -54,7 +54,7 @@ CoD.PrematchCountdown.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local FactionIcon = LUI.UIImage.new( 0, 0, 866, 1058, 0, 0, 54, 246 )
 	FactionIcon:setAlpha( 0 )
-	FactionIcon:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	FactionIcon:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	FactionIcon:subscribeToGlobalModel( f1_arg1, "Factions", "playerFactionIcon", function ( model )
 		local f5_local0 = model:get()
 		if f5_local0 ~= nil then

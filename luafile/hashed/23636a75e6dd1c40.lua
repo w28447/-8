@@ -119,7 +119,7 @@ LUI.createMenu.DiaDeLosMuertosRedemptionPopup = function ( f1_arg0, f1_arg1 )
 	local Linker = LUI.UIImage.new( 0.5, 0.5, -330, -326, 0.5, 0.5, -192, 205 )
 	Linker:setRGB( ColorSet.T8__BEIGE__HEADER.r, ColorSet.T8__BEIGE__HEADER.g, ColorSet.T8__BEIGE__HEADER.b )
 	Linker:setAlpha( 0.35 )
-	Linker:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
+	Linker:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
 	Linker:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	Linker:setShaderVector( 0, 0, 0, 0, 0 )
 	Linker:setupNineSliceShader( 4, 8 )
@@ -128,28 +128,28 @@ LUI.createMenu.DiaDeLosMuertosRedemptionPopup = function ( f1_arg0, f1_arg1 )
 	
 	local CornerPip = LUI.UIImage.new( 0.5, 0.5, -802.5, -786.5, 0.5, 0.5, -187, -171 )
 	CornerPip:setAlpha( 0.4 )
-	CornerPip:setImage( RegisterImage( 0x8DC834094E7A02C ) )
+	CornerPip:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
 	self:addElement( CornerPip )
 	self.CornerPip = CornerPip
 	
 	local CornerPip2 = LUI.UIImage.new( 0.5, 0.5, -494.5, -478.5, 0.5, 0.5, -187, -171 )
 	CornerPip2:setAlpha( 0.4 )
 	CornerPip2:setZRot( 270 )
-	CornerPip2:setImage( RegisterImage( 0x8DC834094E7A02C ) )
+	CornerPip2:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
 	self:addElement( CornerPip2 )
 	self.CornerPip2 = CornerPip2
 	
 	local CornerPip3 = LUI.UIImage.new( 0.5, 0.5, -803.5, -787.5, 0.5, 0.5, 122, 138 )
 	CornerPip3:setAlpha( 0.4 )
 	CornerPip3:setZRot( 90 )
-	CornerPip3:setImage( RegisterImage( 0x8DC834094E7A02C ) )
+	CornerPip3:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
 	self:addElement( CornerPip3 )
 	self.CornerPip3 = CornerPip3
 	
 	local CornerPip4 = LUI.UIImage.new( 0.5, 0.5, -494.5, -478.5, 0.5, 0.5, 121, 137 )
 	CornerPip4:setAlpha( 0.4 )
 	CornerPip4:setZRot( 180 )
-	CornerPip4:setImage( RegisterImage( 0x8DC834094E7A02C ) )
+	CornerPip4:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
 	self:addElement( CornerPip4 )
 	self.CornerPip4 = CornerPip4
 	
@@ -190,7 +190,7 @@ LUI.createMenu.DiaDeLosMuertosRedemptionPopup = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f16_arg0, f16_arg1, f16_arg2 )
 		if not IsElementInState( self.FullscreenPopupTemplate, "WorkingState" ) and not IsElementInState( self.FullscreenPopupTemplate, "FinishedState" ) then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		else
 			return false
@@ -211,10 +211,10 @@ LUI.createMenu.DiaDeLosMuertosRedemptionPopup = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f18_arg0, f18_arg1, f18_arg2 )
 		if IsElementInState( self.FullscreenPopupTemplate, "FinishedState" ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x6393FF34EA56966, nil, nil )
+			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, nil )
 			return true
 		elseif IsElementInState( self.FullscreenPopupTemplate, "ErrorState" ) and not IsMouseOrKeyboard( f18_arg2 ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x70A9FDC87CD3D48, nil, nil )
+			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/back", nil, nil )
 			return true
 		elseif not IsElementInState( self.FullscreenPopupTemplate, "WorkingState" ) and not IsElementInState( self.FullscreenPopupTemplate, "ErrorState" ) then
 			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x867BE59364DD53B, nil, nil )

@@ -27,14 +27,14 @@ CoD.CallingCards_CowboyBounce.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local bullet = LUI.UIImage.new( 0, 0, 398, 614, 0, 0, 26, 90 )
 	bullet:setImage( RegisterImage( 0xDC3C3D72C0643D7 ) )
-	bullet:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	bullet:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( bullet )
 	self.bullet = bullet
 	
 	local bullet2 = LUI.UIImage.new( 0, 0, 264, 480, 0, 0, 14, 78 )
 	bullet2:setAlpha( 0 )
 	bullet2:setImage( RegisterImage( 0xDC3C3D72C0643D7 ) )
-	bullet2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	bullet2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( bullet2 )
 	self.bullet2 = bullet2
 	

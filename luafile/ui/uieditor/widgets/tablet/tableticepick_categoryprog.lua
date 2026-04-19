@@ -10,13 +10,13 @@ CoD.TabletIcePick_CategoryProg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local ProgressBg = LUI.UIImage.new( 0, 0, 2, 26, 0, 0, 6, 30 )
 	ProgressBg:setImage( RegisterImage( 0x3B6AB72F71A2482 ) )
-	ProgressBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	ProgressBg:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ProgressBg )
 	self.ProgressBg = ProgressBg
 	
 	local ProgressBar = LUI.UIImage.new( 0, 0, 3, 25, 0, 0, 0, 36 )
 	ProgressBar:setImage( RegisterImage( 0x9754459E15A67C6 ) )
-	ProgressBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	ProgressBar:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ProgressBar )
 	self.ProgressBar = ProgressBar
 	

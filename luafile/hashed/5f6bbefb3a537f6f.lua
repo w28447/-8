@@ -19,7 +19,7 @@ CoD.WZTeamScoreboard_ColumnStatBox.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local Tint = LUI.UIImage.new( 0, 1, 0, 0, 0, 0.93, 0, 0 )
 	Tint:setAlpha( 0.2 )
-	Tint:setImage( RegisterImage( 0x4B6FFA90272070E ) )
+	Tint:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
 	Tint:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	Tint:setShaderVector( 0, 0, 0, 0, 0 )
 	Tint:setupNineSliceShader( 24, 24 )
@@ -29,7 +29,7 @@ CoD.WZTeamScoreboard_ColumnStatBox.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local BarBot = LUI.UIImage.new( 0, 0, -3, 147, 0, 0, 54, 64 )
 	BarBot:setAlpha( 0.4 )
 	BarBot:setImage( RegisterImage( 0xC6873B923C6686C ) )
-	BarBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	BarBot:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BarBot )
 	self.BarBot = BarBot
 	
@@ -43,7 +43,7 @@ CoD.WZTeamScoreboard_ColumnStatBox.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local Value = LUI.UIText.new( 0.5, 0.5, -69, 69, 0.5, 0.5, -13, 14 )
 	Value:setRGB( 0.92, 0.92, 0.92 )
-	Value:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	Value:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	Value:setTTF( "0arame_mono_stencil" )
 	Value:setLetterSpacing( 1 )
 	Value:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

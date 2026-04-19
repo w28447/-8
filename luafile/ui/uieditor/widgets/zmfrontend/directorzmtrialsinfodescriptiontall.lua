@@ -71,8 +71,8 @@ CoD.DirectorZMTrialsInfoDescriptionTall.new = function ( f1_arg0, f1_arg1, f1_ar
 		} )
 	end, false )
 	Silver:setScale( 0.95, 0.95 )
-	Silver.BackgroundTall:setImage( RegisterImage( 0xD2773BA8C6EFDB ) )
-	Silver.Medal:setImage( RegisterImage( 0xD56A5FDBB9721FB ) )
+	Silver.BackgroundTall:setImage( RegisterImage( "uie_trial_rules_silver_normal" ) )
+	Silver.Medal:setImage( RegisterImage( "uie_trial_medal_silver" ) )
 	self:addElement( Silver )
 	self.Silver = Silver
 	
@@ -104,8 +104,8 @@ CoD.DirectorZMTrialsInfoDescriptionTall.new = function ( f1_arg0, f1_arg1, f1_ar
 		} )
 	end, false )
 	Gold:setScale( 0.95, 0.95 )
-	Gold.BackgroundTall:setImage( RegisterImage( 0xDCF1B07E0539E4A ) )
-	Gold.Medal:setImage( RegisterImage( 0x7775EF99258EEEC ) )
+	Gold.BackgroundTall:setImage( RegisterImage( "uie_trial_rules_gold_normal" ) )
+	Gold.Medal:setImage( RegisterImage( "uie_trial_medal_gold" ) )
 	self:addElement( Gold )
 	self.Gold = Gold
 	
@@ -173,10 +173,10 @@ CoD.DirectorZMTrialsInfoDescriptionTall.__resetProperties = function ( f16_arg0 
 	f16_arg0.Gold:completeAnimation()
 	f16_arg0.Bronze.BackgroundTall:setImage( RegisterImage( 0xA703FE14F98C63C ) )
 	f16_arg0.Bronze.Medal:setImage( RegisterImage( 0x2638A7737E9BD02 ) )
-	f16_arg0.Silver.BackgroundTall:setImage( RegisterImage( 0xD2773BA8C6EFDB ) )
-	f16_arg0.Silver.Medal:setImage( RegisterImage( 0xD56A5FDBB9721FB ) )
-	f16_arg0.Gold.BackgroundTall:setImage( RegisterImage( 0xDCF1B07E0539E4A ) )
-	f16_arg0.Gold.Medal:setImage( RegisterImage( 0x7775EF99258EEEC ) )
+	f16_arg0.Silver.BackgroundTall:setImage( RegisterImage( "uie_trial_rules_silver_normal" ) )
+	f16_arg0.Silver.Medal:setImage( RegisterImage( "uie_trial_medal_silver" ) )
+	f16_arg0.Gold.BackgroundTall:setImage( RegisterImage( "uie_trial_rules_gold_normal" ) )
+	f16_arg0.Gold.Medal:setImage( RegisterImage( "uie_trial_medal_gold" ) )
 end
 
 CoD.DirectorZMTrialsInfoDescriptionTall.__clipsPerState = {
@@ -193,14 +193,14 @@ CoD.DirectorZMTrialsInfoDescriptionTall.__clipsPerState = {
 			f17_arg0.Silver:completeAnimation()
 			f17_arg0.Silver.BackgroundTall:completeAnimation()
 			f17_arg0.Silver.Medal:completeAnimation()
-			f17_arg0.Silver.BackgroundTall:setImage( RegisterImage( 0xD2773BA8C6EFDB ) )
-			f17_arg0.Silver.Medal:setImage( RegisterImage( 0xD56A5FDBB9721FB ) )
+			f17_arg0.Silver.BackgroundTall:setImage( RegisterImage( "uie_trial_rules_silver_normal" ) )
+			f17_arg0.Silver.Medal:setImage( RegisterImage( "uie_trial_medal_silver" ) )
 			f17_arg0.clipFinished( f17_arg0.Silver )
 			f17_arg0.Gold:completeAnimation()
 			f17_arg0.Gold.BackgroundTall:completeAnimation()
 			f17_arg0.Gold.Medal:completeAnimation()
-			f17_arg0.Gold.BackgroundTall:setImage( RegisterImage( 0xDCF1B07E0539E4A ) )
-			f17_arg0.Gold.Medal:setImage( RegisterImage( 0x7775EF99258EEEC ) )
+			f17_arg0.Gold.BackgroundTall:setImage( RegisterImage( "uie_trial_rules_gold_normal" ) )
+			f17_arg0.Gold.Medal:setImage( RegisterImage( "uie_trial_medal_gold" ) )
 			f17_arg0.clipFinished( f17_arg0.Gold )
 		end
 	},

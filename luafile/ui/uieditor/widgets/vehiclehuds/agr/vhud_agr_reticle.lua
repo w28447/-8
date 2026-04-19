@@ -29,14 +29,14 @@ CoD.vhud_agr_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local agrCenterPoint = LUI.UIImage.new( 0.5, 0.5, -14, 10, 0.5, 0.5, -12, 12 )
 	agrCenterPoint:setImage( RegisterImage( 0x3784284ACA2BA36 ) )
-	agrCenterPoint:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	agrCenterPoint:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( agrCenterPoint )
 	self.agrCenterPoint = agrCenterPoint
 	
 	local agrCenterPoint0 = LUI.UIImage.new( 0.5, 0.5, -14, 10, 0.5, 0.5, -12, 12 )
 	agrCenterPoint0:setAlpha( 0 )
 	agrCenterPoint0:setImage( RegisterImage( 0x3784284ACA2BA36 ) )
-	agrCenterPoint0:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	agrCenterPoint0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( agrCenterPoint0 )
 	self.agrCenterPoint0 = agrCenterPoint0
 	
@@ -47,7 +47,7 @@ CoD.vhud_agr_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local agrReticleOutsideDotsBlurUR = LUI.UIImage.new( 0.5, 0.5, 391, 634, 0.5, 0.5, -193, -103 )
 	agrReticleOutsideDotsBlurUR:setAlpha( 0.5 )
 	agrReticleOutsideDotsBlurUR:setImage( RegisterImage( 0xD6286A94A8DEE8D ) )
-	agrReticleOutsideDotsBlurUR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	agrReticleOutsideDotsBlurUR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( agrReticleOutsideDotsBlurUR )
 	self.agrReticleOutsideDotsBlurUR = agrReticleOutsideDotsBlurUR
 	
@@ -55,7 +55,7 @@ CoD.vhud_agr_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	agrReticleOutsideDotsBlurUL:setAlpha( 0.53 )
 	agrReticleOutsideDotsBlurUL:setYRot( -180 )
 	agrReticleOutsideDotsBlurUL:setImage( RegisterImage( 0xD6286A94A8DEE8D ) )
-	agrReticleOutsideDotsBlurUL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	agrReticleOutsideDotsBlurUL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( agrReticleOutsideDotsBlurUL )
 	self.agrReticleOutsideDotsBlurUL = agrReticleOutsideDotsBlurUL
 	
@@ -63,7 +63,7 @@ CoD.vhud_agr_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	agrReticleOutsideDotsBlurLR:setAlpha( 0.53 )
 	agrReticleOutsideDotsBlurLR:setXRot( -180 )
 	agrReticleOutsideDotsBlurLR:setImage( RegisterImage( 0xD6286A94A8DEE8D ) )
-	agrReticleOutsideDotsBlurLR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	agrReticleOutsideDotsBlurLR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( agrReticleOutsideDotsBlurLR )
 	self.agrReticleOutsideDotsBlurLR = agrReticleOutsideDotsBlurLR
 	
@@ -72,7 +72,7 @@ CoD.vhud_agr_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	agrReticleOutsideDotsBlurLL:setXRot( -180 )
 	agrReticleOutsideDotsBlurLL:setYRot( -180 )
 	agrReticleOutsideDotsBlurLL:setImage( RegisterImage( 0xD6286A94A8DEE8D ) )
-	agrReticleOutsideDotsBlurLL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	agrReticleOutsideDotsBlurLL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( agrReticleOutsideDotsBlurLL )
 	self.agrReticleOutsideDotsBlurLL = agrReticleOutsideDotsBlurLL
 	
@@ -80,21 +80,21 @@ CoD.vhud_agr_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	agrReticleFocusBlurL:setAlpha( 0.35 )
 	agrReticleFocusBlurL:setYRot( -180 )
 	agrReticleFocusBlurL:setImage( RegisterImage( 0x1A4DD47A70C3880 ) )
-	agrReticleFocusBlurL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	agrReticleFocusBlurL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( agrReticleFocusBlurL )
 	self.agrReticleFocusBlurL = agrReticleFocusBlurL
 	
 	local agrReticleFocusBlurR = LUI.UIImage.new( 0.5, 0.5, 183, 451, 0.5, 0.5, -139.5, 139.5 )
 	agrReticleFocusBlurR:setAlpha( 0.35 )
 	agrReticleFocusBlurR:setImage( RegisterImage( 0x1A4DD47A70C3880 ) )
-	agrReticleFocusBlurR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	agrReticleFocusBlurR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( agrReticleFocusBlurR )
 	self.agrReticleFocusBlurR = agrReticleFocusBlurR
 	
 	local Image0 = LUI.UIImage.new( 0.5, 0.5, 444, 749, 0.5, 0.5, -466, -229 )
 	Image0:setAlpha( 0.15 )
 	Image0:setImage( RegisterImage( 0xE73C388F701F405 ) )
-	Image0:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Image0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image0 )
 	self.Image0 = Image0
 	
@@ -102,7 +102,7 @@ CoD.vhud_agr_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	Image1:setAlpha( 0.15 )
 	Image1:setXRot( -180 )
 	Image1:setImage( RegisterImage( 0xE73C388F701F405 ) )
-	Image1:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Image1:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image1 )
 	self.Image1 = Image1
 	
@@ -110,7 +110,7 @@ CoD.vhud_agr_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	Image2:setAlpha( 0.15 )
 	Image2:setYRot( 180 )
 	Image2:setImage( RegisterImage( 0xE73C388F701F405 ) )
-	Image2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Image2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image2 )
 	self.Image2 = Image2
 	
@@ -119,7 +119,7 @@ CoD.vhud_agr_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	Image3:setXRot( 180 )
 	Image3:setYRot( 180 )
 	Image3:setImage( RegisterImage( 0xE73C388F701F405 ) )
-	Image3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Image3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image3 )
 	self.Image3 = Image3
 	

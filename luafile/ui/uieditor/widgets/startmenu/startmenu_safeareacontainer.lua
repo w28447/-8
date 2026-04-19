@@ -23,7 +23,7 @@ CoD.StartMenu_SafeAreaContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local CommonHeader = CoD.CommonHeader.new( f1_arg0, f1_arg1, 0, 1, 0, 0, 0, 0, 0, 67 )
 	CommonHeader.BGSceneBlur:setAlpha( 0 )
-	CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x4DC58203AB2DE0 ) )
+	CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/menu" ) )
 	CommonHeader.subtitle.subtitle:setAlpha( 0 )
 	CommonHeader:subscribeToGlobalModel( f1_arg1, "LobbyRoot", "lobbyMainMode", function ( model )
 		local f2_local0 = model:get()

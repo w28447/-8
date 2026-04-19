@@ -101,27 +101,27 @@ CoD.PlayerCard_KilledBy.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local TopLeftPip = LUI.UIImage.new( 0, 0, -29, -5, 0, 0, -4, 8 )
 	TopLeftPip:setImage( RegisterImage( 0x6797C01A9EED183 ) )
-	TopLeftPip:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	TopLeftPip:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TopLeftPip )
 	self.TopLeftPip = TopLeftPip
 	
 	local BotLeftPip = LUI.UIImage.new( 0, 0, -29, -5, 0, 0, 80, 92 )
 	BotLeftPip:setImage( RegisterImage( 0x6797C01A9EED183 ) )
-	BotLeftPip:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	BotLeftPip:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BotLeftPip )
 	self.BotLeftPip = BotLeftPip
 	
 	local TopRightPip = LUI.UIImage.new( 0, 0, 459, 483, 0, 0, -3, 9 )
 	TopRightPip:setZRot( 180 )
 	TopRightPip:setImage( RegisterImage( 0x6797C01A9EED183 ) )
-	TopRightPip:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	TopRightPip:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TopRightPip )
 	self.TopRightPip = TopRightPip
 	
 	local BotRightPip = LUI.UIImage.new( 0, 0, 459, 483, 0, 0, 80, 92 )
 	BotRightPip:setZRot( 180 )
 	BotRightPip:setImage( RegisterImage( 0x6797C01A9EED183 ) )
-	BotRightPip:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	BotRightPip:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BotRightPip )
 	self.BotRightPip = BotRightPip
 	

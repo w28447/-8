@@ -20,7 +20,7 @@ CoD.WarzoneInventoryMenuItemSmall_Internal_QE.new = function ( f1_arg0, f1_arg1,
 	local Backing = LUI.UIImage.new( 0.5, 0.5, -33, 34, 0.5, 0.5, -31, 31 )
 	Backing:setRGB( 0.09, 0.09, 0.07 )
 	Backing:setAlpha( 0.95 )
-	Backing:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE125638BF94665F ) )
+	Backing:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	Backing:setShaderVector( 0, 0.01, 0.01, 0.01, 0.01 )
 	self:addElement( Backing )
 	self.Backing = Backing
@@ -34,7 +34,7 @@ CoD.WarzoneInventoryMenuItemSmall_Internal_QE.new = function ( f1_arg0, f1_arg1,
 	
 	local Icon = LUI.UIImage.new( 0.5, 0.5, -38, 38, 0.5, 0.5, -41, 35 )
 	Icon:setScale( 0.72, 0.72 )
-	Icon:setMaterial( LUI.UIImage.GetCachedMaterial( 0x67D1E3A3D2D1BF ) )
+	Icon:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_saturation_normal" ) )
 	Icon:setShaderVector( 0, 1, 0, 0, 0 )
 	Icon:linkToElementModel( self, "icon", true, function ( model )
 		local f2_local0 = model:get()
@@ -48,7 +48,7 @@ CoD.WarzoneInventoryMenuItemSmall_Internal_QE.new = function ( f1_arg0, f1_arg1,
 	local Border = LUI.UIImage.new( 0, 0, 0, 88, 0, 0, 0.5, 88.5 )
 	Border:setRGB( 0.36, 0.34, 0.23 )
 	Border:setImage( RegisterImage( 0x144D4B98D6C5F71 ) )
-	Border:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE125638BF94665F ) )
+	Border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	Border:setShaderVector( 0, 0.01, 0.05, 0.01, 0.1 )
 	self:addElement( Border )
 	self.Border = Border

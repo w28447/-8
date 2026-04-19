@@ -13,7 +13,7 @@ CoD.LoadoutClassItemContainerZombie.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local LinePattern = LUI.UIImage.new( 0, 1, 7, -7, 0, 1, 17, -17 )
 	LinePattern:setAlpha( 0.5 )
-	LinePattern:setImage( RegisterImage( 0xB8CFFD5326CFE1B ) )
+	LinePattern:setImage( RegisterImage( "uie_ui_menu_zombies_cac_grunge_pattern" ) )
 	LinePattern:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	LinePattern:setShaderVector( 0, 0, 0, 0, 0 )
 	LinePattern:setupNineSliceShader( 256, 256 )
@@ -31,7 +31,7 @@ CoD.LoadoutClassItemContainerZombie.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local LightFocus = LUI.UIImage.new( 0, 0, -7, 309, 1, 1, -204, -4 )
 	LightFocus:setAlpha( 0 )
-	LightFocus:setImage( RegisterImage( 0x25B3B76F422AA08 ) )
+	LightFocus:setImage( RegisterImage( "uie_ui_menu_zombies_cac_special_weapon_light_focus" ) )
 	self:addElement( LightFocus )
 	self.LightFocus = LightFocus
 	

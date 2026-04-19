@@ -21,7 +21,7 @@ CoD.EmblemDrawWidgetNew.new = function ( f2_arg0, f2_arg1, f2_arg2, f2_arg3, f2_
 	
 	local BgImage01 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BgImage01:setAlpha( 0.5 )
-	BgImage01:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	BgImage01:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	BgImage01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	BgImage01:setShaderVector( 0, 0, 0, 0, 0 )
 	BgImage01:setupNineSliceShader( 196, 88 )
@@ -31,7 +31,7 @@ CoD.EmblemDrawWidgetNew.new = function ( f2_arg0, f2_arg1, f2_arg2, f2_arg3, f2_
 	local BgAdd = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BgAdd:setRGB( 0.92, 0.92, 0.92 )
 	BgAdd:setAlpha( 0 )
-	BgAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	BgAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BgAdd )
 	self.BgAdd = BgAdd
 	
@@ -57,8 +57,8 @@ CoD.EmblemDrawWidgetNew.new = function ( f2_arg0, f2_arg1, f2_arg2, f2_arg3, f2_
 	
 	local FrontendFrame02 = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	FrontendFrame02:setAlpha( 0.2 )
-	FrontendFrame02:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrontendFrame02:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrame02:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrontendFrame02:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrame02:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrame02:setupNineSliceShader( 12, 12 )
 	self:addElement( FrontendFrame02 )
@@ -66,8 +66,8 @@ CoD.EmblemDrawWidgetNew.new = function ( f2_arg0, f2_arg1, f2_arg2, f2_arg3, f2_
 	
 	local FrontendFrame01 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	FrontendFrame01:setAlpha( 0.2 )
-	FrontendFrame01:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrontendFrame01:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrame01:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrontendFrame01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrame01:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrame01:setupNineSliceShader( 12, 12 )
 	self:addElement( FrontendFrame01 )
@@ -75,8 +75,8 @@ CoD.EmblemDrawWidgetNew.new = function ( f2_arg0, f2_arg1, f2_arg2, f2_arg3, f2_
 	
 	local FrontendFrameSelected = LUI.UIImage.new( 0, 1, -4, 4, 0, 1, -4, 4 )
 	FrontendFrameSelected:setAlpha( 0 )
-	FrontendFrameSelected:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FrontendFrameSelected:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrameSelected:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FrontendFrameSelected:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrameSelected:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrameSelected:setupNineSliceShader( 12, 12 )
 	self:addElement( FrontendFrameSelected )
@@ -84,8 +84,8 @@ CoD.EmblemDrawWidgetNew.new = function ( f2_arg0, f2_arg1, f2_arg2, f2_arg3, f2_
 	
 	local FrontendFrameSelectedGlow = LUI.UIImage.new( 0, 1, -12, 12, 0, 1, -12, 12 )
 	FrontendFrameSelectedGlow:setAlpha( 0 )
-	FrontendFrameSelectedGlow:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FrontendFrameSelectedGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrameSelectedGlow:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FrontendFrameSelectedGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrameSelectedGlow:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrameSelectedGlow:setupNineSliceShader( 40, 40 )
 	self:addElement( FrontendFrameSelectedGlow )
@@ -95,7 +95,7 @@ CoD.EmblemDrawWidgetNew.new = function ( f2_arg0, f2_arg1, f2_arg2, f2_arg3, f2_
 	FrontendFocusPip:setAlpha( 0 )
 	FrontendFocusPip:setScale( 1.06, 1.06 )
 	FrontendFocusPip:setImage( RegisterImage( 0x793C73633F620BB ) )
-	FrontendFocusPip:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFocusPip:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFocusPip:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFocusPip:setupNineSliceShader( 52, 52 )
 	self:addElement( FrontendFocusPip )

@@ -134,7 +134,7 @@ LUI.createMenu.PurchaseCodPoints = function ( f1_arg0, f1_arg1 )
 		PlaySoundAlias( "uin_party_ease_slide_back" )
 		return true
 	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

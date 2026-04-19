@@ -1,6 +1,6 @@
-require( "x64:f7139f69731b8c1" )
-require( "x64:f765dee1e5ccee0" )
-require( "x64:6abd6dcfe95863d" )
+require( "ui/uieditor/menus/itemshop/caseexchangecontractconfirmation" )
+require( "ui/uieditor/menus/itemshop/itemshopcaseexchangeconfirmation" )
+require( "ui/uieditor/menus/itemshop/itemshopconfirmation" )
 require( "ui/uieditor/menus/itemshop/purchasecodpoints" )
 require( "ui/uieditor/menus/itemshop/purchasecontractconfirmationsunset" )
 require( "ui/uieditor/widgets/director/DirectorSelectButtonMiniInternal" )
@@ -67,8 +67,8 @@ CoD.ItemDetailsSunsetPurchaseContainer.new = function ( f1_arg0, f1_arg1, f1_arg
 			end
 		}
 	} )
-	ItemShopButtonCP.MiddleText:setText( LocalizeToUpperString( 0x85952ACC6D0C1B0 ) )
-	ItemShopButtonCP.MiddleTextFocus:setText( LocalizeToUpperString( 0x85952ACC6D0C1B0 ) )
+	ItemShopButtonCP.MiddleText:setText( LocalizeToUpperString( "menu/purchase" ) )
+	ItemShopButtonCP.MiddleTextFocus:setText( LocalizeToUpperString( "menu/purchase" ) )
 	local f1_local4 = ItemShopButtonCP
 	local ItemShopButtonCases = ItemShopButtonCP.subscribeToModel
 	local f1_local6 = Engine.GetModelForController( f1_arg1 )
@@ -107,7 +107,7 @@ CoD.ItemDetailsSunsetPurchaseContainer.new = function ( f1_arg0, f1_arg1, f1_arg
 			return true
 		end
 	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( ItemShopButtonCP )
@@ -203,10 +203,10 @@ CoD.ItemDetailsSunsetPurchaseContainer.new = function ( f1_arg0, f1_arg1, f1_arg
 		end
 	end, function ( f22_arg0, f22_arg1, f22_arg2 )
 		if MenuPropertyIsTrue( f22_arg1, "isSunsetPurchaseContractScreen" ) and CoD.BlackMarketUtility.CanExchangeLootCases( f22_arg2, self ) then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif CoD.BlackMarketUtility.CanExchangeLootCases( f22_arg2, self ) then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

@@ -22,8 +22,8 @@ CoD.RadiationBlastMeter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	GlowOver2:setAlpha( 0.15 )
 	GlowOver2:setZRot( 90 )
 	GlowOver2:setScale( 1.6, 1.6 )
-	GlowOver2:setImage( RegisterImage( 0x5BE416E17DAB33B ) )
-	GlowOver2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	GlowOver2:setImage( RegisterImage( "uie_t7_core_hud_mapwidget_panelglow" ) )
+	GlowOver2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowOver2 )
 	self.GlowOver2 = GlowOver2
 	
@@ -60,7 +60,7 @@ CoD.RadiationBlastMeter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local MeterFill = LUI.UIImage.new( 0.5, 0.5, -130, 130, 0.5, 0.5, -130, 130 )
 	MeterFill:setImage( RegisterImage( 0x7B6BC8391250423 ) )
-	MeterFill:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD5CA1A25ED87F4F ) )
+	MeterFill:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	MeterFill:setShaderVector( 1, 0.5, 0, 0, 0 )
 	MeterFill:setShaderVector( 2, 0.5, 0, 0, 0 )
 	MeterFill:setShaderVector( 3, 0, 0, 0, 0 )
@@ -170,7 +170,7 @@ CoD.RadiationBlastMeter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local fui = LUI.UIImage.new( 0.5, 0.5, -130, 130, 0.5, 0.5, -130, 130 )
 	fui:setAlpha( 0.75 )
 	fui:setImage( RegisterImage( 0x32B159D8B3BE338 ) )
-	fui:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	fui:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( fui )
 	self.fui = fui
 	

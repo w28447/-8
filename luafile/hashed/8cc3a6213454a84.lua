@@ -11,21 +11,21 @@ CoD.SpawnRegionPulse.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local selectedPulse = LUI.UIImage.new( 0, 0, 96, 144, 0, 0, 90, 138 )
 	selectedPulse:setAlpha( 0 )
 	selectedPulse:setImage( RegisterImage( 0x94F06A75E645F27 ) )
-	selectedPulse:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	selectedPulse:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( selectedPulse )
 	self.selectedPulse = selectedPulse
 	
 	local selectedPulse2 = LUI.UIImage.new( 0, 0, 96, 144, 0, 0, 90, 138 )
 	selectedPulse2:setAlpha( 0 )
 	selectedPulse2:setImage( RegisterImage( 0x94F06A75E645F27 ) )
-	selectedPulse2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	selectedPulse2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( selectedPulse2 )
 	self.selectedPulse2 = selectedPulse2
 	
 	local selectedPulse3 = LUI.UIImage.new( 0, 0, 96, 144, 0, 0, 90, 138 )
 	selectedPulse3:setAlpha( 0 )
 	selectedPulse3:setImage( RegisterImage( 0x94F06A75E645F27 ) )
-	selectedPulse3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	selectedPulse3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( selectedPulse3 )
 	self.selectedPulse3 = selectedPulse3
 	

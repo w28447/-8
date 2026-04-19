@@ -91,7 +91,7 @@ CoD.SpecialEventWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local RewardsHeader = LUI.UIText.new( 0, 0, 12, 228, 0, 0, 224.5, 240.5 )
 	RewardsHeader:setRGB( ColorSet.T8__OFF__GRAY.r, ColorSet.T8__OFF__GRAY.g, ColorSet.T8__OFF__GRAY.b )
-	RewardsHeader:setText( LocalizeToUpperString( 0x2ACBA21D0C15241 ) )
+	RewardsHeader:setText( LocalizeToUpperString( "menu/rewards" ) )
 	RewardsHeader:setTTF( "ttmussels_regular" )
 	RewardsHeader:setLetterSpacing( 1 )
 	RewardsHeader:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

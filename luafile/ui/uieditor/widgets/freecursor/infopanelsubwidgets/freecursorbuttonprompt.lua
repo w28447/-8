@@ -27,7 +27,7 @@ CoD.freeCursorButtonPrompt.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	keyPrompt = CoD.KeyPrompt.new( f1_arg0, f1_arg1, 0.03, 0.03, 2.5, 28.5, 0.5, 0.5, -13.5, 13.5 )
 	keyPrompt:setAlpha( 0 )
-	keyPrompt.Border.FETitleNumBrdr00.Image:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	keyPrompt.Border.FETitleNumBrdr00.Image:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	keyPrompt.keybind.__KeyBind = function ( f2_arg0 )
 		local f2_local0 = f2_arg0:get()
 		if f2_local0 ~= nil then

@@ -23,7 +23,7 @@ CoD.layermofn.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	
 	local TiledBackingAdd = LUI.UIImage.new( 0, 0, 0, 240, 0.09, 0.09, -4, 41 )
 	TiledBackingAdd:setAlpha( 0.2 )
-	TiledBackingAdd:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBackingAdd:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBackingAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledBackingAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBackingAdd:setupNineSliceShader( 196, 88 )
@@ -42,28 +42,28 @@ CoD.layermofn.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	local DotPipTR = LUI.UIImage.new( 1, 1, -2, 2, 0, 0, -2, 2 )
 	DotPipTR:setAlpha( 0.5 )
 	DotPipTR:setImage( RegisterImage( 0x3854665C02218EF ) )
-	DotPipTR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DotPipTR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotPipTR )
 	self.DotPipTR = DotPipTR
 	
 	local DotPipTL = LUI.UIImage.new( 0, 0, -2, 2, 0, 0, -2, 2 )
 	DotPipTL:setAlpha( 0.5 )
 	DotPipTL:setImage( RegisterImage( 0x3854665C02218EF ) )
-	DotPipTL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DotPipTL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotPipTL )
 	self.DotPipTL = DotPipTL
 	
 	local DotPipBL = LUI.UIImage.new( 0, 0, -2, 2, 1, 1, -2, 2 )
 	DotPipBL:setAlpha( 0.5 )
 	DotPipBL:setImage( RegisterImage( 0x3854665C02218EF ) )
-	DotPipBL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DotPipBL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotPipBL )
 	self.DotPipBL = DotPipBL
 	
 	local DotPipBR = LUI.UIImage.new( 1, 1, -2, 2, 1, 1, -2, 2 )
 	DotPipBR:setAlpha( 0.5 )
 	DotPipBR:setImage( RegisterImage( 0x3854665C02218EF ) )
-	DotPipBR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DotPipBR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotPipBR )
 	self.DotPipBR = DotPipBR
 	

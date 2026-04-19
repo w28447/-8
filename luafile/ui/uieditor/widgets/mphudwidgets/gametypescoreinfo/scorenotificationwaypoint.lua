@@ -64,7 +64,7 @@ CoD.ScoreNotificationWaypoint.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local ProgressMeterBacking = LUI.UIImage.new( 0.5, 0.5, -25, 27, 0.5, 0.5, -27, 25 )
 	ProgressMeterBacking:setRGB( 1, 0.98, 0.91 )
-	ProgressMeterBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD5CA1A25ED87F4F ) )
+	ProgressMeterBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	ProgressMeterBacking:setShaderVector( 0, 1.13, 0, 0, 0 )
 	ProgressMeterBacking:setShaderVector( 1, 0.5, 0, 0, 0 )
 	ProgressMeterBacking:setShaderVector( 2, 0.5, 0, 0, 0 )
@@ -86,7 +86,7 @@ CoD.ScoreNotificationWaypoint.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local ProgressMeterBackingFill = LUI.UIImage.new( 0.5, 0.5, -25, 27, 0.5, 0.5, -27, 25 )
 	ProgressMeterBackingFill:setImage( RegisterImage( 0x2E4DBA41E983343 ) )
-	ProgressMeterBackingFill:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD5CA1A25ED87F4F ) )
+	ProgressMeterBackingFill:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	ProgressMeterBackingFill:setShaderVector( 1, 0.5, 0, 0, 0 )
 	ProgressMeterBackingFill:setShaderVector( 2, 0.5, 0, 0, 0 )
 	ProgressMeterBackingFill:setShaderVector( 3, 0, 0, 0, 0 )

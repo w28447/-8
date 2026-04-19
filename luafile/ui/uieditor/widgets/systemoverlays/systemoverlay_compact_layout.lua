@@ -35,7 +35,7 @@ CoD.systemOverlay_Compact_Layout.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0.09, 0.09, 183, 480 )
 	NoiseTiledBacking:setAlpha( 0.65 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )

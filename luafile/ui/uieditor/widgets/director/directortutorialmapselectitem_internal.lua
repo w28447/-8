@@ -23,7 +23,7 @@ CoD.DirectorTutorialMapSelectItem_Internal.new = function ( f1_arg0, f1_arg1, f1
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setRGB( 0, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.8 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -112,7 +112,7 @@ CoD.DirectorTutorialMapSelectItem_Internal.new = function ( f1_arg0, f1_arg1, f1
 	
 	local EquippedMarkerTick2 = LUI.UIImage.new( 1, 1, -150, 10, 0, 0, -17, 143 )
 	EquippedMarkerTick2:setAlpha( 0 )
-	EquippedMarkerTick2:setImage( RegisterImage( 0x65F14AD6E4F3F8F ) )
+	EquippedMarkerTick2:setImage( RegisterImage( "uie_ui_menu_zombies_cac_elixir_slot_check" ) )
 	self:addElement( EquippedMarkerTick2 )
 	self.EquippedMarkerTick2 = EquippedMarkerTick2
 	

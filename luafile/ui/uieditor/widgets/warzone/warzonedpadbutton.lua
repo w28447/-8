@@ -10,7 +10,7 @@ CoD.WarzoneDpadButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local downImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	downImage:setAlpha( 0 )
-	downImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	downImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	downImage:setShaderVector( 0, 0.33, 0.67, 0, 0 )
 	downImage:setShaderVector( 1, 0, 0, 0, 0 )
 	downImage:setShaderVector( 2, 0, 0.4, 0, 0 )

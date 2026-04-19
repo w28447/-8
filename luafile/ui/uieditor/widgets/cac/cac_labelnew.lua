@@ -14,7 +14,7 @@ CoD.cac_LabelNew.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	
 	local itemName = LUI.UIText.new( 0.5, 0.5, -33, 34, 0.5, 0.5, -12, 12 )
 	itemName:setRGB( 0, 0, 0 )
-	itemName:setText( LocalizeToUpperString( 0x93E719493E9E18F ) )
+	itemName:setText( LocalizeToUpperString( "menu/new" ) )
 	itemName:setTTF( "dinnext_regular" )
 	itemName:setLetterSpacing( 1.5 )
 	itemName:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

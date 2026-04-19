@@ -1,4 +1,4 @@
-require( "x64:9b528a05aba52d6" )
+require( "ui/uieditor/menus/itemshop/itemshopdetails" )
 require( "ui/uieditor/widgets/itemshop/contracts/contractsupplychaindetails" )
 require( "ui/uieditor/widgets/itemshop/listlabel" )
 require( "ui/uieditor/widgets/itemshop/purchaseableitem" )
@@ -78,7 +78,7 @@ CoD.ItemShopFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 		CoD.BlackMarketUtility.PlayItemShopSelectSound( f7_arg0, f7_arg2 )
 		return true
 	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	WeeklyItems:subscribeToGlobalModel( f1_arg1, "GlobalModel", "ItemshopRotation.cycled", function ( model )
@@ -94,8 +94,8 @@ CoD.ItemShopFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	WeeklyItemsBracket:setRGB( 0.98, 1, 0.89 )
 	WeeklyItemsBracket:setAlpha( 0.35 )
 	WeeklyItemsBracket:setZRot( 180 )
-	WeeklyItemsBracket:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	WeeklyItemsBracket:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	WeeklyItemsBracket:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	WeeklyItemsBracket:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	WeeklyItemsBracket:setShaderVector( 0, 0, 0, 0, 0 )
 	WeeklyItemsBracket:setupNineSliceShader( 16, 4 )
 	self:addElement( WeeklyItemsBracket )
@@ -174,7 +174,7 @@ CoD.ItemShopFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 		CoD.BlackMarketUtility.PlayItemShopSelectSound( f15_arg0, f15_arg2 )
 		return true
 	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	ByweeklyFeatureItems:subscribeToGlobalModel( f1_arg1, "GlobalModel", "ItemshopRotation.cycled", function ( model )
@@ -239,7 +239,7 @@ CoD.ItemShopFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 		CoD.BlackMarketUtility.PlayItemShopSelectSound( f22_arg0, f22_arg2 )
 		return true
 	end, function ( f23_arg0, f23_arg1, f23_arg2 )
-		CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	ByweeklyItems:subscribeToGlobalModel( f1_arg1, "GlobalModel", "ItemshopRotation.cycled", function ( model )
@@ -254,8 +254,8 @@ CoD.ItemShopFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	local ByweeklyItemsBracket = LUI.UIImage.new( 0.5, 0.5, -552, -27, 0.5, 0.5, -364, -355 )
 	ByweeklyItemsBracket:setAlpha( 0.5 )
 	ByweeklyItemsBracket:setZRot( 180 )
-	ByweeklyItemsBracket:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	ByweeklyItemsBracket:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	ByweeklyItemsBracket:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	ByweeklyItemsBracket:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ByweeklyItemsBracket:setShaderVector( 0, 0, 0, 0, 0 )
 	ByweeklyItemsBracket:setupNineSliceShader( 16, 4 )
 	self:addElement( ByweeklyItemsBracket )
@@ -334,7 +334,7 @@ CoD.ItemShopFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 		CoD.BlackMarketUtility.PlayItemShopSelectSound( f30_arg0, f30_arg2 )
 		return true
 	end, function ( f31_arg0, f31_arg1, f31_arg2 )
-		CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	DailyItems:subscribeToGlobalModel( f1_arg1, "GlobalModel", "ItemshopRotation.cycled", function ( model )
@@ -349,8 +349,8 @@ CoD.ItemShopFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	local DailyItemsBracket = LUI.UIImage.new( 0.5, 0.5, -841, -586, 0.5, 0.5, -364, -355 )
 	DailyItemsBracket:setAlpha( 0.5 )
 	DailyItemsBracket:setZRot( 180 )
-	DailyItemsBracket:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	DailyItemsBracket:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	DailyItemsBracket:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	DailyItemsBracket:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	DailyItemsBracket:setShaderVector( 0, 0, 0, 0, 0 )
 	DailyItemsBracket:setupNineSliceShader( 16, 4 )
 	self:addElement( DailyItemsBracket )

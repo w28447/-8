@@ -35,7 +35,7 @@ CoD.HUD_VehiclePrompt_Container.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local KBMText = nil
 	
 	KBMText = LUI.UIText.new( 0.05, 0.95, 0, 0, 0.27, 0.27, -1, 22 )
-	KBMText:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	KBMText:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	KBMText:setTTF( "notosans_bold" )
 	KBMText:setLetterSpacing( -2 )
 	KBMText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

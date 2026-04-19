@@ -10,7 +10,7 @@ CoD.VehicleGround_HashIcon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local HashIcon = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	HashIcon:setImage( RegisterImage( 0x47FB32846E5E0DA ) )
-	HashIcon:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	HashIcon:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( HashIcon )
 	self.HashIcon = HashIcon
 	

@@ -32,7 +32,7 @@ CoD[0xC44AA3B51953556].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local Image = LUI.UIImage.new( 0, 0, 600, 1500, 0, 0, -433, 467 )
 	Image:setImage( RegisterImage( 0x8CCA9609921F32A ) )
-	Image:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Image:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image )
 	self.Image = Image
 	

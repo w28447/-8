@@ -54,7 +54,7 @@ CoD.AARTierRewardItemGlowAnimationUltra.new = function ( f1_arg0, f1_arg1, f1_ar
 	local CardCover = LUI.UIImage.new( 0, 1, -13, 13, 0, 1, -13, 13 )
 	CardCover:setAlpha( 0 )
 	CardCover:setImage( RegisterImage( 0xFAA6C81834660D3 ) )
-	CardCover:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	CardCover:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	CardCover:setShaderVector( 0, 0, 0, 0, 0 )
 	CardCover:setupNineSliceShader( 32, 32 )
 	CardCover:linkToElementModel( self, "rarity", true, function ( model )
@@ -69,35 +69,35 @@ CoD.AARTierRewardItemGlowAnimationUltra.new = function ( f1_arg0, f1_arg1, f1_ar
 	local fx = LUI.UIImage.new( 0, 0, -41, 350, 0, 0, -102, 528 )
 	fx:setAlpha( 0 )
 	fx:setImage( RegisterImage( 0x20548CD7DC5A10F ) )
-	fx:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	fx:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( fx )
 	self.fx = fx
 	
 	local fx2 = LUI.UIImage.new( 0, 0, -41, 350, 0, 0, -102, 528 )
 	fx2:setAlpha( 0 )
 	fx2:setImage( RegisterImage( 0x49BF22CB6D0FAA7 ) )
-	fx2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	fx2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( fx2 )
 	self.fx2 = fx2
 	
 	local skull = LUI.UIImage.new( 0, 0, 27, 283, 0, 0, 92.5, 348.5 )
 	skull:setAlpha( 0 )
 	skull:setImage( RegisterImage( 0x11ADAF6FD1B370F ) )
-	skull:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	skull:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( skull )
 	self.skull = skull
 	
 	local fx3 = LUI.UIImage.new( 0, 0, -41, 350, 0, 0, -102, 528 )
 	fx3:setAlpha( 0 )
 	fx3:setImage( RegisterImage( 0x49BF12CB6D0F8F4 ) )
-	fx3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	fx3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( fx3 )
 	self.fx3 = fx3
 	
 	local Flare = LUI.UIImage.new( 0, 0, -193, 503, 0, 0, -147, 549 )
 	Flare:setAlpha( 0 )
 	Flare:setImage( RegisterImage( 0x5B08C472BE4FD20 ) )
-	Flare:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Flare:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Flare )
 	self.Flare = Flare
 	

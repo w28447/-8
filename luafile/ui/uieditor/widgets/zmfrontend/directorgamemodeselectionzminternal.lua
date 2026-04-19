@@ -100,13 +100,13 @@ CoD.DirectorGamemodeSelectionZMInternal.new = function ( f1_arg0, f1_arg1, f1_ar
 		end
 	end, function ( f13_arg0, f13_arg1, f13_arg2 )
 		if IsLobbyHostOfCurrentMenu() and not IsElementPropertyValue( f13_arg0, "purchasable", true ) and not CoD.ModelUtility.IsSelfModelValueTrue( f13_arg0, f13_arg2, "locked" ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( f13_arg0, f13_arg2, "lockState", Enum[0xDACBB5C5F26BCD9][0x9B632F6362EA1BE] ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( f13_arg0, f13_arg2, "lockState", Enum[0xDACBB5C5F26BCD9][0x4BDEB566326AC98] ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -193,13 +193,13 @@ CoD.DirectorGamemodeSelectionZMInternal.new = function ( f1_arg0, f1_arg1, f1_ar
 		end
 	end, function ( f25_arg0, f25_arg1, f25_arg2 )
 		if IsLobbyHostOfCurrentMenu() and not IsElementPropertyValue( f25_arg0, "purchasable", true ) and not CoD.ModelUtility.IsSelfModelValueTrue( f25_arg0, f25_arg2, "locked" ) then
-			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( f25_arg0, f25_arg2, "lockState", Enum[0xDACBB5C5F26BCD9][0x9B632F6362EA1BE] ) then
-			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( f25_arg0, f25_arg2, "lockState", Enum[0xDACBB5C5F26BCD9][0x4BDEB566326AC98] ) then
-			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -276,10 +276,10 @@ CoD.DirectorGamemodeSelectionZMInternal.new = function ( f1_arg0, f1_arg1, f1_ar
 		end
 	end, function ( f35_arg0, f35_arg1, f35_arg2 )
 		if IsLobbyHostOfCurrentMenu() and not IsElementPropertyValue( f35_arg0, "purchasable", true ) then
-			CoD.Menu.SetButtonLabel( f35_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f35_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() then
-			CoD.Menu.SetButtonLabel( f35_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f35_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -294,7 +294,7 @@ CoD.DirectorGamemodeSelectionZMInternal.new = function ( f1_arg0, f1_arg1, f1_ar
 	DottedDivider = LUI.UIImage.new( 0, 0, 615, 619, 0, 0, -261, 783 )
 	DottedDivider:setAlpha( 0 )
 	DottedDivider:setZRot( 90 )
-	DottedDivider:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
+	DottedDivider:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
 	DottedDivider:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DottedDivider:setShaderVector( 0, 0, 0, 0, 0 )
 	DottedDivider:setupNineSliceShader( 4, 8 )

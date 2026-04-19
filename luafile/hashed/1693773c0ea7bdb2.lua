@@ -22,7 +22,7 @@ CoD.WZStatusIcon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	local VehicleBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	VehicleBacking:setAlpha( 0 )
 	VehicleBacking:setScale( 0.98, 0.98 )
-	VehicleBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE125638BF94665F ) )
+	VehicleBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	VehicleBacking:setShaderVector( 0, 0.05, 0.05, 0.05, 0.05 )
 	VehicleBacking.__Color = function ( f3_arg0 )
 		local f3_local0 = f3_arg0:get()

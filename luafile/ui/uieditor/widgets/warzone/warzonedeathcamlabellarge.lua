@@ -13,7 +13,7 @@ CoD.WarzoneDeathCamLabelLarge.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.Background = Background
 	
 	local DeathCamLabel = LUI.UIText.new( 0.5, 0.5, -450, 450, 0, 0, 0, 200 )
-	DeathCamLabel:setText( LocalizeToUpperString( 0xA8BAC035CE51600 ) )
+	DeathCamLabel:setText( LocalizeToUpperString( "wz/deathcam" ) )
 	DeathCamLabel:setTTF( "ttmussels_demibold" )
 	DeathCamLabel:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
 	DeathCamLabel:setLetterSpacing( 20 )

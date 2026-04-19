@@ -14,7 +14,7 @@ CoD.AARLevelUpRank.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local ZMCroppedBacking = LUI.UIImage.new( 0, 0, -1, 401, 0, 0, -4.5, 398.5 )
 	ZMCroppedBacking:setAlpha( 0 )
-	ZMCroppedBacking:setImage( RegisterImage( 0xA8FC401C1972BDE ) )
+	ZMCroppedBacking:setImage( RegisterImage( "uie_ui_hud_zm_aar_reward_bg" ) )
 	ZMCroppedBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
 	ZMCroppedBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	ZMCroppedBacking:setShaderVector( 1, 1, 1, 0, 0 )
@@ -126,8 +126,8 @@ CoD.AARLevelUpRank.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local infoBracketBot = LUI.UIImage.new( 0, 0, 2.5, 397.5, 0, 0, 389, 397 )
 	infoBracketBot:setAlpha( 0.6 )
-	infoBracketBot:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	infoBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	infoBracketBot:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	infoBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	infoBracketBot:setShaderVector( 0, 0, 0, 0, 0 )
 	infoBracketBot:setupNineSliceShader( 16, 4 )
 	self:addElement( infoBracketBot )
@@ -136,7 +136,7 @@ CoD.AARLevelUpRank.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local infoBracketTop = LUI.UIImage.new( 0, 0, 2.5, 397.5, 0, 0, 0, 32 )
 	infoBracketTop:setAlpha( 0.6 )
 	infoBracketTop:setImage( RegisterImage( 0xCAD52FFFB7C32C1 ) )
-	infoBracketTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	infoBracketTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	infoBracketTop:setShaderVector( 0, 0, 0, 0, 0 )
 	infoBracketTop:setupNineSliceShader( 10, 16 )
 	self:addElement( infoBracketTop )
@@ -150,7 +150,7 @@ CoD.AARLevelUpRank.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local ZMTopBar = LUI.UIImage.new( 0, 0, -12, 412, 0, 0, -10.5, 13.5 )
 	ZMTopBar:setAlpha( 0 )
-	ZMTopBar:setImage( RegisterImage( 0x45C555C45B1E6E4 ) )
+	ZMTopBar:setImage( RegisterImage( "uie_ui_hud_zm_aar_top_bar" ) )
 	self:addElement( ZMTopBar )
 	self.ZMTopBar = ZMTopBar
 	

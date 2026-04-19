@@ -24,8 +24,8 @@ CoD.AmmoWidget_CleanTacos.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local PanelGlow = LUI.UIImage.new( 0, 0, -24, 127, 0, 0, -22, 131 )
 	PanelGlow:setRGB( 0.08, 0.17, 0.56 )
 	PanelGlow:setAlpha( 0.9 )
-	PanelGlow:setImage( RegisterImage( 0x5BE416E17DAB33B ) )
-	PanelGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	PanelGlow:setImage( RegisterImage( "uie_t7_core_hud_mapwidget_panelglow" ) )
+	PanelGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PanelGlow )
 	self.PanelGlow = PanelGlow
 	

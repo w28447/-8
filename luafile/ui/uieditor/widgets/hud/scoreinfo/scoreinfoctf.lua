@@ -34,7 +34,7 @@ CoD.ScoreInfoCTF.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	local frame = LUI.UIImage.new( 0.5, 0.5, -104.5, 104.5, 0.5, 0.5, -30, 30 )
 	frame:setYRot( 180 )
 	frame:setImage( RegisterImage( 0x52BE0503BCF6523 ) )
-	frame:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	frame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	frame:setShaderVector( 0, 0, 0, 0, 0 )
 	frame:setupNineSliceShader( 16, 16 )
 	self:addElement( frame )
@@ -42,7 +42,7 @@ CoD.ScoreInfoCTF.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	
 	local Divider = LUI.UIImage.new( 0.5, 0.5, -100, 100, 0.5, 0.5, -2.5, 2.5 )
 	Divider:setRGB( 0, 0, 0 )
-	Divider:setImage( RegisterImage( 0xD16B33E79A589C5 ) )
+	Divider:setImage( RegisterImage( "uie_ui_hud_common_white_box" ) )
 	Divider:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE8F55203998700A ) )
 	self:addElement( Divider )
 	self.Divider = Divider

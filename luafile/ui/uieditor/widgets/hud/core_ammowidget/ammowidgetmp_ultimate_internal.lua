@@ -349,7 +349,7 @@ CoD.AmmoWidgetMP_Ultimate_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	FlareBack:setAlpha( 0 )
 	FlareBack:setScale( 1, 0.8 )
 	FlareBack:setImage( RegisterImage( 0x650DB36D4791063 ) )
-	FlareBack:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	FlareBack:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FlareBack )
 	self.FlareBack = FlareBack
 	

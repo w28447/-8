@@ -37,14 +37,14 @@ CoD.AARGameHistory.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local GameHistoryGridHline2 = LUI.UIImage.new( 0, 0, -1.5, 1162.5, 0, 0, 98, 102 )
 	GameHistoryGridHline2:setAlpha( 0.2 )
 	GameHistoryGridHline2:setImage( RegisterImage( 0xD665F794FF05F2D ) )
-	GameHistoryGridHline2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	GameHistoryGridHline2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GameHistoryGridHline2 )
 	self.GameHistoryGridHline2 = GameHistoryGridHline2
 	
 	local GameHistoryGridHline1 = LUI.UIImage.new( 0, 0, -1.5, 1162.5, 0, 0, 214.5, 218.5 )
 	GameHistoryGridHline1:setAlpha( 0.2 )
 	GameHistoryGridHline1:setImage( RegisterImage( 0xD665F794FF05F2D ) )
-	GameHistoryGridHline1:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	GameHistoryGridHline1:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GameHistoryGridHline1 )
 	self.GameHistoryGridHline1 = GameHistoryGridHline1
 	
@@ -60,13 +60,13 @@ CoD.AARGameHistory.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local GameHistoryGridBracket2 = LUI.UIImage.new( 0, 0, -2, 1162, 0, 0, 266, 278 )
 	GameHistoryGridBracket2:setZRot( 180 )
 	GameHistoryGridBracket2:setImage( RegisterImage( 0x3725DFF82A4EF8B ) )
-	GameHistoryGridBracket2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	GameHistoryGridBracket2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GameHistoryGridBracket2 )
 	self.GameHistoryGridBracket2 = GameHistoryGridBracket2
 	
 	local GameHistoryGridBracket1 = LUI.UIImage.new( 0, 0, -2, 1162, 0, 0, 40, 52 )
 	GameHistoryGridBracket1:setImage( RegisterImage( 0x3725DFF82A4EF8B ) )
-	GameHistoryGridBracket1:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	GameHistoryGridBracket1:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GameHistoryGridBracket1 )
 	self.GameHistoryGridBracket1 = GameHistoryGridBracket1
 	
@@ -89,7 +89,7 @@ CoD.AARGameHistory.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local StatTypeBar = LUI.UIImage.new( 0, 0, -2.5, 1161.5, 0, 0, -3, 1 )
 	StatTypeBar:setAlpha( 0.4 )
 	StatTypeBar:setImage( RegisterImage( 0xB07AA95C48BD14F ) )
-	StatTypeBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	StatTypeBar:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( StatTypeBar )
 	self.StatTypeBar = StatTypeBar
 	

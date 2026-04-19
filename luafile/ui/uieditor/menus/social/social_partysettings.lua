@@ -15,7 +15,7 @@ LUI.createMenu.Social_PartySettings = function ( f1_arg0, f1_arg1 )
 	self.anyChildUsesUpdateState = true
 	
 	local CommomCenteredPopup = CoD.CommonCenteredPopup.new( f1_local1, f1_arg0, 0, 1, 0, 0, 0, 1, 0, 0 )
-	CommomCenteredPopup.TitleText:setText( LocalizeToUpperString( 0x20661B30B65C27F ) )
+	CommomCenteredPopup.TitleText:setText( LocalizeToUpperString( "menu/party_settings" ) )
 	CommomCenteredPopup.HeaderBackground:setAlpha( 0 )
 	CommomCenteredPopup.HeaderTopBar:setAlpha( 0 )
 	CommomCenteredPopup.HeaderBottomBar:setAlpha( 0 )
@@ -49,7 +49,7 @@ LUI.createMenu.Social_PartySettings = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f4_arg0, f4_arg1, f4_arg2 )
 		if HasListAction( f4_arg0, f4_arg2 ) then
-			CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

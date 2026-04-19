@@ -170,14 +170,14 @@ CoD.PlayerCardMenu.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local IdentityCornerBottomRight = LUI.UIImage.new( 0, 0, 452, 462, 0, 0, 75.5, 85.5 )
 	IdentityCornerBottomRight:setAlpha( 0.25 )
 	IdentityCornerBottomRight:setZRot( -180 )
-	IdentityCornerBottomRight:setImage( RegisterImage( 0xD7AC5089314462A ) )
+	IdentityCornerBottomRight:setImage( RegisterImage( "uie_ui_hud_spawnselect_identity_corner" ) )
 	self:addElement( IdentityCornerBottomRight )
 	self.IdentityCornerBottomRight = IdentityCornerBottomRight
 	
 	local IdentityCornerTopRight = LUI.UIImage.new( 0, 0, 451.5, 461.5, 0, 0, -3, 7 )
 	IdentityCornerTopRight:setAlpha( 0.25 )
 	IdentityCornerTopRight:setZRot( -90 )
-	IdentityCornerTopRight:setImage( RegisterImage( 0xD7AC5089314462A ) )
+	IdentityCornerTopRight:setImage( RegisterImage( "uie_ui_hud_spawnselect_identity_corner" ) )
 	self:addElement( IdentityCornerTopRight )
 	self.IdentityCornerTopRight = IdentityCornerTopRight
 	
@@ -197,13 +197,13 @@ CoD.PlayerCardMenu.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local IdentityCornerBottomLeft = LUI.UIImage.new( 0, 0, -3.5, 6.5, 0, 0, 75.5, 85.5 )
 	IdentityCornerBottomLeft:setAlpha( 0.25 )
 	IdentityCornerBottomLeft:setZRot( 90 )
-	IdentityCornerBottomLeft:setImage( RegisterImage( 0xD7AC5089314462A ) )
+	IdentityCornerBottomLeft:setImage( RegisterImage( "uie_ui_hud_spawnselect_identity_corner" ) )
 	self:addElement( IdentityCornerBottomLeft )
 	self.IdentityCornerBottomLeft = IdentityCornerBottomLeft
 	
 	local IdentityCornerTopLeft = LUI.UIImage.new( 0, 0, -3, 7, 0, 0, -3, 7 )
 	IdentityCornerTopLeft:setAlpha( 0.25 )
-	IdentityCornerTopLeft:setImage( RegisterImage( 0xD7AC5089314462A ) )
+	IdentityCornerTopLeft:setImage( RegisterImage( "uie_ui_hud_spawnselect_identity_corner" ) )
 	self:addElement( IdentityCornerTopLeft )
 	self.IdentityCornerTopLeft = IdentityCornerTopLeft
 	

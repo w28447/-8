@@ -21,7 +21,7 @@ CoD.ScoreboardCoreStat.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local StatValue = LUI.UIText.new( 0, 0, 19, 57, 0.5, 0.5, 0.5, 39.5 )
 	StatValue:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	StatValue:setAlpha( 0.7 )
-	StatValue:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	StatValue:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	StatValue:setTTF( "0arame_mono_stencil" )
 	StatValue:setLetterSpacing( 2 )
 	StatValue:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

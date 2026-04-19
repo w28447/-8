@@ -21,7 +21,7 @@ CoD.LeaguePlayEndRankUpRuby.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local RubyAnim = LUI.UIImage.new( 0.5, 0.5, -26.5, 26.5, 0.5, 0.5, -28, 25 )
 	RubyAnim:setImage( RegisterImage( 0x88F3083B7A9ADAD ) )
-	RubyAnim:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9227A50BA2B8D21 ) )
+	RubyAnim:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	RubyAnim:setShaderVector( 0, 4, 4, 0, 0 )
 	RubyAnim:setShaderVector( 1, 5, 0, 0, 0 )
 	self:addElement( RubyAnim )

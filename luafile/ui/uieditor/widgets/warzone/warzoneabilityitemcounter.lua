@@ -10,7 +10,7 @@ CoD.WarzoneAbilityItemCounter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local CounterCorner = LUI.UIImage.new( 0, 0, 0, 36, 0, 0, 0, 24 )
 	CounterCorner:setRGB( 0, 0, 0 )
-	CounterCorner:setImage( RegisterImage( 0x25AE8AF4C635914 ) )
+	CounterCorner:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_counter_corner" ) )
 	self:addElement( CounterCorner )
 	self.CounterCorner = CounterCorner
 	
@@ -21,7 +21,7 @@ CoD.WarzoneAbilityItemCounter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	Quantity:setShaderVector( 0, 0.8, 0, 0, 0 )
 	Quantity:setShaderVector( 1, 0, 0, 0, 0 )
 	Quantity:setShaderVector( 2, 1, 1, 1, 0.5 )
-	Quantity:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Quantity:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	Quantity:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	Quantity:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )
 	Quantity:linkToElementModel( self, "stackCount", true, function ( model )

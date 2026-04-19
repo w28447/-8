@@ -10,7 +10,7 @@ CoD.Hud_ZM_Trial_Completed.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local TrialCompletedText = LUI.UIText.new( 0, 0, 0, 1920, 0, 0, 47, 137 )
 	TrialCompletedText:setRGB( ColorSet.GroupName.r, ColorSet.GroupName.g, ColorSet.GroupName.b )
-	TrialCompletedText:setText( LocalizeToUpperString( 0x400A284ADF5EAC0 ) )
+	TrialCompletedText:setText( LocalizeToUpperString( "zmtrials/trial_completed" ) )
 	TrialCompletedText:setTTF( "skorzhen" )
 	TrialCompletedText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	TrialCompletedText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -23,12 +23,12 @@ CoD.Hud_ZM_Trial_Completed.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.DescriptionDivider = DescriptionDivider
 	
 	local CornerL = LUI.UIImage.new( 0, 0, 664.5, 679.5, 0, 0, 128.5, 143.5 )
-	CornerL:setImage( RegisterImage( uie_zm_hud_cornerdecoration ) )
+	CornerL:setImage( RegisterImage( "uie_zm_hud_cornerdecoration" ) )
 	self:addElement( CornerL )
 	self.CornerL = CornerL
 	
 	local CornerR = LUI.UIImage.new( 0, 0, 1246, 1261, 0, 0, 128.5, 143.5 )
-	CornerR:setImage( RegisterImage( uie_zm_hud_cornerdecoration ) )
+	CornerR:setImage( RegisterImage( "uie_zm_hud_cornerdecoration" ) )
 	self:addElement( CornerR )
 	self.CornerR = CornerR
 	

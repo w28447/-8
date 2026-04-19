@@ -47,7 +47,7 @@ CoD.MedalPreviewWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local GridTiled = LUI.UIImage.new( 0.2, 0.2, -105, 442, 0.19, 0.19, -131, 478 )
 	GridTiled:setAlpha( 0.05 )
 	GridTiled:setScale( 1.01, 1.01 )
-	GridTiled:setImage( RegisterImage( 0xCA386792563DE8 ) )
+	GridTiled:setImage( RegisterImage( "uie_ui_menu_store_bg_grid" ) )
 	GridTiled:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	GridTiled:setShaderVector( 0, 0, 0, 0, 0 )
 	GridTiled:setupNineSliceShader( 64, 64 )
@@ -111,28 +111,28 @@ CoD.MedalPreviewWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local DotPip = LUI.UIImage.new( 0, 0, 548, 552, 0, 0, 712, 716 )
 	DotPip:setAlpha( 0.5 )
 	DotPip:setImage( RegisterImage( 0x3854665C02218EF ) )
-	DotPip:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DotPip:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotPip )
 	self.DotPip = DotPip
 	
 	local DotPip2 = LUI.UIImage.new( 0, 0, -2, 2, 0, 0, 712, 716 )
 	DotPip2:setAlpha( 0.5 )
 	DotPip2:setImage( RegisterImage( 0x3854665C02218EF ) )
-	DotPip2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DotPip2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotPip2 )
 	self.DotPip2 = DotPip2
 	
 	local DotPip4 = LUI.UIImage.new( 0, 0, 548, 552, 0, 0, -2, 2 )
 	DotPip4:setAlpha( 0.5 )
 	DotPip4:setImage( RegisterImage( 0x3854665C02218EF ) )
-	DotPip4:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DotPip4:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotPip4 )
 	self.DotPip4 = DotPip4
 	
 	local DotPip3 = LUI.UIImage.new( 0, 0, -2, 2, 0, 0, -2, 2 )
 	DotPip3:setAlpha( 0.5 )
 	DotPip3:setImage( RegisterImage( 0x3854665C02218EF ) )
-	DotPip3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DotPip3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotPip3 )
 	self.DotPip3 = DotPip3
 	

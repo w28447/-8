@@ -21,7 +21,7 @@ CoD[0xC339FA55EF8B2DD].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local background2 = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	background2:setImage( RegisterImage( 0xEF13A2CACBCF85C ) )
-	background2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD8EA9FE9B0BCF75 ) )
+	background2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	background2:setShaderVector( 0, 1, 1, 0, 0 )
 	background2:setShaderVector( 1, 0.75, 0, 0, 0 )
 	self:addElement( background2 )
@@ -34,7 +34,7 @@ CoD[0xC339FA55EF8B2DD].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local snowdirt = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	snowdirt:setImage( RegisterImage( 0xB0FB139FC8D4 ) )
-	snowdirt:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9227A50BA2B8D21 ) )
+	snowdirt:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	snowdirt:setShaderVector( 0, 0, 5, 0, 0 )
 	snowdirt:setShaderVector( 1, 15, 0, 0, 0 )
 	self:addElement( snowdirt )

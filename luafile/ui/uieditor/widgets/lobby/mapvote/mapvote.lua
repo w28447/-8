@@ -56,7 +56,7 @@ CoD.MapVote.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg
 	MapVoteItemRandom.MapImage:setImage( RegisterImage( 0xEDBAE30E94D38D3 ) )
 	MapVoteItemRandom.MapVoteMapNameGameModeLayout.MapName:setText( LocalizeToUpperString( 0x8C899D3B96CB850 ) )
 	MapVoteItemRandom.MapVoteMapNameGameModeLayout.GameMode:setText( LocalizeToUpperString( 0xFDFC63B040DE92E ) )
-	MapVoteItemRandom.GameModeIcon:setImage( RegisterImage( 0x7615068F50B3D66 ) )
+	MapVoteItemRandom.GameModeIcon:setImage( RegisterImage( "blacktransparent" ) )
 	MapVoteItemRandom.VoteType:setText( LocalizeToUpperString( 0xA0C72A43293DDE0 ) )
 	MapVoteItemRandom:subscribeToGlobalModel( f1_arg1, "MapVote", "mapVoteCountRandom", function ( model )
 		local f7_local0 = model:get()
@@ -86,7 +86,7 @@ CoD.MapVote.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg
 		CoD.LobbyUtility.LobbyMapVoteSelectRandom( self, f10_arg2 )
 		return true
 	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( MapVoteItemRandom )
@@ -195,7 +195,7 @@ CoD.MapVote.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg
 		end
 	end, function ( f25_arg0, f25_arg1, f25_arg2 )
 		if CoD.LobbyUtility.MapVotePreviousSelectable() then
-			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -258,7 +258,7 @@ CoD.MapVote.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg
 		CoD.LobbyUtility.LobbyMapVoteSelectNext( self, f33_arg2 )
 		return true
 	end, function ( f34_arg0, f34_arg1, f34_arg2 )
-		CoD.Menu.SetButtonLabel( f34_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f34_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( MapVoteItemNext )

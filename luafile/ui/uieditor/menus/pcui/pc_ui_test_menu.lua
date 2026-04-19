@@ -14,7 +14,7 @@ LUI.createMenu.PC_UI_Test_Menu = function ( f1_arg0, f1_arg1 )
 	self.anyChildUsesUpdateState = true
 	
 	local Background = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	Background:setImage( RegisterImage( 0x4BF88A437F4C579 ) )
+	Background:setImage( RegisterImage( "uie_fe_cp_background" ) )
 	self:addElement( Background )
 	self.Background = Background
 	
@@ -43,7 +43,7 @@ LUI.createMenu.PC_UI_Test_Menu = function ( f1_arg0, f1_arg1 )
 		SendMenuResponse( self, "PC_UI_Test_Menu", "closing", f3_arg2 )
 		return true
 	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x6C253CF816B40B5, nil, "ESCAPE" )
+		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/close", nil, "ESCAPE" )
 		return true
 	end, false )
 	MenuFrame:setModel( self.buttonModel, f1_arg0 )

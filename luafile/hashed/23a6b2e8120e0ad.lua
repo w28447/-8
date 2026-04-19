@@ -54,8 +54,8 @@ CoD.CharacterSelection_CharacterListWidget.new = function ( f1_arg0, f1_arg1, f1
 	local Brackets = LUI.UIImage.new( 0.5, 0.5, -99, 93, 0, 0, 0, 192 )
 	Brackets:setRGB( 0.42, 0.52, 0.54 )
 	Brackets:setScale( 0.98, 0.98 )
-	Brackets:setImage( RegisterImage( 0x758EA17A473405 ) )
-	Brackets:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Brackets:setImage( RegisterImage( "uie_ui_hud_core_draft_brackets" ) )
+	Brackets:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Brackets )
 	self.Brackets = Brackets
 	
@@ -63,14 +63,14 @@ CoD.CharacterSelection_CharacterListWidget.new = function ( f1_arg0, f1_arg1, f1
 	NameplateBars:setRGB( 0.13, 0.14, 0.18 )
 	NameplateBars:setAlpha( 0.9 )
 	NameplateBars:setScale( 0.98, 0.98 )
-	NameplateBars:setImage( RegisterImage( 0x29BE1DE77EE233C ) )
+	NameplateBars:setImage( RegisterImage( "uie_ui_hud_core_draft_nameplate_bars" ) )
 	self:addElement( NameplateBars )
 	self.NameplateBars = NameplateBars
 	
 	local Nameplate = LUI.UIImage.new( 0.5, 0.5, -74, 72, 0, 0, 123, 141 )
 	Nameplate:setRGB( 0.19, 0.18, 0.17 )
 	Nameplate:setScale( 1, 1 )
-	Nameplate:setImage( RegisterImage( 0xD16B33E79A589C5 ) )
+	Nameplate:setImage( RegisterImage( "uie_ui_hud_common_white_box" ) )
 	self:addElement( Nameplate )
 	self.Nameplate = Nameplate
 	
@@ -78,7 +78,7 @@ CoD.CharacterSelection_CharacterListWidget.new = function ( f1_arg0, f1_arg1, f1
 	NameplateLED:setRGB( 1, 0.64, 0 )
 	NameplateLED:setAlpha( 0.34 )
 	NameplateLED:setScale( 0.96, 0.88 )
-	NameplateLED:setImage( RegisterImage( 0xEF4FA873EBB213D ) )
+	NameplateLED:setImage( RegisterImage( "uie_ui_menu_draft_patternbar" ) )
 	NameplateLED:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	NameplateLED:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( NameplateLED )
@@ -108,15 +108,15 @@ CoD.CharacterSelection_CharacterListWidget.new = function ( f1_arg0, f1_arg1, f1
 	BracketsGlow:setAlpha( 0 )
 	BracketsGlow:setScale( 0.98, 0.98 )
 	BracketsGlow:setImage( RegisterImage( 0x13DC8162ADAFE2B ) )
-	BracketsGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	BracketsGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BracketsGlow )
 	self.BracketsGlow = BracketsGlow
 	
 	local BracketGlowUnavailable = LUI.UIImage.new( 0.5, 0.5, -99, 93, 0, 0, 1, 193 )
 	BracketGlowUnavailable:setAlpha( 0 )
 	BracketGlowUnavailable:setScale( 0.98, 0.98 )
-	BracketGlowUnavailable:setImage( RegisterImage( 0x44099B1402362E ) )
-	BracketGlowUnavailable:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	BracketGlowUnavailable:setImage( RegisterImage( "uie_ui_hud_core_draft_brackets_glow_unavailable" ) )
+	BracketGlowUnavailable:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BracketGlowUnavailable )
 	self.BracketGlowUnavailable = BracketGlowUnavailable
 	
@@ -128,7 +128,7 @@ CoD.CharacterSelection_CharacterListWidget.new = function ( f1_arg0, f1_arg1, f1
 	
 	local Portrait = LUI.UIImage.new( 0.5, 0.5, -83, 83, 0, 0, -3, 143 )
 	Portrait:setScale( 0.9, 0.9 )
-	Portrait:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	Portrait:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	Portrait:setShaderVector( 0, 0, 1, 0, 0 )
 	Portrait:setShaderVector( 1, 0, 0, 0, 0 )
 	Portrait:setShaderVector( 2, 0, 0.85, 0, 0 )
@@ -168,15 +168,15 @@ CoD.CharacterSelection_CharacterListWidget.new = function ( f1_arg0, f1_arg1, f1
 	local EquippedMarkerTick = LUI.UIImage.new( 0, 0, 116, 160, 0, 0, 24, 68 )
 	EquippedMarkerTick:setAlpha( 0 )
 	EquippedMarkerTick:setZoom( 4 )
-	EquippedMarkerTick:setImage( RegisterImage( 0x9A8B26C9B001758 ) )
+	EquippedMarkerTick:setImage( RegisterImage( "uie_ui_menu_cac_equipped_marker_tick" ) )
 	self:addElement( EquippedMarkerTick )
 	self.EquippedMarkerTick = EquippedMarkerTick
 	
 	local EquippedMarkerTickAdd = LUI.UIImage.new( 0, 0, 116, 160, 0, 0, 24, 68 )
 	EquippedMarkerTickAdd:setAlpha( 0 )
 	EquippedMarkerTickAdd:setZoom( 4 )
-	EquippedMarkerTickAdd:setImage( RegisterImage( 0x9A8B26C9B001758 ) )
-	EquippedMarkerTickAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	EquippedMarkerTickAdd:setImage( RegisterImage( "uie_ui_menu_cac_equipped_marker_tick" ) )
+	EquippedMarkerTickAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( EquippedMarkerTickAdd )
 	self.EquippedMarkerTickAdd = EquippedMarkerTickAdd
 	

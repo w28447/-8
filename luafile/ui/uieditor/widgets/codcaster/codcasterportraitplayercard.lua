@@ -75,7 +75,7 @@ CoD.CodCasterPortraitPlayerCard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local CodCasterPlayerCardName = LUI.UIText.new( 0, 0, 11, 312, 0, 0, 7, 28 )
 	CodCasterPlayerCardName:setRGB( ColorSet.PlayerYellow.r, ColorSet.PlayerYellow.g, ColorSet.PlayerYellow.b )
-	CodCasterPlayerCardName:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	CodCasterPlayerCardName:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	CodCasterPlayerCardName:setTTF( "notosans_bold" )
 	CodCasterPlayerCardName:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	CodCasterPlayerCardName:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )
@@ -85,7 +85,7 @@ CoD.CodCasterPortraitPlayerCard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local FlareVertical = LUI.UIImage.new( 0, 0, -11, 98, 0, 0, -27.5, 144.5 )
 	FlareVertical:setScale( 1, 1.3 )
 	FlareVertical:setImage( RegisterImage( 0x3BEA16D33C8F870 ) )
-	FlareVertical:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	FlareVertical:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	FlareVertical:subscribeToGlobalModel( f1_arg1, "DeadSpectate", "playerIndex", function ( model )
 		local f5_local0 = model:get()
 		if f5_local0 ~= nil then
@@ -122,7 +122,7 @@ CoD.CodCasterPortraitPlayerCard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local FlareTop = LUI.UIImage.new( 0, 0, -22.5, 109.5, 0, 0, -4.5, 127.5 )
 	FlareTop:setImage( RegisterImage( 0x86A85E0C09931D2 ) )
-	FlareTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	FlareTop:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FlareTop )
 	self.FlareTop = FlareTop
 	

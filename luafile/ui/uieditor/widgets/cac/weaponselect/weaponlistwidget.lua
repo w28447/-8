@@ -124,10 +124,10 @@ CoD.WeaponListWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 		end
 	end, function ( f13_arg0, f13_arg1, f13_arg2 )
 		if not CoD.CACUtility.IsCACItemLocked( f13_arg1, f13_arg0, f13_arg2 ) and not CoD.CACUtility.IsCACBlackMarketItemLocked( f13_arg1, f13_arg0, f13_arg2 ) and CoD.CACUtility.HasSignatureWeapons( f13_arg1, f13_arg0, f13_arg2 ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif not CoD.CACUtility.IsItemEquippedInCurrentLoadout( f13_arg1, f13_arg0, f13_arg2 ) and not CoD.CACUtility.IsCACItemLocked( f13_arg1, f13_arg0, f13_arg2 ) and not CoD.CACUtility.IsCACBlackMarketItemLocked( f13_arg1, f13_arg0, f13_arg2 ) and not CoD.CACUtility.HasSignatureWeapons( f13_arg1, f13_arg0, f13_arg2 ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -224,8 +224,8 @@ CoD.WeaponListWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 		}
 	} )
 	PCArrowL:setZRot( 90 )
-	PCArrowL.Arrow:setImage( RegisterImage( 0x5E74D00B45D12B6 ) )
-	PCArrowL.Arrow2:setImage( RegisterImage( 0x5E74D00B45D12B6 ) )
+	PCArrowL.Arrow:setImage( RegisterImage( "uie_optionswidgets_arrow" ) )
+	PCArrowL.Arrow2:setImage( RegisterImage( "uie_optionswidgets_arrow" ) )
 	PCArrowL:appendEventHandler( "input_source_changed", function ( f29_arg0, f29_arg1 )
 		f29_arg1.menu = f29_arg1.menu or f1_arg0
 		CoD.Menu.UpdateButtonShownState( f29_arg0, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
@@ -277,8 +277,8 @@ CoD.WeaponListWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 		}
 	} )
 	PCArrowR:setZRot( 270 )
-	PCArrowR.Arrow:setImage( RegisterImage( 0x5E74D00B45D12B6 ) )
-	PCArrowR.Arrow2:setImage( RegisterImage( 0x5E74D00B45D12B6 ) )
+	PCArrowR.Arrow:setImage( RegisterImage( "uie_optionswidgets_arrow" ) )
+	PCArrowR.Arrow2:setImage( RegisterImage( "uie_optionswidgets_arrow" ) )
 	PCArrowR:appendEventHandler( "input_source_changed", function ( f35_arg0, f35_arg1 )
 		f35_arg1.menu = f35_arg1.menu or f1_arg0
 		CoD.Menu.UpdateButtonShownState( f35_arg0, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
@@ -334,7 +334,7 @@ CoD.WeaponListWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 		CoD.CACUtility.HideWeaponVariantList( f41_arg1, f41_arg2 )
 		return true
 	end, function ( f42_arg0, f42_arg1, f42_arg2 )
-		CoD.Menu.SetButtonLabel( f42_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f42_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	self:addElement( WeaponVariantListWidget )

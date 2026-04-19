@@ -15,28 +15,28 @@ CoD.arenaLeaguePlayBg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local AmbientCornerR = LUI.UIImage.new( 0.5, 0.5, 794, 904, 0, 0, 84, 194 )
 	AmbientCornerR:setAlpha( 0.7 )
 	AmbientCornerR:setImage( RegisterImage( 0xD87B290C1BEDDA0 ) )
-	AmbientCornerR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	AmbientCornerR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( AmbientCornerR )
 	self.AmbientCornerR = AmbientCornerR
 	
 	local AmbientCornerL = LUI.UIImage.new( 0.5, 0.5, -793, -903, 0, 0, 84, 194 )
 	AmbientCornerL:setAlpha( 0.5 )
 	AmbientCornerL:setImage( RegisterImage( 0xD87B290C1BEDDA0 ) )
-	AmbientCornerL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	AmbientCornerL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( AmbientCornerL )
 	self.AmbientCornerL = AmbientCornerL
 	
 	local DotL = LUI.UIImage.new( 0, 0, 50, 62, 1, 1, -90, -78 )
 	DotL:setAlpha( 0.04 )
 	DotL:setImage( RegisterImage( 0x520FD38B273BF8 ) )
-	DotL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DotL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotL )
 	self.DotL = DotL
 	
 	local DotR = LUI.UIImage.new( 1, 1, -59, -47, 1, 1, -90, -78 )
 	DotR:setAlpha( 0.04 )
 	DotR:setImage( RegisterImage( 0x520FD38B273BF8 ) )
-	DotR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DotR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotR )
 	self.DotR = DotR
 	
@@ -50,7 +50,7 @@ CoD.arenaLeaguePlayBg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	dataFui:setAlpha( 0.12 )
 	dataFui:setScale( 2, 2 )
 	dataFui:setImage( RegisterImage( 0x73A4BBA3912B0F ) )
-	dataFui:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	dataFui:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( dataFui )
 	self.dataFui = dataFui
 	
@@ -58,7 +58,7 @@ CoD.arenaLeaguePlayBg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	bgLineBot:setAlpha( 0.08 )
 	bgLineBot:setZRot( 180 )
 	bgLineBot:setImage( RegisterImage( 0x3467C5D506EA009 ) )
-	bgLineBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	bgLineBot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	bgLineBot:setShaderVector( 0, 0, 0, 0, 0 )
 	bgLineBot:setupNineSliceShader( 16, 10 )
 	self:addElement( bgLineBot )
@@ -67,7 +67,7 @@ CoD.arenaLeaguePlayBg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local bgLineTop = LUI.UIImage.new( 0, 0, 51, 1869, 0, 0, 78, 442 )
 	bgLineTop:setAlpha( 0.08 )
 	bgLineTop:setImage( RegisterImage( 0x3467C5D506EA009 ) )
-	bgLineTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	bgLineTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	bgLineTop:setShaderVector( 0, 0, 0, 0, 0 )
 	bgLineTop:setupNineSliceShader( 16, 10 )
 	self:addElement( bgLineTop )
@@ -92,7 +92,7 @@ CoD.arenaLeaguePlayBg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local connectionText = LUI.UIImage.new( 0, 0, 1719, 1855, 0, 0, 978, 990 )
 	connectionText:setAlpha( 0.29 )
 	connectionText:setImage( RegisterImage( 0x9CC4F19737093CE ) )
-	connectionText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	connectionText:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( connectionText )
 	self.connectionText = connectionText
 	

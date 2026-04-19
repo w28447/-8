@@ -38,7 +38,7 @@ CoD[0x2991D141DEC107A].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local beakerFlames = LUI.UIImage.new( 0, 0, 708.5, 903.5, 0, 0, 163, 272 )
 	beakerFlames:setRGB( 0.44, 0.58, 0.87 )
 	beakerFlames:setImage( RegisterImage( 0x90C9EAABB997320 ) )
-	beakerFlames:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9227A50BA2B8D21 ) )
+	beakerFlames:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	beakerFlames:setShaderVector( 0, 0, 3, 0, 0 )
 	beakerFlames:setShaderVector( 1, 24, 0, 0, 0 )
 	self:addElement( beakerFlames )
@@ -46,7 +46,7 @@ CoD[0x2991D141DEC107A].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local mist = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	mist:setImage( RegisterImage( 0x699A82F55A31273 ) )
-	mist:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD8EA9FE9B0BCF75 ) )
+	mist:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	mist:setShaderVector( 0, 1, 1, 0, 0 )
 	mist:setShaderVector( 1, -0.01, 0, 0, 0 )
 	self:addElement( mist )
@@ -54,7 +54,7 @@ CoD[0x2991D141DEC107A].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local bubbles = LUI.UIImage.new( 0, 0, 759, 845, 0, 0, 163, 496 )
 	bubbles:setImage( RegisterImage( 0x355FCE59C482A5E ) )
-	bubbles:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD8EA9FE9B0BCF75 ) )
+	bubbles:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	bubbles:setShaderVector( 0, 1, 1, 0, 0 )
 	bubbles:setShaderVector( 1, 0, 0.3, 0, 0 )
 	self:addElement( bubbles )
@@ -62,7 +62,7 @@ CoD[0x2991D141DEC107A].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local bubbles2 = LUI.UIImage.new( 0, 0, 655.5, 692.5, 0, 0, 190.5, 353.5 )
 	bubbles2:setImage( RegisterImage( 0x355FCE59C482A5E ) )
-	bubbles2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD8EA9FE9B0BCF75 ) )
+	bubbles2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	bubbles2:setShaderVector( 0, 1, 1, 0, 0 )
 	bubbles2:setShaderVector( 1, 0, 0.3, 0, 0 )
 	self:addElement( bubbles2 )
@@ -70,7 +70,7 @@ CoD[0x2991D141DEC107A].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local beakerShine = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	beakerShine:setImage( RegisterImage( 0x33E8918E3CD20C7 ) )
-	beakerShine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	beakerShine:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( beakerShine )
 	self.beakerShine = beakerShine
 	

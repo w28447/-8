@@ -19,7 +19,7 @@ CoD.CallingCards_Asset_dragon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local dragonFlame = LUI.UIImage.new( 0, 0, 10, 138, 0, 0, 208, 336 )
 	dragonFlame:setRGB( 0.97, 0.8, 0.53 )
 	dragonFlame:setImage( RegisterImage( 0x6EA46D64EEC95E0 ) )
-	dragonFlame:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9227A50BA2B8D21 ) )
+	dragonFlame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	dragonFlame:setShaderVector( 0, 0, 3, 0, 0 )
 	dragonFlame:setShaderVector( 1, 12, 0, 0, 0 )
 	self:addElement( dragonFlame )

@@ -27,7 +27,7 @@ CoD.CompassGroupMPContainerTransition.new = function ( f1_arg0, f1_arg1, f1_arg2
 	self.CompassHacked = CompassHacked
 	
 	local hudhackedmapwidget = CoD.hud_hacked_map_widget.new( f1_arg0, f1_arg1, 0, 0, 1, 349, 0, 0, 5, 353 )
-	hudhackedmapwidget:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	hudhackedmapwidget:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( hudhackedmapwidget )
 	self.hudhackedmapwidget = hudhackedmapwidget
 	

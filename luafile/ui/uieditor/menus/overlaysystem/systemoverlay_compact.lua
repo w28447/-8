@@ -121,7 +121,7 @@ LUI.createMenu.SystemOverlay_Compact = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f13_arg0, f13_arg1, f13_arg2 )
 		if not IsPC() and HasOverlayContinueAction( f13_arg1 ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x6393FF34EA56966, nil, nil )
+			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, nil )
 			return true
 		elseif IsPC() and IsGamepad( f13_arg2 ) and CoD.OverlayUtility.HasOverlayACrossAction( f13_arg1 ) then
 			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x7E8A8BFFB7D0CD4, nil, nil )
@@ -145,7 +145,7 @@ LUI.createMenu.SystemOverlay_Compact = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f15_arg0, f15_arg1, f15_arg2 )
 		if not IsPC() and HasOverlayBackAction( f15_arg1 ) then
-			CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 			return true
 		elseif IsPC() and IsGamepad( f15_arg2 ) and CoD.OverlayUtility.HasOverlayBCircleAction( f15_arg1 ) then
 			CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x7E8A8BFFB7D0CD4, nil, "ESCAPE" )

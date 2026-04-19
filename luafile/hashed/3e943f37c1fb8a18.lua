@@ -12,7 +12,7 @@ CoD.ReticleCycleColorPrompt.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local Label = LUI.UIText.new( 0, 1, 0, 0, 0, 0, 32, 50 )
 	Label:setRGB( 0.39, 0.39, 0.39 )
-	Label:setText( LocalizeToUpperString( 0x708A65BE0D25597 ) )
+	Label:setText( LocalizeToUpperString( "menu/cycle_color" ) )
 	Label:setTTF( "default" )
 	Label:setLetterSpacing( 4 )
 	Label:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -46,8 +46,8 @@ CoD.ReticleCycleColorPrompt.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local FrameBorder = LUI.UIImage.new( 0, 0, -174, 374, 0, 0, -92.5, -4.5 )
 	FrameBorder:setAlpha( 0.15 )
-	FrameBorder:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrameBorder:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrameBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FrameBorder:setupNineSliceShader( 12, 12 )
 	self:addElement( FrameBorder )
@@ -55,7 +55,7 @@ CoD.ReticleCycleColorPrompt.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 0, -174, 374, 0, 0, -92.5, -4.5 )
 	NoiseTiledBacking:setAlpha( 0.5 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )

@@ -16,19 +16,19 @@ CoD.ScrStk_MeterKarat.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.FocusMeterFillWhite0 = FocusMeterFillWhite0
 	
 	local ScrStkMeterKaratInner0 = CoD.ScrStk_MeterKaratInner.new( f1_arg0, f1_arg1, 0.5, 0.5, -8, 10, 0.5, 0.5, -19, 21 )
-	ScrStkMeterKaratInner0:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	ScrStkMeterKaratInner0:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ScrStkMeterKaratInner0 )
 	self.ScrStkMeterKaratInner0 = ScrStkMeterKaratInner0
 	
 	local ScrStkMeterKaratInner00 = CoD.ScrStk_MeterKaratInner.new( f1_arg0, f1_arg1, 0.5, 0.5, -8, 10, 0.5, 0.5, -20, 20 )
-	ScrStkMeterKaratInner00:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	ScrStkMeterKaratInner00:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ScrStkMeterKaratInner00 )
 	self.ScrStkMeterKaratInner00 = ScrStkMeterKaratInner00
 	
 	local Image0 = LUI.UIImage.new( 0.5, 0.5, -17, 19, 0.5, 0.5, -3, 3 )
 	Image0:setAlpha( 0 )
-	Image0:setImage( RegisterImage( 0x5BE416E17DAB33B ) )
-	Image0:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Image0:setImage( RegisterImage( "uie_t7_core_hud_mapwidget_panelglow" ) )
+	Image0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image0 )
 	self.Image0 = Image0
 	

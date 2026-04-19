@@ -18,8 +18,8 @@ CoD.Challenges_CallingCardProfiler_DarkOps.new = function ( f1_arg0, f1_arg1, f1
 	
 	local CardIconBorder = LUI.UIImage.new( 0.5, 0.5, -262.5, 262.5, 0, 0, 0, 129 )
 	CardIconBorder:setAlpha( 0.15 )
-	CardIconBorder:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	CardIconBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	CardIconBorder:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	CardIconBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	CardIconBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	CardIconBorder:setupNineSliceShader( 12, 12 )
 	self:addElement( CardIconBorder )
@@ -105,7 +105,7 @@ CoD.Challenges_CallingCardProfiler_DarkOps.new = function ( f1_arg0, f1_arg1, f1
 	local TitleBg = LUI.UIImage.new( 0.5, 0.5, -261, 261, 0, 0, 42, 87 )
 	TitleBg:setRGB( 0, 0, 0 )
 	TitleBg:setAlpha( 0.85 )
-	TitleBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE125638BF94665F ) )
+	TitleBg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	TitleBg:setShaderVector( 0, 0.02, 0.02, 0.02, 0.02 )
 	self:addElement( TitleBg )
 	self.TitleBg = TitleBg

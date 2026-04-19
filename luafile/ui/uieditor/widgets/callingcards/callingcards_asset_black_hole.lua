@@ -11,7 +11,7 @@ CoD.CallingCards_Asset_black_hole.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local blackhole = LUI.UIImage.new( 0, 0, 0, 435, 0, 0, 0, 435 )
 	blackhole:setZRot( -220 )
 	blackhole:setImage( RegisterImage( 0x7D54FF04A40BF72 ) )
-	blackhole:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	blackhole:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( blackhole )
 	self.blackhole = blackhole
 	

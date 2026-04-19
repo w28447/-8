@@ -14,12 +14,12 @@ CoD.Armory_AttachmentSlotContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local ButtonBGMirrorSelected = LUI.UIImage.new( 0, 0, 0, 148, 0, 0, 0, 112 )
-	ButtonBGMirrorSelected:setImage( RegisterImage( 0x697FCBBE26E245A ) )
+	ButtonBGMirrorSelected:setImage( RegisterImage( "uie_ui_menu_cac_attachment_button_bg_mirror_selected" ) )
 	self:addElement( ButtonBGMirrorSelected )
 	self.ButtonBGMirrorSelected = ButtonBGMirrorSelected
 	
 	local ButtonBGMirror = LUI.UIImage.new( 0, 0, 0, 148, 0, 0, 0, 112 )
-	ButtonBGMirror:setImage( RegisterImage( 0x79FAE70E7559B66 ) )
+	ButtonBGMirror:setImage( RegisterImage( "uie_ui_menu_cac_attachment_button_bg_mirror" ) )
 	self:addElement( ButtonBGMirror )
 	self.ButtonBGMirror = ButtonBGMirror
 	

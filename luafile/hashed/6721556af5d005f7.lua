@@ -17,7 +17,7 @@ CoD.SpawnRegionAutoSpawn.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local DangerText = LUI.UIText.new( 0, 0, -39.5, 119.5, 0, 0, 68, 88 )
 	DangerText:setRGB( 1, 0, 0 )
 	DangerText:setAlpha( 0 )
-	DangerText:setText( Engine[0xF9F1239CFD921FE]( 0x57915A72383BA7C ) )
+	DangerText:setText( Engine[0xF9F1239CFD921FE]( "mpui/danger" ) )
 	DangerText:setTTF( "ttmussels_demibold" )
 	DangerText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	DangerText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -39,7 +39,7 @@ CoD.SpawnRegionAutoSpawn.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local iconFrame = LUI.UIImage.new( 0, 0, 16, 64, 0, 0, 16, 64 )
 	iconFrame:setAlpha( 0 )
 	iconFrame:setImage( RegisterImage( 0xC8EC26A4504B31 ) )
-	iconFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	iconFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( iconFrame )
 	self.iconFrame = iconFrame
 	

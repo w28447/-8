@@ -24,7 +24,7 @@ CoD.Toast_Container_FactionReward.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.65 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -42,7 +42,7 @@ CoD.Toast_Container_FactionReward.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.PurchasedImage = PurchasedImage
 	
 	local NotifText = LUI.UIText.new( 0, 0, 80, 335, 0.5, 0.5, -16.5, 16.5 )
-	NotifText:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	NotifText:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	NotifText:setTTF( "ttmussels_demibold" )
 	NotifText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	NotifText:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )

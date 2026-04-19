@@ -9,7 +9,7 @@ CoD.CodCasterPortraitPlayerListEntryExtra.new = function ( f1_arg0, f1_arg1, f1_
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local PlayerListEntryStreak = LUI.UIText.new( 0.38, 0.62, 1, 1, 0, 0, 14, 30 )
-	PlayerListEntryStreak:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	PlayerListEntryStreak:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	PlayerListEntryStreak:setTTF( "ttmussels_demibold" )
 	PlayerListEntryStreak:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	PlayerListEntryStreak:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -17,7 +17,7 @@ CoD.CodCasterPortraitPlayerListEntryExtra.new = function ( f1_arg0, f1_arg1, f1_
 	self.PlayerListEntryStreak = PlayerListEntryStreak
 	
 	local PlayerListEntryKD = LUI.UIText.new( 0.01, 0.63, -16, -16, 0, 0, 14, 30 )
-	PlayerListEntryKD:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	PlayerListEntryKD:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	PlayerListEntryKD:setTTF( "ttmussels_demibold" )
 	PlayerListEntryKD:setLetterSpacing( 1 )
 	PlayerListEntryKD:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

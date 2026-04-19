@@ -80,7 +80,7 @@ CoD.ContractItemCost.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	fxEmber:setRGB( 0, 0.48, 1 )
 	fxEmber:setAlpha( 0 )
 	fxEmber:setScale( 0.6, 0.6 )
-	fxEmber:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	fxEmber:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( fxEmber )
 	self.fxEmber = fxEmber
 	
@@ -88,7 +88,7 @@ CoD.ContractItemCost.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	fxEmber2:setRGB( 0, 0.82, 1 )
 	fxEmber2:setAlpha( 0 )
 	fxEmber2:setScale( 0.6, 0.6 )
-	fxEmber2:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	fxEmber2:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( fxEmber2 )
 	self.fxEmber2 = fxEmber2
 	

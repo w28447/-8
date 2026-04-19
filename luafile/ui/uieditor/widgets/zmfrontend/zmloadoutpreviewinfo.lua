@@ -28,7 +28,7 @@ CoD.ZMLoadoutPreviewInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local TiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TiledBacking:setAlpha( 0.4 )
-	TiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking:setupNineSliceShader( 196, 88 )
@@ -37,7 +37,7 @@ CoD.ZMLoadoutPreviewInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local LinePattern = LUI.UIImage.new( 0, 0, 0, 313, 0, 1, 0, 0 )
 	LinePattern:setAlpha( 0.5 )
-	LinePattern:setImage( RegisterImage( 0xB8CFFD5326CFE1B ) )
+	LinePattern:setImage( RegisterImage( "uie_ui_menu_zombies_cac_grunge_pattern" ) )
 	LinePattern:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	LinePattern:setShaderVector( 0, 0, 0, 0, 0 )
 	LinePattern:setupNineSliceShader( 256, 256 )
@@ -72,7 +72,7 @@ CoD.ZMLoadoutPreviewInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local SubHeaderDivider = LUI.UIImage.new( 0, 0, 331, 929, 0.5, 0.5, -33, -31 )
 	SubHeaderDivider:setRGB( 0.92, 0.92, 0.92 )
 	SubHeaderDivider:setAlpha( 0.25 )
-	SubHeaderDivider:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	SubHeaderDivider:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	SubHeaderDivider:setShaderVector( 0, 0, 1, 0, 0 )
 	SubHeaderDivider:setShaderVector( 1, 0, 1.24, 0, 0 )
 	SubHeaderDivider:setShaderVector( 2, 0, 1, 0, 0 )
@@ -98,13 +98,13 @@ CoD.ZMLoadoutPreviewInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local Corner9Slice2 = CoD.Corner9Slice.new( f1_arg0, f1_arg1, 0.01, 0.01, 302.5, 923.5, -0.01, 1.01, 1, -1 )
 	Corner9Slice2:setAlpha( 0.6 )
-	Corner9Slice2:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Corner9Slice2:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Corner9Slice2 )
 	self.Corner9Slice2 = Corner9Slice2
 	
 	local Corner9Slice = CoD.Corner9Slice.new( f1_arg0, f1_arg1, 0.01, 0.01, -6, 308, 0.17, 1.19, -22, -24 )
 	Corner9Slice:setAlpha( 0.6 )
-	Corner9Slice:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Corner9Slice:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Corner9Slice )
 	self.Corner9Slice = Corner9Slice
 	

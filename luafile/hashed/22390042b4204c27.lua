@@ -23,7 +23,7 @@ LUI.createMenu.Theater_SelectFilm = function ( f1_arg0, f1_arg1 )
 	
 	local BGBlack = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BGBlack:setAlpha( 0.9 )
-	BGBlack:setImage( RegisterImage( 0x4BF88A437F4C579 ) )
+	BGBlack:setImage( RegisterImage( "uie_fe_cp_background" ) )
 	self:addElement( BGBlack )
 	self.BGBlack = BGBlack
 	
@@ -90,7 +90,7 @@ LUI.createMenu.Theater_SelectFilm = function ( f1_arg0, f1_arg1 )
 		ResetThumbnailViewer( f5_arg2 )
 		return true
 	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	DirectorTheaterSelectFile.id = "DirectorTheaterSelectFile"

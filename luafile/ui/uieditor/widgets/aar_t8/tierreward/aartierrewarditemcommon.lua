@@ -13,7 +13,7 @@ CoD.AARTierRewardItemCommon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, -0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.85 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -23,7 +23,7 @@ CoD.AARTierRewardItemCommon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local BGBrighten = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BGBrighten:setRGB( ColorSet.BlackMarketCommon.r, ColorSet.BlackMarketCommon.g, ColorSet.BlackMarketCommon.b )
 	BGBrighten:setAlpha( 0.05 )
-	BGBrighten:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	BGBrighten:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BGBrighten )
 	self.BGBrighten = BGBrighten
 	
@@ -57,7 +57,7 @@ CoD.AARTierRewardItemCommon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local LockIcon = LUI.UIImage.new( 1, 1, -52, 0, 1, 1, -52, 0 )
 	LockIcon:setAlpha( 0 )
 	LockIcon:setImage( RegisterImage( 0x410BF8B0F9878A4 ) )
-	LockIcon:setMaterial( LUI.UIImage.GetCachedMaterial( 0x67D1E3A3D2D1BF ) )
+	LockIcon:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_saturation_normal" ) )
 	LockIcon:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( LockIcon )
 	self.LockIcon = LockIcon
@@ -65,7 +65,7 @@ CoD.AARTierRewardItemCommon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local CommonFrame01 = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	CommonFrame01:setRGB( ColorSet.BlackMarketCommon.r, ColorSet.BlackMarketCommon.g, ColorSet.BlackMarketCommon.b )
 	CommonFrame01:setImage( RegisterImage( 0xCA6E5C175806396 ) )
-	CommonFrame01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	CommonFrame01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	CommonFrame01:setShaderVector( 0, 0, 0, 0, 0 )
 	CommonFrame01:setupNineSliceShader( 8, 8 )
 	self:addElement( CommonFrame01 )

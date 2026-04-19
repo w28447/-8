@@ -26,7 +26,7 @@ CoD.GameEndScoreTitleFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0.5, 0.5, -315.5, 315.5, 0.09, 0.09, 83, 104 )
 	NoiseTiledBacking:setAlpha( 0.8 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -85,16 +85,16 @@ CoD.GameEndScoreTitleFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local arrow01 = LUI.UIImage.new( 0, 0, 538.5, 543.5, 0, 0, 6.5, 11.5 )
 	arrow01:setRGB( 0.92, 0.92, 0.92 )
 	arrow01:setAlpha( 0.05 )
-	arrow01:setImage( RegisterImage( 0x19A57A2805CEECA ) )
-	arrow01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	arrow01:setImage( RegisterImage( "uie_ui_hud_common_line_arrow" ) )
+	arrow01:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( arrow01 )
 	self.arrow01 = arrow01
 	
 	local arrow02 = LUI.UIImage.new( 0, 0, 105.5, 110.5, 0, 0, 6.5, 11.5 )
 	arrow02:setRGB( 0.92, 0.92, 0.92 )
 	arrow02:setAlpha( 0.05 )
-	arrow02:setImage( RegisterImage( 0x19A57A2805CEECA ) )
-	arrow02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	arrow02:setImage( RegisterImage( "uie_ui_hud_common_line_arrow" ) )
+	arrow02:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( arrow02 )
 	self.arrow02 = arrow02
 	
@@ -115,7 +115,7 @@ CoD.GameEndScoreTitleFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local microtext4 = LUI.UIImage.new( 0, 0, 18.5, 36.5, 0, 0, 7, 11 )
 	microtext4:setAlpha( 0.1 )
 	microtext4:setImage( RegisterImage( 0x16C3274D8031268 ) )
-	microtext4:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	microtext4:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	microtext4:setShaderVector( 0, 0, 0.38, 0, 0 )
 	microtext4:setShaderVector( 1, 0, 0, 0, 0 )
 	microtext4:setShaderVector( 2, 0, 1, 0, 0 )
@@ -127,7 +127,7 @@ CoD.GameEndScoreTitleFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local microtext2 = LUI.UIImage.new( 0, 0, 600.5, 618.5, 0, 0, 6.5, 10.5 )
 	microtext2:setAlpha( 0.1 )
 	microtext2:setImage( RegisterImage( 0x16C3274D8031268 ) )
-	microtext2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	microtext2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	microtext2:setShaderVector( 0, 0, 0.38, 0, 0 )
 	microtext2:setShaderVector( 1, 0, 0, 0, 0 )
 	microtext2:setShaderVector( 2, 0, 1, 0, 0 )

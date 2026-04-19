@@ -43,7 +43,7 @@ CoD.DirectorCustomGameMember.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local TeamColorBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TeamColorBacking:setAlpha( 0.05 )
-	TeamColorBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	TeamColorBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	TeamColorBacking.__Color = function ( f3_arg0 )
 		local f3_local0 = f3_arg0:get()
 		if f3_local0 ~= nil then
@@ -213,8 +213,8 @@ CoD.DirectorCustomGameMember.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local FrontendFrame02 = LUI.UIImage.new( 0, 1, -2, 2, 0, 1, -2, 2 )
 	FrontendFrame02:setAlpha( 0.2 )
-	FrontendFrame02:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrontendFrame02:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrame02:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrontendFrame02:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrame02:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrame02:setupNineSliceShader( 12, 12 )
 	self:addElement( FrontendFrame02 )
@@ -225,7 +225,7 @@ CoD.DirectorCustomGameMember.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	SelectedOverlay = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	SelectedOverlay:setRGB( ColorSet.T8__BEIGE__HEADER.r, ColorSet.T8__BEIGE__HEADER.g, ColorSet.T8__BEIGE__HEADER.b )
 	SelectedOverlay:setAlpha( 0 )
-	SelectedOverlay:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	SelectedOverlay:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( SelectedOverlay )
 	self.SelectedOverlay = SelectedOverlay
 	

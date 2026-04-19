@@ -83,13 +83,13 @@ CoD.ChooseClass_InGame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 		end
 	end, function ( f7_arg0, f7_arg1, f7_arg2 )
 		if IsPerControllerTablePropertyValue( f7_arg2, "isInMobileArmory", true ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], nil )
+			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], nil )
 			return true
 		elseif IsCurrentMenu( f7_arg1, "PositionDraft" ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], nil )
+			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], nil )
 			return true
 		elseif not IsDisabled( f7_arg0, f7_arg2 ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], nil )
+			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], nil )
 			return true
 		else
 			return false
@@ -178,7 +178,7 @@ CoD.ChooseClass_InGame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 			return true
 		end
 	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x493152B20AE4F58], nil, function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )

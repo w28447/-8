@@ -28,13 +28,13 @@ CoD.hud_speedometer_widget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local frame = LUI.UIImage.new( 0, 0, 0, 252, 0, 0, 0, 132 )
 	frame:setImage( RegisterImage( 0xFF7C4C17D5AB27E ) )
-	frame:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	frame:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( frame )
 	self.frame = frame
 	
 	local fill = LUI.UIImage.new( 0.5, 0.5, -126, 126, 0, 0, 4, 136 )
 	fill:setImage( RegisterImage( 0xC003D8EC72486C5 ) )
-	fill:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD5CA1A25ED87F4F ) )
+	fill:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	fill:setShaderVector( 1, 0.5, 0, 0, 0 )
 	fill:setShaderVector( 2, 1, 0, 0, 0 )
 	fill:setShaderVector( 3, 0, 0, 0, 0 )
@@ -50,7 +50,7 @@ CoD.hud_speedometer_widget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local arrow = LUI.UIImage.new( 0.5, 0.5, -6, 6, 0, 0, 76, 197 )
 	arrow:setImage( RegisterImage( 0xBA297CB535037BE ) )
-	arrow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	arrow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	arrow:subscribeToGlobalModel( f1_arg1, "PerController", "vehicle.speed", function ( model )
 		local f3_local0 = model:get()
 		if f3_local0 ~= nil then
@@ -62,7 +62,7 @@ CoD.hud_speedometer_widget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local line = LUI.UIImage.new( 0.5, 0.5, -6, 6, 0, 0, 32.5, 249.5 )
 	line:setImage( RegisterImage( 0x3847D97169AAAAF ) )
-	line:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	line:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	line:subscribeToGlobalModel( f1_arg1, "PerController", "vehicle.speed", function ( model )
 		local f4_local0 = model:get()
 		if f4_local0 ~= nil then

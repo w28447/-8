@@ -77,7 +77,7 @@ CoD.AARRewardHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local GridTiled = LUI.UIImage.new( -0, 1.01, -2, -2, 0, 1.01, -3, -3 )
 	GridTiled:setAlpha( 0.06 )
 	GridTiled:setScale( 0.99, 0.99 )
-	GridTiled:setImage( RegisterImage( 0xCA386792563DE8 ) )
+	GridTiled:setImage( RegisterImage( "uie_ui_menu_store_bg_grid" ) )
 	GridTiled:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	GridTiled:setShaderVector( 0, 0, 0, 0, 0 )
 	GridTiled:setupNineSliceShader( 64, 64 )

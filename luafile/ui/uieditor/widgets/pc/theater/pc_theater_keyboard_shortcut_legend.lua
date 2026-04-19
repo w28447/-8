@@ -25,7 +25,7 @@ CoD.PC_Theater_Keyboard_Shortcut_Legend.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local ModeTittle = LUI.UIText.new( 0, 0, 0, 950, 0, 0, -25, 0 )
 	ModeTittle:setRGB( ColorSet.T8__BUTTON__UNSELECTED__HEADER.r, ColorSet.T8__BUTTON__UNSELECTED__HEADER.g, ColorSet.T8__BUTTON__UNSELECTED__HEADER.b )
-	ModeTittle:setText( LocalizeToUpperString( 0xFC244F0B9CC213B ) )
+	ModeTittle:setText( LocalizeToUpperString( "demo/director_mode" ) )
 	ModeTittle:setTTF( "dinnext_regular" )
 	ModeTittle:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	ModeTittle:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )
@@ -96,7 +96,7 @@ CoD.PC_Theater_Keyboard_Shortcut_Legend.__resetProperties = function ( f8_arg0 )
 	f8_arg0.KeyboardShortcutsList:completeAnimation()
 	f8_arg0.ModeTittle:completeAnimation()
 	f8_arg0.KeyboardShortcutsList:setAlpha( 1 )
-	f8_arg0.ModeTittle:setText( LocalizeToUpperString( 0xFC244F0B9CC213B ) )
+	f8_arg0.ModeTittle:setText( LocalizeToUpperString( "demo/director_mode" ) )
 end
 
 CoD.PC_Theater_Keyboard_Shortcut_Legend.__clipsPerState = {
@@ -117,7 +117,7 @@ CoD.PC_Theater_Keyboard_Shortcut_Legend.__clipsPerState = {
 			f10_arg0.KeyboardShortcutsList:setAlpha( 1 )
 			f10_arg0.clipFinished( f10_arg0.KeyboardShortcutsList )
 			f10_arg0.ModeTittle:completeAnimation()
-			f10_arg0.ModeTittle:setText( LocalizeToUpperString( 0x2466B35790D15BF ) )
+			f10_arg0.ModeTittle:setText( LocalizeToUpperString( "demo/basic_mode" ) )
 			f10_arg0.clipFinished( f10_arg0.ModeTittle )
 		end
 	},
@@ -138,7 +138,7 @@ CoD.PC_Theater_Keyboard_Shortcut_Legend.__clipsPerState = {
 			f12_arg0.KeyboardShortcutsList:setAlpha( 1 )
 			f12_arg0.clipFinished( f12_arg0.KeyboardShortcutsList )
 			f12_arg0.ModeTittle:completeAnimation()
-			f12_arg0.ModeTittle:setText( LocalizeToUpperString( 0x2961AAF61FB5B21 ) )
+			f12_arg0.ModeTittle:setText( LocalizeToUpperString( "demo/object_link_mode" ) )
 			f12_arg0.clipFinished( f12_arg0.ModeTittle )
 		end
 	},
@@ -150,7 +150,7 @@ CoD.PC_Theater_Keyboard_Shortcut_Legend.__clipsPerState = {
 			f13_arg0.KeyboardShortcutsList:setAlpha( 1 )
 			f13_arg0.clipFinished( f13_arg0.KeyboardShortcutsList )
 			f13_arg0.ModeTittle:completeAnimation()
-			f13_arg0.ModeTittle:setText( LocalizeToUpperString( 0xEBDDCC281D5C214 ) )
+			f13_arg0.ModeTittle:setText( LocalizeToUpperString( "demo/lighter_mode" ) )
 			f13_arg0.clipFinished( f13_arg0.ModeTittle )
 		end
 	}

@@ -43,7 +43,7 @@ CoD.StartMenu_Personalization_MP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	self.equipment = equipment
 	
 	local weapon = CoD.HubEquipmentItem.new( f1_arg0, f1_arg1, 0.5, 0.5, 356.5, 556.5, 0.5, 0.5, -100, 246 )
-	weapon.categoryHeader:setText( LocalizeToUpperString( 0x71489612B1BCA6F ) )
+	weapon.categoryHeader:setText( LocalizeToUpperString( "menu/weapon" ) )
 	self:addElement( weapon )
 	self.weapon = weapon
 	
@@ -106,7 +106,7 @@ CoD.StartMenu_Personalization_MP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 		end
 	end, function ( f9_arg0, f9_arg1, f9_arg2 )
 		if not CoD.ModelUtility.IsSelfModelValueTrue( f9_arg0, f9_arg2, "isBMLocked" ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -157,7 +157,7 @@ CoD.StartMenu_Personalization_MP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	SpecialistCornerTR:setAlpha( 0.25 )
 	SpecialistCornerTR:setZRot( -90 )
 	SpecialistCornerTR:setScale( 0.5, 0.5 )
-	SpecialistCornerTR:setImage( RegisterImage( 0x8DC834094E7A02C ) )
+	SpecialistCornerTR:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
 	SpecialistCornerTR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	SpecialistCornerTR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( SpecialistCornerTR )
@@ -166,7 +166,7 @@ CoD.StartMenu_Personalization_MP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	SpecialistCornerTL = LUI.UIImage.new( 0.5, 0.5, -634, -610, 0.5, 0.5, -288, -264 )
 	SpecialistCornerTL:setAlpha( 0.2 )
 	SpecialistCornerTL:setScale( 0.5, 0.5 )
-	SpecialistCornerTL:setImage( RegisterImage( 0x8DC834094E7A02C ) )
+	SpecialistCornerTL:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
 	SpecialistCornerTL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	SpecialistCornerTL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( SpecialistCornerTL )
@@ -176,7 +176,7 @@ CoD.StartMenu_Personalization_MP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	SpecialistCornerBR:setAlpha( 0.2 )
 	SpecialistCornerBR:setZRot( 180 )
 	SpecialistCornerBR:setScale( 0.5, 0.5 )
-	SpecialistCornerBR:setImage( RegisterImage( 0x8DC834094E7A02C ) )
+	SpecialistCornerBR:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
 	SpecialistCornerBR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	SpecialistCornerBR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( SpecialistCornerBR )
@@ -251,7 +251,7 @@ CoD.StartMenu_Personalization_MP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	SpecialistCornerBL:setAlpha( 0.2 )
 	SpecialistCornerBL:setZRot( 90 )
 	SpecialistCornerBL:setScale( 0.5, 0.5 )
-	SpecialistCornerBL:setImage( RegisterImage( 0x8DC834094E7A02C ) )
+	SpecialistCornerBL:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
 	SpecialistCornerBL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	SpecialistCornerBL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( SpecialistCornerBL )

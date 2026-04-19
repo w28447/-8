@@ -27,7 +27,7 @@ CoD.CommonHeaderBG.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local PixelGrid = LUI.UIImage.new( 0, 0, 0, 2304, 0, 0, 25, 67 )
 	PixelGrid:setAlpha( 0.5 )
-	PixelGrid:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	PixelGrid:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	PixelGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	PixelGrid:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGrid:setupNineSliceShader( 64, 64 )
@@ -37,7 +37,7 @@ CoD.CommonHeaderBG.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local TopBar = LUI.UIImage.new( 0.5, 0.5, -1152, 1152, 0, 0, 24.5, 27.5 )
 	TopBar:setAlpha( 0.2 )
 	TopBar:setImage( RegisterImage( 0x42BCCF45B82FBED ) )
-	TopBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	TopBar:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TopBar )
 	self.TopBar = TopBar
 	

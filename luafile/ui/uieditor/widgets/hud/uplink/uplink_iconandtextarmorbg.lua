@@ -10,7 +10,7 @@ CoD.uplink_IconandTextArmorbg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local background = LUI.UIImage.new( 0, 1, -54, 28, 0, 1, -2, 2 )
 	background:setAlpha( 0.3 )
 	background:setImage( RegisterImage( 0xAADD20019A84C5F ) )
-	background:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	background:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	background:setShaderVector( 0, 0, 0, 0, 0 )
 	background:setupNineSliceShader( 30, 15 )
 	self:addElement( background )

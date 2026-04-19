@@ -10,8 +10,8 @@ CoD.HUD_ZM_Arcade_Heart.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local flare = LUI.UIImage.new( 0, 0, -744, 168, 0, 0, -503.5, 57.5 )
 	flare:setAlpha( 0 )
-	flare:setImage( RegisterImage( 0xA35E64C8EDD2469 ) )
-	flare:setMaterial( LUI.UIImage.GetCachedMaterial( 0x32309484D7128AB ) )
+	flare:setImage( RegisterImage( "uie_hud_common_core_ammo_flare1" ) )
+	flare:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_animated_add" ) )
 	flare:setShaderVector( 0, 24, 0, 0, 0 )
 	flare:setShaderVector( 1, 0, 0, 0, 0 )
 	self:addElement( flare )
@@ -25,7 +25,7 @@ CoD.HUD_ZM_Arcade_Heart.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local Disabled = LUI.UIImage.new( -0.88, 1.88, 0, 0, -1.76, 1, 0, 0 )
 	Disabled:setRGB( ColorSet.BadgeText.r, ColorSet.BadgeText.g, ColorSet.BadgeText.b )
 	Disabled:setAlpha( 0 )
-	Disabled:setImage( RegisterImage( 0x69BEFB7E55FBA50 ) )
+	Disabled:setImage( RegisterImage( "uie_cross_abilities" ) )
 	self:addElement( Disabled )
 	self.Disabled = Disabled
 	

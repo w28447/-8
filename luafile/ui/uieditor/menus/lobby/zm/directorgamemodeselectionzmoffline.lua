@@ -104,10 +104,10 @@ LUI.createMenu.DirectorGamemodeSelectionZMOffline = function ( f1_arg0, f1_arg1 
 		end
 	end, function ( f10_arg0, f10_arg1, f10_arg2 )
 		if IsLobbyHostOfCurrentMenu() and not IsElementPropertyValue( f10_arg0, "purchasable", true ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -189,10 +189,10 @@ LUI.createMenu.DirectorGamemodeSelectionZMOffline = function ( f1_arg0, f1_arg1 
 		end
 	end, function ( f21_arg0, f21_arg1, f21_arg2 )
 		if IsLobbyHostOfCurrentMenu() and not IsElementPropertyValue( f21_arg0, "purchasable", true ) then
-			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() then
-			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -273,10 +273,10 @@ LUI.createMenu.DirectorGamemodeSelectionZMOffline = function ( f1_arg0, f1_arg1 
 		end
 	end, function ( f32_arg0, f32_arg1, f32_arg2 )
 		if IsLobbyHostOfCurrentMenu() and not IsElementPropertyValue( f32_arg0, "purchasable", true ) then
-			CoD.Menu.SetButtonLabel( f32_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f32_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() then
-			CoD.Menu.SetButtonLabel( f32_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f32_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -293,7 +293,7 @@ LUI.createMenu.DirectorGamemodeSelectionZMOffline = function ( f1_arg0, f1_arg1 
 	
 	CommonHeader = CoD.CommonHeader.new( f1_local1, f1_arg0, 0, 0, 0, 1920, 0, 0, 0, 67 )
 	CommonHeader:setAlpha( 0 )
-	CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x4456C22914B29F9 ) )
+	CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/zombies_modes" ) )
 	CommonHeader.subtitle.subtitle:setAlpha( 0 )
 	CommonHeader:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f35_local0 = model:get()
@@ -387,7 +387,7 @@ LUI.createMenu.DirectorGamemodeSelectionZMOffline = function ( f1_arg0, f1_arg1 
 	self.DirectorInfoPanelZM = DirectorInfoPanelZM
 	
 	local DirectorHeaderTabSafeArea = CoD.DirectorHeaderTabSafeArea.new( f1_local1, f1_arg0, -0, 1, 0, 0, 0, 0, 0, 1080 )
-	DirectorHeaderTabSafeArea.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x4456C22914B29F9 ) )
+	DirectorHeaderTabSafeArea.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/zombies_modes" ) )
 	DirectorHeaderTabSafeArea.CommonHeader.subtitle.subtitle:setText( LocalizeToUpperString( 0x7F5AD3549344EFF ) )
 	DirectorHeaderTabSafeArea.Tabs.customClasssList:setDataSource( "DirectorGameTypeList" )
 	DirectorHeaderTabSafeArea:registerEventHandler( "menu_loaded", function ( element, event )
@@ -410,7 +410,7 @@ LUI.createMenu.DirectorGamemodeSelectionZMOffline = function ( f1_arg0, f1_arg1 
 	DottedDivider:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	DottedDivider:setAlpha( 0 )
 	DottedDivider:setZRot( 90 )
-	DottedDivider:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
+	DottedDivider:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
 	DottedDivider:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DottedDivider:setShaderVector( 0, 0, 0, 0, 0 )
 	DottedDivider:setupNineSliceShader( 4, 8 )
@@ -473,7 +473,7 @@ LUI.createMenu.DirectorGamemodeSelectionZMOffline = function ( f1_arg0, f1_arg1 
 		GoBack( self, f49_arg2 )
 		return true
 	end, function ( f50_arg0, f50_arg1, f50_arg2 )
-		CoD.Menu.SetButtonLabel( f50_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f50_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "setState", function ( element, controller, f51_arg2, f51_arg3, f51_arg4 )

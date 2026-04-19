@@ -25,7 +25,7 @@ CoD.fe_RightContainerMain.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.Username = Username
 	
 	local feFooterButtonPromptWithContainer0 = CoD.fe_FooterButtonPromptWithContainerMain.new( f1_arg0, f1_arg1, 0, 0, 1115, 1251, 1, 1, -72.5, 19.5 )
-	feFooterButtonPromptWithContainer0.label:setText( LocalizeToUpperString( 0xC2DF00C35019DD3 ) )
+	feFooterButtonPromptWithContainer0.label:setText( LocalizeToUpperString( "menu/switch_user" ) )
 	feFooterButtonPromptWithContainer0:subscribeToGlobalModel( f1_arg1, "Controller", "back_button_image", function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then

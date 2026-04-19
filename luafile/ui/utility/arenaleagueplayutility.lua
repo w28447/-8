@@ -233,7 +233,7 @@ end
 
 CoD.ArenaLeaguePlayUtility.GetBanner = function ( f17_arg0, f17_arg1, f17_arg2 )
 	local f17_local0 = 0x214ECBA8C04D44C
-	local f17_local1 = 0x2C79EA24AB1A2BA
+	local f17_local1 = "null/empty"
 	local f17_local2, f17_local3, f17_local4, f17_local5 = CoD.ArenaLeaguePlayUtility.GetRankAndRankData( f17_arg0 )
 	if f17_local5 > 0 then
 		local f17_local6 = f17_local3.leagueplayranklist[f17_local5]

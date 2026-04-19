@@ -102,7 +102,7 @@ CoD.DirectorPreGameButtonContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 		end
 	end, function ( f14_arg0, f14_arg1, f14_arg2 )
 		if not CoD.DirectorUtility.IsDirectorButtonOptionLocked( f14_arg1, f14_arg0, f14_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f14_arg0, f14_arg2, "trialLocked" ) then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

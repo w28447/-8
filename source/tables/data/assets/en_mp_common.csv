@@ -58,7 +58,7 @@ localizeentry,#hash_dedbd93286f117
 localizeentry,#hash_e099292607ac89
 localizeentry,#hash_e4814cfc5b3d7a
 localizeentry,#platform/use_turret
-localizeentry,#hash_ebe7f5f7a0c8ab
+localizeentry,#wz/x
 localizeentry,#hash_ef3f10f4e17596
 localizeentry,#hash_f199b5026abdd9
 localizeentry,#hash_f2230cacf67e89
@@ -127,7 +127,7 @@ localizeentry,#hash_239605d85d5b9fe
 localizeentry,#hash_23e9d3576417012
 localizeentry,#hash_246cf95fb4e6777
 localizeentry,#hash_24df5d493d5bb30
-localizeentry,d#hash_25f8c30a0958a7b
+localizeentry,d#warzone/swap
 localizeentry,#hash_2660f4d87bfce63
 localizeentry,#hash_266a46e7c9d9f18
 localizeentry,#hash_269b0119e4e864e
@@ -622,7 +622,7 @@ localizeentry,#hash_b2f239249f80a80
 localizeentry,d#hash_b3209c7cc980c0b
 localizeentry,#hash_b326f825ea10c28
 localizeentry,#hash_b3612a26e9c8d58
-localizeentry,#hash_b4a0f5945bb8108
+localizeentry,#menu/swap
 localizeentry,#hash_b4cb57f6acaeb75
 localizeentry,#hash_b4e0cb9e5e1fc39
 localizeentry,#hash_b589c53abbb88fa
@@ -772,7 +772,7 @@ localizeentry,#hash_dc1449cad0441bb
 localizeentry,d#hash_dc892331b0764bf
 localizeentry,#hash_ddfc98dd869c791
 localizeentry,d#hash_dee529c08e176aa
-localizeentry,#hash_df37df17685ed6d
+localizeentry,#mpui/maxed_out
 localizeentry,#hash_df5b2ff9e5809ab
 localizeentry,#hash_dfc1ffe2ceaabd0
 localizeentry,#hash_dff09fe2cecbc45
@@ -805,7 +805,7 @@ localizeentry,#hash_e70a6eadffeb613
 localizeentry,#hash_e77ea70c9fb7273
 localizeentry,#hash_e7a56b50006872e
 localizeentry,#hash_e7c6999e3e8ef9b
-localizeentry,#hash_e7cfc872d6a405d
+localizeentry,#warzone/attach
 localizeentry,#hash_e7ecc15cf010651
 localizeentry,#hash_e821c17acdc9fb0
 localizeentry,d#codcaster/ds_toolbar
@@ -877,7 +877,7 @@ localizeentry,#hash_fb36c133a5085a7
 localizeentry,#hash_fb638a27309b476
 localizeentry,#hash_fbbf23bb04a2974
 localizeentry,#hash_fbcfc36f0c79d9a
-localizeentry,#hash_fc244f0b9cc213b
+localizeentry,#demo/director_mode
 localizeentry,#hash_fc33245240113f7
 localizeentry,#hash_fc949f37276e7cf
 localizeentry,#hash_fca2d5afbeb7fea
@@ -995,7 +995,7 @@ localizeentry,#hash_11e3720e6124f94d
 localizeentry,#hash_11e63807b58c3374
 localizeentry,#hash_11f09e3d6c25b9b3
 localizeentry,d#hash_11f258ddcbc91d91
-localizeentry,#hash_11f464950eb4aa26
+localizeentry,#menu/use
 localizeentry,#hash_1203e893526d56b0
 localizeentry,#hash_1207abf1098b1398
 localizeentry,#hash_1207acf1098b154b
@@ -1070,7 +1070,7 @@ localizeentry,#hash_13041b6a51d826da
 localizeentry,#hash_1306d1a533b82e73
 localizeentry,#hash_130f6bc186fa3320
 localizeentry,#hash_131295c186fcb055
-localizeentry,d#hash_131e6136f9b444fb
+localizeentry,d#menu/attachments
 localizeentry,#hash_1326621d71cd0ec0
 localizeentry,#hash_132a61a3d616bb1e
 localizeentry,#hash_132a68dfb3f8697a
@@ -1431,7 +1431,7 @@ localizeentry,#hash_19f6c79fc23ca350
 localizeentry,#hash_19f96047525ddcd6
 localizeentry,#hash_1a0900d873b9ba61
 localizeentry,#hash_1a14ac950dd062ca
-localizeentry,#hash_1a1b60eea7d768ab
+localizeentry,#mpui/unavailable
 localizeentry,#hash_1a1c8e4a0d5f33a7
 localizeentry,#menu/charm_steak
 localizeentry,#hash_1a2ac7d3118b5303
@@ -1593,7 +1593,7 @@ localizeentry,#hash_1cd7eb3f7d80e6f7
 localizeentry,#hash_1cd950e832a8c1ea
 localizeentry,#hash_1cdf0298a67c97c2
 localizeentry,#hash_1ce0eba89375395c
-localizeentry,d#hash_1ce3ef50b2b067c3
+localizeentry,d#menu/driver_seat
 localizeentry,#hash_1cec299e9b53f876
 localizeentry,#hash_1cf0b277aa9809e7
 localizeentry,#hash_1cf45eadd754592b
@@ -1918,7 +1918,7 @@ localizeentry,#hash_22e1f44c8ab264a1
 localizeentry,#hash_22e7737793dd92ff
 localizeentry,#hash_22e81746e1ca6acc
 localizeentry,d#hash_22ec60cd78b8277f
-localizeentry,#hash_22fa39e5124e51fe
+localizeentry,#mpui/destroyed
 localizeentry,#hash_2306201566d54145
 localizeentry,#hash_230635e4adac01f5
 localizeentry,d#codcaster/team1_settings
@@ -2019,7 +2019,7 @@ localizeentry,#hash_24c6d5abdabee8f4
 localizeentry,d#hash_24c9561478db5594
 localizeentry,#weapon/jammer
 localizeentry,#hash_24ea1ededbb32171
-localizeentry,d#hash_24ea93cffe505b27
+localizeentry,d#codcaster/quick_settings
 localizeentry,#hash_24f2fbeaf616a538
 localizeentry,#hash_24f647b2c24d78a6
 localizeentry,#hash_250068b9d1821c56
@@ -2038,7 +2038,7 @@ localizeentry,d#hash_255c9cc584359d0e
 localizeentry,#hash_255f8ce99f6e0491
 localizeentry,#hash_2560bddc064fa7cb
 localizeentry,#hash_256cae539ffe6011
-localizeentry,#hash_2572b532ded392d3
+localizeentry,#mpui/boosted
 localizeentry,#hash_2577b757c1ca9678
 localizeentry,#mp/defend_koth
 localizeentry,#hash_257fe3f9f874a989
@@ -2239,7 +2239,7 @@ localizeentry,#hash_2933d1e2a048635e
 localizeentry,#hash_2941f9a16a9773f2
 localizeentry,#hash_294914504b9ecf2f
 localizeentry,#hash_294c7f479d3e0f05
-localizeentry,#hash_294d6af2f50befef
+localizeentry,#warzone/drop_and_detach
 localizeentry,#hash_29503cd034274830
 localizeentry,#hash_2952e1b0fde77b20
 localizeentry,#hash_295a43f6f7fb225c
@@ -2317,7 +2317,7 @@ localizeentry,d#hash_2a649dbc043061bb
 localizeentry,#hash_2a6e0310332dbb18
 localizeentry,#hash_2a70c3cc571d4152
 localizeentry,#menu/charm_avocado_toast
-localizeentry,#hash_2a73f5ee9b97b6bd
+localizeentry,#warzone/resources
 localizeentry,#hash_2a7a1f1f3a21e1f1
 localizeentry,#hash_2a7f0eef952185d9
 localizeentry,#hash_2a855b12a7513d99
@@ -2368,7 +2368,7 @@ localizeentry,#hash_2b2921a85d449d99
 localizeentry,#hash_2b299a9b4cf0993e
 localizeentry,#hash_2b2b53925c647880
 localizeentry,d#hash_2b2c7e74787b96e9
-localizeentry,d#hash_2b2ef56b4af147b8
+localizeentry,d#menu/quit
 localizeentry,#hash_2b325e925c6aa9df
 localizeentry,#hash_2b3a36da7a8dd358
 localizeentry,#hash_2b3d10e958928fdf
@@ -2517,7 +2517,7 @@ localizeentry,#hash_2da30722d96627a9
 localizeentry,#hash_2da4746fdf610b83
 localizeentry,#hash_2da559c790968d3d
 localizeentry,#hash_2dbd293054c8815f
-localizeentry,d#hash_2dc89c646fcb3342
+localizeentry,d#codcaster/loadout_settings
 localizeentry,#hash_2dd459de6518fdf9
 localizeentry,d#hash_2dd9b243f4c05fbc
 localizeentry,d#hash_2deec8d4576dc206
@@ -2611,7 +2611,7 @@ localizeentry,#hash_2ff5f1e55fcc3f35
 localizeentry,#hash_2ff62fa39c607170
 localizeentry,#hash_2ff6d5000a123e05
 localizeentry,#hash_2ffb7cdb62a605a0
-localizeentry,#hash_2ffd03bf8361ac75
+localizeentry,#warzone/drop
 localizeentry,#hash_300c86db62b489d1
 localizeentry,#hash_3018f499689db072
 localizeentry,#hash_3018f599689db225
@@ -2833,7 +2833,7 @@ localizeentry,#hash_340a56e747ef43c6
 localizeentry,#hash_340e531fa799cabc
 localizeentry,#hash_3412e06179f77d13
 localizeentry,#hash_3413a2e67ef8d0f0
-localizeentry,#hash_341441168c405322
+localizeentry,#mpui/linked
 localizeentry,#hash_3417b176eacdc968
 localizeentry,#hash_341b2a974c6b561f
 localizeentry,d#hash_342c90ec25fd2481
@@ -2919,7 +2919,7 @@ localizeentry,#hash_3565f00e6e9a099e
 localizeentry,#hash_356b66336f8fd220
 localizeentry,#hash_35700ecf7c34e24f
 localizeentry,#hash_35727138476f6438
-localizeentry,#hash_357915a72383ba7c
+localizeentry,#mpui/danger
 localizeentry,#hash_357987ffeb7047f8
 localizeentry,#hash_3584bbaa089144fe
 localizeentry,d#hash_35862a9649e68501
@@ -3121,7 +3121,7 @@ localizeentry,d#mpui/killcounter
 localizeentry,#hash_3948d50c96caf4e0
 localizeentry,#hash_3948d60c96caf693
 localizeentry,#hash_394bd583e22ddcb3
-localizeentry,d#hash_394e8ff2c42caffb
+localizeentry,d#warzone/start_warzone
 localizeentry,#hash_3950a28ee60b7c45
 localizeentry,#hash_395155665e8f3f4b
 localizeentry,#hash_395d9cdb56b4c242
@@ -3172,7 +3172,7 @@ localizeentry,#hash_3a05e2ceabd56518
 localizeentry,#hash_3a063cccef2cba6b
 localizeentry,#hash_3a0b931b3c7999bc
 localizeentry,#hash_3a1af7c6ac29ed56
-localizeentry,d#hash_3a1b2cafc0534bf5
+localizeentry,d#wz/character_mission
 localizeentry,#hash_3a1de81dedfece14
 localizeentry,#hash_3a27a68f908d7ef8
 localizeentry,d#hash_3a294441722f3c4d
@@ -3414,7 +3414,7 @@ localizeentry,#hash_3e5ec1a5306b1d11
 localizeentry,#hash_3e6007f57887454e
 localizeentry,#hash_3e63055cff392ca5
 localizeentry,#hash_3e63b59561fec7e9
-localizeentry,#hash_3e65064c906e415e
+localizeentry,#warzone/backpack
 localizeentry,#hash_3e69a9f8f1cb6f6f
 localizeentry,#hash_3e7b8b956213126c
 localizeentry,#hash_3e82d82c3dc0719c
@@ -3620,7 +3620,7 @@ localizeentry,#hash_423c8ceabb13af95
 localizeentry,#hash_424082321d945d35
 localizeentry,#hash_4240fefddd732661
 localizeentry,#hash_4243ce85a0f8f57a
-localizeentry,#hash_42466b35790d15bf
+localizeentry,#demo/basic_mode
 localizeentry,#hash_424bd528b4056faf
 localizeentry,#hash_425241374bdd61f0
 localizeentry,#hash_4256185d306e12dc
@@ -3747,7 +3747,7 @@ localizeentry,#hash_4404546b28e1afa5
 localizeentry,#hash_441341b5209a87dd
 localizeentry,d#mpui/camo_bliss
 localizeentry,#hash_4419a9c089f8662f
-localizeentry,#hash_441c813d62359384
+localizeentry,#mpui/no_target
 localizeentry,#hash_44209805948be57e
 localizeentry,#hash_442300b755936648
 localizeentry,#hash_4423f27326e5f1f6
@@ -3872,7 +3872,7 @@ localizeentry,#hash_45f33c955a711aeb
 localizeentry,d#hash_45f407bc037861dc
 localizeentry,#hash_45fe9567ac6fd559
 localizeentry,#hash_4608602956a2a836
-localizeentry,#hash_46099347f51af260
+localizeentry,#menu/detach
 localizeentry,#hash_460f3e1ca40c3d6c
 localizeentry,d#hash_46125cb81abd4c42
 localizeentry,#hash_4616ab67ac848c9c
@@ -4187,9 +4187,9 @@ localizeentry,#hash_4ade90237e6498c0
 localizeentry,d#hash_4ae4ed13aed2e15c
 localizeentry,#hash_4ae9ff9ea2f00ade
 localizeentry,#hash_4aefab593bacba71
-localizeentry,#hash_4af4c3a7e918e636
+localizeentry,#warzone/ammo
 localizeentry,#hash_4afdbe40a0f39415
-localizeentry,#hash_4aff37175f950d17
+localizeentry,#mpui/personalize
 localizeentry,#hash_4b05f9174c40cc9c
 localizeentry,#hash_4b088962b319231b
 localizeentry,d#hash_4b105b524a93b53d
@@ -4503,7 +4503,7 @@ localizeentry,#hash_50b3b11b4250bac1
 localizeentry,d#weapon/tripwire
 localizeentry,#hash_50e0838849c160ff
 localizeentry,#hash_50e192601d65f99e
-localizeentry,#hash_50eebda1a33fabdc
+localizeentry,#menu/custom
 localizeentry,#hash_50f7aeb217ae8a24
 localizeentry,#hash_50f9584fd9dbb2fb
 localizeentry,#hash_50fc69495f0748d0
@@ -4524,7 +4524,7 @@ localizeentry,#hash_512a6d33dc67666a
 localizeentry,#hash_513d4e35dfab3c55
 localizeentry,#hash_514145cea5410b00
 localizeentry,#hash_51430b866514855e
-localizeentry,#hash_5145090d78d3a9f6
+localizeentry,#menu/switch_seats
 localizeentry,#hash_51470bfe57bd73f6
 localizeentry,#hash_51473435dfb364ac
 localizeentry,#hash_51559855588ac43d
@@ -5395,7 +5395,7 @@ localizeentry,#hash_5feb55dbaee390f6
 localizeentry,#hash_5fec5844584c4434
 localizeentry,#hash_5fec75d831bf51d1
 localizeentry,#hash_5fee5ae62bef0d6c
-localizeentry,#hash_5ff2f205b4f34f1d
+localizeentry,#warzone/armor_plates
 localizeentry,#hash_5ff3d491a70f1640
 localizeentry,#hash_5ff6323be2fa24ee
 localizeentry,d#hash_6000dbbe3421103a
@@ -5464,7 +5464,7 @@ localizeentry,#hash_610d7e4a2a80a02c
 localizeentry,d#hash_6114901c1266e95d
 localizeentry,#hash_6126e87c1a440727
 localizeentry,#hash_612dd9f4f4bb0a0e
-localizeentry,d#hash_61346019482bdc3c
+localizeentry,d#warzone/inventory
 localizeentry,#hash_61357f8063d72c40
 localizeentry,#hash_613fd35869cb6339
 localizeentry,#hash_614388873efbd5ad
@@ -5665,7 +5665,7 @@ localizeentry,#hash_64bdaa3751921277
 localizeentry,#hash_64c4285f1531c6f2
 localizeentry,#hash_64c6ddcaa6c7aae1
 localizeentry,#hash_64ce0651a520f4a3
-localizeentry,d#hash_64d1595123c780bd
+localizeentry,d#codcaster/team_settings
 localizeentry,#hash_64d49e1e2e7c63e3
 localizeentry,#hash_64de847ab5e1736b
 localizeentry,#hash_64e027043d62d489
@@ -5743,7 +5743,7 @@ localizeentry,#hash_6615f9892006f4f4
 localizeentry,#mp/waiting_for_hq
 localizeentry,d#hash_663114aa52ffcb21
 localizeentry,d#hash_66326ff81589a75b
-localizeentry,d#hash_66393ff34ea56966
+localizeentry,d#menu/continue
 localizeentry,#hash_6642cdce84d052e5
 localizeentry,#hash_6643a408d50abe52
 localizeentry,#hash_664a8a1a3671860a
@@ -5764,7 +5764,7 @@ localizeentry,#hash_66a9ea5afdb8aa02
 localizeentry,#hash_66ae2939ce658720
 localizeentry,#hash_66ae2c39ce658c39
 localizeentry,#hash_66b4fe21acc6a86e
-localizeentry,d#hash_66c253cf816b40b5
+localizeentry,d#menu/close
 localizeentry,#hash_66c473978a1bb687
 localizeentry,#hash_66c797117891c2b3
 localizeentry,#hash_66d007a9b1ee3085
@@ -5917,7 +5917,7 @@ localizeentry,#hash_697fd4c1646dbd6d
 localizeentry,#mp/killstreak_n
 localizeentry,#hash_69869e703914042e
 localizeentry,#menu/charm_dog
-localizeentry,#hash_698e1e885ed068b4
+localizeentry,#mpui/killer
 localizeentry,#hash_698fa0c5b76271c8
 localizeentry,#hash_699354d17003b2f4
 localizeentry,d#hash_6993c1a7dd3452ba
@@ -6267,7 +6267,7 @@ localizeentry,#codcaster/codcaster_settings
 localizeentry,#hash_7083e9bd6dd1f9fd
 localizeentry,d#hash_7085044e7b80d5a3
 localizeentry,#hash_708c1ff90fbb88bd
-localizeentry,d#hash_708e783c525f2fa8
+localizeentry,d#menu/online
 localizeentry,#hash_7090d48f0bbdfa80
 localizeentry,#codcaster/an_called_a_scorestreak
 localizeentry,d#hash_709fb6b7fdde6aa8
@@ -6366,7 +6366,7 @@ localizeentry,#hash_7285a1344f643726
 localizeentry,#hash_7285a2344f6438d9
 localizeentry,#hash_728e27a37960107c
 localizeentry,#hash_728fdaf049bd7ca0
-localizeentry,#hash_72961aaf61fb5b21
+localizeentry,#demo/object_link_mode
 localizeentry,#hash_7296b5faff3d120c
 localizeentry,#hash_729896c0bb6f6e3d
 localizeentry,#hash_729aafedf9e6e4ac
@@ -6421,7 +6421,7 @@ localizeentry,#hash_73788cf450d97a34
 localizeentry,#hash_737e08fd6503defe
 localizeentry,#hash_7380c37a11dc639e
 localizeentry,#hash_7382718d1bea375c
-localizeentry,d#hash_738b775d97e72f0c
+localizeentry,d#warzone/equip
 localizeentry,#hash_738f42951741cb86
 localizeentry,d#mp/match_starting
 localizeentry,#hash_739f7b73e838e860
@@ -6664,7 +6664,7 @@ localizeentry,d#hash_77dce7635423ba68
 localizeentry,#hash_77e2fd8518b19fd1
 localizeentry,d#hash_77e7311dc74dccf5
 localizeentry,#hash_77e9ef0a1424a57c
-localizeentry,#hash_77f76a40dc7b0f5e
+localizeentry,#wz/reward
 localizeentry,d#hash_77f9d83f9e77c0d3
 localizeentry,#hash_77fa7edf837436cb
 localizeentry,#hash_77fc1b7d2ba2da2b
@@ -6681,7 +6681,7 @@ localizeentry,d#hash_78157925be50b206
 localizeentry,#hash_7824797a0a697199
 localizeentry,#hash_7825bf7fa4b77953
 localizeentry,d#hash_7833cc16d9fa0749
-localizeentry,#hash_783e3ba6f8c2db04
+localizeentry,#mpui/change_class
 localizeentry,#hash_7845c8fed7de6b6f
 localizeentry,d#mpui/rf_desc
 localizeentry,#hash_78659165510b8525
@@ -6872,7 +6872,7 @@ localizeentry,#hash_7c2097d409e2492b
 localizeentry,#hash_7c247d7ec67112e2
 localizeentry,d#hash_7c272b48ff2b94e8
 localizeentry,#hash_7c2920196b789661
-localizeentry,d#hash_7c2e92c54c2be289
+localizeentry,d#menu/cancel
 localizeentry,#hash_7c33a77c747f9bef
 localizeentry,#hash_7c33ac57fbca581d
 localizeentry,#hash_7c3e29081049a8f9
@@ -6991,9 +6991,9 @@ localizeentry,#hash_7e114ad93e5a0128
 localizeentry,#hash_7e1298eb7524aeb9
 localizeentry,#hash_7e12d7d88d57c810
 localizeentry,#hash_7e193e19283c8361
-localizeentry,#hash_7e1a66dd4446c000
+localizeentry,#mpui/caution
 localizeentry,#hash_7e1c2e672dfaf85b
-localizeentry,d#hash_7e2311ad89d11e7c
+localizeentry,d#codcaster/display_settings
 localizeentry,#hash_7e2476f815841302
 localizeentry,#hash_7e27b7ad902e6049
 localizeentry,#hash_7e28358c078ebb60
@@ -7027,7 +7027,7 @@ localizeentry,#hash_7eacb0da6e47f8dd
 localizeentry,#hash_7eb404829d5dd8c8
 localizeentry,#hash_7eb47a97000c5126
 localizeentry,#hash_7eb83df88eccff19
-localizeentry,#hash_7ebddcc281d5c214
+localizeentry,#demo/lighter_mode
 localizeentry,#hash_7ec2479f11a97d71
 localizeentry,#hash_7ec9309f11af750a
 localizeentry,#hash_7ecaa1dee3c04ce3

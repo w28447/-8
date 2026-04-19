@@ -13,7 +13,7 @@ CoD.ArmorBarWZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	local Border = LUI.UIImage.new( -0.01, 1.01, 0, 0, 0, 1, 0, 0 )
 	Border:setRGB( 0.17, 0.17, 0.17 )
 	Border:setAlpha( 0.9 )
-	Border:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE125638BF94665F ) )
+	Border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	Border:setShaderVector( 0, 0, 0.1, 0, 0.1 )
 	self:addElement( Border )
 	self.Border = Border

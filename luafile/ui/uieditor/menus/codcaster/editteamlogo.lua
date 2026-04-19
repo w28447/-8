@@ -67,7 +67,7 @@ LUI.createMenu.EditTeamLogo = function ( f2_arg0, f2_arg1 )
 	BoxButtonLrgIdle = LUI.UIImage.new( 0.5, 0.5, -66, 697, 0, 0, 216, 694 )
 	BoxButtonLrgIdle:setAlpha( 0.45 )
 	BoxButtonLrgIdle:setImage( RegisterImage( 0x535D18C44834110 ) )
-	BoxButtonLrgIdle:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	BoxButtonLrgIdle:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BoxButtonLrgIdle:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BoxButtonLrgIdle )
 	self.BoxButtonLrgIdle = BoxButtonLrgIdle
@@ -75,7 +75,7 @@ LUI.createMenu.EditTeamLogo = function ( f2_arg0, f2_arg1 )
 	Border = LUI.UIImage.new( 0.5, 0.5, -58, 687, 0, 0, 220, 689 )
 	Border:setAlpha( 0.43 )
 	Border:setImage( RegisterImage( 0x8F6569FEEE42A57 ) )
-	Border:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	Border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Border:setShaderVector( 0, 0, 0, 0, 0 )
 	Border:setupNineSliceShader( 6, 6 )
 	self:addElement( Border )
@@ -115,7 +115,7 @@ LUI.createMenu.EditTeamLogo = function ( f2_arg0, f2_arg1 )
 		end
 	end, function ( f9_arg0, f9_arg1, f9_arg2 )
 		if not IsDisabled( f9_arg0, f9_arg2 ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -163,7 +163,7 @@ LUI.createMenu.EditTeamLogo = function ( f2_arg0, f2_arg1 )
 		GoBack( self, f13_arg2 )
 		return true
 	end, function ( f14_arg0, f14_arg1, f14_arg2 )
-		CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	GenericMenuFrame:setModel( self.buttonModel, f2_arg0 )

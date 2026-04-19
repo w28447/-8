@@ -12,7 +12,7 @@ CoD.VehicleHoldButtonPrompt.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local buttonPromptImage = LUI.UIImage.new( 0, 0, 6, 36, 0, 0, 9, 39 )
-	buttonPromptImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x67D1E3A3D2D1BF ) )
+	buttonPromptImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_saturation_normal" ) )
 	buttonPromptImage:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( buttonPromptImage )
 	self.buttonPromptImage = buttonPromptImage

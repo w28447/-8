@@ -9,7 +9,7 @@ CoD.AARTierRewardBackground_Legendary.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, -0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.85 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -18,7 +18,7 @@ CoD.AARTierRewardBackground_Legendary.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local CommonOuterGlow01 = LUI.UIImage.new( 0, 1, -11, 11, 0, 1, -12, 12 )
 	CommonOuterGlow01:setImage( RegisterImage( 0xAE13B63B2001396 ) )
-	CommonOuterGlow01:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	CommonOuterGlow01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	CommonOuterGlow01:setShaderVector( 0, 0, 0, 0, 0 )
 	CommonOuterGlow01:setupNineSliceShader( 32, 32 )
 	CommonOuterGlow01:linkToElementModel( self, "rarity", true, function ( model )

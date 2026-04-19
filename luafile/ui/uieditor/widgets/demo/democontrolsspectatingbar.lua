@@ -35,7 +35,7 @@ CoD.DemoControlsSpectatingBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	LeftArrow = CoD.BumperButtonWithKeyMouse.new( f1_arg0, f1_arg1, 0, 0, 0, 67, 0, 0, -7.5, 37.5 )
 	LeftArrow.KeyMouseImage:setYRot( 180 )
-	LeftArrow.KeyMouseImage:setImage( RegisterImage( 0x5E74D00B45D12B6 ) )
+	LeftArrow.KeyMouseImage:setImage( RegisterImage( "uie_optionswidgets_arrow" ) )
 	LeftArrow:subscribeToGlobalModel( f1_arg1, "Controller", "left_shoulder_button_image", function ( model )
 		local f3_local0 = model:get()
 		if f3_local0 ~= nil then
@@ -80,7 +80,7 @@ CoD.DemoControlsSpectatingBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local RightArrow = nil
 	
 	RightArrow = CoD.BumperButtonWithKeyMouse.new( f1_arg0, f1_arg1, 0, 0, 223, 290, 0, 0, -7.5, 37.5 )
-	RightArrow.KeyMouseImage:setImage( RegisterImage( 0x5E74D00B45D12B6 ) )
+	RightArrow.KeyMouseImage:setImage( RegisterImage( "uie_optionswidgets_arrow" ) )
 	RightArrow:subscribeToGlobalModel( f1_arg1, "Controller", "right_shoulder_button_image", function ( model )
 		local f8_local0 = model:get()
 		if f8_local0 ~= nil then

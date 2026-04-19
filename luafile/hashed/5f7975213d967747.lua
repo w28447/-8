@@ -42,7 +42,7 @@ CoD.Archives_Audio.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 		end
 	end, function ( f5_arg0, f5_arg1, f5_arg2 )
 		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f5_arg0, f5_arg2, "alias" ) and not IsElementInState( f5_arg0, "MatureContentFiltered" ) then
-			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xDDDA371285672BD, nil, nil )
+			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/play", nil, nil )
 			return true
 		else
 			return false

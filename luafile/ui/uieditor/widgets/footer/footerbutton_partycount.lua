@@ -20,13 +20,13 @@ CoD.FooterButton_PartyCount.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local Spacer2 = LUI.UIImage.new( 0, 0, 58, 64, 0, 0, -4, 44 )
 	Spacer2:setRGB( 0, 0, 0 )
-	Spacer2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Spacer2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Spacer2 )
 	self.Spacer2 = Spacer2
 	
 	local Spacer = LUI.UIImage.new( 0, 0, 52, 58, 0, 0, 1, 49 )
 	Spacer:setRGB( 0, 0, 0 )
-	Spacer:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Spacer:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Spacer )
 	self.Spacer = Spacer
 	

@@ -70,7 +70,7 @@ CoD.DirectorExpandedLobbyMemberWarnings.__clipsPerState = {
 			f7_arg0.notificationIcon:completeAnimation()
 			f7_arg0.notificationIcon:setRGB( ColorSet.EnemyScorestreakTarget.r, ColorSet.EnemyScorestreakTarget.g, ColorSet.EnemyScorestreakTarget.b )
 			f7_arg0.notificationIcon:setAlpha( 1 )
-			f7_arg0.notificationIcon:setImage( RegisterImage( 0x1F10DEAAEFC50A4 ) )
+			f7_arg0.notificationIcon:setImage( RegisterImage( "uie_hud_common_core_score_waricon" ) )
 			f7_arg0.clipFinished( f7_arg0.notificationIcon )
 		end
 	}

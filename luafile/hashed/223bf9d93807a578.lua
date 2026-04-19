@@ -15,7 +15,7 @@ CoD.CustomizeIconGridItem_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.8 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -29,8 +29,8 @@ CoD.CustomizeIconGridItem_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local FrontendFrame = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	FrontendFrame:setAlpha( 0.2 )
-	FrontendFrame:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrontendFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrame:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrontendFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrame:setupNineSliceShader( 12, 12 )
 	self:addElement( FrontendFrame )
@@ -81,13 +81,13 @@ CoD.CustomizeIconGridItem_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local LockIcon = LUI.UIImage.new( 0.5, 0.5, -18, 18, 0.5, 0.5, -28, 8 )
 	LockIcon:setAlpha( 0 )
-	LockIcon:setImage( RegisterImage( 0xB8AD8D12CEB707D ) )
+	LockIcon:setImage( RegisterImage( "uie_icon_locks_lock_01" ) )
 	self:addElement( LockIcon )
 	self.LockIcon = LockIcon
 	
 	local EquippedIcon = LUI.UIImage.new( 0, 0, 136, 186, 0, 0, -13, 37 )
 	EquippedIcon:setAlpha( 0 )
-	EquippedIcon:setImage( RegisterImage( 0x9A8B26C9B001758 ) )
+	EquippedIcon:setImage( RegisterImage( "uie_ui_menu_cac_equipped_marker_tick" ) )
 	self:addElement( EquippedIcon )
 	self.EquippedIcon = EquippedIcon
 	

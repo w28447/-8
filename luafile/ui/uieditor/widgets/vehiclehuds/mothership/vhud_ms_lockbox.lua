@@ -12,7 +12,7 @@ CoD.vhud_ms_LockBox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	Glow:setRGB( 1, 0.52, 0 )
 	Glow:setAlpha( 0.4 )
 	Glow:setImage( RegisterImage( 0x57022864019762C ) )
-	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
 	
@@ -20,7 +20,7 @@ CoD.vhud_ms_LockBox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	msLockOn:setRGB( 1, 0.07, 0 )
 	msLockOn:setAlpha( 0.7 )
 	msLockOn:setImage( RegisterImage( 0x73119C17C345435 ) )
-	msLockOn:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	msLockOn:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( msLockOn )
 	self.msLockOn = msLockOn
 	

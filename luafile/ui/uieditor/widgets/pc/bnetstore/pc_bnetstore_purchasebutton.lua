@@ -55,7 +55,7 @@ CoD.PC_BnetStore_PurchaseButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local ButtonTitle = LUI.UIText.new( 0, 1, 25, -25, 0.5, 0.5, -11.5, 13.5 )
 	ButtonTitle:setRGB( 0, 0, 0 )
-	ButtonTitle:setText( LocalizeToUpperString( 0x802AE8BF3973373 ) )
+	ButtonTitle:setText( LocalizeToUpperString( "store/upgradeversion" ) )
 	ButtonTitle:setTTF( "ttmussels_demibold" )
 	ButtonTitle:setLetterSpacing( 8 )
 	ButtonTitle:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

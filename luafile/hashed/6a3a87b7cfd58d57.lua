@@ -11,7 +11,7 @@ CoD.FactionInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local FactionIconFront = LUI.UIImage.new( 0.5, 0.5, -96, 96, 0.5, 0.5, -138, 54 )
-	FactionIconFront:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	FactionIconFront:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	FactionIconFront:subscribeToGlobalModel( f1_arg1, "Factions", "playerFactionIcon", function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then

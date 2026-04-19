@@ -15,7 +15,7 @@ CoD.systemOverlay_PrestigeRewards.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local RewardsTitle = LUI.UIText.new( 0, 0, 2, 515, 0, 0, 0, 24 )
 	RewardsTitle:setRGB( ColorSet.T8__BEIGE__HEADER.r, ColorSet.T8__BEIGE__HEADER.g, ColorSet.T8__BEIGE__HEADER.b )
-	RewardsTitle:setText( LocalizeToUpperString( 0x2ACBA21D0C15241 ) )
+	RewardsTitle:setText( LocalizeToUpperString( "menu/rewards" ) )
 	RewardsTitle:setTTF( "ttmussels_demibold" )
 	RewardsTitle:setLetterSpacing( 6 )
 	RewardsTitle:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -30,7 +30,7 @@ CoD.systemOverlay_PrestigeRewards.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.CallingCardsFrameWidget = CallingCardsFrameWidget
 	
 	local CallingCardLabel = LUI.UIText.new( 0, 0, 5, 275, 0, 0, 291, 309 )
-	CallingCardLabel:setText( LocalizeToUpperString( 0x5D0D4D46178F2C8 ) )
+	CallingCardLabel:setText( LocalizeToUpperString( "menu/calling_card" ) )
 	CallingCardLabel:setTTF( "ttmussels_regular" )
 	CallingCardLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	CallingCardLabel:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

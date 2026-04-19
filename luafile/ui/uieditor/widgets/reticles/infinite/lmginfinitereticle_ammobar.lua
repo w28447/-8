@@ -17,7 +17,7 @@ CoD.lmgInfiniteReticle_AmmoBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local ammoFull = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	ammoFull:setRGB( 0.33, 0.95, 0.81 )
 	ammoFull:setImage( RegisterImage( 0xD6EEADD796A9390 ) )
-	ammoFull:setMaterial( LUI.UIImage.GetCachedMaterial( 0x910274CA3518744 ) )
+	ammoFull:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	ammoFull:setShaderVector( 0, 1, 0, 0, 0 )
 	ammoFull:setShaderVector( 1, 0, 0, 0, 0 )
 	ammoFull:setShaderVector( 2, 1, 0, 0, 0 )

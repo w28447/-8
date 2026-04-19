@@ -33,7 +33,7 @@ CoD.AmmoWidgetMP_Ultimate_Progress_Fill_Player_Portrait.new = function ( f1_arg0
 	UltimateRadialMeterwipe:setRGB( 1, 0.78, 0 )
 	UltimateRadialMeterwipe:setAlpha( 0.2 )
 	UltimateRadialMeterwipe:setImage( RegisterImage( 0xC523E641149E1E1 ) )
-	UltimateRadialMeterwipe:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD5CA1A25ED87F4F ) )
+	UltimateRadialMeterwipe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	UltimateRadialMeterwipe:setShaderVector( 1, 0.5, 0, 0, 0 )
 	UltimateRadialMeterwipe:setShaderVector( 2, 0.5, 0, 0, 0 )
 	UltimateRadialMeterwipe:setShaderVector( 3, 0, 0, 0, 0 )
@@ -51,7 +51,7 @@ CoD.AmmoWidgetMP_Ultimate_Progress_Fill_Player_Portrait.new = function ( f1_arg0
 	local UltimateRadialMeterwipe2 = LUI.UIImage.new( 0, 0, 0, 110, 0, 0, 0, 112 )
 	UltimateRadialMeterwipe2:setRGB( 1, 0.92, 0 )
 	UltimateRadialMeterwipe2:setImage( RegisterImage( 0xC523E641149E1E1 ) )
-	UltimateRadialMeterwipe2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD5CA1A25ED87F4F ) )
+	UltimateRadialMeterwipe2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	UltimateRadialMeterwipe2:setShaderVector( 1, 0.5, 0, 0, 0 )
 	UltimateRadialMeterwipe2:setShaderVector( 2, 0.5, 0, 0, 0 )
 	UltimateRadialMeterwipe2:setShaderVector( 3, 0, 0, 0, 0 )
@@ -69,7 +69,7 @@ CoD.AmmoWidgetMP_Ultimate_Progress_Fill_Player_Portrait.new = function ( f1_arg0
 	local UltimateRadialMeterwipe3 = LUI.UIImage.new( 0, 0, 0, 110, 0, 0, 0, 112 )
 	UltimateRadialMeterwipe3:setRGB( 1, 0.92, 0 )
 	UltimateRadialMeterwipe3:setImage( RegisterImage( 0xC523E641149E1E1 ) )
-	UltimateRadialMeterwipe3:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD5CA1A25ED87F4F ) )
+	UltimateRadialMeterwipe3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	UltimateRadialMeterwipe3:setShaderVector( 1, 0.5, 0, 0, 0 )
 	UltimateRadialMeterwipe3:setShaderVector( 2, 0.5, 0, 0, 0 )
 	UltimateRadialMeterwipe3:setShaderVector( 3, 0, 0, 0, 0 )
@@ -112,14 +112,14 @@ CoD.AmmoWidgetMP_Ultimate_Progress_Fill_Player_Portrait.new = function ( f1_arg0
 	local Flare = LUI.UIImage.new( 0, 0, -9, 119, 0, 0, -89, 39 )
 	Flare:setAlpha( 0 )
 	Flare:setImage( RegisterImage( 0x3C720E22C953683 ) )
-	Flare:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Flare:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Flare )
 	self.Flare = Flare
 	
 	local Burst = LUI.UIImage.new( 0, 0, 0, 110, 0, 0, 0, 112 )
 	Burst:setAlpha( 0 )
 	Burst:setImage( RegisterImage( 0xD4F7AA0A4512AE0 ) )
-	Burst:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Burst:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Burst )
 	self.Burst = Burst
 	
@@ -257,7 +257,7 @@ CoD.AmmoWidgetMP_Ultimate_Progress_Fill_Player_Portrait.__resetProperties = func
 	f22_arg0.Burst:setRGB( 1, 1, 1 )
 	f22_arg0.Burst:setAlpha( 0 )
 	f22_arg0.Burst:setScale( 1, 1 )
-	f22_arg0.Burst:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	f22_arg0.Burst:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 end
 
 CoD.AmmoWidgetMP_Ultimate_Progress_Fill_Player_Portrait.__clipsPerState = {
@@ -499,7 +499,7 @@ CoD.AmmoWidgetMP_Ultimate_Progress_Fill_Player_Portrait.__clipsPerState = {
 			f47_arg0.Burst:setRGB( 1, 0.87, 0 )
 			f47_arg0.Burst:setAlpha( 1 )
 			f47_arg0.Burst:setScale( 0, 0 )
-			f47_arg0.Burst:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+			f47_arg0.Burst:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 			f47_local1( f47_arg0.Burst )
 		end,
 		DefaultState = function ( f52_arg0, f52_arg1 )

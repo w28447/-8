@@ -15,7 +15,7 @@ CoD.vhud_ms_ReticleLineHostLL.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	Image0:setYRot( 180 )
 	Image0:setZoom( -40 )
 	Image0:setImage( RegisterImage( 0xF28657F590B16FE ) )
-	Image0:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Image0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image0 )
 	self.Image0 = Image0
 	
@@ -25,7 +25,7 @@ CoD.vhud_ms_ReticleLineHostLL.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	msReticleHostLowerL:setXRot( 180 )
 	msReticleHostLowerL:setYRot( 180 )
 	msReticleHostLowerL:setImage( RegisterImage( 0xF28657F590B16FE ) )
-	msReticleHostLowerL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	msReticleHostLowerL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( msReticleHostLowerL )
 	self.msReticleHostLowerL = msReticleHostLowerL
 	

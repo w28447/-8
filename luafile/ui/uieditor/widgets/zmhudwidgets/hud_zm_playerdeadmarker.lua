@@ -9,7 +9,7 @@ CoD.Hud_ZM_PlayerDeadMarker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local Disabled = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	Disabled:setImage( RegisterImage( 0x69BEFB7E55FBA50 ) )
+	Disabled:setImage( RegisterImage( "uie_cross_abilities" ) )
 	self:addElement( Disabled )
 	self.Disabled = Disabled
 	

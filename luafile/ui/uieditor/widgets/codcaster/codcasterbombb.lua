@@ -28,7 +28,7 @@ CoD.codcasterBombB.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local siteBFill = LUI.UIImage.new( 0.55, 0.55, -33, 27, 0.45, 0.45, -27, 33 )
 	siteBFill:setScale( 0.45, 0.45 )
 	siteBFill:setImage( RegisterImage( 0x2E4DBA41E983343 ) )
-	siteBFill:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD5CA1A25ED87F4F ) )
+	siteBFill:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	siteBFill:setShaderVector( 1, 0.5, 0, 0, 0 )
 	siteBFill:setShaderVector( 2, 0.5, 0, 0, 0 )
 	siteBFill:setShaderVector( 3, 0, 0, 0, 0 )

@@ -1,4 +1,4 @@
-require( "x64:9b528a05aba52d6" )
+require( "ui/uieditor/menus/itemshop/itemshopdetails" )
 require( "ui/uieditor/menus/itemshop/purchasecodpoints" )
 require( "ui/uieditor/menus/itemshop/purchasereservesitem" )
 require( "ui/uieditor/widgets/itemshop/supplychain/discountdetailswidget" )
@@ -175,7 +175,7 @@ CoD.DiscountTiersContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 			return true
 		end
 	end, function ( f18_arg0, f18_arg1, f18_arg2 )
-		CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	DiscountList:linkToElementModel( self, "percentOff", true, function ( model )
@@ -235,7 +235,7 @@ CoD.DiscountTiersContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 		PlaySoundAlias( "uin_toggle_generic" )
 		return true
 	end, function ( f24_arg0, f24_arg1, f24_arg2 )
-		CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( ReserveDeals )

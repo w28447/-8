@@ -59,7 +59,7 @@ CoD.SpawnSelectKillcam.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local selectspawnWipe = LUI.UIImage.new( 0, 0, 98, 1822, 0, 0, 161, 965 )
 	selectspawnWipe:setRGB( 0.02, 0.07, 0.09 )
 	selectspawnWipe:setAlpha( 0.17 )
-	selectspawnWipe:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	selectspawnWipe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	selectspawnWipe:setShaderVector( 0, 0.83, 1, 0, 0 )
 	selectspawnWipe:setShaderVector( 1, 0.5, 0, 0, 0 )
 	selectspawnWipe:setShaderVector( 2, 0, 1, 0, 0 )
@@ -79,7 +79,7 @@ CoD.SpawnSelectKillcam.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local mapGrid01Add = CoD.SpawnSelectLayoutGrid.new( f1_arg0, f1_arg1, 0, 0, 175, 1747, 0, 0, 277, 915 )
 	mapGrid01Add:setAlpha( 0.33 )
-	mapGrid01Add:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	mapGrid01Add:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( mapGrid01Add )
 	self.mapGrid01Add = mapGrid01Add
 	
@@ -93,7 +93,7 @@ CoD.SpawnSelectKillcam.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local selectspawnFractalAdd = LUI.UIImage.new( 0, 0, 102, 1814, 0, 0, 169, 919 )
 	selectspawnFractalAdd:setAlpha( 0.04 )
 	selectspawnFractalAdd:setImage( RegisterImage( 0xA7D9246BC3FCD6 ) )
-	selectspawnFractalAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	selectspawnFractalAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( selectspawnFractalAdd )
 	self.selectspawnFractalAdd = selectspawnFractalAdd
 	
@@ -106,7 +106,7 @@ CoD.SpawnSelectKillcam.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local offshoreMapNameGlow = LUI.UIImage.new( 0, 0, 81, 417, 0, 0, 804, 1004 )
 	offshoreMapNameGlow:setAlpha( 0.14 )
 	offshoreMapNameGlow:setImage( RegisterImage( 0xC307C69A98DE8D7 ) )
-	offshoreMapNameGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	offshoreMapNameGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( offshoreMapNameGlow )
 	self.offshoreMapNameGlow = offshoreMapNameGlow
 	
@@ -298,7 +298,7 @@ CoD.SpawnSelectKillcam.__resetProperties = function ( f8_arg0 )
 	f8_arg0.PCKillCamHint01:setAlpha( 1 )
 	f8_arg0.selectspawnWipe:setRGB( 0.02, 0.07, 0.09 )
 	f8_arg0.selectspawnWipe:setAlpha( 0.17 )
-	f8_arg0.selectspawnWipe:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	f8_arg0.selectspawnWipe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	f8_arg0.selectspawnWipe:setShaderVector( 0, 0.83, 1, 0, 0 )
 	f8_arg0.selectspawnWipe:setShaderVector( 1, 0.5, 0, 0, 0 )
 	f8_arg0.selectspawnWipe:setShaderVector( 2, 0, 1, 0, 0 )
@@ -376,7 +376,7 @@ CoD.SpawnSelectKillcam.__clipsPerState = {
 			f9_arg0.selectspawnWipe:beginAnimation( 10 )
 			f9_arg0.selectspawnWipe:setRGB( 0.02, 0.07, 0.09 )
 			f9_arg0.selectspawnWipe:setAlpha( 0 )
-			f9_arg0.selectspawnWipe:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+			f9_arg0.selectspawnWipe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 			f9_arg0.selectspawnWipe:setShaderVector( 0, 0, 0, 0, 0 )
 			f9_arg0.selectspawnWipe:setShaderVector( 1, 0.5, 0, 0, 0 )
 			f9_arg0.selectspawnWipe:setShaderVector( 2, 0, 1, 0, 0 )

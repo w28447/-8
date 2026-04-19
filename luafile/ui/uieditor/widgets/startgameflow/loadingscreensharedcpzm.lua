@@ -48,7 +48,7 @@ CoD.LoadingScreenSharedCPZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.Team1PlayerList = Team1PlayerList
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 192, -192, 0, 0, 1004, 1028 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -57,14 +57,14 @@ CoD.LoadingScreenSharedCPZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local loadingBarBG = LUI.UIImage.new( 0, 1, 198, -198, 0, 0, 1010, 1022 )
 	loadingBarBG:setRGB( 0.2, 0.2, 0.2 )
-	loadingBarBG:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	loadingBarBG:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( loadingBarBG )
 	self.loadingBarBG = loadingBarBG
 	
 	local loadingBar = LUI.UIImage.new( 0, 1, 186, -186, 0, 0, 1000, 1032 )
 	loadingBar:setRGB( 0.6, 0.6, 0.6 )
 	loadingBar:setImage( RegisterImage( 0x6578D654172F92F ) )
-	loadingBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	loadingBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	loadingBar:setShaderVector( 1, 0, 0, 0, 0 )
 	loadingBar:setShaderVector( 2, 1, 0, 0, 0 )
 	loadingBar:setShaderVector( 3, 0, 0, 0, 0 )
@@ -81,7 +81,7 @@ CoD.LoadingScreenSharedCPZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local loadingBarAdd = LUI.UIImage.new( 0, 1, 186, -186, 0, 0, 1004, 1028 )
 	loadingBarAdd:setRGB( 0.6, 0.6, 0.6 )
 	loadingBarAdd:setImage( RegisterImage( 0x6578D654172F92F ) )
-	loadingBarAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x910274CA3518744 ) )
+	loadingBarAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	loadingBarAdd:setShaderVector( 1, 0, 0, 0, 0 )
 	loadingBarAdd:setShaderVector( 2, 1, 0, 0, 0 )
 	loadingBarAdd:setShaderVector( 3, 0, 0, 0, 0 )

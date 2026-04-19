@@ -23,7 +23,7 @@ CoD.AARTierRewardItemHighlight.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	CommonFrame:setRGB( 1, 0.89, 0.47 )
 	CommonFrame:setAlpha( 0 )
 	CommonFrame:setImage( RegisterImage( 0xCA6E5C175806396 ) )
-	CommonFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	CommonFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	CommonFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	CommonFrame:setupNineSliceShader( 8, 8 )
 	self:addElement( CommonFrame )

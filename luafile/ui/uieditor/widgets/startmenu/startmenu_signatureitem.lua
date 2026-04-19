@@ -28,7 +28,7 @@ CoD.StartMenu_SignatureItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local LED = LUI.UIImage.new( 0, 0, 0, 538, 0, 0, 0, 166 )
 	LED:setAlpha( 0.2 )
 	LED:setImage( RegisterImage( 0x35AB669B497516 ) )
-	LED:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	LED:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( LED )
 	self.LED = LED
 	
@@ -81,7 +81,7 @@ CoD.StartMenu_SignatureItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local Bracket = LUI.UIImage.new( 0, 0, -12, 552, 0, 0, -9.5, 122.5 )
 	Bracket:setAlpha( 0.5 )
 	Bracket:setImage( RegisterImage( 0xE657E04763BA68E ) )
-	Bracket:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Bracket:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Bracket )
 	self.Bracket = Bracket
 	

@@ -121,7 +121,7 @@ LUI.createMenu.GameSettings_Main = function ( f4_arg0, f4_arg1 )
 		end
 	end, function ( f12_arg0, f12_arg1, f12_arg2 )
 		if IsGamepad( f12_arg2 ) and CoD.OptionsUtility.AreSpecialistOptionsValid( f12_arg2 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		elseif IsGamepad( f12_arg2 ) then
 			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x0, nil, nil )
@@ -158,10 +158,10 @@ LUI.createMenu.GameSettings_Main = function ( f4_arg0, f4_arg1 )
 		end
 	end, function ( f16_arg0, f16_arg1, f16_arg2 )
 		if IsMouseOrKeyboard( f16_arg2 ) and CoD.OptionsUtility.AreSpecialistOptionsValid( f16_arg2 ) then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x4D2505E19049444], 0x70A9FDC87CD3D48, nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x4D2505E19049444], "menu/back", nil, "ESCAPE" )
 			return true
 		elseif IsMouseOrKeyboard( f16_arg2 ) then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x4D2505E19049444], 0x70A9FDC87CD3D48, nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x4D2505E19049444], "menu/back", nil, "ESCAPE" )
 			return true
 		else
 			return false

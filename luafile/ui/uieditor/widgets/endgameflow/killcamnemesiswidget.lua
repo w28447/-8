@@ -48,7 +48,7 @@ CoD.KillcamNemesisWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local spark = LUI.UIImage.new( 0, 0, -92, 420, 0, 0, -235, 277 )
 	spark:setScale( 1.2, 1.2 )
 	spark:setImage( RegisterImage( 0x86A85E0C09931D2 ) )
-	spark:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	spark:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( spark )
 	self.spark = spark
 	

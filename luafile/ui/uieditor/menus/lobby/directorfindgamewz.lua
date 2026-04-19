@@ -68,7 +68,7 @@ LUI.createMenu.DirectorFindGameWZ = function ( f1_arg0, f1_arg1 )
 			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return false
 		elseif not CoD.ModelUtility.IsSelfModelValueTrue( f5_arg0, f5_arg2, "locked" ) then
-			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -210,7 +210,7 @@ LUI.createMenu.DirectorFindGameWZ = function ( f1_arg0, f1_arg1 )
 		GoBack( self, f18_arg2 )
 		return true
 	end, function ( f19_arg0, f19_arg1, f19_arg2 )
-		CoD.Menu.SetButtonLabel( f19_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f19_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

@@ -170,7 +170,7 @@ localizeentry,#hash_33718b30fbea646
 localizeentry,#hash_341f7e02ed2d6a8
 localizeentry,#hash_34675428c723fd3
 localizeentry,#hash_349b5ebbffdb5bc
-localizeentry,d#hash_3563fad2acf2d91
+localizeentry,d#menu/paused
 localizeentry,#hash_3643b235569acbb
 localizeentry,#hash_3643e235569b1d4
 localizeentry,#hash_36440235569b53a
@@ -3948,7 +3948,7 @@ localizeentry,#hash_53f14acbaf335681
 localizeentry,#hash_53ffad754116a3e4
 localizeentry,#hash_53ffae754116a597
 localizeentry,#hash_53ffb0754116a8fd
-localizeentry,d#hash_5400a284adf5eac0
+localizeentry,d#zmtrials/trial_completed
 localizeentry,#hash_540ef4d6f99fc836
 localizeentry,#hash_5413cf5e9bc68b60
 localizeentry,#hash_54173759e32b4b2f
@@ -5316,7 +5316,7 @@ localizeentry,#hash_70de8f4475e32d28
 localizeentry,#hash_70de914475e3308e
 localizeentry,#hash_70de924475e33241
 localizeentry,#hash_70de944475e335a7
-localizeentry,d#hash_70dfd294fc69f682
+localizeentry,d#menu/yes
 localizeentry,#hash_70e9fc6ccc1ad4f8
 localizeentry,#hash_70e9fd6ccc1ad6ab
 localizeentry,#hash_70e9fe6ccc1ad85e

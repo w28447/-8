@@ -11,7 +11,7 @@ CoD.ui_icon_callingcards_assassin_attackerarmgroup.new = function ( f1_arg0, f1_
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local arm = LUI.UIImage.new( 0, 0, -330, 46, 0, 0, -47, 57 )
-	arm:setImage( RegisterImage( uie_ui_icon_callingcards_assassin_arm ) )
+	arm:setImage( RegisterImage( "uie_ui_icon_callingcards_assassin_arm" ) )
 	self:addElement( arm )
 	self.arm = arm
 	

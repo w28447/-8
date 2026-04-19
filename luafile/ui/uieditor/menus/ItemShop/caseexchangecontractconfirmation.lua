@@ -1,0 +1,345 @@
+require( "ui/uieditor/widgets/common/commonidentitywidgetstreamlined" )
+require( "ui/uieditor/widgets/fileshare/fullscreenpopup/fullscreenpopuptemplate" )
+require( "ui/uieditor/widgets/itemshop/contracts/purchasecontract_stateindicator" )
+require( "ui/uieditor/widgets/itemshop/itemshopbutton" )
+require( "ui/uieditor/widgets/itemshop/purchaseitemcontentimage" )
+require( "ui/uieditor/widgets/playercard/selfidentitybadge" )
+require( "ui/uieditor/widgets/startmenu/startmenu_codpoints" )
+
+CoD.CaseExchangeContractConfirmation = InheritFrom( CoD.Menu )
+LUI.createMenu.CaseExchangeContractConfirmation = function ( f1_arg0, f1_arg1 )
+	local self = CoD.Menu.NewForUIEditor( "CaseExchangeContractConfirmation", f1_arg0 )
+	local f1_local1 = self
+	CoD.BaseUtility.SetModelFromUserData( f1_arg0, self, f1_arg1._model )
+	SetMenuProperty( f1_local1, "_closeAndGoBack", true )
+	CoD.BaseUtility.InitControllerModel( f1_arg0, "purchaseContractNoActivate", false )
+	SetMenuProperty( f1_local1, "__keepPopupButtonListPC", not CoD.ContractUtility.IsActiveContractSlotOpen( f1_arg0 ) )
+	self:setClass( CoD.CaseExchangeContractConfirmation )
+	self.soundSet = "FrontendMain"
+	self:setOwner( f1_arg0 )
+	self:setLeftRight( 0, 1, 0, 0 )
+	self:setTopBottom( 0, 1, 0, 0 )
+	self:playSound( "menu_open", f1_arg0 )
+	self.anyChildUsesUpdateState = true
+	
+	local FullscreenPopupTemplate = CoD.FullscreenPopupTemplate.new( f1_local1, f1_arg0, 0, 1, 0, 0, 0, 1, 0, 0 )
+	FullscreenPopupTemplate:mergeStateConditions( {
+		{
+			stateName = "WorkingState",
+			condition = function ( menu, element, event )
+				return IsElementInState( element, "WorkingState" )
+			end
+		},
+		{
+			stateName = "ErrorState",
+			condition = function ( menu, element, event )
+				return IsElementInState( element, "ErrorState" )
+			end
+		},
+		{
+			stateName = "CustomState",
+			condition = function ( menu, element, event )
+				return IsElementInState( element, "CustomState" )
+			end
+		},
+		{
+			stateName = "FinishedState",
+			condition = function ( menu, element, event )
+				return IsElementInState( element, "FinishedState" )
+			end
+		}
+	} )
+	FullscreenPopupTemplate.ButtonList:setWidgetType( CoD.ItemShopButton )
+	FullscreenPopupTemplate.ButtonList:setDataSource( "CaseExchangeContractConfirmationButtons" )
+	FullscreenPopupTemplate.ErrorSubtitle:setText( Engine[0xF9F1239CFD921FE]( "menu/exchange_error" ) )
+	FullscreenPopupTemplate.WorkingTitle:setText( LocalizeToUpperString( "menu/exchange_processing" ) )
+	FullscreenPopupTemplate.Title:setText( LocalizeToUpperString( 0x59139D06DB080E5 ) )
+	FullscreenPopupTemplate.DoneTitle.__Done_Title = function ()
+		FullscreenPopupTemplate.DoneTitle:setText( Engine[0xF9F1239CFD921FE]( CoD.ContractUtility.UseCaseExchangeAndActivateContractCompleteTitleIfNeeded( f1_arg0, 0x456F58A03ED7888 ) ) )
+	end
+	
+	FullscreenPopupTemplate.DoneTitle.__Done_Title()
+	FullscreenPopupTemplate:linkToElementModel( self, nil, false, function ( model )
+		FullscreenPopupTemplate:setModel( model, f1_arg0 )
+	end )
+	FullscreenPopupTemplate:linkToElementModel( self, "name", true, function ( model )
+		local f8_local0 = model:get()
+		if f8_local0 ~= nil then
+			FullscreenPopupTemplate.Subtitle:setText( CoD.ContractUtility.GetCaseExchangeContractConfirmDesc( self:getModel(), f1_arg0, f8_local0 ) )
+		end
+	end )
+	FullscreenPopupTemplate.DoneSubtitle.__Done_Subtitle = function ( f9_arg0 )
+		local f9_local0 = f9_arg0:get()
+		if f9_local0 ~= nil then
+			FullscreenPopupTemplate.DoneSubtitle:setText( CoD.ContractUtility.GetCaseExchangeContractCompleteDesc( self:getModel(), f1_arg0, f9_local0 ) )
+		end
+	end
+	
+	FullscreenPopupTemplate:linkToElementModel( self, "name", true, FullscreenPopupTemplate.DoneSubtitle.__Done_Subtitle )
+	FullscreenPopupTemplate.DoneSubtitle.__Done_Subtitle_FullPath = function ()
+		local f10_local0 = self:getModel()
+		if f10_local0 then
+			f10_local0 = self:getModel()
+			f10_local0 = f10_local0.name
+		end
+		if f10_local0 then
+			FullscreenPopupTemplate.DoneSubtitle.__Done_Subtitle( f10_local0 )
+		end
+	end
+	
+	LUI.OverrideFunction_CallOriginalFirst( FullscreenPopupTemplate, "setState", function ( element, controller, f11_arg2, f11_arg3, f11_arg4 )
+		if IsPC() and IsElementInState( element, "FinishedState" ) then
+			CoD.PCUtility.LinkPCSmallCloseButtonToInput( f1_local1, controller, element, Enum.LUIButton[0x755DA1E2E7C263F] )
+			UpdateSelfElementState( f1_local1, self.StateIndicator, controller )
+		elseif IsPC() and IsElementInState( element, "ErrorState" ) then
+			CoD.PCUtility.LinkPCSmallCloseButtonToInput( f1_local1, controller, element, Enum.LUIButton[0x755DA1E2E7C263F] )
+			UpdateSelfElementState( f1_local1, self.StateIndicator, controller )
+		elseif IsPC() then
+			CoD.PCUtility.LinkPCSmallCloseButtonToInput( f1_local1, controller, element, Enum.LUIButton[0x805EFA15E9E7E5A] )
+			UpdateSelfElementState( f1_local1, self.StateIndicator, controller )
+		else
+			UpdateSelfElementState( f1_local1, self.StateIndicator, controller )
+		end
+	end )
+	self:addElement( FullscreenPopupTemplate )
+	self.FullscreenPopupTemplate = FullscreenPopupTemplate
+	
+	local SelfIdentityBadge = CoD.SelfIdentityBadge.new( f1_local1, f1_arg0, 0.5, 0.5, 541, 872, 0, 0, 33.5, 98.5 )
+	SelfIdentityBadge:setAlpha( 0 )
+	SelfIdentityBadge:subscribeToGlobalModel( f1_arg0, "PerController", "identityBadge", function ( model )
+		SelfIdentityBadge:setModel( model, f1_arg0 )
+	end )
+	self:addElement( SelfIdentityBadge )
+	self.SelfIdentityBadge = SelfIdentityBadge
+	
+	local Linker = LUI.UIImage.new( 0.5, 0.5, -330, -326, 0.5, 0.5, -192, 205 )
+	Linker:setRGB( ColorSet.T8__BEIGE__HEADER.r, ColorSet.T8__BEIGE__HEADER.g, ColorSet.T8__BEIGE__HEADER.b )
+	Linker:setAlpha( 0.35 )
+	Linker:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
+	Linker:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
+	Linker:setShaderVector( 0, 0, 0, 0, 0 )
+	Linker:setupNineSliceShader( 4, 8 )
+	self:addElement( Linker )
+	self.Linker = Linker
+	
+	local CornerPip = LUI.UIImage.new( 0.5, 0.5, -802.5, -786.5, 0.5, 0.5, -187, -171 )
+	CornerPip:setAlpha( 0.4 )
+	CornerPip:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
+	self:addElement( CornerPip )
+	self.CornerPip = CornerPip
+	
+	local CornerPip2 = LUI.UIImage.new( 0.5, 0.5, -494.5, -478.5, 0.5, 0.5, -187, -171 )
+	CornerPip2:setAlpha( 0.4 )
+	CornerPip2:setZRot( 270 )
+	CornerPip2:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
+	self:addElement( CornerPip2 )
+	self.CornerPip2 = CornerPip2
+	
+	local CornerPip3 = LUI.UIImage.new( 0.5, 0.5, -803.5, -787.5, 0.5, 0.5, 122, 138 )
+	CornerPip3:setAlpha( 0.4 )
+	CornerPip3:setZRot( 90 )
+	CornerPip3:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
+	self:addElement( CornerPip3 )
+	self.CornerPip3 = CornerPip3
+	
+	local CornerPip4 = LUI.UIImage.new( 0.5, 0.5, -494.5, -478.5, 0.5, 0.5, 121, 137 )
+	CornerPip4:setAlpha( 0.4 )
+	CornerPip4:setZRot( 180 )
+	CornerPip4:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
+	self:addElement( CornerPip4 )
+	self.CornerPip4 = CornerPip4
+	
+	local Black = LUI.UIImage.new( 0.5, 0.5, -960, -330, 0.5, 0.5, -214.5, 230.5 )
+	Black:setRGB( 0, 0, 0 )
+	Black:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
+	Black:setShaderVector( 0, 0, 1, 0, 0 )
+	Black:setShaderVector( 1, 0, 0.16, 0, 0 )
+	Black:setShaderVector( 2, 0, 1, 0, 0 )
+	Black:setShaderVector( 3, 0, 0, 0, 0 )
+	Black:setShaderVector( 4, 0, 0, 0, 0 )
+	self:addElement( Black )
+	self.Black = Black
+	
+	local ContentImage = CoD.PurchaseItemContentImage.new( f1_local1, f1_arg0, 0.5, 0.5, -1244, -412, 0.5, 0.5, -204, 172 )
+	ContentImage:linkToElementModel( self, nil, false, function ( model )
+		ContentImage:setModel( model, f1_arg0 )
+	end )
+	self:addElement( ContentImage )
+	self.ContentImage = ContentImage
+	
+	local StateIndicator = CoD.PurchaseContract_StateIndicator.new( f1_local1, f1_arg0, 0.5, 0.5, -960, -330, 0.5, 0.5, 183.5, 226.5 )
+	StateIndicator:mergeStateConditions( {
+		{
+			stateName = "Purchased",
+			condition = function ( menu, element, event )
+				return IsElementInState( self.FullscreenPopupTemplate, "FinishedState" ) and CoD.ModelUtility.IsControllerModelValueTrue( f1_arg0, "purchaseContractNoActivate" )
+			end
+		},
+		{
+			stateName = "Active",
+			condition = function ( menu, element, event )
+				return IsElementInState( self.FullscreenPopupTemplate, "FinishedState" )
+			end
+		},
+		{
+			stateName = "Free",
+			condition = function ( menu, element, event )
+				return AlwaysFalse()
+			end
+		}
+	} )
+	local CommonIdentityWidgetStreamlinedPC = StateIndicator
+	local StartMenuCODpoints = StateIndicator.subscribeToModel
+	local f1_local14 = Engine.GetModelForController( f1_arg0 )
+	StartMenuCODpoints( CommonIdentityWidgetStreamlinedPC, f1_local14.purchaseContractNoActivate, function ( f17_arg0 )
+		f1_local1:updateElementState( StateIndicator, {
+			name = "model_validation",
+			menu = f1_local1,
+			controller = f1_arg0,
+			modelValue = f17_arg0:get(),
+			modelName = "purchaseContractNoActivate"
+		} )
+	end, false )
+	StateIndicator.CostText:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
+	StateIndicator:linkToElementModel( self, "casePrice", true, function ( model )
+		local f18_local0 = model:get()
+		if f18_local0 ~= nil then
+			StateIndicator.CostText:setText( LocalizeIntoString( 0x9CBD79D3C8A2BED, f18_local0 ) )
+		end
+	end )
+	self:addElement( StateIndicator )
+	self.StateIndicator = StateIndicator
+	
+	StartMenuCODpoints = CoD.StartMenu_CODpoints.new( f1_local1, f1_arg0, 0.5, 0.5, 341, 445, 0, 0, 23.5, 103.5 )
+	StartMenuCODpoints:setAlpha( 0 )
+	StartMenuCODpoints:subscribeToGlobalModel( f1_arg0, "LootStreamProgress", "codPoints", function ( model )
+		local f19_local0 = model:get()
+		if f19_local0 ~= nil then
+			StartMenuCODpoints.codpointsCount:setText( SetValueIfNumberEqualTo( -1, "-", f19_local0 ) )
+		end
+	end )
+	self:addElement( StartMenuCODpoints )
+	self.StartMenuCODpoints = StartMenuCODpoints
+	
+	CommonIdentityWidgetStreamlinedPC = nil
+	
+	CommonIdentityWidgetStreamlinedPC = CoD.CommonIdentityWidgetStreamlined.new( f1_local1, f1_arg0, 0.5, 0.5, 426, 956, 0.5, 0.5, -282, -242 )
+	CommonIdentityWidgetStreamlinedPC:subscribeToGlobalModel( f1_arg0, "PerController", "identityBadge", function ( model )
+		CommonIdentityWidgetStreamlinedPC:setModel( model, f1_arg0 )
+	end )
+	self:addElement( CommonIdentityWidgetStreamlinedPC )
+	self.CommonIdentityWidgetStreamlinedPC = CommonIdentityWidgetStreamlinedPC
+	
+	f1_local14 = nil
+	self.CommonIdentityWidgetStreamlinedC = LUI.UIElement.createFake()
+	
+	local ContractName = LUI.UIText.new( 0.5, 0.5, -960, -330, 0.5, 0.5, 144.5, 183.5 )
+	ContractName:setTTF( "ttmussels_demibold" )
+	ContractName:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
+	ContractName:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
+	ContractName:linkToElementModel( self, "name", true, function ( model )
+		local f21_local0 = model:get()
+		if f21_local0 ~= nil then
+			ContractName:setText( Engine[0xF9F1239CFD921FE]( f21_local0 ) )
+		end
+	end )
+	self:addElement( ContractName )
+	self.ContractName = ContractName
+	
+	local f1_local16 = FullscreenPopupTemplate
+	local f1_local17 = FullscreenPopupTemplate.subscribeToModel
+	local f1_local18 = Engine.GetModelForController( f1_arg0 )
+	f1_local17( f1_local16, f1_local18.purchaseContractNoActivate, FullscreenPopupTemplate.DoneSubtitle.__Done_Subtitle_FullPath )
+	f1_local16 = FullscreenPopupTemplate
+	f1_local17 = FullscreenPopupTemplate.subscribeToModel
+	f1_local18 = Engine.GetModelForController( f1_arg0 )
+	f1_local17( f1_local16, f1_local18.purchaseContractNoActivate, FullscreenPopupTemplate.DoneTitle.__Done_Title )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f22_arg0, f22_arg1, f22_arg2, f22_arg3 )
+		if not IsElementInState( self.FullscreenPopupTemplate, "WorkingState" ) and not IsElementInState( self.FullscreenPopupTemplate, "FinishedState" ) then
+			GoBack( self, f22_arg2 )
+			return true
+		else
+			
+		end
+	end, function ( f23_arg0, f23_arg1, f23_arg2 )
+		if not IsElementInState( self.FullscreenPopupTemplate, "WorkingState" ) and not IsElementInState( self.FullscreenPopupTemplate, "FinishedState" ) then
+			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+			return true
+		else
+			return false
+		end
+	end, false )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f24_arg0, f24_arg1, f24_arg2, f24_arg3 )
+		if IsElementInState( self.FullscreenPopupTemplate, "FinishedState" ) then
+			DelayCloseAndGoBack( f24_arg1, f24_arg2, 0 )
+			ForceNotifyGlobalModel( f24_arg2, "ContractsForceUpdate" )
+			CoD.BlackMarketUtility.UpdateSunsetPurchasedSlotModel( f24_arg2, self )
+			return true
+		elseif IsElementInState( self.FullscreenPopupTemplate, "ErrorState" ) then
+			GoBack( self, f24_arg2 )
+			return true
+		elseif not IsElementInState( self.FullscreenPopupTemplate, "WorkingState" ) and not MenuPropertyIsTrue( f24_arg1, "__keepPopupButtonListPC" ) then
+			CoD.BlackMarketUtility.SetElementWorkingStateAndExchangeLootCases( self.FullscreenPopupTemplate, f24_arg2 )
+			PlaySoundAlias( "uin_points_purchase" )
+			return true
+		else
+			
+		end
+	end, function ( f25_arg0, f25_arg1, f25_arg2 )
+		if IsElementInState( self.FullscreenPopupTemplate, "FinishedState" ) then
+			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, nil )
+			return true
+		elseif IsElementInState( self.FullscreenPopupTemplate, "ErrorState" ) then
+			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/back", nil, nil )
+			return true
+		elseif not IsElementInState( self.FullscreenPopupTemplate, "WorkingState" ) and not MenuPropertyIsTrue( f25_arg1, "__keepPopupButtonListPC" ) then
+			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/purchase", nil, nil )
+			return true
+		else
+			return false
+		end
+	end, false )
+	self:subscribeToGlobalModel( f1_arg0, "ItemshopRotation", "cycled", function ( model )
+		if CoD.ModelUtility.IsGlobalModelValueTrue( "ItemshopRotation.cycled" ) and CoD.ContractUtility.OpenedContractExpired( self, self, f1_arg0 ) then
+			GoBack( self, f1_arg0 )
+		end
+	end )
+	self:subscribeToGlobalModel( f1_arg0, "AutoEvents", "cycled", function ( model )
+		local f27_local0 = self
+		if IsElementInAnyState( self.FullscreenPopupTemplate, "WorkingState", "ErrorState", "CustomState", "FinishedState" ) then
+			DelayCloseAndGoBack( f1_local1, f1_arg0, 0 )
+		end
+	end )
+	FullscreenPopupTemplate.buttons:setModel( self.buttonModel, f1_arg0 )
+	FullscreenPopupTemplate.buttonPC:setModel( self.buttonModel, f1_arg0 )
+	FullscreenPopupTemplate.id = "FullscreenPopupTemplate"
+	SelfIdentityBadge.id = "SelfIdentityBadge"
+	self:processEvent( {
+		name = "menu_loaded",
+		controller = f1_arg0
+	} )
+	self.__defaultFocus = FullscreenPopupTemplate
+	if CoD.isPC and (IsKeyboard( f1_arg0 ) or self.ignoreCursor) then
+		self:restoreState( f1_arg0 )
+	end
+	LUI.OverrideFunction_CallOriginalSecond( self, "close", self.__onClose )
+	if PostLoadFunc then
+		PostLoadFunc( self, f1_arg0 )
+	end
+	
+	f1_local17 = self
+	SetMenuProperty( f1_local1, "_isContract", true )
+	return self
+end
+
+CoD.CaseExchangeContractConfirmation.__onClose = function ( f28_arg0 )
+	f28_arg0.FullscreenPopupTemplate:close()
+	f28_arg0.SelfIdentityBadge:close()
+	f28_arg0.ContentImage:close()
+	f28_arg0.StateIndicator:close()
+	f28_arg0.StartMenuCODpoints:close()
+	f28_arg0.CommonIdentityWidgetStreamlinedPC:close()
+	f28_arg0.CommonIdentityWidgetStreamlinedC:close()
+	f28_arg0.ContractName:close()
+end
+

@@ -40,7 +40,7 @@ LUI.createMenu.SupportSelection = function ( f1_arg0, f1_arg1 )
 	local CostBacking = LUI.UIImage.new( 0.5, 0.5, 381.5, 512.5, 0, 0, 515.5, 1189.5 )
 	CostBacking:setAlpha( 0.4 )
 	CostBacking:setZRot( -90 )
-	CostBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDE760AC0E801E57 ) )
+	CostBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_gradient_normal" ) )
 	CostBacking:setShaderVector( 0, 0, 0, 0, 1 )
 	CostBacking:setShaderVector( 1, 0, 0, 0, 0 )
 	CostBacking:setShaderVector( 2, 0.5, 0, 0, 0 )
@@ -118,7 +118,7 @@ LUI.createMenu.SupportSelection = function ( f1_arg0, f1_arg1 )
 			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
 			return false
 		elseif not CoD.ScorestreakSelectUtility.IsScorestreakEquipped( f9_arg0, f9_arg1, f9_arg2 ) and not CoD.ScorestreakSelectUtility.IsScorestreakLocked( f9_arg0, f9_arg1, f9_arg2 ) and IsGamepad( f9_arg2 ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif CoD.ScorestreakSelectUtility.IsScorestreakEquipped( f9_arg0, f9_arg1, f9_arg2 ) and IsMouseOrKeyboard( f9_arg2 ) then
 			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
@@ -255,8 +255,8 @@ LUI.createMenu.SupportSelection = function ( f1_arg0, f1_arg1 )
 	self.DirectorDividerWithGradient = DirectorDividerWithGradient
 	
 	local CostDivider = LUI.UIImage.new( 0.5, 0.5, 110.5, 800.5, 0.5, 0.5, 248, 262 )
-	CostDivider:setImage( RegisterImage( 0xD55B3068BF9FD12 ) )
-	CostDivider:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	CostDivider:setImage( RegisterImage( "uie_ui_menu_cac_primary_button_top_line" ) )
+	CostDivider:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CostDivider )
 	self.CostDivider = CostDivider
 	
@@ -415,7 +415,7 @@ LUI.createMenu.SupportSelection = function ( f1_arg0, f1_arg1 )
 		CoD.LobbyUtility.SetMenuControllerRestriction( self, f31_arg2, 0 )
 		return true
 	end, function ( f32_arg0, f32_arg1, f32_arg2 )
-		CoD.Menu.SetButtonLabel( f32_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f32_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x820DDD869ABBFAA], "ui_contextual_2", function ( f33_arg0, f33_arg1, f33_arg2, f33_arg3 )

@@ -29,7 +29,7 @@ CoD.LaboratoryPlasma_PopoutContainer.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 0, 0.5, 798.5, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.6 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -39,7 +39,7 @@ CoD.LaboratoryPlasma_PopoutContainer.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	local StoneTiledBacking = LUI.UIImage.new( 0, 0, 0, 799, 0, 0, 1, 207 )
 	StoneTiledBacking:setRGB( 0.83, 0.11, 0.01 )
 	StoneTiledBacking:setAlpha( 0.8 )
-	StoneTiledBacking:setImage( RegisterImage( 0x33757173B476ACD ) )
+	StoneTiledBacking:setImage( RegisterImage( "uie_ui_zm_laboratory_buttonbgtile" ) )
 	StoneTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	StoneTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	StoneTiledBacking:setupNineSliceShader( 196, 88 )
@@ -60,8 +60,8 @@ CoD.LaboratoryPlasma_PopoutContainer.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local tileTexture = LUI.UIImage.new( 0.5, 0.5, -400, 400, 0, 1, 0, 0 )
 	tileTexture:setAlpha( 0.5 )
-	tileTexture:setImage( RegisterImage( 0xA38BB233841162F ) )
-	tileTexture:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD8EA9FE9B0BCF75 ) )
+	tileTexture:setImage( RegisterImage( "uie_t7_tile_texture" ) )
+	tileTexture:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	tileTexture:setShaderVector( 0, 30, 55, 0, 0 )
 	tileTexture:setShaderVector( 1, 0, 0, 0, 0 )
 	self:addElement( tileTexture )
@@ -100,7 +100,7 @@ CoD.LaboratoryPlasma_PopoutContainer.new = function ( f1_arg0, f1_arg1, f1_arg2,
 		end
 	end, function ( f6_arg0, f6_arg1, f6_arg2 )
 		if not IsDisabled( f6_arg0, f6_arg2 ) then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -111,7 +111,7 @@ CoD.LaboratoryPlasma_PopoutContainer.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local titlePurchasePlasma = LUI.UIText.new( 0.5, 0.5, -325.5, 326.5, 0, 0, 175.5, 205.5 )
 	titlePurchasePlasma:setRGB( 0.58, 0.85, 1 )
-	titlePurchasePlasma:setText( LocalizeToUpperString( 0x29616DF01C4B70B ) )
+	titlePurchasePlasma:setText( LocalizeToUpperString( "zmui/purchase_nebulium_plasma" ) )
 	titlePurchasePlasma:setTTF( "skorzhen" )
 	titlePurchasePlasma:setLetterSpacing( 5 )
 	titlePurchasePlasma:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -121,7 +121,7 @@ CoD.LaboratoryPlasma_PopoutContainer.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local titleNotEnoughPlasma = LUI.UIText.new( 0.5, 0.5, -325.5, 326.5, 0, 0, 175.5, 205.5 )
 	titleNotEnoughPlasma:setRGB( 0.58, 0.85, 1 )
-	titleNotEnoughPlasma:setText( LocalizeToUpperString( 0xDFE20BB2A710F9C ) )
+	titleNotEnoughPlasma:setText( LocalizeToUpperString( "zmui/not_enough_plasma" ) )
 	titleNotEnoughPlasma:setTTF( "skorzhen" )
 	titleNotEnoughPlasma:setLetterSpacing( 5 )
 	titleNotEnoughPlasma:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -174,7 +174,7 @@ CoD.LaboratoryPlasma_PopoutContainer.new = function ( f1_arg0, f1_arg1, f1_arg2,
 		end
 	end, function ( f12_arg0, f12_arg1, f12_arg2 )
 		if not IsDisabled( f12_arg0, f12_arg2 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -186,14 +186,14 @@ CoD.LaboratoryPlasma_PopoutContainer.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	local BgZmStar = LUI.UIImage.new( 0.5, 0.5, -100, 100, 0, 0, 107, 307 )
 	BgZmStar:setRGB( ColorSet.T8__OFF__GRAY.r, ColorSet.T8__OFF__GRAY.g, ColorSet.T8__OFF__GRAY.b )
 	BgZmStar:setAlpha( 0.4 )
-	BgZmStar:setImage( RegisterImage( 0x37B9CCC18877DAA ) )
+	BgZmStar:setImage( RegisterImage( "uie_ui_hud_zm_arr_reward_star" ) )
 	BgZmStar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	BgZmStar:setShaderVector( 0, 4, 0, 0, 0 )
 	self:addElement( BgZmStar )
 	self.BgZmStar = BgZmStar
 	
 	local DividerCenter = LUI.UIImage.new( 0.5, 0.5, -7.5, 7.5, 0.5, 0.5, -1.5, 13.5 )
-	DividerCenter:setImage( RegisterImage( uie_zm_hud_cornerdecoration ) )
+	DividerCenter:setImage( RegisterImage( "uie_zm_hud_cornerdecoration" ) )
 	self:addElement( DividerCenter )
 	self.DividerCenter = DividerCenter
 	

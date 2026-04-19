@@ -26,8 +26,8 @@ CoD.EmblemColorSaved.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local FrontendFrameSelected = LUI.UIImage.new( 0.5, 0.5, -34.5, 34.5, 0.5, 0.5, -98, 98 )
 	FrontendFrameSelected:setAlpha( 0 )
-	FrontendFrameSelected:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FrontendFrameSelected:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrameSelected:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FrontendFrameSelected:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrameSelected:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrameSelected:setupNineSliceShader( 14, 14 )
 	self:addElement( FrontendFrameSelected )
@@ -71,13 +71,13 @@ CoD.EmblemColorSaved.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 		end
 	end, function ( f8_arg0, f8_arg1, f8_arg2 )
 		if CoD.ModelUtility.IsModelValueEqualTo( f8_arg2, "Emblem.EmblemProperties.isGradientMode", 0 ) and IsGamepad( f8_arg2 ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif CoD.ModelUtility.IsModelValueEqualTo( f8_arg2, "Emblem.EmblemProperties.isGradientMode", 1 ) and not CoD.ModelUtility.IsModelValueEqualToEnum( f8_arg2, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif CoD.ModelUtility.IsModelValueEqualTo( f8_arg2, "Emblem.EmblemProperties.isGradientMode", 1 ) and CoD.ModelUtility.IsModelValueEqualToEnum( f8_arg2, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

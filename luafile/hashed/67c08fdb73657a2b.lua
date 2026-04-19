@@ -25,7 +25,7 @@ CoD.Prestige_LevelContentWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 0, 128, 1230, 0, 0, -40, 522 )
 	NoiseTiledBacking:setAlpha( 0.5 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -34,7 +34,7 @@ CoD.Prestige_LevelContentWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local NoiseTiledBackingAdd = LUI.UIImage.new( 0, 0, 128, 1230, 0, 0, 506, 522 )
 	NoiseTiledBackingAdd:setAlpha( 0.5 )
-	NoiseTiledBackingAdd:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBackingAdd:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBackingAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	NoiseTiledBackingAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBackingAdd:setupNineSliceShader( 196, 88 )
@@ -177,8 +177,8 @@ CoD.Prestige_LevelContentWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local infoBracketTop = LUI.UIImage.new( 0, 0, 126.5, 1230.5, 0, 0, -41, -33 )
 	infoBracketTop:setAlpha( 0.05 )
 	infoBracketTop:setZRot( 180 )
-	infoBracketTop:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	infoBracketTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	infoBracketTop:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	infoBracketTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	infoBracketTop:setShaderVector( 0, 0, 0, 0, 0 )
 	infoBracketTop:setupNineSliceShader( 16, 4 )
 	self:addElement( infoBracketTop )

@@ -53,13 +53,13 @@ CoD.TabbedScoreboardMapInfoboxLeft.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local VisibilityTextBlur = LUI.UIImage.new( 0, 0, 11, 131, 0, 0, 130, 140 )
 	VisibilityTextBlur:setAlpha( 0.1 )
 	VisibilityTextBlur:setImage( RegisterImage( 0x2B45159FDA9D9AA ) )
-	VisibilityTextBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	VisibilityTextBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( VisibilityTextBlur )
 	self.VisibilityTextBlur = VisibilityTextBlur
 	
 	local VisibilityText = LUI.UIImage.new( 0, 0, 10, 130, 0, 0, 129, 139 )
 	VisibilityText:setImage( RegisterImage( 0x2B45159FDA9D9AA ) )
-	VisibilityText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	VisibilityText:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( VisibilityText )
 	self.VisibilityText = VisibilityText
 	

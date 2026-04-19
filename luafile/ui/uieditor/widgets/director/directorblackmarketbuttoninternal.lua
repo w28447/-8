@@ -51,7 +51,7 @@ CoD.DirectorBlackMarketButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local SpecialEventBanner = LUI.UIImage.new( 0, 1, 4, -4, 0, 1, 4, -4 )
 	SpecialEventBanner.__Image = function ()
-		SpecialEventBanner:setImage( RegisterImage( CoD.BlackMarketUtility.GetCurrentBlackMarketBannerImage( 0x7615068F50B3D66 ) ) )
+		SpecialEventBanner:setImage( RegisterImage( CoD.BlackMarketUtility.GetCurrentBlackMarketBannerImage( "blacktransparent" ) ) )
 	end
 	
 	SpecialEventBanner.__Image()
@@ -64,8 +64,8 @@ CoD.DirectorBlackMarketButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local FrontendFrame02 = LUI.UIImage.new( 0.4, 0.4, -125.5, 125.5, 0, 0, 89, 101 )
 	FrontendFrame02:setRGB( 0, 0.66, 1 )
-	FrontendFrame02:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrontendFrame02:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrame02:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrontendFrame02:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrame02:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrame02:setupNineSliceShader( 6, 6 )
 	self:addElement( FrontendFrame02 )
@@ -80,7 +80,7 @@ CoD.DirectorBlackMarketButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	local Border = LUI.UIImage.new( 0.4, 0.4, -125, 125, 1, 1, -21, -9 )
 	Border:setRGB( 0.08, 0.14, 0.18 )
 	Border:setAlpha( 0.8 )
-	Border:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE125638BF94665F ) )
+	Border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	Border:setShaderVector( 0, 0, 0.1, 0, 0.1 )
 	self:addElement( Border )
 	self.Border = Border
@@ -88,7 +88,7 @@ CoD.DirectorBlackMarketButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	local tierProgress = LUI.UIImage.new( 0.4, 0.4, -125, 125, 1, 1, -21, -9 )
 	tierProgress:setRGB( 0.5, 0.85, 1 )
 	tierProgress:setImage( RegisterImage( 0xE51FDFB95E8F82B ) )
-	tierProgress:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	tierProgress:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	tierProgress:setShaderVector( 1, 0, 0, 0, 0 )
 	tierProgress:setShaderVector( 2, 1, 0, 0, 0 )
 	tierProgress:setShaderVector( 3, 0, 0, 0, 0 )
@@ -105,7 +105,7 @@ CoD.DirectorBlackMarketButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	local tierProgressAdd = LUI.UIImage.new( 0.4, 0.4, -125, 125, 1, 1, -21, -9 )
 	tierProgressAdd:setRGB( 0.5, 0.85, 1 )
 	tierProgressAdd:setImage( RegisterImage( 0xE51FDFB95E8F82B ) )
-	tierProgressAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	tierProgressAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	tierProgressAdd:setShaderVector( 1, 0, 0, 0, 0 )
 	tierProgressAdd:setShaderVector( 2, 0, 1, 0, 0 )
 	tierProgressAdd:setShaderVector( 3, 0, 0, 0, 0 )
@@ -152,7 +152,7 @@ CoD.DirectorBlackMarketButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local BlackMarketNameGlow = LUI.UIText.new( 0.4, 0.4, -135.5, 135.5, 0, 0, 40.5, 64.5 )
 	BlackMarketNameGlow:setRGB( 0, 0, 0 )
-	BlackMarketNameGlow:setText( LocalizeToUpperString( 0x29C903C6DF90D6F ) )
+	BlackMarketNameGlow:setText( LocalizeToUpperString( "menu/black_market" ) )
 	BlackMarketNameGlow:setTTF( "ttmussels_demibold" )
 	BlackMarketNameGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	BlackMarketNameGlow:setShaderVector( 0, 0.81, 0, 0, 0 )
@@ -166,7 +166,7 @@ CoD.DirectorBlackMarketButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local BlackMarketName = LUI.UIText.new( 0.4, 0.4, -135.5, 135.5, 0, 0, 40.5, 64.5 )
 	BlackMarketName:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	BlackMarketName:setText( LocalizeToUpperString( 0x29C903C6DF90D6F ) )
+	BlackMarketName:setText( LocalizeToUpperString( "menu/black_market" ) )
 	BlackMarketName:setTTF( "ttmussels_demibold" )
 	BlackMarketName:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
 	BlackMarketName:setLetterSpacing( 3 )

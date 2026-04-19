@@ -156,7 +156,7 @@ CoD.WZPersonalizeWeapon_WeaponListWidget.new = function ( f1_arg0, f1_arg1, f1_a
 		end
 	end, function ( f17_arg0, f17_arg1, f17_arg2 )
 		if not CoD.ModelUtility.IsSelfModelValueEqualTo( f17_arg0, f17_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and not CoD.CACUtility.IsCACItemLocked( f17_arg1, f17_arg0, f17_arg2 ) and not CoD.WZUtility.IsPersonalizationLockedForWeapon( f17_arg1, f17_arg0, f17_arg2 ) and CoD.CACUtility.HasSignatureWeapons( f17_arg1, f17_arg0, f17_arg2 ) then
-			CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -222,8 +222,8 @@ CoD.WZPersonalizeWeapon_WeaponListWidget.new = function ( f1_arg0, f1_arg1, f1_a
 		}
 	} )
 	PCArrowL:setZRot( 90 )
-	PCArrowL.Arrow:setImage( RegisterImage( 0x5E74D00B45D12B6 ) )
-	PCArrowL.Arrow2:setImage( RegisterImage( 0x5E74D00B45D12B6 ) )
+	PCArrowL.Arrow:setImage( RegisterImage( "uie_optionswidgets_arrow" ) )
+	PCArrowL.Arrow2:setImage( RegisterImage( "uie_optionswidgets_arrow" ) )
 	PCArrowL:appendEventHandler( "input_source_changed", function ( f28_arg0, f28_arg1 )
 		f28_arg1.menu = f28_arg1.menu or f1_arg0
 		CoD.Menu.UpdateButtonShownState( f28_arg0, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
@@ -275,8 +275,8 @@ CoD.WZPersonalizeWeapon_WeaponListWidget.new = function ( f1_arg0, f1_arg1, f1_a
 		}
 	} )
 	PCArrowR:setZRot( 270 )
-	PCArrowR.Arrow:setImage( RegisterImage( 0x5E74D00B45D12B6 ) )
-	PCArrowR.Arrow2:setImage( RegisterImage( 0x5E74D00B45D12B6 ) )
+	PCArrowR.Arrow:setImage( RegisterImage( "uie_optionswidgets_arrow" ) )
+	PCArrowR.Arrow2:setImage( RegisterImage( "uie_optionswidgets_arrow" ) )
 	PCArrowR:appendEventHandler( "input_source_changed", function ( f34_arg0, f34_arg1 )
 		f34_arg1.menu = f34_arg1.menu or f1_arg0
 		CoD.Menu.UpdateButtonShownState( f34_arg0, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
@@ -338,7 +338,7 @@ CoD.WZPersonalizeWeapon_WeaponListWidget.new = function ( f1_arg0, f1_arg1, f1_a
 		CoD.CACUtility.HideWeaponVariantList( f40_arg1, f40_arg2 )
 		return true
 	end, function ( f41_arg0, f41_arg1, f41_arg2 )
-		CoD.Menu.SetButtonLabel( f41_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f41_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	self:addElement( WeaponVariantListWidget )

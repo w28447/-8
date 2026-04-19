@@ -23,7 +23,7 @@ CoD.AmmoWidget_SingleShotPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	GlowOuter:setAlpha( 0.35 )
 	GlowOuter:setZRot( 90 )
 	GlowOuter:setImage( RegisterImage( 0xE48B57FD16FAD2D ) )
-	GlowOuter:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	GlowOuter:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowOuter )
 	self.GlowOuter = GlowOuter
 	
@@ -46,7 +46,7 @@ CoD.AmmoWidget_SingleShotPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		} )
 	end )
 	plusIcon:setScale( 2, 2 )
-	plusIcon:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x67D1E3A3D2D1BF ) )
+	plusIcon:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_saturation_normal" ) )
 	plusIcon:setShaderVector( 0, 0, 0, 0, 0 )
 	plusIcon.image:setImage( RegisterImage( 0x1CCD6B7B2BDAC2 ) )
 	plusIcon:linkToElementModel( self, nil, false, function ( model )

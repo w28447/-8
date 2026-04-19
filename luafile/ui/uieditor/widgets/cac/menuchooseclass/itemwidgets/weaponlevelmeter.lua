@@ -15,7 +15,7 @@ CoD.WeaponLevelMeter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local progressBarColorless = LUI.UIImage.new( 0, 0, -5, 1585, 0, 0, 2, 10 )
 	progressBarColorless:setImage( RegisterImage( 0xFE3BC2EF75DDD79 ) )
-	progressBarColorless:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	progressBarColorless:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	progressBarColorless:setShaderVector( 1, 0, 0, 0, 0 )
 	progressBarColorless:setShaderVector( 2, 1, 0, 0, 0 )
 	progressBarColorless:setShaderVector( 3, 0, 0, 0, 0 )

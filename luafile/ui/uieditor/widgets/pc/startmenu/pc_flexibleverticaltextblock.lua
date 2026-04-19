@@ -8,7 +8,7 @@ CoD.PC_FlexibleVerticalTextBlock.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	self.soundSet = "default"
 	
 	local Text = LUI.UIText.new( 0.5, 0.5, -380, 380, 0.5, 0.5, -12.5, 12.5 )
-	Text:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	Text:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	Text:setTTF( "dinnext_regular" )
 	Text:setLetterSpacing( 1 )
 	Text:setLineSpacing( 4 )

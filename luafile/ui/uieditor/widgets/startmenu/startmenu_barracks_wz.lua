@@ -21,7 +21,7 @@ CoD.StartMenu_Barracks_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local ProgressUnlocks = CoD.StartMenu_Button_LG.new( f1_arg0, f1_arg1, 0.5, 0.5, -324.5, 322.5, 0.5, 0.5, -336.5, 44.5 )
 	ProgressUnlocks.ButtonInternal.ImageContainer.ImageContainer:setImage( RegisterImage( 0xCB7B28E1ED13921 ) )
 	ProgressUnlocks.ButtonInternal.StartMenuButtonFrame:changeFrameWidget( CoD.ButtonFrame_MeritRecord )
-	ProgressUnlocks.ButtonInternal.ButtonTitle.HeaderText:setText( LocalizeToUpperString( 0x226E947798C9490 ) )
+	ProgressUnlocks.ButtonInternal.ButtonTitle.HeaderText:setText( LocalizeToUpperString( "menu/merit_record" ) )
 	ProgressUnlocks:registerEventHandler( "gain_focus", function ( element, event )
 		local f2_local0 = nil
 		if element.gainFocus then
@@ -42,7 +42,7 @@ CoD.StartMenu_Barracks_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 		end
 	end, function ( f4_arg0, f4_arg1, f4_arg2 )
 		if IsInDefaultState( f4_arg0 ) then
-			CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -106,7 +106,7 @@ CoD.StartMenu_Barracks_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 		end
 	end, function ( f11_arg0, f11_arg1, f11_arg2 )
 		if IsInDefaultState( f11_arg0 ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

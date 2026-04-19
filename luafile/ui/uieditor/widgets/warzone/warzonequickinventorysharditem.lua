@@ -206,7 +206,7 @@ CoD.WarzoneQuickInventoryShardItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	ConsumedProgress:setRGB( 0, 0, 0 )
 	ConsumedProgress:setAlpha( 0.8 )
 	ConsumedProgress:setScale( 1.26, 1.26 )
-	ConsumedProgress:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD5CA1A25ED87F4F ) )
+	ConsumedProgress:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	ConsumedProgress:setShaderVector( 1, 0.5, 0, 0, 0 )
 	ConsumedProgress:setShaderVector( 2, 0.5, 0, 0, 0 )
 	ConsumedProgress:setShaderVector( 3, 0, 0, 0, 0 )
@@ -231,7 +231,7 @@ CoD.WarzoneQuickInventoryShardItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local Bar = LUI.UIImage.new( 0, 0, 22, 46, 0, 0, 45.5, 77.5 )
 	Bar:setImage( RegisterImage( 0x7967DBF4C7762B4 ) )
-	Bar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Bar:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Bar )
 	self.Bar = Bar
 	

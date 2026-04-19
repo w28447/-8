@@ -34,8 +34,8 @@ CoD.ArenaEventProgressButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local FrameBorder = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	FrameBorder:setAlpha( 0.05 )
-	FrameBorder:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrameBorder:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrameBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FrameBorder:setupNineSliceShader( 12, 12 )
 	self:addElement( FrameBorder )
@@ -43,8 +43,8 @@ CoD.ArenaEventProgressButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local FrontendFrame = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	FrontendFrame:setAlpha( 0.05 )
-	FrontendFrame:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrontendFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrame:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrontendFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrame:setupNineSliceShader( 12, 12 )
 	self:addElement( FrontendFrame )

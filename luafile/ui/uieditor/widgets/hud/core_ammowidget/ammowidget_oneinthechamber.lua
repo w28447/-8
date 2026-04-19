@@ -16,7 +16,7 @@ CoD.AmmoWidget_OneInTheChamber.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local Backer = LUI.UIImage.new( 0, 0, -77, 290, 0, 0, -15.5, 77.5 )
 	Backer:setAlpha( 0 )
 	Backer:setImage( RegisterImage( 0xA3887D32AFD1940 ) )
-	Backer:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE125638BF94665F ) )
+	Backer:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	Backer:setShaderVector( 0, 0.05, 0.2, 0.05, 0.2 )
 	self:addElement( Backer )
 	self.Backer = Backer
@@ -58,7 +58,7 @@ CoD.AmmoWidget_OneInTheChamber.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	Hacked:setAlpha( 0 )
 	Hacked:setZRot( 180 )
 	Hacked:setImage( RegisterImage( 0x74A8C8624AAE4D2 ) )
-	Hacked:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9227A50BA2B8D21 ) )
+	Hacked:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	Hacked:setShaderVector( 0, 4, 4, 0, 0 )
 	Hacked:setShaderVector( 1, 30, 0, 0, 0 )
 	self:addElement( Hacked )

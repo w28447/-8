@@ -110,7 +110,7 @@ CoD[0x7EA1BE40E0AA14F].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	whiteFlare:setRGB( 1, 0.74, 0 )
 	whiteFlare:setAlpha( 0 )
 	whiteFlare:setImage( RegisterImage( 0x43DC2B5DB03D8A7 ) )
-	whiteFlare:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	whiteFlare:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( whiteFlare )
 	self.whiteFlare = whiteFlare
 	

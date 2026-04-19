@@ -12,7 +12,7 @@ CoD.BountyCashEvent.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	CashGlow:setRGB( 0.07, 0.4, 0.15 )
 	CashGlow:setAlpha( 0 )
 	CashGlow:setImage( RegisterImage( 0xAD0AEC77D5F59ED ) )
-	CashGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	CashGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CashGlow )
 	self.CashGlow = CashGlow
 	

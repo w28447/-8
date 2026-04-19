@@ -9,7 +9,7 @@ CoD.vhud_HellstormVerticalIndicator.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local LayoutBar = LUI.UIImage.new( 0, 0, 8, 72, 0, 0, 88, 0 )
 	LayoutBar:setImage( RegisterImage( 0x328F3B7DAD2C9EA ) )
-	LayoutBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	LayoutBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	LayoutBar:setShaderVector( 0, 0, 1, 0, 0 )
 	LayoutBar:setShaderVector( 1, 0, 0, 0, 0 )
 	LayoutBar:setShaderVector( 2, 0, 1, 0, 0 )

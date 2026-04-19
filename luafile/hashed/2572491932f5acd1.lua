@@ -27,7 +27,7 @@ CoD.WarScoreInfo_Deliver_FlagStateWidget.new = function ( f1_arg0, f1_arg1, f1_a
 	
 	local StateText = LUI.UIText.new( 0, 1, 0, 0, 0, 0, 1, 22 )
 	StateText:setRGB( 0, 0, 0 )
-	StateText:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	StateText:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	StateText:setTTF( "ttmussels_demibold" )
 	StateText:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	StateText:setShaderVector( 0, 0, 0, 0, 0 )
@@ -96,7 +96,7 @@ CoD.WarScoreInfo_Deliver_FlagStateWidget.__resetProperties = function ( f2_arg0 
 	f2_arg0.StateText:setRGB( 0, 0, 0 )
 	f2_arg0.StateText:setAlpha( 1 )
 	f2_arg0.StateText:setScale( 1, 1 )
-	f2_arg0.StateText:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	f2_arg0.StateText:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	f2_arg0.locked:setLeftRight( 0, 0, 65, 125 )
 	f2_arg0.locked:setTopBottom( 0, 0, -19, 41 )
 	f2_arg0.locked:setScale( 1, 1 )

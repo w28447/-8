@@ -28,7 +28,7 @@ CoD.MedalsTabInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local Line = LUI.UIImage.new( 0, 0, 670.5, 672.5, 0, 0, 23.5, 740.5 )
 	Line:setAlpha( 0.05 )
-	Line:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
+	Line:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
 	Line:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	Line:setShaderVector( 0, 0, 0, 0, 0 )
 	Line:setupNineSliceShader( 4, 8 )
@@ -78,7 +78,7 @@ CoD.MedalsTabInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		end
 	end, function ( f4_arg0, f4_arg1, f4_arg2 )
 		if IsCurrentMenu( f4_arg1, "Barracks_Medals" ) then
-			CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

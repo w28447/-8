@@ -12,7 +12,7 @@ CoD.TabletIcePickHackDetectionBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local BG = LUI.UIImage.new( 0, 0, -37.5, 152.5, 0.09, 0.09, -1.5, 18.5 )
-	BG:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	BG:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	BG:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	BG:setShaderVector( 0, 0, 0, 0, 0 )
 	BG:setupNineSliceShader( 196, 88 )
@@ -39,7 +39,7 @@ CoD.TabletIcePickHackDetectionBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local FillFrame = LUI.UIImage.new( 0, 0, -50.5, 165.5, 0, 0, -12, 32 )
 	FillFrame:setRGB( 0.02, 0.59, 0.99 )
 	FillFrame:setImage( RegisterImage( 0x2AABF859E4BD498 ) )
-	FillFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FillFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FillFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	FillFrame:setupNineSliceShader( 216, 44 )
 	self:addElement( FillFrame )
@@ -49,7 +49,7 @@ CoD.TabletIcePickHackDetectionBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	FillFrame2:setRGB( 0.02, 0.59, 0.99 )
 	FillFrame2:setAlpha( 0 )
 	FillFrame2:setImage( RegisterImage( 0x2AABF859E4BD498 ) )
-	FillFrame2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FillFrame2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FillFrame2:setShaderVector( 0, 0, 0, 0, 0 )
 	FillFrame2:setupNineSliceShader( 216, 44 )
 	self:addElement( FillFrame2 )
@@ -83,7 +83,7 @@ CoD.TabletIcePickHackDetectionBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local Fill = LUI.UIImage.new( 0.5, 0.5, -95, 95, 0, 0, 0, 20 )
 	Fill:setRGB( 0.02, 0.59, 0.99 )
 	Fill:setAlpha( 0.2 )
-	Fill:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	Fill:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	Fill:setShaderVector( 1, 0, 0, 0, 0 )
 	Fill:setShaderVector( 2, 0, 1, 0, 0 )
 	Fill:setShaderVector( 3, 0, 0, 0, 0 )
@@ -101,7 +101,7 @@ CoD.TabletIcePickHackDetectionBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	Fill2:setRGB( 0.22, 0.77, 1 )
 	Fill2:setAlpha( 0.6 )
 	Fill2:setImage( RegisterImage( 0x83C3A03D42E5F7A ) )
-	Fill2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	Fill2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	Fill2:setShaderVector( 1, 0, 0, 0, 0 )
 	Fill2:setShaderVector( 2, 0, 1, 0, 0 )
 	Fill2:setShaderVector( 3, 0, 0, 0, 0 )
@@ -144,7 +144,7 @@ CoD.TabletIcePickHackDetectionBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	LayoutLabelL:setAlpha( 0.4 )
 	LayoutLabelL:setZRot( 180 )
 	LayoutLabelL:setImage( RegisterImage( 0x62FB554884B9B68 ) )
-	LayoutLabelL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	LayoutLabelL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( LayoutLabelL )
 	self.LayoutLabelL = LayoutLabelL
 	
@@ -152,7 +152,7 @@ CoD.TabletIcePickHackDetectionBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	LayoutLabelR:setRGB( 0.22, 0.77, 1 )
 	LayoutLabelR:setAlpha( 0.4 )
 	LayoutLabelR:setImage( RegisterImage( 0x62FB554884B9B68 ) )
-	LayoutLabelR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	LayoutLabelR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( LayoutLabelR )
 	self.LayoutLabelR = LayoutLabelR
 	

@@ -31,7 +31,7 @@ LUI.createMenu.AAR_LeaguePlayDivPlacement = function ( f1_arg0, f1_arg1 )
 	local FractalGrid = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	FractalGrid:setAlpha( 0 )
 	FractalGrid:setImage( RegisterImage( 0x1DF4C930E69FFB0 ) )
-	FractalGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD8EA9FE9B0BCF75 ) )
+	FractalGrid:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	FractalGrid:setShaderVector( 0, 1, 1, 0, 0 )
 	FractalGrid:setShaderVector( 1, 0, 0, 0, 0 )
 	self:addElement( FractalGrid )
@@ -84,8 +84,8 @@ LUI.createMenu.AAR_LeaguePlayDivPlacement = function ( f1_arg0, f1_arg1 )
 	infoBracketBot:setRGB( 0.98, 1, 0.89 )
 	infoBracketBot:setAlpha( 0.35 )
 	infoBracketBot:setZRot( 180 )
-	infoBracketBot:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	infoBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	infoBracketBot:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	infoBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	infoBracketBot:setShaderVector( 0, 0, 0, 0, 0 )
 	infoBracketBot:setupNineSliceShader( 16, 4 )
 	self:addElement( infoBracketBot )
@@ -114,7 +114,7 @@ LUI.createMenu.AAR_LeaguePlayDivPlacement = function ( f1_arg0, f1_arg1 )
 		PlaySoundAlias( "uin_toggle_generic" )
 		return true
 	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x6393FF34EA56966, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, "ui_confirm" )
 		return true
 	end, false )
 	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
@@ -126,7 +126,7 @@ LUI.createMenu.AAR_LeaguePlayDivPlacement = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f6_arg0, f6_arg1, f6_arg2 )
 		if IsPC() then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 			return true
 		else
 			return false

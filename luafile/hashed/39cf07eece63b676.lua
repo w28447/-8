@@ -37,7 +37,7 @@ LUI.createMenu.BountyHunterBuy = function ( f1_arg0, f1_arg1 )
 	local PCBackButton = nil
 	
 	PCBackButton = CoD.PC_BountyHunterBuy_BackButton.new( f1_local1, f1_arg0, 0.5, 0.5, -920, -720, 1, 1, -70, -10 )
-	PCBackButton.Button.ButtonContainer.Title:setText( LocalizeToUpperString( 0x6C253CF816B40B5 ) )
+	PCBackButton.Button.ButtonContainer.Title:setText( LocalizeToUpperString( "menu/close" ) )
 	local f1_local6 = PCBackButton
 	local f1_local7 = PCBackButton.subscribeToModel
 	local f1_local8 = Engine.GetModelForController( f1_arg0 )

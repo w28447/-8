@@ -10,7 +10,7 @@ CoD.GameEndScore_TeamRanking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 0, 2, 337, 0.09, 0.09, -14.5, 184.5 )
 	NoiseTiledBacking:setAlpha( 0.2 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )

@@ -215,7 +215,7 @@ CoD.MPSpecialistHUBBindWheelInternal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 		end
 	end, function ( f19_arg0, f19_arg1, f19_arg2 )
 		if IsPC() then
-			CoD.Menu.SetButtonLabel( f19_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f19_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -247,7 +247,7 @@ CoD.MPSpecialistHUBBindWheelInternal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 		end
 	end, function ( f22_arg0, f22_arg1, f22_arg2 )
 		if IsPC() then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -275,56 +275,56 @@ CoD.MPSpecialistHUBBindWheelInternal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	local halfCircleBR = LUI.UIImage.new( 0.5, 0.5, 408, 0, 0.5, 0.5, 408, 0 )
 	halfCircleBR:setAlpha( 0.01 )
 	halfCircleBR:setImage( RegisterImage( 0xF13D40449AE7486 ) )
-	halfCircleBR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	halfCircleBR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( halfCircleBR )
 	self.halfCircleBR = halfCircleBR
 	
 	local halfCircleTR = LUI.UIImage.new( 0.5, 0.5, 408, 0, 0.5, 0.5, -408, 0 )
 	halfCircleTR:setAlpha( 0.01 )
 	halfCircleTR:setImage( RegisterImage( 0xF13D40449AE7486 ) )
-	halfCircleTR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	halfCircleTR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( halfCircleTR )
 	self.halfCircleTR = halfCircleTR
 	
 	local halfCircleBL = LUI.UIImage.new( 0.5, 0.5, -408, 0, 0.5, 0.5, 408, 0 )
 	halfCircleBL:setAlpha( 0.01 )
 	halfCircleBL:setImage( RegisterImage( 0xF13D40449AE7486 ) )
-	halfCircleBL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	halfCircleBL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( halfCircleBL )
 	self.halfCircleBL = halfCircleBL
 	
 	local halfCircleTL = LUI.UIImage.new( 0.5, 0.5, -408, 0, 0.5, 0.5, -408, 0 )
 	halfCircleTL:setAlpha( 0.01 )
 	halfCircleTL:setImage( RegisterImage( 0xF13D40449AE7486 ) )
-	halfCircleTL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	halfCircleTL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( halfCircleTL )
 	self.halfCircleTL = halfCircleTL
 	
 	local halfCircleTR2 = LUI.UIImage.new( 0.5, 0.5, 86, 0, 0.5, 0.5, -87.5, -1.5 )
 	halfCircleTR2:setAlpha( 0.01 )
 	halfCircleTR2:setImage( RegisterImage( 0xF13D40449AE7486 ) )
-	halfCircleTR2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	halfCircleTR2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( halfCircleTR2 )
 	self.halfCircleTR2 = halfCircleTR2
 	
 	local halfCircleBL2 = LUI.UIImage.new( 0.5, 0.5, -86, 0, 0.5, 0.5, 84.5, -1.5 )
 	halfCircleBL2:setAlpha( 0.01 )
 	halfCircleBL2:setImage( RegisterImage( 0xF13D40449AE7486 ) )
-	halfCircleBL2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	halfCircleBL2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( halfCircleBL2 )
 	self.halfCircleBL2 = halfCircleBL2
 	
 	local halfCircleBR2 = LUI.UIImage.new( 0.5, 0.5, 86, 0, 0.5, 0.5, 84.5, -1.5 )
 	halfCircleBR2:setAlpha( 0.01 )
 	halfCircleBR2:setImage( RegisterImage( 0xF13D40449AE7486 ) )
-	halfCircleBR2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	halfCircleBR2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( halfCircleBR2 )
 	self.halfCircleBR2 = halfCircleBR2
 	
 	local halfCircleTL2 = LUI.UIImage.new( 0.5, 0.5, -86, 0, 0.5, 0.5, -87.5, -1.5 )
 	halfCircleTL2:setAlpha( 0.01 )
 	halfCircleTL2:setImage( RegisterImage( 0xF13D40449AE7486 ) )
-	halfCircleTL2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	halfCircleTL2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( halfCircleTL2 )
 	self.halfCircleTL2 = halfCircleTL2
 	

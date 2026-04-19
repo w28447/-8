@@ -18,7 +18,7 @@ CoD.scorestreaks_TitleBox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local Glow = LUI.UIImage.new( 0, 1, -81, 73, 0.5, 0.5, -45, 65 )
 	Glow:setAlpha( 0 )
 	Glow:setImage( RegisterImage( 0x1078C36A022A4FE ) )
-	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
 	

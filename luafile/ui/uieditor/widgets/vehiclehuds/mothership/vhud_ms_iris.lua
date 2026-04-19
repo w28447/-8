@@ -22,7 +22,7 @@ CoD.vhud_ms_Iris.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	IrisOutterEdge:setAlpha( 0.3 )
 	IrisOutterEdge:setZoom( 71 )
 	IrisOutterEdge:setImage( RegisterImage( 0xA614F6FE5DE76B7 ) )
-	IrisOutterEdge:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	IrisOutterEdge:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( IrisOutterEdge )
 	self.IrisOutterEdge = IrisOutterEdge
 	
@@ -31,7 +31,7 @@ CoD.vhud_ms_Iris.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	IrisOutterEdgeR:setYRot( -180 )
 	IrisOutterEdgeR:setZoom( 69 )
 	IrisOutterEdgeR:setImage( RegisterImage( 0xA614F6FE5DE76B7 ) )
-	IrisOutterEdgeR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	IrisOutterEdgeR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( IrisOutterEdgeR )
 	self.IrisOutterEdgeR = IrisOutterEdgeR
 	

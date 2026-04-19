@@ -25,7 +25,7 @@ CoD.IdentityLootCaseCount.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	Flash:setRGB( 1, 0.98, 0.71 )
 	Flash:setAlpha( 0 )
 	Flash:setImage( RegisterImage( 0x4A1176ABBF1AB4C ) )
-	Flash:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Flash:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Flash )
 	self.Flash = Flash
 	

@@ -22,7 +22,7 @@ CoD.WarzoneUseTimerProgress.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local progressBar = LUI.UIImage.new( 0, 0, 1, 481, 1, 1, -19, 1 )
 	progressBar:setImage( RegisterImage( 0xE64E796E85F4FA5 ) )
-	progressBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x910274CA3518744 ) )
+	progressBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	progressBar:setShaderVector( 0, 0.64, 0, 0, 0 )
 	progressBar:setShaderVector( 1, 0, 0, 0, 0 )
 	progressBar:setShaderVector( 2, 1, 0, 0, 0 )

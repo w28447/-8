@@ -75,8 +75,8 @@ CoD.DirectorReadyButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local FrontendFrame = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	FrontendFrame:setAlpha( 0 )
-	FrontendFrame:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrontendFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrame:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrontendFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrame:setupNineSliceShader( 12, 12 )
 	self:addElement( FrontendFrame )
@@ -129,7 +129,7 @@ CoD.DirectorReadyButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local Fill = LUI.UIImage.new( 0, 1, -105, 105, 0, 1, -65, 65 )
 	Fill:setAlpha( 0 )
 	Fill:setImage( RegisterImage( 0x3F09D20CA138B49 ) )
-	Fill:setMaterial( LUI.UIImage.GetCachedMaterial( 0x910274CA3518744 ) )
+	Fill:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	Fill:setShaderVector( 1, 0, 0, 0, 0 )
 	Fill:setShaderVector( 2, 1, 0, 0, 0 )
 	Fill:setShaderVector( 3, 0, 0, 0, 0 )
@@ -146,7 +146,7 @@ CoD.DirectorReadyButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local Fill2 = LUI.UIImage.new( 0, 1, -105, 105, 0, 1, -65, 65 )
 	Fill2:setAlpha( 0 )
 	Fill2:setImage( RegisterImage( 0x3F09D20CA138B49 ) )
-	Fill2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x910274CA3518744 ) )
+	Fill2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	Fill2:setShaderVector( 1, 0, 0, 0, 0 )
 	Fill2:setShaderVector( 2, 1, 0, 0, 0 )
 	Fill2:setShaderVector( 3, 0, 0, 0, 0 )
@@ -1020,11 +1020,11 @@ CoD.DirectorReadyButton.__clipsPerState = {
 			f76_arg0.DirectorSelectButtonMiniInternal:completeAnimation()
 			f76_arg0.DirectorSelectButtonMiniInternal.MiddleText:completeAnimation()
 			f76_arg0.DirectorSelectButtonMiniInternal.MiddleTextFocus:completeAnimation()
-			f76_arg0.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( 0xE6F6113B8B75F3E ) )
-			f76_arg0.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( 0xE6F6113B8B75F3E ) )
+			f76_arg0.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( "menu/ready" ) )
+			f76_arg0.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( "menu/ready" ) )
 			f76_arg0.clipFinished( f76_arg0.DirectorSelectButtonMiniInternal )
 			f76_arg0.PlayText:completeAnimation()
-			f76_arg0.PlayText:setText( LocalizeToUpperString( 0xE6F6113B8B75F3E ) )
+			f76_arg0.PlayText:setText( LocalizeToUpperString( "menu/ready" ) )
 			f76_arg0.clipFinished( f76_arg0.PlayText )
 		end,
 		ChildFocus = function ( f77_arg0, f77_arg1 )
@@ -1035,7 +1035,7 @@ CoD.DirectorReadyButton.__clipsPerState = {
 			f77_arg0.clipFinished( f77_arg0.DirectorCustomStartButton )
 			f77_arg0.PlayText:completeAnimation()
 			f77_arg0.PlayText:setScale( 1.05, 1.05 )
-			f77_arg0.PlayText:setText( LocalizeToUpperString( 0xE6F6113B8B75F3E ) )
+			f77_arg0.PlayText:setText( LocalizeToUpperString( "menu/ready" ) )
 			f77_arg0.clipFinished( f77_arg0.PlayText )
 		end,
 		GainChildFocus = function ( f78_arg0, f78_arg1 )
@@ -1060,7 +1060,7 @@ CoD.DirectorReadyButton.__clipsPerState = {
 			
 			f78_arg0.PlayText:completeAnimation()
 			f78_arg0.PlayText:setScale( 1, 1 )
-			f78_arg0.PlayText:setText( LocalizeToUpperString( 0xE6F6113B8B75F3E ) )
+			f78_arg0.PlayText:setText( LocalizeToUpperString( "menu/ready" ) )
 			f78_local1( f78_arg0.PlayText )
 		end,
 		LoseChildFocus = function ( f81_arg0, f81_arg1 )
@@ -1085,7 +1085,7 @@ CoD.DirectorReadyButton.__clipsPerState = {
 			
 			f81_arg0.PlayText:completeAnimation()
 			f81_arg0.PlayText:setScale( 1.05, 1.05 )
-			f81_arg0.PlayText:setText( LocalizeToUpperString( 0xE6F6113B8B75F3E ) )
+			f81_arg0.PlayText:setText( LocalizeToUpperString( "menu/ready" ) )
 			f81_local1( f81_arg0.PlayText )
 		end
 	}

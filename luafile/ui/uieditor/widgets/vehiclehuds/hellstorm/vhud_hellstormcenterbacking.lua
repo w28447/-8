@@ -41,28 +41,28 @@ CoD.vhud_HellstormCenterBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local R1Depth = LUI.UIImage.new( 0.5, 0.5, 369, 1, 0, 0, 172, 908 )
 	R1Depth:setAlpha( 0.05 )
 	R1Depth:setImage( RegisterImage( 0xCAB86BB52B74C56 ) )
-	R1Depth:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	R1Depth:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( R1Depth )
 	self.R1Depth = R1Depth
 	
 	local L1Depth = LUI.UIImage.new( 0.5, 0.5, -367, 1, 0, 0, 172, 908 )
 	L1Depth:setAlpha( 0.05 )
 	L1Depth:setImage( RegisterImage( 0xCAB86BB52B74C56 ) )
-	L1Depth:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	L1Depth:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( L1Depth )
 	self.L1Depth = L1Depth
 	
 	local halfCircleRight = LUI.UIImage.new( 0.5, 0.5, 408, 0, 0.5, 0.5, -408, 0 )
 	halfCircleRight:setAlpha( 0.05 )
 	halfCircleRight:setImage( RegisterImage( 0xF13D40449AE7486 ) )
-	halfCircleRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	halfCircleRight:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( halfCircleRight )
 	self.halfCircleRight = halfCircleRight
 	
 	local halfCircleLeft = LUI.UIImage.new( 0.5, 0.5, -408, 0, 0.5, 0.5, -408, 0 )
 	halfCircleLeft:setAlpha( 0.05 )
 	halfCircleLeft:setImage( RegisterImage( 0xF13D40449AE7486 ) )
-	halfCircleLeft:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	halfCircleLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( halfCircleLeft )
 	self.halfCircleLeft = halfCircleLeft
 	

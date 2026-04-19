@@ -13,8 +13,8 @@ CoD.MOTD_BannerImageInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local FrameSelected = LUI.UIImage.new( 0, 1, -10, 10, 0, 1, -10, 10 )
-	FrameSelected:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FrameSelected:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrameSelected:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FrameSelected:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrameSelected:setShaderVector( 0, 0, 0, 0, 0 )
 	FrameSelected:setupNineSliceShader( 28, 28 )
 	self:addElement( FrameSelected )
@@ -22,7 +22,7 @@ CoD.MOTD_BannerImageInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local TiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TiledBacking:setAlpha( 0.5 )
-	TiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking:setupNineSliceShader( 196, 88 )
@@ -31,7 +31,7 @@ CoD.MOTD_BannerImageInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local TiledGrid = LUI.UIImage.new( 0, 1, 1, -1, 0, 1, 1, -1 )
 	TiledGrid:setScale( 1.01, 1.01 )
-	TiledGrid:setImage( RegisterImage( 0xCA386792563DE8 ) )
+	TiledGrid:setImage( RegisterImage( "uie_ui_menu_store_bg_grid" ) )
 	TiledGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledGrid:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledGrid:setupNineSliceShader( 64, 64 )
@@ -47,8 +47,8 @@ CoD.MOTD_BannerImageInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.MOTDBannerImageText = MOTDBannerImageText
 	
 	local ItemFrame = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
-	ItemFrame:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	ItemFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	ItemFrame:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	ItemFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ItemFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	ItemFrame:setupNineSliceShader( 12, 12 )
 	self:addElement( ItemFrame )
@@ -56,8 +56,8 @@ CoD.MOTD_BannerImageInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local ItemFrameAdd = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	ItemFrameAdd:setAlpha( 0 )
-	ItemFrameAdd:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	ItemFrameAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	ItemFrameAdd:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	ItemFrameAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ItemFrameAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	ItemFrameAdd:setupNineSliceShader( 12, 12 )
 	self:addElement( ItemFrameAdd )
@@ -66,14 +66,14 @@ CoD.MOTD_BannerImageInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local LockedIcon = LUI.UIImage.new( 0.5, 0.5, -64, 64, 0.5, 0.5, -64, 64 )
 	LockedIcon:setAlpha( 0 )
 	LockedIcon:setScale( 0.4, 0.4 )
-	LockedIcon:setImage( RegisterImage( 0xE1E7C490B2BA4FB ) )
+	LockedIcon:setImage( RegisterImage( "uie_ui_icon_global_lock" ) )
 	self:addElement( LockedIcon )
 	self.LockedIcon = LockedIcon
 	
 	local FrameSelectedInnerGlow = LUI.UIImage.new( 0, 1, -10, 10, 0, 1, -10, 10 )
 	FrameSelectedInnerGlow:setAlpha( 0 )
-	FrameSelectedInnerGlow:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FrameSelectedInnerGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrameSelectedInnerGlow:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FrameSelectedInnerGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrameSelectedInnerGlow:setShaderVector( 0, 0, 0, 0, 0 )
 	FrameSelectedInnerGlow:setupNineSliceShader( 28, 28 )
 	self:addElement( FrameSelectedInnerGlow )
@@ -81,7 +81,7 @@ CoD.MOTD_BannerImageInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local FrameSelectedCorner = LUI.UIImage.new( 0, 1, -8, 8, 0, 1, -8, 8 )
 	FrameSelectedCorner:setImage( RegisterImage( 0x793C73633F620BB ) )
-	FrameSelectedCorner:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrameSelectedCorner:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrameSelectedCorner:setShaderVector( 0, 0, 0, 0, 0 )
 	FrameSelectedCorner:setupNineSliceShader( 44, 44 )
 	self:addElement( FrameSelectedCorner )

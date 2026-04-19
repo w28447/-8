@@ -28,7 +28,7 @@ CoD.HealCooldown.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	BackingFill:setAlpha( 0 )
 	BackingFill:setZRot( 180 )
 	BackingFill:setImage( RegisterImage( 0x16FB6BFD381E066 ) )
-	BackingFill:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	BackingFill:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	BackingFill:setShaderVector( 0, 1, 0, 0, 0 )
 	BackingFill:setShaderVector( 1, 0, 0, 0, 0 )
 	BackingFill:setShaderVector( 3, 0.05, 0, 0, 0 )
@@ -45,19 +45,19 @@ CoD.HealCooldown.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	local ReadyBox = LUI.UIImage.new( 0, 0, 0, 72, 0, 0, -27.5, 62.5 )
 	ReadyBox:setRGB( 1, 0.68, 0 )
 	ReadyBox:setImage( RegisterImage( 0x28081B8F637C9BD ) )
-	ReadyBox:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	ReadyBox:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ReadyBox )
 	self.ReadyBox = ReadyBox
 	
 	local ReadyGlow = LUI.UIImage.new( 0, 0, 10, 62, 0, 0, -19.5, 62.5 )
 	ReadyGlow:setImage( RegisterImage( 0x560FE2D650E06A5 ) )
-	ReadyGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	ReadyGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ReadyGlow )
 	self.ReadyGlow = ReadyGlow
 	
 	local ReadyGlow2 = LUI.UIImage.new( 0, 0, 10, 62, 0, 0, -19.5, 62.5 )
 	ReadyGlow2:setImage( RegisterImage( 0x560FE2D650E06A5 ) )
-	ReadyGlow2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	ReadyGlow2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ReadyGlow2 )
 	self.ReadyGlow2 = ReadyGlow2
 	
@@ -70,8 +70,8 @@ CoD.HealCooldown.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	self.ReadyPulse = ReadyPulse
 	
 	local HealEmpty = CoD.AmmoWidget_EquipmentEmpty.new( f1_arg0, f1_arg1, 0, 0, 3.5, 65.5, 0, 0, -5, 35 )
-	HealEmpty.ImgIcon:setImage( RegisterImage( 0x7615068F50B3D66 ) )
-	HealEmpty.ImgIconGrow:setImage( RegisterImage( 0x7615068F50B3D66 ) )
+	HealEmpty.ImgIcon:setImage( RegisterImage( "blacktransparent" ) )
+	HealEmpty.ImgIconGrow:setImage( RegisterImage( "blacktransparent" ) )
 	HealEmpty:linkToElementModel( self, nil, false, function ( model )
 		HealEmpty:setModel( model, f1_arg1 )
 	end )
@@ -143,7 +143,7 @@ CoD.HealCooldown.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	local Box = LUI.UIImage.new( 0, 0, 11, 61, 0, 0, -5.5, 44.5 )
 	Box:setAlpha( 0.5 )
 	Box:setImage( RegisterImage( 0x1361B633E108517 ) )
-	Box:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Box:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Box )
 	self.Box = Box
 	

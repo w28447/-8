@@ -17,7 +17,7 @@ CoD.ThrustMeterChevron.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local Image00 = LUI.UIImage.new( 0.5, 0.5, -15, 5, 1, 1, -3, 9 )
 	Image00:setScale( 1.2, 1.2 )
 	Image00:setImage( RegisterImage( 0xEE825D8EFAAEE5D ) )
-	Image00:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Image00:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image00 )
 	self.Image00 = Image00
 	

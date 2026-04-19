@@ -11,7 +11,7 @@ CoD.KilledByHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local TextBackground = LUI.UIImage.new( 0, 1, 0, 0, 0.5, 0.5, -16, 16 )
 	TextBackground:setRGB( 0, 0, 0 )
 	TextBackground:setAlpha( 0.8 )
-	TextBackground:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	TextBackground:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	TextBackground:setShaderVector( 0, 0, 1, 0, 0 )
 	TextBackground:setShaderVector( 1, 0.15, 0.15, 0, 0 )
 	TextBackground:setShaderVector( 2, 0, 1, 0, 0 )

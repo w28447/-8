@@ -26,7 +26,7 @@ CoD.StartMenu_WZTeamScoreboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local BackingNoise = LUI.UIImage.new( -0.25, 1.25, 0, 0, 1, 1, -165, -65 )
 	BackingNoise:setAlpha( 0.5 )
-	BackingNoise:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	BackingNoise:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	BackingNoise:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	BackingNoise:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingNoise:setupNineSliceShader( 196, 88 )

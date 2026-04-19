@@ -20,7 +20,7 @@ CoD[0x2610197D1A9043B].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local embers1 = LUI.UIImage.new( 0, 0, 14.5, 598.5, 0, 0, 5, 317 )
 	embers1:setAlpha( 0.8 )
 	embers1:setImage( RegisterImage( 0x58C478C96427F76 ) )
-	embers1:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	embers1:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( embers1 )
 	self.embers1 = embers1
 	
@@ -35,7 +35,7 @@ CoD[0x2610197D1A9043B].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local embers2 = LUI.UIImage.new( 0, 0, 401.5, 1153.5, 0, 0, -39.5, 392.5 )
 	embers2:setAlpha( 0.5 )
 	embers2:setImage( RegisterImage( 0x58C478C96427F76 ) )
-	embers2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	embers2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( embers2 )
 	self.embers2 = embers2
 	
@@ -43,7 +43,7 @@ CoD[0x2610197D1A9043B].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	embers3:setAlpha( 0 )
 	embers3:setZRot( -39 )
 	embers3:setImage( RegisterImage( 0x58C478C96427F76 ) )
-	embers3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	embers3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( embers3 )
 	self.embers3 = embers3
 	

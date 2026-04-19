@@ -26,7 +26,7 @@ LUI.createMenu.DirectorGamemodeSelectionZM = function ( f1_arg0, f1_arg1 )
 	
 	local BackgroundImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BackgroundImage:setAlpha( 0.85 )
-	BackgroundImage:setImage( RegisterImage( 0x4BF88A437F4C579 ) )
+	BackgroundImage:setImage( RegisterImage( "uie_fe_cp_background" ) )
 	self:addElement( BackgroundImage )
 	self.BackgroundImage = BackgroundImage
 	
@@ -38,7 +38,7 @@ LUI.createMenu.DirectorGamemodeSelectionZM = function ( f1_arg0, f1_arg1 )
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -78,7 +78,7 @@ LUI.createMenu.DirectorGamemodeSelectionZM = function ( f1_arg0, f1_arg1 )
 	self.FooterContainerFrontendRight = FooterContainerFrontendRight
 	
 	local DirectorHeaderTabSafeArea = CoD.DirectorHeaderTabSafeArea.new( f1_local1, f1_arg0, 0, 1, 0, 0, 0, 0, 0, 1080 )
-	DirectorHeaderTabSafeArea.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x4456C22914B29F9 ) )
+	DirectorHeaderTabSafeArea.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/zombies_modes" ) )
 	DirectorHeaderTabSafeArea.Tabs.customClasssList:setDataSource( "DirectorPlaylistGameTypeList" )
 	DirectorHeaderTabSafeArea:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f3_local0 = model:get()
@@ -172,7 +172,7 @@ LUI.createMenu.DirectorGamemodeSelectionZM = function ( f1_arg0, f1_arg1 )
 		GoBack( self, f15_arg2 )
 		return true
 	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x22361E23588705A], nil, function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )

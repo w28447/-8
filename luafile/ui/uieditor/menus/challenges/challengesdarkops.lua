@@ -30,7 +30,7 @@ LUI.createMenu.ChallengesDarkOps = function ( f1_arg0, f1_arg1 )
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -78,7 +78,7 @@ LUI.createMenu.ChallengesDarkOps = function ( f1_arg0, f1_arg1 )
 		GoBack( self, f4_arg2 )
 		return true
 	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

@@ -465,11 +465,11 @@ CoD.EntitlementUtility.CheckBOpsPassValidity = function ( f1_arg0 )
 end
 
 CoD.EntitlementUtility.GetDOTDImageFull = function ( f2_arg0 )
-	return CoD.EntitlementUtility.DOTDImages[f2_arg0] or 0x7615068F50B3D66
+	return CoD.EntitlementUtility.DOTDImages[f2_arg0] or "blacktransparent"
 end
 
 CoD.EntitlementUtility.GetDOTDImageRedemption = function ( f3_arg0 )
-	return CoD.EntitlementUtility.DOTDRedemptionImage or 0x7615068F50B3D66
+	return CoD.EntitlementUtility.DOTDRedemptionImage or "blacktransparent"
 end
 
 CoD.EntitlementUtility.HasSeasonPassToken = function ( f4_arg0 )
@@ -757,10 +757,10 @@ CoD.EntitlementUtility.GetBannerImage = function ( f24_arg0, f24_arg1 )
 					return f24_local3
 				end
 			end
-			f24_local3 = 0x7615068F50B3D66
+			f24_local3 = "blacktransparent"
 		end
 	end
-	return 0x7615068F50B3D66
+	return "blacktransparent"
 end
 
 CoD.EntitlementUtility.SelectSpecialistForEntitlement = function ( f25_arg0, f25_arg1, f25_arg2, f25_arg3, f25_arg4 )

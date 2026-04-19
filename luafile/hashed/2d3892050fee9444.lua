@@ -136,7 +136,7 @@ CoD.SurveyButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 		end
 	end, function ( f18_arg0, f18_arg1, f18_arg2 )
 		if not CoD.ModelUtility.IsGlobalDataSourceModelValueTrue( f18_arg2, "SurveyQuestion", "answered" ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

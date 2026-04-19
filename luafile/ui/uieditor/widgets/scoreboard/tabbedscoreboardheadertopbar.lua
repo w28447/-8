@@ -17,7 +17,7 @@ CoD.TabbedScoreboardHeaderTopbar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local TopBarWipe = LUI.UIImage.new( 0.5, 0.5, -344, 344, 0, 0, 0, 10 )
 	TopBarWipe:setRGB( 0.95, 0.95, 0.95 )
 	TopBarWipe:setImage( RegisterImage( 0x59D632AC9663362 ) )
-	TopBarWipe:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	TopBarWipe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	TopBarWipe:setShaderVector( 0, 0, 1, 0, 0 )
 	TopBarWipe:setShaderVector( 1, 0, 0, 0, 0 )
 	TopBarWipe:setShaderVector( 2, 0, 1, 0, 0 )
@@ -35,7 +35,7 @@ end
 
 CoD.TabbedScoreboardHeaderTopbar.__resetProperties = function ( f2_arg0 )
 	f2_arg0.TopBarWipe:completeAnimation()
-	f2_arg0.TopBarWipe:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	f2_arg0.TopBarWipe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	f2_arg0.TopBarWipe:setShaderVector( 0, 0, 1, 0, 0 )
 	f2_arg0.TopBarWipe:setShaderVector( 1, 0, 0, 0, 0 )
 	f2_arg0.TopBarWipe:setShaderVector( 2, 0, 1, 0, 0 )
@@ -56,7 +56,7 @@ CoD.TabbedScoreboardHeaderTopbar.__clipsPerState = {
 			end
 			
 			f3_arg0.TopBarWipe:completeAnimation()
-			f3_arg0.TopBarWipe:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+			f3_arg0.TopBarWipe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 			f3_arg0.TopBarWipe:setShaderVector( 0, 1, 1, 0, 0 )
 			f3_arg0.TopBarWipe:setShaderVector( 1, 0, 0, 0, 0 )
 			f3_arg0.TopBarWipe:setShaderVector( 2, 0, 1, 0, 0 )

@@ -103,7 +103,7 @@ LUI.createMenu.GameSettings_ScopeRestrictionSettings = function ( f1_arg0, f1_ar
 		GoBack( self, f8_arg2 )
 		return true
 	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, "ESCAPE" )
+		CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 		return true
 	end, false )
 	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )

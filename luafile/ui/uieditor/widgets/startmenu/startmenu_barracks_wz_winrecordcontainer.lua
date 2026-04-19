@@ -42,7 +42,7 @@ CoD.StartMenu_Barracks_WZ_WinRecordContainer.new = function ( f1_arg0, f1_arg1, 
 			modelName = "quadWins"
 		} )
 	end, false )
-	QuadWins.GametypeTitle:setText( LocalizeToUpperString( 0x5BE69820FD79596 ) )
+	QuadWins.GametypeTitle:setText( LocalizeToUpperString( "menu/quad_wins" ) )
 	QuadWins:subscribeToGlobalModel( f1_arg1, "BarrackWinsWZ", "quadWins", function ( model )
 		local f4_local0 = model:get()
 		if f4_local0 ~= nil then
@@ -79,7 +79,7 @@ CoD.StartMenu_Barracks_WZ_WinRecordContainer.new = function ( f1_arg0, f1_arg1, 
 			modelName = "duoWins"
 		} )
 	end, false )
-	DuoWins.GametypeTitle:setText( LocalizeToUpperString( 0x24D573075A30555 ) )
+	DuoWins.GametypeTitle:setText( LocalizeToUpperString( "menu/duo_wins" ) )
 	DuoWins:subscribeToGlobalModel( f1_arg1, "BarrackWinsWZ", "duoWins", function ( model )
 		local f8_local0 = model:get()
 		if f8_local0 ~= nil then
@@ -116,7 +116,7 @@ CoD.StartMenu_Barracks_WZ_WinRecordContainer.new = function ( f1_arg0, f1_arg1, 
 			modelName = "soloWins"
 		} )
 	end, false )
-	SoloWins.GametypeTitle:setText( LocalizeToUpperString( 0xF40E0D95F95E04E ) )
+	SoloWins.GametypeTitle:setText( LocalizeToUpperString( "menu/solo_wins" ) )
 	SoloWins:subscribeToGlobalModel( f1_arg1, "BarrackWinsWZ", "soloWins", function ( model )
 		local f12_local0 = model:get()
 		if f12_local0 ~= nil then
@@ -176,7 +176,7 @@ CoD.StartMenu_Barracks_WZ_WinRecordContainer.new = function ( f1_arg0, f1_arg1, 
 		end
 	end, function ( f17_arg0, f17_arg1, f17_arg2 )
 		if IsInDefaultState( f17_arg0 ) then
-			CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

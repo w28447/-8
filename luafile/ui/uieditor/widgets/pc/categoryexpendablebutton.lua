@@ -48,7 +48,7 @@ CoD.CategoryExpendableButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		} )
 	end, false )
 	Tick:setAlpha( 0.75 )
-	Tick:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Tick:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Tick )
 	self.Tick = Tick
 	
@@ -56,7 +56,7 @@ CoD.CategoryExpendableButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	GlowAdditive:setAlpha( 0 )
 	GlowAdditive:setZRot( -90 )
 	GlowAdditive:setImage( RegisterImage( 0xAD405802E3EEE94 ) )
-	GlowAdditive:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	GlowAdditive:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowAdditive )
 	self.GlowAdditive = GlowAdditive
 	

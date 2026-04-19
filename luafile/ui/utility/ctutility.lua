@@ -122,7 +122,7 @@ CoD.CTUtility.UpdateChosenSpecialistStars = function ( f8_arg0, f8_arg1, f8_arg2
 			else
 				f8_arg0:create( "recruitStars" )
 				local f8_local2 = f8_arg0.recruitStars:create( "starImage" )
-				f8_local2:set( f8_local1 or 0x7615068F50B3D66 )
+				f8_local2:set( f8_local1 or "blacktransparent" )
 				f8_local2 = f8_arg0.recruitStars:create( "header" )
 				f8_local2:set( f8_local0[0xEE9D30C4FF6408B] or 0x0 )
 				if not f8_arg4 then
@@ -132,7 +132,7 @@ CoD.CTUtility.UpdateChosenSpecialistStars = function ( f8_arg0, f8_arg1, f8_arg2
 					else
 						f8_arg0:create( "regularStars" )
 						local f8_local3 = f8_arg0.regularStars:create( "starImage" )
-						f8_local3:set( f8_local2 or 0x7615068F50B3D66 )
+						f8_local3:set( f8_local2 or "blacktransparent" )
 						f8_local3 = f8_arg0.regularStars:create( "header" )
 						f8_local3:set( f8_local0[0xB9793AA447A56D6] or 0x0 )
 						if not f8_arg5 then
@@ -142,7 +142,7 @@ CoD.CTUtility.UpdateChosenSpecialistStars = function ( f8_arg0, f8_arg1, f8_arg2
 							else
 								f8_arg0:create( "veteranStars" )
 								local f8_local4 = f8_arg0.veteranStars:create( "starImage" )
-								f8_local4:set( f8_local3 or 0x7615068F50B3D66 )
+								f8_local4:set( f8_local3 or "blacktransparent" )
 								f8_local4 = f8_arg0.veteranStars:create( "header" )
 								f8_local4:set( f8_local0[0x7B08A6C17B1A530] or 0x0 )
 							end
@@ -322,9 +322,9 @@ CoD.CTUtility.GetLaunchStateLocString = function ( f22_arg0, f22_arg1 )
 	elseif f22_arg1 == CoD.CTUtility.SpecialistHeadquartersLaunchStates.STATE_PLAY_SKIRMISH then
 		return 0x800C003407636A2
 	elseif f22_arg1 == CoD.CTUtility.SpecialistHeadquartersLaunchStates.STATE_CONTINUE then
-		return 0x6393FF34EA56966
+		return "menu/continue"
 	else
-		return 0xDDDA371285672BD
+		return "menu/play"
 	end
 end
 
@@ -332,13 +332,13 @@ CoD.CTUtility.GetChosenSpecialistIDLocString = function ( f23_arg0, f23_arg1 )
 	local f23_local0, f23_local1, f23_local2 = CoD.CTUtility.GetOverallSpecialistProgress( f23_arg0 )
 	local f23_local3, f23_local4, f23_local5, f23_local6, f23_local7 = CoD.CTUtility.GetSpecialistProgress( f23_arg0, f23_arg1 )
 	if not f23_local0 then
-		return 0xDDDA371285672BD
+		return "menu/play"
 	elseif f23_local7 then
 		return 0x48CA806830288A9
 	elseif f23_local3 then
 		return 0x800C003407636A2
 	else
-		return 0x6393FF34EA56966
+		return "menu/continue"
 	end
 end
 
@@ -443,8 +443,8 @@ DataSources.SpecialistHeadquartersLoadoutList = ListHelper_SetupDataSource( "Spe
 		f33_arg4.properties.selectIndex = f32_local2 == f33_local0
 		f33_arg4.models.bio = f33_local1[0x541919134FDFF1] or 0x0
 		f33_arg4.models.bioHeader = f33_local1[0x668EA0FEF74A8D4] or 0x0
-		f33_arg4.models.bioHeaderImage = f33_local1[0x15AC9DAAD709DE1] or 0x7615068F50B3D66
-		f33_arg4.models.brandingImage = f33_local1[0xB2781A0B1BF2B7A] or 0x7615068F50B3D66
+		f33_arg4.models.bioHeaderImage = f33_local1[0x15AC9DAAD709DE1] or "blacktransparent"
+		f33_arg4.models.brandingImage = f33_local1[0xB2781A0B1BF2B7A] or "blacktransparent"
 		f33_arg4.models.equipment = f33_local2.equipment
 		f33_arg4.models.ability = f33_local2.ability
 		local f33_local3, f33_local4, f33_local5, f33_local6, f33_local7 = CoD.CTUtility.GetSpecialistProgress( f33_arg1, f33_local0 )
@@ -457,7 +457,7 @@ DataSources.SpecialistHeadquartersLoadoutList = ListHelper_SetupDataSource( "Spe
 			
 			else
 				f33_arg4.models.recruitStars = {
-					starImage = f33_local8 or 0x7615068F50B3D66,
+					starImage = f33_local8 or "blacktransparent",
 					header = f32_local3[0xEE9D30C4FF6408B] or 0x0
 				}
 				local f33_local9
@@ -467,7 +467,7 @@ DataSources.SpecialistHeadquartersLoadoutList = ListHelper_SetupDataSource( "Spe
 					
 					else
 						f33_arg4.models.regularStars = {
-							starImage = f33_local9 or 0x7615068F50B3D66,
+							starImage = f33_local9 or "blacktransparent",
 							header = f32_local3[0xB9793AA447A56D6] or 0x0
 						}
 						local f33_local10
@@ -477,7 +477,7 @@ DataSources.SpecialistHeadquartersLoadoutList = ListHelper_SetupDataSource( "Spe
 							
 							else
 								f33_arg4.models.veteranStars = {
-									starImage = f33_local10 or 0x7615068F50B3D66,
+									starImage = f33_local10 or "blacktransparent",
 									header = f32_local3[0x7B08A6C17B1A530] or 0x0
 								}
 								local f33_local11 = f33_arg4.models

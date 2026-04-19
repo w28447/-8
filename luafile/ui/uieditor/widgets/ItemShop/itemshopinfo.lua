@@ -62,7 +62,7 @@ CoD.ItemShopInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	
 	local Linker = LUI.UIImage.new( 0, 0, 758, 762, 0, 0, 29.5, 421.5 )
 	Linker:setAlpha( 0.08 )
-	Linker:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
+	Linker:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
 	Linker:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	Linker:setShaderVector( 0, 0, 0, 0, 0 )
 	Linker:setupNineSliceShader( 4, 8 )
@@ -71,7 +71,7 @@ CoD.ItemShopInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	
 	local Linker2 = LUI.UIImage.new( 0, 0, 758.5, 762.5, 0, 0, 0, 27 )
 	Linker2:setAlpha( 0.08 )
-	Linker2:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
+	Linker2:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
 	Linker2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	Linker2:setShaderVector( 0, 0, 0, 0, 0 )
 	Linker2:setupNineSliceShader( 4, 8 )

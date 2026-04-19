@@ -12,7 +12,7 @@ CoD.Hud_ZM_Trial_Global_Tracker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local objBg = LUI.UIImage.new( 0, 0, -1.5, 80.5, 0, 0, 1, 60 )
 	objBg:setAlpha( 0 )
-	objBg:setImage( RegisterImage( 0x75D661B612187DF ) )
+	objBg:setImage( RegisterImage( "uie_objbg" ) )
 	self:addElement( objBg )
 	self.objBg = objBg
 	
@@ -31,7 +31,7 @@ CoD.Hud_ZM_Trial_Global_Tracker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	yellow:setRGB( ColorSet.EnemyOrange.r, ColorSet.EnemyOrange.g, ColorSet.EnemyOrange.b )
 	yellow:setAlpha( 0 )
 	yellow:setImage( RegisterImage( 0x1E5C0EED08D22D ) )
-	yellow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	yellow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	yellow:setShaderVector( 0, 1, 0, 0, 0 )
 	yellow:setShaderVector( 1, 0, 0, 0, 0 )
 	yellow:setShaderVector( 2, 1, 0, 0, 0 )
@@ -50,7 +50,7 @@ CoD.Hud_ZM_Trial_Global_Tracker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local ZmFxSpark2Ext0 = CoD.ZmFx_Spark2Ext.new( f1_arg0, f1_arg1, 0, 0, -1, 84, 0, 0, -68, 60 )
 	ZmFxSpark2Ext0:setAlpha( 0 )
 	ZmFxSpark2Ext0:setZRot( 9 )
-	ZmFxSpark2Ext0:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	ZmFxSpark2Ext0:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ZmFxSpark2Ext0 )
 	self.ZmFxSpark2Ext0 = ZmFxSpark2Ext0
 	

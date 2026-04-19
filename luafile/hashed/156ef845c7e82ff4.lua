@@ -19,7 +19,7 @@ CoD.PC_Korea_Event_Week_WeekProgress_Title.new = function ( f1_arg0, f1_arg1, f1
 	
 	local DescriptionLineBorder = LUI.UIImage.new( 0.5, 0.5, -350, 350, 0.5, 0.5, -48.5, -29.5 )
 	DescriptionLineBorder:setImage( RegisterImage( 0xC752149A1FA1AAE ) )
-	DescriptionLineBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	DescriptionLineBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	DescriptionLineBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	DescriptionLineBorder:setupNineSliceShader( 6, 6 )
 	self:addElement( DescriptionLineBorder )

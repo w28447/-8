@@ -16,7 +16,7 @@ CoD.CommonToolTipBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local TiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TiledBacking:setAlpha( 0.7 )
-	TiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking:setupNineSliceShader( 196, 88 )
@@ -25,8 +25,8 @@ CoD.CommonToolTipBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local FrameBorder = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	FrameBorder:setAlpha( 0.2 )
-	FrameBorder:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrameBorder:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrameBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FrameBorder:setupNineSliceShader( 4, 4 )
 	self:addElement( FrameBorder )
@@ -49,7 +49,7 @@ CoD.CommonToolTipBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local Botline = LUI.UIImage.new( 0, 1, -4, 4, 1, 1, -3, 7 )
 	Botline:setImage( RegisterImage( 0xC752149A1FA1AAE ) )
-	Botline:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	Botline:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Botline:setShaderVector( 0, 0, 0, 0, 0 )
 	Botline:setupNineSliceShader( 60, 10 )
 	self:addElement( Botline )
@@ -57,7 +57,7 @@ CoD.CommonToolTipBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local TopLine = LUI.UIImage.new( 0, 1, -4, 4, 0, 0, -4, 6 )
 	TopLine:setImage( RegisterImage( 0xC752149A1FA1AAE ) )
-	TopLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	TopLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	TopLine:setShaderVector( 0, 0, 0, 0, 0 )
 	TopLine:setupNineSliceShader( 60, 10 )
 	self:addElement( TopLine )

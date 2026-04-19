@@ -279,10 +279,10 @@ CoD.directorPregame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 		end
 	end, function ( f28_arg0, f28_arg1, f28_arg2 )
 		if not IsZombies() and not CoD.DirectorUtility.IsNumClientsExceeded( f28_arg2 ) and not CoD.DirectorUtility.ShouldLockFindMatchButton( f28_arg2 ) then
-			CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif not IsZombies() and CoD.DirectorUtility.IsNumClientsExceeded( f28_arg2 ) then
-			CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -453,16 +453,16 @@ CoD.directorPregame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 		end
 	end, function ( f44_arg0, f44_arg1, f44_arg2 )
 		if IsZombies() and IsPC() then
-			CoD.Menu.SetButtonLabel( f44_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f44_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif IsZombies() then
-			CoD.Menu.SetButtonLabel( f44_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f44_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif IsPC() and not IsZombies() then
-			CoD.Menu.SetButtonLabel( f44_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f44_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif not IsZombies() then
-			CoD.Menu.SetButtonLabel( f44_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f44_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -665,7 +665,7 @@ CoD.directorPregame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 		end
 	end, function ( f68_arg0, f68_arg1, f68_arg2 )
 		if IsLobbyHostOfCurrentMenu() and IsZombies() then
-			CoD.Menu.SetButtonLabel( f68_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f68_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -811,8 +811,8 @@ CoD.directorPregame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	MapAndGameType = CoD.DirectorMapAndGameTypeContainer.new( f1_arg0, f1_arg1, 0.5, 0.5, 514, 896, 1, 1, -368, -188 )
 	MapAndGameType:setAlpha( 0 )
-	MapAndGameType.DirectorMapAndGameInternal.GamemodeIcon:setImage( RegisterImage( 0x7615068F50B3D66 ) )
-	MapAndGameType.DirectorMapAndGameInternal.DirectorMapAndGameTypeInternalTitles.Label:setText( Engine[0xF9F1239CFD921FE]( 0x2C79EA24AB1A2BA ) )
+	MapAndGameType.DirectorMapAndGameInternal.GamemodeIcon:setImage( RegisterImage( "blacktransparent" ) )
+	MapAndGameType.DirectorMapAndGameInternal.DirectorMapAndGameTypeInternalTitles.Label:setText( Engine[0xF9F1239CFD921FE]( "null/empty" ) )
 	MapAndGameType.DirectorMapAndGameInternal.PlaylistHeader.GameModeText:setText( Engine[0xF9F1239CFD921FE]( 0x890976738B1D859 ) )
 	MapAndGameType.DirectorMapAndGameInternal.PlaylistHeader.GameModeText:setTTF( "ttmussels_regular" )
 	MapAndGameType.DirectorMapAndGameInternal.PlaylistHeaderNonHost.GameModeText:setText( Engine[0xF9F1239CFD921FE]( 0x890976738B1D859 ) )
@@ -887,7 +887,7 @@ CoD.directorPregame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 		end
 	end, function ( f92_arg0, f92_arg1, f92_arg2 )
 		if not IsZombies() and IsPartyLeader( f92_arg2 ) then
-			CoD.Menu.SetButtonLabel( f92_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f92_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

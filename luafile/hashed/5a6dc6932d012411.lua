@@ -32,7 +32,7 @@ LUI.createMenu.FTUEWZProgressionMenu = function ( f1_arg0, f1_arg1 )
 	
 	local BackgroundImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BackgroundImage:setAlpha( 0.85 )
-	BackgroundImage:setImage( RegisterImage( 0x4BF88A437F4C579 ) )
+	BackgroundImage:setImage( RegisterImage( "uie_fe_cp_background" ) )
 	self:addElement( BackgroundImage )
 	self.BackgroundImage = BackgroundImage
 	
@@ -107,7 +107,7 @@ LUI.createMenu.FTUEWZProgressionMenu = function ( f1_arg0, f1_arg1 )
 	local PCButton = nil
 	
 	PCButton = CoD.PC_MOTD_Buttons.new( f1_local1, f1_arg0, 0.5, 0.5, -812, -572, 0.3, 0.3, 506.5, 586.5 )
-	PCButton.OptionText:setText( LocalizeToUpperString( 0x6393FF34EA56966 ) )
+	PCButton.OptionText:setText( LocalizeToUpperString( "menu/continue" ) )
 	PCButton:linkToElementModel( self, "image", true, function ( model )
 		local f3_local0 = model:get()
 		if f3_local0 ~= nil then
@@ -155,7 +155,7 @@ LUI.createMenu.FTUEWZProgressionMenu = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f8_arg0, f8_arg1, f8_arg2 )
 		if not IsRepeatButtonPress( nil ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x6393FF34EA56966, nil, "MOUSE1" )
+			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, "MOUSE1" )
 			return true
 		else
 			return false

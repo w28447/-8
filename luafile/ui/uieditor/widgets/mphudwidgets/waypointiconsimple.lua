@@ -29,7 +29,7 @@ CoD.WaypointIconSimple.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local waypointLowProgressPulse = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	waypointLowProgressPulse:setAlpha( 0 )
-	waypointLowProgressPulse:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	waypointLowProgressPulse:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	waypointLowProgressPulse:setShaderVector( 0, 0, 1, 0, 0 )
 	waypointLowProgressPulse:setShaderVector( 1, 0, 0, 0, 0 )
 	waypointLowProgressPulse:setShaderVector( 3, 0, 0, 0, 0 )
@@ -50,7 +50,7 @@ CoD.WaypointIconSimple.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.waypointLowProgressPulse = waypointLowProgressPulse
 	
 	local waypointCenterImageDarkWipe = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	waypointCenterImageDarkWipe:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	waypointCenterImageDarkWipe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	waypointCenterImageDarkWipe:setShaderVector( 0, 0, 1, 0, 0 )
 	waypointCenterImageDarkWipe:setShaderVector( 1, 0, 0, 0, 0 )
 	waypointCenterImageDarkWipe:setShaderVector( 3, 0, 0, 0, 0 )

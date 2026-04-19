@@ -14,7 +14,7 @@ CoD.kickerinternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	self.ContentIcon = ContentIcon
 	
 	local NotifTextMain = LUI.UIText.new( 0, 0, 48, 400, 0.5, 0.5, -13.5, 13.5 )
-	NotifTextMain:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	NotifTextMain:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	NotifTextMain:setTTF( "ttmussels_regular" )
 	NotifTextMain:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	self:addElement( NotifTextMain )

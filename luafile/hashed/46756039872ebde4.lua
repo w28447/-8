@@ -35,7 +35,7 @@ LUI.createMenu.AllRNGPopup = function ( f1_arg0, f1_arg1 )
 	
 	local BannerAdd = LUI.UIImage.new( 0.5, 0.5, -960, 960, 0.5, 0.5, -190, 190 )
 	BannerAdd:setImage( RegisterImage( 0x1B35139AF5FC958 ) )
-	BannerAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	BannerAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BannerAdd )
 	self.BannerAdd = BannerAdd
 	
@@ -59,7 +59,7 @@ LUI.createMenu.AllRNGPopup = function ( f1_arg0, f1_arg1 )
 	self.CompleteText = CompleteText
 	
 	local GenericMenuFrameIdentity = CoD.GenericMenuFrameIdentity.new( f1_local1, f1_arg0, 0.5, 0.5, -960, 960, 0, 1, 0, 0 )
-	GenericMenuFrameIdentity.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x29C903C6DF90D6F ) )
+	GenericMenuFrameIdentity.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/black_market" ) )
 	GenericMenuFrameIdentity:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then
@@ -72,7 +72,7 @@ LUI.createMenu.AllRNGPopup = function ( f1_arg0, f1_arg1 )
 	local PCButtons = nil
 	
 	PCButtons = CoD.PC_MOTD_Buttons.new( f1_local1, f1_arg0, 0.5, 0.5, -632.5, -392.5, 1, 1, -167.5, -87.5 )
-	PCButtons.OptionText:setText( LocalizeToUpperString( 0x6393FF34EA56966 ) )
+	PCButtons.OptionText:setText( LocalizeToUpperString( "menu/continue" ) )
 	PCButtons:linkToElementModel( self, "image", true, function ( model )
 		local f3_local0 = model:get()
 		if f3_local0 ~= nil then
@@ -110,7 +110,7 @@ LUI.createMenu.AllRNGPopup = function ( f1_arg0, f1_arg1 )
 			return true
 		end
 	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x6393FF34EA56966, nil, nil )
+		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, nil )
 		return true
 	end, false )
 	GenericMenuFrameIdentity:setModel( self.buttonModel, f1_arg0 )

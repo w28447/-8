@@ -13,8 +13,8 @@ CoD.RiotShieldHealth.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	bgbGlowOrangeOver:setRGB( ColorSet.GroupName.r, ColorSet.GroupName.g, ColorSet.GroupName.b )
 	bgbGlowOrangeOver:setAlpha( 0 )
 	bgbGlowOrangeOver:setZRot( 90 )
-	bgbGlowOrangeOver:setImage( RegisterImage( 0x5BE416E17DAB33B ) )
-	bgbGlowOrangeOver:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	bgbGlowOrangeOver:setImage( RegisterImage( "uie_t7_core_hud_mapwidget_panelglow" ) )
+	bgbGlowOrangeOver:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( bgbGlowOrangeOver )
 	self.bgbGlowOrangeOver = bgbGlowOrangeOver
 	
@@ -35,7 +35,7 @@ CoD.RiotShieldHealth.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	bgbAbilitySwirl:setZRot( 330 )
 	bgbAbilitySwirl:setScale( 1.65, 1.65 )
 	bgbAbilitySwirl:setImage( RegisterImage( 0xBBBD54E6E7B4493 ) )
-	bgbAbilitySwirl:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	bgbAbilitySwirl:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( bgbAbilitySwirl )
 	self.bgbAbilitySwirl = bgbAbilitySwirl
 	
@@ -47,7 +47,7 @@ CoD.RiotShieldHealth.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local HealthBar = LUI.UIImage.new( 0.5, 0.5, -50, 50, 0, 0, 69, 93 )
 	HealthBar:setRGB( 0.92, 0.92, 0.17 )
 	HealthBar:setImage( RegisterImage( 0x1FD9F7F87E813AF ) )
-	HealthBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	HealthBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	HealthBar:setShaderVector( 1, 0, 0, 0, 0 )
 	HealthBar:setShaderVector( 2, 1, 0, 0, 0 )
 	HealthBar:setShaderVector( 3, 0, 0, 0, 0 )

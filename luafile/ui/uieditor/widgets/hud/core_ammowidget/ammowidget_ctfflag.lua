@@ -21,7 +21,7 @@ CoD.AmmoWidget_ctfflag.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	glow:setRGB( 1, 0.17, 0 )
 	glow:setAlpha( 0.25 )
 	glow:setImage( RegisterImage( 0xE0F9061AF34A631 ) )
-	glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( glow )
 	self.glow = glow
 	
@@ -33,8 +33,8 @@ CoD.AmmoWidget_ctfflag.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local PanelGlow = LUI.UIImage.new( 0, 0, -24, 127, 0, 0, -22, 131 )
 	PanelGlow:setRGB( 0.56, 0.08, 0.08 )
 	PanelGlow:setAlpha( 0.41 )
-	PanelGlow:setImage( RegisterImage( 0x5BE416E17DAB33B ) )
-	PanelGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	PanelGlow:setImage( RegisterImage( "uie_t7_core_hud_mapwidget_panelglow" ) )
+	PanelGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PanelGlow )
 	self.PanelGlow = PanelGlow
 	
@@ -377,7 +377,7 @@ CoD.AmmoWidget_ctfflag.__resetProperties = function ( f25_arg0 )
 	f25_arg0.glow:setTopBottom( 0, 0, 20.5, 83.5 )
 	f25_arg0.glow:setRGB( 1, 0.17, 0 )
 	f25_arg0.glow:setAlpha( 0.25 )
-	f25_arg0.glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	f25_arg0.glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	f25_arg0.backplate:setAlpha( 1 )
 	f25_arg0.SndItem3:setAlpha( 1 )
 end
@@ -428,7 +428,7 @@ CoD.AmmoWidget_ctfflag.__clipsPerState = {
 			f28_arg0.glow:setTopBottom( 0, 0, 20.5, 83.5 )
 			f28_arg0.glow:setRGB( 1, 0.17, 0 )
 			f28_arg0.glow:setAlpha( 0.1 )
-			f28_arg0.glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+			f28_arg0.glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 			f28_arg0.clipFinished( f28_arg0.glow )
 			local f28_local0 = function ( f29_arg0 )
 				local f29_local0 = function ( f30_arg0 )

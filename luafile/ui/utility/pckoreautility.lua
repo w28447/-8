@@ -266,7 +266,7 @@ DataSources.PCKoreaRefundButtons = DataSourceHelpers.ListSetup( "PCKoreaRefundBu
 	
 	local f26_local8 = DataSources.PCKoreaRefundWarning.getModel()
 	table.insert( f26_local0, f26_local7( f26_local8.confirmButtonTextHash:get(), 0x0, nil, f26_local2, f26_local6, false ) )
-	table.insert( f26_local0, f26_local7( 0xC2E92C54C2BE289, 0x0, nil, f26_local1, nil, false ) )
+	table.insert( f26_local0, f26_local7( "menu/cancel", 0x0, nil, f26_local1, nil, false ) )
 	local f26_local9 = {}
 	if f26_local8.hasTermsOfSale:get() then
 		table.insert( f26_local0, f26_local7( 0x8770CBF493EC79D, 0x0, nil, f26_local3, nil, false ) )
@@ -298,8 +298,8 @@ CoD.PCKoreaUtility.DisplayRefundAgreement = function ( f34_arg0, f34_arg1, f34_a
 	local f34_local3 = 0
 	local f34_local4 = CoD.Currencies.COD_POINTS
 	local f34_local5 = 0x6EAF44BE32C0CDD
-	local f34_local6 = 0x7615068F50B3D66
-	local f34_local7 = 0x7615068F50B3D66
+	local f34_local6 = "blacktransparent"
+	local f34_local7 = "blacktransparent"
 	local f34_local8 = nil
 	local f34_local9 = false
 	local f34_local10 = true

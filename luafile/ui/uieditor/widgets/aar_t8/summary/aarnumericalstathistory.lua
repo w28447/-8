@@ -15,7 +15,7 @@ CoD.AARNumericalStatHistory.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	BarStripe:setXRot( 180 )
 	BarStripe:setYRot( 180 )
 	BarStripe:setImage( RegisterImage( 0x938DF4DE0F3C3F5 ) )
-	BarStripe:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	BarStripe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	BarStripe:setShaderVector( 0, 1, 0, 0, 0 )
 	BarStripe:setShaderVector( 1, 0, 0, 0, 0 )
 	BarStripe:setShaderVector( 3, 0, 0, 0, 0 )
@@ -88,7 +88,7 @@ CoD.AARNumericalStatHistory.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	BarStripeAdd:setXRot( 180 )
 	BarStripeAdd:setYRot( 180 )
 	BarStripeAdd:setImage( RegisterImage( 0x938DF4DE0F3C3F5 ) )
-	BarStripeAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	BarStripeAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	BarStripeAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	BarStripeAdd:setShaderVector( 1, 0, 0, 0, 0 )
 	BarStripeAdd:setShaderVector( 3, 0, 0, 0, 0 )
@@ -111,7 +111,7 @@ CoD.AARNumericalStatHistory.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local InValidAdd = LUI.UIImage.new( 0, 0, 14, 110, 0, 0, 22, 214 )
 	InValidAdd:setAlpha( 0 )
 	InValidAdd:setImage( RegisterImage( 0xFDCBFA0A9BD64AE ) )
-	InValidAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	InValidAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( InValidAdd )
 	self.InValidAdd = InValidAdd
 	

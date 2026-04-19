@@ -22,14 +22,14 @@ CoD.FallMeter_PlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local PositionLineGlow = LUI.UIImage.new( 0.5, 0.5, -20.5, 20.5, 0.5, 0.5, -10, 10 )
 	PositionLineGlow:setImage( RegisterImage( 0x582530AE1BD7758 ) )
-	PositionLineGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	PositionLineGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PositionLineGlow )
 	self.PositionLineGlow = PositionLineGlow
 	
 	local Bloom = LUI.UIImage.new( 0.5, 0.5, -40, 40, 0.5, 0.5, -10, 10 )
 	Bloom:setAlpha( 0.5 )
 	Bloom:setImage( RegisterImage( 0x658B1F463FE7860 ) )
-	Bloom:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Bloom:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Bloom )
 	self.Bloom = Bloom
 	

@@ -22,7 +22,7 @@ LUI.createMenu.AARPrestigeMasterOverlay = function ( f1_arg0, f1_arg1 )
 	local FractalGrid = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	FractalGrid:setAlpha( 0.02 )
 	FractalGrid:setImage( RegisterImage( 0x1DF4C930E69FFB0 ) )
-	FractalGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD8EA9FE9B0BCF75 ) )
+	FractalGrid:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	FractalGrid:setShaderVector( 0, 1, 1, 0, 0 )
 	FractalGrid:setShaderVector( 1, 0, 0, 0, 0 )
 	self:addElement( FractalGrid )
@@ -110,7 +110,7 @@ LUI.createMenu.AARPrestigeMasterOverlay = function ( f1_arg0, f1_arg1 )
 		CoD.AARUtility.CloseLevelUpOverlay( f6_arg1, f6_arg2 )
 		return true
 	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x6393FF34EA56966, nil, nil )
+		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, nil )
 		return true
 	end, false )
 	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
@@ -122,7 +122,7 @@ LUI.createMenu.AARPrestigeMasterOverlay = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f9_arg0, f9_arg1, f9_arg2 )
 		if IsPC() then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		else
 			return false

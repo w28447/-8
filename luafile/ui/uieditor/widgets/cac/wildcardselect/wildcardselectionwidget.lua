@@ -125,10 +125,10 @@ CoD.WildcardSelectionWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		end
 	end, function ( f9_arg0, f9_arg1, f9_arg2 )
 		if IsPC() and CoD.CACUtility.IsItemEquippedInCurrentLoadout( f9_arg1, f9_arg0, f9_arg2 ) and CoD.ModelUtility.IsSelfModelValueTrue( f9_arg0, f9_arg2, "canEquipBonuscard" ) and not CoD.CACUtility.IsCACItemLocked( f9_arg1, f9_arg0, f9_arg2 ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif not CoD.CACUtility.IsItemEquippedInCurrentLoadout( f9_arg1, f9_arg0, f9_arg2 ) and CoD.ModelUtility.IsSelfModelValueTrue( f9_arg0, f9_arg2, "canEquipBonuscard" ) and not CoD.CACUtility.IsCACItemLocked( f9_arg1, f9_arg0, f9_arg2 ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -144,7 +144,7 @@ CoD.WildcardSelectionWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local TiledBacking = LUI.UIImage.new( 0, 0, 284, 629, 0.08, 0.77, 85, 85 )
 	TiledBacking:setAlpha( 0.5 )
-	TiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking:setupNineSliceShader( 196, 88 )
@@ -185,7 +185,7 @@ CoD.WildcardSelectionWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local InfoBracketTop = LUI.UIImage.new( 0, 0, 282, 631, 0, 0, 135, 163 )
 	InfoBracketTop:setImage( RegisterImage( 0x81D4EAAB75120FF ) )
-	InfoBracketTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	InfoBracketTop:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( InfoBracketTop )
 	self.InfoBracketTop = InfoBracketTop
 	
@@ -200,7 +200,7 @@ CoD.WildcardSelectionWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local InfoBracketBot = LUI.UIImage.new( 0, 0, 282, 631, 0, 0, 522.5, 550.5 )
 	InfoBracketBot:setZRot( 180 )
 	InfoBracketBot:setImage( RegisterImage( 0x81D4EAAB75120FF ) )
-	InfoBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	InfoBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( InfoBracketBot )
 	self.InfoBracketBot = InfoBracketBot
 	
@@ -222,7 +222,7 @@ CoD.WildcardSelectionWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local SpecialistCornerTL = LUI.UIImage.new( 0, 0, 245, 269, 0, 0, 97, 121 )
 	SpecialistCornerTL:setAlpha( 0.2 )
 	SpecialistCornerTL:setScale( 0.5, 0.5 )
-	SpecialistCornerTL:setImage( RegisterImage( 0x8DC834094E7A02C ) )
+	SpecialistCornerTL:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
 	SpecialistCornerTL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	SpecialistCornerTL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( SpecialistCornerTL )
@@ -232,7 +232,7 @@ CoD.WildcardSelectionWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	SpecialistCornerTR:setAlpha( 0.25 )
 	SpecialistCornerTR:setZRot( -90 )
 	SpecialistCornerTR:setScale( 0.5, 0.5 )
-	SpecialistCornerTR:setImage( RegisterImage( 0x8DC834094E7A02C ) )
+	SpecialistCornerTR:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
 	SpecialistCornerTR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	SpecialistCornerTR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( SpecialistCornerTR )
@@ -242,7 +242,7 @@ CoD.WildcardSelectionWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	SpecialistCornerTL2:setAlpha( 0.2 )
 	SpecialistCornerTL2:setXRot( 180 )
 	SpecialistCornerTL2:setScale( 0.5, 0.5 )
-	SpecialistCornerTL2:setImage( RegisterImage( 0x8DC834094E7A02C ) )
+	SpecialistCornerTL2:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
 	SpecialistCornerTL2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	SpecialistCornerTL2:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( SpecialistCornerTL2 )
@@ -253,7 +253,7 @@ CoD.WildcardSelectionWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	SpecialistCornerTR2:setXRot( 180 )
 	SpecialistCornerTR2:setZRot( -90 )
 	SpecialistCornerTR2:setScale( 0.5, 0.5 )
-	SpecialistCornerTR2:setImage( RegisterImage( 0x8DC834094E7A02C ) )
+	SpecialistCornerTR2:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
 	SpecialistCornerTR2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	SpecialistCornerTR2:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( SpecialistCornerTR2 )

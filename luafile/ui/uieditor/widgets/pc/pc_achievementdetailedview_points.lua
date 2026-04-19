@@ -30,7 +30,7 @@ CoD.PC_AchievementDetailedView_Points.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local ScoreValue = LUI.UIText.new( 0, 0, -20, 48, 0, 0, 4, 37 )
 	ScoreValue:setRGB( 0.33, 0.33, 0.32 )
-	ScoreValue:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	ScoreValue:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	ScoreValue:setTTF( "ttmussels_regular" )
 	ScoreValue:setLetterSpacing( 3 )
 	ScoreValue:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

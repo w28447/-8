@@ -14,7 +14,7 @@ CoD.ArenaEventProgressButtonDailyBonus.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local DailyBonusNoise = LUI.UIImage.new( 0, 0, 0, 140, 0.09, 0.09, -2, 60 )
 	DailyBonusNoise:setAlpha( 0 )
-	DailyBonusNoise:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	DailyBonusNoise:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	DailyBonusNoise:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	DailyBonusNoise:setShaderVector( 0, 0, 0, 0, 0 )
 	DailyBonusNoise:setupNineSliceShader( 196, 88 )
@@ -92,7 +92,7 @@ CoD.ArenaEventProgressButtonDailyBonus.new = function ( f1_arg0, f1_arg1, f1_arg
 	local OverlayPattern = LUI.UIImage.new( 0.5, 0.5, -67.5, 69.5, 0.5, 0.5, -30, 30 )
 	OverlayPattern:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	OverlayPattern:setAlpha( 0 )
-	OverlayPattern:setImage( RegisterImage( 0xFC21A8215EA012B ) )
+	OverlayPattern:setImage( RegisterImage( "uie_ui_menu_common_button_bg_pattern_large" ) )
 	OverlayPattern:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	OverlayPattern:setShaderVector( 0, 0, 0, 0, 0 )
 	OverlayPattern:setupNineSliceShader( 4, 4 )

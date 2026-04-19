@@ -120,7 +120,7 @@ LUI.createMenu.LeaguePlayLadderResults = function ( f1_arg0, f1_arg1 )
 		PlaySoundAlias( "uin_toggle_generic" )
 		return true
 	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x6393FF34EA56966, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, "ui_confirm" )
 		return true
 	end, false )
 	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
@@ -132,7 +132,7 @@ LUI.createMenu.LeaguePlayLadderResults = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f12_arg0, f12_arg1, f12_arg2 )
 		if IsPC() then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 			return true
 		else
 			return false

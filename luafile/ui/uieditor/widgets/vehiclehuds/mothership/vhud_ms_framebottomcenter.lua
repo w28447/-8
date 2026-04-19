@@ -13,7 +13,7 @@ CoD.vhud_ms_FrameBottomCenter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	msBottomFrameCenter:setAlpha( 0.6 )
 	msBottomFrameCenter:setXRot( 180 )
 	msBottomFrameCenter:setImage( RegisterImage( 0x27790B8D32A1115 ) )
-	msBottomFrameCenter:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	msBottomFrameCenter:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( msBottomFrameCenter )
 	self.msBottomFrameCenter = msBottomFrameCenter
 	
@@ -23,7 +23,7 @@ CoD.vhud_ms_FrameBottomCenter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	msBottomFrameCenterDepth:setXRot( 180 )
 	msBottomFrameCenterDepth:setZoom( -50 )
 	msBottomFrameCenterDepth:setImage( RegisterImage( 0x27790B8D32A1115 ) )
-	msBottomFrameCenterDepth:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	msBottomFrameCenterDepth:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( msBottomFrameCenterDepth )
 	self.msBottomFrameCenterDepth = msBottomFrameCenterDepth
 	

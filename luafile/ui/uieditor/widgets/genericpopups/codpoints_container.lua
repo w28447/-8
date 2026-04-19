@@ -21,7 +21,7 @@ CoD.CoDPoints_Container.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.65 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -43,7 +43,7 @@ CoD.CoDPoints_Container.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	glow:setAlpha( 0.5 )
 	glow:setZRot( 90 )
 	glow:setImage( RegisterImage( 0x333C8E36E45B362 ) )
-	glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( glow )
 	self.glow = glow
 	
@@ -68,7 +68,7 @@ CoD.CoDPoints_Container.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	glow2:setAlpha( 0.5 )
 	glow2:setZRot( 90 )
 	glow2:setImage( RegisterImage( 0x333C8E36E45B362 ) )
-	glow2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	glow2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( glow2 )
 	self.glow2 = glow2
 	
@@ -163,13 +163,13 @@ CoD.CoDPoints_Container.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 		end
 	end, function ( f7_arg0, f7_arg1, f7_arg2 )
 		if not MenuPropertyIsTrue( f7_arg1, "dontCloseOnStoreOpen" ) and not IsPC() then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif MenuPropertyIsTrue( f7_arg1, "dontCloseOnStoreOpen" ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif not MenuPropertyIsTrue( f7_arg1, "dontCloseOnStoreOpen" ) and IsPC() then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -200,7 +200,7 @@ CoD.CoDPoints_Container.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	Linker:setRGB( ColorSet.T8__BEIGE__HEADER.r, ColorSet.T8__BEIGE__HEADER.g, ColorSet.T8__BEIGE__HEADER.b )
 	Linker:setAlpha( 0.5 )
 	Linker:setZRot( 90 )
-	Linker:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
+	Linker:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
 	Linker:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	Linker:setShaderVector( 0, 0, 0, 0, 0 )
 	Linker:setupNineSliceShader( 4, 8 )
@@ -211,7 +211,7 @@ CoD.CoDPoints_Container.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	Linker2:setRGB( ColorSet.T8__BEIGE__HEADER.r, ColorSet.T8__BEIGE__HEADER.g, ColorSet.T8__BEIGE__HEADER.b )
 	Linker2:setAlpha( 0.5 )
 	Linker2:setZRot( 90 )
-	Linker2:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
+	Linker2:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
 	Linker2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	Linker2:setShaderVector( 0, 0, 0, 0, 0 )
 	Linker2:setupNineSliceShader( 4, 8 )
@@ -243,7 +243,7 @@ CoD.CoDPoints_Container.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 			modelName = "LastInput"
 		} )
 	end, false )
-	featureOverlayButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( 0x70A9FDC87CD3D48 ) )
+	featureOverlayButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/back" ) )
 	featureOverlayButtonContainer:registerEventHandler( "gain_focus", function ( element, event )
 		local f13_local0 = nil
 		if element.gainFocus then

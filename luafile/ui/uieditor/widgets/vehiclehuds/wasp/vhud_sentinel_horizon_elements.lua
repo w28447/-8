@@ -10,14 +10,14 @@ CoD.vhud_sentinel_horizon_elements.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local CenterReticleLine = LUI.UIImage.new( 0.5, 0.5, -32, 31, 0.5, 0.5, -18, 18 )
 	CenterReticleLine:setImage( RegisterImage( 0xA00FDF7AE3BDFCB ) )
-	CenterReticleLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	CenterReticleLine:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CenterReticleLine )
 	self.CenterReticleLine = CenterReticleLine
 	
 	local RightArrow = LUI.UIImage.new( 0.5, 0.5, 434, 478, 0.5, 0.5, -14, 15 )
 	RightArrow:setAlpha( 0.4 )
 	RightArrow:setImage( RegisterImage( 0x98F00CD2FA331DA ) )
-	RightArrow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	RightArrow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( RightArrow )
 	self.RightArrow = RightArrow
 	
@@ -25,14 +25,14 @@ CoD.vhud_sentinel_horizon_elements.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	LeftArrow:setAlpha( 0.4 )
 	LeftArrow:setZRot( 180 )
 	LeftArrow:setImage( RegisterImage( 0x98F00CD2FA331DA ) )
-	LeftArrow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	LeftArrow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( LeftArrow )
 	self.LeftArrow = LeftArrow
 	
 	local OutsideHashLineR5 = LUI.UIImage.new( 0.5, 0.5, 472, 630, 0.5, 0.5, -9, 15 )
 	OutsideHashLineR5:setRGB( 0.6, 0.82, 0.91 )
 	OutsideHashLineR5:setImage( RegisterImage( 0xD26D9A0739D4532 ) )
-	OutsideHashLineR5:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	OutsideHashLineR5:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( OutsideHashLineR5 )
 	self.OutsideHashLineR5 = OutsideHashLineR5
 	
@@ -41,14 +41,14 @@ CoD.vhud_sentinel_horizon_elements.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	OutsideHashLineR50:setAlpha( 0.7 )
 	OutsideHashLineR50:setZRot( 180 )
 	OutsideHashLineR50:setImage( RegisterImage( 0xD26D9A0739D4532 ) )
-	OutsideHashLineR50:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	OutsideHashLineR50:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( OutsideHashLineR50 )
 	self.OutsideHashLineR50 = OutsideHashLineR50
 	
 	local OutsideLineHorizonR = LUI.UIImage.new( 0.5, 0.5, 216, 374, 0.5, 0.5, -9, 15 )
 	OutsideLineHorizonR:setRGB( 0.6, 0.82, 0.91 )
 	OutsideLineHorizonR:setImage( RegisterImage( 0xD26D9A0739D4532 ) )
-	OutsideLineHorizonR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	OutsideLineHorizonR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( OutsideLineHorizonR )
 	self.OutsideLineHorizonR = OutsideLineHorizonR
 	
@@ -56,7 +56,7 @@ CoD.vhud_sentinel_horizon_elements.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	OutsideLineHorizonL:setRGB( 0.6, 0.82, 0.91 )
 	OutsideLineHorizonL:setZRot( 180 )
 	OutsideLineHorizonL:setImage( RegisterImage( 0xD26D9A0739D4532 ) )
-	OutsideLineHorizonL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	OutsideLineHorizonL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( OutsideLineHorizonL )
 	self.OutsideLineHorizonL = OutsideLineHorizonL
 	

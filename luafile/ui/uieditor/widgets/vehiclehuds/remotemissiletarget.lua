@@ -10,7 +10,7 @@ CoD.remoteMissileTarget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local target = LUI.UIImage.new( 0, 0, 0, 116, 0, 0, 0, 96 )
 	target:setImage( RegisterImage( 0x55BF2DC11E3BCB2 ) )
-	target:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	target:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	target:setupRemoteMissileTarget( 0 )
 	self:addElement( target )
 	self.target = target

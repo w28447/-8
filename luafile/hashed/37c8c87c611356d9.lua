@@ -26,7 +26,7 @@ CoD.DupeMeterIcon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	FullPulse:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
 	FullPulse:setAlpha( 0 )
 	FullPulse:setImage( RegisterImage( 0xF395928C19E9B99 ) )
-	FullPulse:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	FullPulse:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FullPulse )
 	self.FullPulse = FullPulse
 	

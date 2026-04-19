@@ -15,7 +15,7 @@ CoD.ZMLoadoutPreviewClassPipPC.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local TiledBacking = LUI.UIImage.new( 0.5, 0.5, -13, 13, 0.5, 0.5, -6, 6 )
 	TiledBacking:setAlpha( 0.75 )
-	TiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking:setupNineSliceShader( 28, 12 )
@@ -25,7 +25,7 @@ CoD.ZMLoadoutPreviewClassPipPC.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local Border = LUI.UIImage.new( 0.08, 0.93, 0, 0, 0.08, 0.93, 0, 0 )
 	Border:setRGB( 0.33, 0.33, 0.33 )
 	Border:setImage( RegisterImage( 0xF1E3082B39E99BB ) )
-	Border:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	Border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	Border:setShaderVector( 0, 0, 0, 0, 0 )
 	Border:setupNineSliceShader( 7, 7 )
 	self:addElement( Border )
@@ -33,14 +33,14 @@ CoD.ZMLoadoutPreviewClassPipPC.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local Pip = LUI.UIImage.new( 0.08, 0.93, 0, 0, 0.08, 0.93, 0, 0 )
 	Pip:setAlpha( 0 )
-	Pip:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Pip:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Pip )
 	self.Pip = Pip
 	
 	local Glow = LUI.UIImage.new( -0.15, 1.15, 0, 0, -0.21, 1.21, 0, 0 )
 	Glow:setAlpha( 0 )
 	Glow:setImage( RegisterImage( 0xC58FF2328701EBA ) )
-	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	Glow:setShaderVector( 0, 0.05, 0.95, 0, 0 )
 	Glow:setShaderVector( 1, 0.2, 0.2, 0, 0 )
 	Glow:setShaderVector( 2, 0, 1, 0, 0 )

@@ -324,7 +324,7 @@ CoD.HUD_ZM_Trial_Round_Failed.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	HudZMTrialShame1 = CoD.Hud_ZM_Trial_Shame.new( f1_arg0, f1_arg1, 0.5, 0.5, -446, -244, 0, 0, 252, 491 )
 	HudZMTrialShame1.Portrait.Portrait.__Portrait_Portrait_Image = function ()
-		HudZMTrialShame1.Portrait.Portrait:setImage( RegisterImage( CoD.ZombieUtility.GetShamedPlayerPortrait( f1_arg1, 1, 0x9FC2657D07FF186 ) ) )
+		HudZMTrialShame1.Portrait.Portrait:setImage( RegisterImage( CoD.ZombieUtility.GetShamedPlayerPortrait( f1_arg1, 1, "ui_icon_hero_portrait_draft_stanton" ) ) )
 	end
 	
 	HudZMTrialShame1.Portrait.Portrait.__Portrait_Portrait_Image()
@@ -338,7 +338,7 @@ CoD.HUD_ZM_Trial_Round_Failed.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	HudZMTrialShame2 = CoD.Hud_ZM_Trial_Shame.new( f1_arg0, f1_arg1, 0.5, 0.5, -216, -14, 0, 0, 252, 491 )
 	HudZMTrialShame2.Portrait.Portrait.__Portrait_Portrait_Image = function ()
-		HudZMTrialShame2.Portrait.Portrait:setImage( RegisterImage( CoD.ZombieUtility.GetShamedPlayerPortrait( f1_arg1, 2, 0x8F112735FED33E7 ) ) )
+		HudZMTrialShame2.Portrait.Portrait:setImage( RegisterImage( CoD.ZombieUtility.GetShamedPlayerPortrait( f1_arg1, 2, "ui_icon_hero_portrait_draft_bruno" ) ) )
 	end
 	
 	HudZMTrialShame2.Portrait.Portrait.__Portrait_Portrait_Image()
@@ -352,7 +352,7 @@ CoD.HUD_ZM_Trial_Round_Failed.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	HudZMTrialShame3 = CoD.Hud_ZM_Trial_Shame.new( f1_arg0, f1_arg1, 0.5, 0.5, 14, 216, 0, 0, 252, 491 )
 	HudZMTrialShame3.Portrait.Portrait.__Portrait_Portrait_Image = function ()
-		HudZMTrialShame3.Portrait.Portrait:setImage( RegisterImage( CoD.ZombieUtility.GetShamedPlayerPortrait( f1_arg1, 3, 0x526D66BA63113DF ) ) )
+		HudZMTrialShame3.Portrait.Portrait:setImage( RegisterImage( CoD.ZombieUtility.GetShamedPlayerPortrait( f1_arg1, 3, "ui_icon_hero_portrait_draft_diego" ) ) )
 	end
 	
 	HudZMTrialShame3.Portrait.Portrait.__Portrait_Portrait_Image()
@@ -366,7 +366,7 @@ CoD.HUD_ZM_Trial_Round_Failed.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local HudZMTrialShame4 = CoD.Hud_ZM_Trial_Shame.new( f1_arg0, f1_arg1, 0.5, 0.5, 244, 446, 0, 0, 252, 491 )
 	HudZMTrialShame4.Portrait.Portrait.__Portrait_Portrait_Image = function ()
-		HudZMTrialShame4.Portrait.Portrait:setImage( RegisterImage( CoD.ZombieUtility.GetShamedPlayerPortrait( f1_arg1, 4, 0x51B136080630067 ) ) )
+		HudZMTrialShame4.Portrait.Portrait:setImage( RegisterImage( CoD.ZombieUtility.GetShamedPlayerPortrait( f1_arg1, 4, "ui_icon_hero_portrait_draft_scarlett" ) ) )
 	end
 	
 	HudZMTrialShame4.Portrait.Portrait.__Portrait_Portrait_Image()
@@ -384,12 +384,12 @@ CoD.HUD_ZM_Trial_Round_Failed.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.DescriptionDivider = DescriptionDivider
 	
 	local CornerL = LUI.UIImage.new( 0, 0, 658, 673, 0, 0, 31, 46 )
-	CornerL:setImage( RegisterImage( uie_zm_hud_cornerdecoration ) )
+	CornerL:setImage( RegisterImage( "uie_zm_hud_cornerdecoration" ) )
 	self:addElement( CornerL )
 	self.CornerL = CornerL
 	
 	local CornerR = LUI.UIImage.new( 0, 0, 1247, 1262, 0, 0, 31, 46 )
-	CornerR:setImage( RegisterImage( uie_zm_hud_cornerdecoration ) )
+	CornerR:setImage( RegisterImage( "uie_zm_hud_cornerdecoration" ) )
 	self:addElement( CornerR )
 	self.CornerR = CornerR
 	

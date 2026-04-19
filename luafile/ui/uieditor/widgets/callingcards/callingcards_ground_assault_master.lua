@@ -43,7 +43,7 @@ CoD[0x12E15CAA184F593].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local carSmoke = LUI.UIImage.new( 0, 0, 247, 713, 0, 0, -198, 268 )
 	carSmoke:setZRot( 67 )
 	carSmoke:setImage( RegisterImage( 0x40903C2A0783D51 ) )
-	carSmoke:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9227A50BA2B8D21 ) )
+	carSmoke:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	carSmoke:setShaderVector( 0, 0, 4, 0, 0 )
 	carSmoke:setShaderVector( 1, 15, 0, 0, 0 )
 	self:addElement( carSmoke )

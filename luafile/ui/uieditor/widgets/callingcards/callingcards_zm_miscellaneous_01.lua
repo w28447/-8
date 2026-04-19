@@ -31,7 +31,7 @@ CoD[0x71A9D32B58402E5].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local dizzyStars = LUI.UIImage.new( 0, 0, 308, 521, 0, 0, -26, 134 )
 	dizzyStars:setScale( 1.2, 1.2 )
 	dizzyStars:setImage( RegisterImage( 0xC5CC095B9072C36 ) )
-	dizzyStars:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9227A50BA2B8D21 ) )
+	dizzyStars:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	dizzyStars:setShaderVector( 0, 0, 2, 0, 0 )
 	dizzyStars:setShaderVector( 1, 6, 0, 0, 0 )
 	self:addElement( dizzyStars )

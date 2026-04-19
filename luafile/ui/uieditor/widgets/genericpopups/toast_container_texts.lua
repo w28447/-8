@@ -23,7 +23,7 @@ CoD.Toast_Container_Texts.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.NotifText = NotifText
 	
 	local NotifTextMain = LUI.UIText.new( 0, 1, 0, 0, 1, 1, -27, 0 )
-	NotifTextMain:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	NotifTextMain:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	NotifTextMain:setTTF( "ttmussels_regular" )
 	NotifTextMain:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	self:addElement( NotifTextMain )

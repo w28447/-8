@@ -34,7 +34,7 @@ CoD.WarzoneSplitInventory_PC_ImageButton.new = function ( f1_arg0, f1_arg1, f1_a
 	add:setRGB( 0.93, 0.91, 0.81 )
 	add:setAlpha( 0 )
 	add:setImage( RegisterImage( 0x1B97A54D41F4B80 ) )
-	add:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	add:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( add )
 	self.add = add
 	

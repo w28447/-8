@@ -18,7 +18,7 @@ CoD.ReservesRevealDupeIcon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	RerollIconPulse:setRGB( 0.54, 0.87, 0.31 )
 	RerollIconPulse:setAlpha( 0 )
 	RerollIconPulse:setImage( RegisterImage( 0xB259D817A83EFDB ) )
-	RerollIconPulse:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	RerollIconPulse:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( RerollIconPulse )
 	self.RerollIconPulse = RerollIconPulse
 	
@@ -32,7 +32,7 @@ CoD.ReservesRevealDupeIcon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	DupeIconPulse:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
 	DupeIconPulse:setAlpha( 0 )
 	DupeIconPulse:setImage( RegisterImage( 0xF395928C19E9B99 ) )
-	DupeIconPulse:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DupeIconPulse:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DupeIconPulse )
 	self.DupeIconPulse = DupeIconPulse
 	

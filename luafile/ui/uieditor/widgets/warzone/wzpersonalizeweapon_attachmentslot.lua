@@ -41,13 +41,13 @@ CoD.WZPersonalizeWeapon_AttachmentSlot.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local ButtonDisabled = LUI.UIImage.new( 0, 0, 29, 119, 0, 0, 25, 87 )
 	ButtonDisabled:setAlpha( 0 )
-	ButtonDisabled:setImage( RegisterImage( 0x66C228F469B9CE3 ) )
+	ButtonDisabled:setImage( RegisterImage( "uie_ui_menu_cac_attachment_button_disabled" ) )
 	self:addElement( ButtonDisabled )
 	self.ButtonDisabled = ButtonDisabled
 	
 	local Box = LUI.UIImage.new( 0, 0, 0, 292, 0, 0, 0, 148 )
 	Box:setAlpha( 0.5 )
-	Box:setImage( RegisterImage( 0x19675F1F7461977 ) )
+	Box:setImage( RegisterImage( "uie_ui_menu_zombies_cac_special_weapon_slot_box" ) )
 	self:addElement( Box )
 	self.Box = Box
 	
@@ -59,14 +59,14 @@ CoD.WZPersonalizeWeapon_AttachmentSlot.new = function ( f1_arg0, f1_arg1, f1_arg
 	local Brackets = LUI.UIImage.new( 0, 0, 0, 292, 0, 0, 0, 148 )
 	Brackets:setRGB( ColorSet.T8__BEIGE__HEADER.r, ColorSet.T8__BEIGE__HEADER.g, ColorSet.T8__BEIGE__HEADER.b )
 	Brackets:setAlpha( 0 )
-	Brackets:setImage( RegisterImage( 0xB20B2F3E7836983 ) )
+	Brackets:setImage( RegisterImage( "uie_ui_menu_zombies_cac_special_weapon_slot_brackets" ) )
 	self:addElement( Brackets )
 	self.Brackets = Brackets
 	
 	local Brackets2 = LUI.UIImage.new( 0, 0, 0, 292, 0, 0, 0, 148 )
 	Brackets2:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	Brackets2:setImage( RegisterImage( 0xB20B2F3E7836983 ) )
-	Brackets2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD5CA1A25ED87F4F ) )
+	Brackets2:setImage( RegisterImage( "uie_ui_menu_zombies_cac_special_weapon_slot_brackets" ) )
+	Brackets2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	Brackets2:setShaderVector( 0, 0.5, 0.5, 0, 0 )
 	Brackets2:setShaderVector( 1, 0.5, 0, 0, 0 )
 	Brackets2:setShaderVector( 2, 0.5, 0, 0, 0 )
@@ -79,21 +79,21 @@ CoD.WZPersonalizeWeapon_AttachmentSlot.new = function ( f1_arg0, f1_arg1, f1_arg
 	LightFocus:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	LightFocus:setAlpha( 0 )
 	LightFocus:setZRot( 180 )
-	LightFocus:setImage( RegisterImage( 0xA8F7AC00EC1D365 ) )
+	LightFocus:setImage( RegisterImage( "uie_ui_menu_zombies_cac_special_weapon_slot_light_focus" ) )
 	self:addElement( LightFocus )
 	self.LightFocus = LightFocus
 	
 	local Dots = LUI.UIImage.new( 0, 0, 0, 292, 0, 0, 0, 148 )
 	Dots:setRGB( 0.84, 0.1, 0.1 )
 	Dots:setAlpha( 0 )
-	Dots:setImage( RegisterImage( 0x3E4656A8E50D26 ) )
+	Dots:setImage( RegisterImage( "uie_ui_menu_zombies_cac_special_weapon_slot_dots" ) )
 	self:addElement( Dots )
 	self.Dots = Dots
 	
 	local Outline = LUI.UIImage.new( 0, 0, 0, 292, 0, 0, 0, 148 )
 	Outline:setRGB( 0.84, 0.1, 0.1 )
 	Outline:setAlpha( 0 )
-	Outline:setImage( RegisterImage( 0xCA0FF8D92B1E0B4 ) )
+	Outline:setImage( RegisterImage( "uie_ui_menu_zombies_cac_special_weapon_slot_outline" ) )
 	self:addElement( Outline )
 	self.Outline = Outline
 	
@@ -101,14 +101,14 @@ CoD.WZPersonalizeWeapon_AttachmentSlot.new = function ( f1_arg0, f1_arg1, f1_arg
 	Corners:setRGB( 0.84, 0.1, 0.1 )
 	Corners:setAlpha( 0 )
 	Corners:setScale( 1, 0.99 )
-	Corners:setImage( RegisterImage( 0xCD4FF62D01FCF08 ) )
+	Corners:setImage( RegisterImage( "uie_ui_menu_zombies_cac_special_weapon_slot_corners" ) )
 	self:addElement( Corners )
 	self.Corners = Corners
 	
 	local EquippedMarkerTick = LUI.UIImage.new( 0, 0, 128, 288, 0, 0, -2, 158 )
 	EquippedMarkerTick:setAlpha( 0 )
 	EquippedMarkerTick:setZoom( 4 )
-	EquippedMarkerTick:setImage( RegisterImage( 0x65F14AD6E4F3F8F ) )
+	EquippedMarkerTick:setImage( RegisterImage( "uie_ui_menu_zombies_cac_elixir_slot_check" ) )
 	self:addElement( EquippedMarkerTick )
 	self.EquippedMarkerTick = EquippedMarkerTick
 	
@@ -257,7 +257,7 @@ CoD.WZPersonalizeWeapon_AttachmentSlot.__resetProperties = function ( f11_arg0 )
 	f11_arg0.Corners:setAlpha( 0 )
 	f11_arg0.Corners:setScale( 1, 0.99 )
 	f11_arg0.Brackets2:setAlpha( 1 )
-	f11_arg0.Brackets2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD5CA1A25ED87F4F ) )
+	f11_arg0.Brackets2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	f11_arg0.Brackets2:setShaderVector( 0, 0.5, 0.5, 0, 0 )
 	f11_arg0.Brackets2:setShaderVector( 1, 0.5, 0, 0, 0 )
 	f11_arg0.Brackets2:setShaderVector( 2, 0.5, 0, 0, 0 )
@@ -307,7 +307,7 @@ CoD.WZPersonalizeWeapon_AttachmentSlot.__clipsPerState = {
 			f13_arg0.clipFinished( f13_arg0.CustomizeClassAdd )
 			f13_arg0.Brackets2:completeAnimation()
 			f13_arg0.Brackets2:setAlpha( 0 )
-			f13_arg0.Brackets2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD5CA1A25ED87F4F ) )
+			f13_arg0.Brackets2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 			f13_arg0.Brackets2:setShaderVector( 0, 1, 0, 0, 0 )
 			f13_arg0.Brackets2:setShaderVector( 1, 0.5, 0, 0, 0 )
 			f13_arg0.Brackets2:setShaderVector( 2, 0.5, 0, 0, 0 )
@@ -363,7 +363,7 @@ CoD.WZPersonalizeWeapon_AttachmentSlot.__clipsPerState = {
 			
 			f14_arg0.Brackets2:completeAnimation()
 			f14_arg0.Brackets2:setAlpha( 0 )
-			f14_arg0.Brackets2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD5CA1A25ED87F4F ) )
+			f14_arg0.Brackets2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 			f14_arg0.Brackets2:setShaderVector( 0, 0.5, 0.5, 0, 0 )
 			f14_arg0.Brackets2:setShaderVector( 1, 0.5, 0, 0, 0 )
 			f14_arg0.Brackets2:setShaderVector( 2, 0.5, 0, 0, 0 )
@@ -464,7 +464,7 @@ CoD.WZPersonalizeWeapon_AttachmentSlot.__clipsPerState = {
 			
 			f24_arg0.Brackets2:completeAnimation()
 			f24_arg0.Brackets2:setAlpha( 0 )
-			f24_arg0.Brackets2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD5CA1A25ED87F4F ) )
+			f24_arg0.Brackets2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 			f24_arg0.Brackets2:setShaderVector( 0, 1, 0, 0, 0 )
 			f24_arg0.Brackets2:setShaderVector( 1, 0.5, 0, 0, 0 )
 			f24_arg0.Brackets2:setShaderVector( 2, 0.5, 0, 0, 0 )
@@ -678,7 +678,7 @@ CoD.WZPersonalizeWeapon_AttachmentSlot.__clipsPerState = {
 			f42_arg0:setupElementClipCounter( 5 )
 			f42_arg0.Brackets2:completeAnimation()
 			f42_arg0.Brackets2:setAlpha( 0 )
-			f42_arg0.Brackets2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD5CA1A25ED87F4F ) )
+			f42_arg0.Brackets2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 			f42_arg0.Brackets2:setShaderVector( 0, 1, 0, 0, 0 )
 			f42_arg0.Brackets2:setShaderVector( 1, 0.5, 0, 0, 0 )
 			f42_arg0.Brackets2:setShaderVector( 2, 0.5, 0, 0, 0 )
@@ -707,7 +707,7 @@ CoD.WZPersonalizeWeapon_AttachmentSlot.__clipsPerState = {
 			f43_arg0.clipFinished( f43_arg0.CustomizeClassAdd )
 			f43_arg0.Brackets2:completeAnimation()
 			f43_arg0.Brackets2:setAlpha( 0 )
-			f43_arg0.Brackets2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD5CA1A25ED87F4F ) )
+			f43_arg0.Brackets2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 			f43_arg0.Brackets2:setShaderVector( 0, 1, 0, 0, 0 )
 			f43_arg0.Brackets2:setShaderVector( 1, 0.5, 0, 0, 0 )
 			f43_arg0.Brackets2:setShaderVector( 2, 0.5, 0, 0, 0 )
@@ -748,7 +748,7 @@ CoD.WZPersonalizeWeapon_AttachmentSlot.__clipsPerState = {
 			f44_arg0.clipFinished( f44_arg0.CustomizeClassAdd )
 			f44_arg0.Brackets2:completeAnimation()
 			f44_arg0.Brackets2:setAlpha( 0 )
-			f44_arg0.Brackets2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD5CA1A25ED87F4F ) )
+			f44_arg0.Brackets2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 			f44_arg0.Brackets2:setShaderVector( 0, 1, 0, 0, 0 )
 			f44_arg0.Brackets2:setShaderVector( 1, 0.5, 0, 0, 0 )
 			f44_arg0.Brackets2:setShaderVector( 2, 0.5, 0, 0, 0 )
@@ -832,7 +832,7 @@ CoD.WZPersonalizeWeapon_AttachmentSlot.__clipsPerState = {
 			f51_arg0.clipFinished( f51_arg0.CustomizeClassAdd )
 			f51_arg0.Brackets2:completeAnimation()
 			f51_arg0.Brackets2:setAlpha( 0 )
-			f51_arg0.Brackets2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD5CA1A25ED87F4F ) )
+			f51_arg0.Brackets2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 			f51_arg0.Brackets2:setShaderVector( 0, 1, 0, 0, 0 )
 			f51_arg0.Brackets2:setShaderVector( 1, 0.5, 0, 0, 0 )
 			f51_arg0.Brackets2:setShaderVector( 2, 0.5, 0, 0, 0 )

@@ -16,7 +16,7 @@ CoD.CallingCards_Asset_techGunner_Helicopter.new = function ( f1_arg0, f1_arg1, 
 	local BulletUp = LUI.UIImage.new( 0, 0, 571, 683, 0, 0, -85, 155 )
 	BulletUp:setScale( 1.05, 1.05 )
 	BulletUp:setImage( RegisterImage( 0x8BEE6ABB9E0675E ) )
-	BulletUp:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD8EA9FE9B0BCF75 ) )
+	BulletUp:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	BulletUp:setShaderVector( 0, 1, 1, 0, 0 )
 	BulletUp:setShaderVector( 1, 0, 0.5, 0, 0 )
 	self:addElement( BulletUp )

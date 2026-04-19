@@ -25,7 +25,7 @@ LUI.createMenu.TimelineEditor = function ( f1_arg0, f1_arg1 )
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.9 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -53,7 +53,7 @@ LUI.createMenu.TimelineEditor = function ( f1_arg0, f1_arg1 )
 	
 	local BlackBG = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BlackBG:setAlpha( 0 )
-	BlackBG:setImage( RegisterImage( 0x4BF88A437F4C579 ) )
+	BlackBG:setImage( RegisterImage( "uie_fe_cp_background" ) )
 	self:addElement( BlackBG )
 	self.BlackBG = BlackBG
 	
@@ -271,10 +271,10 @@ LUI.createMenu.TimelineEditor = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f20_arg0, f20_arg1, f20_arg2 )
 		if not IsTimelineEditorInMoveState( f20_arg2 ) then
-			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		elseif IsTimelineEditorInMoveState( f20_arg2 ) then
-			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0xC2E92C54C2BE289, nil, nil )
+			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/cancel", nil, nil )
 			return true
 		else
 			return false
@@ -288,7 +288,7 @@ LUI.createMenu.TimelineEditor = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f22_arg0, f22_arg1, f22_arg2 )
 		if CoD.ModelUtility.IsGlobalModelValueTrue( "demo.showFilmOptionsSidebar" ) then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

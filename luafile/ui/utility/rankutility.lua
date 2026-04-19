@@ -134,7 +134,7 @@ end
 CoD.RankUtility.ConvertCurrentRankModeToString = function ( f10_arg0 )
 	local f10_local0 = CoD.RankUtility.GetCurrentRankMode()
 	if f10_local0 == CoD.RankUtility.RankMode.None then
-		return 0x2C79EA24AB1A2BA
+		return "null/empty"
 	elseif f10_local0 == CoD.RankUtility.RankMode.Arena then
 		return 0x7D527CD96A3419
 	else
@@ -270,13 +270,13 @@ end
 
 CoD.RankUtility.GetXUIDRankIconForMode = function ( f28_arg0, f28_arg1 )
 	if f28_arg0 == Enum.eModes[0xB22E0240605CFFE] then
-		return 0x7615068F50B3D66
+		return "blacktransparent"
 	else
 		local f28_local0 = Engine[0x19FAC7D9E55031E]( f28_arg1, f28_arg0 )
 		if f28_local0.paragonIcon and f28_local0.paragonIcon ~= 0x0 then
 			return f28_local0.paragonIcon
 		else
-			return f28_local0.rankIcon or 0x7615068F50B3D66
+			return f28_local0.rankIcon or "blacktransparent"
 		end
 	end
 end
@@ -497,11 +497,11 @@ CoD.RankUtility.CachedRankInfo = {
 		wz = 0,
 		zm = 0,
 		arena = 0,
-		mpIcon = 0x7615068F50B3D66,
-		wzIcon = 0x7615068F50B3D66,
-		zmIcon = 0x7615068F50B3D66,
-		arenaIcon = 0x7615068F50B3D66,
-		arenaSkillDivisionIcon = 0x7615068F50B3D66
+		mpIcon = "blacktransparent",
+		wzIcon = "blacktransparent",
+		zmIcon = "blacktransparent",
+		arenaIcon = "blacktransparent",
+		arenaSkillDivisionIcon = "blacktransparent"
 	}
 }
 CoD.RankUtility.CachedRankFieldForRankMode = {
@@ -608,7 +608,7 @@ DataSourceHelpers.GlobalDataSourceSetup( "ClientsRankInfo", "ClientsRankInfo", f
 	local f47_local0 = {}
 	CoD.RankUtility.CreateOrUpdateRankInfoModel( Engine[0x5065E759595C457]( LuaDefine.INVALID_XUID_X64 ), "none", {
 		displayRank = "",
-		rankIcon = 0x7615068F50B3D66,
+		rankIcon = "blacktransparent",
 		arenaLeaguePlayFirstSubdivisionRankStreak = 0
 	} )
 end, false )

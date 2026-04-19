@@ -58,7 +58,7 @@ CoD.ScoreboardGameStatus.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	self.Corner = Corner
 	
 	local CornerAdd = CoD.TabbedScoreboardLayoutCorner.new( f1_arg0, f1_arg1, 0, 0, 466, 1451, 0, 0, 239.5, 711.5 )
-	CornerAdd:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	CornerAdd:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CornerAdd )
 	self.CornerAdd = CornerAdd
 	

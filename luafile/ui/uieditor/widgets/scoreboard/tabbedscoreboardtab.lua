@@ -17,7 +17,7 @@ CoD.TabbedScoreboardTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local TopBar = LUI.UIImage.new( -0.02, 1.03, 0, 0, 1, 1, -7, 2 )
 	TopBar:setAlpha( 0.1 )
 	TopBar:setImage( RegisterImage( 0xCE32B5C3D0E9039 ) )
-	TopBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	TopBar:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TopBar )
 	self.TopBar = TopBar
 	

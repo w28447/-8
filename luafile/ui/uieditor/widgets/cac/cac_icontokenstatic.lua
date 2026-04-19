@@ -11,7 +11,7 @@ CoD.cac_IconTokenStatic.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local imgTokenBox = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	imgTokenBox:setAlpha( 0 )
 	imgTokenBox:setImage( RegisterImage( 0xACB6BFF8B3FFB88 ) )
-	imgTokenBox:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	imgTokenBox:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( imgTokenBox )
 	self.imgTokenBox = imgTokenBox
 	
@@ -30,7 +30,7 @@ CoD.cac_IconTokenStatic.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local imgIconToken = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	imgIconToken:setAlpha( 0.92 )
-	imgIconToken:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	imgIconToken:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( imgIconToken )
 	self.imgIconToken = imgIconToken
 	
@@ -44,7 +44,7 @@ CoD.cac_IconTokenStatic.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	glow:setRGB( 1, 0.48, 0 )
 	glow:setAlpha( RandomAddPercent( -15, 0.26 ) )
 	glow:setImage( RegisterImage( 0x1078C36A022A4FE ) )
-	glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( glow )
 	self.glow = glow
 	

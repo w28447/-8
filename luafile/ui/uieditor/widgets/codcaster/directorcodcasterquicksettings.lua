@@ -44,7 +44,7 @@ CoD.DirectorCodCasterQuickSettings.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 		end
 	end, function ( f4_arg0, f4_arg1, f4_arg2 )
 		if InFrontend() then
-			CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+			CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		else
 			return false

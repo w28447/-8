@@ -36,7 +36,7 @@ CoD.systemOverlay_FreeCursor_Full_Layout.new = function ( f1_arg0, f1_arg1, f1_a
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 0, 0, 1920, 0.09, 0.09, 184, 667 )
 	NoiseTiledBacking:setAlpha( 0.65 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )

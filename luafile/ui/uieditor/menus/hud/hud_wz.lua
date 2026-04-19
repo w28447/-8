@@ -958,7 +958,7 @@ LUI.createMenu.Hud_WZ = function ( f2_arg0, f2_arg1 )
 		end
 	end, function ( f94_arg0, f94_arg1, f94_arg2 )
 		if IsPC() and IsMouseOrKeyboard( f94_arg2 ) and CoD.GameEndScoreUtility.CanShowWarzoneKillcam( f94_arg2 ) and not IsVisibilityBitSet( f94_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not IsDemoPlaying() and not IsInDefaultState( self.GameEndScoreWZ ) and CoD.GameEndScoreUtility.HasViewedInGameReport( f94_arg2 ) then
-			CoD.Menu.SetButtonLabel( f94_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0xA8BAC035CE51600, nil, "ui_contextual_1" )
+			CoD.Menu.SetButtonLabel( f94_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "wz/deathcam", nil, "ui_contextual_1" )
 			return true
 		else
 			return false
@@ -1092,7 +1092,7 @@ LUI.createMenu.Hud_WZ = function ( f2_arg0, f2_arg1 )
 		end
 	end, function ( f106_arg0, f106_arg1, f106_arg2 )
 		if IsPC() and CanReportPlayerEndGameWarzone( self, f106_arg2 ) and not IsElementInState( self.GameEndScoreWZ, "DefaultState" ) then
-			CoD.Menu.SetButtonLabel( f106_arg1, Enum.LUIButton[0x6CE8023188D673F], 0x74834ABE9827A3, nil, "ui_remove" )
+			CoD.Menu.SetButtonLabel( f106_arg1, Enum.LUIButton[0x6CE8023188D673F], "menu/report_player", nil, "ui_remove" )
 			return true
 		else
 			return false

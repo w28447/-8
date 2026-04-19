@@ -33,7 +33,7 @@ CoD.CommonCheckbox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local Empty = LUI.UIImage.new( 0, 0, -4, 44, 0, 0, -4, 44 )
 	Empty:setScale( 0.67, 0.67 )
 	Empty:setImage( RegisterImage( 0xF53DA84C7B770BF ) )
-	Empty:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Empty:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Empty )
 	self.Empty = Empty
 	
@@ -53,13 +53,13 @@ CoD.CommonCheckbox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	Glow:setRGB( 0.88, 0.8, 0.45 )
 	Glow:setAlpha( 0 )
 	Glow:setImage( RegisterImage( 0x1078C36A022A4FE ) )
-	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
 	
 	local CornerDots = LUI.UIImage.new( 0, 0, 4, 36, 0, 0, 4.5, 36.5 )
 	CornerDots:setScale( 1.5, 1.5 )
-	CornerDots:setImage( RegisterImage( 0x1735E8FCAB0ED9 ) )
+	CornerDots:setImage( RegisterImage( "uie_ui_menu_cac_allocation_pip_dots" ) )
 	self:addElement( CornerDots )
 	self.CornerDots = CornerDots
 	

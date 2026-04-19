@@ -33,7 +33,7 @@ CoD.BountyHunterPlayerMoney.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local StretchableFrameThin = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	StretchableFrameThin:setImage( RegisterImage( 0x36F08D3F7171B77 ) )
-	StretchableFrameThin:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	StretchableFrameThin:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	StretchableFrameThin:setShaderVector( 0, 0, 0, 0, 0 )
 	StretchableFrameThin:setupNineSliceShader( 22, 22 )
 	self:addElement( StretchableFrameThin )

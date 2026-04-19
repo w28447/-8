@@ -53,7 +53,7 @@ CoD.DirectorCustomizeClassZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		CoD.CACUtility.OpenCACOverlay( self, f6_arg1, f6_arg2, "ZMStartWeaponSelect", self, "zmStartWeapon" )
 		return true
 	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( startWeapon )
@@ -78,7 +78,7 @@ CoD.DirectorCustomizeClassZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		CoD.CACUtility.OpenCACOverlay( self, f10_arg1, f10_arg2, "ZMEquipmentSelect", self, "primarygrenade" )
 		return true
 	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( primarygrenade )
@@ -104,7 +104,7 @@ CoD.DirectorCustomizeClassZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		CoD.CACUtility.OpenCACOverlay( self, f14_arg1, f14_arg2, "ZMSpecialWeaponSelect", self, "herogadget" )
 		return true
 	end, function ( f15_arg0, f15_arg1, f15_arg2 )
-		CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( specialWeapon )
@@ -167,7 +167,7 @@ CoD.DirectorCustomizeClassZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		end
 	end, function ( f24_arg0, f24_arg1, f24_arg2 )
 		if IsLive() then
-			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -247,7 +247,7 @@ CoD.DirectorCustomizeClassZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		CoD.CACUtility.OpenCACOverlay( self, f33_arg1, f33_arg2, "ZMPerkSelect", self, "specialty" )
 		return true
 	end, function ( f34_arg0, f34_arg1, f34_arg2 )
-		CoD.Menu.SetButtonLabel( f34_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f34_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	PerkAltars:linkToElementModel( self, "classNum", true, function ( model )

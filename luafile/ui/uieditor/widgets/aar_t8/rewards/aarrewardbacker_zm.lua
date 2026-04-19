@@ -10,7 +10,7 @@ CoD.AARRewardBacker_ZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local CroppedZmBacking2 = LUI.UIImage.new( 0, 0, -1, 412, 0, 0, 15.5, 771.5 )
 	CroppedZmBacking2:setAlpha( 0.5 )
-	CroppedZmBacking2:setImage( RegisterImage( 0xA8FC401C1972BDE ) )
+	CroppedZmBacking2:setImage( RegisterImage( "uie_ui_hud_zm_aar_reward_bg" ) )
 	CroppedZmBacking2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
 	CroppedZmBacking2:setShaderVector( 0, 0, 0, 0, 0 )
 	CroppedZmBacking2:setShaderVector( 1, 1, 1, 0, 0 )
@@ -42,7 +42,7 @@ CoD.AARRewardBacker_ZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local TiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 20, 0 )
 	TiledBacking:setAlpha( 0.2 )
-	TiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking:setupNineSliceShader( 196, 88 )
@@ -50,7 +50,7 @@ CoD.AARRewardBacker_ZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.TiledBacking = TiledBacking
 	
 	local CroppedZmBacking = LUI.UIImage.new( 0, 0, -1, 412, 0, 0, 15.5, 771.5 )
-	CroppedZmBacking:setImage( RegisterImage( 0xA8FC401C1972BDE ) )
+	CroppedZmBacking:setImage( RegisterImage( "uie_ui_hud_zm_aar_reward_bg" ) )
 	CroppedZmBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
 	CroppedZmBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	CroppedZmBacking:setShaderVector( 1, 1, 1, 0, 0 )
@@ -64,13 +64,13 @@ CoD.AARRewardBacker_ZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.BotBar = BotBar
 	
 	local TopBar = LUI.UIImage.new( 0, 0, -6, 418, 0, 0, -9, 15 )
-	TopBar:setImage( RegisterImage( 0x45C555C45B1E6E4 ) )
+	TopBar:setImage( RegisterImage( "uie_ui_hud_zm_aar_top_bar" ) )
 	self:addElement( TopBar )
 	self.TopBar = TopBar
 	
 	local YellowLine = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 15.5, 23.5 )
 	YellowLine:setImage( RegisterImage( 0xE6E505307F7B8D7 ) )
-	YellowLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	YellowLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	YellowLine:setShaderVector( 0, 0, 0, 0, 0 )
 	YellowLine:setupNineSliceShader( 3, 60 )
 	self:addElement( YellowLine )

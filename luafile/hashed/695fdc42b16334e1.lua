@@ -23,7 +23,7 @@ CoD.ZMSpecialWeapon_StageInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local CircleON = LUI.UIImage.new( 0, 0, -11, 53, 0, 0, -12, 52 )
 	CircleON:setRGB( 0.58, 0.85, 1 )
 	CircleON:setImage( RegisterImage( 0xF061C994A027B01 ) )
-	CircleON:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	CircleON:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CircleON )
 	self.CircleON = CircleON
 	

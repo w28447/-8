@@ -55,7 +55,7 @@ CoD.StartMenu_Options_Frame_Controls.new = function ( f1_arg0, f1_arg1, f1_arg2,
 		end
 	end, function ( f5_arg0, f5_arg1, f5_arg2 )
 		if HasListAction( f5_arg0, f5_arg2 ) then
-			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

@@ -24,13 +24,13 @@ CoD.PC_Korea_Event_Month_Reward.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.Reward = Reward
 	
 	local Lock = LUI.UIImage.new( 0.5, 0.5, -16, 20, 0.5, 0.5, 56, 92 )
-	Lock:setImage( RegisterImage( 0xB8AD8D12CEB707D ) )
+	Lock:setImage( RegisterImage( "uie_icon_locks_lock_01" ) )
 	self:addElement( Lock )
 	self.Lock = Lock
 	
 	local LockLines = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	LockLines:setImage( RegisterImage( 0x72A54FC9136F712 ) )
-	LockLines:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	LockLines:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	LockLines:setShaderVector( 0, 0, 0, 0, 0 )
 	LockLines:setupNineSliceShader( 50, 100 )
 	self:addElement( LockLines )
@@ -206,7 +206,7 @@ CoD.PC_Korea_Event_Month_Reward.__clipsPerState = {
 			f13_arg0.clipFinished( f13_arg0.ExplanationText )
 			f13_arg0.YellowOverlay:completeAnimation()
 			f13_arg0.YellowOverlay:setAlpha( 0 )
-			f13_arg0.YellowOverlay:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+			f13_arg0.YellowOverlay:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 			f13_arg0.clipFinished( f13_arg0.YellowOverlay )
 		end
 	}

@@ -97,7 +97,7 @@ LUI.createMenu.StartMenu_Options_CoDAccount_NewAccount = function ( f1_arg0, f1_
 		OpenOverlay( self, "LegalTextViewerMenu", f8_arg2 )
 		return true
 	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( DirectorSelectButtonMiniInternal )
@@ -135,7 +135,7 @@ LUI.createMenu.StartMenu_Options_CoDAccount_NewAccount = function ( f1_arg0, f1_
 		OpenOverlay( self, "LegalTextViewerMenu", f13_arg2 )
 		return true
 	end, function ( f14_arg0, f14_arg1, f14_arg2 )
-		CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( DirectorSelectButtonMiniInternal2 )
@@ -158,7 +158,7 @@ LUI.createMenu.StartMenu_Options_CoDAccount_NewAccount = function ( f1_arg0, f1_
 		GoBack( self, f17_arg2 )
 		return true
 	end, function ( f18_arg0, f18_arg1, f18_arg2 )
-		CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	self:subscribeToGlobalModel( f1_arg0, "UNOAccountInfo", "iTransactionResult", function ( model )

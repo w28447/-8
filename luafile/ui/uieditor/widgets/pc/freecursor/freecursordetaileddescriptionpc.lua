@@ -13,7 +13,7 @@ CoD.freeCursorDetailedDescriptionPC.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local BG = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BG:setImage( RegisterImage( 0x31AC999EEEB3C99 ) )
-	BG:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	BG:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	BG:setShaderVector( 0, 0, 0, 0, 0 )
 	BG:setupNineSliceShader( 6, 6 )
 	self:addElement( BG )

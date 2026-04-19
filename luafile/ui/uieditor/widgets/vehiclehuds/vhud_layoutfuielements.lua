@@ -10,14 +10,14 @@ CoD.vhud_layoutFuiElements.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local FuiArrowLeft = LUI.UIImage.new( 0, 0, 35, 61, 0.5, 0.5, 52, 78 )
 	FuiArrowLeft:setZRot( 90 )
 	FuiArrowLeft:setImage( RegisterImage( 0x3213403D5FE9F16 ) )
-	FuiArrowLeft:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	FuiArrowLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FuiArrowLeft )
 	self.FuiArrowLeft = FuiArrowLeft
 	
 	local FuiArrowRight = LUI.UIImage.new( 1, 1, -58, -32, 0.5, 0.5, 52, 78 )
 	FuiArrowRight:setZRot( -90 )
 	FuiArrowRight:setImage( RegisterImage( 0x3213403D5FE9F16 ) )
-	FuiArrowRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	FuiArrowRight:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FuiArrowRight )
 	self.FuiArrowRight = FuiArrowRight
 	
@@ -88,13 +88,13 @@ CoD.vhud_layoutFuiElements.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local MapName = LUI.UIText.new( 0, 0, 50, 250, 0, 0, 26, 36 )
 	MapName:setAlpha( 0.5 )
-	MapName:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	MapName:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	MapName:setTTF( "dinnext_regular" )
 	MapName:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	MapName:setShaderVector( 0, 0.6, 0, 0, 0 )
 	MapName:setShaderVector( 1, -0.44, 0, 0, 0 )
 	MapName:setShaderVector( 2, 0.7, 0, 0, 0 )
-	MapName:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	MapName:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	MapName:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	MapName:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
 	self:addElement( MapName )

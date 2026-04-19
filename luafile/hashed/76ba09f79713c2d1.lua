@@ -45,7 +45,7 @@ CoD.DossierVoDPreview.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local Title = LUI.UIText.new( 0, 0, 0, 510, 0, 0, 303, 339 )
 	Title:setRGB( 0.92, 0.89, 0.72 )
-	Title:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	Title:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	Title:setTTF( "ttmussels_regular" )
 	Title:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Title:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )
@@ -79,7 +79,7 @@ CoD.DossierVoDPreview.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local Desc = LUI.UIText.new( 0, 0, 0, 510, 0, 0, 347, 377 )
 	Desc:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	Desc:setAlpha( 0 )
-	Desc:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	Desc:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	Desc:setTTF( "ttmussels_regular" )
 	Desc:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Desc:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

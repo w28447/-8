@@ -26,7 +26,7 @@ CoD.ZMLoadoutPreviewLobbyClient.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local TiledBacking = LUI.UIImage.new( -0.02, 1.02, 1, -1, 0.18, 1.01, -71, -73 )
 	TiledBacking:setAlpha( 0.5 )
-	TiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking:setupNineSliceShader( 196, 88 )
@@ -51,7 +51,7 @@ CoD.ZMLoadoutPreviewLobbyClient.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 			modelName = "perk4index"
 		} )
 	end )
-	Perk4.Name:setText( LocalizeToUpperString( 0x93E719493E9E18F ) )
+	Perk4.Name:setText( LocalizeToUpperString( "menu/new" ) )
 	Perk4:linkToElementModel( self, "loadout", false, function ( model )
 		Perk4:setModel( model, f1_arg1 )
 	end )
@@ -80,7 +80,7 @@ CoD.ZMLoadoutPreviewLobbyClient.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.Perk4 = Perk4
 	
 	local Perk3 = CoD.ZMLoadoutPreviewIndexItem.new( f1_arg0, f1_arg1, 0, 0, 136, 204, 0, 0, 310, 378 )
-	Perk3.Name:setText( LocalizeToUpperString( 0x93E719493E9E18F ) )
+	Perk3.Name:setText( LocalizeToUpperString( "menu/new" ) )
 	Perk3:linkToElementModel( self, "loadout.perk3Index", true, function ( model )
 		local f8_local0 = model:get()
 		if f8_local0 ~= nil then
@@ -106,7 +106,7 @@ CoD.ZMLoadoutPreviewLobbyClient.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.Perk3 = Perk3
 	
 	local Perk2 = CoD.ZMLoadoutPreviewIndexItem.new( f1_arg0, f1_arg1, 0, 0, 68, 136, 0, 0, 310, 378 )
-	Perk2.Name:setText( LocalizeToUpperString( 0x93E719493E9E18F ) )
+	Perk2.Name:setText( LocalizeToUpperString( "menu/new" ) )
 	Perk2:linkToElementModel( self, "loadout.perk2Index", true, function ( model )
 		local f11_local0 = model:get()
 		if f11_local0 ~= nil then
@@ -132,7 +132,7 @@ CoD.ZMLoadoutPreviewLobbyClient.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.Perk2 = Perk2
 	
 	local Perk1 = CoD.ZMLoadoutPreviewIndexItem.new( f1_arg0, f1_arg1, 0, 0, 0, 68, 0, 0, 310, 378 )
-	Perk1.Name:setText( LocalizeToUpperString( 0x93E719493E9E18F ) )
+	Perk1.Name:setText( LocalizeToUpperString( "menu/new" ) )
 	Perk1:linkToElementModel( self, "loadout.perk1Index", true, function ( model )
 		local f14_local0 = model:get()
 		if f14_local0 ~= nil then
@@ -159,7 +159,7 @@ CoD.ZMLoadoutPreviewLobbyClient.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local BGB4 = CoD.ZMLoadoutPreviewIndexItem.new( f1_arg0, f1_arg1, 0, 0, 204, 272, 0, 0, 242, 310 )
 	BGB4.itemImage:setScale( 1.2, 1.2 )
-	BGB4.Name:setText( LocalizeToUpperString( 0x93E719493E9E18F ) )
+	BGB4.Name:setText( LocalizeToUpperString( "menu/new" ) )
 	BGB4:linkToElementModel( self, "loadout.bgb4Index", true, function ( model )
 		local f17_local0 = model:get()
 		if f17_local0 ~= nil then
@@ -186,7 +186,7 @@ CoD.ZMLoadoutPreviewLobbyClient.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local BGB3 = CoD.ZMLoadoutPreviewIndexItem.new( f1_arg0, f1_arg1, 0, 0, 136, 204, 0, 0, 242, 310 )
 	BGB3.itemImage:setScale( 1.2, 1.2 )
-	BGB3.Name:setText( LocalizeToUpperString( 0x93E719493E9E18F ) )
+	BGB3.Name:setText( LocalizeToUpperString( "menu/new" ) )
 	BGB3:linkToElementModel( self, "loadout.bgb3Index", true, function ( model )
 		local f20_local0 = model:get()
 		if f20_local0 ~= nil then
@@ -213,7 +213,7 @@ CoD.ZMLoadoutPreviewLobbyClient.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local BGB2 = CoD.ZMLoadoutPreviewIndexItem.new( f1_arg0, f1_arg1, 0, 0, 68, 136, 0, 0, 242, 310 )
 	BGB2.itemImage:setScale( 1.2, 1.2 )
-	BGB2.Name:setText( LocalizeToUpperString( 0x93E719493E9E18F ) )
+	BGB2.Name:setText( LocalizeToUpperString( "menu/new" ) )
 	BGB2:linkToElementModel( self, "loadout.bgb2Index", true, function ( model )
 		local f23_local0 = model:get()
 		if f23_local0 ~= nil then
@@ -240,7 +240,7 @@ CoD.ZMLoadoutPreviewLobbyClient.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local BGB1 = CoD.ZMLoadoutPreviewIndexItem.new( f1_arg0, f1_arg1, 0, 0, 0, 68, 0, 0, 242, 310 )
 	BGB1.itemImage:setScale( 1.2, 1.2 )
-	BGB1.Name:setText( LocalizeToUpperString( 0x93E719493E9E18F ) )
+	BGB1.Name:setText( LocalizeToUpperString( "menu/new" ) )
 	BGB1:linkToElementModel( self, "loadout.bgb1Index", true, function ( model )
 		local f26_local0 = model:get()
 		if f26_local0 ~= nil then
@@ -307,7 +307,7 @@ CoD.ZMLoadoutPreviewLobbyClient.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local Equipment = CoD.ZMLoadoutPreviewIndexItem.new( f1_arg0, f1_arg1, 0, 0, 136, 272, 0, 0, 100, 160 )
 	Equipment.itemImage:setScale( 0.84, 0.84 )
-	Equipment.Name:setText( LocalizeToUpperString( 0x93E719493E9E18F ) )
+	Equipment.Name:setText( LocalizeToUpperString( "menu/new" ) )
 	Equipment:linkToElementModel( self, "loadout.primaryGrenadeItemIndex", true, function ( model )
 		local f34_local0 = model:get()
 		if f34_local0 ~= nil then
@@ -334,7 +334,7 @@ CoD.ZMLoadoutPreviewLobbyClient.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local StartWeapon = CoD.ZMLoadoutPreviewIndexItem.new( f1_arg0, f1_arg1, 0, 0, 0, 136, 0, 0, 100, 160 )
 	StartWeapon.itemImage:setScale( 0.9, 0.9 )
-	StartWeapon.Name:setText( LocalizeToUpperString( 0x93E719493E9E18F ) )
+	StartWeapon.Name:setText( LocalizeToUpperString( "menu/new" ) )
 	StartWeapon:linkToElementModel( self, "loadout.primaryWeaponItemIndex", true, function ( model )
 		local f37_local0 = model:get()
 		if f37_local0 ~= nil then
@@ -361,7 +361,7 @@ CoD.ZMLoadoutPreviewLobbyClient.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local SpecialWeapon = CoD.ZMLoadoutPreviewIndexItem.new( f1_arg0, f1_arg1, 0, 0, 0, 272, 0, 0, 0, 100 )
 	SpecialWeapon.itemImage:setScale( 1.66, 1.66 )
-	SpecialWeapon.Name:setText( LocalizeToUpperString( 0x93E719493E9E18F ) )
+	SpecialWeapon.Name:setText( LocalizeToUpperString( "menu/new" ) )
 	SpecialWeapon:linkToElementModel( self, "loadout.heroGadgetItemIndex", true, function ( model )
 		local f40_local0 = model:get()
 		if f40_local0 ~= nil then
@@ -387,12 +387,12 @@ CoD.ZMLoadoutPreviewLobbyClient.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.SpecialWeapon = SpecialWeapon
 	
 	local Metalbar = LUI.UIImage.new( 0, 0, -14, 286, 0, 0, -13.5, 2.5 )
-	Metalbar:setImage( RegisterImage( 0xF6761ADA7C49071 ) )
+	Metalbar:setImage( RegisterImage( "uie_ui_menu_zm_metal_bar" ) )
 	self:addElement( Metalbar )
 	self.Metalbar = Metalbar
 	
 	local Metalbar2 = LUI.UIImage.new( 0, 0, -14, 286, 0, 0, 376.5, 392.5 )
-	Metalbar2:setImage( RegisterImage( 0xF6761ADA7C49071 ) )
+	Metalbar2:setImage( RegisterImage( "uie_ui_menu_zm_metal_bar" ) )
 	self:addElement( Metalbar2 )
 	self.Metalbar2 = Metalbar2
 	

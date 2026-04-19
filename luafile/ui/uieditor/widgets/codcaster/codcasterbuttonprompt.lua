@@ -21,7 +21,7 @@ CoD.CodCasterButtonPrompt.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.progressRing = progressRing
 	
 	local buttonPromptImage = LUI.UIImage.new( 0, 0, 42, 72, 0, 0, 9, 39 )
-	buttonPromptImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x67D1E3A3D2D1BF ) )
+	buttonPromptImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_saturation_normal" ) )
 	buttonPromptImage:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( buttonPromptImage )
 	self.buttonPromptImage = buttonPromptImage
@@ -178,7 +178,7 @@ CoD.CodCasterButtonPrompt.__resetProperties = function ( f18_arg0 )
 	f18_arg0.KeyPrompt:completeAnimation()
 	f18_arg0.buttonPromptImage:setRGB( 1, 1, 1 )
 	f18_arg0.buttonPromptImage:setAlpha( 1 )
-	f18_arg0.buttonPromptImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x67D1E3A3D2D1BF ) )
+	f18_arg0.buttonPromptImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_saturation_normal" ) )
 	f18_arg0.buttonPromptImage:setShaderVector( 0, 1, 0, 0, 0 )
 	f18_arg0.label:setLeftRight( 0, 0, 108, 177 )
 	f18_arg0.label:setRGB( 1, 1, 1 )
@@ -214,7 +214,7 @@ CoD.CodCasterButtonPrompt.__clipsPerState = {
 			f20_arg0.buttonPromptImage:completeAnimation()
 			f20_arg0.buttonPromptImage:setRGB( 0.5, 0.5, 0.5 )
 			f20_arg0.buttonPromptImage:setAlpha( 0.5 )
-			f20_arg0.buttonPromptImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x67D1E3A3D2D1BF ) )
+			f20_arg0.buttonPromptImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_saturation_normal" ) )
 			f20_arg0.buttonPromptImage:setShaderVector( 0, 0, 0, 0, 0 )
 			f20_arg0.clipFinished( f20_arg0.buttonPromptImage )
 			f20_arg0.label:completeAnimation()

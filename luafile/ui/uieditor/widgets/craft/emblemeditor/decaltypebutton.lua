@@ -20,7 +20,7 @@ CoD.DecalTypeButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.8 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -47,7 +47,7 @@ CoD.DecalTypeButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	self.DecalTypeName = DecalTypeName
 	
 	local Background = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	Background:setImage( RegisterImage( 0x7615068F50B3D66 ) )
+	Background:setImage( RegisterImage( "blacktransparent" ) )
 	self:addElement( Background )
 	self.Background = Background
 	

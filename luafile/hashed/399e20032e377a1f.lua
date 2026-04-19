@@ -30,7 +30,7 @@ CoD.FallMeter_ParachuteDeployIndicator.new = function ( f1_arg0, f1_arg1, f1_arg
 	local Glow = LUI.UIImage.new( 0.5, 0.5, -50, 50, 0.5, 0.5, -18, 18 )
 	Glow:setRGB( 0.1, 0.74, 0.39 )
 	Glow:setImage( RegisterImage( 0x658B1F463FE7860 ) )
-	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
 	
@@ -52,7 +52,7 @@ CoD.FallMeter_ParachuteDeployIndicator.new = function ( f1_arg0, f1_arg1, f1_arg
 	ArrowBloomL:setRGB( 0.1, 0.74, 0.39 )
 	ArrowBloomL:setAlpha( 0.3 )
 	ArrowBloomL:setImage( RegisterImage( 0x658B1F463FE7860 ) )
-	ArrowBloomL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	ArrowBloomL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ArrowBloomL )
 	self.ArrowBloomL = ArrowBloomL
 	
@@ -60,7 +60,7 @@ CoD.FallMeter_ParachuteDeployIndicator.new = function ( f1_arg0, f1_arg1, f1_arg
 	ArrowGlowL3:setRGB( 0.1, 0.74, 0.39 )
 	ArrowGlowL3:setScale( 1.4, 1.4 )
 	ArrowGlowL3:setImage( RegisterImage( 0x9D7E0FF6D412FC4 ) )
-	ArrowGlowL3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	ArrowGlowL3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ArrowGlowL3 )
 	self.ArrowGlowL3 = ArrowGlowL3
 	
@@ -85,7 +85,7 @@ CoD.FallMeter_ParachuteDeployIndicator.new = function ( f1_arg0, f1_arg1, f1_arg
 	ArrowR3:setZRot( 180 )
 	ArrowR3:setScale( 1.4, 1.4 )
 	ArrowR3:setImage( RegisterImage( 0x9D7E0FF6D412FC4 ) )
-	ArrowR3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	ArrowR3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ArrowR3 )
 	self.ArrowR3 = ArrowR3
 	
@@ -93,7 +93,7 @@ CoD.FallMeter_ParachuteDeployIndicator.new = function ( f1_arg0, f1_arg1, f1_arg
 	ArrowBloomR:setRGB( 0.1, 0.74, 0.39 )
 	ArrowBloomR:setAlpha( 0.3 )
 	ArrowBloomR:setImage( RegisterImage( 0x658B1F463FE7860 ) )
-	ArrowBloomR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	ArrowBloomR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ArrowBloomR )
 	self.ArrowBloomR = ArrowBloomR
 	

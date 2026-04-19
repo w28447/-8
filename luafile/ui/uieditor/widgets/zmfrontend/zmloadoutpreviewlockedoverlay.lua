@@ -25,7 +25,7 @@ CoD.ZMLoadoutPreviewLockedOverlay.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setRGB( 0.65, 0.65, 0.65 )
 	NoiseTiledBacking:setAlpha( 0.9 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -34,7 +34,7 @@ CoD.ZMLoadoutPreviewLockedOverlay.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local TiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 29.5, 379.5 )
 	TiledBacking:setAlpha( 0.95 )
-	TiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking:setupNineSliceShader( 196, 88 )
@@ -58,7 +58,7 @@ CoD.ZMLoadoutPreviewLockedOverlay.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local DescriptionTint2 = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 192.5, 378.5 )
 	DescriptionTint2:setRGB( 0.39, 0.39, 0.39 )
 	DescriptionTint2:setAlpha( 0.04 )
-	DescriptionTint2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DescriptionTint2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DescriptionTint2 )
 	self.DescriptionTint2 = DescriptionTint2
 	
@@ -82,14 +82,14 @@ CoD.ZMLoadoutPreviewLockedOverlay.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.UnlockDescription = UnlockDescription
 	
 	local LockImage = LUI.UIImage.new( 0, 0, 104, 168, 0, 0, 26, 90 )
-	LockImage:setImage( RegisterImage( 0xE1E7C490B2BA4FB ) )
+	LockImage:setImage( RegisterImage( "uie_ui_icon_global_lock" ) )
 	self:addElement( LockImage )
 	self.LockImage = LockImage
 	
 	local LayoutTopBar = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 0, 20 )
 	LayoutTopBar:setAlpha( 0.5 )
-	LayoutTopBar:setImage( RegisterImage( 0x1426C1694668EB3 ) )
-	LayoutTopBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	LayoutTopBar:setImage( RegisterImage( "uie_ui_menu_specialist_hub_layout_topbar" ) )
+	LayoutTopBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	LayoutTopBar:setShaderVector( 0, 0, 0, 0, 0 )
 	LayoutTopBar:setupNineSliceShader( 6, 6 )
 	self:addElement( LayoutTopBar )
@@ -97,14 +97,14 @@ CoD.ZMLoadoutPreviewLockedOverlay.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local LayoutBotStripe = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, -28, 0 )
 	LayoutBotStripe:setAlpha( 0.4 )
-	LayoutBotStripe:setImage( RegisterImage( 0x36E1590316DA74B ) )
-	LayoutBotStripe:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	LayoutBotStripe:setImage( RegisterImage( "uie_ui_menu_specialist_hub_stripe_bot" ) )
+	LayoutBotStripe:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( LayoutBotStripe )
 	self.LayoutBotStripe = LayoutBotStripe
 	
 	local RankIcon = LUI.UIImage.new( 0, 0, 26, 246, 0, 0, 177.5, 397.5 )
 	RankIcon.__Image = function ()
-		RankIcon:setImage( RegisterImage( CoD.ZMLoadoutUtility.GetUnlockRankIconLargeForFeature( self, 0x21793BE97AC0B5A ) ) )
+		RankIcon:setImage( RegisterImage( CoD.ZMLoadoutUtility.GetUnlockRankIconLargeForFeature( self, "ui_icon_rank_mp_level01_large" ) ) )
 	end
 	
 	RankIcon.__Image()

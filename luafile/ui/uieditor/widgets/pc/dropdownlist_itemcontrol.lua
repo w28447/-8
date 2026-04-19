@@ -15,7 +15,7 @@ CoD.DropDownList_ItemControl.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local TextBox = LUI.UIText.new( 0, 1, 42, -42, 0.5, 0.5, -8.5, 10.5 )
 	TextBox:setRGB( 0.76, 0.76, 0.76 )
-	TextBox:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	TextBox:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	TextBox:setTTF( "ttmussels_regular" )
 	TextBox:setLetterSpacing( 2 )
 	TextBox:setLineSpacing( 2 )
@@ -28,7 +28,7 @@ CoD.DropDownList_ItemControl.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	Arrow:setRGB( 0.58, 0.58, 0.58 )
 	Arrow:setZRot( -90 )
 	Arrow:setScale( 0.4, 0.4 )
-	Arrow:setImage( RegisterImage( 0x5E74D00B45D12B6 ) )
+	Arrow:setImage( RegisterImage( "uie_optionswidgets_arrow" ) )
 	self:addElement( Arrow )
 	self.Arrow = Arrow
 	

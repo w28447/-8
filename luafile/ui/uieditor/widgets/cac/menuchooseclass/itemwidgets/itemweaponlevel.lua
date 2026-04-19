@@ -49,7 +49,7 @@ CoD.ItemWeaponLevel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	levelLabel:setBackingXPadding( 13 )
 	levelLabel:setBackingYPadding( 6 )
 	levelLabel:setBackingImage( RegisterImage( 0x7D0A70047B9795C ) )
-	levelLabel:setBackingMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	levelLabel:setBackingMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	levelLabel:setBackingShaderVector( 0, 0, 0, 0, 0 )
 	levelLabel:setupBackingNineSliceShader( 55, 16 )
 	levelLabel:linkToElementModel( self, "itemIndex", true, function ( model )

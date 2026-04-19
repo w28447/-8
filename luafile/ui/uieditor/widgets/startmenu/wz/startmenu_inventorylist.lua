@@ -22,8 +22,8 @@ CoD.StartMenu_InventoryList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local BottomBracket9Slice = LUI.UIImage.new( 0, 0, 1, 560, 0, 0, -7, 2 )
 	BottomBracket9Slice:setRGB( 0.55, 0.54, 0.49 )
 	BottomBracket9Slice:setZRot( 180 )
-	BottomBracket9Slice:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	BottomBracket9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	BottomBracket9Slice:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	BottomBracket9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	BottomBracket9Slice:setShaderVector( 0, 0, 0, 0, 0 )
 	BottomBracket9Slice:setupNineSliceShader( 16, 4 )
 	self:addElement( BottomBracket9Slice )
@@ -31,7 +31,7 @@ CoD.StartMenu_InventoryList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local Title = LUI.UIText.new( 0, 0, 17.5, 117.5, 0, 0, -4.5, 17.5 )
 	Title:setRGB( 0, 0, 0 )
-	Title:setText( LocalizeToUpperString( 0x1346019482BDC3C ) )
+	Title:setText( LocalizeToUpperString( "warzone/inventory" ) )
 	Title:setTTF( "ttmussels_regular" )
 	Title:setLetterSpacing( 4 )
 	Title:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -337,13 +337,13 @@ CoD.StartMenu_InventoryList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x44DB3A08BE7FB92, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
 			return true
 		elseif IsGamepad( f25_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f25_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f25_arg0, f25_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f25_arg0, f25_arg2, "stackCount", 1 ) then
-			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xFFD03BF8361AC75, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
+			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "warzone/drop", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
 			return true
 		elseif IsGamepad( f25_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f25_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f25_arg0, f25_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f25_arg0, f25_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.DISCARD ) then
 			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x44DB3A08BE7FB92, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
 			return true
 		elseif IsGamepad( f25_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f25_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f25_arg0, f25_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) then
-			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xFFD03BF8361AC75, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
+			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "warzone/drop", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
 			return true
 		else
 			return false
@@ -389,13 +389,13 @@ CoD.StartMenu_InventoryList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 			CoD.Menu.SetButtonLabel( f29_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x44DB3A08BE7FB92, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		elseif IsMouseOrKeyboard( f29_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f29_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f29_arg0, f29_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f29_arg0, f29_arg2, "stackCount", 1 ) then
-			CoD.Menu.SetButtonLabel( f29_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0xFFD03BF8361AC75, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+			CoD.Menu.SetButtonLabel( f29_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "warzone/drop", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		elseif IsMouseOrKeyboard( f29_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f29_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f29_arg0, f29_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f29_arg0, f29_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.DISCARD ) then
 			CoD.Menu.SetButtonLabel( f29_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x44DB3A08BE7FB92, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		elseif IsMouseOrKeyboard( f29_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f29_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f29_arg0, f29_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) then
-			CoD.Menu.SetButtonLabel( f29_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0xFFD03BF8361AC75, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+			CoD.Menu.SetButtonLabel( f29_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "warzone/drop", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
@@ -510,7 +510,7 @@ CoD.StartMenu_InventoryList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		end
 	end, function ( f37_arg0, f37_arg1, f37_arg2 )
 		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f37_arg0, f37_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.WZUtility.ScoreboardVisibilitySetAndPC( f37_arg2 ) and IsMouseOrKeyboard( f37_arg2 ) then
-			CoD.Menu.SetButtonLabel( f37_arg1, Enum.LUIButton[0x4D2505E19049444], 0xFFD03BF8361AC75, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE2" )
+			CoD.Menu.SetButtonLabel( f37_arg1, Enum.LUIButton[0x4D2505E19049444], "warzone/drop", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE2" )
 			return true
 		else
 			return false
@@ -588,7 +588,7 @@ CoD.StartMenu_InventoryList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 			
 		end
 	end )
-	List:AddContextualMenuAction( f1_arg0, f1_arg1, 0xFFD03BF8361AC75, function ( f50_arg0, f50_arg1, f50_arg2, f50_arg3 )
+	List:AddContextualMenuAction( f1_arg0, f1_arg1, "warzone/drop", function ( f50_arg0, f50_arg1, f50_arg2, f50_arg3 )
 		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f50_arg0, f50_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f50_arg0, f50_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.DISCARD ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f50_arg2 ) then
 			return function ( f51_arg0, f51_arg1, f51_arg2, f51_arg3 )
 				CoD.WZUtility.SendInventoryDropNotify( f51_arg2, f51_arg0 )
@@ -692,7 +692,7 @@ CoD.StartMenu_InventoryList.__resetProperties = function ( f63_arg0 )
 	f63_arg0.Backing:completeAnimation()
 	f63_arg0.List:setTopBottom( 0, 0, 27, 239 )
 	f63_arg0.Title:setTopBottom( 0, 0, -4.5, 17.5 )
-	f63_arg0.Title:setText( LocalizeToUpperString( 0x1346019482BDC3C ) )
+	f63_arg0.Title:setText( LocalizeToUpperString( "warzone/inventory" ) )
 	f63_arg0.BottomBracket9Slice:setTopBottom( 0, 0, -7, 2 )
 	f63_arg0.InventorySplitter:setTopBottom( 0, 0, 0, 50 )
 	f63_arg0.Backing:setTopBottom( -0.1, 0.9, 37, 5 )
@@ -729,7 +729,7 @@ CoD.StartMenu_InventoryList.__clipsPerState = {
 			f65_arg0.clipFinished( f65_arg0.BottomBracket9Slice )
 			f65_arg0.Title:completeAnimation()
 			f65_arg0.Title:setTopBottom( 0, 0, -10.5, 11.5 )
-			f65_arg0.Title:setText( LocalizeToUpperString( 0xE65064C906E415E ) )
+			f65_arg0.Title:setText( LocalizeToUpperString( "warzone/backpack" ) )
 			f65_arg0.clipFinished( f65_arg0.Title )
 		end
 	}

@@ -18,8 +18,8 @@ CoD.AARTierRewardContraband.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local ContrabandFrame = LUI.UIImage.new( 0, 1, -5, 5, 0, 1, -5, 5 )
 	ContrabandFrame:setRGB( 0.71, 0.68, 0.44 )
-	ContrabandFrame:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	ContrabandFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	ContrabandFrame:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	ContrabandFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ContrabandFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	ContrabandFrame:setupNineSliceShader( 10, 10 )
 	self:addElement( ContrabandFrame )

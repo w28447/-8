@@ -222,7 +222,7 @@ CoD.ScoreboardGameStatusScores.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local PipRT = LUI.UIImage.new( 0.5, 0.5, 920, 936, 0, 0, 77.5, 93.5 )
 	PipRT:setScale( 2, 2 )
 	PipRT:setImage( RegisterImage( 0x34B575F15CDD376 ) )
-	PipRT:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	PipRT:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PipRT )
 	self.PipRT = PipRT
 	
@@ -230,7 +230,7 @@ CoD.ScoreboardGameStatusScores.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	PipLT:setZRot( 90 )
 	PipLT:setScale( 2, 2 )
 	PipLT:setImage( RegisterImage( 0x34B575F15CDD376 ) )
-	PipLT:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	PipLT:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PipLT )
 	self.PipLT = PipLT
 	
@@ -251,19 +251,19 @@ CoD.ScoreboardGameStatusScores.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local InfoDivider1 = LUI.UIImage.new( 0, 0, 498, 502, 0, 0, 64, 156 )
 	InfoDivider1:setImage( RegisterImage( 0x6DDA4086EA0EF02 ) )
-	InfoDivider1:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	InfoDivider1:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( InfoDivider1 )
 	self.InfoDivider1 = InfoDivider1
 	
 	local InfoDivider3 = LUI.UIImage.new( 0, 0, 1003, 1007, 0, 0, 64, 156 )
 	InfoDivider3:setImage( RegisterImage( 0x6DDA4086EA0EF02 ) )
-	InfoDivider3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	InfoDivider3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( InfoDivider3 )
 	self.InfoDivider3 = InfoDivider3
 	
 	local InfoDivider2 = LUI.UIImage.new( 0, 0, 801, 805, 0, 0, 64, 156 )
 	InfoDivider2:setImage( RegisterImage( 0x6DDA4086EA0EF02 ) )
-	InfoDivider2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	InfoDivider2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( InfoDivider2 )
 	self.InfoDivider2 = InfoDivider2
 	

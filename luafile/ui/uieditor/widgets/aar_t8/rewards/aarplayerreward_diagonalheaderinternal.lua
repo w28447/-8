@@ -11,7 +11,7 @@ CoD.AARPlayerReward_DiagonalHeaderInternal.new = function ( f1_arg0, f1_arg1, f1
 	local NineSliceShaderImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 0.5, 7.5 )
 	NineSliceShaderImage:setAlpha( 0.2 )
 	NineSliceShaderImage:setImage( RegisterImage( 0xC995977EE51C6E2 ) )
-	NineSliceShaderImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	NineSliceShaderImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	NineSliceShaderImage:setShaderVector( 0, 0, 0, 0, 0 )
 	NineSliceShaderImage:setupNineSliceShader( 3, 3 )
 	self:addElement( NineSliceShaderImage )

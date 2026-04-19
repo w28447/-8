@@ -12,7 +12,7 @@ CoD.vhud_agr_ReticleHairlineBottom.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	agrReticleHairlineBottom0:setZRot( -180 )
 	agrReticleHairlineBottom0:setZoom( -50 )
 	agrReticleHairlineBottom0:setImage( RegisterImage( 0xC51454B17DF4758 ) )
-	agrReticleHairlineBottom0:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	agrReticleHairlineBottom0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( agrReticleHairlineBottom0 )
 	self.agrReticleHairlineBottom0 = agrReticleHairlineBottom0
 	
@@ -20,7 +20,7 @@ CoD.vhud_agr_ReticleHairlineBottom.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	agrReticleHairlineBottom:setAlpha( 0.8 )
 	agrReticleHairlineBottom:setZRot( -180 )
 	agrReticleHairlineBottom:setImage( RegisterImage( 0xC51454B17DF4758 ) )
-	agrReticleHairlineBottom:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	agrReticleHairlineBottom:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( agrReticleHairlineBottom )
 	self.agrReticleHairlineBottom = agrReticleHairlineBottom
 	
@@ -29,7 +29,7 @@ CoD.vhud_agr_ReticleHairlineBottom.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	agrReticleHairlineBottomBlur:setZRot( -180 )
 	agrReticleHairlineBottomBlur:setZoom( 100 )
 	agrReticleHairlineBottomBlur:setImage( RegisterImage( 0xC0406095621B3E1 ) )
-	agrReticleHairlineBottomBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	agrReticleHairlineBottomBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( agrReticleHairlineBottomBlur )
 	self.agrReticleHairlineBottomBlur = agrReticleHairlineBottomBlur
 	

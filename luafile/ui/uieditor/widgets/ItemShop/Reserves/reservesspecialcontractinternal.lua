@@ -18,7 +18,7 @@ CoD.ReservesSpecialContractInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local FocusGlow = LUI.UIImage.new( 0, 1, -69, 69, 0, 1, -51, 51 )
 	FocusGlow:setAlpha( 0 )
 	FocusGlow:setScale( 1.01, 1 )
-	FocusGlow:setImage( RegisterImage( 0xB8F10D49D85E9C4 ) )
+	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_small" ) )
 	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.24, 0.24 )
 	FocusGlow:setShaderVector( 1, 1.2, 0, 0, 0 )
@@ -38,7 +38,7 @@ CoD.ReservesSpecialContractInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local gradient = LUI.UIImage.new( 0, 0, 5.5, 525.5, 0, 0, 5, 127 )
 	gradient:setAlpha( 0.9 )
-	gradient:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDE760AC0E801E57 ) )
+	gradient:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_gradient_normal" ) )
 	gradient:setShaderVector( 0, 0, 0, 0, 1 )
 	gradient:setShaderVector( 1, 0, 0, 0, 0 )
 	gradient:setShaderVector( 2, 0.67, 0, 0, 0 )
@@ -133,8 +133,8 @@ CoD.ReservesSpecialContractInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 			end
 		}
 	} )
-	ProgressBar.Progress:setImage( RegisterImage( 0x6D2FBF31F53910C ) )
-	ProgressBar.ProgressGlow:setImage( RegisterImage( 0xA7D61A3302B55D0 ) )
+	ProgressBar.Progress:setImage( RegisterImage( "uie_ui_menu_aar_levelup_bar" ) )
+	ProgressBar.ProgressGlow:setImage( RegisterImage( "uie_ui_menu_aar_levelup_bar_glow" ) )
 	ProgressBar:linkToElementModel( self, "progress", true, function ( model )
 		local f10_local0 = model:get()
 		if f10_local0 ~= nil then
@@ -164,7 +164,7 @@ CoD.ReservesSpecialContractInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local NineSliceBMFrame = LUI.UIImage.new( 0, 1, -2, 2, 0, 1, -2, 2 )
 	NineSliceBMFrame:setImage( RegisterImage( 0x1AC151A09D526DC ) )
-	NineSliceBMFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	NineSliceBMFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	NineSliceBMFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	NineSliceBMFrame:setupNineSliceShader( 162, 52 )
 	self:addElement( NineSliceBMFrame )
@@ -173,8 +173,8 @@ CoD.ReservesSpecialContractInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local FocusBorder = LUI.UIImage.new( 0, 1, -5, 5, 0, 1, -5, 5 )
 	FocusBorder:setRGB( 1, 0.75, 0.47 )
 	FocusBorder:setAlpha( 0 )
-	FocusBorder:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FocusBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FocusBorder:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FocusBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FocusBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FocusBorder:setupNineSliceShader( 18, 18 )
 	self:addElement( FocusBorder )

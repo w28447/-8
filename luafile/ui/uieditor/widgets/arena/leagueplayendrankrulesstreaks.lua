@@ -11,7 +11,7 @@ CoD.leaguePlayEndRankRulesStreaks.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local FireStreakIcon = LUI.UIImage.new( 0, 0, -181, 331, 0, 0, -181, 331 )
 	FireStreakIcon:setScale( 0.46, 0.46 )
 	FireStreakIcon:setImage( RegisterImage( 0x39CD2A8412A4F6 ) )
-	FireStreakIcon:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9227A50BA2B8D21 ) )
+	FireStreakIcon:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	FireStreakIcon:setShaderVector( 0, 4, 4, 0, 0 )
 	FireStreakIcon:setShaderVector( 1, 8, 0, 0, 0 )
 	self:addElement( FireStreakIcon )

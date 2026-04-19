@@ -58,7 +58,7 @@ CoD.zm_red_challenges_widget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.ClaimItemText = ClaimItemText
 	
 	local ChallengeText = CoD.zm_red_challenge_text.new( f1_arg0, f1_arg1, 0, 0, 0, 360, 0, 0, 27, 46 )
-	ChallengeText.ChallengeText:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	ChallengeText.ChallengeText:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	ChallengeText:linkToElementModel( self, nil, false, function ( model )
 		ChallengeText:setModel( model, f1_arg1 )
 	end )
@@ -104,8 +104,8 @@ CoD.zm_red_challenges_widget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 			modelName = "bInLocation"
 		} )
 	end )
-	LocationText.LocationTextDark:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
-	LocationText.LocationText:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	LocationText.LocationTextDark:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
+	LocationText.LocationText:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	LocationText:linkToElementModel( self, nil, false, function ( model )
 		LocationText:setModel( model, f1_arg1 )
 	end )

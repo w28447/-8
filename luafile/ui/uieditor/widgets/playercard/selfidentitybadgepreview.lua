@@ -13,7 +13,7 @@ CoD.SelfIdentityBadgePreview.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local BackingBorder = LUI.UIImage.new( 0.5, 0.5, -219, 219, 0.5, 0.5, -45, 45 )
-	BackingBorder:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	BackingBorder:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	BackingBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	BackingBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingBorder:setupNineSliceShader( 196, 88 )

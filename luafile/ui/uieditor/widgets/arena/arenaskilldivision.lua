@@ -13,7 +13,7 @@ CoD.ArenaSkillDivision.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.SkillBadge = SkillBadge
 	
 	local Title = LUI.UIText.new( 0, 0, 103, 403, 0, 0, 20, 53 )
-	Title:setText( LocalizeToUpperString( 0x93E719493E9E18F ) )
+	Title:setText( LocalizeToUpperString( "menu/new" ) )
 	Title:setTTF( "ttmussels_demibold" )
 	Title:setLetterSpacing( 2 )
 	Title:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -23,7 +23,7 @@ CoD.ArenaSkillDivision.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local Description = LUI.UIText.new( 0, 0, 103, 403, 0, 0, 53, 73 )
 	Description:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
-	Description:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	Description:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	Description:setTTF( "ttmussels_regular" )
 	Description:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Description:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

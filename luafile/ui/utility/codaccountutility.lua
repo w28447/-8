@@ -457,7 +457,7 @@ DataSources.CODAccountRegisterOptions = ListHelper_SetupDataSource( "CODAccountR
 		f14_local12 = false
 	end
 	f14_local4( f14_local5, f14_local6( f14_local7, f14_local8, f14_local9, f14_local10, f14_local11, f14_local12 ) )
-	table.insert( f14_local0, CoD.CoDAccountUtility.packageOptionsButtonData( CoD.CoDAccountUtility.IsSignInRequired( f14_arg1.menu ) and 0xFD0A4EC72EF5F3F or 0xC2E92C54C2BE289, "", nil, f14_local3 ) )
+	table.insert( f14_local0, CoD.CoDAccountUtility.packageOptionsButtonData( CoD.CoDAccountUtility.IsSignInRequired( f14_arg1.menu ) and 0xFD0A4EC72EF5F3F or "menu/cancel", "", nil, f14_local3 ) )
 	return f14_local0
 end, true )
 DataSources.CODAccountSignInInfoBasic = ListHelper_SetupDataSource( "CODAccountSignInInfoBasic", function ( f18_arg0 )

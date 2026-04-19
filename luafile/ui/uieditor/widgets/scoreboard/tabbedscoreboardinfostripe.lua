@@ -33,7 +33,7 @@ CoD.TabbedScoreboardInfoStripe.__resetProperties = function ( f2_arg0 )
 	f2_arg0.Stripe:completeAnimation()
 	f2_arg0.StripeAdd:completeAnimation()
 	f2_arg0.Stripe:setLeftRight( 0, 0, -2, 368 )
-	f2_arg0.Stripe:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6B34AA3F39208EF ) )
+	f2_arg0.Stripe:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_normal" ) )
 	f2_arg0.StripeAdd:setLeftRight( 0, 0, -7, 373 )
 end
 
@@ -51,7 +51,7 @@ CoD.TabbedScoreboardInfoStripe.__clipsPerState = {
 			
 			f3_arg0.Stripe:completeAnimation()
 			f3_arg0.Stripe:setLeftRight( 0, 0, -2, 368 )
-			f3_arg0.Stripe:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6B34AA3F39208EF ) )
+			f3_arg0.Stripe:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_normal" ) )
 			f3_local0( f3_arg0.Stripe )
 			local f3_local1 = function ( f5_arg0 )
 				f3_arg0.StripeAdd:beginAnimation( 1000 )

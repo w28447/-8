@@ -19,7 +19,7 @@ CoD[0xFBA6FA155C2731A].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local clouds = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	clouds:setAlpha( 0.3 )
 	clouds:setImage( RegisterImage( 0xE1F0668CA3FC943 ) )
-	clouds:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9227A50BA2B8D21 ) )
+	clouds:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	clouds:setShaderVector( 0, 0, 3, 0, 0 )
 	clouds:setShaderVector( 1, 9, 0, 0, 0 )
 	self:addElement( clouds )

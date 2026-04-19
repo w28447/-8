@@ -48,7 +48,7 @@ end
 CoD.PC_VoDViewerOverlayResizeButton.__resetProperties = function ( f5_arg0 )
 	f5_arg0.BTNResize:completeAnimation()
 	f5_arg0.BTNResize:setAlpha( 1 )
-	f5_arg0.BTNResize:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6B34AA3F39208EF ) )
+	f5_arg0.BTNResize:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_normal" ) )
 end
 
 CoD.PC_VoDViewerOverlayResizeButton.__clipsPerState = {
@@ -61,7 +61,7 @@ CoD.PC_VoDViewerOverlayResizeButton.__clipsPerState = {
 			f7_arg0:__resetProperties()
 			f7_arg0:setupElementClipCounter( 1 )
 			f7_arg0.BTNResize:completeAnimation()
-			f7_arg0.BTNResize:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6B34AA3F39208EF ) )
+			f7_arg0.BTNResize:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_normal" ) )
 			f7_arg0.clipFinished( f7_arg0.BTNResize )
 		end
 	},

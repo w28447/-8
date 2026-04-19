@@ -30,7 +30,7 @@ CoD.ZMInventoryListInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.PackAPunchItems = PackAPunchItems
 	
 	local Divider = LUI.UIImage.new( 0, 0, 706, 716, 0, 0, 0, 80 )
-	Divider:setImage( RegisterImage( 0xDA3E86054B0E24D ) )
+	Divider:setImage( RegisterImage( "uie_zm_hud_inventory_framedivider_vertical" ) )
 	self:addElement( Divider )
 	self.Divider = Divider
 	
@@ -43,7 +43,7 @@ CoD.ZMInventoryListInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.WonderWeaponItems = WonderWeaponItems
 	
 	local Divider2 = LUI.UIImage.new( 0, 0, 448, 458, 0, 0, 0, 80 )
-	Divider2:setImage( RegisterImage( 0xDA3E86054B0E24D ) )
+	Divider2:setImage( RegisterImage( "uie_zm_hud_inventory_framedivider_vertical" ) )
 	self:addElement( Divider2 )
 	self.Divider2 = Divider2
 	

@@ -84,7 +84,7 @@ LUI.createMenu.ZMTalismanSelect = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f9_arg0, f9_arg1, f9_arg2 )
 		if CoD.CACUtility.DoesCACItemHaveConsumablesRemaining( f9_arg1, f9_arg0, f9_arg2, Enum[0x6EB546760F890D2][0x5544C104CD15F10] ) and not CoD.ZMTalismanUtility.IsTalismanEqipped( f9_arg1, f9_arg0, f9_arg2 ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif CoD.ZMTalismanUtility.IsTalismanEqipped( f9_arg1, f9_arg0, f9_arg2 ) and IsPC() then
 			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x679ACA6FFC6C8F3, nil, "ui_confirm" )
@@ -179,7 +179,7 @@ LUI.createMenu.ZMTalismanSelect = function ( f1_arg0, f1_arg1 )
 	TopBar:setAlpha( 0.5 )
 	TopBar:setZoom( 2 )
 	TopBar:setImage( RegisterImage( 0x42BCCF45B82FBED ) )
-	TopBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	TopBar:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TopBar )
 	self.TopBar = TopBar
 	
@@ -198,7 +198,7 @@ LUI.createMenu.ZMTalismanSelect = function ( f1_arg0, f1_arg1 )
 	TopBar2:setAlpha( 0.5 )
 	TopBar2:setZoom( 2 )
 	TopBar2:setImage( RegisterImage( 0x42BCCF45B82FBED ) )
-	TopBar2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	TopBar2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TopBar2 )
 	self.TopBar2 = TopBar2
 	
@@ -262,7 +262,7 @@ LUI.createMenu.ZMTalismanSelect = function ( f1_arg0, f1_arg1 )
 		SendClientScriptMenuChangeNotify( f24_arg2, f24_arg1, false )
 		return true
 	end, function ( f25_arg0, f25_arg1, f25_arg2 )
-		CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, true )
 	self.__on_menuOpened_self = function ( f26_arg0, f26_arg1, f26_arg2, f26_arg3 )

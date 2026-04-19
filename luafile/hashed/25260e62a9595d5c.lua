@@ -58,7 +58,7 @@ LUI.createMenu.ReservesPromoImagePopup = function ( f1_arg0, f1_arg1 )
 		GoBack( self, f5_arg2 )
 		return true
 	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x6C253CF816B40B5, nil, nil )
+		CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/close", nil, nil )
 		return true
 	end, false )
 	LiveEventViewerFooterContainer0:setModel( self.buttonModel, f1_arg0 )

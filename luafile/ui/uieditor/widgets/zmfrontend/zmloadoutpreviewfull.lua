@@ -31,7 +31,7 @@ CoD.ZMLoadoutPreviewFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local TiledBacking = LUI.UIImage.new( -0.02, -0.02, 1, 281, 0.04, 0.04, -4, 440 )
 	TiledBacking:setAlpha( 0.5 )
-	TiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking:setupNineSliceShader( 196, 88 )
@@ -116,17 +116,17 @@ CoD.ZMLoadoutPreviewFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	self.ActiveClassTab = ActiveClassTab
 	
 	Metalbar = LUI.UIImage.new( 0, 0, -14, 286, 0, 0, 59.5, 75.5 )
-	Metalbar:setImage( RegisterImage( 0xF6761ADA7C49071 ) )
+	Metalbar:setImage( RegisterImage( "uie_ui_menu_zm_metal_bar" ) )
 	self:addElement( Metalbar )
 	self.Metalbar = Metalbar
 	
 	Metalbar3 = LUI.UIImage.new( 0, 0, -14, 286, 0, 0, 3.5, 19.5 )
-	Metalbar3:setImage( RegisterImage( 0xF6761ADA7C49071 ) )
+	Metalbar3:setImage( RegisterImage( "uie_ui_menu_zm_metal_bar" ) )
 	self:addElement( Metalbar3 )
 	self.Metalbar3 = Metalbar3
 	
 	local Metalbar2 = LUI.UIImage.new( 0, 0, -14, 286, 0, 0, 449, 465 )
-	Metalbar2:setImage( RegisterImage( 0xF6761ADA7C49071 ) )
+	Metalbar2:setImage( RegisterImage( "uie_ui_menu_zm_metal_bar" ) )
 	self:addElement( Metalbar2 )
 	self.Metalbar2 = Metalbar2
 	

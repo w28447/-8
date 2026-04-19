@@ -14,28 +14,28 @@ CoD.AARLevelUpOverlay_LevelUpBg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local AmbientCornerR = LUI.UIImage.new( 0.5, 0.5, 671, 781, 0, 0, 15, 125 )
 	AmbientCornerR:setAlpha( 0.5 )
 	AmbientCornerR:setImage( RegisterImage( 0xD87B290C1BEDDA0 ) )
-	AmbientCornerR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	AmbientCornerR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( AmbientCornerR )
 	self.AmbientCornerR = AmbientCornerR
 	
 	local AmbientCornerL = LUI.UIImage.new( 0.5, 0.5, -669, -779, 0, 0, 15, 125 )
 	AmbientCornerL:setAlpha( 0.5 )
 	AmbientCornerL:setImage( RegisterImage( 0xD87B290C1BEDDA0 ) )
-	AmbientCornerL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	AmbientCornerL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( AmbientCornerL )
 	self.AmbientCornerL = AmbientCornerL
 	
 	local DotL = LUI.UIImage.new( 0.5, 0.5, -785, -773, 1, 1, -12, 0 )
 	DotL:setAlpha( 0.04 )
 	DotL:setImage( RegisterImage( 0x520FD38B273BF8 ) )
-	DotL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DotL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotL )
 	self.DotL = DotL
 	
 	local DotR = LUI.UIImage.new( 0.5, 0.5, 775, 787, 1, 1, -12, 0 )
 	DotR:setAlpha( 0.04 )
 	DotR:setImage( RegisterImage( 0x520FD38B273BF8 ) )
-	DotR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DotR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotR )
 	self.DotR = DotR
 	
@@ -49,7 +49,7 @@ CoD.AARLevelUpOverlay_LevelUpBg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	dataFui:setAlpha( 0.12 )
 	dataFui:setScale( 2, 2 )
 	dataFui:setImage( RegisterImage( 0x73A4BBA3912B0F ) )
-	dataFui:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	dataFui:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( dataFui )
 	self.dataFui = dataFui
 	
@@ -57,7 +57,7 @@ CoD.AARLevelUpOverlay_LevelUpBg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	bgLineBot:setAlpha( 0.08 )
 	bgLineBot:setZRot( 180 )
 	bgLineBot:setImage( RegisterImage( 0x3467C5D506EA009 ) )
-	bgLineBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	bgLineBot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	bgLineBot:setShaderVector( 0, 0, 0, 0, 0 )
 	bgLineBot:setupNineSliceShader( 16, 10 )
 	self:addElement( bgLineBot )
@@ -66,7 +66,7 @@ CoD.AARLevelUpOverlay_LevelUpBg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local bgLineTop = LUI.UIImage.new( 0, 0, 51, 1619, 0, 0, 10, 374 )
 	bgLineTop:setAlpha( 0.08 )
 	bgLineTop:setImage( RegisterImage( 0x3467C5D506EA009 ) )
-	bgLineTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	bgLineTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	bgLineTop:setShaderVector( 0, 0, 0, 0, 0 )
 	bgLineTop:setupNineSliceShader( 16, 10 )
 	self:addElement( bgLineTop )
@@ -91,70 +91,70 @@ CoD.AARLevelUpOverlay_LevelUpBg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local connectionText = LUI.UIImage.new( 0, 0, 1456, 1592, 0, 0, 38, 50 )
 	connectionText:setAlpha( 0.2 )
 	connectionText:setImage( RegisterImage( 0x9CC4F19737093CE ) )
-	connectionText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	connectionText:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( connectionText )
 	self.connectionText = connectionText
 	
 	local Plus01 = LUI.UIImage.new( 0, 0, 1360, 1392, 0, 0, 172, 204 )
 	Plus01:setAlpha( 0 )
 	Plus01:setImage( RegisterImage( 0x1ACA8BD7BB22ADB ) )
-	Plus01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Plus01:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Plus01 )
 	self.Plus01 = Plus01
 	
 	local Plus02 = LUI.UIImage.new( 0, 0, 1144, 1176, 0, 0, 172, 204 )
 	Plus02:setAlpha( 0 )
 	Plus02:setImage( RegisterImage( 0x1ACA8BD7BB22ADB ) )
-	Plus02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Plus02:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Plus02 )
 	self.Plus02 = Plus02
 	
 	local Plus03 = LUI.UIImage.new( 0, 0, 281, 313, 0, 0, 172, 204 )
 	Plus03:setAlpha( 0 )
 	Plus03:setImage( RegisterImage( 0x1ACA8BD7BB22ADB ) )
-	Plus03:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Plus03:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Plus03 )
 	self.Plus03 = Plus03
 	
 	local Plus04 = LUI.UIImage.new( 0, 0, 495, 527, 0, 0, 172, 204 )
 	Plus04:setAlpha( 0 )
 	Plus04:setImage( RegisterImage( 0x1ACA8BD7BB22ADB ) )
-	Plus04:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Plus04:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Plus04 )
 	self.Plus04 = Plus04
 	
 	local Plus05 = LUI.UIImage.new( 0, 0, 279, 311, 0, 0, 389, 421 )
 	Plus05:setAlpha( 0 )
 	Plus05:setImage( RegisterImage( 0x1ACA8BD7BB22ADB ) )
-	Plus05:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Plus05:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Plus05 )
 	self.Plus05 = Plus05
 	
 	local Plus06 = LUI.UIImage.new( 0, 0, 495, 527, 0, 0, 389, 421 )
 	Plus06:setAlpha( 0 )
 	Plus06:setImage( RegisterImage( 0x1ACA8BD7BB22ADB ) )
-	Plus06:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Plus06:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Plus06 )
 	self.Plus06 = Plus06
 	
 	local Plus07 = LUI.UIImage.new( 0, 0, 1145, 1177, 0, 0, 389, 421 )
 	Plus07:setAlpha( 0 )
 	Plus07:setImage( RegisterImage( 0x1ACA8BD7BB22ADB ) )
-	Plus07:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Plus07:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Plus07 )
 	self.Plus07 = Plus07
 	
 	local Plus08 = LUI.UIImage.new( 0, 0, 1361, 1393, 0, 0, 389, 421 )
 	Plus08:setAlpha( 0 )
 	Plus08:setImage( RegisterImage( 0x1ACA8BD7BB22ADB ) )
-	Plus08:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Plus08:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Plus08 )
 	self.Plus08 = Plus08
 	
 	local Plus09 = LUI.UIImage.new( 0, 0, 823, 855, 0, 0, 389, 421 )
 	Plus09:setAlpha( 0 )
 	Plus09:setImage( RegisterImage( 0x1ACA8BD7BB22ADB ) )
-	Plus09:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Plus09:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Plus09 )
 	self.Plus09 = Plus09
 	

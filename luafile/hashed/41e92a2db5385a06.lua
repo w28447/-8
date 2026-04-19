@@ -12,7 +12,7 @@ CoD.DeployableNotifications_MiniTurretIcon.new = function ( f1_arg0, f1_arg1, f1
 	DartIcon:setZRot( -360 )
 	DartIcon:setScale( 0.9, 0.9 )
 	DartIcon:setImage( RegisterImage( 0xF39CAC55C73AC03 ) )
-	DartIcon:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	DartIcon:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	DartIcon:setShaderVector( 0, 0, 1, 0, 0 )
 	DartIcon:setShaderVector( 1, 0, 0, 0, 0 )
 	DartIcon:setShaderVector( 2, 0, 1, 0, 0 )

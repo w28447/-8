@@ -105,7 +105,7 @@ CoD.ZMTalismanChannelPathBG.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local PathBranch01 = LUI.UIImage.new( 0, 0, 273, 301, 0, 0, 460, 599 )
 	PathBranch01:setImage( RegisterImage( 0xEC38C5180782DFF ) )
-	PathBranch01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	PathBranch01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	PathBranch01:setShaderVector( 0, 0, 0, 0, 0 )
 	PathBranch01:setupNineSliceShader( 28, 42 )
 	self:addElement( PathBranch01 )
@@ -113,7 +113,7 @@ CoD.ZMTalismanChannelPathBG.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local PathBranch02 = LUI.UIImage.new( 0, 0, 518, 546, 0, 0, 460, 599 )
 	PathBranch02:setImage( RegisterImage( 0xEC38C5180782DFF ) )
-	PathBranch02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	PathBranch02:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	PathBranch02:setShaderVector( 0, 0, 0, 0, 0 )
 	PathBranch02:setupNineSliceShader( 28, 42 )
 	self:addElement( PathBranch02 )
@@ -121,7 +121,7 @@ CoD.ZMTalismanChannelPathBG.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local PathBranch03 = LUI.UIImage.new( 0, 0, 762, 790, 0, 0, 460, 599 )
 	PathBranch03:setImage( RegisterImage( 0xEC38C5180782DFF ) )
-	PathBranch03:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	PathBranch03:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	PathBranch03:setShaderVector( 0, 0, 0, 0, 0 )
 	PathBranch03:setupNineSliceShader( 28, 42 )
 	self:addElement( PathBranch03 )
@@ -129,7 +129,7 @@ CoD.ZMTalismanChannelPathBG.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local PathBranch = LUI.UIImage.new( 0, 0, 1006, 1034, 0, 0, 460, 599 )
 	PathBranch:setImage( RegisterImage( 0xEC38C5180782DFF ) )
-	PathBranch:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	PathBranch:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	PathBranch:setShaderVector( 0, 0, 0, 0, 0 )
 	PathBranch:setupNineSliceShader( 28, 42 )
 	self:addElement( PathBranch )
@@ -137,7 +137,7 @@ CoD.ZMTalismanChannelPathBG.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local PathBranch3 = LUI.UIImage.new( 0, 0, 1192, 1277, 0, 0, 219, 247 )
 	PathBranch3:setImage( RegisterImage( 0x81D0E9FE511363A ) )
-	PathBranch3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	PathBranch3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	PathBranch3:setShaderVector( 0, 0, 0, 0, 0 )
 	PathBranch3:setupNineSliceShader( 42, 28 )
 	self:addElement( PathBranch3 )
@@ -145,7 +145,7 @@ CoD.ZMTalismanChannelPathBG.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local PathBranch5 = LUI.UIImage.new( 0, 0, 1192, 1277, 0, 0, 383, 411 )
 	PathBranch5:setImage( RegisterImage( 0x81D0E9FE511363A ) )
-	PathBranch5:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	PathBranch5:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	PathBranch5:setShaderVector( 0, 0, 0, 0, 0 )
 	PathBranch5:setupNineSliceShader( 42, 28 )
 	self:addElement( PathBranch5 )
@@ -153,7 +153,7 @@ CoD.ZMTalismanChannelPathBG.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local PathBranch4 = LUI.UIImage.new( 0, 0, 1192, 1277, 0, 0, 25, 53 )
 	PathBranch4:setImage( RegisterImage( 0xEBB92789038ACBD ) )
-	PathBranch4:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	PathBranch4:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	PathBranch4:setShaderVector( 0, 0, 0, 0, 0 )
 	PathBranch4:setupNineSliceShader( 42, 28 )
 	self:addElement( PathBranch4 )

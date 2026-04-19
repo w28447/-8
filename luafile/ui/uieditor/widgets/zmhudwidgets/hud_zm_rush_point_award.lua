@@ -11,12 +11,12 @@ CoD.HUD_ZM_Rush_Point_Award.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local GLowMultiply = LUI.UIImage.new( 0, 1, -82, 62, 0.5, 0.5, -70, 37 )
 	GLowMultiply:setRGB( ColorSet.GroupName.r, ColorSet.GroupName.g, ColorSet.GroupName.b )
 	GLowMultiply:setAlpha( 0 )
-	GLowMultiply:setImage( RegisterImage( 0x5BE416E17DAB33B ) )
+	GLowMultiply:setImage( RegisterImage( "uie_t7_core_hud_mapwidget_panelglow" ) )
 	self:addElement( GLowMultiply )
 	self.GLowMultiply = GLowMultiply
 	
 	local PointAmount = LUI.UIText.new( 0, 0, 0.5, 400.5, 0, 0, 86, 146 )
-	PointAmount:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	PointAmount:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	PointAmount:setTTF( "skorzhen" )
 	PointAmount:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
 	PointAmount:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

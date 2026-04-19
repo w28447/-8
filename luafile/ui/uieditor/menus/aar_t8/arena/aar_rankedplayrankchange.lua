@@ -54,7 +54,7 @@ LUI.createMenu.AAR_RankedPlayRankChange = function ( f1_arg0, f1_arg1 )
 	self.RankIcon = RankIcon
 	
 	local ContinueButtonPrompt = CoD.buttonprompt.new( f1_local1, f1_arg0, 0, 0, 1518.5, 1758.5, 0, 0, 897.5, 959.5 )
-	ContinueButtonPrompt.label:setText( Engine[0xF9F1239CFD921FE]( 0x6393FF34EA56966 ) )
+	ContinueButtonPrompt.label:setText( Engine[0xF9F1239CFD921FE]( "menu/continue" ) )
 	ContinueButtonPrompt:subscribeToGlobalModel( f1_arg0, "Controller", "primary_button_image", function ( model )
 		local f3_local0 = model:get()
 		if f3_local0 ~= nil then

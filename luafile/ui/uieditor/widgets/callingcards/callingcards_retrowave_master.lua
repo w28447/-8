@@ -18,7 +18,7 @@ CoD[0xF9CFD00690D1FA7].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local streetlights = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	streetlights:setImage( RegisterImage( 0x78C08FDFFB8E2B0 ) )
-	streetlights:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9227A50BA2B8D21 ) )
+	streetlights:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	streetlights:setShaderVector( 0, 0, 4, 0, 0 )
 	streetlights:setShaderVector( 1, 24, 0, 0, 0 )
 	self:addElement( streetlights )
@@ -26,7 +26,7 @@ CoD[0xF9CFD00690D1FA7].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local carSmoke = LUI.UIImage.new( 0, 0, 766, 920, 0, 0, 42, 196 )
 	carSmoke:setImage( RegisterImage( 0x40903C2A0783D51 ) )
-	carSmoke:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9227A50BA2B8D21 ) )
+	carSmoke:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	carSmoke:setShaderVector( 0, 0, 4, 0, 0 )
 	carSmoke:setShaderVector( 1, 15, 0, 0, 0 )
 	self:addElement( carSmoke )
@@ -39,13 +39,13 @@ CoD[0xF9CFD00690D1FA7].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local headlights = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	headlights:setImage( RegisterImage( 0x13B1AFD923E7205 ) )
-	headlights:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	headlights:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( headlights )
 	self.headlights = headlights
 	
 	local gunfireFlash = LUI.UIImage.new( 0, 0, 456, 736, 0, 0, -12, 128 )
 	gunfireFlash:setImage( RegisterImage( 0x249858C34060648 ) )
-	gunfireFlash:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	gunfireFlash:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( gunfireFlash )
 	self.gunfireFlash = gunfireFlash
 	

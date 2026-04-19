@@ -141,7 +141,7 @@ LUI.createMenu.LobbyInspection = function ( f1_arg0, f1_arg1 )
 		GoBack( self, f13_arg2 )
 		return true
 	end, function ( f14_arg0, f14_arg1, f14_arg2 )
-		CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_contextual_1", function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )

@@ -49,8 +49,8 @@ CoD.PC_Korea_Event_Frame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local Bracket = LUI.UIImage.new( 0.5, 0.5, -836.5, -123.5, 0.5, 0.5, -319, -307 )
 	Bracket:setZRot( 180 )
-	Bracket:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	Bracket:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	Bracket:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	Bracket:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	Bracket:setShaderVector( 0, 0, 0, 0, 0 )
 	Bracket:setupNineSliceShader( 20, 8 )
 	self:addElement( Bracket )

@@ -429,7 +429,7 @@ CoD.ContractUtility.GetLootContractIcon = function ( f17_arg0, f17_arg1 )
 			end
 		end
 	end
-	return CoD.ContractUtility.LootContractIconTable[f17_arg0] and CoD.ContractUtility.LootContractIconTable[f17_arg0][f17_arg1] or 0x7615068F50B3D66
+	return CoD.ContractUtility.LootContractIconTable[f17_arg0] and CoD.ContractUtility.LootContractIconTable[f17_arg0][f17_arg1] or "blacktransparent"
 end
 
 CoD.ContractUtility.PurchasedContractsTabDatasource = function ( f18_arg0, f18_arg1, f18_arg2, f18_arg3 )
@@ -491,7 +491,7 @@ DataSources.PurchasedContractsTabs = ListHelper_SetupDataSource( "PurchasedContr
 		},
 		{
 			models = {
-				name = 0xC249C368451D708,
+				name = "menu/completed",
 				noContractsString = 0xBDBDB0BC28D465A,
 				contractsListDatasource = CoD.ContractUtility.PurchasedContractsTabDatasource( f27_arg0, false, true, "Completed" )
 			}
@@ -538,7 +538,7 @@ DataSources.PurchaseContractConfirmationButtons = ListHelper_SetupDataSource( "P
 			},
 			{
 				models = {
-					displayText = 0x85952ACC6D0C1B0
+					displayText = "menu/purchase"
 				},
 				properties = {
 					action = f29_local0,

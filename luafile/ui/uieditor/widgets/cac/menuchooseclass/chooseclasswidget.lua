@@ -152,7 +152,7 @@ CoD.ChooseClassWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		CoD.CACUtility.OpenCACOverlay( self, f13_arg1, f13_arg2, "EquipmentSelect", self, "tacticalgear" )
 		return true
 	end, function ( f14_arg0, f14_arg1, f14_arg2 )
-		CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	f1_arg0:AddButtonCallbackFunction( tacticalgear, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
@@ -297,7 +297,7 @@ CoD.ChooseClassWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 			return true
 		end
 	end, function ( f32_arg0, f32_arg1, f32_arg2 )
-		CoD.Menu.SetButtonLabel( f32_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f32_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	f1_arg0:AddButtonCallbackFunction( perkTalents, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f33_arg0, f33_arg1, f33_arg2, f33_arg3 )
@@ -416,7 +416,7 @@ CoD.ChooseClassWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		end
 	end, function ( f47_arg0, f47_arg1, f47_arg2 )
 		if not IsElementPropertyValue( f47_arg0, "__hasFocusOnVariantWidget", true ) then
-			CoD.Menu.SetButtonLabel( f47_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f47_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -652,10 +652,10 @@ CoD.ChooseClassWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		end
 	end, function ( f76_arg0, f76_arg1, f76_arg2 )
 		if IsListElementChildInState( f76_arg0, "AttachmentSlot", "WildcardNeeded" ) then
-			CoD.Menu.SetButtonLabel( f76_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f76_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif not CoD.ModelUtility.IsSelfModelValueEqualTo( self.primary, f76_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.BaseUtility.HasChildElement( f76_arg0, "AttachmentSlot" ) and not IsListElementChildInState( f76_arg0, "AttachmentSlot", "WildcardNotAvailable" ) then
-			CoD.Menu.SetButtonLabel( f76_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f76_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -807,7 +807,7 @@ CoD.ChooseClassWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		CoD.CACUtility.OpenWildcardPopup( self, f93_arg0, f93_arg1, f93_arg2, "WildcardSelect", self, "bonuscard", false )
 		return true
 	end, function ( f94_arg0, f94_arg1, f94_arg2 )
-		CoD.Menu.SetButtonLabel( f94_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f94_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	f1_arg0:AddButtonCallbackFunction( wildcards, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f95_arg0, f95_arg1, f95_arg2, f95_arg3 )
@@ -930,7 +930,7 @@ CoD.ChooseClassWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		end
 	end, function ( f109_arg0, f109_arg1, f109_arg2 )
 		if not IsElementPropertyValue( f109_arg0, "__hasFocusOnVariantWidget", true ) then
-			CoD.Menu.SetButtonLabel( f109_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f109_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -1164,10 +1164,10 @@ CoD.ChooseClassWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		end
 	end, function ( f138_arg0, f138_arg1, f138_arg2 )
 		if IsListElementChildInState( f138_arg0, "AttachmentSlot", "WildcardNeeded" ) then
-			CoD.Menu.SetButtonLabel( f138_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f138_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif not CoD.ModelUtility.IsSelfModelValueEqualTo( self.secondary, f138_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.BaseUtility.HasChildElement( f138_arg0, "AttachmentSlot" ) and not IsListElementChildInState( f138_arg0, "AttachmentSlot", "WildcardNotAvailable" ) then
-			CoD.Menu.SetButtonLabel( f138_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f138_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

@@ -9,7 +9,7 @@ CoD.DemoButtonPrompt.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local buttonPromptImage = LUI.UIImage.new( 0, 0, 0, 30, 0, 0, 0, 30 )
-	buttonPromptImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x67D1E3A3D2D1BF ) )
+	buttonPromptImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_saturation_normal" ) )
 	buttonPromptImage:setShaderVector( 0, 1, 0, 0, 0 )
 	buttonPromptImage:subscribeToGlobalModel( f1_arg1, "Controller", "secondary_button_image", function ( model )
 		local f2_local0 = model:get()

@@ -29,7 +29,7 @@ CoD.LaboratoryListItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local Corner = LUI.UIImage.new( 0.5, 0.5, -10.5, 10.5, 0, 0, 153, 170 )
 	Corner:setAlpha( 0 )
-	Corner:setImage( RegisterImage( 0xEBE9EBCE2C3F60E ) )
+	Corner:setImage( RegisterImage( "uie_zm_hud_cornerdecoration_half" ) )
 	self:addElement( Corner )
 	self.Corner = Corner
 	

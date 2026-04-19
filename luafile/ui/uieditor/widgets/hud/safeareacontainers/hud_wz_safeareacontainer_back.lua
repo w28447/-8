@@ -89,7 +89,7 @@ CoD.Hud_WZ_SafeAreaContainer_Back.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.DeployableNotifications = DeployableNotifications
 	
 	WaypointCloseMessage = CoD.WaypointCloseMessage.new( f1_arg0, f1_arg1, 0.5, 0.5, -192, 192, 0.5, 0.5, -292.5, -271.5 )
-	WaypointCloseMessage.text:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	WaypointCloseMessage.text:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	self:addElement( WaypointCloseMessage )
 	self.WaypointCloseMessage = WaypointCloseMessage
 	
@@ -223,7 +223,7 @@ CoD.Hud_WZ_SafeAreaContainer_Back.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 			modelName = "UIVisibilityBit." .. Enum.UIVisibilityBit[0x8A5E996D4528DA2]
 		} )
 	end, false )
-	WarzoneKillerIdentity.KillerLabel:setText( LocalizeToUpperString( 0x98E1E885ED068B4 ) )
+	WarzoneKillerIdentity.KillerLabel:setText( LocalizeToUpperString( "mpui/killer" ) )
 	WarzoneKillerIdentity:subscribeToGlobalModel( f1_arg1, "Attacker", nil, function ( model )
 		WarzoneKillerIdentity:setModel( model, f1_arg1 )
 	end )

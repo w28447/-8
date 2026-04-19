@@ -69,7 +69,7 @@ CoD.WZTeamPlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 		} )
 	end )
 	Marker.image:setImage( RegisterImage( 0xD7A457D12DA6B12 ) )
-	Marker.image:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6B34AA3F39208EF ) )
+	Marker.image:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_normal" ) )
 	Marker.__Color = function ( f8_arg0 )
 		local f8_local0 = f8_arg0:get()
 		if f8_local0 ~= nil then

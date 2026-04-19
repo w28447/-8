@@ -10,7 +10,7 @@ CoD.CallingCards_Asset_cold_breath.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local BreathSpot = LUI.UIImage.new( 0, 0, 0, 128, 0, 0, 0, 128 )
 	BreathSpot:setImage( RegisterImage( 0x3D194DB5E5CF3D9 ) )
-	BreathSpot:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	BreathSpot:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BreathSpot )
 	self.BreathSpot = BreathSpot
 	

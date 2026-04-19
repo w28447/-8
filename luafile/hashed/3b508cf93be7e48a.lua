@@ -17,7 +17,7 @@ CoD.Prestige_UnlockTokenIndicator.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	Container:setRGB( ColorSet.T8__SLATE.r, ColorSet.T8__SLATE.g, ColorSet.T8__SLATE.b )
 	Container:setAlpha( 0.1 )
 	Container:setImage( RegisterImage( 0x59E9B23E28BEE09 ) )
-	Container:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Container:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Container )
 	self.Container = Container
 	

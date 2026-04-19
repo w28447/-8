@@ -27,8 +27,8 @@ CoD.ReservesLootCrateButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	FocusGlowPC = LUI.UIImage.new( 0.5, 0.5, -240.5, 240.5, 0.5, 0.5, -362.5, 362.5 )
 	FocusGlowPC:setAlpha( 0 )
-	FocusGlowPC:setImage( RegisterImage( 0x8E79E4E42B6714C ) )
-	FocusGlowPC:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	FocusGlowPC:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_large" ) )
+	FocusGlowPC:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FocusGlowPC )
 	self.FocusGlowPC = FocusGlowPC
 	
@@ -37,7 +37,7 @@ CoD.ReservesLootCrateButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local NineSliceBMFrame = LUI.UIImage.new( 0, 1, -2, 2, 0, 1, -2, 2 )
 	NineSliceBMFrame:setImage( RegisterImage( 0x1AC151A09D526DC ) )
-	NineSliceBMFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	NineSliceBMFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	NineSliceBMFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	NineSliceBMFrame:setupNineSliceShader( 162, 52 )
 	self:addElement( NineSliceBMFrame )
@@ -81,8 +81,8 @@ CoD.ReservesLootCrateButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local FocusBorder = LUI.UIImage.new( 0, 1, -6, 6, 0, 1, -6, 6 )
 	FocusBorder:setRGB( 1, 0.75, 0.47 )
 	FocusBorder:setAlpha( 0 )
-	FocusBorder:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FocusBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FocusBorder:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FocusBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FocusBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FocusBorder:setupNineSliceShader( 18, 18 )
 	self:addElement( FocusBorder )

@@ -69,7 +69,7 @@ LUI.createMenu.PaintjobEditor = function ( f1_arg0, f1_arg1 )
 		} )
 	end, false )
 	GroupFull:setAlpha( 0 )
-	GroupFull.buttonPromptImage:setImage( RegisterImage( 0x1F10DEAAEFC50A4 ) )
+	GroupFull.buttonPromptImage:setImage( RegisterImage( "uie_hud_common_core_score_waricon" ) )
 	GroupFull.label:setText( Engine[0xF9F1239CFD921FE]( 0x35E24C3255091DF ) )
 	self:addElement( GroupFull )
 	self.GroupFull = GroupFull
@@ -1706,19 +1706,19 @@ LUI.createMenu.PaintjobEditor = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f175_arg0, f175_arg1, f175_arg2 )
 		if IsPC() and IsElementInState( self.EmblemEditorPCLegend, "Open" ) then
-			CoD.Menu.SetButtonLabel( f175_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( f175_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 			return true
 		elseif CoD.CraftUtility.IsBrowseMode( f175_arg2 ) and not CoD.CraftUtility.IsEmblemEmpty( f175_arg2 ) and CoD.CraftUtility.Emblems_HasChanges( self, f175_arg2 ) and IsMouseOrKeyboard( f175_arg2 ) then
-			CoD.Menu.SetButtonLabel( f175_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( f175_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 			return true
 		elseif CoD.CraftUtility.IsBrowseMode( f175_arg2 ) and not CoD.CraftUtility.IsEmblemEmpty( f175_arg2 ) and CoD.CraftUtility.Emblems_HasChanges( self, f175_arg2 ) and IsGamepad( f175_arg2 ) then
 			CoD.Menu.SetButtonLabel( f175_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0xAB744CDFD554F5F, nil, "ESCAPE" )
 			return true
 		elseif CoD.CraftUtility.IsEditMode( f175_arg2 ) then
-			CoD.Menu.SetButtonLabel( f175_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( f175_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 			return true
 		else
-			CoD.Menu.SetButtonLabel( f175_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( f175_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 			return true
 		end
 	end, false )

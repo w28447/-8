@@ -29,7 +29,7 @@ CoD.CompetitiveAARDivisionCurrentRank.new = function ( f1_arg0, f1_arg1, f1_arg2
 	local GridTiled = LUI.UIImage.new( 0, 1, 1, 1, 0, 1, 0, 0 )
 	GridTiled:setAlpha( 0.1 )
 	GridTiled:setScale( 1.01, 1.01 )
-	GridTiled:setImage( RegisterImage( 0xCA386792563DE8 ) )
+	GridTiled:setImage( RegisterImage( "uie_ui_menu_store_bg_grid" ) )
 	GridTiled:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	GridTiled:setShaderVector( 0, 0, 0, 0, 0 )
 	GridTiled:setupNineSliceShader( 64, 64 )

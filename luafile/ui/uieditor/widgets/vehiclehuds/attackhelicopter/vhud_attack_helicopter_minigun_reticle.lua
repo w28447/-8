@@ -63,7 +63,7 @@ CoD.vhud_attack_helicopter_minigun_reticle.new = function ( f1_arg0, f1_arg1, f1
 		} )
 	end, false )
 	msCenterDiamondT.state1Image:setImage( RegisterImage( 0x3C917B68C1D560E ) )
-	msCenterDiamondT.state1Image:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	msCenterDiamondT.state1Image:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	msCenterDiamondT.state2Image:setRGB( ColorSet.EnemyOrange.r, ColorSet.EnemyOrange.g, ColorSet.EnemyOrange.b )
 	self:addElement( msCenterDiamondT )
 	self.msCenterDiamondT = msCenterDiamondT
@@ -122,7 +122,7 @@ CoD.vhud_attack_helicopter_minigun_reticle.new = function ( f1_arg0, f1_arg1, f1
 	end, false )
 	msCenterDiamondB:setZRot( 180 )
 	msCenterDiamondB.state1Image:setImage( RegisterImage( 0x3C917B68C1D560E ) )
-	msCenterDiamondB.state1Image:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	msCenterDiamondB.state1Image:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	msCenterDiamondB.state2Image:setRGB( ColorSet.EnemyOrange.r, ColorSet.EnemyOrange.g, ColorSet.EnemyOrange.b )
 	self:addElement( msCenterDiamondB )
 	self.msCenterDiamondB = msCenterDiamondB
@@ -180,7 +180,7 @@ CoD.vhud_attack_helicopter_minigun_reticle.new = function ( f1_arg0, f1_arg1, f1
 		} )
 	end, false )
 	msCenterDiamondSideL.state1Image:setImage( RegisterImage( 0x75D443C057C1AB4 ) )
-	msCenterDiamondSideL.state1Image:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	msCenterDiamondSideL.state1Image:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	msCenterDiamondSideL.state2Image:setRGB( ColorSet.EnemyOrange.r, ColorSet.EnemyOrange.g, ColorSet.EnemyOrange.b )
 	self:addElement( msCenterDiamondSideL )
 	self.msCenterDiamondSideL = msCenterDiamondSideL
@@ -239,7 +239,7 @@ CoD.vhud_attack_helicopter_minigun_reticle.new = function ( f1_arg0, f1_arg1, f1
 	end, false )
 	msCenterDiamondSideR:setZRot( 180 )
 	msCenterDiamondSideR.state1Image:setImage( RegisterImage( 0x75D443C057C1AB4 ) )
-	msCenterDiamondSideR.state1Image:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	msCenterDiamondSideR.state1Image:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	msCenterDiamondSideR.state2Image:setRGB( ColorSet.EnemyOrange.r, ColorSet.EnemyOrange.g, ColorSet.EnemyOrange.b )
 	self:addElement( msCenterDiamondSideR )
 	self.msCenterDiamondSideR = msCenterDiamondSideR

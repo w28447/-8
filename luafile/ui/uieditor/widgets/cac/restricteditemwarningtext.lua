@@ -19,7 +19,7 @@ CoD.RestrictedItemWarningText.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	Warning:setRGB( 0.82, 0.08, 0.17 )
 	Warning:setAlpha( 0 )
 	Warning:setImage( RegisterImage( 0xDF501A88BB578F ) )
-	Warning:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Warning:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Warning )
 	self.Warning = Warning
 	

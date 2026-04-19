@@ -19,7 +19,7 @@ CoD.LootWeaponOptionButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.8 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -52,13 +52,13 @@ CoD.LootWeaponOptionButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local LockTickBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	LockTickBacking:setRGB( ColorSet.Title.r, ColorSet.Title.g, ColorSet.Title.b )
 	LockTickBacking:setAlpha( 0 )
-	LockTickBacking:setImage( RegisterImage( 0xCE50842B84CCD5D ) )
+	LockTickBacking:setImage( RegisterImage( "uie_spawnselect_crosshair_auto" ) )
 	self:addElement( LockTickBacking )
 	self.LockTickBacking = LockTickBacking
 	
 	local LockedIcon = LUI.UIImage.new( 0.5, 0.5, -15, 15, 0.5, 0.5, -15, 15 )
 	LockedIcon:setAlpha( 0 )
-	LockedIcon:setImage( RegisterImage( 0xB8AD8D12CEB707D ) )
+	LockedIcon:setImage( RegisterImage( "uie_icon_locks_lock_01" ) )
 	self:addElement( LockedIcon )
 	self.LockedIcon = LockedIcon
 	
@@ -75,8 +75,8 @@ CoD.LootWeaponOptionButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local FrontendFrame = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	FrontendFrame:setAlpha( 0.2 )
-	FrontendFrame:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrontendFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrame:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrontendFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrame:setupNineSliceShader( 12, 12 )
 	self:addElement( FrontendFrame )
@@ -106,7 +106,7 @@ CoD.LootWeaponOptionButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 		}
 	} )
 	EquippedMarkerTick:setZoom( 4 )
-	EquippedMarkerTick.image:setImage( RegisterImage( 0x9A8B26C9B001758 ) )
+	EquippedMarkerTick.image:setImage( RegisterImage( "uie_ui_menu_cac_equipped_marker_tick" ) )
 	EquippedMarkerTick:linkToElementModel( self, nil, false, function ( model )
 		EquippedMarkerTick:setModel( model, f1_arg1 )
 	end )

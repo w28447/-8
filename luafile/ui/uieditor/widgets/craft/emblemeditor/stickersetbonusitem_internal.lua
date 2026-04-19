@@ -19,7 +19,7 @@ CoD.StickerSetBonusItem_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setRGB( 1, 0.78, 0 )
 	NoiseTiledBacking:setAlpha( 0.8 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -29,7 +29,7 @@ CoD.StickerSetBonusItem_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local BGAdd = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BGAdd:setRGB( 0.77, 0.78, 0 )
 	BGAdd:setAlpha( 0.02 )
-	BGAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	BGAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BGAdd )
 	self.BGAdd = BGAdd
 	
@@ -64,7 +64,7 @@ CoD.StickerSetBonusItem_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local FrameBorder = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -2, 2 )
 	FrameBorder:setRGB( 1, 0.58, 0 )
-	FrameBorder:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
+	FrameBorder:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
 	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	FrameBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FrameBorder:setShaderVector( 1, 1, 0, 0, 0 )
@@ -86,15 +86,15 @@ CoD.StickerSetBonusItem_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local EquippedMarkerBG = LUI.UIImage.new( 1, 1, -38, 6, 0, 0, -6, 38 )
 	EquippedMarkerBG:setAlpha( 0 )
 	EquippedMarkerBG:setZoom( 4 )
-	EquippedMarkerBG:setImage( RegisterImage( 0x7AF532D84DE505A ) )
-	EquippedMarkerBG:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	EquippedMarkerBG:setImage( RegisterImage( "uie_ui_menu_cac_equipped_marker_bg" ) )
+	EquippedMarkerBG:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( EquippedMarkerBG )
 	self.EquippedMarkerBG = EquippedMarkerBG
 	
 	local EquippedMarkerTick = LUI.UIImage.new( 1, 1, -38, 6, 0, 0, -6, 38 )
 	EquippedMarkerTick:setAlpha( 0 )
 	EquippedMarkerTick:setZoom( 4 )
-	EquippedMarkerTick:setImage( RegisterImage( 0x9A8B26C9B001758 ) )
+	EquippedMarkerTick:setImage( RegisterImage( "uie_ui_menu_cac_equipped_marker_tick" ) )
 	self:addElement( EquippedMarkerTick )
 	self.EquippedMarkerTick = EquippedMarkerTick
 	

@@ -11,7 +11,7 @@ CoD.ui_icon_callingcards_assassin_fastlinesgroup.new = function ( f1_arg0, f1_ar
 	local fastlines2 = LUI.UIImage.new( 0, 0, 1664, 2496, 0, 0, 0, 240 )
 	fastlines2:setAlpha( 0.3 )
 	fastlines2:setImage( RegisterImage( 0xB072A430554EE9F ) )
-	fastlines2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	fastlines2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( fastlines2 )
 	self.fastlines2 = fastlines2
 	
@@ -19,14 +19,14 @@ CoD.ui_icon_callingcards_assassin_fastlinesgroup.new = function ( f1_arg0, f1_ar
 	Image:setAlpha( 0.3 )
 	Image:setYRot( 180 )
 	Image:setImage( RegisterImage( 0xB072A430554EE9F ) )
-	Image:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Image:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image )
 	self.Image = Image
 	
 	local fastlines = LUI.UIImage.new( 0, 0, 0, 832, 0, 0, 0, 240 )
 	fastlines:setAlpha( 0.3 )
 	fastlines:setImage( RegisterImage( 0xB072A430554EE9F ) )
-	fastlines:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	fastlines:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( fastlines )
 	self.fastlines = fastlines
 	
@@ -34,7 +34,7 @@ CoD.ui_icon_callingcards_assassin_fastlinesgroup.new = function ( f1_arg0, f1_ar
 	Image2:setAlpha( 0.3 )
 	Image2:setYRot( 180 )
 	Image2:setImage( RegisterImage( 0xB072A430554EE9F ) )
-	Image2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Image2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image2 )
 	self.Image2 = Image2
 	

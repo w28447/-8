@@ -16,7 +16,7 @@ LUI.createMenu.VehicleTurretDurability = function ( f1_arg0, f1_arg1 )
 	self.BarBackground = BarBackground
 	
 	local BarForeground = LUI.UIImage.new( 0.5, 0.5, 732, 932, 0, 0, 618, 642 )
-	BarForeground:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	BarForeground:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	BarForeground:setShaderVector( 1, 0, 0, 0, 0 )
 	BarForeground:setShaderVector( 2, 1, 0, 0, 0 )
 	BarForeground:setShaderVector( 3, 0, 0, 0, 0 )

@@ -12,7 +12,7 @@ CoD.TipWidgetList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	
 	local TipLabel = LUI.UIText.new( 0, 1, 1, 1, 0, 0, 15, 60 )
 	TipLabel:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	TipLabel:setText( LocalizeToUpperString( 0x569AC3170B39B58 ) )
+	TipLabel:setText( LocalizeToUpperString( "mpui/tip" ) )
 	TipLabel:setTTF( "ttmussels_demibold" )
 	TipLabel:setLetterSpacing( 5.5 )
 	TipLabel:setAlignment( Engine[0x7F8853DC3581AA4]( Enum.LUIAlignment[0x58C8A85F2048829] ) )

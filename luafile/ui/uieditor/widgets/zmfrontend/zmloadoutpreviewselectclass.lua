@@ -21,7 +21,7 @@ CoD.ZMLoadoutPreviewSelectClass.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local buttonPromptImagePC = nil
 	
 	buttonPromptImagePC = LUI.UIImage.new( 0, 0, 9, 39, 0, 0, 11, 41 )
-	buttonPromptImagePC:setMaterial( LUI.UIImage.GetCachedMaterial( 0x67D1E3A3D2D1BF ) )
+	buttonPromptImagePC:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_saturation_normal" ) )
 	buttonPromptImagePC:setShaderVector( 0, 1, 0, 0, 0 )
 	buttonPromptImagePC:subscribeToGlobalModel( f1_arg1, "Controller", "primary_button_image", function ( model )
 		local f2_local0 = model:get()
@@ -41,7 +41,7 @@ CoD.ZMLoadoutPreviewSelectClass.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	buttonPromptStringPC:setShaderVector( 0, 0, 0, 0, 0 )
 	buttonPromptStringPC:setShaderVector( 1, 0, 0, 0, 0 )
 	buttonPromptStringPC:setShaderVector( 2, 1, 0, 0, 0 )
-	buttonPromptStringPC:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	buttonPromptStringPC:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	buttonPromptStringPC:setLetterSpacing( 0.5 )
 	buttonPromptStringPC:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	buttonPromptStringPC:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

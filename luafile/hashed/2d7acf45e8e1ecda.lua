@@ -75,7 +75,7 @@ CoD.PositionDraft_SearchingForPlayers.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local arrow = LUI.UIImage.new( 0, 0, 9.5, 14.5, 0, 0, -6, -1 )
 	arrow:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	arrow:setImage( RegisterImage( 0x19A57A2805CEECA ) )
+	arrow:setImage( RegisterImage( "uie_ui_hud_common_line_arrow" ) )
 	self:addElement( arrow )
 	self.arrow = arrow
 	

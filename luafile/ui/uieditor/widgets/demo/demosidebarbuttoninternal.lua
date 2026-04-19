@@ -18,7 +18,7 @@ CoD.DemoSideBarButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.4 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -27,7 +27,7 @@ CoD.DemoSideBarButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local NoiseTiledBackingAdd = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBackingAdd:setAlpha( 0.35 )
-	NoiseTiledBackingAdd:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBackingAdd:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBackingAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	NoiseTiledBackingAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBackingAdd:setupNineSliceShader( 196, 88 )
@@ -42,8 +42,8 @@ CoD.DemoSideBarButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local FrontendFrameSelected = LUI.UIImage.new( 0, 1, -4, 4, 0, 1, -4, 4 )
 	FrontendFrameSelected:setAlpha( 0 )
-	FrontendFrameSelected:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FrontendFrameSelected:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrameSelected:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FrontendFrameSelected:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrameSelected:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrameSelected:setupNineSliceShader( 12, 12 )
 	self:addElement( FrontendFrameSelected )
@@ -51,7 +51,7 @@ CoD.DemoSideBarButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local FrontendFocusPip = LUI.UIImage.new( 0, 1, -6, 6, 0, 1, -6, 6 )
 	FrontendFocusPip:setImage( RegisterImage( 0x793C73633F620BB ) )
-	FrontendFocusPip:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFocusPip:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFocusPip:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFocusPip:setupNineSliceShader( 40, 40 )
 	self:addElement( FrontendFocusPip )
@@ -59,8 +59,8 @@ CoD.DemoSideBarButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local FrontendFrameSelectedGlow = LUI.UIImage.new( 0, 1, -8, 8, 0, 1, -8, 8 )
 	FrontendFrameSelectedGlow:setAlpha( 0 )
-	FrontendFrameSelectedGlow:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FrontendFrameSelectedGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrameSelectedGlow:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FrontendFrameSelectedGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrameSelectedGlow:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrameSelectedGlow:setupNineSliceShader( 28, 28 )
 	self:addElement( FrontendFrameSelectedGlow )
@@ -68,8 +68,8 @@ CoD.DemoSideBarButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local FrontendFrame = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	FrontendFrame:setAlpha( 0.2 )
-	FrontendFrame:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrontendFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrame:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrontendFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrame:setupNineSliceShader( 12, 12 )
 	self:addElement( FrontendFrame )
@@ -93,7 +93,7 @@ CoD.DemoSideBarButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	Lock = LUI.UIImage.new( 0, 0, 31, 53, 0, 0, 22.5, 47.5 )
 	Lock:setAlpha( 0 )
-	Lock:setImage( RegisterImage( 0xB8AD8D12CEB707D ) )
+	Lock:setImage( RegisterImage( "uie_icon_locks_lock_01" ) )
 	self:addElement( Lock )
 	self.Lock = Lock
 	

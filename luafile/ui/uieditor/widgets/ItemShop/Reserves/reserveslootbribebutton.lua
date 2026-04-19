@@ -22,7 +22,7 @@ CoD.ReservesLootBribeButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local FocusGlow = LUI.UIImage.new( 0, 1, -78, 78, 0, 1, -70, 70 )
 	FocusGlow:setAlpha( 0 )
-	FocusGlow:setImage( RegisterImage( 0xB8F10D49D85E9C4 ) )
+	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_small" ) )
 	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.24, 0.24 )
 	FocusGlow:setShaderVector( 1, 1.2, 0, 0, 0 )
@@ -32,7 +32,7 @@ CoD.ReservesLootBribeButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local NineSliceBMFrame = LUI.UIImage.new( 0, 1, -3, 3, 0, 1, -3, 3 )
 	NineSliceBMFrame:setImage( RegisterImage( 0x1AC151A09D526DC ) )
-	NineSliceBMFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	NineSliceBMFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	NineSliceBMFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	NineSliceBMFrame:setupNineSliceShader( 162, 52 )
 	self:addElement( NineSliceBMFrame )
@@ -56,8 +56,8 @@ CoD.ReservesLootBribeButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local FocusBorder = LUI.UIImage.new( 0, 1, -9, 9, 0, 1, -7, 7 )
 	FocusBorder:setRGB( 1, 0.75, 0.47 )
 	FocusBorder:setAlpha( 0 )
-	FocusBorder:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FocusBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FocusBorder:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FocusBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FocusBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FocusBorder:setupNineSliceShader( 18, 18 )
 	self:addElement( FocusBorder )

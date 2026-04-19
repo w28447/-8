@@ -69,7 +69,7 @@ CoD.WZPersonalizeCharacter_CustomCharacterFrameWidget.new = function ( f1_arg0, 
 		end
 	end, function ( f8_arg0, f8_arg1, f8_arg2 )
 		if not CoD.ModelUtility.IsSelfModelValueTrue( f8_arg0, f8_arg2, "disabled" ) and not IsGameTrial() then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -111,7 +111,7 @@ CoD.WZPersonalizeCharacter_CustomCharacterFrameWidget.new = function ( f1_arg0, 
 		} )
 		return true
 	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( CustomCharacter, "childFocusGained", function ( element )

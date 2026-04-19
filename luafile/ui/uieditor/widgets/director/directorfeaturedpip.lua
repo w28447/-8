@@ -14,7 +14,7 @@ CoD.DirectorFeaturedPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local FeaturedPipCurrentBracket = LUI.UIImage.new( 0, 0, 0, 54, 0, 0, 0, 22 )
 	FeaturedPipCurrentBracket:setAlpha( 0 )
 	FeaturedPipCurrentBracket:setImage( RegisterImage( 0xA2CE59E7B7605F ) )
-	FeaturedPipCurrentBracket:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	FeaturedPipCurrentBracket:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FeaturedPipCurrentBracket )
 	self.FeaturedPipCurrentBracket = FeaturedPipCurrentBracket
 	

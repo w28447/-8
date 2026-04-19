@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/cac/cac_lock" )
 require( "ui/uieditor/widgets/commonbuttonoutline" )
 require( "ui/uieditor/widgets/startmenu/startmenu_imagecontainer" )
-require( "xui/uieditor/widgets/startmenu/startmenu_titleheader" )
+require( "ui/uieditor/widgets/startmenu/startmenu_titleheader" )
 require( "ui/uieditor/widgets/store/storecommontextbacking" )
 
 CoD.StartMenu_Button_LG_Internal = InheritFrom( LUI.UIElement )
@@ -24,7 +24,7 @@ CoD.StartMenu_Button_LG_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.5 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -33,7 +33,7 @@ CoD.StartMenu_Button_LG_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local NoiseTiledBackingAdd = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBackingAdd:setAlpha( 0.2 )
-	NoiseTiledBackingAdd:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBackingAdd:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBackingAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	NoiseTiledBackingAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBackingAdd:setupNineSliceShader( 196, 88 )
@@ -64,7 +64,7 @@ CoD.StartMenu_Button_LG_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local TitleBgTexture = LUI.UIImage.new( 0, 1, 0, 0, 0.5, 0.5, -24.5, 24.5 )
 	TitleBgTexture:setAlpha( 0 )
-	TitleBgTexture:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TitleBgTexture:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TitleBgTexture:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TitleBgTexture:setShaderVector( 0, 0, 0, 0, 0 )
 	TitleBgTexture:setupNineSliceShader( 196, 88 )
@@ -98,7 +98,7 @@ CoD.StartMenu_Button_LG_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local ButtonStateText = LUI.UIText.new( 0, 1, 0, 0, 0.5, 0.5, -18.5, 18.5 )
 	ButtonStateText:setAlpha( 0.5 )
-	ButtonStateText:setText( Engine[0xF9F1239CFD921FE]( 0x496C6F3083248E7 ) )
+	ButtonStateText:setText( Engine[0xF9F1239CFD921FE]( "menu/online_only" ) )
 	ButtonStateText:setTTF( "ttmussels_regular" )
 	ButtonStateText:setLetterSpacing( 4 )
 	ButtonStateText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -138,7 +138,7 @@ CoD.StartMenu_Button_LG_Internal.__resetProperties = function ( f2_arg0 )
 	f2_arg0.ImageContainer.ImageContainer:setAlpha( 0.79 )
 	f2_arg0.LockBackground:setAlpha( 0.05 )
 	f2_arg0.ButtonStateText:setAlpha( 0.5 )
-	f2_arg0.ButtonStateText:setText( Engine[0xF9F1239CFD921FE]( 0x496C6F3083248E7 ) )
+	f2_arg0.ButtonStateText:setText( Engine[0xF9F1239CFD921FE]( "menu/online_only" ) )
 	f2_arg0.TitleBgTexture:setAlpha( 0 )
 	f2_arg0.TitleBg:setAlpha( 0 )
 	f2_arg0.DotTiledBacking:setAlpha( 0 )
@@ -491,7 +491,7 @@ CoD.StartMenu_Button_LG_Internal.__clipsPerState = {
 			f26_arg0.clipFinished( f26_arg0.ButtonTitle )
 			f26_arg0.ButtonStateText:completeAnimation()
 			f26_arg0.ButtonStateText:setAlpha( 0.5 )
-			f26_arg0.ButtonStateText:setText( Engine[0xF9F1239CFD921FE]( 0x572450D01E06CD6 ) )
+			f26_arg0.ButtonStateText:setText( Engine[0xF9F1239CFD921FE]( "menu/coming_soon" ) )
 			f26_arg0.clipFinished( f26_arg0.ButtonStateText )
 		end
 	}

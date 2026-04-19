@@ -19,7 +19,7 @@ CoD.leaguePlayEndRankRulesRewards.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local DarkBacking = LUI.UIImage.new( 0, 0, 0, 210, 0, 0, 263, 350 )
 	DarkBacking:setAlpha( 0.25 )
-	DarkBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	DarkBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	DarkBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	DarkBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	DarkBacking:setupNineSliceShader( 196, 88 )
@@ -27,8 +27,8 @@ CoD.leaguePlayEndRankRulesRewards.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.DarkBacking = DarkBacking
 	
 	local infoBracketBot = LUI.UIImage.new( 0, 0, -1, 211, 0, 0, 343.5, 351.5 )
-	infoBracketBot:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	infoBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	infoBracketBot:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	infoBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	infoBracketBot:setShaderVector( 0, 0, 0, 0, 0 )
 	infoBracketBot:setupNineSliceShader( 16, 4 )
 	self:addElement( infoBracketBot )
@@ -36,7 +36,7 @@ CoD.leaguePlayEndRankRulesRewards.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local DotLine = LUI.UIImage.new( 0, 0, -1, 210, 0, 0, 261, 265 )
 	DotLine:setAlpha( 0.2 )
-	DotLine:setImage( RegisterImage( 0xB20AD7A31239369 ) )
+	DotLine:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline_tiled" ) )
 	DotLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DotLine:setShaderVector( 0, 0, 0, 0, 0 )
 	DotLine:setupNineSliceShader( 16, 4 )

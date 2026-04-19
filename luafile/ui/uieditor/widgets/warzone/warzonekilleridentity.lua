@@ -23,7 +23,7 @@ CoD.WarzoneKillerIdentity.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.SceneBlur = SceneBlur
 	
 	local BackingBorder = LUI.UIImage.new( 0.5, 0.5, -253, 253, 0.5, 0.5, -40, 40 )
-	BackingBorder:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	BackingBorder:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	BackingBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	BackingBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingBorder:setupNineSliceShader( 196, 88 )
@@ -31,7 +31,7 @@ CoD.WarzoneKillerIdentity.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.BackingBorder = BackingBorder
 	
 	local BackingBorder2 = LUI.UIImage.new( 0.5, 0.5, -253, 253, 0.5, 0.5, -40, 40 )
-	BackingBorder2:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	BackingBorder2:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	BackingBorder2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	BackingBorder2:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingBorder2:setupNineSliceShader( 196, 88 )
@@ -40,7 +40,7 @@ CoD.WarzoneKillerIdentity.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local BackingEmblem = LUI.UIImage.new( 0, 0, 149, 225, 0, 0, 2, 78 )
 	BackingEmblem:setAlpha( 0.7 )
-	BackingEmblem:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	BackingEmblem:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	BackingEmblem:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	BackingEmblem:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingEmblem:setupNineSliceShader( 196, 88 )
@@ -66,7 +66,7 @@ CoD.WarzoneKillerIdentity.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local KillerLabel = LUI.UIText.new( 0.5, 0.5, -253, 253, 0, 0, -22, -1 )
 	KillerLabel:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	KillerLabel:setAlpha( 0.8 )
-	KillerLabel:setText( LocalizeToUpperString( 0x98E1E885ED068B4 ) )
+	KillerLabel:setText( LocalizeToUpperString( "mpui/killer" ) )
 	KillerLabel:setTTF( "ttmussels_regular" )
 	KillerLabel:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	KillerLabel:setShaderVector( 0, 1, 0, 0, 0 )
@@ -134,7 +134,7 @@ CoD.WarzoneKillerIdentity.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local BackingRank = LUI.UIImage.new( 0, 0, 547, 651, 0, 0, 2, 78 )
 	BackingRank:setAlpha( 0.7 )
-	BackingRank:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	BackingRank:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	BackingRank:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	BackingRank:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingRank:setupNineSliceShader( 196, 88 )
@@ -174,8 +174,8 @@ CoD.WarzoneKillerIdentity.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local FrontendFrame = LUI.UIImage.new( 0, 0, 146, 654, 0, 0, -1, 81 )
 	FrontendFrame:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	FrontendFrame:setAlpha( 0.2 )
-	FrontendFrame:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrontendFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrame:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrontendFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrame:setupNineSliceShader( 12, 12 )
 	self:addElement( FrontendFrame )

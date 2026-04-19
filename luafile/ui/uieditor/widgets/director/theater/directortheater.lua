@@ -23,7 +23,7 @@ CoD.DirectorTheater.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local BGBlack = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BGBlack:setAlpha( 0.9 )
-	BGBlack:setImage( RegisterImage( 0x4BF88A437F4C579 ) )
+	BGBlack:setImage( RegisterImage( "uie_fe_cp_background" ) )
 	self:addElement( BGBlack )
 	self.BGBlack = BGBlack
 	
@@ -85,7 +85,7 @@ CoD.DirectorTheater.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 		end
 	end, function ( f7_arg0, f7_arg1, f7_arg2 )
 		if not CoD.ModelUtility.IsSelfModelValueTrue( f7_arg0, f7_arg2, "locked" ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

@@ -17,7 +17,7 @@ CoD.Hud_ZM_Arcade_Score.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local Score = LUI.UIText.new( 0, 0, 21, 221, 0, 0, 106.5, 178.5 )
 	Score:setRGB( 0.96, 0.66, 0 )
-	Score:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	Score:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	Score:setTTF( "dinnext_regular" )
 	Score:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	self:addElement( Score )

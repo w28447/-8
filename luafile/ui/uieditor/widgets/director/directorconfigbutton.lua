@@ -80,7 +80,7 @@ CoD.DirectorConfigButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	self.ConfigInternal = ConfigInternal
 	
 	ButtonName = LUI.UIText.new( 0, 1, 0, 0, 0.5, 0.5, -9, 9 )
-	ButtonName:setText( LocalizeToUpperString( 0x97EE1DC92936225 ) )
+	ButtonName:setText( LocalizeToUpperString( "menu/bots" ) )
 	ButtonName:setTTF( "ttmussels_regular" )
 	ButtonName:setLetterSpacing( 2 )
 	ButtonName:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

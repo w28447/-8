@@ -16,7 +16,7 @@ CoD.ItemShopPreviewButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local Strip = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Strip:setAlpha( 0.8 )
-	Strip:setMaterial( LUI.UIImage.GetCachedMaterial( 0x67D1E3A3D2D1BF ) )
+	Strip:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_saturation_normal" ) )
 	Strip:setShaderVector( 0, 0.7, 0, 0, 0 )
 	Strip:linkToElementModel( self, "rarity", true, function ( model )
 		local f2_local0 = model:get()
@@ -35,7 +35,7 @@ CoD.ItemShopPreviewButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local LED = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	LED:setRGB( 0, 0, 0 )
-	LED:setImage( RegisterImage( 0x4B6FFA90272070E ) )
+	LED:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
 	LED:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	LED:setShaderVector( 0, 0, 0, 0, 0 )
 	LED:setupNineSliceShader( 24, 24 )
@@ -44,7 +44,7 @@ CoD.ItemShopPreviewButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local LED2 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	LED2:setRGB( 0, 0, 0 )
-	LED2:setImage( RegisterImage( 0x4B6FFA90272070E ) )
+	LED2:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
 	LED2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	LED2:setShaderVector( 0, 0, 0, 0, 0 )
 	LED2:setupNineSliceShader( 24, 24 )

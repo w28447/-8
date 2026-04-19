@@ -24,7 +24,7 @@ CoD[0xF9B8B7EB4A5FEE].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local cloud01 = LUI.UIImage.new( 0, 0, 0, 424, 0, 0, 120, 240 )
 	cloud01:setAlpha( 0.5 )
 	cloud01:setImage( RegisterImage( 0xB9B10B7FFA7EE98 ) )
-	cloud01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	cloud01:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( cloud01 )
 	self.cloud01 = cloud01
 	
@@ -35,14 +35,14 @@ CoD[0xF9B8B7EB4A5FEE].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local cloud02 = LUI.UIImage.new( 0, 0, 424, 960, 0, 0, 80, 240 )
 	cloud02:setAlpha( 0.7 )
 	cloud02:setImage( RegisterImage( 0xB9B13B7FFA7F3B1 ) )
-	cloud02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	cloud02:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( cloud02 )
 	self.cloud02 = cloud02
 	
 	local cloud = LUI.UIImage.new( 0, 0, 167, 519, 0, 0, 0, 64 )
 	cloud:setAlpha( 0.7 )
 	cloud:setImage( RegisterImage( 0xB9B12B7FFA7F1FE ) )
-	cloud:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	cloud:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( cloud )
 	self.cloud = cloud
 	

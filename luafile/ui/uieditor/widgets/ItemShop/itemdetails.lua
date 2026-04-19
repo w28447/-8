@@ -1,4 +1,4 @@
-require( "x64:6abd6dcfe95863d" )
+require( "ui/uieditor/menus/itemshop/itemshopconfirmation" )
 require( "ui/uieditor/menus/itemshop/purchasecodpoints" )
 require( "ui/uieditor/widgets/itemshop/contracts/contractdetailspanelbacker" )
 require( "ui/uieditor/widgets/itemshop/itemshopbutton" )
@@ -57,8 +57,8 @@ CoD.ItemDetails.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 			modelName = "purchased"
 		} )
 	end )
-	ItemShopButton.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( 0x85952ACC6D0C1B0 ) )
-	ItemShopButton.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( 0x85952ACC6D0C1B0 ) )
+	ItemShopButton.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( "menu/purchase" ) )
+	ItemShopButton.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( "menu/purchase" ) )
 	local ButtonTopLine9Slice2 = ItemShopButton
 	local PriceText = ItemShopButton.subscribeToModel
 	local BundleText = Engine.GetModelForController( f1_arg1 )
@@ -102,16 +102,16 @@ CoD.ItemDetails.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 		end
 	end, function ( f9_arg0, f9_arg1, f9_arg2 )
 		if CanPurchaseItem( f9_arg2, self ) and IsInDefaultState( self ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif CanPurchaseItem( f9_arg2, self ) and IsElementInState( self, "SubItems" ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif IsInDefaultState( self ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif IsElementInState( self, "SubItems" ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -133,7 +133,7 @@ CoD.ItemDetails.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	ButtonTopLine9Slice2 = LUI.UIImage.new( 0, 0, -5, 781, 0, 0, -6, 14 )
 	ButtonTopLine9Slice2:setAlpha( 0.25 )
 	ButtonTopLine9Slice2:setImage( RegisterImage( 0xC752149A1FA1AAE ) )
-	ButtonTopLine9Slice2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	ButtonTopLine9Slice2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ButtonTopLine9Slice2:setShaderVector( 0, 0, 0, 0, 0 )
 	ButtonTopLine9Slice2:setupNineSliceShader( 120, 10 )
 	self:addElement( ButtonTopLine9Slice2 )
@@ -151,7 +151,7 @@ CoD.ItemDetails.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	local ButtonTopLine9Slice = LUI.UIImage.new( 0, 0, -5, 781, 0, 0, 461, 481 )
 	ButtonTopLine9Slice:setAlpha( 0.25 )
 	ButtonTopLine9Slice:setImage( RegisterImage( 0xC752149A1FA1AAE ) )
-	ButtonTopLine9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	ButtonTopLine9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ButtonTopLine9Slice:setShaderVector( 0, 0, 0, 0, 0 )
 	ButtonTopLine9Slice:setupNineSliceShader( 120, 10 )
 	self:addElement( ButtonTopLine9Slice )
@@ -169,7 +169,7 @@ CoD.ItemDetails.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	local Strip = LUI.UIImage.new( 0.5, 0.5, -387, 387, 0, 0, 498, 672 )
 	Strip:setRGB( 0.13, 0.13, 0.13 )
 	Strip:setAlpha( 0 )
-	Strip:setMaterial( LUI.UIImage.GetCachedMaterial( 0x67D1E3A3D2D1BF ) )
+	Strip:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_saturation_normal" ) )
 	Strip:setShaderVector( 0, 0.7, 0, 0, 0 )
 	self:addElement( Strip )
 	self.Strip = Strip

@@ -13,7 +13,7 @@ CoD.nameLabel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	local Glow = LUI.UIImage.new( 0, 1, -80, 74, 0.5, 0.5, -45, 65 )
 	Glow:setAlpha( 0.14 )
 	Glow:setImage( RegisterImage( 0x1078C36A022A4FE ) )
-	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
 	

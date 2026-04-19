@@ -1,4 +1,4 @@
-require( "x64:9b528a05aba52d6" )
+require( "ui/uieditor/menus/itemshop/itemshopdetails" )
 require( "ui/uieditor/widgets/itemshop/contracts/contractsupplychaindetails" )
 require( "ui/uieditor/widgets/itemshop/listlabel" )
 require( "ui/uieditor/widgets/itemshop/purchaseableitem" )
@@ -77,7 +77,7 @@ CoD.ItemShopFrameInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 		PlaySoundAlias( "uin_toggle_generic" )
 		return true
 	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	DailyItems:subscribeToGlobalModel( f1_arg1, "GlobalModel", "ItemshopRotation.cycled", function ( model )
@@ -121,7 +121,7 @@ CoD.ItemShopFrameInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 		PlaySoundAlias( "uin_toggle_generic" )
 		return true
 	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x85952ACC6D0C1B0, nil, nil )
+		CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/purchase", nil, nil )
 		return true
 	end, false )
 	FeaturedItems:subscribeToGlobalModel( f1_arg1, "GlobalModel", "ItemshopRotation.cycled", function ( model )
@@ -136,8 +136,8 @@ CoD.ItemShopFrameInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local BottomBracket9Slice2 = LUI.UIImage.new( 0.5, 0.5, -255, 270, 0, 0, 176, 185 )
 	BottomBracket9Slice2:setAlpha( 0.5 )
 	BottomBracket9Slice2:setZRot( 180 )
-	BottomBracket9Slice2:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	BottomBracket9Slice2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	BottomBracket9Slice2:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	BottomBracket9Slice2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BottomBracket9Slice2:setShaderVector( 0, 0, 0, 0, 0 )
 	BottomBracket9Slice2:setupNineSliceShader( 16, 4 )
 	self:addElement( BottomBracket9Slice2 )
@@ -195,8 +195,8 @@ CoD.ItemShopFrameInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	infoBracketBot:setRGB( 0.98, 1, 0.89 )
 	infoBracketBot:setAlpha( 0.35 )
 	infoBracketBot:setZRot( 180 )
-	infoBracketBot:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	infoBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	infoBracketBot:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	infoBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	infoBracketBot:setShaderVector( 0, 0, 0, 0, 0 )
 	infoBracketBot:setupNineSliceShader( 16, 4 )
 	self:addElement( infoBracketBot )

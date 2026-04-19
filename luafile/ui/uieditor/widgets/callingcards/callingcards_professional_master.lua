@@ -41,7 +41,7 @@ CoD[0xD0E8C96FBEFA527].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local flare1 = LUI.UIImage.new( 0, 0, 615.5, 989.5, 0, 0, 94, 304 )
 	flare1:setImage( RegisterImage( 0x2E9DF61862ACD85 ) )
-	flare1:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	flare1:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( flare1 )
 	self.flare1 = flare1
 	
@@ -71,21 +71,21 @@ CoD[0xD0E8C96FBEFA527].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local flare2 = LUI.UIImage.new( 0, 0, 255.5, 629.5, 0, 0, 57, 267 )
 	flare2:setImage( RegisterImage( 0x2E9DC61862AC86C ) )
-	flare2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	flare2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( flare2 )
 	self.flare2 = flare2
 	
 	local skulleyeglow2 = LUI.UIImage.new( 0, 0, 570.5, 671.5, 0, 0, -3, 73 )
 	skulleyeglow2:setScale( 0.75, 0.75 )
 	skulleyeglow2:setImage( RegisterImage( 0xF9B84A9B59CFEC ) )
-	skulleyeglow2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	skulleyeglow2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( skulleyeglow2 )
 	self.skulleyeglow2 = skulleyeglow2
 	
 	local skulleyeglow = LUI.UIImage.new( 0, 0, 583.5, 684.5, 0, 0, -3, 73 )
 	skulleyeglow:setScale( 0.75, 0.75 )
 	skulleyeglow:setImage( RegisterImage( 0xF9B84A9B59CFEC ) )
-	skulleyeglow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	skulleyeglow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( skulleyeglow )
 	self.skulleyeglow = skulleyeglow
 	

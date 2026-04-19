@@ -17,7 +17,7 @@ CoD.ButtonFrame_XPMeterInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.LevelMeterBgTint = LevelMeterBgTint
 	
 	local LevelMeterBg = LUI.UIImage.new( 0, 1, -2, -54, 0.5, 0.5, -12.5, 5.5 )
-	LevelMeterBg:setImage( RegisterImage( 0x61E8EB53DFEF82B ) )
+	LevelMeterBg:setImage( RegisterImage( "uie_ui_menu_inspection_level_meter_bg" ) )
 	LevelMeterBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	LevelMeterBg:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( LevelMeterBg )
@@ -25,12 +25,12 @@ CoD.ButtonFrame_XPMeterInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local CurrentXPMeter = CoD.CommonWipeMeterWithGlow.new( f1_arg0, f1_arg1, 0, 1, 0, -56, 0, 0, 16, 28 )
 	CurrentXPMeter.Meter:setRGB( 1, 0.73, 0 )
-	CurrentXPMeter.Meter:setImage( RegisterImage( 0x6D2FBF31F53910C ) )
+	CurrentXPMeter.Meter:setImage( RegisterImage( "uie_ui_menu_aar_levelup_bar" ) )
 	CurrentXPMeter.Meter:setShaderVector( 0, 0.25, 0, 0, 0 )
 	CurrentXPMeter.MeterAdd:setAlpha( 0.3 )
-	CurrentXPMeter.MeterAdd:setImage( RegisterImage( 0x6D2FBF31F53910C ) )
+	CurrentXPMeter.MeterAdd:setImage( RegisterImage( "uie_ui_menu_aar_levelup_bar" ) )
 	CurrentXPMeter.MeterGlow:setRGB( 0.39, 0.18, 0 )
-	CurrentXPMeter.MeterGlow:setImage( RegisterImage( 0xA7D61A3302B55D0 ) )
+	CurrentXPMeter.MeterGlow:setImage( RegisterImage( "uie_ui_menu_aar_levelup_bar_glow" ) )
 	CurrentXPMeter.MeterGlow:setShaderVector( 0, 0.25, 0, 0, 0 )
 	self:addElement( CurrentXPMeter )
 	self.CurrentXPMeter = CurrentXPMeter

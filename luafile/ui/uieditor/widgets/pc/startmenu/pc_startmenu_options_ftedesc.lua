@@ -27,7 +27,7 @@ CoD.PC_StartMenu_Options_FTEDesc.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local ScreenDesc = LUI.UIText.new( 0.5, 0.5, -310, 310, 1, 1, -298, -265 )
 	ScreenDesc:setRGB( 0.76, 0.76, 0.76 )
 	ScreenDesc:setAlpha( 0.5 )
-	ScreenDesc:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	ScreenDesc:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	ScreenDesc:setTTF( "ttmussels_regular" )
 	ScreenDesc:setLetterSpacing( 3 )
 	ScreenDesc:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

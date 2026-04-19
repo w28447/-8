@@ -31,7 +31,7 @@ CoD.CommonItemSlotWide.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local FocusGlow = LUI.UIImage.new( 0, 1, -49, 49, 0, 1, -38, 38 )
 	FocusGlow:setAlpha( 0 )
-	FocusGlow:setImage( RegisterImage( 0xB8F10D49D85E9C4 ) )
+	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_small" ) )
 	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.25, 0.25 )
 	FocusGlow:setShaderVector( 1, 1.2, 0, 0, 0 )
@@ -41,7 +41,7 @@ CoD.CommonItemSlotWide.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.5 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -50,8 +50,8 @@ CoD.CommonItemSlotWide.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local FrameBorder = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	FrameBorder:setAlpha( 0.15 )
-	FrameBorder:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrameBorder:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrameBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FrameBorder:setupNineSliceShader( 12, 12 )
 	self:addElement( FrameBorder )
@@ -65,8 +65,8 @@ CoD.CommonItemSlotWide.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local FocusBorder = LUI.UIImage.new( 0, 1, -4, 4, 0, 1, -3, 3 )
 	FocusBorder:setRGB( 0.96, 0.94, 0.78 )
 	FocusBorder:setAlpha( 0 )
-	FocusBorder:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FocusBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FocusBorder:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FocusBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FocusBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FocusBorder:setupNineSliceShader( 10, 10 )
 	self:addElement( FocusBorder )
@@ -80,14 +80,14 @@ CoD.CommonItemSlotWide.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local BGGlow = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BGGlow:setAlpha( 0.3 )
-	BGGlow:setImage( RegisterImage( 0xC270E906CDA1B2E ) )
-	BGGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	BGGlow:setImage( RegisterImage( "uie_ui_menu_common_button_bg_glow_large" ) )
+	BGGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BGGlow )
 	self.BGGlow = BGGlow
 	
 	local BGDotPatternLarge = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BGDotPatternLarge:setAlpha( 0.01 )
-	BGDotPatternLarge:setImage( RegisterImage( 0xFC21A8215EA012B ) )
+	BGDotPatternLarge:setImage( RegisterImage( "uie_ui_menu_common_button_bg_pattern_large" ) )
 	BGDotPatternLarge:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	BGDotPatternLarge:setShaderVector( 0, 0, 0, 0, 0 )
 	BGDotPatternLarge:setupNineSliceShader( 4, 4 )
@@ -97,21 +97,21 @@ CoD.CommonItemSlotWide.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local EquippedMarkerBG = LUI.UIImage.new( 1, 1, -38, 6, 0, 0, -6, 38 )
 	EquippedMarkerBG:setAlpha( 0 )
 	EquippedMarkerBG:setZoom( 4 )
-	EquippedMarkerBG:setImage( RegisterImage( 0x7AF532D84DE505A ) )
-	EquippedMarkerBG:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	EquippedMarkerBG:setImage( RegisterImage( "uie_ui_menu_cac_equipped_marker_bg" ) )
+	EquippedMarkerBG:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( EquippedMarkerBG )
 	self.EquippedMarkerBG = EquippedMarkerBG
 	
 	local EquippedMarkerTick = LUI.UIImage.new( 1, 1, -38, 6, 0, 0, -6, 38 )
 	EquippedMarkerTick:setAlpha( 0 )
 	EquippedMarkerTick:setZoom( 4 )
-	EquippedMarkerTick:setImage( RegisterImage( 0x9A8B26C9B001758 ) )
+	EquippedMarkerTick:setImage( RegisterImage( "uie_ui_menu_cac_equipped_marker_tick" ) )
 	self:addElement( EquippedMarkerTick )
 	self.EquippedMarkerTick = EquippedMarkerTick
 	
 	local ItemImage = LUI.UIFixedAspectRatioImage.new( 0.5, 0.5, -131.5, 132.5, 0.5, 0.5, -45.5, 30.5 )
 	ItemImage:setZoom( 3 )
-	ItemImage:setImage( RegisterImage( 0xA0DD9D34201E1F3 ) )
+	ItemImage:setImage( RegisterImage( "t7_icon_weapon_ar_damage_pu" ) )
 	self:addElement( ItemImage )
 	self.ItemImage = ItemImage
 	
@@ -191,14 +191,14 @@ CoD.CommonItemSlotWide.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	LockedIcon = LUI.UIImage.new( 0.5, 0.5, -24, 24, 0.5, 0.5, -31, 17 )
 	LockedIcon:setAlpha( 0 )
 	LockedIcon:setScale( 0.55, 0.55 )
-	LockedIcon:setImage( RegisterImage( 0xB8AD8D12CEB707D ) )
+	LockedIcon:setImage( RegisterImage( "uie_icon_locks_lock_01" ) )
 	self:addElement( LockedIcon )
 	self.LockedIcon = LockedIcon
 	
 	Image = nil
 	
 	Image = LUI.UIImage.new( 0, 0, -3.5, 18.5, 0, 0, 122, 146 )
-	Image:setImage( RegisterImage( 0x7615068F50B3D66 ) )
+	Image:setImage( RegisterImage( "blacktransparent" ) )
 	self:addElement( Image )
 	self.Image = Image
 	

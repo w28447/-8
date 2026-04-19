@@ -777,7 +777,7 @@ CoD.OverlayUtility.AddSystemOverlay( "RemoveFriendConfirmation", {
 				},
 				{
 					models = {
-						displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0xC2E92C54C2BE289 ) )
+						displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "menu/cancel" ) )
 					},
 					properties = {
 						action = function ( f60_arg0, f60_arg1, f60_arg2, f60_arg3, f60_arg4 )
@@ -805,7 +805,7 @@ CoD.OverlayUtility.AddSystemOverlay( "RemoveFriendConfirmation", {
 		end
 		
 	end,
-	[CoD.OverlayUtility.bCirclePromptText] = 0xC2E92C54C2BE289
+	[CoD.OverlayUtility.bCirclePromptText] = "menu/cancel"
 } )
 CoD.PCBattlenetUtility.HasSentFriendInvite = function ( f65_arg0 )
 	for f65_local3, f65_local4 in pairs( Engine[0x12E30D380C03F77]() ) do

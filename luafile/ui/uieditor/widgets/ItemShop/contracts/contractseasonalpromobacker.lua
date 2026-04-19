@@ -9,7 +9,7 @@ CoD.ContractSeasonalPromoBacker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local NineSliceShaderImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NineSliceShaderImage:setImage( RegisterImage( 0xE5BA786F58D8A47 ) )
-	NineSliceShaderImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	NineSliceShaderImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	NineSliceShaderImage:setShaderVector( 0, 0, 0, 0, 0 )
 	NineSliceShaderImage:setupNineSliceShader( 6, 6 )
 	self:addElement( NineSliceShaderImage )

@@ -23,7 +23,7 @@ CoD.PC_MultiItemPickupBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local GridTiled = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	GridTiled:setScale( 1, 1 )
-	GridTiled:setImage( RegisterImage( 0xCA386792563DE8 ) )
+	GridTiled:setImage( RegisterImage( "uie_ui_menu_store_bg_grid" ) )
 	GridTiled:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	GridTiled:setShaderVector( 0, 0, 0, 0, 0 )
 	GridTiled:setupNineSliceShader( 64, 64 )
@@ -32,7 +32,7 @@ CoD.PC_MultiItemPickupBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local GridTiled2 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	GridTiled2:setScale( 1, 1 )
-	GridTiled2:setImage( RegisterImage( 0xCA386792563DE8 ) )
+	GridTiled2:setImage( RegisterImage( "uie_ui_menu_store_bg_grid" ) )
 	GridTiled2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	GridTiled2:setShaderVector( 0, 0, 0, 0, 0 )
 	GridTiled2:setupNineSliceShader( 64, 64 )

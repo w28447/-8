@@ -41,7 +41,7 @@ CoD.DirectorLaboratoryButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local BlackMarketName = LUI.UIText.new( 0.5, 0.5, -200, 200, 0.5, 0.5, 8, 32 )
 	BlackMarketName:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	BlackMarketName:setText( LocalizeToUpperString( 0x96D9A8F7540D6B6 ) )
+	BlackMarketName:setText( LocalizeToUpperString( "menu/laboratory" ) )
 	BlackMarketName:setTTF( "ttmussels_demibold" )
 	BlackMarketName:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
 	BlackMarketName:setLetterSpacing( 3 )

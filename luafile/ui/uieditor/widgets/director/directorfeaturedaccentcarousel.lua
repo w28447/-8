@@ -51,8 +51,8 @@ CoD.DirectorFeaturedAccentCarousel.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 		} )
 	end, false )
 	LeftArrow:setZRot( 180 )
-	LeftArrow.KeyMouseImage:setImage( RegisterImage( 0x5E74D00B45D12B6 ) )
-	LeftArrow.ControllerImage:setImage( RegisterImage( 0x5E74D00B45D12B6 ) )
+	LeftArrow.KeyMouseImage:setImage( RegisterImage( "uie_optionswidgets_arrow" ) )
+	LeftArrow.ControllerImage:setImage( RegisterImage( "uie_optionswidgets_arrow" ) )
 	LeftArrow:registerEventHandler( "gain_focus", function ( element, event )
 		local f5_local0 = nil
 		if element.gainFocus then
@@ -116,8 +116,8 @@ CoD.DirectorFeaturedAccentCarousel.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 			modelName = "LastInput"
 		} )
 	end, false )
-	RightArrow.KeyMouseImage:setImage( RegisterImage( 0x5E74D00B45D12B6 ) )
-	RightArrow.ControllerImage:setImage( RegisterImage( 0x5E74D00B45D12B6 ) )
+	RightArrow.KeyMouseImage:setImage( RegisterImage( "uie_optionswidgets_arrow" ) )
+	RightArrow.ControllerImage:setImage( RegisterImage( "uie_optionswidgets_arrow" ) )
 	RightArrow:registerEventHandler( "gain_focus", function ( element, event )
 		local f12_local0 = nil
 		if element.gainFocus then

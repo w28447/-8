@@ -441,7 +441,7 @@ CoD.VideoStreamingUtility.VoDViewerPreLoadFunc = function ( f28_arg0, f28_arg1, 
 	f28_arg0:AddButtonCallbackFunction( f28_arg0, f28_arg1, Enum.LUIButton[0x6CE8023188D673F], nil, f28_local7, f28_local2, false )
 	f28_arg0:AddButtonCallbackFunction( f28_arg0, f28_arg1, Enum.LUIButton[0x29E5695FF1401AD], nil, f28_local7, f28_local2, false )
 	f28_arg0:AddButtonCallbackFunction( f28_arg0, f28_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], nil, f28_local8, function ( f40_arg0, f40_arg1, f40_arg2 )
-		CoD.Menu.SetButtonLabel( f40_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x6C253CF816B40B5 )
+		CoD.Menu.SetButtonLabel( f40_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/close" )
 		return true
 	end, false )
 	if f28_arg0.userData and f28_arg0.userData.allowStreamQualityChange then

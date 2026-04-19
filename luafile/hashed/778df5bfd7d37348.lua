@@ -10,7 +10,7 @@ CoD.IGRPerkElement.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local PerkLogo = LUI.UIFixedAspectRatioImage.new( 0.04, 0.04, 0, 48, 0.5, 0.5, -24, 24 )
 	PerkLogo:setImage( RegisterImage( 0x6DC0330DA89BE10 ) )
-	PerkLogo:setMaterial( LUI.UIImage.GetCachedMaterial( 0x98A2728B4675FB5 ) )
+	PerkLogo:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_glint" ) )
 	PerkLogo:setShaderVector( 0, 0, 0, 0, 0 )
 	PerkLogo:setShaderVector( 1, -46.8, 0, 0, 0 )
 	self:addElement( PerkLogo )

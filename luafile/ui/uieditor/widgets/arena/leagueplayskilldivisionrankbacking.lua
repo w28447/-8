@@ -21,7 +21,7 @@ CoD.LeaguePlaySkillDivisionRankBacking.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local DarkBacking2 = LUI.UIImage.new( 1, 1, -315, 0, 0, 0, 0, 94 )
 	DarkBacking2:setAlpha( 0.25 )
-	DarkBacking2:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	DarkBacking2:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	DarkBacking2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	DarkBacking2:setShaderVector( 0, 0, 0, 0, 0 )
 	DarkBacking2:setupNineSliceShader( 196, 88 )
@@ -36,7 +36,7 @@ CoD.LeaguePlaySkillDivisionRankBacking.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local DotLine = LUI.UIImage.new( 0, 0, 95, 97, 0, 0, 0, 94 )
 	DotLine:setAlpha( 0.2 )
-	DotLine:setImage( RegisterImage( 0xB20AD7A31239369 ) )
+	DotLine:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline_tiled" ) )
 	DotLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DotLine:setShaderVector( 0, 0, 0, 0, 0 )
 	DotLine:setupNineSliceShader( 8, 3 )

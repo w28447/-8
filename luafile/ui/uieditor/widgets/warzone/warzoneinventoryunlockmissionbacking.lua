@@ -20,7 +20,7 @@ CoD.WarzoneInventoryUnlockMissionBacking.new = function ( f1_arg0, f1_arg1, f1_a
 	
 	local BackingNoise = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BackingNoise:setAlpha( 0.5 )
-	BackingNoise:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	BackingNoise:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	BackingNoise:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	BackingNoise:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingNoise:setupNineSliceShader( 196, 88 )
@@ -54,7 +54,7 @@ CoD.WarzoneInventoryUnlockMissionBacking.new = function ( f1_arg0, f1_arg1, f1_a
 	local BraketBottom = LUI.UIImage.new( 0, 1, -2, 2, 1, 1, -28, 1 )
 	BraketBottom:setZRot( 180 )
 	BraketBottom:setImage( RegisterImage( 0x81D4EAAB75120FF ) )
-	BraketBottom:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	BraketBottom:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BraketBottom:setShaderVector( 0, 0, 0, 0, 0 )
 	BraketBottom:setupNineSliceShader( 200, 100 )
 	self:addElement( BraketBottom )

@@ -189,7 +189,7 @@ CoD.Social_MissingDLCNotification_Internal.__clipsPerState = {
 			f15_arg0.notificationIcon:completeAnimation()
 			f15_arg0.notificationIcon:setRGB( 1, 0, 0 )
 			f15_arg0.notificationIcon:setAlpha( 1 )
-			f15_arg0.notificationIcon:setImage( RegisterImage( 0x1F10DEAAEFC50A4 ) )
+			f15_arg0.notificationIcon:setImage( RegisterImage( "uie_hud_common_core_score_waricon" ) )
 			f15_arg0.clipFinished( f15_arg0.notificationIcon )
 		end
 	},
@@ -211,7 +211,7 @@ CoD.Social_MissingDLCNotification_Internal.__clipsPerState = {
 			f17_arg0.notificationIcon:completeAnimation()
 			f17_arg0.notificationIcon:setRGB( 1, 0, 0 )
 			f17_arg0.notificationIcon:setAlpha( 1 )
-			f17_arg0.notificationIcon:setImage( RegisterImage( 0x1F10DEAAEFC50A4 ) )
+			f17_arg0.notificationIcon:setImage( RegisterImage( "uie_hud_common_core_score_waricon" ) )
 			f17_arg0.clipFinished( f17_arg0.notificationIcon )
 		end
 	}

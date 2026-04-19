@@ -49,7 +49,7 @@
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "hash_5145090d78d3a9f6:hash_4be786c9": "localized17#hash_5145090d78d3a9f6",
+                        "menu/switch_seats:hash_4be786c9": "localized17#menu/switch_seats",
                         "hash_334a8e60": "left",
                         "prompt": "+switchseat"
                     }
@@ -84,7 +84,7 @@
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "hash_5145090d78d3a9f6:hash_4be786c9": "localized17#hash_5145090d78d3a9f6",
+                        "menu/switch_seats:hash_4be786c9": "localized17#menu/switch_seats",
                         "hash_334a8e60": "left",
                         "prompt": "+switchseat"
                     },

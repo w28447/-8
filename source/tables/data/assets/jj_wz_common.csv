@@ -32,7 +32,7 @@ localizeentry,d#weapon/ray_gun_desc
 localizeentry,d#hash_ba7b3f5adf6a69
 localizeentry,#hash_dedbd93286f117
 localizeentry,#platform/use_turret
-localizeentry,#hash_ebe7f5f7a0c8ab
+localizeentry,#wz/x
 localizeentry,#hash_ec3f7fa67575be
 localizeentry,#hash_ef3f10f4e17596
 localizeentry,d#weapon/lmg_standard_t8_wz_desc
@@ -61,7 +61,7 @@ localizeentry,d#hash_21a648849117dd6
 localizeentry,d#hash_21f487a9536ed21
 localizeentry,#hash_2323687d4a52a88
 localizeentry,#hash_239605d85d5b9fe
-localizeentry,d#hash_25f8c30a0958a7b
+localizeentry,d#warzone/swap
 localizeentry,#hash_2660f4d87bfce63
 localizeentry,d#hash_280a34c857099f3
 localizeentry,d#hash_280a44c85709ba6
@@ -98,7 +98,7 @@ localizeentry,#hash_4323579690cf719
 localizeentry,d#hash_43b319457bc818e
 localizeentry,#mp/rampage
 localizeentry,d#hash_4574c3ce7d0e7da
-localizeentry,#hash_4657c39c60632a0
+localizeentry,#wz/you
 localizeentry,#wz/attach_fastmag_desc
 localizeentry,#hash_46fc5dc1191b406
 localizeentry,d#hash_47358a093f0b89a
@@ -216,7 +216,7 @@ localizeentry,d#hash_b266e9fe63cbf18
 localizeentry,d#hash_b3209c7cc980c0b
 localizeentry,#hash_b326f825ea10c28
 localizeentry,#hash_b49428fa296cd8d
-localizeentry,#hash_b4a0f5945bb8108
+localizeentry,#menu/swap
 localizeentry,d#hash_b586fdc418b803a
 localizeentry,d#hash_b7832e76adcd1ad
 localizeentry,d#hash_b828992e638b17b
@@ -253,7 +253,7 @@ localizeentry,#hash_db41d831b55c4a6
 localizeentry,d#hash_dbdf8e01bad6ec5
 localizeentry,#hash_dcfb1306ade68b5
 localizeentry,#hash_de0efb7a131d734
-localizeentry,#hash_df37df17685ed6d
+localizeentry,#mpui/maxed_out
 localizeentry,#hash_e08ea7b79681e9c
 localizeentry,#hash_e092c2be5dd4778
 localizeentry,#hash_e14b8d67cb9da83
@@ -263,7 +263,7 @@ localizeentry,d#hash_e3d633dd7e8c7bd
 localizeentry,d#weapon/ar_fastfire_t8
 localizeentry,#hash_e5f3773b06cdfea
 localizeentry,d#mpui/fastlockon_desc
-localizeentry,#hash_e7cfc872d6a405d
+localizeentry,#warzone/attach
 localizeentry,d#weapon/fraggrenade
 localizeentry,#hash_ebd88797aaa2574
 localizeentry,#hash_ec2bd11204d4811
@@ -275,7 +275,7 @@ localizeentry,#hash_f306d1ac3bc9c73
 localizeentry,d#weapon/ar_accurate_t8
 localizeentry,#hash_f8bea24436ad636
 localizeentry,#hash_fbcfc36f0c79d9a
-localizeentry,#hash_fc244f0b9cc213b
+localizeentry,#demo/director_mode
 localizeentry,#hash_fcedc5c8ac323f8
 localizeentry,d#heroes/buffassault
 localizeentry,#menu/double_merits
@@ -335,7 +335,7 @@ localizeentry,d#hash_11d17195d5833bc4
 localizeentry,d#hash_11d9a7667005bd90
 localizeentry,#hash_11e20e7aebbc76a3
 localizeentry,d#hash_11ed4198ea5c24eb
-localizeentry,#hash_11f464950eb4aa26
+localizeentry,#menu/use
 localizeentry,d#hash_11fc52bf678a78aa
 localizeentry,#hash_121616a335d9d0d7
 localizeentry,d#hash_1236f2e52ce62afe
@@ -351,7 +351,7 @@ localizeentry,d#hash_12db80600caec1be
 localizeentry,#hash_12f169c39158140c
 localizeentry,#hash_12fdfb1668c96401
 localizeentry,d#hash_130269fa0f74449a
-localizeentry,d#hash_131e6136f9b444fb
+localizeentry,d#menu/attachments
 localizeentry,#hash_132a61a3d616bb1e
 localizeentry,#hash_132de7314ef0759f
 localizeentry,d#hash_1339e923e692ad5e
@@ -552,7 +552,7 @@ localizeentry,d#hash_1c8c755830bb75b2
 localizeentry,d#mpui/camo_integer
 localizeentry,#hash_1c96f39a878e18d3
 localizeentry,#hash_1cd7eb3f7d80e6f7
-localizeentry,d#hash_1ce3ef50b2b067c3
+localizeentry,d#menu/driver_seat
 localizeentry,#hash_1cf45eadd754592b
 localizeentry,#hash_1d02215cc5e49ede
 localizeentry,#hash_1d05475cc5e71547
@@ -612,7 +612,7 @@ localizeentry,#weapon/wraith_fire_wz_desc
 localizeentry,#menu/charm_plant_peach
 localizeentry,d#hash_205ce294b7d9fd87
 localizeentry,d#hash_2071a64c16f44bca
-localizeentry,d#hash_2074834abe9827a3
+localizeentry,d#menu/report_player
 localizeentry,d#hash_2076197971acef53
 localizeentry,d#zombie/richtofen
 localizeentry,#hash_208ea870ce3f300a
@@ -637,7 +637,7 @@ localizeentry,d#hash_215c3e3eb8ff0a22
 localizeentry,#hash_217565542d35aa75
 localizeentry,d#hash_21868d247829d827
 localizeentry,d#hash_21928b3f3fbe816f
-localizeentry,d#hash_219352a5a4c9cac9
+localizeentry,d#menu/controls
 localizeentry,d#zmweapon/ww_crossbow_t8
 localizeentry,d#hash_21ae94021c967d51
 localizeentry,d#hash_21bbdd7d1b7cfb1b
@@ -818,7 +818,7 @@ localizeentry,d#hash_290718641d507e03
 localizeentry,d#hash_290b0b80050c7ddd
 localizeentry,#wz/attach_acog_desc
 localizeentry,#hash_293035ff005b620f
-localizeentry,#hash_294d6af2f50befef
+localizeentry,#warzone/drop_and_detach
 localizeentry,#hash_29503cd034274830
 localizeentry,d#hash_2958a49de1cce7d2
 localizeentry,#hash_2968d3b043bae7ea
@@ -844,7 +844,7 @@ localizeentry,d#hash_2a634db8501d93aa
 localizeentry,d#hash_2a649dbc043061bb
 localizeentry,#hash_2a65c49afd832c6d
 localizeentry,#menu/charm_avocado_toast
-localizeentry,#hash_2a73f5ee9b97b6bd
+localizeentry,#warzone/resources
 localizeentry,d#hash_2a8b9477893742f8
 localizeentry,#hash_2a995770d23477ee
 localizeentry,d#hash_2aa2e6ae102b15f4
@@ -870,7 +870,7 @@ localizeentry,#menu/charm_tanuki
 localizeentry,d#hash_2b24588b1bb759ba
 localizeentry,d#hash_2b27d20d2cfc1069
 localizeentry,d#hash_2b2c7e74787b96e9
-localizeentry,d#hash_2b2ef56b4af147b8
+localizeentry,d#menu/quit
 localizeentry,d#hash_2b3d791eb05ec296
 localizeentry,d#mpui/camo_ardent
 localizeentry,#hash_2b66865922fd1bbe
@@ -969,7 +969,7 @@ localizeentry,d#hash_2ff2b09942dc0eed
 localizeentry,#hash_2ffc819e951044e9
 localizeentry,#hash_2ffc839e9510484f
 localizeentry,#hash_2ffc849e95104a02
-localizeentry,#hash_2ffd03bf8361ac75
+localizeentry,#warzone/drop
 localizeentry,d#hash_3004e4cf18a63fd0
 localizeentry,#hash_300594f12f5cc7ef
 localizeentry,d#hash_301d068f12af5636
@@ -1045,7 +1045,7 @@ localizeentry,#hash_33ee76dc3ee23fa2
 localizeentry,d#hash_33f013eacb53964c
 localizeentry,d#weapon/incendiary_grenade
 localizeentry,#hash_340b3dc7953b9fa3
-localizeentry,#hash_341441168c405322
+localizeentry,#mpui/linked
 localizeentry,d#heroes/russman
 localizeentry,d#hash_342443b50bd7e95b
 localizeentry,d#hash_342c90ec25fd2481
@@ -1155,7 +1155,7 @@ localizeentry,d#hash_3916397fbdb60669
 localizeentry,#hash_39385dc963af6f3b
 localizeentry,d#menu/new
 localizeentry,d#mpui/killcounter
-localizeentry,d#hash_394e8ff2c42caffb
+localizeentry,d#warzone/start_warzone
 localizeentry,#hash_395155665e8f3f4b
 localizeentry,d#hash_3963c3e923f20726
 localizeentry,d#mpui/extbarrel2
@@ -1171,7 +1171,7 @@ localizeentry,d#hash_39f6555a4480dbfe
 localizeentry,d#hash_3a0058814e03f575
 localizeentry,#hash_3a063cccef2cba6b
 localizeentry,d#hash_3a08f8d6796dec18
-localizeentry,d#hash_3a1b2cafc0534bf5
+localizeentry,d#wz/character_mission
 localizeentry,#hash_3a1ebd341ba4f3f8
 localizeentry,d#hash_3a294441722f3c4d
 localizeentry,#hash_3a2d903b8229f480
@@ -1180,7 +1180,7 @@ localizeentry,d#hash_3a39edbadcadd221
 localizeentry,d#hash_3a4d9d6e9b54f9f8
 localizeentry,d#hash_3a7482d98cbb39fc
 localizeentry,d#hash_3a830d55e5d87585
-localizeentry,#hash_3a8bac035ce51600
+localizeentry,#wz/deathcam
 localizeentry,d#hash_3a8ea4f2af590045
 localizeentry,#hash_3aad9f5a753f0418
 localizeentry,d#hash_3ab07b5825f0895f
@@ -1250,7 +1250,7 @@ localizeentry,#hash_3e4a1361965a5300
 localizeentry,d#mpui/steadyaim_desc
 localizeentry,d#hash_3e525b6474241d75
 localizeentry,d#hash_3e5c72aa389ce5b2
-localizeentry,#hash_3e65064c906e415e
+localizeentry,#warzone/backpack
 localizeentry,d#heroes/technomancer
 localizeentry,d#hash_3e8a0cb01da50ec6
 localizeentry,d#hash_3e8ae40eb5c2bb2f
@@ -1322,7 +1322,7 @@ localizeentry,d#hash_420861c64b6e9e7c
 localizeentry,#hash_421429dc57d37796
 localizeentry,#hash_4224a7321b6056e1
 localizeentry,d#hash_422c2d6777e82ad8
-localizeentry,#hash_42466b35790d15bf
+localizeentry,#demo/basic_mode
 localizeentry,d#hash_42490c9faeaafef8
 localizeentry,#hash_426758cb22a6aa7f
 localizeentry,d#hash_4272bbd56c2a48c8
@@ -1361,7 +1361,7 @@ localizeentry,d#hash_43fc4626798fabd7
 localizeentry,d#hash_4408bf0c8d195bb5
 localizeentry,d#mpui/camo_bliss
 localizeentry,#hash_441bc5590c260227
-localizeentry,#hash_441c813d62359384
+localizeentry,#mpui/no_target
 localizeentry,#hash_4425af590c2e314a
 localizeentry,#hash_443361ec3b224047
 localizeentry,d#hash_447a3e5055f27129
@@ -1397,7 +1397,7 @@ localizeentry,d#weapon/water_balloon
 localizeentry,d#hash_45f407bc037861dc
 localizeentry,#hash_45f6c271560b065c
 localizeentry,d#hash_45f9659238799c3b
-localizeentry,#hash_46099347f51af260
+localizeentry,#menu/detach
 localizeentry,d#hash_46125cb81abd4c42
 localizeentry,d#mpui/holo
 localizeentry,#hash_463e51bff17859f1
@@ -1487,8 +1487,8 @@ localizeentry,#hash_4ac4e6df00b1e08d
 localizeentry,#hash_4acd6807292167c6
 localizeentry,#hash_4ade90237e6498c0
 localizeentry,d#hash_4ae4ed13aed2e15c
-localizeentry,#hash_4af4c3a7e918e636
-localizeentry,#hash_4aff37175f950d17
+localizeentry,#warzone/ammo
+localizeentry,#mpui/personalize
 localizeentry,d#hash_4b105b524a93b53d
 localizeentry,#hash_4b177e726d713d45
 localizeentry,d#hash_4b3413c4a4256053
@@ -1613,7 +1613,7 @@ localizeentry,#wz/attach_suppressed_desc
 localizeentry,d#weapon/tripwire
 localizeentry,#hash_50e192601d65f99e
 localizeentry,d#weapon/tr_midburst_t8_operator_desc
-localizeentry,#hash_50eebda1a33fabdc
+localizeentry,#menu/custom
 localizeentry,d#hash_50f8bfed8b88688c
 localizeentry,#hash_510613c8177903d1
 localizeentry,d#hash_510efa40e4b9f78e
@@ -1624,7 +1624,7 @@ localizeentry,#hash_51217e22aa19a5fa
 localizeentry,d#mpui/camo_gold
 localizeentry,d#hash_513f53684131a446
 localizeentry,#hash_514145cea5410b00
-localizeentry,#hash_5145090d78d3a9f6
+localizeentry,#menu/switch_seats
 localizeentry,#hash_51608b70eca1bdcb
 localizeentry,d#hash_516c58a3b86fd628
 localizeentry,d#hash_516c5aa3b86fd98e
@@ -1829,7 +1829,7 @@ localizeentry,#hash_5a9a7f1fdcc1803e
 localizeentry,d#hash_5a9b060c653e2953
 localizeentry,d#hash_5ab4d7bd01c8b5f1
 localizeentry,d#mpui/camo_arctic
-localizeentry,#hash_5ac24c20650f01a4
+localizeentry,#warzone/quick_equip
 localizeentry,d#hash_5acae5f224c146a9
 localizeentry,#hash_5acc6565befe7e0a
 localizeentry,#hash_5ae55f6bab9a6c9f
@@ -1942,7 +1942,7 @@ localizeentry,#weapon/syrette
 localizeentry,d#weapon/lmg_spray_t8_operator_desc
 localizeentry,d#hash_5fce652ea5a5449e
 localizeentry,#weapon/noweapon
-localizeentry,#hash_5ff2f205b4f34f1d
+localizeentry,#warzone/armor_plates
 localizeentry,d#hash_6000dbbe3421103a
 localizeentry,d#hash_601f72a3327b5651
 localizeentry,d#menu/switch_weapon
@@ -1971,7 +1971,7 @@ localizeentry,#hash_6101245aedfeb933
 localizeentry,#hash_61043ca230c85a5b
 localizeentry,#hash_610ac273e0c3e381
 localizeentry,d#hash_6114901c1266e95d
-localizeentry,d#hash_61346019482bdc3c
+localizeentry,d#warzone/inventory
 localizeentry,d#hash_61991b6ea093b704
 localizeentry,d#menu/default
 localizeentry,#hash_61a822f92c3a86bd
@@ -2075,7 +2075,7 @@ localizeentry,d#hash_662d8f879b8bf2a9
 localizeentry,d#hash_663114aa52ffcb21
 localizeentry,d#hash_66326ff81589a75b
 localizeentry,d#hash_6635c45f05224db9
-localizeentry,d#hash_66393ff34ea56966
+localizeentry,d#menu/continue
 localizeentry,#hash_6639aed8d25b1ba8
 localizeentry,#hash_6639ea59611b378c
 localizeentry,d#weapon/pistol_revolver_t8
@@ -2150,7 +2150,7 @@ localizeentry,#hash_695af2b1afbb5071
 localizeentry,#hash_695fc5a9464aa5d4
 localizeentry,#mp/killstreak_n
 localizeentry,#menu/charm_dog
-localizeentry,#hash_698e1e885ed068b4
+localizeentry,#mpui/killer
 localizeentry,d#hash_6993c1a7dd3452ba
 localizeentry,d#weapon/ultimate_turret_desc
 localizeentry,d#hash_69ba59c80e43bbff
@@ -2317,13 +2317,13 @@ localizeentry,d#hash_726c4154092e631d
 localizeentry,d#hash_727601b6cb7e4a46
 localizeentry,d#hash_727c9de8057d6d50
 localizeentry,#hash_7280cf21dcaf1f18
-localizeentry,#hash_72961aaf61fb5b21
+localizeentry,#demo/object_link_mode
 localizeentry,d#hash_729c99e33d1c9275
 localizeentry,#hash_72c2121ef267ca59
 localizeentry,#hash_72c31f7cc245990e
 localizeentry,#hash_72cd54745fd03ac3
 localizeentry,#hash_72cd55745fd03c76
-localizeentry,d#hash_72f42ec88f0ed2ec
+localizeentry,d#warzone/using
 localizeentry,d#weapon/melee_demohammer_t8
 localizeentry,d#weapon/smg_mp40
 localizeentry,d#hash_7315e78b5584575c
@@ -2333,7 +2333,7 @@ localizeentry,d#hash_7355664ddafb3787
 localizeentry,d#hash_735a30b98916fe80
 localizeentry,d#hash_7374d810b610a74f
 localizeentry,#hash_7382718d1bea375c
-localizeentry,d#hash_738b775d97e72f0c
+localizeentry,d#warzone/equip
 localizeentry,d#mp/match_starting
 localizeentry,#hash_73c4eec8614f780f
 localizeentry,d#hash_73c99de12f68143c
@@ -2359,7 +2359,7 @@ localizeentry,d#hash_74978fc95bfb2bfd
 localizeentry,d#hash_749d5a2db19a96cb
 localizeentry,d#hash_749d83018b785dbf
 localizeentry,d#weapon/hatchet
-localizeentry,#hash_74ba12bf6bdeae57
+localizeentry,#wz/redeploy
 localizeentry,d#mpui/stalker_desc
 localizeentry,d#hash_74d5d02b5cb16277
 localizeentry,#hash_750100d161c4d583
@@ -2430,7 +2430,7 @@ localizeentry,d#hash_77b475bc5a7f3f46
 localizeentry,#hash_77c57e3de2c98f7c
 localizeentry,d#hash_77dce7635423ba68
 localizeentry,d#hash_77e7311dc74dccf5
-localizeentry,#hash_77f76a40dc7b0f5e
+localizeentry,#wz/reward
 localizeentry,d#hash_77f9d83f9e77c0d3
 localizeentry,d#hash_7800cbd9308e73c2
 localizeentry,d#hash_780aecaed949d35a
@@ -2441,7 +2441,7 @@ localizeentry,d#hash_7820e9155d6e93b8
 localizeentry,d#hash_7833cc16d9fa0749
 localizeentry,d#hash_783c94cdd7c5587f
 localizeentry,d#hash_783c95cdd7c55a32
-localizeentry,#hash_783e3ba6f8c2db04
+localizeentry,#mpui/change_class
 localizeentry,#hash_7845c8fed7de6b6f
 localizeentry,#hash_784898f9a62f37b4
 localizeentry,d#mpui/rf_desc
@@ -2515,8 +2515,8 @@ localizeentry,d#weapon/smg_folding_t8
 localizeentry,d#hash_7bf8bcf55e2bd26e
 localizeentry,d#hash_7c0016c0e8f12a1d
 localizeentry,#hash_7c247d7ec67112e2
-localizeentry,d#hash_7c249c368451d708
-localizeentry,d#hash_7c2e92c54c2be289
+localizeentry,d#menu/completed
+localizeentry,d#menu/cancel
 localizeentry,#hash_7c3e29081049a8f9
 localizeentry,d#warzone/collapse_grenade
 localizeentry,d#hash_7c6a34f16beea931
@@ -2569,7 +2569,7 @@ localizeentry,d#hash_7e9af6f6a3d83fe7
 localizeentry,d#hash_7ead725d5f344dba
 localizeentry,#hash_7eb404829d5dd8c8
 localizeentry,#hash_7eb7924020c15d17
-localizeentry,#hash_7ebddcc281d5c214
+localizeentry,#demo/lighter_mode
 localizeentry,d#hash_7ec654d28300fddd
 localizeentry,#hash_7ede476a5bd7ab24
 localizeentry,d#hash_7edf9c45858b1e3d

@@ -8,7 +8,7 @@ CoD.ArenaDirectorLobbyRankIcon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	self.soundSet = "none"
 	
 	local fireStreak = LUI.UIImage.new( 0, 0, -20, 64, 0, 0, -20, 64 )
-	fireStreak:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9227A50BA2B8D21 ) )
+	fireStreak:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	fireStreak:setShaderVector( 0, 4, 4, 0, 0 )
 	fireStreak:setShaderVector( 1, 8, 0, 0, 0 )
 	fireStreak:linkToElementModel( self, "xuid", true, function ( model )

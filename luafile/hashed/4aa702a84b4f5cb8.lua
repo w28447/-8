@@ -87,7 +87,7 @@ CoD.WeaponAccessoriesSelectInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 		end
 	end, function ( f10_arg0, f10_arg1, f10_arg2 )
 		if not CoD.ModelUtility.IsSelfModelValueTrue( f10_arg0, f10_arg2, "isLocked" ) and CoD.ModelUtility.IsSelfModelValueNilOrTrue( f10_arg0, f10_arg2, "available" ) and not IsElementModelConditionFn( f10_arg1, self, f10_arg0, f10_arg2, "isEquippedFn" ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

@@ -268,10 +268,10 @@ LUI.createMenu.Laboratory = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f23_arg0, f23_arg1, f23_arg2 )
 		if CoD.ZMLaboratoryUtility.IsInAnimState1( f23_arg2, CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and CoD.ModelUtility.IsModelValueEqualTo( f23_arg2, "Laboratory.disableInput", 0 ) then
-			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x70A9FDC87CD3D48, nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "menu/back", nil, "ESCAPE" )
 			return true
 		elseif CoD.ZMLaboratoryUtility.IsInAnimState1( f23_arg2, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) then
-			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x70A9FDC87CD3D48, nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "menu/back", nil, "ESCAPE" )
 			return true
 		elseif CoD.ModelUtility.IsModelValueEqualToEnum( f23_arg2, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.PLAYING ) and CoD.ModelUtility.IsModelValueTrue( f23_arg2, "Laboratory.skipReady" ) then
 			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0xFEC7D3E29D7EBCC, nil, "ESCAPE" )
@@ -292,7 +292,7 @@ LUI.createMenu.Laboratory = function ( f1_arg0, f1_arg1 )
 			
 		end
 	end, function ( f25_arg0, f25_arg1, f25_arg2 )
-		CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		if CoD.ZMLaboratoryUtility.IsInAnimState1( f25_arg2, CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and CoD.ModelUtility.IsModelValueEqualTo( f25_arg2, "Laboratory.disableInput", 0 ) then
 			return true
 		elseif CoD.ZMLaboratoryUtility.IsInAnimState1( f25_arg2, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) then
@@ -345,7 +345,7 @@ LUI.createMenu.Laboratory = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f31_arg0, f31_arg1, f31_arg2 )
 		if CoD.ModelUtility.IsModelValueEqualToEnum( f31_arg2, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and CoD.ModelUtility.IsModelValueEqualTo( f31_arg2, "Laboratory.disableInput", 0 ) and IsBooleanDvarSet( "laboratory_codpoints_enabled" ) and not CoD.BlackMarketUtility.IsMenuOccluded( f31_arg1 ) then
-			CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x29616DF01C4B70B, nil, "ui_contextual_2" )
+			CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0xC083113BC81F23F], "zmui/purchase_nebulium_plasma", nil, "ui_contextual_2" )
 			return true
 		elseif IsPC() and IsGamepad( f31_arg2 ) and CoD.ModelUtility.IsModelValueEqualToEnum( f31_arg2, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.PLAYING ) and CoD.ModelUtility.IsModelValueTrue( f31_arg2, "Laboratory.skipReady" ) then
 			CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0xC083113BC81F23F], 0xFEC7D3E29D7EBCC, nil, "ui_contextual_2" )

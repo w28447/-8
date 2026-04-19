@@ -22,8 +22,8 @@ CoD.StartMenu_ArmorPlatesList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local BottomBracket9Slice = LUI.UIImage.new( 0, 0, 1, 209, 0, 0, -7, 2 )
 	BottomBracket9Slice:setRGB( 0.55, 0.54, 0.49 )
 	BottomBracket9Slice:setZRot( 180 )
-	BottomBracket9Slice:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	BottomBracket9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	BottomBracket9Slice:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	BottomBracket9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	BottomBracket9Slice:setShaderVector( 0, 0, 0, 0, 0 )
 	BottomBracket9Slice:setupNineSliceShader( 16, 4 )
 	self:addElement( BottomBracket9Slice )
@@ -31,7 +31,7 @@ CoD.StartMenu_ArmorPlatesList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local Title = LUI.UIText.new( 0, 0, 17.5, 117.5, 0, 0, -4.5, 17.5 )
 	Title:setRGB( 0, 0, 0 )
-	Title:setText( LocalizeToUpperString( 0xFF2F205B4F34F1D ) )
+	Title:setText( LocalizeToUpperString( "warzone/armor_plates" ) )
 	Title:setTTF( "ttmussels_regular" )
 	Title:setLetterSpacing( 4 )
 	Title:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -305,13 +305,13 @@ CoD.StartMenu_ArmorPlatesList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xDCD547765767788, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
 			return true
 		elseif IsGamepad( f24_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f24_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f24_arg0, f24_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( f24_arg0, f24_arg2, "stackCount", 0 ) then
-			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xFFD03BF8361AC75, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
+			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "warzone/drop", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
 			return true
 		elseif IsGamepad( f24_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f24_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f24_arg0, f24_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f24_arg0, f24_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.DISCARD ) then
 			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x44DB3A08BE7FB92, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
 			return true
 		elseif IsGamepad( f24_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f24_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f24_arg0, f24_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( f24_arg0, f24_arg2, "stackCount", 0 ) then
-			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xFFD03BF8361AC75, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
+			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "warzone/drop", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
 			return true
 		else
 			return false
@@ -342,7 +342,7 @@ CoD.StartMenu_ArmorPlatesList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 		end
 	end, function ( f28_arg0, f28_arg1, f28_arg2 )
 		if IsMouseOrKeyboard( f28_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f28_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f28_arg0, f28_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( f28_arg0, f28_arg2, "stackCount", 0 ) then
-			CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0xFFD03BF8361AC75, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+			CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "warzone/drop", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
@@ -403,7 +403,7 @@ CoD.StartMenu_ArmorPlatesList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 		end
 	end, function ( f36_arg0, f36_arg1, f36_arg2 )
 		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f36_arg0, f36_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( f36_arg0, f36_arg2, "stackCount", 0 ) and CoD.WZUtility.ScoreboardVisibilitySetAndPC( f36_arg2 ) and IsMouseOrKeyboard( f36_arg2 ) then
-			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0x4D2505E19049444], 0xFFD03BF8361AC75, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE2" )
+			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0x4D2505E19049444], "warzone/drop", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE2" )
 			return true
 		else
 			return false
@@ -419,7 +419,7 @@ CoD.StartMenu_ArmorPlatesList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 			
 		end
 	end )
-	List:AddContextualMenuAction( f1_arg0, f1_arg1, 0xFFD03BF8361AC75, function ( f39_arg0, f39_arg1, f39_arg2, f39_arg3 )
+	List:AddContextualMenuAction( f1_arg0, f1_arg1, "warzone/drop", function ( f39_arg0, f39_arg1, f39_arg2, f39_arg3 )
 		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f39_arg0, f39_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f39_arg0, f39_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.DISCARD ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( f39_arg0, f39_arg2, "stackCount", 0 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f39_arg2 ) then
 			return function ( f40_arg0, f40_arg1, f40_arg2, f40_arg3 )
 				CoD.WZUtility.SendInventoryDropNotify( f40_arg2, f40_arg0 )

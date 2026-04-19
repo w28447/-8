@@ -12,7 +12,7 @@ CoD.OptionInfoWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local description = LUI.UIText.new( 0, 1, 16, 0, 0, 0, 67, 105 )
 	description:setRGB( 0.74, 0.74, 0.74 )
-	description:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	description:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	description:setTTF( "default" )
 	description:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	description:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

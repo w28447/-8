@@ -10,7 +10,7 @@ CoD.ArenaRubyProgressRedBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 90, -90, 0, 1, 21, -21 )
 	NoiseTiledBacking:setAlpha( 0.5 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -40,7 +40,7 @@ CoD.ArenaRubyProgressRedBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.FocusGlow01 = FocusGlow01
 	
 	local Dot01 = LUI.UIImage.new( 0, 1, 90, -90, 0, 1, 21, -21 )
-	Dot01:setImage( RegisterImage( 0x4B6FFA90272070E ) )
+	Dot01:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
 	Dot01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	Dot01:setShaderVector( 0, 0, 0, 0, 0 )
 	Dot01:setupNineSliceShader( 24, 24 )

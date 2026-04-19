@@ -88,7 +88,7 @@ LUI.createMenu.StartMenu_Options_Graphics_Colorblind = function ( f1_arg0, f1_ar
 		PlaySoundAlias( "uin_paint_decal_nav" )
 		return true
 	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( Buttons )
@@ -112,7 +112,7 @@ LUI.createMenu.StartMenu_Options_Graphics_Colorblind = function ( f1_arg0, f1_ar
 	BGFill:setRGB( 0, 0, 0 )
 	BGFill:setAlpha( 0.55 )
 	BGFill:setZoom( 40 )
-	BGFill:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	BGFill:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	BGFill:setShaderVector( 0, 0, 0, 0, 0 )
 	BGFill:setupNineSliceShader( 6, 6 )
 	self:addElement( BGFill )
@@ -154,7 +154,7 @@ LUI.createMenu.StartMenu_Options_Graphics_Colorblind = function ( f1_arg0, f1_ar
 		GoBack( self, f11_arg2 )
 		return true
 	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], "ui_contextual_2", function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )

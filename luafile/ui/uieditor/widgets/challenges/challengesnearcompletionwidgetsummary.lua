@@ -14,7 +14,7 @@ CoD.ChallengesNearCompletionWidgetSummary.new = function ( f1_arg0, f1_arg1, f1_
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.8 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -23,8 +23,8 @@ CoD.ChallengesNearCompletionWidgetSummary.new = function ( f1_arg0, f1_arg1, f1_
 	
 	local FrameBorder = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	FrameBorder:setAlpha( 0.15 )
-	FrameBorder:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrameBorder:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrameBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FrameBorder:setupNineSliceShader( 12, 12 )
 	self:addElement( FrameBorder )
@@ -32,8 +32,8 @@ CoD.ChallengesNearCompletionWidgetSummary.new = function ( f1_arg0, f1_arg1, f1_
 	
 	local ProgressBarBorder = LUI.UIImage.new( 0, 0.75, 3, 5, 0.06, 0.94, -1, 1 )
 	ProgressBarBorder:setAlpha( 0.05 )
-	ProgressBarBorder:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	ProgressBarBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	ProgressBarBorder:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	ProgressBarBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ProgressBarBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	ProgressBarBorder:setupNineSliceShader( 12, 12 )
 	self:addElement( ProgressBarBorder )
@@ -42,7 +42,7 @@ CoD.ChallengesNearCompletionWidgetSummary.new = function ( f1_arg0, f1_arg1, f1_
 	local ProgressBar = LUI.UIImage.new( 0, 0.75, 5, 3, 0.06, 0.94, 1, -1 )
 	ProgressBar:setRGB( 1, 0.36, 0 )
 	ProgressBar:setAlpha( 0.15 )
-	ProgressBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x910274CA3518744 ) )
+	ProgressBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	ProgressBar:setShaderVector( 1, 0, 0, 0, 0 )
 	ProgressBar:setShaderVector( 2, 1, 0, 0, 0 )
 	ProgressBar:setShaderVector( 3, 0, 0, 0, 0 )
@@ -88,7 +88,7 @@ CoD.ChallengesNearCompletionWidgetSummary.new = function ( f1_arg0, f1_arg1, f1_
 	local TitleBg = LUI.UIImage.new( 0.73, 0.73, 145, 177, 0, 0, 24, 56 )
 	TitleBg:setRGB( 0, 0, 0 )
 	TitleBg:setAlpha( 0.85 )
-	TitleBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE125638BF94665F ) )
+	TitleBg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	TitleBg:setShaderVector( 0, 0.02, 0.02, 0.02, 0.02 )
 	self:addElement( TitleBg )
 	self.TitleBg = TitleBg

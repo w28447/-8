@@ -20,7 +20,7 @@ CoD.BountyHunterAmmoBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local FocusGlow = LUI.UIImage.new( 0, 1, -133, 133, 0, 1, -15, 15 )
 	FocusGlow:setAlpha( 0 )
-	FocusGlow:setImage( RegisterImage( 0x8E79E4E42B6714C ) )
+	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_large" ) )
 	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.25, 0.25 )
 	FocusGlow:setShaderVector( 1, 1.2, 0, 0, 0 )
@@ -30,7 +30,7 @@ CoD.BountyHunterAmmoBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local NoiseTiledBackingMain = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBackingMain:setAlpha( 0.8 )
-	NoiseTiledBackingMain:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBackingMain:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBackingMain:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBackingMain:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBackingMain:setupNineSliceShader( 196, 88 )

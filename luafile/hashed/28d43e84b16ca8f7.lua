@@ -37,7 +37,7 @@ CoD.PlayerWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	local Backer = LUI.UIImage.new( 0, 0, -32.5, 334.5, 0, 0, 8, 101 )
 	Backer:setAlpha( 0 )
 	Backer:setImage( RegisterImage( 0xA3887D32AFD1940 ) )
-	Backer:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE125638BF94665F ) )
+	Backer:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	Backer:setShaderVector( 0, 0.05, 0.2, 0.05, 0.2 )
 	self:addElement( Backer )
 	self.Backer = Backer

@@ -65,13 +65,13 @@ CoD.ZMLobbyButtonsContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		end
 	end, function ( f8_arg0, f8_arg1, f8_arg2 )
 		if not CoD.DirectorUtility.IsNumClientsExceeded( f8_arg2 ) and CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( f8_arg2 ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif CoD.DirectorUtility.IsNumClientsExceeded( f8_arg2 ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif not CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( f8_arg2 ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -81,8 +81,8 @@ CoD.ZMLobbyButtonsContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.PrivateMatchButton = PrivateMatchButton
 	
 	PublicMatchButton = CoD.DirectorPreGameButtonOption.new( f1_arg0, f1_arg1, 0.52, 1, 0, 0, 0, 1, 0, 0 )
-	PublicMatchButton.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( 0x21227B49B2CBED8 ) )
-	PublicMatchButton.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( 0x21227B49B2CBED8 ) )
+	PublicMatchButton.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( "menu/public_match" ) )
+	PublicMatchButton.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( "menu/public_match" ) )
 	f1_local4 = PublicMatchButton
 	f1_local2 = PublicMatchButton.subscribeToModel
 	local f1_local5 = Engine.GetGlobalModel()
@@ -123,13 +123,13 @@ CoD.ZMLobbyButtonsContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		end
 	end, function ( f13_arg0, f13_arg1, f13_arg2 )
 		if not CoD.DirectorUtility.IsNumClientsExceeded( f13_arg2 ) and CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( f13_arg2 ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif CoD.DirectorUtility.IsNumClientsExceeded( f13_arg2 ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif not CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( f13_arg2 ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

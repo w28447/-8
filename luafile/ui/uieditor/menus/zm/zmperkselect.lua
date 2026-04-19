@@ -144,7 +144,7 @@ LUI.createMenu.ZMPerkSelect = function ( f2_arg0, f2_arg1 )
 		end
 	end, function ( f12_arg0, f12_arg1, f12_arg2 )
 		if not CoD.ZMPerkUtility.IsPerkLocked( f12_arg0, f12_arg2, f12_arg1 ) and not CoD.ZMPerkUtility.IsPerkEquippedInCurrentSlot( f12_arg0, f12_arg2, f12_arg1 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -216,7 +216,7 @@ LUI.createMenu.ZMPerkSelect = function ( f2_arg0, f2_arg1 )
 		end
 	end, function ( f21_arg0, f21_arg1, f21_arg2 )
 		if not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToSelfModelValue( f21_arg0, f21_arg2, "ZMEquippedPerks", "currentSlot", "slotIndex" ) then
-			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], nil )
+			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], nil )
 			return true
 		else
 			return false
@@ -239,7 +239,7 @@ LUI.createMenu.ZMPerkSelect = function ( f2_arg0, f2_arg1 )
 	
 	SubHeaderDivider = LUI.UIImage.new( 0.5, 0.5, 492.5, 882.5, 0.5, 0.5, 194, 195 )
 	SubHeaderDivider:setRGB( 0.92, 0.92, 0.92 )
-	SubHeaderDivider:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	SubHeaderDivider:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	SubHeaderDivider:setShaderVector( 0, 0, 1, 0, 0 )
 	SubHeaderDivider:setShaderVector( 1, 0, 1.24, 0, 0 )
 	SubHeaderDivider:setShaderVector( 2, 0, 1, 0, 0 )
@@ -373,7 +373,7 @@ LUI.createMenu.ZMPerkSelect = function ( f2_arg0, f2_arg1 )
 		GoBack( self, f37_arg2 )
 		return true
 	end, function ( f38_arg0, f38_arg1, f38_arg2 )
-		CoD.Menu.SetButtonLabel( f38_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f38_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

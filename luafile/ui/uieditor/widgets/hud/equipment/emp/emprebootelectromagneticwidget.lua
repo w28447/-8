@@ -15,7 +15,7 @@ CoD.EmpRebootElectromagneticWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local CenterBox = LUI.UIImage.new( 0.5, 0.5, -321, 321, 0.5, 0.5, -37, 37 )
 	CenterBox:setRGB( 0.73, 0, 0 )
 	CenterBox:setImage( RegisterImage( 0xA091CA57D6C0666 ) )
-	CenterBox:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	CenterBox:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CenterBox )
 	self.CenterBox = CenterBox
 	
@@ -23,7 +23,7 @@ CoD.EmpRebootElectromagneticWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	CenterBox0:setRGB( 0.73, 0, 0 )
 	CenterBox0:setZoom( -20 )
 	CenterBox0:setImage( RegisterImage( 0xA091CA57D6C0666 ) )
-	CenterBox0:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	CenterBox0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CenterBox0 )
 	self.CenterBox0 = CenterBox0
 	
@@ -34,7 +34,7 @@ CoD.EmpRebootElectromagneticWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	TextBoxWarningText2:setShaderVector( 0, 0.1, 0, 0, 0 )
 	TextBoxWarningText2:setShaderVector( 1, 0, 0, 0, 0 )
 	TextBoxWarningText2:setShaderVector( 2, 1, 0, 0, 0 )
-	TextBoxWarningText2:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	TextBoxWarningText2:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	TextBoxWarningText2:setLetterSpacing( 1 )
 	TextBoxWarningText2:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	TextBoxWarningText2:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

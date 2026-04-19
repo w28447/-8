@@ -23,7 +23,7 @@ LUI.createMenu.zm_hint_text = function ( f1_arg0, f1_arg1 )
 	txtHintText:setBackingColor( ColorSet.BadgeText.r, ColorSet.BadgeText.g, ColorSet.BadgeText.b )
 	txtHintText:setBackingXPadding( 6 )
 	txtHintText:setBackingYPadding( 4 )
-	txtHintText:setBackingImage( RegisterImage( 0x75D661B612187DF ) )
+	txtHintText:setBackingImage( RegisterImage( "uie_objbg" ) )
 	txtHintText:linkToElementModel( self, "text", true, function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then

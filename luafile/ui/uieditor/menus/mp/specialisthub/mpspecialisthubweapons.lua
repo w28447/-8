@@ -99,7 +99,7 @@ LUI.createMenu.MPSpecialistHUBWeapons = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f10_arg0, f10_arg1, f10_arg2 )
 		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( self, f10_arg2, "weaponMovie.hiResVideo.movieName" ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -156,7 +156,7 @@ LUI.createMenu.MPSpecialistHUBWeapons = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f18_arg0, f18_arg1, f18_arg2 )
 		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( self, f18_arg2, "specialIssueMovie.hiResVideo.movieName" ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -204,7 +204,7 @@ LUI.createMenu.MPSpecialistHUBWeapons = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f24_arg0, f24_arg1, f24_arg2 )
 		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( self, f24_arg2, "tipsMovie.hiResVideo.movieName" ) then
-			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -244,8 +244,8 @@ LUI.createMenu.MPSpecialistHUBWeapons = function ( f1_arg0, f1_arg1 )
 	
 	local LayoutBotStripe = LUI.UIImage.new( 0.5, 0.5, -683, 693, 0.5, 0.5, 403.5, 431.5 )
 	LayoutBotStripe:setAlpha( 0.5 )
-	LayoutBotStripe:setImage( RegisterImage( 0x36E1590316DA74B ) )
-	LayoutBotStripe:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	LayoutBotStripe:setImage( RegisterImage( "uie_ui_menu_specialist_hub_stripe_bot" ) )
+	LayoutBotStripe:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( LayoutBotStripe )
 	self.LayoutBotStripe = LayoutBotStripe
 	
@@ -278,8 +278,8 @@ LUI.createMenu.MPSpecialistHUBWeapons = function ( f1_arg0, f1_arg1 )
 	
 	local LayoutTopBar = LUI.UIImage.new( 0.5, 0.5, -888, 888, 0.5, 0.5, -505.5, -485.5 )
 	LayoutTopBar:setAlpha( 0.6 )
-	LayoutTopBar:setImage( RegisterImage( 0x1426C1694668EB3 ) )
-	LayoutTopBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	LayoutTopBar:setImage( RegisterImage( "uie_ui_menu_specialist_hub_layout_topbar" ) )
+	LayoutTopBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	LayoutTopBar:setShaderVector( 0, 0, 0, 0, 0 )
 	LayoutTopBar:setupNineSliceShader( 6, 6 )
 	self:addElement( LayoutTopBar )
@@ -297,7 +297,7 @@ LUI.createMenu.MPSpecialistHUBWeapons = function ( f1_arg0, f1_arg1 )
 	local GridOutlineBL = LUI.UIImage.new( 0.5, 0.5, -1033, -693, 0.5, 0.5, 189, 191 )
 	GridOutlineBL:setAlpha( 0.1 )
 	GridOutlineBL:setZRot( 90 )
-	GridOutlineBL:setImage( RegisterImage( 0x84B43D5B04D263A ) )
+	GridOutlineBL:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_line" ) )
 	GridOutlineBL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	GridOutlineBL:setShaderVector( 0, 0, 0, 0, 0 )
 	GridOutlineBL:setupNineSliceShader( 4, 2 )
@@ -307,7 +307,7 @@ LUI.createMenu.MPSpecialistHUBWeapons = function ( f1_arg0, f1_arg1 )
 	local GridOutlineTL = LUI.UIImage.new( 0.5, 0.5, -1033, -693, 0.5, 0.5, -209, -207 )
 	GridOutlineTL:setAlpha( 0.1 )
 	GridOutlineTL:setZRot( 90 )
-	GridOutlineTL:setImage( RegisterImage( 0x84B43D5B04D263A ) )
+	GridOutlineTL:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_line" ) )
 	GridOutlineTL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	GridOutlineTL:setShaderVector( 0, 0, 0, 0, 0 )
 	GridOutlineTL:setupNineSliceShader( 4, 2 )
@@ -317,7 +317,7 @@ LUI.createMenu.MPSpecialistHUBWeapons = function ( f1_arg0, f1_arg1 )
 	local GridOutlineBR = LUI.UIImage.new( 0.5, 0.5, 704, 1044, 0.5, 0.5, 190, 192 )
 	GridOutlineBR:setAlpha( 0.1 )
 	GridOutlineBR:setZRot( 90 )
-	GridOutlineBR:setImage( RegisterImage( 0x84B43D5B04D263A ) )
+	GridOutlineBR:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_line" ) )
 	GridOutlineBR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	GridOutlineBR:setShaderVector( 0, 0, 0, 0, 0 )
 	GridOutlineBR:setupNineSliceShader( 4, 2 )
@@ -327,7 +327,7 @@ LUI.createMenu.MPSpecialistHUBWeapons = function ( f1_arg0, f1_arg1 )
 	local GridOutlineTR = LUI.UIImage.new( 0.5, 0.5, 704, 1044, 0.5, 0.5, -207, -205 )
 	GridOutlineTR:setAlpha( 0.1 )
 	GridOutlineTR:setZRot( 90 )
-	GridOutlineTR:setImage( RegisterImage( 0x84B43D5B04D263A ) )
+	GridOutlineTR:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_line" ) )
 	GridOutlineTR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	GridOutlineTR:setShaderVector( 0, 0, 0, 0, 0 )
 	GridOutlineTR:setupNineSliceShader( 4, 2 )
@@ -365,7 +365,7 @@ LUI.createMenu.MPSpecialistHUBWeapons = function ( f1_arg0, f1_arg1 )
 		GoBack( self, f27_arg2 )
 		return true
 	end, function ( f28_arg0, f28_arg1, f28_arg2 )
-		CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

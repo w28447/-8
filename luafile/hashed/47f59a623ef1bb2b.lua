@@ -27,7 +27,7 @@ CoD.SpecialistHeadquartersButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local Header = LUI.UIText.new( 0, 1, 0, 0, 0.5, 0.5, -16.5, 16.5 )
 	Header:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	Header:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	Header:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	Header:setTTF( "ttmussels_regular" )
 	Header:setLetterSpacing( 5 )
 	Header:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

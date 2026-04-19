@@ -570,7 +570,7 @@ LUI.createMenu.Director = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f46_arg0, f46_arg1, f46_arg2 )
 		if not IsPC() then
-			CoD.Menu.SetButtonLabel( f46_arg1, Enum.LUIButton[0x22361E23588705A], 0x4DC58203AB2DE0, nil, nil )
+			CoD.Menu.SetButtonLabel( f46_arg1, Enum.LUIButton[0x22361E23588705A], "menu/menu", nil, nil )
 			return true
 		else
 			return false
@@ -679,49 +679,49 @@ LUI.createMenu.Director = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f52_arg0, f52_arg1, f52_arg2 )
 		if IsMouseOrKeyboard( f52_arg2 ) and CoD.DirectorUtility.IsLoadoutPreviewWidgetShown( f52_arg2 ) then
-			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], 0x70A9FDC87CD3D48, nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], "menu/back", nil, "ESCAPE" )
 			return true
 		elseif IsMouseOrKeyboard( f52_arg2 ) and CoD.DirectorUtility.ShowDirectorCustom( self, f52_arg2 ) and CoD.DirectorUtility.HasSelectedClient( f52_arg2 ) then
-			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], 0xC2E92C54C2BE289, nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], "menu/cancel", nil, "ESCAPE" )
 			return true
 		elseif IsMouseOrKeyboard( f52_arg2 ) and CoD.DirectorUtility.IsLoadoutPreviewWidgetShown( f52_arg2 ) then
-			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], 0x70A9FDC87CD3D48, nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], "menu/back", nil, "ESCAPE" )
 			return true
 		elseif IsMouseOrKeyboard( f52_arg2 ) and CoD.DirectorUtility.ShowDirectorCustom( self, f52_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) and not CoD.DirectorUtility.IsOfflineDemo() and not CoD.DirectorUtility.ShowDirectorPregame( f52_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
-			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], 0x70A9FDC87CD3D48, nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], "menu/back", nil, "ESCAPE" )
 			return true
 		elseif IsMouseOrKeyboard( f52_arg2 ) and CoD.DirectorUtility.ShowDirectorArenaMatchmaking( f52_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) and not CoD.ArenaUtility.ArenaMatchSet( self ) then
-			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], 0x70A9FDC87CD3D48, nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], "menu/back", nil, "ESCAPE" )
 			return true
 		elseif IsMouseOrKeyboard( f52_arg2 ) and CoD.DirectorUtility.ShowDirectorTheater( f52_arg2 ) and CoD.DirectorUtility.HasSelectedClient( f52_arg2 ) then
-			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], 0xC2E92C54C2BE289, nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], "menu/cancel", nil, "ESCAPE" )
 			return true
 		elseif IsMouseOrKeyboard( f52_arg2 ) and CoD.DirectorUtility.ShowDirectorTheater( f52_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
-			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], 0x70A9FDC87CD3D48, nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], "menu/back", nil, "ESCAPE" )
 			return true
 		elseif IsMouseOrKeyboard( f52_arg2 ) and CoD.DirectorUtility.ShowDirectorPublic( f52_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) and IsLobbyPrivateHost() and IsWarzone() and IsPC() then
-			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], 0x70A9FDC87CD3D48, nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], "menu/back", nil, "ESCAPE" )
 			return true
 		elseif IsMouseOrKeyboard( f52_arg2 ) and CoD.DirectorUtility.ShowDirectorPublic( f52_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) and IsLobbyPrivateHost() and IsWarzone() then
-			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], 0x70A9FDC87CD3D48, nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], "menu/back", nil, "ESCAPE" )
 			return true
 		elseif IsMouseOrKeyboard( f52_arg2 ) and CoD.DirectorUtility.ShowDirectorPublic( f52_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
-			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], 0x70A9FDC87CD3D48, nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], "menu/back", nil, "ESCAPE" )
 			return true
 		elseif IsMouseOrKeyboard( f52_arg2 ) and CoD.LobbyUtility.ShouldShowLeaveLobbyPopup() and not CoD.DirectorUtility.ShowDirectorPublic( f52_arg2 ) and not CoD.DirectorUtility.IsOfflineDemo() and not CoD.DirectorUtility.ShowDirectorArenaMatchmaking( f52_arg2 ) then
-			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], 0x70A9FDC87CD3D48, nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], "menu/back", nil, "ESCAPE" )
 			return true
 		elseif IsMouseOrKeyboard( f52_arg2 ) and CoD.DirectorUtility.ShowDirectorCustom( self, f52_arg2 ) and CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) and IsLobbyHostOfCurrentMenu() then
-			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], 0xC2E92C54C2BE289, nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], "menu/cancel", nil, "ESCAPE" )
 			return true
 		elseif IsMouseOrKeyboard( f52_arg2 ) and CoD.DirectorUtility.ShowDirectorTheater( f52_arg2 ) and CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) and IsLobbyHostOfCurrentMenu() then
-			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], 0xC2E92C54C2BE289, nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], "menu/cancel", nil, "ESCAPE" )
 			return true
 		elseif IsMouseOrKeyboard( f52_arg2 ) and CoD.DirectorUtility.ShowDirectorSelect( f52_arg2 ) then
 			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], 0xB2EF56B4AF147B8, nil, "ESCAPE" )
 			return true
 		elseif IsMouseOrKeyboard( f52_arg2 ) and CoD.DirectorUtility.AllowShortPressToGoBack( self, f52_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
-			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], 0x70A9FDC87CD3D48, nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], "menu/back", nil, "ESCAPE" )
 			return true
 		else
 			return false
@@ -787,7 +787,7 @@ LUI.createMenu.Director = function ( f1_arg0, f1_arg1 )
 			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x6287CA575B55EC0, nil, nil )
 			return true
 		elseif IsGamepad( f54_arg2 ) and CoD.DirectorUtility.ShowDirectorCustom( self, f54_arg2 ) and CoD.DirectorUtility.HasSelectedClient( f54_arg2 ) then
-			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0xC2E92C54C2BE289, nil, nil )
+			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/cancel", nil, nil )
 			return true
 		elseif IsGamepad( f54_arg2 ) and CoD.DirectorUtility.IsLoadoutPreviewWidgetShown( f54_arg2 ) then
 			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0xEF2D3320785B51A, nil, nil )
@@ -799,13 +799,13 @@ LUI.createMenu.Director = function ( f1_arg0, f1_arg1 )
 			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0xEF2D3320785B51A, nil, nil )
 			return true
 		elseif IsGamepad( f54_arg2 ) and CoD.DirectorUtility.ShowDirectorTheater( f54_arg2 ) and CoD.DirectorUtility.HasSelectedClient( f54_arg2 ) then
-			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0xC2E92C54C2BE289, nil, nil )
+			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/cancel", nil, nil )
 			return true
 		elseif IsGamepad( f54_arg2 ) and CoD.DirectorUtility.ShowDirectorTheater( f54_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
-			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		elseif IsGamepad( f54_arg2 ) and CoD.DirectorUtility.ShowDirectorPublic( f54_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) and IsLobbyPrivateHost() and IsWarzone() and IsPC() then
-			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		elseif IsGamepad( f54_arg2 ) and CoD.DirectorUtility.ShowDirectorPublic( f54_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) and IsLobbyPrivateHost() and IsWarzone() then
 			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0xFF006933C958CA6, nil, nil )
@@ -817,19 +817,19 @@ LUI.createMenu.Director = function ( f1_arg0, f1_arg1 )
 			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0xEF2D3320785B51A, nil, nil )
 			return true
 		elseif IsGamepad( f54_arg2 ) and CoD.DirectorUtility.ShowDirectorCustom( self, f54_arg2 ) and CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) and IsLobbyHostOfCurrentMenu() then
-			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0xC2E92C54C2BE289, nil, nil )
+			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/cancel", nil, nil )
 			return true
 		elseif IsGamepad( f54_arg2 ) and CoD.DirectorUtility.ShowDirectorTheater( f54_arg2 ) and CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) and IsLobbyHostOfCurrentMenu() then
-			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0xC2E92C54C2BE289, nil, nil )
+			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/cancel", nil, nil )
 			return true
 		elseif IsGamepad( f54_arg2 ) and CoD.DirectorUtility.ShowDirectorSelect( f54_arg2 ) and IsPC() then
 			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0xB2EF56B4AF147B8, nil, nil )
 			return true
 		elseif IsGamepad( f54_arg2 ) and CoD.DirectorUtility.AllowShortPressToGoBack( self, f54_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
-			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		elseif IsGamepad( f54_arg2 ) and CoD.DirectorUtility.IsLoadoutPreviewWidgetShown( f54_arg2 ) and IsPC() then
-			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		else
 			return false

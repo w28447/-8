@@ -22,7 +22,7 @@ CoD.vhud_CenterCircleHorizon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local CenterCircleHorizon0 = LUI.UIImage.new( 0.5, 0.5, -58, 58, 0.5, 0.5, -40, 40 )
 	CenterCircleHorizon0:setImage( RegisterImage( 0x999492673C51C27 ) )
-	CenterCircleHorizon0:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	CenterCircleHorizon0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CenterCircleHorizon0 )
 	self.CenterCircleHorizon0 = CenterCircleHorizon0
 	

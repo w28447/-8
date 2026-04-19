@@ -10,7 +10,7 @@ CoD.Challenges_ProfilerLockBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local TitleBg = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TitleBg:setRGB( 0, 0, 0 )
 	TitleBg:setAlpha( 0.85 )
-	TitleBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE125638BF94665F ) )
+	TitleBg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	TitleBg:setShaderVector( 0, 0.02, 0.02, 0.02, 0.02 )
 	self:addElement( TitleBg )
 	self.TitleBg = TitleBg

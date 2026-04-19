@@ -16,8 +16,8 @@ CoD.Challenges_TotalMasterProgress.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local FrameBorder = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	FrameBorder:setAlpha( 0.01 )
-	FrameBorder:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrameBorder:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrameBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FrameBorder:setupNineSliceShader( 12, 12 )
 	self:addElement( FrameBorder )
@@ -50,8 +50,8 @@ CoD.Challenges_TotalMasterProgress.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local ProgressBorder = LUI.UIImage.new( 0, 0.68, 4, 6, 0.05, 0.95, -1, 1 )
 	ProgressBorder:setAlpha( 0.1 )
-	ProgressBorder:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	ProgressBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	ProgressBorder:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	ProgressBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ProgressBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	ProgressBorder:setupNineSliceShader( 12, 12 )
 	self:addElement( ProgressBorder )
@@ -60,7 +60,7 @@ CoD.Challenges_TotalMasterProgress.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local ProgressBar = LUI.UIImage.new( 0, 0.68, 6, 4, 0.06, 0.94, 0, 0 )
 	ProgressBar:setRGB( 1, 0.36, 0 )
 	ProgressBar:setAlpha( 0.15 )
-	ProgressBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x910274CA3518744 ) )
+	ProgressBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	ProgressBar:setShaderVector( 1, 0, 0, 0, 0 )
 	ProgressBar:setShaderVector( 2, 1, 0, 0, 0 )
 	ProgressBar:setShaderVector( 3, 0, 0, 0, 0 )
@@ -77,7 +77,7 @@ CoD.Challenges_TotalMasterProgress.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local LockIconBacking = LUI.UIImage.new( 0.73, 0.73, 105.5, 145.5, 0, 0, 30, 70 )
 	LockIconBacking:setRGB( 0, 0, 0 )
 	LockIconBacking:setAlpha( 0.85 )
-	LockIconBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE125638BF94665F ) )
+	LockIconBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	LockIconBacking:setShaderVector( 0, 0.02, 0.02, 0.02, 0.02 )
 	self:addElement( LockIconBacking )
 	self.LockIconBacking = LockIconBacking
@@ -127,27 +127,27 @@ CoD.Challenges_TotalMasterProgress.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local CornerPip = LUI.UIImage.new( 0, 0, 0, 15, 1, 1, -15, 0 )
 	CornerPip:setAlpha( 0.15 )
 	CornerPip:setZRot( -90 )
-	CornerPip:setImage( RegisterImage( 0x8DC834094E7A02C ) )
+	CornerPip:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
 	self:addElement( CornerPip )
 	self.CornerPip = CornerPip
 	
 	local CornerPip4 = LUI.UIImage.new( 1, 1, -15, 0, 1, 1, -15, 0 )
 	CornerPip4:setAlpha( 0.15 )
-	CornerPip4:setImage( RegisterImage( 0x8DC834094E7A02C ) )
+	CornerPip4:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
 	self:addElement( CornerPip4 )
 	self.CornerPip4 = CornerPip4
 	
 	local CornerPip3 = LUI.UIImage.new( 0, 0, 0, 15, 0, 0, 0, 15 )
 	CornerPip3:setAlpha( 0.15 )
 	CornerPip3:setZRot( 180 )
-	CornerPip3:setImage( RegisterImage( 0x8DC834094E7A02C ) )
+	CornerPip3:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
 	self:addElement( CornerPip3 )
 	self.CornerPip3 = CornerPip3
 	
 	local CornerPip2 = LUI.UIImage.new( 1, 1, -15, 0, 0, 0, 0, 15 )
 	CornerPip2:setAlpha( 0.15 )
 	CornerPip2:setZRot( 90 )
-	CornerPip2:setImage( RegisterImage( 0x8DC834094E7A02C ) )
+	CornerPip2:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
 	self:addElement( CornerPip2 )
 	self.CornerPip2 = CornerPip2
 	

@@ -18,19 +18,19 @@ CoD.zm_hud_gameover_titlesequence.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	SmokeHorizontal:setAlpha( 0 )
 	SmokeHorizontal:setZRot( 191 )
 	SmokeHorizontal:setScale( 1.14, 0.6 )
-	SmokeHorizontal:setImage( RegisterImage( 0xF034C487614E57C ) )
+	SmokeHorizontal:setImage( RegisterImage( "uie_zm_hud_inventory_objectivesmoke" ) )
 	SmokeHorizontal:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	SmokeHorizontal:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( SmokeHorizontal )
 	self.SmokeHorizontal = SmokeHorizontal
 	
 	local CornerL = LUI.UIImage.new( 0, 0, 144.5, 159.5, 0, 0, 227.5, 242.5 )
-	CornerL:setImage( RegisterImage( uie_zm_hud_cornerdecoration ) )
+	CornerL:setImage( RegisterImage( "uie_zm_hud_cornerdecoration" ) )
 	self:addElement( CornerL )
 	self.CornerL = CornerL
 	
 	local CornerR = LUI.UIImage.new( 0, 0, 642.5, 657.5, 0, 0, 227.5, 242.5 )
-	CornerR:setImage( RegisterImage( uie_zm_hud_cornerdecoration ) )
+	CornerR:setImage( RegisterImage( "uie_zm_hud_cornerdecoration" ) )
 	self:addElement( CornerR )
 	self.CornerR = CornerR
 	

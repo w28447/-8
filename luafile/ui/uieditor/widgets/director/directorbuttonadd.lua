@@ -13,7 +13,7 @@ CoD.DirectorButtonAdd.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -28,8 +28,8 @@ CoD.DirectorButtonAdd.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local FrontendFrame = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	FrontendFrame:setAlpha( 0.2 )
-	FrontendFrame:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrontendFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrame:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrontendFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrame:setupNineSliceShader( 12, 12 )
 	self:addElement( FrontendFrame )
@@ -44,7 +44,7 @@ CoD.DirectorButtonAdd.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	ButtonAddPlusHighlighted:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	ButtonAddPlusHighlighted:setAlpha( 0 )
 	ButtonAddPlusHighlighted:setImage( RegisterImage( 0x63E82F3B2442EBB ) )
-	ButtonAddPlusHighlighted:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	ButtonAddPlusHighlighted:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ButtonAddPlusHighlighted )
 	self.ButtonAddPlusHighlighted = ButtonAddPlusHighlighted
 	

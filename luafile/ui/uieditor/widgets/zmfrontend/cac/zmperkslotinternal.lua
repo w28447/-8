@@ -35,7 +35,7 @@ CoD.ZMPerkSlotInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local Box = LUI.UIImage.new( 0, 0, -52, 280, 0, 0, -54, 530 )
 	Box:setAlpha( 0.5 )
-	Box:setImage( RegisterImage( 0xB13F8EB16628086 ) )
+	Box:setImage( RegisterImage( "uie_ui_menu_zombies_cac_altar_box" ) )
 	self:addElement( Box )
 	self.Box = Box
 	
@@ -47,8 +47,8 @@ CoD.ZMPerkSlotInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local LightFocus = LUI.UIImage.new( 0, 0, -52, 280, 0, 0, -42, 540 )
 	LightFocus:setAlpha( 0 )
-	LightFocus:setImage( RegisterImage( 0x4B9ACBDE2839A0C ) )
-	LightFocus:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	LightFocus:setImage( RegisterImage( "uie_ui_menu_zombies_cac_altar_light_focus" ) )
+	LightFocus:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	LightFocus:setShaderVector( 0, 0, 1, 0, 0 )
 	LightFocus:setShaderVector( 1, 0, 0, 0, 0 )
 	LightFocus:setShaderVector( 2, 0, 1, 0, 0 )
@@ -60,43 +60,43 @@ CoD.ZMPerkSlotInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local LightFocus2 = LUI.UIImage.new( 0.5, 0.5, -130.5, 128.5, 0.5, 0.5, -307.5, 247.5 )
 	LightFocus2:setRGB( 0.92, 0.89, 0.72 )
 	LightFocus2:setAlpha( 0 )
-	LightFocus2:setImage( RegisterImage( 0x4A90041BA223660 ) )
+	LightFocus2:setImage( RegisterImage( "uie_ui_menu_zombies_cac_elixir_slot_light_focus" ) )
 	self:addElement( LightFocus2 )
 	self.LightFocus2 = LightFocus2
 	
 	local Brackets = LUI.UIImage.new( 0, 0, -52, 280, 0, 0, -54, 530 )
 	Brackets:setRGB( ColorSet.T8__BEIGE__HEADER.r, ColorSet.T8__BEIGE__HEADER.g, ColorSet.T8__BEIGE__HEADER.b )
 	Brackets:setAlpha( 0.5 )
-	Brackets:setImage( RegisterImage( 0x8C7C8434A438944 ) )
+	Brackets:setImage( RegisterImage( "uie_ui_menu_zombies_cac_altar_brackets" ) )
 	self:addElement( Brackets )
 	self.Brackets = Brackets
 	
 	local BracketsFocus = LUI.UIImage.new( 0, 0, -52, 280, 0, 0, -54, 530 )
 	BracketsFocus:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	BracketsFocus:setAlpha( 0 )
-	BracketsFocus:setImage( RegisterImage( 0xCF3F74B4755197F ) )
+	BracketsFocus:setImage( RegisterImage( "uie_ui_menu_zombies_cac_altar_brackets_focus" ) )
 	self:addElement( BracketsFocus )
 	self.BracketsFocus = BracketsFocus
 	
 	local Dots = LUI.UIImage.new( 0, 0, -52, 280, 0, 0, -54, 530 )
-	Dots:setImage( RegisterImage( 0xD39EC83CBF9A9E5 ) )
+	Dots:setImage( RegisterImage( "uie_ui_menu_zombies_cac_altar_dots" ) )
 	self:addElement( Dots )
 	self.Dots = Dots
 	
 	local DotsFocus = LUI.UIImage.new( 0, 0, -52, 280, 0, 0, -54, 530 )
 	DotsFocus:setAlpha( 0 )
-	DotsFocus:setImage( RegisterImage( 0xAF38B8B642B8CB2 ) )
+	DotsFocus:setImage( RegisterImage( "uie_ui_menu_zombies_cac_altar_dots_focus" ) )
 	self:addElement( DotsFocus )
 	self.DotsFocus = DotsFocus
 	
 	local Bar = LUI.UIImage.new( 0, 0, -52, 280, 0, 0, 490, 530 )
-	Bar:setImage( RegisterImage( 0xAE3EEEB16394BC6 ) )
+	Bar:setImage( RegisterImage( "uie_ui_menu_zombies_cac_altar_bar" ) )
 	self:addElement( Bar )
 	self.Bar = Bar
 	
 	local BarFocus = LUI.UIImage.new( 0, 0, -52, 280, 0, 0, 490, 530 )
 	BarFocus:setAlpha( 0 )
-	BarFocus:setImage( RegisterImage( 0x8A17BB8D671B47D ) )
+	BarFocus:setImage( RegisterImage( "uie_ui_menu_zombies_cac_altar_bar_focus" ) )
 	self:addElement( BarFocus )
 	self.BarFocus = BarFocus
 	
@@ -113,14 +113,14 @@ CoD.ZMPerkSlotInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local ModifierBackground = LUI.UIImage.new( 0, 0, 0, 225, 0, 0, 401, 426 )
 	ModifierBackground:setRGB( 0, 0.06, 0.41 )
 	ModifierBackground:setAlpha( 0 )
-	ModifierBackground:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	ModifierBackground:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ModifierBackground )
 	self.ModifierBackground = ModifierBackground
 	
 	local ModifierLabel = LUI.UIText.new( 0.5, 0.5, -110, 110, 0, 0, 405, 423 )
 	ModifierLabel:setRGB( 0.42, 0.87, 1 )
 	ModifierLabel:setAlpha( 0 )
-	ModifierLabel:setText( Engine[0xF9F1239CFD921FE]( 0x8BD83BB21F177CE ) )
+	ModifierLabel:setText( Engine[0xF9F1239CFD921FE]( "zmui/modifier" ) )
 	ModifierLabel:setTTF( "ttmussels_regular" )
 	ModifierLabel:setLetterSpacing( 4 )
 	ModifierLabel:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -131,8 +131,8 @@ CoD.ZMPerkSlotInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local ModifierFrame = LUI.UIImage.new( 0, 0, 57, 169, 0, 0, 290, 402 )
 	ModifierFrame:setRGB( 0, 0.13, 0.89 )
 	ModifierFrame:setAlpha( 0 )
-	ModifierFrame:setImage( RegisterImage( 0xA9C0105E99D51D0 ) )
-	ModifierFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	ModifierFrame:setImage( RegisterImage( "uie_ui_menu_zombies_cac_perk_glow" ) )
+	ModifierFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ModifierFrame )
 	self.ModifierFrame = ModifierFrame
 	
@@ -273,7 +273,7 @@ CoD.ZMPerkSlotInternal.__resetProperties = function ( f14_arg0 )
 	f14_arg0.DotsFocus:setAlpha( 0 )
 	f14_arg0.BarFocus:setAlpha( 0 )
 	f14_arg0.LightFocus:setAlpha( 0 )
-	f14_arg0.LightFocus:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	f14_arg0.LightFocus:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	f14_arg0.LightFocus:setShaderVector( 0, 0, 1, 0, 0 )
 	f14_arg0.LightFocus:setShaderVector( 1, 0, 0, 0, 0 )
 	f14_arg0.LightFocus:setShaderVector( 2, 0, 1, 0, 0 )
@@ -326,7 +326,7 @@ CoD.ZMPerkSlotInternal.__clipsPerState = {
 			f16_arg0.clipFinished( f16_arg0.Colorize )
 			f16_arg0.LightFocus:completeAnimation()
 			f16_arg0.LightFocus:setAlpha( 0.1 )
-			f16_arg0.LightFocus:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+			f16_arg0.LightFocus:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 			f16_arg0.LightFocus:setShaderVector( 0, 0, 1, 0, 0 )
 			f16_arg0.LightFocus:setShaderVector( 1, 0, 0, 0, 0 )
 			f16_arg0.LightFocus:setShaderVector( 2, 0, 1, 0, 0 )
@@ -389,7 +389,7 @@ CoD.ZMPerkSlotInternal.__clipsPerState = {
 			
 			f17_arg0.LightFocus:completeAnimation()
 			f17_arg0.LightFocus:setAlpha( 0 )
-			f17_arg0.LightFocus:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+			f17_arg0.LightFocus:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 			f17_arg0.LightFocus:setShaderVector( 0, 0, 1, 0, 0 )
 			f17_arg0.LightFocus:setShaderVector( 1, 0, 0, 0, 0 )
 			f17_arg0.LightFocus:setShaderVector( 2, 1, 1, 0, 0 )
@@ -495,7 +495,7 @@ CoD.ZMPerkSlotInternal.__clipsPerState = {
 			
 			f26_arg0.LightFocus:completeAnimation()
 			f26_arg0.LightFocus:setAlpha( 0.1 )
-			f26_arg0.LightFocus:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+			f26_arg0.LightFocus:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 			f26_arg0.LightFocus:setShaderVector( 0, 0, 1, 0, 0 )
 			f26_arg0.LightFocus:setShaderVector( 1, 0, 0, 0, 0 )
 			f26_arg0.LightFocus:setShaderVector( 2, 0, 1, 0, 0 )
@@ -1205,7 +1205,7 @@ CoD.ZMPerkSlotInternal.__clipsPerState = {
 			f82_arg0.clipFinished( f82_arg0.Colorize )
 			f82_arg0.LightFocus:completeAnimation()
 			f82_arg0.LightFocus:setAlpha( 0.1 )
-			f82_arg0.LightFocus:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+			f82_arg0.LightFocus:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 			f82_arg0.LightFocus:setShaderVector( 0, 0, 1, 0, 0 )
 			f82_arg0.LightFocus:setShaderVector( 1, 0, 0, 0, 0 )
 			f82_arg0.LightFocus:setShaderVector( 2, 0, 1, 0, 0 )
@@ -1266,7 +1266,7 @@ CoD.ZMPerkSlotInternal.__clipsPerState = {
 			
 			f83_arg0.LightFocus:completeAnimation()
 			f83_arg0.LightFocus:setAlpha( 0 )
-			f83_arg0.LightFocus:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+			f83_arg0.LightFocus:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 			f83_arg0.LightFocus:setShaderVector( 0, 0, 1, 0, 0 )
 			f83_arg0.LightFocus:setShaderVector( 1, 0, 0, 0, 0 )
 			f83_arg0.LightFocus:setShaderVector( 2, 0, 1, 0, 0 )
@@ -1379,7 +1379,7 @@ CoD.ZMPerkSlotInternal.__clipsPerState = {
 			
 			f92_arg0.LightFocus:completeAnimation()
 			f92_arg0.LightFocus:setAlpha( 0.1 )
-			f92_arg0.LightFocus:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+			f92_arg0.LightFocus:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 			f92_arg0.LightFocus:setShaderVector( 0, 0, 1, 0, 0 )
 			f92_arg0.LightFocus:setShaderVector( 1, 0, 0, 0, 0 )
 			f92_arg0.LightFocus:setShaderVector( 2, 0, 1, 0, 0 )

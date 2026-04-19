@@ -35,7 +35,7 @@ CoD.TabletLocationSelector_Grid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local Pip2 = LUI.UIImage.new( 1, 1, -4.5, 3.5, 1, 1, -4.5, 3.5 )
 	Pip2:setAlpha( 0 )
 	Pip2:setImage( RegisterImage( 0x364778639313CE9 ) )
-	Pip2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Pip2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Pip2 )
 	self.Pip2 = Pip2
 	

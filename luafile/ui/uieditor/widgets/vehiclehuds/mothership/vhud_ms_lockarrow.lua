@@ -13,7 +13,7 @@ CoD.vhud_ms_LockArrow.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	Image0:setAlpha( 0.7 )
 	Image0:setZRot( 90 )
 	Image0:setImage( RegisterImage( 0x1234A0111C7E7F0 ) )
-	Image0:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Image0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image0 )
 	self.Image0 = Image0
 	

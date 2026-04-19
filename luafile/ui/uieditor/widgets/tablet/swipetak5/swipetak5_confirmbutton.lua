@@ -10,7 +10,7 @@ CoD.SwipeTak5_ConfirmButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local TiledBacking = LUI.UIImage.new( 0, 0, 54, 246, 0, 0, 29, 71 )
 	TiledBacking:setAlpha( 0.5 )
-	TiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking:setupNineSliceShader( 196, 88 )
@@ -68,7 +68,7 @@ CoD.SwipeTak5_ConfirmButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local ConfirmButtonFrame = LUI.UIImage.new( 0, 0, 52, 248, 0, 0, 26, 74 )
 	ConfirmButtonFrame:setImage( RegisterImage( 0xCA68993C4E8509E ) )
-	ConfirmButtonFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	ConfirmButtonFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ConfirmButtonFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	ConfirmButtonFrame:setupNineSliceShader( 12, 8 )
 	self:addElement( ConfirmButtonFrame )
@@ -78,7 +78,7 @@ CoD.SwipeTak5_ConfirmButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	ConfirmButtonFrameColor:setRGB( 1, 0.8, 0 )
 	ConfirmButtonFrameColor:setAlpha( 0 )
 	ConfirmButtonFrameColor:setImage( RegisterImage( 0xCA68993C4E8509E ) )
-	ConfirmButtonFrameColor:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	ConfirmButtonFrameColor:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	ConfirmButtonFrameColor:setShaderVector( 0, 0, 0, 0, 0 )
 	ConfirmButtonFrameColor:setupNineSliceShader( 12, 8 )
 	self:addElement( ConfirmButtonFrameColor )

@@ -30,7 +30,7 @@ CoD.SpawnRegionMarker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local TiledShaderImage = LUI.UIImage.new( 0, 0, 20.5, 281.5, 0, 0, 27, 73 )
 	TiledShaderImage:setAlpha( 0.6 )
-	TiledShaderImage:setImage( RegisterImage( 0x4B6FFA90272070E ) )
+	TiledShaderImage:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
 	TiledShaderImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledShaderImage:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledShaderImage:setupNineSliceShader( 24, 24 )

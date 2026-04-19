@@ -35,7 +35,7 @@ CoD.systemOverlay_reportPlayer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0.09, 0.09, -44.5, 439.5 )
 	NoiseTiledBacking:setAlpha( 0.65 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -135,7 +135,7 @@ CoD.systemOverlay_reportPlayer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 			modelName = "currentValue"
 		} )
 	end, false )
-	ReportButton.ButtonContainer.Title:setText( LocalizeToUpperString( 0x74834ABE9827A3 ) )
+	ReportButton.ButtonContainer.Title:setText( LocalizeToUpperString( "menu/report_player" ) )
 	ReportButton:registerEventHandler( "gain_focus", function ( element, event )
 		local f5_local0 = nil
 		if element.gainFocus then
@@ -160,7 +160,7 @@ CoD.systemOverlay_reportPlayer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	CancelButton = nil
 	
 	CancelButton = CoD.featureOverlay_Button.new( f1_arg0, f1_arg1, 0.5, 0.5, -123, 77, 0, 0, 370, 430 )
-	CancelButton.ButtonContainer.Title:setText( LocalizeToUpperString( 0xC2E92C54C2BE289 ) )
+	CancelButton.ButtonContainer.Title:setText( LocalizeToUpperString( "menu/cancel" ) )
 	CancelButton:registerEventHandler( "gain_focus", function ( element, event )
 		local f8_local0 = nil
 		if element.gainFocus then
@@ -255,7 +255,7 @@ CoD.systemOverlay_reportPlayer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	cornerBracket:setAlpha( 0.5 )
 	cornerBracket:setZRot( 180 )
 	cornerBracket:setImage( RegisterImage( 0x535662F512D5F90 ) )
-	cornerBracket:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	cornerBracket:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( cornerBracket )
 	self.cornerBracket = cornerBracket
 	
@@ -263,7 +263,7 @@ CoD.systemOverlay_reportPlayer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	cornerBracket4:setAlpha( 0.5 )
 	cornerBracket4:setZRot( 270 )
 	cornerBracket4:setImage( RegisterImage( 0x535662F512D5F90 ) )
-	cornerBracket4:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	cornerBracket4:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( cornerBracket4 )
 	self.cornerBracket4 = cornerBracket4
 	
@@ -271,14 +271,14 @@ CoD.systemOverlay_reportPlayer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	cornerBracket2:setAlpha( 0.5 )
 	cornerBracket2:setZRot( 90 )
 	cornerBracket2:setImage( RegisterImage( 0x535662F512D5F90 ) )
-	cornerBracket2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	cornerBracket2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( cornerBracket2 )
 	self.cornerBracket2 = cornerBracket2
 	
 	local cornerBracket3 = LUI.UIImage.new( 0.5, 0.5, -394, -382, 0, 0, 377, 389 )
 	cornerBracket3:setAlpha( 0.5 )
 	cornerBracket3:setImage( RegisterImage( 0x535662F512D5F90 ) )
-	cornerBracket3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	cornerBracket3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( cornerBracket3 )
 	self.cornerBracket3 = cornerBracket3
 	

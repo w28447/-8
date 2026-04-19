@@ -10,7 +10,7 @@ CoD.outofbounds_sidebar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local RightBar = LUI.UIImage.new( 0, 0, -0.5, 391.5, 0, 0, 0, 108 )
 	RightBar:setImage( RegisterImage( 0x58E45222EA3A7EF ) )
-	RightBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	RightBar:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( RightBar )
 	self.RightBar = RightBar
 	

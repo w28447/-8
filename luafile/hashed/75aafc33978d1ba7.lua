@@ -79,7 +79,7 @@ CoD.HighValueOperatives.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	FUI:setAlpha( 0.92 )
 	FUI:setYRot( 180 )
 	FUI:setImage( RegisterImage( 0x3C759323B37D3D7 ) )
-	FUI:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	FUI:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	FUI:setShaderVector( 0, 0.12, 1, 0, 0 )
 	FUI:setShaderVector( 1, 0.41, -0.13, 0, 0 )
 	FUI:setShaderVector( 2, 0, 1, 0, 0 )

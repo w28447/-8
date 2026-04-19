@@ -31,7 +31,7 @@ CoD.Challenges_PercentCompleteWidget_LG.new = function ( f1_arg0, f1_arg1, f1_ar
 	local percentCompleteCircle = LUI.UIImage.new( 0, 1, -24, 24, 0, 1, -24, 24 )
 	percentCompleteCircle:setRGB( 0.95, 0.91, 0.11 )
 	percentCompleteCircle:setImage( RegisterImage( 0xF00B924BA10A94C ) )
-	percentCompleteCircle:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD5CA1A25ED87F4F ) )
+	percentCompleteCircle:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	percentCompleteCircle:setShaderVector( 1, 0.5, 0, 0, 0 )
 	percentCompleteCircle:setShaderVector( 2, 0.5, 0, 0, 0 )
 	percentCompleteCircle:setShaderVector( 3, 0, 0, 0, 0 )

@@ -48,7 +48,7 @@ CoD.ArchivesVideoButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local lockImage = LUI.UIImage.new( 1, 1, -55, -5, 0.5, 0.5, -25, 25 )
 	lockImage:setAlpha( 0 )
 	lockImage:setScale( 0.6, 0.6 )
-	lockImage:setImage( RegisterImage( 0xE1E7C490B2BA4FB ) )
+	lockImage:setImage( RegisterImage( "uie_ui_icon_global_lock" ) )
 	self:addElement( lockImage )
 	self.lockImage = lockImage
 	

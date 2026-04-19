@@ -57,7 +57,7 @@ LUI.createMenu.SystemOverlay_Full = function ( f2_arg0, f2_arg1 )
 		end
 	end, function ( f8_arg0, f8_arg1, f8_arg2 )
 		if HasOverlayContinueAction( f8_arg1 ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x6393FF34EA56966, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -72,7 +72,7 @@ LUI.createMenu.SystemOverlay_Full = function ( f2_arg0, f2_arg1 )
 		end
 	end, function ( f10_arg0, f10_arg1, f10_arg2 )
 		if HasOverlayBackAction( f10_arg1 ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		else
 			return false

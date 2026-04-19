@@ -1,0 +1,8 @@
+{
+    "name": "#lobbymenulist_online",
+    "type": "lobbymenu",
+    "bundles": [
+        "#director_online",
+        "#director_online_theater"
+    ]
+}

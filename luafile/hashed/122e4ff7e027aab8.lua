@@ -127,7 +127,7 @@ function GetPresenceString( f9_arg0 )
 			return Engine[0xF9F1239CFD921FE]( f9_local1 )
 		end
 	else
-		return Engine[0xF9F1239CFD921FE]( 0x2C79EA24AB1A2BA )
+		return Engine[0xF9F1239CFD921FE]( "null/empty" )
 	end
 end
 
@@ -167,7 +167,7 @@ function GetPresenceActivityString( f10_arg0 )
 			return Engine[0xF9F1239CFD921FE]( f10_local1 )
 		end
 	else
-		return Engine[0xF9F1239CFD921FE]( 0x2C79EA24AB1A2BA )
+		return Engine[0xF9F1239CFD921FE]( "null/empty" )
 	end
 end
 
@@ -212,7 +212,7 @@ function GetPresenceContextString( f11_arg0 )
 		end
 		return Engine.Localize( f11_local1 )
 	else
-		return Engine[0xF9F1239CFD921FE]( 0x2C79EA24AB1A2BA )
+		return Engine[0xF9F1239CFD921FE]( "null/empty" )
 	end
 end
 

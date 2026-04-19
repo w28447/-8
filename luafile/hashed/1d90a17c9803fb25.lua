@@ -39,7 +39,7 @@ CoD.PC_Korea_Event_DirectorButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.DotTiledBacking = DotTiledBacking
 	
 	local HeaderImage = LUI.UIImage.new( 0.5, 0.5, -225, 225, 0, 0, 0, 59 )
-	HeaderImage:setImage( RegisterImage( 0x86BE3E7554B3AA9 ) )
+	HeaderImage:setImage( RegisterImage( "uie_pc_igrevent_titleweekprogression_image" ) )
 	self:addElement( HeaderImage )
 	self.HeaderImage = HeaderImage
 	

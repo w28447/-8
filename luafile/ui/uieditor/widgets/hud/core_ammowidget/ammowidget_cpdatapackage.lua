@@ -11,8 +11,8 @@ CoD.AmmoWidget_CPDataPackage.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local PanelGlow = LUI.UIImage.new( 0, 0, -12, 125, 0, 0, -13, 126 )
 	PanelGlow:setRGB( 0.3, 0.65, 0.82 )
 	PanelGlow:setAlpha( 0.41 )
-	PanelGlow:setImage( RegisterImage( 0x5BE416E17DAB33B ) )
-	PanelGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	PanelGlow:setImage( RegisterImage( "uie_t7_core_hud_mapwidget_panelglow" ) )
+	PanelGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PanelGlow )
 	self.PanelGlow = PanelGlow
 	

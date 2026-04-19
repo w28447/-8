@@ -33,7 +33,7 @@ CoD.TabletTak5_PlayerHealthInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local PlayerImageHealthWipe = LUI.UIImage.new( 0.5, 0.5, -45, 45, 0.5, 0.5, -90, 90 )
 	PlayerImageHealthWipe:setAlpha( 0 )
 	PlayerImageHealthWipe:setImage( RegisterImage( 0x23B74B667FE001 ) )
-	PlayerImageHealthWipe:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	PlayerImageHealthWipe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	PlayerImageHealthWipe:setShaderVector( 0, 0, 1, 0, 0 )
 	PlayerImageHealthWipe:setShaderVector( 1, 0, 0, 0, 0 )
 	PlayerImageHealthWipe:setShaderVector( 3, 0, 0, 0, 0 )

@@ -10,7 +10,7 @@ CoD.ArenaEventTimerSmallStartsIn.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local EventStartsIn = LUI.UIText.new( 0, 0, 0, 140, 0, 0, 0, 14 )
 	EventStartsIn:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
-	EventStartsIn:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	EventStartsIn:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	EventStartsIn:setTTF( "dinnext_regular" )
 	EventStartsIn:setLetterSpacing( 1 )
 	EventStartsIn:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

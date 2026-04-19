@@ -49,7 +49,7 @@ CoD.AmmoWidgetMP_Ultimate.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	EMPbacker:setAlpha( 0 )
 	EMPbacker:setScale( 1.1, 1.1 )
 	EMPbacker:setImage( RegisterImage( 0x72885A70C509F17 ) )
-	EMPbacker:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	EMPbacker:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( EMPbacker )
 	self.EMPbacker = EMPbacker
 	

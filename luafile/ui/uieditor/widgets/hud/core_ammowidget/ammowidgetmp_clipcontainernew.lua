@@ -46,7 +46,7 @@ CoD.AmmoWidgetMP_ClipContainerNew.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	Bounce = LUI.UIImage.new( 0, 0, -9.5, 64.5, 0, 0, -19, 9 )
 	Bounce:setAlpha( 0 )
 	Bounce:setImage( RegisterImage( 0x11B3A87BB555593 ) )
-	Bounce:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Bounce:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Bounce )
 	self.Bounce = Bounce
 	

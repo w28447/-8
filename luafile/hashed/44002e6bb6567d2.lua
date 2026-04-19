@@ -98,7 +98,7 @@ LUI.createMenu.Prestige_PlayerLevel = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f5_arg0, f5_arg1, f5_arg2 )
 		if IsAtXPCap( f5_arg2 ) and not IsMaxPrestigeLevel( f5_arg2 ) then
-			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -156,7 +156,7 @@ LUI.createMenu.Prestige_PlayerLevel = function ( f1_arg0, f1_arg1 )
 		OpenPrestigeFreshStartMenu( self, f12_arg2, f12_arg1 )
 		return true
 	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( FreshStartButton )
@@ -215,7 +215,7 @@ LUI.createMenu.Prestige_PlayerLevel = function ( f1_arg0, f1_arg1 )
 		OpenOverlay( self, "Prestige_CustomizeIcon", f20_arg2 )
 		return true
 	end, function ( f21_arg0, f21_arg1, f21_arg2 )
-		CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( CustomizePrestigeIconButton )
@@ -292,7 +292,7 @@ LUI.createMenu.Prestige_PlayerLevel = function ( f1_arg0, f1_arg1 )
 		ClearMenuSavedState( f27_arg1 )
 		return true
 	end, function ( f28_arg0, f28_arg1, f28_arg2 )
-		CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xD2F467A6C6DA1AC], "ui_prevtab", function ( f29_arg0, f29_arg1, f29_arg2, f29_arg3 )

@@ -235,7 +235,7 @@ CoD.GameSettings_Characters.new = function ( f14_arg0, f14_arg1, f14_arg2, f14_a
 		SetFocusToElement( self, "SlidersPC", f16_arg2 )
 		return true
 	end, function ( f17_arg0, f17_arg1, f17_arg2 )
-		CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( OptionCategoryGrid )

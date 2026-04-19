@@ -48,14 +48,14 @@ CoD[0xA99D05EEE776A3].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local eyeGlow = LUI.UIImage.new( 0, 0, 398.5, 493.5, 0, 0, 16, 68 )
 	eyeGlow:setZRot( -35 )
 	eyeGlow:setImage( RegisterImage( 0x299DDAEBACCEECD ) )
-	eyeGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	eyeGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( eyeGlow )
 	self.eyeGlow = eyeGlow
 	
 	local eyeGlow2 = LUI.UIImage.new( 0, 0, 481.5, 576.5, 0, 0, 59, 111 )
 	eyeGlow2:setZRot( -24 )
 	eyeGlow2:setImage( RegisterImage( 0x299DDAEBACCEECD ) )
-	eyeGlow2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	eyeGlow2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( eyeGlow2 )
 	self.eyeGlow2 = eyeGlow2
 	
@@ -74,7 +74,7 @@ CoD[0xA99D05EEE776A3].__resetProperties = function ( f2_arg0 )
 	f2_arg0.eyeGlow2:completeAnimation()
 	f2_arg0.bear:setAlpha( 1 )
 	f2_arg0.bearBlack:setAlpha( 0.5 )
-	f2_arg0.bearBlack:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6B34AA3F39208EF ) )
+	f2_arg0.bearBlack:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_normal" ) )
 	f2_arg0.bearDetails:setAlpha( 1 )
 	f2_arg0.eyeGlow:setAlpha( 1 )
 	f2_arg0.eyeGlow2:setAlpha( 1 )
@@ -141,7 +141,7 @@ CoD[0xA99D05EEE776A3].__clipsPerState = {
 			
 			f3_arg0.bearBlack:completeAnimation()
 			f3_arg0.bearBlack:setAlpha( 0 )
-			f3_arg0.bearBlack:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+			f3_arg0.bearBlack:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 			f3_local1( f3_arg0.bearBlack )
 			local f3_local2 = function ( f13_arg0 )
 				local f13_local0 = function ( f14_arg0 )

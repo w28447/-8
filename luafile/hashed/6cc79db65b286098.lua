@@ -42,7 +42,7 @@ CoD.PC_Korea_Event_Day_Progression_Numbers.__resetProperties = function ( f2_arg
 	f2_arg0.TextBGImage:setRGB( 1, 1, 1 )
 	f2_arg0.TextBGImage:setAlpha( 0 )
 	f2_arg0.TextBGImage:setScale( 1, 1 )
-	f2_arg0.TextBGImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6B34AA3F39208EF ) )
+	f2_arg0.TextBGImage:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_normal" ) )
 	f2_arg0.TextNumber:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
 	f2_arg0.TextColorSound:setPlaySoundDirect( false )
 end

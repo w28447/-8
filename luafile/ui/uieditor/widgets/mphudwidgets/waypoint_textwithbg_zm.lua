@@ -9,7 +9,7 @@ CoD.Waypoint_TextWithBG_Zm.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local text = LUI.UIText.new( 0.5, 0.5, -192, 192, 0.5, 0.5, -15, 15 )
-	text:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	text:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	text:setTTF( "skorzhen" )
 	text:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	text:setShaderVector( 0, 0.8, 0, 0, 0 )
@@ -21,7 +21,7 @@ CoD.Waypoint_TextWithBG_Zm.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	text:setBackingType( 2 )
 	text:setBackingXPadding( 6 )
 	text:setBackingYPadding( 4 )
-	text:setBackingImage( RegisterImage( 0x75D661B612187DF ) )
+	text:setBackingImage( RegisterImage( "uie_objbg" ) )
 	LUI.OverrideFunction_CallOriginalFirst( text, "setText", function ( element, controller )
 		ScaleWidgetToLabelCentered( self, element, 4 )
 	end )

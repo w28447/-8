@@ -106,7 +106,7 @@ CoD.ReservesCrateCarousel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 			return true
 		end
 	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x85952ACC6D0C1B0, nil, nil )
+		CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/purchase", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( CrateCarousel, "updateDataSource", function ( element, controller, f13_arg2, f13_arg3 )

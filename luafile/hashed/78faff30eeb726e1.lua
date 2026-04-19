@@ -75,7 +75,7 @@ CoD.PC_Korea_Event_Week_Progression.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local TimeRemainingBG = LUI.UIImage.new( 0, 0, 0, 448, 1, 1, -19, 0 )
 	TimeRemainingBG:setAlpha( 0 )
 	TimeRemainingBG:setImage( RegisterImage( 0x44E36BB9FF6587A ) )
-	TimeRemainingBG:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	TimeRemainingBG:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	TimeRemainingBG:setShaderVector( 0, 0, 0, 0, 0 )
 	TimeRemainingBG:setupNineSliceShader( 6, 6 )
 	self:addElement( TimeRemainingBG )

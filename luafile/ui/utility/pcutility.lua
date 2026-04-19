@@ -504,9 +504,9 @@ CoD.PCUtil.SimulateDPadButtonPress = function ( f39_arg0, f39_arg1 )
 end
 
 CoD.PCUtility.ReplaceButtonLabelForPC = function ( f40_arg0, f40_arg1 )
-	if f40_arg1 == 0x70A9FDC87CD3D48 or f40_arg1 == 0x78D439E1B360368 or f40_arg1 == 0xEF2D3320785B51A or f40_arg1 == 0x3996BAAC73C3F6D then
+	if f40_arg1 == "menu/back" or f40_arg1 == 0x78D439E1B360368 or f40_arg1 == 0xEF2D3320785B51A or f40_arg1 == 0x3996BAAC73C3F6D then
 		return 0xFE8B7EA55114B2A
-	elseif f40_arg1 == 0xC2E92C54C2BE289 then
+	elseif f40_arg1 == "menu/cancel" then
 		return 0xF30BC90052E4F39
 	elseif f40_arg1 == 0xB2EF56B4AF147B8 then
 		return 0xA4D5CCF602C652E
@@ -518,7 +518,7 @@ end
 CoD.PCUtil.SetupButtonLabelForPC = function ( f41_arg0, f41_arg1 )
 	local f41_local0 = f41_arg1.Label
 	f41_arg1.TooltipLabel:set( Engine[0xF9F1239CFD921FE]( f41_arg0 ) or nil )
-	if f41_arg0 == 0x70A9FDC87CD3D48 or f41_arg0 == 0x78D439E1B360368 or f41_arg0 == 0xEF2D3320785B51A or f41_arg0 == 0x3996BAAC73C3F6D or f41_arg0 == 0xC2E92C54C2BE289 then
+	if f41_arg0 == "menu/back" or f41_arg0 == 0x78D439E1B360368 or f41_arg0 == 0xEF2D3320785B51A or f41_arg0 == 0x3996BAAC73C3F6D or f41_arg0 == "menu/cancel" then
 		Engine.SetModelValue( Engine.CreateModel( f41_arg1, "TooltipKeyShortcut" ), 0x605DAF0D67709A )
 	end
 end
@@ -647,7 +647,7 @@ CoD.PCUtil.Craft_GetEmblemEditorEditModeActions = function ( f53_arg0, f53_arg1 
 		if CoD.BaseUtility.IsDvarEnabled( "enable_material_picker" ) then
 			table.insert( f53_local0, {
 				models = {
-					actionName = 0xE5BDA73054BDF29,
+					actionName = "MENU/MATERIAL_PICKER",
 					widgetType = "button",
 					action = function ( f55_arg0, f55_arg1, f55_arg2, f55_arg3, f55_arg4 )
 						CoD.CraftUtility.EmblemEditor_EndEdit( f55_arg0, f55_arg1, f55_arg2 )
@@ -667,7 +667,7 @@ CoD.PCUtil.Craft_GetEmblemEditorEditModeActions = function ( f53_arg0, f53_arg1 
 	end
 	table.insert( f53_local0, {
 		models = {
-			actionName = 0x19352A5A4C9CAC9,
+			actionName = "menu/controls",
 			widgetType = "header"
 		}
 	} )
@@ -822,7 +822,7 @@ CoD.PCUtil.Craft_GetEmblemEditorBrowseModeActions = function ( f63_arg0 )
 	local f63_local0 = {}
 	table.insert( f63_local0, {
 		models = {
-			actionName = 0x19352A5A4C9CAC9,
+			actionName = "menu/controls",
 			widgetType = "header"
 		}
 	} )
@@ -913,7 +913,7 @@ CoD.PCUtil.Craft_GetEmblemEditorSolidColorActions = function ( f65_arg0 )
 	end
 	table.insert( f65_local0, {
 		models = {
-			actionName = 0x19352A5A4C9CAC9,
+			actionName = "menu/controls",
 			widgetType = "header"
 		}
 	} )
@@ -1010,7 +1010,7 @@ CoD.PCUtil.Craft_GetEmblemEditorGradientModeActions = function ( f72_arg0 )
 	end
 	table.insert( f72_local0, {
 		models = {
-			actionName = 0x19352A5A4C9CAC9,
+			actionName = "menu/controls",
 			widgetType = "header"
 		}
 	} )
@@ -1100,7 +1100,7 @@ CoD.PCUtil.Craft_GetEmblemEditorMaterialActions = function ()
 	local f83_local0 = {}
 	table.insert( f83_local0, {
 		models = {
-			actionName = 0x19352A5A4C9CAC9,
+			actionName = "menu/controls",
 			widgetType = "header"
 		}
 	} )
@@ -2448,7 +2448,7 @@ f0_local3.ResetAllPCOptions = {
 			return {
 				{
 					models = {
-						displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0xDFD294FC69F682 ) )
+						displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "menu/yes" ) )
 					},
 					properties = {
 						action = function ( f231_arg0, f231_arg1, f231_arg2, f231_arg3, f231_arg4 )
@@ -2463,7 +2463,7 @@ f0_local3.ResetAllPCOptions = {
 				},
 				{
 					models = {
-						displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0x5C16E02B211A4F4 ) )
+						displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "menu/no" ) )
 					},
 					properties = {
 						action = function ( f232_arg0, f232_arg1, f232_arg2, f232_arg3, f232_arg4 )
@@ -2620,7 +2620,7 @@ f0_local3.ApplyPCGraphics = {
 			return {
 				{
 					models = {
-						displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0xDFD294FC69F682 ) )
+						displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "menu/yes" ) )
 					},
 					properties = {
 						action = function ( f251_arg0, f251_arg1, f251_arg2, f251_arg3, f251_arg4 )
@@ -2633,7 +2633,7 @@ f0_local3.ApplyPCGraphics = {
 				},
 				{
 					models = {
-						displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0x5C16E02B211A4F4 ) )
+						displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "menu/no" ) )
 					},
 					properties = {
 						action = function ( f252_arg0, f252_arg1, f252_arg2, f252_arg3, f252_arg4 )
@@ -4448,7 +4448,7 @@ CoD.PCUtility.ChangeScoreboardKeyPrompt = function ( f454_arg0, f454_arg1 )
 	elseif f454_local1 ~= f454_local2 then
 		f454_arg1 = 0x80F8EB101BEC729
 	else
-		f454_arg1 = 0x2C79EA24AB1A2BA
+		f454_arg1 = "null/empty"
 	end
 	return f454_arg1
 end
@@ -4464,7 +4464,7 @@ CoD.PCUtility.ChangeMapKeyPrompt = function ( f455_arg0, f455_arg1 )
 	elseif f455_local1 ~= f455_local2 then
 		f455_arg1 = 0x6F8063898C095A4
 	else
-		f455_arg1 = 0x2C79EA24AB1A2BA
+		f455_arg1 = "null/empty"
 	end
 	return f455_arg1
 end
@@ -4521,7 +4521,7 @@ CoD.PCUtility.DisplayJapanPrePurchasePopup = function ( f461_arg0, f461_arg1, f4
 	assert( Engine[0x543F4AF0F31BA06]() )
 	if f461_arg3.purchaseProductElement then
 		local f461_local0 = f461_arg3.purchaseProductElement:getModel()
-		local f461_local1 = DataSources.PCKoreaRefundWarning.prepare( f461_arg2, f461_arg0, f461_arg4, f461_local0.fullName and f461_local0.fullName:get() or f461_local0.name:get(), "", f461_local0.price:get(), "Call of Duty Points (CP)?????????????????????CP????????????????????????????????????6?????????????????????1??????????????????????????????\n???????????????CP????????????????????????????????????????????????????????????????????????", "", f461_local0.productImage:get() or 0x7615068F50B3D66, 0x7615068F50B3D66, false, false, false, false, "", false, 0x85952ACC6D0C1B0 )
+		local f461_local1 = DataSources.PCKoreaRefundWarning.prepare( f461_arg2, f461_arg0, f461_arg4, f461_local0.fullName and f461_local0.fullName:get() or f461_local0.name:get(), "", f461_local0.price:get(), "Call of Duty Points (CP)?????????????????????CP????????????????????????????????????6?????????????????????1??????????????????????????????\n???????????????CP????????????????????????????????????????????????????????????????????????", "", f461_local0.productImage:get() or "blacktransparent", "blacktransparent", false, false, false, false, "", false, "menu/purchase" )
 		if f461_local1 then
 			local f461_local2 = OpenPopup( f461_arg1, "PC_Store_Refund_Korea", f461_arg2 )
 			f461_local2:setModel( f461_local1, f461_arg2 )

@@ -130,7 +130,7 @@ CoD.StartMenu_Options_SliderBar.new = function ( f12_arg0, f12_arg1, f12_arg2, f
 	self.frameOutline = frameOutline
 	
 	local label = LUI.UIText.new( 0, 0, 12, 352, 0, 0, 8, 46 )
-	label:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	label:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	label:setTTF( "default" )
 	label:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	label:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -138,7 +138,7 @@ CoD.StartMenu_Options_SliderBar.new = function ( f12_arg0, f12_arg1, f12_arg2, f
 	self.label = label
 	
 	local numeric = LUI.UIText.new( 0, 0, 679, 741, 0, 0, 8, 46 )
-	numeric:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	numeric:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	numeric:setTTF( "default" )
 	numeric:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	self:addElement( numeric )

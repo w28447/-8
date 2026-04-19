@@ -21,7 +21,7 @@ CoD.ControllerDependent_TextBoxLargeGamepad.new = function ( f1_arg0, f1_arg1, f
 	
 	KBMText = LUI.UIText.new( 0.5, 0.5, -46.5, 18.5, 0.5, 0.5, -9, 9 )
 	KBMText:setAlpha( 0 )
-	KBMText:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	KBMText:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	KBMText:setTTF( "ttmussels_demibold" )
 	KBMText:setLetterSpacing( -2 )
 	KBMText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -30,7 +30,7 @@ CoD.ControllerDependent_TextBoxLargeGamepad.new = function ( f1_arg0, f1_arg1, f
 	self.KBMText = KBMText
 	
 	local GamepadText = LUI.UIText.new( -0.2, 1.2, 0, 0, -0.2, 1.2, 0, 0 )
-	GamepadText:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	GamepadText:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	GamepadText:setTTF( "default" )
 	GamepadText:setLetterSpacing( -1 )
 	GamepadText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

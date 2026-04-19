@@ -44,14 +44,14 @@ CoD.ItemShopCyclePrompts.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	Pointer2:setAlpha( 0.8 )
 	Pointer2:setZRot( 180 )
 	Pointer2:setImage( RegisterImage( 0xB90695A7BFF35F9 ) )
-	Pointer2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Pointer2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Pointer2 )
 	self.Pointer2 = Pointer2
 	
 	local Pointer = LUI.UIImage.new( 0.5, 0.5, -443, -355, 0, 0, 0, 184 )
 	Pointer:setAlpha( 0.8 )
 	Pointer:setImage( RegisterImage( 0xB90695A7BFF35F9 ) )
-	Pointer:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Pointer:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Pointer )
 	self.Pointer = Pointer
 	

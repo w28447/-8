@@ -29,7 +29,7 @@ LUI.createMenu.RewardPopup = function ( f1_arg0, f1_arg1 )
 	
 	local BackgroundImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BackgroundImage:setAlpha( 0.85 )
-	BackgroundImage:setImage( RegisterImage( 0x4BF88A437F4C579 ) )
+	BackgroundImage:setImage( RegisterImage( "uie_fe_cp_background" ) )
 	self:addElement( BackgroundImage )
 	self.BackgroundImage = BackgroundImage
 	
@@ -49,7 +49,7 @@ LUI.createMenu.RewardPopup = function ( f1_arg0, f1_arg1 )
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0.5, 0.5, -577.5, 577.5, 0.5, 0.5, -140.5, 195.5 )
 	NoiseTiledBacking:setAlpha( 0.15 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -76,7 +76,7 @@ LUI.createMenu.RewardPopup = function ( f1_arg0, f1_arg1 )
 			end
 		}
 	} )
-	featureOverlayButtonMouseOnly.featureOverlayButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( 0x6393FF34EA56966 ) )
+	featureOverlayButtonMouseOnly.featureOverlayButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/continue" ) )
 	featureOverlayButtonMouseOnly:registerEventHandler( "gain_focus", function ( element, event )
 		local f3_local0 = nil
 		if element.gainFocus then
@@ -130,7 +130,7 @@ LUI.createMenu.RewardPopup = function ( f1_arg0, f1_arg1 )
 	BoundaryBot2:setAlpha( 0.15 )
 	BoundaryBot2:setZRot( -90 )
 	BoundaryBot2:setImage( RegisterImage( 0x614FFDE5DDC2DFB ) )
-	BoundaryBot2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	BoundaryBot2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BoundaryBot2:setShaderVector( 0, 0, 0, 0, 0 )
 	BoundaryBot2:setupNineSliceShader( 66, 8 )
 	self:addElement( BoundaryBot2 )
@@ -140,21 +140,21 @@ LUI.createMenu.RewardPopup = function ( f1_arg0, f1_arg1 )
 	BoundaryBot:setAlpha( 0.15 )
 	BoundaryBot:setZRot( 90 )
 	BoundaryBot:setImage( RegisterImage( 0x614FFDE5DDC2DFB ) )
-	BoundaryBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	BoundaryBot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BoundaryBot:setShaderVector( 0, 0, 0, 0, 0 )
 	BoundaryBot:setupNineSliceShader( 66, 8 )
 	self:addElement( BoundaryBot )
 	self.BoundaryBot = BoundaryBot
 	
 	local Banner = LUI.UIImage.new( 0.5, 0.5, -600, 600, 0.5, 0.5, -464.5, -344.5 )
-	Banner:setImage( RegisterImage( CoD.EntitlementUtility.GetBannerImage( f1_arg0, 0x7615068F50B3D66 ) ) )
+	Banner:setImage( RegisterImage( CoD.EntitlementUtility.GetBannerImage( f1_arg0, "blacktransparent" ) ) )
 	self:addElement( Banner )
 	self.Banner = Banner
 	
 	local FrontendFocusPip = LUI.UIImage.new( 0.5, 0.5, -582, 583, 0.5, 0.5, -145.5, 200.5 )
 	FrontendFocusPip:setAlpha( 0.15 )
 	FrontendFocusPip:setImage( RegisterImage( 0x793C73633F620BB ) )
-	FrontendFocusPip:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFocusPip:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFocusPip:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFocusPip:setupNineSliceShader( 44, 44 )
 	self:addElement( FrontendFocusPip )

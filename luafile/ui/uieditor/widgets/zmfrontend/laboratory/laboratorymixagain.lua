@@ -15,7 +15,7 @@ CoD.LaboratoryMixAgain.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local NoiseTiledBacking = LUI.UIImage.new( -1, 1, 0.5, 0.5, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.5 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -25,7 +25,7 @@ CoD.LaboratoryMixAgain.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local StoneTiledBacking = LUI.UIImage.new( -1, 1, 0, 0, 0.09, 0.09, -91, 116 )
 	StoneTiledBacking:setRGB( 0.83, 0.11, 0.01 )
 	StoneTiledBacking:setAlpha( 0.5 )
-	StoneTiledBacking:setImage( RegisterImage( 0x33757173B476ACD ) )
+	StoneTiledBacking:setImage( RegisterImage( "uie_ui_zm_laboratory_buttonbgtile" ) )
 	StoneTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	StoneTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	StoneTiledBacking:setupNineSliceShader( 196, 88 )
@@ -51,7 +51,7 @@ CoD.LaboratoryMixAgain.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local MixAgain = LUI.UIText.new( 0.5, 1.5, -124, -156, 0, 0, 175.5, 205.5 )
 	MixAgain:setRGB( 0.58, 0.85, 1 )
-	MixAgain:setText( LocalizeToUpperString( 0x1496C7B4FF40634 ) )
+	MixAgain:setText( LocalizeToUpperString( "zmui/mix_again" ) )
 	MixAgain:setTTF( "skorzhen" )
 	MixAgain:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	MixAgain:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -147,13 +147,13 @@ CoD.LaboratoryMixAgain.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 		end
 	end, function ( f11_arg0, f11_arg1, f11_arg2 )
 		if CoD.ZMLaboratoryUtility.IsInAnimState1( f11_arg2, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) and CoD.ZMLaboratoryUtility.CanPurchase( f11_arg2, f11_arg0 ) and CoD.ModelUtility.IsModelValueEqualTo( f11_arg2, "Laboratory.disableInput", 0 ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif CoD.ZMLaboratoryUtility.IsInAnimState1( f11_arg2, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) and not CoD.ZMLaboratoryUtility.CanPurchase( f11_arg2, f11_arg0 ) and CoD.ModelUtility.IsModelValueEqualTo( f11_arg2, "Laboratory.disableInput", 0 ) and IsBooleanDvarSet( "laboratory_codpoints_enabled" ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif CoD.ZMLaboratoryUtility.IsInAnimState1( f11_arg2, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) and not CoD.ZMLaboratoryUtility.CanPurchase( f11_arg2, f11_arg0 ) and CoD.ModelUtility.IsModelValueEqualTo( f11_arg2, "Laboratory.disableInput", 0 ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -165,7 +165,7 @@ CoD.LaboratoryMixAgain.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	DoneButton = nil
 	
 	DoneButton = CoD.LaboratoryMixAgainButton.new( f1_arg0, f1_arg1, 0.5, 0.5, -115, 115, 0, 0, 900.5, 976.5 )
-	DoneButton.Button.Cost:setText( LocalizeToUpperString( 0x6C253CF816B40B5 ) )
+	DoneButton.Button.Cost:setText( LocalizeToUpperString( "menu/close" ) )
 	BgZmStar = DoneButton
 	TopBar = DoneButton.subscribeToModel
 	local SideBar = Engine.GetModelForController( f1_arg1 )
@@ -225,14 +225,14 @@ CoD.LaboratoryMixAgain.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.DoneButton = DoneButton
 	
 	TopBar = LUI.UIImage.new( 0.5, 0.5, -120, 120, 0, 0, 202.5, 217.5 )
-	TopBar:setImage( RegisterImage( 0x45C555C45B1E6E4 ) )
+	TopBar:setImage( RegisterImage( "uie_ui_hud_zm_aar_top_bar" ) )
 	self:addElement( TopBar )
 	self.TopBar = TopBar
 	
 	BgZmStar = LUI.UIImage.new( 0.5, 0.5, -100, 100, 0, 0, 107, 307 )
 	BgZmStar:setRGB( ColorSet.T8__OFF__GRAY.r, ColorSet.T8__OFF__GRAY.g, ColorSet.T8__OFF__GRAY.b )
 	BgZmStar:setAlpha( 0.4 )
-	BgZmStar:setImage( RegisterImage( 0x37B9CCC18877DAA ) )
+	BgZmStar:setImage( RegisterImage( "uie_ui_hud_zm_arr_reward_star" ) )
 	BgZmStar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	BgZmStar:setShaderVector( 0, 4, 0, 0, 0 )
 	self:addElement( BgZmStar )

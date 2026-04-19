@@ -39,7 +39,7 @@ CoD[0x5193BEB891279E9].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local GlowFist = LUI.UIImage.new( 0, 0, 671, 786, 0, 0, 90.5, 195.5 )
 	GlowFist:setAlpha( 0.7 )
 	GlowFist:setImage( RegisterImage( 0x12AE5D2AECB8D92 ) )
-	GlowFist:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	GlowFist:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowFist )
 	self.GlowFist = GlowFist
 	
@@ -52,7 +52,7 @@ CoD[0x5193BEB891279E9].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local SwordSheen = LUI.UIImage.new( 0, 0, 502, 622, 0, 0, 85.5, 221.5 )
 	SwordSheen:setImage( RegisterImage( 0x1A64C654F9EAA3 ) )
-	SwordSheen:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	SwordSheen:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	SwordSheen:setShaderVector( 0, 0, 1, 0, 0 )
 	SwordSheen:setShaderVector( 1, 0, 0, 0, 0 )
 	SwordSheen:setShaderVector( 2, 0, 1, 0, 0 )
@@ -74,7 +74,7 @@ CoD[0x5193BEB891279E9].__resetProperties = function ( f2_arg0 )
 	f2_arg0.SwordSheen:completeAnimation()
 	f2_arg0.gloweyes:setAlpha( 1 )
 	f2_arg0.GlowFist:setAlpha( 0.7 )
-	f2_arg0.GlowFist:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	f2_arg0.GlowFist:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	f2_arg0.SwordSheen:setShaderVector( 0, 0, 1, 0, 0 )
 	f2_arg0.SwordSheen:setShaderVector( 1, 0, 0, 0, 0 )
 	f2_arg0.SwordSheen:setShaderVector( 2, 0, 1, 0, 0 )
@@ -102,7 +102,7 @@ CoD[0x5193BEB891279E9].__clipsPerState = {
 			
 			f3_arg0.GlowFist:completeAnimation()
 			f3_arg0.GlowFist:setAlpha( 0 )
-			f3_arg0.GlowFist:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+			f3_arg0.GlowFist:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 			f3_local0( f3_arg0.GlowFist )
 			local f3_local1 = function ( f6_arg0 )
 				local f6_local0 = function ( f7_arg0 )

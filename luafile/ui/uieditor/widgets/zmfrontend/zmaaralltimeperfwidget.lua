@@ -14,7 +14,7 @@ CoD.ZMAARAllTimePerfWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local PerformBracketBlur = LUI.UIImage.new( 0, 1, -3.5, 4.5, 1, 1, -72, -52 )
 	PerformBracketBlur:setAlpha( 0.3 )
 	PerformBracketBlur:setImage( RegisterImage( 0xD4F19B775CF07F8 ) )
-	PerformBracketBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	PerformBracketBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	PerformBracketBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	PerformBracketBlur:setupNineSliceShader( 174, 10 )
 	self:addElement( PerformBracketBlur )
@@ -32,8 +32,8 @@ CoD.ZMAARAllTimePerfWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local infoBracketBot = LUI.UIImage.new( 0, 1, -1, 1, 1, 1, -65, -57 )
 	infoBracketBot:setAlpha( 0.5 )
-	infoBracketBot:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	infoBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	infoBracketBot:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	infoBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	infoBracketBot:setShaderVector( 0, 0, 0, 0, 0 )
 	infoBracketBot:setupNineSliceShader( 16, 4 )
 	self:addElement( infoBracketBot )
@@ -42,14 +42,14 @@ CoD.ZMAARAllTimePerfWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local DotPipR = LUI.UIImage.new( 1, 1, -2, 2, 1, 1, -70.5, -66.5 )
 	DotPipR:setAlpha( 0.5 )
 	DotPipR:setImage( RegisterImage( 0x3854665C02218EF ) )
-	DotPipR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DotPipR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotPipR )
 	self.DotPipR = DotPipR
 	
 	local DotPipL = LUI.UIImage.new( 0, 0, -2, 2, 1, 1, -70.5, -66.5 )
 	DotPipL:setAlpha( 0.5 )
 	DotPipL:setImage( RegisterImage( 0x3854665C02218EF ) )
-	DotPipL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DotPipL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotPipL )
 	self.DotPipL = DotPipL
 	
@@ -104,7 +104,7 @@ CoD.ZMAARAllTimePerfWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local ZMAllTimePerformanceLabel = LUI.UIText.new( 0, 0, 0, 855, 0, 0, -47, -9 )
 	ZMAllTimePerformanceLabel:setRGB( 0.9, 0.89, 0.78 )
 	ZMAllTimePerformanceLabel:setAlpha( 0 )
-	ZMAllTimePerformanceLabel:setText( LocalizeToUpperString( 0xD902FA6C6DDD217 ) )
+	ZMAllTimePerformanceLabel:setText( LocalizeToUpperString( "zmui/all_time_performance" ) )
 	ZMAllTimePerformanceLabel:setTTF( "skorzhen" )
 	ZMAllTimePerformanceLabel:setLetterSpacing( 10 )
 	ZMAllTimePerformanceLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

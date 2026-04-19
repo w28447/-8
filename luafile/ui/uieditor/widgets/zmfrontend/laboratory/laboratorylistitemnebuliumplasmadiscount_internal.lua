@@ -40,7 +40,7 @@ CoD.LaboratoryListItemNebuliumPlasmaDiscount_Internal.new = function ( f1_arg0, 
 	
 	local StoneTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	StoneTiledBacking:setAlpha( 0.8 )
-	StoneTiledBacking:setImage( RegisterImage( 0x33757173B476ACD ) )
+	StoneTiledBacking:setImage( RegisterImage( "uie_ui_zm_laboratory_buttonbgtile" ) )
 	StoneTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	StoneTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	StoneTiledBacking:setupNineSliceShader( 196, 88 )
@@ -49,7 +49,7 @@ CoD.LaboratoryListItemNebuliumPlasmaDiscount_Internal.new = function ( f1_arg0, 
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.3 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -70,8 +70,8 @@ CoD.LaboratoryListItemNebuliumPlasmaDiscount_Internal.new = function ( f1_arg0, 
 	
 	local FrameBorder = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	FrameBorder:setAlpha( 0.15 )
-	FrameBorder:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrameBorder:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrameBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FrameBorder:setupNineSliceShader( 12, 12 )
 	self:addElement( FrameBorder )
@@ -79,14 +79,14 @@ CoD.LaboratoryListItemNebuliumPlasmaDiscount_Internal.new = function ( f1_arg0, 
 	
 	local LightFocus = LUI.UIImage.new( -0.05, 1.05, 0.5, 0.5, 0.5, 0.5, -74.5, 84.5 )
 	LightFocus:setAlpha( 0 )
-	LightFocus:setImage( RegisterImage( 0x25B3B76F422AA08 ) )
+	LightFocus:setImage( RegisterImage( "uie_ui_menu_zombies_cac_special_weapon_light_focus" ) )
 	self:addElement( LightFocus )
 	self.LightFocus = LightFocus
 	
 	local FocusGlow = LUI.UIImage.new( 0.19, 0.81, -240, 240, 0.2, 0.8, -74, 74 )
 	FocusGlow:setRGB( 0.89, 0.12, 0.12 )
 	FocusGlow:setAlpha( 0 )
-	FocusGlow:setImage( RegisterImage( 0x8E79E4E42B6714C ) )
+	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_large" ) )
 	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.25, 0.25 )
 	FocusGlow:setShaderVector( 1, 1.2, 0, 0, 0 )
@@ -106,8 +106,8 @@ CoD.LaboratoryListItemNebuliumPlasmaDiscount_Internal.new = function ( f1_arg0, 
 	self.FocusBrackets = FocusBrackets
 	
 	local MetalFrame = LUI.UIImage.new( 0, 1, -2, 2, 0, 1, -2, 2 )
-	MetalFrame:setImage( RegisterImage( 0xAED94B38E8B3347 ) )
-	MetalFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	MetalFrame:setImage( RegisterImage( "uie_ui_zm_laboratory_buttonframe" ) )
+	MetalFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	MetalFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	MetalFrame:setupNineSliceShader( 16, 16 )
 	self:addElement( MetalFrame )
@@ -116,22 +116,22 @@ CoD.LaboratoryListItemNebuliumPlasmaDiscount_Internal.new = function ( f1_arg0, 
 	local MetalFrameAdditive = LUI.UIImage.new( 0, 1, -2, 2, 0, 1, -2, 2 )
 	MetalFrameAdditive:setRGB( 0.89, 0.12, 0.12 )
 	MetalFrameAdditive:setAlpha( 0 )
-	MetalFrameAdditive:setImage( RegisterImage( 0xAED94B38E8B3347 ) )
-	MetalFrameAdditive:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	MetalFrameAdditive:setImage( RegisterImage( "uie_ui_zm_laboratory_buttonframe" ) )
+	MetalFrameAdditive:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	MetalFrameAdditive:setShaderVector( 0, 0, 0, 0, 0 )
 	MetalFrameAdditive:setupNineSliceShader( 16, 16 )
 	self:addElement( MetalFrameAdditive )
 	self.MetalFrameAdditive = MetalFrameAdditive
 	
 	local metal = LUI.UIImage.new( 0, 0, -5.5, 486.5, 0, 0, -7, 157 )
-	metal:setImage( RegisterImage( 0x7538BEAE6E7E9CC ) )
+	metal:setImage( RegisterImage( "uie_ui_zm_laboratory_special_offer_metal" ) )
 	self:addElement( metal )
 	self.metal = metal
 	
 	local Glint = LUI.UIImage.new( 0, 0, 3, 478, 0, 0, 4, 147 )
 	Glint:setRGB( 0.37, 0.25, 0.7 )
 	Glint:setAlpha( 0 )
-	Glint:setMaterial( LUI.UIImage.GetCachedMaterial( 0x3F7C47B6BEEF5BD ) )
+	Glint:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_glint_add" ) )
 	Glint:setShaderVector( 0, 1.24, 0, 0, 0 )
 	Glint:setShaderVector( 1, -46.8, 0, 0, 0 )
 	self:addElement( Glint )
@@ -139,7 +139,7 @@ CoD.LaboratoryListItemNebuliumPlasmaDiscount_Internal.new = function ( f1_arg0, 
 	
 	local Smoke = LUI.UIImage.new( 0, 0, 3, 478, 0, 0, 0.5, 137.5 )
 	Smoke:setRGB( 0.15, 0.02, 0.95 )
-	Smoke:setImage( RegisterImage( 0xD0CB74680856AB6 ) )
+	Smoke:setImage( RegisterImage( "uie_ui_zm_laboratory_special_offer_smoke" ) )
 	Smoke:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	Smoke:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( Smoke )
@@ -148,7 +148,7 @@ CoD.LaboratoryListItemNebuliumPlasmaDiscount_Internal.new = function ( f1_arg0, 
 	local Smoke2 = LUI.UIImage.new( 0, 0, 3, 478, 0, 0, 0.5, 137.5 )
 	Smoke2:setRGB( 0.15, 0.02, 0.95 )
 	Smoke2:setZRot( 180 )
-	Smoke2:setImage( RegisterImage( 0xD0CB74680856AB6 ) )
+	Smoke2:setImage( RegisterImage( "uie_ui_zm_laboratory_special_offer_smoke" ) )
 	Smoke2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	Smoke2:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( Smoke2 )
@@ -225,8 +225,8 @@ CoD.LaboratoryListItemNebuliumPlasmaDiscount_Internal.new = function ( f1_arg0, 
 	local FocusBorder = LUI.UIImage.new( 0, 1, -2, 2, 0, 1, -2, 2 )
 	FocusBorder:setRGB( 0.89, 0.12, 0.12 )
 	FocusBorder:setAlpha( 0 )
-	FocusBorder:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FocusBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FocusBorder:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FocusBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FocusBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FocusBorder:setupNineSliceShader( 6, 6 )
 	self:addElement( FocusBorder )
@@ -299,7 +299,7 @@ CoD.LaboratoryListItemNebuliumPlasmaDiscount_Internal.new = function ( f1_arg0, 
 	
 	local Name = LUI.UIText.new( 0, 0, 152.5, 467.5, 0, 0, 47, 81 )
 	Name:setRGB( 0.63, 0.49, 1 )
-	Name:setText( Engine[0xF9F1239CFD921FE]( 0x33CCE15E5387569 ) )
+	Name:setText( Engine[0xF9F1239CFD921FE]( "zmui/nebulium_plasma" ) )
 	Name:setTTF( "skorzhen" )
 	Name:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	Name:setShaderVector( 0, 1, 0, 0, 0 )
@@ -313,8 +313,8 @@ CoD.LaboratoryListItemNebuliumPlasmaDiscount_Internal.new = function ( f1_arg0, 
 	
 	local BannerWrap = LUI.UIImage.new( 0, 0, 441, 485, 0, 0, 13, 46 )
 	BannerWrap:setRGB( 0, 0.87, 1 )
-	BannerWrap:setImage( RegisterImage( 0x7F72F873040F6F9 ) )
-	BannerWrap:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	BannerWrap:setImage( RegisterImage( "uie_ui_zm_laboratory_promo_banner_wrap" ) )
+	BannerWrap:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	BannerWrap:setShaderVector( 0, 0.84, 1, 0, 0 )
 	BannerWrap:setShaderVector( 1, 0, 0, 0, 0 )
 	BannerWrap:setShaderVector( 2, 0, 1, 0, 0 )

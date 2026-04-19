@@ -63,7 +63,7 @@ LUI.createMenu.Leaderboard_Main = function ( f1_arg0, f1_arg1 )
 		PlaySoundAlias( "uin_paint_decal_nav" )
 		return true
 	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( GameModeList )
@@ -146,7 +146,7 @@ LUI.createMenu.Leaderboard_Main = function ( f1_arg0, f1_arg1 )
 		GoBack( self, f12_arg2 )
 		return true
 	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, "ESCAPE" )
+		CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 		return true
 	end, false )
 	GenericMenuFrame:setModel( self.buttonModel, f1_arg0 )

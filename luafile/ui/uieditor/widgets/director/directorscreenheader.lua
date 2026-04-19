@@ -12,7 +12,7 @@ CoD.DirectorScreenHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local Header = LUI.UIText.new( 0, 0, 103, 643, 0, 0, 35, 65 )
 	Header:setRGB( 0.86, 0.74, 0.25 )
-	Header:setText( LocalizeToUpperString( 0xDDDA371285672BD ) )
+	Header:setText( LocalizeToUpperString( "menu/play" ) )
 	Header:setTTF( "ttmussels_regular" )
 	Header:setLetterSpacing( 14 )
 	Header:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

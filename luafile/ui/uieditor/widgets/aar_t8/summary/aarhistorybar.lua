@@ -10,13 +10,13 @@ CoD.AARHistoryBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	
 	local LatestBar = LUI.UIImage.new( 0, 0, -3, 127, 0, 0, -11, 15 )
 	LatestBar:setImage( RegisterImage( 0x4B756B7F944AD62 ) )
-	LatestBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	LatestBar:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( LatestBar )
 	self.LatestBar = LatestBar
 	
 	local NormalBar = LUI.UIImage.new( 0, 0, -4, 126, 0, 0, -8, 14 )
 	NormalBar:setImage( RegisterImage( 0x229FD98C99805CA ) )
-	NormalBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	NormalBar:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( NormalBar )
 	self.NormalBar = NormalBar
 	
@@ -51,7 +51,7 @@ CoD.AARHistoryBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	
 	local barGrad = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, -5, -5 )
 	barGrad:setImage( RegisterImage( 0xEDE40DD4C9614B4 ) )
-	barGrad:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	barGrad:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( barGrad )
 	self.barGrad = barGrad
 	

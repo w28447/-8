@@ -19,7 +19,7 @@ CoD.SpecialistDecalEntry.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local FocusGlow2 = LUI.UIImage.new( 0, 1, -42, 42, 0, 1, -42, 42 )
 	FocusGlow2:setAlpha( 0 )
-	FocusGlow2:setImage( RegisterImage( 0xB8F10D49D85E9C4 ) )
+	FocusGlow2:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_small" ) )
 	FocusGlow2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	FocusGlow2:setShaderVector( 0, 0, 0, 0.25, 0.25 )
 	FocusGlow2:setShaderVector( 1, 1.2, 0, 0, 0 )
@@ -40,7 +40,7 @@ CoD.SpecialistDecalEntry.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local LockedIcon = LUI.UIImage.new( 0.5, 0.5, -64, 64, 0.5, 0.5, -64, 64 )
 	LockedIcon:setAlpha( 0 )
 	LockedIcon:setScale( 0.25, 0.25 )
-	LockedIcon:setImage( RegisterImage( 0xE1E7C490B2BA4FB ) )
+	LockedIcon:setImage( RegisterImage( "uie_ui_icon_global_lock" ) )
 	LockedIcon:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	LockedIcon:setShaderVector( 0, 4, 0, 0, 0 )
 	self:addElement( LockedIcon )
@@ -77,7 +77,7 @@ CoD.SpecialistDecalEntry.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		} )
 	end )
 	EquippedMarkerTick:setZoom( 4 )
-	EquippedMarkerTick.image:setImage( RegisterImage( 0x9A8B26C9B001758 ) )
+	EquippedMarkerTick.image:setImage( RegisterImage( "uie_ui_menu_cac_equipped_marker_tick" ) )
 	EquippedMarkerTick:linkToElementModel( self, nil, false, function ( model )
 		EquippedMarkerTick:setModel( model, f1_arg1 )
 	end )
@@ -85,8 +85,8 @@ CoD.SpecialistDecalEntry.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	self.EquippedMarkerTick = EquippedMarkerTick
 	
 	FrontendFrame = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
-	FrontendFrame:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrontendFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrame:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrontendFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrame:setupNineSliceShader( 12, 12 )
 	FrontendFrame:linkToElementModel( self, "rarity", true, function ( model )
@@ -100,8 +100,8 @@ CoD.SpecialistDecalEntry.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	FrontendFrameAdd = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	FrontendFrameAdd:setAlpha( 0 )
-	FrontendFrameAdd:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrontendFrameAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrameAdd:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrontendFrameAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrameAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrameAdd:setupNineSliceShader( 6, 6 )
 	self:addElement( FrontendFrameAdd )
@@ -109,8 +109,8 @@ CoD.SpecialistDecalEntry.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	FrontendFocusFrame = LUI.UIImage.new( 0, 1, -4, 4, 0, 1, -4, 4 )
 	FrontendFocusFrame:setAlpha( 0 )
-	FrontendFocusFrame:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FrontendFocusFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFocusFrame:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FrontendFocusFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFocusFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFocusFrame:setupNineSliceShader( 10, 10 )
 	self:addElement( FrontendFocusFrame )
@@ -144,7 +144,7 @@ CoD.SpecialistDecalEntry.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	UnderlineFocus:setAlpha( 0.15 )
 	UnderlineFocus:setScale( 0, 1 )
 	UnderlineFocus:setImage( RegisterImage( 0x3F29FF813507D9B ) )
-	UnderlineFocus:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	UnderlineFocus:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( UnderlineFocus )
 	self.UnderlineFocus = UnderlineFocus
 	

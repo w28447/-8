@@ -18,7 +18,7 @@ CoD.VehicleSeatConfig_SeatPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 0, 0, 24, 0.09, 0.09, -2, 22 )
 	NoiseTiledBacking:setAlpha( 0.5 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -40,7 +40,7 @@ CoD.VehicleSeatConfig_SeatPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local LedPattern = LUI.UIImage.new( 0, 0, 1, 23, 0, 0, 1, 23 )
 	LedPattern:setAlpha( 0.4 )
-	LedPattern:setImage( RegisterImage( 0x4B6FFA90272070E ) )
+	LedPattern:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
 	LedPattern:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	LedPattern:setShaderVector( 0, 0, 0, 0, 0 )
 	LedPattern:setupNineSliceShader( 24, 24 )
@@ -49,7 +49,7 @@ CoD.VehicleSeatConfig_SeatPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local LedPatternAdd = LUI.UIImage.new( 0, 0, 1, 23, 0, 0, 1, 23 )
 	LedPatternAdd:setAlpha( 0.5 )
-	LedPatternAdd:setImage( RegisterImage( 0x4B6FFA90272070E ) )
+	LedPatternAdd:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
 	LedPatternAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	LedPatternAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	LedPatternAdd:setupNineSliceShader( 24, 24 )
@@ -57,16 +57,16 @@ CoD.VehicleSeatConfig_SeatPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.LedPatternAdd = LedPatternAdd
 	
 	local FrontendFrame = LUI.UIImage.new( 0.5, 1.5, -13, -11, 0.5, 1.5, -13, -11 )
-	FrontendFrame:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrontendFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrame:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrontendFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrame:setupNineSliceShader( 12, 12 )
 	self:addElement( FrontendFrame )
 	self.FrontendFrame = FrontendFrame
 	
 	local FrontendFrameAdd = LUI.UIImage.new( 0.5, 1.5, -13, -11, 0.5, 1.5, -13, -11 )
-	FrontendFrameAdd:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrontendFrameAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrameAdd:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrontendFrameAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrameAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrameAdd:setupNineSliceShader( 6, 6 )
 	self:addElement( FrontendFrameAdd )

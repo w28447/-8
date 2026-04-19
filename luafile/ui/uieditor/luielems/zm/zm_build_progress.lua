@@ -19,7 +19,7 @@ LUI.createMenu.zm_build_progress = function ( f1_arg0, f1_arg1 )
 	
 	local fill = LUI.UIImage.new( 0.5, 0.5, -135, 135, 0.5, 0.5, -150, -130 )
 	fill:setImage( RegisterImage( 0x72AF76649EA8E9B ) )
-	fill:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	fill:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	fill:setShaderVector( 1, 0, 0, 0, 0 )
 	fill:setShaderVector( 2, 1, 0, 0, 0 )
 	fill:setShaderVector( 3, 0, 0, 0, 0 )

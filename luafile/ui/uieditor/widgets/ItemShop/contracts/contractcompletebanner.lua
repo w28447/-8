@@ -12,7 +12,7 @@ CoD.ContractCompleteBanner.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local CompeletedBanner = LUI.UIText.new( 0.5, 0.5, -73, 73, 0.5, 0.5, -9, 9 )
 	CompeletedBanner:setRGB( ColorSet.EnemyOrange_Base.r, ColorSet.EnemyOrange_Base.g, ColorSet.EnemyOrange_Base.b )
-	CompeletedBanner:setText( LocalizeToUpperString( 0xC249C368451D708 ) )
+	CompeletedBanner:setText( LocalizeToUpperString( "menu/completed" ) )
 	CompeletedBanner:setTTF( "ttmussels_demibold" )
 	CompeletedBanner:setLetterSpacing( 4 )
 	CompeletedBanner:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

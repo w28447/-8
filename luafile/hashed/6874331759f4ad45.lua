@@ -30,7 +30,7 @@ LUI.createMenu.ContractDetails = function ( f1_arg0, f1_arg1 )
 	f1_local1:addElementToPendingUpdateStateList( self )
 	
 	local GenericMenuFrameIdentity = CoD.GenericMenuFrameIdentity.new( f1_local1, f1_arg0, 0.5, 0.5, -960, 960, 0, 1, 0, 0 )
-	GenericMenuFrameIdentity.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x29C903C6DF90D6F ) )
+	GenericMenuFrameIdentity.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/black_market" ) )
 	GenericMenuFrameIdentity:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then
@@ -128,7 +128,7 @@ LUI.createMenu.ContractDetails = function ( f1_arg0, f1_arg1 )
 	Strip = LUI.UIImage.new( 0.5, 0.5, -839, -65, 0, 0, 676.5, 850.5 )
 	Strip:setRGB( 0.09, 0.14, 0.19 )
 	Strip:setAlpha( 0.8 )
-	Strip:setMaterial( LUI.UIImage.GetCachedMaterial( 0x67D1E3A3D2D1BF ) )
+	Strip:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_saturation_normal" ) )
 	Strip:setShaderVector( 0, 0.7, 0, 0, 0 )
 	self:addElement( Strip )
 	self.Strip = Strip
@@ -513,7 +513,7 @@ LUI.createMenu.ContractDetails = function ( f1_arg0, f1_arg1 )
 		GoBack( self, f56_arg2 )
 		return true
 	end, function ( f57_arg0, f57_arg1, f57_arg2 )
-		CoD.Menu.SetButtonLabel( f57_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f57_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x820DDD869ABBFAA], "MWHEELDOWN", function ( f58_arg0, f58_arg1, f58_arg2, f58_arg3 )

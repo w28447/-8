@@ -16,7 +16,7 @@ CoD.CodCasterLoadoutWildcardBackground.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local CodCasterLoadoutWildcardBackground = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 0, 76 )
 	CodCasterLoadoutWildcardBackground:setImage( RegisterImage( 0x6237BCC6F1A8D53 ) )
-	CodCasterLoadoutWildcardBackground:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	CodCasterLoadoutWildcardBackground:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	CodCasterLoadoutWildcardBackground:setShaderVector( 0, 0, 0, 0, 0 )
 	CodCasterLoadoutWildcardBackground:setupNineSliceShader( 55, 38 )
 	self:addElement( CodCasterLoadoutWildcardBackground )

@@ -24,7 +24,7 @@ CoD.TabbedScoreboardHeaderEnemy.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	EnemeyBackingAnim:setAlpha( 0.1 )
 	EnemeyBackingAnim:setYRot( 180 )
 	EnemeyBackingAnim:setImage( RegisterImage( 0xF98FF610AB331DA ) )
-	EnemeyBackingAnim:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	EnemeyBackingAnim:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	EnemeyBackingAnim:subscribeToGlobalModel( f1_arg1, "Factions", "axisFactionColor", function ( model )
 		local f3_local0 = model:get()
 		if f3_local0 ~= nil then
@@ -38,7 +38,7 @@ CoD.TabbedScoreboardHeaderEnemy.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	EnemyBotLineGlowAnim:setAlpha( 0.5 )
 	EnemyBotLineGlowAnim:setYRot( 180 )
 	EnemyBotLineGlowAnim:setImage( RegisterImage( 0x29B69305A070EF5 ) )
-	EnemyBotLineGlowAnim:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	EnemyBotLineGlowAnim:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	EnemyBotLineGlowAnim:subscribeToGlobalModel( f1_arg1, "Factions", "axisFactionColor", function ( model )
 		local f4_local0 = model:get()
 		if f4_local0 ~= nil then
@@ -64,7 +64,7 @@ CoD.TabbedScoreboardHeaderEnemy.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	EnemyBotLineGlow:setAlpha( 0.5 )
 	EnemyBotLineGlow:setYRot( 180 )
 	EnemyBotLineGlow:setImage( RegisterImage( 0x29B69305A070EF5 ) )
-	EnemyBotLineGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	EnemyBotLineGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	EnemyBotLineGlow:subscribeToGlobalModel( f1_arg1, "Factions", "axisFactionColor", function ( model )
 		local f6_local0 = model:get()
 		if f6_local0 ~= nil then

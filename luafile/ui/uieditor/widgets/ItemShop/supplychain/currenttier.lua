@@ -11,7 +11,7 @@ CoD.CurrentTier.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	local PurchaseText = LUI.UIText.new( 0, 0, 0, 180, 0, 0, 37, 53 )
 	PurchaseText:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	PurchaseText:setAlpha( 0 )
-	PurchaseText:setText( LocalizeToUpperString( 0x8B6EE4F645E48E1 ) )
+	PurchaseText:setText( LocalizeToUpperString( "menu/current_tier" ) )
 	PurchaseText:setTTF( "ttmussels_demibold" )
 	PurchaseText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	PurchaseText:setShaderVector( 0, 1, 0, 0, 0 )
@@ -30,7 +30,7 @@ CoD.CurrentTier.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	
 	local PurchaseBand = LUI.UIImage.new( 0, 0, 16, 164, 0, 0, 7, 23 )
 	PurchaseBand:setImage( RegisterImage( 0xC43B0F1483F42F2 ) )
-	PurchaseBand:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	PurchaseBand:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	PurchaseBand:setShaderVector( 0, 0, 0, 0, 0 )
 	PurchaseBand:setupNineSliceShader( 20, 8 )
 	self:addElement( PurchaseBand )
@@ -38,7 +38,7 @@ CoD.CurrentTier.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	
 	local PurchaseBand2 = LUI.UIImage.new( 0, 0, 16, 164, 0, 0, -404.5, -388.5 )
 	PurchaseBand2:setImage( RegisterImage( 0xC43B0F1483F42F2 ) )
-	PurchaseBand2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	PurchaseBand2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	PurchaseBand2:setShaderVector( 0, 0, 0, 0, 0 )
 	PurchaseBand2:setupNineSliceShader( 20, 8 )
 	self:addElement( PurchaseBand2 )
@@ -47,7 +47,7 @@ CoD.CurrentTier.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	local arrow = LUI.UIImage.new( 0, 0, 62, 126, 0, 0, -405, -389 )
 	arrow:setZRot( 180 )
 	arrow:setImage( RegisterImage( 0x88C0CE731ECA734 ) )
-	arrow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	arrow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( arrow )
 	self.arrow = arrow
 	

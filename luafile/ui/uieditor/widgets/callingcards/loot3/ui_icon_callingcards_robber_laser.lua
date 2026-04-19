@@ -10,7 +10,7 @@ CoD.ui_icon_callingcards_robber_laser.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local lasers = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	lasers:setImage( RegisterImage( 0x5145C4730C5C89A ) )
-	lasers:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	lasers:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( lasers )
 	self.lasers = lasers
 	

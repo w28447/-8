@@ -15,7 +15,7 @@ CoD.TrialCountdownSmallWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local NineSliceShaderImage = LUI.UIImage.new( 0, 0, 0, 282, 0, 0, 0, 45 )
 	NineSliceShaderImage:setRGB( 0.13, 0.13, 0.13 )
 	NineSliceShaderImage:setAlpha( 0.8 )
-	NineSliceShaderImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	NineSliceShaderImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	NineSliceShaderImage:setShaderVector( 0, 0, 0, 0, 0 )
 	NineSliceShaderImage:setupNineSliceShader( 6, 6 )
 	self:addElement( NineSliceShaderImage )

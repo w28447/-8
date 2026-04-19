@@ -14,7 +14,7 @@ CoD.MOTD_FeaturedButtonContainer_PC.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local continueButtonPC = nil
 	
 	continueButtonPC = CoD.featureOverlay_Button_MouseOnly.new( f1_arg0, f1_arg1, 0.5, 0.5, 18.5, 178.5, 0.5, 0.5, -30, 30 )
-	continueButtonPC.featureOverlayButtonContainer.Title:setText( LocalizeToUpperString( 0x6393FF34EA56966 ) )
+	continueButtonPC.featureOverlayButtonContainer.Title:setText( LocalizeToUpperString( "menu/continue" ) )
 	continueButtonPC:registerEventHandler( "menu_loaded", function ( element, event )
 		local f2_local0 = nil
 		if element.menuLoaded then
@@ -44,7 +44,7 @@ CoD.MOTD_FeaturedButtonContainer_PC.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 		CoD.MOTDUtility.FeatureCard_HandlePopupAction( self, f4_arg2, f4_arg0, f4_arg1 )
 		return true
 	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x6393FF34EA56966, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( continueButtonPC )

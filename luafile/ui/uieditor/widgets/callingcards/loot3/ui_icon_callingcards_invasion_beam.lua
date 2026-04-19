@@ -11,7 +11,7 @@ CoD.ui_icon_callingcards_invasion_beam.new = function ( f1_arg0, f1_arg1, f1_arg
 	local beam = LUI.UIImage.new( 0, 0, 0, 80, 0, 0, 0, 144 )
 	beam:setZRot( -6 )
 	beam:setImage( RegisterImage( 0x34F992A5F01ECFD ) )
-	beam:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	beam:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( beam )
 	self.beam = beam
 	

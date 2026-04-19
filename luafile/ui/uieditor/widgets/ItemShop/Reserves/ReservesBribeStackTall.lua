@@ -47,7 +47,7 @@ CoD.ReservesBribeStackTall.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local NineSliceBMFrame = LUI.UIImage.new( 0, 1, -2, 2, 0, 1, -2, 2 )
 	NineSliceBMFrame:setImage( RegisterImage( 0x1AC151A09D526DC ) )
-	NineSliceBMFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	NineSliceBMFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	NineSliceBMFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	NineSliceBMFrame:setupNineSliceShader( 162, 52 )
 	self:addElement( NineSliceBMFrame )
@@ -126,7 +126,7 @@ CoD.ReservesBribeStackTall.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local TabBottomLine = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, -96, -92 )
 	TabBottomLine:setAlpha( 0.09 )
 	TabBottomLine:setImage( RegisterImage( 0x5526CF3733E24C4 ) )
-	TabBottomLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	TabBottomLine:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TabBottomLine )
 	self.TabBottomLine = TabBottomLine
 	

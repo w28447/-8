@@ -15,7 +15,7 @@ CoD.vhud_attack_helicopter_flare_counter.new = function ( f1_arg0, f1_arg1, f1_a
 	BackingFillAnim:setRGB( 0.13, 0.13, 0.13 )
 	BackingFillAnim:setAlpha( 0.9 )
 	BackingFillAnim:setZRot( 180 )
-	BackingFillAnim:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	BackingFillAnim:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	BackingFillAnim:setShaderVector( 0, 1, 0, 0, 0 )
 	BackingFillAnim:setShaderVector( 1, 0, 0, 0, 0 )
 	BackingFillAnim:setShaderVector( 2, 1, 0, 0, 0 )
@@ -30,7 +30,7 @@ CoD.vhud_attack_helicopter_flare_counter.new = function ( f1_arg0, f1_arg1, f1_a
 	self.DotTiledBacking = DotTiledBacking
 	
 	local FlareName = LUI.UIText.new( 0.5, 0.5, -41.5, 38.5, 1, 1, -12, 6 )
-	FlareName:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	FlareName:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	FlareName:setTTF( "ttmussels_demibold" )
 	FlareName:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	FlareName:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )

@@ -207,7 +207,7 @@ CoD.Rush_Gameover_Score_Entry.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.Position = Position
 	
 	local FrameEnd = LUI.UIImage.new( 0, 0, 863.5, 969.5, 0.5, 0.5, -46.5, 46.5 )
-	FrameEnd:setImage( RegisterImage( 0x8543CEDC14C64F7 ) )
+	FrameEnd:setImage( RegisterImage( "uie_zm_hud_scoreboard_frame_end" ) )
 	self:addElement( FrameEnd )
 	self.FrameEnd = FrameEnd
 	

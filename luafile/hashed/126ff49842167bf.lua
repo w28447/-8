@@ -14,7 +14,7 @@ CoD.Prestige_PrestigeButton_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local FocusGlow2 = LUI.UIImage.new( 0, 1, -128, 128, 0, 1, -48, 48 )
 	FocusGlow2:setAlpha( 0 )
-	FocusGlow2:setImage( RegisterImage( 0xB8F10D49D85E9C4 ) )
+	FocusGlow2:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_small" ) )
 	FocusGlow2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	FocusGlow2:setShaderVector( 0, 0, 0, 0.4, 0.51 )
 	FocusGlow2:setShaderVector( 1, 1.2, 0, 0, 0 )
@@ -36,7 +36,7 @@ CoD.Prestige_PrestigeButton_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0.5, 0.5, -200, 200, 0.5, 0.5, -47, 47 )
 	NoiseTiledBacking:setAlpha( 0.5 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -44,7 +44,7 @@ CoD.Prestige_PrestigeButton_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	self.NoiseTiledBacking = NoiseTiledBacking
 	
 	local TiledDotBg = LUI.UIImage.new( 0, 1, 4, -4, 0, 1, 3, -3 )
-	TiledDotBg:setImage( RegisterImage( 0x4B6FFA90272070E ) )
+	TiledDotBg:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
 	TiledDotBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledDotBg:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledDotBg:setupNineSliceShader( 24, 24 )
@@ -58,7 +58,7 @@ CoD.Prestige_PrestigeButton_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local TiledDotBgAdd = LUI.UIImage.new( 0, 1, 4, -4, 0, 1, 3, -3 )
 	TiledDotBgAdd:setAlpha( 0 )
-	TiledDotBgAdd:setImage( RegisterImage( 0x4B6FFA90272070E ) )
+	TiledDotBgAdd:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
 	TiledDotBgAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledDotBgAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledDotBgAdd:setupNineSliceShader( 24, 24 )
@@ -67,8 +67,8 @@ CoD.Prestige_PrestigeButton_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local ButtonFrame = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	ButtonFrame:setAlpha( 0 )
-	ButtonFrame:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	ButtonFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	ButtonFrame:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	ButtonFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ButtonFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	ButtonFrame:setupNineSliceShader( 12, 12 )
 	self:addElement( ButtonFrame )
@@ -173,7 +173,7 @@ CoD.Prestige_PrestigeButton_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local PrestigeProgressBar = LUI.UIImage.new( 0, 0, 60, 376, 0, 0, 53.5, 61.5 )
 	PrestigeProgressBar:setRGB( ColorSet.PlayerCount.r, ColorSet.PlayerCount.g, ColorSet.PlayerCount.b )
-	PrestigeProgressBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	PrestigeProgressBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	PrestigeProgressBar:setShaderVector( 1, 0, 0, 0, 0 )
 	PrestigeProgressBar:setShaderVector( 2, 1, 0, 0, 0 )
 	PrestigeProgressBar:setShaderVector( 3, 0, 0, 0, 0 )
@@ -189,8 +189,8 @@ CoD.Prestige_PrestigeButton_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local FrontendFrameSelected = LUI.UIImage.new( 0, 1, -2, 2, 0, 1, -2, 2 )
 	FrontendFrameSelected:setAlpha( 0 )
-	FrontendFrameSelected:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FrontendFrameSelected:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrameSelected:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FrontendFrameSelected:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrameSelected:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrameSelected:setupNineSliceShader( 4, 4 )
 	self:addElement( FrontendFrameSelected )

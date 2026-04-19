@@ -19,7 +19,7 @@ CoD.DirectorZMMapSelectItemOffline_Internal.new = function ( f1_arg0, f1_arg1, f
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.5 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -36,8 +36,8 @@ CoD.DirectorZMMapSelectItemOffline_Internal.new = function ( f1_arg0, f1_arg1, f
 	
 	local FrameBorder = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	FrameBorder:setAlpha( 0.15 )
-	FrameBorder:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrameBorder:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrameBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FrameBorder:setupNineSliceShader( 12, 12 )
 	self:addElement( FrameBorder )
@@ -50,7 +50,7 @@ CoD.DirectorZMMapSelectItemOffline_Internal.new = function ( f1_arg0, f1_arg1, f
 	
 	local MapName = LUI.UIText.new( 0, 0, 9, 245, 1, 1, -23, -5 )
 	MapName:setRGB( 0.58, 0.58, 0.58 )
-	MapName:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	MapName:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	MapName:setTTF( "skorzhen" )
 	MapName:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	MapName:setShaderVector( 0, 1, 0, 0, 0 )
@@ -64,7 +64,7 @@ CoD.DirectorZMMapSelectItemOffline_Internal.new = function ( f1_arg0, f1_arg1, f
 	
 	local EquippedMarkerTick2 = LUI.UIImage.new( 1, 1, -150, 10, 0, 0, -17, 143 )
 	EquippedMarkerTick2:setAlpha( 0 )
-	EquippedMarkerTick2:setImage( RegisterImage( 0x65F14AD6E4F3F8F ) )
+	EquippedMarkerTick2:setImage( RegisterImage( "uie_ui_menu_zombies_cac_elixir_slot_check" ) )
 	self:addElement( EquippedMarkerTick2 )
 	self.EquippedMarkerTick2 = EquippedMarkerTick2
 	
@@ -92,7 +92,7 @@ CoD.DirectorZMMapSelectItemOffline_Internal.new = function ( f1_arg0, f1_arg1, f
 	local FocusGlow = LUI.UIImage.new( 0, 1, -49, 49, 0, 1, -49, 49 )
 	FocusGlow:setRGB( 0.89, 0.12, 0.12 )
 	FocusGlow:setAlpha( 0 )
-	FocusGlow:setImage( RegisterImage( 0xB8F10D49D85E9C4 ) )
+	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_small" ) )
 	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.25, 0.25 )
 	FocusGlow:setShaderVector( 1, 1.2, 0, 0, 0 )
@@ -103,8 +103,8 @@ CoD.DirectorZMMapSelectItemOffline_Internal.new = function ( f1_arg0, f1_arg1, f
 	local FocusBorder = LUI.UIImage.new( 0, 1, -4, 4, 0, 1, -3, 3 )
 	FocusBorder:setRGB( 1, 0.7, 0.7 )
 	FocusBorder:setAlpha( 0 )
-	FocusBorder:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FocusBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FocusBorder:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FocusBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FocusBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FocusBorder:setupNineSliceShader( 10, 10 )
 	self:addElement( FocusBorder )
@@ -118,7 +118,7 @@ CoD.DirectorZMMapSelectItemOffline_Internal.new = function ( f1_arg0, f1_arg1, f
 	
 	local TeamName = LUI.UIText.new( 1, 1, -204, -4, 1, 1, -22, -4 )
 	TeamName:setRGB( 0.58, 0.58, 0.58 )
-	TeamName:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	TeamName:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	TeamName:setTTF( "skorzhen" )
 	TeamName:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	TeamName:setShaderVector( 0, 1, 0, 0, 0 )

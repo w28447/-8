@@ -40,7 +40,7 @@ CoD.BM_AvailabeContractItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local TiledBacking = LUI.UIImage.new( -0, 0.99, 1, 1, 0, 1, 0, 0 )
 	TiledBacking:setAlpha( 0.5 )
-	TiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking:setupNineSliceShader( 196, 88 )
@@ -70,7 +70,7 @@ CoD.BM_AvailabeContractItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local Completed = LUI.UIText.new( 0.5, 0.5, -90, 90, 1, 1, -28, -6 )
 	Completed:setRGB( ColorSet.T8__GREEN.r, ColorSet.T8__GREEN.g, ColorSet.T8__GREEN.b )
 	Completed:setAlpha( 0 )
-	Completed:setText( LocalizeToUpperString( 0xC249C368451D708 ) )
+	Completed:setText( LocalizeToUpperString( "menu/completed" ) )
 	Completed:setTTF( "ttmussels_regular" )
 	Completed:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	Completed:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )

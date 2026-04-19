@@ -15,7 +15,7 @@ CoD.WZHorizontalCompass.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local Backer = LUI.UIImage.new( 0, 0, -76, 864, 0, 0, 27, 79 )
 	Backer:setImage( RegisterImage( 0xE37F9A2EBCB414D ) )
-	Backer:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE125638BF94665F ) )
+	Backer:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	Backer:setShaderVector( 0, 0.45, 0.01, 0.45, 0.01 )
 	self:addElement( Backer )
 	self.Backer = Backer

@@ -59,10 +59,10 @@ CoD.PaintshopWeaponSelectWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 		end
 	end, function ( f6_arg0, f6_arg1, f6_arg2 )
 		if not CoD.CACUtility.IsCACBlackMarketItemLocked( f6_arg1, f6_arg0, f6_arg2 ) and CoD.CACUtility.HasSignatureWeapons( f6_arg1, f6_arg0, f6_arg2 ) then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif not CoD.CACUtility.IsCACBlackMarketItemLocked( f6_arg1, f6_arg0, f6_arg2 ) and not CoD.CACUtility.HasSignatureWeapons( f6_arg1, f6_arg0, f6_arg2 ) then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -152,8 +152,8 @@ CoD.PaintshopWeaponSelectWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 			modelName = "LastInput"
 		} )
 	end, false )
-	RightArrow.KeyMouseImage:setImage( RegisterImage( 0x5E74D00B45D12B6 ) )
-	RightArrow.ControllerImage:setImage( RegisterImage( 0x5E74D00B45D12B6 ) )
+	RightArrow.KeyMouseImage:setImage( RegisterImage( "uie_optionswidgets_arrow" ) )
+	RightArrow.ControllerImage:setImage( RegisterImage( "uie_optionswidgets_arrow" ) )
 	RightArrow:registerEventHandler( "gain_focus", function ( element, event )
 		local f13_local0 = nil
 		if element.gainFocus then
@@ -202,8 +202,8 @@ CoD.PaintshopWeaponSelectWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 		} )
 	end, false )
 	LeftArrow:setZRot( 180 )
-	LeftArrow.KeyMouseImage:setImage( RegisterImage( 0x5E74D00B45D12B6 ) )
-	LeftArrow.ControllerImage:setImage( RegisterImage( 0x5E74D00B45D12B6 ) )
+	LeftArrow.KeyMouseImage:setImage( RegisterImage( "uie_optionswidgets_arrow" ) )
+	LeftArrow.ControllerImage:setImage( RegisterImage( "uie_optionswidgets_arrow" ) )
 	LeftArrow:registerEventHandler( "gain_focus", function ( element, event )
 		local f19_local0 = nil
 		if element.gainFocus then
@@ -241,7 +241,7 @@ CoD.PaintshopWeaponSelectWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 		SetControllerModelValue( f23_arg2, "PaintjobWeaponVariantListShown", false )
 		return true
 	end, function ( f24_arg0, f24_arg1, f24_arg2 )
-		CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	self:addElement( WeaponVariantListWidget )

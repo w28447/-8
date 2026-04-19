@@ -1208,7 +1208,7 @@ CoD.Hud_MP_SafeAreaContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.MPHardcoreInventoryWidget = MPHardcoreInventoryWidget
 	
 	WaypointCloseMessage = CoD.WaypointCloseMessage.new( f1_arg0, f1_arg1, 0.5, 0.5, -192, 192, 0, 0, 267, 288 )
-	WaypointCloseMessage.text:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	WaypointCloseMessage.text:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	self:addElement( WaypointCloseMessage )
 	self.WaypointCloseMessage = WaypointCloseMessage
 	

@@ -27,7 +27,7 @@ CoD[0x16E262B518BD2C4].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local Chi = LUI.UIImage.new( 0, 0, 496, 960, 0, 0, 0, 240 )
 	Chi:setAlpha( 0.5 )
 	Chi:setImage( RegisterImage( 0xB2062AC12676D94 ) )
-	Chi:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9227A50BA2B8D21 ) )
+	Chi:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	Chi:setShaderVector( 0, 0, 5, 0, 0 )
 	Chi:setShaderVector( 1, 10, 0, 0, 0 )
 	self:addElement( Chi )
@@ -47,7 +47,7 @@ CoD[0x16E262B518BD2C4].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local vienGlow = LUI.UIImage.new( 0, 0, 544.5, 968.5, 0, 0, 120, 248 )
 	vienGlow:setScale( 1.03, 1.03 )
 	vienGlow:setImage( RegisterImage( 0xB6F29CCE90B1935 ) )
-	vienGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	vienGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( vienGlow )
 	self.vienGlow = vienGlow
 	

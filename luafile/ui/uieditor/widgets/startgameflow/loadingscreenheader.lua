@@ -12,7 +12,7 @@ CoD.LoadingScreenHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local TiledBackingTop = LUI.UIImage.new( 0.5, 0.5, -542.5, 48.5, 0, 0, 2, 200 )
-	TiledBackingTop:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBackingTop:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBackingTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledBackingTop:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBackingTop:setupNineSliceShader( 196, 88 )
@@ -21,7 +21,7 @@ CoD.LoadingScreenHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local TiledBackingTop2 = LUI.UIImage.new( 0.5, 0.5, -542.5, 48.5, 0, 0, 41, 91 )
 	TiledBackingTop2:setRGB( 0.11, 0.11, 0.11 )
-	TiledBackingTop2:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBackingTop2:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBackingTop2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledBackingTop2:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBackingTop2:setupNineSliceShader( 196, 88 )

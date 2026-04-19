@@ -12,7 +12,7 @@ CoD.ArenaSkillEvaluationBg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local BGDotPatternLarge = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BGDotPatternLarge:setAlpha( 0.05 )
-	BGDotPatternLarge:setImage( RegisterImage( 0xFC21A8215EA012B ) )
+	BGDotPatternLarge:setImage( RegisterImage( "uie_ui_menu_common_button_bg_pattern_large" ) )
 	BGDotPatternLarge:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	BGDotPatternLarge:setShaderVector( 0, 0, 0, 0, 0 )
 	BGDotPatternLarge:setupNineSliceShader( 4, 4 )
@@ -38,7 +38,7 @@ CoD.ArenaSkillEvaluationBg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.05 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -56,8 +56,8 @@ CoD.ArenaSkillEvaluationBg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local infoBracketBot = LUI.UIImage.new( 0, 0, -0.5, 1202.5, 1, 1, -7, 1 )
 	infoBracketBot:setAlpha( 0.2 )
-	infoBracketBot:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	infoBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	infoBracketBot:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	infoBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	infoBracketBot:setShaderVector( 0, 0, 0, 0, 0 )
 	infoBracketBot:setupNineSliceShader( 16, 4 )
 	self:addElement( infoBracketBot )

@@ -22,14 +22,14 @@ CoD[0x5A97F2CC703C031].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local lightening2 = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	lightening2:setAlpha( 0 )
 	lightening2:setImage( RegisterImage( 0x9AFF475B57F1E3E ) )
-	lightening2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	lightening2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( lightening2 )
 	self.lightening2 = lightening2
 	
 	local lightening1 = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	lightening1:setAlpha( 0 )
 	lightening1:setImage( RegisterImage( 0x9AFF375B57F1C8B ) )
-	lightening1:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	lightening1:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( lightening1 )
 	self.lightening1 = lightening1
 	

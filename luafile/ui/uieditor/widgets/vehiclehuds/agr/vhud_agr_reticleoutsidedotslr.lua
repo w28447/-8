@@ -12,7 +12,7 @@ CoD.vhud_agr_ReticleOutsideDotsLR.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	agrReticleOutsideDotsLR0:setXRot( -180 )
 	agrReticleOutsideDotsLR0:setZoom( -50 )
 	agrReticleOutsideDotsLR0:setImage( RegisterImage( 0x313A715108951EA ) )
-	agrReticleOutsideDotsLR0:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	agrReticleOutsideDotsLR0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( agrReticleOutsideDotsLR0 )
 	self.agrReticleOutsideDotsLR0 = agrReticleOutsideDotsLR0
 	
@@ -20,7 +20,7 @@ CoD.vhud_agr_ReticleOutsideDotsLR.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	agrReticleOutsideDotsLR:setAlpha( 0.7 )
 	agrReticleOutsideDotsLR:setXRot( -180 )
 	agrReticleOutsideDotsLR:setImage( RegisterImage( 0x313A715108951EA ) )
-	agrReticleOutsideDotsLR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	agrReticleOutsideDotsLR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( agrReticleOutsideDotsLR )
 	self.agrReticleOutsideDotsLR = agrReticleOutsideDotsLR
 	

@@ -204,7 +204,7 @@ LUI.createMenu.PersonalizeCharacter = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f22_arg0, f22_arg1, f22_arg2 )
 		if not CoD.ModelUtility.IsSelfModelValueTrue( f22_arg0, f22_arg2, "disabled" ) then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -349,7 +349,7 @@ LUI.createMenu.PersonalizeCharacter = function ( f1_arg0, f1_arg1 )
 		GoBack( self, f38_arg2 )
 		return true
 	end, function ( f39_arg0, f39_arg1, f39_arg2 )
-		CoD.Menu.SetButtonLabel( f39_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f39_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f40_arg0, f40_arg1, f40_arg2, f40_arg3 )

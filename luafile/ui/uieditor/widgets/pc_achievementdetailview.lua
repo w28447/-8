@@ -33,7 +33,7 @@ CoD.PC_AchievementDetailView.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local GridTiled = LUI.UIImage.new( 0, 1, 2, -2, 0, 1, 4, -4 )
 	GridTiled:setAlpha( 0.09 )
 	GridTiled:setScale( 1.01, 1.01 )
-	GridTiled:setImage( RegisterImage( 0xCA386792563DE8 ) )
+	GridTiled:setImage( RegisterImage( "uie_ui_menu_store_bg_grid" ) )
 	GridTiled:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	GridTiled:setShaderVector( 0, 0, 0, 0, 0 )
 	GridTiled:setupNineSliceShader( 64, 64 )
@@ -43,7 +43,7 @@ CoD.PC_AchievementDetailView.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local Dots = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Dots:setRGB( 0.92, 0.92, 0.92 )
 	Dots:setImage( RegisterImage( 0xFE4B36304988C2C ) )
-	Dots:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	Dots:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	Dots:setShaderVector( 0, 0, 0, 0, 0 )
 	Dots:setupNineSliceShader( 6, 6 )
 	self:addElement( Dots )
@@ -68,7 +68,7 @@ CoD.PC_AchievementDetailView.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local CurrentProgressValue = LUI.UIText.new( 1, 1, -136, -86, 1, 1, -49, -25 )
 	CurrentProgressValue:setRGB( 0.58, 0.58, 0.58 )
 	CurrentProgressValue:setAlpha( 0 )
-	CurrentProgressValue:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	CurrentProgressValue:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	CurrentProgressValue:setTTF( "ttmussels_demibold" )
 	CurrentProgressValue:setLetterSpacing( 2 )
 	CurrentProgressValue:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )
@@ -79,7 +79,7 @@ CoD.PC_AchievementDetailView.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local TotalProgressValue = LUI.UIText.new( 1, 1, -71, -21, 1, 1, -50, -25 )
 	TotalProgressValue:setRGB( 0.58, 0.58, 0.58 )
 	TotalProgressValue:setAlpha( 0 )
-	TotalProgressValue:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	TotalProgressValue:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	TotalProgressValue:setTTF( "ttmussels_regular" )
 	TotalProgressValue:setLetterSpacing( 2 )
 	TotalProgressValue:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -116,7 +116,7 @@ CoD.PC_AchievementDetailView.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.AchievementIcon = AchievementIcon
 	
 	local Lock = LUI.UIFixedAspectRatioImage.new( 0.5, 0.5, -20, 20, 0, 0, 215, 255 )
-	Lock:setImage( RegisterImage( 0xB8AD8D12CEB707D ) )
+	Lock:setImage( RegisterImage( "uie_icon_locks_lock_01" ) )
 	self:addElement( Lock )
 	self.Lock = Lock
 	

@@ -16,7 +16,7 @@ CoD.CodCasterLoadoutSelectionSecond.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	self.Center = Center
 	
 	local ItemName = LUI.UIText.new( 0.5, 0.5, -85.5, 85.5, 0, 0, -23.5, -5.5 )
-	ItemName:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	ItemName:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	ItemName:setTTF( "default" )
 	ItemName:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	ItemName:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )

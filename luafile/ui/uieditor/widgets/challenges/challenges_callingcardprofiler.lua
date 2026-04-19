@@ -70,8 +70,8 @@ CoD.Challenges_CallingCardProfiler.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local ProgressBarBoarder = LUI.UIImage.new( 0.5, 0.5, -247.5, 247.5, 0, 0, 294, 317 )
 	ProgressBarBoarder:setAlpha( 0.1 )
-	ProgressBarBoarder:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	ProgressBarBoarder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	ProgressBarBoarder:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	ProgressBarBoarder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ProgressBarBoarder:setShaderVector( 0, 0, 0, 0, 0 )
 	ProgressBarBoarder:setupNineSliceShader( 12, 12 )
 	self:addElement( ProgressBarBoarder )
@@ -79,7 +79,7 @@ CoD.Challenges_CallingCardProfiler.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local ProgressBar = LUI.UIImage.new( 0.03, 0.97, 1, -1, 0, 0.03, 296, 294 )
 	ProgressBar:setRGB( 1, 0.36, 0 )
-	ProgressBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x910274CA3518744 ) )
+	ProgressBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	ProgressBar:setShaderVector( 1, 0, 0, 0, 0 )
 	ProgressBar:setShaderVector( 2, 1, 0, 0, 0 )
 	ProgressBar:setShaderVector( 3, 0, 0, 0, 0 )
@@ -132,8 +132,8 @@ CoD.Challenges_CallingCardProfiler.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local FrameBorder = LUI.UIImage.new( 0.5, 0.5, -114.5, 115.5, 0, 0, 474, 528 )
 	FrameBorder:setAlpha( 0.15 )
-	FrameBorder:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrameBorder:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrameBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FrameBorder:setupNineSliceShader( 12, 12 )
 	self:addElement( FrameBorder )

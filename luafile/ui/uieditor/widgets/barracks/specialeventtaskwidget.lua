@@ -80,7 +80,7 @@ CoD.SpecialEventTaskWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local TaskProgress = LUI.UIImage.new( 0, 0, 1, 444, 1, 1, -10, -6 )
 	TaskProgress:setRGB( ColorSet.T8__BEIGE__HEADER.r, ColorSet.T8__BEIGE__HEADER.g, ColorSet.T8__BEIGE__HEADER.b )
 	TaskProgress:setAlpha( 0 )
-	TaskProgress:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	TaskProgress:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	TaskProgress:setShaderVector( 1, 0, 0, 0, 0 )
 	TaskProgress:setShaderVector( 2, 1, 0, 0, 0 )
 	TaskProgress:setShaderVector( 3, 0, 0, 0, 0 )
@@ -95,7 +95,7 @@ CoD.SpecialEventTaskWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.TaskProgress = TaskProgress
 	
 	local LevelMeterBg = LUI.UIImage.new( 0, 1.12, -2, -54, 0.5, 0.5, 33.5, 51.5 )
-	LevelMeterBg:setImage( RegisterImage( 0x61E8EB53DFEF82B ) )
+	LevelMeterBg:setImage( RegisterImage( "uie_ui_menu_inspection_level_meter_bg" ) )
 	LevelMeterBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	LevelMeterBg:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( LevelMeterBg )
@@ -103,11 +103,11 @@ CoD.SpecialEventTaskWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local CurrentXPMeter = CoD.CommonWipeMeterWithGlow.new( f1_arg0, f1_arg1, 0, 1.12, 0, -56, 0, 0, 86.5, 98.5 )
 	CurrentXPMeter.Meter:setRGB( 1, 0.73, 0 )
-	CurrentXPMeter.Meter:setImage( RegisterImage( 0x6D2FBF31F53910C ) )
+	CurrentXPMeter.Meter:setImage( RegisterImage( "uie_ui_menu_aar_levelup_bar" ) )
 	CurrentXPMeter.MeterAdd:setAlpha( 0.3 )
-	CurrentXPMeter.MeterAdd:setImage( RegisterImage( 0x6D2FBF31F53910C ) )
+	CurrentXPMeter.MeterAdd:setImage( RegisterImage( "uie_ui_menu_aar_levelup_bar" ) )
 	CurrentXPMeter.MeterGlow:setRGB( 0.39, 0.18, 0 )
-	CurrentXPMeter.MeterGlow:setImage( RegisterImage( 0xA7D61A3302B55D0 ) )
+	CurrentXPMeter.MeterGlow:setImage( RegisterImage( "uie_ui_menu_aar_levelup_bar_glow" ) )
 	CurrentXPMeter.MeterGlow:setShaderVector( 0, 0.25, 0, 0, 0 )
 	CurrentXPMeter:linkToElementModel( self, "taskProgress", true, function ( model )
 		local f7_local0 = model:get()

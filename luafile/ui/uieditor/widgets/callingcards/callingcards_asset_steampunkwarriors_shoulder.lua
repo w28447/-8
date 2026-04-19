@@ -15,13 +15,13 @@ CoD.CallingCards_Asset_steampunkwarriors_shoulder.new = function ( f1_arg0, f1_a
 	
 	local light = LUI.UIImage.new( 0, 0, 80.5, 175.5, 0, 0, -15.5, 79.5 )
 	light:setImage( RegisterImage( 0xADBF2ABD5CCB0FC ) )
-	light:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	light:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( light )
 	self.light = light
 	
 	local light2 = LUI.UIImage.new( 0, 0, 128, 201, 0, 0, 12, 85 )
 	light2:setImage( RegisterImage( 0xADBF2ABD5CCB0FC ) )
-	light2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	light2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( light2 )
 	self.light2 = light2
 	

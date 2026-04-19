@@ -12,7 +12,7 @@ CoD.VehicleHoldSwitchSeat.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local label = LUI.UIText.new( 0, 0, 46, 200, 0, 0, 17, 31 )
-	label:setText( LocalizeToUpperString( 0xCE3EF50B2B067C3 ) )
+	label:setText( LocalizeToUpperString( "menu/driver_seat" ) )
 	label:setTTF( "ttmussels_regular" )
 	label:setLetterSpacing( 2 )
 	label:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

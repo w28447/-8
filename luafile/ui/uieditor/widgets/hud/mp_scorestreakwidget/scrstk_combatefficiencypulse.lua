@@ -32,7 +32,7 @@ CoD.ScrStk_CombatEfficiencyPulse.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	Glow:setRGB( 0, 0.6, 1 )
 	Glow:setAlpha( 0 )
 	Glow:setImage( RegisterImage( 0x1BB2C084812E7B6 ) )
-	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
 	

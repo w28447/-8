@@ -12,7 +12,7 @@ CoD.ScoreboardGameTypeSpecificStat.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local StatValue = LUI.UIText.new( 0, 0, 0, 76, 0, 0, 0, 21 )
 	StatValue:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	StatValue:setAlpha( 0.7 )
-	StatValue:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	StatValue:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	StatValue:setTTF( "0arame_mono_stencil" )
 	StatValue:setLetterSpacing( 2 )
 	StatValue:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -22,7 +22,7 @@ CoD.ScoreboardGameTypeSpecificStat.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local StatName = LUI.UIText.new( 0, 0, 88, 164, 0, 0, 0, 21 )
 	StatName:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	StatName:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	StatName:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	StatName:setTTF( "ttmussels_regular" )
 	StatName:setLetterSpacing( 2 )
 	StatName:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

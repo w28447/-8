@@ -27,7 +27,7 @@ CoD.Social_ManagePartyPlayerButtonInternal.new = function ( f1_arg0, f1_arg1, f1
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.8 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -230,7 +230,7 @@ CoD.Social_ManagePartyPlayerButtonInternal.new = function ( f1_arg0, f1_arg1, f1
 	
 	local FocusGlow = LUI.UIImage.new( -0.1, 1.09, -100, 100, 0.5, 0.5, -61, 61 )
 	FocusGlow:setAlpha( 0 )
-	FocusGlow:setImage( RegisterImage( 0x8E79E4E42B6714C ) )
+	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_large" ) )
 	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.25, 0.25 )
 	FocusGlow:setShaderVector( 1, 1.2, 0, 0, 0 )

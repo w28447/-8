@@ -83,7 +83,7 @@ CoD.StartMenu_Options_SettingGrid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 		PlaySoundAlias( "uin_paint_decal_nav" )
 		return true
 	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( SettingsGrid, "setHeight", function ( element, controller )

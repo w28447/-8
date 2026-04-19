@@ -33,7 +33,7 @@ CoD.GenericClickButton.new = function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3, f5_a
 	local FEButtonFocus = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	FEButtonFocus:setZoom( 10 )
 	FEButtonFocus:setImage( RegisterImage( 0xFB9C243FDED3D3 ) )
-	FEButtonFocus:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FEButtonFocus:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FEButtonFocus:setShaderVector( 0, 0, 0, 0.38, 0.2 )
 	FEButtonFocus:setupNineSliceShader( 90, 30 )
 	self:addElement( FEButtonFocus )
@@ -56,14 +56,14 @@ CoD.GenericClickButton.new = function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3, f5_a
 	Arrow:setYRot( 180 )
 	Arrow:setZoom( 10 )
 	Arrow:setImage( RegisterImage( 0x3842361F4104287 ) )
-	Arrow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Arrow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Arrow )
 	self.Arrow = Arrow
 	
 	local Glow21 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, -4, 4 )
 	Glow21:setAlpha( 0 )
 	Glow21:setImage( RegisterImage( 0x713A30DFAEF8964 ) )
-	Glow21:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Glow21:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow21 )
 	self.Glow21 = Glow21
 	
@@ -82,7 +82,7 @@ CoD.GenericClickButton.new = function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3, f5_a
 	
 	local Glow2 = LUI.UIImage.new( 0, 1, -72, 104, 0, 0, -37, 87 )
 	Glow2:setImage( RegisterImage( 0x713A30DFAEF8964 ) )
-	Glow2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Glow2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow2 )
 	self.Glow2 = Glow2
 	

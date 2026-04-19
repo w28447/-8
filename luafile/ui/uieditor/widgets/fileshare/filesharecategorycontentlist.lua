@@ -90,7 +90,7 @@ CoD.FileshareCategoryContentList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 		end
 	end, function ( f7_arg0, f7_arg1, f7_arg2 )
 		if not IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif IsDemoPlaying() then
 			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x8ADA48E694BFE2C, nil, nil )

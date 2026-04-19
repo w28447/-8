@@ -11,7 +11,7 @@ CoD.Mark2BonusExpBadgeInGame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local Background = LUI.UIImage.new( 0, 0, 0, 195, 0, 0, 0, 18 )
 	Background:setRGB( 0.13, 0.69, 0.74 )
 	Background:setAlpha( 0.6 )
-	Background:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE125638BF94665F ) )
+	Background:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	Background:setShaderVector( 0, 0.21, 0.05, 0.21, 0.05 )
 	self:addElement( Background )
 	self.Background = Background

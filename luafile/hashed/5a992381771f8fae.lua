@@ -21,7 +21,7 @@ CoD.WarScoreInfo_Capture_ProgressBarSegment.new = function ( f1_arg0, f1_arg1, f
 	
 	local ProgressBar = LUI.UIImage.new( 0, 0, 0, 132, 0, 0, -30, 42 )
 	ProgressBar:setImage( RegisterImage( 0x617BF05F969EB85 ) )
-	ProgressBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	ProgressBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	ProgressBar:setShaderVector( 0, 0.5, 0, 0, 0 )
 	ProgressBar:setShaderVector( 1, 0, 0, 0, 0 )
 	ProgressBar:setShaderVector( 2, 1, 0, 0, 0 )

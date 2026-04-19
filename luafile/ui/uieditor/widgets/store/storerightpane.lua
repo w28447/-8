@@ -42,7 +42,7 @@ CoD.StoreRightPane.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local featlineleft = LUI.UIImage.new( 0, 0, 293, 299, 0, 0, 82, 685 )
 	featlineleft:setZRot( -90 )
 	featlineleft:setImage( RegisterImage( 0x66D91514A5B2C62 ) )
-	featlineleft:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	featlineleft:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( featlineleft )
 	self.featlineleft = featlineleft
 	

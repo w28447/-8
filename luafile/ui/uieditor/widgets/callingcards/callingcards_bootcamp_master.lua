@@ -74,7 +74,7 @@ CoD[0x7B1519A3669E105].__resetProperties = function ( f2_arg0 )
 	f2_arg0.bathand:setZRot( 0 )
 	f2_arg0.dudeLighting:setAlpha( 1 )
 	f2_arg0.lightening:setAlpha( 1 )
-	f2_arg0.lightening:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6B34AA3F39208EF ) )
+	f2_arg0.lightening:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_normal" ) )
 end
 
 CoD[0x7B1519A3669E105].__clipsPerState = {
@@ -252,7 +252,7 @@ CoD[0x7B1519A3669E105].__clipsPerState = {
 			
 			f3_arg0.lightening:beginAnimation( 1000 )
 			f3_arg0.lightening:setAlpha( 0 )
-			f3_arg0.lightening:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+			f3_arg0.lightening:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 			f3_arg0.lightening:registerEventHandler( "interrupted_keyframe", f3_arg0.clipInterrupted )
 			f3_arg0.lightening:registerEventHandler( "transition_complete_keyframe", f3_local2 )
 			local f3_local3 = function ( f30_arg0 )

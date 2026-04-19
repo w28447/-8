@@ -27,7 +27,7 @@ CoD.StartMenu_ResourceList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local HeaderImage = LUI.UIImage.new( 1, 1, -80.5, -16.5, 0, 0, -15.5, 48.5 )
 	HeaderImage:setAlpha( 0 )
-	HeaderImage:setImage( RegisterImage( 0x7615068F50B3D66 ) )
+	HeaderImage:setImage( RegisterImage( "blacktransparent" ) )
 	self:addElement( HeaderImage )
 	self.HeaderImage = HeaderImage
 	
@@ -57,8 +57,8 @@ CoD.StartMenu_ResourceList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local BottomBracket9Slice = LUI.UIImage.new( 0, 0, -1, 220, 0, 0, -2, 7 )
 	BottomBracket9Slice:setRGB( 0.55, 0.54, 0.49 )
 	BottomBracket9Slice:setZRot( 180 )
-	BottomBracket9Slice:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	BottomBracket9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	BottomBracket9Slice:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	BottomBracket9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	BottomBracket9Slice:setShaderVector( 0, 0, 0, 0, 0 )
 	BottomBracket9Slice:setupNineSliceShader( 16, 4 )
 	self:addElement( BottomBracket9Slice )
@@ -66,7 +66,7 @@ CoD.StartMenu_ResourceList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local Title = LUI.UIText.new( 0, 0, 15, 115, 0, 0, 1.5, 23.5 )
 	Title:setRGB( 0, 0, 0 )
-	Title:setText( LocalizeToUpperString( 0xA73F5EE9B97B6BD ) )
+	Title:setText( LocalizeToUpperString( "warzone/resources" ) )
 	Title:setTTF( "ttmussels_regular" )
 	Title:setLetterSpacing( 4 )
 	Title:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

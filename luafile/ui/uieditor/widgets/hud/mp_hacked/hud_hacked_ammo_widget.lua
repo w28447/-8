@@ -22,7 +22,7 @@ CoD.hud_hacked_ammo_widget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local Hacked = LUI.UIImage.new( 0, 0, 0, 310, 0, 0, 0, 64 )
 	Hacked:setRGB( 0.32, 0.44, 0.52 )
 	Hacked:setImage( RegisterImage( 0x74A8C8624AAE4D2 ) )
-	Hacked:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9227A50BA2B8D21 ) )
+	Hacked:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	Hacked:setShaderVector( 0, 4, 4, 0, 0 )
 	Hacked:setShaderVector( 1, 30, 0, 0, 0 )
 	self:addElement( Hacked )

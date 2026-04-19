@@ -11,8 +11,8 @@ CoD.vhud_ms_NotificationFlir.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local GlowOrangeOver = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, -2 )
 	GlowOrangeOver:setRGB( 0.42, 0.93, 1 )
 	GlowOrangeOver:setAlpha( 0.4 )
-	GlowOrangeOver:setImage( RegisterImage( 0x5BE416E17DAB33B ) )
-	GlowOrangeOver:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	GlowOrangeOver:setImage( RegisterImage( "uie_t7_core_hud_mapwidget_panelglow" ) )
+	GlowOrangeOver:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowOrangeOver )
 	self.GlowOrangeOver = GlowOrangeOver
 	
@@ -50,7 +50,7 @@ CoD.vhud_ms_NotificationFlir.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local arrowUp = LUI.UIImage.new( 0.5, 0.5, -5, 6, 0.5, 0.5, -21, -14 )
 	arrowUp:setAlpha( 0.6 )
 	arrowUp:setImage( RegisterImage( 0x53866FDE741ED56 ) )
-	arrowUp:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	arrowUp:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( arrowUp )
 	self.arrowUp = arrowUp
 	

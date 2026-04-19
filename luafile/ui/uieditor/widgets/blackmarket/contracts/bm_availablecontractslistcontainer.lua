@@ -1,4 +1,4 @@
-require( "x64:75d27055190f173" )
+require( "ui/uieditor/menus/blackmarket/contracts/blackmarketcontractreplacementconfirmation" )
 require( "ui/uieditor/widgets/blackmarket/contracts/bm_availabecontractitem" )
 
 CoD.BM_AvailableContractsListContainer = InheritFrom( LUI.UIElement )
@@ -57,10 +57,10 @@ CoD.BM_AvailableContractsListContainer.new = function ( f1_arg0, f1_arg1, f1_arg
 		end
 	end, function ( f6_arg0, f6_arg1, f6_arg2 )
 		if not CoD.BlackMarketUtility.IsActiveContractAvailable( f6_arg2, f6_arg0, f6_arg1 ) and not CoD.BlackMarketUtility.IsActiveContractCompleted( f6_arg2, f6_arg0, f6_arg1 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f6_arg0, f6_arg2, "active" ) then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif not CoD.ModelUtility.IsSelfModelValueTrue( f6_arg0, f6_arg2, "active" ) and not CoD.ModelUtility.IsSelfModelValueTrue( f6_arg0, f6_arg2, "completed" ) then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

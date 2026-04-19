@@ -15,7 +15,7 @@ CoD.WZCompassCardinal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	Text:setShaderVector( 0, 0.8, 0, 0, 0 )
 	Text:setShaderVector( 1, 0, 0, 0, 0 )
 	Text:setShaderVector( 2, 1, 1, 1, 0.35 )
-	Text:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Text:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	Text:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	Text:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
 	Text:linkToElementModel( self, "alpha", true, function ( model )
@@ -66,9 +66,9 @@ CoD.WZCompassCardinal.__resetProperties = function ( f6_arg0 )
 	f6_arg0.Text:setShaderVector( 0, 0.8, 0, 0, 0 )
 	f6_arg0.Text:setShaderVector( 1, 0, 0, 0, 0 )
 	f6_arg0.Text:setShaderVector( 2, 1, 1, 1, 0.35 )
-	f6_arg0.Text:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
-	f6_arg0.Text:setBackingMaterial( LUI.UIImage.GetCachedMaterial( 0x6B34AA3F39208EF ) )
-	f6_arg0.Text:setBackingMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	f6_arg0.Text:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
+	f6_arg0.Text:setBackingMaterial( LUI.UIImage.GetCachedMaterial( "ui_normal" ) )
+	f6_arg0.Text:setBackingMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 end
 
 CoD.WZCompassCardinal.__clipsPerState = {
@@ -88,9 +88,9 @@ CoD.WZCompassCardinal.__clipsPerState = {
 			f8_arg0.Text:setShaderVector( 0, 0.8, 0, 0, 0 )
 			f8_arg0.Text:setShaderVector( 1, 0, 0, 0, 0 )
 			f8_arg0.Text:setShaderVector( 2, 1, 0.2, 0, 0.35 )
-			f8_arg0.Text:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x6B34AA3F39208EF ) )
-			f8_arg0.Text:setBackingMaterial( LUI.UIImage.GetCachedMaterial( 0x6B34AA3F39208EF ) )
-			f8_arg0.Text:setBackingMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+			f8_arg0.Text:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_normal" ) )
+			f8_arg0.Text:setBackingMaterial( LUI.UIImage.GetCachedMaterial( "ui_normal" ) )
+			f8_arg0.Text:setBackingMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 			f8_arg0.clipFinished( f8_arg0.Text )
 		end
 	}

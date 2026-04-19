@@ -249,7 +249,7 @@ LUI.createMenu.AAR_T8_Arena = function ( f1_arg0, f1_arg1 )
 			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0xE4E038F4690D38D, nil, "ui_confirm" )
 			return true
 		elseif IsPC() then
-			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ui_confirm" )
 			return true
 		else
 			return false

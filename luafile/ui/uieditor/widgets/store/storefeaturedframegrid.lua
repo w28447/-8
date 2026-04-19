@@ -11,27 +11,27 @@ CoD.StoreFeaturedFrameGrid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local plus03 = LUI.UIImage.new( 0, 0, 1043.5, 1059.5, 0, 0, 333, 349 )
 	plus03:setAlpha( 0.1 )
 	plus03:setImage( RegisterImage( 0x6B407AF1C17CF78 ) )
-	plus03:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	plus03:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( plus03 )
 	self.plus03 = plus03
 	
 	local plus02 = LUI.UIImage.new( 0, 0, 687, 703, 0, 0, 333, 349 )
 	plus02:setAlpha( 0.1 )
 	plus02:setImage( RegisterImage( 0x6B407AF1C17CF78 ) )
-	plus02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	plus02:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( plus02 )
 	self.plus02 = plus02
 	
 	local plus01 = LUI.UIImage.new( 0, 0, 332, 348, 0, 0, 333, 349 )
 	plus01:setAlpha( 0.1 )
 	plus01:setImage( RegisterImage( 0x6B407AF1C17CF78 ) )
-	plus01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	plus01:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( plus01 )
 	self.plus01 = plus01
 	
 	local DotlineV06 = LUI.UIImage.new( 0, 0, 1049.5, 1053.5, 0, 0, 350, 680 )
 	DotlineV06:setAlpha( 0.02 )
-	DotlineV06:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
+	DotlineV06:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
 	DotlineV06:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DotlineV06:setShaderVector( 0, 0, 0, 0, 0 )
 	DotlineV06:setupNineSliceShader( 4, 8 )
@@ -40,7 +40,7 @@ CoD.StoreFeaturedFrameGrid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local DotlineV05 = LUI.UIImage.new( 0, 0, 693, 697, 0, 0, 350, 680 )
 	DotlineV05:setAlpha( 0.02 )
-	DotlineV05:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
+	DotlineV05:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
 	DotlineV05:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DotlineV05:setShaderVector( 0, 0, 0, 0, 0 )
 	DotlineV05:setupNineSliceShader( 4, 8 )
@@ -49,7 +49,7 @@ CoD.StoreFeaturedFrameGrid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local DotlineV04 = LUI.UIImage.new( 0, 0, 338, 342, 0, 0, 350, 680 )
 	DotlineV04:setAlpha( 0.02 )
-	DotlineV04:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
+	DotlineV04:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
 	DotlineV04:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DotlineV04:setShaderVector( 0, 0, 0, 0, 0 )
 	DotlineV04:setupNineSliceShader( 4, 8 )
@@ -58,7 +58,7 @@ CoD.StoreFeaturedFrameGrid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local DotlineV03 = LUI.UIImage.new( 0, 0, 1049.5, 1053.5, 0, 0, 0, 330 )
 	DotlineV03:setAlpha( 0.02 )
-	DotlineV03:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
+	DotlineV03:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
 	DotlineV03:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DotlineV03:setShaderVector( 0, 0, 0, 0, 0 )
 	DotlineV03:setupNineSliceShader( 4, 8 )
@@ -67,7 +67,7 @@ CoD.StoreFeaturedFrameGrid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local DotlineV02 = LUI.UIImage.new( 0, 0, 693, 697, 0, 0, 0, 330 )
 	DotlineV02:setAlpha( 0.02 )
-	DotlineV02:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
+	DotlineV02:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
 	DotlineV02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DotlineV02:setShaderVector( 0, 0, 0, 0, 0 )
 	DotlineV02:setupNineSliceShader( 4, 8 )
@@ -76,7 +76,7 @@ CoD.StoreFeaturedFrameGrid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local DotlineV01 = LUI.UIImage.new( 0, 0, 338, 342, 0, 0, 0, 330 )
 	DotlineV01:setAlpha( 0.02 )
-	DotlineV01:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
+	DotlineV01:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
 	DotlineV01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DotlineV01:setShaderVector( 0, 0, 0, 0, 0 )
 	DotlineV01:setupNineSliceShader( 4, 8 )

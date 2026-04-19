@@ -11,56 +11,56 @@ CoD.lmgInfiniteReticle_Extras.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local extras = LUI.UIImage.new( 0, 0, 0, 34, 0, 0, 0, 15 )
 	extras:setAlpha( 0.5 )
 	extras:setImage( RegisterImage( 0xFE96FA5E1B455D4 ) )
-	extras:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	extras:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( extras )
 	self.extras = extras
 	
 	local extras0 = LUI.UIImage.new( 0, 0, 93, 127, 0, 0, 0, 15 )
 	extras0:setAlpha( 0.5 )
 	extras0:setImage( RegisterImage( 0xFE96FA5E1B455D4 ) )
-	extras0:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	extras0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( extras0 )
 	self.extras0 = extras0
 	
 	local extras00 = LUI.UIImage.new( 0, 0, 1, 30, 0, 0, 10, 25 )
 	extras00:setAlpha( 0.5 )
 	extras00:setImage( RegisterImage( 0xFE96FA5E1B455D4 ) )
-	extras00:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	extras00:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( extras00 )
 	self.extras00 = extras00
 	
 	local extras000 = LUI.UIImage.new( 0, 0, 95, 123, 0, 0, 10, 25 )
 	extras000:setAlpha( 0.5 )
 	extras000:setImage( RegisterImage( 0xFE96FA5E1B455D4 ) )
-	extras000:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	extras000:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( extras000 )
 	self.extras000 = extras000
 	
 	local extras001 = LUI.UIImage.new( 0, 0, 99, 176, 0, 0, 4, 15 )
 	extras001:setAlpha( 0.75 )
 	extras001:setImage( RegisterImage( 0xFE96CA5E1B450BB ) )
-	extras001:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	extras001:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( extras001 )
 	self.extras001 = extras001
 	
 	local extras0010 = LUI.UIImage.new( 0, 0, 99, 152, 0, 0, 15, 27 )
 	extras0010:setAlpha( 0.75 )
 	extras0010:setImage( RegisterImage( 0xFE96EA5E1B45421 ) )
-	extras0010:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	extras0010:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( extras0010 )
 	self.extras0010 = extras0010
 	
 	local extras00100 = LUI.UIImage.new( 0, 0, 6, 59, 0, 0, 5, 14 )
 	extras00100:setAlpha( 0.75 )
 	extras00100:setImage( RegisterImage( 0xFE971A5E1B4593A ) )
-	extras00100:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	extras00100:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( extras00100 )
 	self.extras00100 = extras00100
 	
 	local extras001000 = LUI.UIImage.new( 0, 0, 6, 60, 0, 0, 15, 27 )
 	extras001000:setAlpha( 0.75 )
 	extras001000:setImage( RegisterImage( 0xFE96BA5E1B44F08 ) )
-	extras001000:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	extras001000:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( extras001000 )
 	self.extras001000 = extras001000
 	

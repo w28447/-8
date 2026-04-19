@@ -10,7 +10,7 @@ CoD.AmmoWidget_CleanTacosCountText.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local NumberCount = LUI.UIText.new( 0, 0, 0, 51, 0, 0, 0, 16 )
 	NumberCount:setRGB( 0, 0, 0 )
-	NumberCount:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	NumberCount:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	NumberCount:setTTF( "ttmussels_demibold" )
 	NumberCount:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	NumberCount:setShaderVector( 0, 0.68, 0, 0, 0 )

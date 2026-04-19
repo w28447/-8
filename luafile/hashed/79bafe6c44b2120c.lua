@@ -11,7 +11,7 @@ CoD.ArmorBarKillCam.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local Border = LUI.UIImage.new( -0.01, 1.01, 0, 0, 0, 0, -3, 7 )
 	Border:setRGB( 0.14, 0.14, 0.14 )
 	Border:setAlpha( 0.96 )
-	Border:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE125638BF94665F ) )
+	Border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	Border:setShaderVector( 0, 0, 0.1, 0, 0.1 )
 	self:addElement( Border )
 	self.Border = Border
@@ -24,7 +24,7 @@ CoD.ArmorBarKillCam.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local ArmorBarImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, -2, 6 )
 	ArmorBarImage:setImage( RegisterImage( 0xC5DDE8FE569CC06 ) )
-	ArmorBarImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	ArmorBarImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	ArmorBarImage:setShaderVector( 1, 0, 0, 0, 0 )
 	ArmorBarImage:setShaderVector( 2, 0, 1, 0, 0 )
 	ArmorBarImage:setShaderVector( 3, 0, 0, 0, 0 )

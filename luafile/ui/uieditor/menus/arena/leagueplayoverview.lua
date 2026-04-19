@@ -110,7 +110,7 @@ LUI.createMenu.LeaguePlayOverview = function ( f1_arg0, f1_arg1 )
 		PlaySoundAlias( "uin_party_ease_slide" )
 		return true
 	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( ModeRulesButton )
@@ -134,7 +134,7 @@ LUI.createMenu.LeaguePlayOverview = function ( f1_arg0, f1_arg1 )
 		PlaySoundAlias( "uin_party_ease_slide" )
 		return true
 	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( ContentRulesButton )
@@ -175,7 +175,7 @@ LUI.createMenu.LeaguePlayOverview = function ( f1_arg0, f1_arg1 )
 		PlaySoundAlias( "uin_party_ease_slide" )
 		return true
 	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( RankRulesButton )
@@ -351,7 +351,7 @@ LUI.createMenu.LeaguePlayOverview = function ( f1_arg0, f1_arg1 )
 		PlaySoundAlias( "uin_party_ease_slide" )
 		return true
 	end, function ( f24_arg0, f24_arg1, f24_arg2 )
-		CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( SkillDivisionsButton )
@@ -399,7 +399,7 @@ LUI.createMenu.LeaguePlayOverview = function ( f1_arg0, f1_arg1 )
 		GoBack( self, f29_arg2 )
 		return true
 	end, function ( f30_arg0, f30_arg1, f30_arg2 )
-		CoD.Menu.SetButtonLabel( f30_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f30_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

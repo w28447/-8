@@ -1419,7 +1419,7 @@ LUI.createMenu.DirectorCustomGameSetUpWZ = function ( f1_arg0, f1_arg1 )
 			return true
 		end
 	end, function ( f147_arg0, f147_arg1, f147_arg2 )
-		CoD.Menu.SetButtonLabel( f147_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f147_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	self:subscribeToGlobalModel( f1_arg0, "GlobalModel", "lobbyRoot.selectedXuid", function ( model )

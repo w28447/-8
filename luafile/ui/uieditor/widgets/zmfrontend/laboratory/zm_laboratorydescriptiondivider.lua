@@ -14,17 +14,17 @@ CoD.zm_LaboratoryDescriptionDivider.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local Center = LUI.UIImage.new( 0.5, 0.5, -75, 75, 0.5, 0.5, -7, 12 )
 	Center:setScale( 1.05, 1.05 )
-	Center:setImage( RegisterImage( 0x463D9B727066CEB ) )
+	Center:setImage( RegisterImage( "uie_ui_zm_laboratory_ornamentbar" ) )
 	self:addElement( Center )
 	self.Center = Center
 	
 	local R = LUI.UIImage.new( 1, 1, -5, 5, 0.5, 0.5, -5, 5 )
-	R:setImage( RegisterImage( uie_zm_hud_cornerdecoration ) )
+	R:setImage( RegisterImage( "uie_zm_hud_cornerdecoration" ) )
 	self:addElement( R )
 	self.R = R
 	
 	local L = LUI.UIImage.new( 0, 0, -5, 5, 0.5, 0.5, -5, 5 )
-	L:setImage( RegisterImage( uie_zm_hud_cornerdecoration ) )
+	L:setImage( RegisterImage( "uie_zm_hud_cornerdecoration" ) )
 	self:addElement( L )
 	self.L = L
 	

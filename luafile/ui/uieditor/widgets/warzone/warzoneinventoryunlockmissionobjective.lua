@@ -22,7 +22,7 @@ CoD.WarzoneInventoryUnlockMissionObjective.new = function ( f1_arg0, f1_arg1, f1
 	
 	local description = LUI.UIText.new( 0, 0.9, 9, 9, 0, 0, 0, 20 )
 	description:setRGB( ColorSet.T8__BEIGE__HEADER.r, ColorSet.T8__BEIGE__HEADER.g, ColorSet.T8__BEIGE__HEADER.b )
-	description:setText( Engine[0xF9F1239CFD921FE]( 0x1346019482BDC3C ) )
+	description:setText( Engine[0xF9F1239CFD921FE]( "warzone/inventory" ) )
 	description:setTTF( "ttmussels_regular" )
 	description:setLetterSpacing( 1 )
 	description:setAlignment( Engine[0x7F8853DC3581AA4]( Enum.LUIAlignment[0x58C8A85F2048829] ) )
@@ -33,7 +33,7 @@ CoD.WarzoneInventoryUnlockMissionObjective.new = function ( f1_arg0, f1_arg1, f1
 	local ButtonTopLine9Slice = LUI.UIImage.new( 0, 0, 4, 304, 0, 0, 25, 45 )
 	ButtonTopLine9Slice:setAlpha( 0.2 )
 	ButtonTopLine9Slice:setImage( RegisterImage( 0xC752149A1FA1AAE ) )
-	ButtonTopLine9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	ButtonTopLine9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ButtonTopLine9Slice:setShaderVector( 0, 0, 0, 0, 0 )
 	ButtonTopLine9Slice:setupNineSliceShader( 120, 10 )
 	self:addElement( ButtonTopLine9Slice )
@@ -41,7 +41,7 @@ CoD.WarzoneInventoryUnlockMissionObjective.new = function ( f1_arg0, f1_arg1, f1
 	
 	local characterMissionLabel = LUI.UIText.new( 0, 0.9, 9, -1, 0, 0, 50, 70 )
 	characterMissionLabel:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	characterMissionLabel:setText( LocalizeToUpperString( 0xA1B2CAFC0534BF5 ) )
+	characterMissionLabel:setText( LocalizeToUpperString( "wz/character_mission" ) )
 	characterMissionLabel:setTTF( "ttmussels_demibold" )
 	characterMissionLabel:setLetterSpacing( 4 )
 	characterMissionLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -206,7 +206,7 @@ CoD.WarzoneInventoryUnlockMissionObjective.new = function ( f1_arg0, f1_arg1, f1
 	
 	local rewardLabel = LUI.UIText.new( 0, 0.9, 9, -1, 0, 0, 233, 253 )
 	rewardLabel:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	rewardLabel:setText( LocalizeToUpperString( 0x7F76A40DC7B0F5E ) )
+	rewardLabel:setText( LocalizeToUpperString( "wz/reward" ) )
 	rewardLabel:setTTF( "ttmussels_demibold" )
 	rewardLabel:setLetterSpacing( 4 )
 	rewardLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

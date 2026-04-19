@@ -31,15 +31,15 @@ CoD.AmmoWidget_BountyBag.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local BagItem2 = LUI.UIImage.new( 0, 0, 15, 107, 0, 0, 20.5, 84.5 )
 	BagItem2:setAlpha( 0 )
 	BagItem2:setImage( RegisterImage( 0x3B2A6476860BEC8 ) )
-	BagItem2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	BagItem2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BagItem2 )
 	self.BagItem2 = BagItem2
 	
 	local PanelGlow = LUI.UIImage.new( 0, 0, -24, 127, 0, 0, -22, 131 )
 	PanelGlow:setRGB( 0, 0.31, 0.02 )
 	PanelGlow:setAlpha( 0.9 )
-	PanelGlow:setImage( RegisterImage( 0x5BE416E17DAB33B ) )
-	PanelGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	PanelGlow:setImage( RegisterImage( "uie_t7_core_hud_mapwidget_panelglow" ) )
+	PanelGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PanelGlow )
 	self.PanelGlow = PanelGlow
 	

@@ -28,7 +28,7 @@ LUI.createMenu.Survey = function ( f1_arg0, f1_arg1 )
 	
 	local BackingOverlay = LUI.UIImage.new( 0, 0, 240, 1680, 0, 0, 135, 945 )
 	BackingOverlay:setRGB( 0, 0, 0 )
-	BackingOverlay:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDE760AC0E801E57 ) )
+	BackingOverlay:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_gradient_normal" ) )
 	BackingOverlay:setShaderVector( 0, 0, 0, 0, 1 )
 	BackingOverlay:setShaderVector( 1, 1, 1, 1, 0.4 )
 	BackingOverlay:setShaderVector( 2, 0.65, 0, 0, 0 )
@@ -114,7 +114,7 @@ LUI.createMenu.Survey = function ( f1_arg0, f1_arg1 )
 		CoD.SurveyUtility.CloseSurvey( self, f10_arg2 )
 		return true
 	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
@@ -125,7 +125,7 @@ LUI.createMenu.Survey = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f13_arg0, f13_arg1, f13_arg2 )
 		if not CoD.ModelUtility.IsGlobalDataSourceModelValueTrue( f13_arg2, "SurveyQuestion", "answered" ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

@@ -26,7 +26,7 @@ CoD.WarzoneInventoryUnlockMissionReward.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local quote = LUI.UIText.new( 0, 0, 70, 306, 0, 0, 2, 17 )
 	quote:setRGB( ColorSet.T8__BUTTON__UNSELECTED__HEADER.r, ColorSet.T8__BUTTON__UNSELECTED__HEADER.g, ColorSet.T8__BUTTON__UNSELECTED__HEADER.b )
-	quote:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	quote:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	quote:setTTF( "ttmussels_regular" )
 	quote:setLetterSpacing( 1 )
 	quote:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -36,7 +36,7 @@ CoD.WarzoneInventoryUnlockMissionReward.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local rewardName = LUI.UIText.new( 1, 1, -240, -4, 1, 1, -15, 0 )
 	rewardName:setRGB( ColorSet.T8__BUTTON__UNSELECTED__HEADER.r, ColorSet.T8__BUTTON__UNSELECTED__HEADER.g, ColorSet.T8__BUTTON__UNSELECTED__HEADER.b )
-	rewardName:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	rewardName:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	rewardName:setTTF( "ttmussels_regular" )
 	rewardName:setLetterSpacing( 1 )
 	rewardName:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )

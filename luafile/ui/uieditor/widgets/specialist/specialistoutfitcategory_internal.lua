@@ -17,7 +17,7 @@ CoD.SpecialistOutfitCategory_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local FocusGlow = LUI.UIImage.new( 0, 1, -49, 49, 0, 1, -33, 33 )
 	FocusGlow:setAlpha( 0 )
-	FocusGlow:setImage( RegisterImage( 0xB8F10D49D85E9C4 ) )
+	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_small" ) )
 	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.25, 0.25 )
 	FocusGlow:setShaderVector( 1, 1.2, 0, 0, 0 )
@@ -40,7 +40,7 @@ CoD.SpecialistOutfitCategory_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local TiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TiledBacking:setAlpha( 0.5 )
-	TiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking:setupNineSliceShader( 196, 88 )
@@ -49,7 +49,7 @@ CoD.SpecialistOutfitCategory_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local TiledBackingAdd = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TiledBackingAdd:setAlpha( 0 )
-	TiledBackingAdd:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBackingAdd:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBackingAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledBackingAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBackingAdd:setupNineSliceShader( 196, 88 )
@@ -93,14 +93,14 @@ CoD.SpecialistOutfitCategory_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	local BracketL = LUI.UIImage.new( 1, 1, -82, -74, 0, 0, 23, 47 )
 	BracketL:setAlpha( 0 )
 	BracketL:setImage( RegisterImage( 0x6AA0A70F33D3978 ) )
-	BracketL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	BracketL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BracketL )
 	self.BracketL = BracketL
 	
 	local LockedIcon = LUI.UIImage.new( 1, 1, -113, 15, 0, 0, -32, 96 )
 	LockedIcon:setAlpha( 0 )
 	LockedIcon:setScale( 0.25, 0.25 )
-	LockedIcon:setImage( RegisterImage( 0xE1E7C490B2BA4FB ) )
+	LockedIcon:setImage( RegisterImage( "uie_ui_icon_global_lock" ) )
 	LockedIcon:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	LockedIcon:setShaderVector( 0, 4, 0, 0, 0 )
 	self:addElement( LockedIcon )
@@ -110,7 +110,7 @@ CoD.SpecialistOutfitCategory_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	BracketR:setAlpha( 0 )
 	BracketR:setZRot( 180 )
 	BracketR:setImage( RegisterImage( 0x6AA0A70F33D3978 ) )
-	BracketR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	BracketR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BracketR )
 	self.BracketR = BracketR
 	
@@ -157,7 +157,7 @@ CoD.SpecialistOutfitCategory_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2
 		} )
 	end, false )
 	EquippedMarkerTick:setZoom( 4 )
-	EquippedMarkerTick.image:setImage( RegisterImage( 0x9A8B26C9B001758 ) )
+	EquippedMarkerTick.image:setImage( RegisterImage( "uie_ui_menu_cac_equipped_marker_tick" ) )
 	EquippedMarkerTick:linkToElementModel( self, nil, false, function ( model )
 		EquippedMarkerTick:setModel( model, f1_arg1 )
 	end )
@@ -166,8 +166,8 @@ CoD.SpecialistOutfitCategory_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	FrontendFrameThin = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, -1, 1 )
 	FrontendFrameThin:setAlpha( 0.5 )
-	FrontendFrameThin:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrontendFrameThin:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrameThin:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrontendFrameThin:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrameThin:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrameThin:setupNineSliceShader( 6, 6 )
 	self:addElement( FrontendFrameThin )
@@ -186,8 +186,8 @@ CoD.SpecialistOutfitCategory_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local FocusBorder = LUI.UIImage.new( 0, 1, -4, 4, 0, 1, -4, 4 )
 	FocusBorder:setAlpha( 0 )
-	FocusBorder:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FocusBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FocusBorder:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FocusBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FocusBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FocusBorder:setupNineSliceShader( 12, 12 )
 	self:addElement( FocusBorder )

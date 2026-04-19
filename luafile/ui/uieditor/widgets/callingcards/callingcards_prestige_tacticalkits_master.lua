@@ -21,7 +21,7 @@ CoD[0xAE531861B4F05FA].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.mecha = mecha
 	
 	local smoke = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	smoke:setImage( RegisterImage( 0x83C485F153D0720 ) )
+	smoke:setImage( RegisterImage( "uie_smoke" ) )
 	smoke:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD526D3FD71F281 ) )
 	smoke:setShaderVector( 0, 1, 3.03, 0, 0 )
 	smoke:setShaderVector( 1, 15, 0, 0, 0 )

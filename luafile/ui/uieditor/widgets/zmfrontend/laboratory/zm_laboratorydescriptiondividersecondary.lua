@@ -13,12 +13,12 @@ CoD.zm_LaboratoryDescriptionDividerSecondary.new = function ( f1_arg0, f1_arg1, 
 	self.Stroke = Stroke
 	
 	local R = LUI.UIImage.new( 1, 1, -5, 5, 0.5, 0.5, -5, 5 )
-	R:setImage( RegisterImage( uie_zm_hud_cornerdecoration ) )
+	R:setImage( RegisterImage( "uie_zm_hud_cornerdecoration" ) )
 	self:addElement( R )
 	self.R = R
 	
 	local L = LUI.UIImage.new( 0, 0, -5, 5, 0.5, 0.5, -5, 5 )
-	L:setImage( RegisterImage( uie_zm_hud_cornerdecoration ) )
+	L:setImage( RegisterImage( "uie_zm_hud_cornerdecoration" ) )
 	self:addElement( L )
 	self.L = L
 	

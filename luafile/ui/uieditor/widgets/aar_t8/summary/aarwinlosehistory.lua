@@ -54,7 +54,7 @@ CoD.AARWinLoseHistory.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local InValidAdd = LUI.UIImage.new( 0, 0, 14, 110, 0, 0, 22, 214 )
 	InValidAdd:setAlpha( 0 )
 	InValidAdd:setImage( RegisterImage( 0xFDCBFA0A9BD64AE ) )
-	InValidAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	InValidAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( InValidAdd )
 	self.InValidAdd = InValidAdd
 	

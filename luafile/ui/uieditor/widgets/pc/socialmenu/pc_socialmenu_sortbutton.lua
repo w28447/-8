@@ -16,7 +16,7 @@ CoD.PC_SocialMenu_SortButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local TextureButtonSort = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TextureButtonSort:setAlpha( 0.25 )
-	TextureButtonSort:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TextureButtonSort:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TextureButtonSort:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TextureButtonSort:setShaderVector( 0, 0, 0, 0, 0 )
 	TextureButtonSort:setupNineSliceShader( 100, 50 )
@@ -25,7 +25,7 @@ CoD.PC_SocialMenu_SortButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local TextureButtonSortAdd = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TextureButtonSortAdd:setAlpha( 0 )
-	TextureButtonSortAdd:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TextureButtonSortAdd:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TextureButtonSortAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TextureButtonSortAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	TextureButtonSortAdd:setupNineSliceShader( 100, 50 )
@@ -34,8 +34,8 @@ CoD.PC_SocialMenu_SortButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local Border = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Border:setAlpha( 0.7 )
-	Border:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	Border:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	Border:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	Border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	Border:setShaderVector( 0, 0, 0, 0, 0 )
 	Border:setupNineSliceShader( 5, 5 )
 	self:addElement( Border )

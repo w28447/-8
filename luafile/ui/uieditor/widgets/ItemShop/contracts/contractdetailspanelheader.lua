@@ -38,7 +38,7 @@ CoD.ContractDetailsPanelHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local Linker2 = LUI.UIImage.new( 0, 0, 762, 766, 0, 0, 0.5, 34.5 )
 	Linker2:setAlpha( 0.08 )
-	Linker2:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
+	Linker2:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
 	Linker2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	Linker2:setShaderVector( 0, 0, 0, 0, 0 )
 	Linker2:setupNineSliceShader( 4, 8 )
@@ -48,7 +48,7 @@ CoD.ContractDetailsPanelHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local HeaderGlow = LUI.UIImage.new( 0, 0, 0, 768, 0, 0, 0, 32 )
 	HeaderGlow:setAlpha( 0.1 )
 	HeaderGlow:setImage( RegisterImage( 0xFAA6C81834660D3 ) )
-	HeaderGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	HeaderGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	HeaderGlow:setShaderVector( 0, 0, 0, 0, 0 )
 	HeaderGlow:setupNineSliceShader( 12, 12 )
 	HeaderGlow:linkToElementModel( self, "rarity", true, function ( model )

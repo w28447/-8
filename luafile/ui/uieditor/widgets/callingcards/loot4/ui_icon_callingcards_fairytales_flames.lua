@@ -15,7 +15,7 @@ CoD.ui_icon_callingcards_fairytales_flames.new = function ( f1_arg0, f1_arg1, f1
 	
 	local fire4 = LUI.UIImage.new( 0, 0, 217, 457, 0, 0, -78, 98 )
 	fire4:setImage( RegisterImage( 0x45BCA4F122A2352 ) )
-	fire4:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	fire4:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( fire4 )
 	self.fire4 = fire4
 	
@@ -35,13 +35,13 @@ CoD.ui_icon_callingcards_fairytales_flames.new = function ( f1_arg0, f1_arg1, f1
 	
 	local smoke = LUI.UIImage.new( 0, 0, -239, 65, 0, 0, -107, 117 )
 	smoke:setImage( RegisterImage( 0xDF04F0A3053647 ) )
-	smoke:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	smoke:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( smoke )
 	self.smoke = smoke
 	
 	local embers = LUI.UIImage.new( 0, 0, -351, 97, 0, 0, -161, 231 )
 	embers:setImage( RegisterImage( 0xF7DD7C09334D9B2 ) )
-	embers:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	embers:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( embers )
 	self.embers = embers
 	
@@ -49,7 +49,7 @@ CoD.ui_icon_callingcards_fairytales_flames.new = function ( f1_arg0, f1_arg1, f1
 	embers2:setAlpha( 0.35 )
 	embers2:setScale( 0.8, 0.8 )
 	embers2:setImage( RegisterImage( 0xF7DD7C09334D9B2 ) )
-	embers2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	embers2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( embers2 )
 	self.embers2 = embers2
 	

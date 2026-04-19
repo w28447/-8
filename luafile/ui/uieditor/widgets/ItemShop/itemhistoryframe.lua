@@ -1,4 +1,4 @@
-require( "x64:9b528a05aba52d6" )
+require( "ui/uieditor/menus/itemshop/itemshopdetails" )
 require( "ui/uieditor/widgets/common/commoncornerbrackets01" )
 require( "ui/uieditor/widgets/itemshop/bmtallitemcontainer" )
 require( "ui/uieditor/widgets/pc/pc_gridhorizontalscrollbar" )
@@ -19,7 +19,7 @@ CoD.ItemHistoryFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local NoiseBackingLeft = LUI.UIImage.new( 0.5, 0.5, -856, -492, 0.5, 0.5, -355, 405 )
 	NoiseBackingLeft:setAlpha( 0.4 )
-	NoiseBackingLeft:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseBackingLeft:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseBackingLeft:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseBackingLeft:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseBackingLeft:setupNineSliceShader( 196, 88 )
@@ -28,7 +28,7 @@ CoD.ItemHistoryFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local NoiseBackingRight = LUI.UIImage.new( 0.5, 0.5, -470, 854, 0.5, 0.5, -356, 404 )
 	NoiseBackingRight:setAlpha( 0.4 )
-	NoiseBackingRight:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseBackingRight:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseBackingRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseBackingRight:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseBackingRight:setupNineSliceShader( 196, 88 )
@@ -147,7 +147,7 @@ CoD.ItemHistoryFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local DottedLineTop = LUI.UIImage.new( 0.5, 0.5, -856, 854, 0.5, 0.5, -364, -360 )
 	DottedLineTop:setAlpha( 0.35 )
-	DottedLineTop:setImage( RegisterImage( 0xB20AD7A31239369 ) )
+	DottedLineTop:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline_tiled" ) )
 	DottedLineTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DottedLineTop:setShaderVector( 0, 0, 0, 0, 0 )
 	DottedLineTop:setupNineSliceShader( 16, 4 )
@@ -156,7 +156,7 @@ CoD.ItemHistoryFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local DottedLineBot = LUI.UIImage.new( 0.5, 0.5, -856, 854, 0.5, 0.5, 408, 412 )
 	DottedLineBot:setAlpha( 0.35 )
-	DottedLineBot:setImage( RegisterImage( 0xB20AD7A31239369 ) )
+	DottedLineBot:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline_tiled" ) )
 	DottedLineBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DottedLineBot:setShaderVector( 0, 0, 0, 0, 0 )
 	DottedLineBot:setupNineSliceShader( 16, 4 )

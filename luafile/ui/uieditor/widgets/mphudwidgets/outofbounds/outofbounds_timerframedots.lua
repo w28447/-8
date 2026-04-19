@@ -18,14 +18,14 @@ CoD.outofbounds_timerframedots.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local TimerFrameElementAdd02 = LUI.UIImage.new( 0, 0, 0, 600, 0, 0, 0, 132 )
 	TimerFrameElementAdd02:setScale( 1.08, 1.08 )
 	TimerFrameElementAdd02:setImage( RegisterImage( 0x76DF8BCE8362508 ) )
-	TimerFrameElementAdd02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	TimerFrameElementAdd02:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TimerFrameElementAdd02 )
 	self.TimerFrameElementAdd02 = TimerFrameElementAdd02
 	
 	local TimerFrameElement01 = LUI.UIImage.new( 0, 0, 0, 600, 0, 0, 0, 132 )
 	TimerFrameElement01:setAlpha( 0.8 )
 	TimerFrameElement01:setImage( RegisterImage( 0x76DF8BCE8362508 ) )
-	TimerFrameElement01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	TimerFrameElement01:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TimerFrameElement01 )
 	self.TimerFrameElement01 = TimerFrameElement01
 	
@@ -58,7 +58,7 @@ CoD.outofbounds_timerframedots.__resetProperties = function ( f2_arg0 )
 	f2_arg0.TimerFrameElementAdd02:setAlpha( 1 )
 	f2_arg0.TimerFrameElementAdd02:setZoom( 0 )
 	f2_arg0.TimerFrameElementAdd02:setScale( 1.08, 1.08 )
-	f2_arg0.TimerFrameElementAdd02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	f2_arg0.TimerFrameElementAdd02:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 end
 
 CoD.outofbounds_timerframedots.__clipsPerState = {
@@ -94,7 +94,7 @@ CoD.outofbounds_timerframedots.__clipsPerState = {
 			f3_arg0.TimerFrameElementAdd02:setAlpha( 1 )
 			f3_arg0.TimerFrameElementAdd02:setZoom( 0 )
 			f3_arg0.TimerFrameElementAdd02:setScale( 1, 1 )
-			f3_arg0.TimerFrameElementAdd02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+			f3_arg0.TimerFrameElementAdd02:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 			f3_local0( f3_arg0.TimerFrameElementAdd02 )
 			local f3_local1 = function ( f7_arg0 )
 				local f7_local0 = function ( f8_arg0 )

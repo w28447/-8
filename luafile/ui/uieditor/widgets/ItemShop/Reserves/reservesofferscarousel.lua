@@ -1,4 +1,4 @@
-require( "x64:9b528a05aba52d6" )
+require( "ui/uieditor/menus/itemshop/itemshopdetails" )
 require( "ui/uieditor/widgets/itemshop/reserves/reserveslootpurchasebundlebuttoncontainer" )
 require( "ui/uieditor/widgets/scrollbars/horizontalcountertriggerprompts" )
 require( "ui/uieditor/widgets/scrollbars/horizontalcounter" )
@@ -67,7 +67,7 @@ CoD.ReservesOffersCarousel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 		PlaySoundAlias( "uin_toggle_generic" )
 		return true
 	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	f1_arg0:AddButtonCallbackFunction( OffersCarousel, f1_arg1, Enum.LUIButton[0x820DDD869ABBFAA], "MWHEELDOWN", function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )

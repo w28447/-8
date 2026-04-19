@@ -12,7 +12,7 @@ CoD.WarzoneKillsCount.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	Glow2:setRGB( 1, 0, 0 )
 	Glow2:setAlpha( 0 )
 	Glow2:setImage( RegisterImage( 0xC58FF2328701EBA ) )
-	Glow2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Glow2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow2 )
 	self.Glow2 = Glow2
 	
@@ -20,7 +20,7 @@ CoD.WarzoneKillsCount.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	Glow:setRGB( 1, 0, 0 )
 	Glow:setAlpha( 0 )
 	Glow:setImage( RegisterImage( 0x65BA0231BD57E0B ) )
-	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
 	
@@ -48,7 +48,7 @@ CoD.WarzoneKillsCount.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	PlayerKillsAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	PlayerKillsAdd:setShaderVector( 1, 0, 0, 0, 0 )
 	PlayerKillsAdd:setShaderVector( 2, 1, 1, 1, 0 )
-	PlayerKillsAdd:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	PlayerKillsAdd:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	PlayerKillsAdd:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	PlayerKillsAdd:subscribeToGlobalModel( f1_arg1, "HUDItems", "playerKills", function ( model )
 		local f3_local0 = model:get()

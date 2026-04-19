@@ -37,7 +37,7 @@ CoD.genericVHUDProgressBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.backing = backing
 	
 	local fill = LUI.UIImage.new( 0, 1, 2, -2, 0, 0, 26, 37 )
-	fill:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	fill:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	fill:setShaderVector( 0, 1, 0, 0, 0 )
 	fill:setShaderVector( 1, 0, 0, 0, 0 )
 	fill:setShaderVector( 2, 1, 0, 0, 0 )
@@ -49,7 +49,7 @@ CoD.genericVHUDProgressBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local rechargeMeter = LUI.UIImage.new( 0, 1, 2, -2, 0, 0, 26, 37 )
 	rechargeMeter:setRGB( 0.56, 0.56, 0.56 )
 	rechargeMeter:setAlpha( 0 )
-	rechargeMeter:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	rechargeMeter:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	rechargeMeter:setShaderVector( 0, 1, 0, 0, 0 )
 	rechargeMeter:setShaderVector( 1, 0, 0, 0, 0 )
 	rechargeMeter:setShaderVector( 2, 1, 0, 0, 0 )

@@ -36,7 +36,7 @@ CoD.DirectorLaboratoryButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		end
 	end, function ( f4_arg0, f4_arg1, f4_arg2 )
 		if not IsPlayerAGuest( f4_arg2 ) then
-			CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x96D9A8F7540D6B6, nil, nil )
+			CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/laboratory", nil, nil )
 			return true
 		else
 			return false

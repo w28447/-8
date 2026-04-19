@@ -1,4 +1,4 @@
-require( "x64:dfb7742075cbb36" )
+require( "ui/uieditor/menus/blackmarket/contracts/blackmarketcontractselect" )
 require( "ui/uieditor/widgets/blackmarket/contracts/bm_contractdetails" )
 require( "ui/uieditor/widgets/blackmarket/contracts/bm_dailycontract" )
 require( "ui/uieditor/widgets/director/directorlobbytierskipnotification" )
@@ -30,7 +30,7 @@ CoD.BM_ContractsFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local NoiseBackingRight = LUI.UIImage.new( 0, 1, 0, 0, -0, 1, -30, -30 )
 	NoiseBackingRight:setAlpha( 0.1 )
-	NoiseBackingRight:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseBackingRight:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseBackingRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseBackingRight:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseBackingRight:setupNineSliceShader( 196, 88 )
@@ -72,7 +72,7 @@ CoD.BM_ContractsFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		end
 	end, function ( f6_arg0, f6_arg1, f6_arg2 )
 		if IsElementInState( self.Contract2, "ContractSlot" ) then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -116,7 +116,7 @@ CoD.BM_ContractsFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		end
 	end, function ( f11_arg0, f11_arg1, f11_arg2 )
 		if IsElementInState( self.Contract1, "ContractSlot" ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -202,8 +202,8 @@ CoD.BM_ContractsFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local Bracket = LUI.UIImage.new( 0.5, 0.5, -124, 824, 0.5, 0.5, -394.5, -385.5 )
 	Bracket:setAlpha( 0.5 )
 	Bracket:setZRot( 180 )
-	Bracket:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	Bracket:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	Bracket:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	Bracket:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Bracket:setShaderVector( 0, 0, 0, 0, 0 )
 	Bracket:setupNineSliceShader( 16, 4 )
 	self:addElement( Bracket )

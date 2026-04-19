@@ -77,7 +77,7 @@ CoD.WZPersonalizeCharacter_StandardFrameWidget.new = function ( f1_arg0, f1_arg1
 			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x191CDDA584B4408, nil, "ui_confirm" )
 			return true
 		elseif not CoD.ModelUtility.IsSelfModelValueTrue( f9_arg0, f9_arg2, "disabled" ) and not IsGameTrial() then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

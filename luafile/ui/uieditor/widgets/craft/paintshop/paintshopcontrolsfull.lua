@@ -15,7 +15,7 @@ CoD.PaintshopControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local BackingBot = LUI.UIImage.new( 0, 0, 1, 421, 0, 0, 412, 525 )
-	BackingBot:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	BackingBot:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	BackingBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	BackingBot:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingBot:setupNineSliceShader( 196, 88 )
@@ -23,7 +23,7 @@ CoD.PaintshopControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.BackingBot = BackingBot
 	
 	local BackingMid = LUI.UIImage.new( 0, 0, 0, 420, 0, 0, 230, 377 )
-	BackingMid:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	BackingMid:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	BackingMid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	BackingMid:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingMid:setupNineSliceShader( 196, 88 )
@@ -31,7 +31,7 @@ CoD.PaintshopControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.BackingMid = BackingMid
 	
 	local BackingTop = LUI.UIImage.new( 0, 0, 0, 420, 0, 0, 0, 190 )
-	BackingTop:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	BackingTop:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	BackingTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	BackingTop:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingTop:setupNineSliceShader( 196, 88 )
@@ -122,7 +122,7 @@ CoD.PaintshopControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 			modelName = "isGrouped"
 		} )
 	end )
-	materialPicker.label:setText( Engine[0xF9F1239CFD921FE]( 0xE5BDA73054BDF29 ) )
+	materialPicker.label:setText( Engine[0xF9F1239CFD921FE]( "MENU/MATERIAL_PICKER" ) )
 	materialPicker:subscribeToGlobalModel( f1_arg1, "Controller", "dpad_up_button_image", function ( model )
 		local f12_local0 = model:get()
 		if f12_local0 ~= nil then
@@ -369,7 +369,7 @@ CoD.PaintshopControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local dividerH01 = LUI.UIImage.new( 0, 0, 0, 420, 0, 0, 22, 26 )
 	dividerH01:setAlpha( 0.2 )
-	dividerH01:setImage( RegisterImage( 0x84B43D5B04D263A ) )
+	dividerH01:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_line" ) )
 	dividerH01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	dividerH01:setShaderVector( 0, 0, 0, 0, 0 )
 	dividerH01:setupNineSliceShader( 8, 4 )
@@ -378,7 +378,7 @@ CoD.PaintshopControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local dividerH02 = LUI.UIImage.new( 0, 0, 1, 420, 0, 0, 253, 257 )
 	dividerH02:setAlpha( 0.2 )
-	dividerH02:setImage( RegisterImage( 0x84B43D5B04D263A ) )
+	dividerH02:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_line" ) )
 	dividerH02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	dividerH02:setShaderVector( 0, 0, 0, 0, 0 )
 	dividerH02:setupNineSliceShader( 8, 4 )
@@ -387,7 +387,7 @@ CoD.PaintshopControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local dividerH03 = LUI.UIImage.new( 0, 0, 1, 421, 0, 0, 433, 437 )
 	dividerH03:setAlpha( 0.2 )
-	dividerH03:setImage( RegisterImage( 0x84B43D5B04D263A ) )
+	dividerH03:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_line" ) )
 	dividerH03:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	dividerH03:setShaderVector( 0, 0, 0, 0, 0 )
 	dividerH03:setupNineSliceShader( 8, 4 )
@@ -396,8 +396,8 @@ CoD.PaintshopControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local Frame01 = LUI.UIImage.new( 0, 1, -1, 1, 0, 0, 0, 190 )
 	Frame01:setAlpha( 0.2 )
-	Frame01:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	Frame01:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	Frame01:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	Frame01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Frame01:setShaderVector( 0, 0, 0, 0, 0 )
 	Frame01:setupNineSliceShader( 16, 16 )
 	self:addElement( Frame01 )
@@ -405,8 +405,8 @@ CoD.PaintshopControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local Frame02 = LUI.UIImage.new( 0, 1, -1, 1, 0, 0, 230, 377 )
 	Frame02:setAlpha( 0.2 )
-	Frame02:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	Frame02:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	Frame02:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	Frame02:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Frame02:setShaderVector( 0, 0, 0, 0, 0 )
 	Frame02:setupNineSliceShader( 16, 16 )
 	self:addElement( Frame02 )
@@ -414,8 +414,8 @@ CoD.PaintshopControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local Frame03 = LUI.UIImage.new( 0, 1, -1, 1, 0, 0, 412, 525 )
 	Frame03:setAlpha( 0.2 )
-	Frame03:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	Frame03:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	Frame03:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	Frame03:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Frame03:setShaderVector( 0, 0, 0, 0, 0 )
 	Frame03:setupNineSliceShader( 16, 16 )
 	self:addElement( Frame03 )

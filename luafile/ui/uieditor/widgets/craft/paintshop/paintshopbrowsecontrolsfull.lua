@@ -14,7 +14,7 @@ CoD.PaintshopBrowseControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local BackingMid = LUI.UIImage.new( 0, 0, 0, 420, 0, 0, 237, 420 )
-	BackingMid:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	BackingMid:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	BackingMid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	BackingMid:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingMid:setupNineSliceShader( 196, 88 )
@@ -22,7 +22,7 @@ CoD.PaintshopBrowseControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.BackingMid = BackingMid
 	
 	local BackingTop = LUI.UIImage.new( 0, 0, 0, 420, 0, 0, 0, 190 )
-	BackingTop:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	BackingTop:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	BackingTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	BackingTop:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingTop:setupNineSliceShader( 196, 88 )
@@ -31,7 +31,7 @@ CoD.PaintshopBrowseControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local SlotsFull = CoD.PaintshopButtonPrompt.new( f1_arg0, f1_arg1, 0, 0, 20, 420, 0, 0, 420, 460 )
 	SlotsFull:setAlpha( 0 )
-	SlotsFull.buttonPromptImage:setImage( RegisterImage( 0x1F10DEAAEFC50A4 ) )
+	SlotsFull.buttonPromptImage:setImage( RegisterImage( "uie_hud_common_core_score_waricon" ) )
 	SlotsFull.label:setText( Engine[0xF9F1239CFD921FE]( 0x345431B325139E6 ) )
 	self:addElement( SlotsFull )
 	self.SlotsFull = SlotsFull
@@ -323,7 +323,7 @@ CoD.PaintshopBrowseControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	dividerH01 = LUI.UIImage.new( 0, 0, 0, 420, 0, 0, 22, 26 )
 	dividerH01:setAlpha( 0.2 )
-	dividerH01:setImage( RegisterImage( 0x84B43D5B04D263A ) )
+	dividerH01:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_line" ) )
 	dividerH01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	dividerH01:setShaderVector( 0, 0, 0, 0, 0 )
 	dividerH01:setupNineSliceShader( 8, 4 )
@@ -332,7 +332,7 @@ CoD.PaintshopBrowseControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	dividerH02 = LUI.UIImage.new( 0, 0, 0, 420, 0, 0, 260, 264 )
 	dividerH02:setAlpha( 0.2 )
-	dividerH02:setImage( RegisterImage( 0x84B43D5B04D263A ) )
+	dividerH02:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_line" ) )
 	dividerH02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	dividerH02:setShaderVector( 0, 0, 0, 0, 0 )
 	dividerH02:setupNineSliceShader( 8, 4 )
@@ -341,8 +341,8 @@ CoD.PaintshopBrowseControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local Frame01 = LUI.UIImage.new( 0, 1, -1, 1, 0, 0, 0, 190 )
 	Frame01:setAlpha( 0.2 )
-	Frame01:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	Frame01:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	Frame01:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	Frame01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Frame01:setShaderVector( 0, 0, 0, 0, 0 )
 	Frame01:setupNineSliceShader( 16, 16 )
 	self:addElement( Frame01 )
@@ -350,8 +350,8 @@ CoD.PaintshopBrowseControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local Frame02 = LUI.UIImage.new( 0, 1, -1, 1, 0, 0, 237, 420 )
 	Frame02:setAlpha( 0.2 )
-	Frame02:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	Frame02:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	Frame02:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	Frame02:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Frame02:setShaderVector( 0, 0, 0, 0, 0 )
 	Frame02:setupNineSliceShader( 16, 16 )
 	self:addElement( Frame02 )
@@ -406,7 +406,7 @@ CoD.PaintshopBrowseControlsFull.__resetProperties = function ( f30_arg0 )
 	f30_arg0.SlotsFull:setTopBottom( 0, 0, 420, 460 )
 	f30_arg0.SlotsFull:setRGB( 1, 1, 1 )
 	f30_arg0.SlotsFull:setAlpha( 0 )
-	f30_arg0.SlotsFull.buttonPromptImage:setImage( RegisterImage( 0x1F10DEAAEFC50A4 ) )
+	f30_arg0.SlotsFull.buttonPromptImage:setImage( RegisterImage( "uie_hud_common_core_score_waricon" ) )
 	f30_arg0.SlotsFull.label:setText( Engine[0xF9F1239CFD921FE]( 0x345431B325139E6 ) )
 end
 
@@ -516,7 +516,7 @@ CoD.PaintshopBrowseControlsFull.__clipsPerState = {
 			f35_arg0.SlotsFull:setTopBottom( 0, 0, 420, 460 )
 			f35_arg0.SlotsFull:setRGB( 1, 0, 0 )
 			f35_arg0.SlotsFull:setAlpha( 1 )
-			f35_arg0.SlotsFull.buttonPromptImage:setImage( RegisterImage( 0x1F10DEAAEFC50A4 ) )
+			f35_arg0.SlotsFull.buttonPromptImage:setImage( RegisterImage( "uie_hud_common_core_score_waricon" ) )
 			f35_arg0.SlotsFull.label:setText( Engine[0xF9F1239CFD921FE]( 0x35E24C3255091DF ) )
 			f35_arg0.clipFinished( f35_arg0.SlotsFull )
 			f35_arg0.SaveGroup:completeAnimation()

@@ -47,14 +47,14 @@ CoD.ThrustMeter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	local pixel1 = LUI.UIImage.new( 0.5, 0.5, -120, -108, 1, 1, -54, -42 )
 	pixel1:setAlpha( 0 )
 	pixel1:setImage( RegisterImage( 0xA4E3A816ADAA8CD ) )
-	pixel1:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	pixel1:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( pixel1 )
 	self.pixel1 = pixel1
 	
 	local pixel2 = LUI.UIImage.new( 0.5, 0.5, 108, 120, 1, 1, -54, -42 )
 	pixel2:setAlpha( 0 )
 	pixel2:setImage( RegisterImage( 0xA4E3A816ADAA8CD ) )
-	pixel2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	pixel2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( pixel2 )
 	self.pixel2 = pixel2
 	

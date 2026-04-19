@@ -13,7 +13,7 @@ CoD.CommonTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	
 	local ZMTabBackingGlowRed = LUI.UIImage.new( 0, 1, -111, 111, 0, 1, -111, 111 )
 	ZMTabBackingGlowRed:setAlpha( 0 )
-	ZMTabBackingGlowRed:setImage( RegisterImage( 0x4E64BF345836DCC ) )
+	ZMTabBackingGlowRed:setImage( RegisterImage( "uie_ui_menu_common_tab_glowred" ) )
 	ZMTabBackingGlowRed:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	ZMTabBackingGlowRed:setShaderVector( 0, 1.36, 0, 0, 0 )
 	self:addElement( ZMTabBackingGlowRed )

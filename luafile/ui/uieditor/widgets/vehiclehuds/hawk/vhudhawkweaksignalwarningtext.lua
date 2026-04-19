@@ -39,7 +39,7 @@ CoD.VHUDHawkWeakSignalWarningText.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	WEAK00:setRGB( 1, 0, 0 )
 	WEAK00:setText( Engine[0xF9F1239CFD921FE]( 0xF33AED3A709B334 ) )
 	WEAK00:setTTF( "default" )
-	WEAK00:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	WEAK00:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	WEAK00:setLetterSpacing( 6 )
 	WEAK00:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	WEAK00:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )
@@ -51,7 +51,7 @@ CoD.VHUDHawkWeakSignalWarningText.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	WEAK000:setAlpha( 0 )
 	WEAK000:setText( Engine[0xF9F1239CFD921FE]( 0xF33AED3A709B334 ) )
 	WEAK000:setTTF( "default" )
-	WEAK000:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	WEAK000:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	WEAK000:setLetterSpacing( 6 )
 	WEAK000:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	WEAK000:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )
@@ -62,8 +62,8 @@ CoD.VHUDHawkWeakSignalWarningText.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	GlowOrangeOver:setRGB( 1, 0, 0.03 )
 	GlowOrangeOver:setAlpha( 0.5 )
 	GlowOrangeOver:setZRot( -90 )
-	GlowOrangeOver:setImage( RegisterImage( 0x5BE416E17DAB33B ) )
-	GlowOrangeOver:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	GlowOrangeOver:setImage( RegisterImage( "uie_t7_core_hud_mapwidget_panelglow" ) )
+	GlowOrangeOver:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowOrangeOver )
 	self.GlowOrangeOver = GlowOrangeOver
 	

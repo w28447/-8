@@ -10,7 +10,7 @@ CoD.PurchaseTiersInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local PurchaseText = LUI.UIText.new( 0.5, 0.5, -90, 90, 0, 0, 29, 43 )
 	PurchaseText:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	PurchaseText:setText( LocalizeToUpperString( 0x56C09EE72782ED1 ) )
+	PurchaseText:setText( LocalizeToUpperString( "menu/purchase_tier" ) )
 	PurchaseText:setTTF( "ttmussels_demibold" )
 	PurchaseText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	PurchaseText:setShaderVector( 0, 1, 0, 0, 0 )
@@ -24,7 +24,7 @@ CoD.PurchaseTiersInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local PurchaseBand = LUI.UIImage.new( 0.5, 0.5, -78.5, -12.5, 0, 0, 3, 19 )
 	PurchaseBand:setImage( RegisterImage( 0xD77FEBA1B6DF8BA ) )
-	PurchaseBand:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	PurchaseBand:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	PurchaseBand:setShaderVector( 0, 0, 0, 0, 0 )
 	PurchaseBand:setupNineSliceShader( 20, 8 )
 	self:addElement( PurchaseBand )
@@ -32,7 +32,7 @@ CoD.PurchaseTiersInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local PurchaseBand2 = LUI.UIImage.new( 0.5, 0.5, 12.5, 78.5, 0, 0, 3, 19 )
 	PurchaseBand2:setImage( RegisterImage( 0xD77FEBA1B6DF8BA ) )
-	PurchaseBand2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	PurchaseBand2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	PurchaseBand2:setShaderVector( 0, 0, 0, 0, 0 )
 	PurchaseBand2:setupNineSliceShader( 20, 8 )
 	self:addElement( PurchaseBand2 )
@@ -50,7 +50,7 @@ CoD.PurchaseTiersInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local TierText = LUI.UIText.new( 0.5, 0.5, -70, 70, 0, 0, 48, 64 )
 	TierText:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
-	TierText:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	TierText:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	TierText:setTTF( "ttmussels_demibold" )
 	TierText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	TierText:setShaderVector( 0, 0.8, 0, 0, 0 )

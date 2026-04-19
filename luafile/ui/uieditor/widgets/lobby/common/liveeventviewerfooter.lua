@@ -22,7 +22,7 @@ CoD.LiveEventViewerFooter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local LineLeft = LUI.UIImage.new( 0, 1, -185, 197, 1, 1, -63, -57 )
 	LineLeft:setAlpha( 0.55 )
 	LineLeft:setImage( RegisterImage( 0x563843FB53DC2A3 ) )
-	LineLeft:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	LineLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( LineLeft )
 	self.LineLeft = LineLeft
 	

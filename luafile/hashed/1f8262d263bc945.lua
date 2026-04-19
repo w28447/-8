@@ -10,31 +10,31 @@ CoD.SpawnSelectKillcamFrameLayoutRight.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local elementBotRight = LUI.UIImage.new( 0, 0, 42, 56, 0, 0, 745.5, 777.5 )
 	elementBotRight:setAlpha( 0.05 )
-	elementBotRight:setImage( RegisterImage( 0x5A611D4B0D9997B ) )
+	elementBotRight:setImage( RegisterImage( "uie_ui_hud_selectspawn_layout_vertical_bar" ) )
 	self:addElement( elementBotRight )
 	self.elementBotRight = elementBotRight
 	
 	local elementTopRight = LUI.UIImage.new( 0, 0, 42, 56, 0, 0, 95.5, 127.5 )
 	elementTopRight:setAlpha( 0.05 )
-	elementTopRight:setImage( RegisterImage( 0x5A611D4B0D9997B ) )
+	elementTopRight:setImage( RegisterImage( "uie_ui_hud_selectspawn_layout_vertical_bar" ) )
 	self:addElement( elementTopRight )
 	self.elementTopRight = elementTopRight
 	
 	local elementMidRight = LUI.UIImage.new( 0, 0, 0, 12, 0, 0, 425.5, 437.5 )
 	elementMidRight:setAlpha( 0.05 )
-	elementMidRight:setImage( RegisterImage( 0x8819286035AA7EB ) )
+	elementMidRight:setImage( RegisterImage( "uie_ui_hud_selectspawn_layout_darkbox01" ) )
 	self:addElement( elementMidRight )
 	self.elementMidRight = elementMidRight
 	
 	local elementMidBoxes = LUI.UIImage.new( 0, 0, 31.5, 89.5, 0, 0, 418.5, 446.5 )
 	elementMidBoxes:setAlpha( 0.05 )
-	elementMidBoxes:setImage( RegisterImage( 0x8819386035AA99E ) )
+	elementMidBoxes:setImage( RegisterImage( "uie_ui_hud_selectspawn_layout_darkbox02" ) )
 	self:addElement( elementMidBoxes )
 	self.elementMidBoxes = elementMidBoxes
 	
 	local RulerRight = LUI.UIImage.new( 0, 0, 2, 42, 0, 0, 86.5, 770.5 )
-	RulerRight:setImage( RegisterImage( 0xA36EC4B5F194195 ) )
-	RulerRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	RulerRight:setImage( RegisterImage( "uie_ui_hud_selectspawn_layout_darkline" ) )
+	RulerRight:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	RulerRight:setShaderVector( 0, 0, 1, 0, 0 )
 	RulerRight:setShaderVector( 1, 0, 0, 0, 0 )
 	RulerRight:setShaderVector( 2, 0, 1, 0, 0 )
@@ -67,7 +67,7 @@ CoD.SpawnSelectKillcamFrameLayoutRight.__resetProperties = function ( f2_arg0 )
 	f2_arg0.elementBotRight:setLeftRight( 0, 0, 42, 56 )
 	f2_arg0.elementBotRight:setTopBottom( 0, 0, 745.5, 777.5 )
 	f2_arg0.elementBotRight:setAlpha( 0.05 )
-	f2_arg0.RulerRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	f2_arg0.RulerRight:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	f2_arg0.RulerRight:setShaderVector( 0, 0, 1, 0, 0 )
 	f2_arg0.RulerRight:setShaderVector( 1, 0, 0, 0, 0 )
 	f2_arg0.RulerRight:setShaderVector( 2, 0, 1, 0, 0 )
@@ -243,7 +243,7 @@ CoD.SpawnSelectKillcamFrameLayoutRight.__clipsPerState = {
 			end
 			
 			f4_arg0.RulerRight:completeAnimation()
-			f4_arg0.RulerRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+			f4_arg0.RulerRight:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 			f4_arg0.RulerRight:setShaderVector( 0, 0, 1, 0, 0 )
 			f4_arg0.RulerRight:setShaderVector( 1, 0, 0, 0, 0 )
 			f4_arg0.RulerRight:setShaderVector( 2, 0.5, 0.5, 0, 0 )

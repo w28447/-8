@@ -62,7 +62,7 @@ CoD.LoadoutClassItemEquipmentTakeTwo.new = function ( f1_arg0, f1_arg1, f1_arg2,
 		CoD.CACUtility.OpenCACOverlay( self, f9_arg1, f9_arg2, "SpecialistEquipmentSelect", self, "primarygrenade" )
 		return true
 	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	f1_arg0:AddButtonCallbackFunction( EquipmentSlotLarge, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
@@ -166,7 +166,7 @@ CoD.LoadoutClassItemEquipmentTakeTwo.new = function ( f1_arg0, f1_arg1, f1_arg2,
 		CoD.CACUtility.OpenCACOverlay( self, f25_arg1, f25_arg2, "SpecialistEquipmentSelect", self, "primarygrenade" )
 		return true
 	end, function ( f26_arg0, f26_arg1, f26_arg2 )
-		CoD.Menu.SetButtonLabel( f26_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f26_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	f1_arg0:AddButtonCallbackFunction( EquipmentSlot, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f27_arg0, f27_arg1, f27_arg2, f27_arg3 )
@@ -277,7 +277,7 @@ CoD.LoadoutClassItemEquipmentTakeTwo.new = function ( f1_arg0, f1_arg1, f1_arg2,
 		end
 	end, function ( f42_arg0, f42_arg1, f42_arg2 )
 		if CoD.ModelUtility.IsSelfModelValueEqualTo( f42_arg0, f42_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.BaseUtility.IsSelfInState( self, "TakeTwo" ) then
-			CoD.Menu.SetButtonLabel( f42_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f42_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

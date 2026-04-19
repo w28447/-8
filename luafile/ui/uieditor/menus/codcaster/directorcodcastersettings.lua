@@ -127,7 +127,7 @@ LUI.createMenu.DirectorCodCasterSettings = function ( f1_arg0, f1_arg1 )
 		GoBack( self, f12_arg2 )
 		return true
 	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, "ESCAPE" )
+		CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 		return true
 	end, false )
 	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], "Z", function ( f14_arg0, f14_arg1, f14_arg2, f14_arg3 )

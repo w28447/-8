@@ -1,6 +1,6 @@
 require( "lua/lobby/common/lobbycore" )
-require( "x64:4b27017ec234a36" )
-require( "x64:b56af127bf10bec" )
+require( "lua/lobby/lobbycharacterselection" )
+require( "lua/lobby/lobbyblackmarket" )
 
 Lobby.Events = {}
 local f0_local0 = function ()

@@ -24,7 +24,7 @@ CoD.ui_icon_callingcards_stpatricks2.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local rainbow = LUI.UIImage.new( 0, 0, 113, 473, 0, 0, -169, 191 )
 	rainbow:setImage( RegisterImage( 0xA2637705007A83A ) )
-	rainbow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	rainbow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	rainbow:setShaderVector( 0, 0, 1, 0, 0 )
 	rainbow:setShaderVector( 1, 0, 0, 0, 0 )
 	rainbow:setShaderVector( 2, 1, 1, 0, 0 )
@@ -36,7 +36,7 @@ CoD.ui_icon_callingcards_stpatricks2.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	local rainbow2 = LUI.UIImage.new( 0, 0, 491.5, 851.5, 0, 0, -169, 191 )
 	rainbow2:setYRot( 180 )
 	rainbow2:setImage( RegisterImage( 0xA2637705007A83A ) )
-	rainbow2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	rainbow2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	rainbow2:setShaderVector( 0, 0, 1, 0, 0 )
 	rainbow2:setShaderVector( 1, 0, 0, 0, 0 )
 	rainbow2:setShaderVector( 2, 1, 1, 0, 0 )

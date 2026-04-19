@@ -20,8 +20,8 @@ LUI.createMenu.zm_arcade_keys = function ( f1_arg0, f1_arg1 )
 	local Glow = LUI.UIImage.new( 0, 0, 163, 291, 0, 0, 53, 152 )
 	Glow:setRGB( 1, 0.26, 0 )
 	Glow:setAlpha( 0 )
-	Glow:setImage( RegisterImage( 0x5BE416E17DAB33B ) )
-	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Glow:setImage( RegisterImage( "uie_t7_core_hud_mapwidget_panelglow" ) )
+	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
 	

@@ -41,7 +41,7 @@ CoD.ChallengesSummaryCategoryList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 		end
 	end, function ( f5_arg0, f5_arg1, f5_arg2 )
 		if not IsElementInState( f5_arg0, "Locked" ) then
-			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -77,7 +77,7 @@ CoD.ChallengesSummaryCategoryList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 		end
 	end, function ( f9_arg0, f9_arg1, f9_arg2 )
 		if not IsElementInState( f9_arg0, "Locked" ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -113,7 +113,7 @@ CoD.ChallengesSummaryCategoryList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 		end
 	end, function ( f13_arg0, f13_arg1, f13_arg2 )
 		if not IsElementInState( f13_arg0, "Locked" ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -149,7 +149,7 @@ CoD.ChallengesSummaryCategoryList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 		end
 	end, function ( f17_arg0, f17_arg1, f17_arg2 )
 		if not IsElementInState( f17_arg0, "Locked" ) then
-			CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -180,7 +180,7 @@ CoD.ChallengesSummaryCategoryList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 		end
 	end, function ( f20_arg0, f20_arg1, f20_arg2 )
 		if not IsElementInState( f20_arg0, "Locked" ) then
-			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

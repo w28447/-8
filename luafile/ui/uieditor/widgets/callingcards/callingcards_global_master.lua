@@ -73,7 +73,7 @@ CoD[0x8A9D1228888C8CB].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local mist = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	mist:setImage( RegisterImage( 0x699A82F55A31273 ) )
-	mist:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD8EA9FE9B0BCF75 ) )
+	mist:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	mist:setShaderVector( 0, 1, 1, 0, 0 )
 	mist:setShaderVector( 1, -0.01, 0, 0, 0 )
 	self:addElement( mist )
@@ -82,14 +82,14 @@ CoD[0x8A9D1228888C8CB].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local spotlightColor = LUI.UIImage.new( 0, 0, -230, 821, 0, 0, 6.5, 518.5 )
 	spotlightColor:setRGB( 0.98, 0.87, 0 )
 	spotlightColor:setImage( RegisterImage( 0xCD389130C7FE72E ) )
-	spotlightColor:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	spotlightColor:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( spotlightColor )
 	self.spotlightColor = spotlightColor
 	
 	local fire = LUI.UIImage.new( 0, 0, -364, 596, 0, 0, 171, 411 )
 	fire:setZRot( 21 )
 	fire:setImage( RegisterImage( 0x6D41E45DB5AFD40 ) )
-	fire:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9227A50BA2B8D21 ) )
+	fire:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	fire:setShaderVector( 0, 0, 5, 0, 0 )
 	fire:setShaderVector( 1, 12, 0, 0, 0 )
 	self:addElement( fire )

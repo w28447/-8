@@ -376,16 +376,16 @@ LUI.createMenu.PaintjobIconColorPicker = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f35_arg0, f35_arg1, f35_arg2 )
 		if CoD.ModelUtility.IsModelValueEqualTo( f35_arg2, "Emblem.EmblemProperties.isGradientMode", 0 ) and IsPC() then
-			CoD.Menu.SetButtonLabel( f35_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+			CoD.Menu.SetButtonLabel( f35_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		elseif CoD.ModelUtility.IsModelValueEqualTo( f35_arg2, "Emblem.EmblemProperties.isGradientMode", 1 ) and CoD.ModelUtility.IsModelValueEqualToEnum( f35_arg2, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
-			CoD.Menu.SetButtonLabel( f35_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+			CoD.Menu.SetButtonLabel( f35_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		elseif CoD.ModelUtility.IsModelValueEqualTo( f35_arg2, "Emblem.EmblemProperties.isGradientMode", 1 ) and not CoD.ModelUtility.IsModelValueEqualToEnum( f35_arg2, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
-			CoD.Menu.SetButtonLabel( f35_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+			CoD.Menu.SetButtonLabel( f35_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		elseif CoD.ModelUtility.IsModelValueEqualTo( f35_arg2, "Emblem.EmblemProperties.isGradientMode", 0 ) then
-			CoD.Menu.SetButtonLabel( f35_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+			CoD.Menu.SetButtonLabel( f35_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		else
 			return false

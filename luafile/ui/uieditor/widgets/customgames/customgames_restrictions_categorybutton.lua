@@ -17,8 +17,8 @@ CoD.CustomGames_Restrictions_CategoryButton.new = function ( f1_arg0, f1_arg1, f
 	local FocusBorder = LUI.UIImage.new( 0, 1, -4, 4, 0, 1, -4, 4 )
 	FocusBorder:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	FocusBorder:setAlpha( 0 )
-	FocusBorder:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FocusBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FocusBorder:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FocusBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FocusBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FocusBorder:setupNineSliceShader( 10, 10 )
 	self:addElement( FocusBorder )
@@ -30,7 +30,7 @@ CoD.CustomGames_Restrictions_CategoryButton.new = function ( f1_arg0, f1_arg1, f
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.8 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -63,7 +63,7 @@ CoD.CustomGames_Restrictions_CategoryButton.new = function ( f1_arg0, f1_arg1, f
 	
 	local ItemFrameAdd = LUI.UIImage.new( 0, 1, -3, 3, 0, 1, -2, 2 )
 	ItemFrameAdd:setImage( RegisterImage( 0xC2AE59F4FA74812 ) )
-	ItemFrameAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	ItemFrameAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ItemFrameAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	ItemFrameAdd:setupNineSliceShader( 12, 164 )
 	self:addElement( ItemFrameAdd )
@@ -71,8 +71,8 @@ CoD.CustomGames_Restrictions_CategoryButton.new = function ( f1_arg0, f1_arg1, f
 	
 	local FrameSelected = LUI.UIImage.new( 0, 1, -3, 3, 0, 1, -3, 3 )
 	FrameSelected:setAlpha( 0 )
-	FrameSelected:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FrameSelected:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrameSelected:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FrameSelected:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrameSelected:setShaderVector( 0, 0, 0, 0, 0 )
 	FrameSelected:setupNineSliceShader( 8, 8 )
 	self:addElement( FrameSelected )
@@ -80,8 +80,8 @@ CoD.CustomGames_Restrictions_CategoryButton.new = function ( f1_arg0, f1_arg1, f
 	
 	local FrameBorder = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	FrameBorder:setAlpha( 0.3 )
-	FrameBorder:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrameBorder:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrameBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FrameBorder:setupNineSliceShader( 12, 12 )
 	self:addElement( FrameBorder )
@@ -126,7 +126,7 @@ CoD.CustomGames_Restrictions_CategoryButton.new = function ( f1_arg0, f1_arg1, f
 	TopBarFocus = LUI.UIImage.new( 0, 1, -11, 11, 0, 0, -13, -6 )
 	TopBarFocus:setAlpha( 0 )
 	TopBarFocus:setImage( RegisterImage( 0x7E8B272A3927DAB ) )
-	TopBarFocus:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	TopBarFocus:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TopBarFocus )
 	self.TopBarFocus = TopBarFocus
 	

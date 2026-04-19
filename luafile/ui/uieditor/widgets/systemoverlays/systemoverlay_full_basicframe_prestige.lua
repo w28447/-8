@@ -14,7 +14,7 @@ CoD.systemOverlay_Full_BasicFrame_Prestige.new = function ( f1_arg0, f1_arg1, f1
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 0, 41, 494, 0, 0, 29, 429 )
 	NoiseTiledBacking:setAlpha( 0.5 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -24,7 +24,7 @@ CoD.systemOverlay_Full_BasicFrame_Prestige.new = function ( f1_arg0, f1_arg1, f1
 	local GridTiled = LUI.UIImage.new( 0, 0, 43, 492, 0, 0, 30, 287 )
 	GridTiled:setAlpha( 0.05 )
 	GridTiled:setScale( 1.01, 1.01 )
-	GridTiled:setImage( RegisterImage( 0xCA386792563DE8 ) )
+	GridTiled:setImage( RegisterImage( "uie_ui_menu_store_bg_grid" ) )
 	GridTiled:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	GridTiled:setShaderVector( 0, 0, 0, 0, 0 )
 	GridTiled:setupNineSliceShader( 64, 64 )
@@ -110,7 +110,7 @@ CoD.systemOverlay_Full_BasicFrame_Prestige.new = function ( f1_arg0, f1_arg1, f1
 		ProcessListAction( self, f6_arg0, f6_arg2, f6_arg1 )
 		return true
 	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( OptionList )
@@ -229,7 +229,7 @@ CoD.systemOverlay_Full_BasicFrame_Prestige.new = function ( f1_arg0, f1_arg1, f1
 	cornerBracket:setAlpha( 0.5 )
 	cornerBracket:setZRot( 180 )
 	cornerBracket:setImage( RegisterImage( 0x535662F512D5F90 ) )
-	cornerBracket:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	cornerBracket:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( cornerBracket )
 	self.cornerBracket = cornerBracket
 	
@@ -237,7 +237,7 @@ CoD.systemOverlay_Full_BasicFrame_Prestige.new = function ( f1_arg0, f1_arg1, f1
 	cornerBracket4:setAlpha( 0.5 )
 	cornerBracket4:setZRot( 270 )
 	cornerBracket4:setImage( RegisterImage( 0x535662F512D5F90 ) )
-	cornerBracket4:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	cornerBracket4:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( cornerBracket4 )
 	self.cornerBracket4 = cornerBracket4
 	
@@ -245,22 +245,22 @@ CoD.systemOverlay_Full_BasicFrame_Prestige.new = function ( f1_arg0, f1_arg1, f1
 	cornerBracket2:setAlpha( 0.5 )
 	cornerBracket2:setZRot( 90 )
 	cornerBracket2:setImage( RegisterImage( 0x535662F512D5F90 ) )
-	cornerBracket2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	cornerBracket2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( cornerBracket2 )
 	self.cornerBracket2 = cornerBracket2
 	
 	local cornerBracket3 = LUI.UIImage.new( 0, 0, 488, 500, 0, 0, 423, 435 )
 	cornerBracket3:setAlpha( 0.5 )
 	cornerBracket3:setImage( RegisterImage( 0x535662F512D5F90 ) )
-	cornerBracket3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	cornerBracket3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( cornerBracket3 )
 	self.cornerBracket3 = cornerBracket3
 	
 	local BottomBracket9Slice = LUI.UIImage.new( 0, 0, 1853, 1908, 0, 0, 46.5, 55.5 )
 	BottomBracket9Slice:setAlpha( 0.2 )
 	BottomBracket9Slice:setZRot( 90 )
-	BottomBracket9Slice:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	BottomBracket9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	BottomBracket9Slice:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	BottomBracket9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BottomBracket9Slice:setShaderVector( 0, 0, 0, 0, 0 )
 	BottomBracket9Slice:setupNineSliceShader( 16, 4 )
 	self:addElement( BottomBracket9Slice )

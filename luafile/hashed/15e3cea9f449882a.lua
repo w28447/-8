@@ -1,6 +1,6 @@
 require( "x64:2fa26438cae31e9" )
-require( "x64:7a4ceca81c49387" )
-require( "x64:9b528a05aba52d6" )
+require( "ui/uieditor/menus/blackmarket/contracts/blackmarketcontracts" )
+require( "ui/uieditor/menus/itemshop/itemshopdetails" )
 require( "ui/uieditor/menus/lobby/common/popups/vodviewer" )
 require( "ui/uieditor/widgets/director/directorpregamebutton" )
 require( "ui/uieditor/widgets/itemshop/bmtallitemcontainer" )
@@ -120,7 +120,7 @@ CoD.BlackMarketItemShopFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		SetControllerModelValue( f11_arg2, "LootStreamProgress.playAnimation", false )
 		return true
 	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	f1_arg0:AddButtonCallbackFunction( FeaturedSlot1, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
@@ -223,8 +223,8 @@ CoD.BlackMarketItemShopFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	SpecialOrdersBracket:setRGB( 0.98, 1, 0.89 )
 	SpecialOrdersBracket:setAlpha( 0.5 )
 	SpecialOrdersBracket:setZRot( 180 )
-	SpecialOrdersBracket:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	SpecialOrdersBracket:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	SpecialOrdersBracket:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	SpecialOrdersBracket:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	SpecialOrdersBracket:setShaderVector( 0, 0, 0, 0, 0 )
 	SpecialOrdersBracket:setupNineSliceShader( 16, 4 )
 	self:addElement( SpecialOrdersBracket )
@@ -329,7 +329,7 @@ CoD.BlackMarketItemShopFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		SetControllerModelValue( f34_arg2, "LootStreamProgress.playAnimation", false )
 		return true
 	end, function ( f35_arg0, f35_arg1, f35_arg2 )
-		CoD.Menu.SetButtonLabel( f35_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f35_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	f1_arg0:AddButtonCallbackFunction( FeaturedSlot2, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f36_arg0, f36_arg1, f36_arg2, f36_arg3 )
@@ -505,7 +505,7 @@ CoD.BlackMarketItemShopFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		CoD.ContractUtility.OpenContractDetails( self, f56_arg0, f56_arg2 )
 		return true
 	end, function ( f57_arg0, f57_arg1, f57_arg2 )
-		CoD.Menu.SetButtonLabel( f57_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f57_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	f1_arg0:AddButtonCallbackFunction( SpecialOrders, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f58_arg0, f58_arg1, f58_arg2, f58_arg3 )
@@ -607,8 +607,8 @@ CoD.BlackMarketItemShopFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	FeaturedItemsBracket = LUI.UIImage.new( 0.5, 0.5, -846, -311, 0.5, 0.5, -364, -356 )
 	FeaturedItemsBracket:setAlpha( 0.5 )
 	FeaturedItemsBracket:setZRot( 180 )
-	FeaturedItemsBracket:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	FeaturedItemsBracket:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FeaturedItemsBracket:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	FeaturedItemsBracket:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FeaturedItemsBracket:setShaderVector( 0, 0, 0, 0, 0 )
 	FeaturedItemsBracket:setupNineSliceShader( 16, 4 )
 	self:addElement( FeaturedItemsBracket )
@@ -724,13 +724,13 @@ CoD.BlackMarketItemShopFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		end
 	end, function ( f79_arg0, f79_arg1, f79_arg2 )
 		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f79_arg0, f79_arg2, "lootType", LuaEnum.LOOT_TYPE.CONTRACT ) and IsListElementChildInState( f79_arg0, "BMTallItem", "DefaultState" ) then
-			CoD.Menu.SetButtonLabel( f79_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f79_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif IsListElementChildInState( f79_arg0, "BMTallItem", "MysteryItem" ) then
-			CoD.Menu.SetButtonLabel( f79_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f79_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif IsListElementChildInState( f79_arg0, "BMTallItem", "DefaultState" ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f79_arg0, f79_arg2, "lootType", LuaEnum.LOOT_TYPE.CONTRACT ) then
-			CoD.Menu.SetButtonLabel( f79_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f79_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -850,8 +850,8 @@ CoD.BlackMarketItemShopFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local MyShopBracket = LUI.UIImage.new( 0.5, 0.5, 7, 257, 0.5, 0.5, -364, -356 )
 	MyShopBracket:setAlpha( 0.5 )
 	MyShopBracket:setZRot( 180 )
-	MyShopBracket:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	MyShopBracket:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	MyShopBracket:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	MyShopBracket:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	MyShopBracket:setShaderVector( 0, 0, 0, 0, 0 )
 	MyShopBracket:setupNineSliceShader( 16, 4 )
 	self:addElement( MyShopBracket )
@@ -956,7 +956,7 @@ CoD.BlackMarketItemShopFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		OpenOverlay( self, "BlackMarketContracts", f101_arg2 )
 		return true
 	end, function ( f102_arg0, f102_arg1, f102_arg2 )
-		CoD.Menu.SetButtonLabel( f102_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f102_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( DirectorPreGameButton )

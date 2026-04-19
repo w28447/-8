@@ -240,7 +240,7 @@ LUI.createMenu.DirectorGestureSelector = function ( f1_arg0, f1_arg1 )
 		PlaySoundAlias( "uin_radial_confirm" )
 		return true
 	end, function ( f20_arg0, f20_arg1, f20_arg2 )
-		CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( emptyFocusable )
@@ -279,7 +279,7 @@ LUI.createMenu.DirectorGestureSelector = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f24_arg0, f24_arg1, f24_arg2 )
 		if IsPC() then
-			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

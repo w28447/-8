@@ -55,7 +55,7 @@ CoD.ListItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_ar
 		} )
 	end, false )
 	Tick:setAlpha( 0.75 )
-	Tick:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Tick:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Tick )
 	self.Tick = Tick
 	
@@ -64,13 +64,13 @@ CoD.ListItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_ar
 	GlowAdd:setZRot( -90 )
 	GlowAdd:setScale( 0.35, 0.52 )
 	GlowAdd:setImage( RegisterImage( 0xAD405802E3EEE94 ) )
-	GlowAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	GlowAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowAdd )
 	self.GlowAdd = GlowAdd
 	
 	Lock = LUI.UIImage.new( 1, 1, -372, -350, 0.5, 0.5, -12.5, 12.5 )
 	Lock:setAlpha( 0 )
-	Lock:setImage( RegisterImage( 0xB8AD8D12CEB707D ) )
+	Lock:setImage( RegisterImage( "uie_icon_locks_lock_01" ) )
 	self:addElement( Lock )
 	self.Lock = Lock
 	

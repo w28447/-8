@@ -10,13 +10,13 @@ CoD.vhud_sentinel_CenterReticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local CenterReticle = LUI.UIImage.new( 0.5, 0.5, -30, 30, 0.5, 0.5, -18, 18 )
 	CenterReticle:setImage( RegisterImage( 0xC4D853A72F73535 ) )
-	CenterReticle:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	CenterReticle:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CenterReticle )
 	self.CenterReticle = CenterReticle
 	
 	local CenterReticle0 = LUI.UIImage.new( 0.5, 0.5, -30, 30, 0.5, 0.5, -18, 18 )
 	CenterReticle0:setImage( RegisterImage( 0xC4D853A72F73535 ) )
-	CenterReticle0:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	CenterReticle0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CenterReticle0 )
 	self.CenterReticle0 = CenterReticle0
 	

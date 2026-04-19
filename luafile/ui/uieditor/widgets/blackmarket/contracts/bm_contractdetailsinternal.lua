@@ -24,7 +24,7 @@ CoD.BM_ContractDetailsInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local Art = LUI.UIImage.new( 0, 0, 3, 459, 0, 0, 4, 500 )
 	Art:setImage( RegisterImage( 0xA806569052CB2E3 ) )
-	Art:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Art:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Art )
 	self.Art = Art
 	
@@ -63,7 +63,7 @@ CoD.BM_ContractDetailsInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local ButtonTopLine9Slice = LUI.UIImage.new( 0, 0, -6, 466, 0, 0, 489, 509 )
 	ButtonTopLine9Slice:setAlpha( 0.11 )
 	ButtonTopLine9Slice:setImage( RegisterImage( 0xC752149A1FA1AAE ) )
-	ButtonTopLine9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	ButtonTopLine9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ButtonTopLine9Slice:setShaderVector( 0, 0, 0, 0, 0 )
 	ButtonTopLine9Slice:setupNineSliceShader( 120, 10 )
 	self:addElement( ButtonTopLine9Slice )

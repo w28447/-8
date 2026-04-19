@@ -52,7 +52,7 @@ CoD.WZTeamScoreboard_Row.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local PlayerNameBotStripe = LUI.UIImage.new( 0.5, 0.5, -424.5, 54.5, 1, 1, -6.5, 4.5 )
 	PlayerNameBotStripe:setAlpha( 0.4 )
 	PlayerNameBotStripe:setImage( RegisterImage( 0x25491BD9124F9AD ) )
-	PlayerNameBotStripe:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	PlayerNameBotStripe:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PlayerNameBotStripe )
 	self.PlayerNameBotStripe = PlayerNameBotStripe
 	
@@ -67,7 +67,7 @@ CoD.WZTeamScoreboard_Row.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local Tint = LUI.UIImage.new( 0, 0, 60, 530, 0, 0, 0, 56 )
 	Tint:setAlpha( 0.2 )
-	Tint:setImage( RegisterImage( 0x4B6FFA90272070E ) )
+	Tint:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
 	Tint:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	Tint:setShaderVector( 0, 0, 0, 0, 0 )
 	Tint:setupNineSliceShader( 24, 24 )
@@ -98,7 +98,7 @@ CoD.WZTeamScoreboard_Row.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local BarBot = LUI.UIImage.new( 0, 0, -1.5, 62.5, 0, 0, 54.5, 64.5 )
 	BarBot:setAlpha( 0.4 )
 	BarBot:setImage( RegisterImage( 0xC6873B923C6686C ) )
-	BarBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	BarBot:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BarBot )
 	self.BarBot = BarBot
 	

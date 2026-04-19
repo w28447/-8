@@ -18,7 +18,7 @@ CoD.GenericProjectedTabletInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	RegBack:setRGB( 0.42, 0.69, 0.76 )
 	RegBack:setAlpha( 0.6 )
 	RegBack:setImage( RegisterImage( 0xF6B430349B7E18A ) )
-	RegBack:setMaterial( LUI.UIImage.GetCachedMaterial( 0x67D1E3A3D2D1BF ) )
+	RegBack:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_saturation_normal" ) )
 	RegBack:setShaderVector( 0, 2.85, 0, 0, 0 )
 	self:addElement( RegBack )
 	self.RegBack = RegBack
@@ -27,14 +27,14 @@ CoD.GenericProjectedTabletInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	AddBack:setRGB( 0.35, 0.62, 0.69 )
 	AddBack:setAlpha( 0.2 )
 	AddBack:setImage( RegisterImage( 0xF6B430349B7E18A ) )
-	AddBack:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	AddBack:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( AddBack )
 	self.AddBack = AddBack
 	
 	local Image0 = LUI.UIImage.new( 0.5, 0.5, -542, 538, 0.5, 0.5, -526, 554 )
 	Image0:setAlpha( 0 )
 	Image0:setImage( RegisterImage( 0xF6B430349B7E18A ) )
-	Image0:setMaterial( LUI.UIImage.GetCachedMaterial( 0x67D1E3A3D2D1BF ) )
+	Image0:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_saturation_normal" ) )
 	Image0:setShaderVector( 0, 0.45, 0, 0, 0 )
 	self:addElement( Image0 )
 	self.Image0 = Image0
@@ -42,14 +42,14 @@ CoD.GenericProjectedTabletInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local lines = LUI.UIImage.new( 0.5, 0.5, -542, 538, 0.5, 0.5, -526, 554 )
 	lines:setAlpha( 0.9 )
 	lines:setImage( RegisterImage( 0xCBDBE0A101448A8 ) )
-	lines:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	lines:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( lines )
 	self.lines = lines
 	
 	local scroll = LUI.UIImage.new( 0.5, 0.5, -542, 538, 0.5, 0.5, -526, 554 )
 	scroll:setAlpha( 0.1 )
 	scroll:setImage( RegisterImage( 0xCBDBE0A101448A8 ) )
-	scroll:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD8EA9FE9B0BCF75 ) )
+	scroll:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	scroll:setShaderVector( 0, 0.06, 1, 0, 0 )
 	scroll:setShaderVector( 1, 50, 0, 0, 0 )
 	self:addElement( scroll )
@@ -70,7 +70,7 @@ CoD.GenericProjectedTabletInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	Static:setRGB( 0.7, 0.92, 0.97 )
 	Static:setAlpha( 0 )
 	Static:setImage( RegisterImage( 0x6E4CF8E78AE6592 ) )
-	Static:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD8EA9FE9B0BCF75 ) )
+	Static:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	Static:setShaderVector( 0, -0.01, 0.44, 0, 0 )
 	Static:setShaderVector( 1, 4.29, 0, 0, 0 )
 	self:addElement( Static )
@@ -79,14 +79,14 @@ CoD.GenericProjectedTabletInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local Image10 = LUI.UIImage.new( 0.5, 0.5, -54, 54, 0.5, 0.5, -56, 52 )
 	Image10:setAlpha( 0.94 )
 	Image10:setImage( RegisterImage( 0x80105A33A5C4CF3 ) )
-	Image10:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Image10:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image10 )
 	self.Image10 = Image10
 	
 	local LineUL = LUI.UIImage.new( 0, 0, 300, 492, 0, 0, 246, 264 )
 	LineUL:setAlpha( 0.89 )
 	LineUL:setImage( RegisterImage( 0x7D0A6D9EC25162F ) )
-	LineUL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	LineUL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( LineUL )
 	self.LineUL = LineUL
 	
@@ -94,7 +94,7 @@ CoD.GenericProjectedTabletInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	LineUR:setAlpha( 0.89 )
 	LineUR:setYRot( 180 )
 	LineUR:setImage( RegisterImage( 0x7D0A6D9EC25162F ) )
-	LineUR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	LineUR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( LineUR )
 	self.LineUR = LineUR
 	
@@ -102,7 +102,7 @@ CoD.GenericProjectedTabletInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	LineLL:setAlpha( 0.89 )
 	LineLL:setXRot( 190 )
 	LineLL:setImage( RegisterImage( 0x7D0A6D9EC25162F ) )
-	LineLL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	LineLL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( LineLL )
 	self.LineLL = LineLL
 	
@@ -111,28 +111,28 @@ CoD.GenericProjectedTabletInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	LineLR:setXRot( 190 )
 	LineLR:setYRot( 180 )
 	LineLR:setImage( RegisterImage( 0x7D0A6D9EC25162F ) )
-	LineLR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	LineLR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( LineLR )
 	self.LineLR = LineLR
 	
 	local targetLarge = LUI.UIImage.new( 0, 0, 535, 630, 0, 0, 198, 293 )
 	targetLarge:setScale( 1.02, 1.02 )
 	targetLarge:setImage( RegisterImage( 0xBE4610A169FDF36 ) )
-	targetLarge:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	targetLarge:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( targetLarge )
 	self.targetLarge = targetLarge
 	
 	local targetMed = LUI.UIImage.new( 0, 0, 316, 411, 0, 0, 341.5, 436.5 )
 	targetMed:setAlpha( 0.62 )
 	targetMed:setImage( RegisterImage( 0xBE4610A169FDF36 ) )
-	targetMed:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	targetMed:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( targetMed )
 	self.targetMed = targetMed
 	
 	local targetsmall0 = LUI.UIImage.new( 0, 0, 643, 738, 0, 0, 317, 412 )
 	targetsmall0:setAlpha( 0.04 )
 	targetsmall0:setImage( RegisterImage( 0xBE4610A169FDF36 ) )
-	targetsmall0:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	targetsmall0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( targetsmall0 )
 	self.targetsmall0 = targetsmall0
 	
@@ -140,7 +140,7 @@ CoD.GenericProjectedTabletInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	targetSmall1:setAlpha( 0.98 )
 	targetSmall1:setScale( 0.6, 0.6 )
 	targetSmall1:setImage( RegisterImage( 0xBE4610A169FDF36 ) )
-	targetSmall1:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	targetSmall1:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( targetSmall1 )
 	self.targetSmall1 = targetSmall1
 	
@@ -148,7 +148,7 @@ CoD.GenericProjectedTabletInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	targetSmall2:setAlpha( 0.98 )
 	targetSmall2:setScale( 0.6, 0.6 )
 	targetSmall2:setImage( RegisterImage( 0xBE4610A169FDF36 ) )
-	targetSmall2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	targetSmall2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( targetSmall2 )
 	self.targetSmall2 = targetSmall2
 	
@@ -189,7 +189,7 @@ CoD.GenericProjectedTabletInternal.__resetProperties = function ( f2_arg0 )
 	f2_arg0.Scanlines:setShaderVector( 2, 0.01, 0, 0, 0 )
 	f2_arg0.RegBack:setAlpha( 0.6 )
 	f2_arg0.AddBack:setAlpha( 0.2 )
-	f2_arg0.AddBack:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	f2_arg0.AddBack:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	f2_arg0.targetMed:setLeftRight( 0, 0, 316, 411 )
 	f2_arg0.targetMed:setTopBottom( 0, 0, 341.5, 436.5 )
 	f2_arg0.targetMed:setAlpha( 0.62 )
@@ -324,7 +324,7 @@ CoD.GenericProjectedTabletInternal.__clipsPerState = {
 			
 			f3_arg0.AddBack:completeAnimation()
 			f3_arg0.AddBack:setAlpha( 0.2 )
-			f3_arg0.AddBack:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+			f3_arg0.AddBack:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 			f3_local1( f3_arg0.AddBack )
 			local f3_local2 = function ( f22_arg0 )
 				local f22_local0 = function ( f23_arg0 )

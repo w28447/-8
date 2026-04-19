@@ -10,7 +10,7 @@ CoD.SelectedFilmSummaryScoreColumn.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local HeaderText = LUI.UIText.new( 0, 1, 0, 0, 0, 0, 0, 26 )
 	HeaderText:setRGB( ColorSet.T8__OFF__GRAY.r, ColorSet.T8__OFF__GRAY.g, ColorSet.T8__OFF__GRAY.b )
-	HeaderText:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	HeaderText:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	HeaderText:setTTF( "ttmussels_regular" )
 	HeaderText:setLetterSpacing( 1 )
 	HeaderText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -19,7 +19,7 @@ CoD.SelectedFilmSummaryScoreColumn.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	self.HeaderText = HeaderText
 	
 	local ValueText = LUI.UIText.new( 0.5, 0.5, -99.5, 99.5, 1, 1, -34, -1 )
-	ValueText:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	ValueText:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	ValueText:setTTF( "dinnext_regular" )
 	ValueText:setLetterSpacing( 1 )
 	ValueText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

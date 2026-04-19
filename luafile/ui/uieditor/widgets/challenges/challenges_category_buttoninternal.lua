@@ -18,7 +18,7 @@ CoD.Challenges_Category_ButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.8 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -44,8 +44,8 @@ CoD.Challenges_Category_ButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local FillBarBorder = LUI.UIImage.new( 0, 0.62, 5, 9, 0.05, 0.95, 0, 0 )
 	FillBarBorder:setAlpha( 0.1 )
-	FillBarBorder:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FillBarBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FillBarBorder:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FillBarBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FillBarBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FillBarBorder:setupNineSliceShader( 12, 12 )
 	self:addElement( FillBarBorder )
@@ -54,7 +54,7 @@ CoD.Challenges_Category_ButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg
 	local FillBar = LUI.UIImage.new( -0, 0.62, 8, 6, 0.05, 0.95, 2, -2 )
 	FillBar:setRGB( 1, 0.36, 0 )
 	FillBar:setAlpha( 0.15 )
-	FillBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	FillBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	FillBar:setShaderVector( 1, 0, 0, 0, 0 )
 	FillBar:setShaderVector( 2, 1, 0, 0, 0 )
 	FillBar:setShaderVector( 3, 0, 0, 0, 0 )
@@ -76,7 +76,7 @@ CoD.Challenges_Category_ButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg
 	local LockIconBacking = LUI.UIImage.new( 0.73, 0.73, 61, 101, 0, 0, 30.5, 70.5 )
 	LockIconBacking:setRGB( 0, 0, 0 )
 	LockIconBacking:setAlpha( 0.85 )
-	LockIconBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE125638BF94665F ) )
+	LockIconBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	LockIconBacking:setShaderVector( 0, 0.02, 0.02, 0.02, 0.02 )
 	self:addElement( LockIconBacking )
 	self.LockIconBacking = LockIconBacking

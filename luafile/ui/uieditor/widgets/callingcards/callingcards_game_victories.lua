@@ -49,7 +49,7 @@ CoD[0x4AFF0067298BAB8].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local bubbles = LUI.UIImage.new( 0, 0, 194.5, 239.5, 0, 0, 0, 240 )
 	bubbles:setImage( RegisterImage( 0x355FCE59C482A5E ) )
-	bubbles:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD8EA9FE9B0BCF75 ) )
+	bubbles:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	bubbles:setShaderVector( 0, 1, 1, 0, 0 )
 	bubbles:setShaderVector( 1, 0, 0.05, 0, 0 )
 	self:addElement( bubbles )
@@ -57,7 +57,7 @@ CoD[0x4AFF0067298BAB8].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local bubbles2 = LUI.UIImage.new( 0, 0, 789, 834, 0, 0, -119, 121 )
 	bubbles2:setImage( RegisterImage( 0x355FCE59C482A5E ) )
-	bubbles2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD8EA9FE9B0BCF75 ) )
+	bubbles2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	bubbles2:setShaderVector( 0, 1, 1, 0, 0 )
 	bubbles2:setShaderVector( 1, 0, 0.05, 0, 0 )
 	self:addElement( bubbles2 )
@@ -81,7 +81,7 @@ CoD[0x4AFF0067298BAB8].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local bubbles3 = LUI.UIImage.new( 0, 0, 386.5, 490.5, 0, 0, -119, 436 )
 	bubbles3:setImage( RegisterImage( 0x355FCE59C482A5E ) )
-	bubbles3:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD8EA9FE9B0BCF75 ) )
+	bubbles3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	bubbles3:setShaderVector( 0, 1, 1, 0, 0 )
 	bubbles3:setShaderVector( 1, 0, 0.05, 0, 0 )
 	self:addElement( bubbles3 )
@@ -89,7 +89,7 @@ CoD[0x4AFF0067298BAB8].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local bubbles4 = LUI.UIImage.new( 0, 0, 26.5, 130.5, 0, 0, -220, 335 )
 	bubbles4:setImage( RegisterImage( 0x355FCE59C482A5E ) )
-	bubbles4:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD8EA9FE9B0BCF75 ) )
+	bubbles4:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	bubbles4:setShaderVector( 0, 1, 1, 0, 0 )
 	bubbles4:setShaderVector( 1, 0, 0.05, 0, 0 )
 	self:addElement( bubbles4 )

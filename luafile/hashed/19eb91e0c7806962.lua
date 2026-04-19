@@ -14,8 +14,8 @@ CoD.EmblemMaterialElement.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local FrontendFrameSelected = LUI.UIImage.new( -1.85, -0.97, 185, 197, -0.18, 0.7, 18, 30 )
 	FrontendFrameSelected:setAlpha( 0 )
-	FrontendFrameSelected:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FrontendFrameSelected:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrameSelected:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FrontendFrameSelected:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrameSelected:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrameSelected:setupNineSliceShader( 14, 14 )
 	self:addElement( FrontendFrameSelected )

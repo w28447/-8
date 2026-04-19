@@ -133,11 +133,11 @@ CoD.HUDUtility.GetObjectiveColor = function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3
 end
 
 CoD.HUDUtility.ObjectiveUpdated = function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3, f7_arg4, f7_arg5, f7_arg6 )
-	local f7_local0 = f7_arg2.waypoint_image or 0x7615068F50B3D66
-	local f7_local1 = f7_arg2[0x5E9D3AC02630A17] or 0x7615068F50B3D66
-	local f7_local2 = f7_arg2[0x5E9D4AC02630BCA] or 0x7615068F50B3D66
+	local f7_local0 = f7_arg2.waypoint_image or "blacktransparent"
+	local f7_local1 = f7_arg2[0x5E9D3AC02630A17] or "blacktransparent"
+	local f7_local2 = f7_arg2[0x5E9D4AC02630BCA] or "blacktransparent"
 	local f7_local3 = f7_arg2.waypoint_text or ""
-	local f7_local4 = f7_arg2[0xE3FD1464311AFA1] or 0x7615068F50B3D66
+	local f7_local4 = f7_arg2[0xE3FD1464311AFA1] or "blacktransparent"
 	local f7_local5 = Engine.GetObjectiveTeam( f7_arg1, f7_arg6 )
 	local f7_local6 = Engine.GetPredictedClientNum( f7_arg1 )
 	local f7_local7 = Engine.GetTeamID( f7_arg1, f7_local6 )
@@ -2855,7 +2855,7 @@ DataSourceHelpers.PerControllerDataSourceSetup( "WeaponPickupAttachmentList", "h
 			local f198_local3 = f198_arg0:create( "attachment" .. f198_local0 )
 			f198_local3 = f198_local3:create( "image" )
 			if not f198_local3:get() then
-				f198_local3:set( 0x7615068F50B3D66 )
+				f198_local3:set( "blacktransparent" )
 			end
 		end
 	end
@@ -3830,7 +3830,7 @@ end
 
 CoD.HUDUtility.GetObjectiveImage = function ( f280_arg0, f280_arg1, f280_arg2 )
 	local f280_local0 = tonumber( f280_arg2 )
-	local f280_local1 = RegisterImage( 0x7615068F50B3D66 )
+	local f280_local1 = RegisterImage( "blacktransparent" )
 	if f280_local0 then
 		local f280_local2 = CoD.HUDUtility.GetCachedObjective( Engine.GetObjectiveName( f280_arg0, f280_local0 ) )
 		if f280_local2 and f280_local2.objective_image then
@@ -4509,7 +4509,7 @@ end
 CoD.HUDUtility.GetAbilityCalloutOverheadIcon = function ( f343_arg0 )
 	local f343_local0 = Engine[0xFA75409B5FA0438]( f343_arg0 )
 	if not f343_local0 or f343_local0 == "" then
-		return RegisterImage( 0x7615068F50B3D66 )
+		return RegisterImage( "blacktransparent" )
 	else
 		return f343_local0
 	end
@@ -4839,7 +4839,7 @@ end, false, {
 			local f374_local0 = f374_arg1._dummyModel:create( "isDummy" )
 			f374_local0:set( true )
 			f374_local0 = f374_arg1._dummyModel:create( "icon" )
-			f374_local0:set( 0x7615068F50B3D66 )
+			f374_local0:set( "blacktransparent" )
 			f374_local0 = f374_arg1._dummyModel:create( "stackCount" )
 			f374_local0:set( 0 )
 			f374_local0 = f374_arg1._dummyModel:create( "stashStackSize" )
@@ -5453,7 +5453,7 @@ DataSources.SpraysAndGestures = DataSourceHelpers.ListSetup( "SpraysAndGestures"
 			else
 				table.insert( f427_local0, {
 					models = {
-						image = 0x7615068F50B3D66,
+						image = "blacktransparent",
 						displayName = 0x0,
 						index = f427_local7 - 2,
 						item_index = 0,
@@ -5521,7 +5521,7 @@ DataSourceHelpers.PerControllerDataSourceSetup( "QuickSpray", "QuickSpray", func
 			f429_local5 = 0x0
 		end
 	end
-	f429_local5 = 0x7615068F50B3D66
+	f429_local5 = "blacktransparent"
 end, false )
 CoD.HUDUtility.MenuDelayedSetRightStickLock = function ( f430_arg0, f430_arg1, f430_arg2, f430_arg3 )
 	if f430_arg0._delayedSetLockTimer ~= nil then

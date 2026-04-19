@@ -70,7 +70,7 @@ CoD.MPSpecialistHUBTags_TagFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 		end
 	end, function ( f7_arg0, f7_arg1, f7_arg2 )
 		if CoD.ModelUtility.IsSelfModelValueTrue( f7_arg0, f7_arg2, "owned" ) and not CoD.ModelUtility.IsSelfModelValueTrue( f7_arg0, f7_arg2, "trialLocked" ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

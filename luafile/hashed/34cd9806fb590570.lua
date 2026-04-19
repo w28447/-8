@@ -25,7 +25,7 @@ CoD.CharacterSelection_CustomCharacterButton_Internal.new = function ( f1_arg0, 
 	local TitleBackgroundLED = LUI.UIImage.new( 0, 0, 0, 300, 0, 0, 0, 480 )
 	TitleBackgroundLED:setRGB( 0.9, 0.98, 1 )
 	TitleBackgroundLED:setAlpha( 0.1 )
-	TitleBackgroundLED:setImage( RegisterImage( 0x4B6FFA90272070E ) )
+	TitleBackgroundLED:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
 	TitleBackgroundLED:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TitleBackgroundLED:setShaderVector( 0, 0, 0, 0, 0 )
 	TitleBackgroundLED:setupNineSliceShader( 24, 24 )
@@ -34,7 +34,7 @@ CoD.CharacterSelection_CustomCharacterButton_Internal.new = function ( f1_arg0, 
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.8 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -43,7 +43,7 @@ CoD.CharacterSelection_CustomCharacterButton_Internal.new = function ( f1_arg0, 
 	
 	local FocusGlow = LUI.UIImage.new( 0, 1, -142, 142, 0, 1, -110, 110 )
 	FocusGlow:setAlpha( 0 )
-	FocusGlow:setImage( RegisterImage( 0x8E79E4E42B6714C ) )
+	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_large" ) )
 	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.25, 0.25 )
 	FocusGlow:setShaderVector( 1, 1.2, 0, 0, 0 )
@@ -66,7 +66,7 @@ CoD.CharacterSelection_CustomCharacterButton_Internal.new = function ( f1_arg0, 
 	NameplateBars:setRGB( 0.13, 0.14, 0.18 )
 	NameplateBars:setAlpha( 0 )
 	NameplateBars:setScale( 0.98, 0.98 )
-	NameplateBars:setImage( RegisterImage( 0x29BE1DE77EE233C ) )
+	NameplateBars:setImage( RegisterImage( "uie_ui_hud_core_draft_nameplate_bars" ) )
 	self:addElement( NameplateBars )
 	self.NameplateBars = NameplateBars
 	
@@ -178,15 +178,15 @@ CoD.CharacterSelection_CustomCharacterButton_Internal.new = function ( f1_arg0, 
 	
 	EquippedMarkerTick = LUI.UIImage.new( 0, 0, 260.5, 304.5, 0, 0, -3, 41 )
 	EquippedMarkerTick:setZoom( 4 )
-	EquippedMarkerTick:setImage( RegisterImage( 0x9A8B26C9B001758 ) )
+	EquippedMarkerTick:setImage( RegisterImage( "uie_ui_menu_cac_equipped_marker_tick" ) )
 	self:addElement( EquippedMarkerTick )
 	self.EquippedMarkerTick = EquippedMarkerTick
 	
 	EquippedMarkerTickAdd = LUI.UIImage.new( 0, 0, 260.5, 304.5, 0, 0, -3, 41 )
 	EquippedMarkerTickAdd:setAlpha( 0 )
 	EquippedMarkerTickAdd:setZoom( 4 )
-	EquippedMarkerTickAdd:setImage( RegisterImage( 0x9A8B26C9B001758 ) )
-	EquippedMarkerTickAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	EquippedMarkerTickAdd:setImage( RegisterImage( "uie_ui_menu_cac_equipped_marker_tick" ) )
+	EquippedMarkerTickAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( EquippedMarkerTickAdd )
 	self.EquippedMarkerTickAdd = EquippedMarkerTickAdd
 	

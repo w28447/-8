@@ -25,7 +25,7 @@ CoD.HUD_ZM_Arcade_Multiplier.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	Multiplier:setBackingType( 2 )
 	Multiplier:setBackingXPadding( 5 )
 	Multiplier:setBackingYPadding( 3 )
-	Multiplier:setBackingImage( RegisterImage( 0x75D661B612187DF ) )
+	Multiplier:setBackingImage( RegisterImage( "uie_objbg" ) )
 	Multiplier:linkToElementModel( self, "multiplier_count", true, function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then
@@ -39,8 +39,8 @@ CoD.HUD_ZM_Arcade_Multiplier.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	Image:setRGB( 1, 0.84, 0 )
 	Image:setAlpha( 0 )
 	Image:setZRot( 90 )
-	Image:setImage( RegisterImage( 0x5BE416E17DAB33B ) )
-	Image:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Image:setImage( RegisterImage( "uie_t7_core_hud_mapwidget_panelglow" ) )
+	Image:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image )
 	self.Image = Image
 	

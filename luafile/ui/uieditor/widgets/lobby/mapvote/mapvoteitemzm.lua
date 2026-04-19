@@ -83,7 +83,7 @@ CoD.MapVoteItemZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	local TopBracket = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 21, 41 )
 	TopBracket:setAlpha( 0.5 )
 	TopBracket:setImage( RegisterImage( 0xC752149A1FA1AAE ) )
-	TopBracket:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	TopBracket:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	TopBracket:setShaderVector( 0, 0, 0, 0, 0 )
 	TopBracket:setupNineSliceShader( 128, 128 )
 	self:addElement( TopBracket )
@@ -93,7 +93,7 @@ CoD.MapVoteItemZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	BtmBracket:setAlpha( 0.5 )
 	BtmBracket:setZRot( 180 )
 	BtmBracket:setImage( RegisterImage( 0xC752149A1FA1AAE ) )
-	BtmBracket:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	BtmBracket:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	BtmBracket:setShaderVector( 0, 0, 0, 0, 0 )
 	BtmBracket:setupNineSliceShader( 128, 128 )
 	self:addElement( BtmBracket )
@@ -102,7 +102,7 @@ CoD.MapVoteItemZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	local SelectedMarkerTick = LUI.UIImage.new( 1, 1, -44, 0, 0, 0, 22, 66 )
 	SelectedMarkerTick:setAlpha( 0 )
 	SelectedMarkerTick:setZoom( 4 )
-	SelectedMarkerTick:setImage( RegisterImage( 0x9A8B26C9B001758 ) )
+	SelectedMarkerTick:setImage( RegisterImage( "uie_ui_menu_cac_equipped_marker_tick" ) )
 	self:addElement( SelectedMarkerTick )
 	self.SelectedMarkerTick = SelectedMarkerTick
 	

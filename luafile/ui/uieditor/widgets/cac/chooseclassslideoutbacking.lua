@@ -64,7 +64,7 @@ CoD.ChooseClassSlideOutBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	TopBar4 = LUI.UIImage.new( -0.1, 1.1, 0, 0, 0, 0, -15, -12 )
 	TopBar4:setAlpha( 0.12 )
 	TopBar4:setImage( RegisterImage( 0x42BCCF45B82FBED ) )
-	TopBar4:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	TopBar4:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TopBar4 )
 	self.TopBar4 = TopBar4
 	
@@ -74,7 +74,7 @@ CoD.ChooseClassSlideOutBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	TopBar3:setAlpha( 0.2 )
 	TopBar3:setZoom( 2 )
 	TopBar3:setImage( RegisterImage( 0x42BCCF45B82FBED ) )
-	TopBar3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	TopBar3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TopBar3 )
 	self.TopBar3 = TopBar3
 	

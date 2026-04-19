@@ -27,8 +27,8 @@ LUI.createMenu.FileshareOptions = function ( f1_arg0, f1_arg1 )
 	
 	local tileTexture = LUI.UIImage.new( 1, 1, -532, 0, 0, 1, 0, 0 )
 	tileTexture:setAlpha( 0.5 )
-	tileTexture:setImage( RegisterImage( 0xA38BB233841162F ) )
-	tileTexture:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD8EA9FE9B0BCF75 ) )
+	tileTexture:setImage( RegisterImage( "uie_t7_tile_texture" ) )
+	tileTexture:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	tileTexture:setShaderVector( 0, 30, 55, 0, 0 )
 	tileTexture:setShaderVector( 1, 0, 0, 0, 0 )
 	self:addElement( tileTexture )
@@ -60,7 +60,7 @@ LUI.createMenu.FileshareOptions = function ( f1_arg0, f1_arg1 )
 		ProcessListAction( self, f3_arg0, f3_arg2, f3_arg1 )
 		return true
 	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( OptionsList )
@@ -184,7 +184,7 @@ LUI.createMenu.FileshareOptions = function ( f1_arg0, f1_arg1 )
 		GoBack( self, f17_arg2 )
 		return true
 	end, function ( f18_arg0, f18_arg1, f18_arg2 )
-		CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

@@ -234,7 +234,7 @@ CoD.WarzoneInventory.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	self.InventoryEquipmentSmall = InventoryEquipmentSmall
 	
 	local QuickLabel = LUI.UIText.new( 0, 0, 319, 519, 0, 0, -22, -4 )
-	QuickLabel:setText( LocalizeToUpperString( 0xAC24C20650F01A4 ) )
+	QuickLabel:setText( LocalizeToUpperString( "warzone/quick_equip" ) )
 	QuickLabel:setTTF( "ttmussels_regular" )
 	QuickLabel:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	QuickLabel:setShaderVector( 0, 0.6, 0, 0, 0 )

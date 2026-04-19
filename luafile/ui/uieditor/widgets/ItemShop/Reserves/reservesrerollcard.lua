@@ -14,7 +14,7 @@ CoD.ReservesRerollCard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local RerollText = LUI.UIText.new( 0.5, 0.5, -145, 145, 0, 0, 112.5, 147.5 )
 	RerollText:setRGB( 1, 0.89, 0.45 )
-	RerollText:setText( LocalizeToUpperString( 0x765CBAE04FAF929 ) )
+	RerollText:setText( LocalizeToUpperString( "mpui/reroll" ) )
 	RerollText:setTTF( "default" )
 	RerollText:setLetterSpacing( 2 )
 	RerollText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

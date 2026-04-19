@@ -16,8 +16,8 @@ CoD.AmmoWidgetZM_EquipmentContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	bgbGlowOrangeOver:setRGB( ColorSet.GroupName.r, ColorSet.GroupName.g, ColorSet.GroupName.b )
 	bgbGlowOrangeOver:setAlpha( 0 )
 	bgbGlowOrangeOver:setZRot( 90 )
-	bgbGlowOrangeOver:setImage( RegisterImage( 0x5BE416E17DAB33B ) )
-	bgbGlowOrangeOver:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	bgbGlowOrangeOver:setImage( RegisterImage( "uie_t7_core_hud_mapwidget_panelglow" ) )
+	bgbGlowOrangeOver:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( bgbGlowOrangeOver )
 	self.bgbGlowOrangeOver = bgbGlowOrangeOver
 	
@@ -41,7 +41,7 @@ CoD.AmmoWidgetZM_EquipmentContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	bgbAbilitySwirl:setAlpha( 0 )
 	bgbAbilitySwirl:setScale( 1.65, 1.65 )
 	bgbAbilitySwirl:setImage( RegisterImage( 0xBBBD54E6E7B4493 ) )
-	bgbAbilitySwirl:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	bgbAbilitySwirl:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( bgbAbilitySwirl )
 	self.bgbAbilitySwirl = bgbAbilitySwirl
 	

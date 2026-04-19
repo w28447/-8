@@ -26,7 +26,7 @@ CoD.FallMeter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	
 	local GroundFill = LUI.UIImage.new( 0.5, 0.5, -10, 10, 1, 1, -500, 0 )
 	GroundFill:setRGB( 0.63, 0.33, 0.16 )
-	GroundFill:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	GroundFill:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	GroundFill:setShaderVector( 0, 0, 1, 0, 0 )
 	GroundFill:setShaderVector( 1, 0, 0, 0, 0 )
 	GroundFill:setShaderVector( 3, 0, 0, 0, 0 )

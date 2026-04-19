@@ -77,7 +77,7 @@ CoD.WarWaypoint.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	progressMeterContested:setRGB( 1, 0.4, 0 )
 	progressMeterContested:setAlpha( 0 )
 	progressMeterContested:setImage( RegisterImage( 0xB1F550BBC41155E ) )
-	progressMeterContested:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD5CA1A25ED87F4F ) )
+	progressMeterContested:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	progressMeterContested:setShaderVector( 1, 0.5, 0, 0, 0 )
 	progressMeterContested:setShaderVector( 2, 0.5, 0, 0, 0 )
 	progressMeterContested:setShaderVector( 3, 0, 0, 0, 0 )

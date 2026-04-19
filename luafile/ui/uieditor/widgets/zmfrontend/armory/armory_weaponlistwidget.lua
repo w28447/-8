@@ -61,8 +61,8 @@ CoD.Armory_WeaponListWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	PCArrowL:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	PCArrowL:setZRot( 90 )
 	PCArrowL:setScale( 1.2, 1.2 )
-	PCArrowL.Arrow:setImage( RegisterImage( 0x5E74D00B45D12B6 ) )
-	PCArrowL.Arrow2:setImage( RegisterImage( 0x5E74D00B45D12B6 ) )
+	PCArrowL.Arrow:setImage( RegisterImage( "uie_optionswidgets_arrow" ) )
+	PCArrowL.Arrow2:setImage( RegisterImage( "uie_optionswidgets_arrow" ) )
 	PCArrowL:appendEventHandler( "input_source_changed", function ( f5_arg0, f5_arg1 )
 		f5_arg1.menu = f5_arg1.menu or f1_arg0
 		CoD.Menu.UpdateButtonShownState( f5_arg0, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
@@ -116,8 +116,8 @@ CoD.Armory_WeaponListWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	PCArrowR:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	PCArrowR:setZRot( 270 )
 	PCArrowR:setScale( 1.2, 1.2 )
-	PCArrowR.Arrow:setImage( RegisterImage( 0x5E74D00B45D12B6 ) )
-	PCArrowR.Arrow2:setImage( RegisterImage( 0x5E74D00B45D12B6 ) )
+	PCArrowR.Arrow:setImage( RegisterImage( "uie_optionswidgets_arrow" ) )
+	PCArrowR.Arrow2:setImage( RegisterImage( "uie_optionswidgets_arrow" ) )
 	PCArrowR:appendEventHandler( "input_source_changed", function ( f11_arg0, f11_arg1 )
 		f11_arg1.menu = f11_arg1.menu or f1_arg0
 		CoD.Menu.UpdateButtonShownState( f11_arg0, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
@@ -283,16 +283,16 @@ CoD.Armory_WeaponListWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		end
 	end, function ( f29_arg0, f29_arg1, f29_arg2 )
 		if IsElementPropertyValue( f29_arg1, "_loadoutSlot", CoD.ZMLoadoutUtility.StartWeaponLoadoutSlotName ) and not CoD.CACUtility.IsItemEquippedInCurrentLoadout( f29_arg1, f29_arg0, f29_arg2 ) and not CoD.CACUtility.IsCACItemLocked( f29_arg1, f29_arg0, f29_arg2 ) and not CoD.CACUtility.IsCACBlackMarketItemLocked( f29_arg1, f29_arg0, f29_arg2 ) and not CoD.CACUtility.HasSignatureWeapons( f29_arg1, f29_arg0, f29_arg2 ) then
-			CoD.Menu.SetButtonLabel( f29_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f29_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif IsElementPropertyValue( f29_arg1, "_loadoutSlot", CoD.ZMLoadoutUtility.StartWeaponLoadoutSlotName ) and not CoD.CACUtility.IsItemEquippedInCurrentLoadout( f29_arg1, f29_arg0, f29_arg2 ) and not CoD.CACUtility.IsCACItemLocked( f29_arg1, f29_arg0, f29_arg2 ) and not CoD.CACUtility.IsCACBlackMarketItemLocked( f29_arg1, f29_arg0, f29_arg2 ) and CoD.CACUtility.HasSignatureWeapons( f29_arg1, f29_arg0, f29_arg2 ) then
-			CoD.Menu.SetButtonLabel( f29_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f29_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif IsElementPropertyValue( f29_arg1, "_loadoutSlot", "armory" ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( f29_arg0, f29_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and not CoD.CACUtility.IsCACItemLocked( f29_arg1, f29_arg0, f29_arg2 ) and not CoD.CACUtility.IsCACBlackMarketItemLocked( f29_arg1, f29_arg0, f29_arg2 ) and CoD.CACUtility.DoesWeaponHaveAttachments( f29_arg0, f29_arg2 ) and not CoD.CACUtility.HasSignatureWeapons( f29_arg1, f29_arg0, f29_arg2 ) then
-			CoD.Menu.SetButtonLabel( f29_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f29_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif IsElementPropertyValue( f29_arg1, "_loadoutSlot", "armory" ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( f29_arg0, f29_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and not CoD.CACUtility.IsCACItemLocked( f29_arg1, f29_arg0, f29_arg2 ) and not CoD.CACUtility.IsCACBlackMarketItemLocked( f29_arg1, f29_arg0, f29_arg2 ) and CoD.CACUtility.DoesWeaponHaveAttachments( f29_arg0, f29_arg2 ) and CoD.CACUtility.HasSignatureWeapons( f29_arg1, f29_arg0, f29_arg2 ) then
-			CoD.Menu.SetButtonLabel( f29_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f29_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -485,7 +485,7 @@ CoD.Armory_WeaponListWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		CoD.CACUtility.HideWeaponVariantList( f56_arg1, f56_arg2 )
 		return true
 	end, function ( f57_arg0, f57_arg1, f57_arg2 )
-		CoD.Menu.SetButtonLabel( f57_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f57_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	self:addElement( WeaponVariantListWidget )

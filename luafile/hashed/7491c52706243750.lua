@@ -17,7 +17,7 @@ CoD.SpawnRegionName.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local DangerText = LUI.UIText.new( 0, 0, -39.5, 119.5, 0, 0, 68, 88 )
 	DangerText:setRGB( 1, 0, 0 )
 	DangerText:setAlpha( 0 )
-	DangerText:setText( Engine[0xF9F1239CFD921FE]( 0x57915A72383BA7C ) )
+	DangerText:setText( Engine[0xF9F1239CFD921FE]( "mpui/danger" ) )
 	DangerText:setTTF( "0arame_mono_stencil" )
 	DangerText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	DangerText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -61,7 +61,7 @@ CoD.SpawnRegionName.__resetProperties = function ( f2_arg0 )
 	f2_arg0.DangerText:setTopBottom( 0, 0, 68, 88 )
 	f2_arg0.DangerText:setRGB( 1, 0, 0 )
 	f2_arg0.DangerText:setAlpha( 0 )
-	f2_arg0.DangerText:setText( Engine[0xF9F1239CFD921FE]( 0x57915A72383BA7C ) )
+	f2_arg0.DangerText:setText( Engine[0xF9F1239CFD921FE]( "mpui/danger" ) )
 	f2_arg0.HardpointTimer:setLeftRight( 0, 0, 13.5, 66.5 )
 	f2_arg0.HardpointTimer:setTopBottom( 0, 0, 91.5, 128.5 )
 	f2_arg0.HardpointTimer:setAlpha( 0 )
@@ -120,7 +120,7 @@ CoD.SpawnRegionName.__clipsPerState = {
 			f6_arg0.DangerText:completeAnimation()
 			f6_arg0.DangerText:setRGB( 1, 0.61, 0 )
 			f6_arg0.DangerText:setAlpha( 0 )
-			f6_arg0.DangerText:setText( Engine[0xF9F1239CFD921FE]( 0xE1A66DD4446C000 ) )
+			f6_arg0.DangerText:setText( Engine[0xF9F1239CFD921FE]( "mpui/caution" ) )
 			f6_arg0.clipFinished( f6_arg0.DangerText )
 		end
 	},
@@ -136,7 +136,7 @@ CoD.SpawnRegionName.__clipsPerState = {
 			f7_arg0.DangerText:setTopBottom( 0, 0, 68, 88 )
 			f7_arg0.DangerText:setRGB( 1, 0, 0 )
 			f7_arg0.DangerText:setAlpha( 0 )
-			f7_arg0.DangerText:setText( Engine[0xF9F1239CFD921FE]( 0x57915A72383BA7C ) )
+			f7_arg0.DangerText:setText( Engine[0xF9F1239CFD921FE]( "mpui/danger" ) )
 			f7_arg0.clipFinished( f7_arg0.DangerText )
 		end
 	},
@@ -175,7 +175,7 @@ CoD.SpawnRegionName.__clipsPerState = {
 			f9_arg0.DangerText:setTopBottom( 0, 0, 69, 89 )
 			f9_arg0.DangerText:setRGB( 0.58, 0.58, 0.58 )
 			f9_arg0.DangerText:setAlpha( 0 )
-			f9_arg0.DangerText:setText( Engine[0xF9F1239CFD921FE]( 0xA1B60EEA7D768AB ) )
+			f9_arg0.DangerText:setText( Engine[0xF9F1239CFD921FE]( "mpui/unavailable" ) )
 			f9_arg0.clipFinished( f9_arg0.DangerText )
 		end
 	}

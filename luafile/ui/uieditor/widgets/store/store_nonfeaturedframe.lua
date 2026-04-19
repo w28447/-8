@@ -81,7 +81,7 @@ CoD.Store_NonFeaturedFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 		end
 	end, function ( f7_arg0, f7_arg1, f7_arg2 )
 		if CoD.ModelUtility.IsSelfModelValueEqualToEnum( f7_arg0, f7_arg2, "purchasestatus", Enum.StoreProductPurchaseStatus[0xFC232FC1AF749AA] ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x85952ACC6D0C1B0, nil, nil )
+			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/purchase", nil, nil )
 			return true
 		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( f7_arg0, f7_arg2, "purchasestatus", Enum.StoreProductPurchaseStatus[0xC3D2ED4AABEAE6C] ) then
 			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x4C69DA062697EC9, nil, nil )

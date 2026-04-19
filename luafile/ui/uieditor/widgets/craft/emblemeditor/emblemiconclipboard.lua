@@ -21,7 +21,7 @@ CoD.EmblemIconClipboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	self.Backing = Backing
 	
 	local NoiseTiledBacking2 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	NoiseTiledBacking2:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking2:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking2:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking2:setupNineSliceShader( 196, 88 )
@@ -30,7 +30,7 @@ CoD.EmblemIconClipboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local NoiseTiledBackingAdd = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBackingAdd:setAlpha( 0.2 )
-	NoiseTiledBackingAdd:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBackingAdd:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBackingAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	NoiseTiledBackingAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBackingAdd:setupNineSliceShader( 196, 88 )
@@ -144,8 +144,8 @@ CoD.EmblemIconClipboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local Frame = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	Frame:setAlpha( 0.2 )
-	Frame:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	Frame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	Frame:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	Frame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Frame:setShaderVector( 0, 0, 0, 0, 0 )
 	Frame:setupNineSliceShader( 16, 16 )
 	self:addElement( Frame )
@@ -210,7 +210,7 @@ CoD.EmblemIconClipboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	dividerH02 = LUI.UIImage.new( 0, 0, 1, 252, 0, 0, 237, 241 )
 	dividerH02:setAlpha( 0.2 )
-	dividerH02:setImage( RegisterImage( 0x84B43D5B04D263A ) )
+	dividerH02:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_line" ) )
 	dividerH02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	dividerH02:setShaderVector( 0, 0, 0, 0, 0 )
 	dividerH02:setupNineSliceShader( 8, 4 )
@@ -219,7 +219,7 @@ CoD.EmblemIconClipboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local dividerH03 = LUI.UIImage.new( 0, 0, 0, 252, 0, 0, 20, 24 )
 	dividerH03:setAlpha( 0.2 )
-	dividerH03:setImage( RegisterImage( 0x84B43D5B04D263A ) )
+	dividerH03:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_line" ) )
 	dividerH03:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	dividerH03:setShaderVector( 0, 0, 0, 0, 0 )
 	dividerH03:setupNineSliceShader( 8, 4 )

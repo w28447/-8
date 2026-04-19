@@ -53,7 +53,7 @@ CoD[0x3004F877224BD45].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local helmetVisor = LUI.UIImage.new( 0, 0, 635, 771, 0, 0, 0, 88 )
 	helmetVisor:setAlpha( 0.8 )
 	helmetVisor:setImage( RegisterImage( 0x3BC31BAB27E9B18 ) )
-	helmetVisor:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	helmetVisor:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	helmetVisor:setShaderVector( 0, 0, 1, 0, 0 )
 	helmetVisor:setShaderVector( 1, 0, 0, 0, 0 )
 	helmetVisor:setShaderVector( 2, 0, 1, 0, 0 )
@@ -66,7 +66,7 @@ CoD[0x3004F877224BD45].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	helmetVisor2:setRGB( 0.47, 0.69, 0.89 )
 	helmetVisor2:setAlpha( 0.25 )
 	helmetVisor2:setImage( RegisterImage( 0x3BC31BAB27E9B18 ) )
-	helmetVisor2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	helmetVisor2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	helmetVisor2:setShaderVector( 0, 0.19, 0.31, 0, 0 )
 	helmetVisor2:setShaderVector( 1, 0.04, 0.04, 0, 0 )
 	helmetVisor2:setShaderVector( 2, 0, 1, 0, 0 )
@@ -83,7 +83,7 @@ CoD[0x3004F877224BD45].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local light = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	light:setImage( RegisterImage( 0x9115CE4FE6BFC9C ) )
-	light:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	light:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( light )
 	self.light = light
 	

@@ -53,14 +53,14 @@ CoD.TabbedScoreboardRowSelected.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local SelectedFrameNeutral2 = LUI.UIImage.new( 0, 0, -7.5, 692.5, 0, 0, -9, 69 )
 	SelectedFrameNeutral2:setRGB( 0.85, 0.85, 0.85 )
 	SelectedFrameNeutral2:setImage( RegisterImage( 0xC6D8034A245ACD9 ) )
-	SelectedFrameNeutral2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	SelectedFrameNeutral2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( SelectedFrameNeutral2 )
 	self.SelectedFrameNeutral2 = SelectedFrameNeutral2
 	
 	local SelectedFrameNeutral3 = LUI.UIImage.new( 0, 0, -7.5, 692.5, 0, 0, -9, 69 )
 	SelectedFrameNeutral3:setRGB( 0.85, 0.85, 0.85 )
 	SelectedFrameNeutral3:setImage( RegisterImage( 0xC6D8034A245ACD9 ) )
-	SelectedFrameNeutral3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	SelectedFrameNeutral3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( SelectedFrameNeutral3 )
 	self.SelectedFrameNeutral3 = SelectedFrameNeutral3
 	

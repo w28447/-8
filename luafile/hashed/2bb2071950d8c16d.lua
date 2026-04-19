@@ -12,8 +12,8 @@ CoD.WarScoreInfo_StageNotification.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local CenterBacking = LUI.UIImage.new( 0, 0, -35, 253, 0, 0, 0, 60 )
 	CenterBacking:setRGB( 0, 0, 0 )
-	CenterBacking:setImage( RegisterImage( 0x29650B288B2244E ) )
-	CenterBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	CenterBacking:setImage( RegisterImage( "uie_hud_common_core_score_centerbar" ) )
+	CenterBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	CenterBacking:setShaderVector( 0, 0.85, 1, 0, 0 )
 	CenterBacking:setShaderVector( 1, 0, 0, 0, 0 )
 	CenterBacking:setShaderVector( 2, 0, 1, 0, 0 )
@@ -29,7 +29,7 @@ CoD.WarScoreInfo_StageNotification.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	self.ObjectiveProgressionFrame = ObjectiveProgressionFrame
 	
 	local FuelCellIcon = LUI.UIImage.new( 0, 0, 199, 259, 0, 0, -2, 58 )
-	FuelCellIcon:setImage( RegisterImage( 0xA2E06D7D10CEEFF ) )
+	FuelCellIcon:setImage( RegisterImage( "uie_hud_common_core_score_waricon" ) )
 	self:addElement( FuelCellIcon )
 	self.FuelCellIcon = FuelCellIcon
 	
@@ -67,7 +67,7 @@ CoD.WarScoreInfo_StageNotification.__resetProperties = function ( f2_arg0 )
 	f2_arg0.ObjectiveProgressionFrame:completeAnimation()
 	f2_arg0.ContestedText:completeAnimation()
 	f2_arg0.CenterBacking:setAlpha( 1 )
-	f2_arg0.CenterBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	f2_arg0.CenterBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	f2_arg0.CenterBacking:setShaderVector( 0, 0.85, 1, 0, 0 )
 	f2_arg0.CenterBacking:setShaderVector( 1, 0, 0, 0, 0 )
 	f2_arg0.CenterBacking:setShaderVector( 2, 0, 1, 0, 0 )
@@ -92,7 +92,7 @@ CoD.WarScoreInfo_StageNotification.__clipsPerState = {
 			f3_arg0:__resetProperties()
 			f3_arg0:setupElementClipCounter( 3 )
 			f3_arg0.CenterBacking:completeAnimation()
-			f3_arg0.CenterBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+			f3_arg0.CenterBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 			f3_arg0.CenterBacking:setShaderVector( 0, 0, 1, 0, 0 )
 			f3_arg0.CenterBacking:setShaderVector( 1, 0, 0, 0, 0 )
 			f3_arg0.CenterBacking:setShaderVector( 2, 0, 1, 0, 0 )
@@ -120,7 +120,7 @@ CoD.WarScoreInfo_StageNotification.__clipsPerState = {
 			
 			f4_arg0.CenterBacking:completeAnimation()
 			f4_arg0.CenterBacking:setAlpha( 1 )
-			f4_arg0.CenterBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+			f4_arg0.CenterBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 			f4_arg0.CenterBacking:setShaderVector( 0, 0, 1, 0, 0 )
 			f4_arg0.CenterBacking:setShaderVector( 1, 0, 0, 0, 0 )
 			f4_arg0.CenterBacking:setShaderVector( 2, 0, 1, 0, 0 )
@@ -177,7 +177,7 @@ CoD.WarScoreInfo_StageNotification.__clipsPerState = {
 			
 			f10_arg0.CenterBacking:completeAnimation()
 			f10_arg0.CenterBacking:setAlpha( 1 )
-			f10_arg0.CenterBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+			f10_arg0.CenterBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 			f10_arg0.CenterBacking:setShaderVector( 0, 0, 1, 0, 0 )
 			f10_arg0.CenterBacking:setShaderVector( 1, 0, 0, 0, 0 )
 			f10_arg0.CenterBacking:setShaderVector( 2, 0, 1, 0, 0 )
@@ -228,7 +228,7 @@ CoD.WarScoreInfo_StageNotification.__clipsPerState = {
 			f16_arg0:__resetProperties()
 			f16_arg0:setupElementClipCounter( 4 )
 			f16_arg0.CenterBacking:completeAnimation()
-			f16_arg0.CenterBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+			f16_arg0.CenterBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 			f16_arg0.CenterBacking:setShaderVector( 0, 0.85, 1, 0, 0 )
 			f16_arg0.CenterBacking:setShaderVector( 1, 0, 0, 0, 0 )
 			f16_arg0.CenterBacking:setShaderVector( 2, 0, 1, 0, 0 )
@@ -257,7 +257,7 @@ CoD.WarScoreInfo_StageNotification.__clipsPerState = {
 			
 			f17_arg0.CenterBacking:completeAnimation()
 			f17_arg0.CenterBacking:setAlpha( 1 )
-			f17_arg0.CenterBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+			f17_arg0.CenterBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 			f17_arg0.CenterBacking:setShaderVector( 0, 0.85, 1, 0, 0 )
 			f17_arg0.CenterBacking:setShaderVector( 1, 0, 0, 0, 0 )
 			f17_arg0.CenterBacking:setShaderVector( 2, 0, 1, 0, 0 )
@@ -308,7 +308,7 @@ CoD.WarScoreInfo_StageNotification.__clipsPerState = {
 			f23_arg0:__resetProperties()
 			f23_arg0:setupElementClipCounter( 4 )
 			f23_arg0.CenterBacking:completeAnimation()
-			f23_arg0.CenterBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+			f23_arg0.CenterBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 			f23_arg0.CenterBacking:setShaderVector( 0, 0, 0.16, 0, 0 )
 			f23_arg0.CenterBacking:setShaderVector( 1, 0, 0, 0, 0 )
 			f23_arg0.CenterBacking:setShaderVector( 2, 0, 1, 0, 0 )
@@ -338,7 +338,7 @@ CoD.WarScoreInfo_StageNotification.__clipsPerState = {
 			end
 			
 			f24_arg0.CenterBacking:completeAnimation()
-			f24_arg0.CenterBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+			f24_arg0.CenterBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 			f24_arg0.CenterBacking:setShaderVector( 0, 0, 1, 0, 0 )
 			f24_arg0.CenterBacking:setShaderVector( 1, 0, 0, 0, 0 )
 			f24_arg0.CenterBacking:setShaderVector( 2, 0, 1, 0, 0 )
@@ -389,7 +389,7 @@ CoD.WarScoreInfo_StageNotification.__clipsPerState = {
 			f30_arg0:__resetProperties()
 			f30_arg0:setupElementClipCounter( 4 )
 			f30_arg0.CenterBacking:completeAnimation()
-			f30_arg0.CenterBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+			f30_arg0.CenterBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 			f30_arg0.CenterBacking:setShaderVector( 0, 0, 1, 0, 0 )
 			f30_arg0.CenterBacking:setShaderVector( 1, 0, 0, 0, 0 )
 			f30_arg0.CenterBacking:setShaderVector( 2, 0, 1, 0, 0 )

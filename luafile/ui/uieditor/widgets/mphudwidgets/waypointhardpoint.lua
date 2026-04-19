@@ -225,7 +225,7 @@ CoD.WaypointHardpoint.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	WaypointPatternClock:setRGB( 0.25, 0.25, 0.25 )
 	WaypointPatternClock:setAlpha( 0.92 )
 	WaypointPatternClock:setImage( RegisterImage( 0x159D9B7B7294C91 ) )
-	WaypointPatternClock:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD5CA1A25ED87F4F ) )
+	WaypointPatternClock:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	WaypointPatternClock:setShaderVector( 1, 0.5, 0, 0, 0 )
 	WaypointPatternClock:setShaderVector( 2, 0.5, 0, 0, 0 )
 	WaypointPatternClock:setShaderVector( 3, 0, 0, 0, 0 )

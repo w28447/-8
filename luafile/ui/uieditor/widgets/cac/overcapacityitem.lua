@@ -19,7 +19,7 @@ CoD.OverCapacityItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local NoiseBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseBacking:setAlpha( 0.5 )
-	NoiseBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseBacking:setupNineSliceShader( 196, 88 )
 	self:addElement( NoiseBacking )
 	self.NoiseBacking = NoiseBacking

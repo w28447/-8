@@ -23,7 +23,7 @@ CoD[0x8CBCB769802AC5B].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local smoke = LUI.UIImage.new( 0, 0, -20, 524, 0, 0, -16, 240 )
 	smoke:setImage( RegisterImage( 0xB3CDBE67C7CBE36 ) )
-	smoke:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	smoke:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( smoke )
 	self.smoke = smoke
 	
@@ -31,7 +31,7 @@ CoD[0x8CBCB769802AC5B].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	smoke2:setAlpha( 0 )
 	smoke2:setScale( 1.5, 1.5 )
 	smoke2:setImage( RegisterImage( 0xB3CDBE67C7CBE36 ) )
-	smoke2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	smoke2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( smoke2 )
 	self.smoke2 = smoke2
 	

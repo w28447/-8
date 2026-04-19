@@ -16,7 +16,7 @@ CoD.CodCasterLoadoutEquipmentBackground.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local CodCasterLoadoutEquipmentBackground = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 0, 76 )
 	CodCasterLoadoutEquipmentBackground:setImage( RegisterImage( 0x6237BCC6F1A8D53 ) )
-	CodCasterLoadoutEquipmentBackground:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	CodCasterLoadoutEquipmentBackground:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	CodCasterLoadoutEquipmentBackground:setShaderVector( 0, 0, 0, 0, 0 )
 	CodCasterLoadoutEquipmentBackground:setupNineSliceShader( 55, 38 )
 	self:addElement( CodCasterLoadoutEquipmentBackground )

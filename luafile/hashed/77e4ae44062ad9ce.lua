@@ -110,7 +110,7 @@ CoD.Barracks_StatsOverview.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.EKIA = EKIA
 	
 	local Deaths = CoD.PlayerStatsDetailed.new( f1_arg0, f1_arg1, 0, 0, 164, 466, 0, 0, 215, 236 )
-	Deaths.StatHeaderText:setText( LocalizeToUpperString( 0x13CE1B89172BB60 ) )
+	Deaths.StatHeaderText:setText( LocalizeToUpperString( "mpui/deaths" ) )
 	Deaths.StatValue.__Stat_Value = function ()
 		Deaths.StatValue:setText( CoD.PlayerStatsUtility.GetPlayerStorageStat( f1_arg0, 0x6ED920648D707FA, 11235 ) )
 	end

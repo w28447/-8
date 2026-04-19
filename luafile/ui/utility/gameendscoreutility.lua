@@ -215,7 +215,7 @@ CoD.GameEndScoreUtility.GetChallengeCoinImage = function ( f14_arg0 )
 	if f14_local1 and f14_local1.PlayerStatsByGameType and f14_local1.PlayerStatsByGameType[f14_local0] then
 		return Engine[0x450462A7BEA79E5]( f14_local1.PlayerStatsByGameType[f14_local0].WINS.StatValue:get() )
 	else
-		return 0x7615068F50B3D66
+		return "blacktransparent"
 	end
 end
 
@@ -360,7 +360,7 @@ CoD.GameEndScoreUtility.SetupTransition = function ( f18_arg0, f18_arg1 )
 				f18_local4.challengeCoinImage:set( CoD.GameEndScoreUtility.GetChallengeCoinImage( f18_local0 ) )
 				f18_local4.currentState:set( "outcome" )
 			else
-				f18_local4.challengeCoinImage:set( 0x7615068F50B3D66 )
+				f18_local4.challengeCoinImage:set( "blacktransparent" )
 				if not f18_local4.hasShownEliminationScreen:get() and not CoD.HUDUtility.IsGameTypeEqualToString( "warzone_pandemic_quad" ) then
 					f18_local4.hasShownEliminationScreen:set( true )
 					f18_local4.postEliminationGameState:set( "defeat" )
@@ -554,7 +554,7 @@ CoD.GameEndScoreUtility.SetEliminatorData = function ( f22_arg0, f22_arg1 )
 		f22_local6 = f22_local7.previewImageLarge
 	end
 	local f22_local8 = 0x0
-	local f22_local9 = 0x7615068F50B3D66
+	local f22_local9 = "blacktransparent"
 	local f22_local10 = CoD.HUDUtility.GetModInfo( f22_local1 )
 	if f22_local10 then
 		f22_local8 = f22_local10[0x55F116BF695C8F6]
@@ -710,7 +710,7 @@ CoD.GameEndScoreUtility.InitializeUIModels = function ( f25_arg0 )
 	f25_local1 = f25_local0:create( "postEliminationGameState" )
 	f25_local1:set( "" )
 	f25_local1 = f25_local0:create( "challengeCoinImage" )
-	f25_local1:set( 0x7615068F50B3D66 )
+	f25_local1:set( "blacktransparent" )
 	for f25_local1 = 1, CoD.GameEndScoreUtility.MaxTeamPoseClients, 1 do
 		f25_local0:create( "winningTeamTopScorer" .. f25_local1 )
 	end
@@ -885,7 +885,7 @@ DataSources.HighValueOperatives = DataSourceHelpers.ListSetup( "HighValueOperati
 		local f34_local6 = f34_local0
 		local f34_local1 = f34_arg0[0x3CD44D4A96C9C93]
 		if not f34_local1 then
-			f34_local1 = f34_local6 or 0x7615068F50B3D66
+			f34_local1 = f34_local6 or "blacktransparent"
 		end
 		return f34_local1
 	end
@@ -982,7 +982,7 @@ end
 
 CoD.GameEndScoreUtility.GetEliminatedString = function ( f44_arg0, f44_arg1 )
 	if f44_arg1 == 0 then
-		return 0x2C79EA24AB1A2BA
+		return "null/empty"
 	else
 		return 0xDB82AD88E0752FB
 	end

@@ -601,11 +601,11 @@ DataSources.ZMLaboratoryNPItemList = {
 			local f43_local2 = {
 				skuID = f43_arg1[0x6B65B4278C6C417] or 0,
 				dropType = f43_arg1[0xEDB75385C6DDD64] or 0,
-				icon = f43_arg1[0xE4B82BD24F5B464] or 0x7615068F50B3D66,
+				icon = f43_arg1[0xE4B82BD24F5B464] or "blacktransparent",
 				name = f43_local0,
-				labelName = f43_arg1[0x55AD41F50CB5DE5] or 0x2C79EA24AB1A2BA,
+				labelName = f43_arg1[0x55AD41F50CB5DE5] or "null/empty",
 				displayName = f43_arg1[0x291A06FDF27E479] or 0,
-				description = f43_arg1[0x5B85280BBC19A6A] or 0x2C79EA24AB1A2BA,
+				description = f43_arg1[0x5B85280BBC19A6A] or "null/empty",
 				plasmaPrice = f43_arg1[0xF7B25E757280D58] or 0,
 				price = f43_arg1[0x4A555CF71B7907A] or 0
 			}
@@ -669,7 +669,7 @@ DataSources.ZMLaboratoryNPItemList = {
 						f42_local0( f42_local2, f42_local8, f42_local7, true, CoD.ZMLaboratoryUtility.PurchasePlasmaOrCoDPoints, {
 							openedDirectly = true,
 							amount = f42_local8[0x291A06FDF27E479] or 0,
-							image = f42_local8[0xE4B82BD24F5B464] or 0x7615068F50B3D66
+							image = f42_local8[0xE4B82BD24F5B464] or "blacktransparent"
 						}, CoD.LaboratoryListItemNebuliumPlasmaDiscount, 1, 3, "AutoEvents.autoevent_laboratory_special_offer_" .. f42_local4 .. "_timer" )
 					end
 				end
@@ -836,8 +836,8 @@ DataSources.PlasmaConfirmationButtonList = ListHelper_SetupDataSource( "PlasmaCo
 	local f58_local0 = {}
 	table.insert( f58_local0, {
 		models = {
-			displayText = 0x85952ACC6D0C1B0,
-			displayImage = 0x7615068F50B3D66
+			displayText = "menu/purchase",
+			displayImage = "blacktransparent"
 		},
 		properties = {
 			action = SetWorkingStateAndPurchaseDWSKU,
@@ -848,8 +848,8 @@ DataSources.PlasmaConfirmationButtonList = ListHelper_SetupDataSource( "PlasmaCo
 	} )
 	table.insert( f58_local0, {
 		models = {
-			displayText = 0xC2E92C54C2BE289,
-			displayImage = 0x7615068F50B3D66
+			displayText = "menu/cancel",
+			displayImage = "blacktransparent"
 		},
 		properties = {
 			action = function ( f59_arg0, f59_arg1, f59_arg2, f59_arg3, f59_arg4 )
@@ -863,7 +863,7 @@ local f0_local0 = CoD.OverlayUtility.AddSystemOverlay
 local f0_local1 = "NotEnoughNPPopup"
 local f0_local2 = {
 	menuName = "SystemOverlay_Compact",
-	title = 0xDFE20BB2A710F9C,
+	title = "zmui/not_enough_plasma",
 	description = function ( f60_arg0, f60_arg1 )
 		return Engine[0xF9F1239CFD921FE]( 0x19A39FF477A7A0F, f60_arg1.npRequired - Engine[0xF40679B550DCCA2]( f60_arg0, CoD.Currencies.ZM_NEBULIUM_PLASMA ) )
 	end,
@@ -877,7 +877,7 @@ local f0_local2 = {
 			local f62_local3 = Engine[0xF9F1239CFD921FE]
 			local f62_local4
 			if not CoD.isPC then
-				f62_local4 = 0xC2E92C54C2BE289
+				f62_local4 = "menu/cancel"
 				if not f62_local4 then
 				
 				else
@@ -892,7 +892,7 @@ local f0_local2 = {
 					return f62_local0
 				end
 			end
-			f62_local4 = 0x6C253CF816B40B5
+			f62_local4 = "menu/close"
 		end, true, nil )
 		return "NotEnoughNPPopupButtonList"
 	end
@@ -916,7 +916,7 @@ if not CoD.isPC then
 else
 	
 end
-f0_local2[f0_local3] = 0x6C253CF816B40B5
+f0_local2[f0_local3] = "menu/close"
 f0_local0( f0_local1, f0_local2 )
 CoD.OverlayUtility.AddSystemOverlay( "LaboratoryTimedOutPopup", {
 	menuName = "SystemOverlay_Compact",
@@ -935,7 +935,7 @@ CoD.OverlayUtility.AddSystemOverlay( "LaboratoryTimedOutPopup", {
 			return {
 				{
 					models = {
-						displayText = Engine[0xF9F1239CFD921FE]( 0xC2E92C54C2BE289 )
+						displayText = Engine[0xF9F1239CFD921FE]( "menu/cancel" )
 					},
 					properties = {
 						action = function ( f70_arg0, f70_arg1, f70_arg2, f70_arg3, f70_arg4 )

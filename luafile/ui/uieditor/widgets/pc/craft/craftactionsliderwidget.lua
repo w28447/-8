@@ -13,8 +13,8 @@ CoD.CraftActionSliderWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local Frame = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -2, 2 )
 	Frame:setRGB( 0.2, 0.2, 0.2 )
 	Frame:setAlpha( 0.5 )
-	Frame:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	Frame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	Frame:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	Frame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Frame:setShaderVector( 0, 0, 0, 0, 0 )
 	Frame:setupNineSliceShader( 16, 16 )
 	self:addElement( Frame )
@@ -36,7 +36,7 @@ CoD.CraftActionSliderWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local dividerH03 = LUI.UIImage.new( 0, 0, 0, 315, 0, 0, 31.5, 36.5 )
 	dividerH03:setAlpha( 0.1 )
-	dividerH03:setImage( RegisterImage( 0x84B43D5B04D263A ) )
+	dividerH03:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_line" ) )
 	dividerH03:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	dividerH03:setShaderVector( 0, 0, 0, 0, 0 )
 	dividerH03:setupNineSliceShader( 8, 4 )
@@ -45,7 +45,7 @@ CoD.CraftActionSliderWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local dividerH = LUI.UIImage.new( 0, 0, 0, 315, 0, 0, 58.5, 63.5 )
 	dividerH:setAlpha( 0.1 )
-	dividerH:setImage( RegisterImage( 0x84B43D5B04D263A ) )
+	dividerH:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_line" ) )
 	dividerH:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	dividerH:setShaderVector( 0, 0, 0, 0, 0 )
 	dividerH:setupNineSliceShader( 8, 4 )

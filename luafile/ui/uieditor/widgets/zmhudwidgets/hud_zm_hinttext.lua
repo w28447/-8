@@ -16,7 +16,7 @@ CoD.Hud_ZM_HintText.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	ZMHintText:setBackingColor( 0, 0, 0 )
 	ZMHintText:setBackingXPadding( 7 )
 	ZMHintText:setBackingYPadding( 7 )
-	ZMHintText:setBackingImage( RegisterImage( 0x75D661B612187DF ) )
+	ZMHintText:setBackingImage( RegisterImage( "uie_objbg" ) )
 	self:addElement( ZMHintText )
 	self.ZMHintText = ZMHintText
 	

@@ -25,7 +25,7 @@ CoD.StartMenu_Barracks_WZ_WinRecordWidget.new = function ( f1_arg0, f1_arg1, f1_
 	
 	local WinCount = LUI.UIText.new( 0, 0, 261, 461, 0.5, 0.5, -7.5, 37.5 )
 	WinCount:setRGB( 0.69, 0.56, 0.04 )
-	WinCount:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	WinCount:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	WinCount:setTTF( "ttmussels_demibold" )
 	WinCount:setLetterSpacing( 3 )
 	WinCount:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -34,7 +34,7 @@ CoD.StartMenu_Barracks_WZ_WinRecordWidget.new = function ( f1_arg0, f1_arg1, f1_
 	
 	local GametypeTitle = LUI.UIText.new( 0, 0, 261, 461, 0.5, 0.5, -35.5, -10.5 )
 	GametypeTitle:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	GametypeTitle:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	GametypeTitle:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	GametypeTitle:setTTF( "ttmussels_regular" )
 	GametypeTitle:setLetterSpacing( 2 )
 	GametypeTitle:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

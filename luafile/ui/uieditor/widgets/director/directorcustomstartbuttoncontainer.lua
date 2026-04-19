@@ -71,7 +71,7 @@ CoD.DirectorCustomStartButtonContainer.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local PlayText = LUI.UIText.new( 0, 0, 0, 520, 0, 0, 16.5, 53.5 )
 	PlayText:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	PlayText:setText( LocalizeToUpperString( 0xDDDA371285672BD ) )
+	PlayText:setText( LocalizeToUpperString( "menu/play" ) )
 	PlayText:setTTF( "ttmussels_demibold" )
 	PlayText:setLetterSpacing( 6 )
 	PlayText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

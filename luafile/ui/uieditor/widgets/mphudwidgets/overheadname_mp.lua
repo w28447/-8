@@ -196,7 +196,7 @@ CoD.OverheadName_MP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	FlashWhite:setRGB( 0.66, 0.28, 0.28 )
 	FlashWhite:setAlpha( 0 )
 	FlashWhite:setImage( RegisterImage( 0x8FEB6143419D031 ) )
-	FlashWhite:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	FlashWhite:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FlashWhite )
 	self.FlashWhite = FlashWhite
 	
@@ -204,14 +204,14 @@ CoD.OverheadName_MP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	FlashRed:setRGB( ColorSet.T8__RED.r, ColorSet.T8__RED.g, ColorSet.T8__RED.b )
 	FlashRed:setAlpha( 0 )
 	FlashRed:setImage( RegisterImage( 0x8FEB6143419D031 ) )
-	FlashRed:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	FlashRed:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FlashRed )
 	self.FlashRed = FlashRed
 	
 	local Flash = LUI.UIImage.new( 0.5, 0.5, -56.5, 81.5, 0.5, 0.5, -21.5, -11.5 )
 	Flash:setRGB( ColorSet.EnemyOrange_Bright.r, ColorSet.EnemyOrange_Bright.g, ColorSet.EnemyOrange_Bright.b )
 	Flash:setAlpha( 0 )
-	Flash:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Flash:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Flash )
 	self.Flash = Flash
 	
@@ -220,7 +220,7 @@ CoD.OverheadName_MP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	GlowBloom:setAlpha( 0 )
 	GlowBloom:setScale( 0, 0 )
 	GlowBloom:setImage( RegisterImage( 0x4AEE67767498FE4 ) )
-	GlowBloom:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	GlowBloom:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowBloom )
 	self.GlowBloom = GlowBloom
 	

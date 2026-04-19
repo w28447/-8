@@ -20,13 +20,13 @@ CoD.WarzoneMapKeyItemWithPlayerIcon.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	self.ControllerDependentTextBox = ControllerDependentTextBox
 	
 	local Image = LUI.UIImage.new( 0, 0, 10, 46, 0, 0, 2, 38 )
-	Image:setMaterial( LUI.UIImage.GetCachedMaterial( 0x67D1E3A3D2D1BF ) )
+	Image:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_saturation_normal" ) )
 	Image:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Image )
 	self.Image = Image
 	
 	local Action = LUI.UIText.new( 0, 0, 56, 226, 0, 0, 7, 34 )
-	Action:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	Action:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	Action:setTTF( "ttmussels_regular" )
 	Action:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Action:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )
@@ -108,7 +108,7 @@ CoD.WarzoneMapKeyItemWithPlayerIcon.__resetProperties = function ( f9_arg0 )
 	f9_arg0.ControllerDependentTextBox:completeAnimation()
 	f9_arg0.Action:completeAnimation()
 	f9_arg0.Image:setAlpha( 1 )
-	f9_arg0.Image:setMaterial( LUI.UIImage.GetCachedMaterial( 0x67D1E3A3D2D1BF ) )
+	f9_arg0.Image:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_saturation_normal" ) )
 	f9_arg0.Image:setShaderVector( 0, 1, 0, 0, 0 )
 	f9_arg0.ControllerDependentTextBox:setLeftRight( 0, 0, 0, 0 )
 	f9_arg0.ControllerDependentTextBox:setTopBottom( 0, 0, 19, 41 )
@@ -148,7 +148,7 @@ CoD.WarzoneMapKeyItemWithPlayerIcon.__clipsPerState = {
 			f12_arg0:setupElementClipCounter( 2 )
 			f12_arg0.Image:completeAnimation()
 			f12_arg0.Image:setAlpha( 0.15 )
-			f12_arg0.Image:setMaterial( LUI.UIImage.GetCachedMaterial( 0x67D1E3A3D2D1BF ) )
+			f12_arg0.Image:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_saturation_normal" ) )
 			f12_arg0.Image:setShaderVector( 0, 0, 0, 0, 0 )
 			f12_arg0.clipFinished( f12_arg0.Image )
 			f12_arg0.Action:completeAnimation()

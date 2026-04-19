@@ -27,14 +27,14 @@ CoD.vhud_gunship_flare_dock.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local FlareStatusIndicator = LUI.UIImage.new( 0, 0, 16, 80, 0, 0, 45.5, 77.5 )
 	FlareStatusIndicator:setImage( RegisterImage( 0x782FDD85F2A6EE8 ) )
-	FlareStatusIndicator:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	FlareStatusIndicator:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FlareStatusIndicator )
 	self.FlareStatusIndicator = FlareStatusIndicator
 	
 	local FlareStatusIndicator2 = LUI.UIImage.new( 0, 0, 16, 80, 0, 0, 45.5, 77.5 )
 	FlareStatusIndicator2:setAlpha( 0.2 )
 	FlareStatusIndicator2:setImage( RegisterImage( 0x782FDD85F2A6EE8 ) )
-	FlareStatusIndicator2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	FlareStatusIndicator2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FlareStatusIndicator2 )
 	self.FlareStatusIndicator2 = FlareStatusIndicator2
 	

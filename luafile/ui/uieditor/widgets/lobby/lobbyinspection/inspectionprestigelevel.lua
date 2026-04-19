@@ -9,7 +9,7 @@ CoD.InspectionPrestigeLevel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local PrestigeText = LUI.UIText.new( 0, 0, 0, 200, 0, 0, 0, 21 )
 	PrestigeText:setRGB( 0.13, 0.78, 1 )
-	PrestigeText:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	PrestigeText:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	PrestigeText:setTTF( "dinnext_regular" )
 	PrestigeText:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )
 	PrestigeText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -18,7 +18,7 @@ CoD.InspectionPrestigeLevel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local PrestigeLevelNum = LUI.UIText.new( 0, 0, 200, 400, 0, 0, 0, 21 )
 	PrestigeLevelNum:setRGB( 0.13, 0.78, 1 )
-	PrestigeLevelNum:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	PrestigeLevelNum:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	PrestigeLevelNum:setTTF( "dinnext_regular" )
 	PrestigeLevelNum:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	PrestigeLevelNum:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

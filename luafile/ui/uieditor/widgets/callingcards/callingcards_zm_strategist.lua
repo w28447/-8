@@ -48,7 +48,7 @@ CoD[0xA4C1F72F3265625].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	zombieGlow:setRGB( 1, 0, 0 )
 	zombieGlow:setScale( 1.05, 1.05 )
 	zombieGlow:setImage( RegisterImage( 0x95A166D1F379C99 ) )
-	zombieGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	zombieGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( zombieGlow )
 	self.zombieGlow = zombieGlow
 	

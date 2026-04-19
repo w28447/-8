@@ -31,7 +31,7 @@ CoD.ContractItemCostMultiCurrency.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local divider = LUI.UIImage.new( 0, 0, 90.5, 94.5, 0, 0, -11.5, 32.5 )
 	divider:setImage( RegisterImage( 0x6DDA4086EA0EF02 ) )
-	divider:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	divider:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( divider )
 	self.divider = divider
 	

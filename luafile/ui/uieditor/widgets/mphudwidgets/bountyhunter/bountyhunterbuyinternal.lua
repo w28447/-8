@@ -39,7 +39,7 @@ CoD.BountyHunterBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local NoiseTiledBacking = LUI.UIImage.new( 0.5, 0.5, -893.5, 893.5, 0.5, 0.5, -374.5, 440.5 )
 	NoiseTiledBacking:setRGB( 0.52, 0.52, 0.52 )
 	NoiseTiledBacking:setAlpha( 0.65 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -187,7 +187,7 @@ CoD.BountyHunterBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		end
 	end, function ( f6_arg0, f6_arg1, f6_arg2 )
 		if CoD.BountyHunterUtility.IsBuyMenuVisible( self ) and not IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -236,7 +236,7 @@ CoD.BountyHunterBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		end
 	end, function ( f10_arg0, f10_arg1, f10_arg2 )
 		if CoD.BountyHunterUtility.IsBuyMenuVisible( self ) and not IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -269,7 +269,7 @@ CoD.BountyHunterBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		end
 	end, function ( f14_arg0, f14_arg1, f14_arg2 )
 		if CoD.BountyHunterUtility.IsBuyMenuVisible( self ) and not IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -302,7 +302,7 @@ CoD.BountyHunterBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		end
 	end, function ( f18_arg0, f18_arg1, f18_arg2 )
 		if CoD.BountyHunterUtility.IsBuyMenuVisible( self ) and not IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -335,7 +335,7 @@ CoD.BountyHunterBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		end
 	end, function ( f22_arg0, f22_arg1, f22_arg2 )
 		if CoD.BountyHunterUtility.IsBuyMenuVisible( self ) and not IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -474,8 +474,8 @@ CoD.BountyHunterBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local HorizAccentTop = LUI.UIImage.new( 0.5, 0.5, -870, 870, 0.5, 0.5, -388, -380 )
 	HorizAccentTop:setAlpha( 0.15 )
-	HorizAccentTop:setImage( RegisterImage( 0xFE30A9AF719A400 ) )
-	HorizAccentTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	HorizAccentTop:setImage( RegisterImage( "uie_ui_hud_common_line_accent01" ) )
+	HorizAccentTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	HorizAccentTop:setShaderVector( 0, 0, 0, 0, 0 )
 	HorizAccentTop:setupNineSliceShader( 8, 4 )
 	self:addElement( HorizAccentTop )
@@ -483,8 +483,8 @@ CoD.BountyHunterBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local HorizAccentTL = LUI.UIImage.new( 0.5, 0.5, -896, -876, 0.5, 0.5, -388, -380 )
 	HorizAccentTL:setAlpha( 0.07 )
-	HorizAccentTL:setImage( RegisterImage( 0xFE30A9AF719A400 ) )
-	HorizAccentTL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	HorizAccentTL:setImage( RegisterImage( "uie_ui_hud_common_line_accent01" ) )
+	HorizAccentTL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	HorizAccentTL:setShaderVector( 0, 0, 0, 0, 0 )
 	HorizAccentTL:setupNineSliceShader( 8, 4 )
 	self:addElement( HorizAccentTL )
@@ -492,8 +492,8 @@ CoD.BountyHunterBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local HorizAccentTR = LUI.UIImage.new( 0.5, 0.5, 874.5, 894.5, 0.5, 0.5, -388, -380 )
 	HorizAccentTR:setAlpha( 0.07 )
-	HorizAccentTR:setImage( RegisterImage( 0xFE30A9AF719A400 ) )
-	HorizAccentTR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	HorizAccentTR:setImage( RegisterImage( "uie_ui_hud_common_line_accent01" ) )
+	HorizAccentTR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	HorizAccentTR:setShaderVector( 0, 0, 0, 0, 0 )
 	HorizAccentTR:setupNineSliceShader( 8, 4 )
 	self:addElement( HorizAccentTR )
@@ -501,8 +501,8 @@ CoD.BountyHunterBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local HorizAccentBtm = LUI.UIImage.new( 0.5, 0.5, -870, 870, 0.5, 0.5, 447, 455 )
 	HorizAccentBtm:setAlpha( 0.15 )
-	HorizAccentBtm:setImage( RegisterImage( 0xFE30A9AF719A400 ) )
-	HorizAccentBtm:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	HorizAccentBtm:setImage( RegisterImage( "uie_ui_hud_common_line_accent01" ) )
+	HorizAccentBtm:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	HorizAccentBtm:setShaderVector( 0, 0, 0, 0, 0 )
 	HorizAccentBtm:setupNineSliceShader( 8, 4 )
 	self:addElement( HorizAccentBtm )
@@ -510,8 +510,8 @@ CoD.BountyHunterBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local HorizAccentBL = LUI.UIImage.new( 0.5, 0.5, -896, -876, 0.5, 0.5, 447, 455 )
 	HorizAccentBL:setAlpha( 0.07 )
-	HorizAccentBL:setImage( RegisterImage( 0xFE30A9AF719A400 ) )
-	HorizAccentBL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	HorizAccentBL:setImage( RegisterImage( "uie_ui_hud_common_line_accent01" ) )
+	HorizAccentBL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	HorizAccentBL:setShaderVector( 0, 0, 0, 0, 0 )
 	HorizAccentBL:setupNineSliceShader( 8, 4 )
 	self:addElement( HorizAccentBL )
@@ -519,8 +519,8 @@ CoD.BountyHunterBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local HorizAccentBR = LUI.UIImage.new( 0.5, 0.5, 874.5, 894.5, 0.5, 0.5, 447, 455 )
 	HorizAccentBR:setAlpha( 0.07 )
-	HorizAccentBR:setImage( RegisterImage( 0xFE30A9AF719A400 ) )
-	HorizAccentBR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	HorizAccentBR:setImage( RegisterImage( "uie_ui_hud_common_line_accent01" ) )
+	HorizAccentBR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	HorizAccentBR:setShaderVector( 0, 0, 0, 0, 0 )
 	HorizAccentBR:setupNineSliceShader( 8, 4 )
 	self:addElement( HorizAccentBR )
@@ -528,7 +528,7 @@ CoD.BountyHunterBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local LinePattern01 = LUI.UIImage.new( 0.5, 0.5, -868.5, 868.5, 0.5, 0.5, 458, 470 )
 	LinePattern01:setAlpha( 0.02 )
-	LinePattern01:setImage( RegisterImage( 0x6281F7B12FC1F02 ) )
+	LinePattern01:setImage( RegisterImage( "uie_hud_common_stripe_pattern01" ) )
 	LinePattern01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	LinePattern01:setShaderVector( 0, 0, 0, 0, 0 )
 	LinePattern01:setupNineSliceShader( 24, 12 )
@@ -537,8 +537,8 @@ CoD.BountyHunterBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local BarAccentLeft = LUI.UIImage.new( 0.5, 0.5, -951, -907, 0.5, 0.5, 27.5, 40.5 )
 	BarAccentLeft:setAlpha( 0.07 )
-	BarAccentLeft:setImage( RegisterImage( 0xFE30A9AF719A400 ) )
-	BarAccentLeft:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	BarAccentLeft:setImage( RegisterImage( "uie_ui_hud_common_line_accent01" ) )
+	BarAccentLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	BarAccentLeft:setShaderVector( 0, 0, 0, 0, 0 )
 	BarAccentLeft:setupNineSliceShader( 8, 2 )
 	self:addElement( BarAccentLeft )
@@ -546,8 +546,8 @@ CoD.BountyHunterBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local BarAccentRight = LUI.UIImage.new( 0.5, 0.5, 901, 945, 0.5, 0.5, 27.5, 40.5 )
 	BarAccentRight:setAlpha( 0.07 )
-	BarAccentRight:setImage( RegisterImage( 0xFE30A9AF719A400 ) )
-	BarAccentRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	BarAccentRight:setImage( RegisterImage( "uie_ui_hud_common_line_accent01" ) )
+	BarAccentRight:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	BarAccentRight:setShaderVector( 0, 0, 0, 0, 0 )
 	BarAccentRight:setupNineSliceShader( 8, 2 )
 	self:addElement( BarAccentRight )

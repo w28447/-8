@@ -754,7 +754,7 @@ function GetRankOrParagonIcon( f102_arg0, f102_arg1, f102_arg2, f102_arg3, f102_
 end
 
 function GetRankIconLarge( f103_arg0 )
-	if not f103_arg0 or f103_arg0 == "" or f103_arg0 == 0x0 or f103_arg0 == 0x7615068F50B3D66 or f103_arg0 == 0x214ECBA8C04D44C then
+	if not f103_arg0 or f103_arg0 == "" or f103_arg0 == 0x0 or f103_arg0 == "blacktransparent" or f103_arg0 == 0x214ECBA8C04D44C then
 		return 0x214ECBA8C04D44C
 	else
 		return f103_arg0 .. "_large"
@@ -788,7 +788,7 @@ function PresenceToModeString( f105_arg0 )
 	elseif f105_local0 >= Enum[0x4BBA402DE649132][0x5EEADE3AFEF0F50] and f105_local0 <= Enum[0x4BBA402DE649132][0xAE1F1FC5A87498E] then
 		return 0x7D527CD96A3419
 	else
-		return 0x2C79EA24AB1A2BA
+		return "null/empty"
 	end
 end
 
@@ -797,7 +797,7 @@ function StickyPartyStatusToString( f106_arg0 )
 	if f106_local0 ~= nil then
 		return f106_local0
 	else
-		return 0x2C79EA24AB1A2BA
+		return "null/empty"
 	end
 end
 
@@ -1375,7 +1375,7 @@ function GetHudImageFromItemRefHash( f173_arg0, f173_arg1 )
 end
 
 function GetHudDisplayNameFromItemIndex( f174_arg0 )
-	return Engine[0xB680D2B7BFC8098]( Engine[0xB98952F69D937F9]( f174_arg0 ) .. "_" .. string.lower( CoD.gameMode ), Engine.CurrentSessionMode() ) or 0x2C79EA24AB1A2BA
+	return Engine[0xB680D2B7BFC8098]( Engine[0xB98952F69D937F9]( f174_arg0 ) .. "_" .. string.lower( CoD.gameMode ), Engine.CurrentSessionMode() ) or "null/empty"
 end
 
 function GetItemImageByIndexAndMode( f175_arg0, f175_arg1 )

@@ -135,7 +135,7 @@ LUI.createMenu.Barracks_Medals = function ( f1_arg0, f1_arg1 )
 		ClearMenuSavedState( f13_arg1 )
 		return true
 	end, function ( f14_arg0, f14_arg1, f14_arg2 )
-		CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, "ESCAPE" )
+		CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 		return true
 	end, false )
 	MedalTabsInternal.id = "MedalTabsInternal"

@@ -85,7 +85,7 @@ LUI.createMenu.FirstTimeBrightnessSetting = function ( f3_arg0, f3_arg1 )
 	local continueButton = CoD.GenericClickButton.new( f3_local1, f3_arg0, 0, 0, 938, 1141, 0, 0, 943, 1003 )
 	continueButton:setAlpha( 0 )
 	continueButton:setZoom( 50 )
-	continueButton.label:setText( Engine[0xF9F1239CFD921FE]( 0x6393FF34EA56966 ) )
+	continueButton.label:setText( Engine[0xF9F1239CFD921FE]( "menu/continue" ) )
 	self:addElement( continueButton )
 	self.continueButton = continueButton
 	

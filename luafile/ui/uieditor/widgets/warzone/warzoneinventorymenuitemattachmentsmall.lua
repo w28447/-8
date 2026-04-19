@@ -23,7 +23,7 @@ CoD.WarzoneInventoryMenuItemAttachmentSmall.new = function ( f1_arg0, f1_arg1, f
 	local NotAvailable = LUI.UIImage.new( 0.5, 0.5, -25, 25, 0.5, 0.5, -25, 25 )
 	NotAvailable:setAlpha( 0 )
 	NotAvailable:setImage( RegisterImage( 0xB1FCC7EA3552F5A ) )
-	NotAvailable:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	NotAvailable:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( NotAvailable )
 	self.NotAvailable = NotAvailable
 	

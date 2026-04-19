@@ -12,7 +12,7 @@ CoD.PC_TabsArrow.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	Arrow:setRGB( 0.78, 0.74, 0.67 )
 	Arrow:setZRot( 180 )
 	Arrow:setScale( 0.4, 0.4 )
-	Arrow:setImage( RegisterImage( 0x5E74D00B45D12B6 ) )
+	Arrow:setImage( RegisterImage( "uie_optionswidgets_arrow" ) )
 	self:addElement( Arrow )
 	self.Arrow = Arrow
 	

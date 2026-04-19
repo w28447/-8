@@ -56,7 +56,7 @@ CoD.ChooseClassLockedOverlay.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local NoiseTiledBacking = LUI.UIImage.new( -0.1, 1.1, 0, 0, 0, 0, 539.5, 1079.5 )
 	NoiseTiledBacking:setRGB( 0.65, 0.65, 0.65 )
 	NoiseTiledBacking:setAlpha( 0.9 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -80,7 +80,7 @@ CoD.ChooseClassLockedOverlay.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local TiledBacking = LUI.UIImage.new( 0.5, 0.5, -594.5, 594.5, 0, 0, 600, 950 )
 	TiledBacking:setAlpha( 0.95 )
-	TiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking:setupNineSliceShader( 196, 88 )
@@ -90,7 +90,7 @@ CoD.ChooseClassLockedOverlay.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local GridTiled = LUI.UIImage.new( 0.5, 0.5, -210, 593, 0.5, 0.5, 62, 408 )
 	GridTiled:setAlpha( 0.1 )
 	GridTiled:setScale( 1.01, 1.01 )
-	GridTiled:setImage( RegisterImage( 0xCA386792563DE8 ) )
+	GridTiled:setImage( RegisterImage( "uie_ui_menu_store_bg_grid" ) )
 	GridTiled:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	GridTiled:setShaderVector( 0, 0, 0, 0, 0 )
 	GridTiled:setupNineSliceShader( 64, 64 )
@@ -114,14 +114,14 @@ CoD.ChooseClassLockedOverlay.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local DescriptionTint2 = LUI.UIImage.new( 0, 0, 365.5, 746.5, 0, 0, 601, 951 )
 	DescriptionTint2:setRGB( 0.39, 0.39, 0.39 )
 	DescriptionTint2:setAlpha( 0.04 )
-	DescriptionTint2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DescriptionTint2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DescriptionTint2 )
 	self.DescriptionTint2 = DescriptionTint2
 	
 	local DescriptionTint = LUI.UIImage.new( 0, 0, 779, 1522, 0, 0, 730, 794 )
 	DescriptionTint:setRGB( 0.39, 0.39, 0.39 )
 	DescriptionTint:setAlpha( 0.07 )
-	DescriptionTint:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DescriptionTint:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DescriptionTint )
 	self.DescriptionTint = DescriptionTint
 	
@@ -158,7 +158,7 @@ CoD.ChooseClassLockedOverlay.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.DotCorner9Slice = DotCorner9Slice
 	
 	local LockImage = LUI.UIImage.new( 0, 0, 779, 843, 0, 0, 730, 794 )
-	LockImage:setImage( RegisterImage( 0xE1E7C490B2BA4FB ) )
+	LockImage:setImage( RegisterImage( "uie_ui_icon_global_lock" ) )
 	self:addElement( LockImage )
 	self.LockImage = LockImage
 	
@@ -166,14 +166,14 @@ CoD.ChooseClassLockedOverlay.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	BotBarAdd:setAlpha( 0.8 )
 	BotBarAdd:setZRot( 90 )
 	BotBarAdd:setImage( RegisterImage( 0x5AD5487D499ECDD ) )
-	BotBarAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	BotBarAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BotBarAdd )
 	self.BotBarAdd = BotBarAdd
 	
 	local LayoutTopBar = LUI.UIImage.new( 0.5, 0.5, -594.5, 594.5, 0, 0, 578, 598 )
 	LayoutTopBar:setAlpha( 0.5 )
-	LayoutTopBar:setImage( RegisterImage( 0x1426C1694668EB3 ) )
-	LayoutTopBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	LayoutTopBar:setImage( RegisterImage( "uie_ui_menu_specialist_hub_layout_topbar" ) )
+	LayoutTopBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	LayoutTopBar:setShaderVector( 0, 0, 0, 0, 0 )
 	LayoutTopBar:setupNineSliceShader( 6, 6 )
 	self:addElement( LayoutTopBar )
@@ -181,14 +181,14 @@ CoD.ChooseClassLockedOverlay.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local LayoutBotStripe = LUI.UIImage.new( 0.5, 0.5, -594, 594, 0, 0, 953.5, 981.5 )
 	LayoutBotStripe:setAlpha( 0.4 )
-	LayoutBotStripe:setImage( RegisterImage( 0x36E1590316DA74B ) )
-	LayoutBotStripe:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	LayoutBotStripe:setImage( RegisterImage( "uie_ui_menu_specialist_hub_stripe_bot" ) )
+	LayoutBotStripe:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( LayoutBotStripe )
 	self.LayoutBotStripe = LayoutBotStripe
 	
 	local RankIcon = LUI.UIImage.new( 0, 0, 395.5, 715.5, 0, 0, 615, 935 )
 	RankIcon.__Image = function ()
-		RankIcon:setImage( RegisterImage( CoD.CACUtility.GetUnlockRankIconLargeForFeature( f1_arg0, 0x21793BE97AC0B5A ) ) )
+		RankIcon:setImage( RegisterImage( CoD.CACUtility.GetUnlockRankIconLargeForFeature( f1_arg0, "ui_icon_rank_mp_level01_large" ) ) )
 	end
 	
 	RankIcon.__Image()

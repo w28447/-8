@@ -24,7 +24,7 @@ CoD.Rush_Gameover_Scoreboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local Col1Label = LUI.UIText.new( 0, 0, 277.5, 402.5, 0, 0, 7, 28 )
 	Col1Label:setRGB( 0, 0, 0 )
 	Col1Label:setAlpha( 0.5 )
-	Col1Label:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	Col1Label:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	Col1Label:setTTF( "skorzhen" )
 	Col1Label:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Col1Label:setAlignment( Enum.LUIAlignment[0x6ED4298C93DC5ED] )
@@ -32,7 +32,7 @@ CoD.Rush_Gameover_Scoreboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.Col1Label = Col1Label
 	
 	local Col1LabelShadow = LUI.UIText.new( 0, 0, 274.5, 399.5, 0, 0, 4, 25 )
-	Col1LabelShadow:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	Col1LabelShadow:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	Col1LabelShadow:setTTF( "skorzhen" )
 	Col1LabelShadow:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Col1LabelShadow:setAlignment( Enum.LUIAlignment[0x6ED4298C93DC5ED] )
@@ -42,7 +42,7 @@ CoD.Rush_Gameover_Scoreboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local Col2Label = LUI.UIText.new( 0, 0, 419.5, 544.5, 0, 0, 8, 29 )
 	Col2Label:setRGB( 0, 0, 0 )
 	Col2Label:setAlpha( 0.5 )
-	Col2Label:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	Col2Label:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	Col2Label:setTTF( "skorzhen" )
 	Col2Label:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	Col2Label:setAlignment( Enum.LUIAlignment[0x70510683C22104B] )
@@ -50,7 +50,7 @@ CoD.Rush_Gameover_Scoreboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.Col2Label = Col2Label
 	
 	local Col2LabelShadow = LUI.UIText.new( 0, 0, 419.5, 544.5, 0, 0, 3, 24 )
-	Col2LabelShadow:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	Col2LabelShadow:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	Col2LabelShadow:setTTF( "skorzhen" )
 	Col2LabelShadow:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	Col2LabelShadow:setAlignment( Enum.LUIAlignment[0x6ED4298C93DC5ED] )
@@ -60,7 +60,7 @@ CoD.Rush_Gameover_Scoreboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local Col3Label = LUI.UIText.new( 0, 0, 544.5, 669.5, 0, 0, 7, 28 )
 	Col3Label:setRGB( 0, 0, 0 )
 	Col3Label:setAlpha( 0.5 )
-	Col3Label:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	Col3Label:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	Col3Label:setTTF( "skorzhen" )
 	Col3Label:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	Col3Label:setAlignment( Enum.LUIAlignment[0x70510683C22104B] )
@@ -68,7 +68,7 @@ CoD.Rush_Gameover_Scoreboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.Col3Label = Col3Label
 	
 	local Col3LabelShadow = LUI.UIText.new( 0, 0, 544.5, 669.5, 0, 0, 4, 25 )
-	Col3LabelShadow:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	Col3LabelShadow:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	Col3LabelShadow:setTTF( "skorzhen" )
 	Col3LabelShadow:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	Col3LabelShadow:setAlignment( Enum.LUIAlignment[0x6ED4298C93DC5ED] )
@@ -78,7 +78,7 @@ CoD.Rush_Gameover_Scoreboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local Col4Label = LUI.UIText.new( 0, 0, 684.5, 809.5, 0, 0, 7, 28 )
 	Col4Label:setRGB( 0, 0, 0 )
 	Col4Label:setAlpha( 0.5 )
-	Col4Label:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	Col4Label:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	Col4Label:setTTF( "skorzhen" )
 	Col4Label:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	Col4Label:setAlignment( Enum.LUIAlignment[0x70510683C22104B] )
@@ -86,7 +86,7 @@ CoD.Rush_Gameover_Scoreboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.Col4Label = Col4Label
 	
 	local Col4LabelShadow = LUI.UIText.new( 0, 0, 683.5, 808.5, 0, 0, 4, 25 )
-	Col4LabelShadow:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	Col4LabelShadow:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	Col4LabelShadow:setTTF( "skorzhen" )
 	Col4LabelShadow:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	Col4LabelShadow:setAlignment( Enum.LUIAlignment[0x6ED4298C93DC5ED] )
@@ -96,7 +96,7 @@ CoD.Rush_Gameover_Scoreboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local Col5Label = LUI.UIText.new( 0, 0, 835.5, 960.5, 0, 0, 7, 28 )
 	Col5Label:setRGB( 0, 0, 0 )
 	Col5Label:setAlpha( 0.5 )
-	Col5Label:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	Col5Label:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	Col5Label:setTTF( "skorzhen" )
 	Col5Label:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	Col5Label:setAlignment( Enum.LUIAlignment[0x6ED4298C93DC5ED] )
@@ -104,7 +104,7 @@ CoD.Rush_Gameover_Scoreboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.Col5Label = Col5Label
 	
 	local Col5LabelShadow = LUI.UIText.new( 0, 0, 836.5, 961.5, 0, 0, 4, 25 )
-	Col5LabelShadow:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	Col5LabelShadow:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	Col5LabelShadow:setTTF( "skorzhen" )
 	Col5LabelShadow:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	Col5LabelShadow:setAlignment( Enum.LUIAlignment[0x6ED4298C93DC5ED] )

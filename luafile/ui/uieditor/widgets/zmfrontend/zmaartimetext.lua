@@ -9,7 +9,7 @@ CoD.ZMAARTimeText.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local MatchTimeText = LUI.UIText.new( 1, 1, -200, 0, 0, 0, 0, 33 )
-	MatchTimeText:setText( LocalizeToUpperString( 0xBD36CB2DA85CF8C ) )
+	MatchTimeText:setText( LocalizeToUpperString( "zmui/match_time" ) )
 	MatchTimeText:setTTF( "skorzhen" )
 	MatchTimeText:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )
 	self:addElement( MatchTimeText )
@@ -59,7 +59,7 @@ CoD.ZMAARTimeText.__resetProperties = function ( f6_arg0 )
 	f6_arg0.MatchTimeText:completeAnimation()
 	f6_arg0.MatchTimeText:setLeftRight( 1, 1, -200, 0 )
 	f6_arg0.MatchTimeText:setAlpha( 1 )
-	f6_arg0.MatchTimeText:setText( LocalizeToUpperString( 0xBD36CB2DA85CF8C ) )
+	f6_arg0.MatchTimeText:setText( LocalizeToUpperString( "zmui/match_time" ) )
 	f6_arg0.MatchTimeText:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )
 end
 

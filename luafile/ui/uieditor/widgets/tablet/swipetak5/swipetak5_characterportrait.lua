@@ -142,7 +142,7 @@ CoD.SwipeTak5_CharacterPortrait.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local FrameTop = LUI.UIImage.new( 0, 0, -2.5, 105.5, 0, 0, -2, 14 )
 	FrameTop:setImage( RegisterImage( 0x7722C79022535EA ) )
-	FrameTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrameTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrameTop:setShaderVector( 0, 0, 0, 0, 0 )
 	FrameTop:setupNineSliceShader( 6, 8 )
 	self:addElement( FrameTop )
@@ -150,7 +150,7 @@ CoD.SwipeTak5_CharacterPortrait.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local FrameBot = LUI.UIImage.new( 0, 0, -2.5, 105.5, 0, 0, 20.5, 148.5 )
 	FrameBot:setImage( RegisterImage( 0x31697F38A66BF80 ) )
-	FrameBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	FrameBot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	FrameBot:setShaderVector( 0, 0, 0, 0, 0 )
 	FrameBot:setupNineSliceShader( 6, 64 )
 	self:addElement( FrameBot )
@@ -158,13 +158,13 @@ CoD.SwipeTak5_CharacterPortrait.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local FrameEmpty = LUI.UIImage.new( 0, 0, -3, 105, 0, 0, -2, 150 )
 	FrameEmpty:setImage( RegisterImage( 0xEDBCC4C2BFA3899 ) )
-	FrameEmpty:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	FrameEmpty:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FrameEmpty )
 	self.FrameEmpty = FrameEmpty
 	
 	local FrameEmptyX = LUI.UIImage.new( 0, 0, -2.5, 105.5, 0, 0, -2, 130 )
 	FrameEmptyX:setImage( RegisterImage( 0xE2EEDF188DF80EB ) )
-	FrameEmptyX:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	FrameEmptyX:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FrameEmptyX )
 	self.FrameEmptyX = FrameEmptyX
 	
@@ -184,7 +184,7 @@ CoD.SwipeTak5_CharacterPortrait.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.OperatorIndicator = OperatorIndicator
 	
 	local RepeatLine = LUI.UIImage.new( 0, 0, 0, 102, 0, 0, 127, 131 )
-	RepeatLine:setImage( RegisterImage( 0x84B43D5B04D263A ) )
+	RepeatLine:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_line" ) )
 	RepeatLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	RepeatLine:setShaderVector( 0, 0, 0, 0, 0 )
 	RepeatLine:setupNineSliceShader( 8, 4 )

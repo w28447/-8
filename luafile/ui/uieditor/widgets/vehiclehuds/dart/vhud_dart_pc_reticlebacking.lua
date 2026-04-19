@@ -50,7 +50,7 @@ CoD.vhud_dart_PC_reticleBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local CenterReticleCircleBlurRGB = LUI.UIImage.new( 0.5, 0.5, -116, 116, 0.5, 0.5, -118, 114 )
 	CenterReticleCircleBlurRGB:setAlpha( 0.5 )
 	CenterReticleCircleBlurRGB:setImage( RegisterImage( 0x2A55E154C88B2CC ) )
-	CenterReticleCircleBlurRGB:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	CenterReticleCircleBlurRGB:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CenterReticleCircleBlurRGB )
 	self.CenterReticleCircleBlurRGB = CenterReticleCircleBlurRGB
 	

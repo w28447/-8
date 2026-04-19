@@ -51311,7 +51311,7 @@ tracer,d#hash_568fc1ebcf9023d3
 tracer,d#hash_56f045ae9b61e985
 tracer,#shotgun
 tracer,#hash_75093ab7b848ed32
-scriptbundlelist,#hash_7c54326d486ccc9a
+scriptbundlelist,#laboratory_offer_list
 ttf,d#hash_32f4bc842302dae
 ttf,d#hash_2d5f2cb911698667
 ttf,d#hash_6872c9b44ecd89cf
@@ -52852,7 +52852,7 @@ entityfximpacts,#hash_65d8afe94aa036c7
 scriptbundle,d#scene_frontend_t8_helicopter
 scriptbundle,d#scene_frontend_t8_helicopter_fem
 scriptbundle,d#scene_frontend_t8_bruno
-scriptbundlelist,#hash_5f2dc7a2fe7eedc5
+scriptbundlelist,#weaponcharm_list
 statuseffect,d#suppress_uber
 beam,d#hash_1bd14d49b1754a1
 beam,d#hash_1c400d49b1d5153
@@ -54296,4 +54296,4 @@ vehicle,#veh_mini_turret_zm
 scriptbundle,#weapondeathfx_fireworks
 playerroletemplate,d#prt_zm_bruno
 customizationtable,d#hash_28eccb19213dbb36
-scriptbundlelist,#hash_a8f031f7c7b2ed8
+scriptbundlelist,#weapondeathfx_list

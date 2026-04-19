@@ -13,7 +13,7 @@ CoD.TabletTak5_ConnectionText.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local ConnectionText = LUI.UIText.new( 0, 0, 0, 160, 0, 0, 6, 29 )
 	ConnectionText:setAlpha( 0 )
-	ConnectionText:setText( LocalizeToUpperString( 0x41441168C405322 ) )
+	ConnectionText:setText( LocalizeToUpperString( "mpui/linked" ) )
 	ConnectionText:setTTF( "dinnext_regular" )
 	ConnectionText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	ConnectionText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -22,7 +22,7 @@ CoD.TabletTak5_ConnectionText.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local ConnectionAdd = LUI.UIText.new( 0, 0, 0, 160, 0, 0, 6, 29 )
 	ConnectionAdd:setAlpha( 0 )
-	ConnectionAdd:setText( LocalizeToUpperString( 0x41441168C405322 ) )
+	ConnectionAdd:setText( LocalizeToUpperString( "mpui/linked" ) )
 	ConnectionAdd:setTTF( "dinnext_regular" )
 	ConnectionAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x336C1AE82B1520A ) )
 	ConnectionAdd:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

@@ -23,7 +23,7 @@ CoD.ScoreInfoEscortRobotObjective.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.HealthBacking = HealthBacking
 	
 	local Health = LUI.UIImage.new( 0, 0, 18, 58, 0, 0, 19, 59 )
-	Health:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD5CA1A25ED87F4F ) )
+	Health:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	Health:setShaderVector( 1, 0.5, 0, 0, 0 )
 	Health:setShaderVector( 2, 0.5, 0, 0, 0 )
 	Health:setShaderVector( 3, 0, 0, 0, 0 )

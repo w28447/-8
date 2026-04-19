@@ -101,10 +101,10 @@ CoD.MPSpecialistHUBGesturesInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 		end
 	end, function ( f11_arg0, f11_arg1, f11_arg2 )
 		if not IsPC() and CoD.ModelUtility.IsSelfModelValueTrue( f11_arg0, f11_arg2, "owned" ) and not CoD.ModelUtility.IsSelfModelValueTrue( f11_arg0, f11_arg2, "trialLocked" ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif IsPC() and CoD.ModelUtility.IsSelfModelValueTrue( f11_arg0, f11_arg2, "owned" ) and not CoD.ModelUtility.IsSelfModelValueTrue( f11_arg0, f11_arg2, "trialLocked" ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

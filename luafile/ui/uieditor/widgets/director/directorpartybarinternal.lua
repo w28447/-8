@@ -18,14 +18,14 @@ CoD.DirectorPartyBarInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	PartyBarGlow3:setRGB( 0, 0.08, 0.61 )
 	PartyBarGlow3:setAlpha( 0.5 )
 	PartyBarGlow3:setImage( RegisterImage( 0x51DBC58C5B3B71 ) )
-	PartyBarGlow3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	PartyBarGlow3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PartyBarGlow3 )
 	self.PartyBarGlow3 = PartyBarGlow3
 	
 	local PartyBar = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	PartyBar:setRGB( 0.02, 0.29, 0.49 )
 	PartyBar:setImage( RegisterImage( 0x51DBC58C5B3B71 ) )
-	PartyBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x67D1E3A3D2D1BF ) )
+	PartyBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_saturation_normal" ) )
 	PartyBar:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( PartyBar )
 	self.PartyBar = PartyBar
@@ -33,7 +33,7 @@ CoD.DirectorPartyBarInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local PartyBarGlow = LUI.UIImage.new( -0.4, 1.4, 0, 0, 0, 1, 0, 0 )
 	PartyBarGlow:setRGB( 0, 0.03, 0.2 )
 	PartyBarGlow:setImage( RegisterImage( 0x51DBC58C5B3B71 ) )
-	PartyBarGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	PartyBarGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PartyBarGlow )
 	self.PartyBarGlow = PartyBarGlow
 	
@@ -41,7 +41,7 @@ CoD.DirectorPartyBarInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	PartyBarhotspot:setRGB( 0, 0.56, 1 )
 	PartyBarhotspot:setAlpha( 0.5 )
 	PartyBarhotspot:setImage( RegisterImage( 0x489CCF0AA805F92 ) )
-	PartyBarhotspot:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	PartyBarhotspot:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PartyBarhotspot )
 	self.PartyBarhotspot = PartyBarhotspot
 	

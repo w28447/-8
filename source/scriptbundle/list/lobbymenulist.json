@@ -1,0 +1,8 @@
+{
+    "name": "#lobbymenulist",
+    "type": "lobbymenu",
+    "bundles": [
+        "#main",
+        "#director_lan_select"
+    ]
+}

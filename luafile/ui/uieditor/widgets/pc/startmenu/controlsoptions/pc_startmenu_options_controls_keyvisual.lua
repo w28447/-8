@@ -10,7 +10,7 @@ CoD.PC_StartMenu_Options_Controls_KeyVisual.new = function ( f1_arg0, f1_arg1, f
 	
 	local KeyText = LUI.UIText.new( 0, 1, 8, -8, 0, 0, 6.5, 30.5 )
 	KeyText:setRGB( 0.92, 0.92, 0.92 )
-	KeyText:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	KeyText:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	KeyText:setTTF( "notosans_regular" )
 	KeyText:setLetterSpacing( 1 )
 	KeyText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

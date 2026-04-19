@@ -1,4 +1,4 @@
-require( "x64:6abd6dcfe95863d" )
+require( "ui/uieditor/menus/itemshop/itemshopconfirmation" )
 require( "ui/uieditor/menus/itemshop/purchasecodpoints" )
 require( "ui/uieditor/menus/lobby/common/popups/vodviewer" )
 require( "ui/uieditor/menus/mp/specialisthub/mpspecialisthubpreviewmoment" )
@@ -37,7 +37,7 @@ LUI.createMenu.BlackMarketBountyDetails = function ( f1_arg0, f1_arg1 )
 	self.BMBountyRequirementContainer = BMBountyRequirementContainer
 	
 	local GenericMenuFrameIdentity = CoD.GenericMenuFrameIdentity.new( f1_local1, f1_arg0, 0.5, 0.5, -960, 960, 0, 1, 0, 0 )
-	GenericMenuFrameIdentity.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x29C903C6DF90D6F ) )
+	GenericMenuFrameIdentity.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/black_market" ) )
 	GenericMenuFrameIdentity:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then
@@ -403,16 +403,16 @@ LUI.createMenu.BlackMarketBountyDetails = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f45_arg0, f45_arg1, f45_arg2 )
 		if CanPurchaseItem( f45_arg2, self ) and IsInDefaultState( self ) then
-			CoD.Menu.SetButtonLabel( f45_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f45_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif CanPurchaseItem( f45_arg2, self ) and IsElementInState( self, "SubItems" ) then
-			CoD.Menu.SetButtonLabel( f45_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f45_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif IsInDefaultState( self ) then
-			CoD.Menu.SetButtonLabel( f45_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f45_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif IsElementInState( self, "SubItems" ) then
-			CoD.Menu.SetButtonLabel( f45_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f45_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -445,7 +445,7 @@ LUI.createMenu.BlackMarketBountyDetails = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f48_arg0, f48_arg1, f48_arg2 )
 		if IsInDefaultState( f48_arg0 ) then
-			CoD.Menu.SetButtonLabel( f48_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f48_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -469,7 +469,7 @@ LUI.createMenu.BlackMarketBountyDetails = function ( f1_arg0, f1_arg1 )
 		GoBack( self, f51_arg2 )
 		return true
 	end, function ( f52_arg0, f52_arg1, f52_arg2 )
-		CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_contextual_3", function ( f53_arg0, f53_arg1, f53_arg2, f53_arg3 )

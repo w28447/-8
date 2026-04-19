@@ -90,7 +90,7 @@ CoD.SlotsUsedWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	self.usedBar = usedBar
 	
 	local alertTriangle = LUI.UIImage.new( 0, 0, 2, 26, 0, 0, 68, 92 )
-	alertTriangle:setImage( RegisterImage( 0x1F10DEAAEFC50A4 ) )
+	alertTriangle:setImage( RegisterImage( "uie_hud_common_core_score_waricon" ) )
 	self:addElement( alertTriangle )
 	self.alertTriangle = alertTriangle
 	
@@ -119,8 +119,8 @@ CoD.SlotsUsedWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local BracketTop = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 27, 35 )
 	BracketTop:setAlpha( 0.2 )
 	BracketTop:setZRot( 180 )
-	BracketTop:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	BracketTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	BracketTop:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	BracketTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BracketTop:setShaderVector( 0, 0, 0, 0, 0 )
 	BracketTop:setupNineSliceShader( 16, 4 )
 	self:addElement( BracketTop )
@@ -128,8 +128,8 @@ CoD.SlotsUsedWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local BracketBottom = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 58, 66 )
 	BracketBottom:setAlpha( 0.2 )
-	BracketBottom:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	BracketBottom:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	BracketBottom:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	BracketBottom:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BracketBottom:setShaderVector( 0, 0, 0, 0, 0 )
 	BracketBottom:setupNineSliceShader( 16, 4 )
 	self:addElement( BracketBottom )

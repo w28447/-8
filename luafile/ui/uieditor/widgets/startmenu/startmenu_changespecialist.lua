@@ -156,10 +156,10 @@ CoD.StartMenu_ChangeSpecialist.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 		end
 	end, function ( f14_arg0, f14_arg1, f14_arg2 )
 		if CoD.PlayerRoleUtility.IsSpecialistSelectable( f14_arg0, f14_arg2 ) and not IsElementInState( f14_arg0, "Unavailable" ) and not IsElementInState( f14_arg0, "UnavailablePC" ) and not IsPC() then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_confirm" )
 			return true
 		elseif CoD.PlayerRoleUtility.IsSpecialistSelectable( f14_arg0, f14_arg2 ) and not IsElementInState( f14_arg0, "Unavailable" ) and not IsElementInState( f14_arg0, "UnavailablePC" ) and IsPC() then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -180,8 +180,8 @@ CoD.StartMenu_ChangeSpecialist.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	ChangeClassButtonPC = CoD.DirectorGenericButton.new( f1_arg0, f1_arg1, 0.5, 0.5, -125, 125, 1, 1, -300, -208 )
 	ChangeClassButtonPC:setScale( 0.8, 0.8 )
-	ChangeClassButtonPC.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( 0x83E3BA6F8C2DB04 ) )
-	ChangeClassButtonPC.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( 0x83E3BA6F8C2DB04 ) )
+	ChangeClassButtonPC.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( "mpui/change_class" ) )
+	ChangeClassButtonPC.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( "mpui/change_class" ) )
 	local f1_local6 = ChangeClassButtonPC
 	local f1_local7 = ChangeClassButtonPC.subscribeToModel
 	local SignatureAbility = Engine.GetModelForController( f1_arg1 )

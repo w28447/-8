@@ -13,7 +13,7 @@ CoD.vhud_ms_FrameTopRightxml.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	Image0:setAlpha( 0.06 )
 	Image0:setZoom( -40 )
 	Image0:setImage( RegisterImage( 0xC5B13A17382E497 ) )
-	Image0:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Image0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image0 )
 	self.Image0 = Image0
 	
@@ -21,7 +21,7 @@ CoD.vhud_ms_FrameTopRightxml.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	msTopFrameRight:setRGB( 0.74, 0.94, 0.99 )
 	msTopFrameRight:setAlpha( 0.5 )
 	msTopFrameRight:setImage( RegisterImage( 0x1A70057476A845F ) )
-	msTopFrameRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	msTopFrameRight:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( msTopFrameRight )
 	self.msTopFrameRight = msTopFrameRight
 	

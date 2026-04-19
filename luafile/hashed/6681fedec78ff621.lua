@@ -36,7 +36,7 @@ CoD.PC_Korea_Event_Week_Reward.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local RewardImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	RewardImage:setImage( RegisterImage( 0xCA98E2B6402251C ) )
-	RewardImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x98A2728B4675FB5 ) )
+	RewardImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_glint" ) )
 	RewardImage:setShaderVector( 0, -0.11, 0, 0, 0 )
 	RewardImage:setShaderVector( 1, -46.8, 0, 0, 0 )
 	self:addElement( RewardImage )
@@ -62,7 +62,7 @@ CoD.PC_Korea_Event_Week_Reward.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local LockIcon = LUI.UIImage.new( 0.5, 0.5, -15, 17, 0.5, 0.5, -16, 16 )
 	LockIcon:setAlpha( 0 )
-	LockIcon:setImage( RegisterImage( 0xB8AD8D12CEB707D ) )
+	LockIcon:setImage( RegisterImage( "uie_icon_locks_lock_01" ) )
 	self:addElement( LockIcon )
 	self.LockIcon = LockIcon
 	

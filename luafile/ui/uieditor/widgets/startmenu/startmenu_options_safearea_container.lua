@@ -23,7 +23,7 @@ CoD.StartMenu_Options_SafeArea_Container.new = function ( f1_arg0, f1_arg1, f1_a
 	PCBackingBackground = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	PCBackingBackground:setRGB( 0.69, 0.69, 0.69 )
 	PCBackingBackground:setAlpha( 0 )
-	PCBackingBackground:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	PCBackingBackground:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PCBackingBackground )
 	self.PCBackingBackground = PCBackingBackground
 	

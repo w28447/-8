@@ -17,13 +17,13 @@ CoD.AttackerVictimInfoBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local versus_backing_right = LUI.UIImage.new( 0, 0, 960, 1920, 0, 0, 0, 180 )
 	versus_backing_right:setRGB( 0.1, 0.1, 0.1 )
 	versus_backing_right:setZRot( 180 )
-	versus_backing_right:setImage( RegisterImage( 0x57BF858D15699B4 ) )
+	versus_backing_right:setImage( RegisterImage( "uie_ui_hud_spawnselect_versus_backing" ) )
 	self:addElement( versus_backing_right )
 	self.versus_backing_right = versus_backing_right
 	
 	local versus_backing_left = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 180 )
 	versus_backing_left:setRGB( 0.1, 0.1, 0.1 )
-	versus_backing_left:setImage( RegisterImage( 0x57BF858D15699B4 ) )
+	versus_backing_left:setImage( RegisterImage( "uie_ui_hud_spawnselect_versus_backing" ) )
 	self:addElement( versus_backing_left )
 	self.versus_backing_left = versus_backing_left
 	
@@ -35,7 +35,7 @@ CoD.AttackerVictimInfoBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local IdentityBackerVictim = LUI.UIImage.new( 0, 0, 1279, 1735, 0, 0, 0, 180 )
 	IdentityBackerVictim:setRGB( 0, 0, 0 )
-	IdentityBackerVictim:setImage( RegisterImage( 0xF5C02167B78BCD4 ) )
+	IdentityBackerVictim:setImage( RegisterImage( "uie_ui_hud_spawnselect_identity_backing" ) )
 	self:addElement( IdentityBackerVictim )
 	self.IdentityBackerVictim = IdentityBackerVictim
 	
@@ -47,7 +47,7 @@ CoD.AttackerVictimInfoBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local IdentityBackerAttacker = LUI.UIImage.new( 0, 0, 186, 642, 0, 0, 0, 180 )
 	IdentityBackerAttacker:setRGB( 0, 0, 0 )
-	IdentityBackerAttacker:setImage( RegisterImage( 0xF5C02167B78BCD4 ) )
+	IdentityBackerAttacker:setImage( RegisterImage( "uie_ui_hud_spawnselect_identity_backing" ) )
 	self:addElement( IdentityBackerAttacker )
 	self.IdentityBackerAttacker = IdentityBackerAttacker
 	
@@ -166,65 +166,65 @@ CoD.AttackerVictimInfoBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.KillcamKillCountAttacker2 = KillcamKillCountAttacker2
 	
 	local IdentityHeaderVicitm = LUI.UIImage.new( 0, 0, 181, 647, 0, 0, 0, 12 )
-	IdentityHeaderVicitm:setImage( RegisterImage( 0xBD85B69D819BB24 ) )
+	IdentityHeaderVicitm:setImage( RegisterImage( "uie_ui_hud_spawnselect_identity_bar" ) )
 	self:addElement( IdentityHeaderVicitm )
 	self.IdentityHeaderVicitm = IdentityHeaderVicitm
 	
 	local IdentityCornerBottomRight = LUI.UIImage.new( 0, 0, 1014.5, 1024.5, 0, 0, 140, 150 )
 	IdentityCornerBottomRight:setAlpha( 0.1 )
 	IdentityCornerBottomRight:setZRot( -180 )
-	IdentityCornerBottomRight:setImage( RegisterImage( 0xD7AC5089314462A ) )
+	IdentityCornerBottomRight:setImage( RegisterImage( "uie_ui_hud_spawnselect_identity_corner" ) )
 	self:addElement( IdentityCornerBottomRight )
 	self.IdentityCornerBottomRight = IdentityCornerBottomRight
 	
 	local IdentityCornerTopRight = LUI.UIImage.new( 0, 0, 1015, 1025, 0, 0, 30, 40 )
 	IdentityCornerTopRight:setAlpha( 0.1 )
 	IdentityCornerTopRight:setZRot( -90 )
-	IdentityCornerTopRight:setImage( RegisterImage( 0xD7AC5089314462A ) )
+	IdentityCornerTopRight:setImage( RegisterImage( "uie_ui_hud_spawnselect_identity_corner" ) )
 	self:addElement( IdentityCornerTopRight )
 	self.IdentityCornerTopRight = IdentityCornerTopRight
 	
 	local IdentityCornerTopLeft = LUI.UIImage.new( 0, 0, 894.5, 904.5, 0, 0, 30, 40 )
 	IdentityCornerTopLeft:setAlpha( 0.1 )
-	IdentityCornerTopLeft:setImage( RegisterImage( 0xD7AC5089314462A ) )
+	IdentityCornerTopLeft:setImage( RegisterImage( "uie_ui_hud_spawnselect_identity_corner" ) )
 	self:addElement( IdentityCornerTopLeft )
 	self.IdentityCornerTopLeft = IdentityCornerTopLeft
 	
 	local IdentityCornerBottomLeft = LUI.UIImage.new( 0, 0, 894.5, 904.5, 0, 0, 140, 150 )
 	IdentityCornerBottomLeft:setAlpha( 0.1 )
 	IdentityCornerBottomLeft:setZRot( 90 )
-	IdentityCornerBottomLeft:setImage( RegisterImage( 0xD7AC5089314462A ) )
+	IdentityCornerBottomLeft:setImage( RegisterImage( "uie_ui_hud_spawnselect_identity_corner" ) )
 	self:addElement( IdentityCornerBottomLeft )
 	self.IdentityCornerBottomLeft = IdentityCornerBottomLeft
 	
 	local IdentityHeaderVicitm2 = LUI.UIImage.new( 0, 0, 1274, 1740, 0, 0, 0, 12 )
-	IdentityHeaderVicitm2:setImage( RegisterImage( 0xBD85B69D819BB24 ) )
+	IdentityHeaderVicitm2:setImage( RegisterImage( "uie_ui_hud_spawnselect_identity_bar" ) )
 	self:addElement( IdentityHeaderVicitm2 )
 	self.IdentityHeaderVicitm2 = IdentityHeaderVicitm2
 	
 	local IdentityConnectorBackingAttacker = LUI.UIImage.new( 0, 0, 643.5, 751.5, 0, 0, 69.5, 111.5 )
 	IdentityConnectorBackingAttacker:setAlpha( 0.02 )
-	IdentityConnectorBackingAttacker:setImage( RegisterImage( 0xC89F7D573D5B4E6 ) )
+	IdentityConnectorBackingAttacker:setImage( RegisterImage( "uie_ui_hud_spawnselect_identity_connector" ) )
 	self:addElement( IdentityConnectorBackingAttacker )
 	self.IdentityConnectorBackingAttacker = IdentityConnectorBackingAttacker
 	
 	local IdentityConnectorLinesAttacker = LUI.UIImage.new( 0, 0, 643.5, 751.5, 0, 0, 70, 112 )
 	IdentityConnectorLinesAttacker:setAlpha( 0.5 )
-	IdentityConnectorLinesAttacker:setImage( RegisterImage( 0x3A45AE0D7B6C206 ) )
+	IdentityConnectorLinesAttacker:setImage( RegisterImage( "uie_ui_hud_spawnselect_identity_connector_lines" ) )
 	self:addElement( IdentityConnectorLinesAttacker )
 	self.IdentityConnectorLinesAttacker = IdentityConnectorLinesAttacker
 	
 	local IdentityConnectorBackingVictim = LUI.UIImage.new( 0, 0, 1168.5, 1276.5, 0, 0, 69.5, 111.5 )
 	IdentityConnectorBackingVictim:setAlpha( 0.03 )
 	IdentityConnectorBackingVictim:setZRot( 180 )
-	IdentityConnectorBackingVictim:setImage( RegisterImage( 0xC89F7D573D5B4E6 ) )
+	IdentityConnectorBackingVictim:setImage( RegisterImage( "uie_ui_hud_spawnselect_identity_connector" ) )
 	self:addElement( IdentityConnectorBackingVictim )
 	self.IdentityConnectorBackingVictim = IdentityConnectorBackingVictim
 	
 	local IdentityConnectorLinesVicitm = LUI.UIImage.new( 0, 0, 1168.5, 1276.5, 0, 0, 69.5, 111.5 )
 	IdentityConnectorLinesVicitm:setAlpha( 0.5 )
 	IdentityConnectorLinesVicitm:setZRot( 180 )
-	IdentityConnectorLinesVicitm:setImage( RegisterImage( 0x3A45AE0D7B6C206 ) )
+	IdentityConnectorLinesVicitm:setImage( RegisterImage( "uie_ui_hud_spawnselect_identity_connector_lines" ) )
 	self:addElement( IdentityConnectorLinesVicitm )
 	self.IdentityConnectorLinesVicitm = IdentityConnectorLinesVicitm
 	

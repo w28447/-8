@@ -1448,16 +1448,16 @@ end
 CoD.CodCasterUtility.NonTeamBasedPostLoad = function ( f120_arg0, f120_arg1 )
 	local f120_local0 = Engine[0xEA74FA7EE46E195]( Engine.GetCurrentGameType() )
 	f120_arg0.ModeAndMapName:setText( Engine[0xF9F1239CFD921FE]( f120_local0.nameRef ) )
-	f120_arg0.Widget1Portrait:setImage( RegisterImage( 0x7615068F50B3D66 ) )
-	f120_arg0.Widget2Portrait:setImage( RegisterImage( 0x7615068F50B3D66 ) )
-	f120_arg0.Widget3Portrait:setImage( RegisterImage( 0x7615068F50B3D66 ) )
+	f120_arg0.Widget1Portrait:setImage( RegisterImage( "blacktransparent" ) )
+	f120_arg0.Widget2Portrait:setImage( RegisterImage( "blacktransparent" ) )
+	f120_arg0.Widget3Portrait:setImage( RegisterImage( "blacktransparent" ) )
 end
 
 DataSources.CodCasterSideBarSettingsTabs = ListHelper_SetupDataSource( "CodCasterSideBarSettingsTabs", function ( f121_arg0 )
 	local f121_local0 = {}
 	table.insert( f121_local0, {
 		models = {
-			tabName = 0xE2311AD89D11E7C,
+			tabName = "codcaster/display_settings",
 			tabWidget = "CoD.CodCasterSettingsSideBarDisplaySettings",
 			tabIcon = ""
 		},
@@ -1468,7 +1468,7 @@ DataSources.CodCasterSideBarSettingsTabs = ListHelper_SetupDataSource( "CodCaste
 	} )
 	table.insert( f121_local0, {
 		models = {
-			tabName = 0xDC89C646FCB3342,
+			tabName = "codcaster/loadout_settings",
 			tabWidget = "CoD.CodCasterSettingsSideBarLoadoutSettings",
 			tabIcon = ""
 		},
@@ -2346,7 +2346,7 @@ DataSources.CodCasterDirectorSettingsTabs = ListHelper_SetupDataSource( "CodCast
 	local f167_local0 = {}
 	table.insert( f167_local0, {
 		models = {
-			tabName = 0x4EA93CFFE505B27,
+			tabName = "codcaster/quick_settings",
 			tabWidget = "CoD.DirectorCodCasterQuickSettings",
 			tabIcon = ""
 		},
@@ -2356,7 +2356,7 @@ DataSources.CodCasterDirectorSettingsTabs = ListHelper_SetupDataSource( "CodCast
 	} )
 	table.insert( f167_local0, {
 		models = {
-			tabName = 0xE2311AD89D11E7C,
+			tabName = "codcaster/display_settings",
 			tabWidget = "CoD.DirectorCodCasterDisplaySettings",
 			tabIcon = ""
 		},
@@ -2367,7 +2367,7 @@ DataSources.CodCasterDirectorSettingsTabs = ListHelper_SetupDataSource( "CodCast
 	} )
 	table.insert( f167_local0, {
 		models = {
-			tabName = 0xDC89C646FCB3342,
+			tabName = "codcaster/loadout_settings",
 			tabWidget = "CoD.DirectorCodCasterLoadoutSettings",
 			tabIcon = ""
 		},
@@ -2378,7 +2378,7 @@ DataSources.CodCasterDirectorSettingsTabs = ListHelper_SetupDataSource( "CodCast
 	} )
 	table.insert( f167_local0, {
 		models = {
-			tabName = 0x4D1595123C780BD,
+			tabName = "codcaster/team_settings",
 			tabWidget = "CoD.DirectorCodCasterTeamSettings",
 			tabIcon = ""
 		},

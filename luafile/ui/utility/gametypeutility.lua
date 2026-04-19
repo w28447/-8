@@ -310,7 +310,7 @@ CoD.GameTypeUtility.ConvertMapNameToLocalizedXHash = function ( f21_arg0 )
 end
 
 CoD.GameTypeUtility.GameTypeToImage = function ( f22_arg0 )
-	return CoD.GameTypeUtility.GetGameTypeValue( f22_arg0, "image", 0x7615068F50B3D66 )
+	return CoD.GameTypeUtility.GetGameTypeValue( f22_arg0, "image", "blacktransparent" )
 end
 
 CoD.GameTypeUtility.GameTypeToLocalizeName = function ( f23_arg0 )

@@ -16,8 +16,8 @@ CoD.ZM_ReviveWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	GlowOrangeOver:setRGB( 1, 0.31, 0 )
 	GlowOrangeOver:setAlpha( 0.4 )
 	GlowOrangeOver:setZRot( 90 )
-	GlowOrangeOver:setImage( RegisterImage( 0x5BE416E17DAB33B ) )
-	GlowOrangeOver:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	GlowOrangeOver:setImage( RegisterImage( "uie_t7_core_hud_mapwidget_panelglow" ) )
+	GlowOrangeOver:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowOrangeOver )
 	self.GlowOrangeOver = GlowOrangeOver
 	
@@ -30,7 +30,7 @@ CoD.ZM_ReviveWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	RingGlow:setRGB( 1, 0.72, 0 )
 	RingGlow:setAlpha( 0 )
 	RingGlow:setImage( RegisterImage( 0x452876CCDF0ED0E ) )
-	RingGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	RingGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( RingGlow )
 	self.RingGlow = RingGlow
 	
@@ -38,7 +38,7 @@ CoD.ZM_ReviveWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	RingMiddle:setRGB( 1, 0.45, 0 )
 	RingMiddle:setAlpha( 0.1 )
 	RingMiddle:setImage( RegisterImage( 0xAF4C78023E45B3E ) )
-	RingMiddle:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	RingMiddle:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( RingMiddle )
 	self.RingMiddle = RingMiddle
 	
@@ -87,7 +87,7 @@ CoD.ZM_ReviveWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	AbilitySwirl:setAlpha( 0 )
 	AbilitySwirl:setScale( 1.3, 1.3 )
 	AbilitySwirl:setImage( RegisterImage( 0xBBBD54E6E7B4493 ) )
-	AbilitySwirl:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	AbilitySwirl:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( AbilitySwirl )
 	self.AbilitySwirl = AbilitySwirl
 	

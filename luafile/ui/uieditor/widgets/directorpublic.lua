@@ -179,7 +179,7 @@ CoD.directorPublic.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 		PlaySoundAlias( "uin_wz_deploy" )
 		return true
 	end, function ( f15_arg0, f15_arg1, f15_arg2 )
-		CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( WarzoneHostPlayButton )
@@ -358,10 +358,10 @@ CoD.directorPublic.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 		end
 	end, function ( f32_arg0, f32_arg1, f32_arg2 )
 		if CoD.WZUtility.AllowWZOffline() and not IsGameTrial() and IsWarzone() and not IsPC() then
-			CoD.Menu.SetButtonLabel( f32_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f32_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif CoD.WZUtility.AllowWZOffline() and not IsGameTrial() and IsWarzone() and IsPC() then
-			CoD.Menu.SetButtonLabel( f32_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f32_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -392,7 +392,7 @@ CoD.directorPublic.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	self.MapVoteZM = MapVoteZM
 	
 	local MapAndGameType = CoD.DirectorMapAndGameTypeContainer.new( f1_arg0, f1_arg1, 0.5, 0.5, 514, 896, 1, 1, -368, -188 )
-	MapAndGameType.DirectorMapAndGameInternal.GamemodeIcon:setImage( RegisterImage( 0x7615068F50B3D66 ) )
+	MapAndGameType.DirectorMapAndGameInternal.GamemodeIcon:setImage( RegisterImage( "blacktransparent" ) )
 	MapAndGameType.DirectorMapAndGameInternal.DirectorMapAndGameTypeInternalTitles.Label:setText( "" )
 	MapAndGameType.DirectorMapAndGameInternal.PlaylistHeader.GameModeText:setText( Engine[0xF9F1239CFD921FE]( 0x890976738B1D859 ) )
 	MapAndGameType.DirectorMapAndGameInternal.PlaylistHeader.GameModeText:setTTF( "ttmussels_regular" )
@@ -468,7 +468,7 @@ CoD.directorPublic.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 		end
 	end, function ( f42_arg0, f42_arg1, f42_arg2 )
 		if not IsZombies() and IsPartyLeader( f42_arg2 ) then
-			CoD.Menu.SetButtonLabel( f42_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f42_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -481,7 +481,7 @@ CoD.directorPublic.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	DirectorReadyButton:setAlpha( 0 )
 	DirectorReadyButton.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( 0x7A9F166E7248D86 ) )
 	DirectorReadyButton.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( 0x7A9F166E7248D86 ) )
-	DirectorReadyButton.PlayText:setText( LocalizeToUpperString( 0xE6F6113B8B75F3E ) )
+	DirectorReadyButton.PlayText:setText( LocalizeToUpperString( "menu/ready" ) )
 	DirectorReadyButton:subscribeToGlobalModel( f1_arg1, "PerController", "ButtonBits." .. Enum.LUIButton[0x755DA1E2E7C263F], function ( model )
 		DirectorReadyButton:setModel( model, f1_arg1 )
 	end )

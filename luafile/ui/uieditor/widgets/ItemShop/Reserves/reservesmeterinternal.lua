@@ -49,8 +49,8 @@ CoD.ReservesMeterInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 			end
 		}
 	} )
-	ProgressBar.Progress:setImage( RegisterImage( 0x6D2FBF31F53910C ) )
-	ProgressBar.ProgressGlow:setImage( RegisterImage( 0xA7D61A3302B55D0 ) )
+	ProgressBar.Progress:setImage( RegisterImage( "uie_ui_menu_aar_levelup_bar" ) )
+	ProgressBar.ProgressGlow:setImage( RegisterImage( "uie_ui_menu_aar_levelup_bar_glow" ) )
 	ProgressBar:subscribeToGlobalModel( f1_arg1, "LootStreamProgress", "reservesRngPercentage", function ( model )
 		local f4_local0 = model:get()
 		if f4_local0 ~= nil then

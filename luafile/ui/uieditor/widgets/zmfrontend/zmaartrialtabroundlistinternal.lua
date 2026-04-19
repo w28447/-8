@@ -9,18 +9,18 @@ CoD.ZMAARTrialTabRoundListInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local ListBg = LUI.UIImage.new( 0, 0, 0, 388, 0, 0, 68, 764 )
-	ListBg:setImage( RegisterImage( 0xDCF1B07E0539E4A ) )
+	ListBg:setImage( RegisterImage( "uie_trial_rules_gold_normal" ) )
 	self:addElement( ListBg )
 	self.ListBg = ListBg
 	
 	local Medal = LUI.UIImage.new( 0, 0, 148, 240, 0, 0, 64, 156 )
 	Medal:setAlpha( 0.9 )
-	Medal:setImage( RegisterImage( 0x7775EF99258EEEC ) )
+	Medal:setImage( RegisterImage( "uie_trial_medal_gold" ) )
 	self:addElement( Medal )
 	self.Medal = Medal
 	
 	local MedalText = LUI.UIText.new( 0, 0, 4.5, 370.5, 0, 0, 47, 65 )
-	MedalText:setText( LocalizeToUpperString( 0x4F2A2FD2DB27D84 ) )
+	MedalText:setText( LocalizeToUpperString( "zmtrials/gold" ) )
 	MedalText:setTTF( "skorzhen" )
 	MedalText:setLetterSpacing( 2 )
 	MedalText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

@@ -32,7 +32,7 @@ LUI.createMenu.FTUEZMInventoryMenu = function ( f1_arg0, f1_arg1 )
 	
 	local BackgroundImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BackgroundImage:setAlpha( 0.85 )
-	BackgroundImage:setImage( RegisterImage( 0x4BF88A437F4C579 ) )
+	BackgroundImage:setImage( RegisterImage( "uie_fe_cp_background" ) )
 	self:addElement( BackgroundImage )
 	self.BackgroundImage = BackgroundImage
 	
@@ -136,7 +136,7 @@ LUI.createMenu.FTUEZMInventoryMenu = function ( f1_arg0, f1_arg1 )
 	local PCButton = nil
 	
 	PCButton = CoD.PC_MOTD_Buttons.new( f1_local1, f1_arg0, 0.5, 0.5, -734.5, -494.5, 0.8, 0.8, 48.5, 128.5 )
-	PCButton.OptionText:setText( LocalizeToUpperString( 0x6393FF34EA56966 ) )
+	PCButton.OptionText:setText( LocalizeToUpperString( "menu/continue" ) )
 	PCButton:linkToElementModel( self, "image", true, function ( model )
 		local f3_local0 = model:get()
 		if f3_local0 ~= nil then
@@ -168,7 +168,7 @@ LUI.createMenu.FTUEZMInventoryMenu = function ( f1_arg0, f1_arg1 )
 	FrontendFocusPip:setAlpha( 0.05 )
 	FrontendFocusPip:setZRot( 45 )
 	FrontendFocusPip:setImage( RegisterImage( 0x793C73633F620BB ) )
-	FrontendFocusPip:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFocusPip:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFocusPip:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFocusPip:setupNineSliceShader( 44, 44 )
 	self:addElement( FrontendFocusPip )
@@ -209,7 +209,7 @@ LUI.createMenu.FTUEZMInventoryMenu = function ( f1_arg0, f1_arg1 )
 		PlaySoundAlias( "uin_toggle_generic" )
 		return true
 	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x6393FF34EA56966, nil, "MOUSE1" )
+		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, "MOUSE1" )
 		return true
 	end, false )
 	self.__on_menuOpened_self = function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )

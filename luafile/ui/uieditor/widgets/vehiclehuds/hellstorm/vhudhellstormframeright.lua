@@ -14,7 +14,7 @@ CoD.vhudHellstormFrameRight.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local DotR = LUI.UIImage.new( 0.5, 0.5, 53.5, 37.5, 0.5, 0.5, -6, 6 )
 	DotR:setImage( RegisterImage( 0x99A8C3E368A2195 ) )
-	DotR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DotR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotR )
 	self.DotR = DotR
 	
@@ -41,7 +41,7 @@ CoD.vhudHellstormFrameRight.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local FrameHlineLeft = LUI.UIImage.new( 0, 0, 182, 0, 0, 0, 238, 246 )
 	FrameHlineLeft:setImage( RegisterImage( 0x9F9F4F6492BE854 ) )
-	FrameHlineLeft:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	FrameHlineLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	FrameHlineLeft:setShaderVector( 0, 0, 1, 0, 0 )
 	FrameHlineLeft:setShaderVector( 1, 0, 0, 0, 0 )
 	FrameHlineLeft:setShaderVector( 2, 0, 1, 0, 0 )
@@ -52,7 +52,7 @@ CoD.vhudHellstormFrameRight.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local FrameHlineLeft2 = LUI.UIImage.new( 0, 0, 182, 0, 0, 0, 238, 246 )
 	FrameHlineLeft2:setImage( RegisterImage( 0x9F9F4F6492BE854 ) )
-	FrameHlineLeft2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	FrameHlineLeft2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	FrameHlineLeft2:setShaderVector( 0, 0, 1, 0, 0 )
 	FrameHlineLeft2:setShaderVector( 1, 0, 0, 0, 0 )
 	FrameHlineLeft2:setShaderVector( 2, 0, 1, 0, 0 )

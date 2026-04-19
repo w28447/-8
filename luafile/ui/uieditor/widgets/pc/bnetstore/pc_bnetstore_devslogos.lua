@@ -10,7 +10,7 @@ CoD.PC_BnetStore_DevsLogos.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local PublishedBy = LUI.UIText.new( 0, 0, 694.5, 794.5, 0, 0, 7, 25 )
 	PublishedBy:setAlpha( 0.1 )
-	PublishedBy:setText( LocalizeToUpperString( 0x747FC15FF6D0BE ) )
+	PublishedBy:setText( LocalizeToUpperString( "store/publishedby" ) )
 	PublishedBy:setTTF( "dinnext_regular" )
 	PublishedBy:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	self:addElement( PublishedBy )
@@ -24,7 +24,7 @@ CoD.PC_BnetStore_DevsLogos.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local DevelopedBy = LUI.UIText.new( 0, 0, 909.5, 1019.5, 0, 0, 7, 25 )
 	DevelopedBy:setAlpha( 0.1 )
-	DevelopedBy:setText( LocalizeToUpperString( 0x4F5C1473561F4C4 ) )
+	DevelopedBy:setText( LocalizeToUpperString( "store/developedby" ) )
 	DevelopedBy:setTTF( "dinnext_regular" )
 	DevelopedBy:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	self:addElement( DevelopedBy )

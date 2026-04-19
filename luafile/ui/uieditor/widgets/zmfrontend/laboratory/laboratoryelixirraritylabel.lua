@@ -9,7 +9,7 @@ CoD.LaboratoryElixirRarityLabel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local rarityBackground = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	rarityBackground:setAlpha( 0.7 )
-	rarityBackground:setMaterial( LUI.UIImage.GetCachedMaterial( 0x83C485F153D0720 ) )
+	rarityBackground:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_smoke" ) )
 	rarityBackground:setShaderVector( 0, 0.4, 0, 0, 0 )
 	rarityBackground:linkToElementModel( self, "rarity", true, function ( model )
 		local f2_local0 = model:get()
@@ -21,7 +21,7 @@ CoD.LaboratoryElixirRarityLabel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.rarityBackground = rarityBackground
 	
 	local Smoke = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 0, 30 )
-	Smoke:setImage( RegisterImage( 0xF034C487614E57C ) )
+	Smoke:setImage( RegisterImage( "uie_zm_hud_inventory_objectivesmoke" ) )
 	Smoke:setMaterial( LUI.UIImage.GetCachedMaterial( 0xC221B51E4063E3D ) )
 	Smoke:setShaderVector( 0, 0, 0.35, 0, 0 )
 	Smoke:setShaderVector( 1, 1, 1, 0, 0 )

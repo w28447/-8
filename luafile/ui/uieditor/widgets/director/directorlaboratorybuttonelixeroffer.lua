@@ -10,7 +10,7 @@ CoD.DirectorLaboratoryButtonElixerOffer.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local StoneTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 0, 40 )
 	StoneTiledBacking:setAlpha( 0.7 )
-	StoneTiledBacking:setImage( RegisterImage( 0x33757173B476ACD ) )
+	StoneTiledBacking:setImage( RegisterImage( "uie_ui_zm_laboratory_buttonbgtile" ) )
 	StoneTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	StoneTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	StoneTiledBacking:setupNineSliceShader( 196, 88 )
@@ -25,7 +25,7 @@ CoD.DirectorLaboratoryButtonElixerOffer.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local ElixerOfferBanner = LUI.UIFixedAspectRatioImage.new( 0, 1, 4, -4, 0, 0, 0, 40 )
 	ElixerOfferBanner.__Image = function ()
-		ElixerOfferBanner:setImage( RegisterImage( CoD.ZMLaboratoryUtility.GetLaboratoryBannerImage( 0x7615068F50B3D66 ) ) )
+		ElixerOfferBanner:setImage( RegisterImage( CoD.ZMLaboratoryUtility.GetLaboratoryBannerImage( "blacktransparent" ) ) )
 	end
 	
 	ElixerOfferBanner.__Image()

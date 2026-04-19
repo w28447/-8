@@ -11,8 +11,8 @@ CoD.TeamMateLockOn.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local PanelGlow = LUI.UIImage.new( 0.5, 0.5, -152, 149, 0.5, 0.5, -101, 105 )
 	PanelGlow:setRGB( 0.97, 0.36, 0.07 )
 	PanelGlow:setAlpha( 0.49 )
-	PanelGlow:setImage( RegisterImage( 0x5BE416E17DAB33B ) )
-	PanelGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	PanelGlow:setImage( RegisterImage( "uie_t7_core_hud_mapwidget_panelglow" ) )
+	PanelGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PanelGlow )
 	self.PanelGlow = PanelGlow
 	

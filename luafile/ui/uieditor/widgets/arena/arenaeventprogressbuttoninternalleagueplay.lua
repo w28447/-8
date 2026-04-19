@@ -90,7 +90,7 @@ CoD.ArenaEventProgressButtonInternalLeaguePlay.new = function ( f1_arg0, f1_arg1
 	local OverlayPattern = LUI.UIImage.new( 0.5, 0.5, -186.5, 187.5, 0.5, 0.5, -30.5, 30.5 )
 	OverlayPattern:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	OverlayPattern:setAlpha( 0.05 )
-	OverlayPattern:setImage( RegisterImage( 0xFC21A8215EA012B ) )
+	OverlayPattern:setImage( RegisterImage( "uie_ui_menu_common_button_bg_pattern_large" ) )
 	OverlayPattern:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	OverlayPattern:setShaderVector( 0, 0, 0, 0, 0 )
 	OverlayPattern:setupNineSliceShader( 4, 4 )

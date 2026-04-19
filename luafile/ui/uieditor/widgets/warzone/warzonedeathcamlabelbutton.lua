@@ -10,7 +10,7 @@ CoD.WarzoneDeathCamLabelButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local DeathCamLabel = LUI.UIText.new( 0, 0, 0, 376, 0, 0, 10, 30 )
 	DeathCamLabel:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	DeathCamLabel:setText( LocalizeToUpperString( 0xA8BAC035CE51600 ) )
+	DeathCamLabel:setText( LocalizeToUpperString( "wz/deathcam" ) )
 	DeathCamLabel:setTTF( "ttmussels_regular" )
 	DeathCamLabel:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
 	DeathCamLabel:setLetterSpacing( 6 )

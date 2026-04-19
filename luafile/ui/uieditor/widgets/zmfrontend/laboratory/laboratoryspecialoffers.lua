@@ -66,10 +66,10 @@ CoD.LaboratorySpecialOffers.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		end
 	end, function ( f8_arg0, f8_arg1, f8_arg2 )
 		if CoD.ModelUtility.IsModelValueEqualToEnum( f8_arg2, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and CoD.ZMLaboratoryUtility.CanPurchase( f8_arg2, f8_arg0 ) and CoD.ModelUtility.IsModelValueEqualTo( f8_arg2, "Laboratory.disableInput", 0 ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif CoD.ModelUtility.IsModelValueEqualToEnum( f8_arg2, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and not CoD.ZMLaboratoryUtility.CanPurchase( f8_arg2, f8_arg0 ) and CoD.ModelUtility.IsModelValueEqualTo( f8_arg2, "Laboratory.disableInput", 0 ) and IsBooleanDvarSet( "laboratory_codpoints_enabled" ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -81,7 +81,7 @@ CoD.LaboratorySpecialOffers.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	StoneTiledBacking = LUI.UIImage.new( 0, 0, 0, 480, 0.09, 0.09, -30, 6 )
 	StoneTiledBacking:setRGB( 0.83, 0.11, 0.01 )
 	StoneTiledBacking:setAlpha( 0 )
-	StoneTiledBacking:setImage( RegisterImage( 0x33757173B476ACD ) )
+	StoneTiledBacking:setImage( RegisterImage( "uie_ui_zm_laboratory_buttonbgtile" ) )
 	StoneTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	StoneTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	StoneTiledBacking:setupNineSliceShader( 196, 88 )

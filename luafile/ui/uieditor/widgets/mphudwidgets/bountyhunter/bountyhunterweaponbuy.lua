@@ -21,7 +21,7 @@ CoD.BountyHunterWeaponBuy.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local Header = LUI.UIText.new( 0, 0, 3, 203, 0, 0, -21, -4 )
 	Header:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	Header:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	Header:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	Header:setTTF( "ttmussels_demibold" )
 	Header:setLetterSpacing( 4 )
 	Header:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

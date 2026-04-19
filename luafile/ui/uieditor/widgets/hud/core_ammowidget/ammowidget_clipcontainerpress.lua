@@ -39,7 +39,7 @@ CoD.AmmoWidget_ClipContainerPress.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	Glow:setRGB( 1, 0, 0 )
 	Glow:setAlpha( 0 )
 	Glow:setImage( RegisterImage( 0xC58FF2328701EBA ) )
-	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
 	
@@ -67,7 +67,7 @@ CoD.AmmoWidget_ClipContainerPress.__resetProperties = function ( f2_arg0 )
 	f2_arg0.Clip:setTopBottom( 1, 1, -92, -32 )
 	f2_arg0.Clip:setAlpha( 0 )
 	f2_arg0.LED:setAlpha( 0 )
-	f2_arg0.LED:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6B34AA3F39208EF ) )
+	f2_arg0.LED:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_normal" ) )
 	f2_arg0.Glow:setLeftRight( 0, 0, 47, 123 )
 	f2_arg0.Glow:setTopBottom( 0, 0, -19, 57 )
 	f2_arg0.Glow:setAlpha( 0 )

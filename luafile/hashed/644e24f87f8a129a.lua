@@ -13,7 +13,7 @@ CoD.IGRPerksListBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local FocusGlow = LUI.UIImage.new( 0, 1, -35, 35, 0, 1, -35, 35 )
 	FocusGlow:setAlpha( 0.5 )
-	FocusGlow:setImage( RegisterImage( 0xB8F10D49D85E9C4 ) )
+	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_small" ) )
 	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0, 0 )
 	FocusGlow:setShaderVector( 1, 1.2, 0, 0, 0 )
@@ -28,7 +28,7 @@ CoD.IGRPerksListBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local Noise = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Noise:setAlpha( 0.9 )
-	Noise:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	Noise:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	Noise:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	Noise:setShaderVector( 0, 0, 0, 0, 0 )
 	Noise:setupNineSliceShader( 64, 64 )
@@ -37,7 +37,7 @@ CoD.IGRPerksListBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local Border = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Border:setImage( RegisterImage( 0x15BB65132BCEED9 ) )
-	Border:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	Border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	Border:setShaderVector( 0, 0, 0, 0, 0 )
 	Border:setupNineSliceShader( 8, 8 )
 	self:addElement( Border )

@@ -31,7 +31,7 @@ CoD.SpawnSelectionLabel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	self.DotTiledBacking = DotTiledBacking
 	
 	local DotTiledBacking2 = CoD.StoreCommonTextBacking.new( f1_arg0, f1_arg1, 0, 0, -36, 144, 0, 0, 44, 79 )
-	DotTiledBacking2:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DotTiledBacking2:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotTiledBacking2 )
 	self.DotTiledBacking2 = DotTiledBacking2
 	
@@ -53,7 +53,7 @@ CoD.SpawnSelectionLabel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local ButtonBottomBracket9Slice = LUI.UIImage.new( 0, 0, -40, 149, 1, 1, 33, 45 )
 	ButtonBottomBracket9Slice:setImage( RegisterImage( 0x55942079F1B70E6 ) )
-	ButtonBottomBracket9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	ButtonBottomBracket9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ButtonBottomBracket9Slice:setShaderVector( 0, 0, 0, 0, 0 )
 	ButtonBottomBracket9Slice:setupNineSliceShader( 120, 12 )
 	self:addElement( ButtonBottomBracket9Slice )

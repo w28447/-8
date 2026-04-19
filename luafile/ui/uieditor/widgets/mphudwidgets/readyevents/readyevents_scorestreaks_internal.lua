@@ -11,7 +11,7 @@ CoD.ReadyEvents_Scorestreaks_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	self.anyChildUsesUpdateState = true
 	
 	local Spacer = LUI.UIImage.new( 0, 0, 62, 72, 0, 1, 0, 0 )
-	Spacer:setImage( RegisterImage( 0x7615068F50B3D66 ) )
+	Spacer:setImage( RegisterImage( "blacktransparent" ) )
 	self:addElement( Spacer )
 	self.Spacer = Spacer
 	

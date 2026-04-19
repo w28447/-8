@@ -23,7 +23,7 @@ CoD.ArenaInfoWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local TiledBacking = LUI.UIImage.new( 0, 0, 1.5, 350.5, 0, 0, 38, 636 )
 	TiledBacking:setAlpha( 0.25 )
-	TiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking:setupNineSliceShader( 196, 88 )
@@ -46,7 +46,7 @@ CoD.ArenaInfoWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	self.Background2 = Background2
 	
 	local BGDotPatternLarge2 = LUI.UIImage.new( 0, 0, 2.5, 350.5, 0, 0, 467, 471 )
-	BGDotPatternLarge2:setImage( RegisterImage( 0xB20AD7A31239369 ) )
+	BGDotPatternLarge2:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline_tiled" ) )
 	BGDotPatternLarge2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	BGDotPatternLarge2:setShaderVector( 0, 0, 0, 0, 0 )
 	BGDotPatternLarge2:setupNineSliceShader( 32, 4 )
@@ -61,7 +61,7 @@ CoD.ArenaInfoWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local arenaFlameStreak = LUI.UIImage.new( 0, 0, -63, 197, 0, 0, 405, 665 )
 	arenaFlameStreak:setImage( RegisterImage( 0x39CD2A8412A4F6 ) )
-	arenaFlameStreak:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9227A50BA2B8D21 ) )
+	arenaFlameStreak:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	arenaFlameStreak:setShaderVector( 0, 4, 4, 0, 0 )
 	arenaFlameStreak:setShaderVector( 1, 8, 0, 0, 0 )
 	self:addElement( arenaFlameStreak )
@@ -155,8 +155,8 @@ CoD.ArenaInfoWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local infoBracketBot = LUI.UIImage.new( 0, 0, 0.5, 351.5, 0, 0, 629, 637 )
 	infoBracketBot:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	infoBracketBot:setAlpha( 0.5 )
-	infoBracketBot:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	infoBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	infoBracketBot:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	infoBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	infoBracketBot:setShaderVector( 0, 0, 0, 0, 0 )
 	infoBracketBot:setupNineSliceShader( 16, 4 )
 	self:addElement( infoBracketBot )
@@ -168,7 +168,7 @@ CoD.ArenaInfoWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local Name = LUI.UIText.new( 0, 0, 0.5, 348.5, 0.5, 0.5, -317.5, -283.5 )
 	Name:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	Name:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	Name:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	Name:setTTF( "notosans_regular" )
 	Name:setLetterSpacing( 2 )
 	Name:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

@@ -5955,7 +5955,7 @@ function ChangeLanguage( f568_arg0, f568_arg1, f568_arg2, f568_arg3, f568_arg4, 
 							f568_local0.changingLanguage = nil
 						end
 						,
-						text = 0xC2E92C54C2BE289,
+						text = "menu/cancel",
 						isCancelOption = true
 					},
 					{

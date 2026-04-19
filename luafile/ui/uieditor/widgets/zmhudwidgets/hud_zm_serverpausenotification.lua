@@ -18,7 +18,7 @@ CoD.HUD_ZM_ServerPauseNotification.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local Paused = LUI.UIText.new( 0.5, 0.5, -960, 960, 0, 0, 480, 600 )
 	Paused:setAlpha( 0 )
-	Paused:setText( LocalizeToUpperString( 0x3563FAD2ACF2D91 ) )
+	Paused:setText( LocalizeToUpperString( "menu/paused" ) )
 	Paused:setTTF( "ttmussels_demibold" )
 	Paused:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	Paused:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

@@ -74,7 +74,7 @@ CoD.HealthBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	
 	local WoundBar = LUI.UIImage.new( 0, 0.99, 1, 1, 0, 0, 6.5, 10.5 )
 	WoundBar:setImage( RegisterImage( 0xC31716385F5211C ) )
-	WoundBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	WoundBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	WoundBar:setShaderVector( 0, 0, 1, 0, 0 )
 	WoundBar:setShaderVector( 1, 0, 0, 0, 0 )
 	WoundBar:setShaderVector( 2, 0, 1, 0, 0 )
@@ -99,7 +99,7 @@ CoD.HealthBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	LED:setAlpha( 0.09 )
 	LED:setScale( 0.94, 0.94 )
 	LED:setImage( RegisterImage( 0x832BA507D0E7663 ) )
-	LED:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	LED:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	LED:setShaderVector( 0, 0.11, 0.92, 0, 0 )
 	LED:setShaderVector( 1, 0, 0, 0, 0 )
 	LED:setShaderVector( 2, 0.34, 0.63, 0, 0 )

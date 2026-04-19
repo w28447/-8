@@ -58,10 +58,10 @@ CoD.EquipmentListWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 		end
 	end, function ( f6_arg0, f6_arg1, f6_arg2 )
 		if IsPC() and CoD.CACUtility.IsItemEquippedInCurrentLoadout( f6_arg1, f6_arg0, f6_arg2 ) and not CoD.CACUtility.IsCACItemLocked( f6_arg1, f6_arg0, f6_arg2 ) then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif not CoD.CACUtility.IsItemEquippedInCurrentLoadout( f6_arg1, f6_arg0, f6_arg2 ) and not CoD.CACUtility.IsCACItemLocked( f6_arg1, f6_arg0, f6_arg2 ) then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

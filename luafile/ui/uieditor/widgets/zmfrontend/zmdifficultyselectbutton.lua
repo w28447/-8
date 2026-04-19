@@ -77,7 +77,7 @@ CoD.ZMDifficultySelectButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local EquippedMarkerTick = LUI.UIImage.new( 1, 1, -151, 9, 0, 0, -17, 143 )
 	EquippedMarkerTick:setAlpha( 0 )
 	EquippedMarkerTick:setZoom( 4 )
-	EquippedMarkerTick:setImage( RegisterImage( 0x65F14AD6E4F3F8F ) )
+	EquippedMarkerTick:setImage( RegisterImage( "uie_ui_menu_zombies_cac_elixir_slot_check" ) )
 	self:addElement( EquippedMarkerTick )
 	self.EquippedMarkerTick = EquippedMarkerTick
 	

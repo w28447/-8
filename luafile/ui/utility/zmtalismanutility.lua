@@ -3,7 +3,7 @@ require( "ui/utility/cacutility" )
 CoD.ZMTalismanUtility = {}
 CoD.ZMTalismanUtility.TalismanTypes = LuaEnum.createEnum( "NONE", "PERK1", "PERK2", "PERK3", "PERK4", "HERO_WEAPON", "EQUIPMENT", "START_WEAPON" )
 CoD.ZMTalismanUtility.TalismanSlotIcons = {
-	[CoD.ZMTalismanUtility.TalismanTypes.NONE] = 0x7615068F50B3D66,
+	[CoD.ZMTalismanUtility.TalismanTypes.NONE] = "blacktransparent",
 	[CoD.ZMTalismanUtility.TalismanTypes.PERK1] = 0x621DB435A480979,
 	[CoD.ZMTalismanUtility.TalismanTypes.PERK2] = 0x621DB435A480979,
 	[CoD.ZMTalismanUtility.TalismanTypes.PERK3] = 0x621DB435A480979,

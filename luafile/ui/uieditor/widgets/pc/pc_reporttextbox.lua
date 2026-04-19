@@ -31,7 +31,7 @@ CoD.PC_ReportTextBox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local TextBox = LUI.UIText.new( 0, 1, 15, -15, 0, 0, 10, 31 )
 	TextBox:setRGB( 0.76, 0.76, 0.76 )
 	TextBox:setAlpha( 0 )
-	TextBox:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	TextBox:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	TextBox:setTTF( "notosans_regular" )
 	TextBox:setLetterSpacing( 1 )
 	TextBox:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

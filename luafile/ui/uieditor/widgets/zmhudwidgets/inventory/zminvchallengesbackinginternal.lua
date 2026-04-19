@@ -25,7 +25,7 @@ CoD.ZMInvChallengesBackingInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local BaseGradientL = LUI.UIImage.new( -0.03, 0.5, 0, 0, 0, 1, 0, 0 )
 	BaseGradientL:setRGB( 0, 0, 0 )
 	BaseGradientL:setAlpha( 0.1 )
-	BaseGradientL:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDE760AC0E801E57 ) )
+	BaseGradientL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_gradient_normal" ) )
 	BaseGradientL:setShaderVector( 0, 0, 0, 0, 15 )
 	BaseGradientL:setShaderVector( 1, 0, 0, 0, 0 )
 	BaseGradientL:setShaderVector( 2, 0.5, 0, 0, 0 )
@@ -35,7 +35,7 @@ CoD.ZMInvChallengesBackingInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local BaseGradientR = LUI.UIImage.new( 0.5, 1.03, 0, 0, 0, 1, 0, 0 )
 	BaseGradientR:setRGB( 0, 0, 0 )
 	BaseGradientR:setAlpha( 0.1 )
-	BaseGradientR:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDE760AC0E801E57 ) )
+	BaseGradientR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_gradient_normal" ) )
 	BaseGradientR:setShaderVector( 0, 0, 0, 0, 0 )
 	BaseGradientR:setShaderVector( 1, 0, 0, 0, 15 )
 	BaseGradientR:setShaderVector( 2, 0.5, 0, 0, 0 )
@@ -44,7 +44,7 @@ CoD.ZMInvChallengesBackingInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local TextureMid = LUI.UIImage.new( 0, 1, 0, 0, 0.5, 1.5, -35, -35 )
 	TextureMid:setAlpha( 0.8 )
-	TextureMid:setImage( RegisterImage( 0xBB35BC5D2F0269C ) )
+	TextureMid:setImage( RegisterImage( "uie_zm_hud_inventory_backing_mid" ) )
 	TextureMid:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
 	TextureMid:setShaderVector( 0, 1, 0, 0, 0 )
 	TextureMid:setShaderVector( 1, 1, 0, 0, 0 )
@@ -64,26 +64,26 @@ CoD.ZMInvChallengesBackingInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local CenterFade = LUI.UIImage.new( 0.5, 0.5, -130, 130, 0, 1, 0, 0 )
 	CenterFade:setRGB( 0, 0, 0 )
 	CenterFade:setAlpha( 0.95 )
-	CenterFade:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE125638BF94665F ) )
+	CenterFade:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	CenterFade:setShaderVector( 0, 0.05, 0, 0.05, 0 )
 	self:addElement( CenterFade )
 	self.CenterFade = CenterFade
 	
 	local DecoL = LUI.UIImage.new( 0, 0, -102, -6, 0, 0, -11, 81 )
 	DecoL:setAlpha( 0.08 )
-	DecoL:setImage( RegisterImage( 0x95EE339800F1644 ) )
+	DecoL:setImage( RegisterImage( "uie_zm_hud_inventory_framedeco" ) )
 	self:addElement( DecoL )
 	self.DecoL = DecoL
 	
 	local DecoR = LUI.UIImage.new( 1, 1, 6, 102, 0, 0, -11, 81 )
 	DecoR:setAlpha( 0.08 )
 	DecoR:setYRot( 180 )
-	DecoR:setImage( RegisterImage( 0x95EE339800F1644 ) )
+	DecoR:setImage( RegisterImage( "uie_zm_hud_inventory_framedeco" ) )
 	self:addElement( DecoR )
 	self.DecoR = DecoR
 	
 	local CenterFrame = LUI.UIImage.new( 0.5, 0.5, -90.5, 90.5, 0, 0, -25, 31 )
-	CenterFrame:setImage( RegisterImage( 0x67D2BCC05F51442 ) )
+	CenterFrame:setImage( RegisterImage( "uie_zm_hud_inventory_challengeframe" ) )
 	self:addElement( CenterFrame )
 	self.CenterFrame = CenterFrame
 	

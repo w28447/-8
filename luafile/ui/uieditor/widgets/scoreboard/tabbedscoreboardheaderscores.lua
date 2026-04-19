@@ -60,7 +60,7 @@ CoD.TabbedScoreboardHeaderScores.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	self.FriendlyControlRoundPips = FriendlyControlRoundPips
 	
 	local spacer = LUI.UIImage.new( 0, 0, 182.5, 256.5, 0, 0, -31, 97 )
-	spacer:setImage( RegisterImage( 0x7615068F50B3D66 ) )
+	spacer:setImage( RegisterImage( "blacktransparent" ) )
 	self:addElement( spacer )
 	self.spacer = spacer
 	

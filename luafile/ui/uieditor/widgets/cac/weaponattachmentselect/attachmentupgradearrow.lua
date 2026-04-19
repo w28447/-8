@@ -19,7 +19,7 @@ CoD.AttachmentUpgradeArrow.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	UpgradeArrow01:setRGB( 0.97, 0.98, 0.85 )
 	UpgradeArrow01:setAlpha( 0 )
 	UpgradeArrow01:setImage( RegisterImage( 0x28622B34EB3E25A ) )
-	UpgradeArrow01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	UpgradeArrow01:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( UpgradeArrow01 )
 	self.UpgradeArrow01 = UpgradeArrow01
 	
@@ -27,7 +27,7 @@ CoD.AttachmentUpgradeArrow.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	UpgradeArrow02:setRGB( 0.97, 0.98, 0.85 )
 	UpgradeArrow02:setAlpha( 0.73 )
 	UpgradeArrow02:setImage( RegisterImage( 0x28622B34EB3E25A ) )
-	UpgradeArrow02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	UpgradeArrow02:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( UpgradeArrow02 )
 	self.UpgradeArrow02 = UpgradeArrow02
 	
@@ -35,7 +35,7 @@ CoD.AttachmentUpgradeArrow.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	UpgradeArrow03:setRGB( 0.97, 0.98, 0.85 )
 	UpgradeArrow03:setAlpha( 0.09 )
 	UpgradeArrow03:setImage( RegisterImage( 0x28622B34EB3E25A ) )
-	UpgradeArrow03:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	UpgradeArrow03:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( UpgradeArrow03 )
 	self.UpgradeArrow03 = UpgradeArrow03
 	

@@ -29,7 +29,7 @@ LUI.createMenu.DemoSaveSegmentPopup = function ( f1_arg0, f1_arg1 )
 	FullscreenPopupTemplate.ErrorSubtitle:setText( Engine[0xF9F1239CFD921FE]( 0x9C62D3C1C35DC01 ) )
 	FullscreenPopupTemplate.WorkingTitle:setText( Engine[0xF9F1239CFD921FE]( 0xC76223999D97EC9 ) )
 	FullscreenPopupTemplate.Title:setText( Engine[0xF9F1239CFD921FE]( 0x471098B0579A24C ) )
-	FullscreenPopupTemplate.DoneTitle:setText( LocalizeToUpperString( 0x93E719493E9E18F ) )
+	FullscreenPopupTemplate.DoneTitle:setText( LocalizeToUpperString( "menu/new" ) )
 	self:addElement( FullscreenPopupTemplate )
 	self.FullscreenPopupTemplate = FullscreenPopupTemplate
 	
@@ -82,7 +82,7 @@ LUI.createMenu.DemoSaveSegmentPopup = function ( f1_arg0, f1_arg1 )
 		CoD.DemoUtility.SaveSegment( f3_arg1, f3_arg2 )
 		return true
 	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ENTER" )
+		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ENTER" )
 		return true
 	end, false )
 	self:addElement( ButtonSave )
@@ -104,7 +104,7 @@ LUI.createMenu.DemoSaveSegmentPopup = function ( f1_arg0, f1_arg1 )
 		CoD.DemoUtility.PreviewSegment( f6_arg1, f6_arg2 )
 		return true
 	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( ButtonPreview )

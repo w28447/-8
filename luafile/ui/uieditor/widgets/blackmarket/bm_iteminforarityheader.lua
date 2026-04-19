@@ -14,7 +14,7 @@ CoD.BM_ItemInfoRarityHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local HeaderGlow = LUI.UIImage.new( 0, 0, 0, 545, 0, 0, 0, 32 )
 	HeaderGlow:setAlpha( 0.1 )
 	HeaderGlow:setImage( RegisterImage( 0xFAA6C81834660D3 ) )
-	HeaderGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	HeaderGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	HeaderGlow:setShaderVector( 0, 0, 0, 0, 0 )
 	HeaderGlow:setupNineSliceShader( 12, 12 )
 	HeaderGlow:linkToElementModel( self, "rarity", true, function ( model )

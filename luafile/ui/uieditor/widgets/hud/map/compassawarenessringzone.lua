@@ -11,7 +11,7 @@ CoD.CompassAwarenessRingZone.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local Image = LUI.UIImage.new( 0.5, 0.5, -82, 82, 0, 0, -28, 176 )
 	Image:setAlpha( 0 )
 	Image:setImage( RegisterImage( 0x929388B11087005 ) )
-	Image:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Image:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image )
 	self.Image = Image
 	

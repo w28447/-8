@@ -47,7 +47,7 @@ CoD.GameEndScore_PlayerResultContainer.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local Linker = LUI.UIImage.new( 0, 0, 643.5, 647.5, 0, 0, 518.5, 712.5 )
 	Linker:setRGB( 0, 0, 0 )
-	Linker:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
+	Linker:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
 	Linker:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	Linker:setShaderVector( 0, 0, 0, 0, 0 )
 	Linker:setupNineSliceShader( 4, 8 )
@@ -57,7 +57,7 @@ CoD.GameEndScore_PlayerResultContainer.new = function ( f1_arg0, f1_arg1, f1_arg
 	local Linker2 = LUI.UIImage.new( 0, 0, 1089.5, 1093.5, 0, 0, 85, 985 )
 	Linker2:setRGB( 0, 0, 0 )
 	Linker2:setZRot( 90 )
-	Linker2:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
+	Linker2:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
 	Linker2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	Linker2:setShaderVector( 0, 0, 0, 0, 0 )
 	Linker2:setupNineSliceShader( 4, 8 )

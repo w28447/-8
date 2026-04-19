@@ -16,7 +16,7 @@ CoD.CodCasterLoadoutAttachmentsBackground.new = function ( f1_arg0, f1_arg1, f1_
 	
 	local CodCasterLoadoutAttachmentsBackground = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 0, 76 )
 	CodCasterLoadoutAttachmentsBackground:setImage( RegisterImage( 0x6237BCC6F1A8D53 ) )
-	CodCasterLoadoutAttachmentsBackground:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	CodCasterLoadoutAttachmentsBackground:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	CodCasterLoadoutAttachmentsBackground:setShaderVector( 0, 0, 0, 0, 0 )
 	CodCasterLoadoutAttachmentsBackground:setupNineSliceShader( 55, 38 )
 	self:addElement( CodCasterLoadoutAttachmentsBackground )

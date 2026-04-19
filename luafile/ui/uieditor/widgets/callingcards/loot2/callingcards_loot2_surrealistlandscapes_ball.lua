@@ -15,7 +15,7 @@ CoD.callingcards_loot2_surrealistlandscapes_ball.new = function ( f1_arg0, f1_ar
 	
 	local ball2 = LUI.UIImage.new( 0, 0, -28, 76, 0, 0, -28, 76 )
 	ball2:setImage( RegisterImage( 0xFFBEF2D5D94F063 ) )
-	ball2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	ball2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ball2 )
 	self.ball2 = ball2
 	

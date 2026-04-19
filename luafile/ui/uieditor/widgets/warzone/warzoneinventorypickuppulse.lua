@@ -12,7 +12,7 @@ CoD.WarzoneInventoryPickupPulse.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	image:setRGB( 0.06, 0.29, 0.87 )
 	image:setAlpha( 0 )
 	image:setImage( RegisterImage( 0xC58FF2328701EBA ) )
-	image:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	image:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( image )
 	self.image = image
 	

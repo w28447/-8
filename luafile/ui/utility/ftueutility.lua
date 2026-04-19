@@ -368,7 +368,7 @@ CoD.FTUEUtility.FTUESequences.ZMLaboratoryIntroduction = {
 	sequenceOverlays = {
 		{
 			overlayLayout = CoD.FTUEUtility.FTUELayouts.Entries1,
-			overlayTitle = 0x96D9A8F7540D6B6,
+			overlayTitle = "menu/laboratory",
 			overlayInfoEntries = {
 				{
 					models = {
@@ -389,7 +389,7 @@ CoD.FTUEUtility.FTUESequences.BlackMarketIntroduction = {
 	sequenceOverlays = {
 		{
 			overlayLayout = CoD.FTUEUtility.FTUELayouts.Entries1,
-			overlayTitle = 0x29C903C6DF90D6F,
+			overlayTitle = "menu/black_market",
 			overlayInfoEntries = {
 				{
 					models = {
@@ -954,7 +954,7 @@ f0_local2.listDatasource = function ()
 		return {
 			{
 				models = {
-					displayText = Engine[0xF9F1239CFD921FE]( 0xDFD294FC69F682 )
+					displayText = Engine[0xF9F1239CFD921FE]( "menu/yes" )
 				},
 				properties = {
 					action = function ( f37_arg0, f37_arg1, f37_arg2, f37_arg3, f37_arg4 )
@@ -965,7 +965,7 @@ f0_local2.listDatasource = function ()
 			},
 			{
 				models = {
-					displayText = Engine[0xF9F1239CFD921FE]( 0x5C16E02B211A4F4 )
+					displayText = Engine[0xF9F1239CFD921FE]( "menu/no" )
 				},
 				properties = {
 					action = function ( f38_arg0, f38_arg1, f38_arg2, f38_arg3, f38_arg4 )
@@ -986,7 +986,7 @@ f0_local2[CoD.OverlayUtility.aCrossPromptFn] = function ( f39_arg0 )
 	
 end
 
-f0_local2[CoD.OverlayUtility.aCrossPromptText] = 0xDFD294FC69F682
+f0_local2[CoD.OverlayUtility.aCrossPromptText] = "menu/yes"
 f0_local2[CoD.OverlayUtility.bCirclePromptFn] = function ( f41_arg0 )
 	return function ( f42_arg0, f42_arg1 )
 		CoD.FTUEUtility.BackOutCurrentSequence( f42_arg0, f42_arg1 )
@@ -994,7 +994,7 @@ f0_local2[CoD.OverlayUtility.bCirclePromptFn] = function ( f41_arg0 )
 	
 end
 
-f0_local2[CoD.OverlayUtility.bCirclePromptText] = 0x5C16E02B211A4F4
+f0_local2[CoD.OverlayUtility.bCirclePromptText] = "menu/no"
 f0_local0( f0_local1, f0_local2 )
 CoD.FTUEUtility.ShouldBlockMPFTUE = false
 CoD.FTUEUtility.ResetCurrentSequenceData = function ()

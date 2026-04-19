@@ -19,7 +19,7 @@ CoD.ZMLoadoutPreview.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 			stateName = "PerkModifier",
 			condition = function ( menu, element, event )
 				local f2_local0
-				if not CoD.ModelUtility.IsSelfModelValueEqualToEitherValue( element, f1_arg1, "image", 0x0, 0x7615068F50B3D66 ) then
+				if not CoD.ModelUtility.IsSelfModelValueEqualToEitherValue( element, f1_arg1, "image", 0x0, "blacktransparent" ) then
 					f2_local0 = IsLastListElement( element )
 				else
 					f2_local0 = false

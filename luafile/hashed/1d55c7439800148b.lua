@@ -11,7 +11,7 @@ CoD.WZTeamScoreboard_TeammateNumber.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local IDBacker = LUI.UIImage.new( 0.5, 0.5, -17, 17, 0.5, 0.5, -17.5, 16.5 )
-	IDBacker:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE125638BF94665F ) )
+	IDBacker:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	IDBacker:setShaderVector( 0, 0.05, 0.05, 0.05, 0.05 )
 	IDBacker.__Color = function ( f2_arg0 )
 		local f2_local0 = f2_arg0:get()
@@ -37,7 +37,7 @@ CoD.WZTeamScoreboard_TeammateNumber.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local Tint = LUI.UIImage.new( 0, 1, 10, -10, 0, 1, 10, -10 )
 	Tint:setAlpha( 0.5 )
-	Tint:setImage( RegisterImage( 0x4B6FFA90272070E ) )
+	Tint:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
 	Tint:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	Tint:setShaderVector( 0, 0, 0, 0, 0 )
 	Tint:setupNineSliceShader( 24, 24 )

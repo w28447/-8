@@ -41,14 +41,14 @@ LUI.createMenu.LiveEventViewerQualities = function ( f1_arg0, f1_arg1 )
 		GoBack( self, f3_arg2 )
 		return true
 	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	f1_local1:AddButtonCallbackFunction( qualityList, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
 		GoBack( self, f5_arg2 )
 		return true
 	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0xC2E92C54C2BE289, nil, nil )
+		CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/cancel", nil, nil )
 		return true
 	end, false )
 	self:addElement( qualityList )

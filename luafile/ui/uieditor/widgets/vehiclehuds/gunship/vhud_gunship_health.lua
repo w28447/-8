@@ -35,7 +35,7 @@ CoD.vhud_gunship_health.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local Ac120Name = LUI.UIImage.new( 1, 1, -324, -238, 1, 1, -167, -149 )
 	Ac120Name:setImage( RegisterImage( 0x93841FB9CF9F7D7 ) )
-	Ac120Name:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Ac120Name:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Ac120Name )
 	self.Ac120Name = Ac120Name
 	

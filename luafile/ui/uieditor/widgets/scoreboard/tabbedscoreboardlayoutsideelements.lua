@@ -10,7 +10,7 @@ CoD.TabbedScoreboardLayoutSideElements.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local MapLayoutDotLine = LUI.UIImage.new( 0, 0, 68, 324, 0, 0, 5, 9 )
 	MapLayoutDotLine:setImage( RegisterImage( 0x7CDB8568A32C87D ) )
-	MapLayoutDotLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	MapLayoutDotLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	MapLayoutDotLine:setShaderVector( 0, 0, 1, 0, 0 )
 	MapLayoutDotLine:setShaderVector( 1, 0, 0, 0, 0 )
 	MapLayoutDotLine:setShaderVector( 2, 0, 1, 0, 0 )
@@ -21,7 +21,7 @@ CoD.TabbedScoreboardLayoutSideElements.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local MapLayoutDotLineAdd = LUI.UIImage.new( 0, 0, 68, 324, 0, 0, 5, 9 )
 	MapLayoutDotLineAdd:setImage( RegisterImage( 0x7CDB8568A32C87D ) )
-	MapLayoutDotLineAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	MapLayoutDotLineAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	MapLayoutDotLineAdd:setShaderVector( 0, 0, 1, 0, 0 )
 	MapLayoutDotLineAdd:setShaderVector( 1, 0, 0, 0, 0 )
 	MapLayoutDotLineAdd:setShaderVector( 2, 0, 1, 0, 0 )
@@ -32,7 +32,7 @@ CoD.TabbedScoreboardLayoutSideElements.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local MapLayoutSideBoxPattern = LUI.UIImage.new( 0, 0, 24, 68, 0, 0, 1, 13 )
 	MapLayoutSideBoxPattern:setImage( RegisterImage( 0x80F9AB2A72B6B3A ) )
-	MapLayoutSideBoxPattern:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	MapLayoutSideBoxPattern:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	MapLayoutSideBoxPattern:setShaderVector( 0, 0, 1, 0, 0 )
 	MapLayoutSideBoxPattern:setShaderVector( 1, 0, 0, 0, 0 )
 	MapLayoutSideBoxPattern:setShaderVector( 2, 0, 1, 0, 0 )
@@ -43,7 +43,7 @@ CoD.TabbedScoreboardLayoutSideElements.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local MapLayoutSideBoxPatternAdd = LUI.UIImage.new( 0, 0, 24, 68, 0, 0, 1, 13 )
 	MapLayoutSideBoxPatternAdd:setImage( RegisterImage( 0x80F9AB2A72B6B3A ) )
-	MapLayoutSideBoxPatternAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	MapLayoutSideBoxPatternAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	MapLayoutSideBoxPatternAdd:setShaderVector( 0, 0, 1, 0, 0 )
 	MapLayoutSideBoxPatternAdd:setShaderVector( 1, 0, 0, 0, 0 )
 	MapLayoutSideBoxPatternAdd:setShaderVector( 2, 0, 1, 0, 0 )
@@ -82,25 +82,25 @@ CoD.TabbedScoreboardLayoutSideElements.__resetProperties = function ( f2_arg0 )
 	f2_arg0.MapLayoutSideBoxEmptyAdd:setAlpha( 1 )
 	f2_arg0.MapLayoutSideBoxEmpty:setLeftRight( 0, 0, 0, 24 )
 	f2_arg0.MapLayoutSideBoxEmpty:setAlpha( 1 )
-	f2_arg0.MapLayoutSideBoxPattern:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	f2_arg0.MapLayoutSideBoxPattern:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	f2_arg0.MapLayoutSideBoxPattern:setShaderVector( 0, 0, 1, 0, 0 )
 	f2_arg0.MapLayoutSideBoxPattern:setShaderVector( 1, 0, 0, 0, 0 )
 	f2_arg0.MapLayoutSideBoxPattern:setShaderVector( 2, 0, 1, 0, 0 )
 	f2_arg0.MapLayoutSideBoxPattern:setShaderVector( 3, 0, 0, 0, 0 )
 	f2_arg0.MapLayoutSideBoxPattern:setShaderVector( 4, 0, 0, 0, 0 )
-	f2_arg0.MapLayoutSideBoxPatternAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	f2_arg0.MapLayoutSideBoxPatternAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	f2_arg0.MapLayoutSideBoxPatternAdd:setShaderVector( 0, 0, 1, 0, 0 )
 	f2_arg0.MapLayoutSideBoxPatternAdd:setShaderVector( 1, 0, 0, 0, 0 )
 	f2_arg0.MapLayoutSideBoxPatternAdd:setShaderVector( 2, 0, 1, 0, 0 )
 	f2_arg0.MapLayoutSideBoxPatternAdd:setShaderVector( 3, 0, 0, 0, 0 )
 	f2_arg0.MapLayoutSideBoxPatternAdd:setShaderVector( 4, 0, 0, 0, 0 )
-	f2_arg0.MapLayoutDotLineAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	f2_arg0.MapLayoutDotLineAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	f2_arg0.MapLayoutDotLineAdd:setShaderVector( 0, 0, 1, 0, 0 )
 	f2_arg0.MapLayoutDotLineAdd:setShaderVector( 1, 0, 0, 0, 0 )
 	f2_arg0.MapLayoutDotLineAdd:setShaderVector( 2, 0, 1, 0, 0 )
 	f2_arg0.MapLayoutDotLineAdd:setShaderVector( 3, 0, 0, 0, 0 )
 	f2_arg0.MapLayoutDotLineAdd:setShaderVector( 4, 0, 0, 0, 0 )
-	f2_arg0.MapLayoutDotLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	f2_arg0.MapLayoutDotLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	f2_arg0.MapLayoutDotLine:setShaderVector( 0, 0, 1, 0, 0 )
 	f2_arg0.MapLayoutDotLine:setShaderVector( 1, 0, 0, 0, 0 )
 	f2_arg0.MapLayoutDotLine:setShaderVector( 2, 0, 1, 0, 0 )
@@ -120,7 +120,7 @@ CoD.TabbedScoreboardLayoutSideElements.__clipsPerState = {
 			end
 			
 			f3_arg0.MapLayoutDotLine:beginAnimation( 3100 )
-			f3_arg0.MapLayoutDotLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+			f3_arg0.MapLayoutDotLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 			f3_arg0.MapLayoutDotLine:setShaderVector( 0, 0, 0, 0, 0 )
 			f3_arg0.MapLayoutDotLine:setShaderVector( 1, 0, 0, 0, 0 )
 			f3_arg0.MapLayoutDotLine:setShaderVector( 2, 0, 0, 0, 0 )
@@ -135,7 +135,7 @@ CoD.TabbedScoreboardLayoutSideElements.__clipsPerState = {
 			end
 			
 			f3_arg0.MapLayoutDotLineAdd:beginAnimation( 2700 )
-			f3_arg0.MapLayoutDotLineAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+			f3_arg0.MapLayoutDotLineAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 			f3_arg0.MapLayoutDotLineAdd:setShaderVector( 0, 0, 0, 0, 0 )
 			f3_arg0.MapLayoutDotLineAdd:setShaderVector( 1, 0, 0, 0, 0 )
 			f3_arg0.MapLayoutDotLineAdd:setShaderVector( 2, 0, 1, 0, 0 )
@@ -150,7 +150,7 @@ CoD.TabbedScoreboardLayoutSideElements.__clipsPerState = {
 			end
 			
 			f3_arg0.MapLayoutSideBoxPattern:beginAnimation( 2500 )
-			f3_arg0.MapLayoutSideBoxPattern:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+			f3_arg0.MapLayoutSideBoxPattern:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 			f3_arg0.MapLayoutSideBoxPattern:setShaderVector( 0, 0, 0, 0, 0 )
 			f3_arg0.MapLayoutSideBoxPattern:setShaderVector( 1, 0, 0, 0, 0 )
 			f3_arg0.MapLayoutSideBoxPattern:setShaderVector( 2, 0, 1, 0, 0 )
@@ -165,7 +165,7 @@ CoD.TabbedScoreboardLayoutSideElements.__clipsPerState = {
 			end
 			
 			f3_arg0.MapLayoutSideBoxPatternAdd:beginAnimation( 2500 )
-			f3_arg0.MapLayoutSideBoxPatternAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+			f3_arg0.MapLayoutSideBoxPatternAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 			f3_arg0.MapLayoutSideBoxPatternAdd:setShaderVector( 0, 0, 0, 0, 0 )
 			f3_arg0.MapLayoutSideBoxPatternAdd:setShaderVector( 1, 0, 0, 0, 0 )
 			f3_arg0.MapLayoutSideBoxPatternAdd:setShaderVector( 2, 0, 1, 0, 0 )

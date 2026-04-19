@@ -72,7 +72,7 @@ CoD.vehicleCollisionWarning.__resetProperties = function ( f6_arg0 )
 	f6_arg0.text:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6250C6FCAC36BD4 ) )
 	f6_arg0.text:setShaderVector( 0, 0, 0, 0, 0 )
 	f6_arg0.text:setShaderVector( 1, 1, 0, 0, 1 )
-	f6_arg0.text:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x6B34AA3F39208EF ) )
+	f6_arg0.text:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_normal" ) )
 	f6_arg0.Border:setAlpha( 1 )
 end
 
@@ -117,7 +117,7 @@ CoD.vehicleCollisionWarning.__clipsPerState = {
 			f8_arg0.text:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6250C6FCAC36BD4 ) )
 			f8_arg0.text:setShaderVector( 0, 0, 0, 0, 0 )
 			f8_arg0.text:setShaderVector( 1, 1, 0.46, 0, 1 )
-			f8_arg0.text:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x6B34AA3F39208EF ) )
+			f8_arg0.text:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_normal" ) )
 			f8_local0( f8_arg0.text )
 			f8_arg0.nextClip = "DefaultClip"
 		end

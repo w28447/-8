@@ -19,7 +19,7 @@ CoD.ZMAARGenericAllTimeStatWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local YellowLine = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 22, 30 )
 	YellowLine:setImage( RegisterImage( 0xE6E505307F7B8D7 ) )
-	YellowLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	YellowLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	YellowLine:setShaderVector( 0, 0, 0, 0, 0 )
 	YellowLine:setupNineSliceShader( 3, 60 )
 	self:addElement( YellowLine )
@@ -59,7 +59,7 @@ CoD.ZMAARGenericAllTimeStatWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local TopBar = LUI.UIImage.new( 0, 1, -5, 5, 0, 0, 17, 25 )
 	TopBar:setImage( RegisterImage( 0x712894B3AB5924C ) )
-	TopBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	TopBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	TopBar:setShaderVector( 0, 0, 0, 0, 0 )
 	TopBar:setupNineSliceShader( 20, 4 )
 	self:addElement( TopBar )

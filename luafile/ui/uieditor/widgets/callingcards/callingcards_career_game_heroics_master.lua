@@ -24,7 +24,7 @@ CoD[0x6B87D0160EF7465].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local vortex = LUI.UIImage.new( 0, 0, 257, 690, 0, 0, -157.5, 354.5 )
 	vortex:setAlpha( 0.3 )
 	vortex:setImage( RegisterImage( 0x646B7C17755125C ) )
-	vortex:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	vortex:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( vortex )
 	self.vortex = vortex
 	

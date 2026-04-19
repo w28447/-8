@@ -52,7 +52,7 @@ CoD.NameAndXPBonus.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	self.MastercraftName = MastercraftName
 	
 	local Spacer = LUI.UIImage.new( 0, 0, 0, 500, 0, 0, 7, 17 )
-	Spacer:setImage( RegisterImage( 0x7615068F50B3D66 ) )
+	Spacer:setImage( RegisterImage( "blacktransparent" ) )
 	self:addElement( Spacer )
 	self.Spacer = Spacer
 	

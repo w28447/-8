@@ -163,7 +163,7 @@ CoD.directorArenaMatchmaking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	DirectorReadyButton:setAlpha( 0 )
 	DirectorReadyButton.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( 0x7A9F166E7248D86 ) )
 	DirectorReadyButton.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( 0x7A9F166E7248D86 ) )
-	DirectorReadyButton.PlayText:setText( LocalizeToUpperString( 0xE6F6113B8B75F3E ) )
+	DirectorReadyButton.PlayText:setText( LocalizeToUpperString( "menu/ready" ) )
 	DirectorReadyButton:subscribeToGlobalModel( f1_arg1, "PerController", "ButtonBits." .. Enum.LUIButton[0x755DA1E2E7C263F], function ( model )
 		DirectorReadyButton:setModel( model, f1_arg1 )
 	end )
@@ -184,8 +184,8 @@ CoD.directorArenaMatchmaking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		}
 	} )
 	DirectorPreGameButton:setAlpha( 0 )
-	DirectorPreGameButton.DirectorCustomStartButton.MiddleText:setText( LocalizeToUpperString( 0x29C903C6DF90D6F ) )
-	DirectorPreGameButton.DirectorCustomStartButton.MiddleTextFocus:setText( LocalizeToUpperString( 0x29C903C6DF90D6F ) )
+	DirectorPreGameButton.DirectorCustomStartButton.MiddleText:setText( LocalizeToUpperString( "menu/black_market" ) )
+	DirectorPreGameButton.DirectorCustomStartButton.MiddleTextFocus:setText( LocalizeToUpperString( "menu/black_market" ) )
 	DirectorPreGameButton:registerEventHandler( "gain_focus", function ( element, event )
 		local f15_local0 = nil
 		if element.gainFocus then
@@ -200,7 +200,7 @@ CoD.directorArenaMatchmaking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		OpenQuarterMaster( self, f16_arg0, f16_arg2, "", f16_arg1 )
 		return true
 	end, function ( f17_arg0, f17_arg1, f17_arg2 )
-		CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x29C903C6DF90D6F, nil, nil )
+		CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/black_market", nil, nil )
 		return true
 	end, false )
 	self:addElement( DirectorPreGameButton )

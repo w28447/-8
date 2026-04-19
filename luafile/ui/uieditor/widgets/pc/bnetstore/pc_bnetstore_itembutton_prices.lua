@@ -12,7 +12,7 @@ CoD.PC_BnetStore_ItemButton_Prices.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local SalePrice = LUI.UIText.new( 0, 0, 0, 0, 0, 0, 0, 31 )
 	SalePrice:setRGB( 0.6, 0.76, 0.23 )
 	SalePrice:setAlpha( 0 )
-	SalePrice:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	SalePrice:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	SalePrice:setTTF( "ttmussels_regular" )
 	SalePrice:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	SalePrice:setShaderVector( 0, 25, 0, 0, 0 )
@@ -24,7 +24,7 @@ CoD.PC_BnetStore_ItemButton_Prices.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	self.SalePrice = SalePrice
 	
 	local Price = LUI.UIText.new( 0, 0, 12, 149, 0, 0, 0, 31 )
-	Price:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	Price:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	Price:setTTF( "ttmussels_regular" )
 	Price:setLetterSpacing( 2 )
 	Price:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -32,7 +32,7 @@ CoD.PC_BnetStore_ItemButton_Prices.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	Price:setBackingAlpha( 0 )
 	Price:setBackingXPadding( 2 )
 	Price:setBackingImage( RegisterImage( 0x543EE2663FE7871 ) )
-	Price:setBackingMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	Price:setBackingMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	Price:setBackingShaderVector( 0, 0, 1, 0, 0 )
 	Price:setBackingShaderVector( 1, 0, 0, 0, 0 )
 	Price:setBackingShaderVector( 2, 0.39, 0.47, 0, 0 )

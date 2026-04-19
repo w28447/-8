@@ -150,7 +150,7 @@ LUI.createMenu.Social_Main = function ( f1_arg0, f1_arg1 )
 		GoBack( self, f16_arg2 )
 		return true
 	end, function ( f17_arg0, f17_arg1, f17_arg2 )
-		CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f18_arg0, f18_arg1, f18_arg2, f18_arg3 )

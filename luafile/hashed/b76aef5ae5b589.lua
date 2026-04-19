@@ -24,7 +24,7 @@ CoD.ai_tank_health_bar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local LowHealthGlow = LUI.UIImage.new( 0, 0, 15.5, 393.5, 1, 1, -26, 0 )
 	LowHealthGlow:setAlpha( 0 )
-	LowHealthGlow:setImage( RegisterImage( 0x5BE416E17DAB33B ) )
+	LowHealthGlow:setImage( RegisterImage( "uie_t7_core_hud_mapwidget_panelglow" ) )
 	self:addElement( LowHealthGlow )
 	self.LowHealthGlow = LowHealthGlow
 	

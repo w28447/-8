@@ -32,7 +32,7 @@ CoD.PositionDraft_BannerFUI.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local microtext = LUI.UIImage.new( 0, 0, 11, 29, 0, 0, 22.5, 26.5 )
 	microtext:setZRot( 45 )
 	microtext:setImage( RegisterImage( 0x16C3274D8031268 ) )
-	microtext:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	microtext:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	microtext:setShaderVector( 0, 0.19, 1, 0, 0 )
 	microtext:setShaderVector( 1, 0, 0, 0, 0 )
 	microtext:setShaderVector( 2, 0, 1, 0, 0 )

@@ -17,13 +17,13 @@ CoD.lmgInfiniteReticle_UI3D_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	local Bg0 = LUI.UIImage.new( 0, 0, -15, 337, 0, 0, -17, 160 )
 	Bg0:setAlpha( 0.25 )
 	Bg0:setImage( RegisterImage( 0xE30A82E14EBA741 ) )
-	Bg0:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Bg0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Bg0 )
 	self.Bg0 = Bg0
 	
 	local Bg = LUI.UIImage.new( 0, 0, -17, 334, 0, 0, -16, 161 )
 	Bg:setImage( RegisterImage( 0xA764852C247E1E1 ) )
-	Bg:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Bg:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Bg )
 	self.Bg = Bg
 	
@@ -60,13 +60,13 @@ CoD.lmgInfiniteReticle_UI3D_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	local lightRight = LUI.UIImage.new( 0, 0, 242, 336, 0, 0, 5, 134 )
 	lightRight:setYRot( 180 )
 	lightRight:setImage( RegisterImage( 0x7A9673BAD84CFAF ) )
-	lightRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	lightRight:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( lightRight )
 	self.lightRight = lightRight
 	
 	local lightsLeft = LUI.UIImage.new( 0, 0, -17, 77, 0, 0, 5, 134 )
 	lightsLeft:setImage( RegisterImage( 0x7A9673BAD84CFAF ) )
-	lightsLeft:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	lightsLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( lightsLeft )
 	self.lightsLeft = lightsLeft
 	
@@ -81,20 +81,20 @@ CoD.lmgInfiniteReticle_UI3D_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local Bg10 = LUI.UIImage.new( 0, 0, -17, 334, 0, 0, -16, 161 )
 	Bg10:setImage( RegisterImage( 0xEDEB7A02024B989 ) )
-	Bg10:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Bg10:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Bg10 )
 	self.Bg10 = Bg10
 	
 	local Bg100 = LUI.UIImage.new( 0, 0, -17, 334, 0, 0, -16, 161 )
 	Bg100:setImage( RegisterImage( 0xEDEB7A02024B989 ) )
-	Bg100:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Bg100:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Bg100 )
 	self.Bg100 = Bg100
 	
 	local lightsLeft0 = LUI.UIImage.new( 0, 0, -17, 77, 0, 0, 5, 134 )
 	lightsLeft0:setAlpha( 0 )
 	lightsLeft0:setImage( RegisterImage( 0x7A9673BAD84CFAF ) )
-	lightsLeft0:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	lightsLeft0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( lightsLeft0 )
 	self.lightsLeft0 = lightsLeft0
 	
@@ -102,7 +102,7 @@ CoD.lmgInfiniteReticle_UI3D_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	lightRight0:setAlpha( 0 )
 	lightRight0:setYRot( 180 )
 	lightRight0:setImage( RegisterImage( 0x7A9673BAD84CFAF ) )
-	lightRight0:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	lightRight0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( lightRight0 )
 	self.lightRight0 = lightRight0
 	
@@ -191,7 +191,7 @@ CoD.lmgInfiniteReticle_UI3D_Internal.__resetProperties = function ( f12_arg0 )
 	f12_arg0.Bg100:completeAnimation()
 	f12_arg0.Bg0:setRGB( 1, 1, 1 )
 	f12_arg0.Bg0:setAlpha( 0.25 )
-	f12_arg0.Bg0:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	f12_arg0.Bg0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	f12_arg0.Status:setRGB( 1, 1, 1 )
 	f12_arg0.Status.FrameTop:setRGB( 1, 1, 1 )
 	f12_arg0.Status.FrameBottom:setRGB( 1, 1, 1 )
@@ -323,7 +323,7 @@ CoD.lmgInfiniteReticle_UI3D_Internal.__clipsPerState = {
 			f21_arg0.Bg0:completeAnimation()
 			f21_arg0.Bg0:setRGB( 1, 0, 0 )
 			f21_arg0.Bg0:setAlpha( 1 )
-			f21_arg0.Bg0:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6B34AA3F39208EF ) )
+			f21_arg0.Bg0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_normal" ) )
 			f21_arg0.clipFinished( f21_arg0.Bg0 )
 			f21_arg0.Bg:completeAnimation()
 			f21_arg0.Bg:setRGB( 1, 0, 0 )

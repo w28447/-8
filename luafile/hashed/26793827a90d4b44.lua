@@ -13,7 +13,7 @@ CoD.WarScoreInfo_StageNotificationLeft.new = function ( f1_arg0, f1_arg1, f1_arg
 	local ContestedBacking = LUI.UIImage.new( 0, 0, -107, 205, 0, 0, 0, 60 )
 	ContestedBacking:setRGB( 0, 0, 0 )
 	ContestedBacking:setImage( RegisterImage( 0xADAC4820FE38F66 ) )
-	ContestedBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	ContestedBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	ContestedBacking:setShaderVector( 0, 0, 1, 0, 0 )
 	ContestedBacking:setShaderVector( 1, 0, 0, 0, 0 )
 	ContestedBacking:setShaderVector( 2, 0, 1, 0, 0 )
@@ -29,7 +29,7 @@ CoD.WarScoreInfo_StageNotificationLeft.new = function ( f1_arg0, f1_arg1, f1_arg
 	self.ObjectiveProgressionFrame = ObjectiveProgressionFrame
 	
 	local CaptureIcon = LUI.UIImage.new( 0, 0, -63, -3, 0, 0, -2, 58 )
-	CaptureIcon:setImage( RegisterImage( 0xA2E06D7D10CEEFF ) )
+	CaptureIcon:setImage( RegisterImage( "uie_hud_common_core_score_waricon" ) )
 	self:addElement( CaptureIcon )
 	self.CaptureIcon = CaptureIcon
 	
@@ -71,7 +71,7 @@ CoD.WarScoreInfo_StageNotificationLeft.__resetProperties = function ( f2_arg0 )
 	f2_arg0.CaptureIcon:setAlpha( 1 )
 	f2_arg0.ObjectiveProgressionFrame:setAlpha( 1 )
 	f2_arg0.ContestedBacking:setAlpha( 1 )
-	f2_arg0.ContestedBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	f2_arg0.ContestedBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	f2_arg0.ContestedBacking:setShaderVector( 0, 0, 1, 0, 0 )
 	f2_arg0.ContestedBacking:setShaderVector( 1, 0, 0, 0, 0 )
 	f2_arg0.ContestedBacking:setShaderVector( 2, 0, 1, 0, 0 )
@@ -103,7 +103,7 @@ CoD.WarScoreInfo_StageNotificationLeft.__clipsPerState = {
 			end
 			
 			f4_arg0.ContestedBacking:completeAnimation()
-			f4_arg0.ContestedBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+			f4_arg0.ContestedBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 			f4_arg0.ContestedBacking:setShaderVector( 0, 0, 1, 0, 0 )
 			f4_arg0.ContestedBacking:setShaderVector( 1, 0, 0, 0, 0 )
 			f4_arg0.ContestedBacking:setShaderVector( 2, 0, 1, 0, 0 )
@@ -152,7 +152,7 @@ CoD.WarScoreInfo_StageNotificationLeft.__clipsPerState = {
 			f10_arg0:__resetProperties()
 			f10_arg0:setupElementClipCounter( 4 )
 			f10_arg0.ContestedBacking:completeAnimation()
-			f10_arg0.ContestedBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+			f10_arg0.ContestedBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 			f10_arg0.ContestedBacking:setShaderVector( 0, 0, 0.23, 0, 0 )
 			f10_arg0.ContestedBacking:setShaderVector( 1, 0, 0, 0, 0 )
 			f10_arg0.ContestedBacking:setShaderVector( 2, 0, 1, 0, 0 )
@@ -183,7 +183,7 @@ CoD.WarScoreInfo_StageNotificationLeft.__clipsPerState = {
 			
 			f11_arg0.ContestedBacking:completeAnimation()
 			f11_arg0.ContestedBacking:setAlpha( 1 )
-			f11_arg0.ContestedBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+			f11_arg0.ContestedBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 			f11_arg0.ContestedBacking:setShaderVector( 0, 0, 0.23, 0, 0 )
 			f11_arg0.ContestedBacking:setShaderVector( 1, 0, 0, 0, 0 )
 			f11_arg0.ContestedBacking:setShaderVector( 2, 0, 1, 0, 0 )

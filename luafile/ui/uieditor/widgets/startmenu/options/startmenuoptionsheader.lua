@@ -62,7 +62,7 @@ CoD.StartMenuOptionsHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local HeaderText = LUI.UIText.new( 0.5, 0.5, -880, -380, 0, 0, 25, 75 )
 	HeaderText:setRGB( 0.63, 0.57, 0.2 )
-	HeaderText:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	HeaderText:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	HeaderText:setTTF( "ttmussels_regular" )
 	HeaderText:setLetterSpacing( 10 )
 	HeaderText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -95,7 +95,7 @@ CoD.StartMenuOptionsHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 		UpdateGamerprofile( self, f3_arg0, f3_arg2 )
 		return true
 	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )

@@ -1500,7 +1500,7 @@ CoD.AARUtility.GetPlayerRewards = function ( f60_arg0 )
 					f61_local4 = 0x84EBD21DEEA026A
 				end
 				f61_local0.mainTitle = 0x80234A872BD64AC
-				f61_local0.levelText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0x33CCE15E5387569 ) )
+				f61_local0.levelText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "zmui/nebulium_plasma" ) )
 				f61_local0.mainIcon = f61_local4
 				f61_local0.rewardType = CoD.AARUtility.AARRewardType.CURRENCY
 				f61_local0.reward1Icon = f61_local3
@@ -1810,7 +1810,7 @@ CoD.AARUtility.GetChallengeRewards = function ( f72_arg0 )
 	end
 	local f72_local1 = function ( f73_arg0 )
 		local f73_local0 = {}
-		if not f73_arg0 or not f73_arg0.icon or f73_arg0.icon == 0x7615068F50B3D66 then
+		if not f73_arg0 or not f73_arg0.icon or f73_arg0.icon == "blacktransparent" then
 			return 
 		end
 		f73_local0.mainTitle = f73_arg0.categoryName
@@ -2623,9 +2623,9 @@ CoD.AARUtility.SetupSummaryStats = function ( f119_arg0 )
 	end
 	if not IsPublicOnlineGame() then
 		f119_local8.rankLabel = Engine[0xF9F1239CFD921FE]( 0xBC1D826D76D607F, 0 )
-		f119_local8.rankIcon = 0x7615068F50B3D66
+		f119_local8.rankIcon = "blacktransparent"
 		f119_local8.nextRank = 0
-		f119_local8.nextRankIcon = 0x7615068F50B3D66
+		f119_local8.nextRankIcon = "blacktransparent"
 		f119_local8.nextRankLabel = Engine[0xF9F1239CFD921FE]( 0xBC1D826D76D607F, 1 )
 		f119_local8.levelProgress = 0
 		f119_local8.xpNeededToLevelUp = 0
@@ -2674,7 +2674,7 @@ CoD.AARUtility.SetupSummaryStats = function ( f119_arg0 )
 			f119_local8.xpNeededToLevelUp = f119_local28 - f119_local10
 		else
 			f119_local8.rankLabel = ""
-			f119_local8.rankIcon = 0x7615068F50B3D66
+			f119_local8.rankIcon = "blacktransparent"
 			f119_local8.previousProgressThisLevel = 0
 			f119_local8.xpNeededToLevelUp = 0
 		end
@@ -2684,7 +2684,7 @@ CoD.AARUtility.SetupSummaryStats = function ( f119_arg0 )
 			f119_local8.nextRankLabel = Engine[0xF9F1239CFD921FE]( 0xBC1D826D76D607F, f119_local26.level )
 		else
 			f119_local8.nextRank = 0
-			f119_local8.nextRankIcon = 0x7615068F50B3D66
+			f119_local8.nextRankIcon = "blacktransparent"
 			f119_local8.nextRankLabel = ""
 		end
 		local f119_local30, f119_local31 = CoD.AARUtility.GetPreMatchLootStreamData( f119_arg0 )
@@ -2807,7 +2807,7 @@ CoD.AARUtility.SetupSummaryStats_WZ = function ( f121_arg0 )
 					f121_local18 = Engine[0xD4A9B159BE44163]( f121_local13.level )
 				else
 					f121_local4.rankLabel = ""
-					f121_local4.rankIcon = 0x7615068F50B3D66
+					f121_local4.rankIcon = "blacktransparent"
 					f121_local4.rank = 0
 				end
 				if f121_local14 then
@@ -2828,7 +2828,7 @@ CoD.AARUtility.SetupSummaryStats_WZ = function ( f121_arg0 )
 					f121_local18 = Engine[0xD4A9B159BE44163]( f121_local14.level )
 				else
 					f121_local4.nextRankLabel = ""
-					f121_local4.nextRankIcon = 0x7615068F50B3D66
+					f121_local4.nextRankIcon = "blacktransparent"
 					f121_local4.nextRank = 0
 				end
 				if not CoD.AARUtility.ShouldHideTierRewardMiniStatus( nil, f121_arg0 ) then
@@ -2882,9 +2882,9 @@ CoD.AARUtility.SetupSummaryStats_WZ = function ( f121_arg0 )
 		f121_local4.xpNeededToLevelUp = 0
 		f121_local4.previousProgressThisLevel = 0
 		f121_local4.rankLabel = ""
-		f121_local4.rankIcon = 0x7615068F50B3D66
+		f121_local4.rankIcon = "blacktransparent"
 		f121_local4.nextRank = 0
-		f121_local4.nextRankIcon = 0x7615068F50B3D66
+		f121_local4.nextRankIcon = "blacktransparent"
 		f121_local4.nextRankLabel = ""
 		f121_local4.levelProgress = 0
 		f121_local4.xpNeededToLevelUp = 0
@@ -4106,7 +4106,7 @@ CoD.AARUtility.SetMiniProgressNextTierRewardImage = function ( f193_arg0, f193_a
 		f193_local5:set( f193_local4 )
 	else
 		local f193_local4 = f193_local1:create( "nextTierRewardImage" )
-		f193_local4:set( 0x7615068F50B3D66 )
+		f193_local4:set( "blacktransparent" )
 	end
 end
 
@@ -4362,7 +4362,7 @@ CoD.AARUtility.SetMeritModelsFromRankInfo = function ( f205_arg0, f205_arg1, f20
 		f205_local1 = Engine[0xD4A9B159BE44163]( f205_arg2.level )
 	else
 		local f205_local1 = f205_local0:create( "nextRankIcon" )
-		f205_local1:set( 0x7615068F50B3D66 )
+		f205_local1:set( "blacktransparent" )
 		f205_local1 = f205_local0:create( "nextRankLabel" )
 		f205_local1:set( "" )
 	end
@@ -4567,7 +4567,7 @@ CoD.AARUtility.SetupMeritRewardModels = function ( f207_arg0, f207_arg1, f207_ar
 	f207_local23 = f207_local22:create( "winLabel" )
 	f207_local23:set( 0xBCD9AEC3F8CFEBE )
 	f207_local23 = f207_local22:create( "challengeCoinImage" )
-	f207_local23:set( 0x7615068F50B3D66 )
+	f207_local23:set( "blacktransparent" )
 	f207_local23 = f207_local22:create( "paintCans" )
 	f207_local23:set( f207_arg0._paintCans )
 	f207_local22:create( "showRank" )
@@ -4886,7 +4886,7 @@ DataSources.AARSquadStats = ListHelper_SetupDataSource( "AARSquadStats", functio
 						f221_local17.isSelf = f221_local13 == f221_local4
 						f221_local17.playerName = f221_local13
 						f221_local17.echelon = f221_local11.level
-						f221_local17.echelonIcon = f221_local11.iconLarge or 0x7615068F50B3D66
+						f221_local17.echelonIcon = f221_local11.iconLarge or "blacktransparent"
 						f221_local17.kills = f221_local9.kills:get()
 						f221_local17.finishes = f221_local9.kills_eliminated:get()
 						f221_local17.longestKill = f221_local9.longest_distance_kill:get()
@@ -4960,7 +4960,7 @@ CoD.AARUtility.SetLevelUpModelsFromRankInfo = function ( f222_arg0, f222_arg1, f
 		f222_local8 = f222_local0:create( "nextRank" )
 		f222_local8:set( 0 )
 		f222_local8 = f222_local0:create( "nextRankIcon" )
-		f222_local8:set( 0x7615068F50B3D66 )
+		f222_local8:set( "blacktransparent" )
 	end
 end
 
@@ -5451,7 +5451,7 @@ CoD.OverlayUtility.AddSystemOverlay( "AAR_LeaguePlayDivPlacement", {
 		end
 		
 	end,
-	[CoD.OverlayUtility.aCrossPromptText] = 0x6393FF34EA56966,
+	[CoD.OverlayUtility.aCrossPromptText] = "menu/continue",
 	[CoD.OverlayUtility.ContinuePropertyName] = function ( f255_arg0, f255_arg1, f255_arg2, f255_arg3 )
 		return function ( f256_arg0, f256_arg1 )
 			CoD.AARUtility.CloseArenaLeaguePlayPlacementOverlay( f256_arg0, f256_arg1 )

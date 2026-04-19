@@ -1,0 +1,12 @@
+{
+    "name": "#lobbymenulist_zm",
+    "type": "lobbymenu",
+    "bundles": [
+        "#director_lan_zm",
+        "#director_online_zm_public",
+        "#director_online_zm_custom",
+        "#director_online_zm_theater",
+        "#director_online_zm_pregame",
+        "#director_online_zm_private"
+    ]
+}

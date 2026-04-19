@@ -40,7 +40,7 @@ CoD.PositionDraft_StatusBannerFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	self.TextBackingPC = TextBackingPC
 	
 	local DotTiledBacking = CoD.StoreCommonTextBacking.new( f1_arg0, f1_arg1, 0, 0, 14, 1091, 0, 0, 10, 159 )
-	DotTiledBacking:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DotTiledBacking:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotTiledBacking )
 	self.DotTiledBacking = DotTiledBacking
 	
@@ -98,7 +98,7 @@ CoD.PositionDraft_StatusBannerFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local microtext2 = LUI.UIImage.new( 0, 0, 47.5, 65.5, 0, 0, 6, 10 )
 	microtext2:setAlpha( 0.18 )
 	microtext2:setImage( RegisterImage( 0x16C3274D8031268 ) )
-	microtext2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	microtext2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	microtext2:setShaderVector( 0, 0, 0.38, 0, 0 )
 	microtext2:setShaderVector( 1, 0, 0, 0, 0 )
 	microtext2:setShaderVector( 2, 0, 1, 0, 0 )
@@ -117,7 +117,7 @@ CoD.PositionDraft_StatusBannerFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local microtext4 = LUI.UIImage.new( 0, 0, 1036.5, 1054.5, 0, 0, 5.5, 9.5 )
 	microtext4:setAlpha( 0.18 )
 	microtext4:setImage( RegisterImage( 0x16C3274D8031268 ) )
-	microtext4:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	microtext4:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	microtext4:setShaderVector( 0, 0, 0.38, 0, 0 )
 	microtext4:setShaderVector( 1, 0, 0, 0, 0 )
 	microtext4:setShaderVector( 2, 0, 1, 0, 0 )
@@ -136,7 +136,7 @@ CoD.PositionDraft_StatusBannerFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local microtext6 = LUI.UIImage.new( 0, 0, 47.5, 65.5, 0, 0, 160, 164 )
 	microtext6:setAlpha( 0.18 )
 	microtext6:setImage( RegisterImage( 0x16C3274D8031268 ) )
-	microtext6:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	microtext6:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	microtext6:setShaderVector( 0, 0, 0.38, 0, 0 )
 	microtext6:setShaderVector( 1, 0, 0, 0, 0 )
 	microtext6:setShaderVector( 2, 0, 1, 0, 0 )
@@ -155,7 +155,7 @@ CoD.PositionDraft_StatusBannerFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local microtext8 = LUI.UIImage.new( 0, 0, 1036.5, 1054.5, 0, 0, 160, 164 )
 	microtext8:setAlpha( 0.18 )
 	microtext8:setImage( RegisterImage( 0x16C3274D8031268 ) )
-	microtext8:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	microtext8:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	microtext8:setShaderVector( 0, 0, 0.38, 0, 0 )
 	microtext8:setShaderVector( 1, 0, 0, 0, 0 )
 	microtext8:setShaderVector( 2, 0, 1, 0, 0 )

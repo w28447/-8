@@ -71,8 +71,8 @@ LUI.createMenu.MPSpecialistHUBInspect = function ( f1_arg0, f1_arg1 )
 			modelName = "LastInput"
 		} )
 	end, false )
-	RightArrow.KeyMouseImage:setImage( RegisterImage( 0x5E74D00B45D12B6 ) )
-	RightArrow.ControllerImage:setImage( RegisterImage( 0x5E74D00B45D12B6 ) )
+	RightArrow.KeyMouseImage:setImage( RegisterImage( "uie_optionswidgets_arrow" ) )
+	RightArrow.ControllerImage:setImage( RegisterImage( "uie_optionswidgets_arrow" ) )
 	RightArrow:registerEventHandler( "gain_focus", function ( element, event )
 		local f6_local0 = nil
 		if element.gainFocus then
@@ -121,8 +121,8 @@ LUI.createMenu.MPSpecialistHUBInspect = function ( f1_arg0, f1_arg1 )
 		} )
 	end, false )
 	LeftArrow:setZRot( 180 )
-	LeftArrow.KeyMouseImage:setImage( RegisterImage( 0x5E74D00B45D12B6 ) )
-	LeftArrow.ControllerImage:setImage( RegisterImage( 0x5E74D00B45D12B6 ) )
+	LeftArrow.KeyMouseImage:setImage( RegisterImage( "uie_optionswidgets_arrow" ) )
+	LeftArrow.ControllerImage:setImage( RegisterImage( "uie_optionswidgets_arrow" ) )
 	LeftArrow:registerEventHandler( "gain_focus", function ( element, event )
 		local f12_local0 = nil
 		if element.gainFocus then
@@ -214,7 +214,7 @@ LUI.createMenu.MPSpecialistHUBInspect = function ( f1_arg0, f1_arg1 )
 		} )
 		return true
 	end, function ( f22_arg0, f22_arg1, f22_arg2 )
-		CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( HubWeaponsButton )
@@ -243,7 +243,7 @@ LUI.createMenu.MPSpecialistHUBInspect = function ( f1_arg0, f1_arg1 )
 		ProcessListAction( self, f24_arg0, f24_arg2, f24_arg1 )
 		return true
 	end, function ( f25_arg0, f25_arg1, f25_arg2 )
-		CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	options:subscribeToGlobalModel( f1_arg0, "PerController", "PositionLoadoutList.SelectedCharacterIndex", function ( model )
@@ -296,7 +296,7 @@ LUI.createMenu.MPSpecialistHUBInspect = function ( f1_arg0, f1_arg1 )
 		GoBack( self, f32_arg2 )
 		return true
 	end, function ( f33_arg0, f33_arg1, f33_arg2 )
-		CoD.Menu.SetButtonLabel( f33_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f33_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], "ui_contextual_2", function ( f34_arg0, f34_arg1, f34_arg2, f34_arg3 )

@@ -24,7 +24,7 @@ CoD.GameEndScore_KillerIdentity.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local BackingBorder = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BackingBorder:setAlpha( 0 )
-	BackingBorder:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	BackingBorder:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	BackingBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	BackingBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingBorder:setupNineSliceShader( 196, 88 )
@@ -33,7 +33,7 @@ CoD.GameEndScore_KillerIdentity.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local BackingBorder2 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BackingBorder2:setAlpha( 0 )
-	BackingBorder2:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	BackingBorder2:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	BackingBorder2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	BackingBorder2:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingBorder2:setupNineSliceShader( 196, 88 )
@@ -42,7 +42,7 @@ CoD.GameEndScore_KillerIdentity.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local BackingEmblem = LUI.UIImage.new( 0, 0, 3, 79, 0, 0, 2, 78 )
 	BackingEmblem:setAlpha( 0 )
-	BackingEmblem:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	BackingEmblem:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	BackingEmblem:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	BackingEmblem:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingEmblem:setupNineSliceShader( 196, 88 )
@@ -170,7 +170,7 @@ CoD.GameEndScore_KillerIdentity.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local BackingRank = LUI.UIImage.new( 0, 0, 401, 505, 0, 0, 2, 78 )
 	BackingRank:setAlpha( 0 )
-	BackingRank:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	BackingRank:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	BackingRank:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	BackingRank:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingRank:setupNineSliceShader( 196, 88 )
@@ -242,8 +242,8 @@ CoD.GameEndScore_KillerIdentity.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local FrontendFrame = LUI.UIImage.new( 0.5, 0.5, -254, 254, 0.5, 0.5, -41, 41 )
 	FrontendFrame:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	FrontendFrame:setAlpha( 0 )
-	FrontendFrame:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrontendFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrame:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrontendFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrame:setupNineSliceShader( 12, 12 )
 	self:addElement( FrontendFrame )

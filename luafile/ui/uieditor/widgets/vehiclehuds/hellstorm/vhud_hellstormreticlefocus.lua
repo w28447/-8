@@ -15,7 +15,7 @@ CoD.vhud_HellstormReticleFocus.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local LAdd = LUI.UIImage.new( 0, 0, 0, 110, 0, 0, 0, 110 )
 	LAdd:setAlpha( 0.2 )
 	LAdd:setImage( RegisterImage( 0xC49ECB87DAA4E82 ) )
-	LAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	LAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( LAdd )
 	self.LAdd = LAdd
 	
@@ -27,7 +27,7 @@ CoD.vhud_HellstormReticleFocus.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local RAdd = LUI.UIImage.new( 0.5, 0.5, 110, 0, 0, 0, 0, 110 )
 	RAdd:setAlpha( 0.2 )
 	RAdd:setImage( RegisterImage( 0xC49ECB87DAA4E82 ) )
-	RAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	RAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( RAdd )
 	self.RAdd = RAdd
 	
@@ -42,7 +42,7 @@ CoD.vhud_HellstormReticleFocus.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local PinBot = LUI.UIImage.new( 0, 0, 98.5, 122.5, 0, 0, 200, 220 )
 	PinBot:setZRot( 90 )
 	PinBot:setImage( RegisterImage( 0x99A8C3E368A2195 ) )
-	PinBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	PinBot:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PinBot )
 	self.PinBot = PinBot
 	

@@ -46,7 +46,7 @@ LUI.createMenu.StartMenu_Main = function ( f1_arg0, f1_arg1 )
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -81,7 +81,7 @@ LUI.createMenu.StartMenu_Main = function ( f1_arg0, f1_arg1 )
 	local DividerSolidBot = LUI.UIImage.new( 0, 1.01, -11, -11, 0, 0, 41, 45 )
 	DividerSolidBot:setRGB( ColorSet.T8__BEIGE__HEADER.r, ColorSet.T8__BEIGE__HEADER.g, ColorSet.T8__BEIGE__HEADER.b )
 	DividerSolidBot:setAlpha( 0 )
-	DividerSolidBot:setImage( RegisterImage( 0x84B43D5B04D263A ) )
+	DividerSolidBot:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_line" ) )
 	DividerSolidBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	DividerSolidBot:setShaderVector( 0, 0, 0, 0, 0 )
 	DividerSolidBot:setupNineSliceShader( 8, 4 )
@@ -89,7 +89,7 @@ LUI.createMenu.StartMenu_Main = function ( f1_arg0, f1_arg1 )
 	self.DividerSolidBot = DividerSolidBot
 	
 	local SafeAreaContainer = CoD.StartMenu_SafeAreaContainer.new( f1_local1, f1_arg0, 0, 1, 0, 0, 0, 1, 0, 0 )
-	SafeAreaContainer.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x4DC58203AB2DE0 ) )
+	SafeAreaContainer.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/menu" ) )
 	self:addElement( SafeAreaContainer )
 	self.SafeAreaContainer = SafeAreaContainer
 	
@@ -334,19 +334,19 @@ LUI.createMenu.StartMenu_Main = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f27_arg0, f27_arg1, f27_arg2 )
 		if InFrontend() then
-			CoD.Menu.SetButtonLabel( f27_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+			CoD.Menu.SetButtonLabel( f27_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		elseif not IsPC() and not IsDemoPlaying() then
 			CoD.Menu.SetButtonLabel( f27_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x3996BAAC73C3F6D, nil, nil )
 			return true
 		elseif IsPC() and not IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f27_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+			CoD.Menu.SetButtonLabel( f27_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		elseif IsPC() and IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f27_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+			CoD.Menu.SetButtonLabel( f27_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		elseif IsDemoPlaying() and not IsPC() then
-			CoD.Menu.SetButtonLabel( f27_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+			CoD.Menu.SetButtonLabel( f27_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		else
 			return false

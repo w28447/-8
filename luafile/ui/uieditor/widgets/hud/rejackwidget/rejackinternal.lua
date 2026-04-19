@@ -113,19 +113,19 @@ CoD.RejackInternal.new = function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3, f5_arg4,
 	
 	local Grid = LUI.UIImage.new( 0, 0, 94, 687, 0, 0, 188, 298 )
 	Grid:setImage( RegisterImage( 0x4E5C4572193FC09 ) )
-	Grid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Grid:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Grid )
 	self.Grid = Grid
 	
 	local Grid0 = LUI.UIImage.new( 0, 0, 94, 687, 0, 0, 188, 298 )
 	Grid0:setImage( RegisterImage( 0x4E5C4572193FC09 ) )
-	Grid0:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Grid0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Grid0 )
 	self.Grid0 = Grid0
 	
 	local HeartBeatLine = LUI.UIImage.new( 0, 0, 94, 687, 0, 0, 188, 298 )
 	HeartBeatLine:setImage( RegisterImage( 0x73195768C152827 ) )
-	HeartBeatLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x910274CA3518744 ) )
+	HeartBeatLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	HeartBeatLine:setShaderVector( 0, 2.8, 0, 0, 0 )
 	HeartBeatLine:setShaderVector( 1, 0, 0, 0, 0 )
 	HeartBeatLine:setShaderVector( 2, 1, 0, 0, 0 )
@@ -166,7 +166,7 @@ CoD.RejackInternal.new = function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3, f5_arg4,
 	
 	local HeartBeatLineAlive = LUI.UIImage.new( 0, 0, 94, 634, 0, 0, 188, 296 )
 	HeartBeatLineAlive:setImage( RegisterImage( 0xD3B8EC8475FF3B8 ) )
-	HeartBeatLineAlive:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	HeartBeatLineAlive:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( HeartBeatLineAlive )
 	self.HeartBeatLineAlive = HeartBeatLineAlive
 	
@@ -233,7 +233,7 @@ CoD.RejackInternal.__resetProperties = function ( f6_arg0 )
 	f6_arg0.Grid:setAlpha( 1 )
 	f6_arg0.HeartBeatLine:setRGB( 1, 1, 1 )
 	f6_arg0.HeartBeatLine:setAlpha( 1 )
-	f6_arg0.HeartBeatLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x910274CA3518744 ) )
+	f6_arg0.HeartBeatLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	f6_arg0.HeartBeatLine:setShaderVector( 0, 2.8, 0, 0, 0 )
 	f6_arg0.HeartBeatLine:setShaderVector( 1, 0, 0, 0, 0 )
 	f6_arg0.HeartBeatLine:setShaderVector( 2, 1, 0, 0, 0 )
@@ -395,7 +395,7 @@ CoD.RejackInternal.__clipsPerState = {
 			f8_arg0.HeartBeatLine:completeAnimation()
 			f8_arg0.HeartBeatLine:setRGB( 0, 0.78, 0 )
 			f8_arg0.HeartBeatLine:setAlpha( 1 )
-			f8_arg0.HeartBeatLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x910274CA3518744 ) )
+			f8_arg0.HeartBeatLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 			f8_arg0.HeartBeatLine:setShaderVector( 0, 0, 0, 0, 0 )
 			f8_arg0.HeartBeatLine:setShaderVector( 1, 0, 0, 0, 0 )
 			f8_arg0.HeartBeatLine:setShaderVector( 2, 1, 0, 0, 0 )

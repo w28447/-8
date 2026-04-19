@@ -261,7 +261,7 @@ LUI.createMenu.StartMenu_Options_Network = function ( f8_arg0, f8_arg1 )
 	
 	Header = CoD.CommonHeader.new( f8_local1, f8_arg0, 0.5, 0.5, -960, 960, 0, 0, 0, 67 )
 	Header.BGSceneBlur:setAlpha( 0 )
-	Header.subtitle.StageTitle:setText( LocalizeToUpperString( 0x9F9A830F04564A7 ) )
+	Header.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/network" ) )
 	Header.subtitle.subtitle:setAlpha( 0 )
 	Header:subscribeToGlobalModel( f8_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f14_local0 = model:get()
@@ -340,7 +340,7 @@ LUI.createMenu.StartMenu_Options_Network = function ( f8_arg0, f8_arg1 )
 		UpdateGamerprofile( self, f21_arg0, f21_arg2 )
 		return true
 	end, function ( f22_arg0, f22_arg1, f22_arg2 )
-		CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	f8_local1:AddButtonCallbackFunction( self, f8_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f23_arg0, f23_arg1, f23_arg2, f23_arg3 )
@@ -351,7 +351,7 @@ LUI.createMenu.StartMenu_Options_Network = function ( f8_arg0, f8_arg1 )
 		end
 	end, function ( f24_arg0, f24_arg1, f24_arg2 )
 		if AlwaysFalse() then
-			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

@@ -57,7 +57,7 @@ CoD[0x60D0B6654F8E009].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local watersplashAnimate = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	watersplashAnimate:setAlpha( 0.4 )
 	watersplashAnimate:setImage( RegisterImage( 0x7E8B34879C1B0A ) )
-	watersplashAnimate:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD8EA9FE9B0BCF75 ) )
+	watersplashAnimate:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	watersplashAnimate:setShaderVector( 0, 1, 1, 0, 0 )
 	watersplashAnimate:setShaderVector( 1, -0.08, 0, 0, 0 )
 	self:addElement( watersplashAnimate )
@@ -75,7 +75,7 @@ CoD[0x60D0B6654F8E009].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local yelloweye = LUI.UIImage.new( 0, 0, 369, 600, 0, 0, -43, 130 )
 	yelloweye:setImage( RegisterImage( 0x44AF50247B88F60 ) )
-	yelloweye:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	yelloweye:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( yelloweye )
 	self.yelloweye = yelloweye
 	

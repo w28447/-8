@@ -99,10 +99,10 @@ CoD.LootBaseOptionGrid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 		end
 	end, function ( f12_arg0, f12_arg1, f12_arg2 )
 		if not CoD.WeaponOptionsUtility.IsItemWeaponOptionLocked( f12_arg1, f12_arg0, f12_arg2 ) and CoD.WeaponOptionsUtility.IsItemWeaponOptionLootOwned( f12_arg1, f12_arg0, f12_arg2 ) and not CoD.WeaponOptionsUtility.IsWeaponOptionEquipped( f12_arg1, f12_arg0, f12_arg2, "camoIndex" ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif CoD.WeaponOptionsUtility.IsWeaponOptionEquipped( f12_arg1, f12_arg0, f12_arg2, "camoIndex" ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -177,8 +177,8 @@ CoD.LootBaseOptionGrid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	BottomBracket9Slice = LUI.UIImage.new( 0, 0, 0, 1214, 0, 0, 28, 37 )
 	BottomBracket9Slice:setAlpha( 0.5 )
 	BottomBracket9Slice:setZRot( 180 )
-	BottomBracket9Slice:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	BottomBracket9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	BottomBracket9Slice:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	BottomBracket9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BottomBracket9Slice:setShaderVector( 0, 0, 0, 0, 0 )
 	BottomBracket9Slice:setupNineSliceShader( 16, 4 )
 	self:addElement( BottomBracket9Slice )

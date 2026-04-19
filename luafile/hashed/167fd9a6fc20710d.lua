@@ -14,7 +14,7 @@ CoD.EmblemEditorMaterialControls.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local BackingTop = LUI.UIImage.new( 0, 0, 0, 420, 0, 0, 0, 190 )
-	BackingTop:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	BackingTop:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	BackingTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	BackingTop:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingTop:setupNineSliceShader( 196, 88 )
@@ -88,7 +88,7 @@ CoD.EmblemEditorMaterialControls.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local dividerH = LUI.UIImage.new( 0, 0, 0, 420, 0, 0, 22.5, 26.5 )
 	dividerH:setAlpha( 0.2 )
-	dividerH:setImage( RegisterImage( 0x84B43D5B04D263A ) )
+	dividerH:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_line" ) )
 	dividerH:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	dividerH:setShaderVector( 0, 0, 0, 0, 0 )
 	dividerH:setupNineSliceShader( 8, 4 )
@@ -97,8 +97,8 @@ CoD.EmblemEditorMaterialControls.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local Frame01 = LUI.UIImage.new( 0, 0, -1, 421, 0, 0, 0, 190 )
 	Frame01:setAlpha( 0.2 )
-	Frame01:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	Frame01:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	Frame01:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	Frame01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Frame01:setShaderVector( 0, 0, 0, 0, 0 )
 	Frame01:setupNineSliceShader( 16, 16 )
 	self:addElement( Frame01 )

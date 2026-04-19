@@ -11,7 +11,7 @@ CoD.missileProximityAlert.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local GlowRed = LUI.UIImage.new( 0, 0, -311, 631, 0, 0, -240, 281 )
 	GlowRed:setRGB( 1, 0, 0 )
 	GlowRed:setImage( RegisterImage( 0x562B0510D028651 ) )
-	GlowRed:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	GlowRed:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowRed )
 	self.GlowRed = GlowRed
 	
@@ -30,7 +30,7 @@ CoD.missileProximityAlert.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local BackgroundAdd = LUI.UIImage.new( 0, 0, 0, 320, 0, 0, 0, 41 )
 	BackgroundAdd:setRGB( 0.86, 0.06, 0 )
-	BackgroundAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	BackgroundAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BackgroundAdd )
 	self.BackgroundAdd = BackgroundAdd
 	
@@ -57,7 +57,7 @@ CoD.missileProximityAlert.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.AccentTopAdd = AccentTopAdd
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 0, 0, 320, 0.09, 0.09, -3.5, 37.5 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -74,7 +74,7 @@ CoD.missileProximityAlert.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.IncomingText = IncomingText
 	
 	local TiledLed2 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	TiledLed2:setImage( RegisterImage( 0x4B6FFA90272070E ) )
+	TiledLed2:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
 	TiledLed2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledLed2:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledLed2:setupNineSliceShader( 24, 24 )
@@ -82,7 +82,7 @@ CoD.missileProximityAlert.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.TiledLed2 = TiledLed2
 	
 	local TiledLed3 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	TiledLed3:setImage( RegisterImage( 0x4B6FFA90272070E ) )
+	TiledLed3:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
 	TiledLed3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledLed3:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledLed3:setupNineSliceShader( 24, 24 )
@@ -90,7 +90,7 @@ CoD.missileProximityAlert.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.TiledLed3 = TiledLed3
 	
 	local TiledLedAdd = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	TiledLedAdd:setImage( RegisterImage( 0x4B6FFA90272070E ) )
+	TiledLedAdd:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
 	TiledLedAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledLedAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledLedAdd:setupNineSliceShader( 24, 24 )
@@ -115,7 +115,7 @@ CoD.missileProximityAlert.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.Glow = Glow
 	
 	local TiledLed = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	TiledLed:setImage( RegisterImage( 0x4B6FFA90272070E ) )
+	TiledLed:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
 	TiledLed:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledLed:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledLed:setupNineSliceShader( 24, 24 )

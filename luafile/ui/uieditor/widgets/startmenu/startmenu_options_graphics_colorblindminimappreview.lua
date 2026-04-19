@@ -112,7 +112,7 @@ CoD.StartMenu_Options_Graphics_ColorBlindMinimapPreview.new = function ( f1_arg0
 	end
 	
 	friendlyHeader.__Color()
-	friendlyHeader:setText( LocalizeToUpperString( 0x57D890DF7DB4CFC ) )
+	friendlyHeader:setText( LocalizeToUpperString( "menu/friendly" ) )
 	friendlyHeader:setTTF( "ttmussels_regular" )
 	friendlyHeader:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	friendlyHeader:setAlignment( Enum.LUIAlignment[0x70510683C22104B] )
@@ -125,7 +125,7 @@ CoD.StartMenu_Options_Graphics_ColorBlindMinimapPreview.new = function ( f1_arg0
 	end
 	
 	enemyHeader.__Color()
-	enemyHeader:setText( LocalizeToUpperString( 0x91876E35BECF3CD ) )
+	enemyHeader:setText( LocalizeToUpperString( "menu/enemy" ) )
 	enemyHeader:setTTF( "ttmussels_regular" )
 	enemyHeader:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	enemyHeader:setAlignment( Enum.LUIAlignment[0x70510683C22104B] )

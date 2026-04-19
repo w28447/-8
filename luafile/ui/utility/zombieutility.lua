@@ -1174,7 +1174,7 @@ end
 
 CoD.ZombieUtility.GetTrialsGameOverText = function ( f85_arg0 )
 	if f85_arg0 == CoD.ZombieUtility.TrialsGameStates.STATE_GAME_OVER_SUCCESS then
-		return LocalizeToUpperString( 0x400A284ADF5EAC0 )
+		return LocalizeToUpperString( "zmtrials/trial_completed" )
 	else
 		return Engine[0xF9F1239CFD921FE]( 0x22EF41D702EE72D )
 	end
@@ -1273,7 +1273,7 @@ CoD.ZombieUtility.GetLocalZMDifficultyImage = function ( f92_arg0 )
 		f92_local1 = f92_local1:create( "localZMDifficulty" )
 		return f92_local0[(f92_local1:get() or 1) + 1]
 	else
-		return 0x7615068F50B3D66
+		return "blacktransparent"
 	end
 end
 
@@ -1670,14 +1670,14 @@ CoD.ZombieUtility.UpdateZMPlaylistInfo = function ( f112_arg0, f112_arg1, f112_a
 	
 	if f112_arg2 == CoD.ZombieUtility.ZMPlaylistTabs.FEATURED or f112_arg2 == CoD.ZombieUtility.ZMPlaylistTabs.PUBLIC then
 		f112_local1.name:set( f112_local0.name )
-		f112_local1.image:set( f112_local0.imageTileSideInfo or 0x7615068F50B3D66 )
+		f112_local1.image:set( f112_local0.imageTileSideInfo or "blacktransparent" )
 		f112_local1.tabDesc:set( 0x0 )
 		f112_local1.desc:set( Engine[0x32A860841DBD025]( f112_arg0, f112_arg1, Enum.eModes[0x3723205FAE52C4A] ) )
 		f112_local1.storyDesc:set( f112_local7() )
 		f112_local1.lockState:set( f112_local0.lockState )
 	elseif f112_arg2 == 0x73B5B4896F886CB then
 		f112_local1.name:set( CoD.MapUtility.GetMapValue( f112_local3, "mapName", 0x0 ) )
-		f112_local1.image:set( f112_local0.imageTileSideInfo or 0x7615068F50B3D66 )
+		f112_local1.image:set( f112_local0.imageTileSideInfo or "blacktransparent" )
 		f112_local1.tabDesc:set( 0xF44B71F613A7D65 )
 		f112_local1.desc:set( MapNameToLocalizedMapDescription( f112_local3 ) )
 		f112_local1.storyDesc:set( f112_local7() )
@@ -1697,7 +1697,7 @@ CoD.ZombieUtility.UpdateZMPlaylistInfo = function ( f112_arg0, f112_arg1, f112_a
 		end
 	elseif f112_arg2 == 0x8512D346B01B940 then
 		f112_local1.name:set( CoD.MapUtility.GetMapValue( f112_local3, "mapName", 0x0 ) )
-		f112_local1.image:set( f112_local0.imageTileSideInfo or 0x7615068F50B3D66 )
+		f112_local1.image:set( f112_local0.imageTileSideInfo or "blacktransparent" )
 		f112_local1.tabDesc:set( 0x59DF0D7D85936E1 )
 		f112_local1.desc:set( MapNameToLocalizedMapDescription( f112_local3 ) )
 		f112_local1.storyDesc:set( f112_local7() )
@@ -1711,7 +1711,7 @@ CoD.ZombieUtility.UpdateZMPlaylistInfo = function ( f112_arg0, f112_arg1, f112_a
 		end
 	elseif f112_arg2 == 0x3037F6188BD285F then
 		f112_local1.name:set( CoD.MapUtility.GetMapValue( f112_local3, "mapName", 0x0 ) )
-		f112_local1.image:set( f112_local0.imageTileSideInfo or 0x7615068F50B3D66 )
+		f112_local1.image:set( f112_local0.imageTileSideInfo or "blacktransparent" )
 		f112_local1.tabDesc:set( 0xF8845568A0DA5AD )
 		f112_local1.desc:set( MapNameToLocalizedMapDescription( f112_local3 ) )
 		f112_local1.storyDesc:set( f112_local7() )
@@ -1724,7 +1724,7 @@ CoD.ZombieUtility.UpdateZMPlaylistInfo = function ( f112_arg0, f112_arg1, f112_a
 		end
 	elseif f112_arg2 == 0x8F6A072F8CF2F88 then
 		f112_local1.name:set( CoD.MapUtility.GetMapValue( f112_local3, CoD.ZombieUtility.GetTrialMapNameFieldName( CoD.ZombieUtility.GetZMPlaylistTrialVariant( f112_local0 ) ), 0x0 ) )
-		f112_local1.image:set( f112_local0.imageTileSideInfo or 0x7615068F50B3D66 )
+		f112_local1.image:set( f112_local0.imageTileSideInfo or "blacktransparent" )
 		f112_local1.tabDesc:set( 0x5A74962FD2F07DE )
 		f112_local1.desc:set( MapNameToLocalizedMapDescription( f112_local3 ) )
 		f112_local1.storyDesc:set( f112_local7() )
@@ -1762,7 +1762,7 @@ CoD.ZombieUtility.UpdateZMPlaylistInfo = function ( f112_arg0, f112_arg1, f112_a
 		end
 	elseif f112_arg2 == 0xBC1A39D743DD767 then
 		f112_local1.name:set( f112_local0.name )
-		f112_local1.image:set( f112_local0.imageTileSideInfo or 0x7615068F50B3D66 )
+		f112_local1.image:set( f112_local0.imageTileSideInfo or "blacktransparent" )
 		f112_local1.tabDesc:set( 0x52D3B2A3C8DB965 )
 		f112_local1.desc:set( Engine[0x32A860841DBD025]( f112_arg0, f112_arg1, Enum.eModes[0x3723205FAE52C4A] ) )
 		f112_local1.storyDesc:set( 0x0 )
@@ -2196,7 +2196,7 @@ CoD.ZombieUtility.ZMSummaryListGenericInfoTableFunc = function ( f124_arg0, f124
 				value = CoD.TextUtility.FormatNumberWithDelimiters( f124_local1.roundReached )
 			},
 			{
-				title = 0xBD36CB2DA85CF8C,
+				title = "zmui/match_time",
 				value = f124_local1.time
 			}
 		}
@@ -2285,7 +2285,7 @@ CoD.ZombieUtility.ZMSummaryListGenericInfoTableFunc = function ( f124_arg0, f124
 			} )
 		end
 		table.insert( f124_local3, {
-			title = 0xBD36CB2DA85CF8C,
+			title = "zmui/match_time",
 			value = f124_local1.time
 		} )
 	end
@@ -2857,7 +2857,7 @@ DataSources.DirectorPlaylistMapList = DataSourceHelpers.ListSetup( "DirectorPlay
 		}
 		local f149_local31 = f149_local15.imageTileSmall
 		if not f149_local31 then
-			f149_local31 = 0x7615068F50B3D66
+			f149_local31 = "blacktransparent"
 		end
 		f149_local30.tileImage = f149_local31
 		f149_local30.playlistDesc = f149_local20
@@ -2872,7 +2872,7 @@ DataSources.DirectorPlaylistMapList = DataSourceHelpers.ListSetup( "DirectorPlay
 		f149_local30.playlistDesc = f149_local20
 		f149_local31 = f149_local15.imageTileLarge
 		if not f149_local31 then
-			f149_local31 = 0x7615068F50B3D66
+			f149_local31 = "blacktransparent"
 		end
 		f149_local30.icon = f149_local31
 		f149_local30.iconBackground = f149_local15.imageBackground
@@ -3125,7 +3125,7 @@ CoD.ZombieUtility.SetZMLoadoutPreviewInfoElement = function ( f157_arg0, f157_ar
 	end
 	local f157_local5 = CoD.SafeGetModelValue( f157_arg1:getModel(), "isRestricted" )
 	if f157_local1 then
-		CoD.ZombieUtility.SetZMLoadoutPreviewInfo( "", 0x0, 0x7615068F50B3D66, f157_arg2, false )
+		CoD.ZombieUtility.SetZMLoadoutPreviewInfo( "", 0x0, "blacktransparent", f157_arg2, false )
 	elseif f157_local2 and f157_local3 and f157_local4 and f157_local5 ~= nil then
 		CoD.ZombieUtility.SetZMLoadoutPreviewInfo( f157_local2, f157_local3, f157_local4, f157_arg2, f157_local5 )
 	end
@@ -3144,7 +3144,7 @@ end
 
 CoD.ZombieUtility.SetZMLoadoutPreviewInfo = function ( f159_arg0, f159_arg1, f159_arg2, f159_arg3, f159_arg4 )
 	local f159_local0 = DataSources.DirectorZMLoadoutPreview.getModel( f159_arg3 )
-	if not f159_arg2 or f159_arg2 == 0x0 or f159_arg2 == 0x7615068F50B3D66 or f159_arg2 == "blacktransparent" then
+	if not f159_arg2 or f159_arg2 == 0x0 or f159_arg2 == "blacktransparent" or f159_arg2 == "blacktransparent" then
 		f159_local0.ZMLoadoutPreviewInfoShown:set( false )
 	else
 		f159_local0.ZMLoadoutPreviewInfoShown:set( true )
@@ -3472,7 +3472,7 @@ CoD.ZombieUtility.SpecialZombieNotification = function ( f182_arg0, f182_arg1, f
 		clip = "TextAndImageSpecial",
 		title = Engine.Localize( Engine.GetIString( f182_local0[2], "CS_LOCALIZED_STRINGS" ) ),
 		description = 0x0,
-		specialImage = RegisterImage( CoD.ZombieUtility.SpecialZombiesImages[f182_local0[1]] or 0x7615068F50B3D66 )
+		specialImage = RegisterImage( CoD.ZombieUtility.SpecialZombiesImages[f182_local0[1]] or "blacktransparent" )
 	} )
 end
 
@@ -3701,7 +3701,7 @@ CoD.ZombieUtility.SubscribeToLobbyClientInfo = function ( f193_arg0, f193_arg1 )
 end
 
 CoD.ZombieUtility.GetShieldIconForCurrentMap = function ( f195_arg0 )
-	return CoD.MapUtility.GetMapValue( Engine.GetCurrentMap(), 0xC6CD32D003CA1F0, 0x7615068F50B3D66 )
+	return CoD.MapUtility.GetMapValue( Engine.GetCurrentMap(), 0xC6CD32D003CA1F0, "blacktransparent" )
 end
 
 CoD.ZombieUtility.InitTutorialQuickPlayModel = function ( f196_arg0 )

@@ -11,7 +11,7 @@ CoD.StartMenu_CODpoints.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local Background = LUI.UIImage.new( 0.5, 0.5, -100, 100, 0.5, 0.5, -40, 40 )
 	Background:setRGB( 0.32, 0.32, 0.32 )
 	Background:setAlpha( 0 )
-	Background:setMaterial( LUI.UIImage.GetCachedMaterial( 0x83C485F153D0720 ) )
+	Background:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_smoke" ) )
 	Background:setShaderVector( 0, 0.4, 0, 0, 0 )
 	self:addElement( Background )
 	self.Background = Background

@@ -22,7 +22,7 @@ CoD.InspectionRankWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	self.RankIcon = RankIcon
 	
 	local PlayerLevel = LUI.UIText.new( 0, 0, 28, 228, 0, 0, 199.5, 247.5 )
-	PlayerLevel:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	PlayerLevel:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	PlayerLevel:setTTF( "dinnext_regular" )
 	PlayerLevel:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )
 	PlayerLevel:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

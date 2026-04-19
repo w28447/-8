@@ -250,7 +250,7 @@ DataSources.StartMenuTabs = ListHelper_SetupDataSource( "StartMenuTabs", functio
 					if f17_local4.hudItems.playerOnInfectedPlatoon:get() == 0 then
 						table.insert( f17_local0, {
 							models = {
-								name = 0x1346019482BDC3C,
+								name = "warzone/inventory",
 								tabWidget = "CoD.StartMenu_Inventory"
 							},
 							properties = {
@@ -576,7 +576,7 @@ end
 CoD.StartMenuUtility.QuitGameWarningPrompt = function ( f26_arg0, f26_arg1 )
 	CoD.OverlayUtility.AddAutoDetectOverlay( "QuitWarningPopup", {
 		title = function ()
-			local f27_local0 = 0xD6D98060CE88B87
+			local f27_local0 = "menu/quit_game"
 			if not CoD.isOnlineGame() then
 				f27_local0 = 0x954494EB4C452D3
 			end
@@ -613,7 +613,7 @@ CoD.StartMenuUtility.QuitGameWarningPrompt = function ( f26_arg0, f26_arg1 )
 			local f32_local0 = {}
 			table.insert( f32_local0, {
 				action = GoBack,
-				text = 0xC2E92C54C2BE289,
+				text = "menu/cancel",
 				isCancelOption = true
 			} )
 			local f32_local1 = 0xAD8B52FCDEF75D6

@@ -11,7 +11,7 @@ CoD.PC_StartMenu_Options_Glow.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local Glow = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Glow:setZRot( 180 )
 	Glow:setImage( RegisterImage( 0x61F4A521D2954B6 ) )
-	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
 	

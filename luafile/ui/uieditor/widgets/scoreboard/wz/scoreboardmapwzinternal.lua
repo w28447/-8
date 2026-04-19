@@ -119,7 +119,7 @@ CoD.ScoreboardMapWZInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local MapFrame = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	MapFrame:setImage( RegisterImage( 0x3D54BC53A40189A ) )
-	MapFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	MapFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	MapFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	MapFrame:setupNineSliceShader( 16, 16 )
 	self:addElement( MapFrame )

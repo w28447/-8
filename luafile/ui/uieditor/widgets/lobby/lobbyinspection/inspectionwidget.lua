@@ -114,7 +114,7 @@ CoD.InspectionWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 		PlaySoundAlias( "uin_press_generic" )
 		return true
 	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	f1_arg0:AddButtonCallbackFunction( CallingCardShowcaseList, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
@@ -190,7 +190,7 @@ CoD.InspectionWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 		CoD.InspectionUtility.OnTrophyShowcaseSelected( f19_arg1, f19_arg2, f19_arg0 )
 		return true
 	end, function ( f20_arg0, f20_arg1, f20_arg2 )
-		CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( InspectionTrophyWidget )

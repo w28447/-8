@@ -29,7 +29,7 @@ CoD.IGRPerksDirectorButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local Icon = LUI.UIImage.new( 0.5, 0.5, -347.5, -293.5, 0.5, 0.5, -27, 27 )
 	Icon:setImage( RegisterImage( 0xBCE82CFF781C72F ) )
-	Icon:setMaterial( LUI.UIImage.GetCachedMaterial( 0x98A2728B4675FB5 ) )
+	Icon:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_glint" ) )
 	Icon:setShaderVector( 0, -0.03, 0, 0, 0 )
 	Icon:setShaderVector( 1, -46.8, 0, 0, 0 )
 	self:addElement( Icon )

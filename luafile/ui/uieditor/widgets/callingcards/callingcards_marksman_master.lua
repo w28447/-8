@@ -26,14 +26,14 @@ CoD[0x3890464C4936BF0].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local LightSpin = CoD.CallingCards_Asset_spinburst_container.new( f1_arg0, f1_arg1, 0, 0, -173, 653, 0, 0, -92, 360 )
 	LightSpin:setScale( 0.5, 0.5 )
-	LightSpin:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	LightSpin:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( LightSpin )
 	self.LightSpin = LightSpin
 	
 	local LightSpin2 = CoD.CallingCards_Asset_spinburst_container.new( f1_arg0, f1_arg1, 0, 0, 246, 1072, 0, 0, -106, 346 )
 	LightSpin2:setAlpha( 0.5 )
 	LightSpin2:setScale( 0.5, 0.5 )
-	LightSpin2:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	LightSpin2:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( LightSpin2 )
 	self.LightSpin2 = LightSpin2
 	
@@ -44,7 +44,7 @@ CoD[0x3890464C4936BF0].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local bgGlow = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	bgGlow:setImage( RegisterImage( 0x8FC930C4DD7670C ) )
-	bgGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	bgGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( bgGlow )
 	self.bgGlow = bgGlow
 	
@@ -65,7 +65,7 @@ CoD[0x3890464C4936BF0].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	shimmer:setRGB( 0.97, 0.96, 0.1 )
 	shimmer:setAlpha( 0.5 )
 	shimmer:setImage( RegisterImage( 0x5A9938B5E218CE4 ) )
-	shimmer:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9227A50BA2B8D21 ) )
+	shimmer:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	shimmer:setShaderVector( 0, 0, 3, 0, 0 )
 	shimmer:setShaderVector( 1, 12, 0, 0, 0 )
 	self:addElement( shimmer )

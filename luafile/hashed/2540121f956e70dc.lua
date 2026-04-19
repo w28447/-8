@@ -71,7 +71,7 @@ CoD.WeaponPersonalizeSlotContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 		CoD.CACUtility.OpenCACOverlay( self, f9_arg1, f9_arg2, "WeaponDeathFxSelect", f9_arg0, "" )
 		return true
 	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	f1_arg0:AddButtonCallbackFunction( DeathFxButton, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
@@ -180,7 +180,7 @@ CoD.WeaponPersonalizeSlotContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 		CoD.CACUtility.OpenCACOverlay( self, f24_arg1, f24_arg2, "WeaponAccessoriesSelect", f24_arg0, "" )
 		return true
 	end, function ( f25_arg0, f25_arg1, f25_arg2 )
-		CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	f1_arg0:AddButtonCallbackFunction( AccessoriesButton, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f26_arg0, f26_arg1, f26_arg2, f26_arg3 )

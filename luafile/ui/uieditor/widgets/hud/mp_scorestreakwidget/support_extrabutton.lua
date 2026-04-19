@@ -36,7 +36,7 @@ CoD.Support_ExtraButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local Background = LUI.UIImage.new( 0, 0, -22, 60, 0, 0, -3.5, 79.5 )
 	Background:setAlpha( 0.2 )
 	Background:setImage( RegisterImage( 0x75825763EF40352 ) )
-	Background:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Background:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Background )
 	self.Background = Background
 	
@@ -223,7 +223,7 @@ CoD.Support_ExtraButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	FUItop2:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
 	FUItop2:setAlpha( 0 )
 	FUItop2:setImage( RegisterImage( 0xD21881AE56187FC ) )
-	FUItop2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	FUItop2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FUItop2 )
 	self.FUItop2 = FUItop2
 	

@@ -12,7 +12,7 @@ CoD.vhud_agr_ReticleFocusFrameLeft.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	agrReticleFocusFrameL0:setYRot( -180 )
 	agrReticleFocusFrameL0:setZoom( -35 )
 	agrReticleFocusFrameL0:setImage( RegisterImage( 0x58D3A3D902C8C7E ) )
-	agrReticleFocusFrameL0:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	agrReticleFocusFrameL0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( agrReticleFocusFrameL0 )
 	self.agrReticleFocusFrameL0 = agrReticleFocusFrameL0
 	
@@ -20,7 +20,7 @@ CoD.vhud_agr_ReticleFocusFrameLeft.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	agrReticleFocusFrameL:setAlpha( 0.8 )
 	agrReticleFocusFrameL:setYRot( -180 )
 	agrReticleFocusFrameL:setImage( RegisterImage( 0x58D3A3D902C8C7E ) )
-	agrReticleFocusFrameL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	agrReticleFocusFrameL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( agrReticleFocusFrameL )
 	self.agrReticleFocusFrameL = agrReticleFocusFrameL
 	

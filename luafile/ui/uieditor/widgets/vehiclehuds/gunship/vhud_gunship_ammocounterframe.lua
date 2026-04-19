@@ -13,7 +13,7 @@ CoD.vhud_gunship_ammocounterframe.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	BackingFillAnim:setRGB( 0.13, 0.13, 0.13 )
 	BackingFillAnim:setAlpha( 0.9 )
 	BackingFillAnim:setZRot( 180 )
-	BackingFillAnim:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	BackingFillAnim:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	BackingFillAnim:setShaderVector( 0, 1, 0, 0, 0 )
 	BackingFillAnim:setShaderVector( 1, 0, 0, 0, 0 )
 	BackingFillAnim:setShaderVector( 2, 1, 0, 0, 0 )
@@ -40,7 +40,7 @@ CoD.vhud_gunship_ammocounterframe.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.AmmoFrameInuseGlow = AmmoFrameInuseGlow
 	
 	local AmmoName = LUI.UIText.new( 0.5, 0.5, -41.5, 38.5, 1, 1, -12, 6 )
-	AmmoName:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	AmmoName:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	AmmoName:setTTF( "ttmussels_demibold" )
 	AmmoName:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	AmmoName:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

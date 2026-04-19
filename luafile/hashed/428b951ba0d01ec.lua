@@ -105,13 +105,13 @@ CoD.CharacterSelection_StandardFrameWidget.new = function ( f1_arg0, f1_arg1, f1
 		end
 	end, function ( f13_arg0, f13_arg1, f13_arg2 )
 		if not CoD.ModelUtility.IsSelfModelValueTrue( f13_arg0, f13_arg2, "purchasable" ) and not CoD.ModelUtility.IsSelfModelValueTrue( f13_arg0, f13_arg2, "disabled" ) and not IsGameTrial() and CoD.PlayerRoleUtility[0x7841254A6DA6220]( f13_arg0, f13_arg2 ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif IsElementInState( f13_arg0, "Purchasable" ) and not IsGameTrial() and CoD.StoreUtility.IsStoreEnabled( f13_arg2 ) then
 			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x191CDDA584B4408, nil, "ui_confirm" )
 			return true
 		elseif IsPC() and IsElementInState( f13_arg0, "Selected" ) and not IsGameTrial() then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif IsPC() and IsElementInState( f13_arg0, "Purchasable" ) and not IsGameTrial() and CoD.StoreUtility.IsStoreEnabled( f13_arg2 ) then
 			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x191CDDA584B4408, nil, "ui_confirm" )
@@ -212,7 +212,7 @@ CoD.CharacterSelection_StandardFrameWidget.new = function ( f1_arg0, f1_arg1, f1
 	DotPipR:setRGB( 0.38, 0.38, 0.4 )
 	DotPipR:setAlpha( 0.2 )
 	DotPipR:setImage( RegisterImage( 0x3854665C02218EF ) )
-	DotPipR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DotPipR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotPipR )
 	self.DotPipR = DotPipR
 	
@@ -220,7 +220,7 @@ CoD.CharacterSelection_StandardFrameWidget.new = function ( f1_arg0, f1_arg1, f1
 	DotPipL:setRGB( 0.38, 0.38, 0.4 )
 	DotPipL:setAlpha( 0.2 )
 	DotPipL:setImage( RegisterImage( 0x3854665C02218EF ) )
-	DotPipL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DotPipL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotPipL )
 	self.DotPipL = DotPipL
 	

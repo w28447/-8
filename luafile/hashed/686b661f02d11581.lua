@@ -29,7 +29,7 @@ CoD.ZMTalismanSlot.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local Box = LUI.UIImage.new( 0, 0, -63, 153, 0, 0, -63, 153 )
 	Box:setAlpha( 0.5 )
-	Box:setImage( RegisterImage( uie_ui_menu_zombies_cac_talisman_box ) )
+	Box:setImage( RegisterImage( "uie_ui_menu_zombies_cac_talisman_box" ) )
 	self:addElement( Box )
 	self.Box = Box
 	
@@ -87,8 +87,8 @@ CoD.ZMTalismanSlot.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	EmptyIcon = LUI.UIImage.new( 0.5, 0.5, -40, 40, 0.5, 0.5, -43, 37 )
 	EmptyIcon:setRGB( ColorSet.T8__BEIGE__HEADER.r, ColorSet.T8__BEIGE__HEADER.g, ColorSet.T8__BEIGE__HEADER.b )
 	EmptyIcon:setAlpha( 0 )
-	EmptyIcon:setImage( RegisterImage( uie_ui_menu_zombies_cac_talisman_slot_empty ) )
-	EmptyIcon:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	EmptyIcon:setImage( RegisterImage( "uie_ui_menu_zombies_cac_talisman_slot_empty" ) )
+	EmptyIcon:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( EmptyIcon )
 	self.EmptyIcon = EmptyIcon
 	

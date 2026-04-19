@@ -25,7 +25,7 @@ CoD.PlayerWidget_ZM_Trials.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	yellow:setRGB( ColorSet.EnemyOrange.r, ColorSet.EnemyOrange.g, ColorSet.EnemyOrange.b )
 	yellow:setAlpha( 0 )
 	yellow:setImage( RegisterImage( 0x1E5C0EED08D22D ) )
-	yellow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	yellow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	yellow:setShaderVector( 0, 1, 0, 0, 0 )
 	yellow:setShaderVector( 1, 0, 0, 0, 0 )
 	yellow:setShaderVector( 2, 1, 0, 0, 0 )
@@ -44,7 +44,7 @@ CoD.PlayerWidget_ZM_Trials.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local ZmFxSpark2Ext0 = CoD.ZmFx_Spark2Ext.new( f1_arg0, f1_arg1, 0, 0, -1, 84, 0, 0, -68, 60 )
 	ZmFxSpark2Ext0:setAlpha( 0 )
 	ZmFxSpark2Ext0:setZRot( 9 )
-	ZmFxSpark2Ext0:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	ZmFxSpark2Ext0:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ZmFxSpark2Ext0 )
 	self.ZmFxSpark2Ext0 = ZmFxSpark2Ext0
 	

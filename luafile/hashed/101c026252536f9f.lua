@@ -30,7 +30,7 @@ CoD.PositionDraft_EnemyStatus.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	WaitingForEnemyTeamBackground:setRGB( 0.72, 0.65, 0.5 )
 	WaitingForEnemyTeamBackground:setAlpha( 0 )
 	WaitingForEnemyTeamBackground:setYRot( 180 )
-	WaitingForEnemyTeamBackground:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	WaitingForEnemyTeamBackground:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	WaitingForEnemyTeamBackground:setShaderVector( 0, 1.1, 0, 0, 0 )
 	WaitingForEnemyTeamBackground:setShaderVector( 1, 0.71, 0, 0, 0 )
 	WaitingForEnemyTeamBackground:setShaderVector( 2, 1, 0, 0, 0 )

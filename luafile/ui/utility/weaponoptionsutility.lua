@@ -474,7 +474,7 @@ CoD.WeaponOptionsUtility.GetPaintjobOptionsTable = function ( f8_arg0, f8_arg1, 
 			local f8_local4 = CoD.CraftUtility.Paintjobs.GetCACPaintjobList( f8_arg0, f8_local3 )
 			f8_local2( f8_local1, 0x5E38D76F9A1A511, 1, Engine[0xF9F1239CFD921FE]( 0xDFFD9B8A1D5E6D4 ), "paintjob_create", "paintjob", Enum.CustomizationPaintjobInvalidID[0x60CAA8D66ED63A5] )
 			for f8_local5 = 1, #f8_local4, 1 do
-				f8_local2( f8_local1, 0x7615068F50B3D66, f8_local5 + 1, f8_local4[f8_local5].paintjobName, "paintjob_" .. f8_local5, "paintjob", f8_local4[f8_local5].paintjobSlot )
+				f8_local2( f8_local1, "blacktransparent", f8_local5 + 1, f8_local4[f8_local5].paintjobName, "paintjob_" .. f8_local5, "paintjob", f8_local4[f8_local5].paintjobSlot )
 			end
 		end
 	end
@@ -836,7 +836,7 @@ DataSources.ReticleCategoryTabs = ListHelper_SetupDataSource( "ReticleCategoryTa
 		local f34_local3 = f34_local0
 		local f34_local4 = {}
 		local f34_local5 = {
-			tabName = 0x29C903C6DF90D6F
+			tabName = "menu/black_market"
 		}
 		local f34_local6 = DataSources.LoadoutBreadcrumbs.getModel( f34_arg0 )
 		f34_local5.breadcrumb = f34_local6.optics
@@ -1142,7 +1142,7 @@ DataSources.WeaponOptionsGroups = ListHelper_SetupDataSource( "WeaponOptionsGrou
 		local f37_local11 = f37_local0
 		local f37_local12 = {}
 		local f37_local13 = {
-			name = 0x29C903C6DF90D6F
+			name = "menu/black_market"
 		}
 		local f37_local14 = DataSources.LoadoutBreadcrumbs.getModel( f37_arg0 )
 		f37_local13.breadcrumb = f37_local14.camos
@@ -1402,7 +1402,7 @@ DataSources.PurchaseCamoList = ListHelper_SetupDataSource( "PurchaseCamoList", f
 	if not CoD.isPC then
 		table.insert( f43_local8, {
 			models = {
-				displayText = Engine.Localize( 0xC2E92C54C2BE289 )
+				displayText = Engine.Localize( "menu/cancel" )
 			},
 			properties = {
 				action = f43_local6
@@ -1435,7 +1435,7 @@ DataSources.WeaponCharmList = ListHelper_SetupDataSource( "WeaponCharmList", fun
 					local f46_local14 = {
 						displayName = f46_local17[0x55F116BF695C8F6] and Engine[0xF9F1239CFD921FE]( f46_local17[0x55F116BF695C8F6] ) or "",
 						category = 0xF5E657D5E5ED4E7,
-						icon = f46_local17[0xBFF4CC56C2092F0] or 0x7615068F50B3D66,
+						icon = f46_local17[0xBFF4CC56C2092F0] or "blacktransparent",
 						itemIndex = f46_local16 - 1,
 						frontendModel = f46_local17[0x8A334535BE3AFB1] and Engine[0xC53F8D38DF9042B]( f46_local17[0x8A334535BE3AFB1] ) or 0x0,
 						description = f46_local17[0xCC44970C8397929] and Engine[0xF9F1239CFD921FE]( f46_local17[0xCC44970C8397929] ) or "",
@@ -1486,7 +1486,7 @@ DataSources.WeaponCharmList = ListHelper_SetupDataSource( "WeaponCharmList", fun
 	local f46_local7 = Engine.GetItemName( f46_local6 )
 	local f46_local8 = function ( f47_arg0, f47_arg1, f47_arg2 )
 		local f47_local0 = 0x1D17195D5833BC4
-		local f47_local1 = 0x7615068F50B3D66
+		local f47_local1 = "blacktransparent"
 		local f47_local2 = 0
 		local f47_local3 = 0x0
 		if CoD.CACUtility.mpPrestigeAttachments[f47_arg0] then
@@ -1568,7 +1568,7 @@ DataSources.WeaponDeathFxList = ListHelper_SetupDataSource( "WeaponDeathFxList",
 						}
 						local f49_local16 = f49_local18[0xBFF4CC56C2092F0]
 						if not f49_local16 then
-							f49_local16 = 0x7615068F50B3D66
+							f49_local16 = "blacktransparent"
 						end
 						f49_local15.icon = f49_local16
 						f49_local15.itemIndex = f49_local17 - 1
@@ -2331,17 +2331,17 @@ CoD.WeaponOptionsUtility.GetWeaponAccessoryIconForItemIndex = function ( f85_arg
 				return CoD.CACUtility.mpPrestigeAttachments[2].image
 			end
 		end
-		return 0x7615068F50B3D66
+		return "blacktransparent"
 	end
 	local f85_local1 = Engine[0xA7E3CD65E63086F]( 0xF2DC7A2FE7EEDC5 )
 	if f85_local1 then
 		for f85_local5, f85_local6 in ipairs( f85_local1 ) do
 			if f85_local5 - 1 == f85_local0 then
-				return f85_local6[0xBFF4CC56C2092F0] and Engine[0xC53F8D38DF9042B]( f85_local6[0xBFF4CC56C2092F0] ) or 0x7615068F50B3D66
+				return f85_local6[0xBFF4CC56C2092F0] and Engine[0xC53F8D38DF9042B]( f85_local6[0xBFF4CC56C2092F0] ) or "blacktransparent"
 			end
 		end
 	end
-	return 0x7615068F50B3D66
+	return "blacktransparent"
 end
 
 CoD.WeaponOptionsUtility.GetWeaponDeathFxIconForItemIndex = function ( f86_arg0 )
@@ -2351,12 +2351,12 @@ CoD.WeaponOptionsUtility.GetWeaponDeathFxIconForItemIndex = function ( f86_arg0 
 		if f86_local1 then
 			for f86_local5, f86_local6 in ipairs( f86_local1 ) do
 				if f86_local5 - 1 == f86_local0 then
-					return f86_local6[0xBFF4CC56C2092F0] and Engine[0xC53F8D38DF9042B]( f86_local6[0xBFF4CC56C2092F0] ) or 0x7615068F50B3D66
+					return f86_local6[0xBFF4CC56C2092F0] and Engine[0xC53F8D38DF9042B]( f86_local6[0xBFF4CC56C2092F0] ) or "blacktransparent"
 				end
 			end
 		end
 	end
-	return 0x7615068F50B3D66
+	return "blacktransparent"
 end
 
 CoD.WeaponOptionsUtility.UpdateWeaponOptionLists = function ( f87_arg0, f87_arg1 )

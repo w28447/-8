@@ -17,7 +17,7 @@ CoD.FE_ImageA.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	
 	local imgAdd = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	imgAdd:setImage( RegisterImage( 0x1EF689E721B49A5 ) )
-	imgAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	imgAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( imgAdd )
 	self.imgAdd = imgAdd
 	

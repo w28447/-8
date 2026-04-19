@@ -59,7 +59,7 @@ CoD.AARTierRewardItemGlowAnimationRare.new = function ( f1_arg0, f1_arg1, f1_arg
 	local CardCover = LUI.UIImage.new( 0, 1, -13, 13, 0, 1, -13, 13 )
 	CardCover:setAlpha( 0 )
 	CardCover:setImage( RegisterImage( 0xFAA6C81834660D3 ) )
-	CardCover:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	CardCover:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	CardCover:setShaderVector( 0, 0, 0, 0, 0 )
 	CardCover:setupNineSliceShader( 32, 32 )
 	CardCover:linkToElementModel( self, "rarity", true, function ( model )

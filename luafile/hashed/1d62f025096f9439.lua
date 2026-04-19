@@ -21,7 +21,7 @@ CoD.Prestige_LevelProgressWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 0, 74, 1108, 0, 0, 0, 94 )
 	NoiseTiledBacking:setAlpha( 0.5 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -35,7 +35,7 @@ CoD.Prestige_LevelProgressWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	self.LevelMeterBgTint = LevelMeterBgTint
 	
 	local LevelMeterBg = LUI.UIImage.new( 0, 0, 146, 1100, 0.5, 0.5, -10.5, 13.5 )
-	LevelMeterBg:setImage( RegisterImage( 0x61E8EB53DFEF82B ) )
+	LevelMeterBg:setImage( RegisterImage( "uie_ui_menu_inspection_level_meter_bg" ) )
 	LevelMeterBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	LevelMeterBg:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( LevelMeterBg )
@@ -54,8 +54,8 @@ CoD.Prestige_LevelProgressWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local LevelMeterBar = LUI.UIImage.new( -0.65, -0.65, 869.5, 1818.5, 0.5, 0.5, -3.5, 6.5 )
 	LevelMeterBar:setRGB( 0.47, 0.47, 0.47 )
 	LevelMeterBar:setAlpha( 0 )
-	LevelMeterBar:setImage( RegisterImage( 0x4F8DEF85850B5DD ) )
-	LevelMeterBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	LevelMeterBar:setImage( RegisterImage( "uie_ui_menu_inspection_level_meter_bar" ) )
+	LevelMeterBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	LevelMeterBar:setShaderVector( 0, 0, 1, 0, 0 )
 	LevelMeterBar:setShaderVector( 1, 0, 0, 0, 0 )
 	LevelMeterBar:setShaderVector( 2, 0, 1, 0, 0 )
@@ -66,11 +66,11 @@ CoD.Prestige_LevelProgressWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local EarnedXP = CoD.CommonWipeMeterWithGlow.new( f1_arg0, f1_arg1, 0, 0, 148, 1097, 0.5, 0.5, -10, 14 )
 	EarnedXP.Meter:setRGB( 1, 0.73, 0 )
-	EarnedXP.Meter:setImage( RegisterImage( 0x6D2FBF31F53910C ) )
+	EarnedXP.Meter:setImage( RegisterImage( "uie_ui_menu_aar_levelup_bar" ) )
 	EarnedXP.MeterAdd:setAlpha( 0.3 )
-	EarnedXP.MeterAdd:setImage( RegisterImage( 0x6D2FBF31F53910C ) )
+	EarnedXP.MeterAdd:setImage( RegisterImage( "uie_ui_menu_aar_levelup_bar" ) )
 	EarnedXP.MeterGlow:setRGB( 0.39, 0.18, 0 )
-	EarnedXP.MeterGlow:setImage( RegisterImage( 0xA7D61A3302B55D0 ) )
+	EarnedXP.MeterGlow:setImage( RegisterImage( "uie_ui_menu_aar_levelup_bar_glow" ) )
 	EarnedXP:subscribeToGlobalModel( f1_arg1, "XPProgressionBar", "progress", function ( model )
 		local f3_local0 = model:get()
 		if f3_local0 ~= nil then
@@ -95,7 +95,7 @@ CoD.Prestige_LevelProgressWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local RankProgressBar = LUI.UIImage.new( 0, 0, 148, 1097, 0, 0, 44.5, 52.5 )
 	RankProgressBar:setRGB( ColorSet.Orange.r, ColorSet.Orange.g, ColorSet.Orange.b )
 	RankProgressBar:setAlpha( 0 )
-	RankProgressBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	RankProgressBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	RankProgressBar:setShaderVector( 1, 0, 0, 0, 0 )
 	RankProgressBar:setShaderVector( 2, 1, 0, 0, 0 )
 	RankProgressBar:setShaderVector( 3, 0, 0, 0, 0 )

@@ -92,10 +92,10 @@ CoD.DecalToolsFramePaintshop.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		end
 	end, function ( f8_arg0, f8_arg1, f8_arg2 )
 		if IsEmblemEditor( f8_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f8_arg0, f8_arg2, "isBMClassified" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "emblemIconList" ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif IsPaintshop( f8_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f8_arg0, f8_arg2, "isBMClassified" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "emblemIconList" ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

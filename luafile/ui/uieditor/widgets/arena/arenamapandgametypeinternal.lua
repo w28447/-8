@@ -28,7 +28,7 @@ CoD.ArenaMapAndGameTypeInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local FocusGlow = LUI.UIImage.new( 0, 1, -80, 80, -0, 1, -50, 50 )
 	FocusGlow:setAlpha( 0 )
-	FocusGlow:setImage( RegisterImage( 0xB8F10D49D85E9C4 ) )
+	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_small" ) )
 	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.24, 0.24 )
 	FocusGlow:setShaderVector( 1, 1.2, 0, 0, 0 )
@@ -38,7 +38,7 @@ CoD.ArenaMapAndGameTypeInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.5 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -103,7 +103,7 @@ CoD.ArenaMapAndGameTypeInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	NoiseTiledBacking2 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking2:setAlpha( 0.9 )
-	NoiseTiledBacking2:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking2:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking2:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking2:setupNineSliceShader( 196, 88 )
@@ -111,7 +111,7 @@ CoD.ArenaMapAndGameTypeInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.NoiseTiledBacking2 = NoiseTiledBacking2
 	
 	local DotTiledBacking = CoD.CommonPixelBacking.new( f1_arg0, f1_arg1, 0, 1, 4, -4, 0, 1, 4, -4 )
-	DotTiledBacking:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DotTiledBacking:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	DotTiledBacking.NoiseBacking:setAlpha( 1 )
 	DotTiledBacking.TiledShaderImage:setRGB( 0.22, 0.22, 0.22 )
 	DotTiledBacking.TiledShaderImage:setAlpha( 0.15 )
@@ -121,8 +121,8 @@ CoD.ArenaMapAndGameTypeInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local FrontendFrame = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	FrontendFrame:setAlpha( 0.05 )
-	FrontendFrame:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrontendFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrame:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrontendFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrame:setupNineSliceShader( 12, 12 )
 	self:addElement( FrontendFrame )
@@ -261,8 +261,8 @@ CoD.ArenaMapAndGameTypeInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	FrameBorder = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	FrameBorder:setAlpha( 0.05 )
-	FrameBorder:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrameBorder:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrameBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FrameBorder:setupNineSliceShader( 12, 12 )
 	self:addElement( FrameBorder )
@@ -276,8 +276,8 @@ CoD.ArenaMapAndGameTypeInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	FocusBorder = LUI.UIImage.new( 0, 1, -4, 4, 0, 1, -4, 4 )
 	FocusBorder:setRGB( 0.96, 0.94, 0.78 )
 	FocusBorder:setAlpha( 0 )
-	FocusBorder:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FocusBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FocusBorder:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FocusBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FocusBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FocusBorder:setupNineSliceShader( 10, 10 )
 	self:addElement( FocusBorder )

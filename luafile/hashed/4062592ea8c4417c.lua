@@ -19,7 +19,7 @@ CoD.RadiationBlastHealthBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local HealthValue = LUI.UIText.new( 0, 0, 140, 204, 0, 0, -7.5, 18.5 )
 	HealthValue:setTTF( "0arame_mono_stencil" )
-	HealthValue:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	HealthValue:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	HealthValue:setLetterSpacing( 2 )
 	HealthValue:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	HealthValue:setAlignment( Enum.LUIAlignment[0x70510683C22104B] )

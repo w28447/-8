@@ -39,7 +39,7 @@ CoD.SignatureCamoInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local ProgressBar = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, -79, 1 )
 	ProgressBar:setAlpha( 0 )
 	ProgressBar:setImage( RegisterImage( 0xF090ADEC8D52EF0 ) )
-	ProgressBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	ProgressBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	ProgressBar:setShaderVector( 1, 0, 0, 0, 0 )
 	ProgressBar:setShaderVector( 2, 1, 0, 0, 0 )
 	ProgressBar:setShaderVector( 3, 0, 0, 0, 0 )
@@ -65,7 +65,7 @@ CoD.SignatureCamoInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local Backing = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Backing:setRGB( ColorSet.Title.r, ColorSet.Title.g, ColorSet.Title.b )
 	Backing:setAlpha( 0 )
-	Backing:setImage( RegisterImage( 0xCE50842B84CCD5D ) )
+	Backing:setImage( RegisterImage( "uie_spawnselect_crosshair_auto" ) )
 	self:addElement( Backing )
 	self.Backing = Backing
 	

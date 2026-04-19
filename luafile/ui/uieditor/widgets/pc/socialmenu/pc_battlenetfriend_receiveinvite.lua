@@ -15,7 +15,7 @@ CoD.PC_BattlenetFriend_ReceiveInvite.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	local IMG_Background = LUI.UIImage.new( 0.03, 1, 0, 0, 0, 1, 0, 0 )
 	IMG_Background:setRGB( 0.07, 0.07, 0.07 )
 	IMG_Background:setAlpha( 0 )
-	IMG_Background:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	IMG_Background:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( IMG_Background )
 	self.IMG_Background = IMG_Background
 	

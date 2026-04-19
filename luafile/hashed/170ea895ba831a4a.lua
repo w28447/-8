@@ -35,7 +35,7 @@ CoD.ZMPerk_ModifierInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local SubHeaderDivider = LUI.UIImage.new( 0, 0, -18, 372, 0, 0, 39, 40 )
 	SubHeaderDivider:setRGB( 0.58, 0.58, 0.58 )
 	SubHeaderDivider:setAlpha( 0.25 )
-	SubHeaderDivider:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	SubHeaderDivider:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	SubHeaderDivider:setShaderVector( 0, 0, 1, 0, 0 )
 	SubHeaderDivider:setShaderVector( 1, 0, 1.24, 0, 0 )
 	SubHeaderDivider:setShaderVector( 2, 0, 1, 0, 0 )

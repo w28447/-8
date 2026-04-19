@@ -9,7 +9,7 @@ CoD.cac_ButtonBoxLrgInactiveDiags.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local Image = LUI.UIImage.new( 0, 1, -3, 3, 0, 1, -2, 2 )
 	Image:setImage( RegisterImage( 0x969C9BD28349534 ) )
-	Image:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	Image:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Image:setShaderVector( 0, 0, 0, 0, 0 )
 	Image:setupNineSliceShader( 36, 36 )
 	self:addElement( Image )

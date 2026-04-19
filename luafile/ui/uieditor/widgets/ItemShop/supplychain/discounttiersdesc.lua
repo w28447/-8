@@ -26,7 +26,7 @@ CoD.DiscountTiersDesc.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local Purchase = LUI.UIText.new( 0.5, 0.5, -156, 44, 0.5, 0.5, -39, -11 )
 	Purchase:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	Purchase:setText( LocalizeToUpperString( 0x85952ACC6D0C1B0 ) )
+	Purchase:setText( LocalizeToUpperString( "menu/purchase" ) )
 	Purchase:setTTF( "ttmussels_demibold" )
 	Purchase:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	Purchase:setShaderVector( 0, 0.5, 0, 0, 0 )

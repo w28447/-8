@@ -323,7 +323,7 @@ end, false, {
 				local f11_local8 = f11_local0:create( "showAmmo" )
 				f11_local8:set( true )
 				f11_local8 = f11_local0:create( "ammoIcon" )
-				f11_local8:set( f11_local19[0xC1D8B8E6B5C6F4D] or 0x7615068F50B3D66 )
+				f11_local8:set( f11_local19[0xC1D8B8E6B5C6F4D] or "blacktransparent" )
 			elseif f11_local19[0x2BF9BFD10656F2D] == CoD.VehicleUtility.WidgetTypes.SECONDARY_AMMO then
 				local f11_local8 = f11_local0:create( "secondaryAmmoTitle" )
 				f11_local8:set( f11_local19.header )
@@ -338,7 +338,7 @@ end, false, {
 				f11_local8 = f11_local0:create( "pooledHealthAmount" )
 				f11_local8:set( f11_arg1.healthPoolSize or 0 )
 				f11_local8 = f11_local0:create( "vehicleIcon" )
-				f11_local8:set( f11_local19[0xC1D8B8E6B5C6F4D] or 0x7615068F50B3D66 )
+				f11_local8:set( f11_local19[0xC1D8B8E6B5C6F4D] or "blacktransparent" )
 			elseif f11_local19[0x2BF9BFD10656F2D] == CoD.VehicleUtility.WidgetTypes.SPEED then
 				local f11_local8 = f11_local0:create( "showSpeed" )
 				f11_local8:set( true )
@@ -383,7 +383,7 @@ end, false, {
 					f11_local8:set( f11_local19[0x14F6FC8E568FD75] )
 				else
 					f11_local8 = f11_local0:create( "vehicleDriverStringOverrideRef" )
-					f11_local8:set( 0xCE3EF50B2B067C3 )
+					f11_local8:set( "menu/driver_seat" )
 				end
 			end
 		end
@@ -415,16 +415,16 @@ end, false, {
 		f13_local2 = f13_local0:create( "rocketTitle" )
 		f13_local2:set( "" )
 		f13_local2 = f13_local0:create( "damageFillImage" )
-		f13_local2:set( 0x7615068F50B3D66 )
+		f13_local2:set( "blacktransparent" )
 		f13_local2 = f13_local0:create( "showPooledHealthBar" )
 		f13_local2:set( false )
 		f13_local0:create( "pooledHealthAmount" )
 		f13_local2 = f13_local0:create( "vehicleIcon" )
-		f13_local2:set( 0x7615068F50B3D66 )
+		f13_local2:set( "blacktransparent" )
 		f13_local2 = f13_local0:create( "showAmmo" )
 		f13_local2:set( false )
 		f13_local2 = f13_local0:create( "ammoIcon" )
-		f13_local2:set( 0x7615068F50B3D66 )
+		f13_local2:set( "blacktransparent" )
 		f13_local2 = f13_local0:create( "showSpeed" )
 		f13_local2:set( false )
 		f13_local2 = f13_local0:create( "showRPM" )

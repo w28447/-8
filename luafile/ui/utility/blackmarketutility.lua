@@ -52,7 +52,7 @@ CoD.BlackMarketUtility.ItemCategories = {
 	CHARACTER = 0x2D79C9016401F0
 }
 CoD.BlackMarketUtility.ItemCategoryStrings = {
-	[CoD.BlackMarketUtility.ItemCategories.CALLING_CARD] = 0x5D0D4D46178F2C8,
+	[CoD.BlackMarketUtility.ItemCategories.CALLING_CARD] = "menu/calling_card",
 	[CoD.BlackMarketUtility.ItemCategories.STICKER] = 0x84446BBFA84177E,
 	[CoD.BlackMarketUtility.ItemCategories.OUTFIT] = 0x902540279D3297C,
 	[CoD.BlackMarketUtility.ItemCategories.OUTFIT_WARPAINT] = 0xC6DA1503405E36F,
@@ -1627,9 +1627,9 @@ CoD.BlackMarketUtility.GetEmptyInsertItem = function ( f89_arg0, f89_arg1 )
 		subExtraText = 0x0,
 		category = 0x0,
 		shopCategory = 0x0,
-		primaryImage = 0x7615068F50B3D66,
-		popupImage = 0x7615068F50B3D66,
-		detailsImage = 0x7615068F50B3D66,
+		primaryImage = "blacktransparent",
+		popupImage = "blacktransparent",
+		detailsImage = "blacktransparent",
 		rarity = 0x0,
 		character = 0x0,
 		outfitIndexes = nil,
@@ -1651,7 +1651,7 @@ CoD.BlackMarketUtility.GetEmptyInsertItem = function ( f89_arg0, f89_arg1 )
 		seasonal = false,
 		allowFrozenMoment = false,
 		price = 0,
-		inventoryIcon = 0x7615068F50B3D66,
+		inventoryIcon = "blacktransparent",
 		earnedRewardCount = 0,
 		totalRewardCount = 0,
 		cameraType = LuaEnum.LOOT_CAMERA_TYPE.NONE,
@@ -2066,7 +2066,7 @@ CoD.BlackMarketUtility.BuildCallingCardSets = function ( f108_arg0, f108_arg1 )
 			f108_local16 = CoD.BlackMarketTableUtility.GetLootBonusStringRef( f108_arg0, f108_local19 )
 			f108_local17 = Engine[0xF9F1239CFD921FE]( 0x587BB89C78FFE9A, f108_local16, f108_local11, f108_local22 )
 			if f108_local14 then
-				f108_local14.setInfoString = Engine[0xF9F1239CFD921FE]( 0xF4082FA89EBEDBA, f108_local16, Engine[0xF9F1239CFD921FE]( 0x20BF14474EB8696, Engine[0xF9F1239CFD921FE]( 0x5D0D4D46178F2C8 ) ) )
+				f108_local14.setInfoString = Engine[0xF9F1239CFD921FE]( 0xF4082FA89EBEDBA, f108_local16, Engine[0xF9F1239CFD921FE]( 0x20BF14474EB8696, Engine[0xF9F1239CFD921FE]( "menu/calling_card" ) ) )
 				if not IsJapaneseSku() and f108_local14.lootInfo.owned then
 					f108_local12 = f108_local14.iconId
 					f108_local14.lootInfo.unlockInfo = Engine[0xF9F1239CFD921FE]( 0xC5DD764B51C08A5 )
@@ -2208,7 +2208,7 @@ CoD.BlackMarketUtility.GetOufitBundleRef = function ( f119_arg0, f119_arg1, f119
 				desc = Engine[0xF9F1239CFD921FE]( 0x77D62520C77867 ),
 				mainExtraText = Engine[0xF9F1239CFD921FE]( 0x41874BEA5451E9D, Engine[0xF9F1239CFD921FE]( f119_local4.displayName ) ),
 				subExtraText = f119_local2.displayName,
-				primaryImage = f119_local5 or 0x7615068F50B3D66,
+				primaryImage = f119_local5 or "blacktransparent",
 				popupImage = 0x0,
 				character = f119_local0.prt,
 				outfitIndexes = f119_local1
@@ -2232,7 +2232,7 @@ CoD.BlackMarketUtility.GetWarpaintBundleRef = function ( f120_arg0, f120_arg1 )
 				desc = Engine[0xF9F1239CFD921FE]( 0x62BC3111047BF79 ),
 				mainExtraText = "",
 				subExtraText = 0x0,
-				primaryImage = f120_local4.warPaints[f120_local1.war_paintIndex + 1].image or 0x7615068F50B3D66,
+				primaryImage = f120_local4.warPaints[f120_local1.war_paintIndex + 1].image or "blacktransparent",
 				popupImage = 0x0,
 				character = f120_local0.prt,
 				outfitIndexes = f120_local1
@@ -2294,7 +2294,7 @@ CoD.BlackMarketUtility.GetOufitPresetRef = function ( f122_arg0, f122_arg1, f122
 				f122_local7 = f122_local5 and f122_local5.icon
 			end
 			if not f122_local7 or f122_local7 == 0x0 then
-				f122_local7 = 0x7615068F50B3D66
+				f122_local7 = "blacktransparent"
 			end
 			local f122_local11 = {}
 			local f122_local12
@@ -2307,7 +2307,7 @@ CoD.BlackMarketUtility.GetOufitPresetRef = function ( f122_arg0, f122_arg1, f122
 					f122_local11.desc = f122_local10
 					f122_local11.mainExtraText = Engine[0xF9F1239CFD921FE]( 0x41874BEA5451E9D, Engine[0xF9F1239CFD921FE]( f122_local4.displayName ) )
 					f122_local11.subExtraText = f122_local2.displayName
-					f122_local11.primaryImage = f122_local7 or 0x7615068F50B3D66
+					f122_local11.primaryImage = f122_local7 or "blacktransparent"
 					f122_local11.character = f122_local0.prt
 					f122_local11.outfitIndexes = f122_local1
 					return f122_local11
@@ -2345,7 +2345,7 @@ CoD.BlackMarketUtility.GetOufitWarPaintRef = function ( f123_arg0, f123_arg1, f1
 				desc = Engine[0xF9F1239CFD921FE]( 0xC81893A317FA38B, f123_local2.displayName ),
 				mainExtraText = Engine[0xF9F1239CFD921FE]( 0x41874BEA5451E9D, Engine[0xF9F1239CFD921FE]( f123_local4.displayName ) ),
 				subExtraText = f123_local2.displayName,
-				primaryImage = f123_local4.warPaints[f123_local1.war_paintIndex + 1].image or 0x7615068F50B3D66,
+				primaryImage = f123_local4.warPaints[f123_local1.war_paintIndex + 1].image or "blacktransparent",
 				character = f123_local0.prt,
 				outfitIndexes = f123_local1
 			}
@@ -2376,8 +2376,8 @@ CoD.BlackMarketUtility.GetOufitDecalRef = function ( f124_arg0, f124_arg1, f124_
 				desc = Engine[0xF9F1239CFD921FE]( 0x216427CCB6734F6, f124_local2.displayName ),
 				mainExtraText = Engine[0xF9F1239CFD921FE]( 0x41874BEA5451E9D, Engine[0xF9F1239CFD921FE]( f124_local4.displayName ) ),
 				subExtraText = f124_local2.displayName,
-				primaryImage = f124_local4.decals[f124_local1.decalIndex + 1].image or 0x7615068F50B3D66,
-				popupImage = f124_local4.decals[f124_local1.decalIndex + 1].image or 0x7615068F50B3D66
+				primaryImage = f124_local4.decals[f124_local1.decalIndex + 1].image or "blacktransparent",
+				popupImage = f124_local4.decals[f124_local1.decalIndex + 1].image or "blacktransparent"
 			}
 		end
 	end
@@ -2460,7 +2460,7 @@ CoD.BlackMarketUtility.GetSignatureWeaponRef = function ( f127_arg0 )
 	local f127_local2, f127_local3, f127_local4, f127_local5, f127_local6 = f127_local2()
 	if f127_local4 then
 		local f127_local7 = f127_local6[0x852BDFE9E6B7AB1]
-		if not f127_local7 or f127_local7 == 0x0 or f127_local7 == 0x7615068F50B3D66 then
+		if not f127_local7 or f127_local7 == 0x0 or f127_local7 == "blacktransparent" then
 			f127_local7 = f127_local5[0x852BDFE9E6B7AB1]
 		end
 		local f127_local8 = {
@@ -2610,11 +2610,11 @@ CoD.BlackMarketUtility.GetSpecialBundleInfo = function ( f133_arg0, f133_arg1 )
 		},
 		buttonImage = {
 			overrideFieldName = 0x56FD39D2BF3C8A6,
-			defaultValue = 0x7615068F50B3D66
+			defaultValue = "blacktransparent"
 		},
 		reservesImage = {
 			overrideFieldName = 0xA2F6F8CD52CF7B0,
-			defaultValue = 0x7615068F50B3D66
+			defaultValue = "blacktransparent"
 		},
 		category = {
 			overrideFieldName = 0x2E9D0AD87FA0242,
@@ -2648,7 +2648,7 @@ CoD.BlackMarketUtility.GetSpecialBundleInfo = function ( f133_arg0, f133_arg1 )
 		},
 		specialContractRewardImage = {
 			overrideFieldName = 0xEE2B488845485EF,
-			defaultValue = 0x7615068F50B3D66
+			defaultValue = "blacktransparent"
 		}
 	} ) do
 		local f133_local5 = f133_local7.defaultValue
@@ -3293,7 +3293,7 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 		if f134_arg2 == 0xB0C9EF63048F282 then
 			f134_local4 = Engine.TableLookup( CoD.CACUtility.CamoOptionsTable, Enum[0x5DD5CC8AEA7314B][0x5B3B869AD96B53C], Enum[0x5DD5CC8AEA7314B][0xB79D07B3744EA1A], "camo", Enum[0x5DD5CC8AEA7314B][0xAA94CABDA68EB21], f134_arg1 )
 		elseif IsBooleanDvarSet( 0x32A243E731CD14B ) then
-			f134_local4 = 0x7615068F50B3D66
+			f134_local4 = "blacktransparent"
 		else
 			f134_local4 = CoD.BlackMarketTableUtility.GetContrabandSingleCamoImageName( f134_arg0, f134_arg8 )
 		end
@@ -3388,8 +3388,8 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 			f134_local7 = 0xC5B6756876BBDC6
 			f134_local8 = 0xC5B6756876BBDC6
 		else
-			f134_local7 = 0x666D479022F3E32
-			f134_local8 = 0x666D479022F3E32
+			f134_local7 = "menu/specialist"
+			f134_local8 = "menu/specialist"
 			f134_local34 = Enum.eModes[0x83EBA96F36BC4E5]
 		end
 		local f134_local35 = CoD.PlayerRoleUtility.GetHeroList( f134_local34 )
@@ -4493,7 +4493,7 @@ CoD.BlackMarketUtility.SetupItemShopSunsetSlotDatasource = function ( f168_arg0,
 						else
 							f168_local19.lootType = f168_local21
 							f168_local19.storePreview = true
-							f168_local19.inventoryIcon = 0x7615068F50B3D66
+							f168_local19.inventoryIcon = "blacktransparent"
 							f168_local19.earnedRewardCount = 0
 							f168_local19.totalRewardCount = 0
 							f168_local19.toolTipText = CoD.BlackMarketUtility.BlackjackShopSlotTooltipText[f168_arg1]
@@ -4863,8 +4863,8 @@ DataSources.WeaponBribeList = ListHelper_SetupDataSource( "WeaponBribeList", fun
 				f188_local5.popupDesc = f188_local5.desc
 			end
 			f188_local5.categoryText = f188_local9[0x2E9D0AD87FA0242]
-			f188_local5.image = f188_local9[0xB47C2D1A4104152] or 0x7615068F50B3D66
-			f188_local5.popupImage = f188_local9[0x4E441D88E82CD02] or 0x7615068F50B3D66
+			f188_local5.image = f188_local9[0xB47C2D1A4104152] or "blacktransparent"
+			f188_local5.popupImage = f188_local9[0x4E441D88E82CD02] or "blacktransparent"
 			f188_local5.price = f188_local8.price
 			f188_local5.casePrice = f188_local8.optionalCost
 			f188_local5.lootRule = f188_local8.lootRule
@@ -4997,7 +4997,7 @@ DataSources.ItemShopConfirmButtonList = ListHelper_SetupDataSource( "ItemShopCon
 	local f194_local0 = {}
 	local f194_local1 = FileshareIsLocalCategory( f194_arg0 )
 	table.insert( f194_local0, {
-		displayText = 0x85952ACC6D0C1B0,
+		displayText = "menu/purchase",
 		displayDesc = 0x1A0434D7EFB5F33,
 		action = SetWorkingStateAndPurchaseDWSKU,
 		params = {
@@ -5206,7 +5206,7 @@ DataSources.SupplyChainStreams = ListHelper_SetupDataSource( "SupplyChainStreams
 				featureTitle = 0x0,
 				streamName = 0x0,
 				streamSubtitle = 0x0,
-				streamImage = 0x7615068F50B3D66,
+				streamImage = "blacktransparent",
 				price = 600,
 				active = false,
 				rarity = Enum.LootRarityType[0x8556B83CAD0D180],
@@ -5689,10 +5689,10 @@ CoD.BlackMarketUtility.MovePurchaseTiersWidget = function ( f212_arg0, f212_arg1
 						local f212_local16 = CoD.SafeGetModelValue( f212_local10, "tier" )
 						if f212_arg1[f212_arg2].Internal and f212_arg1[f212_arg2].Internal.PurchaseText and f212_arg1[f212_arg2].Internal.TierText then
 							if f212_local5 + 1 < f212_local16 then
-								f212_arg1[f212_arg2].Internal.PurchaseText:setText( LocalizeToUpperString( 0xEC3822C82373D46 ) )
+								f212_arg1[f212_arg2].Internal.PurchaseText:setText( LocalizeToUpperString( "menu/purchase_tiers" ) )
 								f212_arg1[f212_arg2].Internal.TierText:setText( tostring( f212_local5 + 1 ) .. "-" .. tostring( f212_local16 ) )
 							else
-								f212_arg1[f212_arg2].Internal.PurchaseText:setText( LocalizeToUpperString( 0x56C09EE72782ED1 ) )
+								f212_arg1[f212_arg2].Internal.PurchaseText:setText( LocalizeToUpperString( "menu/purchase_tier" ) )
 								f212_arg1[f212_arg2].Internal.TierText:setText( tostring( f212_local5 + 1 ) )
 							end
 						end
@@ -6438,7 +6438,7 @@ CoD.BlackMarketUtility.GetSeasonCompleteImage = function ( f262_arg0 )
 			return f262_local1[0x22C49BD38F7A781]
 		end
 	end
-	return 0x7615068F50B3D66
+	return "blacktransparent"
 end
 
 CoD.BlackMarketUtility.GetSeasonCompleteTitle = function ( f263_arg0 )
@@ -8354,8 +8354,8 @@ CoD.BlackMarketUtility.LootPurchaseCaseModelValues = {
 	desc = 0x0,
 	isBundleCrate = false,
 	isCrateItem = false,
-	primaryImage = 0x7615068F50B3D66,
-	popupImage = 0x7615068F50B3D66
+	primaryImage = "blacktransparent",
+	popupImage = "blacktransparent"
 }
 CoD.BlackMarketUtility.LootPurchaseCrateModelValues = {
 	name = 0x83A7EF42505FCE5,
@@ -8662,9 +8662,9 @@ DataSources.ReservesNoDupesCrate = {
 			f411_local2 = f411_local0:create( "desc" )
 			f411_local2:set( f411_local1.desc or 0x0 )
 			f411_local2 = f411_local0:create( "popupImage" )
-			f411_local2:set( f411_local1.popupImage or 0x7615068F50B3D66 )
+			f411_local2:set( f411_local1.popupImage or "blacktransparent" )
 			f411_local2 = f411_local0:create( "primaryImage" )
-			f411_local2:set( f411_local1.primaryImage or 0x7615068F50B3D66 )
+			f411_local2:set( f411_local1.primaryImage or "blacktransparent" )
 			f411_local2 = CoD.BlackMarketTableUtility.GetBribeInformation( f411_arg0, 0x4DE2B5257791347 )
 			if f411_local2 then
 				local f411_local3 = f411_local0:create( "price" )
@@ -8885,7 +8885,7 @@ end )
 DataSources.PurchaseReservesItemButtons = ListHelper_SetupDataSource( "PurchaseReservesItemButtons", function ( f422_arg0, f422_arg1 )
 	local f422_local0 = ""
 	local f422_local1 = 0
-	local f422_local2 = 0x7615068F50B3D66
+	local f422_local2 = "blacktransparent"
 	local f422_local3 = "0"
 	local f422_local4 = false
 	local f422_local5 = false
@@ -9007,7 +9007,7 @@ DataSources.PurchaseReservesItemButtons = ListHelper_SetupDataSource( "PurchaseR
 	end
 	if not CoD.isPC then
 		table.insert( f422_local13, {
-			displayText = Engine[0xF9F1239CFD921FE]( 0xC2E92C54C2BE289 ),
+			displayText = Engine[0xF9F1239CFD921FE]( "menu/cancel" ),
 			action = f422_local11,
 			selectIndex = not f422_local12
 		} )
@@ -9035,7 +9035,7 @@ DataSources.PurchaseBribeStackButtons = ListHelper_SetupDataSource( "PurchaseBri
 	local f427_local0 = ""
 	local f427_local1 = 0
 	local f427_local2 = 0
-	local f427_local3 = 0x7615068F50B3D66
+	local f427_local3 = "blacktransparent"
 	local f427_local4 = "0"
 	local f427_local5 = 0
 	local f427_local6 = false
@@ -9182,7 +9182,7 @@ DataSources.PurchaseBribeStackButtons = ListHelper_SetupDataSource( "PurchaseBri
 	end
 	if not CoD.isPC then
 		table.insert( f427_local16, {
-			displayText = Engine[0xF9F1239CFD921FE]( 0xC2E92C54C2BE289 ),
+			displayText = Engine[0xF9F1239CFD921FE]( "menu/cancel" ),
 			action = f427_local14,
 			selectIndex = not f427_local15,
 			canPurchase = true
@@ -9221,12 +9221,12 @@ DataSources.ReservesSpecialContract = {
 		local f434_local6 = ""
 		local f434_local7 = 0x0
 		local f434_local8 = 0x0
-		local f434_local9 = 0x7615068F50B3D66
+		local f434_local9 = "blacktransparent"
 		local f434_local10 = 0
 		local f434_local11 = ""
 		local f434_local12 = ""
 		local f434_local13 = ""
-		local f434_local14 = 0x7615068F50B3D66
+		local f434_local14 = "blacktransparent"
 		local f434_local15 = Dvar.loot_special_contract_bundle:get()
 		local f434_local16 = f434_local15 and Engine[0xC53F8D38DF9042B]( f434_local15 )
 		local f434_local17 = f434_local16 and CoD.BlackMarketUtility.GetSpecialBundleInfo( f434_arg0, f434_local16 )
@@ -9840,7 +9840,7 @@ CoD.BlackMarketUtility.GetBribeImageFromMenuProperty = function ( f464_arg0, f46
 			return f464_local1.popupImage
 		end
 	end
-	return 0x7615068F50B3D66
+	return "blacktransparent"
 end
 
 CoD.BlackMarketUtility.RedeemNonCPLootBribe = function ( f465_arg0, f465_arg1 )
@@ -10252,7 +10252,7 @@ CoD.BlackMarketUtility.GetMPItemPreviewImage = function ( f499_arg0 )
 	end
 	local f499_local2 = CoD.CACUtility.GetUnlockableItemInfoField( f499_local1, f499_local0, "previewImage", nil )
 	if not f499_local2 then
-		return RegisterImage( 0x7615068F50B3D66 )
+		return RegisterImage( "blacktransparent" )
 	else
 		return f499_local2
 	end
@@ -10266,7 +10266,7 @@ CoD.BlackMarketUtility.GetMPItemPreviewImageLarge = function ( f500_arg0 )
 	end
 	local f500_local2 = CoD.CACUtility.GetUnlockableItemInfoField( f500_local1, f500_local0, "previewImageLarge", nil )
 	if not f500_local2 then
-		return RegisterImage( 0x7615068F50B3D66 )
+		return RegisterImage( "blacktransparent" )
 	else
 		return f500_local2
 	end
@@ -10686,7 +10686,7 @@ CoD.BlackMarketUtility.GetEmptyContractModelsTable = function ()
 		contractMode = CoDShared.LootContracts.ContractGameMode.LOOT_CONTRACT_GAME_MODE_INVALID,
 		displayName = 0x0,
 		description = "",
-		contractIcon = 0x7615068F50B3D66,
+		contractIcon = "blacktransparent",
 		displayMode = 0,
 		difficulty = 0,
 		target = 0,
@@ -10697,7 +10697,7 @@ CoD.BlackMarketUtility.GetEmptyContractModelsTable = function ()
 		xpReward = 0,
 		rewardType = 0,
 		rewardAmount = 0,
-		rewardIcon = 0x7615068F50B3D66,
+		rewardIcon = "blacktransparent",
 		rewardDisplay = "",
 		isDailyZombies = false,
 		active = false,
@@ -10730,7 +10730,7 @@ CoD.BlackMarketUtility.GetContractModelsForContractInfo = function ( f526_arg0 )
 	local f526_local10 = f526_arg0.reward.id
 	local f526_local11 = f526_arg0.progress
 	local f526_local12 = f526_local0[f526_local2] or 0x0
-	local f526_local13 = 0x7615068F50B3D66
+	local f526_local13 = "blacktransparent"
 	local f526_local14 = ""
 	if f526_local9 == 1 then
 		if f526_local8 and f526_local8 > 0 then
@@ -10750,7 +10750,7 @@ CoD.BlackMarketUtility.GetContractModelsForContractInfo = function ( f526_arg0 )
 		f526_local13 = 0x76C393335224D3F
 		f526_local14 = Engine[0xF9F1239CFD921FE]( 0xF251843889153EE, f526_local8 )
 	end
-	local f526_local15 = 0x7615068F50B3D66
+	local f526_local15 = "blacktransparent"
 	if f526_local6 == 0x5E8570DB713B763 then
 		f526_local15 = CoD.ContractUtility.GetLootContractIcon( f526_local6, f526_local2 )
 	else
@@ -11067,7 +11067,7 @@ DataSources.ContractReplacementOptions = ListHelper_SetupDataSource( "ContractRe
 	if not CoD.isPC then
 		table.insert( f548_local0, {
 			models = {
-				displayText = Engine.Localize( 0xC2E92C54C2BE289 )
+				displayText = Engine.Localize( "menu/cancel" )
 			},
 			properties = {
 				action = function ( f550_arg0, f550_arg1, f550_arg2, f550_arg3 )

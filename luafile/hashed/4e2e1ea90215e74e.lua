@@ -60,7 +60,7 @@ CoD.HealthBoostGameMap.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.CompassOverlay = CompassOverlay
 	
 	local smokeGrenadeEffect = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	smokeGrenadeEffect:setMaterial( LUI.UIImage.GetCachedMaterial( 0x83C485F153D0720 ) )
+	smokeGrenadeEffect:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_smoke" ) )
 	smokeGrenadeEffect:subscribeToGlobalModel( f1_arg1, "HUDItems", "smokeEffect", function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then

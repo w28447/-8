@@ -31,7 +31,7 @@ CoD.uplinkBallReticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.armorBorder = armorBorder
 	
 	local armorFill = LUI.UIImage.new( 0.5, 0.5, -135, 133, 0.5, 0.5, 274, 276 )
-	armorFill:setMaterial( LUI.UIImage.GetCachedMaterial( 0x910274CA3518744 ) )
+	armorFill:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	armorFill:setShaderVector( 1, 0, 0, 0, 0 )
 	armorFill:setShaderVector( 2, 1, 0, 0, 0 )
 	armorFill:setShaderVector( 3, 0, 0, 0, 0 )

@@ -76,7 +76,7 @@ CoD.systemOverlay_DivisionPlacement.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 		CoD.AARUtility.CloseArenaLeaguePlayPlacementOverlay( f6_arg1, f6_arg2 )
 		return true
 	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x6393FF34EA56966, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( featureOverlayButtonMouseOnly )

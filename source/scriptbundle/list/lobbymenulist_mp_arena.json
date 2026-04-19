@@ -1,0 +1,10 @@
+{
+    "name": "#lobbymenulist_mp_arena",
+    "type": "lobbymenu",
+    "bundles": [
+        "#director_online_mp_arena_pregame",
+        "#director_online_mp_arena_matchmaking",
+        "#director_online_mp_arena_custom",
+        "#director_lan_mp_arena"
+    ]
+}

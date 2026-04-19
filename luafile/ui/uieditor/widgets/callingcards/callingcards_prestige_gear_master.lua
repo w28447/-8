@@ -23,7 +23,7 @@ CoD[0x8CE52C91EA9361B].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local glows = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	glows:setImage( RegisterImage( 0x767DE28A9E7391B ) )
-	glows:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	glows:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( glows )
 	self.glows = glows
 	
@@ -39,7 +39,7 @@ CoD[0x8CE52C91EA9361B].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local skeletons = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	skeletons:setAlpha( 0.5 )
 	skeletons:setImage( RegisterImage( 0x43FB084BE500991 ) )
-	skeletons:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD8EA9FE9B0BCF75 ) )
+	skeletons:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	skeletons:setShaderVector( 0, 1, 1, 0, 0 )
 	skeletons:setShaderVector( 1, 0.03, 0, 0, 0 )
 	self:addElement( skeletons )
@@ -81,7 +81,7 @@ CoD[0x8CE52C91EA9361B].__resetProperties = function ( f2_arg0 )
 	f2_arg0.skeletons:setTopBottom( 0, 0, 0, 240 )
 	f2_arg0.skeletons:setRGB( 1, 1, 1 )
 	f2_arg0.skeletons:setAlpha( 0.5 )
-	f2_arg0.skeletons:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD8EA9FE9B0BCF75 ) )
+	f2_arg0.skeletons:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	f2_arg0.skeletons:setShaderVector( 0, 1, 1, 0, 0 )
 	f2_arg0.skeletons:setShaderVector( 1, 0.03, 0, 0, 0 )
 	f2_arg0.captainArm:setLeftRight( 0, 0, 518, 1402 )

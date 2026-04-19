@@ -27,7 +27,7 @@ CoD.WarzoneGameStatusIndicatorListItem.new = function ( f1_arg0, f1_arg1, f1_arg
 	local led = LUI.UIImage.new( 0, 0, 1, 293, 0, 0, 2, 42 )
 	led:setAlpha( 0.02 )
 	led:setImage( RegisterImage( 0xC07F7432F86DA83 ) )
-	led:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	led:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	led:setShaderVector( 0, 0, 0.25, 0, 0 )
 	led:setShaderVector( 1, 0, 0, 0, 0 )
 	led:setShaderVector( 2, 0, 1, 0, 0 )
@@ -40,7 +40,7 @@ CoD.WarzoneGameStatusIndicatorListItem.new = function ( f1_arg0, f1_arg1, f1_arg
 	Glow2:setRGB( 1, 0, 0 )
 	Glow2:setAlpha( 0 )
 	Glow2:setImage( RegisterImage( 0xC58FF2328701EBA ) )
-	Glow2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Glow2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow2 )
 	self.Glow2 = Glow2
 	
@@ -48,7 +48,7 @@ CoD.WarzoneGameStatusIndicatorListItem.new = function ( f1_arg0, f1_arg1, f1_arg
 	Glow:setRGB( 1, 0, 0 )
 	Glow:setAlpha( 0 )
 	Glow:setImage( RegisterImage( 0x65BA0231BD57E0B ) )
-	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
 	
@@ -101,7 +101,7 @@ CoD.WarzoneGameStatusIndicatorListItem.new = function ( f1_arg0, f1_arg1, f1_arg
 	spectatorsAddText:setShaderVector( 0, 0.8, 0, 0, 0 )
 	spectatorsAddText:setShaderVector( 1, 0, 0, 0, 0 )
 	spectatorsAddText:setShaderVector( 2, 1, 1, 1, 0.35 )
-	spectatorsAddText:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	spectatorsAddText:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	spectatorsAddText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	self:addElement( spectatorsAddText )
 	self.spectatorsAddText = spectatorsAddText
@@ -114,7 +114,7 @@ CoD.WarzoneGameStatusIndicatorListItem.new = function ( f1_arg0, f1_arg1, f1_arg
 	spectatorsAddTextX:setShaderVector( 0, 0.8, 0, 0, 0 )
 	spectatorsAddTextX:setShaderVector( 1, 0, 0, 0, 0 )
 	spectatorsAddTextX:setShaderVector( 2, 1, 1, 1, 0.35 )
-	spectatorsAddTextX:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	spectatorsAddTextX:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	spectatorsAddTextX:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	self:addElement( spectatorsAddTextX )
 	self.spectatorsAddTextX = spectatorsAddTextX
@@ -157,7 +157,7 @@ CoD.WarzoneGameStatusIndicatorListItem.new = function ( f1_arg0, f1_arg1, f1_arg
 	local border = LUI.UIImage.new( 0, 0, -3, 81, 0, 0, -1.5, 46.5 )
 	border:setRGB( 0.07, 0.07, 0.07 )
 	border:setImage( RegisterImage( 0xA3C76B80B69874D ) )
-	border:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	border:setShaderVector( 0, 0, 0, 0, 0 )
 	border:setupNineSliceShader( 18, 24 )
 	self:addElement( border )

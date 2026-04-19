@@ -31,8 +31,8 @@ CoD.StartMenu_Options_PrivacySettingsButton.new = function ( f1_arg0, f1_arg1, f
 	DirectorCustomStartButton.Tint:setRGB( 0.05, 0.08, 0.11 )
 	DirectorCustomStartButton.Tint:setAlpha( 0.25 )
 	DirectorCustomStartButton.LeaderActivityText:setText( "" )
-	DirectorCustomStartButton.MiddleText:setText( LocalizeToUpperString( 0x5EB6FED86163697 ) )
-	DirectorCustomStartButton.MiddleTextFocus:setText( LocalizeToUpperString( 0x5EB6FED86163697 ) )
+	DirectorCustomStartButton.MiddleText:setText( LocalizeToUpperString( "menu/privacy_settings" ) )
+	DirectorCustomStartButton.MiddleTextFocus:setText( LocalizeToUpperString( "menu/privacy_settings" ) )
 	self:addElement( DirectorCustomStartButton )
 	self.DirectorCustomStartButton = DirectorCustomStartButton
 	

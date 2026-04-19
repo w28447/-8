@@ -43,7 +43,7 @@ CoD.NotificationRewardWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local highlight = LUI.UIImage.new( 0, 0, 252, 444, 0, 0, -48, 144 )
 	highlight:setImage( RegisterImage( 0x5924CD83FB419A7 ) )
-	highlight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	highlight:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( highlight )
 	self.highlight = highlight
 	
@@ -86,7 +86,7 @@ CoD.NotificationRewardWidget.__resetProperties = function ( f6_arg0 )
 	f6_arg0.highlight:setAlpha( 1 )
 	f6_arg0.highlight:setZRot( 0 )
 	f6_arg0.highlight:setScale( 1, 1 )
-	f6_arg0.highlight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	f6_arg0.highlight:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	f6_arg0.Text:setAlpha( 1 )
 end
 
@@ -171,7 +171,7 @@ CoD.NotificationRewardWidget.__clipsPerState = {
 			f7_arg0.highlight:setAlpha( 0 )
 			f7_arg0.highlight:setZRot( 0 )
 			f7_arg0.highlight:setScale( 0, 0 )
-			f7_arg0.highlight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+			f7_arg0.highlight:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 			f7_local1( f7_arg0.highlight )
 		end,
 		TimeUp = function ( f18_arg0, f18_arg1 )

@@ -74,7 +74,7 @@ CoD.StartMenu_Barracks.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 		end
 	end, function ( f7_arg0, f7_arg1, f7_arg2 )
 		if IsInDefaultState( f7_arg0 ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -86,7 +86,7 @@ CoD.StartMenu_Barracks.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	ProgressUnlocks = CoD.StartMenu_Button_LG.new( f1_arg0, f1_arg1, 0.5, 0.5, -324.5, 322.5, 0.5, 0.5, -336.5, 44.5 )
 	ProgressUnlocks.ButtonInternal.ImageContainer.ImageContainer:setImage( RegisterImage( 0xCB7B28E1ED13921 ) )
 	ProgressUnlocks.ButtonInternal.StartMenuButtonFrame:changeFrameWidget( CoD.ButtonFrame_Progress )
-	ProgressUnlocks.ButtonInternal.ButtonTitle.HeaderText:setText( LocalizeToUpperString( 0xC15C09DDBBF595A ) )
+	ProgressUnlocks.ButtonInternal.ButtonTitle.HeaderText:setText( LocalizeToUpperString( "menu/progress_unlocks" ) )
 	ProgressUnlocks:registerEventHandler( "gain_focus", function ( element, event )
 		local f8_local0 = nil
 		if element.gainFocus then
@@ -107,7 +107,7 @@ CoD.StartMenu_Barracks.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 		end
 	end, function ( f10_arg0, f10_arg1, f10_arg2 )
 		if IsInDefaultState( f10_arg0 ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -143,7 +143,7 @@ CoD.StartMenu_Barracks.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 		end
 	end, function ( f14_arg0, f14_arg1, f14_arg2 )
 		if IsInDefaultState( f14_arg0 ) then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

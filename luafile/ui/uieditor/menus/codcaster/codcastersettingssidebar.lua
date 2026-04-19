@@ -84,7 +84,7 @@ LUI.createMenu.CodCasterSettingsSideBar = function ( f1_arg0, f1_arg1 )
 	
 	local Title = LUI.UIText.new( 1, 1, -1020, -702, 0, 0, 15.5, 45.5 )
 	Title:setRGB( ColorSet.T8__GOLD.r, ColorSet.T8__GOLD.g, ColorSet.T8__GOLD.b )
-	Title:setText( LocalizeToUpperString( 0xE2311AD89D11E7C ) )
+	Title:setText( LocalizeToUpperString( "codcaster/display_settings" ) )
 	Title:setTTF( "ttmussels_regular" )
 	Title:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Title:setAlignment( Enum.LUIAlignment[0x6ED4298C93DC5ED] )
@@ -116,7 +116,7 @@ LUI.createMenu.CodCasterSettingsSideBar = function ( f1_arg0, f1_arg1 )
 	local quitButton = nil
 	
 	quitButton = CoD.featureOverlay_Button.new( f1_local1, f1_arg0, 1, 1, -319, -119, 0, 0, 924, 984 )
-	quitButton.ButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( 0x70A9FDC87CD3D48 ) )
+	quitButton.ButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/back" ) )
 	quitButton:registerEventHandler( "gain_focus", function ( element, event )
 		local f3_local0 = nil
 		if element.gainFocus then
@@ -244,7 +244,7 @@ LUI.createMenu.CodCasterSettingsSideBar = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f20_arg0, f20_arg1, f20_arg2 )
 		if not IsRepeatButtonPress( nil ) then
-			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x820DDD869ABBFAA], 0x70A9FDC87CD3D48, nil, "Y" )
+			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x820DDD869ABBFAA], "menu/back", nil, "Y" )
 			return true
 		else
 			return false

@@ -1,0 +1,8 @@
+{
+    "name": "#lobbymenulist_training",
+    "type": "lobbymenu",
+    "bundles": [
+        "#director_online_mp_training",
+        "#director_lan_mp_training"
+    ]
+}

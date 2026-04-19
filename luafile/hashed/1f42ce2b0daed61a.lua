@@ -14,7 +14,7 @@ CoD.WZCompassMinorInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	Text:setShaderVector( 0, 0.8, 0, 0, 0 )
 	Text:setShaderVector( 1, 0, 0, 0, 0 )
 	Text:setShaderVector( 2, 1, 1, 1, 0.35 )
-	Text:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Text:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	Text:setLetterSpacing( 2 )
 	Text:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	Text:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -28,8 +28,8 @@ CoD.WZCompassMinorInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.Text = Text
 	
 	local Image = LUI.UIImage.new( 0.5, 0.5, -7, 9, 0, 0, -8, 8 )
-	Image:setImage( RegisterImage( 0xF1FE913FFF48899 ) )
-	Image:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFEAF4A18C11A89E ) )
+	Image:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_compass_hash" ) )
+	Image:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_add" ) )
 	self:addElement( Image )
 	self.Image = Image
 	

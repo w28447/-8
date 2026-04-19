@@ -12,7 +12,7 @@ CoD.EmblemEditorColorMixerPointer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.line = line
 	
 	local Linker = LUI.UIImage.new( 0, 0, -1, 3, 0, 0, -10, 20 )
-	Linker:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
+	Linker:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
 	Linker:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	Linker:setShaderVector( 0, 0, 0, 0, 0 )
 	Linker:setupNineSliceShader( 4, 8 )

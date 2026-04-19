@@ -14,7 +14,7 @@ CoD.ContractItemBacker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local Noise = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Noise:setAlpha( 0.3 )
-	Noise:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	Noise:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	Noise:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	Noise:setShaderVector( 0, 0, 0, 0, 0 )
 	Noise:setupNineSliceShader( 196, 88 )
@@ -23,7 +23,7 @@ CoD.ContractItemBacker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local LED = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	LED:setRGB( 0, 0, 0 )
-	LED:setImage( RegisterImage( 0x4B6FFA90272070E ) )
+	LED:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
 	LED:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	LED:setShaderVector( 0, 0, 0, 0, 0 )
 	LED:setupNineSliceShader( 24, 24 )
@@ -32,8 +32,8 @@ CoD.ContractItemBacker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local FrameBorder = LUI.UIImage.new( 0, 1, 2, 0, 0, 1, 2, 0 )
 	FrameBorder:setAlpha( 0.15 )
-	FrameBorder:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrameBorder:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrameBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FrameBorder:setupNineSliceShader( 12, 12 )
 	self:addElement( FrameBorder )

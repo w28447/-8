@@ -9,7 +9,7 @@ CoD.WZObituaryTeamIcon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local Backer = LUI.UIImage.new( 0, 0, 0, 26, 0, 0, 0, 26 )
 	Backer:setRGB( 0.05, 0.41, 0.37 )
-	Backer:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE125638BF94665F ) )
+	Backer:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	Backer:setShaderVector( 0, 0.03, 0.03, 0.03, 0.03 )
 	self:addElement( Backer )
 	self.Backer = Backer

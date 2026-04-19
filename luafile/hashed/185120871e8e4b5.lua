@@ -11,14 +11,14 @@ CoD.MountablePoint.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local BracketRight = LUI.UIImage.new( 0.5, 0.5, 48.5, 66.5, 0.5, 0.5, -47, 43 )
 	BracketRight:setScale( 1.21, 1.21 )
 	BracketRight:setImage( RegisterImage( 0x622F5B1F0379742 ) )
-	BracketRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	BracketRight:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BracketRight )
 	self.BracketRight = BracketRight
 	
 	local BracketLeft = LUI.UIImage.new( 0.5, 0.5, -66.5, -48.5, 0.5, 0.5, -47, 43 )
 	BracketLeft:setScale( 1.21, 1.21 )
 	BracketLeft:setImage( RegisterImage( 0xD0C0584FD0AA61 ) )
-	BracketLeft:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	BracketLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BracketLeft )
 	self.BracketLeft = BracketLeft
 	

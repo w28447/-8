@@ -114,7 +114,7 @@ CoD.ContractDetailsPanel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		PlaySoundAlias( "uin_toggle_generic" )
 		return true
 	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( ActivateContractButton )
@@ -153,8 +153,8 @@ CoD.ContractDetailsPanel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		}
 	} )
 	PurchaseContractButton:setAlpha( 0 )
-	PurchaseContractButton.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( 0x85952ACC6D0C1B0 ) )
-	PurchaseContractButton.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( 0x85952ACC6D0C1B0 ) )
+	PurchaseContractButton.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( "menu/purchase" ) )
+	PurchaseContractButton.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( "menu/purchase" ) )
 	local TabbedScoreboardFuiBox2 = PurchaseContractButton
 	local TabbedScoreboardFuiBox = PurchaseContractButton.subscribeToModel
 	local Seasonal = Engine.GetModelForController( f1_arg1 )
@@ -185,7 +185,7 @@ CoD.ContractDetailsPanel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 			return true
 		end
 	end, function ( f18_arg0, f18_arg1, f18_arg2 )
-		CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( PurchaseContractButton )

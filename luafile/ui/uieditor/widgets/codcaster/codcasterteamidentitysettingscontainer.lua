@@ -107,7 +107,7 @@ CoD.CodCasterTeamIdentitysettingscontainer.new = function ( f1_arg0, f1_arg1, f1
 		OpenOverlay( self, "EditTeamLogo", f7_arg2 )
 		return true
 	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( TeamLogoImageButton )

@@ -26,14 +26,14 @@ CoD[0x16E4D2022024D11].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local ghostSpin = CoD.CallingCards_Asset_ghost_spin.new( f1_arg0, f1_arg1, 0, 0, 165.5, 885.5, 0, 0, -274.5, 445.5 )
 	ghostSpin:setRGB( 1, 0.68, 0 )
-	ghostSpin:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	ghostSpin:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ghostSpin )
 	self.ghostSpin = ghostSpin
 	
 	local dust2 = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, -159, 240 )
 	dust2:setAlpha( 0.3 )
 	dust2:setImage( RegisterImage( 0xEA71666B3E5511F ) )
-	dust2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD8EA9FE9B0BCF75 ) )
+	dust2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	dust2:setShaderVector( 0, 1, 1, 0, 0 )
 	dust2:setShaderVector( 1, 0.35, 0, 0, 0 )
 	self:addElement( dust2 )
@@ -42,7 +42,7 @@ CoD[0x16E4D2022024D11].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local dust = LUI.UIImage.new( 0, 0, 337, 992, 0, 0, -321, 240 )
 	dust:setRGB( 1, 0.68, 0 )
 	dust:setImage( RegisterImage( 0xEA71666B3E5511F ) )
-	dust:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	dust:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( dust )
 	self.dust = dust
 	
@@ -54,7 +54,7 @@ CoD[0x16E4D2022024D11].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local Lightshimmer = LUI.UIImage.new( 0, 0, 344, 960, 0, 0, 0, 240 )
 	Lightshimmer:setAlpha( 0.75 )
 	Lightshimmer:setImage( RegisterImage( 0x85D28B3432378D9 ) )
-	Lightshimmer:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9227A50BA2B8D21 ) )
+	Lightshimmer:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	Lightshimmer:setShaderVector( 0, 0, 3, 0, 0 )
 	Lightshimmer:setShaderVector( 1, 6, 0, 0, 0 )
 	self:addElement( Lightshimmer )
@@ -63,7 +63,7 @@ CoD[0x16E4D2022024D11].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local paranormal = LUI.UIImage.new( 0, 0, 430, 702, 0, 0, 26, 266 )
 	paranormal:setAlpha( 0.5 )
 	paranormal:setImage( RegisterImage( 0x2D34C8BFE864557 ) )
-	paranormal:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9227A50BA2B8D21 ) )
+	paranormal:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	paranormal:setShaderVector( 0, 0, 5, 0, 0 )
 	paranormal:setShaderVector( 1, 5, 0, 0, 0 )
 	self:addElement( paranormal )

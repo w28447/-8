@@ -25,7 +25,7 @@ DataSources.ZMObjectiveProgressInfo = {
 		end
 		local f3_local2 = CoD.ZMInventoryUtility.GetInventoryItemRoot( f3_local1, f3_arg0 )
 		f3_local2 = f3_local2:create( "ObjProgInfo" )
-		DataSources.ZMObjectiveProgressInfo.initModel( f3_local2, "background", 0x7615068F50B3D66 )
+		DataSources.ZMObjectiveProgressInfo.initModel( f3_local2, "background", "blacktransparent" )
 		DataSources.ZMObjectiveProgressInfo.initModel( f3_local2, "numObjectiveProgressItems", 0 )
 		DataSources.ZMObjectiveProgressInfo.initModel( f3_local2, "Eye.stage", 0 )
 		DataSources.ZMObjectiveProgressInfo.initModel( f3_local2, "Ring.stage", 0 )
@@ -50,7 +50,7 @@ DataSources.ZMInventoryShieldPieces = {
 				f5_local7 = f5_local7:create( "ShieldPieces" )
 				local f5_local8 = f5_local7:create( f5_local5 )
 				local f5_local4 = f5_local8:create( "image1" )
-				f5_local4:set( f5_local6[0x3EEE83BA3D7763A] or 0x7615068F50B3D66 )
+				f5_local4:set( f5_local6[0x3EEE83BA3D7763A] or "blacktransparent" )
 				if not f5_local8.stage then
 					f5_local4 = f5_local8:create( "stage" )
 					f5_local4:set( 0 )
@@ -77,7 +77,7 @@ DataSources.ZMInventoryPaPItems = {
 				local f8_local12 = f8_local11:create( f8_local9 )
 				for f8_local4, f8_local5 in pairs( f8_local10.stages ) do
 					local f8_local7 = f8_local12:create( "image" .. f8_local4 )
-					f8_local7:set( f8_local5[0xB7D15A446FD0C12] or 0x7615068F50B3D66 )
+					f8_local7:set( f8_local5[0xB7D15A446FD0C12] or "blacktransparent" )
 				end
 				if not f8_local12.stage then
 					f8_local8 = f8_local12:create( "stage" )
@@ -109,7 +109,7 @@ DataSources.ZMInventoryWonderWeaponItems = {
 						local f11_local9 = "image" .. f11_local6
 						local f11_local10 = "numNeeded" .. f11_local6
 						local f11_local5 = f11_local16:create( f11_local9 )
-						f11_local5:set( f11_local7[0xB7D15A446FD0C12] or 0x7615068F50B3D66 )
+						f11_local5:set( f11_local7[0xB7D15A446FD0C12] or "blacktransparent" )
 						f11_local5 = f11_local16:create( f11_local10 )
 						f11_local5:set( f11_local7[0xA5D6F24759415E6] )
 						if not f11_local16.stage then
@@ -156,11 +156,11 @@ CoD.ZMInventoryUtility.SetupMapInventoryQuests = function ( f14_arg0, f14_arg1 )
 									local f15_local18 = math.max( 3, #f15_local15.stages )
 									for f15_local8 = 1, f15_local18, 1 do
 										local f15_local7 = f15_local17:create( "image" .. f15_local8 )
-										f15_local7:set( 0x7615068F50B3D66 )
+										f15_local7:set( "blacktransparent" )
 									end
 									for f15_local11, f15_local12 in pairs( f15_local15.stages ) do
 										local f15_local13 = f15_local17:create( "image" .. f15_local11 )
-										f15_local13:set( f15_local12[0xB7D15A446FD0C12] or 0x7615068F50B3D66 )
+										f15_local13:set( f15_local12[0xB7D15A446FD0C12] or "blacktransparent" )
 									end
 									if not f15_local17.stage then
 										f15_local8 = f15_local17:create( "stage" )
@@ -303,9 +303,9 @@ CoD.ZMInventoryUtility.SetupObjectiveProgressRingItems = function ( f23_arg0, f2
 		local f23_local9 = f23_local8:create( "earned" )
 		f23_local9:set( false )
 		f23_local9 = f23_local8:create( "progressItemUnfinishedImage" )
-		f23_local9:set( f23_local2 or 0x7615068F50B3D66 )
+		f23_local9:set( f23_local2 or "blacktransparent" )
 		f23_local9 = f23_local8:create( "progressItemFinishedImage" )
-		f23_local9:set( f23_local3 or 0x7615068F50B3D66 )
+		f23_local9:set( f23_local3 or "blacktransparent" )
 		f23_arg0["ObjectiveProgItem" .. f23_local5]:setModel( f23_local8, f23_arg1 )
 	end
 end
@@ -321,9 +321,9 @@ CoD.ZMInventoryUtility.SetupNonlinearObjectiveProgressRingItems = function ( f24
 			local f24_local10 = f24_local1:create( f24_local6 )
 			f24_local10:create( "earned" )
 			local f24_local11 = f24_local10:create( "progressItemUnfinishedImage" )
-			f24_local11:set( f24_local8 or 0x7615068F50B3D66 )
+			f24_local11:set( f24_local8 or "blacktransparent" )
 			f24_local11 = f24_local10:create( "progressItemFinishedImage" )
-			f24_local11:set( f24_local9 or 0x7615068F50B3D66 )
+			f24_local11:set( f24_local9 or "blacktransparent" )
 			if f24_arg0["ObjectiveProgItem" .. f24_local6] then
 				f24_arg0["ObjectiveProgItem" .. f24_local6]:setModel( f24_local10, f24_arg1 )
 			end
@@ -356,7 +356,7 @@ CoD.ZMInventoryUtility.HandleChallengesStageChange = function ( f26_arg0, f26_ar
 		end
 	else
 		f26_local1.description:set( 0x0 )
-		f26_local1.image:set( 0x7615068F50B3D66 )
+		f26_local1.image:set( "blacktransparent" )
 		f26_local1.numNeeded:set( 0 )
 		f26_local1.currentProgress:set( 0 )
 	end
@@ -383,13 +383,13 @@ CoD.ZMInventoryUtility.StageToSentinelImage = function ( f28_arg0 )
 	local f28_local1 = CoD.ZMStoryUtility.GetCurrentMapStory()
 	local f28_local2 = CoD.MapUtility.GetMapValue( Engine[0xC53F8D38DF9042B]( Engine.GetCurrentMap() ), 0x54401491AAC14E7 )
 	if not f28_local2 then
-		return 0x7615068F50B3D66
+		return "blacktransparent"
 	else
 		local f28_local3 = Engine[0xE00B2F29271C60B]( Engine[0xC53F8D38DF9042B]( f28_local2 ) )
 		if f28_local3.objprogitems and f28_local0 < #f28_local3.objprogitems then
-			return f28_local3.objprogitems[f28_local0 + 1][0xAB612888528489A] or 0x7615068F50B3D66
+			return f28_local3.objprogitems[f28_local0 + 1][0xAB612888528489A] or "blacktransparent"
 		else
-			return 0x7615068F50B3D66
+			return "blacktransparent"
 		end
 	end
 end
@@ -399,13 +399,13 @@ CoD.ZMInventoryUtility.StageToFullSentinelImage = function ( f29_arg0 )
 	local f29_local1 = CoD.ZMStoryUtility.GetCurrentMapStory()
 	local f29_local2 = CoD.MapUtility.GetMapValue( Engine[0xC53F8D38DF9042B]( Engine.GetCurrentMap() ), 0x54401491AAC14E7 )
 	if not f29_local2 then
-		return 0x7615068F50B3D66
+		return "blacktransparent"
 	else
 		local f29_local3 = Engine[0xE00B2F29271C60B]( Engine[0xC53F8D38DF9042B]( f29_local2 ) )
 		if f29_local3.sentinelstages and f29_local0 < #f29_local3.sentinelstages then
-			return f29_local3.sentinelstages[f29_local0 + 1][0xB7D15A446FD0C12] or 0x7615068F50B3D66
+			return f29_local3.sentinelstages[f29_local0 + 1][0xB7D15A446FD0C12] or "blacktransparent"
 		else
-			return 0x7615068F50B3D66
+			return "blacktransparent"
 		end
 	end
 end
@@ -459,7 +459,7 @@ CoD.ZMInventoryUtility.SetupInventoryTalisman = function ( f34_arg0, f34_arg1, f
 		local f34_local2 = GetItemImageForIndex( f34_local1, Enum[0x6EB546760F890D2][0x5544C104CD15F10], Enum.eModes[0x3723205FAE52C4A] )
 		local f34_local3 = GetItemNameForIndex( f34_local1, Enum[0x6EB546760F890D2][0x5544C104CD15F10], Enum.eModes[0x3723205FAE52C4A] )
 		if f34_local2 == 0x0 or not f34_local2 then
-			f34_local2 = 0x7615068F50B3D66
+			f34_local2 = "blacktransparent"
 		end
 		f34_arg3:setImage( RegisterImage( f34_local2 ) )
 		f34_arg2:setText( Engine[0xF9F1239CFD921FE]( f34_local3 ) )

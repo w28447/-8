@@ -26,7 +26,7 @@ CoD.PC_CoDAccount.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	Border:setRGB( 0.8, 0.76, 0.7 )
 	Border:setAlpha( 0.03 )
 	Border:setImage( RegisterImage( 0xF1E3082B39E99BB ) )
-	Border:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	Border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	Border:setShaderVector( 0, 0, 0, 0, 0 )
 	Border:setupNineSliceShader( 6, 6 )
 	self:addElement( Border )
@@ -34,7 +34,7 @@ CoD.PC_CoDAccount.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	
 	local Network = CoD.StartMenu_Button_SM.new( f1_arg0, f1_arg1, 0, 0, 703, 943, 0, 0, 222, 462 )
 	Network.StartMenuOptionsSubFrame.ImageContainer.ImageContainer:setImage( RegisterImage( 0xE8E46047AB4630E ) )
-	Network.StartMenuOptionsSubFrame.ButtonText:setText( LocalizeToUpperString( 0x9F9A830F04564A7 ) )
+	Network.StartMenuOptionsSubFrame.ButtonText:setText( LocalizeToUpperString( "menu/network" ) )
 	Network:registerEventHandler( "gain_focus", function ( element, event )
 		local f2_local0 = nil
 		if element.gainFocus then
@@ -50,7 +50,7 @@ CoD.PC_CoDAccount.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 		PlaySoundAlias( "uin_toggle_generic" )
 		return true
 	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( Network )
@@ -74,7 +74,7 @@ CoD.PC_CoDAccount.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 		PlaySoundAlias( "uin_toggle_generic" )
 		return true
 	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( Credits )
@@ -107,10 +107,10 @@ CoD.PC_CoDAccount.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 		end
 	end, function ( f10_arg0, f10_arg1, f10_arg2 )
 		if CoD.CoDAccountUtility.IsAccountFeatureEnabled( f10_arg2 ) and not IsSignedIntoUno( f10_arg2 ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif CoD.CoDAccountUtility.IsAccountFeatureEnabled( f10_arg2 ) and IsSignedIntoUno( f10_arg2 ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

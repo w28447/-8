@@ -38,7 +38,7 @@ CoD[0x8482E5A4D7D79F3].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local soldierGlow = LUI.UIImage.new( 0, 0, 502, 916, 0, 0, 0, 240 )
 	soldierGlow:setImage( RegisterImage( 0x11E4373241FF189 ) )
-	soldierGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	soldierGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( soldierGlow )
 	self.soldierGlow = soldierGlow
 	
@@ -49,7 +49,7 @@ CoD[0x8482E5A4D7D79F3].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local firespot = LUI.UIImage.new( 0, 0, 68.5, 186.5, 0, 0, 122.5, 240.5 )
 	firespot:setImage( RegisterImage( 0xDD88A92D094B9B0 ) )
-	firespot:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9227A50BA2B8D21 ) )
+	firespot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	firespot:setShaderVector( 0, 0, 3, 0, 0 )
 	firespot:setShaderVector( 1, 6, 0, 0, 0 )
 	self:addElement( firespot )
@@ -57,7 +57,7 @@ CoD[0x8482E5A4D7D79F3].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local firespot2 = LUI.UIImage.new( 0, 0, 473, 576, 0, 0, -66, 37 )
 	firespot2:setImage( RegisterImage( 0xDD88A92D094B9B0 ) )
-	firespot2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9227A50BA2B8D21 ) )
+	firespot2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	firespot2:setShaderVector( 0, 0, 3, 0, 0 )
 	firespot2:setShaderVector( 1, 6, 0, 0, 0 )
 	self:addElement( firespot2 )

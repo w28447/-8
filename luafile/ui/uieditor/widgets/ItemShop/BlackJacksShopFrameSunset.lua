@@ -1,4 +1,4 @@
-require( "x64:33a3fbb064063e0" )
+require( "ui/uieditor/menus/itemshop/itemshopdetailssunset" )
 require( "ui/uieditor/menus/lobby/common/popups/vodviewer" )
 require( "ui/uieditor/widgets/itemshop/bmtallitemcontainer" )
 require( "ui/uieditor/widgets/itemshop/contracts/contractsupplychaindetails" )
@@ -159,7 +159,7 @@ CoD.BlackJacksShopFrameSunset.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 		end
 	end, function ( f17_arg0, f17_arg1, f17_arg2 )
 		if not CoD.ModelUtility.IsSelfModelValueTrue( f17_arg0, f17_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f17_arg0, f17_arg2, "revealed" ) then
-			CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -363,10 +363,10 @@ CoD.BlackJacksShopFrameSunset.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 		end
 	end, function ( f43_arg0, f43_arg1, f43_arg2 )
 		if CoD.ModelUtility.IsSelfModelValueEqualToEnum( f43_arg0, f43_arg2, "lootType", LuaEnum.LOOT_TYPE.CONTRACT ) and not CoD.ModelUtility.IsSelfModelValueTrue( f43_arg0, f43_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f43_arg0, f43_arg2, "revealed" ) then
-			CoD.Menu.SetButtonLabel( f43_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f43_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif not CoD.ModelUtility.IsSelfModelValueTrue( f43_arg0, f43_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f43_arg0, f43_arg2, "revealed" ) then
-			CoD.Menu.SetButtonLabel( f43_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f43_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -570,10 +570,10 @@ CoD.BlackJacksShopFrameSunset.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 		end
 	end, function ( f69_arg0, f69_arg1, f69_arg2 )
 		if CoD.ModelUtility.IsSelfModelValueEqualToEnum( f69_arg0, f69_arg2, "lootType", LuaEnum.LOOT_TYPE.CONTRACT ) and not CoD.ModelUtility.IsSelfModelValueTrue( f69_arg0, f69_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f69_arg0, f69_arg2, "revealed" ) then
-			CoD.Menu.SetButtonLabel( f69_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f69_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif not CoD.ModelUtility.IsSelfModelValueTrue( f69_arg0, f69_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f69_arg0, f69_arg2, "revealed" ) then
-			CoD.Menu.SetButtonLabel( f69_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f69_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -774,8 +774,8 @@ CoD.BlackJacksShopFrameSunset.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	SpecialOrdersBracket = LUI.UIImage.new( 0.5, 0.5, -277, -27, 0.5, 0.5, -373, -365 )
 	SpecialOrdersBracket:setRGB( 0.98, 1, 0.89 )
 	SpecialOrdersBracket:setAlpha( 0.5 )
-	SpecialOrdersBracket:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	SpecialOrdersBracket:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	SpecialOrdersBracket:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	SpecialOrdersBracket:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	SpecialOrdersBracket:setShaderVector( 0, 0, 0, 0, 0 )
 	SpecialOrdersBracket:setupNineSliceShader( 16, 4 )
 	self:addElement( SpecialOrdersBracket )
@@ -783,8 +783,8 @@ CoD.BlackJacksShopFrameSunset.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	FeaturedItemsBracket = LUI.UIImage.new( 0.5, 0.5, -846, -311, 0.5, 0.5, -373, -365 )
 	FeaturedItemsBracket:setAlpha( 0.5 )
-	FeaturedItemsBracket:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	FeaturedItemsBracket:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FeaturedItemsBracket:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	FeaturedItemsBracket:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FeaturedItemsBracket:setShaderVector( 0, 0, 0, 0, 0 )
 	FeaturedItemsBracket:setupNineSliceShader( 16, 4 )
 	self:addElement( FeaturedItemsBracket )
@@ -886,8 +886,8 @@ CoD.BlackJacksShopFrameSunset.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local MyShopBracket = LUI.UIImage.new( 0.5, 0.5, 7, 257, 0.5, 0.5, -373, -365 )
 	MyShopBracket:setAlpha( 0.5 )
-	MyShopBracket:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	MyShopBracket:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	MyShopBracket:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	MyShopBracket:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	MyShopBracket:setShaderVector( 0, 0, 0, 0, 0 )
 	MyShopBracket:setupNineSliceShader( 16, 4 )
 	self:addElement( MyShopBracket )

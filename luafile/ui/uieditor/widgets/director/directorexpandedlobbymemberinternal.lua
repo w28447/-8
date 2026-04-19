@@ -33,7 +33,7 @@ CoD.DirectorExpandedLobbyMemberInternal.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local FocusGlow = LUI.UIImage.new( 0.5, 0.5, -260.5, 264.5, 0.5, 0.5, -69, 69 )
 	FocusGlow:setAlpha( 0 )
-	FocusGlow:setImage( RegisterImage( 0xB8F10D49D85E9C4 ) )
+	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_small" ) )
 	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.24, 0.25 )
 	FocusGlow:setShaderVector( 1, 1, 0, 0, 0 )
@@ -42,7 +42,7 @@ CoD.DirectorExpandedLobbyMemberInternal.new = function ( f1_arg0, f1_arg1, f1_ar
 	self.FocusGlow = FocusGlow
 	
 	local BackingBorder = LUI.UIImage.new( 0, 0, 2, 427, 0, 0, -2, 67 )
-	BackingBorder:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	BackingBorder:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	BackingBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	BackingBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingBorder:setupNineSliceShader( 196, 88 )
@@ -50,7 +50,7 @@ CoD.DirectorExpandedLobbyMemberInternal.new = function ( f1_arg0, f1_arg1, f1_ar
 	self.BackingBorder = BackingBorder
 	
 	local BackingBorder2 = LUI.UIImage.new( 0, 0, 2, 427, 0, 0, -2, 67 )
-	BackingBorder2:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	BackingBorder2:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	BackingBorder2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	BackingBorder2:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingBorder2:setupNineSliceShader( 196, 88 )
@@ -59,7 +59,7 @@ CoD.DirectorExpandedLobbyMemberInternal.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local BackingRank = LUI.UIImage.new( 0, 0, 334, 425, 0, 0, 0, 65 )
 	BackingRank:setAlpha( 0.7 )
-	BackingRank:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	BackingRank:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	BackingRank:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	BackingRank:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingRank:setupNineSliceShader( 196, 88 )
@@ -68,7 +68,7 @@ CoD.DirectorExpandedLobbyMemberInternal.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local BackingEmblem = LUI.UIImage.new( 0, 0, 4, 69, 0, 0, 0, 65 )
 	BackingEmblem:setAlpha( 0.7 )
-	BackingEmblem:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	BackingEmblem:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	BackingEmblem:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	BackingEmblem:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingEmblem:setupNineSliceShader( 196, 88 )
@@ -201,15 +201,15 @@ CoD.DirectorExpandedLobbyMemberInternal.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local SelectionOverlay = LUI.UIImage.new( 0, 0, 2, 427, 0, 0, -2, 67 )
 	SelectionOverlay:setAlpha( 0 )
-	SelectionOverlay:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	SelectionOverlay:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( SelectionOverlay )
 	self.SelectionOverlay = SelectionOverlay
 	
 	local FocusBorder = LUI.UIImage.new( 0, 1, 0, 4, 0, 1, -4, 4 )
 	FocusBorder:setRGB( 0.96, 0.94, 0.78 )
 	FocusBorder:setAlpha( 0 )
-	FocusBorder:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FocusBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FocusBorder:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FocusBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FocusBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FocusBorder:setupNineSliceShader( 5, 5 )
 	self:addElement( FocusBorder )
@@ -217,8 +217,8 @@ CoD.DirectorExpandedLobbyMemberInternal.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local FrontendFrame = LUI.UIImage.new( 0, 0, 1, 428, 0, 0, -3, 68 )
 	FrontendFrame:setAlpha( 0.2 )
-	FrontendFrame:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrontendFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrame:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrontendFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrame:setupNineSliceShader( 12, 12 )
 	self:addElement( FrontendFrame )

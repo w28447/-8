@@ -18,7 +18,7 @@ CoD.Support_Button.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local Background = LUI.UIImage.new( 0, 0, -22, 60, 0, 0, -19, 64 )
 	Background:setAlpha( 0.2 )
 	Background:setImage( RegisterImage( 0x75825763EF40352 ) )
-	Background:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Background:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Background )
 	self.Background = Background
 	
@@ -205,7 +205,7 @@ CoD.Support_Button.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	Rule:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
 	Rule:setAlpha( 0 )
 	Rule:setImage( RegisterImage( 0x44F091BA4D4DD60 ) )
-	Rule:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Rule:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Rule )
 	self.Rule = Rule
 	
@@ -213,7 +213,7 @@ CoD.Support_Button.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	Rule2:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
 	Rule2:setAlpha( 0 )
 	Rule2:setImage( RegisterImage( 0x44F091BA4D4DD60 ) )
-	Rule2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Rule2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Rule2 )
 	self.Rule2 = Rule2
 	
@@ -239,7 +239,7 @@ CoD.Support_Button.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	FUItop2:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
 	FUItop2:setAlpha( 0 )
 	FUItop2:setImage( RegisterImage( 0xD21881AE56187FC ) )
-	FUItop2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	FUItop2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FUItop2 )
 	self.FUItop2 = FUItop2
 	
@@ -247,7 +247,7 @@ CoD.Support_Button.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	FUItop:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
 	FUItop:setAlpha( 0 )
 	FUItop:setImage( RegisterImage( 0xD21881AE56187FC ) )
-	FUItop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	FUItop:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FUItop )
 	self.FUItop = FUItop
 	

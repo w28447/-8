@@ -370,7 +370,7 @@ CoD.BaseUtility.AlreadyRegisteredIfUserDataOrCallingCard = function ( f57_arg0 )
 	if type( f57_arg0 ) == "userdata" then
 		return f57_arg0
 	elseif CoD.ChallengesUtility.IsWidgetBasedCallingCard( f57_arg0 ) then
-		return RegisterImage( 0x7615068F50B3D66 )
+		return RegisterImage( "blacktransparent" )
 	else
 		return RegisterImage( f57_arg0 )
 	end

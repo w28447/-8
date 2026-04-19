@@ -347,8 +347,8 @@ CoD.SupplyChainFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	infoBracketBot:setRGB( 0.98, 1, 0.89 )
 	infoBracketBot:setAlpha( 0.35 )
 	infoBracketBot:setZRot( 180 )
-	infoBracketBot:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	infoBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	infoBracketBot:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	infoBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	infoBracketBot:setShaderVector( 0, 0, 0, 0, 0 )
 	infoBracketBot:setupNineSliceShader( 16, 4 )
 	self:addElement( infoBracketBot )
@@ -399,7 +399,7 @@ CoD.SupplyChainFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 			modelName = "LastInput"
 		} )
 	end, false )
-	PurchaseButton.ButtonTitle:setText( LocalizeToUpperString( 0x85952ACC6D0C1B0 ) )
+	PurchaseButton.ButtonTitle:setText( LocalizeToUpperString( "menu/purchase" ) )
 	PurchaseButton:registerEventHandler( "gain_focus", function ( element, event )
 		local f37_local0 = nil
 		if element.gainFocus then
@@ -513,7 +513,7 @@ CoD.SupplyChainFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 		end
 	end, function ( f49_arg0, f49_arg1, f49_arg2 )
 		if IsElementInState( f49_arg0, "HasAction" ) then
-			CoD.Menu.SetButtonLabel( f49_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f49_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

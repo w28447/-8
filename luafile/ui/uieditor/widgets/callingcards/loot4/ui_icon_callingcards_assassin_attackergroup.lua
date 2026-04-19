@@ -12,7 +12,7 @@ CoD.ui_icon_callingcards_assassin_attackergroup.new = function ( f1_arg0, f1_arg
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local attacker = LUI.UIImage.new( 0, 0, 464.5, 968.5, 0, 0, 0, 312 )
-	attacker:setImage( RegisterImage( uie_ui_icon_callingcards_assassin_attacker ) )
+	attacker:setImage( RegisterImage( "uie_ui_icon_callingcards_assassin_attacker" ) )
 	self:addElement( attacker )
 	self.attacker = attacker
 	

@@ -13,14 +13,14 @@ CoD.ScoreInfoEscortBarProgress.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	meterBacking:setAlpha( 0.8 )
 	meterBacking:setScale( 0.63, 0.63 )
 	meterBacking:setImage( RegisterImage( 0x3674F9B5EAEF4ED ) )
-	meterBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE125638BF94665F ) )
+	meterBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	meterBacking:setShaderVector( 0, 0.01, 0.02, 0.01, 0.02 )
 	self:addElement( meterBacking )
 	self.meterBacking = meterBacking
 	
 	local ProgressBar = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, -1, 7 )
 	ProgressBar:setImage( RegisterImage( 0x3B9CBB9BBA5608 ) )
-	ProgressBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	ProgressBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	ProgressBar:setShaderVector( 1, 0, 0, 0, 0 )
 	ProgressBar:setShaderVector( 2, 1, 0, 0, 0 )
 	ProgressBar:setShaderVector( 3, 0, 0, 0, 0 )

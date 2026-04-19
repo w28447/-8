@@ -84,7 +84,7 @@ LUI.createMenu.AAR_LeaguePlay_PlacementMatchesProgress = function ( f1_arg0, f1_
 		CoD.AARUtility.ClosePlacementMatchesProgressOverlay( f4_arg1, f4_arg2 )
 		return true
 	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x6393FF34EA56966, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( featureOverlayButtonMouseOnly )
@@ -94,7 +94,7 @@ LUI.createMenu.AAR_LeaguePlay_PlacementMatchesProgress = function ( f1_arg0, f1_
 		CoD.AARUtility.ClosePlacementMatchesProgressOverlay( f6_arg1, f6_arg2 )
 		return true
 	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x6393FF34EA56966, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, "ui_confirm" )
 		return true
 	end, false )
 	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
@@ -106,7 +106,7 @@ LUI.createMenu.AAR_LeaguePlay_PlacementMatchesProgress = function ( f1_arg0, f1_
 		end
 	end, function ( f9_arg0, f9_arg1, f9_arg2 )
 		if IsPC() then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 			return true
 		else
 			return false

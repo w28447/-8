@@ -65,7 +65,7 @@ LUI.createMenu.DemoFileshareUpload = function ( f1_arg0, f1_arg1 )
 	FullscreenPopupTemplate.ErrorSubtitle:setText( Engine[0xF9F1239CFD921FE]( 0x9C62D3C1C35DC01 ) )
 	FullscreenPopupTemplate.WorkingTitle:setText( Engine[0xF9F1239CFD921FE]( 0xC76223999D97EC9 ) )
 	FullscreenPopupTemplate.Title:setText( Engine[0xF9F1239CFD921FE]( 0x4FBFD6B591E8B59 ) )
-	FullscreenPopupTemplate.DoneTitle:setText( LocalizeToUpperString( 0x93E719493E9E18F ) )
+	FullscreenPopupTemplate.DoneTitle:setText( LocalizeToUpperString( "menu/new" ) )
 	self:addElement( FullscreenPopupTemplate )
 	self.FullscreenPopupTemplate = FullscreenPopupTemplate
 	
@@ -213,7 +213,7 @@ LUI.createMenu.DemoFileshareUpload = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f17_arg0, f17_arg1, f17_arg2 )
 		if not CoD.FileshareUtility.FileshareIsUploading() and not CoD.FileshareUtility.ShouldDisablePrivateUpload( f17_arg2 ) then
-			CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ENTER" )
+			CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ENTER" )
 			return true
 		else
 			return false
@@ -363,7 +363,7 @@ LUI.createMenu.DemoFileshareUpload = function ( f1_arg0, f1_arg1 )
 		CoD.DemoUtility.UploadClip_GoBack( self, f32_arg0, f32_arg2, f32_arg1 )
 		return true
 	end, function ( f33_arg0, f33_arg1, f33_arg2 )
-		CoD.Menu.SetButtonLabel( f33_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f33_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( f34_arg0, f34_arg1, f34_arg2, f34_arg3 )
@@ -483,7 +483,7 @@ CoD.DemoFileshareUpload.__resetProperties = function ( f39_arg0 )
 	f39_arg0.FullscreenPopupTemplate.Subtitle:setText( Engine[0xF9F1239CFD921FE]( 0x9503CD034274830 ) )
 	f39_arg0.FullscreenPopupTemplate.WorkingTitle:setText( Engine[0xF9F1239CFD921FE]( 0xC76223999D97EC9 ) )
 	f39_arg0.FullscreenPopupTemplate.Title:setText( Engine[0xF9F1239CFD921FE]( 0x4FBFD6B591E8B59 ) )
-	f39_arg0.FullscreenPopupTemplate.DoneTitle:setText( LocalizeToUpperString( 0x93E719493E9E18F ) )
+	f39_arg0.FullscreenPopupTemplate.DoneTitle:setText( LocalizeToUpperString( "menu/new" ) )
 end
 
 CoD.DemoFileshareUpload.__clipsPerState = {
@@ -563,10 +563,10 @@ CoD.DemoFileshareUpload.__clipsPerState = {
 			f42_arg0.FullscreenPopupTemplate.WorkingTitle:completeAnimation()
 			f42_arg0.FullscreenPopupTemplate.Title:completeAnimation()
 			f42_arg0.FullscreenPopupTemplate.DoneTitle:completeAnimation()
-			f42_arg0.FullscreenPopupTemplate.Subtitle:setText( Engine[0xF9F1239CFD921FE]( 0x2C79EA24AB1A2BA ) )
+			f42_arg0.FullscreenPopupTemplate.Subtitle:setText( Engine[0xF9F1239CFD921FE]( "null/empty" ) )
 			f42_arg0.FullscreenPopupTemplate.WorkingTitle:setText( Engine[0xF9F1239CFD921FE]( 0x7525250556C866C ) )
 			f42_arg0.FullscreenPopupTemplate.Title:setText( Engine[0xF9F1239CFD921FE]( 0x7525250556C866C ) )
-			f42_arg0.FullscreenPopupTemplate.DoneTitle:setText( LocalizeToUpperString( 0x2C79EA24AB1A2BA ) )
+			f42_arg0.FullscreenPopupTemplate.DoneTitle:setText( LocalizeToUpperString( "null/empty" ) )
 			f42_arg0.clipFinished( f42_arg0.FullscreenPopupTemplate )
 			f42_arg0.TitleDescription:completeAnimation()
 			f42_arg0.TitleDescription:setAlpha( 0 )

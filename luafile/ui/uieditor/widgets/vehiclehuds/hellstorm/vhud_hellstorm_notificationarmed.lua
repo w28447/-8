@@ -17,7 +17,7 @@ CoD.vhud_hellstorm_NotificationArmed.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	local InnerGlow = LUI.UIImage.new( 0.5, 0.5, -110, 110, 0.5, 0.5, -30, 15 )
 	InnerGlow:setAlpha( 0 )
 	InnerGlow:setImage( RegisterImage( 0x3CCB8ACC43F6BDC ) )
-	InnerGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	InnerGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( InnerGlow )
 	self.InnerGlow = InnerGlow
 	
@@ -39,7 +39,7 @@ CoD.vhud_hellstorm_NotificationArmed.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	local ARMED0 = LUI.UIText.new( 0, 1, 0, 0, 0.5, 0.5, -11, 11 )
 	ARMED0:setText( Engine[0xF9F1239CFD921FE]( 0xABD1D3FD0CE6DE2 ) )
 	ARMED0:setTTF( "0arame_mono_stencil" )
-	ARMED0:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	ARMED0:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	ARMED0:setLetterSpacing( 2 )
 	ARMED0:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	ARMED0:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -55,7 +55,7 @@ CoD.vhud_hellstorm_NotificationArmed.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	GlowBot:setRGB( ColorSet.EnemyOrange_Bright.r, ColorSet.EnemyOrange_Bright.g, ColorSet.EnemyOrange_Bright.b )
 	GlowBot:setAlpha( 0 )
 	GlowBot:setImage( RegisterImage( 0xAD405802E3EEE94 ) )
-	GlowBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	GlowBot:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowBot )
 	self.GlowBot = GlowBot
 	
@@ -63,7 +63,7 @@ CoD.vhud_hellstorm_NotificationArmed.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	GlowTop:setRGB( ColorSet.EnemyOrange_Bright.r, ColorSet.EnemyOrange_Bright.g, ColorSet.EnemyOrange_Bright.b )
 	GlowTop:setAlpha( 0 )
 	GlowTop:setImage( RegisterImage( 0xAD405802E3EEE94 ) )
-	GlowTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	GlowTop:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowTop )
 	self.GlowTop = GlowTop
 	

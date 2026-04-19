@@ -107,7 +107,7 @@ CoD.StartMenu_AttachmentList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		end
 	end, function ( f10_arg0, f10_arg1, f10_arg2 )
 		if IsGamepad( f10_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f10_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f10_arg0, f10_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and not CoD.WZUtility.InventoryFull( f10_arg2 ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x6099347F51AF260, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
+			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0xC083113BC81F23F], "menu/detach", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
 			return true
 		else
 			return false
@@ -122,7 +122,7 @@ CoD.StartMenu_AttachmentList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		end
 	end, function ( f12_arg0, f12_arg1, f12_arg2 )
 		if IsMouseOrKeyboard( f12_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f12_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f12_arg0, f12_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and not CoD.WZUtility.InventoryFull( f12_arg2 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x6CE8023188D673F], 0x6099347F51AF260, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x6CE8023188D673F], "menu/detach", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
 		else
 			return false
@@ -137,7 +137,7 @@ CoD.StartMenu_AttachmentList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		end
 	end, function ( f14_arg0, f14_arg1, f14_arg2 )
 		if IsGamepad( f14_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f14_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f14_arg0, f14_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xFFD03BF8361AC75, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
+			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "warzone/drop", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
 			return true
 		else
 			return false
@@ -152,7 +152,7 @@ CoD.StartMenu_AttachmentList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		end
 	end, function ( f16_arg0, f16_arg1, f16_arg2 )
 		if IsMouseOrKeyboard( f16_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f16_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f16_arg0, f16_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0xFFD03BF8361AC75, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "warzone/drop", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
@@ -167,7 +167,7 @@ CoD.StartMenu_AttachmentList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		end
 	end, function ( f18_arg0, f18_arg1, f18_arg2 )
 		if IsMouseOrKeyboard( f18_arg2 ) and CoD.WZUtility.ScoreboardVisibilitySetAndPC( f18_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f18_arg0, f18_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and not CoD.WZUtility.InventoryFull( f18_arg2 ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0x6099347F51AF260, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE1" )
+			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], "menu/detach", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE1" )
 			return true
 		else
 			return false
@@ -197,13 +197,13 @@ CoD.StartMenu_AttachmentList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		end
 	end, function ( f22_arg0, f22_arg1, f22_arg2 )
 		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f22_arg0, f22_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.WZUtility.ScoreboardVisibilitySetAndPC( f22_arg2 ) and IsMouseOrKeyboard( f22_arg2 ) then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x4D2505E19049444], 0xFFD03BF8361AC75, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE2" )
+			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x4D2505E19049444], "warzone/drop", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE2" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	WeaponAttachmentsPC:AddContextualMenuAction( f1_arg0, f1_arg1, 0x6099347F51AF260, function ( f23_arg0, f23_arg1, f23_arg2, f23_arg3 )
+	WeaponAttachmentsPC:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/detach", function ( f23_arg0, f23_arg1, f23_arg2, f23_arg3 )
 		if not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f23_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f23_arg0, f23_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and not CoD.WZUtility.InventoryFull( f23_arg2 ) then
 			return function ( f24_arg0, f24_arg1, f24_arg2, f24_arg3 )
 				CoD.WZUtility.SendInventoryDetachNotify( f24_arg2, f24_arg0 )
@@ -213,7 +213,7 @@ CoD.StartMenu_AttachmentList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 			
 		end
 	end )
-	WeaponAttachmentsPC:AddContextualMenuAction( f1_arg0, f1_arg1, 0xFFD03BF8361AC75, function ( f25_arg0, f25_arg1, f25_arg2, f25_arg3 )
+	WeaponAttachmentsPC:AddContextualMenuAction( f1_arg0, f1_arg1, "warzone/drop", function ( f25_arg0, f25_arg1, f25_arg2, f25_arg3 )
 		if not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f25_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f25_arg0, f25_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) then
 			return function ( f26_arg0, f26_arg1, f26_arg2, f26_arg3 )
 				CoD.WZUtility.SendInventoryDropNotify( f26_arg2, f26_arg0 )
@@ -229,7 +229,7 @@ CoD.StartMenu_AttachmentList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	Title = LUI.UIText.new( 0, 0, 8, 108, 0, 0, -27.5, -3.5 )
 	Title:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	Title:setAlpha( 0 )
-	Title:setText( LocalizeToUpperString( 0x31E6136F9B444FB ) )
+	Title:setText( LocalizeToUpperString( "menu/attachments" ) )
 	Title:setTTF( "ttmussels_regular" )
 	Title:setLetterSpacing( 4 )
 	Title:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -238,7 +238,7 @@ CoD.StartMenu_AttachmentList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	HeaderImage = LUI.UIImage.new( 1, 1, -80.5, -16.5, 0, 0, -47.5, 16.5 )
 	HeaderImage:setAlpha( 0 )
-	HeaderImage:setImage( RegisterImage( 0x7615068F50B3D66 ) )
+	HeaderImage:setImage( RegisterImage( "blacktransparent" ) )
 	self:addElement( HeaderImage )
 	self.HeaderImage = HeaderImage
 	

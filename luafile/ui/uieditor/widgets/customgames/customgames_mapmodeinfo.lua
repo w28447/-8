@@ -70,7 +70,7 @@ CoD.CustomGames_MapModeInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local PreviewInfoName = LUI.UIText.new( 0, 0, 25, 775, 0, 0, 551.5, 587.5 )
 	PreviewInfoName:setRGB( 0.63, 0.62, 0.61 )
-	PreviewInfoName:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	PreviewInfoName:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	PreviewInfoName:setTTF( "ttmussels_regular" )
 	PreviewInfoName:setLetterSpacing( 6 )
 	PreviewInfoName:setAlignment( Engine[0x7F8853DC3581AA4]( Enum.LUIAlignment[0x58C8A85F2048829] ) )
@@ -80,7 +80,7 @@ CoD.CustomGames_MapModeInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local PreviewInfoDesc = LUI.UIText.new( 0, 0, 25, 775, 0, 0, 596.5, 621.5 )
 	PreviewInfoDesc:setRGB( 0.63, 0.62, 0.61 )
-	PreviewInfoDesc:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	PreviewInfoDesc:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	PreviewInfoDesc:setTTF( "ttmussels_regular" )
 	PreviewInfoDesc:setLetterSpacing( 6 )
 	PreviewInfoDesc:setAlignment( Engine[0x7F8853DC3581AA4]( Enum.LUIAlignment[0x58C8A85F2048829] ) )

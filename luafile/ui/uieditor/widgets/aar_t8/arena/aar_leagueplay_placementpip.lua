@@ -15,16 +15,16 @@ CoD.AAR_LeaguePlay_PlacementPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.Bg = Bg
 	
 	local FrontendFrame = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
-	FrontendFrame:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrontendFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	FrontendFrame:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrontendFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	FrontendFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrame:setupNineSliceShader( 16, 16 )
 	self:addElement( FrontendFrame )
 	self.FrontendFrame = FrontendFrame
 	
 	local FrontendFrameAdd = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
-	FrontendFrameAdd:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrontendFrameAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrameAdd:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrontendFrameAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrameAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrameAdd:setupNineSliceShader( 16, 16 )
 	self:addElement( FrontendFrameAdd )
@@ -39,7 +39,7 @@ CoD.AAR_LeaguePlay_PlacementPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local Empty = LUI.UIImage.new( 0, 1, -8, 8, 0, 1, -8, 8 )
 	Empty:setScale( 0.67, 0.67 )
 	Empty:setImage( RegisterImage( 0xF53DA84C7B770BF ) )
-	Empty:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Empty:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Empty )
 	self.Empty = Empty
 	

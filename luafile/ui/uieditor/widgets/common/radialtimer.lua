@@ -19,7 +19,7 @@ CoD.RadialTimer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	local ClockBacking = LUI.UIImage.new( 0.28, 0.72, 0, 0, 0.28, 0.72, 0, 0 )
 	ClockBacking:setRGB( 0.28, 0.28, 0.28 )
 	ClockBacking:setImage( RegisterImage( 0x60E8FD9901EAF47 ) )
-	ClockBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD5CA1A25ED87F4F ) )
+	ClockBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	ClockBacking:setShaderVector( 0, 1, 0, 0, 0 )
 	ClockBacking:setShaderVector( 1, 0.5, 0, 0, 0 )
 	ClockBacking:setShaderVector( 2, 0.5, 0, 0, 0 )
@@ -31,7 +31,7 @@ CoD.RadialTimer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	local Clock = LUI.UIImage.new( 0.28, 0.72, 0, 0, 0.28, 0.72, 0, 0 )
 	Clock:setRGB( 1, 0.99, 0.93 )
 	Clock:setImage( RegisterImage( 0x60E8FD9901EAF47 ) )
-	Clock:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD5CA1A25ED87F4F ) )
+	Clock:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	Clock:setShaderVector( 0, SetVectorComponent( 0, 0, 1, 0.1, 0, 0 ) )
 	Clock:setShaderVector( 1, 0.5, 0, 0, 0 )
 	Clock:setShaderVector( 2, 0.5, 0, 0, 0 )
@@ -41,7 +41,7 @@ CoD.RadialTimer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	self.Clock = Clock
 	
 	local TimeText = LUI.UIText.new( 0.5, 0.5, -40, 40, 0.5, 0.5, -18, 20 )
-	TimeText:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	TimeText:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	TimeText:setTTF( "0arame_mono_stencil" )
 	TimeText:setLetterSpacing( 2 )
 	TimeText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

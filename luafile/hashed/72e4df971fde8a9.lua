@@ -13,14 +13,14 @@ CoD.PC_BountyHunterBuy_BackButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local Button = CoD.featureOverlay_Button.new( f1_arg0, f1_arg1, 0.5, 0.5, -100, 100, 1, 1, -60, 0 )
-	Button.ButtonContainer.Title:setText( LocalizeToUpperString( 0x6C253CF816B40B5 ) )
+	Button.ButtonContainer.Title:setText( LocalizeToUpperString( "menu/close" ) )
 	self:addElement( Button )
 	self.Button = Button
 	
 	local GamepadTitle = LUI.UIText.new( 0, 0, 54, 254, 0.5, 0.5, -10.5, 11.5 )
 	GamepadTitle:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	GamepadTitle:setAlpha( 0 )
-	GamepadTitle:setText( Engine[0xF9F1239CFD921FE]( 0x6C253CF816B40B5 ) )
+	GamepadTitle:setText( Engine[0xF9F1239CFD921FE]( "menu/close" ) )
 	GamepadTitle:setTTF( "ttmussels_demibold" )
 	GamepadTitle:setLetterSpacing( 3 )
 	GamepadTitle:setLineSpacing( 1 )

@@ -119,10 +119,10 @@ CoD.DecalGroupsListFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		end
 	end, function ( f12_arg0, f12_arg1, f12_arg2 )
 		if IsEmblemEditor( f12_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f12_arg0, f12_arg2, "isBMClassified" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "decalGroupList" ) and CoD.CraftUtility.EmblemChooseIcon_CanFitSelectedDecalGroup( self, f12_arg2 ) and CoD.CraftUtility.EmblemChooseIcon_IsGroupSlotAvailable( self, f12_arg2 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif IsPaintshop( f12_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f12_arg0, f12_arg2, "isBMClassified" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "decalGroupList" ) and CoD.CraftUtility.EmblemChooseIcon_CanFitSelectedDecalGroup( self, f12_arg2 ) and CoD.CraftUtility.EmblemChooseIcon_IsGroupSlotAvailable( self, f12_arg2 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

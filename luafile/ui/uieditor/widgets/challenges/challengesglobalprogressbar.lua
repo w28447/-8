@@ -23,7 +23,7 @@ CoD.ChallengesGlobalProgressBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local ProgressBar = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	ProgressBar:setRGB( 1, 0.36, 0 )
-	ProgressBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x910274CA3518744 ) )
+	ProgressBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	ProgressBar:setShaderVector( 1, 0, 0, 0, 0 )
 	ProgressBar:setShaderVector( 2, 1, 0, 0, 0 )
 	ProgressBar:setShaderVector( 3, 0, 0, 0, 0 )

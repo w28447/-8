@@ -33,7 +33,7 @@ CoD[0x55901198AFBAC05].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local rays = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	rays:setImage( RegisterImage( 0x697CB32FF96C172 ) )
-	rays:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9227A50BA2B8D21 ) )
+	rays:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	rays:setShaderVector( 0, 0, 3, 0, 0 )
 	rays:setShaderVector( 1, 15, 0, 0, 0 )
 	self:addElement( rays )
@@ -41,7 +41,7 @@ CoD[0x55901198AFBAC05].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local laserlight = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	laserlight:setImage( RegisterImage( 0xB6E707FE680E0D6 ) )
-	laserlight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	laserlight:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( laserlight )
 	self.laserlight = laserlight
 	
@@ -121,7 +121,7 @@ CoD[0x55901198AFBAC05].__resetProperties = function ( f2_arg0 )
 	f2_arg0.rays:completeAnimation()
 	f2_arg0.laserlight:setAlpha( 1 )
 	f2_arg0.laserlight:setScale( 1, 1 )
-	f2_arg0.laserlight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	f2_arg0.laserlight:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	f2_arg0.racoonBody:setTopBottom( 0, 0, 123, 243 )
 	f2_arg0.racoonBody:setScale( 1, 1 )
 	f2_arg0.Rarm:setZRot( 0 )
@@ -198,7 +198,7 @@ CoD[0x55901198AFBAC05].__clipsPerState = {
 			f3_arg0.laserlight:completeAnimation()
 			f3_arg0.laserlight:setAlpha( 0 )
 			f3_arg0.laserlight:setScale( 1, 1 )
-			f3_arg0.laserlight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+			f3_arg0.laserlight:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 			f3_local1( f3_arg0.laserlight )
 			f3_arg0.party1:completeAnimation()
 			f3_arg0.party1:setAlpha( 0.5 )

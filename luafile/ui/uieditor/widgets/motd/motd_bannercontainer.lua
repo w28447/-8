@@ -134,7 +134,7 @@ CoD.MOTD_BannerContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x977A022B8323362, nil, nil )
 			return true
 		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( f10_arg0, f10_arg2, "action", "depot" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x29C903C6DF90D6F, nil, nil )
+			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/black_market", nil, nil )
 			return true
 		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( f10_arg0, f10_arg2, "action", "shop" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
 			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x90379DA9EEC8DB9, nil, nil )
@@ -143,7 +143,7 @@ CoD.MOTD_BannerContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
 			return false
 		elseif CoD.BaseUtility.IsDvarEnabled( "motd_inPlaceVODEnabled" ) and CoD.ModelUtility.IsSelfModelPathValueEqualTo( f10_arg0, f10_arg2, "action", "vod" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xDDDA371285672BD, nil, nil )
+			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/play", nil, nil )
 			return true
 		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( f10_arg0, f10_arg2, "action", "bj_reserves" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
 			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x655207CC013B5BD, nil, nil )

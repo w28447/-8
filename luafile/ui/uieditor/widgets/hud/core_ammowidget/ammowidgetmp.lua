@@ -29,7 +29,7 @@ CoD.AmmoWidgetMP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	local Backer = LUI.UIImage.new( 0, 0, 251, 618, 0, 0, 24, 117 )
 	Backer:setAlpha( 0 )
 	Backer:setImage( RegisterImage( 0xA3887D32AFD1940 ) )
-	Backer:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE125638BF94665F ) )
+	Backer:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	Backer:setShaderVector( 0, 0.05, 0.2, 0.05, 0.2 )
 	self:addElement( Backer )
 	self.Backer = Backer
@@ -75,7 +75,7 @@ CoD.AmmoWidgetMP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	local GlowWeapon = LUI.UIImage.new( 0, 0, 454, 647, 0, 0, -13.5, 119.5 )
 	GlowWeapon:setAlpha( 0.03 )
 	GlowWeapon:setImage( RegisterImage( 0xD9665F2DAD5E915 ) )
-	GlowWeapon:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	GlowWeapon:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowWeapon )
 	self.GlowWeapon = GlowWeapon
 	
@@ -118,7 +118,7 @@ CoD.AmmoWidgetMP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	local Sheen = LUI.UIImage.new( 0, 0, 284, 624, 0, 0, 25, 111 )
 	Sheen:setAlpha( 0.01 )
 	Sheen:setImage( RegisterImage( 0x20B747108977AD9 ) )
-	Sheen:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Sheen:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Sheen )
 	self.Sheen = Sheen
 	
@@ -156,7 +156,7 @@ CoD.AmmoWidgetMP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	local GlowTop = LUI.UIImage.new( 0, 0, 164, 388, 0, 0, 5, 69 )
 	GlowTop:setAlpha( 0 )
 	GlowTop:setImage( RegisterImage( 0xB0B47D37604C9FA ) )
-	GlowTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	GlowTop:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowTop )
 	self.GlowTop = GlowTop
 	

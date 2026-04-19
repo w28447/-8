@@ -10,7 +10,7 @@ CoD.PC_KillCamHint.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local PcHint = nil
 	
 	PcHint = LUI.UIText.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	PcHint:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	PcHint:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	PcHint:setTTF( "ttmussels_regular" )
 	PcHint:setAlignment( Engine[0x7F8853DC3581AA4]( Enum.LUIAlignment[0xFEEB12BCB0D7041] ) )
 	self:addElement( PcHint )

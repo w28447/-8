@@ -22,7 +22,7 @@ CoD.TrialVersionCountdownWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.95 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -69,8 +69,8 @@ CoD.TrialVersionCountdownWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local FrontendFrame02 = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	FrontendFrame02:setAlpha( 0.8 )
-	FrontendFrame02:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrontendFrame02:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrame02:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrontendFrame02:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrame02:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrame02:setupNineSliceShader( 10, 10 )
 	self:addElement( FrontendFrame02 )

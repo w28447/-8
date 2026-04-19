@@ -18,7 +18,7 @@ CoD.BM_ContractDifficultyIndicator.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	Hard:setBackingXPadding( 12 )
 	Hard:setBackingYPadding( 6 )
 	Hard:setBackingImage( RegisterImage( 0xA170139EA8497A ) )
-	Hard:setBackingMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	Hard:setBackingMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	Hard:setBackingShaderVector( 0, 0, 0, 0, 0 )
 	Hard:setupBackingNineSliceShader( 16, 16 )
 	self:addElement( Hard )

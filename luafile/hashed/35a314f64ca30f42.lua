@@ -21,7 +21,7 @@ CoD.JobFeedItemIcons.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local MultiUseCounter = LUI.UIImage.new( 0.5, 0.5, -32, 32, 0.5, 0.5, -32, 32 )
 	MultiUseCounter:setScale( 1.05, 1.05 )
 	MultiUseCounter:setImage( RegisterImage( 0x9596C0AC009E6C7 ) )
-	MultiUseCounter:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD5CA1A25ED87F4F ) )
+	MultiUseCounter:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	MultiUseCounter:setShaderVector( 1, 0.5, 0, 0, 0 )
 	MultiUseCounter:setShaderVector( 2, 0.5, 0, 0, 0 )
 	MultiUseCounter:setShaderVector( 3, 0, 0, 0, 0 )

@@ -14,7 +14,7 @@ CoD.freeCursorButtonPromptArea.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local buttonBacking = LUI.UIImage.new( 0, 0, 0, 430, 0, 0, 0, 36 )
 	buttonBacking:setRGB( 0.06, 0.06, 0.06 )
-	buttonBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	buttonBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	buttonBacking:setShaderVector( 0, 1, 0, 0, 0 )
 	buttonBacking:setShaderVector( 1, 0, 0, 0, 0 )
 	buttonBacking:setShaderVector( 2, 1, 0, 0, 0 )
@@ -165,7 +165,7 @@ CoD.freeCursorButtonPromptArea.__resetProperties = function ( f13_arg0 )
 	f13_arg0.buttonBacking:setTopBottom( 0, 0, 0, 36 )
 	f13_arg0.buttonBacking:setRGB( 0.06, 0.06, 0.06 )
 	f13_arg0.buttonBacking:setAlpha( 1 )
-	f13_arg0.buttonBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	f13_arg0.buttonBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	f13_arg0.buttonBacking:setShaderVector( 0, 1, 0, 0, 0 )
 	f13_arg0.buttonBacking:setShaderVector( 1, 0, 0, 0, 0 )
 	f13_arg0.buttonBacking:setShaderVector( 2, 1, 0, 0, 0 )
@@ -197,7 +197,7 @@ CoD.freeCursorButtonPromptArea.__clipsPerState = {
 			end
 			
 			f15_arg0.buttonBacking:completeAnimation()
-			f15_arg0.buttonBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+			f15_arg0.buttonBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 			f15_arg0.buttonBacking:setShaderVector( 0, 0.1, 0, 0, 0 )
 			f15_arg0.buttonBacking:setShaderVector( 1, 0, 0, 0, 0 )
 			f15_arg0.buttonBacking:setShaderVector( 2, 1, 0, 0, 0 )

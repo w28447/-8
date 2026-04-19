@@ -152,7 +152,7 @@ CoD.GameSettings_AttachmentRestriction.new = function ( f1_arg0, f1_arg1, f1_arg
 		CoD.OptionsUtility.SetFocusToAttachmentOptionsList( self, f15_arg2 )
 		return true
 	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( OptionCategoryGrid )

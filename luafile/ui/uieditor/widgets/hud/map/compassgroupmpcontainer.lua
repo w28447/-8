@@ -116,7 +116,7 @@ CoD.CompassGroupMPContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local LED = LUI.UIImage.new( 0, 0, 2, 352, 0, 0, 1, 351 )
 	LED:setAlpha( 0 )
 	LED:setImage( RegisterImage( 0xAB51226AFA7482D ) )
-	LED:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	LED:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( LED )
 	self.LED = LED
 	

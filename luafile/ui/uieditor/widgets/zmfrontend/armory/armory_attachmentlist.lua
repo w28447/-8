@@ -25,8 +25,8 @@ CoD.Armory_AttachmentList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local TopLine = LUI.UIImage.new( 0, 1.01, -3, -5, 0, 0, 31, 49 )
 	TopLine:setAlpha( 0.5 )
 	TopLine:setZoom( 10 )
-	TopLine:setImage( RegisterImage( 0xD55B3068BF9FD12 ) )
-	TopLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	TopLine:setImage( RegisterImage( "uie_ui_menu_cac_primary_button_top_line" ) )
+	TopLine:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TopLine )
 	self.TopLine = TopLine
 	
@@ -121,13 +121,13 @@ CoD.Armory_AttachmentList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 		end
 	end, function ( f12_arg0, f12_arg1, f12_arg2 )
 		if not IsListElementChildInState( f12_arg0, "AttachmentSlot", "NotAvailable" ) and not CoD.ZMLoadoutUtility.IsArmoryAttachmentItemLocked( f12_arg1, f12_arg0, f12_arg2 ) and not CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( f12_arg0, f12_arg2, f12_arg1 ) and CoD.ZMLoadoutUtility.CanArmoryElementAttachmentBeEquipped( f12_arg0, f12_arg2, f12_arg1 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif IsPC() and not IsListElementChildInState( f12_arg0, "AttachmentSlot", "NotAvailable" ) and not CoD.ZMLoadoutUtility.IsArmoryAttachmentItemLocked( f12_arg1, f12_arg0, f12_arg2 ) and CoD.ZMLoadoutUtility.CanArmoryElementAttachmentBeEquipped( f12_arg0, f12_arg2, f12_arg1 ) and not CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( f12_arg0, f12_arg2, f12_arg1 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif IsPC() and not IsListElementChildInState( f12_arg0, "AttachmentSlot", "NotAvailable" ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( f12_arg0, f12_arg2, f12_arg1 ) and not CoD.ZMLoadoutUtility.IsArmoryAttachmentItemLocked( f12_arg1, f12_arg0, f12_arg2 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

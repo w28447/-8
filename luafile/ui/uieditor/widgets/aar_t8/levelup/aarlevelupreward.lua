@@ -20,7 +20,7 @@ CoD.AARLevelUpReward.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	self.Backing = Backing
 	
 	local ZMCroppedBacking = LUI.UIImage.new( 0, 0, -1.5, 801.5, 0, 0, -4.5, 281.5 )
-	ZMCroppedBacking:setImage( RegisterImage( 0xA8FC401C1972BDE ) )
+	ZMCroppedBacking:setImage( RegisterImage( "uie_ui_hud_zm_aar_reward_bg" ) )
 	ZMCroppedBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
 	ZMCroppedBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	ZMCroppedBacking:setShaderVector( 1, 1, 1, 0, 0 )
@@ -44,7 +44,7 @@ CoD.AARLevelUpReward.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	PlusTL:setAlpha( 0.02 )
 	PlusTL:setScale( 0.8, 0.8 )
 	PlusTL:setImage( RegisterImage( 0x1ACA8BD7BB22ADB ) )
-	PlusTL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	PlusTL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PlusTL )
 	self.PlusTL = PlusTL
 	
@@ -52,7 +52,7 @@ CoD.AARLevelUpReward.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	PlusBR:setAlpha( 0.02 )
 	PlusBR:setScale( 0.8, 0.8 )
 	PlusBR:setImage( RegisterImage( 0x1ACA8BD7BB22ADB ) )
-	PlusBR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	PlusBR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PlusBR )
 	self.PlusBR = PlusBR
 	
@@ -60,7 +60,7 @@ CoD.AARLevelUpReward.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	PlusTR:setAlpha( 0.02 )
 	PlusTR:setScale( 0.8, 0.8 )
 	PlusTR:setImage( RegisterImage( 0x1ACA8BD7BB22ADB ) )
-	PlusTR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	PlusTR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PlusTR )
 	self.PlusTR = PlusTR
 	
@@ -68,7 +68,7 @@ CoD.AARLevelUpReward.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	PlusBL:setAlpha( 0.02 )
 	PlusBL:setScale( 0.8, 0.8 )
 	PlusBL:setImage( RegisterImage( 0x1ACA8BD7BB22ADB ) )
-	PlusBL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	PlusBL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PlusBL )
 	self.PlusBL = PlusBL
 	
@@ -146,8 +146,8 @@ CoD.AARLevelUpReward.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local infoBracketBot = LUI.UIImage.new( 0, 0, 1.5, 798.5, 0, 0, 274, 282 )
 	infoBracketBot:setAlpha( 0.6 )
-	infoBracketBot:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	infoBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	infoBracketBot:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	infoBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	infoBracketBot:setShaderVector( 0, 0, 0, 0, 0 )
 	infoBracketBot:setupNineSliceShader( 16, 4 )
 	self:addElement( infoBracketBot )
@@ -156,7 +156,7 @@ CoD.AARLevelUpReward.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local infoBracketTop = LUI.UIImage.new( 0, 0, 1, 799, 0, 0, -2, 30 )
 	infoBracketTop:setAlpha( 0.6 )
 	infoBracketTop:setImage( RegisterImage( 0xCAD52FFFB7C32C1 ) )
-	infoBracketTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	infoBracketTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	infoBracketTop:setShaderVector( 0, 0, 0, 0, 0 )
 	infoBracketTop:setupNineSliceShader( 10, 16 )
 	self:addElement( infoBracketTop )
@@ -164,7 +164,7 @@ CoD.AARLevelUpReward.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local AmbientTopRepeatBar = LUI.UIImage.new( 0, 0, -1, 613, 0, 0, -15, 1 )
 	AmbientTopRepeatBar:setImage( RegisterImage( 0xC9793C8F59B834E ) )
-	AmbientTopRepeatBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	AmbientTopRepeatBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	AmbientTopRepeatBar:setShaderVector( 0, 0, 0, 0, 0 )
 	AmbientTopRepeatBar:setupNineSliceShader( 23, 16 )
 	self:addElement( AmbientTopRepeatBar )
@@ -172,7 +172,7 @@ CoD.AARLevelUpReward.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local AmbientTopBar = LUI.UIImage.new( 0, 0, 613.5, 801.5, 0, 0, -16.5, 3.5 )
 	AmbientTopBar:setImage( RegisterImage( 0x8C511B26DCEEE3E ) )
-	AmbientTopBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	AmbientTopBar:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( AmbientTopBar )
 	self.AmbientTopBar = AmbientTopBar
 	

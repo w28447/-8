@@ -24,7 +24,7 @@ CoD.LaboratoryListItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local StoneTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	StoneTiledBacking:setAlpha( 0.8 )
-	StoneTiledBacking:setImage( RegisterImage( 0x33757173B476ACD ) )
+	StoneTiledBacking:setImage( RegisterImage( "uie_ui_zm_laboratory_buttonbgtile" ) )
 	StoneTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	StoneTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	StoneTiledBacking:setupNineSliceShader( 196, 88 )
@@ -33,7 +33,7 @@ CoD.LaboratoryListItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.3 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -54,14 +54,14 @@ CoD.LaboratoryListItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local LightFocus = LUI.UIImage.new( -0.05, 1.05, 0.5, 0.5, 0.5, 0.5, -74.5, 84.5 )
 	LightFocus:setAlpha( 0 )
-	LightFocus:setImage( RegisterImage( 0x25B3B76F422AA08 ) )
+	LightFocus:setImage( RegisterImage( "uie_ui_menu_zombies_cac_special_weapon_light_focus" ) )
 	self:addElement( LightFocus )
 	self.LightFocus = LightFocus
 	
 	local FocusGlow = LUI.UIImage.new( 0.2, 0.8, -100, 100, 0.2, 0.8, -74, 74 )
 	FocusGlow:setRGB( 0.89, 0.12, 0.12 )
 	FocusGlow:setAlpha( 0 )
-	FocusGlow:setImage( RegisterImage( 0x8E79E4E42B6714C ) )
+	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_large" ) )
 	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.25, 0.25 )
 	FocusGlow:setShaderVector( 1, 1.2, 0, 0, 0 )
@@ -71,8 +71,8 @@ CoD.LaboratoryListItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local FrameBorder = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	FrameBorder:setAlpha( 0.15 )
-	FrameBorder:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrameBorder:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrameBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FrameBorder:setupNineSliceShader( 12, 12 )
 	self:addElement( FrameBorder )
@@ -85,8 +85,8 @@ CoD.LaboratoryListItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	self.Lines = Lines
 	
 	local MetalFrame = LUI.UIImage.new( 0, 1, -2, 2, 0, 1, -2, 2 )
-	MetalFrame:setImage( RegisterImage( 0xAED94B38E8B3347 ) )
-	MetalFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	MetalFrame:setImage( RegisterImage( "uie_ui_zm_laboratory_buttonframe" ) )
+	MetalFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	MetalFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	MetalFrame:setupNineSliceShader( 14, 14 )
 	self:addElement( MetalFrame )
@@ -95,8 +95,8 @@ CoD.LaboratoryListItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local MetalFrameAdditive = LUI.UIImage.new( 0, 1, -2, 2, 0, 1, -2, 2 )
 	MetalFrameAdditive:setRGB( 1, 0, 0 )
 	MetalFrameAdditive:setAlpha( 0 )
-	MetalFrameAdditive:setImage( RegisterImage( 0xAED94B38E8B3347 ) )
-	MetalFrameAdditive:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	MetalFrameAdditive:setImage( RegisterImage( "uie_ui_zm_laboratory_buttonframe" ) )
+	MetalFrameAdditive:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	MetalFrameAdditive:setShaderVector( 0, 0, 0, 0, 0 )
 	MetalFrameAdditive:setupNineSliceShader( 14, 14 )
 	self:addElement( MetalFrameAdditive )
@@ -143,7 +143,7 @@ CoD.LaboratoryListItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	self.limit = limit
 	
 	local npIcon = LUI.UIImage.new( 0.5, 0.5, -32, -2, 1, 1, -37, -7 )
-	npIcon:setImage( RegisterImage( 0x6C8F8292AC0F89B ) )
+	npIcon:setImage( RegisterImage( "uie_t7_hud_zm_vial_256" ) )
 	self:addElement( npIcon )
 	self.npIcon = npIcon
 	
@@ -202,8 +202,8 @@ CoD.LaboratoryListItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local FocusBorder = LUI.UIImage.new( 0, 1, -2, 2, 0, 1, -2, 2 )
 	FocusBorder:setRGB( 0.89, 0.12, 0.12 )
 	FocusBorder:setAlpha( 0 )
-	FocusBorder:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FocusBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FocusBorder:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FocusBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FocusBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FocusBorder:setupNineSliceShader( 6, 6 )
 	self:addElement( FocusBorder )

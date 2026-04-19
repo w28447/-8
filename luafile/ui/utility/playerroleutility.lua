@@ -401,7 +401,7 @@ CoD.PlayerRoleUtility.GetPositionRoleDefaultInfo = function ( f22_arg0, f22_arg1
 																			f22_local7 = 0x0
 																		end
 																	end
-																	f22_local7 = 0x7615068F50B3D66
+																	f22_local7 = "blacktransparent"
 																end
 															end
 															f22_local7 = 0x0
@@ -413,7 +413,7 @@ CoD.PlayerRoleUtility.GetPositionRoleDefaultInfo = function ( f22_arg0, f22_arg1
 											f22_local7 = 0x0
 										end
 									end
-									f22_local7 = 0x7615068F50B3D66
+									f22_local7 = "blacktransparent"
 								end
 							end
 							f22_local7 = 0x0
@@ -521,12 +521,12 @@ DataSources.PositionLoadoutList = ListHelper_SetupDataSource( "PositionLoadoutLi
 		f27_arg4.models.requiredDvar = f27_arg4.properties.character[0x810366D1F05BBBD]
 		f27_arg4.models.bio = f27_local1[0x541919134FDFF1] or 0x0
 		f27_arg4.models.bioHeader = f27_local1[0x668EA0FEF74A8D4] or 0x0
-		f27_arg4.models.bioHeaderImage = f27_local1[0x15AC9DAAD709DE1] or 0x7615068F50B3D66
-		f27_arg4.models.brandingImage = f27_local1[0xB2781A0B1BF2B7A] or 0x7615068F50B3D66
+		f27_arg4.models.bioHeaderImage = f27_local1[0x15AC9DAAD709DE1] or "blacktransparent"
+		f27_arg4.models.brandingImage = f27_local1[0xB2781A0B1BF2B7A] or "blacktransparent"
 		f27_arg4.models.equipment = f27_local3.equipment
 		f27_arg4.models.equipment.statValue = CoD.GetCombatRecordStatFromArgPath( f26_local4, 0x62F9B6A10FA7D66, f27_local3.equipment.refHash, 0xFADC643DBA6DBF2 )
 		f27_arg4.models.equipment.statTitle = f27_local1[0xE5D532BF7F3B6CF]
-		f27_arg4.models.weaponHeaderImage = f27_local1[0xA923C4F85EF2BB1] or 0x7615068F50B3D66
+		f27_arg4.models.weaponHeaderImage = f27_local1[0xA923C4F85EF2BB1] or "blacktransparent"
 		f27_arg4.models.weaponValue = CoD.GetCombatRecordStatFromArgPath( f26_local4, 0xD59E8BFAC78A33B, f27_local1[0x6F1AB17EE1FC9A3], 0x3BF77799B56C06C )
 		f27_arg4.models.weaponSchema = f27_local1[0x2231AE94A1F7E22]
 		f27_arg4.models.weaponMovie = {
@@ -1459,8 +1459,8 @@ DataSources.WZJumpKitItems = DataSourceHelpers.ListSetup( "WZJumpKitItems", func
 				local f84_local20 = {}
 				local f84_local15 = {
 					displayName = Engine[0xF9F1239CFD921FE]( f84_local22[0x55F116BF695C8F6] or 0x0 ),
-					icon = f84_local10[f84_local17.type].small or 0x7615068F50B3D66,
-					largeIcon = f84_local10[f84_local17.type].large or 0x7615068F50B3D66,
+					icon = f84_local10[f84_local17.type].small or "blacktransparent",
+					largeIcon = f84_local10[f84_local17.type].large or "blacktransparent",
 					itemIndex = f84_local21 - 1,
 					lootId = f84_local22[0x28887F70BF5EBA],
 					type = f84_local17.type,
@@ -1572,10 +1572,10 @@ DataSources.WZJumpKitSelectedItems = DataSourceHelpers.ListSetup( "WZJumpKitSele
 								f86_local9( f86_local10, f86_local11 )
 							end
 						end
-						f86_local13 = 0x7615068F50B3D66
+						f86_local13 = "blacktransparent"
 					end
 				end
-				f86_local13 = 0x7615068F50B3D66
+				f86_local13 = "blacktransparent"
 			end
 		end
 	end
@@ -1925,7 +1925,7 @@ CoD.PlayerRoleUtility.GetTagIconFromIndex = function ( f100_arg0 )
 	if f100_local1 and f100_local1[0x79439EF7BFA9C2D] == 0x6D7AB194448A4F3 then
 		return f100_local1[0xBFF4CC56C2092F0]
 	else
-		return 0x7615068F50B3D66
+		return "blacktransparent"
 	end
 end
 
@@ -2229,7 +2229,7 @@ DataSources.TagCategories = DataSourceHelpers.ListSetup( "TagCategories", functi
 					f106_local20 = f106_local17
 					table.insert( CoD.PlayerRoleUtility[0x1435A1010208496], {
 						models = {
-							image = 0x7615068F50B3D66,
+							image = "blacktransparent",
 							displayName = "",
 							available = false
 						}
@@ -2238,7 +2238,7 @@ DataSources.TagCategories = DataSourceHelpers.ListSetup( "TagCategories", functi
 				if IsJapaneseSku() then
 					table.insert( CoD.PlayerRoleUtility[0x1435A1010208496], {
 						models = {
-							image = 0x7615068F50B3D66,
+							image = "blacktransparent",
 							displayName = "",
 							available = false
 						}

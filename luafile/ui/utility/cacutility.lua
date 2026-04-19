@@ -1037,7 +1037,7 @@ CoD.OverlayUtility.AddSystemOverlay( "PrestigeWeapon", {
 					f25_local8.pLevel:set( math.min( f25_local8.pLevel:get() + 1, CoD.CACUtility.maxWeaponPrestige ) )
 					f25_local8.xp:set( 0 )
 					Engine.PlaySound( "uin_prestige_activate" )
-					CoD.OverlayUtility.ShowToast( "Content", Engine[0xF9F1239CFD921FE]( 0x46ECE54C3471D89 ), Engine[0xF9F1239CFD921FE]( Engine.GetItemName( f25_local6 ) ), 0x7615068F50B3D66, nil, nil, nil, nil )
+					CoD.OverlayUtility.ShowToast( "Content", Engine[0xF9F1239CFD921FE]( 0x46ECE54C3471D89 ), Engine[0xF9F1239CFD921FE]( Engine.GetItemName( f25_local6 ) ), "blacktransparent", nil, nil, nil, nil )
 					Engine.StorageWrite( f25_arg2, CoD.PlayerStatsUtility.GetStorageBufferEnumForPlayer( f25_arg2 ) )
 					ForceNotifyControllerModel( f25_arg2, "Unlockables.listUpdate" )
 				end
@@ -1066,7 +1066,7 @@ CoD.OverlayUtility.AddSystemOverlay( "PrestigeWeapon", {
 					f26_local4.xp:set( 0 )
 					Engine.StorageWrite( f26_arg2, CoD.PlayerStatsUtility.GetStorageBufferEnumForPlayer( f26_arg2 ) )
 					Engine.PlaySound( "uin_prestige_activate" )
-					CoD.OverlayUtility.ShowToast( "Content", Engine[0xF9F1239CFD921FE]( 0x46ECE54C3471D89 ), Engine[0xF9F1239CFD921FE]( Engine.GetItemName( f26_local2 ) ), 0x7615068F50B3D66, nil, nil, nil, nil )
+					CoD.OverlayUtility.ShowToast( "Content", Engine[0xF9F1239CFD921FE]( 0x46ECE54C3471D89 ), Engine[0xF9F1239CFD921FE]( Engine.GetItemName( f26_local2 ) ), "blacktransparent", nil, nil, nil, nil )
 					ForceNotifyControllerModel( f26_arg2, "Unlockables.listUpdate" )
 				end
 				UploadStats( f26_arg4, f26_arg2 )
@@ -1086,7 +1086,7 @@ CoD.OverlayUtility.AddSystemOverlay( "PrestigeWeapon", {
 			elseif f23_local5 == Enum.eModes[0x83EBA96F36BC4E5] then
 				table.insert( f23_local0, f23_local1( Engine[0xF9F1239CFD921FE]( 0xCEB637ACD703940 ), f23_local2, false ) )
 			end
-			table.insert( f23_local0, f23_local1( Engine[0xF9F1239CFD921FE]( 0xC2E92C54C2BE289 ), f23_local4, true ) )
+			table.insert( f23_local0, f23_local1( Engine[0xF9F1239CFD921FE]( "menu/cancel" ), f23_local4, true ) )
 			return f23_local0
 		end, true )
 		return "PrestigeWeaponOptionsList"
@@ -2460,9 +2460,9 @@ CoD.CACUtility.GetCustomClassModel = function ( f95_arg0, f95_arg1, f95_arg2, f9
 			f98_local4 = f98_local0:create( "displayNameShort" )
 			f98_local4:set( 0x0 )
 			f98_local4 = f98_local0:create( "image" )
-			f98_local4:set( 0x7615068F50B3D66 )
+			f98_local4:set( "blacktransparent" )
 			f98_local4 = f98_local0:create( "imageLarge" )
-			f98_local4:set( RegisterImage( 0x7615068F50B3D66 ) )
+			f98_local4:set( RegisterImage( "blacktransparent" ) )
 			f98_local4 = f98_local0:create( "detailedDesc" )
 			f98_local4:set( 0x0 )
 			f98_local4 = f98_local0:create( "unequipSound" )
@@ -2545,7 +2545,7 @@ CoD.CACUtility.GetCustomClassModel = function ( f95_arg0, f95_arg1, f95_arg2, f9
 					f100_local9:set( Engine.GetAttachmentDescByAttachmentIndex( f100_local7, f95_arg4 ) )
 				else
 					f100_local9 = f100_local5:create( "image" )
-					f100_local9:set( 0x7615068F50B3D66 )
+					f100_local9:set( "blacktransparent" )
 					f100_local9 = f100_local5:create( "name" )
 					f100_local9:set( "" )
 					f100_local9 = f100_local5:create( "displayNameShort" )
@@ -2629,9 +2629,9 @@ CoD.CACUtility.GetCustomClassModel = function ( f95_arg0, f95_arg1, f95_arg2, f9
 			f95_local11 = f95_local9:create( "name" )
 			f95_local11:set( "" )
 			f95_local11 = f95_local9:create( "image" )
-			f95_local11:set( 0x7615068F50B3D66 )
+			f95_local11:set( "blacktransparent" )
 			f95_local11 = f95_local9:create( "imageLarge" )
-			f95_local11:set( RegisterImage( 0x7615068F50B3D66 ) )
+			f95_local11:set( RegisterImage( "blacktransparent" ) )
 			f95_local11 = f95_local9:create( "detailedDesc" )
 			f95_local11:set( 0x0 )
 			f95_local11 = f95_local9:create( "ref" )
@@ -2685,7 +2685,7 @@ CoD.CACUtility.GetCustomClassModel = function ( f95_arg0, f95_arg1, f95_arg2, f9
 	f95_local7:set( f95_local1 )
 	if not f95_arg2.tempLargeImageForModel then
 		f95_local7 = f95_arg2:create( "tempLargeImageForModel" )
-		f95_local7:set( RegisterImage( 0x7615068F50B3D66 ) )
+		f95_local7:set( RegisterImage( "blacktransparent" ) )
 	end
 	if not f95_arg2.showSpecialistEquipmentWidgetModel then
 		f95_local7 = f95_arg2:create( "showSpecialistEquipmentWidgetModel" )
@@ -5078,7 +5078,7 @@ CoD.CACUtility.UpdateTempLargeImage = function ( f228_arg0, f228_arg1, f228_arg2
 				f228_local0 = f228_arg1[f228_arg2].imageLarge and f228_arg1[f228_arg2].imageLarge:get()
 			end
 			if not f228_local0 then
-				f228_local0 = RegisterImage( 0x7615068F50B3D66 )
+				f228_local0 = RegisterImage( "blacktransparent" )
 			end
 			f228_arg1.tempLargeImageForModel:set( f228_local0 )
 			f228_arg1.tempLargeImageForModel:forceNotifySubscriptions()

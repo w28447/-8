@@ -23,7 +23,7 @@ CoD.CommonPixelBackingWithTopPadding.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	self.Tint = Tint
 	
 	local DotTiledBacking = CoD.CommonPixelBacking.new( f1_arg0, f1_arg1, 0, 1, 4, -4, 0, 1, -26, -4 )
-	DotTiledBacking:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DotTiledBacking:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	DotTiledBacking.NoiseBacking:setAlpha( 1 )
 	DotTiledBacking.TiledShaderImage:setRGB( 0.22, 0.22, 0.22 )
 	DotTiledBacking.TiledShaderImage:setAlpha( 0.15 )

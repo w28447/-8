@@ -3111,7 +3111,7 @@ function ShouldHideButtonPromptForPC( f356_arg0, f356_arg1 )
 			return true
 		elseif f356_local0 and f356_local0.Label and f356_local0.Label == 0x0 then
 			return true
-		elseif f356_local0 and f356_local0.Label and f356_local0.Label == 0xD0BB36CD318F55F and f356_local0.Button == Enum.LUIButton[0x755DA1E2E7C263F] then
+		elseif f356_local0 and f356_local0.Label and f356_local0.Label == "menu/select" and f356_local0.Button == Enum.LUIButton[0x755DA1E2E7C263F] then
 			return true
 		elseif f356_local2 and CoD.BitUtility.IsBitwiseAndNonZero( f356_local2, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] ) and not CoD.FreeCursorUtility.CanShowContextualButtonPromptPC( f356_arg0, f356_arg1 ) then
 			return true

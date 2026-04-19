@@ -99,7 +99,7 @@ LUI.createMenu.LUIelemBar = function ( f7_arg0, f7_arg1 )
 	self.BarBackground = BarBackground
 	
 	local BarForeground = LUI.UIImage.new( 0, 0, 31, 45, 0, 0, 31, 37 )
-	BarForeground:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	BarForeground:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	BarForeground:setShaderVector( 1, 0, 0, 0, 0 )
 	BarForeground:setShaderVector( 2, 1, 0, 0, 0 )
 	BarForeground:setShaderVector( 3, 0, 0, 0, 0 )

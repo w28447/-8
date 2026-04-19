@@ -53,7 +53,7 @@ CoD.TrialsEndGameScoreboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local BackingBase = LUI.UIImage.new( 0, 0, 0, 888, 0, 0, 0, 30 )
 	BackingBase:setAlpha( 0 )
-	BackingBase:setImage( RegisterImage( 0xBB35BC5D2F0269C ) )
+	BackingBase:setImage( RegisterImage( "uie_zm_hud_inventory_backing_mid" ) )
 	self:addElement( BackingBase )
 	self.BackingBase = BackingBase
 	

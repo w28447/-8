@@ -24,7 +24,7 @@ CoD.ZMInventoryQuestBackingInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local BaseGradient = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BaseGradient:setAlpha( 0.4 )
-	BaseGradient:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDE760AC0E801E57 ) )
+	BaseGradient:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_gradient_normal" ) )
 	BaseGradient:setShaderVector( 0, 0, 0, 0, 0 )
 	BaseGradient:setShaderVector( 1, 0, 0, 0, 2.5 )
 	BaseGradient:setShaderVector( 2, 0.02, 0, 0, 0 )
@@ -33,7 +33,7 @@ CoD.ZMInventoryQuestBackingInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local BGMid = LUI.UIImage.new( -0.11, 1, 0, 0, 0.5, 0.5, -40, 40 )
 	BGMid:setAlpha( 0.8 )
-	BGMid:setImage( RegisterImage( 0xBB35BC5D2F0269C ) )
+	BGMid:setImage( RegisterImage( "uie_zm_hud_inventory_backing_mid" ) )
 	BGMid:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
 	BGMid:setShaderVector( 0, 0, 0, 0, 0 )
 	BGMid:setShaderVector( 1, 1, 0, 0, 0 )
@@ -48,7 +48,7 @@ CoD.ZMInventoryQuestBackingInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local BGTip = LUI.UIImage.new( 0, 0, -100, 0, 0, 0, -10, 90 )
 	BGTip:setAlpha( 0.08 )
-	BGTip:setImage( RegisterImage( 0x95EE339800F1644 ) )
+	BGTip:setImage( RegisterImage( "uie_zm_hud_inventory_framedeco" ) )
 	self:addElement( BGTip )
 	self.BGTip = BGTip
 	

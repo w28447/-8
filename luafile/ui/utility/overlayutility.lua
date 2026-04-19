@@ -510,7 +510,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 				return {
 					{
 						models = {
-							displayText = Engine[0xF9F1239CFD921FE]( 0x5C16E02B211A4F4 )
+							displayText = Engine[0xF9F1239CFD921FE]( "menu/no" )
 						},
 						properties = {
 							action = function ( f47_arg0, f47_arg1, f47_arg2, f47_arg3, f47_arg4 )
@@ -521,7 +521,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 					},
 					{
 						models = {
-							displayText = Engine[0xF9F1239CFD921FE]( 0xDFD294FC69F682 )
+							displayText = Engine[0xF9F1239CFD921FE]( "menu/yes" )
 						},
 						properties = {
 							action = function ( f48_arg0, f48_arg1, f48_arg2, f48_arg3, f48_arg4 )
@@ -1044,7 +1044,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 				} )
 				table.insert( f104_local0, {
 					models = {
-						displayText = Engine[0xF9F1239CFD921FE]( 0xC2E92C54C2BE289 )
+						displayText = Engine[0xF9F1239CFD921FE]( "menu/cancel" )
 					},
 					properties = {
 						action = function ( f106_arg0, f106_arg1, f106_arg2, f106_arg3, f106_arg4 )
@@ -1066,14 +1066,14 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 			end
 			
 		end,
-		[CoD.OverlayUtility.aCrossPromptText] = 0xDFD294FC69F682,
+		[CoD.OverlayUtility.aCrossPromptText] = "menu/yes",
 		[CoD.OverlayUtility.bCirclePromptFn] = function ( f109_arg0 )
 			return function ( f110_arg0, f110_arg1 )
 				GoBack( f110_arg0, f110_arg1 )
 			end
 			
 		end,
-		[CoD.OverlayUtility.bCirclePromptText] = 0xC2E92C54C2BE289
+		[CoD.OverlayUtility.bCirclePromptText] = "menu/cancel"
 	},
 	DemoDeleteAllLightmanMarkers = {
 		menuName = "SystemOverlay_FreeCursor",
@@ -1097,7 +1097,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 				} )
 				table.insert( f112_local0, {
 					models = {
-						displayText = Engine[0xF9F1239CFD921FE]( 0xC2E92C54C2BE289 )
+						displayText = Engine[0xF9F1239CFD921FE]( "menu/cancel" )
 					},
 					properties = {
 						action = function ( f114_arg0, f114_arg1, f114_arg2, f114_arg3, f114_arg4 )
@@ -1119,14 +1119,14 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 			end
 			
 		end,
-		[CoD.OverlayUtility.aCrossPromptText] = 0xDFD294FC69F682,
+		[CoD.OverlayUtility.aCrossPromptText] = "menu/yes",
 		[CoD.OverlayUtility.bCirclePromptFn] = function ( f117_arg0 )
 			return function ( f118_arg0, f118_arg1 )
 				GoBack( f118_arg0, f118_arg1 )
 			end
 			
 		end,
-		[CoD.OverlayUtility.bCirclePromptText] = 0xC2E92C54C2BE289
+		[CoD.OverlayUtility.bCirclePromptText] = "menu/cancel"
 	},
 	DemoDeleteSegment = {
 		menuName = "SystemOverlay_FreeCursor",
@@ -1138,7 +1138,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 				local f120_local0 = {}
 				table.insert( f120_local0, {
 					models = {
-						displayText = Engine[0xF9F1239CFD921FE]( 0xDFD294FC69F682 )
+						displayText = Engine[0xF9F1239CFD921FE]( "menu/yes" )
 					},
 					properties = {
 						action = function ( f121_arg0, f121_arg1, f121_arg2, f121_arg3, f121_arg4 )
@@ -1150,7 +1150,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 				} )
 				table.insert( f120_local0, {
 					models = {
-						displayText = Engine[0xF9F1239CFD921FE]( 0xC2E92C54C2BE289 )
+						displayText = Engine[0xF9F1239CFD921FE]( "menu/cancel" )
 					},
 					properties = {
 						action = function ( f122_arg0, f122_arg1, f122_arg2, f122_arg3, f122_arg4 )
@@ -1172,14 +1172,14 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 			end
 			
 		end,
-		[CoD.OverlayUtility.aCrossPromptText] = 0xDFD294FC69F682,
+		[CoD.OverlayUtility.aCrossPromptText] = "menu/yes",
 		[CoD.OverlayUtility.bCirclePromptFn] = function ( f125_arg0 )
 			return function ( f126_arg0, f126_arg1 )
 				GoBack( f126_arg0, f126_arg1 )
 			end
 			
 		end,
-		[CoD.OverlayUtility.bCirclePromptText] = 0xC2E92C54C2BE289
+		[CoD.OverlayUtility.bCirclePromptText] = "menu/cancel"
 	},
 	DemoDeleteAllSegments = {
 		menuName = "SystemOverlay_FreeCursor",
@@ -1191,7 +1191,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 				local f128_local0 = {}
 				table.insert( f128_local0, {
 					models = {
-						displayText = Engine[0xF9F1239CFD921FE]( 0xDFD294FC69F682 )
+						displayText = Engine[0xF9F1239CFD921FE]( "menu/yes" )
 					},
 					properties = {
 						action = function ( f129_arg0, f129_arg1, f129_arg2, f129_arg3, f129_arg4 )
@@ -1203,7 +1203,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 				} )
 				table.insert( f128_local0, {
 					models = {
-						displayText = Engine[0xF9F1239CFD921FE]( 0xC2E92C54C2BE289 )
+						displayText = Engine[0xF9F1239CFD921FE]( "menu/cancel" )
 					},
 					properties = {
 						action = function ( f130_arg0, f130_arg1, f130_arg2, f130_arg3, f130_arg4 )
@@ -1225,14 +1225,14 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 			end
 			
 		end,
-		[CoD.OverlayUtility.aCrossPromptText] = 0xDFD294FC69F682,
+		[CoD.OverlayUtility.aCrossPromptText] = "menu/yes",
 		[CoD.OverlayUtility.bCirclePromptFn] = function ( f133_arg0 )
 			return function ( f134_arg0, f134_arg1 )
 				GoBack( f134_arg0, f134_arg1 )
 			end
 			
 		end,
-		[CoD.OverlayUtility.bCirclePromptText] = 0xC2E92C54C2BE289
+		[CoD.OverlayUtility.bCirclePromptText] = "menu/cancel"
 	},
 	DemoMergeAllSegments = {
 		menuName = "SystemOverlay_FreeCursor",
@@ -1244,7 +1244,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 				local f136_local0 = {}
 				table.insert( f136_local0, {
 					models = {
-						displayText = Engine[0xF9F1239CFD921FE]( 0xDFD294FC69F682 )
+						displayText = Engine[0xF9F1239CFD921FE]( "menu/yes" )
 					},
 					properties = {
 						action = function ( f137_arg0, f137_arg1, f137_arg2, f137_arg3, f137_arg4 )
@@ -1256,7 +1256,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 				} )
 				table.insert( f136_local0, {
 					models = {
-						displayText = Engine[0xF9F1239CFD921FE]( 0xC2E92C54C2BE289 )
+						displayText = Engine[0xF9F1239CFD921FE]( "menu/cancel" )
 					},
 					properties = {
 						action = function ( f138_arg0, f138_arg1, f138_arg2, f138_arg3, f138_arg4 )
@@ -1278,14 +1278,14 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 			end
 			
 		end,
-		[CoD.OverlayUtility.aCrossPromptText] = 0xDFD294FC69F682,
+		[CoD.OverlayUtility.aCrossPromptText] = "menu/yes",
 		[CoD.OverlayUtility.bCirclePromptFn] = function ( f141_arg0 )
 			return function ( f142_arg0, f142_arg1 )
 				GoBack( f142_arg0, f142_arg1 )
 			end
 			
 		end,
-		[CoD.OverlayUtility.bCirclePromptText] = 0xC2E92C54C2BE289
+		[CoD.OverlayUtility.bCirclePromptText] = "menu/cancel"
 	},
 	EndDemoPopup = {
 		menuName = "SystemOverlay_FreeCursor",
@@ -1319,7 +1319,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 				local f146_local0 = {}
 				table.insert( f146_local0, {
 					models = {
-						displayText = Engine[0xF9F1239CFD921FE]( 0xDFD294FC69F682 )
+						displayText = Engine[0xF9F1239CFD921FE]( "menu/yes" )
 					},
 					properties = {
 						action = function ( f147_arg0, f147_arg1, f147_arg2, f147_arg3, f147_arg4 )
@@ -1330,7 +1330,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 				} )
 				table.insert( f146_local0, {
 					models = {
-						displayText = Engine[0xF9F1239CFD921FE]( 0x5C16E02B211A4F4 )
+						displayText = Engine[0xF9F1239CFD921FE]( "menu/no" )
 					},
 					properties = {
 						action = function ( f148_arg0, f148_arg1, f148_arg2, f148_arg3, f148_arg4 )
@@ -1350,14 +1350,14 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 			end
 			
 		end,
-		[CoD.OverlayUtility.aCrossPromptText] = 0xDFD294FC69F682,
+		[CoD.OverlayUtility.aCrossPromptText] = "menu/yes",
 		[CoD.OverlayUtility.bCirclePromptFn] = function ( f151_arg0 )
 			return function ( f152_arg0, f152_arg1 )
 				GoBack( f152_arg0, f152_arg1 )
 			end
 			
 		end,
-		[CoD.OverlayUtility.bCirclePromptText] = 0xC2E92C54C2BE289
+		[CoD.OverlayUtility.bCirclePromptText] = "menu/cancel"
 	},
 	ScriptMessageDialog_Compact = {
 		menuName = "SystemOverlay_FreeCursor",
@@ -1372,7 +1372,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 			end
 			
 		end,
-		[CoD.OverlayUtility.bCirclePromptText] = 0x70A9FDC87CD3D48
+		[CoD.OverlayUtility.bCirclePromptText] = "menu/back"
 	},
 	UpdateNeeded = {
 		menuName = "SystemOverlay_Compact",
@@ -1562,7 +1562,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 					},
 					{
 						models = {
-							displayText = Engine[0xF9F1239CFD921FE]( 0xC2E92C54C2BE289 )
+							displayText = Engine[0xF9F1239CFD921FE]( "menu/cancel" )
 						},
 						properties = {
 							action = function ( f168_arg0, f168_arg1, f168_arg2, f168_arg3, f168_arg4 )
@@ -1641,7 +1641,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 					if f172_local1 ~= nil then
 						CoD.OverlayUtility.Overlays[f171_arg0.menuName].description = Engine[0xF9F1239CFD921FE]( f172_local1 )
 					end
-					CoD.OverlayUtility.Overlays[f171_arg0.menuName].title = Engine[0xF9F1239CFD921FE]( 0x572450D01E06CD6 )
+					CoD.OverlayUtility.Overlays[f171_arg0.menuName].title = Engine[0xF9F1239CFD921FE]( "menu/coming_soon" )
 					f171_arg0:refreshData( nil )
 				elseif f172_local0.queued then
 					if f172_local0.position > 0 and f172_local0.estimatedWaitTimeSec > 0 then
@@ -1672,7 +1672,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 				f171_local1 = f171_local1 + f172_arg0.timeElapsed
 			end ) )
 		end,
-		title = Engine[0xF9F1239CFD921FE]( 0x572450D01E06CD6 ),
+		title = Engine[0xF9F1239CFD921FE]( "menu/coming_soon" ),
 		description = "",
 		categoryType = CoD.OverlayUtility.OverlayTypes.Connection,
 		[CoD.OverlayUtility.GoBackPropertyName] = CoD.OverlayUtility.DefaultGoBack
@@ -1688,7 +1688,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 				return {
 					{
 						models = {
-							displayText = Engine[0xF9F1239CFD921FE]( 0xDFD294FC69F682 )
+							displayText = Engine[0xF9F1239CFD921FE]( "menu/yes" )
 						},
 						properties = {
 							action = function ( f175_arg0, f175_arg1, f175_arg2, f175_arg3, f175_arg4 )
@@ -1700,7 +1700,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 					},
 					{
 						models = {
-							displayText = Engine[0xF9F1239CFD921FE]( 0xC2E92C54C2BE289 )
+							displayText = Engine[0xF9F1239CFD921FE]( "menu/cancel" )
 						},
 						properties = {
 							action = function ( f176_arg0, f176_arg1, f176_arg2, f176_arg3, f176_arg4 )
@@ -1721,14 +1721,14 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 			end
 			
 		end,
-		[CoD.OverlayUtility.aCrossPromptText] = 0xDFD294FC69F682,
+		[CoD.OverlayUtility.aCrossPromptText] = "menu/yes",
 		[CoD.OverlayUtility.bCirclePromptFn] = function ( f179_arg0 )
 			return function ( f180_arg0, f180_arg1 )
 				GoBack( f180_arg0, f180_arg1 )
 			end
 			
 		end,
-		[CoD.OverlayUtility.bCirclePromptText] = 0xC2E92C54C2BE289
+		[CoD.OverlayUtility.bCirclePromptText] = "menu/cancel"
 	},
 	InitialCODPointsOverlay = {
 		menuName = "SystemOverlay_Compact",
@@ -1770,7 +1770,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 				return {
 					{
 						models = {
-							displayText = Engine[0xF9F1239CFD921FE]( 0xDFD294FC69F682 )
+							displayText = Engine[0xF9F1239CFD921FE]( "menu/yes" )
 						},
 						properties = {
 							action = function ( f186_arg0, f186_arg1, f186_arg2, f186_arg3, f186_arg4 )
@@ -1782,7 +1782,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 					},
 					{
 						models = {
-							displayText = Engine[0xF9F1239CFD921FE]( 0xC2E92C54C2BE289 )
+							displayText = Engine[0xF9F1239CFD921FE]( "menu/cancel" )
 						},
 						properties = {
 							action = function ( f187_arg0, f187_arg1, f187_arg2, f187_arg3, f187_arg4 )
@@ -1803,14 +1803,14 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 			end
 			
 		end,
-		[CoD.OverlayUtility.aCrossPromptText] = 0xDFD294FC69F682,
+		[CoD.OverlayUtility.aCrossPromptText] = "menu/yes",
 		[CoD.OverlayUtility.bCirclePromptFn] = function ( f190_arg0 )
 			return function ( f191_arg0, f191_arg1 )
 				GoBack( f191_arg0, f191_arg1 )
 			end
 			
 		end,
-		[CoD.OverlayUtility.bCirclePromptText] = 0xC2E92C54C2BE289
+		[CoD.OverlayUtility.bCirclePromptText] = "menu/cancel"
 	},
 	GunsmithSaveVariant = {
 		menuName = "SystemOverlay_Full",
@@ -2321,7 +2321,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 					},
 					{
 						models = {
-							displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0xC2E92C54C2BE289 ) )
+							displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "menu/cancel" ) )
 						},
 						properties = {
 							action = function ( f246_arg0, f246_arg1, f246_arg2, f246_arg3, f246_arg4 )
@@ -2352,7 +2352,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 			end
 			
 		end,
-		[CoD.OverlayUtility.bCirclePromptText] = 0xC2E92C54C2BE289
+		[CoD.OverlayUtility.bCirclePromptText] = "menu/cancel"
 	},
 	CustomMutationsNotification = {
 		menuName = "SystemOverlay_FreeCursor",
@@ -2377,7 +2377,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 			end
 			
 		end,
-		[CoD.OverlayUtility.bCirclePromptText] = 0xC2E92C54C2BE289
+		[CoD.OverlayUtility.bCirclePromptText] = "menu/cancel"
 	},
 	CampaignOfflineToOnlineWarning = {
 		menuName = "SystemOverlay_Compact",
@@ -2511,7 +2511,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 				return {
 					{
 						models = {
-							displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0xDFD294FC69F682 ) )
+							displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "menu/yes" ) )
 						},
 						properties = {
 							action = function ( f275_arg0, f275_arg1, f275_arg2, f275_arg3, f275_arg4 )
@@ -2524,7 +2524,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 					},
 					{
 						models = {
-							displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0x5C16E02B211A4F4 ) )
+							displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "menu/no" ) )
 						},
 						properties = {
 							action = function ( f276_arg0, f276_arg1, f276_arg2, f276_arg3, f276_arg4 )
@@ -2701,7 +2701,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 				return {
 					{
 						models = {
-							displayText = 0x6393FF34EA56966
+							displayText = "menu/continue"
 						},
 						properties = {
 							action = function ( f300_arg0, f300_arg1, f300_arg2, f300_arg3, f300_arg4 )
@@ -2723,7 +2723,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 					},
 					{
 						models = {
-							displayText = 0xC2E92C54C2BE289
+							displayText = "menu/cancel"
 						},
 						properties = {
 							action = function ( f301_arg0, f301_arg1, f301_arg2, f301_arg3, f301_arg4 )
@@ -2813,7 +2813,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 					},
 					{
 						models = {
-							displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0xC2E92C54C2BE289 ) )
+							displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "menu/cancel" ) )
 						},
 						properties = {
 							action = function ( f311_arg0, f311_arg1, f311_arg2, f311_arg3, f311_arg4 )
@@ -2840,7 +2840,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 			end
 			
 		end,
-		[CoD.OverlayUtility.bCirclePromptText] = 0xC2E92C54C2BE289
+		[CoD.OverlayUtility.bCirclePromptText] = "menu/cancel"
 	},
 	ReportPlayer = {
 		menuName = "SystemOverlay_Full",
@@ -3461,9 +3461,9 @@ DataSourceHelpers.PerControllerDataSourceSetup( "FrontendToast", "FrontendToast"
 	f377_local0 = f377_arg0:create( "description" )
 	f377_local0:set( "" )
 	f377_local0 = f377_arg0:create( "contentIcon" )
-	f377_local0:set( 0x7615068F50B3D66 )
+	f377_local0:set( "blacktransparent" )
 	f377_local0 = f377_arg0:create( "functionIcon" )
-	f377_local0:set( 0x7615068F50B3D66 )
+	f377_local0:set( "blacktransparent" )
 	f377_local0 = f377_arg0:create( "emblemDecal" )
 	f377_local0:set( 0 )
 	f377_local0 = f377_arg0:create( "category" )
@@ -3482,8 +3482,8 @@ CoD.OverlayUtility.ShowToast = function ( f378_arg0, f378_arg1, f378_arg2, f378_
 	f378_local1.state:set( f378_arg0 or "DefaultState" )
 	f378_local1.kicker:set( f378_arg1 or "" )
 	f378_local1.description:set( f378_arg2 or "" )
-	f378_local1.contentIcon:set( f378_local0( f378_arg3 ) or 0x7615068F50B3D66 )
-	f378_local1.functionIcon:set( f378_local0( f378_arg4 ) or 0x7615068F50B3D66 )
+	f378_local1.contentIcon:set( f378_local0( f378_arg3 ) or "blacktransparent" )
+	f378_local1.functionIcon:set( f378_local0( f378_arg4 ) or "blacktransparent" )
 	f378_local1.emblemDecal:set( f378_arg5 or 0 )
 	f378_local1.category:set( f378_arg7 or "" )
 	f378_local1.notify:set( true )

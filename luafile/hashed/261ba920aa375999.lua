@@ -26,7 +26,7 @@ CoD.PositionDraft_ReadyButtonContainer.new = function ( f1_arg0, f1_arg1, f1_arg
 	local Fill = LUI.UIImage.new( -0.5, 0.5, 184, 184, -0.5, 0.5, 37.5, 37.5 )
 	Fill:setRGB( ColorSet.PlayerYellow.r, ColorSet.PlayerYellow.g, ColorSet.PlayerYellow.b )
 	Fill:setAlpha( 0 )
-	Fill:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	Fill:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	Fill:setShaderVector( 1, 0, 0, 0, 0 )
 	Fill:setShaderVector( 2, 1, 0, 0, 0 )
 	Fill:setShaderVector( 3, 0, 0, 0, 0 )
@@ -106,13 +106,13 @@ CoD.PositionDraft_ReadyButtonContainer.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local arrow01 = LUI.UIImage.new( 0, 0, 353, 358, 0, 0, -12, -7 )
 	arrow01:setRGB( 0.06, 0.06, 0.06 )
-	arrow01:setImage( RegisterImage( 0x19A57A2805CEECA ) )
+	arrow01:setImage( RegisterImage( "uie_ui_hud_common_line_arrow" ) )
 	self:addElement( arrow01 )
 	self.arrow01 = arrow01
 	
 	local arrow = LUI.UIImage.new( 0, 0, 9.5, 14.5, 0, 0, -12, -7 )
 	arrow:setRGB( 0.06, 0.06, 0.06 )
-	arrow:setImage( RegisterImage( 0x19A57A2805CEECA ) )
+	arrow:setImage( RegisterImage( "uie_ui_hud_common_line_arrow" ) )
 	self:addElement( arrow )
 	self.arrow = arrow
 	

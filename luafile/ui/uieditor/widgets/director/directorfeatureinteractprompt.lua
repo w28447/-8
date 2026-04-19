@@ -31,7 +31,7 @@ CoD.DirectorFeatureInteractPrompt.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local buttonPromptImagePC = nil
 	
 	buttonPromptImagePC = LUI.UIImage.new( 0, 0, 3, 29, 1, 1, -33, -7 )
-	buttonPromptImagePC:setMaterial( LUI.UIImage.GetCachedMaterial( 0x67D1E3A3D2D1BF ) )
+	buttonPromptImagePC:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_saturation_normal" ) )
 	buttonPromptImagePC:setShaderVector( 0, 1, 0, 0, 0 )
 	buttonPromptImagePC:subscribeToGlobalModel( f1_arg1, "Controller", "alt2_button_image", function ( model )
 		local f3_local0 = model:get()

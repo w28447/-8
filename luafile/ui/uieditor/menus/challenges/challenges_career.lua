@@ -77,7 +77,7 @@ LUI.createMenu.Challenges_Career = function ( f1_arg0, f1_arg1 )
 		GoBack( self, f6_arg2 )
 		return true
 	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	TabFrame.id = "TabFrame"

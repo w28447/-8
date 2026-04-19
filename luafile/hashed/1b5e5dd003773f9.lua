@@ -10,7 +10,7 @@ CoD.ReticleEnemyIndicatorInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local Triangle = LUI.UIImage.new( 0.5, 0.5, -34, 34, 0, 0, 115, 159 )
 	Triangle:setAlpha( 0.8 )
-	Triangle:setImage( RegisterImage( 0x108B57FEAA671EF ) )
+	Triangle:setImage( RegisterImage( "uie_ui_hud_reticle_scanner_arrow" ) )
 	Triangle:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	Triangle:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Triangle )

@@ -14,7 +14,7 @@ CoD.ArenaGauntletLossSlot.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.Slot = Slot
 	
 	local Fill = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	Fill:setImage( RegisterImage( 0x69BEFB7E55FBA50 ) )
+	Fill:setImage( RegisterImage( "uie_cross_abilities" ) )
 	self:addElement( Fill )
 	self.Fill = Fill
 	

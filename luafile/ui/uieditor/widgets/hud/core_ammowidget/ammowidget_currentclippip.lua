@@ -27,7 +27,7 @@ CoD.AmmoWidget_CurrentClipPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	GlowOuter:setRGB( 0.76, 0.76, 0.73 )
 	GlowOuter:setAlpha( 0.2 )
 	GlowOuter:setImage( RegisterImage( 0x949918ED1F03E4F ) )
-	GlowOuter:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	GlowOuter:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowOuter )
 	self.GlowOuter = GlowOuter
 	
@@ -41,7 +41,7 @@ CoD.AmmoWidget_CurrentClipPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	fill:setAlpha( 0.85 )
 	fill:setZRot( 180 )
 	fill:setImage( RegisterImage( 0x5768316A400E7D ) )
-	fill:setMaterial( LUI.UIImage.GetCachedMaterial( 0x910274CA3518744 ) )
+	fill:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	fill:setShaderVector( 0, 1, 0, 0, 0 )
 	fill:setShaderVector( 1, 0, 0, 0, 0 )
 	fill.__Y_Fraction = function ()

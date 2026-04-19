@@ -102,7 +102,7 @@ CoD.KeyboardTextFieldInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 		end
 	end, function ( f5_arg0, f5_arg1, f5_arg2 )
 		if not IsDisabled( f5_arg0, f5_arg2 ) then
-			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0xD0BB36CD318F55F, nil, "MOUSE1" )
+			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "menu/select", nil, "MOUSE1" )
 			return true
 		else
 			return false

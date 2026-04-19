@@ -17,7 +17,7 @@ CoD.HubStatsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local FocusGlow = LUI.UIImage.new( 0, 1, -50, 50, 0, 1, -50, 50 )
 	FocusGlow:setAlpha( 0 )
-	FocusGlow:setImage( RegisterImage( 0xB8F10D49D85E9C4 ) )
+	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_small" ) )
 	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.25, 0.25 )
 	FocusGlow:setShaderVector( 1, 1.2, 0, 0, 0 )
@@ -33,7 +33,7 @@ CoD.HubStatsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local TiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TiledBacking:setAlpha( 0.5 )
-	TiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking:setupNineSliceShader( 196, 88 )
@@ -48,7 +48,7 @@ CoD.HubStatsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local TiledBackingAdd = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TiledBackingAdd:setAlpha( 0 )
-	TiledBackingAdd:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBackingAdd:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBackingAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledBackingAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBackingAdd:setupNineSliceShader( 196, 88 )
@@ -122,14 +122,14 @@ CoD.HubStatsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local LockedIcon = LUI.UIImage.new( 0.5, 0.5, -64, 64, 0.5, 0.5, -26.5, 101.5 )
 	LockedIcon:setAlpha( 0 )
 	LockedIcon:setScale( 0.25, 0.25 )
-	LockedIcon:setImage( RegisterImage( 0xE1E7C490B2BA4FB ) )
+	LockedIcon:setImage( RegisterImage( "uie_ui_icon_global_lock" ) )
 	self:addElement( LockedIcon )
 	self.LockedIcon = LockedIcon
 	
 	local FrontendFrameSelected = LUI.UIImage.new( 0, 1, -4, 4, 0, 1, -4, 4 )
 	FrontendFrameSelected:setAlpha( 0 )
-	FrontendFrameSelected:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FrontendFrameSelected:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrameSelected:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FrontendFrameSelected:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrameSelected:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrameSelected:setupNineSliceShader( 12, 12 )
 	self:addElement( FrontendFrameSelected )
@@ -137,8 +137,8 @@ CoD.HubStatsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local FrontendFrameSelectedGlow = LUI.UIImage.new( 0, 1, -8, 8, 0, 1, -8, 8 )
 	FrontendFrameSelectedGlow:setAlpha( 0 )
-	FrontendFrameSelectedGlow:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FrontendFrameSelectedGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrameSelectedGlow:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FrontendFrameSelectedGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrameSelectedGlow:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrameSelectedGlow:setupNineSliceShader( 28, 28 )
 	self:addElement( FrontendFrameSelectedGlow )
@@ -146,8 +146,8 @@ CoD.HubStatsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local FrontendFrame = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	FrontendFrame:setAlpha( 0.2 )
-	FrontendFrame:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrontendFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrame:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrontendFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrame:setupNineSliceShader( 6, 6 )
 	self:addElement( FrontendFrame )
@@ -182,7 +182,7 @@ CoD.HubStatsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	TabBottomLine:setRGB( 0.92, 0.92, 0.92 )
 	TabBottomLine:setAlpha( 0.2 )
 	TabBottomLine:setImage( RegisterImage( 0x5526CF3733E24C4 ) )
-	TabBottomLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	TabBottomLine:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TabBottomLine )
 	self.TabBottomLine = TabBottomLine
 	

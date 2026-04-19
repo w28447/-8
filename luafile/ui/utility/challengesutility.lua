@@ -1814,7 +1814,7 @@ DataSources.CallingCardsBlackMarket = DataSourceHelpers.ListSetup( "CallingCards
 			displayName = f72_local6.displayName,
 			rarity = f72_local6.rarity,
 			iconId = f72_local6.iconId,
-			category = 0x5D0D4D46178F2C8,
+			category = "menu/calling_card",
 			setInfo = "",
 			unlockInfo = f72_local6.lootInfo.unlockInfo or ""
 		}
@@ -1928,7 +1928,7 @@ end, true, {
 			f77_local0.unlockInfo:set( f77_local1.lootInfo.unlockInfo )
 			f77_local0.rarity:set( f77_local1.rarity )
 			f77_local0.iconId:set( f77_local1.iconId )
-			f77_local0.category:set( 0x5D0D4D46178F2C8 )
+			f77_local0.category:set( "menu/calling_card" )
 			f77_local0.owned:set( f77_local1.lootInfo.owned )
 			f77_local0.available:set( f77_local1.lootInfo.available )
 			f77_local0.categoryTab:set( "loot" )
@@ -1952,7 +1952,7 @@ DataSources.CallingCardsBlackMarketCardSet = DataSourceHelpers.ListSetup( "Calli
 					displayName = f78_local12.displayName,
 					rarity = f78_local12.rarity,
 					iconId = f78_local12.iconId,
-					category = 0x5D0D4D46178F2C8,
+					category = "menu/calling_card",
 					setInfo = f78_local1.setInfoString,
 					unlockInfo = f78_local12.lootInfo.unlockInfo or ""
 				}
@@ -2008,7 +2008,7 @@ DataSources.CallingCardsTabs = ListHelper_SetupDataSource( "CallingCardsTabs", f
 		f79_local2( 0xA2DD20750465431, "CoD.CallingCardsStickerbook", "wz", true )
 		f79_local2( 0xE1E56BF62CCB5F2, "CoD.CallingCardsStickerbook", "masters", true )
 		if CoD.BlackMarketUtility.BuildCallingCardSets( f79_arg0, f79_arg1.menu ) then
-			f79_local2( 0x29C903C6DF90D6F, "CoD.CallingCards_Set_BlackMarket", "loot", true )
+			f79_local2( "menu/black_market", "CoD.CallingCards_Set_BlackMarket", "loot", true )
 		end
 	end
 	return f79_local0
@@ -2018,7 +2018,7 @@ CoD.ChallengesUtility.GetEmblemBackgroundImageText = function ( f81_arg0, f81_ar
 	if f81_local0 < 0 then
 		return f81_local1
 	end
-	local f81_local2 = 0x5D0D4D46178F2C8
+	local f81_local2 = "menu/calling_card"
 	local f81_local3 = CoD.backgroundsTable
 	local f81_local4 = {
 		15,
@@ -2163,7 +2163,7 @@ CoD.ChallengesUtility.GetChallengeRewardIconAndCategoryName = function ( f86_arg
 			end
 		end
 	end
-	return 0x7615068F50B3D66, 0x2C79EA24AB1A2BA
+	return "blacktransparent", "null/empty"
 end
 
 CoD.ChallengesUtility.DiamondCamoImages = {
@@ -2204,8 +2204,8 @@ CoD.ChallengesUtility.DiamondCamoImages = {
 CoD.ChallengesUtility.ZombiesTrialsExpToMedalImages = {
 	[0] = {
 		[1000] = 0x2638A7737E9BD02,
-		[2000] = 0xD56A5FDBB9721FB,
-		[3000] = 0x7775EF99258EEEC
+		[2000] = "uie_trial_medal_silver",
+		[3000] = "uie_trial_medal_gold"
 	},
 	[1] = {
 		[1000] = 0x772C55AAA62BD0,
@@ -2261,8 +2261,8 @@ CoD.ChallengesUtility.GetChallengeRewardInfo = function ( f87_arg0, f87_arg1, f8
 	end
 	local f87_local18 = nil
 	local f87_local19 = "MENU/NEW"
-	local f87_local20 = 0x7615068F50B3D66
-	local f87_local21 = 0x2C79EA24AB1A2BA
+	local f87_local20 = "blacktransparent"
+	local f87_local21 = "null/empty"
 	local f87_local22 = ""
 	local f87_local23 = ""
 	f87_local20, f87_local21 = CoD.ChallengesUtility.GetChallengeRewardIconAndCategoryName( f87_local10 )
@@ -2339,18 +2339,18 @@ CoD.ChallengesUtility.GetChallengeRewardInfo = function ( f87_arg0, f87_arg1, f8
 			else
 				local f87_local28 = Engine[0xC6F8EC444864600]( f87_local0, f87_arg2, Enum.milestoneTableColumns_t[0xBD6B92975B2A6AB] )
 				if not f87_local28 then
-					f87_local20 = 0x7615068F50B3D66
+					f87_local20 = "blacktransparent"
 				else
-					f87_local20 = CoD.ChallengesUtility.DiamondCamoImages[f87_local28[1]] or 0x7615068F50B3D66
+					f87_local20 = CoD.ChallengesUtility.DiamondCamoImages[f87_local28[1]] or "blacktransparent"
 				end
 			end
 		elseif f87_arg3 == Enum.statsMilestoneTypes_t[0x4D0D341C55C3159] then
 			if f87_local5 == 0xDCAF4647CD4E672 then
 				local f87_local28 = Engine[0xC6F8EC444864600]( f87_local0, f87_arg2, Enum.milestoneTableColumns_t[0xBD6B92975B2A6AB] )
 				if not f87_local28 then
-					f87_local20 = 0x7615068F50B3D66
+					f87_local20 = "blacktransparent"
 				else
-					f87_local20 = CoD.ChallengesUtility.DiamondCamoImages[f87_local28[1]] or 0x7615068F50B3D66
+					f87_local20 = CoD.ChallengesUtility.DiamondCamoImages[f87_local28[1]] or "blacktransparent"
 				end
 			end
 		else
@@ -2362,7 +2362,7 @@ CoD.ChallengesUtility.GetChallengeRewardInfo = function ( f87_arg0, f87_arg1, f8
 					f87_local20 = Engine.GetItemImage( f87_arg4 )
 				end
 			else
-				f87_local20 = 0x7615068F50B3D66
+				f87_local20 = "blacktransparent"
 			end
 		end
 		if f87_local13 == Enum.eModes[0x3723205FAE52C4A] and not IsBooleanDvarSet( 0x30FAB929626F598 ) and (LUI.startswith( f87_local10, "camo_darkmatter" ) or f87_local10 == "camo_diamond" or f87_local10 == "camo_gold") then
@@ -2395,7 +2395,7 @@ CoD.ChallengesUtility.GetChallengeRewardInfo = function ( f87_arg0, f87_arg1, f8
 		if CoD.ChallengesUtility.ZombiesTrialsExpToMedalImages[f87_local27] then
 			local f87_local30 = CoD.ChallengesUtility.ZombiesTrialsExpToMedalImages[f87_local27][f87_local11]
 		end
-		f87_local20 = f87_local30 or 0x7615068F50B3D66
+		f87_local20 = f87_local30 or "blacktransparent"
 	end
 	local f87_local27 = function ( f88_arg0, f88_arg1 )
 		local f88_local0

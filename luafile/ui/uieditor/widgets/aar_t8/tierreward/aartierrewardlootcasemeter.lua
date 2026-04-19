@@ -18,7 +18,7 @@ CoD.AARTierRewardLootCaseMeter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local CurrentProgressRing = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	CurrentProgressRing:setRGB( 0.95, 0.91, 0.11 )
 	CurrentProgressRing:setImage( RegisterImage( 0xF00B924BA10A94C ) )
-	CurrentProgressRing:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD5CA1A25ED87F4F ) )
+	CurrentProgressRing:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	CurrentProgressRing:setShaderVector( 0, 0.66, 0, 0, 0 )
 	CurrentProgressRing:setShaderVector( 1, 0.5, 0, 0, 0 )
 	CurrentProgressRing:setShaderVector( 2, 0.5, 0, 0, 0 )
@@ -30,7 +30,7 @@ CoD.AARTierRewardLootCaseMeter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local PreviousProgressRing = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	PreviousProgressRing:setRGB( 0.38, 0.36, 0.02 )
 	PreviousProgressRing:setImage( RegisterImage( 0xF00B924BA10A94C ) )
-	PreviousProgressRing:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD5CA1A25ED87F4F ) )
+	PreviousProgressRing:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	PreviousProgressRing:setShaderVector( 0, 0.5, 0, 0, 0 )
 	PreviousProgressRing:setShaderVector( 1, 0.5, 0, 0, 0 )
 	PreviousProgressRing:setShaderVector( 2, 0.5, 0, 0, 0 )
@@ -60,7 +60,7 @@ CoD.AARTierRewardLootCaseMeter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	Flash:setRGB( 1, 0.98, 0.71 )
 	Flash:setAlpha( 0 )
 	Flash:setImage( RegisterImage( 0x4A1176ABBF1AB4C ) )
-	Flash:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Flash:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Flash )
 	self.Flash = Flash
 	

@@ -70,7 +70,7 @@ CoD.Rush_Gameover.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	
 	local CroppedZmBacking2 = LUI.UIImage.new( 0, 1, -8, 8, 0, 1, -18, 18 )
 	CroppedZmBacking2:setAlpha( 0.5 )
-	CroppedZmBacking2:setImage( RegisterImage( 0xA8FC401C1972BDE ) )
+	CroppedZmBacking2:setImage( RegisterImage( "uie_ui_hud_zm_aar_reward_bg" ) )
 	CroppedZmBacking2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
 	CroppedZmBacking2:setShaderVector( 0, 0, 0, 0, 0 )
 	CroppedZmBacking2:setShaderVector( 1, 1, 1, 0, 0 )
@@ -93,7 +93,7 @@ CoD.Rush_Gameover.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.4 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )

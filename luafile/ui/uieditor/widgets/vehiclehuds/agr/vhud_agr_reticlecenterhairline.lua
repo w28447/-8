@@ -11,14 +11,14 @@ CoD.vhud_agr_ReticleCenterHairline.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	agrReticleHairlineRight0:setAlpha( 0.15 )
 	agrReticleHairlineRight0:setZoom( -50 )
 	agrReticleHairlineRight0:setImage( RegisterImage( 0x77DE57CB7375C22 ) )
-	agrReticleHairlineRight0:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	agrReticleHairlineRight0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( agrReticleHairlineRight0 )
 	self.agrReticleHairlineRight0 = agrReticleHairlineRight0
 	
 	local agrReticleHairlineRight = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	agrReticleHairlineRight:setAlpha( 0.5 )
 	agrReticleHairlineRight:setImage( RegisterImage( 0x77DE57CB7375C22 ) )
-	agrReticleHairlineRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	agrReticleHairlineRight:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( agrReticleHairlineRight )
 	self.agrReticleHairlineRight = agrReticleHairlineRight
 	

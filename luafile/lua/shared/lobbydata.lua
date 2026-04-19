@@ -16,15 +16,15 @@ local f0_local2 = {
 f0_local0.InitMenusIndexTable = function ()
 	f0_local1 = {}
 	for f1_local8, f1_local9 in pairs( {
-		0x51BB4F2EDE86F4C,
-		0x262C7CA0E318854,
-		0x276CBCA0E42382A,
-		0x295ACCA0E5CB40C,
-		0x2BAB9CA0E7BE660,
-		0x41F5DBFEF6844A6,
-		0xDAE12D7F3029A24,
-		0x9F8B20FBABFED4B,
-		0xF4F713EF679C9BC
+		"lobbymenulist",
+		"lobbymenulist_mp",
+		"lobbymenulist_cp",
+		"lobbymenulist_zm",
+		"lobbymenulist_wz",
+		"lobbymenulist_online",
+		"lobbymenulist_offline",
+		"lobbymenulist_training",
+		"lobbymenulist_mp_arena"
 	} ) do
 		local f1_local10 = Engine[0xA7E3CD65E63086F]( f1_local9 )
 		if f1_local10 then
@@ -144,15 +144,15 @@ f0_local0.GetCurrentLobbySizes = function ( f10_arg0 )
 end
 
 f0_local0.PartyPrivacyToString = function ( f11_arg0 )
-	local f11_local0 = 0x980DDEA2FD1615B
+	local f11_local0 = "menu/party_privacy_closed"
 	if f11_arg0 == Enum.PartyPrivacy[0x9ACC1F9917ADDE9] then
-		f11_local0 = 0xD7568CAE1BE3F6B
+		f11_local0 = "menu/party_privacy_open"
 	elseif f11_arg0 == Enum.PartyPrivacy[0xBE1A36D69A39221] then
-		f11_local0 = 0xD5B11C63C41C427
+		f11_local0 = "menu/party_privacy_friends_only"
 	elseif f11_arg0 == Enum.PartyPrivacy[0x2507221A765592F] then
-		f11_local0 = 0x4D4EA9B2703EF9
+		f11_local0 = "menu/party_privacy_invite_only"
 	elseif f11_arg0 == Enum.PartyPrivacy[0x8B288F48084ABC5] then
-		f11_local0 = 0x980DDEA2FD1615B
+		f11_local0 = "menu/party_privacy_closed"
 	end
 	return Engine[0xF9F1239CFD921FE]( f11_local0 )
 end

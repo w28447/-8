@@ -65,7 +65,7 @@ CoD.ContractProgressBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local TiledShaderImage = LUI.UIImage.new( 0.18, 0.97, -3, -3, 0.28, 0.61, 1, 1 )
 	TiledShaderImage:setRGB( 0, 0, 0 )
-	TiledShaderImage:setImage( RegisterImage( 0x4B6FFA90272070E ) )
+	TiledShaderImage:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
 	TiledShaderImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledShaderImage:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledShaderImage:setupNineSliceShader( 24, 24 )

@@ -112,14 +112,14 @@ CoD.vhud_dart_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local VerticalMeterTop = LUI.UIImage.new( 0.5, 0.5, -18, 18, 0, 0, 387, 307 )
 	VerticalMeterTop:setImage( RegisterImage( 0xC65F2B8D9519C20 ) )
-	VerticalMeterTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	VerticalMeterTop:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( VerticalMeterTop )
 	self.VerticalMeterTop = VerticalMeterTop
 	
 	local TrackerActive = LUI.UIImage.new( 0.5, 0.5, -36, 36, 0, 0, 237, 277 )
 	TrackerActive:setAlpha( 0.6 )
 	TrackerActive:setImage( RegisterImage( 0xB22BC6EB891EFC6 ) )
-	TrackerActive:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	TrackerActive:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TrackerActive )
 	self.TrackerActive = TrackerActive
 	
@@ -155,13 +155,13 @@ CoD.vhud_dart_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local FuiLeft = LUI.UIImage.new( 0, 0, 555, 635, 0, 0, 755, 791 )
 	FuiLeft:setImage( RegisterImage( 0x184787ADFCE8425 ) )
-	FuiLeft:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	FuiLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FuiLeft )
 	self.FuiLeft = FuiLeft
 	
 	local FuiRight = LUI.UIImage.new( 0, 0, 1365, 1285, 0, 0, 755, 791 )
 	FuiRight:setImage( RegisterImage( 0x184787ADFCE8425 ) )
-	FuiRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	FuiRight:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FuiRight )
 	self.FuiRight = FuiRight
 	

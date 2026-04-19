@@ -38,7 +38,7 @@ CoD[0xB3EF12304073586].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local light2 = LUI.UIImage.new( 0, 0, 466.5, 539.5, 0, 0, 90, 163 )
 	light2:setImage( RegisterImage( 0xADBF2ABD5CCB0FC ) )
-	light2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	light2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( light2 )
 	self.light2 = light2
 	
@@ -84,7 +84,7 @@ CoD[0xB3EF12304073586].__resetProperties = function ( f2_arg0 )
 	f2_arg0.smoke:setLeftRight( 0, 0, -200, 960 )
 	f2_arg0.smoke:setAlpha( 0 )
 	f2_arg0.whitebox:setAlpha( 1 )
-	f2_arg0.whitebox:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6B34AA3F39208EF ) )
+	f2_arg0.whitebox:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_normal" ) )
 end
 
 CoD[0xB3EF12304073586].__clipsPerState = {
@@ -357,7 +357,7 @@ CoD[0xB3EF12304073586].__clipsPerState = {
 			
 			f3_arg0.whitebox:completeAnimation()
 			f3_arg0.whitebox:setAlpha( 0 )
-			f3_arg0.whitebox:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+			f3_arg0.whitebox:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 			f3_local6( f3_arg0.whitebox )
 			f3_arg0.nextClip = "DefaultClip"
 		end

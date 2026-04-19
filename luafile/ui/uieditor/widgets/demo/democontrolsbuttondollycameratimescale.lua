@@ -21,7 +21,7 @@ CoD.DemoControlsButtonDollyCameraTimeScale.new = function ( f1_arg0, f1_arg1, f1
 	local Backing = LUI.UIImage.new( 0.5, 0.5, -19, 19, 0, 0, 23.5, 36.5 )
 	Backing:setRGB( 0, 0, 0 )
 	Backing:setAlpha( 0.85 )
-	Backing:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE125638BF94665F ) )
+	Backing:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	Backing:setShaderVector( 0, 0.05, 0.05, 0.05, 0.05 )
 	self:addElement( Backing )
 	self.Backing = Backing
@@ -59,7 +59,7 @@ CoD.DemoControlsButtonDollyCameraTimeScale.new = function ( f1_arg0, f1_arg1, f1
 	
 	local buttonPromptImage = LUI.UIImage.new( 0.5, 0.5, -15, 15, 0, 0, 42, 72 )
 	buttonPromptImage:setScale( 0.75, 0.75 )
-	buttonPromptImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x67D1E3A3D2D1BF ) )
+	buttonPromptImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_saturation_normal" ) )
 	buttonPromptImage:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( buttonPromptImage )
 	self.buttonPromptImage = buttonPromptImage

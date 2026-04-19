@@ -27,7 +27,7 @@ CoD.EmpRebootIndicatorWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.armorBorder = armorBorder
 	
 	local ProgressBar = LUI.UIImage.new( 0.5, 0.5, -136, 132, 0.5, 0.5, -16, -14 )
-	ProgressBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x910274CA3518744 ) )
+	ProgressBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	ProgressBar:setShaderVector( 0, 1, 0, 0, 0 )
 	ProgressBar:setShaderVector( 1, 0, 0, 0, 0 )
 	ProgressBar:setShaderVector( 2, 1, 0, 0, 0 )

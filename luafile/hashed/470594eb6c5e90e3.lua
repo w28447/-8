@@ -18,7 +18,7 @@ CoD.StartMenu_Inventory_SwitchWeaponTab.new = function ( f1_arg0, f1_arg1, f1_ar
 	local NineSliceShaderImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NineSliceShaderImage:setRGB( 0.55, 0.54, 0.49 )
 	NineSliceShaderImage:setImage( RegisterImage( 0xF1E3082B39E99BB ) )
-	NineSliceShaderImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	NineSliceShaderImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	NineSliceShaderImage:setShaderVector( 0, 0, 0, 0, 0 )
 	NineSliceShaderImage:setupNineSliceShader( 6, 6 )
 	self:addElement( NineSliceShaderImage )

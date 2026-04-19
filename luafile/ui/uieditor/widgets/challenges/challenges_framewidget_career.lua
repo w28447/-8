@@ -53,7 +53,7 @@ CoD.Challenges_FrameWidget_Career.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 		end
 	end, function ( f6_arg0, f6_arg1, f6_arg2 )
 		if not IsElementInState( f6_arg0, "Disabled" ) then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -88,7 +88,7 @@ CoD.Challenges_FrameWidget_Career.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 		end
 	end, function ( f10_arg0, f10_arg1, f10_arg2 )
 		if not IsElementInState( f10_arg0, "Disabled" ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -123,7 +123,7 @@ CoD.Challenges_FrameWidget_Career.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 		end
 	end, function ( f14_arg0, f14_arg1, f14_arg2 )
 		if not IsElementInState( f14_arg0, "Disabled" ) then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -158,7 +158,7 @@ CoD.Challenges_FrameWidget_Career.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 		end
 	end, function ( f18_arg0, f18_arg1, f18_arg2 )
 		if not IsElementInState( f18_arg0, "Disabled" ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -193,7 +193,7 @@ CoD.Challenges_FrameWidget_Career.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 		end
 	end, function ( f22_arg0, f22_arg1, f22_arg2 )
 		if not IsElementInState( f22_arg0, "Disabled" ) then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -228,7 +228,7 @@ CoD.Challenges_FrameWidget_Career.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 		end
 	end, function ( f26_arg0, f26_arg1, f26_arg2 )
 		if not IsElementInState( f26_arg0, "Disabled" ) then
-			CoD.Menu.SetButtonLabel( f26_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f26_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

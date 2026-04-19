@@ -23,7 +23,7 @@ CoD.EmblemEditorGradientColorSwatch.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 0, 0, 1020, 0, 0, 0, 240 )
 	NoiseTiledBacking:setAlpha( 0.5 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -32,8 +32,8 @@ CoD.EmblemEditorGradientColorSwatch.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local Frame = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	Frame:setAlpha( 0.2 )
-	Frame:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	Frame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	Frame:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	Frame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Frame:setShaderVector( 0, 0, 0, 0, 0 )
 	Frame:setupNineSliceShader( 16, 16 )
 	self:addElement( Frame )
@@ -180,7 +180,7 @@ CoD.EmblemEditorGradientColorSwatch.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	dividerV = LUI.UIImage.new( 0.5, 0.5, -379.5, -375.5, 0, 0, 0, 202 )
 	dividerV:setAlpha( 0.2 )
-	dividerV:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
+	dividerV:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
 	dividerV:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	dividerV:setShaderVector( 0, 0, 0, 0, 0 )
 	dividerV:setupNineSliceShader( 4, 8 )
@@ -189,7 +189,7 @@ CoD.EmblemEditorGradientColorSwatch.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	dividerH = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 201, 205 )
 	dividerH:setAlpha( 0.2 )
-	dividerH:setImage( RegisterImage( 0x84B43D5B04D263A ) )
+	dividerH:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_line" ) )
 	dividerH:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	dividerH:setShaderVector( 0, 0, 0, 0, 0 )
 	dividerH:setupNineSliceShader( 8, 4 )

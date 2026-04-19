@@ -21,7 +21,7 @@ CoD.BountyHunterGenericBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local FocusGlow = LUI.UIImage.new( 0, 1, -61, 61, 0, 1, -37, 37 )
 	FocusGlow:setAlpha( 0 )
-	FocusGlow:setImage( RegisterImage( 0x8E79E4E42B6714C ) )
+	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_large" ) )
 	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.25, 0.25 )
 	FocusGlow:setShaderVector( 1, 1.2, 0, 0, 0 )
@@ -31,7 +31,7 @@ CoD.BountyHunterGenericBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.8 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -86,7 +86,7 @@ CoD.BountyHunterGenericBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local AddPlus = LUI.UIImage.new( 0.5, 0.5, -24, 24, 0.5, 0.5, -24, 24 )
 	AddPlus:setAlpha( 0 )
 	AddPlus:setImage( RegisterImage( 0x1B97A54D41F4B80 ) )
-	AddPlus:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	AddPlus:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( AddPlus )
 	self.AddPlus = AddPlus
 	

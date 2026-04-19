@@ -1,19 +1,19 @@
 CoD.SocialUtility = {}
 CoD.SocialUtility.PartyPrivacyOptions = {
 	{
-		name = Engine[0xF9F1239CFD921FE]( 0xD7568CAE1BE3F6B ),
+		name = Engine[0xF9F1239CFD921FE]( "menu/party_privacy_open" ),
 		value = Enum.PartyPrivacy[0x9ACC1F9917ADDE9]
 	},
 	{
-		name = Engine[0xF9F1239CFD921FE]( 0xD5B11C63C41C427 ),
+		name = Engine[0xF9F1239CFD921FE]( "menu/party_privacy_friends_only" ),
 		value = Enum.PartyPrivacy[0xBE1A36D69A39221]
 	},
 	{
-		name = Engine[0xF9F1239CFD921FE]( 0x4D4EA9B2703EF9 ),
+		name = Engine[0xF9F1239CFD921FE]( "menu/party_privacy_invite_only" ),
 		value = Enum.PartyPrivacy[0x2507221A765592F]
 	},
 	{
-		name = Engine[0xF9F1239CFD921FE]( 0x980DDEA2FD1615B ),
+		name = Engine[0xF9F1239CFD921FE]( "menu/party_privacy_closed" ),
 		value = Enum.PartyPrivacy[0x8B288F48084ABC5]
 	}
 }
@@ -50,7 +50,7 @@ CoD.SocialUtility.GetRankIcons = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3 )
 			return Engine[0xD4A9B159BE44163]( f1_arg2, Enum.eModes[0xBF1DCC8138A9D39] )
 		end
 	elseif f1_arg0 == "cp" then
-		return 0x7615068F50B3D66
+		return "blacktransparent"
 	else
 		return Engine[0xD4A9B159BE44163]( f1_arg2, Enum.eModes[0x83EBA96F36BC4E5] )
 	end
@@ -252,7 +252,7 @@ CoD.SocialUtility.PresenceToIcon = function ( f16_arg0 )
 	elseif f16_local0 >= Enum[0x4BBA402DE649132][0x5EEADE3AFEF0F50] and f16_local0 <= Enum[0x4BBA402DE649132][0xAE1F1FC5A87498E] then
 		return LuaUtils.GetPresenceImageForEMode( Enum.eModes[0x83EBA96F36BC4E5] )
 	else
-		return 0x7615068F50B3D66
+		return "blacktransparent"
 	end
 end
 
@@ -644,7 +644,7 @@ DataSources.SocialPlayerInfo = {
 			local f35_local7 = {
 				Rank = 0,
 				ParagonRank = 0,
-				RankIcon = 0x7615068F50B3D66,
+				RankIcon = "blacktransparent",
 				Prestige = 0,
 				Played = false,
 				Paragon = false
@@ -955,7 +955,7 @@ CoD.SocialUtility.GetFriendsButtonOptions = function ( f36_arg0, f36_arg1, f36_a
 		local f36_local9 = Engine.IsFriendFromXUID( f36_arg0, f36_arg2 )
 		if not f36_local9 or f36_local5.info.hasEverBootedGame and f36_local9 then
 			table.insert( f36_local0, {
-				text = 0x74834ABE9827A3,
+				text = "menu/report_player",
 				id = "reportPlayer",
 				disabled = false,
 				action = ShowReportPlayerDialog,
@@ -1346,7 +1346,7 @@ DataSources.SocialOnlinePlayersList = ListHelper_SetupDataSource( "SocialOnlineP
 		end
 		local f44_local17 = f44_local11.mpRankIcon
 		if not f44_local17 then
-			f44_local17 = 0x7615068F50B3D66
+			f44_local17 = "blacktransparent"
 		end
 		local f44_local21 = f44_local11.mpRankName
 		if not f44_local21 then
@@ -1358,7 +1358,7 @@ DataSources.SocialOnlinePlayersList = ListHelper_SetupDataSource( "SocialOnlineP
 		f44_local16 = f44_local11.wzRankString
 		f44_local17 = f44_local11.wzRankIcon
 		if not f44_local17 then
-			f44_local17 = 0x7615068F50B3D66
+			f44_local17 = "blacktransparent"
 		end
 		f44_local21 = f44_local11.wzRankName
 		if not f44_local21 then
@@ -1373,7 +1373,7 @@ DataSources.SocialOnlinePlayersList = ListHelper_SetupDataSource( "SocialOnlineP
 		end
 		f44_local17 = f44_local11.zmRankIcon
 		if not f44_local17 then
-			f44_local17 = 0x7615068F50B3D66
+			f44_local17 = "blacktransparent"
 		end
 		f44_local21 = f44_local11.zmRankName
 		if not f44_local21 then
@@ -1393,7 +1393,7 @@ DataSources.SocialOnlinePlayersList = ListHelper_SetupDataSource( "SocialOnlineP
 		end
 		local f44_local22 = f44_local11.arenaRankIcon
 		if not f44_local22 then
-			f44_local22 = 0x7615068F50B3D66
+			f44_local22 = "blacktransparent"
 		end
 		local f44_local23 = f44_local11.arenaRankName
 		if not f44_local23 then

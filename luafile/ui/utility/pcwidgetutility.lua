@@ -3260,7 +3260,7 @@ CoD.PCWidgetUtility.PlayerContextualMenuExtraOptionsData = {
 		enableFct = nil
 	},
 	{
-		name = 0x74834ABE9827A3,
+		name = "menu/report_player",
 		id = "reportPlayerPc",
 		clickFct = CoD.PCWidgetUtility.ReportPlayer,
 		visibilityFct = CoD.PCWidgetUtility.ShowReportPlayer,

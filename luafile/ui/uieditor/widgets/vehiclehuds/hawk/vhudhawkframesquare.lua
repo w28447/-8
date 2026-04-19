@@ -11,14 +11,14 @@ CoD.VHUDHawkFramesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local FuiLeft = LUI.UIImage.new( 0.5, 0.5, -484, -404, 0.5, 0.5, 240, 276 )
 	FuiLeft:setAlpha( 0.5 )
 	FuiLeft:setImage( RegisterImage( 0x184787ADFCE8425 ) )
-	FuiLeft:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	FuiLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FuiLeft )
 	self.FuiLeft = FuiLeft
 	
 	local FuiRight = LUI.UIImage.new( 0.5, 0.5, 484, 404, 0.5, 0.5, 240, 276 )
 	FuiRight:setAlpha( 0.5 )
 	FuiRight:setImage( RegisterImage( 0x184787ADFCE8425 ) )
-	FuiRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	FuiRight:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FuiRight )
 	self.FuiRight = FuiRight
 	
@@ -69,14 +69,14 @@ CoD.VHUDHawkFramesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local Line = LUI.UIImage.new( 0.5, 0.5, 118.5, 178.5, 0.5, 0.5, -9, 7 )
 	Line:setAlpha( 0.25 )
 	Line:setImage( RegisterImage( 0xE405AE64F403C44 ) )
-	Line:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Line:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Line )
 	self.Line = Line
 	
 	local Line2 = LUI.UIImage.new( 0.5, 0.5, -178.5, -118.5, 0.5, 0.5, -9, 7 )
 	Line2:setAlpha( 0.25 )
 	Line2:setImage( RegisterImage( 0xE405AE64F403C44 ) )
-	Line2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Line2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Line2 )
 	self.Line2 = Line2
 	
@@ -84,7 +84,7 @@ CoD.VHUDHawkFramesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	Line3:setAlpha( 0.1 )
 	Line3:setZRot( 90 )
 	Line3:setImage( RegisterImage( 0xE405AE64F403C44 ) )
-	Line3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Line3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Line3 )
 	self.Line3 = Line3
 	
@@ -92,21 +92,21 @@ CoD.VHUDHawkFramesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	Line4:setAlpha( 0.1 )
 	Line4:setZRot( 90 )
 	Line4:setImage( RegisterImage( 0xE405AE64F403C44 ) )
-	Line4:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Line4:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Line4 )
 	self.Line4 = Line4
 	
 	local Line5 = LUI.UIImage.new( 0.5, 0.5, 197.5, 217.5, 0.5, 0.5, -16, 14 )
 	Line5:setAlpha( 0.1 )
 	Line5:setImage( RegisterImage( 0xE405AE64F403C44 ) )
-	Line5:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Line5:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Line5 )
 	self.Line5 = Line5
 	
 	local Line6 = LUI.UIImage.new( 0.5, 0.5, -217.5, -197.5, 0.5, 0.5, -16, 14 )
 	Line6:setAlpha( 0.1 )
 	Line6:setImage( RegisterImage( 0xE405AE64F403C44 ) )
-	Line6:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Line6:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Line6 )
 	self.Line6 = Line6
 	

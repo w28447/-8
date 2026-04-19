@@ -15,7 +15,7 @@ CoD.DeathCamPlayerKilledBy.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local SpawnSelectBackground = LUI.UIImage.new( 0.5, 0.5, -450, 450, 0.5, 0.5, -21, 109 )
 	SpawnSelectBackground:setAlpha( 0 )
-	SpawnSelectBackground:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	SpawnSelectBackground:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	SpawnSelectBackground:setShaderVector( 0, 0, 1, 0, 0 )
 	SpawnSelectBackground:setShaderVector( 1, 0.8, 0.8, 0, 0 )
 	SpawnSelectBackground:setShaderVector( 2, 0, 1, 0, 0 )

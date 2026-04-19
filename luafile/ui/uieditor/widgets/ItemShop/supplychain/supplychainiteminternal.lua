@@ -36,7 +36,7 @@ CoD.SupplyChainItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local Background = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Background:setRGB( 0.11, 0.18, 0.24 )
-	Background:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	Background:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	Background:setShaderVector( 0, 1, 0, 0, 0 )
 	Background:setShaderVector( 1, 0, 0, 0, 0 )
 	Background:setShaderVector( 2, 1, 0, 0, 0 )
@@ -49,20 +49,20 @@ CoD.SupplyChainItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	Gradient:setRGB( 0.08, 0.21, 0.31 )
 	Gradient:setAlpha( 0.14 )
 	Gradient:setImage( RegisterImage( 0xB646BE73FB8838C ) )
-	Gradient:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Gradient:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Gradient )
 	self.Gradient = Gradient
 	
 	local Glow = LUI.UIImage.new( 0, 1, -16, 16, 0, 1, -16, 16 )
 	Glow:setAlpha( 0.03 )
 	Glow:setImage( RegisterImage( 0xC58FF2328701EBA ) )
-	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
 	
 	local TiledShaderImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TiledShaderImage:setRGB( 0, 0, 0 )
-	TiledShaderImage:setImage( RegisterImage( 0x4B6FFA90272070E ) )
+	TiledShaderImage:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
 	TiledShaderImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledShaderImage:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledShaderImage:setupNineSliceShader( 24, 24 )
@@ -72,7 +72,7 @@ CoD.SupplyChainItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local TiledShaderImage2 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TiledShaderImage2:setRGB( 0, 0, 0 )
 	TiledShaderImage2:setAlpha( 0.7 )
-	TiledShaderImage2:setImage( RegisterImage( 0x4B6FFA90272070E ) )
+	TiledShaderImage2:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
 	TiledShaderImage2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledShaderImage2:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledShaderImage2:setupNineSliceShader( 24, 24 )
@@ -81,7 +81,7 @@ CoD.SupplyChainItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0.01, 0.99, 0, 0, 0.01, 0.99, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -162,7 +162,7 @@ CoD.SupplyChainItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local LockIcon = LUI.UIImage.new( 0.5, 0.5, 16, 68, 0.5, 0.5, 25, 77 )
 	LockIcon:setImage( RegisterImage( 0x410BF8B0F9878A4 ) )
-	LockIcon:setMaterial( LUI.UIImage.GetCachedMaterial( 0x67D1E3A3D2D1BF ) )
+	LockIcon:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_saturation_normal" ) )
 	LockIcon:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( LockIcon )
 	self.LockIcon = LockIcon
@@ -184,8 +184,8 @@ CoD.SupplyChainItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local FocusBorder = LUI.UIImage.new( 0, 1, -2, 2, 0, 1, -2, 2 )
 	FocusBorder:setRGB( 0.96, 0.94, 0.78 )
 	FocusBorder:setAlpha( 0 )
-	FocusBorder:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FocusBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FocusBorder:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FocusBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FocusBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FocusBorder:setupNineSliceShader( 10, 10 )
 	self:addElement( FocusBorder )
@@ -231,7 +231,7 @@ CoD.SupplyChainItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local FocusGlow = LUI.UIImage.new( 0, 1, -65, 65, 0, 1, -45, 45 )
 	FocusGlow:setAlpha( 0 )
-	FocusGlow:setImage( RegisterImage( 0x8E79E4E42B6714C ) )
+	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_large" ) )
 	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.25, 0.25 )
 	FocusGlow:setShaderVector( 1, 1.2, 0, 0, 0 )
@@ -241,7 +241,7 @@ CoD.SupplyChainItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local FocusGlow2 = LUI.UIImage.new( 0, 1, -65, 65, 0, 1, -45, 45 )
 	FocusGlow2:setAlpha( 0 )
-	FocusGlow2:setImage( RegisterImage( 0x8E79E4E42B6714C ) )
+	FocusGlow2:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_large" ) )
 	FocusGlow2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	FocusGlow2:setShaderVector( 0, 0, 0, 0.25, 0.25 )
 	FocusGlow2:setShaderVector( 1, 1.2, 0, 0, 0 )
@@ -258,7 +258,7 @@ CoD.SupplyChainItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local Glint = CoD.SupplyChainItemGlint.new( f1_arg0, f1_arg1, 0, 0, 0, 140, 0, 0, 0, 158 )
 	Glint:setAlpha( 0 )
-	Glint:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Glint:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	Glint:linkToElementModel( self, nil, false, function ( model )
 		Glint:setModel( model, f1_arg1 )
 	end )

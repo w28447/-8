@@ -117,7 +117,7 @@ CoD.OverlayUtility.AddSystemOverlay( "CompleteCPFirstTimeFlow", {
 		end
 		
 	end,
-	[CoD.OverlayUtility.bCirclePromptText] = 0x70A9FDC87CD3D48
+	[CoD.OverlayUtility.bCirclePromptText] = "menu/back"
 } )
 CoD.OverlayUtility.AddSystemOverlay( "ConfirmCompanionChange", {
 	menuName = "SystemOverlay_FreeCursor",
@@ -144,7 +144,7 @@ CoD.OverlayUtility.AddSystemOverlay( "ConfirmCompanionChange", {
 		end
 		
 	end,
-	[CoD.OverlayUtility.bCirclePromptText] = 0xC2E92C54C2BE289
+	[CoD.OverlayUtility.bCirclePromptText] = "menu/cancel"
 } )
 CoD.OverlayUtility.AddSystemOverlay( "ConfirmFactionChange", {
 	menuName = "SystemOverlay_FreeCursor",
@@ -169,7 +169,7 @@ CoD.OverlayUtility.AddSystemOverlay( "ConfirmFactionChange", {
 		end
 		
 	end,
-	[CoD.OverlayUtility.bCirclePromptText] = 0xC2E92C54C2BE289
+	[CoD.OverlayUtility.bCirclePromptText] = "menu/cancel"
 } )
 CoD.CPUtility.SelectCompanion_Internal = function ( f25_arg0, f25_arg1 )
 	local f25_local0 = Engine.GetPlayerStats( f25_arg0 )
@@ -1139,7 +1139,7 @@ DataSources.CurrentObjectiveInfo = {
 						f92_local3 = true
 					end
 					local f92_local4 = f92_local1 == f92_local2
-					local f92_local5 = f92_local0[0xE3FD1464311AFA1] or 0x7615068F50B3D66
+					local f92_local5 = f92_local0[0xE3FD1464311AFA1] or "blacktransparent"
 					if f92_local3 then
 						f92_local5 = f92_local0[0x1F7C7371625DBE8] or f92_local5
 					elseif f92_local4 then
@@ -1659,14 +1659,14 @@ CoD.OverlayUtility.AddSystemOverlay( "CPDefectPopup", {
 		end
 		
 	end,
-	[CoD.OverlayUtility.aCrossPromptText] = 0xDFD294FC69F682,
+	[CoD.OverlayUtility.aCrossPromptText] = "menu/yes",
 	[CoD.OverlayUtility.bCirclePromptFn] = function ( f139_arg0 )
 		return function ( f140_arg0, f140_arg1 )
 			SendOwnMenuResponse( f140_arg0, f140_arg1, "decline" )
 		end
 		
 	end,
-	[CoD.OverlayUtility.bCirclePromptText] = 0x5C16E02B211A4F4
+	[CoD.OverlayUtility.bCirclePromptText] = "menu/no"
 } )
 CoD.CPUtility.AARObjectiveStates = LuaEnum.createEnum( "STATE_INCOMPLETE", "STATE_SUCCESS", "STATE_FAILURE" )
 CoD.CPUtility.SetupInGameCPAARModels = function ( f141_arg0, f141_arg1 )

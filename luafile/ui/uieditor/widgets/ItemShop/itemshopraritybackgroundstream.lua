@@ -1,8 +1,8 @@
-require( "x64:a0a8f1663892a0d" )
-require( "x64:bba2468877eebe1" )
-require( "x64:400d223b0a524c1" )
-require( "x64:e496e1615b73244" )
-require( "x64:455868bb803d8b6" )
+require( "ui/uieditor/widgets/itemshop/supplychain/itemshopraritybackgroundstream_common" )
+require( "ui/uieditor/widgets/itemshop/supplychain/itemshopraritybackgroundstream_epic" )
+require( "ui/uieditor/widgets/itemshop/supplychain/itemshopraritybackgroundstream_legendary" )
+require( "ui/uieditor/widgets/itemshop/supplychain/itemshopraritybackgroundstream_rare" )
+require( "ui/uieditor/widgets/itemshop/supplychain/itemshopraritybackgroundstream_ultra" )
 
 CoD.ItemShopRarityBackgroundStream = InheritFrom( LUI.UIElement )
 CoD.ItemShopRarityBackgroundStream.__defaultWidth = 240

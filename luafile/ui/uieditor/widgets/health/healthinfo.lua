@@ -48,8 +48,8 @@ CoD.HealthInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	local GlowBlueOver = LUI.UIImage.new( 0, 0, 86, 134, 0, 0, 14.5, 282.5 )
 	GlowBlueOver:setAlpha( 0 )
 	GlowBlueOver:setZRot( 90 )
-	GlowBlueOver:setImage( RegisterImage( 0x5BE416E17DAB33B ) )
-	GlowBlueOver:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	GlowBlueOver:setImage( RegisterImage( "uie_t7_core_hud_mapwidget_panelglow" ) )
+	GlowBlueOver:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowBlueOver )
 	self.GlowBlueOver = GlowBlueOver
 	
@@ -85,7 +85,7 @@ CoD.HealthInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	LED:setAlpha( 0.24 )
 	LED:setScale( 0.94, 0.94 )
 	LED:setImage( RegisterImage( 0x832BA507D0E7663 ) )
-	LED:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	LED:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	LED:setShaderVector( 0, 0.03, 0.93, 0, 0 )
 	LED:setShaderVector( 1, 0, 0, 0, 0 )
 	LED:setShaderVector( 2, 0.37, 0.6, 0, 0 )

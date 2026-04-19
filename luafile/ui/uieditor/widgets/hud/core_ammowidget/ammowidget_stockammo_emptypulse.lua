@@ -11,7 +11,7 @@ CoD.AmmoWidget_StockAmmo_EmptyPulse.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local Glow = LUI.UIImage.new( 0, 0, -36.5, 135.5, 0, 0, -17, 37 )
 	Glow:setRGB( 1, 0, 0 )
 	Glow:setImage( RegisterImage( 0xC58FF2328701EBA ) )
-	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
 	

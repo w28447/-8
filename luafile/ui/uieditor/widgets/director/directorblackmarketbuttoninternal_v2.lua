@@ -48,7 +48,7 @@ CoD.DirectorBlackMarketButtonInternal_v2.new = function ( f1_arg0, f1_arg1, f1_a
 	
 	local SpecialEventBanner = LUI.UIImage.new( 0, 1, 4, -4, 0, 1, 4, -4 )
 	SpecialEventBanner.__Image = function ()
-		SpecialEventBanner:setImage( RegisterImage( CoD.BlackMarketUtility.GetCurrentBlackMarketBannerImage( 0x7615068F50B3D66 ) ) )
+		SpecialEventBanner:setImage( RegisterImage( CoD.BlackMarketUtility.GetCurrentBlackMarketBannerImage( "blacktransparent" ) ) )
 	end
 	
 	SpecialEventBanner.__Image()

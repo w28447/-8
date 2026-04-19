@@ -20,7 +20,7 @@ CoD.DirectorInfoPanelZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local CroppedZmBacking2 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 20, 0 )
 	CroppedZmBacking2:setAlpha( 0.5 )
-	CroppedZmBacking2:setImage( RegisterImage( 0xA8FC401C1972BDE ) )
+	CroppedZmBacking2:setImage( RegisterImage( "uie_ui_hud_zm_aar_reward_bg" ) )
 	CroppedZmBacking2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
 	CroppedZmBacking2:setShaderVector( 0, 0, 0, 0, 0 )
 	CroppedZmBacking2:setShaderVector( 1, 1, 1, 0, 0 )
@@ -53,7 +53,7 @@ CoD.DirectorInfoPanelZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local TiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 20, 0 )
 	TiledBacking:setAlpha( 0.2 )
-	TiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking:setupNineSliceShader( 196, 88 )
@@ -61,7 +61,7 @@ CoD.DirectorInfoPanelZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	self.TiledBacking = TiledBacking
 	
 	local CroppedZmBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 16, 0 )
-	CroppedZmBacking:setImage( RegisterImage( 0xA8FC401C1972BDE ) )
+	CroppedZmBacking:setImage( RegisterImage( "uie_ui_hud_zm_aar_reward_bg" ) )
 	CroppedZmBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
 	CroppedZmBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	CroppedZmBacking:setShaderVector( 1, 1, 1, 0, 0 )
@@ -149,7 +149,7 @@ CoD.DirectorInfoPanelZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local TiledBacking3 = LUI.UIImage.new( 0, 1, 10, -10, 1, 1, -225, -191 )
 	TiledBacking3:setAlpha( 0 )
-	TiledBacking3:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBacking3:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBacking3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledBacking3:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking3:setupNineSliceShader( 196, 88 )
@@ -158,7 +158,7 @@ CoD.DirectorInfoPanelZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local TiledBacking4 = LUI.UIImage.new( 0, 1, 10, -10, 1, 1, -365, -331 )
 	TiledBacking4:setAlpha( 0 )
-	TiledBacking4:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBacking4:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBacking4:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledBacking4:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking4:setupNineSliceShader( 196, 88 )
@@ -451,13 +451,13 @@ CoD.DirectorInfoPanelZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	self.BotBar = BotBar
 	
 	TopBar = LUI.UIImage.new( 0, 1, -10, 10, 0, 0, -9, 15 )
-	TopBar:setImage( RegisterImage( 0x45C555C45B1E6E4 ) )
+	TopBar:setImage( RegisterImage( "uie_ui_hud_zm_aar_top_bar" ) )
 	self:addElement( TopBar )
 	self.TopBar = TopBar
 	
 	YellowLine = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 15.5, 23.5 )
 	YellowLine:setImage( RegisterImage( 0xE6E505307F7B8D7 ) )
-	YellowLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	YellowLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	YellowLine:setShaderVector( 0, 0, 0, 0, 0 )
 	YellowLine:setupNineSliceShader( 3, 60 )
 	self:addElement( YellowLine )
@@ -471,7 +471,7 @@ CoD.DirectorInfoPanelZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local TiledBacking2 = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 190, 230 )
 	TiledBacking2:setAlpha( 0.5 )
-	TiledBacking2:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBacking2:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBacking2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledBacking2:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking2:setupNineSliceShader( 196, 88 )
@@ -501,7 +501,7 @@ CoD.DirectorInfoPanelZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	TabBottomLine:setAlpha( 0 )
 	TabBottomLine:setZRot( 90 )
 	TabBottomLine:setImage( RegisterImage( 0x5526CF3733E24C4 ) )
-	TabBottomLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	TabBottomLine:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TabBottomLine )
 	self.TabBottomLine = TabBottomLine
 	
@@ -509,7 +509,7 @@ CoD.DirectorInfoPanelZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	TabBottomLine2:setAlpha( 0 )
 	TabBottomLine2:setZRot( 90 )
 	TabBottomLine2:setImage( RegisterImage( 0x5526CF3733E24C4 ) )
-	TabBottomLine2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	TabBottomLine2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TabBottomLine2 )
 	self.TabBottomLine2 = TabBottomLine2
 	
@@ -517,7 +517,7 @@ CoD.DirectorInfoPanelZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	TabBottomLine3:setAlpha( 0 )
 	TabBottomLine3:setZRot( 90 )
 	TabBottomLine3:setImage( RegisterImage( 0x5526CF3733E24C4 ) )
-	TabBottomLine3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	TabBottomLine3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TabBottomLine3 )
 	self.TabBottomLine3 = TabBottomLine3
 	
@@ -525,7 +525,7 @@ CoD.DirectorInfoPanelZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	TabBottomLine4:setAlpha( 0 )
 	TabBottomLine4:setZRot( 90 )
 	TabBottomLine4:setImage( RegisterImage( 0x5526CF3733E24C4 ) )
-	TabBottomLine4:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	TabBottomLine4:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TabBottomLine4 )
 	self.TabBottomLine4 = TabBottomLine4
 	

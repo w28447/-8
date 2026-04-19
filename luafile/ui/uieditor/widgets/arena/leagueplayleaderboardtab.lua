@@ -52,7 +52,7 @@ CoD.LeaguePlayLeaderboardTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.TiledwhiteNoiseBacking = TiledwhiteNoiseBacking
 	
 	local BGDotPatternLarge2 = LUI.UIImage.new( 0, 0, 240, 1677, 0, 0, 214, 218 )
-	BGDotPatternLarge2:setImage( RegisterImage( 0xB20AD7A31239369 ) )
+	BGDotPatternLarge2:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline_tiled" ) )
 	BGDotPatternLarge2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	BGDotPatternLarge2:setShaderVector( 0, 0, 0, 0, 0 )
 	BGDotPatternLarge2:setupNineSliceShader( 32, 4 )
@@ -61,7 +61,7 @@ CoD.LeaguePlayLeaderboardTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local Line = LUI.UIImage.new( 0, 0, 1235.5, 1239.5, 0, 0, 299.5, 907.5 )
 	Line:setAlpha( 0.05 )
-	Line:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
+	Line:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
 	Line:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	Line:setShaderVector( 0, 0, 0, 0, 0 )
 	Line:setupNineSliceShader( 4, 8 )
@@ -78,8 +78,8 @@ CoD.LeaguePlayLeaderboardTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local BottomBracket9Slice = LUI.UIImage.new( 0, 0, 239, 1678, 0, 0, 954, 962 )
 	BottomBracket9Slice:setAlpha( 0.5 )
-	BottomBracket9Slice:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	BottomBracket9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	BottomBracket9Slice:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	BottomBracket9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BottomBracket9Slice:setShaderVector( 0, 0, 0, 0, 0 )
 	BottomBracket9Slice:setupNineSliceShader( 16, 4 )
 	self:addElement( BottomBracket9Slice )

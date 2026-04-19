@@ -1,0 +1,7 @@
+{
+    "name": "#lobbymenulist_offline",
+    "type": "lobbymenu",
+    "bundles": [
+        "#director_lan"
+    ]
+}

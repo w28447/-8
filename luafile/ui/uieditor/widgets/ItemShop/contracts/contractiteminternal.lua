@@ -49,7 +49,7 @@ CoD.ContractItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local LED2 = LUI.UIImage.new( 0, 1, 3, -1, 0, 1, 3, -1 )
 	LED2:setRGB( 0, 0, 0 )
-	LED2:setImage( RegisterImage( 0x4B6FFA90272070E ) )
+	LED2:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
 	LED2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	LED2:setShaderVector( 0, 0, 0, 0, 0 )
 	LED2:setupNineSliceShader( 24, 24 )

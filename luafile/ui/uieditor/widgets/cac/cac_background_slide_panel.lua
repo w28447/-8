@@ -72,14 +72,14 @@ CoD.cac_background_slide_panel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	TopBar:setAlpha( 0.2 )
 	TopBar:setZoom( 2 )
 	TopBar:setImage( RegisterImage( 0x42BCCF45B82FBED ) )
-	TopBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	TopBar:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TopBar )
 	self.TopBar = TopBar
 	
 	local TopBar2 = LUI.UIImage.new( -0.1, 1.1, 0, 0, 0, 0, 3, 6 )
 	TopBar2:setAlpha( 0.12 )
 	TopBar2:setImage( RegisterImage( 0x42BCCF45B82FBED ) )
-	TopBar2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	TopBar2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TopBar2 )
 	self.TopBar2 = TopBar2
 	

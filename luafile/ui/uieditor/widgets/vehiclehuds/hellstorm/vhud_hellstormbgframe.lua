@@ -57,7 +57,7 @@ CoD.vhud_HellstormBGFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	DecoTR:setAlpha( 0.1 )
 	DecoTR:setZRot( -90 )
 	DecoTR:setImage( RegisterImage( 0x41681EFACB93E18 ) )
-	DecoTR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DecoTR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DecoTR )
 	self.DecoTR = DecoTR
 	
@@ -65,7 +65,7 @@ CoD.vhud_HellstormBGFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	DecoBR:setAlpha( 0.1 )
 	DecoBR:setZRot( 90 )
 	DecoBR:setImage( RegisterImage( 0x41681EFACB93E18 ) )
-	DecoBR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DecoBR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DecoBR )
 	self.DecoBR = DecoBR
 	
@@ -73,7 +73,7 @@ CoD.vhud_HellstormBGFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	DecoBL:setAlpha( 0.1 )
 	DecoBL:setZRot( 90 )
 	DecoBL:setImage( RegisterImage( 0x41681EFACB93E18 ) )
-	DecoBL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DecoBL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DecoBL )
 	self.DecoBL = DecoBL
 	
@@ -81,7 +81,7 @@ CoD.vhud_HellstormBGFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	DecoTL:setAlpha( 0.1 )
 	DecoTL:setZRot( 90 )
 	DecoTL:setImage( RegisterImage( 0x41681EFACB93E18 ) )
-	DecoTL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DecoTL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DecoTL )
 	self.DecoTL = DecoTL
 	

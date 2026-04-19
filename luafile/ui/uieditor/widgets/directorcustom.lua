@@ -162,10 +162,10 @@ CoD.directorCustom.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 		end
 	end, function ( f18_arg0, f18_arg1, f18_arg2 )
 		if IsLobbyHostOfCurrentMenu() and not CoD.BaseUtility.IsSelfInState( self, "ZMOfflinePrivate" ) and not CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() and CoD.BaseUtility.IsSelfInState( self, "ZMOfflinePrivate" ) and not CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -348,10 +348,10 @@ CoD.directorCustom.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 		end
 	end, function ( f38_arg0, f38_arg1, f38_arg2 )
 		if IsWarzone() and not CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) and IsLobbyHostOfCurrentMenu() then
-			CoD.Menu.SetButtonLabel( f38_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f38_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif not CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) and IsLobbyHostOfCurrentMenu() then
-			CoD.Menu.SetButtonLabel( f38_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f38_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -499,8 +499,8 @@ CoD.directorCustom.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	end, false )
 	StartButton.DirectorCustomStartButton.MiddleText:setText( LocalizeToUpperString( 0x0 ) )
 	StartButton.DirectorCustomStartButton.MiddleTextFocus:setText( LocalizeToUpperString( 0x0 ) )
-	StartButton.PlayText:setText( LocalizeToUpperString( 0xDDDA371285672BD ) )
-	StartButton.PlayTextFocus:setText( LocalizeToUpperString( 0xDDDA371285672BD ) )
+	StartButton.PlayText:setText( LocalizeToUpperString( "menu/play" ) )
+	StartButton.PlayTextFocus:setText( LocalizeToUpperString( "menu/play" ) )
 	StartButton:appendEventHandler( "on_session_start", function ( f52_arg0, f52_arg1 )
 		f52_arg1.menu = f52_arg1.menu or f1_arg0
 		CoD.Menu.UpdateButtonShownState( f52_arg0, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
@@ -737,10 +737,10 @@ CoD.directorCustom.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 		end
 	end, function ( f77_arg0, f77_arg1, f77_arg2 )
 		if IsZombies() then
-			CoD.Menu.SetButtonLabel( f77_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f77_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif not IsZombies() then
-			CoD.Menu.SetButtonLabel( f77_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f77_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

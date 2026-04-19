@@ -49,7 +49,7 @@ CoD.GameSettings_Description.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local Dotline2 = LUI.UIImage.new( 0.5, 0.5, -337, 337, 0, 0, 46, 48 )
 	Dotline2:setImage( RegisterImage( 0xF9C7F41C631866E ) )
-	Dotline2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD8EA9FE9B0BCF75 ) )
+	Dotline2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	Dotline2:setShaderVector( 0, 1.2, 1, 0, 0 )
 	Dotline2:setShaderVector( 1, 0, 0, 0, 0 )
 	self:addElement( Dotline2 )

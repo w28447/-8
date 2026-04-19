@@ -59,7 +59,7 @@ CoD.AmmowidgetMP_HealCooldown.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	BackingFillAnim:setRGB( 0.13, 0.13, 0.13 )
 	BackingFillAnim:setAlpha( 0 )
 	BackingFillAnim:setZRot( 180 )
-	BackingFillAnim:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	BackingFillAnim:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	BackingFillAnim:setShaderVector( 0, 1, 0, 0, 0 )
 	BackingFillAnim:setShaderVector( 1, 0, 0, 0, 0 )
 	BackingFillAnim:setShaderVector( 3, 0.05, 0, 0, 0 )
@@ -157,7 +157,7 @@ CoD.AmmowidgetMP_HealCooldown.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local Line = LUI.UIImage.new( 0, 0, 4, 70, 0.35, 0.35, -2, 3 )
 	Line:setRGB( 0.89, 0.89, 0.89 )
 	Line:setAlpha( 0 )
-	Line:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE125638BF94665F ) )
+	Line:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	Line:setShaderVector( 0, 0.01, 0.41, 0.01, 0.41 )
 	Line:linkToElementModel( self, "powerRatio", true, function ( model )
 		local f12_local0 = model:get()
@@ -280,7 +280,7 @@ CoD.AmmowidgetMP_HealCooldown.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	FlareBack:setAlpha( 0 )
 	FlareBack:setScale( 1.16, 1.16 )
 	FlareBack:setImage( RegisterImage( 0x49442D6D518A75D ) )
-	FlareBack:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	FlareBack:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FlareBack )
 	self.FlareBack = FlareBack
 	

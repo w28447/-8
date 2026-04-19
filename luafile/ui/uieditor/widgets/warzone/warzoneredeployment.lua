@@ -29,7 +29,7 @@ CoD.WarzoneRedeployment.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local border = LUI.UIImage.new( 0.5, 0.5, -151.5, 151.5, 0.5, 0.5, -23, 23 )
 	border:setRGB( 0.07, 0.07, 0.07 )
 	border:setImage( RegisterImage( 0xA3C76B80B69874D ) )
-	border:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	border:setShaderVector( 0, 0, 0, 0, 0 )
 	border:setupNineSliceShader( 18, 24 )
 	self:addElement( border )

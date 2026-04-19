@@ -10,7 +10,7 @@ CoD.WeaponLevelUpNotification_FooterLabel01.new = function ( f1_arg0, f1_arg1, f
 	self.soundSet = "HUD"
 	
 	local WeaponLevelUpNotificationFooterBacking = CoD.WeaponLevelUpNotification_FooterBacking01.new( f1_arg0, f1_arg1, 0, 1, 0, 0, 0, 1, 0, 0 )
-	WeaponLevelUpNotificationFooterBacking:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	WeaponLevelUpNotificationFooterBacking:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( WeaponLevelUpNotificationFooterBacking )
 	self.WeaponLevelUpNotificationFooterBacking = WeaponLevelUpNotificationFooterBacking
 	

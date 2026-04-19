@@ -31,7 +31,7 @@ CoD.ReservesReroll.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local TiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TiledBacking:setAlpha( 0.25 )
-	TiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking:setupNineSliceShader( 196, 88 )
@@ -46,7 +46,7 @@ CoD.ReservesReroll.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local TiledBacking2 = LUI.UIImage.new( 0, 1, 14, -14, 0, 0, 162, 190 )
 	TiledBacking2:setAlpha( 0.5 )
-	TiledBacking2:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBacking2:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBacking2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledBacking2:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking2:setupNineSliceShader( 196, 88 )
@@ -290,7 +290,7 @@ CoD.ReservesReroll.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	self.ItemName = ItemName
 	
 	DotPatternTop = LUI.UIImage.new( 0, 1, 13, -13, 0, 0, 22, 26 )
-	DotPatternTop:setImage( RegisterImage( 0xB20AD7A31239369 ) )
+	DotPatternTop:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline_tiled" ) )
 	DotPatternTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DotPatternTop:setShaderVector( 0, 0, 0, 0, 0 )
 	DotPatternTop:setupNineSliceShader( 16, 4 )
@@ -298,7 +298,7 @@ CoD.ReservesReroll.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	self.DotPatternTop = DotPatternTop
 	
 	DotPatternBtm = LUI.UIImage.new( 0, 1, 13, -13, 0, 0, 148, 152 )
-	DotPatternBtm:setImage( RegisterImage( 0xB20AD7A31239369 ) )
+	DotPatternBtm:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline_tiled" ) )
 	DotPatternBtm:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DotPatternBtm:setShaderVector( 0, 0, 0, 0, 0 )
 	DotPatternBtm:setupNineSliceShader( 16, 4 )

@@ -146,7 +146,7 @@ CoD.SpecialistHeadquartersSpecialistInfo.new = function ( f1_arg0, f1_arg1, f1_a
 	
 	local DividerSolidBot2 = LUI.UIImage.new( 0, 0, 10, 478, 0, 0, 256.5, 264.5 )
 	DividerSolidBot2:setAlpha( 0.1 )
-	DividerSolidBot2:setImage( RegisterImage( 0x84B43D5B04D263A ) )
+	DividerSolidBot2:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_line" ) )
 	DividerSolidBot2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DividerSolidBot2:setShaderVector( 0, 0, 0, 0, 0 )
 	DividerSolidBot2:setupNineSliceShader( 16, 8 )
@@ -155,7 +155,7 @@ CoD.SpecialistHeadquartersSpecialistInfo.new = function ( f1_arg0, f1_arg1, f1_a
 	
 	local InfoDivider = LUI.UIImage.new( 0, 0, 243.5, 247.5, 0, 0, 313.5, 434.5 )
 	InfoDivider:setImage( RegisterImage( 0x6DDA4086EA0EF02 ) )
-	InfoDivider:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	InfoDivider:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( InfoDivider )
 	self.InfoDivider = InfoDivider
 	

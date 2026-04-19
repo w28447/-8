@@ -9,7 +9,7 @@ CoD.WZTeamPlayerInfoNumber.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local IDBacker = LUI.UIImage.new( 0.5, 0.5, -10, 10, 0.5, 0.5, -10, 10 )
-	IDBacker:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE125638BF94665F ) )
+	IDBacker:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	IDBacker:setShaderVector( 0, 0.05, 0.05, 0.05, 0.05 )
 	IDBacker.__Color = function ( f2_arg0 )
 		local f2_local0 = f2_arg0:get()

@@ -15,13 +15,13 @@ CoD.ZmRedTimer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	self.timerBG = timerBG
 	
 	local objBg = LUI.UIImage.new( 0.5, 0.5, -70.5, 70.5, 0, 0, 42.5, 111.5 )
-	objBg:setImage( RegisterImage( 0x75D661B612187DF ) )
+	objBg:setImage( RegisterImage( "uie_objbg" ) )
 	self:addElement( objBg )
 	self.objBg = objBg
 	
 	local TimerText2 = LUI.UIText.new( 0.5, 0.5, -105, 1295, 0, 0, 11.5, 32.5 )
 	TimerText2:setRGB( ColorSet.BadgeText.r, ColorSet.BadgeText.g, ColorSet.BadgeText.b )
-	TimerText2:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	TimerText2:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	TimerText2:setTTF( "skorzhen" )
 	TimerText2:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	TimerText2:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -29,12 +29,12 @@ CoD.ZmRedTimer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	TimerText2:setBackingColor( ColorSet.BadgeText.r, ColorSet.BadgeText.g, ColorSet.BadgeText.b )
 	TimerText2:setBackingXPadding( 7 )
 	TimerText2:setBackingYPadding( 7 )
-	TimerText2:setBackingImage( RegisterImage( 0x75D661B612187DF ) )
+	TimerText2:setBackingImage( RegisterImage( "uie_objbg" ) )
 	self:addElement( TimerText2 )
 	self.TimerText2 = TimerText2
 	
 	local TimerText = LUI.UIText.new( 0.5, 0.5, -105, 1295, 0, 0, 11.5, 32.5 )
-	TimerText:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	TimerText:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	TimerText:setTTF( "skorzhen" )
 	TimerText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	TimerText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

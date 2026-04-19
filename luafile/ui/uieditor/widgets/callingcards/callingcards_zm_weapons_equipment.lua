@@ -46,7 +46,7 @@ CoD[0x8ADB7D5ED7C6A8B].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local clouds = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	clouds:setAlpha( 0.1 )
 	clouds:setImage( RegisterImage( 0xF2D36DE8841AB88 ) )
-	clouds:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD8EA9FE9B0BCF75 ) )
+	clouds:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	clouds:setShaderVector( 0, 1, 1, 0, 0 )
 	clouds:setShaderVector( 1, 0.03, 0, 0, 0 )
 	self:addElement( clouds )
@@ -56,7 +56,7 @@ CoD[0x8ADB7D5ED7C6A8B].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	blastout:setZRot( -52 )
 	blastout:setScale( 1.7, 1 )
 	blastout:setImage( RegisterImage( 0x19C7EA49FDEE505 ) )
-	blastout:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD8EA9FE9B0BCF75 ) )
+	blastout:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	blastout:setShaderVector( 0, 1, 1, 0, 0 )
 	blastout:setShaderVector( 1, 0, 1, 0, 0 )
 	self:addElement( blastout )
@@ -101,7 +101,7 @@ CoD[0x8ADB7D5ED7C6A8B].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local glowShot = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	glowShot:setImage( RegisterImage( 0xB612AA4D0472154 ) )
-	glowShot:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	glowShot:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( glowShot )
 	self.glowShot = glowShot
 	
@@ -138,7 +138,7 @@ CoD[0x8ADB7D5ED7C6A8B].__resetProperties = function ( f2_arg0 )
 	f2_arg0.BOT5:setAlpha( 1 )
 	f2_arg0.BOT6:setAlpha( 1 )
 	f2_arg0.dust2:setAlpha( 1 )
-	f2_arg0.dust2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6B34AA3F39208EF ) )
+	f2_arg0.dust2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_normal" ) )
 	f2_arg0.glowShot:setAlpha( 1 )
 end
 
@@ -420,7 +420,7 @@ CoD[0x8ADB7D5ED7C6A8B].__clipsPerState = {
 			
 			f3_arg0.dust2:completeAnimation()
 			f3_arg0.dust2:setAlpha( 0 )
-			f3_arg0.dust2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+			f3_arg0.dust2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 			f3_local7( f3_arg0.dust2 )
 			local f3_local8 = function ( f48_arg0 )
 				local f48_local0 = function ( f49_arg0 )

@@ -12,7 +12,7 @@ CoD.EmblemGradientColorButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.5 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -21,7 +21,7 @@ CoD.EmblemGradientColorButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local NoiseTiledBackingAdd = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBackingAdd:setAlpha( 0 )
-	NoiseTiledBackingAdd:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBackingAdd:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBackingAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	NoiseTiledBackingAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBackingAdd:setupNineSliceShader( 196, 88 )
@@ -35,16 +35,16 @@ CoD.EmblemGradientColorButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.Black = Black
 	
 	local FrontendFrameSelected = LUI.UIImage.new( -0.5, 0.5, 184, 196, -0.5, 0.5, 18, 30 )
-	FrontendFrameSelected:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FrontendFrameSelected:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrameSelected:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FrontendFrameSelected:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrameSelected:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrameSelected:setupNineSliceShader( 14, 14 )
 	self:addElement( FrontendFrameSelected )
 	self.FrontendFrameSelected = FrontendFrameSelected
 	
 	local Frame = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
-	Frame:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	Frame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	Frame:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	Frame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Frame:setShaderVector( 0, 0, 0, 0, 0 )
 	Frame:setupNineSliceShader( 8, 8 )
 	self:addElement( Frame )
@@ -52,8 +52,8 @@ CoD.EmblemGradientColorButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local FrameAdd = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	FrameAdd:setAlpha( 0 )
-	FrameAdd:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrameAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrameAdd:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrameAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrameAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	FrameAdd:setupNineSliceShader( 4, 4 )
 	self:addElement( FrameAdd )

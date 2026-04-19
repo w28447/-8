@@ -25,32 +25,32 @@ CoD.CallingCards_GoldFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local Glow = LUI.UIImage.new( 0, 0, 396, 382, 0, 0, -307, 314 )
 	Glow:setRGB( 1, 0.79, 0.35 )
 	Glow:setZRot( 90 )
-	Glow:setImage( RegisterImage( 0x5BE416E17DAB33B ) )
-	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Glow:setImage( RegisterImage( "uie_t7_core_hud_mapwidget_panelglow" ) )
+	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
 	
 	local GlowSmallCorner = LUI.UIImage.new( 0, 0, 18.5, -4.5, 0, 0, 161, 185 )
 	GlowSmallCorner:setRGB( 1, 0.79, 0.35 )
 	GlowSmallCorner:setZRot( 90 )
-	GlowSmallCorner:setImage( RegisterImage( 0x5BE416E17DAB33B ) )
-	GlowSmallCorner:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	GlowSmallCorner:setImage( RegisterImage( "uie_t7_core_hud_mapwidget_panelglow" ) )
+	GlowSmallCorner:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowSmallCorner )
 	self.GlowSmallCorner = GlowSmallCorner
 	
 	local GlowSmallCorner2 = LUI.UIImage.new( 0, 0, 725.5, 702.5, 0, 0, -5, 19 )
 	GlowSmallCorner2:setRGB( 1, 0.79, 0.35 )
 	GlowSmallCorner2:setZRot( 90 )
-	GlowSmallCorner2:setImage( RegisterImage( 0x5BE416E17DAB33B ) )
-	GlowSmallCorner2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	GlowSmallCorner2:setImage( RegisterImage( "uie_t7_core_hud_mapwidget_panelglow" ) )
+	GlowSmallCorner2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowSmallCorner2 )
 	self.GlowSmallCorner2 = GlowSmallCorner2
 	
 	local GlowSmallCenter3 = LUI.UIImage.new( 0, 0, 493.5, 470.5, 0, 0, -9, 15 )
 	GlowSmallCenter3:setRGB( 1, 0.79, 0.35 )
 	GlowSmallCenter3:setZRot( 90 )
-	GlowSmallCenter3:setImage( RegisterImage( 0x5BE416E17DAB33B ) )
-	GlowSmallCenter3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	GlowSmallCenter3:setImage( RegisterImage( "uie_t7_core_hud_mapwidget_panelglow" ) )
+	GlowSmallCenter3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowSmallCenter3 )
 	self.GlowSmallCenter3 = GlowSmallCenter3
 	
@@ -59,8 +59,8 @@ CoD.CallingCards_GoldFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	GlowSmallCorner4:setAlpha( 0 )
 	GlowSmallCorner4:setZRot( 90 )
 	GlowSmallCorner4:setScale( 0.2, 0.2 )
-	GlowSmallCorner4:setImage( RegisterImage( 0x5BE416E17DAB33B ) )
-	GlowSmallCorner4:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	GlowSmallCorner4:setImage( RegisterImage( "uie_t7_core_hud_mapwidget_panelglow" ) )
+	GlowSmallCorner4:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowSmallCorner4 )
 	self.GlowSmallCorner4 = GlowSmallCorner4
 	
@@ -69,8 +69,8 @@ CoD.CallingCards_GoldFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	GlowSmallCorner5:setAlpha( 0 )
 	GlowSmallCorner5:setZRot( 90 )
 	GlowSmallCorner5:setScale( 0.5, 0.5 )
-	GlowSmallCorner5:setImage( RegisterImage( 0x5BE416E17DAB33B ) )
-	GlowSmallCorner5:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	GlowSmallCorner5:setImage( RegisterImage( "uie_t7_core_hud_mapwidget_panelglow" ) )
+	GlowSmallCorner5:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowSmallCorner5 )
 	self.GlowSmallCorner5 = GlowSmallCorner5
 	

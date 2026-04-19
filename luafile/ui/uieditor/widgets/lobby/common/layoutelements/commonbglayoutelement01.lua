@@ -10,7 +10,7 @@ CoD.CommonBgLayoutElement01.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local DotGridBg = LUI.UIImage.new( 0, 0, 0, 144, 0, 0, 0, 36 )
 	DotGridBg:setImage( RegisterImage( 0xC529D202F311DB5 ) )
-	DotGridBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DotGridBg:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotGridBg )
 	self.DotGridBg = DotGridBg
 	

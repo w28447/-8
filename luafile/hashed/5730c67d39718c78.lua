@@ -15,7 +15,7 @@ CoD.PC_Store_Refund_Korea_Product_Image.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local BGProductImage = LUI.UIImage.new( 0.5, 0.5, -99.5, 99.5, 0.5, 0.5, -100, 99 )
 	BGProductImage:setAlpha( 0.8 )
-	BGProductImage:setImage( RegisterImage( 0x33757173B476ACD ) )
+	BGProductImage:setImage( RegisterImage( "uie_ui_zm_laboratory_buttonbgtile" ) )
 	BGProductImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	BGProductImage:setShaderVector( 0, 0, 0, 0, 0 )
 	BGProductImage:setupNineSliceShader( 100, 100 )
@@ -33,8 +33,8 @@ CoD.PC_Store_Refund_Korea_Product_Image.new = function ( f1_arg0, f1_arg1, f1_ar
 	self.ProductImage = ProductImage
 	
 	local BorderImage = LUI.UIImage.new( 0.5, 0.5, -101, 101, 0.5, 0.5, -101, 101 )
-	BorderImage:setImage( RegisterImage( 0xAED94B38E8B3347 ) )
-	BorderImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	BorderImage:setImage( RegisterImage( "uie_ui_zm_laboratory_buttonframe" ) )
+	BorderImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BorderImage:setShaderVector( 0, 0, 0, 0, 0 )
 	BorderImage:setupNineSliceShader( 10, 10 )
 	self:addElement( BorderImage )
@@ -53,7 +53,7 @@ CoD.PC_Store_Refund_Korea_Product_Image.new = function ( f1_arg0, f1_arg1, f1_ar
 	local TiledShaderImage2 = LUI.UIImage.new( 0.5, 0.5, -251, 250, 0.5, 0.5, 31.5, 90.5 )
 	TiledShaderImage2:setRGB( ColorSet.PlayerYellow.r, ColorSet.PlayerYellow.g, ColorSet.PlayerYellow.b )
 	TiledShaderImage2:setAlpha( 0.3 )
-	TiledShaderImage2:setImage( RegisterImage( 0x4B6FFA90272070E ) )
+	TiledShaderImage2:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
 	TiledShaderImage2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledShaderImage2:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledShaderImage2:setupNineSliceShader( 24, 24 )
@@ -101,8 +101,8 @@ CoD.PC_Store_Refund_Korea_Product_Image.new = function ( f1_arg0, f1_arg1, f1_ar
 	local FrontendFrameSelected = LUI.UIImage.new( 0.5, 0.5, -184, 184, 0.5, 0.5, -94, -18 )
 	FrontendFrameSelected:setRGB( 0.42, 0.69, 0.94 )
 	FrontendFrameSelected:setAlpha( 0.4 )
-	FrontendFrameSelected:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FrontendFrameSelected:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrameSelected:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FrontendFrameSelected:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrameSelected:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrameSelected:setupNineSliceShader( 12, 12 )
 	self:addElement( FrontendFrameSelected )
@@ -124,7 +124,7 @@ CoD.PC_Store_Refund_Korea_Product_Image.new = function ( f1_arg0, f1_arg1, f1_ar
 		{
 			stateName = "Empty",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "productImage", 0x7615068F50B3D66 )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "productImage", "blacktransparent" )
 			end
 		}
 	} )

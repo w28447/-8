@@ -21,7 +21,7 @@ CoD.BetaRewardWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local BackgroundImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BackgroundImage:setAlpha( 0.85 )
-	BackgroundImage:setImage( RegisterImage( 0x4BF88A437F4C579 ) )
+	BackgroundImage:setImage( RegisterImage( "uie_fe_cp_background" ) )
 	self:addElement( BackgroundImage )
 	self.BackgroundImage = BackgroundImage
 	
@@ -63,7 +63,7 @@ CoD.BetaRewardWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local featureOverlayButtonMouseOnly = nil
 	
 	featureOverlayButtonMouseOnly = CoD.featureOverlay_Button_MouseOnly.new( f1_arg0, f1_arg1, 0.5, 0.5, 417.5, 577.5, 0.5, 0.5, 267, 327 )
-	featureOverlayButtonMouseOnly.featureOverlayButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( 0x6393FF34EA56966 ) )
+	featureOverlayButtonMouseOnly.featureOverlayButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/continue" ) )
 	featureOverlayButtonMouseOnly:registerEventHandler( "gain_focus", function ( element, event )
 		local f2_local0 = nil
 		if element.gainFocus then
@@ -89,7 +89,7 @@ CoD.BetaRewardWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	BoundaryBot2:setAlpha( 0.15 )
 	BoundaryBot2:setZRot( -90 )
 	BoundaryBot2:setImage( RegisterImage( 0x614FFDE5DDC2DFB ) )
-	BoundaryBot2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	BoundaryBot2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BoundaryBot2:setShaderVector( 0, 0, 0, 0, 0 )
 	BoundaryBot2:setupNineSliceShader( 66, 8 )
 	self:addElement( BoundaryBot2 )
@@ -99,7 +99,7 @@ CoD.BetaRewardWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	BoundaryBot:setAlpha( 0.15 )
 	BoundaryBot:setZRot( 90 )
 	BoundaryBot:setImage( RegisterImage( 0x614FFDE5DDC2DFB ) )
-	BoundaryBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	BoundaryBot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BoundaryBot:setShaderVector( 0, 0, 0, 0, 0 )
 	BoundaryBot:setupNineSliceShader( 66, 8 )
 	self:addElement( BoundaryBot )

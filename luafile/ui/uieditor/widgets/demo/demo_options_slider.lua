@@ -30,7 +30,7 @@ CoD.demo_options_slider.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local BoxButtonLrgIdle = LUI.UIImage.new( 0, 0, 16, 354, 0, 0, 5, 47 )
 	BoxButtonLrgIdle:setAlpha( 0.25 )
 	BoxButtonLrgIdle:setImage( RegisterImage( 0x535D18C44834110 ) )
-	BoxButtonLrgIdle:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	BoxButtonLrgIdle:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BoxButtonLrgIdle:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BoxButtonLrgIdle )
 	self.BoxButtonLrgIdle = BoxButtonLrgIdle
@@ -38,7 +38,7 @@ CoD.demo_options_slider.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local BoxButtonLrgIdle0 = LUI.UIImage.new( 0, 0, 361, 792, 0, 0, 5, 47 )
 	BoxButtonLrgIdle0:setAlpha( 0.25 )
 	BoxButtonLrgIdle0:setImage( RegisterImage( 0x535D18C44834110 ) )
-	BoxButtonLrgIdle0:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	BoxButtonLrgIdle0:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BoxButtonLrgIdle0:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BoxButtonLrgIdle0 )
 	self.BoxButtonLrgIdle0 = BoxButtonLrgIdle0
@@ -100,7 +100,7 @@ CoD.demo_options_slider.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	glitch:setRGB( 1, 0.09, 0 )
 	glitch:setAlpha( 0 )
 	glitch:setImage( RegisterImage( 0xCE95AC38BD2BD41 ) )
-	glitch:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	glitch:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( glitch )
 	self.glitch = glitch
 	
@@ -108,7 +108,7 @@ CoD.demo_options_slider.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	glitch2:setRGB( 1, 0.15, 0 )
 	glitch2:setAlpha( 0 )
 	glitch2:setImage( RegisterImage( 0xCE95AC38BD2BD41 ) )
-	glitch2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	glitch2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( glitch2 )
 	self.glitch2 = glitch2
 	

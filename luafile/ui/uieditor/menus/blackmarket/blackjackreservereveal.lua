@@ -31,7 +31,7 @@ LUI.createMenu.BlackjackReserveReveal = function ( f1_arg0, f1_arg1 )
 	
 	local BackgroundImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BackgroundImage:setAlpha( 0.85 )
-	BackgroundImage:setImage( RegisterImage( 0x4BF88A437F4C579 ) )
+	BackgroundImage:setImage( RegisterImage( "uie_fe_cp_background" ) )
 	self:addElement( BackgroundImage )
 	self.BackgroundImage = BackgroundImage
 	
@@ -42,7 +42,7 @@ LUI.createMenu.BlackjackReserveReveal = function ( f1_arg0, f1_arg1 )
 	
 	local NoiseTiledBackingRight = LUI.UIImage.new( 0.5, 0.5, -565.5, 565.5, 0.5, 0.5, -342, 342 )
 	NoiseTiledBackingRight:setAlpha( 0.4 )
-	NoiseTiledBackingRight:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBackingRight:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBackingRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBackingRight:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBackingRight:setupNineSliceShader( 196, 88 )
@@ -51,7 +51,7 @@ LUI.createMenu.BlackjackReserveReveal = function ( f1_arg0, f1_arg1 )
 	
 	local DottedLineBtm = LUI.UIImage.new( 0.5, 0.5, -566, 566, 0.5, 0.5, 354, 358 )
 	DottedLineBtm:setAlpha( 0.35 )
-	DottedLineBtm:setImage( RegisterImage( 0xB20AD7A31239369 ) )
+	DottedLineBtm:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline_tiled" ) )
 	DottedLineBtm:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DottedLineBtm:setShaderVector( 0, 0, 0, 0, 0 )
 	DottedLineBtm:setupNineSliceShader( 16, 4 )
@@ -60,7 +60,7 @@ LUI.createMenu.BlackjackReserveReveal = function ( f1_arg0, f1_arg1 )
 	
 	local DottedLineTop = LUI.UIImage.new( 0.5, 0.5, -566, 566, 0.5, 0.5, -359, -355 )
 	DottedLineTop:setAlpha( 0.35 )
-	DottedLineTop:setImage( RegisterImage( 0xB20AD7A31239369 ) )
+	DottedLineTop:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline_tiled" ) )
 	DottedLineTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DottedLineTop:setShaderVector( 0, 0, 0, 0, 0 )
 	DottedLineTop:setupNineSliceShader( 16, 4 )
@@ -209,7 +209,7 @@ LUI.createMenu.BlackjackReserveReveal = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f18_arg0, f18_arg1, f18_arg2 )
 		if CoD.ModelUtility.IsModelValueTrue( f18_arg2, "reservesRevealComplete" ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 			return true
 		else
 			return false

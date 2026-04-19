@@ -11,7 +11,7 @@ CoD.WarzoneInventoryPickupNotification.new = function ( f1_arg0, f1_arg1, f1_arg
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local PickedUpText = LUI.UIText.new( 0.5, 1.5, -455, -455, 1, 2, -37, -37 )
-	PickedUpText:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	PickedUpText:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	PickedUpText:setTTF( "ttmussels_regular" )
 	PickedUpText:setLetterSpacing( 1 )
 	PickedUpText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

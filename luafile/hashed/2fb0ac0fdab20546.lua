@@ -143,7 +143,7 @@ LUI.createMenu.ChooseSpecialistMidMatch = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f13_arg0, f13_arg1, f13_arg2 )
 		if IsInDefaultState( f13_arg0 ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -166,8 +166,8 @@ LUI.createMenu.ChooseSpecialistMidMatch = function ( f1_arg0, f1_arg1 )
 	
 	ChangeClassButton = CoD.DirectorGenericButton.new( f1_local1, f1_arg0, 0.5, 0.5, -125, 125, 1, 1, -356, -264 )
 	ChangeClassButton:setScale( 0.8, 0.8 )
-	ChangeClassButton.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( 0x83E3BA6F8C2DB04 ) )
-	ChangeClassButton.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( 0x83E3BA6F8C2DB04 ) )
+	ChangeClassButton.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( "mpui/change_class" ) )
+	ChangeClassButton.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( "mpui/change_class" ) )
 	ChangeClassButton:registerEventHandler( "gain_focus", function ( element, event )
 		local f14_local0 = nil
 		if element.gainFocus then

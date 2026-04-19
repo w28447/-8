@@ -25,7 +25,7 @@ CoD.CommonRightSlideInPopup.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local RightTiledBacking = LUI.UIImage.new( 1, 1, -550, 248, 0, 1, 0, 0 )
 	RightTiledBacking:setAlpha( 0.25 )
-	RightTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	RightTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	RightTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	RightTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	RightTiledBacking:setupNineSliceShader( 196, 88 )

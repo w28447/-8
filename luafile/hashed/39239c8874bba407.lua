@@ -21,7 +21,7 @@ CoD.SpecialistHeadquartersDossierProgress.new = function ( f1_arg0, f1_arg1, f1_
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 0, 0, 800, 0, 0, 0, 200 )
 	NoiseTiledBacking:setAlpha( 0.5 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -135,7 +135,7 @@ CoD.SpecialistHeadquartersDossierProgress.new = function ( f1_arg0, f1_arg1, f1_
 	
 	local DividerSolidBot = LUI.UIImage.new( 0, 0, 12, 790, 0, 0, 35, 43 )
 	DividerSolidBot:setAlpha( 0.2 )
-	DividerSolidBot:setImage( RegisterImage( 0x84B43D5B04D263A ) )
+	DividerSolidBot:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_line" ) )
 	DividerSolidBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DividerSolidBot:setShaderVector( 0, 0, 0, 0, 0 )
 	DividerSolidBot:setupNineSliceShader( 16, 8 )

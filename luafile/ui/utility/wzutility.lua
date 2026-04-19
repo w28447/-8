@@ -7,10 +7,10 @@ CoD.WZUtility.TeamPlayerColor = {
 	"WarzoneTeammate5"
 }
 CoD.WZUtility.PlayerStatusIcon = {
-	[Enum[0x4A07561A78E340B][0x8D80055B4F13E0F]] = 0x7615068F50B3D66,
+	[Enum[0x4A07561A78E340B][0x8D80055B4F13E0F]] = "blacktransparent",
 	[Enum[0x4A07561A78E340B][0x58F9A363F8FBB07]] = 0x35F4FDCB7FE3CC8,
-	[Enum[0x4A07561A78E340B][0x59E50BB255808BF]] = 0x7615068F50B3D66,
-	[Enum[0x4A07561A78E340B][0x751743BBF671EDC]] = 0x7615068F50B3D66,
+	[Enum[0x4A07561A78E340B][0x59E50BB255808BF]] = "blacktransparent",
+	[Enum[0x4A07561A78E340B][0x751743BBF671EDC]] = "blacktransparent",
 	[Enum[0x4A07561A78E340B][0x9BD8FECA6158847]] = 0x1128C83B5AB30A2,
 	[Enum[0x4A07561A78E340B][0xC233F1FA9F35C02]] = 0xF6C08F962CB71E4
 }
@@ -956,7 +956,7 @@ CoD.WZUtility.GetArmorFlipbookIconForArmorTier = function ( f84_arg0 )
 			end
 		end
 	end
-	return CoD.WZUtility.ArmorTierToFlipbookImage[f84_local0] or 0x7615068F50B3D66
+	return CoD.WZUtility.ArmorTierToFlipbookImage[f84_local0] or "blacktransparent"
 end
 
 CoD.WZUtility.GetArmorShardPips = function ( f85_arg0, f85_arg1, f85_arg2, f85_arg3 )
@@ -1223,7 +1223,7 @@ DataSources.WZAmmoPool = {
 			f113_local3 = f113_local2:create( "stackCount" )
 			f113_local3:set( 0 )
 			f113_local3 = f113_local2:create( "icon" )
-			f113_local3:set( 0x7615068F50B3D66 )
+			f113_local3:set( "blacktransparent" )
 		end
 		if (CoD.SafeGetModelValue( f113_local1, "count" ) or 0) > 0 then
 			local f113_local2 = Engine[0xDABA94B203D6A38]( f113_arg0 )
@@ -1451,7 +1451,7 @@ CoD.WZUtility.CreateCharacterCategoryDataSource = function ( f130_arg0, f130_arg
 					else
 						f131_local13 = false
 					end
-					local f131_local14 = 0x2C79EA24AB1A2BA
+					local f131_local14 = "null/empty"
 					if f131_local30[0xD48E06E94FE4AFA] ~= 1 then
 						if not Engine[0x1641CC988E0FD5F]( f131_local2, f131_local29 ) and f131_local30[0x661FF2D93C3A98A] then
 							f131_local14 = f131_local30[0x661FF2D93C3A98A]
@@ -1507,7 +1507,7 @@ CoD.WZUtility.CreateCharacterCategoryDataSource = function ( f130_arg0, f130_arg
 										f131_local13 = false
 										f131_local15 = false
 										f131_local11 = false
-										f131_local14 = 0x2C79EA24AB1A2BA
+										f131_local14 = "null/empty"
 									else
 										f131_local17 = true
 									end
@@ -1580,7 +1580,7 @@ CoD.WZUtility.CreateCharacterCategoryDataSource = function ( f130_arg0, f130_arg
 									f131_local13 = false
 									f131_local15 = false
 									f131_local11 = false
-									f131_local14 = 0x2C79EA24AB1A2BA
+									f131_local14 = "null/empty"
 								else
 									f131_local17 = true
 								end
@@ -1653,7 +1653,7 @@ CoD.WZUtility.CreateCharacterCategoryDataSource = function ( f130_arg0, f130_arg
 							f131_local13 = false
 							f131_local15 = false
 							f131_local11 = false
-							f131_local14 = 0x2C79EA24AB1A2BA
+							f131_local14 = "null/empty"
 						else
 							f131_local17 = true
 						end
@@ -1840,7 +1840,7 @@ DataSourceHelpers.PerControllerDataSourceSetup( "WZDefaultCharacterInfo", "WZDef
 			f134_local10 = f134_arg0:create( "isDefaultCharacter" )
 			f134_local10:set( true )
 			f134_local10 = f134_arg0:create( "availabilityText" )
-			f134_local10:set( 0x2C79EA24AB1A2BA )
+			f134_local10:set( "null/empty" )
 			f134_local10 = f134_arg0:create( "isEchelonUnlock" )
 			f134_local10:set( false )
 			f134_local10 = f134_arg0:create( "hasCustomization" )
@@ -1849,7 +1849,7 @@ DataSourceHelpers.PerControllerDataSourceSetup( "WZDefaultCharacterInfo", "WZDef
 			f134_local10:set( f134_local5[CoD.BreadcrumbUtility.CharacterBreadcrumbModelPrefixTable[f134_local1] .. f134_local6] )
 		end
 	end
-	f134_local12 = 0x7615068F50B3D66
+	f134_local12 = "blacktransparent"
 end, false )
 DataSourceHelpers.GlobalDataSourceSetup( "WarzoneGlobal", "hudItems.warzone", function ( f135_arg0 )
 	f135_arg0:create( "collapseTimerState" )
@@ -2334,12 +2334,12 @@ CoD.WZUtility.GetUnlockMissionString = function ( f161_arg0 )
 	local f161_local0 = Engine.CurrentSessionMode()
 	local f161_local1 = CoD.CACUtility.GetUnlockableItemInfo( Engine[0x8FF94BB44442412]( f161_arg0, f161_local0 ), f161_local0 )
 	if not f161_local1 then
-		return 0x2C79EA24AB1A2BA
+		return "null/empty"
 	elseif f161_local1.itemGroup == "hero" then
 		if f161_local1[0xC190A0450674B42] == 1 and IsBooleanDvarSet( 0xA5FD7D94CFC9DFD ) then
 			return 0x1CEFA3478BFC48F
 		else
-			return 0xA1B2CAFC0534BF5
+			return "wz/character_mission"
 		end
 	else
 		return 0x40CC7EC370B2641
@@ -3124,7 +3124,7 @@ CoD.WZUtility.ShouldShowWeaponAndAttachments = function ( f243_arg0 )
 	if not f243_local0 then
 		return false
 	else
-		return CoD.CACUtility.GetPreviewImageLarge( Enum.eModes[0xBF1DCC8138A9D39], CoD.CACUtility.GetUnlockableItemInfo( f243_local0, Enum.eModes[0xBF1DCC8138A9D39] ) ) ~= RegisterImage( 0x7615068F50B3D66 )
+		return CoD.CACUtility.GetPreviewImageLarge( Enum.eModes[0xBF1DCC8138A9D39], CoD.CACUtility.GetUnlockableItemInfo( f243_local0, Enum.eModes[0xBF1DCC8138A9D39] ) ) ~= RegisterImage( "blacktransparent" )
 	end
 end
 

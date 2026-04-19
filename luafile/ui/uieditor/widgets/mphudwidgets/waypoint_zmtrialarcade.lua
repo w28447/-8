@@ -283,7 +283,7 @@ CoD.Waypoint_ZmTrialArcade.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	LED:setAlpha( 0.18 )
 	LED:setScale( 0.94, 0.94 )
 	LED:setImage( RegisterImage( 0x832BA507D0E7663 ) )
-	LED:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	LED:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	LED:setShaderVector( 0, 0, 1, 0, 0 )
 	LED:setShaderVector( 1, 0, 0, 0, 0 )
 	LED:setShaderVector( 2, 0.24, 0.67, 0, 0 )
@@ -297,7 +297,7 @@ CoD.Waypoint_ZmTrialArcade.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	LED2:setAlpha( 0.18 )
 	LED2:setScale( 0.94, 0.94 )
 	LED2:setImage( RegisterImage( 0x832BA507D0E7663 ) )
-	LED2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	LED2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	LED2:setShaderVector( 0, 0, 1, 0, 0 )
 	LED2:setShaderVector( 1, 0, 0, 0, 0 )
 	LED2:setShaderVector( 2, 0.24, 0.67, 0, 0 )
@@ -311,7 +311,7 @@ CoD.Waypoint_ZmTrialArcade.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	LED3:setAlpha( 0.18 )
 	LED3:setScale( 0.94, 0.94 )
 	LED3:setImage( RegisterImage( 0x832BA507D0E7663 ) )
-	LED3:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	LED3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	LED3:setShaderVector( 0, 0.63, 1, 0, 0 )
 	LED3:setShaderVector( 1, 0, 0, 0, 0 )
 	LED3:setShaderVector( 2, 0.24, 0.67, 0, 0 )
@@ -323,14 +323,14 @@ CoD.Waypoint_ZmTrialArcade.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local Cap = LUI.UIImage.new( 0, 0, -125.5, -106.5, 0, 0, 155, 165 )
 	Cap:setZRot( 90 )
 	Cap:setImage( RegisterImage( 0xF3E81C52AE39D91 ) )
-	Cap:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Cap:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Cap )
 	self.Cap = Cap
 	
 	local Cap2 = LUI.UIImage.new( 0, 0, 225.5, 244.5, 0, 0, 155, 165 )
 	Cap2:setZRot( 90 )
 	Cap2:setImage( RegisterImage( 0xF3E81C52AE39D91 ) )
-	Cap2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Cap2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Cap2 )
 	self.Cap2 = Cap2
 	

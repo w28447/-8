@@ -35,7 +35,7 @@ CoD.AARRewardHeader_ZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.mainTitle = mainTitle
 	
 	local BgZmStar = LUI.UIImage.new( 0, 0, 150, 262, 0, 0, 91, 203 )
-	BgZmStar:setImage( RegisterImage( 0x37B9CCC18877DAA ) )
+	BgZmStar:setImage( RegisterImage( "uie_ui_hud_zm_arr_reward_star" ) )
 	BgZmStar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	BgZmStar:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( BgZmStar )
@@ -48,7 +48,7 @@ CoD.AARRewardHeader_ZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.TitleBacker = TitleBacker
 	
 	local BgZmStarZdepth = LUI.UIImage.new( 0, 0, 150, 262, 0, 0, 91, 203 )
-	BgZmStarZdepth:setImage( RegisterImage( 0x37B9CCC18877DAA ) )
+	BgZmStarZdepth:setImage( RegisterImage( "uie_ui_hud_zm_arr_reward_star" ) )
 	BgZmStarZdepth:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	BgZmStarZdepth:setShaderVector( 0, 0.71, 0, 0, 0 )
 	self:addElement( BgZmStarZdepth )
@@ -56,7 +56,7 @@ CoD.AARRewardHeader_ZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local TiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0.51, 0.8, 20, 0 )
 	TiledBacking:setAlpha( 0.5 )
-	TiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking:setupNineSliceShader( 196, 88 )

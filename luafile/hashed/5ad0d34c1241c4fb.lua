@@ -23,8 +23,8 @@ CoD.Prestige_RewardWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local focusInnerGlow = LUI.UIImage.new( 0, 0, -9, 137, 0, 0, -9, 163 )
 	focusInnerGlow:setAlpha( 0 )
-	focusInnerGlow:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	focusInnerGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	focusInnerGlow:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	focusInnerGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	focusInnerGlow:setShaderVector( 0, 0, 0, 0, 0 )
 	focusInnerGlow:setupNineSliceShader( 28, 28 )
 	self:addElement( focusInnerGlow )
@@ -78,8 +78,8 @@ CoD.Prestige_RewardWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local FrontendFrameSelected = LUI.UIImage.new( 0, 0, -1.5, 129.5, 0, 0, -1.5, 155.5 )
 	FrontendFrameSelected:setAlpha( 0 )
-	FrontendFrameSelected:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FrontendFrameSelected:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrameSelected:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FrontendFrameSelected:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrameSelected:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrameSelected:setupNineSliceShader( 4, 4 )
 	self:addElement( FrontendFrameSelected )
@@ -190,7 +190,7 @@ CoD.Prestige_RewardWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 		end
 	end, function ( f18_arg0, f18_arg1, f18_arg2 )
 		if IsUnlockTokenButtonAvailable( f18_arg2 ) and CoD.ModelUtility.IsSelfModelValueGreaterThanOrEqualTo( f18_arg0, f18_arg2, "itemIndex", 0 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f18_arg0, f18_arg2, "useWideLayout" ) and not CoD.ModelUtility.IsSelfModelValueTrue( f18_arg0, f18_arg2, "isPermanentlyUnlocked" ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

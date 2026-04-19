@@ -21,7 +21,7 @@ CoD.Social_PartySettingsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.95 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -42,8 +42,8 @@ CoD.Social_PartySettingsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg
 	local FrontendFrameSelected = LUI.UIImage.new( 0, 1, -4, 4, 0, 1, -4, 4 )
 	FrontendFrameSelected:setRGB( 0.8, 0.7, 0.09 )
 	FrontendFrameSelected:setAlpha( 0 )
-	FrontendFrameSelected:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FrontendFrameSelected:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrameSelected:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FrontendFrameSelected:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrameSelected:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrameSelected:setupNineSliceShader( 10, 10 )
 	self:addElement( FrontendFrameSelected )
@@ -70,7 +70,7 @@ CoD.Social_PartySettingsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg
 	self.FocusHighlight = FocusHighlight
 	
 	local DotTiledBacking = CoD.CommonPixelBacking.new( f1_arg0, f1_arg1, 0, 1, 4, -4, 0, 1, 4, -4 )
-	DotTiledBacking:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	DotTiledBacking:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	DotTiledBacking.NoiseBacking:setAlpha( 1 )
 	DotTiledBacking.TiledShaderImage:setRGB( 0.22, 0.22, 0.22 )
 	DotTiledBacking.TiledShaderImage:setAlpha( 0.15 )
@@ -80,8 +80,8 @@ CoD.Social_PartySettingsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local FrameBorder = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	FrameBorder:setAlpha( 0.1 )
-	FrameBorder:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrameBorder:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrameBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FrameBorder:setupNineSliceShader( 12, 12 )
 	self:addElement( FrameBorder )
@@ -192,7 +192,7 @@ CoD.Social_PartySettingsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg
 	local lockImage = LUI.UIImage.new( 1, 1, -42, 8, 0.5, 0.5, -25, 25 )
 	lockImage:setAlpha( 0 )
 	lockImage:setScale( 0.6, 0.6 )
-	lockImage:setImage( RegisterImage( 0xE1E7C490B2BA4FB ) )
+	lockImage:setImage( RegisterImage( "uie_ui_icon_global_lock" ) )
 	self:addElement( lockImage )
 	self.lockImage = lockImage
 	
@@ -204,8 +204,8 @@ CoD.Social_PartySettingsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg
 	local FocusBorder = LUI.UIImage.new( 0, 1, -4, 4, 0, 1, -4, 4 )
 	FocusBorder:setRGB( 0.96, 0.94, 0.78 )
 	FocusBorder:setAlpha( 0 )
-	FocusBorder:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FocusBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FocusBorder:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FocusBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FocusBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FocusBorder:setupNineSliceShader( 10, 10 )
 	self:addElement( FocusBorder )

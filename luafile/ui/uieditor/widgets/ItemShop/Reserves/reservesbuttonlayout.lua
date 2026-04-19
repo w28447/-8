@@ -128,10 +128,10 @@ CoD.ReservesButtonLayout.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		end
 	end, function ( f12_arg0, f12_arg1, f12_arg2 )
 		if CoD.ModelUtility.IsControllerModelValueTrue( f12_arg2, "LootStreamProgress.allRngUnlocked" ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x85952ACC6D0C1B0, nil, nil )
+			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/purchase", nil, nil )
 			return true
 		elseif not CoD.ModelUtility.IsSelfModelValueTrue( f12_arg0, f12_arg2, "purchased" ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x85952ACC6D0C1B0, nil, nil )
+			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/purchase", nil, nil )
 			return true
 		else
 			return false

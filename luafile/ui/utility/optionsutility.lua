@@ -86,17 +86,17 @@ end
 
 CoD.OptionsUtility.PlayerOptionsTabsInfo = {
 	[CoD.OptionsUtility.PlayerOptionsTabIndex.OPTION_TAB_CONTROLS] = {
-		name = 0x19352A5A4C9CAC9,
+		name = "menu/controls",
 		widget = "CoD.StartMenu_Options_Frame_Controls"
 	},
 	[CoD.OptionsUtility.PlayerOptionsTabIndex.OPTION_TAB_GRAPHICS] = {
-		name = 0xE2B4B3485831A1A,
+		name = "menu/graphics",
 		widget = "CoD.StartMenu_Options_Frame_Graphics",
 		condition = ShouldOpenGraphicsAndSoundOptions,
 		conditionResult = true
 	},
 	[CoD.OptionsUtility.PlayerOptionsTabIndex.OPTION_TAB_AUDIO] = {
-		name = 0xB8F71718019166B,
+		name = "menu/audio",
 		widget = "CoD.StartMenu_Options_Frame_Sound",
 		condition = ShouldOpenGraphicsAndSoundOptions,
 		conditionResult = true
@@ -108,19 +108,19 @@ CoD.OptionsUtility.PlayerOptionsTabsInfo = {
 		conditionResult = true
 	},
 	[CoD.OptionsUtility.PlayerOptionsTabIndex.OPTION_TAB_NETWORK] = {
-		name = 0x9F9A830F04564A7,
+		name = "menu/network",
 		widget = "CoD.StartMenu_Options_Frame_Network",
 		condition = CoD.OptionsUtility.DisabledForOfflineDemoExceptWZTrial,
 		conditionResult = false
 	},
 	[CoD.OptionsUtility.PlayerOptionsTabIndex.OPTION_TAB_VOICE] = {
-		name = 0xB87589E683A1951,
+		name = "menu/muting",
 		widget = "CoD.StartMenu_Options_Frame_Voice",
 		condition = CoD.OptionsUtility.DisabledForOfflineDemoExceptWZTrial,
 		conditionResult = false
 	},
 	[CoD.OptionsUtility.PlayerOptionsTabIndex.OPTION_TAB_CONTENT_FILTER] = {
-		name = 0xD52DB291DBBD257,
+		name = "menu/content_filter",
 		widget = "CoD.StartMenu_Options_Frame_GraphicContent",
 		condition = CoD.OptionsUtility.DisabledForCurrentMilestoneExceptWZTrial,
 		conditionResult = false
@@ -155,7 +155,7 @@ CoD.OptionsUtility.GetGameSettingsInfoFromTable = function ( f7_arg0 )
 		local f7_local0 = {
 			name = f7_arg0[0x55F116BF695C8F6],
 			setting = f7_arg0[0x14C73E954E9760B],
-			image = f7_arg0[0x245C555A23CB4AE] or 0x7615068F50B3D66,
+			image = f7_arg0[0x245C555A23CB4AE] or "blacktransparent",
 			useLongSlider = f7_arg0[0xDD5060AA2F3FF5F] == 1,
 			addUnlimitedButton = f7_arg0[0xD268F562204A4FB] == 1
 		}
@@ -376,7 +376,7 @@ CoD.OptionsUtility.PlayerSettings.AudioSettings = {
 }
 CoD.OptionsUtility.PlayerSettings.ContentSettings = {
 	{
-		groupName = 0xD52DB291DBBD257,
+		groupName = "menu/content_filter",
 		options = {
 			"graphic_content",
 			"zombie_cartoon",
@@ -386,7 +386,7 @@ CoD.OptionsUtility.PlayerSettings.ContentSettings = {
 }
 CoD.OptionsUtility.PlayerSettings.FirstTimeContentSettings = {
 	{
-		groupName = 0xD52DB291DBBD257,
+		groupName = "menu/content_filter",
 		options = {
 			"graphic_content"
 		}
@@ -955,7 +955,7 @@ CoD.OptionsUtility.PlayerSettingsNetworkListPrepare = function ( f40_arg0 )
 	local f40_local0 = {}
 	table.insert( f40_local0, {
 		models = {
-			name = Engine[0xF9F1239CFD921FE]( 0x9F9A830F04564A7 )
+			name = Engine[0xF9F1239CFD921FE]( "menu/network" )
 		},
 		properties = {
 			customWidgetOverride = CoD.StartMenu_Options_SettingGroupHeader
@@ -1591,7 +1591,7 @@ CoD.OptionsUtility.PrepareRosterOptions = function ( f78_arg0, f78_arg1 )
 					properties = {
 						title = 0x0,
 						desc = 0x0,
-						image = 0x7615068F50B3D66,
+						image = "blacktransparent",
 						value = f81_local1,
 						selectIndex = f81_local1 == f79_local0,
 						loopEdges = true,
@@ -2031,7 +2031,7 @@ CoD.OptionsUtility.CustomGameOptions.WeaponRestrictionOptionCategories = {
 CoD.OptionsUtility.CustomGameOptions.AttachmentRestrictionOptionCategories = {
 	{
 		ref = "attachments",
-		groupName = 0x31E6136F9B444FB,
+		groupName = "menu/attachments",
 		datasourceNameHeader = "attach",
 		datasourceFunc = CoD.OptionsUtility.PrepareAttachmentRestrictionGameOptions,
 		isDefaultCondition = AlwaysTrue,
@@ -2899,11 +2899,11 @@ CoD.OverlayUtility.AddAutoDetectOverlay( "SaveCustomGameOptions", {
 		
 		local f134_local2 = {}
 		table.insert( f134_local2, {
-			text = 0xDFD294FC69F682,
+			text = "menu/yes",
 			action = f134_local0
 		} )
 		table.insert( f134_local2, {
-			text = 0x5C16E02B211A4F4,
+			text = "menu/no",
 			action = f134_local1,
 			isCancelOption = true
 		} )
@@ -4297,7 +4297,7 @@ end
 CoD.OptionsUtility.ClearInfoModels = function ()
 	local f235_local0 = 0x0
 	local f235_local1 = 0x0
-	local f235_local2 = 0x7615068F50B3D66
+	local f235_local2 = "blacktransparent"
 	local f235_local3 = Engine.CreateModel( Engine.GetGlobalModel(), "GametypeSettings" )
 	Engine.SetModelValue( Engine.CreateModel( f235_local3, "title" ), f235_local0 )
 	Engine.SetModelValue( Engine.CreateModel( f235_local3, "description" ), f235_local1 )

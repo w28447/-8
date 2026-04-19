@@ -60,7 +60,7 @@ CoD.AARChallengeItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local LockImage = LUI.UIFixedAspectRatioImage.new( 0, 0, 164, 214, 0, 0, 35.5, 85.5 )
 	LockImage:setAlpha( 0 )
-	LockImage:setImage( RegisterImage( 0xB8AD8D12CEB707D ) )
+	LockImage:setImage( RegisterImage( "uie_icon_locks_lock_01" ) )
 	self:addElement( LockImage )
 	self.LockImage = LockImage
 	

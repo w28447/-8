@@ -50,10 +50,10 @@ CoD.EquippedBGBContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		end
 	end, function ( f7_arg0, f7_arg1, f7_arg2 )
 		if not IsCurrentMenu( f7_arg1, "BubblegumBuffSelect" ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToSelfModelValue( f7_arg0, f7_arg2, "BGBLoadout", "selectedIndex", "slotIndex" ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -105,10 +105,10 @@ CoD.EquippedBGBContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		end
 	end, function ( f14_arg0, f14_arg1, f14_arg2 )
 		if not IsCurrentMenu( f14_arg1, "BubblegumBuffSelect" ) then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToSelfModelValue( f14_arg0, f14_arg2, "BGBLoadout", "selectedIndex", "slotIndex" ) then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -160,10 +160,10 @@ CoD.EquippedBGBContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		end
 	end, function ( f21_arg0, f21_arg1, f21_arg2 )
 		if not IsCurrentMenu( f21_arg1, "BubblegumBuffSelect" ) then
-			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToSelfModelValue( f21_arg0, f21_arg2, "BGBLoadout", "selectedIndex", "slotIndex" ) then
-			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -215,10 +215,10 @@ CoD.EquippedBGBContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		end
 	end, function ( f28_arg0, f28_arg1, f28_arg2 )
 		if not IsCurrentMenu( f28_arg1, "BubblegumBuffSelect" ) then
-			CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToSelfModelValue( f28_arg0, f28_arg2, "BGBLoadout", "selectedIndex", "slotIndex" ) then
-			CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

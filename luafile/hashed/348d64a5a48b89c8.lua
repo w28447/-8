@@ -11,7 +11,7 @@ CoD.WZTeamScoreboard_FooterStatBox.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local BarBot = LUI.UIImage.new( 0.5, 0.5, -78, 82, 0, 0, 79.5, 89.5 )
 	BarBot:setAlpha( 0.5 )
 	BarBot:setImage( RegisterImage( 0xC6873B923C6686C ) )
-	BarBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	BarBot:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BarBot )
 	self.BarBot = BarBot
 	
@@ -26,7 +26,7 @@ CoD.WZTeamScoreboard_FooterStatBox.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local Tint2 = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 26, 82 )
 	Tint2:setAlpha( 0.2 )
-	Tint2:setImage( RegisterImage( 0x4B6FFA90272070E ) )
+	Tint2:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
 	Tint2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	Tint2:setShaderVector( 0, 0, 0, 0, 0 )
 	Tint2:setupNineSliceShader( 24, 24 )

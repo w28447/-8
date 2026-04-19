@@ -45,7 +45,7 @@ CoD.GameEndScore_HeaderBarMid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local BGDotPatternLarge = LUI.UIImage.new( 0, 1, 0, 0, 0.5, 0.5, -24, 24 )
 	BGDotPatternLarge:setRGB( 0, 0, 0 )
 	BGDotPatternLarge:setAlpha( 0 )
-	BGDotPatternLarge:setImage( RegisterImage( 0xFC21A8215EA012B ) )
+	BGDotPatternLarge:setImage( RegisterImage( "uie_ui_menu_common_button_bg_pattern_large" ) )
 	BGDotPatternLarge:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	BGDotPatternLarge:setShaderVector( 0, 0, 0, 0, 0 )
 	BGDotPatternLarge:setupNineSliceShader( 4, 4 )

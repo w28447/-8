@@ -30,7 +30,7 @@ CoD.DirectorLobbyMemberInternalCard.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local FocusGlow = LUI.UIImage.new( -0, 0.83, -50, 50, 0, 1, -34, 34 )
 	FocusGlow:setAlpha( 0 )
-	FocusGlow:setImage( RegisterImage( 0xB8F10D49D85E9C4 ) )
+	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_small" ) )
 	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.24, 0.25 )
 	FocusGlow:setShaderVector( 1, 1, 0, 0, 0 )
@@ -39,7 +39,7 @@ CoD.DirectorLobbyMemberInternalCard.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	self.FocusGlow = FocusGlow
 	
 	local BackingBorder = LUI.UIImage.new( 0, 0, 0, 326, 0, 0, 0, 68 )
-	BackingBorder:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	BackingBorder:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	BackingBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	BackingBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingBorder:setupNineSliceShader( 196, 88 )
@@ -47,7 +47,7 @@ CoD.DirectorLobbyMemberInternalCard.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	self.BackingBorder = BackingBorder
 	
 	local BackingBorder2 = LUI.UIImage.new( 0, 0, 0, 326, 0, 0, 0, 68 )
-	BackingBorder2:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	BackingBorder2:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	BackingBorder2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	BackingBorder2:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingBorder2:setupNineSliceShader( 196, 88 )
@@ -153,8 +153,8 @@ CoD.DirectorLobbyMemberInternalCard.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local FocusBorder = LUI.UIImage.new( 0, 0, -2, 328, 0, 1, -2, 2 )
 	FocusBorder:setRGB( 0.96, 0.94, 0.78 )
 	FocusBorder:setAlpha( 0 )
-	FocusBorder:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FocusBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FocusBorder:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FocusBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FocusBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FocusBorder:setupNineSliceShader( 5, 5 )
 	self:addElement( FocusBorder )
@@ -162,8 +162,8 @@ CoD.DirectorLobbyMemberInternalCard.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local FrontendFrame = LUI.UIImage.new( 0, 0, -1, 327, 0, 0, -1, 69 )
 	FrontendFrame:setAlpha( 0.2 )
-	FrontendFrame:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrontendFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrame:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrontendFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrame:setupNineSliceShader( 12, 12 )
 	self:addElement( FrontendFrame )
@@ -171,7 +171,7 @@ CoD.DirectorLobbyMemberInternalCard.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local FocusGlowSquare = LUI.UIImage.new( -0, 0.53, -34, 66, 0.26, 0.74, -50, 50 )
 	FocusGlowSquare:setAlpha( 0 )
-	FocusGlowSquare:setImage( RegisterImage( 0xB8F10D49D85E9C4 ) )
+	FocusGlowSquare:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_small" ) )
 	FocusGlowSquare:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	FocusGlowSquare:setShaderVector( 0, 0, 0, 0.24, 0.25 )
 	FocusGlowSquare:setShaderVector( 1, 1, 0, 0, 0 )

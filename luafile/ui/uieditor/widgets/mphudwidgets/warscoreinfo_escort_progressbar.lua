@@ -21,7 +21,7 @@ CoD.WarScoreInfo_Escort_ProgressBar.new = function ( f3_arg0, f3_arg1, f3_arg2, 
 	local ProgressBarBacking = LUI.UIImage.new( 0, 0, 0, 340, 0, 0, 4, 12 )
 	ProgressBarBacking:setRGB( 0, 0, 0 )
 	ProgressBarBacking:setAlpha( 0.5 )
-	ProgressBarBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	ProgressBarBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	ProgressBarBacking:setShaderVector( 0, 1, 0, 0, 0 )
 	ProgressBarBacking:setShaderVector( 1, 0, 0, 0, 0 )
 	ProgressBarBacking:setShaderVector( 2, 1, 0, 0, 0 )
@@ -31,7 +31,7 @@ CoD.WarScoreInfo_Escort_ProgressBar.new = function ( f3_arg0, f3_arg1, f3_arg2, 
 	self.ProgressBarBacking = ProgressBarBacking
 	
 	local ProgressBar = LUI.UIImage.new( 0, 0, 0, 340, 0, 0, 6, 10 )
-	ProgressBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	ProgressBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	ProgressBar:setShaderVector( 1, 0, 0, 0, 0 )
 	ProgressBar:setShaderVector( 2, 1, 0, 0, 0 )
 	ProgressBar:setShaderVector( 3, 0, 0, 0, 0 )

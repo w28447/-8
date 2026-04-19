@@ -48,7 +48,7 @@ CoD.StartMenu_Options_PC_AudioOptions_SubOptionsNavigation.new = function ( f1_a
 		} )
 	end )
 	PCStartMenuOptionsDescription:setAlpha( 0 )
-	PCStartMenuOptionsDescription.DescriptionTextBox.OptionName:setText( LocalizeToUpperString( 0x93E719493E9E18F ) )
+	PCStartMenuOptionsDescription.DescriptionTextBox.OptionName:setText( LocalizeToUpperString( "menu/new" ) )
 	self:addElement( PCStartMenuOptionsDescription )
 	self.PCStartMenuOptionsDescription = PCStartMenuOptionsDescription
 	

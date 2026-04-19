@@ -202,7 +202,7 @@ CoD.vhud_hellstorm_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local CenterMeter = CoD.vhud_HellstormCenterMeter.new( f1_arg0, f1_arg1, 0.5, 0.5, -412, 412, 0.5, 0.5, -412, 412 )
 	CenterMeter:setScale( 2, 2 )
-	CenterMeter:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	CenterMeter:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	CenterMeter:linkToElementModel( self, "yaw", true, function ( model )
 		local f11_local0 = model:get()
 		if f11_local0 ~= nil then

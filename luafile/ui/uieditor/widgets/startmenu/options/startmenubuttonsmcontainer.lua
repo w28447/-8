@@ -22,7 +22,7 @@ CoD.StartMenuButtonSmContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.5 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
 	self:addElement( NoiseTiledBacking )
 	self.NoiseTiledBacking = NoiseTiledBacking
@@ -44,7 +44,7 @@ CoD.StartMenuButtonSmContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local ButtonText = LUI.UIText.new( 0, 0, 7, 493, 0.08, 0.08, -7.5, 17.5 )
 	ButtonText:setRGB( 0.78, 0.74, 0.67 )
-	ButtonText:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	ButtonText:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	ButtonText:setTTF( "ttmussels_regular" )
 	ButtonText:setLetterSpacing( 1 )
 	ButtonText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

@@ -30,7 +30,7 @@ CoD.ButtonFrame_MeritRecord.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 			end
 		}
 	} )
-	RankInfo.LevelText:setText( LocalizeToUpperString( 0x3547050A22D0BD0 ) )
+	RankInfo.LevelText:setText( LocalizeToUpperString( "warzone/echelon" ) )
 	RankInfo:subscribeToGlobalModel( f1_arg1, "PrestigeMenuInfo", "hasPrestiged", function ( model )
 		local f4_local0 = model:get()
 		if f4_local0 ~= nil then
@@ -184,8 +184,8 @@ CoD.ButtonFrame_MeritRecord.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local BracketTop = LUI.UIImage.new( 0.5, 0.5, -316, 316, 0, 0, 207.5, 215.5 )
 	BracketTop:setRGB( ColorSet.T8__OFF__GRAY.r, ColorSet.T8__OFF__GRAY.g, ColorSet.T8__OFF__GRAY.b )
 	BracketTop:setZRot( 180 )
-	BracketTop:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	BracketTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	BracketTop:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	BracketTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BracketTop:setShaderVector( 0, 0, 0, 0, 0 )
 	BracketTop:setupNineSliceShader( 16, 4 )
 	self:addElement( BracketTop )

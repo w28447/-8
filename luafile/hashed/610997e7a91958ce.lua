@@ -52,7 +52,7 @@ CoD.WZJumpKitSelectorInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local BgImage01 = LUI.UIImage.new( 0.5, 0.5, -37, 503, 0, 0, 216, 756 )
 	BgImage01:setAlpha( 0.5 )
-	BgImage01:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	BgImage01:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	BgImage01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	BgImage01:setShaderVector( 0, 0, 0, 0, 0 )
 	BgImage01:setupNineSliceShader( 196, 88 )
@@ -65,8 +65,8 @@ CoD.WZJumpKitSelectorInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local FrontendFrame02 = LUI.UIImage.new( 0.5, 0.5, -37, 505, 0, 0, 216, 756 )
 	FrontendFrame02:setAlpha( 0.4 )
-	FrontendFrame02:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrontendFrame02:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrontendFrame02:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrontendFrame02:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFrame02:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFrame02:setupNineSliceShader( 12, 12 )
 	self:addElement( FrontendFrame02 )

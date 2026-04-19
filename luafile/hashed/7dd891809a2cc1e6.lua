@@ -10,7 +10,7 @@ CoD.WZBleedoutBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	local Border = LUI.UIImage.new( 0, 0, 0, 127, 0, 0, 1, 13 )
 	Border:setRGB( 0, 0, 0 )
 	Border:setAlpha( 0.8 )
-	Border:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE125638BF94665F ) )
+	Border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	Border:setShaderVector( 0, 0.01, 0.04, 0.01, 0.04 )
 	self:addElement( Border )
 	self.Border = Border

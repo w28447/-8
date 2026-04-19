@@ -21,7 +21,7 @@ CoD.CustomizePrestigeIconUtility.EnumToTitleOfOriginString = function ( f2_arg0 
 			return f2_local1
 		end
 	end
-	f2_local1 = Engine[0xF9F1239CFD921FE]( 0x2C79EA24AB1A2BA )
+	f2_local1 = Engine[0xF9F1239CFD921FE]( "null/empty" )
 end
 
 CoD.CustomizePrestigeIconUtility.IsIconUnlockedByWins = function ( f3_arg0, f3_arg1 )

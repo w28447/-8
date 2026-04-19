@@ -40,19 +40,19 @@ CoD[0x90EBA40764624FE].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local particles1 = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 12, 276 )
 	particles1:setImage( RegisterImage( 0x906C5BC40962EF5 ) )
-	particles1:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	particles1:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( particles1 )
 	self.particles1 = particles1
 	
 	local particles2 = LUI.UIImage.new( 0, 0, 452, 932, 0, 0, 4, 148 )
 	particles2:setImage( RegisterImage( 0x906C2BC409629DC ) )
-	particles2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	particles2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( particles2 )
 	self.particles2 = particles2
 	
 	local particles3 = LUI.UIImage.new( 0, 0, -18, 878, 0, 0, -16, 240 )
 	particles3:setImage( RegisterImage( 0x906C3BC40962B8F ) )
-	particles3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	particles3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( particles3 )
 	self.particles3 = particles3
 	
@@ -60,7 +60,7 @@ CoD[0x90EBA40764624FE].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	glow:setAlpha( 0.6 )
 	glow:setZRot( -14 )
 	glow:setImage( RegisterImage( 0x49F2EE5CDB7AB7A ) )
-	glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( glow )
 	self.glow = glow
 	

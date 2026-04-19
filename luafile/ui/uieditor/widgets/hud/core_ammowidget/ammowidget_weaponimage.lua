@@ -39,7 +39,7 @@ CoD.AmmoWidget_WeaponImage.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	GlowWeapon:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	GlowWeapon:setAlpha( 0.12 )
 	GlowWeapon:setImage( RegisterImage( 0xCC888FA4B192112 ) )
-	GlowWeapon:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	GlowWeapon:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowWeapon )
 	self.GlowWeapon = GlowWeapon
 	
@@ -58,7 +58,7 @@ CoD.AmmoWidget_WeaponImage.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local WeaponImage2 = LUI.UIFixedAspectRatioImage.new( 0, 0, -122, -18, 0, 0, -15, 41 )
 	WeaponImage2:setAlpha( 0.12 )
-	WeaponImage2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	WeaponImage2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	WeaponImage2:setStretchedDimension( 3 )
 	WeaponImage2:linkToElementModel( self, "weapon", true, function ( model )
 		local f5_local0 = model:get()

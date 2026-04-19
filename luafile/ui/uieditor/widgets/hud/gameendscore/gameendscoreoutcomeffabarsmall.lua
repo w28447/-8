@@ -25,7 +25,7 @@ CoD.GameEndScoreOutcomeFFABarSmall.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.8 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -59,14 +59,14 @@ CoD.GameEndScoreOutcomeFFABarSmall.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local GlowTexture = LUI.UIImage.new( 0, 0, 6, 106, 0, 0, 10.5, 110.5 )
 	GlowTexture:setAlpha( 0.1 )
 	GlowTexture:setImage( RegisterImage( 0xC58FF2328701EBA ) )
-	GlowTexture:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	GlowTexture:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowTexture )
 	self.GlowTexture = GlowTexture
 	
 	local Glow = LUI.UIImage.new( 0, 0, 1, 111, 0, 0, 5.5, 115.5 )
 	Glow:setAlpha( 0.6 )
 	Glow:setImage( RegisterImage( 0xFAA6C81834660D3 ) )
-	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
 	
@@ -102,20 +102,20 @@ CoD.GameEndScoreOutcomeFFABarSmall.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local GlowSphere = LUI.UIImage.new( 0, 0, 21, 92, 0, 0, 5.5, 115.5 )
 	GlowSphere:setAlpha( 0.95 )
 	GlowSphere:setImage( RegisterImage( 0x299DDAEBACCEECD ) )
-	GlowSphere:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	GlowSphere:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowSphere )
 	self.GlowSphere = GlowSphere
 	
 	local GlowRing = LUI.UIImage.new( 0, 0, 9, 103, 0, 0, 13, 107 )
 	GlowRing:setAlpha( 0.15 )
 	GlowRing:setImage( RegisterImage( 0x7A63CD655CD7572 ) )
-	GlowRing:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	GlowRing:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowRing )
 	self.GlowRing = GlowRing
 	
 	local PlaceText = LUI.UIText.new( 0, 0, 22, 90, 0.5, 0.5, -33, 35 )
 	PlaceText:setRGB( ColorSet.T8_FactionTier_Completed.r, ColorSet.T8_FactionTier_Completed.g, ColorSet.T8_FactionTier_Completed.b )
-	PlaceText:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	PlaceText:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	PlaceText:setTTF( "0arame_mono_stencil" )
 	PlaceText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	PlaceText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -124,7 +124,7 @@ CoD.GameEndScoreOutcomeFFABarSmall.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local BGDotPatternLarge = LUI.UIImage.new( 0, 0, 21, 91, 0, 0, 25, 95 )
 	BGDotPatternLarge:setAlpha( 0.8 )
-	BGDotPatternLarge:setImage( RegisterImage( 0xFC21A8215EA012B ) )
+	BGDotPatternLarge:setImage( RegisterImage( "uie_ui_menu_common_button_bg_pattern_large" ) )
 	BGDotPatternLarge:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	BGDotPatternLarge:setShaderVector( 0, 0, 0, 0, 0 )
 	BGDotPatternLarge:setupNineSliceShader( 4, 4 )
@@ -147,7 +147,7 @@ CoD.GameEndScoreOutcomeFFABarSmall.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local TiledShaderImage1 = LUI.UIImage.new( 0.2, 0.2, -163.5, -57.5, 0.02, 0.02, 0, 115 )
 	TiledShaderImage1:setAlpha( 0.5 )
-	TiledShaderImage1:setImage( RegisterImage( 0x4B6FFA90272070E ) )
+	TiledShaderImage1:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
 	TiledShaderImage1:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledShaderImage1:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledShaderImage1:setupNineSliceShader( 24, 24 )
@@ -156,7 +156,7 @@ CoD.GameEndScoreOutcomeFFABarSmall.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local TiledShaderImage2 = LUI.UIImage.new( 0.2, 0.2, -55, 514, 0.02, 0.02, 0, 115 )
 	TiledShaderImage2:setAlpha( 0.5 )
-	TiledShaderImage2:setImage( RegisterImage( 0x4B6FFA90272070E ) )
+	TiledShaderImage2:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
 	TiledShaderImage2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledShaderImage2:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledShaderImage2:setupNineSliceShader( 24, 24 )
@@ -165,7 +165,7 @@ CoD.GameEndScoreOutcomeFFABarSmall.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local TiledShaderImage3 = LUI.UIImage.new( 0.2, 0.2, 516.5, 656.5, 0.02, 0.02, 0, 115 )
 	TiledShaderImage3:setAlpha( 0.5 )
-	TiledShaderImage3:setImage( RegisterImage( 0x4B6FFA90272070E ) )
+	TiledShaderImage3:setImage( RegisterImage( "uie_ui_menu_store_repeat_dot_pattern" ) )
 	TiledShaderImage3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledShaderImage3:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledShaderImage3:setupNineSliceShader( 24, 24 )

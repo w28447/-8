@@ -52,7 +52,7 @@ LUI.createMenu.DirectorPersonalizeCharacterMP = function ( f1_arg0, f1_arg1 )
 		GoBack( self, f4_arg2 )
 		return true
 	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, "ESCAPE" )
+		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 		return true
 	end, false )
 	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x29E5695FF1401AD], "ui_contextual_2", function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )

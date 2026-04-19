@@ -18,7 +18,7 @@ CoD.WheelTriangleIndicator.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	PointerImageAdd:setAlpha( 0 )
 	PointerImageAdd:setZRot( -90 )
 	PointerImageAdd:setImage( RegisterImage( 0xE08357911B44221 ) )
-	PointerImageAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	PointerImageAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PointerImageAdd )
 	self.PointerImageAdd = PointerImageAdd
 	

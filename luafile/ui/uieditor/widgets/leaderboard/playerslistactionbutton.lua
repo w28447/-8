@@ -13,7 +13,7 @@ CoD.PlayersListActionButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local ActionButton = CoD.CommonListButtonShort_Internal.new( f1_arg0, f1_arg1, 0, 1, 0, 0, 0, 1, 0, 0 )
-	ActionButton.Title:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	ActionButton.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	self:addElement( ActionButton )
 	self.ActionButton = ActionButton
 	
@@ -30,7 +30,7 @@ end
 CoD.PlayersListActionButton.__resetProperties = function ( f2_arg0 )
 	f2_arg0.ActionButton:completeAnimation()
 	f2_arg0.ActionButton:setScale( 1, 1 )
-	f2_arg0.ActionButton.Title:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	f2_arg0.ActionButton.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 end
 
 CoD.PlayersListActionButton.__clipsPerState = {

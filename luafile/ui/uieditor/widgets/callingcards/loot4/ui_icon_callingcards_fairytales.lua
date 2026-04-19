@@ -37,14 +37,14 @@ CoD[0x6DF244A87F06B10].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local largesmoke = LUI.UIImage.new( 0, 0, -211.5, 548.5, 0, 0, -86, 298 )
 	largesmoke:setImage( RegisterImage( 0x657CCC3058DCB02 ) )
-	largesmoke:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	largesmoke:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( largesmoke )
 	self.largesmoke = largesmoke
 	
 	local largesmoke2 = LUI.UIImage.new( 0, 0, 580, 1340, 0, 0, -86, 298 )
 	largesmoke2:setAlpha( 0 )
 	largesmoke2:setImage( RegisterImage( 0x657CCC3058DCB02 ) )
-	largesmoke2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	largesmoke2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( largesmoke2 )
 	self.largesmoke2 = largesmoke2
 	

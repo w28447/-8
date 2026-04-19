@@ -76,7 +76,7 @@ localizeentry,#hash_2f4ed19aadb4783
 localizeentry,#hash_325487552278997
 localizeentry,#hash_32f4cfb2df058b4
 localizeentry,d#zmui/fmj_desc
-localizeentry,d#hash_3563fad2acf2d91
+localizeentry,d#menu/paused
 localizeentry,#hash_3638d29a521e5f7
 localizeentry,d#hash_375ac490696f74c
 localizeentry,d#hash_38a2cf22c48d6c3
@@ -2438,7 +2438,7 @@ localizeentry,#hash_53955fda2e707f94
 localizeentry,#hash_539560da2e708147
 localizeentry,#hash_539561da2e7082fa
 localizeentry,#hash_53c692cad67c639c
-localizeentry,d#hash_5400a284adf5eac0
+localizeentry,d#zmtrials/trial_completed
 localizeentry,#hash_542d9f1f5c0eb557
 localizeentry,d#mpui/speedreloader_desc
 localizeentry,#hash_5440bf458877a7e2
@@ -3267,7 +3267,7 @@ localizeentry,#hash_70d81dee460d03db
 localizeentry,#hash_70d820ee460d08f4
 localizeentry,#hash_70d822ee460d0c5a
 localizeentry,#hash_70d823ee460d0e0d
-localizeentry,d#hash_70dfd294fc69f682
+localizeentry,d#menu/yes
 localizeentry,#hash_70f939f2dc6a0b30
 localizeentry,#hash_70f93ef2dc6a13af
 localizeentry,#hash_70f93ff2dc6a1562

@@ -78,7 +78,7 @@ LUI.createMenu.SteamWorkshopPublish = function ( f1_arg0, f1_arg1 )
 		FileshareEnterPublishName( self, f8_arg0, f8_arg2 )
 		return true
 	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( InputName )
@@ -112,7 +112,7 @@ LUI.createMenu.SteamWorkshopPublish = function ( f1_arg0, f1_arg1 )
 		FileshareEnterPublishDescription( self, f12_arg0, f12_arg2 )
 		return true
 	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( InputDescription )
@@ -140,7 +140,7 @@ LUI.createMenu.SteamWorkshopPublish = function ( f1_arg0, f1_arg1 )
 		FileshareEnterPublishTags( self, f15_arg0, f15_arg2 )
 		return true
 	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( InputTags )
@@ -211,7 +211,7 @@ LUI.createMenu.SteamWorkshopPublish = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f23_arg0, f23_arg1, f23_arg2 )
 		if FileshareIsReady( f23_arg2 ) and FileshareIsSteamAgreed() then
-			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -237,7 +237,7 @@ LUI.createMenu.SteamWorkshopPublish = function ( f1_arg0, f1_arg1 )
 		SteamWorkshopOpenAgreement( self, f25_arg0, f25_arg2 )
 		return true
 	end, function ( f26_arg0, f26_arg1, f26_arg2 )
-		CoD.Menu.SetButtonLabel( f26_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f26_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( BtnAgreement )
@@ -260,7 +260,7 @@ LUI.createMenu.SteamWorkshopPublish = function ( f1_arg0, f1_arg1 )
 		SteamWorkshopOpenFAQ( self, f28_arg0, f28_arg2 )
 		return true
 	end, function ( f29_arg0, f29_arg1, f29_arg2 )
-		CoD.Menu.SetButtonLabel( f29_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f29_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( BtnFAQ )
@@ -283,7 +283,7 @@ LUI.createMenu.SteamWorkshopPublish = function ( f1_arg0, f1_arg1 )
 		SteamWorkshopViewWorkshop( self, f31_arg0, f31_arg2 )
 		return true
 	end, function ( f32_arg0, f32_arg1, f32_arg2 )
-		CoD.Menu.SetButtonLabel( f32_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f32_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( BtnViewSteamWorkshop )
@@ -306,7 +306,7 @@ LUI.createMenu.SteamWorkshopPublish = function ( f1_arg0, f1_arg1 )
 		SteamWorkshopOpenItem( self, f34_arg0, f34_arg2 )
 		return true
 	end, function ( f35_arg0, f35_arg1, f35_arg2 )
-		CoD.Menu.SetButtonLabel( f35_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f35_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( BtnViewItemInWorkshop )
@@ -329,7 +329,7 @@ LUI.createMenu.SteamWorkshopPublish = function ( f1_arg0, f1_arg1 )
 		GoBack( self, f37_arg2 )
 		return true
 	end, function ( f38_arg0, f38_arg1, f38_arg2 )
-		CoD.Menu.SetButtonLabel( f38_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f38_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( BtnDone )
@@ -371,7 +371,7 @@ LUI.createMenu.SteamWorkshopPublish = function ( f1_arg0, f1_arg1 )
 		ToggleGlobalModelValueBoolean( "FileshareRoot.publishSteamAgreement" )
 		return true
 	end, function ( f43_arg0, f43_arg1, f43_arg2 )
-		CoD.Menu.SetButtonLabel( f43_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f43_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( checkboxSteamAgreement, "setText", function ( element, controller )

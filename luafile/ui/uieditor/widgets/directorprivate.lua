@@ -53,7 +53,7 @@ CoD.directorPrivate.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local DirectorReadyButton = CoD.DirectorReadyButton.new( f1_arg0, f1_arg1, 0.5, 0.5, 514, 896, 1, 1, -178, -108 )
 	DirectorReadyButton.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( 0x7A9F166E7248D86 ) )
 	DirectorReadyButton.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( 0x7A9F166E7248D86 ) )
-	DirectorReadyButton.PlayText:setText( LocalizeToUpperString( 0xE6F6113B8B75F3E ) )
+	DirectorReadyButton.PlayText:setText( LocalizeToUpperString( "menu/ready" ) )
 	DirectorReadyButton:subscribeToGlobalModel( f1_arg1, "PerController", "ButtonBits." .. Enum.LUIButton[0x755DA1E2E7C263F], function ( model )
 		DirectorReadyButton:setModel( model, f1_arg1 )
 	end )

@@ -11,7 +11,7 @@ CoD.Hud_ZM_Trial_Shame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local frame = LUI.UIImage.new( 0.5, 0.5, -70, 70, 0, 0, 26.5, 166.5 )
-	frame:setImage( RegisterImage( 0xD7C4340C612D07C ) )
+	frame:setImage( RegisterImage( "uie_t8_zm_shame_frame" ) )
 	self:addElement( frame )
 	self.frame = frame
 	

@@ -586,13 +586,13 @@ end
 CoD.PlayerStatsUtility.GetRankIcon = function ( f39_arg0, f39_arg1 )
 	local f39_local0 = Engine.CurrentSessionMode()
 	if f39_local0 == Enum.eModes[0xB22E0240605CFFE] then
-		return 0x7615068F50B3D66
+		return "blacktransparent"
 	else
 		local f39_local1, f39_local2 = CoD.PlayerStatsUtility.GetCurrentRankAndPrestigeFromMenuStorageBuffer( f39_arg0 )
 		if f39_local2 > 0 then
 			return Engine[0xE21763E1EB756F8]( f39_local2, f39_local0 )
 		else
-			return CoD.RankUtility.GetRankInfoField( f39_local0, f39_local1, 0xBFF4CC56C2092F0, 0x7615068F50B3D66 )
+			return CoD.RankUtility.GetRankInfoField( f39_local0, f39_local1, 0xBFF4CC56C2092F0, "blacktransparent" )
 		end
 	end
 end
@@ -600,7 +600,7 @@ end
 CoD.PlayerStatsUtility.GetRankIconLarge = function ( f40_arg0, f40_arg1, f40_arg2 )
 	local f40_local0 = Engine.CurrentSessionMode()
 	if f40_local0 == Enum.eModes[0xB22E0240605CFFE] then
-		return 0x7615068F50B3D66
+		return "blacktransparent"
 	else
 		local f40_local1, f40_local2 = CoD.PlayerStatsUtility.GetCurrentRankAndPrestigeFromMenuStorageBuffer( f40_arg0 )
 		if CoD.PrestigeUtility.GetPrestigeCap( f40_local0 ) <= f40_local2 then
@@ -613,7 +613,7 @@ CoD.PlayerStatsUtility.GetRankIconLarge = function ( f40_arg0, f40_arg1, f40_arg
 		elseif f40_local2 > 0 then
 			return Engine[0xFC100C7712C1987]( f40_local2, f40_local0 )
 		else
-			return CoD.RankUtility.GetRankInfoField( f40_local0, f40_local1, 0x8027A8209C5D65F, 0x7615068F50B3D66 )
+			return CoD.RankUtility.GetRankInfoField( f40_local0, f40_local1, 0x8027A8209C5D65F, "blacktransparent" )
 		end
 	end
 end
@@ -732,7 +732,7 @@ end
 CoD.PlayerStatsUtility.GetNextRankIcon = function ( f48_arg0, f48_arg1 )
 	local f48_local0 = Engine.CurrentSessionMode()
 	if f48_local0 == Enum.eModes[0xB22E0240605CFFE] then
-		return 0x7615068F50B3D66
+		return "blacktransparent"
 	end
 	local f48_local1, f48_local2 = CoD.PlayerStatsUtility.GetCurrentRankAndPrestigeFromMenuStorageBuffer( f48_arg0 )
 	local f48_local3 = CoD.PlayerStatsUtility.IsPrestigeMasterForMenu( f48_local0, f48_arg0 )
@@ -740,7 +740,7 @@ CoD.PlayerStatsUtility.GetNextRankIcon = function ( f48_arg0, f48_arg1 )
 	if f48_local4 > CoD.RankUtility.GetRankCap() and not f48_local3 then
 		f48_local4 = f48_local1
 	end
-	return Engine.GetRankIcon( f48_local4, f48_local2, f48_local0 ) or 0x7615068F50B3D66
+	return Engine.GetRankIcon( f48_local4, f48_local2, f48_local0 ) or "blacktransparent"
 end
 
 CoD.PlayerStatsUtility.GetNextPrestigeTitle = function ( f49_arg0, f49_arg1 )
@@ -756,7 +756,7 @@ end
 CoD.PlayerStatsUtility.GetNextPrestigeIcon = function ( f50_arg0, f50_arg1, f50_arg2 )
 	local f50_local0 = Engine.CurrentSessionMode()
 	if f50_local0 == Enum.eModes[0xB22E0240605CFFE] then
-		return 0x7615068F50B3D66
+		return "blacktransparent"
 	else
 		local f50_local1, f50_local2 = CoD.PlayerStatsUtility.GetCurrentRankAndPrestigeFromMenuStorageBuffer( f50_arg0 )
 		local f50_local3 = math.min( f50_local2 + 1, CoD.PrestigeUtility.GetPrestigeCap() )
@@ -1268,7 +1268,7 @@ DataSources.PlayerShowcase = {
 			f76_local2 = f76_local1.PlayerStatsList
 		end
 		local f76_local3 = 0x0
-		local f76_local4 = 0x7615068F50B3D66
+		local f76_local4 = "blacktransparent"
 		local f76_local5 = 0
 		local f76_local6 = CoD.PlayerStatsUtility.GetShowcaseMedal( nil, f76_arg0 )
 		if not f76_local6 or f76_local6 == 0x0 then

@@ -271,8 +271,8 @@ LUI.createMenu.PositionDraft = function ( f2_arg0, f2_arg1 )
 	} )
 	ChangeClassButton:setAlpha( 0 )
 	ChangeClassButton:setScale( 0.8, 0.8 )
-	ChangeClassButton.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( 0x83E3BA6F8C2DB04 ) )
-	ChangeClassButton.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( 0x83E3BA6F8C2DB04 ) )
+	ChangeClassButton.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( "mpui/change_class" ) )
+	ChangeClassButton.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( "mpui/change_class" ) )
 	PCVoiceChatWidget = ChangeClassButton
 	Characters = ChangeClassButton.subscribeToModel
 	local CommonHeader = Engine.GetModelForController( f2_arg0 )
@@ -617,7 +617,7 @@ LUI.createMenu.PositionDraft = function ( f2_arg0, f2_arg1 )
 		end
 	end, function ( f49_arg0, f49_arg1, f49_arg2 )
 		if not PlayerReadiedUp( f49_arg2 ) and IsElementInAnyState( f49_arg1, "CharacterSelectedPC", "CharacterSelected" ) then
-			CoD.Menu.SetButtonLabel( f49_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( f49_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 			return true
 		elseif IsMenuInState( f49_arg1, "EditLoadout" ) then
 			CoD.Menu.SetButtonLabel( f49_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x503EA7AC6A9A9DB, nil, "ESCAPE" )

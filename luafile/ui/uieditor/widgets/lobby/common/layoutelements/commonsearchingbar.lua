@@ -15,7 +15,7 @@ CoD.CommonSearchingBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local SearchingText = LUI.UIImage.new( 0, 0, 15, 95, 0, 0, 1.5, 13.5 )
 	SearchingText:setImage( RegisterImage( 0x78EC1EE8D46CAD5 ) )
-	SearchingText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	SearchingText:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( SearchingText )
 	self.SearchingText = SearchingText
 	

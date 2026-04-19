@@ -14,7 +14,7 @@ CoD.vhud_ms_FrameBottomRight.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	Image0:setXRot( 180 )
 	Image0:setZoom( -40 )
 	Image0:setImage( RegisterImage( 0xC5B13A17382E497 ) )
-	Image0:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Image0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image0 )
 	self.Image0 = Image0
 	
@@ -23,7 +23,7 @@ CoD.vhud_ms_FrameBottomRight.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	msBottomFrameRight:setAlpha( 0.5 )
 	msBottomFrameRight:setXRot( 180 )
 	msBottomFrameRight:setImage( RegisterImage( 0xC5B13A17382E497 ) )
-	msBottomFrameRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	msBottomFrameRight:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( msBottomFrameRight )
 	self.msBottomFrameRight = msBottomFrameRight
 	

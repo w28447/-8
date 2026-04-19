@@ -37,7 +37,7 @@ CoD.EmblemEditorColorMixer.new = function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3, 
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.5 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -46,7 +46,7 @@ CoD.EmblemEditorColorMixer.new = function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3, 
 	
 	local BotTiledBackingAdd = LUI.UIImage.new( 0, 1, 0, 0, 0.85, 1, 0, 0 )
 	BotTiledBackingAdd:setAlpha( 0.1 )
-	BotTiledBackingAdd:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	BotTiledBackingAdd:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	BotTiledBackingAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	BotTiledBackingAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	BotTiledBackingAdd:setupNineSliceShader( 196, 88 )
@@ -55,8 +55,8 @@ CoD.EmblemEditorColorMixer.new = function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3, 
 	
 	local Frame = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	Frame:setAlpha( 0.2 )
-	Frame:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	Frame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	Frame:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	Frame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Frame:setShaderVector( 0, 0, 0, 0, 0 )
 	Frame:setupNineSliceShader( 16, 16 )
 	self:addElement( Frame )
@@ -132,8 +132,8 @@ CoD.EmblemEditorColorMixer.new = function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3, 
 	
 	local ColorFrame = LUI.UIImage.new( 0, 0, 20.5, 73.5, 0, 0, 23.5, 186.5 )
 	ColorFrame:setAlpha( 0.5 )
-	ColorFrame:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	ColorFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	ColorFrame:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	ColorFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ColorFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	ColorFrame:setupNineSliceShader( 4, 4 )
 	self:addElement( ColorFrame )
@@ -219,10 +219,10 @@ CoD.EmblemEditorColorMixer.new = function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3, 
 		end
 	end, function ( f16_arg0, f16_arg1, f16_arg2 )
 		if CoD.ModelUtility.IsModelValueEqualTo( f16_arg2, "Emblem.EmblemProperties.isGradientMode", 1 ) and not CoD.ModelUtility.IsModelValueEqualToEnum( f16_arg2, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif CoD.ModelUtility.IsModelValueEqualTo( f16_arg2, "Emblem.EmblemProperties.isGradientMode", 1 ) and CoD.ModelUtility.IsModelValueEqualToEnum( f16_arg2, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -284,10 +284,10 @@ CoD.EmblemEditorColorMixer.new = function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3, 
 		end
 	end, function ( f25_arg0, f25_arg1, f25_arg2 )
 		if CoD.ModelUtility.IsModelValueEqualTo( f25_arg2, "Emblem.EmblemProperties.isGradientMode", 1 ) and not CoD.ModelUtility.IsModelValueEqualToEnum( f25_arg2, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
-			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif CoD.ModelUtility.IsModelValueEqualTo( f25_arg2, "Emblem.EmblemProperties.isGradientMode", 1 ) and CoD.ModelUtility.IsModelValueEqualToEnum( f25_arg2, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
-			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -349,10 +349,10 @@ CoD.EmblemEditorColorMixer.new = function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3, 
 		end
 	end, function ( f34_arg0, f34_arg1, f34_arg2 )
 		if CoD.ModelUtility.IsModelValueEqualTo( f34_arg2, "Emblem.EmblemProperties.isGradientMode", 1 ) and not CoD.ModelUtility.IsModelValueEqualToEnum( f34_arg2, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
-			CoD.Menu.SetButtonLabel( f34_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f34_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif CoD.ModelUtility.IsModelValueEqualTo( f34_arg2, "Emblem.EmblemProperties.isGradientMode", 1 ) and CoD.ModelUtility.IsModelValueEqualToEnum( f34_arg2, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
-			CoD.Menu.SetButtonLabel( f34_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f34_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -404,7 +404,7 @@ CoD.EmblemEditorColorMixer.new = function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3, 
 	
 	dividerH = LUI.UIImage.new( 0, 0, 0, 880, 0, 0, 201, 205 )
 	dividerH:setAlpha( 0.2 )
-	dividerH:setImage( RegisterImage( 0x84B43D5B04D263A ) )
+	dividerH:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_line" ) )
 	dividerH:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	dividerH:setShaderVector( 0, 0, 0, 0, 0 )
 	dividerH:setupNineSliceShader( 8, 4 )
@@ -413,7 +413,7 @@ CoD.EmblemEditorColorMixer.new = function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3, 
 	
 	dividerV = LUI.UIImage.new( 0, 0, 90, 94, 0, 0, 0, 202 )
 	dividerV:setAlpha( 0.1 )
-	dividerV:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
+	dividerV:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
 	dividerV:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	dividerV:setShaderVector( 0, 0, 0, 0, 0 )
 	dividerV:setupNineSliceShader( 4, 8 )

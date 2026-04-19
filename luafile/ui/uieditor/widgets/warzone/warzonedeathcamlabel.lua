@@ -10,7 +10,7 @@ CoD.WarzoneDeathCamLabel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local TextBG = LUI.UIImage.new( 0.5, 0.5, -108, 108, 0.5, 0.5, -36, 36 )
 	TextBG:setImage( RegisterImage( 0x22BBD8BC5961B70 ) )
-	TextBG:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	TextBG:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	TextBG:setShaderVector( 0, 0, 1, 0, 0 )
 	TextBG:setShaderVector( 1, 0, 0, 0, 0 )
 	TextBG:setShaderVector( 2, 0, 1, 0, 0 )
@@ -42,7 +42,7 @@ CoD.WarzoneDeathCamLabel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local DeathCamLabel = LUI.UIText.new( 0.5, 0.5, -60, 80, 0.5, 0.5, -12, 12 )
 	DeathCamLabel:setRGB( 1, 0.9, 0.9 )
-	DeathCamLabel:setText( LocalizeToUpperString( 0xA8BAC035CE51600 ) )
+	DeathCamLabel:setText( LocalizeToUpperString( "wz/deathcam" ) )
 	DeathCamLabel:setTTF( "ttmussels_demibold" )
 	DeathCamLabel:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	DeathCamLabel:setShaderVector( 0, 0.55, 0, 0, 0 )

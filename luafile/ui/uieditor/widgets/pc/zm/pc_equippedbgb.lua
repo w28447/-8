@@ -83,7 +83,7 @@ CoD.PC_EquippedBGB.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	self.BGBCount = BGBCount
 	
 	local PCkeybind = LUI.UIText.new( 0.01, 0.99, 0, 0, 0, 0.2, 0, 0 )
-	PCkeybind:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	PCkeybind:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	PCkeybind:setTTF( "notosans_regular" )
 	PCkeybind:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	PCkeybind:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

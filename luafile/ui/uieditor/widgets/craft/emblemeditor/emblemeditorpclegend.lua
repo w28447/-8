@@ -49,7 +49,7 @@ CoD.EmblemEditorPCLegend.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	dropshadow:setRGB( 0, 0, 0 )
 	dropshadow:setAlpha( 0.8 )
 	dropshadow:setImage( RegisterImage( 0xF8AD9AE7EF787EF ) )
-	dropshadow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	dropshadow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	dropshadow:setShaderVector( 0, 0, 0, 0, 0 )
 	dropshadow:setupNineSliceShader( 120, 120 )
 	self:addElement( dropshadow )
@@ -63,7 +63,7 @@ CoD.EmblemEditorPCLegend.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	self.Backing = Backing
 	
 	local NoiseTiledBacking2 = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, -380.5, -53.5 )
-	NoiseTiledBacking2:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking2:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking2:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking2:setupNineSliceShader( 196, 88 )
@@ -72,7 +72,7 @@ CoD.EmblemEditorPCLegend.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local NoiseTiledBackingAdd = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, -380.5, -53.5 )
 	NoiseTiledBackingAdd:setAlpha( 0.2 )
-	NoiseTiledBackingAdd:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBackingAdd:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBackingAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	NoiseTiledBackingAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBackingAdd:setupNineSliceShader( 196, 88 )
@@ -90,7 +90,7 @@ CoD.EmblemEditorPCLegend.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local dividerH02 = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, -91.5, -87.5 )
 	dividerH02:setAlpha( 0.2 )
-	dividerH02:setImage( RegisterImage( 0x84B43D5B04D263A ) )
+	dividerH02:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_line" ) )
 	dividerH02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	dividerH02:setShaderVector( 0, 0, 0, 0, 0 )
 	dividerH02:setupNineSliceShader( 8, 4 )
@@ -114,8 +114,8 @@ CoD.EmblemEditorPCLegend.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local Frame03 = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, -380.5, -341.5 )
 	Frame03:setAlpha( 0.2 )
-	Frame03:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	Frame03:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	Frame03:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	Frame03:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Frame03:setShaderVector( 0, 0, 0, 0, 0 )
 	Frame03:setupNineSliceShader( 16, 16 )
 	self:addElement( Frame03 )
@@ -123,8 +123,8 @@ CoD.EmblemEditorPCLegend.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local Frame = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, -382.5, -52.5 )
 	Frame:setAlpha( 0.1 )
-	Frame:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	Frame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	Frame:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	Frame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Frame:setShaderVector( 0, 0, 0, 0, 0 )
 	Frame:setupNineSliceShader( 16, 16 )
 	self:addElement( Frame )

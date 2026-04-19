@@ -107,7 +107,7 @@ LUI.createMenu.CodCasterQuickSettingsSideBar = function ( f2_arg0, f2_arg1 )
 	
 	local Title = LUI.UIText.new( 0, 0, 63, 381, 0, 0, 15.5, 45.5 )
 	Title:setRGB( ColorSet.T8__GOLD.r, ColorSet.T8__GOLD.g, ColorSet.T8__GOLD.b )
-	Title:setText( LocalizeToUpperString( 0x4EA93CFFE505B27 ) )
+	Title:setText( LocalizeToUpperString( "codcaster/quick_settings" ) )
 	Title:setTTF( "ttmussels_regular" )
 	Title:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Title:setAlignment( Enum.LUIAlignment[0x6ED4298C93DC5ED] )
@@ -121,7 +121,7 @@ LUI.createMenu.CodCasterQuickSettingsSideBar = function ( f2_arg0, f2_arg1 )
 	local backButton = nil
 	
 	backButton = CoD.featureOverlay_Button.new( f2_local1, f2_arg0, 0, 0, 563, 763, 0, 0, 924, 984 )
-	backButton.ButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( 0x70A9FDC87CD3D48 ) )
+	backButton.ButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/back" ) )
 	backButton:registerEventHandler( "gain_focus", function ( element, event )
 		local f6_local0 = nil
 		if element.gainFocus then
@@ -241,7 +241,7 @@ LUI.createMenu.CodCasterQuickSettingsSideBar = function ( f2_arg0, f2_arg1 )
 		end
 	end, function ( f21_arg0, f21_arg1, f21_arg2 )
 		if not IsRepeatButtonPress( nil ) then
-			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0x70A9FDC87CD3D48, nil, "R" )
+			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], "menu/back", nil, "R" )
 			return true
 		else
 			return false
@@ -315,7 +315,7 @@ CoD.CodCasterQuickSettingsSideBar.__resetProperties = function ( f25_arg0 )
 	f25_arg0.Background:completeAnimation()
 	f25_arg0.texture:completeAnimation()
 	f25_arg0.backButton:setAlpha( 1 )
-	f25_arg0.backButton.ButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( 0x70A9FDC87CD3D48 ) )
+	f25_arg0.backButton.ButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/back" ) )
 	f25_arg0.resetButton:setAlpha( 1 )
 	f25_arg0.resetButton.ButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( 0xFA987631536BD44 ) )
 	f25_arg0.FooterContainerIngameRight:setLeftRight( 0, 0, 140, 720 )
@@ -434,7 +434,7 @@ CoD.CodCasterQuickSettingsSideBar.__clipsPerState = {
 			f29_arg0.clipFinished( f29_arg0.FooterContainerIngameRight )
 			f29_arg0.backButton:completeAnimation()
 			f29_arg0.backButton.ButtonContainer.Title:completeAnimation()
-			f29_arg0.backButton.ButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( 0x70A9FDC87CD3D48 ) )
+			f29_arg0.backButton.ButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/back" ) )
 			f29_arg0.clipFinished( f29_arg0.backButton )
 			f29_arg0.resetButton:completeAnimation()
 			f29_arg0.resetButton.ButtonContainer.Title:completeAnimation()

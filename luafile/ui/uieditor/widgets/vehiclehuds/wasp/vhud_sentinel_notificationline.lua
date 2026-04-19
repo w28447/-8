@@ -9,19 +9,19 @@ CoD.vhud_sentinel_NotificationLine.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local NotificationAmmoLineTop0 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NotificationAmmoLineTop0:setImage( RegisterImage( 0x46B3CDBF12EA5D7 ) )
-	NotificationAmmoLineTop0:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	NotificationAmmoLineTop0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( NotificationAmmoLineTop0 )
 	self.NotificationAmmoLineTop0 = NotificationAmmoLineTop0
 	
 	local NotificationAmmoLineTop00 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NotificationAmmoLineTop00:setImage( RegisterImage( 0x46B3CDBF12EA5D7 ) )
-	NotificationAmmoLineTop00:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	NotificationAmmoLineTop00:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( NotificationAmmoLineTop00 )
 	self.NotificationAmmoLineTop00 = NotificationAmmoLineTop00
 	
 	local NotificationAmmoLineTop000 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NotificationAmmoLineTop000:setImage( RegisterImage( 0x46B3CDBF12EA5D7 ) )
-	NotificationAmmoLineTop000:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	NotificationAmmoLineTop000:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( NotificationAmmoLineTop000 )
 	self.NotificationAmmoLineTop000 = NotificationAmmoLineTop000
 	

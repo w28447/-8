@@ -101,7 +101,7 @@ CoD.ClassOptionsWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 		PlaySoundAlias( "uin_toggle_generic" )
 		return true
 	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( ClassSetOptionsList )
@@ -130,7 +130,7 @@ CoD.ClassOptionsWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	ClassNameLabelBacking = LUI.UIImage.new( 0.5, 0.5, -192.5, 192.5, 0, 0, 139, 182 )
 	ClassNameLabelBacking:setAlpha( 0.5 )
-	ClassNameLabelBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	ClassNameLabelBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	ClassNameLabelBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	ClassNameLabelBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	ClassNameLabelBacking:setupNineSliceShader( 196, 88 )
@@ -225,7 +225,7 @@ CoD.ClassOptionsWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 		PlaySoundAlias( "uin_toggle_generic" )
 		return true
 	end, function ( f15_arg0, f15_arg1, f15_arg2 )
-		CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( ClassOptionsList )

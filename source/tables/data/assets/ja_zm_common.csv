@@ -44,7 +44,7 @@ localizeentry,d#hash_2fa47140d97f89d
 localizeentry,d#zmui/fmj_desc
 localizeentry,#hash_33f9ba586bfea9f
 localizeentry,d#hash_34a73a01d512cf5
-localizeentry,#hash_3563fad2acf2d91
+localizeentry,#menu/paused
 localizeentry,#hash_35c65bc2ace6e2e
 localizeentry,#hash_375ac490696f74c
 localizeentry,#hash_37d333d4b932090
@@ -228,7 +228,7 @@ localizeentry,#hash_fb402ff44f08e0d
 localizeentry,#hash_fb9837a686bdd40
 localizeentry,#hash_fbcfc36f0c79d9a
 localizeentry,#zmweapon/tr_damageburst_t8_upgraded
-localizeentry,#hash_fc244f0b9cc213b
+localizeentry,#demo/director_mode
 localizeentry,#zmtrials/artifacts_of_life_desc
 localizeentry,#hash_fcacde729e8f906
 localizeentry,#hash_fef7b2a7045eac2
@@ -793,7 +793,7 @@ localizeentry,d#hash_3916397fbdb60669
 localizeentry,#hash_3923a71aa4a500e1
 localizeentry,d#menu/new
 localizeentry,d#mpui/killcounter
-localizeentry,d#hash_394e8ff2c42caffb
+localizeentry,d#warzone/start_warzone
 localizeentry,d#mpui/extbarrel2
 localizeentry,#zmtrials/engine_room_rumble
 localizeentry,d#hash_3985f2f816999c75
@@ -945,7 +945,7 @@ localizeentry,#hash_4223b5afbb7d9d13
 localizeentry,d#hash_422c2d6777e82ad8
 localizeentry,#zombie/perk_zombshell
 localizeentry,#zmtrials/ix_lives
-localizeentry,#hash_42466b35790d15bf
+localizeentry,#demo/basic_mode
 localizeentry,d#hash_426bba21b0e06b2d
 localizeentry,#hash_4296912594fa3c42
 localizeentry,#menu/charm_tea_bag
@@ -1208,7 +1208,7 @@ localizeentry,#menu/charm_hula_girl
 localizeentry,#hash_53c0ba6abce1c0ea
 localizeentry,#hash_53c77bf2e06cd64c
 localizeentry,#hash_53e845f76521b945
-localizeentry,d#hash_5400a284adf5eac0
+localizeentry,d#zmtrials/trial_completed
 localizeentry,d#weapon/uber_beltfed_desc
 localizeentry,d#mpui/speedreloader_desc
 localizeentry,#menu/charm_lucky_cat
@@ -1492,7 +1492,7 @@ localizeentry,#hash_65d6995788bfb8d2
 localizeentry,d#hash_65e7d81e1db8bfae
 localizeentry,d#hash_663114aa52ffcb21
 localizeentry,#zmweapon/smg_handling_t8_upgraded
-localizeentry,d#hash_66393ff34ea56966
+localizeentry,d#menu/continue
 localizeentry,#hash_6643d22b0b0572e3
 localizeentry,#hash_6655ab6e9517c0f2
 localizeentry,d#hash_665c5d0a5e65fe83
@@ -1646,7 +1646,7 @@ localizeentry,d#hash_70b9723e40288f9d
 localizeentry,#hash_70bd2ab55abf4ecf
 localizeentry,d#hash_70cfbdea2c6374c7
 localizeentry,#hash_70da6c04bd088333
-localizeentry,d#hash_70dfd294fc69f682
+localizeentry,d#menu/yes
 localizeentry,#zmui/carbon_combo_desc
 localizeentry,d#hash_711dbe28b50de6b7
 localizeentry,d#hash_711e01fdec193fa1
@@ -1668,7 +1668,7 @@ localizeentry,d#hash_7226cb1d509ebfbd
 localizeentry,d#zombie/game_over
 localizeentry,#menu/charm_toilet
 localizeentry,d#mp/match_tie
-localizeentry,#hash_72961aaf61fb5b21
+localizeentry,#demo/object_link_mode
 localizeentry,d#hash_729c99e33d1c9275
 localizeentry,#zmtrials/closed_for_business
 localizeentry,#zmweapon/lmg_stealth_t8_upgraded
@@ -1788,7 +1788,7 @@ localizeentry,d#hash_7c04e8370e2a8538
 localizeentry,#zmtrials/board_to_death
 localizeentry,#hash_7c257fd95d0f18fa
 localizeentry,d#hash_7c2bc6db7850d8a2
-localizeentry,d#hash_7c2e92c54c2be289
+localizeentry,d#menu/cancel
 localizeentry,#zmweapon/pistol_fullauto_t8_upgraded
 localizeentry,d#hash_7c7cb60e8610be3a
 localizeentry,d#hash_7c90a430a330e85f
@@ -1822,7 +1822,7 @@ localizeentry,d#mpui/tacknife_desc
 localizeentry,#hash_7e639eaeecc873fe
 localizeentry,d#hash_7e6ea41ef4c9afe6
 localizeentry,#hash_7eb34c34dd07f9bf
-localizeentry,#hash_7ebddcc281d5c214
+localizeentry,#demo/lighter_mode
 localizeentry,#hash_7ebea2becf0c1aee
 localizeentry,#hash_7ede476a5bd7ab24
 localizeentry,d#hash_7edf9c45858b1e3d

@@ -76,7 +76,7 @@ CoD.CodCasterHeaderNonTeamBased.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local light = LUI.UIImage.new( 0, 0, 213, 678, 0, 0, 0, 238 )
 	light:setAlpha( 0.35 )
 	light:setImage( RegisterImage( 0x1D4A7822C00BEC4 ) )
-	light:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	light:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( light )
 	self.light = light
 	
@@ -415,13 +415,13 @@ CoD.CodCasterHeaderNonTeamBased.__resetProperties = function ( f13_arg0 )
 	f13_arg0.blur2:setAlpha( 1 )
 	f13_arg0.bg:setRGB( 0, 0, 0 )
 	f13_arg0.bg:setAlpha( 0.09 )
-	f13_arg0.bg:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6B34AA3F39208EF ) )
+	f13_arg0.bg:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_normal" ) )
 	f13_arg0.blur3:setLeftRight( 0.5, 0.5, -224.5, 224.5 )
 	f13_arg0.blur3:setTopBottom( 0.35, 0.35, 68.5, 90.5 )
 	f13_arg0.blur3:setAlpha( 1 )
 	f13_arg0.blur:setLeftRight( 0, 0, 877, 1005 )
 	f13_arg0.blur:setTopBottom( 0, 0, 52, 180 )
-	f13_arg0.blur:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6B34AA3F39208EF ) )
+	f13_arg0.blur:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_normal" ) )
 end
 
 CoD.CodCasterHeaderNonTeamBased.__clipsPerState = {
@@ -542,7 +542,7 @@ CoD.CodCasterHeaderNonTeamBased.__clipsPerState = {
 			f15_arg0.bg:completeAnimation()
 			f15_arg0.bg:setRGB( 0, 0, 0 )
 			f15_arg0.bg:setAlpha( 0.9 )
-			f15_arg0.bg:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6B34AA3F39208EF ) )
+			f15_arg0.bg:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_normal" ) )
 			f15_arg0.clipFinished( f15_arg0.bg )
 			f15_arg0.modeBG0:completeAnimation()
 			f15_arg0.modeBG0:setAlpha( 0 )

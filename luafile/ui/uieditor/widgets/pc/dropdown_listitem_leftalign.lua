@@ -61,7 +61,7 @@ CoD.Dropdown_ListItem_LeftAlign.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	GlowAdd:setZRot( -90 )
 	GlowAdd:setScale( 0.34, 0.48 )
 	GlowAdd:setImage( RegisterImage( 0xAD405802E3EEE94 ) )
-	GlowAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	GlowAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowAdd )
 	self.GlowAdd = GlowAdd
 	

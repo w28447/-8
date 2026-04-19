@@ -161,7 +161,7 @@ LUI.createMenu.LegalTextViewerMenu = function ( f1_arg0, f1_arg1 )
 		GoBack( self, f15_arg2 )
 		return true
 	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x493152B20AE4F58], nil, function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )

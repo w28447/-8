@@ -31,7 +31,7 @@ CoD.StartMenu_Inventory_WeaponsDisplayPC.new = function ( f1_arg0, f1_arg1, f1_a
 	
 	local TiledBacking = LUI.UIImage.new( 1, 1, -449, 1, 0, 0, 0, 433 )
 	TiledBacking:setAlpha( 0.5 )
-	TiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking:setupNineSliceShader( 196, 88 )
@@ -41,7 +41,7 @@ CoD.StartMenu_Inventory_WeaponsDisplayPC.new = function ( f1_arg0, f1_arg1, f1_a
 	local GridTiled = LUI.UIImage.new( 1, 1, -448.5, 0.5, 0, 0, 32, 443 )
 	GridTiled:setAlpha( 0.55 )
 	GridTiled:setScale( 1, 1 )
-	GridTiled:setImage( RegisterImage( 0xCA386792563DE8 ) )
+	GridTiled:setImage( RegisterImage( "uie_ui_menu_store_bg_grid" ) )
 	GridTiled:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	GridTiled:setShaderVector( 0, 0, 0, 0, 0 )
 	GridTiled:setupNineSliceShader( 64, 64 )
@@ -198,7 +198,7 @@ CoD.StartMenu_Inventory_WeaponsDisplayPC.new = function ( f1_arg0, f1_arg1, f1_a
 		end
 	end, function ( f21_arg0, f21_arg1, f21_arg2 )
 		if not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f21_arg2 ) then
-			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0xFFD03BF8361AC75, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "warzone/drop", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
@@ -213,7 +213,7 @@ CoD.StartMenu_Inventory_WeaponsDisplayPC.new = function ( f1_arg0, f1_arg1, f1_a
 		end
 	end, function ( f23_arg0, f23_arg1, f23_arg2 )
 		if not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f23_arg2 ) and CoD.ModelUtility.IsSelfModelValueEqualTo( self, f23_arg2, "hasAttachments", 0 ) then
-			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x94D6AF2F50BEFEF, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "F" )
+			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "warzone/drop_and_detach", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "F" )
 			return true
 		else
 			return false
@@ -224,7 +224,7 @@ CoD.StartMenu_Inventory_WeaponsDisplayPC.new = function ( f1_arg0, f1_arg1, f1_a
 	end
 	
 	f1_arg0:addMenuOpenedCallback( self.__on_menuOpened_WeaponHeader )
-	WeaponHeader:AddContextualMenuAction( f1_arg0, f1_arg1, 0xFFD03BF8361AC75, function ( f25_arg0, f25_arg1, f25_arg2, f25_arg3 )
+	WeaponHeader:AddContextualMenuAction( f1_arg0, f1_arg1, "warzone/drop", function ( f25_arg0, f25_arg1, f25_arg2, f25_arg3 )
 		if not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f25_arg2 ) then
 			return function ( f26_arg0, f26_arg1, f26_arg2, f26_arg3 )
 				CoD.WZUtility.SendInventoryDropWeaponInSlotNotify( f26_arg2, self.weaponId )
@@ -234,7 +234,7 @@ CoD.StartMenu_Inventory_WeaponsDisplayPC.new = function ( f1_arg0, f1_arg1, f1_a
 			
 		end
 	end )
-	WeaponHeader:AddContextualMenuAction( f1_arg0, f1_arg1, 0x94D6AF2F50BEFEF, function ( f27_arg0, f27_arg1, f27_arg2, f27_arg3 )
+	WeaponHeader:AddContextualMenuAction( f1_arg0, f1_arg1, "warzone/drop_and_detach", function ( f27_arg0, f27_arg1, f27_arg2, f27_arg3 )
 		if not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f27_arg2 ) and CoD.ModelUtility.IsSelfModelValueEqualTo( self, f27_arg2, "hasAttachments", 1 ) then
 			return function ( f28_arg0, f28_arg1, f28_arg2, f28_arg3 )
 				CoD.WZUtility.SendInventoryDropWeaponInSlotAndDetachNotify( f28_arg2, self.weaponId )
@@ -359,7 +359,7 @@ CoD.StartMenu_Inventory_WeaponsDisplayPC.new = function ( f1_arg0, f1_arg1, f1_a
 		end
 	end, function ( f39_arg0, f39_arg1, f39_arg2 )
 		if IsGamepad( f39_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f39_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f39_arg0, f39_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and not CoD.WZUtility.InventoryFull( f39_arg2 ) then
-			CoD.Menu.SetButtonLabel( f39_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x6099347F51AF260, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
+			CoD.Menu.SetButtonLabel( f39_arg1, Enum.LUIButton[0xC083113BC81F23F], "menu/detach", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
 			return true
 		else
 			return false
@@ -374,7 +374,7 @@ CoD.StartMenu_Inventory_WeaponsDisplayPC.new = function ( f1_arg0, f1_arg1, f1_a
 		end
 	end, function ( f41_arg0, f41_arg1, f41_arg2 )
 		if IsMouseOrKeyboard( f41_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f41_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f41_arg0, f41_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and not CoD.WZUtility.InventoryFull( f41_arg2 ) then
-			CoD.Menu.SetButtonLabel( f41_arg1, Enum.LUIButton[0x6CE8023188D673F], 0x6099347F51AF260, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f41_arg1, Enum.LUIButton[0x6CE8023188D673F], "menu/detach", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
 		else
 			return false
@@ -410,7 +410,7 @@ CoD.StartMenu_Inventory_WeaponsDisplayPC.new = function ( f1_arg0, f1_arg1, f1_a
 		end
 	end, function ( f45_arg0, f45_arg1, f45_arg2 )
 		if IsGamepad( f45_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f45_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f45_arg0, f45_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) then
-			CoD.Menu.SetButtonLabel( f45_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xFFD03BF8361AC75, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
+			CoD.Menu.SetButtonLabel( f45_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "warzone/drop", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
 			return true
 		else
 			return false
@@ -425,7 +425,7 @@ CoD.StartMenu_Inventory_WeaponsDisplayPC.new = function ( f1_arg0, f1_arg1, f1_a
 		end
 	end, function ( f47_arg0, f47_arg1, f47_arg2 )
 		if IsMouseOrKeyboard( f47_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f47_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f47_arg0, f47_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) then
-			CoD.Menu.SetButtonLabel( f47_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0xFFD03BF8361AC75, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+			CoD.Menu.SetButtonLabel( f47_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "warzone/drop", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
@@ -440,7 +440,7 @@ CoD.StartMenu_Inventory_WeaponsDisplayPC.new = function ( f1_arg0, f1_arg1, f1_a
 		end
 	end, function ( f49_arg0, f49_arg1, f49_arg2 )
 		if IsMouseOrKeyboard( f49_arg2 ) and CoD.WZUtility.ScoreboardVisibilitySetAndPC( f49_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f49_arg0, f49_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and not CoD.WZUtility.InventoryFull( f49_arg2 ) then
-			CoD.Menu.SetButtonLabel( f49_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0x6099347F51AF260, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE1" )
+			CoD.Menu.SetButtonLabel( f49_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], "menu/detach", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE1" )
 			return true
 		else
 			return false
@@ -470,7 +470,7 @@ CoD.StartMenu_Inventory_WeaponsDisplayPC.new = function ( f1_arg0, f1_arg1, f1_a
 		end
 	end, function ( f53_arg0, f53_arg1, f53_arg2 )
 		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f53_arg0, f53_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.WZUtility.ScoreboardVisibilitySetAndPC( f53_arg2 ) and IsMouseOrKeyboard( f53_arg2 ) then
-			CoD.Menu.SetButtonLabel( f53_arg1, Enum.LUIButton[0x4D2505E19049444], 0xFFD03BF8361AC75, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE2" )
+			CoD.Menu.SetButtonLabel( f53_arg1, Enum.LUIButton[0x4D2505E19049444], "warzone/drop", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE2" )
 			return true
 		else
 			return false
@@ -497,7 +497,7 @@ CoD.StartMenu_Inventory_WeaponsDisplayPC.new = function ( f1_arg0, f1_arg1, f1_a
 			return false
 		end
 	end, false )
-	WeaponAttachments:AddContextualMenuAction( f1_arg0, f1_arg1, 0x6099347F51AF260, function ( f56_arg0, f56_arg1, f56_arg2, f56_arg3 )
+	WeaponAttachments:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/detach", function ( f56_arg0, f56_arg1, f56_arg2, f56_arg3 )
 		if not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f56_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f56_arg0, f56_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and not CoD.WZUtility.InventoryFull( f56_arg2 ) then
 			return function ( f57_arg0, f57_arg1, f57_arg2, f57_arg3 )
 				CoD.WZUtility.SendInventoryDetachNotify( f57_arg2, f57_arg0 )
@@ -507,7 +507,7 @@ CoD.StartMenu_Inventory_WeaponsDisplayPC.new = function ( f1_arg0, f1_arg1, f1_a
 			
 		end
 	end )
-	WeaponAttachments:AddContextualMenuAction( f1_arg0, f1_arg1, 0xFFD03BF8361AC75, function ( f58_arg0, f58_arg1, f58_arg2, f58_arg3 )
+	WeaponAttachments:AddContextualMenuAction( f1_arg0, f1_arg1, "warzone/drop", function ( f58_arg0, f58_arg1, f58_arg2, f58_arg3 )
 		if not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f58_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f58_arg0, f58_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) then
 			return function ( f59_arg0, f59_arg1, f59_arg2, f59_arg3 )
 				CoD.WZUtility.SendInventoryDropNotify( f59_arg2, f59_arg0 )
@@ -650,7 +650,7 @@ CoD.StartMenu_Inventory_WeaponsDisplayPC.new = function ( f1_arg0, f1_arg1, f1_a
 		end
 	end, function ( f74_arg0, f74_arg1, f74_arg2 )
 		if IsGamepad( f74_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f74_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f74_arg0, f74_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and not CoD.WZUtility.InventoryFull( f74_arg2 ) then
-			CoD.Menu.SetButtonLabel( f74_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x6099347F51AF260, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
+			CoD.Menu.SetButtonLabel( f74_arg1, Enum.LUIButton[0xC083113BC81F23F], "menu/detach", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
 			return true
 		else
 			return false
@@ -665,7 +665,7 @@ CoD.StartMenu_Inventory_WeaponsDisplayPC.new = function ( f1_arg0, f1_arg1, f1_a
 		end
 	end, function ( f76_arg0, f76_arg1, f76_arg2 )
 		if IsMouseOrKeyboard( f76_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f76_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f76_arg0, f76_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and not CoD.WZUtility.InventoryFull( f76_arg2 ) then
-			CoD.Menu.SetButtonLabel( f76_arg1, Enum.LUIButton[0x6CE8023188D673F], 0x6099347F51AF260, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f76_arg1, Enum.LUIButton[0x6CE8023188D673F], "menu/detach", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
 		else
 			return false
@@ -680,7 +680,7 @@ CoD.StartMenu_Inventory_WeaponsDisplayPC.new = function ( f1_arg0, f1_arg1, f1_a
 		end
 	end, function ( f78_arg0, f78_arg1, f78_arg2 )
 		if IsGamepad( f78_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f78_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f78_arg0, f78_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) then
-			CoD.Menu.SetButtonLabel( f78_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xFFD03BF8361AC75, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
+			CoD.Menu.SetButtonLabel( f78_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "warzone/drop", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
 			return true
 		else
 			return false
@@ -695,7 +695,7 @@ CoD.StartMenu_Inventory_WeaponsDisplayPC.new = function ( f1_arg0, f1_arg1, f1_a
 		end
 	end, function ( f80_arg0, f80_arg1, f80_arg2 )
 		if IsMouseOrKeyboard( f80_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f80_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f80_arg0, f80_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) then
-			CoD.Menu.SetButtonLabel( f80_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0xFFD03BF8361AC75, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+			CoD.Menu.SetButtonLabel( f80_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "warzone/drop", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
@@ -731,7 +731,7 @@ CoD.StartMenu_Inventory_WeaponsDisplayPC.new = function ( f1_arg0, f1_arg1, f1_a
 		end
 	end, function ( f84_arg0, f84_arg1, f84_arg2 )
 		if IsMouseOrKeyboard( f84_arg2 ) and CoD.WZUtility.ScoreboardVisibilitySetAndPC( f84_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f84_arg0, f84_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and not CoD.WZUtility.InventoryFull( f84_arg2 ) then
-			CoD.Menu.SetButtonLabel( f84_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0x6099347F51AF260, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE1" )
+			CoD.Menu.SetButtonLabel( f84_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], "menu/detach", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE1" )
 			return true
 		else
 			return false
@@ -761,7 +761,7 @@ CoD.StartMenu_Inventory_WeaponsDisplayPC.new = function ( f1_arg0, f1_arg1, f1_a
 		end
 	end, function ( f88_arg0, f88_arg1, f88_arg2 )
 		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f88_arg0, f88_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.WZUtility.ScoreboardVisibilitySetAndPC( f88_arg2 ) and IsMouseOrKeyboard( f88_arg2 ) then
-			CoD.Menu.SetButtonLabel( f88_arg1, Enum.LUIButton[0x4D2505E19049444], 0xFFD03BF8361AC75, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE2" )
+			CoD.Menu.SetButtonLabel( f88_arg1, Enum.LUIButton[0x4D2505E19049444], "warzone/drop", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE2" )
 			return true
 		else
 			return false
@@ -788,7 +788,7 @@ CoD.StartMenu_Inventory_WeaponsDisplayPC.new = function ( f1_arg0, f1_arg1, f1_a
 			return false
 		end
 	end, false )
-	WeaponAttachmentsSmall:AddContextualMenuAction( f1_arg0, f1_arg1, 0x6099347F51AF260, function ( f91_arg0, f91_arg1, f91_arg2, f91_arg3 )
+	WeaponAttachmentsSmall:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/detach", function ( f91_arg0, f91_arg1, f91_arg2, f91_arg3 )
 		if not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f91_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f91_arg0, f91_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and not CoD.WZUtility.InventoryFull( f91_arg2 ) then
 			return function ( f92_arg0, f92_arg1, f92_arg2, f92_arg3 )
 				CoD.WZUtility.SendInventoryDetachNotify( f92_arg2, f92_arg0 )
@@ -798,7 +798,7 @@ CoD.StartMenu_Inventory_WeaponsDisplayPC.new = function ( f1_arg0, f1_arg1, f1_a
 			
 		end
 	end )
-	WeaponAttachmentsSmall:AddContextualMenuAction( f1_arg0, f1_arg1, 0xFFD03BF8361AC75, function ( f93_arg0, f93_arg1, f93_arg2, f93_arg3 )
+	WeaponAttachmentsSmall:AddContextualMenuAction( f1_arg0, f1_arg1, "warzone/drop", function ( f93_arg0, f93_arg1, f93_arg2, f93_arg3 )
 		if not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f93_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f93_arg0, f93_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) then
 			return function ( f94_arg0, f94_arg1, f94_arg2, f94_arg3 )
 				CoD.WZUtility.SendInventoryDropNotify( f94_arg2, f94_arg0 )
@@ -866,7 +866,7 @@ CoD.StartMenu_Inventory_WeaponsDisplayPC.new = function ( f1_arg0, f1_arg1, f1_a
 			modelName = "weapon1.hasAttachments"
 		} )
 	end, false )
-	DropAndDetachButtonPC.Image:setImage( RegisterImage( 0x11FFBA26DA10CCC ) )
+	DropAndDetachButtonPC.Image:setImage( RegisterImage( "uie_dropdetachicon" ) )
 	DropAndDetachButtonPC:appendEventHandler( "input_source_changed", function ( f102_arg0, f102_arg1 )
 		f102_arg1.menu = f102_arg1.menu or f1_arg0
 		CoD.Menu.UpdateButtonShownState( f102_arg0, f1_arg0, f1_arg1, Enum.LUIButton[0x4D2505E19049444] )
@@ -913,7 +913,7 @@ CoD.StartMenu_Inventory_WeaponsDisplayPC.new = function ( f1_arg0, f1_arg1, f1_a
 		end
 	end, function ( f108_arg0, f108_arg1, f108_arg2 )
 		if IsMouseOrKeyboard( f108_arg2 ) and CoD.WZUtility.HasAttachments( f108_arg2, self.weaponId ) then
-			CoD.Menu.SetButtonLabel( f108_arg1, Enum.LUIButton[0x4D2505E19049444], 0x94D6AF2F50BEFEF, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE2" )
+			CoD.Menu.SetButtonLabel( f108_arg1, Enum.LUIButton[0x4D2505E19049444], "warzone/drop_and_detach", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE2" )
 			return true
 		else
 			return false
@@ -928,7 +928,7 @@ CoD.StartMenu_Inventory_WeaponsDisplayPC.new = function ( f1_arg0, f1_arg1, f1_a
 		end
 	end, function ( f110_arg0, f110_arg1, f110_arg2 )
 		if IsGamepad( f110_arg2 ) and CoD.WZUtility.HasAttachments( f110_arg2, self.weaponId ) then
-			CoD.Menu.SetButtonLabel( f110_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x94D6AF2F50BEFEF, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], nil )
+			CoD.Menu.SetButtonLabel( f110_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "warzone/drop_and_detach", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], nil )
 			return true
 		else
 			return false
@@ -976,7 +976,7 @@ CoD.StartMenu_Inventory_WeaponsDisplayPC.new = function ( f1_arg0, f1_arg1, f1_a
 		end
 	end, function ( f116_arg0, f116_arg1, f116_arg2 )
 		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f116_arg0, f116_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and IsMouseOrKeyboard( f116_arg2 ) then
-			CoD.Menu.SetButtonLabel( f116_arg1, Enum.LUIButton[0x4D2505E19049444], 0xFFD03BF8361AC75, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE2" )
+			CoD.Menu.SetButtonLabel( f116_arg1, Enum.LUIButton[0x4D2505E19049444], "warzone/drop", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE2" )
 			return true
 		else
 			return false
@@ -991,7 +991,7 @@ CoD.StartMenu_Inventory_WeaponsDisplayPC.new = function ( f1_arg0, f1_arg1, f1_a
 		end
 	end, function ( f118_arg0, f118_arg1, f118_arg2 )
 		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f118_arg0, f118_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and IsGamepad( f118_arg2 ) then
-			CoD.Menu.SetButtonLabel( f118_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xFFD03BF8361AC75, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], nil )
+			CoD.Menu.SetButtonLabel( f118_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "warzone/drop", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], nil )
 			return true
 		else
 			return false

@@ -17,7 +17,7 @@ CoD.smokewidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	
 	local smoke2 = LUI.UIImage.new( 0, 0, -8, 280, 0, 0, 0, 267 )
 	smoke2:setImage( RegisterImage( 0x3A1BD0A6BCA88EE ) )
-	smoke2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD8EA9FE9B0BCF75 ) )
+	smoke2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	smoke2:setShaderVector( 0, 1, 0.66, 0, 0 )
 	smoke2:setShaderVector( 1, 0, 0.08, 0, 0 )
 	self:addElement( smoke2 )
@@ -25,7 +25,7 @@ CoD.smokewidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	
 	local smoke3 = LUI.UIImage.new( 0, 0, -8, 280, 0, 0, 0, 267 )
 	smoke3:setImage( RegisterImage( 0x3A1BD0A6BCA88EE ) )
-	smoke3:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD8EA9FE9B0BCF75 ) )
+	smoke3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	smoke3:setShaderVector( 0, 1, 0.66, 0, 0 )
 	smoke3:setShaderVector( 1, 0, 0.08, 0, 0 )
 	self:addElement( smoke3 )
@@ -33,7 +33,7 @@ CoD.smokewidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	
 	local smoke4 = LUI.UIImage.new( 0, 0, -8, 280, 0, 0, 0, 267 )
 	smoke4:setImage( RegisterImage( 0x3A1BD0A6BCA88EE ) )
-	smoke4:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD8EA9FE9B0BCF75 ) )
+	smoke4:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	smoke4:setShaderVector( 0, 1, 0.66, 0, 0 )
 	smoke4:setShaderVector( 1, 0, 0.08, 0, 0 )
 	self:addElement( smoke4 )

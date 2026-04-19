@@ -43,7 +43,7 @@ CoD.DirectorSimpleButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	self.DirectorCustomStartButton = DirectorCustomStartButton
 	
 	local PlayText = LUI.UIText.new( 0, 1, 0, 0, 0.56, 0.56, -12, 12 )
-	PlayText:setText( LocalizeToUpperString( 0xDDDA371285672BD ) )
+	PlayText:setText( LocalizeToUpperString( "menu/play" ) )
 	PlayText:setTTF( "ttmussels_demibold" )
 	PlayText:setLetterSpacing( 6 )
 	PlayText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

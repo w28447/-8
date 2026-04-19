@@ -40,7 +40,7 @@ CoD.CommonRankIconAndRankLarge.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local arenaFlameStreak = LUI.UIImage.new( 0, 0, -54, 186, 0, 0, -52.5, 187.5 )
 	arenaFlameStreak:setAlpha( 0 )
-	arenaFlameStreak:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9227A50BA2B8D21 ) )
+	arenaFlameStreak:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	arenaFlameStreak:setShaderVector( 0, 4, 4, 0, 0 )
 	arenaFlameStreak:setShaderVector( 1, 8, 0, 0, 0 )
 	arenaFlameStreak.__Image = function ( f7_arg0 )

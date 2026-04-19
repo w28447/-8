@@ -76,7 +76,7 @@ CoD.DirectorGameSettingList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		end
 	end, function ( f10_arg0, f10_arg1, f10_arg2 )
 		if not IsPC() and IsLobbyHostOfCurrentMenu() then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif IsPC() and IsLobbyHostOfCurrentMenu() then
 			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
@@ -161,7 +161,7 @@ CoD.DirectorGameSettingList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		end
 	end, function ( f20_arg0, f20_arg1, f20_arg2 )
 		if not IsPC() and IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.ShowDirectorCustom( f20_arg0, f20_arg2 ) then
-			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif IsPC() and IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.ShowDirectorCustom( f20_arg0, f20_arg2 ) then
 			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )

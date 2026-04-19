@@ -111,7 +111,7 @@ CoD.ZMTalismanStatusButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	Lock = LUI.UIImage.new( 0.5, 0.5, -25, 25, 0.5, 0.5, -25, 25 )
 	Lock:setAlpha( 0 )
-	Lock:setImage( RegisterImage( 0xE1E7C490B2BA4FB ) )
+	Lock:setImage( RegisterImage( "uie_ui_icon_global_lock" ) )
 	self:addElement( Lock )
 	self.Lock = Lock
 	

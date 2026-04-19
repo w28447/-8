@@ -40,7 +40,7 @@ CoD.DirectorChooseGameTypeFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 		PlaySoundAlias( "cac_open_wpn_cust" )
 		return true
 	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( GameTypeCategoryGridPC )
@@ -77,7 +77,7 @@ CoD.DirectorChooseGameTypeFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 		PlaySoundAlias( "cac_open_wpn_cust" )
 		return true
 	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	f1_arg0:AddButtonCallbackFunction( GameTypeListPC, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
@@ -87,7 +87,7 @@ CoD.DirectorChooseGameTypeFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 		PlaySoundAlias( "cac_wpn_cust_exit" )
 		return true
 	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	self:addElement( GameTypeListPC )

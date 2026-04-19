@@ -68,7 +68,7 @@ CoD.ContractDetailsPanelInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local Linker = LUI.UIImage.new( 0, 0, 758, 762, 0, 0, 5, 399 )
 	Linker:setAlpha( 0.08 )
-	Linker:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
+	Linker:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
 	Linker:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	Linker:setShaderVector( 0, 0, 0, 0, 0 )
 	Linker:setupNineSliceShader( 4, 8 )

@@ -11,14 +11,14 @@ CoD.VehicleGround_CenterInnerRingElement.new = function ( f1_arg0, f1_arg1, f1_a
 	local InnerRingElement = LUI.UIImage.new( 1, 1, -48, 0, 0, 0, 0, 48 )
 	InnerRingElement:setAlpha( 0.5 )
 	InnerRingElement:setImage( RegisterImage( 0xCE6420999415091 ) )
-	InnerRingElement:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	InnerRingElement:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( InnerRingElement )
 	self.InnerRingElement = InnerRingElement
 	
 	local Image0 = LUI.UIImage.new( 0, 0, 0, 12, 1, 1, -12, 0 )
 	Image0:setAlpha( 0.5 )
 	Image0:setImage( RegisterImage( 0xE727EABAB9FC602 ) )
-	Image0:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Image0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image0 )
 	self.Image0 = Image0
 	

@@ -50,8 +50,8 @@ LUI.createMenu.PurchaseNoDupeCrate = function ( f1_arg0, f1_arg1 )
 	} )
 	FullscreenPopupTemplate.ButtonList:setWidgetType( CoD.PurchaseReservesItemButton )
 	FullscreenPopupTemplate.ErrorSubtitle:setText( "" )
-	FullscreenPopupTemplate.WorkingTitle:setText( LocalizeToUpperString( 0x9D00A7D3D969F6E ) )
-	FullscreenPopupTemplate.DoneTitle:setText( LocalizeToUpperString( 0x83048BBBD98FC6A ) )
+	FullscreenPopupTemplate.WorkingTitle:setText( LocalizeToUpperString( "menu/purchase_processing" ) )
+	FullscreenPopupTemplate.DoneTitle:setText( LocalizeToUpperString( "menu/purchase_complete" ) )
 	FullscreenPopupTemplate:linkToElementModel( self, nil, false, function ( model )
 		FullscreenPopupTemplate:setModel( model, f1_arg0 )
 	end )
@@ -92,7 +92,7 @@ LUI.createMenu.PurchaseNoDupeCrate = function ( f1_arg0, f1_arg1 )
 	local Linker = LUI.UIImage.new( 0.5, 0.5, -330, -326, 0.5, 0.5, -192, 205 )
 	Linker:setRGB( ColorSet.T8__BEIGE__HEADER.r, ColorSet.T8__BEIGE__HEADER.g, ColorSet.T8__BEIGE__HEADER.b )
 	Linker:setAlpha( 0.35 )
-	Linker:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
+	Linker:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
 	Linker:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	Linker:setShaderVector( 0, 0, 0, 0, 0 )
 	Linker:setupNineSliceShader( 4, 8 )
@@ -184,7 +184,7 @@ LUI.createMenu.PurchaseNoDupeCrate = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f17_arg0, f17_arg1, f17_arg2 )
 		if not IsElementInState( self.FullscreenPopupTemplate, "WorkingState" ) and not IsElementInState( self.FullscreenPopupTemplate, "ErrorState" ) then
-			CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+			CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		else
 			return false
@@ -202,7 +202,7 @@ LUI.createMenu.PurchaseNoDupeCrate = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f19_arg0, f19_arg1, f19_arg2 )
 		if IsElementInState( self.FullscreenPopupTemplate, "ErrorState" ) then
-			CoD.Menu.SetButtonLabel( f19_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x70A9FDC87CD3D48, nil, nil )
+			CoD.Menu.SetButtonLabel( f19_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/back", nil, nil )
 			return true
 		elseif not IsElementInState( self.FullscreenPopupTemplate, "FinishedState" ) and CoD.BlackMarketUtility.CanPurchaseNoDupeCrate( f19_arg2, f19_arg1 ) then
 			CoD.Menu.SetButtonLabel( f19_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xEAFD07CB9BF59C5, nil, nil )

@@ -16,7 +16,7 @@ CoD.BM_DailyContract.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local TiledBacking = LUI.UIImage.new( -0, 1, 0, 0, 0, 0, 190, 826 )
 	TiledBacking:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	TiledBacking:setAlpha( 0.8 )
-	TiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	TiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking:setupNineSliceShader( 196, 88 )
@@ -38,7 +38,7 @@ CoD.BM_DailyContract.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local GridTiled = LUI.UIImage.new( 0.04, 0.04, -20, 528, 1, 1, -887, -254 )
 	GridTiled:setAlpha( 0.05 )
 	GridTiled:setScale( 1.01, 1.01 )
-	GridTiled:setImage( RegisterImage( 0xCA386792563DE8 ) )
+	GridTiled:setImage( RegisterImage( "uie_ui_menu_store_bg_grid" ) )
 	GridTiled:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	GridTiled:setShaderVector( 0, 0, 0, 0, 0 )
 	GridTiled:setupNineSliceShader( 64, 64 )
@@ -68,7 +68,7 @@ CoD.BM_DailyContract.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local Art = LUI.UIImage.new( 0.5, 0.5, -228, 228, 0, 0, 194, 690 )
 	Art:setImage( RegisterImage( 0x6776621F1A63CDD ) )
-	Art:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Art:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Art )
 	self.Art = Art
 	
@@ -140,7 +140,7 @@ CoD.BM_DailyContract.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local ButtonTopLine9Slice = LUI.UIImage.new( 0, 1, -6, 6, 0, 0, 677, 697 )
 	ButtonTopLine9Slice:setAlpha( 0.11 )
 	ButtonTopLine9Slice:setImage( RegisterImage( 0xC752149A1FA1AAE ) )
-	ButtonTopLine9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	ButtonTopLine9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ButtonTopLine9Slice:setShaderVector( 0, 0, 0, 0, 0 )
 	ButtonTopLine9Slice:setupNineSliceShader( 120, 10 )
 	self:addElement( ButtonTopLine9Slice )
@@ -163,7 +163,7 @@ CoD.BM_DailyContract.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local TopStripeWipe = LUI.UIImage.new( 0, 0, 0, 696, 0, 0, 188, 204 )
 	TopStripeWipe:setImage( RegisterImage( 0xA0F654633E4C64E ) )
-	TopStripeWipe:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	TopStripeWipe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	TopStripeWipe:setShaderVector( 0, 0, 0.79, 0, 0 )
 	TopStripeWipe:setShaderVector( 1, 0, 0, 0, 0 )
 	TopStripeWipe:setShaderVector( 2, 0, 1, 0, 0 )
@@ -174,7 +174,7 @@ CoD.BM_DailyContract.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local TopStripeWipe4 = LUI.UIImage.new( 0, 0, 0, 696, 0, 0, 188, 204 )
 	TopStripeWipe4:setImage( RegisterImage( 0xA0F654633E4C64E ) )
-	TopStripeWipe4:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	TopStripeWipe4:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	TopStripeWipe4:setShaderVector( 0, 0, 0.79, 0, 0 )
 	TopStripeWipe4:setShaderVector( 1, 0, 0, 0, 0 )
 	TopStripeWipe4:setShaderVector( 2, 0, 1, 0, 0 )
@@ -185,7 +185,7 @@ CoD.BM_DailyContract.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local TopStripeWipe2 = LUI.UIImage.new( 0, 0, 0, 696, 0, 0, 812, 828 )
 	TopStripeWipe2:setImage( RegisterImage( 0xA0F654633E4C64E ) )
-	TopStripeWipe2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	TopStripeWipe2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	TopStripeWipe2:setShaderVector( 0, 0, 0.79, 0, 0 )
 	TopStripeWipe2:setShaderVector( 1, 0, 0, 0, 0 )
 	TopStripeWipe2:setShaderVector( 2, 0, 1, 0, 0 )
@@ -196,7 +196,7 @@ CoD.BM_DailyContract.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local TopStripeWipe3 = LUI.UIImage.new( 0, 0, 0, 696, 0, 0, 812, 828 )
 	TopStripeWipe3:setImage( RegisterImage( 0xA0F654633E4C64E ) )
-	TopStripeWipe3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	TopStripeWipe3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	TopStripeWipe3:setShaderVector( 0, 0, 0.79, 0, 0 )
 	TopStripeWipe3:setShaderVector( 1, 0, 0, 0, 0 )
 	TopStripeWipe3:setShaderVector( 2, 0, 1, 0, 0 )

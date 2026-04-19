@@ -222,7 +222,7 @@ localizeentry,#hash_2bc7b0621575f6f
 localizeentry,#hash_2bfe864326c1c3c
 localizeentry,#hash_2c0b5e985bfb733
 localizeentry,#hash_2c1431ac4324834
-localizeentry,#hash_2c6b69eb079ca06
+localizeentry,#mpui/accuracy
 localizeentry,#hash_2cd3e66312b86f7
 localizeentry,#medal/comeback_from_deathstreak_desc
 localizeentry,#hash_2d4b4cc0254ac2b
@@ -1979,7 +1979,7 @@ localizeentry,#emotes/close_call
 localizeentry,#weapon/hero_jammer_desc
 localizeentry,#mpui/desc_offshore
 localizeentry,#hash_1d74d59fd76455f2
-localizeentry,d#hash_1d7568cae1be3f6b
+localizeentry,d#menu/party_privacy_open
 localizeentry,#hash_1d7bc2dac7c54225
 localizeentry,#emotes/shush
 localizeentry,#hash_1d8bf33e217d1d0d
@@ -3897,7 +3897,7 @@ localizeentry,#hash_3ae9e4c5f81df745
 localizeentry,#hash_3af183b305492f61
 localizeentry,#hash_3af3f592423e8bf0
 localizeentry,#hash_3afbdc04a0d16f1b
-localizeentry,#hash_3b041ccab4e06fff
+localizeentry,#mpui/revives
 localizeentry,#menu/staminup_mod
 localizeentry,d#hash_3b0767ee4125d1b4
 localizeentry,#medal/neutral_b_secured
@@ -5098,7 +5098,7 @@ localizeentry,#hash_4efbeb48aa786873
 localizeentry,#hash_4efdccd0316a18ce
 localizeentry,d#mpui/sf_desc
 localizeentry,#hash_4f00586b0d786bf7
-localizeentry,#hash_4f0c75904f29f8bc
+localizeentry,#menu/complete
 localizeentry,#hash_4f0d7d38677c14a8
 localizeentry,#hash_4f0d7e38677c165b
 localizeentry,#hash_4f0d8038677c19c1
@@ -5187,7 +5187,7 @@ localizeentry,#hash_50434c3138a47519
 localizeentry,d#weapon/sensor_dart
 localizeentry,#hash_504b5346d29dabe0
 localizeentry,#hash_504d0c3a65fc01b3
-localizeentry,d#hash_504d4ea9b2703ef9
+localizeentry,d#menu/party_privacy_invite_only
 localizeentry,#hash_505037f2f74f852b
 localizeentry,#hash_505038f2f74f86de
 localizeentry,#hash_505039f2f74f8891
@@ -7194,7 +7194,7 @@ localizeentry,#hash_6ce01bc4c35fd98f
 localizeentry,#hash_6ce2d2d0433b2f99
 localizeentry,d#heroes/recon
 localizeentry,#hash_6ce3a95125ff35ec
-localizeentry,#hash_6ce582aaf25f56e3
+localizeentry,#mpui/hacks
 localizeentry,#hash_6ce9d52f56c74e34
 localizeentry,#hash_6ce9e33ecaebf98c
 localizeentry,#hash_6cebe860917d703e
@@ -7458,7 +7458,7 @@ localizeentry,#hash_712a52108f0ead6e
 localizeentry,#hash_713142135a0fa822
 localizeentry,#hash_7136aba7fa2a7c1e
 localizeentry,#hash_7139deea232607ff
-localizeentry,#hash_713ce1b89172bb60
+localizeentry,#mpui/deaths
 localizeentry,#hash_713f216440341d05
 localizeentry,#menu/stronghold_mod
 localizeentry,d#hash_714cce81de873f11

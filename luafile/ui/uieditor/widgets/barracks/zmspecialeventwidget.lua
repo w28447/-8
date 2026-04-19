@@ -46,7 +46,7 @@ CoD.ZMSpecialEventWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		}
 	} )
 	FactionRewards.ButtonInternal.ImageContainer.ImageContainer:setImage( RegisterImage( 0x7C4CA71FFE4CB25 ) )
-	FactionRewards.ButtonInternal.ButtonTitle.HeaderText:setText( LocalizeToUpperString( 0x2ACBA21D0C15241 ) )
+	FactionRewards.ButtonInternal.ButtonTitle.HeaderText:setText( LocalizeToUpperString( "menu/rewards" ) )
 	FactionRewards:registerEventHandler( "gain_focus", function ( element, event )
 		local f5_local0 = nil
 		if element.gainFocus then
@@ -67,7 +67,7 @@ CoD.ZMSpecialEventWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		end
 	end, function ( f7_arg0, f7_arg1, f7_arg2 )
 		if IsInDefaultState( f7_arg0 ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -97,7 +97,7 @@ CoD.ZMSpecialEventWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		end
 	end, function ( f10_arg0, f10_arg1, f10_arg2 )
 		if IsInDefaultState( f10_arg0 ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

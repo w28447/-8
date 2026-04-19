@@ -72,7 +72,7 @@ CoD.DirectorCustomStartButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	PlayText = LUI.UIText.new( 0, 1, 0, 0, 0.5, 0.5, -12, 12 )
 	PlayText:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	PlayText:setText( LocalizeToUpperString( 0xDDDA371285672BD ) )
+	PlayText:setText( LocalizeToUpperString( "menu/play" ) )
 	PlayText:setTTF( "ttmussels_demibold" )
 	PlayText:setLetterSpacing( 3 )
 	PlayText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -83,7 +83,7 @@ CoD.DirectorCustomStartButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	PlayTextFocus = LUI.UIText.new( 0, 1, 0, 0, 0.5, 0.5, -12, 12 )
 	PlayTextFocus:setRGB( 0.28, 0.25, 0.24 )
 	PlayTextFocus:setAlpha( 0 )
-	PlayTextFocus:setText( LocalizeToUpperString( 0xDDDA371285672BD ) )
+	PlayTextFocus:setText( LocalizeToUpperString( "menu/play" ) )
 	PlayTextFocus:setTTF( "ttmussels_demibold" )
 	PlayTextFocus:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	PlayTextFocus:setShaderVector( 0, 0.14, 0, 0, 0 )

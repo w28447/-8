@@ -24,7 +24,7 @@ CoD.Tak5Reticle_Range.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local Tak5ReticleBracketAdd = CoD.Tak5Reticle_Bracket.new( f1_arg0, f1_arg1, 0, 0, 0, 800, 0.5, 0.5, -191, 189 )
 	Tak5ReticleBracketAdd:setAlpha( 0 )
-	Tak5ReticleBracketAdd:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	Tak5ReticleBracketAdd:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Tak5ReticleBracketAdd )
 	self.Tak5ReticleBracketAdd = Tak5ReticleBracketAdd
 	

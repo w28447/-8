@@ -1108,7 +1108,7 @@ CoD.ZombiesCallingsUtility.GetFactionCircleModels = function ( f56_arg0, f56_arg
 				if f58_local6 then
 					table.insert( f58_local0, {
 						models = {
-							image = f58_local6[0xAB612888528489A] or 0x7615068F50B3D66,
+							image = f58_local6[0xAB612888528489A] or "blacktransparent",
 							name = f58_local6[0x4BCADBA8E631B86] or 0x0,
 							purchased = f56_local2[0xFFBFACDD776E531][f56_arg1 - 1][0xC882E09926D85B8][f56_local3][0x8833743622919CB][f57_arg1][0x8F54E2E72E0EA12][f58_local4]:get() ~= 0,
 							lootId = f58_local6[0x28887F70BF5EBA] or 0x0
@@ -1507,18 +1507,18 @@ CoD.OverlayUtility.AddSystemOverlay( "FactionSelectionConfirmation", {
 	image = function ( f85_arg0, f85_arg1 )
 		local f85_local0 = f85_arg1._model
 		if not f85_local0 then
-			return 0x7615068F50B3D66
+			return "blacktransparent"
 		else
 			local f85_local1 = f85_local0:create( "factionHash" )
 			f85_local1 = f85_local1:get()
 			if not f85_local1 then
-				return 0x7615068F50B3D66
+				return "blacktransparent"
 			else
 				local f85_local2 = CoD.ZombiesCallingsUtility.GetFactionAsset( f85_local1 )
 				if not f85_local2 then
-					return 0x7615068F50B3D66
+					return "blacktransparent"
 				else
-					return f85_local2[0xAB612888528489A] or 0x7615068F50B3D66
+					return f85_local2[0xAB612888528489A] or "blacktransparent"
 				end
 			end
 		end
@@ -1557,7 +1557,7 @@ CoD.OverlayUtility.AddSystemOverlay( "FactionSelectionConfirmation", {
 				local f89_local7 = CoD.ZombiesCallingsUtility.GetFactionIndex( f89_local4, f89_local5 )
 				table.insert( f89_local2, {
 					models = {
-						image = f89_local3.factioncallingseasons[f89_local4].factionlist[f89_local7][0xFCE1D23739384E8] or 0x7615068F50B3D66,
+						image = f89_local3.factioncallingseasons[f89_local4].factionlist[f89_local7][0xFCE1D23739384E8] or "blacktransparent",
 						factionName = f89_local6[0x58D0903C2038AC0],
 						isSticker = true,
 						isRewardCompletion = false
@@ -1565,7 +1565,7 @@ CoD.OverlayUtility.AddSystemOverlay( "FactionSelectionConfirmation", {
 				} )
 				table.insert( f89_local2, {
 					models = {
-						image = f89_local3.factioncallingseasons[f89_local4].factionlist[f89_local7][0xDFE3C8BFD2DB555] or 0x7615068F50B3D66,
+						image = f89_local3.factioncallingseasons[f89_local4].factionlist[f89_local7][0xDFE3C8BFD2DB555] or "blacktransparent",
 						factionName = f89_local6[0x58D0903C2038AC0],
 						isSticker = false,
 						isRewardCompletion = false
@@ -1602,7 +1602,7 @@ CoD.OverlayUtility.AddSystemOverlay( "FactionRewardConfirmation", {
 	menuName = "SystemOverlay_Full",
 	title = 0xFAA25CA10099204,
 	image = function ( f92_arg0, f92_arg1 )
-		return CoD.SafeGetModelValue( f92_arg1._model, "image" ) or 0x7615068F50B3D66
+		return CoD.SafeGetModelValue( f92_arg1._model, "image" ) or "blacktransparent"
 	end,
 	supportText = function ( f93_arg0, f93_arg1 )
 		return CoD.SafeGetModelValue( f93_arg1._model, "name" ) or 0x0
@@ -1679,7 +1679,7 @@ CoD.OverlayUtility.AddSystemOverlay( "FactionRewardConfirmation", {
 CoD.OverlayUtility.AddSystemOverlay( "FactionRewardCompletion", {
 	menuName = "SystemOverlay_Full",
 	title = 0xA833716CBB8F05A,
-	image = 0x7615068F50B3D66,
+	image = "blacktransparent",
 	description = function ( f99_arg0, f99_arg1 )
 		local f99_local0 = f99_arg1.rewardCompletionTable
 		local f99_local1 = {}
@@ -1808,18 +1808,18 @@ end
 CoD.ZombiesCallingsUtility.GetFactionCircleImage = function ( f106_arg0 )
 	local f106_local0 = CoD.ZombiesCallingsUtility.GetFactionAsset( f106_arg0 )
 	if not f106_local0 then
-		return 0x7615068F50B3D66
+		return "blacktransparent"
 	else
-		return f106_local0[0xAB612888528489A] or 0x7615068F50B3D66
+		return f106_local0[0xAB612888528489A] or "blacktransparent"
 	end
 end
 
 CoD.ZombiesCallingsUtility.GetFactionTokenImage = function ( f107_arg0 )
 	local f107_local0 = CoD.ZombiesCallingsUtility.GetFactionAsset( f107_arg0 )
 	if not f107_local0 then
-		return 0x7615068F50B3D66
+		return "blacktransparent"
 	else
-		return f107_local0[0x4F6D1B168CA7CD7] or 0x7615068F50B3D66
+		return f107_local0[0x4F6D1B168CA7CD7] or "blacktransparent"
 	end
 end
 

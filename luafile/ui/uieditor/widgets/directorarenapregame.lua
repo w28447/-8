@@ -216,10 +216,10 @@ CoD.directorArenaPregame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		end
 	end, function ( f21_arg0, f21_arg1, f21_arg2 )
 		if IsPartyLeader( f21_arg2 ) and not CoD.ArenaLeaguePlayUtility.ForceCheckLeaverLockoutActive() and not CoD.DirectorUtility.IsNumClientsExceeded( f21_arg2 ) then
-			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif IsPartyLeader( f21_arg2 ) and CoD.DirectorUtility.IsNumClientsExceeded( f21_arg2 ) then
-			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -387,7 +387,7 @@ CoD.directorArenaPregame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 			return true
 		end
 	end, function ( f38_arg0, f38_arg1, f38_arg2 )
-		CoD.Menu.SetButtonLabel( f38_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f38_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( CustomGamesButton )

@@ -52,7 +52,7 @@ DataSources.EquippedScorestreaks = ListHelper_SetupDataSource( "EquippedScorestr
 			local f3_local8 = CoD.CACUtility.GetUnlockableItemInfo( f3_local11, f3_local3 )
 			f3_local2( f3_local8.displayName, f3_local11, CoD.CACUtility.GetPreviewImageLarge( f3_local3, f3_local8 ), f3_local8.scoreToUnlock, f3_local8[0x87F8E9A3DEB31D2], f3_local8[0xB608E98BF6A8991] )
 		else
-			f3_local2( 0x0, CoD.CACUtility.EmptyItemIndex, RegisterImage( 0x7615068F50B3D66 ), 0, nil, nil )
+			f3_local2( 0x0, CoD.CACUtility.EmptyItemIndex, RegisterImage( "blacktransparent" ), 0, nil, nil )
 		end
 	end
 	table.sort( f3_local0, f3_local1 )

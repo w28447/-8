@@ -43,7 +43,7 @@ CoD[0x6D6AA0867968387].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local cigarSmokeImage = LUI.UIImage.new( 0, 0, 741.5, 765.5, 0, 0, -59, 37 )
 	cigarSmokeImage:setImage( RegisterImage( 0x1CDAF76777FEEC9 ) )
-	cigarSmokeImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD8EA9FE9B0BCF75 ) )
+	cigarSmokeImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	cigarSmokeImage:setShaderVector( 0, 1, 1, 0, 0 )
 	cigarSmokeImage:setShaderVector( 1, 0, 0.05, 0, 0 )
 	self:addElement( cigarSmokeImage )

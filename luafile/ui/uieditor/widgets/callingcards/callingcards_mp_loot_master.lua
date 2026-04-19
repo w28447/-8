@@ -27,13 +27,13 @@ CoD[0xDF8326B7C9D17D4].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local lighteningGlow = LUI.UIImage.new( 0, 0, 176.5, 416.5, 0, 0, 0, 240 )
 	lighteningGlow:setImage( RegisterImage( 0xE903BC5AA4093DE ) )
-	lighteningGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	lighteningGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( lighteningGlow )
 	self.lighteningGlow = lighteningGlow
 	
 	local lighteningGlow2 = LUI.UIImage.new( 0, 0, -5.5, 176.5, 0, 0, -18.5, 163.5 )
 	lighteningGlow2:setImage( RegisterImage( 0x776D8BF0963B6EE ) )
-	lighteningGlow2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	lighteningGlow2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( lighteningGlow2 )
 	self.lighteningGlow2 = lighteningGlow2
 	
@@ -80,7 +80,7 @@ CoD[0xDF8326B7C9D17D4].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local debris2 = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	debris2:setAlpha( 0.5 )
 	debris2:setImage( RegisterImage( 0x7562860B0114742 ) )
-	debris2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD8EA9FE9B0BCF75 ) )
+	debris2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	debris2:setShaderVector( 0, 1, 1, 0, 0 )
 	debris2:setShaderVector( 1, 0.1, 0, 0, 0 )
 	self:addElement( debris2 )
@@ -89,7 +89,7 @@ CoD[0xDF8326B7C9D17D4].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local lionclawSheen = LUI.UIImage.new( 0, 0, 755, 899, 0, 0, 181, 237 )
 	lionclawSheen:setAlpha( 0.5 )
 	lionclawSheen:setImage( RegisterImage( 0x29A0A7259A2A7CC ) )
-	lionclawSheen:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	lionclawSheen:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	lionclawSheen:setShaderVector( 0, 0.8, 1, 0, 0 )
 	lionclawSheen:setShaderVector( 1, 0.03, 0, 0, 0 )
 	lionclawSheen:setShaderVector( 2, 0, 1, 0, 0 )
@@ -143,7 +143,7 @@ CoD[0xDF8326B7C9D17D4].__resetProperties = function ( f2_arg0 )
 	f2_arg0.lionWing:setTopBottom( 0, 0, -24, 152 )
 	f2_arg0.lionWing:setScale( 1, 1 )
 	f2_arg0.lionclawSheen:setAlpha( 0.5 )
-	f2_arg0.lionclawSheen:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	f2_arg0.lionclawSheen:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	f2_arg0.lionclawSheen:setShaderVector( 0, 0.8, 1, 0, 0 )
 	f2_arg0.lionclawSheen:setShaderVector( 1, 0.03, 0, 0, 0 )
 	f2_arg0.lionclawSheen:setShaderVector( 2, 0, 1, 0, 0 )
@@ -463,7 +463,7 @@ CoD[0xDF8326B7C9D17D4].__clipsPerState = {
 			
 			f3_arg0.lionclawSheen:completeAnimation()
 			f3_arg0.lionclawSheen:setAlpha( 0.5 )
-			f3_arg0.lionclawSheen:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+			f3_arg0.lionclawSheen:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 			f3_arg0.lionclawSheen:setShaderVector( 0, 0.02, 0.05, 0, 0 )
 			f3_arg0.lionclawSheen:setShaderVector( 1, 0.03, 0.03, 0, 0 )
 			f3_arg0.lionclawSheen:setShaderVector( 2, 0, 1, 0, 0 )

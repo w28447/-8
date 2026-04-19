@@ -19,7 +19,7 @@ LUI.createMenu.DirectorFirstTimeContentWarning = function ( f1_arg0, f1_arg1 )
 	
 	local CommomCenteredPopup = CoD.CommonCenteredPopup.new( f1_local1, f1_arg0, 0, 1, 0, 0, 0, 1, 0, 0 )
 	CommomCenteredPopup.featureOverlayButtonMouseOnly.featureOverlayButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( 0xD8FF5E03592FD99 ) )
-	CommomCenteredPopup.TitleText:setText( LocalizeToUpperString( 0xD52DB291DBBD257 ) )
+	CommomCenteredPopup.TitleText:setText( LocalizeToUpperString( "menu/content_filter" ) )
 	self:addElement( CommomCenteredPopup )
 	self.CommomCenteredPopup = CommomCenteredPopup
 	
@@ -63,7 +63,7 @@ LUI.createMenu.DirectorFirstTimeContentWarning = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f4_arg0, f4_arg1, f4_arg2 )
 		if HasListAction( f4_arg0, f4_arg2 ) then
-			CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

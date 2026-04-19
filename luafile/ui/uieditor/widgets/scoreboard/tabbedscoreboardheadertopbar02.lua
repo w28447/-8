@@ -17,7 +17,7 @@ CoD.TabbedScoreboardHeaderTopbar02.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local EnemyTeamBarWipe = LUI.UIImage.new( 0.5, 0.5, -344, 344, 0, 0, 0, 10 )
 	EnemyTeamBarWipe:setRGB( 0.95, 0.95, 0.95 )
 	EnemyTeamBarWipe:setImage( RegisterImage( 0x59D632AC9663362 ) )
-	EnemyTeamBarWipe:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	EnemyTeamBarWipe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	EnemyTeamBarWipe:setShaderVector( 0, 0, 1, 0, 0 )
 	EnemyTeamBarWipe:setShaderVector( 1, 0, 0, 0, 0 )
 	EnemyTeamBarWipe:setShaderVector( 2, 0, 1, 0, 0 )
@@ -35,7 +35,7 @@ end
 
 CoD.TabbedScoreboardHeaderTopbar02.__resetProperties = function ( f2_arg0 )
 	f2_arg0.EnemyTeamBarWipe:completeAnimation()
-	f2_arg0.EnemyTeamBarWipe:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	f2_arg0.EnemyTeamBarWipe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	f2_arg0.EnemyTeamBarWipe:setShaderVector( 0, 0, 1, 0, 0 )
 	f2_arg0.EnemyTeamBarWipe:setShaderVector( 1, 0, 0, 0, 0 )
 	f2_arg0.EnemyTeamBarWipe:setShaderVector( 2, 0, 1, 0, 0 )
@@ -56,7 +56,7 @@ CoD.TabbedScoreboardHeaderTopbar02.__clipsPerState = {
 			end
 			
 			f3_arg0.EnemyTeamBarWipe:completeAnimation()
-			f3_arg0.EnemyTeamBarWipe:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+			f3_arg0.EnemyTeamBarWipe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 			f3_arg0.EnemyTeamBarWipe:setShaderVector( 0, 0, 0, 0, 0 )
 			f3_arg0.EnemyTeamBarWipe:setShaderVector( 1, 0, 0, 0, 0 )
 			f3_arg0.EnemyTeamBarWipe:setShaderVector( 2, 0, 1, 0, 0 )

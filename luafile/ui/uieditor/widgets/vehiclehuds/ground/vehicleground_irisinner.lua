@@ -10,28 +10,28 @@ CoD.VehicleGround_IrisInner.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local IrisInner1 = LUI.UIImage.new( 0.5, 0.5, -946, -754, 0.5, 0.5, -476, 460 )
 	IrisInner1:setImage( RegisterImage( 0x83704B1DB4579A3 ) )
-	IrisInner1:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	IrisInner1:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( IrisInner1 )
 	self.IrisInner1 = IrisInner1
 	
 	local IrisInner2 = LUI.UIImage.new( 0.5, 0.5, 751, 943, 0.5, 0.5, -440, 496 )
 	IrisInner2:setZRot( -180 )
 	IrisInner2:setImage( RegisterImage( 0x83704B1DB4579A3 ) )
-	IrisInner2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	IrisInner2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( IrisInner2 )
 	self.IrisInner2 = IrisInner2
 	
 	local IrisInner3 = LUI.UIImage.new( 0.5, 0.5, -491, -299, 0.5, 0.5, -1212, -276 )
 	IrisInner3:setZRot( -61 )
 	IrisInner3:setImage( RegisterImage( 0x83704B1DB4579A3 ) )
-	IrisInner3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	IrisInner3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( IrisInner3 )
 	self.IrisInner3 = IrisInner3
 	
 	local IrisInner4 = LUI.UIImage.new( 0.5, 0.5, 395, 587, 0.5, 0.5, -1152, -216 )
 	IrisInner4:setZRot( -124 )
 	IrisInner4:setImage( RegisterImage( 0x83704B1DB4579A3 ) )
-	IrisInner4:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	IrisInner4:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( IrisInner4 )
 	self.IrisInner4 = IrisInner4
 	
@@ -39,7 +39,7 @@ CoD.VehicleGround_IrisInner.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	IrisInner5:setXRot( -180 )
 	IrisInner5:setZRot( -61 )
 	IrisInner5:setImage( RegisterImage( 0x83704B1DB4579A3 ) )
-	IrisInner5:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	IrisInner5:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( IrisInner5 )
 	self.IrisInner5 = IrisInner5
 	
@@ -47,7 +47,7 @@ CoD.VehicleGround_IrisInner.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	IrisInner6:setXRot( -180 )
 	IrisInner6:setZRot( -124 )
 	IrisInner6:setImage( RegisterImage( 0x83704B1DB4579A3 ) )
-	IrisInner6:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	IrisInner6:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( IrisInner6 )
 	self.IrisInner6 = IrisInner6
 	

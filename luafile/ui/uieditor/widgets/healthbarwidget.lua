@@ -19,7 +19,7 @@ CoD.HealthBarWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	self.HealthBackground = HealthBackground
 	
 	local WoundBar = LUI.UIImage.new( 0.5, 0.5, -75, 75, 0.5, 0.5, -1, 1 )
-	WoundBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+	WoundBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	WoundBar:setShaderVector( 0, 0, 1, 0, 0 )
 	WoundBar:setShaderVector( 1, 0, 0, 0, 0 )
 	WoundBar:setShaderVector( 2, 0, 1, 0, 0 )

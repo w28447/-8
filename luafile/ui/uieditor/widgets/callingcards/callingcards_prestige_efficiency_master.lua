@@ -23,7 +23,7 @@ CoD[0x3B42BAF0EE85869].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	eyes3:setAlpha( 0.99 )
 	eyes3:setZRot( 3 )
 	eyes3:setImage( RegisterImage( 0x347512D7B004BFC ) )
-	eyes3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	eyes3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( eyes3 )
 	self.eyes3 = eyes3
 	
@@ -32,7 +32,7 @@ CoD[0x3B42BAF0EE85869].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	eyes2:setAlpha( 0 )
 	eyes2:setZRot( -38 )
 	eyes2:setImage( RegisterImage( 0x347512D7B004BFC ) )
-	eyes2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	eyes2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( eyes2 )
 	self.eyes2 = eyes2
 	
@@ -41,7 +41,7 @@ CoD[0x3B42BAF0EE85869].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	eyes:setAlpha( 0.01 )
 	eyes:setZRot( -28 )
 	eyes:setImage( RegisterImage( 0x347542D7B005115 ) )
-	eyes:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	eyes:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( eyes )
 	self.eyes = eyes
 	
@@ -78,7 +78,7 @@ CoD[0x3B42BAF0EE85869].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	flare:setRGB( 0.18, 0.5, 1 )
 	flare:setScale( 0.97, 0.97 )
 	flare:setImage( RegisterImage( 0x5B45F8600ABC506 ) )
-	flare:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	flare:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( flare )
 	self.flare = flare
 	
@@ -86,7 +86,7 @@ CoD[0x3B42BAF0EE85869].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	lightAdjustments:setRGB( 0.18, 0.5, 1 )
 	lightAdjustments:setAlpha( 0.9 )
 	lightAdjustments:setImage( RegisterImage( 0xADBC8D0663F6D6F ) )
-	lightAdjustments:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	lightAdjustments:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( lightAdjustments )
 	self.lightAdjustments = lightAdjustments
 	
@@ -126,7 +126,7 @@ CoD[0x3B42BAF0EE85869].__resetProperties = function ( f2_arg0 )
 	f2_arg0.eyes:setAlpha( 0.01 )
 	f2_arg0.eyes3:setAlpha( 0.99 )
 	f2_arg0.eyes2:setAlpha( 0 )
-	f2_arg0.greenmist:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6B34AA3F39208EF ) )
+	f2_arg0.greenmist:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_normal" ) )
 end
 
 CoD[0x3B42BAF0EE85869].__clipsPerState = {
@@ -291,7 +291,7 @@ CoD[0x3B42BAF0EE85869].__clipsPerState = {
 			end
 			
 			f3_arg0.greenmist:beginAnimation( 1350 )
-			f3_arg0.greenmist:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6B34AA3F39208EF ) )
+			f3_arg0.greenmist:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_normal" ) )
 			f3_arg0.greenmist:registerEventHandler( "interrupted_keyframe", f3_arg0.clipInterrupted )
 			f3_arg0.greenmist:registerEventHandler( "transition_complete_keyframe", f3_local3 )
 			local f3_local4 = function ( f29_arg0 )

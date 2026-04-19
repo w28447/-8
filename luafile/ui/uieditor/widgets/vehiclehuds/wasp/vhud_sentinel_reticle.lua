@@ -35,7 +35,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	BackgroundLinesTexture:setRGB( 0.74, 0.93, 1 )
 	BackgroundLinesTexture:setAlpha( 0.8 )
 	BackgroundLinesTexture:setImage( RegisterImage( 0x101DA3F1C717AD9 ) )
-	BackgroundLinesTexture:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	BackgroundLinesTexture:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BackgroundLinesTexture )
 	self.BackgroundLinesTexture = BackgroundLinesTexture
 	
@@ -43,7 +43,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	OutsideRing:setRGB( 0.6, 0.82, 0.91 )
 	OutsideRing:setAlpha( 0.3 )
 	OutsideRing:setImage( RegisterImage( 0x62FECE0C0E19FE7 ) )
-	OutsideRing:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	OutsideRing:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( OutsideRing )
 	self.OutsideRing = OutsideRing
 	
@@ -58,7 +58,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	CenterUpperLine:setRGB( 0.6, 0.82, 0.91 )
 	CenterUpperLine:setAlpha( 0.2 )
 	CenterUpperLine:setImage( RegisterImage( 0xE5AC7FEBE9A0F7E ) )
-	CenterUpperLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	CenterUpperLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	CenterUpperLine:setShaderVector( 0, 0, 1, 0, 0 )
 	CenterUpperLine:setShaderVector( 1, 0, 0, 0, 0 )
 	CenterUpperLine:setShaderVector( 2, 0, 1, 0, 0 )
@@ -71,7 +71,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	CenterLowerLine:setRGB( 0.6, 0.82, 0.91 )
 	CenterLowerLine:setAlpha( 0.2 )
 	CenterLowerLine:setImage( RegisterImage( 0xE5AC7FEBE9A0F7E ) )
-	CenterLowerLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	CenterLowerLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	CenterLowerLine:setShaderVector( 0, 0, 1, 0, 0 )
 	CenterLowerLine:setShaderVector( 1, 0, 0, 0, 0 )
 	CenterLowerLine:setShaderVector( 2, 0, 1, 0, 0 )
@@ -83,7 +83,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local CenterReticleSolid = LUI.UIImage.new( 0.5, 0.5, -126, 129, 0.5, 0.5, -64, 68 )
 	CenterReticleSolid:setAlpha( 0.05 )
 	CenterReticleSolid:setImage( RegisterImage( 0xF50FD29C375ED40 ) )
-	CenterReticleSolid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	CenterReticleSolid:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CenterReticleSolid )
 	self.CenterReticleSolid = CenterReticleSolid
 	
@@ -93,7 +93,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	CenterReticleLineR:setXRot( 180 )
 	CenterReticleLineR:setZRot( 180 )
 	CenterReticleLineR:setImage( RegisterImage( 0xDB5A315CE4E7178 ) )
-	CenterReticleLineR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	CenterReticleLineR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CenterReticleLineR )
 	self.CenterReticleLineR = CenterReticleLineR
 	
@@ -101,14 +101,14 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	CenterReticleLineL:setRGB( 0.6, 0.82, 0.91 )
 	CenterReticleLineL:setAlpha( 0.6 )
 	CenterReticleLineL:setImage( RegisterImage( 0xDB5A315CE4E7178 ) )
-	CenterReticleLineL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	CenterReticleLineL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CenterReticleLineL )
 	self.CenterReticleLineL = CenterReticleLineL
 	
 	local OutsideRingLineBlurR = LUI.UIImage.new( 0.5, 0.5, 335, 454, 0.5, 0.5, -256, 258 )
 	OutsideRingLineBlurR:setAlpha( 0.25 )
 	OutsideRingLineBlurR:setImage( RegisterImage( 0x44F54B95877C748 ) )
-	OutsideRingLineBlurR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	OutsideRingLineBlurR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( OutsideRingLineBlurR )
 	self.OutsideRingLineBlurR = OutsideRingLineBlurR
 	
@@ -116,14 +116,14 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	OusideRingLineBlurL:setAlpha( 0.25 )
 	OusideRingLineBlurL:setZRot( 180 )
 	OusideRingLineBlurL:setImage( RegisterImage( 0x44F54B95877C748 ) )
-	OusideRingLineBlurL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	OusideRingLineBlurL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( OusideRingLineBlurL )
 	self.OusideRingLineBlurL = OusideRingLineBlurL
 	
 	local OutsideRingLines = LUI.UIImage.new( 0.5, 0.5, -301, 302, 0.5, 0.5, -187, 187 )
 	OutsideRingLines:setAlpha( 0.3 )
 	OutsideRingLines:setImage( RegisterImage( 0x27B699A6B2378F5 ) )
-	OutsideRingLines:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	OutsideRingLines:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( OutsideRingLines )
 	self.OutsideRingLines = OutsideRingLines
 	
@@ -131,7 +131,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	OutsideHashLineR1:setRGB( 0.6, 0.82, 0.91 )
 	OutsideHashLineR1:setAlpha( 0.9 )
 	OutsideHashLineR1:setImage( RegisterImage( 0xD26D6A0739D4019 ) )
-	OutsideHashLineR1:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	OutsideHashLineR1:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( OutsideHashLineR1 )
 	self.OutsideHashLineR1 = OutsideHashLineR1
 	
@@ -139,7 +139,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	OutsideHashLineR2:setRGB( 0.6, 0.82, 0.91 )
 	OutsideHashLineR2:setAlpha( 0.8 )
 	OutsideHashLineR2:setImage( RegisterImage( 0xD26DAA0739D46E5 ) )
-	OutsideHashLineR2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	OutsideHashLineR2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( OutsideHashLineR2 )
 	self.OutsideHashLineR2 = OutsideHashLineR2
 	
@@ -147,14 +147,14 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	OutsideHashLineR3:setRGB( 0.6, 0.82, 0.91 )
 	OutsideHashLineR3:setAlpha( 0.7 )
 	OutsideHashLineR3:setImage( RegisterImage( 0xD26D3A0739D3B00 ) )
-	OutsideHashLineR3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	OutsideHashLineR3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( OutsideHashLineR3 )
 	self.OutsideHashLineR3 = OutsideHashLineR3
 	
 	local OutsideHashLineR4 = LUI.UIImage.new( 0.5, 0.5, 474, 630, 0.5, 0.5, -17, 21 )
 	OutsideHashLineR4:setRGB( 0.6, 0.82, 0.91 )
 	OutsideHashLineR4:setImage( RegisterImage( 0xD26D4A0739D3CB3 ) )
-	OutsideHashLineR4:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	OutsideHashLineR4:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( OutsideHashLineR4 )
 	self.OutsideHashLineR4 = OutsideHashLineR4
 	
@@ -163,7 +163,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	OutsideHashLineR10:setAlpha( 0.9 )
 	OutsideHashLineR10:setZRot( 180 )
 	OutsideHashLineR10:setImage( RegisterImage( 0xD26D6A0739D4019 ) )
-	OutsideHashLineR10:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	OutsideHashLineR10:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( OutsideHashLineR10 )
 	self.OutsideHashLineR10 = OutsideHashLineR10
 	
@@ -172,7 +172,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	OutsideHashLineR20:setAlpha( 0.8 )
 	OutsideHashLineR20:setZRot( 180 )
 	OutsideHashLineR20:setImage( RegisterImage( 0xD26DAA0739D46E5 ) )
-	OutsideHashLineR20:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	OutsideHashLineR20:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( OutsideHashLineR20 )
 	self.OutsideHashLineR20 = OutsideHashLineR20
 	
@@ -181,7 +181,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	OutsideHashLineR30:setAlpha( 0.7 )
 	OutsideHashLineR30:setZRot( 180 )
 	OutsideHashLineR30:setImage( RegisterImage( 0xD26D3A0739D3B00 ) )
-	OutsideHashLineR30:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	OutsideHashLineR30:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( OutsideHashLineR30 )
 	self.OutsideHashLineR30 = OutsideHashLineR30
 	
@@ -189,7 +189,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	OutsideHashLineR40:setRGB( 0.6, 0.82, 0.91 )
 	OutsideHashLineR40:setZRot( 180 )
 	OutsideHashLineR40:setImage( RegisterImage( 0xD26D4A0739D3CB3 ) )
-	OutsideHashLineR40:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	OutsideHashLineR40:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( OutsideHashLineR40 )
 	self.OutsideHashLineR40 = OutsideHashLineR40
 	
@@ -243,7 +243,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	OutsideLineUR:setRGB( 0.6, 0.82, 0.91 )
 	OutsideLineUR:setAlpha( 0.6 )
 	OutsideLineUR:setImage( RegisterImage( 0xE5AC7FEBE9A0F7E ) )
-	OutsideLineUR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	OutsideLineUR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	OutsideLineUR:setShaderVector( 0, 0, 1, 0, 0 )
 	OutsideLineUR:setShaderVector( 1, 0, 0, 0, 0 )
 	OutsideLineUR:setShaderVector( 2, 0, 1, 0, 0 )
@@ -256,7 +256,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	OutsideLineLR:setRGB( 0.6, 0.82, 0.91 )
 	OutsideLineLR:setAlpha( 0.8 )
 	OutsideLineLR:setImage( RegisterImage( 0xE5AC7FEBE9A0F7E ) )
-	OutsideLineLR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	OutsideLineLR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	OutsideLineLR:setShaderVector( 0, 0, 1, 0, 0 )
 	OutsideLineLR:setShaderVector( 1, 0, 0, 0, 0 )
 	OutsideLineLR:setShaderVector( 2, 0, 1, 0, 0 )
@@ -269,7 +269,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	OutsideLineUL:setRGB( 0.6, 0.82, 0.91 )
 	OutsideLineUL:setAlpha( 0.8 )
 	OutsideLineUL:setImage( RegisterImage( 0xE5AC7FEBE9A0F7E ) )
-	OutsideLineUL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	OutsideLineUL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	OutsideLineUL:setShaderVector( 0, 0, 1, 0, 0 )
 	OutsideLineUL:setShaderVector( 1, 0, 0, 0, 0 )
 	OutsideLineUL:setShaderVector( 2, 0, 1, 0, 0 )
@@ -282,7 +282,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	OutsideLineLL:setRGB( 0.6, 0.82, 0.91 )
 	OutsideLineLL:setAlpha( 0.8 )
 	OutsideLineLL:setImage( RegisterImage( 0xE5AC7FEBE9A0F7E ) )
-	OutsideLineLL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	OutsideLineLL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	OutsideLineLL:setShaderVector( 0, 0, 1, 0, 0 )
 	OutsideLineLL:setShaderVector( 1, 0, 0, 0, 0 )
 	OutsideLineLL:setShaderVector( 2, 0, 1, 0, 0 )
@@ -294,28 +294,28 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local RGBLineUR = LUI.UIImage.new( 0.5, 0.5, 229, 274, 0.5, 0.5, -58, -36 )
 	RGBLineUR:setAlpha( 0.6 )
 	RGBLineUR:setImage( RegisterImage( 0x1A7BDBC7AF5C2 ) )
-	RGBLineUR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	RGBLineUR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( RGBLineUR )
 	self.RGBLineUR = RGBLineUR
 	
 	local RGBLineLR = LUI.UIImage.new( 0.5, 0.5, 229, 274, 0.5, 0.5, 39, 61 )
 	RGBLineLR:setAlpha( 0.6 )
 	RGBLineLR:setImage( RegisterImage( 0x1A7BDBC7AF5C2 ) )
-	RGBLineLR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	RGBLineLR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( RGBLineLR )
 	self.RGBLineLR = RGBLineLR
 	
 	local RGBLineUL = LUI.UIImage.new( 0.5, 0.5, -275, -230, 0.5, 0.5, -58, -36 )
 	RGBLineUL:setAlpha( 0.6 )
 	RGBLineUL:setImage( RegisterImage( 0x1A7BDBC7AF5C2 ) )
-	RGBLineUL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	RGBLineUL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( RGBLineUL )
 	self.RGBLineUL = RGBLineUL
 	
 	local RGBLineLL = LUI.UIImage.new( 0.5, 0.5, -275, -230, 0.5, 0.5, 39, 61 )
 	RGBLineLL:setAlpha( 0.6 )
 	RGBLineLL:setImage( RegisterImage( 0x1A7BDBC7AF5C2 ) )
-	RGBLineLL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	RGBLineLL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( RGBLineLL )
 	self.RGBLineLL = RGBLineLL
 	
@@ -518,7 +518,7 @@ CoD.VHUD_Sentinel_Reticle.__resetProperties = function ( f20_arg0 )
 	f20_arg0.CenterLowerLine:setLeftRight( 0.5, 0.5, -209, 209 )
 	f20_arg0.CenterLowerLine:setTopBottom( 0.5, 0.5, 164, 188 )
 	f20_arg0.CenterLowerLine:setAlpha( 0.2 )
-	f20_arg0.CenterLowerLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	f20_arg0.CenterLowerLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	f20_arg0.CenterLowerLine:setShaderVector( 0, 0, 1, 0, 0 )
 	f20_arg0.CenterLowerLine:setShaderVector( 1, 0, 0, 0, 0 )
 	f20_arg0.CenterLowerLine:setShaderVector( 2, 0, 1, 0, 0 )
@@ -528,7 +528,7 @@ CoD.VHUD_Sentinel_Reticle.__resetProperties = function ( f20_arg0 )
 	f20_arg0.CenterUpperLine:setTopBottom( 0.5, 0.5, -181, -157 )
 	f20_arg0.CenterUpperLine:setRGB( 0.6, 0.82, 0.91 )
 	f20_arg0.CenterUpperLine:setAlpha( 0.2 )
-	f20_arg0.CenterUpperLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	f20_arg0.CenterUpperLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	f20_arg0.CenterUpperLine:setShaderVector( 0, 0, 1, 0, 0 )
 	f20_arg0.CenterUpperLine:setShaderVector( 1, 0, 0, 0, 0 )
 	f20_arg0.CenterUpperLine:setShaderVector( 2, 0, 1, 0, 0 )
@@ -597,7 +597,7 @@ CoD.VHUD_Sentinel_Reticle.__resetProperties = function ( f20_arg0 )
 	f20_arg0.OutsideLineLL:setLeftRight( 0.5, 0.5, -521, -368 )
 	f20_arg0.OutsideLineLL:setTopBottom( 0.5, 0.5, 164, 188 )
 	f20_arg0.OutsideLineLL:setAlpha( 0.8 )
-	f20_arg0.OutsideLineLL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	f20_arg0.OutsideLineLL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	f20_arg0.OutsideLineLL:setShaderVector( 0, 0, 1, 0, 0 )
 	f20_arg0.OutsideLineLL:setShaderVector( 1, 0, 0, 0, 0 )
 	f20_arg0.OutsideLineLL:setShaderVector( 2, 0, 1, 0, 0 )
@@ -606,7 +606,7 @@ CoD.VHUD_Sentinel_Reticle.__resetProperties = function ( f20_arg0 )
 	f20_arg0.OutsideLineUL:setLeftRight( 0.5, 0.5, -521, -368 )
 	f20_arg0.OutsideLineUL:setTopBottom( 0.5, 0.5, -181, -157 )
 	f20_arg0.OutsideLineUL:setAlpha( 0.8 )
-	f20_arg0.OutsideLineUL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	f20_arg0.OutsideLineUL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	f20_arg0.OutsideLineUL:setShaderVector( 0, 0, 1, 0, 0 )
 	f20_arg0.OutsideLineUL:setShaderVector( 1, 0, 0, 0, 0 )
 	f20_arg0.OutsideLineUL:setShaderVector( 2, 0, 1, 0, 0 )
@@ -615,7 +615,7 @@ CoD.VHUD_Sentinel_Reticle.__resetProperties = function ( f20_arg0 )
 	f20_arg0.OutsideLineLR:setLeftRight( 0.5, 0.5, 375, 528 )
 	f20_arg0.OutsideLineLR:setTopBottom( 0.5, 0.5, 164, 188 )
 	f20_arg0.OutsideLineLR:setAlpha( 0.8 )
-	f20_arg0.OutsideLineLR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	f20_arg0.OutsideLineLR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	f20_arg0.OutsideLineLR:setShaderVector( 0, 0, 1, 0, 0 )
 	f20_arg0.OutsideLineLR:setShaderVector( 1, 0, 0, 0, 0 )
 	f20_arg0.OutsideLineLR:setShaderVector( 2, 0, 1, 0, 0 )
@@ -625,7 +625,7 @@ CoD.VHUD_Sentinel_Reticle.__resetProperties = function ( f20_arg0 )
 	f20_arg0.OutsideLineUR:setTopBottom( 0.5, 0.5, -181, -157 )
 	f20_arg0.OutsideLineUR:setAlpha( 0.6 )
 	f20_arg0.OutsideLineUR:setZoom( 0 )
-	f20_arg0.OutsideLineUR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	f20_arg0.OutsideLineUR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	f20_arg0.OutsideLineUR:setShaderVector( 0, 0, 1, 0, 0 )
 	f20_arg0.OutsideLineUR:setShaderVector( 1, 0, 0, 0, 0 )
 	f20_arg0.OutsideLineUR:setShaderVector( 2, 0, 1, 0, 0 )
@@ -714,7 +714,7 @@ CoD.VHUD_Sentinel_Reticle.__clipsPerState = {
 			f22_arg0.CenterUpperLine:completeAnimation()
 			f22_arg0.CenterUpperLine:setRGB( 1, 1, 1 )
 			f22_arg0.CenterUpperLine:setAlpha( 0.8 )
-			f22_arg0.CenterUpperLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+			f22_arg0.CenterUpperLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 			f22_arg0.CenterUpperLine:setShaderVector( 0, 0.5, 0.5, 0, 0 )
 			f22_arg0.CenterUpperLine:setShaderVector( 1, 0, 0, 0, 0 )
 			f22_arg0.CenterUpperLine:setShaderVector( 2, 0, 1, 0, 0 )
@@ -737,7 +737,7 @@ CoD.VHUD_Sentinel_Reticle.__clipsPerState = {
 			
 			f22_arg0.CenterLowerLine:completeAnimation()
 			f22_arg0.CenterLowerLine:setAlpha( 0.6 )
-			f22_arg0.CenterLowerLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+			f22_arg0.CenterLowerLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 			f22_arg0.CenterLowerLine:setShaderVector( 0, 0.5, 0.5, 0, 0 )
 			f22_arg0.CenterLowerLine:setShaderVector( 1, 0, 0, 0, 0 )
 			f22_arg0.CenterLowerLine:setShaderVector( 2, 0, 1, 0, 0 )
@@ -932,7 +932,7 @@ CoD.VHUD_Sentinel_Reticle.__clipsPerState = {
 			
 			f22_arg0.OutsideLineUR:beginAnimation( 600 )
 			f22_arg0.OutsideLineUR:setAlpha( 0.5 )
-			f22_arg0.OutsideLineUR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+			f22_arg0.OutsideLineUR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 			f22_arg0.OutsideLineUR:setShaderVector( 0, 0, 0, 0, 0 )
 			f22_arg0.OutsideLineUR:setShaderVector( 1, 0, 0, 0, 0 )
 			f22_arg0.OutsideLineUR:setShaderVector( 2, 0, 1, 0, 0 )
@@ -948,7 +948,7 @@ CoD.VHUD_Sentinel_Reticle.__clipsPerState = {
 			
 			f22_arg0.OutsideLineLR:beginAnimation( 600 )
 			f22_arg0.OutsideLineLR:setAlpha( 0.5 )
-			f22_arg0.OutsideLineLR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+			f22_arg0.OutsideLineLR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 			f22_arg0.OutsideLineLR:setShaderVector( 0, 0, 0, 0, 0 )
 			f22_arg0.OutsideLineLR:setShaderVector( 1, 0, 0, 0, 0 )
 			f22_arg0.OutsideLineLR:setShaderVector( 2, 0, 1, 0, 0 )
@@ -964,7 +964,7 @@ CoD.VHUD_Sentinel_Reticle.__clipsPerState = {
 			
 			f22_arg0.OutsideLineUL:beginAnimation( 600 )
 			f22_arg0.OutsideLineUL:setAlpha( 0.5 )
-			f22_arg0.OutsideLineUL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+			f22_arg0.OutsideLineUL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 			f22_arg0.OutsideLineUL:setShaderVector( 0, 1, 1, 0, 0 )
 			f22_arg0.OutsideLineUL:setShaderVector( 1, 0, 0, 0, 0 )
 			f22_arg0.OutsideLineUL:setShaderVector( 2, 0, 1, 0, 0 )
@@ -980,7 +980,7 @@ CoD.VHUD_Sentinel_Reticle.__clipsPerState = {
 			
 			f22_arg0.OutsideLineLL:beginAnimation( 600 )
 			f22_arg0.OutsideLineLL:setAlpha( 0.5 )
-			f22_arg0.OutsideLineLL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+			f22_arg0.OutsideLineLL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 			f22_arg0.OutsideLineLL:setShaderVector( 0, 1, 1, 0, 0 )
 			f22_arg0.OutsideLineLL:setShaderVector( 1, 0, 0, 0, 0 )
 			f22_arg0.OutsideLineLL:setShaderVector( 2, 0, 1, 0, 0 )
@@ -2018,7 +2018,7 @@ CoD.VHUD_Sentinel_Reticle.__clipsPerState = {
 			f145_arg0.CenterUpperLine:completeAnimation()
 			f145_arg0.CenterUpperLine:setRGB( 1, 1, 1 )
 			f145_arg0.CenterUpperLine:setAlpha( 0.8 )
-			f145_arg0.CenterUpperLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+			f145_arg0.CenterUpperLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 			f145_arg0.CenterUpperLine:setShaderVector( 0, 0.5, 0.5, 0, 0 )
 			f145_arg0.CenterUpperLine:setShaderVector( 1, 0, 0, 0, 0 )
 			f145_arg0.CenterUpperLine:setShaderVector( 2, 0, 1, 0, 0 )
@@ -2041,7 +2041,7 @@ CoD.VHUD_Sentinel_Reticle.__clipsPerState = {
 			
 			f145_arg0.CenterLowerLine:completeAnimation()
 			f145_arg0.CenterLowerLine:setAlpha( 0.6 )
-			f145_arg0.CenterLowerLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+			f145_arg0.CenterLowerLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 			f145_arg0.CenterLowerLine:setShaderVector( 0, 0.5, 0.5, 0, 0 )
 			f145_arg0.CenterLowerLine:setShaderVector( 1, 0, 0, 0, 0 )
 			f145_arg0.CenterLowerLine:setShaderVector( 2, 0, 1, 0, 0 )
@@ -2236,7 +2236,7 @@ CoD.VHUD_Sentinel_Reticle.__clipsPerState = {
 			
 			f145_arg0.OutsideLineUR:beginAnimation( 600 )
 			f145_arg0.OutsideLineUR:setAlpha( 0.5 )
-			f145_arg0.OutsideLineUR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+			f145_arg0.OutsideLineUR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 			f145_arg0.OutsideLineUR:setShaderVector( 0, 0, 0, 0, 0 )
 			f145_arg0.OutsideLineUR:setShaderVector( 1, 0, 0, 0, 0 )
 			f145_arg0.OutsideLineUR:setShaderVector( 2, 0, 1, 0, 0 )
@@ -2252,7 +2252,7 @@ CoD.VHUD_Sentinel_Reticle.__clipsPerState = {
 			
 			f145_arg0.OutsideLineLR:beginAnimation( 600 )
 			f145_arg0.OutsideLineLR:setAlpha( 0.5 )
-			f145_arg0.OutsideLineLR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+			f145_arg0.OutsideLineLR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 			f145_arg0.OutsideLineLR:setShaderVector( 0, 0, 0, 0, 0 )
 			f145_arg0.OutsideLineLR:setShaderVector( 1, 0, 0, 0, 0 )
 			f145_arg0.OutsideLineLR:setShaderVector( 2, 0, 1, 0, 0 )
@@ -2268,7 +2268,7 @@ CoD.VHUD_Sentinel_Reticle.__clipsPerState = {
 			
 			f145_arg0.OutsideLineUL:beginAnimation( 600 )
 			f145_arg0.OutsideLineUL:setAlpha( 0.5 )
-			f145_arg0.OutsideLineUL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+			f145_arg0.OutsideLineUL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 			f145_arg0.OutsideLineUL:setShaderVector( 0, 1, 1, 0, 0 )
 			f145_arg0.OutsideLineUL:setShaderVector( 1, 0, 0, 0, 0 )
 			f145_arg0.OutsideLineUL:setShaderVector( 2, 0, 1, 0, 0 )
@@ -2284,7 +2284,7 @@ CoD.VHUD_Sentinel_Reticle.__clipsPerState = {
 			
 			f145_arg0.OutsideLineLL:beginAnimation( 600 )
 			f145_arg0.OutsideLineLL:setAlpha( 0.5 )
-			f145_arg0.OutsideLineLL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+			f145_arg0.OutsideLineLL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 			f145_arg0.OutsideLineLL:setShaderVector( 0, 1, 1, 0, 0 )
 			f145_arg0.OutsideLineLL:setShaderVector( 1, 0, 0, 0, 0 )
 			f145_arg0.OutsideLineLL:setShaderVector( 2, 0, 1, 0, 0 )

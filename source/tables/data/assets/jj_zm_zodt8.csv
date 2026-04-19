@@ -103,7 +103,7 @@ localizeentry,#hash_3330633f96bbec9
 localizeentry,#hash_3330733f96bc07c
 localizeentry,#hash_3330833f96bc22f
 localizeentry,#hash_3330933f96bc3e2
-localizeentry,d#hash_3563fad2acf2d91
+localizeentry,d#menu/paused
 localizeentry,#hash_3643b235569acbb
 localizeentry,#hash_3643e235569b1d4
 localizeentry,#hash_36440235569b53a
@@ -2242,7 +2242,7 @@ localizeentry,#hash_5390779f21fd8397
 localizeentry,#hash_5390789f21fd854a
 localizeentry,#hash_5390799f21fd86fd
 localizeentry,#hash_5397396709971a2f
-localizeentry,d#hash_5400a284adf5eac0
+localizeentry,d#zmtrials/trial_completed
 localizeentry,#hash_543a447b95fa7dc5
 localizeentry,d#mpui/speedreloader_desc
 localizeentry,#hash_54544113c318ff1b
@@ -3020,7 +3020,7 @@ localizeentry,#hash_70de8f4475e32d28
 localizeentry,#hash_70de914475e3308e
 localizeentry,#hash_70de924475e33241
 localizeentry,#hash_70de944475e335a7
-localizeentry,d#hash_70dfd294fc69f682
+localizeentry,d#menu/yes
 localizeentry,#hash_70e9fc6ccc1ad4f8
 localizeentry,#hash_70e9fd6ccc1ad6ab
 localizeentry,#hash_70e9fe6ccc1ad85e

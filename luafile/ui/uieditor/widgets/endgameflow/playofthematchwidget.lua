@@ -77,25 +77,25 @@ CoD.PlayOfTheMatchWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local CODCasterTeamGlowDots = CoD.CODCasterTeamGlowDots.new( f1_arg0, f1_arg1, 0, 0, 1698, 1708, 0, 0, 729, 875 )
 	CODCasterTeamGlowDots:setAlpha( 0 )
-	CODCasterTeamGlowDots:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	CODCasterTeamGlowDots:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CODCasterTeamGlowDots )
 	self.CODCasterTeamGlowDots = CODCasterTeamGlowDots
 	
 	local CODCasterTeamBaseGlow1 = CoD.CODCasterTeamBaseGlow.new( f1_arg0, f1_arg1, 0, 0, 1521, 1887, 0, 0, 149, 1014 )
 	CODCasterTeamBaseGlow1:setAlpha( 0 )
-	CODCasterTeamBaseGlow1:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	CODCasterTeamBaseGlow1:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CODCasterTeamBaseGlow1 )
 	self.CODCasterTeamBaseGlow1 = CODCasterTeamBaseGlow1
 	
 	local CODCasterTeamBaseGlow2 = CoD.CODCasterTeamBaseGlow.new( f1_arg0, f1_arg1, 0, 0, 1639, 1766, 0, 0, 537, 928 )
 	CODCasterTeamBaseGlow2:setAlpha( 0 )
-	CODCasterTeamBaseGlow2:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	CODCasterTeamBaseGlow2:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CODCasterTeamBaseGlow2 )
 	self.CODCasterTeamBaseGlow2 = CODCasterTeamBaseGlow2
 	
 	local CODCasterTeamBaseGlow3 = CoD.CODCasterTeamBaseGlow.new( f1_arg0, f1_arg1, 0, 0, 1675, 1731, 0, 0, 632, 910 )
 	CODCasterTeamBaseGlow3:setAlpha( 0 )
-	CODCasterTeamBaseGlow3:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	CODCasterTeamBaseGlow3:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	CODCasterTeamBaseGlow3.GlowDefault:setRGB( 1, 0.68, 0 )
 	self:addElement( CODCasterTeamBaseGlow3 )
 	self.CODCasterTeamBaseGlow3 = CODCasterTeamBaseGlow3
@@ -114,7 +114,7 @@ CoD.PlayOfTheMatchWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local whiteflare = LUI.UIImage.new( 0, 0, 1638, 1766, 0, 0, 801, 929 )
 	whiteflare:setAlpha( 0 )
 	whiteflare:setImage( RegisterImage( 0x3F0C857755BA4B7 ) )
-	whiteflare:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	whiteflare:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( whiteflare )
 	self.whiteflare = whiteflare
 	
@@ -122,20 +122,20 @@ CoD.PlayOfTheMatchWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	speedfare:setAlpha( 0 )
 	speedfare:setZRot( 90 )
 	speedfare:setImage( RegisterImage( 0x3BEA16D33C8F870 ) )
-	speedfare:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	speedfare:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( speedfare )
 	self.speedfare = speedfare
 	
 	local spermflare = LUI.UIImage.new( 0, 0, -49, 1871, 0, 0, 798, 952 )
 	spermflare:setAlpha( 0 )
 	spermflare:setImage( RegisterImage( 0xFB683D5D1061C79 ) )
-	spermflare:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	spermflare:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( spermflare )
 	self.spermflare = spermflare
 	
 	local CODCasterTeamFlare = CoD.CODCasterTeamFlare.new( f1_arg0, f1_arg1, 0, 0, 1612, 1792, 0, 0, 776, 956 )
 	CODCasterTeamFlare:setAlpha( 0 )
-	CODCasterTeamFlare:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	CODCasterTeamFlare:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CODCasterTeamFlare )
 	self.CODCasterTeamFlare = CODCasterTeamFlare
 	
@@ -185,7 +185,7 @@ CoD.PlayOfTheMatchWidget.__resetProperties = function ( f6_arg0 )
 	f6_arg0.whiteflare:setTopBottom( 0, 0, 801, 929 )
 	f6_arg0.whiteflare:setAlpha( 0 )
 	f6_arg0.whiteflare:setScale( 1, 1 )
-	f6_arg0.whiteflare:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	f6_arg0.whiteflare:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	f6_arg0.spermflare:setLeftRight( 0, 0, -49, 1871 )
 	f6_arg0.spermflare:setAlpha( 0 )
 	f6_arg0.speedfare:setLeftRight( 0, 0, -322, -91 )
@@ -490,7 +490,7 @@ CoD.PlayOfTheMatchWidget.__clipsPerState = {
 			f8_arg0.whiteflare:setTopBottom( 0, 0, 809, 937 )
 			f8_arg0.whiteflare:setAlpha( 0 )
 			f8_arg0.whiteflare:setScale( 1, 1 )
-			f8_arg0.whiteflare:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+			f8_arg0.whiteflare:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 			f8_arg0.whiteflare:registerEventHandler( "interrupted_keyframe", f8_arg0.clipInterrupted )
 			f8_arg0.whiteflare:registerEventHandler( "transition_complete_keyframe", f8_local9 )
 			local f8_local10 = function ( f42_arg0 )
@@ -629,7 +629,7 @@ CoD.PlayOfTheMatchWidget.__clipsPerState = {
 			f52_arg0.FluffGradientRight:setRGB( 0, 0, 0 )
 			f52_arg0.FluffGradientRight:setAlpha( 0 )
 			f52_arg0.FluffGradientRight:setYRot( 3 )
-			f52_arg0.FluffGradientRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE992BD5A540E2D ) )
+			f52_arg0.FluffGradientRight:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 			f52_arg0.FluffGradientRight:setShaderVector( 0, 0, 1, 0, 0 )
 			f52_arg0.FluffGradientRight:registerEventHandler( "interrupted_keyframe", f52_arg0.clipInterrupted )
 			f52_arg0.FluffGradientRight:registerEventHandler( "transition_complete_keyframe", f52_local0 )
@@ -741,7 +741,7 @@ CoD.PlayOfTheMatchWidget.__clipsPerState = {
 			f52_arg0.whiteflare:setTopBottom( 0, 0, 809, 937 )
 			f52_arg0.whiteflare:setAlpha( 0 )
 			f52_arg0.whiteflare:setScale( 1, 1 )
-			f52_arg0.whiteflare:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+			f52_arg0.whiteflare:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 			f52_arg0.whiteflare:registerEventHandler( "interrupted_keyframe", f52_arg0.clipInterrupted )
 			f52_arg0.whiteflare:registerEventHandler( "transition_complete_keyframe", f52_local4 )
 			local f52_local5 = function ( f71_arg0 )

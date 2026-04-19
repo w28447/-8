@@ -32,7 +32,7 @@ LUI.createMenu.DirectorZMTrialsInfo = function ( f1_arg0, f1_arg1 )
 	self.DirectorZMTrialsInfoInternal = DirectorZMTrialsInfoInternal
 	
 	local CommonHeader = CoD.CommonHeader.new( f1_local1, f1_arg0, 0, 0, 0, 1920, 0, 0, 0, 67 )
-	CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x4456C22914B29F9 ) )
+	CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/zombies_modes" ) )
 	CommonHeader.subtitle.subtitle:setAlpha( 0 )
 	CommonHeader:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f3_local0 = model:get()

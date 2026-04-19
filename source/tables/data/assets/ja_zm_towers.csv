@@ -97,7 +97,7 @@ localizeentry,#hash_2ba1d30fa210ba7
 localizeentry,#hash_2ba1e30fa210d5a
 localizeentry,d#mpui/fastreload2_desc
 localizeentry,d#zmui/fmj_desc
-localizeentry,d#hash_3563fad2acf2d91
+localizeentry,d#menu/paused
 localizeentry,#hash_367563f9dd1e034
 localizeentry,#hash_36c62ddd36e79d6
 localizeentry,#hash_36c64ddd36e7d3c
@@ -2253,7 +2253,7 @@ localizeentry,#hash_53fd2bfc746518be
 localizeentry,#hash_53fd2dfc74651c24
 localizeentry,#hash_53fd2efc74651dd7
 localizeentry,#hash_53fd30fc7465213d
-localizeentry,d#hash_5400a284adf5eac0
+localizeentry,d#zmtrials/trial_completed
 localizeentry,#hash_540a1cb4353c73dc
 localizeentry,#hash_542e04dc209aa6e0
 localizeentry,#hash_542e09dc209aaf5f
@@ -3056,7 +3056,7 @@ localizeentry,#hash_70cfb2b2860f5ad9
 localizeentry,#hash_70cfb3b2860f5c8c
 localizeentry,#hash_70cfb4b2860f5e3f
 localizeentry,#hash_70cfb5b2860f5ff2
-localizeentry,d#hash_70dfd294fc69f682
+localizeentry,d#menu/yes
 localizeentry,#hash_710531ce6bfa48c8
 localizeentry,#hash_71104a14b5befcc0
 localizeentry,#hash_7110fa08628d485a

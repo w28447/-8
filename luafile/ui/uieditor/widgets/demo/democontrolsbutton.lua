@@ -43,7 +43,7 @@ CoD.DemoControlsButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local buttonPromptImage = LUI.UIImage.new( 0.5, 0.5, -16, 14, 0, 0, 42, 72 )
 	buttonPromptImage:setScale( 0.75, 0.75 )
-	buttonPromptImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x67D1E3A3D2D1BF ) )
+	buttonPromptImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_saturation_normal" ) )
 	buttonPromptImage:setShaderVector( 0, 1, 0, 0, 0 )
 	buttonPromptImage:linkToElementModel( self, "buttonPromptImage", true, function ( model )
 		local f4_local0 = model:get()

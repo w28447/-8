@@ -42,7 +42,7 @@ CoD.checkbox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_ar
 	self.checkboxCheck = checkboxCheck
 	
 	local labelText = LUI.UIText.new( 0, 0, 70, 750, 0, 0, 7, 45 )
-	labelText:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	labelText:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	labelText:setTTF( "default" )
 	labelText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	self:addElement( labelText )

@@ -11,7 +11,7 @@ CoD.CharacterSelection_CharacterRestrictedWarning.new = function ( f1_arg0, f1_a
 	local WarningIcon = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	WarningIcon:setRGB( ColorSet.ResistanceHigh.r, ColorSet.ResistanceHigh.g, ColorSet.ResistanceHigh.b )
 	WarningIcon:setAlpha( 0 )
-	WarningIcon:setImage( RegisterImage( 0x1F10DEAAEFC50A4 ) )
+	WarningIcon:setImage( RegisterImage( "uie_hud_common_core_score_waricon" ) )
 	self:addElement( WarningIcon )
 	self.WarningIcon = WarningIcon
 	

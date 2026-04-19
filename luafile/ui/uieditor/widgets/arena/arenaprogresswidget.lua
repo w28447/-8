@@ -21,7 +21,7 @@ CoD.ArenaProgressWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 0, 75, 1109, 0, 0, 2, 122 )
 	NoiseTiledBacking:setAlpha( 0.5 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -46,7 +46,7 @@ CoD.ArenaProgressWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	self.CornerTopRight = CornerTopRight
 	
 	local firestreakflipbook = LUI.UIImage.new( 0.5, 0.5, -665, -295, 0.5, 0.5, -223, 147 )
-	firestreakflipbook:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9227A50BA2B8D21 ) )
+	firestreakflipbook:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	firestreakflipbook:setShaderVector( 0, 4, 4, 0, 0 )
 	firestreakflipbook:setShaderVector( 1, 8, 0, 0, 0 )
 	firestreakflipbook:subscribeToGlobalModel( f1_arg1, "LeaguePlay", "leaguePlayFirestreakIcon", function ( model )

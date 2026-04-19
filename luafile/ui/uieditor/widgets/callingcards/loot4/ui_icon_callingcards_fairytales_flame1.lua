@@ -10,7 +10,7 @@ CoD.ui_icon_callingcards_fairytales_flame1.new = function ( f1_arg0, f1_arg1, f1
 	
 	local fire = LUI.UIImage.new( 0, 0, -220, 20, 0, 0, -92, 84 )
 	fire:setImage( RegisterImage( 0xFA81D113F99B252 ) )
-	fire:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	fire:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( fire )
 	self.fire = fire
 	

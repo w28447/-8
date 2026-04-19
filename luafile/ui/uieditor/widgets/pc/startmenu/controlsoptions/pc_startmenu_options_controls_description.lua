@@ -15,7 +15,7 @@ CoD.PC_StartMenu_Options_Controls_Description.new = function ( f1_arg0, f1_arg1,
 	self.anyChildUsesUpdateState = true
 	
 	local DescriptionTextBox = CoD.PC_StartMenu_Options_Controls_DescriptionText.new( f1_arg0, f1_arg1, 0, 0, 0, 673, 0, 0, 338, 540 )
-	DescriptionTextBox.OptionName:setText( LocalizeToUpperString( 0x93E719493E9E18F ) )
+	DescriptionTextBox.OptionName:setText( LocalizeToUpperString( "menu/new" ) )
 	self:addElement( DescriptionTextBox )
 	self.DescriptionTextBox = DescriptionTextBox
 	

@@ -24,7 +24,7 @@ CoD.PC_AchievementDetailedView_Points_BG.new = function ( f1_arg0, f1_arg1, f1_a
 	Border:setRGB( 0.31, 0.31, 0.31 )
 	Border:setAlpha( 0.15 )
 	Border:setImage( RegisterImage( 0xF1E3082B39E99BB ) )
-	Border:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	Border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	Border:setShaderVector( 0, 0, 0, 0, 0 )
 	Border:setupNineSliceShader( 6, 6 )
 	self:addElement( Border )

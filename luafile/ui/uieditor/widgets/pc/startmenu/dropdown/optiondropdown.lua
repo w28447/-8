@@ -116,7 +116,7 @@ CoD.OptionDropdown.new = function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3, f8_arg4,
 	self.StartMenuframenoBG00 = StartMenuframenoBG00
 	
 	local labelText = LUI.UIText.new( 0, 0, 14, 427, 0, 0, 7, 45 )
-	labelText:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	labelText:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	labelText:setTTF( "default" )
 	labelText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	labelText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

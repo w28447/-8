@@ -9,7 +9,7 @@ CoD.Rush_playercard_position_indicator.new = function ( f1_arg0, f1_arg1, f1_arg
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local NumberBg = LUI.UIImage.new( 0, 0, -19.5, 25.5, 0, 0, -13, 47 )
-	NumberBg:setImage( RegisterImage( 0x75D661B612187DF ) )
+	NumberBg:setImage( RegisterImage( "uie_objbg" ) )
 	self:addElement( NumberBg )
 	self.NumberBg = NumberBg
 	

@@ -20,7 +20,7 @@ CoD.Prestige_Fanfare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0.5, 0.5, -350, 350, 0.5, 0.5, -362, 358 )
 	NoiseTiledBacking:setAlpha( 0 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -45,7 +45,7 @@ CoD.Prestige_Fanfare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local infoBracketTop = LUI.UIImage.new( 0, 1, -1, 1, 0, 0, 177, 209 )
 	infoBracketTop:setAlpha( 0 )
 	infoBracketTop:setImage( RegisterImage( 0xCAD52FFFB7C32C1 ) )
-	infoBracketTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	infoBracketTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	infoBracketTop:setShaderVector( 0, 0, 0, 0, 0 )
 	infoBracketTop:setupNineSliceShader( 10, 16 )
 	self:addElement( infoBracketTop )
@@ -53,8 +53,8 @@ CoD.Prestige_Fanfare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local infoBracketBot = LUI.UIImage.new( 0, 1, -1, 1, 0, 0, 890, 898 )
 	infoBracketBot:setAlpha( 0 )
-	infoBracketBot:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	infoBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	infoBracketBot:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	infoBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	infoBracketBot:setShaderVector( 0, 0, 0, 0, 0 )
 	infoBracketBot:setupNineSliceShader( 16, 4 )
 	self:addElement( infoBracketBot )

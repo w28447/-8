@@ -34,7 +34,7 @@ CoD.PC_StartMenu_Options_Controls_DescriptionText.new = function ( f1_arg0, f1_a
 	
 	local OptionName = LUI.UIText.new( 0, 0, 0, 200, 0, 0, 0, 21 )
 	OptionName:setRGB( 0.76, 0.76, 0.76 )
-	OptionName:setText( LocalizeToUpperString( 0x93E719493E9E18F ) )
+	OptionName:setText( LocalizeToUpperString( "menu/new" ) )
 	OptionName:setTTF( "ttmussels_regular" )
 	OptionName:setLetterSpacing( 3 )
 	OptionName:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

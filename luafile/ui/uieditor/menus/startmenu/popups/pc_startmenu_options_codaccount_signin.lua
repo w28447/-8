@@ -73,7 +73,7 @@ LUI.createMenu.PC_StartMenu_Options_CoDAccount_SignIn = function ( f1_arg0, f1_a
 		CoD.CoDAccountUtility.ClearSignInEmailAndPasswordModels( f6_arg2 )
 		return true
 	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	self:subscribeToGlobalModel( f1_arg0, "UNOAccountInfo", "iTransactionResult", function ( model )

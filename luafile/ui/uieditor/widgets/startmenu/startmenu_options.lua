@@ -52,7 +52,7 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		end
 	end, function ( f5_arg0, f5_arg1, f5_arg2 )
 		if IsInDefaultState( self.Credits ) then
-			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -71,7 +71,7 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		}
 	} )
 	GraphicContent.StartMenuOptionsSubFrame.ImageContainer.ImageContainer:setImage( RegisterImage( 0x20D23108FF4BE21 ) )
-	GraphicContent.StartMenuOptionsSubFrame.ButtonText:setText( LocalizeToUpperString( 0xD52DB291DBBD257 ) )
+	GraphicContent.StartMenuOptionsSubFrame.ButtonText:setText( LocalizeToUpperString( "menu/content_filter" ) )
 	GraphicContent:registerEventHandler( "gain_focus", function ( element, event )
 		local f7_local0 = nil
 		if element.gainFocus then
@@ -93,7 +93,7 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		end
 	end, function ( f9_arg0, f9_arg1, f9_arg2 )
 		if IsInDefaultState( self.GraphicContent ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -112,7 +112,7 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		}
 	} )
 	Muting.StartMenuOptionsSubFrame.ImageContainer.ImageContainer:setImage( RegisterImage( 0x23A998652369752 ) )
-	Muting.StartMenuOptionsSubFrame.ButtonText:setText( LocalizeToUpperString( 0xB87589E683A1951 ) )
+	Muting.StartMenuOptionsSubFrame.ButtonText:setText( LocalizeToUpperString( "menu/muting" ) )
 	Muting:registerEventHandler( "gain_focus", function ( element, event )
 		local f11_local0 = nil
 		if element.gainFocus then
@@ -134,7 +134,7 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		end
 	end, function ( f13_arg0, f13_arg1, f13_arg2 )
 		if IsInDefaultState( self.Muting ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -153,7 +153,7 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		}
 	} )
 	Network.StartMenuOptionsSubFrame.ImageContainer.ImageContainer:setImage( RegisterImage( 0xE8E46047AB4630E ) )
-	Network.StartMenuOptionsSubFrame.ButtonText:setText( LocalizeToUpperString( 0x9F9A830F04564A7 ) )
+	Network.StartMenuOptionsSubFrame.ButtonText:setText( LocalizeToUpperString( "menu/network" ) )
 	Network:registerEventHandler( "gain_focus", function ( element, event )
 		local f15_local0 = nil
 		if element.gainFocus then
@@ -175,7 +175,7 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		end
 	end, function ( f17_arg0, f17_arg1, f17_arg2 )
 		if IsInDefaultState( self.Network ) then
-			CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -246,7 +246,7 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		end
 	end, function ( f23_arg0, f23_arg1, f23_arg2 )
 		if IsInDefaultState( self.Blackout ) then
-			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -265,7 +265,7 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		}
 	} )
 	Audio.StartMenuOptionsSubFrame.ImageContainer.ImageContainer:setImage( RegisterImage( 0xDBF36D40654D629 ) )
-	Audio.StartMenuOptionsSubFrame.ButtonText:setText( LocalizeToUpperString( 0xB8F71718019166B ) )
+	Audio.StartMenuOptionsSubFrame.ButtonText:setText( LocalizeToUpperString( "menu/audio" ) )
 	Audio:registerEventHandler( "gain_focus", function ( element, event )
 		local f25_local0 = nil
 		if element.gainFocus then
@@ -287,7 +287,7 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		end
 	end, function ( f27_arg0, f27_arg1, f27_arg2 )
 		if ShouldOpenGraphicsAndSoundOptions() then
-			CoD.Menu.SetButtonLabel( f27_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f27_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -306,7 +306,7 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		}
 	} )
 	Graphics.StartMenuOptionsSubFrame.ImageContainer.ImageContainer:setImage( RegisterImage( 0x755FBEF24CD892F ) )
-	Graphics.StartMenuOptionsSubFrame.ButtonText:setText( LocalizeToUpperString( 0xE2B4B3485831A1A ) )
+	Graphics.StartMenuOptionsSubFrame.ButtonText:setText( LocalizeToUpperString( "menu/graphics" ) )
 	Graphics:registerEventHandler( "gain_focus", function ( element, event )
 		local f29_local0 = nil
 		if element.gainFocus then
@@ -328,7 +328,7 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		end
 	end, function ( f31_arg0, f31_arg1, f31_arg2 )
 		if IsInDefaultState( self.Graphics ) then
-			CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -338,7 +338,7 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.Graphics = Graphics
 	
 	Controls = CoD.StartMenu_Button_SM.new( f1_arg0, f1_arg1, 0.5, 0.5, -521.5, -281.5, 0.5, 0.5, -336, -96 )
-	Controls.StartMenuOptionsSubFrame.ButtonText:setText( LocalizeToUpperString( 0x19352A5A4C9CAC9 ) )
+	Controls.StartMenuOptionsSubFrame.ButtonText:setText( LocalizeToUpperString( "menu/controls" ) )
 	Controls:subscribeToGlobalModel( f1_arg1, "PlatformControllerImage", "image", function ( model )
 		local f32_local0 = model:get()
 		if f32_local0 ~= nil then
@@ -361,7 +361,7 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		PlaySoundAlias( "uin_toggle_generic" )
 		return true
 	end, function ( f35_arg0, f35_arg1, f35_arg2 )
-		CoD.Menu.SetButtonLabel( f35_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f35_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( Controls )
@@ -447,10 +447,10 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		end
 	end, function ( f45_arg0, f45_arg1, f45_arg2 )
 		if CoD.CoDAccountUtility.IsAccountFeatureEnabled( f45_arg2 ) and not IsSignedIntoUno( f45_arg2 ) then
-			CoD.Menu.SetButtonLabel( f45_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f45_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif CoD.CoDAccountUtility.IsAccountFeatureEnabled( f45_arg2 ) and IsSignedIntoUno( f45_arg2 ) then
-			CoD.Menu.SetButtonLabel( f45_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f45_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -460,8 +460,8 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.CoDAccount = CoDAccount
 	
 	PrivacySettingsButton = CoD.StartMenu_Options_PrivacySettingsButton.new( f1_arg0, f1_arg1, 0.5, 0.5, -265, 249, 0.5, 0.5, 313, 382 )
-	PrivacySettingsButton.DirectorCustomStartButton.MiddleText:setText( LocalizeToUpperString( 0x5EB6FED86163697 ) )
-	PrivacySettingsButton.DirectorCustomStartButton.MiddleTextFocus:setText( LocalizeToUpperString( 0x5EB6FED86163697 ) )
+	PrivacySettingsButton.DirectorCustomStartButton.MiddleText:setText( LocalizeToUpperString( "menu/privacy_settings" ) )
+	PrivacySettingsButton.DirectorCustomStartButton.MiddleTextFocus:setText( LocalizeToUpperString( "menu/privacy_settings" ) )
 	PrivacySettingsButton:registerEventHandler( "gain_focus", function ( element, event )
 		local f46_local0 = nil
 		if element.gainFocus then
@@ -477,7 +477,7 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		PlaySoundAlias( "uin_toggle_generic" )
 		return true
 	end, function ( f48_arg0, f48_arg1, f48_arg2 )
-		CoD.Menu.SetButtonLabel( f48_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f48_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( PrivacySettingsButton )
@@ -581,8 +581,8 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		} )
 	end, false )
 	DirectorGenericButton:setScale( 0.7, 0.7 )
-	DirectorGenericButton.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( 0x94E8FF2C42CAFFB ) )
-	DirectorGenericButton.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( 0x94E8FF2C42CAFFB ) )
+	DirectorGenericButton.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( "warzone/start_warzone" ) )
+	DirectorGenericButton.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( "warzone/start_warzone" ) )
 	DirectorGenericButton:appendEventHandler( "on_session_start", function ( f60_arg0, f60_arg1 )
 		f60_arg1.menu = f60_arg1.menu or f1_arg0
 		CoD.Menu.UpdateButtonShownState( f60_arg0, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )

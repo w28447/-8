@@ -1,7 +1,7 @@
 require( "lua/lobby/common/lobbycore" )
 require( "lua/lobby/process/lobbyprocessnavigate" )
 require( "lua/lobby/process/lobbyprocess" )
-require( "x64:fce63782cae60aa" )
+require( "lua/lobby/matchmaking/lobbymatchmakingasync" )
 require( "x64:9adb55ef4325b4b" )
 require( "lua/shared/lobbydata" )
 require( "lua/shared/luaenum" )

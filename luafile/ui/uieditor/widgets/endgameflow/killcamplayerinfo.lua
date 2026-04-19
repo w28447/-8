@@ -176,7 +176,7 @@ CoD.KillcamPlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local KillerLabel = LUI.UIText.new( 0.5, 0.5, -385.5, -104.5, 0.5, 0.5, -47, -17 )
 	KillerLabel:setRGB( ColorSet.EnemyOrange.r, ColorSet.EnemyOrange.g, ColorSet.EnemyOrange.b )
 	KillerLabel:setScale( 0.6, 0.6 )
-	KillerLabel:setText( LocalizeToUpperString( 0x91876E35BECF3CD ) )
+	KillerLabel:setText( LocalizeToUpperString( "menu/enemy" ) )
 	KillerLabel:setTTF( "0arame_mono_stencil" )
 	KillerLabel:setLetterSpacing( 7 )
 	KillerLabel:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )
@@ -231,14 +231,14 @@ CoD.KillcamPlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local SmashFlare3 = LUI.UIImage.new( 0, 0, 448, 1472, 0, 0, -412, 612 )
 	SmashFlare3:setImage( RegisterImage( 0x3BEA16D33C8F870 ) )
-	SmashFlare3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	SmashFlare3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( SmashFlare3 )
 	self.SmashFlare3 = SmashFlare3
 	
 	local SmashFlare = LUI.UIImage.new( 0, 0, 448, 1472, 0, 0, -412, 612 )
 	SmashFlare:setZRot( 90 )
 	SmashFlare:setImage( RegisterImage( 0x86A85E0C09931D2 ) )
-	SmashFlare:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	SmashFlare:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( SmashFlare )
 	self.SmashFlare = SmashFlare
 	

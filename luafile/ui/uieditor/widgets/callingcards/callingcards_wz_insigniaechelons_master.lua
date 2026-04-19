@@ -74,7 +74,7 @@ CoD[0x7ED38F84B5D585D].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local gemShimmer = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	gemShimmer:setAlpha( 0.3 )
 	gemShimmer:setImage( RegisterImage( 0xA6DA8DA926EEBA8 ) )
-	gemShimmer:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9227A50BA2B8D21 ) )
+	gemShimmer:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	gemShimmer:setShaderVector( 0, 0, 3, 0, 0 )
 	gemShimmer:setShaderVector( 1, 2, 0, 0, 0 )
 	self:addElement( gemShimmer )
@@ -83,21 +83,21 @@ CoD[0x7ED38F84B5D585D].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local snakeeyeglow = LUI.UIImage.new( 0, 0, 711.5, 812.5, 0, 0, 54.5, 130.5 )
 	snakeeyeglow:setZRot( -33 )
 	snakeeyeglow:setImage( RegisterImage( 0xCF0A8F3487C74C2 ) )
-	snakeeyeglow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	snakeeyeglow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( snakeeyeglow )
 	self.snakeeyeglow = snakeeyeglow
 	
 	local snakeeyeglow2 = LUI.UIImage.new( 0, 0, 747.5, 848.5, 0, 0, 47.5, 123.5 )
 	snakeeyeglow2:setZRot( 77 )
 	snakeeyeglow2:setImage( RegisterImage( 0xCF0A8F3487C74C2 ) )
-	snakeeyeglow2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	snakeeyeglow2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( snakeeyeglow2 )
 	self.snakeeyeglow2 = snakeeyeglow2
 	
 	local snakeSheen = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	snakeSheen:setAlpha( 0.25 )
 	snakeSheen:setImage( RegisterImage( 0x442C43303DD29AB ) )
-	snakeSheen:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9227A50BA2B8D21 ) )
+	snakeSheen:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	snakeSheen:setShaderVector( 0, 0, 3, 0, 0 )
 	snakeSheen:setShaderVector( 1, 6, 0, 0, 0 )
 	self:addElement( snakeSheen )
@@ -105,19 +105,19 @@ CoD[0x7ED38F84B5D585D].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local rockglow1 = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, -1.5, 240.5 )
 	rockglow1:setImage( RegisterImage( 0x5F8C4C8DE8E1EE ) )
-	rockglow1:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	rockglow1:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( rockglow1 )
 	self.rockglow1 = rockglow1
 	
 	local rockglow2 = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	rockglow2:setImage( RegisterImage( 0x5F8B4C8DE8E03B ) )
-	rockglow2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	rockglow2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( rockglow2 )
 	self.rockglow2 = rockglow2
 	
 	local rockglow3 = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	rockglow3:setImage( RegisterImage( 0x5F8A4C8DE8DE88 ) )
-	rockglow3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	rockglow3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( rockglow3 )
 	self.rockglow3 = rockglow3
 	

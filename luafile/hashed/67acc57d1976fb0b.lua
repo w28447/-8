@@ -14,7 +14,7 @@ CoD.EmblemEditorMaterialInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.anyChildUsesUpdateState = true
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0.5, 0.5, -270, 270, 0.5, 0.5, -34, 34 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -180,7 +180,7 @@ CoD.EmblemEditorMaterialInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local dividerH = LUI.UIImage.new( 0, 0, 0, 539, 0, 0, 29, 33 )
 	dividerH:setAlpha( 0.2 )
-	dividerH:setImage( RegisterImage( 0x84B43D5B04D263A ) )
+	dividerH:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_line" ) )
 	dividerH:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	dividerH:setShaderVector( 0, 0, 0, 0, 0 )
 	dividerH:setupNineSliceShader( 8, 4 )
@@ -189,8 +189,8 @@ CoD.EmblemEditorMaterialInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local Frame = LUI.UIImage.new( 0, 0, -1, 540, 0, 0, -1, 69 )
 	Frame:setAlpha( 0.2 )
-	Frame:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	Frame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	Frame:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	Frame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Frame:setShaderVector( 0, 0, 0, 0, 0 )
 	Frame:setupNineSliceShader( 16, 16 )
 	self:addElement( Frame )
@@ -199,7 +199,7 @@ CoD.EmblemEditorMaterialInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local Divider01 = LUI.UIImage.new( 0, 0, 166, 170, 0, 0, 0, 68 )
 	Divider01:setRGB( 0.92, 0.92, 0.92 )
 	Divider01:setAlpha( 0.1 )
-	Divider01:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
+	Divider01:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
 	Divider01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	Divider01:setShaderVector( 0, 0, 0, 0, 0 )
 	Divider01:setupNineSliceShader( 4, 8 )
@@ -209,7 +209,7 @@ CoD.EmblemEditorMaterialInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local Divider = LUI.UIImage.new( 0, 0, 339.5, 343.5, 0, 0, 0, 68 )
 	Divider:setRGB( 0.92, 0.92, 0.92 )
 	Divider:setAlpha( 0.1 )
-	Divider:setImage( RegisterImage( uie_ui_hud_tak5_repeat_linker ) )
+	Divider:setImage( RegisterImage( "uie_ui_hud_tak5_repeat_linker" ) )
 	Divider:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	Divider:setShaderVector( 0, 0, 0, 0, 0 )
 	Divider:setupNineSliceShader( 4, 8 )

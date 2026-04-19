@@ -12,7 +12,7 @@ CoD.ToastContentLarge.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, -5, 1 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -45,15 +45,15 @@ CoD.ToastContentLarge.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	CommonFrame01:setRGB( 0.59, 0.59, 0.59 )
 	CommonFrame01:setAlpha( 0.25 )
 	CommonFrame01:setImage( RegisterImage( 0xCA6E5C175806396 ) )
-	CommonFrame01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	CommonFrame01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	CommonFrame01:setShaderVector( 0, 0, 0, 0, 0 )
 	CommonFrame01:setupNineSliceShader( 8, 8 )
 	self:addElement( CommonFrame01 )
 	self.CommonFrame01 = CommonFrame01
 	
 	local BottomBracket9Slice = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, -7, 2 )
-	BottomBracket9Slice:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	BottomBracket9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	BottomBracket9Slice:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	BottomBracket9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BottomBracket9Slice:setShaderVector( 0, 0, 0, 0, 0 )
 	BottomBracket9Slice:setupNineSliceShader( 16, 4 )
 	self:addElement( BottomBracket9Slice )
@@ -61,8 +61,8 @@ CoD.ToastContentLarge.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local BottomBracket9Slice2 = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 24, 33 )
 	BottomBracket9Slice2:setZRot( 180 )
-	BottomBracket9Slice2:setImage( RegisterImage( 0xC325BED3F226657 ) )
-	BottomBracket9Slice2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	BottomBracket9Slice2:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame" ) )
+	BottomBracket9Slice2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BottomBracket9Slice2:setShaderVector( 0, 0, 0, 0, 0 )
 	BottomBracket9Slice2:setupNineSliceShader( 16, 4 )
 	self:addElement( BottomBracket9Slice2 )

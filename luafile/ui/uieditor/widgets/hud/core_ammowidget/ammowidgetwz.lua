@@ -68,7 +68,7 @@ CoD.AmmoWidgetWZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	local GlowWeapon = LUI.UIImage.new( 0, 0, 459, 652, 0, 0, -24.5, 108.5 )
 	GlowWeapon:setAlpha( 0.03 )
 	GlowWeapon:setImage( RegisterImage( 0xD9665F2DAD5E915 ) )
-	GlowWeapon:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	GlowWeapon:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowWeapon )
 	self.GlowWeapon = GlowWeapon
 	

@@ -42,7 +42,7 @@ CoD.StartMenu_Options_GamepadLayoutOption.new = function ( f1_arg0, f1_arg1, f1_
 	self.valueBacking = valueBacking
 	
 	local valueText = LUI.UIText.new( 1, 1, -375, -90, 0, 0, 11, 49 )
-	valueText:setText( Engine[0xF9F1239CFD921FE]( 0x93E719493E9E18F ) )
+	valueText:setText( Engine[0xF9F1239CFD921FE]( "menu/new" ) )
 	valueText:setTTF( "default" )
 	valueText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	valueText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

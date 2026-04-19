@@ -50,7 +50,7 @@ CoD.CamoSlotWideInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local ProgressBar = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, -79, 1 )
 	ProgressBar:setAlpha( 0 )
 	ProgressBar:setImage( RegisterImage( 0xF090ADEC8D52EF0 ) )
-	ProgressBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x316E67E1DF2198E ) )
+	ProgressBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	ProgressBar:setShaderVector( 1, 0, 0, 0, 0 )
 	ProgressBar:setShaderVector( 2, 1, 0, 0, 0 )
 	ProgressBar:setShaderVector( 3, 0, 0, 0, 0 )
@@ -71,13 +71,13 @@ CoD.CamoSlotWideInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local LockedX = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	LockedX:setRGB( ColorSet.Title.r, ColorSet.Title.g, ColorSet.Title.b )
 	LockedX:setAlpha( 0 )
-	LockedX:setImage( RegisterImage( 0xCE50842B84CCD5D ) )
+	LockedX:setImage( RegisterImage( "uie_spawnselect_crosshair_auto" ) )
 	self:addElement( LockedX )
 	self.LockedX = LockedX
 	
 	local LockedIcon = LUI.UIImage.new( 0.5, 0.5, -15, 15, 0.5, 0.5, -15, 15 )
 	LockedIcon:setAlpha( 0 )
-	LockedIcon:setImage( RegisterImage( 0xB8AD8D12CEB707D ) )
+	LockedIcon:setImage( RegisterImage( "uie_icon_locks_lock_01" ) )
 	self:addElement( LockedIcon )
 	self.LockedIcon = LockedIcon
 	

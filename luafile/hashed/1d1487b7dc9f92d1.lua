@@ -47,29 +47,29 @@ CoD.PrestigeAttachmentSlot.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local LockedIcon = LUI.UIImage.new( 0.5, 0.5, -15, 15, 0.5, 0.5, -15, 15 )
 	LockedIcon:setAlpha( 0 )
-	LockedIcon:setImage( RegisterImage( 0xB8AD8D12CEB707D ) )
+	LockedIcon:setImage( RegisterImage( "uie_icon_locks_lock_01" ) )
 	self:addElement( LockedIcon )
 	self.LockedIcon = LockedIcon
 	
 	local Backing = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Backing:setRGB( ColorSet.Title.r, ColorSet.Title.g, ColorSet.Title.b )
 	Backing:setAlpha( 0 )
-	Backing:setImage( RegisterImage( 0xCE50842B84CCD5D ) )
+	Backing:setImage( RegisterImage( "uie_spawnselect_crosshair_auto" ) )
 	self:addElement( Backing )
 	self.Backing = Backing
 	
 	local EquippedMarkerTick = LUI.UIImage.new( 1, 1, -36, 8, 0, 0, -7, 37 )
 	EquippedMarkerTick:setAlpha( 0 )
 	EquippedMarkerTick:setZoom( 4 )
-	EquippedMarkerTick:setImage( RegisterImage( 0x9A8B26C9B001758 ) )
+	EquippedMarkerTick:setImage( RegisterImage( "uie_ui_menu_cac_equipped_marker_tick" ) )
 	self:addElement( EquippedMarkerTick )
 	self.EquippedMarkerTick = EquippedMarkerTick
 	
 	local EquippedMarkerBG = LUI.UIImage.new( 1, 1, -36, 8, 0, 0, -7, 37 )
 	EquippedMarkerBG:setAlpha( 0 )
 	EquippedMarkerBG:setZoom( 4 )
-	EquippedMarkerBG:setImage( RegisterImage( 0x7AF532D84DE505A ) )
-	EquippedMarkerBG:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	EquippedMarkerBG:setImage( RegisterImage( "uie_ui_menu_cac_equipped_marker_bg" ) )
+	EquippedMarkerBG:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( EquippedMarkerBG )
 	self.EquippedMarkerBG = EquippedMarkerBG
 	

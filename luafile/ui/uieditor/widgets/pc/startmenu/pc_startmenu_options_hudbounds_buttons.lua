@@ -40,7 +40,7 @@ CoD.PC_StartMenu_Options_HUDBounds_Buttons.new = function ( f1_arg0, f1_arg1, f1
 	
 	local cancelButton = CoD.featureOverlay_Button.new( f1_arg0, f1_arg1, 0.5, 0.5, -115, 115, 0, 0, 0, 60 )
 	cancelButton.ButtonContainer.Blur:setAlpha( 0 )
-	cancelButton.ButtonContainer.Title:setText( LocalizeToUpperString( 0xC2E92C54C2BE289 ) )
+	cancelButton.ButtonContainer.Title:setText( LocalizeToUpperString( "menu/cancel" ) )
 	cancelButton.ButtonContainer.Icon:setRGB( 0.72, 0.21, 0.21 )
 	cancelButton.ButtonContainer.Icon:setImage( RegisterImage( 0x8A51A51C46F2B11 ) )
 	cancelButton:registerEventHandler( "gain_focus", function ( element, event )

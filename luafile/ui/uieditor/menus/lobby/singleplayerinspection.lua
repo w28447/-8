@@ -110,7 +110,7 @@ LUI.createMenu.SinglePlayerInspection = function ( f1_arg0, f1_arg1 )
 		GoBack( self, f11_arg2 )
 		return true
 	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x70A9FDC87CD3D48, nil, nil )
+		CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

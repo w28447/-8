@@ -23,7 +23,7 @@ CoD.CodCasterTeamLogoButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local ButtonDisabled = LUI.UIImage.new( 0.5, 0.5, -45, 45, 0.5, 0.5, -31, 31 )
 	ButtonDisabled:setAlpha( 0 )
-	ButtonDisabled:setImage( RegisterImage( 0x66C228F469B9CE3 ) )
+	ButtonDisabled:setImage( RegisterImage( "uie_ui_menu_cac_attachment_button_disabled" ) )
 	self:addElement( ButtonDisabled )
 	self.ButtonDisabled = ButtonDisabled
 	
@@ -44,7 +44,7 @@ CoD.CodCasterTeamLogoButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local FocusGlow = LUI.UIImage.new( 0, 1, -49, 49, 0, 1, -51, 51 )
 	FocusGlow:setAlpha( 0 )
-	FocusGlow:setImage( RegisterImage( 0xB8F10D49D85E9C4 ) )
+	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_small" ) )
 	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.25, 0.25 )
 	FocusGlow:setShaderVector( 1, 1.2, 0, 0, 0 )
@@ -54,7 +54,7 @@ CoD.CodCasterTeamLogoButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, -1, 1 )
 	NoiseTiledBacking:setAlpha( 0.5 )
-	NoiseTiledBacking:setImage( RegisterImage( 0x34839E8065B1E53 ) )
+	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
 	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
@@ -63,8 +63,8 @@ CoD.CodCasterTeamLogoButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local FrameBorder = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	FrameBorder:setAlpha( 0.15 )
-	FrameBorder:setImage( RegisterImage( 0x185E11D74ECA3D7 ) )
-	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FrameBorder:setImage( RegisterImage( "uie_ui_menu_store_common_frame" ) )
+	FrameBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrameBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FrameBorder:setupNineSliceShader( 12, 12 )
 	self:addElement( FrameBorder )
@@ -78,8 +78,8 @@ CoD.CodCasterTeamLogoButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local FocusBorder = LUI.UIImage.new( 0, 1, -4, 4, 0, 1, -3, 3 )
 	FocusBorder:setRGB( 0.96, 0.94, 0.78 )
 	FocusBorder:setAlpha( 0 )
-	FocusBorder:setImage( RegisterImage( 0xCB07CCC28498CB2 ) )
-	FocusBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	FocusBorder:setImage( RegisterImage( "uie_ui_menu_store_focus_frame" ) )
+	FocusBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FocusBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	FocusBorder:setupNineSliceShader( 10, 10 )
 	self:addElement( FocusBorder )
@@ -92,14 +92,14 @@ CoD.CodCasterTeamLogoButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local BGGlow = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BGGlow:setAlpha( 0 )
-	BGGlow:setImage( RegisterImage( 0xC270E906CDA1B2E ) )
-	BGGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	BGGlow:setImage( RegisterImage( "uie_ui_menu_common_button_bg_glow_large" ) )
+	BGGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BGGlow )
 	self.BGGlow = BGGlow
 	
 	local BGDotPatternLarge = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BGDotPatternLarge:setAlpha( 0.02 )
-	BGDotPatternLarge:setImage( RegisterImage( 0xFC21A8215EA012B ) )
+	BGDotPatternLarge:setImage( RegisterImage( "uie_ui_menu_common_button_bg_pattern_large" ) )
 	BGDotPatternLarge:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	BGDotPatternLarge:setShaderVector( 0, 0, 0, 0, 0 )
 	BGDotPatternLarge:setupNineSliceShader( 4, 4 )

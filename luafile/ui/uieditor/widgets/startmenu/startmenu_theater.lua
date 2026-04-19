@@ -90,7 +90,7 @@ CoD.StartMenu_Theater.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		end
 	end, function ( f9_arg0, f9_arg1, f9_arg2 )
 		if HasListAction( f9_arg0, f9_arg2 ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, nil )
+			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

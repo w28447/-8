@@ -26,7 +26,7 @@ CoD[0x3E15977AA24AE9].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local LightSpin = LUI.UIImage.new( 0, 0, 153, 979, 0, 0, -423, 403 )
 	LightSpin:setImage( RegisterImage( 0xCDE878DE89C8808 ) )
-	LightSpin:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	LightSpin:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( LightSpin )
 	self.LightSpin = LightSpin
 	
@@ -69,7 +69,7 @@ CoD[0x3E15977AA24AE9].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local lightSource = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	lightSource:setAlpha( 0.2 )
 	lightSource:setImage( RegisterImage( 0xAF3A3B27E2F12D3 ) )
-	lightSource:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	lightSource:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( lightSource )
 	self.lightSource = lightSource
 	

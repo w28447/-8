@@ -1638,14 +1638,14 @@ function function_fc4dc54( var_6fcde3b6 = 0 )
             }
             
             var_eb49090f = hashtostring( function_b14806c6( i, session_mode ) );
-            var_4f6b7b98 = var_1a27a47a + "<dev string:x1c2>" + ( isdefined( var_eb49090f ) ? var_eb49090f : "<dev string:x1c8>" ) + "<dev string:x1cf>";
+            menu_text = var_1a27a47a + "<dev string:x1c2>" + ( isdefined( var_eb49090f ) ? var_eb49090f : "<dev string:x1c8>" ) + "<dev string:x1cf>";
             
             if ( !isdefined( var_d59b8ebf.enabled ) || var_d59b8ebf.enabled == 0 )
             {
-                var_4f6b7b98 += "<dev string:x1d3>";
+                menu_text += "<dev string:x1d3>";
             }
             
-            abilities_devgui_add_player_command( root, pid, var_4f6b7b98, i, "<dev string:x1e1>", i );
+            abilities_devgui_add_player_command( root, pid, menu_text, i, "<dev string:x1e1>", i );
         }
         
         menu_index++;

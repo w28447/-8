@@ -133,7 +133,7 @@ LUI.createMenu.LobbyServerBrowserOverlay = function ( f1_arg0, f1_arg1 )
 	local CornerPipR = LUI.UIImage.new( 0, 0, 1749.5, 1765.5, 0, 0, 830, 846 )
 	CornerPipR:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	CornerPipR:setAlpha( 0.25 )
-	CornerPipR:setImage( RegisterImage( 0x8DC834094E7A02C ) )
+	CornerPipR:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
 	self:addElement( CornerPipR )
 	self.CornerPipR = CornerPipR
 	
@@ -141,7 +141,7 @@ LUI.createMenu.LobbyServerBrowserOverlay = function ( f1_arg0, f1_arg1 )
 	CornerPipL:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	CornerPipL:setAlpha( 0.25 )
 	CornerPipL:setYRot( 180 )
-	CornerPipL:setImage( RegisterImage( 0x8DC834094E7A02C ) )
+	CornerPipL:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
 	self:addElement( CornerPipL )
 	self.CornerPipL = CornerPipL
 	

@@ -21,7 +21,7 @@ CoD.KIllcamTeamPanelLeft.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	CallingCardHighlightLeft1:setAlpha( 0.5 )
 	CallingCardHighlightLeft1:setZRot( 180 )
 	CallingCardHighlightLeft1:setImage( RegisterImage( 0x277059AB3BFAEFA ) )
-	CallingCardHighlightLeft1:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	CallingCardHighlightLeft1:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CallingCardHighlightLeft1 )
 	self.CallingCardHighlightLeft1 = CallingCardHighlightLeft1
 	
@@ -46,7 +46,7 @@ CoD.KIllcamTeamPanelLeft.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	CallingCardFlareLeft:setRGB( 0.8, 0.34, 0.34 )
 	CallingCardFlareLeft:setZRot( 180 )
 	CallingCardFlareLeft:setImage( RegisterImage( 0x4C0D64C8709CA1C ) )
-	CallingCardFlareLeft:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	CallingCardFlareLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CallingCardFlareLeft )
 	self.CallingCardFlareLeft = CallingCardFlareLeft
 	

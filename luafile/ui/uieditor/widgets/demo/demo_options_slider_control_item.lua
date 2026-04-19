@@ -49,7 +49,7 @@ CoD.demo_options_slider_control_item.new = function ( f2_arg0, f2_arg1, f2_arg2,
 		SendButtonPressToMenuEx( f5_arg1, f5_arg2, Enum.LUIButton[0x57783F8DA4AAEF] )
 		return true
 	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "MOUSE1" )
+		CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "MOUSE1" )
 		return true
 	end, false )
 	self:addElement( left )
@@ -73,7 +73,7 @@ CoD.demo_options_slider_control_item.new = function ( f2_arg0, f2_arg1, f2_arg2,
 		SendButtonPressToMenuEx( f8_arg1, f8_arg2, Enum.LUIButton[0x571F08AD84807E0] )
 		return true
 	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "MOUSE1" )
+		CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "MOUSE1" )
 		return true
 	end, false )
 	self:addElement( right )

@@ -35,7 +35,7 @@ CoD.ZMInvObjectiveProgress.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local TextBacking = LUI.UIImage.new( 0.5, 0.5, -192, 192, 0, 0, 3, 137 )
 	TextBacking:setAlpha( 0.9 )
-	TextBacking:setImage( RegisterImage( 0xF034C487614E57C ) )
+	TextBacking:setImage( RegisterImage( "uie_zm_hud_inventory_objectivesmoke" ) )
 	TextBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	TextBacking:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( TextBacking )

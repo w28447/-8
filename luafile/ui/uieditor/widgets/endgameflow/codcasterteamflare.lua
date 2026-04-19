@@ -23,7 +23,7 @@ CoD.CODCasterTeamFlare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local FlareTop = LUI.UIImage.new( 0.5, 0.5, -66, 66, 0.5, 0.5, -66, 66 )
 	FlareTop:setAlpha( 0 )
 	FlareTop:setImage( RegisterImage( 0x86A85E0C09931D2 ) )
-	FlareTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	FlareTop:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FlareTop )
 	self.FlareTop = FlareTop
 	

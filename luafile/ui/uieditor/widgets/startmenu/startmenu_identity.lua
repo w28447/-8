@@ -91,10 +91,10 @@ CoD.StartMenu_Identity.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 		end
 	end, function ( f11_arg0, f11_arg1, f11_arg2 )
 		if IsGameTrial() then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif IsLive() and not IsUserContentRestricted( f11_arg2 ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -174,10 +174,10 @@ CoD.StartMenu_Identity.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 		end
 	end, function ( f21_arg0, f21_arg1, f21_arg2 )
 		if IsGameTrial() then
-			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif IsLive() and not IsUserContentRestricted( f21_arg2 ) and IsInDefaultState( f21_arg0 ) then
-			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -236,7 +236,7 @@ CoD.StartMenu_Identity.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 			return true
 		end
 	end, function ( f28_arg0, f28_arg1, f28_arg2 )
-		CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+		CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( Emblems )
@@ -315,7 +315,7 @@ CoD.StartMenu_Identity.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 		end
 	end, function ( f36_arg0, f36_arg1, f36_arg2 )
 		if IsInDefaultState( f36_arg0 ) then
-			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD0BB36CD318F55F, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -342,27 +342,27 @@ CoD.StartMenu_Identity.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	CornerPipTR = LUI.UIImage.new( 0.5, 0.5, 578, 602, 0.5, 0.5, -384, -360 )
 	CornerPipTR:setAlpha( 0.05 )
 	CornerPipTR:setZRot( -90 )
-	CornerPipTR:setImage( RegisterImage( 0x8DC834094E7A02C ) )
+	CornerPipTR:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
 	self:addElement( CornerPipTR )
 	self.CornerPipTR = CornerPipTR
 	
 	local CornerPipTL = LUI.UIImage.new( 0.5, 0.5, -602, -578, 0.5, 0.5, -384, -360 )
 	CornerPipTL:setAlpha( 0.05 )
-	CornerPipTL:setImage( RegisterImage( 0x8DC834094E7A02C ) )
+	CornerPipTL:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
 	self:addElement( CornerPipTL )
 	self.CornerPipTL = CornerPipTL
 	
 	local CornerPipBR = LUI.UIImage.new( 0.5, 0.5, 580, 604, 0.5, 0.5, 365.5, 389.5 )
 	CornerPipBR:setAlpha( 0.05 )
 	CornerPipBR:setZRot( 180 )
-	CornerPipBR:setImage( RegisterImage( 0x8DC834094E7A02C ) )
+	CornerPipBR:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
 	self:addElement( CornerPipBR )
 	self.CornerPipBR = CornerPipBR
 	
 	local CornerPipBL = LUI.UIImage.new( 0.5, 0.5, -602, -578, 0.5, 0.5, 365.5, 389.5 )
 	CornerPipBL:setAlpha( 0.05 )
 	CornerPipBL:setZRot( 90 )
-	CornerPipBL:setImage( RegisterImage( 0x8DC834094E7A02C ) )
+	CornerPipBL:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
 	self:addElement( CornerPipBL )
 	self.CornerPipBL = CornerPipBL
 	

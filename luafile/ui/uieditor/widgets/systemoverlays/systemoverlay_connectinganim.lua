@@ -22,7 +22,7 @@ CoD.systemOverlay_connectinganim.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local overlay = LUI.UIImage.new( 0, 0, 1, 549, 0, 0, 0, 286 )
 	overlay:setImage( RegisterImage( 0x68F5858FAFFA8DC ) )
-	overlay:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	overlay:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	overlay:setShaderVector( 0, -1, 0, 0, 0 )
 	overlay:setShaderVector( 1, 0.07, 0.07, 0, 0 )
 	overlay:setShaderVector( 2, 0, 1, 0, 0 )
@@ -33,7 +33,7 @@ CoD.systemOverlay_connectinganim.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local overlay2 = LUI.UIImage.new( 0, 0, 1, 549, 0, 0, 0, 286 )
 	overlay2:setImage( RegisterImage( 0x68F5858FAFFA8DC ) )
-	overlay2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	overlay2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	overlay2:setShaderVector( 0, -0.1, 0, 0, 0 )
 	overlay2:setShaderVector( 1, 0.7, 0.7, 0, 0 )
 	overlay2:setShaderVector( 2, 0, 1, 0, 0 )
@@ -44,7 +44,7 @@ CoD.systemOverlay_connectinganim.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local overlay3 = LUI.UIImage.new( 0, 0, 1, 549, 0, 0, 0, 286 )
 	overlay3:setImage( RegisterImage( 0x68F5858FAFFA8DC ) )
-	overlay3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	overlay3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	overlay3:setShaderVector( 0, 1, 1.1, 0, 0 )
 	overlay3:setShaderVector( 1, 0.05, 0.05, 0, 0 )
 	overlay3:setShaderVector( 2, 0, 1, 0, 0 )
@@ -76,19 +76,19 @@ CoD.systemOverlay_connectinganim.__resetProperties = function ( f2_arg0 )
 	f2_arg0.overlay2:completeAnimation()
 	f2_arg0.overlay:completeAnimation()
 	f2_arg0.overlay3:completeAnimation()
-	f2_arg0.overlay2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	f2_arg0.overlay2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	f2_arg0.overlay2:setShaderVector( 0, -0.1, 0, 0, 0 )
 	f2_arg0.overlay2:setShaderVector( 1, 0.7, 0.7, 0, 0 )
 	f2_arg0.overlay2:setShaderVector( 2, 0, 1, 0, 0 )
 	f2_arg0.overlay2:setShaderVector( 3, 0, 0, 0, 0 )
 	f2_arg0.overlay2:setShaderVector( 4, 0, 0, 0, 0 )
-	f2_arg0.overlay:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	f2_arg0.overlay:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	f2_arg0.overlay:setShaderVector( 0, -1, 0, 0, 0 )
 	f2_arg0.overlay:setShaderVector( 1, 0.07, 0.07, 0, 0 )
 	f2_arg0.overlay:setShaderVector( 2, 0, 1, 0, 0 )
 	f2_arg0.overlay:setShaderVector( 3, 0, 0, 0, 0 )
 	f2_arg0.overlay:setShaderVector( 4, 0, 0, 0, 0 )
-	f2_arg0.overlay3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+	f2_arg0.overlay3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	f2_arg0.overlay3:setShaderVector( 0, 1, 1.1, 0, 0 )
 	f2_arg0.overlay3:setShaderVector( 1, 0.05, 0.05, 0, 0 )
 	f2_arg0.overlay3:setShaderVector( 2, 0, 1, 0, 0 )
@@ -109,7 +109,7 @@ CoD.systemOverlay_connectinganim.__clipsPerState = {
 			end
 			
 			f3_arg0.overlay:completeAnimation()
-			f3_arg0.overlay:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+			f3_arg0.overlay:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 			f3_arg0.overlay:setShaderVector( 0, -0.3, 0, 0, 0 )
 			f3_arg0.overlay:setShaderVector( 1, 0.25, 0.25, 0, 0 )
 			f3_arg0.overlay:setShaderVector( 2, 0, 1, 0, 0 )
@@ -124,7 +124,7 @@ CoD.systemOverlay_connectinganim.__clipsPerState = {
 			end
 			
 			f3_arg0.overlay2:completeAnimation()
-			f3_arg0.overlay2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+			f3_arg0.overlay2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 			f3_arg0.overlay2:setShaderVector( 0, -0.1, 0, 0, 0 )
 			f3_arg0.overlay2:setShaderVector( 1, 0.05, 0.05, 0, 0 )
 			f3_arg0.overlay2:setShaderVector( 2, 0, 1, 0, 0 )
@@ -139,7 +139,7 @@ CoD.systemOverlay_connectinganim.__clipsPerState = {
 			end
 			
 			f3_arg0.overlay3:completeAnimation()
-			f3_arg0.overlay3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x2EEB1ECF1F211F5 ) )
+			f3_arg0.overlay3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 			f3_arg0.overlay3:setShaderVector( 0, -0.1, 0, 0, 0 )
 			f3_arg0.overlay3:setShaderVector( 1, 0.05, 0.05, 0, 0 )
 			f3_arg0.overlay3:setShaderVector( 2, 0, 1, 0, 0 )

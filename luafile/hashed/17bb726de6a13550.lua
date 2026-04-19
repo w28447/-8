@@ -32,7 +32,7 @@ LUI.createMenu.FTUEGameIntroduction = function ( f1_arg0, f1_arg1 )
 	
 	local BackgroundImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BackgroundImage:setAlpha( 0.85 )
-	BackgroundImage:setImage( RegisterImage( 0x4BF88A437F4C579 ) )
+	BackgroundImage:setImage( RegisterImage( "uie_fe_cp_background" ) )
 	self:addElement( BackgroundImage )
 	self.BackgroundImage = BackgroundImage
 	
@@ -63,7 +63,7 @@ LUI.createMenu.FTUEGameIntroduction = function ( f1_arg0, f1_arg1 )
 	local PCMOTDButtons = nil
 	
 	PCMOTDButtons = CoD.PC_MOTD_Buttons.new( f1_local1, f1_arg0, 0.5, 0.5, -734.5, -494.5, 0.8, 0.8, 48.5, 126.5 )
-	PCMOTDButtons.OptionText:setText( LocalizeToUpperString( 0x6393FF34EA56966 ) )
+	PCMOTDButtons.OptionText:setText( LocalizeToUpperString( "menu/continue" ) )
 	PCMOTDButtons:linkToElementModel( self, "image", true, function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then
@@ -97,28 +97,28 @@ LUI.createMenu.FTUEGameIntroduction = function ( f1_arg0, f1_arg1 )
 	
 	local CornerPip = LUI.UIImage.new( 0.5, 0.5, -779, -756, 0, 0, 173, 196 )
 	CornerPip:setAlpha( 0.25 )
-	CornerPip:setImage( RegisterImage( 0x8DC834094E7A02C ) )
+	CornerPip:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
 	self:addElement( CornerPip )
 	self.CornerPip = CornerPip
 	
 	local CornerPip2 = LUI.UIImage.new( 0.5, 0.5, -779, -756, 0, 0, 893.5, 916.5 )
 	CornerPip2:setAlpha( 0.25 )
 	CornerPip2:setZRot( 90 )
-	CornerPip2:setImage( RegisterImage( 0x8DC834094E7A02C ) )
+	CornerPip2:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
 	self:addElement( CornerPip2 )
 	self.CornerPip2 = CornerPip2
 	
 	local CornerPip3 = LUI.UIImage.new( 0.5, 0.5, 739, 762, 0, 0, 893.5, 916.5 )
 	CornerPip3:setAlpha( 0.25 )
 	CornerPip3:setZRot( 180 )
-	CornerPip3:setImage( RegisterImage( 0x8DC834094E7A02C ) )
+	CornerPip3:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
 	self:addElement( CornerPip3 )
 	self.CornerPip3 = CornerPip3
 	
 	local CornerPip4 = LUI.UIImage.new( 0.5, 0.5, 739, 762, 0, 0, 173, 196 )
 	CornerPip4:setAlpha( 0.25 )
 	CornerPip4:setZRot( 270 )
-	CornerPip4:setImage( RegisterImage( 0x8DC834094E7A02C ) )
+	CornerPip4:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_corner" ) )
 	self:addElement( CornerPip4 )
 	self.CornerPip4 = CornerPip4
 	
@@ -146,7 +146,7 @@ LUI.createMenu.FTUEGameIntroduction = function ( f1_arg0, f1_arg1 )
 		CoD.FTUEUtility.AdvanceCurrentSequence( self, f6_arg2 )
 		return true
 	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x6393FF34EA56966, nil, "MOUSE1" )
+		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, "MOUSE1" )
 		return true
 	end, false )
 	f1_local5:setModel( self.buttonModel, f1_arg0 )

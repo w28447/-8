@@ -131,7 +131,7 @@ CoD.CraftUtility.EmblemMaterialCategory = {
 	{
 		category = 3,
 		type = "loot",
-		name = 0x29C903C6DF90D6F
+		name = "menu/black_market"
 	}
 }
 CoD.CraftUtility.WeaponGroupNames = {

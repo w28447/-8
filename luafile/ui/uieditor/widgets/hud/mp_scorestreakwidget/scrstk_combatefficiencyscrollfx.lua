@@ -9,7 +9,7 @@ CoD.ScrStk_CombatEfficiencyScrollFX.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local Image1 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Image1:setImage( RegisterImage( 0xAF40AF7C36D2FD ) )
-	Image1:setMaterial( LUI.UIImage.GetCachedMaterial( 0xD8EA9FE9B0BCF75 ) )
+	Image1:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	Image1:setShaderVector( 0, 1, 1, 0, 0 )
 	Image1:setShaderVector( 1, 2.4, 0, 0, 0 )
 	self:addElement( Image1 )

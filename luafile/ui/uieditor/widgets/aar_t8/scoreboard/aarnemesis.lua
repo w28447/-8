@@ -28,7 +28,7 @@ CoD.AARNemesis.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	local EnemyBotLineGlow = LUI.UIImage.new( 0, 0, -8, 158, -0.03, -0.03, -13, 11 )
 	EnemyBotLineGlow:setAlpha( 0.5 )
 	EnemyBotLineGlow:setImage( RegisterImage( 0xA4F022E73A1CAC4 ) )
-	EnemyBotLineGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x4E6CE42E0799F57 ) )
+	EnemyBotLineGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( EnemyBotLineGlow )
 	self.EnemyBotLineGlow = EnemyBotLineGlow
 	

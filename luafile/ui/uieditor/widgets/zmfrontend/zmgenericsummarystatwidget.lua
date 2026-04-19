@@ -90,7 +90,7 @@ CoD.ZMGenericSummaryStatWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local YellowLine = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 41.5, 49.5 )
 	YellowLine:setImage( RegisterImage( 0xE6E505307F7B8D7 ) )
-	YellowLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	YellowLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	YellowLine:setShaderVector( 0, 0, 0, 0, 0 )
 	YellowLine:setupNineSliceShader( 3, 60 )
 	self:addElement( YellowLine )
@@ -98,7 +98,7 @@ CoD.ZMGenericSummaryStatWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local TopBar = LUI.UIImage.new( -0.02, 1.02, 0, 0, 0, 0, 37.5, 45.5 )
 	TopBar:setImage( RegisterImage( 0x712894B3AB5924C ) )
-	TopBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x44484DDFAF5C093 ) )
+	TopBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	TopBar:setShaderVector( 0, 0, 0, 0, 0 )
 	TopBar:setupNineSliceShader( 20, 4 )
 	self:addElement( TopBar )
@@ -108,7 +108,7 @@ CoD.ZMGenericSummaryStatWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	TopBarAdd:setRGB( 0.92, 0.92, 0.92 )
 	TopBarAdd:setAlpha( 0 )
 	TopBarAdd:setImage( RegisterImage( 0x712894B3AB5924C ) )
-	TopBarAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD777557404A7B3 ) )
+	TopBarAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	TopBarAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	TopBarAdd:setupNineSliceShader( 20, 4 )
 	self:addElement( TopBarAdd )

@@ -69,7 +69,7 @@ CoD.StartMenu_QuitButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local TextBox = LUI.UIText.new( 0, 0, 0, 250, 0, 0, 34, 58 )
 	TextBox:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	TextBox:setText( LocalizeToUpperString( 0xD6D98060CE88B87 ) )
+	TextBox:setText( LocalizeToUpperString( "menu/quit_game" ) )
 	TextBox:setTTF( "ttmussels_demibold" )
 	TextBox:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	TextBox:setShaderVector( 0, 0, 0, 0, 0 )

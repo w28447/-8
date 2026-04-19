@@ -20,7 +20,7 @@ CoD.Mark2BonusExpBadge.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	Text:setBackingType( 2 )
 	Text:setBackingColor( 0.13, 0.25, 0.6 )
 	Text:setBackingXPadding( 3 )
-	Text:setBackingMaterial( LUI.UIImage.GetCachedMaterial( 0xDE760AC0E801E57 ) )
+	Text:setBackingMaterial( LUI.UIImage.GetCachedMaterial( "uie_gradient_normal" ) )
 	Text:setBackingShaderVector( 0, 1, 1, 1, 1 )
 	Text:setBackingShaderVector( 1, 0, 0, 0, 0 )
 	Text:setBackingShaderVector( 2, 0.5, 0, 0, 0 )

@@ -1121,7 +1121,7 @@ DataSources.LeaderboardHeader = {
 		end
 		f63_local14 = 0x9B07D3D5E73E818
 		if Engine.CurrentSessionMode() == Enum.eModes[0xBF1DCC8138A9D39] then
-			f63_local14 = 0x3547050A22D0BD0
+			f63_local14 = "warzone/echelon"
 		elseif LuaUtils.IsArenaMode() then
 			f63_local14 = 0x3370355189B42A7
 		end
