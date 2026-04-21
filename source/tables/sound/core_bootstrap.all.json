@@ -207,13 +207,13 @@
         {
             "value": 106,
             "next": 65535,
-            "name": "#hash_db2d82dcc2faf47",
+            "name": "#cac_killstreak_nav",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_db2d82dcc2faf47",
+                    "name": "#cac_killstreak_nav",
                     "assetId": "#uin/beep/kls/deet.ln100.pc.snd",
                     "assetFileNameSustain": "#core_bootstrap.all",
                     "assetIdRelease": "#core_bootstrap.all",
@@ -2293,7 +2293,7 @@
             "aliases": [
                 {
                     "name": "#hash_cb45c52e2654e59",
-                    "secondaryname": "#hash_209cfed42b21522a",
+                    "secondaryname": "#tst_surround_right_1",
                     "assetId": "#uin/test_sound/audio_sound_test_ls.sn100.pc.snd",
                     "assetFileNameSustain": "#core_bootstrap.all",
                     "assetIdRelease": "#core_bootstrap.all",
@@ -2337,13 +2337,13 @@
         {
             "value": 46,
             "next": 37,
-            "name": "#hash_209cfed42b21522a",
+            "name": "#tst_surround_right_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_209cfed42b21522a",
+                    "name": "#tst_surround_right_1",
                     "secondaryname": "#hash_4df643fe20add90a",
                     "assetId": "#uin/test_sound/audio_sound_test_rs.sn100.pc.snd",
                     "assetFileNameSustain": "#core_bootstrap.all",

@@ -614,7 +614,7 @@ soundalias,#hash_7fe19ceed35907ce
 client_fx,#ui/fx_dom_cap_indicator_team_r90
 client_fx,#dirt/fx8_dust_fall_crumble_rattle
 client_fx,#hash_1008bbbc9ba91883
-client_fx,#hash_155d5c9bf86efb6d
+client_fx,#destruct/fx_dest_window_glass_edge
 client_fx,#ui/fx_dom_cap_indicator_neutral_r120
 client_fx,#ui/fx_dom_marker_neutral_r120
 client_fx,#ui/fx_dom_marker_team_r90

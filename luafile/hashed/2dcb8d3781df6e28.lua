@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/blackmarket/bm_iteminfocompactpanel" )
 require( "x64:68bcc307dcc87ad" )
-require( "x64:b3df56b6d23c7ac" )
+require( "ui/uieditor/widgets/warzone/wzcamooriginwidget" )
 
 CoD.WeaponOptionInfo = InheritFrom( LUI.UIElement )
 CoD.WeaponOptionInfo.__defaultWidth = 1920

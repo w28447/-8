@@ -615,14 +615,14 @@ soundalias,#hash_7f8c9e0a8d000970
 soundalias,#hash_7fe19ceed35907ce
 client_fx,#hash_c720ceb85f8d58
 client_fx,#hash_d571444ad8b5195
-client_fx,#hash_155d5c9bf86efb6d
+client_fx,#destruct/fx_dest_window_glass_edge
 client_fx,#hash_1890445e80341b3e
 client_fx,#hash_210068c3361d8e98
 client_fx,#hash_212bce954d1e21ea
 client_fx,#ui/fx_dom_cap_indicator_neutral_r120
 client_fx,#hash_269f259a4cd762e8
 client_fx,#ui/fx_dom_marker_neutral_r120
-client_fx,#hash_2a59ec613aa53582
+client_fx,#destruct/fx_dest_paper
 client_fx,#hash_2b07670af4c3f90e
 client_fx,#hash_2c31458ff5ffb0b2
 client_fx,#hash_3784b8ce7aad5d50

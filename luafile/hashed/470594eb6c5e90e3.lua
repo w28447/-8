@@ -1,4 +1,4 @@
-require( "x64:bf776923c7291f4" )
+require( "ui/uieditor/widgets/warzone/wzbox9slice" )
 
 CoD.StartMenu_Inventory_SwitchWeaponTab = InheritFrom( LUI.UIElement )
 CoD.StartMenu_Inventory_SwitchWeaponTab.__defaultWidth = 144

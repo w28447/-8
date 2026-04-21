@@ -513,9 +513,9 @@ model,#p8_zm_vapor_altar_zeus_lightning_bolt_03
 model,#p8_zm_vapor_altar_zeus_lightning_bolt_02
 model,#p8_zm_vapor_altar_zeus_lightning_bolt_01
 model,#p8_zm_vapor_altar_zeus_lightning_bolt_04
-model,#hash_4d4f73a49688d33c
+model,#fx_char_gib_chunk_bone02
 model,#fx_char_gib_chunk_bone03
-model,#hash_4d4f76a49688d855
+model,#fx_char_gib_chunk_bone01
 model,#p8_afr_dinnerware_ceramic_bowl_med_03
 model,#p8_zm_wall_buy_symbol_01
 model,#hash_4dd4b9b241630af4
@@ -9846,7 +9846,7 @@ client_fx,#hash_6f2e078e14a435d
 client_fx,#fire/fx_fire_ai_human_torso_loop
 client_fx,#hash_83747e8c736e638
 client_fx,#hash_858ccf87056e9f3
-client_fx,#hash_86861bdafdca6bb
+client_fx,#player/fx_plyr_jump_dust_dirt
 client_fx,#hash_88dadfc0ec8d186
 client_fx,#zm_ai/fx8_stoker_dest_weak_point_exp_generic
 client_fx,#hash_8f0bc31efc7463e
@@ -9914,7 +9914,7 @@ client_fx,#hash_1e3e41de01894921
 client_fx,#hash_1e3fc11990603f72
 client_fx,#hash_1e6d039eb5b80b1b
 client_fx,#hash_1ed4c87a3f6da9b9
-client_fx,#hash_1f7ef41fb4ea4904
+client_fx,#player/fx_plyr_land_dust_xlg
 client_fx,#hash_201378189651055d
 client_fx,#zm_ai/fx8_blightfather_weakspot_elbow_amb
 client_fx,#hash_211c80023671737b
@@ -10087,7 +10087,7 @@ client_fx,#hash_524decea28717b7c
 client_fx,#hash_527b5ca4206503fd
 client_fx,#hash_528248a4206b00af
 client_fx,#hash_52c22f3d0a38c679
-client_fx,#hash_530d00918797c285
+client_fx,#player/fx_plyr_footstep_dust_dirt
 client_fx,#hash_53d70b0cb4fc5b82
 client_fx,#hash_53e10878cd6a6eef
 client_fx,#hash_5400356a313e2ec3
@@ -10133,7 +10133,7 @@ client_fx,#hash_5ff39b8a7796fe83
 client_fx,#hash_6009053e911b946a
 client_fx,#hash_60d6e4e440733464
 client_fx,#hash_623c4ff75bcaa1a9
-client_fx,#hash_624213aeb33e6e4d
+client_fx,#player/fx_plyr_jump_dust
 client_fx,#fire/fx_fire_ai_human_hip_left_loop
 client_fx,#hash_62f4ee1a2e3c46fc
 client_fx,#hash_63074eb9d1a1e00c
@@ -10171,7 +10171,7 @@ client_fx,#zm_ai/fx8_gegenees_shield_blast
 client_fx,#zm_ai/fx8_blightfather_weakspot_sack_amb
 client_fx,#hash_6e87fbd77320ada5
 client_fx,#hash_6e99f08f4b615aeb
-client_fx,#hash_6eef96000a576560
+client_fx,#player/fx_plyr_land_dust_dirt_xlg
 client_fx,#hash_6ef0f1647e3ba536
 client_fx,#hash_6fa47bf8bfa3ff3a
 client_fx,#hash_70c604c24563ff7a
@@ -10182,7 +10182,7 @@ client_fx,#hash_72c896c5a56c873f
 client_fx,#hash_72d74d75e679897b
 client_fx,#fire/fx_fire_ai_human_arm_left_loop
 client_fx,#hash_73c0e210b5e3e5a8
-client_fx,#hash_73f6b8e41ad5800b
+client_fx,#player/fx_plyr_footstep_dust
 client_fx,#hash_7425021c14828449
 client_fx,#hash_744d3875c55f1dc3
 client_fx,#hash_749d6ee7eea4a790

@@ -13089,7 +13089,7 @@ fx,#hash_129440205394474d
 fx,#hash_12ccda305ef0da8b
 fx,#hash_130feabc174eaf4e
 fx,#hash_1653a964e372de44
-fx,#hash_187bb4081f3998bd
+fx,#destruct/fx_exp_tendril_emit
 fx,#hash_1cc550a7aaa4cb92
 fx,#hash_1cf565a7aace1303
 fx,#hash_1d5a9b3880f82d5f
@@ -13139,7 +13139,7 @@ fx,#hash_70c8555ba2a29037
 fx,#hash_72023b67955dfd6e
 fx,#hash_7446b7bcf2d7f5b1
 fx,#hash_758ad2e1fd8c1346
-fx,#hash_7998e2ddc867d685
+fx,#destruct/fx_vdest_car_engine_oil_impact
 fx,#hash_7a49e499dc651b9e
 fx,#hash_7b032a2e63e293b6
 fx,#hash_7b2e4176bb94d5e8
@@ -13206,15 +13206,15 @@ xmodel,#p7_dinnerware_01_fork
 fx,#hash_709cec8562643ca
 fx,#dirt/fx8_dust_fall_crumble_rattle
 fx,#hash_ea20499cd485f2a
-fx,#hash_104efd9312084c23
-fx,#hash_1907402036f045a6
+fx,#destruct/fx_dest_glass_shard_impact_burst
+fx,#electric/fx_elec_sparks_burst_sm_orange_os
 fx,#electric/fx8_sparks_burst_dir_sm_orange_os
-fx,#hash_57547857f3a3bfbb
+fx,#destruct/fx_vdest_car_engine_smk
 fx,#hash_59db7b4a11e7b7e6
 fx,#hash_5aca3d0972d1ea05
 fx,#hash_62e157bc0cd989f3
 fx,#hash_668e7fe36488aebb
-fx,#hash_6be5f7d4447814ed
+fx,#destruct/fx_vdest_car_engine_fire_frnt
 fx,#hash_7b74ede35f3681c5
 fx,#hash_7e68dfc1a77f9f59
 scriptbundle,#sb_mp_endgame_player_06

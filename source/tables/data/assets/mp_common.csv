@@ -26492,7 +26492,7 @@ luafile,#hash_17ffd863de43432d
 luafile,#hash_1816867c7fe36e1d
 luafile,#ui/uieditor/widgets/hud/map/compassgroupmpcontainertransition.lua
 luafile,#ui/uieditor/widgets/hud/core_ammowidget/ammowidgetmp.lua
-luafile,#hash_183b27e30d7bcdf6
+luafile,#ui/uieditor/widgets/warzone/wzcollapsetimer.lua
 luafile,#ui/uieditor/widgets/scoreboard/tabbedscoreboardheadertopbar02.lua
 luafile,#ui/uieditor/widgets/hud/deadspectate/deadspectate_spectatingbar.lua
 luafile,#ui/uieditor/widgets/cac/weaponselect/weaponselectgriditeminternal.lua
@@ -26943,7 +26943,7 @@ luafile,#ui/uieditor/widgets/common/commonscalinglisthorizontalpips.lua
 luafile,#ui/uieditor/widgets/hud/scoreinfo/scoreinfoctf.lua
 luafile,d#ui/uieditor/widgets/buttonprogressring.lua
 luafile,#ui/uieditor/widgets/hud/centerconsole/centerconsoleentry.lua
-luafile,#hash_3dca306a37ec5437
+luafile,#ui/uieditor/widgets/warzone/wzcollapsetimerinternal.lua
 luafile,#ui/uieditor/widgets/hud/core_ammowidget/ammowidgetmp_equipmentlethal_flash.lua
 luafile,#ui/uieditor/widgets/codcaster/codcasterloadoutequipmentbackground.lua
 luafile,d#ui/uieditor/widgets/pc/footer/footerbutton_player_internal.lua
@@ -27305,7 +27305,7 @@ luafile,#ui/uieditor/widgets/mphudwidgets/readyevents/readyevents_scorestreaks.l
 luafile,#ui/uieditor/widgets/tablet/tableticepickgadget_bgelementfui.lua
 luafile,d#ui/uieditor/widgets/onoffimage.lua
 luafile,#ui/uieditor/widgets/mphudwidgets/gametypescoreinfo/scorenotificationwaypoint_capture.lua
-luafile,#hash_58af7dbdbb5365f8
+luafile,#ui/uieditor/widgets/warzone/wzbox9slice.lua
 luafile,#ui/uieditor/widgets/vehiclehuds/wasp/vhud_sentinel_horizon_elements.lua
 luafile,#ui/uieditor/widgets/common/commonwipemeterwithglow.lua
 luafile,#ui/uieditor/widgets/hud/mp_scorestreakwidget/support_extrabutton.lua
@@ -35680,9 +35680,9 @@ xmodel,#p8_mannequin_female_coat_02_fullbody_pose_3_lod0
 xmodel,d#hash_4c9210941a39dda9
 xmodel,#wpn_t8_sig_flamethrower_world
 xmodel,#hash_4d4459e03420718d
-xmodel,d#hash_4d4f73a49688d33c
+xmodel,d#fx_char_gib_chunk_bone02
 xmodel,d#fx_char_gib_chunk_bone03
-xmodel,d#hash_4d4f76a49688d855
+xmodel,d#fx_char_gib_chunk_bone01
 xmodel,#p7_slu_refrigerator_modern_closed_dirty
 xmodel,d#hash_4d753130e0ee6d2b
 xmodel,d#attach_t8_pistol_revolver_scope_mk2_world
@@ -36224,8 +36224,8 @@ fx,#hash_10e19317a12dbbf
 fx,#hash_16266f9143a8d42
 fx,#weapon/fx_prox_grenade_wrn_red
 fx,#weapon/fx_betty_exp_death
-fx,#hash_1a2b2b097068de5
-fx,#hash_1a9beb0970cc0f7
+fx,#weapon/fx_muz_smk_silenced_1p
+fx,#weapon/fx_muz_smk_silenced_3p
 fx,#hash_1e1eec9b36f0b4d
 fx,d#hash_1ea86e8974e8c45
 fx,#hash_24cbda36a4d18e5
@@ -36243,7 +36243,7 @@ fx,#weapon/fx_betty_exp
 fx,d#hash_340683f54fb6216
 fx,#hash_341c518dfe5106f
 fx,#killstreaks/fx_vtol_supply_exhaust_engine
-fx,d#hash_3535a49b41b3f5e
+fx,d#impacts/fx_bul_impact_heavy_head_nonfatal_exit
 fx,#killstreaks/fx_vtol_thruster
 fx,#hash_4bfa3d9b3b290f4
 fx,#hash_505441ad0041c6a
@@ -36260,7 +36260,7 @@ fx,#light/fx_light_robot_set_base_blink
 fx,#hash_7020a0b7deb1112
 fx,#killstreaks/fx_sentinel_disabled_water_1p
 fx,#hash_856a8d3f4b10747
-fx,d#hash_86861bdafdca6bb
+fx,d#player/fx_plyr_jump_dust_dirt
 fx,#hash_8862d9565589bb9
 fx,d#hash_88dadfc0ec8d186
 fx,#hash_8b28efb6fbc672e
@@ -36284,7 +36284,7 @@ fx,#hash_b55269cf821e54d
 fx,#hash_b5faff633fe8f6a
 fx,#hash_b6014bf9b3bfcaa
 fx,#hash_b96653d4b0de590
-fx,#hash_ba8f8e04867c5bc
+fx,#weapon/fx_muz_md_4arc_mb
 fx,#hash_bae242d446f11e3
 fx,#hash_bde9396a806f8d4
 fx,#hash_c56f9b54935e034
@@ -36292,22 +36292,22 @@ fx,#hash_c94efc68e66ba3d
 fx,#hash_cf369fc45d208c9
 fx,d#hash_d0af14e74a7df15
 fx,#hash_d0f35e31c5180cc
-fx,#hash_d101fa5cd13ef7b
+fx,#impacts/fx_bul_impact_default_uw_lg
 fx,#hash_d11b6a553b5ab91
 fx,d#hash_d185de6377a14df
-fx,d#hash_d35f9a5cd347e26
+fx,d#impacts/fx_bul_impact_default_uw_sm
 fx,#hash_d9a234d7c2e39b5
 fx,#hash_db24444486dac0b
 fx,#hash_ddd7c7a47d0afac
 fx,#hash_ddd7d7a47d0b15f
 fx,#hash_ddd7f7a47d0b4c5
-fx,d#hash_de66d6d85437104
+fx,d#impacts/fx_bul_impact_boss_body_nonfatal_exit
 fx,#hash_e283186b6bc356b
-fx,d#hash_e3f93b14798cde3
+fx,d#impacts/fx_bul_impact_boss_body_nonfatal
 fx,d#hash_e52e3fa45a13512
 fx,#hash_e7985dec7c3faa9
 fx,#smoke/fx_smk_veh_amws_transform
-fx,d#hash_ebf6951e4596d85
+fx,d#destruct/fx_dest_exp_decal
 fx,#hash_edabc101d4a9b8f
 fx,#hash_ee6d0101181356f
 fx,d#killstreaks/fx_air_drop_marker_white
@@ -36337,7 +36337,7 @@ fx,#hash_1340b79db3fe36fb
 fx,#hash_136dc90d2682d463
 fx,#hash_1397ea2bd231e142
 fx,d#hash_13a1ec1d5c96a148
-fx,#hash_13db52fe650da154
+fx,#destruct/fx_dest_exp_decal_bubbling_embers
 fx,d#hash_13db842e8f7d2d2f
 fx,d#hash_13e579e23b15e6d3
 fx,#hash_140a181e0cd37884
@@ -36356,7 +36356,7 @@ fx,#hash_1572cd09dd34bbb6
 fx,d#hash_15b4f4be2b69464a
 fx,d#hash_15bc8395437b3654
 fx,d#hash_15c23a7972da9fdc
-fx,d#hash_15f10dcd8195bb9c
+fx,d#blood/fx_blood_decal_impact_ground
 fx,d#hash_16404c27d72c72d3
 fx,#explosions/fx_exp_dest_barrel_lg
 fx,#weapon/fx_prox_grenade_impact_player_spwner
@@ -36372,7 +36372,7 @@ fx,#hash_17ca3c04a71ed296
 fx,#ui/fx8_infil_marker_shoutcaster_allies_window
 fx,#hash_18b7f732ac5279df
 fx,d#hash_18f27b1c327d01ec
-fx,#hash_190601c442398dc1
+fx,#impacts/fx_bul_impact_dirt_uw_lg
 fx,#weapon/fx8_equip_seeker_prong_vm_active
 fx,#hash_191255acc865a9fc
 fx,#killstreaks/fx_sc_lights_red
@@ -36386,7 +36386,7 @@ fx,d#hash_1a110f5be9960371
 fx,#hash_1aaa61732a862904
 fx,#hash_1adc0ea26558e52e
 fx,#hash_1ae96a82a9d59366
-fx,d#hash_1b35af891deeb706
+fx,d#impacts/fx_bul_impact_boss_body_fatal
 fx,#hash_1b630537273c72ec
 fx,d#hash_1b7940f62c56793a
 fx,#hash_1b935df9df37a71d
@@ -36405,7 +36405,7 @@ fx,#hash_1dec758be67f5bbb
 fx,#hash_1e0f8f17c3112e57
 fx,#hash_1e1361dd9519bc55
 fx,#hash_1e465c6308d017fb
-fx,d#hash_1e4b612db9ee3595
+fx,d#impacts/fx_bul_impact_heavy_head_fatal_exit
 fx,#hash_1e97359cc9252fe8
 fx,#hash_1ed24b24750582b0
 fx,#hash_1ed95724750bb5c2
@@ -36413,10 +36413,10 @@ fx,#weapon/fx8_hero_grvity_slam_takeoff_3p
 fx,#hash_1f25f4f83c579a98
 fx,#ui/fx8_infil_marker_neutral
 fx,#hash_1f798cc570254d22
-fx,d#hash_1f7ef41fb4ea4904
+fx,d#player/fx_plyr_land_dust_xlg
 fx,#hash_1f8daa43e9a8f223
 fx,#hash_1fb8ed9617446b59
-fx,#hash_1fcdf3ef536ca6de
+fx,#blood/fx_blood_sword_decal_impact_ground_zod_zmb
 fx,d#hash_201d8d0e1c15f221
 fx,#hash_20ff84b311867e82
 fx,d#hash_21676a58d92eb053
@@ -36431,8 +36431,8 @@ fx,d#hash_22422ba79bd4eaaa
 fx,#hash_2259302b68c31ae9
 fx,#ui/fx8_infil_marker_shoutcaster_axis
 fx,d#hash_23b5e91e0d127576
-fx,#hash_23e4a9885ea1f139
-fx,#hash_23eb31bab2fd967a
+fx,#impacts/fx_bul_impact_metal_spark_bounce
+fx,#blood/fx_blood_decal_impact_ground_zmb
 fx,d#hash_23fdcf1e0d4ffeeb
 fx,#hash_241583b7bacb09ea
 fx,#hash_2478f710ca1b1ed6
@@ -36445,7 +36445,7 @@ fx,#hash_25713b475769a73f
 fx,#weapon/fx8_equip_smart_cover_microwave
 fx,#explosions/fx_exp_equipment_lg
 fx,#hash_260fafe2e7ced71c
-fx,d#hash_264f9fe57a63a952
+fx,d#impacts/fx_bul_impact_boss_head_nonfatal_exit
 fx,#hash_2675398c3793c87e
 fx,#hash_269fd983e18b51f3
 fx,#hash_270b97ecdc1fe83a
@@ -36459,7 +36459,7 @@ fx,#hash_28b0877ee9bcfb5e
 fx,#killstreaks/fx_sentinel_smoke
 fx,d#hash_293a0c569e41f715
 fx,d#hash_2961ef1ea33d5c4c
-fx,d#hash_2976d38995f82261
+fx,d#impacts/fx_bul_impact_boss_head_nonfatal
 fx,#hash_29899e0384daccd6
 fx,#hash_29c7478fc5068f69
 fx,#hash_29c91d0a0c5afdbb
@@ -36491,7 +36491,7 @@ fx,#hash_2e960f5499b7853f
 fx,#hash_2e9e635c768a36ed
 fx,#hash_2ef501c4cf7fe0d7
 fx,#hash_2f519812a114a584
-fx,d#hash_2f7007b301e85690
+fx,d#impacts/fx_bul_impact_heavy_body_nonfatal_exit
 fx,#hash_2f712fa395d652a7
 fx,#hash_2f8c565922daaabf
 fx,d#hash_2fd8c8f62a069726
@@ -36628,7 +36628,7 @@ fx,d#hash_46599cc2c5fa27c3
 fx,d#hash_468595ecc1b3a341
 fx,#hash_4685e46e51d763a4
 fx,#killstreaks/fx_vtol_lights_red
-fx,d#hash_471c2ac454e42597
+fx,d#impacts/fx_bul_impact_heavy_body_fatal_exit
 fx,#hash_4787670e055111d8
 fx,#hash_478e730e055744ea
 fx,#ui/fx_koth_marker_orng_window
@@ -36637,7 +36637,7 @@ fx,d#hash_47b3d809d3e1669c
 fx,d#hash_47b9e409d3e5e6ae
 fx,d#hash_48099ab1b258e0ba
 fx,#hash_481a961f4192d4f2
-fx,d#hash_4857bf41d47ef138
+fx,d#impacts/fx_bul_impact_blood_body_fatal_uw
 fx,#ui/fx_koth_marker_red
 fx,d#hash_487a8526216908b9
 fx,d#hash_4888e494dfa2a28f
@@ -36659,13 +36659,13 @@ fx,#ui/fx_ui_gi_patrol
 fx,#hash_4bb1abc21408a3ad
 fx,d#hash_4bd2b785add35e13
 fx,#hash_4bd7a9909f6c7014
-fx,#hash_4c0f2d168effa77d
+fx,#impacts/fx_bul_impact_metal_uw_lg
 fx,#hash_4c1e7a89391aa5e0
 fx,#hash_4c2586893920d8f2
 fx,#electric/fx_ability_elec_startup_wasp
 fx,d#hash_4cbf7fd7b1da1d57
-fx,d#hash_4ce146d3986d734c
-fx,d#hash_4ceb6b8de42abe28
+fx,d#impacts/fx_bul_impact_boss_head_fatal
+fx,d#impacts/fx_bul_impact_robot_body_nonfatal
 fx,#hash_4d0e656b7828e3ea
 fx,#hash_4d54c7b4dbbe4ac9
 fx,#hash_4d945c0aa4270ded
@@ -36679,7 +36679,7 @@ fx,#hash_4e52d0b8f2effe18
 fx,d#hash_4e5543a8375aa702
 fx,d#hash_4e55cdda8f7cac8c
 fx,#hash_4e8f601165066f85
-fx,d#hash_4e98cb0e0be52531
+fx,d#impacts/fx_bul_impact_body_armor_lg
 fx,d#hash_4ebb0d2d5095754e
 fx,d#hash_4f12172bcc93b784
 fx,d#hash_4f19032bcc99b436
@@ -36698,7 +36698,7 @@ fx,#light/fx_light_robot_set_lg_yellow
 fx,#hash_50e269dfa9bb6a69
 fx,d#hash_5136c746fd9646fd
 fx,d#hash_5153fcbb5a54fde2
-fx,d#hash_516a556cce8fb8b4
+fx,d#impacts/fx_bul_impact_armor_body_nonfatal_exit
 fx,d#hash_5177204d81648f03
 fx,#hash_51bb8901e6faca86
 fx,#hash_51dea1de655a5452
@@ -36711,7 +36711,7 @@ fx,#hash_5262e8f2e0927bb6
 fx,#hash_527434c02d6c90b8
 fx,#hash_528165e6ae302a5f
 fx,d#hash_52c22f3d0a38c679
-fx,d#hash_530d00918797c285
+fx,d#player/fx_plyr_footstep_dust_dirt
 fx,#hash_53417495945d20ca
 fx,d#hash_536f515466a2fe90
 fx,d#hash_53805b5466b182c1
@@ -36803,7 +36803,7 @@ fx,#hash_60f5e59bf0cb147d
 fx,d#hash_60fceabfd6c2cf30
 fx,#hash_6128f8fb069e15e1
 fx,#hash_61c3249499fb26b1
-fx,d#hash_624213aeb33e6e4d
+fx,d#player/fx_plyr_jump_dust
 fx,#hash_6256fcb6aaed3b80
 fx,#hash_626550886e2876c5
 fx,#hash_62a37d9213a942ed
@@ -36818,7 +36818,7 @@ fx,#hash_64266562deece402
 fx,d#hash_6466f66a627bd02c
 fx,d#hash_646e026a6282033e
 fx,#hash_6475cd977025b97c
-fx,d#hash_64b8335a65c1f48b
+fx,d#impacts/fx_bul_impact_boss_body_fatal_exit
 fx,#hash_65603fd5cb826c9b
 fx,d#hash_6566995a240dcfd7
 fx,#hash_65ce36775f67227e
@@ -36829,7 +36829,7 @@ fx,#ui/fx8_ctf_flag_base_team
 fx,#hash_6764f45b5b73f1f7
 fx,d#hash_676f8fb9c2edefb2
 fx,#hash_678ac7747906c1ae
-fx,#hash_680944cd9b786eff
+fx,#impacts/fx_bul_impact_hero_minigun_core
 fx,#hash_68245bd8a93f4d38
 fx,#hash_684072b039ad244a
 fx,#hash_68755339a56dfba6
@@ -36853,7 +36853,7 @@ fx,#hash_6d41ef3fb17dde2f
 fx,#hash_6d6d720fe18d9609
 fx,#hash_6d8da58da0a7ecf5
 fx,#hash_6d9a36ac32c18d74
-fx,#hash_6d9bbdb3bc6df7ed
+fx,#destruct/fx_dest_spark_tendril_os
 fx,#hash_6e074e4371d84c90
 fx,#hash_6e4238f1a6c7fef7
 fx,#hash_6e68fc37599a8e13
@@ -36863,7 +36863,7 @@ fx,d#hash_6ea4ce838a18a655
 fx,d#hash_6ea4d0838a18a9bb
 fx,d#hash_6ec71865abf114bb
 fx,#hash_6ed2d03180e245d6
-fx,d#hash_6eef96000a576560
+fx,d#player/fx_plyr_land_dust_dirt_xlg
 fx,#hash_6f2c651fcb460b80
 fx,#hash_6f4c0d9be8ebb8aa
 fx,#ui/fx_koth_marker_white
@@ -36889,14 +36889,14 @@ fx,#hash_72b9398ab0ca43e3
 fx,#hash_72c4e2a2d73fb270
 fx,#light/fx_light_robot_set_blink_yellow
 fx,d#hash_732af94fc67eb65a
-fx,d#hash_733b23142184b7a9
+fx,d#impacts/fx_bul_impact_boss_head_fatal_exit
 fx,#hash_738b4e6f1a0f8896
 fx,#hash_73a87e3df18a3241
 fx,#hash_73b7342432ad6b34
 fx,#hash_73c65724c20dd73b
 fx,#hash_73d7fc9a5926ec0d
-fx,d#hash_73f6b8e41ad5800b
-fx,d#hash_741059c54e14f546
+fx,d#player/fx_plyr_footstep_dust
+fx,d#weapon/fx_trail_fake_bullet
 fx,d#hash_742abec5fd11ba4d
 fx,#hash_742cb982b3b70e34
 fx,d#hash_744f2821a6313e49
@@ -36914,8 +36914,8 @@ fx,#hash_7692e004c02a9187
 fx,#hash_7698d84a3ee37135
 fx,#hash_76e26c41d8fd87c4
 fx,#hash_76e95841d9038476
-fx,#hash_77887e34afd2c059
-fx,#hash_778f8a34afd8f36b
+fx,#weapon/fx_muz_md_smk_1p
+fx,#weapon/fx_muz_md_smk_3p
 fx,#hash_783e35c3cf1ae7dd
 fx,#hash_784abc490d28f005
 fx,d#hash_78be4c0edf0119d2
@@ -36923,7 +36923,7 @@ fx,#hash_79364141f14d7344
 fx,d#hash_797c27b3b7c3b14d
 fx,#hash_7981eb245ea536fc
 fx,#ui/fx_koth_marker_green_window
-fx,#hash_7987ba50c6d2d581
+fx,#destruct/fx_debris_ground_fire_imp_os
 fx,#weapon/fx_betty_exp_destroyed
 fx,#hash_79b22d99f903eb4d
 fx,#hash_79b81999f90834ff
@@ -36934,7 +36934,7 @@ fx,#killstreaks/fx_drone_hunter_lights
 fx,#hash_7a13f030e0e87128
 fx,#hash_7a180b53914e467a
 fx,#hash_7a6b5bf7ec400161
-fx,d#hash_7a7e2fe397bce7a9
+fx,d#blood/fx_blood_decal_impact_ground_sm
 fx,#hash_7aba2f333cd1bff9
 fx,d#hash_7bd7e71b9295f65d
 fx,#destruct/fx_vdest_pamws_dmg_body_1
@@ -36955,13 +36955,13 @@ fx,#hash_7e988f82712a1eef
 fx,#hash_7eccdf8553b4b406
 fx,#killstreaks/fx_vtol_lights_grn
 fx,#hash_7f0d4507d6489545
-fx,d#hash_7f1447088543441e
+fx,d#impacts/fx_bul_impact_robot_head_nonfatal
 fx,d#hash_7f2af1871a6d28a9
 fx,d#hash_7f48604cfb7f3a90
 fx,d#hash_7f5dfd07d1e22b27
 fx,#ui/fx_kill_confirmed_vanish
 fx,#player/fx8_plyr_footstep_tracker_inair
-fx,d#hash_7f82c78914067d3a
+fx,d#impacts/fx_bul_impact_blood_head_fatal_uw
 fx,#hash_7fae1c95177309a0
 fx,#hash_7fb42895177789b2
 fx,d#hash_7fdfe37da86f4f0e
@@ -37381,7 +37381,7 @@ fx,#hash_34d96c54e9b5f3c
 fx,d#hash_3df9418864f08e6
 fx,d#hash_4f19591329a33bf
 fx,#explosions/fx_exp_bomb_demo_mp
-fx,#hash_52571e687720df1
+fx,#impacts/fx_bul_impact_wood_uw_lg
 fx,#hash_5a5f94494f33afb
 fx,#ui/fx8_fracture_drop_marker
 fx,d#hash_5b75b994cbbe7aa
@@ -37399,8 +37399,8 @@ fx,#hash_7e39482184e50dc
 fx,#hash_7f5b0cb274778c8
 fx,d#hash_84227ac5b4075d2
 fx,#ui/fx8_fracture_deposit_point_ire
-fx,#hash_9ca1a8ed0ee9052
-fx,#hash_a018fb4bf0206a7
+fx,#impacts/fx_bul_impact_glass_uw_lg
+fx,#impacts/fx_bul_impact_concrete_uw_lg
 fx,#ui/fx8_ui_ct_marker_team_b180
 fx,#ui/fx8_ui_ct_marker_team_b135
 fx,#hash_a5536494420137f
@@ -37462,7 +37462,7 @@ fx,#weapon/fx_muz_md_rifle_1p
 fx,#weapon/fx_muz_md_rifle_3p
 fx,#hash_170cf0178ff2783d
 fx,#hash_1746d3ed17a66f57
-fx,#hash_178305dc2c5de1b1
+fx,#impacts/fx_bul_impact_blood_body_fatal_zmb
 fx,#hash_178d7ecae7aaf9c9
 fx,#hash_17a6e18ef4c744d0
 fx,#hash_17cf09f6f6d81571
@@ -37471,7 +37471,7 @@ fx,#hash_18309807d9c34a77
 fx,d#hash_18c1125f21810b5b
 fx,#hash_18cc44d7128eefe7
 fx,#hash_18e7a733d33a515b
-fx,#hash_192fb05f9231f5bc
+fx,#impacts/fx_bul_impact_blood_head_nonfatal_zmb
 fx,d#hash_1955bf423dfce011
 fx,#hash_196b43371aec297c
 fx,#hash_19724f371af25c8e
@@ -37486,7 +37486,7 @@ fx,#hash_1a62ff8d8ce96108
 fx,#hash_1ac9381c387c29c9
 fx,#hash_1afc25909914914c
 fx,#hash_1b1e43cc8fae048d
-fx,d#hash_1bb3f9710a6415c8
+fx,d#impacts/fx_bul_impact_heavy_head_fatal
 fx,#hash_1bb8a7ab880ee534
 fx,#hash_1bbe93ab88132ee6
 fx,#fire/fx_ability_fire_immolation_raps
@@ -37497,7 +37497,7 @@ fx,d#hash_1d5309639cb42250
 fx,#hash_1d569c56a3701991
 fx,#hash_1d5d8856a3761643
 fx,#hash_1dabd9c72fb5a76b
-fx,d#hash_1dc986e00ac2d9b1
+fx,d#impacts/fx_bul_impact_armor_head_nonfatal
 fx,#hash_1dead6c5b42b1c44
 fx,d#hash_1df2cd45565d5db3
 fx,#ui/fx8_fracture_deposit_point
@@ -37505,7 +37505,7 @@ fx,#hash_1e58fe7ee8be25ba
 fx,d#hash_1e9f808622152d3f
 fx,#killstreaks/fx_care_package_thruster
 fx,#hash_1f0623bbb94aa556
-fx,d#hash_1f1f6ba9fb9ace3c
+fx,d#impacts/fx_bul_impact_armor_head_fatal
 fx,#hash_1f230f06c9a4aee3
 fx,#hash_1f307b4dd0a54b4d
 fx,d#hash_1fc23546b2f1537b
@@ -37539,7 +37539,7 @@ fx,d#hash_248afd498edf55f3
 fx,#hash_24fa7e1844b116bb
 fx,#hash_252c63ce400fc46b
 fx,#hash_25c81e489c5f97e0
-fx,d#hash_2618b5463c248896
+fx,d#impacts/fx_bul_impact_armor_body_fatal
 fx,d#hash_269e23f93ed2a73b
 fx,d#hash_26c2fdf93ef182e6
 fx,#hash_26dee8adf3ea466b
@@ -37608,7 +37608,7 @@ fx,#hash_322d64d2b93ba7bd
 fx,#hash_3232a2f54d4f0389
 fx,#hash_32359d803e1ec649
 fx,#hash_32768e5f2ffd176a
-fx,d#hash_32b2d240fc02f885
+fx,d#impacts/fx_bul_impact_default_sm
 fx,#hash_3356dffee9a83057
 fx,#hash_33a2cdf9cac52e00
 fx,d#hash_33fdff3e87fa64b4
@@ -37616,7 +37616,7 @@ fx,d#hash_3403eb3e87feae66
 fx,d#hash_341b162e21c5f54e
 fx,d#hash_34adc5d454284943
 fx,#hash_34b41822449c3cbc
-fx,d#hash_34c6dc6eb6d5929f
+fx,d#impacts/fx_bul_impact_heavy_body_nonfatal
 fx,#hash_34e6e3d3d25d465c
 fx,#hash_351a40d2d405df81
 fx,#hash_355147feee6dc344
@@ -37633,7 +37633,7 @@ fx,#hash_36bc98095bf20dce
 fx,#hash_372f2ddcfdc4290c
 fx,#explosions/fx_exp_grenade_default
 fx,#hash_3756dfb871a3d713
-fx,d#hash_37b3045dab74db81
+fx,d#impacts/fx_bul_impact_snow_sm
 fx,#destruct/fx_dest_robot_dmg_trail_smk_spawner
 fx,#hash_38106a2c86a4b5f5
 fx,#hash_383c00516b9cc79b
@@ -37675,7 +37675,7 @@ fx,#hash_3d7e233c6c21942e
 fx,#ui/fx_dom_cap_indicator_neutral_r220
 fx,d#hash_3eae34c167754f42
 fx,#hash_3f9d0a8e45ee201f
-fx,d#hash_3fa1425266028adb
+fx,d#impacts/fx_bul_impact_armor_body_fatal_exit
 fx,#hash_400d125e634fa9d5
 fx,#light/fx8_light_plyr_strobe
 fx,d#hash_40a912d80f24e812
@@ -37683,7 +37683,7 @@ fx,d#hash_40c66c5756348558
 fx,#ui/fx_dom_marker_neutral_r200
 fx,#ui/fx_dom_marker_neutral_r220
 fx,#ui/fx_dom_marker_neutral_r250
-fx,d#hash_413794d772b59d99
+fx,d#impacts/fx_bul_impact_armor_head_fatal_exit
 fx,d#hash_413b17417a9f4462
 fx,d#hash_416ab5cb13a9af8c
 fx,#hash_4216698406ec229d
@@ -37701,7 +37701,7 @@ fx,#hash_44df144b10c6271d
 fx,#ui/fx_dom_cap_indicator_team_r120
 fx,#hash_45fff11146045d65
 fx,#hash_460816fab67830da
-fx,d#hash_461ba85d86357413
+fx,d#impacts/fx_bul_impact_armor_body_nonfatal
 fx,#killstreaks/fx8_tankrobot_previs_valid
 fx,d#_debug/fx_missing_fx
 fx,#hash_4659e9e5a9e2b89c
@@ -37730,12 +37730,12 @@ fx,d#hash_4bfca9124b4b177e
 fx,#killstreaks/fx_hatr_exp
 fx,#hash_4c51dd2438351a87
 fx,#hash_4d326edc4f4809e4
-fx,d#hash_4d7a1fef30941eed
+fx,d#impacts/fx_bul_impact_heavy_head_nonfatal
 fx,#hash_4d9c44530d151ef4
 fx,#hash_4dc1d067e315b8ec
 fx,d#hash_4dfe5bc7d0d3b538
 fx,#hash_4e588627f4219626
-fx,#hash_4e72d0bae1cf9042
+fx,#weapon/fx_shellejects_pistol_resting
 fx,#hash_4e89c92af99c048e
 fx,#hash_4eb7e38bb5474152
 fx,d#hash_4ec6379ce531b713
@@ -37743,7 +37743,7 @@ fx,d#hash_4f3d8c72574e2547
 fx,#hash_4f56d4d19d13e31c
 fx,#hash_4fc93d0ad4758939
 fx,d#hash_4fccc74b3ef1313f
-fx,#hash_50601a45600de1df
+fx,#impacts/fx_bul_impact_metal_hero_minigun
 fx,#hash_5070083038b2ca78
 fx,#hash_5076d82358aa4bd0
 fx,#hash_508d3c85a2e6c770
@@ -37772,7 +37772,7 @@ fx,#hash_56e5defa702065d4
 fx,#hash_56e64fabf583208c
 fx,#hash_56ed5babf589539e
 fx,#hash_573924a536b6fc39
-fx,d#hash_57759c5fdd88c512
+fx,d#impacts/fx_bul_impact_heavy_body_fatal
 fx,#hash_580edce8b04c83ee
 fx,#ui/fx_dom_marker_neutral_r90
 fx,d#hash_588f4cfcb96c6e35
@@ -37792,7 +37792,7 @@ fx,#explosions/fx_vexp_raps_death_core
 fx,d#hash_5b930daa9ce3f024
 fx,d#hash_5b99f9aa9ce9ecd6
 fx,d#hash_5bd240b6d3848ffb
-fx,#hash_5c076b1035f766d2
+fx,#impacts/fx_bul_impact_blood_body_nonfatal_zmb
 fx,#hash_5c07c3ccd80f262e
 fx,d#hash_5c35365854a44270
 fx,#hash_5cd53390aecf909e
@@ -37815,7 +37815,7 @@ fx,#ui/fx_dom_cap_indicator_team_r200
 fx,#ui/fx_dom_cap_indicator_team_r220
 fx,#ui/fx_dom_cap_indicator_team_r250
 fx,#hash_5f19b5848f70e13e
-fx,d#hash_5f343db65affbe62
+fx,d#impacts/fx_bul_impact_armor_head_nonfatal_exit
 fx,#hash_5f781fbedc1cd7f3
 fx,#hash_5f89cf76ab363c14
 fx,d#hash_5f8c0dac5484812f
@@ -37862,7 +37862,7 @@ fx,#hash_68d916dee315b7f5
 fx,#hash_68fa32e5d3152af5
 fx,#hash_694d2a7328c9dd7b
 fx,#explosions/fx_vexp_amws_death
-fx,d#hash_69a3523dca5d85fd
+fx,d#impacts/fx_bul_impact_blood_head_fatal
 fx,#hash_69cf5c957867faf5
 fx,#hash_6aaf79ec92edf85d
 fx,#hash_6ac4f2e3e675d65d
@@ -37945,7 +37945,7 @@ fx,#hash_7cc0f917375b9e6d
 fx,#hash_7d00d30738e267d2
 fx,#hash_7d1f3318db3990d3
 fx,d#hash_7d51e5e7299c1fa9
-fx,#hash_7dc1d8ed318e4ffb
+fx,#impacts/fx_bul_impact_blood_head_fatal_zmb
 fx,#explosions/fx8_exp_equipment_lg
 fx,#hash_7e784cce1e1af13e
 fx,d#hash_7ea4050fc21cf521
@@ -37953,7 +37953,7 @@ fx,#hash_7eb83bfaf39d4b3f
 fx,d#hash_7edcc6c60385d08e
 fx,d#hash_7f1ad908789e51bf
 fx,#hash_7f1c833c523342f8
-fx,#hash_7f34a2de61d88b9c
+fx,#electric/fx_elec_sparks_burst_xsm_omni_blue_os
 fx,#hash_7f484c9db021969b
 fx,#hash_7f5eedd25c9f8f56
 fx,#hash_7f9656b6ed2efc93
@@ -38465,7 +38465,7 @@ fx,#hash_8f8d0a431403706
 fx,#hash_91ac1c8cc05c675
 fx,#hash_94cf26182e35057
 fx,#electric/fx_ability_elec_surge_short_raps
-fx,d#hash_9b7fb95125a540c
+fx,d#impacts/fx_bul_impact_pwr_armor_lg
 fx,#destruct/fx_dest_robot_dmg_dyn_piece_spark
 fx,d#hash_a5567d0168ae02f
 fx,d#hash_a7e2ba1f3c54368
@@ -38529,7 +38529,7 @@ fx,#hash_32ff70dd33133026
 fx,#hash_339f559e197ee782
 fx,#hash_33a8bb774ab61c17
 fx,#hash_346d44ac745e9c5f
-fx,#hash_36479a6885575e5f
+fx,#weapon/fx_shellejects_pistol
 fx,d#hash_36b184430cda10e1
 fx,d#hash_37a999a348b1cef8
 fx,#explosions/fx_vexp_raps_death
@@ -38564,7 +38564,7 @@ fx,#hash_4475fd2c32ab3987
 fx,d#hash_45e57e8fc6d61c03
 fx,d#hash_46dfab01138c11fb
 fx,d#hash_474f486fecfa8c4e
-fx,#hash_4893cb61615b7ee3
+fx,#impacts/fx_bul_impact_gravel_uw_lg
 fx,#hash_4899a042c417a5a0
 fx,#hash_498c2249785cea75
 fx,#hash_4a955131370a3720

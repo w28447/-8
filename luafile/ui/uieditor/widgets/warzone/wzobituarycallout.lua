@@ -1,6 +1,6 @@
-require( "x64:3d9aadaa1ad41a6" )
-require( "x64:1227ca3bac54971" )
-require( "x64:19ca44b5fdfaba4" )
+require( "ui/uieditor/widgets/warzone/wzobituarycalloutcontainer" )
+require( "ui/uieditor/widgets/warzone/wzobituarycalloutexpandedcontainer" )
+require( "ui/uieditor/widgets/warzone/wzobituarysquadkilled" )
 
 CoD.WZObituaryCallout = InheritFrom( LUI.UIElement )
 CoD.WZObituaryCallout.__defaultWidth = 280

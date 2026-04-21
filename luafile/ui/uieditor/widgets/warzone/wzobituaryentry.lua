@@ -1,5 +1,5 @@
-require( "x64:ee6d0fdccf48746" )
-require( "x64:244a1783f37ff8d" )
+require( "ui/uieditor/widgets/warzone/wzobituaryattacker" )
+require( "ui/uieditor/widgets/warzone/wzobituaryvictim" )
 
 CoD.WZObituaryEntry = InheritFrom( LUI.UIElement )
 CoD.WZObituaryEntry.__defaultWidth = 500

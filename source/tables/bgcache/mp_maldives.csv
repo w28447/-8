@@ -456,7 +456,7 @@ soundalias,#hash_7fe19ceed35907ce
 client_fx,#hash_1008bbbc9ba91883
 client_fx,#ui/fx_dom_cap_indicator_neutral_r120
 client_fx,#ui/fx_dom_marker_neutral_r120
-client_fx,#hash_2a59ec613aa53582
+client_fx,#destruct/fx_dest_paper
 client_fx,#hash_35b22872aa5d71da
 client_fx,#ui/fx_dom_cap_indicator_team_r120
 client_fx,#ui/fx_dom_marker_team_r120

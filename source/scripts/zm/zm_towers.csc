@@ -133,7 +133,7 @@ function event_handler[level_init] main( eventstruct )
     level._effect[ #"bloodspurt" ] = #"zombie/fx_bul_flesh_neck_spurt_zmb";
     level._effect[ #"animscript_gib_fx" ] = #"zombie/fx_blood_torso_explo_zmb";
     level._effect[ #"animscript_gibtrail_fx" ] = #"blood/fx_blood_gib_limb_trail";
-    level._effect[ #"hash_73172b799c18404e" ] = #"hash_7d94f7b4389cad84";
+    level._effect[ #"hash_73172b799c18404e" ] = #"zombie/fx_teleport_flashback_zmb";
     level._effect[ #"entry_gate_dust" ] = #"hash_43b2eaf6037de947";
     level._effect[ #"special_round_smoke" ] = #"hash_7f90f442be248933";
     level._effect[ #"hash_2a49b738100ad198" ] = #"hash_573f4333a69a2e97";

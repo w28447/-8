@@ -557,7 +557,7 @@ soundalias,#hash_7fe19ceed35907ce
 client_fx,#hash_781f8fd9e3343ba
 client_fx,#hash_92bfa5adbff2599
 client_fx,#hash_1008bbbc9ba91883
-client_fx,#hash_155d5c9bf86efb6d
+client_fx,#destruct/fx_dest_window_glass_edge
 client_fx,#hash_1774d931e506ac94
 client_fx,#tools/fx_null
 client_fx,#hash_1ae00e8028cfd32f
@@ -565,7 +565,7 @@ client_fx,#hash_216a80d318575efb
 client_fx,#ui/fx_dom_cap_indicator_neutral_r120
 client_fx,#ui/fx_dom_marker_neutral_r120
 client_fx,#hash_28556c99991b72e5
-client_fx,#hash_2a59ec613aa53582
+client_fx,#destruct/fx_dest_paper
 client_fx,#hash_2b8e8e38e3fa3ef8
 client_fx,#hash_318e2cc2b53ae45c
 client_fx,#hash_35ae471440e2eaaf

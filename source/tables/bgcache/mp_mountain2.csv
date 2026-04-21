@@ -350,10 +350,10 @@ soundalias,#hash_7eb51f1a0028ab28
 soundalias,#hash_7eb7c73e0206c620
 soundalias,#hash_7f118ea3a4874268
 soundalias,#hash_7fe19ceed35907ce
-client_fx,#hash_155d5c9bf86efb6d
+client_fx,#destruct/fx_dest_window_glass_edge
 client_fx,#ui/fx_dom_cap_indicator_neutral_r120
 client_fx,#ui/fx_dom_marker_neutral_r120
-client_fx,#hash_2a59ec613aa53582
+client_fx,#destruct/fx_dest_paper
 client_fx,#hash_2eec3c0ee053a6cf
 client_fx,#ui/fx_dom_cap_indicator_team_r120
 client_fx,#hash_55dfddfc63c9d556

@@ -19,9 +19,9 @@ require( "ui/uieditor/widgets/warzone/warzonekilleridentity" )
 require( "ui/uieditor/widgets/warzone/warzonequickinventoryvignette" )
 require( "ui/uieditor/widgets/warzone/warzoneusetimer" )
 require( "ui/uieditor/widgets/warzone/warzonewingsuitoverlay" )
-require( "x64:2bb3abd458dbdfe" )
-require( "x64:6ef65e27bfc904b" )
-require( "x64:c19c0be11dd9bd3" )
+require( "ui/uieditor/widgets/warzone/wzcollapsetimer" )
+require( "ui/uieditor/widgets/warzone/wzobituarycallout" )
+require( "ui/uieditor/widgets/warzone/wzreinsertionpassengercount" )
 
 CoD.Hud_WZ_SafeAreaContainer_Back = InheritFrom( LUI.UIElement )
 CoD.Hud_WZ_SafeAreaContainer_Back.__defaultWidth = 1920

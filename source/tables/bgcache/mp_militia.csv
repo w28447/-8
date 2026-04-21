@@ -453,7 +453,7 @@ client_fx,#tools/fx_null
 client_fx,#ui/fx_dom_cap_indicator_neutral_r120
 client_fx,#ui/fx_dom_marker_neutral_r120
 client_fx,#hash_28d89d447c354265
-client_fx,#hash_2a59ec613aa53582
+client_fx,#destruct/fx_dest_paper
 client_fx,#ui/fx_dom_cap_indicator_team_r120
 client_fx,#hash_4d885739142015b7
 client_fx,#ui/fx_dom_marker_team_r120

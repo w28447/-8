@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/warzone/warzonedeathcamlabel" )
 require( "ui/uieditor/widgets/warzone/warzonegamestatusindicatordisplay" )
 require( "ui/uieditor/widgets/warzone/warzonekillsinternal" )
-require( "x64:5a605d9025cfe2d" )
+require( "ui/uieditor/widgets/warzone/wzobituary" )
 
 CoD.WarzoneKills = InheritFrom( LUI.UIElement )
 CoD.WarzoneKills.__defaultWidth = 548

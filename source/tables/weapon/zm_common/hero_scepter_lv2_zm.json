@@ -58,7 +58,7 @@
     "image_e90": "#ui_icon_equpiment_zm_rastaff_lv2",
     "image_1048": "#ui_icon_equpiment_zm_rastaff_lv2",
     "fireRumble": "#defaultweapon_fire",
-    "fx_bc8": "#hash_58ab77be91b4ae42",
+    "fx_bc8": "#weapon/fx_muz_sm_pistol_1p",
     "fx_bd0": "#weapon/fx_muz_sm_pistol_3p",
     "viewPersistentEffectSet": "#hash_23a983ddb16e6e99",
     "worldPersistentEffectSet": "#hash_23b08fddb174a1ab"

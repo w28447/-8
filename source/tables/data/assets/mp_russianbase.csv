@@ -12258,7 +12258,7 @@ material,#mc/t7_glass_dirty_streaks_shard
 material,d#ei/gfx_gib_glass_02_lit
 material,d#ei/gfx_gib_glass_01_lit
 material,d#ei/gfx_fog_slow_lg_anim_lit
-fx,#hash_155d5c9bf86efb6d
+fx,#destruct/fx_dest_window_glass_edge
 material,#hash_4db1c89aa94e6763
 material,#hash_6862f2143d364d1d
 fx,#hash_5bf3670993508249
@@ -38844,7 +38844,7 @@ xmodel,#p8_mou_monitor_ceiling_animated_1
 xmodel,#p8_mou_monitor_ceiling_animated_3
 xmodel,#p8_mou_monitor_ceiling_animated_2
 xmodel,#hash_13cb0a45506cac8a
-xmodel,#hash_13dd2dda1fbedab4
+xmodel,#p7_glass_shard_streaks
 xmodel,#p8_icbm_computer_decal_scratches_04
 xmodel,#p8_icbm_computer_decal_scratches_01
 xmodel,#p8_icbm_computer_decal_scratches_03
@@ -39928,10 +39928,10 @@ xmodel,#p7_zm_asc_train_wheels
 fx,#hash_6a4fd70bf3fd366
 fx,#hash_aefb71a9ab3e361
 fx,#hash_c07267120face1f
-fx,#hash_104efd9312084c23
+fx,#destruct/fx_dest_glass_shard_impact_burst
 fx,#hash_200f622fe59abb84
 fx,#hash_2bd8234adfb68688
-fx,#hash_3084625a8c3bbfd0
+fx,#destruct/fx_dest_paper_flat
 fx,#hash_3b0d845cd3f7ce85
 fx,d#hash_4906fa09b7b5cb98
 fx,#hash_5d52f094e9fd5848
@@ -40174,7 +40174,7 @@ fx,#hash_108a2cf3d4a2a019
 fx,#hash_1ab8f534ee794927
 fx,#hash_1b11d034eec5331e
 fx,#hash_209c775dbfa4a043
-fx,#hash_2a59ec613aa53582
+fx,#destruct/fx_dest_paper
 fx,#hash_3784b8ce7aad5d50
 fx,#hash_57d09147814cce9a
 fx,#hash_5bc02b93591da938

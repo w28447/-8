@@ -23150,7 +23150,7 @@ image,#i_mtl_p8_zm_vapor_altar_danu_antlers_o
 image,#i_mtl_p8_zm_vapor_altar_danu_antlers_n
 image,d#fxt_light_incandescent_hot
 image,#i_t8_zm_red_stone_limestone_column_pillar_r
-image,#hash_44899213cd0c0ad3
+image,#rts_holograph_distortion
 image,#i_mtl_p8_ice_rock_pile_02_n
 image,#i_mtl_p8_ice_rock_pile_02_o
 image,#i_mtl_p8_ice_rock_pile_02_c
@@ -25817,7 +25817,7 @@ image,#i_mtl_p8_zm_red_dks_rock_shale_boulder_xlrg_01_m
 image,#hash_6883215dea64d3b6
 image,#hash_68832e5dea64e9cd
 image,d#uie_ui_menu_arena_ruby_flipbook
-image,d#hash_6891c839e650c67a
+image,d#fxt_tracer_beam_dead_turret_mask
 image,#hash_6893b3fbe7c91d88
 image,#i_mtl_p7_foliage_flower_bougainvillea_bushyvarient_proxy_distance
 image,#i_mtl_p7_food_vegetables_01_c
@@ -36424,9 +36424,9 @@ xmodel,d#p8_zm_vapor_altar_zeus_lightning_bolt_02
 xmodel,d#p8_zm_vapor_altar_zeus_lightning_bolt_01
 xmodel,d#p8_zm_vapor_altar_zeus_lightning_bolt_04
 xmodel,#hash_4d305571ce6ec8b5
-xmodel,d#hash_4d4f73a49688d33c
+xmodel,d#fx_char_gib_chunk_bone02
 xmodel,d#fx_char_gib_chunk_bone03
-xmodel,d#hash_4d4f76a49688d855
+xmodel,d#fx_char_gib_chunk_bone01
 xmodel,#hash_4d6154fdb523dd63
 xmodel,#p8_afr_planter_pottery_01
 xmodel,#p8_afr_planter_pottery_02
@@ -37546,7 +37546,7 @@ fx,#hash_7d18502f16aafdd
 fx,#hash_809f6b4b699e4df
 fx,#hash_81a822545431e39
 fx,#hash_83e4ddc23257469
-fx,d#hash_86861bdafdca6bb
+fx,d#player/fx_plyr_jump_dust_dirt
 fx,d#hash_88dadfc0ec8d186
 fx,#hash_8a5e7c808ff6a82
 fx,#hash_95227ff6ca97cca
@@ -37576,7 +37576,7 @@ fx,#hash_df47240b9b2f311
 fx,#hash_e4a43cbf9756f79
 fx,#hash_e4d66cbf977e0c9
 fx,#hash_e57b898a7a8d3bc
-fx,d#hash_ebf6951e4596d85
+fx,d#destruct/fx_dest_exp_decal
 fx,#hash_ec6eea327e628a9
 fx,#hash_f39e2f7db35cc09
 fx,#hash_fcd4f8a43da768d
@@ -37585,7 +37585,7 @@ fx,#hash_10cab6f6345be4d8
 fx,d#zombie/fx_barrier_buy_zmb
 fx,#hash_10e2ab0525592142
 fx,#hash_10ef67a5b3915f56
-fx,#hash_1129f6ab26baba9f
+fx,#dlc1/castle/fx_packapunch_castle
 fx,#hash_11361a81387eab34
 fx,#hash_114dc6fa0dcb5cfe
 fx,#hash_116bd1b8ea044032
@@ -37622,7 +37622,7 @@ fx,#hash_15d87d055814e8c3
 fx,#hash_15e6cb54d5bc18fe
 fx,#hash_15ebc3ab1cecb849
 fx,#hash_15ec2dfd120d4089
-fx,d#hash_15f10dcd8195bb9c
+fx,d#blood/fx_blood_decal_impact_ground
 fx,#hash_1615f2a383a626ca
 fx,#hash_1624687af14184ba
 fx,#hash_162a58538b5d6db0
@@ -37645,7 +37645,7 @@ fx,#hash_19800b1430bc0192
 fx,#hash_1a06427eff8dfe13
 fx,#hash_1a25a6e95c5c0e21
 fx,#hash_1a52dfce0207165a
-fx,#hash_1b353ac530035c36
+fx,#animals/fx_bio_fly_dark_50x50
 fx,#hash_1b39055e449531ea
 fx,d#hash_1b7940f62c56793a
 fx,d#hash_1b9578e77d944870
@@ -37675,7 +37675,7 @@ fx,d#hash_1ed4c87a3f6da9b9
 fx,#hash_1edf388016859f9f
 fx,#hash_1ef5a6de3b89e189
 fx,#hash_1f6a72b464f93d6b
-fx,d#hash_1f7ef41fb4ea4904
+fx,d#player/fx_plyr_land_dust_xlg
 fx,#hash_1f83bd3a009a2b2e
 fx,#hash_1fb20966309f6584
 fx,#hash_1fd37a8d41ac9b81
@@ -37949,7 +37949,7 @@ fx,#hash_527b5ca4206503fd
 fx,#hash_527d4ec4359a8d02
 fx,#hash_528248a4206b00af
 fx,d#hash_52c22f3d0a38c679
-fx,d#hash_530d00918797c285
+fx,d#player/fx_plyr_footstep_dust_dirt
 fx,#hash_536c5392a254f0c6
 fx,#hash_537f6c1d3e0c661d
 fx,d#hash_53c4e5f57b0d2caa
@@ -38030,7 +38030,7 @@ fx,#hash_60db9b3535758bbd
 fx,#hash_60f5e59bf0cb147d
 fx,d#hash_60fceabfd6c2cf30
 fx,#hash_619361bb6a9a5d2d
-fx,d#hash_624213aeb33e6e4d
+fx,d#player/fx_plyr_jump_dust
 fx,#hash_62669568337e0e8a
 fx,#hash_62f4ee1a2e3c46fc
 fx,#hash_635072c3ea6a77a2
@@ -38085,7 +38085,7 @@ fx,d#hash_6ea4be838a188b25
 fx,d#hash_6ea4ca838a189f89
 fx,d#hash_6ea4ce838a18a655
 fx,d#hash_6ea4d0838a18a9bb
-fx,d#hash_6eef96000a576560
+fx,d#player/fx_plyr_land_dust_dirt_xlg
 fx,#hash_6f74928beb07603f
 fx,#hash_6fa47bf8bfa3ff3a
 fx,#hash_6ff4c381c2b39758
@@ -38105,7 +38105,7 @@ fx,#hash_7341ae3a3af96b22
 fx,#hash_7386a579a9e9515c
 fx,#hash_73afd7d5f4304a3d
 fx,#hash_73d4ca636a4d91a6
-fx,d#hash_73f6b8e41ad5800b
+fx,d#player/fx_plyr_footstep_dust
 fx,#hash_7425021c14828449
 fx,#hash_742d605eb8eb7d67
 fx,#hash_744b12b64f0c4104
@@ -38140,7 +38140,7 @@ fx,#hash_7a327996cc2528d0
 fx,#hash_7a327c96cc252de9
 fx,#hash_7a6315e58bfbc48a
 fx,#hash_7a6316e58bfbc63d
-fx,d#hash_7a7e2fe397bce7a9
+fx,d#blood/fx_blood_decal_impact_ground_sm
 fx,#hash_7a9a94bbcf902878
 fx,#hash_7aa34fabb38f1d2e
 fx,#hash_7ab76ec242a7335b
@@ -38615,7 +38615,7 @@ fx,#hash_140d0c2001175c37
 fx,#hash_14fe97affde07033
 fx,#hash_1681b1c78114f4cd
 fx,#hash_16b2ead18ebd674a
-fx,#hash_178305dc2c5de1b1
+fx,#impacts/fx_bul_impact_blood_body_fatal_zmb
 fx,#hash_17e9105690c8500d
 fx,#hash_18b1a613a284ab22
 fx,#hash_18b2a74a3aed6679

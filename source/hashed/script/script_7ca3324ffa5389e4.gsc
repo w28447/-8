@@ -165,7 +165,7 @@ function get_trailfx()
 // Params 0
 // Checksum 0x1348458e, Offset: 0x600
 // Size: 0x2a
-function function_4a39b434()
+function get_trailfx_kit()
 {
     return function_550c6257( self function_37ae175b( 1 ) );
 }

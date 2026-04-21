@@ -57,12 +57,12 @@
     "image_e90": "#ui_icon_equipment_zm_gravityspikes_lvl2",
     "image_1048": "#ui_icon_equipment_zm_gravityspikes_lvl2",
     "fireRumble": "#defaultweapon_melee",
-    "fx_bc8": "#hash_58ab77be91b4ae42",
+    "fx_bc8": "#weapon/fx_muz_sm_pistol_1p",
     "fx_bd0": "#weapon/fx_muz_sm_pistol_3p",
-    "fx_c80": "#hash_36479a6885575e5f",
-    "fx_c88": "#hash_36479a6885575e5f",
-    "fx_c90": "#hash_36479a6885575e5f",
-    "fx_c98": "#hash_36479a6885575e5f",
+    "fx_c80": "#weapon/fx_shellejects_pistol",
+    "fx_c88": "#weapon/fx_shellejects_pistol",
+    "fx_c90": "#weapon/fx_shellejects_pistol",
+    "fx_c98": "#weapon/fx_shellejects_pistol",
     "viewPersistentEffectSet": "#hash_72b452f64919b510",
     "worldPersistentEffectSet": "#hash_72b452f64919b510"
 }

@@ -4,7 +4,7 @@ require( "ui/uieditor/widgets/hud/mp_voipwidget/voip_container" )
 require( "ui/uieditor/widgets/hud/mp_voipwidget/voip_container_enemiesonly" )
 require( "ui/uieditor/widgets/warzone/warzonegamestatusindicatordisplay" )
 require( "ui/uieditor/widgets/warzone/warzonekills" )
-require( "x64:3824c4d8575c0b5" )
+require( "ui/uieditor/widgets/warzone/wzhudmenus" )
 
 CoD.Hud_WZ_SafeAreaContainer_Front = InheritFrom( LUI.UIElement )
 CoD.Hud_WZ_SafeAreaContainer_Front.__defaultWidth = 1920

@@ -16350,7 +16350,7 @@ image,d#i_t7_decal_signage_cai_military_gloss_g
 image,d#i_wpn_t8_sig_battle_shield_glass_c
 image,d#i_wpn_t8_sig_battle_shield_glass_o
 image,#hash_15f8e0a0fb24efa9
-image,#hash_15f8e464085d5830
+image,#ugc_normal
 image,#hash_15fa028977c84a66
 image,#i_mtl_p8_foliage_tree_ginko_sml_trunk_m
 image,#i_mtl_p8_foliage_tree_ginko_sml_trunk_n
@@ -19332,7 +19332,7 @@ image,#i_mtl_veh_t8_civ_car_compact_vista_n
 image,#i_mtl_veh_t8_civ_car_compact_vista_o
 image,#i_mtl_p7_coffee_grinder_01_clearplastic_n
 image,#i_mtl_p7_coffee_grinder_01_clearplastic_c
-image,#hash_36415892153bbeaa
+image,#core_concrete_med_warm2_n
 image,d#i_t8_decal_tech_shipping_container_bolt_04_g
 image,d#i_t8_decal_tech_shipping_container_bolt_04_c
 image,d#i_t8_decal_tech_shipping_container_bolt_04_n
@@ -26294,7 +26294,7 @@ material,#mc/t7_glass_dirty_streaks_shard
 material,d#ei/gfx_gib_glass_02_lit
 material,d#ei/gfx_gib_glass_01_lit
 material,d#ei/gfx_fog_slow_lg_anim_lit
-fx,#hash_155d5c9bf86efb6d
+fx,#destruct/fx_dest_window_glass_edge
 material,#hash_6dc2b8cc23680285
 material,#hash_72796a49ff024e1d
 material,#hash_63bbb6e65f85af99
@@ -43109,7 +43109,7 @@ xmodel,#p8_fxanim_sta_wire_4_smod
 xmodel,#p8_cas_office_binder_row
 xmodel,#p7_3arc_park_leaves_grp_sm_2
 xmodel,#p7_ris_duct_metal_square_straight_64_white
-xmodel,#hash_4f5484ebd6e73cc3
+xmodel,#p7_fxanim_gp_wire_thin_hanging_03_smod
 xmodel,#skybox_default_day
 xmodel,#p8_sta_pegboard_tools_spanners_02
 xmodel,#p8_sta_pegboard_tools_spanners_01
@@ -44101,7 +44101,7 @@ fx,#hash_13af9efd7f237980
 fx,#hash_14c88c13f2655939
 fx,#hash_1774d931e506ac94
 fx,#hash_186168498421b2d9
-fx,#hash_187bb4081f3998bd
+fx,#destruct/fx_exp_tendril_emit
 fx,#hash_18d5aba2f1aac54a
 fx,#hash_193dc7e789429bd4
 fx,#hash_1ae00e8028cfd32f
@@ -44177,7 +44177,7 @@ fx,#hash_746d8de0b2948bf5
 fx,#hash_752f0574d3e4e98c
 fx,#hash_76e5e7af31202937
 fx,#hash_770444b2ad1553ad
-fx,#hash_7998e2ddc867d685
+fx,#destruct/fx_vdest_car_engine_oil_impact
 fx,#hash_7b166584aaf88d4f
 fx,#hash_7bf5f60f14a9b6f1
 fx,#hash_7c82496d46debbca
@@ -44415,10 +44415,10 @@ fx,#hash_a8af1240ef98a9c
 fx,#hash_aefb71a9ab3e361
 fx,d#hash_bd2283d114956cb
 fx,#hash_ea20499cd485f2a
-fx,#hash_104efd9312084c23
+fx,#destruct/fx_dest_glass_shard_impact_burst
 fx,d#hash_16658f2af7cd93c9
 fx,#hash_18f5d12123b6d661
-fx,#hash_1907402036f045a6
+fx,#electric/fx_elec_sparks_burst_sm_orange_os
 fx,#hash_1dd1eb38f9a1219b
 fx,#hash_1e3b9a4368a49470
 fx,#hash_200f622fe59abb84
@@ -44426,7 +44426,7 @@ fx,#hash_2288b25df9f3ee33
 fx,#hash_28eba6c876136415
 fx,#hash_2a1674e0d18ef82e
 fx,d#hash_2fd60a8c5562c5a3
-fx,#hash_3084625a8c3bbfd0
+fx,#destruct/fx_dest_paper_flat
 fx,#hash_32bb642b583f9a0a
 fx,d#hash_358e67ffc1bbcdba
 fx,#hash_35ae471440e2eaaf
@@ -44437,7 +44437,7 @@ fx,#hash_53b08b5a5661c6e4
 fx,#hash_54f47559bf0cb6b8
 fx,#hash_556c72c833dd5b48
 fx,#hash_56104c5c62885771
-fx,#hash_57547857f3a3bfbb
+fx,#destruct/fx_vdest_car_engine_smk
 fx,#hash_59db7b4a11e7b7e6
 fx,#hash_5aca3d0972d1ea05
 fx,#hash_5bdce21802cde5e8
@@ -44446,7 +44446,7 @@ fx,#hash_5c992b44f28563a7
 fx,#hash_5ef2ec5ffbfb329a
 fx,#hash_61a85f6f6ffdd6ee
 fx,#hash_668e7fe36488aebb
-fx,#hash_6be5f7d4447814ed
+fx,#destruct/fx_vdest_car_engine_fire_frnt
 fx,#hash_6be93712263f8fa5
 fx,#hash_7188dbedf6c37383
 fx,#hash_72b9391b2bde3394
@@ -44769,7 +44769,7 @@ xmodel,#p7_debris_trash_scattered_wide_clump_01
 xmodel,#p7_debris_trash_scattered_wide_clump_02
 xmodel,#hash_2c3d6b852f5a3ba6
 xmodel,#hash_2cd08da1e7bfb848
-xmodel,#hash_2f2b8a773f1e122b
+xmodel,#p7_debris_trash_scattered_clump_01
 xmodel,#p7_debris_trash_scattered_clump_02
 xmodel,#p7_debris_trash_corner_clump_02
 xmodel,#p7_debris_trash_corner_clump_01
@@ -44786,7 +44786,7 @@ fx,#hash_dc0ab647580f381
 fx,#hash_201c3e8ee256966e
 fx,#hash_212e385a068947a7
 fx,#hash_22533bb67731261b
-fx,#hash_2a59ec613aa53582
+fx,#destruct/fx_dest_paper
 fx,#hash_2bca709c8045932b
 fx,#hash_339f97bdcc29c88e
 fx,#hash_34b477b9028be525

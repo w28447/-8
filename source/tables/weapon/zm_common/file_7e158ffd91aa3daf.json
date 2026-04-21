@@ -35,12 +35,12 @@
     "tunables1": "#hash_6d65e0633f4bdfda",
     "cacWeaponXCam": "#hash_4a93d9d6b1c015ab",
     "sharedWeaponSounds": "#equipment",
-    "projectilemodel": "#hash_1f4b34bf307eddb6",
+    "projectilemodel": "#wpn_t7_grenade_zmb_semtex_projectile",
     "viewmodel": [
-        "#hash_3b7cf371b3a3bd84"
+        "#wpn_t7_grenade_zmb_semtex_view"
     ],
     "worldModel": [
-        "#hash_2f8075e67b15bc1f"
+        "#wpn_t7_grenade_zmb_semtex_world"
     ],
     "gadgetIconAvailable": "#ui_icon_equpiment_zm_acid",
     "gadgetIconUnavailable": "#ui_icon_equpiment_zm_acid_dark",

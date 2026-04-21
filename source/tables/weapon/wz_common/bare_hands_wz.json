@@ -44,8 +44,8 @@
     "fireRumble": "#defaultweapon_melee",
     "fx_bc8": "#hash_e1e9b23b3f789a92",
     "fx_bd0": "#hash_e1e2a63b3f726780",
-    "fx_c80": "#hash_36479a6885575e5f",
-    "fx_c88": "#hash_36479a6885575e5f",
-    "fx_c90": "#hash_36479a6885575e5f",
-    "fx_c98": "#hash_36479a6885575e5f"
+    "fx_c80": "#weapon/fx_shellejects_pistol",
+    "fx_c88": "#weapon/fx_shellejects_pistol",
+    "fx_c90": "#weapon/fx_shellejects_pistol",
+    "fx_c98": "#weapon/fx_shellejects_pistol"
 }

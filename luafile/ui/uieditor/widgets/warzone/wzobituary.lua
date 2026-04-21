@@ -1,4 +1,4 @@
-require( "x64:7f160765d41c8eb" )
+require( "ui/uieditor/widgets/warzone/wzobituaryentry" )
 
 CoD.WZObituary = InheritFrom( LUI.UIElement )
 CoD.WZObituary.__defaultWidth = 500

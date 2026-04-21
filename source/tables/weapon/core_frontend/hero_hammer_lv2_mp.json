@@ -58,8 +58,8 @@
     "fx_bd0": "#hash_6a3c982733846cf1",
     "fx_be0": "#hash_6068dcf64f19a4fe",
     "fx_be8": "#hash_6062d0f64f1524ec",
-    "fx_c80": "#hash_36479a6885575e5f",
-    "fx_c88": "#hash_36479a6885575e5f",
-    "fx_c90": "#hash_36479a6885575e5f",
-    "fx_c98": "#hash_36479a6885575e5f"
+    "fx_c80": "#weapon/fx_shellejects_pistol",
+    "fx_c88": "#weapon/fx_shellejects_pistol",
+    "fx_c90": "#weapon/fx_shellejects_pistol",
+    "fx_c98": "#weapon/fx_shellejects_pistol"
 }

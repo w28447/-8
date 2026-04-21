@@ -235,8 +235,8 @@ techset,#hash_780a6496396f386
 techset,#hash_828c7816c986944
 techset,#hash_8987df48dfa7895
 techset,#hash_899f6023c75b2e1
-techset,#hash_9753023f27c1dda
-techset,#hash_97dffe28da1b35b
+techset,#lensflare_add#e49837b6
+techset,#lensflare_add_nodepth#e49837b6
 techset,#hash_a2739e213b6b3c0
 techset,#hash_a75254534ae68a1
 techset,#hash_afb0ac4f037833c
@@ -313,7 +313,7 @@ techset,#hash_2755541ec57b19f7
 techset,#hash_280f7913f160f195
 techset,#hash_28ac8c52f079a9e5
 techset,#hash_299475ea3efc36af
-techset,#hash_2a5d00e76e7313eb
+techset,#lensflare_query_debug#e49837b6
 techset,#hash_2c991a6ebe20eaac
 techset,#hash_2c9d9167033ae76d
 techset,#hash_2ca77500f96c212a
@@ -366,7 +366,7 @@ techset,#hash_433979a4375deb86
 techset,#hash_43a0d8bf98df8389
 techset,#hash_43cc7f4bec038393
 techset,#hash_45144d60d2074141
-techset,#hash_45ba30bffa1156f3
+techset,#lensflare_query#e49837b6
 techset,#hash_468306009449e0be
 techset,#hash_46a67d90d7338848
 techset,#hash_46a68090d7338d61
@@ -384,7 +384,7 @@ techset,#hash_4a55ae59cf83317f
 techset,#hash_4a88841ea0b1955c
 techset,#hash_4ae430a729728319
 techset,#hash_4b6bd21df218fa5f
-techset,#hash_4bac9bd960713e16
+techset,#lensflare_debug#e49837b6
 techset,#hash_4bb9edbdecbc3c44
 techset,#hash_4c4c47bde462af56
 techset,#hash_4d441c26b47bc491
@@ -399,7 +399,7 @@ techset,#hash_512e4f48c29f0baa
 techset,#hash_51db55462bc6e0e7
 techset,#hash_51e52d24b4e79ea4
 techset,#hash_51fc3829b7a3729c
-techset,#hash_534b787bbebb66de
+techset,#lensflare#e49837b6
 techset,#hash_53a3ceb109773e19
 techset,#hash_55130ebbae6389ec
 techset,#hash_55130fbbae638b9f

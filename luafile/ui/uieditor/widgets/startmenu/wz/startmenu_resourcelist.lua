@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/warzone/warzoneresourcemenuitemsmall" )
-require( "x64:bf776923c7291f4" )
+require( "ui/uieditor/widgets/warzone/wzbox9slice" )
 
 CoD.StartMenu_ResourceList = InheritFrom( LUI.UIElement )
 CoD.StartMenu_ResourceList.__defaultWidth = 220

@@ -1,7 +1,7 @@
 require( "x64:3c489c2e8f56ee9" )
 require( "x64:b083cf2b5832e0" )
 require( "x64:971953d269ced4e" )
-require( "x64:bf776923c7291f4" )
+require( "ui/uieditor/widgets/warzone/wzbox9slice" )
 
 CoD.PC_MultiItemPickup = InheritFrom( LUI.UIElement )
 CoD.PC_MultiItemPickup.__defaultWidth = 877

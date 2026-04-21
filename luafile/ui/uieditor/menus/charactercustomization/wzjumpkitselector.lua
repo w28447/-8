@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframeidentity" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsbackground" )
-require( "x64:902e7fa8db2dc96" )
+require( "ui/uieditor/widgets/warzone/wzjumpkitselectorinternal" )
 
 CoD.WZJumpKitSelector = InheritFrom( CoD.Menu )
 LUI.createMenu.WZJumpKitSelector = function ( f1_arg0, f1_arg1 )

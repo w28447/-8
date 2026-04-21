@@ -1,8 +1,8 @@
 #using script_3bb49f7cd141f7e7;
 #using script_3c775b8df460b415;
-#using script_4a2b97c7370e8997;
+#using scripts\zm\zm_office_trial_disable_teleporters_elevators.gsc;
 #using script_50492155d7aeb19b;
-#using script_620352b34aa8a255;
+#using scripts\zm\zm_office_trial_teleporter_timeout.gsc;
 #using script_68cf49837639e4f1;
 #using script_760b801e43fe3017;
 #using script_a057d022a868798;

@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/warzone/warzonekilleridentity" )
-require( "x64:6947112378e931b" )
+require( "ui/uieditor/widgets/warzone/wzobituarycalloutcontainerdamagedealt" )
 
 CoD.WZObituaryCalloutExpandedContainer = InheritFrom( LUI.UIElement )
 CoD.WZObituaryCalloutExpandedContainer.__defaultWidth = 800

@@ -7,18 +7,18 @@
 #using scripts\zm_common\zm_trial_util;
 #using scripts\zm_common\zm_utility;
 
-#namespace namespace_c401fb8b;
+#namespace zm_office_trial_teleporter_timeout;
 
-// Namespace namespace_c401fb8b/namespace_c401fb8b
+// Namespace zm_office_trial_teleporter_timeout/zm_office_trial_teleporter_timeout
 // Params 0, eflags: 0x2
 // Checksum 0xe8e9da10, Offset: 0xb8
 // Size: 0x3c
 function autoexec __init__system__()
 {
-    system::register( #"hash_262f628396f811df", &__init__, undefined, undefined );
+    system::register( #"zm_office_trial_teleporter_timeout", &__init__, undefined, undefined );
 }
 
-// Namespace namespace_c401fb8b/namespace_c401fb8b
+// Namespace zm_office_trial_teleporter_timeout/zm_office_trial_teleporter_timeout
 // Params 0
 // Checksum 0xd34d2bd7, Offset: 0x100
 // Size: 0x5c
@@ -32,7 +32,7 @@ function __init__()
     zm_trial::register_challenge( #"teleporter_timeout", &on_begin, &on_end );
 }
 
-// Namespace namespace_c401fb8b/namespace_c401fb8b
+// Namespace zm_office_trial_teleporter_timeout/zm_office_trial_teleporter_timeout
 // Params 2, eflags: 0x4
 // Checksum 0x8a8123dc, Offset: 0x168
 // Size: 0x108
@@ -48,7 +48,7 @@ function private on_begin( timeout_time, var_b2c60867 )
     }
 }
 
-// Namespace namespace_c401fb8b/namespace_c401fb8b
+// Namespace zm_office_trial_teleporter_timeout/zm_office_trial_teleporter_timeout
 // Params 1, eflags: 0x4
 // Checksum 0xae4dad0d, Offset: 0x278
 // Size: 0x108
@@ -67,7 +67,7 @@ function private on_end( round_reset )
     }
 }
 
-// Namespace namespace_c401fb8b/namespace_c401fb8b
+// Namespace zm_office_trial_teleporter_timeout/zm_office_trial_teleporter_timeout
 // Params 4, eflags: 0x4
 // Checksum 0x553ef01a, Offset: 0x388
 // Size: 0x248
@@ -114,7 +114,7 @@ function private function_ad32d69( var_b2c60867, timeout, var_ca735ce8, var_a4a2
     }
 }
 
-// Namespace namespace_c401fb8b/namespace_c401fb8b
+// Namespace zm_office_trial_teleporter_timeout/zm_office_trial_teleporter_timeout
 // Params 1, eflags: 0x4
 // Checksum 0x65b4a0aa, Offset: 0x5d8
 // Size: 0x1f0
@@ -162,7 +162,7 @@ function private damage_monitor( var_a4a28ac7 )
     }
 }
 
-// Namespace namespace_c401fb8b/namespace_c401fb8b
+// Namespace zm_office_trial_teleporter_timeout/zm_office_trial_teleporter_timeout
 // Params 0, eflags: 0x4
 // Checksum 0x75766abb, Offset: 0x7d0
 // Size: 0x1d8

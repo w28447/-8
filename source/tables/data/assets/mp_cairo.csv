@@ -21235,7 +21235,7 @@ material,#mc/t7_glass_dirty_streaks_shard_dark
 material,d#ei/gfx_gib_glass_02_lit
 material,d#ei/gfx_gib_glass_01_lit
 material,d#ei/gfx_fog_slow_lg_anim_lit
-fx,#hash_155d5c9bf86efb6d
+fx,#destruct/fx_dest_window_glass_edge
 glasses,#maps/mp/mp_cairo.d3dbsp
 scriptparsetree,#scripts/mp/mp_cairo.csc
 scriptparsetree,#scripts/mp/mp_cairo_fx.csc
@@ -28425,7 +28425,7 @@ xmodel,#p7_slu_building_apartment_balcony_01
 xmodel,#hash_32d738dbbf0537c1
 xmodel,#p7_slu_iron_railing_fence_half
 xmodel,#p7_rain_umbrella_blue
-xmodel,#hash_32e564390a24c378
+xmodel,#p7_corrugated_sheet_metal_rust_01
 xmodel,#p7_corrugated_sheet_metal_rust_04
 xmodel,#hash_3302869839e22149
 xmodel,#hash_331739d638efa731
@@ -29726,11 +29726,11 @@ fx,#hash_a9b4ea77417285
 fx,#hash_58783f66b74d1d0
 fx,#hash_130feabc174eaf4e
 fx,#hash_187aee355e74ba58
-fx,#hash_187bb4081f3998bd
+fx,#destruct/fx_exp_tendril_emit
 fx,#hash_199702e001e4db3e
 fx,#hash_1edf388016859f9f
 fx,#hash_264d5f95a14ce8a9
-fx,#hash_3144c678e86570fa
+fx,#water/fx_water_drip_xsm_splash
 fx,#hash_317d63b7ebf20e90
 fx,d#hash_34c851f779a2b914
 fx,d#hash_3bcf9e29be800d33
@@ -30000,14 +30000,14 @@ xmodel,#p8_ceiling_fan_vintage_full
 xmodel,#hash_7f7154774b6c771e
 fx,#hash_61c69a6fb57c837
 fx,#hash_ea20499cd485f2a
-fx,#hash_104efd9312084c23
+fx,#destruct/fx_dest_glass_shard_impact_burst
 fx,#hash_1890445e80341b3e
-fx,#hash_1907402036f045a6
+fx,#electric/fx_elec_sparks_burst_sm_orange_os
 fx,#hash_212bce954d1e21ea
 fx,#hash_269f259a4cd762e8
 fx,#hash_2bd8234adfb68688
 fx,#hash_2c31458ff5ffb0b2
-fx,#hash_3084625a8c3bbfd0
+fx,#destruct/fx_dest_paper_flat
 fx,#electric/fx8_sparks_burst_dir_sm_orange_os
 fx,#hash_3c5beedb4f346b9f
 fx,#hash_40f4c2f5a7d7e23a
@@ -30025,7 +30025,7 @@ fx,#hash_63607d66f42901f0
 fx,#hash_668e7fe36488aebb
 fx,#hash_6805e507441040ca
 fx,#hash_69b9c2e7a9130dd6
-fx,#hash_6be5f7d4447814ed
+fx,#destruct/fx_vdest_car_engine_fire_frnt
 fx,#hash_6df34072d91d7005
 fx,#hash_7188dbedf6c37383
 fx,#hash_76e36fd607dabef6
@@ -30311,7 +30311,7 @@ image,#precomputed_sky_illumination_xz
 lighting,#maps/mp/mp_cairo.d3dbsp
 xmodel,#p7_debris_trash_scattered_wide_clump_01
 xmodel,#hash_2536928fbd8b45e3
-xmodel,#hash_2f2b8a773f1e122b
+xmodel,#p7_debris_trash_scattered_clump_01
 xmodel,#p7_debris_trash_corner_clump_02
 xmodel,#p7_debris_trash_corner_clump_01
 xmodel,#p8_col_gazebo_pavilion_stone_railing_01
@@ -30320,7 +30320,7 @@ xmodel,#p7_debris_trash_curb_clump_01
 fx,#hash_c720ceb85f8d58
 fx,#hash_885da0d49ab59e4
 fx,#hash_210068c3361d8e98
-fx,#hash_2a59ec613aa53582
+fx,#destruct/fx_dest_paper
 fx,#hash_2b07670af4c3f90e
 fx,#hash_2bca709c8045932b
 fx,#hash_3784b8ce7aad5d50

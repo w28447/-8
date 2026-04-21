@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/warzone/warzoneinventorymenuitemsmall" )
-require( "x64:bf776923c7291f4" )
+require( "ui/uieditor/widgets/warzone/wzbox9slice" )
 
 CoD.StartMenu_ArmorPlatesList = InheritFrom( LUI.UIElement )
 CoD.StartMenu_ArmorPlatesList.__defaultWidth = 215

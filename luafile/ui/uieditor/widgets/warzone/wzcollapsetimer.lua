@@ -1,4 +1,4 @@
-require( "x64:98179f6cf1de653" )
+require( "ui/uieditor/widgets/warzone/wzcollapsetimerinternal" )
 
 CoD.WZCollapseTimer = InheritFrom( LUI.UIElement )
 CoD.WZCollapseTimer.__defaultWidth = 1920

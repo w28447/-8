@@ -1,4 +1,4 @@
-require( "x64:226ed7c297df6a5" )
+require( "ui/uieditor/widgets/warzone/wzobituaryteamicon" )
 
 CoD.WZObituaryVictim = InheritFrom( LUI.UIElement )
 CoD.WZObituaryVictim.__defaultWidth = 168

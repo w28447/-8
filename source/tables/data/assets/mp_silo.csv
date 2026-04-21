@@ -15076,7 +15076,7 @@ material,#hash_edfafd67f34cc10
 material,d#ei/gfx_gib_glass_02_lit
 material,d#ei/gfx_gib_glass_01_lit
 material,d#ei/gfx_fog_slow_lg_anim_lit
-fx,#hash_155d5c9bf86efb6d
+fx,#destruct/fx_dest_window_glass_edge
 glasses,#maps/mp/mp_silo.d3dbsp
 scriptparsetree,#scripts/mp/mp_silo_fx.gsc
 scriptparsetree,#scripts/mp/mp_silo_sound.csc
@@ -25621,7 +25621,7 @@ xmodel,#p8_ice_mb_rocket_tarp
 xmodel,#p8_ice_rock_pile_01_dark
 xmodel,#p7_pipe_metal_hp_4_straight_4_grey_dk
 xmodel,d#p7_tank_welding_guage
-xmodel,#hash_1ed33df0357897f5
+xmodel,#p7_door_metal_industrial_dent_white
 xmodel,#p7_zur_nw_icicles_large_02
 xmodel,#p7_conduit_rust_1_straight_128
 xmodel,#p8_ice_mb_cargodoorframe
@@ -25683,7 +25683,7 @@ xmodel,#p8_ice_gas_console_box_02_lt
 xmodel,#p8_ice_gas_console_box_02_rt
 xmodel,#hash_23ac92d14f1186fc
 xmodel,#hash_23b45b97c51a607d
-xmodel,#hash_23bf21512a68a145
+xmodel,#p7_pipe_metal_hp_4_elbow_90_grey_dk
 xmodel,#p7_slu_meter_electric_03_base
 xmodel,#p8_foliage_branch_pile_lrg
 xmodel,#p8_ice_hallway_wires_corner_02
@@ -25996,7 +25996,7 @@ xmodel,#hash_3b09c0f2b7f7ac74
 xmodel,#p7_ris_duct_metal_circular_straight_32_clean
 xmodel,#p7_fan_industrial_metal_02
 xmodel,#p8_door_metal_iron_01_frame_single
-xmodel,#hash_3b641b2270dda597
+xmodel,#p7_cai_igc_monitor_flat_01
 xmodel,#hash_3b6444fc5ce270fe
 xmodel,#p8_military_electronics_case_exterior_lock_01_grp
 xmodel,#p7_ban_i_beam_bracket_32_l_01
@@ -26246,7 +26246,7 @@ xmodel,#p8_ice_foliage_shrub_01_tall_01
 xmodel,#p8_ice_foliage_shrub_01_tall_02
 xmodel,#p7_conduit_metal_1_strap_lrg
 xmodel,#p7_pipe_metal_hp_4_straight_4_white
-xmodel,#hash_4f5484ebd6e73cc3
+xmodel,#p7_fxanim_gp_wire_thin_hanging_03_smod
 xmodel,#skybox_default_day
 xmodel,#hash_4f672a934e641adf
 xmodel,#p7_pipe_metal_hp_4_x_joint_blue
@@ -26870,7 +26870,7 @@ fx,#hash_14072ff5450d4a2f
 fx,#hash_14291af5452a0ce6
 fx,#hash_148f792bb34cdea7
 fx,#hash_1596d15d996712e3
-fx,#hash_187bb4081f3998bd
+fx,#destruct/fx_exp_tendril_emit
 fx,#hash_1903089c54448fbc
 fx,#hash_193dc7e789429bd4
 fx,#hash_1a9fb0b9192d2b3e
@@ -27024,8 +27024,8 @@ fx,#hash_3be0676ea3277f0
 fx,#dirt/fx8_dust_fall_crumble_rattle
 fx,#hash_ea20499cd485f2a
 fx,#hash_ed6ebb3c800b3db
-fx,#hash_104efd9312084c23
-fx,#hash_1907402036f045a6
+fx,#destruct/fx_dest_glass_shard_impact_burst
+fx,#electric/fx_elec_sparks_burst_sm_orange_os
 fx,#hash_1e22813c5dfaa1e8
 fx,#hash_1e33826c1a410891
 fx,#hash_200f622fe59abb84
@@ -27033,14 +27033,14 @@ fx,#hash_29ab86ddd3836bc8
 fx,#hash_37a6b21cc52ea4e2
 fx,#electric/fx8_sparks_burst_dir_sm_orange_os
 fx,#hash_3b0d845cd3f7ce85
-fx,#hash_57f6afb186ed010c
+fx,#electric/fx_sparks_burst_line_sm_blue_random
 fx,#hash_588e2d89a4587e1d
 fx,#hash_59db7b4a11e7b7e6
 fx,#hash_5aca3d0972d1ea05
 fx,#hash_5c992b44f28563a7
 fx,#hash_668e7fe36488aebb
 fx,d#hash_676b71f3198293b1
-fx,#hash_6be5f7d4447814ed
+fx,#destruct/fx_vdest_car_engine_fire_frnt
 fx,#hash_6c2436e2b83cd9e6
 fx,#hash_6fdb8c52fdf2dd85
 fx,#hash_74ba3a0338c77724

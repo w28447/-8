@@ -1,7 +1,7 @@
 #using script_28bfe6df1650ab79;
 #using script_3d07a022f5c96f45;
 #using script_4109fe9f86c53247;
-#using script_4f1abd7be75f8a2f;
+#using scripts\zm\zm_orange_trial_kills_with_flinger.gsc;
 #using script_67da0c3654a906b6;
 #using scripts\core_common\ai\zombie_utility;
 #using scripts\core_common\array_shared;

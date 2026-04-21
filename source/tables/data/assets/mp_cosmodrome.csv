@@ -14441,7 +14441,7 @@ material,#hash_3ffaab8e61769b13
 material,d#ei/gfx_gib_glass_02_lit
 material,d#ei/gfx_gib_glass_01_lit
 material,d#ei/gfx_fog_slow_lg_anim_lit
-fx,#hash_155d5c9bf86efb6d
+fx,#destruct/fx_dest_window_glass_edge
 glasses,#maps/mp/mp_cosmodrome.d3dbsp
 scriptparsetree,#scripts/mp/mp_cosmodrome.csc
 scriptparsetree,#scripts/mp/mp_cosmodrome_sound.gsc
@@ -26807,7 +26807,7 @@ fx,#hash_122a2d481a543b25
 fx,#hash_125eece71f20bf78
 fx,#hash_233d507156fc0861
 fx,#hash_2bd8234adfb68688
-fx,#hash_3084625a8c3bbfd0
+fx,#destruct/fx_dest_paper_flat
 fx,#hash_37a6b21cc52ea4e2
 fx,#hash_3826b4ba3964f119
 fx,#hash_39efbfe6dc193674
@@ -27096,7 +27096,7 @@ xanim,#hash_6162bcdca82d1b91
 xanim,#hash_68819a1f89b7831d
 xmodel,#p8_cos_box_electric_pipeline_grp_02
 fx,#hash_88d484163602836
-fx,#hash_2a59ec613aa53582
+fx,#destruct/fx_dest_paper
 fx,#hash_2c60a9f19d629d0b
 fx,#hash_3784b8ce7aad5d50
 fx,#hash_3aa84827bcc7b7f9

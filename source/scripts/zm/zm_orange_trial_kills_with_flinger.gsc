@@ -4,9 +4,9 @@
 #using scripts\zm_common\zm_trial_util;
 #using scripts\zm_common\zm_weapons;
 
-#namespace namespace_aa42e727;
+#namespace zm_orange_trial_kills_with_flinger;
 
-// Namespace namespace_aa42e727/namespace_aa42e727
+// Namespace zm_orange_trial_kills_with_flinger/zm_orange_trial_kills_with_flinger
 // Params 0, eflags: 0x2
 // Checksum 0xb83fb1ca, Offset: 0x90
 // Size: 0x3c
@@ -15,7 +15,7 @@ function autoexec __init__system__()
     system::register( #"kills_with_flinger", &__init__, undefined, undefined );
 }
 
-// Namespace namespace_aa42e727/namespace_aa42e727
+// Namespace zm_orange_trial_kills_with_flinger/zm_orange_trial_kills_with_flinger
 // Params 0
 // Checksum 0xb7486b07, Offset: 0xd8
 // Size: 0x5c
@@ -29,7 +29,7 @@ function __init__()
     zm_trial::register_challenge( #"kills_with_flinger", &on_begin, &on_end );
 }
 
-// Namespace namespace_aa42e727/namespace_aa42e727
+// Namespace zm_orange_trial_kills_with_flinger/zm_orange_trial_kills_with_flinger
 // Params 4, eflags: 0x4
 // Checksum 0xaf9a0f71, Offset: 0x140
 // Size: 0x164
@@ -57,7 +57,7 @@ function private on_begin( var_8a72a00b, var_49d8a02c, var_325ff213, var_dd2fad6
     level zm_trial_util::function_dace284( level.var_61541a89 );
 }
 
-// Namespace namespace_aa42e727/namespace_aa42e727
+// Namespace zm_orange_trial_kills_with_flinger/zm_orange_trial_kills_with_flinger
 // Params 1, eflags: 0x4
 // Checksum 0x39a72f4c, Offset: 0x2b0
 // Size: 0xee
@@ -80,7 +80,7 @@ function private on_end( round_reset )
     level.var_61541a89 = undefined;
 }
 
-// Namespace namespace_aa42e727/namespace_aa42e727
+// Namespace zm_orange_trial_kills_with_flinger/zm_orange_trial_kills_with_flinger
 // Params 0, eflags: 0x4
 // Checksum 0xd7b59e9b, Offset: 0x3a8
 // Size: 0x100
