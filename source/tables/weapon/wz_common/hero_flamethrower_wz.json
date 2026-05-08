@@ -72,8 +72,8 @@
         "#hash_65ba98a154f4f9d6"
     ],
     "sharedWeaponSounds": "#lmg",
-    "flameTableFirstPerson": "#hash_7c9e63bac4fc46ba",
-    "flameTableThirdPerson": "#hash_6efa585a41207471",
+    "flameTableFirstPerson": "#default_flame_firstperson",
+    "flameTableThirdPerson": "#default_flame_thirdperson",
     "statusEffects": [
         {
             "effect": "#dot_purifier_wz",
@@ -109,8 +109,8 @@
     "rumble_dc8": "#hash_29dda3d6a80b7a2c",
     "beam_e58": "#hash_4eef0a64d7fcb8d",
     "beam_e60": "#hash_7d961a279e1b41b1",
-    "beam_e68": "#hash_ecdf74613c27651",
-    "beam_e70": "#hash_2e4d796fdefb28b5",
+    "beam_e68": "#flamethrower_beam_underwater",
+    "beam_e70": "#flamethrower_beam_3p_underwater",
     "fx_be0": "#hash_1ed95724750bb5c2",
     "fx_be8": "#hash_1ed24b24750582b0"
 }

@@ -28,16 +28,16 @@ function function_9bcbe7e1()
         return;
     }
     
-    var_7331db53 = [];
-    var_7331db53[ var_7331db53.size ] = function_1fb8a998( ( -2049, -1718, -2 ), ( -3425, -1142, 4 ) );
-    var_7331db53[ var_7331db53.size ] = function_1fb8a998( ( 0, -1024, 8 ), ( 1080, -1776, 4 ) );
-    var_7331db53[ var_7331db53.size ] = function_1fb8a998( ( 0, 512, 8 ), ( 108, 948, 4 ) );
-    var_7331db53[ var_7331db53.size ] = function_1fb8a998( ( -2482, 849, 0 ), ( -2796, 1511, 4 ) );
+    movepoints = [];
+    movepoints[ movepoints.size ] = function_1fb8a998( ( -2049, -1718, -2 ), ( -3425, -1142, 4 ) );
+    movepoints[ movepoints.size ] = function_1fb8a998( ( 0, -1024, 8 ), ( 1080, -1776, 4 ) );
+    movepoints[ movepoints.size ] = function_1fb8a998( ( 0, 512, 8 ), ( 108, 948, 4 ) );
+    movepoints[ movepoints.size ] = function_1fb8a998( ( -2482, 849, 0 ), ( -2796, 1511, 4 ) );
     var_4ae5bbef = struct::get_array( "bounty_deposit_location", "variantname" );
     
     foreach ( var_7f648714 in var_4ae5bbef )
     {
-        foreach ( movepoint in var_7331db53 )
+        foreach ( movepoint in movepoints )
         {
             distance = distancesquared( var_7f648714.origin, movepoint.originallocation );
             

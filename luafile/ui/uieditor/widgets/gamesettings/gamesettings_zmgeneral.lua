@@ -68,7 +68,7 @@ CoD.GameSettings_ZMGeneral.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 		end
 	end, function ( f6_arg0, f6_arg1, f6_arg2 )
 		if AlwaysFalse() then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x22361E23588705A], 0x8E7772DFD9BBDEB, nil, "ui_contextual_1" )
+			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x22361E23588705A], "menu/options", nil, "ui_contextual_1" )
 			return true
 		else
 			return false

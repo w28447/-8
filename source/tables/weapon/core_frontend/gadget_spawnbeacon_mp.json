@@ -1,7 +1,7 @@
 {
     "name": "#gadget_spawnbeacon_mp",
     "baseWeapon": "#gadget_spawnbeacon",
-    "displayname": "#hash_67021e2872781bfa",
+    "displayname": "#spawnbeacon/name",
     "weapon70": "#gadget_spawnbeacon",
     "streamkey": "#hash_1078661a2e7c96b3",
     "scrstr_8c8": [

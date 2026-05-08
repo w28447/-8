@@ -19,7 +19,7 @@ CoD.GameSettings_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local TextBox0 = LUI.UIText.new( 0, 0, 19, 459, 0, 0, 223, 260 )
 	TextBox0:setRGB( ColorSet.T8__BEIGE__HEADER.r, ColorSet.T8__BEIGE__HEADER.g, ColorSet.T8__BEIGE__HEADER.b )
-	TextBox0:setText( LocalizeToUpperString( 0x8E7772DFD9BBDEB ) )
+	TextBox0:setText( LocalizeToUpperString( "menu/options" ) )
 	TextBox0:setTTF( "ttmussels_regular" )
 	TextBox0:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	TextBox0:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

@@ -164,10 +164,10 @@ CoD.EmblemListFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 		end
 	end, function ( f17_arg0, f17_arg1, f17_arg2 )
 		if CoD.CraftUtility.Emblem_IsOccupied( f17_arg0, f17_arg2 ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f17_arg0, f17_arg2, "isNonClickableEmblem", 0 ) and not IsPreBuiltEmblemTab( f17_arg2 ) and not SelectingGroupEmblem( f17_arg2 ) and IsGamepad( f17_arg2 ) then
-			CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x22361E23588705A], 0x8E7772DFD9BBDEB, nil, "ui_contextual_1" )
+			CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x22361E23588705A], "menu/options", nil, "ui_contextual_1" )
 			return true
 		elseif CoD.CraftUtility.Emblem_IsOccupied( f17_arg0, f17_arg2 ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f17_arg0, f17_arg2, "isNonClickableEmblem", 0 ) and not IsPreBuiltEmblemTab( f17_arg2 ) and not SelectingGroupEmblem( f17_arg2 ) and IsMouseOrKeyboard( f17_arg2 ) then
-			CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x22361E23588705A], 0x8E7772DFD9BBDEB, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_contextual_1" )
+			CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x22361E23588705A], "menu/options", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_contextual_1" )
 			return true
 		else
 			return false
@@ -218,7 +218,7 @@ CoD.EmblemListFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 			
 		end
 	end )
-	emblemList:AddContextualMenuAction( f1_arg0, f1_arg1, 0x8E7772DFD9BBDEB, function ( f25_arg0, f25_arg1, f25_arg2, f25_arg3 )
+	emblemList:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/options", function ( f25_arg0, f25_arg1, f25_arg2, f25_arg3 )
 		if CoD.CraftUtility.Emblem_IsOccupied( f25_arg0, f25_arg2 ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f25_arg0, f25_arg2, "isNonClickableEmblem", 0 ) and not IsPreBuiltEmblemTab( f25_arg2 ) and not SelectingGroupEmblem( f25_arg2 ) then
 			return function ( f26_arg0, f26_arg1, f26_arg2, f26_arg3 )
 				OpenPopup( self, "EmblemSelectOptions", f26_arg2, nil )

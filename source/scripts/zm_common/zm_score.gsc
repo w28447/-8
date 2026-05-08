@@ -814,7 +814,7 @@ function get_player_score()
 // Params 1
 // Checksum 0xea9fdbcc, Offset: 0x24a8
 // Size: 0x32
-function function_c1f146ff( score )
+function set_player_score( score )
 {
     self.pers[ #"score" ] = score;
     self.score = score;

@@ -1,4 +1,4 @@
-require( "x64:1bbde4283bb35f8" )
+require( "ui/uieditor/menus/store/store" )
 require( "ui/uieditor/widgets/director/directorinfopanelzm" )
 require( "ui/uieditor/widgets/director/directorzmmapselectitem" )
 require( "ui/uieditor/widgets/director/directorzmplaylistselectitem" )

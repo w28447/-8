@@ -1232,13 +1232,13 @@
         {
             "value": 89,
             "next": 10,
-            "name": "#hash_4747e5f1172b91f9",
+            "name": "#amb_comp_broken_1",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4747e5f1172b91f9",
+                    "name": "#amb_comp_broken_1",
                     "assetId": "#amb/electronics/computer/loops/broken/broken_comp_01.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
                     "assetIdRelease": "#mp_station.all",
@@ -2309,13 +2309,13 @@
         {
             "value": 227,
             "next": 65535,
-            "name": "#hash_633b9532cf0da169",
+            "name": "#amb_flies",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_633b9532cf0da169",
+                    "name": "#amb_flies",
                     "assetId": "#amb/animals/insects/flies/flies_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
                     "assetIdRelease": "#mp_station.all",
@@ -2354,7 +2354,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_633b9532cf0da169",
+                    "name": "#amb_flies",
                     "assetId": "#amb/animals/insects/flies/flies_02.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
                     "assetIdRelease": "#mp_station.all",
@@ -2397,13 +2397,13 @@
         {
             "value": 98,
             "next": 30,
-            "name": "#hash_186f7af36a61f275",
+            "name": "#amb_fridge",
             "sequence": 0,
             "cullDistance": 900,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_186f7af36a61f275",
+                    "name": "#amb_fridge",
                     "assetId": "#amb/electronics/fridge/fridge_hum.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
                     "assetIdRelease": "#mp_station.all",
@@ -4438,13 +4438,13 @@
         {
             "value": 187,
             "next": 65535,
-            "name": "#hash_7075915c2361f934",
+            "name": "#amb_radios",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7075915c2361f934",
+                    "name": "#amb_radios",
                     "assetId": "#amb/electronics/radio/loops/loop_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
                     "assetIdRelease": "#mp_station.all",
@@ -4483,7 +4483,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_7075915c2361f934",
+                    "name": "#amb_radios",
                     "assetId": "#amb/electronics/radio/loops/loop_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
                     "assetIdRelease": "#mp_station.all",
@@ -4522,7 +4522,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_7075915c2361f934",
+                    "name": "#amb_radios",
                     "assetId": "#amb/electronics/radio/loops/loop_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
                     "assetIdRelease": "#mp_station.all",
@@ -4561,7 +4561,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_7075915c2361f934",
+                    "name": "#amb_radios",
                     "assetId": "#amb/electronics/radio/loops/loop_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
                     "assetIdRelease": "#mp_station.all",
@@ -4600,7 +4600,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_7075915c2361f934",
+                    "name": "#amb_radios",
                     "assetId": "#amb/electronics/radio/loops/loop_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
                     "assetIdRelease": "#mp_station.all",
@@ -4639,7 +4639,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_7075915c2361f934",
+                    "name": "#amb_radios",
                     "assetId": "#amb/electronics/radio/loops/loop_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
                     "assetIdRelease": "#mp_station.all",
@@ -4678,7 +4678,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_7075915c2361f934",
+                    "name": "#amb_radios",
                     "assetId": "#amb/electronics/radio/loops/loop_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
                     "assetIdRelease": "#mp_station.all",
@@ -5015,13 +5015,13 @@
         {
             "value": 32,
             "next": 49,
-            "name": "#hash_7908cb1395a95a1",
+            "name": "#amb_toilet",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7908cb1395a95a1",
+                    "name": "#amb_toilet",
                     "assetId": "#amb/environment/water/toilet/toilet_water_run.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
                     "assetIdRelease": "#mp_station.all",
@@ -8726,13 +8726,13 @@
         {
             "value": 198,
             "next": 100,
-            "name": "#hash_1ff8bec27dfc1b70",
+            "name": "#dst_fern",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1ff8bec27dfc1b70",
+                    "name": "#dst_fern",
                     "assetId": "#dst/prop/fern/fern_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
                     "assetIdRelease": "#mp_station.all",
@@ -9662,13 +9662,13 @@
         {
             "value": 204,
             "next": 65535,
-            "name": "#hash_501eff91f639c23e",
+            "name": "#dst_glass_pane",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_501eff91f639c23e",
+                    "name": "#dst_glass_pane",
                     "assetId": "#dst/generic/glass/med/glass_break_medium_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
                     "assetIdRelease": "#mp_station.all",
@@ -10287,13 +10287,13 @@
         {
             "value": 22,
             "next": 65535,
-            "name": "#hash_6a7bbff93ccc7ab7",
+            "name": "#dst_luggage",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6a7bbff93ccc7ab7",
+                    "name": "#dst_luggage",
                     "assetFileNameSustain": "#mp_station.all",
                     "assetIdRelease": "#mp_station.all",
                     "assetFileNameRelease": "#mp_station.all",
@@ -13116,13 +13116,13 @@
         {
             "value": 84,
             "next": 131,
-            "name": "#hash_38c96854fb0017e",
+            "name": "#dst_typewriter",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_38c96854fb0017e",
+                    "name": "#dst_typewriter",
                     "assetId": "#dst/prop/typewriter/typewriter_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
                     "assetIdRelease": "#mp_station.all",
@@ -14702,13 +14702,13 @@
         {
             "value": 95,
             "next": 156,
-            "name": "#hash_6168b48a6d70a53",
+            "name": "#evt_rpg_shot",
             "sequence": 0,
             "cullDistance": 25000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6168b48a6d70a53",
+                    "name": "#evt_rpg_shot",
                     "assetId": "#hash_3d07658560718205",
                     "assetFileNameSustain": "#mp_station.all",
                     "assetIdRelease": "#mp_station.all",
@@ -16390,13 +16390,13 @@
         {
             "value": 175,
             "next": 0,
-            "name": "#hash_48bc31e222aa7c3e",
+            "name": "#exp_barrel_fire",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_48bc31e222aa7c3e",
+                    "name": "#exp_barrel_fire",
                     "assetId": "#dst/generic/fire/barrel/barrel_fire_02.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
                     "assetIdRelease": "#mp_station.all",
@@ -21906,7 +21906,7 @@
                     "assetIdRelease": "#mp_station.all",
                     "assetFileNameRelease": "#mp_station.all",
                     "contextType": "#hash_730721b0b6373e1",
-                    "contextValue": "#hash_8f631787d4aaf77",
+                    "contextValue": "#outdoor",
                     "reverbSend": 0.001,
                     "centerSend": 0,
                     "volMin": 0.56234133,
@@ -21948,7 +21948,7 @@
                     "assetIdRelease": "#mp_station.all",
                     "assetFileNameRelease": "#mp_station.all",
                     "contextType": "#hash_730721b0b6373e1",
-                    "contextValue": "#hash_8f631787d4aaf77",
+                    "contextValue": "#outdoor",
                     "reverbSend": 0.001,
                     "centerSend": 0,
                     "volMin": 0.56234133,
@@ -22776,13 +22776,13 @@
         {
             "value": 220,
             "next": 65535,
-            "name": "#hash_43ad48046fb206c8",
+            "name": "#exp_veh_small",
             "sequence": 0,
             "cullDistance": 12000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_43ad48046fb206c8",
+                    "name": "#exp_veh_small",
                     "secondaryname": "#hash_680a1ca45380de2",
                     "assetId": "#exp/vehicle/base/exp_veh_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
@@ -22823,7 +22823,7 @@
                     "unk178": "#hash_6000b0206"
                 },
                 {
-                    "name": "#hash_43ad48046fb206c8",
+                    "name": "#exp_veh_small",
                     "secondaryname": "#hash_680a1ca45380de2",
                     "assetId": "#exp/vehicle/base/exp_veh_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
@@ -22864,7 +22864,7 @@
                     "unk178": "#hash_6000b0206"
                 },
                 {
-                    "name": "#hash_43ad48046fb206c8",
+                    "name": "#exp_veh_small",
                     "secondaryname": "#hash_680a1ca45380de2",
                     "assetId": "#exp/vehicle/base/exp_veh_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
@@ -25272,7 +25272,7 @@
             "loop": "#hash_44463359dd025b23",
             "duckId": "#default",
             "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_8f631787d4aaf77",
+            "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": false,
@@ -25372,7 +25372,7 @@
             "loop": "#hash_4e94f22fc1001e7",
             "duckId": "#default",
             "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_8f631787d4aaf77",
+            "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": true,

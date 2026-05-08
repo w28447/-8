@@ -724,7 +724,7 @@ function init_custom_ai_type()
 // Size: 0x74
 function zombiemode_melee_miss()
 {
-    if ( isdefined( self.enemy.var_e764ac36 ) )
+    if ( isdefined( self.enemy.curr_pay_turret ) )
     {
         self.enemy dodamage( getdvarint( #"ai_meleedamage", 0 ), self.origin, self, self, "none", "melee" );
     }
@@ -2110,9 +2110,9 @@ function end_game()
     util::preload_frontend();
     players = getplayers();
     
-    if ( isdefined( level.var_77805e8 ) )
+    if ( isdefined( level.custom_end_screen ) )
     {
-        level [[ level.var_77805e8 ]]();
+        level [[ level.custom_end_screen ]]();
     }
     
     for ( i = 0; i < players.size ; i++ )

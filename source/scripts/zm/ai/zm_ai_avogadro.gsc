@@ -256,18 +256,18 @@ function private function_d60f39c2( entity, player, duration, color )
                     #/
                 }
                 
-                var_1fee3f71 = "";
+                no_charge_attack = "";
                 
                 if ( function_5f4c1c68( self ) )
                 {
-                    var_1fee3f71 = " no_charge_atk";
+                    no_charge_attack = " no_charge_atk";
                 }
                 
                 /#
                     line( start, end, color );
                     sphere( end, 2, color, 1, 0, 4, 1 );
                     distance = distance( start, end );
-                    print3d( end + ( 0, 0, 30 ), "<dev string:x135>" + distance + retreat + var_1fee3f71, color, 1, 1, 1 );
+                    print3d( end + ( 0, 0, 30 ), "<dev string:x135>" + distance + retreat + no_charge_attack, color, 1, 1, 1 );
                 #/
             }
             
@@ -569,7 +569,7 @@ function private function_c8179930()
 // Size: 0x166
 function private function_be9ade6d( entity )
 {
-    var_e98404d8 = entity getcentroid();
+    entity_centroid = entity getcentroid();
     players = getplayers();
     
     /#
@@ -577,14 +577,14 @@ function private function_be9ade6d( entity )
         
         if ( enabled )
         {
-            sphere( var_e98404d8, sqrt( 102400 ), ( 0, 0, 1 ), 0.1, 0, 8, 60 );
+            sphere( entity_centroid, sqrt( 102400 ), ( 0, 0, 1 ), 0.1, 0, 8, 60 );
         }
     #/
     
     for ( player_index = 0; player_index < players.size ; player_index++ )
     {
         player_centroid = players[ player_index ] getcentroid();
-        distance_sq = distancesquared( var_e98404d8, player_centroid );
+        distance_sq = distancesquared( entity_centroid, player_centroid );
         
         if ( distance_sq <= 102400 )
         {
@@ -658,15 +658,15 @@ function private function_77d6d1fa( entity )
         entity.var_a0c65fba = ( 0, 0, 0 );
     }
     
-    _attack_barrier_sprint = anglestoforward( self.angles );
+    var_9461d9d2 = anglestoforward( self.angles );
     
     if ( isdefined( self.favoriteenemy ) )
     {
-        _attack_barrier_sprint = self.favoriteenemy.origin - self.origin;
+        var_9461d9d2 = self.favoriteenemy.origin - self.origin;
     }
     
-    entity.var_a0c65fba = _attack_barrier_sprint;
-    var_afa8e25c = checknavmeshdirection( self.origin, _attack_barrier_sprint, 1000, self getpathfindingradius() );
+    entity.var_a0c65fba = var_9461d9d2;
+    var_afa8e25c = checknavmeshdirection( self.origin, var_9461d9d2, 1000, self getpathfindingradius() );
     
     if ( isdefined( var_afa8e25c ) )
     {
@@ -674,7 +674,7 @@ function private function_77d6d1fa( entity )
         return;
     }
     
-    entity.var_952f8260 = entity.origin + _attack_barrier_sprint;
+    entity.var_952f8260 = entity.origin + var_9461d9d2;
 }
 
 // Namespace zm_ai_avogadro/zm_ai_avogadro
@@ -716,10 +716,10 @@ function private function_d59c4b07( entity )
 // Size: 0x1b6
 function private function_96e43661( entity )
 {
-    var_c89fc811 = entity getangles();
-    registernotice_walla = anglestoforward( var_c89fc811 );
-    var_e98404d8 = entity getcentroid();
-    var_9a123fd6 = var_e98404d8 + registernotice_walla * 30;
+    entity_angles = entity getangles();
+    registernotice_walla = anglestoforward( entity_angles );
+    entity_centroid = entity getcentroid();
+    var_9a123fd6 = entity_centroid + registernotice_walla * 30;
     players = getplayers();
     result = 0;
     
@@ -755,7 +755,7 @@ function private function_e805c4d0( entity, asmstatename )
 {
     animationstatenetworkutility::requeststate( entity, asmstatename );
     entity.previous_origin = entity.origin;
-    entity.var_faaea04c = gettime();
+    entity.last_move_time = gettime();
     return 5;
 }
 
@@ -768,7 +768,7 @@ function private function_292adb83( entity, asmstatename )
     result = 5;
     function_d59c4b07( entity );
     
-    if ( gettime() - entity.var_faaea04c > int( 1 * 1000 ) )
+    if ( gettime() - entity.last_move_time > int( 1 * 1000 ) )
     {
         if ( distance2dsquared( entity.origin, entity.previous_origin ) < 25 )
         {
@@ -777,7 +777,7 @@ function private function_292adb83( entity, asmstatename )
         else
         {
             entity.previous_origin = entity.origin;
-            entity.var_faaea04c = gettime();
+            entity.last_move_time = gettime();
         }
     }
     
@@ -794,8 +794,8 @@ function private function_292adb83( entity, asmstatename )
     
     if ( result == 5 )
     {
-        _attack_barrier_sprint = entity.var_952f8260 - self.origin;
-        var_a4d89907 = vectordot( entity.var_a0c65fba, _attack_barrier_sprint );
+        var_9461d9d2 = entity.var_952f8260 - self.origin;
+        var_a4d89907 = vectordot( entity.var_a0c65fba, var_9461d9d2 );
         
         if ( var_a4d89907 < 0 || function_96e43661( entity ) )
         {
@@ -841,7 +841,7 @@ function private function_fceafc5f()
 // Size: 0x20e
 function private function_9c41ab55( entity )
 {
-    var_e98404d8 = entity getcentroid();
+    entity_centroid = entity getcentroid();
     players = getplayers();
     
     /#
@@ -849,25 +849,25 @@ function private function_9c41ab55( entity )
         
         if ( enabled )
         {
-            sphere( var_e98404d8, sqrt( 129600 ), ( 0, 0, 1 ), 0.1, 0, 8, 60 );
-            sphere( var_e98404d8, sqrt( 32400 ), ( 0, 0, 1 ), 0.5, 0, 8, 60 );
+            sphere( entity_centroid, sqrt( 129600 ), ( 0, 0, 1 ), 0.1, 0, 8, 60 );
+            sphere( entity_centroid, sqrt( 32400 ), ( 0, 0, 1 ), 0.5, 0, 8, 60 );
         }
     #/
     
     for ( i = 0; i < players.size ; i++ )
     {
         player_centroid = players[ i ] getcentroid();
-        distance_sq = distancesquared( var_e98404d8, player_centroid );
+        distance_sq = distancesquared( entity_centroid, player_centroid );
         
         if ( distance_sq <= 32400 )
         {
-            players[ i ] dodamage( 150, var_e98404d8, entity, entity, "none", "MOD_MELEE" );
+            players[ i ] dodamage( 150, entity_centroid, entity, entity, "none", "MOD_MELEE" );
             continue;
         }
         
         if ( distance_sq <= 129600 )
         {
-            players[ i ] dodamage( 100, var_e98404d8, entity, entity, "none", "MOD_MELEE" );
+            players[ i ] dodamage( 100, entity_centroid, entity, entity, "none", "MOD_MELEE" );
         }
     }
 }
@@ -879,7 +879,7 @@ function private function_9c41ab55( entity )
 function private function_c96c9ef8( entity )
 {
     result = 0;
-    var_61835cce = 0;
+    player_touching_volume = 0;
     
     if ( isdefined( entity.var_885c1824 ) )
     {
@@ -889,7 +889,7 @@ function private function_c96c9ef8( entity )
         {
             if ( players[ i ] istouching( entity.var_885c1824 ) )
             {
-                var_61835cce = 1;
+                player_touching_volume = 1;
                 break;
             }
         }
@@ -1008,14 +1008,14 @@ function private function_7615515e( entity )
         entity.var_8db49d5e = 0;
     }
     
-    var_e98404d8 = entity getcentroid();
+    entity_centroid = entity getcentroid();
     players = getplayers();
     player_in_range = 0;
     
     for ( i = 0; i < players.size ; i++ )
     {
         player_centroid = players[ i ] getcentroid();
-        distance_sq = distancesquared( var_e98404d8, player_centroid );
+        distance_sq = distancesquared( entity_centroid, player_centroid );
         
         if ( distance_sq <= 78400 )
         {
@@ -1143,18 +1143,18 @@ function function_a9be3eba( entity )
             return;
         }
         
-        var_cfa253f9 = array( "left", "right", "back", "forward" );
+        phase_directions = array( "left", "right", "back", "forward" );
         
         if ( 0.5 < randomfloat( 1 ) )
         {
-            var_cfa253f9 = array( "right", "left", "back", "forward" );
+            phase_directions = array( "right", "left", "back", "forward" );
         }
         
-        var_160337aa = array( "long", "medium", "short" );
+        phase_distances = array( "long", "medium", "short" );
         
-        foreach ( distance in var_160337aa )
+        foreach ( distance in phase_distances )
         {
-            foreach ( direction in var_cfa253f9 )
+            foreach ( direction in phase_directions )
             {
                 entity setblackboardattribute( "_phase_direction", direction );
                 entity setblackboardattribute( "_phase_distance", distance );

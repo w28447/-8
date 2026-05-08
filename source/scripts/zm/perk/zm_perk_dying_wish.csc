@@ -89,7 +89,7 @@ function private function_bd2b1ccb( localclientnum, oldvalue, newvalue, bnewent,
 {
     if ( newvalue )
     {
-        if ( self zm_utility::function_f8796df3( localclientnum ) )
+        if ( self zm_utility::is_first_person( localclientnum ) )
         {
             self thread postfx::playpostfxbundle( #"pstfx_zm_dying_wish" );
         }
@@ -108,7 +108,7 @@ function private function_bd2b1ccb( localclientnum, oldvalue, newvalue, bnewent,
         return;
     }
     
-    if ( self zm_utility::function_f8796df3( localclientnum ) )
+    if ( self zm_utility::is_first_person( localclientnum ) )
     {
         self thread postfx::exitpostfxbundle( #"pstfx_zm_dying_wish" );
     }

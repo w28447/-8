@@ -37,7 +37,7 @@
     "sound660": "#uin_unavailable_charging",
     "projexplosionsound": "#exp_semtex",
     "tunables1": "#eq_cluster_semtex_grenade_tunables_wz",
-    "cacWeaponXCam": "#hash_4a93d9d6b1c015ab",
+    "cacWeaponXCam": "#ui_cam_cac_equip_semtex",
     "sharedWeaponSounds": "#equipment",
     "statusEffects": [
         {
@@ -77,9 +77,9 @@
         "#hash_c15b461b7420c6d2",
         "#hash_bb3f97cf646813ac"
     ],
-    "normalImpactFX": "#hash_1f76789f4d5836f9",
+    "normalImpactFX": "#grenade_explosion_sticky",
     "bounceImpactFX": "#grenade_bounce",
     "dudImpactFX": "#grenade_dud",
     "normalImpactSounds": "#hash_e8e0a97bbbf0b555",
-    "bounceImpactSounds": "#hash_41b6857dceb489f7"
+    "bounceImpactSounds": "#sticky_bounce"
 }

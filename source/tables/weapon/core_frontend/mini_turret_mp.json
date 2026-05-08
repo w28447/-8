@@ -36,7 +36,7 @@
     "sound660": "#uin_unavailable_charging",
     "tunables1": "#mini_turret_tunables_mp",
     "cacWeaponXCam": "#hash_50e122b7eecb2eb",
-    "crateObjective": "#hash_64054fae42fd75d5",
+    "crateObjective": "#microwave_turret_waypoint",
     "shrapnelsettings": "#shrapnel_mini_turret",
     "projectilemodel": "#wpn_t8_eqp_turret_mini_world",
     "#hash_4bcd08b0": "#tag_origin",
@@ -53,6 +53,6 @@
     "hudIcon": "#hash_ce2f10529d30058e",
     "image_e90": "#hash_ce2f10529d30058e",
     "image_1048": "#hash_ce2f10529d30058e",
-    "#hash_26f68e75": "#hash_db7f23cdb5b214b",
+    "#hash_26f68e75": "#icepick_carepkg",
     "bounceImpactSounds": "#hash_c6d8f2152c519b03"
 }

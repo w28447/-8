@@ -79,7 +79,7 @@
     "weaponCamo": "#hash_513808bc06756e63",
     "cacWeaponXCam": "#ui_cam_cac_smg_fastfire",
     "cacAttachmentsXCam": "#ui_cam_cac_smg_fastfire",
-    "weaponIconXCam": "#hash_28373ccd71549c96",
+    "weaponIconXCam": "#ui_cam_icon_smg_fastfire",
     "sharedWeaponSounds": "#smg",
     "tracers": [
         "#hash_26d5c1a903fba6f4",
@@ -116,8 +116,8 @@
     "fx_c88": "#hash_a5567d0168ae02f",
     "fx_c90": "#hash_a5567d0168ae02f",
     "fx_c98": "#hash_a5567d0168ae02f",
-    "normalImpactFX": "#hash_61b4c700060ee40c",
-    "exitImpactFX": "#hash_3b4b1d145ec9892",
+    "normalImpactFX": "#bullet_small_enter",
+    "exitImpactFX": "#bullet_small_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_50191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

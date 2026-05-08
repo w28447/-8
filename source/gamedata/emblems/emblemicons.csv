@@ -63,10 +63,10 @@
 #decal,62,62,#ui_icon_emblems_shield_23,7#em/crypt,#backgrounds,0.35,#,#,#,#,#,#
 #decal,63,63,#ui_icon_emblems_shield_24,7#em/signet,#backgrounds,0.35,#,#,#,#,#,#
 #decal,64,64,#ui_icon_emblems_shield_25,7#em/framed,#backgrounds,0.35,#,#,#,#,#,#
-#decal,65,65,#ui_icon_emblems_shield_26,7#hash_468122e1f9a064bf,#backgrounds,0.35,#,#,#,#,#,#
+#decal,65,65,#ui_icon_emblems_shield_26,7#em/pinpoint,#backgrounds,0.35,#,#,#,#,#,#
 #decal,66,66,#ui_icon_emblems_shield_27,7#hash_1ff61396ab55da46,#backgrounds,0.35,#,#,#,#,#,#
 #decal,67,67,#ui_icon_emblems_shield_28,7#hash_283ae55ae977c85e,#backgrounds,0.35,#,#,#,#,#,#
-#decal,68,68,#ui_icon_emblems_shield_29,7#hash_5c6b71cb471511c,#backgrounds,0.35,#,#,#,#,#,#
+#decal,68,68,#ui_icon_emblems_shield_29,7#em/cardinal,#backgrounds,0.35,#,#,#,#,#,#
 #decal,69,69,#ui_icon_emblems_shield_30,7#hash_4dcc551bd0251ad0,#backgrounds,0.35,#,#,#,#,#,#
 #decal,70,70,#ui_icon_emblems_shield_31,7#hash_44fa485473071df7,#backgrounds,0.35,#,#,#,#,#,#
 #decal,71,71,#ui_icon_emblems_shield_32,7#hash_7bedd60c8c6cf486,#backgrounds,0.35,#,#,#,#,#,#
@@ -147,7 +147,7 @@
 #decal,146,146,#t7_loot_decal_zombie_brains,7#hash_13ac5689a2398e93,#icon,0.35,#,#,#,#,#,#
 #decal,147,147,#t7_icon_emblem_robot,7#hash_684ff9bfc4bc5313,#icon,0.35,#,#,#,#,#,#
 #decal,148,148,#em_crosshair01,7#em/ch_524,#icon,0.35,#,#,#,#,#,#
-#decal,149,149,#em_biohazard_full,7#hash_4db2451d2c63e84e,#icon,0.35,#,#,#,#,#,#
+#decal,149,149,#em_biohazard_full,7#em/biohazard,#icon,0.35,#,#,#,#,#,#
 #decal,150,150,#t7_decal_icon_anchor,7#hash_6c6c1e3df2ca4ecb,#icon,0.35,#,#,#,#,#,#
 #decal,151,151,#t7_decal_icon_eyeball,7#hash_1db5a974ba1b0e5e,#icon,0.35,#,#,#,#,#,#
 #decal,152,152,#t7_decal_icon_flower,7#hash_1452971862531641,#icon,0.35,#,#,#,#,#,#
@@ -178,7 +178,7 @@
 #decal,177,177,#t7_icon_emblem_decal_0,7#hash_a569210b869e245,#pattern,0.35,#,#,#,#,#,#
 #decal,178,178,#t7_icon_emblem_decal_5,7#hash_a568d10b869d9c6,#pattern,0.35,#,#,#,#,#,#
 #decal,179,179,#t7_icon_emblem_decal_6,7#hash_a568c10b869d813,#pattern,0.35,#,#,#,#,#,#
-#decal,180,180,#em_shape_scribble01,7#hash_e5d84732adf0bf4,#pattern,0.35,#,#,#,#,#,#
+#decal,180,180,#em_shape_scribble01,7#em/scribble,#pattern,0.35,#,#,#,#,#,#
 #decal,181,181,#t7_decal_pattern_camo_sm,7#hash_71abe06b721fa830,#pattern,0.35,#,#,#,#,#,#
 #decal,182,182,#t7_decal_pattern_cyber,7#hash_543b56c47daea184,#pattern,0.35,#,#,#,#,#,#
 #decal,183,183,#t7_decal_pattern_digicamo_lrg,7#hash_a8fd30012f5ac20,#pattern,0.35,#,#,#,#,#,#
@@ -188,7 +188,7 @@
 #decal,187,187,#t7_icon_emblem_8,7#hash_79b7116fa233cce3,#icon,0.35,#,#,#,#,#,#
 #decal,188,188,#t7_icon_emblem_9,7#hash_79b7106fa233cb30,#icon,0.35,#,#,#,#,#,#
 #decal,189,189,#ui_icon_emblems_crosshatch,7#hash_33ed8a224b1d5f06,#pattern,0.35,#,#,#,#,#,#
-#decal,190,190,#ui_icon_emblems_curved_drop,7#hash_79d973eceffee639,#pattern,0.35,#,#,#,#,#,#
+#decal,190,190,#ui_icon_emblems_curved_drop,7#em/teardrop,#pattern,0.35,#,#,#,#,#,#
 #decal,191,191,#ui_icon_emblems_curved_lines,7#hash_79e8a385a242f7c5,#pattern,0.35,#,#,#,#,#,#
 #decal,192,192,#ui_icon_emblems_diamond_checker,7#hash_6ef0735a166459a9,#pattern,0.35,#,#,#,#,#,#
 #decal,193,193,#ui_icon_emblems_eye_shape,7#em/sight,#symbol,0.35,#,#,#,#,#,#
@@ -232,7 +232,7 @@
 #decal,231,231,#em_num_7,7#em/seven,#alphanumeric,0.35,#,#,#,#,#,#
 #decal,232,232,#em_num_8,7#em/eight,#alphanumeric,0.35,#,#,#,#,#,#
 #decal,233,233,#em_num_9,7#em/nine,#alphanumeric,0.35,#,#,#,#,#,#
-#decal,234,234,#em_asterisk_full,7#hash_57f3c0db12eb92b8,#alphanumeric,0.35,#,#,#,#,#,#
+#decal,234,234,#em_asterisk_full,7#em/asterisk_full,#alphanumeric,0.35,#,#,#,#,#,#
 #decal,235,235,#ui_icon_emblems_polka,7#hash_430cd4baa46b5ee8,#pattern,0.35,#,#,#,#,#,#
 #decal,236,236,#ui_icon_emblems_polka_01,7#hash_267222d317a03344,#pattern,0.35,#,#,#,#,#,#
 #decal,237,237,#ui_icon_emblems_retro_lines,7#hash_4749194abb372ecc,#pattern,0.35,#,#,#,#,#,#
@@ -242,8 +242,8 @@
 #decal,241,241,#ui_icon_emblems_skull_left,7#em/gaze,#icon,0.35,#,#,#,#,#,#
 #decal,242,242,#ui_icon_emblems_grunge_01,7#hash_5832933d3470d9d5,#pattern,0.35,#,#,#,#,#,#
 #decal,243,243,#ui_icon_emblems_grunge_02,7#em/squish,#pattern,0.35,#,#,#,#,#,#
-#decal,244,244,#ui_icon_emblems_grunge_03,7#hash_4c9dcee29834b2da,#pattern,0.35,#,#,#,#,#,#
-#decal,245,245,#ui_icon_emblems_grunge_04,7#hash_754b9890d4367ec3,#pattern,0.35,#,#,#,#,#,#
+#decal,244,244,#ui_icon_emblems_grunge_03,7#em/roadkill,#pattern,0.35,#,#,#,#,#,#
+#decal,245,245,#ui_icon_emblems_grunge_04,7#em/shimmer,#pattern,0.35,#,#,#,#,#,#
 #decal,246,246,#ui_icon_emblems_grunge_05,7#em/disintegrate,#pattern,0.35,#,#,#,#,#,#
 #decal,247,247,#ui_icon_emblems_grunge_06,7#hash_7c75d0f097acdefe,#pattern,0.35,#,#,#,#,#,#
 #decal,248,248,#ui_icon_emblems_splat_01,7#em/goop,#pattern,0.35,#,#,#,#,#,#

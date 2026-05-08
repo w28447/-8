@@ -33,7 +33,7 @@
     "model": "#hash_181fe85848ab066",
     "deathModel": "#veh_t8_mil_drone_dart",
     "enemyModel": "#hash_7daeb58f525049fe",
-    "soundDef": "#hash_2276dbf56c3e2bc3",
+    "soundDef": "#veh_drn_dart_mp",
     "compassIconMaterial": "#compass_hk",
     "steerAxisName": "AXIS_RSTICK",
     "reverseBrakeButtonName": "BUTTON_LTRIG",

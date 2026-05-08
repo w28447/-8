@@ -990,7 +990,7 @@ function onusewithoutneutralizingflag( sentient )
     {
         self flagcapturedfromneutral( team );
         self.firstcapture = gettime();
-        self.var_a248f0a8 = 1;
+        self.timescaptured = 1;
         self.var_56d394cd = gettime();
     }
     else
@@ -998,7 +998,7 @@ function onusewithoutneutralizingflag( sentient )
         self flagcapturedfromteam( team, oldteam );
         self.var_249009fd[ self.var_249009fd.size ] = gettime() - self.var_56d394cd;
         self.var_56d394cd = gettime();
-        self.var_a248f0a8++;
+        self.timescaptured++;
     }
     
     if ( dominated_challenge_check() )
@@ -2511,8 +2511,8 @@ function function_1609a882( var_c1e98979 )
             averagetime = var_9669dd4c / domflag.var_249009fd.size;
         }
         
-        var_93746b40 = { #gametime:function_f8d53445(), #round:game.roundsplayed, #label:domflag gameobjects::get_label(), #firstcapture:domflag.firstcapture, #var_afd986ce:isdefined( averagetime ) ? averagetime : 0, #var_a248f0a8:domflag.var_a248f0a8 };
-        function_92d1707f( #"hash_4b747d11b8ad1b23", var_93746b40 );
+        flagcapturedata = { #gametime:function_f8d53445(), #round:game.roundsplayed, #label:domflag gameobjects::get_label(), #firstcapture:domflag.firstcapture, #var_afd986ce:isdefined( averagetime ) ? averagetime : 0, #timescaptured:domflag.timescaptured };
+        function_92d1707f( #"dlog_event_flagcapturedata", flagcapturedata );
     }
 }
 

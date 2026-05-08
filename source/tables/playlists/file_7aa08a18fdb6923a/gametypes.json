@@ -82,7 +82,7 @@
     },
     {
         "name": "#hash_5131ca78f76bb102",
-        "description": "#hash_2b7efc840ddfcdca",
+        "description": "#playlist/conf",
         "gametype": "#conf",
         "rules": [
             {
@@ -310,7 +310,7 @@
     },
     {
         "name": "#hash_a8bdaddbc1b0a1e",
-        "description": "#hash_2b7efc840ddfcdca",
+        "description": "#playlist/conf",
         "gametype": "#conf",
         "rules": [
             {
@@ -369,7 +369,7 @@
     },
     {
         "name": "#hash_7829b53c9f01ac9a",
-        "description": "#hash_2b7efc840ddfcdca",
+        "description": "#playlist/conf",
         "gametype": "#conf_hc",
         "rules": [
             {
@@ -667,7 +667,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_2a5ec15e62a786e9",
+                "name": "#maxuniquerolesperteam_14",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -685,7 +685,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_2a5ec05e62a78536",
+                "name": "#maxuniquerolesperteam_15",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -959,7 +959,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_2a5ec15e62a786e9",
+                "name": "#maxuniquerolesperteam_14",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -977,7 +977,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_2a5ec05e62a78536",
+                "name": "#maxuniquerolesperteam_15",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -997,7 +997,7 @@
     },
     {
         "name": "#hash_615cf3c14065759c",
-        "description": "#hash_2b7efc840ddfcdca",
+        "description": "#playlist/conf",
         "gametype": "#conf",
         "rules": [
             {
@@ -1370,7 +1370,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_2a5ec15e62a786e9",
+                "name": "#maxuniquerolesperteam_14",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -1388,7 +1388,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_2a5ec05e62a78536",
+                "name": "#maxuniquerolesperteam_15",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -1692,7 +1692,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_2a5ec15e62a786e9",
+                "name": "#maxuniquerolesperteam_14",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -1710,7 +1710,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_2a5ec05e62a78536",
+                "name": "#maxuniquerolesperteam_15",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -2004,7 +2004,7 @@
     },
     {
         "name": "#hash_42b050dcf9ef0ec3",
-        "description": "#hash_25ad40f006fd1b9e",
+        "description": "#mpui/barebones_tdm",
         "gametype": "#tdm_bb",
         "rules": [
             {
@@ -2026,7 +2026,7 @@
     },
     {
         "name": "#hash_3917c0dcac481a70",
-        "description": "#hash_2e79f0f053f6dfed",
+        "description": "#mpui/barebones_dom",
         "gametype": "#dom_bb",
         "rules": [
             {
@@ -2048,7 +2048,7 @@
     },
     {
         "name": "#hash_49b10d86c31e0e55",
-        "description": "#hash_25ad40f006fd1b9e",
+        "description": "#mpui/barebones_tdm",
         "gametype": "#tdm_bb_hc",
         "rules": [
             {
@@ -2070,7 +2070,7 @@
     },
     {
         "name": "#hash_131d5dcefa1a3f04",
-        "description": "#hash_2e79f0f053f6dfed",
+        "description": "#mpui/barebones_dom",
         "gametype": "#dom_bb_hc",
         "rules": [
             {
@@ -2261,7 +2261,7 @@
     },
     {
         "name": "#hash_4f52b14b04c486df",
-        "description": "#hash_4be178ba4f3bd0e",
+        "description": "#mpui/capture_the_flag",
         "gametype": "#ctf",
         "rules": [
             {
@@ -10138,7 +10138,7 @@
         ]
     },
     {
-        "name": "#hash_59737db3dbdcb288",
+        "name": "#gametype_zm_zclassic",
         "gametype": "#zclassic",
         "rules": [
             {
@@ -10183,7 +10183,7 @@
         ]
     },
     {
-        "name": "#hash_53ca52331c381cd3",
+        "name": "#gametype_zm_quickplay",
         "description": "#hash_1f6a84783744b749",
         "gametype": "#quickplay_zm",
         "rules": [
@@ -11703,7 +11703,7 @@
     },
     {
         "name": "#hash_cb4dd0ca1c2c141",
-        "description": "#hash_210a1aea9836ded8",
+        "description": "#playlist/warzone",
         "gametype": "#warzone",
         "rules": [
             {

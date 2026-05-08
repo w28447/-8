@@ -157,7 +157,7 @@ destructible,#hash_411576086ab03c87
 destructible,#hash_4d5f36b9d0e97f0f
 destructible,#hash_4e52421d63a356c9
 destructible,#hash_6f6065c6ee2d5d97
-destructible,#hash_7ac32d0170a6ddfd
+destructible,#p8_nt4_military_recorder_ddef
 xanim,#p7_fxanim_gp_wire_sparking_sml_anim
 xanim,#pb_rifle_endgame_2ndplace_idle
 xanim,#pb_rifle_endgame_3rdplace_idle
@@ -206,7 +206,7 @@ soundalias,#hash_21d849eee4d897a
 soundalias,#hash_238170c19d279f5
 soundalias,#hash_2904437d186593d
 soundalias,#hash_31f777916298d72
-soundalias,#hash_38c96854fb0017e
+soundalias,#dst_typewriter
 soundalias,#hash_419e84642ebe554
 soundalias,#pfx_t8_spark_med
 soundalias,#hash_5044a589fa9ac12
@@ -225,7 +225,7 @@ soundalias,#hash_a703693a7d7419a
 soundalias,#hash_a9a8f5bb4029647
 soundalias,#hash_aba5ed6b60d87b2
 soundalias,#hash_b258a3d47ed538c
-soundalias,#hash_b4bcb7299deea2a
+soundalias,#amb_chains
 soundalias,#hash_bb4e8a0d356af50
 soundalias,#hash_bbafec33c2adca2
 soundalias,#hash_bd53719309b6fc1
@@ -242,7 +242,7 @@ soundalias,#hash_12b24433ad0bb1f0
 soundalias,#hash_1358357952f89d8d
 soundalias,#hash_14323fbfd646c66b
 soundalias,#hash_14e6aa140485ba14
-soundalias,#hash_16819fb1493c75ff
+soundalias,#amb_comp_server
 soundalias,#hash_17b03792068cf144
 soundalias,#hash_18130cfc22351f13
 soundalias,#hash_192fe57a5d4bb0fc
@@ -253,7 +253,7 @@ soundalias,#hash_1a6485b96677518d
 soundalias,#hash_1a98ee3af8b89642
 soundalias,#hash_1cf9664d9072e692
 soundalias,#hash_1f9b1d980061ea0e
-soundalias,#hash_1ff8bec27dfc1b70
+soundalias,#dst_fern
 soundalias,#hash_200e28bcd26bab77
 soundalias,#hash_200e2ebcd26bb5a9
 soundalias,#hash_208f0fa01c042df2
@@ -318,13 +318,13 @@ soundalias,#hash_436a4f77c54e7912
 soundalias,#hash_438b930b61d96f77
 soundalias,#hash_438dac17f69b90a2
 soundalias,#amb_lantern
-soundalias,#hash_43ad48046fb206c8
+soundalias,#exp_veh_small
 soundalias,#hash_456af38afaef9d77
 soundalias,#hash_456af98afaefa7a9
 soundalias,#hash_475c36587c7352c5
 soundalias,#hash_47a7dd1007c11019
 soundalias,#exp_veh_large
-soundalias,#hash_48bc31e222aa7c3e
+soundalias,#exp_barrel_fire
 soundalias,#hash_49332fba15c856e3
 soundalias,#hash_499a124f56b6f71b
 soundalias,#hash_4a9fb6e1d5d277b9
@@ -339,7 +339,7 @@ soundalias,#hash_4d4bbcb801a0dda9
 soundalias,#amb_phone
 soundalias,#hash_4ec5a3e02263fc0e
 soundalias,#hash_4f8c480d8e8f07b6
-soundalias,#hash_501eff91f639c23e
+soundalias,#dst_glass_pane
 soundalias,#hash_516374c6fde4b4dc
 soundalias,#hash_52316bfe48f07181
 soundalias,#hash_5241882a79fff7a3
@@ -388,7 +388,7 @@ soundalias,#hash_68b8beb0257da073
 soundalias,#hash_68d529ce159011b5
 soundalias,#hash_691af66e6ee059ba
 soundalias,#hash_69f9f3e122dbb898
-soundalias,#hash_6a7bbff93ccc7ab7
+soundalias,#dst_luggage
 soundalias,#hash_6abe483482efa584
 soundalias,#hash_6bd22308f9d5ca92
 soundalias,#hash_6c5be5a0764e1e3c
@@ -415,7 +415,7 @@ soundalias,#hash_77ae1ec6b0d67296
 soundalias,#hash_7809ea482909306c
 soundalias,#hash_782f9adc374f5381
 soundalias,#hash_79041053f1a7e71c
-soundalias,#hash_792fb19dd27becfc
+soundalias,#pfx_exhaust
 soundalias,#hash_79e7070c3130f4a9
 soundalias,#exp_veh_plane_spinout_lp
 soundalias,#hash_7ac5fa6568de2461

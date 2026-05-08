@@ -785,10 +785,10 @@ function function_dd7755c1()
     {
         animrate = 1;
         
-        if ( isdefined( self.var_85c3882d ) && self.var_85c3882d )
+        if ( isdefined( self.inconcertinawire ) && self.inconcertinawire )
         {
             animrate -= 0.3;
-            self.var_85c3882d = 0;
+            self.inconcertinawire = 0;
         }
         
         if ( isdefined( self.beingmicrowavedby ) && self.beingmicrowavedby.size > 0 )

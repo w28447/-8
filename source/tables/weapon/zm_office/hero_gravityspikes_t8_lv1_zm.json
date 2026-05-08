@@ -43,7 +43,7 @@
     "sound810": "#hash_5fd68d0455a0b8",
     "tunables1": "#hero_gravityspikes_t8_lv1_tunables_zm",
     "cacWeaponXCam": "#hash_1ae1e697609dd70b",
-    "sharedWeaponSounds": "#hash_367e85d5f5c45ca",
+    "sharedWeaponSounds": "#zm_gravityspikes",
     "viewmodel": [
         "#wpn_t8_zm_talon_spikes_view"
     ],
@@ -63,6 +63,6 @@
     "fx_c88": "#hash_b6479a6885575e5f",
     "fx_c90": "#hash_b6479a6885575e5f",
     "fx_c98": "#hash_b6479a6885575e5f",
-    "viewPersistentEffectSet": "#hash_54349c1d7a210767",
-    "worldPersistentEffectSet": "#hash_54349c1d7a210767"
+    "viewPersistentEffectSet": "#weapon_hero_gravityspikes_zm_1p_persist",
+    "worldPersistentEffectSet": "#weapon_hero_gravityspikes_zm_1p_persist"
 }

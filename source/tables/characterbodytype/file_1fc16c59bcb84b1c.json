@@ -2,16 +2,16 @@
     "name": "#hash_1fc16c59bcb84b1c",
     "displayName": "#wz/yuri",
     "mpDialog": "#yuri",
-    "playerSoundsTable": "#hash_21fe3f79b5e4c2d6",
+    "playerSoundsTable": "#cp_playersounds",
     "playerFXTable": "#hash_471b500cc678f872",
     "image_68": "#ui_icon_specialist_portrait_hud_yuri",
     "positionDraftPortrait": "#ui_icon_specialist_portrait_draft_yuri",
     "lootUiIcon": "#loot07_ui_icon_blackmarket_reserves_yuri",
-    "characterFootsteps": "#hash_4ee42a3145f1fe3d",
-    "characterFootstepsQuiet": "#hash_783ab8b555ce9413",
-    "characterFootstepsNPC": "#hash_3008da66d91b8ad7",
-    "characterFootstepsNPCLoud": "#hash_237a21af974e9d2f",
-    "characterFootstepsNPCQuiet": "#hash_22eae0dda1cf3d31",
+    "characterFootsteps": "#defaultplayerfootstep",
+    "characterFootstepsQuiet": "#defaultplayerquietfootstep",
+    "characterFootstepsNPC": "#defaultnpcfootstep",
+    "characterFootstepsNPCLoud": "#defaultnpcloudfootstep",
+    "characterFootstepsNPCQuiet": "#defaultnpcquietfootstep",
     "bundle": {
         "lobbyScenes": [
             {

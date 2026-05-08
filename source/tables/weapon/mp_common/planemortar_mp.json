@@ -3,7 +3,7 @@
     "baseWeapon": "#planemortar",
     "displayname": "#killstreak/planemortar",
     "weapon70": "#planemortar",
-    "streamkey": "#hash_6faa57b2c6832fe",
+    "streamkey": "#planemortar_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -68,7 +68,7 @@
     "rumble_de8": "#grenade_rumble",
     "fx_ed8": "#hash_1ae397a2f822f91f",
     "fx_f08": "#hash_3b08b27116cde783",
-    "exitImpactFX": "#hash_69050d7b3430366e",
+    "exitImpactFX": "#grenade_exit",
     "bounceImpactFX": "#grenade_bounce",
     "dudImpactFX": "#grenade_dud"
 }

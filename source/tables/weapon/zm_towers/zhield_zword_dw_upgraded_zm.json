@@ -69,7 +69,7 @@
     "sound800": "#hash_21cba6ae89a3493c",
     "sound810": "#hash_21cba6ae89a3493c",
     "tunables1": "#hash_7a072ca662d81bc2",
-    "sharedWeaponSounds": "#hash_7ea64dbe484abd20",
+    "sharedWeaponSounds": "#zhield_towers",
     "tracers": [
         "#hash_a6d5c1a903fba6f4",
         "#hash_e0e8c9de7086f843"

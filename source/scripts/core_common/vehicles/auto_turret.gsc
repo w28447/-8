@@ -345,7 +345,7 @@ function function_f2d20a04( params )
                 {
                     self turretsettarget( 0, self.enemy );
                     wait 0.1;
-                    waittime = randomfloatrange( self.settings.var_ddd34f14, self.settings.var_80f38c52 );
+                    waittime = randomfloatrange( self.settings.turretburstfiredurationmin, self.settings.turretburstfiredurationmax );
                     
                     if ( self.settings.disablefiring !== 1 )
                     {
@@ -359,11 +359,11 @@ function function_f2d20a04( params )
                 
                 if ( isdefined( self.enemy ) && isplayer( self.enemy ) )
                 {
-                    wait randomfloatrange( self.settings.var_77e64d20, self.settings.var_d4e8eb34 );
+                    wait randomfloatrange( self.settings.turretburstfiredelaymin, self.settings.turretburstfiredelaymax );
                     continue;
                 }
                 
-                wait randomfloatrange( self.settings.var_dd6ae92f, self.settings.var_be5db78d );
+                wait randomfloatrange( self.settings.turretburstfireaidelaymin, self.settings.turretburstfireaidelaymax );
             }
             
             self setturretspinning( 0 );

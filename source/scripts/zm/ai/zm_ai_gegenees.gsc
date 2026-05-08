@@ -151,8 +151,8 @@ function registerbehaviorscriptfunctions()
     behaviortreenetworkutility::registerbehaviortreescriptapi( #"hash_471802b111fa1af0", &function_47fdaf31 );
     assert( isscriptfunctionptr( &gegeneesstunstart ) );
     behaviortreenetworkutility::registerbehaviortreescriptapi( #"gegeneesstunstart", &gegeneesstunstart );
-    assert( isscriptfunctionptr( &function_3839537e ) );
-    behaviortreenetworkutility::registerbehaviortreescriptapi( #"hash_3246ea8d9722e46e", &function_3839537e );
+    assert( isscriptfunctionptr( &gegeneesdestroypoi ) );
+    behaviortreenetworkutility::registerbehaviortreescriptapi( #"gegeneesdestroypoi", &gegeneesdestroypoi );
     assert( !isdefined( &function_2301c0a7 ) || isscriptfunctionptr( &function_2301c0a7 ) );
     assert( !isdefined( &function_c2155e05 ) || isscriptfunctionptr( &function_c2155e05 ) );
     assert( !isdefined( &function_15502a5 ) || isscriptfunctionptr( &function_15502a5 ) );
@@ -380,12 +380,12 @@ function private watch_for_death( projectile )
 // Size: 0x9e
 function private function_a1fce938()
 {
-    foreach ( var_b12a43cc in level.var_8c5f46f1 )
+    foreach ( impact_ent in level.var_8c5f46f1 )
     {
-        if ( !( isdefined( var_b12a43cc.in_use ) && var_b12a43cc.in_use ) )
+        if ( !( isdefined( impact_ent.in_use ) && impact_ent.in_use ) )
         {
-            var_b12a43cc.in_use = 1;
-            return var_b12a43cc;
+            impact_ent.in_use = 1;
+            return impact_ent;
         }
     }
     
@@ -434,24 +434,24 @@ function private function_7d162bd0( projectile, entity )
     
     if ( result._notify != "projectile_impact_player" )
     {
-        var_b12a43cc = function_a1fce938();
+        impact_ent = function_a1fce938();
         
-        if ( isdefined( var_b12a43cc ) )
+        if ( isdefined( impact_ent ) )
         {
             if ( isdefined( projectile.origin ) )
             {
                 projectile thread function_7e633e59();
-                var_b12a43cc.origin = projectile.origin;
+                impact_ent.origin = projectile.origin;
             }
             else if ( isdefined( entity ) && isdefined( entity.favoriteenemy ) )
             {
-                var_b12a43cc.origin = entity.favoriteenemy.origin;
+                impact_ent.origin = entity.favoriteenemy.origin;
             }
             
             util::wait_network_frame();
-            var_b12a43cc clientfield::increment( "gegenees_spear_miss_cf" );
+            impact_ent clientfield::increment( "gegenees_spear_miss_cf" );
             wait 0.25;
-            var_b12a43cc.in_use = 0;
+            impact_ent.in_use = 0;
         }
         
         return;
@@ -489,7 +489,7 @@ function private function_43104218( entity )
 // Size: 0xca, Type: bool
 function private function_e0b648bb( entity )
 {
-    if ( isdefined( entity.var_d7e69143 ) && entity.var_d7e69143 )
+    if ( isdefined( entity.destroy_poi ) && entity.destroy_poi )
     {
         if ( isdefined( entity.zombie_poi ) && isdefined( entity.zombie_poi[ 1 ] ) )
         {
@@ -543,7 +543,7 @@ function private gegeneesstunstart( entity )
 // Params 1, eflags: 0x4
 // Checksum 0x7ae309fc, Offset: 0x2360
 // Size: 0x7c
-function private function_3839537e( entity )
+function private gegeneesdestroypoi( entity )
 {
     if ( !isdefined( entity.zombie_poi ) )
     {
@@ -805,7 +805,7 @@ function private gegeneestargetservice( entity )
     entity.zombie_poi = entity zm_utility::get_zombie_point_of_interest( entity.origin );
     entity zombie_utility::run_ignore_player_handler();
     entity.favoriteenemy = entity.closest_valid_player;
-    entity.var_d7e69143 = 0;
+    entity.destroy_poi = 0;
     
     if ( isdefined( entity.zombie_poi ) && isdefined( entity.zombie_poi[ 1 ] ) )
     {
@@ -822,7 +822,7 @@ function private gegeneestargetservice( entity )
         
         if ( var_eee191fa )
         {
-            entity.var_d7e69143 = 1;
+            entity.destroy_poi = 1;
             entity.var_b491d096 = entity.zombie_poi[ 1 ];
             goalpos = entity.zombie_poi[ 0 ];
             return entity zm_utility::function_64259898( goalpos );
@@ -1023,14 +1023,14 @@ function private function_c3c86ec1( entity )
         hitent clientfield::increment_to_player( "gegenees_damage_cf" );
     }
     
-    if ( isdefined( entity.var_d7e69143 ) && entity.var_d7e69143 )
+    if ( isdefined( entity.destroy_poi ) && entity.destroy_poi )
     {
         if ( isdefined( entity.zombie_poi ) && isdefined( entity.zombie_poi[ 1 ] ) )
         {
             entity.zombie_poi[ 1 ] notify( #"hash_90cfd38343f41f2" );
         }
         
-        entity.var_d7e69143 = 0;
+        entity.destroy_poi = 0;
     }
 }
 

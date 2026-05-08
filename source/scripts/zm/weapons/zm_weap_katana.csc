@@ -182,20 +182,20 @@ function katana_rush_sfx( localclientnum, oldval, newval, bnewent, binitialsnap,
 {
     if ( newval == 1 )
     {
-        if ( !isdefined( self.var_7804a42c ) )
+        if ( !isdefined( self.katanarush_sfx ) )
         {
             self playsound( localclientnum, #"hash_74fd1bb2db3d91ee" );
-            self.var_7804a42c = self playloopsound( #"hash_4f7953dcf02e2ba7" );
+            self.katanarush_sfx = self playloopsound( #"hash_4f7953dcf02e2ba7" );
         }
         
         return;
     }
     
-    if ( isdefined( self.var_7804a42c ) )
+    if ( isdefined( self.katanarush_sfx ) )
     {
         self playsound( localclientnum, #"hash_76e75d7b16257c11" );
-        self stoploopsound( self.var_7804a42c );
-        self.var_7804a42c = undefined;
+        self stoploopsound( self.katanarush_sfx );
+        self.katanarush_sfx = undefined;
     }
 }
 

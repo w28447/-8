@@ -537,13 +537,13 @@
         {
             "value": 25,
             "next": 65535,
-            "name": "#hash_633b9532cf0da169",
+            "name": "#amb_flies",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_633b9532cf0da169",
+                    "name": "#amb_flies",
                     "assetId": "#amb/animals/insects/flies/flies_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_frenetic.all",
                     "assetIdRelease": "#mp_frenetic.all",
@@ -582,7 +582,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_633b9532cf0da169",
+                    "name": "#amb_flies",
                     "assetId": "#amb/animals/insects/flies/flies_02.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_frenetic.all",
                     "assetIdRelease": "#mp_frenetic.all",
@@ -625,13 +625,13 @@
         {
             "value": 38,
             "next": 13,
-            "name": "#hash_2f9aee9489933219",
+            "name": "#amb_generator_1",
             "sequence": 0,
             "cullDistance": 1700,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2f9aee9489933219",
+                    "name": "#amb_generator_1",
                     "assetId": "#amb/industrial/mach_rumble/machine_rumble_02.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_frenetic.all",
                     "assetIdRelease": "#mp_frenetic.all",
@@ -1745,13 +1745,13 @@
         {
             "value": 132,
             "next": 83,
-            "name": "#hash_490224f3b5978213",
+            "name": "#amb_hatch_open",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_490224f3b5978213",
+                    "name": "#amb_hatch_open",
                     "assetId": "#mpl/mp_frenetic/hatches/frenetic_hatch_open.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_frenetic.all",
                     "assetIdRelease": "#mp_frenetic.all",
@@ -2284,13 +2284,13 @@
         {
             "value": 54,
             "next": 19,
-            "name": "#hash_13299213632e598a",
+            "name": "#amb_reactor",
             "sequence": 0,
             "cullDistance": 1700,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_13299213632e598a",
+                    "name": "#amb_reactor",
                     "secondaryname": "#hash_7b9dcf3a567a1f75",
                     "assetId": "#amb/industrial/scifi_generator/blackstation_generator/gen_loop.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_frenetic.all",
@@ -5903,13 +5903,13 @@
         {
             "value": 7,
             "next": 72,
-            "name": "#hash_1ff8bec27dfc1b70",
+            "name": "#dst_fern",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1ff8bec27dfc1b70",
+                    "name": "#dst_fern",
                     "assetId": "#dst/prop/fern/fern_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_frenetic.all",
                     "assetIdRelease": "#mp_frenetic.all",
@@ -6839,13 +6839,13 @@
         {
             "value": 193,
             "next": 78,
-            "name": "#hash_501eff91f639c23e",
+            "name": "#dst_glass_pane",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_501eff91f639c23e",
+                    "name": "#dst_glass_pane",
                     "assetId": "#dst/generic/glass/med/glass_break_medium_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_frenetic.all",
                     "assetIdRelease": "#mp_frenetic.all",
@@ -7374,13 +7374,13 @@
         {
             "value": 212,
             "next": 65535,
-            "name": "#hash_6a7bbff93ccc7ab7",
+            "name": "#dst_luggage",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6a7bbff93ccc7ab7",
+                    "name": "#dst_luggage",
                     "assetFileNameSustain": "#mp_frenetic.all",
                     "assetIdRelease": "#mp_frenetic.all",
                     "assetFileNameRelease": "#mp_frenetic.all",
@@ -10203,13 +10203,13 @@
         {
             "value": 139,
             "next": 65535,
-            "name": "#hash_38c96854fb0017e",
+            "name": "#dst_typewriter",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_38c96854fb0017e",
+                    "name": "#dst_typewriter",
                     "assetId": "#dst/prop/typewriter/typewriter_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_frenetic.all",
                     "assetIdRelease": "#mp_frenetic.all",
@@ -11306,13 +11306,13 @@
         {
             "value": 57,
             "next": 110,
-            "name": "#hash_48bc31e222aa7c3e",
+            "name": "#exp_barrel_fire",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_48bc31e222aa7c3e",
+                    "name": "#exp_barrel_fire",
                     "assetId": "#dst/generic/fire/barrel/barrel_fire_02.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_frenetic.all",
                     "assetIdRelease": "#mp_frenetic.all",
@@ -17736,13 +17736,13 @@
         {
             "value": 66,
             "next": 65535,
-            "name": "#hash_75037b4727f99cdb",
+            "name": "#pfx_flies",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_75037b4727f99cdb",
+                    "name": "#pfx_flies",
                     "assetId": "#amb/animals/insects/flies/flies_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_frenetic.all",
                     "assetIdRelease": "#mp_frenetic.all",
@@ -17781,7 +17781,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_75037b4727f99cdb",
+                    "name": "#pfx_flies",
                     "assetId": "#amb/animals/insects/flies/flies_02.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_frenetic.all",
                     "assetIdRelease": "#mp_frenetic.all",
@@ -19474,13 +19474,13 @@
         {
             "value": 192,
             "next": 65535,
-            "name": "#hash_6db6d6489666f006",
+            "name": "#pfx_spark_med",
             "sequence": 0,
             "cullDistance": 1750,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6db6d6489666f006",
+                    "name": "#pfx_spark_med",
                     "assetId": "#pfx/sparks/med/spark_med_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_frenetic.all",
                     "assetIdRelease": "#mp_frenetic.all",
@@ -19519,7 +19519,7 @@
                     "unk178": "#hash_500000804"
                 },
                 {
-                    "name": "#hash_6db6d6489666f006",
+                    "name": "#pfx_spark_med",
                     "assetId": "#pfx/sparks/med/spark_med_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_frenetic.all",
                     "assetIdRelease": "#mp_frenetic.all",
@@ -19558,7 +19558,7 @@
                     "unk178": "#hash_500000804"
                 },
                 {
-                    "name": "#hash_6db6d6489666f006",
+                    "name": "#pfx_spark_med",
                     "assetId": "#pfx/sparks/med/spark_med_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_frenetic.all",
                     "assetIdRelease": "#mp_frenetic.all",
@@ -23144,7 +23144,7 @@
         {
             "name": "mpl_announcer",
             "id": "#mpl_announcer",
-            "fadeInCurve": "#hash_4ca222c8af19e64a",
+            "fadeInCurve": "#defaultmin",
             "fadeOutCurve": "#default",
             "updateWhilePaused": false,
             "trackAmplitude": false,
@@ -23173,7 +23173,7 @@
             "loop": "#hash_44463359dd025b23",
             "duckId": "#default",
             "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_8f631787d4aaf77",
+            "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": false,
@@ -23213,7 +23213,7 @@
             "loop": "#hash_8abeeabd2aa2c9c",
             "duckId": "#default",
             "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_8f631787d4aaf77",
+            "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": true,

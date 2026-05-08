@@ -21,7 +21,7 @@ function __init__()
 {
     callback::on_localplayer_spawned( &player_on_spawned );
     level.var_c3e66138 = &function_bbd7fc60;
-    level.var_1b2035de = getscriptbundle( "grapple_custom_settings" );
+    level.grapplebundle = getscriptbundle( "grapple_custom_settings" );
 }
 
 // Namespace grapple/grapple
@@ -142,7 +142,7 @@ function function_2297363d( localclientnum )
         {
             if ( doearthquake )
             {
-                player.grappleeq = earthquake( localclientnum, level.var_1b2035de.var_1598129, 10000, player.origin, 0, 0 );
+                player.grappleeq = earthquake( localclientnum, level.grapplebundle.var_1598129, 10000, player.origin, 0, 0 );
                 doearthquake = 0;
             }
             

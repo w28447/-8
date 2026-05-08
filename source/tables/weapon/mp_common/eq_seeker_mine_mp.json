@@ -41,7 +41,7 @@
     "tunables1": "#eq_seeker_mine_tunables_mp",
     "cacWeaponXCam": "#hash_49c79c9521851b1c",
     "sharedWeaponSounds": "#equipment",
-    "weaponHeadObjective": "#hash_3d917f182a76f960",
+    "weaponHeadObjective": "#inworld_trophysystem",
     "customsettings": "#seeker_mine_custom_settings",
     "#hash_2e4a8800": "#eq_seeker_mine_mp_scoreevents",
     "projectilemodel": "#wpn_t8_eqp_drone_seeker_world",
@@ -64,7 +64,7 @@
     "rumble_de8": "#grenade_rumble",
     "#hash_96850284": "#jammer_seeker",
     "#hash_26f68e75": "#icepick_seeker",
-    "bounceImpactFX": "#hash_446e1054f9b14b63",
+    "bounceImpactFX": "#euip_bounce",
     "normalImpactSounds": "#hash_e8e0a97bbbf0b555",
-    "bounceImpactSounds": "#hash_3a84a19d3023d78"
+    "bounceImpactSounds": "#trophy_bounce"
 }

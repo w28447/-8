@@ -56,7 +56,7 @@
 #hash_4433242e2d225df8,#react,#hash_7f5b5d18039fd62,0,60,TRUE,FALSE,FALSE,FALSE
 #catalyst_radiant_scream,#react,#vox_radiant_scream_react,0,60,TRUE,FALSE,FALSE,FALSE
 #catalyst_plasma_detonation,#react,#vox_plasma_detonation_react,0,60,TRUE,FALSE,FALSE,FALSE
-#stoker,#hash_f1fa65bffc1f865,#hash_32ff301558e105c8,0,0,TRUE,FALSE,FALSE,FALSE
+#stoker,#cue_react_first,#vox_stoker_cue_react_first,0,0,TRUE,FALSE,FALSE,FALSE
 #stoker,#react_first,#vox_stoker_react_first,0,0,TRUE,FALSE,FALSE,FALSE
 #stoker,#react,#vox_stoker_react,30,120,FALSE,TRUE,FALSE,FALSE
 #powerup,#nuke,#vox_powerup_nuke,50,0,FALSE,FALSE,FALSE,FALSE

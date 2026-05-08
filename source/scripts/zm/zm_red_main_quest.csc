@@ -22,7 +22,7 @@ function init()
 {
     var_7551dff2 = getminbitcountfornum( 4 );
     var_b7863a03 = getminbitcountfornum( 3 );
-    clientfield::register( "allplayers", "" + #"hash_72bd7a6af2ba1c5e", 16000, 1, "int", &function_d087b08c, 0, 1 );
+    clientfield::register( "allplayers", "" + #"spear_fire_fx", 16000, 1, "int", &spear_fire_fx, 0, 1 );
     clientfield::register( "allplayers", "" + #"hash_4a149c9daff159cd", 16000, 1, "int", &function_d02ccc7c, 0, 1 );
     clientfield::register( "toplayer", "" + #"hash_7343b1cdab1f31c5", 16000, 1, "counter", &function_3d3614aa, 0, 0 );
     clientfield::register( "scriptmover", "" + #"hash_2a17f2993036fab4", 16000, 1, "counter", &function_6a9e68bf, 0, 0 );
@@ -445,13 +445,13 @@ function function_31d064c0( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0x8e560646, Offset: 0x3220
 // Size: 0x1fe
-function function_d087b08c( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function spear_fire_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( newval )
     {
         if ( !isdefined( self.var_e4bbc6ac ) )
         {
-            if ( zm_utility::function_f8796df3( localclientnum ) )
+            if ( zm_utility::is_first_person( localclientnum ) )
             {
                 if ( viewmodelhastag( localclientnum, "tag_flash" ) )
                 {
@@ -497,7 +497,7 @@ function function_d02ccc7c( localclientnum, oldval, newval, bnewent, binitialsna
     {
         if ( !isdefined( self.var_f5e35678 ) )
         {
-            if ( zm_utility::function_f8796df3( localclientnum ) )
+            if ( zm_utility::is_first_person( localclientnum ) )
             {
                 if ( viewmodelhastag( localclientnum, "tag_flash" ) )
                 {

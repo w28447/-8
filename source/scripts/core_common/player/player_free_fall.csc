@@ -422,7 +422,7 @@ function function_a993866( localclientnum, var_9a17b15c )
     {
         if ( isdefined( trail_fx.( "body_trail" ) ) )
         {
-            self.var_636d5543 = self play_fx_on_tag( localclientnum, trail_fx.( "body_trail" ), trail_fx.var_82aadb9b );
+            self.var_636d5543 = self play_fx_on_tag( localclientnum, trail_fx.( "body_trail" ), trail_fx.tag_body_trail );
         }
         
         return;
@@ -432,8 +432,8 @@ function function_a993866( localclientnum, var_9a17b15c )
     {
         if ( isdefined( trail_fx.( "body_trail_3p" ) ) )
         {
-            tag = trail_fx.var_82aadb9b;
-            self.var_d7cbaf63 = self play_fx_on_tag( localclientnum, trail_fx.( "body_trail_3p" ), trail_fx.var_82aadb9b );
+            tag = trail_fx.tag_body_trail;
+            self.var_d7cbaf63 = self play_fx_on_tag( localclientnum, trail_fx.( "body_trail_3p" ), trail_fx.tag_body_trail );
         }
     }
 }

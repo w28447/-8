@@ -1118,7 +1118,7 @@ function private function_393b9c76( planner, constants )
 {
     assert( isint( constants[ #"distance" ] ) || isfloat( constants[ #"distance" ] ), "<dev string:x38>" + "<dev string:x1a6>" + "<dev string:x76>" );
     assert( isint( constants[ #"affordability" ] ) || isfloat( constants[ #"affordability" ] ), "<dev string:x38>" + "<dev string:x1a6>" + "<dev string:xa0>" );
-    assert( isint( constants[ #"hash_357612272d0dca05" ] ) || isfloat( constants[ #"hash_357612272d0dca05" ] ), "<dev string:x38>" + "<dev string:x1a6>" + "<dev string:x1d8>" );
+    assert( isint( constants[ #"rankimprovement" ] ) || isfloat( constants[ #"rankimprovement" ] ), "<dev string:x38>" + "<dev string:x1a6>" + "<dev string:x1d8>" );
     var_66c1c955 = isdefined( constants[ #"highcost" ] ) && constants[ #"highcost" ];
     var_45bdcccb = isdefined( constants[ #"highrank" ] ) && constants[ #"highrank" ];
     
@@ -1184,7 +1184,7 @@ function private function_393b9c76( planner, constants )
         wallbuy = var_df2f03d1[ #"__unsafe__" ][ #"wallbuy" ];
         weaponrank = function_8cfcffa3( params.bots[ 0 ], wallbuy.weapon );
         
-        if ( weaponrank - currentweaponrank < constants[ #"hash_357612272d0dca05" ] )
+        if ( weaponrank - currentweaponrank < constants[ #"rankimprovement" ] )
         {
             continue;
         }

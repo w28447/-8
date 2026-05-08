@@ -34,7 +34,7 @@
 10034,#contract_mp_lightning_strike,#scorestreak,5,1,1,7#contract/lightning_strike,7#contract/lightning_strike_desc,1,u9?0
 10035,#contract_mp_hellstorm_kills,#scorestreak,5,1,1,7#contract/hellstorm_kills,7#contract/hellstorm_kills_desc,1,u9?0
 10036,#contract_mp_mantis_kills,#scorestreak,5,1,1,7#contract/mantis_kills,7#contract/mantis_kills_desc,1,u9?0
-10037,#hash_45b74ebf1ab2fd47,#combat,1,1,1,7#hash_220a0fc6f05d0d45,7#hash_63006ec03524910f,1,u9?0
+10037,#contract_mp_collateral,#combat,1,1,1,7#contract/collateral,7#hash_63006ec03524910f,1,u9?0
 10038,#hash_ca75e54eb5e5ef8,#combat,1,1,1,7#hash_4c9c3ba74277a176,7#hash_413d68b6a2f85d86,1,u9?0
 10039,#contract_mp_merciless,#combat,1,1,1,7#contract/merciless,7#contract/merciless_desc,1,u9?0
 10040,#contract_mp_objective_capture,#objective,10,0,1,7#contract/objective_capture,7#contract/objective_capture_desc,1,u9?0

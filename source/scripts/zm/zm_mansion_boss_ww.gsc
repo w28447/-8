@@ -1335,9 +1335,9 @@ function function_c1b6e914()
 // Params 1
 // Checksum 0xe2163f06, Offset: 0x4e00
 // Size: 0xac
-function function_8b4d2b91( var_51f9283c )
+function function_8b4d2b91( v_impact_origin )
 {
-    v_dir = self.origin - var_51f9283c;
+    v_dir = self.origin - v_impact_origin;
     v_dir = ( v_dir[ 0 ], v_dir[ 1 ], 0.05 );
     v_dir = vectornormalize( v_dir );
     n_push_strength = 750;
@@ -1629,16 +1629,16 @@ function function_bb528a4b( n_stage )
         
         if ( isdefined( w_weapon ) && w_weapon.weapclass === "rocketlauncher" )
         {
-            var_6e859516 = 800;
+            n_damage_cap = 800;
         }
         else
         {
-            var_6e859516 = 500;
+            n_damage_cap = 500;
         }
         
-        if ( isdefined( n_damage ) && isdefined( var_6e859516 ) && n_damage > var_6e859516 )
+        if ( isdefined( n_damage ) && isdefined( n_damage_cap ) && n_damage > n_damage_cap )
         {
-            n_damage = var_6e859516;
+            n_damage = n_damage_cap;
         }
         
         if ( isalive( s_notify.attacker ) && isplayer( s_notify.attacker ) && !( isdefined( self.var_a58d72c0 ) && self.var_a58d72c0 ) )
@@ -1862,7 +1862,7 @@ function function_ae76e58d()
         e_statue = level.var_b5fff38b[ n_statue ];
         s_trig = struct::get( "boss_statue_trig_" + n_statue, "targetname" );
         e_statue.unitrigger_stub = s_trig zm_unitrigger::create( &function_54b6886c, 128, &function_a430c55f, 1 );
-        e_statue.unitrigger_stub.var_235457fd = 0;
+        e_statue.unitrigger_stub.b_can_use = 0;
         e_statue.unitrigger_stub.e_statue = e_statue;
     }
     
@@ -1884,7 +1884,7 @@ function function_a430c55f()
         
         if ( isplayer( e_player ) )
         {
-            self.stub.var_235457fd = 0;
+            self.stub.b_can_use = 0;
             
             if ( self.stub.e_statue.var_ae187a59 == 4 )
             {
@@ -1909,7 +1909,7 @@ function function_54b6886c( player )
         return 0;
     }
     
-    if ( !( isdefined( self.stub.var_235457fd ) && self.stub.var_235457fd ) )
+    if ( !( isdefined( self.stub.b_can_use ) && self.stub.b_can_use ) )
     {
         self sethintstring( "" );
         return 0;
@@ -1981,7 +1981,7 @@ function function_a3a00f3a( b_on )
 {
     for ( i = 1; i <= 3 ; i++ )
     {
-        level.var_b5fff38b[ i ].unitrigger_stub.var_235457fd = b_on;
+        level.var_b5fff38b[ i ].unitrigger_stub.b_can_use = b_on;
     }
 }
 
@@ -2128,23 +2128,23 @@ function function_1025059f( var_2175ea54, n_statue, var_2d102ea7, var_b7daddf4 =
     
     if ( var_b7daddf4 || !isdefined( level.var_f3c4bd00 ) )
     {
-        var_916e8cfa = 1;
+        n_turn_speed = 1;
     }
     else
     {
         switch ( level.var_f3c4bd00 )
         {
             case 1:
-                var_916e8cfa = 1.5;
+                n_turn_speed = 1.5;
                 break;
             case 2:
-                var_916e8cfa = 2;
+                n_turn_speed = 2;
                 break;
             case 3:
-                var_916e8cfa = 2.5;
+                n_turn_speed = 2.5;
                 break;
             case 4:
-                var_916e8cfa = 3;
+                n_turn_speed = 3;
                 break;
         }
     }
@@ -2170,10 +2170,10 @@ function function_1025059f( var_2175ea54, n_statue, var_2d102ea7, var_b7daddf4 =
     }
     
     e_statue function_d2367771();
-    e_statue rotateto( var_23ee4083, var_916e8cfa );
+    e_statue rotateto( var_23ee4083, n_turn_speed );
     e_statue playsound( #"hash_7feed504dc9858aa" );
     e_statue playloopsound( #"hash_4d7ead6890b3cdbe" );
-    wait var_916e8cfa;
+    wait n_turn_speed;
     e_statue stoploopsound();
     
     if ( isdefined( var_2175ea54 ) )
@@ -2215,7 +2215,7 @@ function function_1025059f( var_2175ea54, n_statue, var_2d102ea7, var_b7daddf4 =
     
     if ( !var_b7daddf4 && !var_6e91cc7c )
     {
-        e_statue.unitrigger_stub.var_235457fd = 1;
+        e_statue.unitrigger_stub.b_can_use = 1;
         return;
     }
     

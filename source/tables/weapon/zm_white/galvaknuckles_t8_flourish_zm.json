@@ -31,10 +31,10 @@
     "sound800": "#hash_5fd68d0455a0b8",
     "sound810": "#hash_5fd68d0455a0b8",
     "tunables1": "#galvaknuckles_t8_flourish_tunables_zm",
-    "cacWeaponXCam": "#hash_4dbce30f3b5b2741",
-    "cacAttachmentsXCam": "#hash_4dbce30f3b5b2741",
-    "weaponIconXCam": "#hash_521ab03adbaffcd9",
-    "sharedWeaponSounds": "#hash_1f00ad8e0d357b4",
+    "cacWeaponXCam": "#ui_cam_cac_melee_knuckles",
+    "cacAttachmentsXCam": "#ui_cam_cac_melee_knuckles",
+    "weaponIconXCam": "#ui_cam_icon_melee_knuckles",
+    "sharedWeaponSounds": "#zm_galvaknuckles",
     "viewmodel": [
         "#wpn_t8_zm_galvaknuckles_view"
     ],

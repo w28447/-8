@@ -718,9 +718,9 @@ function private function_72cf5db2()
                 {
                     self playsound( #"zmb_perks_packa_deny" );
                     
-                    if ( isdefined( level.pack_a_punch.var_25a37ed7 ) )
+                    if ( isdefined( level.pack_a_punch.custom_deny_func ) )
                     {
-                        player [[ level.pack_a_punch.var_25a37ed7 ]]();
+                        player [[ level.pack_a_punch.custom_deny_func ]]();
                     }
                     else
                     {
@@ -1578,9 +1578,9 @@ function private process_pap_zbarrier_state( state )
             self.state = "hidden";
             break;
         default:
-            if ( isdefined( level.var_c6c65322 ) )
+            if ( isdefined( level.custom_pap_state_handler ) )
             {
-                self [[ level.var_c6c65322 ]]( state );
+                self [[ level.custom_pap_state_handler ]]( state );
             }
             
             break;

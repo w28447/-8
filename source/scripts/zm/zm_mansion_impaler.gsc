@@ -860,7 +860,7 @@ function function_9ee098d5()
             v_death = e_possessed.origin;
         }
         
-        v_drop = mansion_util::function_a8176b98( v_death );
+        v_drop = mansion_util::get_drop_pos( v_death );
         
         if ( isdefined( v_drop ) )
         {

@@ -125,7 +125,7 @@ function function_5bfd1343( attacker, var_f231d134, killtime, capturedobjective,
 // Size: 0xc4
 function function_1f5ed165()
 {
-    if ( ( isdefined( level.spawnbeaconsettings.settingsbundle.var_b4403828 ) ? level.spawnbeaconsettings.settingsbundle.var_b4403828 : 0 ) && isdefined( self.var_d7cf6658 ) && isarray( self.var_d7cf6658 ) && isdefined( self.var_d7cf6658[ #"friendly" ].trigger ) )
+    if ( ( isdefined( level.spawnbeaconsettings.settingsbundle.canbepickedup ) ? level.spawnbeaconsettings.settingsbundle.canbepickedup : 0 ) && isdefined( self.var_d7cf6658 ) && isarray( self.var_d7cf6658 ) && isdefined( self.var_d7cf6658[ #"friendly" ].trigger ) )
     {
         self.var_d7cf6658[ #"friendly" ].trigger triggerenable( 0 );
     }
@@ -157,7 +157,7 @@ function private setupspawnlists()
 {
     for ( spawnlistidx = 0; spawnlistidx < ( isdefined( level.spawnbeaconsettings.settingsbundle.spawnlistcount ) ? level.spawnbeaconsettings.settingsbundle.spawnlistcount : 0 ) ; spawnlistidx++ )
     {
-        array::add( level.spawnbeaconsettings.availablespawnlists, ( isdefined( level.spawnbeaconsettings.settingsbundle.var_7609eee ) ? level.spawnbeaconsettings.settingsbundle.var_7609eee : "" ) + spawnlistidx );
+        array::add( level.spawnbeaconsettings.availablespawnlists, ( isdefined( level.spawnbeaconsettings.settingsbundle.spawnlistbasename ) ? level.spawnbeaconsettings.settingsbundle.spawnlistbasename : "" ) + spawnlistidx );
     }
 }
 
@@ -240,24 +240,24 @@ function playerspawnedfromspawnbeacon( spawnbeacon, var_d8f817bc )
         
         player.var_1a6703cc = gettime();
         player.var_7c18e526 = spawnbeacon.owner;
-        var_f8e6b703 = player match_record::get_player_stat( #"hash_ec4aea1a8bbd82" );
+        current_life_index = player match_record::get_player_stat( #"current_life_index" );
         
-        if ( isdefined( var_f8e6b703 ) )
+        if ( isdefined( current_life_index ) )
         {
-            player match_record::set_stat( #"lives", var_f8e6b703, #"hash_674598aa9fe3d19a", 1 );
+            player match_record::set_stat( #"lives", current_life_index, #"hash_674598aa9fe3d19a", 1 );
         }
     }
     
     if ( isdefined( level.spawnbeaconsettings.settingsbundle.var_7d58193e ) && isdefined( spawnbeacon ) )
     {
-        var_7f9f4251 = isdefined( level.spawnbeaconsettings.settingsbundle.var_231a393d ) ? level.spawnbeaconsettings.settingsbundle.var_231a393d : 0 ? undefined : player;
+        playertoignore = isdefined( level.spawnbeaconsettings.settingsbundle.var_231a393d ) ? level.spawnbeaconsettings.settingsbundle.var_231a393d : 0 ? undefined : player;
         
-        if ( !isdefined( var_7f9f4251 ) )
+        if ( !isdefined( playertoignore ) )
         {
-            var_7f9f4251 = undefined;
+            playertoignore = undefined;
         }
         
-        spawnbeacon playsoundtoteam( level.spawnbeaconsettings.settingsbundle.var_7d58193e, player getteam(), var_7f9f4251 );
+        spawnbeacon playsoundtoteam( level.spawnbeaconsettings.settingsbundle.var_7d58193e, player getteam(), playertoignore );
     }
     
     if ( isdefined( level.spawnbeaconsettings.settingsbundle.var_ccf4ec0b ) )
@@ -389,13 +389,13 @@ function private function_4ddddf03( placedspawnbeacon )
     
     if ( isdefined( level.spawnbeaconsettings.settingsbundle.var_6ee7f72 ) ? level.spawnbeaconsettings.settingsbundle.var_6ee7f72 : 0 )
     {
-        function_6c529d0b( placedspawnbeacon, level.spawnbeaconsettings.settingsbundle.var_ac0a9508, player getteam(), #"enemy", #"hash_10169ccdcca54ccf", &function_741d9675, &function_70ca26fc, &function_d77d0cbb );
+        function_6c529d0b( placedspawnbeacon, level.spawnbeaconsettings.settingsbundle.disableobjective, player getteam(), #"enemy", #"hash_10169ccdcca54ccf", &function_741d9675, &function_70ca26fc, &function_d77d0cbb );
         placedspawnbeacon.var_d7cf6658[ #"enemy" ] gameobjects::set_use_time( isdefined( level.spawnbeaconsettings.settingsbundle.deactivatetime ) ? level.spawnbeaconsettings.settingsbundle.deactivatetime : 0 );
     }
     
-    if ( isdefined( level.spawnbeaconsettings.settingsbundle.var_b4403828 ) ? level.spawnbeaconsettings.settingsbundle.var_b4403828 : 0 )
+    if ( isdefined( level.spawnbeaconsettings.settingsbundle.canbepickedup ) ? level.spawnbeaconsettings.settingsbundle.canbepickedup : 0 )
     {
-        function_6c529d0b( placedspawnbeacon, level.spawnbeaconsettings.settingsbundle.var_69fd6325, player getteam(), #"friendly", #"hash_f91a28adadc5409", &function_e67b6bd, &function_4f5f518a, &function_d77d0cbb );
+        function_6c529d0b( placedspawnbeacon, level.spawnbeaconsettings.settingsbundle.pickupobjective, player getteam(), #"friendly", #"spawnbeacon/pickup", &function_e67b6bd, &function_4f5f518a, &function_d77d0cbb );
         player clientclaimtrigger( placedspawnbeacon.var_d7cf6658[ #"friendly" ].trigger );
         placedspawnbeacon.var_d7cf6658[ #"friendly" ] gameobjects::set_use_time( isdefined( level.spawnbeaconsettings.settingsbundle.pickuptime ) ? level.spawnbeaconsettings.settingsbundle.pickuptime : 0 );
     }
@@ -441,7 +441,7 @@ function function_6c529d0b( beacon, objective, team, var_d1653c48, hinttext, onu
 {
     upangle = vectorscale( vectornormalize( anglestoup( beacon.angles ) ), 5 );
     var_40989bda = beacon.origin + upangle;
-    usetrigger = spawn( "trigger_radius_use", var_40989bda, 0, isdefined( level.spawnbeaconsettings.settingsbundle.var_ec05f9d4 ) ? level.spawnbeaconsettings.settingsbundle.var_ec05f9d4 : 0, isdefined( level.spawnbeaconsettings.settingsbundle.var_53e44ebc ) ? level.spawnbeaconsettings.settingsbundle.var_53e44ebc : 0 );
+    usetrigger = spawn( "trigger_radius_use", var_40989bda, 0, isdefined( level.spawnbeaconsettings.settingsbundle.deactivatetriggerradius ) ? level.spawnbeaconsettings.settingsbundle.deactivatetriggerradius : 0, isdefined( level.spawnbeaconsettings.settingsbundle.deactivatetriggerheight ) ? level.spawnbeaconsettings.settingsbundle.deactivatetriggerheight : 0 );
     usetrigger triggerignoreteam();
     usetrigger setvisibletoall();
     usetrigger setteamfortrigger( #"none" );
@@ -611,9 +611,9 @@ function function_d80ff6a7( watcher )
 // Size: 0x5c
 function private function_ebac785e( player )
 {
-    if ( isdefined( level.spawnbeaconsettings.settingsbundle.var_82360099 ) )
+    if ( isdefined( level.spawnbeaconsettings.settingsbundle.removingaudio ) )
     {
-        player playloopsound( level.spawnbeaconsettings.settingsbundle.var_82360099 );
+        player playloopsound( level.spawnbeaconsettings.settingsbundle.removingaudio );
     }
 }
 
@@ -662,7 +662,7 @@ function private function_741d9675( player )
 // Size: 0xe4
 function private function_d77d0cbb( team, player, result )
 {
-    if ( isdefined( level.spawnbeaconsettings.settingsbundle.var_82360099 ) )
+    if ( isdefined( level.spawnbeaconsettings.settingsbundle.removingaudio ) )
     {
         player stoploopsound();
     }

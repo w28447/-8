@@ -2188,7 +2188,7 @@ CoD.ZombieUtility.ZMSummaryListGenericInfoTableFunc = function ( f124_arg0, f124
 				value = CoD.TextUtility.FormatNumberWithDelimiters( f124_local1.revives )
 			},
 			{
-				title = 0x7B9FE59853C1B82,
+				title = "aar/score",
 				value = CoD.TextUtility.FormatNumberWithDelimiters( f124_local1.score )
 			},
 			{

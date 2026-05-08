@@ -103,7 +103,7 @@ function init_clientfield()
     clientfield::register( "world", "" + #"narrative_room", 1, 1, "int" );
     clientfield::register( "scriptmover", "" + #"hash_46dbc12bdc275121", 1, 1, "int" );
     clientfield::register( "scriptmover", "" + #"hash_59623b8b4fc694c8", 1, 2, "int" );
-    clientfield::register( "scriptmover", "" + #"hash_ce418c45d804842", 1, 1, "counter" );
+    clientfield::register( "scriptmover", "" + #"walnut_teleporter_fx", 1, 1, "counter" );
 }
 
 // Namespace pebble/zm_escape_pebble
@@ -1706,7 +1706,7 @@ function function_442fe4d3()
                 break;
             }
             
-            s_result.activator status_effect::status_effect_apply( getstatuseffect( #"hash_19533caf858a9f3b" ), undefined, self );
+            s_result.activator status_effect::status_effect_apply( getstatuseffect( #"shock_zm_trap" ), undefined, self );
             s_result.activator playrumbleonentity( "damage_heavy" );
             s_result.activator dodamage( 25, self.stub.related_parent.origin );
             s_result.activator playsound( #"hash_7f81f21dc017790d" );
@@ -1823,7 +1823,7 @@ function function_ed96eb60( e_activator )
         mdl_spark = util::spawn_model( "tag_origin", self.origin, self.angles );
         playsoundatposition( #"wpn_zmb_electrap_zap", self.origin );
         waitframe( 2 );
-        mdl_spark clientfield::increment( "" + #"hash_ce418c45d804842" );
+        mdl_spark clientfield::increment( "" + #"walnut_teleporter_fx" );
         e_activator playrumbleonentity( #"zm_escape_walnut" );
         var_1da0aee8 setmodel( #"p8_zm_esc_teleporter_device_off" );
         
@@ -1845,7 +1845,7 @@ function function_ed96eb60( e_activator )
             mdl_spark = util::spawn_model( "tag_origin", var_3d454522.origin, var_3d454522.angles );
             playsoundatposition( #"wpn_zmb_electrap_zap", var_3d454522.origin );
             waitframe( 2 );
-            mdl_spark clientfield::increment( "" + #"hash_ce418c45d804842" );
+            mdl_spark clientfield::increment( "" + #"walnut_teleporter_fx" );
             
             if ( self.targetname == "walnut_teleporter_01" )
             {

@@ -777,7 +777,7 @@ function monitor_detectnearbyenemies( local_client_num )
             
             if ( !var_7aeac1e7 )
             {
-                if ( speed >= bundle.var_293163bd )
+                if ( speed >= bundle.detectionminspeed )
                 {
                     movement_type = sixthsenseent getmovementtype();
                     
@@ -918,7 +918,7 @@ function monitor_detectnearbyenemies( local_client_num )
                 
                 for ( i = 0; i < 6 ; i++ )
                 {
-                    self thread function_c90f8547( var_c948d7f9[ i ], bitfields & ( 1 << 4 ) - 1, bundle.var_a3d426e6 );
+                    self thread function_c90f8547( var_c948d7f9[ i ], bitfields & ( 1 << 4 ) - 1, bundle.awarenessdelay );
                     bitfields >>= 3;
                 }
                 
@@ -952,7 +952,7 @@ function monitor_detectnearbyenemies( local_client_num )
             {
                 for ( i = 0; i < 6 ; i++ )
                 {
-                    self thread function_c90f8547( var_c948d7f9[ i ], 0, bundle.var_a3d426e6 );
+                    self thread function_c90f8547( var_c948d7f9[ i ], 0, bundle.awarenessdelay );
                 }
                 
                 previousenemydetectedbitfield = 0;

@@ -45,9 +45,9 @@ function function_c7c05a13()
     var_21249230 = getscriptbundle( fields.zm_inventory );
     level.var_a16c38d9 = [];
     
-    if ( isdefined( var_21249230.challenges ) && isdefined( var_21249230.var_5a90928f ) )
+    if ( isdefined( var_21249230.challenges ) && isdefined( var_21249230.challengesclientfield ) )
     {
-        function_cb96f01d( var_21249230.var_5a90928f, "ChallengesInfo.stage", 5, 1 );
+        function_cb96f01d( var_21249230.challengesclientfield, "ChallengesInfo.stage", 5, 1 );
         
         if ( isdefined( var_21249230.var_f7d932ea ) )
         {

@@ -547,7 +547,7 @@ function private function_ebf85268( inflictor, attacker, damage, idflags, meanso
         self.var_4bb78ac7 = gettime() + 1000;
         attacker playhitmarker( undefined, 5, undefined, 1, 0 );
         
-        if ( var_786d7e06.var_84ed9a13.var_51e8b151 === "tag_chest_ws" )
+        if ( var_786d7e06.var_84ed9a13.hittag1 === "tag_chest_ws" )
         {
             clientfield::increment( "wrwlf_weakpoint_fx", 1 );
         }
@@ -712,7 +712,7 @@ function private werewolfshouldshowpain( entity )
 function private function_4014790a( entity )
 {
     entity.var_1cfbbe3d = undefined;
-    entity.pain_cooldown = gettime() + int( entity ai::function_9139c839().var_bd87ef4d * 1000 );
+    entity.pain_cooldown = gettime() + int( entity ai::function_9139c839().staggercooldown * 1000 );
     entity.blockingpain = 1;
     function_43f02cf0( entity );
 }
@@ -1673,7 +1673,7 @@ function private summonwolves( entity )
         
         foreach ( var_dd54fdb1 in var_d480edb7.weakpoints )
         {
-            hittag = isdefined( var_dd54fdb1.var_51e8b151 ) ? var_dd54fdb1.var_51e8b151 : var_dd54fdb1.var_910e2f9b;
+            hittag = isdefined( var_dd54fdb1.hittag1 ) ? var_dd54fdb1.hittag1 : var_dd54fdb1.hittag2;
             
             if ( isdefined( hittag ) )
             {

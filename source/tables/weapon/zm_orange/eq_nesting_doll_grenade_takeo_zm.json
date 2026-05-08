@@ -80,5 +80,5 @@
     "bounceImpactFX": "#grenade_bounce",
     "dudImpactFX": "#grenade_dud",
     "normalImpactSounds": "#hash_e8e0a97bbbf0b555",
-    "bounceImpactSounds": "#hash_af66e2a9097ab1f"
+    "bounceImpactSounds": "#matroyshka_bounce"
 }

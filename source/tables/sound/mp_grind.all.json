@@ -547,13 +547,13 @@
         {
             "value": 163,
             "next": 65535,
-            "name": "#hash_633b9532cf0da169",
+            "name": "#amb_flies",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_633b9532cf0da169",
+                    "name": "#amb_flies",
                     "assetId": "#amb/animals/insects/flies/flies_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_grind.all",
                     "assetIdRelease": "#mp_grind.all",
@@ -592,7 +592,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_633b9532cf0da169",
+                    "name": "#amb_flies",
                     "assetId": "#amb/animals/insects/flies/flies_02.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_grind.all",
                     "assetIdRelease": "#mp_grind.all",
@@ -1221,13 +1221,13 @@
         {
             "value": 105,
             "next": 65535,
-            "name": "#hash_204b0051c8458493",
+            "name": "#amb_power_box",
             "sequence": 0,
             "cullDistance": 500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_204b0051c8458493",
+                    "name": "#amb_power_box",
                     "assetId": "#amb/industrial/power/hum/hum.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_grind.all",
                     "assetIdRelease": "#mp_grind.all",
@@ -5020,13 +5020,13 @@
         {
             "value": 107,
             "next": 65535,
-            "name": "#hash_1ff8bec27dfc1b70",
+            "name": "#dst_fern",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1ff8bec27dfc1b70",
+                    "name": "#dst_fern",
                     "assetId": "#dst/prop/fern/fern_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_grind.all",
                     "assetIdRelease": "#mp_grind.all",
@@ -5956,13 +5956,13 @@
         {
             "value": 96,
             "next": 67,
-            "name": "#hash_501eff91f639c23e",
+            "name": "#dst_glass_pane",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_501eff91f639c23e",
+                    "name": "#dst_glass_pane",
                     "assetId": "#dst/generic/glass/med/glass_break_medium_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_grind.all",
                     "assetIdRelease": "#mp_grind.all",
@@ -6581,13 +6581,13 @@
         {
             "value": 146,
             "next": 65535,
-            "name": "#hash_6a7bbff93ccc7ab7",
+            "name": "#dst_luggage",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6a7bbff93ccc7ab7",
+                    "name": "#dst_luggage",
                     "assetFileNameSustain": "#mp_grind.all",
                     "assetIdRelease": "#mp_grind.all",
                     "assetFileNameRelease": "#mp_grind.all",
@@ -9410,13 +9410,13 @@
         {
             "value": 10,
             "next": 99,
-            "name": "#hash_38c96854fb0017e",
+            "name": "#dst_typewriter",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_38c96854fb0017e",
+                    "name": "#dst_typewriter",
                     "assetId": "#dst/prop/typewriter/typewriter_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_grind.all",
                     "assetIdRelease": "#mp_grind.all",
@@ -11534,13 +11534,13 @@
         {
             "value": 128,
             "next": 65535,
-            "name": "#hash_48bc31e222aa7c3e",
+            "name": "#exp_barrel_fire",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_48bc31e222aa7c3e",
+                    "name": "#exp_barrel_fire",
                     "assetId": "#dst/generic/fire/barrel/barrel_fire_02.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_grind.all",
                     "assetIdRelease": "#mp_grind.all",
@@ -17050,7 +17050,7 @@
                     "assetIdRelease": "#mp_grind.all",
                     "assetFileNameRelease": "#mp_grind.all",
                     "contextType": "#hash_730721b0b6373e1",
-                    "contextValue": "#hash_8f631787d4aaf77",
+                    "contextValue": "#outdoor",
                     "reverbSend": 0.001,
                     "centerSend": 0,
                     "volMin": 0.56234133,
@@ -17092,7 +17092,7 @@
                     "assetIdRelease": "#mp_grind.all",
                     "assetFileNameRelease": "#mp_grind.all",
                     "contextType": "#hash_730721b0b6373e1",
-                    "contextValue": "#hash_8f631787d4aaf77",
+                    "contextValue": "#outdoor",
                     "reverbSend": 0.001,
                     "centerSend": 0,
                     "volMin": 0.56234133,
@@ -17920,13 +17920,13 @@
         {
             "value": 71,
             "next": 65535,
-            "name": "#hash_43ad48046fb206c8",
+            "name": "#exp_veh_small",
             "sequence": 0,
             "cullDistance": 12000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_43ad48046fb206c8",
+                    "name": "#exp_veh_small",
                     "secondaryname": "#hash_680a1ca45380de2",
                     "assetId": "#exp/vehicle/base/exp_veh_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_grind.all",
@@ -17967,7 +17967,7 @@
                     "unk178": "#hash_6000b0206"
                 },
                 {
-                    "name": "#hash_43ad48046fb206c8",
+                    "name": "#exp_veh_small",
                     "secondaryname": "#hash_680a1ca45380de2",
                     "assetId": "#exp/vehicle/base/exp_veh_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_grind.all",
@@ -18008,7 +18008,7 @@
                     "unk178": "#hash_6000b0206"
                 },
                 {
-                    "name": "#hash_43ad48046fb206c8",
+                    "name": "#exp_veh_small",
                     "secondaryname": "#hash_680a1ca45380de2",
                     "assetId": "#exp/vehicle/base/exp_veh_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_grind.all",
@@ -19224,7 +19224,7 @@
             "loop": "#hash_44463359dd025b23",
             "duckId": "#default",
             "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_8f631787d4aaf77",
+            "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": false,
@@ -19284,7 +19284,7 @@
             "loop": "#hash_5f0cf846c1e5f92e",
             "duckId": "#default",
             "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_8f631787d4aaf77",
+            "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": false,
@@ -19324,7 +19324,7 @@
             "loop": "#hash_8abeeabd2aa2c9c",
             "duckId": "#default",
             "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_8f631787d4aaf77",
+            "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": true,

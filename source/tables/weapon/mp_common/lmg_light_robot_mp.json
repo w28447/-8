@@ -65,9 +65,9 @@
     "sound800": "#hash_5ee962527afebfb1",
     "sound810": "#hash_490938a3ea225ed",
     "tunables1": "#hash_3c1b3affda808d94",
-    "cacWeaponXCam": "#hash_22c12d7e26795071",
-    "cacAttachmentsXCam": "#hash_22c12d7e26795071",
-    "weaponIconXCam": "#hash_4b242a0a71e08129",
+    "cacWeaponXCam": "#ui_cam_cac_lmg_light",
+    "cacAttachmentsXCam": "#ui_cam_cac_lmg_light",
+    "weaponIconXCam": "#ui_cam_icon_lmg_light",
     "sharedWeaponSounds": "#lmg",
     "tracers": [
         "#lmg",

@@ -3,16 +3,16 @@
     "displayName": "#zombie/scarlett",
     "chrName": "scar",
     "mpDialog": "#scarlett",
-    "playerSoundsTable": "#hash_21fe3f79b5e4c2d6",
+    "playerSoundsTable": "#cp_playersounds",
     "playerFXTable": "#hash_471b500cc678f872",
     "image_68": "#hash_de7a0ffb575f4c1d",
     "positionDraftPortrait": "#ui_icon_hero_portrait_draft_scarlett",
     "positionDraftIcon": "#hash_de7a0ffb575f4c1d",
-    "characterFootsteps": "#hash_7052cf78616e4c73",
-    "characterFootstepsQuiet": "#hash_783ab8b555ce9413",
-    "characterFootstepsNPC": "#hash_3008da66d91b8ad7",
-    "characterFootstepsNPCLoud": "#hash_237a21af974e9d2f",
-    "characterFootstepsNPCQuiet": "#hash_22eae0dda1cf3d31",
+    "characterFootsteps": "#foley_light",
+    "characterFootstepsQuiet": "#defaultplayerquietfootstep",
+    "characterFootstepsNPC": "#defaultnpcfootstep",
+    "characterFootstepsNPCLoud": "#defaultnpcloudfootstep",
+    "characterFootstepsNPCQuiet": "#defaultnpcquietfootstep",
     "bundle": {
         "lobbyScenes": [
             {

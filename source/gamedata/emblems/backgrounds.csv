@@ -89,7 +89,7 @@
 #background,88,88,#ui_icon_callingcards_mp_dark_ops_copycat,7#hash_6fdedf1a971540a7,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
 #background,89,89,#ui_icon_callingcards_mp_dark_ops_fire_with_fire,7#hash_6e0e5a92c12834c5,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
 #background,90,90,#ui_icon_callingcards_mp_dark_ops_get_outta_here,7#hash_4816c4cc947a5ea4,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
-#background,91,91,#hash_8482e5a4d7d79f3,7#hash_1ee3f13dc1a5b4b4,1,0,0,0,#global,#,#,#,#,#,#ui_icon_callingcards_mp_dark_ops_master,#,#,u9?0,#
+#background,91,91,#callingcards_dark_ops_master,7#hash_1ee3f13dc1a5b4b4,1,0,0,0,#global,#,#,#,#,#,#ui_icon_callingcards_mp_dark_ops_master,#,#,u9?0,#
 #background,92,92,#ui_icon_callingcards_mp_gamevictories_freeforallvictor,7#hash_dca2398915268c6,1,0,0,0,#global,#,#,#,#,#,#,#dm,#hash_dca2398915268c6,u9?0,#
 #background,93,93,#ui_icon_callingcards_mp_gamevictories_teamdeathmatchwins,7#hash_510696318d9bae9b,1,0,0,0,#global,#,#,#,#,#,#,#tdm,#hash_2674b70ad932c5aa,u9?0,#
 #background,94,94,#ui_icon_callingcards_mp_gamevictories_search_destroywins,7#hash_1cf35e1444f266d1,1,0,0,0,#global,#,#,#,#,#,#,#sd,#hash_2674b70ad932c5aa,u9?0,#
@@ -115,7 +115,7 @@
 #background,114,114,#ui_icon_callingcards_mp_career_tour_of_duty_events_vanquisher,7#hash_1c4d12f7e3a1ca7b,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
 #background,115,115,#ui_icon_callingcards_mp_career_tour_of_duty_hardcore_vanquisher,7#hash_5106c15003b876c1,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
 #background,116,116,#ui_icon_callingcards_mp_career_tour_of_duty_arena_vanquisher,7#hash_40a458c9edf1b108,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
-#background,117,117,#hash_fe0fbdc105843cb,7#hash_1e566ebdbf371b0d,1,0,0,0,#global,#,#,#,#,#,#ui_icon_callingcards_mp_career_tour_of_duty_master,#,#,u9?0,#
+#background,117,117,#callingcards_tour_of_duty_master,7#hash_1e566ebdbf371b0d,1,0,0,0,#global,#,#,#,#,#,#ui_icon_callingcards_mp_career_tour_of_duty_master,#,#,u9?0,#
 #background,118,118,#ui_icon_callingcards_mp_career_game_heroics_highestvalueoperative,7#hash_1861b116620a21ac,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
 #background,119,119,#ui_icon_callingcards_mp_career_game_heroics_top_dog,7#hash_5dedc4a3f7495a0b,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
 #background,120,120,#ui_icon_callingcards_mp_career_game_heroics_aggression,7#hash_1d2987d73ad2598c,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
@@ -308,7 +308,7 @@
 #background,307,307,#ui_icon_callingcards_mp_prestige_prestige_roman,7#hash_3426e732a9e488c7,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
 #background,308,308,#ui_icon_callingcards_mp_prestige_prestige_barbarian,7#hash_41d22d62c6a1c87a,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
 #background,309,309,#ui_icon_callingcards_mp_prestige_prestige_modernsoldier,7#hash_64f9bd879a88f696,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
-#background,310,310,#hash_660d368575962a3,7#hash_4601c78071fe62f7,1,0,0,0,#global,#,#,#,#,#,#ui_icon_callingcards_mp_prestige_prestige_badass,#,#,u9?0,#
+#background,310,310,#callingcards_prestige_prestige_badass,7#hash_4601c78071fe62f7,1,0,0,0,#global,#,#,#,#,#,#ui_icon_callingcards_mp_prestige_prestige_badass,#,#,u9?0,#
 #background,311,311,#hash_2df24394e064a5d7,7#hash_4813f9d7cae8cc01,1,0,0,0,#global,#,#,#,#,#,#ui_icon_callingcards_mp_100percent,#,#,u9?0,#
 #background,312,312,#ui_icon_callingcards_mp_erasers_card1,7#hash_1021ff9b0f02864a,1,0,0,0,#default,#hash_3fdb33a570693a76,#,#,#,#,#,#,#,u9?0,#
 #background,313,313,#ui_icon_callingcards_zm_darkops_12,7#hash_70aecaa574943cba,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
@@ -323,7 +323,7 @@
 #background,322,322,#ui_icon_callingcards_zm_darkops_08,7#hash_66d75a34df671910,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
 #background,323,323,#ui_icon_callingcards_zm_darkops_13,7#hash_5ed9d75091fdb706,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
 #background,324,324,#ui_icon_callingcards_zm_darkops_02,7#hash_2d3434877f8ad10a,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
-#background,325,325,#hash_16e4d2022024d11,7#hash_222eb64d22cc83e,1,0,0,0,#global,#,#,#,#,#,#ui_icon_callingcards_zm_darkops_10,#,#,u9?0,#
+#background,325,325,#callingcards_zm_darkops,7#hash_222eb64d22cc83e,1,0,0,0,#global,#,#,#,#,#,#ui_icon_callingcards_zm_darkops_10,#,#,u9?0,#
 #background,326,326,#ui_icon_callingcards_zm_elixirs_talismans_06,7#hash_15b42a93c929118a,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
 #background,327,327,#ui_icon_callingcards_zm_elixirs_talismans_09,7#hash_5c0942705cf11f36,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
 #background,328,328,#ui_icon_callingcards_zm_elixirs_talismans_01,7#hash_4abd93f224ee6e2e,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
@@ -349,7 +349,7 @@
 #background,348,348,#ui_icon_callingcards_zm_strategist_04,7#hash_4bcb066b832bbf30,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
 #background,349,349,#ui_icon_callingcards_zm_strategist_09,7#hash_69641e0a6ddff8f5,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
 #background,350,350,#ui_icon_callingcards_zm_strategist_11,7#hash_3ae80ef6ea79f903,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
-#background,351,351,#hash_5a4c1f72f3265625,7#hash_464b98607bdf1e34,1,0,0,0,#global,#,#,#,#,#,#ui_icon_callingcards_zm_strategist_13,#,#,u9?0,#
+#background,351,351,#callingcards_zm_strategist,7#hash_464b98607bdf1e34,1,0,0,0,#global,#,#,#,#,#,#ui_icon_callingcards_zm_strategist_13,#,#,u9?0,#
 #background,352,352,#ui_icon_callingcards_zm_survivalist_06,7#hash_11716505e897ca4d,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
 #background,353,353,#ui_icon_callingcards_zm_survivalist_19,7#hash_42ddbf11d6ef022a,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
 #background,354,354,#ui_icon_callingcards_zm_survivalist_12,7#hash_5f6d2a210eb56ce6,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
@@ -362,7 +362,7 @@
 #background,361,361,#ui_icon_callingcards_zm_survivalist_01,7#hash_121b4201abd7ef89,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
 #background,362,362,#ui_icon_callingcards_zm_survivalist_13,7#hash_4e988b05b473e6b1,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
 #background,363,363,#ui_icon_callingcards_zm_survivalist_08,7#hash_23ef750d826bae90,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
-#background,364,364,#hash_e9560377c67385f,7#hash_f29573d738cf09c,1,0,0,0,#global,#,#,#,#,#,#ui_icon_callingcards_zm_survivalist_20,#,#,u9?0,#
+#background,364,364,#callingcards_zm_survivalist,7#hash_f29573d738cf09c,1,0,0,0,#global,#,#,#,#,#,#ui_icon_callingcards_zm_survivalist_20,#,#,u9?0,#
 #background,365,365,#ui_icon_callingcards_zm_weapons_equipment_02,7#hash_78f83989b913e0a,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
 #background,366,366,#ui_icon_callingcards_zm_weapons_equipment_03,7#hash_18de839538fc52b3,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
 #background,367,367,#ui_icon_callingcards_zm_weapons_equipment_06,7#hash_a8928d942d22aaa,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
@@ -465,7 +465,7 @@
 #background,464,464,#ui_icon_callingcards_wz_heroics_get_straight_to_it,7#hash_12dd1d6316230f45,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
 #background,465,465,#ui_icon_callingcards_wz_heroics_clutch,7#hash_29cfc171c0d2457a,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
 #background,466,466,#ui_icon_callingcards_wz_heroics_massochist,7#hash_25239efdf0cf8d65,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
-#background,467,467,#hash_a90b69ecebae127,7#hash_4b377b6dd0a083c1,1,0,0,0,#global,#,#,#,#,#,#ui_icon_callingcards_wz_heroics_master,#,#,u9?0,#
+#background,467,467,#callingcards_wz_heroics_master,7#hash_4b377b6dd0a083c1,1,0,0,0,#global,#,#,#,#,#,#ui_icon_callingcards_wz_heroics_master,#,#,u9?0,#
 #background,468,468,#ui_icon_callingcards_wz_vehicular_getaway_car,7#hash_48bfce47c82282ac,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
 #background,469,469,#ui_icon_callingcards_wz_vehicular_water_raids,7#hash_5697f9944a416e02,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
 #background,470,470,#ui_icon_callingcards_wz_vehicular_daring_exploits,7#hash_452adfbdce826ade,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
@@ -554,7 +554,7 @@
 #background,553,553,#ui_icon_callingcard_beautypack,7#hash_4730fa9d289a957e,1,0,0,0,#default,#blackops_pack,#,#,#,#,#,#,#,u9?0,#
 #background,554,554,#ui_icon_callingcard_lovesack,7#hash_655f7ff7e8853ec3,1,0,0,0,#default,#hash_8e4ad8151c7366,#hash_2b277088930b40f5,#,#,#,#,#,#,u9?0,#
 #background,555,555,#ui_icon_callingcards_code_cc_static,7#hash_2d2f180227bb5db8,1,0,0,0,#default,#hash_44d0e7f0520665cc,#,#,#,#,#,#,#,u9?0,#
-#background,556,556,#ui_icon_callingcards_betawarrior,7#hash_23b4fa0cf3784e43,1,0,0,0,#default,#hash_1be23f482b82219f,#,#,#,#,#,#,#,u9?0,#
+#background,556,556,#ui_icon_callingcards_betawarrior,7#hash_23b4fa0cf3784e43,1,0,0,0,#default,#beta_reward,#,#,#,#,#,#,#,u9?0,#
 #background,557,557,#ui_icon_callingcard_food,7#hash_5fe02d2be1d7be75,1,0,0,0,#default,#hash_5a007ae024403f92,#,#,#,#,#,#,#,u9?0,#
 #background,558,558,#ui_icon_callingcard_mcfarlane_ruin,7#hash_78213b1448d97293,1,0,0,0,#default,#hash_4eb85e76bd305293,#,#,#,#,#,#,#,u9?0,#
 #background,559,559,#ui_icon_callingcard_mcfarlane_seraph,7#hash_17c99a3a25a9b900,1,0,0,0,#default,#hash_61abfa80dd80d262,#,#,#,#,#,#,#,u9?0,#
@@ -593,9 +593,9 @@
 #background,592,592,#loot_ui_icon_callingcards_mode_monkey_signature_5,7#hash_5357646933e5469a,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,593,593,#loot_ui_icon_callingcards_mode_monkey_signature_7,7#hash_5357636933e544e7,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,594,594,#hash_1c93ca98359eb427,7#hash_32bee42f2f04214f,1,0,0,0,#loot,#,#,#,#,#,#loot_ui_icon_callingcards_mode_monkey_signature_6,#,#,u9?0,#
-#background,595,595,#ui_icon_callingcards_atvi_ambassador_tier_01,7#hash_3b31224a993ddb30,1,0,0,0,#default,#hash_3c612cf15abddb9,#,#,#,#,#,#,#,u9?0,#
-#background,596,596,#ui_icon_callingcards_atvi_ambassador_tier02,7#hash_3b31254a993de049,1,0,0,0,#default,#hash_11b6898ea2c93806,#,#,#,#,#,#,#,u9?0,#
-#background,597,597,#ui_icon_callingcards_atvi_ambassador_tier03,7#hash_3b31244a993dde96,1,0,0,0,#default,#hash_7e6c70afd58c1ac4,#,#,#,#,#,#,#,u9?0,#
+#background,595,595,#ui_icon_callingcards_atvi_ambassador_tier_01,7#hash_3b31224a993ddb30,1,0,0,0,#default,#ambassador_hero,#,#,#,#,#,#,#,u9?0,#
+#background,596,596,#ui_icon_callingcards_atvi_ambassador_tier02,7#hash_3b31254a993de049,1,0,0,0,#default,#ambassador_champion,#,#,#,#,#,#,#,u9?0,#
+#background,597,597,#ui_icon_callingcards_atvi_ambassador_tier03,7#hash_3b31244a993dde96,1,0,0,0,#default,#ambassador_legend,#,#,#,#,#,#,#,u9?0,#
 #background,598,598,#ui_icon_callingcards_code_platoonchallenge_01,7#hash_764b53dd7f6ab53,1,0,0,0,#default,#hash_3ecc9ac085f072d,#,#,#,#,#,#,#,u9?0,#
 #background,599,599,#ui_icon_callingcards_code_platoonchallenge_02,7#hash_764b63dd7f6ad06,1,0,0,0,#default,#hash_3ecc6ac085f0214,#,#,#,#,#,#,#,u9?0,#
 #background,600,600,#loot_ui_icon_callingcards_safari_hunter_01,7#hash_2b81a583b7ca817d,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
@@ -644,14 +644,14 @@
 #background,643,643,#loot_ui_icon_callingcards_future_racers_04,7#hash_6155df4e0c1ffcb6,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,644,644,#loot_ui_icon_callingcards_future_racers_05,7#hash_6155e04e0c1ffe69,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,645,645,#loot_ui_icon_callingcards_future_racers_06,7#hash_6155dd4e0c1ff950,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
-#background,646,646,#hash_f3c30f1f50d950a,7#hash_1d5af59af7df31f0,1,0,0,0,#loot,#,#,#,#,#,#loot_ui_icon_callingcards_future_racers_master,#,#,u9?0,#
+#background,646,646,#callingcards_futureracing,7#hash_1d5af59af7df31f0,1,0,0,0,#loot,#,#,#,#,#,#loot_ui_icon_callingcards_future_racers_master,#,#,u9?0,#
 #background,647,647,#loot_ui_icon_callingcards_steampunk_warriors_01,7#hash_65f13848136a3f0a,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,648,648,#loot_ui_icon_callingcards_steampunk_warriors_02,7#hash_65f13748136a3d57,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,649,649,#loot_ui_icon_callingcards_steampunk_warriors_03,7#hash_65f13648136a3ba4,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,650,650,#loot_ui_icon_callingcards_steampunk_warriors_04,7#hash_65f13548136a39f1,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,651,651,#loot_ui_icon_callingcards_steampunk_warriors_05,7#hash_65f13448136a383e,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,652,652,#loot_ui_icon_callingcards_steampunk_warriors_06,7#hash_65f13348136a368b,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
-#background,653,653,#hash_90eba40764624fe,7#hash_7ccff19bdbce8663,1,0,0,0,#loot,#,#,#,#,#,#loot_ui_icon_callingcards_steampunk_master,#,#,u9?0,#
+#background,653,653,#callingcards_loot2_steampunk,7#hash_7ccff19bdbce8663,1,0,0,0,#loot,#,#,#,#,#,#loot_ui_icon_callingcards_steampunk_master,#,#,u9?0,#
 #background,654,654,#loot_ui_icon_callingcards_twistedcircus_01,7#hash_196558ebeae13a43,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,655,655,#loot_ui_icon_callingcards_twistedcircus_02,7#hash_196559ebeae13bf6,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,656,656,#loot_ui_icon_callingcards_twistedcircus_03,7#hash_19655aebeae13da9,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
@@ -691,7 +691,7 @@
 #background,690,690,#loot_ui_icon_callingcards_alienvegas_04,7#hash_175d05cabb3e1404,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,691,691,#loot_ui_icon_callingcards_alienvegas_07,7#hash_175d08cabb3e191d,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,692,692,#loot_ui_icon_callingcards_alienvegas_06,7#hash_175d07cabb3e176a,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
-#background,693,693,#hash_395ca2f50e1b4b18,7#hash_175d06cabb3e15b7,1,0,0,0,#loot,#,#,#,#,#,#loot_ui_icon_callingcards_alienvegas_05,#,#,u9?0,#
+#background,693,693,#callingcards_invasion,7#hash_175d06cabb3e15b7,1,0,0,0,#loot,#,#,#,#,#,#loot_ui_icon_callingcards_alienvegas_05,#,#,u9?0,#
 #background,694,694,#ui_icon_callingcards_wz_prestige_01,7#hash_1ab4df3efa850e4f,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
 #background,695,695,#ui_icon_callingcards_wz_prestige_02,7#hash_11b29183aafb1e14,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
 #background,696,696,#ui_icon_callingcards_wz_prestige_03,7#hash_23be00925fb9d6b1,1,0,0,0,#global,#,#,#,#,#,#,#,#,u9?0,#
@@ -758,7 +758,7 @@
 #background,757,757,#loot_ui_icon_callingcards_summerbreak_04,7#hash_670e1f04abf1f5b1,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,758,758,#loot_ui_icon_callingcards_summerbreak_05,7#hash_670e1e04abf1f3fe,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,759,759,#loot_ui_icon_callingcards_summerbreak_06,7#hash_670e1d04abf1f24b,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
-#background,760,760,#hash_7d8e26cf160aea12,7#hash_670e2204abf1faca,1,0,0,0,#loot,#,#,#,#,#,#loot_ui_icon_callingcards_summerbreak_01,#,#,u9?0,#
+#background,760,760,#callingcards_summer,7#hash_670e2204abf1faca,1,0,0,0,#loot,#,#,#,#,#,#loot_ui_icon_callingcards_summerbreak_01,#,#,u9?0,#
 #background,761,761,#loot_ui_icon_callingcards_pirates_01,7#hash_20687fcb6eb426ec,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,762,762,#loot_ui_icon_callingcards_pirates_02,7#hash_206882cb6eb42c05,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,763,763,#loot_ui_icon_callingcards_pirates_07,7#hash_20687dcb6eb42386,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
@@ -772,7 +772,7 @@
 #background,771,771,#loot_ui_icon_callingcards_replacer_07,7#hash_55b1d9626486526c,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,772,772,#loot_ui_icon_callingcards_replacer_05,7#hash_55b1db62648655d2,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,773,773,#loot_ui_icon_callingcards_replacer_06,7#hash_55b1da626486541f,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
-#background,774,774,#hash_97e55afda50ba65,7#hash_55b1dc6264865785,1,0,0,0,#loot,#,#,#,#,#,#loot_ui_icon_callingcards_replacer_04,#,#,u9?0,#
+#background,774,774,#callingcards_replacer,7#hash_55b1dc6264865785,1,0,0,0,#loot,#,#,#,#,#,#loot_ui_icon_callingcards_replacer_04,#,#,u9?0,#
 #background,775,775,#loot_ui_icon_callingcards_specialist_zombies_01,7#hash_95278626417eb8e,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,776,776,#loot_ui_icon_callingcards_specialist_zombies_02,7#hash_95277626417e9db,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,777,777,#loot_ui_icon_callingcards_specialist_zombies_07,7#hash_9527a626417eef4,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
@@ -786,7 +786,7 @@
 #background,785,785,#loot_ui_icon_callingcards_survivors_04,7#hash_6ee47013eb1432,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,786,786,#loot_ui_icon_callingcards_survivors_05,7#hash_6ee57013eb15e5,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,787,787,#loot_ui_icon_callingcards_survivors_06,7#hash_6ee27013eb10cc,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
-#background,788,788,#hash_1c8e42e011d260e,7#hash_6ee37013eb127f,1,0,0,0,#loot,#,#,#,#,#,#loot_ui_icon_callingcards_survivors_07,#,#,u9?0,#
+#background,788,788,#callingcards_zombieapocalypse,7#hash_6ee37013eb127f,1,0,0,0,#loot,#,#,#,#,#,#loot_ui_icon_callingcards_survivors_07,#,#,u9?0,#
 #background,789,789,#ui_icon_callingcards_zm_gauntlet_unsinkable_darkmatter,7#hash_4332d8f07e036a0,1,0,0,0,#global,#,#,#,#,#,#ui_icon_callingcards_zm_gauntlet_unsinkable_darkmatter,#,#,u9?0,#
 #background,790,790,#ui_icon_callingcards_zm_gauntlet_unsinkable_diamond,7#hash_16d05ba4b4674597,1,0,0,0,#global,#,#,#,#,#,#ui_icon_callingcards_zm_gauntlet_unsinkable_diamond,#,#,u9?0,#
 #background,791,791,#ui_icon_callingcards_zm_gauntlet_unsinkable_platinum,7#hash_2abfe9a2e45cc95a,1,0,0,0,#global,#,#,#,#,#,#ui_icon_callingcards_zm_gauntlet_unsinkable_platinum,#,#,u9?0,#
@@ -797,14 +797,14 @@
 #background,796,796,#loot_ui_icon_callingcards_zombiediner_04,7#hash_6b1d0edc4e70b0b3,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,797,797,#loot_ui_icon_callingcards_zombiediner_05,7#hash_6b1d0ddc4e70af00,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,798,798,#loot_ui_icon_callingcards_zombiediner_06,7#hash_6b1d10dc4e70b419,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
-#background,799,799,#hash_6af83b16ab3ee2ae,7#hash_6b1d0fdc4e70b266,1,0,0,0,#loot,#,#,#,#,#,#loot_ui_icon_callingcards_zombiediner_02,#,#,u9?0,#
+#background,799,799,#callingcards_zombies,7#hash_6b1d0fdc4e70b266,1,0,0,0,#loot,#,#,#,#,#,#loot_ui_icon_callingcards_zombiediner_02,#,#,u9?0,#
 #background,800,800,#loot_ui_icon_callingcards_zombiecamp_01,7#hash_4f5e465ce20882d7,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,801,801,#loot_ui_icon_callingcards_zombiecamp_07,7#hash_4f5e475ce208848a,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,802,802,#loot_ui_icon_callingcards_zombiecamp_03,7#hash_4f5e485ce208863d,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,803,803,#loot_ui_icon_callingcards_zombiecamp_04,7#hash_4f5e415ce2087a58,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,804,804,#loot_ui_icon_callingcards_zombiecamp_05,7#hash_4f5e425ce2087c0b,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
 #background,805,805,#loot_ui_icon_callingcards_zombiecamp_06,7#hash_4f5e435ce2087dbe,1,0,0,0,#loot,#,#,#,#,#,#,#,#,u9?0,#
-#background,806,806,#hash_b68c32a1ece956d,7#hash_4f5e445ce2087f71,1,0,0,0,#loot,#,#,#,#,#,#loot_ui_icon_callingcards_zombiecamp_02,#,#,u9?0,#
+#background,806,806,#callingcards_survivor,7#hash_4f5e445ce2087f71,1,0,0,0,#loot,#,#,#,#,#,#loot_ui_icon_callingcards_zombiecamp_02,#,#,u9?0,#
 #background,807,807,#ui_icon_callingcards_zm_gauntlet_white_bronze,7#hash_3e94e68f8da53992,1,0,0,0,#global,#,#,#,#,#,#ui_icon_callingcards_zm_gauntlet_white_bronze,#,#,u9?0,#
 #background,808,808,#ui_icon_callingcards_zm_gauntlet_white_silver,7#hash_274f515771df012b,1,0,0,0,#global,#,#,#,#,#,#ui_icon_callingcards_zm_gauntlet_white_silver,#,#,u9?0,#
 #background,809,809,#ui_icon_callingcards_zm_gauntlet_white_gold,7#hash_7f3c274061602f58,1,0,0,0,#global,#,#,#,#,#,#ui_icon_callingcards_zm_gauntlet_white_gold,#,#,u9?0,#

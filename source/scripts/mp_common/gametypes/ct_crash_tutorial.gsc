@@ -873,7 +873,7 @@ function function_1089714c( str_type )
         level.var_37591676 += n_points;
         event = #"ekia";
         eventindex = level.scoreinfo[ event ][ #"row" ];
-        level.players[ 0 ] globallogic_score::giveplayermomentumnotification( n_points, #"hash_480234a872bd64ac", undefined, 0, level.players[ 0 ].currentweapon, 0, eventindex, event, undefined );
+        level.players[ 0 ] globallogic_score::giveplayermomentumnotification( n_points, #"score/blank", undefined, 0, level.players[ 0 ].currentweapon, 0, eventindex, event, undefined );
     }
     else
     {
@@ -921,7 +921,7 @@ function function_9b2c973f()
     self endon( #"hash_600461f8d5fa1837" );
     level endon( #"squad_dead" );
     a_bots = self ct_bots::function_71ec2b36();
-    var_c5a2f4b9 = a_bots.size;
+    n_squad_size = a_bots.size;
     n_start_ammo = 0;
     var_2cf11630 = 0;
     n_start_health = 0;
@@ -1534,9 +1534,9 @@ function function_83085be6( s_loc )
 function function_257306e5( s_loc )
 {
     self endon( #"death" );
-    var_91aa9c27 = level.players[ 0 ] ct_bots::function_dde6edbd().size;
+    n_guys = level.players[ 0 ] ct_bots::function_dde6edbd().size;
     
-    if ( !level flag::get( "stop_reinforce" ) && var_91aa9c27 < level.var_3cdb14a8 )
+    if ( !level flag::get( "stop_reinforce" ) && n_guys < level.var_3cdb14a8 )
     {
         self thread reinforce_enemy( s_loc );
     }
@@ -2221,7 +2221,7 @@ function ammo_watch( str_event )
     while ( true )
     {
         n_ammo_start = self getammocount( self.currentweapon );
-        self.var_1e0b475b = 0;
+        self.b_reloaded = 0;
         s_result = level.players[ 0 ] waittill( #"supplypod_placed" );
         
         if ( isdefined( s_result.pod ) )
@@ -2231,7 +2231,7 @@ function ammo_watch( str_event )
             wait randomfloatrange( 1, 2.5 );
             var_d9fa3a2c = self getammocount( self.currentweapon );
             
-            if ( var_d9fa3a2c <= n_ammo_start && !( isdefined( self.var_1e0b475b ) && self.var_1e0b475b ) )
+            if ( var_d9fa3a2c <= n_ammo_start && !( isdefined( self.b_reloaded ) && self.b_reloaded ) )
             {
                 if ( isdefined( str_event ) )
                 {
@@ -2253,7 +2253,7 @@ function ammo_watch( str_event )
                 
                 level.pod.in_use = 1;
                 
-                while ( !( isdefined( self.var_1e0b475b ) && self.var_1e0b475b ) )
+                while ( !( isdefined( self.b_reloaded ) && self.b_reloaded ) )
                 {
                     v_dir = anglestoforward( level.pod.angles );
                     var_c657828f = level.pod.origin + v_dir * 100;
@@ -2277,7 +2277,7 @@ function ammo_watch( str_event )
                     self bot_action::reset();
                     waitframe( 1 );
                     self waittill( #"supply_pod_used" );
-                    self.var_1e0b475b = 1;
+                    self.b_reloaded = 1;
                     wait 1.5;
                     self thread ct_utils::function_5b59f3b7( self.v_org, self.v_ang, 16 );
                     wait 1;
@@ -2307,7 +2307,7 @@ function function_70fb1a55()
     foreach ( bot in a_bots )
     {
         bot thread ct_utils::function_5b59f3b7( self.v_org, self.angles, 32 );
-        bot.var_1e0b475b = 0;
+        bot.b_reloaded = 0;
     }
 }
 

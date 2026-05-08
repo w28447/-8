@@ -97,7 +97,7 @@ function function_24167ed8()
 {
     level flag::init( #"hash_2120a14c5eeab590" );
     level flag::init( #"shield_built" );
-    level flag::init( #"hash_2a5fb4f6bae2e180" );
+    level flag::init( #"civil_engineering" );
     zm_crafting::function_d1f16587( #"ztable_white_open", &function_5702b2e7 );
 }
 
@@ -156,7 +156,7 @@ function function_5702b2e7( e_player )
     
     if ( level flag::get( #"hash_2120a14c5eeab590" ) && level flag::get( #"shield_built" ) )
     {
-        level flag::set( #"hash_2a5fb4f6bae2e180" );
+        level flag::set( #"civil_engineering" );
     }
 }
 

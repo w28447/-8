@@ -122,7 +122,7 @@ function burn( str_type, e_attacker, weapon, var_477abb8f )
 function private function_8aefaae3( s_burn )
 {
     level endon( #"end_game" );
-    self endoncallback( &function_fc2a294, #"death" );
+    self endoncallback( &stop_burn_fx, #"death" );
     
     if ( isdefined( self.archetype ) )
     {
@@ -211,7 +211,7 @@ function private function_8aefaae3( s_burn )
         
         if ( !self.var_88421cc2.size )
         {
-            self function_fc2a294();
+            self stop_burn_fx();
             return;
         }
     }
@@ -230,7 +230,7 @@ function function_5e9ef773()
 // Params 1, eflags: 0x4
 // Checksum 0x9434bf47, Offset: 0x988
 // Size: 0x72
-function private function_fc2a294( var_c34665fc )
+function private stop_burn_fx( var_c34665fc )
 {
     if ( isdefined( self.archetype ) )
     {

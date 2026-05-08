@@ -548,7 +548,7 @@ function electrocute_player( e_trigger )
         self.var_58538bef = 0;
     }
     
-    shock_status_effect = getstatuseffect( #"hash_19533caf858a9f3b" );
+    shock_status_effect = getstatuseffect( #"shock_zm_trap" );
     
     if ( e_trigger zm_traps::function_3f401e8d( self ) )
     {

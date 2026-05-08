@@ -1285,9 +1285,9 @@ function manage_zones( initial_zone )
                 continue;
             }
             
-            if ( isdefined( level.var_cc984236 ) )
+            if ( isdefined( level.zone_occupied_func ) )
             {
-                newzone.is_occupied = [[ level.var_cc984236 ]]( zkeys[ z ] );
+                newzone.is_occupied = [[ level.zone_occupied_func ]]( zkeys[ z ] );
             }
             else
             {
@@ -1352,14 +1352,14 @@ function manage_zones( initial_zone )
             {
                 if ( e_player.sessionstate != "spectator" )
                 {
-                    var_bdf9e3c2 = e_player zm_utility::get_current_zone();
+                    str_current_zone = e_player zm_utility::get_current_zone();
                     
-                    if ( !isdefined( var_bdf9e3c2 ) )
+                    if ( !isdefined( str_current_zone ) )
                     {
                         continue;
                     }
                     
-                    s_zone = level.zones[ var_bdf9e3c2 ];
+                    s_zone = level.zones[ str_current_zone ];
                     s_zone.is_active = 1;
                     s_zone.is_occupied = 1;
                     s_zone.is_spawning_allowed = 1;

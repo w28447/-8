@@ -28,7 +28,7 @@ localizeentry,#hash_9d53461ccd9cd0
 localizeentry,#hash_9d54461ccd9e83
 localizeentry,#hash_9d56461ccda1e9
 localizeentry,#hash_9d59461ccda702
-localizeentry,d#hash_a43b10d9da121a
+localizeentry,d#menu/waiting_caps
 localizeentry,#hash_d533adface5114
 localizeentry,#hash_e2632cffea8000
 localizeentry,#hash_e2642cffea81b3
@@ -62,7 +62,7 @@ localizeentry,#hash_18a6e6df32b9f7c
 localizeentry,#hash_18a6f6df32ba12f
 localizeentry,#hash_18a706df32ba2e2
 localizeentry,#hash_18a756df32bab61
-localizeentry,d#hash_19e7605718f65a2
+localizeentry,d#weapon/defaultattachment
 localizeentry,#hash_1a72e8482d1f5d6
 localizeentry,#hash_1a7388482d206d4
 localizeentry,#hash_1a7398482d20887
@@ -668,7 +668,7 @@ localizeentry,#hash_10e6aec1d3f5b8c2
 localizeentry,#hash_10e6b0c1d3f5bc28
 localizeentry,#hash_10e6b1c1d3f5bddb
 localizeentry,#hash_10e6b3c1d3f5c141
-localizeentry,d#hash_10f22a2fae6154a8
+localizeentry,d#mp/hold
 localizeentry,#hash_10f2efa9addbd5a2
 localizeentry,#hash_1106071775125e9a
 localizeentry,#hash_11100a2f9e46b474
@@ -956,7 +956,7 @@ localizeentry,d#hash_165a8932254a9933
 localizeentry,d#mpui/grip
 localizeentry,d#hash_166b7f0f8f0d22fc
 localizeentry,#hash_16809f476a898f09
-localizeentry,d#hash_16b234cb46b5acd4
+localizeentry,d#menu/kills_caps
 localizeentry,#hash_16c3f3a5e7af77ac
 localizeentry,#hash_16c3f5a5e7af7b12
 localizeentry,#hash_16c3f6a5e7af7cc5
@@ -2150,7 +2150,7 @@ localizeentry,#hash_308f6ecff0f91bb5
 localizeentry,#hash_308f70cff0f91f1b
 localizeentry,#hash_3098c56f95c9f0d7
 localizeentry,#hash_309d191cbf9e39e2
-localizeentry,d#hash_309f6a17f45fceaf
+localizeentry,d#mpui/spectating
 localizeentry,#hash_30a04dfba33bee49
 localizeentry,#hash_30a04efba33beffc
 localizeentry,#hash_30a04ffba33bf1af
@@ -2740,7 +2740,7 @@ localizeentry,#hash_3d75bd09f61b455b
 localizeentry,#hash_3d75be09f61b470e
 localizeentry,d#hash_3d75c0876757457c
 localizeentry,#hash_3d75c309f61b4f8d
-localizeentry,d#hash_3d7abb3373fab887
+localizeentry,d#zmui/suppressor_desc
 localizeentry,#hash_3d7b30b847e2ec8b
 localizeentry,#hash_3d7ccd9572233636
 localizeentry,#hash_3d962de65717dd94
@@ -2872,7 +2872,7 @@ localizeentry,#hash_4035b3144b4dc2e4
 localizeentry,#hash_4046465526cc32cf
 localizeentry,#zmweapon/ray_gun_mk2y_upgraded
 localizeentry,#hash_404ebf586e2b7e8b
-localizeentry,d#hash_404ef66575ddb929
+localizeentry,d#mpui/max_caps
 localizeentry,#hash_40521d4ff0874238
 localizeentry,#hash_405f1aaacdea85e0
 localizeentry,#hash_405f1faacdea8e5f
@@ -3109,7 +3109,7 @@ localizeentry,#hash_45b3e031cce90912
 localizeentry,d#mpui/hipgrip_desc
 localizeentry,#hash_45e0e71f5c4ad089
 localizeentry,#hash_45e9d4aeecfd0c17
-localizeentry,d#hash_45f407bc037861dc
+localizeentry,d#options/advanced
 localizeentry,#hash_46053795219144d1
 localizeentry,#hash_4605389521914684
 localizeentry,#hash_4605399521914837
@@ -4641,7 +4641,7 @@ localizeentry,d#mp/back
 localizeentry,d#hash_6a4930978aef6c45
 localizeentry,#hash_6a6338b9d885ed18
 localizeentry,#hash_6a65af1e24bed025
-localizeentry,d#hash_6a75180bc7fda8f5
+localizeentry,d#menu/score_caps
 localizeentry,#hash_6a8451cbd1848f51
 localizeentry,#hash_6a8452cbd1849104
 localizeentry,#hash_6a8453cbd18492b7
@@ -4865,7 +4865,7 @@ localizeentry,#hash_70613fbb7f566f45
 localizeentry,#hash_706c035b1a1c019f
 localizeentry,#hash_7074f87bab693832
 localizeentry,#hash_7082df81f7ffcea4
-localizeentry,d#hash_7085044e7b80d5a3
+localizeentry,d#mpui/reticle_default
 localizeentry,#hash_709918cce34279a3
 localizeentry,#hash_7099dd5a532b0f9a
 localizeentry,d#hash_709fb6b7fdde6aa8
@@ -5169,7 +5169,7 @@ localizeentry,#hash_77748893c965aee6
 localizeentry,#hash_77748993c965b099
 localizeentry,#hash_77748a93c965b24c
 localizeentry,#hash_7774f1a810763553
-localizeentry,d#hash_778d439e1b360368
+localizeentry,d#menu/back_caps
 localizeentry,#hash_77bfcc65d5eba709
 localizeentry,#hash_77d822bf16783790
 localizeentry,#hash_77d827bf1678400f

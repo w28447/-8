@@ -310,13 +310,13 @@ function function_ea62f5af()
     var_a56604c5 = namespace_eb06e24d::get_parachute_kit().lootid;
     var_c9b1d229 = namespace_eb06e24d::get_trailfx_kit().lootid;
     var_42b02106 = namespace_eb06e24d::get_wingsuit_kit().lootid;
-    var_f8e6b703 = self match_record::get_player_stat( #"hash_ec4aea1a8bbd82" );
+    current_life_index = self match_record::get_player_stat( #"current_life_index" );
     
-    if ( isdefined( var_f8e6b703 ) )
+    if ( isdefined( current_life_index ) )
     {
-        self match_record::set_stat( #"lives", var_f8e6b703, #"hash_4f557c87c0538129", var_a56604c5 );
-        self match_record::set_stat( #"lives", var_f8e6b703, #"hash_4b4bd85ab964d386", var_c9b1d229 );
-        self match_record::set_stat( #"lives", var_f8e6b703, #"hash_63862160f8335af2", var_42b02106 );
+        self match_record::set_stat( #"lives", current_life_index, #"hash_4f557c87c0538129", var_a56604c5 );
+        self match_record::set_stat( #"lives", current_life_index, #"hash_4b4bd85ab964d386", var_c9b1d229 );
+        self match_record::set_stat( #"lives", current_life_index, #"hash_63862160f8335af2", var_42b02106 );
     }
 }
 
@@ -373,8 +373,8 @@ function private function_c263fd97()
     var_4fcc3493 = starttime + var_ffa47239 + var_2ee361bf;
     var_8cd82180 = getdvarint( #"hash_723f28907e9e4cd0", 3 );
     var_45d7d746 = 0;
-    var_ccb4a8be = player_free_fall::function_d2a1520c();
-    streamermodelhint( var_ccb4a8be, float( var_ffa47239 + var_2ee361bf ) / 1000 );
+    wingsuit_model = player_free_fall::get_wingsuit_model();
+    streamermodelhint( wingsuit_model, float( var_ffa47239 + var_2ee361bf ) / 1000 );
     
     while ( true )
     {

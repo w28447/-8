@@ -34,7 +34,7 @@
     "sound250": "#hash_242aa17124751841",
     "tunables1": "#ai_tank_marker_tunables_mp",
     "weaponHeadObjective": "#airdrop_aitank",
-    "crateObjective": "#hash_3c7c319783c8522",
+    "crateObjective": "#ai_tank_waypoint",
     "#hash_2e4a8800": "#swat_team_scoreevents",
     "projectilemodel": "#wpn_t8_eqp_grenade_smoke_projectile",
     "viewmodel": [

@@ -122,7 +122,7 @@
         },
         {
             "name": "#hash_56713fd04cf082bb",
-            "description": "#hash_1fbf66a81cc73280",
+            "description": "#playlist/zm_towers",
             "lobbyMainMode": "CAMPAIGN",
             "image": "#ui_icon_gamemode_zm_classic",
             "imageBackground": "#hash_c566d51261573f6c",
@@ -237,7 +237,7 @@
         },
         {
             "name": "#hash_101b84de4cb22042",
-            "description": "#hash_4aebc92557870439",
+            "description": "#playlist/zm_escape",
             "unique_name": "#hash_7226cb1d509ebfbd",
             "lobbyMainMode": "CAMPAIGN",
             "image": "#ui_icon_gamemode_zm_classic",
@@ -353,7 +353,7 @@
         },
         {
             "name": "#hash_36034ec889bf326",
-            "description": "#hash_7d0fb557f16fbe9f",
+            "description": "#playlist/zm_mansion",
             "unique_name": "#hash_708ca3393b7322ab",
             "dlcName": "dlc1zm",
             "lobbyMainMode": "CAMPAIGN",

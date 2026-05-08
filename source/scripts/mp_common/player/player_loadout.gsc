@@ -57,7 +57,7 @@ function autoexec function_313e9d31()
     {
         var_43645456 = wildcard.playerloadoutrestrictions;
         playerloadoutrestrictions = getscriptbundle( var_43645456 );
-        level.playerloadoutrestrictions[ playerloadoutrestrictions.var_9bb0ceab ] = playerloadoutrestrictions;
+        level.playerloadoutrestrictions[ playerloadoutrestrictions.wildcarditemname ] = playerloadoutrestrictions;
     }
 }
 
@@ -215,7 +215,7 @@ function function_9f888e75( weapons_table )
     level.meleeweapons[ level.meleeweapons.size ] = level.weaponmeleeamuletfist;
     level.weaponshotgunenergy = getweapon( #"shotgun_energy" );
     level.weaponpistolenergy = getweapon( #"pistol_energy" );
-    level.var_c1954e36 = getweapon( #"ac130_chaingun" );
+    level.weaponac130chaingun = getweapon( #"ac130_chaingun" );
 }
 
 // Namespace loadout/player_loadout
@@ -1094,9 +1094,9 @@ function private function_d9035e42( weapon )
     }
     else if ( iteminfo.loadoutslotname === "secondary" )
     {
-        self.playerloadoutrestrictions.var_ab1984e9--;
+        self.playerloadoutrestrictions.numsecondaryweapons--;
         
-        if ( self.playerloadoutrestrictions.var_ab1984e9 < 0 )
+        if ( self.playerloadoutrestrictions.numsecondaryweapons < 0 )
         {
             return false;
         }
@@ -1161,18 +1161,18 @@ function private function_3aa744b9( slot, weapon )
     
     if ( slot === "primary" )
     {
-        self.playerloadoutrestrictions.var_355c3581 -= num_attachments;
+        self.playerloadoutrestrictions.numprimaryattachments -= num_attachments;
         
-        if ( self.playerloadoutrestrictions.var_355c3581 < 0 )
+        if ( self.playerloadoutrestrictions.numprimaryattachments < 0 )
         {
             return false;
         }
         
         if ( has_uber || weapon.isdualwield )
         {
-            self.playerloadoutrestrictions.var_882b6b71--;
+            self.playerloadoutrestrictions.numprimaryubers--;
             
-            if ( self.playerloadoutrestrictions.var_882b6b71 < 0 )
+            if ( self.playerloadoutrestrictions.numprimaryubers < 0 )
             {
                 return false;
             }
@@ -1180,18 +1180,18 @@ function private function_3aa744b9( slot, weapon )
     }
     else if ( slot === "secondary" )
     {
-        self.playerloadoutrestrictions.var_934131b6 -= num_attachments;
+        self.playerloadoutrestrictions.numsecondaryattachments -= num_attachments;
         
-        if ( self.playerloadoutrestrictions.var_934131b6 < 0 )
+        if ( self.playerloadoutrestrictions.numsecondaryattachments < 0 )
         {
             return false;
         }
         
         if ( has_uber || weapon.isdualwield )
         {
-            self.playerloadoutrestrictions.var_c3fc8c73--;
+            self.playerloadoutrestrictions.numsecondaryubers--;
             
-            if ( self.playerloadoutrestrictions.var_c3fc8c73 < 0 )
+            if ( self.playerloadoutrestrictions.numsecondaryubers < 0 )
             {
                 return false;
             }
@@ -1212,13 +1212,13 @@ function private function_d126318c( slot, weapon )
     
     if ( slot === "primary" )
     {
-        var_b5bd8bd9 = self.playerloadoutrestrictions.var_355c3581;
-        remove_uber = self.playerloadoutrestrictions.var_882b6b71 < 0;
+        var_b5bd8bd9 = self.playerloadoutrestrictions.numprimaryattachments;
+        remove_uber = self.playerloadoutrestrictions.numprimaryubers < 0;
     }
     else if ( slot === "secondary" )
     {
-        var_b5bd8bd9 = self.playerloadoutrestrictions.var_934131b6;
-        remove_uber = self.playerloadoutrestrictions.var_c3fc8c73 < 0;
+        var_b5bd8bd9 = self.playerloadoutrestrictions.numsecondaryattachments;
+        remove_uber = self.playerloadoutrestrictions.numsecondaryubers < 0;
     }
     
     attachments = arraycopy( weapon.attachments );
@@ -1404,7 +1404,7 @@ function function_5536bd9e()
     give_armor = has_specialty_armor && ( !isdefined( self.var_a06951b7 ) || self.var_a06951b7 < gettime() );
     armor = give_armor ? self.spawnarmor : 0;
     self.health = new_health;
-    self armor::set_armor( armor, armor, 0, self function_e95ae03( #"hash_56055daf9601d89e" ), self function_e95ae03( #"hash_e7550a3c852687e" ), self function_e95ae03( #"hash_5a20313f9a8825a9" ), self function_e95ae03( #"hash_7c24b2a7dce26e8f" ), 1, 1, 1 );
+    self armor::set_armor( armor, armor, 0, self getplayerdamagescale( #"hash_56055daf9601d89e" ), self getplayerdamagescale( #"hash_e7550a3c852687e" ), self getplayerdamagescale( #"hash_5a20313f9a8825a9" ), self getplayerdamagescale( #"hash_7c24b2a7dce26e8f" ), 1, 1, 1 );
     self.var_ed2f8b3a = self.spawnhealth;
     
     if ( give_armor || isdefined( self.var_a06951b7 ) && self.var_a06951b7 < gettime() )
@@ -2229,29 +2229,29 @@ function private function_8aa3ff4e()
     wildcards = self function_6f2c0492( self.class_num );
     self.playerloadoutrestrictions = spawnstruct();
     self.playerloadoutrestrictions.numprimaryweapons = isdefined( level.playerloadoutrestrictions[ 0 ].numprimaryweapons ) ? level.playerloadoutrestrictions[ 0 ].numprimaryweapons : 0;
-    self.playerloadoutrestrictions.var_355c3581 = isdefined( level.playerloadoutrestrictions[ 0 ].var_355c3581 ) ? level.playerloadoutrestrictions[ 0 ].var_355c3581 : 0;
-    self.playerloadoutrestrictions.var_882b6b71 = isdefined( level.playerloadoutrestrictions[ 0 ].var_882b6b71 ) ? level.playerloadoutrestrictions[ 0 ].var_882b6b71 : 0;
-    self.playerloadoutrestrictions.var_ab1984e9 = isdefined( level.playerloadoutrestrictions[ 0 ].var_ab1984e9 ) ? level.playerloadoutrestrictions[ 0 ].var_ab1984e9 : 0;
-    self.playerloadoutrestrictions.var_934131b6 = isdefined( level.playerloadoutrestrictions[ 0 ].var_934131b6 ) ? level.playerloadoutrestrictions[ 0 ].var_934131b6 : 0;
-    self.playerloadoutrestrictions.var_c3fc8c73 = isdefined( level.playerloadoutrestrictions[ 0 ].var_c3fc8c73 ) ? level.playerloadoutrestrictions[ 0 ].var_c3fc8c73 : 0;
+    self.playerloadoutrestrictions.numprimaryattachments = isdefined( level.playerloadoutrestrictions[ 0 ].numprimaryattachments ) ? level.playerloadoutrestrictions[ 0 ].numprimaryattachments : 0;
+    self.playerloadoutrestrictions.numprimaryubers = isdefined( level.playerloadoutrestrictions[ 0 ].numprimaryubers ) ? level.playerloadoutrestrictions[ 0 ].numprimaryubers : 0;
+    self.playerloadoutrestrictions.numsecondaryweapons = isdefined( level.playerloadoutrestrictions[ 0 ].numsecondaryweapons ) ? level.playerloadoutrestrictions[ 0 ].numsecondaryweapons : 0;
+    self.playerloadoutrestrictions.numsecondaryattachments = isdefined( level.playerloadoutrestrictions[ 0 ].numsecondaryattachments ) ? level.playerloadoutrestrictions[ 0 ].numsecondaryattachments : 0;
+    self.playerloadoutrestrictions.numsecondaryubers = isdefined( level.playerloadoutrestrictions[ 0 ].numsecondaryubers ) ? level.playerloadoutrestrictions[ 0 ].numsecondaryubers : 0;
     self.playerloadoutrestrictions.var_a2ef45f8 = isdefined( level.playerloadoutrestrictions[ 0 ].var_a2ef45f8 ) ? level.playerloadoutrestrictions[ 0 ].var_a2ef45f8 : 0;
     self.playerloadoutrestrictions.var_cd3db98c = isdefined( level.playerloadoutrestrictions[ 0 ].var_cd3db98c ) ? level.playerloadoutrestrictions[ 0 ].var_cd3db98c : 0;
     self.playerloadoutrestrictions.var_25a22f4 = isdefined( level.playerloadoutrestrictions[ 0 ].var_25a22f4 ) ? level.playerloadoutrestrictions[ 0 ].var_25a22f4 : 0;
     
     if ( isdefined( wildcards ) && wildcards.size > 0 )
     {
-        foreach ( var_9bb0ceab in wildcards )
+        foreach ( wildcarditemname in wildcards )
         {
-            var_47dbd1c3 = level.playerloadoutrestrictions[ var_9bb0ceab ];
+            var_47dbd1c3 = level.playerloadoutrestrictions[ wildcarditemname ];
             
             if ( isdefined( var_47dbd1c3 ) )
             {
                 self.playerloadoutrestrictions.numprimaryweapons += isdefined( var_47dbd1c3.numprimaryweapons ) ? var_47dbd1c3.numprimaryweapons : 0;
-                self.playerloadoutrestrictions.var_355c3581 += isdefined( var_47dbd1c3.var_355c3581 ) ? var_47dbd1c3.var_355c3581 : 0;
-                self.playerloadoutrestrictions.var_882b6b71 += isdefined( var_47dbd1c3.var_882b6b71 ) ? var_47dbd1c3.var_882b6b71 : 0;
-                self.playerloadoutrestrictions.var_ab1984e9 += isdefined( var_47dbd1c3.var_ab1984e9 ) ? var_47dbd1c3.var_ab1984e9 : 0;
-                self.playerloadoutrestrictions.var_934131b6 += isdefined( var_47dbd1c3.var_934131b6 ) ? var_47dbd1c3.var_934131b6 : 0;
-                self.playerloadoutrestrictions.var_c3fc8c73 += isdefined( var_47dbd1c3.var_c3fc8c73 ) ? var_47dbd1c3.var_c3fc8c73 : 0;
+                self.playerloadoutrestrictions.numprimaryattachments += isdefined( var_47dbd1c3.numprimaryattachments ) ? var_47dbd1c3.numprimaryattachments : 0;
+                self.playerloadoutrestrictions.numprimaryubers += isdefined( var_47dbd1c3.numprimaryubers ) ? var_47dbd1c3.numprimaryubers : 0;
+                self.playerloadoutrestrictions.numsecondaryweapons += isdefined( var_47dbd1c3.numsecondaryweapons ) ? var_47dbd1c3.numsecondaryweapons : 0;
+                self.playerloadoutrestrictions.numsecondaryattachments += isdefined( var_47dbd1c3.numsecondaryattachments ) ? var_47dbd1c3.numsecondaryattachments : 0;
+                self.playerloadoutrestrictions.numsecondaryubers += isdefined( var_47dbd1c3.numsecondaryubers ) ? var_47dbd1c3.numsecondaryubers : 0;
                 self.playerloadoutrestrictions.var_a2ef45f8 += isdefined( var_47dbd1c3.var_a2ef45f8 ) ? var_47dbd1c3.var_a2ef45f8 : 0;
                 self.playerloadoutrestrictions.var_cd3db98c += isdefined( var_47dbd1c3.var_cd3db98c ) ? var_47dbd1c3.var_cd3db98c : 0;
                 self.playerloadoutrestrictions.var_25a22f4 += isdefined( var_47dbd1c3.var_25a22f4 ) ? var_47dbd1c3.var_25a22f4 : 0;

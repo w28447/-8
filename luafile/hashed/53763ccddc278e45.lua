@@ -229,7 +229,7 @@ CoD.PC_MultiItemPickup.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	HeaderStash = LUI.UIText.new( 0.5, 0.5, -101, 99, 0, 0, 3.5, 25.5 )
 	HeaderStash:setRGB( 0, 0, 0 )
-	HeaderStash:setText( LocalizeToUpperString( 0xCBB57645849CE8E ) )
+	HeaderStash:setText( LocalizeToUpperString( "wz/stash" ) )
 	HeaderStash:setTTF( "ttmussels_regular" )
 	HeaderStash:setLetterSpacing( 4 )
 	HeaderStash:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

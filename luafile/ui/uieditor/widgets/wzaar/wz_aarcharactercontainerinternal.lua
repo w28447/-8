@@ -32,7 +32,7 @@ CoD.WZ_AARCharacterContainerInternal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local Title = LUI.UIText.new( 0.5, 0.5, -248, 248, 0, 0, 19, 51 )
 	Title:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	Title:setText( Engine[0xF9F1239CFD921FE]( 0x897061E92EE5BFC ) )
+	Title:setText( Engine[0xF9F1239CFD921FE]( "aar/rewards" ) )
 	Title:setTTF( "ttmussels_demibold" )
 	Title:setLetterSpacing( 4 )
 	Title:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

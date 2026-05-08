@@ -2,8 +2,8 @@
     "name": "#hash_bac19a8a93f750a",
     "displayName": "#heroes/trapper",
     "mpDialog": "#nomad",
-    "playerSoundsTable": "#hash_21fe3f79b5e4c2d6",
-    "playerFXTable": "#hash_133d2326a92c76be",
+    "playerSoundsTable": "#cp_playersounds",
+    "playerFXTable": "#mp_playerfx",
     "image_50": "#personalize_t7_hud_mp_weapon_hero_chemgun_available",
     "image_58": "#t7_mp_loadingportrait_weapon_nomad",
     "image_60": "#t7_mp_loadingportrait_ability_nomad",
@@ -16,11 +16,11 @@
     "dogtagFriendly": "#hash_44d5ea01b7d04daf",
     "dogTagEnemy": "#hash_1bc831f9eeaaf730",
     "tagFxSet": "#hash_27c9cc9ba2c9b8e3",
-    "characterFootsteps": "#hash_4ee42a3145f1fe3d",
-    "characterFootstepsQuiet": "#hash_783ab8b555ce9413",
-    "characterFootstepsNPC": "#hash_3008da66d91b8ad7",
-    "characterFootstepsNPCLoud": "#hash_237a21af974e9d2f",
-    "characterFootstepsNPCQuiet": "#hash_22eae0dda1cf3d31",
+    "characterFootsteps": "#defaultplayerfootstep",
+    "characterFootstepsQuiet": "#defaultplayerquietfootstep",
+    "characterFootstepsNPC": "#defaultnpcfootstep",
+    "characterFootstepsNPCLoud": "#defaultnpcloudfootstep",
+    "characterFootstepsNPCQuiet": "#defaultnpcquietfootstep",
     "bundle": {
         "arenaLobbyScenes": [
             {

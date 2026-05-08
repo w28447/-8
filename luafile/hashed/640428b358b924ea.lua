@@ -85,7 +85,7 @@ CoD.Barracks_StatsOverview_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	end
 	
 	Kills.StatValue.__Stat_Value()
-	Kills.StatHeaderText:setText( Engine[0xF9F1239CFD921FE]( 0x6B234CB46B5ACD4 ) )
+	Kills.StatHeaderText:setText( Engine[0xF9F1239CFD921FE]( "menu/kills_caps" ) )
 	self:addElement( Kills )
 	self.Kills = Kills
 	

@@ -289,7 +289,7 @@ CoD.GameSettings_Characters.new = function ( f14_arg0, f14_arg1, f14_arg2, f14_a
 		end
 	end, function ( f22_arg0, f22_arg1, f22_arg2 )
 		if AlwaysFalse() then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x22361E23588705A], 0x8E7772DFD9BBDEB, nil, "ui_contextual_1" )
+			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x22361E23588705A], "menu/options", nil, "ui_contextual_1" )
 			return true
 		else
 			return false

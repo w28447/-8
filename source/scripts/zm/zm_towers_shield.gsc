@@ -37,7 +37,7 @@ function autoexec __init__system__()
 // Size: 0x62e
 function __init__()
 {
-    clientfield::register( "allplayers", "" + #"hash_26af481b9a9d41ce", 1, 1, "counter" );
+    clientfield::register( "allplayers", "" + #"firestorm_shot_fx", 1, 1, "counter" );
     clientfield::register( "allplayers", "" + #"hash_18fc1da5f1785e6b", 1, 1, "counter" );
     clientfield::register( "allplayers", "" + #"charge_gem", 1, 2, "int" );
     clientfield::register( "allplayers", "" + #"hash_275debebcd185ea1", 1, 1, "int" );
@@ -60,8 +60,8 @@ function __init__()
     level.var_70f7eb75 = level.var_c9d375dc.melee_weapon_upgraded;
     callback::on_connect( &player_init );
     level.riotshield_melee = &function_fbe77fa4;
-    callback::add_weapon_fired( level.var_c9d375dc.firestorm_weapon, &function_618e1db4 );
-    callback::add_weapon_fired( level.var_c9d375dc.firestorm_weapon_upgraded, &function_618e1db4 );
+    callback::add_weapon_fired( level.var_c9d375dc.firestorm_weapon, &firestorm_shot_fx );
+    callback::add_weapon_fired( level.var_c9d375dc.firestorm_weapon_upgraded, &firestorm_shot_fx );
     callback::on_ai_killed( &function_f3137e13 );
     zm::register_zombie_damage_override_callback( &function_2a9a30bb );
     zm::register_zombie_damage_override_callback( &function_3c6df289 );
@@ -450,12 +450,12 @@ function function_982a8c76()
 // Params 1
 // Checksum 0xe6f5e91d, Offset: 0x1a50
 // Size: 0x86
-function function_618e1db4( weapon )
+function firestorm_shot_fx( weapon )
 {
     if ( !isdefined( self.var_e2c32bbb ) || !self.var_e2c32bbb )
     {
         self.var_e2c32bbb = 1;
-        self clientfield::increment( "" + #"hash_26af481b9a9d41ce", 1 );
+        self clientfield::increment( "" + #"firestorm_shot_fx", 1 );
         self waittill( #"end_firing" );
         self.var_e2c32bbb = 0;
     }

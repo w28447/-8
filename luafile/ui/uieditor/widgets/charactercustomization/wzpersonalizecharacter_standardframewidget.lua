@@ -1,4 +1,4 @@
-require( "x64:1bbde4283bb35f8" )
+require( "ui/uieditor/menus/store/store8" )
 require( "ui/uieditor/menus/wz/wzpersonalizecharacterinspect" )
 require( "ui/uieditor/widgets/mp/specialisthub/hubspecialist_character" )
 

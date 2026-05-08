@@ -53,7 +53,7 @@
     "fx_bd0": "#hash_5dc8164cbf9523c2",
     "fx_f00": "#hash_8f8d0a431403706",
     "#hash_96850284": "#jammer_tankrobot",
-    "normalImpactFX": "#hash_219f0df6a19c4ac4",
-    "exitImpactFX": "#hash_69050d7b3430366e",
+    "normalImpactFX": "#hero_pineapple_explosion",
+    "exitImpactFX": "#grenade_exit",
     "normalImpactSounds": "#hash_e8e0a97bbbf0b555"
 }

@@ -28,7 +28,7 @@
 #kill,#spartoi,#vox_spartoi_kill,0,60,FALSE,TRUE,FALSE,FALSE
 #spartoi,#react,#vox_spartoi_react,20,300,FALSE,TRUE,FALSE,FALSE
 #spartoi,#react_first,#vox_spartoi_react_first,0,0,FALSE,FALSE,FALSE,FALSE
-#spartoi,#hash_4a6538bdf1da1af7,#hash_5c714f3566f4c4,0,0,FALSE,FALSE,FALSE,FALSE
+#spartoi,#rez_react_first,#hash_5c714f3566f4c4,0,0,FALSE,FALSE,FALSE,FALSE
 #kill,#gegenees,#vox_gegenees_kill,0,60,FALSE,TRUE,FALSE,FALSE
 #gegenees,#react,#vox_gegenees_react,0,300,FALSE,TRUE,FALSE,FALSE
 #gegenees,#react_first,#vox_gegenees_react_first,0,0,FALSE,FALSE,FALSE,FALSE
@@ -63,7 +63,7 @@
 #ouranos,#rune_circle,#hash_3393f5b9c2830aa0,0,0,FALSE,FALSE,FALSE,FALSE
 #cliff,#eagle_free,#hash_172d8c7cc7123557,0,0,FALSE,FALSE,FALSE,FALSE
 #cliff,#forge_enter,#vox_cliff_forge_enter,0,0,FALSE,FALSE,FALSE,FALSE
-#oracle,#hash_7fc312fb8141032c,#hash_1cf28dc8ff858000,0,0,FALSE,FALSE,FALSE,FALSE
+#oracle,#help_response,#hash_1cf28dc8ff858000,0,0,FALSE,FALSE,FALSE,FALSE
 #plateau,#jump,#vox_plateau_jump,0,0,FALSE,FALSE,FALSE,FALSE
 #plateau,#loss_react,#vox_plateau_loss_react,0,0,FALSE,FALSE,FALSE,FALSE
 #ra_altar,#altered_react,#vox_ra_altar_altered_react,0,0,FALSE,FALSE,FALSE,FALSE

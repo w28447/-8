@@ -249,7 +249,7 @@ soundalias,#hash_2904437d186593d
 soundalias,#hash_30f768616c78427
 soundalias,#hash_31f777916298d72
 soundalias,#hash_34186a2648d3bd3
-soundalias,#hash_38c96854fb0017e
+soundalias,#dst_typewriter
 soundalias,#hash_4049cea29ca612c
 soundalias,#hash_419e84642ebe554
 soundalias,#hash_4638d1437766933
@@ -284,7 +284,7 @@ soundalias,#hash_ed48b121a56b336
 soundalias,#hash_f7960ad68ff0bbf
 soundalias,#hash_fd5a0a07bb1c8df
 soundalias,#hash_101aa41260505836
-soundalias,#hash_116415178857b994
+soundalias,#amb_heli_crash
 soundalias,#hash_117fec069331ef40
 soundalias,#hash_1197b99d88c6c0bb
 soundalias,#hash_1222e1a3c005eeeb
@@ -326,7 +326,7 @@ soundalias,#hash_1e8e72d3d951929e
 soundalias,#hash_1ec308916f5b6e67
 soundalias,#hash_1f61a8b39fda8c78
 soundalias,#hash_1f9b1d980061ea0e
-soundalias,#hash_1ff8bec27dfc1b70
+soundalias,#dst_fern
 soundalias,#hash_200e28bcd26bab77
 soundalias,#hash_200e2ebcd26bb5a9
 soundalias,#hash_2034803f68e04e35
@@ -343,8 +343,8 @@ soundalias,#hash_224eb55f26cccaac
 soundalias,#hash_22d01da9a5078de7
 soundalias,#hash_24341b2153efa720
 soundalias,#hash_2490540890082fde
-soundalias,#hash_252662611476ef37
-soundalias,#hash_252663611476f0ea
+soundalias,#amb_comp_1
+soundalias,#amb_comp_2
 soundalias,#hash_2559f028a2274178
 soundalias,#hash_2559f228a22744de
 soundalias,#hash_2559f328a2274691
@@ -444,7 +444,7 @@ soundalias,#hash_45a4e1bd38393752
 soundalias,#hash_45ec7508c1aa46b1
 soundalias,#hash_47a7dd1007c11019
 soundalias,#hash_487be9ed2cd7cdc8
-soundalias,#hash_48bc31e222aa7c3e
+soundalias,#exp_barrel_fire
 soundalias,#hash_490033933ad1f12f
 soundalias,#hash_4963815a54e65e23
 soundalias,#hash_499a124f56b6f71b
@@ -472,7 +472,7 @@ soundalias,#hash_4f144f62eda9d260
 soundalias,#hash_4f8c480d8e8f07b6
 soundalias,#hash_4fce9427097656c3
 soundalias,#hash_4ff60fe70fad2082
-soundalias,#hash_501eff91f639c23e
+soundalias,#dst_glass_pane
 soundalias,#hash_50cf1563b54b43f6
 soundalias,#hash_510bdf2b87f3ea1d
 soundalias,#hash_5160cc87009d52ed
@@ -553,7 +553,7 @@ soundalias,#hash_6929a1852dd56590
 soundalias,#hash_69a67072d9d5e504
 soundalias,#hash_69f6a83806409e23
 soundalias,#hash_69f9f3e122dbb898
-soundalias,#hash_6a7bbff93ccc7ab7
+soundalias,#dst_luggage
 soundalias,#hash_6abe483482efa584
 soundalias,#hash_6af616124249b8a3
 soundalias,#fly_step_catwalk_metal
@@ -586,7 +586,7 @@ soundalias,#hash_7809ea482909306c
 soundalias,#hash_7812f8bd545946f7
 soundalias,#hash_78e39172a0f9395d
 soundalias,#hash_78ea3de9255fb546
-soundalias,#hash_792fb19dd27becfc
+soundalias,#pfx_exhaust
 soundalias,#hash_79e7070c3130f4a9
 soundalias,#vox_tvoi_tutor_ruin_final_2_score_dead
 soundalias,#hash_7a01a2836b20e603

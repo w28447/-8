@@ -9,7 +9,7 @@ localizeentry,#hash_95c5021b448b56
 localizeentry,#mpui/extclip_desc
 localizeentry,#mpui/fmj_desc
 localizeentry,#mpui/supply_desc
-localizeentry,#hash_19e7605718f65a2
+localizeentry,#weapon/defaultattachment
 localizeentry,#mpui/dualoptic
 localizeentry,#mpui/fastreload2_desc
 localizeentry,#zmui/fmj_desc
@@ -147,7 +147,7 @@ localizeentry,#menu/multiplayer_desc
 localizeentry,#hash_3ca968dee9e5dc02
 localizeentry,#hash_3cbdafac7f4a7bd2
 localizeentry,#hash_3d26eb8dafae98e9
-localizeentry,#hash_3d7abb3373fab887
+localizeentry,#zmui/suppressor_desc
 localizeentry,#mpui/tacknife
 localizeentry,#hash_3de8e053a2e6c69b
 localizeentry,#hash_3dfd2cf9c5589207
@@ -223,7 +223,7 @@ localizeentry,#mpui/adsreload
 localizeentry,#menu/zombies
 localizeentry,#mpui/camo_battle
 localizeentry,#hash_5c28147c226eb600
-localizeentry,#hash_5c759d6c6ee8f8c3
+localizeentry,#heroes/default
 localizeentry,#mpui/mixclip
 localizeentry,#mpui/mms_desc
 localizeentry,#hash_5dc620aa9640e528
@@ -271,7 +271,7 @@ localizeentry,#hash_6e2fd7423cbe42b0
 localizeentry,#hash_6e86b49d6d5196af
 localizeentry,#mpui/rangefinder
 localizeentry,#mpui/stabilizer
-localizeentry,#hash_7085044e7b80d5a3
+localizeentry,#mpui/reticle_default
 localizeentry,#hash_709fb6b7fdde6aa8
 localizeentry,#hash_714cce81de873f11
 localizeentry,#mpui/acog

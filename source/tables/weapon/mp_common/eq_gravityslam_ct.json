@@ -56,13 +56,13 @@
     "image_1048": "#hash_ea507b20c6d296b6",
     "rumble_de8": "#gravity_spike",
     "fx_be8": "#hash_4c51dd2438351a87",
-    "fx_ee0": "#hash_29899e0384daccd6",
+    "fx_ee0": "#weapon/fx_hero_grvity_spk_grnd_hit_1p",
     "underwaterExplosionSurfaceFX": [
         "#hash_6ada54108943d70e",
         "#hash_6128f8fb069e15e1",
         "#hash_783e35c3cf1ae7dd"
     ],
-    "viewPersistentEffectSet": "#hash_27a87200252e8a3f",
-    "normalImpactFX": "#hash_23097e2c64baf58f",
+    "viewPersistentEffectSet": "#weapon_hero_gravityspikes_1p_persist",
+    "normalImpactFX": "#hero_gravityspikes_explosion",
     "normalImpactSounds": "#hash_3c73f0f0040e4bb9"
 }

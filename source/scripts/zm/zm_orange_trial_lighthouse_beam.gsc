@@ -135,7 +135,7 @@ function private setup_lighthouse()
         if ( isdefined( level.e_lighthouse_light.vh_target ) )
         {
             level.e_lighthouse_light.vh_target.b_moving = 0;
-            level.e_lighthouse_light.vh_target clientfield::set( "" + #"hash_19bce46b8ab82440", 0 );
+            level.e_lighthouse_light.vh_target clientfield::set( "" + #"lighthouse_beam_fx", 0 );
             waitframe( 1 );
             level.e_lighthouse_light.vh_target delete();
         }
@@ -210,7 +210,7 @@ function function_f223e16f( round_reset )
     self endon( #"death" );
     self.vh_target.b_moving = 0;
     wait 2;
-    self.vh_target clientfield::set( "" + #"hash_19bce46b8ab82440", 0 );
+    self.vh_target clientfield::set( "" + #"lighthouse_beam_fx", 0 );
     self.vh_target.e_spotlight delete();
     self.vh_target delete();
     

@@ -32,7 +32,7 @@
     "sound660": "#uin_unavailable_charging",
     "projexplosionsound": "#hash_20cda79cd396562",
     "tunables1": "#inventory_remote_missile_tunables_mp",
-    "crateObjective": "#hash_a2a7bf19aeaae",
+    "crateObjective": "#remote_missile_waypoint",
     "customsettings": "#remote_missile_settings",
     "#hash_2e4a8800": "#remote_missile_scoreevents",
     "#hash_22082a57": "#hash_5d10f8f9ff090e5b",

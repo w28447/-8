@@ -18,7 +18,7 @@
 // Size: 0x62a
 function init_clientfields()
 {
-    clientfield::register( "allplayers", "" + #"hash_5370f4bc9fc25d13", 8000, 1, "int", &function_bdecc239, 0, 1 );
+    clientfield::register( "allplayers", "" + #"shield_elec_fx", 8000, 1, "int", &shield_elec_fx, 0, 1 );
     clientfield::register( "scriptmover", "" + #"ley_lines", 8000, 2, "int", &ley_lines, 0, 0 );
     clientfield::register( "scriptmover", "" + #"power_beam", 8000, 2, "int", &power_beam, 0, 0 );
     clientfield::register( "scriptmover", "" + #"red_ray", 8000, 2, "int", &red_ray, 0, 0 );
@@ -27,8 +27,8 @@ function init_clientfields()
     clientfield::register( "scriptmover", "" + #"stone_glow", 8000, 1, "int", &function_b75c6b4f, 0, 0 );
     clientfield::register( "scriptmover", "" + #"stone_despawn", 8000, 1, "counter", &function_dea9fad1, 0, 0 );
     clientfield::register( "scriptmover", "" + #"stone_soul", 8000, 1, "int", &function_6628d887, 0, 0 );
-    clientfield::register( "scriptmover", "" + #"hash_34c5ab29531f15f0", 8000, 1, "int", &crystal_fx, 0, 0 );
-    clientfield::register( "scriptmover", "" + #"hash_546e7612359187c3", 8000, 1, "counter", &function_a0d4ae11, 0, 0 );
+    clientfield::register( "scriptmover", "" + #"atlas_crystal_fx", 8000, 1, "int", &crystal_fx, 0, 0 );
+    clientfield::register( "scriptmover", "" + #"coil_hit_fx", 8000, 1, "counter", &coil_hit_fx, 0, 0 );
     clientfield::register( "toplayer", "" + #"mansion_mq_rumble", 8000, 1, "counter", &mansion_mq_rumble, 0, 0 );
     clientfield::register( "world", "" + #"skybox_stream", 8000, 1, "int", &function_bca55d4e, 0, 0 );
     level._effect[ #"red_ray" ] = #"hash_7046110ad3c65161";
@@ -37,7 +37,7 @@ function init_clientfields()
     level._effect[ #"hash_415a43ea0ce519d0" ] = #"hash_6a1ab09280787b72";
     level._effect[ #"hash_52032416326181f0" ] = #"hash_2cd1f480eb43a66e";
     level._effect[ #"hash_4588a89d6156133b" ] = #"hash_547b680a63dd5023";
-    level._effect[ #"hash_250f495cbd75db2a" ] = #"zombie/fx8_doorbuy_death";
+    level._effect[ #"stone_despawn_fx" ] = #"zombie/fx8_doorbuy_death";
     level._effect[ #"hash_52d102bc9f3a4964" ] = #"hash_1e6d673cdbbf3f40";
     level._effect[ #"hash_52d7eebc9f404616" ] = #"hash_1e74733cdbc57252";
 }
@@ -46,7 +46,7 @@ function init_clientfields()
 // Params 7
 // Checksum 0x8a8ad572, Offset: 0x888
 // Size: 0x74
-function function_a0d4ae11( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
+function coil_hit_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
     if ( newval )
     {
@@ -138,7 +138,7 @@ function function_dea9fad1( localclientnum, oldval, newval, bnewent, binitialsna
 {
     if ( newval )
     {
-        playfx( localclientnum, level._effect[ #"hash_250f495cbd75db2a" ], self.origin );
+        playfx( localclientnum, level._effect[ #"stone_despawn_fx" ], self.origin );
     }
 }
 
@@ -490,25 +490,25 @@ function power_beam( localclientnum, oldval, newval, bnewent, binitialsnap, fiel
 // Params 7
 // Checksum 0xb6b91e32, Offset: 0x1e50
 // Size: 0x1ec
-function function_bdecc239( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function shield_elec_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( newval )
     {
-        if ( !isdefined( self.var_22364243 ) )
+        if ( !isdefined( self.fx_shield_elec ) )
         {
-            if ( zm_utility::function_f8796df3( localclientnum ) )
+            if ( zm_utility::is_first_person( localclientnum ) )
             {
-                self.var_22364243 = playviewmodelfx( localclientnum, level._effect[ #"hash_52d102bc9f3a4964" ], "tag_weapon_left" );
+                self.fx_shield_elec = playviewmodelfx( localclientnum, level._effect[ #"hash_52d102bc9f3a4964" ], "tag_weapon_left" );
             }
             else
             {
-                self.var_22364243 = util::playfxontag( localclientnum, level._effect[ #"hash_52d7eebc9f404616" ], self, "tag_weapon_left" );
+                self.fx_shield_elec = util::playfxontag( localclientnum, level._effect[ #"hash_52d7eebc9f404616" ], self, "tag_weapon_left" );
             }
         }
         
         if ( !isdefined( self.var_1fd2907d ) )
         {
-            if ( zm_utility::function_f8796df3( localclientnum ) )
+            if ( zm_utility::is_first_person( localclientnum ) )
             {
                 self.var_1fd2907d = self playloopsound( #"hash_459db861d003fae1" );
             }
@@ -521,10 +521,10 @@ function function_bdecc239( localclientnum, oldval, newval, bnewent, binitialsna
         return;
     }
     
-    if ( isdefined( self.var_22364243 ) )
+    if ( isdefined( self.fx_shield_elec ) )
     {
-        deletefx( localclientnum, self.var_22364243 );
-        self.var_22364243 = undefined;
+        deletefx( localclientnum, self.fx_shield_elec );
+        self.fx_shield_elec = undefined;
     }
     
     if ( isdefined( self.var_1fd2907d ) )

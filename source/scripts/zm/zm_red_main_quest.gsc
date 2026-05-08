@@ -88,7 +88,7 @@ function init_clientfield()
 {
     var_7551dff2 = getminbitcountfornum( 4 );
     var_b7863a03 = getminbitcountfornum( 3 );
-    clientfield::register( "allplayers", "" + #"hash_72bd7a6af2ba1c5e", 16000, 1, "int" );
+    clientfield::register( "allplayers", "" + #"spear_fire_fx", 16000, 1, "int" );
     clientfield::register( "allplayers", "" + #"hash_4a149c9daff159cd", 16000, 1, "int" );
     clientfield::register( "toplayer", "" + #"hash_7343b1cdab1f31c5", 16000, 1, "counter" );
     clientfield::register( "scriptmover", "" + #"hash_2a17f2993036fab4", 16000, 1, "counter" );
@@ -383,7 +383,7 @@ function function_eebc7e40( s_target, str_notify )
 function function_fbc44c3e()
 {
     self endon( #"death", #"hash_313ddbccf660de40" );
-    self clientfield::set( "" + #"hash_72bd7a6af2ba1c5e", 1 );
+    self clientfield::set( "" + #"spear_fire_fx", 1 );
     self.var_b4f85096 = 1;
     
     if ( !level.var_6c94f00a )
@@ -396,7 +396,7 @@ function function_fbc44c3e()
     self thread function_630766ac();
     self waittill( #"hash_cbf6a8f73a300c8" );
     self clientfield::set( "" + #"hash_4a149c9daff159cd", 1 );
-    self clientfield::set( "" + #"hash_72bd7a6af2ba1c5e", 0 );
+    self clientfield::set( "" + #"spear_fire_fx", 0 );
     self.var_b0cde18d = 1;
 }
 
@@ -445,7 +445,7 @@ function function_1251d08c()
 {
     self endon( #"death" );
     s_result = self waittill( #"hash_459246e5bfcc3713", #"destroy_riotshield", #"weapon_fired", #"fake_death" );
-    self clientfield::set( "" + #"hash_72bd7a6af2ba1c5e", 0 );
+    self clientfield::set( "" + #"spear_fire_fx", 0 );
     
     if ( isdefined( self.var_b0cde18d ) && self.var_b0cde18d )
     {
@@ -3810,11 +3810,11 @@ function function_e5352d71()
     s_light = level.var_5299790a;
     a_mdl_runes = s_light.a_mdl_runes;
     n_runes = a_mdl_runes.size;
-    var_e41dced6 = 60 / ( n_runes + 1 );
+    n_increments = 60 / ( n_runes + 1 );
     
     foreach ( mdl_rune in a_mdl_runes )
     {
-        n_time_left = var_e41dced6;
+        n_time_left = n_increments;
         
         while ( true )
         {
@@ -7146,10 +7146,10 @@ function function_b224d9eb( s_params )
         return;
     }
     
-    var_2ed6f142 = self getweaponmuzzlepoint();
+    v_view_pos = self getweaponmuzzlepoint();
     v_forward = self getweaponforwarddir();
-    v_end = var_2ed6f142 + v_forward * 10000;
-    a_trace = bullettrace( var_2ed6f142, v_end, 0, self );
+    v_end = v_view_pos + v_forward * 10000;
+    a_trace = bullettrace( v_view_pos, v_end, 0, self );
     
     if ( isdefined( a_trace ) )
     {
@@ -8238,7 +8238,7 @@ function cleanse_cleanup( b_skipped, var_19e802fa )
         s_summon struct::delete();
         var_1f514a0c zm_utility::create_zombie_point_of_interest( undefined, 16, 10000 );
         var_1f514a0c zm_utility::create_zombie_point_of_interest_attractor_positions( undefined, undefined, 400, 1 );
-        var_1f514a0c util::delay( float( function_60d95f53() ) / 1000, undefined, &clientfield::set, "" + #"hash_1187b848bf7868c5", 1 );
+        var_1f514a0c util::delay( float( function_60d95f53() ) / 1000, undefined, &clientfield::set, "" + #"pegasus_staff_fx", 1 );
         wait 1;
         
         foreach ( e_player in getplayers() )

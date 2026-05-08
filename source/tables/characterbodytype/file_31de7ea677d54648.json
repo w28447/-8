@@ -2,7 +2,7 @@
     "name": "#hash_31de7ea677d54648",
     "displayName": "#heroes/spectre",
     "mpDialog": "#spectre",
-    "playerSoundsTable": "#hash_8b6c2bcaaa94ab4",
+    "playerSoundsTable": "#mp_playersounds",
     "playerFXTable": "#hash_471b500cc678f872",
     "image_50": "#personalize_t7_hud_mp_weapon_hero_armblade_available",
     "image_58": "#t7_mp_loadingportrait_weapon_spectre",
@@ -17,11 +17,11 @@
     "dogtagFriendly": "#p7_dogtags_friendly_spectre",
     "dogTagEnemy": "#p7_dogtags_enemy_spectre",
     "tagFxSet": "#hash_463fc8214344bab5",
-    "characterFootsteps": "#hash_7052cf78616e4c73",
-    "characterFootstepsQuiet": "#hash_783ab8b555ce9413",
+    "characterFootsteps": "#foley_light",
+    "characterFootstepsQuiet": "#defaultplayerquietfootstep",
     "characterFootstepsNPC": "#hash_4fa996883c6b348b",
-    "characterFootstepsNPCLoud": "#hash_237a21af974e9d2f",
-    "characterFootstepsNPCQuiet": "#hash_22eae0dda1cf3d31",
+    "characterFootstepsNPCLoud": "#defaultnpcloudfootstep",
+    "characterFootstepsNPCQuiet": "#defaultnpcquietfootstep",
     "bundle": {
         "arenaLobbyScenes": [
             {

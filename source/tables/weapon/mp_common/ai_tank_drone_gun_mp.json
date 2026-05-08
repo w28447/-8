@@ -46,12 +46,12 @@
     "tunables1": "#ai_tank_drone_gun_tunables_mp",
     "tracers": [
         "#qrdrone",
-        "#hash_5beeacad5e9f6fb7"
+        "#qrdrone_enemy"
     ],
     "image_e90": "#t7_hud_obit_drone_amws",
     "fireRumble": "#smg_fire",
-    "fx_bc8": "#hash_7fb42895177789b2",
-    "fx_bd0": "#hash_7fae1c95177309a0",
+    "fx_bc8": "#killstreaks/fx_agr_gun_flash_1p",
+    "fx_bd0": "#killstreaks/fx_agr_gun_flash_3p",
     "normalImpactFX": "#hash_9cafc46b8c735870",
     "exitImpactFX": "#hash_d6ef4fc6c00cc18e"
 }

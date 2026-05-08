@@ -45,7 +45,7 @@
     "tunables1": "#hero_sword_pistol_lh_lv1_tunables_mp",
     "tracers": [
         "#shotgun",
-        "#hash_75093ab7b848ed32"
+        "#shotgun_enemy"
     ],
     "viewmodel": [
         "#wpn_t8_zm_melee_dw_hand_cannon_lvl1_view"

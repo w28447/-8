@@ -63,7 +63,7 @@
     "weaponCamo": "#hash_3eec52c828eb87b1",
     "cacWeaponXCam": "#ui_cam_cac_launcher_standard",
     "cacAttachmentsXCam": "#ui_cam_cac_launcher_standard",
-    "weaponIconXCam": "#hash_7313e3dffba7aa5e",
+    "weaponIconXCam": "#ui_cam_icon_launcher_standard",
     "attachments": [
         "#hash_f459a0af8e8f912b"
     ],
@@ -114,7 +114,7 @@
         "#hash_3b3f97cf646813ac"
     ],
     "normalImpactFX": "#hash_721f0aaa706eca71",
-    "bounceImpactFX": "#hash_db8906417cda1de",
-    "normalImpactSounds": "#hash_68e0a97bbbf0b555",
+    "bounceImpactFX": "#rocket_bounce",
+    "normalImpactSounds": "#grenade_explode_material",
     "bounceImpactSounds": "#grenade_bounce"
 }

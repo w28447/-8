@@ -461,7 +461,7 @@
 #deployable_cover_multikill_5,0,150,0,50,25,FALSE,0,FALSE,7#,#,8#events_deployable_cover_multikill_5,FALSE,TRUE,TRUE,#,#ability,#,#major,#,FALSE
 #deployable_cover_multikill_6,0,200,0,50,25,FALSE,0,FALSE,7#,#,8#events_deployable_cover_multikill_6,FALSE,TRUE,TRUE,#,#ability,#,#major,#,FALSE
 #deployable_cover_shutdown,0,10,50,25,0,TRUE,1,FALSE,7#score/deployable_cover_shutdown,#,8#medal_destroyed_cover,FALSE,TRUE,FALSE,#specialist,#general,#,#core,#,FALSE
-#concertina_wire_deployed,0,25,25,25,5,FALSE,0,FALSE,7#hash_299688f6e552e138,#,8#events_concertina_wire_deployed,FALSE,TRUE,TRUE,#,#equipment,#,#core,#,FALSE
+#concertina_wire_deployed,0,25,25,25,5,FALSE,0,FALSE,7#score/concertina_wire_deploy,#,8#events_concertina_wire_deployed,FALSE,TRUE,TRUE,#,#equipment,#,#core,#,FALSE
 #concertina_wire_snared_kill,0,50,0,50,15,FALSE,8,FALSE,7#,#,8#events_concertina_wire_snared_kill,FALSE,TRUE,TRUE,#,#equipment,#,#core,#,FALSE
 #concertina_wire_snared,0,25,0,25,5,FALSE,0,FALSE,7#,#,8#events_concertina_wire_snared,FALSE,TRUE,TRUE,#,#equipment,#,#core,#,FALSE
 #concertina_wire_headshot,0,75,0,50,20,FALSE,2,FALSE,7#,#,8#events_concertina_wire_headshot,FALSE,TRUE,TRUE,#,#equipment,#,#core,#,FALSE
@@ -474,8 +474,8 @@
 #hash_4ccb940ea15047ba,0,10,50,10,0,FALSE,1,FALSE,7#hash_72b34caee6bce929,#,8#,FALSE,FALSE,FALSE,#,#general,#,#core,#,FALSE
 #automated_turret_objective_assist,0,50,0,5,10,FALSE,0,FALSE,7#,#,8#events_automated_turret_objective_assist,FALSE,TRUE,TRUE,#,#ultimate,#,#core,#,FALSE
 #automated_turret_objective_kill,0,50,0,5,10,FALSE,0,FALSE,7#,#,8#events_automated_turret_objective_kill,FALSE,TRUE,TRUE,#,#ultimate,#,#core,#,FALSE
-#automated_turret_assist,0,25,25,5,10,FALSE,0,FALSE,7#hash_6158efe0be7d5b3e,#,8#events_automated_turret_assist,FALSE,TRUE,TRUE,#,#ultimate,#,#core,#,FALSE
-#automated_turret_kill,0,25,25,5,10,FALSE,2,FALSE,7#hash_39b83ff23d252f69,#,8#events_automated_turret_kill,FALSE,TRUE,TRUE,#,#ultimate,#,#core,#,FALSE
+#automated_turret_assist,0,25,25,5,10,FALSE,0,FALSE,7#score/sentry_gun_assist,#,8#events_automated_turret_assist,FALSE,TRUE,TRUE,#,#ultimate,#,#core,#,FALSE
+#automated_turret_kill,0,25,25,5,10,FALSE,2,FALSE,7#score/sentry_gun_kill,#,8#events_automated_turret_kill,FALSE,TRUE,TRUE,#,#ultimate,#,#core,#,FALSE
 #automated_turret_fire,0,0,0,0,0,FALSE,0,FALSE,7#,#,8#events_automated_turret_fire,FALSE,TRUE,TRUE,#,#ultimate,#,#minor,#,FALSE
 #automated_turret_airburst_kill,0,50,0,5,10,FALSE,0,FALSE,7#,#,8#events_automated_turret_airburst_kill,FALSE,TRUE,TRUE,#,#ultimate,#,#core,#,FALSE
 #automated_turret_savior,0,50,0,10,10,FALSE,0,FALSE,7#,#,8#events_automated_turret_savior,FALSE,TRUE,TRUE,#,#ultimate,#,#core,#,FALSE

@@ -2,7 +2,7 @@
     "name": "#hash_daf508d451aed11",
     "displayName": "#heroes/technomancer",
     "mpDialog": "#prophet",
-    "playerSoundsTable": "#hash_8b6c2bcaaa94ab4",
+    "playerSoundsTable": "#mp_playersounds",
     "playerFXTable": "#hash_471b500cc678f872",
     "image_50": "#personalize_t7_hud_mp_weapon_hero_lightninggun_available",
     "image_58": "#t7_mp_loadingportrait_weapon_prophet",
@@ -16,11 +16,11 @@
     "dogtagFriendly": "#hash_7601ce85023e827e",
     "dogTagEnemy": "#hash_56d109b8fddb8ed9",
     "tagFxSet": "#hash_424e59e0891b13d0",
-    "characterFootsteps": "#hash_7052cf78616e4c73",
-    "characterFootstepsQuiet": "#hash_783ab8b555ce9413",
-    "characterFootstepsNPC": "#hash_3008da66d91b8ad7",
-    "characterFootstepsNPCLoud": "#hash_237a21af974e9d2f",
-    "characterFootstepsNPCQuiet": "#hash_22eae0dda1cf3d31",
+    "characterFootsteps": "#foley_light",
+    "characterFootstepsQuiet": "#defaultplayerquietfootstep",
+    "characterFootstepsNPC": "#defaultnpcfootstep",
+    "characterFootstepsNPCLoud": "#defaultnpcloudfootstep",
+    "characterFootstepsNPCQuiet": "#defaultnpcquietfootstep",
     "bundle": {
         "arenaLobbyScenes": [
             {

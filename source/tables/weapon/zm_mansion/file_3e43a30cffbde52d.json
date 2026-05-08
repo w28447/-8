@@ -68,8 +68,8 @@
     "reticleSide": "#reticle_side_small",
     "inventoryIconZm": "#t7_icon_weapon_pistol_energy",
     "fireRumble": "#defaultweapon_fire",
-    "fx_bc8": "#hash_77310dc06c46ad59",
-    "fx_bd0": "#hash_5f35cbb67bd0747c",
-    "fx_ed8": "#hash_351b1ab12522bffa",
-    "fx_f00": "#hash_19a3306432e494f3"
+    "fx_bc8": "#zombie/fx_raygun_view_zmb",
+    "fx_bd0": "#zombie/fx_raygun_world_zmb",
+    "fx_ed8": "#zombie/fx_raygun_impact_zmb",
+    "fx_f00": "#zombie/fx_raygun_geotrail_zmb"
 }

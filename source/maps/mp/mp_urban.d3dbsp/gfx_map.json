@@ -2,7 +2,7 @@
     "name": "#maps/mp/mp_urban.d3dbsp",
     "baseName": "mp_urban",
     "lutMaterial": "#lut_mp_urban",
-    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "volumeDecalRevealTexture": "#vdreveal",
     "unk550": [
         "#img_trim_lut_mp_urban",
         "#img_trim_lut_mp_urban",

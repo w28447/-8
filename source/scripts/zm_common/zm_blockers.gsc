@@ -271,7 +271,7 @@ function door_classify( parent_trig )
             case #"anim":
                 assert( isdefined( self.script_animname ), "<dev string:x38>" + self.targetname );
                 assert( isdefined( level.scr_anim[ self.script_animname ] ), "<dev string:x70>" + self.script_animname );
-                assert( isdefined( level.var_6ecb5c15 ), "<dev string:xb5>" );
+                assert( isdefined( level.blocker_anim_func ), "<dev string:xb5>" );
                 break;
         }
     }
@@ -629,7 +629,7 @@ function door_activate( time, open = 1, quick, use_blocker_clip_for_pathing )
             wait randomfloat( 0.15 );
             break;
         case #"anim":
-            self [[ level.var_6ecb5c15 ]]( self.script_animname );
+            self [[ level.blocker_anim_func ]]( self.script_animname );
             self thread door_solid_thread_anim();
             wait randomfloat( 0.15 );
             break;
@@ -1009,9 +1009,9 @@ function door_think()
                 self door_delay();
                 break;
             default:
-                if ( isdefined( level.var_c12484e1 ) )
+                if ( isdefined( level._default_door_custom_logic ) )
                 {
-                    self [[ level.var_c12484e1 ]]();
+                    self [[ level._default_door_custom_logic ]]();
                     break;
                 }
                 
@@ -1403,9 +1403,9 @@ function debris_think()
 {
     self endon( #"death" );
     
-    if ( isdefined( level.var_a1f4afa1 ) )
+    if ( isdefined( level.custom_debris_function ) )
     {
-        self [[ level.var_a1f4afa1 ]]();
+        self [[ level.custom_debris_function ]]();
     }
     
     junk = getentarray( self.target, "targetname" );
@@ -3706,7 +3706,7 @@ function quantum_bomb_open_nearest_door_result( position )
         if ( distancesquared( zombie_doors[ i ].origin, position ) < range_squared )
         {
             zombie_doors[ i ] force_open_door( self );
-            [[ level.var_e0769ff8 ]]( position );
+            [[ level.quantum_bomb_play_area_effect_func ]]( position );
             return;
         }
     }
@@ -3718,7 +3718,7 @@ function quantum_bomb_open_nearest_door_result( position )
         if ( distancesquared( zombie_airlock_doors[ i ].origin, position ) < range_squared )
         {
             zombie_airlock_doors[ i ] force_open_door( self );
-            [[ level.var_e0769ff8 ]]( position );
+            [[ level.quantum_bomb_play_area_effect_func ]]( position );
             return;
         }
     }
@@ -3730,7 +3730,7 @@ function quantum_bomb_open_nearest_door_result( position )
         if ( distancesquared( zombie_debris[ i ].origin, position ) < range_squared )
         {
             zombie_debris[ i ] force_open_door( self );
-            [[ level.var_e0769ff8 ]]( position );
+            [[ level.quantum_bomb_play_area_effect_func ]]( position );
             return;
         }
     }

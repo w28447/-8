@@ -348,7 +348,7 @@ Lobby.Join.GetRestrictedJoinFailedMessage = function ( f9_arg0, f9_arg1 )
 	if f9_arg0.probeResult.privateLobby.isValid == true then
 		f9_local0 = f9_arg0.probeResult.privateLobby.hostName
 	else
-		f9_local0 = Engine[0xF9F1239CFD921FE]( 0xDA680012C01968D )
+		f9_local0 = Engine[0xF9F1239CFD921FE]( "menu/lobby" )
 	end
 	local f9_local1 = 0x55D96CC762EABDD
 	local f9_local2 = f9_arg0.probeResult.mainMode

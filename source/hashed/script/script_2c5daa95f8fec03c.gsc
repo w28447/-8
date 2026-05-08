@@ -39,14 +39,14 @@ function initweakpoints( entity, var_97e1b97d )
         var_7c4db75f.maxhealth = var_7c4db75f.health;
         var_7c4db75f.hittags = [];
         
-        if ( isdefined( var_dd54fdb1.var_51e8b151 ) )
+        if ( isdefined( var_dd54fdb1.hittag1 ) )
         {
-            array::add( var_7c4db75f.hittags, var_dd54fdb1.var_51e8b151 );
+            array::add( var_7c4db75f.hittags, var_dd54fdb1.hittag1 );
         }
         
-        if ( isdefined( var_dd54fdb1.var_910e2f9b ) )
+        if ( isdefined( var_dd54fdb1.hittag2 ) )
         {
-            array::add( var_7c4db75f.hittags, var_dd54fdb1.var_910e2f9b );
+            array::add( var_7c4db75f.hittags, var_dd54fdb1.hittag2 );
         }
         
         array::add( entity.var_5ace757d, var_7c4db75f );

@@ -3,7 +3,7 @@
     "baseWeapon": "#snowball",
     "displayname": "#weapon/snowball",
     "weapon70": "#snowball",
-    "streamkey": "#hash_1cd87cbf76fc03e1",
+    "streamkey": "#snowball_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",

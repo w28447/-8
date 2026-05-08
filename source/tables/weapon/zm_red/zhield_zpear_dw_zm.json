@@ -1,7 +1,7 @@
 {
     "name": "#zhield_zpear_dw_zm",
     "baseWeapon": "#zhield_zpear_dw",
-    "displayname": "#hash_7a95bcef27a91bf4",
+    "displayname": "#zm_red/shield",
     "altWeapon": "#zhield_zpear_turret_zm",
     "weapon70": "#zhield_zpear_dw",
     "dualwieldWeaponName": "#zhield_zpear_lh_zm",
@@ -72,7 +72,7 @@
     "sound800": "#hash_21cba6ae89a3493c",
     "sound810": "#hash_21cba6ae89a3493c",
     "tunables1": "#zhield_zpear_dw_tunables_zm",
-    "sharedWeaponSounds": "#hash_7ea64dbe484abd20",
+    "sharedWeaponSounds": "#zhield_towers",
     "tracers": [
         "#hash_a6d5c1a903fba6f4",
         "#hash_e0e8c9de7086f843"

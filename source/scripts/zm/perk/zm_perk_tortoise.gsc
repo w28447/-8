@@ -43,7 +43,7 @@ function enable_tortoise_perk_for_level()
 {
     if ( function_8b1a219a() )
     {
-        zm_perks::register_perk_basic_info( #"specialty_shield", #"perk_tortoise", 2500, #"hash_61f2a9db3bdc745a", getweapon( "zombie_perk_bottle_tortoise" ), getweapon( "zombie_perk_totem_tortoise" ), #"zmperksvictorious" );
+        zm_perks::register_perk_basic_info( #"specialty_shield", #"perk_tortoise", 2500, #"zombie/perk_tortoise_keyboard", getweapon( "zombie_perk_bottle_tortoise" ), getweapon( "zombie_perk_totem_tortoise" ), #"zmperksvictorious" );
     }
     else
     {
@@ -137,7 +137,7 @@ function function_b754923d( b_pause, str_perk, str_result, n_slot )
 // Params 1
 // Checksum 0x5de31f3f, Offset: 0x6b8
 // Size: 0x330
-function function_81058b09( var_d92ac80e )
+function function_81058b09( w_riotshield )
 {
     a_ai = self getenemiesinradius( self.origin, 320 );
     a_ai = arraysortclosest( a_ai, self.origin );
@@ -167,7 +167,7 @@ function function_81058b09( var_d92ac80e )
         }
         
         ai.var_cbfc5f6e = 1;
-        ai dodamage( 1200, v_explosion_origin, self, self, "none", "MOD_EXPLOSIVE", 0, var_d92ac80e );
+        ai dodamage( 1200, v_explosion_origin, self, self, "none", "MOD_EXPLOSIVE", 0, w_riotshield );
         
         if ( isalive( ai ) )
         {

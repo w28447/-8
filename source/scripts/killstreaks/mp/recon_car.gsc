@@ -43,7 +43,7 @@ function init_killstreak()
     killstreak_vehicle::init_killstreak( bundle );
     killstreaks::register_alt_weapon( "recon_car", getweapon( #"hash_38ffd09564931482" ) );
     callback::on_connect( &onplayerconnect );
-    vehicle::add_main_callback( "vehicle_t8_drone_recon", &function_d1661ada );
+    vehicle::add_main_callback( "vehicle_t8_drone_recon", &main_vehicle_callback );
 }
 
 // Namespace recon_car/recon_car
@@ -59,7 +59,7 @@ function onplayerconnect()
 // Params 0
 // Checksum 0x77d0f50b, Offset: 0x2f8
 // Size: 0x74
-function function_d1661ada()
+function main_vehicle_callback()
 {
     self killstreak_vehicle::init_vehicle();
     self util::make_sentient();

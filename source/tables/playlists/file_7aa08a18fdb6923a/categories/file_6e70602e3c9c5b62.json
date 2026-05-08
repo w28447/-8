@@ -86,7 +86,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7327ca257aa61e93",
+                    "name": "#g_hitdet_logging",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -95,7 +95,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7b7e1cadbd098787",
+                    "name": "#cg_hitdet_client_marker",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,

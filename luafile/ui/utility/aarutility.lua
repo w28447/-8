@@ -719,7 +719,7 @@ DataSources.AARTabs = ListHelper_SetupDataSource( "AARTabs", function ( f38_arg0
 			if CoD.AARUtility.PlayerEarnedRewards( f38_arg0 ) then
 				table.insert( f38_local0, {
 					models = {
-						tabName = Engine[0xF9F1239CFD921FE]( 0x897061E92EE5BFC ),
+						tabName = Engine[0xF9F1239CFD921FE]( "aar/rewards" ),
 						action = CoD.AARUtility.SwitchAARTabs,
 						param = CoD.AARUtility.AARTabs.AAR_REWARDS
 					},
@@ -786,7 +786,7 @@ DataSources.AARTabs = ListHelper_SetupDataSource( "AARTabs", function ( f38_arg0
 			if Engine.SessionMode_IsPublicOnlineGame() and CoD.AARUtility.PlayerEarnedRewards( f38_arg0 ) then
 				table.insert( f38_local0, {
 					models = {
-						tabName = Engine[0xF9F1239CFD921FE]( 0x897061E92EE5BFC ),
+						tabName = Engine[0xF9F1239CFD921FE]( "aar/rewards" ),
 						action = CoD.AARUtility.SwitchAARTabs,
 						param = CoD.AARUtility.AARTabs.AAR_REWARDS
 					},
@@ -842,7 +842,7 @@ DataSources.AARTabs = ListHelper_SetupDataSource( "AARTabs", function ( f38_arg0
 		if CoD.isOnlineGame() and CoD.AARUtility.PlayerEarnedRewards( f38_arg0 ) then
 			table.insert( f38_local0, {
 				models = {
-					tabName = Engine[0xF9F1239CFD921FE]( 0x897061E92EE5BFC ),
+					tabName = Engine[0xF9F1239CFD921FE]( "aar/rewards" ),
 					action = CoD.AARUtility.SwitchAARTabs,
 					param = CoD.AARUtility.AARTabs.AAR_REWARDS
 				},
@@ -965,13 +965,13 @@ DataSources.AARStatTypeTabHeader = ListHelper_SetupDataSource( "AARStatTypeTabHe
 	if IsWarzone() then
 		table.insert( f39_local0, {
 			models = {
-				title = 0xFF67B9A8F997AB9,
+				title = "aar/kills",
 				type = CoD.AARUtility.AARStatType.KILLS
 			}
 		} )
 		table.insert( f39_local0, {
 			models = {
-				title = 0x61100A6B91B62C1,
+				title = "aar/damage",
 				type = CoD.AARUtility.AARStatType.DAMAGE
 			}
 		} )
@@ -992,13 +992,13 @@ DataSources.AARStatTypeTabHeader = ListHelper_SetupDataSource( "AARStatTypeTabHe
 		else
 			table.insert( f39_local0, {
 				models = {
-					title = 0x12D135A50F00BC3,
+					title = "aar/score_per_minute",
 					type = CoD.AARUtility.AARStatType.SCORE_PER_MINUTE
 				}
 			} )
 			table.insert( f39_local0, {
 				models = {
-					title = 0x7B9FE59853C1B82,
+					title = "aar/score",
 					type = CoD.AARUtility.AARStatType.SCORE
 				}
 			} )
@@ -1020,25 +1020,25 @@ DataSources.AARStatTypeTabHeader = ListHelper_SetupDataSource( "AARStatTypeTabHe
 		end
 		table.insert( f39_local0, {
 			models = {
-				title = 0x61100A6B91B62C1,
+				title = "aar/damage",
 				type = CoD.AARUtility.AARStatType.DAMAGE
 			}
 		} )
 		table.insert( f39_local0, {
 			models = {
-				title = 0xFC92B031C85115A,
+				title = "aar/ekia_ratio",
 				type = CoD.AARUtility.AARStatType.EKIA_RATIO
 			}
 		} )
 		table.insert( f39_local0, {
 			models = {
-				title = 0x96470E1E65763DA,
+				title = "aar/ekia",
 				type = CoD.AARUtility.AARStatType.EKIA
 			}
 		} )
 		table.insert( f39_local0, {
 			models = {
-				title = 0x9F34F3A8BD173F7,
+				title = "aar/wl_ratio",
 				type = CoD.AARUtility.AARStatType.WL_RATIO
 			}
 		} )

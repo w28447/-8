@@ -175,7 +175,7 @@ string,#mpui/camo_darkmatter
 string,#hash_3ca968dee9e5dc02
 string,#hash_3cbdafac7f4a7bd2
 string,#hash_3d26eb8dafae98e9
-string,#hash_3d7abb3373fab887
+string,#zmui/suppressor_desc
 string,#mpui/tacknife
 string,#hash_3de8e053a2e6c69b
 string,#hash_3dfd2cf9c5589207
@@ -292,7 +292,7 @@ string,#hash_6e2fd7423cbe42b0
 string,#hash_6e86b49d6d5196af
 string,#mpui/rangefinder
 string,#mpui/stabilizer
-string,#hash_7085044e7b80d5a3
+string,#mpui/reticle_default
 string,#hash_709fb6b7fdde6aa8
 string,#hash_714cce81de873f11
 string,#mpui/acog
@@ -387,7 +387,7 @@ soundalias,#hash_18c932aba4855390
 soundalias,#uin_chyron_loop
 soundalias,#hash_1944131588751b20
 soundalias,#hash_1964c0c13ca2c496
-soundalias,#hash_198a0a42a0d2717e
+soundalias,#uin_accolade
 soundalias,#hash_1a1587ca005400a9
 soundalias,#hash_1acf35480bdff5c7
 soundalias,#hash_1af87c153d33daed
@@ -404,7 +404,7 @@ soundalias,#hash_208e293410d2c937
 soundalias,#tst_surround_right_1
 soundalias,#hash_20b03d00cf71cd6f
 soundalias,#hash_20c3c73de091c6bb
-soundalias,#hash_218354496d493ca5
+soundalias,#uin_score_event
 soundalias,#hash_227d4f8f3b509636
 soundalias,#hash_22e57bec7daaa03d
 soundalias,#hash_231247a2406708c7
@@ -437,7 +437,7 @@ soundalias,#hash_30f0779a0c14e1be
 soundalias,#hash_32188c6c1a4e7025
 soundalias,#hash_32412743fde2866e
 soundalias,#hash_3338a7c6f223d4d4
-soundalias,#hash_339c0a10af56146d
+soundalias,#uin_objective_completed
 soundalias,#hash_33ea182027b3c081
 soundalias,#hash_343a15621a1f7d47
 soundalias,#hash_345bc8825d6dac11
@@ -504,7 +504,7 @@ soundalias,#hash_523cdcdb8c03f872
 soundalias,#uin_out_of_bounds_loop
 soundalias,#hash_55d1647a138b0059
 soundalias,#hash_564ce6ccbcc7ce32
-soundalias,#hash_5665f71295e9173a
+soundalias,#tst_white
 soundalias,#hash_5666a1b24162b943
 soundalias,#hash_56e6c85242f9f71b
 soundalias,#hash_5811a6373691e94e

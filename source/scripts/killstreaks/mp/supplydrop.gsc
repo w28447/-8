@@ -2594,7 +2594,7 @@ function useholdthinkloop( player )
     while ( self continueholdthinkloop( player ) )
     {
         timedout += 0.05;
-        self.curprogress += level.var_9fee970c * self.userate;
+        self.curprogress += level.framemsec * self.userate;
         self.userate = 1;
         
         if ( self.curprogress >= self.usetime )

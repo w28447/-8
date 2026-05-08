@@ -9,8 +9,8 @@
     "scoreType": "#human_lmg",
     "movementType": "#human",
     "spawnInfluencers": [
-        "#hash_1d35c27ce5c628ec",
-        "#hash_74915792bd5cfefd"
+        "#human_friendly",
+        "#human_enemy"
     ],
     "compassIcon": "#t7_hud_waypoints_compassping_friendly_mp",
     "typeSuffix": "_suppressor",

@@ -215,8 +215,8 @@ function registerbehaviorscriptfunctions()
     behaviorstatemachine::registerbsmscriptapiinternal( #"gladiatorpickaxe", &gladiatorpickaxe );
     assert( isscriptfunctionptr( &function_7891bd9b ) );
     behaviortreenetworkutility::registerbehaviortreescriptapi( #"hash_2ec3db12905e5ef2", &function_7891bd9b );
-    assert( isscriptfunctionptr( &function_490a290d ) );
-    behaviortreenetworkutility::registerbehaviortreescriptapi( #"hash_324b5266aa732357", &function_490a290d );
+    assert( isscriptfunctionptr( &gladiatormeleeend ) );
+    behaviortreenetworkutility::registerbehaviortreescriptapi( #"gladiatormeleeend", &gladiatormeleeend );
     assert( isscriptfunctionptr( &function_6719445a ) );
     behaviortreenetworkutility::registerbehaviortreescriptapi( #"hash_7a99cf7ed75b85d4", &function_6719445a );
     assert( isscriptfunctionptr( &function_fced00e1 ) );
@@ -834,7 +834,7 @@ function private function_7891bd9b( entity )
 // Params 1, eflags: 0x4
 // Checksum 0x132b15c7, Offset: 0x2e78
 // Size: 0x2c
-function private function_490a290d( entity )
+function private gladiatormeleeend( entity )
 {
     entity pathmode( "move allowed" );
 }

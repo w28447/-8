@@ -839,9 +839,9 @@ function private function_96ce9058( localclientnum, var_6c2b2289, inventoryitem,
             
             for ( i = 0; i < 5 ; i++ )
             {
-                if ( isdefined( item.itementry.objectives[ i ] ) && isdefined( item.itementry.objectives[ i ].var_7e835304 ) )
+                if ( isdefined( item.itementry.objectives[ i ] ) && isdefined( item.itementry.objectives[ i ].objectivestatname ) )
                 {
-                    value = stats::get_stat_global( localclientnum, item.itementry.objectives[ i ].var_7e835304 );
+                    value = stats::get_stat_global( localclientnum, item.itementry.objectives[ i ].objectivestatname );
                     
                     if ( isdefined( value ) && value != var_1ce96a13[ i ] )
                     {
@@ -1899,9 +1899,9 @@ function private function_39b663b7( localclientnum, inventoryitem, item )
                 
                 var_2571317b = 0;
                 
-                if ( isdefined( item.itementry.objectives[ i ].var_7e835304 ) )
+                if ( isdefined( item.itementry.objectives[ i ].objectivestatname ) )
                 {
-                    var_2571317b = setuimodelvalue( createuimodel( objectivemodel, "unlockProgress" ), stats::get_stat_global( localclientnum, item.itementry.objectives[ i ].var_7e835304 ) );
+                    var_2571317b = setuimodelvalue( createuimodel( objectivemodel, "unlockProgress" ), stats::get_stat_global( localclientnum, item.itementry.objectives[ i ].objectivestatname ) );
                 }
                 else
                 {
@@ -1921,7 +1921,7 @@ function private function_39b663b7( localclientnum, inventoryitem, item )
         }
         
         setuimodelvalue( createuimodel( inventoryitem.itemuimodel, "unlockableItemRef" ), item.itementry.unlockableitemref );
-        setuimodelvalue( createuimodel( inventoryitem.itemuimodel, "quote" ), item.itementry.var_e8b98a8a );
+        setuimodelvalue( createuimodel( inventoryitem.itemuimodel, "quote" ), item.itementry.unlockablequote );
         setuimodelvalue( createuimodel( inventoryitem.itemuimodel, "rewardName" ), item.itementry.rewardname );
     }
 }
@@ -3553,7 +3553,7 @@ function function_31868137( localclientnum, item )
                 playsound( localclientnum, #"fly_pickup_generic", item.origin );
                 break;
             case #"armor":
-                playsound( localclientnum, #"hash_2d8e1c5a5387840f", item.origin );
+                playsound( localclientnum, #"fly_pickup_armor", item.origin );
                 break;
             case #"backpack":
                 playsound( localclientnum, #"hash_69949bb7db9ef21e", item.origin );

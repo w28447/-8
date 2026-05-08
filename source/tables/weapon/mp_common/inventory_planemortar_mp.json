@@ -68,7 +68,7 @@
     "rumble_de8": "#grenade_rumble",
     "fx_ed8": "#hash_1ae397a2f822f91f",
     "fx_f08": "#hash_3b08b27116cde783",
-    "exitImpactFX": "#hash_69050d7b3430366e",
+    "exitImpactFX": "#grenade_exit",
     "bounceImpactFX": "#grenade_bounce",
     "dudImpactFX": "#grenade_dud"
 }

@@ -145,8 +145,8 @@ function function_bff5c062( smartcover, attackingplayer )
     smartcover.var_40bfd9cf = smartcover influencers::create_entity_enemy_influencer( "turret_close", attackingplayer.team );
     smartcover thread function_37f1dcd1();
     smartcover thread function_d82c03d4( attackingplayer );
-    array::add( attackingplayer.smartcover.var_19e1ea69, smartcover );
-    var_26c9fcc2 = function_57f553e9( attackingplayer.smartcover.var_19e1ea69, level.smartcoversettings.bundle.var_a0b69d8b );
+    array::add( attackingplayer.smartcover.opencoverlist, smartcover );
+    var_26c9fcc2 = function_57f553e9( attackingplayer.smartcover.opencoverlist, level.smartcoversettings.bundle.maxopencover );
     
     if ( isdefined( var_26c9fcc2 ) )
     {
@@ -220,8 +220,8 @@ function setupdvars()
     setdvar( #"hash_4f4ce3cb18b004bc", 8 );
     setdvar( #"hash_417afa70d515fba5", isdefined( level.smartcoversettings.bundle.var_76d79155 ) ? level.smartcoversettings.bundle.var_76d79155 : 0 );
     setdvar( #"hash_1d8eb304f5cf8033", 1 );
-    setdvar( #"hash_71f8bd4cd30de4b3", isdefined( level.smartcoversettings.bundle.var_e35fc674 ) ? level.smartcoversettings.bundle.var_e35fc674 : 0 );
-    setdvar( #"hash_39a564d4801c4b2e", isdefined( level.smartcoversettings.bundle.var_1f0ae388 ) ? level.smartcoversettings.bundle.var_1f0ae388 : 0 );
+    setdvar( #"hash_71f8bd4cd30de4b3", isdefined( level.smartcoversettings.bundle.zthreshold ) ? level.smartcoversettings.bundle.zthreshold : 0 );
+    setdvar( #"hash_39a564d4801c4b2e", isdefined( level.smartcoversettings.bundle.maxtracedistance ) ? level.smartcoversettings.bundle.maxtracedistance : 0 );
 }
 
 // Namespace smart_cover/gadget_smart_cover
@@ -378,7 +378,7 @@ function function_7ecb04ff( player )
             continue;
         }
         
-        if ( player.smartcover.var_19e1ea69.size == 0 )
+        if ( player.smartcover.opencoverlist.size == 0 )
         {
             continue;
         }
@@ -422,7 +422,7 @@ function on_player_spawned()
     {
         self.smartcover = spawnstruct();
         self.smartcover.var_58e8b64d = [];
-        self.smartcover.var_19e1ea69 = [];
+        self.smartcover.opencoverlist = [];
         self.smartcover.var_d5258d02 = [];
     }
     
@@ -569,8 +569,8 @@ function function_3b96637( watcher, owner )
     var_bf2bf1a.angles = player.angles;
     var_bf2bf1a.var_8120c266 = [];
     var_bf2bf1a.var_9a3bd50f = 0;
-    array::add( player.smartcover.var_19e1ea69, var_bf2bf1a );
-    var_26c9fcc2 = function_57f553e9( player.smartcover.var_19e1ea69, level.smartcoversettings.bundle.var_a0b69d8b );
+    array::add( player.smartcover.opencoverlist, var_bf2bf1a );
+    var_26c9fcc2 = function_57f553e9( player.smartcover.opencoverlist, level.smartcoversettings.bundle.maxopencover );
     
     if ( isdefined( var_26c9fcc2 ) )
     {
@@ -614,7 +614,7 @@ function function_3b96637( watcher, owner )
 function function_670cd4a3()
 {
     self endon( #"death" );
-    self.var_19fde5b7 = [];
+    self.stuckitems = [];
     
     while ( true )
     {
@@ -622,7 +622,7 @@ function function_670cd4a3()
         
         if ( isdefined( waitresult.projectile ) )
         {
-            array::add( self.var_19fde5b7, waitresult.projectile );
+            array::add( self.stuckitems, waitresult.projectile );
         }
     }
 }
@@ -699,7 +699,7 @@ function function_375cfa56( smartcover, owner )
 {
     if ( isdefined( owner ) )
     {
-        arrayremovevalue( owner.smartcover.var_19e1ea69, smartcover );
+        arrayremovevalue( owner.smartcover.opencoverlist, smartcover );
     }
 }
 
@@ -756,10 +756,10 @@ function function_2a494565( isselfdestruct )
     if ( isdefined( smartcover.owner ) )
     {
         arrayremovevalue( smartcover.owner.smartcover.var_58e8b64d, smartcover );
-        arrayremovevalue( smartcover.owner.smartcover.var_19e1ea69, smartcover );
+        arrayremovevalue( smartcover.owner.smartcover.opencoverlist, smartcover );
     }
     
-    if ( isdefined( level.smartcoversettings.bundle.var_f4e0e7d7 ) && level.smartcoversettings.bundle.var_f4e0e7d7 )
+    if ( isdefined( level.smartcoversettings.bundle.enablemicrowave ) && level.smartcoversettings.bundle.enablemicrowave )
     {
         smartcover stopmicrowave();
         smartcover notify( #"microwave_turret_shutdown" );
@@ -827,7 +827,7 @@ function onkilled( var_c946c04c )
 // Params 1
 // Checksum 0xe6bd2b3c, Offset: 0x2f58
 // Size: 0x5e
-function function_884d0700( var_796be15d )
+function getdestructible( var_796be15d )
 {
     return self.team == #"allies" ? level.smartcoversettings.bundle.var_ee0c73a5 : level.smartcoversettings.bundle.var_d3ea02d6;
 }
@@ -838,7 +838,7 @@ function function_884d0700( var_796be15d )
 // Size: 0x5e
 function getmodel( var_796be15d )
 {
-    return self.team == #"allies" ? level.smartcoversettings.bundle.var_397ed90c : level.smartcoversettings.bundle.var_b256e3da;
+    return self.team == #"allies" ? level.smartcoversettings.bundle.worldmodel_allies : level.smartcoversettings.bundle.worldmodel_axis;
 }
 
 // Namespace smart_cover/gadget_smart_cover
@@ -870,9 +870,9 @@ function function_d2368084( einflictor, eattacker, idamage, idflags, smeansofdea
     {
         idamage = startinghealth / bundle.kshero_annihilator;
     }
-    else if ( isdefined( bundle.var_2e48926e ) && weapon == getweapon( #"hero_flamethrower" ) )
+    else if ( isdefined( bundle.kshero_flamethrower ) && weapon == getweapon( #"hero_flamethrower" ) )
     {
-        idamage = startinghealth / bundle.var_2e48926e;
+        idamage = startinghealth / bundle.kshero_flamethrower;
     }
     else if ( isdefined( bundle.kshero_gravityspikes ) && weapon == getweapon( #"eq_gravityslam" ) )
     {
@@ -944,13 +944,13 @@ function createsmartcover( watcher, var_5ebbec19, origin, angles, var_796be15d )
     
     if ( var_c6f47ca9 == 1 )
     {
-        var_89b6fd44 setdestructibledef( player function_884d0700( var_796be15d ) );
+        var_89b6fd44 setdestructibledef( player getdestructible( var_796be15d ) );
     }
     
     var_89b6fd44.angles = angles;
     var_89b6fd44.owner = player;
     var_89b6fd44.takedamage = 1;
-    var_89b6fd44.startinghealth = isdefined( level.smartcoversettings.bundle.var_4d358e2d ) ? level.smartcoversettings.bundle.var_4d358e2d : var_796be15d ? isdefined( level.smartcoversettings.bundle.var_d9317c6b ) ? level.smartcoversettings.bundle.var_d9317c6b : 100 : 100;
+    var_89b6fd44.startinghealth = isdefined( level.smartcoversettings.bundle.var_4d358e2d ) ? level.smartcoversettings.bundle.var_4d358e2d : var_796be15d ? isdefined( level.smartcoversettings.bundle.opencoverhealth ) ? level.smartcoversettings.bundle.opencoverhealth : 100 : 100;
     var_89b6fd44.health = var_89b6fd44.startinghealth;
     var_89b6fd44 solid();
     
@@ -996,12 +996,12 @@ function createsmartcover( watcher, var_5ebbec19, origin, angles, var_796be15d )
     player deployable::function_6ec9ee30( var_89b6fd44, level.smartcoversettings.smartcoverweapon );
     var_89b6fd44.victimsoundmod = "vehicle";
     
-    if ( isdefined( level.smartcoversettings.bundle.var_f4e0e7d7 ) && level.smartcoversettings.bundle.var_f4e0e7d7 )
+    if ( isdefined( level.smartcoversettings.bundle.enablemicrowave ) && level.smartcoversettings.bundle.enablemicrowave )
     {
         var_89b6fd44 thread startmicrowave();
     }
     
-    killcament = spawn( "script_model", var_89b6fd44.origin + ( isdefined( level.smartcoversettings.bundle.var_eb9150a5 ) ? level.smartcoversettings.bundle.var_eb9150a5 : 0, isdefined( level.smartcoversettings.bundle.var_26a346c8 ) ? level.smartcoversettings.bundle.var_26a346c8 : 0, isdefined( level.smartcoversettings.bundle.var_d0fb9b7a ) ? level.smartcoversettings.bundle.var_d0fb9b7a : 0 ) );
+    killcament = spawn( "script_model", var_89b6fd44.origin + ( isdefined( level.smartcoversettings.bundle.killcamoffsetx ) ? level.smartcoversettings.bundle.killcamoffsetx : 0, isdefined( level.smartcoversettings.bundle.killcamoffsety ) ? level.smartcoversettings.bundle.killcamoffsety : 0, isdefined( level.smartcoversettings.bundle.killcamoffsetz ) ? level.smartcoversettings.bundle.killcamoffsetz : 0 ) );
     killcament.targetname = "smart_cover_killcament";
     var_89b6fd44.killcament = killcament;
     watcher.objectarray[ watcher.objectarray.size ] = killcament;
@@ -1274,7 +1274,7 @@ function startmicrowave()
     }
     
     self clientfield::set( "start_smartcover_microwave", 1 );
-    self.trigger = spawn( "trigger_radius", self.origin + ( 0, 0, ( isdefined( level.smartcoversettings.bundle.var_b345c668 ) ? level.smartcoversettings.bundle.var_b345c668 : 0 ) * -1 ), 4096 | 16384 | level.aitriggerspawnflags | level.vehicletriggerspawnflags, isdefined( level.smartcoversettings.bundle.var_b345c668 ) ? level.smartcoversettings.bundle.var_b345c668 : 0, ( isdefined( level.smartcoversettings.bundle.var_b345c668 ) ? level.smartcoversettings.bundle.var_b345c668 : 0 ) * 2 );
+    self.trigger = spawn( "trigger_radius", self.origin + ( 0, 0, ( isdefined( level.smartcoversettings.bundle.microwaveradius ) ? level.smartcoversettings.bundle.microwaveradius : 0 ) * -1 ), 4096 | 16384 | level.aitriggerspawnflags | level.vehicletriggerspawnflags, isdefined( level.smartcoversettings.bundle.microwaveradius ) ? level.smartcoversettings.bundle.microwaveradius : 0, ( isdefined( level.smartcoversettings.bundle.microwaveradius ) ? level.smartcoversettings.bundle.microwaveradius : 0 ) * 2 );
     self thread turretthink();
     
     /#
@@ -1343,10 +1343,10 @@ function turretdebug()
     origin = turret gettagorigin( "tag_flash" );
     cone_apex = origin;
     forward = anglestoforward( angles );
-    dome_apex = cone_apex + vectorscale( forward, isdefined( level.smartcoversettings.bundle.var_b345c668 ) ? level.smartcoversettings.bundle.var_b345c668 : 0 );
+    dome_apex = cone_apex + vectorscale( forward, isdefined( level.smartcoversettings.bundle.microwaveradius ) ? level.smartcoversettings.bundle.microwaveradius : 0 );
     
     /#
-        util::debug_spherical_cone( cone_apex, dome_apex, isdefined( level.smartcoversettings.bundle.var_cbd5f27c ) ? level.smartcoversettings.bundle.var_cbd5f27c : 0, 16, ( 0.95, 0.1, 0.1 ), 0.3, 1, 3 );
+        util::debug_spherical_cone( cone_apex, dome_apex, isdefined( level.smartcoversettings.bundle.microwaveconeangle ) ? level.smartcoversettings.bundle.microwaveconeangle : 0, 16, ( 0.95, 0.1, 0.1 ), 0.3, 1, 3 );
     #/
 }
 
@@ -1485,7 +1485,7 @@ function microwaveentity( entity )
         
         if ( level.hardcoremode )
         {
-            damage *= isdefined( level.smartcoversettings.bundle.var_78c1e37b ) ? level.smartcoversettings.bundle.var_78c1e37b : 0.25;
+            damage *= isdefined( level.smartcoversettings.bundle.hardcoredamagescalar ) ? level.smartcoversettings.bundle.hardcoredamagescalar : 0.25;
         }
         
         if ( !isai( entity ) && entity util::mayapplyscreeneffect() )
@@ -1609,7 +1609,7 @@ function microwaveturretaffectsentity( entity )
         return false;
     }
     
-    if ( distancesquared( entity.origin, turret.origin ) > ( isdefined( level.smartcoversettings.bundle.var_b345c668 ) ? level.smartcoversettings.bundle.var_b345c668 : 0 ) * ( isdefined( level.smartcoversettings.bundle.var_b345c668 ) ? level.smartcoversettings.bundle.var_b345c668 : 0 ) )
+    if ( distancesquared( entity.origin, turret.origin ) > ( isdefined( level.smartcoversettings.bundle.microwaveradius ) ? level.smartcoversettings.bundle.microwaveradius : 0 ) * ( isdefined( level.smartcoversettings.bundle.microwaveradius ) ? level.smartcoversettings.bundle.microwaveradius : 0 ) )
     {
         return false;
     }
@@ -1630,7 +1630,7 @@ function microwaveturretaffectsentity( entity )
     entdirection = vectornormalize( shoot_at_pos - origin );
     dot = vectordot( entdirection, forward );
     
-    if ( dot < cos( isdefined( level.smartcoversettings.bundle.var_cbd5f27c ) ? level.smartcoversettings.bundle.var_cbd5f27c : 0 ) )
+    if ( dot < cos( isdefined( level.smartcoversettings.bundle.microwaveconeangle ) ? level.smartcoversettings.bundle.microwaveconeangle : 0 ) )
     {
         return false;
     }

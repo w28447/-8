@@ -7,7 +7,7 @@
         {
             "stages": [
                 {
-                    "physPreset": "#hash_365d9cdb35f2959c",
+                    "physPreset": "#metal_heavy",
                     "unk28": "cage_d0_jnt"
                 },
                 {
@@ -41,7 +41,7 @@
                     "unk28": "fan_d0_jnt"
                 },
                 {
-                    "physPreset": "#hash_365d9cdb35f2959c",
+                    "physPreset": "#metal_heavy",
                     "unk28": "fan_d1_jnt"
                 },
                 {

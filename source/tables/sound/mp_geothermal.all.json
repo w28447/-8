@@ -705,13 +705,13 @@
         {
             "value": 120,
             "next": 65535,
-            "name": "#hash_633b9532cf0da169",
+            "name": "#amb_flies",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_633b9532cf0da169",
+                    "name": "#amb_flies",
                     "assetId": "#amb/animals/insects/flies/flies_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -750,7 +750,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_633b9532cf0da169",
+                    "name": "#amb_flies",
                     "assetId": "#amb/animals/insects/flies/flies_02.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -2570,13 +2570,13 @@
         {
             "value": 30,
             "next": 14,
-            "name": "#hash_179f3eb184c245d2",
+            "name": "#amb_ocean",
             "sequence": 0,
             "cullDistance": 5500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_179f3eb184c245d2",
+                    "name": "#amb_ocean",
                     "assetId": "#amb/environment/ocean/calm/amb_ocean_calm.sl100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -3891,13 +3891,13 @@
         {
             "value": 88,
             "next": 46,
-            "name": "#hash_63bcbf23c737f161",
+            "name": "#amb_water_lap",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_63bcbf23c737f161",
+                    "name": "#amb_water_lap",
                     "assetId": "#amb/environment/water/lapping/lapping_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -3936,7 +3936,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_63bcbf23c737f161",
+                    "name": "#amb_water_lap",
                     "assetId": "#amb/environment/water/lapping/lapping_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -3975,7 +3975,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_63bcbf23c737f161",
+                    "name": "#amb_water_lap",
                     "assetId": "#amb/environment/water/lapping/lapping_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -4014,7 +4014,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_63bcbf23c737f161",
+                    "name": "#amb_water_lap",
                     "assetId": "#amb/environment/water/lapping/lapping_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -4053,7 +4053,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_63bcbf23c737f161",
+                    "name": "#amb_water_lap",
                     "assetId": "#amb/environment/water/lapping/lapping_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -5272,13 +5272,13 @@
         {
             "value": 12,
             "next": 48,
-            "name": "#hash_1ff8bec27dfc1b70",
+            "name": "#dst_fern",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1ff8bec27dfc1b70",
+                    "name": "#dst_fern",
                     "assetId": "#dst/prop/fern/fern_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -6208,13 +6208,13 @@
         {
             "value": 144,
             "next": 65535,
-            "name": "#hash_501eff91f639c23e",
+            "name": "#dst_glass_pane",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_501eff91f639c23e",
+                    "name": "#dst_glass_pane",
                     "assetId": "#dst/generic/glass/med/glass_break_medium_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -6743,13 +6743,13 @@
         {
             "value": 41,
             "next": 70,
-            "name": "#hash_6a7bbff93ccc7ab7",
+            "name": "#dst_luggage",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6a7bbff93ccc7ab7",
+                    "name": "#dst_luggage",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
                     "assetFileNameRelease": "#mp_geothermal.all",
@@ -9572,13 +9572,13 @@
         {
             "value": 163,
             "next": 65535,
-            "name": "#hash_38c96854fb0017e",
+            "name": "#dst_typewriter",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_38c96854fb0017e",
+                    "name": "#dst_typewriter",
                     "assetId": "#dst/prop/typewriter/typewriter_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -11120,13 +11120,13 @@
         {
             "value": 106,
             "next": 109,
-            "name": "#hash_48bc31e222aa7c3e",
+            "name": "#exp_barrel_fire",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_48bc31e222aa7c3e",
+                    "name": "#exp_barrel_fire",
                     "assetId": "#dst/generic/fire/barrel/barrel_fire_02.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -17231,11 +17231,11 @@
             "loop": "#hash_44463359dd025b23",
             "duckId": "#default",
             "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_8f631787d4aaf77",
+            "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_8f631787d4aaf77",
+            "globalContextValue": "#outdoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,
@@ -17341,11 +17341,11 @@
             "loop": "#hash_6a51f780d99cfe8e",
             "duckId": "#default",
             "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_8f631787d4aaf77",
+            "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_8f631787d4aaf77",
+            "globalContextValue": "#outdoor",
             "defaultRoom": true,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,

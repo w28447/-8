@@ -99,9 +99,9 @@
     "fx_c98": "#hash_6e32286d3d179753",
     "fx_f00": "#hash_74e27053381609ee",
     "underwaterExplosionSurfaceFX": [
-        "#hash_5f190015ac9ded95",
-        "#hash_1206d75150c2464e",
-        "#hash_260fafe2e7ced71c"
+        "#explosions/fx_exp_grenade_water",
+        "#explosions/fx_exp_grenade_water_shllw",
+        "#explosions/fx_exp_grenade_water_surface_deep"
     ],
     "normalImpactFX": "#hash_f32fd0b76ec30328",
     "exitImpactFX": "#hash_96e6f5bf4a293426",

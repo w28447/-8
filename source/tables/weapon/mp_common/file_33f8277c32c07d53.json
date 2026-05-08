@@ -1,6 +1,6 @@
 {
     "name": "#hash_33f8277c32c07d53",
-    "baseWeapon": "#hash_25d3ed64dda487d",
+    "baseWeapon": "#eq_slow_grenade_ph",
     "displayname": "#weapon/slow_grenade",
     "weapon70": "#eq_slow_grenade",
     "streamkey": "#hash_6ad9d05d139cabe7",
@@ -36,7 +36,7 @@
     "sound660": "#uin_unavailable_charging",
     "projexplosionsound": "#hash_120db8330a68be06",
     "tunables1": "#hash_13b083a321647eca",
-    "cacWeaponXCam": "#hash_114a9866237d87a3",
+    "cacWeaponXCam": "#ui_cam_cac_equip_concussion",
     "sharedWeaponSounds": "#equipment",
     "statusEffects": [
         {

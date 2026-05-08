@@ -343,7 +343,7 @@ function function_3b17ff6f( localclientnum, oldval, newval, bnewent, binitialsna
     
     if ( newval == 1 )
     {
-        if ( self zm_utility::function_f8796df3( localclientnum ) )
+        if ( self zm_utility::is_first_person( localclientnum ) )
         {
             if ( viewmodelhastag( localclientnum, "tag_flash" ) )
             {

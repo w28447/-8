@@ -11,7 +11,7 @@
     "descriptionRef": "#hash_33d88eed1ff1fabe",
     "baseGameTypeHash": "#tdm",
     "hardcoreNameRef": "#mpui/hctdm",
-    "presenceString": "#hash_6053b676e8e52a24",
+    "presenceString": "#presence/tdm",
     "isHardcoreAvailable": false,
     "isTeamBased": true,
     "hideHudScore": false,
@@ -325,8 +325,8 @@
                 "overtime": 0,
                 "attacker": 0,
                 "overtime_round": 0,
-                "text": "localized17#hash_7a90ef66dc519965",
-                "score_text": "localized17#hash_7a90ef66dc519965"
+                "text": "localized17#objectives/tdm",
+                "score_text": "localized17#objectives/tdm"
             }
         ],
         "hash_e779605d": 1,

@@ -257,7 +257,7 @@ function round_spawn()
 // Params 5
 // Checksum 0x3969a656, Offset: 0x9e8
 // Size: 0x2fc
-function function_47a88a0c( n_to_spawn = 1, var_1fafa3fc, b_force_spawn = 0, var_eb3a8721, n_round )
+function function_47a88a0c( n_to_spawn = 1, func_on_spawned, b_force_spawn = 0, var_eb3a8721, n_round )
 {
     n_spawned = 0;
     
@@ -319,9 +319,9 @@ function function_47a88a0c( n_to_spawn = 1, var_1fafa3fc, b_force_spawn = 0, var
                 ai thread [[ level.werewolf_on_spawned ]]( s_spawn_loc );
             }
             
-            if ( isdefined( var_1fafa3fc ) )
+            if ( isdefined( func_on_spawned ) )
             {
-                ai thread [[ var_1fafa3fc ]]();
+                ai thread [[ func_on_spawned ]]();
             }
             
             ai playsound( #"hash_63299a75a97f9678" );

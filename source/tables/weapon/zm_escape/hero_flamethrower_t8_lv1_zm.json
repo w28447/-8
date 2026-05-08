@@ -69,9 +69,9 @@
     "sound810": "#hash_41b8cf5f69b41ad4",
     "tunables1": "#hero_flamethrower_t8_lv1_tunables_zm",
     "cacWeaponXCam": "#hash_db5c34f7d9e1861",
-    "sharedWeaponSounds": "#hash_3afe154fab81a197",
-    "flameTableFirstPerson": "#hash_7c9e63bac4fc46ba",
-    "flameTableThirdPerson": "#hash_6efa585a41207471",
+    "sharedWeaponSounds": "#zm_flamethrower",
+    "flameTableFirstPerson": "#default_flame_firstperson",
+    "flameTableThirdPerson": "#default_flame_thirdperson",
     "statusEffects": [
         {
             "effect": "#dot_purifier",
@@ -106,6 +106,6 @@
     "fireRumble": "#flamethrower",
     "beam_e58": "#flamethrower_beam",
     "beam_e60": "#flamethrower_beam_3p",
-    "beam_e68": "#hash_ecdf74613c27651",
-    "beam_e70": "#hash_2e4d796fdefb28b5"
+    "beam_e68": "#flamethrower_beam_underwater",
+    "beam_e70": "#flamethrower_beam_3p_underwater"
 }

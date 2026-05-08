@@ -34,9 +34,9 @@
     "sound240": "#hash_fc4ca27d80d6d52",
     "sound250": "#hash_4232e127f42d7cf7",
     "tunables1": "#ww_tricannon_earth_t8_upgraded_tunables_zm",
-    "cacWeaponXCam": "#hash_4c47fab11e8e64c1",
-    "cacAttachmentsXCam": "#hash_4c47fab11e8e64c1",
-    "weaponIconXCam": "#hash_5798bfe358ee22e9",
+    "cacWeaponXCam": "#ui_cam_cac_shotgun_energy",
+    "cacAttachmentsXCam": "#ui_cam_cac_shotgun_energy",
+    "weaponIconXCam": "#ui_cam_icon_shotgun_energy",
     "sharedWeaponSounds": "#hash_976e198cea3170c",
     "projectilemodel": "#wpn_t7_spike_launcher_projectile",
     "viewmodel": [
@@ -62,7 +62,7 @@
         "#hash_a60fafe2e7ced71c"
     ],
     "viewPersistentEffectSet": "#hash_11172a3b332d848",
-    "enemyDeathFxSet": "#hash_7c7455f22161b66e",
-    "normalImpactSounds": "#hash_67819602f48915e2",
+    "enemyDeathFxSet": "#weapon_pistol_energy_knockback",
+    "normalImpactSounds": "#elemental_bow_base_upg",
     "bounceImpactSounds": "#grenade_bounce"
 }

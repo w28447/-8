@@ -1,7 +1,7 @@
 {
     "name": "#gadget_smart_cover_mp",
     "baseWeapon": "#gadget_smart_cover",
-    "displayname": "#hash_3bf437dd2e981df1",
+    "displayname": "#smartcover/name",
     "streamkey": "#hash_3025e159307901ad",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",

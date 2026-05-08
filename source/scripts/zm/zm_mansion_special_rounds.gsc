@@ -468,7 +468,7 @@ function function_38c0c907()
     
     if ( isdefined( var_d3b167fd ) )
     {
-        v_drop = mansion_util::function_a8176b98( var_d3b167fd );
+        v_drop = mansion_util::get_drop_pos( var_d3b167fd );
     }
     
     if ( !isdefined( v_drop ) )
@@ -622,13 +622,13 @@ function function_e91102ad()
 function function_1a27cc15()
 {
     var_c9e3c7bc = arraycombine( getplayers(), getaiarchetypearray( #"werewolf" ), 0, 0 );
-    var_bdf9e3c2 = self zm_utility::get_current_zone();
+    str_current_zone = self zm_utility::get_current_zone();
     
     foreach ( e_entity in var_c9e3c7bc )
     {
         var_91dfe7f4 = e_entity zm_utility::get_current_zone();
         
-        if ( var_91dfe7f4 === var_bdf9e3c2 )
+        if ( var_91dfe7f4 === str_current_zone )
         {
             return true;
         }

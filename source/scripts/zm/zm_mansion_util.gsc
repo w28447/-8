@@ -315,7 +315,7 @@ function is_valid()
 // Params 2
 // Checksum 0xee3bbe0e, Offset: 0xd78
 // Size: 0xe4
-function function_a8176b98( v_pos, n_radius )
+function get_drop_pos( v_pos, n_radius )
 {
     if ( !isdefined( v_pos ) )
     {
@@ -495,7 +495,7 @@ function function_9e147e0c( s_params )
                 
                 if ( isdefined( var_9420259c ) )
                 {
-                    v_drop = function_a8176b98( var_9420259c, 360 );
+                    v_drop = get_drop_pos( var_9420259c, 360 );
                 }
                 
                 if ( isdefined( v_drop ) )

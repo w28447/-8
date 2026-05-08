@@ -420,13 +420,13 @@
         {
             "value": 70,
             "next": 65535,
-            "name": "#hash_56b5712c66c725bc",
+            "name": "#amb_chaos",
             "sequence": 0,
             "cullDistance": 850,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_56b5712c66c725bc",
+                    "name": "#amb_chaos",
                     "assetId": "#hash_b311587a2441809",
                     "assetFileNameSustain": "#mp_zombie_museum.all",
                     "assetIdRelease": "#mp_zombie_museum.all",
@@ -567,13 +567,13 @@
         {
             "value": 162,
             "next": 65535,
-            "name": "#hash_4747e5f1172b91f9",
+            "name": "#amb_comp_broken_1",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4747e5f1172b91f9",
+                    "name": "#amb_comp_broken_1",
                     "assetId": "#amb/electronics/computer/loops/broken/broken_comp_01.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_zombie_museum.all",
                     "assetIdRelease": "#mp_zombie_museum.all",
@@ -1193,13 +1193,13 @@
         {
             "value": 175,
             "next": 65535,
-            "name": "#hash_633b9532cf0da169",
+            "name": "#amb_flies",
             "sequence": 0,
             "cullDistance": 1750,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_633b9532cf0da169",
+                    "name": "#amb_flies",
                     "assetId": "#amb/animals/insects/mosquito/loop/mosquito_loop.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_zombie_museum.all",
                     "assetIdRelease": "#mp_zombie_museum.all",
@@ -1242,13 +1242,13 @@
         {
             "value": 205,
             "next": 65535,
-            "name": "#hash_186f7af36a61f275",
+            "name": "#amb_fridge",
             "sequence": 0,
             "cullDistance": 600,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_186f7af36a61f275",
+                    "name": "#amb_fridge",
                     "assetId": "#amb/electronics/fridge/fridge_hum.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_zombie_museum.all",
                     "assetIdRelease": "#mp_zombie_museum.all",
@@ -1291,13 +1291,13 @@
         {
             "value": 142,
             "next": 17,
-            "name": "#hash_134eae7f0c2c3a0b",
+            "name": "#amb_frogs",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_134eae7f0c2c3a0b",
+                    "name": "#amb_frogs",
                     "assetId": "#hash_605417124b3134ab",
                     "assetFileNameSustain": "#mp_zombie_museum.all",
                     "assetIdRelease": "#mp_zombie_museum.all",
@@ -1336,7 +1336,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_134eae7f0c2c3a0b",
+                    "name": "#amb_frogs",
                     "assetId": "#hash_102b3b5d7be0bafa",
                     "assetFileNameSustain": "#mp_zombie_museum.all",
                     "assetIdRelease": "#mp_zombie_museum.all",
@@ -1375,7 +1375,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_134eae7f0c2c3a0b",
+                    "name": "#amb_frogs",
                     "assetId": "#hash_7bb0e56b3726df31",
                     "assetFileNameSustain": "#mp_zombie_museum.all",
                     "assetIdRelease": "#mp_zombie_museum.all",
@@ -2412,13 +2412,13 @@
         {
             "value": 6,
             "next": 31,
-            "name": "#hash_79c2463acff19d72",
+            "name": "#amb_lava",
             "sequence": 0,
             "cullDistance": 850,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_79c2463acff19d72",
+                    "name": "#amb_lava",
                     "assetId": "#hash_1ef9459119ad4b64",
                     "assetFileNameSustain": "#mp_zombie_museum.all",
                     "assetIdRelease": "#mp_zombie_museum.all",
@@ -3010,13 +3010,13 @@
         {
             "value": 112,
             "next": 65535,
-            "name": "#hash_7d42bc198f84a5f0",
+            "name": "#amb_movie",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7d42bc198f84a5f0",
+                    "name": "#amb_movie",
                     "assetId": "#hash_72c6e236060f44e1",
                     "assetFileNameSustain": "#mp_zombie_museum.all",
                     "assetIdRelease": "#mp_zombie_museum.all",
@@ -4016,13 +4016,13 @@
         {
             "value": 118,
             "next": 65535,
-            "name": "#hash_77729e870046c56c",
+            "name": "#amb_snake",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_77729e870046c56c",
+                    "name": "#amb_snake",
                     "assetId": "#amb/animals/snake/rattle/rattlesnake_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_zombie_museum.all",
                     "assetIdRelease": "#mp_zombie_museum.all",
@@ -4061,7 +4061,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_77729e870046c56c",
+                    "name": "#amb_snake",
                     "assetId": "#amb/animals/snake/rattle/rattlesnake_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_zombie_museum.all",
                     "assetIdRelease": "#mp_zombie_museum.all",
@@ -4100,7 +4100,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_77729e870046c56c",
+                    "name": "#amb_snake",
                     "assetId": "#amb/animals/snake/rattle/rattlesnake_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_zombie_museum.all",
                     "assetIdRelease": "#mp_zombie_museum.all",
@@ -4139,7 +4139,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_77729e870046c56c",
+                    "name": "#amb_snake",
                     "assetId": "#amb/animals/snake/rattle/rattlesnake_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_zombie_museum.all",
                     "assetIdRelease": "#mp_zombie_museum.all",
@@ -4178,7 +4178,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_77729e870046c56c",
+                    "name": "#amb_snake",
                     "assetId": "#amb/animals/snake/rattle/rattlesnake_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_zombie_museum.all",
                     "assetIdRelease": "#mp_zombie_museum.all",
@@ -4217,7 +4217,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_77729e870046c56c",
+                    "name": "#amb_snake",
                     "assetId": "#amb/animals/snake/rattle/rattlesnake_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_zombie_museum.all",
                     "assetIdRelease": "#mp_zombie_museum.all",
@@ -4360,13 +4360,13 @@
         {
             "value": 46,
             "next": 43,
-            "name": "#hash_42fc14ac8b8a952f",
+            "name": "#amb_teleport",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_42fc14ac8b8a952f",
+                    "name": "#amb_teleport",
                     "assetId": "#zmb/bgb/anywherebuthere/teleport_plr.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_zombie_museum.all",
                     "assetIdRelease": "#mp_zombie_museum.all",
@@ -9272,13 +9272,13 @@
         {
             "value": 173,
             "next": 111,
-            "name": "#hash_1ff8bec27dfc1b70",
+            "name": "#dst_fern",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1ff8bec27dfc1b70",
+                    "name": "#dst_fern",
                     "assetId": "#dst/prop/fern/fern_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_zombie_museum.all",
                     "assetIdRelease": "#mp_zombie_museum.all",
@@ -10208,13 +10208,13 @@
         {
             "value": 78,
             "next": 65535,
-            "name": "#hash_501eff91f639c23e",
+            "name": "#dst_glass_pane",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_501eff91f639c23e",
+                    "name": "#dst_glass_pane",
                     "assetId": "#dst/generic/glass/med/glass_break_medium_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_zombie_museum.all",
                     "assetIdRelease": "#mp_zombie_museum.all",
@@ -10833,13 +10833,13 @@
         {
             "value": 202,
             "next": 65535,
-            "name": "#hash_6a7bbff93ccc7ab7",
+            "name": "#dst_luggage",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6a7bbff93ccc7ab7",
+                    "name": "#dst_luggage",
                     "assetFileNameSustain": "#mp_zombie_museum.all",
                     "assetIdRelease": "#mp_zombie_museum.all",
                     "assetFileNameRelease": "#mp_zombie_museum.all",
@@ -13662,13 +13662,13 @@
         {
             "value": 200,
             "next": 65535,
-            "name": "#hash_38c96854fb0017e",
+            "name": "#dst_typewriter",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_38c96854fb0017e",
+                    "name": "#dst_typewriter",
                     "assetId": "#dst/prop/typewriter/typewriter_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_zombie_museum.all",
                     "assetIdRelease": "#mp_zombie_museum.all",
@@ -15786,13 +15786,13 @@
         {
             "value": 54,
             "next": 65535,
-            "name": "#hash_48bc31e222aa7c3e",
+            "name": "#exp_barrel_fire",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_48bc31e222aa7c3e",
+                    "name": "#exp_barrel_fire",
                     "assetId": "#dst/generic/fire/barrel/barrel_fire_02.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_zombie_museum.all",
                     "assetIdRelease": "#mp_zombie_museum.all",
@@ -21302,7 +21302,7 @@
                     "assetIdRelease": "#mp_zombie_museum.all",
                     "assetFileNameRelease": "#mp_zombie_museum.all",
                     "contextType": "#hash_730721b0b6373e1",
-                    "contextValue": "#hash_8f631787d4aaf77",
+                    "contextValue": "#outdoor",
                     "reverbSend": 0.001,
                     "centerSend": 0,
                     "volMin": 0.56234133,
@@ -21344,7 +21344,7 @@
                     "assetIdRelease": "#mp_zombie_museum.all",
                     "assetFileNameRelease": "#mp_zombie_museum.all",
                     "contextType": "#hash_730721b0b6373e1",
-                    "contextValue": "#hash_8f631787d4aaf77",
+                    "contextValue": "#outdoor",
                     "reverbSend": 0.001,
                     "centerSend": 0,
                     "volMin": 0.56234133,
@@ -22172,13 +22172,13 @@
         {
             "value": 177,
             "next": 65535,
-            "name": "#hash_43ad48046fb206c8",
+            "name": "#exp_veh_small",
             "sequence": 0,
             "cullDistance": 12000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_43ad48046fb206c8",
+                    "name": "#exp_veh_small",
                     "secondaryname": "#hash_680a1ca45380de2",
                     "assetId": "#exp/vehicle/base/exp_veh_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_zombie_museum.all",
@@ -22219,7 +22219,7 @@
                     "unk178": "#hash_6000b0206"
                 },
                 {
-                    "name": "#hash_43ad48046fb206c8",
+                    "name": "#exp_veh_small",
                     "secondaryname": "#hash_680a1ca45380de2",
                     "assetId": "#exp/vehicle/base/exp_veh_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_zombie_museum.all",
@@ -22260,7 +22260,7 @@
                     "unk178": "#hash_6000b0206"
                 },
                 {
-                    "name": "#hash_43ad48046fb206c8",
+                    "name": "#exp_veh_small",
                     "secondaryname": "#hash_680a1ca45380de2",
                     "assetId": "#exp/vehicle/base/exp_veh_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_zombie_museum.all",
@@ -23858,11 +23858,11 @@
             "loop": "#hash_44463359dd025b23",
             "duckId": "#default",
             "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_8f631787d4aaf77",
+            "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_8f631787d4aaf77",
+            "globalContextValue": "#outdoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,
@@ -23884,7 +23884,7 @@
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_8f631787d4aaf77",
+            "globalContextValue": "#outdoor",
             "defaultRoom": false,
             "reverbDryLevel": 0.7,
             "reverbWetLevel": 1,
@@ -23990,11 +23990,11 @@
             "loop": "#hash_4f5b91b9bbfac212",
             "duckId": "#default",
             "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_8f631787d4aaf77",
+            "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_8f631787d4aaf77",
+            "globalContextValue": "#outdoor",
             "defaultRoom": true,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,

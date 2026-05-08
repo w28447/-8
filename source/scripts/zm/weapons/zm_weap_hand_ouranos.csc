@@ -238,7 +238,7 @@ function skull_turret_beam_fire( localclientnum, oldval, newval, bnewent, biniti
             self.var_c400cdd5 = undefined;
         }
         
-        if ( !self zm_utility::function_f8796df3( localclientnum ) )
+        if ( !self zm_utility::is_first_person( localclientnum ) )
         {
             self.var_c400cdd5 = util::playfxontag( localclientnum, level._effect[ #"hash_31736c99409b40ef" ], self, "tag_weapon_right" );
         }

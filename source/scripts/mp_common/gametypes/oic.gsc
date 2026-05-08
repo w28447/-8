@@ -82,97 +82,97 @@ function event_handler[gametype_init] main( eventstruct )
     oic_perks[ oic_perks.size ] = "specialty_slide";
     level.oic_perks = oic_perks;
     globallogic_spawn::addsupportedspawnpointtype( "ffa" );
-    var_1f99b9e8 = [];
+    oic_pistols = [];
     
-    if ( !isdefined( var_1f99b9e8 ) )
+    if ( !isdefined( oic_pistols ) )
     {
-        var_1f99b9e8 = [];
+        oic_pistols = [];
     }
-    else if ( !isarray( var_1f99b9e8 ) )
+    else if ( !isarray( oic_pistols ) )
     {
-        var_1f99b9e8 = array( var_1f99b9e8 );
-    }
-    
-    var_1f99b9e8[ var_1f99b9e8.size ] = getweapon( #"hero_annihilator" + "_oic", "" );
-    
-    if ( !isdefined( var_1f99b9e8 ) )
-    {
-        var_1f99b9e8 = [];
-    }
-    else if ( !isarray( var_1f99b9e8 ) )
-    {
-        var_1f99b9e8 = array( var_1f99b9e8 );
+        oic_pistols = array( oic_pistols );
     }
     
-    var_1f99b9e8[ var_1f99b9e8.size ] = getweapon( #"pistol_standard_t8" + "_oic", "" );
+    oic_pistols[ oic_pistols.size ] = getweapon( #"hero_annihilator" + "_oic", "" );
     
-    if ( !isdefined( var_1f99b9e8 ) )
+    if ( !isdefined( oic_pistols ) )
     {
-        var_1f99b9e8 = [];
+        oic_pistols = [];
     }
-    else if ( !isarray( var_1f99b9e8 ) )
+    else if ( !isarray( oic_pistols ) )
     {
-        var_1f99b9e8 = array( var_1f99b9e8 );
-    }
-    
-    var_1f99b9e8[ var_1f99b9e8.size ] = getweapon( #"pistol_standard_t8" + "_oic", "uber" );
-    
-    if ( !isdefined( var_1f99b9e8 ) )
-    {
-        var_1f99b9e8 = [];
-    }
-    else if ( !isarray( var_1f99b9e8 ) )
-    {
-        var_1f99b9e8 = array( var_1f99b9e8 );
+        oic_pistols = array( oic_pistols );
     }
     
-    var_1f99b9e8[ var_1f99b9e8.size ] = getweapon( #"pistol_fullauto_t8" + "_oic", "" );
+    oic_pistols[ oic_pistols.size ] = getweapon( #"pistol_standard_t8" + "_oic", "" );
     
-    if ( !isdefined( var_1f99b9e8 ) )
+    if ( !isdefined( oic_pistols ) )
     {
-        var_1f99b9e8 = [];
+        oic_pistols = [];
     }
-    else if ( !isarray( var_1f99b9e8 ) )
+    else if ( !isarray( oic_pistols ) )
     {
-        var_1f99b9e8 = array( var_1f99b9e8 );
-    }
-    
-    var_1f99b9e8[ var_1f99b9e8.size ] = getweapon( #"pistol_topbreak_t8" + "_oic", "" );
-    
-    if ( !isdefined( var_1f99b9e8 ) )
-    {
-        var_1f99b9e8 = [];
-    }
-    else if ( !isarray( var_1f99b9e8 ) )
-    {
-        var_1f99b9e8 = array( var_1f99b9e8 );
+        oic_pistols = array( oic_pistols );
     }
     
-    var_1f99b9e8[ var_1f99b9e8.size ] = getweapon( #"pistol_revolver_t8" + "_oic", "" );
+    oic_pistols[ oic_pistols.size ] = getweapon( #"pistol_standard_t8" + "_oic", "uber" );
     
-    if ( !isdefined( var_1f99b9e8 ) )
+    if ( !isdefined( oic_pistols ) )
     {
-        var_1f99b9e8 = [];
+        oic_pistols = [];
     }
-    else if ( !isarray( var_1f99b9e8 ) )
+    else if ( !isarray( oic_pistols ) )
     {
-        var_1f99b9e8 = array( var_1f99b9e8 );
-    }
-    
-    var_1f99b9e8[ var_1f99b9e8.size ] = getweapon( #"pistol_revolver_t8" + "_oic", "pistolscope" );
-    
-    if ( !isdefined( var_1f99b9e8 ) )
-    {
-        var_1f99b9e8 = [];
-    }
-    else if ( !isarray( var_1f99b9e8 ) )
-    {
-        var_1f99b9e8 = array( var_1f99b9e8 );
+        oic_pistols = array( oic_pistols );
     }
     
-    var_1f99b9e8[ var_1f99b9e8.size ] = getweapon( #"pistol_revolver_t8" + "_oic", "uber" );
+    oic_pistols[ oic_pistols.size ] = getweapon( #"pistol_fullauto_t8" + "_oic", "" );
+    
+    if ( !isdefined( oic_pistols ) )
+    {
+        oic_pistols = [];
+    }
+    else if ( !isarray( oic_pistols ) )
+    {
+        oic_pistols = array( oic_pistols );
+    }
+    
+    oic_pistols[ oic_pistols.size ] = getweapon( #"pistol_topbreak_t8" + "_oic", "" );
+    
+    if ( !isdefined( oic_pistols ) )
+    {
+        oic_pistols = [];
+    }
+    else if ( !isarray( oic_pistols ) )
+    {
+        oic_pistols = array( oic_pistols );
+    }
+    
+    oic_pistols[ oic_pistols.size ] = getweapon( #"pistol_revolver_t8" + "_oic", "" );
+    
+    if ( !isdefined( oic_pistols ) )
+    {
+        oic_pistols = [];
+    }
+    else if ( !isarray( oic_pistols ) )
+    {
+        oic_pistols = array( oic_pistols );
+    }
+    
+    oic_pistols[ oic_pistols.size ] = getweapon( #"pistol_revolver_t8" + "_oic", "pistolscope" );
+    
+    if ( !isdefined( oic_pistols ) )
+    {
+        oic_pistols = [];
+    }
+    else if ( !isarray( oic_pistols ) )
+    {
+        oic_pistols = array( oic_pistols );
+    }
+    
+    oic_pistols[ oic_pistols.size ] = getweapon( #"pistol_revolver_t8" + "_oic", "uber" );
     level.gunselection = getgametypesetting( #"gunselection" );
-    level.var_bf82f6b0 = var_1f99b9e8[ level.gunselection ];
+    level.oic_pistol = oic_pistols[ level.gunselection ];
     level.takelivesondeath = 1;
     globallogic_audio::set_leader_gametype_dialog( "startOneInTheChamber", "hcStartOneInTheChamber", undefined, undefined, "bbStartOneInTheChamber", "hcbbStartOneInTheChamber" );
 }
@@ -206,7 +206,7 @@ function givecustomloadout()
     loadout::function_f436358b( self.curclass );
     self setactionslot( 3, "flourish_callouts" );
     self setactionslot( 4, "sprays_boasts" );
-    weapon = level.var_bf82f6b0;
+    weapon = level.oic_pistol;
     self giveweapon( weapon );
     self switchtoweapon( weapon );
     clipammo = 1;
@@ -382,7 +382,7 @@ function onplayerkilled( einflictor, attacker, idamage, smeansofdeath, sweapon, 
 {
     if ( isdefined( attacker ) && isplayer( attacker ) && self != attacker )
     {
-        weapon = level.var_bf82f6b0;
+        weapon = level.oic_pistol;
         attackerammo = attacker getammocount( weapon );
         victimammo = self getammocount( weapon );
         

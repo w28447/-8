@@ -76,7 +76,7 @@ function vision_pulse( localclientnum, oldval, newval, bnewent, binitialsnap, fi
         self postfx::playpostfxbundle( #"hash_3b4e3282e8a33852" );
         self function_116b95e5( #"hash_3b4e3282e8a33852", #"hash_222b3bb254b3295c", 0.4 );
         self function_116b95e5( #"hash_3b4e3282e8a33852", #"hash_2efccfad2b32081a", 2500 );
-        self function_116b95e5( #"hash_3b4e3282e8a33852", #"hash_33856c0e283a93e2", 8 );
+        self function_116b95e5( #"hash_3b4e3282e8a33852", #"grid size", 8 );
         self function_116b95e5( #"hash_3b4e3282e8a33852", #"pulse width", 200 );
         return;
     }
@@ -160,11 +160,11 @@ function area_arrows( localclientnum, oldval, newval, bnewent, binitialsnap, fie
     
     if ( newval )
     {
-        var_b29c151c = level.var_84c5e66d;
+        str_area_name = level.var_84c5e66d;
         
         if ( !( isdefined( level.var_8c3d6a40 ) && level.var_8c3d6a40 ) )
         {
-            var_b29c151c += newval;
+            str_area_name += newval;
         }
         else if ( newval == 4 )
         {
@@ -184,7 +184,7 @@ function area_arrows( localclientnum, oldval, newval, bnewent, binitialsnap, fie
         }
         
         level.var_6158c164 = [];
-        level.var_c39096f2 = struct::get_array( var_b29c151c, "targetname" );
+        level.var_c39096f2 = struct::get_array( str_area_name, "targetname" );
         
         if ( level.var_c39096f2.size > 0 )
         {

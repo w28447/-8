@@ -14,7 +14,7 @@
     "peelSpeedMax": 600,
     "model": "#hash_2bfa78470894c282",
     "enemyModel": "#hash_623b8cead6674c6a",
-    "soundDef": "#hash_748ceef2dd301eb4",
+    "soundDef": "#veh_vtol_supplyship",
     "compassIconMaterial": "#hud_anim_littlebird",
     "steerAxisName": "AXIS_LSTICK",
     "gasButtonName": "BUTTON_LTRIG",

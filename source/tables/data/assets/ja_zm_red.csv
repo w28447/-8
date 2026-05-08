@@ -13,7 +13,7 @@ localizeentry,#hash_7f06f3a47cc762
 localizeentry,d#hash_95c5021b448b56
 localizeentry,d#mpui/extclip_desc
 localizeentry,d#mpui/fmj_desc
-localizeentry,d#hash_a43b10d9da121a
+localizeentry,d#menu/waiting_caps
 localizeentry,#hash_ee57481bd453a7
 localizeentry,#hash_1232ccbc481cfd1
 localizeentry,d#mpui/supply_desc
@@ -459,7 +459,7 @@ localizeentry,#hash_10c82426c58b2732
 localizeentry,#hash_10c82526c58b28e5
 localizeentry,#hash_10c94d259f6ba46b
 localizeentry,#hash_10e7be7be6b0f5b2
-localizeentry,d#hash_10f22a2fae6154a8
+localizeentry,d#mp/hold
 localizeentry,#hash_10f3f07d744bca73
 localizeentry,#hash_10fcf3099d11e5ab
 localizeentry,#hash_10fcf4099d11e75e
@@ -637,7 +637,7 @@ localizeentry,#hash_16a1158a1267fe58
 localizeentry,#hash_16a11a8a126806d7
 localizeentry,#hash_16a11b8a1268088a
 localizeentry,#hash_16a11c8a12680a3d
-localizeentry,d#hash_16b234cb46b5acd4
+localizeentry,d#menu/kills_caps
 localizeentry,#hash_16c3b7bc89046fbb
 localizeentry,#hash_16d3e1ce95636700
 localizeentry,#hash_16f7ba8230a89680
@@ -906,7 +906,7 @@ localizeentry,#hash_201f0c34eac647a4
 localizeentry,#hash_201f0d34eac64957
 localizeentry,#hash_201f0f34eac64cbd
 localizeentry,#hash_2033d0fbd99966ca
-localizeentry,#hash_204ec88c63b3436b
+localizeentry,#zmarcade/fasttravel
 localizeentry,#hash_20594f6f269ae7bb
 localizeentry,#hash_2059506f269ae96e
 localizeentry,#hash_2059516f269aeb21
@@ -1029,7 +1029,7 @@ localizeentry,#hash_2405392c725981a0
 localizeentry,#hash_24053a2c72598353
 localizeentry,#hash_24053b2c72598506
 localizeentry,#hash_2405402c72598d85
-localizeentry,#hash_2428c7882076afc2
+localizeentry,#zm_red/challenge_failed
 localizeentry,d#mpui/camo_huntsman
 localizeentry,d#hash_246c7d9118b22299
 localizeentry,#hash_248c775f6ad7c8e5
@@ -1413,7 +1413,7 @@ localizeentry,#hash_3095687237e61dca
 localizeentry,#hash_3095697237e61f7d
 localizeentry,#hash_3098750db1335c73
 localizeentry,#hash_309d162d0e1cd1d1
-localizeentry,d#hash_309f6a17f45fceaf
+localizeentry,d#mpui/spectating
 localizeentry,#hash_30c2fa2ab04f1d99
 localizeentry,#hash_30c48bad3e57f048
 localizeentry,#hash_30c48ead3e57f561
@@ -1857,7 +1857,7 @@ localizeentry,#hash_3d203bd8a0d32d05
 localizeentry,#hash_3d25551ba1b51436
 localizeentry,d#hash_3d26eb8dafae98e9
 localizeentry,#hash_3d4c0db50bb36817
-localizeentry,d#hash_3d7abb3373fab887
+localizeentry,d#zmui/suppressor_desc
 localizeentry,#hash_3d822ba844073707
 localizeentry,#hash_3d8d864dfacbee2e
 localizeentry,d#hash_3d9d6e119fdd76ae
@@ -1939,7 +1939,7 @@ localizeentry,#hash_404afde510785239
 localizeentry,#hash_404afee5107853ec
 localizeentry,#hash_404affe51078559f
 localizeentry,#hash_404b00e510785752
-localizeentry,d#hash_404ef66575ddb929
+localizeentry,d#mpui/max_caps
 localizeentry,#hash_40594ed437385c03
 localizeentry,#hash_405951d43738611c
 localizeentry,#hash_405953d437386482
@@ -2119,7 +2119,7 @@ localizeentry,#hash_45e4935942f475f8
 localizeentry,#hash_45e4945942f477ab
 localizeentry,#hash_45e4965942f47b11
 localizeentry,#hash_45e4995942f4802a
-localizeentry,d#hash_45f407bc037861dc
+localizeentry,d#options/advanced
 localizeentry,#hash_45fab10187d4bdab
 localizeentry,#hash_45fb053fcbdc4d0f
 localizeentry,#hash_45fb063fcbdc4ec2
@@ -3047,7 +3047,7 @@ localizeentry,#hash_6a32fcbba8728e49
 localizeentry,#hash_6a3a3c4c0c71e312
 localizeentry,d#mp/back
 localizeentry,d#hash_6a4930978aef6c45
-localizeentry,d#hash_6a75180bc7fda8f5
+localizeentry,d#menu/score_caps
 localizeentry,#hash_6a7927ba159b00ca
 localizeentry,#hash_6a8caa2a3d7abad1
 localizeentry,d#mpui/burst2
@@ -3260,7 +3260,7 @@ localizeentry,#hash_706a753ff05dc076
 localizeentry,#hash_706a773ff05dc3dc
 localizeentry,#hash_706a783ff05dc58f
 localizeentry,#hash_706a7a3ff05dc8f5
-localizeentry,d#hash_7085044e7b80d5a3
+localizeentry,d#mpui/reticle_default
 localizeentry,#hash_7097cf320e4569f7
 localizeentry,d#hash_709fb6b7fdde6aa8
 localizeentry,#hash_70d81dee460d03db
@@ -3464,7 +3464,7 @@ localizeentry,#hash_773a020fdd9b6256
 localizeentry,#hash_773a030fdd9b6409
 localizeentry,#hash_7747013e85cd63f7
 localizeentry,#hash_7769a90b17710a30
-localizeentry,d#hash_778d439e1b360368
+localizeentry,d#menu/back_caps
 localizeentry,#hash_779495a60cf7b097
 localizeentry,#hash_77ab37d40ef768af
 localizeentry,#hash_77be67ddc980c956
@@ -3541,7 +3541,7 @@ localizeentry,#hash_7a61e8af26e42d65
 localizeentry,d#hash_7a780871028530f5
 localizeentry,d#hash_7a899f8fa9163c6e
 localizeentry,#hash_7a8bc638c30d31d9
-localizeentry,#hash_7a95bcef27a91bf4
+localizeentry,#zm_red/shield
 localizeentry,#hash_7ac40ebd3e120483
 localizeentry,#hash_7ac40fbd3e120636
 localizeentry,#hash_7ac410bd3e1207e9

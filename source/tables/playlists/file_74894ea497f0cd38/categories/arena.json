@@ -1,6 +1,6 @@
 {
     "name": "#arena",
-    "description": "#hash_44b08b09636ecd9e",
+    "description": "#menu/arena_caps",
     "lobbyMainMode": "MULTIPLAYER",
     "hidden": false,
     "environmentMask": 7,

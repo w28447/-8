@@ -432,7 +432,7 @@ function function_7aa50bb7( e_player )
     }
     else if ( e_player zm_weapons::has_weapon_or_upgrade( level.var_f086136b ) )
     {
-        self sethintstring( self.stub.blueprint.var_4dbc4aee );
+        self sethintstring( self.stub.blueprint.craftingprompt );
     }
     else
     {

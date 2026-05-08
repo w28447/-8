@@ -2,5 +2,5 @@
     "name": "#maps/mp/mp_russianbase.d3dbsp",
     "baseName": "mp_russianbase",
     "lutMaterial": "#lut_mp_russianbase",
-    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca"
+    "volumeDecalRevealTexture": "#vdreveal"
 }

@@ -8,7 +8,7 @@ streamkey,#hash_43a8d505925159a4
 streamkey,#hash_6c97b2b251800fe1
 sound,#mp_common.fj
 localizeentry,#hash_c1997f0afadb2
-localizeentry,d#hash_127999393f1681
+localizeentry,d#menu/error_caps
 localizeentry,#hash_14c0a8bc8f041e
 localizeentry,#weapon/bomb
 localizeentry,d#hash_17ca4cd9bf4005
@@ -44,7 +44,7 @@ localizeentry,d#hash_95c5021b448b56
 localizeentry,d#mpui/extclip_desc
 localizeentry,d#mpui/fmj_desc
 localizeentry,#hash_a1ce6c56f0715b
-localizeentry,d#hash_a43b10d9da121a
+localizeentry,d#menu/waiting_caps
 localizeentry,#hash_a97d4e22e6e2bf
 localizeentry,#hash_aa374651a9b291
 localizeentry,#hash_b2a55643bed508
@@ -100,8 +100,8 @@ localizeentry,#hash_18f4aa9520d0dfc
 localizeentry,#hash_18fadf357c4215c
 localizeentry,#hash_198150720ce951a
 localizeentry,#hash_19acf445749e28b
-localizeentry,#hash_19cceb5c66dc6b3
-localizeentry,d#hash_19e7605718f65a2
+localizeentry,#codcaster/settings
+localizeentry,d#weapon/defaultattachment
 localizeentry,#hash_1aa567b647b8e14
 localizeentry,#hash_1b3d3c66e7a18e2
 localizeentry,#hash_1bec5f5a8841f42
@@ -164,7 +164,7 @@ localizeentry,#hash_2edea5e26e89dcf
 localizeentry,#hash_2f04c0d8fc93b48
 localizeentry,#hash_2f257ac9ee409c7
 localizeentry,#hash_2f73b0d8fcf3d13
-localizeentry,d#hash_2fa47140d97f89d
+localizeentry,d#menu/options_caps
 localizeentry,d#hash_305e03714ee77fc
 localizeentry,#hash_30754f5ab32ee92
 localizeentry,#hash_30f2d36df4d164f
@@ -228,7 +228,7 @@ localizeentry,#hash_424a778a73bcfe6
 localizeentry,#hash_427a48030202fda
 localizeentry,#hash_429d447697d40d3
 localizeentry,#hash_430cc400c76472d
-localizeentry,#hash_4323579690cf719
+localizeentry,#mpui/xx_caps
 localizeentry,#hash_4356225aab772c0
 localizeentry,#hash_435f4040a7812af
 localizeentry,d#hash_43b319457bc818e
@@ -299,7 +299,7 @@ localizeentry,#hash_5630c8431cf6803
 localizeentry,#hash_563d4b87dc63045
 localizeentry,#hash_564d17d10f4744a
 localizeentry,#hash_56e43a270400799
-localizeentry,d#hash_56e6f15ba89eeed
+localizeentry,d#mpui/attachments_caps
 localizeentry,#hash_57691274170e91a
 localizeentry,#hash_5776135014d1bf2
 localizeentry,#hash_5806fa839906b56
@@ -372,7 +372,7 @@ localizeentry,#hash_6b7d030db2a65c8
 localizeentry,#hash_6b7d230db2a692e
 localizeentry,#hash_6b7d330db2a6ae1
 localizeentry,#hash_6b874e92da9970b
-localizeentry,#hash_6bdd551b4b6ffa4
+localizeentry,#mpui/match_bonus
 localizeentry,#hash_6c7fa0e03968266
 localizeentry,#hash_6d04a35f4ee1b01
 localizeentry,#hash_6d07c2db72a2619
@@ -399,14 +399,14 @@ localizeentry,#hash_726a61abfb68bf1
 localizeentry,d#mpui/stalker2_desc
 localizeentry,d#weapon/sig_buckler_dw
 localizeentry,#hash_73b2f42330e08f9
-localizeentry,#hash_73f876131fb1d9d
+localizeentry,#mpui/secondary_caps
 localizeentry,#hash_743d31c3761ed94
 localizeentry,#hash_7464a0af3f9a8e8
 localizeentry,#hash_74ac61c3767f62b
 localizeentry,#hash_74b9d32ca1f06d9
 localizeentry,#hash_74d7427bd9fb2f2
 localizeentry,d#hash_74fa1e5aa0983f9
-localizeentry,#hash_750b8544c6063ab
+localizeentry,#codcaster/team2_name
 localizeentry,#hash_754b28b024ff32b
 localizeentry,d#hash_75f36048b8e4c83
 localizeentry,#hash_7605542332d65c8
@@ -626,7 +626,7 @@ localizeentry,#menu/swap
 localizeentry,#hash_b4cb57f6acaeb75
 localizeentry,#hash_b4e0cb9e5e1fc39
 localizeentry,#hash_b589c53abbb88fa
-localizeentry,d#hash_b5c6fcb5aceab52
+localizeentry,d#key/downarrow
 localizeentry,#hash_b610b1af7cfdf0f
 localizeentry,#hash_b617215b4031c49
 localizeentry,#hash_b674a183086a930
@@ -865,7 +865,7 @@ localizeentry,#hash_f8b28f2bb4fa596
 localizeentry,#hash_f8bea24436ad636
 localizeentry,#hash_f8cf9a149d7c16e
 localizeentry,#hash_f8fd82d1011a8ba
-localizeentry,d#hash_f91a28adadc5409
+localizeentry,d#spawnbeacon/pickup
 localizeentry,#hash_f9325ca9f84de8a
 localizeentry,#hash_f94b5e7a20d1119
 localizeentry,#hash_f9defa149e623a3
@@ -936,8 +936,8 @@ localizeentry,#hash_10db566e4d515a75
 localizeentry,#hash_10e53c6e4d5982cc
 localizeentry,#hash_10e8e14caaf997b8
 localizeentry,#hash_10f04d208cb8443f
-localizeentry,#hash_10f22a2fae6154a8
-localizeentry,#hash_10f60f2fae650f9e
+localizeentry,#mp/hold
+localizeentry,#mp/home
 localizeentry,#hash_10fcffda43f1ae27
 localizeentry,#hash_11009b2920d68a21
 localizeentry,#hash_110285de23e09484
@@ -962,7 +962,7 @@ localizeentry,d#mpui/ir
 localizeentry,d#mpui/is
 localizeentry,d#mpui/gl
 localizeentry,#hash_117284a56f7c9cf3
-localizeentry,d#hash_11762cbfbf851d22
+localizeentry,d#menu/settings_caps
 localizeentry,d#mpui/dw
 localizeentry,#hash_117ab36b067e50bc
 localizeentry,#hash_117be3025623ead5
@@ -1100,8 +1100,8 @@ localizeentry,#hash_137d47e2a7f7225c
 localizeentry,#hash_13868930d7918c19
 localizeentry,#hash_1388a3e4074ed0ac
 localizeentry,#hash_138a7dd9d0e06eb3
-localizeentry,d#hash_139a9e427416e0c7
-localizeentry,d#hash_139a9f427416e27a
+localizeentry,d#codcaster/team2
+localizeentry,d#codcaster/team1
 localizeentry,#hash_13a8e05d33eb134d
 localizeentry,#hash_13afa156c3258de9
 localizeentry,#hash_13bc9457e6bc6079
@@ -1141,7 +1141,7 @@ localizeentry,#hash_14310e29059b6ab6
 localizeentry,#hash_14409ae9bd6e0c19
 localizeentry,#hash_144378c40c405d8d
 localizeentry,#hash_144ba81f207d21e1
-localizeentry,#hash_144db3a08be7fb92
+localizeentry,#warzone/discard
 localizeentry,#hash_145efc3817730574
 localizeentry,#hash_1466e8d6382f6ec2
 localizeentry,#hash_14673b92a2be6909
@@ -1264,7 +1264,7 @@ localizeentry,#hash_16a25a8f8d87a2e3
 localizeentry,#hash_16a61e3a04756c25
 localizeentry,#hash_16af9dcce9818e9a
 localizeentry,#hash_16af9ecce981904d
-localizeentry,d#hash_16b234cb46b5acd4
+localizeentry,d#menu/kills_caps
 localizeentry,#hash_16b8c3cfb3df8dfd
 localizeentry,#hash_16c1e258e6127807
 localizeentry,#hash_16c372616d00bebd
@@ -1374,7 +1374,7 @@ localizeentry,#hash_18dc585200319a68
 localizeentry,#hash_18dc8ecefebf1515
 localizeentry,#hash_18de6f0d90849315
 localizeentry,#hash_18e48acb6a1ac3fb
-localizeentry,d#hash_18e58cc95db34427
+localizeentry,d#mp/match_starting_in
 localizeentry,#hash_18e8304d25283da6
 localizeentry,d#hash_18e8c0862204180a
 localizeentry,d#hash_18eaf4fb1061fde3
@@ -1438,7 +1438,7 @@ localizeentry,#hash_1a2ac7d3118b5303
 localizeentry,#hash_1a2eee6d4bbfd6fd
 localizeentry,#menu/double_xp
 localizeentry,d#hash_1a4379afccab6358
-localizeentry,#hash_1a44433c2ca896b6
+localizeentry,#mpui/survivors
 localizeentry,#hash_1a4f889ff65c0a0c
 localizeentry,#hash_1a52568e06aa7afc
 localizeentry,#hash_1a5485d603b5e1ee
@@ -1492,7 +1492,7 @@ localizeentry,#hash_1b16fec7b6909190
 localizeentry,#hash_1b197054b1dc36e9
 localizeentry,#hash_1b1aed04a90d98cc
 localizeentry,#hash_1b22d11c3862955a
-localizeentry,#hash_1b24a4cddbb668db
+localizeentry,#menu/attacking_caps
 localizeentry,#hash_1b301c864ab49c7a
 localizeentry,#hash_1b305a1a0da44544
 localizeentry,#hash_1b308ec54cf16269
@@ -1556,7 +1556,7 @@ localizeentry,#hash_1c2e0af037d7d3fe
 localizeentry,#hash_1c338067a8d73d8b
 localizeentry,#hash_1c39caa6fb70779a
 localizeentry,#hash_1c3adb9f2d1bcdd2
-localizeentry,#hash_1c3bb23759062bcb
+localizeentry,#mpui/wounded
 localizeentry,#hash_1c41d4b9d00defa5
 localizeentry,#hash_1c4262092406dd88
 localizeentry,#hash_1c4ac6e9a0d267e4
@@ -1606,7 +1606,7 @@ localizeentry,#hash_1d09ebefe1a3eb3d
 localizeentry,#hash_1d0dd1366200e856
 localizeentry,#hash_1d0efdfa8ca7f520
 localizeentry,#hash_1d151cfa8cac957b
-localizeentry,#hash_1d1cdfd2190ac31c
+localizeentry,#codcaster/team1_name
 localizeentry,#hash_1d205c8b30ff19db
 localizeentry,#hash_1d20bc16a14c95d8
 localizeentry,#hash_1d23bfbcd5f26261
@@ -1617,7 +1617,7 @@ localizeentry,#hash_1d2da58661cebb16
 localizeentry,d#hash_1d35502449c39bad
 localizeentry,#hash_1d3dac8a6ea6f7e3
 localizeentry,#hash_1d46368b311fa886
-localizeentry,#hash_1d4693266fd0debd
+localizeentry,#dog/earned
 localizeentry,#hash_1d510804d16ab155
 localizeentry,#hash_1d51a76c8cbe156e
 localizeentry,#hash_1d5930ec03f2a36a
@@ -1771,7 +1771,7 @@ localizeentry,#weapon/ammo
 localizeentry,#hash_20350ef8afcf0ac6
 localizeentry,#hash_20382a8b4ded094d
 localizeentry,#hash_203e2b8b4df176ae
-localizeentry,#hash_203ff65a4ee460e6
+localizeentry,#platform/press_to_spawn
 localizeentry,#hash_20512dbb73c55ee5
 localizeentry,#hash_205204fe7ba38950
 localizeentry,#hash_2054edeadb54ab1c
@@ -1846,7 +1846,7 @@ localizeentry,#hash_21b05a0b54b43152
 localizeentry,#hash_21b0d8b8aa38efb2
 localizeentry,#hash_21b37ece204f0e1c
 localizeentry,#hash_21b98e4c3f121241
-localizeentry,d#hash_21bbdd7d1b7cfb1b
+localizeentry,d#menu/chat_caps
 localizeentry,#hash_21be11fffc43dc2e
 localizeentry,#hash_21be37e1c2fc1682
 localizeentry,d#hash_21bf53d95e5ac2b5
@@ -1989,7 +1989,7 @@ localizeentry,#hash_243c15025c147846
 localizeentry,#hash_243c24b1666794c2
 localizeentry,#hash_243c4bc0c39778b2
 localizeentry,#hash_24429a7003eeefa8
-localizeentry,d#hash_24478a903275510a
+localizeentry,d#menu/objective_caps
 localizeentry,#hash_2452c874375ffee2
 localizeentry,#hash_2453be2be5286610
 localizeentry,#hash_245bb459638a9953
@@ -2028,7 +2028,7 @@ localizeentry,d#weapon/eq_emp_grenade
 localizeentry,#hash_252b7f9078f62018
 localizeentry,#hash_252ba67f76e9e962
 localizeentry,#hash_253015a7f84c18f6
-localizeentry,d#hash_253a15d5d9a8180e
+localizeentry,d#objectives/shamrock
 localizeentry,#hash_2542be0fef978580
 localizeentry,#hash_25430eb02429eac9
 localizeentry,#hash_254e7321ddbd386b
@@ -2110,7 +2110,7 @@ localizeentry,#hash_26709dbb68644e40
 localizeentry,#hash_26709ebb68644ff3
 localizeentry,#hash_267496328c952bcb
 localizeentry,#hash_2675ea06ae086251
-localizeentry,d#hash_267ca0799b7eacf9
+localizeentry,d#dog/name
 localizeentry,d#mpui/pistolscope
 localizeentry,#hash_26877dc0570d5347
 localizeentry,#hash_268d45547a0717ed
@@ -2152,7 +2152,7 @@ localizeentry,#hash_275ed0bec8a62b6d
 localizeentry,#hash_275f4d90fb1a0a9b
 localizeentry,#hash_275fa7dee60e1073
 localizeentry,#hash_27685fd945024822
-localizeentry,#hash_276bedd5c64d7245
+localizeentry,#killstreak/helicopter_gunner
 localizeentry,#hash_276c71244969e7f5
 localizeentry,#hash_276f36eb5c97bd23
 localizeentry,#hash_27749ea9b80cc6aa
@@ -2169,7 +2169,7 @@ localizeentry,#hash_27bb24a620a9d0d9
 localizeentry,#hash_27c58526d71a5407
 localizeentry,d#hash_27d1d51144cad6bc
 localizeentry,#hash_27e598f14dfcbe4f
-localizeentry,#hash_27f09d9c7d9a3fee
+localizeentry,#mpui/game_type
 localizeentry,#hash_28028851bde18fef
 localizeentry,#hash_28028951bde191a2
 localizeentry,#hash_2806136797911beb
@@ -2218,7 +2218,7 @@ localizeentry,#hash_28cf6b160bbdcf3e
 localizeentry,#hash_28d25550be200952
 localizeentry,#mp/halftime
 localizeentry,#hash_28e56245387c39fd
-localizeentry,d#hash_28e70b8be9ddfc13
+localizeentry,d#codcaster/team_name
 localizeentry,#hash_28ea0ba3ed013cfd
 localizeentry,#hash_28f3ed7e8d30dfff
 localizeentry,#hash_28f603499fdabf8b
@@ -2297,7 +2297,7 @@ localizeentry,#hash_2a11a442323f7aa6
 localizeentry,#hash_2a1251e59175a64c
 localizeentry,#hash_2a1efc448d51acd3
 localizeentry,#hash_2a2528a9e8e02af4
-localizeentry,#hash_2a2ac356732e680e
+localizeentry,#mpui/slope_caps
 localizeentry,#hash_2a2e135eb8b81ce7
 localizeentry,#hash_2a2f2b5e2765e548
 localizeentry,d#hash_2a3040d8657a873b
@@ -2324,7 +2324,7 @@ localizeentry,#hash_2a855b12a7513d99
 localizeentry,#hash_2a856c4d38e57e54
 localizeentry,#hash_2a8aa505763ea85c
 localizeentry,#hash_2a8be0bda1477901
-localizeentry,#hash_2a995770d23477ee
+localizeentry,#mpui/fire_rate_caps
 localizeentry,#hash_2a9b960387179e61
 localizeentry,d#hash_2aa2e6ae102b15f4
 localizeentry,#hash_2aa434ef9540e2a8
@@ -2389,7 +2389,7 @@ localizeentry,d#mpui/acog_desc
 localizeentry,#hash_2b80d873390ed3a0
 localizeentry,#hash_2b896205081f26d8
 localizeentry,#hash_2b8a3b5e8d5b07fa
-localizeentry,#hash_2b9072c8639ad5d3
+localizeentry,#mpui/healing
 localizeentry,d#hash_2b91a8436f543438
 localizeentry,#hash_2b961f7a1211e1c4
 localizeentry,#hash_2b9aa49e2722025c
@@ -2405,7 +2405,7 @@ localizeentry,#hash_2bb5c9ce8ef3cfdc
 localizeentry,#hash_2bb5cbce8ef3d342
 localizeentry,#hash_2bb5ccce8ef3d4f5
 localizeentry,#hash_2bb69798ec9e5475
-localizeentry,d#hash_2bb87386985ba15f
+localizeentry,d#mpui/optics_caps
 localizeentry,#hash_2bba9196a42ba704
 localizeentry,#hash_2bbcf6acc14d3b4e
 localizeentry,#hash_2bbe8c9bff0851d3
@@ -2453,7 +2453,7 @@ localizeentry,#hash_2c8c88ce8e5318d0
 localizeentry,#hash_2c8c8bce8e531de9
 localizeentry,#hash_2c8fa94318891c68
 localizeentry,#hash_2c93be85f8f8453c
-localizeentry,#hash_2c95e6e315a859ab
+localizeentry,#mp/away
 localizeentry,#hash_2c975fb8abd2c141
 localizeentry,#hash_2c9a19ce187cc238
 localizeentry,#hash_2c9f9cb56f903577
@@ -2505,7 +2505,7 @@ localizeentry,#hash_2d7d19ee221b6087
 localizeentry,#hash_2d82828496221470
 localizeentry,#hash_2d82838496221623
 localizeentry,#hash_2d828484962217d6
-localizeentry,d#hash_2d851b47994ea820
+localizeentry,d#menu/friends_caps
 localizeentry,#hash_2d857b678900f860
 localizeentry,d#hash_2d85a60f366822d1
 localizeentry,#hash_2d8a109316a209ec
@@ -2638,7 +2638,7 @@ localizeentry,#hash_308fca0b5c54c70f
 localizeentry,#hash_309dca95beaf9a2d
 localizeentry,#hash_309eccc4e90fd5cd
 localizeentry,#hash_309f1f222b498277
-localizeentry,#hash_309f6a17f45fceaf
+localizeentry,#mpui/spectating
 localizeentry,#hash_30a4daba5cdf57ad
 localizeentry,#hash_30ac5622a4ffaff3
 localizeentry,#hash_30b43fb583e068e0
@@ -2683,7 +2683,7 @@ localizeentry,#hash_312e5a425d1724ed
 localizeentry,#hash_3133d7710cbec39e
 localizeentry,#hash_31391afdd9beba7c
 localizeentry,#hash_31415157fb2372f5
-localizeentry,#hash_3149a2de2833bad4
+localizeentry,#mpui/kills_caps
 localizeentry,#hash_314db16041a743b9
 localizeentry,#hash_314f892e94a7ed36
 localizeentry,#hash_3150cf57c350933d
@@ -2711,7 +2711,7 @@ localizeentry,#hash_31e91dea77d85f86
 localizeentry,d#hash_31e9d057a03398bf
 localizeentry,d#hash_31eb9f45ee1fdeb3
 localizeentry,#hash_31f46e2fa556b2fd
-localizeentry,d#hash_31f4945715aa4bfd
+localizeentry,d#key/uparrow
 localizeentry,#hash_31fc2491b19cdaa2
 localizeentry,#hash_31ff4812d0423a60
 localizeentry,#hash_32024d1e52d9daff
@@ -2795,7 +2795,7 @@ localizeentry,#hash_3361f9c1f3785e8b
 localizeentry,#hash_336e4ff9d606111f
 localizeentry,#hash_336e50f9d60612d2
 localizeentry,#hash_337090ff779fde4f
-localizeentry,d#hash_337772a447c34221
+localizeentry,d#supplypod/name
 localizeentry,#hash_3388e9e4797ab68d
 localizeentry,#hash_338dd61b3be652da
 localizeentry,#hash_33948cfb76ef9cd4
@@ -2887,7 +2887,7 @@ localizeentry,d#hash_34fa4bbc279dc2ee
 localizeentry,#hash_34fa8bf6b89a65a2
 localizeentry,#hash_34fbfd6b591e8b59
 localizeentry,#hash_350156167af598ec
-localizeentry,#hash_3503ea7ac6a9a9db
+localizeentry,#mpui/done
 localizeentry,#hash_3506a58a5d36f959
 localizeentry,#hash_350d88cc88a701aa
 localizeentry,#hash_3512ba97d58c59f9
@@ -2901,7 +2901,7 @@ localizeentry,#hash_352d1b6876078d33
 localizeentry,#hash_353625450d985869
 localizeentry,#hash_353716fc416fce00
 localizeentry,#hash_353c59fdeb9c467a
-localizeentry,#hash_353d10bef28d6e73
+localizeentry,#menu/variants_caps
 localizeentry,#hash_353d4fac0ad17058
 localizeentry,#hash_354408e430f0aeef
 localizeentry,d#hash_3544b7c59fa5c59c
@@ -2968,7 +2968,7 @@ localizeentry,#hash_36433a1fa4d95bb7
 localizeentry,#hash_36467bba17407d3f
 localizeentry,#menu/charm_steel_balls
 localizeentry,#hash_364c6e96a104e991
-localizeentry,#hash_36567bb8c49ec72d
+localizeentry,#menu/ascend
 localizeentry,#hash_3656cf7975588ed1
 localizeentry,#hash_365aa50827bad764
 localizeentry,#hash_36640746a6cf5feb
@@ -3097,7 +3097,7 @@ localizeentry,#hash_38b04e832ab2aeff
 localizeentry,#hash_38b4ad076d0e031e
 localizeentry,#hash_38b7d3076d107987
 localizeentry,#hash_38bf98f9da1fc248
-localizeentry,d#hash_38cadd3d78c04519
+localizeentry,d#hud/heal
 localizeentry,#hash_38cfe818e4f35809
 localizeentry,d#hash_38deb3201ab34d8e
 localizeentry,#hash_38e31f4b06185dff
@@ -3123,7 +3123,7 @@ localizeentry,#hash_3948d60c96caf693
 localizeentry,#hash_394bd583e22ddcb3
 localizeentry,d#warzone/start_warzone
 localizeentry,#hash_3950a28ee60b7c45
-localizeentry,#hash_395155665e8f3f4b
+localizeentry,#mpui/damage_dealt
 localizeentry,#hash_395d9cdb56b4c242
 localizeentry,#hash_3960be1e54bcb314
 localizeentry,#hash_3962bc944823aed4
@@ -3133,7 +3133,7 @@ localizeentry,#hash_396f5907d7b854d2
 localizeentry,#hash_397013c393dc40aa
 localizeentry,#hash_3971ce92106d1c24
 localizeentry,d#mpui/extbarrel2
-localizeentry,#hash_397d2d83c3f46ee5
+localizeentry,#mpui/autospawn_caps
 localizeentry,#hash_3986416401b16011
 localizeentry,#hash_398782f7763e4d2d
 localizeentry,#hash_398982db56d9d0ff
@@ -3211,7 +3211,7 @@ localizeentry,#hash_3abd1388f387c4e5
 localizeentry,#hash_3abd750a64f19426
 localizeentry,#menu/charm_surfboard
 localizeentry,#hash_3ac2ac2dd31799f0
-localizeentry,d#hash_3ac3b80c833b60e1
+localizeentry,d#menu/select_caps
 localizeentry,d#mpui/reddot_desc
 localizeentry,#hash_3ad34b109062d9c7
 localizeentry,#hash_3ad7384390476ccf
@@ -3220,7 +3220,7 @@ localizeentry,#hash_3ae47cbbedbc9815
 localizeentry,#hash_3aeb79bbedc2b1aa
 localizeentry,#hash_3aee392ecef58b99
 localizeentry,#hash_3afd19ee5cdf20c8
-localizeentry,#hash_3affda3e711d7d6f
+localizeentry,#mpui/select_spawn
 localizeentry,#hash_3b031f2c4935820d
 localizeentry,#hash_3b073388df23d032
 localizeentry,#hash_3b0ca77d79581283
@@ -3254,7 +3254,7 @@ localizeentry,#hash_3bda3a3393c64093
 localizeentry,#hash_3bdd6acc3f0afe23
 localizeentry,#hash_3be1b50c4ef79f7c
 localizeentry,#hash_3be8ac0c4efdaedf
-localizeentry,d#hash_3bf437dd2e981df1
+localizeentry,d#smartcover/name
 localizeentry,#hash_3bf4e63d17390af4
 localizeentry,#hash_3c0b9d153849e05a
 localizeentry,#hash_3c0f13d289c30c66
@@ -3346,7 +3346,7 @@ localizeentry,#hash_3d692b42cd6438e8
 localizeentry,#hash_3d6f193a86f0f78d
 localizeentry,d#hash_3d75c0876757457c
 localizeentry,#hash_3d7a94a167f3f378
-localizeentry,d#hash_3d7abb3373fab887
+localizeentry,d#zmui/suppressor_desc
 localizeentry,#menu/charm_ice_cream
 localizeentry,#hash_3d9839f8ff9fdc54
 localizeentry,#hash_3d9b3f3c543b9bc4
@@ -3571,7 +3571,7 @@ localizeentry,#hash_41864917bb3561d9
 localizeentry,d#weapon/pistol_burst_t8
 localizeentry,#hash_418c4b1b96ec5b5b
 localizeentry,#hash_418dc1b35f27eca5
-localizeentry,d#hash_4191cdda584b4408
+localizeentry,d#menu/store_caps
 localizeentry,#hash_4193a8ea057dc308
 localizeentry,#hash_4194c81053f07918
 localizeentry,#hash_41980f6e8c22676c
@@ -3760,7 +3760,7 @@ localizeentry,#hash_442d7f680da35d79
 localizeentry,#hash_442e1ad0cf0099e0
 localizeentry,#hash_443101fa69c21abf
 localizeentry,#hash_44318e05949a47b3
-localizeentry,#hash_443361ec3b224047
+localizeentry,#mpui/rejack_caps
 localizeentry,#hash_4440efe3d88fabd9
 localizeentry,#hash_444235598b871517
 localizeentry,#hash_444236598b8716ca
@@ -3771,7 +3771,7 @@ localizeentry,#hash_44519b38547479f8
 localizeentry,#hash_4452dba031468e92
 localizeentry,#hash_44532a9b5af544da
 localizeentry,d#hash_44568a3c9bc35bb4
-localizeentry,#hash_44583e7c93d5801e
+localizeentry,#codcaster/round
 localizeentry,#hash_445f7c65f4c3f9fc
 localizeentry,#hash_44608eb304007fb1
 localizeentry,#hash_44643ccd2f214bc2
@@ -3817,7 +3817,7 @@ localizeentry,#hash_452331016aa098d0
 localizeentry,#hash_452332016aa09a83
 localizeentry,#hash_452333016aa09c36
 localizeentry,#hash_4525b527b06bf4d7
-localizeentry,#hash_4525be5a39df06ca
+localizeentry,#mpui/requirement
 localizeentry,#hash_4526f0df0c3ad440
 localizeentry,#hash_452bb7756d05f301
 localizeentry,d#hash_452fd06faf792671
@@ -3869,7 +3869,7 @@ localizeentry,#hash_45e77301703287d1
 localizeentry,#hash_45e85e9a1ef2498c
 localizeentry,#hash_45efeb8056bf60d0
 localizeentry,#hash_45f33c955a711aeb
-localizeentry,d#hash_45f407bc037861dc
+localizeentry,d#options/advanced
 localizeentry,#hash_45fe9567ac6fd559
 localizeentry,#hash_4608602956a2a836
 localizeentry,#menu/detach
@@ -3884,7 +3884,7 @@ localizeentry,#hash_463179d80403e1f5
 localizeentry,#hash_463411d167fcb034
 localizeentry,#hash_4635c0c445e70f61
 localizeentry,#hash_463b560d5cd8df69
-localizeentry,#hash_463e51bff17859f1
+localizeentry,#mpui/primary_caps
 localizeentry,#hash_4642faad5ad745d3
 localizeentry,#hash_4642fbad5ad74786
 localizeentry,#hash_4643e660c9a1d85e
@@ -3995,7 +3995,7 @@ localizeentry,#hash_47e447cfc6cf45e2
 localizeentry,#hash_47e5c9295eabcadb
 localizeentry,#hash_47e5ca295eabcc8e
 localizeentry,#hash_47e5cb295eabce41
-localizeentry,d#hash_480234a872bd64ac
+localizeentry,d#score/blank
 localizeentry,#hash_4802bfcab17b969e
 localizeentry,#hash_480a14dc29951754
 localizeentry,#hash_4810c0d2a04a0a87
@@ -4006,7 +4006,7 @@ localizeentry,#hash_481dd860e4fde9f6
 localizeentry,#hash_481e19b6a6910262
 localizeentry,#hash_481e5e34f798331e
 localizeentry,#hash_481e857eee7f2a9c
-localizeentry,d#hash_481f4d1215e979eb
+localizeentry,d#menu/slayer_caps
 localizeentry,#hash_48201c791ab331e1
 localizeentry,#hash_4823cc7c6aef4c56
 localizeentry,#hash_482a97cce34c63ac
@@ -4116,13 +4116,13 @@ localizeentry,#hash_499d83b90aa5e160
 localizeentry,#hash_49a34936622d3a37
 localizeentry,#hash_49a937f02b54e7f5
 localizeentry,#hash_49ae8db90ab46591
-localizeentry,#hash_49b521fc58c6c10a
+localizeentry,#menu/ratio_caps
 localizeentry,#codcaster/an_ctf_return
 localizeentry,#hash_49b80ca7dbb3a50e
 localizeentry,d#killstreak/drone_squadron
 localizeentry,#hash_49bf8e1723fce35b
 localizeentry,#hash_49c3a2fb456eabfa
-localizeentry,#hash_49c3dce861008c68
+localizeentry,#mpui/lock_caps
 localizeentry,#hash_49d3fe353466993f
 localizeentry,#hash_49d5a5dbed7edb99
 localizeentry,#hash_49d6da3e191e4dc0
@@ -4157,7 +4157,7 @@ localizeentry,#hash_4a3dc730a88b4de9
 localizeentry,#hash_4a4903aefcea3a7e
 localizeentry,#hash_4a4b63ea3b1041bd
 localizeentry,d#hash_4a584bc8c443f246
-localizeentry,d#hash_4a67caa5982ed86c
+localizeentry,d#demo/menu
 localizeentry,d#hash_4a6f079813e273c3
 localizeentry,#hash_4a71abca278a5ca2
 localizeentry,#menu/charm_computer_teeth
@@ -4269,7 +4269,7 @@ localizeentry,#hash_4cb55edafff81c41
 localizeentry,#hash_4cb6395ad206b469
 localizeentry,d#hash_4cb6b3d695c746d7
 localizeentry,#hash_4cb7c25c303f4425
-localizeentry,#hash_4cbb57645849ce8e
+localizeentry,#wz/stash
 localizeentry,#hash_4cc29b216cf69a8a
 localizeentry,#hash_4cc3729cd1efa4ef
 localizeentry,#hash_4cc61944e8e67ff1
@@ -4309,7 +4309,7 @@ localizeentry,#hash_4d582d25fd110bab
 localizeentry,#hash_4d62682d0ca1a83c
 localizeentry,#hash_4d655573178c9880
 localizeentry,#hash_4d655ea0a3f14128
-localizeentry,#hash_4d6df9fa110152cc
+localizeentry,#mpui/rotate_caps
 localizeentry,#hash_4d6f48c20816e459
 localizeentry,#hash_4d758a94180a2f38
 localizeentry,#hash_4d765f73179b1cb1
@@ -4424,7 +4424,7 @@ localizeentry,#hash_4f5c575b53fb1a1f
 localizeentry,#hash_4f612671c131f46e
 localizeentry,#hash_4f64412735ea3fa0
 localizeentry,#hash_4f646c19fd29fabe
-localizeentry,#hash_4f669512df581896
+localizeentry,#menu/accuracy_caps
 localizeentry,#hash_4f676b2735ecbcd5
 localizeentry,#hash_4f6f483eead757f0
 localizeentry,#hash_4f76473eeadd74eb
@@ -4527,7 +4527,7 @@ localizeentry,#hash_51430b866514855e
 localizeentry,#menu/switch_seats
 localizeentry,#hash_51470bfe57bd73f6
 localizeentry,#hash_51473435dfb364ac
-localizeentry,#hash_51559855588ac43d
+localizeentry,#mpui/change_caps
 localizeentry,#hash_5160fdaf5594b345
 localizeentry,#hash_5161df2b7aed7660
 localizeentry,#hash_5161f02800438f8e
@@ -4569,7 +4569,7 @@ localizeentry,d#mpui/none
 localizeentry,#hash_51ec0cddcf9bf540
 localizeentry,#hash_51ececbbace5419e
 localizeentry,#hash_51f09b067107c22c
-localizeentry,d#hash_51f9844545cb4ff6
+localizeentry,d#menu/you_caps
 localizeentry,#hash_51faca1da802e66d
 localizeentry,#hash_51fdc6938f3218d0
 localizeentry,#hash_520626abe62db14d
@@ -4611,7 +4611,7 @@ localizeentry,#hash_528794fbc2dce8d4
 localizeentry,#hash_528a99ce8459e377
 localizeentry,#hash_529194fee3603674
 localizeentry,#hash_52930cfba4ac7d16
-localizeentry,d#hash_5297a0d6fb981600
+localizeentry,d#menu/deaths_caps
 localizeentry,#hash_529982dc577053a0
 localizeentry,#hash_529c99f08b69e899
 localizeentry,#hash_529fca1fd7e97d6e
@@ -4645,7 +4645,7 @@ localizeentry,#hash_5339b70773dc5964
 localizeentry,#hash_533f2fb8309a845f
 localizeentry,#hash_534469965f403c73
 localizeentry,#hash_5348a8841e9637a4
-localizeentry,d#hash_5349737b0bdaa763
+localizeentry,d#menu/confirm_caps
 localizeentry,#hash_534ad229607585b5
 localizeentry,#hash_535156e132488fbb
 localizeentry,#menu/charm_sniper_bullet
@@ -4866,7 +4866,7 @@ localizeentry,#hash_571449d2c7ff6e38
 localizeentry,#hash_57174e2d3dfc13a2
 localizeentry,d#weapon/bare_hands
 localizeentry,#hash_572b9a2393a28000
-localizeentry,#hash_5732d212e4511a00
+localizeentry,#mpui/last_stand
 localizeentry,#hash_57459a07a1f884b8
 localizeentry,#hash_5746284b2b2d7dd0
 localizeentry,#hash_5749124b2b2f8e45
@@ -4921,7 +4921,7 @@ localizeentry,#hash_583ceb6307eb11db
 localizeentry,#hash_583db35ff3c5e100
 localizeentry,#hash_584444a468400136
 localizeentry,#hash_5845c0519f1dfead
-localizeentry,#hash_5848783f573e71ab
+localizeentry,#mp/humiliated
 localizeentry,#hash_584ba75289c6e7d6
 localizeentry,#hash_584f1b462c9b1f9c
 localizeentry,#hash_5855f2c8553a77c4
@@ -4945,7 +4945,7 @@ localizeentry,#hash_58bb47d51658c739
 localizeentry,#hash_58c8a54973366e79
 localizeentry,#hash_58cbaddec0c539ea
 localizeentry,#hash_58ccaf5b80bfe9c0
-localizeentry,#hash_58ce4aa1038595d4
+localizeentry,#mp/humiliation
 localizeentry,#hash_58daf6e12d26b4d2
 localizeentry,#hash_58daf7e12d26b685
 localizeentry,#weapon/hero_minigun
@@ -5133,14 +5133,14 @@ localizeentry,#hash_5bd2ee569bb767e7
 localizeentry,#hash_5bd52b3366c72924
 localizeentry,#hash_5bd5e6c762b0c975
 localizeentry,#hash_5bd89b64e5f92e45
-localizeentry,d#hash_5bdcd5292604f434
+localizeentry,d#groups/lb
 localizeentry,d#hash_5beb557accb21315
 localizeentry,#hash_5bf1acff451360ca
 localizeentry,d#weapon/hero_pineapplegun
 localizeentry,#mp/overtime
 localizeentry,#hash_5bfc7e7c326b58fc
 localizeentry,#hash_5bfc817c326b5e15
-localizeentry,d#hash_5bfed5292621da9a
+localizeentry,d#groups/rb
 localizeentry,#hash_5c01553366ecab6d
 localizeentry,#hash_5c041d7f2e7ec80b
 localizeentry,#hash_5c062023aed98645
@@ -5154,7 +5154,7 @@ localizeentry,#hash_5c379fe47a704ff2
 localizeentry,#codcaster/an_uplink_ball_reset
 localizeentry,#hash_5c45c02b0c078b38
 localizeentry,#hash_5c45c12b0c078ceb
-localizeentry,d#hash_5c4b68d4f7c51908
+localizeentry,d#menu/social_caps
 localizeentry,#hash_5c4ccf3f455ba440
 localizeentry,#hash_5c4d1133293b4f68
 localizeentry,#hash_5c5d171ddd59bca3
@@ -5274,7 +5274,7 @@ localizeentry,#hash_5e0d1cf5445e07f0
 localizeentry,#hash_5e1006f544601865
 localizeentry,d#hash_5e12ab7e02a89fd4
 localizeentry,#hash_5e1828c1f60bc7e1
-localizeentry,#hash_5e20bf67125a4903
+localizeentry,#menu/status_caps
 localizeentry,#hash_5e21f56851d9ce47
 localizeentry,#hash_5e279acd495880e1
 localizeentry,d#hash_5e2c81adb5a5264a
@@ -5315,7 +5315,7 @@ localizeentry,#hash_5ec2d9a6e9b8c713
 localizeentry,d#mpui/camo_contagious
 localizeentry,#hash_5ed77e6cc181e16c
 localizeentry,#menu/charm_lava_lamp
-localizeentry,d#hash_5eef90b1483c4c23
+localizeentry,d#mpui/aar_caps
 localizeentry,#hash_5ef0437d4a42fd01
 localizeentry,#hash_5ef48eb48f211b4a
 localizeentry,#hash_5ef48fb48f211cfd
@@ -5357,7 +5357,7 @@ localizeentry,#hash_5f6bce20ebf13411
 localizeentry,#hash_5f6f97dc2b1e8de8
 localizeentry,#hash_5f76c3e73de6a9e2
 localizeentry,#hash_5f7acf05f6ac067c
-localizeentry,#hash_5f803b470392d1c7
+localizeentry,#menu/defending_caps
 localizeentry,#hash_5f8076551c7e0e73
 localizeentry,#hash_5f8162d0c411f18d
 localizeentry,#hash_5f8d908bad8fd8c2
@@ -5690,7 +5690,7 @@ localizeentry,#hash_651ee5f8d5d5aa7d
 localizeentry,d#hash_652798c8c39df5b0
 localizeentry,#hash_65283ccd39f3b95b
 localizeentry,#hash_652f22228aa92031
-localizeentry,d#hash_65307410511dd3aa
+localizeentry,d#menu/support_caps
 localizeentry,#hash_6530e998a26482b8
 localizeentry,#hash_6530ea98a264846b
 localizeentry,#hash_6531ce306e1e8e2d
@@ -5703,7 +5703,7 @@ localizeentry,#hash_6544af5cfdb0037d
 localizeentry,d#hash_654b3a8ecbf13a67
 localizeentry,#hash_655231d4b2916503
 localizeentry,#hash_6555971ad9da7e68
-localizeentry,#hash_6562bd8ee9e11c5b
+localizeentry,#mpui/equipment_caps
 localizeentry,#hash_65673de821a54ce8
 localizeentry,#hash_6567e13f2596ad3e
 localizeentry,#hash_656c0e2f29bdee9d
@@ -5732,17 +5732,17 @@ localizeentry,#hash_65df1436b4d0274d
 localizeentry,#hash_65f59386816c8378
 localizeentry,#hash_65f8372f2ae484ca
 localizeentry,#hash_65f933755251cef7
-localizeentry,#hash_6601cb85da109187
+localizeentry,#menu/descend
 localizeentry,#hash_66038d5384bf0f4f
 localizeentry,#hash_6603e9a153378f01
 localizeentry,#hash_660ac2650ed435bc
 localizeentry,#hash_660d369a01b9be2a
 localizeentry,d#killstreak/cuav
 localizeentry,#hash_6615323cf730f527
-localizeentry,#hash_6615f9892006f4f4
+localizeentry,#menu/look
 localizeentry,#mp/waiting_for_hq
 localizeentry,d#hash_663114aa52ffcb21
-localizeentry,d#hash_66326ff81589a75b
+localizeentry,d#coop/reviving
 localizeentry,d#menu/continue
 localizeentry,#hash_6642cdce84d052e5
 localizeentry,#hash_6643a408d50abe52
@@ -5774,9 +5774,9 @@ localizeentry,#hash_66f7221bc028984d
 localizeentry,#hash_66fd2b60ad749df4
 localizeentry,#hash_6700bcd4625c1e2b
 localizeentry,#hash_6701f8926b33dfaf
-localizeentry,d#hash_67021e2872781bfa
+localizeentry,d#spawnbeacon/name
 localizeentry,#hash_67028754f32b288a
-localizeentry,#hash_6704768ae118e4c9
+localizeentry,#menu/waiting_for_players_caps
 localizeentry,#hash_6704e759add72c61
 localizeentry,#hash_67059225de038ad7
 localizeentry,#hash_6718470c0d241d7b
@@ -5846,7 +5846,7 @@ localizeentry,#hash_68308676a9bd9cd8
 localizeentry,#hash_6833adffce266831
 localizeentry,#hash_68370b7fa30d688d
 localizeentry,#hash_6838e2ed64fe26b6
-localizeentry,#hash_6843ab917826ee72
+localizeentry,#mp/infect_timer
 localizeentry,#hash_6851bf226750dfdf
 localizeentry,#hash_685abe87c1eccd08
 localizeentry,#hash_685da27d3f77b187
@@ -5906,7 +5906,7 @@ localizeentry,#hash_69584b2f0f4ad5ca
 localizeentry,#hash_695d6413275b68fc
 localizeentry,#hash_695fc5a9464aa5d4
 localizeentry,#codcaster/an_ctf_killcarrier
-localizeentry,d#hash_696470e1e65763da
+localizeentry,d#aar/ekia
 localizeentry,#hash_696708ff8d6589a0
 localizeentry,#hash_696709ff8d658b53
 localizeentry,#hash_697205b485fde9f4
@@ -5971,7 +5971,7 @@ localizeentry,#hash_6a63a27e15513e15
 localizeentry,#hash_6a6790b46fccdad7
 localizeentry,d#hash_6a6ed171eca1ca83
 localizeentry,#hash_6a6f3045bdae0240
-localizeentry,d#hash_6a75180bc7fda8f5
+localizeentry,d#menu/score_caps
 localizeentry,#hash_6a794630dcb80e09
 localizeentry,#hash_6a825d57442254db
 localizeentry,#hash_6a826911a1011d85
@@ -6111,7 +6111,7 @@ localizeentry,#hash_6cf10fe813765772
 localizeentry,#hash_6cf6304a34e6009e
 localizeentry,#hash_6cf689a577ef3732
 localizeentry,#hash_6cfb77221d739b12
-localizeentry,#hash_6cffc6656e99316e
+localizeentry,#mpui/damage_caps
 localizeentry,d#menu/select
 localizeentry,#hash_6d0e1c85a3d05cfd
 localizeentry,#hash_6d0fea8de926bff5
@@ -6185,7 +6185,7 @@ localizeentry,#hash_6e99f721f9e8a0d0
 localizeentry,#hash_6e9ce121f9eab145
 localizeentry,#hash_6e9e0382fb6eb944
 localizeentry,#hash_6ea5e6ba7c570fc6
-localizeentry,d#hash_6ea7793f2daf4059
+localizeentry,d#key/enter
 localizeentry,#hash_6ea9d05fbeb780cf
 localizeentry,#hash_6eac60f43721e9ab
 localizeentry,#hash_6eaee6c2da53691f
@@ -6265,7 +6265,7 @@ localizeentry,#hash_70729f5ac1f7647e
 localizeentry,#hash_7075b6b905df5eb8
 localizeentry,#codcaster/codcaster_settings
 localizeentry,#hash_7083e9bd6dd1f9fd
-localizeentry,d#hash_7085044e7b80d5a3
+localizeentry,d#mpui/reticle_default
 localizeentry,#hash_708c1ff90fbb88bd
 localizeentry,d#menu/online
 localizeentry,#hash_7090d48f0bbdfa80
@@ -6331,7 +6331,7 @@ localizeentry,#hash_71cd040e856d2d69
 localizeentry,d#weapon/pistol_standard_t8
 localizeentry,#hash_71d002945858a2cd
 localizeentry,#hash_71d7eb967605d103
-localizeentry,#hash_71e4f4e133081c25
+localizeentry,#codcaster/lives
 localizeentry,#hash_71e91eb261c073f0
 localizeentry,#hash_71fc62f886c768a7
 localizeentry,#hash_72017121a2381570
@@ -6474,7 +6474,7 @@ localizeentry,d#hash_746b5a4a4e88274b
 localizeentry,#hash_746b5ffec5c0f0e3
 localizeentry,#hash_746c4156ce2cda74
 localizeentry,#hash_746fefd2a3bc22ee
-localizeentry,#hash_7470b2f1c3bde7f4
+localizeentry,#mpui/range_caps
 localizeentry,#hash_7472d5d2a3be2c97
 localizeentry,#hash_74780a983da51a66
 localizeentry,#hash_747b3818203b13cb
@@ -6492,7 +6492,7 @@ localizeentry,d#hash_7499a03c93145264
 localizeentry,#hash_74a1163f7413fe78
 localizeentry,#hash_74a6578bc66ee71c
 localizeentry,d#weapon/hatchet
-localizeentry,#hash_74ae51efe63f0158
+localizeentry,#mpui/vs_caps
 localizeentry,d#mpui/stalker_desc
 localizeentry,#hash_74e465610ac830ce
 localizeentry,#hash_74f9ebbe5bb05a35
@@ -6529,7 +6529,7 @@ localizeentry,#hash_756387c44e8d51c1
 localizeentry,d#hash_7564cce16f4274f6
 localizeentry,#hash_7568102a3e2b4def
 localizeentry,#hash_756f951596355738
-localizeentry,#hash_75735a9afd8468c7
+localizeentry,#mpui/decoy_caps
 localizeentry,#hash_75777c91686843d4
 localizeentry,#hash_757b7bccc56f633f
 localizeentry,d#weapon/hero_flamethrower
@@ -6556,7 +6556,7 @@ localizeentry,#hash_75c3d4b4f8592bcd
 localizeentry,#hash_75c3f30aad6fe8a4
 localizeentry,#hash_75c3f40aad6fea57
 localizeentry,#hash_75c3f60aad6fedbd
-localizeentry,#hash_75c4e2ba06ea49a5
+localizeentry,#menu/xp_earned_caps
 localizeentry,#hash_75cd93f6fd1444f3
 localizeentry,#hash_75d00d52949e11eb
 localizeentry,#hash_75d9d317a4b05d1b
@@ -6595,7 +6595,7 @@ localizeentry,#hash_769f5695c0fb6bb0
 localizeentry,#hash_76a702a89f4cdb54
 localizeentry,#hash_76aa16ed3dd04b80
 localizeentry,#hash_76b065107ce2d9b0
-localizeentry,#hash_76b39c94b6f50858
+localizeentry,#menu/gas
 localizeentry,#hash_76b44f107ce69d25
 localizeentry,#hash_76bacc143afee8f5
 localizeentry,#hash_76bd8e89161df2ad
@@ -6608,7 +6608,7 @@ localizeentry,#hash_76ca6551d70aeab4
 localizeentry,#hash_76cbc958f8398240
 localizeentry,#hash_76ce78cb5e40d306
 localizeentry,#hash_76ce79cb5e40d4b9
-localizeentry,#hash_76d213fa7bfb5d6e
+localizeentry,#mpui/critical
 localizeentry,#hash_76d83574c8576dcd
 localizeentry,#hash_76dbf4a515d15032
 localizeentry,#hash_76e783b6e0922884
@@ -6647,7 +6647,7 @@ localizeentry,#hash_77793441e039fb61
 localizeentry,#hash_777b42c8c882e2ac
 localizeentry,#hash_778259c8c889286f
 localizeentry,#hash_7784aa0204a2802d
-localizeentry,d#hash_778d439e1b360368
+localizeentry,d#menu/back_caps
 localizeentry,d#mp/plus
 localizeentry,#hash_77a018d07cbc60ee
 localizeentry,#hash_77a01ad07cbc6454
@@ -6670,7 +6670,7 @@ localizeentry,#hash_77fa7edf837436cb
 localizeentry,#hash_77fc1b7d2ba2da2b
 localizeentry,#hash_77ff33332d0fde39
 localizeentry,#hash_77ff7c2e065725cb
-localizeentry,d#hash_7800cbd9308e73c2
+localizeentry,d#mpui/bonus_caps
 localizeentry,#hash_7804ec43ffd16028
 localizeentry,#hash_7808f8e67bcf54ea
 localizeentry,d#killstreak/ai_tank_drop
@@ -6715,7 +6715,7 @@ localizeentry,#hash_78dc2d98a80cb1dd
 localizeentry,#hash_78dfa93eceadd616
 localizeentry,#hash_78e2a90cf85daa3b
 localizeentry,#hash_78e3d117ede80c42
-localizeentry,#hash_78e7772dfd9bbdeb
+localizeentry,#menu/options
 localizeentry,#hash_78e86d9c45d4ac54
 localizeentry,#hash_78ff9f82777040d9
 localizeentry,#hash_7907479c45ef1c51
@@ -6807,7 +6807,7 @@ localizeentry,#hash_7ad7956e659c3ee6
 localizeentry,#hash_7ae3c7f801226d64
 localizeentry,#hash_7af078ed2c412b8b
 localizeentry,#hash_7af0e2bfe5e9a1fe
-localizeentry,#hash_7af729b503010bca
+localizeentry,#mpui/prev_caps
 localizeentry,d#mpui/rangefinder_desc
 localizeentry,#hash_7b15978f7b8174f7
 localizeentry,#hash_7b15b7214409f6fb
@@ -6862,7 +6862,7 @@ localizeentry,#hash_7bf7ebe965082bda
 localizeentry,#hash_7bf7ece965082d8d
 localizeentry,d#hash_7bf8bcf55e2bd26e
 localizeentry,#hash_7c01ecdd60242354
-localizeentry,#hash_7c09d10f916fd7d3
+localizeentry,#dog/inbound
 localizeentry,#hash_7c0b06196b5f6ca4
 localizeentry,#hash_7c0b9435c2c47731
 localizeentry,#hash_7c0d08733d2980d0

@@ -382,9 +382,9 @@ function challenge_complete( eventstruct )
         tablename = #"gamedata/stats/mp/statsmilestones" + var_c4e9517b + ".csv";
     }
     
-    var_eb67c133 = tablelookupcolumnforrow( tablename, row, 5 );
+    challengenamehash = tablelookupcolumnforrow( tablename, row, 5 );
     
-    if ( var_eb67c133 === #"hash_4a80d584aac2e7d0" )
+    if ( challengenamehash === #"hash_4a80d584aac2e7d0" )
     {
         return;
     }
@@ -406,12 +406,12 @@ function challenge_complete( eventstruct )
     self luinotifyevent( #"challenge_complete", 7, challengeindex, itemindex, challengetype, tablenumber, row, maxval, rewardxp );
     self function_b552ffa9( #"challenge_complete", 7, challengeindex, itemindex, challengetype, tablenumber, row, maxval, rewardxp );
     challengetier = int( tablelookupcolumnforrow( tablename, row, 1 ) );
-    matchrecordlogchallengecomplete( self, var_c4e9517b, challengetier, itemindex, var_eb67c133 );
+    matchrecordlogchallengecomplete( self, var_c4e9517b, challengetier, itemindex, challengenamehash );
     
     /#
         if ( getdvarint( #"scr_debugchallenges", 0 ) != 0 )
         {
-            challengestring = hashtostring( var_eb67c133 );
+            challengestring = hashtostring( challengenamehash );
             challengedescstring = challengestring + "<dev string:x3b>";
             challengetiernext = int( tablelookupcolumnforrow( tablename, row + 1, 1 ) );
             tiertext = "<dev string:x43>" + challengetier;

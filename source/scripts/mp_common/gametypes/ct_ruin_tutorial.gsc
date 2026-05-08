@@ -1791,7 +1791,7 @@ function function_1f212110( params )
         event = #"ekia";
         eventindex = level.scoreinfo[ event ][ #"row" ];
         var_6a98b865 = eattacker.momentum;
-        eattacker globallogic_score::giveplayermomentumnotification( var_595e41ee, #"hash_480234a872bd64ac", undefined, 0, weapon, 0, eventindex, event, undefined );
+        eattacker globallogic_score::giveplayermomentumnotification( var_595e41ee, #"score/blank", undefined, 0, weapon, 0, eventindex, event, undefined );
         
         if ( eattacker.momentum >= cost * 0.6 && var_6a98b865 < cost * 0.6 )
         {

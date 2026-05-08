@@ -2,7 +2,7 @@
     "name": "#concussion_grenade_mp",
     "baseWeapon": "#concussion_grenade",
     "displayname": "#weapon/stun_grenade",
-    "streamkey": "#hash_4ee6798253addd26",
+    "streamkey": "#concussion_grenade_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -34,7 +34,7 @@
     "sound660": "#uin_unavailable_charging",
     "projexplosionsound": "#hash_120db8330a68be06",
     "tunables1": "#concussion_grenade_tunables_mp",
-    "cacWeaponXCam": "#hash_114a9866237d87a3",
+    "cacWeaponXCam": "#ui_cam_cac_equip_concussion",
     "sharedWeaponSounds": "#equipment",
     "statusEffects": [
         {

@@ -26,7 +26,7 @@
     "peelSpeedMax": 600,
     "model": "#veh_t8_mil_boat_tactical_raft_gry",
     "deathModel": "#veh_t8_mil_boat_tactical_raft_dead_gry",
-    "soundDef": "#hash_3654a68e15f18431",
+    "soundDef": "#veh_zodiac",
     "compassIconMaterial": "#hash_6cee2f8b2dbb1302",
     "destructibleDef": "#hash_17dc430faeeb7b43",
     "tacticalModeIcon": "#hash_716771c2e774aebf",
@@ -40,7 +40,7 @@
                     {
                         "GAMEPAD": "#GAMEPAD",
                         "hash_7aecb1d7": 0,
-                        "hash_76b39c94b6f50858:hash_4be786c9": "localized17#hash_76b39c94b6f50858",
+                        "menu/gas:hash_4be786c9": "localized17#menu/gas",
                         "hash_334a8e60": "left",
                         "prompt": "+movestick"
                     },

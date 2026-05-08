@@ -519,7 +519,7 @@ function function_ca3759b1()
         s_wallbuy.trigger_stub function_cf62f3c7();
     }
     
-    level hash_6513373502cc589c();
+    level s_construction_push_point_a_markets();
     level flag::set( #"boss_fight_complete" );
 }
 
@@ -694,7 +694,7 @@ function function_26739c84()
 // Params 0
 // Checksum 0xa66692a1, Offset: 0x37b8
 // Size: 0xcc
-function hash_6513373502cc589c()
+function s_construction_push_point_a_markets()
 {
     level endon( #"hash_5aa1c9627e8626e0" );
     zm_hms_util::function_3c173d37();
@@ -1020,7 +1020,7 @@ function function_297251d8()
 // Size: 0x7c
 function shock_player( n_damage = 50 )
 {
-    shock_status_effect = getstatuseffect( #"hash_19533caf858a9f3b" );
+    shock_status_effect = getstatuseffect( #"shock_zm_trap" );
     self thread player_elec_damage( n_damage );
     self status_effect::status_effect_apply( shock_status_effect, undefined, self, 0 );
 }

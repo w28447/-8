@@ -30,7 +30,7 @@ LUI.createMenu.mp_infect_timer = function ( f1_arg0, f1_arg1 )
 	self.RadialTimer = RadialTimer
 	
 	local TextBox = LUI.UIText.new( 0.5, 0.5, -399, 399, 0.5, 0.5, -21, 21 )
-	TextBox:setText( Engine[0xF9F1239CFD921FE]( 0x843AB917826EE72 ) )
+	TextBox:setText( Engine[0xF9F1239CFD921FE]( "mp/infect_timer" ) )
 	TextBox:setTTF( "default" )
 	TextBox:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	TextBox:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

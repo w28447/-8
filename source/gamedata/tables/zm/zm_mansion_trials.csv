@@ -1,11 +1,11 @@
 0,#zm_mansion_default,7#,7#,7#,#,#,#,#,#,#,#,#,#
 1,#power_up,7#hash_66bea32b30e13c31,7#hash_2c33190105c2ca8b,7#,#turn_on_power,#,#,#,#,#,#,#,#
-2,#hash_616edd26855cf3de,7#hash_66bea02b30e13718,7#hash_263a5ffc86935a00,7#,#hash_2bec904229ece9ed,#3,#,#,#,#,#,#,#
+2,#hat_trick,7#hash_66bea02b30e13718,7#hash_263a5ffc86935a00,7#,#hash_2bec904229ece9ed,#3,#,#,#,#,#,#,#
 3,#pool_party,7#hash_66bea12b30e138cb,7#hash_330aad17af7067dd,7#,#mansion_billiards,#,#,#,#,#,#,#,#
 4,#hash_59d7d52f72df48b7,7#hash_66bea62b30e1414a,7#hash_5d10d89526e79efa,7#,#board_everything,#,#,#,#,#,#,#,#
 5,#piss_around,7#hash_66bea72b30e142fd,7#hash_4f6592650a2a5f47,7#,#restrict_loadout,#hash_7416cabf26f52c5f,#,#,#,#,#,#,#
 6,#stay_down,7#hash_66bea42b30e13de4,7#hash_253fa05b6436b54c,7#,#hash_64d77357e69aee75,#prone,#,#,#,#,#,#,#
-7,#hash_7c82e3cf38241e32,7#hash_66bea52b30e13f97,7#hash_5bb3517d2db4f389,7#,#friendly_fire,#,#,#,#,#,#,#,#
+7,#unfriendly_fire,7#hash_66bea52b30e13f97,7#hash_5bb3517d2db4f389,7#,#friendly_fire,#,#,#,#,#,#,#,#
 7,#,7#,7#,7#,#defend_area,#hash_4605f5af53930be9,#hash_4e01cfdcf3afa2a8,#hash_323bf6c826ff43b2,#zone_dining_room,#,#,#,#
 8,#bow_die,7#hash_66be9a2b30e12ce6,7#hash_282905b6967d0716,7#,#restrict_loadout,#bowie_knife,#,#,#,#,#,#,#
 9,#be_were,7#hash_66be9b2b30e12e99,7#hash_51c5c4c086e10933,7#,#special_enemy,#werewolf,#5,#10,#1,#,#,#,#
@@ -29,7 +29,7 @@
 23,#cursed,7#hash_66b8192b30dbe605,7#hash_40cccac56698bbcf,7#,#hash_3493e071de24d8a1,#1,#,#,#,#,#,#,#
 23,#,7#,7#,7#,#add_special,#crimson_nosferatu,#10,#10,#15,#25,#,#,#
 24,#hash_1dc4b24660ed29ce,7#hash_66b8122b30dbda20,7#hash_416c0321eb197ee8,7#,#restrict_loadout,#hash_1dd9431fbe7472b7,#,#,#,#,#,#,#
-25,#hash_7aa9155913e7e9ef,7#hash_66b8132b30dbdbd3,7#hash_212e47b34d8aab85,7#,#defend_area,#hash_480752cfe6b3170e,#hash_44eedf1d70da636b,#hash_59d06172908959c1,#zone_cemetery_mausoleum,#,#,#,#
+25,#mousetrap,7#hash_66b8132b30dbdbd3,7#hash_212e47b34d8aab85,7#,#defend_area,#hash_480752cfe6b3170e,#hash_44eedf1d70da636b,#hash_59d06172908959c1,#zone_cemetery_mausoleum,#,#,#,#
 26,#re_roll,7#hash_66b8142b30dbdd86,7#hash_467d8bdf8ad02176,7#,#randomize_perks,#,#,#,#,#,#,#,#
 27,#nosferatu,7#hash_66b8152b30dbdf39,7#hash_4223b5afbb7d9d13,7#,#add_special,#crimson_nosferatu,#25,#35,#50,#65,#,#,#
 28,#hash_7f2af1cecbcc389a,7#hash_66b81e2b30dbee84,7#hash_69a926893da551ac,7#,#hash_45ef12aaa7c1d585,#1000,#1,#,#,#,#,#,#

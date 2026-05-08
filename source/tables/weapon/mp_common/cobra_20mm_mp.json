@@ -31,11 +31,11 @@
     "sound250": "#hash_242aa17124751841",
     "tunables1": "#cobra_20mm_tunables_mp",
     "tracers": [
-        "#hash_1f105ee18f94a1c9",
-        "#hash_1f105ee18f94a1c9"
+        "#stealth_heli",
+        "#stealth_heli"
     ],
     "reticleCenter": "#reticle_center_cross",
     "image_e90": "#hud_obit_huey",
-    "fx_bc8": "#hash_33a8bb774ab61c17",
-    "fx_bd0": "#hash_33a8bb774ab61c17"
+    "fx_bc8": "#weapon/fx_muz_chppr_flash_sm_3p",
+    "fx_bd0": "#weapon/fx_muz_chppr_flash_sm_3p"
 }

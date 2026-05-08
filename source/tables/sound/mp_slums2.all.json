@@ -556,13 +556,13 @@
         {
             "value": 51,
             "next": 21,
-            "name": "#hash_369fc91126edf148",
+            "name": "#amb_crickets",
             "sequence": 0,
             "cullDistance": 750,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_369fc91126edf148",
+                    "name": "#amb_crickets",
                     "assetId": "#amb/animals/insects/crickets/crickets_short_chirp/amb_insects_crickets_short_chirp_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -601,7 +601,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_369fc91126edf148",
+                    "name": "#amb_crickets",
                     "assetId": "#amb/animals/insects/crickets/crickets_short_chirp/amb_insects_crickets_short_chirp_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -1543,13 +1543,13 @@
         {
             "value": 146,
             "next": 65535,
-            "name": "#hash_633b9532cf0da169",
+            "name": "#amb_flies",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_633b9532cf0da169",
+                    "name": "#amb_flies",
                     "assetId": "#amb/animals/insects/flies/flies_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -1588,7 +1588,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_633b9532cf0da169",
+                    "name": "#amb_flies",
                     "assetId": "#amb/animals/insects/flies/flies_02.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -1778,13 +1778,13 @@
         {
             "value": 184,
             "next": 65535,
-            "name": "#hash_186f7af36a61f275",
+            "name": "#amb_fridge",
             "sequence": 0,
             "cullDistance": 550,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_186f7af36a61f275",
+                    "name": "#amb_fridge",
                     "assetId": "#amb/electronics/fridge/fridge.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -1823,7 +1823,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_186f7af36a61f275",
+                    "name": "#amb_fridge",
                     "assetId": "#amb/electronics/fridge/fridge_hum.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -3299,13 +3299,13 @@
         {
             "value": 212,
             "next": 65535,
-            "name": "#hash_126fe7f0512e430d",
+            "name": "#amb_traffic",
             "sequence": 0,
             "cullDistance": 3500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_126fe7f0512e430d",
+                    "name": "#amb_traffic",
                     "assetId": "#amb/traffic/traffic_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -3344,7 +3344,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_126fe7f0512e430d",
+                    "name": "#amb_traffic",
                     "assetId": "#amb/traffic/traffic_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -3383,7 +3383,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_126fe7f0512e430d",
+                    "name": "#amb_traffic",
                     "assetId": "#amb/traffic/traffic_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -3953,13 +3953,13 @@
         {
             "value": 153,
             "next": 34,
-            "name": "#hash_2810aba2c5a266a8",
+            "name": "#amb_washer",
             "sequence": 0,
             "cullDistance": 500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2810aba2c5a266a8",
+                    "name": "#amb_washer",
                     "assetId": "#amb/domestic/washing_machine.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -7830,13 +7830,13 @@
         {
             "value": 66,
             "next": 65535,
-            "name": "#hash_1ff8bec27dfc1b70",
+            "name": "#dst_fern",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1ff8bec27dfc1b70",
+                    "name": "#dst_fern",
                     "assetId": "#dst/prop/fern/fern_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -8766,13 +8766,13 @@
         {
             "value": 202,
             "next": 65535,
-            "name": "#hash_501eff91f639c23e",
+            "name": "#dst_glass_pane",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_501eff91f639c23e",
+                    "name": "#dst_glass_pane",
                     "assetId": "#dst/generic/glass/med/glass_break_medium_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -9686,13 +9686,13 @@
         {
             "value": 200,
             "next": 65535,
-            "name": "#hash_6a7bbff93ccc7ab7",
+            "name": "#dst_luggage",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6a7bbff93ccc7ab7",
+                    "name": "#dst_luggage",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
                     "assetFileNameRelease": "#mp_slums2.all",
@@ -12876,13 +12876,13 @@
         {
             "value": 169,
             "next": 65535,
-            "name": "#hash_38c96854fb0017e",
+            "name": "#dst_typewriter",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_38c96854fb0017e",
+                    "name": "#dst_typewriter",
                     "assetId": "#dst/prop/typewriter/typewriter_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -14186,7 +14186,7 @@
                     "assetIdRelease": "#mp_slums2.all",
                     "assetFileNameRelease": "#mp_slums2.all",
                     "contextType": "#hash_730721b0b6373e1",
-                    "contextValue": "#hash_8f631787d4aaf77",
+                    "contextValue": "#outdoor",
                     "reverbSend": 0.001,
                     "centerSend": 0,
                     "volMin": 0.14125374,
@@ -14228,7 +14228,7 @@
                     "assetIdRelease": "#mp_slums2.all",
                     "assetFileNameRelease": "#mp_slums2.all",
                     "contextType": "#hash_730721b0b6373e1",
-                    "contextValue": "#hash_8f631787d4aaf77",
+                    "contextValue": "#outdoor",
                     "reverbSend": 0.001,
                     "centerSend": 0,
                     "volMin": 0.14125374,
@@ -14653,13 +14653,13 @@
         {
             "value": 8,
             "next": 100,
-            "name": "#hash_62f6aece3f08a442",
+            "name": "#evt_veh_small",
             "sequence": 0,
             "cullDistance": 12000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_62f6aece3f08a442",
+                    "name": "#evt_veh_small",
                     "secondaryname": "#hash_4faca1cf99b5ffcc",
                     "assetId": "#exp/vehicle/base/exp_veh_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
@@ -14700,7 +14700,7 @@
                     "unk178": "#hash_600140206"
                 },
                 {
-                    "name": "#hash_62f6aece3f08a442",
+                    "name": "#evt_veh_small",
                     "secondaryname": "#hash_4faca1cf99b5ffcc",
                     "assetId": "#exp/vehicle/base/exp_veh_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
@@ -14741,7 +14741,7 @@
                     "unk178": "#hash_600140206"
                 },
                 {
-                    "name": "#hash_62f6aece3f08a442",
+                    "name": "#evt_veh_small",
                     "secondaryname": "#hash_4faca1cf99b5ffcc",
                     "assetId": "#exp/vehicle/base/exp_veh_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
@@ -16327,13 +16327,13 @@
         {
             "value": 105,
             "next": 65535,
-            "name": "#hash_48bc31e222aa7c3e",
+            "name": "#exp_barrel_fire",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_48bc31e222aa7c3e",
+                    "name": "#exp_barrel_fire",
                     "assetId": "#dst/generic/fire/barrel/barrel_fire_02.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -21843,7 +21843,7 @@
                     "assetIdRelease": "#mp_slums2.all",
                     "assetFileNameRelease": "#mp_slums2.all",
                     "contextType": "#hash_730721b0b6373e1",
-                    "contextValue": "#hash_8f631787d4aaf77",
+                    "contextValue": "#outdoor",
                     "reverbSend": 0.001,
                     "centerSend": 0,
                     "volMin": 0.56234133,
@@ -21885,7 +21885,7 @@
                     "assetIdRelease": "#mp_slums2.all",
                     "assetFileNameRelease": "#mp_slums2.all",
                     "contextType": "#hash_730721b0b6373e1",
-                    "contextValue": "#hash_8f631787d4aaf77",
+                    "contextValue": "#outdoor",
                     "reverbSend": 0.001,
                     "centerSend": 0,
                     "volMin": 0.56234133,
@@ -22713,13 +22713,13 @@
         {
             "value": 38,
             "next": 65535,
-            "name": "#hash_43ad48046fb206c8",
+            "name": "#exp_veh_small",
             "sequence": 0,
             "cullDistance": 12000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_43ad48046fb206c8",
+                    "name": "#exp_veh_small",
                     "secondaryname": "#hash_680a1ca45380de2",
                     "assetId": "#exp/vehicle/base/exp_veh_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
@@ -22760,7 +22760,7 @@
                     "unk178": "#hash_6000b0206"
                 },
                 {
-                    "name": "#hash_43ad48046fb206c8",
+                    "name": "#exp_veh_small",
                     "secondaryname": "#hash_680a1ca45380de2",
                     "assetId": "#exp/vehicle/base/exp_veh_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
@@ -22801,7 +22801,7 @@
                     "unk178": "#hash_6000b0206"
                 },
                 {
-                    "name": "#hash_43ad48046fb206c8",
+                    "name": "#exp_veh_small",
                     "secondaryname": "#hash_680a1ca45380de2",
                     "assetId": "#exp/vehicle/base/exp_veh_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
@@ -24604,11 +24604,11 @@
             "loop": "#hash_44463359dd025b23",
             "duckId": "#default",
             "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_8f631787d4aaf77",
+            "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_8f631787d4aaf77",
+            "globalContextValue": "#outdoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,
@@ -24630,7 +24630,7 @@
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_8f631787d4aaf77",
+            "globalContextValue": "#outdoor",
             "defaultRoom": false,
             "reverbDryLevel": 0.7,
             "reverbWetLevel": 1,
@@ -24692,11 +24692,11 @@
             "loop": "#hash_41ae96f63b62a646",
             "duckId": "#default",
             "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_8f631787d4aaf77",
+            "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_8f631787d4aaf77",
+            "globalContextValue": "#outdoor",
             "defaultRoom": true,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,
@@ -24718,7 +24718,7 @@
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_8f631787d4aaf77",
+            "globalContextValue": "#outdoor",
             "defaultRoom": false,
             "reverbDryLevel": 0.7,
             "reverbWetLevel": 1,

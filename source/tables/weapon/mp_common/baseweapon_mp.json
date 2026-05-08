@@ -3,7 +3,7 @@
     "baseWeapon": "#baseweapon",
     "displayname": "#weapon/baseweapon",
     "weapon70": "#baseweapon",
-    "streamkey": "#hash_7ebf9ba4eaa7a69e",
+    "streamkey": "#baseweapon_soundbank",
     "scrstr_8c8": [
         "tag_sights_off"
     ],
@@ -76,8 +76,8 @@
         "#acog"
     ],
     "attachmentUniques": [
-        "#hash_4d1a7e25e5849b14",
-        "#hash_32bd4ca2ad504ec8"
+        "#au_baseweapon_none",
+        "#au_baseweapon_acog"
     ],
     "sharedWeaponSounds": "#rifle",
     "tracers": [

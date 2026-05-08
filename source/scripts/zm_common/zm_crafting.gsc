@@ -247,18 +247,18 @@ function function_b18074d0( name )
             }
             
             blueprint.w_result = get_component( blueprint.result, blueprint );
-            x = isdefined( blueprint.var_2206e7ed ) ? float( blueprint.var_2206e7ed ) : 0;
-            y = isdefined( blueprint.var_e414062 ) ? float( blueprint.var_e414062 ) : 0;
-            z = isdefined( blueprint.var_3c809ce0 ) ? float( blueprint.var_3c809ce0 ) : 0;
+            x = isdefined( blueprint.resultoffsetx ) ? float( blueprint.resultoffsetx ) : 0;
+            y = isdefined( blueprint.resultoffsety ) ? float( blueprint.resultoffsety ) : 0;
+            z = isdefined( blueprint.resultoffsetz ) ? float( blueprint.resultoffsetz ) : 0;
             blueprint.v_offset = ( x, y, z );
-            x = isdefined( blueprint.prj_scr_round_pause ) ? float( blueprint.prj_scr_round_pause ) : 0;
-            y = isdefined( blueprint.var_11928e3b ) ? float( blueprint.var_11928e3b ) : 0;
-            z = isdefined( blueprint.var_71c8b937 ) ? float( blueprint.var_71c8b937 ) : 0;
+            x = isdefined( blueprint.resultanglepitch ) ? float( blueprint.resultanglepitch ) : 0;
+            y = isdefined( blueprint.resultangleyaw ) ? float( blueprint.resultangleyaw ) : 0;
+            z = isdefined( blueprint.resultangleroll ) ? float( blueprint.resultangleroll ) : 0;
             blueprint.v_angles = ( x, y, z );
             
-            if ( !isdefined( blueprint.var_4dbc4aee ) )
+            if ( !isdefined( blueprint.craftingprompt ) )
             {
-                blueprint.var_4dbc4aee = "ERROR: Missing Prompt String";
+                blueprint.craftingprompt = "ERROR: Missing Prompt String";
             }
             
             setup_blueprint( blueprint );
@@ -1259,7 +1259,7 @@ function private function_8109ae21( player )
     }
     else
     {
-        self.hint_string = self.blueprint.var_4dbc4aee;
+        self.hint_string = self.blueprint.craftingprompt;
     }
     
     if ( zm_utility::get_story() == 1 && isdefined( self.var_c2f40a58 ) )
@@ -1586,10 +1586,10 @@ function private function_9693e041( player )
         if ( isdefined( self.blueprint.w_result.isriotshield ) && self.blueprint.w_result.isriotshield && isdefined( player.player_shield_reset_health ) && isdefined( player.var_d3345483 ) && player.var_d3345483 )
         {
             self.cost = function_ceac3bf9( player, 1 );
-            str = self.blueprint.var_1238231a;
-            var_e7ed2264 = function_c9163c5d( str );
-            hint_str = zm_utility::function_d6046228( str, var_e7ed2264 );
-            backup_str = zm_utility::function_d6046228( #"zombie/repair_shield", #"hash_197687e8f04962c9" );
+            str = self.blueprint.repairprompt;
+            str_pc = function_c9163c5d( str );
+            hint_str = zm_utility::function_d6046228( str, str_pc );
+            backup_str = zm_utility::function_d6046228( #"zombie/repair_shield", #"zombie/repair_shield_keyboard" );
             self.hint_string = isdefined( hint_str ) ? hint_str : backup_str;
             _shad_turret_debug_server = 1;
         }
@@ -1603,8 +1603,8 @@ function private function_9693e041( player )
     else if ( !player function_2d53738e( self.blueprint.w_result ) && ( isdefined( self.blueprint.var_c028dcfe ) && self.blueprint.var_c028dcfe && !player function_48ce9379( self.blueprint.w_result ) || isdefined( level.var_905507c3 ) && level.var_905507c3 ) )
     {
         str = self.blueprint.var_abd9b2d0;
-        var_e7ed2264 = function_c9163c5d( str );
-        hint_str = zm_utility::function_d6046228( str, var_e7ed2264 );
+        str_pc = function_c9163c5d( str );
+        hint_str = zm_utility::function_d6046228( str, str_pc );
         self.hint_string = isdefined( hint_str ) ? hint_str : "";
         self.cost = undefined;
     }
@@ -1617,8 +1617,8 @@ function private function_9693e041( player )
         if ( !( isdefined( _shad_turret_debug_server ) && _shad_turret_debug_server ) )
         {
             str = self.blueprint.var_391591d0;
-            var_e7ed2264 = function_c9163c5d( str );
-            self.hint_string = zm_utility::function_d6046228( str, var_e7ed2264 );
+            str_pc = function_c9163c5d( str );
+            self.hint_string = zm_utility::function_d6046228( str, str_pc );
         }
         
         self.cost = function_ceac3bf9( player );
@@ -1626,8 +1626,8 @@ function private function_9693e041( player )
         if ( self.cost == 0 )
         {
             str = self.blueprint.var_abd9b2d0;
-            var_e7ed2264 = function_c9163c5d( str );
-            hint_str = zm_utility::function_d6046228( str, var_e7ed2264 );
+            str_pc = function_c9163c5d( str );
+            hint_str = zm_utility::function_d6046228( str, str_pc );
             self.hint_string = isdefined( hint_str ) ? hint_str : "";
             self.cost = undefined;
         }
@@ -1885,7 +1885,7 @@ function private function_df8ce6e2( player )
         }
     }
     
-    if ( isdefined( self.stub.blueprint.var_fe8a5e39 ) )
+    if ( isdefined( self.stub.blueprint.purchasehint ) )
     {
         if ( !isdefined( player.var_2f3339f0 ) )
         {
@@ -1894,7 +1894,7 @@ function private function_df8ce6e2( player )
         
         if ( !( isdefined( player.var_2f3339f0[ self.stub.blueprint.w_result ] ) && player.var_2f3339f0[ self.stub.blueprint.w_result ] ) )
         {
-            player thread zm_equipment::show_hint_text( self.stub.blueprint.var_fe8a5e39 );
+            player thread zm_equipment::show_hint_text( self.stub.blueprint.purchasehint );
             player.var_2f3339f0[ self.stub.blueprint.w_result ] = 1;
         }
     }
@@ -1981,8 +1981,8 @@ function private function_15d10d06( player )
     }
     
     str = self.blueprint.var_391591d0;
-    var_e7ed2264 = function_c9163c5d( str );
-    self.hint_string = zm_utility::function_d6046228( str, var_e7ed2264 );
+    str_pc = function_c9163c5d( str );
+    self.hint_string = zm_utility::function_d6046228( str, str_pc );
     return true;
 }
 

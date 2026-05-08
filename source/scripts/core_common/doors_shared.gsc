@@ -31,7 +31,7 @@ class cdoor
     var origin;
     var stuck_items;
     var v_trigger_offset;
-    var var_19fde5b7;
+    var stuckitems;
     var var_3c6838bc;
     var var_7d28591d;
     var var_85f2454d;
@@ -75,7 +75,7 @@ class cdoor
     function function_670cd4a3()
     {
         self endon( #"death" );
-        var_19fde5b7 = [];
+        stuckitems = [];
         
         while ( true )
         {
@@ -83,7 +83,7 @@ class cdoor
             
             if ( isdefined( waitresult.projectile ) )
             {
-                array::add( var_19fde5b7, waitresult.projectile );
+                array::add( stuckitems, waitresult.projectile );
             }
         }
     }
@@ -725,8 +725,8 @@ class cdoor
                 function_e4659543( 1 );
             }
             
-            var_7256682e = function_f1a2a15f( b_malfunction, 1 );
-            m_e_door moveto( var_7256682e, var_1b13d203 );
+            v_open_dest = function_f1a2a15f( b_malfunction, 1 );
+            m_e_door moveto( v_open_dest, var_1b13d203 );
             m_e_door waittill( #"movedone" );
         }
         else if ( m_s_bundle.door_open_method == "swing_away_from_player" )
@@ -830,14 +830,14 @@ class cdoor
             return;
         }
         
-        foreach ( var_221be278 in stuck_items )
+        foreach ( stuckitem in stuck_items )
         {
-            if ( !isdefined( var_221be278 ) )
+            if ( !isdefined( stuckitem ) )
             {
                 continue;
             }
             
-            var_221be278 dodamage( 500, origin, undefined, undefined, undefined, "MOD_EXPLOSIVE" );
+            stuckitem dodamage( 500, origin, undefined, undefined, undefined, "MOD_EXPLOSIVE" );
         }
     }
 

@@ -135,9 +135,9 @@
         distance = 1000;
         name = "<dev string:xc7>";
         
-        if ( isdefined( params.var_1d978d3 ) )
+        if ( isdefined( params.num_items ) )
         {
-            numitems = int( params.var_1d978d3 );
+            numitems = int( params.num_items );
         }
         
         if ( isdefined( params.distance ) )

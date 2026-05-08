@@ -769,7 +769,7 @@ function private on_weapon_change( params )
 function function_670cd4a3()
 {
     self endon( #"death" );
-    self.var_19fde5b7 = [];
+    self.stuckitems = [];
     
     while ( true )
     {
@@ -777,7 +777,7 @@ function function_670cd4a3()
         
         if ( isdefined( waitresult.projectile ) )
         {
-            array::add( self.var_19fde5b7, waitresult.projectile );
+            array::add( self.stuckitems, waitresult.projectile );
         }
     }
 }
@@ -788,19 +788,19 @@ function function_670cd4a3()
 // Size: 0xb0
 function function_34d37476()
 {
-    if ( !isdefined( self.var_19fde5b7 ) )
+    if ( !isdefined( self.stuckitems ) )
     {
         return;
     }
     
-    foreach ( var_221be278 in self.var_19fde5b7 )
+    foreach ( stuckitem in self.stuckitems )
     {
-        if ( !isdefined( var_221be278 ) )
+        if ( !isdefined( stuckitem ) )
         {
             continue;
         }
         
-        var_221be278 dodamage( 500, self.origin, undefined, undefined, undefined, "MOD_EXPLOSIVE" );
+        stuckitem dodamage( 500, self.origin, undefined, undefined, undefined, "MOD_EXPLOSIVE" );
     }
 }
 

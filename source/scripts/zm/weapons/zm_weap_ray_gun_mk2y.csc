@@ -39,7 +39,7 @@ function function_e1fdbb4b( localclientnum, oldval, newval, bnewent, binitialsna
     
     if ( newval == 1 )
     {
-        if ( self zm_utility::function_f8796df3( localclientnum ) )
+        if ( self zm_utility::is_first_person( localclientnum ) )
         {
             self.var_92a2b5f2 = playviewmodelfx( localclientnum, level._effect[ #"hash_7772ff2676425bfb" ], "tag_flash" );
             return;

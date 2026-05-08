@@ -3,7 +3,7 @@
     "baseWeapon": "#hash_5825488ac68418af",
     "displayname": "#weapon/blind_grenade",
     "luigiReticleWidget": "NineBangReticle",
-    "grenadeWeaponName": "#hash_1bb3b0c39433e8ca",
+    "grenadeWeaponName": "#eq_blind_grenade_mp",
     "streamkey": "#hash_4d73af43fcccb30d",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",

@@ -347,9 +347,9 @@ xcam,#ui_cam_draft_common
 xcam,#ui_cam_draft_common_zoom
 xcam,#ui_cam_endgame_mp_apartments
 destructible,#hash_3643a2954ceada8b
-destructible,#hash_368c8da205fa4822
+destructible,#p8_fxanim_gp_fan_electric_wall_ddef
 destructible,#hash_4cd451237eff2847
-destructible,#hash_4f9a1f36c1e838fc
+destructible,#p8_fan_box_plastic_ddef
 destructible,#hash_5ac78dc3446716ee
 destructible,#hash_603d87d893f6ea47
 destructible,#hash_7b9531a14a790284
@@ -394,7 +394,7 @@ soundalias,#hash_21d849eee4d897a
 soundalias,#hash_238170c19d279f5
 soundalias,#hash_2904437d186593d
 soundalias,#hash_31f777916298d72
-soundalias,#hash_38c96854fb0017e
+soundalias,#dst_typewriter
 soundalias,#hash_419e84642ebe554
 soundalias,#hash_55faa40126d5c75
 soundalias,#hash_61dd52d4366a2f2
@@ -422,7 +422,7 @@ soundalias,#hash_bbafec33c2adca2
 soundalias,#hash_bd53719309b6fc1
 soundalias,#hash_c266934b6e24701
 soundalias,#hash_ca467b11bcaf711
-soundalias,#hash_cb198a299a56aa3
+soundalias,#amb_wind_open
 soundalias,#exp_concussive_large
 soundalias,#hash_e095e483463882b
 soundalias,#amb_sink
@@ -435,7 +435,7 @@ soundalias,#hash_1358357952f89d8d
 soundalias,#hash_14e6aa140485ba14
 soundalias,#hash_1571afdeab748c88
 soundalias,#hash_17b03792068cf144
-soundalias,#hash_186f7af36a61f275
+soundalias,#amb_fridge
 soundalias,#vox_cuba_propaganda_radio_3
 soundalias,#vox_cuba_propaganda_radio_2
 soundalias,#vox_cuba_propaganda_radio_1
@@ -448,9 +448,9 @@ soundalias,#vox_cuba_propaganda_radio_9
 soundalias,#vox_cuba_propaganda_radio_8
 soundalias,#exp_barrel
 soundalias,#hash_1a6485b96677518d
-soundalias,#hash_1b8f27099b3238ec
+soundalias,#dst_vegetable
 soundalias,#hash_1f9b1d980061ea0e
-soundalias,#hash_1ff8bec27dfc1b70
+soundalias,#dst_fern
 soundalias,#hash_200e28bcd26bab77
 soundalias,#hash_200e2ebcd26bb5a9
 soundalias,#hash_208f0fa01c042df2
@@ -505,16 +505,16 @@ soundalias,#hash_3e8d50aeefef2d0e
 soundalias,#hash_3f8d713abf4d10fe
 soundalias,#hash_4283144d0d5eb347
 soundalias,#hash_4289cf44e0b14396
-soundalias,#hash_4312af4ca4204f9c
+soundalias,#amb_neon
 soundalias,#hash_436a4f77c54e7912
 soundalias,#hash_438b930b61d96f77
 soundalias,#hash_438dac17f69b90a2
-soundalias,#hash_43ad48046fb206c8
+soundalias,#exp_veh_small
 soundalias,#hash_456af38afaef9d77
 soundalias,#hash_456af98afaefa7a9
 soundalias,#hash_47a7dd1007c11019
 soundalias,#exp_veh_large
-soundalias,#hash_48bc31e222aa7c3e
+soundalias,#exp_barrel_fire
 soundalias,#hash_499a124f56b6f71b
 soundalias,#hash_4a9fb6e1d5d277b9
 soundalias,#hash_4b9c2475d7229c61
@@ -532,7 +532,7 @@ soundalias,#vox_cuba_propaganda_radio_10
 soundalias,#vox_cuba_propaganda_radio_11
 soundalias,#hash_4ec5a3e02263fc0e
 soundalias,#hash_4f8c480d8e8f07b6
-soundalias,#hash_501eff91f639c23e
+soundalias,#dst_glass_pane
 soundalias,#hash_5241882a79fff7a3
 soundalias,#hash_5290e69e5616b714
 soundalias,#dst_server
@@ -554,7 +554,7 @@ soundalias,#hash_5b18895703fba823
 soundalias,#hash_5ca8d4adbb8576c5
 soundalias,#hash_5d228af58ba73b8b
 soundalias,#hash_5d71820dcc6e1151
-soundalias,#hash_5d92aa3b12f242e5
+soundalias,#dst_fruit
 soundalias,#hash_5e6c6fe38f11ed65
 soundalias,#hash_5eb690639ce50eba
 soundalias,#hash_5f07c850bd480725
@@ -564,7 +564,7 @@ soundalias,#hash_60c935d4c50a3d7d
 soundalias,#hash_6237abae59de3cd8
 soundalias,#hash_6237aeae59de41f1
 soundalias,#hash_6246cfdabe2f2930
-soundalias,#hash_633b9532cf0da169
+soundalias,#amb_flies
 soundalias,#hash_663899d42687914d
 soundalias,#exp_incindiary_large
 soundalias,#hash_66bf4dbabf6ad256
@@ -576,7 +576,7 @@ soundalias,#hash_68b8beb0257da073
 soundalias,#hash_68d529ce159011b5
 soundalias,#hash_696c23027da28032
 soundalias,#hash_69f9f3e122dbb898
-soundalias,#hash_6a7bbff93ccc7ab7
+soundalias,#dst_luggage
 soundalias,#hash_6abe483482efa584
 soundalias,#hash_6c5be5a0764e1e3c
 soundalias,#hash_6c6bc6f97ee1a548

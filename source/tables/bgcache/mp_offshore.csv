@@ -266,7 +266,7 @@ soundalias,#hash_16813c3c0ec367d
 soundalias,#hash_238170c19d279f5
 soundalias,#hash_2904437d186593d
 soundalias,#hash_31f777916298d72
-soundalias,#hash_38c96854fb0017e
+soundalias,#dst_typewriter
 soundalias,#hash_419e84642ebe554
 soundalias,#vox_tvoi_tutor_fire_score_earned_1
 soundalias,#vox_tvoi_tutor_fire_score_earned_0
@@ -289,7 +289,7 @@ soundalias,#hash_c266934b6e24701
 soundalias,#hash_c36768f32b12846
 soundalias,#exp_concussive_large
 soundalias,#vox_tvoi_tutor_fire_gas_gauge_00
-soundalias,#hash_e9079ea0995dab8
+soundalias,#amb_leaves
 soundalias,#hash_f9b7edd1ef40353
 soundalias,#hash_fb7019d42721bca
 soundalias,#hash_fb7029d42721d7d
@@ -305,13 +305,13 @@ soundalias,#vox_tvoi_tutor_fire_slide_10_1
 soundalias,#vox_tvoi_tutor_fire_slide_10_2
 soundalias,#vox_tvoi_tutor_fire_slide_10_3
 soundalias,#hash_12b24433ad0bb1f0
-soundalias,#hash_134eae7f0c2c3a0b
+soundalias,#amb_frogs
 soundalias,#hash_1358357952f89d8d
 soundalias,#hash_142d992b89233804
 soundalias,#hash_14876e22977a8688
 soundalias,#hash_14f2bccca428bce3
 soundalias,#hash_175668cc7f8f0a81
-soundalias,#hash_179f3eb184c245d2
+soundalias,#amb_ocean
 soundalias,#amb_bones
 soundalias,#hash_190b07f7f27c8cbb
 soundalias,#hash_197d58a505b7838e
@@ -327,7 +327,7 @@ soundalias,#hash_1e4ccf71b4216e7b
 soundalias,#hash_1e4cd071b421702e
 soundalias,#hash_1e4cd171b42171e1
 soundalias,#hash_1f9b1d980061ea0e
-soundalias,#hash_1ff8bec27dfc1b70
+soundalias,#dst_fern
 soundalias,#hash_200e28bcd26bab77
 soundalias,#hash_200e2ebcd26bb5a9
 soundalias,#hash_20aff0a522a6ed7f
@@ -380,7 +380,7 @@ soundalias,#vox_tvoi_tutor_fire_slide_6_0
 soundalias,#vox_tvoi_tutor_fire_score_activate
 soundalias,#vox_tvoi_tutor_fire_core_button_hold
 soundalias,#hash_303a62e9feb361dc
-soundalias,#hash_304a394701369482
+soundalias,#pfx_flare
 soundalias,#hash_3060ca18584fade9
 soundalias,#hash_308f5ce9fefb97a9
 soundalias,#amb_water_drip
@@ -433,7 +433,7 @@ soundalias,#vox_tvoi_tutor_fire_bridge_battle
 soundalias,#hash_47095f18ea005cbc
 soundalias,#vox_tvoi_tutor_fire_slide_4_nag
 soundalias,#hash_47a7dd1007c11019
-soundalias,#hash_48bc31e222aa7c3e
+soundalias,#exp_barrel_fire
 soundalias,#hash_4918247e3e7c0585
 soundalias,#hash_495f012ba79c98fc
 soundalias,#vox_tvoi_tutor_fire_slide_5_0
@@ -444,8 +444,8 @@ soundalias,#hash_4a3faa14d1ccc52f
 soundalias,#hash_4a3fab14d1ccc6e2
 soundalias,#hash_4a9fb6e1d5d277b9
 soundalias,#hash_4ab40574c0003197
-soundalias,#hash_4b365924ca46a22c
-soundalias,#hash_4b365c24ca46a745
+soundalias,#amb_monkey_2
+soundalias,#amb_monkey_1
 soundalias,#vox_tvoi_tutor_fire_final_player_dead
 soundalias,#hash_4b9c2475d7229c61
 soundalias,#hash_4bc4e4618f273dd1
@@ -461,11 +461,11 @@ soundalias,#hash_4e12d56aa916db41
 soundalias,#amb_seagulls
 soundalias,#hash_4ec5a3e02263fc0e
 soundalias,#hash_4f8c480d8e8f07b6
-soundalias,#hash_501eff91f639c23e
+soundalias,#dst_glass_pane
 soundalias,#hash_5241882a79fff7a3
 soundalias,#hash_5290e69e5616b714
 soundalias,#hash_52d732004d3b4bcc
-soundalias,#hash_5316f018369bd1da
+soundalias,#amb_monkeys
 soundalias,#dst_server
 soundalias,#hash_54538dea28a0400e
 soundalias,#hash_547104dd82ba9c7c
@@ -511,7 +511,7 @@ soundalias,#hash_6127e31bf54616fe
 soundalias,#vox_tvoi_tutor_fire_score_halfway
 soundalias,#hash_6237abae59de3cd8
 soundalias,#hash_6237aeae59de41f1
-soundalias,#hash_633b9532cf0da169
+soundalias,#amb_flies
 soundalias,#hash_6385b89e518f7792
 soundalias,#hash_6385b99e518f7945
 soundalias,#hash_63e3c05f5b1f3f41
@@ -532,7 +532,7 @@ soundalias,#hash_6923d897f72b52d4
 soundalias,#hash_694aaf72eca0e4dc
 soundalias,#vox_tvoi_tutor_fire_core_max
 soundalias,#hash_69f9f3e122dbb898
-soundalias,#hash_6a7bbff93ccc7ab7
+soundalias,#dst_luggage
 soundalias,#vox_tvoi_tutor_fire_core_enemy2_kill
 soundalias,#hash_6abe483482efa584
 soundalias,#hash_6b4d1445ae2a3f9d

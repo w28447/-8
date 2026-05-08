@@ -17,8 +17,8 @@ class class_358332cc
 {
 
     var riders;
-    var var_3acc1a95;
-    var var_4301b21d;
+    var numcrews;
+    var numseats;
     var var_709c0a6f;
     var var_9e2a2132;
     var var_dad0959b;
@@ -30,8 +30,8 @@ class class_358332cc
     constructor()
     {
         riders = [];
-        var_4301b21d = 0;
-        var_3acc1a95 = 0;
+        numseats = 0;
+        numcrews = 0;
         var_9e2a2132 = 0;
         var_709c0a6f = 0;
         var_dad0959b = 0;
@@ -122,10 +122,10 @@ function private function_810a3de5( vehicle )
 function private function_41cf7b1d( vehicle )
 {
     assert( isvehicle( vehicle ) );
-    var_4301b21d = function_999240f5( vehicle );
+    numseats = function_999240f5( vehicle );
     bundle = struct::get_script_bundle( "vehicleriders", vehicle.vehicleridersbundle );
     
-    for ( seat = 0; seat < var_4301b21d ; seat++ )
+    for ( seat = 0; seat < numseats ; seat++ )
     {
         position = bundle.objects[ seat ].position;
         
@@ -145,10 +145,10 @@ function private function_41cf7b1d( vehicle )
 function private function_f7ce77b( vehicle )
 {
     assert( isvehicle( vehicle ) );
-    var_4301b21d = function_999240f5( vehicle );
+    numseats = function_999240f5( vehicle );
     bundle = struct::get_script_bundle( "vehicleriders", vehicle.vehicleridersbundle );
     
-    for ( seat = 0; seat < var_4301b21d ; seat++ )
+    for ( seat = 0; seat < numseats ; seat++ )
     {
         position = bundle.objects[ seat ].position;
         
@@ -168,10 +168,10 @@ function private function_f7ce77b( vehicle )
 function private function_2453a4a2( vehicle )
 {
     assert( isvehicle( vehicle ) );
-    var_4301b21d = function_999240f5( vehicle );
+    numseats = function_999240f5( vehicle );
     bundle = struct::get_script_bundle( "vehicleriders", vehicle.vehicleridersbundle );
     
-    for ( seat = 0; seat < var_4301b21d ; seat++ )
+    for ( seat = 0; seat < numseats ; seat++ )
     {
         position = bundle.objects[ seat ].position;
         
@@ -191,21 +191,21 @@ function private function_2453a4a2( vehicle )
 function private function_72b503cc( vehicle )
 {
     assert( isvehicle( vehicle ) );
-    var_4301b21d = function_999240f5( vehicle );
-    var_3acc1a95 = 0;
+    numseats = function_999240f5( vehicle );
+    numcrews = 0;
     bundle = struct::get_script_bundle( "vehicleriders", vehicle.vehicleridersbundle );
     
-    for ( seat = 0; seat < var_4301b21d ; seat++ )
+    for ( seat = 0; seat < numseats ; seat++ )
     {
         position = bundle.objects[ seat ].position;
         
         if ( issubstr( position, "crew" ) )
         {
-            var_3acc1a95++;
+            numcrews++;
         }
     }
     
-    return var_3acc1a95;
+    return numcrews;
 }
 
 // Namespace vehicle/vehicleriders_shared
@@ -222,11 +222,11 @@ function function_999240f5( vehicle )
     }
     
     assert( isdefined( vehicle.vehicleridersbundle ) );
-    var_4301b21d = struct::get_script_bundle( "vehicleriders", vehicle.vehicleridersbundle ).var_4301b21d;
+    numseats = struct::get_script_bundle( "vehicleriders", vehicle.vehicleridersbundle ).numseats;
     
-    if ( isdefined( var_4301b21d ) )
+    if ( isdefined( numseats ) )
     {
-        return var_4301b21d;
+        return numseats;
     }
     
     return 0;
@@ -246,16 +246,16 @@ function private on_vehicle_spawned()
     }
     
     function_810a3de5( self );
-    var_4301b21d = function_999240f5( self );
+    numseats = function_999240f5( self );
     
-    if ( !isdefined( var_4301b21d ) || var_4301b21d <= 0 )
+    if ( !isdefined( numseats ) || numseats <= 0 )
     {
         return;
     }
     
     self.var_761c973 = new class_358332cc();
     self.var_761c973.riders = [];
-    self.var_761c973.var_4301b21d = var_4301b21d;
+    self.var_761c973.numseats = numseats;
     self flag::init( "driver_occupied", 0 );
     self flag::init( "passenger1_occupied", 0 );
     self flag::init( "gunner1_occupied", 0 );
@@ -275,8 +275,8 @@ function private on_vehicle_spawned()
         self.var_761c973.var_dad0959b = 1;
     }
     
-    var_3acc1a95 = function_72b503cc( self );
-    self.var_761c973.var_3acc1a95 = var_3acc1a95;
+    numcrews = function_72b503cc( self );
+    self.var_761c973.numcrews = numcrews;
     
     for ( position = 1; position <= 9 ; position++ )
     {
@@ -344,9 +344,9 @@ function private function_e1008fbd( vehicle )
 {
     assert( isdefined( vehicle ) );
     assert( isdefined( vehicle.var_761c973 ) );
-    assert( isdefined( vehicle.var_761c973.var_3acc1a95 ) );
+    assert( isdefined( vehicle.var_761c973.numcrews ) );
     
-    for ( position = 1; position <= vehicle.var_761c973.var_3acc1a95 ; position++ )
+    for ( position = 1; position <= vehicle.var_761c973.numcrews ; position++ )
     {
         if ( !vehicle flag::get( "crew" + position + "_occupied" ) )
         {
@@ -635,8 +635,8 @@ function unload( seat )
         return;
     }
     
-    var_4301b21d = self.var_761c973.var_4301b21d;
-    assert( var_4301b21d > 0 );
+    numseats = self.var_761c973.numseats;
+    assert( numseats > 0 );
     
     switch ( seat )
     {
@@ -763,14 +763,14 @@ function private function_2ef91b74( vehicle )
 // Size: 0x374
 function private function_2ca26543( vehicle )
 {
-    assert( isdefined( vehicle.var_761c973.var_4301b21d ) && vehicle.var_761c973.var_4301b21d > 0 );
+    assert( isdefined( vehicle.var_761c973.numseats ) && vehicle.var_761c973.numseats > 0 );
     
-    if ( !isdefined( vehicle.var_761c973.var_3acc1a95 ) )
+    if ( !isdefined( vehicle.var_761c973.numcrews ) )
     {
         return;
     }
     
-    if ( vehicle.var_761c973.var_3acc1a95 <= 0 )
+    if ( vehicle.var_761c973.numcrews <= 0 )
     {
         return;
     }
@@ -779,7 +779,7 @@ function private function_2ca26543( vehicle )
     var_91b346cc = undefined;
     n_crew_door_close_position = undefined;
     
-    for ( position = 1; position <= vehicle.var_761c973.var_3acc1a95 ; position++ )
+    for ( position = 1; position <= vehicle.var_761c973.numcrews ; position++ )
     {
         seat = "crew" + position;
         flag = seat + "_occupied";

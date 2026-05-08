@@ -12,7 +12,7 @@ CoD.ObituaryEKIAContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local Ekia = LUI.UIText.new( 0.5, 0.5, -265, -138, 0.5, 0.5, -13.5, 13.5 )
 	Ekia:setRGB( 1, 0.99, 0.99 )
-	Ekia:setText( LocalizeToUpperString( 0x96470E1E65763DA ) )
+	Ekia:setText( LocalizeToUpperString( "aar/ekia" ) )
 	Ekia:setTTF( "ttmussels_regular" )
 	Ekia:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	Ekia:setShaderVector( 0, 1, 0, 0, 0 )

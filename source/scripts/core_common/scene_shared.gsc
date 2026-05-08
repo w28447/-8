@@ -1455,25 +1455,25 @@ function init_streamer( str_scenedef, var_1b38cf1d, var_b6213032 = 0, b_invulner
         {
             if ( player.team === #"allies" )
             {
-                player thread function_1f9e783e( s_scenedef.var_a6da2039, str_scenedef );
+                player thread function_1f9e783e( s_scenedef.streamerhintsidea, str_scenedef );
                 continue;
             }
             
             if ( player.team === #"axis" )
             {
-                player thread function_1f9e783e( s_scenedef.var_991a84ba, str_scenedef );
+                player thread function_1f9e783e( s_scenedef.streamerhintsideb, str_scenedef );
             }
         }
     }
-    else if ( var_1b38cf1d == #"allies" && isdefined( s_scenedef.var_a6da2039 ) )
+    else if ( var_1b38cf1d == #"allies" && isdefined( s_scenedef.streamerhintsidea ) )
     {
         a_players = util::get_players( #"allies" );
-        array::thread_all( a_players, &function_1f9e783e, s_scenedef.var_a6da2039, str_scenedef );
+        array::thread_all( a_players, &function_1f9e783e, s_scenedef.streamerhintsidea, str_scenedef );
     }
-    else if ( var_1b38cf1d == #"axis" && isdefined( s_scenedef.var_991a84ba ) )
+    else if ( var_1b38cf1d == #"axis" && isdefined( s_scenedef.streamerhintsideb ) )
     {
         a_players = util::get_players( #"axis" );
-        array::thread_all( a_players, &function_1f9e783e, s_scenedef.var_991a84ba, str_scenedef );
+        array::thread_all( a_players, &function_1f9e783e, s_scenedef.streamerhintsideb, str_scenedef );
     }
     else
     {

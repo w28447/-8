@@ -302,9 +302,9 @@ function function_a77f3804( e_activator, e_volume )
 // Params 1
 // Checksum 0xa2943acb, Offset: 0x15b0
 // Size: 0x170
-function shower_trap_fx( var_9d9f02b4 )
+function shower_trap_fx( b_is_on )
 {
-    if ( var_9d9f02b4 )
+    if ( b_is_on )
     {
         foreach ( s_trap_fx in self.a_s_trap_fx )
         {
@@ -623,9 +623,9 @@ function function_11e5b2ee( e_activator, e_volume )
 // Params 1
 // Checksum 0x41976f3a, Offset: 0x2658
 // Size: 0x170
-function fire_trap_fx( var_9d9f02b4 )
+function fire_trap_fx( b_is_on )
 {
-    if ( var_9d9f02b4 )
+    if ( b_is_on )
     {
         foreach ( s_trap_fx in self.a_s_trap_fx )
         {

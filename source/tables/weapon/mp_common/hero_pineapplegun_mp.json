@@ -55,7 +55,7 @@
     "sound810": "#hash_54f28bb508a46096",
     "tunables1": "#hash_42a656ae245549bb",
     "tunables2": "#hash_42a656ae245549bb",
-    "cacWeaponXCam": "#hash_293c8d81f42b5363",
+    "cacWeaponXCam": "#ui_cam_cac_hero_pineapplegun",
     "attachments": [
         "#hash_f459a0af8e8f912b"
     ],
@@ -105,7 +105,7 @@
         "#hash_c15b461b7420c6d2",
         "#hash_bb3f97cf646813ac"
     ],
-    "normalImpactFX": "#hash_219f0df6a19c4ac4",
-    "normalImpactSounds": "#hash_243498ac40a58702",
-    "bounceImpactSounds": "#hash_6bde0439d1eb051d"
+    "normalImpactFX": "#hero_pineapple_explosion",
+    "normalImpactSounds": "#grenade_pineapple_explode_material",
+    "bounceImpactSounds": "#grenade_pineapple_bounce"
 }

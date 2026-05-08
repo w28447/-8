@@ -132,8 +132,8 @@ function attackable_callback( entity )
 // Size: 0x814
 function initzombiebehaviors()
 {
-    assert( isscriptfunctionptr( &function_e91d8371 ) );
-    behaviortreenetworkutility::registerbehaviortreescriptapi( #"wzzombieupdatethrottle", &function_e91d8371, 1 );
+    assert( isscriptfunctionptr( &zombieupdatethrottle ) );
+    behaviortreenetworkutility::registerbehaviortreescriptapi( #"wzzombieupdatethrottle", &zombieupdatethrottle, 1 );
     assert( isscriptfunctionptr( &zombieshouldmelee ) );
     behaviortreenetworkutility::registerbehaviortreescriptapi( #"wzzombieshouldmelee", &zombieshouldmelee );
     assert( isscriptfunctionptr( &function_e8f3596d ) );
@@ -144,8 +144,8 @@ function initzombiebehaviors()
     behaviortreenetworkutility::registerbehaviortreescriptapi( #"hash_23448cac3a176df3", &function_562c0e1d );
     assert( isscriptfunctionptr( &function_e8f3596d ) );
     behaviorstatemachine::registerbsmscriptapiinternal( #"hash_350ddff40ea2207b", &function_e8f3596d );
-    assert( isscriptfunctionptr( &function_a58eaeea ) );
-    behaviorstatemachine::registerbsmscriptapiinternal( #"wzzombieshouldreact", &function_a58eaeea );
+    assert( isscriptfunctionptr( &zombieshouldreact ) );
+    behaviorstatemachine::registerbsmscriptapiinternal( #"wzzombieshouldreact", &zombieshouldreact );
     assert( isscriptfunctionptr( &zombieshouldmove ) );
     behaviorstatemachine::registerbsmscriptapiinternal( #"wzzombieshouldmove", &zombieshouldmove );
     assert( isscriptfunctionptr( &function_37abea6f ) );
@@ -289,7 +289,7 @@ function private function_9c573bc6()
 // Params 1, eflags: 0x4
 // Checksum 0xf5b08e9e, Offset: 0x16b8
 // Size: 0x2e
-function private function_e91d8371( entity )
+function private zombieupdatethrottle( entity )
 {
     level.var_8de0b84e = entity getentitynumber();
 }
@@ -315,7 +315,7 @@ function private zombieshouldmelee( entity )
         return false;
     }
     
-    if ( isdefined( entity.var_8a96267d ) && entity.var_8a96267d || isdefined( entity.var_8ba6ede3 ) && entity.var_8ba6ede3 )
+    if ( isdefined( entity.var_8a96267d ) && entity.var_8a96267d || isdefined( entity.shoulddigup ) && entity.shoulddigup )
     {
         return false;
     }
@@ -380,7 +380,7 @@ function private function_e8f3596d( entity )
 // Size: 0x28, Type: bool
 function private function_cc184b8b( entity )
 {
-    return isdefined( entity.var_8ba6ede3 ) && entity.var_8ba6ede3;
+    return isdefined( entity.shoulddigup ) && entity.shoulddigup;
 }
 
 // Namespace mp_ai_zombie/ct_ai_zombie
@@ -396,7 +396,7 @@ function private function_562c0e1d( entity )
 // Params 1, eflags: 0x4
 // Checksum 0x2bdaa6e5, Offset: 0x1b40
 // Size: 0x4e, Type: bool
-function private function_a58eaeea( entity )
+function private zombieshouldreact( entity )
 {
     return !( isdefined( entity.missinglegs ) && entity.missinglegs ) && isdefined( entity.shouldreact ) && entity.shouldreact;
 }
@@ -500,7 +500,7 @@ function private function_55b7ea22( entity )
 {
     entity solid();
     entity clientfield::set( "zombie_riser_fx", 1 );
-    entity.var_8ba6ede3 = undefined;
+    entity.shoulddigup = undefined;
 }
 
 // Namespace mp_ai_zombie/ct_ai_zombie
@@ -1117,7 +1117,7 @@ function private function_101763c9()
         wait 2;
         self forceteleport( spawn_point.origin, spawn_point.angles );
         wait 2;
-        self.var_8ba6ede3 = 1;
+        self.shoulddigup = 1;
         self waittill( #"not_underground" );
     }
     else
@@ -1132,7 +1132,7 @@ function private function_101763c9()
         
         self forceteleport( spawn_point.origin, spawn_point.angles );
         wait 2;
-        self.var_8ba6ede3 = 1;
+        self.shoulddigup = 1;
         self waittill( #"not_underground" );
     }
     

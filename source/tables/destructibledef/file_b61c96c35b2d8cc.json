@@ -365,7 +365,7 @@
             "entityDamageTransfer": 0,
             "subtargetOffset": "(0, 0, 0)",
             "damageSound": "#hash_15f1616b480fc89",
-            "physConstraints": "#hash_2b4e90b0f9972096",
+            "physConstraints": "#veh_t7_door_l_front_hinge_pc",
             "unk268": 200,
             "hideBones": [
                 159,
@@ -419,7 +419,7 @@
             "entityDamageTransfer": 0,
             "subtargetOffset": "(0, 0, 0)",
             "damageSound": "#hash_15f1516b480fad6",
-            "physConstraints": "#hash_254667fa7439e897",
+            "physConstraints": "#veh_t7_door_l_rear_hinge_pc",
             "unk268": 200,
             "hideBones": [
                 110,
@@ -469,7 +469,7 @@
             "entityDamageTransfer": 0,
             "subtargetOffset": "(0, 0, 0)",
             "damageSound": "#hash_55a6cb94b74137ba",
-            "physConstraints": "#hash_5a1759d577e19ac0",
+            "physConstraints": "#veh_t7_door_r_front_hinge_pc",
             "unk268": 200,
             "hideBones": [
                 108,
@@ -519,7 +519,7 @@
             "entityDamageTransfer": 0,
             "subtargetOffset": "(0, 0, 0)",
             "damageSound": "#hash_55a6cc94b741396d",
-            "physConstraints": "#hash_177cdb7befe97275",
+            "physConstraints": "#veh_t7_door_r_rear_hinge_pc",
             "unk268": 200,
             "hideBones": [
                 109,
@@ -760,7 +760,7 @@
             "entityDamageTransfer": 0,
             "subtargetOffset": "(0, 0, 0)",
             "damageSound": "#hash_55a6c594b7412d88",
-            "physConstraints": "#hash_7ba51fdb8c44571f",
+            "physConstraints": "#veh_t7_trunk_hinge_pc",
             "unk268": 200,
             "hideBones": [
                 15,

@@ -13,7 +13,7 @@
     "shrapnelSettings": "#default_shrapnel_settings",
     "deathFxTag": "tag_origin",
     "lightFx": [
-        "#hash_626550886e2876c5"
+        "#killstreaks/fx_agr_vlight"
     ],
     "lightFxTag": [
         "tag_origin"

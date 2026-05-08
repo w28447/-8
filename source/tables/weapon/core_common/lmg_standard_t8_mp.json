@@ -120,8 +120,8 @@
     "fx_c88": "#hash_5797e5e407d06708",
     "fx_c90": "#hash_5797e5e407d06708",
     "fx_c98": "#hash_5797e5e407d06708",
-    "normalImpactFX": "#hash_7ee0671def6af7a4",
-    "exitImpactFX": "#hash_56ef4fc6c00cc18e",
+    "normalImpactFX": "#bullet_xlarge_enter",
+    "exitImpactFX": "#bullet_large_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_50191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

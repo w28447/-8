@@ -516,23 +516,23 @@ function setup_team( localclientnum )
     
     for ( i = 0; true ; i++ )
     {
-        var_3ec3c6aa = function_75442e78( i );
+        playerscriptstruct = function_75442e78( i );
         
-        if ( !isdefined( var_3ec3c6aa ) )
+        if ( !isdefined( playerscriptstruct ) )
         {
             break;
         }
         
         if ( !isdefined( level.draftcharacters[ i ] ) )
         {
-            model = util::spawn_model( localclientnum, "tag_origin", var_3ec3c6aa.origin, var_3ec3c6aa.angles );
+            model = util::spawn_model( localclientnum, "tag_origin", playerscriptstruct.origin, playerscriptstruct.angles );
             model.targetname = targetname + i;
             level.draftcharacters[ i ] = character_customization::function_dd295310( model, localclientnum, 0 );
             [[ level.draftcharacters[ i ] ]]->function_82e05d64().var_67f6171b = var_9b6e828a[ i % var_9b6e828a.size ];
             [[ level.draftcharacters[ i ] ]]->function_82e05d64().var_fb564576 = i;
             [[ level.draftcharacters[ i ] ]]->function_82e05d64().params = spawnstruct();
             [[ level.draftcharacters[ i ] ]]->function_82e05d64().params.sessionmode = sessionmode;
-            [[ level.draftcharacters[ i ] ]]->function_82e05d64().params.scene_target = var_3ec3c6aa;
+            [[ level.draftcharacters[ i ] ]]->function_82e05d64().params.scene_target = playerscriptstruct;
             [[ level.draftcharacters[ i ] ]]->function_82e05d64().params.var_a34c858c = 1;
             [[ level.draftcharacters[ i ] ]]->function_82e05d64().params.var_c76f3e47 = 1;
             [[ level.draftcharacters[ i ] ]]->function_82e05d64().params.var_401d9a1 = 1;

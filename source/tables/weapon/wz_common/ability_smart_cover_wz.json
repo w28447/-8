@@ -1,7 +1,7 @@
 {
     "name": "#ability_smart_cover_wz",
     "baseWeapon": "#ability_smart_cover",
-    "displayname": "#hash_3bf437dd2e981df1",
+    "displayname": "#smartcover/name",
     "weapon70": "#ability_smart_cover",
     "streamkey": "#hash_2a473e9efb82bc19",
     "worldModelTagRight": "tag_weapon_right",

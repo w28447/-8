@@ -29,7 +29,7 @@ function autoexec __init__system__()
 // Size: 0x64
 function __init__()
 {
-    level.var_9fee970c = function_60d95f53();
+    level.framemsec = function_60d95f53();
     function_73fab74d();
     function_f9ce1d49();
     register_clientfields();
@@ -5717,11 +5717,11 @@ function function_5d36c37a( str_tag = "tag_aim_target" )
     {
         if ( isdefined( self gettagorigin( str_tag ) ) )
         {
-            self function_2baad8fc( str_tag );
+            self makesentienttarget( str_tag );
             return;
         }
         
-        self function_2baad8fc();
+        self makesentienttarget();
     }
 }
 

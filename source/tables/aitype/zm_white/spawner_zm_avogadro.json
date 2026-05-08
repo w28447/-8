@@ -19,7 +19,7 @@
     ],
     "meleeWeapon": "#avogadro_ai_defaultmelee_zm",
     "aimTable": "#soldier_aim",
-    "footstepTable": "#hash_69f44606aefb8527",
+    "footstepTable": "#zombfootstep",
     "footstepScriptCallback": false,
     "footstepFXTable1": "#player_footstep",
     "footstepFXTable2": "#player_footstep",

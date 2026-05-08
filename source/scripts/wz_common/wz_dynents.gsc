@@ -687,8 +687,8 @@ function private function_724a2fa5( eventstruct )
         return;
     }
     
-    var_a852a7dd = dynent_world::use_dynent( dynent );
-    dynent.var_a548ec11 = gettime() + var_a852a7dd * 1000;
+    interpolationsec = dynent_world::use_dynent( dynent );
+    dynent.var_a548ec11 = gettime() + interpolationsec * 1000;
 }
 
 // Namespace wz_dynents/wz_dynents

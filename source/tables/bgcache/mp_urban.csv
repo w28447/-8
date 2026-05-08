@@ -246,7 +246,7 @@ model,#hash_7f6d18e694e47a05
 model,#hash_7fb320bd5016c775
 model,#hash_7fc5b065203d7f41
 model,#veh_t8_civ_forklift_modular_base_decal_attach
-rumble,#hash_536d0ef0f52885da
+rumble,#artillery_rumble_near
 xcam,#ui_cam_draft_common
 xcam,#ui_cam_draft_common_zoom
 xcam,#ui_cam_endgame_mp_apartments
@@ -258,8 +258,8 @@ destructible,#p8_fan_box_plastic_ddef
 destructible,#hash_65d17f85262a3eec
 destructible,#p7_zm_nac_barrel_explosive_red_ddef
 destructible,#hash_71722a272737edfc
-destructible,#hash_7a394352569b0f6a
-destructible,#hash_7eef2e3c42c6da13
+destructible,#p8_fxanim_gp_fan_electric_table_ddef
+destructible,#p8_box_electric_commercial_med_01_ddef
 xanim,#hash_143979dd6a01458
 xanim,#hash_26459d4cfc3b7a7
 xanim,#hash_80f2468e0d9461b
@@ -368,14 +368,14 @@ soundalias,#hash_21e513f28d50977
 soundalias,#hash_238170c19d279f5
 soundalias,#hash_2904437d186593d
 soundalias,#hash_31f777916298d72
-soundalias,#hash_38c96854fb0017e
+soundalias,#dst_typewriter
 soundalias,#vox_tvoi_tutor_ajax_final_event_3_active_nag
 soundalias,#hash_3a11ade5936ba51
 soundalias,#hash_419e84642ebe554
 soundalias,#hash_62332d89ae65200
 soundalias,#hash_6799f17d17bd52a
 soundalias,#hash_679a117d17bd890
-soundalias,#hash_7908cb1395a95a1
+soundalias,#amb_toilet
 soundalias,#hash_828457c6bd51f59
 soundalias,#hash_82d8fc262fa2602
 soundalias,#hash_87a98c043a87965
@@ -399,7 +399,7 @@ soundalias,#hash_12b24433ad0bb1f0
 soundalias,#hash_1358357952f89d8d
 soundalias,#hash_1531b56fa76adfd8
 soundalias,#hash_16f3edba4ecae0f4
-soundalias,#hash_186f7af36a61f275
+soundalias,#amb_fridge
 soundalias,#amb_servers
 soundalias,#exp_barrel
 soundalias,#hash_1a6485b96677518d
@@ -413,7 +413,7 @@ soundalias,#amb_turbine
 soundalias,#vox_tvoi_tutor_ajax_final_event_2_dead
 soundalias,#hash_1f93e224b61e7a10
 soundalias,#hash_1f9b1d980061ea0e
-soundalias,#hash_1ff8bec27dfc1b70
+soundalias,#dst_fern
 soundalias,#hash_200e28bcd26bab77
 soundalias,#hash_200e2ebcd26bb5a9
 soundalias,#hash_2134a1d3ad3d102c
@@ -476,7 +476,7 @@ soundalias,#hash_3b6983b084cfef53
 soundalias,#vox_tvoi_tutor_ajax_flash_cook_lvl3_bang
 soundalias,#hash_3e8d3aaeefef07ac
 soundalias,#hash_3e8d50aeefef2d0e
-soundalias,#hash_3ec5e85fc5804239
+soundalias,#amb_alarm_1
 soundalias,#hash_3f3ce103b8badcf0
 soundalias,#hash_436a4f77c54e7912
 soundalias,#hash_438b930b61d96f77
@@ -488,7 +488,7 @@ soundalias,#hash_471068542bcdfb79
 soundalias,#hash_47a7dd1007c11019
 soundalias,#hash_487a05b71593384c
 soundalias,#hash_487a06b7159339ff
-soundalias,#hash_48bc31e222aa7c3e
+soundalias,#exp_barrel_fire
 soundalias,#hash_499a124f56b6f71b
 soundalias,#hash_4a9fb6e1d5d277b9
 soundalias,#hash_4aaf37a6e822c717
@@ -510,7 +510,7 @@ soundalias,#hash_4e9d7116bf0098eb
 soundalias,#hash_4e9d7216bf009a9e
 soundalias,#hash_4ec5a3e02263fc0e
 soundalias,#hash_4f8c480d8e8f07b6
-soundalias,#hash_501eff91f639c23e
+soundalias,#dst_glass_pane
 soundalias,#hash_5241882a79fff7a3
 soundalias,#hash_5290e69e5616b714
 soundalias,#dst_server
@@ -548,7 +548,7 @@ soundalias,#hash_60c935d4c50a3d7d
 soundalias,#hash_622d320255f505fa
 soundalias,#hash_6237abae59de3cd8
 soundalias,#hash_6237aeae59de41f1
-soundalias,#hash_633b9532cf0da169
+soundalias,#amb_flies
 soundalias,#hash_637aa6efdccd7d3b
 soundalias,#hash_649ac5debb19c156
 soundalias,#amb_gust_dry
@@ -561,7 +561,7 @@ soundalias,#hash_68e5d453f6c8fb3b
 soundalias,#hash_69f9f3e122dbb898
 soundalias,#hash_6a49c57530e1762c
 soundalias,#hash_6a49c67530e177df
-soundalias,#hash_6a7bbff93ccc7ab7
+soundalias,#dst_luggage
 soundalias,#hash_6aa9ec2d1f1cc648
 soundalias,#vox_tvoi_tutor_ajax_flash_stunned_0
 soundalias,#vox_tvoi_tutor_ajax_flash_cook_lvl3_fail
@@ -590,7 +590,7 @@ soundalias,#hash_7815e8cf92df5b5b
 soundalias,#hash_785d0453ff04c18b
 soundalias,#hash_788ee3dcc5a7f3ba
 soundalias,#hash_79e7070c3130f4a9
-soundalias,#hash_7a0606971ba9ff61
+soundalias,#amb_cannon_1
 soundalias,#hash_7a741777e2200997
 soundalias,#hash_7a98402151dd8704
 soundalias,#hash_7ac5fa6568de2461

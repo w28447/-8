@@ -391,7 +391,7 @@ function function_361e2cb0()
     
     playsoundatposition( #"hash_6a80142d79605bc6", ( 0, 0, 0 ) );
     zm_trial_util::set_game_state( 2 );
-    level.var_7fe57c6b = 1;
+    level.trials_success = 1;
     wait 3;
     level notify( #"hash_4c09c9d01060d7ad" );
     level notify( #"end_game" );
@@ -678,7 +678,7 @@ function private function_bcd35efc()
         }
         
         player zm_trial_util::function_d37a769( player.var_42a4759e.var_8c5bddf5 );
-        player zm_score::function_c1f146ff( player.var_42a4759e.score );
+        player zm_score::set_player_score( player.var_42a4759e.score );
         player.score_total = player.var_42a4759e.score_total;
         
         if ( isdefined( player.var_42a4759e.loadout ) )

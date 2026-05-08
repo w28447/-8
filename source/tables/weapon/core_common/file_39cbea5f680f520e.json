@@ -33,7 +33,7 @@
     "sound5a0": "#wpn_flash_grenade_explode",
     "projexplosionsound": "#wpn_flash_grenade_explode",
     "tunables1": "#hash_35483c3f2ddc02",
-    "cacWeaponXCam": "#hash_125937342df621cd",
+    "cacWeaponXCam": "#ui_cam_cac_equip_flashbang",
     "statusEffects": [
         {
             "effect": "#blind_swat_grenade",

@@ -685,13 +685,13 @@
         {
             "value": 98,
             "next": 7,
-            "name": "#hash_633b9532cf0da169",
+            "name": "#amb_flies",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_633b9532cf0da169",
+                    "name": "#amb_flies",
                     "assetId": "#amb/animals/insects/flies/flies_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_maldives.all",
                     "assetIdRelease": "#mp_maldives.all",
@@ -730,7 +730,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_633b9532cf0da169",
+                    "name": "#amb_flies",
                     "assetId": "#amb/animals/insects/flies/flies_02.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_maldives.all",
                     "assetIdRelease": "#mp_maldives.all",
@@ -1984,13 +1984,13 @@
         {
             "value": 134,
             "next": 65535,
-            "name": "#hash_79c2463acff19d72",
+            "name": "#amb_lava",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_79c2463acff19d72",
+                    "name": "#amb_lava",
                     "assetId": "#hash_6ec771af98461b76",
                     "assetFileNameSustain": "#mp_maldives.all",
                     "assetIdRelease": "#mp_maldives.all",
@@ -2883,13 +2883,13 @@
         {
             "value": 161,
             "next": 65535,
-            "name": "#hash_179f3eb184c245d2",
+            "name": "#amb_ocean",
             "sequence": 0,
             "cullDistance": 5500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_179f3eb184c245d2",
+                    "name": "#amb_ocean",
                     "assetId": "#amb/environment/ocean/calm/amb_ocean_calm.sl100.pc.snd",
                     "assetFileNameSustain": "#mp_maldives.all",
                     "assetIdRelease": "#mp_maldives.all",
@@ -3499,13 +3499,13 @@
         {
             "value": 71,
             "next": 24,
-            "name": "#hash_13299213632e598a",
+            "name": "#amb_reactor",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_13299213632e598a",
+                    "name": "#amb_reactor",
                     "assetId": "#amb/industrial/machine/reactor/cryo_reactor.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_maldives.all",
                     "assetIdRelease": "#mp_maldives.all",
@@ -3763,13 +3763,13 @@
         {
             "value": 168,
             "next": 65535,
-            "name": "#hash_6282b08e3d0e89ab",
+            "name": "#amb_server_room",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6282b08e3d0e89ab",
+                    "name": "#amb_server_room",
                     "assetId": "#amb/electronics/servers/server_room.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_maldives.all",
                     "assetIdRelease": "#mp_maldives.all",
@@ -8165,13 +8165,13 @@
         {
             "value": 8,
             "next": 95,
-            "name": "#hash_501eff91f639c23e",
+            "name": "#dst_glass_pane",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_501eff91f639c23e",
+                    "name": "#dst_glass_pane",
                     "assetId": "#dst/generic/glass/med/glass_break_medium_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_maldives.all",
                     "assetIdRelease": "#mp_maldives.all",
@@ -8790,13 +8790,13 @@
         {
             "value": 119,
             "next": 65535,
-            "name": "#hash_6a7bbff93ccc7ab7",
+            "name": "#dst_luggage",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6a7bbff93ccc7ab7",
+                    "name": "#dst_luggage",
                     "assetFileNameSustain": "#mp_maldives.all",
                     "assetIdRelease": "#mp_maldives.all",
                     "assetFileNameRelease": "#mp_maldives.all",
@@ -11619,13 +11619,13 @@
         {
             "value": 58,
             "next": 113,
-            "name": "#hash_38c96854fb0017e",
+            "name": "#dst_typewriter",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_38c96854fb0017e",
+                    "name": "#dst_typewriter",
                     "assetId": "#dst/prop/typewriter/typewriter_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_maldives.all",
                     "assetIdRelease": "#mp_maldives.all",
@@ -14630,13 +14630,13 @@
         {
             "value": 7,
             "next": 65535,
-            "name": "#hash_48bc31e222aa7c3e",
+            "name": "#exp_barrel_fire",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_48bc31e222aa7c3e",
+                    "name": "#exp_barrel_fire",
                     "assetId": "#dst/generic/fire/barrel/barrel_fire_02.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_maldives.all",
                     "assetIdRelease": "#mp_maldives.all",
@@ -20146,7 +20146,7 @@
                     "assetIdRelease": "#mp_maldives.all",
                     "assetFileNameRelease": "#mp_maldives.all",
                     "contextType": "#hash_730721b0b6373e1",
-                    "contextValue": "#hash_8f631787d4aaf77",
+                    "contextValue": "#outdoor",
                     "reverbSend": 0.001,
                     "centerSend": 0,
                     "volMin": 0.56234133,
@@ -20188,7 +20188,7 @@
                     "assetIdRelease": "#mp_maldives.all",
                     "assetFileNameRelease": "#mp_maldives.all",
                     "contextType": "#hash_730721b0b6373e1",
-                    "contextValue": "#hash_8f631787d4aaf77",
+                    "contextValue": "#outdoor",
                     "reverbSend": 0.001,
                     "centerSend": 0,
                     "volMin": 0.56234133,
@@ -21016,13 +21016,13 @@
         {
             "value": 205,
             "next": 65535,
-            "name": "#hash_43ad48046fb206c8",
+            "name": "#exp_veh_small",
             "sequence": 0,
             "cullDistance": 12000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_43ad48046fb206c8",
+                    "name": "#exp_veh_small",
                     "secondaryname": "#hash_680a1ca45380de2",
                     "assetId": "#exp/vehicle/base/exp_veh_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_maldives.all",
@@ -21063,7 +21063,7 @@
                     "unk178": "#hash_6000b0206"
                 },
                 {
-                    "name": "#hash_43ad48046fb206c8",
+                    "name": "#exp_veh_small",
                     "secondaryname": "#hash_680a1ca45380de2",
                     "assetId": "#exp/vehicle/base/exp_veh_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_maldives.all",
@@ -21104,7 +21104,7 @@
                     "unk178": "#hash_6000b0206"
                 },
                 {
-                    "name": "#hash_43ad48046fb206c8",
+                    "name": "#exp_veh_small",
                     "secondaryname": "#hash_680a1ca45380de2",
                     "assetId": "#exp/vehicle/base/exp_veh_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_maldives.all",
@@ -22799,7 +22799,7 @@
         {
             "name": "mpl_announcer",
             "id": "#mpl_announcer",
-            "fadeInCurve": "#hash_4ca222c8af19e64a",
+            "fadeInCurve": "#defaultmin",
             "fadeOutCurve": "#default",
             "updateWhilePaused": false,
             "trackAmplitude": false,
@@ -22828,11 +22828,11 @@
             "loop": "#hash_44463359dd025b23",
             "duckId": "#default",
             "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_8f631787d4aaf77",
+            "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_8f631787d4aaf77",
+            "globalContextValue": "#outdoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,
@@ -22960,7 +22960,7 @@
             "loop": "#hash_7c3c891b334ff517",
             "duckId": "#default",
             "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_8f631787d4aaf77",
+            "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "globalContextType": "#hash_730721b0b6373e1",
@@ -22982,11 +22982,11 @@
             "loop": "#hash_7c3c891b334ff517",
             "duckId": "#default",
             "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_8f631787d4aaf77",
+            "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_8f631787d4aaf77",
+            "globalContextValue": "#outdoor",
             "defaultRoom": true,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,

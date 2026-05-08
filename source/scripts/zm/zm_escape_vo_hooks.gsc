@@ -80,7 +80,7 @@ function init_flags()
 // Size: 0x34
 function init_announcer()
 {
-    zm_audio::sndannouncervoxadd( #"catwalk_warden_0_0", #"hash_53687fb8d75cd0d" );
+    zm_audio::sndannouncervoxadd( #"catwalk_warden_0_0", #"catwalk_warden_0" );
 }
 
 // Namespace zm_escape_vo_hooks/zm_escape_vo_hooks

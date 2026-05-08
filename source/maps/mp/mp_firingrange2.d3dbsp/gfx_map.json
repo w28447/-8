@@ -2,7 +2,7 @@
     "name": "#maps/mp/mp_firingrange2.d3dbsp",
     "baseName": "mp_firingrange2",
     "lutMaterial": "#lut_mp_firingrange2",
-    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "volumeDecalRevealTexture": "#vdreveal",
     "unk550": [
         "#img_trim_lut_mp_firingrange2",
         "#img_trim_lut_mp_firingrange2",

@@ -49,7 +49,7 @@ function enable_stronghold_perk_for_level()
 {
     if ( function_8b1a219a() )
     {
-        zm_perks::register_perk_basic_info( #"specialty_camper", #"perk_stronghold", 2500, #"hash_cd87686e9c80e75", getweapon( "zombie_perk_bottle_stronghold" ), getweapon( "zombie_perk_totem_stronghold" ), #"zmperksstonecold" );
+        zm_perks::register_perk_basic_info( #"specialty_camper", #"perk_stronghold", 2500, #"zombie/perk_stronghold_keyboard", getweapon( "zombie_perk_bottle_stronghold" ), getweapon( "zombie_perk_totem_stronghold" ), #"zmperksstonecold" );
     }
     else
     {
@@ -84,7 +84,7 @@ function function_e03779ee()
         return;
     }
     
-    level._effect[ #"divetonuke_light" ] = #"hash_2225287695ddf9c9";
+    level._effect[ #"divetonuke_light" ] = #"_t6/misc/fx_zombie_cola_dtap_on";
     level.machine_assets[ #"specialty_camper" ] = spawnstruct();
     level.machine_assets[ #"specialty_camper" ].weapon = getweapon( "zombie_perk_bottle_stronghold" );
     level.machine_assets[ #"specialty_camper" ].off_model = "p7_zm_vending_nuke";

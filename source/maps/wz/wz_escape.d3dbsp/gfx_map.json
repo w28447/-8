@@ -2,5 +2,5 @@
     "name": "#maps/wz/wz_escape.d3dbsp",
     "baseName": "wz_escape",
     "lutMaterial": "#hash_6f84ab13bee899ac",
-    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca"
+    "volumeDecalRevealTexture": "#vdreveal"
 }

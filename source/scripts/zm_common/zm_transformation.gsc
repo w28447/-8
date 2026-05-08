@@ -638,7 +638,7 @@ function private transform( id, var_c2a69066, var_2cf708f4 = 1 )
                     if ( self.model === var_127d3a7a.var_a3c9023c )
                     {
                         self.no_gib = 1;
-                        self setmodel( var_127d3a7a.var_cdf1f53d );
+                        self setmodel( var_127d3a7a.splitmdl );
                         break;
                     }
                 }

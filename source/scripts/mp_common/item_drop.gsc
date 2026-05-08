@@ -106,7 +106,7 @@ function private function_3b2b6383( origin, angles, normal, itementry, var_ba40b
     
     if ( isdefined( itementry ) )
     {
-        if ( var_ba40b4c1 && isdefined( itementry.var_32ceba33 ) && itementry.var_32ceba33 )
+        if ( var_ba40b4c1 && isdefined( itementry.overrideorientation ) && itementry.overrideorientation )
         {
             angles = combineangles( angles, ( isdefined( itementry.var_d1f348db ) ? itementry.var_d1f348db : 0, isdefined( itementry.var_cc1bbd2c ) ? itementry.var_cc1bbd2c : 0, isdefined( itementry.var_ae6581c0 ) ? itementry.var_ae6581c0 : 0 ) );
         }
@@ -129,7 +129,7 @@ function private function_feb1473( itementry, var_ba40b4c1 )
     
     if ( isdefined( itementry ) )
     {
-        if ( var_ba40b4c1 && isdefined( itementry.var_32ceba33 ) && itementry.var_32ceba33 )
+        if ( var_ba40b4c1 && isdefined( itementry.overrideorientation ) && itementry.overrideorientation )
         {
             origin = ( isdefined( itementry.var_8a122876 ) ? itementry.var_8a122876 : 0, isdefined( itementry.var_7c4c8ceb ) ? itementry.var_7c4c8ceb : 0, isdefined( itementry.var_ee67711f ) ? itementry.var_ee67711f : 0 );
         }
@@ -1038,7 +1038,7 @@ function drop_inventory( player )
             continue;
         }
         
-        if ( isdefined( inventoryitem.itementry.var_6b5d0aaa ) && inventoryitem.itementry.var_6b5d0aaa )
+        if ( isdefined( inventoryitem.itementry.dontdropondeath ) && inventoryitem.itementry.dontdropondeath )
         {
             continue;
         }

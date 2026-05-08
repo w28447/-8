@@ -1239,22 +1239,22 @@ function private function_cacd1506( var_84ed9a13, entity, inflictor, attacker, d
     
     if ( namespace_81245006::function_f29756fe( var_84ed9a13 ) == 3 )
     {
-        if ( isdefined( level.var_c2981ce9[ var_84ed9a13.var_51e8b151 ] ) )
+        if ( isdefined( level.var_c2981ce9[ var_84ed9a13.hittag1 ] ) )
         {
-            entity [[ level.var_c2981ce9[ var_84ed9a13.var_51e8b151 ] ]]( entity, inflictor, attacker, damage, flags, meansofdamage, weapon, point, dir, hitloc, offsettime, boneindex, modelindex );
+            entity [[ level.var_c2981ce9[ var_84ed9a13.hittag1 ] ]]( entity, inflictor, attacker, damage, flags, meansofdamage, weapon, point, dir, hitloc, offsettime, boneindex, modelindex );
         }
         
         if ( !entity isplayinganimscripted() )
         {
-            entity.var_fbec06fa = var_84ed9a13.var_51e8b151;
-            entity setblackboardattribute( "_blight_father_weak_point", var_84ed9a13.var_51e8b151 );
+            entity.var_fbec06fa = var_84ed9a13.hittag1;
+            entity setblackboardattribute( "_blight_father_weak_point", var_84ed9a13.hittag1 );
         }
         
         bone = boneindex;
         
         if ( zm_utility::is_explosive_damage( meansofdamage ) )
         {
-            bone = var_84ed9a13.var_51e8b151;
+            bone = var_84ed9a13.hittag1;
         }
         
         function_3df61a1a( entity, inflictor, attacker, damage, flags, meansofdamage, weapon, point, dir, hitloc, offsettime, bone, modelindex );
@@ -1580,7 +1580,7 @@ function private function_96f5d05a( entity, var_4c0587b )
     entity.var_54c1950f.status = 1;
     grapple_end playsound( #"zmb_grapple_start" );
     grapple_end moveto( var_4c0587b, n_time, 0, n_time * 0.1 );
-    grapple_end.return_pos = entity zm_grappler::function_f21c3519();
+    grapple_end.return_pos = entity zm_grappler::grapple_point();
     thread function_9d1a26f1( entity, entity ai::function_9139c839().var_23426e9a * entity ai::function_9139c839().var_23426e9a, level.players );
     grapple_end flagsys::wait_till( "grapple_moveto_done" );
     grapple_end flagsys::clear( "grapple_moveto_done" );
@@ -1644,7 +1644,7 @@ function private function_28dddd64( entity )
     
     if ( zombie_utility::is_player_valid( entity.var_bef7624d, 1, 1, 0 ) )
     {
-        dir = entity.var_bef7624d zm_grappler::function_f21c3519() - entity zm_grappler::function_f21c3519();
+        dir = entity.var_bef7624d zm_grappler::grapple_point() - entity zm_grappler::grapple_point();
         dir_norm = vectornormalize( dir );
         
         if ( vectordot( dir_norm, anglestoforward( entity.angles ) ) < entity ai::function_9139c839().var_b2656f44 )
@@ -1652,8 +1652,8 @@ function private function_28dddd64( entity )
             dir_norm = anglestoforward( entity.angles );
         }
         
-        var_4c0587b = entity zm_grappler::function_f21c3519() + dir_norm * entity ai::function_9139c839().var_b30a945;
-        test_trace = worldtrace( entity zm_grappler::function_f21c3519(), var_4c0587b );
+        var_4c0587b = entity zm_grappler::grapple_point() + dir_norm * entity ai::function_9139c839().var_b30a945;
+        test_trace = worldtrace( entity zm_grappler::grapple_point(), var_4c0587b );
         
         if ( test_trace[ #"fraction" ] < 1 )
         {
@@ -1780,7 +1780,7 @@ function function_9d1a26f1( entity, var_8a713db5, var_3e06882e )
                 }
                 else
                 {
-                    function_91dcbd1c( entity, entity.var_54c1950f.beamend, e_grapplee );
+                    grapple_entity( entity, entity.var_54c1950f.beamend, e_grapplee );
                 }
                 
                 entity.var_54c1950f.beamend flagsys::set( "grapple_moveto_done" );
@@ -1841,7 +1841,7 @@ function private function_c1b0cbda()
 // Params 3, eflags: 0x4
 // Checksum 0x30d38813, Offset: 0x7488
 // Size: 0x384
-function private function_91dcbd1c( prone_2_run_roll, var_a424c06a, e_grapplee )
+function private grapple_entity( prone_2_run_roll, var_a424c06a, e_grapplee )
 {
     if ( !isdefined( var_a424c06a ) )
     {
@@ -3173,9 +3173,9 @@ function private blightfatherlaunchchaosmissile( var_f794172e, var_61622673, var
         self.var_6ee32f47 = 0;
     }
     
-    var_892397fd = util::spawn_model( #"tag_origin", var_ced3ec54 );
+    chaos_missile = util::spawn_model( #"tag_origin", var_ced3ec54 );
     
-    if ( !isdefined( var_892397fd ) )
+    if ( !isdefined( chaos_missile ) )
     {
         return;
     }
@@ -3184,59 +3184,59 @@ function private blightfatherlaunchchaosmissile( var_f794172e, var_61622673, var
     
     if ( !isdefined( var_a9494306 ) )
     {
-        var_892397fd delete();
+        chaos_missile delete();
         return;
     }
     
-    var_a9494306.origin = var_892397fd.origin;
-    var_a9494306.angles = var_892397fd.angles;
-    var_a9494306 linkto( var_892397fd, "tag_origin" );
-    var_892397fd.trigger = var_a9494306;
-    var_892397fd thread function_b2be1340( self ai::function_9139c839().var_a2519bb8 );
-    var_892397fd thread function_ebd22bba();
-    var_892397fd thread function_a6a20b2c( var_a9494306 );
-    var_892397fd.var_f3d1c928 = 0;
-    var_892397fd.var_52334e8c = self;
+    var_a9494306.origin = chaos_missile.origin;
+    var_a9494306.angles = chaos_missile.angles;
+    var_a9494306 linkto( chaos_missile, "tag_origin" );
+    chaos_missile.trigger = var_a9494306;
+    chaos_missile thread function_b2be1340( self ai::function_9139c839().var_a2519bb8 );
+    chaos_missile thread function_ebd22bba();
+    chaos_missile thread function_a6a20b2c( var_a9494306 );
+    chaos_missile.var_f3d1c928 = 0;
+    chaos_missile.var_52334e8c = self;
     angles_to_enemy = self gettagangles( var_f3486358 );
     normal_vector = anglestoforward( angles_to_enemy );
-    var_892397fd.angles = angles_to_enemy;
-    var_892397fd.var_209ff2fa = normal_vector * self ai::function_9139c839().var_f988064f;
+    chaos_missile.angles = angles_to_enemy;
+    chaos_missile.var_209ff2fa = normal_vector * self ai::function_9139c839().var_f988064f;
     max_trail_iterations = int( self ai::function_9139c839().var_652a36f2 / self ai::function_9139c839().var_52bddd4 * self ai::function_9139c839().var_9e5ebf3c );
-    var_892397fd.missile_target = var_f794172e;
-    var_892397fd thread function_5f3390fd( var_61622673, 40 );
-    var_892397fd playloopsound( #"hash_5b21b7c645692f8", 0.1 );
-    var_892397fd moveto( self gettagorigin( var_f3486358 ) + var_61622673, self ai::function_9139c839().var_20c6e4ca );
+    chaos_missile.missile_target = var_f794172e;
+    chaos_missile thread function_5f3390fd( var_61622673, 40 );
+    chaos_missile playloopsound( #"hash_5b21b7c645692f8", 0.1 );
+    chaos_missile moveto( self gettagorigin( var_f3486358 ) + var_61622673, self ai::function_9139c839().var_20c6e4ca );
     var_eb325a79 = self ai::function_9139c839().var_9e5ebf3c;
     var_b446b077 = self ai::function_9139c839().var_94fefe66;
     var_3fa92868 = self ai::function_9139c839().var_52bddd4;
     wait self ai::function_9139c839().var_20c6e4ca;
     
-    while ( isdefined( var_892397fd ) )
+    while ( isdefined( chaos_missile ) )
     {
-        if ( !zombie_utility::is_player_valid( var_892397fd.missile_target, 1 ) )
+        if ( !zombie_utility::is_player_valid( chaos_missile.missile_target, 1 ) )
         {
-            var_892397fd.missile_target = undefined;
+            chaos_missile.missile_target = undefined;
             players = getplayers();
-            players = arraysortclosest( players, var_892397fd.origin );
+            players = arraysortclosest( players, chaos_missile.origin );
             
             foreach ( player in players )
             {
                 if ( zombie_utility::is_player_valid( player, 1 ) )
                 {
-                    var_892397fd.missile_target = player;
+                    chaos_missile.missile_target = player;
                     break;
                 }
             }
         }
         
-        if ( var_892397fd.var_f3d1c928 >= max_trail_iterations )
+        if ( chaos_missile.var_f3d1c928 >= max_trail_iterations )
         {
-            var_892397fd thread function_124486ee( 0 );
+            chaos_missile thread function_124486ee( 0 );
         }
         else
         {
-            var_892397fd function_1974d26f( var_3fa92868, var_b446b077, var_eb325a79 );
-            var_892397fd.var_f3d1c928 += 1;
+            chaos_missile function_1974d26f( var_3fa92868, var_b446b077, var_eb325a79 );
+            chaos_missile.var_f3d1c928 += 1;
         }
         
         wait var_eb325a79;
@@ -3304,9 +3304,9 @@ function private function_581a06c7( forward_dir, var_ced3ec54, var_27e1ee12, max
 function private function_5f3390fd( var_61622673, var_4fee43d4 )
 {
     self endon( #"death", #"detonated" );
-    var_892397fd = self;
+    chaos_missile = self;
     
-    while ( isdefined( var_892397fd ) )
+    while ( isdefined( chaos_missile ) )
     {
         player_origins = [];
         players = getplayers();
@@ -3325,11 +3325,11 @@ function private function_5f3390fd( var_61622673, var_4fee43d4 )
             player_origins[ player_origins.size ] = player getplayercamerapos();
         }
         
-        players = arraysortclosest( player_origins, var_892397fd.origin, undefined, 0, var_4fee43d4 );
+        players = arraysortclosest( player_origins, chaos_missile.origin, undefined, 0, var_4fee43d4 );
         
         if ( players.size > 0 )
         {
-            var_892397fd thread function_124486ee( 0 );
+            chaos_missile thread function_124486ee( 0 );
         }
         
         waitframe( 1 );
@@ -3430,8 +3430,8 @@ function private function_124486ee( delay )
         return;
     }
     
-    var_892397fd = self;
-    missile_owner = var_892397fd.var_52334e8c;
+    chaos_missile = self;
+    missile_owner = chaos_missile.var_52334e8c;
     blast_radius = 128;
     var_83f35abe = 45;
     var_6927cfa0 = 40;
@@ -3442,23 +3442,23 @@ function private function_124486ee( delay )
         wait delay;
     }
     
-    if ( isdefined( var_892397fd ) )
+    if ( isdefined( chaos_missile ) )
     {
-        var_892397fd notify( #"detonated" );
-        var_892397fd moveto( var_892397fd.origin, 0.05 );
-        var_892397fd clientfield::set( "blight_father_chaos_missile_explosion_clientfield", 1 );
-        e_blightfather = var_892397fd.var_52334e8c;
+        chaos_missile notify( #"detonated" );
+        chaos_missile moveto( chaos_missile.origin, 0.05 );
+        chaos_missile clientfield::set( "blight_father_chaos_missile_explosion_clientfield", 1 );
+        e_blightfather = chaos_missile.var_52334e8c;
         w_weapon = getweapon( #"none" );
-        var_892397fd function_8e8b1dfc( var_c45ef84c, e_blightfather, w_weapon );
+        chaos_missile function_8e8b1dfc( var_c45ef84c, e_blightfather, w_weapon );
         offset = ( 0, 0, 18 );
         
-        if ( bullettracepassed( var_892397fd.origin, var_892397fd.origin + offset, 0, 1 ) )
+        if ( bullettracepassed( chaos_missile.origin, chaos_missile.origin + offset, 0, 1 ) )
         {
-            explosion_point = var_892397fd.origin + offset;
+            explosion_point = chaos_missile.origin + offset;
         }
         else
         {
-            explosion_point = var_892397fd.origin;
+            explosion_point = chaos_missile.origin;
         }
         
         util::wait_network_frame();
@@ -3472,10 +3472,10 @@ function private function_124486ee( delay )
         radiusdamage( explosion_point, blast_radius, var_83f35abe, var_6927cfa0, e_blightfather, "MOD_UNKNOWN", w_weapon );
         function_44e3e0d1( explosion_point );
         
-        if ( isdefined( var_892397fd ) )
+        if ( isdefined( chaos_missile ) )
         {
-            var_892397fd clientfield::set( "blight_father_maggot_trail_fx", 0 );
-            var_892397fd delete();
+            chaos_missile clientfield::set( "blight_father_maggot_trail_fx", 0 );
+            chaos_missile delete();
         }
     }
 }
@@ -3568,7 +3568,7 @@ function private function_8e8b1dfc( var_c45ef84c, blight_father, weapon )
             continue;
         }
         
-        status_effect = getstatuseffect( #"hash_7867f8f9aaaa0c40" );
+        status_effect = getstatuseffect( #"chaos_missile_damage" );
         player status_effect::status_effect_apply( status_effect, weapon, blight_father );
         player clientfield::increment_to_player( "blight_father_chaos_missile_rumble_clientfield", 1 );
     }
@@ -3937,7 +3937,7 @@ function private on_host_migration_end( params )
         
         foreach ( var_84ed9a13 in namespace_81245006::function_fab3ee3e( blight_father ) )
         {
-            adddebugcommand( "<dev string:x254>" + var_84ed9a13.var_51e8b151 + "<dev string:x28c>" + var_84ed9a13.var_51e8b151 + "<dev string:x2c1>" );
+            adddebugcommand( "<dev string:x254>" + var_84ed9a13.hittag1 + "<dev string:x28c>" + var_84ed9a13.hittag1 + "<dev string:x2c1>" );
         }
         
         level.var_d4c91513 = 1;

@@ -104,8 +104,8 @@
     "fx_bc8": "#hash_19bce9bfe29a95e1",
     "fx_bd0": "#hash_19c3d5bfe2a09293",
     "fx_bd8": "#hash_3c501ea0c64b9112",
-    "normalImpactFX": "#hash_7ee0671def6af7a4",
-    "exitImpactFX": "#hash_56ef4fc6c00cc18e",
+    "normalImpactFX": "#bullet_xlarge_enter",
+    "exitImpactFX": "#bullet_large_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_50191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

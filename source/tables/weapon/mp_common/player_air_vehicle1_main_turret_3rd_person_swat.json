@@ -42,19 +42,19 @@
     "sound840": "#hash_7a5614b91f27d6ca",
     "tunables1": "#player_air_vehicle1_main_turret_3rd_person_swat_tunables",
     "tracers": [
-        "#hash_4783a4e27b20c9c",
+        "#hunter_bullet",
         "#hash_62577fe123865537"
     ],
     "turretAnimSettings": "#player_helicopter_pilot",
-    "fireRumble": "#hash_5067fef60223bc2b",
+    "fireRumble": "#wasp_mg_turret_fire",
     "fx_bc8": "#hash_7e39482184e50dc",
     "fx_bd0": "#hash_7e39482184e50dc",
     "fx_c80": "#hash_9c7f0dbc37829f85",
     "fx_c88": "#hash_9c7f0dbc37829f85",
     "fx_c90": "#hash_9c7f0dbc37829f85",
     "fx_c98": "#hash_9c7f0dbc37829f85",
-    "normalImpactFX": "#hash_58f69efe70ca1e40",
-    "exitImpactFX": "#hash_ed5098cd739247e",
+    "normalImpactFX": "#bullet_xtreme_enter",
+    "exitImpactFX": "#bullet_xtreme_exit",
     "normalImpactSounds": "#bullet_impact",
     "exitImpactSounds": "#hash_d0191cc37bfbfeea"
 }

@@ -56,8 +56,8 @@ function event_handler[level_init] main( eventstruct )
     clientfield::register( "zbarrier", "tutorial_keyline_fx", 1, 2, "int" );
     clientfield::register( "item", "tutorial_keyline_fx", 1, 2, "int" );
     clientfield::register( "scriptmover", "tutorial_keyline_fx", 1, 2, "int" );
-    clientfield::register( "scriptmover", "" + #"hash_1b509b0ba634a25a", 1, 1, "int" );
-    clientfield::register( "scriptmover", "" + #"hash_1390e08de02cbdc7", 1, 1, "int" );
+    clientfield::register( "scriptmover", "" + #"path_blocker_fx", 1, 1, "int" );
+    clientfield::register( "scriptmover", "" + #"symbol_blocker_fx", 1, 1, "int" );
     clientfield::register( "worlduimodel", "hudItems.ztut.showLocation", 1, 1, "int" );
     clientfield::register( "worlduimodel", "hudItems.ztut.showPerks", 1, 1, "int" );
     clientfield::register( "worlduimodel", "hudItems.ztut.showEquipment", 1, 1, "int" );
@@ -84,13 +84,13 @@ function init_level_vars()
     level.var_e52901a5 = 1;
     level.var_3c8ad64b = -1;
     level.var_fdba6f4b = &function_558fab23;
-    level.var_7e3a9cf2 = &function_69b9de8b;
+    level.custom_zombie_powerup_drop = &function_69b9de8b;
     level.var_fd2e6f70 = &function_b5000f75;
     level.player_death_override = &tutorial_reset;
     level.zm_bgb_anywhere_but_here_validation_override = &function_170ff027;
     level.var_f44e37f7 = &function_55fb48a3;
     level.player_out_of_playable_area_override = &function_912b7df6;
-    level.var_77805e8 = &function_99bc766a;
+    level.custom_end_screen = &function_99bc766a;
     level._supress_survived_screen = 1;
     level.disablescoreevents = 1;
     level.zm_disable_recording_stats = 1;
@@ -361,18 +361,18 @@ function function_57bf8455()
     
     while ( true )
     {
-        var_f7dae996 = 0;
+        b_has_ammo = 0;
         a_w_primary = self getweaponslistprimaries();
         
         foreach ( w_primary in a_w_primary )
         {
             if ( self getweaponammostock( w_primary ) > 0 || self getweaponammoclip( w_primary ) > 0 )
             {
-                var_f7dae996 = 1;
+                b_has_ammo = 1;
             }
         }
         
-        if ( isdefined( var_f7dae996 ) && !var_f7dae996 )
+        if ( isdefined( b_has_ammo ) && !b_has_ammo )
         {
             if ( !isdefined( self.var_21c47e5c ) )
             {
@@ -845,7 +845,7 @@ function function_513e90cf()
     self function_2b4bf122( 2500 );
     self freeze_player_controls();
     self thread function_5bc503b1();
-    self function_2517cb55();
+    self shoot_zombie();
     self function_c3b8207f();
     self wallbuy();
     self points();
@@ -918,7 +918,7 @@ function function_16c8867e( e_player )
 // Params 0
 // Checksum 0x5143c558, Offset: 0x43c8
 // Size: 0x384
-function function_2517cb55()
+function shoot_zombie()
 {
     function_269d9f82( "blocker_shoot_zombie" );
     self.reset_score = self.score;
@@ -972,7 +972,7 @@ function function_c3b8207f()
     self notify( #"crouch_completed" );
     level flag::wait_till_clear( "tutorial_vo_playing" );
     level thread function_68da8e33( #"hash_3af16170dcb577e5", 0.5 );
-    self thread function_3e1e39f8( #"hash_2e816a34f4c828df", "sprint_completed", &function_40050d3e, 8 );
+    self thread function_3e1e39f8( #"hash_2e816a34f4c828df", "sprint_completed", &watch_for_sprint, 8 );
     waittill_trigger( "tutorial_finish_pronesprint" );
     level flag::wait_till_clear( "tutorial_vo_playing" );
 }
@@ -1028,7 +1028,7 @@ function points()
     
     if ( !self adsbuttonpressed() )
     {
-        self thread function_3e1e39f8( #"hash_c360659fdde1ca7", "ads_completed", &function_7b8a4b02 );
+        self thread function_3e1e39f8( #"hash_c360659fdde1ca7", "ads_completed", &watch_for_ads );
     }
     
     self function_fb2e7309();
@@ -2208,7 +2208,7 @@ function function_78dbf7e8()
 // Params 0
 // Checksum 0xaff40bed, Offset: 0x9528
 // Size: 0x62
-function function_40050d3e()
+function watch_for_sprint()
 {
     self endon( #"death", #"sprint_completed" );
     
@@ -2228,7 +2228,7 @@ function function_40050d3e()
 // Params 0
 // Checksum 0x738e637c, Offset: 0x9598
 // Size: 0x6a
-function function_7b8a4b02()
+function watch_for_ads()
 {
     self endon( #"death", #"ads_completed" );
     
@@ -2457,7 +2457,7 @@ function function_384bed55( b_on = 1 )
     if ( isdefined( b_on ) && b_on )
     {
         self.objective_id = gameobjects::get_next_obj_id();
-        objective_add( self.objective_id, "active", self.origin, #"hash_410c56f34d7ed87" );
+        objective_add( self.objective_id, "active", self.origin, #"objective_zm_tutorial" );
         function_da7940a3( self.objective_id, 1 );
         return;
     }
@@ -2480,12 +2480,12 @@ function function_269d9f82( str_barrier, b_on = 1 )
         foreach ( s_position in a_s_positions )
         {
             s_position.mdl_pos = util::spawn_model( "tag_origin", s_position.origin, s_position.angles );
-            s_position.mdl_pos clientfield::set( "" + #"hash_1b509b0ba634a25a", 1 );
+            s_position.mdl_pos clientfield::set( "" + #"path_blocker_fx", 1 );
             s_position.mdl_fx = util::spawn_model( #"p8_zm_power_door_symbol_01", s_position.origin + var_d3c21d73, s_position.angles );
-            s_position.mdl_fx clientfield::set( "" + #"hash_1390e08de02cbdc7", 1 );
-            s_position.var_3cefdbf5 = util::spawn_model( "collision_player_wall_128x128x10", s_position.origin + var_d3c21d73, s_position.angles );
-            s_position.var_3cefdbf5 disconnectpaths();
-            s_position.var_3cefdbf5 ghost();
+            s_position.mdl_fx clientfield::set( "" + #"symbol_blocker_fx", 1 );
+            s_position.mdl_collision = util::spawn_model( "collision_player_wall_128x128x10", s_position.origin + var_d3c21d73, s_position.angles );
+            s_position.mdl_collision disconnectpaths();
+            s_position.mdl_collision ghost();
         }
         
         return;
@@ -2495,23 +2495,23 @@ function function_269d9f82( str_barrier, b_on = 1 )
     {
         if ( isdefined( s_position.mdl_pos ) )
         {
-            s_position.mdl_pos clientfield::set( "" + #"hash_1b509b0ba634a25a", 0 );
+            s_position.mdl_pos clientfield::set( "" + #"path_blocker_fx", 0 );
             util::wait_network_frame();
             s_position.mdl_pos delete();
         }
         
         if ( isdefined( s_position.mdl_fx ) )
         {
-            s_position.mdl_fx clientfield::set( "" + #"hash_1390e08de02cbdc7", 0 );
+            s_position.mdl_fx clientfield::set( "" + #"symbol_blocker_fx", 0 );
             util::wait_network_frame();
             s_position.mdl_fx delete();
         }
         
-        if ( isdefined( s_position.var_3cefdbf5 ) )
+        if ( isdefined( s_position.mdl_collision ) )
         {
-            s_position.var_3cefdbf5 notsolid();
-            s_position.var_3cefdbf5 connectpaths();
-            s_position.var_3cefdbf5 delete();
+            s_position.mdl_collision notsolid();
+            s_position.mdl_collision connectpaths();
+            s_position.mdl_collision delete();
         }
     }
 }

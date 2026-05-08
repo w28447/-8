@@ -37,7 +37,7 @@ function enable_staminup_perk_for_level()
 {
     if ( function_8b1a219a() )
     {
-        zm_perks::register_perk_basic_info( #"specialty_staminup", #"perk_staminup", 2000, #"hash_26af21c3b4413875", getweapon( "zombie_perk_bottle_marathon" ), getweapon( "zombie_perk_totem_staminup" ), #"zmperksstaminup" );
+        zm_perks::register_perk_basic_info( #"specialty_staminup", #"perk_staminup", 2000, #"zombie/perk_marathon_keyboard", getweapon( "zombie_perk_bottle_marathon" ), getweapon( "zombie_perk_totem_staminup" ), #"zmperksstaminup" );
     }
     else
     {
@@ -56,9 +56,9 @@ function enable_staminup_perk_for_level()
 // Size: 0x106
 function staminup_precache()
 {
-    if ( isdefined( level.var_cf57ff63 ) )
+    if ( isdefined( level.staminup_precache_override_func ) )
     {
-        [[ level.var_cf57ff63 ]]();
+        [[ level.staminup_precache_override_func ]]();
         return;
     }
     

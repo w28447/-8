@@ -7,7 +7,7 @@
 6,#artifacts_of_life,7#zmtrials/artifacts_of_life,7#zmtrials/artifacts_of_life_desc,7#,#turn_on_power,#,#,#,#,#,#,#,#
 7,#shielded,7#zmtrials/shielded,7#zmtrials/shielded_desc,7#,#acquire_weapon,#zhield_dw,#,#,#,#,#,#,#
 8,#closed_for_business,7#zmtrials/closed_for_business,7#zmtrials/closed_for_business_desc,7#,#disable_buys,#,#,#,#,#,#,#,#
-9,#hash_35d120f924cb53f8,7#hash_5fbf13d5ccc98455,7#hash_24d2728523b940ff,7#,#use_magicbox,#,#,#,#,#,#,#,#
+9,#magic_trick,7#zmtrials/magic_trick,7#zmtrials/magic_trick_desc,7#,#use_magicbox,#,#,#,#,#,#,#,#
 10,#waterlogged,7#zmtrials/waterlogged,7#zmtrials/waterlogged_desc,7#,#defend_area,#hash_6e21d05e4d40b57a,#hash_5e2686030984da5d,#hash_3a6ddc441fd92406,#zone_cargo,#,#,#,#
 10,#,7#,7#,7#,#give_reward,#hash_20e770cec441c9f2,#hash_3ad6fd4b554f42a0,#uie_trial_medal_bronze,#hash_1c45a8ee71e29e37,#,#,#,#
 11,#door_man,7#zmtrials/door_man,7#zmtrials/door_man_desc,7#,#open_all_doors,#,#,#,#,#,#,#,#

@@ -162,11 +162,11 @@ function function_ee662714()
 // Params 1
 // Checksum 0x85074839, Offset: 0x900
 // Size: 0x278
-function function_22bf8bd4( var_3e311473 )
+function function_22bf8bd4( n_perk_index )
 {
-    assert( isdefined( var_3e311473 ) && var_3e311473 > -1 && var_3e311473 < 5, "<dev string:x62>" );
+    assert( isdefined( n_perk_index ) && n_perk_index > -1 && n_perk_index < 5, "<dev string:x62>" );
     
-    if ( var_3e311473 == 4 )
+    if ( n_perk_index == 4 )
     {
         var_5e879929 = getent( "zm_pack_a_punch", "targetname" );
         var_fc50707f = getentarray( "zm_random_machine_blocker", "script_noteworthy" );
@@ -182,7 +182,7 @@ function function_22bf8bd4( var_3e311473 )
     {
         assert( isdefined( var_5baafbb2.s_vapor_altar ), "<dev string:xab>" );
         
-        if ( var_5baafbb2.s_vapor_altar.script_int == var_3e311473 )
+        if ( var_5baafbb2.s_vapor_altar.script_int == n_perk_index )
         {
             var_fc50707f = getentarray( "zm_random_machine_blocker", "script_noteworthy" );
             var_46d6340f = arraygetclosest( var_5baafbb2.origin, var_fc50707f );

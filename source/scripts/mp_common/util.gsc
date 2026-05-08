@@ -587,12 +587,12 @@ function function_e17a230f( team )
                 continue;
             }
             
-            if ( isdefined( var_53c9b682.var_47177317 ) && var_53c9b682.var_47177317 && isdefined( game.overtime_first_winner ) && team != game.overtime_first_winner )
+            if ( isdefined( var_53c9b682.overtime_winner ) && var_53c9b682.overtime_winner && isdefined( game.overtime_first_winner ) && team != game.overtime_first_winner )
             {
                 continue;
             }
             
-            if ( isdefined( var_53c9b682.var_76fa703c ) && var_53c9b682.var_76fa703c && isdefined( game.overtime_first_winner ) && team == game.overtime_first_winner )
+            if ( isdefined( var_53c9b682.overtime_loser ) && var_53c9b682.overtime_loser && isdefined( game.overtime_first_winner ) && team == game.overtime_first_winner )
             {
                 continue;
             }

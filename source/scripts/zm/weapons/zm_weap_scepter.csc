@@ -62,7 +62,7 @@ function __init__()
 // Size: 0xcc
 function function_abff2ba8( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    if ( self zm_utility::function_f8796df3( localclientnum ) )
+    if ( self zm_utility::is_first_person( localclientnum ) )
     {
         playviewmodelfx( localclientnum, level._effect[ #"hash_143a6ec5331de8ec" ], "tag_flash" );
         return;
@@ -77,7 +77,7 @@ function function_abff2ba8( localclientnum, oldval, newval, bnewent, binitialsna
 // Size: 0xcc
 function function_cde26b0e( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    if ( self zm_utility::function_f8796df3( localclientnum ) )
+    if ( self zm_utility::is_first_person( localclientnum ) )
     {
         playviewmodelfx( localclientnum, level._effect[ #"hash_37498552cad06776" ], "tag_flash" );
         return;
@@ -206,7 +206,7 @@ function flash_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldn
             var_27aa6343 = "scepter" + newval + "_muzzle_flash1p";
             var_a1f103c8 = "scepter" + newval + "_muzzle_flash3p";
             
-            if ( self zm_utility::function_f8796df3( localclientnum ) )
+            if ( self zm_utility::is_first_person( localclientnum ) )
             {
                 if ( viewmodelhastag( localclientnum, "tag_flash" ) )
                 {

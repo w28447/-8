@@ -23,7 +23,7 @@
         "#hash_4fd4570281b08df1"
     ],
     "meleeWeapon": "#mannequin_ai_defaultmelee_mp",
-    "footstepTable": "#hash_77e84cc60b083c69",
+    "footstepTable": "#mannfootstep",
     "footstepScriptCallback": false,
     "footstepFXTable1": "#player_footstep",
     "footstepFXTable2": "#player_footstep",

@@ -35,15 +35,15 @@ function __init__()
     
     if ( getgametypesetting( #"competitivesettings" ) === 1 )
     {
-        level.var_c72e8c51 = getscriptbundle( "tripwire_custom_settings_comp" );
+        level.tripwirebundle = getscriptbundle( "tripwire_custom_settings_comp" );
     }
     else if ( isdefined( level.tripwireweapon.customsettings ) )
     {
-        level.var_c72e8c51 = getscriptbundle( level.tripwireweapon.customsettings );
+        level.tripwirebundle = getscriptbundle( level.tripwireweapon.customsettings );
     }
     else
     {
-        level.var_c72e8c51 = getscriptbundle( "tripwire_custom_settings" );
+        level.tripwirebundle = getscriptbundle( "tripwire_custom_settings" );
     }
     
     if ( !isdefined( level.tripwires ) )
@@ -227,7 +227,7 @@ function on_tripwire_spawn( watcher, player )
     self.entityenemyinfluencer = self influencers::create_entity_enemy_influencer( "claymore", player.team );
     self.destroyablebytrophysystem = 0;
     self.detonating = 0;
-    wait level.var_c72e8c51.var_e14f5fca;
+    wait level.tripwirebundle.tripwireactivationdelay;
     player notify( #"tripwire_spawn", { #tripwire:self } );
     self clientfield::set( "tripwire_state", 1 );
     arrayinsert( level.tripwires, self, level.tripwires.size );
@@ -401,7 +401,7 @@ function function_55c50f15()
             continue;
         }
         
-        if ( distancesquared( tripwire.origin, self.origin ) >= 100 && distancesquared( tripwire.origin, self.origin ) <= level.var_c72e8c51.var_831055cb * level.var_c72e8c51.var_831055cb )
+        if ( distancesquared( tripwire.origin, self.origin ) >= 100 && distancesquared( tripwire.origin, self.origin ) <= level.tripwirebundle.var_831055cb * level.tripwirebundle.var_831055cb )
         {
             trace = beamtrace( tripwire.var_db7f2def, self.var_db7f2def, 0, self, 0, 0, tripwire );
             var_f2edf308 = beamtrace( self.var_db7f2def, tripwire.var_db7f2def, 0, self, 0, 0, tripwire );
@@ -552,7 +552,7 @@ function function_d334c3fa( endpoint )
     }
     
     result = 0;
-    enemyplayers = getplayers( "all", self.origin, level.var_c72e8c51.var_831055cb );
+    enemyplayers = getplayers( "all", self.origin, level.tripwirebundle.var_831055cb );
     
     foreach ( player in enemyplayers )
     {
@@ -660,7 +660,7 @@ function function_15de8daf()
         }
         else if ( self.detonating == 0 )
         {
-            endpos = self.var_db7f2def + self.hitnormal * level.var_c72e8c51.var_9e266f9b;
+            endpos = self.var_db7f2def + self.hitnormal * level.tripwirebundle.var_9e266f9b;
             dotrace = 1;
             
             if ( function_d334c3fa( endpos ) )
@@ -756,7 +756,7 @@ function function_9e546fb3( attacker, weapon, target, var_2f6adbe3, tripper )
             var_2f6adbe3.detonating = 1;
         }
         
-        wait level.var_c72e8c51.var_7f1fc1ee;
+        wait level.tripwirebundle.tripwiredetonationdelay;
         
         if ( !isdefined( self ) )
         {
@@ -765,19 +765,19 @@ function function_9e546fb3( attacker, weapon, target, var_2f6adbe3, tripper )
         
         if ( isdefined( var_2f6adbe3 ) )
         {
-            explosiondist = isdefined( level.var_c72e8c51.var_e44a7667 ) ? level.var_c72e8c51.var_e44a7667 : 0;
-            nearradius = isdefined( level.var_c72e8c51.var_b1f240d7 ) ? level.var_c72e8c51.var_b1f240d7 : 0;
-            farradius = isdefined( level.var_c72e8c51.var_d484364c ) ? level.var_c72e8c51.var_d484364c : 0;
-            maxdamage = isdefined( level.var_c72e8c51.var_89d80d88 ) ? level.var_c72e8c51.var_89d80d88 : 0;
-            mindamage = isdefined( level.var_c72e8c51.var_cd9b7eaf ) ? level.var_c72e8c51.var_cd9b7eaf : 0;
+            explosiondist = isdefined( level.tripwirebundle.var_e44a7667 ) ? level.tripwirebundle.var_e44a7667 : 0;
+            nearradius = isdefined( level.tripwirebundle.var_b1f240d7 ) ? level.tripwirebundle.var_b1f240d7 : 0;
+            farradius = isdefined( level.tripwirebundle.var_d484364c ) ? level.tripwirebundle.var_d484364c : 0;
+            maxdamage = isdefined( level.tripwirebundle.var_89d80d88 ) ? level.tripwirebundle.var_89d80d88 : 0;
+            mindamage = isdefined( level.tripwirebundle.var_cd9b7eaf ) ? level.tripwirebundle.var_cd9b7eaf : 0;
         }
         else
         {
-            explosiondist = isdefined( level.var_c72e8c51.var_13e9ceba ) ? level.var_c72e8c51.var_13e9ceba : 0;
-            nearradius = isdefined( level.var_c72e8c51.var_d0a598a5 ) ? level.var_c72e8c51.var_d0a598a5 : 0;
-            farradius = isdefined( level.var_c72e8c51.var_fcb3348e ) ? level.var_c72e8c51.var_fcb3348e : 0;
-            maxdamage = isdefined( level.var_c72e8c51.var_aebac5e5 ) ? level.var_c72e8c51.var_aebac5e5 : 0;
-            mindamage = isdefined( level.var_c72e8c51.var_69bf01c2 ) ? level.var_c72e8c51.var_69bf01c2 : 0;
+            explosiondist = isdefined( level.tripwirebundle.var_13e9ceba ) ? level.tripwirebundle.var_13e9ceba : 0;
+            nearradius = isdefined( level.tripwirebundle.var_d0a598a5 ) ? level.tripwirebundle.var_d0a598a5 : 0;
+            farradius = isdefined( level.tripwirebundle.var_fcb3348e ) ? level.tripwirebundle.var_fcb3348e : 0;
+            maxdamage = isdefined( level.tripwirebundle.tripwiremaxdamage ) ? level.tripwirebundle.tripwiremaxdamage : 0;
+            mindamage = isdefined( level.tripwirebundle.tripwiremindamage ) ? level.tripwirebundle.tripwiremindamage : 0;
         }
         
         explosiondir = self.hitnormal;
@@ -934,9 +934,9 @@ function function_9b3a657f( weapon )
     self clientfield::set( "friendlyequip", 1 );
     playfx( #"hash_65c5042becfbaa7d", self.origin );
     
-    if ( isdefined( level.var_c72e8c51.var_bb6c29b4 ) && isdefined( weapon ) && weapon == getweapon( #"shock_rifle" ) )
+    if ( isdefined( level.tripwirebundle.var_bb6c29b4 ) && isdefined( weapon ) && weapon == getweapon( #"shock_rifle" ) )
     {
-        playfx( level.var_c72e8c51.var_bb6c29b4, self.origin );
+        playfx( level.tripwirebundle.var_bb6c29b4, self.origin );
     }
     
     playsoundatposition( #"hash_5a530df2bd2b027c", self.origin );

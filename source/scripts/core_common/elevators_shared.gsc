@@ -117,7 +117,7 @@ class celevator
             var_b66bd46e = var_de7ae77 - var_c0a091bc;
         }
         
-        n_movetime = m_s_bundle.var_db3c84cf * var_b66bd46e;
+        n_movetime = m_s_bundle.elevator_move_time * var_b66bd46e;
         n_movetime = math::clamp( n_movetime, 1, 30 );
         var_2af3d553 movez( -1 * m_s_bundle.var_a4446fd0 * var_b66bd46e, n_movetime, 0.1, 0.1 );
         var_2af3d553 waittill( #"movedone" );
@@ -217,7 +217,7 @@ class celevator
             var_b66bd46e = var_de7ae77 - var_c0a091bc;
         }
         
-        n_movetime = m_s_bundle.var_db3c84cf * var_b66bd46e;
+        n_movetime = m_s_bundle.elevator_move_time * var_b66bd46e;
         n_movetime = math::clamp( n_movetime, 1, 30 );
         var_2af3d553 movez( m_s_bundle.var_a4446fd0 * var_b66bd46e, n_movetime, 0.1, 0.1 );
         var_2af3d553 waittill( #"movedone" );

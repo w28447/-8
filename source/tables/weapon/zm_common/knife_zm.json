@@ -1,7 +1,7 @@
 {
     "name": "#knife_zm",
     "baseWeapon": "#knife",
-    "streamkey": "#hash_17df943ccb46c1b0",
+    "streamkey": "#knife_soundbank",
     "worldModelTagRight": "tag_weapon_left",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -38,7 +38,7 @@
         "#wpn_t8_zm_knife_01_world"
     ],
     "meleeImpactRumble": "#defaultweapon_melee",
-    "fx_f60": "#hash_4f4f7d3d49485130",
-    "fx_f68": "#hash_4f4f7d3d49485130",
+    "fx_f60": "#impacts/fx_flesh_hit_knife_zmb",
+    "fx_f68": "#impacts/fx_flesh_hit_knife_zmb",
     "normalImpactFX": "#hash_a5f3e55b8e1070ab"
 }

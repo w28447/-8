@@ -67,7 +67,7 @@
     "weaponCamo": "#hash_14cbd2f6e6ea657c",
     "cacWeaponXCam": "#ui_cam_cac_shotgun_precision",
     "cacAttachmentsXCam": "#ui_cam_cac_shotgun_precision",
-    "weaponIconXCam": "#hash_79fbd94f520a572b",
+    "weaponIconXCam": "#ui_cam_icon_shotgun_precision",
     "attachments": [
         "#hash_f459a0af8e8f912b"
     ],
@@ -90,7 +90,7 @@
     "inventoryIconZm": "#ui_icon_weapon_hud_shotgun_prec",
     "image_e90": "#ui_icon_obit_shotgun_prec",
     "fireRumble": "#shotgun_fire",
-    "rumble_dc8": "#hash_71fceb6e20f9fbdc",
+    "rumble_dc8": "#shotgun_adsfire",
     "rumble_e20": "#hash_322cc8a226215312",
     "fx_bc8": "#hash_6772b94434b7d921",
     "fx_bd0": "#hash_6779a54434bdd5d3",
@@ -100,7 +100,7 @@
     "fx_c90": "#hash_68c03a568bff9252",
     "fx_c98": "#hash_68c03a568bff9252",
     "normalImpactFX": "#hash_732fd0b76ec30328",
-    "exitImpactFX": "#hash_16e6f5bf4a293426",
+    "exitImpactFX": "#shotgun_exit",
     "normalImpactSounds": "#hash_415fba9edcdfd2e4",
-    "exitImpactSounds": "#hash_16e6f5bf4a293426"
+    "exitImpactSounds": "#shotgun_exit"
 }

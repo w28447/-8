@@ -280,7 +280,7 @@ function function_e6537e9f( localclientnum, oldval, newval, bnewent, binitialsna
 // Size: 0x102
 function function_5e901c8c( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
-    if ( isdefined( self.var_7a27c968 ) && self zm_utility::function_f8796df3( localclientnum ) )
+    if ( isdefined( self.var_7a27c968 ) && self zm_utility::is_first_person( localclientnum ) )
     {
         deletefx( localclientnum, self.var_7a27c968 );
         self.var_7a27c968 = undefined;
@@ -293,7 +293,7 @@ function function_5e901c8c( localclientnum, oldval, newval, bnewent, binitialsna
             return;
         }
         
-        if ( self zm_utility::function_f8796df3( localclientnum ) )
+        if ( self zm_utility::is_first_person( localclientnum ) )
         {
             return;
         }

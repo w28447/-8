@@ -88,7 +88,7 @@
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "hash_6615f9892006f4f4:hash_4be786c9": "localized17#hash_6615f9892006f4f4",
+                        "menu/look:hash_4be786c9": "localized17#menu/look",
                         "hash_334a8e60": "left",
                         "prompt": "+lookstick"
                     },
@@ -102,14 +102,14 @@
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "hash_6601cb85da109187:hash_4be786c9": "localized17#hash_6601cb85da109187",
+                        "menu/descend:hash_4be786c9": "localized17#menu/descend",
                         "hash_334a8e60": "left",
                         "prompt": "+vehiclemovedown"
                     },
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "hash_36567bb8c49ec72d:hash_4be786c9": "localized17#hash_36567bb8c49ec72d",
+                        "menu/ascend:hash_4be786c9": "localized17#menu/ascend",
                         "hash_334a8e60": "left",
                         "prompt": "+vehiclemoveup"
                     }

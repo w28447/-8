@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_dom_point_secured",
     "backinglarge": "image#t7_hud_medal_backing_gamemode_lrg",
     "iconsmall": "image#t7_hud_medal_dom_point_secured",
-    "stringref": "localized17#hash_7d025c8f3c0dc632",
+    "stringref": "localized17#medal/position_secure",
     "iconlarge": "image#t7_hud_medal_dom_point_secured_lrg"
 }

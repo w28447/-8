@@ -159,7 +159,7 @@ function event_handler[gametype_init] main( eventstruct )
     function_aaa24662();
     level.var_bde3d03 = &function_b777ff94;
     setdvar( #"g_allowlaststandforactiveclients", 1 );
-    setdvar( #"hash_7036719f41a78d54", 50 );
+    setdvar( #"player_laststandrevivehealth", 50 );
     setdvar( #"hash_6d545f685fa213dd", 3 );
     setdvar( #"scr_deleteexplosivesonspawn", 0 );
     level.wound_disabled = 1;

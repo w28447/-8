@@ -33,7 +33,7 @@
     "peelSpeedMax": 600,
     "model": "#hash_181fe85848ab066",
     "deathModel": "#veh_t8_mil_drone_dart",
-    "soundDef": "#hash_2276dbf56c3e2bc3",
+    "soundDef": "#veh_drn_dart_mp",
     "compassIconMaterial": "#compass_hk",
     "tacticalModeIcon": "#compass_hk",
     "steerAxisName": "AXIS_RSTICK",

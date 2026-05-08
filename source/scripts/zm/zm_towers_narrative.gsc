@@ -395,12 +395,12 @@ function function_b116e882( var_237f80b0, var_54bb7f87, var_5876458 )
 function function_831dcf3e()
 {
     level endon( #"end_game" );
-    var_8a88c4c8 = getent( "mdl_narrative_dirt", "targetname" );
+    mdl_cipher = getent( "mdl_narrative_dirt", "targetname" );
     a_t_braziers = getentarray( "t_narrative_hoop", "targetname" );
     
     if ( !zm_utility::is_ee_enabled() )
     {
-        var_8a88c4c8 delete();
+        mdl_cipher delete();
     }
     else
     {
@@ -526,13 +526,13 @@ function function_da2c37fc()
 function function_2160d544()
 {
     level endon( #"end_game" );
-    var_8a88c4c8 = getent( "mdl_narrative_dirt", "targetname" );
-    var_8a88c4c8 clientfield::set( "" + #"hash_2407f687f7d24a83", 1 );
+    mdl_cipher = getent( "mdl_narrative_dirt", "targetname" );
+    mdl_cipher clientfield::set( "" + #"hash_2407f687f7d24a83", 1 );
     self function_964ec142();
     
     if ( !level flag::get( #"hash_3eea1302aae8fea1" ) )
     {
-        var_8a88c4c8 clientfield::set( "" + #"hash_2407f687f7d24a83", 0 );
+        mdl_cipher clientfield::set( "" + #"hash_2407f687f7d24a83", 0 );
     }
 }
 
@@ -574,13 +574,13 @@ function function_964ec142()
 function function_7c66ee1b()
 {
     level endon( #"end_game" );
-    var_8a88c4c8 = getent( "mdl_narrative_flop", "targetname" );
+    mdl_cipher = getent( "mdl_narrative_flop", "targetname" );
     s_loc = struct::get( #"hash_41008b60aedc6f40" );
     s_hand = struct::get( #"hash_723303fe45c13f65" );
     
     if ( !zm_utility::is_ee_enabled() )
     {
-        var_8a88c4c8 delete();
+        mdl_cipher delete();
         s_loc struct::delete();
         scene::add_scene_func( s_hand.var_450f5117, &function_f3c29d33, "init" );
         s_hand struct::delete();
@@ -591,7 +591,7 @@ function function_7c66ee1b()
     level thread scene::play( s_hand.var_450f5117 );
     s_loc struct::delete();
     s_hand struct::delete();
-    var_8a88c4c8 clientfield::set( "" + #"hash_2407f687f7d24a83", 1 );
+    mdl_cipher clientfield::set( "" + #"hash_2407f687f7d24a83", 1 );
 }
 
 // Namespace zm_towers_narrative/zm_towers_narrative
@@ -626,11 +626,11 @@ function function_bc24a9ea( e_player )
 function function_1d63d95a()
 {
     level endon( #"end_game" );
-    var_8a88c4c8 = getent( "mdl_narrative_crawl", "targetname" );
+    mdl_cipher = getent( "mdl_narrative_crawl", "targetname" );
     
     if ( !zm_utility::is_ee_enabled() )
     {
-        var_8a88c4c8 delete();
+        mdl_cipher delete();
         return;
     }
     
@@ -651,7 +651,7 @@ function function_1d63d95a()
     
     t_trigger = getent( "t_narrative_crawl", "targetname" );
     t_trigger delete();
-    var_8a88c4c8 clientfield::set( "" + #"hash_2407f687f7d24a83", 1 );
+    mdl_cipher clientfield::set( "" + #"hash_2407f687f7d24a83", 1 );
 }
 
 // Namespace zm_towers_narrative/zm_towers_narrative
@@ -683,12 +683,12 @@ function function_ce1c5cac()
 function function_e0f3a28d()
 {
     level endon( #"end_game" );
-    var_8a88c4c8 = getent( "mdl_narrative_soak", "targetname" );
+    mdl_cipher = getent( "mdl_narrative_soak", "targetname" );
     var_86e77481 = getentarray( "t_narrative_soak", "targetname" );
     
     if ( !zm_utility::is_ee_enabled() )
     {
-        var_8a88c4c8 delete();
+        mdl_cipher delete();
     }
     else
     {
@@ -696,7 +696,7 @@ function function_e0f3a28d()
         level.var_98d9a07c = var_86e77481.size;
         array::thread_all( var_86e77481, &function_341bdf82 );
         level flag::wait_till( #"hash_4ea18d3d5847ab0c" );
-        var_8a88c4c8 clientfield::set( "" + #"hash_2407f687f7d24a83", 1 );
+        mdl_cipher clientfield::set( "" + #"hash_2407f687f7d24a83", 1 );
     }
     
     array::delete_all( var_86e77481 );
@@ -753,12 +753,12 @@ function function_341bdf82()
 function function_bf573b44()
 {
     level endon( #"end_game" );
-    var_8a88c4c8 = getent( "mdl_narrative_payback", "targetname" );
+    mdl_cipher = getent( "mdl_narrative_payback", "targetname" );
     a_vol_statues = getentarray( "vol_narrative_payback", "targetname" );
     
     if ( !zm_utility::is_ee_enabled() )
     {
-        var_8a88c4c8 delete();
+        mdl_cipher delete();
     }
     else
     {
@@ -768,7 +768,7 @@ function function_bf573b44()
         array::thread_all( level.players, &function_ca4e26c3 );
         level flag::wait_till( #"hash_aab8ed14df98649" );
         callback::remove_on_connect( &function_ca4e26c3 );
-        var_8a88c4c8 clientfield::set( "" + #"hash_2407f687f7d24a83", 1 );
+        mdl_cipher clientfield::set( "" + #"hash_2407f687f7d24a83", 1 );
     }
     
     array::delete_all( a_vol_statues );
@@ -839,26 +839,26 @@ function function_ca4e26c3()
 function acid_trap_think()
 {
     level endon( #"end_game" );
-    var_8a88c4c8 = getent( "mdl_narrative_burn", "targetname" );
+    mdl_cipher = getent( "mdl_narrative_burn", "targetname" );
     
     if ( !zm_utility::is_ee_enabled() )
     {
-        var_8a88c4c8 delete();
+        mdl_cipher delete();
         return;
     }
     
     scene::add_scene_func( #"p8_fxanim_zm_towers_trap_acid_02_bundle", &function_89add587, "play" );
     var_74331c2 = level.var_482bcfef;
-    t_acid_trap = arraygetclosest( var_8a88c4c8.origin, var_74331c2 );
+    t_acid_trap = arraygetclosest( mdl_cipher.origin, var_74331c2 );
     t_acid_trap thread function_e6f26f04();
     t_acid_trap thread function_ffc6c45f();
     
     while ( true )
     {
         level flag::wait_till_all( array( #"hash_3e90f82a2802b3", #"hash_26c9e53e0e558572" ) );
-        var_8a88c4c8 clientfield::set( "" + #"hash_2407f687f7d24a83", 1 );
+        mdl_cipher clientfield::set( "" + #"hash_2407f687f7d24a83", 1 );
         level flag::wait_till_clear_any( array( #"hash_3e90f82a2802b3", #"hash_26c9e53e0e558572" ) );
-        var_8a88c4c8 clientfield::set( "" + #"hash_2407f687f7d24a83", 0 );
+        mdl_cipher clientfield::set( "" + #"hash_2407f687f7d24a83", 0 );
     }
 }
 
@@ -868,15 +868,15 @@ function acid_trap_think()
 // Size: 0x104
 function function_89add587( a_ents )
 {
-    var_8a88c4c8 = getent( "mdl_narrative_burn", "targetname" );
+    mdl_cipher = getent( "mdl_narrative_burn", "targetname" );
     a_s_scenes = struct::get_array( self.scriptbundlename, "scriptbundlename" );
-    s_closest = arraygetclosest( var_8a88c4c8.origin, a_s_scenes );
+    s_closest = arraygetclosest( mdl_cipher.origin, a_s_scenes );
     
     if ( s_closest == self )
     {
         level scene::remove_scene_func( self.scriptbundlename, &function_89add587, "play" );
         mdl_acid_trap = a_ents[ #"prop 1" ];
-        var_8a88c4c8 linkto( mdl_acid_trap, var_8a88c4c8.var_ab585079 );
+        mdl_cipher linkto( mdl_acid_trap, mdl_cipher.var_ab585079 );
     }
 }
 
@@ -948,12 +948,12 @@ function function_ffc6c45f()
 function function_81c8a125()
 {
     level endon( #"end_game" );
-    var_8a88c4c8 = getent( "mdl_narrative_destiny", "targetname" );
+    mdl_cipher = getent( "mdl_narrative_destiny", "targetname" );
     a_t_shields = getentarray( "t_narrative_destiny", "targetname" );
     
     if ( !zm_utility::is_ee_enabled() )
     {
-        var_8a88c4c8 delete();
+        mdl_cipher delete();
     }
     else
     {
@@ -987,7 +987,7 @@ function function_81c8a125()
         mdl_shield = getent( "mdl_narrative_bash", "targetname" );
         mdl_shield movex( -2, 0.5 );
         mdl_shield rotatepitch( 15, 0.5 );
-        var_8a88c4c8 clientfield::set( "" + #"hash_2407f687f7d24a83", 1 );
+        mdl_cipher clientfield::set( "" + #"hash_2407f687f7d24a83", 1 );
     }
     
     array::delete_all( a_t_shields );
@@ -1000,18 +1000,18 @@ function function_81c8a125()
 function function_a533efc0()
 {
     level endon( #"end_game" );
-    var_8a88c4c8 = getent( "mdl_narrative_slash", "targetname" );
+    mdl_cipher = getent( "mdl_narrative_slash", "targetname" );
     
     if ( !zm_utility::is_ee_enabled() )
     {
-        var_8a88c4c8 delete();
+        mdl_cipher delete();
         return;
     }
     
     callback::on_ai_killed( &function_d6357bd4 );
     level flag::wait_till( #"hash_7b6594521dfb7bb1" );
     callback::remove_on_ai_killed( &function_d6357bd4 );
-    var_8a88c4c8 clientfield::set( "" + #"hash_2407f687f7d24a83", 1 );
+    mdl_cipher clientfield::set( "" + #"hash_2407f687f7d24a83", 1 );
 }
 
 // Namespace zm_towers_narrative/zm_towers_narrative
@@ -1038,12 +1038,12 @@ function function_d6357bd4( s_params )
 function function_cb2c487d()
 {
     level endon( #"end_game" );
-    var_8a88c4c8 = getent( "mdl_narrative_death", "targetname" );
+    mdl_cipher = getent( "mdl_narrative_death", "targetname" );
     vol_grate = getent( "vol_narrative_death", "targetname" );
     
     if ( !zm_utility::is_ee_enabled() )
     {
-        var_8a88c4c8 delete();
+        mdl_cipher delete();
         vol_grate delete();
         return;
     }
@@ -1078,13 +1078,13 @@ function function_cb2c487d()
                 if ( !var_f9b9263d )
                 {
                     var_f9b9263d = 1;
-                    var_8a88c4c8 clientfield::set( "" + #"hash_2407f687f7d24a83", 1 );
+                    mdl_cipher clientfield::set( "" + #"hash_2407f687f7d24a83", 1 );
                 }
             }
             else if ( var_f9b9263d )
             {
                 var_f9b9263d = 0;
-                var_8a88c4c8 clientfield::set( "" + #"hash_2407f687f7d24a83", 0 );
+                mdl_cipher clientfield::set( "" + #"hash_2407f687f7d24a83", 0 );
             }
             
             waitframe( 1 );
@@ -1093,7 +1093,7 @@ function function_cb2c487d()
         if ( var_f9b9263d )
         {
             var_f9b9263d = 0;
-            var_8a88c4c8 clientfield::set( "" + #"hash_2407f687f7d24a83", 0 );
+            mdl_cipher clientfield::set( "" + #"hash_2407f687f7d24a83", 0 );
         }
     }
 }

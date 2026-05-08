@@ -547,9 +547,9 @@ function private function_7e3a43c3( localclientnum )
             continue;
         }
         
-        if ( !currentplayer postfx::function_556665f2( #"hash_13defe66b6177d0b" ) )
+        if ( !currentplayer postfx::function_556665f2( #"pstfx_wz_toon" ) )
         {
-            currentplayer postfx::playpostfxbundle( #"hash_13defe66b6177d0b" );
+            currentplayer postfx::playpostfxbundle( #"pstfx_wz_toon" );
         }
         
         waitframe( 1 );

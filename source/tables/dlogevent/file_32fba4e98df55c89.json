@@ -15,23 +15,23 @@
                 "name": "#telemetry_header",
                 "members": [
                     {
-                        "name": "#hash_f2ad74d8edb8204",
-                        "scrName": "#hash_50f7aa03",
+                        "name": "#game_session_id",
+                        "scrName": "#game_session_id",
                         "type": "UINT64"
                     },
                     {
                         "name": "#action_type",
-                        "scrName": "#hash_42e28add",
+                        "scrName": "#action_type",
                         "type": "XHASH"
                     },
                     {
                         "name": "#title_id",
-                        "scrName": "#hash_8f4c2b40",
+                        "scrName": "#title_id",
                         "type": "UINT32"
                     },
                     {
                         "name": "#build_version",
-                        "scrName": "#hash_26065d8a",
+                        "scrName": "#build_version",
                         "type": "STRING",
                         "len": 32
                     },
@@ -42,7 +42,7 @@
                     },
                     {
                         "name": "#source_version",
-                        "scrName": "#hash_a56621db",
+                        "scrName": "#source_version",
                         "type": "UINT16"
                     },
                     {
@@ -52,7 +52,7 @@
                     },
                     {
                         "name": "#changelist_number",
-                        "scrName": "#hash_e632366e",
+                        "scrName": "#changelist_number",
                         "type": "INT32"
                     }
                 ]
@@ -117,18 +117,18 @@
                 "name": "#hash_2f1c32e28bcd6a46",
                 "members": [
                     {
-                        "name": "#hash_fe1bb65e8de4d51",
+                        "name": "#to_matchmaking_id",
                         "scrName": "#hash_3ad80605",
                         "type": "UINT64"
                     },
                     {
-                        "name": "#hash_2459c7bb3080c37f",
+                        "name": "#to_game_mode",
                         "scrName": "#hash_2ae53af",
                         "type": "INT32",
                         "len": 60
                     },
                     {
-                        "name": "#hash_2b50577fe93b2256",
+                        "name": "#from_lobby_id",
                         "scrName": "#hash_34da3f2b",
                         "type": "UINT64"
                     },
@@ -150,7 +150,7 @@
                         "type": "UINT8"
                     },
                     {
-                        "name": "#hash_438c4b6c6afd6185",
+                        "name": "#to_lobby_id",
                         "scrName": "#hash_2cfafdfd",
                         "type": "UINT64"
                     },
@@ -165,7 +165,7 @@
                         "type": "UINT64"
                     },
                     {
-                        "name": "#hash_4e650e9c822cb0ce",
+                        "name": "#from_game_mode",
                         "scrName": "#hash_79027805",
                         "type": "INT32",
                         "len": 60
@@ -182,7 +182,7 @@
                         "len": 60
                     },
                     {
-                        "name": "#hash_68c4483fed6cf75e",
+                        "name": "#from_matchmaking_id",
                         "scrName": "#hash_c8d0d1d2",
                         "type": "UINT64"
                     },
@@ -220,17 +220,17 @@
                 "members": [
                     {
                         "name": "#user_id",
-                        "scrName": "#hash_fada396e",
+                        "scrName": "#user_id",
                         "type": "UINT64"
                     },
                     {
                         "name": "#user_session_id",
-                        "scrName": "#hash_e004f74d",
+                        "scrName": "#user_session_id",
                         "type": "UINT64"
                     },
                     {
                         "name": "#uno_id",
-                        "scrName": "#hash_e7339473",
+                        "scrName": "#uno_id",
                         "type": "UINT64"
                     }
                 ]

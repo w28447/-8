@@ -496,7 +496,7 @@ model,#p8_zm_zod_wall_box_electrical_med_door
 model,#p7_fxp_debris_car_glass_shatter_02
 model,#p7_fxp_debris_car_glass_shatter_03
 model,#p7_fxp_debris_car_glass_shatter_01
-model,#hash_6167d57b4d013be1
+model,#p7_fxp_debris_wood_splinter_05
 model,#p7_fxp_debris_wood_splinter_02
 model,#p7_fxp_debris_wood_splinter_03
 model,#p7_fxp_debris_wood_splinter_01
@@ -693,16 +693,16 @@ aitype,#spawner_zm_brutus_face
 character,#c_t8_zmb_mob_hero_richtofen2
 character,#hash_5c11bbb793076c
 character,#c_t8_zmb_mob_hero_dempsey1_igc
-character,#hash_3cf4f5dd906af60
+character,#c_usa_dempsey_zm
 character,#c_t8_zmb_mob_hero_richtofen2_igc
 character,#hash_16cbb1277ca4cd95
-character,#hash_1750425f1ada63b1
+character,#c_rus_nikolai_zm
 character,#hash_1d925a94b9b43c13
 character,#c_t8_zmb_mob_hero_takeo1_igc
 character,#hash_2bdf3d983cc69ab3
 character,#c_t8_zmb_3rdclass_male1
 character,#c_t8_zmb_3rdclass_male2
-character,#hash_2ebbbf66e99bd4d8
+character,#c_ger_richtofen_zm
 character,#hash_313c7c29cb8be68d
 character,#hash_3583788c91d27d95
 character,#hash_3909cb2dad269bd7
@@ -724,9 +724,9 @@ character,#hash_678c9a5a803404bb
 character,#c_zom_der_zombie2
 character,#c_zom_der_hellhound_ghost
 character,#hash_7d386db97cc99867
-character,#hash_7d77b1201cfdf293
+character,#c_jap_takeo_zm
 xmodelalias,#hash_b73cf81d3a1d690
-xmodelalias,#hash_dc752693fd01913
+xmodelalias,#c_zom_der_zombie_headalias
 xmodelalias,#hash_5aa4d137981ca017
 xmodelalias,#hash_612e15b05a54b6c5
 weapon,#hero_minigun_t8_lv3_zm
@@ -749,7 +749,7 @@ weapon,#zhield_spectral_dw_upgraded_zm
 weapon,#hero_gravityspikes_t8_lv2_zm
 weapon,#zhield_spectral_lh_upgraded_zm
 weapon,#brutus_melee
-weapon,#hash_23139323ee602453
+weapon,#apc_cougar_camera
 weapon,#ray_gun_mk2_zm
 weapon,#ww_blundergat_fire_t8_upgraded_zm
 weapon,#hero_minigun_t8_lv3_Grenade_zm
@@ -801,19 +801,19 @@ gesture,#hash_cfb73df44ba5e62
 gesture,#hash_d1d6fdf44d73dfc
 gesture,#hash_173ba2b4ca0e8199
 gesture,#hash_17554528c1686dc2
-gesture,#hash_1aef2677f88e3ab4
+gesture,#ges_prone_to_crouch
 gesture,#ges_slide
 gesture,#hash_1ecbeacffe984bd5
-gesture,#hash_1fa61b89c49734c5
+gesture,#ges_slide_buckler
 gesture,#hash_22a9b7654c442ae1
 gesture,#hash_23a74fdb403c65f0
 gesture,#hash_277749aab1c80810
 gesture,#hash_29294fbe01509baa
-gesture,#hash_29eda3eac4bc8896
+gesture,#ges_crouch_to_prone
 gesture,#hash_2e605597500da80d
 gesture,#hash_3804828f76f10dff
 gesture,#hash_43748cfa7a99a04f
-gesture,#hash_454ab8f5ef9645d6
+gesture,#ges_swim_idle
 gesture,#hash_471e4c66f376cbfc
 gesture,#hash_4c34962941265b15
 gesture,#hash_4ec924e960ada917
@@ -826,7 +826,7 @@ gesture,#hash_6250cf3f48cc92dd
 gesture,#hash_62a2373d6a3a13b3
 gesture,#hash_65b7bf0d6961793f
 gesture,#hash_69a2da5519acb723
-gesture,#hash_6ccf090457c7f598
+gesture,#ges_slide_dw
 gesture,#hash_72ab5f0b20eb9fcf
 gesture,#hash_75ebfc135f681a76
 gesture,#hash_7b668e6c3cf73bd0
@@ -837,7 +837,7 @@ gesturetable,#gestable_zombie_tomahawk_flourish
 gesturetable,#hash_5c7b37fc29441fbc
 gesturetable,#hash_6d99b1d1aea3123d
 zbarrier,#hash_195b7d14e24e7ca
-zbarrier,#hash_f9ca6b0d40e5398
+zbarrier,#zmcore_packapunch
 zbarrier,#zm_esc_magicbox
 zbarrier,#hash_363f8f784d6992fd
 zbarrier,#hash_6f787505ca140027
@@ -860,7 +860,7 @@ rumble,#zm_escape_walnut
 rumble,#hash_3c64ae4793e47b3a
 rumble,#hash_41507a7755099d85
 rumble,#pistol_fire
-rumble,#hash_4528a09176695746
+rumble,#zod_shield_juke
 rumble,#zm_weap_chakram_throw_rumble
 rumble,#flamethrower
 rumble,#siegebot_mp_footstep
@@ -889,7 +889,7 @@ rumble,#zm_weap_scepter_ray_hit_rumble
 shellshock,#tankblast
 shellshock,#explosion_shock
 statuseffect,#dot_purifier
-statuseffect,#hash_19533caf858a9f3b
+statuseffect,#shock_zm_trap
 statuseffect,#hash_2608bf886a137e8e
 statuseffect,#wound_purifier
 xcam,#c_zm_escape_outro_sh060
@@ -916,7 +916,7 @@ xcam,#c_zm_escape_outro_sh170
 xcam,#c_zm_escape_outro_sh160
 xcam,#hash_db5c34f7d9e1861
 xcam,#hash_1ae1e697609dd70b
-xcam,#hash_1bdd23d733f1a80c
+xcam,#ui_cam_cac_equip_smoke
 xcam,#c_sh020_vign_zm_mob_richtofen_cryopod_cam2
 xcam,#ui_cam_cac_smg_thompson
 xcam,#hash_2547de4f2204205b
@@ -2075,7 +2075,7 @@ xanim,#hash_3d162dcc2c51c266
 xanim,#hash_3d1632cc2c51cae5
 xanim,#ai_zombie_dreamcatch_rise
 xanim,#hash_3d5e82f4c0f4fafc
-xanim,#hash_3d88026964c94600
+xanim,#vm_crouch_to_prone
 xanim,#ai_zombie_base_dog_death_hit_right
 xanim,#vm_frag_idle
 xanim,#hash_3dba05e651b33511
@@ -2180,7 +2180,7 @@ xanim,#vm_purifier_t8_fire_intro
 xanim,#ai_zombie_base_sprint_ad_sidestep_left_long_a
 xanim,#ai_zombie_base_sprint_ad_sidestep_left_long_b
 xanim,#ai_t8_zm_zombie_base_run_mantle_over_96
-xanim,#hash_43ef07a1bd68dd9e
+xanim,#vm_prone_to_crouch
 xanim,#vm_riotshield_zm_sprint_in
 xanim,#ai_t8_zm_zombie_base_run_mantle_over_72
 xanim,#hash_43fadedc6dd6901b
@@ -3848,7 +3848,7 @@ string,#zmweapon/acidgat_upgraded
 string,#hash_1e868bcceacd1675
 string,#hash_1f1cd13cd89469bf
 string,#hash_200e228d5c301025
-string,#hash_204ec88c63b3436b
+string,#zmarcade/fasttravel
 string,#hash_208eb7d41301aac0
 string,#hash_2110980a2c8a4dd3
 string,#hash_21868d247829d827
@@ -3904,7 +3904,7 @@ string,#mpui/holdbreath
 string,#hash_2cab672fd372f942
 string,#hash_2d003d6a1240093c
 string,#hash_2d2fbe4505249056
-string,#hash_2d38457ce932c4e2
+string,#zombie/repair_spectral_shield_keyboard
 string,#hash_2d85a60f366822d1
 string,#hash_2e07feb09cd945a9
 string,#hash_2e77e87570b1c528
@@ -3969,7 +3969,7 @@ string,#hash_3ca968dee9e5dc02
 string,#hash_3cbdafac7f4a7bd2
 string,#hash_3d26eb8dafae98e9
 string,#hash_3d510922bc950f08
-string,#hash_3d7abb3373fab887
+string,#zmui/suppressor_desc
 string,#mpui/tacknife
 string,#hash_3de8e053a2e6c69b
 string,#hash_3dfd2cf9c5589207
@@ -4195,7 +4195,7 @@ string,#hash_6fdd700531047ee7
 string,#mpui/rangefinder
 string,#mpui/stabilizer
 string,#hash_705c102d1924f0dd
-string,#hash_7085044e7b80d5a3
+string,#mpui/reticle_default
 string,#hash_709fb6b7fdde6aa8
 string,#hash_70fa5ff9f448bc96
 string,#zombie/need_power
@@ -4850,7 +4850,7 @@ soundalias,#hash_8e18e272446a98b
 soundalias,#hash_8e18f272446ab3e
 soundalias,#hash_8e190272446acf1
 soundalias,#hash_8e31499dc579047
-soundalias,#hash_8e3637dbb97cd8d
+soundalias,#amb_roof_access
 soundalias,#hash_8eb31a72984ee73
 soundalias,#hash_8ec3fe5cf9e8e33
 soundalias,#hash_8ec40e5cf9e8fe6
@@ -5478,7 +5478,7 @@ soundalias,#hash_1871495f1d90a8d9
 soundalias,#hash_1889559f780157cd
 soundalias,#hash_1891b3211ab36c94
 soundalias,#hash_18a5515e3206c55c
-soundalias,#hash_18a56b977173384f
+soundalias,#amb_light_flicker
 soundalias,#hash_18aab87aedd249ef
 soundalias,#hash_18af6614c1753c61
 soundalias,#hash_18b0a6bb9ec28a46
@@ -5533,7 +5533,7 @@ soundalias,#hash_19e2be2e60fa4552
 soundalias,#hash_19e2bf2e60fa4705
 soundalias,#hash_19e61a93b93fe711
 soundalias,#hash_19ed62938d8ef1ae
-soundalias,#hash_19f4b6a3981c76fd
+soundalias,#amb_respirator
 soundalias,#hash_19f4e459c2fe4d85
 soundalias,#hash_19f88bdffffb65ec
 soundalias,#hash_19fab1d44afbde24
@@ -6585,7 +6585,7 @@ soundalias,#hash_3375efdd38e50fb8
 soundalias,#hash_3382e20879c51b3e
 soundalias,#hash_3388d9809bf60b12
 soundalias,#hash_338d4fd86227853a
-soundalias,#hash_3394843eff3180a7
+soundalias,#amb_freezer
 soundalias,#hash_339fbebeaa8d2e7c
 soundalias,#hash_33a2e8f69fa1dd88
 soundalias,#hash_33ac43706777be53
@@ -7712,7 +7712,7 @@ soundalias,#hash_4ca4666f51e2088c
 soundalias,#hash_4ca4676f51e20a3f
 soundalias,#hash_4ca4696f51e20da5
 soundalias,#hash_4ca48b33c455aea0
-soundalias,#hash_4cae446161aa0941
+soundalias,#mus_boss_intro
 soundalias,#hash_4cb29d02fee27086
 soundalias,#hash_4cd37b99d220f6e8
 soundalias,#hash_4cd37c99d220f89b
@@ -8724,7 +8724,7 @@ soundalias,#hash_633174ddd8dd1bd2
 soundalias,#hash_633175ddd8dd1d85
 soundalias,#hash_633176ddd8dd1f38
 soundalias,#hash_633177ddd8dd20eb
-soundalias,#hash_633b9532cf0da169
+soundalias,#amb_flies
 soundalias,#hash_633bcc488ff36c4f
 soundalias,#hash_633ce1c4d50c2315
 soundalias,#hash_6351b28a6b9427c8
@@ -9053,7 +9053,7 @@ soundalias,#hash_6a67552f96353745
 soundalias,#hash_6a6d03cd13fc73c3
 soundalias,#hash_6a6ff80e6b1370bd
 soundalias,#hash_6a7630ceba4f4fba
-soundalias,#hash_6a7bbff93ccc7ab7
+soundalias,#dst_luggage
 soundalias,#hash_6a83edacebf559aa
 soundalias,#hash_6a8f87e26e82567d
 soundalias,#hash_6a90ed19afd57082
@@ -9989,7 +9989,7 @@ soundalias,#hash_7fff1296caa43688
 client_fx,#hash_5384d01e513526
 client_fx,#hash_992fe8f8e8dfb1
 client_fx,#maps/zm_escape/fx8_wolf_soul_charge_impact_sm
-client_fx,#hash_e7395fb42d35f6
+client_fx,#weapon/fx_trail_grenade
 client_fx,#hash_130f1aaf8384975
 client_fx,#hash_14afd11e8e0d881
 client_fx,#hash_23bccae9728cc69
@@ -10010,7 +10010,7 @@ client_fx,#hash_4f19591329a33bf
 client_fx,#hash_4f551af60c2eb5d
 client_fx,#hash_52171f7e87d102f
 client_fx,#hash_558beb0d06104af
-client_fx,#hash_58b227559fe0083
+client_fx,#weapon/fx_shellejects_minigun
 client_fx,#hash_59b16f746392bb5
 client_fx,#hash_5b4e0c241c75dae
 client_fx,#hash_5e483d0e64c5d58
@@ -10097,7 +10097,7 @@ client_fx,#hash_1a52c3d93a368411
 client_fx,#hash_1a851c536e1fa878
 client_fx,#hash_1ae2008ec657ea6b
 client_fx,#impacts/fx_bul_impact_boss_body_fatal
-client_fx,#hash_1b470bd0c4267ac4
+client_fx,#_t6/explosions/fx_vexp_cougar
 client_fx,#impacts/fx_bul_impact_heavy_head_fatal
 client_fx,#maps/zm_escape/fx8_pap_lightning_near
 client_fx,#hash_1bfd30db8a1d22d8
@@ -10128,7 +10128,7 @@ client_fx,#hash_209f1d5520f6f4aa
 client_fx,#hash_20ef20be1f0aa72d
 client_fx,#hash_212a4a61f9e7ab9e
 client_fx,#hash_215c779c48fd6856
-client_fx,#hash_21676a58d92eb053
+client_fx,#weapon/fx_hero_arm_blade_death_sparks
 client_fx,#zombie/fx_bul_flesh_neck_spurt_zmb
 client_fx,#hash_21e59a64eb02516a
 client_fx,#impacts/fx_bul_impact_blood_body_fatal
@@ -10216,7 +10216,7 @@ client_fx,#hash_3a3fc955623adaa0
 client_fx,#hash_3a4139045d9fad6d
 client_fx,#hash_3a4825045da5aa1f
 client_fx,#hash_3a65c86ea64668f5
-client_fx,#hash_3b398ee48ce5188f
+client_fx,#weapon/fx_muz_veh_gun_med_3p
 client_fx,#hash_3b3f97cf646813ac
 client_fx,#hash_3c2d31e47159de2f
 client_fx,#hash_3c501ea0c64b9112
@@ -10252,11 +10252,11 @@ client_fx,#hash_46ca485ac88b24f7
 client_fx,#impacts/fx_bul_impact_heavy_body_fatal_exit
 client_fx,#hash_4835bd332e8a78c7
 client_fx,#zombie/fx_idgun_vortex_ug_zod_zmb
-client_fx,#hash_490e49ac20fe75af
+client_fx,#vehicle/fx_treadfx_asphalt_skid_emit
 client_fx,#hash_4948d849a833ddd5
 client_fx,#hash_4973de04558acdb1
 client_fx,#hash_49caec92b1b2f865
-client_fx,#hash_4a06156e97cba4f7
+client_fx,#vehicle/fx_treadfx_snow_skid_emit
 client_fx,#hash_4a8de7cdf2716f1b
 client_fx,#hash_4a9c1f83345c624b
 client_fx,#hash_4ad8388ae3a5e0f7
@@ -10281,7 +10281,7 @@ client_fx,#hash_4e7218bfa9566ef0
 client_fx,#hash_4e7dd6f6f41ead5f
 client_fx,#impacts/fx_bul_impact_body_armor_lg
 client_fx,#hash_4f1fd4a87c6562ec
-client_fx,#hash_4f4f7d3d49485130
+client_fx,#impacts/fx_flesh_hit_knife_zmb
 client_fx,#hash_4fba451426ea3bb7
 client_fx,#hash_4fe3a8dfdd67f179
 client_fx,#hash_5028a74e717df332
@@ -10319,7 +10319,7 @@ client_fx,#hash_5686def5b4c85661
 client_fx,#hash_56e64fabf583208c
 client_fx,#hash_56ed5babf589539e
 client_fx,#hash_57034716c105e41e
-client_fx,#hash_571f175f88ef5896
+client_fx,#vehicle/fx_treadfx_asphalt_peel
 client_fx,#hash_5740c7d662846db3
 client_fx,#hash_576cad6dd21794d8
 client_fx,#impacts/fx_bul_impact_heavy_body_fatal
@@ -10333,7 +10333,7 @@ client_fx,#maps/zm_escape/fx8_wolf_soul_charge_start
 client_fx,#hash_59422cff58693587
 client_fx,#hash_5959ee9eff7b2eac
 client_fx,#hash_5a51f6c91ceb37a5
-client_fx,#hash_5a70a6908023185e
+client_fx,#light/fx_light_headlight_generic
 client_fx,#hash_5a9159bef624d260
 client_fx,#hash_5aa3d188417a6a1c
 client_fx,#hash_5aa886d21e284bdb

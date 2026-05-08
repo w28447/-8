@@ -23,7 +23,7 @@ CoD.AARPerformanceWidgets.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.AARKillsWidget = AARKillsWidget
 	
 	local DamageStat = CoD.AARSingleStat.new( f1_arg0, f1_arg1, 0.5, 0.5, -147, 78, 0.5, 0.5, -66, 66 )
-	DamageStat.StatLabel:setText( Engine[0xF9F1239CFD921FE]( 0x61100A6B91B62C1 ) )
+	DamageStat.StatLabel:setText( Engine[0xF9F1239CFD921FE]( "aar/damage" ) )
 	DamageStat:subscribeToGlobalModel( f1_arg1, "AARSummaryStats", "damage", function ( model )
 		local f3_local0 = model:get()
 		if f3_local0 ~= nil then

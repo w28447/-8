@@ -1,6 +1,6 @@
 {
     "name": "#pistol_standard_t8_oic_mp",
-    "baseWeapon": "#hash_2c01bb759789f289",
+    "baseWeapon": "#pistol_standard_t8_oic",
     "displayname": "#weapon/pistol_standard_t8",
     "xhash_60": "#hash_4e9634318c928516",
     "streamkey": "#hash_417bdef65ab8dca3",

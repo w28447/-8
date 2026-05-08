@@ -661,9 +661,9 @@ function private function_216a69d6( spawnchance, reset )
             continue;
         }
         
-        if ( isdefined( self.itemlistbundle.var_7fb0967b ) && !var_a9826383 )
+        if ( isdefined( self.itemlistbundle.distributiondistance ) && !var_a9826383 )
         {
-            var_1ba7b9c8 = arraysortclosest( level.var_5ce07338, point.origin, 1, 0, self.itemlistbundle.var_7fb0967b );
+            var_1ba7b9c8 = arraysortclosest( level.var_5ce07338, point.origin, 1, 0, self.itemlistbundle.distributiondistance );
             
             if ( var_1ba7b9c8.size > 0 )
             {
@@ -1087,7 +1087,7 @@ function private function_e25c9d12( &var_8107154f, spawncount, stashitem = 0, &v
         {
             itemspawnpoint = function_b1702735( var_8107154f[ var_a1b91de4[ pointindex ] ] );
             
-            if ( isdefined( self.itemlistbundle.var_7fb0967b ) && !var_a9826383 )
+            if ( isdefined( self.itemlistbundle.distributiondistance ) && !var_a9826383 )
             {
                 var_8822f354 = 0;
                 itemtype = undefined;
@@ -1109,12 +1109,12 @@ function private function_e25c9d12( &var_8107154f, spawncount, stashitem = 0, &v
                     }
                     else
                     {
-                        var_8822f354 = function_579fdc53( itemspawnpoint.origin, undefined, itemtype, self.itemlistbundle.var_7fb0967b, -1, -2147483647 );
+                        var_8822f354 = function_579fdc53( itemspawnpoint.origin, undefined, itemtype, self.itemlistbundle.distributiondistance, -1, -2147483647 );
                     }
                 }
                 else
                 {
-                    var_8822f354 = function_6de8969b( itemspawnpoint.origin, undefined, self.itemlistbundle.var_7fb0967b, -1, 1, -2147483647 );
+                    var_8822f354 = function_6de8969b( itemspawnpoint.origin, undefined, self.itemlistbundle.distributiondistance, -1, 1, -2147483647 );
                 }
                 
                 if ( var_8822f354 > 0 )
@@ -1397,12 +1397,12 @@ function function_50a2c746( &var_f38d5b52, reset = 1, var_87e9f374 = 0 )
         
         if ( var_87e9f374 )
         {
-            if ( !( isdefined( itemlistbundle.var_dc91e192 ) && itemlistbundle.var_dc91e192 ) || !( isdefined( itemlistbundle.supplystash ) && itemlistbundle.supplystash ) )
+            if ( !( isdefined( itemlistbundle.prioritizedspawning ) && itemlistbundle.prioritizedspawning ) || !( isdefined( itemlistbundle.supplystash ) && itemlistbundle.supplystash ) )
             {
                 continue;
             }
         }
-        else if ( isdefined( itemlistbundle.var_dc91e192 ) && itemlistbundle.var_dc91e192 && isdefined( itemlistbundle.supplystash ) && itemlistbundle.supplystash )
+        else if ( isdefined( itemlistbundle.prioritizedspawning ) && itemlistbundle.prioritizedspawning && isdefined( itemlistbundle.supplystash ) && itemlistbundle.supplystash )
         {
             continue;
         }

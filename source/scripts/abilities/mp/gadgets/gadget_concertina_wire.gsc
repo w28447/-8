@@ -74,9 +74,9 @@ function function_806b0f85( attacker, weapon )
 // Size: 0x15e, Type: bool
 function function_6190ae9e( origin, angles, player )
 {
-    if ( isdefined( level.concertinawiresettings.bundle.var_bc78f60e ) )
+    if ( isdefined( level.concertinawiresettings.bundle.protectedzoneradius ) )
     {
-        length2 = ( level.concertinawiresettings.bundle.var_bc78f60e + level.concertinawiresettings.bundle.maxwidth ) * ( level.concertinawiresettings.bundle.var_bc78f60e + level.concertinawiresettings.bundle.maxwidth );
+        length2 = ( level.concertinawiresettings.bundle.protectedzoneradius + level.concertinawiresettings.bundle.maxwidth ) * ( level.concertinawiresettings.bundle.protectedzoneradius + level.concertinawiresettings.bundle.maxwidth );
         
         foreach ( protectedzone in level.concertinawiresettings.objectivezones )
         {

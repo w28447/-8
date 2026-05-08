@@ -1300,22 +1300,22 @@ function begin_grenade_tracking()
     }
     
     blackboxeventname = #"mpequipmentuses";
-    eventname = #"hash_7cbbee88c5db5494";
+    eventname = #"dlog_event_mpequipmentuses";
     
     if ( sessionmodeiscampaigngame() )
     {
         blackboxeventname = #"cpequipmentuses";
-        eventname = #"hash_4b0d58055ad60c5a";
+        eventname = #"dlog_event_cpequipmentuses";
     }
     else if ( sessionmodeiszombiesgame() )
     {
         blackboxeventname = #"zmequipmentuses";
-        eventname = #"hash_637ce41bcec9842c";
+        eventname = #"dlog_event_zmequipmentuses";
     }
     else if ( sessionmodeiswarzonegame() )
     {
         blackboxeventname = #"wzequipmentuses";
-        eventname = #"hash_4f877fbf665a36d8";
+        eventname = #"dlog_event_wzequipmentuses";
     }
     
     function_92d1707f( eventname, blackboxeventname, { #gametime:gettime(), #spawnid:getplayerspawnid( self ), #weaponname:weapon.name } );
@@ -1655,11 +1655,11 @@ function turn_grenade_into_a_dud( weapon, isthrowngrenade, player )
             
             if ( isthrowngrenade )
             {
-                player iprintlnbold( #"hash_10012bedb9f60e99", " " + timeleft + " ", #"hash_79a58948c3b976f5" );
+                player iprintlnbold( #"hash_10012bedb9f60e99", " " + timeleft + " ", #"exe/seconds" );
             }
             else
             {
-                player iprintlnbold( #"hash_255050263c8cd26d", " " + timeleft + " ", #"hash_79a58948c3b976f5" );
+                player iprintlnbold( #"hash_255050263c8cd26d", " " + timeleft + " ", #"exe/seconds" );
             }
             
             self makegrenadedud();

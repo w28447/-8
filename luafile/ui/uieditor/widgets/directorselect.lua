@@ -1,5 +1,5 @@
 require( "x64:4b31e839f22a9f3" )
-require( "x64:1bbde4283bb35f8" )
+require( "ui/uieditor/menus/store/store" )
 require( "ui/uieditor/widgets/common/commoncornerbrackets01" )
 require( "ui/uieditor/widgets/director/directorleaderactivityselect" )
 require( "ui/uieditor/widgets/director/directorpregamebuttonleftjustified" )

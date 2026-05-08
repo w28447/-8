@@ -6,14 +6,14 @@
     "bodyImpactType": 2,
     "gibDef": "#c_t8_zmb_3rdclass_male_gib_def",
     "fxDef": "#fxd8_zm_char_zombie_base_body",
-    "body": "#hash_6d9dd7835be9fde7",
+    "body": "#c_t8_zmb_dlc1_zombie_1stclass_male_body1_skin3",
     "headAlias": "#hash_183319270de9c745",
-    "damagedTorso_Clean": "#hash_58f39e55838b4d4",
-    "damagedTorso_RightArmGone": "#hash_6d4f796d4d7b9a07",
-    "damagedTorso_LeftArmGone": "#hash_5138f8ae1fa0a249",
-    "damagedTorso_HeadGone": "#hash_2db339ef8f4eaf73",
-    "damagedLegs_Clean": "#hash_60a2ecc33d280a0d",
-    "damagedLegs_RightLegGone": "#hash_5f05e6eee9bac545",
-    "damagedLegs_LeftLegGone": "#hash_28de01aa7e2af3ff",
-    "damagedLegs_NoLegs": "#hash_67273b526db7471e"
+    "damagedTorso_Clean": "#c_t8_zmb_dlc1_zombie_1stclass_male_body1_g_upclean_skin3",
+    "damagedTorso_RightArmGone": "#c_t8_zmb_dlc1_zombie_1stclass_male_body1_g_rarmoff_skin3",
+    "damagedTorso_LeftArmGone": "#c_t8_zmb_dlc1_zombie_1stclass_male_body1_g_larmoff_skin3",
+    "damagedTorso_HeadGone": "#c_t8_zmb_dlc1_zombie_3rdclass_male_body1_g_behead",
+    "damagedLegs_Clean": "#c_t8_zmb_dlc1_zombie_1stclass_male_body2_g_lowclean",
+    "damagedLegs_RightLegGone": "#c_t8_zmb_dlc1_zombie_1stclass_male_body2_g_rlegoff",
+    "damagedLegs_LeftLegGone": "#c_t8_zmb_dlc1_zombie_1stclass_male_body2_g_llegoff",
+    "damagedLegs_NoLegs": "#c_t8_zmb_dlc1_zombie_1stclass_male_body2_g_blegsoff"
 }

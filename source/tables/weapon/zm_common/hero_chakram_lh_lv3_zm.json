@@ -40,7 +40,7 @@
     "sharedWeaponSounds": "#hash_78d68a481a79264d",
     "tracers": [
         "#pistol",
-        "#hash_40ce0b8ef958c831"
+        "#pistol_enemy"
     ],
     "viewmodel": [
         "#wpn_t8_zm_melee_chakram_lvl3_dw_view"

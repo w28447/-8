@@ -34,7 +34,7 @@
     "sound250": "#hash_242aa17124751841",
     "projexplosionsound": "#hash_1fda746512df41bf",
     "tunables1": "#hash_46e057970d266f32",
-    "cacWeaponXCam": "#hash_1195ce6744d0272f",
+    "cacWeaponXCam": "#ui_cam_cac_equip_emp",
     "sharedWeaponSounds": "#equipment",
     "projectilemodel": "#hash_ce1b7de0b4c6424",
     "viewmodel": [
@@ -51,5 +51,5 @@
     "image_e90": "#t7_hud_icon_menu_flash_kf",
     "fx_ed8": "#hash_355147feee6dc344",
     "bounceImpactFX": "#grenade_bounce",
-    "bounceImpactSounds": "#hash_1947535d7a37746e"
+    "bounceImpactSounds": "#emp_bounce"
 }

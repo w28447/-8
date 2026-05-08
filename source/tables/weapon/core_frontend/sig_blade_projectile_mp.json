@@ -62,8 +62,8 @@
     "cacWeaponXCam": "#hash_2547de4f2204205b",
     "sharedWeaponSounds": "#hash_4a38d52fa5f2e692",
     "tracers": [
-        "#hash_7a8e163093046e13",
-        "#hash_7a8e163093046e13"
+        "#lightninggun_tracer",
+        "#lightninggun_tracer"
     ],
     "#hash_2e4a8800": "#sig_blade_projectile_scoreevents",
     "projectilemodel": "#wpn_t8_sig_blade_projectile_world",

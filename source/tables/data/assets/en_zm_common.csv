@@ -6,18 +6,18 @@ streamkey,#zm_common_en_loaded
 streamkey,#hash_36f4ae6e1147aa5d
 streamkey,#hash_5871c3f8b945b4a8
 sound,#zm_common.en
-localizeentry,d#hash_127999393f1681
+localizeentry,d#menu/error_caps
 localizeentry,d#hash_17ca4cd9bf4005
 localizeentry,d#hash_1add4c3535dc47
 localizeentry,#menu/charm_toilet_gold
 localizeentry,d#hash_2689f7ef9b424b
 localizeentry,#zmtrials/repackaged_desc
-localizeentry,#hash_4cacb949ec1378
+localizeentry,#zombie/perk_wolf_protector_keyboard
 localizeentry,d#mpui/stalker
 localizeentry,d#hash_95c5021b448b56
 localizeentry,d#mpui/extclip_desc
 localizeentry,d#mpui/fmj_desc
-localizeentry,d#hash_a43b10d9da121a
+localizeentry,d#menu/waiting_caps
 localizeentry,#menu/charm_plant_melon
 localizeentry,d#hash_111ec45ab3b0626
 localizeentry,#hash_113ac1693186335
@@ -26,7 +26,7 @@ localizeentry,#mp/waiting_for_teams
 localizeentry,#zmtrials/shielded
 localizeentry,#menu/charm_basketball_hoop
 localizeentry,#zmtrials/ride_shotgun
-localizeentry,d#hash_19e7605718f65a2
+localizeentry,d#weapon/defaultattachment
 localizeentry,#hash_1aa567b647b8e14
 localizeentry,#hash_1cc4303a4301c66
 localizeentry,#hash_20798b0921784d3
@@ -40,7 +40,7 @@ localizeentry,#hash_2b5c1c69bebf4f4
 localizeentry,d#null/empty
 localizeentry,#hash_2de28046a9c398c
 localizeentry,d#mpui/fastreload2_desc
-localizeentry,d#hash_2fa47140d97f89d
+localizeentry,d#menu/options_caps
 localizeentry,d#zmui/fmj_desc
 localizeentry,#hash_33f9ba586bfea9f
 localizeentry,d#hash_34a73a01d512cf5
@@ -246,7 +246,7 @@ localizeentry,#hash_10b276fac753c556
 localizeentry,#zmtrials/unpacked_desc
 localizeentry,#hash_10c853c67454fff6
 localizeentry,#zmweapon/shotgun_semiauto_t8_upgraded
-localizeentry,#hash_10f22a2fae6154a8
+localizeentry,#mp/hold
 localizeentry,d#hash_111cf7b88d647093
 localizeentry,d#hash_11416e3dffba8d50
 localizeentry,d#mpui/mk
@@ -255,7 +255,7 @@ localizeentry,d#mpui/ir
 localizeentry,d#mpui/is
 localizeentry,d#mpui/gl
 localizeentry,#hash_1173887b9ed28a4e
-localizeentry,d#hash_11762cbfbf851d22
+localizeentry,d#menu/settings_caps
 localizeentry,d#mpui/dw
 localizeentry,d#mpui/camo_dante
 localizeentry,#hash_11889275d187d335
@@ -329,7 +329,7 @@ localizeentry,#hash_168b8ccf26075170
 localizeentry,d#hash_169b3300f8e78d75
 localizeentry,#hash_16a494b93412d859
 localizeentry,d#hash_16ae04bddde4a11b
-localizeentry,d#hash_16b234cb46b5acd4
+localizeentry,d#menu/kills_caps
 localizeentry,#zmweapon/shotgun_trenchgun_t8_upgraded
 localizeentry,#hash_16da48776890f132
 localizeentry,#hash_170ae9542e9ccea5
@@ -352,13 +352,13 @@ localizeentry,d#hash_17ede46111f44fec
 localizeentry,#hash_17fd44c733f7c66b
 localizeentry,#hash_1806f9822fe9c662
 localizeentry,d#mp/change_class_next_spawn
-localizeentry,d#hash_18376260fadcc332
+localizeentry,d#presence/zm_escape
 localizeentry,#hash_1869d963fd636a2e
 localizeentry,#hash_1879c4efe154b7db
 localizeentry,#hash_18841a02137aeede
 localizeentry,#hash_18873c1f9eb8f341
 localizeentry,d#hash_18b7797e532aa1bb
-localizeentry,d#hash_18e58cc95db34427
+localizeentry,d#mp/match_starting_in
 localizeentry,d#hash_18e8c0862204180a
 localizeentry,d#hash_18eaf4fb1061fde3
 localizeentry,#hash_190dd5ec5f5612c1
@@ -422,7 +422,7 @@ localizeentry,d#hash_1e2dbe377100a39f
 localizeentry,d#hash_1e4f75610177b237
 localizeentry,d#mpui/steadyaim2
 localizeentry,d#hash_1e6964fc2922d01a
-localizeentry,#hash_1e8ce5bc6963fb34
+localizeentry,#zombie/perk_ethereal_razor_keyboard
 localizeentry,d#hash_1ec28f865f9444e3
 localizeentry,d#menu/x_headshots
 localizeentry,#hash_1edaf6a1bff5d72f
@@ -448,7 +448,7 @@ localizeentry,#hash_1ffe3ebf3a26eb7e
 localizeentry,#zmtrials/waterlogged_desc
 localizeentry,#hash_2013d9c66d651329
 localizeentry,#hash_2013e8b5b00c8a3f
-localizeentry,#hash_203ff65a4ee460e6
+localizeentry,#platform/press_to_spawn
 localizeentry,d#weapon/uber_strobelight
 localizeentry,#zmui/selenium_selection_desc
 localizeentry,#hash_2045bfcb4ec0b4ad
@@ -466,7 +466,7 @@ localizeentry,d#hash_216c09bce59c94da
 localizeentry,d#hash_21868d247829d827
 localizeentry,#zmtrials/level_headed
 localizeentry,d#hash_21ae94021c967d51
-localizeentry,d#hash_21bbdd7d1b7cfb1b
+localizeentry,d#menu/chat_caps
 localizeentry,d#hash_21bf53d95e5ac2b5
 localizeentry,d#hash_21da964b91bd7062
 localizeentry,#menu/charm_donut_unicorn
@@ -527,7 +527,7 @@ localizeentry,#hash_247f17f522492991
 localizeentry,d#hash_24a3e0f402bfd000
 localizeentry,#zmweapon/ar_modular_t8_upgraded
 localizeentry,d#hash_24c9561478db5594
-localizeentry,#hash_24d2728523b940ff
+localizeentry,#zmtrials/magic_trick_desc
 localizeentry,#hash_24d7a11f11523cca
 localizeentry,d#weapon/uber_speedcenter_desc
 localizeentry,#hash_253fa05b6436b54c
@@ -639,7 +639,7 @@ localizeentry,#hash_2d0b194fce727473
 localizeentry,#zmtrials/shoot_straight
 localizeentry,d#hash_2d28c08feaa399fc
 localizeentry,#hash_2d5b3e718f0d39f0
-localizeentry,d#hash_2d851b47994ea820
+localizeentry,d#menu/friends_caps
 localizeentry,d#hash_2d85a60f366822d1
 localizeentry,#hash_2dc36277fb350dc4
 localizeentry,d#hash_2dd9b243f4c05fbc
@@ -654,7 +654,7 @@ localizeentry,d#hash_2ed10f5e91a70c68
 localizeentry,#zmweapon/ar_peacekeeper_t8_upgraded
 localizeentry,d#hash_2f31e846551c7098
 localizeentry,d#hash_2f6eb9c102b831ad
-localizeentry,#hash_2f712a7c17494226
+localizeentry,#zombie/perk_death_dash_keyboard
 localizeentry,d#hash_2f7231dcf7961528
 localizeentry,d#mpui/camo_burnt
 localizeentry,#hash_2f762115b6faf2db
@@ -673,7 +673,7 @@ localizeentry,d#hash_3041bf105b58c16a
 localizeentry,d#mp/score_limit_reached
 localizeentry,d#mpui/ir_desc
 localizeentry,d#hash_308345f92f6f5b30
-localizeentry,#hash_309f6a17f45fceaf
+localizeentry,#mpui/spectating
 localizeentry,#hash_30becf08ae85b7b5
 localizeentry,#hash_30ca104ae7125b99
 localizeentry,d#weapon/uber_boltcylinder
@@ -848,9 +848,9 @@ localizeentry,d#hash_3d1d2fa348ff38fc
 localizeentry,d#hash_3d26eb8dafae98e9
 localizeentry,#zmtrials/shoot_straight_desc
 localizeentry,#zmtrials/open_sesame
-localizeentry,#hash_3d4a42f8dbfe314f
+localizeentry,#zombie/perk_zombshell_keyboard
 localizeentry,d#hash_3d75c0876757457c
-localizeentry,d#hash_3d7abb3373fab887
+localizeentry,d#zmui/suppressor_desc
 localizeentry,#menu/charm_ice_cream
 localizeentry,#hash_3d9d6e119fdd76ae
 localizeentry,d#hash_3da9b81e1e523524
@@ -915,7 +915,7 @@ localizeentry,d#hash_40388d79ccbf7839
 localizeentry,d#hash_40388e79ccbf79ec
 localizeentry,d#hash_40388f79ccbf7b9f
 localizeentry,d#hash_40389079ccbf7d52
-localizeentry,d#hash_404ef66575ddb929
+localizeentry,d#mpui/max_caps
 localizeentry,#hash_40500dfc3dffbf0b
 localizeentry,d#hash_40bdea6deb82471e
 localizeentry,#hash_40cccac56698bbcf
@@ -931,7 +931,7 @@ localizeentry,#menu/charm_shotgun_shell
 localizeentry,d#mpui/mixclip_desc
 localizeentry,#hash_416c0321eb197ee8
 localizeentry,d#hash_416cc45da8917a9c
-localizeentry,d#hash_4191cdda584b4408
+localizeentry,d#menu/store_caps
 localizeentry,d#hash_41bd4c5cdc9ef279
 localizeentry,#hash_41bdafe80992b867
 localizeentry,#hash_41d2d10a19d5e162
@@ -974,7 +974,7 @@ localizeentry,#zmtrials/shoot_from_the_hip_desc
 localizeentry,d#mpui/suppressed
 localizeentry,#hash_450bfa432b8cc6ca
 localizeentry,#zmtrials/repackaged
-localizeentry,#hash_4525be5a39df06ca
+localizeentry,#mpui/requirement
 localizeentry,#hash_4529358b5e1cbf65
 localizeentry,d#hash_452fd06faf792671
 localizeentry,#zmtrials/the_grand_finale_desc
@@ -998,7 +998,7 @@ localizeentry,d#hash_45c9c9f185bd647e
 localizeentry,#hash_45cb73ced891c9ca
 localizeentry,#menu/charm_outhouse
 localizeentry,d#mpui/hipgrip_desc
-localizeentry,d#hash_45f407bc037861dc
+localizeentry,d#options/advanced
 localizeentry,d#weapon/uber_bayonet
 localizeentry,#hash_46044d0ce4567ceb
 localizeentry,d#hash_46125cb81abd4c42
@@ -1014,11 +1014,11 @@ localizeentry,#hash_473dacfacca48116
 localizeentry,d#hash_4741e74c4ca6f8ce
 localizeentry,d#hash_4758a78b4732480d
 localizeentry,d#hash_478be74606b389a9
-localizeentry,#hash_478c6299db16e268
+localizeentry,#zmarcade/key_count
 localizeentry,#menu/double_double
 localizeentry,#hash_47b852659704200c
 localizeentry,#mp/waiting_for_players
-localizeentry,d#hash_47c561b3be46bdf6
+localizeentry,d#presence/zm_zodt8
 localizeentry,#hash_47d77a590180224b
 localizeentry,#hash_480e47ba375a8089
 localizeentry,d#hash_4825501685c8a792
@@ -1065,7 +1065,7 @@ localizeentry,#hash_4b47c0453bea448b
 localizeentry,#zmweapon/none
 localizeentry,d#hash_4b6618ba8adc8898
 localizeentry,d#hash_4b97e078ff6d29de
-localizeentry,d#hash_4ba6bddb362745d9
+localizeentry,d#zmarcade/blank
 localizeentry,#hash_4bbb247300b3ae21
 localizeentry,d#hash_4bc0b296b5361c36
 localizeentry,#zmtrials/missing_the_points
@@ -1247,7 +1247,7 @@ localizeentry,d#hash_56ba99857e501cd5
 localizeentry,#hash_56df244e4d364594
 localizeentry,#zmweapon/pistol_burst_t8_upgraded
 localizeentry,#hash_5702dad2a92e9ae4
-localizeentry,#hash_5732d212e4511a00
+localizeentry,#mpui/last_stand
 localizeentry,d#hash_574a4735af65dcbc
 localizeentry,#hash_5771dde6445aad1d
 localizeentry,d#hash_57721b68409ed9bd
@@ -1316,9 +1316,9 @@ localizeentry,d#hash_5c0d9b140a188ce0
 localizeentry,d#hash_5c1933432b84a54e
 localizeentry,d#hash_5c28147c226eb600
 localizeentry,#hash_5c29c4800541018f
-localizeentry,d#hash_5c4b68d4f7c51908
+localizeentry,d#menu/social_caps
 localizeentry,#hash_5c4bf26b01b252bd
-localizeentry,d#hash_5c759d6c6ee8f8c3
+localizeentry,d#heroes/default
 localizeentry,#hash_5c76223999d97ec9
 localizeentry,#zmtrials/shall_we_dance
 localizeentry,d#zombie/bruno
@@ -1359,7 +1359,7 @@ localizeentry,d#hash_5ebf42ba21cb0cc8
 localizeentry,d#mpui/camo_contagious
 localizeentry,#hash_5edf8aa8c17053b0
 localizeentry,#menu/charm_lava_lamp
-localizeentry,d#hash_5eef90b1483c4c23
+localizeentry,d#mpui/aar_caps
 localizeentry,#hash_5ef081161d940834
 localizeentry,d#hash_5f17105e484faba8
 localizeentry,d#hash_5f17b1bf58db2590
@@ -1369,7 +1369,7 @@ localizeentry,d#mpui/extrapellets_desc
 localizeentry,#zmtrials/shields_up
 localizeentry,d#hash_5fab1560c82aa032
 localizeentry,#weapon/syrette
-localizeentry,#hash_5fbf13d5ccc98455
+localizeentry,#zmtrials/magic_trick
 localizeentry,#hash_5fca199af03b1501
 localizeentry,#hash_5ff4184a20005456
 localizeentry,d#hash_6000dbbe3421103a
@@ -1577,7 +1577,7 @@ localizeentry,#hash_6a295d7cf5da5389
 localizeentry,d#mp/back
 localizeentry,d#hash_6a4930978aef6c45
 localizeentry,#hash_6a4a1e003d030f32
-localizeentry,d#hash_6a75180bc7fda8f5
+localizeentry,d#menu/score_caps
 localizeentry,#zmtrials/packing_heat
 localizeentry,d#mpui/burst2
 localizeentry,#hash_6a9be845c6452ca0
@@ -1639,7 +1639,7 @@ localizeentry,d#mpui/stabilizer
 localizeentry,#zmweapon/ar_damage_t8_upgraded
 localizeentry,d#hash_70265e4d02f807c2
 localizeentry,#hash_7042938200bbf8eb
-localizeentry,d#hash_7085044e7b80d5a3
+localizeentry,d#mpui/reticle_default
 localizeentry,d#hash_709fb6b7fdde6aa8
 localizeentry,#hash_70b6e3d8673f01ed
 localizeentry,d#hash_70b9723e40288f9d
@@ -1650,7 +1650,7 @@ localizeentry,d#menu/yes
 localizeentry,#zmui/carbon_combo_desc
 localizeentry,d#hash_711dbe28b50de6b7
 localizeentry,d#hash_711e01fdec193fa1
-localizeentry,d#hash_7139deea232607ff
+localizeentry,d#presence/zm_towers
 localizeentry,d#hash_714cce81de873f11
 localizeentry,d#mpui/acog
 localizeentry,#hash_71544d249f6fac0e
@@ -1734,7 +1734,7 @@ localizeentry,d#hash_772be63c8b3143b0
 localizeentry,#hash_77336b02b6210872
 localizeentry,#zmtrials/crawling_with_zombies
 localizeentry,#hash_777f682f8c48d07d
-localizeentry,d#hash_778d439e1b360368
+localizeentry,d#menu/back_caps
 localizeentry,d#hash_7796b0ee44bdcbc9
 localizeentry,#zmweapon/lmg_double_t8_upgraded
 localizeentry,#hash_77d0ab83924c913a
@@ -1753,7 +1753,7 @@ localizeentry,d#hash_78b448d799b46550
 localizeentry,#hash_78bf3a61cf52e257
 localizeentry,d#hash_78c7db8498a72253
 localizeentry,d#hash_78d753143b405d88
-localizeentry,#hash_78e7772dfd9bbdeb
+localizeentry,#menu/options
 localizeentry,#hash_78fab15695ef9758
 localizeentry,#menu/charm_snowglobe
 localizeentry,#hash_795b74ed5a4ae78f

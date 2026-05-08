@@ -1886,11 +1886,11 @@ function event_handler[voice_event] codecallback_voiceevent( eventstruct )
     self voice_events::function_c710099c( eventstruct.event, eventstruct.params );
 }
 
-// Namespace callback/event_596b7bdc
+// Namespace callback/potm_event
 // Params 1, eflags: 0x40
 // Checksum 0x5bc6cc04, Offset: 0x4618
 // Size: 0xa4
-function event_handler[event_596b7bdc] function_f5026566( eventstruct )
+function event_handler[potm_event] codecallback_potmevent( eventstruct )
 {
     if ( !isdefined( level.var_abb3fd2 ) )
     {

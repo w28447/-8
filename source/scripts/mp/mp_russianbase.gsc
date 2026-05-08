@@ -288,7 +288,7 @@ function function_51905d68( s_info )
 function function_670cd4a3()
 {
     self endon( #"death" );
-    self.var_19fde5b7 = [];
+    self.stuckitems = [];
     
     while ( true )
     {
@@ -296,7 +296,7 @@ function function_670cd4a3()
         
         if ( isdefined( waitresult.projectile ) )
         {
-            array::add( self.var_19fde5b7, waitresult.projectile );
+            array::add( self.stuckitems, waitresult.projectile );
         }
     }
 }
@@ -312,14 +312,14 @@ function function_e0954c11()
         return;
     }
     
-    foreach ( var_221be278 in self.stuck_items )
+    foreach ( stuckitem in self.stuck_items )
     {
-        if ( !isdefined( var_221be278 ) )
+        if ( !isdefined( stuckitem ) )
         {
             continue;
         }
         
-        var_221be278 dodamage( 500, self.origin, undefined, undefined, undefined, "MOD_EXPLOSIVE" );
+        stuckitem dodamage( 500, self.origin, undefined, undefined, undefined, "MOD_EXPLOSIVE" );
     }
 }
 

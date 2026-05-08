@@ -755,7 +755,7 @@ function private function_898839b4()
         }
     }
     
-    return getweapon( #"hash_1773b576c62a506" );
+    return getweapon( #"bare_hands_bounty" );
 }
 
 // Namespace dynamic_loadout/dynamic_loadout

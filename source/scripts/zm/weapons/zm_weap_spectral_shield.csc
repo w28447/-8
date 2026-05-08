@@ -515,7 +515,7 @@ function function_f9a03171( localclientnum, oldval, newval, bnewent, binitialsna
         var_27aa6343 = "spectral_key_muzzle_flash1p_idle";
         var_a1f103c8 = "spectral_key_muzzle_flash3p_idle";
         
-        if ( self zm_utility::function_f8796df3( localclientnum ) )
+        if ( self zm_utility::is_first_person( localclientnum ) )
         {
             self.fx_muzzle_flash[ localclientnum ] = playviewmodelfx( localclientnum, level._effect[ var_27aa6343 ], "tag_flash" );
         }
@@ -542,7 +542,7 @@ function function_f9a03171( localclientnum, oldval, newval, bnewent, binitialsna
         var_27aa6343 = "spectral_key_muzzle_flash1p";
         var_a1f103c8 = "spectral_key_muzzle_flash3p";
         
-        if ( self zm_utility::function_f8796df3( localclientnum ) )
+        if ( self zm_utility::is_first_person( localclientnum ) )
         {
             self.fx_muzzle_flash[ localclientnum ] = playviewmodelfx( localclientnum, level._effect[ var_27aa6343 ], "tag_flash" );
         }
@@ -849,7 +849,7 @@ function function_36c349d0( localclientnum, oldval, newval, bnewent, binitialsna
     
     if ( newval == 1 )
     {
-        if ( self zm_utility::function_f8796df3( localclientnum ) )
+        if ( self zm_utility::is_first_person( localclientnum ) )
         {
             self.var_2a2f2afa[ localclientnum ] = playviewmodelfx( localclientnum, level._effect[ #"hash_5e08e3b80445f6d7" ], "tag_flash" );
             self playrenderoverridebundle( "rob_key_charging", "tag_weapon_right" );
@@ -865,7 +865,7 @@ function function_36c349d0( localclientnum, oldval, newval, bnewent, binitialsna
     
     if ( newval == 2 )
     {
-        if ( self zm_utility::function_f8796df3( localclientnum ) )
+        if ( self zm_utility::is_first_person( localclientnum ) )
         {
             self.var_b2b4e5eb[ localclientnum ] = playviewmodelfx( localclientnum, level._effect[ #"hash_3ae08d08271270d6" ], "tag_flash" );
             self playrenderoverridebundle( "rob_key_charged", "tag_weapon_right" );
@@ -933,7 +933,7 @@ function function_50119cc1( localclientnum, oldval, newval, bnewent, binitialsna
         str_tag = "tag_weapon_right";
     }
     
-    if ( self zm_utility::function_f8796df3( localclientnum ) )
+    if ( self zm_utility::is_first_person( localclientnum ) )
     {
         playviewmodelfx( localclientnum, level._effect[ #"hash_a64dd624f3d5eff" ], str_tag );
         return;
@@ -965,7 +965,7 @@ function function_6b58c030( localclientnum, oldval, newval, bnewent, binitialsna
         deletefx( localclientnum, self.var_3e85852d[ localclientnum ], 1 );
     }
     
-    if ( self zm_utility::function_f8796df3( localclientnum ) )
+    if ( self zm_utility::is_first_person( localclientnum ) )
     {
         self.var_3e85852d[ localclientnum ] = playviewmodelfx( localclientnum, level._effect[ #"hash_4a41e8484e30822e" ], "tag_body_window" );
     }

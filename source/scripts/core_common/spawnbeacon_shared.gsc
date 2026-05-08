@@ -626,11 +626,11 @@ function private function_e46fd633()
         self.owner thread killstreaks::play_taacom_dialog( "spawnBeaconDestroyedFriendly" );
     }
     
-    playcommanderaudio( level.spawnbeaconsettings.settingsbundle.var_79efc1, util::getotherteam( spawnbeacon.team ), spawnbeacon.var_846acfcf );
+    playcommanderaudio( level.spawnbeaconsettings.settingsbundle.destroyedenemy, util::getotherteam( spawnbeacon.team ), spawnbeacon.var_846acfcf );
     
     if ( !var_b80d3663 )
     {
-        playcommanderaudio( level.spawnbeaconsettings.settingsbundle.var_2ee73347, spawnbeacon.team, var_9a5be956 );
+        playcommanderaudio( level.spawnbeaconsettings.settingsbundle.destroyedfriendly, spawnbeacon.team, var_9a5be956 );
         spawnbeacon.owner globallogic_score::function_5829abe3( spawnbeacon.var_846acfcf, spawnbeacon.var_d02ddb8e, level.spawnbeaconsettings.beaconweapon );
     }
 }
@@ -1158,7 +1158,7 @@ function retreatedstartmelee( var_a820f9, spawns )
     placedspawnbeacon.threatlevel = 0;
     placedspawnbeacon.spawncount = 0;
     placedspawnbeacon.uniqueid = function_9c87725b();
-    playcommanderaudio( level.spawnbeaconsettings.settingsbundle.var_69b1ff7, player getteam(), player );
+    playcommanderaudio( level.spawnbeaconsettings.settingsbundle.deployedfriendly, player getteam(), player );
     playcommanderaudio( level.spawnbeaconsettings.settingsbundle.deployedenemy, util::getotherteam( player getteam() ), undefined );
     
     if ( isdefined( level.spawnbeaconsettings.settingsbundle.ambientaudio ) )

@@ -165,7 +165,7 @@ function init_boss()
     e_boss notsolid();
     e_boss.e_damage = getent( "bs_bdy_dmg", "targetname" );
     e_boss.e_damage.takedamage = 1;
-    e_boss.e_damage function_2baad8fc();
+    e_boss.e_damage makesentienttarget();
     e_boss.e_damage.zm_ai_category = #"boss";
     e_boss.e_damage enablelinkto();
     e_boss.e_damage linkto( e_boss );
@@ -472,7 +472,7 @@ function function_51e51897( var_5ea5c94d )
     level.custom_spawnplayer = &function_9bc4f8cb;
     level.disable_nuke_delay_spawning = 1;
     level notify( #"disable_nuke_delay_spawning" );
-    level zodt8_sentinel::function_77a859a8( 1 );
+    level zodt8_sentinel::clean_up_ai( 1 );
     level.var_d6f059f7 = max( level.round_number, 25 );
     zm_spawner::register_zombie_death_event_callback( &function_e9b8eaff );
     level.var_c9f5947d = 1;
@@ -921,7 +921,7 @@ function function_482a7a01()
     self endon( "1c4193aa80a6dcb8" );
     level waittill( #"hash_38f29f9cb03586ea", #"intermission" );
     zm_transform::function_e95ec8df();
-    level zodt8_sentinel::function_77a859a8( 1, 0, 0 );
+    level zodt8_sentinel::clean_up_ai( 1, 0, 0 );
 }
 
 // Namespace zodt8_eye/zm_zodt8_eye
@@ -1169,7 +1169,7 @@ function function_8f3497ee( n_stage, str_loc )
                 mdl.origin -= ( 0, 0, 13800 );
                 mdl show();
                 mdl.origin += ( 0, 0, 13800 );
-                mdl clientfield::set( "" + #"hash_15b23de7589e61a", 1 );
+                mdl clientfield::set( "" + #"ice_rising_fx", 1 );
             }
             
             function_901c5ffe( "pd", 1 );

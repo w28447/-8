@@ -5,6 +5,6 @@
     "name": "weapondeathfx_anime",
     "displayname": "localized17#hash_1da627ad12738759",
     "icon": "loot04_ui_icon_cac_death_fx_anime",
-    "hash_3536c97d31da908f:hash_eeb78b92": "impact_fx_table#hash_3536c97d31da908f",
+    "bullet_anime_exit:hash_eeb78b92": "impact_fx_table#bullet_anime_exit",
     "previewimage": "image#hash_2729ff672b4a4de3"
 }

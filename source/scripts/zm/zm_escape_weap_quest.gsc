@@ -267,9 +267,9 @@ function function_e40e9d94( n_eating_anim, ai_zombie, e_activator )
     }
     
     vec_dir = self.s_scene.origin - var_678e573f.origin;
-    var_17deee3d = vectorscale( vec_dir, 0.2 );
+    vec_dir_scaled = vectorscale( vec_dir, 0.2 );
     v_angles_forward = vectortoangles( vec_dir );
-    var_678e573f moveto( var_678e573f.origin + var_17deee3d, var_66a8d5fc, var_66a8d5fc );
+    var_678e573f moveto( var_678e573f.origin + vec_dir_scaled, var_66a8d5fc, var_66a8d5fc );
     
     if ( self.var_43bd3b5 == 0 )
     {
@@ -444,9 +444,9 @@ function function_ee929ece()
     
     while ( true )
     {
-        var_ba0da6c = array::random( level.var_22f00ccf );
-        self.s_scene thread scene::play( var_ba0da6c );
-        var_c74251a4 = scene::function_8582657c( self.s_scene.scriptbundlename, var_ba0da6c );
+        random_idle_anim = array::random( level.var_22f00ccf );
+        self.s_scene thread scene::play( random_idle_anim );
+        var_c74251a4 = scene::function_8582657c( self.s_scene.scriptbundlename, random_idle_anim );
         wait var_c74251a4 + randomintrange( 4, 10 );
     }
 }

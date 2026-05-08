@@ -300,7 +300,7 @@ CoD.CACUtility.ItemGroupInfo = {
 	{
 		itemGroupEnum = Enum.itemGroup_t[0x6F7EF424C78D2F9],
 		itemGroup = "weapon_special",
-		name = 0xA10CE7D326D52B
+		name = 0"mpui/weapon_special"
 	},
 	{
 		itemGroupEnum = Enum.itemGroup_t[0xAA88E5BAE1CDEF8],

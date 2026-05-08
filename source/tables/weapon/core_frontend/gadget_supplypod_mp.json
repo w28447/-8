@@ -1,7 +1,7 @@
 {
     "name": "#gadget_supplypod_mp",
     "baseWeapon": "#gadget_supplypod",
-    "displayname": "#hash_337772a447c34221",
+    "displayname": "#supplypod/name",
     "weapon70": "#gadget_supplypod",
     "streamkey": "#hash_56d659bfcbcd56e6",
     "scrstr_8c8": [

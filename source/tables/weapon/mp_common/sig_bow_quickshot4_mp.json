@@ -80,7 +80,7 @@
     "image_e98": "#ui_icon_meansofdeath_sig_bow",
     "image_eb0": "#hud_explosive_arrow",
     "image_1048": "#ui_icon_ability_sparrow",
-    "fireRumble": "#hash_364c1f0076b68c92",
+    "fireRumble": "#bow_power_fire",
     "rumble_de8": "#grenade_rumble",
     "rumble_df0": "#bow_draw",
     "rumble_df8": "#hash_8449520f94829141",
@@ -93,7 +93,7 @@
         "#hash_bb3f97cf646813ac"
     ],
     "normalImpactFX": "#hash_543debda11c394d3",
-    "bounceImpactFX": "#hash_44809dce624162ce",
+    "bounceImpactFX": "#hero_bow_sm_enter",
     "normalImpactSounds": "#hash_7f28ebd16e6319e",
-    "bounceImpactSounds": "#hash_34d20fa8d9efe88a"
+    "bounceImpactSounds": "#arrow_impact_charged"
 }

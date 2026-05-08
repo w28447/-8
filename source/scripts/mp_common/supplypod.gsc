@@ -47,7 +47,7 @@ function __init__()
     level.var_934fb97.audiothrottletracker = [];
     level.var_934fb97.bundle = getscriptbundle( "killstreak_supplypod" );
     level.var_934fb97.weapon = getweapon( "gadget_supplypod" );
-    level.var_934fb97.var_ff101fac = getweapon( #"supplypod_catch" );
+    level.var_934fb97.catchweapon = getweapon( #"supplypod_catch" );
     
     if ( !isdefined( level.killstreakbundle ) )
     {
@@ -661,8 +661,8 @@ function function_9d4aabb9( destroyedbyenemy )
                 }
             }
             
-            playcommanderaudio( level.var_934fb97.bundle.var_2ee73347, self.team );
-            playcommanderaudio( level.var_934fb97.bundle.var_79efc1, util::getotherteam( self.team ) );
+            playcommanderaudio( level.var_934fb97.bundle.destroyedfriendly, self.team );
+            playcommanderaudio( level.var_934fb97.bundle.destroyedenemy, util::getotherteam( self.team ) );
         }
         else
         {
@@ -926,7 +926,7 @@ function function_9abdee8c( object )
     supplypod clientfield::set( "enemyequip", 1 );
     supplypod.builttime = gettime();
     supplypod.uniqueid = function_fec0924();
-    playcommanderaudio( level.var_934fb97.bundle.var_69b1ff7, player getteam() );
+    playcommanderaudio( level.var_934fb97.bundle.deployedfriendly, player getteam() );
     playcommanderaudio( level.var_934fb97.bundle.deployedenemy, util::getotherteam( player getteam() ) );
     
     if ( isdefined( level.var_934fb97.bundle.ambientaudio ) )
@@ -944,9 +944,9 @@ function function_9abdee8c( object )
         objective_setinvisibletoall( supplypod.var_134eefb9 );
     }
     
-    triggerradius = level.var_934fb97.bundle.var_366f43e9;
-    triggerheight = level.var_934fb97.bundle.var_2f1567fb;
-    var_b1a6d849 = level.var_934fb97.bundle.var_2d890f85;
+    triggerradius = level.var_934fb97.bundle.kstriggerradius;
+    triggerheight = level.var_934fb97.bundle.kstriggerheight;
+    triggerusetime = level.var_934fb97.bundle.kstriggerusetime;
     upangle = vectorscale( vectornormalize( anglestoup( supplypod.angles ) ), 5 );
     var_40989bda = supplypod.origin + upangle;
     usetrigger = spawn( "trigger_radius_use", var_40989bda, 0, triggerradius, triggerheight );
@@ -955,7 +955,7 @@ function function_9abdee8c( object )
     supplypod.gameobject = gameobjects::create_use_object( player getteam(), usetrigger, [], undefined, level.var_934fb97.bundle.var_9333131b, 1, 1 );
     supplypod.gameobject gameobjects::set_visible_team( #"friendly" );
     supplypod.gameobject gameobjects::allow_use( #"friendly" );
-    supplypod.gameobject gameobjects::set_use_time( var_b1a6d849 );
+    supplypod.gameobject gameobjects::set_use_time( triggerusetime );
     supplypod.gameobject.onbeginuse = &function_8c8fb7b5;
     supplypod.gameobject.onenduse = &function_a1434496;
     supplypod.gameobject.parentobj = supplypod;
@@ -1046,7 +1046,7 @@ function private function_a1434496( team, player, result )
         }
         
         thread function_a143899c( player, 1.5 );
-        player thread gestures::function_f3e2696f( supplypod, level.var_934fb97.var_ff101fac, undefined, 0.5, &supplypod_catch, undefined, undefined );
+        player thread gestures::function_f3e2696f( supplypod, level.var_934fb97.catchweapon, undefined, 0.5, &supplypod_catch, undefined, undefined );
         player function_bcf0dd99();
         self gameobjects::hide_waypoint( player );
         self.trigger setinvisibletoplayer( player );

@@ -58,7 +58,7 @@
     "weaponCamo": "#hash_174eecde35d75433",
     "cacWeaponXCam": "#ui_cam_cac_special_crossbow",
     "cacAttachmentsXCam": "#ui_cam_cac_special_crossbow",
-    "weaponIconXCam": "#hash_32556c49982dea72",
+    "weaponIconXCam": "#ui_cam_icon_special_crossbow",
     "attachments": [
         "#hash_f459a0af8e8f912b"
     ],
@@ -85,9 +85,9 @@
     "fx_bc8": "#hash_5b930daa9ce3f024",
     "fx_bd0": "#hash_5b99f9aa9ce9ecd6",
     "fx_f00": "#hash_5213cb518100fa34",
-    "normalImpactFX": "#hash_25f3e55b8e1070ab",
+    "normalImpactFX": "#knife_large_enter",
     "bounceImpactFX": "#hash_410092704f4a03c",
     "normalImpactSounds": "#hash_2475219d05bb0940",
-    "bounceImpactSounds": "#hash_1804b102c9e65ad1",
-    "dudImpactSounds": "#hash_1804b102c9e65ad1"
+    "bounceImpactSounds": "#bolt_impact",
+    "dudImpactSounds": "#bolt_impact"
 }

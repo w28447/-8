@@ -441,10 +441,10 @@ function function_dc16557c()
             match_record::set_stat( #"ai_zones", i, #"zone_hellhounds", ai_zone.zone_hellhounds );
             match_record::set_stat( #"ai_zones", i, #"hash_46c66659061c4df6", ai_zone.var_7bf9c18e );
             match_record::set_stat( #"ai_zones", i, #"hash_2778c481a1f0f691", ai_zone.var_7c620997 );
-            match_record::set_stat( #"ai_zones", i, #"hash_3bd0e72c0da688b8", ai_zone.var_58ba2ab7 );
+            match_record::set_stat( #"ai_zones", i, #"ai_killed_zombie", ai_zone.ai_killed_zombie );
             match_record::set_stat( #"ai_zones", i, #"hash_2f54ea56d60207e4", ai_zone.var_14403c0a );
             match_record::set_stat( #"ai_zones", i, #"hash_7c33a0c7c454cdeb", ai_zone.var_af37e04a );
-            match_record::set_stat( #"ai_zones", i, #"hash_78530caab146b8b2", ai_zone.var_41e86d33 );
+            match_record::set_stat( #"ai_zones", i, #"ai_killed_blightfather", ai_zone.var_41e86d33 );
             match_record::set_stat( #"ai_zones", i, #"hash_468f7191e8118876", ai_zone.var_719d00b8 );
             
             if ( isdefined( level.var_c64b3b46 ) && level.var_c64b3b46 )
@@ -1549,7 +1549,7 @@ function function_5f0d105a( zone_category, zone_name, spawner_type, var_aeae9f59
     var_a59ba023.zone_brutus = 0;
     var_a59ba023.zone_hellhounds = 0;
     var_a59ba023.var_7c620997 = 0;
-    var_a59ba023.var_58ba2ab7 = 0;
+    var_a59ba023.ai_killed_zombie = 0;
     var_a59ba023.var_14403c0a = 0;
     var_a59ba023.var_af37e04a = 0;
     var_a59ba023.var_41e86d33 = 0;

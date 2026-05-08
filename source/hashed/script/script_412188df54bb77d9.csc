@@ -108,7 +108,7 @@ function player_acid_trap_post_fx( localclientnum, oldval, newval, bnewent, bini
         self.var_b1409d8f = playfxoncamera( localclientnum, level._effect[ #"hash_4391e5c4b43c63c9" ] );
         self playrenderoverridebundle( #"hash_216f6c4ece79a4b8" );
         
-        if ( self zm_utility::function_f8796df3( localclientnum ) )
+        if ( self zm_utility::is_first_person( localclientnum ) )
         {
             self.var_7a7fac87 = playviewmodelfx( localclientnum, level._effect[ #"hash_5647f8e593893bce" ], "j_wrist_ri" );
         }

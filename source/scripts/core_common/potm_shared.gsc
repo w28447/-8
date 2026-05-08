@@ -80,11 +80,11 @@ function private init()
         game.var_659f084a = getgametypesetting( #"hash_6881c7cab0dcef39" );
         game.var_50b05a28 = getgametypesetting( #"hash_7c0dcff6ffb1e348" );
         game.var_6bd02863 = getgametypesetting( #"hash_4f4a73f236278ba8" );
-        game.var_691bbcd2 = getgametypesetting( #"hash_7c0acf14fb1f4080" );
+        game.actsq = getgametypesetting( #"hash_7c0acf14fb1f4080" );
         function_f6b119c7();
         game.var_c7826a3f = getgametypesetting( #"hash_6269eb986d22cd37" );
         game.var_b924522a = getgametypesetting( #"hash_6e2abf2cc40e03f1" );
-        game.var_aafe322f = [];
+        game.potmpreparinginformation = [];
         game.var_12ffe1e3 = [];
         game.potmevents = [];
         game.var_8ea529d1 = #"potm";
@@ -338,26 +338,26 @@ function function_b5433e55( bookmark )
         return;
     }
     
-    var_cef89b92 = {};
-    var_cef89b92.round = game.var_fb8365e0;
-    var_cef89b92.name = bookmark.bookmarkname;
-    var_cef89b92.time = bookmark.time;
-    var_cef89b92.isfirstperson = bookmark.isfirstperson;
-    var_cef89b92.infoindex = bookmark.var_900768bc.index;
-    var_cef89b92.info_id = bookmark.var_900768bc.id;
-    var_cef89b92.mainclientnum = bookmark.mainclientnum;
-    var_cef89b92.var_9b2cab54 = getclientname( bookmark.var_81538b15 );
-    var_cef89b92.otherclientnum = bookmark.otherclientnum;
-    var_cef89b92.var_3b8a36fd = getclientname( bookmark.var_f28fb772 );
-    var_cef89b92.scoreaddition = bookmark.scoreaddition;
-    var_cef89b92.scoremultiplier = bookmark.scoremultiplier;
-    var_cef89b92.scoreeventpriority = bookmark.scoreeventpriority;
-    var_cef89b92.inflictorentnum = bookmark.inflictorentnum;
-    var_cef89b92.inflictorenttype = bookmark.inflictorenttype;
-    var_cef89b92.overrideentitycamera = bookmark.overrideentitycamera;
-    var_cef89b92.tableindex = bookmark.eventdata.tableindex;
-    var_cef89b92.event_info = bookmark.eventdata.event_info;
-    function_92d1707f( #"hash_4782850b19da4089", var_cef89b92 );
+    potm_bookmarks = {};
+    potm_bookmarks.round = game.var_fb8365e0;
+    potm_bookmarks.name = bookmark.bookmarkname;
+    potm_bookmarks.time = bookmark.time;
+    potm_bookmarks.isfirstperson = bookmark.isfirstperson;
+    potm_bookmarks.infoindex = bookmark.var_900768bc.index;
+    potm_bookmarks.info_id = bookmark.var_900768bc.id;
+    potm_bookmarks.mainclientnum = bookmark.mainclientnum;
+    potm_bookmarks.var_9b2cab54 = getclientname( bookmark.var_81538b15 );
+    potm_bookmarks.otherclientnum = bookmark.otherclientnum;
+    potm_bookmarks.var_3b8a36fd = getclientname( bookmark.var_f28fb772 );
+    potm_bookmarks.scoreaddition = bookmark.scoreaddition;
+    potm_bookmarks.scoremultiplier = bookmark.scoremultiplier;
+    potm_bookmarks.scoreeventpriority = bookmark.scoreeventpriority;
+    potm_bookmarks.inflictorentnum = bookmark.inflictorentnum;
+    potm_bookmarks.inflictorenttype = bookmark.inflictorenttype;
+    potm_bookmarks.overrideentitycamera = bookmark.overrideentitycamera;
+    potm_bookmarks.tableindex = bookmark.eventdata.tableindex;
+    potm_bookmarks.event_info = bookmark.eventdata.event_info;
+    function_92d1707f( #"dlog_event_potm_bookmarks", potm_bookmarks );
 }
 
 // Namespace potm/potm_shared
@@ -381,7 +381,7 @@ function function_b5633c73( preparinginformation )
     var_dd06123.round = game.var_fb8365e0;
     var_dd06123.clientnum = preparinginformation.clientnum;
     var_dd06123.infoindex = preparinginformation.currentevent.infoindex;
-    var_dd06123.info_id = preparinginformation.currentevent.var_f130571c;
+    var_dd06123.info_id = preparinginformation.currentevent.infoid;
     var_dd06123.isfirstperson = preparinginformation.currentevent.var_1be950f5;
     var_dd06123.starttime = preparinginformation.currentevent.starttime;
     var_dd06123.endtime = preparinginformation.currentevent.endtime;
@@ -499,7 +499,7 @@ function function_f909006c( currentevent )
                     
                     if ( !isdefined( label ) )
                     {
-                        label = #"hash_480234a872bd64ac";
+                        label = #"score/blank";
                     }
                     
                     if ( !isdefined( score ) )
@@ -2068,27 +2068,27 @@ function function_5523a49a( bookmarkname, spectatorclientnum, var_1c66b97d, targ
         return;
     }
     
-    var_4acb70d6 = function_4f69bbd( spectatorclientnum, var_1c66b97d, var_900768bc.isfirstperson, 0 );
+    preparinginfo = function_4f69bbd( spectatorclientnum, var_1c66b97d, var_900768bc.isfirstperson, 0 );
     
-    if ( !isdefined( var_4acb70d6 ) )
+    if ( !isdefined( preparinginfo ) )
     {
         return;
     }
     
-    var_4acb70d6.currentevent.killcamparams = {};
-    var_4acb70d6.currentevent.killcamparams.spectatorclientnum = spectatorclientnum;
-    var_4acb70d6.currentevent.killcamparams.var_1c66b97d = var_1c66b97d;
-    var_4acb70d6.currentevent.killcamparams.targetentityindex = targetentity getentitynumber();
-    var_4acb70d6.currentevent.killcamparams.killcam_entity_info = killcam_entity_info;
-    var_4acb70d6.currentevent.killcamparams.weapon = weapon;
-    var_4acb70d6.currentevent.killcamparams.meansofdeath = meansofdeath;
-    var_4acb70d6.currentevent.killcamparams.deathtime = deathtime;
-    var_4acb70d6.currentevent.killcamparams.deathtimeoffset = deathtimeoffset;
-    var_4acb70d6.currentevent.killcamparams.offsettime = offsettime;
-    var_4acb70d6.currentevent.killcamparams.perks = perks;
-    var_4acb70d6.currentevent.killcamparams.killstreaks = killstreaks;
-    var_4acb70d6.currentevent.killcamparams.attacker = attacker;
-    var_4acb70d6.currentevent.killcamparams.inflictor = einflictor;
+    preparinginfo.currentevent.killcamparams = {};
+    preparinginfo.currentevent.killcamparams.spectatorclientnum = spectatorclientnum;
+    preparinginfo.currentevent.killcamparams.var_1c66b97d = var_1c66b97d;
+    preparinginfo.currentevent.killcamparams.targetentityindex = targetentity getentitynumber();
+    preparinginfo.currentevent.killcamparams.killcam_entity_info = killcam_entity_info;
+    preparinginfo.currentevent.killcamparams.weapon = weapon;
+    preparinginfo.currentevent.killcamparams.meansofdeath = meansofdeath;
+    preparinginfo.currentevent.killcamparams.deathtime = deathtime;
+    preparinginfo.currentevent.killcamparams.deathtimeoffset = deathtimeoffset;
+    preparinginfo.currentevent.killcamparams.offsettime = offsettime;
+    preparinginfo.currentevent.killcamparams.perks = perks;
+    preparinginfo.currentevent.killcamparams.killstreaks = killstreaks;
+    preparinginfo.currentevent.killcamparams.attacker = attacker;
+    preparinginfo.currentevent.killcamparams.inflictor = einflictor;
 }
 
 // Namespace potm/potm_shared
@@ -2107,7 +2107,7 @@ function kill_bookmark( var_81538b15, var_f28fb772, einflictor, var_50d1e41a, ov
         return;
     }
     
-    if ( game.var_691bbcd2 )
+    if ( game.actsq )
     {
         println( "<dev string:x814>" );
         return;
@@ -2141,7 +2141,7 @@ function function_66d09fea( bookmarkname, var_81538b15, var_f28fb772, einflictor
         return;
     }
     
-    if ( game.var_691bbcd2 )
+    if ( game.actsq )
     {
         println( hashtostring( game.var_8ea529d1 ) + "<dev string:x87e>" );
         return;
@@ -2537,7 +2537,7 @@ function private function_1dd2e5ca( bookmark, preparinginformation )
             
             preparinginformation.currentevent.priority += function_a273a8ff( bookmark, preparinginformation.var_e567d17 );
             preparinginformation.currentevent.infoindex = bookmark.var_900768bc.index;
-            preparinginformation.currentevent.var_f130571c = bookmark.var_900768bc.id;
+            preparinginformation.currentevent.infoid = bookmark.var_900768bc.id;
             preparinginformation.currentevent.var_1be950f5 = 1;
             preparinginformation.currentevent.killcamparams = bookmark.killcamparams;
             preparinginformation.var_e567d17 = 1;
@@ -2606,7 +2606,7 @@ function private function_abd02279( bookmark, preparinginformation )
             preparinginformation.currentevent.killcamparams = bookmark.killcamparams;
             preparinginformation.currentevent.priority += function_a273a8ff( bookmark, preparinginformation.var_e567d17 );
             preparinginformation.currentevent.infoindex = bookmark.var_900768bc.index;
-            preparinginformation.currentevent.var_f130571c = bookmark.var_900768bc.id;
+            preparinginformation.currentevent.infoid = bookmark.var_900768bc.id;
             preparinginformation.currentevent.var_1be950f5 = 0;
             preparinginformation.var_e567d17 = 1;
             preparinginformation.pendingupdate = 1;
@@ -2685,7 +2685,7 @@ function private function_929d9485( clientnum, clientxuid )
     preparinginformation.var_e567d17 = 0;
     preparinginformation.currentevent = {};
     preparinginformation.currentevent.priority = 0;
-    array::push( game.var_aafe322f, preparinginformation, game.var_aafe322f.size );
+    array::push( game.potmpreparinginformation, preparinginformation, game.potmpreparinginformation.size );
     return preparinginformation;
 }
 
@@ -2695,11 +2695,11 @@ function private function_929d9485( clientnum, clientxuid )
 // Size: 0x70
 function private function_1cc3b6fd( preparinginformation )
 {
-    for ( i = 0; i < game.var_aafe322f.size ; i++ )
+    for ( i = 0; i < game.potmpreparinginformation.size ; i++ )
     {
-        if ( preparinginformation == game.var_aafe322f[ i ] )
+        if ( preparinginformation == game.potmpreparinginformation[ i ] )
         {
-            array::pop( game.var_aafe322f, i, 0 );
+            array::pop( game.potmpreparinginformation, i, 0 );
             return;
         }
     }
@@ -2713,9 +2713,9 @@ function private function_4a28cb83( clientnum )
 {
     index = undefined;
     
-    for ( i = 0; i < game.var_aafe322f.size ; i++ )
+    for ( i = 0; i < game.potmpreparinginformation.size ; i++ )
     {
-        var_ad2d5156 = game.var_aafe322f[ i ];
+        var_ad2d5156 = game.potmpreparinginformation[ i ];
         
         if ( !var_ad2d5156.pendingupdate )
         {
@@ -2729,7 +2729,7 @@ function private function_4a28cb83( clientnum )
         
         if ( isdefined( index ) )
         {
-            if ( var_ad2d5156.updatetime > game.var_aafe322f[ index ].updatetime )
+            if ( var_ad2d5156.updatetime > game.potmpreparinginformation[ index ].updatetime )
             {
                 index = i;
             }
@@ -2742,7 +2742,7 @@ function private function_4a28cb83( clientnum )
     
     if ( isdefined( index ) )
     {
-        return game.var_aafe322f[ index ];
+        return game.potmpreparinginformation[ index ];
     }
     
     return undefined;
@@ -2754,9 +2754,9 @@ function private function_4a28cb83( clientnum )
 // Size: 0x124
 function private function_4f69bbd( clientnum, clientxuid, isfirstperson, b_add )
 {
-    for ( i = 0; i < game.var_aafe322f.size ; i++ )
+    for ( i = 0; i < game.potmpreparinginformation.size ; i++ )
     {
-        var_ad2d5156 = game.var_aafe322f[ i ];
+        var_ad2d5156 = game.potmpreparinginformation[ i ];
         
         if ( !var_ad2d5156.pendingupdate )
         {
@@ -2823,9 +2823,9 @@ function private function_bbbd20cc( var_fee35d3a )
 {
     var_3fea636b = [];
     
-    for ( i = 0; i < game.var_aafe322f.size ; i++ )
+    for ( i = 0; i < game.potmpreparinginformation.size ; i++ )
     {
-        var_ad2d5156 = game.var_aafe322f[ i ];
+        var_ad2d5156 = game.potmpreparinginformation[ i ];
         thresholdtime = function_3aa16058( var_ad2d5156 ) + game.var_b9a7e65f;
         
         if ( var_fee35d3a || var_ad2d5156.pendingupdate && gettime() - var_ad2d5156.currentevent.endtime >= thresholdtime )
@@ -2837,7 +2837,7 @@ function private function_bbbd20cc( var_fee35d3a )
     
     for ( j = var_3fea636b.size - 1; j >= 0 ; j-- )
     {
-        function_1cc3b6fd( game.var_aafe322f[ var_3fea636b[ j ] ] );
+        function_1cc3b6fd( game.potmpreparinginformation[ var_3fea636b[ j ] ] );
     }
 }
 

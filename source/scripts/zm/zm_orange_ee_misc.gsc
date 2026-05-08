@@ -89,7 +89,7 @@ function main()
         zm_sq::start( #"hash_729a1e4eb041be9b" );
         level thread function_716974ba();
         level thread sq_glasses();
-        level thread function_7836d215();
+        level thread hidden_song_2();
     }
 }
 
@@ -1190,7 +1190,7 @@ function function_fdc3c7c4()
 // Params 0
 // Checksum 0x99a08a73, Offset: 0x3eb0
 // Size: 0x144
-function function_7836d215()
+function hidden_song_2()
 {
     s_location = struct::spawn( ( -528, 1196, 320 ) );
     s_unitrigger = s_location zm_unitrigger::create( "", 32 );

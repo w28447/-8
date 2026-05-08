@@ -36,7 +36,7 @@
     "projsmokeloopsound": "#hash_4bacdbab3565ae3b",
     "projsmokeendsound": "#hash_397d8bebde816d8c",
     "tunables1": "#willy_pete_tunables_mp",
-    "cacWeaponXCam": "#hash_1bdd23d733f1a80c",
+    "cacWeaponXCam": "#ui_cam_cac_equip_smoke",
     "sharedWeaponSounds": "#equipment",
     "projectilemodel": "#wpn_t8_eqp_grenade_smoke_projectile",
     "viewmodel": [

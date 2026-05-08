@@ -63,5 +63,5 @@
     "bounceImpactFX": "#grenade_bounce",
     "dudImpactFX": "#grenade_dud",
     "normalImpactSounds": "#hash_e8e0a97bbbf0b555",
-    "bounceImpactSounds": "#hash_3ee4dcc0ba26eaad"
+    "bounceImpactSounds": "#minigun_bounce"
 }

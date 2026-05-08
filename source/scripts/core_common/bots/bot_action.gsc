@@ -3452,7 +3452,7 @@ function set_target_aim( actionparams )
 // Size: 0x3c
 function function_9c6ca396( actionparams )
 {
-    self function_26c2bce7( actionparams, self.bot.tacbundle.var_a78526b8 );
+    self function_26c2bce7( actionparams, self.bot.tacbundle.aimtagbody );
 }
 
 // Namespace bot_action/bot_action
@@ -3581,14 +3581,14 @@ function function_7355c240( actionparams )
         fwd = anglestoforward( angles );
         right = anglestoright( angles );
         up = anglestoup( angles );
-        aimoffset = function_d2e41376( actionparams.aimpoint, eyes, fwd, right, up, self.bot.var_ea5b64df, 0 );
+        aimoffset = calculate_aim_offset( actionparams.aimpoint, eyes, fwd, right, up, self.bot.var_ea5b64df, 0 );
         
         if ( isdefined( aimoffset ) )
         {
             self.bot.aimoffset = aimoffset;
         }
         
-        var_9492fdcb = function_d2e41376( actionparams.var_97065630, eyes, fwd, right, up, self.bot.var_ea5b64df, 1 );
+        var_9492fdcb = calculate_aim_offset( actionparams.var_97065630, eyes, fwd, right, up, self.bot.var_ea5b64df, 1 );
         
         if ( isdefined( var_9492fdcb ) )
         {
@@ -3610,7 +3610,7 @@ function function_7355c240( actionparams )
 // Params 7
 // Checksum 0x3030c6bb, Offset: 0x9cb0
 // Size: 0x2a8
-function function_d2e41376( var_9d9ae85, eyes, fwd, right, up, var_ea5b64df, close )
+function calculate_aim_offset( var_9d9ae85, eyes, fwd, right, up, var_ea5b64df, close )
 {
     attachmentisselectable = var_9d9ae85 - eyes;
     var_df4809a5 = vectornormalize( attachmentisselectable );

@@ -131,7 +131,7 @@ function event_handler[gametype_init] main( eventstruct )
     init_talismans();
     init_pack_a_punch();
     init_magicbox();
-    function_24a75fd1();
+    init_scoring();
     level thread function_d717724e();
     thread function_e71942eb();
     callback::on_finalize_initialization( &finalize_clientfields );
@@ -418,7 +418,7 @@ function function_4a631b98()
 // Params 0
 // Checksum 0x7d4435f6, Offset: 0x1c60
 // Size: 0x9c
-function function_24a75fd1()
+function init_scoring()
 {
     callback::on_ai_killed( &function_45a520db );
     callback::on_ai_damage( &function_e0c53cf );
@@ -896,7 +896,7 @@ function function_e03ea502()
 {
     self endon( #"disconnect" );
     level endon( #"end_game" );
-    str_extra_info = #"hash_4ba6bddb362745d9";
+    str_extra_info = #"zmarcade/blank";
     level waittill( #"start_of_round" );
     clientfield::set_world_uimodel( "PlayerList.client" + self.entity_num + ".multiplier_blink", 0 );
     clientfield::set_world_uimodel( "PlayerList.client" + self.entity_num + ".multiplier_count", self.var_7e008e0c + 1 );
@@ -905,7 +905,7 @@ function function_e03ea502()
     {
         s_waitresult = self waittilltimeout( self.var_72b24dc2, #"zm_arcade_kill", #"damage", #"bled_out", #"player_downed", #"bonus_points_player_grabbed", #"multiplier_timeout", #"hash_b696fc900429737", #"player_grabbed_key" );
         clientfield::set_world_uimodel( "PlayerList.client" + self.entity_num + ".multiplier_blink", 0 );
-        str_extra_info = #"hash_4ba6bddb362745d9";
+        str_extra_info = #"zmarcade/blank";
         
         switch ( s_waitresult._notify )
         {
@@ -2574,9 +2574,9 @@ function function_21669ebc( restart = 0 )
     
     if ( !( isdefined( restart ) && restart ) )
     {
-        if ( isdefined( level.var_12e11406 ) )
+        if ( isdefined( level.initial_round_wait_func ) )
         {
-            [[ level.var_12e11406 ]]();
+            [[ level.initial_round_wait_func ]]();
         }
         
         if ( !( isdefined( level.host_ended_game ) && level.host_ended_game ) )
@@ -2604,10 +2604,10 @@ function function_21669ebc( restart = 0 )
             level thread function_ec53cb2c();
         #/
         
-        if ( isdefined( level.var_fc735431 ) )
+        if ( isdefined( level.zombie_round_change_custom ) )
         {
             level thread zm_audio::function_4138a262();
-            [[ level.var_fc735431 ]]();
+            [[ level.zombie_round_change_custom ]]();
         }
         else
         {
@@ -2799,21 +2799,21 @@ function function_cab8ebff( var_5707265b = 120 )
     {
         if ( function_5a2c9b1c( level.round_number ) )
         {
-            var_7e5b8365 = function_77ee3cd2( level.round_number ) && zombie_utility::get_current_zombie_count() > 0 || level.zombie_total > 0 || level.intermission;
+            b_should_wait = function_77ee3cd2( level.round_number ) && zombie_utility::get_current_zombie_count() > 0 || level.zombie_total > 0 || level.intermission;
         }
         else
         {
-            var_7e5b8365 = zombie_utility::get_current_zombie_count() > 0 || level.zombie_total > 0 || level.intermission;
+            b_should_wait = zombie_utility::get_current_zombie_count() > 0 || level.zombie_total > 0 || level.intermission;
         }
         
         /#
             if ( getdvarint( #"hash_19d726be121cfa2", 0 ) )
             {
-                var_7e5b8365 = var_7e5b8365 && gettime() - var_fcf7225b < var_5707265b;
+                b_should_wait = b_should_wait && gettime() - var_fcf7225b < var_5707265b;
             }
         #/
         
-        if ( ( !var_7e5b8365 || level flag::get( "end_round_wait" ) ) && !level flag::get( #"infinite_round_spawning" ) )
+        if ( ( !b_should_wait || level flag::get( "end_round_wait" ) ) && !level flag::get( #"infinite_round_spawning" ) )
         {
             return;
         }

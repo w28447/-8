@@ -1986,7 +1986,7 @@ Lobby.Actions.JoinHost = function ( f145_arg0, f145_arg1, f145_arg2, f145_arg3, 
 			local f148_local1 = f148_arg0.joinResults[#f148_arg0.joinResults].joinResult
 			local f148_local2, f148_local3 = Lobby.Join.JoinResultToString( f148_local1, true )
 			if f148_local3 then
-				local f148_local4 = Engine[0xF9F1239CFD921FE]( 0xDA680012C01968D )
+				local f148_local4 = Engine[0xF9F1239CFD921FE]( "menu/lobby" )
 				local f148_local5 = 0x0
 				if f148_local1 == Enum.JoinResult[0x190D2DCFDB65D5] then
 					f148_local5 = 0x55D96CC762EABDD

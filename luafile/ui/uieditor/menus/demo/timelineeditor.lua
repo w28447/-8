@@ -304,7 +304,7 @@ LUI.createMenu.TimelineEditor = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f24_arg0, f24_arg1, f24_arg2 )
 		if SegmentCountGreaterThan( f24_arg2, 0 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "demo.showFilmOptionsSidebar" ) and not IsTimelineEditorInMoveState( f24_arg2 ) then
-			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x22361E23588705A], 0x8E7772DFD9BBDEB, nil, nil )
+			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x22361E23588705A], "menu/options", nil, nil )
 			return true
 		else
 			return false

@@ -10,7 +10,7 @@ CoD.AARTierRewardTitle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local Rewards = LUI.UIText.new( 0, 0, 0, 800, 0, 1, 0, 0 )
 	Rewards:setRGB( 0.86, 0.74, 0.25 )
-	Rewards:setText( Engine[0xF9F1239CFD921FE]( 0x897061E92EE5BFC ) )
+	Rewards:setText( Engine[0xF9F1239CFD921FE]( "aar/rewards" ) )
 	Rewards:setTTF( "ttmussels_regular" )
 	Rewards:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	Rewards:setShaderVector( 0, 0.77, 0, 0, 0 )

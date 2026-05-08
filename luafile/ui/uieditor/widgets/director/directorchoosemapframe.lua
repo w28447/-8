@@ -1,4 +1,4 @@
-require( "x64:1bbde4283bb35f8" )
+require( "ui/uieditor/menus/store/store" )
 require( "ui/uieditor/widgets/customgames/customgames_mapmodeinfo" )
 require( "ui/uieditor/widgets/customgames/customgames_mapmodeslider" )
 require( "ui/uieditor/widgets/scrollbars/verticalcounter" )

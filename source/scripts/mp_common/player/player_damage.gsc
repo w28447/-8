@@ -129,7 +129,7 @@ function callback_playerdamage( einflictor, eattacker, idamage, idflags, smeanso
         idamage *= var_8f516911;
     }
     
-    var_f16d7bc8 = isdefined( self.armor ) ? self.armor : 0;
+    startingarmor = isdefined( self.armor ) ? self.armor : 0;
     armor_damage = apply_damage_to_armor( einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, shitloc, friendlyfire, ignore_round_start_friendly_fire );
     idamage = armor_damage.idamage;
     idflags = armor_damage.idflags;
@@ -259,7 +259,7 @@ function callback_playerdamage( einflictor, eattacker, idamage, idflags, smeanso
     {
         if ( !isdefined( eattacker ) || !friendlyfire || isdefined( level.hardcoremode ) && level.hardcoremode )
         {
-            if ( !isdefined( var_f16d7bc8 ) || var_f16d7bc8 == 0 || weapons::isheadshot( shitloc, smeansofdeath ) && !self armor::has_helmet() )
+            if ( !isdefined( startingarmor ) || startingarmor == 0 || weapons::isheadshot( shitloc, smeansofdeath ) && !self armor::has_helmet() )
             {
                 self battlechatter::pain_vox( smeansofdeath, weapon );
             }

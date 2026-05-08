@@ -265,7 +265,7 @@ function function_7255025f()
     }
     
     var_634714d5 = getentarray( "gazign_stone_covers", "script_noteworthy" );
-    array::run_all( var_634714d5, &function_2baad8fc );
+    array::run_all( var_634714d5, &makesentienttarget );
     var_d8358012 = struct::get( "mh_cpt1", "script_noteworthy" );
     var_a7181dd8 = struct::get( "mh_cpt2", "script_noteworthy" );
     var_b4c5b933 = struct::get( "mh_cpt3", "script_noteworthy" );
@@ -1943,7 +1943,7 @@ function function_f7b04d9c( s_key )
         exploder::exploder( "fxexp_pap_barrier_nosferatu_2" );
     }
     
-    level thread function_a1d7d92b( self, "nosferatu_pap_event_done", "nosferatu_defend" );
+    level thread check_player_proximity( self, "nosferatu_pap_event_done", "nosferatu_defend" );
     level thread function_b7e42989();
     level.var_84b2907f = &function_1ea41244;
     level.var_2f477020 = self;
@@ -2154,7 +2154,7 @@ function function_57fcbf3f()
     if ( level flag::get( "nosferatu_pap_drop" ) )
     {
         var_d3b167fd = self.origin;
-        v_drop = mansion_util::function_a8176b98( var_d3b167fd );
+        v_drop = mansion_util::get_drop_pos( var_d3b167fd );
         
         if ( isdefined( v_drop ) && !isdefined( level.var_9ce3e25a ) )
         {
@@ -3431,7 +3431,7 @@ function function_d29a3f81()
         {
             level thread function_3088c773( self.stub.str_flag );
             level thread function_d48fb847( self.stub, self.stub.str_flag, self.stub.vol_defend, player );
-            level thread function_a1d7d92b( self.stub.vol_defend, self.stub.str_flag, "clock_defend" );
+            level thread check_player_proximity( self.stub.vol_defend, self.stub.str_flag, "clock_defend" );
             level thread function_4dfd5cf6( self.stub.vol_defend.targetname, self.stub.str_flag, self.stub.vol_defend, self.stub.str_flag, "clock_defend" );
             level thread function_e8355769( self.stub.vol_defend, self.stub.str_flag );
             level thread function_b7c114a2( player );
@@ -3453,11 +3453,11 @@ function function_e8355769( vol_defend, str_flag )
     
     while ( !level flag::get( str_flag ) )
     {
-        var_840c2f31 = mansion_util::function_91dfc9d4( vol_defend );
+        a_players_touching = mansion_util::function_91dfc9d4( vol_defend );
         
         foreach ( var_b930e62d in array::remove_undefined( var_ef6d594a ) )
         {
-            if ( !isinarray( var_840c2f31, var_b930e62d ) )
+            if ( !isinarray( a_players_touching, var_b930e62d ) )
             {
                 var_b930e62d.var_e6abb74b = 1;
             }
@@ -3722,7 +3722,7 @@ function function_d48fb847( var_ffba68db, str_flag, e_volume, e_player )
 // Params 3
 // Checksum 0x6582196e, Offset: 0xd378
 // Size: 0xfc
-function function_a1d7d92b( vol_defend, var_39cddd2a, var_854f3b02 )
+function check_player_proximity( vol_defend, var_39cddd2a, var_854f3b02 )
 {
     while ( !level flag::get( var_39cddd2a ) )
     {

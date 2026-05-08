@@ -122,7 +122,7 @@
         },
         {
             "name": "#hash_62ebafddf81f8b64",
-            "description": "#hash_1fbf66a81cc73280",
+            "description": "#playlist/zm_towers",
             "lobbyMainMode": "CAMPAIGN",
             "image": "#ui_icon_gamemode_zm_classic",
             "imageBackground": "#hash_c566d51261573f6c",
@@ -237,7 +237,7 @@
         },
         {
             "name": "#hash_143af6e745b8bcfd",
-            "description": "#hash_4aebc92557870439",
+            "description": "#playlist/zm_escape",
             "unique_name": "#hash_7226cb1d509ebfbd",
             "lobbyMainMode": "CAMPAIGN",
             "image": "#ui_icon_gamemode_zm_classic",
@@ -353,7 +353,7 @@
         },
         {
             "name": "#hash_13ac4ffbaef72a6a",
-            "description": "#hash_48120353e988a126",
+            "description": "#playlist/zm_office",
             "dlcName": "dlc0zm",
             "lobbyMainMode": "CAMPAIGN",
             "image": "#ui_icon_gamemode_zm_rush",
@@ -469,7 +469,7 @@
         },
         {
             "name": "#hash_375f1ec9f1ea89d3",
-            "description": "#hash_7d0fb557f16fbe9f",
+            "description": "#playlist/zm_mansion",
             "unique_name": "#hash_708ca3393b7322ab",
             "dlcName": "dlc1zm",
             "lobbyMainMode": "CAMPAIGN",
@@ -703,7 +703,7 @@
         },
         {
             "name": "#hash_486918e5612af40f",
-            "description": "#hash_2744ee0ea477fe83",
+            "description": "#playlist/zm_white",
             "unique_name": "#hash_2e9ec32a2b942215",
             "dlcName": "dlc3zm",
             "lobbyMainMode": "CAMPAIGN",
@@ -820,7 +820,7 @@
         },
         {
             "name": "#hash_2072473cea20abb4",
-            "description": "#hash_205da08f663efca0",
+            "description": "#playlist/zm_orange",
             "dlcName": "dlc4zm",
             "lobbyMainMode": "CAMPAIGN",
             "image": "#ui_icon_gamemode_zm_rush",

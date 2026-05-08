@@ -653,10 +653,10 @@ function private starthack( player )
     player.var_c1911c44 = 1;
     thread function_d1f6e8d0( player );
     settingsbundle = function_13f4415c();
-    var_891378ce = isdefined( settingsbundle.var_a65e249e ) ? settingsbundle.var_a65e249e : 0;
-    function_aaf0a382( player.var_be9a0b4b[ 1 ], player, var_891378ce );
+    maxblocks = isdefined( settingsbundle.var_a65e249e ) ? settingsbundle.var_a65e249e : 0;
+    function_aaf0a382( player.var_be9a0b4b[ 1 ], player, maxblocks );
     player clientfield::set_player_uimodel( "IcePickInfo.hackEquipFinished", 1 );
-    function_aaf0a382( player.var_be9a0b4b[ 2 ], player, var_891378ce );
+    function_aaf0a382( player.var_be9a0b4b[ 2 ], player, maxblocks );
     player clientfield::set_player_uimodel( "IcePickInfo.hackVehicleFinished", 1 );
     function_aaf0a382( player.var_be9a0b4b[ 0 ], player );
     player clientfield::set_player_uimodel( "IcePickInfo.hackFinished", 1 );
@@ -847,7 +847,7 @@ function private function_2b2ed159( entity, attackingplayer )
     
     if ( isdefined( targetname ) && isdefined( playernum ) )
     {
-        var_6c52b424 = { #life_id:attackingplayer getmatchrecordlifeindex(), #var_a9451146:attackingplayer.var_c48b30ab, #content_targeted:targetname, #var_e7f6239c:playernum, #duration:var_46df240b, #hack_success:1 };
+        var_6c52b424 = { #life_id:attackingplayer getmatchrecordlifeindex(), #var_a9451146:attackingplayer.var_c48b30ab, #content_targeted:targetname, #target_player_id:playernum, #duration:var_46df240b, #hack_success:1 };
         function_92d1707f( #"hash_3c946cbb149411ad", var_6c52b424 );
     }
 }

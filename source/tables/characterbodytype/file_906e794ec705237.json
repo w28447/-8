@@ -3,8 +3,8 @@
     "displayName": "#heroes/reaper",
     "unk30": "#reaper",
     "mpDialog": "#reaper",
-    "playerSoundsTable": "#hash_15ea5f710fc84075",
-    "playerFXTable": "#hash_133d2326a92c76be",
+    "playerSoundsTable": "#mp_robot_playersounds",
+    "playerFXTable": "#mp_playerfx",
     "image_50": "#personalize_t7_hud_mp_weapon_hero_minigun_available",
     "image_58": "#t7_mp_loadingportrait_weapon_reaper",
     "image_60": "#t7_mp_loadingportrait_ability_reaper",
@@ -18,11 +18,11 @@
     "dogtagFriendly": "#hash_612c3e78d9650c3",
     "dogTagEnemy": "#hash_cd6db178007d4aa",
     "tagFxSet": "#hash_22ffe624b7ac693a",
-    "characterFootsteps": "#hash_59197cb048373fd1",
-    "characterFootstepsQuiet": "#hash_cf579ffbe293f53",
-    "characterFootstepsNPC": "#hash_26ce1b0171b6670",
-    "characterFootstepsNPCLoud": "#hash_7126ce90bbf18468",
-    "characterFootstepsNPCQuiet": "#hash_99327b3f93ca728",
+    "characterFootsteps": "#reaperfoleyplr",
+    "characterFootstepsQuiet": "#reaperfoleyplrquiet",
+    "characterFootstepsNPC": "#reaperfoleynpc",
+    "characterFootstepsNPCLoud": "#reaperfoleynpcloud",
+    "characterFootstepsNPCQuiet": "#reaperfoleynpcquiet",
     "bundle": {
         "arenaLobbyScenes": [
             {

@@ -15,23 +15,23 @@
                 "name": "#telemetry_header",
                 "members": [
                     {
-                        "name": "#hash_f2ad74d8edb8204",
-                        "scrName": "#hash_50f7aa03",
+                        "name": "#game_session_id",
+                        "scrName": "#game_session_id",
                         "type": "UINT64"
                     },
                     {
                         "name": "#action_type",
-                        "scrName": "#hash_42e28add",
+                        "scrName": "#action_type",
                         "type": "XHASH"
                     },
                     {
                         "name": "#title_id",
-                        "scrName": "#hash_8f4c2b40",
+                        "scrName": "#title_id",
                         "type": "UINT32"
                     },
                     {
                         "name": "#build_version",
-                        "scrName": "#hash_26065d8a",
+                        "scrName": "#build_version",
                         "type": "STRING",
                         "len": 32
                     },
@@ -42,7 +42,7 @@
                     },
                     {
                         "name": "#source_version",
-                        "scrName": "#hash_a56621db",
+                        "scrName": "#source_version",
                         "type": "UINT16"
                     },
                     {
@@ -52,7 +52,7 @@
                     },
                     {
                         "name": "#changelist_number",
-                        "scrName": "#hash_e632366e",
+                        "scrName": "#changelist_number",
                         "type": "INT32"
                     }
                 ]
@@ -76,7 +76,7 @@
                     },
                     {
                         "name": "#reason_left",
-                        "scrName": "#hash_63ea5422",
+                        "scrName": "#reason_left",
                         "type": "INT32"
                     },
                     {
@@ -107,17 +107,17 @@
                     },
                     {
                         "name": "#ffotd_version",
-                        "scrName": "#hash_f5343a2d",
+                        "scrName": "#ffotd_version",
                         "type": "INT32"
                     },
                     {
                         "name": "#is_dedi",
-                        "scrName": "#hash_a78f7a25",
+                        "scrName": "#is_dedi",
                         "type": "BOOL"
                     },
                     {
-                        "name": "#hash_46838162d06a1e0d",
-                        "scrName": "#hash_e4de8d4d",
+                        "name": "#matchmaking_id",
+                        "scrName": "#matchmaking_id",
                         "type": "UINT64"
                     },
                     {
@@ -136,13 +136,13 @@
                         "type": "UINT64"
                     },
                     {
-                        "name": "#hash_5adcb2e00ec9eab1",
-                        "scrName": "#hash_dcbf67d9",
+                        "name": "#joined_lobby_id",
+                        "scrName": "#joined_lobby_id",
                         "type": "UINT64"
                     },
                     {
                         "name": "#playlist_version",
-                        "scrName": "#hash_69518a79",
+                        "scrName": "#playlist_version",
                         "type": "INT32"
                     },
                     {
@@ -162,7 +162,7 @@
                 "members": [
                     {
                         "name": "#lobby_id",
-                        "scrName": "#hash_41a8e579",
+                        "scrName": "#lobby_id",
                         "type": "UINT64"
                     },
                     {
@@ -186,17 +186,17 @@
                 "members": [
                     {
                         "name": "#user_id",
-                        "scrName": "#hash_fada396e",
+                        "scrName": "#user_id",
                         "type": "UINT64"
                     },
                     {
                         "name": "#user_session_id",
-                        "scrName": "#hash_e004f74d",
+                        "scrName": "#user_session_id",
                         "type": "UINT64"
                     },
                     {
                         "name": "#uno_id",
-                        "scrName": "#hash_e7339473",
+                        "scrName": "#uno_id",
                         "type": "UINT64"
                     }
                 ]
@@ -209,8 +209,8 @@
                 "name": "#hash_3754ae573cf9924d",
                 "members": [
                     {
-                        "name": "#hash_1d1bf732b0333b59",
-                        "scrName": "#hash_bab6b3b5",
+                        "name": "#utc_timestamp_joined_party",
+                        "scrName": "#utc_timestamp_joined_party",
                         "type": "UINT64"
                     },
                     {
@@ -220,8 +220,8 @@
                         "s111u20": true
                     },
                     {
-                        "name": "#hash_70f1765710df7771",
-                        "scrName": "#hash_341b7446",
+                        "name": "#utc_timestamp_left_party",
+                        "scrName": "#utc_timestamp_left_party",
                         "type": "UINT64"
                     }
                 ]
@@ -230,8 +230,8 @@
     ],
     "members": [
         {
-            "name": "#hash_7bf9daccc9b256dd",
-            "scrName": "#hash_96cb2219",
+            "name": "#bnet_region",
+            "scrName": "#bnet_region",
             "type": "STRING",
             "len": 32
         }

@@ -56,22 +56,22 @@ function commit_weapon_data( spawnid, currentweapon, time0 )
     
     time1 = gettime();
     blackboxeventname = #"mpweapons";
-    eventname = #"hash_41cc1afc10e99541";
+    eventname = #"dlog_event_mpweapons";
     
     if ( sessionmodeiscampaigngame() )
     {
         blackboxeventname = #"cpweapons";
-        eventname = #"hash_474292d3118817ab";
+        eventname = #"dlog_event_cpweapons";
     }
     else if ( sessionmodeiszombiesgame() )
     {
         blackboxeventname = #"zmweapons";
-        eventname = #"hash_67140d84a7660909";
+        eventname = #"dlog_event_zmweapons";
     }
     else if ( sessionmodeiswarzonegame() )
     {
         blackboxeventname = #"wzweapons";
-        eventname = #"hash_63ec5305e1ef1335";
+        eventname = #"dlog_event_wzweapons";
     }
     
     event_data = { #spawnid:spawnid, #name:currentweapon.name, #duration:time1 - time0, #shots:self._bbdata[ #"shots" ], #hits:self._bbdata[ #"hits" ] };
@@ -123,7 +123,7 @@ function function_afcc007d( name, clientnum, xuid )
 function function_e0dfa262( name, clientnum, xuid )
 {
     var_bd8c7087 = int( xuid );
-    function_92d1707f( #"hash_557aae9aaddeac22", { #name:name, #clientnum:clientnum, #xuid:var_bd8c7087 } );
+    function_92d1707f( #"dlog_event_global_leave", { #name:name, #clientnum:clientnum, #xuid:var_bd8c7087 } );
 }
 
 // Namespace bb/bb_shared

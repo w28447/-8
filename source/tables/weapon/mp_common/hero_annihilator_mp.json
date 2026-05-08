@@ -60,8 +60,8 @@
     "sound810": "#hash_21cba6ae89a3493c",
     "sound820": "#hash_21cba6ae89a3493c",
     "tunables1": "#hero_annihilator_tunables_mp",
-    "cacWeaponXCam": "#hash_24bf3d189ad017ba",
-    "cacAttachmentsXCam": "#hash_24bf3d189ad017ba",
+    "cacWeaponXCam": "#ui_cam_cac_hero_annihilator",
+    "cacAttachmentsXCam": "#ui_cam_cac_hero_annihilator",
     "sharedWeaponSounds": "#pistol",
     "tracers": [
         "#hash_7b1f1bf07bf1df60",
@@ -85,9 +85,9 @@
     "laser_e30": "#default_laser",
     "fx_bc8": "#hash_762e655f123759cd",
     "fx_bd0": "#hash_7634515f123ba37f",
-    "fx_be8": "#hash_6d9a36ac32c18d74",
-    "enemyDeathFxSet": "#hash_3af69bfbfda4469a",
-    "normalImpactFX": "#hash_7fac2a7b920646f1",
+    "fx_be8": "#weapon/fx_hero_annhilatr_glint",
+    "enemyDeathFxSet": "#weapon_hero_annihilator_knockback",
+    "normalImpactFX": "#hero_annihilator_explosion",
     "exitImpactFX": "#hash_d6ef4fc6c00cc18e",
     "normalImpactSounds": "#hash_f8e291a8acdea947",
     "exitImpactSounds": "#hash_d0191cc37bfbfeea"

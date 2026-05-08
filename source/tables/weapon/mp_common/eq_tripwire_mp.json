@@ -77,14 +77,14 @@
     "rumble_de8": "#grenade_rumble",
     "fx_f00": "#hash_dfdd021d80dd8fc6",
     "underwaterExplosionSurfaceFX": [
-        "#hash_5f190015ac9ded95",
-        "#hash_1206d75150c2464e",
-        "#hash_260fafe2e7ced71c"
+        "#explosions/fx_exp_grenade_water",
+        "#explosions/fx_exp_grenade_water_shllw",
+        "#explosions/fx_exp_grenade_water_surface_deep"
     ],
     "#hash_96850284": "#jammer_tripwire",
     "#hash_26f68e75": "#icepick_tripwire",
     "normalImpactFX": "#hash_3d863221d143a54e",
     "bounceImpactFX": "#hash_65f5dfacee65c150",
     "normalImpactSounds": "#hash_e8e0a97bbbf0b555",
-    "bounceImpactSounds": "#hash_7905f2122952daa8"
+    "bounceImpactSounds": "#gel_bounce"
 }

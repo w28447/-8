@@ -2,15 +2,15 @@
     "name": "#hash_c0e368ab90b1e3b",
     "displayName": "#hash_d64a7931ccb6c04",
     "mpDialog": "#land_male",
-    "playerSoundsTable": "#hash_21fe3f79b5e4c2d6",
+    "playerSoundsTable": "#cp_playersounds",
     "playerFXTable": "#hash_471b500cc678f872",
     "image_68": "#hash_94b8007f307e94a1",
     "positionDraftPortrait": "#hash_eb079427b08c3b6f",
-    "characterFootsteps": "#hash_4ee42a3145f1fe3d",
-    "characterFootstepsQuiet": "#hash_783ab8b555ce9413",
-    "characterFootstepsNPC": "#hash_3008da66d91b8ad7",
-    "characterFootstepsNPCLoud": "#hash_237a21af974e9d2f",
-    "characterFootstepsNPCQuiet": "#hash_22eae0dda1cf3d31",
+    "characterFootsteps": "#defaultplayerfootstep",
+    "characterFootstepsQuiet": "#defaultplayerquietfootstep",
+    "characterFootstepsNPC": "#defaultnpcfootstep",
+    "characterFootstepsNPCLoud": "#defaultnpcloudfootstep",
+    "characterFootstepsNPCQuiet": "#defaultnpcquietfootstep",
     "bundle": {
         "lobbyScenes": [
             {

@@ -476,7 +476,7 @@ function gravity_shock_wave_fx( localclientnum, oldval, newval, bnewent, binitia
             self.var_aff8c2c0 = self playloopsound( #"hash_7c8577b82afb225d" );
         }
         
-        if ( self zm_utility::function_f8796df3( localclientnum ) )
+        if ( self zm_utility::is_first_person( localclientnum ) )
         {
             self.var_c145bf0d[ localclientnum ] = playviewmodelfx( localclientnum, level._effect[ #"gravityspikes_shockwave" ], "tag_weapon" );
             self.var_faf5c3df[ localclientnum ] = playviewmodelfx( localclientnum, level._effect[ #"hash_2c2dcd840a548ef2" ], "tag_weapon_le" );

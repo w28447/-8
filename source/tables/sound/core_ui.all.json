@@ -35364,13 +35364,13 @@
         {
             "value": 500,
             "next": 65535,
-            "name": "#hash_16d8679d1005009d",
+            "name": "#uin_lobby_enter",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_16d8679d1005009d",
+                    "name": "#uin_lobby_enter",
                     "assetId": "#uin/2k18/generic/ui_mp_join.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -35462,13 +35462,13 @@
         {
             "value": 559,
             "next": 65535,
-            "name": "#hash_7e075a75dc42f82a",
+            "name": "#uin_lobby_find",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7e075a75dc42f82a",
+                    "name": "#uin_lobby_find",
                     "assetId": "#uin/2k18/generic/ui_lobby_find.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -39989,13 +39989,13 @@
         {
             "value": 453,
             "next": 588,
-            "name": "#hash_6e14d0f7fc9c9695",
+            "name": "#uin_spinner",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6e14d0f7fc9c9695",
+                    "name": "#uin_spinner",
                     "assetId": "#uin/generic/uin_spinner.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -40860,13 +40860,13 @@
         {
             "value": 17,
             "next": 65535,
-            "name": "#hash_7e3d8db0c2d3cf94",
+            "name": "#uin_timer_esports_last_beep",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7e3d8db0c2d3cf94",
+                    "name": "#uin_timer_esports_last_beep",
                     "assetId": "#mpl/wager/timer/timer_wager_deet.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -41105,13 +41105,13 @@
         {
             "value": 155,
             "next": 672,
-            "name": "#hash_755f12a5b14f56da",
+            "name": "#uin_trigger_slide",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_755f12a5b14f56da",
+                    "name": "#uin_trigger_slide",
                     "assetId": "#hash_600ed06bd1999244",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -42036,13 +42036,13 @@
         {
             "value": 407,
             "next": 65535,
-            "name": "#hash_5c14c7a97c16ddd5",
+            "name": "#uin_wz_deploy",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5c14c7a97c16ddd5",
+                    "name": "#uin_wz_deploy",
                     "assetId": "#uin/2k18/generic/ui_deploy.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -42532,7 +42532,7 @@
         {
             "name": "prj_impact_plr",
             "id": "#prj_impact_plr",
-            "fadeInCurve": "#hash_4ca222c8af19e64a",
+            "fadeInCurve": "#defaultmin",
             "fadeOutCurve": "#default",
             "updateWhilePaused": false,
             "trackAmplitude": false,

@@ -36,7 +36,7 @@
     "sound660": "#uin_unavailable_charging",
     "projexplosionsound": "#hash_2b2531a0230c359c",
     "tunables1": "#eq_molotov_tunables_wz",
-    "cacWeaponXCam": "#hash_39c848b73bfceab1",
+    "cacWeaponXCam": "#ui_cam_cac_equip_incendiary",
     "sharedWeaponSounds": "#equipment",
     "customsettings": "#molotov_custom_settings",
     "#hash_2e4a8800": "#eq_molotov_mp_scoreevents",
@@ -63,6 +63,6 @@
     "fx_ed8": "#hash_67011999846855a3",
     "fx_f00": "#hash_1d5309639cb42250",
     "bounceImpactFX": "#grenade_bounce",
-    "normalImpactSounds": "#hash_2f56ecde75b1d028",
-    "bounceImpactSounds": "#hash_46d8f2152c519b03"
+    "normalImpactSounds": "#incendiary_grenade_explode_material",
+    "bounceImpactSounds": "#smoke_bounce"
 }

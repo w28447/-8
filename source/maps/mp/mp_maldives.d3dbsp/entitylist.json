@@ -387,7 +387,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_179f3eb184c245d2",
+                    "value": "#amb_ocean",
                     "unk1a": true
                 },
                 {
@@ -5583,7 +5583,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_13299213632e598a",
+                    "value": "#amb_reactor",
                     "unk1a": true
                 },
                 {
@@ -13221,7 +13221,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_79c2463acff19d72",
+                    "value": "#amb_lava",
                     "unk1a": true
                 },
                 {
@@ -13293,7 +13293,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_79c2463acff19d72",
+                    "value": "#amb_lava",
                     "unk1a": true
                 },
                 {
@@ -13509,7 +13509,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_6282b08e3d0e89ab",
+                    "value": "#amb_server_room",
                     "unk1a": true
                 },
                 {
@@ -15885,7 +15885,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_79c2463acff19d72",
+                    "value": "#amb_lava",
                     "unk1a": true
                 },
                 {
@@ -16137,7 +16137,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_79c2463acff19d72",
+                    "value": "#amb_lava",
                     "unk1a": true
                 },
                 {

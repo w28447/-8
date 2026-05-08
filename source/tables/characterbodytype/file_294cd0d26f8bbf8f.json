@@ -2,8 +2,8 @@
     "name": "#hash_294cd0d26f8bbf8f",
     "displayName": "#heroes/zombie_male",
     "mpDialog": "#zombie_male",
-    "playerSoundsTable": "#hash_8b6c2bcaaa94ab4",
-    "playerFXTable": "#hash_133d2326a92c76be",
+    "playerSoundsTable": "#mp_playersounds",
+    "playerFXTable": "#mp_playerfx",
     "image_68": "#hash_baeaea4abb46e098",
     "image_70": "#hash_baeaea4abb46e098",
     "image_78": "#hash_baeaea4abb46e098",
@@ -11,11 +11,11 @@
     "image_88": "#hash_baeaea4abb46e098",
     "positionDraftPortrait": "#ui_icon_specialist_portrait_draft_zombie_male",
     "lootUiIcon": "#loot_03_ui_icon_blackmarket_reserves_zombie_male",
-    "characterFootsteps": "#hash_4ee42a3145f1fe3d",
-    "characterFootstepsQuiet": "#hash_783ab8b555ce9413",
-    "characterFootstepsNPC": "#hash_3008da66d91b8ad7",
-    "characterFootstepsNPCLoud": "#hash_237a21af974e9d2f",
-    "characterFootstepsNPCQuiet": "#hash_22eae0dda1cf3d31",
+    "characterFootsteps": "#defaultplayerfootstep",
+    "characterFootstepsQuiet": "#defaultplayerquietfootstep",
+    "characterFootstepsNPC": "#defaultnpcfootstep",
+    "characterFootstepsNPCLoud": "#defaultnpcloudfootstep",
+    "characterFootstepsNPCQuiet": "#defaultnpcquietfootstep",
     "bundle": {
         "lobbyScenes": [
             {

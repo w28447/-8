@@ -33,9 +33,9 @@
     "sound800": "#hash_6f5f990a945df8f8",
     "sound810": "#hash_21cba6ae89a3493c",
     "tunables1": "#hash_2341f047dc6c290d",
-    "cacWeaponXCam": "#hash_4dbce30f3b5b2741",
-    "cacAttachmentsXCam": "#hash_4dbce30f3b5b2741",
-    "weaponIconXCam": "#hash_521ab03adbaffcd9",
+    "cacWeaponXCam": "#ui_cam_cac_melee_knuckles",
+    "cacAttachmentsXCam": "#ui_cam_cac_melee_knuckles",
+    "weaponIconXCam": "#ui_cam_icon_melee_knuckles",
     "sharedWeaponSounds": "#brass_knuckles",
     "projectilemodel": "#tag_flash",
     "viewmodel": [

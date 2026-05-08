@@ -38,7 +38,7 @@
     "sound810": "#hash_5fd68d0455a0b8",
     "tunables1": "#hero_sword_pistol_lv1_tunables_zm",
     "cacWeaponXCam": "#hash_986e89a97bdca6d",
-    "sharedWeaponSounds": "#hash_c93aebf84a5504f",
+    "sharedWeaponSounds": "#zm_viper",
     "viewmodel": [
         "#wpn_t8_zm_melee_sword_lvl1_view"
     ],

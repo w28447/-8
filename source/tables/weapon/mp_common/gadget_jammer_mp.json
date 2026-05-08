@@ -36,9 +36,9 @@
     "sound660": "#uin_unavailable_charging",
     "projexplosionsound": "#wpn_grenade_explode",
     "tunables1": "#hash_4d2c9136329162f3",
-    "cacWeaponXCam": "#hash_5b1ec190b50f0405",
+    "cacWeaponXCam": "#ui_cam_cac_equip_trophy",
     "sharedWeaponSounds": "#equipment",
-    "weaponHeadObjective": "#hash_3d917f182a76f960",
+    "weaponHeadObjective": "#inworld_trophysystem",
     "customsettings": "#gadget_jammer_settings",
     "projectilemodel": "#hash_788ee73fa8e934a4",
     "viewmodel": [
@@ -53,7 +53,7 @@
     "hudIcon": "#ui_icon_equipment_trophysystem",
     "image_e90": "#ui_icon_equipment_trophysystem",
     "fx_ed8": "#explosions/fx8_exp_equipment_lg",
-    "bounceImpactFX": "#hash_446e1054f9b14b63",
+    "bounceImpactFX": "#euip_bounce",
     "normalImpactSounds": "#hash_e8e0a97bbbf0b555",
-    "bounceImpactSounds": "#hash_3a84a19d3023d78"
+    "bounceImpactSounds": "#trophy_bounce"
 }

@@ -2,8 +2,8 @@
     "name": "#hash_265a8bfe9e6a3a8f",
     "displayName": "#heroes/recon",
     "mpDialog": "#recon",
-    "playerSoundsTable": "#hash_8b6c2bcaaa94ab4",
-    "playerFXTable": "#hash_133d2326a92c76be",
+    "playerSoundsTable": "#mp_playersounds",
+    "playerFXTable": "#mp_playerfx",
     "image_50": "#personalize_t7_hud_mp_weapon_hero_roulette_available",
     "image_58": "#t7_mp_loadingportrait_weapon_blackmarket",
     "image_60": "#t7_mp_loadingportrait_ability_blackmarket",
@@ -16,11 +16,11 @@
     "dogtagFriendly": "#hash_470554957716404b",
     "dogTagEnemy": "#hash_4049f47bae095ccc",
     "tagFxSet": "#hash_13d4b9a02200ed3c",
-    "characterFootsteps": "#hash_4ee42a3145f1fe3d",
-    "characterFootstepsQuiet": "#hash_783ab8b555ce9413",
-    "characterFootstepsNPC": "#hash_3008da66d91b8ad7",
-    "characterFootstepsNPCLoud": "#hash_237a21af974e9d2f",
-    "characterFootstepsNPCQuiet": "#hash_22eae0dda1cf3d31",
+    "characterFootsteps": "#defaultplayerfootstep",
+    "characterFootstepsQuiet": "#defaultplayerquietfootstep",
+    "characterFootstepsNPC": "#defaultnpcfootstep",
+    "characterFootstepsNPCLoud": "#defaultnpcloudfootstep",
+    "characterFootstepsNPCQuiet": "#defaultnpcquietfootstep",
     "bundle": {
         "arenaLobbyScenes": [
             {

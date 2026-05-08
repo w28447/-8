@@ -517,11 +517,11 @@ function refire_player_downed()
 function laststand_disable_player_weapons()
 {
     self disableweaponcycling();
-    var_df4942c2 = self getweaponslist( 1 );
+    a_w_inventory = self getweaponslist( 1 );
     self.lastactiveweapon = self getcurrentweapon();
     self.laststandpistol = indeploying_ui();
     
-    foreach ( weapon in var_df4942c2 )
+    foreach ( weapon in a_w_inventory )
     {
         if ( weapon == self.laststandpistol )
         {
@@ -1666,7 +1666,7 @@ function can_revive( e_revivee, ignore_sight_checks = 0, ignore_touch_checks = 0
         return false;
     }
     
-    if ( isdefined( level.var_1461fd14 ) && ![[ level.var_1461fd14 ]]( e_revivee ) )
+    if ( isdefined( level.can_revive_game_module ) && ![[ level.can_revive_game_module ]]( e_revivee ) )
     {
         return false;
     }

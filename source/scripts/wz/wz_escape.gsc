@@ -348,7 +348,7 @@ function function_69e60a10( var_e4204b3 )
                         v_angles = point.angles;
                         var_c24ea284 = undefined;
                         var_4b82457c = distance2d( point.origin, level.players[ 0 ].origin );
-                        var_24b0b1ea = itemlistbundle.var_7fb0967b;
+                        var_24b0b1ea = itemlistbundle.distributiondistance;
                         
                         if ( isdefined( var_24b0b1ea ) )
                         {

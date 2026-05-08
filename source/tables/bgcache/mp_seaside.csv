@@ -484,11 +484,11 @@ character,#c_t8_zmb_3rdclass_male2
 character,#c_t8_zmb_blightfather1_noreveal
 xmodelalias,#hash_612e15b05a54b6c5
 weapon,#blight_father_melee_mp
-weapon,#hash_50c7dfa67c3f185b
+weapon,#quadtank_main_turret_player
 weapon,#zombie_ai_defaultmelee
-rumble,#hash_7644de80397a404d
-shellshock,#hash_640e615236430645
-statuseffect,#hash_7867f8f9aaaa0c40
+rumble,#quadtank_fire_player
+shellshock,#tankblast
+statuseffect,#chaos_missile_damage
 xcam,#ui_cam_draft_common
 xcam,#ui_cam_match_intro_seaside_allies
 xcam,#ui_cam_match_intro_seaside_axis
@@ -1168,7 +1168,7 @@ string,#mpui/camo_darkmatter
 string,#hash_3ca968dee9e5dc02
 string,#hash_3cbdafac7f4a7bd2
 string,#hash_3d26eb8dafae98e9
-string,#hash_3d7abb3373fab887
+string,#zmui/suppressor_desc
 string,#mpui/tacknife
 string,#hash_3de8e053a2e6c69b
 string,#hash_3dfd2cf9c5589207
@@ -1285,7 +1285,7 @@ string,#hash_6e2fd7423cbe42b0
 string,#hash_6e86b49d6d5196af
 string,#mpui/rangefinder
 string,#mpui/stabilizer
-string,#hash_7085044e7b80d5a3
+string,#mpui/reticle_default
 string,#hash_709fb6b7fdde6aa8
 string,#hash_714cce81de873f11
 string,#mpui/acog
@@ -1368,7 +1368,7 @@ soundalias,#hash_307d5a137389d36
 soundalias,#hash_31f3dedeb2ef878
 soundalias,#hash_31f777916298d72
 soundalias,#hash_34186a2648d3bd3
-soundalias,#hash_38c96854fb0017e
+soundalias,#dst_typewriter
 soundalias,#vox_tvoi_tutor_prop_score_miss
 soundalias,#hash_4049cea29ca612c
 soundalias,#hash_419e84642ebe554
@@ -1464,7 +1464,7 @@ soundalias,#hash_e2c49b972b2fcb5
 soundalias,#hash_e58fd33734ef828
 soundalias,#hash_e5e3a4161df1955
 soundalias,#hash_e5f50028d45ecce
-soundalias,#hash_e9079ea0995dab8
+soundalias,#amb_leaves
 soundalias,#hash_f2341c60812b833
 soundalias,#hash_f32d9de6827bf7d
 soundalias,#hash_f7960ad68ff0bbf
@@ -1528,7 +1528,7 @@ soundalias,#hash_1748d1d4950baec0
 soundalias,#hash_1752e44be2025f02
 soundalias,#hash_175668cc7f8f0a81
 soundalias,#hash_17703ae6bef33e98
-soundalias,#hash_179f3eb184c245d2
+soundalias,#amb_ocean
 soundalias,#hash_17b03792068cf144
 soundalias,#hash_17cbfbe10c912709
 soundalias,#vox_tvoi_tutor_prop_shoot_enemy_nag
@@ -1560,7 +1560,7 @@ soundalias,#hash_1b27529a48455c01
 soundalias,#hash_1b4d6140a6116370
 soundalias,#vox_tvoi_tutor_prop_wine_cellar_start
 soundalias,#hash_1b8a275555b47008
-soundalias,#hash_1b8f27099b3238ec
+soundalias,#dst_vegetable
 soundalias,#hash_1ba1ed4c5853209a
 soundalias,#hash_1c53966e25ac17ba
 soundalias,#hash_1cc5c6faf399d930
@@ -1587,7 +1587,7 @@ soundalias,#hash_1f61a8b39fda8c78
 soundalias,#hash_1f68fe10e820dcc7
 soundalias,#hash_1f9b1d980061ea0e
 soundalias,#hash_1f9c39a5eaf2d912
-soundalias,#hash_1ff8bec27dfc1b70
+soundalias,#dst_fern
 soundalias,#hash_200e28bcd26bab77
 soundalias,#hash_200e2ebcd26bb5a9
 soundalias,#hash_202745fce0c2bf4e
@@ -1773,7 +1773,7 @@ soundalias,#hash_3630fca8bd451791
 soundalias,#hash_36506c51f445c11f
 soundalias,#hash_36794b821becda02
 soundalias,#hash_368d93142ae0e4c7
-soundalias,#hash_36e4db7c2f82b692
+soundalias,#amb_pigeon
 soundalias,#hash_36e6411bb80e1122
 soundalias,#hash_36f3e562676f3397
 soundalias,#hash_37062430cfb198ad
@@ -1870,7 +1870,7 @@ soundalias,#vox_tvoi_tutor_prop_one_enemy_0
 soundalias,#hash_436a4f77c54e7912
 soundalias,#hash_438b930b61d96f77
 soundalias,#hash_438dac17f69b90a2
-soundalias,#hash_43ad48046fb206c8
+soundalias,#exp_veh_small
 soundalias,#fly_step_glass
 soundalias,#hash_43cfbbee98fb0071
 soundalias,#hash_43e5fc74ee2397ea
@@ -1903,7 +1903,7 @@ soundalias,#exp_veh_large
 soundalias,#hash_483d241cde025578
 soundalias,#hash_4846299866b4a63f
 soundalias,#hash_487be9ed2cd7cdc8
-soundalias,#hash_48bc31e222aa7c3e
+soundalias,#exp_barrel_fire
 soundalias,#hash_48d21bfdcf9505c9
 soundalias,#hash_4911efc2d23b684a
 soundalias,#hash_491b236cfd00f5ed
@@ -1966,7 +1966,7 @@ soundalias,#hash_4f8c480d8e8f07b6
 soundalias,#hash_4fce9427097656c3
 soundalias,#hash_4ff60fe70fad2082
 soundalias,#hash_4ffd8ac85d3a7cbb
-soundalias,#hash_501eff91f639c23e
+soundalias,#dst_glass_pane
 soundalias,#hash_5069ed8fdae493ce
 soundalias,#hash_506c492585e2647c
 soundalias,#hash_507ee72e801fdca5
@@ -2076,7 +2076,7 @@ soundalias,#hash_5d4c13574d1de8c8
 soundalias,#hash_5d4e7fb219f549c4
 soundalias,#vox_tvoi_tutor_prop_chain_group_stun
 soundalias,#hash_5d60f073828c5807
-soundalias,#hash_5d92aa3b12f242e5
+soundalias,#dst_fruit
 soundalias,#hash_5e1c0c27356fcc2e
 soundalias,#hash_5e2295608a08a9ad
 soundalias,#hash_5e275c3acf569fe3
@@ -2123,7 +2123,7 @@ soundalias,#hash_62f54761cea0b5ed
 soundalias,#hash_6309d4c5990804a1
 soundalias,#vox_tvoi_tutor_prop_chain_group_1
 soundalias,#vox_tvoi_tutor_prop_chain_group_0
-soundalias,#hash_633b9532cf0da169
+soundalias,#amb_flies
 soundalias,#hash_633bcc488ff36c4f
 soundalias,#hash_633ce1c4d50c2315
 soundalias,#hash_6360ef8ce9d3bb03
@@ -2187,7 +2187,7 @@ soundalias,#hash_69f9f3e122dbb898
 soundalias,#hash_6a176d61d23bca94
 soundalias,#hash_6a3a7714a2c454fb
 soundalias,#hash_6a7630ceba4f4fba
-soundalias,#hash_6a7bbff93ccc7ab7
+soundalias,#dst_luggage
 soundalias,#hash_6abe483482efa584
 soundalias,#hash_6af0eaa117d3fe32
 soundalias,#hash_6b56372df0bdb444
@@ -2205,7 +2205,7 @@ soundalias,#hash_6d4bf4b06eb5cef1
 soundalias,#hash_6d60852ef9ecfe86
 soundalias,#hash_6d8aafa1505e7010
 soundalias,#hash_6dadd9af1b59c7de
-soundalias,#hash_6db6d6489666f006
+soundalias,#pfx_spark_med
 soundalias,#hash_6dde5c8aa33d2cfd
 soundalias,#hash_6dec638aa349763e
 soundalias,#hash_6def88eed3270d4a
@@ -2253,7 +2253,7 @@ soundalias,#vox_tvoi_tutor_prop_final_event
 soundalias,#hash_74aeeb59d94a469d
 soundalias,#hash_74e5c4fe2c92169f
 soundalias,#hash_74f745cb4941bf7c
-soundalias,#hash_75037b4727f99cdb
+soundalias,#pfx_flies
 soundalias,#hash_7506ca720506dcf6
 soundalias,#hash_751825d60a8c23dc
 soundalias,#hash_75250cd5dd02c6c0
@@ -2369,7 +2369,7 @@ soundalias,#hash_7fe19ceed35907ce
 client_fx,#hash_c720ceb85f8d58
 client_fx,#hash_15df7a3c718102a
 client_fx,#hash_1dc451a16def3d6
-client_fx,#hash_22d7e11256f8590
+client_fx,#weapon/fx_trail_quad_rocket
 client_fx,#hash_255bae38528d46b
 client_fx,#explosions/fx8_exp_grenade_default
 client_fx,#hash_33771e94b2c2583
@@ -2442,9 +2442,9 @@ client_fx,#ui/fx_dom_marker_team_r90
 client_fx,#ui/fx_dom_cap_indicator_team_r120
 client_fx,#impacts/fx_bul_impact_heavy_body_fatal_exit
 client_fx,#hash_48da7ad5f87a2a1e
-client_fx,#hash_490e49ac20fe75af
+client_fx,#vehicle/fx_treadfx_asphalt_skid_emit
 client_fx,#hash_49a7a614c75cfdbf
-client_fx,#hash_4a06156e97cba4f7
+client_fx,#vehicle/fx_treadfx_snow_skid_emit
 client_fx,#hash_4b047008007a4310
 client_fx,#hash_4c04b62047703a60
 client_fx,#hash_4c24e997afad36e0
@@ -2456,7 +2456,7 @@ client_fx,#hash_521de69029125f63
 client_fx,#player/fx_plyr_footstep_dust_dirt
 client_fx,#hash_551605801a32aad2
 client_fx,#hash_57034716c105e41e
-client_fx,#hash_571f175f88ef5896
+client_fx,#vehicle/fx_treadfx_asphalt_peel
 client_fx,#hash_579249bb3e73d8c9
 client_fx,#hash_5821ea4cefbbfac9
 client_fx,#hash_586445f2c9a8db89
@@ -2464,7 +2464,7 @@ client_fx,#ui/fx_dom_marker_neutral_r90
 client_fx,#hash_59422cff58693587
 client_fx,#hash_5e4e366619beb3f4
 client_fx,#hash_5e849aa59b00bbb5
-client_fx,#hash_5f190015ac9ded95
+client_fx,#explosions/fx_exp_grenade_water
 client_fx,#hash_5f247e5ee77f7108
 client_fx,#impacts/fx_bul_impact_armor_head_nonfatal_exit
 client_fx,#hash_5fbdbf1783f703ae
@@ -2481,7 +2481,7 @@ client_fx,#hash_6954e0e694a1f8c6
 client_fx,#hash_6da8e3354673a4c0
 client_fx,#player/fx_plyr_land_dust_dirt_xlg
 client_fx,#hash_7240c9c35d80dab2
-client_fx,#hash_726e05c87d492b2b
+client_fx,#explosions/fx_exp_rocket_quadtank_default
 client_fx,#hash_72992d25d92b26ab
 client_fx,#hash_72b9f5d388cc7f57
 client_fx,#fire/fx_fire_ai_human_arm_left_loop
@@ -2497,7 +2497,7 @@ client_fx,#hash_7a2b64f7a1e28505
 client_fx,#hash_7a37324c1988abb5
 client_fx,#hash_7b0086164829ac0f
 client_fx,#hash_7b951deec27b35c1
-client_fx,#hash_7c74b4de1fe3447a
+client_fx,#weapon/fx_muz_veh_quad_rocket_3p
 client_fx,#ui/fx_dom_cap_indicator_neutral_r90
 client_fx,#hash_7c8eb8a0655e7382
 client_fx,#hash_7cced41e0b367ca6

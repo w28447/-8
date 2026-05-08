@@ -365,7 +365,7 @@ function private function_f02b0934( localclientnum, oldvalue, newvalue, bnewent,
     if ( isdefined( position ) && isdefined( angles ) )
     {
         playfx( localclientnum, level._effect[ #"fx8_blightfather_maggot_death_exp" ], position, anglestoforward( angles ), anglestoup( angles ) );
-        function_2a9101fe( localclientnum, #"hash_7867f8f9aaaa0c40", position );
+        function_2a9101fe( localclientnum, #"chaos_missile_damage", position );
     }
     
     earthquake( localclientnum, 0.4, 0.8, self.origin, 300 );
@@ -446,7 +446,7 @@ function function_958ba8d1( localclientnum, pos, surface, notetrack, bone )
 // Size: 0x13e
 function private function_2d7f68ab( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    if ( !self zm_utility::function_f8796df3( localclientnum ) )
+    if ( !self zm_utility::is_first_person( localclientnum ) )
     {
         return;
     }

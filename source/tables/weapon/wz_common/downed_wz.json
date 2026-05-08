@@ -2,7 +2,7 @@
     "name": "#downed_wz",
     "baseWeapon": "#downed",
     "displayname": "#weapon/noweapon",
-    "streamkey": "#hash_12b25ccaff4f9bee",
+    "streamkey": "#downed_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -41,8 +41,8 @@
     "fireRumble": "#defaultweapon_fire",
     "fx_bc8": "#hash_76e95841d9038476",
     "fx_bd0": "#hash_76e26c41d8fd87c4",
-    "fx_c80": "#hash_793002a7f8d0cfde",
-    "fx_c88": "#hash_793002a7f8d0cfde",
-    "fx_c90": "#hash_793002a7f8d0cfde",
-    "fx_c98": "#hash_793002a7f8d0cfde"
+    "fx_c80": "#weapon/fx_shellejects_rifle",
+    "fx_c88": "#weapon/fx_shellejects_rifle",
+    "fx_c90": "#weapon/fx_shellejects_rifle",
+    "fx_c98": "#weapon/fx_shellejects_rifle"
 }

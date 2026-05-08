@@ -1503,9 +1503,9 @@ function spawnspectator()
     println( "<dev string:x282>" );
     self detachall();
     
-    if ( isdefined( level.var_7abfc4ea ) )
+    if ( isdefined( level.custom_spectate_permissions ) )
     {
-        self [[ level.var_7abfc4ea ]]();
+        self [[ level.custom_spectate_permissions ]]();
     }
     else
     {
@@ -1634,9 +1634,9 @@ function spectator_respawn_player()
         {
             self.old_score = self.score;
             
-            if ( isdefined( level.var_cf66a6f6 ) )
+            if ( isdefined( level.spectator_respawn_custom_score ) )
             {
-                self [[ level.var_cf66a6f6 ]]();
+                self [[ level.spectator_respawn_custom_score ]]();
             }
             
             self.score = 1500;
@@ -1668,9 +1668,9 @@ function spectator_respawn()
     self setspectatepermissions( 0 );
     new_origin = undefined;
     
-    if ( isdefined( level.var_5816975b ) )
+    if ( isdefined( level.check_valid_spawn_override ) )
     {
-        new_origin = [[ level.var_5816975b ]]( self );
+        new_origin = [[ level.check_valid_spawn_override ]]( self );
     }
     
     if ( !isdefined( new_origin ) )
@@ -2406,14 +2406,14 @@ function player_damage_override( einflictor, eattacker, idamage, idflags, smeans
         return finaldamage;
     }
     
-    if ( isdefined( level.var_57cc29f3 ) && [[ level.var_57cc29f3 ]]( self ) )
+    if ( isdefined( level.check_end_game_override ) && [[ level.check_end_game_override ]]( self ) )
     {
         return finaldamage;
     }
     
     if ( getplayers().size == 1 && level flag::get( "solo_game" ) )
     {
-        if ( isdefined( level.var_fb697fca ) && [[ level.var_fb697fca ]]() )
+        if ( isdefined( level.check_end_solo_game_override ) && [[ level.check_end_solo_game_override ]]() )
         {
             return finaldamage;
         }

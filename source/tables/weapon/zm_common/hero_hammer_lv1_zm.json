@@ -39,7 +39,7 @@
     "sound810": "#hash_5fd68d0455a0b8",
     "tunables1": "#hero_hammer_lv1_tunables_zm",
     "cacWeaponXCam": "#hash_509b186bafdbb9d8",
-    "sharedWeaponSounds": "#hash_63f940e6edfe179f",
+    "sharedWeaponSounds": "#zm_hammer",
     "viewmodel": [
         "#wpn_t8_zm_melee_hammer_lvl1_view"
     ],

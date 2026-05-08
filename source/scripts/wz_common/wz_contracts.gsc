@@ -630,7 +630,7 @@ function private function_902ef0de( var_38280f2f, delta )
         
         if ( isdefined( level.contract_ids[ var_38280f2f ] ) )
         {
-            self luinotifyevent( #"hash_4b04b1cb4b3498d0", 2, level.contract_ids[ var_38280f2f ], new_progress );
+            self luinotifyevent( #"loot_contract_progress", 2, level.contract_ids[ var_38280f2f ], new_progress );
         }
     }
     
@@ -650,7 +650,7 @@ function private function_902ef0de( var_38280f2f, delta )
         
         if ( isdefined( level.contract_ids[ var_38280f2f ] ) )
         {
-            self luinotifyevent( #"hash_1739c4bd5baf83bc", 1, level.contract_ids[ var_38280f2f ] );
+            self luinotifyevent( #"loot_contract_complete", 1, level.contract_ids[ var_38280f2f ] );
         }
     }
     

@@ -259,7 +259,7 @@ end
 CoD.SocialUtility.PrimaryPresenceToLocalizedString = function ( f17_arg0 )
 	local f17_local0 = tonumber( f17_arg0 )
 	if f17_local0 == Enum.PresencePrimary[0xDB6E2B269A58541] then
-		return 0x72BB745FED1CD7E
+		return "menu/offline"
 	elseif f17_local0 == Enum.PresencePrimary[0xABAD15ABC044995] then
 		return 0x8E783C525F2FA8
 	elseif f17_local0 == Enum.PresencePrimary[0x44579D7D4E7C795] then
@@ -267,7 +267,7 @@ CoD.SocialUtility.PrimaryPresenceToLocalizedString = function ( f17_arg0 )
 	elseif f17_local0 == Enum.PresencePrimary[0x5BE7ACD6487188] then
 		return 0x8E783C525F2FA8
 	else
-		return 0x72BB745FED1CD7E
+		return "menu/offline"
 	end
 end
 

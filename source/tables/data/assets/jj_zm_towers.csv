@@ -36,7 +36,7 @@ localizeentry,d#hash_95c5021b448b56
 localizeentry,d#mpui/extclip_desc
 localizeentry,d#mpui/fmj_desc
 localizeentry,#hash_a3dbb8559be3c1
-localizeentry,d#hash_a43b10d9da121a
+localizeentry,d#menu/waiting_caps
 localizeentry,#hash_b74d61592e7deb
 localizeentry,#hash_b74e61592e7f9e
 localizeentry,#hash_b74f61592e8151
@@ -482,7 +482,7 @@ localizeentry,#hash_10f0155994b41648
 localizeentry,#hash_10f0175994b419ae
 localizeentry,#hash_10f0185994b41b61
 localizeentry,#hash_10f01a5994b41ec7
-localizeentry,d#hash_10f22a2fae6154a8
+localizeentry,d#mp/hold
 localizeentry,#hash_110075b9efe67cd0
 localizeentry,d#hash_11416e3dffba8d50
 localizeentry,d#mpui/mk
@@ -639,7 +639,7 @@ localizeentry,#hash_167e0e9799abfc32
 localizeentry,#hash_16864f32c9b0c9f8
 localizeentry,#hash_16865032c9b0cbab
 localizeentry,#hash_16865132c9b0cd5e
-localizeentry,d#hash_16b234cb46b5acd4
+localizeentry,d#menu/kills_caps
 localizeentry,#hash_16c738ef60d8ecfb
 localizeentry,#hash_16c73bef60d8f214
 localizeentry,#hash_16c73def60d8f57a
@@ -1299,7 +1299,7 @@ localizeentry,#hash_30645f592f3ec9e6
 localizeentry,#hash_30733dec2e9e228a
 localizeentry,d#mpui/ir_desc
 localizeentry,#hash_3083207742f405f6
-localizeentry,d#hash_309f6a17f45fceaf
+localizeentry,d#mpui/spectating
 localizeentry,#hash_30a8de8c86fd7103
 localizeentry,#hash_30d5fe23f37407f8
 localizeentry,#hash_30d60023f3740b5e
@@ -1625,7 +1625,7 @@ localizeentry,#hash_3d40b082af4df7d7
 localizeentry,#hash_3d40b182af4df98a
 localizeentry,#hash_3d40b282af4dfb3d
 localizeentry,d#hash_3d75c0876757457c
-localizeentry,d#hash_3d7abb3373fab887
+localizeentry,d#zmui/suppressor_desc
 localizeentry,#hash_3d815532a2701b66
 localizeentry,#hash_3d9bd608095e85db
 localizeentry,#hash_3d9bd908095e8af4
@@ -1703,7 +1703,7 @@ localizeentry,#hash_40120a7c7f90fb60
 localizeentry,#hash_40120c7c7f90fec6
 localizeentry,#hash_4012117c7f910745
 localizeentry,d#hash_40388f79ccbf7b9f
-localizeentry,d#hash_404ef66575ddb929
+localizeentry,d#mpui/max_caps
 localizeentry,#hash_4050d86f7b851080
 localizeentry,#hash_4050dd6f7b8518ff
 localizeentry,#hash_4050de6f7b851ab2
@@ -1839,7 +1839,7 @@ localizeentry,#hash_45edcec1280f1188
 localizeentry,#hash_45edd0c1280f14ee
 localizeentry,#hash_45edd1c1280f16a1
 localizeentry,#hash_45edd3c1280f1a07
-localizeentry,d#hash_45f407bc037861dc
+localizeentry,d#options/advanced
 localizeentry,#hash_45f408d6567728b8
 localizeentry,#hash_45f409d656772a6b
 localizeentry,#hash_45f40bd656772dd1
@@ -1999,7 +1999,7 @@ localizeentry,#hash_4bbf4fb5191bc646
 localizeentry,#hash_4bbf50b5191bc7f9
 localizeentry,#hash_4bbf52b5191bcb5f
 localizeentry,#hash_4bc12bb6c0fffa7a
-localizeentry,d#hash_4bdc72ede1ba196c
+localizeentry,d#zombie/grab_shield_sword_keyboard
 localizeentry,#hash_4be0a28338d0f515
 localizeentry,#hash_4bfce3ae7bffb456
 localizeentry,#hash_4bfce5ae7bffb7bc
@@ -2763,7 +2763,7 @@ localizeentry,#hash_66dd8092d1275de7
 localizeentry,#hash_66dd8292d127614d
 localizeentry,#hash_66ee5ad3ac20f16f
 localizeentry,#hash_6704cebfda47a5c9
-localizeentry,d#hash_671f3c19c61b5923
+localizeentry,d#zombie/repair_shield_sword_keyboard
 localizeentry,#hash_672d02ad4ef34cf1
 localizeentry,d#mpui/stalker2
 localizeentry,#hash_67563af6081b3998
@@ -2857,7 +2857,7 @@ localizeentry,#hash_6a73ef7328c30e98
 localizeentry,#hash_6a73f07328c3104b
 localizeentry,#hash_6a73f17328c311fe
 localizeentry,#hash_6a73f67328c31a7d
-localizeentry,d#hash_6a75180bc7fda8f5
+localizeentry,d#menu/score_caps
 localizeentry,#hash_6a84ba6233fee79a
 localizeentry,#hash_6a8f79b7ce871510
 localizeentry,#hash_6a8f7ab7ce8716c3
@@ -3039,7 +3039,7 @@ localizeentry,#hash_7066eaa045cae4c1
 localizeentry,#hash_7066eba045cae674
 localizeentry,#hash_7066eca045cae827
 localizeentry,#hash_7066eda045cae9da
-localizeentry,d#hash_7085044e7b80d5a3
+localizeentry,d#mpui/reticle_default
 localizeentry,#hash_709551ec96f95f9b
 localizeentry,#hash_709552ec96f9614e
 localizeentry,#hash_709553ec96f96301
@@ -3204,7 +3204,7 @@ localizeentry,#hash_77629884d53592e6
 localizeentry,#hash_77629a84d535964c
 localizeentry,#hash_77629b84d53597ff
 localizeentry,#hash_77629d84d5359b65
-localizeentry,d#hash_778d439e1b360368
+localizeentry,d#menu/back_caps
 localizeentry,#hash_779d9f463224daa8
 localizeentry,#hash_779da4463224e327
 localizeentry,#hash_779da5463224e4da

@@ -43,7 +43,7 @@
     "sound810": "#hash_5fd68d0455a0b8",
     "tunables1": "#hero_scepter_lv1_tunables_mp",
     "cacWeaponXCam": "#hash_1a3262e868e5cbac",
-    "sharedWeaponSounds": "#hash_3945a907c95c5ac9",
+    "sharedWeaponSounds": "#zm_scepter",
     "viewmodel": [
         "#wpn_t8_zm_melee_staff_ra_lvl1_view"
     ],

@@ -1687,7 +1687,7 @@ function private function_14c766b3( planner, constant )
     var_f75536ec = !hasplayers || target[ #"strategy" ].( "companionsinteractions" ) == #"first come first served";
     airvehicles = strategiccommandutility::function_698a5382( target[ #"strategy" ] );
     groundvehicles = strategiccommandutility::function_54032f13( target[ #"strategy" ] );
-    var_eda803e5 = groundvehicles;
+    onfoot = groundvehicles;
     validsquads = [];
     
     foreach ( squad in possiblesquads )
@@ -1723,7 +1723,7 @@ function private function_14c766b3( planner, constant )
                 break;
             }
             
-            if ( var_eda803e5 && member[ #"type" ] == "bot" )
+            if ( onfoot && member[ #"type" ] == "bot" )
             {
                 validsquads[ validsquads.size ] = squad;
                 break;

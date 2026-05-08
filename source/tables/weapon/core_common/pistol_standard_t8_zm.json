@@ -70,7 +70,7 @@
     "weaponCamo": "#hash_263bdc3da119f9bc",
     "cacWeaponXCam": "#ui_cam_cac_pistol_standard",
     "cacAttachmentsXCam": "#ui_cam_cac_pistol_standard",
-    "weaponIconXCam": "#hash_642584bd33a7bcef",
+    "weaponIconXCam": "#ui_cam_icon_pistol_standard",
     "attachments": [
         "#hash_f459a0af8e8f912b"
     ],
@@ -78,7 +78,7 @@
         "#hash_5dfb5793aa787d8d"
     ],
     "sharedWeaponSounds": "#pistol",
-    "ballisticDesc": "#hash_7a8de762a01fac90",
+    "ballisticDesc": "#9mm_fmj",
     "tracers": [
         "#hash_1cbad1eae7ceaf2c",
         "#hash_4627e8ce4cc5b8fb"
@@ -111,8 +111,8 @@
     "fx_c88": "#hash_a5567d0168ae02f",
     "fx_c90": "#hash_d185de6377a14df",
     "fx_c98": "#hash_a5567d0168ae02f",
-    "normalImpactFX": "#hash_61b4c700060ee40c",
-    "exitImpactFX": "#hash_3b4b1d145ec9892",
+    "normalImpactFX": "#bullet_small_enter",
+    "exitImpactFX": "#bullet_small_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_50191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

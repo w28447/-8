@@ -12597,7 +12597,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_1022ae0884bf3b3f",
+                    "value": "#amb_chicken_1",
                     "unk1a": true
                 },
                 {
@@ -12663,7 +12663,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_1022af0884bf3cf2",
+                    "value": "#amb_chicken_2",
                     "unk1a": true
                 },
                 {
@@ -23463,7 +23463,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3dafc6f07b5d5ab4",
+                    "value": "#amb_flagpole",
                     "unk1a": true
                 },
                 {
@@ -23529,7 +23529,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3dafc6f07b5d5ab4",
+                    "value": "#amb_flagpole",
                     "unk1a": true
                 },
                 {
@@ -24123,7 +24123,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3bb4920371c60083",
+                    "value": "#amb_restaurant",
                     "unk1a": true
                 },
                 {
@@ -25041,7 +25041,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77729e870046c56c",
+                    "value": "#amb_snake",
                     "unk1a": true
                 },
                 {
@@ -25113,7 +25113,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77729e870046c56c",
+                    "value": "#amb_snake",
                     "unk1a": true
                 },
                 {
@@ -25185,7 +25185,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77729e870046c56c",
+                    "value": "#amb_snake",
                     "unk1a": true
                 },
                 {
@@ -25263,7 +25263,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3bb4920371c60083",
+                    "value": "#amb_restaurant",
                     "unk1a": true
                 },
                 {
@@ -25467,7 +25467,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77729e870046c56c",
+                    "value": "#amb_snake",
                     "unk1a": true
                 },
                 {
@@ -25539,7 +25539,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77729e870046c56c",
+                    "value": "#amb_snake",
                     "unk1a": true
                 },
                 {
@@ -25611,7 +25611,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77729e870046c56c",
+                    "value": "#amb_snake",
                     "unk1a": true
                 },
                 {
@@ -25683,7 +25683,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77729e870046c56c",
+                    "value": "#amb_snake",
                     "unk1a": true
                 },
                 {
@@ -25755,7 +25755,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77729e870046c56c",
+                    "value": "#amb_snake",
                     "unk1a": true
                 },
                 {
@@ -25827,7 +25827,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77729e870046c56c",
+                    "value": "#amb_snake",
                     "unk1a": true
                 },
                 {
@@ -25899,7 +25899,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77729e870046c56c",
+                    "value": "#amb_snake",
                     "unk1a": true
                 },
                 {
@@ -25971,7 +25971,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77729e870046c56c",
+                    "value": "#amb_snake",
                     "unk1a": true
                 },
                 {
@@ -27891,7 +27891,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_eb5bffa1c857b20",
+                    "value": "#amb_parrot_1",
                     "unk1a": true
                 },
                 {
@@ -27957,7 +27957,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_eb5c2fa1c858039",
+                    "value": "#amb_parrot_2",
                     "unk1a": true
                 },
                 {

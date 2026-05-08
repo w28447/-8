@@ -3466,7 +3466,7 @@ function use_object_prox_think()
                 {
                     if ( isdefined( self.autodecaytime ) && self.autodecaytime > 0 && self.curprogress > 0 )
                     {
-                        self.curprogress -= level.var_9fee970c * self.usetime / int( self.autodecaytime * 1000 );
+                        self.curprogress -= level.framemsec * self.usetime / int( self.autodecaytime * 1000 );
                         deltaprogress = self.curprogress - previousprogress;
                         function_72307b09( deltaprogress );
                         self update_current_progress();
@@ -3511,7 +3511,7 @@ function use_object_prox_think()
                         decayscale = self.usetime / self.decaytime;
                     }
                     
-                    self.curprogress -= level.var_9fee970c * self.userate * decayscale;
+                    self.curprogress -= level.framemsec * self.userate * decayscale;
                     deltaprogress = self.curprogress - previousprogress;
                     function_72307b09( deltaprogress );
                     
@@ -3581,19 +3581,19 @@ function use_object_prox_think()
                 else
                 {
                     self.inuse = 1;
-                    self.curprogress += level.var_9fee970c * self.userate;
+                    self.curprogress += level.framemsec * self.userate;
                     deltaprogress = self.curprogress - previousprogress;
                     function_72307b09( deltaprogress );
                     self update_current_progress();
                     
                     if ( isdefined( self.onuseupdate ) )
                     {
-                        self [[ self.onuseupdate ]]( self get_claim_team(), self.curprogress / self.usetime, level.var_9fee970c * self.userate / self.usetime );
+                        self [[ self.onuseupdate ]]( self get_claim_team(), self.curprogress / self.usetime, level.framemsec * self.userate / self.usetime );
                     }
                     
                     if ( isdefined( self.var_ff74c7e9 ) )
                     {
-                        self [[ self.var_ff74c7e9 ]]( self get_claim_team(), self.curprogress / self.usetime, level.var_9fee970c * self.userate / self.usetime );
+                        self [[ self.var_ff74c7e9 ]]( self get_claim_team(), self.curprogress / self.usetime, level.framemsec * self.userate / self.usetime );
                     }
                 }
             }
@@ -4685,7 +4685,7 @@ function use_hold_think_loop( player )
             }
             
             previousprogress = self.curprogress;
-            self.curprogress += level.var_9fee970c * self.userate * playerusemultiplier;
+            self.curprogress += level.framemsec * self.userate * playerusemultiplier;
             deltaprogress = self.curprogress - previousprogress;
             
             if ( isdefined( self.var_5c196da4 ) && self.var_5c196da4 && isdefined( self.var_1dbb2b2b ) )

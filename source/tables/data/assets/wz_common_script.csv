@@ -1,5 +1,5 @@
 type,name
-xanim,#hash_30f155e0781100
+xanim,#vm_door_interact
 xanim,#hash_34d80583649401d
 xanim,#hash_3f397422b25f6b6
 xanim,d#pt_bow_prone_flashed_loop
@@ -490,7 +490,7 @@ gesture,#hash_10a3bc4879220f8a
 gesture,d#hash_202583ee04b1cae2
 gesture,#ges_grab
 gesture,d#hash_2bfc8a1e1322e056
-gesture,#hash_3c5a2eda5dad80ca
+gesture,#ges_door_interact
 gesture,d#hash_419f11534af12a76
 gesture,#hash_4509a374ea7d4ff7
 gesture,#hash_4590790b4c08d9ce

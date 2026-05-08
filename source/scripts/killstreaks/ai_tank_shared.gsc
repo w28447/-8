@@ -83,7 +83,7 @@ function init_shared( bundlename )
             remote_weapons::registerremoteweapon( "killstreak_ai_tank", #"hash_747fc4429380f380", &starttankremotecontrol, &endtankremotecontrol, 1 );
         }
         
-        level.var_66e94ad5 = bundle.ksweapon;
+        level.tankrobotweapon = bundle.ksweapon;
         level.ai_tank_damage_fx = "killstreaks/fx8_drone_tank_damage_state";
         level.ai_tank_explode_fx = "killstreaks/fx8_agr_explosion";
         level.ai_tank_crate_explode_fx = "killstreaks/fx8_agr_drop_box";
@@ -177,7 +177,7 @@ function function_127fb8f3( mantis, attackingplayer )
 // Size: 0x12c
 function on_player_spawned()
 {
-    if ( isdefined( level.var_66e94ad5 ) && !self hasweapon( level.var_66e94ad5 ) )
+    if ( isdefined( level.tankrobotweapon ) && !self hasweapon( level.tankrobotweapon ) )
     {
         self clientfield::set_player_uimodel( "hudItems.tankState", 0 );
     }
@@ -2884,7 +2884,7 @@ function tank_death_think( hardpointname )
     
     if ( isdefined( self.owner ) )
     {
-        self.owner ability_player::function_f2250880( level.var_66e94ad5, var_4dd90b81 );
+        self.owner ability_player::function_f2250880( level.tankrobotweapon, var_4dd90b81 );
     }
     
     if ( not_abandoned )

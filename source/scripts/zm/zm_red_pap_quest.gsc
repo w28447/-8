@@ -878,11 +878,11 @@ function function_47c8324c()
 // Size: 0x90
 function function_5c833a16()
 {
-    level endon( #"hash_3a69eb760c3b12e7", #"hash_32ff7a456732ef09" );
+    level endon( #"pegasus_spooked", #"hash_32ff7a456732ef09" );
     self val::set( "pegasus", "takedamage", 1 );
     self.health = 99999;
     self waittill( #"damage" );
-    level notify( #"hash_3a69eb760c3b12e7" );
+    level notify( #"pegasus_spooked" );
 }
 
 // Namespace zm_red_pap_quest/zm_red_pap_quest
@@ -891,7 +891,7 @@ function function_5c833a16()
 // Size: 0x118
 function function_4710f794()
 {
-    level endon( #"hash_3a69eb760c3b12e7", #"hash_32ff7a456732ef09" );
+    level endon( #"pegasus_spooked", #"hash_32ff7a456732ef09" );
     
     while ( true )
     {
@@ -899,7 +899,7 @@ function function_4710f794()
         {
             if ( distance2dsquared( self.origin, player.origin ) <= 200 * 200 && !level flag::get( #"hash_3764b0cb106568ec" ) )
             {
-                level notify( #"hash_3a69eb760c3b12e7" );
+                level notify( #"pegasus_spooked" );
             }
         }
         
@@ -1008,7 +1008,7 @@ function function_551b832a()
 // Size: 0x17c
 function function_22d235ee( mdl_pegasus )
 {
-    level endon( #"hash_3a69eb760c3b12e7", #"hash_32ff7a456732ef09" );
+    level endon( #"pegasus_spooked", #"hash_32ff7a456732ef09" );
     
     while ( true )
     {
@@ -1029,7 +1029,7 @@ function function_22d235ee( mdl_pegasus )
         {
             level thread function_9cb4723( mdl_pegasus, player );
             iprintlnbold( "Pegasus was spooked..." );
-            level notify( #"hash_3a69eb760c3b12e7" );
+            level notify( #"pegasus_spooked" );
         }
         
         wait 0.1;
@@ -1082,7 +1082,7 @@ function function_9cb4723( mdl_pegasus, e_player )
 // Size: 0x9a
 function function_fc4357b9()
 {
-    level endon( #"hash_3a69eb760c3b12e7", #"hash_32ff7a456732ef09" );
+    level endon( #"pegasus_spooked", #"hash_32ff7a456732ef09" );
     level flag::wait_till( #"hash_148f48be55e871df" );
     level.var_7dab4a52.mdl_pegasus = self;
     level.var_7dab4a52.var_4ee9f69c = self thread zm_unitrigger::create( &function_99fbe723, 96, &function_2bcbbab7 );
@@ -1110,7 +1110,7 @@ function function_99fbe723( e_player )
 // Size: 0xe0
 function function_2bcbbab7()
 {
-    level endon( #"hash_3a69eb760c3b12e7" );
+    level endon( #"pegasus_spooked" );
     
     while ( true )
     {
@@ -1745,11 +1745,11 @@ function function_8c5f16dd()
 function function_52d5c4ed()
 {
     level flag::wait_till( #"hash_7943879f3be8ccc6" );
-    var_55592d5a = struct::get_array( "dark_side_intermission" );
+    a_s_intermission = struct::get_array( "dark_side_intermission" );
     
-    foreach ( var_a5c966d0 in var_55592d5a )
+    foreach ( s_intermission in a_s_intermission )
     {
-        var_a5c966d0.targetname = "intermission";
+        s_intermission.targetname = "intermission";
     }
 }
 
@@ -2340,7 +2340,7 @@ function function_23f28dd1( var_5ea5c94d )
 {
     level.zm_bgb_anywhere_but_here_validation_override = &function_d420d273;
     level thread function_a2b76316();
-    level thread function_951bdb49();
+    level thread one_way_blocker();
     level thread function_20bd10b1();
     level thread function_c395d209();
     level thread function_da5ce34c();
@@ -2945,7 +2945,7 @@ function function_deb1409b( var_b40c658f )
 // Params 0
 // Checksum 0xa5e93d68, Offset: 0x9df8
 // Size: 0x120
-function function_951bdb49()
+function one_way_blocker()
 {
     level endon( #"egg_free" );
     t_pap = getent( "trigger_pap_defend", "targetname" );
@@ -3261,8 +3261,8 @@ function function_df55fcc8( e_player )
     if ( can_use )
     {
         str = self.stub.blueprint.var_391591d0;
-        var_e7ed2264 = self.stub.blueprint.var_391591d0 + "_KEYBOARD";
-        hint_str = zm_utility::function_d6046228( str, var_e7ed2264 );
+        str_pc = self.stub.blueprint.var_391591d0 + "_KEYBOARD";
+        hint_str = zm_utility::function_d6046228( str, str_pc );
         self sethintstring( hint_str );
     }
     else

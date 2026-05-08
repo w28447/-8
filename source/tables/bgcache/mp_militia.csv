@@ -267,7 +267,7 @@ soundalias,#hash_21d849eee4d897a
 soundalias,#hash_238170c19d279f5
 soundalias,#hash_2904437d186593d
 soundalias,#hash_31f777916298d72
-soundalias,#hash_38c96854fb0017e
+soundalias,#dst_typewriter
 soundalias,#hash_419e84642ebe554
 soundalias,#hash_55faa40126d5c75
 soundalias,#hash_61dd52d4366a2f2
@@ -276,7 +276,7 @@ soundalias,#hash_6799f17d17bd52a
 soundalias,#hash_679a117d17bd890
 soundalias,#hash_680a1ca45380de2
 soundalias,#hash_82d8fc262fa2602
-soundalias,#hash_884605942f40c49
+soundalias,#amb_piano
 soundalias,#hash_8ef0ca7881f8aab
 soundalias,#hash_a701893a7d70ea0
 soundalias,#hash_a703693a7d7419a
@@ -299,11 +299,11 @@ soundalias,#hash_18415c9fcb014150
 soundalias,#exp_barrel
 soundalias,#hash_1a6485b96677518d
 soundalias,#hash_1f9b1d980061ea0e
-soundalias,#hash_1ff8bec27dfc1b70
+soundalias,#dst_fern
 soundalias,#hash_200e28bcd26bab77
 soundalias,#hash_200e2ebcd26bb5a9
 soundalias,#hash_208f0fa01c042df2
-soundalias,#hash_2131ca73e1f61068
+soundalias,#amb_crows
 soundalias,#hash_2149db0c502305e3
 soundalias,#amb_radio
 soundalias,#hash_2250c1fa4b3ba63b
@@ -344,7 +344,7 @@ soundalias,#hash_37c743e9c473ebb5
 soundalias,#hash_3b66638c6f40e4d3
 soundalias,#hash_3b66818c6f4117cd
 soundalias,#hash_3b6983b084cfef53
-soundalias,#hash_3dafc6f07b5d5ab4
+soundalias,#amb_flagpole
 soundalias,#hash_3e8d3aaeefef07ac
 soundalias,#hash_3e8d50aeefef2d0e
 soundalias,#hash_3f8d713abf4d10fe
@@ -352,14 +352,14 @@ soundalias,#amb_generator
 soundalias,#hash_436a4f77c54e7912
 soundalias,#hash_438b930b61d96f77
 soundalias,#hash_438dac17f69b90a2
-soundalias,#hash_43ad48046fb206c8
+soundalias,#exp_veh_small
 soundalias,#hash_456af38afaef9d77
 soundalias,#hash_456af98afaefa7a9
 soundalias,#hash_459666269654d8ae
 soundalias,#amb_fireplace
 soundalias,#hash_47a7dd1007c11019
 soundalias,#exp_veh_large
-soundalias,#hash_48bc31e222aa7c3e
+soundalias,#exp_barrel_fire
 soundalias,#hash_499a124f56b6f71b
 soundalias,#hash_49c9469bc1131198
 soundalias,#hash_4a9fb6e1d5d277b9
@@ -376,7 +376,7 @@ soundalias,#amb_tarp
 soundalias,#hash_4de7460fa310be07
 soundalias,#hash_4ec5a3e02263fc0e
 soundalias,#hash_4f8c480d8e8f07b6
-soundalias,#hash_501eff91f639c23e
+soundalias,#dst_glass_pane
 soundalias,#hash_5241882a79fff7a3
 soundalias,#hash_5290e69e5616b714
 soundalias,#dst_server
@@ -407,7 +407,7 @@ soundalias,#hash_60c935d4c50a3d7d
 soundalias,#hash_6237abae59de3cd8
 soundalias,#hash_6237aeae59de41f1
 soundalias,#hash_62a278281295d8ad
-soundalias,#hash_633b9532cf0da169
+soundalias,#amb_flies
 soundalias,#hash_65337304c8c7b0cd
 soundalias,#hash_663899d42687914d
 soundalias,#exp_incindiary_large
@@ -416,7 +416,7 @@ soundalias,#hash_68b8beb0257da073
 soundalias,#hash_68d529ce159011b5
 soundalias,#hash_69171084c619ee33
 soundalias,#hash_69f9f3e122dbb898
-soundalias,#hash_6a7bbff93ccc7ab7
+soundalias,#dst_luggage
 soundalias,#hash_6abe483482efa584
 soundalias,#hash_6af73c283c5b4141
 soundalias,#hash_6c5be5a0764e1e3c
@@ -428,7 +428,7 @@ soundalias,#hash_72c7dfc9ed03a89b
 soundalias,#hash_73279fba4bb9ec56
 soundalias,#hash_7332c548b8e60625
 soundalias,#hash_7332d748b8e624bb
-soundalias,#hash_754f29a1beebec07
+soundalias,#amb_woodpecker
 soundalias,#hash_769349278778002d
 soundalias,#hash_76e527de2e37948f
 soundalias,#hash_772e5e60d6a5e4e1

@@ -893,11 +893,11 @@ function turn_gadget_on( slot, weapon )
     {
         if ( weapon.name == #"gadget_health_regen" )
         {
-            var_f8e6b703 = self match_record::get_player_stat( #"hash_ec4aea1a8bbd82" );
+            current_life_index = self match_record::get_player_stat( #"current_life_index" );
             
-            if ( isdefined( var_f8e6b703 ) )
+            if ( isdefined( current_life_index ) )
             {
-                self match_record::inc_stat( #"lives", var_f8e6b703, #"hash_2380fc76594e930d", 1 );
+                self match_record::inc_stat( #"lives", current_life_index, #"hash_2380fc76594e930d", 1 );
             }
         }
         else
@@ -924,7 +924,7 @@ function turn_gadget_on( slot, weapon )
     if ( sessionmodeismultiplayergame() )
     {
         mpheropowerevents = { #spawnid:getplayerspawnid( self ), #gametime:function_f8d53445(), #name:self._gadgets_player[ slot ].name, #powerstate:"activated", #playername:self.name, #xuid:xuid };
-        function_92d1707f( #"hash_2d561b2f8bbe1aac", mpheropowerevents );
+        function_92d1707f( #"dlog_event_mpheropowerevents", mpheropowerevents );
     }
     
     if ( isdefined( level.playgadgetactivate ) )
@@ -1011,7 +1011,7 @@ function turn_gadget_off( slot, weapon )
     if ( sessionmodeismultiplayergame() )
     {
         mpheropowerevents = { #spawnid:getplayerspawnid( self ), #gametime:function_f8d53445(), #name:self._gadgets_player[ slot ].name, #powerstate:"expired", #playername:self.name, #xuid:xuid };
-        function_92d1707f( #"hash_2d561b2f8bbe1aac", mpheropowerevents );
+        function_92d1707f( #"dlog_event_mpheropowerevents", mpheropowerevents );
     }
     
     if ( isdefined( level.oldschool ) && level.oldschool )
@@ -1251,11 +1251,11 @@ function gadget_ready( slot, weapon )
     {
         if ( weapon.name == #"gadget_health_regen" )
         {
-            var_f8e6b703 = self match_record::get_player_stat( #"hash_ec4aea1a8bbd82" );
+            current_life_index = self match_record::get_player_stat( #"current_life_index" );
             
-            if ( isdefined( var_f8e6b703 ) )
+            if ( isdefined( current_life_index ) )
             {
-                self match_record::inc_stat( #"lives", var_f8e6b703, #"hash_656f3981134db095", 1 );
+                self match_record::inc_stat( #"lives", current_life_index, #"health_regen_earned_count", 1 );
             }
         }
         else
@@ -1273,7 +1273,7 @@ function gadget_ready( slot, weapon )
     if ( sessionmodeismultiplayergame() )
     {
         mpheropowerevents = { #spawnid:getplayerspawnid( self ), #gametime:function_f8d53445(), #name:self._gadgets_player[ slot ].name, #powerstate:"ready", #playername:self.name, #xuid:xuid };
-        function_92d1707f( #"hash_2d561b2f8bbe1aac", mpheropowerevents );
+        function_92d1707f( #"dlog_event_mpheropowerevents", mpheropowerevents );
     }
     
     if ( isdefined( type ) && isdefined( level._gadgets_level[ type ] ) && isdefined( level._gadgets_level[ type ].on_ready ) )

@@ -426,7 +426,7 @@ class csceneplayer : csceneobject
         #/
         
         player notify( #"hash_7ba9e3058f933eb" );
-        player.var_c3a79d20 = undefined;
+        player.disable_last_stand = undefined;
         player.scene_set_visible_time = level.time;
         player setvisibletoall();
         player val::reset( #"scene", "hide" );
@@ -891,7 +891,7 @@ class csceneplayer : csceneobject
             return 0;
         }
         
-        if ( player flagsys::get( #"hash_6ce14241f77af1e7" ) && !( isdefined( var_ec50a0d3.var_441cbab8 ) && var_ec50a0d3.var_441cbab8 ) && var_966ea21d )
+        if ( player flagsys::get( #"hash_6ce14241f77af1e7" ) && !( isdefined( var_ec50a0d3.disablecombat ) && var_ec50a0d3.disablecombat ) && var_966ea21d )
         {
             return "combat";
         }
@@ -1006,7 +1006,7 @@ class csceneplayer : csceneobject
         player.player_anim_clamp_left = isdefined( player.player_anim_clamp_left ) ? player.player_anim_clamp_left : 75;
         player.player_anim_clamp_top = isdefined( player.player_anim_clamp_top ) ? player.player_anim_clamp_top : 180;
         player.player_anim_clamp_bottom = isdefined( player.player_anim_clamp_bottom ) ? player.player_anim_clamp_bottom : 60;
-        player.var_c3a79d20 = 1;
+        player.disable_last_stand = 1;
         thread function_bd3a7030( player, var_ec50a0d3.var_9532f6db );
         _str_current_anim = csceneobject::get_animation_name( _str_shot );
         
@@ -1128,7 +1128,7 @@ class csceneplayer : csceneobject
                     return;
                 }
             }
-            else if ( result === "combat" && !( isdefined( var_ec50a0d3.var_441cbab8 ) && var_ec50a0d3.var_441cbab8 ) )
+            else if ( result === "combat" && !( isdefined( var_ec50a0d3.disablecombat ) && var_ec50a0d3.disablecombat ) )
             {
                 if ( isarray( player.var_8826a030 ) && player.var_8826a030.size )
                 {

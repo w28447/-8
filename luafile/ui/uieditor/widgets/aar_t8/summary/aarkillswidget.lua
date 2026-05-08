@@ -18,7 +18,7 @@ CoD.AARKillsWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local KillsLabel = LUI.UIText.new( 0, 0, 18, 311, 0, 0, 12, 33 )
 	KillsLabel:setRGB( ColorSet.PlayerYellow.r, ColorSet.PlayerYellow.g, ColorSet.PlayerYellow.b )
 	KillsLabel:setAlpha( 0.2 )
-	KillsLabel:setText( Engine[0xF9F1239CFD921FE]( 0xFF67B9A8F997AB9 ) )
+	KillsLabel:setText( Engine[0xF9F1239CFD921FE]( "aar/kills" ) )
 	KillsLabel:setTTF( "dinnext_regular" )
 	KillsLabel:setLetterSpacing( 2 )
 	KillsLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

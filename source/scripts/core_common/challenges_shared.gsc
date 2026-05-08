@@ -1017,21 +1017,21 @@ function function_90185171( totaltimeplayed, credits, casexp )
                 credits *= var_91503b6f;
             }
             
-            var_1ed920ee = 0;
+            creditcap = 0;
             var_5f508856 = 0;
             
             if ( sessionmodeismultiplayergame() )
             {
-                var_1ed920ee = getdvarint( #"hash_3bccd5b062faadee", 1000 );
+                creditcap = getdvarint( #"hash_3bccd5b062faadee", 1000 );
                 var_5f508856 = getdvarint( #"hash_3ded794ceefdb21d", 1000 );
             }
             else if ( sessionmodeiswarzonegame() )
             {
-                var_1ed920ee = getdvarint( #"hash_3be0d3b0630b5392", 1000 );
+                creditcap = getdvarint( #"hash_3be0d3b0630b5392", 1000 );
                 var_5f508856 = getdvarint( #"hash_3e456f4cef4816f5", 1000 );
             }
             
-            credits = min( credits, var_1ed920ee );
+            credits = min( credits, creditcap );
             casexp = min( casexp, var_5f508856 );
             modeindex = 1;
             

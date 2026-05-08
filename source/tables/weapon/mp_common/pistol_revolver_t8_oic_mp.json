@@ -1,6 +1,6 @@
 {
     "name": "#pistol_revolver_t8_oic_mp",
-    "baseWeapon": "#hash_28ef66b2169943cb",
+    "baseWeapon": "#pistol_revolver_t8_oic",
     "displayname": "#weapon/pistol_revolver_t8",
     "xhash_60": "#hash_51d759b1e1a1e610",
     "streamkey": "#hash_50d269de0e271839",

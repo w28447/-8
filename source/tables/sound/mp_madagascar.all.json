@@ -156,13 +156,13 @@
         {
             "value": 17,
             "next": 42,
-            "name": "#hash_1022ae0884bf3b3f",
+            "name": "#amb_chicken_1",
             "sequence": 0,
             "cullDistance": 1600,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1022ae0884bf3b3f",
+                    "name": "#amb_chicken_1",
                     "assetId": "#hash_3d6740e3e82e6034",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -205,13 +205,13 @@
         {
             "value": 82,
             "next": 65535,
-            "name": "#hash_1022af0884bf3cf2",
+            "name": "#amb_chicken_2",
             "sequence": 0,
             "cullDistance": 1600,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1022af0884bf3cf2",
+                    "name": "#amb_chicken_2",
                     "assetId": "#hash_2dc7927623444745",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -762,13 +762,13 @@
         {
             "value": 34,
             "next": 65535,
-            "name": "#hash_3dafc6f07b5d5ab4",
+            "name": "#amb_flagpole",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3dafc6f07b5d5ab4",
+                    "name": "#amb_flagpole",
                     "assetId": "#amb/environment/wind/flagpole/amb_wind_flagpole_loop_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -811,13 +811,13 @@
         {
             "value": 98,
             "next": 156,
-            "name": "#hash_633b9532cf0da169",
+            "name": "#amb_flies",
             "sequence": 0,
             "cullDistance": 350,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_633b9532cf0da169",
+                    "name": "#amb_flies",
                     "assetId": "#amb/animals/insects/flies/flies_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -856,7 +856,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_633b9532cf0da169",
+                    "name": "#amb_flies",
                     "assetId": "#amb/animals/insects/flies/flies_02.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -3153,13 +3153,13 @@
         {
             "value": 94,
             "next": 65535,
-            "name": "#hash_eb5bffa1c857b20",
+            "name": "#amb_parrot_1",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_eb5bffa1c857b20",
+                    "name": "#amb_parrot_1",
                     "assetId": "#amb/animals/birds/parrots/shop/parrots_shop_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -3202,13 +3202,13 @@
         {
             "value": 54,
             "next": 65535,
-            "name": "#hash_eb5c2fa1c858039",
+            "name": "#amb_parrot_2",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_eb5c2fa1c858039",
+                    "name": "#amb_parrot_2",
                     "assetId": "#amb/animals/birds/parrots/shop/parrots_shop_01.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -3534,13 +3534,13 @@
         {
             "value": 122,
             "next": 65535,
-            "name": "#hash_3bb4920371c60083",
+            "name": "#amb_restaurant",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3bb4920371c60083",
+                    "name": "#amb_restaurant",
                     "assetId": "#hash_28debf584b1cdd0",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -3905,13 +3905,13 @@
         {
             "value": 76,
             "next": 65535,
-            "name": "#hash_77729e870046c56c",
+            "name": "#amb_snake",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_77729e870046c56c",
+                    "name": "#amb_snake",
                     "assetId": "#amb/animals/snake/rattle/rattlesnake_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -3950,7 +3950,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_77729e870046c56c",
+                    "name": "#amb_snake",
                     "assetId": "#amb/animals/snake/rattle/rattlesnake_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -3989,7 +3989,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_77729e870046c56c",
+                    "name": "#amb_snake",
                     "assetId": "#amb/animals/snake/rattle/rattlesnake_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -4028,7 +4028,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_77729e870046c56c",
+                    "name": "#amb_snake",
                     "assetId": "#amb/animals/snake/rattle/rattlesnake_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -4067,7 +4067,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_77729e870046c56c",
+                    "name": "#amb_snake",
                     "assetId": "#amb/animals/snake/rattle/rattlesnake_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -4106,7 +4106,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_77729e870046c56c",
+                    "name": "#amb_snake",
                     "assetId": "#amb/animals/snake/rattle/rattlesnake_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -6711,13 +6711,13 @@
         {
             "value": 112,
             "next": 65535,
-            "name": "#hash_1ff8bec27dfc1b70",
+            "name": "#dst_fern",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1ff8bec27dfc1b70",
+                    "name": "#dst_fern",
                     "assetId": "#dst/prop/fern/fern_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -7647,13 +7647,13 @@
         {
             "value": 77,
             "next": 75,
-            "name": "#hash_501eff91f639c23e",
+            "name": "#dst_glass_pane",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_501eff91f639c23e",
+                    "name": "#dst_glass_pane",
                     "assetId": "#dst/generic/glass/med/glass_break_medium_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -8182,13 +8182,13 @@
         {
             "value": 106,
             "next": 45,
-            "name": "#hash_6a7bbff93ccc7ab7",
+            "name": "#dst_luggage",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6a7bbff93ccc7ab7",
+                    "name": "#dst_luggage",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
                     "assetFileNameRelease": "#mp_madagascar.all",
@@ -11011,13 +11011,13 @@
         {
             "value": 41,
             "next": 96,
-            "name": "#hash_38c96854fb0017e",
+            "name": "#dst_typewriter",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_38c96854fb0017e",
+                    "name": "#dst_typewriter",
                     "assetId": "#dst/prop/typewriter/typewriter_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -12312,13 +12312,13 @@
         {
             "value": 162,
             "next": 113,
-            "name": "#hash_48bc31e222aa7c3e",
+            "name": "#exp_barrel_fire",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_48bc31e222aa7c3e",
+                    "name": "#exp_barrel_fire",
                     "assetId": "#dst/generic/fire/barrel/barrel_fire_02.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -18736,11 +18736,11 @@
             "loop": "#hash_44463359dd025b23",
             "duckId": "#default",
             "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_8f631787d4aaf77",
+            "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_8f631787d4aaf77",
+            "globalContextValue": "#outdoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,
@@ -18828,7 +18828,7 @@
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_8f631787d4aaf77",
+            "globalContextValue": "#outdoor",
             "defaultRoom": false,
             "reverbDryLevel": 0.7,
             "reverbWetLevel": 1,
@@ -18846,11 +18846,11 @@
             "loop": "#hash_42339ab27b12c98e",
             "duckId": "#default",
             "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_8f631787d4aaf77",
+            "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_8f631787d4aaf77",
+            "globalContextValue": "#outdoor",
             "defaultRoom": true,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,

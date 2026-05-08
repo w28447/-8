@@ -19,7 +19,7 @@
     ],
     "meleeWeapon": "#skeleton_sword_melee",
     "aimTable": "#soldier_aim",
-    "footstepTable": "#hash_4f3c8e4cb98783fc",
+    "footstepTable": "#skeletonfootstep",
     "footstepScriptCallback": false,
     "footstepFXTable1": "#player_footstep",
     "footstepFXTable2": "#player_footstep",

@@ -71,8 +71,8 @@
     ],
     "sharedWeaponSounds": "#rifle",
     "tracers": [
-        "#hash_7a8e163093046e13",
-        "#hash_7a8e163093046e13"
+        "#lightninggun_tracer",
+        "#lightninggun_tracer"
     ],
     "#hash_2e4a8800": "#hero_lightninggun_scoreevents",
     "viewmodel": [
@@ -95,7 +95,7 @@
     "fx_be8": "#hash_1129917200ed80af",
     "fx_ca0": "#hash_3e00d314f4b2b053",
     "fx_ca8": "#hash_3df9e714f4acb3a1",
-    "enemyDeathFxSet": "#hash_638244505961166a",
-    "normalImpactFX": "#hash_6b794a92fe7beeab",
-    "normalImpactSounds": "#hash_7e602393a94cd0bb"
+    "enemyDeathFxSet": "#weapon_hero_lightninggun_death",
+    "normalImpactFX": "#hero_lightninggun_enter",
+    "normalImpactSounds": "#lightning_gun_impact"
 }

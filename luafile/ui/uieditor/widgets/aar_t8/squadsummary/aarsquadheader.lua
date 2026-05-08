@@ -10,7 +10,7 @@ CoD.AARSquadHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local Player = LUI.UIText.new( 0, 0, 69.5, 540.5, 0.5, 0.5, -10, 10 )
 	Player:setRGB( 0.7, 0.7, 0.7 )
-	Player:setText( Engine[0xF9F1239CFD921FE]( 0x89CF1420A8398FE ) )
+	Player:setText( Engine[0xF9F1239CFD921FE]( "menu/player_caps" ) )
 	Player:setTTF( "0arame_mono_stencil" )
 	Player:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Player:setAlignment( Enum.LUIAlignment[0x70510683C22104B] )
@@ -28,7 +28,7 @@ CoD.AARSquadHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local Kills = LUI.UIText.new( 0, 0, 542.5, 678.5, 0.5, 0.5, -10, 10 )
 	Kills:setRGB( 0.7, 0.7, 0.7 )
-	Kills:setText( Engine[0xF9F1239CFD921FE]( 0x6B234CB46B5ACD4 ) )
+	Kills:setText( Engine[0xF9F1239CFD921FE]( "menu/kills_caps" ) )
 	Kills:setTTF( "0arame_mono_stencil" )
 	Kills:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	Kills:setAlignment( Enum.LUIAlignment[0x70510683C22104B] )
@@ -37,7 +37,7 @@ CoD.AARSquadHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local LongestKill = LUI.UIText.new( 0, 0, 685.5, 821.5, 0.5, 0.5, -10, 10 )
 	LongestKill:setRGB( 0.7, 0.7, 0.7 )
-	LongestKill:setText( Engine[0xF9F1239CFD921FE]( 0xD502116B555E30B ) )
+	LongestKill:setText( Engine[0xF9F1239CFD921FE]( "aar/longest_kill" ) )
 	LongestKill:setTTF( "0arame_mono_stencil" )
 	LongestKill:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	LongestKill:setAlignment( Enum.LUIAlignment[0x70510683C22104B] )
@@ -46,7 +46,7 @@ CoD.AARSquadHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local Damage = LUI.UIText.new( 0, 0, 828.5, 964.5, 0.5, 0.5, -10, 10 )
 	Damage:setRGB( 0.7, 0.7, 0.7 )
-	Damage:setText( Engine[0xF9F1239CFD921FE]( 0x61100A6B91B62C1 ) )
+	Damage:setText( Engine[0xF9F1239CFD921FE]( "aar/damage" ) )
 	Damage:setTTF( "0arame_mono_stencil" )
 	Damage:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	Damage:setAlignment( Enum.LUIAlignment[0x70510683C22104B] )
@@ -55,7 +55,7 @@ CoD.AARSquadHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local Revives = LUI.UIText.new( 0, 0, 969.5, 1105.5, 0.5, 0.5, -10, 10 )
 	Revives:setRGB( 0.7, 0.7, 0.7 )
-	Revives:setText( Engine[0xF9F1239CFD921FE]( 0xCBE7CE1498F9D76 ) )
+	Revives:setText( Engine[0xF9F1239CFD921FE]( "aar/revives" ) )
 	Revives:setTTF( "0arame_mono_stencil" )
 	Revives:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	Revives:setAlignment( Enum.LUIAlignment[0x70510683C22104B] )
@@ -64,7 +64,7 @@ CoD.AARSquadHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local CleanUps = LUI.UIText.new( 0, 0, 1112.5, 1248.5, 0.5, 0.5, -10, 10 )
 	CleanUps:setRGB( 0.7, 0.7, 0.7 )
-	CleanUps:setText( Engine[0xF9F1239CFD921FE]( 0x45C50B4E30324A4 ) )
+	CleanUps:setText( Engine[0xF9F1239CFD921FE]( "aar/clean_ups" ) )
 	CleanUps:setTTF( "0arame_mono_stencil" )
 	CleanUps:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	CleanUps:setAlignment( Enum.LUIAlignment[0x70510683C22104B] )
@@ -89,7 +89,7 @@ end
 
 CoD.AARSquadHeader.__resetProperties = function ( f3_arg0 )
 	f3_arg0.LongestKill:completeAnimation()
-	f3_arg0.LongestKill:setText( Engine[0xF9F1239CFD921FE]( 0xD502116B555E30B ) )
+	f3_arg0.LongestKill:setText( Engine[0xF9F1239CFD921FE]( "aar/longest_kill" ) )
 end
 
 CoD.AARSquadHeader.__clipsPerState = {

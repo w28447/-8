@@ -14,9 +14,9 @@
 #loot_emote_exotic_shared_finger_spin,#item_shop,3798655,280,0,3
 #loot_emote_exotic_shared_finger_spin,#item_shop,2798655,320,0,2
 #loot_emote_exotic_shared_finger_spin,#item_shop,1798655,360,0,1
-#hash_3dbdc54aae236b01,#item_shop,3400699,280,0,3
-#hash_3dbdc54aae236b01,#item_shop,2400699,320,0,2
-#hash_3dbdc54aae236b01,#item_shop,1400699,360,0,1
+#loot_emote_exotic_shared_juggling,#item_shop,3400699,280,0,3
+#loot_emote_exotic_shared_juggling,#item_shop,2400699,320,0,2
+#loot_emote_exotic_shared_juggling,#item_shop,1400699,360,0,1
 #loot_emote_exotic_shared_lunchtime,#loot_stream,3810998,280,0,3
 #loot_emote_exotic_shared_lunchtime,#loot_stream,2810998,320,0,2
 #loot_emote_exotic_shared_lunchtime,#loot_stream,1810998,360,0,1

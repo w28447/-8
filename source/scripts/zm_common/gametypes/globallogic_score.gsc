@@ -302,7 +302,7 @@ function giveteamscore( event, team, player, victim )
     pixendevent();
     newscore = game.stat[ #"teamscores" ][ team ];
     zmteamscores = { #gametime:function_f8d53445(), #event:event, #team:team, #diff:newscore - teamscore, #score:newscore };
-    function_92d1707f( #"hash_6823717ff11a304a", zmteamscores );
+    function_92d1707f( #"dlog_event_zmteamscores", zmteamscores );
     
     if ( teamscore == newscore )
     {

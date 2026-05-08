@@ -711,7 +711,7 @@ function function_59bc0dd3( player )
     self influencers::create_entity_enemy_influencer( "claymore", player.team );
     self.destroyablebytrophysystem = 0;
     self.detonating = 0;
-    wait level.var_c72e8c51.var_e14f5fca;
+    wait level.tripwirebundle.tripwireactivationdelay;
     player notify( #"tripwire_spawn", { #tripwire:self } );
     self clientfield::set( "tripwire_state", 1 );
     
@@ -1913,12 +1913,12 @@ function function_e8009771()
     while ( true )
     {
         waitresult = level waittill( #"tripwire_detonation" );
-        var_2249999 = waitresult.entity;
+        e_soldier = waitresult.entity;
         wait 0.1;
         
-        if ( isalive( var_2249999 ) )
+        if ( isalive( e_soldier ) )
         {
-            var_2249999 thread ct_utils::function_3e0767e2( 0 );
+            e_soldier thread ct_utils::function_3e0767e2( 0 );
             level flag::set( "tripwire_kill" );
             level notify( #"tripwire_kill" );
         }

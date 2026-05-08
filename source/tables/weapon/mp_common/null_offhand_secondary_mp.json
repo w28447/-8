@@ -48,7 +48,7 @@
     "inventoryIconZm": "#blacktransparent",
     "hudIcon": "#blacktransparent",
     "image_e90": "#blacktransparent",
-    "fx_ed8": "#hash_20c42b8374c1d1e8",
+    "fx_ed8": "#explosions/fx_exp_grenade_flshbng",
     "bounceImpactFX": "#grenade_bounce",
     "bounceImpactSounds": "#hash_c48a0d9622bdb762"
 }

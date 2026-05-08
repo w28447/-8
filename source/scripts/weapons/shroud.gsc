@@ -38,15 +38,15 @@ function init_shared()
     
     if ( getgametypesetting( #"competitivesettings" ) === 1 )
     {
-        level.var_88c99ac4 = getscriptbundle( "shroud_custom_settings_comp" );
+        level.shroudbundle = getscriptbundle( "shroud_custom_settings_comp" );
     }
     else if ( isdefined( level.shroudweapon.customsettings ) )
     {
-        level.var_88c99ac4 = getscriptbundle( level.shroudweapon.customsettings );
+        level.shroudbundle = getscriptbundle( level.shroudweapon.customsettings );
     }
     else
     {
-        level.var_88c99ac4 = getscriptbundle( "shroud_custom_settings" );
+        level.shroudbundle = getscriptbundle( "shroud_custom_settings" );
     }
     
     level.var_f53da9ba = &function_4db10465;
@@ -324,7 +324,7 @@ function function_f4970a20( watcher, player )
     }
     else
     {
-        n_fuse_time = int( ( isdefined( level.var_88c99ac4.var_c4e30db1 ) ? level.var_88c99ac4.var_c4e30db1 : 0 ) * 1000 );
+        n_fuse_time = int( ( isdefined( level.shroudbundle.shroudlifetime ) ? level.shroudbundle.shroudlifetime : 0 ) * 1000 );
     }
     
     self thread weaponobjects::function_d9c08e94( n_fuse_time, &function_4db10465 );
@@ -424,9 +424,9 @@ function function_4b3bc61d( attacker, weapon, target )
         playfx( level._equipment_explode_fx_lg, self.origin );
     }
     
-    if ( isdefined( level.var_88c99ac4.var_bb6c29b4 ) && isdefined( weapon ) && weapon == getweapon( #"shock_rifle" ) )
+    if ( isdefined( level.shroudbundle.var_bb6c29b4 ) && isdefined( weapon ) && weapon == getweapon( #"shock_rifle" ) )
     {
-        playfx( level.var_88c99ac4.var_bb6c29b4, self.origin );
+        playfx( level.shroudbundle.var_bb6c29b4, self.origin );
     }
     
     if ( isdefined( attacker ) && self.owner util::isenemyplayer( attacker ) )

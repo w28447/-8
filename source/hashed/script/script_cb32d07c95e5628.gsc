@@ -231,19 +231,19 @@ function private function_62c0d32d( item_name, stashitem = 0 )
     itementry = isdefined( level.var_de3d5d56 ) ? level.var_de3d5d56[ item_name ] : getscriptbundle( item_name );
     weapon = item_world_util::function_35e06774( itementry, isdefined( itementry.attachments ) );
     itemcount = isdefined( itementry.amount ) ? itementry.amount : 1;
-    var_aec6fa7f = 0;
+    itemamount = 0;
     
     if ( itementry.itemtype == #"weapon" )
     {
-        var_aec6fa7f = itementry.amount * weapon.clipsize;
+        itemamount = itementry.amount * weapon.clipsize;
     }
     else if ( itementry.itemtype == #"armor" || itementry.itemtype == #"ammo" )
     {
-        var_aec6fa7f = itementry.amount;
+        itemamount = itementry.amount;
         itemcount = 1;
     }
     
-    item = item_drop::drop_item( weapon, itemcount, var_aec6fa7f, itemspawnpoint.id, origin, angles, stashitem );
+    item = item_drop::drop_item( weapon, itemcount, itemamount, itemspawnpoint.id, origin, angles, stashitem );
     
     if ( isdefined( item ) )
     {
@@ -762,9 +762,9 @@ function private function_216a69d6( spawnchance, reset )
             continue;
         }
         
-        if ( isdefined( self.itemlistbundle.var_7fb0967b ) && !var_a9826383 )
+        if ( isdefined( self.itemlistbundle.distributiondistance ) && !var_a9826383 )
         {
-            var_1ba7b9c8 = arraysortclosest( level.var_5ce07338, point.origin, 1, 0, self.itemlistbundle.var_7fb0967b );
+            var_1ba7b9c8 = arraysortclosest( level.var_5ce07338, point.origin, 1, 0, self.itemlistbundle.distributiondistance );
             
             if ( var_1ba7b9c8.size > 0 )
             {
@@ -1157,7 +1157,7 @@ function private function_e25c9d12( &var_8107154f, spawncount, stashitem = 0, &v
         {
             itemspawnpoint = function_b1702735( var_8107154f[ var_a1b91de4[ pointindex ] ] );
             
-            if ( isdefined( self.itemlistbundle.var_7fb0967b ) && !var_a9826383 )
+            if ( isdefined( self.itemlistbundle.distributiondistance ) && !var_a9826383 )
             {
                 var_8822f354 = 0;
                 itemtype = undefined;
@@ -1177,17 +1177,17 @@ function private function_e25c9d12( &var_8107154f, spawncount, stashitem = 0, &v
                     if ( itemtype == #"vehicle" )
                     {
                         vehicles = getvehiclearray();
-                        nearbyvehicles = arraysortclosest( vehicles, itemspawnpoint.origin, 1, 0, self.itemlistbundle.var_7fb0967b );
+                        nearbyvehicles = arraysortclosest( vehicles, itemspawnpoint.origin, 1, 0, self.itemlistbundle.distributiondistance );
                         var_8822f354 = nearbyvehicles.size;
                     }
                     else
                     {
-                        var_8822f354 = function_579fdc53( itemspawnpoint.origin, undefined, itemtype, self.itemlistbundle.var_7fb0967b, -1, -2147483647 );
+                        var_8822f354 = function_579fdc53( itemspawnpoint.origin, undefined, itemtype, self.itemlistbundle.distributiondistance, -1, -2147483647 );
                     }
                 }
                 else
                 {
-                    var_8822f354 = function_6de8969b( itemspawnpoint.origin, undefined, self.itemlistbundle.var_7fb0967b, -1, 1, -2147483647 );
+                    var_8822f354 = function_6de8969b( itemspawnpoint.origin, undefined, self.itemlistbundle.distributiondistance, -1, 1, -2147483647 );
                 }
                 
                 if ( var_8822f354 > 0 )
@@ -1522,12 +1522,12 @@ function function_50a2c746( &var_f38d5b52, reset = 1, var_87e9f374 = 0 )
         
         if ( var_87e9f374 )
         {
-            if ( !( isdefined( itemlistbundle.var_dc91e192 ) && itemlistbundle.var_dc91e192 ) || !( isdefined( itemlistbundle.supplystash ) && itemlistbundle.supplystash ) )
+            if ( !( isdefined( itemlistbundle.prioritizedspawning ) && itemlistbundle.prioritizedspawning ) || !( isdefined( itemlistbundle.supplystash ) && itemlistbundle.supplystash ) )
             {
                 continue;
             }
         }
-        else if ( isdefined( itemlistbundle.var_dc91e192 ) && itemlistbundle.var_dc91e192 && isdefined( itemlistbundle.supplystash ) && itemlistbundle.supplystash )
+        else if ( isdefined( itemlistbundle.prioritizedspawning ) && itemlistbundle.prioritizedspawning && isdefined( itemlistbundle.supplystash ) && itemlistbundle.supplystash )
         {
             continue;
         }

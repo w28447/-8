@@ -415,7 +415,7 @@ function turn_perk_off( ishidden )
 // Size: 0xb4
 function play_loop_on_machine()
 {
-    if ( isdefined( level.var_29a12b0 ) )
+    if ( isdefined( level.sndperksacolaloopoverride ) )
     {
         return;
     }
@@ -833,9 +833,9 @@ function vending_trigger_post_think( player, perk )
     
     player notify( #"burp" );
     
-    if ( isdefined( level.var_c4bedce3 ) )
+    if ( isdefined( level.perk_bought_func ) )
     {
-        player [[ level.var_c4bedce3 ]]( perk );
+        player [[ level.perk_bought_func ]]( perk );
     }
     
     player.perk_purchased = undefined;
@@ -1210,7 +1210,7 @@ function quantum_bomb_give_nearest_perk_validation( position )
 // Size: 0x1fa
 function quantum_bomb_give_nearest_perk_result( position )
 {
-    [[ level.var_77926928 ]]( position );
+    [[ level.quantum_bomb_play_mystery_effect_func ]]( position );
     vending_machines = get_perk_machines();
     nearest = 0;
     
@@ -1237,7 +1237,7 @@ function quantum_bomb_give_nearest_perk_result( position )
         if ( !player hasperk( perk ) && ( !isdefined( player.perk_purchased ) || player.perk_purchased != perk ) && randomint( 5 ) )
         {
             player function_a7ae070c( perk );
-            player [[ level.var_cbbe9244 ]]();
+            player [[ level.quantum_bomb_play_player_effect_func ]]();
         }
     }
 }
@@ -1929,7 +1929,7 @@ function perks_register_clientfield()
     
     if ( level.var_c3e5c4cd == 2 )
     {
-        clientfield::register( "world", "" + #"hash_46334db9e3c76275", 1, 1, "int" );
+        clientfield::register( "world", "" + #"zeus_bird_fx", 1, 1, "int" );
         clientfield::register( "scriptmover", "" + #"hash_50eb488e58f66198", 1, 1, "int" );
         clientfield::register( "allplayers", "" + #"hash_222c3403d2641ea6", 1, 3, "int" );
         clientfield::register( "toplayer", "" + #"hash_17283692696da23b", 1, 1, "counter" );
@@ -3163,9 +3163,9 @@ function taking_cover_tanks_( player, perk, n_slot, s_vapor_altar )
         
         player thread function_9bdf581f( perk, n_slot, 1 );
         
-        if ( isdefined( level.var_c4bedce3 ) )
+        if ( isdefined( level.perk_bought_func ) )
         {
-            player [[ level.var_c4bedce3 ]]( perk );
+            player [[ level.perk_bought_func ]]( perk );
         }
         
         return;
@@ -4329,7 +4329,7 @@ function function_ba56adf1( var_c188cf87, var_59ad3e22 )
 {
     level endon( #"end_game" );
     level flag::wait_till( "all_players_spawned" );
-    level clientfield::set( "" + #"hash_46334db9e3c76275", 1 );
+    level clientfield::set( "" + #"zeus_bird_fx", 1 );
     
     while ( true )
     {

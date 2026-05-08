@@ -297,19 +297,19 @@ function get_characters()
                 for ( i = 1; i <= 4 ; i++ )
                 {
                     fields = getplayerrolefields( i, currentsessionmode() );
-                    var_2a42c5e0 = fields.var_2a42c5e0;
-                    level.characters[ var_2a42c5e0 ] = [];
+                    globalcharacterindex = fields.globalcharacterindex;
+                    level.characters[ globalcharacterindex ] = [];
                     
-                    if ( !isdefined( level.characters[ var_2a42c5e0 ] ) )
+                    if ( !isdefined( level.characters[ globalcharacterindex ] ) )
                     {
-                        level.characters[ var_2a42c5e0 ] = [];
+                        level.characters[ globalcharacterindex ] = [];
                     }
-                    else if ( !isarray( level.characters[ var_2a42c5e0 ] ) )
+                    else if ( !isarray( level.characters[ globalcharacterindex ] ) )
                     {
-                        level.characters[ var_2a42c5e0 ] = array( level.characters[ var_2a42c5e0 ] );
+                        level.characters[ globalcharacterindex ] = array( level.characters[ globalcharacterindex ] );
                     }
                     
-                    level.characters[ var_2a42c5e0 ][ level.characters[ var_2a42c5e0 ].size ] = i;
+                    level.characters[ globalcharacterindex ][ level.characters[ globalcharacterindex ].size ] = i;
                     
                     if ( !isdefined( level.validcharacters ) )
                     {
@@ -332,11 +332,11 @@ function get_characters()
         
         for ( i = 0; i < fields.zmcharacters.size ; i++ )
         {
-            var_2a42c5e0 = function_d35e4c92( fields.zmcharacters[ i ].characterindex, 1 );
+            globalcharacterindex = function_d35e4c92( fields.zmcharacters[ i ].characterindex, 1 );
             
-            if ( !isdefined( level.characters[ var_2a42c5e0 ] ) )
+            if ( !isdefined( level.characters[ globalcharacterindex ] ) )
             {
-                level.characters[ var_2a42c5e0 ] = [];
+                level.characters[ globalcharacterindex ] = [];
             }
             
             if ( !isdefined( level.validcharacters ) )
@@ -350,16 +350,16 @@ function get_characters()
             
             level.validcharacters[ level.validcharacters.size ] = fields.zmcharacters[ i ].characterindex;
             
-            if ( !isdefined( level.characters[ var_2a42c5e0 ] ) )
+            if ( !isdefined( level.characters[ globalcharacterindex ] ) )
             {
-                level.characters[ var_2a42c5e0 ] = [];
+                level.characters[ globalcharacterindex ] = [];
             }
-            else if ( !isarray( level.characters[ var_2a42c5e0 ] ) )
+            else if ( !isarray( level.characters[ globalcharacterindex ] ) )
             {
-                level.characters[ var_2a42c5e0 ] = array( level.characters[ var_2a42c5e0 ] );
+                level.characters[ globalcharacterindex ] = array( level.characters[ globalcharacterindex ] );
             }
             
-            level.characters[ var_2a42c5e0 ][ level.characters[ var_2a42c5e0 ].size ] = fields.zmcharacters[ i ].characterindex;
+            level.characters[ globalcharacterindex ][ level.characters[ globalcharacterindex ].size ] = fields.zmcharacters[ i ].characterindex;
         }
     }
     
@@ -397,7 +397,7 @@ function function_d35e4c92( characterindex, var_fdf0f13d = 0 )
         if ( var_fdf0f13d || player_role::is_valid( characterindex ) )
         {
             fields = getplayerrolefields( characterindex, currentsessionmode() );
-            return fields.var_2a42c5e0;
+            return fields.globalcharacterindex;
         }
     }
     else if ( isdefined( self ) && isplayer( self ) )
@@ -407,7 +407,7 @@ function function_d35e4c92( characterindex, var_fdf0f13d = 0 )
         if ( player_role::is_valid( characterindex ) )
         {
             fields = getplayerrolefields( player_role::get(), currentsessionmode() );
-            return fields.var_2a42c5e0;
+            return fields.globalcharacterindex;
         }
     }
     

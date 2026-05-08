@@ -51,7 +51,7 @@
 // Size: 0x2c4
 function init()
 {
-    clientfield::register( "scriptmover", "" + #"hash_65a58403194ef1b4", 8000, 1, "int" );
+    clientfield::register( "scriptmover", "" + #"secret_bookshelf_fx", 8000, 1, "int" );
     clientfield::register( "world", "" + #"start_billiards", 8000, 1, "int" );
     serverfield::register( "billiard_ball_sunk_sf", 8000, getminbitcountfornum( 9 ), "int", &function_cf048af );
     clientfield::register( "world", "" + #"hash_354bb8ac5de6640a", 8000, getminbitcountfornum( 9 ), "int" );
@@ -278,7 +278,7 @@ function function_34f6d80a()
             
             if ( !b_failed )
             {
-                level.var_969e8ac2.a_e_books[ s_waitresult.array_index ] clientfield::set( "" + #"hash_65a58403194ef1b4", 1 );
+                level.var_969e8ac2.a_e_books[ s_waitresult.array_index ] clientfield::set( "" + #"secret_bookshelf_fx", 1 );
                 level.var_969e8ac2.e_activator = s_waitresult.activator;
             }
             

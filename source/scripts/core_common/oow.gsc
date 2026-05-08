@@ -34,20 +34,20 @@ function on_game_playing()
     
     if ( isdefined( mapbundle ) )
     {
-        if ( !isdefined( mapbundle.var_aa91547b ) )
+        if ( !isdefined( mapbundle.oowheightmin ) )
         {
-            mapbundle.var_aa91547b = 0;
+            mapbundle.oowheightmin = 0;
         }
         
-        if ( !isdefined( mapbundle.var_eac026ad ) )
+        if ( !isdefined( mapbundle.oowheightmax ) )
         {
-            mapbundle.var_eac026ad = 0;
+            mapbundle.oowheightmax = 0;
         }
         
-        if ( mapbundle.var_aa91547b != 0 || mapbundle.var_eac026ad != 0 )
+        if ( mapbundle.oowheightmin != 0 || mapbundle.oowheightmax != 0 )
         {
-            level.oow.height_min = isdefined( mapbundle.var_aa91547b ) ? mapbundle.var_aa91547b : 0;
-            level.oow.height_max = isdefined( mapbundle.var_eac026ad ) ? mapbundle.var_eac026ad : 0;
+            level.oow.height_min = isdefined( mapbundle.oowheightmin ) ? mapbundle.oowheightmin : 0;
+            level.oow.height_max = isdefined( mapbundle.oowheightmax ) ? mapbundle.oowheightmax : 0;
             assert( level.oow.height_min <= level.oow.height_max );
             
             if ( !( level.oow.height_min <= level.oow.height_max ) )

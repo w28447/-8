@@ -1195,9 +1195,9 @@ function weapon_spawn_think()
 // Size: 0x56
 function should_upgrade_weapon( player )
 {
-    if ( isdefined( level.var_f270168a ) )
+    if ( isdefined( level.wallbuy_should_upgrade_weapon_override ) )
     {
-        return [[ level.var_f270168a ]]();
+        return [[ level.wallbuy_should_upgrade_weapon_override ]]();
     }
     
     if ( player bgb::is_enabled( #"zm_bgb_wall_power" ) )

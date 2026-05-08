@@ -53,9 +53,9 @@
     "rumble_de8": "#grenade_rumble",
     "fx_f00": "#hash_80e7395fb42d35f6",
     "underwaterExplosionSurfaceFX": [
-        "#hash_5f190015ac9ded95",
-        "#hash_1206d75150c2464e",
-        "#hash_260fafe2e7ced71c"
+        "#explosions/fx_exp_grenade_water",
+        "#explosions/fx_exp_grenade_water_shllw",
+        "#explosions/fx_exp_grenade_water_surface_deep"
     ],
     "normalImpactFX": "#hash_c80a3191309d3449",
     "bounceImpactFX": "#grenade_bounce",

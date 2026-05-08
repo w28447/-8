@@ -94,5 +94,5 @@
     "viewPersistentEffectSet": "#hash_5374b7450043b0c5",
     "normalImpactFX": "#hash_fee0671def6af7a4",
     "exitImpactFX": "#hash_d6ef4fc6c00cc18e",
-    "normalImpactSounds": "#hash_7e602393a94cd0bb"
+    "normalImpactSounds": "#lightning_gun_impact"
 }

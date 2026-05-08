@@ -807,11 +807,11 @@ function private __init__()
                     heli_spawn = function_91b29d2a( #"heli_spawn" );
                     heli_clearing_spawn = function_91b29d2a( #"heli_clearing_spawn" );
                     zodiac_spawn = function_91b29d2a( #"zodiac_spawn" );
-                    var_e8750c36 = function_91b29d2a( #"zodiac_spawn_docks" );
-                    var_1901b1fa = function_91b29d2a( #"zodiac_spawn_hydro" );
-                    var_453c640c = function_91b29d2a( #"zodiac_spawn_nuketown" );
-                    var_b351e4a0 = function_91b29d2a( #"zodiac_spawn_skyscraper" );
-                    var_e4dc1e88 = function_91b29d2a( #"zodiac_spawn_hijacked" );
+                    zodiac_docks_spawn = function_91b29d2a( #"zodiac_spawn_docks" );
+                    zodiac_hydro_spawn = function_91b29d2a( #"zodiac_spawn_hydro" );
+                    zodiac_nuketown_spawn = function_91b29d2a( #"zodiac_spawn_nuketown" );
+                    zodiac_skyscraper_spawn = function_91b29d2a( #"zodiac_spawn_skyscraper" );
+                    zodiac_hijacked_spawn = function_91b29d2a( #"zodiac_spawn_hijacked" );
                     muscle_car_spawn = function_91b29d2a( #"muscle_car_spawn" );
                     arav_spawn = function_91b29d2a( #"arav_spawn" );
                     suv_spawn = function_91b29d2a( #"suv_spawn" );
@@ -895,7 +895,7 @@ function private __init__()
                         sphere( vehicle.origin, radius, ( 1, 0.5, 0 ), 1, 0, 10, 20 );
                     }
                     
-                    foreach ( vehicle in var_e8750c36 )
+                    foreach ( vehicle in zodiac_docks_spawn )
                     {
                         radius = 128;
                         var_84dd2a8b = 4096;
@@ -908,7 +908,7 @@ function private __init__()
                         sphere( vehicle.origin, radius, ( 1, 0.5, 0 ), 1, 0, 10, 20 );
                     }
                     
-                    foreach ( vehicle in var_1901b1fa )
+                    foreach ( vehicle in zodiac_hydro_spawn )
                     {
                         radius = 128;
                         var_84dd2a8b = 4096;
@@ -921,7 +921,7 @@ function private __init__()
                         sphere( vehicle.origin, radius, ( 1, 0.5, 0 ), 1, 0, 10, 20 );
                     }
                     
-                    foreach ( vehicle in var_453c640c )
+                    foreach ( vehicle in zodiac_nuketown_spawn )
                     {
                         radius = 128;
                         var_84dd2a8b = 4096;
@@ -934,7 +934,7 @@ function private __init__()
                         sphere( vehicle.origin, radius, ( 1, 0.5, 0 ), 1, 0, 10, 20 );
                     }
                     
-                    foreach ( vehicle in var_b351e4a0 )
+                    foreach ( vehicle in zodiac_skyscraper_spawn )
                     {
                         radius = 128;
                         var_84dd2a8b = 4096;
@@ -947,7 +947,7 @@ function private __init__()
                         sphere( vehicle.origin, radius, ( 1, 0.5, 0 ), 1, 0, 10, 20 );
                     }
                     
-                    foreach ( vehicle in var_e4dc1e88 )
+                    foreach ( vehicle in zodiac_hijacked_spawn )
                     {
                         radius = 128;
                         var_84dd2a8b = 4096;

@@ -54,7 +54,7 @@
     "firesoundplayer": "#hash_d2cde9caae88cc",
     "sound220": "#hash_37a28413f2b94da2",
     "sound230": "#hash_6bcc96d2d06533ed",
-    "sound240": "#hash_75af3b884bdbc98f",
+    "sound240": "#dryfire_rifle",
     "sound250": "#hash_7b8c12b2e37b3b02",
     "projexplosionsound": "#hash_117c58afdbef86b9",
     "sound800": "#hash_90fbb0600e0ec1b",
@@ -70,10 +70,10 @@
     "reticleCenter": "#hud_flamethrower_reticle",
     "inventoryIconZm": "#hash_a5740919ad0c89d7",
     "fireRumble": "#damage_heavy",
-    "fx_bc8": "#hash_33eb1a140b780930",
-    "fx_bd0": "#hash_657b07279abb11cf",
-    "fx_f00": "#hash_407c244d94b43a75",
-    "normalImpactFX": "#hash_680482e90473188f",
+    "fx_bc8": "#zombie/fx_tesla_muz_ug_view_zmb",
+    "fx_bd0": "#zombie/fx_tesla_muz_ug_world_zmb",
+    "fx_f00": "#zombie/fx_tesla_electric_bolt_ug_zmb",
+    "normalImpactFX": "#projectile_tesla_enter",
     "normalImpactSounds": "#bullet_impact",
     "exitImpactSounds": "#hash_d0191cc37bfbfeea"
 }

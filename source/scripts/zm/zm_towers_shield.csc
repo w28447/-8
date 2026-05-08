@@ -22,7 +22,7 @@ function autoexec __init__system__()
 // Size: 0x83a
 function __init__()
 {
-    clientfield::register( "allplayers", "" + #"hash_26af481b9a9d41ce", 1, 1, "counter", &function_618e1db4, 0, 0 );
+    clientfield::register( "allplayers", "" + #"firestorm_shot_fx", 1, 1, "counter", &firestorm_shot_fx, 0, 0 );
     clientfield::register( "allplayers", "" + #"hash_18fc1da5f1785e6b", 1, 1, "counter", &function_311767a6, 0, 0 );
     clientfield::register( "allplayers", "" + #"charge_gem", 1, 2, "int", &function_8a2b203b, 0, 1 );
     clientfield::register( "allplayers", "" + #"hash_275debebcd185ea1", 1, 1, "int", &function_467afa20, 0, 1 );
@@ -61,7 +61,7 @@ function __init__()
 // Params 7
 // Checksum 0xe4f20d02, Offset: 0x9a0
 // Size: 0x16a
-function function_618e1db4( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function firestorm_shot_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( self.weapon == getweapon( #"zhield_zword_turret_upgraded" ) )
     {
@@ -74,7 +74,7 @@ function function_618e1db4( localclientnum, oldval, newval, bnewent, binitialsna
         var_a1f103c8 = level._effect[ #"firestorm_3p" ];
     }
     
-    if ( zm_utility::function_f8796df3( localclientnum ) )
+    if ( zm_utility::is_first_person( localclientnum ) )
     {
         if ( viewmodelhastag( localclientnum, "tag_barrels_fx" ) )
         {
@@ -114,7 +114,7 @@ function function_467afa20( localclientnum, oldval, newval, bnewent, binitialsna
     
     if ( newval )
     {
-        if ( zm_utility::function_f8796df3( localclientnum ) )
+        if ( zm_utility::is_first_person( localclientnum ) )
         {
             var_a3229167 = level._effect[ #"hash_1f529a78925e826b" ];
             
@@ -257,7 +257,7 @@ function function_8a2b203b( localclientnum, oldval, newval, bnewent, binitialsna
             break;
     }
     
-    if ( zm_utility::function_f8796df3( localclientnum ) )
+    if ( zm_utility::is_first_person( localclientnum ) )
     {
         if ( isdefined( var_43a627a8 ) && viewmodelhastag( localclientnum, "tag_blade_fx" ) )
         {

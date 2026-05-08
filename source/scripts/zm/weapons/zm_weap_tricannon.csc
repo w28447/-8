@@ -60,7 +60,7 @@ function function_af90fb8c( localclientnum, oldval, newval, bnewent, binitialsna
 {
     if ( newval )
     {
-        if ( self zm_utility::function_f8796df3( localclientnum ) )
+        if ( self zm_utility::is_first_person( localclientnum ) )
         {
             while ( isalive( self ) )
             {
@@ -89,7 +89,7 @@ function function_39fb4ba9( localclientnum, oldval, newval, bnewent, binitialsna
             b_packed = 1;
         }
         
-        if ( self zm_utility::function_f8796df3( localclientnum ) )
+        if ( self zm_utility::is_first_person( localclientnum ) )
         {
             if ( b_packed === 1 )
             {

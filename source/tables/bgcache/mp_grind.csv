@@ -222,7 +222,7 @@ soundalias,#hash_21d849eee4d897a
 soundalias,#hash_238170c19d279f5
 soundalias,#hash_2904437d186593d
 soundalias,#hash_31f777916298d72
-soundalias,#hash_38c96854fb0017e
+soundalias,#dst_typewriter
 soundalias,#hash_419e84642ebe554
 soundalias,#hash_55faa40126d5c75
 soundalias,#hash_61dd52d4366a2f2
@@ -254,10 +254,10 @@ soundalias,#hash_1a6485b96677518d
 soundalias,#hash_1cd3aff76bc94b74
 soundalias,#hash_1f2bfd6c961d51a4
 soundalias,#hash_1f9b1d980061ea0e
-soundalias,#hash_1ff8bec27dfc1b70
+soundalias,#dst_fern
 soundalias,#hash_200e28bcd26bab77
 soundalias,#hash_200e2ebcd26bb5a9
-soundalias,#hash_204b0051c8458493
+soundalias,#amb_power_box
 soundalias,#hash_208f0fa01c042df2
 soundalias,#hash_2149db0c502305e3
 soundalias,#hash_2250c1fa4b3ba63b
@@ -304,12 +304,12 @@ soundalias,#hash_417a6cd8bbd9d517
 soundalias,#hash_436a4f77c54e7912
 soundalias,#hash_438b930b61d96f77
 soundalias,#hash_438dac17f69b90a2
-soundalias,#hash_43ad48046fb206c8
+soundalias,#exp_veh_small
 soundalias,#hash_456af38afaef9d77
 soundalias,#hash_456af98afaefa7a9
 soundalias,#hash_47a7dd1007c11019
 soundalias,#exp_veh_large
-soundalias,#hash_48bc31e222aa7c3e
+soundalias,#exp_barrel_fire
 soundalias,#hash_499a124f56b6f71b
 soundalias,#hash_49b3b429caf90a14
 soundalias,#hash_4a9fb6e1d5d277b9
@@ -322,7 +322,7 @@ soundalias,#hash_4d22bab8017dd52f
 soundalias,#hash_4d4bbcb801a0dda9
 soundalias,#hash_4ec5a3e02263fc0e
 soundalias,#hash_4f8c480d8e8f07b6
-soundalias,#hash_501eff91f639c23e
+soundalias,#dst_glass_pane
 soundalias,#hash_5241882a79fff7a3
 soundalias,#hash_5290e69e5616b714
 soundalias,#dst_server
@@ -354,7 +354,7 @@ soundalias,#hash_620e1c161866111e
 soundalias,#hash_6237abae59de3cd8
 soundalias,#hash_6237aeae59de41f1
 soundalias,#hash_62fabf1193237ea0
-soundalias,#hash_633b9532cf0da169
+soundalias,#amb_flies
 soundalias,#hash_663899d42687914d
 soundalias,#exp_incindiary_large
 soundalias,#hash_67e1b634a1e1c1ba
@@ -362,7 +362,7 @@ soundalias,#hash_683fa9c204fffef2
 soundalias,#hash_68b8beb0257da073
 soundalias,#hash_68d529ce159011b5
 soundalias,#hash_69f9f3e122dbb898
-soundalias,#hash_6a7bbff93ccc7ab7
+soundalias,#dst_luggage
 soundalias,#hash_6ab81a11bade89ab
 soundalias,#hash_6abe483482efa584
 soundalias,#hash_6c5be5a0764e1e3c

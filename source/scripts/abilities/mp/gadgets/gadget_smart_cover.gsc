@@ -68,9 +68,9 @@ function function_a430cceb( attacker, weapon )
 // Size: 0x15e, Type: bool
 function function_9a2b3318( origin, angles, player )
 {
-    if ( isdefined( level.smartcoversettings.bundle.var_bc78f60e ) )
+    if ( isdefined( level.smartcoversettings.bundle.protectedzoneradius ) )
     {
-        length2 = ( level.smartcoversettings.bundle.var_bc78f60e + level.smartcoversettings.bundle.maxwidth ) * ( level.smartcoversettings.bundle.var_bc78f60e + level.smartcoversettings.bundle.maxwidth );
+        length2 = ( level.smartcoversettings.bundle.protectedzoneradius + level.smartcoversettings.bundle.maxwidth ) * ( level.smartcoversettings.bundle.protectedzoneradius + level.smartcoversettings.bundle.maxwidth );
         
         foreach ( protectedzone in level.smartcoversettings.objectivezones )
         {

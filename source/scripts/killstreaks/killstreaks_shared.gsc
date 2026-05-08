@@ -263,7 +263,7 @@ function private function_656f23d5( killstreaktype )
 function private function_e48aca4d( type, bundle, weapon, vehicle, killstreak_use_function, isinventoryweapon )
 {
     killstreak_init( type );
-    menukey = bundle.var_a99ef6da;
+    menukey = bundle.ksmenukey;
     
     if ( !isdefined( menukey ) )
     {
@@ -295,7 +295,7 @@ function private function_e48aca4d( type, bundle, weapon, vehicle, killstreak_us
         register_vehicle( type, vehicle );
     }
     
-    function_7e46eaea( type, bundle.var_b45be9e6, bundle.var_502a0e23, bundle.var_667c638e, bundle.var_a56710c6, bundle.var_bc2f6af9, bundle.var_6417048f, isdefined( bundle.var_65d707d0 ) ? bundle.var_65d707d0 : 0, isdefined( bundle.var_a9b0c301 ) ? bundle.var_a9b0c301 : 0 );
+    function_7e46eaea( type, bundle.var_b45be9e6, bundle.var_502a0e23, bundle.var_667c638e, bundle.var_a56710c6, bundle.var_bc2f6af9, bundle.var_6417048f, isdefined( bundle.ksutilizesairspace ) ? bundle.ksutilizesairspace : 0, isdefined( bundle.var_a9b0c301 ) ? bundle.var_a9b0c301 : 0 );
     level.killstreaks[ type ].var_4a5906fd = bundle.var_3211a185;
     
     if ( isdefined( level.cratetypes ) )
@@ -329,7 +329,7 @@ function private function_e48aca4d( type, bundle, weapon, vehicle, killstreak_us
     level.killstreaks[ type ].script_bundle = bundle;
     killstreak_bundles::register_bundle( type, bundle );
     
-    if ( isdefined( bundle.var_1bc9830d ) && bundle.var_1bc9830d && !( isdefined( isinventoryweapon ) && isinventoryweapon ) )
+    if ( isdefined( bundle.ksregisterdvars ) && bundle.ksregisterdvars && !( isdefined( isinventoryweapon ) && isinventoryweapon ) )
     {
         register_dev_dvars( type );
     }
@@ -1617,8 +1617,8 @@ function remove_when_done( killstreak, haskillstreakbeenused, isfrominventory )
         
         if ( isdefined( level.usingscorestreaks ) && level.usingscorestreaks )
         {
-            var_ad8ae78f = { #gametime:function_f8d53445(), #killstreak:killstreak, #activatedby:getplayerspawnid( self ) };
-            function_92d1707f( #"hash_1aa07f199266e0c7", var_ad8ae78f );
+            scorestreakdata = { #gametime:function_f8d53445(), #killstreak:killstreak, #activatedby:getplayerspawnid( self ) };
+            function_92d1707f( #"dlog_event_scorestreakdata", scorestreakdata );
             
             if ( isdefined( isfrominventory ) && isfrominventory )
             {
@@ -2285,7 +2285,7 @@ function display_unavailable_time()
         timeleft = 1;
     }
     
-    self iprintlnbold( #"hash_55a79f95e07a10bc", " " + timeleft + " ", #"hash_79a58948c3b976f5" );
+    self iprintlnbold( #"hash_55a79f95e07a10bc", " " + timeleft + " ", #"exe/seconds" );
 }
 
 // Namespace killstreaks/killstreaks_shared

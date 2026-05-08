@@ -70,12 +70,12 @@
     "fx_bc8": "#hash_5c3f19c86e73864c",
     "fx_bd0": "#hash_5c4625c86e79b95e",
     "fx_bd8": "#hash_bc501ea0c64b9112",
-    "fx_c80": "#hash_58b227559fe0083",
-    "fx_c88": "#hash_58b227559fe0083",
-    "fx_c90": "#hash_58b227559fe0083",
-    "fx_c98": "#hash_58b227559fe0083",
+    "fx_c80": "#weapon/fx_shellejects_minigun",
+    "fx_c88": "#weapon/fx_shellejects_minigun",
+    "fx_c90": "#weapon/fx_shellejects_minigun",
+    "fx_c98": "#weapon/fx_shellejects_minigun",
     "normalImpactFX": "#hash_9cafc46b8c735870",
     "exitImpactFX": "#hash_d6ef4fc6c00cc18e",
-    "normalImpactSounds": "#hash_13ab500733e2f350",
-    "exitImpactSounds": "#hash_39d45158b74185f2"
+    "normalImpactSounds": "#heavy_bullet_impact",
+    "exitImpactSounds": "#heavy_bullet_exit"
 }

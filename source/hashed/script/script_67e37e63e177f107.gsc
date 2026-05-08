@@ -162,7 +162,7 @@ function function_e452a40c( params )
             continue;
         }
         
-        self setspeed( self.settings.var_9eff22ee );
+        self setspeed( self.settings.seekspeed );
         self setbrake( 0 );
         self function_a57c34b7( self.ai.var_a38db64f, 1, 1 );
         self waittilltimeout( 30, #"near_goal" );
@@ -249,7 +249,7 @@ function function_3e16dec3( params )
             
             if ( isdefined( self.current_pathto_pos ) )
             {
-                self setspeed( self.settings.var_9eff22ee );
+                self setspeed( self.settings.seekspeed );
                 self setbrake( 0 );
                 self function_a57c34b7( self.current_pathto_pos, 1, 1 );
                 self waittill_pathing_done( 1 );

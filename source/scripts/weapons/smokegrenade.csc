@@ -69,7 +69,7 @@ function function_709fad19()
     }
     
     var_b0b958b3 = getscriptbundle( weapon.customsettings );
-    return isdefined( var_b0b958b3.var_40dfefd1 ) ? var_b0b958b3.var_40dfefd1 : 128;
+    return isdefined( var_b0b958b3.smokegrenaderadius ) ? var_b0b958b3.smokegrenaderadius : 128;
 }
 
 // Namespace smokegrenade/smokegrenade
@@ -237,10 +237,10 @@ function function_62ec0142( local_client_num, bundle )
     
     if ( isdefined( weapon.customsettings ) )
     {
-        var_ed9e87ac = getscriptbundle( weapon.customsettings );
-        assert( isdefined( var_ed9e87ac ) );
+        smokecustomsettingsbundle = getscriptbundle( weapon.customsettings );
+        assert( isdefined( smokecustomsettingsbundle ) );
         
-        if ( !( isdefined( var_ed9e87ac.var_563d4859 ) ? var_ed9e87ac.var_563d4859 : 0 ) )
+        if ( !( isdefined( smokecustomsettingsbundle.var_563d4859 ) ? smokecustomsettingsbundle.var_563d4859 : 0 ) )
         {
             return false;
         }
@@ -286,10 +286,10 @@ function function_28db726( local_client_num, bundle )
     
     if ( isdefined( weapon.customsettings ) )
     {
-        var_ed9e87ac = getscriptbundle( weapon.customsettings );
-        assert( isdefined( var_ed9e87ac ) );
+        smokecustomsettingsbundle = getscriptbundle( weapon.customsettings );
+        assert( isdefined( smokecustomsettingsbundle ) );
         
-        if ( ( isdefined( var_ed9e87ac.var_ae2b2941 ) ? var_ed9e87ac.var_ae2b2941 : 0 ) && self hastalent( local_client_num, #"talent_coldblooded" ) )
+        if ( ( isdefined( smokecustomsettingsbundle.var_ae2b2941 ) ? smokecustomsettingsbundle.var_ae2b2941 : 0 ) && self hastalent( local_client_num, #"talent_coldblooded" ) )
         {
             return false;
         }

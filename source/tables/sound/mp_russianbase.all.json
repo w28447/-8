@@ -224,13 +224,13 @@
         {
             "value": 107,
             "next": 65535,
-            "name": "#hash_b4bcb7299deea2a",
+            "name": "#amb_chains",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_b4bcb7299deea2a",
+                    "name": "#amb_chains",
                     "assetId": "#amb/material_movement/rustling/chains/chains_lp_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -269,7 +269,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_b4bcb7299deea2a",
+                    "name": "#amb_chains",
                     "assetId": "#amb/material_movement/rustling/chains/chains_lp_01.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -308,7 +308,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_b4bcb7299deea2a",
+                    "name": "#amb_chains",
                     "assetId": "#amb/material_movement/rustling/chains/chains_lp_02.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -347,7 +347,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_b4bcb7299deea2a",
+                    "name": "#amb_chains",
                     "assetId": "#amb/material_movement/rustling/chains/chains_lp_03.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -386,7 +386,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_b4bcb7299deea2a",
+                    "name": "#amb_chains",
                     "assetId": "#amb/material_movement/rustling/chains/chains_lp_04.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -425,7 +425,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_b4bcb7299deea2a",
+                    "name": "#amb_chains",
                     "assetId": "#amb/material_movement/rustling/chains/chains_lp_05.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -664,13 +664,13 @@
         {
             "value": 79,
             "next": 65535,
-            "name": "#hash_16819fb1493c75ff",
+            "name": "#amb_comp_server",
             "sequence": 0,
             "cullDistance": 750,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_16819fb1493c75ff",
+                    "name": "#amb_comp_server",
                     "assetId": "#amb/electronics/computer/computer_bank/comp_bank_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -7944,13 +7944,13 @@
         {
             "value": 201,
             "next": 65535,
-            "name": "#hash_1ff8bec27dfc1b70",
+            "name": "#dst_fern",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1ff8bec27dfc1b70",
+                    "name": "#dst_fern",
                     "assetId": "#dst/prop/fern/fern_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -8880,13 +8880,13 @@
         {
             "value": 114,
             "next": 65535,
-            "name": "#hash_501eff91f639c23e",
+            "name": "#dst_glass_pane",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_501eff91f639c23e",
+                    "name": "#dst_glass_pane",
                     "assetId": "#dst/generic/glass/med/glass_break_medium_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -9505,13 +9505,13 @@
         {
             "value": 212,
             "next": 65535,
-            "name": "#hash_6a7bbff93ccc7ab7",
+            "name": "#dst_luggage",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6a7bbff93ccc7ab7",
+                    "name": "#dst_luggage",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
                     "assetFileNameRelease": "#mp_russianbase.all",
@@ -13068,13 +13068,13 @@
         {
             "value": 68,
             "next": 147,
-            "name": "#hash_38c96854fb0017e",
+            "name": "#dst_typewriter",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_38c96854fb0017e",
+                    "name": "#dst_typewriter",
                     "assetId": "#dst/prop/typewriter/typewriter_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -15290,13 +15290,13 @@
         {
             "value": 221,
             "next": 65535,
-            "name": "#hash_48bc31e222aa7c3e",
+            "name": "#exp_barrel_fire",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_48bc31e222aa7c3e",
+                    "name": "#exp_barrel_fire",
                     "assetId": "#dst/generic/fire/barrel/barrel_fire_02.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -20806,7 +20806,7 @@
                     "assetIdRelease": "#mp_russianbase.all",
                     "assetFileNameRelease": "#mp_russianbase.all",
                     "contextType": "#hash_730721b0b6373e1",
-                    "contextValue": "#hash_8f631787d4aaf77",
+                    "contextValue": "#outdoor",
                     "reverbSend": 0.001,
                     "centerSend": 0,
                     "volMin": 0.56234133,
@@ -20848,7 +20848,7 @@
                     "assetIdRelease": "#mp_russianbase.all",
                     "assetFileNameRelease": "#mp_russianbase.all",
                     "contextType": "#hash_730721b0b6373e1",
-                    "contextValue": "#hash_8f631787d4aaf77",
+                    "contextValue": "#outdoor",
                     "reverbSend": 0.001,
                     "centerSend": 0,
                     "volMin": 0.56234133,
@@ -21676,13 +21676,13 @@
         {
             "value": 130,
             "next": 222,
-            "name": "#hash_43ad48046fb206c8",
+            "name": "#exp_veh_small",
             "sequence": 0,
             "cullDistance": 12000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_43ad48046fb206c8",
+                    "name": "#exp_veh_small",
                     "secondaryname": "#hash_680a1ca45380de2",
                     "assetId": "#exp/vehicle/base/exp_veh_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
@@ -21723,7 +21723,7 @@
                     "unk178": "#hash_6000b0206"
                 },
                 {
-                    "name": "#hash_43ad48046fb206c8",
+                    "name": "#exp_veh_small",
                     "secondaryname": "#hash_680a1ca45380de2",
                     "assetId": "#exp/vehicle/base/exp_veh_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
@@ -21764,7 +21764,7 @@
                     "unk178": "#hash_6000b0206"
                 },
                 {
-                    "name": "#hash_43ad48046fb206c8",
+                    "name": "#exp_veh_small",
                     "secondaryname": "#hash_680a1ca45380de2",
                     "assetId": "#exp/vehicle/base/exp_veh_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
@@ -22274,13 +22274,13 @@
         {
             "value": 224,
             "next": 65535,
-            "name": "#hash_792fb19dd27becfc",
+            "name": "#pfx_exhaust",
             "sequence": 0,
             "cullDistance": 600,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_792fb19dd27becfc",
+                    "name": "#pfx_exhaust",
                     "assetId": "#amb/industrial/exhaust/exhaust_short.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -23440,7 +23440,7 @@
             "loop": "#hash_44463359dd025b23",
             "duckId": "#default",
             "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_8f631787d4aaf77",
+            "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": false,
@@ -23500,7 +23500,7 @@
             "loop": "#hash_589004cbff3bcd51",
             "duckId": "#default",
             "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_8f631787d4aaf77",
+            "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": true,

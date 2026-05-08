@@ -84,7 +84,7 @@ CoD.ButtonFrame_MeritRecord.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.TotalMeritsText = TotalMeritsText
 	
 	local KillMerits = CoD.PlayerStatsMerits.new( f1_arg0, f1_arg1, 0, 0, 23, 523, 0, 0, 218.5, 237.5 )
-	KillMerits.TypeText:setText( Engine[0xF9F1239CFD921FE]( 0x6B234CB46B5ACD4 ) )
+	KillMerits.TypeText:setText( Engine[0xF9F1239CFD921FE]( "menu/kills_caps" ) )
 	KillMerits:subscribeToGlobalModel( f1_arg1, "PlayerBarracksMerits", "kills", function ( model )
 		KillMerits:setModel( model, f1_arg1 )
 	end )

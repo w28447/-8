@@ -2484,7 +2484,7 @@
                 case #"hash_27a8af524430a8e1":
                     function_986a2585();
                     break;
-                case #"hash_5995af694f312813":
+                case #"cycle_death_fx":
                     function_faf7abce();
                     break;
                 case 0:
@@ -3315,9 +3315,9 @@
             self takeweapon( self zm_loadout::get_player_tactical_grenade() );
         }
         
-        if ( isdefined( level.var_5076c574 ) )
+        if ( isdefined( level.zombiemode_devgui_black_hole_bomb_give ) )
         {
-            self [[ level.var_5076c574 ]]();
+            self [[ level.zombiemode_devgui_black_hole_bomb_give ]]();
             
             while ( true )
             {
@@ -3346,9 +3346,9 @@
             self takeweapon( self zm_loadout::get_player_tactical_grenade() );
         }
         
-        if ( isdefined( level.var_3079bbd7 ) )
+        if ( isdefined( level.zombiemode_devgui_quantum_bomb_give ) )
         {
-            self [[ level.var_3079bbd7 ]]();
+            self [[ level.zombiemode_devgui_quantum_bomb_give ]]();
             
             while ( true )
             {
@@ -3377,9 +3377,9 @@
             self takeweapon( self zm_loadout::get_player_tactical_grenade() );
         }
         
-        if ( isdefined( level.var_42cebfa6 ) )
+        if ( isdefined( level.zombiemode_devgui_nesting_dolls_give ) )
         {
-            self [[ level.var_42cebfa6 ]]();
+            self [[ level.zombiemode_devgui_nesting_dolls_give ]]();
             
             while ( true )
             {
@@ -3408,9 +3408,9 @@
             self takeweapon( self zm_loadout::get_player_tactical_grenade() );
         }
         
-        if ( isdefined( level.var_153af402 ) )
+        if ( isdefined( level.zombiemode_devgui_emp_bomb_give ) )
         {
-            self [[ level.var_153af402 ]]();
+            self [[ level.zombiemode_devgui_emp_bomb_give ]]();
             
             while ( true )
             {
@@ -3892,9 +3892,9 @@
     // Size: 0x34, Type: dev
     function zombie_devgui_monkey_round()
     {
-        if ( isdefined( level.var_141b0a3a ) )
+        if ( isdefined( level.next_monkey_round ) )
         {
-            zombie_devgui_goto_round( level.var_141b0a3a );
+            zombie_devgui_goto_round( level.next_monkey_round );
         }
     }
 
@@ -3904,9 +3904,9 @@
     // Size: 0x34, Type: dev
     function zombie_devgui_thief_round()
     {
-        if ( isdefined( level.var_3a35aed4 ) )
+        if ( isdefined( level.next_thief_round ) )
         {
-            zombie_devgui_goto_round( level.var_3a35aed4 );
+            zombie_devgui_goto_round( level.next_thief_round );
         }
     }
 
@@ -3916,12 +3916,12 @@
     // Size: 0xec, Type: dev
     function zombie_devgui_dog_round( num_dogs )
     {
-        if ( !isdefined( level.var_57c1626e ) || !level.var_57c1626e )
+        if ( !isdefined( level.dogs_enabled ) || !level.dogs_enabled )
         {
             return;
         }
         
-        if ( !isdefined( level.var_a3f67fc2 ) || !level.var_a3f67fc2 )
+        if ( !isdefined( level.dog_rounds_enabled ) || !level.dog_rounds_enabled )
         {
             return;
         }
@@ -4518,9 +4518,9 @@
     // Size: 0x28, Type: dev
     function zombie_devgui_director_easy()
     {
-        if ( isdefined( level.var_e5cb87fe ) )
+        if ( isdefined( level.director_devgui_health ) )
         {
-            [[ level.var_e5cb87fe ]]();
+            [[ level.director_devgui_health ]]();
         }
     }
 

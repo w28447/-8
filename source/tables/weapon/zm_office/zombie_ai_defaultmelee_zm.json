@@ -29,5 +29,5 @@
     "sound240": "#hash_631a067190b54300",
     "sound250": "#hash_242aa17124751841",
     "tunables1": "#zombie_ai_defaultmelee_tunables_zm",
-    "sharedWeaponSounds": "#hash_74b924daa49aba34"
+    "sharedWeaponSounds": "#zm_zombie_melee"
 }

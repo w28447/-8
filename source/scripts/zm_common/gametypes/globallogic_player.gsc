@@ -524,19 +524,19 @@ function function_7314957c( player, result )
     var_811ed119.match_longshots = player player::function_2abc116( "longshots" );
     var_811ed119.prestige_max = player player::function_2abc116( "plevel" );
     var_811ed119.level_max = player player::function_2abc116( "rank" );
-    var_a14ea2be = spawnstruct();
-    var_a14ea2be.player_gender = player getplayergendertype( currentsessionmode() );
-    var_a14ea2be.loadout_primary_weapon = primaryweaponname;
-    var_a14ea2be.loadout_secondary_weapon = secondaryweaponname;
-    var_a14ea2be.loadout_primary_attachments = primaryweaponattachstr;
-    var_a14ea2be.loadout_secondary_attachments = secondaryweaponattachstr;
+    end_match_loadout = spawnstruct();
+    end_match_loadout.player_gender = player getplayergendertype( currentsessionmode() );
+    end_match_loadout.loadout_primary_weapon = primaryweaponname;
+    end_match_loadout.loadout_secondary_weapon = secondaryweaponname;
+    end_match_loadout.loadout_primary_attachments = primaryweaponattachstr;
+    end_match_loadout.loadout_secondary_attachments = secondaryweaponattachstr;
     end_match_zm = spawnstruct();
     end_match_zm.money = player.score;
     end_match_zm.zombie_waves = level.round_number;
     end_match_zm.revives = player player::function_2abc116( "revives" );
     end_match_zm.doors = player player::function_2abc116( "doors_purchased" );
     end_match_zm.downs = player player::function_2abc116( "downs" );
-    function_92d1707f( #"hash_4c5946fa1191bc64", #"hash_71960e91f80c3365", var_906bdcf3, #"hash_4682ee0eb5071d2", var_811ed119, #"hash_209c80d657442a83", var_a14ea2be, #"end_match_zm", end_match_zm );
+    function_92d1707f( #"dlog_event_end_match", #"hash_71960e91f80c3365", var_906bdcf3, #"hash_4682ee0eb5071d2", var_811ed119, #"end_match_loadout", end_match_loadout, #"end_match_zm", end_match_zm );
 }
 
 // Namespace globallogic_player/globallogic_player

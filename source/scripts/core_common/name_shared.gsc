@@ -513,7 +513,7 @@ function getrankfromname( name )
         case #"Pvt.":
             self.airank = "private";
             break;
-        case #"hash_5827a20dd30caea2":
+        case #"pfc.":
             self.airank = "private";
             break;
         case #"Cpl.":

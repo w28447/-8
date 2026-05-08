@@ -11,7 +11,7 @@ CoD.ScoreboardCoreStat.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local StatName = LUI.UIText.new( -0.8, -0.8, 61, 137, 0, 0, 0, 21 )
 	StatName:setRGB( 0.92, 0.89, 0.72 )
-	StatName:setText( Engine[0xF9F1239CFD921FE]( 0x6B234CB46B5ACD4 ) )
+	StatName:setText( Engine[0xF9F1239CFD921FE]( "menu/kills_caps" ) )
 	StatName:setTTF( "ttmussels_regular" )
 	StatName:setLetterSpacing( 2 )
 	StatName:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

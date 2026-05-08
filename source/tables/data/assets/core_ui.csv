@@ -345,7 +345,7 @@ image,d#ui_icon_callingcards_zm_gauntlet_red_bronze
 image,d#shotgun_pump_t8_camo_active_dlc5_fractalflames_01_icon
 image,d#pistol_burst_t8_camo_dlc4_fractalized_icon
 image,d#smg_handling_t8_camo_bravo_icon
-image,#hash_2d12be4c1bf7019
+image,#41_vanquisher
 image,#hash_2d24fb6b50944e1
 image,d#lmg_heavy_t8_camo_kilo_zm_icon
 image,d#uie_grey_plane
@@ -562,7 +562,7 @@ image,#menu_social_friendlist_warcraft3_icon
 image,d#shotgun_semiauto_t8_camo_delta_zm_icon
 image,#t7_decal_pattern_tiger
 image,d#ui_icon_meansofdeath_explosive_death
-image,#hash_6710f71fbdfb219
+image,#49_mp_101
 image,d#ar_accurate_t8_camo_none_icon
 image,d#smg_folding_t8_camo_dlc3_board_shorts_icon
 image,d#smg_standard_t8_camo_echo_icon
@@ -1729,7 +1729,7 @@ image,d#special_crossbow_t8_camo_foxtrot_zm_icon
 image,d#melee_demohammer_t8_camo_golf_wz_icon
 image,d#hash_1a08a41b4ceba2e0
 image,d#uie_ui_menu_contracts_ring_complete
-image,#hash_1a11cb42c53b7199
+image,#51_centennial
 image,d#ui_icon_callingcards_mp_bootcamp_stalkingprey
 image,d#loot06_ui_icon_blackmarket_itemdetail_encrypted
 image,d#hash_1a15336cfb3ae9ce
@@ -1824,7 +1824,7 @@ image,d#melee_stopsign_t8_camo_golf_icon
 image,#em_biohazard_full
 image,d#smg_capacity_t8_camo_active_dlc3_mystic_01_icon
 image,d#sniper_powerbolt_t8_camo_bravo_wz_icon
-image,d#hash_1b6bb60910737455
+image,d#ui_menu_popups_toastnotification_icon_fail
 image,d#uie_vortex_background
 image,d#ar_standard_t8_camo_bravo_wz_icon
 image,#uie_t7_menu_frontend_listsubheadpanelfull
@@ -2001,7 +2001,7 @@ image,d#ar_stealth_t8_camo_gold_icon
 image,#t7_icons_controller_rs
 image,d#melee_coinbag_t8_camo_lima_icon
 image,d#menu_camo_dlc1_cherryblossom
-image,#hash_1deba4d089ea5843
+image,#53_sleuth
 image,d#smg_accurate_t8_camo_mike_wz_icon
 image,d#tr_flechette_t8_camo_india_icon
 image,d#sniper_mini14_t8_camo_india_icon
@@ -2146,7 +2146,7 @@ image,d#ui_icon_mp_league_26_02b_large
 image,d#sniper_fastrechamber_t8_camo_dlc3_blowfish_icon
 image,d#smg_folding_t8_camo_gold_icon
 image,#hash_200f0950c9a409f6
-image,#hash_2010acae8fa12e25
+image,#96_fetch
 image,d#smg_accurate_t8_camo_lima_icon
 image,d#sniper_powerbolt_t8_camo_kilo_icon
 image,d#uie_ui_menu_customgame_indicator_focused
@@ -5645,7 +5645,7 @@ image,d#ui_icon_callingcards_mp_specialized_master
 image,d#shotgun_pump_t8_camo_dlc5_connected_icon
 image,d#melee_cutlass_t8_camo_hotel_icon
 image,d#smg_fastburst_t8_camo_juliett_icon
-image,#hash_52e5013fc07f12a5
+image,#98_secret
 image,d#melee_coinbag_t8_camo_hotel_zm_icon
 image,d#hash_52eb1680b294e084
 image,#hash_52eb419bce632681
@@ -7959,7 +7959,7 @@ image,d#melee_zombiearm_t8_camo_kilo_zm_icon
 image,d#ui_icon_callingcards_mp_prestige_tacticalkits_steadyshooting
 image,d#ui_icon_mp_league_06_02b_large
 image,d#ui_icon_callingcards_mp_career_gamevictories_master
-image,d#hash_782a73aea0a68bc6
+image,d#ui_menu_popups_toastnotification_icon_mail
 image,d#ui_icon_callingcards_mp_operations_killjoys_weakpoint
 image,d#tr_flechette_t8_camo_kilo_zm_icon
 image,#uie_t7_icon_network_wired1
@@ -9924,7 +9924,7 @@ luafile,#ui/uieditor/widgets/controllerdependent_textbox.lua
 luafile,#ui/uieditor/widgets/pc/startmenu/pc_startmenu_options_listcontainer.lua
 luafile,#hash_121385a035d75202
 luafile,#ui/uieditor/widgets/pc/utility/genericclickbutton.lua
-luafile,#hash_122e4ff7e027aab8
+luafile,#ui/uieditor/modifyfunctions_helper.lua
 luafile,#ui/uieditor/widgets/freecursor/infopanelsubwidgets/freecursornolabelbuttonpromptarea.lua
 luafile,#ui/uieditor/widgets/cplevels/cpvoteskippingscene.lua
 luafile,#ui/uieditor/widgets/mphudwidgets/healthbarwaypoint.lua
@@ -10562,7 +10562,7 @@ luafile,#ui/uieditor/widgets/startmenu/startmenu_options_button.lua
 luafile,#ui/uieditor/widgets/common/commontabbar.lua
 luafile,#ui/uieditor/widgets/social/social_managepartyplayerbuttonrankdetailswithrubies.lua
 luafile,#ui/uieditor/widgets/callingcards/callingcards_prestige_prestige_badass.lua
-luafile,#hash_600a0cd1a7de9d0f
+luafile,#ui/uieditor/modifyfunctions.lua
 luafile,#ui/uieditor/widgets/customgames/customgames_settingsliderlist.lua
 luafile,#ui/uieditor/widgets/pc/socialmenu/pcsocialmenu_framedbutton.lua
 luafile,#ui/uieditor/widgets/arena/arenaprogressionrubies.lua
@@ -10611,7 +10611,7 @@ luafile,#ui/uieditor/widgets/pc/footer/footer_bg.lua
 luafile,#ui/uieditor/widgets/callingcards/loot2/callingcards_loot2_surrealistlandscapes_stairs.lua
 luafile,#ui/uieditor/widgets/pc_achievementprogressbar.lua
 luafile,#ui/uieditor/datasources.lua
-luafile,#hash_65e0f07b7d2d1412
+luafile,#ui/uieditor/colorsets.lua
 luafile,#ui/uieditor/widgets/systemoverlays/featureoverlay_layout.lua
 luafile,#ui/uieditor/widgets/callingcards/callingcards_summer_lenseflare.lua
 luafile,#ui/uieditor/widgets/pc/contextualmenuaction.lua
@@ -12006,7 +12006,7 @@ scriptbundlelist,#gsol_mp_perk2_restriction
 scriptbundlelist,#hash_19ed388e75adb17e
 scriptbundlelist,#gsol_mp_operatormod_restriction
 scriptbundlelist,#hash_21aa317708a48a81
-scriptbundlelist,#hash_2e1d867da45be574
+scriptbundlelist,#pc_gameplay_options
 scriptbundlelist,#hash_3216798c8afe6c5d
 scriptbundlelist,#hash_361dd84fb29836e3
 scriptbundlelist,#gsol_mp_equipment_restriction

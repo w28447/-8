@@ -277,13 +277,13 @@
         {
             "value": 234,
             "next": 65535,
-            "name": "#hash_1022ae0884bf3b3f",
+            "name": "#amb_chicken_1",
             "sequence": 0,
             "cullDistance": 1600,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1022ae0884bf3b3f",
+                    "name": "#amb_chicken_1",
                     "assetId": "#hash_3d6740e3e82e6034",
                     "assetFileNameSustain": "#mp_embassy.all",
                     "assetIdRelease": "#mp_embassy.all",
@@ -326,13 +326,13 @@
         {
             "value": 149,
             "next": 57,
-            "name": "#hash_1022af0884bf3cf2",
+            "name": "#amb_chicken_2",
             "sequence": 0,
             "cullDistance": 1600,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1022af0884bf3cf2",
+                    "name": "#amb_chicken_2",
                     "assetId": "#hash_2dc7927623444745",
                     "assetFileNameSustain": "#mp_embassy.all",
                     "assetIdRelease": "#mp_embassy.all",
@@ -1857,13 +1857,13 @@
         {
             "value": 65,
             "next": 65535,
-            "name": "#hash_3dafc6f07b5d5ab4",
+            "name": "#amb_flagpole",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3dafc6f07b5d5ab4",
+                    "name": "#amb_flagpole",
                     "assetId": "#amb/environment/wind/flagpole/amb_wind_flagpole_loop_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_embassy.all",
                     "assetIdRelease": "#mp_embassy.all",
@@ -1906,13 +1906,13 @@
         {
             "value": 39,
             "next": 29,
-            "name": "#hash_633b9532cf0da169",
+            "name": "#amb_flies",
             "sequence": 0,
             "cullDistance": 350,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_633b9532cf0da169",
+                    "name": "#amb_flies",
                     "assetId": "#amb/animals/insects/flies/flies_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_embassy.all",
                     "assetIdRelease": "#mp_embassy.all",
@@ -1951,7 +1951,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_633b9532cf0da169",
+                    "name": "#amb_flies",
                     "assetId": "#amb/animals/insects/flies/flies_02.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_embassy.all",
                     "assetIdRelease": "#mp_embassy.all",
@@ -1994,13 +1994,13 @@
         {
             "value": 64,
             "next": 31,
-            "name": "#hash_3ed7da7fbe6badc1",
+            "name": "#amb_garage",
             "sequence": 0,
             "cullDistance": 4000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3ed7da7fbe6badc1",
+                    "name": "#amb_garage",
                     "assetId": "#hash_47a90a4e56eac83",
                     "assetFileNameSustain": "#mp_embassy.all",
                     "assetIdRelease": "#mp_embassy.all",
@@ -4493,13 +4493,13 @@
         {
             "value": 203,
             "next": 65535,
-            "name": "#hash_eb5bffa1c857b20",
+            "name": "#amb_parrot_1",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_eb5bffa1c857b20",
+                    "name": "#amb_parrot_1",
                     "assetId": "#amb/animals/birds/parrots/shop/parrots_shop_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_embassy.all",
                     "assetIdRelease": "#mp_embassy.all",
@@ -4542,13 +4542,13 @@
         {
             "value": 217,
             "next": 65535,
-            "name": "#hash_eb5c2fa1c858039",
+            "name": "#amb_parrot_2",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_eb5c2fa1c858039",
+                    "name": "#amb_parrot_2",
                     "assetId": "#amb/animals/birds/parrots/shop/parrots_shop_01.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_embassy.all",
                     "assetIdRelease": "#mp_embassy.all",
@@ -5558,13 +5558,13 @@
         {
             "value": 31,
             "next": 65535,
-            "name": "#hash_43631349fa678e8c",
+            "name": "#amb_seahorse",
             "sequence": 0,
             "cullDistance": 800,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_43631349fa678e8c",
+                    "name": "#amb_seahorse",
                     "assetId": "#hash_48e93193af1461e6",
                     "assetFileNameSustain": "#mp_embassy.all",
                     "assetIdRelease": "#mp_embassy.all",
@@ -10548,13 +10548,13 @@
         {
             "value": 137,
             "next": 106,
-            "name": "#hash_1ff8bec27dfc1b70",
+            "name": "#dst_fern",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1ff8bec27dfc1b70",
+                    "name": "#dst_fern",
                     "assetId": "#dst/prop/fern/fern_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_embassy.all",
                     "assetIdRelease": "#mp_embassy.all",
@@ -11484,13 +11484,13 @@
         {
             "value": 45,
             "next": 116,
-            "name": "#hash_501eff91f639c23e",
+            "name": "#dst_glass_pane",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_501eff91f639c23e",
+                    "name": "#dst_glass_pane",
                     "assetId": "#dst/generic/glass/med/glass_break_medium_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_embassy.all",
                     "assetIdRelease": "#mp_embassy.all",
@@ -12109,13 +12109,13 @@
         {
             "value": 120,
             "next": 65535,
-            "name": "#hash_6a7bbff93ccc7ab7",
+            "name": "#dst_luggage",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6a7bbff93ccc7ab7",
+                    "name": "#dst_luggage",
                     "assetFileNameSustain": "#mp_embassy.all",
                     "assetIdRelease": "#mp_embassy.all",
                     "assetFileNameRelease": "#mp_embassy.all",
@@ -14938,13 +14938,13 @@
         {
             "value": 174,
             "next": 65535,
-            "name": "#hash_38c96854fb0017e",
+            "name": "#dst_typewriter",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_38c96854fb0017e",
+                    "name": "#dst_typewriter",
                     "assetId": "#dst/prop/typewriter/typewriter_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_embassy.all",
                     "assetIdRelease": "#mp_embassy.all",
@@ -17309,13 +17309,13 @@
         {
             "value": 121,
             "next": 126,
-            "name": "#hash_48bc31e222aa7c3e",
+            "name": "#exp_barrel_fire",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_48bc31e222aa7c3e",
+                    "name": "#exp_barrel_fire",
                     "assetId": "#dst/generic/fire/barrel/barrel_fire_02.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_embassy.all",
                     "assetIdRelease": "#mp_embassy.all",
@@ -22825,7 +22825,7 @@
                     "assetIdRelease": "#mp_embassy.all",
                     "assetFileNameRelease": "#mp_embassy.all",
                     "contextType": "#hash_730721b0b6373e1",
-                    "contextValue": "#hash_8f631787d4aaf77",
+                    "contextValue": "#outdoor",
                     "reverbSend": 0.001,
                     "centerSend": 0,
                     "volMin": 0.56234133,
@@ -22867,7 +22867,7 @@
                     "assetIdRelease": "#mp_embassy.all",
                     "assetFileNameRelease": "#mp_embassy.all",
                     "contextType": "#hash_730721b0b6373e1",
-                    "contextValue": "#hash_8f631787d4aaf77",
+                    "contextValue": "#outdoor",
                     "reverbSend": 0.001,
                     "centerSend": 0,
                     "volMin": 0.56234133,
@@ -23695,13 +23695,13 @@
         {
             "value": 36,
             "next": 225,
-            "name": "#hash_43ad48046fb206c8",
+            "name": "#exp_veh_small",
             "sequence": 0,
             "cullDistance": 12000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_43ad48046fb206c8",
+                    "name": "#exp_veh_small",
                     "secondaryname": "#hash_680a1ca45380de2",
                     "assetId": "#exp/vehicle/base/exp_veh_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_embassy.all",
@@ -23742,7 +23742,7 @@
                     "unk178": "#hash_6000b0206"
                 },
                 {
-                    "name": "#hash_43ad48046fb206c8",
+                    "name": "#exp_veh_small",
                     "secondaryname": "#hash_680a1ca45380de2",
                     "assetId": "#exp/vehicle/base/exp_veh_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_embassy.all",
@@ -23783,7 +23783,7 @@
                     "unk178": "#hash_6000b0206"
                 },
                 {
-                    "name": "#hash_43ad48046fb206c8",
+                    "name": "#exp_veh_small",
                     "secondaryname": "#hash_680a1ca45380de2",
                     "assetId": "#exp/vehicle/base/exp_veh_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_embassy.all",
@@ -24293,13 +24293,13 @@
         {
             "value": 151,
             "next": 65535,
-            "name": "#hash_1d1a520e6a483b05",
+            "name": "#pfx_bubbles",
             "sequence": 0,
             "cullDistance": 750,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1d1a520e6a483b05",
+                    "name": "#pfx_bubbles",
                     "assetId": "#hash_16abb3c90060880",
                     "assetFileNameSustain": "#mp_embassy.all",
                     "assetIdRelease": "#mp_embassy.all",
@@ -24713,13 +24713,13 @@
         {
             "value": 192,
             "next": 43,
-            "name": "#hash_792fb19dd27becfc",
+            "name": "#pfx_exhaust",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_792fb19dd27becfc",
+                    "name": "#pfx_exhaust",
                     "assetId": "#amb/industrial/exhaust/exhaust_short.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_embassy.all",
                     "assetIdRelease": "#mp_embassy.all",
@@ -26055,11 +26055,11 @@
             "loop": "#hash_44463359dd025b23",
             "duckId": "#default",
             "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_8f631787d4aaf77",
+            "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_8f631787d4aaf77",
+            "globalContextValue": "#outdoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,
@@ -26143,11 +26143,11 @@
             "loop": "#hash_11053d14a02e37fa",
             "duckId": "#default",
             "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_8f631787d4aaf77",
+            "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_8f631787d4aaf77",
+            "globalContextValue": "#outdoor",
             "defaultRoom": true,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,
@@ -26191,7 +26191,7 @@
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_8f631787d4aaf77",
+            "globalContextValue": "#outdoor",
             "defaultRoom": false,
             "reverbDryLevel": 0.7,
             "reverbWetLevel": 1,

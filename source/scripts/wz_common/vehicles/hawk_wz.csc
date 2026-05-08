@@ -499,7 +499,7 @@ function private function_35046386( target )
 // Params 2, eflags: 0x4
 // Checksum 0x838105ba, Offset: 0x1968
 // Size: 0x5fe
-function private function_d53feb8c( localclientnum, targets )
+function private update_target_hud( localclientnum, targets )
 {
     var_b3f5ea99 = self getentitynumber();
     var_1dcaad7e = [];
@@ -612,7 +612,7 @@ function private function_a552c160( localclientnum )
         if ( function_a0e351e0( localclientnum ) )
         {
             targets = self function_bba5f8f7();
-            self function_d53feb8c( localclientnum, targets );
+            self update_target_hud( localclientnum, targets );
         }
         
         waitframe( 1 );
@@ -732,9 +732,9 @@ function function_775073e( localclientnum )
         codestoppostfxbundlelocal( localclientnum, #"hash_63b0389eb9286669" );
     }
     
-    if ( !function_148ccc79( localclientnum, #"hash_594d5293046135ff" ) )
+    if ( !function_148ccc79( localclientnum, #"pstfx_mp_recon_drone" ) )
     {
-        function_a837926b( localclientnum, #"hash_594d5293046135ff" );
+        function_a837926b( localclientnum, #"pstfx_mp_recon_drone" );
     }
     
     var_e39026ad = createuimodel( getuimodelforcontroller( localclientnum ), "hudItems.hawkWeakSignal" );
@@ -751,9 +751,9 @@ function function_775073e( localclientnum )
 // Size: 0xec
 function function_6367489e( localclientnum )
 {
-    if ( function_148ccc79( localclientnum, #"hash_594d5293046135ff" ) )
+    if ( function_148ccc79( localclientnum, #"pstfx_mp_recon_drone" ) )
     {
-        codestoppostfxbundlelocal( localclientnum, #"hash_594d5293046135ff" );
+        codestoppostfxbundlelocal( localclientnum, #"pstfx_mp_recon_drone" );
     }
     
     if ( !function_148ccc79( localclientnum, #"hash_63b0389eb9286669" ) )
@@ -775,9 +775,9 @@ function function_6367489e( localclientnum )
 // Size: 0xec
 function function_3759fcf( localclientnum, var_c5e2f09a )
 {
-    if ( function_148ccc79( localclientnum, #"hash_594d5293046135ff" ) )
+    if ( function_148ccc79( localclientnum, #"pstfx_mp_recon_drone" ) )
     {
-        codestoppostfxbundlelocal( localclientnum, #"hash_594d5293046135ff" );
+        codestoppostfxbundlelocal( localclientnum, #"pstfx_mp_recon_drone" );
     }
     
     if ( function_148ccc79( localclientnum, #"hash_63b0389eb9286669" ) )
@@ -836,8 +836,8 @@ function private function_8487fabe( localclientnum )
     var_82bf9f7b = self.owner getplayerangles();
     forward = anglestoforward( var_82bf9f7b );
     bundle = level.hawk_settings.bundle;
-    var_e4f883c1 = bundle.var_957e91c4 * bundle.var_957e91c4;
-    enemies = self function_2d90a835( localclientnum, bundle.var_957e91c4 );
+    var_e4f883c1 = bundle.tag_distance * bundle.tag_distance;
+    enemies = self function_2d90a835( localclientnum, bundle.tag_distance );
     
     if ( !isdefined( self.var_5f360c48 ) )
     {
@@ -975,6 +975,6 @@ function private function_bba5f8f7()
     
     function_1eaaceab( targets );
     bundle = level.hawk_settings.bundle;
-    return arraysortclosest( targets, var_ef7046e6, bundle.var_48e78794, 0, bundle.var_957e91c4 );
+    return arraysortclosest( targets, var_ef7046e6, bundle.var_48e78794, 0, bundle.tag_distance );
 }
 

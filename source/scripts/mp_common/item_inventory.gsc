@@ -318,7 +318,7 @@ function private event_handler[grenade_fire] function_4776caf4( eventstruct )
             }
         }
         
-        var_aec6fa7f = undefined;
+        itemamount = undefined;
         
         if ( !var_994e5c9a )
         {
@@ -331,7 +331,7 @@ function private event_handler[grenade_fire] function_4776caf4( eventstruct )
                 
                 if ( isdefined( item ) && item.amount > 0 )
                 {
-                    var_aec6fa7f = item.amount;
+                    itemamount = item.amount;
                 }
             }
             
@@ -368,7 +368,7 @@ function private event_handler[grenade_fire] function_4776caf4( eventstruct )
                 {
                     if ( isdefined( item ) )
                     {
-                        self._trophy_system_ammo1 = var_aec6fa7f;
+                        self._trophy_system_ammo1 = itemamount;
                     }
                 }
                 
@@ -1593,11 +1593,11 @@ function function_6d647220( item )
     
     if ( isdefined( self.var_3f1410dd ) )
     {
-        self.var_3f1410dd.repair_amount += int( min( isdefined( armoritem.itementry.var_a3aa1ca2 ) ? armoritem.itementry.var_a3aa1ca2 : 0, self.maxarmor - self.armor ) );
-        self.var_3f1410dd.var_7352c057++;
+        self.var_3f1410dd.repair_amount += int( min( isdefined( armoritem.itementry.shardrepair ) ? armoritem.itementry.shardrepair : 0, self.maxarmor - self.armor ) );
+        self.var_3f1410dd.repair_count++;
     }
     
-    self.armor = int( min( self.armor + ( isdefined( armoritem.itementry.var_a3aa1ca2 ) ? armoritem.itementry.var_a3aa1ca2 : 0 ), self.maxarmor ) );
+    self.armor = int( min( self.armor + ( isdefined( armoritem.itementry.shardrepair ) ? armoritem.itementry.shardrepair : 0 ), self.maxarmor ) );
     function_bdc03d88();
     self function_6c36ab6b();
     self function_db2abc4( item );
@@ -2250,14 +2250,14 @@ function drop_inventory_item( networkid, stashitem = 0, var_7cab8e12 = undefined
 // Params 2
 // Checksum 0xc4d0dcdb, Offset: 0x7138
 // Size: 0x22e
-function equip_ammo( item, var_aec6fa7f )
+function equip_ammo( item, itemamount )
 {
     assert( isplayer( self ) );
     assert( isdefined( item ) );
     self function_db2abc4( item );
     itementry = item.itementry;
     ammoweapon = itementry.weapon;
-    ammoamount = isdefined( itementry.amount ) ? itementry.amount : isdefined( var_aec6fa7f ) ? var_aec6fa7f : 1;
+    ammoamount = isdefined( itementry.amount ) ? itementry.amount : isdefined( itemamount ) ? itemamount : 1;
     maxstockammo = item_inventory_util::function_2879cbe0( self.inventory.var_7658cbec, ammoweapon );
     currentammostock = self getweaponammostock( ammoweapon );
     var_9b9ba643 = maxstockammo - currentammostock;
@@ -2268,7 +2268,7 @@ function equip_ammo( item, var_aec6fa7f )
         self.inventory.ammo[ ammoweapon.name ] = item.id;
         self function_fc9f8b05( ammoweapon, addammo );
         
-        if ( isdefined( var_aec6fa7f ) )
+        if ( isdefined( itemamount ) )
         {
             return ( ammoamount - addammo );
         }
@@ -2291,7 +2291,7 @@ function function_4cde30fa( inventoryitem, itementry )
         return;
     }
     
-    self.var_3f1410dd = { #player_xuid:int( self getxuid( 1 ) ), #start_time:function_f8d53445(), #end_time:0, #var_4550558c:isdefined( inventoryitem.amount ) ? inventoryitem.amount : 0, #tier:isdefined( itementry.armortier ) ? itementry.armortier : 1, #damage_taken:0, #var_7352c057:0, #repair_amount:0, #broken:0, #died:0 };
+    self.var_3f1410dd = { #player_xuid:int( self getxuid( 1 ) ), #start_time:function_f8d53445(), #end_time:0, #starting_armor:isdefined( inventoryitem.amount ) ? inventoryitem.amount : 0, #tier:isdefined( itementry.armortier ) ? itementry.armortier : 1, #damage_taken:0, #repair_count:0, #repair_amount:0, #broken:0, #died:0 };
 }
 
 // Namespace item_inventory/item_inventory
@@ -2327,7 +2327,7 @@ function equip_armor( item )
     }
     
     self function_db2abc4( item );
-    self armor::set_armor( inventoryitem.amount, isdefined( itementry.amount ) ? itementry.amount : 0, isdefined( itementry.armortier ) ? itementry.armortier : 1, isdefined( itementry.var_99c0cb08 ) ? itementry.var_99c0cb08 : 1, isdefined( itementry.var_2ee21ae6 ) ? itementry.var_2ee21ae6 : 1, isdefined( itementry.var_c690c73d ) ? itementry.var_c690c73d : 1, isdefined( itementry.var_99edb6a3 ) ? itementry.var_99edb6a3 : 1, isdefined( itementry.var_22c3ab38 ) ? itementry.var_22c3ab38 : 1, isdefined( itementry.var_9f307988 ) ? itementry.var_9f307988 : 1, isdefined( itementry.var_7a80f06e ) ? itementry.var_7a80f06e : 1, isdefined( itementry.explosivedamagescale ) ? itementry.explosivedamagescale : 1, isdefined( itementry.var_f2902d7b ) ? itementry.var_f2902d7b : 1, itementry.var_19f48bbe );
+    self armor::set_armor( inventoryitem.amount, isdefined( itementry.amount ) ? itementry.amount : 0, isdefined( itementry.armortier ) ? itementry.armortier : 1, isdefined( itementry.var_99c0cb08 ) ? itementry.var_99c0cb08 : 1, isdefined( itementry.var_2ee21ae6 ) ? itementry.var_2ee21ae6 : 1, isdefined( itementry.var_c690c73d ) ? itementry.var_c690c73d : 1, isdefined( itementry.var_99edb6a3 ) ? itementry.var_99edb6a3 : 1, isdefined( itementry.var_22c3ab38 ) ? itementry.var_22c3ab38 : 1, isdefined( itementry.var_9f307988 ) ? itementry.var_9f307988 : 1, isdefined( itementry.var_7a80f06e ) ? itementry.var_7a80f06e : 1, isdefined( itementry.explosivedamagescale ) ? itementry.explosivedamagescale : 1, isdefined( itementry.armorexplosivedamagescale ) ? itementry.armorexplosivedamagescale : 1, itementry.armorlocations );
     self function_4cde30fa( inventoryitem, itementry );
     self.inventory.items[ 11 ] = inventoryitem;
     self function_b00db06( 6, item.networkid );
@@ -3415,7 +3415,7 @@ function function_3f7ef88()
 // Params 4
 // Checksum 0xe71cdc1b, Offset: 0xab38
 // Size: 0xe80
-function give_inventory_item( item, itemcount = 1, var_aec6fa7f = 0, slotid = undefined )
+function give_inventory_item( item, itemcount = 1, itemamount = 0, slotid = undefined )
 {
     if ( !isplayer( self ) || !isdefined( self.inventory ) )
     {
@@ -3533,7 +3533,7 @@ function give_inventory_item( item, itemcount = 1, var_aec6fa7f = 0, slotid = un
             var_8c6165fc = int( min( itemcount, maxstacksize ) );
             item.networkid = item_world_util::function_970b8d86( self, slotid );
             item_inventory_util::function_6e9e7169( item );
-            var_92d652f2.amount = var_aec6fa7f;
+            var_92d652f2.amount = itemamount;
             var_92d652f2.count = var_8c6165fc;
             var_92d652f2.id = itemid;
             var_92d652f2.networkid = item.networkid;
@@ -3635,7 +3635,7 @@ function give_inventory_item( item, itemcount = 1, var_aec6fa7f = 0, slotid = un
         {
             var_8c6165fc = int( min( itemcount, maxstacksize ) );
             item.networkid = item_world_util::function_970b8d86( self, i );
-            self.inventory.items[ i ].amount = var_aec6fa7f;
+            self.inventory.items[ i ].amount = itemamount;
             self.inventory.items[ i ].count = var_8c6165fc;
             self.inventory.items[ i ].id = itemid;
             self.inventory.items[ i ].networkid = item.networkid;

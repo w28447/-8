@@ -4,13 +4,13 @@
             "ksaltweapon": "weapon#amws_gun_turret_mp"
         },
         {
-            "ksaltweapon": "weapon#hash_3f3230daf2378c17"
+            "ksaltweapon": "weapon#amws_launcher_turret_mp"
         },
         {
             "ksaltweapon": "weapon#amws_gun_turret_mp_player"
         },
         {
-            "ksaltweapon": "weapon#hash_63aad3bc732f36cd"
+            "ksaltweapon": "weapon#amws_launcher_turret_mp_player"
         }
     ],
     "ksbladeendspreadradius": 1,

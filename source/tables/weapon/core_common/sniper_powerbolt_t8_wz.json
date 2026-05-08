@@ -78,7 +78,7 @@
     "weaponCamo": "#hash_3a8bb47020a85ef1",
     "cacWeaponXCam": "#ui_cam_cac_sniper_powerbolt",
     "cacAttachmentsXCam": "#ui_cam_cac_sniper_powerbolt",
-    "weaponIconXCam": "#hash_5edd5d68b4135dc0",
+    "weaponIconXCam": "#ui_cam_icon_sniper_powerbolt",
     "attachments": [
         "#hash_f459a0af8e8f912b",
         "#acog_wz",
@@ -126,8 +126,8 @@
     "fx_c88": "#hash_322a4fa483be6b03",
     "fx_c90": "#hash_322a4fa483be6b03",
     "fx_c98": "#hash_322a4fa483be6b03",
-    "normalImpactFX": "#hash_7ee0671def6af7a4",
-    "exitImpactFX": "#hash_56ef4fc6c00cc18e",
+    "normalImpactFX": "#bullet_xlarge_enter",
+    "exitImpactFX": "#bullet_large_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_50191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

@@ -174,17 +174,17 @@ function get_death_vox( meansofdeath, roleindex )
             case #"mod_melee_weapon_butt":
                 return playerbundle.exertdeathstabbed;
             case #"mod_head_shot":
-                return playerbundle.var_207908de;
+                return playerbundle.exertdeathheadshot;
             case #"mod_falling":
-                return playerbundle.var_1dfcabbd;
+                return playerbundle.exertdeathfalling;
             case #"mod_drown":
                 return playerbundle.exertdeathdrowned;
             case #"mod_explosive":
-                return playerbundle.var_44d86dec;
+                return playerbundle.exertexplosive;
             case #"mod_dot_self":
                 return playerbundle.var_48305ed9;
             case #"mod_dot":
-                return playerbundle.var_f8b4bcc1;
+                return playerbundle.exertdeathradiation;
             case #"mod_melee_assassinate":
                 return playerbundle.exertdeathstabbed;
             case #"mod_electrocuted":
@@ -485,68 +485,68 @@ function function_6bb302ba( weapon, playerbundle )
     switch ( weapon.name )
     {
         case #"hero_annihilator":
-            var_cf38843b = playerbundle.var_fc5812eb;
+            var_cf38843b = playerbundle.annihilatorweaponsuccessresponse;
             break;
         case #"sig_buckler_dw":
         case #"sig_buckler_turret":
-            var_cf38843b = playerbundle.var_4fa3c4aa;
+            var_cf38843b = playerbundle.battleshieldweaponsuccessresponse;
             break;
         case #"dog_ai_defaultmelee":
-            var_cf38843b = playerbundle.var_4ea15dd3;
+            var_cf38843b = playerbundle.dogweaponsuccessresponse;
             break;
         case #"hero_flamethrower":
-            var_cf38843b = playerbundle.var_772dbd73;
+            var_cf38843b = playerbundle.purifierweaponsuccessresponse;
             break;
         case #"eq_gravityslam":
-            var_cf38843b = playerbundle.var_3e1a4fb8;
+            var_cf38843b = playerbundle.gravityslamweaponsuccessresponse;
             break;
         case #"gun_mini_turret":
             var_cf38843b = playerbundle.var_dbd1897a;
             break;
         case #"sig_bow_quickshot4":
-            var_cf38843b = playerbundle.var_3841aa5a;
+            var_cf38843b = playerbundle.sparrowweaponsuccessresponse;
             break;
         case #"sig_minigun_turret_44":
             var_cf38843b = playerbundle.var_c518a57;
             break;
         case #"shock_rifle":
         case #"hero_lightninggun":
-            var_cf38843b = playerbundle.var_c7859303;
+            var_cf38843b = playerbundle.tempestweaponsuccessresponse;
             break;
         case #"eq_tripwire":
-            var_cf38843b = playerbundle.var_23b68936;
+            var_cf38843b = playerbundle.tripwireweaponsuccessresponse;
             break;
         case #"hero_pineapplegun":
-            var_cf38843b = playerbundle.var_bbf7c71f;
+            var_cf38843b = playerbundle.warmachineweaponsuccessresponse;
             break;
         case #"gadget_health_boost":
         case #"gadget_cleanse":
-            var_cf38843b = playerbundle.var_26d4d8b3;
+            var_cf38843b = playerbundle.cleanseweaponsuccessresponse;
             break;
         case #"eq_concertina_wire":
-            var_cf38843b = playerbundle.var_54475e1e;
+            var_cf38843b = playerbundle.concertinawireweaponsuccessresponse;
             break;
         case #"gadget_radiation_field":
-            var_cf38843b = playerbundle.var_f613c4d1;
+            var_cf38843b = playerbundle.radiationfieldweaponsuccessresponse;
             break;
         case #"eq_sensor":
-            var_cf38843b = playerbundle.var_f3b38bf6;
+            var_cf38843b = playerbundle.sensordartweaponsuccessresponse;
             break;
         case #"gadget_supplypod":
             var_cf38843b = playerbundle.var_54c097dc;
             break;
         case #"gadget_vision_pulse":
-            var_cf38843b = playerbundle.var_cf906c68;
+            var_cf38843b = playerbundle.visionpulseabilitysuccessresponse;
             break;
         case #"eq_localheal":
             var_cf38843b = playerbundle.var_d32aca42;
             break;
         case #"molotov_fire":
         case #"eq_molotov":
-            var_cf38843b = playerbundle.var_140be686;
+            var_cf38843b = playerbundle.molotovweaponsuccessresponse;
             break;
         case #"gadget_icepick":
-            var_cf38843b = playerbundle.var_c62c0c00;
+            var_cf38843b = playerbundle.icepickweaponsuccessresponse;
             break;
         case #"sig_blade":
             var_cf38843b = playerbundle.var_c5a434fd;

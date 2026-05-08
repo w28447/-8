@@ -881,7 +881,7 @@ function function_6bc15e29()
     self endoncallback( &function_5ba71388, #"death", #"hash_2189212647bbe100" );
     var_43b8f3ab = getweapon( #"hero_flamethrower" );
     var_76968823 = getweapon( #"gadget_health_regen" );
-    var_46ccfe18 = getweapon( #"bare_hands_ct" );
+    wpn_barehands = getweapon( #"bare_hands_ct" );
     
     do
     {
@@ -890,7 +890,7 @@ function function_6bc15e29()
         n_ammo = self getweaponammoclip( var_43b8f3ab );
         var_fa32f88a = self getweaponammofuel( var_43b8f3ab );
         
-        if ( n_ammo == 0 || wpn_current == var_46ccfe18 )
+        if ( n_ammo == 0 || wpn_current == wpn_barehands )
         {
             a_bots = self ct_bots::function_dde6edbd();
             
@@ -2037,7 +2037,7 @@ function function_78986232( params )
         var_595e41ee = 100;
         event = #"ekia";
         eventindex = level.scoreinfo[ event ][ #"row" ];
-        eattacker globallogic_score::giveplayermomentumnotification( var_595e41ee, #"hash_480234a872bd64ac", undefined, 0, weapon, 0, eventindex, event, undefined );
+        eattacker globallogic_score::giveplayermomentumnotification( var_595e41ee, #"score/blank", undefined, 0, weapon, 0, eventindex, event, undefined );
         level.var_d1f07c87++;
         
         if ( !eattacker ct_utils::function_a7540094() )

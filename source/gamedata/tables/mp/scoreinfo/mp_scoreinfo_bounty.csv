@@ -118,8 +118,8 @@
 #spawn_beacon_kill,0,100,0,0,0,FALSE,0,FALSE,7#,#stats_spawn_beacon_kill,8#,TRUE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #spawn_beacon_multikill_2,0,100,0,0,0,FALSE,0,FALSE,7#,#stats_spawn_beacon_multikill_x2_summary,8#medal_spawn_beacon_multikill_x2_summary,TRUE,TRUE,FALSE,#specialist,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #smoke_multikill_2,0,100,0,0,0,FALSE,0,FALSE,7#,#stats_spectre_smoke_multikill_2,8#medal_spectre_smoke_multikill_2,TRUE,TRUE,FALSE,#specialist,#,#,#,#,FALSE,FALSE,0,u9?0,0
-#smoke_assist,0,50,0,0,0,FALSE,0,FALSE,7#hash_2ccf24a25dd95052,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
-#smoke_kill,0,100,0,0,0,FALSE,0,FALSE,7#hash_4a1825f64d19565,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
+#smoke_assist,0,50,0,0,0,FALSE,0,FALSE,7#score/spectre_smoke_assist,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
+#smoke_kill,0,100,0,0,0,FALSE,0,FALSE,7#score/spectre_smoke_kill,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #hash_6024b59ca1d3b641,0,10,0,0,0,FALSE,0,FALSE,7#hash_1201440b73b03bf2,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #concertina_wire_kill,0,50,0,0,0,FALSE,0,FALSE,7#score/concertina_wire_kill,#stats_concertina_wire_kill,8#,TRUE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #concertina_wire_snared_kill,0,100,0,0,0,FALSE,0,FALSE,7#score/concertina_wire_snared_kill,#stats_concertina_wire_snared_kill,8#,TRUE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
@@ -139,7 +139,7 @@
 #dart_kill,0,100,0,0,0,FALSE,0,FALSE,7#score/dart_kill,#stats_dart_kill,8#medal_dart_kill,TRUE,TRUE,FALSE,#scorestreak,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #artillery_barrage_kill,0,100,0,0,0,FALSE,0,FALSE,7#score/lightning_strike_kill,#stats_lightning_strike_kill,8#medal_lightning_strike_kill,TRUE,TRUE,FALSE,#scorestreak,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #hellstorm_missile_kill,0,100,0,0,0,FALSE,0,FALSE,7#hash_6b1c2e52cb53651b,#stats_hellstorm_missile_kill,8#medal_hellstorm_missile_kill,TRUE,TRUE,FALSE,#scorestreak,#,#,#,#,FALSE,FALSE,0,u9?0,0
-#automated_turret_kill,0,100,0,0,0,FALSE,0,FALSE,7#hash_39b83ff23d252f69,#stats_automated_turret_kill,8#medal_automated_turret_kill,TRUE,TRUE,FALSE,#scorestreak,#,#,#,#,FALSE,FALSE,0,u9?0,0
+#automated_turret_kill,0,100,0,0,0,FALSE,0,FALSE,7#score/sentry_gun_kill,#stats_automated_turret_kill,8#medal_automated_turret_kill,TRUE,TRUE,FALSE,#scorestreak,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #drone_squadron_kill,0,100,0,0,0,FALSE,0,FALSE,7#hash_c80058a22256b5f,#stats_drone_squadron_kill,8#medal_drone_squadron_kill,TRUE,TRUE,FALSE,#scorestreak,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #attack_chopper_kill,0,100,0,0,0,FALSE,0,FALSE,7#hash_1ae6942fc2b0f77c,#stats_attack_chopper_kill,8#medal_attack_chopper_kill,TRUE,TRUE,FALSE,#scorestreak,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #tank_robot_kill,0,100,0,0,0,FALSE,0,FALSE,7#hash_4e188d7a56a7a69b,#stats_tank_robot_kill,8#medal_tank_robot_kill,TRUE,TRUE,FALSE,#scorestreak,#,#,#,#,FALSE,FALSE,0,u9?0,0
@@ -242,7 +242,7 @@
 #destroyed_dart,0,100,0,0,0,FALSE,0,FALSE,7#hash_24e6cc81efc2160f,#stats_dart_killjoy,8#medal_dart_killjoy,TRUE,TRUE,TRUE,#antiscorestreak,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #cuav_killjoy,0,100,0,0,0,FALSE,0,FALSE,7#hash_44ffcd0ad714dc9d,#stats_cuav_killjoy,8#medal_cuav_killjoy,TRUE,TRUE,TRUE,#antiscorestreak,#,#,#,#,FALSE,FALSE,200,u9?0,0
 #destroyed_remote_missile,0,100,0,0,0,FALSE,0,FALSE,7#hash_59682fdbe8ccf5a9,#stats_hellstorm_missile_killjoy,8#medal_hellstorm_missile_killjoy,TRUE,TRUE,TRUE,#antiscorestreak,#,#,#,#,FALSE,FALSE,200,u9?0,0
-#automated_turret_shutdown,0,100,0,0,0,FALSE,0,FALSE,7#hash_2f7961351f7f7c,#stats_automated_turret_killjoy,8#medal_automated_turret_killjoy,TRUE,TRUE,TRUE,#antiscorestreak,#,#,#,#,FALSE,FALSE,200,u9?0,0
+#automated_turret_shutdown,0,100,0,0,0,FALSE,0,FALSE,7#score/sentry_gun_destroyed,#stats_automated_turret_killjoy,8#medal_automated_turret_killjoy,TRUE,TRUE,TRUE,#antiscorestreak,#,#,#,#,FALSE,FALSE,200,u9?0,0
 #hash_20a561c410750409,0,100,0,0,0,FALSE,0,FALSE,7#hash_39dfa8f1f45b97e9,#stats_swarm_shutdown,8#medal_swarm_shutdown,TRUE,TRUE,TRUE,#antiscorestreak,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #hash_8bf3519db5f0fd4,0,50,0,0,0,FALSE,0,FALSE,7#hash_39dfa8f1f45b97e9,#,8#,FALSE,TRUE,TRUE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #attack_chopper_shutdown,0,100,0,0,0,FALSE,0,FALSE,7#hash_6d99ea20b9cb0556,#stats_attack_chopper_killjoy,8#medal_attack_chopper_killjoy,TRUE,TRUE,TRUE,#antiscorestreak,#,#,#,#,FALSE,FALSE,500,u9?0,0
@@ -350,7 +350,7 @@
 #prop_killed_three_props,0,150,0,0,0,FALSE,0,FALSE,7#,#stats_prop_killed_three_props,8#medal_prop_killed_three_props,TRUE,TRUE,FALSE,#gamemode,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #prop_killed_all_props,0,250,0,0,0,FALSE,0,FALSE,7#,#stats_prop_killed_all_props,8#medal_prop_killed_all_props,TRUE,TRUE,FALSE,#gamemode,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #prop_survived,0,50,0,0,0,FALSE,0,FALSE,7#,#stats_prop_survived,8#medal_prop_survived,TRUE,TRUE,FALSE,#gamemode,#,#,#,#,FALSE,FALSE,0,u9?0,0
-#clone_was_destroyed,0,10,0,0,0,FALSE,0,FALSE,7#hash_7556fca3202783ca,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
+#clone_was_destroyed,0,10,0,0,0,FALSE,0,FALSE,7#score/decoy_killed,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #still_alive,0,25,0,0,0,FALSE,0,TRUE,7#score/still_alive,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #still_alive_medium_bonus,0,50,0,0,0,FALSE,0,FALSE,7#hash_3184402c05ae6ab,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #still_alive_large_bonus,0,75,0,0,0,FALSE,0,FALSE,7#score/still_alive_large_bonus,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0

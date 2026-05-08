@@ -8,12 +8,12 @@
     "fxDef": "#fxd8_zm_char_zombie_base_body",
     "body": "#c_t8_zmb_2ndclass_female_body3",
     "headAlias": "#hash_675d196ace257446",
-    "damagedTorso_Clean": "#hash_5b9d1e815f31cd9e",
-    "damagedTorso_RightArmGone": "#hash_79ee91616c392285",
-    "damagedTorso_LeftArmGone": "#hash_62435bbfc0b5b303",
-    "damagedTorso_HeadGone": "#hash_55735badbdc1b98d",
-    "damagedLegs_Clean": "#hash_2738432b62c67457",
-    "damagedLegs_RightLegGone": "#hash_238f83819b72f627",
-    "damagedLegs_LeftLegGone": "#hash_b119d3be2399d9d",
-    "damagedLegs_NoLegs": "#hash_22778675c098d468"
+    "damagedTorso_Clean": "#c_t8_zmb_dlc1_zombie_2ndclass_female_body3_g_upclean",
+    "damagedTorso_RightArmGone": "#c_t8_zmb_dlc1_zombie_2ndclass_female_body3_g_rarmoff",
+    "damagedTorso_LeftArmGone": "#c_t8_zmb_dlc1_zombie_2ndclass_female_body3_g_larmoff",
+    "damagedTorso_HeadGone": "#c_t8_zmb_dlc1_zombie_2ndclass_female_body1_g_behead",
+    "damagedLegs_Clean": "#c_t8_zmb_dlc1_zombie_2ndclass_female_body3_g_lowclean",
+    "damagedLegs_RightLegGone": "#c_t8_zmb_dlc1_zombie_2ndclass_female_body3_g_rlegoff",
+    "damagedLegs_LeftLegGone": "#c_t8_zmb_dlc1_zombie_2ndclass_female_body3_g_llegoff",
+    "damagedLegs_NoLegs": "#c_t8_zmb_dlc1_zombie_2ndclass_female_body3_g_blegsoff"
 }

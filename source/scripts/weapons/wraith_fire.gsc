@@ -298,11 +298,11 @@ function function_e8ad1d81( position, owner, normal, velocity, killcament, weapo
                 if ( function_a66ba8cc( water_depth ) || is_under_water( newpos ) )
                 {
                     newpos -= ( 0, 0, water_depth );
-                    level thread function_42b9fdbe( var_fc031a6d, newpos, ( 0, 0, 1 ), int( customsettings.var_b79d64a9 ), team );
+                    level thread function_42b9fdbe( var_fc031a6d, newpos, ( 0, 0, 1 ), int( customsettings.molotov_duration ), team );
                     break;
                 }
                 
-                level thread function_42b9fdbe( var_f483ab45, newpos, wall_normal, int( customsettings.var_b79d64a9 ), team );
+                level thread function_42b9fdbe( var_f483ab45, newpos, wall_normal, int( customsettings.molotov_duration ), team );
                 z -= randomintrange( 20, 30 );
             }
             
@@ -337,7 +337,7 @@ function function_e8ad1d81( position, owner, normal, velocity, killcament, weapo
         if ( trace[ #"fraction" ] < 0.9 )
         {
             var_252a0dc7 = trace[ #"normal" ];
-            function_a25dee15( var_f483ab45, traceposition, var_252a0dc7, int( customsettings.var_b79d64a9 ), team );
+            function_a25dee15( var_f483ab45, traceposition, var_252a0dc7, int( customsettings.molotov_duration ), team );
         }
     }
     
@@ -362,7 +362,7 @@ function function_523961e2( startpos, normal, var_4997e17c, fxindex, fxcount, de
 // Size: 0x10b0
 function function_8a03d3f3( owner, impactpos, startpos, normal, multiplier, rotation, killcament, weapon, customsettings, team, wallpos, wallnormal, var_693f108f )
 {
-    defaultdistance = customsettings.var_6193a41b * multiplier;
+    defaultdistance = customsettings.molotov_radius * multiplier;
     defaultdropdistance = getdvarint( #"hash_4270b8db6cf2ceff", 90 );
     colorarray = [];
     colorarray[ colorarray.size ] = ( 0.9, 0.2, 0.2 );
@@ -523,7 +523,7 @@ function function_8a03d3f3( owner, impactpos, startpos, normal, multiplier, rota
         
         if ( !isdefined( wallpos ) )
         {
-            var_af1bdf1 = function_a25dee15( var_8eb0a180, var_6b23e1c9, normal, int( customsettings.var_b79d64a9 ), team );
+            var_af1bdf1 = function_a25dee15( var_8eb0a180, var_6b23e1c9, normal, int( customsettings.molotov_duration ), team );
             var_af1bdf1 function_4e5a1dd3( mdl_anchor );
         }
     }
@@ -567,7 +567,7 @@ function function_8a03d3f3( owner, impactpos, startpos, normal, multiplier, rota
             fireweapon = isdefined( locations[ #"tallfire" ][ lockey ] ) ? var_1c8ca3ba : var_8eb0a180;
         }
         
-        level thread function_42b9fdbe( fireweapon, locations[ #"loc" ][ lockey ], locations[ #"normal" ][ lockey ], int( customsettings.var_b79d64a9 ), team, mdl_anchor );
+        level thread function_42b9fdbe( fireweapon, locations[ #"loc" ][ lockey ], locations[ #"normal" ][ lockey ], int( customsettings.molotov_duration ), team, mdl_anchor );
     }
 }
 
@@ -660,8 +660,8 @@ function function_4e5a1dd3( mdl_anchor )
 function damageeffectarea( owner, position, killcament, normal, weapon, customsettings, radius_multiplier, wallpos, wallnormal, var_cbaaea69, mdl_anchor )
 {
     level endon( #"game_ended" );
-    radius = customsettings.var_6193a41b * radius_multiplier;
-    height = customsettings.var_cbd86f3e;
+    radius = customsettings.molotov_radius * radius_multiplier;
+    height = customsettings.molotov_height;
     trigger_radius_position = position - ( 0, 0, height );
     trigger_radius_height = height * 2;
     spawnflags = function_30125f88();
@@ -699,7 +699,7 @@ function damageeffectarea( owner, position, killcament, normal, weapon, customse
     self.var_ebf0b1c9 = [];
     burntime = 0;
     var_d0603aba = 1;
-    damageendtime = int( gettime() + customsettings.var_b79d64a9 * 1000 );
+    damageendtime = int( gettime() + customsettings.molotov_duration * 1000 );
     
     while ( gettime() < damageendtime )
     {
@@ -887,8 +887,8 @@ function stopfiresound()
 function function_9464e4ad( owner, position, killcament, normal, weapon, customsettings, radius_multiplier, wallpos, wallnormal, var_cbaaea69, mdl_anchor )
 {
     level endon( #"game_ended" );
-    radius = customsettings.var_6193a41b * radius_multiplier;
-    height = customsettings.var_cbd86f3e;
+    radius = customsettings.molotov_radius * radius_multiplier;
+    height = customsettings.molotov_height;
     trigger_radius_position = position - ( 0, 0, height );
     trigger_radius_height = height * 2;
     spawnflags = function_30125f88();
@@ -907,7 +907,7 @@ function function_9464e4ad( owner, position, killcament, normal, weapon, customs
     }
     
     self.var_ebf0b1c9 = [];
-    damageendtime = int( gettime() + customsettings.var_b79d64a9 * 1000 );
+    damageendtime = int( gettime() + customsettings.molotov_duration * 1000 );
     
     while ( gettime() < damageendtime )
     {

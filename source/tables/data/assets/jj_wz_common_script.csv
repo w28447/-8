@@ -30,7 +30,7 @@ localizeentry,#hash_24bb668f17a9cc67
 localizeentry,#wz/motorcycle
 localizeentry,#hash_2a668959254d54e6
 localizeentry,d#hash_2bb32441107b5fea
-localizeentry,#hash_2ea29b19d0e205e7
+localizeentry,#mpui/ammo_full
 localizeentry,d#mp/score_limit_reached
 localizeentry,d#hash_3191d03a1c0615ad
 localizeentry,#wz/cargo_truck
@@ -64,7 +64,7 @@ localizeentry,d#hash_5ebfcbc4ad2769b6
 localizeentry,#hash_602556b5bd4f952d
 localizeentry,#wz/huey
 localizeentry,#hash_62af47ae5592dbf8
-localizeentry,d#hash_66326ff81589a75b
+localizeentry,d#coop/reviving
 localizeentry,d#hash_68d9a667406d9e2e
 localizeentry,#warzone/button_revive
 localizeentry,#mp/host_endgame_response

@@ -344,18 +344,18 @@ function function_26d45f32( var_4406a529 = 0, var_8c5f03d7 = 1, var_dd200d99 = 1
         weapons = self getweaponslistprimaries();
     }
     
-    var_46ccfe18 = ct_utils::function_84adcd1f();
-    arrayremovevalue( weapons, var_46ccfe18 );
+    wpn_barehands = ct_utils::function_84adcd1f();
+    arrayremovevalue( weapons, wpn_barehands );
     
     if ( var_8c5f03d7 )
     {
         level.b_bare_hands = 1;
         
-        if ( !self hasweapon( var_46ccfe18 ) )
+        if ( !self hasweapon( wpn_barehands ) )
         {
-            self giveweapon( var_46ccfe18 );
+            self giveweapon( wpn_barehands );
             
-            while ( !self hasweapon( var_46ccfe18 ) )
+            while ( !self hasweapon( wpn_barehands ) )
             {
                 waitframe( 1 );
             }
@@ -363,14 +363,14 @@ function function_26d45f32( var_4406a529 = 0, var_8c5f03d7 = 1, var_dd200d99 = 1
             wait 0.1;
         }
         
-        self switchtoweapon( var_46ccfe18 );
+        self switchtoweapon( wpn_barehands );
         
         do
         {
             wpn_current = self getcurrentweapon();
             waitframe( 1 );
         }
-        while ( isdefined( self ) && wpn_current != var_46ccfe18 );
+        while ( isdefined( self ) && wpn_current != wpn_barehands );
     }
     
     if ( weapons.size > 0 && isdefined( self ) )
@@ -382,7 +382,7 @@ function function_26d45f32( var_4406a529 = 0, var_8c5f03d7 = 1, var_dd200d99 = 1
         
         foreach ( weapon in weapons )
         {
-            if ( !var_8c5f03d7 || weapon != var_46ccfe18 )
+            if ( !var_8c5f03d7 || weapon != wpn_barehands )
             {
                 self takeweapon( weapon );
             }
@@ -833,7 +833,7 @@ function function_c03a6bb8( params )
 // Params 4
 // Checksum 0xe10dd1e5, Offset: 0x25d8
 // Size: 0x160
-function activate_bots( var_9bff2467, str_team, str_targetname, var_216e25ba = 0 )
+function activate_bots( n_max_bots, str_team, str_targetname, var_216e25ba = 0 )
 {
     level endon( #"combattraining_logic_finished" );
     entities = function_66ced330();
@@ -849,7 +849,7 @@ function activate_bots( var_9bff2467, str_team, str_targetname, var_216e25ba = 0
                 entity.dontdropweapon = 1;
                 var_e8d6f89++;
                 
-                if ( var_e8d6f89 >= var_9bff2467 )
+                if ( var_e8d6f89 >= n_max_bots )
                 {
                     break;
                 }

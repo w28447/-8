@@ -887,7 +887,7 @@ model,#p7_fxp_debris_car_glass_shatter_02
 model,#p7_fxp_debris_car_glass_shatter_03
 model,#p7_fxp_debris_car_glass_shatter_01
 model,#p8_zm_wall_buy_pistol_burst
-model,#hash_6167d57b4d013be1
+model,#p7_fxp_debris_wood_splinter_05
 model,#p7_fxp_debris_wood_splinter_02
 model,#p7_fxp_debris_wood_splinter_03
 model,#p7_fxp_debris_wood_splinter_01
@@ -1251,7 +1251,7 @@ character,#c_t8_zmb_1stclass_male1_skin2
 character,#c_t8_zmb_titanic_stoker
 character,#c_t8_zmb_2ndclass_female3_hat2
 character,#c_t8_zmb_2ndclass_female3_hat3
-xmodelalias,#hash_dc752693fd01913
+xmodelalias,#c_zom_der_zombie_headalias
 xmodelalias,#hash_11ea21d04670026b
 xmodelalias,#hash_1dc9d37579de5fe4
 xmodelalias,#hash_28ae66a52a027563
@@ -1293,12 +1293,12 @@ weapon,#blight_father_melee
 weapon,#stoker_melee
 weapon,#hash_7ddad715ea3e6421
 weapon,#zhield_turret_zm
-gesture,#hash_1aef2677f88e3ab4
+gesture,#ges_prone_to_crouch
 gesture,#ges_slide
-gesture,#hash_1fa61b89c49734c5
+gesture,#ges_slide_buckler
 gesture,#hash_22a9b7654c442ae1
-gesture,#hash_29eda3eac4bc8896
-gesture,#hash_454ab8f5ef9645d6
+gesture,#ges_crouch_to_prone
+gesture,#ges_swim_idle
 gesture,#ges_mantle
 zbarrier,#zm_zodt8_packapunch
 zbarrier,#zodt8_magicbox
@@ -1323,7 +1323,7 @@ rumble,#hash_322cc8a226215312
 rumble,#lmg_fire
 rumble,#zm_power_on_rumble
 rumble,#pistol_fire
-rumble,#hash_4528a09176695746
+rumble,#zod_shield_juke
 rumble,#hash_466de80ca824adcf
 rumble,#hash_55b8ea7312be930e
 rumble,#hash_5d8a1a68b12dfb24
@@ -1342,12 +1342,12 @@ shellshock,#status_effect_flash
 statuseffect,#deaf_electricity_catalyst
 statuseffect,#blind_zm_catalyst
 statuseffect,#hash_528115ad9eebc84f
-statuseffect,#hash_7867f8f9aaaa0c40
+statuseffect,#chaos_missile_damage
 statuseffect,#dot_corrosive_catalyst
-xcam,#hash_f1851b8a3306bf3
+xcam,#ui_cam_cac_equip_shockcharge
 xcam,#ui_cam_cac_lmg_double
 xcam,#c_zm_zod_outro_sh050_cam
-xcam,#hash_1a53868715ff20d7
+xcam,#ui_cam_icon_lmg_cqb
 xcam,#c_zm_zod_outro_sh120_cam
 xcam,#c_zm_zod_outro_sh110_cam
 xcam,#c_zm_zod_outro_sh080_cam
@@ -1356,9 +1356,9 @@ xcam,#c_zm_zod_outro_sh070_cam
 xcam,#c_zm_zod_outro_sh090_cam
 xcam,#c_zm_zod_outro_sh060_cam
 xcam,#c_zm_zod_outro_sh100_cam
-xcam,#hash_4c47fab11e8e64c1
+xcam,#ui_cam_cac_shotgun_energy
 xcam,#c_zm_zod_outro_sh010_cam
-xcam,#hash_5798bfe358ee22e9
+xcam,#ui_cam_icon_shotgun_energy
 xcam,#c_zm_zod_outro_sh030_cam
 xcam,#c_zm_zod_outro_sh020_cam
 xcam,#c_zm_zod_outro_sh005_cam
@@ -2305,7 +2305,7 @@ xanim,#hash_3d1632cc2c51cae5
 xanim,#hash_3d2ae94771b26771
 xanim,#p8_fxanim_zm_zod_rats_provision_01_anim
 xanim,#ai_t8_zm_zod_bltfthr_tongue_grab_release
-xanim,#hash_3d88026964c94600
+xanim,#vm_crouch_to_prone
 xanim,#hash_3ded7f829b51c32b
 xanim,#hash_3e3435a5c4a60400
 xanim,#ai_zombie_base_boardtear_aligned_m_4_grab
@@ -2389,7 +2389,7 @@ xanim,#hash_43a4009f0a2b6378
 xanim,#ai_zombie_base_sprint_ad_sidestep_left_long_a
 xanim,#ai_zombie_base_sprint_ad_sidestep_left_long_b
 xanim,#ai_t8_zm_zombie_base_run_mantle_over_96
-xanim,#hash_43ef07a1bd68dd9e
+xanim,#vm_prone_to_crouch
 xanim,#vm_riotshield_zm_sprint_in
 xanim,#ai_t8_zm_zombie_base_run_mantle_over_72
 xanim,#hash_43fadedc6dd6901b
@@ -3898,7 +3898,7 @@ string,#hash_1f322078edfcfba3
 string,#hash_1f86bdff7abc4240
 string,#hash_1fe854f6441b337e
 string,#hash_200f613f8001b6b9
-string,#hash_204ec88c63b3436b
+string,#zmarcade/fasttravel
 string,#hash_208eb7d41301aac0
 string,#hash_21868d247829d827
 string,#hash_21aaa58eff63ee6f
@@ -4022,7 +4022,7 @@ string,#zmweapon/ww_tricannon_air_t8
 string,#hash_3cbdafac7f4a7bd2
 string,#hash_3d26eb8dafae98e9
 string,#hash_3d6f9490b9f55db5
-string,#hash_3d7abb3373fab887
+string,#zmui/suppressor_desc
 string,#mpui/tacknife
 string,#hash_3de8e053a2e6c69b
 string,#hash_3dfd2cf9c5589207
@@ -4227,7 +4227,7 @@ string,#hash_700c960774ba5e4a
 string,#mpui/stabilizer
 string,#hash_7028ec2236ab3e73
 string,#hash_705b2c8817bf3775
-string,#hash_7085044e7b80d5a3
+string,#mpui/reticle_default
 string,#hash_709fb6b7fdde6aa8
 string,#zmweapon/ww_tricannon_water_t8_upgraded
 string,#hash_714cce81de873f11
@@ -4352,7 +4352,7 @@ fx,#hash_6b7912c3c5da87e2
 fx,#hash_6c0eb029adb5f6c6
 fx,#hash_6ce02086fc656138
 fx,#hash_6d900123df67f4ce
-fx,#hash_708765aa3f48456d
+fx,#water/fx_water_impact_object_sm
 fx,#hash_71ed4f412b17e19e
 fx,#hash_74f01ad183c69a5c
 fx,#hash_74f6f2d183cc7512
@@ -4482,8 +4482,8 @@ radiant_exploder,#hash_517f450e627b26d9
 radiant_exploder,#fx_exp_flare_vista_white
 radiant_exploder,#exp_lgt_smg_fastfire_t8
 radiant_exploder,#hash_51f096f25dfde006
-radiant_exploder,#hash_52b866166a62fd8a
-radiant_exploder,#hash_52bbcc166a65e0b3
+radiant_exploder,#fxexp_sh060
+radiant_exploder,#fxexp_sh070
 radiant_exploder,#hash_52fe73cdd3d12c6b
 radiant_exploder,#exp_lgt_pistol_standard_t8
 radiant_exploder,#exp_lgt_bowie
@@ -8246,7 +8246,7 @@ soundalias,#hash_6320f68069d34838
 soundalias,#hash_63299a75a97f9678
 soundalias,#hash_6329b05b647edd44
 soundalias,#hash_632d0800bd3a352d
-soundalias,#hash_633b9532cf0da169
+soundalias,#amb_flies
 soundalias,#hash_633ce1c4d50c2315
 soundalias,#hash_63401b17970addd8
 soundalias,#hash_63401c17970adf8b
@@ -9331,7 +9331,7 @@ client_fx,#hash_10adb60a503dfc8d
 client_fx,#hash_10cab6f6345be4d8
 client_fx,#hash_10fc174d8f84f900
 client_fx,#hash_115e70cdac264c7a
-client_fx,#hash_1206d75150c2464e
+client_fx,#explosions/fx_exp_grenade_water_shllw
 client_fx,#hash_12172517482ddd8b
 client_fx,#hash_122f2f174842806a
 client_fx,#impacts/fx8_bul_impact_metal_sm
@@ -9386,12 +9386,12 @@ client_fx,#impacts/fx_bul_impact_heavy_head_fatal_exit
 client_fx,#hash_1f1e406285850459
 client_fx,#impacts/fx_bul_impact_armor_head_fatal
 client_fx,#player/fx_plyr_land_dust_xlg
-client_fx,#hash_1f89b396eea450c3
+client_fx,#weapon/fx_trail_energy_pistol_knockback_emitter
 client_fx,#hash_201378189651055d
 client_fx,#hash_203548b984de70a4
 client_fx,#zm_ai/fx8_blightfather_weakspot_elbow_amb
 client_fx,#hash_213b84f5f5775699
-client_fx,#hash_21676a58d92eb053
+client_fx,#weapon/fx_hero_arm_blade_death_sparks
 client_fx,#zombie/fx_bul_flesh_neck_spurt_zmb
 client_fx,#impacts/fx_bul_impact_blood_body_fatal
 client_fx,#hash_21fa3d29a7726119
@@ -9413,7 +9413,7 @@ client_fx,#hash_259b253edb3d834a
 client_fx,#fire/fx_fire_ai_human_arm_right_loop
 client_fx,#impacts/fx_bul_impact_blood_head_fatal_exit
 client_fx,#zm_ai/fx8_blightfather_vomit_statue_purchase
-client_fx,#hash_260fafe2e7ced71c
+client_fx,#explosions/fx_exp_grenade_water_surface_deep
 client_fx,#impacts/fx_bul_impact_armor_body_fatal
 client_fx,#impacts/fx_bul_impact_boss_head_nonfatal_exit
 client_fx,#zm_ai/fx8_cata_water_aura
@@ -9536,7 +9536,7 @@ client_fx,#hash_4e40eada8f6a81c9
 client_fx,#hash_4e55cdda8f7cac8c
 client_fx,#hash_4e7218bfa9566ef0
 client_fx,#impacts/fx_bul_impact_body_armor_lg
-client_fx,#hash_4f4f7d3d49485130
+client_fx,#impacts/fx_flesh_hit_knife_zmb
 client_fx,#hash_4fdb4d96df507bb0
 client_fx,#zm_ai/fx8_blightfather_vomit_object
 client_fx,#hash_50060cdb19653936
@@ -9591,7 +9591,7 @@ client_fx,#hash_5e9dff5fcbf30022
 client_fx,#hash_5ea23f26c1bebf34
 client_fx,#hash_5eb45bff0d4ecf49
 client_fx,#hash_5ecea7e9e70fbdb8
-client_fx,#hash_5f190015ac9ded95
+client_fx,#explosions/fx_exp_grenade_water
 client_fx,#hash_5f247e5ee77f7108
 client_fx,#impacts/fx_bul_impact_armor_head_nonfatal_exit
 client_fx,#hash_6009053e911b946a

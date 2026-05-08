@@ -352,7 +352,7 @@ function function_5bac75b6( behaviortreeentity )
 // Size: 0x20, Type: bool
 function function_4cc712c8( behaviortreeentity )
 {
-    return isdefined( self.var_8ba6ede3 ) && self.var_8ba6ede3;
+    return isdefined( self.shoulddigup ) && self.shoulddigup;
 }
 
 // Namespace wz_ai_zombie_dog/wz_ai_zombie_dog
@@ -444,7 +444,7 @@ function function_a5c4f83b( behaviortreeentity )
 function function_47e1bdeb( behaviortreeentity )
 {
     behaviortreeentity solid();
-    behaviortreeentity.var_8ba6ede3 = undefined;
+    behaviortreeentity.shoulddigup = undefined;
 }
 
 // Namespace wz_ai_zombie_dog/wz_ai_zombie_dog
@@ -465,7 +465,7 @@ function private function_1980a07a( behaviortreeentity )
     behaviortreeentity endon( #"death" );
     behaviortreeentity zombiedogintro();
     behaviortreeentity pathmode( "move allowed" );
-    behaviortreeentity.var_8ba6ede3 = undefined;
+    behaviortreeentity.shoulddigup = undefined;
     behaviortreeentity notify( #"not_underground" );
 }
 

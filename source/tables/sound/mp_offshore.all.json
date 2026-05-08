@@ -1085,13 +1085,13 @@
         {
             "value": 130,
             "next": 121,
-            "name": "#hash_633b9532cf0da169",
+            "name": "#amb_flies",
             "sequence": 0,
             "cullDistance": 350,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_633b9532cf0da169",
+                    "name": "#amb_flies",
                     "assetId": "#amb/animals/insects/flies/flies_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -1130,7 +1130,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_633b9532cf0da169",
+                    "name": "#amb_flies",
                     "assetId": "#amb/animals/insects/flies/flies_02.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -1173,13 +1173,13 @@
         {
             "value": 148,
             "next": 65535,
-            "name": "#hash_134eae7f0c2c3a0b",
+            "name": "#amb_frogs",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_134eae7f0c2c3a0b",
+                    "name": "#amb_frogs",
                     "assetId": "#amb/animals/frog/frog_st/amb_frog_st_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -1218,7 +1218,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_134eae7f0c2c3a0b",
+                    "name": "#amb_frogs",
                     "assetId": "#amb/animals/frog/frog_st/amb_frog_st_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -1257,7 +1257,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_134eae7f0c2c3a0b",
+                    "name": "#amb_frogs",
                     "assetId": "#amb/animals/frog/frog_st/amb_frog_st_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -1296,7 +1296,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_134eae7f0c2c3a0b",
+                    "name": "#amb_frogs",
                     "assetId": "#amb/animals/frog/frog_st/amb_frog_st_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -1335,7 +1335,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_134eae7f0c2c3a0b",
+                    "name": "#amb_frogs",
                     "assetId": "#amb/animals/frog/frog_st/amb_frog_st_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -1374,7 +1374,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_134eae7f0c2c3a0b",
+                    "name": "#amb_frogs",
                     "assetId": "#amb/animals/frog/frog_st/amb_frog_st_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -1413,7 +1413,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_134eae7f0c2c3a0b",
+                    "name": "#amb_frogs",
                     "assetId": "#amb/animals/frog/frog_st/amb_frog_st_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -2820,13 +2820,13 @@
         {
             "value": 46,
             "next": 65535,
-            "name": "#hash_e9079ea0995dab8",
+            "name": "#amb_leaves",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_e9079ea0995dab8",
+                    "name": "#amb_leaves",
                     "assetId": "#amb/material_movement/rustling/leaves/leaves_rustle_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -2865,7 +2865,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_e9079ea0995dab8",
+                    "name": "#amb_leaves",
                     "assetId": "#amb/material_movement/rustling/leaves/leaves_rustle_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -2904,7 +2904,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_e9079ea0995dab8",
+                    "name": "#amb_leaves",
                     "assetId": "#amb/material_movement/rustling/leaves/leaves_rustle_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -2943,7 +2943,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_e9079ea0995dab8",
+                    "name": "#amb_leaves",
                     "assetId": "#amb/material_movement/rustling/leaves/leaves_rustle_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -2982,7 +2982,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_e9079ea0995dab8",
+                    "name": "#amb_leaves",
                     "assetId": "#amb/material_movement/rustling/leaves/leaves_rustle_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -3021,7 +3021,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_e9079ea0995dab8",
+                    "name": "#amb_leaves",
                     "assetId": "#amb/material_movement/rustling/leaves/leaves_rustle_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -3060,7 +3060,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_e9079ea0995dab8",
+                    "name": "#amb_leaves",
                     "assetId": "#amb/material_movement/rustling/leaves/leaves_rustle_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -3099,7 +3099,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_e9079ea0995dab8",
+                    "name": "#amb_leaves",
                     "assetId": "#amb/material_movement/rustling/leaves/leaves_rustle_07.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -3138,7 +3138,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_e9079ea0995dab8",
+                    "name": "#amb_leaves",
                     "assetId": "#amb/material_movement/rustling/leaves/leaves_rustle_08.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -4533,13 +4533,13 @@
         {
             "value": 156,
             "next": 65535,
-            "name": "#hash_4b365c24ca46a745",
+            "name": "#amb_monkey_1",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4b365c24ca46a745",
+                    "name": "#amb_monkey_1",
                     "assetId": "#hash_1b7dc372ac0fa37e",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -4582,13 +4582,13 @@
         {
             "value": 2,
             "next": 65535,
-            "name": "#hash_4b365924ca46a22c",
+            "name": "#amb_monkey_2",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4b365924ca46a22c",
+                    "name": "#amb_monkey_2",
                     "assetId": "#hash_4a4058f97d7d675f",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -4631,13 +4631,13 @@
         {
             "value": 64,
             "next": 33,
-            "name": "#hash_5316f018369bd1da",
+            "name": "#amb_monkeys",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5316f018369bd1da",
+                    "name": "#amb_monkeys",
                     "assetId": "#amb/animals/monkies/howler/amb_monkies_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -4676,7 +4676,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_5316f018369bd1da",
+                    "name": "#amb_monkeys",
                     "assetId": "#amb/animals/monkies/howler/amb_monkies_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -4715,7 +4715,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_5316f018369bd1da",
+                    "name": "#amb_monkeys",
                     "assetId": "#amb/animals/monkies/howler/amb_monkies_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -4754,7 +4754,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_5316f018369bd1da",
+                    "name": "#amb_monkeys",
                     "assetId": "#amb/animals/monkies/howler/amb_monkies_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -4793,7 +4793,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_5316f018369bd1da",
+                    "name": "#amb_monkeys",
                     "assetId": "#amb/animals/monkies/howler/amb_monkies_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -4832,7 +4832,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_5316f018369bd1da",
+                    "name": "#amb_monkeys",
                     "assetId": "#amb/animals/monkies/howler/amb_monkies_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -4875,13 +4875,13 @@
         {
             "value": 96,
             "next": 36,
-            "name": "#hash_179f3eb184c245d2",
+            "name": "#amb_ocean",
             "sequence": 0,
             "cullDistance": 7500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_179f3eb184c245d2",
+                    "name": "#amb_ocean",
                     "secondaryname": "#hash_fbafa315124174d",
                     "assetId": "#amb/environment/ocean/calm/amb_ocean_calm.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
@@ -6748,7 +6748,7 @@
             "aliases": [
                 {
                     "name": "#hash_c36768f32b12846",
-                    "secondaryname": "#hash_5316f018369bd1da",
+                    "secondaryname": "#amb_monkeys",
                     "assetId": "#amb/animals/songbird/songbird_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -6788,7 +6788,7 @@
                 },
                 {
                     "name": "#hash_c36768f32b12846",
-                    "secondaryname": "#hash_5316f018369bd1da",
+                    "secondaryname": "#amb_monkeys",
                     "assetId": "#amb/animals/songbird/songbird_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -6828,7 +6828,7 @@
                 },
                 {
                     "name": "#hash_c36768f32b12846",
-                    "secondaryname": "#hash_5316f018369bd1da",
+                    "secondaryname": "#amb_monkeys",
                     "assetId": "#amb/animals/songbird/songbird_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -6868,7 +6868,7 @@
                 },
                 {
                     "name": "#hash_c36768f32b12846",
-                    "secondaryname": "#hash_5316f018369bd1da",
+                    "secondaryname": "#amb_monkeys",
                     "assetId": "#amb/animals/songbird/songbird_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -6908,7 +6908,7 @@
                 },
                 {
                     "name": "#hash_c36768f32b12846",
-                    "secondaryname": "#hash_5316f018369bd1da",
+                    "secondaryname": "#amb_monkeys",
                     "assetId": "#amb/animals/songbird/songbird_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -6948,7 +6948,7 @@
                 },
                 {
                     "name": "#hash_c36768f32b12846",
-                    "secondaryname": "#hash_5316f018369bd1da",
+                    "secondaryname": "#amb_monkeys",
                     "assetId": "#amb/animals/songbird/songbird_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -6988,7 +6988,7 @@
                 },
                 {
                     "name": "#hash_c36768f32b12846",
-                    "secondaryname": "#hash_5316f018369bd1da",
+                    "secondaryname": "#amb_monkeys",
                     "assetId": "#amb/animals/songbird/songbird_07.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -7028,7 +7028,7 @@
                 },
                 {
                     "name": "#hash_c36768f32b12846",
-                    "secondaryname": "#hash_5316f018369bd1da",
+                    "secondaryname": "#amb_monkeys",
                     "assetId": "#amb/animals/songbird/songbird_08.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -7068,7 +7068,7 @@
                 },
                 {
                     "name": "#hash_c36768f32b12846",
-                    "secondaryname": "#hash_5316f018369bd1da",
+                    "secondaryname": "#amb_monkeys",
                     "assetId": "#amb/animals/songbird/songbird_09.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -7108,7 +7108,7 @@
                 },
                 {
                     "name": "#hash_c36768f32b12846",
-                    "secondaryname": "#hash_5316f018369bd1da",
+                    "secondaryname": "#amb_monkeys",
                     "assetId": "#amb/animals/songbird/songbird_10.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -7148,7 +7148,7 @@
                 },
                 {
                     "name": "#hash_c36768f32b12846",
-                    "secondaryname": "#hash_5316f018369bd1da",
+                    "secondaryname": "#amb_monkeys",
                     "assetId": "#amb/animals/songbird/songbird_11.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -7188,7 +7188,7 @@
                 },
                 {
                     "name": "#hash_c36768f32b12846",
-                    "secondaryname": "#hash_5316f018369bd1da",
+                    "secondaryname": "#amb_monkeys",
                     "assetId": "#amb/animals/songbird/songbird_12.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -7228,7 +7228,7 @@
                 },
                 {
                     "name": "#hash_c36768f32b12846",
-                    "secondaryname": "#hash_5316f018369bd1da",
+                    "secondaryname": "#amb_monkeys",
                     "assetId": "#amb/animals/songbird/songbird_13.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -7268,7 +7268,7 @@
                 },
                 {
                     "name": "#hash_c36768f32b12846",
-                    "secondaryname": "#hash_5316f018369bd1da",
+                    "secondaryname": "#amb_monkeys",
                     "assetId": "#amb/animals/songbird/songbird_14.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -7308,7 +7308,7 @@
                 },
                 {
                     "name": "#hash_c36768f32b12846",
-                    "secondaryname": "#hash_5316f018369bd1da",
+                    "secondaryname": "#amb_monkeys",
                     "assetId": "#amb/animals/songbird/songbird_15.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -7348,7 +7348,7 @@
                 },
                 {
                     "name": "#hash_c36768f32b12846",
-                    "secondaryname": "#hash_5316f018369bd1da",
+                    "secondaryname": "#amb_monkeys",
                     "assetId": "#amb/animals/songbird/songbird_16.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -7388,7 +7388,7 @@
                 },
                 {
                     "name": "#hash_c36768f32b12846",
-                    "secondaryname": "#hash_5316f018369bd1da",
+                    "secondaryname": "#amb_monkeys",
                     "assetId": "#amb/animals/songbird/songbird_17.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -7428,7 +7428,7 @@
                 },
                 {
                     "name": "#hash_c36768f32b12846",
-                    "secondaryname": "#hash_5316f018369bd1da",
+                    "secondaryname": "#amb_monkeys",
                     "assetId": "#amb/animals/songbird/songbird_18.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -7468,7 +7468,7 @@
                 },
                 {
                     "name": "#hash_c36768f32b12846",
-                    "secondaryname": "#hash_5316f018369bd1da",
+                    "secondaryname": "#amb_monkeys",
                     "assetId": "#amb/animals/songbird/songbird_19.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -7508,7 +7508,7 @@
                 },
                 {
                     "name": "#hash_c36768f32b12846",
-                    "secondaryname": "#hash_5316f018369bd1da",
+                    "secondaryname": "#amb_monkeys",
                     "assetId": "#amb/animals/songbird/songbird_20.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -7548,7 +7548,7 @@
                 },
                 {
                     "name": "#hash_c36768f32b12846",
-                    "secondaryname": "#hash_5316f018369bd1da",
+                    "secondaryname": "#amb_monkeys",
                     "assetId": "#amb/animals/songbird/songbird_21.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -7588,7 +7588,7 @@
                 },
                 {
                     "name": "#hash_c36768f32b12846",
-                    "secondaryname": "#hash_5316f018369bd1da",
+                    "secondaryname": "#amb_monkeys",
                     "assetId": "#amb/animals/songbird/songbird_22.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -7628,7 +7628,7 @@
                 },
                 {
                     "name": "#hash_c36768f32b12846",
-                    "secondaryname": "#hash_5316f018369bd1da",
+                    "secondaryname": "#amb_monkeys",
                     "assetId": "#amb/animals/songbird/songbird_23.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -7668,7 +7668,7 @@
                 },
                 {
                     "name": "#hash_c36768f32b12846",
-                    "secondaryname": "#hash_5316f018369bd1da",
+                    "secondaryname": "#amb_monkeys",
                     "assetId": "#amb/animals/songbird/songbird_24.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -7708,7 +7708,7 @@
                 },
                 {
                     "name": "#hash_c36768f32b12846",
-                    "secondaryname": "#hash_5316f018369bd1da",
+                    "secondaryname": "#amb_monkeys",
                     "assetId": "#amb/animals/songbird/songbird_25.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -7748,7 +7748,7 @@
                 },
                 {
                     "name": "#hash_c36768f32b12846",
-                    "secondaryname": "#hash_5316f018369bd1da",
+                    "secondaryname": "#amb_monkeys",
                     "assetId": "#amb/animals/songbird/songbird_26.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -7788,7 +7788,7 @@
                 },
                 {
                     "name": "#hash_c36768f32b12846",
-                    "secondaryname": "#hash_5316f018369bd1da",
+                    "secondaryname": "#amb_monkeys",
                     "assetId": "#amb/animals/songbird/songbird_27.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -7828,7 +7828,7 @@
                 },
                 {
                     "name": "#hash_c36768f32b12846",
-                    "secondaryname": "#hash_5316f018369bd1da",
+                    "secondaryname": "#amb_monkeys",
                     "assetId": "#amb/animals/songbird/songbird_28.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -11884,13 +11884,13 @@
         {
             "value": 17,
             "next": 77,
-            "name": "#hash_1ff8bec27dfc1b70",
+            "name": "#dst_fern",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1ff8bec27dfc1b70",
+                    "name": "#dst_fern",
                     "assetId": "#dst/prop/fern/fern_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -12820,13 +12820,13 @@
         {
             "value": 29,
             "next": 92,
-            "name": "#hash_501eff91f639c23e",
+            "name": "#dst_glass_pane",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_501eff91f639c23e",
+                    "name": "#dst_glass_pane",
                     "assetId": "#dst/generic/glass/med/glass_break_medium_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -13355,13 +13355,13 @@
         {
             "value": 162,
             "next": 65535,
-            "name": "#hash_6a7bbff93ccc7ab7",
+            "name": "#dst_luggage",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6a7bbff93ccc7ab7",
+                    "name": "#dst_luggage",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
                     "assetFileNameRelease": "#mp_offshore.all",
@@ -16184,13 +16184,13 @@
         {
             "value": 57,
             "next": 65535,
-            "name": "#hash_38c96854fb0017e",
+            "name": "#dst_typewriter",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_38c96854fb0017e",
+                    "name": "#dst_typewriter",
                     "assetId": "#dst/prop/typewriter/typewriter_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -17287,13 +17287,13 @@
         {
             "value": 181,
             "next": 65535,
-            "name": "#hash_48bc31e222aa7c3e",
+            "name": "#exp_barrel_fire",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_48bc31e222aa7c3e",
+                    "name": "#exp_barrel_fire",
                     "assetId": "#dst/generic/fire/barrel/barrel_fire_02.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -23170,13 +23170,13 @@
         {
             "value": 5,
             "next": 181,
-            "name": "#hash_304a394701369482",
+            "name": "#pfx_flare",
             "sequence": 0,
             "cullDistance": 800,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_304a394701369482",
+                    "name": "#pfx_flare",
                     "assetId": "#amb/fire/flare/flare_loop.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -24267,7 +24267,7 @@
         {
             "name": "mpl_announcer",
             "id": "#mpl_announcer",
-            "fadeInCurve": "#hash_4ca222c8af19e64a",
+            "fadeInCurve": "#defaultmin",
             "fadeOutCurve": "#default",
             "updateWhilePaused": false,
             "trackAmplitude": false,
@@ -24296,7 +24296,7 @@
             "loop": "#hash_44463359dd025b23",
             "duckId": "#default",
             "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_8f631787d4aaf77",
+            "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": false,
@@ -24336,7 +24336,7 @@
             "loop": "#hash_8abeeabd2aa2c9c",
             "duckId": "#default",
             "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_8f631787d4aaf77",
+            "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": true,
@@ -24356,7 +24356,7 @@
             "loop": "#hash_8abeeabd2aa2c9c",
             "duckId": "#default",
             "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_8f631787d4aaf77",
+            "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": false,

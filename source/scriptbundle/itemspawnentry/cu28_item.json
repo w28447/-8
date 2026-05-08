@@ -59,7 +59,7 @@
     "hash_8a122876": 0,
     "hash_7c4c8ceb": 0,
     "hash_ee67711f": 0,
-    "handler": "#hash_5c844f5c1207159c",
+    "handler": "#generic_quest_pickup",
     "armortier": 0,
     "rewardname": "localized17#zombie/bruno",
     "pickupicon": "image#hash_56d86574972458f7",

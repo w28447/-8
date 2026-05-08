@@ -106,7 +106,7 @@
     "fx_c88": "#hash_8a5567d0168ae02f",
     "fx_c90": "#hash_8a5567d0168ae02f",
     "fx_c98": "#hash_8a5567d0168ae02f",
-    "fx_f00": "#hash_5ccd40f14e45e69e",
+    "fx_f00": "#weapon/fx_trail_nailgun",
     "normalImpactFX": "#hash_60cc6bcc1dedaadf",
     "normalImpactSounds": "#bullet_impact",
     "exitImpactSounds": "#hash_d0191cc37bfbfeea"

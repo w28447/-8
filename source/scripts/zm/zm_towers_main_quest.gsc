@@ -2870,7 +2870,7 @@ function function_d6a5d146()
     var_49c750a8 thread function_b0ada3cc();
     b_rotated = 0;
     n_health = 8500;
-    var_e41dced6 = 1416.67;
+    n_increments = 1416.67;
     var_45ad4c92 = 0;
     
     while ( !b_rotated )
@@ -2901,7 +2901,7 @@ function function_d6a5d146()
         
         for ( i = 1; i <= 6 ; i++ )
         {
-            n_threshold = 8500 - var_e41dced6 * i;
+            n_threshold = 8500 - n_increments * i;
             
             switch ( i )
             {
@@ -6404,7 +6404,7 @@ function function_76a7e2d3()
 // Params 4
 // Checksum 0xe89355b0, Offset: 0x1a8c0
 // Size: 0xc0
-function function_95785950( var_c625106d, var_86163b89, var_5e1197bc, var_3ab46b9 )
+function function_95785950( n_frequency, var_86163b89, var_5e1197bc, var_3ab46b9 )
 {
     level endon( #"end_game", #"boss_battle_done", #"hash_9b33f522f6f1424" );
     
@@ -6415,7 +6415,7 @@ function function_95785950( var_c625106d, var_86163b89, var_5e1197bc, var_3ab46b
     
     while ( true )
     {
-        wait var_c625106d;
+        wait n_frequency;
         
         if ( isdefined( var_86163b89 ) && var_86163b89 )
         {
@@ -6486,13 +6486,13 @@ function function_4d682898()
 // Params 2
 // Checksum 0x1bc91126, Offset: 0x1ab38
 // Size: 0xb4
-function pause_zombies( b_pause = 0, var_53458a86 = 1 )
+function pause_zombies( b_pause = 0, b_screen_flash = 1 )
 {
     if ( b_pause )
     {
         level.disable_nuke_delay_spawning = 1;
         level flag::clear( "spawn_zombies" );
-        level zm_utility::function_9ad5aeb1( 1, 1, 0, var_53458a86 );
+        level zm_utility::function_9ad5aeb1( 1, 1, 0, b_screen_flash );
         return;
     }
     

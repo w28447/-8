@@ -64,7 +64,7 @@ CoD.Barracks_StatsOverview_ZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local Kills = CoD.PlayerStatsMain.new( f1_arg0, f1_arg1, 0, 0, 15.5, 215.5, 0, 0, 88, 155 )
 	Kills.StatValue:setText( CoD.PlayerStatsUtility.GetGameModePlayerStorageStat( f1_arg1, f1_arg0, CoD.PlayerStatsUtility.ZMGameModeTable, 0xBFF3D8DB7BB109E, 11235 ) )
-	Kills.StatHeaderText:setText( Engine[0xF9F1239CFD921FE]( 0x6B234CB46B5ACD4 ) )
+	Kills.StatHeaderText:setText( Engine[0xF9F1239CFD921FE]( "menu/kills_caps" ) )
 	self:addElement( Kills )
 	self.Kills = Kills
 	

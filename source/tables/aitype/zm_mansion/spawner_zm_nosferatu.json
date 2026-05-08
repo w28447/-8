@@ -6,7 +6,7 @@
     "team": "TEAM_AXIS",
     "species": "#human",
     "archeType": "#nosferatu",
-    "scoreType": "#hash_2affb03405165f44",
+    "scoreType": "#base_nosferatu",
     "movementType": "#nosferatu",
     "spawnInfluencers": [
         "#none",

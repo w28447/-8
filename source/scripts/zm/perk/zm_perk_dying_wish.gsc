@@ -45,7 +45,7 @@ function enable_dying_wish_perk_for_level()
 {
     if ( function_8b1a219a() )
     {
-        zm_perks::register_perk_basic_info( #"specialty_berserker", #"perk_dying_wish", 4000, #"hash_4f7614bf7bd645c8", getweapon( "zombie_perk_bottle_dying_wish" ), getweapon( "zombie_perk_totem_dying_wish" ), #"zmperksdyingwish" );
+        zm_perks::register_perk_basic_info( #"specialty_berserker", #"perk_dying_wish", 4000, #"zombie/perk_dying_wish_keyboard", getweapon( "zombie_perk_bottle_dying_wish" ), getweapon( "zombie_perk_totem_dying_wish" ), #"zmperksdyingwish" );
     }
     else
     {
@@ -82,7 +82,7 @@ function function_aa1c61e()
         return;
     }
     
-    level._effect[ #"divetonuke_light" ] = #"hash_2225287695ddf9c9";
+    level._effect[ #"divetonuke_light" ] = #"_t6/misc/fx_zombie_cola_dtap_on";
     level.machine_assets[ #"specialty_berserker" ] = spawnstruct();
     level.machine_assets[ #"specialty_berserker" ].weapon = getweapon( "zombie_perk_bottle_dying_wish" );
     level.machine_assets[ #"specialty_berserker" ].off_model = "p7_zm_vending_nuke";
@@ -132,7 +132,7 @@ function function_32b9bac( use_trigger, perk_machine, bump_trigger, collision )
 // Size: 0x32
 function function_d1c19f4e()
 {
-    level._effect[ #"divetonuke_light" ] = #"hash_2225287695ddf9c9";
+    level._effect[ #"divetonuke_light" ] = #"_t6/misc/fx_zombie_cola_dtap_on";
 }
 
 // Namespace zm_perk_dying_wish/zm_perk_dying_wish

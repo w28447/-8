@@ -1,6 +1,6 @@
 {
     "name": "#hardcore",
-    "description": "#hash_62fcea51454f0bdd",
+    "description": "#menu/hardcore",
     "lobbyMainMode": "MULTIPLAYER",
     "hidden": false,
     "environmentMask": 7,
@@ -216,7 +216,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7327ca257aa61e93",
+                    "name": "#g_hitdet_logging",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -225,7 +225,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7b7e1cadbd098787",
+                    "name": "#cg_hitdet_client_marker",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -730,7 +730,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7327ca257aa61e93",
+                    "name": "#g_hitdet_logging",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -739,7 +739,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7b7e1cadbd098787",
+                    "name": "#cg_hitdet_client_marker",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -1034,7 +1034,7 @@
             "bundle": {}
         },
         {
-            "name": "#hash_193ec93ee6c79356",
+            "name": "#entry_mp_hc_conf",
             "description": "#hash_75c1ad04f41f7681",
             "unique_name": "#hash_706b20585816787b",
             "visibleProfileVar": "#hash_5e563e6544ff9705",
@@ -1244,7 +1244,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7327ca257aa61e93",
+                    "name": "#g_hitdet_logging",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -1253,7 +1253,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7b7e1cadbd098787",
+                    "name": "#cg_hitdet_client_marker",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -1548,7 +1548,7 @@
             "bundle": {}
         },
         {
-            "name": "#hash_6a7d79446d65c6ac",
+            "name": "#entry_mp_hc_dom",
             "description": "#hash_7193898ca30b03c5",
             "unique_name": "#hash_4af5683be7fbe48f",
             "visibleProfileVar": "#hash_5e563e6544ff9705",
@@ -1758,7 +1758,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7327ca257aa61e93",
+                    "name": "#g_hitdet_logging",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -1767,7 +1767,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7b7e1cadbd098787",
+                    "name": "#cg_hitdet_client_marker",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -2272,7 +2272,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7327ca257aa61e93",
+                    "name": "#g_hitdet_logging",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -2281,7 +2281,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7b7e1cadbd098787",
+                    "name": "#cg_hitdet_client_marker",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -2567,7 +2567,7 @@
             "bundle": {}
         },
         {
-            "name": "#hash_59693fcb20945f15",
+            "name": "#entry_mp_hc_control",
             "description": "#hash_5f23492c97be3430",
             "unique_name": "#hash_7f9df896b36fee98",
             "visibleProfileVar": "#hash_5e563e6544ff9705",
@@ -2777,7 +2777,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7327ca257aa61e93",
+                    "name": "#g_hitdet_logging",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -2786,7 +2786,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7b7e1cadbd098787",
+                    "name": "#cg_hitdet_client_marker",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -3127,7 +3127,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7327ca257aa61e93",
+                    "name": "#g_hitdet_logging",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -3136,7 +3136,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7b7e1cadbd098787",
+                    "name": "#cg_hitdet_client_marker",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -3675,7 +3675,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7327ca257aa61e93",
+                    "name": "#g_hitdet_logging",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -3684,7 +3684,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7b7e1cadbd098787",
+                    "name": "#cg_hitdet_client_marker",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,

@@ -100,7 +100,7 @@
         "#hash_bb3f97cf646813ac"
     ],
     "normalImpactFX": "#hash_543debda11c394d3",
-    "bounceImpactFX": "#hash_44809dce624162ce",
+    "bounceImpactFX": "#hero_bow_sm_enter",
     "normalImpactSounds": "#hash_7f28ebd16e6319e",
-    "bounceImpactSounds": "#hash_34d20fa8d9efe88a"
+    "bounceImpactSounds": "#arrow_impact_charged"
 }

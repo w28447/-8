@@ -2,7 +2,7 @@
     "name": "#maps/mp/mp_offshore_alt.d3dbsp",
     "baseName": "mp_offshore_alt",
     "lutMaterial": "#lut_mp_offshore_alt",
-    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "volumeDecalRevealTexture": "#vdreveal",
     "unk550": [
         "#img_trim_lut_mp_offshore_alt",
         "#img_trim_lut_mp_offshore_alt",

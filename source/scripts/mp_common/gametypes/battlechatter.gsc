@@ -641,7 +641,7 @@ function pain_vox( meansofdeath, weapon )
             {
                 if ( weapon.doesfiredamage )
                 {
-                    dialogkey = playerbundle.var_c3b67de0;
+                    dialogkey = playerbundle.exertpainburn;
                 }
             }
             else
@@ -660,11 +660,11 @@ function pain_vox( meansofdeath, weapon )
         }
         else if ( meansofdeath == "MOD_BURNED" )
         {
-            dialogkey = playerbundle.var_c3b67de0;
+            dialogkey = playerbundle.exertpainburn;
         }
         else if ( meansofdeath == "MOD_ELECTROCUTED" )
         {
-            dialogkey = playerbundle.var_68bb30c1;
+            dialogkey = playerbundle.exertpainstun;
         }
         else if ( self isplayerunderwater() )
         {
@@ -793,43 +793,43 @@ function function_551980b7( dialogname )
             dialogkey = playerbundle.threatbattery;
             break;
         case #"buffassault":
-            dialogkey = playerbundle.var_f33cef89;
+            dialogkey = playerbundle.threatbuffassault;
             break;
         case #"engineer":
-            dialogkey = playerbundle.var_41e91a42;
+            dialogkey = playerbundle.threatengineer;
             break;
         case #"firebreak":
-            dialogkey = playerbundle.var_f671ae19;
+            dialogkey = playerbundle.threatfirebreak;
             break;
         case #"nomad":
-            dialogkey = playerbundle.var_928f03c4;
+            dialogkey = playerbundle.threatnomad;
             break;
         case #"outrider":
-            dialogkey = playerbundle.var_decbe599;
+            dialogkey = playerbundle.threatoutrider;
             break;
         case #"prophet":
-            dialogkey = playerbundle.var_443d5083;
+            dialogkey = playerbundle.threatprophet;
             break;
         case #"reaper":
-            dialogkey = playerbundle.var_a8809c1c;
+            dialogkey = playerbundle.threatreaper;
             break;
         case #"recon":
-            dialogkey = playerbundle.var_f3745d99;
+            dialogkey = playerbundle.threatrecon;
             break;
         case #"ruin":
-            dialogkey = playerbundle.var_1bfb0e39;
+            dialogkey = playerbundle.threatruin;
             break;
         case #"seraph":
             dialogkey = playerbundle.threatseraph;
             break;
         case #"spectre":
-            dialogkey = playerbundle.var_5fdf57ca;
+            dialogkey = playerbundle.threatspectre;
             break;
         case #"swatpolice":
-            dialogkey = playerbundle.var_aa447d74;
+            dialogkey = playerbundle.threatswatpolice;
             break;
         case #"zero":
-            dialogkey = playerbundle.var_53f12400;
+            dialogkey = playerbundle.threatzero;
             break;
     }
     
@@ -2269,7 +2269,7 @@ function function_5d15920e( dialogkey, playerbundle )
         return "MOD_DROWN";
     }
     
-    if ( dialogkey === playerbundle.var_44d86dec )
+    if ( dialogkey === playerbundle.exertexplosive )
     {
         return "MOD_EXPLOSIVE";
     }
@@ -2284,12 +2284,12 @@ function function_5d15920e( dialogkey, playerbundle )
         return "MOD_MELEE_WEAPON_BUTT";
     }
     
-    if ( dialogkey === playerbundle.var_207908de )
+    if ( dialogkey === playerbundle.exertdeathheadshot )
     {
         return "MOD_HEAD_SHOT";
     }
     
-    if ( dialogkey === playerbundle.var_1dfcabbd )
+    if ( dialogkey === playerbundle.exertdeathfalling )
     {
         return "MOD_FALLING";
     }
@@ -2304,7 +2304,7 @@ function function_5d15920e( dialogkey, playerbundle )
         return "MOD_DOT_SELF";
     }
     
-    if ( dialogkey === playerbundle.var_f8b4bcc1 )
+    if ( dialogkey === playerbundle.exertdeathradiation )
     {
         return "MOD_DOT";
     }
@@ -2354,7 +2354,7 @@ function get_death_vox( weapon, meansofdeath )
     
     if ( self weapon_utils::isexplosivedamage( meansofdeath ) )
     {
-        return playerbundle.var_44d86dec;
+        return playerbundle.exertexplosive;
     }
     
     if ( isdefined( meansofdeath ) )
@@ -2374,11 +2374,11 @@ function get_death_vox( weapon, meansofdeath )
                 
                 return playerbundle.var_53f25688;
             case #"mod_head_shot":
-                return playerbundle.var_207908de;
+                return playerbundle.exertdeathheadshot;
             case #"mod_trigger_hurt":
                 if ( self getvelocity()[ 2 ] < -100 )
                 {
-                    return playerbundle.var_1dfcabbd;
+                    return playerbundle.exertdeathfalling;
                 }
                 else
                 {
@@ -2395,7 +2395,7 @@ function get_death_vox( weapon, meansofdeath )
                     }
                     else
                     {
-                        return playerbundle.var_f8b4bcc1;
+                        return playerbundle.exertdeathradiation;
                     }
                 }
                 
@@ -3443,25 +3443,25 @@ function function_e3ebbf87( var_aa988d26, var_c1132df6 )
                 dialogalias = var_aa988d26.blackjackcallout;
                 break;
             case #"captain_price":
-                dialogalias = var_aa988d26.var_1411ad27;
+                dialogalias = var_aa988d26.captainpricecallout;
                 break;
             case #"cosmic_silverback":
                 dialogalias = var_aa988d26.var_f0be54bd;
                 break;
             case #"david_mason":
-                dialogalias = var_aa988d26.var_1d9994d5;
+                dialogalias = var_aa988d26.davidmasoncallout;
                 break;
             case #"hudson":
                 dialogalias = var_aa988d26.hudsoncallout;
                 break;
             case #"hudson_hawaiian":
-                dialogalias = var_aa988d26.var_609b5733;
+                dialogalias = var_aa988d26.hudsonhawaiiancallout;
                 break;
             case #"mason":
                 dialogalias = var_aa988d26.masoncallout;
                 break;
             case #"matt_shadows":
-                dialogalias = var_aa988d26.var_e7c3ff0b;
+                dialogalias = var_aa988d26.shadowscallout;
                 break;
             case #"menendez":
                 dialogalias = var_aa988d26.menendezcallout;
@@ -3473,7 +3473,7 @@ function function_e3ebbf87( var_aa988d26, var_c1132df6 )
                 dialogalias = var_aa988d26.reznovcallout;
                 break;
             case #"sarah_hall":
-                dialogalias = var_aa988d26.var_9e49481e;
+                dialogalias = var_aa988d26.sarahhallcallout;
                 break;
             case #"sergei":
                 dialogalias = var_aa988d26.sergeicallout;
@@ -3488,7 +3488,7 @@ function function_e3ebbf87( var_aa988d26, var_c1132df6 )
                 dialogalias = var_aa988d26.woodscallout;
                 break;
             case #"woods_old":
-                dialogalias = var_aa988d26.var_e5b468ae;
+                dialogalias = var_aa988d26.woodsoldcallout;
                 break;
             case #"yuri":
                 dialogalias = var_aa988d26.yuricallout;
@@ -3517,16 +3517,16 @@ function function_e3ebbf87( var_aa988d26, var_c1132df6 )
                 dialogalias = var_aa988d26.nikolaicallout;
                 break;
             case #"ofc_dempsey":
-                dialogalias = var_aa988d26.var_95a03453;
+                dialogalias = var_aa988d26.ofcdempseycallout;
                 break;
             case #"ofc_nikolai":
-                dialogalias = var_aa988d26.var_69033114;
+                dialogalias = var_aa988d26.ofcnikolaicallout;
                 break;
             case #"ofc_richtofen":
-                dialogalias = var_aa988d26.var_d56828f1;
+                dialogalias = var_aa988d26.ofcrichtofencallout;
                 break;
             case #"ofc_takeo":
-                dialogalias = var_aa988d26.var_33edc6fa;
+                dialogalias = var_aa988d26.ofctakeocallout;
                 break;
             case #"primis_richtofen":
             case #"richtofen":
@@ -3555,10 +3555,10 @@ function function_e3ebbf87( var_aa988d26, var_c1132df6 )
                 dialogalias = var_aa988d26.teddcallout;
                 break;
             case #"zombie_female":
-                dialogalias = var_aa988d26.var_63dc7b96;
+                dialogalias = var_aa988d26.zombiefemale1callout;
                 break;
             case #"zombie_male":
-                dialogalias = var_aa988d26.var_afc5e0c1;
+                dialogalias = var_aa988d26.zombiemale1callout;
                 break;
             case #"female1":
                 dialogalias = var_aa988d26.female1callout;
@@ -3579,16 +3579,16 @@ function function_e3ebbf87( var_aa988d26, var_c1132df6 )
                 dialogalias = var_aa988d26.var_de7a214a;
                 break;
             case #"male1":
-                dialogalias = var_aa988d26.var_53c80d60;
+                dialogalias = var_aa988d26.male1callout;
                 break;
             case #"male2":
-                dialogalias = var_aa988d26.var_6db249ec;
+                dialogalias = var_aa988d26.male2callout;
                 break;
             case #"male3":
-                dialogalias = var_aa988d26.var_cf970750;
+                dialogalias = var_aa988d26.male3callout;
                 break;
             case #"male4":
-                dialogalias = var_aa988d26.var_ff548dc3;
+                dialogalias = var_aa988d26.male4callout;
                 break;
             case #"hard_male":
                 dialogalias = var_aa988d26.var_80c17c05;
@@ -3836,22 +3836,22 @@ function play_gadget_activate( weapon )
             break;
         case #"gadget_cleanse":
         case #"gadget_health_boost":
-            dialogkey = playerbundle.var_2292382;
+            dialogkey = playerbundle.cleanseweaponuse;
             break;
         case #"hatchet":
-            dialogkey = playerbundle.var_8ba3822;
+            dialogkey = playerbundle.combataxeweaponuse;
             break;
         case #"eq_slow_grenade":
         case #"concussion_grenade":
-            dialogkey = playerbundle.var_426ce83a;
+            dialogkey = playerbundle.concussiongrenadeweaponuse;
             break;
         case #"hash_5825488ac68418af":
         case #"eq_swat_grenade":
         case #"hash_3f62a872201cd1ce":
-            dialogkey = playerbundle.var_b3d4d56b;
+            dialogkey = playerbundle.flashbangweaponuse;
             break;
         case #"frag_grenade":
-            dialogkey = playerbundle.var_2f65caf3;
+            dialogkey = playerbundle.fraggrenadeweaponuse;
             break;
         case #"eq_grapple":
             dialogkey = playerbundle.grapplegunweaponuse;
@@ -3860,7 +3860,7 @@ function play_gadget_activate( weapon )
         case #"eq_gravityslam":
             if ( grapple::function_d79e9bb5( self, undefined, undefined, undefined ) )
             {
-                dialogkey = playerbundle.var_71187505;
+                dialogkey = playerbundle.gravityslamweaponuse;
                 dialogflags = dialogflags | 6 | 16;
                 dialogbuffer = 0.05;
                 self.var_6765d33e = 1;
@@ -3881,45 +3881,45 @@ function play_gadget_activate( weapon )
             
             break;
         case #"mini_turret":
-            dialogkey = playerbundle.var_80253e65;
+            dialogkey = playerbundle.miniturretweaponuse;
             break;
         case #"eq_molotov":
-            dialogkey = playerbundle.var_e324183;
+            dialogkey = playerbundle.molotovweaponuse;
             break;
         case #"mute_smoke":
-            dialogkey = playerbundle.p8_chi_fuel_tank_large_01_catwalk_ladder_ring01;
+            dialogkey = playerbundle.var_201fd007;
             break;
         case #"hero_flamethrower":
             self function_bd715920( weapon, self, self.origin, self );
             dialogkey = playerbundle.purifierweaponuse;
             break;
         case #"gadget_radiation_field":
-            dialogkey = playerbundle.var_44c8bf55;
+            dialogkey = playerbundle.radiationfieldweaponuse;
             break;
         case #"eq_seeker_mine":
-            dialogkey = playerbundle.var_931b8099;
+            dialogkey = playerbundle.seekermineweaponuse;
             break;
         case #"eq_cluster_semtex_grenade":
             dialogkey = playerbundle.var_da293cfd;
             break;
         case #"eq_sensor":
-            dialogkey = playerbundle.var_8a8c748;
+            dialogkey = playerbundle.sensordartweaponuse;
             var_4d031df6 = playerbundle.var_15990d1b;
             break;
         case #"eq_tripwire":
             if ( ( isdefined( self.var_9e50f96 ) ? self.var_9e50f96 : 0 ) + float( mpdialog_value( "tripwireUseCooldown", 0 ) ) / 1000 < gettime() )
             {
-                dialogkey = playerbundle.var_9ee8c066;
+                dialogkey = playerbundle.tripwireweaponuse;
                 self.var_9e50f96 = gettime();
             }
             
             break;
         case #"trophy_system":
-            dialogkey = playerbundle.var_6505d47a;
+            dialogkey = playerbundle.trophysystemweaponuse;
             break;
         case #"gadget_vision_pulse":
             dialogkey = playerbundle.visionpulseabilityuse;
-            var_4d031df6 = playerbundle.var_8c880e98;
+            var_4d031df6 = playerbundle.visionpulseabilityusefutz;
             break;
         case #"gadget_spawnbeacon":
             var_3bf73cf3 = function_94b5718c( self );
@@ -3951,7 +3951,7 @@ function play_gadget_activate( weapon )
             
             break;
         case #"eq_hawk":
-            dialogkey = playerbundle.var_ce864f4c;
+            dialogkey = playerbundle.hawkweaponuse;
             break;
         case #"sig_blade":
             dialogkey = playerbundle.var_4acffa3b;
@@ -3961,10 +3961,10 @@ function play_gadget_activate( weapon )
             dialogkey = playerbundle.var_d30ab48d;
             break;
         case #"eq_shroud":
-            dialogkey = playerbundle.var_6ca16623;
+            dialogkey = playerbundle.shroudweaponuse;
             break;
         case #"eq_smoke":
-            dialogkey = playerbundle.p8_chi_fuel_tank_large_01_catwalk_ladder_ring01;
+            dialogkey = playerbundle.var_201fd007;
             var_4d031df6 = playerbundle.var_54bd09ab;
             var_3bf73cf3 = function_94b5718c( self );
             

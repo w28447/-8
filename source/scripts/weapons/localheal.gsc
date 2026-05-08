@@ -43,11 +43,11 @@ function init_shared()
     
     if ( isdefined( weapon ) && weapon.name != #"none" )
     {
-        level.var_c34a20f5 = getscriptbundle( weapon.customsettings );
+        level.localhealbundle = getscriptbundle( weapon.customsettings );
     }
     else
     {
-        level.var_c34a20f5 = getscriptbundle( "localheal_custom_settings" );
+        level.localhealbundle = getscriptbundle( "localheal_custom_settings" );
     }
     
     globallogic_score::register_kill_callback( weapon, &function_2100fa40 );
@@ -228,7 +228,7 @@ function regen_health( weapon, source_player, var_7b8559d4 )
     if ( player == source_player )
     {
         maxhealth = player.var_66cb03ad + var_7b8559d4 * 25;
-        var_c993fb53 = min( level.var_c34a20f5.var_9131fe6b, maxhealth );
+        var_c993fb53 = min( level.localhealbundle.var_9131fe6b, maxhealth );
         diff = int( max( maxhealth - var_c993fb53, 0 ) / 25 );
         var_7b8559d4 -= diff;
     }
@@ -289,7 +289,7 @@ function regen_health( weapon, source_player, var_7b8559d4 )
 function function_903b9495( weapon, source_player )
 {
     player = self;
-    var_4e843ec0 = isdefined( isdefined( level.var_c34a20f5.var_c114af76 ) ? level.var_c34a20f5.var_c114af76 : player != source_player ? level.var_c34a20f5.var_a2a05449 : 0 ) ? isdefined( level.var_c34a20f5.var_c114af76 ) ? level.var_c34a20f5.var_c114af76 : player != source_player ? level.var_c34a20f5.var_a2a05449 : 0 : 0;
+    var_4e843ec0 = isdefined( isdefined( level.localhealbundle.var_c114af76 ) ? level.localhealbundle.var_c114af76 : player != source_player ? level.localhealbundle.var_a2a05449 : 0 ) ? isdefined( level.localhealbundle.var_c114af76 ) ? level.localhealbundle.var_c114af76 : player != source_player ? level.localhealbundle.var_a2a05449 : 0 : 0;
     player regen_health( weapon, source_player, var_4e843ec0 );
     
     if ( isdefined( self.var_121392a1 ) )
@@ -441,13 +441,13 @@ function do_gadget( slot, weapon )
         profilestop();
     }
     
-    if ( isdefined( level.var_c34a20f5.var_2f50349f ) && level.var_c34a20f5.var_2f50349f )
+    if ( isdefined( level.localhealbundle.var_2f50349f ) && level.localhealbundle.var_2f50349f )
     {
-        if ( player.localheal.var_e2e4899c >= ( isdefined( level.var_c34a20f5.var_9d1454f5 ) ? level.var_c34a20f5.var_9d1454f5 : 0 ) )
+        if ( player.localheal.var_e2e4899c >= ( isdefined( level.localhealbundle.var_9d1454f5 ) ? level.localhealbundle.var_9d1454f5 : 0 ) )
         {
             var_1edc9e27 = 1;
             profilestart();
-            player regen_health( weapon, player, isdefined( level.var_c34a20f5.var_12af1c65 ) ? level.var_c34a20f5.var_12af1c65 : 0 );
+            player regen_health( weapon, player, isdefined( level.localhealbundle.var_12af1c65 ) ? level.localhealbundle.var_12af1c65 : 0 );
             player status_effect::function_6519f95f();
             profilestop();
         }

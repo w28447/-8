@@ -86,14 +86,14 @@ function private function_1a47fb39( einflictor, attacker, idamage, smeansofdeath
     if ( !( isdefined( self.water_damage ) && self.water_damage ) )
     {
         self thread zombie_utility::zombie_gib( idamage, attacker, vdir, self gettagorigin( "j_spine4" ), smeansofdeath, shitloc, undefined, undefined, weapon );
-        var_e98404d8 = self getcentroid();
+        entity_centroid = self getcentroid();
         gibserverutils::annihilate( self );
-        function_25c6cba0( self, var_e98404d8 );
+        function_25c6cba0( self, entity_centroid );
         
         if ( isdefined( self.b_in_water ) && self.b_in_water )
         {
             self clientfield::increment( "zombie_electric_water_aoe_clientfield" );
-            level thread function_79e38cc4( var_e98404d8 );
+            level thread function_79e38cc4( entity_centroid );
         }
     }
 }

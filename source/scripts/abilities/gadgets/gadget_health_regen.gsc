@@ -181,9 +181,9 @@ function function_bc0ce7d5( slot, weapon )
             
             if ( isdefined( var_1594ab5[ i ].laststand ) && var_1594ab5[ i ].laststand )
             {
-                if ( isdefined( var_1594ab5[ i ].var_84c0402e ) )
+                if ( isdefined( var_1594ab5[ i ].last_bleedout_time ) )
                 {
-                    var_1594ab5[ i ].bleedout_time = var_1594ab5[ i ].var_84c0402e;
+                    var_1594ab5[ i ].bleedout_time = var_1594ab5[ i ].last_bleedout_time;
                 }
             }
             else

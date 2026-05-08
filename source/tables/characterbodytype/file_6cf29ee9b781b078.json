@@ -3,16 +3,16 @@
     "displayName": "#zombie/richtofen",
     "chrName": "rich",
     "mpDialog": "#primis_richtofen",
-    "playerSoundsTable": "#hash_21fe3f79b5e4c2d6",
+    "playerSoundsTable": "#cp_playersounds",
     "playerFXTable": "#hash_471b500cc678f872",
     "image_68": "#hash_ee986e4c844a1d01",
     "positionDraftPortrait": "#ui_icon_hero_portrait_draft_richtofen",
     "positionDraftIcon": "#hash_ee986e4c844a1d01",
-    "characterFootsteps": "#hash_4ee42a3145f1fe3d",
-    "characterFootstepsQuiet": "#hash_783ab8b555ce9413",
-    "characterFootstepsNPC": "#hash_3008da66d91b8ad7",
-    "characterFootstepsNPCLoud": "#hash_237a21af974e9d2f",
-    "characterFootstepsNPCQuiet": "#hash_22eae0dda1cf3d31",
+    "characterFootsteps": "#defaultplayerfootstep",
+    "characterFootstepsQuiet": "#defaultplayerquietfootstep",
+    "characterFootstepsNPC": "#defaultnpcfootstep",
+    "characterFootstepsNPCLoud": "#defaultnpcloudfootstep",
+    "characterFootstepsNPCQuiet": "#defaultnpcquietfootstep",
     "bundle": {
         "lobbyScenes": [
             {

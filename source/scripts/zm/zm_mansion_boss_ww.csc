@@ -285,7 +285,7 @@ function function_b5901c02( localclientnum, oldval, newval, bnewent, binitialsna
 // Size: 0xac
 function function_2a48bf1c( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    if ( !self zm_utility::function_f8796df3( localclientnum ) )
+    if ( !self zm_utility::is_first_person( localclientnum ) )
     {
         return;
     }

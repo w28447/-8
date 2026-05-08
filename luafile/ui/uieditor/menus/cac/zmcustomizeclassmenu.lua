@@ -30,7 +30,7 @@ LUI.createMenu.ZMCustomizeClassMenu = function ( f1_arg0, f1_arg1 )
 	
 	local GenericMenuFrame = CoD.GenericMenuFrame.new( f1_local1, f1_arg0, 0, 1, 0, 0, 0, 1, 0, 0 )
 	GenericMenuFrame.CommonHeader.BGSceneBlur:setAlpha( 1 )
-	GenericMenuFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0xFE4770705278297 ) )
+	GenericMenuFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "aar/create_a_class" ) )
 	GenericMenuFrame:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then

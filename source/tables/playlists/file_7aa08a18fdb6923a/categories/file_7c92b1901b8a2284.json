@@ -101,7 +101,7 @@
             "rotations": [
                 {
                     "map": "#zm_zodt8",
-                    "gametype": "#hash_59737db3dbdcb288",
+                    "gametype": "#gametype_zm_zclassic",
                     "weight": 1,
                     "isFree": false
                 }

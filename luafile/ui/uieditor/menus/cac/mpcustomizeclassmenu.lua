@@ -45,7 +45,7 @@ LUI.createMenu.MPCustomizeClassMenu = function ( f1_arg0, f1_arg1 )
 	
 	local GenericMenuFrameCAC = CoD.GenericMenuFrameCAC.new( f1_local1, f1_arg0, 0.5, 0.5, -960, 960, 0, 1, 0, 0 )
 	GenericMenuFrameCAC.CommonHeader.BGSceneBlur:setAlpha( 1 )
-	GenericMenuFrameCAC.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0xFE4770705278297 ) )
+	GenericMenuFrameCAC.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "aar/create_a_class" ) )
 	GenericMenuFrameCAC:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f3_local0 = model:get()
 		if f3_local0 ~= nil then

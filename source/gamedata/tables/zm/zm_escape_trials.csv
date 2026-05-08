@@ -22,7 +22,7 @@
 17,#hash_6c23261f4d492d7e,7#hash_3f7dbc709c4a42b0,7#hash_495e61136d1a8a18,7#,#forge_magmagat,#,#,#,#,#,#,#,#
 18,#hash_5e9298ba68299010,7#hash_3f7dcb709c4a5c2d,7#hash_7a803cf62eec9897,7#,#hash_28d1b9857e2ca681,#2,#,#,#,#,#,#,#
 19,#japanese_horror,7#hash_3f7dca709c4a5a7a,7#hash_3209df1e6f3b704a,7#,#zombie_speed_changes,#,#,#,#,#,#,#,#
-20,#hash_5d1b24fee64e2185,7#hash_3f8149709c4d681e,7#hash_35c65bc2ace6e2e,7#,#defend_area,#s_trials_defend_area_obj_showers,#hash_5f874a23b6cf6018,#hash_3e062aaa74b6ee8e,#cellblock_shower,#,#,#,#
+20,#shower_showdown,7#hash_3f8149709c4d681e,7#hash_35c65bc2ace6e2e,7#,#defend_area,#s_trials_defend_area_obj_showers,#hash_5f874a23b6cf6018,#hash_3e062aaa74b6ee8e,#cellblock_shower,#,#,#,#
 20,#,7#,7#,7#,#give_reward,#hash_20e46acec43f89e9,#hash_46044d0ce4567ceb,#uie_trial_medal_silver,#hash_63dfdbf360bad3a8,#,#,#,#
 21,#hash_5dcea2de3056157,7#hash_3f814a709c4d69d1,7#hash_7e02c915b04f83eb,7#,#hash_6840f605489bddc2,#prone,#,#,#,#,#,#,#
 22,#pointless,7#hash_3f8147709c4d64b8,7#hash_4f7ba54fd8d544e0,7#,#reset_points,#,#,#,#,#,#,#,#
@@ -31,7 +31,7 @@
 25,#stand_firm,7#hash_3f814e709c4d709d,7#hash_50186cf704217ba7,7#,#defend_area,#s_trials_defend_area_obj_infirmary,#hash_64b81f066e6cc540,#hash_a6b7fc2d7e6e6a,#zone_infirmary,#zone_infirmary_roof,#,#,#
 26,#mobster,7#hash_3f814b709c4d6b84,7#hash_228c7aed5b4aa8ac,7#,#restrict_loadout,#tommy_gun,#,#,#,#,#,#,#
 27,#im_out,7#hash_3f814c709c4d6d37,7#hash_4f496d07ff6de69,7#,#reset_loadout,#ammo,#,#,#,#,#,#,#
-28,#hash_4c82af5bd5c0c6cc,7#hash_3f8141709c4d5a86,7#hash_7f60e043a8757876,7#,#hash_163077e21e01f4a7,#60,#,#,#,#,#,#,#
+28,#hash_4c82af5bd5c0c6cc,7#hash_3f8141709c4d5a86,7#hash_7f60e043a8757876,7#,#fast_travel_rush,#60,#,#,#,#,#,#,#
 29,#hash_d282349ebdbb182,7#hash_3f8142709c4d5c39,7#hash_7b070a13d922f413,7#,#add_special,#zombie_dog,#50,#75,#125,#165,#,#,#
-30,#hash_3a917a24f22251c1,7#hash_3f84cf709c5081a7,7#hash_35e44d431b990a79,7#,#defend_area,#s_trials_defend_area_obj_warden_house,#hash_46216fff49b1da77,#hash_1c3ac4d9612e0a3d,#zone_warden_house,#zone_warden_home,#,#,#
+30,#wardens_last_stand,7#hash_3f84cf709c5081a7,7#hash_35e44d431b990a79,7#,#defend_area,#s_trials_defend_area_obj_warden_house,#hash_46216fff49b1da77,#hash_1c3ac4d9612e0a3d,#zone_warden_house,#zone_warden_home,#,#,#
 30,#,7#,7#,7#,#give_reward,#fastest_time_to_complete_round_30,#hash_f60cd1936dfe2ae,#uie_trial_medal_gold,#hash_57535c6fade520d3,#hash_4402d97ccdae530f,#1,#,#

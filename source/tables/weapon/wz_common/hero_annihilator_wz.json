@@ -60,8 +60,8 @@
     "sound810": "#hash_21cba6ae89a3493c",
     "sound820": "#hash_21cba6ae89a3493c",
     "tunables1": "#hero_annihilator_tunables_wz",
-    "cacWeaponXCam": "#hash_24bf3d189ad017ba",
-    "cacAttachmentsXCam": "#hash_24bf3d189ad017ba",
+    "cacWeaponXCam": "#ui_cam_cac_hero_annihilator",
+    "cacAttachmentsXCam": "#ui_cam_cac_hero_annihilator",
     "attachments": [
         "#hash_f459a0af8e8f912b"
     ],
@@ -71,7 +71,7 @@
     "sharedWeaponSounds": "#pistol",
     "ballisticDesc": "#hash_e297011667973dfb",
     "tracers": [
-        "#hash_1f66924e265cbcc5",
+        "#sniper_warzone",
         "#hash_6c5abe44f536450c"
     ],
     "#hash_2e4a8800": "#hero_annihilator_scoreevents",
@@ -92,8 +92,8 @@
     "laser_e30": "#default_laser",
     "fx_bc8": "#hash_762e655f123759cd",
     "fx_bd0": "#hash_7634515f123ba37f",
-    "fx_be8": "#hash_6d9a36ac32c18d74",
-    "enemyDeathFxSet": "#hash_3af69bfbfda4469a",
+    "fx_be8": "#weapon/fx_hero_annhilatr_glint",
+    "enemyDeathFxSet": "#weapon_hero_annihilator_knockback",
     "normalImpactFX": "#hash_fee0671def6af7a4",
     "exitImpactFX": "#hash_d6ef4fc6c00cc18e",
     "normalImpactSounds": "#hash_f8e291a8acdea947",

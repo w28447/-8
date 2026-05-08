@@ -332,7 +332,7 @@ function function_8c80503()
     self thread function_d4c6dc0d();
     wait 2;
     self function_43ef7a9a( level.var_a89ec78a[ self.var_614bfc5c ], self.origin );
-    self.var_b21e0263 = 0;
+    self.is_playing_audio = 0;
 }
 
 // Namespace namespace_a5657ff1/namespace_a5657ff1
@@ -632,12 +632,12 @@ function function_b116e882( var_237f80b0, var_54bb7f87, var_5876458 )
 // Size: 0x154
 function function_d4c6dc0d()
 {
-    self.var_b21e0263 = 1;
+    self.is_playing_audio = 1;
     a_e_audio_reel = getentarray( self.target2, "targetname" );
     a_e_audio_reel[ 0 ] playsound( #"hash_3cca3c060dacc7de" );
     a_e_audio_reel[ 0 ] playloopsound( #"hash_14cf26f9ee5a9962" );
     
-    while ( self.var_b21e0263 && a_e_audio_reel.size > 0 )
+    while ( self.is_playing_audio && a_e_audio_reel.size > 0 )
     {
         a_e_audio_reel[ 0 ] rotatepitch( 45, 1 );
         wait 0.1;
@@ -1000,9 +1000,9 @@ function function_2cfc0c77( e_holder, w_item )
 // Params 1
 // Checksum 0x8056d76a, Offset: 0x2e20
 // Size: 0xc6
-function hold_round_end( var_430ae23 )
+function hold_round_end( b_hold )
 {
-    if ( var_430ae23 )
+    if ( b_hold )
     {
         if ( !isdefined( level.var_4a1bd51b ) )
         {

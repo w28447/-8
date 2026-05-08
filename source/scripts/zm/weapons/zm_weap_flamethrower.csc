@@ -133,7 +133,7 @@ function private function_d05553c6( localclientnum, oldvalue, newvalue, bnewent,
 // Size: 0xcc
 function flamethrower_wind_blast_flash( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    if ( self zm_utility::function_f8796df3( localclientnum ) )
+    if ( self zm_utility::is_first_person( localclientnum ) )
     {
         playviewmodelfx( localclientnum, level._effect[ #"wind_blast_flash" ], "tag_flash" );
         return;
@@ -148,7 +148,7 @@ function flamethrower_wind_blast_flash( localclientnum, oldval, newval, bnewent,
 // Size: 0xcc
 function flamethrower_tornado_blast_flash( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    if ( self zm_utility::function_f8796df3( localclientnum ) )
+    if ( self zm_utility::is_first_person( localclientnum ) )
     {
         playviewmodelfx( localclientnum, level._effect[ #"tornado_blast_flash" ], "tag_flash" );
         return;

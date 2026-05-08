@@ -131,9 +131,9 @@ function full_ammo_powerup( drop_item, player )
 {
     players = getplayers( player.team );
     
-    if ( isdefined( level.var_73345bfd ) )
+    if ( isdefined( level._get_game_module_players ) )
     {
-        players = [[ level.var_73345bfd ]]( player );
+        players = [[ level._get_game_module_players ]]( player );
     }
     
     level notify( #"zmb_max_ammo_level" );

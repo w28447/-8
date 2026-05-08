@@ -17,7 +17,7 @@
 // Size: 0x13c
 function init()
 {
-    level function_e12fb431();
+    level init_bells();
     level function_2b6fe83b();
     level third_fallen_soldiers_robots_decon_room_cleared();
     callback::on_connect( &on_player_connect );
@@ -76,7 +76,7 @@ function function_ea67bd7c()
 // Params 0
 // Checksum 0x176df8da, Offset: 0x6f8
 // Size: 0xa0
-function function_e12fb431()
+function init_bells()
 {
     a_e_bells = getentarray( "challenges_bell", "targetname" );
     

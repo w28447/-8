@@ -46,7 +46,7 @@ function enable_additional_primary_weapon_perk_for_level()
 {
     if ( function_8b1a219a() )
     {
-        zm_perks::register_perk_basic_info( #"specialty_additionalprimaryweapon", #"perk_additional_primary_weapon", 4000, #"hash_3010c651fdffa112", getweapon( "zombie_perk_bottle_additionalprimaryweapon" ), getweapon( "zombie_perk_totem_mule_kick" ), #"zmperksmulekick" );
+        zm_perks::register_perk_basic_info( #"specialty_additionalprimaryweapon", #"perk_additional_primary_weapon", 4000, #"zombie/perk_additionalprimaryweapon_keyboard", getweapon( "zombie_perk_bottle_additionalprimaryweapon" ), getweapon( "zombie_perk_totem_mule_kick" ), #"zmperksmulekick" );
     }
     else
     {
@@ -66,9 +66,9 @@ function enable_additional_primary_weapon_perk_for_level()
 // Size: 0x106
 function additional_primary_weapon_precache()
 {
-    if ( isdefined( level.var_525672d4 ) )
+    if ( isdefined( level.additional_primary_weapon_precache_override_func ) )
     {
-        [[ level.var_525672d4 ]]();
+        [[ level.additional_primary_weapon_precache_override_func ]]();
         return;
     }
     

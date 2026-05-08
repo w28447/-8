@@ -2,7 +2,7 @@
     "name": "#hash_1b27648f4099da85",
     "displayName": "#heroes/swatpolice",
     "mpDialog": "#swatpolice",
-    "playerSoundsTable": "#hash_8b6c2bcaaa94ab4",
+    "playerSoundsTable": "#mp_playersounds",
     "playerFXTable": "#hash_471b500cc678f872",
     "image_50": "#personalize_t7_hud_mp_weapon_hero_pineapplegun_available",
     "image_58": "#t7_mp_loadingportrait_weapon_battery",
@@ -16,11 +16,11 @@
     "dogtagFriendly": "#hash_846064366f9c96",
     "dogTagEnemy": "#hash_7a65efdf091dd1ab",
     "tagFxSet": "#hash_1fec3233658666c0",
-    "characterFootsteps": "#hash_575d0804dbd6d74c",
-    "characterFootstepsQuiet": "#hash_783ab8b555ce9413",
-    "characterFootstepsNPC": "#hash_3008da66d91b8ad7",
-    "characterFootstepsNPCLoud": "#hash_237a21af974e9d2f",
-    "characterFootstepsNPCQuiet": "#hash_22eae0dda1cf3d31",
+    "characterFootsteps": "#foley_heavy",
+    "characterFootstepsQuiet": "#defaultplayerquietfootstep",
+    "characterFootstepsNPC": "#defaultnpcfootstep",
+    "characterFootstepsNPCLoud": "#defaultnpcloudfootstep",
+    "characterFootstepsNPCQuiet": "#defaultnpcquietfootstep",
     "bundle": {
         "arenaLobbyScenes": [
             {

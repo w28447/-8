@@ -135,7 +135,7 @@ localizeentry,d#hash_159422619daa50d8
 localizeentry,d#mpui/camo_redhex
 localizeentry,d#hash_15cf0d46af70291b
 localizeentry,d#mpui/null
-localizeentry,d#hash_16025ca2b9dd4da3
+localizeentry,d#menu/vehicle_horn
 localizeentry,d#hash_1646adf908196648
 localizeentry,d#hash_1649dc9ad9b89284
 localizeentry,d#mpui/grip
@@ -236,7 +236,7 @@ localizeentry,d#mpui/camo_jungle
 localizeentry,d#mpui/dualoptic_desc
 localizeentry,d#weapon/ar_an94_t8
 localizeentry,d#hash_2443dac0d8af3240
-localizeentry,d#hash_244ee9beaa552ff7
+localizeentry,d#wz/reznov_caps
 localizeentry,d#mpui/camo_huntsman
 localizeentry,d#hash_246c7d9118b22299
 localizeentry,d#hash_24a3e0f402bfd000
@@ -354,7 +354,7 @@ localizeentry,d#hash_33ba5b935d8a0407
 localizeentry,d#hash_33c5a3d6ed967788
 localizeentry,d#hash_33f013eacb53964c
 localizeentry,d#hash_342c90ec25fd2481
-localizeentry,d#hash_34ae5f9e39fc4a1f
+localizeentry,d#wz/woods_caps
 localizeentry,d#hash_34af0d829f35cf59
 localizeentry,d#mpui/holo_desc
 localizeentry,#hash_352fa0f46bea077a
@@ -368,7 +368,7 @@ localizeentry,d#hash_35fda0fb3591aeee
 localizeentry,d#mpui/quickdraw2
 localizeentry,d#hash_360742434808cf8e
 localizeentry,d#hash_3640fdfd426ba4b4
-localizeentry,#hash_36567bb8c49ec72d
+localizeentry,#menu/ascend
 localizeentry,d#hash_366888e106b2bbb3
 localizeentry,d#hash_366ad11ec14087b1
 localizeentry,d#hash_367dd4c3c93edc80
@@ -417,7 +417,7 @@ localizeentry,d#mpui/camo_darkmatter
 localizeentry,d#hash_3bb4fa8f6dc7bb6e
 localizeentry,d#weapon/melee_secretsanta_t8_desc
 localizeentry,d#hash_3bea3433e79cdac4
-localizeentry,d#hash_3bf437dd2e981df1
+localizeentry,d#smartcover/name
 localizeentry,d#hash_3c49bb4da34b082a
 localizeentry,d#weapon/special_crossbow_t8
 localizeentry,d#hash_3c781f3d248e0804
@@ -431,7 +431,7 @@ localizeentry,d#hash_3ccf9bf5cc21aeb3
 localizeentry,d#weapon/smartcover
 localizeentry,d#hash_3d26eb8dafae98e9
 localizeentry,d#hash_3d75c0876757457c
-localizeentry,d#hash_3d7abb3373fab887
+localizeentry,d#zmui/suppressor_desc
 localizeentry,d#weapon/shotgun_fullauto_t8_desc
 localizeentry,d#hash_3dcec21882ed160f
 localizeentry,d#mpui/tacknife
@@ -540,7 +540,7 @@ localizeentry,d#hash_4d2bd374d3c699ed
 localizeentry,d#weapon/launcher_standard_operator_t8
 localizeentry,d#mpui/quickdraw
 localizeentry,d#hash_4dff11036295b59f
-localizeentry,d#hash_4e06263ae2b9a394
+localizeentry,d#heroes/hacker
 localizeentry,d#hash_4e2788ef8257f8b7
 localizeentry,d#hash_4e413fbdde10b051
 localizeentry,d#hash_4ecfa703971b8aae
@@ -732,8 +732,8 @@ localizeentry,d#hash_6541feae026c1180
 localizeentry,#hash_655f3fad0f979924
 localizeentry,d#hash_657e961b97734a8f
 localizeentry,d#weapon/smg_fastfire_t8
-localizeentry,#hash_6601cb85da109187
-localizeentry,#hash_6615f9892006f4f4
+localizeentry,#menu/descend
+localizeentry,#menu/look
 localizeentry,#weapon/flare_gun_wz_desc
 localizeentry,d#hash_663114aa52ffcb21
 localizeentry,#hash_6642f37ecc132749
@@ -808,7 +808,7 @@ localizeentry,d#weapon/pistol_revolver_t8_operator_desc
 localizeentry,#wz/equipment_stash
 localizeentry,d#weapon/sniper_fastrechamber_t8_operator
 localizeentry,d#mpui/stabilizer
-localizeentry,d#hash_7085044e7b80d5a3
+localizeentry,d#mpui/reticle_default
 localizeentry,d#hash_709fb6b7fdde6aa8
 localizeentry,d#hash_70b9723e40288f9d
 localizeentry,d#hash_70bb3626628d98b9
@@ -859,7 +859,7 @@ localizeentry,d#hash_7645db46e9fdd615
 localizeentry,d#mpui/camo_ash
 localizeentry,d#hash_76801161d67ae0f5
 localizeentry,d#hash_768c5aeecc2d7cc4
-localizeentry,d#hash_76b39c94b6f50858
+localizeentry,d#menu/gas
 localizeentry,d#mpui/grip2_desc
 localizeentry,d#weapon/lmg_stealth_t8
 localizeentry,d#hash_7725a43a5e8755ad

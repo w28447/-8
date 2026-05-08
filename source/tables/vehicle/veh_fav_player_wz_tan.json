@@ -137,21 +137,21 @@
                     {
                         "GAMEPAD": "#GAMEPAD",
                         "hash_7aecb1d7": 0,
-                        "hash_76b39c94b6f50858:hash_4be786c9": "localized17#hash_76b39c94b6f50858",
+                        "menu/gas:hash_4be786c9": "localized17#menu/gas",
                         "hash_334a8e60": "left",
                         "prompt": "+movestick"
                     },
                     {
                         "GAMEPAD": "#GAMEPAD",
                         "hash_7aecb1d7": 0,
-                        "hash_16025ca2b9dd4da3:hash_4be786c9": "localized17#hash_16025ca2b9dd4da3",
+                        "menu/vehicle_horn:hash_4be786c9": "localized17#menu/vehicle_horn",
                         "hash_334a8e60": "left",
                         "prompt": "+melee"
                     },
                     {
                         "kbm": "#kbm",
                         "hash_7aecb1d7": 0,
-                        "hash_16025ca2b9dd4da3:hash_4be786c9": "localized17#hash_16025ca2b9dd4da3",
+                        "menu/vehicle_horn:hash_4be786c9": "localized17#menu/vehicle_horn",
                         "hash_334a8e60": "left",
                         "prompt": "+vehiclehorn"
                     },

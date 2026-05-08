@@ -45,7 +45,7 @@ function enable_widows_wine_perk_for_level()
 {
     if ( function_8b1a219a() )
     {
-        zm_perks::register_perk_basic_info( #"specialty_widowswine", #"perk_widows_wine", 3000, #"hash_618fdb0398552569", getweapon( "zombie_perk_bottle_widows_wine" ), getweapon( "zombie_perk_totem_winters_wail" ), #"zmperkswidowswail" );
+        zm_perks::register_perk_basic_info( #"specialty_widowswine", #"perk_widows_wine", 3000, #"zombie/perk_widowswine_keyboard", getweapon( "zombie_perk_bottle_widows_wine" ), getweapon( "zombie_perk_totem_winters_wail" ), #"zmperkswidowswail" );
     }
     else
     {
@@ -72,9 +72,9 @@ function enable_widows_wine_perk_for_level()
 // Size: 0x106
 function widows_wine_precache()
 {
-    if ( isdefined( level.var_ea6a217f ) )
+    if ( isdefined( level.widows_wine_precache_override_func ) )
     {
-        [[ level.var_ea6a217f ]]();
+        [[ level.widows_wine_precache_override_func ]]();
         return;
     }
     

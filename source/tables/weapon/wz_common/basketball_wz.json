@@ -3,7 +3,7 @@
     "baseWeapon": "#basketball",
     "displayname": "#weapon/basketball",
     "weapon70": "#ball",
-    "streamkey": "#hash_3e0e9ed4e589e2fc",
+    "streamkey": "#basketball_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -37,7 +37,7 @@
     "attachmentUniques": [
         "#hash_46c4a738ee047fa"
     ],
-    "sharedWeaponSounds": "#hash_5e3081d2362bd322",
+    "sharedWeaponSounds": "#basketball_snd",
     "projectilemodel": "#p7_fir_ball_sports_basketball",
     "viewmodel": [
         "#wpn_t8_basketball_view"
@@ -51,5 +51,5 @@
     "image_e90": "#ui_icon_meansofdeath_basketball",
     "image_1048": "#ui_icon_inventory_p7_fir_ball_sports_basketball",
     "fireRumble": "#defaultweapon_melee",
-    "bounceImpactSounds": "#hash_3bab1cd48f7e5af9"
+    "bounceImpactSounds": "#bball_bounce"
 }

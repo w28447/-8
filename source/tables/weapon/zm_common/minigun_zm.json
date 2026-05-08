@@ -3,7 +3,7 @@
     "baseWeapon": "#minigun",
     "displayname": "#weapon/minigun",
     "weapon70": "#minigun",
-    "streamkey": "#hash_537dbd2f1334ffaa",
+    "streamkey": "#minigun_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -60,12 +60,12 @@
     "fireRumble": "#heavygun_fire",
     "fx_bc8": "#weapon/fx_muz_md_rifle_1p",
     "fx_bd0": "#weapon/fx_muz_md_rifle_3p",
-    "fx_c80": "#hash_58b227559fe0083",
-    "fx_c88": "#hash_58b227559fe0083",
-    "fx_c90": "#hash_58b227559fe0083",
-    "fx_c98": "#hash_58b227559fe0083",
+    "fx_c80": "#weapon/fx_shellejects_minigun",
+    "fx_c88": "#weapon/fx_shellejects_minigun",
+    "fx_c90": "#weapon/fx_shellejects_minigun",
+    "fx_c98": "#weapon/fx_shellejects_minigun",
     "normalImpactFX": "#hash_9cafc46b8c735870",
     "exitImpactFX": "#hash_d6ef4fc6c00cc18e",
-    "normalImpactSounds": "#hash_13ab500733e2f350",
-    "exitImpactSounds": "#hash_39d45158b74185f2"
+    "normalImpactSounds": "#heavy_bullet_impact",
+    "exitImpactSounds": "#heavy_bullet_exit"
 }

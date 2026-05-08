@@ -145,8 +145,8 @@ function event_handler[level_init] main( eventstruct )
         zm_ui_inventory::function_7df6bb60( #"zm_zodt8_sentinel_trial", 0 );
     }
     
-    var_8090ebe4 = getnodearray( "traversal_unlink_at_start", "targetname" );
-    array::thread_all( var_8090ebe4, &function_183a6d46 );
+    a_nd_traversals = getnodearray( "traversal_unlink_at_start", "targetname" );
+    array::thread_all( a_nd_traversals, &function_183a6d46 );
     level thread function_4d4e4de();
     level thread function_d515e5e7();
     level thread function_a987d50f();
@@ -266,7 +266,7 @@ function function_6beeab1d()
 // Size: 0x426
 function init_level_vars()
 {
-    level.var_cc984236 = &function_18f12f69;
+    level.zone_occupied_func = &function_18f12f69;
     level.var_c9bb3e4a = 1;
     level.default_start_location = "zone_forecastle_upper";
     level.default_game_mode = "zclassic";
@@ -319,7 +319,7 @@ function init_level_vars()
     }
     
     level.var_562c8f67 = 200;
-    level.zm_bgb_anywhere_but_here_validation_override = &function_3910bef9;
+    level.zm_bgb_anywhere_but_here_validation_override = &anywhere_but_here_validation_override;
 }
 
 // Namespace zm_zodt8/zm_zodt8
@@ -1042,7 +1042,7 @@ function function_ea9f953( b_fore = 1, b_aft = 1 )
 // Params 10, eflags: 0x4
 // Checksum 0x127412d0, Offset: 0x5618
 // Size: 0x29c
-function private water_pump( var_32be30af, var_4c2f2156, var_eb6a4856, var_bbaf1a87, n_time, var_65feb6ff, var_c6653d4, var_ff884319, var_90c00a3d, var_4cdff787 )
+function private water_pump( var_32be30af, var_4c2f2156, e_clip_water, var_bbaf1a87, n_time, var_65feb6ff, var_c6653d4, var_ff884319, var_90c00a3d, var_4cdff787 )
 {
     self notify( var_bbaf1a87 + "_water_pump" );
     self endon( var_bbaf1a87 + "_water_pump" );
@@ -1070,7 +1070,7 @@ function private water_pump( var_32be30af, var_4c2f2156, var_eb6a4856, var_bbaf1
     mdl_water_pump playloopsound( #"hash_5f1c2aeb92331d60" );
     level clientfield::set( var_4cdff787, 1 );
     var_4c2f2156 thread function_1d8df872( 1 );
-    function_b40f577b( var_eb6a4856, var_bbaf1a87, n_time, var_65feb6ff, var_c6653d4, var_ff884319, var_90c00a3d, 1 );
+    function_b40f577b( e_clip_water, var_bbaf1a87, n_time, var_65feb6ff, var_c6653d4, var_ff884319, var_90c00a3d, 1 );
     var_4c2f2156 thread function_1d8df872( 0 );
     mdl_water_pump playsound( #"hash_1fc479499a911511" );
     mdl_water_pump stoploopsound();
@@ -1141,7 +1141,7 @@ function change_water_height_aft( b_drain )
 // Params 8, eflags: 0x4
 // Checksum 0xb2eb080b, Offset: 0x5b38
 // Size: 0x3d6
-function private function_b40f577b( var_eb6a4856, var_bbaf1a87, n_time, var_65feb6ff, var_c6653d4, var_ff884319, var_90c00a3d, b_drain )
+function private function_b40f577b( e_clip_water, var_bbaf1a87, n_time, var_65feb6ff, var_c6653d4, var_ff884319, var_90c00a3d, b_drain )
 {
     level notify( var_bbaf1a87 + "_end" );
     level endon( var_bbaf1a87 + "_end" );
@@ -1153,19 +1153,19 @@ function private function_b40f577b( var_eb6a4856, var_bbaf1a87, n_time, var_65fe
         {
             level clientfield::set( "" + #"hash_7f2f74f05d1f1b75", 2 );
             level thread scene::play( "p8_fxanim_zm_zod_cargo_hold_net_02_bundle", "Shot 2" );
-            level thread function_94040dcd( 1, var_eb6a4856, "" + #"hash_2994a957c49bf321", 570 );
+            level thread function_94040dcd( 1, e_clip_water, "" + #"hash_2994a957c49bf321", 570 );
             level thread function_39dfeedc();
         }
         else
         {
-            level thread function_94040dcd( 1, var_eb6a4856, "" + #"hash_7e91637e80ad93", 200 );
+            level thread function_94040dcd( 1, e_clip_water, "" + #"hash_7e91637e80ad93", 200 );
         }
         
         level notify( var_bbaf1a87 + "_drain_start" );
         level exploder::exploder( var_ff884319 );
         level exploder::exploder( var_ff884319 + "2" );
         level exploder::stop_exploder( var_90c00a3d );
-        var_eb6a4856 function_8faf37bb( n_time, var_65feb6ff, var_c6653d4 );
+        e_clip_water function_8faf37bb( n_time, var_65feb6ff, var_c6653d4 );
         level flag::set( var_bbaf1a87 );
         level notify( var_bbaf1a87 + "_drain_finish" );
         return;
@@ -1175,18 +1175,18 @@ function private function_b40f577b( var_eb6a4856, var_bbaf1a87, n_time, var_65fe
     {
         level clientfield::set( "" + #"hash_7f2f74f05d1f1b75", 3 );
         level thread scene::play( "p8_fxanim_zm_zod_cargo_hold_net_02_bundle", "Shot 3" );
-        level thread function_94040dcd( 0, var_eb6a4856, "" + #"hash_7e91637e80ad93", 570 );
+        level thread function_94040dcd( 0, e_clip_water, "" + #"hash_7e91637e80ad93", 570 );
     }
     else
     {
-        level thread function_94040dcd( 0, var_eb6a4856, "" + #"hash_7e91637e80ad93", 200 );
+        level thread function_94040dcd( 0, e_clip_water, "" + #"hash_7e91637e80ad93", 200 );
     }
     
     level notify( var_bbaf1a87 + "_refill_start" );
     level exploder::stop_exploder( var_ff884319 );
     level exploder::stop_exploder( var_ff884319 + "2" );
     level exploder::exploder( var_90c00a3d );
-    var_eb6a4856 function_8faf37bb( n_time, var_65feb6ff, var_c6653d4 );
+    e_clip_water function_8faf37bb( n_time, var_65feb6ff, var_c6653d4 );
     level flag::clear( var_bbaf1a87 );
     level notify( var_bbaf1a87 + "_refill_finish" );
 }
@@ -1211,11 +1211,11 @@ function private function_8faf37bb( n_time, var_65feb6ff, var_c6653d4 )
 // Params 4
 // Checksum 0xc063e124, Offset: 0x6048
 // Size: 0xa4
-function function_94040dcd( b_on, var_eb6a4856, str_clientfield, var_ff4a7150 )
+function function_94040dcd( b_on, e_clip_water, str_clientfield, var_ff4a7150 )
 {
     if ( b_on )
     {
-        while ( var_eb6a4856.origin[ 2 ] > var_ff4a7150 )
+        while ( e_clip_water.origin[ 2 ] > var_ff4a7150 )
         {
             waitframe( 1 );
         }
@@ -1224,7 +1224,7 @@ function function_94040dcd( b_on, var_eb6a4856, str_clientfield, var_ff4a7150 )
         return;
     }
     
-    while ( var_eb6a4856.origin[ 2 ] < var_ff4a7150 )
+    while ( e_clip_water.origin[ 2 ] < var_ff4a7150 )
     {
         waitframe( 1 );
     }
@@ -2557,7 +2557,7 @@ function function_2021b5df()
 // Params 0
 // Checksum 0x9a1d2c0a, Offset: 0xb218
 // Size: 0x16a, Type: bool
-function function_3910bef9()
+function anywhere_but_here_validation_override()
 {
     s_point = zm_bgb_anywhere_but_here::function_91a62549();
     

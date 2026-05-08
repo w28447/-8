@@ -10,7 +10,7 @@
     "nameRefCaps": "#hash_7e9fb8e0ec4438e9",
     "descriptionRef": "#hash_3a322ce6c61298f9",
     "baseGameTypeHash": "#bounty",
-    "hardcoreNameRef": "#hash_4845e858720ce671",
+    "hardcoreNameRef": "#mpui/hcbounty",
     "presenceString": "#hash_7b61ed3c5ab39dc5",
     "isHardcoreAvailable": false,
     "isTeamBased": true,

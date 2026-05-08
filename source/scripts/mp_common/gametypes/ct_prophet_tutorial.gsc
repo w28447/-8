@@ -487,7 +487,7 @@ function function_7c64c8be( s_start_loc )
     
     s_target = struct::get( s_start_loc.target, "targetname" );
     var_adf33a9e = util::spawn_model( "tag_origin", s_target.origin, s_target.angles );
-    var_adf33a9e function_2baad8fc();
+    var_adf33a9e makesentienttarget();
     var_adf33a9e.team = #"allies";
     self setentitytarget( var_adf33a9e );
     self thread function_df8f80c4( var_adf33a9e );
@@ -570,7 +570,7 @@ function function_8b563364( var_8f2a3132 = 0 )
 {
     level endon( #"combattraining_logic_finished" );
     level.var_31a4679 = struct::get( "s_enemy_seeker_loc_1", "targetname" );
-    var_64e764ed = getweapon( #"eq_seeker_mine" );
+    wpn_seeker = getweapon( #"eq_seeker_mine" );
     level.var_924c5b44 takeallweapons();
     waitframe( 1 );
     bare_hands = getweapon( #"bare_hands" );
@@ -581,9 +581,9 @@ function function_8b563364( var_8f2a3132 = 0 )
         waitframe( 1 );
     }
     
-    level.var_924c5b44 giveweapon( var_64e764ed );
+    level.var_924c5b44 giveweapon( wpn_seeker );
     
-    while ( !level.var_924c5b44 hasweapon( var_64e764ed ) )
+    while ( !level.var_924c5b44 hasweapon( wpn_seeker ) )
     {
         waitframe( 1 );
     }
@@ -608,7 +608,7 @@ function function_8b563364( var_8f2a3132 = 0 )
     
     do
     {
-        n_slot = level.var_924c5b44 gadgetgetslot( var_64e764ed );
+        n_slot = level.var_924c5b44 gadgetgetslot( wpn_seeker );
         level.var_924c5b44 gadgetpowerset( n_slot, 100 );
         level.var_924c5b44 bot_action::function_ee2eaccc( n_slot );
         
@@ -620,11 +620,11 @@ function function_8b563364( var_8f2a3132 = 0 )
         if ( var_8f2a3132 )
         {
             var_76d6a4df = level.var_9d47488.tunables.prompttime;
-            var_6eaff3ec = level.e_seeker_mine.settings.var_e0c78652;
-            var_8cebe88e = level.var_9d47488.tunables.var_b9cf9139;
-            level.e_seeker_mine.settings.var_e0c78652 = 1000000;
+            var_6eaff3ec = level.e_seeker_mine.settings.discharge_duration;
+            var_8cebe88e = level.var_9d47488.tunables.perceptiontime;
+            level.e_seeker_mine.settings.discharge_duration = 1000000;
             level.var_9d47488.tunables.prompttime = 1000000;
-            level.var_9d47488.tunables.var_b9cf9139 = 1000000;
+            level.var_9d47488.tunables.perceptiontime = 1000000;
         }
         else
         {
@@ -659,11 +659,11 @@ function function_8b563364( var_8f2a3132 = 0 )
     
     if ( isalive( level.e_seeker_mine ) )
     {
-        level.e_seeker_mine.settings.var_e0c78652 = var_6eaff3ec;
+        level.e_seeker_mine.settings.discharge_duration = var_6eaff3ec;
     }
     
     level.var_9d47488.tunables.prompttime = var_76d6a4df;
-    level.var_9d47488.tunables.var_b9cf9139 = var_8cebe88e;
+    level.var_9d47488.tunables.perceptiontime = var_8cebe88e;
     return 1;
 }
 
@@ -877,8 +877,8 @@ function function_7536db69()
     level.var_72c3ea74 = struct::get_array( "s_prophet_tempest_soldier_loc_1", "targetname" );
     level.var_da5432a2 = 0;
     level thread ct_bots::activate_bots( level.var_72c3ea74.size, #"axis" );
-    var_18483335 = level.var_a5ff950.shockduration;
-    level.var_a5ff950.shockduration = 10000;
+    var_18483335 = level.shockriflebundle.shockduration;
+    level.shockriflebundle.shockduration = 10000;
     level notify( #"colbounds_tempest1_nobacktrack_off" );
     level notify( #"colbounds_seeker3_noclimbs_off" );
     self ct_vo::function_831e0584( array( "vox_tvoi_tutor_prop_tempest_0" ) );
@@ -929,7 +929,7 @@ function function_7536db69()
     self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_prop_one_enemy_stun_nag" );
     self thread ct_utils::function_61c3d59c( #"hash_3c6c0533fb27028f", undefined );
     level.var_90de2af7 waittill( #"death" );
-    level.var_a5ff950.shockduration = var_18483335;
+    level.shockriflebundle.shockduration = var_18483335;
     level notify( #"hash_60e26e14a51c5211" );
     level notify( #"hash_358a76ad1437866d" );
     wait 0.1;
@@ -1145,7 +1145,7 @@ function function_c4546e73( s_start_loc )
     a_s_target = struct::get_array( "s_tempest2_enemy_shootat", "targetname" );
     s_target = array::random( a_s_target );
     var_adf33a9e = util::spawn_model( "tag_origin", s_target.origin, s_target.angles );
-    var_adf33a9e function_2baad8fc();
+    var_adf33a9e makesentienttarget();
     var_adf33a9e.team = #"allies";
     self setentitytarget( var_adf33a9e );
     self thread function_df8f80c4( var_adf33a9e );
@@ -1218,7 +1218,7 @@ function function_235b259b()
     self thread function_25bdd976( 0, 0 );
     self thread function_f4ca14fb();
     self thread ct_vo::function_625a37f9( "vox_tvoi_tutor_prop_wine_chain_success", "enemy_tempest_chained", 1, 0 );
-    level waittill( #"hash_5d67cd17870cf7b6" );
+    level waittill( #"player_can_see_enemy" );
     level.var_3f7591c4 = 1;
     ct_utils::function_9aca2fa0( "ct_action2" );
     level notify( #"hash_60e26e14a51c5211" );
@@ -1240,7 +1240,7 @@ function function_235b259b()
     level.var_c271b8e0 = level.var_72c3ea74.size;
     ct_utils::function_9aca2fa0( "ct_action2" );
     self thread function_f4ca14fb( 1 );
-    level waittill( #"hash_5d67cd17870cf7b6" );
+    level waittill( #"player_can_see_enemy" );
     level.var_3f7591c4 = 1;
     level notify( #"hash_60e26e14a51c5211" );
     waitframe( 1 );
@@ -1260,7 +1260,7 @@ function function_235b259b()
 // Size: 0x22a
 function function_f4ca14fb( var_a8183c4a = 0 )
 {
-    level endon( #"combattraining_logic_finished", #"hash_5d67cd17870cf7b6" );
+    level endon( #"combattraining_logic_finished", #"player_can_see_enemy" );
     
     while ( true )
     {
@@ -1358,8 +1358,8 @@ function function_aae68385( s_loc )
         }
     }
     
-    e_player notify( #"hash_5d67cd17870cf7b6" );
-    level notify( #"hash_5d67cd17870cf7b6" );
+    e_player notify( #"player_can_see_enemy" );
+    level notify( #"player_can_see_enemy" );
 }
 
 // Namespace ct_prophet_tutorial/ct_prophet_tutorial
@@ -2179,7 +2179,7 @@ function function_a4036130()
     self endon( #"death" );
     self.var_e19bcce0 = 1;
     self.settings.var_efc15586 = 10000;
-    self.settings.var_e0c78652 = 10000;
+    self.settings.discharge_duration = 10000;
     self.settings.var_7fa25761 = 10000;
 }
 
@@ -2405,7 +2405,7 @@ function function_980638c8( params )
         level.var_595e41ee = 50;
         event = #"ekia";
         eventindex = level.scoreinfo[ event ][ #"row" ];
-        eattacker globallogic_score::giveplayermomentumnotification( level.var_595e41ee, #"hash_480234a872bd64ac", undefined, 0, weapon, 0, eventindex, event, undefined );
+        eattacker globallogic_score::giveplayermomentumnotification( level.var_595e41ee, #"score/blank", undefined, 0, weapon, 0, eventindex, event, undefined );
         level.var_d1f07c87++;
         
         if ( !eattacker ct_utils::function_a7540094() )

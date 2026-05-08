@@ -7,7 +7,7 @@
     "ammoCountClipRelative": 0,
     "ammoindex": 0,
     "ammoregen": 0,
-    "ammoType": "#hash_7b87896bf7c55aa4",
+    "ammoType": "#grappleshot",
     "anyplayercanretrieve": 0,
     "bAltWeaponDisableSwitching": false,
     "bDieOnRespawn": true,

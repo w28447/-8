@@ -51,6 +51,6 @@
     "normalImpactFX": "#hash_c80a3191309d3449",
     "bounceImpactFX": "#grenade_bounce",
     "dudImpactFX": "#grenade_dud",
-    "normalImpactSounds": "#hash_243498ac40a58702",
-    "bounceImpactSounds": "#hash_6bde0439d1eb051d"
+    "normalImpactSounds": "#grenade_pineapple_explode_material",
+    "bounceImpactSounds": "#grenade_pineapple_bounce"
 }

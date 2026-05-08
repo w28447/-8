@@ -1,4 +1,4 @@
-require( "x64:ceea494103cb1e2" )
+require( "ui/uieditor/widgets/lobby/lanserverbrowser/lanserverbrowserdetails" )
 require( "ui/uieditor/widgets/lobby/localserverrow" )
 require( "ui/uieditor/widgets/scrollbars/verticalcounter" )
 

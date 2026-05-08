@@ -32,7 +32,7 @@ function __init__()
     callback::on_localclient_connect( &on_player_connect );
     level.bgb = [];
     level.bgb_pack = [];
-    clientfield::register( "clientuimodel", "zmhud.bgb_current", 1, 8, "int", &function_d9afd5ee, 0, 0 );
+    clientfield::register( "clientuimodel", "zmhud.bgb_current", 1, 8, "int", &bgb_store_current, 0, 0 );
     clientfield::register( "clientuimodel", "zmhud.bgb_display", 1, 1, "int", undefined, 0, 0 );
     clientfield::register( "clientuimodel", "zmhud.bgb_timer", 1, 8, "float", undefined, 0, 0 );
     clientfield::register( "clientuimodel", "zmhud.bgb_activations_remaining", 1, 3, "int", undefined, 0, 0 );
@@ -144,9 +144,9 @@ function private bgb_finalize()
             v.consumable = 1;
         }
         
-        v.camo_index = var_5415dfb9.var_daefc551;
+        v.camo_index = var_5415dfb9.bgbcamoindex;
         v.flying_gumball_tag = "tag_gumball_" + v.limit_type;
-        v.var_c0362ae9 = "tag_gumball_" + v.limit_type + "_" + level.var_afb8293c[ v.rarity ];
+        v.give_gumball_tag = "tag_gumball_" + v.limit_type + "_" + level.var_afb8293c[ v.rarity ];
         level.bgb_item_index_to_name[ v.item_index ] = v.name;
     }
 }
@@ -215,7 +215,7 @@ function private function_5e7b3f16( localclientnum, time )
 // Params 7, eflags: 0x4
 // Checksum 0x1a792a31, Offset: 0xd50
 // Size: 0x74
-function private function_d9afd5ee( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function private bgb_store_current( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     self.bgb = level.bgb_item_index_to_name[ newval ];
     self thread function_5e7b3f16( localclientnum, 3 );
@@ -225,16 +225,16 @@ function private function_d9afd5ee( localclientnum, oldval, newval, bnewent, bin
 // Params 2, eflags: 0x4
 // Checksum 0x2c07fbf2, Offset: 0xdd0
 // Size: 0x6a
-function private function_f4763ffe( localclientnum, fx )
+function private bgb_play_fx_on_camera( localclientnum, fx )
 {
-    if ( isdefined( self.var_629940ea ) )
+    if ( isdefined( self.bgb_bubble_blow_fx ) )
     {
-        deletefx( localclientnum, self.var_629940ea, 1 );
+        deletefx( localclientnum, self.bgb_bubble_blow_fx, 1 );
     }
     
     if ( isdefined( fx ) )
     {
-        self.var_629940ea = playfxoncamera( localclientnum, fx );
+        self.bgb_bubble_blow_fx = playfxoncamera( localclientnum, fx );
     }
 }
 
@@ -244,7 +244,7 @@ function private function_f4763ffe( localclientnum, fx )
 // Size: 0x8c
 function private bgb_blow_bubble( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    function_f4763ffe( localclientnum, level._effect[ #"bgb_blow_bubble" ] );
+    bgb_play_fx_on_camera( localclientnum, level._effect[ #"bgb_blow_bubble" ] );
     self thread function_5e7b3f16( localclientnum, 0.5 );
 }
 

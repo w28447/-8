@@ -8,7 +8,7 @@
     "spawnInfluencers1": "#none",
     "spawnInfluencers2": "#none",
     "vehicleRidersBundle": "#veh_bo3_mil_apc_riders",
-    "deathFx": "#hash_1b470bd0c4267ac4",
+    "deathFx": "#_t6/explosions/fx_vexp_cougar",
     "deathFxTag": "tag_origin",
     "deathFxSound": "#hash_2149db0c502305e3",
     "skidSpeedMin": 20,

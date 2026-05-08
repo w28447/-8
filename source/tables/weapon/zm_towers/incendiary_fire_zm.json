@@ -51,7 +51,7 @@
     "image_e90": "#t7_hud_icon_menu_incendiary_kf",
     "image_eb0": "#t7_hud_icon_menu_incendiary",
     "rumble_de8": "#grenade_rumble",
-    "fx_ed8": "#hash_4dd52faf66e5aba3",
+    "fx_ed8": "#weapon/fx_incend_grenade_fire_sm",
     "fx_f00": "#hash_80e7395fb42d35f6",
     "normalImpactSounds": "#hash_e8e0a97bbbf0b555",
     "bounceImpactSounds": "#hash_c6d8f2152c519b03"

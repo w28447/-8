@@ -1,7 +1,7 @@
 {
     "name": "#zhield_zpear_turret_zm",
     "baseWeapon": "#zhield_zpear_turret",
-    "displayname": "#hash_7a95bcef27a91bf4",
+    "displayname": "#zm_red/shield",
     "altWeapon": "#zhield_zpear_dw_zm",
     "weapon70": "#zhield_zpear_dw",
     "streamkey": "#hash_3bfcf22c36eaff11",

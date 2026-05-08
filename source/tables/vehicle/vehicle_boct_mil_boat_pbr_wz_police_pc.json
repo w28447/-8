@@ -38,7 +38,7 @@
     "peelSpeedMax": 600,
     "model": "#veh_t8_mil_boat_pbr_wz_police",
     "deathModel": "#hash_365e9341b959f242",
-    "soundDef": "#hash_5fef5eba8f72e0b3",
+    "soundDef": "#veh_pbr",
     "compassIconMaterial": "#hash_29aba9deeb2d3a03",
     "destructibleDef": "#hash_2be18be28cd2649a",
     "tacticalModeIcon": "#hash_75804629f280b1e0",
@@ -106,7 +106,7 @@
                     {
                         "GAMEPAD": "#GAMEPAD",
                         "hash_7aecb1d7": 0,
-                        "hash_76b39c94b6f50858:hash_4be786c9": "localized17#hash_76b39c94b6f50858",
+                        "menu/gas:hash_4be786c9": "localized17#menu/gas",
                         "hash_334a8e60": "left",
                         "prompt": "+movestick"
                     },

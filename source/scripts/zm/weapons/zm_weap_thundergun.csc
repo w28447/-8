@@ -22,7 +22,7 @@ function __init__()
 {
     level.w_thundergun = getweapon( #"thundergun" );
     level.w_thundergun_upgraded = getweapon( #"thundergun_upgraded" );
-    clientfield::register( "actor", "" + #"hash_7549405bcfcbcfb", 24000, 1, "counter", &function_5059c81b, 0, 0 );
+    clientfield::register( "actor", "" + #"thundergun_impact_fx", 24000, 1, "counter", &thundergun_impact_fx, 0, 0 );
 }
 
 // Namespace zm_weap_thundergun/zm_weap_thundergun
@@ -64,7 +64,7 @@ function thundergun_fx_fire( localclientnum )
 // Params 7, eflags: 0x4
 // Checksum 0x536a22e2, Offset: 0x2d0
 // Size: 0xac
-function private function_5059c81b( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function private thundergun_impact_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( isdefined( self ) )
     {

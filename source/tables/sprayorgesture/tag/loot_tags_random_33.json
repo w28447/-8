@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_random_33",
+    "type": "#tag",
+    "material": "#hash_239fa543d1d23ee8",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#tags/random_33",
+        "icon": "image#loot_ui_icon_tags_random_33",
+        "isdefault": 0
+    }
+}

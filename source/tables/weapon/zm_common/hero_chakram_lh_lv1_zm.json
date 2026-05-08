@@ -37,10 +37,10 @@
     "sound200": "#hash_7bc4a5559eb5f032",
     "gadgetreadysoundplayer": "#hash_4a48603fb08f09e1",
     "tunables1": "#hero_chakram_lh_lv1_tunables_zm",
-    "sharedWeaponSounds": "#hash_2ff4e9ed15e38eb2",
+    "sharedWeaponSounds": "#zm_chakram",
     "tracers": [
         "#pistol",
-        "#hash_40ce0b8ef958c831"
+        "#pistol_enemy"
     ],
     "viewmodel": [
         "#wpn_t8_zm_melee_chakram_lvl1_dw_view"

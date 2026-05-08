@@ -140,16 +140,16 @@ CoD.DecalGroupsListFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		end
 	end, function ( f14_arg0, f14_arg1, f14_arg2 )
 		if CoD.CraftUtility.EmblemChooseIcon_IsCustomDecalCategorySelected( self, f14_arg2 ) and IsGamepad( f14_arg2 ) then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x22361E23588705A], 0x8E7772DFD9BBDEB, nil, "ui_contextual_1" )
+			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x22361E23588705A], "menu/options", nil, "ui_contextual_1" )
 			return true
 		elseif CoD.CraftUtility.EmblemChooseIcon_IsCustomDecalCategorySelected( self, f14_arg2 ) and IsMouseOrKeyboard( f14_arg2 ) then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x22361E23588705A], 0x8E7772DFD9BBDEB, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_contextual_1" )
+			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x22361E23588705A], "menu/options", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_contextual_1" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	decalGroupList:AddContextualMenuAction( f1_arg0, f1_arg1, 0x8E7772DFD9BBDEB, function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
+	decalGroupList:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/options", function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
 		if CoD.CraftUtility.EmblemChooseIcon_IsCustomDecalCategorySelected( self, f15_arg2 ) then
 			return function ( f16_arg0, f16_arg1, f16_arg2, f16_arg3 )
 				OpenPopup( self, "DecalGroupOptions", f16_arg2, nil )

@@ -65,7 +65,7 @@ function init()
 // Size: 0x62
 function on_player_connect()
 {
-    if ( isdefined( self ) && !function_3132f113( self ) )
+    if ( isdefined( self ) && !isremovedentity( self ) )
     {
         self.resetgameoverhudrequired = 0;
         

@@ -32,7 +32,7 @@ CoD.CodCasterButtons.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	self.ToggleList1 = ToggleList1
 	
 	local SelectPlayer1 = CoD.CodCasterButtonPromptContainer.new( f1_arg0, f1_arg1, 0, 0, 35, 299, 0, 0, -5, 33 )
-	SelectPlayer1.Prompt.KeyPrompt.keybind:setText( Engine[0xF9F1239CFD921FE]( 0xEA7793F2DAF4059 ) )
+	SelectPlayer1.Prompt.KeyPrompt.keybind:setText( Engine[0xF9F1239CFD921FE]( "key/enter" ) )
 	SelectPlayer1.Text:setText( Engine[0xF9F1239CFD921FE]( 0xE528282EC1246D5 ) )
 	SelectPlayer1:subscribeToGlobalModel( f1_arg1, "Controller", "primary_button_image", function ( model )
 		local f3_local0 = model:get()

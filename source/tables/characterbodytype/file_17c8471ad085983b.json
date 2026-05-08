@@ -3,7 +3,7 @@
     "displayName": "#heroes/firebreak",
     "mpDialog": "#firebreak",
     "playerSoundsTable": "#hash_3c7e06b3ea20b1e4",
-    "playerFXTable": "#hash_133d2326a92c76be",
+    "playerFXTable": "#mp_playerfx",
     "image_50": "#personalize_t7_hud_mp_weapon_hero_flamethrower_available",
     "image_58": "#t7_mp_loadingportrait_weapon_firebreak",
     "image_60": "#t7_mp_loadingportrait_ability_firebreak",
@@ -16,11 +16,11 @@
     "dogtagFriendly": "#hash_4b77b871246789e7",
     "dogTagEnemy": "#hash_7e9b68cddcd40c54",
     "tagFxSet": "#hash_627fc94b25472814",
-    "characterFootsteps": "#hash_575d0804dbd6d74c",
-    "characterFootstepsQuiet": "#hash_783ab8b555ce9413",
+    "characterFootsteps": "#foley_heavy",
+    "characterFootstepsQuiet": "#defaultplayerquietfootstep",
     "characterFootstepsNPC": "#hash_7e7def848c935e84",
-    "characterFootstepsNPCLoud": "#hash_237a21af974e9d2f",
-    "characterFootstepsNPCQuiet": "#hash_22eae0dda1cf3d31",
+    "characterFootstepsNPCLoud": "#defaultnpcloudfootstep",
+    "characterFootstepsNPCQuiet": "#defaultnpcquietfootstep",
     "bundle": {
         "arenaLobbyScenes": [
             {

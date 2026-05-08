@@ -578,7 +578,7 @@ CoD.StartMenuUtility.QuitGameWarningPrompt = function ( f26_arg0, f26_arg1 )
 		title = function ()
 			local f27_local0 = "menu/quit_game"
 			if not CoD.isOnlineGame() then
-				f27_local0 = 0x954494EB4C452D3
+				f27_local0 = "menu/end_game"
 			end
 			return Engine[0xF9F1239CFD921FE]( f27_local0 )
 		end,
@@ -616,9 +616,9 @@ CoD.StartMenuUtility.QuitGameWarningPrompt = function ( f26_arg0, f26_arg1 )
 				text = "menu/cancel",
 				isCancelOption = true
 			} )
-			local f32_local1 = 0xAD8B52FCDEF75D6
+			local f32_local1 = "menu/quit_match"
 			if not CoD.isOnlineGame() then
-				f32_local1 = 0x954494EB4C452D3
+				f32_local1 = "menu/end_game"
 			end
 			table.insert( f32_local0, {
 				action = CoD.OverlayUtility.Overlays.QuitWarningPopup.getGoBackFn(),

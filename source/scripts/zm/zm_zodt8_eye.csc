@@ -862,7 +862,7 @@ function function_dac3a61d( localclientnum, oldval, newval, bnewent, binitialsna
 {
     if ( newval )
     {
-        if ( self zm_utility::function_f8796df3( localclientnum ) )
+        if ( self zm_utility::is_first_person( localclientnum ) )
         {
             self.var_19849e = self playloopsound( #"hash_10c1592e20803fc0" );
         }
@@ -870,7 +870,7 @@ function function_dac3a61d( localclientnum, oldval, newval, bnewent, binitialsna
         return;
     }
     
-    if ( self zm_utility::function_f8796df3( localclientnum ) && isdefined( self.var_19849e ) )
+    if ( self zm_utility::is_first_person( localclientnum ) && isdefined( self.var_19849e ) )
     {
         self stoploopsound( self.var_19849e );
         self.var_19849e = undefined;
@@ -885,10 +885,10 @@ function function_e1af20d7( localclientnum, oldval, newval, bnewent, binitialsna
 {
     if ( newval )
     {
-        self thread postfx::playpostfxbundle( #"hash_1c4bae784c38419" );
+        self thread postfx::playpostfxbundle( #"pstfx_zm_frozen" );
         self function_116b95e5( #"hash_349a56ada2bc0bc8", "Reveal Threshold", 1 );
         
-        if ( self zm_utility::function_f8796df3( localclientnum ) )
+        if ( self zm_utility::is_first_person( localclientnum ) )
         {
             self playsound( localclientnum, #"hash_6448985393417e0c" );
             self.var_8ff4b42c = self playloopsound( #"hash_3c4934dafbb5efee" );
@@ -897,7 +897,7 @@ function function_e1af20d7( localclientnum, oldval, newval, bnewent, binitialsna
         return;
     }
     
-    if ( self zm_utility::function_f8796df3( localclientnum ) )
+    if ( self zm_utility::is_first_person( localclientnum ) )
     {
         if ( isdefined( self.var_8ff4b42c ) )
         {
@@ -909,7 +909,7 @@ function function_e1af20d7( localclientnum, oldval, newval, bnewent, binitialsna
     }
     
     self function_116b95e5( #"hash_349a56ada2bc0bc8", "Reveal Threshold", 0 );
-    self thread postfx::exitpostfxbundle( #"hash_1c4bae784c38419" );
+    self thread postfx::exitpostfxbundle( #"pstfx_zm_frozen" );
 }
 
 // Namespace zodt8_boss/zm_zodt8_eye
@@ -995,13 +995,13 @@ function function_e3c6c272( localclientnum, oldval, newval, bnewent, binitialsna
 {
     self notify( #"hash_7541447588c20db8" );
     
-    if ( isdefined( self.var_c605c611 ) && self zm_utility::function_f8796df3( localclientnum ) )
+    if ( isdefined( self.var_c605c611 ) && self zm_utility::is_first_person( localclientnum ) )
     {
         deletefx( localclientnum, self.var_c605c611 );
         self.var_c605c611 = undefined;
     }
     
-    if ( isdefined( self.var_b3341e1e ) && self zm_utility::function_f8796df3( localclientnum ) )
+    if ( isdefined( self.var_b3341e1e ) && self zm_utility::is_first_person( localclientnum ) )
     {
         deletefx( localclientnum, self.var_b3341e1e );
         self.var_b3341e1e = undefined;
@@ -1033,7 +1033,7 @@ function function_ae2a3a29( localclientnum )
             break;
         }
         
-        if ( self zm_utility::function_f8796df3( localclientnum ) )
+        if ( self zm_utility::is_first_person( localclientnum ) )
         {
             self.var_c605c611 = playfxoncamera( localclientnum, level._effect[ #"hash_76da38284b0c73ed" ], ( 0, 0, 0 ), ( 1, 0, 0 ), ( 0, 0, 1 ) );
         }
@@ -1054,7 +1054,7 @@ function boss_player_snow_fx( localclientnum, oldval, newval, bnewent, binitials
 {
     self notify( #"boss_end_snow_fx" );
     
-    if ( isdefined( self.boss_player_snow_fx ) && self zm_utility::function_f8796df3( localclientnum ) )
+    if ( isdefined( self.boss_player_snow_fx ) && self zm_utility::is_first_person( localclientnum ) )
     {
         deletefx( localclientnum, self.boss_player_snow_fx );
         self.boss_player_snow_fx = undefined;
@@ -1080,7 +1080,7 @@ function boss_player_snow_fx( localclientnum, oldval, newval, bnewent, binitials
                 break;
         }
         
-        if ( self zm_utility::function_f8796df3( localclientnum ) )
+        if ( self zm_utility::is_first_person( localclientnum ) )
         {
             self thread function_7f21fc5b( localclientnum, str_type );
         }

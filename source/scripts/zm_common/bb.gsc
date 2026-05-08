@@ -78,7 +78,7 @@ function logplayerevent( player, eventname )
     zmplayerevents.currentscore = player.score;
     zmplayerevents.totalscore = player.score_total;
     zmplayerevents.beastmodeon = beastmodeactive;
-    function_92d1707f( #"hash_5bd2a2e3f75111c8", zmplayerevents );
+    function_92d1707f( #"dlog_event_zmplayerevents", zmplayerevents );
 }
 
 // Namespace bb/bb
@@ -88,7 +88,7 @@ function logplayerevent( player, eventname )
 function logroundevent( eventname )
 {
     zmroundevents = { #gametime:function_f8d53445(), #roundnumber:level.round_number, #eventname:eventname };
-    function_92d1707f( #"hash_1f42d237e3407165", zmroundevents );
+    function_92d1707f( #"dlog_event_zmroundevents", zmroundevents );
     
     if ( isdefined( level.players ) )
     {
@@ -125,7 +125,7 @@ function logpurchaseevent( player, sellerent, cost, itemname, itemupgraded, item
     zmpurchases.playercurrentscore = player.score;
     zmpurchases.playertotalscore = player.score_total;
     zmpurchases.zone_name = player.zone_name;
-    function_92d1707f( #"hash_22cb254982ca97dc", zmpurchases );
+    function_92d1707f( #"dlog_event_zmpurchases", zmpurchases );
 }
 
 // Namespace bb/bb
@@ -153,7 +153,7 @@ function logpowerupevent( powerup, optplayer, eventname )
     zmpowerups.eventname = eventname;
     zmpowerups.playerspawnid = playerspawnid;
     zmpowerups.playername = playername;
-    function_92d1707f( #"hash_7edbd2a2dee992e9", zmpowerups );
+    function_92d1707f( #"dlog_event_zmpowerups", zmpowerups );
     
     foreach ( player in level.players )
     {

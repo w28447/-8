@@ -312,7 +312,7 @@ if true ~= Engine[0xA55C3ACD0D2BCF0]() then
 end
 CoD.OptionsUtility.PlayerSettings.GraphicsSettings = {
 	{
-		groupName = 0x7D7B86AED625BE2,
+		groupName = "menu/settings",
 		options = {
 			"scene_brightness",
 			"colorblind_mode",
@@ -394,7 +394,7 @@ CoD.OptionsUtility.PlayerSettings.FirstTimeContentSettings = {
 }
 CoD.OptionsUtility.PlayerSettings.VoiceSettings = {
 	{
-		groupName = 0x7D7B86AED625BE2,
+		groupName = "menu/settings",
 		options = {
 			"mute_all_except_party"
 		}
@@ -4185,12 +4185,12 @@ CoD.OptionsUtility.ZMGameSettingsMainCategories = {
 	},
 	{
 		id = "zm_enemies",
-		displayName = 0xA4C0D40C8DBA6EB,
+		displayName = "menu/enemies_caps",
 		optionsList = "gsocl_zm_enemies"
 	},
 	{
 		id = "zm_player",
-		displayName = 0x89CF1420A8398FE,
+		displayName = "menu/player_caps",
 		optionsList = "gsocl_zm_player"
 	}
 }

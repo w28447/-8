@@ -41,7 +41,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7327ca257aa61e93",
+                    "name": "#g_hitdet_logging",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -187,7 +187,7 @@
         },
         {
             "name": "#hash_637edca025d14caf",
-            "description": "#hash_71b43ce72d26f494",
+            "description": "#playlist/analytics",
             "unique_name": "#hash_4b9464b34d4658ed",
             "visibleProfileVar": "#hash_5e563e6544ff9705",
             "lobbyMainMode": "MULTIPLAYER",
@@ -230,7 +230,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7327ca257aa61e93",
+                    "name": "#g_hitdet_logging",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -239,7 +239,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7b7e1cadbd098787",
+                    "name": "#cg_hitdet_client_marker",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -248,7 +248,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7327ca257aa61e93",
+                    "name": "#g_hitdet_logging",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -329,7 +329,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7327ca257aa61e93",
+                    "name": "#g_hitdet_logging",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -507,7 +507,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7327ca257aa61e93",
+                    "name": "#g_hitdet_logging",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -853,7 +853,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7327ca257aa61e93",
+                    "name": "#g_hitdet_logging",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -1046,7 +1046,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7327ca257aa61e93",
+                    "name": "#g_hitdet_logging",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -1238,7 +1238,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7327ca257aa61e93",
+                    "name": "#g_hitdet_logging",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -1431,7 +1431,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7327ca257aa61e93",
+                    "name": "#g_hitdet_logging",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -1578,7 +1578,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7327ca257aa61e93",
+                    "name": "#g_hitdet_logging",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -1725,7 +1725,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7327ca257aa61e93",
+                    "name": "#g_hitdet_logging",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -1873,7 +1873,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7327ca257aa61e93",
+                    "name": "#g_hitdet_logging",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -2489,7 +2489,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7327ca257aa61e93",
+                    "name": "#g_hitdet_logging",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -2498,7 +2498,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7b7e1cadbd098787",
+                    "name": "#cg_hitdet_client_marker",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -3767,7 +3767,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7327ca257aa61e93",
+                    "name": "#g_hitdet_logging",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -3776,7 +3776,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7b7e1cadbd098787",
+                    "name": "#cg_hitdet_client_marker",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -4032,7 +4032,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7327ca257aa61e93",
+                    "name": "#g_hitdet_logging",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -4353,7 +4353,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7327ca257aa61e93",
+                    "name": "#g_hitdet_logging",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -4743,7 +4743,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7327ca257aa61e93",
+                    "name": "#g_hitdet_logging",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -5097,7 +5097,7 @@
         {
             "name": "#hash_4e7831684435f0e2",
             "description": "#mpui/infected",
-            "unique_name": "#hash_7f012c059c3614e",
+            "unique_name": "#mpui/infect_desc",
             "visibleProfileVar": "#hash_5e563e6544ff9705",
             "lobbyMainMode": "MULTIPLAYER",
             "image": "#hash_d5feb09f8e44a435",
@@ -5154,7 +5154,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7327ca257aa61e93",
+                    "name": "#g_hitdet_logging",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -5163,7 +5163,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7b7e1cadbd098787",
+                    "name": "#cg_hitdet_client_marker",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -5420,7 +5420,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7327ca257aa61e93",
+                    "name": "#g_hitdet_logging",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -5539,7 +5539,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7327ca257aa61e93",
+                    "name": "#g_hitdet_logging",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -5856,7 +5856,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7327ca257aa61e93",
+                    "name": "#g_hitdet_logging",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -6173,7 +6173,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7327ca257aa61e93",
+                    "name": "#g_hitdet_logging",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,
@@ -6498,7 +6498,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_7327ca257aa61e93",
+                    "name": "#g_hitdet_logging",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 1,

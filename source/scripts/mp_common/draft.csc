@@ -498,8 +498,8 @@ function function_6b532f83( localclientnum, var_de58f286, sessionmode )
         {
             if ( var_de58f286.var_91065a59 )
             {
-                var_ca1716fe = weapongroupanim[ #"ready" ][ gender ];
-                anim_intro_name = var_ca1716fe[ posindex % var_ca1716fe.size ];
+                readyanimarray = weapongroupanim[ #"ready" ][ gender ];
+                anim_intro_name = readyanimarray[ posindex % readyanimarray.size ];
                 var_177782dd = weapongroupanim[ #"readyidle" ][ gender ];
                 anim_name = var_177782dd[ posindex % var_177782dd.size ];
             }
@@ -530,8 +530,8 @@ function function_6b532f83( localclientnum, var_de58f286, sessionmode )
             }
             else
             {
-                var_ca1716fe = weapongroupanim[ #"ready" ][ gender ];
-                anim_intro_name = var_ca1716fe[ posindex % var_ca1716fe.size ];
+                readyanimarray = weapongroupanim[ #"ready" ][ gender ];
+                anim_intro_name = readyanimarray[ posindex % readyanimarray.size ];
                 var_177782dd = weapongroupanim[ #"readyidle" ][ gender ];
                 anim_name = var_177782dd[ posindex % var_177782dd.size ];
             }
@@ -618,7 +618,7 @@ function function_4ccc033d( localclientnum, draftcharacter )
         }
         else if ( isdefined( level.var_8eef5741 ) && level.var_8eef5741 )
         {
-            return ( [[ draftcharacter ]]->function_82e05d64().activeweapon != level.var_bf82f6b0 );
+            return ( [[ draftcharacter ]]->function_82e05d64().activeweapon != level.oic_pistol );
         }
         else if ( isdefined( level.isgungame ) && level.isgungame )
         {
@@ -657,7 +657,7 @@ function update_player_weapon( localclientnum, draftcharacter )
         }
         else if ( isdefined( level.var_8eef5741 ) && level.var_8eef5741 )
         {
-            [[ draftcharacter ]]->function_82e05d64().activeweapon = level.var_bf82f6b0;
+            [[ draftcharacter ]]->function_82e05d64().activeweapon = level.oic_pistol;
             [[ draftcharacter ]]->function_82e05d64().var_b8f20727 = 0;
         }
         else if ( isdefined( level.isgungame ) && level.isgungame )

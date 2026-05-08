@@ -63,7 +63,7 @@ function function_2ce5cb7e()
                     continue;
                 }
                 
-                if ( isdefined( stat.var_82670522 ) && isdefined( self.pers[ #"hvo" ][ #"base" ][ stat.var_82670522 ] ) || isdefined( self.pers[ #"hvo" ][ #"base" ][ stat.stattype ] ) )
+                if ( isdefined( stat.playerstatsliststatname ) && isdefined( self.pers[ #"hvo" ][ #"base" ][ stat.playerstatsliststatname ] ) || isdefined( self.pers[ #"hvo" ][ #"base" ][ stat.stattype ] ) )
                 {
                     continue;
                 }
@@ -71,13 +71,13 @@ function function_2ce5cb7e()
                 switch ( stat.stattype )
                 {
                     case #"playerstatslist":
-                        if ( !isdefined( stat.var_82670522 ) )
+                        if ( !isdefined( stat.playerstatsliststatname ) )
                         {
                             break;
                         }
                         
-                        self.pers[ #"hvo" ][ #"base" ][ stat.var_82670522 ] = self stats::get_stat_global( stat.var_82670522 );
-                        self.pers[ #"hvo" ][ #"current" ][ stat.var_82670522 ] = self stats::get_stat_global( stat.var_82670522 );
+                        self.pers[ #"hvo" ][ #"base" ][ stat.playerstatsliststatname ] = self stats::get_stat_global( stat.playerstatsliststatname );
+                        self.pers[ #"hvo" ][ #"current" ][ stat.playerstatsliststatname ] = self stats::get_stat_global( stat.playerstatsliststatname );
                         break;
                     case #"razorwireekia":
                         razorwireekia = self stats::get_stat_global( #"stats_concertina_wire_snared_kill" ) + self stats::get_stat_global( #"stats_concertina_wire_kill" );
@@ -135,7 +135,7 @@ function function_59d3154f()
             continue;
         }
         
-        if ( isdefined( hvo.var_447510ee ) && hvo.var_447510ee != var_aa1fbd8c )
+        if ( isdefined( hvo.associatedspecialist ) && hvo.associatedspecialist != var_aa1fbd8c )
         {
             continue;
         }
@@ -155,13 +155,13 @@ function function_59d3154f()
             switch ( stat.stattype )
             {
                 case #"playerstatslist":
-                    if ( !isdefined( stat.var_82670522 ) )
+                    if ( !isdefined( stat.playerstatsliststatname ) )
                     {
                         break;
                     }
                     
                     var_6fda3763 = self function_d0c02a50( stat, var_aa1fbd8c, stat.stattype );
-                    var_d6155829[ stat.var_82670522 ] = var_6fda3763;
+                    var_d6155829[ stat.playerstatsliststatname ] = var_6fda3763;
                     break;
                 case #"razorwireekia":
                     razorwireekia = self stats::get_stat_global( #"stats_concertina_wire_snared_kill" ) + self stats::get_stat_global( #"stats_concertina_wire_kill" );
@@ -237,7 +237,7 @@ function function_323c6715()
             assert( isdefined( player.pers[ #"hvo" ] ), "<dev string:x4f>" );
             var_9b4eeccc = function_b14806c6( player player_role::get(), currentsessionmode() );
             
-            if ( !isdefined( var_9b4eeccc ) || isdefined( hvo.var_447510ee ) && hvo.var_447510ee != var_9b4eeccc || !isdefined( player.pers ) || !isdefined( player.pers[ #"hvo" ] ) )
+            if ( !isdefined( var_9b4eeccc ) || isdefined( hvo.associatedspecialist ) && hvo.associatedspecialist != var_9b4eeccc || !isdefined( player.pers ) || !isdefined( player.pers[ #"hvo" ] ) )
             {
                 continue;
             }
@@ -296,7 +296,7 @@ function function_323c6715()
                         break;
                 }
                 
-                var_29da3a57 += score * ( isdefined( stat.var_26568428 ) ? stat.var_26568428 : 0 );
+                var_29da3a57 += score * ( isdefined( stat.statweight ) ? stat.statweight : 0 );
                 var_6ad8c73b[ var_6ad8c73b.size ] = score;
             }
             
@@ -353,19 +353,19 @@ function function_323c6715()
 // Size: 0x1a4
 function private function_cd851b02( stat, var_9b4eeccc, ddl )
 {
-    if ( !isdefined( stat.var_82670522 ) )
+    if ( !isdefined( stat.playerstatsliststatname ) )
     {
         return 0;
     }
     
     if ( isdefined( stat.var_233a23b6 ) && stat.var_233a23b6 )
     {
-        score = self stats::get_stat( ddl, stat.var_82670522, #"statvalue" ) - self.pers[ #"hvo" ][ #"base" ][ stat.var_82670522 ];
+        score = self stats::get_stat( ddl, stat.playerstatsliststatname, #"statvalue" ) - self.pers[ #"hvo" ][ #"base" ][ stat.playerstatsliststatname ];
     }
     else
     {
-        score = isdefined( self.pers[ #"hvo" ][ var_9b4eeccc ][ stat.var_82670522 ] ) ? self.pers[ #"hvo" ][ var_9b4eeccc ][ stat.var_82670522 ] : 0;
-        score += self stats::get_stat( ddl, stat.var_82670522, #"statvalue" ) - self.pers[ #"hvo" ][ #"current" ][ stat.var_82670522 ];
+        score = isdefined( self.pers[ #"hvo" ][ var_9b4eeccc ][ stat.playerstatsliststatname ] ) ? self.pers[ #"hvo" ][ var_9b4eeccc ][ stat.playerstatsliststatname ] : 0;
+        score += self stats::get_stat( ddl, stat.playerstatsliststatname, #"statvalue" ) - self.pers[ #"hvo" ][ #"current" ][ stat.playerstatsliststatname ];
     }
     
     return score;
@@ -377,13 +377,13 @@ function private function_cd851b02( stat, var_9b4eeccc, ddl )
 // Size: 0x14e
 function private function_d0c02a50( stat, var_aa1fbd8c, ddl )
 {
-    if ( !isdefined( self.pers[ #"hvo" ][ var_aa1fbd8c ][ stat.var_82670522 ] ) )
+    if ( !isdefined( self.pers[ #"hvo" ][ var_aa1fbd8c ][ stat.playerstatsliststatname ] ) )
     {
-        self.pers[ #"hvo" ][ var_aa1fbd8c ][ stat.var_82670522 ] = 0;
+        self.pers[ #"hvo" ][ var_aa1fbd8c ][ stat.playerstatsliststatname ] = 0;
     }
     
-    var_6fda3763 = self stats::get_stat( ddl, stat.var_82670522, #"statvalue" );
-    self.pers[ #"hvo" ][ var_aa1fbd8c ][ stat.var_82670522 ] += var_6fda3763 - self.pers[ #"hvo" ][ #"current" ][ stat.var_82670522 ];
+    var_6fda3763 = self stats::get_stat( ddl, stat.playerstatsliststatname, #"statvalue" );
+    self.pers[ #"hvo" ][ var_aa1fbd8c ][ stat.playerstatsliststatname ] += var_6fda3763 - self.pers[ #"hvo" ][ #"current" ][ stat.playerstatsliststatname ];
     return var_6fda3763;
 }
 

@@ -1031,12 +1031,12 @@ function function_2560f130()
             
             foreach ( var_f0ffe8b2 in level.var_6eef6733 )
             {
-                foreach ( var_80730518 in var_f0ffe8b2 )
+                foreach ( vh_player in var_f0ffe8b2 )
                 {
-                    if ( distance2d( self getorigin(), var_80730518.origin ) <= var_80730518.radiusdamageradius )
+                    if ( distance2d( self getorigin(), vh_player.origin ) <= vh_player.radiusdamageradius )
                     {
                         self val::set( #"warzonestaging", "<dev string:x404>", 1 );
-                        var_80730518 dodamage( 100000, var_80730518.origin );
+                        vh_player dodamage( 100000, vh_player.origin );
                     }
                 }
             }
@@ -1175,7 +1175,7 @@ function function_2560f130()
                         v_angles = point.angles;
                         var_c24ea284 = undefined;
                         var_4b82457c = distance2d( point.origin, level.players[ 0 ].origin );
-                        var_24b0b1ea = itemlistbundle.var_7fb0967b;
+                        var_24b0b1ea = itemlistbundle.distributiondistance;
                         
                         if ( isdefined( var_24b0b1ea ) )
                         {
@@ -1855,7 +1855,7 @@ function function_2560f130()
         }
         
         var_1e9ad3cb = weapon.damagevalues;
-        var_eb5812b5 = weapon.var_6aac6921;
+        var_eb5812b5 = weapon.damageranges;
         
         for ( i = 0; i < var_1e9ad3cb.size ; i++ )
         {
@@ -1884,7 +1884,7 @@ function function_2560f130()
     // Params 4
     // Checksum 0x8ea10377, Offset: 0x7a88
     // Size: 0x34e, Type: dev
-    function function_61e22785( tracepoint, radius, var_5a1fa430, color )
+    function function_61e22785( tracepoint, radius, num_damage, color )
     {
         self endon( #"hash_7e565f1e80f93ecd" );
         
@@ -1901,19 +1901,19 @@ function function_2560f130()
             
             circle( tracepoint, radius, color, 0, 1 );
             var_eb9780e9 = tracepoint + ( radius, 0, 0 );
-            print3d( var_eb9780e9, var_5a1fa430, ( 1, 1, 1 ), 1, scale, 3 );
+            print3d( var_eb9780e9, num_damage, ( 1, 1, 1 ), 1, scale, 3 );
             var_eb9780e9 = tracepoint + ( radius, 0, -10 * scale );
             print3d( var_eb9780e9, int( radius ), ( 1, 0, 0 ), 1, scale * 0.25, 3 );
             var_eb9780e9 = tracepoint - ( radius, 0, 0 );
-            print3d( var_eb9780e9, var_5a1fa430, ( 1, 1, 1 ), 1, scale, 3 );
+            print3d( var_eb9780e9, num_damage, ( 1, 1, 1 ), 1, scale, 3 );
             var_eb9780e9 = tracepoint - ( radius, 0, 10 * scale );
             print3d( var_eb9780e9, int( radius ), ( 1, 0, 0 ), 1, scale * 0.25, 3 );
             var_eb9780e9 = tracepoint + ( 0, radius, 0 );
-            print3d( var_eb9780e9, var_5a1fa430, ( 1, 1, 1 ), 1, scale, 3 );
+            print3d( var_eb9780e9, num_damage, ( 1, 1, 1 ), 1, scale, 3 );
             var_eb9780e9 = tracepoint + ( 0, radius, -10 * scale );
             print3d( var_eb9780e9, int( radius ), ( 1, 0, 0 ), 1, scale * 0.25, 3 );
             var_eb9780e9 = tracepoint - ( 0, radius, 0 );
-            print3d( var_eb9780e9, var_5a1fa430, ( 1, 1, 1 ), 1, scale, 3 );
+            print3d( var_eb9780e9, num_damage, ( 1, 1, 1 ), 1, scale, 3 );
             var_eb9780e9 = tracepoint - ( 0, radius, 10 * scale );
             print3d( var_eb9780e9, int( radius ), ( 1, 0, 0 ), 1, scale * 0.25, 3 );
             waitframe( 1 );

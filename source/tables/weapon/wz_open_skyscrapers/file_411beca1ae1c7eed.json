@@ -36,8 +36,8 @@
         "#hash_e2bdd456ce2308cc"
     ],
     "turretAnimSettings": "#player_muscle_car_driver_anims",
-    "fx_bc8": "#hash_3b398ee48ce5188f",
-    "fx_bd0": "#hash_3b398ee48ce5188f",
+    "fx_bc8": "#weapon/fx_muz_veh_gun_med_3p",
+    "fx_bd0": "#weapon/fx_muz_veh_gun_med_3p",
     "normalImpactFX": "#hash_946d30ee171ae16a",
     "exitImpactFX": "#hash_bf7991ca1680bd5c",
     "normalImpactSounds": "#bullet_impact",

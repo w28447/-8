@@ -91,7 +91,7 @@ function minigun_launcher_muzzle_fx( localclientnum, oldval, newval, bnewent, bi
         deletefx( localclientnum, self.var_83a410ad, 1 );
     }
     
-    if ( self zm_utility::function_f8796df3( localclientnum ) )
+    if ( self zm_utility::is_first_person( localclientnum ) )
     {
         self.var_83a410ad = playviewmodelfx( localclientnum, level._effect[ #"hash_319b0ab74b8b1f3c" ], "tag_flash2" );
         return;

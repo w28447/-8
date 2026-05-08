@@ -307,7 +307,7 @@ function can_select_character( characterindex )
 // Params 3
 // Checksum 0x1169642f, Offset: 0xca8
 // Size: 0x216, Type: bool
-function select_character( characterindex, forceselection, var_8a239568 )
+function select_character( characterindex, forceselection, autodraft )
 {
     if ( !player_role::is_valid( characterindex ) )
     {
@@ -331,7 +331,7 @@ function select_character( characterindex, forceselection, var_8a239568 )
         else if ( isdefined( level.var_9205f2e8 ) )
         {
             game_time = gettime();
-            var_891e514a = { #xuid:self getxuid(), #character_index:characterindex, #game_time:game_time, #var_6fa2fd60:game_time - level.var_9205f2e8, #var_b53f57e1:var_8a239568 };
+            var_891e514a = { #xuid:self getxuid(), #character_index:characterindex, #game_time:game_time, #var_6fa2fd60:game_time - level.var_9205f2e8, #auto_draft:autodraft };
             function_92d1707f( #"hash_3a95edd667fd3e7d", var_891e514a );
         }
         
@@ -403,7 +403,7 @@ function draft_initialize()
         player clientfield::set_player_uimodel( "PositionDraft.autoSelected", 0 );
     }
     
-    level.var_b318d3d1 = getgametypesetting( #"drafttime" ) + getgametypesetting( #"hash_4e4352bd1aaeedfe" );
+    level.var_b318d3d1 = getgametypesetting( #"drafttime" ) + getgametypesetting( #"draftmatchstarttime" );
     function_ee80d2e8( int( max( 0, level.var_b318d3d1 ) ) );
 }
 
@@ -523,7 +523,7 @@ function wait_for_players()
         wait 0.2;
     }
     
-    level.var_b318d3d1 = getgametypesetting( #"drafttime" ) + getgametypesetting( #"hash_4e4352bd1aaeedfe" ) + 20;
+    level.var_b318d3d1 = getgametypesetting( #"drafttime" ) + getgametypesetting( #"draftmatchstarttime" ) + 20;
     function_ee80d2e8( int( max( 0, level.var_b318d3d1 ) ) );
     starttime = gettime();
     
@@ -537,7 +537,7 @@ function wait_for_players()
         }
     }
     
-    level.var_b318d3d1 = getgametypesetting( #"drafttime" ) + getgametypesetting( #"hash_4e4352bd1aaeedfe" );
+    level.var_b318d3d1 = getgametypesetting( #"drafttime" ) + getgametypesetting( #"draftmatchstarttime" );
     function_ee80d2e8( int( max( 0, level.var_b318d3d1 ) ) );
 }
 
@@ -955,7 +955,7 @@ function assign_remaining_players( only_assign_player )
 // Size: 0x24c
 function game_start()
 {
-    timeremaining = getgametypesetting( #"hash_4e4352bd1aaeedfe" );
+    timeremaining = getgametypesetting( #"draftmatchstarttime" );
     starttime = gettime();
     
     if ( level.var_5be52892 == 1 )

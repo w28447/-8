@@ -228,7 +228,7 @@ function function_8c80503()
             break;
     }
     
-    self.var_b21e0263 = 0;
+    self.is_playing_audio = 0;
     level.var_18ee515d++;
     
     if ( level.var_18ee515d == 4 )
@@ -243,11 +243,11 @@ function function_8c80503()
 // Size: 0xe8
 function function_d4c6dc0d()
 {
-    self.var_b21e0263 = 1;
+    self.is_playing_audio = 1;
     e_recorder = getent( self.target2, "targetname" );
     a_e_audio_reel = getentarray( e_recorder.target, "targetname" );
     
-    while ( self.var_b21e0263 && a_e_audio_reel.size > 0 )
+    while ( self.is_playing_audio && a_e_audio_reel.size > 0 )
     {
         a_e_audio_reel[ 0 ] rotatepitch( 45, 1 );
         wait 0.1;

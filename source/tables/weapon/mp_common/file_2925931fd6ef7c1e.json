@@ -39,9 +39,9 @@
     "#hash_5c29f743": "#hash_490c3521298b5e16",
     "projexplosionsound": "#exp_trophy_system",
     "tunables1": "#hash_25c858e26896668d",
-    "cacWeaponXCam": "#hash_5b1ec190b50f0405",
+    "cacWeaponXCam": "#ui_cam_cac_equip_trophy",
     "sharedWeaponSounds": "#equipment",
-    "weaponHeadObjective": "#hash_3d917f182a76f960",
+    "weaponHeadObjective": "#inworld_trophysystem",
     "projectilemodel": "#wpn_t8_eqp_trophy_system_world",
     "viewmodel": [
         "#wpn_t8_eqp_trophy_system_view"
@@ -61,7 +61,7 @@
     "fx_ed8": "#explosions/fx_exp_equipment_lg",
     "#hash_96850284": "#jammer_trophy",
     "#hash_26f68e75": "#icepick_trophy",
-    "bounceImpactFX": "#hash_446e1054f9b14b63",
+    "bounceImpactFX": "#euip_bounce",
     "normalImpactSounds": "#hash_e8e0a97bbbf0b555",
-    "bounceImpactSounds": "#hash_3a84a19d3023d78"
+    "bounceImpactSounds": "#trophy_bounce"
 }

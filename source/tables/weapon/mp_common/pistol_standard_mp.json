@@ -61,7 +61,7 @@
     "sharedWeaponSounds": "#pistol",
     "tracers": [
         "#pistol",
-        "#hash_40ce0b8ef958c831"
+        "#pistol_enemy"
     ],
     "viewmodel": [
         "#wpn_t7_mr6_view"

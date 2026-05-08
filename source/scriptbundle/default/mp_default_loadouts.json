@@ -34,7 +34,7 @@
                     "bonuscard": "#bonuscard_primary_gunfighter"
                 }
             ],
-            "customclassname": "localized17#hash_73bf78bd8d8db95d",
+            "customclassname": "localized17#class/breach",
             "hash_d0c837c7": 3,
             "hash_d73c4f3b": 5,
             "primary": "#smg_capacity_t8",
@@ -73,7 +73,7 @@
                     "bonuscard": "#bonuscard_perk_1_greed"
                 }
             ],
-            "customclassname": "localized17#hash_6338674bdead3158",
+            "customclassname": "localized17#class/mercenary",
             "hash_d0c837c7": 3,
             "hash_d73c4f3b": 5,
             "primary": "#ar_modular_t8",
@@ -113,7 +113,7 @@
                     "attachment": "fmj2"
                 }
             ],
-            "customclassname": "localized17#hash_76fba834032b8fb7",
+            "customclassname": "localized17#class/support",
             "hash_d0c837c7": 3,
             "hash_d73c4f3b": 5,
             "primary": "#lmg_standard_t8",
@@ -153,7 +153,7 @@
                     "bonuscard": "#bonuscard_primary_operator_mod"
                 }
             ],
-            "customclassname": "localized17#hash_13262c0a18d54ad0",
+            "customclassname": "localized17#class/sentinel",
             "hash_d0c837c7": 3,
             "hash_d73c4f3b": 5,
             "primary": "#tr_longburst_t8",
@@ -198,7 +198,7 @@
                     "bonuscard": "#bonuscard_overkill"
                 }
             ],
-            "customclassname": "localized17#hash_554a0a19e3773c1a",
+            "customclassname": "localized17#class/marksman",
             "hash_d0c837c7": 3,
             "hash_d73c4f3b": 5,
             "primary": "#sniper_quickscope_t8",
@@ -246,7 +246,7 @@
                     "bonuscard": "#bonuscard_underkill"
                 }
             ],
-            "customclassname": "localized17#hash_639f992affc7299e",
+            "customclassname": "localized17#class/hunter",
             "hash_d0c837c7": 3,
             "hash_d73c4f3b": 3,
             "primary": "#pistol_revolver_t8",
@@ -388,8 +388,8 @@
             "killstreak": "#helicopter_comlink"
         }
     ],
-    "hash_71dab9659ba194f4:hash_9027ef1e": "#hash_71dab9659ba194f4",
-    "hash_71dab7659ba1918e:hash_68c52059": "#hash_71dab7659ba1918e",
+    "loot_tags_default_04:hash_9027ef1e": "#loot_tags_default_04",
+    "loot_tags_default_02:hash_68c52059": "#loot_tags_default_02",
     "hash_71daba659ba196a7:hash_b255336c": "#hash_71daba659ba196a7",
     "loot_emote_shared_chest_pound": "#loot_emote_shared_chest_pound",
     "hash_71dabb659ba1985a:hash_7afec4cc": "#hash_71dabb659ba1985a",

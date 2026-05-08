@@ -79,7 +79,7 @@
     "weaponCamo": "#hash_1af07c20a1295068",
     "cacWeaponXCam": "#ui_cam_cac_sniper_quickscope",
     "cacAttachmentsXCam": "#ui_cam_cac_sniper_quickscope",
-    "weaponIconXCam": "#hash_4212f517dce26f87",
+    "weaponIconXCam": "#ui_cam_icon_sniper_quickscope",
     "sharedWeaponSounds": "#rifle",
     "ballisticDesc": "#hash_77ea811fd6047f63",
     "tracers": [
@@ -114,8 +114,8 @@
     "fx_c88": "#hash_83613e307817774e",
     "fx_c90": "#hash_83613e307817774e",
     "fx_c98": "#hash_83613e307817774e",
-    "normalImpactFX": "#hash_7ee0671def6af7a4",
-    "exitImpactFX": "#hash_56ef4fc6c00cc18e",
+    "normalImpactFX": "#bullet_xlarge_enter",
+    "exitImpactFX": "#bullet_large_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_50191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

@@ -412,7 +412,7 @@ function umbra_fix_trigger( localclientnum, pos, height, radius, umbra_name )
 // Params 1
 // Checksum 0x468f7ad2, Offset: 0xff0
 // Size: 0xa6
-function function_f8796df3( localclientnum )
+function is_first_person( localclientnum )
 {
     b_first = 0;
     

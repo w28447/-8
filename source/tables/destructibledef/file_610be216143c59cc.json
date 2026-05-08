@@ -460,7 +460,7 @@
             "entityDamageTransfer": 0,
             "subtargetOffset": "(0, 0, 0)",
             "damageSound": "#hash_37548d90f27137ca",
-            "physConstraints": "#hash_2b4e90b0f9972096",
+            "physConstraints": "#veh_t7_door_l_front_hinge_pc",
             "unk268": 200,
             "hideBones": [
                 103,
@@ -509,7 +509,7 @@
             "entityDamageTransfer": 0,
             "subtargetOffset": "(0, 0, 0)",
             "damageSound": "#hash_37548e90f271397d",
-            "physConstraints": "#hash_5a1759d577e19ac0",
+            "physConstraints": "#veh_t7_door_r_front_hinge_pc",
             "unk268": 200,
             "hideBones": [
                 104,
@@ -558,7 +558,7 @@
             "entityDamageTransfer": 0,
             "subtargetOffset": "(0, 0, 0)",
             "damageSound": "#hash_37548b90f2713464",
-            "physConstraints": "#hash_254667fa7439e897",
+            "physConstraints": "#veh_t7_door_l_rear_hinge_pc",
             "unk268": 200,
             "hideBones": [
                 102,
@@ -607,7 +607,7 @@
             "entityDamageTransfer": 1,
             "subtargetOffset": "(0, 0, 0)",
             "damageSound": "#hash_37548c90f2713617",
-            "physConstraints": "#hash_177cdb7befe97275",
+            "physConstraints": "#veh_t7_door_r_rear_hinge_pc",
             "unk268": 200,
             "hideBones": [
                 96,
@@ -1151,7 +1151,7 @@
             "entityDamageTransfer": 0,
             "subtargetOffset": "(0, 0, 0)",
             "damageSound": "#hash_37518990f26efb27",
-            "physConstraints": "#hash_6b82325538f0364e",
+            "physConstraints": "#citycar_launch_license",
             "unk268": 200,
             "hideBones": [
                 12,
@@ -1465,7 +1465,7 @@
             "impactDamageScale": 1,
             "entityDamageTransfer": 0,
             "subtargetOffset": "(0, 0, 0)",
-            "physConstraints": "#hash_7ba51fdb8c44571f",
+            "physConstraints": "#veh_t7_trunk_hinge_pc",
             "unk268": 200,
             "hideBones": [
                 41,
@@ -1508,7 +1508,7 @@
             "impactDamageScale": 1,
             "entityDamageTransfer": 0,
             "subtargetOffset": "(0, 0, 0)",
-            "physConstraints": "#hash_2e6c9db1654b392a",
+            "physConstraints": "#physcon_t7_civ_car_compact_seat_hinge_l_pc",
             "unk268": 200,
             "hideBones": [
                 37,
@@ -1551,7 +1551,7 @@
             "impactDamageScale": 1,
             "entityDamageTransfer": 0,
             "subtargetOffset": "(0, 0, 0)",
-            "physConstraints": "#hash_3776dc1d450d11c",
+            "physConstraints": "#physcon_t7_civ_car_compact_seat_hinge_r_pc",
             "unk268": 200,
             "hideBones": [
                 15,

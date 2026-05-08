@@ -2,7 +2,7 @@
     "name": "#claymore_mp",
     "baseWeapon": "#claymore",
     "displayname": "#weapon/claymore",
-    "streamkey": "#hash_16da337727ecab3",
+    "streamkey": "#claymore_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/border" )
 require( "ui/uieditor/widgets/hud/uplink/uplink_iconandtextarmorbg" )
-require( "x64:80816b11e0416bd" )
+require( "ui/uieditor/widgets/reticles/uplink/uplinkreticle" )
 
 CoD.uplinkBallReticle = InheritFrom( LUI.UIElement )
 CoD.uplinkBallReticle.__defaultWidth = 1920

@@ -375,13 +375,13 @@
         {
             "value": 168,
             "next": 65535,
-            "name": "#hash_359e6edbdc5d957f",
+            "name": "#amb_bangs",
             "sequence": 0,
             "cullDistance": 5000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_359e6edbdc5d957f",
+                    "name": "#amb_bangs",
                     "assetId": "#hash_54131e6d0309e206",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",
@@ -420,7 +420,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_359e6edbdc5d957f",
+                    "name": "#amb_bangs",
                     "assetId": "#hash_3fc560fdfaca4283",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",
@@ -459,7 +459,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_359e6edbdc5d957f",
+                    "name": "#amb_bangs",
                     "assetId": "#hash_719000220d2a1e2c",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",
@@ -498,7 +498,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_359e6edbdc5d957f",
+                    "name": "#amb_bangs",
                     "assetId": "#hash_49a07fcf044a54d1",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",
@@ -537,7 +537,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_359e6edbdc5d957f",
+                    "name": "#amb_bangs",
                     "assetId": "#hash_2f15b52628d8407a",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",
@@ -5035,13 +5035,13 @@
         {
             "value": 144,
             "next": 65535,
-            "name": "#hash_633b9532cf0da169",
+            "name": "#amb_flies",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_633b9532cf0da169",
+                    "name": "#amb_flies",
                     "assetId": "#amb/animals/insects/flies/flies_00.ll100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",
@@ -5080,7 +5080,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_633b9532cf0da169",
+                    "name": "#amb_flies",
                     "assetId": "#amb/animals/insects/flies/flies_02.ll100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",
@@ -10960,13 +10960,13 @@
         {
             "value": 18,
             "next": 88,
-            "name": "#hash_718e869d40bad6e9",
+            "name": "#amb_pump_02",
             "sequence": 0,
             "cullDistance": 2600,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_718e869d40bad6e9",
+                    "name": "#amb_pump_02",
                     "assetId": "#hash_2eaa0fc827ec33b1",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",
@@ -25763,13 +25763,13 @@
         {
             "value": 422,
             "next": 65535,
-            "name": "#hash_1ff8bec27dfc1b70",
+            "name": "#dst_fern",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1ff8bec27dfc1b70",
+                    "name": "#dst_fern",
                     "assetId": "#dst/prop/fern/fern_00.ln100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",
@@ -26699,13 +26699,13 @@
         {
             "value": 619,
             "next": 65535,
-            "name": "#hash_501eff91f639c23e",
+            "name": "#dst_glass_pane",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_501eff91f639c23e",
+                    "name": "#dst_glass_pane",
                     "assetId": "#dst/generic/glass/med/glass_break_medium_00.ln100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",
@@ -27324,13 +27324,13 @@
         {
             "value": 28,
             "next": 222,
-            "name": "#hash_6a7bbff93ccc7ab7",
+            "name": "#dst_luggage",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6a7bbff93ccc7ab7",
+                    "name": "#dst_luggage",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",
                     "assetFileNameRelease": "#wz_open_skyscrapers.all",
@@ -30514,13 +30514,13 @@
         {
             "value": 266,
             "next": 241,
-            "name": "#hash_38c96854fb0017e",
+            "name": "#dst_typewriter",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_38c96854fb0017e",
+                    "name": "#dst_typewriter",
                     "assetId": "#dst/prop/typewriter/typewriter_00.ln100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",
@@ -36990,13 +36990,13 @@
         {
             "value": 186,
             "next": 368,
-            "name": "#hash_1fffa2c4bbf5e1ab",
+            "name": "#evt_transmission",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1fffa2c4bbf5e1ab",
+                    "name": "#evt_transmission",
                     "assetId": "#blk/transmission/wz_numbers_01.ln100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",
@@ -39320,7 +39320,7 @@
                     "assetIdRelease": "#wz_open_skyscrapers.all",
                     "assetFileNameRelease": "#wz_open_skyscrapers.all",
                     "contextType": "#hash_730721b0b6373e1",
-                    "contextValue": "#hash_8f631787d4aaf77",
+                    "contextValue": "#outdoor",
                     "reverbSend": 0.001,
                     "centerSend": 0,
                     "volMin": 0.56234133,
@@ -39361,7 +39361,7 @@
                     "assetIdRelease": "#wz_open_skyscrapers.all",
                     "assetFileNameRelease": "#wz_open_skyscrapers.all",
                     "contextType": "#hash_730721b0b6373e1",
-                    "contextValue": "#hash_8f631787d4aaf77",
+                    "contextValue": "#outdoor",
                     "reverbSend": 0.001,
                     "centerSend": 0,
                     "volMin": 0.56234133,
@@ -40021,13 +40021,13 @@
         {
             "value": 679,
             "next": 65535,
-            "name": "#hash_48bc31e222aa7c3e",
+            "name": "#exp_barrel_fire",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_48bc31e222aa7c3e",
+                    "name": "#exp_barrel_fire",
                     "assetId": "#dst/generic/fire/barrel/barrel_fire_02.ll100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",
@@ -45239,7 +45239,7 @@
                     "assetIdRelease": "#wz_open_skyscrapers.all",
                     "assetFileNameRelease": "#wz_open_skyscrapers.all",
                     "contextType": "#hash_730721b0b6373e1",
-                    "contextValue": "#hash_8f631787d4aaf77",
+                    "contextValue": "#outdoor",
                     "reverbSend": 0.001,
                     "centerSend": 0,
                     "volMin": 0.56234133,
@@ -45281,7 +45281,7 @@
                     "assetIdRelease": "#wz_open_skyscrapers.all",
                     "assetFileNameRelease": "#wz_open_skyscrapers.all",
                     "contextType": "#hash_730721b0b6373e1",
-                    "contextValue": "#hash_8f631787d4aaf77",
+                    "contextValue": "#outdoor",
                     "reverbSend": 0.001,
                     "centerSend": 0,
                     "volMin": 0.56234133,
@@ -46310,7 +46310,7 @@
                     "assetIdRelease": "#wz_open_skyscrapers.all",
                     "assetFileNameRelease": "#wz_open_skyscrapers.all",
                     "contextType": "#hash_730721b0b6373e1",
-                    "contextValue": "#hash_8f631787d4aaf77",
+                    "contextValue": "#outdoor",
                     "reverbSend": 0.001,
                     "centerSend": 0,
                     "volMin": 0.56234133,
@@ -46352,7 +46352,7 @@
                     "assetIdRelease": "#wz_open_skyscrapers.all",
                     "assetFileNameRelease": "#wz_open_skyscrapers.all",
                     "contextType": "#hash_730721b0b6373e1",
-                    "contextValue": "#hash_8f631787d4aaf77",
+                    "contextValue": "#outdoor",
                     "reverbSend": 0.001,
                     "centerSend": 0,
                     "volMin": 0.56234133,
@@ -47180,13 +47180,13 @@
         {
             "value": 520,
             "next": 65535,
-            "name": "#hash_43ad48046fb206c8",
+            "name": "#exp_veh_small",
             "sequence": 0,
             "cullDistance": 12000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_43ad48046fb206c8",
+                    "name": "#exp_veh_small",
                     "secondaryname": "#hash_680a1ca45380de2",
                     "assetId": "#exp/vehicle/base/exp_veh_00.ln100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
@@ -47227,7 +47227,7 @@
                     "unk178": "#hash_6000b0206"
                 },
                 {
-                    "name": "#hash_43ad48046fb206c8",
+                    "name": "#exp_veh_small",
                     "secondaryname": "#hash_680a1ca45380de2",
                     "assetId": "#exp/vehicle/base/exp_veh_01.ln100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
@@ -47268,7 +47268,7 @@
                     "unk178": "#hash_6000b0206"
                 },
                 {
-                    "name": "#hash_43ad48046fb206c8",
+                    "name": "#exp_veh_small",
                     "secondaryname": "#hash_680a1ca45380de2",
                     "assetId": "#exp/vehicle/base/exp_veh_02.ln100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
@@ -48728,13 +48728,13 @@
         {
             "value": 445,
             "next": 65535,
-            "name": "#hash_d7b15fc12be420e",
+            "name": "#fly_lanterns",
             "sequence": 0,
             "cullDistance": 500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_d7b15fc12be420e",
+                    "name": "#fly_lanterns",
                     "assetId": "#hash_70c9f94c29e7d104",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",
@@ -66050,13 +66050,13 @@
         {
             "value": 506,
             "next": 65535,
-            "name": "#hash_44b444a70fbf1583",
+            "name": "#pfx_flares",
             "sequence": 0,
             "cullDistance": 1700,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_44b444a70fbf1583",
+                    "name": "#pfx_flares",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",
                     "assetFileNameRelease": "#wz_open_skyscrapers.all",
@@ -66098,13 +66098,13 @@
         {
             "value": 190,
             "next": 539,
-            "name": "#hash_75037b4727f99cdb",
+            "name": "#pfx_flies",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_75037b4727f99cdb",
+                    "name": "#pfx_flies",
                     "assetId": "#amb/animals/insects/flies/flies_00.ll100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",
@@ -66143,7 +66143,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_75037b4727f99cdb",
+                    "name": "#pfx_flies",
                     "assetId": "#amb/animals/insects/flies/flies_02.ll100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",
@@ -69732,13 +69732,13 @@
         {
             "value": 544,
             "next": 65535,
-            "name": "#hash_6db6d6489666f006",
+            "name": "#pfx_spark_med",
             "sequence": 0,
             "cullDistance": 1750,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6db6d6489666f006",
+                    "name": "#pfx_spark_med",
                     "assetId": "#pfx/sparks/med/spark_med_00.ln100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",
@@ -69777,7 +69777,7 @@
                     "unk178": "#hash_500000804"
                 },
                 {
-                    "name": "#hash_6db6d6489666f006",
+                    "name": "#pfx_spark_med",
                     "assetId": "#pfx/sparks/med/spark_med_01.ln100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",
@@ -69816,7 +69816,7 @@
                     "unk178": "#hash_500000804"
                 },
                 {
-                    "name": "#hash_6db6d6489666f006",
+                    "name": "#pfx_spark_med",
                     "assetId": "#pfx/sparks/med/spark_med_02.ln100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",
@@ -71617,13 +71617,13 @@
         {
             "value": 287,
             "next": 65535,
-            "name": "#hash_719101b9755130ca",
+            "name": "#pfx_steam",
             "sequence": 0,
             "cullDistance": 750,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_719101b9755130ca",
+                    "name": "#pfx_steam",
                     "assetId": "#pfx/steam/hiss/steam_hiss_00.ll100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",
@@ -87318,7 +87318,7 @@
         {
             "name": "prj_impact",
             "id": "#prj_impact",
-            "fadeInCurve": "#hash_4ca222c8af19e64a",
+            "fadeInCurve": "#defaultmin",
             "fadeOutCurve": "#default",
             "updateWhilePaused": false,
             "trackAmplitude": false,
@@ -87415,11 +87415,11 @@
             "loop": "#hash_44463359dd025b23",
             "duckId": "#default",
             "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_8f631787d4aaf77",
+            "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_8f631787d4aaf77",
+            "globalContextValue": "#outdoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,
@@ -87459,11 +87459,11 @@
             "loop": "#hash_3c160c70b0bf8ad6",
             "duckId": "#default",
             "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_8f631787d4aaf77",
+            "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_8f631787d4aaf77",
+            "globalContextValue": "#outdoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,
@@ -87701,7 +87701,7 @@
             "loop": "#hash_5fe2ed383ca518d2",
             "duckId": "#default",
             "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_8f631787d4aaf77",
+            "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "globalContextType": "#hash_730721b0b6373e1",
@@ -88009,11 +88009,11 @@
             "loop": "#hash_3c160c70b0bf8ad6",
             "duckId": "#default",
             "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_8f631787d4aaf77",
+            "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_8f631787d4aaf77",
+            "globalContextValue": "#outdoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,
@@ -88119,11 +88119,11 @@
             "loop": "#hash_3c160c70b0bf8ad6",
             "duckId": "#default",
             "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_8f631787d4aaf77",
+            "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_8f631787d4aaf77",
+            "globalContextValue": "#outdoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,
@@ -88317,11 +88317,11 @@
             "loop": "#hash_3c160c70b0bf8ad6",
             "duckId": "#default",
             "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_8f631787d4aaf77",
+            "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_8f631787d4aaf77",
+            "globalContextValue": "#outdoor",
             "defaultRoom": true,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,

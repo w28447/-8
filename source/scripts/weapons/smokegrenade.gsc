@@ -38,7 +38,7 @@ function function_79d42bea( weapon )
     }
     
     var_b0b958b3 = getscriptbundle( weapon.customsettings );
-    return isdefined( var_b0b958b3.var_40dfefd1 ) ? var_b0b958b3.var_40dfefd1 : 128;
+    return isdefined( var_b0b958b3.smokegrenaderadius ) ? var_b0b958b3.smokegrenaderadius : 128;
 }
 
 // Namespace smokegrenade/smokegrenade
@@ -389,14 +389,14 @@ function private function_579815a1( weapon )
         return false;
     }
     
-    var_e6fbac16 = getscriptbundle( weapon.customsettings );
+    customsettingsbundle = getscriptbundle( weapon.customsettings );
     
-    if ( var_e6fbac16.var_8ceb6ac8 === 1 )
+    if ( customsettingsbundle.var_8ceb6ac8 === 1 )
     {
         return true;
     }
     
-    if ( var_e6fbac16.var_6942aad6 === 1 )
+    if ( customsettingsbundle.var_6942aad6 === 1 )
     {
         return true;
     }

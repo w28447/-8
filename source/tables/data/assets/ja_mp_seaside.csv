@@ -299,7 +299,7 @@ localizeentry,d#hash_3ca968dee9e5dc02
 localizeentry,d#hash_3cbdafac7f4a7bd2
 localizeentry,#hash_3d22d450dabe65a2
 localizeentry,d#hash_3d26eb8dafae98e9
-localizeentry,d#hash_3d7abb3373fab887
+localizeentry,d#zmui/suppressor_desc
 localizeentry,d#mpui/tacknife
 localizeentry,d#hash_3de8e053a2e6c69b
 localizeentry,d#hash_3dfd2cf9c5589207
@@ -560,7 +560,7 @@ localizeentry,#hash_7003a025e9e4fed4
 localizeentry,d#mpui/stabilizer
 localizeentry,#hash_7027e0c93436045b
 localizeentry,#hash_707ed9284aa4048d
-localizeentry,d#hash_7085044e7b80d5a3
+localizeentry,d#mpui/reticle_default
 localizeentry,d#hash_709fb6b7fdde6aa8
 localizeentry,#hash_70eeba437f2fab31
 localizeentry,#hash_7103ddcb3442fd7a

@@ -16,11 +16,11 @@
     "dogtagFriendly": "#hash_16374a7b269f0f65",
     "dogTagEnemy": "#hash_2c0bb1840a08c3c",
     "tagFxSet": "#hash_29449d875b149b2b",
-    "characterFootsteps": "#hash_7052cf78616e4c73",
-    "characterFootstepsQuiet": "#hash_783ab8b555ce9413",
+    "characterFootsteps": "#foley_light",
+    "characterFootstepsQuiet": "#defaultplayerquietfootstep",
     "characterFootstepsNPC": "#hash_4fa996883c6b348b",
-    "characterFootstepsNPCLoud": "#hash_237a21af974e9d2f",
-    "characterFootstepsNPCQuiet": "#hash_22eae0dda1cf3d31",
+    "characterFootstepsNPCLoud": "#defaultnpcloudfootstep",
+    "characterFootstepsNPCQuiet": "#defaultnpcquietfootstep",
     "bundle": {
         "arenaLobbyScenes": [
             {

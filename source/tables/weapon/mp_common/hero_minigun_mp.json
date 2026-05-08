@@ -71,7 +71,7 @@
     "sharedWeaponSounds": "#rifle",
     "tracers": [
         "#hero_minigun",
-        "#hash_48483dc2aad7da3a"
+        "#hero_minigun_enemy"
     ],
     "viewmodel": [
         "#wpn_t7_hero_reaper_minigun_view"
@@ -87,13 +87,13 @@
     "image_e90": "#t7_icon_weapon_hero_reaper_kf",
     "image_1048": "#t7_icon_weapon_hero_reaper_kf",
     "fireRumble": "#heavygun_fire",
-    "fx_bc8": "#hash_6f4c0d9be8ebb8aa",
+    "fx_bc8": "#weapon/fx_hero_minigun_muz_1p",
     "fx_bd0": "#weapon/fx_muz_md_rifle_3p",
-    "fx_c80": "#hash_58b227559fe0083",
-    "fx_c88": "#hash_58b227559fe0083",
-    "fx_c90": "#hash_58b227559fe0083",
-    "fx_c98": "#hash_58b227559fe0083",
-    "normalImpactFX": "#hash_4637c3c261229290",
+    "fx_c80": "#weapon/fx_shellejects_minigun",
+    "fx_c88": "#weapon/fx_shellejects_minigun",
+    "fx_c90": "#weapon/fx_shellejects_minigun",
+    "fx_c98": "#weapon/fx_shellejects_minigun",
+    "normalImpactFX": "#hero_minigun_enter",
     "exitImpactFX": "#hash_d6ef4fc6c00cc18e",
     "normalImpactSounds": "#bullet_impact",
     "exitImpactSounds": "#hash_d0191cc37bfbfeea"

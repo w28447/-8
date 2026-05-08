@@ -151,7 +151,7 @@ function private pablo_intro()
             
             if ( level flag::get( #"hash_3310bb35ce396e49" ) )
             {
-                str_alias = #"hash_921478d69bafc7c";
+                str_alias = #"vox_meet_pablo_have_rock";
             }
             
             level function_e44c7c0c( str_alias );

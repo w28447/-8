@@ -31,7 +31,7 @@
     "sound660": "#uin_unavailable_charging",
     "projexplosionsound": "#hash_20cda79cd396562",
     "tunables1": "#killstreak_ai_tank_tunables_mp",
-    "crateObjective": "#hash_3c7c319783c8522",
+    "crateObjective": "#ai_tank_waypoint",
     "#hash_2e4a8800": "#remote_missile_scoreevents",
     "viewmodel": [
         "#wpn_t8_eqp_datapad_view"

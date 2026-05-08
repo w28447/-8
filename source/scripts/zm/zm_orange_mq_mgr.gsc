@@ -227,8 +227,8 @@ function function_d4147875( var_5ea5c94d )
     while ( true )
     {
         waitframe( 1 );
-        _attack_barrier_sprint = vectornormalize( veh_end.origin - level.sam.origin );
-        var_7d910a84 = vectordot( _attack_barrier_sprint, anglestoforward( level.sam.angles ) );
+        var_9461d9d2 = vectornormalize( veh_end.origin - level.sam.origin );
+        var_7d910a84 = vectordot( var_9461d9d2, anglestoforward( level.sam.angles ) );
         
         if ( var_7d910a84 < 0 )
         {
@@ -282,8 +282,8 @@ function function_74963add()
     while ( true )
     {
         waitframe( 1 );
-        _attack_barrier_sprint = vectornormalize( self.origin - level.sam.origin );
-        var_7d910a84 = vectordot( _attack_barrier_sprint, anglestoforward( level.sam.angles ) );
+        var_9461d9d2 = vectornormalize( self.origin - level.sam.origin );
+        var_7d910a84 = vectordot( var_9461d9d2, anglestoforward( level.sam.angles ) );
         
         if ( var_7d910a84 < 0 )
         {

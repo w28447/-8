@@ -53,5 +53,5 @@
     "image_1048": "#ui_icon_inventory_cymbal_monkey",
     "fx_ed8": "#explosions/fx8_exp_grenade_default",
     "#hash_96850284": "#jammer_cymbal",
-    "bounceImpactSounds": "#hash_5b7144d8af2ec15a"
+    "bounceImpactSounds": "#monkey_bomb_bounce"
 }

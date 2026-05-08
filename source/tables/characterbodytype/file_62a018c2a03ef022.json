@@ -1,9 +1,9 @@
 {
     "name": "#hash_62a018c2a03ef022",
-    "displayName": "#hash_4e06263ae2b9a394",
+    "displayName": "#heroes/hacker",
     "mpDialog": "#zero",
-    "playerSoundsTable": "#hash_8b6c2bcaaa94ab4",
-    "playerFXTable": "#hash_133d2326a92c76be",
+    "playerSoundsTable": "#mp_playersounds",
+    "playerFXTable": "#mp_playerfx",
     "image_50": "#personalize_t7_hud_mp_weapon_hero_pineapplegun_available",
     "image_58": "#t7_mp_loadingportrait_weapon_battery",
     "image_60": "#t7_mp_loadingportrait_ability_battery",
@@ -17,11 +17,11 @@
     "dogtagFriendly": "#hash_222e2134eb7e1b46",
     "dogTagEnemy": "#hash_2dabf03939aaf1eb",
     "tagFxSet": "#hash_7e077004b7d49781",
-    "characterFootsteps": "#hash_4ee42a3145f1fe3d",
-    "characterFootstepsQuiet": "#hash_783ab8b555ce9413",
-    "characterFootstepsNPC": "#hash_3008da66d91b8ad7",
-    "characterFootstepsNPCLoud": "#hash_237a21af974e9d2f",
-    "characterFootstepsNPCQuiet": "#hash_22eae0dda1cf3d31",
+    "characterFootsteps": "#defaultplayerfootstep",
+    "characterFootstepsQuiet": "#defaultplayerquietfootstep",
+    "characterFootstepsNPC": "#defaultnpcfootstep",
+    "characterFootstepsNPCLoud": "#defaultnpcloudfootstep",
+    "characterFootstepsNPCQuiet": "#defaultnpcquietfootstep",
     "bundle": {
         "arenaLobbyScenes": [
             {
@@ -83,7 +83,7 @@
         "hash_bb70c379": "scriptbundle&scene_frontend_t8_fem_customization",
         "hash_819846c7": 0,
         "hash_deddce19": 0,
-        "fullname": "localized17#hash_4e06263ae2b9a394",
+        "fullname": "localized17#heroes/hacker",
         "hash_5331abe0": 0,
         "hash_6c0a990a": "enum:2",
         "hubscene": "scriptbundle&scene_frontend_hub_t8_mp_zero",

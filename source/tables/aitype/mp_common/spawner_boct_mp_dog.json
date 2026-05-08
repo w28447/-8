@@ -9,8 +9,8 @@
     "scoreType": "#dog",
     "movementType": "#dog",
     "spawnInfluencers": [
-        "#hash_386e1bb6a5348b51",
-        "#hash_9742d61cd586672"
+        "#raps_friendly",
+        "#raps_enemy"
     ],
     "compassIcon": "#hash_67af4c8e6092942d",
     "typeSuffix": "_direwolf",

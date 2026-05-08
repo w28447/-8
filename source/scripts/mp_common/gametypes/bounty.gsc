@@ -144,7 +144,7 @@ function event_handler[gametype_init] main( eventstruct )
     globallogic_defaults::function_daa7e9d5();
     laststand_mp::function_367cfa1b( &function_95002a59 );
     laststand_mp::function_eb8c0e47( &onplayerrevived );
-    setdvar( #"hash_7036719f41a78d54", getgametypesetting( #"laststandrevivehealth" ) );
+    setdvar( #"player_laststandrevivehealth", getgametypesetting( #"laststandrevivehealth" ) );
     clientfield::register( "allplayers", "bountymoneytrail", 1, 1, "int" );
     clientfield::register( "toplayer", "realtime_multiplay", 1, 1, "int" );
     level.var_1aef539f = &function_a800815;
@@ -319,7 +319,7 @@ function private onstartgametype()
     if ( var_b1f5f155 == game.var_b40d8319 )
     {
         game.var_b40d8319 += getgametypesetting( #"hash_7e30d3849ca91b60" );
-        thread function_bdba96e1();
+        thread bountydrop();
     }
     
     level.bagomoney = function_b3faa437();
@@ -394,7 +394,7 @@ function private function_95002a59( attacker, victim, inflictor, weapon, meansof
     {
         overrideentitycamera = player::function_c0f28ff9( attacker, weapon );
         var_50d1e41a = potm::function_775b9ad1( weapon, meansofdeath );
-        potm::function_66d09fea( #"hash_11588f7b0737f095", attacker, self, inflictor, var_50d1e41a, overrideentitycamera );
+        potm::function_66d09fea( #"bh_downed", attacker, self, inflictor, var_50d1e41a, overrideentitycamera );
     }
     
     if ( isdefined( attacker ) )
@@ -639,7 +639,7 @@ function private function_a981417()
                     level.var_ad7774db.autodecaytime = 0.001;
                 }
                 
-                level.var_6938f270 += 0.1 * float( level.var_9fee970c ) / 1000;
+                level.var_6938f270 += 0.1 * float( level.framemsec ) / 1000;
             }
         }
         
@@ -2073,7 +2073,7 @@ function private function_17debb33()
 // Params 0, eflags: 0x4
 // Checksum 0xad0cc2da, Offset: 0x6e30
 // Size: 0x2cc
-function private function_bdba96e1()
+function private bountydrop()
 {
     waitframe( 1 );
     droplocations = struct::get_array( "bounty_drop", "variantname" );

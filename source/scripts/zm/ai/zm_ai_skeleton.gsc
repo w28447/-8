@@ -434,7 +434,7 @@ function private function_42a1dabd()
         
         if ( isdefined( var_708e5e40 ) && isdefined( var_708e5e40.tacpoint ) )
         {
-            var_708e5e40.tacpoint.var_94bf7609 = undefined;
+            var_708e5e40.tacpoint.claimed_by = undefined;
         }
     }
     
@@ -511,7 +511,7 @@ function private function_f78e62a8()
             continue;
         }
         
-        if ( isdefined( tacpoint.var_94bf7609 ) )
+        if ( isdefined( tacpoint.claimed_by ) )
         {
             continue;
         }
@@ -529,7 +529,7 @@ function private function_f78e62a8()
             continue;
         }
         
-        tacpoint.var_94bf7609 = self;
+        tacpoint.claimed_by = self;
         var_51601537 = tacpoint;
         break;
     }

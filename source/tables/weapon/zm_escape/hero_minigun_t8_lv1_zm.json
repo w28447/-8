@@ -61,7 +61,7 @@
     "sound6c0": "#hash_338ad154957db5e0",
     "tunables1": "#hero_minigun_t8_lv1_tunables_zm",
     "cacWeaponXCam": "#hash_9c4ea39463d14ac",
-    "sharedWeaponSounds": "#hash_5cf7b7be57a12ab0",
+    "sharedWeaponSounds": "#zm_minigun",
     "tracers": [
         "#lmg"
     ],

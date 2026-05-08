@@ -150,7 +150,7 @@ function private function_7c52f40()
     
     self callback::function_d8abfc3d( #"hash_45b50cc48ee7f9d8", &function_4b103bc4 );
     self hide();
-    self.var_8ba6ede3 = 1;
+    self.shoulddigup = 1;
     util::wait_network_frame();
     self clientfield::set( "blight_father_weakpoint_l_elbow_fx", 1 );
     self clientfield::set( "blight_father_weakpoint_r_elbow_fx", 1 );
@@ -309,7 +309,7 @@ function function_af7555b9( entity )
 // Size: 0x28, Type: bool
 function blightfathershouldspawn( entity )
 {
-    return isdefined( entity.var_8ba6ede3 ) && entity.var_8ba6ede3;
+    return isdefined( entity.shoulddigup ) && entity.shoulddigup;
 }
 
 // Namespace ct_ai_blight_father/ct_ai_blight_father
@@ -320,7 +320,7 @@ function blightfatherspawnstart( entity )
 {
     entity solid();
     entity clientfield::set( "zombie_riser_fx", 1 );
-    entity.var_8ba6ede3 = undefined;
+    entity.shoulddigup = undefined;
 }
 
 // Namespace ct_ai_blight_father/ct_ai_blight_father
@@ -816,15 +816,15 @@ function private function_cacd1506( var_84ed9a13, entity, inflictor, attacker, d
     
     if ( namespace_81245006::function_f29756fe( var_84ed9a13 ) == 3 )
     {
-        if ( isdefined( level.var_c2981ce9[ var_84ed9a13.var_51e8b151 ] ) )
+        if ( isdefined( level.var_c2981ce9[ var_84ed9a13.hittag1 ] ) )
         {
-            entity [[ level.var_c2981ce9[ var_84ed9a13.var_51e8b151 ] ]]( entity, inflictor, attacker, damage, flags, meansofdamage, weapon, point, dir, hitloc, offsettime, boneindex, modelindex );
+            entity [[ level.var_c2981ce9[ var_84ed9a13.hittag1 ] ]]( entity, inflictor, attacker, damage, flags, meansofdamage, weapon, point, dir, hitloc, offsettime, boneindex, modelindex );
         }
         
         if ( !entity isplayinganimscripted() && !entity.blockingpain )
         {
-            entity.var_fbec06fa = var_84ed9a13.var_51e8b151;
-            entity setblackboardattribute( "_blight_father_weak_point", var_84ed9a13.var_51e8b151 );
+            entity.var_fbec06fa = var_84ed9a13.hittag1;
+            entity setblackboardattribute( "_blight_father_weak_point", var_84ed9a13.hittag1 );
         }
         
         bone = boneindex;
@@ -1238,41 +1238,41 @@ function private blightfatherlaunchchaosmissile( var_f794172e, var_61622673, var
         self.var_6ee32f47 = 0;
     }
     
-    var_892397fd = util::spawn_model( #"tag_origin", var_ced3ec54 );
+    chaos_missile = util::spawn_model( #"tag_origin", var_ced3ec54 );
     var_a9494306 = function_c48604c0();
-    var_a9494306.origin = var_892397fd.origin;
-    var_a9494306.angles = var_892397fd.angles;
-    var_a9494306 linkto( var_892397fd, "tag_origin" );
-    var_892397fd.trigger = var_a9494306;
-    var_892397fd thread function_b2be1340( self ai::function_9139c839().var_a2519bb8 );
-    var_892397fd thread function_ebd22bba();
-    var_892397fd thread function_a6a20b2c( var_a9494306 );
-    var_892397fd.var_f3d1c928 = 0;
-    var_892397fd.var_52334e8c = self;
+    var_a9494306.origin = chaos_missile.origin;
+    var_a9494306.angles = chaos_missile.angles;
+    var_a9494306 linkto( chaos_missile, "tag_origin" );
+    chaos_missile.trigger = var_a9494306;
+    chaos_missile thread function_b2be1340( self ai::function_9139c839().var_a2519bb8 );
+    chaos_missile thread function_ebd22bba();
+    chaos_missile thread function_a6a20b2c( var_a9494306 );
+    chaos_missile.var_f3d1c928 = 0;
+    chaos_missile.var_52334e8c = self;
     angles_to_enemy = self gettagangles( var_f3486358 );
     normal_vector = anglestoforward( angles_to_enemy );
-    var_892397fd.angles = angles_to_enemy;
-    var_892397fd.var_209ff2fa = normal_vector * self ai::function_9139c839().var_f988064f;
+    chaos_missile.angles = angles_to_enemy;
+    chaos_missile.var_209ff2fa = normal_vector * self ai::function_9139c839().var_f988064f;
     max_trail_iterations = int( self ai::function_9139c839().var_652a36f2 / self ai::function_9139c839().var_52bddd4 * self ai::function_9139c839().var_9e5ebf3c );
-    var_892397fd.missile_target = var_f794172e;
-    var_892397fd thread function_5f3390fd( var_61622673, 60 );
-    var_892397fd playloopsound( #"hash_5b21b7c645692f8", 0.1 );
-    var_892397fd moveto( self gettagorigin( var_f3486358 ) + var_61622673, self ai::function_9139c839().var_20c6e4ca );
+    chaos_missile.missile_target = var_f794172e;
+    chaos_missile thread function_5f3390fd( var_61622673, 60 );
+    chaos_missile playloopsound( #"hash_5b21b7c645692f8", 0.1 );
+    chaos_missile moveto( self gettagorigin( var_f3486358 ) + var_61622673, self ai::function_9139c839().var_20c6e4ca );
     var_eb325a79 = self ai::function_9139c839().var_9e5ebf3c;
     var_b446b077 = self ai::function_9139c839().var_94fefe66;
     var_3fa92868 = self ai::function_9139c839().var_52bddd4;
     wait self ai::function_9139c839().var_20c6e4ca;
     
-    while ( isdefined( var_892397fd ) )
+    while ( isdefined( chaos_missile ) )
     {
-        if ( var_892397fd.var_f3d1c928 >= max_trail_iterations )
+        if ( chaos_missile.var_f3d1c928 >= max_trail_iterations )
         {
-            var_892397fd thread function_124486ee( 0 );
+            chaos_missile thread function_124486ee( 0 );
         }
         else
         {
-            var_892397fd function_1974d26f( var_3fa92868, var_b446b077, var_eb325a79 );
-            var_892397fd.var_f3d1c928 += 1;
+            chaos_missile function_1974d26f( var_3fa92868, var_b446b077, var_eb325a79 );
+            chaos_missile.var_f3d1c928 += 1;
         }
         
         wait var_eb325a79;
@@ -1340,9 +1340,9 @@ function private function_581a06c7( forward_dir, var_ced3ec54, var_27e1ee12, max
 function private function_5f3390fd( var_61622673, var_4fee43d4 )
 {
     self endon( #"death", #"detonated" );
-    var_892397fd = self;
+    chaos_missile = self;
     
-    while ( isdefined( var_892397fd ) )
+    while ( isdefined( chaos_missile ) )
     {
         player_origins = [];
         players = getplayers();
@@ -1361,11 +1361,11 @@ function private function_5f3390fd( var_61622673, var_4fee43d4 )
             player_origins[ player_origins.size ] = player.origin + var_61622673;
         }
         
-        players = arraysortclosest( player_origins, var_892397fd.origin, undefined, 0, var_4fee43d4 );
+        players = arraysortclosest( player_origins, chaos_missile.origin, undefined, 0, var_4fee43d4 );
         
         if ( players.size > 0 )
         {
-            var_892397fd thread function_124486ee( 0 );
+            chaos_missile thread function_124486ee( 0 );
         }
         
         waitframe( 1 );
@@ -1475,8 +1475,8 @@ function private function_124486ee( delay )
         return;
     }
     
-    var_892397fd = self;
-    missile_owner = var_892397fd.var_52334e8c;
+    chaos_missile = self;
+    missile_owner = chaos_missile.var_52334e8c;
     blast_radius = 128;
     var_83f35abe = 45;
     var_6927cfa0 = 40;
@@ -1487,23 +1487,23 @@ function private function_124486ee( delay )
         wait delay;
     }
     
-    if ( isdefined( var_892397fd ) )
+    if ( isdefined( chaos_missile ) )
     {
-        var_892397fd notify( #"detonated" );
-        var_892397fd moveto( var_892397fd.origin, 0.05 );
-        var_892397fd clientfield::set( "blight_father_chaos_missile_explosion_clientfield", 1 );
-        e_blightfather = var_892397fd.var_52334e8c;
+        chaos_missile notify( #"detonated" );
+        chaos_missile moveto( chaos_missile.origin, 0.05 );
+        chaos_missile clientfield::set( "blight_father_chaos_missile_explosion_clientfield", 1 );
+        e_blightfather = chaos_missile.var_52334e8c;
         w_weapon = getweapon( #"none" );
-        var_892397fd function_8e8b1dfc( var_c45ef84c, e_blightfather, w_weapon );
-        explosion_point = var_892397fd.origin;
+        chaos_missile function_8e8b1dfc( var_c45ef84c, e_blightfather, w_weapon );
+        explosion_point = chaos_missile.origin;
         function_44e3e0d1( explosion_point + ( 0, 0, 18 ) );
         util::wait_network_frame();
         radiusdamage( explosion_point + ( 0, 0, 18 ), blast_radius, var_83f35abe, var_6927cfa0, e_blightfather, "MOD_UNKNOWN", w_weapon );
         
-        if ( isdefined( var_892397fd ) )
+        if ( isdefined( chaos_missile ) )
         {
-            var_892397fd clientfield::set( "blight_father_maggot_trail_fx", 0 );
-            var_892397fd delete();
+            chaos_missile clientfield::set( "blight_father_maggot_trail_fx", 0 );
+            chaos_missile delete();
         }
     }
 }
@@ -1586,7 +1586,7 @@ function private function_8e8b1dfc( var_c45ef84c, blight_father, weapon )
             continue;
         }
         
-        status_effect = getstatuseffect( #"hash_7867f8f9aaaa0c40" );
+        status_effect = getstatuseffect( #"chaos_missile_damage" );
         level.activeplayers[ i ] status_effect::status_effect_apply( status_effect, weapon, blight_father );
         level.activeplayers[ i ] clientfield::increment_to_player( "blight_father_chaos_missile_rumble_clientfield", 1 );
     }

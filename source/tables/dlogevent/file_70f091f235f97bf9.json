@@ -31,7 +31,7 @@
                     },
                     {
                         "name": "#data_size",
-                        "scrName": "#hash_2e798620",
+                        "scrName": "#data_size",
                         "type": "UINT32"
                     },
                     {
@@ -46,7 +46,7 @@
                     },
                     {
                         "name": "#bandwidth_up",
-                        "scrName": "#hash_ba93a0a5",
+                        "scrName": "#bandwidth_up",
                         "type": "UINT32"
                     },
                     {
@@ -74,23 +74,23 @@
                 "name": "#telemetry_header",
                 "members": [
                     {
-                        "name": "#hash_f2ad74d8edb8204",
-                        "scrName": "#hash_50f7aa03",
+                        "name": "#game_session_id",
+                        "scrName": "#game_session_id",
                         "type": "UINT64"
                     },
                     {
                         "name": "#action_type",
-                        "scrName": "#hash_42e28add",
+                        "scrName": "#action_type",
                         "type": "XHASH"
                     },
                     {
                         "name": "#title_id",
-                        "scrName": "#hash_8f4c2b40",
+                        "scrName": "#title_id",
                         "type": "UINT32"
                     },
                     {
                         "name": "#build_version",
-                        "scrName": "#hash_26065d8a",
+                        "scrName": "#build_version",
                         "type": "STRING",
                         "len": 32
                     },
@@ -101,7 +101,7 @@
                     },
                     {
                         "name": "#source_version",
-                        "scrName": "#hash_a56621db",
+                        "scrName": "#source_version",
                         "type": "UINT16"
                     },
                     {
@@ -111,7 +111,7 @@
                     },
                     {
                         "name": "#changelist_number",
-                        "scrName": "#hash_e632366e",
+                        "scrName": "#changelist_number",
                         "type": "INT32"
                     }
                 ]
@@ -125,7 +125,7 @@
                 "members": [
                     {
                         "name": "#nat_type",
-                        "scrName": "#hash_38d77862",
+                        "scrName": "#nat_type",
                         "type": "UINT8"
                     },
                     {
@@ -154,18 +154,18 @@
                 "members": [
                     {
                         "name": "#user_id",
-                        "scrName": "#hash_fada396e",
+                        "scrName": "#user_id",
                         "type": "UINT64",
                         "s111u20": true
                     },
                     {
                         "name": "#lobby_id",
-                        "scrName": "#hash_41a8e579",
+                        "scrName": "#lobby_id",
                         "type": "UINT64"
                     },
                     {
                         "name": "#title_id",
-                        "scrName": "#hash_8f4c2b40",
+                        "scrName": "#title_id",
                         "type": "UINT32"
                     },
                     {
@@ -213,17 +213,17 @@
                 "members": [
                     {
                         "name": "#user_id",
-                        "scrName": "#hash_fada396e",
+                        "scrName": "#user_id",
                         "type": "UINT64"
                     },
                     {
                         "name": "#user_session_id",
-                        "scrName": "#hash_e004f74d",
+                        "scrName": "#user_session_id",
                         "type": "UINT64"
                     },
                     {
                         "name": "#uno_id",
-                        "scrName": "#hash_e7339473",
+                        "scrName": "#uno_id",
                         "type": "UINT64"
                     }
                 ]
@@ -241,8 +241,8 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_585f73b9a8dbaec2",
-                        "scrName": "#hash_21c90bb",
+                        "name": "#local_addr",
+                        "scrName": "#local_addr",
                         "type": "UINT32"
                     }
                 ]

@@ -8,7 +8,7 @@
     "name": "#infect",
     "nameRef": "#hash_17c31cf00061c818",
     "nameRefCaps": "#hash_39c833a7664e1d78",
-    "descriptionRef": "#hash_7f012c059c3614e",
+    "descriptionRef": "#mpui/infect_desc",
     "baseGameTypeHash": "#infect",
     "hardcoreNameRef": "#hash_3b8d3200633693e0",
     "presenceString": "#presence/infect",

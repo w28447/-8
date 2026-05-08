@@ -78,7 +78,7 @@ function event_handler[gametype_init] main( eventstruct )
     globallogic_spawn::addsupportedspawnpointtype( "tdm" );
     globallogic_audio::set_leader_gametype_dialog( "startInfect", "hcStartInfect", "infectOrdersOfs", "infectOrdersDef", "bbStartInfect", "hcbbStartInfect" );
     setdvar( #"g_allowlaststandforactiveclients", 1 );
-    setdvar( #"hash_7036719f41a78d54", 50 );
+    setdvar( #"player_laststandrevivehealth", 50 );
     
     if ( getdvarint( #"hash_5795d85dc4b1b0d9", 0 ) )
     {

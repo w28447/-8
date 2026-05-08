@@ -5,7 +5,7 @@
     "gesture2": "#boast_summer_boombox_fem",
     "bundle": {
         "type": "#gesture",
-        "title": "localized18#hash_6df10bc44b4914ff",
+        "title": "localized18#emotes/boombox",
         "icon": "image#ui_icon_emotes_summer_boombox",
         "isdefault": 0
     }

@@ -375,7 +375,7 @@ class cscene : cscriptbundlebase
     // Params 0
     // Checksum 0xdf32b210, Offset: 0x6b30
     // Size: 0xa
-    function function_2ba44cd0()
+    function get_current_shot()
     {
         return _str_shot;
     }

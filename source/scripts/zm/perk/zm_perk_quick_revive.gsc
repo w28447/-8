@@ -40,7 +40,7 @@ function enable_quick_revive_perk_for_level()
 {
     if ( function_8b1a219a() )
     {
-        zm_perks::register_perk_basic_info( #"specialty_quickrevive", #"perk_quick_revive", 2000, #"hash_1fe09aea69fefa7", getweapon( "zombie_perk_bottle_revive" ), getweapon( "zombie_perk_totem_quick_revive" ), #"zmperksquickrevive" );
+        zm_perks::register_perk_basic_info( #"specialty_quickrevive", #"perk_quick_revive", 2000, #"zombie/perk_quickrevive_keyboard", getweapon( "zombie_perk_bottle_revive" ), getweapon( "zombie_perk_totem_quick_revive" ), #"zmperksquickrevive" );
     }
     else
     {
@@ -61,9 +61,9 @@ function enable_quick_revive_perk_for_level()
 // Size: 0x10e
 function quick_revive_precache()
 {
-    if ( isdefined( level.var_88d522c3 ) )
+    if ( isdefined( level.quick_revive_precache_override_func ) )
     {
-        [[ level.var_88d522c3 ]]();
+        [[ level.quick_revive_precache_override_func ]]();
         return;
     }
     

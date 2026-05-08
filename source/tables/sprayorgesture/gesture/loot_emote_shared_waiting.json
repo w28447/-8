@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_shared_waiting",
+    "type": "#gesture",
+    "gesture": "#boast_waiting",
+    "gesture2": "#boast_waiting_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/waiting",
+        "icon": "image#ui_icon_emotes_waiting",
+        "isdefault": 0
+    }
+}

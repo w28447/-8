@@ -133,7 +133,7 @@ end
 CoD.PCBattlenetUtility.BattlenetPresenceToLocalizedString = function ( f10_arg0 )
 	local f10_local0 = tonumber( f10_arg0 )
 	if f10_local0 == Enum[0x8811A60F2FF3ADA][0xD7B6D45F00CF380] or f10_local0 == Enum[0x8811A60F2FF3ADA][0x1442D86F5EAE084] then
-		return 0x72BB745FED1CD7E
+		return "menu/offline"
 	elseif f10_local0 == Enum[0x8811A60F2FF3ADA][0xAF6B7B618097742] then
 		return 0x18674F2AD2F7E63
 	elseif f10_local0 == Enum[0x8811A60F2FF3ADA][0xEB39E1DBA4A0581] then
@@ -141,7 +141,7 @@ CoD.PCBattlenetUtility.BattlenetPresenceToLocalizedString = function ( f10_arg0 
 	elseif f10_local0 == Enum[0x8811A60F2FF3ADA][0xBDC39BBB7981F3] then
 		return 0x493C9E36F36FA5A
 	else
-		return 0x72BB745FED1CD7E
+		return "menu/offline"
 	end
 end
 

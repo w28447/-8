@@ -61,18 +61,18 @@
     "sound840": "#hash_7a5614b91f27d6ca",
     "tunables1": "#amws_gun_turret_mp_player_tunables",
     "tracers": [
-        "#hash_69c57b0ea0f6351a",
+        "#amws_bullet",
         "#hash_51f6453b67bab6bd"
     ],
     "reticleCenter": "#hud_rts_mech_reticle",
     "inventoryIconZm": "#hud_hind_minigun",
     "image_e90": "#t7_hud_obit_drone_amws",
-    "fireRumble": "#hash_71b767f810fb1593",
+    "fireRumble": "#ac130_40mm_fire",
     "laser_e30": "#default_laser",
-    "fx_bc8": "#hash_7fb42895177789b2",
-    "fx_bd0": "#hash_7fae1c95177309a0",
-    "normalImpactFX": "#hash_146d30ee171ae16a",
-    "exitImpactFX": "#hash_3f7991ca1680bd5c",
+    "fx_bc8": "#killstreaks/fx_agr_gun_flash_1p",
+    "fx_bd0": "#killstreaks/fx_agr_gun_flash_3p",
+    "normalImpactFX": "#bullet_ap_enter",
+    "exitImpactFX": "#bullet_ap_exit",
     "normalImpactSounds": "#bullet_impact",
     "exitImpactSounds": "#hash_d0191cc37bfbfeea"
 }

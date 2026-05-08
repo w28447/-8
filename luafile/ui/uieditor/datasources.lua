@@ -1051,7 +1051,7 @@ DataSources.GameSettingsTabs = ListHelper_SetupDataSource( "GameSettingsTabs", f
 		} )
 		table.insert( f95_local0, {
 			models = {
-				tabName = 0xA4C0D40C8DBA6EB,
+				tabName = "menu/enemies_caps",
 				tabWidget = "CoD.GameSettings_ZMEnemies",
 				tabIcon = ""
 			},
@@ -1061,7 +1061,7 @@ DataSources.GameSettingsTabs = ListHelper_SetupDataSource( "GameSettingsTabs", f
 		} )
 		table.insert( f95_local0, {
 			models = {
-				tabName = 0x89CF1420A8398FE,
+				tabName = "menu/player_caps",
 				tabWidget = "CoD.GameSettings_ZMPlayer",
 				tabIcon = ""
 			},
@@ -5548,7 +5548,7 @@ DataSources.CombatRecordMPMedal2 = {
 	getModel = function ( f306_arg0 )
 		local f306_local0 = Engine.CreateModel( Engine.GetModelForController( f306_arg0 ), "CombatRecordMedal2" )
 		local f306_local1 = {
-			0x239595BA030E555,
+			"medal/killstreak_more_than_30",
 			0x7A87301EB8EB5D7,
 			0x7A57201EB8C7E4D,
 			0x7A56D01EB8C75CE,
@@ -5588,13 +5588,13 @@ DataSources.CombatRecordMPMedal3 = {
 		local f307_local0 = Engine.CreateModel( Engine.GetModelForController( f307_arg0 ), "CombatRecordMedal3" )
 		local f307_local1 = {
 			0x69C9B1E2C17AF47,
-			0xA099193BA2C714D,
-			0xA098293BA2C57D0,
-			0xA098393BA2C5983,
-			0xA098493BA2C5B36,
-			0xA098593BA2C5CE9,
-			0xA098693BA2C5E9C,
-			0xA098793BA2C604F
+			"medal/multikill_8",
+			"medal/multikill_7",
+			"medal/multikill_6",
+			"medal/multikill_5",
+			"medal/multikill_4",
+			"medal/multikill_3",
+			"medal/multikill_2"
 		}
 		local f307_local2 = Engine.StorageGetBuffer( f307_arg0, Enum.StorageFileType[0xFDE358A242AFA2C] )
 		local f307_local3, f307_local4, f307_local5, f307_local6 = nil
@@ -5627,15 +5627,15 @@ DataSources.CombatRecordMPMedal4 = {
 	getModel = function ( f308_arg0 )
 		local f308_local0 = Engine.CreateModel( Engine.GetModelForController( f308_arg0 ), "CombatRecordMedal4" )
 		local f308_local1 = {
-			0xD59FE23D6E96AFA,
-			0x947050E1A845310,
-			0xD98B33575011259,
-			0x738A6BCB924C165,
-			0x38BA6835F80D489,
-			0x98E95D5B879B8C4,
-			0x8F9898F2C7D8D8B,
-			0x434F3CC6EC87FA2,
-			0xF6C6B0815D2CD9F
+			"medal/annihilator_multikill",
+			"medal/armblades_multikill",
+			"medal/bowlauncher_multikill",
+			"medal/flamethrower_multikill",
+			"medal/gelgun_multikill",
+			"medal/gravityspikes_multikill",
+			"medal/lightninggun_multikill",
+			"medal/minigun_multikill",
+			"medal/pineapple_multikill"
 		}
 		local f308_local2 = Engine.StorageGetBuffer( f308_arg0, Enum.StorageFileType[0xFDE358A242AFA2C] )
 		local f308_local3 = nil
@@ -5669,15 +5669,15 @@ DataSources.CombatRecordMPMedal5 = {
 	getModel = function ( f309_arg0 )
 		local f309_local0 = Engine.CreateModel( Engine.GetModelForController( f309_arg0 ), "CombatRecordMedal5" )
 		local f309_local1 = {
-			0x9C37154A6593727,
+			"medal/flashback_kill",
 			0x9B8CB21838CA370,
 			0x9E7BD82D6C0D95D,
-			0xB38CF0C4CD611B3,
+			"medal/heatwave_kill",
 			0x7E3DB533331A9A5,
 			0x687A5EC84083FAB,
 			0x825EF109D54B85E,
 			0xE463A2AE1F8B84C,
-			0x77C5EA085D8A5A7,
+			"medal/resurrrect_kill",
 			0xE61853AFD407D62,
 			0xB7E7BB92BBD6DB0
 		}
@@ -11075,7 +11075,7 @@ DataSources.LoadingScreenTeamInfo = {
 					Engine.SetModelValue( f589_local16, f589_local45 )
 					Engine.SetModelValue( f589_local17, f589_local35 )
 					Engine.SetModelValue( f589_local18, f589_local36 )
-					Engine.SetModelValue( f589_local19, 0x9F34F3A8BD173F7 )
+					Engine.SetModelValue( f589_local19, "aar/wl_ratio" )
 					f589_local26 = true
 				end
 			end

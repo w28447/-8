@@ -38,7 +38,7 @@
     "tunables2": "#hash_25c18ccd09e9cc",
     "tracers": [
         "#qrdrone",
-        "#hash_5beeacad5e9f6fb7"
+        "#qrdrone_enemy"
     ],
     "projectilemodel": "#projectile_t7_drone_amws_missile",
     "gadgetIconAvailable": "#t7_hud_ks_drone_dart",
@@ -47,9 +47,9 @@
     "fireRumble": "#smg_fire",
     "fx_bc8": "#weapon/fx_muz_md_rifle_1p",
     "fx_bd0": "#weapon/fx_muz_md_rifle_3p",
-    "fx_ed8": "#hash_68a68f1311f7ae8",
-    "fx_f00": "#hash_2478f710ca1b1ed6",
-    "normalImpactFX": "#hash_5869995e45178a75",
-    "exitImpactFX": "#hash_69050d7b3430366e",
+    "fx_ed8": "#killstreaks/fx_dart_death_exp",
+    "fx_f00": "#weapon/fx_trail_rocket_wasp",
+    "normalImpactFX": "#agr_explosion",
+    "exitImpactFX": "#grenade_exit",
     "normalImpactSounds": "#hash_e8e0a97bbbf0b555"
 }

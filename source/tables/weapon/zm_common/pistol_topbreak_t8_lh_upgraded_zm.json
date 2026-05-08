@@ -71,7 +71,7 @@
     "weaponCamo": "#hash_3d696a3142afc98b",
     "cacWeaponXCam": "#ui_cam_cac_pistol_topbreak",
     "cacAttachmentsXCam": "#ui_cam_cac_pistol_topbreak",
-    "weaponIconXCam": "#hash_16d2791a641b8f64",
+    "weaponIconXCam": "#ui_cam_icon_pistol_shotgun",
     "attachments": [
         "#hash_f459a0af8e8f912b"
     ],
@@ -95,7 +95,7 @@
     "fx_bd0": "#hash_59dcccd22b7d037e",
     "fx_f00": "#hash_80e7395fb42d35f6",
     "normalImpactFX": "#hash_c80a3191309d3449",
-    "exitImpactFX": "#hash_69050d7b3430366e",
+    "exitImpactFX": "#grenade_exit",
     "bounceImpactFX": "#grenade_bounce",
     "dudImpactFX": "#grenade_dud",
     "normalImpactSounds": "#bullet_impact",

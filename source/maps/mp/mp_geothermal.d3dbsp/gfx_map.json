@@ -2,7 +2,7 @@
     "name": "#maps/mp/mp_geothermal.d3dbsp",
     "baseName": "mp_geothermal",
     "lutMaterial": "#lut_mp_geothermal",
-    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "volumeDecalRevealTexture": "#vdreveal",
     "unk550": [
         "#img_trim_lut_geothermal",
         "#img_trim_lut_geothermal",

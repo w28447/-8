@@ -386,7 +386,7 @@ function function_2def6c82()
 // Size: 0x37a
 function function_6a1500f1()
 {
-    level endon( #"hash_40cd2e6f2c496d75" );
+    level endon( #"disable_lightning_fx" );
     self endon( #"disconnect" );
     a_bad_zones = [];
     a_bad_zones[ 0 ] = "zone_model_industries";

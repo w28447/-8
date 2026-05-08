@@ -220,7 +220,7 @@ soundalias,#hash_21d849eee4d897a
 soundalias,#hash_238170c19d279f5
 soundalias,#hash_2904437d186593d
 soundalias,#hash_31f777916298d72
-soundalias,#hash_38c96854fb0017e
+soundalias,#dst_typewriter
 soundalias,#hash_419e84642ebe554
 soundalias,#hash_509a120b1b87e66
 soundalias,#hash_55faa40126d5c75
@@ -254,13 +254,13 @@ soundalias,#hash_119cbc5688034667
 soundalias,#hash_119cbe56880349cd
 soundalias,#hash_127c91df9b564016
 soundalias,#hash_12b24433ad0bb1f0
-soundalias,#hash_13299213632e598a
+soundalias,#amb_reactor
 soundalias,#hash_1358357952f89d8d
 soundalias,#hash_14e6aa140485ba14
 soundalias,#evt_laser_ready
 soundalias,#hash_16bfc231cf77bd00
 soundalias,#hash_173f086ca3d29859
-soundalias,#hash_179f3eb184c245d2
+soundalias,#amb_ocean
 soundalias,#hash_17a2bd5989aff105
 soundalias,#hash_17b03792068cf144
 soundalias,#hash_1a4781352d6acb5a
@@ -340,7 +340,7 @@ soundalias,#amb_boat_creak
 soundalias,#hash_436a4f77c54e7912
 soundalias,#hash_438b930b61d96f77
 soundalias,#hash_438dac17f69b90a2
-soundalias,#hash_43ad48046fb206c8
+soundalias,#exp_veh_small
 soundalias,#hash_44069d90346db0b3
 soundalias,#hash_456af38afaef9d77
 soundalias,#hash_456af98afaefa7a9
@@ -348,7 +348,7 @@ soundalias,#hash_46a4ea662ef233d7
 soundalias,#hash_47a7dd1007c11019
 soundalias,#exp_veh_large
 soundalias,#hash_48a21defffffa674
-soundalias,#hash_48bc31e222aa7c3e
+soundalias,#exp_barrel_fire
 soundalias,#hash_499a124f56b6f71b
 soundalias,#hash_4a2a5fc5e2c79038
 soundalias,#hash_4a9fb6e1d5d277b9
@@ -364,7 +364,7 @@ soundalias,#hash_4d4bbcb801a0dda9
 soundalias,#hash_4ec5a3e02263fc0e
 soundalias,#evt_elevator_move
 soundalias,#hash_4f8c480d8e8f07b6
-soundalias,#hash_501eff91f639c23e
+soundalias,#dst_glass_pane
 soundalias,#hash_50949a49ca8d2f9c
 soundalias,#hash_50d2203fbc7d7dd9
 soundalias,#hash_514c97cafe0ab784
@@ -399,9 +399,9 @@ soundalias,#hash_60c935d4c50a3d7d
 soundalias,#hash_611cf05302c14dc5
 soundalias,#hash_6237abae59de3cd8
 soundalias,#hash_6237aeae59de41f1
-soundalias,#hash_6282b08e3d0e89ab
+soundalias,#amb_server_room
 soundalias,#hash_62e8597c378060f0
-soundalias,#hash_633b9532cf0da169
+soundalias,#amb_flies
 soundalias,#amb_water_lap
 soundalias,#evt_elevator_button_bell
 soundalias,#hash_65337304c8c7b0cd
@@ -417,7 +417,7 @@ soundalias,#hash_68d360aa565ed76a
 soundalias,#hash_68d529ce159011b5
 soundalias,#hash_694aaf72eca0e4dc
 soundalias,#hash_69f9f3e122dbb898
-soundalias,#hash_6a7bbff93ccc7ab7
+soundalias,#dst_luggage
 soundalias,#hash_6abe483482efa584
 soundalias,#hash_6b0e603bafc1545a
 soundalias,#hash_6c5be5a0764e1e3c
@@ -439,7 +439,7 @@ soundalias,#hash_7809ea482909306c
 soundalias,#hash_79014a0f238007af
 soundalias,#hash_79016fcf9ea32c4f
 soundalias,#hash_79041053f1a7e71c
-soundalias,#hash_79c2463acff19d72
+soundalias,#amb_lava
 soundalias,#hash_79e7070c3130f4a9
 soundalias,#exp_veh_plane_spinout_lp
 soundalias,#hash_7ac5fa6568de2461

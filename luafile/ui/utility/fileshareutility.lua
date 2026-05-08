@@ -918,7 +918,7 @@ CoD.FileshareUtility.SetupFileShareSummary_MP = function ( f69_arg0, f69_arg1, f
 	end
 	CoD.FileshareUtility.SetFileshareSummaryItem( f69_arg0, "gameResultText", f69_local15 )
 	CoD.FileshareUtility.SetFileshareSummaryItem( f69_arg0, "gameResultColor", CoD.ColorUtility.ConvertColor( f69_local16.r, f69_local16.g, f69_local16.b ) )
-	CoD.FileshareUtility.SetFileshareSummaryItem( f69_arg0, "column1Header", Engine[0xF9F1239CFD921FE]( 0x6B234CB46B5ACD4 ) )
+	CoD.FileshareUtility.SetFileshareSummaryItem( f69_arg0, "column1Header", Engine[0xF9F1239CFD921FE]( "menu/kills_caps" ) )
 	CoD.FileshareUtility.SetFileshareSummaryItem( f69_arg0, "column1Value", f69_local11 )
 	CoD.FileshareUtility.SetFileshareSummaryItem( f69_arg0, "column2Header", Engine[0xF9F1239CFD921FE]( 0x297A0D6FB981600 ) )
 	CoD.FileshareUtility.SetFileshareSummaryItem( f69_arg0, "column2Value", f69_local12 )

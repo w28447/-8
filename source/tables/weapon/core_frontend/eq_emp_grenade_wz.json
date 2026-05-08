@@ -36,7 +36,7 @@
     "sound660": "#uin_unavailable_charging",
     "projexplosionsound": "#hash_c43da47bc8c8796",
     "tunables1": "#eq_emp_grenade_tunables_wz",
-    "cacWeaponXCam": "#hash_1195ce6744d0272f",
+    "cacWeaponXCam": "#ui_cam_cac_equip_emp",
     "sharedWeaponSounds": "#equipment",
     "customsettings": "#emp_grenade_custom_settings_wz",
     "#hash_8456d4d": "#damageeffecttype_flash",

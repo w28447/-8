@@ -43,9 +43,9 @@
     "sound250": "#hash_55a9361a61a0ccad",
     "tunables1": "#special_ballisticknife_t8_dw_tunables_mp",
     "weaponCamo": "#hash_1389711caf25c0a3",
-    "cacWeaponXCam": "#hash_19fb93b830d11f2f",
-    "cacAttachmentsXCam": "#hash_19fb93b830d11f2f",
-    "weaponIconXCam": "#hash_1edc72d827661247",
+    "cacWeaponXCam": "#ui_cam_cac_special_knife",
+    "cacAttachmentsXCam": "#ui_cam_cac_special_knife",
+    "weaponIconXCam": "#ui_cam_icon_special_knife",
     "attachments": [
         "#hash_f459a0af8e8f912b"
     ],
@@ -71,7 +71,7 @@
     "fx_bc8": "#hash_3e3caddc73aa8167",
     "fx_bd0": "#hash_3e35a1dc73a44e55",
     "fx_f00": "#hash_5fdd021d80dd8fc6",
-    "normalImpactFX": "#hash_25f3e55b8e1070ab",
-    "bounceImpactFX": "#hash_61b4c700060ee40c",
-    "bounceImpactSounds": "#hash_29ab4424affe55ad"
+    "normalImpactFX": "#knife_large_enter",
+    "bounceImpactFX": "#bullet_small_enter",
+    "bounceImpactSounds": "#hatchet_bounce"
 }

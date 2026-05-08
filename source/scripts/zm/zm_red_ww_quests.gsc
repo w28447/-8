@@ -2982,13 +2982,13 @@ function function_85a789f1()
 function function_65d82d13()
 {
     var_2e8223db = util::spawn_model( "tag_origin", ( -647.5, -615, 328 ) );
-    var_2e8223db clientfield::set( "" + #"hash_21f5fab6a3d22093", 4 );
+    var_2e8223db clientfield::set( "" + #"tribute_flame_fx", 4 );
     var_2e8223db moveto( ( -647, -615.5, 266.5 ), 1 );
     
     for ( i = 0; i < 4 ; i++ )
     {
         mdl_temp = util::spawn_model( "tag_origin", var_2e8223db.origin );
-        mdl_temp clientfield::set( "" + #"hash_21f5fab6a3d22093", 4 );
+        mdl_temp clientfield::set( "" + #"tribute_flame_fx", 4 );
         wait 0.25;
     }
     
@@ -2997,7 +2997,7 @@ function function_65d82d13()
     for ( i = 0; i < 3 ; i++ )
     {
         mdl_temp = util::spawn_model( "tag_origin", var_2e8223db.origin );
-        mdl_temp clientfield::set( "" + #"hash_21f5fab6a3d22093", 4 );
+        mdl_temp clientfield::set( "" + #"tribute_flame_fx", 4 );
         wait 0.25;
     }
     
@@ -3007,7 +3007,7 @@ function function_65d82d13()
     for ( i = 0; i < 4 ; i++ )
     {
         mdl_temp = util::spawn_model( "tag_origin", var_2e8223db.origin );
-        mdl_temp clientfield::set( "" + #"hash_21f5fab6a3d22093", 2 );
+        mdl_temp clientfield::set( "" + #"tribute_flame_fx", 2 );
         wait 0.25;
     }
     
@@ -3017,7 +3017,7 @@ function function_65d82d13()
     for ( i = 0; i < 4 ; i++ )
     {
         mdl_temp = util::spawn_model( "tag_origin", var_2e8223db.origin );
-        mdl_temp clientfield::set( "" + #"hash_21f5fab6a3d22093", 2 );
+        mdl_temp clientfield::set( "" + #"tribute_flame_fx", 2 );
         wait 0.25;
     }
     
@@ -3027,7 +3027,7 @@ function function_65d82d13()
     for ( i = 0; i < 4 ; i++ )
     {
         mdl_temp = util::spawn_model( "tag_origin", var_2e8223db.origin );
-        mdl_temp clientfield::set( "" + #"hash_21f5fab6a3d22093", 2 );
+        mdl_temp clientfield::set( "" + #"tribute_flame_fx", 2 );
         wait 0.25;
     }
     
@@ -3037,7 +3037,7 @@ function function_65d82d13()
     for ( i = 0; i < 4 ; i++ )
     {
         mdl_temp = util::spawn_model( "tag_origin", var_2e8223db.origin );
-        mdl_temp clientfield::set( "" + #"hash_21f5fab6a3d22093", 2 );
+        mdl_temp clientfield::set( "" + #"tribute_flame_fx", 2 );
         wait 0.25;
     }
     
@@ -3049,7 +3049,7 @@ function function_65d82d13()
     for ( i = 0; i < 4 ; i++ )
     {
         mdl_temp = util::spawn_model( "tag_origin", var_786815c.origin );
-        mdl_temp clientfield::set( "" + #"hash_21f5fab6a3d22093", 3 );
+        mdl_temp clientfield::set( "" + #"tribute_flame_fx", 3 );
         wait 0.1;
     }
     
@@ -3059,7 +3059,7 @@ function function_65d82d13()
     for ( i = 0; i < 4 ; i++ )
     {
         mdl_temp = util::spawn_model( "tag_origin", var_786815c.origin );
-        mdl_temp clientfield::set( "" + #"hash_21f5fab6a3d22093", 3 );
+        mdl_temp clientfield::set( "" + #"tribute_flame_fx", 3 );
         wait 0.1;
     }
     
@@ -3069,7 +3069,7 @@ function function_65d82d13()
     for ( i = 0; i < 4 ; i++ )
     {
         mdl_temp = util::spawn_model( "tag_origin", var_786815c.origin );
-        mdl_temp clientfield::set( "" + #"hash_21f5fab6a3d22093", 3 );
+        mdl_temp clientfield::set( "" + #"tribute_flame_fx", 3 );
         wait 0.1;
     }
     
@@ -3079,7 +3079,7 @@ function function_65d82d13()
     for ( i = 0; i < 4 ; i++ )
     {
         mdl_temp = util::spawn_model( "tag_origin", var_786815c.origin );
-        mdl_temp clientfield::set( "" + #"hash_21f5fab6a3d22093", 3 );
+        mdl_temp clientfield::set( "" + #"tribute_flame_fx", 3 );
         wait 0.1;
     }
 }
@@ -3577,12 +3577,12 @@ function function_381519d9( var_8290a028, mdl_feather, n_max_height, s_original 
     {
         s_result = level waittill( #"ww_ouranos_hit" );
         e_player = s_result.player;
-        var_2ed6f142 = e_player getweaponmuzzlepoint();
+        v_view_pos = e_player getweaponmuzzlepoint();
         var_16d329c7 = e_player getweaponforwarddir();
-        v_end_pos = var_2ed6f142 + vectorscale( var_16d329c7, 3000 );
-        a_beamtrace = bullettrace( var_2ed6f142, v_end_pos, 0, e_player );
+        v_end_pos = v_view_pos + vectorscale( var_16d329c7, 3000 );
+        a_beamtrace = bullettrace( v_view_pos, v_end_pos, 0, e_player );
         var_74238e2c = out_of_range_lp_ * out_of_range_lp_;
-        var_1dc736c5 = pointonsegmentnearesttopoint( var_2ed6f142, v_end_pos, var_8290a028.origin );
+        var_1dc736c5 = pointonsegmentnearesttopoint( v_view_pos, v_end_pos, var_8290a028.origin );
         n_dist = distancesquared( var_8290a028.origin, var_1dc736c5 );
         
         if ( n_dist <= var_74238e2c )
@@ -3593,7 +3593,7 @@ function function_381519d9( var_8290a028, mdl_feather, n_max_height, s_original 
         waitframe( 1 );
     }
     
-    n_dist_to_target = distance2d( var_2ed6f142, var_8290a028.origin );
+    n_dist_to_target = distance2d( v_view_pos, var_8290a028.origin );
     n_time = n_dist_to_target / 1500;
     
     if ( n_time >= 0.1 )
@@ -4310,13 +4310,13 @@ function function_74337491()
 // Params 2
 // Checksum 0x7e6a11f0, Offset: 0x114d8
 // Size: 0xbc
-function pause_zombies( b_pause = 0, var_53458a86 = 1 )
+function pause_zombies( b_pause = 0, b_screen_flash = 1 )
 {
     if ( b_pause )
     {
         level.disable_nuke_delay_spawning = 1;
         level flag::clear( "spawn_zombies" );
-        level zm_utility::function_9ad5aeb1( 1, 1, 0, var_53458a86, 0 );
+        level zm_utility::function_9ad5aeb1( 1, 1, 0, b_screen_flash, 0 );
         return;
     }
     
@@ -4905,12 +4905,12 @@ function function_aeaedb3c()
         {
             if ( isdefined( self.var_b4f85096 ) && self.var_b4f85096 )
             {
-                var_2ed6f142 = self getweaponmuzzlepoint();
+                v_view_pos = self getweaponmuzzlepoint();
                 var_16d329c7 = self getweaponforwarddir();
-                v_end_pos = var_2ed6f142 + vectorscale( var_16d329c7, 3000 );
-                a_beamtrace = bullettrace( var_2ed6f142, v_end_pos, 0, self );
+                v_end_pos = v_view_pos + vectorscale( var_16d329c7, 3000 );
+                a_beamtrace = bullettrace( v_view_pos, v_end_pos, 0, self );
                 var_74238e2c = 50 * 50;
-                var_1dc736c5 = pointonsegmentnearesttopoint( var_2ed6f142, v_end_pos, s_tall_brazier.origin );
+                var_1dc736c5 = pointonsegmentnearesttopoint( v_view_pos, v_end_pos, s_tall_brazier.origin );
                 n_dist = distancesquared( s_tall_brazier.origin, var_1dc736c5 );
                 
                 if ( n_dist <= var_74238e2c && var_1dc736c5[ 2 ] > s_tall_brazier.origin[ 2 ] )

@@ -71,8 +71,8 @@
     "tunables1": "#hero_flamethrower_t8_lv2_tunables_zm",
     "cacWeaponXCam": "#hash_db5c34f7d9e1861",
     "sharedWeaponSounds": "#hash_3a2265757f78be8c",
-    "flameTableFirstPerson": "#hash_7c9e63bac4fc46ba",
-    "flameTableThirdPerson": "#hash_6efa585a41207471",
+    "flameTableFirstPerson": "#default_flame_firstperson",
+    "flameTableThirdPerson": "#default_flame_thirdperson",
     "statusEffects": [
         {
             "effect": "#dot_purifier",
@@ -107,7 +107,7 @@
     "fireRumble": "#flamethrower",
     "beam_e58": "#flamethrower_beam",
     "beam_e60": "#flamethrower_beam_3p",
-    "beam_e68": "#hash_ecdf74613c27651",
-    "beam_e70": "#hash_2e4d796fdefb28b5",
+    "beam_e68": "#flamethrower_beam_underwater",
+    "beam_e70": "#flamethrower_beam_3p_underwater",
     "fx_be0": "#hash_2e23855e7c53a525"
 }

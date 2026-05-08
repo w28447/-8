@@ -113,9 +113,9 @@
     "fx_c98": "#hash_83613e307817774e",
     "fx_f00": "#hash_611c104f1f9c8dbc",
     "normalImpactFX": "#hash_11a47eea24a8f26",
-    "exitImpactFX": "#hash_56ef4fc6c00cc18e",
+    "exitImpactFX": "#bullet_large_exit",
     "bounceImpactFX": "#hash_11a47eea24a8f26",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_50191cc37bfbfeea",
+    "exitImpactSounds": "#bullet_exit",
     "bounceImpactSounds": "#hash_415fba9edcdfd2e4"
 }

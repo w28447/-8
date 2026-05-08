@@ -989,7 +989,7 @@ class csceneobject
         var_2a3b0294 = ( isdefined( var_55b4f21e.var_922b4fc5 ) ? var_55b4f21e.var_922b4fc5 : 0, isdefined( var_55b4f21e.var_3e692842 ) ? var_55b4f21e.var_3e692842 : 0, isdefined( var_55b4f21e.var_be60a82b ) ? var_55b4f21e.var_be60a82b : 0 );
         var_f3bd6699 = ( isdefined( var_55b4f21e.var_16999a5d ) ? var_55b4f21e.var_16999a5d : 0, isdefined( var_55b4f21e.var_29563fd6 ) ? var_55b4f21e.var_29563fd6 : 0, isdefined( var_55b4f21e.var_eb00c330 ) ? var_55b4f21e.var_eb00c330 : 0 );
         
-        if ( isdefined( _o_scene._s.var_6a17a93d ) && _o_scene._s.var_6a17a93d )
+        if ( isdefined( _o_scene._s.additiveoffsets ) && _o_scene._s.additiveoffsets )
         {
             var_d3c21d73 = var_2dd2901f + var_2a3b0294 + var_24a7cd13;
             v_ang_offset = var_acf1be3a + var_f3bd6699 + var_75cdf4bd;
@@ -1588,7 +1588,7 @@ class csceneobject
             var_520e99b5 = s_shot.damagethreshold;
         }
         
-        if ( !( isdefined( _s.var_a1c5c678 ) && _s.var_a1c5c678 ) )
+        if ( !( isdefined( _s.disablehitmarker ) && _s.disablehitmarker ) )
         {
             b_dead = var_f2059ab8 <= 0;
             var_37fa9b04.attacker util::show_hit_marker( b_dead );
@@ -1663,7 +1663,7 @@ class csceneobject
             }
         }
         
-        if ( isdefined( _s.var_2baad8fc ) && _s.var_2baad8fc )
+        if ( isdefined( _s.makesentienttarget ) && _s.makesentienttarget )
         {
             _e util::function_5d36c37a();
         }
@@ -2374,7 +2374,7 @@ class csceneobject
             }
         }
         
-        if ( isdefined( _s.var_d318cc2c ) && _s.var_d318cc2c )
+        if ( isdefined( _s.stopsceneondeath ) && _s.stopsceneondeath )
         {
             if ( isdefined( _o_scene._e_root ) && isdefined( _o_scene._e_root.scene_played ) )
             {
@@ -5270,8 +5270,8 @@ class cscene
         _str_name = str_scenedef;
         _b_testing = b_test_run;
         _str_team = util::get_team_mapping( _s.team );
-        _a_streamer_hint[ #"allies" ] = isdefined( _s.var_a6da2039 ) ? _s.var_a6da2039 : _s.streamerhintteama;
-        _a_streamer_hint[ #"axis" ] = isdefined( _s.var_991a84ba ) ? _s.var_991a84ba : _s.streamerhintteamb;
+        _a_streamer_hint[ #"allies" ] = isdefined( _s.streamerhintsidea ) ? _s.streamerhintsidea : _s.streamerhintteama;
+        _a_streamer_hint[ #"axis" ] = isdefined( _s.streamerhintsideb ) ? _s.streamerhintsideb : _s.streamerhintteamb;
         _str_notify_name = isstring( _s.malebundle ) || ishash( _s.malebundle ) ? _s.malebundle : _str_name;
         
         if ( !isdefined( a_ents ) )

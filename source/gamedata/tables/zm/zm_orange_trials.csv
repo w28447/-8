@@ -15,8 +15,8 @@
 13,#toss_up,7#hash_509c237dd61a1529,7#hash_2a88e974fda8ab23,7#,#kills_with_flinger,#15,#25,#35,#50,#,#,#,#
 14,#hash_3a07efaa19ef7fc7,7#hash_509c247dd61a16dc,7#hash_4d2064193f627324,7#,#flag_check,#hash_4e33fc3d32735214,#hash_2965a935caf13052,#,#,#,#,#,#
 15,#hash_39293de37586605c,7#hash_509c257dd61a188f,7#hash_5fca199af03b1501,7#,#defend_area,#s_destination_crevasse,#hash_43dabbb2b40e3d09,#hash_629d5fe4a75781c8,#frozen_crevasse,#,#,#,#
-16,#hash_3ede6504593c0fdd,7#hash_509c267dd61a1a42,7#hash_642160b2ebf55dd2,7#,#restrict_loadout,#hash_44dcc4dbf2ce47de,#,#,#,#,#,#,#
-17,#hash_4e124a5e2fc8c920,7#hash_509c277dd61a1bf5,7#hash_282b1c9acf3429df,7#,#upgrade_multiple,#2,#4,#,#,#,#,#,#
+16,#steady_aim,7#hash_509c267dd61a1a42,7#hash_642160b2ebf55dd2,7#,#restrict_loadout,#hash_44dcc4dbf2ce47de,#,#,#,#,#,#,#
+17,#gilded_rage,7#hash_509c277dd61a1bf5,7#hash_282b1c9acf3429df,7#,#upgrade_multiple,#2,#4,#,#,#,#,#,#
 18,#hash_6eacb0aaeb22666,7#hash_509c287dd61a1da8,7#hash_2d5b3e718f0d39f0,7#,#flag_check,#hash_701aa76674161d36,#hash_298f465469b5e458,#,#,#,#,#,#
 19,#hash_760971fc801fca60,7#hash_509c297dd61a1f5b,7#hash_fb402ff44f08e0d,7#,#special_enemy,#zombie_dog,#40,#80,#,#,#,#,#
 19,#,7#,7#,7#,#restrict_loadout,#snowballs,#,#,#,#,#,#,#
@@ -29,7 +29,7 @@
 25,#hash_437164f31271f9d2,7#hash_50a6357dd6228844,7#hash_1431bdde60bbe56c,7#,#defend_area,#s_destination_forecastle,#hash_14d1d9ee53a85901,#hash_5d0d048a32c96ad8,#forecastle,#,#,#,#
 26,#hash_fc3b6678dd03c0f,7#hash_50a6387dd6228d5d,7#hash_41bdafe80992b867,7#,#flag_check,#hash_5b3ea84b9db5af50,#hash_b98a1f80d904fb2,#,#,#,#,#,#
 27,#hash_398e3f74349000ae,7#hash_50a6377dd6228baa,7#hash_50558b5bb603d49a,7#,#restrict_loadout,#hash_1dd9431fbe7472b7,#,#,#,#,#,#,#
-28,#hash_41f0680f844f1967,7#hash_50a62a7dd6227593,7#hash_71df11dbf2e35745,7#,#defend_area,#s_destination_beach,#hash_2936406873b0946e,#hash_4503e3e5bbc2e509,#beach,#,#,#,#
-29,#hash_2c8586907ae79f2,7#hash_50a6297dd62273e0,7#hash_6339a2cd4107c7a8,7#,#hash_5124770c13a75bab,#health,#5,#,#,#,#,#,#
+28,#bloody_mess,7#hash_50a62a7dd6227593,7#hash_71df11dbf2e35745,7#,#defend_area,#s_destination_beach,#hash_2936406873b0946e,#hash_4503e3e5bbc2e509,#beach,#,#,#,#
+29,#molten_mayhem,7#hash_50a6297dd62273e0,7#hash_6339a2cd4107c7a8,7#,#hash_5124770c13a75bab,#health,#5,#,#,#,#,#,#
 30,#hash_37928bcde5f0c4ea,7#hash_50a2ac7dd61f69a2,7#hash_74b00507470ca672,7#,#defend_area,#s_destination_infusion,#hash_5e2f764ee170b70,#hash_16752aa6ec4b6715,#human_infusion,#,#,#,#
 30,#,7#,7#,7#,#give_reward,#fastest_time_to_complete_round_30,#hash_f60cd1936dfe2ae,#uie_trial_medal_gold,#hash_2d17e37ec186e78a,#hash_5fb724d439b8956,#1,#,#

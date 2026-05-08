@@ -3,7 +3,7 @@
     "baseWeapon": "#frag_grenade",
     "displayname": "#weapon/fraggrenade",
     "weapon70": "#frag_grenade",
-    "streamkey": "#hash_1defa04013731ce6",
+    "streamkey": "#frag_grenade_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",

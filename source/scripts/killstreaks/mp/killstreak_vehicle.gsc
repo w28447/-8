@@ -379,7 +379,7 @@ function watch_exit()
         
         while ( vehicle.owner usebuttonpressed() )
         {
-            timeused += level.var_9fee970c;
+            timeused += level.framemsec;
             
             if ( timeused >= 250 )
             {

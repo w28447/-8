@@ -51,8 +51,8 @@
 #hash_4c1c89c4dd09c6db,#item_shop,6042290,400,9042290,12,25,50,2
 #hash_53e2ef3b00c546d5,#loot_stream,5964591,300,8964591,5,25,50,1
 #hash_53e2ef3b00c546d5,#loot_stream,6964591,300,9964591,3,25,50,2
-#hash_3dbdc54aae236b01,#item_shop,5400699,300,8400699,5,25,50,1
-#hash_3dbdc54aae236b01,#item_shop,6400699,300,9400699,3,25,50,2
+#loot_emote_exotic_shared_juggling,#item_shop,5400699,300,8400699,5,25,50,1
+#loot_emote_exotic_shared_juggling,#item_shop,6400699,300,9400699,3,25,50,2
 #loot_emote_exotic_shared_lunchtime,#loot_stream,5810998,300,8810998,5,25,50,1
 #loot_emote_exotic_shared_lunchtime,#loot_stream,6810998,300,9810998,3,25,50,2
 #loot_emote_exotic_shared_magician_hat,#item_shop,5592250,300,8592250,5,25,50,1

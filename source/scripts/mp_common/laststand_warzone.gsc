@@ -62,7 +62,7 @@ function __init__()
     level.var_e273f858 = getweapon( #"notdowned" );
     level.weaponrevivetool = getweapon( "syrette" );
     level.var_e86679bd = [];
-    level.var_91c33dcb = getscriptbundle( #"finishers" );
+    level.finishers_list = getscriptbundle( #"finishers" );
     
     if ( !isdefined( getdvar( #"revive_trigger_radius" ) ) )
     {
@@ -137,7 +137,7 @@ function on_player_damage( params )
     {
         if ( isdefined( self.reviving_player ) && isdefined( self.reviving_player.var_d75a6ff5 ) )
         {
-            self.reviving_player.var_d75a6ff5.var_d733f8d7 += params.idamage;
+            self.reviving_player.var_d75a6ff5.reviver_damage += params.idamage;
             
             if ( self.health <= params.idamage )
             {
@@ -955,7 +955,7 @@ function laststand_bleedout_damage()
         else
         {
             damagefrac = waitresult.idamage / self.var_969fabf4;
-            damagetime = self.var_84c0402e * damagefrac;
+            damagetime = self.last_bleedout_time * damagefrac;
             self.bleedout_time -= damagetime;
         }
         
@@ -1012,7 +1012,7 @@ function laststand_bleedout( bleedouttime, var_969fabf4 )
 {
     level endon( #"game_ended" );
     self endon( #"player_revived", #"player_bleedout", #"death" );
-    self.var_84c0402e = bleedouttime;
+    self.last_bleedout_time = bleedouttime;
     self.bleedout_time = bleedouttime;
     self.var_969fabf4 = var_969fabf4;
     self.var_2d19ce3c = 0;
@@ -1224,11 +1224,11 @@ function bleed_out( squad_wipe )
     
     if ( getdvarint( #"hash_62b8db0428755a32", 1 ) && isplayer( self ) )
     {
-        var_d7e063c = getdvarfloat( #"hash_44de9418bb6289ac", 1.5 );
+        bleed_out_fade_time = getdvarfloat( #"hash_44de9418bb6289ac", 1.5 );
         self playsoundtoplayer( #"hash_11d39dca0f911535", self );
-        self lui::screen_fade( var_d7e063c, 1, 0, "black", 0 );
-        wait var_d7e063c + 0.2;
-        self lui::screen_fade( var_d7e063c, 0, 1, "black", 0 );
+        self lui::screen_fade( bleed_out_fade_time, 1, 0, "black", 0 );
+        wait bleed_out_fade_time + 0.2;
+        self lui::screen_fade( bleed_out_fade_time, 0, 1, "black", 0 );
     }
     
     self notify( #"hash_6b045e0bc320bbee" );
@@ -1409,16 +1409,16 @@ function function_356caede( team )
         
         self clientfield::set_player_uimodel( "hudItems.beingFinished", 1 );
         finisher increment_finishing();
-        bundle_index = getdvarint( #"hash_4fe437fabb65172a", 0 ) < 0 ? randomintrange( 1, level.var_91c33dcb.finishers.size - 1 ) : getdvarint( #"hash_4fe437fabb65172a", 0 );
-        var_dc5a63bd = level.var_91c33dcb.finishers.size - 1;
+        bundle_index = getdvarint( #"hash_4fe437fabb65172a", 0 ) < 0 ? randomintrange( 1, level.finishers_list.finishers.size - 1 ) : getdvarint( #"hash_4fe437fabb65172a", 0 );
+        var_dc5a63bd = level.finishers_list.finishers.size - 1;
         
         if ( isdefined( getgametypesetting( #"wzspectrerising" ) ) && getgametypesetting( #"wzspectrerising" ) && finisher clientfield::get( "hasspectrebody" ) )
         {
             bundle_index = var_dc5a63bd;
         }
         
-        assert( level.var_91c33dcb.finishers.size >= bundle_index );
-        var_abdbed5a = level.var_91c33dcb.finishers[ bundle_index ].( "finisherbundle" );
+        assert( level.finishers_list.finishers.size >= bundle_index );
+        var_abdbed5a = level.finishers_list.finishers[ bundle_index ].( "finisherbundle" );
         var_d1d9820d = getscriptbundle( var_abdbed5a );
         
         if ( isdefined( var_d1d9820d.( "attacker_gesture" ) ) )
@@ -1798,7 +1798,7 @@ function revive_do_revive( playerbeingrevived )
     
     if ( isdefined( playerbeingrevived.var_d75a6ff5 ) )
     {
-        playerbeingrevived.var_d75a6ff5.var_d10f3b9a++;
+        playerbeingrevived.var_d75a6ff5.revive_attempts++;
     }
     
     self.reviving_player = playerbeingrevived;
@@ -2041,7 +2041,7 @@ function revive_success( reviver, b_track_stats = 1 )
     
     self reviveplayer();
     self.var_d887a4ad = undefined;
-    health = getdvarint( #"hash_7036719f41a78d54", 0 );
+    health = getdvarint( #"player_laststandrevivehealth", 0 );
     
     if ( isdefined( reviver ) )
     {
@@ -2093,7 +2093,7 @@ function function_ecdd4b27( attacker )
         friendlyfire = self util::isfriendlyplayer( attacker );
     }
     
-    self.var_d75a6ff5 = { #player_xuid:int( self getxuid( 1 ) ), #attacker_xuid:int( attackerxuid ), #friendly_fire:friendlyfire, #victim_pos_x:self.origin[ 0 ], #victim_pos_y:self.origin[ 1 ], #victim_pos_z:self.origin[ 2 ], #start_time:function_f8d53445(), #end_time:0, #damage:0, #death:0, #bleed_out:0, #var_d10f3b9a:0, #var_d733f8d7:0, #var_35b89428:0 };
+    self.var_d75a6ff5 = { #player_xuid:int( self getxuid( 1 ) ), #attacker_xuid:int( attackerxuid ), #friendly_fire:friendlyfire, #victim_pos_x:self.origin[ 0 ], #victim_pos_y:self.origin[ 1 ], #victim_pos_z:self.origin[ 2 ], #start_time:function_f8d53445(), #end_time:0, #damage:0, #death:0, #bleed_out:0, #revive_attempts:0, #reviver_damage:0, #reviver_death:0 };
 }
 
 // Namespace laststand_warzone/laststand_warzone
@@ -2131,7 +2131,7 @@ function function_b1ad0b64( idamage, smeansofdeath )
     }
     
     damagefrac = idamage / self.var_969fabf4;
-    damagetime = self.var_84c0402e * damagefrac;
+    damagetime = self.last_bleedout_time * damagefrac;
     return self.bleedout_time <= damagetime;
 }
 

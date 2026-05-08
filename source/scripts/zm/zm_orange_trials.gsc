@@ -126,7 +126,7 @@ function main()
             
             foreach ( player in getplayers() )
             {
-                player clientfield::set_to_player( "" + #"hash_78b8d89d34b32241", 0 );
+                player clientfield::set_to_player( "" + #"hell_burn_fx", 0 );
             }
             
             level flag::clear( #"hash_4466889733a90df2" );
@@ -373,7 +373,7 @@ function function_7206d28()
         self clientfield::set_to_player( "" + #"hash_13f1aaee7ebf9986", 0 );
     }
     
-    self clientfield::set_to_player( "" + #"hash_78b8d89d34b32241", 1 );
+    self clientfield::set_to_player( "" + #"hell_burn_fx", 1 );
 }
 
 // Namespace zm_orange_trials/zm_orange_trials

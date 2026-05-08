@@ -37,8 +37,8 @@
     "#hash_2e4a8800": "#recon_car_scoreevents",
     "image_e90": "#hash_95fc9c7df21711ab",
     "image_e98": "#hash_95fc9c7df21711ab",
-    "normalImpactFX": "#hash_146d30ee171ae16a",
-    "exitImpactFX": "#hash_3f7991ca1680bd5c",
+    "normalImpactFX": "#bullet_ap_enter",
+    "exitImpactFX": "#bullet_ap_exit",
     "normalImpactSounds": "#bullet_impact",
     "exitImpactSounds": "#hash_d0191cc37bfbfeea"
 }

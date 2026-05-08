@@ -35,16 +35,16 @@ function __init__()
 // Params 0
 // Checksum 0x77085261, Offset: 0x208
 // Size: 0x56
-function function_d2a1520c()
+function get_wingsuit_model()
 {
     wingsuit = self namespace_eb06e24d::get_wingsuit();
     
     if ( self util::is_female() )
     {
-        return wingsuit.var_5677bd3d;
+        return wingsuit.model_female;
     }
     
-    return wingsuit.var_94166112;
+    return wingsuit.model_male;
 }
 
 // Namespace player_free_fall/player_free_fall
@@ -53,7 +53,7 @@ function function_d2a1520c()
 // Size: 0x204
 function private function_c9a18304( eventstruct )
 {
-    model = function_d2a1520c();
+    model = get_wingsuit_model();
     
     if ( eventstruct.freefall )
     {

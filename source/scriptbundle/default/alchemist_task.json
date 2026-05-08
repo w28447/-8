@@ -1,5 +1,5 @@
 {
-    "callingtask": "#hash_67f429ee3f93764d",
+    "callingtask": "#elixers_used",
     "configstringfiletype": "scriptbundle",
     "image": "image#ui_icon_zm_calling_tasks_elixirused",
     "dailytarget": 25,

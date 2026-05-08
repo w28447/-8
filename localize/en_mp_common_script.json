@@ -15,7 +15,7 @@
     "mp/team_eliminated": "&&1 eliminated",
     "hash_24bb668f17a9cc67": "INTERMISSION",
     "hash_2a668959254d54e6": "Press ^3[{+actionslot 4}]^7 for Power Core",
-    "hash_2ea29b19d0e205e7": "Ammo Full",
+    "mpui/ammo_full": "Ammo Full",
     "hash_3267fdfd0c2b7fdc": "Destroyed Deploy Ship",
     "hash_33e29c2dd8e2d480": "$(clientName) is reviving you",
     "hash_40b506f518b169b8": "Dragonfire hacked",

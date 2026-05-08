@@ -94,7 +94,7 @@ CoD.Barracks_StatsOverview.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.Losses = Losses
 	
 	local WinLossRatio = CoD.PlayerStatsDetailed.new( f1_arg0, f1_arg1, 0, 0, 164, 466, 0, 0, 131, 152 )
-	WinLossRatio.StatHeaderText:setText( Engine[0xF9F1239CFD921FE]( 0x9F34F3A8BD173F7 ) )
+	WinLossRatio.StatHeaderText:setText( Engine[0xF9F1239CFD921FE]( "aar/wl_ratio" ) )
 	WinLossRatio.StatValue:setText( CoD.PlayerStatsUtility.GetPlayerStorageStatRatio( f1_arg0, 0x61FFBF65560C4BE, 0x60496832E1A37A, 8.13 ) )
 	self:addElement( WinLossRatio )
 	self.WinLossRatio = WinLossRatio
@@ -159,7 +159,7 @@ CoD.Barracks_StatsOverview.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	end
 	
 	Score.StatValue.__Stat_Value()
-	Score.StatHeaderText:setText( Engine[0xF9F1239CFD921FE]( 0x7B9FE59853C1B82 ) )
+	Score.StatHeaderText:setText( Engine[0xF9F1239CFD921FE]( "aar/score" ) )
 	self:addElement( Score )
 	self.Score = Score
 	

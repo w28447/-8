@@ -968,9 +968,9 @@ function function_802dde1f()
     
     while ( true )
     {
-        var_7e5b8365 = zombie_utility::get_current_zombie_count() > 0 || level.zombie_total > 0 || level.intermission;
+        b_should_wait = zombie_utility::get_current_zombie_count() > 0 || level.zombie_total > 0 || level.intermission;
         
-        if ( !var_7e5b8365 || level flag::get( "end_round_wait" ) )
+        if ( !b_should_wait || level flag::get( "end_round_wait" ) )
         {
             break;
         }

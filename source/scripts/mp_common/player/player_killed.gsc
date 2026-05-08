@@ -1324,7 +1324,7 @@ function private function_caabcf70( victim, callbackparams, laststandparams, var
     var_f53d817d = isdefined( laststandparams ) ? laststandparams : callbackparams;
     var_ee2f4691 = isdefined( var_a1d415ee ) ? var_a1d415ee : callbackparams;
     function_ad11630f( victim, var_f53d817d.victimorigin, var_f53d817d.victimangles, var_f53d817d.victimweapon, var_f53d817d.attacker, var_f53d817d.attackerorigin, var_f53d817d.attackerangles, var_f53d817d.sweapon, var_f53d817d.matchtime, var_f53d817d.shitloc, var_f53d817d.smeansofdeath, var_ee2f4691.attacker, var_ee2f4691.attackerorigin, var_ee2f4691.attackerangles, var_ee2f4691.sweapon, var_ee2f4691.matchtime, var_ee2f4691.shitloc, var_ee2f4691.smeansofdeath );
-    lifeindex = victim match_record::get_player_stat( #"hash_ec4aea1a8bbd82" );
+    lifeindex = victim match_record::get_player_stat( #"current_life_index" );
     
     if ( isdefined( lifeindex ) && isdefined( victim ) && isplayer( victim ) )
     {
@@ -1931,7 +1931,7 @@ function private function_48a1200f( einflictor, attacker, weapon, lpattackteam )
             
             if ( sessionmodeismultiplayergame() && isdefined( player.currentweapon ) )
             {
-                function_92d1707f( #"hash_d1357992f4715f0", { #gametime:function_f8d53445(), #assistspawnid:getplayerspawnid( player ), #assistspecialist:function_b14806c6( player player_role::get(), currentsessionmode() ), #assistweapon:player.currentweapon.name } );
+                function_92d1707f( #"dlog_event_mpassists", { #gametime:function_f8d53445(), #assistspawnid:getplayerspawnid( player ), #assistspecialist:function_b14806c6( player player_role::get(), currentsessionmode() ), #assistweapon:player.currentweapon.name } );
             }
             
             player thread globallogic_score::processassist( self, damage_done, self.attackerdamage[ player.clientid ].weapon, self.attackerdamage[ player.clientid ].time, self.attackerdamage[ player.clientid ].meansofdeath );
@@ -1976,7 +1976,7 @@ function function_f632c17e( weapon )
         case #"hash_17df39d53492b0bf":
         case #"tank_robot_launcher_turret":
         case #"ac130_chaingun":
-        case #"hash_7b24d0d0d2823bca":
+        case #"ac130_autocannon":
             return true;
     }
     

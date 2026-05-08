@@ -3,7 +3,7 @@
     "displayName": "#heroes/enforcer",
     "mpDialog": "#seraph",
     "playerSoundsTable": "#hash_5489bc974404467b",
-    "playerFXTable": "#hash_133d2326a92c76be",
+    "playerFXTable": "#mp_playerfx",
     "image_50": "#personalize_t7_hud_mp_weapon_hero_annihilator_available",
     "image_58": "#t7_mp_loadingportrait_weapon_seraph",
     "image_60": "#t7_mp_loadingportrait_ability_seraph",
@@ -16,11 +16,11 @@
     "dogtagFriendly": "#hash_16374a7b269f0f65",
     "dogTagEnemy": "#hash_2c0bb1840a08c3c",
     "tagFxSet": "#hash_29449d875b149b2b",
-    "characterFootsteps": "#hash_7052cf78616e4c73",
-    "characterFootstepsQuiet": "#hash_783ab8b555ce9413",
+    "characterFootsteps": "#foley_light",
+    "characterFootstepsQuiet": "#defaultplayerquietfootstep",
     "characterFootstepsNPC": "#hash_4fa996883c6b348b",
-    "characterFootstepsNPCLoud": "#hash_237a21af974e9d2f",
-    "characterFootstepsNPCQuiet": "#hash_22eae0dda1cf3d31",
+    "characterFootstepsNPCLoud": "#defaultnpcloudfootstep",
+    "characterFootstepsNPCQuiet": "#defaultnpcquietfootstep",
     "bundle": {
         "arenaLobbyScenes": [
             {

@@ -19,7 +19,7 @@
     ],
     "meleeWeapon": "#dog_ai_defaultmelee_zm",
     "aimTable": "#soldier_aim",
-    "footstepTable": "#hash_26e0a74b5e1fccae",
+    "footstepTable": "#tigerfootstep",
     "footstepScriptCallback": false,
     "footstepFXTable1": "#player_footstep",
     "footstepFXTable2": "#player_footstep",

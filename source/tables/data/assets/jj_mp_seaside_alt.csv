@@ -144,7 +144,7 @@ localizeentry,d#mpui/camo_darkmatter
 localizeentry,d#hash_3ca968dee9e5dc02
 localizeentry,d#hash_3cbdafac7f4a7bd2
 localizeentry,d#hash_3d26eb8dafae98e9
-localizeentry,d#hash_3d7abb3373fab887
+localizeentry,d#zmui/suppressor_desc
 localizeentry,d#mpui/tacknife
 localizeentry,d#hash_3de8e053a2e6c69b
 localizeentry,d#hash_3dfd2cf9c5589207
@@ -262,7 +262,7 @@ localizeentry,d#hash_6e2fd7423cbe42b0
 localizeentry,d#hash_6e86b49d6d5196af
 localizeentry,d#mpui/rangefinder
 localizeentry,d#mpui/stabilizer
-localizeentry,d#hash_7085044e7b80d5a3
+localizeentry,d#mpui/reticle_default
 localizeentry,d#hash_709fb6b7fdde6aa8
 localizeentry,d#hash_714cce81de873f11
 localizeentry,d#mpui/acog

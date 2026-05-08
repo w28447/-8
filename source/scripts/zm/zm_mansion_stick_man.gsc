@@ -137,7 +137,7 @@ function init_step_1( var_a276c861 )
     if ( !var_a276c861 )
     {
         level flag::wait_till( #"gazed_greenhouse" );
-        level zm_ui_inventory::function_7df6bb60( #"hash_7b00694a8b213123", 1 );
+        level zm_ui_inventory::function_7df6bb60( #"zm_mansion_prog_5", 1 );
         exploder::exploder( "fxexp_leaves_fall_dead" );
         level thread init_sticks();
         level flag::wait_till( #"stick_done" );
@@ -381,7 +381,7 @@ function function_f2071006()
 // Size: 0x184
 function init_step_2( var_a276c861 )
 {
-    level zm_ui_inventory::function_7df6bb60( #"hash_7b006a4a8b2132d6", 1 );
+    level zm_ui_inventory::function_7df6bb60( #"zm_mansion_prog_6", 1 );
     
     if ( !var_a276c861 )
     {
@@ -395,7 +395,7 @@ function init_step_2( var_a276c861 )
         level flag::wait_till( #"stick_rise" );
     }
     
-    level zm_ui_inventory::function_7df6bb60( #"hash_7b006b4a8b213489", 1 );
+    level zm_ui_inventory::function_7df6bb60( #"zm_mansion_prog_7", 1 );
     
     if ( !var_a276c861 )
     {
@@ -415,9 +415,9 @@ function cleanup_step_2( var_5ea5c94d, ended_early )
     level flag::set( #"stick_rise" );
     level flag::set( #"stone_visible" );
     
-    if ( isdefined( level.var_ead1145a ) )
+    if ( isdefined( level.stick_player ) )
     {
-        level.var_ead1145a setvisibletoall();
+        level.stick_player setvisibletoall();
     }
     
     if ( isdefined( level.e_guide ) && isdefined( level.e_guide.mdl_head ) )
@@ -466,11 +466,11 @@ function private function_2345b68a()
     mdl_pic_brigadier = getent( "pic_brigadier", "targetname" );
     mdl_pic_butler = getent( "pic_butler", "targetname" );
     mdl_pic_gunslinger = getent( "pic_gunslinger", "targetname" );
-    level.var_ead1145a = function_8a51807c();
-    level.var_ead1145a thread function_4aa24b78();
-    level.var_ead1145a thread function_c5c7d880();
+    level.stick_player = function_8a51807c();
+    level.stick_player thread function_4aa24b78();
+    level.stick_player thread function_c5c7d880();
     
-    switch ( level.var_ead1145a.str_name )
+    switch ( level.stick_player.str_name )
     {
         case #"pic_gypsy":
             s_loc = mdl_pic_gypsy.s_loc;
@@ -494,7 +494,7 @@ function private function_2345b68a()
             break;
     }
     
-    level.var_ead1145a.var_d62b4d4 = s_loc;
+    level.stick_player.var_d62b4d4 = s_loc;
     mdl_pic.mdl_bd setmodel( #"p8_zm_headstone_engraving_1912" );
     level.var_76c1632f = s_trig zm_unitrigger::create( undefined, ( 64, 64, 100 ), &function_6ae66179 );
     level.var_76c1632f.var_d62b4d4 = s_loc;
@@ -510,7 +510,7 @@ function private function_2345b68a()
 // Size: 0xd4
 function private function_44a7951d()
 {
-    if ( self === level.var_ead1145a )
+    if ( self === level.stick_player )
     {
         self notify( #"hash_1544918b5f670dae" );
         self setvisibletoall();
@@ -542,7 +542,7 @@ function private function_4aa24b78()
     level endon( #"stone_visible" );
     self endon( #"player_downed", #"death", #"hash_1544918b5f670dae" );
     
-    if ( self === level.var_ead1145a )
+    if ( self === level.stick_player )
     {
         self waittill( #"_zombie_game_over" );
         self thread function_a0a113c9( "death" );
@@ -575,7 +575,7 @@ function private function_36d70cbd()
         level.e_stick_fire = undefined;
     }
     
-    level.var_ead1145a = undefined;
+    level.stick_player = undefined;
     level function_2345b68a();
     mdl_stone = getent( "health_stone", "targetname" );
     
@@ -616,7 +616,7 @@ function private function_36d70cbd()
             level flag::clear( #"stick_hide" );
         }
         
-        level zm_ui_inventory::function_7df6bb60( #"hash_7b006b4a8b213489", 0 );
+        level zm_ui_inventory::function_7df6bb60( #"zm_mansion_prog_7", 0 );
         level thread function_d8ca90b7();
         
         if ( isdefined( level.e_guide ) && isdefined( level.e_guide.mdl_head ) )
@@ -633,7 +633,7 @@ function private function_36d70cbd()
         }
         
         level flag::wait_till( #"stick_rise" );
-        level zm_ui_inventory::function_7df6bb60( #"hash_7b006b4a8b213489", 1 );
+        level zm_ui_inventory::function_7df6bb60( #"zm_mansion_prog_7", 1 );
         level thread function_9e01297e();
         level thread stick_guide();
         return;
@@ -689,7 +689,7 @@ function private function_8a51807c()
 function private function_d8ca90b7()
 {
     level endon( #"stick_drag" );
-    level.var_ead1145a endon( #"disconnect", #"hash_1544918b5f670dae" );
+    level.stick_player endon( #"disconnect", #"hash_1544918b5f670dae" );
     level flag::wait_till( #"hash_7ffc33bb45377f5e" );
     
     while ( true )
@@ -707,7 +707,7 @@ function private function_d8ca90b7()
             
             if ( isdefined( level.e_stick_fire ) )
             {
-                level.e_stick_fire thread function_959fcbff( level.var_ead1145a );
+                level.e_stick_fire thread function_959fcbff( level.stick_player );
                 return;
             }
         }
@@ -870,7 +870,7 @@ function private function_25a79bc1()
     {
         self waittill( #"fasttravel_over", #"hash_3e4335abc3d58a0b", #"hash_55489b8cb6c75352" );
         
-        if ( self !== level.var_ead1145a )
+        if ( self !== level.stick_player )
         {
             return;
         }
@@ -930,7 +930,7 @@ function private function_9e01297e()
     level.e_guide playsound( #"hash_4826261b01f96036" );
     level.e_guide playloopsound( #"hash_298631572be3dd79" );
     a_players = getplayers();
-    arrayremovevalue( a_players, level.var_ead1145a );
+    arrayremovevalue( a_players, level.stick_player );
     
     foreach ( e_player in a_players )
     {
@@ -1023,9 +1023,9 @@ function function_c5c7d880()
 // Size: 0x2e
 function function_707f7801( _hash )
 {
-    if ( isdefined( level.var_ead1145a ) )
+    if ( isdefined( level.stick_player ) )
     {
-        level.var_ead1145a.var_54cb40e6 = 0;
+        level.stick_player.var_54cb40e6 = 0;
     }
 }
 
@@ -1036,10 +1036,10 @@ function function_707f7801( _hash )
 function private stick_guide()
 {
     level endon( #"stone_visible" );
-    level.var_ead1145a endon( #"disconnect" );
+    level.stick_player endon( #"disconnect" );
     level.e_guide endon( #"death" );
     level flag::wait_till( #"stick_hide" );
-    player = level.var_ead1145a;
+    player = level.stick_player;
     s_loc = array::random( struct::get_array( "stick_guide_loc" ) );
     
     /#
@@ -1239,7 +1239,7 @@ function function_6ae66179()
             continue;
         }
         
-        if ( player != level.var_ead1145a )
+        if ( player != level.stick_player )
         {
             continue;
         }
@@ -1359,7 +1359,7 @@ function private function_79ad31a0()
 function trigger_stick_man()
 {
     level endon( #"cemetery_done" );
-    level.var_ead1145a endon( #"disconnect" );
+    level.stick_player endon( #"disconnect" );
     
     while ( true )
     {
@@ -1371,7 +1371,7 @@ function trigger_stick_man()
             continue;
         }
         
-        if ( player != level.var_ead1145a )
+        if ( player != level.stick_player )
         {
             continue;
         }
@@ -1611,7 +1611,7 @@ function function_45cfa31( mdl_ghost )
 function function_48aadc5d()
 {
     level endon( #"cemetery_open" );
-    level.var_ead1145a endon( #"disconnect" );
+    level.stick_player endon( #"disconnect" );
     
     while ( true )
     {
@@ -1623,7 +1623,7 @@ function function_48aadc5d()
             continue;
         }
         
-        if ( player != level.var_ead1145a )
+        if ( player != level.stick_player )
         {
             continue;
         }
@@ -1694,7 +1694,7 @@ function function_9bd05071( player )
 // Size: 0xa4
 function init_step_3( var_a276c861 )
 {
-    level zm_ui_inventory::function_7df6bb60( #"hash_7b00744a8b2143d4", 1 );
+    level zm_ui_inventory::function_7df6bb60( #"zm_mansion_prog_8", 1 );
     level thread cemetery_defend();
     level thread function_97ea199a();
     level thread function_f3668a9();

@@ -380,7 +380,7 @@ function function_eba88fd( localclientnum )
             stopfx( localclientnum, self.var_83748d31 );
         }
         
-        if ( self zm_utility::function_f8796df3( localclientnum ) )
+        if ( self zm_utility::is_first_person( localclientnum ) )
         {
             if ( viewmodelhastag( localclientnum, "tag_flash" ) )
             {

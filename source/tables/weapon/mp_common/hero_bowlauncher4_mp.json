@@ -76,19 +76,19 @@
     "image_e90": "#icons_hud_ultimates_sparrow",
     "image_e98": "#icons_hud_ultimates_sparrow",
     "image_1048": "#icons_hud_ultimates_sparrow",
-    "fireRumble": "#hash_364c1f0076b68c92",
+    "fireRumble": "#bow_power_fire",
     "rumble_de8": "#grenade_rumble",
     "rumble_df0": "#bow_draw",
     "rumble_df8": "#hash_8449520f94829141",
-    "fx_be0": "#hash_53a995b92e1e1248",
-    "fx_be8": "#hash_53a995b92e1e1248",
-    "fx_f00": "#hash_142951d6c1ad94df",
+    "fx_be0": "#weapon/fx_hero_bow_lnchr_accelerator",
+    "fx_be8": "#weapon/fx_hero_bow_lnchr_accelerator",
+    "fx_f00": "#weapon/fx_hero_bow_lnchr_trail",
     "underwaterExplosionSurfaceFX": [
-        "#hash_5f190015ac9ded95",
-        "#hash_1206d75150c2464e",
-        "#hash_260fafe2e7ced71c"
+        "#explosions/fx_exp_grenade_water",
+        "#explosions/fx_exp_grenade_water_shllw",
+        "#explosions/fx_exp_grenade_water_surface_deep"
     ],
     "normalImpactFX": "#hash_543debda11c394d3",
-    "bounceImpactFX": "#hash_44809dce624162ce",
-    "bounceImpactSounds": "#hash_34d20fa8d9efe88a"
+    "bounceImpactFX": "#hero_bow_sm_enter",
+    "bounceImpactSounds": "#arrow_impact_charged"
 }

@@ -1246,9 +1246,9 @@ function setfriendlyflags( weapon, target )
                     {
                         rocketstokill = level.killstreakbundle[ killstreaktype ].ksrocketstokill;
                         
-                        if ( level.competitivesettingsenabled && isdefined( level.killstreakbundle[ killstreaktype ].var_b744074b ) && level.killstreakbundle[ killstreaktype ].var_b744074b != 0 )
+                        if ( level.competitivesettingsenabled && isdefined( level.killstreakbundle[ killstreaktype ].ksrocketstokillcwl ) && level.killstreakbundle[ killstreaktype ].ksrocketstokillcwl != 0 )
                         {
-                            rocketstokill = level.killstreakbundle[ killstreaktype ].var_b744074b;
+                            rocketstokill = level.killstreakbundle[ killstreaktype ].ksrocketstokillcwl;
                         }
                         
                         damageperrocket = maxhealth / rocketstokill + 1;
@@ -1618,7 +1618,7 @@ function _missiledetonate( attacker, weapon, range, mindamage, maxdamage, allowd
     
     attackerentity = attacker;
     
-    if ( function_3132f113( attacker ) || isdefined( attacker ) && !isplayer( attacker ) && !isalive( attacker ) )
+    if ( isremovedentity( attacker ) || isdefined( attacker ) && !isplayer( attacker ) && !isalive( attacker ) )
     {
         attackerentity = undefined;
     }

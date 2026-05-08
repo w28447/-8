@@ -12,8 +12,8 @@
     "scriptBundleSettings": "#amwssettings_mp",
     "deathFxTag": "tag_origin",
     "lightFx": [
-        "#hash_626550886e2876c5",
-        "#hash_5f13753d22b8de6f"
+        "#killstreaks/fx_agr_vlight",
+        "#light/fx_light_veh_amws_single"
     ],
     "lightFxTag": [
         "tag_origin",
@@ -30,11 +30,11 @@
     "model": "#veh_t7_drone_amws_armored_mp_lite",
     "deathModel": "#veh_t7_drone_amws_armored_mp_dead",
     "enemyModel": "#veh_t7_drone_amws_armored_mp_dark",
-    "soundDef": "#hash_403c6fda96f37f77",
+    "soundDef": "#veh_amws_mp",
     "compassIconMaterial": "#compass_talon",
-    "animStateMachine": "#hash_1101c7d04485391d",
-    "animSelectorTable": "#hash_1101ced044854502",
-    "animMappingTable": "#hash_6b66a2f9a555543e",
+    "animStateMachine": "#pamws.ai_asm",
+    "animSelectorTable": "#pamws.ai_ast",
+    "animMappingTable": "#pamws_player.ai_am",
     "steerAxisName": "AXIS_LSTICK",
     "attackButtonName": "BUTTON_RSHLDR",
     "attackSecondaryButtonName": "BUTTON_RTRIG",

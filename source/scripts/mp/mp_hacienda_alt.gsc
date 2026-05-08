@@ -87,11 +87,11 @@ function function_d839264a()
     mdl_platform_clip = getent( "car_platform_clip", "targetname" );
     var_a9f61c2f = getentarray( "car_platform", "script_linkto" );
     var_ebd977d = getentarray( "car_platform_panel", "script_interact_group" );
-    mdl_platform.var_8090ebe4 = getnodearray( "car_platform_traverse", "targetname" );
+    mdl_platform.a_nd_traversals = getnodearray( "car_platform_traverse", "targetname" );
     mdl_platform_clip linkto( mdl_platform );
     mdl_platform_clip disconnectpaths();
     
-    foreach ( nd_traverse in mdl_platform.var_8090ebe4 )
+    foreach ( nd_traverse in mdl_platform.a_nd_traversals )
     {
         linktraversal( nd_traverse );
     }
@@ -125,7 +125,7 @@ function function_45cfd64e( e_activator )
     array::thread_all( self.a_s_buttons, &gameobjects::disable_object );
     level thread function_9940fbb9( self.var_ebd977d, "busy" );
     
-    foreach ( nd_traverse in self.mdl_platform.var_8090ebe4 )
+    foreach ( nd_traverse in self.mdl_platform.a_nd_traversals )
     {
         unlinktraversal( nd_traverse );
     }
@@ -137,7 +137,7 @@ function function_45cfd64e( e_activator )
     self.mdl_platform playsound( "amb_car_platform_stop" );
     self.mdl_platform stoploopsound( 0.5 );
     
-    foreach ( nd_traverse in self.mdl_platform.var_8090ebe4 )
+    foreach ( nd_traverse in self.mdl_platform.a_nd_traversals )
     {
         linktraversal( nd_traverse );
     }
@@ -232,7 +232,7 @@ function function_f5a4a3eb()
         s_open = struct::get( mdl_door.target );
         mdl_door.v_forward = s_open.angles;
         mdl_door.v_close = mdl_door.origin;
-        mdl_door.var_3acc3ac3 = s_open.origin + vectorscale( anglestoforward( mdl_door.v_forward ) * -1, 2 );
+        mdl_door.v_open = s_open.origin + vectorscale( anglestoforward( mdl_door.v_forward ) * -1, 2 );
         mdl_door.b_closed = 1;
         mdl_door disconnectpaths();
         
@@ -268,7 +268,7 @@ function function_dd0b407b()
     
     if ( b_closed )
     {
-        v_moveto = self.var_3acc3ac3;
+        v_moveto = self.v_open;
         self.b_closed = 0;
         self connectpaths();
     }
@@ -314,7 +314,7 @@ function function_dd0b407b()
 function function_670cd4a3()
 {
     self endon( #"death" );
-    self.var_19fde5b7 = [];
+    self.stuckitems = [];
     
     while ( true )
     {
@@ -322,7 +322,7 @@ function function_670cd4a3()
         
         if ( isdefined( waitresult.projectile ) )
         {
-            array::add( self.var_19fde5b7, waitresult.projectile );
+            array::add( self.stuckitems, waitresult.projectile );
         }
     }
 }
@@ -338,14 +338,14 @@ function function_e0954c11()
         return;
     }
     
-    foreach ( var_221be278 in self.stuck_items )
+    foreach ( stuckitem in self.stuck_items )
     {
-        if ( !isdefined( var_221be278 ) )
+        if ( !isdefined( stuckitem ) )
         {
             continue;
         }
         
-        var_221be278 dodamage( 500, self.origin, undefined, undefined, undefined, "MOD_EXPLOSIVE" );
+        stuckitem dodamage( 500, self.origin, undefined, undefined, undefined, "MOD_EXPLOSIVE" );
     }
 }
 

@@ -3,7 +3,7 @@
     "baseName": "core_frontend",
     "lutMaterial": "#lut_frontend",
     "lutMaterialALT": "#luts_t7_zmc_frontend",
-    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "volumeDecalRevealTexture": "#vdreveal",
     "unk550": [
         "#img_trim_lut_frontend",
         "#img_trim_lut_frontend",

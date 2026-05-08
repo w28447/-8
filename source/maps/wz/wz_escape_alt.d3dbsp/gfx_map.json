@@ -2,7 +2,7 @@
     "name": "#maps/wz/wz_escape_alt.d3dbsp",
     "baseName": "wz_escape_alt",
     "lutMaterial": "#hash_33fd8dd681a14d35",
-    "volumeDecalRevealTexture": "#hash_b5bb050d4d322ca",
+    "volumeDecalRevealTexture": "#vdreveal",
     "unk550": [
         "#hash_3bbc41c0fab9117c",
         "#hash_3bbc41c0fab9117c",

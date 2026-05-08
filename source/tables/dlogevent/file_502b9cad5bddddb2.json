@@ -15,23 +15,23 @@
                 "name": "#telemetry_header",
                 "members": [
                     {
-                        "name": "#hash_f2ad74d8edb8204",
-                        "scrName": "#hash_50f7aa03",
+                        "name": "#game_session_id",
+                        "scrName": "#game_session_id",
                         "type": "UINT64"
                     },
                     {
                         "name": "#action_type",
-                        "scrName": "#hash_42e28add",
+                        "scrName": "#action_type",
                         "type": "XHASH"
                     },
                     {
                         "name": "#title_id",
-                        "scrName": "#hash_8f4c2b40",
+                        "scrName": "#title_id",
                         "type": "UINT32"
                     },
                     {
                         "name": "#build_version",
-                        "scrName": "#hash_26065d8a",
+                        "scrName": "#build_version",
                         "type": "STRING",
                         "len": 32
                     },
@@ -42,7 +42,7 @@
                     },
                     {
                         "name": "#source_version",
-                        "scrName": "#hash_a56621db",
+                        "scrName": "#source_version",
                         "type": "UINT16"
                     },
                     {
@@ -52,7 +52,7 @@
                     },
                     {
                         "name": "#changelist_number",
-                        "scrName": "#hash_e632366e",
+                        "scrName": "#changelist_number",
                         "type": "INT32"
                     }
                 ]
@@ -66,30 +66,30 @@
                 "members": [
                     {
                         "name": "#user_id",
-                        "scrName": "#hash_fada396e",
+                        "scrName": "#user_id",
                         "type": "UINT64"
                     },
                     {
                         "name": "#user_session_id",
-                        "scrName": "#hash_e004f74d",
+                        "scrName": "#user_session_id",
                         "type": "UINT64"
                     },
                     {
                         "name": "#uno_id",
-                        "scrName": "#hash_e7339473",
+                        "scrName": "#uno_id",
                         "type": "UINT64"
                     }
                 ]
             }
         },
         {
-            "name": "#hash_5792a9834bd40278",
+            "name": "#filearray",
             "arraySize": 50,
             "members": {
                 "name": "#hash_66d752d9db62566a",
                 "members": [
                     {
-                        "name": "#hash_150666bd04ec9147",
+                        "name": "#filedownloaderror",
                         "scrName": "#hash_ae4c5be6",
                         "type": "INT32"
                     },
@@ -108,18 +108,18 @@
             }
         },
         {
-            "name": "#hash_608be004464944c0",
+            "name": "#downloadattributes",
             "arraySize": 0,
             "members": {
                 "name": "#hash_33486934ef3da1df",
                 "members": [
                     {
-                        "name": "#hash_1f5a457ca2df8efc",
+                        "name": "#download_time_msec",
                         "scrName": "#hash_1cbfa643",
                         "type": "UINT32"
                     },
                     {
-                        "name": "#hash_412519a915c261ba",
+                        "name": "#totalfilesize",
                         "scrName": "#hash_b9a310c4",
                         "type": "UINT32"
                     },

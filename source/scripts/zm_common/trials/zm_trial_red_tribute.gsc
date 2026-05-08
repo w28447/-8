@@ -124,7 +124,7 @@ function private function_29bcf2f8()
     
     if ( isdefined( self.s_tribute_bowl ) && isdefined( self.s_tribute_bowl.var_9d32404 ) )
     {
-        self.s_tribute_bowl.var_9d32404 clientfield::set( "" + #"hash_21f5fab6a3d22093", 0 );
+        self.s_tribute_bowl.var_9d32404 clientfield::set( "" + #"tribute_flame_fx", 0 );
     }
     
     self zm_red_challenges_rewards::set_tribute( 0 );

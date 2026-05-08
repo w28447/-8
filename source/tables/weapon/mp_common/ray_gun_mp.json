@@ -3,7 +3,7 @@
     "baseWeapon": "#ray_gun",
     "displayname": "#weapon/ray_gun",
     "weapon70": "#ray_gun",
-    "streamkey": "#hash_5e5bdd060c83df50",
+    "streamkey": "#ray_gun_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

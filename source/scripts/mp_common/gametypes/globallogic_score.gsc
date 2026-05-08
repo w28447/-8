@@ -647,7 +647,7 @@ function giveplayermomentum( event, player, victim, descvalue, weapon, playersaf
     
     if ( !isdefined( label ) )
     {
-        player giveplayermomentumnotification( score, #"hash_480234a872bd64ac", descvalue, countstowardrampage, weapon, combatefficiencyscore, eventindex, event, playersaffected );
+        player giveplayermomentumnotification( score, #"score/blank", descvalue, countstowardrampage, weapon, combatefficiencyscore, eventindex, event, playersaffected );
         return;
     }
     
@@ -743,7 +743,7 @@ function function_3172cf59( player, newscore, weapon, mpplayerscore )
     
     if ( sessionmodeismultiplayergame() && !isbot( player ) )
     {
-        function_92d1707f( #"hash_120b2cf3162c3bc1", mpplayerscore );
+        function_92d1707f( #"dlog_event_mpplayerscore", mpplayerscore );
     }
     
     player bb::add_to_stat( "score", mpplayerscore.delta );
@@ -1259,7 +1259,7 @@ function giveteamscore( event, team, player, victim )
     if ( sessionmodeismultiplayergame() )
     {
         mpteamscores = { #gametime:function_f8d53445(), #event:event, #team:team, #diff:newscore - teamscore, #score:newscore };
-        function_92d1707f( #"hash_48d5ef92d24477d2", mpteamscores );
+        function_92d1707f( #"dlog_event_mpteamscores", mpteamscores );
     }
     
     if ( teamscore == newscore )
@@ -1285,7 +1285,7 @@ function giveteamscoreforobjective_delaypostprocessing( team, score )
     if ( sessionmodeismultiplayergame() )
     {
         mpteamobjscores = { #gametime:function_f8d53445(), #team:team, #diff:newscore - teamscore, #score:newscore };
-        function_92d1707f( #"hash_22921c2c027fa389", mpteamobjscores );
+        function_92d1707f( #"dlog_event_mpteamobjscores", mpteamobjscores );
     }
     
     if ( teamscore == newscore )
@@ -1329,7 +1329,7 @@ function giveteamscoreforobjective( team, score )
     if ( sessionmodeismultiplayergame() )
     {
         mpteamobjscores = { #gametime:function_f8d53445(), #team:team, #diff:newscore - teamscore, #score:newscore };
-        function_92d1707f( #"hash_22921c2c027fa389", mpteamobjscores );
+        function_92d1707f( #"dlog_event_mpteamobjscores", mpteamobjscores );
     }
     
     if ( teamscore == newscore )

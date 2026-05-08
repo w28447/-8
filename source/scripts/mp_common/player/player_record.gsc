@@ -268,17 +268,17 @@ function function_96d38b95( result )
     var_811ed119.prestige_max = player.pers[ #"plevel" ];
     var_811ed119.level_max = player.pers[ #"rank" ];
     var_811ed119.specialist_kills = player.heavyweaponkillcount;
-    var_a14ea2be = spawnstruct();
-    var_a14ea2be.player_gender = player getplayergendertype( currentsessionmode() );
-    var_a14ea2be.specialist_used = function_b14806c6( player player_role::get(), currentsessionmode() );
-    var_a14ea2be.loadout_perks = perkstr;
-    var_a14ea2be.loadout_lethal = grenadeprimaryname;
-    var_a14ea2be.loadout_tactical = grenadesecondaryname;
-    var_a14ea2be.loadout_scorestreaks = killstreakstr;
-    var_a14ea2be.loadout_primary_weapon = primaryweaponname;
-    var_a14ea2be.loadout_secondary_weapon = secondaryweaponname;
-    var_a14ea2be.loadout_primary_attachments = primaryweaponattachstr;
-    var_a14ea2be.loadout_secondary_attachments = secondaryweaponattachstr;
+    end_match_loadout = spawnstruct();
+    end_match_loadout.player_gender = player getplayergendertype( currentsessionmode() );
+    end_match_loadout.specialist_used = function_b14806c6( player player_role::get(), currentsessionmode() );
+    end_match_loadout.loadout_perks = perkstr;
+    end_match_loadout.loadout_lethal = grenadeprimaryname;
+    end_match_loadout.loadout_tactical = grenadesecondaryname;
+    end_match_loadout.loadout_scorestreaks = killstreakstr;
+    end_match_loadout.loadout_primary_weapon = primaryweaponname;
+    end_match_loadout.loadout_secondary_weapon = secondaryweaponname;
+    end_match_loadout.loadout_primary_attachments = primaryweaponattachstr;
+    end_match_loadout.loadout_secondary_attachments = secondaryweaponattachstr;
     var_b65d83f5 = spawnstruct();
     var_b65d83f5.best_score = bestscore;
     var_b65d83f5.best_kills = bestkills;
@@ -305,12 +305,12 @@ function function_96d38b95( result )
     var_6e81e3c3.special_contract_curent = specialcontractcurent;
     var_6e81e3c3.special_contract_completed = specialcontractcompleted;
     var_8607894c = spawnstruct();
-    var_8607894c.var_3cc73d67 = player function_5d23af5b();
+    var_8607894c.specialist_arms = player function_5d23af5b();
     var_8607894c.specialist_head = player startquantity();
     var_8607894c.specialist_legs = player function_cde23658();
     var_8607894c.specialist_torso = player function_92ea4100();
     var_8607894c.specialist_showcase = showcaseweapon.weapon.name;
-    function_92d1707f( #"hash_4c5946fa1191bc64", #"hash_71960e91f80c3365", var_906bdcf3, #"hash_4682ee0eb5071d2", var_811ed119, #"hash_209c80d657442a83", var_a14ea2be, #"hash_43cb38816354c3aa", var_b65d83f5, #"hash_11fcb8f188ed5050", var_6e81e3c3, #"hash_78a6c018d9f82184", var_8607894c );
+    function_92d1707f( #"dlog_event_end_match", #"hash_71960e91f80c3365", var_906bdcf3, #"hash_4682ee0eb5071d2", var_811ed119, #"end_match_loadout", end_match_loadout, #"hash_43cb38816354c3aa", var_b65d83f5, #"hash_11fcb8f188ed5050", var_6e81e3c3, #"hash_78a6c018d9f82184", var_8607894c );
 }
 
 // Namespace player_record/player_record

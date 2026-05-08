@@ -135,7 +135,7 @@ xcam,#ui_cam_draft_common_zoom
 xcam,#ui_cam_endgame_mp_sector
 xcam,#ui_cam_endgame_mp_apartments
 destructible,#hash_4d6ed88db8007ab1
-destructible,#hash_6a5e0b57f6cae9c0
+destructible,#p7_zm_nac_barrel_explosive_red_ddef
 destructible,#hash_748ec1e608daff07
 xanim,#hash_e74eda068c9b5
 xanim,#hash_526a24dd0a3d1a
@@ -211,7 +211,7 @@ soundalias,#hash_21d849eee4d897a
 soundalias,#hash_238170c19d279f5
 soundalias,#hash_2904437d186593d
 soundalias,#hash_31f777916298d72
-soundalias,#hash_38c96854fb0017e
+soundalias,#dst_typewriter
 soundalias,#hash_419e84642ebe554
 soundalias,#pfx_t8_spark_med
 soundalias,#hash_55faa40126d5c75
@@ -247,7 +247,7 @@ soundalias,#exp_barrel
 soundalias,#hash_1a6485b96677518d
 soundalias,#hash_1e74a799d96a6c35
 soundalias,#hash_1f9b1d980061ea0e
-soundalias,#hash_1ff8bec27dfc1b70
+soundalias,#dst_fern
 soundalias,#hash_200e28bcd26bab77
 soundalias,#hash_200e2ebcd26bb5a9
 soundalias,#hash_205c97034961b75c
@@ -310,12 +310,12 @@ soundalias,#hash_4027a53d8aaa9b13
 soundalias,#hash_436a4f77c54e7912
 soundalias,#hash_438b930b61d96f77
 soundalias,#hash_438dac17f69b90a2
-soundalias,#hash_43ad48046fb206c8
+soundalias,#exp_veh_small
 soundalias,#hash_456af38afaef9d77
 soundalias,#hash_456af98afaefa7a9
 soundalias,#hash_47a7dd1007c11019
 soundalias,#exp_veh_large
-soundalias,#hash_48bc31e222aa7c3e
+soundalias,#exp_barrel_fire
 soundalias,#hash_499a124f56b6f71b
 soundalias,#hash_4a30537f1f4717c5
 soundalias,#hash_4a9fb6e1d5d277b9
@@ -334,8 +334,8 @@ soundalias,#hash_4ec5a3e02263fc0e
 soundalias,#hash_4f2df6cf66c022df
 soundalias,#hash_4f2e0ccf66c04841
 soundalias,#hash_4f8c480d8e8f07b6
-soundalias,#hash_4fe5c27c543f6acb
-soundalias,#hash_501eff91f639c23e
+soundalias,#amb_chinook
+soundalias,#dst_glass_pane
 soundalias,#amb_target_rotate
 soundalias,#hash_51a81e5c7907f8c8
 soundalias,#hash_5241882a79fff7a3
@@ -370,7 +370,7 @@ soundalias,#amb_target_stop
 soundalias,#hash_6237abae59de3cd8
 soundalias,#hash_6237aeae59de41f1
 soundalias,#hash_63183f29f3cd192c
-soundalias,#hash_633b9532cf0da169
+soundalias,#amb_flies
 soundalias,#hash_64f1ed0ed35b9a58
 soundalias,#hash_663899d42687914d
 soundalias,#hash_668dfcbb61723329
@@ -383,7 +383,7 @@ soundalias,#hash_68d529ce159011b5
 soundalias,#hash_697f0402ea88cd39
 soundalias,#hash_69f5f866b0e442fa
 soundalias,#hash_69f9f3e122dbb898
-soundalias,#hash_6a7bbff93ccc7ab7
+soundalias,#dst_luggage
 soundalias,#hash_6abe483482efa584
 soundalias,#hash_6af3c4668902d4d1
 soundalias,#hash_6c5be5a0764e1e3c

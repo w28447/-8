@@ -143,7 +143,7 @@ CoD.StickerSetFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 			
 		end
 	end )
-	stickerSetList:AddContextualMenuAction( f1_arg0, f1_arg1, 0x8E7772DFD9BBDEB, function ( f18_arg0, f18_arg1, f18_arg2, f18_arg3 )
+	stickerSetList:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/options", function ( f18_arg0, f18_arg1, f18_arg2, f18_arg3 )
 		if CoD.CraftUtility.Emblem_IsOccupied( f18_arg0, f18_arg2 ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f18_arg0, f18_arg2, "isNonClickableEmblem", 0 ) and not IsPreBuiltEmblemTab( f18_arg2 ) and not SelectingGroupEmblem( f18_arg2 ) then
 			return function ( f19_arg0, f19_arg1, f19_arg2, f19_arg3 )
 				OpenPopup( self, "EmblemSelectOptions", f19_arg2, nil )

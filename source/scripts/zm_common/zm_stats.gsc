@@ -267,9 +267,9 @@ function player_stats_init()
     self add_map_stat( "score", self.score );
     self globallogic_score::initpersstat( #"zteam", 0 );
     
-    if ( isdefined( level.var_4b5a61cf ) )
+    if ( isdefined( level.level_specific_stats_init ) )
     {
-        [[ level.var_4b5a61cf ]]();
+        [[ level.level_specific_stats_init ]]();
     }
     
     if ( !isdefined( self.stats_this_frame ) )
@@ -392,7 +392,7 @@ function update_players_stats_at_match_end( players )
         player function_9daadcaa( "rounds", level.round_number );
         total_rounds_survived = level.round_number - 1;
         
-        if ( zm_trial::is_trial_mode() && isdefined( level.var_7fe57c6b ) && level.var_7fe57c6b )
+        if ( zm_trial::is_trial_mode() && isdefined( level.trials_success ) && level.trials_success )
         {
             total_rounds_survived = level.round_number;
             player zm_challenges::function_bf0be8f1();
@@ -2047,7 +2047,7 @@ function function_ea5b4947( b_end_game = 0 )
                 }
                 
                 player reportlootconsume( bgb, player.bgb_stats[ bgb ].bgb_used_this_game );
-                player.bgb_stats[ bgb ].var_c2a984f0 -= player.bgb_stats[ bgb ].bgb_used_this_game;
+                player.bgb_stats[ bgb ].bgb_available_at_start -= player.bgb_stats[ bgb ].bgb_used_this_game;
                 player.bgb_stats[ bgb ].bgb_used_this_game = 0;
             }
         }

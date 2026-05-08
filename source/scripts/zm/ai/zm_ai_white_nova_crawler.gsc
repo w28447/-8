@@ -531,22 +531,22 @@ function private function_8ae62d74( entity )
         right = rotatepointaroundaxis( forward, ( 0, 0, 1 ), -60 );
         var_f53c23cf = checknavmeshdirection( navmeshpoint, left, 100, 0 );
         var_379116fa = checknavmeshdirection( navmeshpoint, right, 100, 0 );
-        var_cfa253f9 = [];
+        phase_directions = [];
         var_d3c9cafc = 1;
         
         if ( distance( navmeshpoint, var_f53c23cf ) + var_d3c9cafc >= 100 )
         {
-            var_cfa253f9[ var_cfa253f9.size ] = "LEFT";
+            phase_directions[ phase_directions.size ] = "LEFT";
         }
         
         if ( distance( navmeshpoint, var_379116fa ) + var_d3c9cafc >= 100 )
         {
-            var_cfa253f9[ var_cfa253f9.size ] = "RIGHT";
+            phase_directions[ phase_directions.size ] = "RIGHT";
         }
         
-        if ( var_cfa253f9.size > 0 )
+        if ( phase_directions.size > 0 )
         {
-            var_3ac99fac = array::random( var_cfa253f9 );
+            var_3ac99fac = array::random( phase_directions );
         }
     }
     
@@ -566,7 +566,7 @@ function private function_488ba9cc()
     {
         forward = anglestoforward( self.angles );
         var_6296423e = checknavmeshdirection( navmeshpoint, forward, 150, 0 );
-        var_cfa253f9 = [];
+        phase_directions = [];
         
         if ( distance( navmeshpoint, var_6296423e ) >= 150 )
         {

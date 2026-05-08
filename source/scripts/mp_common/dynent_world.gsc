@@ -195,7 +195,7 @@ function private function_2f394f36()
         stateindex = function_ffdbe8c2( dynent );
         bundle = function_489009c1( dynent );
         
-        if ( isdefined( bundle ) && isdefined( bundle.dynentstates ) && isdefined( bundle.dynentstates[ stateindex ] ) && ( isdefined( bundle.dynentstates[ stateindex ].var_efabe801 ) && bundle.dynentstates[ stateindex ].var_efabe801 || level.inprematchperiod && !( isdefined( bundle.dynentstates[ stateindex ].var_4a78f198 ) && bundle.dynentstates[ stateindex ].var_4a78f198 ) ) )
+        if ( isdefined( bundle ) && isdefined( bundle.dynentstates ) && isdefined( bundle.dynentstates[ stateindex ] ) && ( isdefined( bundle.dynentstates[ stateindex ].disableinteract ) && bundle.dynentstates[ stateindex ].disableinteract || level.inprematchperiod && !( isdefined( bundle.dynentstates[ stateindex ].var_4a78f198 ) && bundle.dynentstates[ stateindex ].var_4a78f198 ) ) )
         {
             /#
                 if ( debug )
@@ -326,8 +326,8 @@ function private function_2b9e2224( trigger )
             if ( gettime() >= endtime )
             {
                 success = 1;
-                var_a852a7dd = trigger use_dynent( dynent, self );
-                dynent.var_a548ec11 = gettime() + var_a852a7dd * 1000;
+                interpolationsec = trigger use_dynent( dynent, self );
+                dynent.var_a548ec11 = gettime() + interpolationsec * 1000;
                 trigger triggerenable( 0 );
                 break;
             }
@@ -423,9 +423,9 @@ function use_dynent( dynent, activator )
             }
         }
         
-        if ( isplayer( activator ) && isdefined( state.var_20630681 ) )
+        if ( isplayer( activator ) && isdefined( state.interact_gesture ) )
         {
-            activator gestures::function_56e00fbf( state.var_20630681, undefined, 0 );
+            activator gestures::function_56e00fbf( state.interact_gesture, undefined, 0 );
         }
         
         if ( isdefined( dynent.onuse ) )
@@ -438,7 +438,7 @@ function use_dynent( dynent, activator )
             setdynentstate( dynent, var_9bdcfcd8 );
         }
         
-        return ( isdefined( bundle.var_a852a7dd ) ? bundle.var_a852a7dd : 0 );
+        return ( isdefined( bundle.interpolationsec ) ? bundle.interpolationsec : 0 );
     }
     
     return 0;
@@ -459,21 +459,21 @@ function private event_handler[event_9673dc9a] function_3981d015( eventstruct )
         newstate = bundle.dynentstates[ var_16a4afdc ];
         teleport = eventstruct.teleport;
         
-        if ( !( isdefined( bundle.var_f710132b ) && bundle.var_f710132b ) )
+        if ( !( isdefined( bundle.skiptransformation ) && bundle.skiptransformation ) )
         {
             pos = ( isdefined( newstate.pos_x ) ? newstate.pos_x : 0, isdefined( newstate.pos_y ) ? newstate.pos_y : 0, isdefined( newstate.pos_z ) ? newstate.pos_z : 0 );
             pos = rotatepoint( pos, dynent.var_c286a1ae );
             neworigin = dynent.var_718063b0 + pos;
-            pitch = dynent.var_c286a1ae[ 0 ] + ( isdefined( newstate.var_9d1a4684 ) ? newstate.var_9d1a4684 : 0 );
-            yaw = dynent.var_c286a1ae[ 1 ] + ( isdefined( newstate.var_d81008de ) ? newstate.var_d81008de : 0 );
-            roll = dynent.var_c286a1ae[ 2 ] + ( isdefined( newstate.var_774f5d57 ) ? newstate.var_774f5d57 : 0 );
+            pitch = dynent.var_c286a1ae[ 0 ] + ( isdefined( newstate.rot_pitch ) ? newstate.rot_pitch : 0 );
+            yaw = dynent.var_c286a1ae[ 1 ] + ( isdefined( newstate.rot_yaw ) ? newstate.rot_yaw : 0 );
+            roll = dynent.var_c286a1ae[ 2 ] + ( isdefined( newstate.rot_roll ) ? newstate.rot_roll : 0 );
             newangles = ( absangleclamp360( pitch ), absangleclamp360( yaw ), absangleclamp360( roll ) );
-            var_a852a7dd = isdefined( bundle.var_a852a7dd ) ? bundle.var_a852a7dd : 0;
+            interpolationsec = isdefined( bundle.interpolationsec ) ? bundle.interpolationsec : 0;
             
-            if ( !teleport && var_a852a7dd > 0 )
+            if ( !teleport && interpolationsec > 0 )
             {
-                dynent function_49ed8678( neworigin, var_a852a7dd );
-                dynent function_7622f013( newangles, var_a852a7dd );
+                dynent function_49ed8678( neworigin, interpolationsec );
+                dynent function_7622f013( newangles, interpolationsec );
             }
             else
             {
@@ -492,7 +492,7 @@ function private event_handler[event_9673dc9a] function_3981d015( eventstruct )
             starttime = 0;
             rate = isdefined( newstate.animrate ) ? newstate.animrate : 0;
             
-            if ( isdefined( newstate.var_8725802 ) && newstate.var_8725802 )
+            if ( isdefined( newstate.absolutestarttime ) && newstate.absolutestarttime )
             {
                 gametime = gettime();
                 

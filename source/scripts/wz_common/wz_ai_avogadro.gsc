@@ -205,7 +205,7 @@ function function_edc8c459( entity )
     entity endon( #"death" );
     entity solid();
     entity show();
-    entity.var_8ba6ede3 = undefined;
+    entity.shoulddigup = undefined;
     function_905d3c1a( entity );
     
     if ( !isdefined( entity ) )
@@ -302,10 +302,10 @@ function function_ac94df05( entity )
 {
     if ( !getdvarint( #"survival_prototype", 0 ) )
     {
-        return ( entity.aistate === 3 && ( entity.var_9bff71aa < 2 || gettime() - entity.var_7fde19e8 > 1000 ) );
+        return ( entity.aistate === 3 && ( entity.var_9bff71aa < 2 || gettime() - entity.last_phase_time > 1000 ) );
     }
     
-    return isdefined( entity.current_state ) && entity.current_state.name === #"chase" && ( entity.var_9bff71aa < 2 || gettime() - entity.var_7fde19e8 > 1000 );
+    return isdefined( entity.current_state ) && entity.current_state.name === #"chase" && ( entity.var_9bff71aa < 2 || gettime() - entity.last_phase_time > 1000 );
 }
 
 // Namespace wz_ai_avogadro/wz_ai_avogadro

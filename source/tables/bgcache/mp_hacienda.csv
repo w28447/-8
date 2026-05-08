@@ -384,7 +384,7 @@ soundalias,#hash_31f777916298d72
 soundalias,#hash_34f8a7a8e7e88c8
 soundalias,#hash_37832c72dbc5151
 soundalias,#hash_37ecd97827bbf3b
-soundalias,#hash_38c96854fb0017e
+soundalias,#dst_typewriter
 soundalias,#hash_3d5af99978e4e59
 soundalias,#hash_41684fffed38c09
 soundalias,#hash_419e84642ebe554
@@ -452,7 +452,7 @@ soundalias,#hash_12e55df7d33df5b4
 soundalias,#hash_1326987cf74ba88a
 soundalias,#hash_1337d555d43b995d
 soundalias,#hash_13473840ebdf6e31
-soundalias,#hash_134eae7f0c2c3a0b
+soundalias,#amb_frogs
 soundalias,#hash_1358357952f89d8d
 soundalias,#hash_136ca4aca03c4b49
 soundalias,#hash_138136596026885a
@@ -479,7 +479,7 @@ soundalias,#hash_17705cdfe01133ab
 soundalias,#hash_17b03792068cf144
 soundalias,#hash_17d6b5f03b6b1c51
 soundalias,#hash_17dfbf2972f38631
-soundalias,#hash_186f7af36a61f275
+soundalias,#amb_fridge
 soundalias,#hash_18eb9ee7cf4ff807
 soundalias,#hash_19d36e072bfb6a75
 soundalias,#hash_19d6d336ca616d9a
@@ -502,16 +502,16 @@ soundalias,#hash_1f9b1d980061ea0e
 soundalias,#hash_1fbac8c2013b009a
 soundalias,#hash_1fe04dc46ca8e136
 soundalias,#hash_1ff67c7d157a8f9a
-soundalias,#hash_1ff8bec27dfc1b70
+soundalias,#dst_fern
 soundalias,#hash_200e28bcd26bab77
 soundalias,#hash_200e2ebcd26bb5a9
 soundalias,#hash_2026f83fc65bdd9f
 soundalias,#hash_205f5a5fc8b779dd
 soundalias,#hash_20832702ba9531b4
 soundalias,#hash_208f0fa01c042df2
-soundalias,#hash_21037c8458f84a84
-soundalias,#hash_21037f8458f84f9d
-soundalias,#hash_2131ca73e1f61068
+soundalias,#amb_harp_2
+soundalias,#amb_harp_1
+soundalias,#amb_crows
 soundalias,#hash_213c0d460ceab1e0
 soundalias,#hash_21431415061f1df1
 soundalias,#hash_2149db0c502305e3
@@ -540,7 +540,7 @@ soundalias,#hash_267821e3be703ce7
 soundalias,#hash_2690908d2d082dd7
 soundalias,#hash_26bf012beaa38162
 soundalias,#hash_26f8ae96092bed2e
-soundalias,#hash_2709e21bac032076
+soundalias,#prj_bullet_explode
 soundalias,#hash_2730ba20330dff4a
 soundalias,#dst_car_tire_deflate
 soundalias,#hash_2755ac518eec18cb
@@ -610,7 +610,7 @@ soundalias,#hash_36254b32b9fdf273
 soundalias,#hash_36327232ba08bf14
 soundalias,#hash_36816442279da155
 soundalias,#hash_369d25b2d0a92d1b
-soundalias,#hash_369fc91126edf148
+soundalias,#amb_crickets
 soundalias,#hash_36c8deedb58a9f88
 soundalias,#hash_373c94e1ffb849b0
 soundalias,#hash_374c26457a5e7e9c
@@ -672,7 +672,7 @@ soundalias,#hash_435afed8470d773f
 soundalias,#hash_436a4f77c54e7912
 soundalias,#hash_438b930b61d96f77
 soundalias,#hash_438dac17f69b90a2
-soundalias,#hash_43ad48046fb206c8
+soundalias,#exp_veh_small
 soundalias,#hash_43c79923220b4eb7
 soundalias,#hash_44716776de3ffd6f
 soundalias,#hash_44aeaf3fdb94837e
@@ -696,7 +696,7 @@ soundalias,#hash_4865253b4e0dcb09
 soundalias,#hash_48917fbe0375b370
 soundalias,#hash_48a249b9cdd1abc3
 soundalias,#hash_48b1933f25659cde
-soundalias,#hash_48bc31e222aa7c3e
+soundalias,#exp_barrel_fire
 soundalias,#hash_492b8462762ccbf7
 soundalias,#hash_49397331fcc4930c
 soundalias,#hash_4983032b661f79cf
@@ -738,7 +738,7 @@ soundalias,#hash_4f38d8eca20db064
 soundalias,#hash_4f843c7587faa49b
 soundalias,#hash_4f8c480d8e8f07b6
 soundalias,#hash_50196b1b5a50f237
-soundalias,#hash_501eff91f639c23e
+soundalias,#dst_glass_pane
 soundalias,#hash_50fbd71bb5253723
 soundalias,#hash_51c327bdaea2dbad
 soundalias,#hash_51f0bf8fe5b6608c
@@ -790,7 +790,7 @@ soundalias,#hash_5aafec95295f15a1
 soundalias,#hash_5ad61fa495d7add0
 soundalias,#hash_5ada650bd7134890
 soundalias,#hash_5aeed2f2f83790f1
-soundalias,#hash_5b12631b244a191c
+soundalias,#amb_lounge_room
 soundalias,#hash_5b18895703fba823
 soundalias,#hash_5b5439e27642da71
 soundalias,#hash_5b98b949240b7fba
@@ -865,7 +865,7 @@ soundalias,#hash_69f5f866b0e442fa
 soundalias,#hash_69f9f3e122dbb898
 soundalias,#hash_6a19ad69770815ec
 soundalias,#hash_6a37e504d28b92e1
-soundalias,#hash_6a7bbff93ccc7ab7
+soundalias,#dst_luggage
 soundalias,#hash_6ab3a274f86db612
 soundalias,#hash_6abe483482efa584
 soundalias,#hash_6b76ddbfb1149179
@@ -882,8 +882,8 @@ soundalias,#hash_6eca11830ffe9dd3
 soundalias,#hash_6f8d34ceed10d1ec
 soundalias,#hash_6fa123d84a9a6dd0
 soundalias,#hash_6ff46e3f1722bae7
-soundalias,#hash_70ca4bcfe6e34dec
-soundalias,#hash_70ca4ecfe6e35305
+soundalias,#amb_sprinkler_1
+soundalias,#amb_sprinkler_2
 soundalias,#hash_71035febd512bc63
 soundalias,#hash_712e3703787e4a71
 soundalias,#hash_71c6dd2145a0c858
@@ -900,7 +900,7 @@ soundalias,#hash_740f81b909aa8cba
 soundalias,#hash_74249d12d9bb5869
 soundalias,#hash_74570b8fca5d2eac
 soundalias,#hash_7475517cba482261
-soundalias,#hash_754f29a1beebec07
+soundalias,#amb_woodpecker
 soundalias,#hash_75533f673ce6af21
 soundalias,#hash_75b36c2574f01fb6
 soundalias,#hash_76c99f76acb67f37

@@ -35,7 +35,7 @@
 // Size: 0x804
 function init()
 {
-    clientfield::register( "allplayers", "" + #"hash_5370f4bc9fc25d13", 8000, 1, "int" );
+    clientfield::register( "allplayers", "" + #"shield_elec_fx", 8000, 1, "int" );
     clientfield::register( "scriptmover", "" + #"ley_lines", 8000, 2, "int" );
     clientfield::register( "scriptmover", "" + #"power_beam", 8000, 2, "int" );
     clientfield::register( "scriptmover", "" + #"red_ray", 8000, 2, "int" );
@@ -44,8 +44,8 @@ function init()
     clientfield::register( "scriptmover", "" + #"stone_glow", 8000, 1, "int" );
     clientfield::register( "scriptmover", "" + #"stone_despawn", 8000, 1, "counter" );
     clientfield::register( "scriptmover", "" + #"stone_soul", 8000, 1, "int" );
-    clientfield::register( "scriptmover", "" + #"hash_34c5ab29531f15f0", 8000, 1, "int" );
-    clientfield::register( "scriptmover", "" + #"hash_546e7612359187c3", 8000, 1, "counter" );
+    clientfield::register( "scriptmover", "" + #"atlas_crystal_fx", 8000, 1, "int" );
+    clientfield::register( "scriptmover", "" + #"coil_hit_fx", 8000, 1, "counter" );
     clientfield::register( "toplayer", "" + #"mansion_mq_rumble", 8000, 1, "counter" );
     clientfield::register( "world", "" + #"skybox_stream", 8000, 1, "int" );
     register_steps();
@@ -221,7 +221,7 @@ function cleanup_step_1( var_5ea5c94d, ended_early )
 // Size: 0x5c
 function init_step_2( var_a276c861 )
 {
-    level zm_ui_inventory::function_7df6bb60( #"hash_7b006e4a8b2139a2", 1 );
+    level zm_ui_inventory::function_7df6bb60( #"zm_mansion_prog_2", 1 );
     
     if ( !var_a276c861 )
     {
@@ -244,7 +244,7 @@ function cleanup_step_2( var_5ea5c94d, ended_early )
 // Size: 0x15c
 function init_step_3( var_a276c861 )
 {
-    level zm_ui_inventory::function_7df6bb60( #"hash_7b006f4a8b213b55", 1 );
+    level zm_ui_inventory::function_7df6bb60( #"zm_mansion_prog_3", 1 );
     exploder::exploder( "fxexp_telescope_charge" );
     playsoundatposition( #"hash_75404411ef08e098", ( 4029, -146, -138 ) );
     level thread door_opener();
@@ -302,7 +302,7 @@ function cleanup_step_3( var_5ea5c94d, ended_early )
 // Size: 0x1dc
 function init_step_4( var_a276c861 )
 {
-    level zm_ui_inventory::function_7df6bb60( #"hash_7b00684a8b212f70", 1 );
+    level zm_ui_inventory::function_7df6bb60( #"zm_mansion_prog_4", 1 );
     level thread function_c888f1f4();
     level thread function_1be5e603();
     
@@ -390,7 +390,7 @@ function function_a8de7aeb( player )
 function crescent_activate()
 {
     level flag::wait_till( #"gazed_library" );
-    level zm_ui_inventory::function_7df6bb60( #"hash_7b006d4a8b2137ef", 1 );
+    level zm_ui_inventory::function_7df6bb60( #"zm_mansion_prog_1", 1 );
     scene::add_scene_func( #"p8_fxanim_zm_man_beam_device_bundle", &function_d961aafc, "shot 1" );
     level scene::play( #"p8_fxanim_zm_man_beam_device_bundle", "shot 1" );
     scene::remove_scene_func( #"p8_fxanim_zm_man_beam_device_bundle", &function_d961aafc, "shot 1" );
@@ -430,7 +430,7 @@ function function_70d8a7cb()
                 if ( a_players[ i ] === s_result.attacker )
                 {
                     self playsound( #"hash_7651f08f562fc850" );
-                    self clientfield::increment( "" + #"hash_546e7612359187c3", 1 );
+                    self clientfield::increment( "" + #"coil_hit_fx", 1 );
                     level flag::set( "symbol_hit_player_" + i + 1 );
                 }
             }
@@ -483,7 +483,7 @@ function function_fde77b55( mdl_coil )
 function function_d3128b5f()
 {
     level flag::wait_till( #"ley_start" );
-    level.mdl_crystal clientfield::set( "" + #"hash_34c5ab29531f15f0", 0 );
+    level.mdl_crystal clientfield::set( "" + #"atlas_crystal_fx", 0 );
     var_95807f2d = [];
     a_s_rings = struct::get_array( #"control_ring", "script_string" );
     
@@ -770,7 +770,7 @@ function function_71d1b235()
     s_atlas thread scene::play( "melt" );
     e_head = getent( "head_collision", "targetname" );
     e_head movey( 32, 3 );
-    level.mdl_crystal clientfield::set( "" + #"hash_34c5ab29531f15f0", 1 );
+    level.mdl_crystal clientfield::set( "" + #"atlas_crystal_fx", 1 );
     level waittill( #"rings_delete" );
     level.mdl_rings showpart( "link_ring1_jnt", "p8_fxanim_zm_man_atlas_rings_mod", 1 );
     level.mdl_rings showpart( "link_ring2_jnt", "p8_fxanim_zm_man_atlas_rings_mod", 1 );
@@ -820,7 +820,7 @@ function function_ea49787e( a_ents )
     level.mdl_atlas = a_ents[ #"atlas" ];
     level.mdl_rings = a_ents[ #"atlas_rings" ];
     util::wait_network_frame( 5 );
-    level.mdl_crystal clientfield::set( "" + #"hash_34c5ab29531f15f0", 1 );
+    level.mdl_crystal clientfield::set( "" + #"atlas_crystal_fx", 1 );
     level.mdl_rings hidepart( "link_ring1_jnt", "p8_fxanim_zm_man_atlas_rings_mod", 1 );
     level.mdl_rings hidepart( "link_ring2_jnt", "p8_fxanim_zm_man_atlas_rings_mod", 1 );
     level.mdl_rings hidepart( "link_ring3_jnt", "p8_fxanim_zm_man_atlas_rings_mod", 1 );
@@ -1264,7 +1264,7 @@ function function_8ced5d5b()
     {
         level.var_d181080c[ i ].origin = level.var_d181080c[ i ].s_loc.origin;
         level.var_d181080c[ i ].angles = level.var_d181080c[ i ].s_loc.angles;
-        level.var_d181080c[ i ].var_19d827d = a_n_hints[ i ];
+        level.var_d181080c[ i ].n_hints = a_n_hints[ i ];
         level.var_d181080c[ i ] thread function_7cc34fef();
     }
 }
@@ -1279,7 +1279,7 @@ function function_7cc34fef()
     self.a_s_locs = struct::get_array( self.s_loc.script_noteworthy );
     self.a_s_locs = array::randomize( self.a_s_locs );
     
-    switch ( self.var_19d827d )
+    switch ( self.n_hints )
     {
         case 7:
             self.a_mdl_hints[ 0 ] = util::spawn_model( "p8_zm_werewolf_claw_marks_grp_03_01", self.a_s_locs[ 0 ].origin, self.a_s_locs[ 0 ].angles );
@@ -1600,7 +1600,7 @@ function function_371e56be( e_trap )
 {
     self notify( #"hash_1e76041e9fa5f479" );
     self endon( #"disconnect", #"hash_1e76041e9fa5f479", #"death" );
-    self clientfield::set( "" + #"hash_5370f4bc9fc25d13", 1 );
+    self clientfield::set( "" + #"shield_elec_fx", 1 );
     
     while ( level flag::get( #"hash_6f483dda6f8ab19d" ) && self istouching( e_trap ) && mansion_util::is_shield( self getcurrentweapon() ) )
     {
@@ -1636,7 +1636,7 @@ function function_53577dc7()
     self endon( #"disconnect" );
     self waittilltimeout( 9.2, #"shield_timeout", #"hash_459246e5bfcc3713", #"destroy_riotshield" );
     self.var_4ceff143 = 0;
-    self clientfield::set( "" + #"hash_5370f4bc9fc25d13", 0 );
+    self clientfield::set( "" + #"shield_elec_fx", 0 );
     self notify( #"shield_timeout" );
 }
 

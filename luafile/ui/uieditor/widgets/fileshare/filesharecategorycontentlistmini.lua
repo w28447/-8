@@ -142,7 +142,7 @@ CoD.FileshareCategoryContentListMini.new = function ( f1_arg0, f1_arg1, f1_arg2,
 		end
 	end, function ( f9_arg0, f9_arg1, f9_arg2 )
 		if FileshareCanShowOptionsMenu( f9_arg2 ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x22361E23588705A], 0x8E7772DFD9BBDEB, nil, nil )
+			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x22361E23588705A], "menu/options", nil, nil )
 			return true
 		else
 			return false

@@ -3,7 +3,7 @@
     "displayName": "#heroes/reaper",
     "unk30": "#reaper",
     "mpDialog": "#reaper",
-    "playerSoundsTable": "#hash_21fe3f79b5e4c2d6",
+    "playerSoundsTable": "#cp_playersounds",
     "playerFXTable": "#hash_471b500cc678f872",
     "image_50": "#personalize_t7_hud_mp_weapon_hero_minigun_available",
     "image_58": "#t7_mp_loadingportrait_weapon_reaper",
@@ -18,11 +18,11 @@
     "dogtagFriendly": "#hash_612c3e78d9650c3",
     "dogTagEnemy": "#hash_cd6db178007d4aa",
     "tagFxSet": "#hash_22ffe624b7ac693a",
-    "characterFootsteps": "#hash_4ee42a3145f1fe3d",
-    "characterFootstepsQuiet": "#hash_783ab8b555ce9413",
-    "characterFootstepsNPC": "#hash_3008da66d91b8ad7",
-    "characterFootstepsNPCLoud": "#hash_237a21af974e9d2f",
-    "characterFootstepsNPCQuiet": "#hash_22eae0dda1cf3d31",
+    "characterFootsteps": "#defaultplayerfootstep",
+    "characterFootstepsQuiet": "#defaultplayerquietfootstep",
+    "characterFootstepsNPC": "#defaultnpcfootstep",
+    "characterFootstepsNPCLoud": "#defaultnpcloudfootstep",
+    "characterFootstepsNPCQuiet": "#defaultnpcquietfootstep",
     "bundle": {
         "arenaLobbyScenes": [
             {

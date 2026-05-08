@@ -324,7 +324,7 @@ function function_84874233( localclientnum, oldval, newval, bnewent, binitialsna
     
     if ( newval )
     {
-        if ( self zm_utility::function_f8796df3( localclientnum ) )
+        if ( self zm_utility::is_first_person( localclientnum ) )
         {
             self.var_2c3ee59a = playviewmodelfx( localclientnum, level._effect[ #"hash_7ba74dab3ce4c1a9" ], "tag_crystal_main" );
             return;
@@ -348,7 +348,7 @@ function function_f2536be( localclientnum, oldval, newval, bnewent, binitialsnap
     
     if ( newval )
     {
-        if ( self zm_utility::function_f8796df3( localclientnum ) )
+        if ( self zm_utility::is_first_person( localclientnum ) )
         {
             self.var_2c3ee59a = playviewmodelfx( localclientnum, level._effect[ #"hash_4982dd14ad4cfd2d" ], "tag_crystal_main" );
             return;
@@ -372,7 +372,7 @@ function function_b50a9153( localclientnum, oldval, newval, bnewent, binitialsna
     
     if ( newval )
     {
-        if ( self zm_utility::function_f8796df3( localclientnum ) )
+        if ( self zm_utility::is_first_person( localclientnum ) )
         {
             self.var_2c3ee59a = playviewmodelfx( localclientnum, level._effect[ #"hash_223052fa57a81234" ], "tag_crystal_main" );
             return;
@@ -564,7 +564,7 @@ function charon_teleport_postfx( localclientnum, oldval, newval, bnewent, biniti
     
     if ( newval )
     {
-        if ( self zm_utility::function_f8796df3( localclientnum ) )
+        if ( self zm_utility::is_first_person( localclientnum ) )
         {
             if ( !self postfx::function_556665f2( #"hash_33f79c189a73adf9" ) )
             {
@@ -734,7 +734,7 @@ function hemera_teleport_postfx( localclientnum, oldval, newval, bnewent, biniti
     
     if ( newval )
     {
-        if ( self zm_utility::function_f8796df3( localclientnum ) )
+        if ( self zm_utility::is_first_person( localclientnum ) )
         {
             if ( !self postfx::function_556665f2( #"hash_867b31debc40b0a" ) )
             {
@@ -784,7 +784,7 @@ function gaia_teleport_postfx( localclientnum, oldval, newval, bnewent, binitial
     
     if ( newval )
     {
-        if ( self zm_utility::function_f8796df3( localclientnum ) )
+        if ( self zm_utility::is_first_person( localclientnum ) )
         {
             if ( !self postfx::function_556665f2( #"hash_2ea4efbdd5fc3dfd" ) )
             {
@@ -834,7 +834,7 @@ function ouranos_teleport_postfx( localclientnum, oldval, newval, bnewent, binit
     
     if ( newval )
     {
-        if ( self zm_utility::function_f8796df3( localclientnum ) )
+        if ( self zm_utility::is_first_person( localclientnum ) )
         {
             if ( !self postfx::function_556665f2( #"hash_49cc4d561f671b1a" ) )
             {

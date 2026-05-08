@@ -60,7 +60,7 @@
     "sharedWeaponSounds": "#rifle",
     "tracers": [
         "#lmg",
-        "#hash_62bdd456ce2308cc"
+        "#lmg_enemy"
     ],
     "statusEffects": [
         {
@@ -99,6 +99,6 @@
     "fx_c98": "#hash_4b144677a622ffb3",
     "normalImpactFX": "#hash_5c5dac9355d4dd1c",
     "exitImpactFX": "#hash_400b5ef5792265c2",
-    "normalImpactSounds": "#hash_78e291a8acdea947",
-    "exitImpactSounds": "#hash_50191cc37bfbfeea"
+    "normalImpactSounds": "#bullet_explode",
+    "exitImpactSounds": "#bullet_exit"
 }

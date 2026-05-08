@@ -269,7 +269,7 @@ version 77 {
     };
 
     // idx 17 members 8 size 0x88
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         uint:4 weaponmodelslot;
         // offset 0x8, size 0x10
@@ -313,9 +313,9 @@ version 77 {
         // offset 0x150, size 0x10
         uint:10 herogadget;
         // offset 0x160, size 0x88
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0x1e8, size 0x88
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 20 members 14 size 0x401c0
@@ -385,7 +385,7 @@ version 77 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x1fe0
-    hash_51ee933f6ee8ec54 variant[60];
+    zmloadoutweapon variant[60];
     // offset 0x2000, size 0x80380
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x82380, size 0x1
@@ -666,7 +666,7 @@ version 76 {
     };
 
     // idx 17 members 8 size 0x88
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         uint:4 weaponmodelslot;
         // offset 0x8, size 0x10
@@ -710,9 +710,9 @@ version 76 {
         // offset 0x150, size 0x10
         uint:10 herogadget;
         // offset 0x160, size 0x88
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0x1e8, size 0x88
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 20 members 14 size 0x37580
@@ -782,7 +782,7 @@ version 76 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x1fe0
-    hash_51ee933f6ee8ec54 variant[60];
+    zmloadoutweapon variant[60];
     // offset 0x2000, size 0x6eb00
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x70b00, size 0x1
@@ -1063,7 +1063,7 @@ version 75 {
     };
 
     // idx 17 members 8 size 0x88
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         uint:4 weaponmodelslot;
         // offset 0x8, size 0x10
@@ -1107,9 +1107,9 @@ version 75 {
         // offset 0x150, size 0x10
         uint:10 herogadget;
         // offset 0x160, size 0x88
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0x1e8, size 0x88
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 20 members 14 size 0x32d80
@@ -1179,7 +1179,7 @@ version 75 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x1fe0
-    hash_51ee933f6ee8ec54 variant[60];
+    zmloadoutweapon variant[60];
     // offset 0x2000, size 0x65b00
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x67b00, size 0x1
@@ -1460,7 +1460,7 @@ version 74 {
     };
 
     // idx 17 members 8 size 0x88
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         uint:4 weaponmodelslot;
         // offset 0x8, size 0x10
@@ -1504,9 +1504,9 @@ version 74 {
         // offset 0x150, size 0x10
         uint:10 herogadget;
         // offset 0x160, size 0x88
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0x1e8, size 0x88
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 20 members 14 size 0x32d80
@@ -1576,7 +1576,7 @@ version 74 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x1a90
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x1ab0, size 0x65b00
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x675b0, size 0x1
@@ -1857,7 +1857,7 @@ version 73 {
     };
 
     // idx 17 members 8 size 0x88
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         uint:4 weaponmodelslot;
         // offset 0x8, size 0x10
@@ -1901,9 +1901,9 @@ version 73 {
         // offset 0x150, size 0x10
         uint:10 herogadget;
         // offset 0x160, size 0x88
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0x1e8, size 0x88
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 20 members 14 size 0x32d80
@@ -1973,7 +1973,7 @@ version 73 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x1a90
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x1ab0, size 0x65b00
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x675b0, size 0x1
@@ -2254,7 +2254,7 @@ version 72 {
     };
 
     // idx 17 members 8 size 0x88
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         uint:4 weaponmodelslot;
         // offset 0x8, size 0x10
@@ -2298,9 +2298,9 @@ version 72 {
         // offset 0x150, size 0x10
         uint:10 herogadget;
         // offset 0x160, size 0x88
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0x1e8, size 0x88
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 20 members 14 size 0x32d80
@@ -2370,7 +2370,7 @@ version 72 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x1a90
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x1ab0, size 0x65b00
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x675b0, size 0x1
@@ -2651,7 +2651,7 @@ version 71 {
     };
 
     // idx 17 members 8 size 0x88
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         uint:4 weaponmodelslot;
         // offset 0x8, size 0x10
@@ -2695,9 +2695,9 @@ version 71 {
         // offset 0x150, size 0x10
         uint:10 herogadget;
         // offset 0x160, size 0x88
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0x1e8, size 0x88
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 20 members 14 size 0x32d80
@@ -2767,7 +2767,7 @@ version 71 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x1a90
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x1ab0, size 0x65b00
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x675b0, size 0x1
@@ -3048,7 +3048,7 @@ version 70 {
     };
 
     // idx 17 members 8 size 0x88
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         uint:4 weaponmodelslot;
         // offset 0x8, size 0x10
@@ -3092,9 +3092,9 @@ version 70 {
         // offset 0x150, size 0x10
         uint:10 herogadget;
         // offset 0x160, size 0x88
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0x1e8, size 0x88
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 20 members 14 size 0x32d80
@@ -3164,7 +3164,7 @@ version 70 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x1a90
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x1ab0, size 0x65b00
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x675b0, size 0x1
@@ -3445,7 +3445,7 @@ version 69 {
     };
 
     // idx 17 members 8 size 0x88
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         uint:4 weaponmodelslot;
         // offset 0x8, size 0x10
@@ -3485,9 +3485,9 @@ version 69 {
         // offset 0x120, size 0x10
         uint:10 herogadget;
         // offset 0x130, size 0x88
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0x1b8, size 0x88
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 20 members 14 size 0x32a10
@@ -3557,7 +3557,7 @@ version 69 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x1a90
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x1ab0, size 0x65420
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x66ed0, size 0x1
@@ -3838,7 +3838,7 @@ version 68 {
     };
 
     // idx 17 members 8 size 0x88
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         uint:4 weaponmodelslot;
         // offset 0x8, size 0x10
@@ -3878,9 +3878,9 @@ version 68 {
         // offset 0x120, size 0x10
         uint:10 herogadget;
         // offset 0x130, size 0x88
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0x1b8, size 0x88
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 20 members 14 size 0x32a10
@@ -3950,7 +3950,7 @@ version 68 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x1a90
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x1ab0, size 0x65420
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x66ed0, size 0x1
@@ -4231,7 +4231,7 @@ version 67 {
     };
 
     // idx 17 members 8 size 0x88
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         uint:4 weaponmodelslot;
         // offset 0x8, size 0x10
@@ -4271,9 +4271,9 @@ version 67 {
         // offset 0x120, size 0x10
         uint:10 herogadget;
         // offset 0x130, size 0x88
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0x1b8, size 0x88
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 20 members 14 size 0x26a10
@@ -4343,7 +4343,7 @@ version 67 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x1a90
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x1ab0, size 0x4d420
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x4eed0, size 0x1
@@ -4626,7 +4626,7 @@ version 66 {
     };
 
     // idx 17 members 8 size 0x88
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         uint:4 weaponmodelslot;
         // offset 0x8, size 0x10
@@ -4666,9 +4666,9 @@ version 66 {
         // offset 0x120, size 0x10
         uint:10 herogadget;
         // offset 0x130, size 0x88
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0x1b8, size 0x88
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 20 members 14 size 0x26e90
@@ -4738,7 +4738,7 @@ version 66 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x1a90
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x1ab0, size 0x4dd20
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x4f7d0, size 0x1
@@ -5023,7 +5023,7 @@ version 65 {
     };
 
     // idx 17 members 8 size 0x88
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         uint:4 weaponmodelslot;
         // offset 0x8, size 0x10
@@ -5063,9 +5063,9 @@ version 65 {
         // offset 0x120, size 0x10
         uint:10 herogadget;
         // offset 0x130, size 0x88
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0x1b8, size 0x88
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 20 members 14 size 0x27c10
@@ -5135,7 +5135,7 @@ version 65 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x1a90
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x1ab0, size 0x4f820
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x512d0, size 0x1
@@ -5420,7 +5420,7 @@ version 64 {
     };
 
     // idx 17 members 6 size 0x70
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         uint:4 weaponmodelslot;
         // offset 0x8, size 0x8
@@ -5456,9 +5456,9 @@ version 64 {
         // offset 0x120, size 0x10
         uint:10 herogadget;
         // offset 0x130, size 0x70
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0x1a0, size 0x70
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 20 members 14 size 0x27a30
@@ -5528,7 +5528,7 @@ version 64 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x15e0
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x1600, size 0x4f460
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x50a60, size 0x1
@@ -5811,7 +5811,7 @@ version 63 {
     };
 
     // idx 17 members 6 size 0x70
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         uint:4 weaponmodelslot;
         // offset 0x8, size 0x8
@@ -5847,9 +5847,9 @@ version 63 {
         // offset 0x120, size 0x10
         uint:10 herogadget;
         // offset 0x130, size 0x70
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0x1a0, size 0x70
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 20 members 14 size 0x27a30
@@ -5919,7 +5919,7 @@ version 63 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x15e0
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x1600, size 0x4f460
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x50a60, size 0x1
@@ -6202,7 +6202,7 @@ version 62 {
     };
 
     // idx 17 members 6 size 0x70
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         uint:4 weaponmodelslot;
         // offset 0x8, size 0x8
@@ -6238,9 +6238,9 @@ version 62 {
         // offset 0x120, size 0x10
         uint:10 herogadget;
         // offset 0x130, size 0x70
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0x1a0, size 0x70
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 20 members 14 size 0x1ba30
@@ -6310,7 +6310,7 @@ version 62 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x15e0
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x1600, size 0x37460
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x38a60, size 0x1
@@ -6593,7 +6593,7 @@ version 61 {
     };
 
     // idx 17 members 6 size 0x70
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         uint:4 weaponmodelslot;
         // offset 0x8, size 0x8
@@ -6629,9 +6629,9 @@ version 61 {
         // offset 0x120, size 0x10
         uint:10 herogadget;
         // offset 0x130, size 0x70
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0x1a0, size 0x70
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 20 members 14 size 0x1ba30
@@ -6701,7 +6701,7 @@ version 61 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x15e0
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x1600, size 0x37460
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x38a60, size 0x1
@@ -6976,7 +6976,7 @@ version 60 {
     };
 
     // idx 16 members 6 size 0x70
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         uint:4 weaponmodelslot;
         // offset 0x8, size 0x8
@@ -7012,9 +7012,9 @@ version 60 {
         // offset 0x120, size 0x10
         uint:10 herogadget;
         // offset 0x130, size 0x70
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0x1a0, size 0x70
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 19 members 14 size 0x1b5b0
@@ -7077,7 +7077,7 @@ version 60 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x15e0
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x1600, size 0x36b60
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x38160, size 0x1
@@ -7352,7 +7352,7 @@ version 59 {
     };
 
     // idx 16 members 6 size 0x70
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         uint:4 weaponmodelslot;
         // offset 0x8, size 0x8
@@ -7388,9 +7388,9 @@ version 59 {
         // offset 0x120, size 0x10
         uint:10 herogadget;
         // offset 0x130, size 0x70
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0x1a0, size 0x70
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 19 members 14 size 0x1b5b0
@@ -7453,7 +7453,7 @@ version 59 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x15e0
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x1600, size 0x36b60
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x38160, size 0x1
@@ -7728,7 +7728,7 @@ version 58 {
     };
 
     // idx 16 members 6 size 0x68
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         uint:4 weaponmodelslot;
         // offset 0x8, size 0x8
@@ -7764,9 +7764,9 @@ version 58 {
         // offset 0x120, size 0x10
         uint:10 herogadget;
         // offset 0x130, size 0x68
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0x198, size 0x68
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 19 members 14 size 0x1b510
@@ -7829,7 +7829,7 @@ version 58 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x1450
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x1470, size 0x36a20
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x37e90, size 0x1
@@ -8098,7 +8098,7 @@ version 57 {
     };
 
     // idx 16 members 6 size 0x68
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         uint:4 weaponmodelslot;
         // offset 0x8, size 0x8
@@ -8134,9 +8134,9 @@ version 57 {
         // offset 0x120, size 0x10
         uint:10 herogadget;
         // offset 0x130, size 0x68
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0x198, size 0x68
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 19 members 14 size 0x15450
@@ -8199,7 +8199,7 @@ version 57 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x1450
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x1470, size 0x2a8a0
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x2bd10, size 0x1
@@ -8464,7 +8464,7 @@ version 56 {
     };
 
     // idx 16 members 6 size 0x68
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         uint:4 weaponmodelslot;
         // offset 0x8, size 0x8
@@ -8500,9 +8500,9 @@ version 56 {
         // offset 0x120, size 0x10
         uint:10 herogadget;
         // offset 0x130, size 0x68
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0x198, size 0x68
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 19 members 14 size 0x15450
@@ -8565,7 +8565,7 @@ version 56 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x1450
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x1470, size 0x2a8a0
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x2bd10, size 0x1
@@ -8832,7 +8832,7 @@ version 55 {
     };
 
     // idx 16 members 6 size 0x68
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         uint:4 weaponmodelslot;
         // offset 0x8, size 0x8
@@ -8868,9 +8868,9 @@ version 55 {
         // offset 0x120, size 0x10
         uint:10 herogadget;
         // offset 0x130, size 0x68
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0x198, size 0x68
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 19 members 13 size 0x1b050
@@ -8931,7 +8931,7 @@ version 55 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x1450
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x1470, size 0x360a0
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x37510, size 0x1
@@ -9198,7 +9198,7 @@ version 54 {
     };
 
     // idx 16 members 6 size 0x68
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         uint:4 weaponmodelslot;
         // offset 0x8, size 0x8
@@ -9234,9 +9234,9 @@ version 54 {
         // offset 0x120, size 0x10
         uint:10 herogadget;
         // offset 0x130, size 0x68
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0x198, size 0x68
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 19 members 13 size 0x1b050
@@ -9297,7 +9297,7 @@ version 54 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x1450
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x1470, size 0x360a0
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x37510, size 0x1
@@ -9564,7 +9564,7 @@ version 53 {
     };
 
     // idx 16 members 6 size 0x68
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         uint:4 weaponmodelslot;
         // offset 0x8, size 0x8
@@ -9598,9 +9598,9 @@ version 53 {
         // offset 0x48, size 0x10
         uint:10 herogadget;
         // offset 0x58, size 0x68
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0xc0, size 0x68
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 19 members 13 size 0x1a7e0
@@ -9661,7 +9661,7 @@ version 53 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x1450
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x1470, size 0x34fc0
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x36430, size 0x1
@@ -9924,7 +9924,7 @@ version 52 {
     };
 
     // idx 16 members 6 size 0x68
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         uint:4 weaponmodelslot;
         // offset 0x8, size 0x8
@@ -9958,9 +9958,9 @@ version 52 {
         // offset 0x48, size 0x10
         uint:10 herogadget;
         // offset 0x58, size 0x68
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0xc0, size 0x68
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 19 members 13 size 0x1a7e0
@@ -10021,7 +10021,7 @@ version 52 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x1450
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x1470, size 0x34fc0
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x36430, size 0x1
@@ -10284,7 +10284,7 @@ version 51 {
     };
 
     // idx 16 members 6 size 0x68
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         uint:4 weaponmodelslot;
         // offset 0x8, size 0x8
@@ -10318,9 +10318,9 @@ version 51 {
         // offset 0x48, size 0x10
         uint:10 herogadget;
         // offset 0x58, size 0x68
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0xc0, size 0x68
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 19 members 13 size 0x1a7e0
@@ -10381,7 +10381,7 @@ version 51 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x1450
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x1470, size 0x34fc0
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x36430, size 0x1
@@ -10640,7 +10640,7 @@ version 50 {
     };
 
     // idx 16 members 6 size 0x68
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         uint:4 weaponmodelslot;
         // offset 0x8, size 0x8
@@ -10674,9 +10674,9 @@ version 50 {
         // offset 0x48, size 0x10
         uint:10 herogadget;
         // offset 0x58, size 0x68
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0xc0, size 0x68
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 19 members 13 size 0x1a7e0
@@ -10737,7 +10737,7 @@ version 50 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x1450
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x1470, size 0x34fc0
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x36430, size 0x1
@@ -10996,7 +10996,7 @@ version 49 {
     };
 
     // idx 16 members 5 size 0x60
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         uint:8 paintjobslot;
         // offset 0x8, size 0x10
@@ -11028,9 +11028,9 @@ version 49 {
         // offset 0x48, size 0x10
         uint:10 herogadget;
         // offset 0x58, size 0x60
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0xb8, size 0x60
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 19 members 13 size 0x1a740
@@ -11091,7 +11091,7 @@ version 49 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x12c0
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x12e0, size 0x34e80
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x36160, size 0x1
@@ -11350,7 +11350,7 @@ version 48 {
     };
 
     // idx 16 members 5 size 0x60
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         int:8 paintjobslot;
         // offset 0x8, size 0x10
@@ -11382,9 +11382,9 @@ version 48 {
         // offset 0x48, size 0x10
         uint:10 herogadget;
         // offset 0x58, size 0x60
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0xb8, size 0x60
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 19 members 13 size 0x1a740
@@ -11445,7 +11445,7 @@ version 48 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x12c0
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x12e0, size 0x34e80
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x36160, size 0x1
@@ -11704,7 +11704,7 @@ version 47 {
     };
 
     // idx 16 members 5 size 0x60
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         int:8 paintjobslot;
         // offset 0x8, size 0x10
@@ -11736,9 +11736,9 @@ version 47 {
         // offset 0x48, size 0x10
         uint:10 herogadget;
         // offset 0x58, size 0x60
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0xb8, size 0x60
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 19 members 13 size 0x1a740
@@ -11799,7 +11799,7 @@ version 47 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x12c0
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x12e0, size 0x34e80
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x36160, size 0x1
@@ -12088,7 +12088,7 @@ version 46 {
     };
 
     // idx 20 members 5 size 0x60
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         int:8 paintjobslot;
         // offset 0x8, size 0x10
@@ -12120,9 +12120,9 @@ version 46 {
         // offset 0x48, size 0x10
         uint:10 herogadget;
         // offset 0x58, size 0x60
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0xb8, size 0x60
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 23 members 13 size 0x20740
@@ -12183,7 +12183,7 @@ version 46 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x12c0
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x12e0, size 0x40e80
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x42160, size 0x1
@@ -12472,7 +12472,7 @@ version 45 {
     };
 
     // idx 20 members 5 size 0x60
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         int:8 paintjobslot;
         // offset 0x8, size 0x10
@@ -12504,9 +12504,9 @@ version 45 {
         // offset 0x48, size 0x10
         uint:10 herogadget;
         // offset 0x58, size 0x60
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0xb8, size 0x60
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 23 members 12 size 0x20738
@@ -12565,7 +12565,7 @@ version 45 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x12c0
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x12e0, size 0x40e70
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x42150, size 0x1
@@ -12854,7 +12854,7 @@ version 44 {
     };
 
     // idx 20 members 5 size 0x60
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         int:8 paintjobslot;
         // offset 0x8, size 0x10
@@ -12886,9 +12886,9 @@ version 44 {
         // offset 0x48, size 0x10
         uint:10 herogadget;
         // offset 0x58, size 0x60
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0xb8, size 0x60
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 23 members 12 size 0x205b8
@@ -12947,7 +12947,7 @@ version 44 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x12c0
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x12e0, size 0x40b70
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x41e50, size 0x1
@@ -13240,7 +13240,7 @@ version 43 {
     };
 
     // idx 21 members 5 size 0x60
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         int:8 paintjobslot;
         // offset 0x8, size 0x10
@@ -13272,9 +13272,9 @@ version 43 {
         // offset 0x48, size 0x10
         uint:10 herogadget;
         // offset 0x58, size 0x60
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0xb8, size 0x60
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 24 members 12 size 0x1a5b8
@@ -13333,7 +13333,7 @@ version 43 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x12c0
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x12e0, size 0x34b70
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x35e50, size 0x1
@@ -13624,7 +13624,7 @@ version 42 {
     };
 
     // idx 21 members 5 size 0x60
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         int:8 paintjobslot;
         // offset 0x8, size 0x10
@@ -13656,9 +13656,9 @@ version 42 {
         // offset 0x48, size 0x10
         uint:10 herogadget;
         // offset 0x58, size 0x60
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0xb8, size 0x60
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 24 members 12 size 0x1a5b8
@@ -13717,7 +13717,7 @@ version 42 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x12c0
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x12e0, size 0x34b70
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x35e50, size 0x1
@@ -14008,7 +14008,7 @@ version 41 {
     };
 
     // idx 21 members 5 size 0x60
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         int:8 paintjobslot;
         // offset 0x8, size 0x10
@@ -14040,9 +14040,9 @@ version 41 {
         // offset 0x48, size 0x10
         uint:10 herogadget;
         // offset 0x58, size 0x60
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0xb8, size 0x60
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 24 members 12 size 0x1a5b8
@@ -14101,7 +14101,7 @@ version 41 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x12c0
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x12e0, size 0x34b70
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x35e50, size 0x1
@@ -14382,7 +14382,7 @@ version 40 {
     };
 
     // idx 20 members 5 size 0x60
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         int:8 paintjobslot;
         // offset 0x8, size 0x10
@@ -14414,9 +14414,9 @@ version 40 {
         // offset 0x48, size 0x10
         uint:10 herogadget;
         // offset 0x58, size 0x60
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0xb8, size 0x60
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 23 members 12 size 0x17420
@@ -14475,7 +14475,7 @@ version 40 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x12c0
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x12e0, size 0x2e840
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x2fb20, size 0x1
@@ -14756,7 +14756,7 @@ version 39 {
     };
 
     // idx 20 members 5 size 0x60
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         int:8 paintjobslot;
         // offset 0x8, size 0x10
@@ -14788,9 +14788,9 @@ version 39 {
         // offset 0x48, size 0x10
         uint:10 herogadget;
         // offset 0x58, size 0x60
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0xb8, size 0x60
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 23 members 12 size 0x17420
@@ -14849,7 +14849,7 @@ version 39 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x12c0
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x12e0, size 0x2e840
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x2fb20, size 0x1
@@ -15132,7 +15132,7 @@ version 38 {
     };
 
     // idx 20 members 5 size 0x60
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         int:8 paintjobslot;
         // offset 0x8, size 0x10
@@ -15164,9 +15164,9 @@ version 38 {
         // offset 0x48, size 0x10
         uint:10 herogadget;
         // offset 0x58, size 0x60
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0xb8, size 0x60
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 23 members 12 size 0x18f08
@@ -15225,7 +15225,7 @@ version 38 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x12c0
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x12e0, size 0x31e10
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x330f0, size 0x1
@@ -15506,7 +15506,7 @@ version 37 {
     };
 
     // idx 20 members 5 size 0x60
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         int:8 paintjobslot;
         // offset 0x8, size 0x10
@@ -15538,9 +15538,9 @@ version 37 {
         // offset 0x48, size 0x10
         uint:10 herogadget;
         // offset 0x58, size 0x60
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0xb8, size 0x60
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 23 members 12 size 0x18488
@@ -15599,7 +15599,7 @@ version 37 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x12c0
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x12e0, size 0x30910
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x31bf0, size 0x1
@@ -15882,7 +15882,7 @@ version 36 {
     };
 
     // idx 20 members 5 size 0x60
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         int:8 paintjobslot;
         // offset 0x8, size 0x10
@@ -15914,9 +15914,9 @@ version 36 {
         // offset 0x48, size 0x10
         uint:10 herogadget;
         // offset 0x58, size 0x60
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0xb8, size 0x60
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 23 members 12 size 0x15a88
@@ -15974,7 +15974,7 @@ version 36 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x12c0
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x12e0, size 0x2b510
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x2c7f0, size 0x1
@@ -16257,7 +16257,7 @@ version 35 {
     };
 
     // idx 20 members 5 size 0x60
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         int:8 paintjobslot;
         // offset 0x8, size 0x10
@@ -16289,9 +16289,9 @@ version 35 {
         // offset 0x48, size 0x10
         uint:10 herogadget;
         // offset 0x58, size 0x60
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0xb8, size 0x60
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 23 members 12 size 0x15a88
@@ -16349,7 +16349,7 @@ version 35 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x12c0
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x12e0, size 0x2b510
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x2c7f0, size 0x1
@@ -16634,7 +16634,7 @@ version 34 {
     };
 
     // idx 20 members 5 size 0x60
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         int:8 paintjobslot;
         // offset 0x8, size 0x10
@@ -16666,9 +16666,9 @@ version 34 {
         // offset 0x48, size 0x10
         uint:10 herogadget;
         // offset 0x58, size 0x60
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0xb8, size 0x60
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 23 members 12 size 0x15a88
@@ -16726,7 +16726,7 @@ version 34 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x12c0
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x12e0, size 0x2b510
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x2c7f0, size 0x1
@@ -16995,7 +16995,7 @@ version 33 {
     };
 
     // idx 17 members 5 size 0x60
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         int:8 paintjobslot;
         // offset 0x8, size 0x10
@@ -17027,9 +17027,9 @@ version 33 {
         // offset 0x48, size 0x10
         uint:10 herogadget;
         // offset 0x58, size 0x60
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0xb8, size 0x60
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 20 members 13 size 0x2b750
@@ -17086,7 +17086,7 @@ version 33 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x12c0
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x12e0, size 0x56ea0
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x58180, size 0x1
@@ -17355,7 +17355,7 @@ version 32 {
     };
 
     // idx 17 members 5 size 0x60
-    struct hash_51ee933f6ee8ec54 {
+    struct zmloadoutweapon {
         // offset 0x0, size 0x8
         int:8 paintjobslot;
         // offset 0x8, size 0x10
@@ -17387,9 +17387,9 @@ version 32 {
         // offset 0x48, size 0x10
         uint:10 herogadget;
         // offset 0x58, size 0x60
-        hash_51ee933f6ee8ec54 secondary;
+        zmloadoutweapon secondary;
         // offset 0xb8, size 0x60
-        hash_51ee933f6ee8ec54 primary;
+        zmloadoutweapon primary;
     };
 
     // idx 20 members 13 size 0x17cf0
@@ -17446,7 +17446,7 @@ version 32 {
     // offset 0x0, size 0x20
     int loadoutversion;
     // offset 0x20, size 0x12c0
-    hash_51ee933f6ee8ec54 variant[50];
+    zmloadoutweapon variant[50];
     // offset 0x12e0, size 0x2f9e0
     hash_18b04f5b045db908 cacloadouts[2];
     // offset 0x30cc0, size 0x1

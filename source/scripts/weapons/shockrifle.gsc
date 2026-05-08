@@ -34,11 +34,11 @@ function init_shared()
     
     if ( isdefined( level.shockrifleweapon.customsettings ) )
     {
-        level.var_a5ff950 = getscriptbundle( level.shockrifleweapon.customsettings );
+        level.shockriflebundle = getscriptbundle( level.shockrifleweapon.customsettings );
     }
     else
     {
-        level.var_a5ff950 = getscriptbundle( "shock_rifle_custom_settings" );
+        level.shockriflebundle = getscriptbundle( "shock_rifle_custom_settings" );
     }
     
     weaponobjects::function_e6400478( #"shock_rifle", &function_c1aa8f6b, 0 );
@@ -106,10 +106,10 @@ function function_c1aa8f6b( watcher )
     watcher.ignoredirection = 1;
     watcher.immediatedetonation = 1;
     watcher.detectiongraceperiod = 0;
-    watcher.detonateradius = level.var_a5ff950.var_9c0267f2 + 50;
+    watcher.detonateradius = level.shockriflebundle.var_9c0267f2 + 50;
     watcher.onstun = &weaponobjects::weaponstun;
     watcher.stuntime = 1;
-    watcher.timeout = level.var_a5ff950.shockduration;
+    watcher.timeout = level.shockriflebundle.shockduration;
     watcher.ondetonatecallback = &function_7ce0a335;
     watcher.activationdelay = 0;
     watcher.activatesound = #"wpn_claymore_alert";
@@ -128,7 +128,7 @@ function function_a0081b68( ent )
 {
     self endon( #"death" );
     ent waittill( #"death" );
-    wait level.var_a5ff950.var_e6dccd20;
+    wait level.shockriflebundle.var_e6dccd20;
     self function_7ce0a335( undefined, undefined, undefined );
 }
 
@@ -157,7 +157,7 @@ function function_aa6e2f52( watcher, owner )
     }
     else
     {
-        watcher.timeout = level.var_a5ff950.shockduration;
+        watcher.timeout = level.shockriflebundle.shockduration;
     }
     
     self playsound( "prj_lightning_impact_human_fatal" );
@@ -169,7 +169,7 @@ function function_aa6e2f52( watcher, owner )
     }
     
     playfxontag( "weapon/fx8_hero_sig_shockrifle_spike_active", self, "tag_fx" );
-    wait isdefined( level.var_a5ff950.var_aded392d ) ? level.var_a5ff950.var_aded392d : 0;
+    wait isdefined( level.shockriflebundle.shockdelay ) ? level.shockriflebundle.shockdelay : 0;
     
     if ( isdefined( waitresult.hitent ) && isdefined( owner ) && util::function_fbce7263( waitresult.hitent.team, owner.team ) )
     {
@@ -185,7 +185,7 @@ function function_aa6e2f52( watcher, owner )
 // Size: 0x5a, Type: bool
 function function_7cc07921( ent )
 {
-    if ( distancesquared( self.origin, ent.origin ) <= level.var_a5ff950.var_9c0267f2 * level.var_a5ff950.var_9c0267f2 )
+    if ( distancesquared( self.origin, ent.origin ) <= level.shockriflebundle.var_9c0267f2 * level.shockriflebundle.var_9c0267f2 )
     {
         return true;
     }
@@ -225,7 +225,7 @@ function function_5fff8c45( watcher, hitent )
     up = anglestoup( self.angles );
     traceorigin = self.origin + up;
     
-    while ( self.var_7471e7b7 < level.var_a5ff950.var_1fb6bd43 )
+    while ( self.var_7471e7b7 < level.shockriflebundle.submunitioncharges )
     {
         waitresult = damagearea waittill( #"trigger" );
         ent = waitresult.activator;
@@ -292,7 +292,7 @@ function function_33020ed7( ent )
 // Size: 0x8e, Type: bool
 function function_c23ed15d( ent, shockduration )
 {
-    if ( isdefined( ent.hittime ) && ent.hittime + shockduration + int( ( isdefined( level.var_a5ff950.var_80cecde8 ) ? level.var_a5ff950.var_80cecde8 : 0 ) * 1000 ) > gettime() )
+    if ( isdefined( ent.hittime ) && ent.hittime + shockduration + int( ( isdefined( level.shockriflebundle.var_80cecde8 ) ? level.shockriflebundle.var_80cecde8 : 0 ) * 1000 ) > gettime() )
     {
         return true;
     }
@@ -306,7 +306,7 @@ function function_c23ed15d( ent, shockduration )
 // Size: 0x70
 function function_a64504d2()
 {
-    shockduration = level.var_a5ff950.shockduration;
+    shockduration = level.shockriflebundle.shockduration;
     
     if ( isplayer( self ) )
     {
@@ -500,7 +500,7 @@ function function_c80bac1f( shockcharge, var_51415470, shockduration )
 // Size: 0x1c4
 function function_e0141557( ent, var_51415470 )
 {
-    damage = var_51415470 ? level.var_a5ff950.impactdamage : level.var_a5ff950.shockdamage;
+    damage = var_51415470 ? level.shockriflebundle.impactdamage : level.shockriflebundle.shockdamage;
     isplayer = isplayer( ent );
     
     if ( isdefined( ent.var_beee9523 ) && ent.var_beee9523 )
@@ -564,7 +564,7 @@ function function_92eabc2f( ent, var_51415470 )
     ent.var_beee9523 = 1;
     shockduration = ent function_a64504d2();
     params = getstatuseffect( #"shock_rifle_shock" );
-    ent status_effect::status_effect_apply( params, level.shockrifleweapon, self.owner, 0, int( ( shockduration + level.var_a5ff950.var_772f6a9c ) * 1000 ), undefined, self.origin );
+    ent status_effect::status_effect_apply( params, level.shockrifleweapon, self.owner, 0, int( ( shockduration + level.shockriflebundle.var_772f6a9c ) * 1000 ), undefined, self.origin );
     isplayer = isplayer( ent );
     
     if ( isplayer )
@@ -605,7 +605,7 @@ function function_7ce0a335( attacker, weapon, target )
     self ghost();
     self notsolid();
     self stoploopsound( 0.5 );
-    wait level.var_a5ff950.shockduration + 1;
+    wait level.shockriflebundle.shockduration + 1;
     self delete();
 }
 

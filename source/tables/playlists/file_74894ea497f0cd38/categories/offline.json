@@ -1,6 +1,6 @@
 {
     "name": "#offline",
-    "description": "#hash_672bb745fed1cd7e",
+    "description": "#menu/offline",
     "lobbyMainMode": "unknown",
     "hidden": false,
     "environmentMask": 7,
@@ -39,7 +39,7 @@
             "bundle": {}
         },
         {
-            "name": "#hash_bd9266686c3fb05",
+            "name": "#entry_mp_offline",
             "lobbyMainMode": "MULTIPLAYER",
             "image": "#ui_icon_gamemode_teamdeathmatch_large",
             "imageBackground": "#hash_93597b8a8c3107fb",
@@ -73,7 +73,7 @@
             "bundle": {}
         },
         {
-            "name": "#hash_1354362ee03eaa5d",
+            "name": "#entry_wz_offline",
             "lobbyMainMode": "WARZONE",
             "image": "#ui_icon_gamemode_wz_solo_large",
             "imageBackground": "#hash_a01a2221611030e6",
@@ -107,7 +107,7 @@
             "bundle": {}
         },
         {
-            "name": "#hash_6f91f453a56eb5b1",
+            "name": "#entry_zm_offline",
             "lobbyMainMode": "CAMPAIGN",
             "image": "#icon_frontend_navigation_zm",
             "imageBackground": "#director_frontend_zm",

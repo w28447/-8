@@ -647,7 +647,7 @@ function getvalidtargets( hawk, &stance_offsets )
     
     forward = anglestoforward( self.hawk.var_82bf9f7b );
     bundle = level.hawk_settings.bundle;
-    var_e4f883c1 = bundle.var_957e91c4 * bundle.var_957e91c4;
+    var_e4f883c1 = bundle.tag_distance * bundle.tag_distance;
     now = gettime();
     enemies = self getenemies();
     

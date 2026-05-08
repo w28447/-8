@@ -31,11 +31,11 @@ function __init__()
     
     if ( isdefined( level.tripwireweapon.customsettings ) )
     {
-        level.var_c72e8c51 = getscriptbundle( level.tripwireweapon.customsettings );
+        level.tripwirebundle = getscriptbundle( level.tripwireweapon.customsettings );
     }
     else
     {
-        level.var_c72e8c51 = getscriptbundle( "tripwire_custom_settings" );
+        level.tripwirebundle = getscriptbundle( "tripwire_custom_settings" );
     }
     
     if ( !isdefined( level.var_77cae643 ) )
@@ -193,7 +193,7 @@ function function_55c50f15()
             continue;
         }
         
-        if ( distancesquared( tripwire.origin, self.origin ) >= 100 && distancesquared( tripwire.origin, self.origin ) <= level.var_c72e8c51.var_831055cb * level.var_c72e8c51.var_831055cb )
+        if ( distancesquared( tripwire.origin, self.origin ) >= 100 && distancesquared( tripwire.origin, self.origin ) <= level.tripwirebundle.var_831055cb * level.tripwirebundle.var_831055cb )
         {
             pos = self gettagorigin( "tag_fx" );
             otherpos = tripwire gettagorigin( "tag_fx" );
@@ -213,7 +213,7 @@ function function_55c50f15()
                             {
                                 if ( player util::isenemyteam( self.owner.team ) )
                                 {
-                                    if ( isdefined( level.var_c72e8c51.var_10e5bb56 ) && level.var_c72e8c51.var_10e5bb56 )
+                                    if ( isdefined( level.tripwirebundle.var_10e5bb56 ) && level.tripwirebundle.var_10e5bb56 )
                                     {
                                         beamname = "beam8_plyr_equip_ied_enmy_wz";
                                     }
@@ -222,7 +222,7 @@ function function_55c50f15()
                                         beamname = "beam8_plyr_equip_ied_enmy";
                                     }
                                 }
-                                else if ( isdefined( level.var_c72e8c51.var_10e5bb56 ) && level.var_c72e8c51.var_10e5bb56 )
+                                else if ( isdefined( level.tripwirebundle.var_10e5bb56 ) && level.tripwirebundle.var_10e5bb56 )
                                 {
                                     beamname = "beam8_plyr_equip_ied_frnd_wz";
                                 }
@@ -475,7 +475,7 @@ function function_26c580d9( localclientnum, tripwire, trace, var_f2edf308 )
         return false;
     }
     
-    if ( distancesquared( tripwire.origin, self.origin ) > level.var_c72e8c51.var_831055cb * level.var_c72e8c51.var_831055cb )
+    if ( distancesquared( tripwire.origin, self.origin ) > level.tripwirebundle.var_831055cb * level.tripwirebundle.var_831055cb )
     {
         return false;
     }

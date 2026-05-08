@@ -144,9 +144,9 @@ function function_79fad591()
 // Size: 0x138
 function function_62018caa( e_player )
 {
-    var_235457fd = self zm_crafting::function_126fc77c( e_player );
+    b_can_use = self zm_crafting::function_126fc77c( e_player );
     
-    if ( var_235457fd )
+    if ( b_can_use )
     {
         var_87d6e5ff = zm_crafting::function_b18074d0( self.stub.blueprint.name );
         var_b3c7df1a = zm_crafting::function_b18074d0( #"zblueprint_mansion_silver_molten" );
@@ -157,7 +157,7 @@ function function_62018caa( e_player )
         }
     }
     
-    return var_235457fd;
+    return b_can_use;
 }
 
 // Namespace mansion_silver_bullet/zm_mansion_silver_bullet

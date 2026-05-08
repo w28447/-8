@@ -54,8 +54,8 @@
     "fx_c88": "#hash_9c7f0dbc37829f85",
     "fx_c90": "#hash_9c7f0dbc37829f85",
     "fx_c98": "#hash_9c7f0dbc37829f85",
-    "normalImpactFX": "#hash_146d30ee171ae16a",
-    "exitImpactFX": "#hash_3f7991ca1680bd5c",
+    "normalImpactFX": "#bullet_ap_enter",
+    "exitImpactFX": "#bullet_ap_exit",
     "normalImpactSounds": "#bullet_impact",
     "exitImpactSounds": "#hash_d0191cc37bfbfeea"
 }

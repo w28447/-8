@@ -16,23 +16,23 @@
                 "name": "#telemetry_header",
                 "members": [
                     {
-                        "name": "#hash_f2ad74d8edb8204",
-                        "scrName": "#hash_50f7aa03",
+                        "name": "#game_session_id",
+                        "scrName": "#game_session_id",
                         "type": "UINT64"
                     },
                     {
                         "name": "#action_type",
-                        "scrName": "#hash_42e28add",
+                        "scrName": "#action_type",
                         "type": "XHASH"
                     },
                     {
                         "name": "#title_id",
-                        "scrName": "#hash_8f4c2b40",
+                        "scrName": "#title_id",
                         "type": "UINT32"
                     },
                     {
                         "name": "#build_version",
-                        "scrName": "#hash_26065d8a",
+                        "scrName": "#build_version",
                         "type": "STRING",
                         "len": 32
                     },
@@ -43,7 +43,7 @@
                     },
                     {
                         "name": "#source_version",
-                        "scrName": "#hash_a56621db",
+                        "scrName": "#source_version",
                         "type": "UINT16"
                     },
                     {
@@ -53,7 +53,7 @@
                     },
                     {
                         "name": "#changelist_number",
-                        "scrName": "#hash_e632366e",
+                        "scrName": "#changelist_number",
                         "type": "INT32"
                     }
                 ]
@@ -67,7 +67,7 @@
                 "members": [
                     {
                         "name": "#lobby_id",
-                        "scrName": "#hash_41a8e579",
+                        "scrName": "#lobby_id",
                         "type": "UINT64"
                     },
                     {
@@ -91,17 +91,17 @@
                 "members": [
                     {
                         "name": "#user_id",
-                        "scrName": "#hash_fada396e",
+                        "scrName": "#user_id",
                         "type": "UINT64"
                     },
                     {
                         "name": "#user_session_id",
-                        "scrName": "#hash_e004f74d",
+                        "scrName": "#user_session_id",
                         "type": "UINT64"
                     },
                     {
                         "name": "#uno_id",
-                        "scrName": "#hash_e7339473",
+                        "scrName": "#uno_id",
                         "type": "UINT64"
                     }
                 ]
@@ -116,23 +116,23 @@
             "len": 48
         },
         {
-            "name": "#hash_44b60fa51ab054e6",
+            "name": "#streamer_kb",
             "scrName": "#hash_73a5427c",
             "type": "INT16"
         },
         {
-            "name": "#hash_48aa6d0eef0bd470",
+            "name": "#alloc_name",
             "scrName": "#hash_ffc2f8e",
             "type": "STRING",
             "len": 48
         },
         {
-            "name": "#hash_5d9319d04e791326",
+            "name": "#alloc_kb",
             "scrName": "#hash_e7d06106",
             "type": "INT32"
         },
         {
-            "name": "#hash_63dcf3f7c968b4e0",
+            "name": "#used_kb",
             "scrName": "#hash_ce0262e9",
             "type": "INT32"
         },
@@ -148,7 +148,7 @@
             "len": 48
         },
         {
-            "name": "#hash_717606193abf3b46",
+            "name": "#clock_ms",
             "scrName": "#hash_a0884f70",
             "type": "INT32"
         }

@@ -532,7 +532,7 @@ function private function_78bf134c( localclientnum, clientdata, networkid, model
     
     if ( isdefined( itementry ) && isdefined( itementry.worldfx ) && !isdefined( model.modelfx ) && !model ishidden() )
     {
-        originoffset = ( isdefined( itementry.var_5dc4470b ) ? itementry.var_5dc4470b : 0, isdefined( itementry.var_54a3b4ca ) ? itementry.var_54a3b4ca : 0, isdefined( itementry.var_3e688854 ) ? itementry.var_3e688854 : 0 );
+        originoffset = ( isdefined( itementry.modeloffsetx ) ? itementry.modeloffsetx : 0, isdefined( itementry.modeloffsety ) ? itementry.modeloffsety : 0, isdefined( itementry.modeloffsetz ) ? itementry.modeloffsetz : 0 );
         originoffset = rotatepoint( originoffset * -1, model.angles );
         originoffset += rotatepoint( ( isdefined( itementry.var_22d128f2 ) ? itementry.var_22d128f2 : 0, isdefined( itementry.var_48907470 ) ? itementry.var_48907470 : 0, isdefined( itementry.var_702943a1 ) ? itementry.var_702943a1 : 0 ), model.angles );
         angles = combineangles( model.angles, ( isdefined( itementry.var_15b88fde ) ? itementry.var_15b88fde : 0, isdefined( itementry.var_8c9a7dc8 ) ? itementry.var_8c9a7dc8 : 0, isdefined( itementry.var_7a51d937 ) ? itementry.var_7a51d937 : 0 ) );
@@ -688,7 +688,7 @@ function private _draw( localclientnum, draworigin )
                 function_2990e5f( localclientnum, model );
             }
             
-            originoffset = ( isdefined( item.itementry.var_5dc4470b ) ? item.itementry.var_5dc4470b : 0, isdefined( item.itementry.var_54a3b4ca ) ? item.itementry.var_54a3b4ca : 0, isdefined( item.itementry.var_3e688854 ) ? item.itementry.var_3e688854 : 0 );
+            originoffset = ( isdefined( item.itementry.modeloffsetx ) ? item.itementry.modeloffsetx : 0, isdefined( item.itementry.modeloffsety ) ? item.itementry.modeloffsety : 0, isdefined( item.itementry.modeloffsetz ) ? item.itementry.modeloffsetz : 0 );
             model.origin += rotatepoint( originoffset, model.angles );
             
             if ( item_world_util::function_da09de95( item.networkid ) )
@@ -2727,7 +2727,7 @@ function function_7571fda9( item )
     }
     
     itementry = item.itementry;
-    originoffset = ( isdefined( itementry.var_5dc4470b ) ? itementry.var_5dc4470b : 0, isdefined( itementry.var_54a3b4ca ) ? itementry.var_54a3b4ca : 0, isdefined( itementry.var_3e688854 ) ? itementry.var_3e688854 : 0 );
+    originoffset = ( isdefined( itementry.modeloffsetx ) ? itementry.modeloffsetx : 0, isdefined( itementry.modeloffsety ) ? itementry.modeloffsety : 0, isdefined( itementry.modeloffsetz ) ? itementry.modeloffsetz : 0 );
     originoffset = rotatepoint( originoffset * -1, item.angles );
     return originoffset;
 }

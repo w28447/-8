@@ -382,7 +382,7 @@ function function_391d5d90( params )
         if ( isdefined( self.favoriteenemy ) && isalive( self.favoriteenemy ) )
         {
             self setbrake( 0 );
-            self setspeed( self.settings.var_2c69a255 );
+            self setspeed( self.settings.chasespeed );
             
             if ( function_23d1cec2() && !ispointonnavmesh( self.origin, self ) )
             {
@@ -479,7 +479,7 @@ function function_3acf1c61()
     
     if ( isdefined( target_pos ) )
     {
-        target_pos_onnavmesh = getclosestpointonnavmesh( target_pos, self.settings.var_c694bbbf * 1.5, self getpathfindingradius() * 1.2, 4194287 );
+        target_pos_onnavmesh = getclosestpointonnavmesh( target_pos, self.settings.discharge_distance * 1.5, self getpathfindingradius() * 1.2, 4194287 );
     }
     
     if ( isdefined( target_pos_onnavmesh ) )
@@ -590,9 +590,9 @@ function function_fb89ba8a( params )
     self endon( #"change_state" );
     self thread function_13ade03e();
     starttime = gettime();
-    var_b2c9484f = int( self.settings.var_e0c78652 * 1000 );
+    dischargeduration = int( self.settings.discharge_duration * 1000 );
     
-    while ( starttime + var_b2c9484f > gettime() && !isdefined( self.var_290ed3ab ) || isdefined( self.var_290ed3ab ) && self.var_290ed3ab > gettime() || isdefined( self.var_e19bcce0 ) && self.var_e19bcce0 )
+    while ( starttime + dischargeduration > gettime() && !isdefined( self.var_290ed3ab ) || isdefined( self.var_290ed3ab ) && self.var_290ed3ab > gettime() || isdefined( self.var_e19bcce0 ) && self.var_e19bcce0 )
     {
         if ( isdefined( self.arcweapon ) )
         {
@@ -823,7 +823,7 @@ function function_3e16dec3( params )
             {
                 if ( self function_a57c34b7( self.current_pathto_pos, 0, 1 ) )
                 {
-                    self setspeed( self.settings.var_68c74e4f );
+                    self setspeed( self.settings.huntspeed );
                     self setbrake( 0 );
                     self waittill_pathing_done( 2 );
                     continue;
@@ -831,7 +831,7 @@ function function_3e16dec3( params )
             }
         }
         
-        self setspeed( self.settings.var_9eff22ee );
+        self setspeed( self.settings.seekspeed );
         
         if ( function_23d1cec2() )
         {
@@ -923,7 +923,7 @@ function function_3e16dec3( params )
 // Params 1
 // Checksum 0x985b7abd, Offset: 0x26a0
 // Size: 0xc0, Type: bool
-function function_ab9a9770( target )
+function duf47( target )
 {
     results = groundtrace( target.origin + ( 0, 0, 70 ), target.origin + ( 0, 0, -100 ), 0, target );
     
@@ -982,7 +982,7 @@ function function_9ba314a1( target )
             }
         }
         
-        if ( function_ab9a9770( target ) )
+        if ( duf47( target ) )
         {
             return true;
         }
@@ -1049,7 +1049,7 @@ function function_9ba314a1( target )
     
     if ( isdefined( target ) )
     {
-        target_pos_onnavmesh = getclosestpointonnavmesh( target.origin, self.settings.var_c694bbbf * 1.5, self getpathfindingradius() * 1.2, 4194287 );
+        target_pos_onnavmesh = getclosestpointonnavmesh( target.origin, self.settings.discharge_distance * 1.5, self getpathfindingradius() * 1.2, 4194287 );
         
         if ( !isdefined( target_pos_onnavmesh ) )
         {

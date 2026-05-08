@@ -114,7 +114,7 @@
             "rotations": [
                 {
                     "map": "#zm_zodt8",
-                    "gametype": "#hash_59737db3dbdcb288",
+                    "gametype": "#gametype_zm_zclassic",
                     "weight": 1,
                     "isFree": false
                 }
@@ -123,7 +123,7 @@
         },
         {
             "name": "#hash_79f70a063aecd744",
-            "description": "#hash_1fbf66a81cc73280",
+            "description": "#playlist/zm_towers",
             "unique_name": "#hash_7a91c22c69d54dc4",
             "lobbyMainMode": "CAMPAIGN",
             "image": "#ui_icon_gamemode_zm_classic",
@@ -230,7 +230,7 @@
             "rotations": [
                 {
                     "map": "#zm_towers",
-                    "gametype": "#hash_59737db3dbdcb288",
+                    "gametype": "#gametype_zm_zclassic",
                     "weight": 1,
                     "isFree": true
                 }
@@ -347,13 +347,13 @@
             "rotations": [
                 {
                     "map": "#zm_escape",
-                    "gametype": "#hash_59737db3dbdcb288",
+                    "gametype": "#gametype_zm_zclassic",
                     "weight": 1,
                     "isFree": false
                 },
                 {
                     "map": "#zm_office",
-                    "gametype": "#hash_59737db3dbdcb288",
+                    "gametype": "#gametype_zm_zclassic",
                     "weight": 1,
                     "isFree": false
                 }
@@ -470,7 +470,7 @@
             "rotations": [
                 {
                     "map": "#zm_towers",
-                    "gametype": "#hash_59737db3dbdcb288",
+                    "gametype": "#gametype_zm_zclassic",
                     "weight": 1,
                     "isFree": false
                 }
@@ -605,7 +605,7 @@
         },
         {
             "name": "#hash_5bae0bf59a9b2fbf",
-            "description": "#hash_48120353e988a126",
+            "description": "#playlist/zm_office",
             "unique_name": "#hash_3d7df7f70551f80a",
             "dlcName": "dlc0zm",
             "lobbyMainMode": "CAMPAIGN",
@@ -713,7 +713,7 @@
             "rotations": [
                 {
                     "map": "#zm_office",
-                    "gametype": "#hash_59737db3dbdcb288",
+                    "gametype": "#gametype_zm_zclassic",
                     "weight": 1,
                     "isFree": false
                 }
@@ -722,7 +722,7 @@
         },
         {
             "name": "#hash_c1c870fa5e24518",
-            "description": "#hash_4aebc92557870439",
+            "description": "#playlist/zm_escape",
             "unique_name": "#hash_7226cb1d509ebfbd",
             "lobbyMainMode": "CAMPAIGN",
             "image": "#ui_icon_gamemode_zm_classic",
@@ -829,7 +829,7 @@
             "rotations": [
                 {
                     "map": "#zm_escape",
-                    "gametype": "#hash_59737db3dbdcb288",
+                    "gametype": "#gametype_zm_zclassic",
                     "weight": 1,
                     "isFree": false
                 }
@@ -838,7 +838,7 @@
         },
         {
             "name": "#hash_590e2b04d3a3e59a",
-            "description": "#hash_7d0fb557f16fbe9f",
+            "description": "#playlist/zm_mansion",
             "unique_name": "#hash_708ca3393b7322ab",
             "dlcName": "dlc1zm",
             "lobbyMainMode": "CAMPAIGN",
@@ -946,7 +946,7 @@
             "rotations": [
                 {
                     "map": "#zm_mansion",
-                    "gametype": "#hash_59737db3dbdcb288",
+                    "gametype": "#gametype_zm_zclassic",
                     "weight": 1,
                     "isFree": false
                 }
@@ -1415,13 +1415,13 @@
             "rotations": [
                 {
                     "map": "#zm_escape",
-                    "gametype": "#hash_59737db3dbdcb288",
+                    "gametype": "#gametype_zm_zclassic",
                     "weight": 1,
                     "isFree": false
                 },
                 {
                     "map": "#zm_office",
-                    "gametype": "#hash_59737db3dbdcb288",
+                    "gametype": "#gametype_zm_zclassic",
                     "weight": 1,
                     "isFree": false
                 }
@@ -1538,25 +1538,25 @@
             "rotations": [
                 {
                     "map": "#zm_zodt8",
-                    "gametype": "#hash_59737db3dbdcb288",
+                    "gametype": "#gametype_zm_zclassic",
                     "weight": 1,
                     "isFree": false
                 },
                 {
                     "map": "#zm_towers",
-                    "gametype": "#hash_59737db3dbdcb288",
+                    "gametype": "#gametype_zm_zclassic",
                     "weight": 1,
                     "isFree": false
                 },
                 {
                     "map": "#zm_mansion",
-                    "gametype": "#hash_59737db3dbdcb288",
+                    "gametype": "#gametype_zm_zclassic",
                     "weight": 1,
                     "isFree": false
                 },
                 {
                     "map": "#zm_red",
-                    "gametype": "#hash_59737db3dbdcb288",
+                    "gametype": "#gametype_zm_zclassic",
                     "weight": 1,
                     "isFree": false
                 }
@@ -1790,7 +1790,7 @@
             "rotations": [
                 {
                     "map": "#zm_red",
-                    "gametype": "#hash_59737db3dbdcb288",
+                    "gametype": "#gametype_zm_zclassic",
                     "weight": 1,
                     "isFree": false
                 }
@@ -2204,7 +2204,7 @@
             "rotations": [
                 {
                     "map": "#zm_quickplay",
-                    "gametype": "#hash_53ca52331c381cd3",
+                    "gametype": "#gametype_zm_quickplay",
                     "weight": 1,
                     "isFree": false
                 }
@@ -2213,7 +2213,7 @@
         },
         {
             "name": "#hash_2830aec2df4b9476",
-            "description": "#hash_2744ee0ea477fe83",
+            "description": "#playlist/zm_white",
             "unique_name": "#hash_2e9ec32a2b942215",
             "dlcName": "dlc3zm",
             "lobbyMainMode": "CAMPAIGN",
@@ -2321,7 +2321,7 @@
             "rotations": [
                 {
                     "map": "#zm_white",
-                    "gametype": "#hash_59737db3dbdcb288",
+                    "gametype": "#gametype_zm_zclassic",
                     "weight": 1,
                     "isFree": false
                 }
@@ -2447,7 +2447,7 @@
         },
         {
             "name": "#hash_6898a0b2be8539bd",
-            "description": "#hash_205da08f663efca0",
+            "description": "#playlist/zm_orange",
             "unique_name": "#hash_36437ccd18f85074",
             "dlcName": "dlc4zm",
             "lobbyMainMode": "CAMPAIGN",
@@ -2555,7 +2555,7 @@
             "rotations": [
                 {
                     "map": "#zm_orange",
-                    "gametype": "#hash_59737db3dbdcb288",
+                    "gametype": "#gametype_zm_zclassic",
                     "weight": 1,
                     "isFree": false
                 }

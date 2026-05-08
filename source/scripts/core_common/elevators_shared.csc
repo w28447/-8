@@ -52,66 +52,66 @@ function function_58c9169d( localclientnum, oldval, newval, bnewent, binitialsna
         switch ( floornum )
         {
             case 1:
-                var_8cb245a4 = i;
+                displaynum = i;
                 break;
             case 2:
-                var_8cb245a4 = i;
+                displaynum = i;
                 break;
             case 3:
-                var_8cb245a4 = i;
+                displaynum = i;
                 break;
             case 4:
-                var_8cb245a4 = i;
+                displaynum = i;
                 break;
             case 5:
-                var_8cb245a4 = i;
+                displaynum = i;
                 break;
             case 6:
-                var_8cb245a4 = i;
+                displaynum = i;
                 break;
             case 7:
-                var_8cb245a4 = i;
+                displaynum = i;
                 break;
             case 45:
-                var_8cb245a4 = 23;
+                displaynum = 23;
                 break;
             case 46:
-                var_8cb245a4 = 24;
+                displaynum = 24;
                 break;
             case 57:
-                var_8cb245a4 = 30;
+                displaynum = 30;
                 break;
             case 58:
-                var_8cb245a4 = 31;
+                displaynum = 31;
                 break;
             case 59:
-                var_8cb245a4 = 32;
+                displaynum = 32;
                 break;
             case 97:
-                var_8cb245a4 = 53;
+                displaynum = 53;
                 break;
             case 21:
-                var_8cb245a4 = i + 6;
+                displaynum = i + 6;
                 break;
             case 22:
-                var_8cb245a4 = i + 6;
+                displaynum = i + 6;
                 break;
             case 35:
-                var_8cb245a4 = i + 10;
+                displaynum = i + 10;
                 break;
             case 36:
-                var_8cb245a4 = i + 10;
+                displaynum = i + 10;
                 break;
             case 37:
-                var_8cb245a4 = i + 10;
+                displaynum = i + 10;
                 break;
             case 38:
-                var_8cb245a4 = i + 10;
+                displaynum = i + 10;
                 break;
         }
         
         itemuimodel = createuimodel( var_aeb02423, "item" + i );
-        setuimodelvalue( createuimodel( itemuimodel, "name" ), mapbundle.var_88d22b06[ 1 ].var_aa061872[ var_8cb245a4 ].displayname );
+        setuimodelvalue( createuimodel( itemuimodel, "name" ), mapbundle.var_88d22b06[ 1 ].var_aa061872[ displaynum ].displayname );
         setuimodelvalue( createuimodel( itemuimodel, "id" ), floornum );
     }
     

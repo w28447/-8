@@ -1,7 +1,7 @@
 {
     "name": "#hash_57bc4cca2d976a81",
     "baseWeapon": "#hash_5b4f32b99fbab593",
-    "displayname": "#hash_267ca0799b7eacf9",
+    "displayname": "#dog/name",
     "weapon70": "#ability_dog",
     "streamkey": "#hash_bd276b796b0afb1",
     "worldModelTagRight": "tag_accessory_left",
@@ -32,7 +32,7 @@
     "sound660": "#uin_unavailable_charging",
     "projexplosionsound": "#hash_20cda79cd396562",
     "tunables1": "#ability_dog_tunables_mp",
-    "cacWeaponXCam": "#hash_332152b763bc1b",
+    "cacWeaponXCam": "#ui_cam_cac_equip_blackhat",
     "gestureTables": [
         "#hash_2c75f3bef8443438"
     ],

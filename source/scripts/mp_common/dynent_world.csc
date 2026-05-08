@@ -46,9 +46,9 @@ function event_handler[event_9673dc9a] function_3981d015( eventstruct )
         {
             if ( var_eb7c2031 && !function_8a8a409b( dynent ) )
             {
-                if ( isdefined( newstate.var_55c3fa1 ) )
+                if ( isdefined( newstate.dynent_sound ) )
                 {
-                    playsound( 0, newstate.var_55c3fa1, dynent.origin );
+                    playsound( 0, newstate.dynent_sound, dynent.origin );
                 }
                 
                 return;
@@ -59,21 +59,21 @@ function event_handler[event_9673dc9a] function_3981d015( eventstruct )
         var_718063b0 = eventstruct.rootorigin;
         var_c286a1ae = eventstruct.rootangles;
         
-        if ( !( isdefined( bundle.var_f710132b ) && bundle.var_f710132b ) )
+        if ( !( isdefined( bundle.skiptransformation ) && bundle.skiptransformation ) )
         {
             pos = ( isdefined( newstate.pos_x ) ? newstate.pos_x : 0, isdefined( newstate.pos_y ) ? newstate.pos_y : 0, isdefined( newstate.pos_z ) ? newstate.pos_z : 0 );
             pos = rotatepoint( pos, var_c286a1ae );
             neworigin = var_718063b0 + pos;
-            pitch = var_c286a1ae[ 0 ] + ( isdefined( newstate.var_9d1a4684 ) ? newstate.var_9d1a4684 : 0 );
-            yaw = var_c286a1ae[ 1 ] + ( isdefined( newstate.var_d81008de ) ? newstate.var_d81008de : 0 );
-            roll = var_c286a1ae[ 2 ] + ( isdefined( newstate.var_774f5d57 ) ? newstate.var_774f5d57 : 0 );
+            pitch = var_c286a1ae[ 0 ] + ( isdefined( newstate.rot_pitch ) ? newstate.rot_pitch : 0 );
+            yaw = var_c286a1ae[ 1 ] + ( isdefined( newstate.rot_yaw ) ? newstate.rot_yaw : 0 );
+            roll = var_c286a1ae[ 2 ] + ( isdefined( newstate.rot_roll ) ? newstate.rot_roll : 0 );
             newangles = ( absangleclamp360( pitch ), absangleclamp360( yaw ), absangleclamp360( roll ) );
-            var_a852a7dd = isdefined( bundle.var_a852a7dd ) ? bundle.var_a852a7dd : 0;
+            interpolationsec = isdefined( bundle.interpolationsec ) ? bundle.interpolationsec : 0;
             
-            if ( !teleport && var_a852a7dd > 0 )
+            if ( !teleport && interpolationsec > 0 )
             {
-                dynent function_49ed8678( neworigin, var_a852a7dd );
-                dynent function_7622f013( newangles, var_a852a7dd );
+                dynent function_49ed8678( neworigin, interpolationsec );
+                dynent function_7622f013( newangles, interpolationsec );
             }
             else
             {
@@ -82,9 +82,9 @@ function event_handler[event_9673dc9a] function_3981d015( eventstruct )
             }
         }
         
-        if ( !teleport && isdefined( newstate.var_55c3fa1 ) )
+        if ( !teleport && isdefined( newstate.dynent_sound ) )
         {
-            playsound( 0, newstate.var_55c3fa1, dynent.origin );
+            playsound( 0, newstate.dynent_sound, dynent.origin );
         }
         
         if ( isdefined( newstate.overridemodel ) )
@@ -97,7 +97,7 @@ function event_handler[event_9673dc9a] function_3981d015( eventstruct )
             starttime = 0;
             rate = isdefined( newstate.animrate ) ? newstate.animrate : 0;
             
-            if ( isdefined( newstate.var_8725802 ) && newstate.var_8725802 )
+            if ( isdefined( newstate.absolutestarttime ) && newstate.absolutestarttime )
             {
                 gametime = gettime();
                 

@@ -2,7 +2,7 @@ require( "ui/uieditor/menus/charactercustomization/personalizecharacter" )
 require( "x64:86b4582183041dd" )
 require( "ui/uieditor/widgets/scoreboard/tabbedscoreboardfuibox" )
 require( "ui/uieditor/widgets/scrollbars/verticalcounter" )
-require( "x64:1bbde4283bb35f8" )
+require( "ui/uieditor/menus/store/store" )
 
 CoD.CharacterSelection_StandardFrameWidget = InheritFrom( LUI.UIElement )
 CoD.CharacterSelection_StandardFrameWidget.__defaultWidth = 1718

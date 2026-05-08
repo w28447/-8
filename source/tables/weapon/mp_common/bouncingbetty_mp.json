@@ -3,7 +3,7 @@
     "baseWeapon": "#bouncingbetty",
     "displayname": "#weapon/bouncingbetty",
     "weapon70": "#bouncingbetty",
-    "streamkey": "#hash_30d56fc7f5315b9c",
+    "streamkey": "#bouncingbetty_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -36,7 +36,7 @@
     "#hash_8a03df2b": "#hash_981e8dcc389cfc3",
     "#hash_2f3ca476": "#hash_1247289875bf4492",
     "tunables1": "#bouncingbetty_tunables_mp",
-    "cacWeaponXCam": "#hash_2787f62de7325a66",
+    "cacWeaponXCam": "#ui_cam_cac_equip_spider",
     "sharedWeaponSounds": "#equipment",
     "weaponHeadObjective": "#inworld_bouncingbetty",
     "projectilemodel": "#wpn_t7_spider_mine_world",
@@ -57,10 +57,10 @@
     "rumble_de8": "#grenade_rumble",
     "fx_ed8": "#weapon/fx_betty_exp",
     "underwaterExplosionSurfaceFX": [
-        "#hash_5f190015ac9ded95",
-        "#hash_1206d75150c2464e",
-        "#hash_260fafe2e7ced71c"
+        "#explosions/fx_exp_grenade_water",
+        "#explosions/fx_exp_grenade_water_shllw",
+        "#explosions/fx_exp_grenade_water_surface_deep"
     ],
     "bounceImpactFX": "#grenade_bounce",
-    "bounceImpactSounds": "#hash_3d4f64262ee135fc"
+    "bounceImpactSounds": "#betty_bounce"
 }

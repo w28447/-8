@@ -42,7 +42,7 @@
     "tunables1": "#hash_34e2768caebfc684",
     "tracers": [
         "#assaultrifle",
-        "#hash_6fce4eeb483fded5"
+        "#assaultrifle_enemy"
     ],
     "projectilemodel": "#veh_t8_mil_tank_projectile",
     "reticleCenter": "#reticle_pineapplegun",
@@ -58,5 +58,5 @@
     ],
     "normalImpactFX": "#hash_6699bc919282c846",
     "exitImpactFX": "#hash_e9050d7b3430366e",
-    "normalImpactSounds": "#hash_4c6dd8015f181f64"
+    "normalImpactSounds": "#quadrocket_explode_material"
 }

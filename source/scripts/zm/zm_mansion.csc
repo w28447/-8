@@ -727,7 +727,7 @@ function function_6381f252( localclientnum )
     
     while ( true )
     {
-        if ( zm_utility::function_f8796df3( localclientnum ) && !isthirdperson( localclientnum ) )
+        if ( zm_utility::is_first_person( localclientnum ) && !isthirdperson( localclientnum ) )
         {
             if ( viewmodelhastag( localclientnum, "tag_flash" ) )
             {

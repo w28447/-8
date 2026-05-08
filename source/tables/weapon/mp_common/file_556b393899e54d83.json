@@ -36,7 +36,7 @@
     "sound660": "#uin_unavailable_charging",
     "projexplosionsound": "#hash_120db8330a68be06",
     "tunables1": "#hash_720ac7cb2c3b69da",
-    "cacWeaponXCam": "#hash_114a9866237d87a3",
+    "cacWeaponXCam": "#ui_cam_cac_equip_concussion",
     "sharedWeaponSounds": "#equipment",
     "statusEffects": [
         {

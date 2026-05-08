@@ -1,8 +1,8 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframe" )
 require( "ui/uieditor/widgets/craft/emblemeditor/emblemdrawwidgetnew" )
-require( "x64:9827234958dd6bd" )
-require( "x64:3a3e3d8a297e8f" )
-require( "x64:ece21f2f02e5733" )
+require( "ui/uieditor/widgets/craft/emblemeditor/materialpicker/emblemeditormaterialcontrols" )
+require( "ui/uieditor/widgets/craft/emblemeditor/materialpicker/emblemeditormaterialinfo" )
+require( "ui/uieditor/widgets/craft/emblemeditor/materialpicker/emblemeditormaterialswatch" )
 require( "ui/uieditor/widgets/pc/craft/craftactionheader" )
 
 CoD.EmblemEditorMaterialPicker = InheritFrom( CoD.Menu )

@@ -48,13 +48,13 @@ function setupdvars()
     setdvar( #"smartcover_drawtime", 1000 );
     setdvar( #"hash_436fc2fad44e9041", 1 );
     setdvar( #"hash_1d8eb304f5cf8033", 1 );
-    setdvar( #"smartcover_tracedistance", level.smartcoversettings.bundle.var_1f0ae388 );
+    setdvar( #"smartcover_tracedistance", level.smartcoversettings.bundle.maxtracedistance );
     setdvar( #"hash_13c23fd3a4387b84", 8 );
     setdvar( #"hash_55a8dba3350b8b7c", 4 );
     setdvar( #"hash_4f4ce3cb18b004bc", 10 );
     setdvar( #"hash_417afa70d515fba5", isdefined( level.smartcoversettings.bundle.var_76d79155 ) ? level.smartcoversettings.bundle.var_76d79155 : 0 );
-    setdvar( #"hash_71f8bd4cd30de4b3", isdefined( level.smartcoversettings.bundle.var_e35fc674 ) ? level.smartcoversettings.bundle.var_e35fc674 : 0 );
-    setdvar( #"hash_39a564d4801c4b2e", isdefined( level.smartcoversettings.bundle.var_1f0ae388 ) ? level.smartcoversettings.bundle.var_1f0ae388 : 0 );
+    setdvar( #"hash_71f8bd4cd30de4b3", isdefined( level.smartcoversettings.bundle.zthreshold ) ? level.smartcoversettings.bundle.zthreshold : 0 );
+    setdvar( #"hash_39a564d4801c4b2e", isdefined( level.smartcoversettings.bundle.maxtracedistance ) ? level.smartcoversettings.bundle.maxtracedistance : 0 );
 }
 
 // Namespace smart_cover/gadget_smart_cover
@@ -63,7 +63,7 @@ function setupdvars()
 // Size: 0xc6
 function smartcover_start_microwave( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    if ( isdefined( level.smartcoversettings.bundle.var_f4e0e7d7 ) && level.smartcoversettings.bundle.var_f4e0e7d7 && newval == 1 )
+    if ( isdefined( level.smartcoversettings.bundle.enablemicrowave ) && level.smartcoversettings.bundle.enablemicrowave && newval == 1 )
     {
         self thread startmicrowavefx( localclientnum );
         return;
@@ -277,7 +277,7 @@ function function_722fc669( localclientnum )
     
     level.smartcoversettings.previewmodels[ localclientnum ] = [];
     level.smartcoversettings.previewmodels[ localclientnum ][ 0 ] = function_641491ac( localclientnum, level.smartcoversettings.bundle.placementmodel );
-    level.smartcoversettings.previewmodels[ localclientnum ][ 1 ] = function_641491ac( localclientnum, level.smartcoversettings.bundle.var_46732914 );
+    level.smartcoversettings.previewmodels[ localclientnum ][ 1 ] = function_641491ac( localclientnum, level.smartcoversettings.bundle.badplacementmodel );
     level.smartcoversettings.previewmodels[ localclientnum ][ 2 ] = function_641491ac( localclientnum, level.smartcoversettings.bundle.var_1b5c037d );
     level.smartcoversettings.previewmodels[ localclientnum ][ 3 ] = function_641491ac( localclientnum, level.smartcoversettings.bundle.var_76ac23f2 );
 }
@@ -469,9 +469,9 @@ function startmicrowavefx( localclientnum )
         angles = turret.angles;
         origin = turret.origin + ( 0, 0, 30 );
         forward = anglestoforward( angles );
-        forward = vectorscale( forward, ( isdefined( level.smartcoversettings.bundle.var_b345c668 ) ? level.smartcoversettings.bundle.var_b345c668 : 0 ) + 40 );
+        forward = vectorscale( forward, ( isdefined( level.smartcoversettings.bundle.microwaveradius ) ? level.smartcoversettings.bundle.microwaveradius : 0 ) + 40 );
         var_e2e9fefa = anglestoforward( angles + ( 0, 55 / 3, 0 ) );
-        var_e2e9fefa = vectorscale( var_e2e9fefa, ( isdefined( level.smartcoversettings.bundle.var_b345c668 ) ? level.smartcoversettings.bundle.var_b345c668 : 0 ) + 40 );
+        var_e2e9fefa = vectorscale( var_e2e9fefa, ( isdefined( level.smartcoversettings.bundle.microwaveradius ) ? level.smartcoversettings.bundle.microwaveradius : 0 ) + 40 );
         trace = bullettrace( origin, origin + forward, 0, turret );
         traceright = bullettrace( origin, origin - var_e2e9fefa, 0, turret );
         traceleft = bullettrace( origin, origin + var_e2e9fefa, 0, turret );

@@ -75,5 +75,5 @@
     ],
     "bounceImpactFX": "#grenade_bounce",
     "dudImpactFX": "#grenade_dud",
-    "bounceImpactSounds": "#hash_615552a2d30bfc86"
+    "bounceImpactSounds": "#musicbox_bounce"
 }

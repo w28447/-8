@@ -77,15 +77,15 @@ function init_clientfields()
 {
     clientfield::register( "allplayers", "" + #"hash_2c387ea19f228b5d", 1, 1, "int" );
     clientfield::register( "allplayers", "" + #"hash_794e5d0769b1d497", 1, 1, "int" );
-    clientfield::register( "scriptmover", "" + #"hash_7876f33937c8a764", 1, 1, "int" );
+    clientfield::register( "scriptmover", "" + #"vomit_blade_fx", 1, 1, "int" );
     clientfield::register( "scriptmover", "" + #"safe_fx", 1, 1, "int" );
     clientfield::register( "scriptmover", "" + #"flare_fx", 1, 2, "int" );
     clientfield::register( "scriptmover", "" + #"hash_2042191a7fc75994", 1, 2, "int" );
-    clientfield::register( "scriptmover", "" + #"hash_2ec182fecae80e80", 1, 1, "int" );
+    clientfield::register( "scriptmover", "" + #"shield_frost_fx", 1, 1, "int" );
     clientfield::register( "scriptmover", "" + #"portal_pass", 1, 2, "int" );
-    clientfield::register( "scriptmover", "" + #"hash_1cf8b9339139c50d", 1, 1, "int" );
+    clientfield::register( "scriptmover", "" + #"engineer_smoke_fx", 1, 1, "int" );
     clientfield::register( "scriptmover", "" + #"car_fx", 1, 1, "int" );
-    clientfield::register( "world", "" + #"hash_1166237b92466ac9", 1, 1, "int" );
+    clientfield::register( "world", "" + #"engineer_spark_fx", 1, 1, "int" );
     clientfield::register( "world", "" + #"fireworks_fx", 1, 2, "counter" );
     clientfield::register( "world", "" + #"crash_fx", 1, 1, "int" );
     clientfield::register( "world", "" + #"hash_4f672a8a7ae530e5", 1, 1, "int" );
@@ -206,8 +206,8 @@ function function_4e186966()
     s_fx = struct::get( self.target );
     self waittill( #"trigger", #"death" );
     mdl_fx = util::spawn_model( "tag_origin", s_fx.origin, ( 300, 180, 0 ) );
-    mdl_fx clientfield::set( "" + #"hash_1cf8b9339139c50d", 1 );
-    level thread util::delete_on_death_or_notify( mdl_fx, #"hash_3a873ffa3efcd0cb", "" + #"hash_1cf8b9339139c50d" );
+    mdl_fx clientfield::set( "" + #"engineer_smoke_fx", 1 );
+    level thread util::delete_on_death_or_notify( mdl_fx, #"hash_3a873ffa3efcd0cb", "" + #"engineer_smoke_fx" );
     s_fx struct::delete();
     
     if ( isdefined( self ) )
@@ -419,7 +419,7 @@ function function_4f4e423f()
     
     zm_unitrigger::unregister_unitrigger( s_trigger );
     s_trigger struct::delete();
-    level clientfield::set( "" + #"hash_1166237b92466ac9", 1 );
+    level clientfield::set( "" + #"engineer_spark_fx", 1 );
 }
 
 // Namespace zodt8_side_quests/zm_zodt8_side_quests
@@ -787,7 +787,7 @@ function function_9be06570()
             }
         }
         
-        if ( s_moveto.var_ff81609a !== 1 )
+        if ( s_moveto.b_no_wait !== 1 )
         {
             wait randomfloatrange( 1, 2 );
             
@@ -939,7 +939,7 @@ function fishy_offering_step_1_setup( var_5ea5c94d )
                 
                 if ( s_landing.b_splash === 1 && level flag::get( #"water_drained_aft" ) )
                 {
-                    fx::play( #"hash_708765aa3f48456d", s_landing.origin + ( 0, 0, 20 ), ( 270, 180, 180 ) );
+                    fx::play( #"water/fx_water_impact_object_sm", s_landing.origin + ( 0, 0, 20 ), ( 270, 180, 180 ) );
                 }
                 
                 s_landing.origin += ( 0, 0, 48 );
@@ -2036,7 +2036,7 @@ function function_73bdaf30()
     {
         mdl_shield playsound( #"hash_4e75eec96f7ea36a" );
         mdl_shield setmodel( #"hash_7f061176170234d9" );
-        mdl_shield clientfield::set( "" + #"hash_2ec182fecae80e80", 1 );
+        mdl_shield clientfield::set( "" + #"shield_frost_fx", 1 );
         earthquake( 0.5, 1.25, mdl_shield.origin, 512 );
         
         if ( isdefined( level.ai[ #"axis" ] ) )
@@ -2428,14 +2428,14 @@ function function_7ae29395()
                 
                 foreach ( s_launcher in level.a_s_launchers )
                 {
-                    level thread function_9fa09d36( s_launcher.mdl_flare );
+                    level thread launch_flare( s_launcher.mdl_flare );
                 }
                 
                 level thread grand_finale();
             }
             else
             {
-                level thread function_9fa09d36( self );
+                level thread launch_flare( self );
             }
             
             self.trigger delete();
@@ -2460,7 +2460,7 @@ function function_a65045b6( s_result )
 // Params 1
 // Checksum 0x8d39c94c, Offset: 0x94c8
 // Size: 0x1fc
-function function_9fa09d36( mdl_flare )
+function launch_flare( mdl_flare )
 {
     mdl_flare endon( #"hash_714cd031b5f28ab8", #"death" );
     var_45f93277 = init_flare( mdl_flare.origin, mdl_flare.angles, mdl_flare.str_color );
@@ -2695,7 +2695,7 @@ function vomit_blade_cleanup( var_a276c861, var_19e802fa )
             
             foreach ( player in util::get_active_players() )
             {
-                player thread function_2c343fd8();
+                player thread vomit_blade_fx();
             }
         }
     #/
@@ -2734,7 +2734,7 @@ function function_500ea537( params )
             v_down = v_origin + var_4095cc33 * -4;
             mdl_fx = util::spawn_model( "tag_origin", v_origin, v_angles );
             mdl_fx linkto( self, "tag_eye", v_down - v_origin, ( 60, 0, 90 ) );
-            mdl_fx clientfield::set( "" + #"hash_7876f33937c8a764", 1 );
+            mdl_fx clientfield::set( "" + #"vomit_blade_fx", 1 );
             
             while ( isdefined( self ) && self ai::is_stunned() )
             {
@@ -2814,7 +2814,7 @@ function function_cc7214a9( params )
                         #/
                         
                         player.var_f8b767c9 = undefined;
-                        player thread function_2c343fd8();
+                        player thread vomit_blade_fx();
                         
                         while ( isdefined( player ) && player laststand::player_is_in_laststand() )
                         {
@@ -2849,7 +2849,7 @@ function function_cc7214a9( params )
 // Params 0
 // Checksum 0x928e5fb3, Offset: 0xaa08
 // Size: 0x158
-function function_2c343fd8()
+function vomit_blade_fx()
 {
     self endon( #"disconnect" );
     wait 1;

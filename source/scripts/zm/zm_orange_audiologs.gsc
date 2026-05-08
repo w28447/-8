@@ -16,7 +16,7 @@
 // Size: 0x44
 function preload()
 {
-    clientfield::register( "scriptmover", "" + #"hash_4a18e1ea1950215d", 24000, 1, "int" );
+    clientfield::register( "scriptmover", "" + #"sam_orb_fx", 24000, 1, "int" );
 }
 
 // Namespace zm_orange_audiologs/zm_orange_audiologs
@@ -275,7 +275,7 @@ function setup_orb()
     self setcandamage( 1 );
     self.allowdeath = 0;
     self thread function_530a6195();
-    self clientfield::set( "" + #"hash_4a18e1ea1950215d", 1 );
+    self clientfield::set( "" + #"sam_orb_fx", 1 );
 }
 
 // Namespace zm_orange_audiologs/zm_orange_audiologs

@@ -14,16 +14,16 @@
 // Size: 0x13c
 function init_shared()
 {
-    level.var_1850a22d = getweapon( #"mute_smoke" );
+    level.weapon_mute_smoke = getweapon( #"mute_smoke" );
     
-    if ( isdefined( level.var_1850a22d ) && level.var_1850a22d.name != "none" )
+    if ( isdefined( level.weapon_mute_smoke ) && level.weapon_mute_smoke.name != "none" )
     {
         level.var_ae6e2e88 = 15;
         level.var_5375e151 = 2;
         level.var_648b00f8 = level.var_ae6e2e88 + level.var_5375e151;
         level.var_c3e0de31 = "smoke_center";
         level.var_438f1f83 = [];
-        function_783a1c07( level.var_1850a22d );
+        function_783a1c07( level.weapon_mute_smoke );
         callback::on_spawned( &on_player_spawned );
         ability_player::register_gadget_should_notify( 29, 1 );
         clientfield::register( "allplayers", "inFriendlyMuteSmoke", 1, 1, "int" );
@@ -352,7 +352,7 @@ function event_handler[grenade_fire] function_f9d992c2( eventstruct )
     
     weapon = eventstruct.weapon;
     
-    if ( weapon.rootweapon == level.var_1850a22d )
+    if ( weapon.rootweapon == level.weapon_mute_smoke )
     {
         if ( !( self.var_cd4aaf01 === 1 ) )
         {
@@ -361,7 +361,7 @@ function event_handler[grenade_fire] function_f9d992c2( eventstruct )
             self.var_cd4aaf01 = undefined;
         }
         
-        grenade thread function_3c893ac6( self, level.var_1850a22d, level.var_c3e0de31, level.var_ae6e2e88, level.var_648b00f8 );
+        grenade thread function_3c893ac6( self, level.weapon_mute_smoke, level.var_c3e0de31, level.var_ae6e2e88, level.var_648b00f8 );
     }
 }
 
@@ -404,11 +404,11 @@ function function_a4998ccd( grenade_origin, player_origin, weapon )
     grenadeangles = vectortoangles( velocity );
     speed = length( velocity );
     var_2571f440 = grenadeangles + ( var_de0fa6f1, var_71c4a0d9, 0 );
-    var_d2922c1e = vectorscale( anglestoforward( var_2571f440 ), speed * var_46f48578 );
-    self magicgrenadeplayer( weapon, grenade_origin, var_d2922c1e );
+    velocity2 = vectorscale( anglestoforward( var_2571f440 ), speed * var_46f48578 );
+    self magicgrenadeplayer( weapon, grenade_origin, velocity2 );
     var_c1917dbc = grenadeangles + ( var_99803ce, var_6b0817d7, 0 );
-    var_c0cb8891 = vectorscale( anglestoforward( var_c1917dbc ), speed * var_3300383 );
-    self magicgrenadeplayer( weapon, grenade_origin, var_c0cb8891 );
+    velocity3 = vectorscale( anglestoforward( var_c1917dbc ), speed * var_3300383 );
+    self magicgrenadeplayer( weapon, grenade_origin, velocity3 );
 }
 
 /#

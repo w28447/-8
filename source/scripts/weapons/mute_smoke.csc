@@ -10,11 +10,11 @@
 // Size: 0x192
 function init_shared()
 {
-    level.var_1850a22d = getweapon( #"mute_smoke" );
+    level.weapon_mute_smoke = getweapon( #"mute_smoke" );
     
-    if ( isdefined( level.var_1850a22d ) && level.var_1850a22d.name != "none" )
+    if ( isdefined( level.weapon_mute_smoke ) && level.weapon_mute_smoke.name != "none" )
     {
-        function_783a1c07( level.var_1850a22d );
+        function_783a1c07( level.weapon_mute_smoke );
         clientfield::register( "allplayers", "in_enemy_mute_smoke", 1, 1, "int", &function_b2248deb, 0, 0 );
         clientfield::register( "allplayers", "inFriendlyMuteSmoke", 1, 1, "int", &function_baebe8c4, 0, 0 );
         level thread function_12e09509();
@@ -67,7 +67,7 @@ function function_12e09509( localclientnum = 0 )
     var_46e1fb08 = spawn( localclientnum, ( 0, 0, 0 ), "script_model" );
     var_37b85cb5 = spawn( localclientnum, ( 0, 0, 0 ), "script_model" );
     var_618fb067 = spawn( localclientnum, ( 0, 0, 0 ), "script_model" );
-    previs_weapon = level.var_1850a22d;
+    previs_weapon = level.weapon_mute_smoke;
     var_46e1fb08 function_3e8d9b27( previs_weapon );
     var_37b85cb5 function_3e8d9b27( previs_weapon );
     var_618fb067 function_3e8d9b27( previs_weapon );
@@ -97,7 +97,7 @@ function function_12e09509( localclientnum = 0 )
             var_37b85cb5 hide();
             var_618fb067 hide();
             
-            if ( previs_weapon == level.var_1850a22d )
+            if ( previs_weapon == level.weapon_mute_smoke )
             {
                 waitframe( 1 );
             }
@@ -142,7 +142,7 @@ function function_12e09509( localclientnum = 0 )
         var_34bb1a09 = 1;
         previs_weapon = getcurrentweapon( localclientnum );
         
-        if ( !( previs_weapon === level.var_1850a22d ) )
+        if ( !( previs_weapon === level.weapon_mute_smoke ) )
         {
             continue;
         }
@@ -161,10 +161,10 @@ function function_12e09509( localclientnum = 0 )
         #/
         
         settings = level.mute_smoke_custom_settings;
-        var_91f40e9 = max( isdefined( settings.var_91f40e9 ) ? settings.var_91f40e9 : 1, 0.01 );
-        var_46e1fb08 setscale( var_91f40e9 );
-        var_37b85cb5 setscale( var_91f40e9 );
-        var_618fb067 setscale( var_91f40e9 );
+        previs_scale = max( isdefined( settings.previs_scale ) ? settings.previs_scale : 1, 0.01 );
+        var_46e1fb08 setscale( previs_scale );
+        var_37b85cb5 setscale( previs_scale );
+        var_618fb067 setscale( previs_scale );
         var_a19445f = isads( localclientnum );
         var_de0fa6f1 = isdefined( settings.var_de0fa6f1 ) ? settings.var_de0fa6f1 : var_a19445f ? isdefined( settings.fx_done ) ? settings.fx_done : 0 : 0;
         var_46f48578 = max( isdefined( settings.var_46f48578 ) ? settings.var_46f48578 : var_a19445f ? isdefined( settings.var_bdb59983 ) ? settings.var_bdb59983 : 0 : 0, 0.1 );
@@ -183,13 +183,13 @@ function function_12e09509( localclientnum = 0 )
         var_46e1fb08.angles = ( angleclamp180( vectortoangles( trace1[ #"normal" ] )[ 0 ] + 90 ), vectortoangles( trace1[ #"normal" ] )[ 1 ], 0 );
         speed = length( velocity );
         var_2571f440 = grenadeangles + ( var_de0fa6f1, var_71c4a0d9, 0 );
-        var_d2922c1e = vectorscale( anglestoforward( var_2571f440 ), speed * var_46f48578 );
-        trace2 = projectiletrace( eye_pos, var_d2922c1e, 0 );
+        velocity2 = vectorscale( anglestoforward( var_2571f440 ), speed * var_46f48578 );
+        trace2 = projectiletrace( eye_pos, velocity2, 0 );
         var_37b85cb5.origin = trace2[ #"position" ];
         var_37b85cb5.angles = ( angleclamp180( vectortoangles( trace2[ #"normal" ] )[ 0 ] + 90 ), vectortoangles( trace2[ #"normal" ] )[ 1 ], 0 );
         var_c1917dbc = grenadeangles + ( var_99803ce, var_6b0817d7, 0 );
-        var_c0cb8891 = vectorscale( anglestoforward( var_c1917dbc ), speed * var_3300383 );
-        trace3 = projectiletrace( eye_pos, var_c0cb8891, 0 );
+        velocity3 = vectorscale( anglestoforward( var_c1917dbc ), speed * var_3300383 );
+        trace3 = projectiletrace( eye_pos, velocity3, 0 );
         var_618fb067.origin = trace3[ #"position" ];
         var_618fb067.angles = ( angleclamp180( vectortoangles( trace3[ #"normal" ] )[ 0 ] + 90 ), vectortoangles( trace3[ #"normal" ] )[ 1 ], 0 );
     }
@@ -311,10 +311,10 @@ function function_a189ab2e( localclientnum, enemy )
         enemy_eye_pos = enemy.origin + ( 0, 0, var_936b9149 );
         player_eye_pos = local_player geteye();
         trace = bullettrace( player_eye_pos, enemy_eye_pos, 1, enemy );
-        var_8c0e537d = can_see_enemy;
+        saw_enemy = can_see_enemy;
         can_see_enemy = trace[ #"fraction" ] > 0.95;
         
-        if ( var_8c0e537d != can_see_enemy )
+        if ( saw_enemy != can_see_enemy )
         {
             enemy duplicate_render::set_hacker_tool_hacked( localclientnum, can_see_enemy );
         }
