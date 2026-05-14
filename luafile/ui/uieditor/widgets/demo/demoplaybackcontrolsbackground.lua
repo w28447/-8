@@ -48,7 +48,7 @@ CoD.DemoPlaybackControlsBackground.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local FrameInnerTR = LUI.UIImage.new( 0.5, 0.5, 0, 480, 0.5, 0.5, -88, 0 )
 	FrameInnerTR:setAlpha( 0.8 )
-	FrameInnerTR:setImage( RegisterImage( 0x386BA4A3F163950 ) )
+	FrameInnerTR:setImage( RegisterImage( "uie_ui_hud_theater_playbackcontrol_frame_inner_r" ) )
 	self:addElement( FrameInnerTR )
 	self.FrameInnerTR = FrameInnerTR
 	
@@ -67,7 +67,7 @@ CoD.DemoPlaybackControlsBackground.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local FrameOutterTR = LUI.UIImage.new( 0.5, 0.5, 0, 480, 0.5, 0.5, -88, 0 )
 	FrameOutterTR:setAlpha( 0.8 )
-	FrameOutterTR:setImage( RegisterImage( 0x31F12D06DAFCBF9 ) )
+	FrameOutterTR:setImage( RegisterImage( "uie_ui_hud_theater_playbackcontrol_frame_outter_r" ) )
 	self:addElement( FrameOutterTR )
 	self.FrameOutterTR = FrameOutterTR
 	

@@ -15,7 +15,7 @@ CoD.AmmoWidgetMP_Ultimate_Progress_Fill.new = function ( f1_arg0, f1_arg1, f1_ar
 	local UltimateRadialMeterJumpAhead = LUI.UIImage.new( 0, 0, 0, 111, 0, 0, 0, 112 )
 	UltimateRadialMeterJumpAhead:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	UltimateRadialMeterJumpAhead:setImage( RegisterImage( 0x25ED9C7DA021F0D ) )
-	UltimateRadialMeterJumpAhead:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9AD9C230B10C37 ) )
+	UltimateRadialMeterJumpAhead:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_add" ) )
 	UltimateRadialMeterJumpAhead:setShaderVector( 1, 0.5, 0, 0, 0 )
 	UltimateRadialMeterJumpAhead:setShaderVector( 2, 0.5, 0, 0, 0 )
 	UltimateRadialMeterJumpAhead:setShaderVector( 3, 0, 0, 0, 0 )

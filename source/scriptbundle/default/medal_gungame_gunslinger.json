@@ -1,10 +1,10 @@
 {
-    "description": "localized17#hash_6b43c083ad8b9928",
+    "description": "localized17#medal/medal_gungame_gunslinger_desc",
     "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_gungame_gunslinger",
     "backinglarge": "image#$whitetransparent",
     "iconsmall": "image#ui_icon_medal_gungame_gunslinger",
-    "stringref": "localized17#hash_7ee98ba3e10b5460",
+    "stringref": "localized17#medal/medal_gungame_gunslinger",
     "iconlarge": "image#ui_icon_medal_gungame_gunslinger_large"
 }

@@ -6,14 +6,14 @@
 #location_enter,#market,#vox_market_enter,0,0,TRUE,FALSE,FALSE,FALSE
 #location_enter,#ouranos_arena,#vox_ouranos_arena_enter,0,0,TRUE,FALSE,FALSE,FALSE
 #location_enter,#playhouse,#vox_playhouse_enter,0,0,TRUE,FALSE,FALSE,FALSE
-#location_enter,#hash_185c7ca2794dd39,#hash_7e072b29f6515306,0,0,TRUE,FALSE,FALSE,FALSE
-#location_enter,#hash_2d65510066aca8d,#hash_5cc5c2fa8f22cb32,0,0,TRUE,FALSE,FALSE,FALSE
+#location_enter,#serp_pass,#vox_serp_pass_enter,0,0,TRUE,FALSE,FALSE,FALSE
+#location_enter,#stoa_athen,#vox_stoa_athen_enter,0,0,TRUE,FALSE,FALSE,FALSE
 #location_enter,#temp_apollo,#vox_temp_apollo_enter,0,0,TRUE,FALSE,FALSE,FALSE
 #location_enter,#hash_4576fb3345db827b,#hash_5b5d249e5dff39d8,0,0,TRUE,FALSE,FALSE,FALSE
 #location_enter,#treasur,#vox_treasur_enter,0,0,TRUE,FALSE,FALSE,FALSE
 #location_enter,#charon_arena,#vox_charon_arena_enter,0,0,TRUE,FALSE,FALSE,FALSE
-#location_enter,#hash_237b36f7aeb1a896,#hash_70627ff90a7e1e8e,0,0,TRUE,FALSE,FALSE,FALSE
-#location_enter,#hash_1b3475683eff03ae,#hash_105e7d6c1b158332,0,0,TRUE,FALSE,FALSE,FALSE
+#location_enter,#statue_crat,#hash_70627ff90a7e1e8e,0,0,TRUE,FALSE,FALSE,FALSE
+#location_enter,#statue_spart,#hash_105e7d6c1b158332,0,0,TRUE,FALSE,FALSE,FALSE
 #magicbox,#peg,#vox_box_peg,0,0,FALSE,FALSE,TRUE,FALSE
 #pegasus,#crash_land,#hash_122bed9c58a18e5e,0,0,FALSE,FALSE,FALSE,FALSE
 #peg_summon,#use,#vox_peg_summon_use,0,0,FALSE,FALSE,FALSE,FALSE
@@ -41,7 +41,7 @@
 #amphitheater,#aftermath,#hash_4c0b3f3f8e394cbc,0,0,FALSE,FALSE,FALSE,FALSE
 #amphitheater,#react_first,#hash_5f91baafb561a09d,0,0,FALSE,FALSE,FALSE,FALSE
 #component_pickup,#anvil_brontes,#vox_anvil_brontes_pickup,0,0,FALSE,FALSE,FALSE,FALSE
-#component_pickup,#hash_197aeed7caddb1f2,#hash_3de081aae6176905,0,0,FALSE,FALSE,FALSE,FALSE
+#component_pickup,#gold_bridle,#vox_gold_bridle_pickup,0,0,FALSE,FALSE,FALSE,FALSE
 #component_pickup,#gold_spear,#vox_gold_spear_pickup,0,0,FALSE,FALSE,FALSE,FALSE
 #component_pickup,#hammer_arges,#vox_hammer_arges_pickup,0,0,FALSE,FALSE,FALSE,FALSE
 #component_pickup,#light,#vox_light_pickup,0,0,FALSE,FALSE,FALSE,FALSE
@@ -90,7 +90,7 @@
 #prism,#rise_react,#vox_prism_rise_react,0,0,FALSE,FALSE,FALSE,FALSE
 #sapling,#react_first,#vox_sapling_react_first,0,0,FALSE,FALSE,FALSE,FALSE
 #sent_artifact,#stuck,#vox_sent_artifact_stuck,0,0,FALSE,FALSE,FALSE,FALSE
-#serp,#hash_5660b1598a41246e,#hash_7d5dcd4efa48be79,0,0,FALSE,FALSE,FALSE,FALSE
+#serp,#eagle_free_react,#vox_serp_eagle_free_react,0,0,FALSE,FALSE,FALSE,FALSE
 #vision_mode,#enter,#vox_vision_mode_enter,0,0,FALSE,FALSE,FALSE,FALSE
 #war_sounds,#react,#vox_war_sounds_react,0,0,FALSE,FALSE,FALSE,FALSE
 #zeus_eagle,#attack_react,#vox_zeus_eagle_attack_react,0,0,FALSE,FALSE,FALSE,FALSE

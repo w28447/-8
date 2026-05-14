@@ -3540,7 +3540,7 @@ function private function_44e3e0d1( var_51a7ab9c )
             v_dir = player.origin - var_51a7ab9c;
             v_dir = ( v_dir[ 0 ], v_dir[ 1 ], 0.1 );
             v_dir = vectornormalize( v_dir );
-            n_push_strength = getdvarint( #"hash_708ca0a943843f57", 500 );
+            n_push_strength = getdvarint( #"blightfather_n_push_strength", 500 );
             n_push_strength = 200 + randomint( n_push_strength - 200 );
             v_player_velocity = player getvelocity();
             player setvelocity( v_player_velocity + v_dir * n_push_strength );
@@ -3585,7 +3585,7 @@ function function_3dbdca02()
     self waittill( #"death" );
     level.n_blightfather_alive--;
     level.zombie_ai_limit++;
-    level notify( #"hash_5fb3aa7a0745af2c" );
+    level notify( #"blightfather_total_update" );
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
@@ -3960,7 +3960,7 @@ function private on_host_migration_end( params )
         while ( true )
         {
             waitframe( 1 );
-            string = getdvarstring( #"hash_1999cec56042c9de", "<dev string:x51c>" );
+            string = getdvarstring( #"blight_father_devgui_cmd", "<dev string:x51c>" );
             cmd = strtok( string, "<dev string:x53>" );
             
             if ( cmd.size > 0 )
@@ -4006,7 +4006,7 @@ function private on_host_migration_end( params )
                 }
             }
             
-            setdvar( #"hash_1999cec56042c9de", "<dev string:x51c>" );
+            setdvar( #"blight_father_devgui_cmd", "<dev string:x51c>" );
         }
     }
 

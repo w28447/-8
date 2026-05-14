@@ -4,7 +4,7 @@
     "displayname": "#weapon/sticky_grenade",
     "weapon70": "#eq_cluster_semtex_grenade",
     "grenadeWeaponName": "#hash_62fb4f8a9caa979a",
-    "streamkey": "#hash_3392f9052d9e4788",
+    "streamkey": "#eq_cluster_semtex_grenade_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",

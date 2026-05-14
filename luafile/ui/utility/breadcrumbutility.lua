@@ -329,8 +329,8 @@ CoD.BreadcrumbUtility.IsStatSpecialistOutfitItemNew = function ( f24_arg0, f24_a
 			if f24_local0[0x147738D5CEE9199][f24_arg2][0xCF85C301A206997][f24_arg3][0x3930AAFA5D6AC7B][f24_arg5] then
 				return f24_local0[0x147738D5CEE9199][f24_arg2][0xCF85C301A206997][f24_arg3][0x3930AAFA5D6AC7B][f24_arg5]:get() ~= CoD.BreadcrumbUtility.ItemNewValue
 			end
-		elseif f24_local0[0x147738D5CEE9199][f24_arg2][0xCF85C301A206997][f24_arg3][0xC519DA7A1F958C5][f24_arg4] and f24_local0[0x147738D5CEE9199][f24_arg2][0xCF85C301A206997][f24_arg3][0xC519DA7A1F958C5][f24_arg4][0xD834AEE4BD18D13][f24_arg5] then
-			return f24_local0[0x147738D5CEE9199][f24_arg2][0xCF85C301A206997][f24_arg3][0xC519DA7A1F958C5][f24_arg4][0xD834AEE4BD18D13][f24_arg5]:get() ~= CoD.BreadcrumbUtility.ItemNewValue
+		elseif f24_local0[0x147738D5CEE9199][f24_arg2][0xCF85C301A206997][f24_arg3]["parts"][f24_arg4] and f24_local0[0x147738D5CEE9199][f24_arg2][0xCF85C301A206997][f24_arg3]["parts"][f24_arg4][0xD834AEE4BD18D13][f24_arg5] then
+			return f24_local0[0x147738D5CEE9199][f24_arg2][0xCF85C301A206997][f24_arg3]["parts"][f24_arg4][0xD834AEE4BD18D13][f24_arg5]:get() ~= CoD.BreadcrumbUtility.ItemNewValue
 		end
 	end
 end
@@ -516,8 +516,8 @@ CoD.BreadcrumbUtility.ClearSpecialistOutfitItem = function ( f38_arg0, f38_arg1,
 			if f38_local0[0x147738D5CEE9199][f38_arg2][0xCF85C301A206997][f38_arg3][0x3930AAFA5D6AC7B][f38_arg5] then
 				return f38_local0[0x147738D5CEE9199][f38_arg2][0xCF85C301A206997][f38_arg3][0x3930AAFA5D6AC7B][f38_arg5]:set( CoD.BreadcrumbUtility.ItemNewValue )
 			end
-		elseif f38_local0[0x147738D5CEE9199][f38_arg2][0xCF85C301A206997][f38_arg3][0xC519DA7A1F958C5][f38_arg4] and f38_local0[0x147738D5CEE9199][f38_arg2][0xCF85C301A206997][f38_arg3][0xC519DA7A1F958C5][f38_arg4][0xD834AEE4BD18D13][f38_arg5] then
-			return f38_local0[0x147738D5CEE9199][f38_arg2][0xCF85C301A206997][f38_arg3][0xC519DA7A1F958C5][f38_arg4][0xD834AEE4BD18D13][f38_arg5]:set( CoD.BreadcrumbUtility.ItemNewValue )
+		elseif f38_local0[0x147738D5CEE9199][f38_arg2][0xCF85C301A206997][f38_arg3]["parts"][f38_arg4] and f38_local0[0x147738D5CEE9199][f38_arg2][0xCF85C301A206997][f38_arg3]["parts"][f38_arg4][0xD834AEE4BD18D13][f38_arg5] then
+			return f38_local0[0x147738D5CEE9199][f38_arg2][0xCF85C301A206997][f38_arg3]["parts"][f38_arg4][0xD834AEE4BD18D13][f38_arg5]:set( CoD.BreadcrumbUtility.ItemNewValue )
 		end
 	end
 end
@@ -614,7 +614,7 @@ CoD.BreadcrumbUtility.GetLootWeaponNewCountForWeapon = function ( f46_arg0, f46_
 		f46_local0 = f46_local0 + 1
 	end
 	for f46_local6, f46_local7 in CoD.CACUtility.ForAvailableSignatureWeapons( f46_arg1, f46_arg2, not IsCurrentMenu( f46_arg0, "PaintjobWeaponSelect" ), true ) do
-		local f46_local8 = f46_local7[0x3CF8E8F9081468B]
+		local f46_local8 = f46_local7["index"]
 		if f46_local8 > CoD.CACUtility.EmptyItemIndex and not CoD.BreadcrumbUtility.IsStatSignatureWeaponItemAsOld( f46_arg0, f46_arg1, f46_arg2, f46_local8 - 1 ) then
 			f46_local0 = f46_local0 + 1
 		end
@@ -799,7 +799,7 @@ CoD.BreadcrumbUtility.GetAccessoryNewCountForWeapon = function ( f53_arg0, f53_a
 	}
 	if f53_local2 then
 		for f53_local7, f53_local8 in ipairs( f53_local2 ) do
-			local f53_local9 = CoD.BlackMarketTableUtility.LootInfoLookup( f53_arg1, f53_local8[0x28887F70BF5EBA], f53_local8[0x562938AF86028A0], f53_local3 )
+			local f53_local9 = CoD.BlackMarketTableUtility.LootInfoLookup( f53_arg1, f53_local8["lootid"], f53_local8[0x562938AF86028A0], f53_local3 )
 			if f53_local9 and f53_local9.owned and (f53_local9.isEntitlement or f53_local9.isLoot) and CoD.BreadcrumbUtility.IsStatWeaponAccessoryNew( f53_arg0, f53_arg1, f53_arg2, f53_local7 - 1 ) then
 				f53_local0 = f53_local0 + 1
 			end
@@ -814,13 +814,13 @@ CoD.BreadcrumbUtility.GetDeathFxNewCountForWeapon = function ( f54_arg0, f54_arg
 	end
 	local f54_local0 = 0
 	local f54_local1 = CoD.BaseUtility.GetMenuStorageClientBuffer( f54_arg0 )
-	local f54_local2 = Engine[0xA7E3CD65E63086F]( 0xA8F031F7C7B2ED8 )
+	local f54_local2 = Engine[0xA7E3CD65E63086F]( "weapondeathfx_list" )
 	local f54_local3 = {
 		weaponRef = f54_arg2
 	}
 	if f54_local2 then
 		for f54_local7, f54_local8 in ipairs( f54_local2 ) do
-			local f54_local9 = CoD.BlackMarketTableUtility.LootInfoLookup( f54_arg1, f54_local8[0x28887F70BF5EBA], f54_local8[0x562938AF86028A0], f54_local3 )
+			local f54_local9 = CoD.BlackMarketTableUtility.LootInfoLookup( f54_arg1, f54_local8["lootid"], f54_local8[0x562938AF86028A0], f54_local3 )
 			if f54_local9 and f54_local9.owned and (f54_local9.isEntitlement or f54_local9.isLoot) and CoD.BreadcrumbUtility.IsStatWeaponDeathFxNew( f54_arg0, f54_arg1, f54_arg2, f54_local7 - 1 ) then
 				f54_local0 = f54_local0 + 1
 			end
@@ -1729,7 +1729,7 @@ DataSourceHelpers.PerControllerDataSourceSetup( "StartMenuBreadcrumbs", "Breadcr
 	end
 	local f112_local0 = Engine.CurrentSessionMode()
 	local f112_local1 = LobbyData.GetCurrentMenuTarget()
-	local f112_local2 = f112_local1[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING )
+	local f112_local2 = f112_local1["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING )
 	DataSources.StartMenuBreadcrumbs.initPersonalizationMode( f112_arg0, f112_local0 )
 	for f112_local6, f112_local7 in ipairs( CoD.BreadcrumbUtility.BreadcrumbStartMenuTabs ) do
 		local f112_local8 = f112_arg0:create( f112_local7 )
@@ -1956,7 +1956,7 @@ end, true, {
 				local f127_local4 = Engine[0xA7E3CD65E63086F]( 0xC4900FCA46D6C74 )
 				if f127_local4 then
 					for f127_local11, f127_local12 in ipairs( f127_local4 ) do
-						local f127_local13, f127_local14 = CoD.BlackMarketTableUtility.SimpleLootLookup( f126_arg0, f127_local12[0x28887F70BF5EBA], f127_local12[0x562938AF86028A0] )
+						local f127_local13, f127_local14 = CoD.BlackMarketTableUtility.SimpleLootLookup( f126_arg0, f127_local12["lootid"], f127_local12[0x562938AF86028A0] )
 						if f127_local13 == CoD.BlackMarketTableUtility.SimpleLootLookupTypes[0xC0D17BAD169557B] or f127_local14 then
 							for f127_local8 = 0, Enum[0x8037372CBD17C20][0xCB623E2324C5CCF] - 1, 1 do
 								if CoD.BreadcrumbUtility.IsStatSpecialistJumpKitPartNew( f127_local3, f126_arg0, f127_local11 - 1, f127_local8 ) then

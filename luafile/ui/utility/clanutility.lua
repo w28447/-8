@@ -21,7 +21,7 @@ CoD.ClanUtility.clan_privacy_levels = {
 }
 CoD.ClanUtility.clan_styles = {
 	{
-		display_string = 0x6EE9E9192DACAFC,
+		display_string = "clan/none",
 		value = LuaEnum.CLAN_STYLE.NONE
 	},
 	{
@@ -82,7 +82,7 @@ CoD.ClanUtility.CurrentGroupFinderString = function ( f6_arg0 )
 	elseif f6_local0 == LuaEnum.CLAN_KINDS.SQUAD then
 		return 0x5C0A96701A346F5
 	else
-		return 0xC6F69A7F555ED2B
+		return "clan/clan_finder"
 	end
 end
 
@@ -650,7 +650,7 @@ DataSources.ClanInboxButtonList = DataSourceHelpers.ListSetup( "ClanInboxButtonL
 	local f51_local8 = {}
 	local f51_local9
 	if f51_local2 then
-		f51_local9 = 0x98066110F701811
+		f51_local9 = "clan/delete"
 		if not f51_local9 then
 		
 		else
@@ -1199,7 +1199,7 @@ DataSources.ClanTabs = ListHelper_SetupDataSource( "ClanTabs", function ( f85_ar
 	} )
 	table.insert( f85_local3, {
 		models = {
-			tabName = LocalizeToUpperString( 0x9E78FD8E4E7865F ),
+			tabName = LocalizeToUpperString( "clan/team" ),
 			tabWidget = "CoD.Clan_Team",
 			showInQuickInvite = true
 		},
@@ -1221,7 +1221,7 @@ DataSources.ClanTabs = ListHelper_SetupDataSource( "ClanTabs", function ( f85_ar
 	} )
 	table.insert( f85_local3, {
 		models = {
-			tabName = LocalizeToUpperString( 0xA5BE2B8C29E1076 ),
+			tabName = LocalizeToUpperString( "clan/leaderboards" ),
 			tabWidget = "CoD.Clan_Leaderboards",
 			showInQuickInvite = true
 		},
@@ -1243,7 +1243,7 @@ DataSources.ClanTabs = ListHelper_SetupDataSource( "ClanTabs", function ( f85_ar
 	} )
 	table.insert( f85_local3, {
 		models = {
-			tabName = LocalizeToUpperString( 0xF968AEB941BE995 ),
+			tabName = LocalizeToUpperString( "clan/admin" ),
 			tabWidget = "CoD.Clan_Admin",
 			showInQuickInvite = true
 		},
@@ -1576,7 +1576,7 @@ DataSources.ClanSocialOptionsButtonList = ListHelper_SetupDataSource( "ClanSocia
 	f119_local0 = f119_local0.socialRoot.clans.ownerClan:get()
 	local f119_local1 = {}
 	table.insert( f119_local1, {
-		displayText = 0xC6F69A7F555ED2B,
+		displayText = "clan/clan_finder",
 		displayImage = 0x72D595AC206B43E,
 		action = CoD.ClanUtility.ClanButtonPress,
 		frameWidget = "CoD.ClanFinderFrame",
@@ -1630,7 +1630,7 @@ DataSources.ClanSquadOptionsButtonList = ListHelper_SetupDataSource( "ClanSquadO
 	f120_local0 = f120_local0.socialRoot.clans.ownerSquad:get()
 	local f120_local1 = {}
 	table.insert( f120_local1, {
-		displayText = 0xFEA19F754428E27,
+		displayText = "clan/friends_squads",
 		displayImage = 0x72D595AC206B43E,
 		action = CoD.ClanUtility.SquadAdminButtonPress,
 		frameWidget = "CoD.FriendsClansFrame",
@@ -1970,7 +1970,7 @@ DataSources.SquadAdminOptionsButtonList = ListHelper_SetupDataSource( "SquadAdmi
 		} )
 	end
 	table.insert( f125_local1, {
-		displayText = 0x394163DA9BFDEB8,
+		displayText = "clan/leave_squad",
 		displayImage = 0x72D595AC206B43E,
 		action = CoD.ClanUtility.SquadAdminButtonPress,
 		params = {
@@ -2202,7 +2202,7 @@ DataSources.CreateClanModes = ListHelper_SetupDataSource( "CreateClanModes", fun
 	f141_local3 = table.insert
 	f141_local4 = f141_local0
 	f141_local5 = f141_local1
-	f141_local6 = 0x6282749A064CB35
+	f141_local6 = "menu/zombie"
 	f141_local7 = 0x0
 	f141_local8 = DataSources.CreateClanForm.getModel( f141_arg0 )
 	f141_local3( f141_local4, f141_local5( f141_local6, f141_local7, f141_local8.modeZombies:get(), f141_local2, {
@@ -2398,7 +2398,7 @@ DataSources.CreateTeamType = ListHelper_SetupDataSource( "CreateTeamType", funct
 	
 	local f157_local3 = DataSources.CreateTeamForm.getModel( f157_arg0 )
 	f157_local3 = f157_local3.type:get()
-	table.insert( f157_local0, CoD.CoDAccountUtility.packageNumOptionsButtonData( 0x6985D51346D79E8, 0xE334A16101A5230, Engine[0xF9F1239CFD921FE]( CoD.ClanUtility.clan_privacy_levels[f157_local3.type:get()].display_string ), f157_local1, f157_local2 ) )
+	table.insert( f157_local0, CoD.CoDAccountUtility.packageNumOptionsButtonData( 0x6985D51346D79E8, "clan/team_type_desc", Engine[0xF9F1239CFD921FE]( CoD.ClanUtility.clan_privacy_levels[f157_local3.type:get()].display_string ), f157_local1, f157_local2 ) )
 	return f157_local0
 end, true )
 DataSources.CreateTeamConfirmation = ListHelper_SetupDataSource( "CreateTeamConfirmation", function ( f160_arg0 )

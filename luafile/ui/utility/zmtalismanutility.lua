@@ -22,13 +22,13 @@ CoD.ZMTalismanUtility.TalismanToEnumGameSettingsHash = {
 			restrictedValue = CoD.ZMTalismanUtility.N_ENUM_MBOX_OFF
 		}
 	},
-	[0xCAFC6BD7BFA105A] = {
+	["talisman_box_guarantee_lmg"] = {
 		{
 			hash = 0xE0EC3FE56F08B47,
 			restrictedValue = CoD.ZMTalismanUtility.N_ENUM_MBOX_OFF
 		}
 	},
-	[0xD2C0474517A8626] = {
+	["talisman_weapon_reducepapcost"] = {
 		{
 			hash = 0x9D48A0D4490B0A2,
 			restrictedValue = CoD.ZMTalismanUtility.N_SETTING_PACK_OFF
@@ -45,7 +45,7 @@ CoD.ZMTalismanUtility.TalismanToBooleanGameSettingsHash = {
 	[0x96A42B9715FCF4E] = {
 		0x53FCFBEE32E3655
 	},
-	[0xCAFC6BD7BFA105A] = {
+	["talisman_box_guarantee_lmg"] = {
 		0xB59BB7608355512,
 		0xF6740B518DBEB8F
 	},
@@ -53,7 +53,7 @@ CoD.ZMTalismanUtility.TalismanToBooleanGameSettingsHash = {
 		0x8A8F3CFEF7B86D1
 	},
 	[0xA2042B3984A50AC] = {
-		0x17917E00DE6B437,
+		"zmtalismanextraclaymore",
 		0x5A1298089D361F1
 	},
 	[0xC39AFAA7B8D508C] = {
@@ -69,7 +69,7 @@ CoD.ZMTalismanUtility.TalismanToBooleanGameSettingsHash = {
 		0x5A1298089D361F1
 	},
 	[0x33AD55AC2B835D0] = {
-		0x7C61B02FB56F7F,
+		"zmtalismanextrasemtex",
 		0x5A1298089D361F1
 	},
 	[0xE64B28EDF21732A] = {
@@ -141,17 +141,17 @@ CoD.ZMTalismanUtility.TalismanToBooleanGameSettingsHash = {
 	},
 	[0x50670241DFB72AF] = {
 		0xEFEF475C9DE052E,
-		0xB066C34278E6394
+		"zmspecweaponisenabled"
 	},
 	[0x5066F241DFB70FC] = {
 		0xEFEF575C9DE06E1,
-		0xB066C34278E6394
+		"zmspecweaponisenabled"
 	},
 	[0xEEBDA916971B02] = {
-		0xE1F30CC8F6F3150,
-		0xB066C34278E6394
+		"zmtalismanspecialxprate",
+		"zmspecweaponisenabled"
 	},
-	[0x24D9B998E4BC4F8] = {
+	["talisman_start_weapon_ar"] = {
 		0x9A9D40272333762,
 		0xD5C8E6F0E20201A
 	},
@@ -163,12 +163,12 @@ CoD.ZMTalismanUtility.TalismanToBooleanGameSettingsHash = {
 		0xA6E4728651AFF36,
 		0xF6665B5581F6B6E
 	},
-	[0xD2C0474517A8626] = {
-		0x4C81F5AEDDAE88F
+	["talisman_weapon_reducepapcost"] = {
+		"zmtalismanreducepapcost"
 	},
 	[0x734F461CBE4850D] = {
 		0xF55E280D866341D,
-		0xB066C34278E6394
+		"zmspecweaponisenabled"
 	},
 	[0x53DCE90F31AA76] = {
 		0x2EE429BB9CE771C

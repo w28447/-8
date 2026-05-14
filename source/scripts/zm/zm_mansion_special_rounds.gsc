@@ -137,7 +137,7 @@ function function_36c1dcca( n_round, var_b2239dab )
 // Size: 0x2c
 function function_3dab3302()
 {
-    level notify( #"hash_21672c4f6ccf13d0" );
+    level notify( #"special_round_starting" );
     level thread function_93eab559();
 }
 
@@ -147,14 +147,14 @@ function function_3dab3302()
 // Size: 0x84
 function function_93eab559()
 {
-    level clientfield::set( "" + #"hash_42e03f9ae74a1070", 1 );
+    level clientfield::set( "" + #"special_round_postfx", 1 );
     
     if ( zm_utility::is_standard() )
     {
         return;
     }
     
-    level thread function_2a2428df();
+    level thread p9_wood_lumber_01_1x4_64_01();
     wait 1;
     level thread zm_audio::sndannouncerplayvox( "dogstart" );
 }
@@ -170,8 +170,8 @@ function function_41509519( var_d25bbdd5 )
         level.var_4c350e72++;
     }
     
-    level notify( #"hash_7b9245ff51f3d4f7" );
-    level clientfield::set( "" + #"hash_42e03f9ae74a1070", 0 );
+    level notify( #"special_round_ending" );
+    level clientfield::set( "" + #"special_round_postfx", 0 );
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
@@ -493,7 +493,7 @@ function function_38c0c907()
 // Params 0
 // Checksum 0x424b4ce0, Offset: 0x13c0
 // Size: 0x74
-function function_2a2428df()
+function p9_wood_lumber_01_1x4_64_01()
 {
     players = getplayers();
     num = randomintrange( 0, players.size );

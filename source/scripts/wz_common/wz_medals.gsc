@@ -1,4 +1,4 @@
-#using script_1d29de500c266470;
+#using scripts\core_common\player\player_free_fall_util.gsc;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\challenges_shared;

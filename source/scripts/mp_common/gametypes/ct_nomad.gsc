@@ -417,7 +417,7 @@ function function_37adbd8f()
         bot dodamage( bot.health + 100, bot.origin );
     }
     
-    level thread ct_utils::function_bfa522d1( 0 );
+    level thread ct_utils::simulation_pulse( 0 );
     level thread function_61011245();
     wait 2;
 }
@@ -655,7 +655,7 @@ function function_403b73b4( einflictor, eattacker, idamage, idflags, smeansofdea
         e_player = getplayers()[ 0 ];
         e_player thread ct_utils::function_d471f8fa( 10, undefined, 1, "_killedwarlord" );
         e_player thread ct_utils::function_329f9ba6( #"hash_592d203c0744194b", 2, "green", 1 );
-        level thread ct_utils::function_bfa522d1( 0 );
+        level thread ct_utils::simulation_pulse( 0 );
         
         if ( !( isdefined( level.var_bf36382a ) && level.var_bf36382a ) )
         {

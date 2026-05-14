@@ -1,0 +1,7 @@
+{
+    "name": "#gsocl_zm_general",
+    "type": "gamesettingoptioncategory",
+    "bundles": [
+        "#gamesettingoptioncategory/#gsoc_zm_general"
+    ]
+}

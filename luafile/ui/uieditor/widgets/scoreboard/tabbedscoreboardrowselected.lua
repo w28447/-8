@@ -17,7 +17,7 @@ CoD.TabbedScoreboardRowSelected.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	SelectedDotGlowPC = LUI.UIImage.new( 0, 0, -1, 685, 0, 0, 0, 56 )
 	SelectedDotGlowPC:setAlpha( 0 )
-	SelectedDotGlowPC:setImage( RegisterImage( 0x6B7CDF731D0F3F6 ) )
+	SelectedDotGlowPC:setImage( RegisterImage( "uie_scoreboard_list_indicator_bg" ) )
 	self:addElement( SelectedDotGlowPC )
 	self.SelectedDotGlowPC = SelectedDotGlowPC
 	
@@ -32,7 +32,7 @@ CoD.TabbedScoreboardRowSelected.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	SelectedDotGlowAddPC = LUI.UIImage.new( 0, 0, -1, 685, 0, 0, 0, 56 )
 	SelectedDotGlowAddPC:setAlpha( 0 )
-	SelectedDotGlowAddPC:setImage( RegisterImage( 0x6B7CDF731D0F3F6 ) )
+	SelectedDotGlowAddPC:setImage( RegisterImage( "uie_scoreboard_list_indicator_bg" ) )
 	SelectedDotGlowAddPC:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	SelectedDotGlowAddPC:setShaderVector( 0, 3, 0, 0, 0 )
 	self:addElement( SelectedDotGlowAddPC )

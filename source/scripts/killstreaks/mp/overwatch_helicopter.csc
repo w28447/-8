@@ -1,4 +1,4 @@
-#using script_324d329b31b9b4ec;
+#using scripts\killstreaks\ir_strobe_deploy.csc;
 #using scripts\core_common\ai_shared;
 #using scripts\core_common\clientfield_shared;
 #using scripts\core_common\flag_shared;

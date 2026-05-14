@@ -253,7 +253,7 @@ function function_2713a96a()
 function function_665b4fa6()
 {
     level endon( #"end_game" );
-    self endon( #"hash_6c3e5c135959d4ec" );
+    self endon( #"zipline_in_place" );
     self.var_191e6b71 = 5;
     
     if ( self.var_68ae361b == "s_zipline_use_aft_to_beach" )
@@ -372,7 +372,7 @@ function function_ca1cdeca()
     
     self.var_68a09be4 = 1;
     self zm_unitrigger::unregister_unitrigger( self.s_unitrigger );
-    self notify( #"hash_6c3e5c135959d4ec" );
+    self notify( #"zipline_in_place" );
 }
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
@@ -958,7 +958,7 @@ function function_a393b77f()
                 s_zipline_crank.var_3bc09679 scene::play( "<dev string:xed>" );
                 linktraversal( s_zipline_crank.var_f316eff6 );
                 s_zipline_crank.var_68a09be4 = 1;
-                s_zipline_crank notify( #"hash_6c3e5c135959d4ec" );
+                s_zipline_crank notify( #"zipline_in_place" );
             }
         }
         

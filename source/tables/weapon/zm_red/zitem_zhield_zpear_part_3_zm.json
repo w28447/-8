@@ -1,7 +1,7 @@
 {
     "name": "#zitem_zhield_zpear_part_3_zm",
     "baseWeapon": "#zitem_zhield_zpear_part_3",
-    "streamkey": "#hash_5fbda7416c4b52de",
+    "streamkey": "#zitem_zhield_zpear_part_3_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

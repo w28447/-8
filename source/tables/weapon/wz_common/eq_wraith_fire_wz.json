@@ -2,7 +2,7 @@
     "name": "#eq_wraith_fire_wz",
     "baseWeapon": "#eq_wraith_fire",
     "displayname": "#weapon/wraith_fire",
-    "streamkey": "#hash_24f899bfec34e536",
+    "streamkey": "#eq_wraith_fire_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "scrstr_1190": "tag_rag_05_animated",

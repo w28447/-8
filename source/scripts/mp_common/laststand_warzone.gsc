@@ -1389,7 +1389,7 @@ function function_356caede( team )
     }
     
     players = getplayers( team, self.revivetrigger.origin, self.revivetrigger.radius );
-    height = getdvarint( #"hash_48068f92d21e2a64", 15 );
+    height = getdvarint( #"finisher_trigger_height", 15 );
     
     foreach ( player in players )
     {
@@ -1409,7 +1409,7 @@ function function_356caede( team )
         
         self clientfield::set_player_uimodel( "hudItems.beingFinished", 1 );
         finisher increment_finishing();
-        bundle_index = getdvarint( #"hash_4fe437fabb65172a", 0 ) < 0 ? randomintrange( 1, level.finishers_list.finishers.size - 1 ) : getdvarint( #"hash_4fe437fabb65172a", 0 );
+        bundle_index = getdvarint( #"scr_finisher_bundle_index", 0 ) < 0 ? randomintrange( 1, level.finishers_list.finishers.size - 1 ) : getdvarint( #"scr_finisher_bundle_index", 0 );
         var_dc5a63bd = level.finishers_list.finishers.size - 1;
         
         if ( isdefined( getgametypesetting( #"wzspectrerising" ) ) && getgametypesetting( #"wzspectrerising" ) && finisher clientfield::get( "hasspectrebody" ) )

@@ -3,7 +3,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "meansofdeath",
     "name": "mod_dot_self",
-    "displayname": "localized17#hash_73eeb74ccec149c7",
+    "displayname": "localized17#ui/mod_dot_self",
     "icon": "image#ui_icon_meansofdeath_suicide",
     "iconlarge": "image#ui_icon_meansofdeath_suicide_xl"
 }

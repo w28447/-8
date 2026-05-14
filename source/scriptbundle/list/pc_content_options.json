@@ -1,0 +1,7 @@
+{
+    "name": "#pc_content_options",
+    "type": "playersettingoption",
+    "bundles": [
+        "#pc_content_enable"
+    ]
+}

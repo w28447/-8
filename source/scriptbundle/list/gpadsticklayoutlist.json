@@ -1,0 +1,10 @@
+{
+    "name": "#gpadsticklayoutlist",
+    "type": "gpadsticklayout",
+    "bundles": [
+        "#stick_layout_default",
+        "#stick_layout_southpaw",
+        "#stick_layout_legacy",
+        "#stick_layout_legacy_southpaw"
+    ]
+}

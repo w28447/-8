@@ -4,7 +4,7 @@
     "displayname": "#weapon/hero_pineapplegun",
     "weapon70": "#hero_pineapplegun",
     "weapon880": "#hero_pineapple_grenade_mp",
-    "streamkey": "#hash_13a35a23219d4d8c",
+    "streamkey": "#hero_pineapplegun_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -44,8 +44,8 @@
         ]
     ],
     "sound90": "#hash_30811ca009af27a4",
-    "firesound": "#hash_c0e87a12dcdbe86",
-    "firesoundplayer": "#hash_376e6a170e877ab",
+    "firesound": "#wpn_pineapple_fire_npc",
+    "firesoundplayer": "#wpn_pineapple_fire_plr",
     "sound3e0": "#hash_60f9893b7fbb721d",
     "gadgetreadysoundplayer": "#hash_3a2850280bcd551b",
     "sound660": "#uin_unavailable_charging",
@@ -53,8 +53,8 @@
     "sound7d0": "#hash_a5579115a16f4fb",
     "sound800": "#hash_54f28bb508a46096",
     "sound810": "#hash_54f28bb508a46096",
-    "tunables1": "#hash_42a656ae245549bb",
-    "tunables2": "#hash_42a656ae245549bb",
+    "tunables1": "#hero_pineapplegun_tunables_mp_pc",
+    "tunables2": "#hero_pineapplegun_tunables_mp_pc",
     "cacWeaponXCam": "#ui_cam_cac_hero_pineapplegun",
     "attachments": [
         "#hash_f459a0af8e8f912b"

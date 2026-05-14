@@ -172,7 +172,7 @@ function sun_deck_watcher()
 // Size: 0x43c
 function function_d096f18f()
 {
-    level.e_lighthouse_light notify( #"hash_78fc5bbd712046b0" );
+    level.e_lighthouse_light notify( #"lighthouse_state_change" );
     level.e_lighthouse_light rotateto( ( 10, level.e_lighthouse_light.angles[ 1 ] - 5, 0 ), 0.2 );
     level.e_lighthouse_light waittill( #"rotatedone" );
     level.e_lighthouse_light rotatevelocity( ( 0, -1440, 0 ), 4.5, 3 );

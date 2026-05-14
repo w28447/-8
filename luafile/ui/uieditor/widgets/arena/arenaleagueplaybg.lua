@@ -49,7 +49,7 @@ CoD.arenaLeaguePlayBg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local dataFui = LUI.UIImage.new( 0, 0, 1767, 1827, 0, 0, 958, 974 )
 	dataFui:setAlpha( 0.12 )
 	dataFui:setScale( 2, 2 )
-	dataFui:setImage( RegisterImage( 0x73A4BBA3912B0F ) )
+	dataFui:setImage( RegisterImage( "uie_ui_menu_aar_common_numbers_text" ) )
 	dataFui:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( dataFui )
 	self.dataFui = dataFui

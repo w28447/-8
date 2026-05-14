@@ -115,7 +115,7 @@ Lobby.Launch.HostLaunchPump = function ( f5_arg0 )
 			Lobby.Timer.HostingLobby( {
 				controller = Engine.GetPrimaryController(),
 				lobbyType = Enum.LobbyType[0x92676CF5B6FCD43],
-				mainMode = f5_local3[0xEB7DDC7F079D51B],
+				mainMode = f5_local3["mainmode"],
 				lobbyTimerType = f5_local3[0x558B67A321D1120],
 				matchEnded = true,
 				status = Lobby.Timer.LOBBY_STATUS.RESET_TO_NEED

@@ -10,8 +10,8 @@
     "label2": "localized17#menu/round_wins",
     "hash_54e336e4": 0,
     "optionscount": 2,
-    "hinttext2": "localized17#hash_1b667eb8b6270fa7",
-    "hinttext1": "localized17#hash_11e698e464030e8e",
+    "hinttext2": "localized17#menu/ctf_round_wins_hint",
+    "hinttext1": "localized17#menu/total_flag_caps_hint",
     "hash_765cfd09": 0,
     "setting": "cumulativeRoundScores",
     "isenableddisabled": 0

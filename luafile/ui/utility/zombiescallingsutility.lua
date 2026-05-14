@@ -47,12 +47,12 @@ CoD.ZombiesCallingsUtility.FactionCallingRewards = {
 		name = 0xC6DA1503405E36F,
 		index = 2
 	},
-	[0xBF0B067663640F5] = {
-		name = 0x7B3BEA931147DB0,
+	["outfit1"] = {
+		name = "menu/outfit",
 		index = 3
 	},
-	[0xBF0AD6766363BDC] = {
-		name = 0x7B3BEA931147DB0,
+	["outfit2"] = {
+		name = "menu/outfit",
 		index = 4
 	}
 }
@@ -82,8 +82,8 @@ CoD.ZombiesCallingsUtility.FactionRewardCompletions = {
 	},
 	[0xBD6E1F8964DCE86] = {
 		rewardHashes = {
-			0xBF0B067663640F5,
-			0xBF0AD6766363BDC
+			"outfit1",
+			"outfit2"
 		},
 		rewardName = 0xAEABC7E65D1B259,
 		rewardBundleName = 0x89963FA265D123F,
@@ -96,8 +96,8 @@ CoD.ZombiesCallingsUtility.FactionRewardCompletions = {
 		rewardHashes = {
 			0x215F12389F75B44,
 			0x9464BE3EA4EF313,
-			0xBF0B067663640F5,
-			0xBF0AD6766363BDC
+			"outfit1",
+			"outfit2"
 		},
 		rewardName = 0xE988984E0CE3479,
 		rewardBundleName = 0x69D8EC8D4B3D59C,
@@ -151,13 +151,13 @@ CoD.ZombiesCallingsUtility.AddFactionCallingStatUnlocks = function ( f3_arg0 )
 								end
 								if f3_local14 and f3_local14.lootidlist then
 									for f3_local18, f3_local19 in ipairs( f3_local14.lootidlist ) do
-										local f3_local20 = f3_local19[0x28887F70BF5EBA]
+										local f3_local20 = f3_local19["lootid"]
 										if f3_local20 and f3_local20 ~= 0x0 then
 											f3_arg0[f3_local20] = {
 												storageFile = Enum.StorageFileType[0xA57D6164B91A8FC],
 												path = {
 													0xAE679FEF1E88988,
-													0xFFBFACDD776E531,
+													"seasons",
 													f3_local30 - 1,
 													0xC882E09926D85B8,
 													f3_local27,
@@ -188,7 +188,7 @@ CoD.ZombiesCallingsUtility.AddFactionCallingStatUnlocks = function ( f3_arg0 )
 					local f3_local10 = Engine[0xC53F8D38DF9042B]( f3_local24[0x37E6733A4393CBA] )
 					if f3_local10 and f3_local24.factioncompletionlootidlist then
 						for f3_local21, f3_local22 in ipairs( f3_local24.factioncompletionlootidlist ) do
-							local f3_local14 = f3_local22[0x28887F70BF5EBA]
+							local f3_local14 = f3_local22["lootid"]
 							if f3_local14 and f3_local14 ~= 0x0 then
 								f3_arg0[f3_local14] = {
 									itemOwned = function ( f5_arg0 )
@@ -206,7 +206,7 @@ CoD.ZombiesCallingsUtility.AddFactionCallingStatUnlocks = function ( f3_arg0 )
 				end
 			elseif f3_local29[f3_local26.lootIDList] then
 				for f3_local23, f3_local24 in ipairs( f3_local29[f3_local26.lootIDList] ) do
-					local f3_local10 = f3_local24[0x28887F70BF5EBA]
+					local f3_local10 = f3_local24["lootid"]
 					if f3_local10 and f3_local10 ~= 0x0 then
 						f3_arg0[f3_local10] = {
 							itemOwned = function ( f7_arg0 )
@@ -384,7 +384,7 @@ CoD.ZombiesCallingsUtility.GetDailyCallingInfo = function ( f19_arg0 )
 				f19_local3 = f19_local1.dailyschedule[f19_local2]
 			end
 			if f19_local3 then
-				local f19_local4 = f19_local3[0x8F14807B58DDF35]
+				local f19_local4 = f19_local3["xp"]
 				local f19_local5 = Engine[0xE00B2F29271C60B]( Engine[0xC53F8D38DF9042B]( f19_local3[0x9603BEF07A9524C] ) )
 				f19_local0 = {
 					name = f19_local5[0x7598EB883D65047],
@@ -543,7 +543,7 @@ CoD.ZombiesCallingsUtility.GetFactionPactsCompleted = function ( f28_arg0, f28_a
 	if not f28_arg1 then
 		f28_arg1 = LuaUtils.GetCallingsStats( f28_arg0 )
 	end
-	return f28_arg1[0xFFBFACDD776E531][f28_arg2 - 1][0xC882E09926D85B8][f28_arg3][0xA54171CE10DB54F]:get()
+	return f28_arg1["seasons"][f28_arg2 - 1][0xC882E09926D85B8][f28_arg3][0xA54171CE10DB54F]:get()
 end
 
 CoD.ZombiesCallingsUtility.GetFactionCallingInfoInternal = function ( f29_arg0, f29_arg1, f29_arg2 )
@@ -568,7 +568,7 @@ CoD.ZombiesCallingsUtility.GetFactionCallingInfoInternal = function ( f29_arg0, 
 			f31_arg0[f31_arg1].isGoal = f31_arg1 == CoD.ZombiesCallingsUtility.FactionCallingPact[0x5BF2F1EA44E6B98]
 			if f31_arg3.array then
 				for f31_local3, f31_local4 in ipairs( f31_arg3.array ) do
-					f29_local2( f31_arg0, f31_arg1, Engine[0xC53F8D38DF9042B]( f31_local4[0x9603BEF07A9524C] ), f31_local4[0x6F3E46051EEE3E8], f31_local4[0x8F14807B58DDF35] )
+					f29_local2( f31_arg0, f31_arg1, Engine[0xC53F8D38DF9042B]( f31_local4[0x9603BEF07A9524C] ), f31_local4[0x6F3E46051EEE3E8], f31_local4["xp"] )
 				end
 			else
 				f29_local2( f31_arg0, f31_arg1, Engine[0xC53F8D38DF9042B]( f31_arg3.task ), f31_arg3.target, f31_arg3.xp )
@@ -582,10 +582,10 @@ CoD.ZombiesCallingsUtility.GetFactionCallingInfoInternal = function ( f29_arg0, 
 			array = f29_local1.factioncallings[f29_arg2].rushpact
 		} )
 		local f29_local4 = f29_local1.factioncallingseasons[f29_arg0].callinglist[f29_arg1]
-		f29_local3( f29_local0, CoD.ZombiesCallingsUtility.FactionCallingPact[0x78132D0DAB0252B], f29_local4[0x5C06BF0019BE575], {
+		f29_local3( f29_local0, CoD.ZombiesCallingsUtility.FactionCallingPact[0x78132D0DAB0252B], f29_local4["tcmgametype"], {
 			array = f29_local4.tcmpact
 		} )
-		f29_local3( f29_local0, CoD.ZombiesCallingsUtility.FactionCallingPact[0x5BF2F1EA44E6B98], f29_local4[0x5C06BF0019BE575], {
+		f29_local3( f29_local0, CoD.ZombiesCallingsUtility.FactionCallingPact[0x5BF2F1EA44E6B98], f29_local4["tcmgametype"], {
 			task = f29_local4[0x5BF2F1EA44E6B98],
 			target = f29_local4[0x9B627608B32BD21],
 			xp = f29_local4[0x33F7036B1F73870]
@@ -640,10 +640,10 @@ CoD.ZombiesCallingsUtility.GetFactionCallingProgressInfo = function ( f33_arg0, 
 		if f33_arg1 and f33_local2.pacts then
 			for f33_local11, f33_local12 in pairs( f33_local2.pacts ) do
 				if #f33_local12.tasks == 1 then
-					f33_local12.tasks[1].progress = f33_arg1[0xFFBFACDD776E531][f33_arg2 - 1][0xE5C33509A9A20AC][f33_arg3 - 1][f33_local11][0x9909144862249C6]:get()
+					f33_local12.tasks[1].progress = f33_arg1["seasons"][f33_arg2 - 1][0xE5C33509A9A20AC][f33_arg3 - 1][f33_local11][0x9909144862249C6]:get()
 				end
 				for f33_local9, f33_local10 in ipairs( f33_local12.tasks ) do
-					f33_local10.progress = f33_arg1[0xFFBFACDD776E531][f33_arg2 - 1][0xE5C33509A9A20AC][f33_arg3 - 1][f33_local11][f33_local9 - 1][0x9909144862249C6]:get()
+					f33_local10.progress = f33_arg1["seasons"][f33_arg2 - 1][0xE5C33509A9A20AC][f33_arg3 - 1][f33_local11][f33_local9 - 1][0x9909144862249C6]:get()
 				end
 			end
 			return f33_local2
@@ -658,7 +658,7 @@ CoD.ZombiesCallingsUtility.GetFactionCallingCompletion = function ( f35_arg0, f3
 	if not f35_arg1 then
 		f35_arg1 = LuaUtils.GetCallingsStats( f35_arg0 )
 	end
-	local f35_local0 = CoD.ZombiesCallingsUtility.GetFactionCallingProgressInfo( f35_arg0, f35_arg1, f35_arg2, f35_arg3, f35_arg1[0xFFBFACDD776E531][f35_arg2 - 1][0xE597FBE41270A4D]:get() )
+	local f35_local0 = CoD.ZombiesCallingsUtility.GetFactionCallingProgressInfo( f35_arg0, f35_arg1, f35_arg2, f35_arg3, f35_arg1["seasons"][f35_arg2 - 1][0xE597FBE41270A4D]:get() )
 	if not f35_local0 then
 		return nil
 	end
@@ -841,7 +841,7 @@ CoD.ZombiesCallingsUtility.GetRewardCompletion = function ( f43_arg0, f43_arg1, 
 			local f43_local6 = Engine[0xC53F8D38DF9042B]( f43_local19[0x37E6733A4393CBA] )
 			for f43_local13, f43_local14 in ipairs( CoD.ZombiesCallingsUtility.FactionCallingRewardCasts ) do
 				for f43_local10, f43_local11 in ipairs( f43_local1 ) do
-					if f43_local0[0xFFBFACDD776E531][f43_arg1 - 1][0xC882E09926D85B8][f43_local6][0x8833743622919CB][f43_local14][0x8F54E2E72E0EA12][f43_local11]:get() == 0 then
+					if f43_local0["seasons"][f43_arg1 - 1][0xC882E09926D85B8][f43_local6][0x8833743622919CB][f43_local14][0x8F54E2E72E0EA12][f43_local11]:get() == 0 then
 						return false
 					end
 				end
@@ -855,7 +855,7 @@ CoD.ZombiesCallingsUtility.GetFactionCompletion = function ( f44_arg0, f44_arg1,
 	local f44_local0 = LuaUtils.GetCallingsStats( f44_arg0 )
 	for f44_local7, f44_local8 in ipairs( CoD.ZombiesCallingsUtility.FactionCallingRewardCasts ) do
 		for f44_local4, f44_local5 in pairs( CoD.ZombiesCallingsUtility.FactionCallingRewards ) do
-			if f44_local0[0xFFBFACDD776E531][f44_arg1 - 1][0xC882E09926D85B8][f44_arg2][0x8833743622919CB][f44_local8][0x8F54E2E72E0EA12][f44_local4]:get() == 0 then
+			if f44_local0["seasons"][f44_arg1 - 1][0xC882E09926D85B8][f44_arg2][0x8833743622919CB][f44_local8][0x8F54E2E72E0EA12][f44_local4]:get() == 0 then
 				return false
 			end
 		end
@@ -998,26 +998,26 @@ CoD.ZombiesCallingsUtility.ProceedToNextScreenState = function ( f52_arg0 )
 	if f52_local0:get() == CoD.ZombiesCallingsUtility.FactionCallingScreenStates.FIRST_SEASON_INTERACTION then
 		f52_local0:set( CoD.ZombiesCallingsUtility.FactionCallingScreenStates.FACTION_SELECTION )
 	elseif f52_local0:get() == CoD.ZombiesCallingsUtility.FactionCallingScreenStates.FACTION_SELECTION then
-		local f52_local5 = f52_local1[0xFFBFACDD776E531]
+		local f52_local5 = f52_local1["seasons"]
 		local f52_local6 = f52_local2
 		if f52_local5[f52_local2:get()][0xE145BC7755A9A8B]:get() == 0 then
-			f52_local5 = f52_local1[0xFFBFACDD776E531]
+			f52_local5 = f52_local1["seasons"]
 			f52_local6 = f52_local2
 			f52_local5[f52_local2:get()][0xE145BC7755A9A8B]:set( 1 )
-			f52_local5 = f52_local1[0xFFBFACDD776E531]
+			f52_local5 = f52_local1["seasons"]
 			f52_local6 = f52_local2
 			f52_local5[f52_local2:get()][0xE597FBE41270A4D]:set( f52_local4:get() )
 			f52_local5 = DataSources.ZMFactionCallingGlobal.getModel( f52_arg0 )
 			Engine.ForceNotifyModelSubscriptions( f52_local5:create( "seasonId" ) )
 		end
-		f52_local5 = f52_local1[0xFFBFACDD776E531]
+		f52_local5 = f52_local1["seasons"]
 		f52_local6 = f52_local2
 		f52_local5 = f52_local5[f52_local2:get()][0xC882E09926D85B8]
 		f52_local6 = f52_local4
 		f52_local5[f52_local4:get()][0x46F514A63AA16E2]:set( 1 )
 		f52_local0:set( CoD.ZombiesCallingsUtility.FactionCallingScreenStates.FACTION_ACTIVATION )
 	elseif f52_local0:get() == CoD.ZombiesCallingsUtility.FactionCallingScreenStates.FACTION_ACTIVATION then
-		local f52_local5 = f52_local1[0xFFBFACDD776E531]
+		local f52_local5 = f52_local1["seasons"]
 		local f52_local6 = f52_local2
 		f52_local5 = f52_local5[f52_local2:get()][0xE5C33509A9A20AC]
 		f52_local6 = f52_local3
@@ -1030,7 +1030,7 @@ CoD.ZombiesCallingsUtility.ProceedToNextScreenState = function ( f52_arg0 )
 	elseif f52_local0:get() == CoD.ZombiesCallingsUtility.FactionCallingScreenStates.FIRST_CALLING_INTERACTION then
 		f52_local0:set( CoD.ZombiesCallingsUtility.FactionCallingScreenStates.FACTION_RESPONSE )
 	elseif f52_local0:get() == CoD.ZombiesCallingsUtility.FactionCallingScreenStates.FACTION_RESPONSE then
-		local f52_local5 = f52_local1[0xFFBFACDD776E531]
+		local f52_local5 = f52_local1["seasons"]
 		local f52_local6 = f52_local2
 		f52_local5 = f52_local5[f52_local2:get()][0xE5C33509A9A20AC]
 		f52_local6 = f52_local3
@@ -1053,7 +1053,7 @@ CoD.ZombiesCallingsUtility.InitZMFactionCallingModels = function ( f53_arg0 )
 	if f53_local1[0xBF1EBBFA7B16C64]:get() ~= 0 or IsBooleanDvarSet( 0x8F994187B13BED2 ) then
 		f53_local0.FactionCallingScreenState:set( CoD.ZombiesCallingsUtility.FactionCallingScreenStates.DEFAULT )
 	else
-		local f53_local2 = f53_local1[0xFFBFACDD776E531]
+		local f53_local2 = f53_local1["seasons"]
 		local f53_local3 = f53_local1[0xB9514BB20FEC5FF]
 		if f53_local2[REG4:get()][0xE145BC7755A9A8B]:get() ~= 0 then
 			f53_local0.FactionCallingScreenState:set( CoD.ZombiesCallingsUtility.FactionCallingScreenStates.FACTION_SELECTION )
@@ -1083,8 +1083,8 @@ CoD.ZombiesCallingsUtility.GetFactionCircleModels = function ( f56_arg0, f56_arg
 	end
 	local f56_local2 = LuaUtils.GetCallingsStats( f56_arg0 )
 	local f56_local3 = Engine[0xC53F8D38DF9042B]( f56_local1[0x37E6733A4393CBA] )
-	local f56_local4 = f56_local2[0xFFBFACDD776E531][f56_arg1 - 1][0xC882E09926D85B8][f56_local3][0x46F514A63AA16E2]:get() == 0
-	local f56_local5 = f56_local2[0xFFBFACDD776E531][f56_arg1 - 1][0xC882E09926D85B8][f56_local3][0xA54171CE10DB54F]:get()
+	local f56_local4 = f56_local2["seasons"][f56_arg1 - 1][0xC882E09926D85B8][f56_local3][0x46F514A63AA16E2]:get() == 0
+	local f56_local5 = f56_local2["seasons"][f56_arg1 - 1][0xC882E09926D85B8][f56_local3][0xA54171CE10DB54F]:get()
 	local f56_local6 = 0x0
 	local f56_local7 = 0x0
 	local f56_local8 = 0x0
@@ -1110,8 +1110,8 @@ CoD.ZombiesCallingsUtility.GetFactionCircleModels = function ( f56_arg0, f56_arg
 						models = {
 							image = f58_local6[0xAB612888528489A] or "blacktransparent",
 							name = f58_local6[0x4BCADBA8E631B86] or 0x0,
-							purchased = f56_local2[0xFFBFACDD776E531][f56_arg1 - 1][0xC882E09926D85B8][f56_local3][0x8833743622919CB][f57_arg1][0x8F54E2E72E0EA12][f58_local4]:get() ~= 0,
-							lootId = f58_local6[0x28887F70BF5EBA] or 0x0
+							purchased = f56_local2["seasons"][f56_arg1 - 1][0xC882E09926D85B8][f56_local3][0x8833743622919CB][f57_arg1][0x8F54E2E72E0EA12][f58_local4]:get() ~= 0,
+							lootId = f58_local6["lootid"] or 0x0
 						},
 						properties = {
 							seasonId = f56_arg1,
@@ -1579,7 +1579,7 @@ CoD.OverlayUtility.AddSystemOverlay( "FactionSelectionConfirmation", {
 } )
 CoD.OverlayUtility.AddSystemOverlay( "CallingActivation", {
 	menuName = "SystemOverlay_Full",
-	title = 0xFAA25CA10099204,
+	title = "menu/confirm_selection",
 	description = 0x33AA81FF351B3F4,
 	categoryType = CoD.OverlayUtility.OverlayTypes.GenericMessage,
 	openMethod = CoD.OverlayUtility.OpenMethods.Popup,
@@ -1600,7 +1600,7 @@ CoD.OverlayUtility.AddSystemOverlay( "CallingActivation", {
 } )
 CoD.OverlayUtility.AddSystemOverlay( "FactionRewardConfirmation", {
 	menuName = "SystemOverlay_Full",
-	title = 0xFAA25CA10099204,
+	title = "menu/confirm_selection",
 	image = function ( f92_arg0, f92_arg1 )
 		return CoD.SafeGetModelValue( f92_arg1._model, "image" ) or "blacktransparent"
 	end,
@@ -1655,7 +1655,7 @@ CoD.OverlayUtility.AddSystemOverlay( "FactionRewardConfirmation", {
 			end
 			
 			local f96_local4 = CoD.ZombiesCallingsUtility.GetFactionRewardCompletionInfo( f96_arg1, f96_local0.seasonId )
-			f96_local1[0xFFBFACDD776E531][f96_local0.seasonId - 1][0xC882E09926D85B8][f96_local0.factionHash][0x8833743622919CB][f96_local0.castHash][0x8F54E2E72E0EA12][f96_local0.rewardHash]:set( 1 )
+			f96_local1["seasons"][f96_local0.seasonId - 1][0xC882E09926D85B8][f96_local0.factionHash][0x8833743622919CB][f96_local0.castHash][0x8F54E2E72E0EA12][f96_local0.rewardHash]:set( 1 )
 			local f96_local5 = CoD.ZombiesCallingsUtility.GetFactionRewardCompletionInfo( f96_arg1, f96_local0.seasonId )
 			f96_local2( f96_local4, f96_local5 )
 			LuaUtils.StorageWriteZMProgression( f96_arg1 )
@@ -1926,7 +1926,7 @@ CoD.ZombiesCallingsUtility.GetFactionTokens = function ( f113_arg0, f113_arg1 )
 	local f113_local1 = 0
 	local f113_local2 = 0
 	for f113_local3 = 1, CoD.ZombiesCallingsUtility.MaxFactionCallingSeasons, 1 do
-		local f113_local6 = f113_local0[0xFFBFACDD776E531][f113_local3 - 1][0xC882E09926D85B8][f113_arg1]
+		local f113_local6 = f113_local0["seasons"][f113_local3 - 1][0xC882E09926D85B8][f113_arg1]
 		f113_local1 = f113_local1 + f113_local6[0xA54171CE10DB54F]:get()
 		for f113_local13, f113_local14 in ipairs( CoD.ZombiesCallingsUtility.FactionCallingRewardCasts ) do
 			for f113_local10, f113_local11 in pairs( CoD.ZombiesCallingsUtility.FactionCallingRewards ) do

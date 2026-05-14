@@ -3,7 +3,7 @@
     "baseWeapon": "#melee_stopsign_t8",
     "displayname": "#weapon/melee_stopsign_t8",
     "weapon70": "#melee_stopsign_t8",
-    "streamkey": "#hash_773363f7779d1de8",
+    "streamkey": "#melee_stopsign_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",

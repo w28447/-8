@@ -98,15 +98,15 @@ function function_c621758a()
 function function_5a6d95()
 {
     buoy_stash = getdynent( "dock_yard_stash_2" );
-    var_63ee2ffd = 0;
+    stashisempty = 0;
     
     if ( isdefined( buoy_stash ) )
     {
-        while ( !var_63ee2ffd && isdefined( self ) )
+        while ( !stashisempty && isdefined( self ) )
         {
             if ( function_ffdbe8c2( buoy_stash ) == 2 )
             {
-                var_63ee2ffd = 1;
+                stashisempty = 1;
                 self clientfield::set( "buoy_light_fx_changed", 1 );
                 break;
             }

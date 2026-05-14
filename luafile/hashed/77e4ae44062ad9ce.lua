@@ -63,7 +63,7 @@ CoD.Barracks_StatsOverview.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	TimePlayedText:setRGB( 0.92, 0.92, 0.92 )
 	TimePlayedText:setAlpha( 0.5 )
 	TimePlayedText.__String_Reference = function ()
-		TimePlayedText:setText( SecondsAsTimePlayedString( CoD.PlayerStatsUtility.GetPlayerStorageStat( f1_arg0, 0x3BF15114F02AF7B, 0x0 ) ) )
+		TimePlayedText:setText( SecondsAsTimePlayedString( CoD.PlayerStatsUtility.GetPlayerStorageStat( f1_arg0, "time_played_total", 0x0 ) ) )
 	end
 	
 	TimePlayedText.__String_Reference()
@@ -165,12 +165,12 @@ CoD.Barracks_StatsOverview.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local ScorePerMinute = CoD.PlayerStatsDetailed.new( f1_arg0, f1_arg1, 0, 0, 164, 466, 0, 0, 397.5, 418.5 )
 	ScorePerMinute.StatHeaderText:setText( LocalizeToUpperString( 0x5402AF9B15DF76C ) )
-	ScorePerMinute.StatValue:setText( CoD.PlayerStatsUtility.GetPlayerStorageStatPerMinute( f1_arg0, 0x10E63FBE7F624F5, 0x3BF15114F02AF7B, 5589 ) )
+	ScorePerMinute.StatValue:setText( CoD.PlayerStatsUtility.GetPlayerStorageStatPerMinute( f1_arg0, 0x10E63FBE7F624F5, "time_played_total", 5589 ) )
 	self:addElement( ScorePerMinute )
 	self.ScorePerMinute = ScorePerMinute
 	
 	local ScorePerGame = CoD.PlayerStatsDetailed.new( f1_arg0, f1_arg1, 0, 0, 164, 466, 0, 0, 419.5, 440.5 )
-	ScorePerGame.StatHeaderText:setText( LocalizeToUpperString( 0x48059D61004B186 ) )
+	ScorePerGame.StatHeaderText:setText( LocalizeToUpperString( "menu/score_per_game" ) )
 	ScorePerGame.StatValue:setText( CoD.PlayerStatsUtility.GetPlayerStorageStatRatio( f1_arg0, 0x10E63FBE7F624F5, 0x25E6910D90BDEA9, 8.13 ) )
 	self:addElement( ScorePerGame )
 	self.ScorePerGame = ScorePerGame
@@ -189,7 +189,7 @@ CoD.Barracks_StatsOverview.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local AverageLife = CoD.PlayerStatsDetailed.new( f1_arg0, f1_arg1, 0, 0, 164, 466, 0, 0, 525, 546 )
 	AverageLife.StatHeaderText:setText( LocalizeToUpperString( 0x964663B30F4C0DD ) )
-	AverageLife.StatValue:setText( SecondsAsTime( CoD.PlayerStatsUtility.GetPlayerStorageStatRatioRounded( f1_arg0, 0x3BF15114F02AF7B, 0x6ED920648D707FA, "1:02" ) ) )
+	AverageLife.StatValue:setText( SecondsAsTime( CoD.PlayerStatsUtility.GetPlayerStorageStatRatioRounded( f1_arg0, "time_played_total", 0x6ED920648D707FA, "1:02" ) ) )
 	self:addElement( AverageLife )
 	self.AverageLife = AverageLife
 	
@@ -201,7 +201,7 @@ CoD.Barracks_StatsOverview.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local DamagePerMinute = CoD.PlayerStatsDetailed.new( f1_arg0, f1_arg1, 0, 0, 164, 466, 0, 0, 607, 628 )
 	DamagePerMinute.StatHeaderText:setText( LocalizeToUpperString( 0x879843A2F29796B ) )
-	DamagePerMinute.StatValue:setText( SecondsAsTime( CoD.PlayerStatsUtility.GetPlayerStorageStatPerMinute( f1_arg0, 0xD238EA28DDDB583, 0x3BF15114F02AF7B, "1:02" ) ) )
+	DamagePerMinute.StatValue:setText( SecondsAsTime( CoD.PlayerStatsUtility.GetPlayerStorageStatPerMinute( f1_arg0, 0xD238EA28DDDB583, "time_played_total", "1:02" ) ) )
 	self:addElement( DamagePerMinute )
 	self.DamagePerMinute = DamagePerMinute
 	

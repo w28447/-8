@@ -33,8 +33,8 @@ CoD.DirectorPublicWzPlayButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 			modelName = "lobbyRoot.privateClient.update"
 		} )
 	end, false )
-	DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( 0xA43B10D9DA121A ) )
-	DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( 0xA43B10D9DA121A ) )
+	DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( "menu/waiting_caps" ) )
+	DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( "menu/waiting_caps" ) )
 	self:addElement( DirectorSelectButtonMiniInternal )
 	self.DirectorSelectButtonMiniInternal = DirectorSelectButtonMiniInternal
 	

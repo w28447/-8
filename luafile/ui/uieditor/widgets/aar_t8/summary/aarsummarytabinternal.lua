@@ -141,7 +141,7 @@ CoD.AARSummaryTabInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 			modelName = "xpNeededToLevelUp"
 		} )
 	end )
-	XPMeter.maxRankText:setText( Engine[0xF9F1239CFD921FE]( 0x648FC67DF4BF35E ) )
+	XPMeter.maxRankText:setText( Engine[0xF9F1239CFD921FE]( "menu/max_level" ) )
 	XPMeter:linkToElementModel( self, nil, false, function ( model )
 		XPMeter:setModel( model, f1_arg1 )
 	end )

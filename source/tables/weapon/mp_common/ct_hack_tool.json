@@ -1,7 +1,7 @@
 {
     "name": "#ct_hack_tool",
     "baseWeapon": "#ct_hack_tool",
-    "streamkey": "#hash_3eeb2ac8f6925ac3",
+    "streamkey": "#ct_hack_tool_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

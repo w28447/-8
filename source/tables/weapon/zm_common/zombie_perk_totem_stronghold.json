@@ -1,7 +1,7 @@
 {
     "name": "#zombie_perk_totem_stronghold",
     "baseWeapon": "#zombie_perk_totem_stronghold",
-    "streamkey": "#hash_b7c6da1f5d07187",
+    "streamkey": "#zombie_perk_totem_stronghold_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",
@@ -33,7 +33,7 @@
     "sound4e0": "#hash_7de02f3f0a5f070b",
     "tunables1": "#hash_2c79f27fac9515c3",
     "gestureTables": [
-        "#hash_7e0eea18d7e8c8ab"
+        "#gestable_zombie_perk_totem_stronghold"
     ],
     "viewmodel": [
         "#wpn_t8_zm_perk_totem_stone_cold_stronghold_view"

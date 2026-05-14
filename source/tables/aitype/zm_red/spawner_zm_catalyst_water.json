@@ -19,7 +19,7 @@
     ],
     "meleeWeapon": "#zombie_ai_defaultmelee_zm",
     "aimTable": "#soldier_aim",
-    "footstepTable": "#hash_306849c54e2546df",
+    "footstepTable": "#zombfootstep_catalyst_water",
     "footstepScriptCallback": false,
     "footstepFXTable1": "#zm_cata_water_footstep",
     "footstepFXTable2": "#hash_4dbce506dd3f2df0",

@@ -10,7 +10,7 @@ CoD.BowLauncherReticle_L1.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local Line1 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Line1:setAlpha( 0 )
-	Line1:setImage( RegisterImage( 0x43FE29993DEBD23 ) )
+	Line1:setImage( RegisterImage( "uie_bowlauncher_line1" ) )
 	Line1:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Line1 )
 	self.Line1 = Line1

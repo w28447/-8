@@ -3,7 +3,7 @@
     "baseWeapon": "#lmg_light_robot",
     "displayname": "#killstreak/combat_robot",
     "weapon70": "#killstreak_combat_robot",
-    "streamkey": "#hash_537fbf76462f8749",
+    "streamkey": "#lmg_light_robot_soundbank",
     "scrstr_8c8": [
         "tag_sights_off",
         "tag_rails_side",

@@ -81,7 +81,7 @@ function is_active()
 // Size: 0x11c
 function private point_watcher( var_1532dab3 = 1, var_94d24883 = 0.9 )
 {
-    level endon( #"hash_2669c6e7b1eb2e4b", #"end_game", #"hash_7646638df88a3656" );
+    level endon( #"hash_2669c6e7b1eb2e4b", #"end_game", #"trial_round_end" );
     self endon( #"disconnect" );
     wait 15;
     

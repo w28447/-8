@@ -3,7 +3,7 @@
     "displayName": "#heroes/blackjack_bo4",
     "mpDialog": "#blackjack_bo4",
     "playerSoundsTable": "#cp_playersounds",
-    "playerFXTable": "#hash_471b500cc678f872",
+    "playerFXTable": "#wz_playerfx",
     "image_68": "#ui_icon_specialist_portrait_hud_blackjack",
     "positionDraftPortrait": "#ui_icon_specialist_portrait_draft_blackjack",
     "lootUiIcon": "#loot_04_ui_icon_blackmarket_reserves_blackjack",

@@ -3,7 +3,7 @@
     "baseWeapon": "#straferun_gun",
     "displayname": "#killstreak/straferun",
     "weapon70": "#killstreak_straferun",
-    "streamkey": "#hash_d72dee5e7aa5e08",
+    "streamkey": "#straferun_gun_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

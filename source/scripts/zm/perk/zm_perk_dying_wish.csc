@@ -101,8 +101,8 @@ function private function_bd2b1ccb( localclientnum, oldvalue, newvalue, bnewent,
         if ( !isdefined( self.var_cffdb842 ) )
         {
             self.var_e9dd2ca0 = 1;
-            self playsound( localclientnum, #"hash_268d2ee0a0daf799" );
-            self.var_cffdb842 = self playloopsound( #"hash_22a448c0d7682cdf" );
+            self playsound( localclientnum, #"zmb_vapor_dyingwish_start" );
+            self.var_cffdb842 = self playloopsound( #"zmb_vapor_dyingwish_lp" );
         }
         
         return;
@@ -121,7 +121,7 @@ function private function_bd2b1ccb( localclientnum, oldvalue, newvalue, bnewent,
     if ( isdefined( self.var_cffdb842 ) )
     {
         self.var_e9dd2ca0 = 0;
-        self playsound( localclientnum, #"hash_2f273ae29320f08" );
+        self playsound( localclientnum, #"zmb_vapor_dyingwish_end" );
         self stoploopsound( self.var_cffdb842 );
         self.var_cffdb842 = undefined;
     }

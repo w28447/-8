@@ -471,7 +471,7 @@ function openspawnselect()
     }
     
     self clientfield::set_player_uimodel( "hudItems.showSpawnSelect", 1 );
-    level notify( #"hash_4c1be11f1e312a36" );
+    level notify( #"spawn_select_open" );
 }
 
 // Namespace userspawnselection/userspawnselection
@@ -481,7 +481,7 @@ function openspawnselect()
 function closespawnselect()
 {
     self clientfield::set_player_uimodel( "hudItems.showSpawnSelect", 0 );
-    level notify( #"hash_48b4c5f856407d62" );
+    level notify( #"spawn_select_closed" );
 }
 
 // Namespace userspawnselection/userspawnselection

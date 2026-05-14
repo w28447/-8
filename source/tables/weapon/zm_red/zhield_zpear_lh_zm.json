@@ -3,7 +3,7 @@
     "baseWeapon": "#zhield_zpear_lh",
     "displayname": "#zm_red/shield",
     "dualwieldWeaponName": "#zhield_zpear_dw_zm",
-    "streamkey": "#hash_cf8c8abddea90d7",
+    "streamkey": "#zhield_zpear_lh_soundbank",
     "scrstr_8d8": [
         "tag_ik_loc_le_dw"
     ],
@@ -33,7 +33,7 @@
     "#hash_554be9f7": false,
     "sound660": "#uin_unavailable_charging",
     "tunables1": "#zhield_zpear_lh_tunables_zm",
-    "sharedWeaponSounds": "#hash_7ed5a8a63848a4a8",
+    "sharedWeaponSounds": "#zhield_towers_shield",
     "viewmodel": [
         "#wpn_t8_zm_red_shield_view"
     ],

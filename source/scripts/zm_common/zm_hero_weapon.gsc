@@ -1,4 +1,4 @@
-#using script_301f64a4090c381a;
+#using scripts\zm_common\zm_faction_buffs.gsc;
 #using scripts\abilities\ability_player;
 #using scripts\core_common\ai\zombie_utility;
 #using scripts\core_common\ai_shared;
@@ -224,7 +224,7 @@ function function_29f19e9a( var_deaf10fb, n_points )
             var_f032086a += 0.15;
         }
         
-        if ( self namespace_e38c57c1::function_6a7a1533( 5 ) )
+        if ( self zm_faction_buffs::function_6a7a1533( 5 ) )
         {
             var_f032086a += -0.2;
         }
@@ -692,7 +692,7 @@ function function_9a100883( weapon_level, enabled )
 function function_6bba3829( e_player, ai_enemy )
 {
     /#
-        var_ea65bd9c = getdvarstring( #"hash_16e05c0b86ebb83d", "<dev string:x12e>" );
+        var_ea65bd9c = getdvarstring( #"scr_zm_hero_weapon_system", "<dev string:x12e>" );
         
         if ( var_ea65bd9c == "<dev string:x138>" )
         {
@@ -788,7 +788,7 @@ function function_6bba3829( e_player, ai_enemy )
 function function_3fe4a02e( e_player, n_points, str_event )
 {
     /#
-        var_ea65bd9c = getdvarstring( #"hash_16e05c0b86ebb83d", "<dev string:x12e>" );
+        var_ea65bd9c = getdvarstring( #"scr_zm_hero_weapon_system", "<dev string:x12e>" );
         
         if ( var_ea65bd9c == "<dev string:x138>" )
         {

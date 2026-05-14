@@ -8,7 +8,7 @@
     "ammoindex": 0,
     "ammoregen": 0,
     "ammoScriptBundle": "#ammo_type_556_item",
-    "ammoType": "#hash_11185fd032993731",
+    "ammoType": "#5.56",
     "anyplayercanretrieve": 0,
     "bAltWeaponDisableSwitching": false,
     "bDieOnRespawn": false,

@@ -46,7 +46,7 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT32"
                     },
@@ -113,22 +113,22 @@
                 "name": "#hash_583c45da3d8d77ed",
                 "members": [
                     {
-                        "name": "#hash_2b4a32e71c22452",
+                        "name": "#utc_timestamp_game_start",
                         "scrName": "#hash_8bef568c",
                         "type": "UINT64"
                     },
                     {
-                        "name": "#hash_329a52ffc78a973",
+                        "name": "#joined_game_in_progress",
                         "scrName": "#hash_44a8d99b",
                         "type": "BOOL"
                     },
                     {
-                        "name": "#hash_22bebb24c7131b96",
+                        "name": "#party_member_count",
                         "scrName": "#hash_a15e4438",
                         "type": "INT8"
                     },
                     {
-                        "name": "#hash_248adccf3c622adc",
+                        "name": "#party_host_user_id",
                         "scrName": "#hash_d025e04",
                         "type": "UINT64",
                         "s111u20": true
@@ -139,12 +139,12 @@
                         "type": "INT8"
                     },
                     {
-                        "name": "#hash_522c2d85063ec515",
+                        "name": "#utc_timestamp_created",
                         "scrName": "#hash_7f8ed65b",
                         "type": "UINT64"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT64"
                     }
@@ -163,7 +163,7 @@
                         "type": "UINT64"
                     },
                     {
-                        "name": "#hash_300f7cbb339f0026",
+                        "name": "#lobby_host_id",
                         "scrName": "#hash_4486ea9b",
                         "type": "UINT64"
                     },
@@ -173,7 +173,7 @@
                         "type": "INT32"
                     },
                     {
-                        "name": "#hash_391c576ac028696a",
+                        "name": "#utc_timestamp_lobby_exit",
                         "scrName": "#hash_815754f0",
                         "type": "UINT64"
                     },
@@ -193,7 +193,7 @@
                         "type": "INT32"
                     },
                     {
-                        "name": "#hash_4c352a5202cdd23f",
+                        "name": "#utc_timestamp_lobby_joined",
                         "scrName": "#hash_f01a2f0f",
                         "type": "UINT64"
                     },
@@ -203,12 +203,12 @@
                         "type": "INT32"
                     },
                     {
-                        "name": "#hash_5c868775a96e3de0",
+                        "name": "#utc_timestamp_search_start",
                         "scrName": "#hash_23580a6",
                         "type": "UINT64"
                     },
                     {
-                        "name": "#hash_63088d1189c30c01",
+                        "name": "#utc_timestamp_search_end",
                         "scrName": "#hash_6bf79c92",
                         "type": "UINT64"
                     }

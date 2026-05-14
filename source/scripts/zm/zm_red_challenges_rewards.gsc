@@ -1,4 +1,4 @@
-#using script_39347d985163e17;
+#using scripts\zm_common\trials\zm_trial_red_oracle_boon.gsc;
 #using scripts\core_common\aat_shared;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\clientfield_shared;
@@ -184,7 +184,7 @@ function function_2c76782d()
             continue;
         }
         
-        if ( !namespace_5c5619de::is_active() && e_player.var_9e09931e != 0 )
+        if ( !zm_trial_red_oracle_boon::is_active() && e_player.var_9e09931e != 0 )
         {
             e_player function_123bcbcf();
             e_player give_tribute( undefined );
@@ -1180,7 +1180,7 @@ function give_perk_reward( var_16c042b8, var_6c9485fc = 15 )
 // Size: 0x8c
 function function_545834dc( var_16c042b8 )
 {
-    self endon( #"death", #"hash_358f065cca50b2a7" );
+    self endon( #"death", #"challenge_reward_cleanup" );
     
     while ( true )
     {
@@ -1296,7 +1296,7 @@ function function_dcda5d87( mdl_reward, b_rotate = 1, var_b9b24 = 1, n_fx_type =
     self.var_4373c66b = undefined;
     b_timeout = mdl_reward.b_timeout;
     mdl_reward delete();
-    self notify( #"hash_358f065cca50b2a7" );
+    self notify( #"challenge_reward_cleanup" );
     
     if ( isdefined( b_timeout ) && b_timeout )
     {

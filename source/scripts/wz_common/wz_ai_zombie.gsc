@@ -520,8 +520,8 @@ function initzombiebehaviors()
     behaviortreenetworkutility::registerbehaviortreeaction( #"hash_5bd00a38dffd47e", &function_7c8e35e8, &function_fee7d867, &function_3f71b9c2 );
     assert( isscriptfunctionptr( &zombieknockdownactionstart ) );
     behaviortreenetworkutility::registerbehaviortreescriptapi( #"wzzombieknockdownactionstart", &zombieknockdownactionstart );
-    assert( isscriptfunctionptr( &function_c8939973 ) );
-    behaviortreenetworkutility::registerbehaviortreescriptapi( #"hash_7a21325931f5ca2f", &function_c8939973 );
+    assert( isscriptfunctionptr( &zombieknockdownactionterminate ) );
+    behaviortreenetworkutility::registerbehaviortreescriptapi( #"hash_7a21325931f5ca2f", &zombieknockdownactionterminate );
     assert( isscriptfunctionptr( &zombiegetupactionterminate ) );
     behaviortreenetworkutility::registerbehaviortreescriptapi( #"wzzombiegetupactionterminate", &zombiegetupactionterminate );
     assert( !isdefined( undefined ) || isscriptfunctionptr( undefined ) );
@@ -1584,7 +1584,7 @@ function function_e261b81d()
                 self function_36151fe3();
                 break;
             case 5:
-                self function_101763c9();
+                self ai_cleanup_state();
                 break;
             case 6:
                 self function_936718a8();
@@ -2675,8 +2675,8 @@ function private function_cc9c6a13( state )
             
             break;
         case 5:
-            self function_d1e55248( #"hash_5780e28b762b831a", 0 );
-            val::reset( #"hash_5780e28b762b831a", "ignoreall" );
+            self function_d1e55248( #"ai_cleanup_state", 0 );
+            val::reset( #"ai_cleanup_state", "ignoreall" );
             self pathmode( "move allowed" );
             break;
         default:
@@ -2731,8 +2731,8 @@ function private function_b8eff92a( state )
             
             break;
         case 5:
-            self function_d1e55248( #"hash_5780e28b762b831a", !self.isonnavmesh );
-            val::set( #"hash_5780e28b762b831a", "ignoreall", 1 );
+            self function_d1e55248( #"ai_cleanup_state", !self.isonnavmesh );
+            val::set( #"ai_cleanup_state", "ignoreall", 1 );
             
             if ( !self.isonnavmesh )
             {
@@ -3115,7 +3115,7 @@ function private function_b793bca2()
 // Params 0, eflags: 0x4
 // Checksum 0xa5ed7066, Offset: 0xa048
 // Size: 0x356
-function private function_101763c9()
+function private ai_cleanup_state()
 {
     self endon( #"death" );
     
@@ -3523,7 +3523,7 @@ function zombieknockdownactionstart( behaviortreeentity )
 // Params 1, eflags: 0x4
 // Checksum 0x4e2745cc, Offset: 0xb058
 // Size: 0x54
-function private function_c8939973( behaviortreeentity )
+function private zombieknockdownactionterminate( behaviortreeentity )
 {
     if ( isdefined( behaviortreeentity.missinglegs ) && behaviortreeentity.missinglegs )
     {

@@ -12,7 +12,7 @@
     "menumusic": "lobby_mp",
     "room": "mp_theater",
     "hash_7f60c82f": 1,
-    "kicker": "localized17#hash_4af936327eca036",
+    "kicker": "localized17#menu/fileshare_theater",
     "isadvertised": 0,
     "maxclients": 1,
     "name": "director_online_mp_theater",

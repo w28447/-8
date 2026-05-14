@@ -587,7 +587,7 @@ function private function_3a3a2ea9( jammer )
         return;
     }
     
-    jammer playsound( #"hash_7ed67b248bc52c02" );
+    jammer playsound( #"mpl_emp_build_up" );
     playfxontag( #"hash_5a695126234cbb41", jammer, "tag_origin" );
 }
 

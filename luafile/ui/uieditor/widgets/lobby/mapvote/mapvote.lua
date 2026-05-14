@@ -53,7 +53,7 @@ CoD.MapVote.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg
 	self.MapVoteItemVoteDecided = MapVoteItemVoteDecided
 	
 	local MapVoteItemRandom = CoD.MapVoteItem.new( f1_arg0, f1_arg1, 0, 0, 538, 801, 0, 0, 37, 217 )
-	MapVoteItemRandom.MapImage:setImage( RegisterImage( 0xEDBAE30E94D38D3 ) )
+	MapVoteItemRandom.MapImage:setImage( RegisterImage( "uie_lui_random_map_vote" ) )
 	MapVoteItemRandom.MapVoteMapNameGameModeLayout.MapName:setText( LocalizeToUpperString( 0x8C899D3B96CB850 ) )
 	MapVoteItemRandom.MapVoteMapNameGameModeLayout.GameMode:setText( LocalizeToUpperString( 0xFDFC63B040DE92E ) )
 	MapVoteItemRandom.GameModeIcon:setImage( RegisterImage( "blacktransparent" ) )

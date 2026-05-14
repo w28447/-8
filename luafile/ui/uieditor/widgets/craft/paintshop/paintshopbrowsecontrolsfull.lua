@@ -70,7 +70,7 @@ CoD.PaintshopBrowseControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.LinkAll = LinkAll
 	
 	local LinkLayers = CoD.PaintshopButtonPrompt.new( f1_arg0, f1_arg1, 0, 0, 20, 420, 0, 0, 264, 304 )
-	LinkLayers.label:setText( Engine[0xF9F1239CFD921FE]( 0x972C68080927021 ) )
+	LinkLayers.label:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_link_layers" ) )
 	LinkLayers:subscribeToGlobalModel( f1_arg1, "VehicleController", "left_shoulder_button_image", function ( model )
 		local f5_local0 = model:get()
 		if f5_local0 ~= nil then
@@ -229,7 +229,7 @@ CoD.PaintshopBrowseControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 			modelName = "Emblem.EmblemProperties.layersUsed"
 		} )
 	end, false )
-	Cut.label:setText( Engine[0xF9F1239CFD921FE]( 0xE4FD6AD543818C0 ) )
+	Cut.label:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_cut_layer" ) )
 	Cut:subscribeToGlobalModel( f1_arg1, "Controller", "alt1_button_image", function ( model )
 		local f21_local0 = model:get()
 		if f21_local0 ~= nil then
@@ -402,7 +402,7 @@ CoD.PaintshopBrowseControlsFull.__resetProperties = function ( f30_arg0 )
 	f30_arg0.dividerH02:setAlpha( 0.2 )
 	f30_arg0.dividerH01:setAlpha( 0.2 )
 	f30_arg0.LinkLayers:setAlpha( 1 )
-	f30_arg0.LinkLayers.label:setText( Engine[0xF9F1239CFD921FE]( 0x972C68080927021 ) )
+	f30_arg0.LinkLayers.label:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_link_layers" ) )
 	f30_arg0.SlotsFull:setTopBottom( 0, 0, 420, 460 )
 	f30_arg0.SlotsFull:setRGB( 1, 1, 1 )
 	f30_arg0.SlotsFull:setAlpha( 0 )

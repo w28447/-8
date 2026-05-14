@@ -3,7 +3,7 @@
     "displayName": "#heroes/matt_shadows",
     "mpDialog": "#matt_shadows",
     "playerSoundsTable": "#cp_playersounds",
-    "playerFXTable": "#hash_471b500cc678f872",
+    "playerFXTable": "#wz_playerfx",
     "image_68": "#hash_e89dddd7bd44b44a",
     "positionDraftPortrait": "#ui_icon_specialist_portrait_draft_matt_shadows",
     "lootUiIcon": "#loot_05_ui_icon_blackmarket_reserves_matt_shadows",

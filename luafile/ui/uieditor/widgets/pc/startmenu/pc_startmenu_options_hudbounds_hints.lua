@@ -68,7 +68,7 @@ CoD.PC_StartMenu_Options_HUDBounds_Hints.new = function ( f1_arg0, f1_arg1, f1_a
 	cancelButton.ButtonContainer.Blur:setAlpha( 0 )
 	cancelButton.ButtonContainer.Title:setText( LocalizeToUpperString( "menu/cancel" ) )
 	cancelButton.ButtonContainer.Icon:setRGB( 0.72, 0.21, 0.21 )
-	cancelButton.ButtonContainer.Icon:setImage( RegisterImage( 0x8A51A51C46F2B11 ) )
+	cancelButton.ButtonContainer.Icon:setImage( RegisterImage( "uie_error_icon" ) )
 	cancelButton:registerEventHandler( "gain_focus", function ( element, event )
 		local f5_local0 = nil
 		if element.gainFocus then

@@ -1,11 +1,11 @@
 {
     "options": [
         {
-            "label": "localized17#hash_44ed2f15dc531d8a",
+            "label": "localized17#menu/treyarch_mix",
             "value": "0"
         },
         {
-            "label": "localized17#hash_5708af0ee54a8cf4",
+            "label": "localized17#menu/bass_boost",
             "value": "1"
         },
         {
@@ -13,7 +13,7 @@
             "value": "2"
         },
         {
-            "label": "localized17#hash_284f1b7483c3c597",
+            "label": "localized17#menu/supercrunch",
             "value": "3"
         },
         {

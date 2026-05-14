@@ -1,4 +1,4 @@
-#using script_46cea9e5d4ef9e21;
+#using scripts\zm\zm_escape_nixie_clock.gsc;
 #using scripts\core_common\ai\systems\gib;
 #using scripts\core_common\ai\zombie_utility;
 #using scripts\core_common\ai_shared;
@@ -178,19 +178,19 @@ function private function_486ef0f6()
         switch ( var_aa11c23c.script_string )
         {
             case #"docks":
-                str_hint_text = #"hash_4213dc004145588f";
+                str_hint_text = #"zm_escape/location_docks";
                 break;
             case #"cellblock":
                 str_hint_text = #"hash_70fa5ff9f448bc96";
                 break;
             case #"new_industries":
-                str_hint_text = #"hash_786af67b8225aaf4";
+                str_hint_text = #"zm_escape/location_new_industries";
                 break;
             case #"showers":
-                str_hint_text = #"hash_8a1754e2c346504";
+                str_hint_text = #"zm_escape/location_showers";
                 break;
             case #"power_plant":
-                str_hint_text = #"hash_7806b6b51cd2aed2";
+                str_hint_text = #"zm_escape/location_powerhouse";
                 break;
         }
         
@@ -241,7 +241,7 @@ function private function_486ef0f6()
         var_a9b19429 = 1;
         var_aa11c23c clientfield::set( "" + #"hash_53586aa63ca15286", 0 );
         s_beam = struct::get( "s_p_s1_lh_r_light" );
-        s_beam.mdl_beam clientfield::set( "" + #"hash_1f572bbcdde55d9d", 0 );
+        s_beam.mdl_beam clientfield::set( "" + #"lighthouse_red_beam", 0 );
         
         switch ( var_aa11c23c.script_string )
         {
@@ -355,7 +355,7 @@ function private function_23fa3cae()
     var_8171dd3a = randomint( 10 );
     var_8dfff656 = randomint( 10 );
     
-    for ( var_44e1e41b = randomint( 10 ); !namespace_1063645::function_aac7105a( var_8171dd3a, var_8dfff656, var_44e1e41b ) ; var_44e1e41b = randomint( 10 ) )
+    for ( var_44e1e41b = randomint( 10 ); !nixie_clock::function_aac7105a( var_8171dd3a, var_8dfff656, var_44e1e41b ) ; var_44e1e41b = randomint( 10 ) )
     {
         var_8171dd3a = randomint( 10 );
         var_8dfff656 = randomint( 10 );
@@ -3891,7 +3891,7 @@ function private function_629fa2c8( var_5b9ba5a5, e_player )
             str_vo_line = #"vox_m_quest_boat_react";
             break;
         case #"hash_1d191ca6765471c6":
-            str_vo_line = #"hash_58698646dc41b7cc";
+            str_vo_line = #"vox_m_quest_ghost_Indu";
             break;
         case #"hash_7cf90fc327de893e":
             str_vo_line = #"vox_m_quest_ghost_spoon";
@@ -3912,10 +3912,10 @@ function private function_629fa2c8( var_5b9ba5a5, e_player )
             str_vo_line = #"vox_m_quest_ghost_shower";
             break;
         case #"hash_46252c9e0b200ae6":
-            str_vo_line = #"hash_420cd62afa5f7e5f";
+            str_vo_line = #"vox_m_quest_banjo_pickup";
             break;
         case #"hash_26aa170c4122be2b":
-            str_vo_line = #"hash_7cf068b4ca0db57b";
+            str_vo_line = #"vox_m_quest_banjo_down";
             break;
     }
     
@@ -3974,7 +3974,7 @@ function private function_ac1d7a0e( var_5b9ba5a5, e_player )
     
     for ( b_said = undefined; !( isdefined( b_said ) && b_said ) ; b_said = e_player zm_vo::function_a2bd5a0c( str_vo_line, 0, 1, 9999 ) )
     {
-        zm_vo::function_3c173d37( e_player.origin, 512 );
+        zm_vo::vo_stop_all( e_player.origin, 512 );
     }
     
     if ( !isdefined( e_richtofen ) || !isalive( e_richtofen ) || !( isdefined( e_richtofen.var_59dde2f6 ) && e_richtofen.var_59dde2f6 ) )
@@ -3987,7 +3987,7 @@ function private function_ac1d7a0e( var_5b9ba5a5, e_player )
     
     for ( var_350e5be3 = undefined; !( isdefined( var_350e5be3 ) && var_350e5be3 ) && isalive( e_richtofen ) ; var_350e5be3 = e_richtofen zm_vo::function_a2bd5a0c( var_566e10e3, 0, 1, 9999 ) )
     {
-        zm_vo::function_3c173d37( e_richtofen.origin, 512 );
+        zm_vo::vo_stop_all( e_richtofen.origin, 512 );
     }
 }
 
@@ -4458,7 +4458,7 @@ function private function_9b1d9d6a()
                 var_db4208eb = zm_audio::get_valid_lines( str_alias );
                 var_346ed7cd = 5 - level.var_85cc9fcc.size;
                 str_alias = var_db4208eb[ var_346ed7cd ];
-                zm_vo::function_3c173d37( e_player.origin, 512 );
+                zm_vo::vo_stop_all( e_player.origin, 512 );
                 e_player thread zm_vo::vo_say( str_alias, 0, 0, 9999 );
                 return;
             }

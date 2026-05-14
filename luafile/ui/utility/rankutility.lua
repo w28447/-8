@@ -328,7 +328,7 @@ CoD.RankUtility.GetWZRankAndCallingCards = function ( f35_arg0, f35_arg1, f35_ar
 	local f35_local1 = f35_local0 and LUI.getTableFromFieldList( {
 		0xD59E8BFAC78A33B,
 		0xDB3201FD1EB3847,
-		0x3BF77799B56C06C
+		"statvalue"
 	}, f35_local0 )
 	local f35_local2
 	if f35_local1 then
@@ -452,7 +452,7 @@ CoD.RankUtility.GetRankMasterCard = function ( f38_arg0, f38_arg1 )
 	local f38_local1 = f38_local0 and LUI.getTableFromFieldList( {
 		0xD59E8BFAC78A33B,
 		0xDB3201FD1EB3847,
-		0x3BF77799B56C06C
+		"statvalue"
 	}, f38_local0 )
 	local f38_local2
 	if f38_local1 then

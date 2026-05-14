@@ -722,7 +722,7 @@ function function_c3d56ed8()
     {
         if ( function_5cd05b9( w_take, w_give ) )
         {
-            e_player zm_weapons::function_7c5dd4bd( w_take );
+            e_player zm_weapons::give_full_ammo( w_take );
             b_give_weapon = 0;
         }
         else

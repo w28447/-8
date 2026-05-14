@@ -14,7 +14,7 @@ CoD.HorizontalCompassBlackCell.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local enemy = LUI.UIImage.new( 0.5, 0.5, -28, 28, 0, 0, -4, 52 )
 	enemy:setAlpha( 0 )
-	enemy:setImage( RegisterImage( 0x63400FA1D7F77D6 ) )
+	enemy:setImage( RegisterImage( "uie_t7_hud_blackcell_enemie" ) )
 	self:addElement( enemy )
 	self.enemy = enemy
 	

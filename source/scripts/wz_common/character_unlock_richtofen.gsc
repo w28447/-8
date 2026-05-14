@@ -97,7 +97,7 @@ function function_1c4b5097( item )
     {
         characterassetname = getcharacterassetname( self getcharacterbodytype(), currentsessionmode() );
         
-        if ( characterassetname !== #"hash_f66f1d73b4acc45" && characterassetname !== #"hash_29e6a0007c925dd4" && characterassetname !== #"hash_22648ce3a4423d8f" )
+        if ( characterassetname !== #"pbt_wz_dempsey" && characterassetname !== #"pbt_wz_takeo" && characterassetname !== #"pbt_wz_nikolai" )
         {
             return;
         }

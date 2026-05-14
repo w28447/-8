@@ -177,7 +177,7 @@ CoD.vhud_hellstorm_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local TimerSegments = LUI.UIImage.new( 0.5, 0.5, -210, 210, 0.5, 0.5, -208, 212 )
 	TimerSegments:setImage( RegisterImage( 0x9FDD95D9B71854D ) )
-	TimerSegments:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9AD9C230B10C37 ) )
+	TimerSegments:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_add" ) )
 	TimerSegments:setShaderVector( 1, 0.5, 0, 0, 0 )
 	TimerSegments:setShaderVector( 2, 5.5, 0, 0, 0 )
 	TimerSegments:setShaderVector( 3, 0, 0, 0, 0 )

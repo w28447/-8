@@ -351,7 +351,7 @@ function soul_captured( var_f0e6c7a2, ent )
     
     if ( var_f0e6c7a2.var_7944be4a >= n_souls_required )
     {
-        var_f0e6c7a2 function_a66f0de2();
+        var_f0e6c7a2 complete_soul_capture();
     }
 }
 
@@ -359,7 +359,7 @@ function soul_captured( var_f0e6c7a2, ent )
 // Params 0
 // Checksum 0x4e50a913, Offset: 0x1578
 // Size: 0xe4
-function function_a66f0de2()
+function complete_soul_capture()
 {
     zm_sq_modules::function_2a94055d( self.var_b9989e12 );
     v_forward = anglestoforward( self.angles );
@@ -393,7 +393,7 @@ function function_6d5a79fe( var_5ea5c94d, ended_early )
             
             if ( s_screen.var_53d39cb3 == 2 )
             {
-                s_screen function_a66f0de2();
+                s_screen complete_soul_capture();
             }
         }
         
@@ -989,7 +989,7 @@ function private function_63841688()
 {
     callback::on_disconnect( &on_disconnect );
     level thread pap_timeout_watcher();
-    callback::function_33f0ddd3( &function_33f0ddd3 );
+    callback::on_player_loadout_changed( &on_player_loadout_changed );
 }
 
 // Namespace zm_white_ww_quest_weapon/zm_white_ww_quest_weapon
@@ -1041,7 +1041,7 @@ function private pap_timeout_watcher()
 // Params 1, eflags: 0x4
 // Checksum 0x7e646d7f, Offset: 0x3348
 // Size: 0x24c
-function private function_33f0ddd3( s_event )
+function private on_player_loadout_changed( s_event )
 {
     if ( s_event.event === "take_weapon" && zm_white_util::function_c654e39a( s_event.weapon ) )
     {

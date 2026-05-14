@@ -6,7 +6,7 @@ physpreset,#can_small
 physpreset,#trashcan_metal_lid
 physpreset,d#metal_tray
 physpreset,#treasure_coin
-physpreset,#hash_3ebbe1918e54893d
+physpreset,#silverware
 physpreset,d#default
 physpreset,#pillow
 physconstraints,#hash_cc17bb22de03b7a
@@ -9908,8 +9908,8 @@ image,d#i_wpn_t8_eqp_briefcase_bomb_glass_g
 image,d#i_wpn_t8_eqp_briefcase_bomb_glass_c
 image,d#i_wpn_t8_eqp_briefcase_bomb_glass_s
 image,#i_t7_metal_rust_ceiling_01_n
-streamkey,#hash_40050a233bdf9a1f
-streamkey,#hash_7f6e94e3cb6380b6
+streamkey,#mp_jungle2_alt_all_stream
+streamkey,#mp_jungle2_alt_all_loaded
 streamkey,#hash_41139b0c66f96719
 streamkey,#hash_41912230e254d944
 sound,#mp_jungle2_alt.all
@@ -9963,9 +9963,9 @@ keyvaluepairs,#mp_jungle2_alt
 surfacesounddef,d#hash_3d9213dabaf08c81
 surfacesounddef,d#hash_5d772ccdaa011a7f
 surfacesounddef,#hash_63bf6c0e360eff28
-surfacesounddef,#hash_6a9264c7627e1b73
+surfacesounddef,#phy_glass_bottle_sounddef
 surfacesounddef,d#hash_7ada1cf9d8035750
-surfacesounddef,#hash_7df43ad9f11765ff
+surfacesounddef,#phy_book_sounddef
 entitysoundimpacts,d#victim_raps_impact
 entitysoundimpacts,d#entity_bounce
 rumble,#napalm_rumble
@@ -10050,7 +10050,7 @@ streamkey,#hash_10eb614a4106aeb4
 streamkey,#hash_10eb624a4106b067
 streamkey,#hash_10eb634a4106b21a
 streamkey,#hash_10eb644a4106b3cd
-streamkey,#hash_3a8bfb0049ead15b
+streamkey,#mp_jungle2_alt_sst_0_0
 streamkey,#hash_54883bb95b9fef16
 streamkey,#hash_71c43db6aa3bc08c
 physconstraints,#hash_1882b4e086c36229
@@ -10967,7 +10967,7 @@ material,#hash_2e922c73daf49f7e
 material,#hash_2e922d73daf4a131
 material,#hash_2e922e73daf4a2e4
 material,#hash_2e923073daf4a64a
-material,#hash_2e9ed212182ec0c6
+material,#wc/decal_grime_drip
 material,#hash_2eb2945f296e7903
 material,#mc/mtl_p7_mou_barrel_metal_02_damg_wet_decal_01
 material,#mc/mtl_veh_mphd_m35_base_body03_steel
@@ -12489,7 +12489,7 @@ material,#hash_7afb46dce6294540
 material,#hash_7affa2a6ffed7e04
 material,#mc/mtl_p8_wz_supply_stash_health_canvas
 material,#hash_7b12c3ed41fdcddb
-material,#hash_7b2001e84579db40
+material,#wc/jun_art_bamboo
 material,#mc/mtl_p7_jun_rock_cliff_hav_g
 material,#mc/mtl_p7_jun_rock_cliff_hav_f
 material,#mc/mtl_p7_jun_rock_cliff_hav_e
@@ -12606,12 +12606,12 @@ material,#mc/mtl_p7_zm_tra_bike_destroyed_decal
 material,#mc/mtl_p8_jun_sweep_broom_rustic_alpha
 material,d#ei/gfx_distort_heat
 fx,#hash_459b2af2b7dbc0ac
-impactsoundstable,#hash_d698a0c5be3e240
-impactsoundstable,#hash_2098af09759b9cc0
+impactsoundstable,#phy_glass_bottle
+impactsoundstable,#veh_zodiac_impact
 impactsoundstable,#phy_book
-impactsoundstable,d#hash_368fb7ec6eff7aa6
+impactsoundstable,d#phy_plastic_bucket
 impactsoundstable,d#phy_cardboard
-impactsoundstable,d#hash_695bd5aa13e21e64
+impactsoundstable,d#phy_metal_pan
 maptableentrylevelassets,#mp_jungle2_alt
 physpreset,d#p7_bucket_plastic_5_gal
 physpreset,#p7_dinnerware_ceramic
@@ -14033,7 +14033,7 @@ surfacefxtable,#hash_206e9be9ad7f64b
 entityfximpacts,d#entity_enter
 scriptbundle,#p8_fxanim_mp_jun_napalm_drop_bundle
 impactsfxtable,#hash_714e2d08fdcdcee2
-physpreset,#hash_5ae89e7d7a715d1
+physpreset,#zodiac_physpreset
 xmodel,#veh_t8_mil_boat_tactical_raft
 xmodel,#p8_fxanim_mp_jungle2_alt_boat_zodiac_mod
 scriptbundle,#p8_fxanim_mp_jungle2_alt_boat_zodiac_bundle

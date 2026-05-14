@@ -2,7 +2,7 @@
     "name": "#straferun_rockets_mp",
     "baseWeapon": "#straferun_rockets",
     "weapon70": "#straferun",
-    "streamkey": "#hash_69baf19a7bc1072b",
+    "streamkey": "#straferun_rockets_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

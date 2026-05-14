@@ -177,7 +177,7 @@ function activation( var_fad9ed02 = 1 )
     self.var_ffe2c4d7 = undefined;
     wait 3;
     self val::reset( #"bgb_anywhere_but_here", "ignoreme" );
-    self notify( #"hash_3e4335abc3d58a0b" );
+    self notify( #"bgb_anywhere_but_here_complete" );
 }
 
 // Namespace zm_bgb_anywhere_but_here/zm_bgb_anywhere_but_here

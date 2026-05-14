@@ -1,7 +1,7 @@
 #using script_1496ada77dc2f2e2;
 #using script_6951ea86fdae9ae0;
-#using script_770e34dfe9b07f3c;
-#using script_7828033bc0ecda72;
+#using scripts\zm_common\trials\zm_trial_pack_a_punch_sacrifice.gsc;
+#using scripts\zm_common\trials\zm_trial_no_player_death.gsc;
 #using script_7b843bf90a032750;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\flag_shared;
@@ -51,8 +51,8 @@ function event_handler[gametype_init] main( eventstruct )
     level._game_module_stat_update_func = &zm_stats::survival_classic_custom_stat_update;
     level._round_start_func = &zm_round_logic::round_start;
     level.check_end_game_override = &function_491101ba;
-    level.var_d0b54199 = &function_b8839207;
-    level.var_9093a47e = &function_b8839207;
+    level.var_d0b54199 = &set_door_hint_string;
+    level.var_9093a47e = &set_door_hint_string;
     level.round_end_custom_logic = &function_61fd0e87;
     level.round_number = 0;
     level.trial_strikes = 0;
@@ -231,11 +231,11 @@ function private function_61fd0e87()
 // Params 2, eflags: 0x4
 // Checksum 0x229530f1, Offset: 0xb08
 // Size: 0xee
-function private function_b8839207( e_door, n_cost )
+function private set_door_hint_string( e_door, n_cost )
 {
     level flag::wait_till( "start_zombie_round_logic" );
-    e_door notify( #"hash_42c191c31ed08a4" );
-    e_door endon( #"hash_42c191c31ed08a4", #"death" );
+    e_door notify( #"set_door_hint_string" );
+    e_door endon( #"set_door_hint_string", #"death" );
     
     while ( true )
     {

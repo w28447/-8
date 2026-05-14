@@ -42,7 +42,7 @@ function private on_begin()
 {
     level.var_375482b5 = 1;
     callback::on_ai_killed( &on_ai_killed );
-    callback::function_33f0ddd3( &function_33f0ddd3 );
+    callback::on_player_loadout_changed( &on_player_loadout_changed );
     callback::on_weapon_change( &zm_trial_util::function_79518194 );
     
     foreach ( player in getplayers() )
@@ -64,7 +64,7 @@ function private on_end( round_reset )
 {
     level.var_375482b5 = undefined;
     callback::remove_on_ai_killed( &on_ai_killed );
-    callback::function_824d206( &function_33f0ddd3 );
+    callback::function_824d206( &on_player_loadout_changed );
     callback::remove_on_weapon_change( &zm_trial_util::function_79518194 );
     level zm_trial::function_25ee130( 0 );
     level thread refill_ammo();
@@ -132,7 +132,7 @@ function private lock_shield()
 // Params 1, eflags: 0x4
 // Checksum 0xcee7b4c4, Offset: 0x740
 // Size: 0x184
-function private function_33f0ddd3( s_event )
+function private on_player_loadout_changed( s_event )
 {
     if ( s_event.event === "give_weapon" )
     {
@@ -170,13 +170,13 @@ function private function_33f0ddd3( s_event )
 function private function_29ee24dd()
 {
     self endon( #"disconnect" );
-    level endon( #"hash_7646638df88a3656" );
+    level endon( #"trial_round_end" );
     a_w_weapons = self getweaponslist( 0 );
     self reset_ammo( 1 );
     
     while ( true )
     {
-        s_waitresult = self waittill( #"zmb_max_ammo", #"hash_278526d0bbdb4ce7", #"melee_reload", #"wallbuy_done" );
+        s_waitresult = self waittill( #"zmb_max_ammo", #"give_full_ammo", #"melee_reload", #"wallbuy_done" );
         w_current = self getcurrentweapon();
         
         if ( s_waitresult._notify == "melee_reload" )
@@ -236,7 +236,7 @@ function private reset_ammo( var_f2c84b6b )
     
     if ( isdefined( self.var_9b0383f5 ) && self.var_9b0383f5 )
     {
-        self waittill( #"hash_1ac4338b0d419091" );
+        self waittill( #"pap_use_finished" );
     }
     
     a_weapons = self getweaponslist( 0 );

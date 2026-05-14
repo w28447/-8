@@ -9,13 +9,13 @@
         {
             "value": 174,
             "next": 399,
-            "name": "#hash_69a7f845596f2d44",
+            "name": "#amb_buoy_loop",
             "sequence": 0,
             "cullDistance": 3000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_69a7f845596f2d44",
+                    "name": "#amb_buoy_loop",
                     "assetId": "#amb/bells/buoy/distant_buoy.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -58,14 +58,14 @@
         {
             "value": 147,
             "next": 66,
-            "name": "#hash_7285bee27c8053db",
+            "name": "#amb_car_fire",
             "sequence": 0,
             "cullDistance": 900,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7285bee27c8053db",
-                    "secondaryname": "#hash_1296ac4faf20a1b",
+                    "name": "#amb_car_fire",
+                    "secondaryname": "#amb_rain_on_fire",
                     "assetId": "#dst/generic/fire/car/car_fire_03.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -108,13 +108,13 @@
         {
             "value": 35,
             "next": 395,
-            "name": "#hash_79051c58cffee589",
+            "name": "#amb_ceiling_fan",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_79051c58cffee589",
+                    "name": "#amb_ceiling_fan",
                     "assetId": "#amb/industrial/fan/ceiling/slow/fan_slow_01.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -304,13 +304,13 @@
         {
             "value": 217,
             "next": 397,
-            "name": "#hash_5727281a9dcec94e",
+            "name": "#amb_church_bells",
             "sequence": 0,
             "cullDistance": 50000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5727281a9dcec94e",
+                    "name": "#amb_church_bells",
                     "assetId": "#amb/bells/church/church_bells_6.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -539,13 +539,13 @@
         {
             "value": 177,
             "next": 65535,
-            "name": "#hash_77a48822a4b05f86",
+            "name": "#amb_exhuast",
             "sequence": 0,
             "cullDistance": 600,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_77a48822a4b05f86",
+                    "name": "#amb_exhuast",
                     "assetId": "#amb/industrial/exhaust/exhaust_short.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -588,14 +588,14 @@
         {
             "value": 97,
             "next": 15,
-            "name": "#hash_33dc00af06ff36cc",
+            "name": "#amb_fire_small",
             "sequence": 0,
             "cullDistance": 900,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_33dc00af06ff36cc",
-                    "secondaryname": "#hash_1296ac4faf20a1b",
+                    "name": "#amb_fire_small",
+                    "secondaryname": "#amb_rain_on_fire",
                     "assetId": "#amb/fire/small/amb_fire_small_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -634,8 +634,8 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_33dc00af06ff36cc",
-                    "secondaryname": "#hash_1296ac4faf20a1b",
+                    "name": "#amb_fire_small",
+                    "secondaryname": "#amb_rain_on_fire",
                     "assetId": "#amb/fire/small/amb_fire_small_01.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -674,8 +674,8 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_33dc00af06ff36cc",
-                    "secondaryname": "#hash_1296ac4faf20a1b",
+                    "name": "#amb_fire_small",
+                    "secondaryname": "#amb_rain_on_fire",
                     "assetId": "#amb/fire/small/amb_fire_small_02.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -714,8 +714,8 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_33dc00af06ff36cc",
-                    "secondaryname": "#hash_1296ac4faf20a1b",
+                    "name": "#amb_fire_small",
+                    "secondaryname": "#amb_rain_on_fire",
                     "assetId": "#amb/fire/small/amb_fire_small_03.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -754,8 +754,8 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_33dc00af06ff36cc",
-                    "secondaryname": "#hash_1296ac4faf20a1b",
+                    "name": "#amb_fire_small",
+                    "secondaryname": "#amb_rain_on_fire",
                     "assetId": "#amb/fire/small/amb_fire_small_04.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -794,8 +794,8 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_33dc00af06ff36cc",
-                    "secondaryname": "#hash_1296ac4faf20a1b",
+                    "name": "#amb_fire_small",
+                    "secondaryname": "#amb_rain_on_fire",
                     "assetId": "#amb/fire/small/amb_fire_small_05.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -834,8 +834,8 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_33dc00af06ff36cc",
-                    "secondaryname": "#hash_1296ac4faf20a1b",
+                    "name": "#amb_fire_small",
+                    "secondaryname": "#amb_rain_on_fire",
                     "assetId": "#amb/fire/small/amb_fire_small_06.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -874,8 +874,8 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_33dc00af06ff36cc",
-                    "secondaryname": "#hash_1296ac4faf20a1b",
+                    "name": "#amb_fire_small",
+                    "secondaryname": "#amb_rain_on_fire",
                     "assetId": "#amb/fire/small/small.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -918,14 +918,14 @@
         {
             "value": 323,
             "next": 69,
-            "name": "#hash_49332fba15c856e3",
+            "name": "#amb_fire_sml",
             "sequence": 0,
             "cullDistance": 900,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_49332fba15c856e3",
-                    "secondaryname": "#hash_1296ac4faf20a1b",
+                    "name": "#amb_fire_sml",
+                    "secondaryname": "#amb_rain_on_fire",
                     "assetId": "#pfx/fire/small/fire_small_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -1056,13 +1056,13 @@
         {
             "value": 142,
             "next": 65535,
-            "name": "#hash_49b825efa9a2d648",
+            "name": "#amb_fridge_hum",
             "sequence": 0,
             "cullDistance": 500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_49b825efa9a2d648",
+                    "name": "#amb_fridge_hum",
                     "assetId": "#amb/electronics/fridge/fridge_hum.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -1632,13 +1632,13 @@
         {
             "value": 137,
             "next": 65535,
-            "name": "#hash_293cda1c9ebecfd3",
+            "name": "#amb_metal_creak_light",
             "sequence": 0,
             "cullDistance": 750,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_293cda1c9ebecfd3",
+                    "name": "#amb_metal_creak_light",
                     "assetId": "#amb/material_movement/creaks/metal/stress/light/amb_metal_stress_light01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -1677,7 +1677,7 @@
                     "unk178": "#hash_200001905"
                 },
                 {
-                    "name": "#hash_293cda1c9ebecfd3",
+                    "name": "#amb_metal_creak_light",
                     "assetId": "#amb/material_movement/creaks/metal/stress/light/amb_metal_stress_light02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -1716,7 +1716,7 @@
                     "unk178": "#hash_200001905"
                 },
                 {
-                    "name": "#hash_293cda1c9ebecfd3",
+                    "name": "#amb_metal_creak_light",
                     "assetId": "#amb/material_movement/creaks/metal/stress/light/amb_metal_stress_light03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -1755,7 +1755,7 @@
                     "unk178": "#hash_200001905"
                 },
                 {
-                    "name": "#hash_293cda1c9ebecfd3",
+                    "name": "#amb_metal_creak_light",
                     "assetId": "#amb/material_movement/creaks/metal/stress/light/amb_metal_stress_light04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -1798,13 +1798,13 @@
         {
             "value": 57,
             "next": 19,
-            "name": "#hash_175668cc7f8f0a81",
+            "name": "#amb_metal_creak_short",
             "sequence": 0,
             "cullDistance": 750,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_175668cc7f8f0a81",
+                    "name": "#amb_metal_creak_short",
                     "assetId": "#amb/material_movement/creaks/metal/structure/short/metal_struct_creak_short_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -1843,7 +1843,7 @@
                     "unk178": "#hash_200001905"
                 },
                 {
-                    "name": "#hash_175668cc7f8f0a81",
+                    "name": "#amb_metal_creak_short",
                     "assetId": "#amb/material_movement/creaks/metal/structure/short/metal_struct_creak_short_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -1882,7 +1882,7 @@
                     "unk178": "#hash_200001905"
                 },
                 {
-                    "name": "#hash_175668cc7f8f0a81",
+                    "name": "#amb_metal_creak_short",
                     "assetId": "#amb/material_movement/creaks/metal/structure/short/metal_struct_creak_short_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -1921,7 +1921,7 @@
                     "unk178": "#hash_200001905"
                 },
                 {
-                    "name": "#hash_175668cc7f8f0a81",
+                    "name": "#amb_metal_creak_short",
                     "assetId": "#amb/material_movement/creaks/metal/structure/short/metal_struct_creak_short_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -1960,7 +1960,7 @@
                     "unk178": "#hash_200001905"
                 },
                 {
-                    "name": "#hash_175668cc7f8f0a81",
+                    "name": "#amb_metal_creak_short",
                     "assetId": "#amb/material_movement/creaks/metal/structure/short/metal_struct_creak_short_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -1999,7 +1999,7 @@
                     "unk178": "#hash_200001905"
                 },
                 {
-                    "name": "#hash_175668cc7f8f0a81",
+                    "name": "#amb_metal_creak_short",
                     "assetId": "#amb/material_movement/creaks/metal/structure/short/metal_struct_creak_short_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -2140,13 +2140,13 @@
         {
             "value": 23,
             "next": 65535,
-            "name": "#hash_2a1ab8d0c34b5f47",
+            "name": "#amb_paper_trash",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2a1ab8d0c34b5f47",
+                    "name": "#amb_paper_trash",
                     "assetId": "#amb/material_movement/rustling/paper/subtle/paper_movement_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -2185,7 +2185,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_2a1ab8d0c34b5f47",
+                    "name": "#amb_paper_trash",
                     "assetId": "#amb/material_movement/rustling/paper/subtle/paper_movement_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -2224,7 +2224,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_2a1ab8d0c34b5f47",
+                    "name": "#amb_paper_trash",
                     "assetId": "#amb/material_movement/rustling/paper/subtle/paper_movement_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -2263,7 +2263,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_2a1ab8d0c34b5f47",
+                    "name": "#amb_paper_trash",
                     "assetId": "#amb/material_movement/rustling/paper/subtle/paper_movement_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -2302,7 +2302,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_2a1ab8d0c34b5f47",
+                    "name": "#amb_paper_trash",
                     "assetId": "#amb/material_movement/rustling/paper/subtle/paper_movement_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -2341,7 +2341,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_2a1ab8d0c34b5f47",
+                    "name": "#amb_paper_trash",
                     "assetId": "#amb/material_movement/rustling/paper/subtle/paper_movement_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -2609,13 +2609,13 @@
         {
             "value": 171,
             "next": 24,
-            "name": "#hash_1f0fcc0a47fd257b",
+            "name": "#amb_plastic_flag",
             "sequence": 0,
             "cullDistance": 600,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1f0fcc0a47fd257b",
+                    "name": "#amb_plastic_flag",
                     "assetId": "#amb/material_movement/rustling/plastic/flag/plastic_flap_lp.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -3367,13 +3367,13 @@
         {
             "value": 64,
             "next": 32,
-            "name": "#hash_1296ac4faf20a1b",
+            "name": "#amb_rain_on_fire",
             "sequence": 0,
             "cullDistance": 900,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1296ac4faf20a1b",
+                    "name": "#amb_rain_on_fire",
                     "assetId": "#amb/weather/rain/_on_stuff/on_fire/rain_on_fire.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -3465,13 +3465,13 @@
         {
             "value": 223,
             "next": 65535,
-            "name": "#hash_656187a5fae91b1c",
+            "name": "#amb_rats",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_656187a5fae91b1c",
+                    "name": "#amb_rats",
                     "assetId": "#amb/animals/rat/scurry/rodent_scurry.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -3758,13 +3758,13 @@
         {
             "value": 27,
             "next": 65535,
-            "name": "#hash_12b0a3b1e82aa5da",
+            "name": "#amb_spanish_news",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_12b0a3b1e82aa5da",
+                    "name": "#amb_spanish_news",
                     "assetId": "#amb/electronics/radio/news/spanish_news.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -3807,13 +3807,13 @@
         {
             "value": 124,
             "next": 48,
-            "name": "#hash_77f73dcc8bee19a3",
+            "name": "#amb_turbine_vent",
             "sequence": 0,
             "cullDistance": 900,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_77f73dcc8bee19a3",
+                    "name": "#amb_turbine_vent",
                     "assetId": "#amb/industrial/carousel/carousel_rotate.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -3856,13 +3856,13 @@
         {
             "value": 17,
             "next": 65535,
-            "name": "#hash_35323df019c5844f",
+            "name": "#amb_washing_machine",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_35323df019c5844f",
+                    "name": "#amb_washing_machine",
                     "assetId": "#amb/domestic/washing_machine.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -3954,13 +3954,13 @@
         {
             "value": 15,
             "next": 40,
-            "name": "#hash_4651e8d8f91bb66e",
+            "name": "#amb_water_drip_imp",
             "sequence": 0,
             "cullDistance": 600,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4651e8d8f91bb66e",
+                    "name": "#amb_water_drip_imp",
                     "assetId": "#amb/environment/water/drip/concrete/drip_concrete_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -3999,7 +3999,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_4651e8d8f91bb66e",
+                    "name": "#amb_water_drip_imp",
                     "assetId": "#amb/environment/water/drip/concrete/drip_concrete_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -4038,7 +4038,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_4651e8d8f91bb66e",
+                    "name": "#amb_water_drip_imp",
                     "assetId": "#amb/environment/water/drip/concrete/drip_concrete_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -4077,7 +4077,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_4651e8d8f91bb66e",
+                    "name": "#amb_water_drip_imp",
                     "assetId": "#amb/environment/water/drip/concrete/drip_concrete_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -4116,7 +4116,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_4651e8d8f91bb66e",
+                    "name": "#amb_water_drip_imp",
                     "assetId": "#amb/environment/water/drip/concrete/drip_concrete_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -4155,7 +4155,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_4651e8d8f91bb66e",
+                    "name": "#amb_water_drip_imp",
                     "assetId": "#amb/environment/water/drip/concrete/drip_concrete_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -4194,7 +4194,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_4651e8d8f91bb66e",
+                    "name": "#amb_water_drip_imp",
                     "assetId": "#amb/environment/water/drip/concrete/drip_concrete_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -4233,7 +4233,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_4651e8d8f91bb66e",
+                    "name": "#amb_water_drip_imp",
                     "assetId": "#amb/environment/water/drip/concrete/drip_concrete_07.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -4272,7 +4272,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_4651e8d8f91bb66e",
+                    "name": "#amb_water_drip_imp",
                     "assetId": "#amb/environment/water/drip/concrete/drip_concrete_08.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -4311,7 +4311,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_4651e8d8f91bb66e",
+                    "name": "#amb_water_drip_imp",
                     "assetId": "#amb/environment/water/drip/concrete/drip_concrete_09.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -4350,7 +4350,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_4651e8d8f91bb66e",
+                    "name": "#amb_water_drip_imp",
                     "assetId": "#amb/environment/water/drip/concrete/drip_concrete_10.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -4389,7 +4389,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_4651e8d8f91bb66e",
+                    "name": "#amb_water_drip_imp",
                     "assetId": "#amb/environment/water/drip/concrete/drip_concrete_11.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -4432,13 +4432,13 @@
         {
             "value": 227,
             "next": 65535,
-            "name": "#hash_3fe95f1ebc711437",
+            "name": "#amb_water_drip_water",
             "sequence": 0,
             "cullDistance": 750,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3fe95f1ebc711437",
+                    "name": "#amb_water_drip_water",
                     "assetId": "#amb/environment/water/drip/water/water_drip_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -4477,7 +4477,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_3fe95f1ebc711437",
+                    "name": "#amb_water_drip_water",
                     "assetId": "#amb/environment/water/drip/water/water_drip_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -4516,7 +4516,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_3fe95f1ebc711437",
+                    "name": "#amb_water_drip_water",
                     "assetId": "#amb/environment/water/drip/water/water_drip_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -4555,7 +4555,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_3fe95f1ebc711437",
+                    "name": "#amb_water_drip_water",
                     "assetId": "#amb/environment/water/drip/water/water_drip_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -4594,7 +4594,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_3fe95f1ebc711437",
+                    "name": "#amb_water_drip_water",
                     "assetId": "#amb/environment/water/drip/water/water_drip_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -4686,13 +4686,13 @@
         {
             "value": 386,
             "next": 80,
-            "name": "#hash_73c1eadc54e25cf8",
+            "name": "#amb_water_fountain",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_73c1eadc54e25cf8",
+                    "name": "#amb_water_fountain",
                     "assetId": "#amb/environment/water/fountain/fountain_pool/fountain_pool_02.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -6210,13 +6210,13 @@
         {
             "value": 116,
             "next": 65535,
-            "name": "#hash_5eb690639ce50eba",
+            "name": "#dst_car_fire",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5eb690639ce50eba",
+                    "name": "#dst_car_fire",
                     "assetId": "#dst/generic/fire/car/car_fire_03.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -8471,13 +8471,13 @@
         {
             "value": 405,
             "next": 65535,
-            "name": "#hash_31f777916298d72",
+            "name": "#dst_cover_concrete",
             "sequence": 0,
             "cullDistance": 550,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -8516,7 +8516,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -8555,7 +8555,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -8594,7 +8594,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -8633,7 +8633,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -8672,7 +8672,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -8722,7 +8722,7 @@
             "aliases": [
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -8763,7 +8763,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -8804,7 +8804,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -8845,7 +8845,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -8886,7 +8886,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -8927,7 +8927,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -8968,7 +8968,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -9666,13 +9666,13 @@
         {
             "value": 401,
             "next": 65535,
-            "name": "#hash_5977d1f5f8457ae5",
+            "name": "#dst_fire_extinguisher",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5977d1f5f8457ae5",
+                    "name": "#dst_fire_extinguisher",
                     "assetId": "#dst/prop/fire_extinguisher/fire_extinguisher_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -9763,13 +9763,13 @@
         {
             "value": 400,
             "next": 65535,
-            "name": "#hash_2fc9b1cdafb1c5db",
+            "name": "#dst_foodstand",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2fc9b1cdafb1c5db",
+                    "name": "#dst_foodstand",
                     "assetId": "#dst/prop/foodstand/foodstand_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -9808,7 +9808,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_2fc9b1cdafb1c5db",
+                    "name": "#dst_foodstand",
                     "assetId": "#dst/prop/foodstand/foodstand_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -10162,13 +10162,13 @@
         {
             "value": 80,
             "next": 96,
-            "name": "#hash_419e84642ebe554",
+            "name": "#dst_gas_pipe_lp",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_419e84642ebe554",
+                    "name": "#dst_gas_pipe_lp",
                     "assetId": "#dst/pipe/gas/loop/gas_pipe_lp.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -11586,13 +11586,13 @@
         {
             "value": 127,
             "next": 106,
-            "name": "#hash_4f8c480d8e8f07b6",
+            "name": "#dst_pipe_steam",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4f8c480d8e8f07b6",
+                    "name": "#dst_pipe_steam",
                     "secondaryname": "#hash_54538dea28a0400e",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -11732,13 +11732,13 @@
         {
             "value": 24,
             "next": 117,
-            "name": "#hash_774c02d047e65436",
+            "name": "#dst_plant_lrg",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_774c02d047e65436",
+                    "name": "#dst_plant_lrg",
                     "secondaryname": "#hash_2c45ec433bbc1fcc",
                     "assetId": "#dst/prop/plant_lrg/plant_large_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
@@ -11831,13 +11831,13 @@
         {
             "value": 144,
             "next": 99,
-            "name": "#hash_59e98e2b70c3425f",
+            "name": "#dst_plant_sm",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_59e98e2b70c3425f",
+                    "name": "#dst_plant_sm",
                     "secondaryname": "#hash_3e7412d6f4b78cdf",
                     "assetId": "#dst/prop/plant_sm/plant_small_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
@@ -11930,13 +11930,13 @@
         {
             "value": 133,
             "next": 65535,
-            "name": "#hash_4ec5a3e02263fc0e",
+            "name": "#dst_propane_tank_explo",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
@@ -11977,7 +11977,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
@@ -12018,7 +12018,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
@@ -12059,7 +12059,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
@@ -12100,7 +12100,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
@@ -12141,7 +12141,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
@@ -12182,7 +12182,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
@@ -12234,7 +12234,7 @@
             "aliases": [
                 {
                     "name": "#hash_238170c19d279f5",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -12274,7 +12274,7 @@
                 },
                 {
                     "name": "#hash_238170c19d279f5",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -12314,7 +12314,7 @@
                 },
                 {
                     "name": "#hash_238170c19d279f5",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -12354,7 +12354,7 @@
                 },
                 {
                     "name": "#hash_238170c19d279f5",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -12397,13 +12397,13 @@
         {
             "value": 18,
             "next": 121,
-            "name": "#hash_344ec28fee2dea4c",
+            "name": "#dst_rock_large",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_344ec28fee2dea4c",
+                    "name": "#dst_rock_large",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
                     "assetFileNameRelease": "#mp_seaside_alt.all",
@@ -12452,7 +12452,7 @@
             "aliases": [
                 {
                     "name": "#dst_server",
-                    "secondaryname": "#hash_25a264b901d17919",
+                    "secondaryname": "#dst_server_glass",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
                     "assetFileNameRelease": "#mp_seaside_alt.all",
@@ -12494,14 +12494,14 @@
         {
             "value": 153,
             "next": 145,
-            "name": "#hash_25a264b901d17919",
+            "name": "#dst_server_glass",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_25a264b901d17919",
-                    "secondaryname": "#hash_2f095673f11faa44",
+                    "name": "#dst_server_glass",
+                    "secondaryname": "#dst_server_power",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -12540,8 +12540,8 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_25a264b901d17919",
-                    "secondaryname": "#hash_2f095673f11faa44",
+                    "name": "#dst_server_glass",
+                    "secondaryname": "#dst_server_power",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -12580,8 +12580,8 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_25a264b901d17919",
-                    "secondaryname": "#hash_2f095673f11faa44",
+                    "name": "#dst_server_glass",
+                    "secondaryname": "#dst_server_power",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -12624,13 +12624,13 @@
         {
             "value": 399,
             "next": 85,
-            "name": "#hash_2f095673f11faa44",
+            "name": "#dst_server_power",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2f095673f11faa44",
+                    "name": "#dst_server_power",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
                     "assetFileNameRelease": "#mp_seaside_alt.all",
@@ -13351,13 +13351,13 @@
         {
             "value": 134,
             "next": 141,
-            "name": "#hash_58218bc4f7624185",
+            "name": "#dst_steam_pipe_lp",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_58218bc4f7624185",
+                    "name": "#dst_steam_pipe_lp",
                     "assetId": "#dst/pipe/steam/loop/steam_pipe_lp.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -14205,13 +14205,13 @@
         {
             "value": 216,
             "next": 65535,
-            "name": "#hash_72725b98cf0834ac",
+            "name": "#dst_trash_bag",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_72725b98cf0834ac",
+                    "name": "#dst_trash_bag",
                     "assetId": "#hash_131702bdb9183384",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -14250,7 +14250,7 @@
                     "unk178": "#hash_503090305"
                 },
                 {
-                    "name": "#hash_72725b98cf0834ac",
+                    "name": "#dst_trash_bag",
                     "assetId": "#hash_2264ca2ac3c87869",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -14289,7 +14289,7 @@
                     "unk178": "#hash_503090305"
                 },
                 {
-                    "name": "#hash_72725b98cf0834ac",
+                    "name": "#dst_trash_bag",
                     "assetId": "#hash_62c73c6a2cca2abe",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -14328,7 +14328,7 @@
                     "unk178": "#hash_503090305"
                 },
                 {
-                    "name": "#hash_72725b98cf0834ac",
+                    "name": "#dst_trash_bag",
                     "assetId": "#hash_1884c87605737c5b",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -14595,13 +14595,13 @@
         {
             "value": 210,
             "next": 156,
-            "name": "#hash_1a6485b96677518d",
+            "name": "#dst_water_bottle",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1a6485b96677518d",
+                    "name": "#dst_water_bottle",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
                     "assetFileNameRelease": "#mp_seaside_alt.all",
@@ -14691,13 +14691,13 @@
         {
             "value": 226,
             "next": 65535,
-            "name": "#hash_7809ea482909306c",
+            "name": "#dst_wood_crate",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7809ea482909306c",
+                    "name": "#dst_wood_crate",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
                     "assetFileNameRelease": "#mp_seaside_alt.all",
@@ -15276,13 +15276,13 @@
         {
             "value": 296,
             "next": 162,
-            "name": "#hash_3fe24b91fe7f37e6",
+            "name": "#evt_tank_idle",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3fe24b91fe7f37e6",
+                    "name": "#evt_tank_idle",
                     "assetId": "#hash_7383bc6b70074826",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -15549,13 +15549,13 @@
         {
             "value": 186,
             "next": 149,
-            "name": "#hash_6d60852ef9ecfe86",
+            "name": "#exp_armor_debris",
             "sequence": 0,
             "cullDistance": 7000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -15595,7 +15595,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -15635,7 +15635,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -15675,7 +15675,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -15715,7 +15715,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -15755,7 +15755,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -15795,7 +15795,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -15835,7 +15835,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_07.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -15875,7 +15875,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_08.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -15915,7 +15915,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_09.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -15955,7 +15955,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_10.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -15995,7 +15995,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_11.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -16046,7 +16046,7 @@
             "aliases": [
                 {
                     "name": "#hash_68d529ce159011b5",
-                    "secondaryname": "#hash_6d60852ef9ecfe86",
+                    "secondaryname": "#exp_armor_debris",
                     "assetId": "#exp/distant/small_distant/exp_small_distant_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -16087,7 +16087,7 @@
                 },
                 {
                     "name": "#hash_68d529ce159011b5",
-                    "secondaryname": "#hash_6d60852ef9ecfe86",
+                    "secondaryname": "#exp_armor_debris",
                     "assetId": "#exp/distant/small_distant/exp_small_distant_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -16128,7 +16128,7 @@
                 },
                 {
                     "name": "#hash_68d529ce159011b5",
-                    "secondaryname": "#hash_6d60852ef9ecfe86",
+                    "secondaryname": "#exp_armor_debris",
                     "assetId": "#exp/distant/small_distant/exp_small_distant_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -16169,7 +16169,7 @@
                 },
                 {
                     "name": "#hash_68d529ce159011b5",
-                    "secondaryname": "#hash_6d60852ef9ecfe86",
+                    "secondaryname": "#exp_armor_debris",
                     "assetId": "#exp/distant/small_distant/exp_small_distant_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -16403,7 +16403,7 @@
             "aliases": [
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -16444,7 +16444,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -16485,7 +16485,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -16526,7 +16526,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -16567,7 +16567,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -16608,7 +16608,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -16649,7 +16649,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -16693,14 +16693,14 @@
         {
             "value": 324,
             "next": 65535,
-            "name": "#hash_310e1517e8130d26",
+            "name": "#exp_barrel_close",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_310e1517e8130d26",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "name": "#exp_barrel_close",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/rip/exp_barrel_rip_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -16740,8 +16740,8 @@
                     "unk178": "#hash_6030b0804"
                 },
                 {
-                    "name": "#hash_310e1517e8130d26",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "name": "#exp_barrel_close",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/rip/exp_barrel_rip_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -16781,8 +16781,8 @@
                     "unk178": "#hash_6030b0804"
                 },
                 {
-                    "name": "#hash_310e1517e8130d26",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "name": "#exp_barrel_close",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/rip/exp_barrel_rip_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -16826,13 +16826,13 @@
         {
             "value": 183,
             "next": 160,
-            "name": "#hash_7fe19ceed35907ce",
+            "name": "#exp_barrel_dist",
             "sequence": 0,
             "cullDistance": 30000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7fe19ceed35907ce",
+                    "name": "#exp_barrel_dist",
                     "assetId": "#exp/prop/barrel/dist/exp_barrel_dist_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -16872,7 +16872,7 @@
                     "unk178": "#hash_6000b0304"
                 },
                 {
-                    "name": "#hash_7fe19ceed35907ce",
+                    "name": "#exp_barrel_dist",
                     "assetId": "#exp/prop/barrel/dist/exp_barrel_dist_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -16965,14 +16965,14 @@
         {
             "value": 220,
             "next": 65535,
-            "name": "#hash_3e8d50aeefef2d0e",
+            "name": "#exp_barrel_flux_l",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3e8d50aeefef2d0e",
-                    "secondaryname": "#hash_3e8d3aaeefef07ac",
+                    "name": "#exp_barrel_flux_l",
+                    "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#exp/prop/barrel/flux/exp_barrel_flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -17016,14 +17016,14 @@
         {
             "value": 338,
             "next": 65535,
-            "name": "#hash_3e8d3aaeefef07ac",
+            "name": "#exp_barrel_flux_r",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3e8d3aaeefef07ac",
-                    "secondaryname": "#hash_7fe19ceed35907ce",
+                    "name": "#exp_barrel_flux_r",
+                    "secondaryname": "#exp_barrel_dist",
                     "assetId": "#exp/prop/barrel/flux/exp_barrel_flux_r_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -17067,14 +17067,14 @@
         {
             "value": 341,
             "next": 173,
-            "name": "#hash_8ef0ca7881f8aab",
+            "name": "#exp_barrel_lfe",
             "sequence": 0,
             "cullDistance": 3000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_8ef0ca7881f8aab",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "name": "#exp_barrel_lfe",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -17113,8 +17113,8 @@
                     "unk178": "#hash_c030b0802"
                 },
                 {
-                    "name": "#hash_8ef0ca7881f8aab",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "name": "#exp_barrel_lfe",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -17153,8 +17153,8 @@
                     "unk178": "#hash_c030b0802"
                 },
                 {
-                    "name": "#hash_8ef0ca7881f8aab",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "name": "#exp_barrel_lfe",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -17193,8 +17193,8 @@
                     "unk178": "#hash_c030b0802"
                 },
                 {
-                    "name": "#hash_8ef0ca7881f8aab",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "name": "#exp_barrel_lfe",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -20337,7 +20337,7 @@
             "aliases": [
                 {
                     "name": "#hash_200e28bcd26bab77",
-                    "secondaryname": "#hash_3e8d3aaeefef07ac",
+                    "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -20431,13 +20431,13 @@
         {
             "value": 297,
             "next": 189,
-            "name": "#hash_2e887c70bfe4df2a",
+            "name": "#exp_mp_propane_tank_explo",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
@@ -20478,7 +20478,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
@@ -20519,7 +20519,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
@@ -20560,7 +20560,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
@@ -20601,7 +20601,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
@@ -20642,7 +20642,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
@@ -20683,7 +20683,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
@@ -20901,7 +20901,7 @@
             "aliases": [
                 {
                     "name": "#hash_4c4fd4c61d8d67f0",
-                    "secondaryname": "#hash_3e8d3aaeefef07ac",
+                    "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -21387,7 +21387,7 @@
             "aliases": [
                 {
                     "name": "#hash_456af38afaef9d77",
-                    "secondaryname": "#hash_3e8d3aaeefef07ac",
+                    "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -21488,7 +21488,7 @@
             "aliases": [
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -21529,7 +21529,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -21570,7 +21570,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -21611,7 +21611,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -21652,7 +21652,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -21693,7 +21693,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -21734,7 +21734,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -21879,14 +21879,14 @@
         {
             "value": 257,
             "next": 191,
-            "name": "#hash_23a8d14db44a77a5",
+            "name": "#exp_veh_close_layer",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_23a8d14db44a77a5",
-                    "secondaryname": "#hash_712e3703787e4a71",
+                    "name": "#exp_veh_close_layer",
+                    "secondaryname": "#exp_veh_decay",
                     "assetId": "#exp/vehicle/close/exp_veh_close_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -21925,8 +21925,8 @@
                     "unk178": "#hash_6030b0204"
                 },
                 {
-                    "name": "#hash_23a8d14db44a77a5",
-                    "secondaryname": "#hash_712e3703787e4a71",
+                    "name": "#exp_veh_close_layer",
+                    "secondaryname": "#exp_veh_decay",
                     "assetId": "#exp/vehicle/close/exp_veh_close_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -21965,8 +21965,8 @@
                     "unk178": "#hash_6030b0204"
                 },
                 {
-                    "name": "#hash_23a8d14db44a77a5",
-                    "secondaryname": "#hash_712e3703787e4a71",
+                    "name": "#exp_veh_close_layer",
+                    "secondaryname": "#exp_veh_decay",
                     "assetId": "#exp/vehicle/close/exp_veh_close_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -22005,8 +22005,8 @@
                     "unk178": "#hash_6030b0204"
                 },
                 {
-                    "name": "#hash_23a8d14db44a77a5",
-                    "secondaryname": "#hash_712e3703787e4a71",
+                    "name": "#exp_veh_close_layer",
+                    "secondaryname": "#exp_veh_decay",
                     "assetId": "#exp/vehicle/close/exp_veh_close_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -22049,14 +22049,14 @@
         {
             "value": 294,
             "next": 218,
-            "name": "#hash_127c91df9b564016",
+            "name": "#exp_veh_debris",
             "sequence": 0,
             "cullDistance": 5000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -22095,8 +22095,8 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -22135,8 +22135,8 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -22175,8 +22175,8 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -22215,8 +22215,8 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -22255,8 +22255,8 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -22295,8 +22295,8 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -22335,8 +22335,8 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_07.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -22375,8 +22375,8 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_08.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -22419,19 +22419,19 @@
         {
             "value": 152,
             "next": 200,
-            "name": "#hash_712e3703787e4a71",
+            "name": "#exp_veh_decay",
             "sequence": 0,
             "cullDistance": 12000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_712e3703787e4a71",
-                    "secondaryname": "#hash_7332c548b8e60625",
+                    "name": "#exp_veh_decay",
+                    "secondaryname": "#exp_veh_flux_l",
                     "assetId": "#exp/decay/refresh/exp_explosion_decay_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
                     "assetFileNameRelease": "#mp_seaside_alt.all",
-                    "contextType": "#hash_730721b0b6373e1",
+                    "contextType": "#ringoff_plr",
                     "contextValue": "#outdoor",
                     "reverbSend": 0.001,
                     "centerSend": 0,
@@ -22467,13 +22467,13 @@
                     "unk178": "#hash_1b030b0101"
                 },
                 {
-                    "name": "#hash_712e3703787e4a71",
-                    "secondaryname": "#hash_7332c548b8e60625",
+                    "name": "#exp_veh_decay",
+                    "secondaryname": "#exp_veh_flux_l",
                     "assetId": "#exp/decay/refresh/exp_explosion_decay_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
                     "assetFileNameRelease": "#mp_seaside_alt.all",
-                    "contextType": "#hash_730721b0b6373e1",
+                    "contextType": "#ringoff_plr",
                     "contextValue": "#outdoor",
                     "reverbSend": 0.001,
                     "centerSend": 0,
@@ -22513,14 +22513,14 @@
         {
             "value": 387,
             "next": 65535,
-            "name": "#hash_7332c548b8e60625",
+            "name": "#exp_veh_flux_l",
             "sequence": 0,
             "cullDistance": 13000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7332c548b8e60625",
-                    "secondaryname": "#hash_7332d748b8e624bb",
+                    "name": "#exp_veh_flux_l",
+                    "secondaryname": "#exp_veh_flux_r",
                     "assetId": "#exp/vehicle/flux/veh_flux_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -22559,8 +22559,8 @@
                     "unk178": "#hash_6030e0103"
                 },
                 {
-                    "name": "#hash_7332c548b8e60625",
-                    "secondaryname": "#hash_7332d748b8e624bb",
+                    "name": "#exp_veh_flux_l",
+                    "secondaryname": "#exp_veh_flux_r",
                     "assetId": "#exp/vehicle/flux/veh_flux_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -22599,8 +22599,8 @@
                     "unk178": "#hash_6030e0103"
                 },
                 {
-                    "name": "#hash_7332c548b8e60625",
-                    "secondaryname": "#hash_7332d748b8e624bb",
+                    "name": "#exp_veh_flux_l",
+                    "secondaryname": "#exp_veh_flux_r",
                     "assetId": "#exp/vehicle/flux/veh_flux_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -22639,8 +22639,8 @@
                     "unk178": "#hash_6030e0103"
                 },
                 {
-                    "name": "#hash_7332c548b8e60625",
-                    "secondaryname": "#hash_7332d748b8e624bb",
+                    "name": "#exp_veh_flux_l",
+                    "secondaryname": "#exp_veh_flux_r",
                     "assetId": "#exp/vehicle/flux/veh_flux_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -22683,13 +22683,13 @@
         {
             "value": 6,
             "next": 65535,
-            "name": "#hash_7332d748b8e624bb",
+            "name": "#exp_veh_flux_r",
             "sequence": 0,
             "cullDistance": 13000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7332d748b8e624bb",
+                    "name": "#exp_veh_flux_r",
                     "assetId": "#exp/vehicle/flux/veh_flux_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -22728,7 +22728,7 @@
                     "unk178": "#hash_6030e0103"
                 },
                 {
-                    "name": "#hash_7332d748b8e624bb",
+                    "name": "#exp_veh_flux_r",
                     "assetId": "#exp/vehicle/flux/veh_flux_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -22767,7 +22767,7 @@
                     "unk178": "#hash_6030e0103"
                 },
                 {
-                    "name": "#hash_7332d748b8e624bb",
+                    "name": "#exp_veh_flux_r",
                     "assetId": "#exp/vehicle/flux/veh_flux_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -22806,7 +22806,7 @@
                     "unk178": "#hash_6030e0103"
                 },
                 {
-                    "name": "#hash_7332d748b8e624bb",
+                    "name": "#exp_veh_flux_r",
                     "assetId": "#exp/vehicle/flux/veh_flux_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -22856,7 +22856,7 @@
             "aliases": [
                 {
                     "name": "#exp_veh_large",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -22897,7 +22897,7 @@
                 },
                 {
                     "name": "#exp_veh_large",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -22938,7 +22938,7 @@
                 },
                 {
                     "name": "#exp_veh_large",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -22982,13 +22982,13 @@
         {
             "value": 41,
             "next": 207,
-            "name": "#hash_680a1ca45380de2",
+            "name": "#exp_veh_lfe",
             "sequence": 0,
             "cullDistance": 3500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_680a1ca45380de2",
+                    "name": "#exp_veh_lfe",
                     "secondaryname": "#hash_bbafec33c2adca2",
                     "assetId": "#exp/vehicle/lfe/exp_veh_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
@@ -23088,7 +23088,7 @@
             "aliases": [
                 {
                     "name": "#exp_veh_med",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -23129,7 +23129,7 @@
                 },
                 {
                     "name": "#exp_veh_med",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -23170,7 +23170,7 @@
                 },
                 {
                     "name": "#exp_veh_med",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -23309,7 +23309,7 @@
             "aliases": [
                 {
                     "name": "#exp_veh_small",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -23350,7 +23350,7 @@
                 },
                 {
                     "name": "#exp_veh_small",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -23391,7 +23391,7 @@
                 },
                 {
                     "name": "#exp_veh_small",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -25010,13 +25010,13 @@
         {
             "value": 119,
             "next": 229,
-            "name": "#hash_1519e3326638cc63",
+            "name": "#fly_bump_container",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1519e3326638cc63",
+                    "name": "#fly_bump_container",
                     "assetId": "#fly/bump/container/bump_container_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -25057,7 +25057,7 @@
                     "unk178": "#hash_7000d0203"
                 },
                 {
-                    "name": "#hash_1519e3326638cc63",
+                    "name": "#fly_bump_container",
                     "assetId": "#fly/bump/container/bump_container_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -25098,7 +25098,7 @@
                     "unk178": "#hash_7000d0203"
                 },
                 {
-                    "name": "#hash_1519e3326638cc63",
+                    "name": "#fly_bump_container",
                     "assetId": "#fly/bump/container/bump_container_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -25139,7 +25139,7 @@
                     "unk178": "#hash_7000d0203"
                 },
                 {
-                    "name": "#hash_1519e3326638cc63",
+                    "name": "#fly_bump_container",
                     "assetId": "#fly/bump/container/bump_container_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -25180,7 +25180,7 @@
                     "unk178": "#hash_7000d0203"
                 },
                 {
-                    "name": "#hash_1519e3326638cc63",
+                    "name": "#fly_bump_container",
                     "assetId": "#fly/bump/container/bump_container_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -25221,7 +25221,7 @@
                     "unk178": "#hash_7000d0203"
                 },
                 {
-                    "name": "#hash_1519e3326638cc63",
+                    "name": "#fly_bump_container",
                     "assetId": "#fly/bump/container/bump_container_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -46100,13 +46100,13 @@
         {
             "value": 138,
             "next": 65535,
-            "name": "#hash_6851c7ef18c99a2f",
+            "name": "#fly_step_mattress_npc",
             "sequence": 0,
             "cullDistance": 3400,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6851c7ef18c99a2f",
+                    "name": "#fly_step_mattress_npc",
                     "assetId": "#fly/step/mattress/fly_step_mattress_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -46147,7 +46147,7 @@
                     "unk178": "#hash_7000d020e"
                 },
                 {
-                    "name": "#hash_6851c7ef18c99a2f",
+                    "name": "#fly_step_mattress_npc",
                     "assetId": "#fly/step/mattress/fly_step_mattress_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -46188,7 +46188,7 @@
                     "unk178": "#hash_7000d020e"
                 },
                 {
-                    "name": "#hash_6851c7ef18c99a2f",
+                    "name": "#fly_step_mattress_npc",
                     "assetId": "#fly/step/mattress/fly_step_mattress_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -46229,7 +46229,7 @@
                     "unk178": "#hash_7000d020e"
                 },
                 {
-                    "name": "#hash_6851c7ef18c99a2f",
+                    "name": "#fly_step_mattress_npc",
                     "assetId": "#fly/step/mattress/fly_step_mattress_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -46274,13 +46274,13 @@
         {
             "value": 73,
             "next": 296,
-            "name": "#hash_6def88eed3270d4a",
+            "name": "#fly_step_mattress_plr",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6def88eed3270d4a",
+                    "name": "#fly_step_mattress_plr",
                     "assetId": "#fly/step/mattress/fly_step_mattress_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -46321,7 +46321,7 @@
                     "unk178": "#hash_12000c0102"
                 },
                 {
-                    "name": "#hash_6def88eed3270d4a",
+                    "name": "#fly_step_mattress_plr",
                     "assetId": "#fly/step/mattress/fly_step_mattress_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -46362,7 +46362,7 @@
                     "unk178": "#hash_12000c0102"
                 },
                 {
-                    "name": "#hash_6def88eed3270d4a",
+                    "name": "#fly_step_mattress_plr",
                     "assetId": "#fly/step/mattress/fly_step_mattress_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -46403,7 +46403,7 @@
                     "unk178": "#hash_12000c0102"
                 },
                 {
-                    "name": "#hash_6def88eed3270d4a",
+                    "name": "#fly_step_mattress_plr",
                     "assetId": "#fly/step/mattress/fly_step_mattress_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -46448,13 +46448,13 @@
         {
             "value": 69,
             "next": 65535,
-            "name": "#hash_778c546d4bf1f13d",
+            "name": "#fly_step_metal",
             "sequence": 0,
             "cullDistance": 1300,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_778c546d4bf1f13d",
+                    "name": "#fly_step_metal",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
                     "assetFileNameRelease": "#mp_seaside_alt.all",
@@ -46494,7 +46494,7 @@
                     "unk178": "#hash_7000d0202"
                 },
                 {
-                    "name": "#hash_778c546d4bf1f13d",
+                    "name": "#fly_step_metal",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
                     "assetFileNameRelease": "#mp_seaside_alt.all",
@@ -48750,13 +48750,13 @@
         {
             "value": 28,
             "next": 306,
-            "name": "#hash_642770a6e291745c",
+            "name": "#fly_step_rocks",
             "sequence": 0,
             "cullDistance": 1300,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_642770a6e291745c",
+                    "name": "#fly_step_rocks",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
                     "assetFileNameRelease": "#mp_seaside_alt.all",
@@ -48796,7 +48796,7 @@
                     "unk178": "#hash_7000d0802"
                 },
                 {
-                    "name": "#hash_642770a6e291745c",
+                    "name": "#fly_step_rocks",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
                     "assetFileNameRelease": "#mp_seaside_alt.all",
@@ -49441,7 +49441,7 @@
             "aliases": [
                 {
                     "name": "#fly_step_shells",
-                    "secondaryname": "#hash_4f12c14c8757b7a",
+                    "secondaryname": "#fly_step_shells_sweet",
                     "assetId": "#fly/step/shells/shell_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -49483,7 +49483,7 @@
                 },
                 {
                     "name": "#fly_step_shells",
-                    "secondaryname": "#hash_4f12c14c8757b7a",
+                    "secondaryname": "#fly_step_shells_sweet",
                     "assetId": "#fly/step/shells/shell_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -49525,7 +49525,7 @@
                 },
                 {
                     "name": "#fly_step_shells",
-                    "secondaryname": "#hash_4f12c14c8757b7a",
+                    "secondaryname": "#fly_step_shells_sweet",
                     "assetId": "#fly/step/shells/shell_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -49567,7 +49567,7 @@
                 },
                 {
                     "name": "#fly_step_shells",
-                    "secondaryname": "#hash_4f12c14c8757b7a",
+                    "secondaryname": "#fly_step_shells_sweet",
                     "assetId": "#fly/step/shells/shell_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -49609,7 +49609,7 @@
                 },
                 {
                     "name": "#fly_step_shells",
-                    "secondaryname": "#hash_4f12c14c8757b7a",
+                    "secondaryname": "#fly_step_shells_sweet",
                     "assetId": "#fly/step/shells/shell_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -49651,7 +49651,7 @@
                 },
                 {
                     "name": "#fly_step_shells",
-                    "secondaryname": "#hash_4f12c14c8757b7a",
+                    "secondaryname": "#fly_step_shells_sweet",
                     "assetId": "#fly/step/shells/shell_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -49693,7 +49693,7 @@
                 },
                 {
                     "name": "#fly_step_shells",
-                    "secondaryname": "#hash_4f12c14c8757b7a",
+                    "secondaryname": "#fly_step_shells_sweet",
                     "assetId": "#fly/step/shells/shell_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -49735,7 +49735,7 @@
                 },
                 {
                     "name": "#fly_step_shells",
-                    "secondaryname": "#hash_4f12c14c8757b7a",
+                    "secondaryname": "#fly_step_shells_sweet",
                     "assetId": "#fly/step/shells/shell_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -49777,7 +49777,7 @@
                 },
                 {
                     "name": "#fly_step_shells",
-                    "secondaryname": "#hash_4f12c14c8757b7a",
+                    "secondaryname": "#fly_step_shells_sweet",
                     "assetId": "#fly/step/shells/shell_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -49819,7 +49819,7 @@
                 },
                 {
                     "name": "#fly_step_shells",
-                    "secondaryname": "#hash_4f12c14c8757b7a",
+                    "secondaryname": "#fly_step_shells_sweet",
                     "assetId": "#fly/step/shells/shell_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -49861,7 +49861,7 @@
                 },
                 {
                     "name": "#fly_step_shells",
-                    "secondaryname": "#hash_4f12c14c8757b7a",
+                    "secondaryname": "#fly_step_shells_sweet",
                     "assetId": "#fly/step/shells/shell_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -49903,7 +49903,7 @@
                 },
                 {
                     "name": "#fly_step_shells",
-                    "secondaryname": "#hash_4f12c14c8757b7a",
+                    "secondaryname": "#fly_step_shells_sweet",
                     "assetId": "#fly/step/shells/shell_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -49948,13 +49948,13 @@
         {
             "value": 89,
             "next": 65535,
-            "name": "#hash_76b49dc84578b31d",
+            "name": "#fly_step_shells_npc",
             "sequence": 0,
             "cullDistance": 3400,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_76b49dc84578b31d",
+                    "name": "#fly_step_shells_npc",
                     "secondaryname": "#hash_657e8ed3dbc52ebe",
                     "assetId": "#fly/step/shells/shell_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
@@ -49996,7 +49996,7 @@
                     "unk178": "#hash_7000d020e"
                 },
                 {
-                    "name": "#hash_76b49dc84578b31d",
+                    "name": "#fly_step_shells_npc",
                     "secondaryname": "#hash_657e8ed3dbc52ebe",
                     "assetId": "#fly/step/shells/shell_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
@@ -50038,7 +50038,7 @@
                     "unk178": "#hash_7000d020e"
                 },
                 {
-                    "name": "#hash_76b49dc84578b31d",
+                    "name": "#fly_step_shells_npc",
                     "secondaryname": "#hash_657e8ed3dbc52ebe",
                     "assetId": "#fly/step/shells/shell_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
@@ -50080,7 +50080,7 @@
                     "unk178": "#hash_7000d020e"
                 },
                 {
-                    "name": "#hash_76b49dc84578b31d",
+                    "name": "#fly_step_shells_npc",
                     "secondaryname": "#hash_657e8ed3dbc52ebe",
                     "assetId": "#fly/step/shells/shell_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
@@ -50122,7 +50122,7 @@
                     "unk178": "#hash_7000d020e"
                 },
                 {
-                    "name": "#hash_76b49dc84578b31d",
+                    "name": "#fly_step_shells_npc",
                     "secondaryname": "#hash_657e8ed3dbc52ebe",
                     "assetId": "#fly/step/shells/shell_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
@@ -50164,7 +50164,7 @@
                     "unk178": "#hash_7000d020e"
                 },
                 {
-                    "name": "#hash_76b49dc84578b31d",
+                    "name": "#fly_step_shells_npc",
                     "secondaryname": "#hash_657e8ed3dbc52ebe",
                     "assetId": "#fly/step/shells/shell_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
@@ -50210,13 +50210,13 @@
         {
             "value": 126,
             "next": 65535,
-            "name": "#hash_169b82c7c6db3b84",
+            "name": "#fly_step_shells_plr",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_169b82c7c6db3b84",
+                    "name": "#fly_step_shells_plr",
                     "secondaryname": "#hash_53cc3dd3d1a40243",
                     "assetId": "#fly/step/shells/shell_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
@@ -50258,7 +50258,7 @@
                     "unk178": "#hash_12000c0802"
                 },
                 {
-                    "name": "#hash_169b82c7c6db3b84",
+                    "name": "#fly_step_shells_plr",
                     "secondaryname": "#hash_53cc3dd3d1a40243",
                     "assetId": "#fly/step/shells/shell_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
@@ -50300,7 +50300,7 @@
                     "unk178": "#hash_12000c0802"
                 },
                 {
-                    "name": "#hash_169b82c7c6db3b84",
+                    "name": "#fly_step_shells_plr",
                     "secondaryname": "#hash_53cc3dd3d1a40243",
                     "assetId": "#fly/step/shells/shell_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
@@ -50342,7 +50342,7 @@
                     "unk178": "#hash_12000c0802"
                 },
                 {
-                    "name": "#hash_169b82c7c6db3b84",
+                    "name": "#fly_step_shells_plr",
                     "secondaryname": "#hash_53cc3dd3d1a40243",
                     "assetId": "#fly/step/shells/shell_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
@@ -50384,7 +50384,7 @@
                     "unk178": "#hash_12000c0802"
                 },
                 {
-                    "name": "#hash_169b82c7c6db3b84",
+                    "name": "#fly_step_shells_plr",
                     "secondaryname": "#hash_53cc3dd3d1a40243",
                     "assetId": "#fly/step/shells/shell_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
@@ -50426,7 +50426,7 @@
                     "unk178": "#hash_12000c0802"
                 },
                 {
-                    "name": "#hash_169b82c7c6db3b84",
+                    "name": "#fly_step_shells_plr",
                     "secondaryname": "#hash_53cc3dd3d1a40243",
                     "assetId": "#fly/step/shells/shell_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
@@ -50472,13 +50472,13 @@
         {
             "value": 367,
             "next": 294,
-            "name": "#hash_4f12c14c8757b7a",
+            "name": "#fly_step_shells_sweet",
             "sequence": 0,
             "cullDistance": 1300,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4f12c14c8757b7a",
+                    "name": "#fly_step_shells_sweet",
                     "assetId": "#fly/step/shells_sweet/shells_sweet_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -50519,7 +50519,7 @@
                     "unk178": "#hash_7000d0802"
                 },
                 {
-                    "name": "#hash_4f12c14c8757b7a",
+                    "name": "#fly_step_shells_sweet",
                     "assetId": "#fly/step/shells_sweet/shells_sweet_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -50560,7 +50560,7 @@
                     "unk178": "#hash_7000d0802"
                 },
                 {
-                    "name": "#hash_4f12c14c8757b7a",
+                    "name": "#fly_step_shells_sweet",
                     "assetId": "#fly/step/shells_sweet/shells_sweet_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -50601,7 +50601,7 @@
                     "unk178": "#hash_7000d0802"
                 },
                 {
-                    "name": "#hash_4f12c14c8757b7a",
+                    "name": "#fly_step_shells_sweet",
                     "assetId": "#fly/step/shells_sweet/shells_sweet_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -51100,13 +51100,13 @@
         {
             "value": 302,
             "next": 312,
-            "name": "#hash_1ec308916f5b6e67",
+            "name": "#fly_step_tarp",
             "sequence": 0,
             "cullDistance": 1300,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1ec308916f5b6e67",
+                    "name": "#fly_step_tarp",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
                     "assetFileNameRelease": "#mp_seaside_alt.all",
@@ -51146,7 +51146,7 @@
                     "unk178": "#hash_7000d0202"
                 },
                 {
-                    "name": "#hash_1ec308916f5b6e67",
+                    "name": "#fly_step_tarp",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
                     "assetFileNameRelease": "#mp_seaside_alt.all",
@@ -51190,13 +51190,13 @@
         {
             "value": 162,
             "next": 317,
-            "name": "#hash_1e3fe7dc6b3e5eff",
+            "name": "#fly_step_tarp_npc",
             "sequence": 0,
             "cullDistance": 3400,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1e3fe7dc6b3e5eff",
+                    "name": "#fly_step_tarp_npc",
                     "assetId": "#fly/step/tarp/fly_step_tarp_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -51237,7 +51237,7 @@
                     "unk178": "#hash_7000d020e"
                 },
                 {
-                    "name": "#hash_1e3fe7dc6b3e5eff",
+                    "name": "#fly_step_tarp_npc",
                     "assetId": "#fly/step/tarp/fly_step_tarp_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -51278,7 +51278,7 @@
                     "unk178": "#hash_7000d020e"
                 },
                 {
-                    "name": "#hash_1e3fe7dc6b3e5eff",
+                    "name": "#fly_step_tarp_npc",
                     "assetId": "#fly/step/tarp/fly_step_tarp_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -51319,7 +51319,7 @@
                     "unk178": "#hash_7000d020e"
                 },
                 {
-                    "name": "#hash_1e3fe7dc6b3e5eff",
+                    "name": "#fly_step_tarp_npc",
                     "assetId": "#fly/step/tarp/fly_step_tarp_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -51364,13 +51364,13 @@
         {
             "value": 337,
             "next": 65535,
-            "name": "#hash_3cdfe8dcc5db6bfa",
+            "name": "#fly_step_tarp_plr",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3cdfe8dcc5db6bfa",
+                    "name": "#fly_step_tarp_plr",
                     "assetId": "#fly/step/tarp/fly_step_tarp_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -51411,7 +51411,7 @@
                     "unk178": "#hash_12000c0102"
                 },
                 {
-                    "name": "#hash_3cdfe8dcc5db6bfa",
+                    "name": "#fly_step_tarp_plr",
                     "assetId": "#fly/step/tarp/fly_step_tarp_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -51452,7 +51452,7 @@
                     "unk178": "#hash_12000c0102"
                 },
                 {
-                    "name": "#hash_3cdfe8dcc5db6bfa",
+                    "name": "#fly_step_tarp_plr",
                     "assetId": "#fly/step/tarp/fly_step_tarp_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -51493,7 +51493,7 @@
                     "unk178": "#hash_12000c0102"
                 },
                 {
-                    "name": "#hash_3cdfe8dcc5db6bfa",
+                    "name": "#fly_step_tarp_plr",
                     "assetId": "#fly/step/tarp/fly_step_tarp_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -58461,13 +58461,13 @@
         {
             "value": 281,
             "next": 65535,
-            "name": "#hash_61052179ec121e08",
+            "name": "#pfx_backdraft",
             "sequence": 0,
             "cullDistance": 2700,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_61052179ec121e08",
+                    "name": "#pfx_backdraft",
                     "assetId": "#pfx/fire/backdraft/backdraft_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -58506,7 +58506,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_61052179ec121e08",
+                    "name": "#pfx_backdraft",
                     "assetId": "#pfx/fire/backdraft/backdraft_01.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -58549,13 +58549,13 @@
         {
             "value": 46,
             "next": 356,
-            "name": "#hash_4d024c686b015e3d",
+            "name": "#pfx_car_fire",
             "sequence": 0,
             "cullDistance": 1650,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4d024c686b015e3d",
+                    "name": "#pfx_car_fire",
                     "assetId": "#dst/generic/fire/car/car_fire_03.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -58598,13 +58598,13 @@
         {
             "value": 77,
             "next": 308,
-            "name": "#hash_752d1dbd064586d1",
+            "name": "#pfx_dirt_fall",
             "sequence": 0,
             "cullDistance": 700,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_752d1dbd064586d1",
+                    "name": "#pfx_dirt_fall",
                     "assetId": "#pfx/dirt/fall/dirt_fall_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -58643,7 +58643,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_752d1dbd064586d1",
+                    "name": "#pfx_dirt_fall",
                     "assetId": "#pfx/dirt/fall/dirt_fall_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -58682,7 +58682,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_752d1dbd064586d1",
+                    "name": "#pfx_dirt_fall",
                     "assetId": "#pfx/dirt/fall/dirt_fall_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -58721,7 +58721,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_752d1dbd064586d1",
+                    "name": "#pfx_dirt_fall",
                     "assetId": "#pfx/dirt/fall/dirt_fall_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -59799,13 +59799,13 @@
         {
             "value": 325,
             "next": 293,
-            "name": "#hash_1ce2ee8fafd2e832",
+            "name": "#pfx_fire_fall",
             "sequence": 0,
             "cullDistance": 1300,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1ce2ee8fafd2e832",
+                    "name": "#pfx_fire_fall",
                     "assetId": "#pfx/fire/fall/fire_fall_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -59844,7 +59844,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_1ce2ee8fafd2e832",
+                    "name": "#pfx_fire_fall",
                     "assetId": "#pfx/fire/fall/fire_fall_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -59883,7 +59883,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_1ce2ee8fafd2e832",
+                    "name": "#pfx_fire_fall",
                     "assetId": "#pfx/fire/fall/fire_fall_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -59922,7 +59922,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_1ce2ee8fafd2e832",
+                    "name": "#pfx_fire_fall",
                     "assetId": "#pfx/fire/fall/fire_fall_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -59961,7 +59961,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_1ce2ee8fafd2e832",
+                    "name": "#pfx_fire_fall",
                     "assetId": "#pfx/fire/fall/fire_fall_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -60000,7 +60000,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_1ce2ee8fafd2e832",
+                    "name": "#pfx_fire_fall",
                     "assetId": "#pfx/fire/fall/fire_fall_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -60765,13 +60765,13 @@
         {
             "value": 74,
             "next": 360,
-            "name": "#hash_221f959014a38fd9",
+            "name": "#pfx_gas_pipe_burst",
             "sequence": 0,
             "cullDistance": 2700,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_221f959014a38fd9",
+                    "name": "#pfx_gas_pipe_burst",
                     "assetId": "#pfx/fire/gas_pipe/gas_pipe_burst.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -60814,13 +60814,13 @@
         {
             "value": 78,
             "next": 370,
-            "name": "#hash_4d41a15f53b94b91",
+            "name": "#pfx_gas_pipe_fire",
             "sequence": 0,
             "cullDistance": 2700,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4d41a15f53b94b91",
+                    "name": "#pfx_gas_pipe_fire",
                     "secondaryname": "#hash_2d8014504990f6e7",
                     "assetId": "#pfx/fire/gas_pipe/gas_pipe_fire.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
@@ -63461,13 +63461,13 @@
         {
             "value": 254,
             "next": 357,
-            "name": "#hash_633bcc488ff36c4f",
+            "name": "#pfx_spark_lrg",
             "sequence": 0,
             "cullDistance": 1750,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_633bcc488ff36c4f",
+                    "name": "#pfx_spark_lrg",
                     "assetId": "#pfx/sparks/lrg/spark_lrg_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -63506,7 +63506,7 @@
                     "unk178": "#hash_500000804"
                 },
                 {
-                    "name": "#hash_633bcc488ff36c4f",
+                    "name": "#pfx_spark_lrg",
                     "assetId": "#pfx/sparks/lrg/spark_lrg_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -63545,7 +63545,7 @@
                     "unk178": "#hash_500000804"
                 },
                 {
-                    "name": "#hash_633bcc488ff36c4f",
+                    "name": "#pfx_spark_lrg",
                     "assetId": "#pfx/sparks/lrg/spark_lrg_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -63891,13 +63891,13 @@
         {
             "value": 92,
             "next": 384,
-            "name": "#hash_7114534806e65377",
+            "name": "#pfx_spark_pop",
             "sequence": 0,
             "cullDistance": 1750,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7114534806e65377",
+                    "name": "#pfx_spark_pop",
                     "assetId": "#pfx/sparks/pop/spark_pop_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -63936,7 +63936,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_7114534806e65377",
+                    "name": "#pfx_spark_pop",
                     "assetId": "#pfx/sparks/pop/spark_pop_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -63975,7 +63975,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_7114534806e65377",
+                    "name": "#pfx_spark_pop",
                     "assetId": "#pfx/sparks/pop/spark_pop_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -64516,13 +64516,13 @@
         {
             "value": 164,
             "next": 65535,
-            "name": "#hash_accd04815649710",
+            "name": "#pfx_spark_sml",
             "sequence": 0,
             "cullDistance": 1750,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_accd04815649710",
+                    "name": "#pfx_spark_sml",
                     "assetId": "#pfx/sparks/sml/spark_sml_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -64561,7 +64561,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_accd04815649710",
+                    "name": "#pfx_spark_sml",
                     "assetId": "#pfx/sparks/sml/spark_sml_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -64600,7 +64600,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_accd04815649710",
+                    "name": "#pfx_spark_sml",
                     "assetId": "#pfx/sparks/sml/spark_sml_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -64897,13 +64897,13 @@
         {
             "value": 292,
             "next": 47,
-            "name": "#hash_672528a60ddbd2d7",
+            "name": "#pfx_spark_xlrg",
             "sequence": 0,
             "cullDistance": 1750,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_672528a60ddbd2d7",
+                    "name": "#pfx_spark_xlrg",
                     "assetId": "#pfx/sparks/xlrg/spark_xlrg_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -64942,7 +64942,7 @@
                     "unk178": "#hash_500000804"
                 },
                 {
-                    "name": "#hash_672528a60ddbd2d7",
+                    "name": "#pfx_spark_xlrg",
                     "assetId": "#pfx/sparks/xlrg/spark_xlrg_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -64981,7 +64981,7 @@
                     "unk178": "#hash_500000804"
                 },
                 {
-                    "name": "#hash_672528a60ddbd2d7",
+                    "name": "#pfx_spark_xlrg",
                     "assetId": "#pfx/sparks/xlrg/spark_xlrg_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -65024,13 +65024,13 @@
         {
             "value": 265,
             "next": 65535,
-            "name": "#hash_62f54761cea0b5ed",
+            "name": "#pfx_splash_lrg",
             "sequence": 0,
             "cullDistance": 950,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_62f54761cea0b5ed",
+                    "name": "#pfx_splash_lrg",
                     "assetId": "#amb/environment/water/splash/lrg/splash_lrg_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -65069,7 +65069,7 @@
                     "unk178": "#hash_500000404"
                 },
                 {
-                    "name": "#hash_62f54761cea0b5ed",
+                    "name": "#pfx_splash_lrg",
                     "assetId": "#amb/environment/water/splash/lrg/splash_lrg_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -65108,7 +65108,7 @@
                     "unk178": "#hash_500000404"
                 },
                 {
-                    "name": "#hash_62f54761cea0b5ed",
+                    "name": "#pfx_splash_lrg",
                     "assetId": "#amb/environment/water/splash/lrg/splash_lrg_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -65147,7 +65147,7 @@
                     "unk178": "#hash_500000404"
                 },
                 {
-                    "name": "#hash_62f54761cea0b5ed",
+                    "name": "#pfx_splash_lrg",
                     "assetId": "#amb/environment/water/splash/lrg/splash_lrg_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -65186,7 +65186,7 @@
                     "unk178": "#hash_500000404"
                 },
                 {
-                    "name": "#hash_62f54761cea0b5ed",
+                    "name": "#pfx_splash_lrg",
                     "assetId": "#amb/environment/water/splash/lrg/splash_lrg_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -65225,7 +65225,7 @@
                     "unk178": "#hash_500000404"
                 },
                 {
-                    "name": "#hash_62f54761cea0b5ed",
+                    "name": "#pfx_splash_lrg",
                     "assetId": "#amb/environment/water/splash/lrg/splash_lrg_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -65268,13 +65268,13 @@
         {
             "value": 243,
             "next": 65535,
-            "name": "#hash_6a176d61d23bca94",
+            "name": "#pfx_splash_med",
             "sequence": 0,
             "cullDistance": 950,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6a176d61d23bca94",
+                    "name": "#pfx_splash_med",
                     "assetId": "#amb/environment/water/splash/med/splash_med_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -65313,7 +65313,7 @@
                     "unk178": "#hash_500000404"
                 },
                 {
-                    "name": "#hash_6a176d61d23bca94",
+                    "name": "#pfx_splash_med",
                     "assetId": "#amb/environment/water/splash/med/splash_med_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -65352,7 +65352,7 @@
                     "unk178": "#hash_500000404"
                 },
                 {
-                    "name": "#hash_6a176d61d23bca94",
+                    "name": "#pfx_splash_med",
                     "assetId": "#amb/environment/water/splash/med/splash_med_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -65391,7 +65391,7 @@
                     "unk178": "#hash_500000404"
                 },
                 {
-                    "name": "#hash_6a176d61d23bca94",
+                    "name": "#pfx_splash_med",
                     "assetId": "#amb/environment/water/splash/med/splash_med_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -65430,7 +65430,7 @@
                     "unk178": "#hash_500000404"
                 },
                 {
-                    "name": "#hash_6a176d61d23bca94",
+                    "name": "#pfx_splash_med",
                     "assetId": "#amb/environment/water/splash/med/splash_med_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -65469,7 +65469,7 @@
                     "unk178": "#hash_500000404"
                 },
                 {
-                    "name": "#hash_6a176d61d23bca94",
+                    "name": "#pfx_splash_med",
                     "assetId": "#amb/environment/water/splash/med/splash_med_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -66236,13 +66236,13 @@
         {
             "value": 45,
             "next": 1,
-            "name": "#hash_2f81dbcc3010ce32",
+            "name": "#pfx_water_trickle",
             "sequence": 0,
             "cullDistance": 1700,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2f81dbcc3010ce32",
+                    "name": "#pfx_water_trickle",
                     "assetId": "#amb/environment/water/trickle/water_trickle_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -66285,13 +66285,13 @@
         {
             "value": 12,
             "next": 398,
-            "name": "#hash_2426c299759451c",
+            "name": "#pfx_wood_fire_lrg",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2426c299759451c",
+                    "name": "#pfx_wood_fire_lrg",
                     "assetId": "#pfx/fire/wood/lrg/wood_fire_lrg.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -66341,7 +66341,7 @@
             "aliases": [
                 {
                     "name": "#hash_bbafec33c2adca2",
-                    "secondaryname": "#hash_127c91df9b564016",
+                    "secondaryname": "#exp_veh_debris",
                     "assetId": "#exp/distant/small_distant/exp_small_distant_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -66382,7 +66382,7 @@
                 },
                 {
                     "name": "#hash_bbafec33c2adca2",
-                    "secondaryname": "#hash_127c91df9b564016",
+                    "secondaryname": "#exp_veh_debris",
                     "assetId": "#exp/distant/small_distant/exp_small_distant_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -66423,7 +66423,7 @@
                 },
                 {
                     "name": "#hash_bbafec33c2adca2",
-                    "secondaryname": "#hash_127c91df9b564016",
+                    "secondaryname": "#exp_veh_debris",
                     "assetId": "#exp/distant/small_distant/exp_small_distant_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -66464,7 +66464,7 @@
                 },
                 {
                     "name": "#hash_bbafec33c2adca2",
-                    "secondaryname": "#hash_127c91df9b564016",
+                    "secondaryname": "#exp_veh_debris",
                     "assetId": "#exp/distant/small_distant/exp_small_distant_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_seaside_alt.all",
                     "assetIdRelease": "#mp_seaside_alt.all",
@@ -66627,7 +66627,7 @@
             "reverb": "#mp_final_killcam",
             "loop": "#hash_44463359dd025b23",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
+            "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
@@ -66647,7 +66647,7 @@
             "reverb": "#outdoor_clean",
             "loop": "#hash_8abeeabd2aa2c9c",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
+            "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
@@ -66667,7 +66667,7 @@
             "reverb": "#room_hallway",
             "loop": "#hash_5f0cf846c1e5f92e",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
+            "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
@@ -66687,8 +66687,8 @@
             "reverb": "#narrow_cave",
             "loop": "#hash_5f0cf846c1e5f92e",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": false,
@@ -66707,8 +66707,8 @@
             "reverb": "#room_laboratory",
             "loop": "#hash_5f0cf846c1e5f92e",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": false,
@@ -66727,8 +66727,8 @@
             "reverb": "#room_hallway",
             "loop": "#hash_5f0cf846c1e5f92e",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": false,
@@ -66747,8 +66747,8 @@
             "reverb": "#big_gym",
             "loop": "#hash_5f0cf846c1e5f92e",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": false,
@@ -66767,8 +66767,8 @@
             "reverb": "#room_livingRoom",
             "loop": "#hash_5f0cf846c1e5f92e",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": false,
@@ -66787,7 +66787,7 @@
             "reverb": "#outdoor_clean",
             "loop": "#hash_8abeeabd2aa2c9c",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
+            "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
@@ -66807,7 +66807,7 @@
             "reverb": "#room_bedroom",
             "loop": "#hash_8abeeabd2aa2c9c",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
+            "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
@@ -66827,8 +66827,8 @@
             "reverb": "#room_bedroom",
             "loop": "#hash_5f0cf846c1e5f92e",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": false,
@@ -66847,8 +66847,8 @@
             "reverb": "#room_hallway",
             "loop": "#hash_5f0cf846c1e5f92e",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": false,
@@ -66867,8 +66867,8 @@
             "reverb": "#room_hallway",
             "loop": "#hash_5f0cf846c1e5f92e",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": false,
@@ -66887,7 +66887,7 @@
             "reverb": "#underwater",
             "loop": "#hash_120613d74c9d5ed6",
             "duckId": "#cmn_swimming",
-            "entityContextType0": "#hash_730721b0b6373e1",
+            "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#underwater",
             "entityContextType1": "#water",
             "entityContextValue1": "#under",
@@ -66900,9 +66900,9 @@
     ],
     "scriptIdLookups": [],
     "streamKeysSABL": {
-        "streamKey1": "#hash_6f342326c307e470",
+        "streamKey1": "#mp_seaside_alt_all_stream",
         "dataSize1": 4096,
-        "fileKey": "#hash_563d82eabeed893d",
+        "fileKey": "#mp_seaside_alt_all_loaded",
         "fileLen": 90822656
     },
     "streamKeysSABS": {

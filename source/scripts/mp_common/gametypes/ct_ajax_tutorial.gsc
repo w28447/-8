@@ -139,7 +139,7 @@ function callback_player_damage( e_inflictor, e_attacker, n_damage, n_dflags, st
     {
         case 1:
         case 2:
-            if ( isdefined( weapon ) && ( weapon.name == #"hash_3f62a872201cd1ce" || weapon.name == #"eq_swat_grenade" ) )
+            if ( isdefined( weapon ) && ( weapon.name == #"swat_grenade_payload" || weapon.name == #"eq_swat_grenade" ) )
             {
                 if ( self.health < 10 )
                 {
@@ -667,7 +667,7 @@ function function_c6e7b0d9()
         {
             ct_vo::function_831e0584( array( "vox_tvoi_tutor_ajax_flash_fail" ), 0 );
             ct_utils::kill_all_bots();
-            level notify( #"hash_18530bbb9146c297" );
+            level notify( #"kill_bots_now" );
             ct_utils::function_79957328( undefined );
             waitframe( 1 );
             level thread ct_utils::function_9ab507a9( "courtyard_collision", "start_courtyard_collision", "stop_courtyard_collision", undefined, 1, 1 );
@@ -789,7 +789,7 @@ function function_9d1bba67()
 function function_b87295f2()
 {
     level endon( #"combattraining_logic_finished" );
-    ct_vo::function_831e0584( array( #"hash_5b73d53d22211be2" ), 1 );
+    ct_vo::function_831e0584( array( #"vox_tvoi_tutor_ajax_melee" ), 1 );
     e_player = getplayers()[ 0 ];
     e_player thread ct_utils::function_61c3d59c( #"hash_2933d1e2a048635e", undefined );
     level.var_7b46025 = struct::get_array( "s_shield_melee_ai", "targetname" );
@@ -1324,7 +1324,7 @@ function function_109c0cc2()
             continue;
         }
         
-        e_player thread ct_utils::function_1bb93418();
+        e_player thread ct_utils::ingame_objective_close();
         return;
     }
     
@@ -1351,7 +1351,7 @@ function wait_for_car()
         
         e_player thread ct_utils::function_61c3d59c( undefined, undefined, "dynobj_KillToEarnRCXD" );
         level.var_3fe23421 = 0;
-        e_player ct_utils::function_80bf685b( level.var_3fe23421 );
+        e_player ct_utils::ingame_objective_set_points( level.var_3fe23421 );
         e_player.momentum = 0;
         e_player thread function_537c9eea();
         level.var_7b46025 = struct::get_array( "s_killstreak_spawn", "targetname" );
@@ -1371,7 +1371,7 @@ function wait_for_car()
             
             if ( !isalive( e_player ) )
             {
-                e_player ct_utils::function_1bb93418();
+                e_player ct_utils::ingame_objective_close();
                 ct_utils::kill_all_bots( undefined );
                 ct_utils::function_79957328( 0.5 );
                 e_player ct_vo::function_831e0584( array( "vox_tvoi_tutor_ajax_final_event_2_dead" ) );
@@ -1439,7 +1439,7 @@ function function_c3ccdcf5()
 {
     e_player = ct_utils::get_player();
     level.var_3fe23421 += level.var_28cfc859;
-    e_player ct_utils::function_80bf685b( level.var_3fe23421 );
+    e_player ct_utils::ingame_objective_set_points( level.var_3fe23421 );
 }
 
 // Namespace ct_ajax_tutorial/ct_ajax_tutorial
@@ -1451,7 +1451,7 @@ function function_537c9eea()
     self endon( #"death" );
     self waittill( "killstreak_quantity_" + #"recon_car" );
     self.var_51ff7a58 = 1;
-    self ct_utils::function_1bb93418();
+    self ct_utils::ingame_objective_close();
 }
 
 // Namespace ct_ajax_tutorial/ct_ajax_tutorial
@@ -1592,7 +1592,7 @@ function function_e9b5de80()
         }
         else
         {
-            e_player ct_utils::function_1bb93418();
+            e_player ct_utils::ingame_objective_close();
             e_player thread ct_vo::function_831e0584( array( "vox_tvoi_tutor_ajax_final_event_3_miss" ) );
             e_player ct_utils::function_49e0c5bc();
             

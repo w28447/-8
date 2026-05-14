@@ -21,7 +21,7 @@
 // Size: 0xac
 function init()
 {
-    level flag::init( #"hash_398e4b1e72edb4ee" );
+    level flag::init( #"lounge_revoked" );
     
     if ( zm_utility::is_ee_enabled() )
     {
@@ -54,7 +54,7 @@ function function_f339b159()
     level.e_punch_card_screen = getent( "punch_card_screen", "targetname" );
     level.e_punch_card_screen hide();
     level thread function_19daa1b1();
-    level flag::init( #"hash_7b2be1fafb5f35c7" );
+    level flag::init( #"punch_card_inserted" );
     level.e_punch_card_anim = getent( "punch_card_anim", "targetname" );
     level.e_punch_card_anim hide();
 }
@@ -141,12 +141,12 @@ function function_7a70f281()
     self playsound( "evt_punch_card_insert" );
     self moveto( self.origin + v_forward * -14, 3 );
     wait 1;
-    level flag::set( #"hash_7b2be1fafb5f35c7" );
+    level flag::set( #"punch_card_inserted" );
     self waittill( #"movedone" );
     self hide();
     self.origin = v_starting_origin;
     self.angles = var_5287d229;
-    level flag::clear( #"hash_7b2be1fafb5f35c7" );
+    level flag::clear( #"punch_card_inserted" );
 }
 
 // Namespace zm_white_audio_interactables/zm_white_audio_interactables
@@ -284,7 +284,7 @@ function function_626095c1( object )
 // Size: 0x1f0
 function function_f0e98e5f()
 {
-    level.var_65d94f2 = struct::get_array( #"hash_508091eba85fdf0a" );
+    level.var_65d94f2 = struct::get_array( #"white_audio_log" );
     
     foreach ( var_9b5d57b6 in level.var_65d94f2 )
     {
@@ -455,9 +455,9 @@ function function_ac06ab3a()
     level.var_ea514bc4[ 3 ] = { #var_8a821e1e:3, #in_inventory:0, #vo_line:var_51ba7b4a };
     level.var_ea514bc4[ 4 ] = { #var_8a821e1e:4, #in_inventory:0, #vo_line:var_68e586cf };
     level.var_804a56e3 = 0;
-    level.var_ba07f1de = zm_hms_util::function_bffcedde( "white_audio_reel", "targetname", "script_int" );
+    level.a_e_audio_reels = zm_hms_util::function_bffcedde( "white_audio_reel", "targetname", "script_int" );
     
-    foreach ( e_audio_reel in level.var_ba07f1de )
+    foreach ( e_audio_reel in level.a_e_audio_reels )
     {
         e_audio_reel zm_item_pickup::item_pickup_init( &function_1792ae3, 1 );
     }
@@ -691,15 +691,15 @@ function function_6b2499f9()
 function function_a0b040d4()
 {
     level endon( #"hash_48039f3a4c1a3248" );
-    level.var_215e60c4 = struct::get( #"hash_17790fb78d228f05", "targetname" );
+    level.var_215e60c4 = struct::get( #"tedd_talk", "targetname" );
     s_unitrigger = level.var_215e60c4 zm_unitrigger::create( &function_c9271718, 64, &function_ee32c750 );
     s_unitrigger thread function_4bda6193();
-    level waittill( #"hash_398e4b1e72edb4ee" );
+    level waittill( #"lounge_revoked" );
     vol = getent( "vol_soul_lounge", "targetname" );
     exploder::exploder( "fxexp_elec_lounge" );
     vol thread function_cf1b4a16();
     wait 60;
-    level flag::clear( #"hash_398e4b1e72edb4ee" );
+    level flag::clear( #"lounge_revoked" );
     exploder::stop_exploder( "fxexp_elec_lounge" );
 }
 
@@ -797,7 +797,7 @@ function function_93040a5d()
             
             if ( level.var_5da5aff4 )
             {
-                level flag::set( #"hash_398e4b1e72edb4ee" );
+                level flag::set( #"lounge_revoked" );
             }
         }
         
@@ -831,7 +831,7 @@ function function_cf1b4a16()
 {
     shock_status_effect = getstatuseffect( #"hash_320c81d91eb89d73" );
     
-    while ( level flag::get( #"hash_398e4b1e72edb4ee" ) )
+    while ( level flag::get( #"lounge_revoked" ) )
     {
         foreach ( player in getplayers() )
         {

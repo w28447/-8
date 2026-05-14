@@ -4,7 +4,7 @@
     "displayname": "#zmweapon/sniper_powerbolt_t8_upgraded",
     "xhash_60": "#hash_5705de554842193b",
     "weapon70": "#sniper_powerbolt_t8",
-    "streamkey": "#hash_21cfb35428b62e87",
+    "streamkey": "#sniper_powerbolt_t8_upgraded_soundbank",
     "scrstr_8c8": [
         "tag_scope_mms_attach",
         "tag_clan_tag",
@@ -60,13 +60,13 @@
     "firesounddistant": "#hash_5f022cd68aefd198",
     "firesound": "#hash_310d98e1eff13bca",
     "firesoundplayer": "#hash_5a61ffe1bed718cf",
-    "sound1d0": "#hash_3740a6a3662d9d58",
+    "sound1d0": "#wpn_sniper_powerbolt_fire_npc",
     "sound1e0": "#hash_5c696f2c3d313f78",
-    "sound200": "#hash_1a6dd1a3e7684ef9",
+    "sound200": "#wpn_sniper_powerbolt_fire_plr",
     "sound210": "#hash_3f969a2cbe6bf119",
     "sound240": "#hash_474a10cd847c7803",
     "sound250": "#hash_146e19cd67fe19de",
-    "sound260": "#hash_515f54aa1f553686",
+    "sound260": "#prj_crack_supersonic",
     "sound310": "#hash_553957b278d8e879",
     "sound5e0": "#fly_scope_zoom",
     "sound600": "#hash_5c9addf2686f77e2",
@@ -80,7 +80,7 @@
     "weaponIconXCam": "#hash_dedd5d68b4135dc0",
     "attachments": [
         "#hash_f459a0af8e8f912b",
-        "#hash_1847195a90eddc18",
+        "#acog_sniper_upgraded",
         "#adsreload"
     ],
     "attachmentUniques": [

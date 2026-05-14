@@ -55,7 +55,7 @@ function init()
         function_c41ad9f9();
     }
     
-    level notify( #"hash_7f7eec328c07606d" );
+    level notify( #"ai_zones_setup" );
     
     if ( isdefined( level.warzonespawnspecial ) && level.warzonespawnspecial )
     {
@@ -69,7 +69,7 @@ function init()
 // Size: 0xfe
 function spawn_special_ai()
 {
-    level waittill( #"hash_54391c26dfd50b8a" );
+    level waittill( #"start_spawn_special_ai" );
     var_f71adb48 = struct::get_array( "special_ai", "script_noteworthy" );
     var_f71adb48 = array::randomize( var_f71adb48 );
     num_to_spawn = min( var_f71adb48.size, 5 );
@@ -227,9 +227,9 @@ function function_f0b2e300()
     wz_ai_zonemgr::function_c3bb62c1( #"paradegrounds", #"spawner_boct_brutus_wz", 2 );
     wz_ai_zonemgr::function_c3bb62c1( #"cellhouse", #"spawner_boct_brutus_wz", 2 );
     wz_ai_zonemgr::function_c3bb62c1( #"newindustries", #"spawner_boct_brutus_wz", 2 );
-    wz_ai_zonemgr::function_462b41e2( #"paradegrounds", #"spawner_boct_brutus_wz", #"hash_3e4109550d98219f", #"hash_43b30c7ff9b4f4c2", #"hash_3c449d1a7a0cd70e" );
-    wz_ai_zonemgr::function_462b41e2( #"cellhouse", #"spawner_boct_brutus_wz", #"hash_3e410a550d982352", #"hash_367f5a5f344dcda7", #"hash_6a498d20dd284089" );
-    wz_ai_zonemgr::function_462b41e2( #"newindustries", #"spawner_boct_brutus_wz", #"hash_3e410b550d982505", #"hash_451e5522eeb07ee8", #"hash_3db2892c24c8a1bc" );
+    wz_ai_zonemgr::function_462b41e2( #"paradegrounds", #"spawner_boct_brutus_wz", #"zombie_supply_stash_escape_zonea", #"hash_43b30c7ff9b4f4c2", #"hash_3c449d1a7a0cd70e" );
+    wz_ai_zonemgr::function_462b41e2( #"cellhouse", #"spawner_boct_brutus_wz", #"zombie_supply_stash_escape_zoneb", #"hash_367f5a5f344dcda7", #"hash_6a498d20dd284089" );
+    wz_ai_zonemgr::function_462b41e2( #"newindustries", #"spawner_boct_brutus_wz", #"zombie_supply_stash_escape_zonec", #"hash_451e5522eeb07ee8", #"hash_3db2892c24c8a1bc" );
 }
 
 // Namespace wz_escape_ai_zones/wz_escape_ai_zones
@@ -255,9 +255,9 @@ function function_c41ad9f9()
     wz_ai_zonemgr::function_6c75dee3( #"cellhouse", #"spawner_boct_zombie_mob_wz", 1 );
     wz_ai_zonemgr::function_5f0d105a( 0, #"newindustries", #"spawner_boct_zombie_mob_wz", maxaicount, maxalivecount, var_5b2d986e );
     wz_ai_zonemgr::function_6c75dee3( #"newindustries", #"spawner_boct_zombie_mob_wz", 1 );
-    wz_ai_zonemgr::function_462b41e2( #"paradegrounds", #"spawner_boct_zombie_mob_wz", #"hash_3e4109550d98219f", #"hash_43b30c7ff9b4f4c2", #"hash_3c449d1a7a0cd70e" );
-    wz_ai_zonemgr::function_462b41e2( #"cellhouse", #"spawner_boct_zombie_mob_wz", #"hash_3e410a550d982352", #"hash_367f5a5f344dcda7", #"hash_6a498d20dd284089" );
-    wz_ai_zonemgr::function_462b41e2( #"newindustries", #"spawner_boct_zombie_mob_wz", #"hash_3e410b550d982505", #"hash_451e5522eeb07ee8", #"hash_3db2892c24c8a1bc" );
+    wz_ai_zonemgr::function_462b41e2( #"paradegrounds", #"spawner_boct_zombie_mob_wz", #"zombie_supply_stash_escape_zonea", #"hash_43b30c7ff9b4f4c2", #"hash_3c449d1a7a0cd70e" );
+    wz_ai_zonemgr::function_462b41e2( #"cellhouse", #"spawner_boct_zombie_mob_wz", #"zombie_supply_stash_escape_zoneb", #"hash_367f5a5f344dcda7", #"hash_6a498d20dd284089" );
+    wz_ai_zonemgr::function_462b41e2( #"newindustries", #"spawner_boct_zombie_mob_wz", #"zombie_supply_stash_escape_zonec", #"hash_451e5522eeb07ee8", #"hash_3db2892c24c8a1bc" );
 }
 
 // Namespace wz_escape_ai_zones/wz_escape_ai_zones
@@ -269,9 +269,9 @@ function function_4cfa640c()
     wz_ai_zonemgr::function_5f0d105a( 0, #"paradegrounds", #"spawner_boct_zombie_dog_wz", 10, 4, 4 );
     wz_ai_zonemgr::function_5f0d105a( 0, #"cellhouse", #"spawner_boct_zombie_dog_wz", 10, 4, 4 );
     wz_ai_zonemgr::function_5f0d105a( 0, #"newindustries", #"spawner_boct_zombie_dog_wz", 10, 4, 4 );
-    wz_ai_zonemgr::function_462b41e2( #"paradegrounds", #"spawner_boct_zombie_dog_wz", #"hash_3e4109550d98219f", #"hash_43b30c7ff9b4f4c2", #"hash_3c449d1a7a0cd70e" );
-    wz_ai_zonemgr::function_462b41e2( #"cellhouse", #"spawner_boct_zombie_dog_wz", #"hash_3e410a550d982352", #"hash_367f5a5f344dcda7", #"hash_6a498d20dd284089" );
-    wz_ai_zonemgr::function_462b41e2( #"newindustries", #"spawner_boct_zombie_dog_wz", #"hash_3e410b550d982505", #"hash_451e5522eeb07ee8", #"hash_3db2892c24c8a1bc" );
+    wz_ai_zonemgr::function_462b41e2( #"paradegrounds", #"spawner_boct_zombie_dog_wz", #"zombie_supply_stash_escape_zonea", #"hash_43b30c7ff9b4f4c2", #"hash_3c449d1a7a0cd70e" );
+    wz_ai_zonemgr::function_462b41e2( #"cellhouse", #"spawner_boct_zombie_dog_wz", #"zombie_supply_stash_escape_zoneb", #"hash_367f5a5f344dcda7", #"hash_6a498d20dd284089" );
+    wz_ai_zonemgr::function_462b41e2( #"newindustries", #"spawner_boct_zombie_dog_wz", #"zombie_supply_stash_escape_zonec", #"hash_451e5522eeb07ee8", #"hash_3db2892c24c8a1bc" );
 }
 
 // Namespace wz_escape_ai_zones/wz_escape_ai_zones
@@ -286,9 +286,9 @@ function function_36cc50( var_8667e69, maxcount, maxalive )
     wz_ai_zonemgr::function_c3bb62c1( #"cellhouse", var_8667e69, 2 );
     wz_ai_zonemgr::function_5f0d105a( 0, #"newindustries", var_8667e69, maxcount, maxalive, 0 );
     wz_ai_zonemgr::function_c3bb62c1( #"newindustries", var_8667e69, 2 );
-    wz_ai_zonemgr::function_462b41e2( #"paradegrounds", var_8667e69, #"hash_3e4109550d98219f", #"hash_43b30c7ff9b4f4c2", #"hash_3c449d1a7a0cd70e" );
-    wz_ai_zonemgr::function_462b41e2( #"cellhouse", var_8667e69, #"hash_3e410a550d982352", #"hash_367f5a5f344dcda7", #"hash_6a498d20dd284089" );
-    wz_ai_zonemgr::function_462b41e2( #"newindustries", var_8667e69, #"hash_3e410b550d982505", #"hash_451e5522eeb07ee8", #"hash_3db2892c24c8a1bc" );
+    wz_ai_zonemgr::function_462b41e2( #"paradegrounds", var_8667e69, #"zombie_supply_stash_escape_zonea", #"hash_43b30c7ff9b4f4c2", #"hash_3c449d1a7a0cd70e" );
+    wz_ai_zonemgr::function_462b41e2( #"cellhouse", var_8667e69, #"zombie_supply_stash_escape_zoneb", #"hash_367f5a5f344dcda7", #"hash_6a498d20dd284089" );
+    wz_ai_zonemgr::function_462b41e2( #"newindustries", var_8667e69, #"zombie_supply_stash_escape_zonec", #"hash_451e5522eeb07ee8", #"hash_3db2892c24c8a1bc" );
 }
 
 // Namespace wz_escape_ai_zones/wz_escape_ai_zones
@@ -310,8 +310,8 @@ function function_f910ed8a()
     wz_ai_zonemgr::function_5f0d105a( 0, #"paradegrounds", #"spawner_boct_zombie_mob_wz", var_aeae9f59, var_f1fbce84, var_c3bb4e09 );
     wz_ai_zonemgr::function_5f0d105a( 0, #"cellhouse", #"spawner_boct_zombie_mob_wz", var_aeae9f59, var_f1fbce84, var_c3bb4e09 );
     wz_ai_zonemgr::function_5f0d105a( 0, #"newindustries", #"spawner_boct_zombie_mob_wz", var_aeae9f59, var_f1fbce84, var_c3bb4e09 );
-    wz_ai_zonemgr::function_462b41e2( #"paradegrounds", #"spawner_boct_zombie_mob_wz", #"hash_3e4109550d98219f", #"hash_43b30c7ff9b4f4c2", #"hash_3c449d1a7a0cd70e" );
-    wz_ai_zonemgr::function_462b41e2( #"cellhouse", #"spawner_boct_zombie_mob_wz", #"hash_3e410a550d982352", #"hash_367f5a5f344dcda7", #"hash_6a498d20dd284089" );
-    wz_ai_zonemgr::function_462b41e2( #"newindustries", #"spawner_boct_zombie_mob_wz", #"hash_3e410b550d982505", #"hash_451e5522eeb07ee8", #"hash_3db2892c24c8a1bc" );
+    wz_ai_zonemgr::function_462b41e2( #"paradegrounds", #"spawner_boct_zombie_mob_wz", #"zombie_supply_stash_escape_zonea", #"hash_43b30c7ff9b4f4c2", #"hash_3c449d1a7a0cd70e" );
+    wz_ai_zonemgr::function_462b41e2( #"cellhouse", #"spawner_boct_zombie_mob_wz", #"zombie_supply_stash_escape_zoneb", #"hash_367f5a5f344dcda7", #"hash_6a498d20dd284089" );
+    wz_ai_zonemgr::function_462b41e2( #"newindustries", #"spawner_boct_zombie_mob_wz", #"zombie_supply_stash_escape_zonec", #"hash_451e5522eeb07ee8", #"hash_3db2892c24c8a1bc" );
 }
 

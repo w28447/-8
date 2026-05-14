@@ -24,7 +24,7 @@ CoD.StoreUtility.AddUpsellToDescriptionIfNeeded = function ( f3_arg0, f3_arg1, f
 		local f3_local0 = Engine[0x943893A16399DCF]( f3_arg1 )
 		local f3_local1 = f3_local0 and CoD.DLCPackFromBit[f3_local0]
 		if f3_local1 then
-			return Engine[0xF9F1239CFD921FE]( 0x5D4B2D29288ADDF, f3_arg2, Engine.Localize( "MENU/" .. f3_local1 .. "_REQUIRED_HINT" ) )
+			return Engine[0xF9F1239CFD921FE]( "menu/description_and_upsell", f3_arg2, Engine.Localize( "MENU/" .. f3_local1 .. "_REQUIRED_HINT" ) )
 		end
 	end
 	return f3_arg2
@@ -66,7 +66,7 @@ CoD.StoreUtility.CreateStoreFeatureCard = function ( f8_arg0, f8_arg1 )
 			name = Engine[0xF9F1239CFD921FE]( 0x191CDDA584B4408 ),
 			iconBackground = 0xEEC1B33FCDD11A6,
 			iconBackgroundFocus = 0xEEC1B33FCDD11A6,
-			descriptionText = 0xC93BEA7D80F41C6,
+			descriptionText = "menu/upgrade_now",
 			action = OpenStore,
 			actionParam = "FeaturedCard",
 			actionString = "store",

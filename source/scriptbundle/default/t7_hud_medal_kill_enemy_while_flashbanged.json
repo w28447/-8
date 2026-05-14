@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_kill_enemy_while_flashbanged",
     "backinglarge": "image#t7_hud_medal_backing_badassery_lrg",
     "iconsmall": "image#t7_hud_medal_kill_enemy_while_flashbanged",
-    "stringref": "localized17#hash_3760a0a558ff986e",
+    "stringref": "localized17#medal/kill_enemy_while_flashbanged",
     "iconlarge": "image#t7_hud_medal_kill_enemy_while_flashbanged_lrg"
 }

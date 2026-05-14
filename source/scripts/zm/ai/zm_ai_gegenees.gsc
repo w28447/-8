@@ -641,7 +641,7 @@ function private function_d82de95f( entity )
             
             if ( hit_enemy )
             {
-                entity.locked_enemy status_effect::status_effect_apply( getstatuseffect( #"hash_706608d269d2fefc" ), undefined, entity, undefined, 2000 );
+                entity.locked_enemy status_effect::status_effect_apply( getstatuseffect( #"gegenees_spear_hit" ), undefined, entity, undefined, 2000 );
                 entity.locked_enemy thread function_60164697();
                 entity.locked_enemy clientfield::increment_to_player( "gegenees_damage_cf" );
             }
@@ -1350,7 +1350,7 @@ function function_9a05389e()
         while ( true )
         {
             waitframe( 1 );
-            string = getdvarstring( #"hash_6e55ca7eb0bc5180", "<dev string:x1aa>" );
+            string = getdvarstring( #"gegenees_devgui_cmd", "<dev string:x1aa>" );
             cmd = strtok( string, "<dev string:x1ad>" );
             gegenees = getaiarchetypearray( #"gegenees" );
             
@@ -1390,7 +1390,7 @@ function function_9a05389e()
                 }
             }
             
-            setdvar( #"hash_6e55ca7eb0bc5180", "<dev string:x1aa>" );
+            setdvar( #"gegenees_devgui_cmd", "<dev string:x1aa>" );
         }
     }
 

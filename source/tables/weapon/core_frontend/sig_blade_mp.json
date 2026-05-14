@@ -4,7 +4,7 @@
     "displayname": "#weapon/sig_blade",
     "altWeapon": "#sig_blade_projectile_mp",
     "weapon70": "#sig_blade",
-    "streamkey": "#hash_4c5ba8b10f75aa81",
+    "streamkey": "#sig_blade_soundbank",
     "scrstr_8c8": [
         "tag_ability_hero"
     ],
@@ -40,7 +40,7 @@
     "sound810": "#hash_5fd68d0455a0b8",
     "tunables1": "#sig_blade_tunables_mp",
     "cacWeaponXCam": "#hash_2547de4f2204205b",
-    "sharedWeaponSounds": "#hash_483189becc0d84f0",
+    "sharedWeaponSounds": "#blade_katana",
     "#hash_2e4a8800": "#sig_blade_scoreevents",
     "viewmodel": [
         "#wpn_t8_sig_blade_view"

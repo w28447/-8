@@ -1,12 +1,12 @@
 require( "ui/uieditor/widgets/callingcards/callingcards_futureracing_asset01" )
 require( "ui/uieditor/widgets/callingcards/callingcards_futureracing_asset02" )
 
-CoD[0xF3C30F1F50D950A] = InheritFrom( LUI.UIElement )
-CoD[0xF3C30F1F50D950A].__defaultWidth = 960
-CoD[0xF3C30F1F50D950A].__defaultHeight = 240
-CoD[0xF3C30F1F50D950A].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD["callingcards_futureracing"] = InheritFrom( LUI.UIElement )
+CoD["callingcards_futureracing"].__defaultWidth = 960
+CoD["callingcards_futureracing"].__defaultHeight = 240
+CoD["callingcards_futureracing"].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0xF3C30F1F50D950A] )
+	self:setClass( CoD["callingcards_futureracing"] )
 	self.id = "CallingCards_FutureRacing"
 	self.soundSet = "none"
 	self.anyChildUsesUpdateState = true
@@ -34,23 +34,23 @@ CoD[0xF3C30F1F50D950A].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.roadbottom = roadbottom
 	
 	local explosion4 = LUI.UIImage.new( 0, 0, 195.5, 507.5, 0, 0, 72, 240 )
-	explosion4:setImage( RegisterImage( 0xF7526A6642CE002 ) )
+	explosion4:setImage( RegisterImage( "uie_explosion04" ) )
 	self:addElement( explosion4 )
 	self.explosion4 = explosion4
 	
 	local explosion3 = LUI.UIImage.new( 0, 0, 195.5, 507.5, 0, 0, 72, 240 )
-	explosion3:setImage( RegisterImage( 0xF7521A6642CD783 ) )
+	explosion3:setImage( RegisterImage( "uie_explosion03" ) )
 	self:addElement( explosion3 )
 	self.explosion3 = explosion3
 	
 	local explosion2 = LUI.UIImage.new( 0, 0, 195.5, 507.5, 0, 0, 72, 240 )
-	explosion2:setImage( RegisterImage( 0xF7520A6642CD5D0 ) )
+	explosion2:setImage( RegisterImage( "uie_explosion02" ) )
 	self:addElement( explosion2 )
 	self.explosion2 = explosion2
 	
 	local explosion1 = LUI.UIImage.new( 0, 0, 195.5, 507.5, 0, 0, 72, 240 )
 	explosion1:setAlpha( 0 )
-	explosion1:setImage( RegisterImage( 0xF7523A6642CDAE9 ) )
+	explosion1:setImage( RegisterImage( "uie_explosion01" ) )
 	self:addElement( explosion1 )
 	self.explosion1 = explosion1
 	
@@ -67,7 +67,7 @@ CoD[0xF3C30F1F50D950A].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0xF3C30F1F50D950A].__resetProperties = function ( f2_arg0 )
+CoD["callingcards_futureracing"].__resetProperties = function ( f2_arg0 )
 	f2_arg0.roadtop:completeAnimation()
 	f2_arg0.explosion1:completeAnimation()
 	f2_arg0.roadbottom:completeAnimation()
@@ -100,7 +100,7 @@ CoD[0xF3C30F1F50D950A].__resetProperties = function ( f2_arg0 )
 	f2_arg0.explosion4:setScale( 1, 1 )
 end
 
-CoD[0xF3C30F1F50D950A].__clipsPerState = {
+CoD["callingcards_futureracing"].__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()
@@ -261,7 +261,7 @@ CoD[0xF3C30F1F50D950A].__clipsPerState = {
 		end
 	}
 }
-CoD[0xF3C30F1F50D950A].__onClose = function ( f20_arg0 )
+CoD["callingcards_futureracing"].__onClose = function ( f20_arg0 )
 	f20_arg0.roadbottom:close()
 	f20_arg0.roadtop:close()
 end

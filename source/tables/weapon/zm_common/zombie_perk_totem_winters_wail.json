@@ -1,7 +1,7 @@
 {
     "name": "#zombie_perk_totem_winters_wail",
     "baseWeapon": "#zombie_perk_totem_winters_wail",
-    "streamkey": "#hash_522c7ad1dc8aa0ef",
+    "streamkey": "#zombie_perk_totem_winters_wail_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",

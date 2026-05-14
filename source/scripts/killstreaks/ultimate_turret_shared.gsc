@@ -467,7 +467,7 @@ function function_7f9eb7f()
     else if ( self.damagetaken > self.health )
     {
         arrayremovevalue( owner.var_85988a58, self );
-        self.owner luinotifyevent( #"hash_126effa63f6e04bd" );
+        self.owner luinotifyevent( #"mini_turret_destroyed" );
     }
     
     owner clientfield::set_player_uimodel( "hudItems.ultimateTurretCount", owner.var_85988a58.size );
@@ -1580,9 +1580,9 @@ function function_59ce22f9( attacker, callback_data )
     self playsound( "mpl_turret_exp" );
     bundle = level.killstreakbundle[ #"ultimate_turret" ];
     
-    if ( isdefined( bundle.var_bb6c29b4 ) && isdefined( self.var_d02ddb8e ) && self.var_d02ddb8e == getweapon( #"shock_rifle" ) )
+    if ( isdefined( bundle.shockrifledestructionfx ) && isdefined( self.var_d02ddb8e ) && self.var_d02ddb8e == getweapon( #"shock_rifle" ) )
     {
-        playfx( bundle.var_bb6c29b4, self.origin );
+        playfx( bundle.shockrifledestructionfx, self.origin );
     }
     
     self stoploopsound( 0.5 );

@@ -47,7 +47,7 @@ function event_handler[level_init] main( eventstruct )
         adddebugcommand( "<dev string:x38>" + "<dev string:x51>" );
     #/
     
-    level thread function_b3e0f5e0();
+    level thread nuketown_mannequin_debug();
     kill_triggers = getentarray( "ee_kill", "targetname" );
     
     foreach ( trigger in kill_triggers )
@@ -184,13 +184,13 @@ function on_connect()
 // Params 0
 // Checksum 0x97651c0c, Offset: 0x12f8
 // Size: 0x96
-function function_b3e0f5e0()
+function nuketown_mannequin_debug()
 {
     while ( level.mannequin_mode === 0 )
     {
-        if ( getdvarint( #"hash_519c2711f2f609f", 0 ) && level.mannequin_mode == 0 )
+        if ( getdvarint( #"nuketown_mannequin_debug", 0 ) && level.mannequin_mode == 0 )
         {
-            setdvar( #"hash_519c2711f2f609f", 0 );
+            setdvar( #"nuketown_mannequin_debug", 0 );
             level thread mannequin_mode();
         }
         

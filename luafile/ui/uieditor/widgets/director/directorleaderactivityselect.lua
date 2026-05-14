@@ -36,7 +36,7 @@ CoD.DirectorLeaderActivitySelect.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local Header = LUI.UIText.new( 0, 0, 8, 298, 0, 0, 6, 24 )
 	Header:setRGB( 0.86, 0.74, 0.25 )
-	Header:setText( LocalizeToUpperString( 0xA43B10D9DA121A ) )
+	Header:setText( LocalizeToUpperString( "menu/waiting_caps" ) )
 	Header:setTTF( "ttmussels_demibold" )
 	Header:setLetterSpacing( 6 )
 	Header:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

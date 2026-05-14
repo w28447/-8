@@ -455,7 +455,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_ec42569215ec3db",
+            "lightExploderName": "#exp_lgt_skylight_gameplay",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -6080,7 +6080,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_6c4b3bf3b626f968",
+            "lightExploderName": "#exp_lgt_xd_sh100",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -6117,7 +6117,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_6c4e41f3b6293971",
+            "lightExploderName": "#exp_lgt_xd_sh110",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -6370,7 +6370,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_6c51c7f3b62c52fa",
+            "lightExploderName": "#exp_lgt_xd_sh120",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -6627,7 +6627,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_7542e0f3bb5160c2",
+            "lightExploderName": "#exp_lgt_xd_sh090",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -6680,7 +6680,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_7545e6f3bb53a0cb",
+            "lightExploderName": "#exp_lgt_xd_sh080",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -6701,7 +6701,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_7556e4f3bb621098",
+            "lightExploderName": "#exp_lgt_xd_sh030",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -6770,7 +6770,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_755a6af3bb652a21",
+            "lightExploderName": "#exp_lgt_xd_sh020",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -6839,7 +6839,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_755df0f3bb6843aa",
+            "lightExploderName": "#exp_lgt_xd_sh010",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -6884,7 +6884,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_756159f3bb6b2bec",
+            "lightExploderName": "#exp_lgt_xd_sh005",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -6921,7 +6921,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_7564dcf3bb6e405c",
+            "lightExploderName": "#exp_lgt_xd_sh070",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -6987,7 +6987,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_756b68f3bb7399ee",
+            "lightExploderName": "#exp_lgt_xd_sh050",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -7008,7 +7008,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_756eeef3bb76b377",
+            "lightExploderName": "#exp_lgt_xd_sh040",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -7488,7 +7488,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_755a6af3bb652a21",
+            "lightExploderName": "#exp_lgt_xd_sh020",
             "triggerData": [
                 {
                     "probeID": 286,
@@ -7502,7 +7502,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_6c4e41f3b6293971",
+            "lightExploderName": "#exp_lgt_xd_sh110",
             "triggerData": [
                 {
                     "probeID": 2,
@@ -7525,7 +7525,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_6c51c7f3b62c52fa",
+            "lightExploderName": "#exp_lgt_xd_sh120",
             "triggerData": [
                 {
                     "probeID": 1,

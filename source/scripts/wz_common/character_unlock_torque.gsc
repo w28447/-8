@@ -100,7 +100,7 @@ function function_a2877194( params )
         
         if ( self.var_41ae08e8 == 2 )
         {
-            self character_unlock::function_c8beca5e( #"torque_unlock", #"hash_a9ec4883fd0293d", 1 );
+            self character_unlock::function_c8beca5e( #"torque_unlock", #"torque_unlock_razor_wire", 1 );
         }
         
         return;
@@ -117,7 +117,7 @@ function function_a2877194( params )
         
         if ( self.var_c0bc1135 == 1 )
         {
-            self character_unlock::function_c8beca5e( #"torque_unlock", #"hash_3843c83850f09a08", 1 );
+            self character_unlock::function_c8beca5e( #"torque_unlock", #"torque_unlock_barricade", 1 );
         }
     }
 }

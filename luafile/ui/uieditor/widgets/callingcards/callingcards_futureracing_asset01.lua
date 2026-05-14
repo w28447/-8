@@ -9,7 +9,7 @@ CoD.CallingCards_FutureRacing_asset01.new = function ( f1_arg0, f1_arg1, f1_arg2
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local roadtop = LUI.UIImage.new( 0, 0, 0, 576, 0, 0, 0, 240 )
-	roadtop:setImage( RegisterImage( 0x3F9A2E331D149EF ) )
+	roadtop:setImage( RegisterImage( "uie_cc_toproad" ) )
 	self:addElement( roadtop )
 	self.roadtop = roadtop
 	

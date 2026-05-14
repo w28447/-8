@@ -2069,7 +2069,7 @@ function play_pair( var_a33156af, var_6a5164f0, var_b6213032 = 0, var_d8b95786 =
         
         foreach ( player in a_players )
         {
-            player val::set( #"hash_588e644c65309ea3", "freezecontrols", 1 );
+            player val::set( #"scene_play_pair", "freezecontrols", 1 );
             
             if ( !var_d8b95786 )
             {
@@ -2089,7 +2089,7 @@ function function_cae579da( str_team )
     
     foreach ( player in a_players )
     {
-        player val::set( #"hash_588e644c65309ea3", "freezecontrols", 1 );
+        player val::set( #"scene_play_pair", "freezecontrols", 1 );
         player thread lui::screen_fade_out( 0, undefined, "scene_system" );
     }
 }
@@ -3264,7 +3264,7 @@ function function_46546b5c( str_scenedef )
         return false;
     }
     
-    if ( getdvarint( #"hash_862358d532e674c", 0 ) === 1 )
+    if ( getdvarint( #"scr_scene_skip_custom_games", 0 ) === 1 )
     {
         var_41c1a1b7 = getscriptbundle( str_scenedef );
         
@@ -3288,7 +3288,7 @@ function function_a63b9bca( str_scenedef )
         return false;
     }
     
-    if ( getdvarint( #"hash_862358d532e674c", 0 ) === 2 )
+    if ( getdvarint( #"scr_scene_skip_custom_games", 0 ) === 2 )
     {
         var_41c1a1b7 = getscriptbundle( str_scenedef );
         
@@ -3312,8 +3312,8 @@ function function_a4ad0308( o_scene )
         return;
     }
     
-    self notify( #"hash_f7c1e0e8fb935d5" );
-    self endoncallback( &function_63033fc3, #"hash_f7c1e0e8fb935d5", #"disconnect" );
+    self notify( #"scene_skip_button_pressed" );
+    self endoncallback( &function_63033fc3, #"scene_skip_button_pressed", #"disconnect" );
     o_scene endoncallback( &function_63033fc3, #"scene_done", #"scene_stop", #"scene_skip_completed", #"hash_63783193d9ac5bfc" );
     level endoncallback( &function_63033fc3, #"hash_7a8cd7f6a20dde3e" );
     b_skip_scene = 0;
@@ -4109,11 +4109,11 @@ function function_61635c87( b_enable )
 {
     if ( b_enable )
     {
-        self flagsys::set( #"hash_6ce14241f77af1e7" );
+        self flagsys::set( #"interactive_shot_in_combat" );
         return;
     }
     
-    self flagsys::clear( #"hash_6ce14241f77af1e7" );
+    self flagsys::clear( #"interactive_shot_in_combat" );
 }
 
 // Namespace scene/scene_shared

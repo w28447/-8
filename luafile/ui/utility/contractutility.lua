@@ -125,7 +125,7 @@ CoD.ContractUtility.GetContractListModels = function ( f11_arg0, f11_arg1 )
 		local f11_local18 = 0x0
 	end
 	if f11_local0.type == 0xBD6E1F8964DCE86 then
-		f11_local15 = Engine[0xF9F1239CFD921FE]( 0x41874BEA5451E9D, f11_local5 )
+		f11_local15 = Engine[0xF9F1239CFD921FE]( "menu/title_theme", f11_local5 )
 		local f11_local19 = Engine[0xF9F1239CFD921FE]
 		local f11_local20 = 0xEE92514250F3100
 		local f11_local21 = f11_local3
@@ -192,7 +192,7 @@ CoD.ContractUtility.GetContractListModels = function ( f11_arg0, f11_arg1 )
 		end
 		f11_local6 = f11_local24( f11_local25, f11_local26, f11_local27( f11_local28, f11_local29, f11_local30 ) )
 		f11_local7 = LuaEnum.LOOT_CAMERA_TYPE.WEAPON
-	elseif f11_local0.type == 0xD74CF5A087733F7 or f11_local0.type == 0x7FB1719175C1461 then
+	elseif f11_local0.type == 0xD74CF5A087733F7 or f11_local0.type == "mk2" then
 		local f11_local19 = CoD.BlackMarketTableUtility.GetContractMastercraft( f11_arg0, f11_arg1 )
 		f11_local17 = f11_local19
 		local f11_local20 = CoD.BlackMarketUtility.GetMastercraftWeaponRef( f11_local19 )
@@ -284,21 +284,21 @@ CoD.ContractUtility.GetContractListModels = function ( f11_arg0, f11_arg1 )
 		contentsDetailedDesc = f11_local9,
 		mainExtraText = f11_local15,
 		subExtraText = f11_local18 or 0x0,
-		icon = f11_local2[0xB008743FB85E8A2]
+		icon = f11_local2["contracticon"]
 	}
 	local f11_local20 = f11_local2[0xB3DE4579D73CEB6]
 	if not f11_local20 then
-		f11_local20 = f11_local2[0xB008743FB85E8A2]
+		f11_local20 = f11_local2["contracticon"]
 	end
 	f11_local19.inventoryIcon = f11_local20
 	f11_local20 = f11_local2[0xD63FBB2BF3F4957]
 	if not f11_local20 then
-		f11_local20 = f11_local2[0xB008743FB85E8A2]
+		f11_local20 = f11_local2["contracticon"]
 	end
 	f11_local19.detailsImage = f11_local20
 	f11_local19.popupImage = 0x0
 	f11_local19.primaryImage = 0x0
-	f11_local19.previewImage = f11_local2[0xB008743FB85E8A2]
+	f11_local19.previewImage = f11_local2["contracticon"]
 	f11_local19.category = 0x6FEB6C795532AF5
 	f11_local19.rarity = CoD.BlackMarketUtility.GetLootRarityType( f11_local0.rarity )
 	f11_local19.earnedRewardCount = f11_local4
@@ -572,7 +572,7 @@ DataSources.CaseExchangeContractConfirmationButtons = ListHelper_SetupDataSource
 			},
 			{
 				models = {
-					displayText = 0x7C2737E72EC4A26
+					displayText = "menu/exchange"
 				},
 				properties = {
 					action = f31_local0,

@@ -65,7 +65,7 @@ CoD.LoadoutClassItemContainerZombie.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local Bar = LUI.UIImage.new( 0, 0, -7, 309, 0, 0, -7, 17 )
 	Bar:setAlpha( 0.4 )
-	Bar:setImage( RegisterImage( 0xEDFB71C641410DA ) )
+	Bar:setImage( RegisterImage( "uie_ui_menu_zombies_cac_special_weapon_bar" ) )
 	self:addElement( Bar )
 	self.Bar = Bar
 	

@@ -60,7 +60,7 @@ function function_3ade2b96( localclientnum, oldval, newval, bnewent, binitialsna
     }
     
     self.var_3ade2b96 = 0;
-    self notify( #"hash_43f06be9944cddc1" );
+    self notify( #"seeker_mine_shockfx_end" );
 }
 
 // Namespace seeker_mine_mp/seeker_mine
@@ -74,7 +74,7 @@ function seeker_mine_fx( localclientnum, oldval, newval, bnewent, binitialsnap, 
         if ( isdefined( self.seeker_fx ) )
         {
             stopfx( localclientnum, self.seeker_fx );
-            self notify( #"hash_6b4bac2b8c2122ef" );
+            self notify( #"seeker_fx_end" );
         }
         
         if ( newval == 1 )
@@ -96,7 +96,7 @@ function seeker_mine_fx( localclientnum, oldval, newval, bnewent, binitialsnap, 
 // Size: 0x5c
 function function_fc90058e( localclientnum, fx )
 {
-    self waittill( #"death", #"hash_6b4bac2b8c2122ef" );
+    self waittill( #"death", #"seeker_fx_end" );
     
     if ( isdefined( fx ) )
     {
@@ -125,7 +125,7 @@ function on_player_corpse( localclientnum, params )
 // Size: 0x9c
 function function_a6451cfe( localclientnum, camfx )
 {
-    self waittill( #"death", #"hash_43f06be9944cddc1" );
+    self waittill( #"death", #"seeker_mine_shockfx_end" );
     
     if ( isdefined( camfx ) )
     {

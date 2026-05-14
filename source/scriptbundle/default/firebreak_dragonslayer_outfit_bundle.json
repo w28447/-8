@@ -1,10 +1,10 @@
 {
     "buttonimage": "image#ui_icon_blackmarket_promos_dragon_slayer_button_small",
     "popupimage": "image#ui_icon_blackmarket_promos_dragon_slayer_large_preview",
-    "nametext": "localized17#hash_14c20b3a0525b2f1",
+    "nametext": "localized17#menu/firebreak_dragonslayer_outfit_bundle",
     "categorytext": "localized17#hash_30951b5b7749b8df",
     "name": "firebreak_dragonslayer_outfit_bundle",
-    "desctext": "localized17#hash_762f942cc3415e4b",
+    "desctext": "localized17#menu/firebreak_dragonslayer_outfit_bundle_desc",
     "previewimage": "image#ui_icon_blackmarket_promos_dragon_slayer_item_detail",
     "reserveimage": "image#ui_icon_blackmarket_promos_dragon_slayer_button_large"
 }

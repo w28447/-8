@@ -48,7 +48,7 @@ CoD.AARLevelUpOverlay_LevelUpBg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local dataFui = LUI.UIImage.new( 0, 0, 1504, 1564, 0, 0, 56, 72 )
 	dataFui:setAlpha( 0.12 )
 	dataFui:setScale( 2, 2 )
-	dataFui:setImage( RegisterImage( 0x73A4BBA3912B0F ) )
+	dataFui:setImage( RegisterImage( "uie_ui_menu_aar_common_numbers_text" ) )
 	dataFui:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( dataFui )
 	self.dataFui = dataFui
@@ -97,63 +97,63 @@ CoD.AARLevelUpOverlay_LevelUpBg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local Plus01 = LUI.UIImage.new( 0, 0, 1360, 1392, 0, 0, 172, 204 )
 	Plus01:setAlpha( 0 )
-	Plus01:setImage( RegisterImage( 0x1ACA8BD7BB22ADB ) )
+	Plus01:setImage( RegisterImage( "uie_ui_menu_aar_common_thin_cross" ) )
 	Plus01:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Plus01 )
 	self.Plus01 = Plus01
 	
 	local Plus02 = LUI.UIImage.new( 0, 0, 1144, 1176, 0, 0, 172, 204 )
 	Plus02:setAlpha( 0 )
-	Plus02:setImage( RegisterImage( 0x1ACA8BD7BB22ADB ) )
+	Plus02:setImage( RegisterImage( "uie_ui_menu_aar_common_thin_cross" ) )
 	Plus02:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Plus02 )
 	self.Plus02 = Plus02
 	
 	local Plus03 = LUI.UIImage.new( 0, 0, 281, 313, 0, 0, 172, 204 )
 	Plus03:setAlpha( 0 )
-	Plus03:setImage( RegisterImage( 0x1ACA8BD7BB22ADB ) )
+	Plus03:setImage( RegisterImage( "uie_ui_menu_aar_common_thin_cross" ) )
 	Plus03:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Plus03 )
 	self.Plus03 = Plus03
 	
 	local Plus04 = LUI.UIImage.new( 0, 0, 495, 527, 0, 0, 172, 204 )
 	Plus04:setAlpha( 0 )
-	Plus04:setImage( RegisterImage( 0x1ACA8BD7BB22ADB ) )
+	Plus04:setImage( RegisterImage( "uie_ui_menu_aar_common_thin_cross" ) )
 	Plus04:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Plus04 )
 	self.Plus04 = Plus04
 	
 	local Plus05 = LUI.UIImage.new( 0, 0, 279, 311, 0, 0, 389, 421 )
 	Plus05:setAlpha( 0 )
-	Plus05:setImage( RegisterImage( 0x1ACA8BD7BB22ADB ) )
+	Plus05:setImage( RegisterImage( "uie_ui_menu_aar_common_thin_cross" ) )
 	Plus05:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Plus05 )
 	self.Plus05 = Plus05
 	
 	local Plus06 = LUI.UIImage.new( 0, 0, 495, 527, 0, 0, 389, 421 )
 	Plus06:setAlpha( 0 )
-	Plus06:setImage( RegisterImage( 0x1ACA8BD7BB22ADB ) )
+	Plus06:setImage( RegisterImage( "uie_ui_menu_aar_common_thin_cross" ) )
 	Plus06:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Plus06 )
 	self.Plus06 = Plus06
 	
 	local Plus07 = LUI.UIImage.new( 0, 0, 1145, 1177, 0, 0, 389, 421 )
 	Plus07:setAlpha( 0 )
-	Plus07:setImage( RegisterImage( 0x1ACA8BD7BB22ADB ) )
+	Plus07:setImage( RegisterImage( "uie_ui_menu_aar_common_thin_cross" ) )
 	Plus07:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Plus07 )
 	self.Plus07 = Plus07
 	
 	local Plus08 = LUI.UIImage.new( 0, 0, 1361, 1393, 0, 0, 389, 421 )
 	Plus08:setAlpha( 0 )
-	Plus08:setImage( RegisterImage( 0x1ACA8BD7BB22ADB ) )
+	Plus08:setImage( RegisterImage( "uie_ui_menu_aar_common_thin_cross" ) )
 	Plus08:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Plus08 )
 	self.Plus08 = Plus08
 	
 	local Plus09 = LUI.UIImage.new( 0, 0, 823, 855, 0, 0, 389, 421 )
 	Plus09:setAlpha( 0 )
-	Plus09:setImage( RegisterImage( 0x1ACA8BD7BB22ADB ) )
+	Plus09:setImage( RegisterImage( "uie_ui_menu_aar_common_thin_cross" ) )
 	Plus09:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Plus09 )
 	self.Plus09 = Plus09

@@ -48,7 +48,7 @@ function init_shared()
     level.smartcoversettings.var_ac3f76c7 = "smart_cover_objective_full";
     level.smartcoversettings.var_546a220c = "smart_cover_objective_open";
     level.smartcoversettings.smartcoverweapon = getweapon( "ability_smart_cover" );
-    level.smartcoversettings.var_4115bb3a = getweapon( #"hash_34575452eba07c65" );
+    level.smartcoversettings.smartcoverdetonator = getweapon( #"smart_cover_detonator" );
     level.smartcoversettings.objectivezones = [];
     setupdvars();
     ability_player::register_gadget_should_notify( 27, 1 );
@@ -320,7 +320,7 @@ function function_bd071599( player, smartcover )
         waitframe( 1 );
     }
     
-    player thread gestures::function_f3e2696f( player, level.smartcoversettings.var_4115bb3a, undefined, 0.75, undefined, undefined, undefined );
+    player thread gestures::function_f3e2696f( player, level.smartcoversettings.smartcoverdetonator, undefined, 0.75, undefined, undefined, undefined );
     
     if ( isdefined( level.smartcoversettings.bundle.var_d47e600f ) )
     {
@@ -456,7 +456,7 @@ function function_b7f5b1cc( origin, angles, player )
 // Size: 0x1f0
 function function_a47ce1c2( player )
 {
-    var_b43e8dc2 = player function_287dcf4b( level.smartcoversettings.bundle.var_63aab046, level.smartcoversettings.bundle.maxwidth, 1, 1, level.smartcoversettings.smartcoverweapon );
+    var_b43e8dc2 = player function_287dcf4b( level.smartcoversettings.bundle.maxplacementdistance, level.smartcoversettings.bundle.maxwidth, 1, 1, level.smartcoversettings.smartcoverweapon );
     player.smartcover.lastvalid = var_b43e8dc2;
     var_9e596670 = 0;
     
@@ -657,7 +657,7 @@ function function_37f1dcd1()
 {
     level endon( #"game_ended" );
     self.owner endon( #"disconnect", #"joined_team", #"changed_specialist", #"hacked" );
-    self endon( #"hash_5de1fc3780ea0eaa" );
+    self endon( #"smart_cover_destroyed" );
     waitresult = self waittill( #"death" );
     
     if ( !isdefined( self ) )
@@ -710,7 +710,7 @@ function function_375cfa56( smartcover, owner )
 function function_2a494565( isselfdestruct )
 {
     smartcover = self;
-    smartcover notify( #"hash_5de1fc3780ea0eaa" );
+    smartcover notify( #"smart_cover_destroyed" );
     smartcover clientfield::set( "enemyequip", 0 );
     smartcover clientfield::set( "friendlyequip", 0 );
     
@@ -745,9 +745,9 @@ function function_2a494565( isselfdestruct )
         }
     }
     
-    if ( isdefined( level.smartcoversettings.bundle.var_bb6c29b4 ) && isdefined( self.var_d02ddb8e ) && self.var_d02ddb8e == getweapon( #"shock_rifle" ) )
+    if ( isdefined( level.smartcoversettings.bundle.shockrifledestructionfx ) && isdefined( self.var_d02ddb8e ) && self.var_d02ddb8e == getweapon( #"shock_rifle" ) )
     {
-        playfx( level.smartcoversettings.bundle.var_bb6c29b4, smartcover.origin );
+        playfx( level.smartcoversettings.bundle.shockrifledestructionfx, smartcover.origin );
     }
     
     removeindex = -1;
@@ -1437,8 +1437,8 @@ function microwaveentity( entity )
     
     if ( getgametypesetting( #"competitivesettings" ) === 1 )
     {
-        var_756fda07 = getstatuseffect( #"hash_4571e9bb8d1be2af" );
-        var_2b29cf8c = getstatuseffect( #"hash_13ef8ef2acaa9aec" );
+        var_756fda07 = getstatuseffect( #"microwave_slowed_comp" );
+        var_2b29cf8c = getstatuseffect( #"microwave_dot_comp" );
     }
     else
     {

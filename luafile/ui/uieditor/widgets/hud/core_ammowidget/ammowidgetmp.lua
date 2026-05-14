@@ -59,7 +59,7 @@ CoD.AmmoWidgetMP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	self.Frame = Frame
 	
 	local FrameGolden = LUI.UIImage.new( 0, 0, 264, 624, 0, 0, 25.5, 111.5 )
-	FrameGolden:setImage( RegisterImage( 0xDDA2B9CC83282F8 ) )
+	FrameGolden:setImage( RegisterImage( "uie_ui_hud_core_frame_ammo_widget_gold" ) )
 	FrameGolden:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDCEC3F40C67FD03 ) )
 	FrameGolden:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( FrameGolden )
@@ -117,7 +117,7 @@ CoD.AmmoWidgetMP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	
 	local Sheen = LUI.UIImage.new( 0, 0, 284, 624, 0, 0, 25, 111 )
 	Sheen:setAlpha( 0.01 )
-	Sheen:setImage( RegisterImage( 0x20B747108977AD9 ) )
+	Sheen:setImage( RegisterImage( "uie_ui_hud_core_ammo_widget_sheen" ) )
 	Sheen:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Sheen )
 	self.Sheen = Sheen
@@ -138,7 +138,7 @@ CoD.AmmoWidgetMP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	local GlowImage = LUI.UIImage.new( 0, 0, 65.5, 831.5, 0, 0, -37, 253 )
 	GlowImage:setRGB( 1, 0.97, 0.69 )
 	GlowImage:setAlpha( 0 )
-	GlowImage:setImage( RegisterImage( 0x1DA3FD465AC2534 ) )
+	GlowImage:setImage( RegisterImage( "uie_ui_hud_core_ammo_widget_glow_ammo" ) )
 	GlowImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	GlowImage:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( GlowImage )
@@ -147,7 +147,7 @@ CoD.AmmoWidgetMP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	local GlowImage2 = LUI.UIImage.new( 0, 0, 65.5, 831.5, 0, 0, -37, 253 )
 	GlowImage2:setRGB( 0.96, 0.62, 0.05 )
 	GlowImage2:setAlpha( 0 )
-	GlowImage2:setImage( RegisterImage( 0x1DA3FD465AC2534 ) )
+	GlowImage2:setImage( RegisterImage( "uie_ui_hud_core_ammo_widget_glow_ammo" ) )
 	GlowImage2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	GlowImage2:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( GlowImage2 )

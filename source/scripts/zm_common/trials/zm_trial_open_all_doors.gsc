@@ -118,17 +118,17 @@ function private function_d34c075e( ents )
 // Size: 0x122
 function private function_a4cfa984( door_ents, debris_ents )
 {
-    var_8b730c3e = [];
+    opened_doors = [];
     
     foreach ( door_ent in door_ents )
     {
         if ( isdefined( door_ent.target ) && isdefined( door_ent.has_been_opened ) && door_ent.has_been_opened )
         {
-            var_8b730c3e[ door_ent.target ] = 1;
+            opened_doors[ door_ent.target ] = 1;
         }
     }
     
-    var_eeba6731 = var_8b730c3e.size;
+    var_eeba6731 = opened_doors.size;
     var_c5f7c25b = function_d34c075e( debris_ents );
     var_69310a8a = level.var_3a748490 - var_c5f7c25b;
     return var_eeba6731 + var_69310a8a;
@@ -141,7 +141,7 @@ function private function_a4cfa984( door_ents, debris_ents )
 function private function_b2fa4678()
 {
     self endon( #"disconnect" );
-    level endon( #"hash_7646638df88a3656" );
+    level endon( #"trial_round_end" );
     var_c43a6efa = 0;
     var_58161ed2 = function_e242d7a8();
     
@@ -154,7 +154,7 @@ function private function_b2fa4678()
             if ( var_54e16eaa >= var_58161ed2 )
             {
                 zm_trial_util::function_7d32b7d0( 1 );
-                level notify( #"hash_6ba2e2da302282" );
+                level notify( #"all_doors_opened" );
                 level.var_d0b04690 = 1;
             }
             else
@@ -175,7 +175,7 @@ function private function_b2fa4678()
 // Size: 0x1b4
 function private monitor_timer( n_timer )
 {
-    level endon( #"hash_7646638df88a3656" );
+    level endon( #"trial_round_end" );
     wait 12;
     
     foreach ( player in getplayers() )
@@ -183,7 +183,7 @@ function private monitor_timer( n_timer )
         player zm_trial_util::function_128378c9( n_timer, 1, #"hash_c2b77be4cf5b142" );
     }
     
-    level waittilltimeout( n_timer + 1, #"hash_6ba2e2da302282" );
+    level waittilltimeout( n_timer + 1, #"all_doors_opened" );
     
     foreach ( player in getplayers() )
     {
@@ -204,8 +204,8 @@ function function_d2a5d1f0()
 {
     zombie_doors = getentarray( "zombie_door", "targetname" );
     zombie_debris = getentarray( "zombie_debris", "targetname" );
-    var_49a2fc65 = function_a4cfa984( zombie_doors, zombie_debris );
-    return var_49a2fc65;
+    n_opened_doors = function_a4cfa984( zombie_doors, zombie_debris );
+    return n_opened_doors;
 }
 
 // Namespace zm_trial_open_all_doors/zm_trial_open_all_doors

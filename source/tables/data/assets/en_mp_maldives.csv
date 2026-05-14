@@ -17,7 +17,7 @@ localizeentry,#hash_d94c18b4368f542
 localizeentry,#hash_e292dcc889455b1
 localizeentry,#hash_117e103b5ba674de
 localizeentry,#hash_1198c8dd0e1b9951
-localizeentry,#hash_1258c631be445822
+localizeentry,#script/call_elevator
 localizeentry,#hash_125dd089ea2f76f2
 localizeentry,#hash_12867ef6b00d7956
 localizeentry,#hash_15548b46e262a083
@@ -99,7 +99,7 @@ localizeentry,#hash_5883b1c54941131b
 localizeentry,#hash_58971d380a27848e
 localizeentry,#hash_5a844985e4ef5677
 localizeentry,#hash_5ac64613e212ccaf
-localizeentry,#hash_5c1cc331ee779f9c
+localizeentry,#mp_maldives/call_elevator
 localizeentry,#hash_5c33966ce931b0f2
 localizeentry,#hash_5f2e01b87e1dd98c
 localizeentry,#hash_5f7f533df0a59049

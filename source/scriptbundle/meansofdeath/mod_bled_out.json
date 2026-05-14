@@ -3,7 +3,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "meansofdeath",
     "name": "mod_bled_out",
-    "displayname": "localized17#hash_31f078edfb799219",
+    "displayname": "localized17#ui/mod_bled_out",
     "icon": "image#ui_icon_meansofdeath_bleed_out",
     "iconlarge": "image#ui_icon_meansofdeath_bleed_out_xl"
 }

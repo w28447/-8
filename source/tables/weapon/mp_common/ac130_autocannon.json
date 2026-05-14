@@ -3,7 +3,7 @@
     "baseWeapon": "#ac130_autocannon",
     "displayname": "#killstreak/ac130",
     "weapon70": "#ac130",
-    "streamkey": "#hash_7c7ce2189c9d0c60",
+    "streamkey": "#ac130_autocannon_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

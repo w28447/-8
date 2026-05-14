@@ -2,9 +2,9 @@
     "name": "#bowie_knife_vomit_zm",
     "baseWeapon": "#bowie_knife_vomit",
     "displayname": "#zmweapon/bowie",
-    "xhash_60": "#hash_15ed4cc1acafbdb4",
+    "xhash_60": "#au_bowie_knife",
     "weapon70": "#bowie_knife",
-    "streamkey": "#hash_1048afd04e2d09d5",
+    "streamkey": "#bowie_knife_vomit_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",

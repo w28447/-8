@@ -296,7 +296,7 @@ CoD.MOTDUtility.MOTD_DLogInteraction = function ( f24_arg0, f24_arg1, f24_arg2, 
 								[0x72F1795FF3E15F4] = f24_local2,
 								[0x3C83260DD96C90C] = f24_arg3,
 								[0x3A1A70556201A2D] = f24_local3,
-								[0x31A5D51248A1D2C] = f24_local5,
+								["crm_screen_button_pressed"] = f24_local5,
 								[0x2FD35287F0A935B] = f24_local4
 							} )
 						end
@@ -432,7 +432,7 @@ DataSources.PCMOTDOptions = DataSourceHelpers.ListSetup( "PCMOTDOptions", functi
 				table.insert( f25_local0, CoD.MOTDUtility.packageMOTDButtonData( 0x655207CC013B5BD, f25_local3, f25_local9 ) )
 			end
 			if not f25_local10() then
-				table.insert( f25_local0, CoD.MOTDUtility.packageMOTDButtonData( 0xE07AF27BEA3B907, f25_local3, f25_local10 ) )
+				table.insert( f25_local0, CoD.MOTDUtility.packageMOTDButtonData( "menu/motd_contracts", f25_local3, f25_local10 ) )
 			end
 			if not f25_local11() then
 				table.insert( f25_local0, CoD.MOTDUtility.packageMOTDButtonData( 0xAF6650B811A502B, f25_local3, f25_local11 ) )

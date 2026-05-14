@@ -80,7 +80,7 @@ LUI.createMenu.KillcamMenu_WZ = function ( f1_arg0, f1_arg1 )
 	self.RedBarLargeThickTop = RedBarLargeThickTop
 	
 	local TextBGTiled = LUI.UIImage.new( 0.5, 0.5, -552, 552, 0.5, 0.5, -72, 72 )
-	TextBGTiled:setImage( RegisterImage( 0x22666E7FB297C80 ) )
+	TextBGTiled:setImage( RegisterImage( "uie_ui_hud_wz_deathcam_text_bg_tileable" ) )
 	TextBGTiled:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TextBGTiled:setShaderVector( 0, 0, 0, 0.32, 0.6 )
 	TextBGTiled:setupNineSliceShader( 48, 48 )
@@ -107,7 +107,7 @@ LUI.createMenu.KillcamMenu_WZ = function ( f1_arg0, f1_arg1 )
 	self.TriangleBGCorner = TriangleBGCorner
 	
 	local TextBGTiledAdd = LUI.UIImage.new( 0.5, 0.5, -552, 552, 0.5, 0.5, -72, 72 )
-	TextBGTiledAdd:setImage( RegisterImage( 0x22666E7FB297C80 ) )
+	TextBGTiledAdd:setImage( RegisterImage( "uie_ui_hud_wz_deathcam_text_bg_tileable" ) )
 	TextBGTiledAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TextBGTiledAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	TextBGTiledAdd:setupNineSliceShader( 48, 48 )

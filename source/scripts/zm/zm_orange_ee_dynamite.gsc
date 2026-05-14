@@ -33,7 +33,7 @@ function init()
 {
     clientfield::register( "scriptmover", "" + #"dynamite_explosion_fx", 24000, 1, "counter" );
     clientfield::register( "actor", "" + #"hash_6adfdd12c9656e1c", 24000, 1, "int" );
-    clientfield::register( "actor", "" + #"hash_147a734966a62e10", 24000, 1, "counter" );
+    clientfield::register( "actor", "" + #"dynamite_zombie_explosion_fx", 24000, 1, "counter" );
 }
 
 // Namespace zm_orange_ee_dynamite/zm_orange_ee_dynamite
@@ -304,7 +304,7 @@ function function_8427e524()
             if ( self.var_c39323b5 !== 1 )
             {
                 gibserverutils::annihilate( self );
-                self clientfield::increment( "" + #"hash_147a734966a62e10", 1 );
+                self clientfield::increment( "" + #"dynamite_zombie_explosion_fx", 1 );
                 level function_d8f300c3( self.origin );
                 playsoundatposition( #"hash_7b838586b7ef0d9d", self.origin );
             }
@@ -469,7 +469,7 @@ function function_2a27ccb9( e_player )
 {
     if ( level.var_518d6e34 )
     {
-        str_hint = zm_utility::function_d6046228( #"hash_619666ebfb26ad4", #"hash_cb4301a3d4b0ff8" );
+        str_hint = zm_utility::function_d6046228( #"zm_orange/dynamite_bomb_place", #"hash_cb4301a3d4b0ff8" );
         self sethintstring( str_hint );
         return true;
     }
@@ -537,7 +537,7 @@ function function_2e1427a3()
     e_bomb playrumbleonentity( "zm_orange_dynamite_bomb_explosion" );
     wait 0.1;
     e_bomb hide();
-    self notify( #"hash_126c823a82e09010" );
+    self notify( #"dynamite_bomb_detonated" );
     wait 2.5;
     e_bomb delete();
 }
@@ -561,7 +561,7 @@ function place_dynamite_bomb()
     }
     
     array::run_all( var_b3e4b8b8, &zm_hms_util::function_7a5ba111 );
-    self waittill( #"hash_126c823a82e09010" );
+    self waittill( #"dynamite_bomb_detonated" );
     level thread function_61511fcf( self.script_int );
 }
 
@@ -575,7 +575,7 @@ function function_61511fcf( n_index )
     {
         case 0:
             function_70f4c8c3( "outer_walkway_blocker" );
-            level flag::set( #"hash_52d967f4fc8b12fc" );
+            level flag::set( #"outer_walkway_open" );
             break;
         case 1:
             function_70f4c8c3( "sunken_path_blocker" );

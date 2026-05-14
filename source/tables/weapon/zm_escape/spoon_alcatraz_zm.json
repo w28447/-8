@@ -1,7 +1,7 @@
 {
     "name": "#spoon_alcatraz_zm",
     "baseWeapon": "#spoon_alcatraz",
-    "streamkey": "#hash_7dce9b80647179f1",
+    "streamkey": "#spoon_alcatraz_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

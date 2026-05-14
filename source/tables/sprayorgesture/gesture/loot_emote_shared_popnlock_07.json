@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_shared_popnlock_07",
+    "type": "#gesture",
+    "gesture": "#boast_popnlock_07",
+    "gesture2": "#boast_popnlock_07_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/wild_style",
+        "icon": "image#ui_icon_emotes_popnlock7",
+        "isdefault": 0
+    }
+}

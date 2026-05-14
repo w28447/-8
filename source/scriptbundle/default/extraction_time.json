@@ -1,5 +1,5 @@
 {
-    "hinttext": "localized17#hash_26355110028be17e",
+    "hinttext": "localized17#menu/extraction_time_desc",
     "value8": "2500",
     "value9": "4000",
     "value2": "5",
@@ -22,7 +22,7 @@
     "label": "localized17#menu/x_seconds",
     "hash_5a6dee5a": 0,
     "name": "extraction_time",
-    "displayname": "localized17#hash_73dfbfaee9ab1ce",
+    "displayname": "localized17#menu/extraction_time",
     "label1": "localized17#menu/1_second",
     "hash_54e336e4": 0,
     "optionscount": 7,

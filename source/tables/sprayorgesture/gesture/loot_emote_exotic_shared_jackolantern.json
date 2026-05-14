@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_exotic_shared_jackolantern",
+    "type": "#gesture",
+    "gesture": "#boast_jackolantern",
+    "gesture2": "#boast_jackolantern_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/jack_of_all_treats",
+        "icon": "image#hash_52981ed34c8dacf9",
+        "isdefault": 0
+    }
+}

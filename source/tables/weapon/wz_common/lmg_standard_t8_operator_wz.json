@@ -5,7 +5,7 @@
     "xhash_60": "#hash_4dc7c388953c1caa",
     "weapon70": "#lmg_standard_t8_operator",
     "weapon890": "#lmg_standard_t8_wz",
-    "streamkey": "#hash_5cf29851fcbf93a5",
+    "streamkey": "#lmg_standard_t8_operator_soundbank",
     "scrstr_8c8": [
         "tag_sights_rear_off",
         "tag_sights_front_off",
@@ -68,7 +68,7 @@
     "sound210": "#hash_464ce958923d1422",
     "sound240": "#hash_631a067190b54300",
     "sound250": "#hash_242aa17124751841",
-    "sound260": "#hash_515f54aa1f553686",
+    "sound260": "#prj_crack_supersonic",
     "sound5e0": "#fly_scope_zoom",
     "sound600": "#hash_209cb2974ae55ec0",
     "sound610": "#hash_209cb2974ae55ec0",

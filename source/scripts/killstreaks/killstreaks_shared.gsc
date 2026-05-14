@@ -2285,7 +2285,7 @@ function display_unavailable_time()
         timeleft = 1;
     }
     
-    self iprintlnbold( #"hash_55a79f95e07a10bc", " " + timeleft + " ", #"exe/seconds" );
+    self iprintlnbold( #"mp/unavailable_for_n", " " + timeleft + " ", #"exe/seconds" );
 }
 
 // Namespace killstreaks/killstreaks_shared
@@ -3645,7 +3645,7 @@ function destroyactivevehicles( attacker, team, weapon, radius )
             if ( isdefined( attacker ) && ( !isdefined( robot.owner ) || robot.owner util::isenemyplayer( attacker ) ) )
             {
                 scoreevents::processscoreevent( #"destroyed_combat_robot", attacker, robot.owner, weapon );
-                luinotifyevent( #"player_callout", 2, #"hash_3b274c8c3c961f3", attacker.entnum );
+                luinotifyevent( #"player_callout", 2, #"killstreak/destroyed_combat_robot", attacker.entnum );
             }
             
             robot kill();

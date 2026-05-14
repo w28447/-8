@@ -48,15 +48,15 @@
         "tag_wheel_spin_back_right_03"
     ],
     "sndMaterialNames": [
-        "#hash_7eecbc8b28d22b6c"
+        "#veh_tank_road"
     ],
     "skidSpeedMin": 20,
     "skidSpeedMax": 100,
     "peelSpeedMax": 600,
     "model": "#veh_t8_mil_tank_wz_blk_dest",
     "deathModel": "#veh_t8_mil_tank_wz_blk_dead",
-    "soundDef": "#hash_595b4a456c8ab113",
-    "compassIconMaterial": "#hash_328502b770ba8731",
+    "soundDef": "#veh_tank_wz",
+    "compassIconMaterial": "#compass_vehicle_tank",
     "destructibleDef": "#hash_55a4b2e2cee3f34e",
     "tacticalModeIcon": "#hash_7b7a954e31661d7c",
     "steerAxisName": "AXIS_LSTICK",
@@ -79,7 +79,7 @@
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "hash_1c59b497e5ef478f:hash_4be786c9": "localized17#hash_1c59b497e5ef478f",
+                        "menu/aim_down_the_sight:hash_4be786c9": "localized17#menu/aim_down_the_sight",
                         "hash_334a8e60": "left",
                         "prompt": "+speed_throw"
                     }
@@ -140,7 +140,7 @@
                     {
                         "GAMEPAD": "#GAMEPAD",
                         "hash_7aecb1d7": 0,
-                        "hash_5dba026ffa1d58cd:hash_4be786c9": "localized17#hash_5dba026ffa1d58cd",
+                        "menu/hud_vehicle_steer:hash_4be786c9": "localized17#menu/hud_vehicle_steer",
                         "hash_334a8e60": "left",
                         "prompt": "+lookstick"
                     },
@@ -154,7 +154,7 @@
                     {
                         "GAMEPAD": "#GAMEPAD",
                         "hash_7aecb1d7": 0,
-                        "hash_1c59b497e5ef478f:hash_4be786c9": "localized17#hash_1c59b497e5ef478f",
+                        "menu/aim_down_the_sight:hash_4be786c9": "localized17#menu/aim_down_the_sight",
                         "hash_334a8e60": "left",
                         "prompt": "+speed_throw"
                     }

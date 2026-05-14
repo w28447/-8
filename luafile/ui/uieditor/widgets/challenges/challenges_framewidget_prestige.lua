@@ -63,7 +63,7 @@ CoD.Challenges_FrameWidget_Prestige.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	self.Handling = Handling
 	
 	local Efficiency = CoD.ChallengesCategoryButton.new( f1_arg0, f1_arg1, 0, 0, 555, 1555, 0, 0, 115, 215 )
-	Efficiency.ChallengesCategoryButtonInternal.Name:setText( Engine[0xF9F1239CFD921FE]( 0x43286D0DE2B2332 ) )
+	Efficiency.ChallengesCategoryButtonInternal.Name:setText( Engine[0xF9F1239CFD921FE]( "challenge/efficiency" ) )
 	Efficiency:subscribeToGlobalModel( f1_arg1, "ChallengesMPCategoryStats", "efficiency", function ( model )
 		Efficiency:setModel( model, f1_arg1 )
 	end )

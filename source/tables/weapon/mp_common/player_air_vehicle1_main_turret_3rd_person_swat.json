@@ -3,7 +3,7 @@
     "baseWeapon": "#player_air_vehicle1_main_turret_3rd_person_swat",
     "displayname": "#killstreak/strike_team",
     "weapon70": "#swat_team",
-    "streamkey": "#hash_23119306dd560a68",
+    "streamkey": "#player_air_vehicle1_main_turret_3rd_person_swat_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -43,7 +43,7 @@
     "tunables1": "#player_air_vehicle1_main_turret_3rd_person_swat_tunables",
     "tracers": [
         "#hunter_bullet",
-        "#hash_62577fe123865537"
+        "#hunter_bullet_enemy"
     ],
     "turretAnimSettings": "#player_helicopter_pilot",
     "fireRumble": "#wasp_mg_turret_fire",

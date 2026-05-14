@@ -137,7 +137,7 @@ CoD.EmblemEditorGradientColorSwatch.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 			modelName = "LastInput"
 		} )
 	end, false )
-	toggleColorMixerButton.label:setText( Engine[0xF9F1239CFD921FE]( 0xC8E4DA2A7FB0D28 ) )
+	toggleColorMixerButton.label:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_toggle_to_color_mixer" ) )
 	toggleColorMixerButton:subscribeToGlobalModel( f1_arg1, "Controller", "back_button_image", function ( model )
 		local f9_local0 = model:get()
 		if f9_local0 ~= nil then

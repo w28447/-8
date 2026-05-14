@@ -50,7 +50,7 @@ function preload()
     namespace_4b68b2b3::preload();
     zm_orange_mq_hell::preload();
     zm_orange_mq_sendoff::preload();
-    clientfield::register( "toplayer", "" + #"hash_668f474410d5c1d0", 24000, 1, "int" );
+    clientfield::register( "toplayer", "" + #"gehen_clear_hud", 24000, 1, "int" );
 }
 
 // Namespace zm_orange_mq_mgr/zm_orange_mq_mgr
@@ -159,7 +159,7 @@ function play_outro()
         array::thread_all( a_e_players, &zm_player::spectator_respawn_player );
     }
     
-    zm_hms_util::function_3c173d37();
+    zm_hms_util::vo_stop_all();
     level zm_audio::sndvoxoverride( 1 );
     lui::play_movie( #"zm_orange_outro", "fullscreen", 1, 0, 0, #"1b4c9133da73a711322404314402765ab0d23fd362a167d6f0c65bb215113d9400000000000000ff", undefined, 0 );
 }
@@ -227,8 +227,8 @@ function function_d4147875( var_5ea5c94d )
     while ( true )
     {
         waitframe( 1 );
-        var_9461d9d2 = vectornormalize( veh_end.origin - level.sam.origin );
-        var_7d910a84 = vectordot( var_9461d9d2, anglestoforward( level.sam.angles ) );
+        _attack_barrier_sprint = vectornormalize( veh_end.origin - level.sam.origin );
+        var_7d910a84 = vectordot( _attack_barrier_sprint, anglestoforward( level.sam.angles ) );
         
         if ( var_7d910a84 < 0 )
         {
@@ -282,8 +282,8 @@ function function_74963add()
     while ( true )
     {
         waitframe( 1 );
-        var_9461d9d2 = vectornormalize( self.origin - level.sam.origin );
-        var_7d910a84 = vectordot( var_9461d9d2, anglestoforward( level.sam.angles ) );
+        _attack_barrier_sprint = vectornormalize( self.origin - level.sam.origin );
+        var_7d910a84 = vectordot( _attack_barrier_sprint, anglestoforward( level.sam.angles ) );
         
         if ( var_7d910a84 < 0 )
         {
@@ -305,7 +305,7 @@ function hud_disable()
         player showcrosshair( 0 );
         player allowcrouch( 0 );
         player thread function_b20c4898();
-        player clientfield::set_to_player( "" + #"hash_668f474410d5c1d0", 1 );
+        player clientfield::set_to_player( "" + #"gehen_clear_hud", 1 );
         player val::set( #"gehen", "disable_weapons", 1 );
     }
 }
@@ -320,7 +320,7 @@ function hud_enable()
     {
         player showcrosshair( 1 );
         player allowcrouch( 1 );
-        player clientfield::set_to_player( "" + #"hash_668f474410d5c1d0", 0 );
+        player clientfield::set_to_player( "" + #"gehen_clear_hud", 0 );
     }
 }
 

@@ -32,7 +32,7 @@ CoD.SpecialEventWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local SpecialSubtitleText = LUI.UIText.new( 0, 0, 9, 215, 0, 0, 35, 53 )
 	SpecialSubtitleText:setRGB( ColorSet.T8_PC_CHAT_PARTY.r, ColorSet.T8_PC_CHAT_PARTY.g, ColorSet.T8_PC_CHAT_PARTY.b )
-	SpecialSubtitleText:setText( LocalizeToUpperString( 0x9D2993B90351AC9 ) )
+	SpecialSubtitleText:setText( LocalizeToUpperString( "zmui/special_event" ) )
 	SpecialSubtitleText:setTTF( "ttmussels_regular" )
 	SpecialSubtitleText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	SpecialSubtitleText:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )

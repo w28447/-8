@@ -85,9 +85,9 @@ function event_handler[gametype_init] main( eventstruct )
     level.var_76859bbd = &function_1687c93;
     level.custom_door_buy_check = &function_7acf9d9b;
     level.var_2e93df96 = &function_7acf9d9b;
-    level.var_d0b54199 = &function_b8839207;
-    level.var_9093a47e = &function_b8839207;
-    level.var_ddcd74c6 = &function_b8839207;
+    level.var_d0b54199 = &set_door_hint_string;
+    level.var_9093a47e = &set_door_hint_string;
+    level.var_ddcd74c6 = &set_door_hint_string;
     level.var_256aa316 = &function_cded672a;
     level.var_c621179 = &function_7adb4617;
     level.var_236b9f7a = &function_37fe3e07;
@@ -1090,7 +1090,7 @@ function function_c48750b()
         {
             var_7b2ac985 = zm_laststand::function_618fd37e();
             self zm_laststand::function_3d685b5f( var_7b2ac985 + 1 );
-            self zm_utility::function_846eb7dd( #"hash_3ac2171741b33fc9", #"hash_3d34018a57f83b7c" );
+            self zm_utility::function_846eb7dd( #"zombie_notification_extra_life", #"hash_3d34018a57f83b7c" );
             level thread zm_audio::sndannouncerplayvox( #"extra_life", self, undefined, undefined, 1 );
             var_273349fe = function_4e9a2af4( var_273349fe );
         }
@@ -1948,11 +1948,11 @@ function function_75ebd926( e_player )
     {
         if ( function_8b1a219a() )
         {
-            self.hint_string = isdefined( self.blueprint.var_abd9b2d0 ) ? self.blueprint.var_abd9b2d0 : #"hash_40987a3e6d86b097";
+            self.hint_string = isdefined( self.blueprint.purchasepromptfree ) ? self.blueprint.purchasepromptfree : #"hash_40987a3e6d86b097";
         }
         else
         {
-            self.hint_string = isdefined( self.blueprint.var_abd9b2d0 ) ? self.blueprint.var_abd9b2d0 : #"hash_6573f011f996ab09";
+            self.hint_string = isdefined( self.blueprint.purchasepromptfree ) ? self.blueprint.purchasepromptfree : #"hash_6573f011f996ab09";
         }
         
         self.cost = undefined;
@@ -1960,7 +1960,7 @@ function function_75ebd926( e_player )
     }
     else
     {
-        self.hint_string = #"hash_53fd856df9288be7";
+        self.hint_string = #"zombie/build_piece_have_one";
         self.cost = undefined;
         return true;
     }
@@ -2109,7 +2109,7 @@ function function_7acf9d9b( e_door )
 // Params 1
 // Checksum 0xed48fbc1, Offset: 0x65a0
 // Size: 0x2cc
-function function_b8839207( e_door )
+function set_door_hint_string( e_door )
 {
     e_door endon( #"death" );
     
@@ -2400,8 +2400,8 @@ function function_d8816881()
 // Size: 0x164
 function function_31094dd( var_a8903530 = 0 )
 {
-    self notify( #"hash_7ee1d21962bb24f" );
-    self endoncallback( &function_9438de5c, #"disconnect", #"hash_7ee1d21962bb24f" );
+    self notify( #"end_respawn_timer" );
+    self endoncallback( &function_9438de5c, #"disconnect", #"end_respawn_timer" );
     level endoncallback( &function_9438de5c, #"end_game" );
     self.var_4d9b2bc3 = 0;
     self notify( #"end_healthregen" );

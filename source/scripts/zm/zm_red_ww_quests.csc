@@ -83,21 +83,21 @@ function init()
     level._effect[ #"hash_18794d000c118e97" ] = #"hash_131f7254a32ca20e";
     level._effect[ #"hash_799b84ee296b448d" ] = #"hash_690957421115776c";
     level._effect[ #"hash_25540559b2b0c1b4" ] = #"hash_3f2f5721b1727993";
-    level._effect[ #"hash_3c9246be63bb58bd" ] = #"hash_5199aa40f704fb10";
+    level._effect[ #"pap_projectile_b" ] = #"hash_5199aa40f704fb10";
     level._effect[ #"hash_23f796cb2dcb35c3" ] = #"maps/zm_red/fx8_soul_charge_blue";
-    level._effect[ #"hash_3c9241be63bb503e" ] = #"hash_56c34b9c914d89a7";
+    level._effect[ #"pap_projectile_g" ] = #"hash_56c34b9c914d89a7";
     level._effect[ #"hash_32278e3b7ad26e0" ] = #"maps/zm_red/fx8_soul_charge_green";
-    level._effect[ #"hash_3c9256be63bb73ed" ] = #"maps/zm_red/fx8_soul_red";
+    level._effect[ #"pap_projectile_r" ] = #"maps/zm_red/fx8_soul_red";
     level._effect[ #"hash_70ef864effe35b13" ] = #"maps/zm_red/fx8_soul_charge_red";
-    level._effect[ #"hash_3c924bbe63bb613c" ] = #"hash_36d2617efc112fc";
-    level._effect[ #"hash_2c33b0af2f93389e" ] = #"hash_7425021c14828449";
+    level._effect[ #"pap_projectile_y" ] = #"hash_36d2617efc112fc";
+    level._effect[ #"pap_projectile_y_end" ] = #"hash_7425021c14828449";
     level._effect[ #"gaia_sprout_fx" ] = #"hash_4ee71079fa3bd589";
     level._effect[ #"hash_28b5e7d929f598ee" ] = #"hash_7d10580c812fce51";
     level._effect[ #"hash_3f03e0537e170fc4" ] = #"hash_647338beb2cb34ec";
-    zm_sq_modules::function_d8383812( #"ww_sc_earth", 16000, #"ww_sc_g", 100, level._effect[ #"hash_3c9241be63bb503e" ], level._effect[ #"hash_32278e3b7ad26e0" ], undefined, undefined, 1 );
-    zm_sq_modules::function_d8383812( #"ww_sc_death", 16000, #"ww_sc_c", 100, level._effect[ #"hash_3c9256be63bb73ed" ], level._effect[ #"hash_70ef864effe35b13" ], undefined, undefined, 1 );
-    zm_sq_modules::function_d8383812( #"ww_sc_light", 16000, #"ww_sc_h", 100, level._effect[ #"hash_3c924bbe63bb613c" ], level._effect[ #"hash_2c33b0af2f93389e" ], undefined, undefined, 1 );
-    zm_sq_modules::function_d8383812( #"ww_sc_air", 16000, #"ww_sc_o", 100, level._effect[ #"hash_3c9246be63bb58bd" ], level._effect[ #"hash_23f796cb2dcb35c3" ], undefined, undefined, 1 );
+    zm_sq_modules::function_d8383812( #"ww_sc_earth", 16000, #"ww_sc_g", 100, level._effect[ #"pap_projectile_g" ], level._effect[ #"hash_32278e3b7ad26e0" ], undefined, undefined, 1 );
+    zm_sq_modules::function_d8383812( #"ww_sc_death", 16000, #"ww_sc_c", 100, level._effect[ #"pap_projectile_r" ], level._effect[ #"hash_70ef864effe35b13" ], undefined, undefined, 1 );
+    zm_sq_modules::function_d8383812( #"ww_sc_light", 16000, #"ww_sc_h", 100, level._effect[ #"pap_projectile_y" ], level._effect[ #"pap_projectile_y_end" ], undefined, undefined, 1 );
+    zm_sq_modules::function_d8383812( #"ww_sc_air", 16000, #"ww_sc_o", 100, level._effect[ #"pap_projectile_b" ], level._effect[ #"hash_23f796cb2dcb35c3" ], undefined, undefined, 1 );
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
@@ -474,7 +474,7 @@ function charon_portal_fx( localclientnum, oldval, newval, bnewent, binitialsnap
     if ( newval )
     {
         self.var_8eb4e749 = util::playfxontag( localclientnum, level._effect[ #"charon_portal_active" ], self, "tag_origin" );
-        playsound( localclientnum, #"hash_2545ab11d0e8966a", self.origin );
+        playsound( localclientnum, #"zmb_portal_open", self.origin );
         return;
     }
     
@@ -483,7 +483,7 @@ function charon_portal_fx( localclientnum, oldval, newval, bnewent, binitialsnap
         stopfx( localclientnum, self.var_8eb4e749 );
     }
     
-    playsound( localclientnum, #"hash_15e7e9734cce421e", self.origin );
+    playsound( localclientnum, #"zmb_portal_close", self.origin );
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
@@ -690,7 +690,7 @@ function gaia_portal_fx( localclientnum, oldval, newval, bnewent, binitialsnap, 
 {
     if ( newval )
     {
-        playsound( localclientnum, #"hash_2545ab11d0e8966a", self.origin );
+        playsound( localclientnum, #"zmb_portal_open", self.origin );
         wait 0.5;
         
         if ( isdefined( self ) )
@@ -708,7 +708,7 @@ function gaia_portal_fx( localclientnum, oldval, newval, bnewent, binitialsnap, 
     }
     
     self stoprenderoverridebundle( "rob_zm_gaia_portal_dissolve" );
-    playsound( localclientnum, #"hash_15e7e9734cce421e", self.origin );
+    playsound( localclientnum, #"zmb_portal_close", self.origin );
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests

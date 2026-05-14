@@ -1283,15 +1283,15 @@ Lobby.MatchmakingAsync.EventJoinLobby = function ( f62_arg0 )
 	local f62_local11 = false
 	if f62_local8.team_balance ~= nil and f62_local8.team_balance.can_change_teams ~= nil and f62_local8.team_balance.can_change_teams == false then
 		f62_local11 = true
-		Lobby.MatchmakingAsync.MatchmakingSearchSummaryLog[0x2B4A32E71C22452] = Engine.DefaultID64Value()
-		Lobby.MatchmakingAsync.PartyToMatchSummary[0x2B4A32E71C22452] = Engine.DefaultID64Value()
+		Lobby.MatchmakingAsync.MatchmakingSearchSummaryLog["utc_timestamp_game_start"] = Engine.DefaultID64Value()
+		Lobby.MatchmakingAsync.PartyToMatchSummary["utc_timestamp_game_start"] = Engine.DefaultID64Value()
 	end
-	Lobby.MatchmakingAsync.MatchmakingSearchSummaryLog[0x329A52FFC78A973] = f62_local11
-	Lobby.MatchmakingAsync.PartyToMatchSummary[0x329A52FFC78A973] = f62_local11
+	Lobby.MatchmakingAsync.MatchmakingSearchSummaryLog["joined_game_in_progress"] = f62_local11
+	Lobby.MatchmakingAsync.PartyToMatchSummary["joined_game_in_progress"] = f62_local11
 	search_record = Lobby.MatchmakingAsync.PartyToMatchSummary[0xED6FB1B5DCCC095][tostring( f62_local1 )]
 	if nil ~= search_record then
 		search_record[0xC352A5202CDD23F] = f62_local10
-		search_record[0xEFDBE96A9503CF] = f62_local2
+		search_record["lobby_id_joined"] = f62_local2
 		search_record[0xF7CBB339F0026] = f62_local8.listen_server.host_player_id
 		search_record[0x3088D1189C30C01] = f62_local10
 		search_record[0xA14A466674314B6] = Lobby.MatchmakingAsync.SearchOutcome.LOBBY_JOIN
@@ -1409,7 +1409,7 @@ Lobby.MatchmakingAsync.EventCreateNewLobby = function ( f66_arg0 )
 		elseif f66_local11.mainMode == Enum.LobbyMainMode[0x79D01499920B292] then
 			f66_local13 = LobbyData.GetLobbyMenuByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_PUBLIC )
 		end
-		f66_local7.menuID = f66_local13[0x8B72E07B55C3AC0]
+		f66_local7.menuID = f66_local13["id"]
 		Engine[0xE7E0FF664B7D7BF]( f66_local8.valid_map_pack_bits )
 	else
 		f66_local7.menuID = Engine[0x9882F293C327557]()
@@ -1430,12 +1430,12 @@ Lobby.MatchmakingAsync.EventCreateNewLobby = function ( f66_arg0 )
 	end
 	f66_local17 = Engine[0x786FFC9E621CAB7]()
 	Lobby.MatchmakingAsync.MatchmakingSearchSummaryLog[0xC352A5202CDD23F] = f66_local17
-	Lobby.MatchmakingAsync.MatchmakingSearchSummaryLog[0x329A52FFC78A973] = false
-	Lobby.MatchmakingAsync.PartyToMatchSummary[0x329A52FFC78A973] = false
+	Lobby.MatchmakingAsync.MatchmakingSearchSummaryLog["joined_game_in_progress"] = false
+	Lobby.MatchmakingAsync.PartyToMatchSummary["joined_game_in_progress"] = false
 	search_record = Lobby.MatchmakingAsync.PartyToMatchSummary[0xED6FB1B5DCCC095][tostring( f66_arg0.matchMakingID )]
 	if search_record ~= nil then
 		search_record[0xC352A5202CDD23F] = f66_local17
-		search_record[0xEFDBE96A9503CF] = f66_local0
+		search_record["lobby_id_joined"] = f66_local0
 		search_record[0xF7CBB339F0026] = f66_local14.listen_server.host_player_id
 		search_record[0x3088D1189C30C01] = f66_local17
 		search_record[0xA14A466674314B6] = Lobby.MatchmakingAsync.SearchOutcome.LOBBY_JOIN
@@ -1936,7 +1936,7 @@ Lobby.MatchmakingAsync.DlogPump = function ( f87_arg0 )
 				} )
 			end
 		end
-		if Lobby.MatchmakingAsync.MatchmakingSearchSummaryLog[0x2B4A32E71C22452] ~= nil then
+		if Lobby.MatchmakingAsync.MatchmakingSearchSummaryLog["utc_timestamp_game_start"] ~= nil then
 			Lobby.MatchmakingAsync.MatchmakingSearchSummaryLogSendDLogEvent( nil )
 			Lobby.MatchmakingAsync.PartyToMatchSummarySendDLogEvent()
 		end
@@ -1986,8 +1986,8 @@ Lobby.MatchmakingAsync.TelemetryOnClientAdded = function ( f88_arg0 )
 	local f88_local1 = Lobby.MatchmakingAsync.LobbyMembersTelemetry[0x2623BA80A26AD5A]
 	local f88_local2 = Engine[0x786FFC9E621CAB7]()
 	local f88_local3 = {
-		[0xC229A4571E9BFA] = f88_arg0.xuid,
-		[0x26FCF92F9EE7FC5] = f88_local2
+		["user_id"] = f88_arg0.xuid,
+		["utc_timestamp_joined_lobby"] = f88_local2
 	}
 	local f88_local4 = tostring( f88_arg0.xuid )
 	local f88_local5 = f88_local0[f88_local4]
@@ -2227,7 +2227,7 @@ Lobby.MatchmakingAsync.LobbyIntermissionSummarySendDLogEvent = function ( f97_ar
 	f97_local1[0xB001CCB4B4A6BD0] = Engine[0xB15BEE2BE53060A]()
 	f97_local1[0x8469D68580FEFF1] = Engine[0x7B3B2B73B53EB34]()
 	f97_local1[0xB583C1D78767F05] = Engine.GetFFOTDVersion()
-	f97_local1[0xE14F5726EE7289] = Lobby.MMAsync.Info.lobbyID
+	f97_local1["lobby_id"] = Lobby.MMAsync.Info.lobbyID
 	f97_local1[0x2623BA80A26AD5A] = f97_local3[0x2623BA80A26AD5A]
 	f97_local1[0x6A1B6D783AA7A25] = f97_local2
 	f97_local1[0xD6DCEB705C92439] = f97_arg0.reasonIntermissionEnded

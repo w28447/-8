@@ -50,7 +50,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_115556efd1526bf8",
+                    "name": "#ui_showwzaar",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -167,7 +167,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_115556efd1526bf8",
+                    "name": "#ui_showwzaar",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -235,7 +235,7 @@
         },
         {
             "name": "#hash_100edd73672283cf",
-            "description": "#hash_2378f1a47f1c20f9",
+            "description": "#playlist/warzone_heavy_metal_heroes",
             "unique_name": "#hash_5e55315d8c6b64d3",
             "visibleProfileVar": "#hash_72642ac141d2411d",
             "lobbyMainMode": "WARZONE",
@@ -279,7 +279,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_115556efd1526bf8",
+                    "name": "#ui_showwzaar",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 7,

@@ -103,7 +103,7 @@ localizeentry,#hash_36c62ddd36e79d6
 localizeentry,#hash_36c64ddd36e7d3c
 localizeentry,#hash_36c65ddd36e7eef
 localizeentry,#hash_36c67ddd36e8255
-localizeentry,d#hash_375ac490696f74c
+localizeentry,d#zombie/points_pickup
 localizeentry,#hash_379a16a53bc4ebf
 localizeentry,d#hash_38a2cf22c48d6c3
 localizeentry,#hash_3a12d2ab2290869
@@ -191,7 +191,7 @@ localizeentry,d#hash_714b31066bac563
 localizeentry,d#mpui/stalker2_desc
 localizeentry,d#weapon/sig_buckler_dw
 localizeentry,d#hash_74af66549232171
-localizeentry,d#hash_76f7af1c550c84c
+localizeentry,d#zm_challenges/rapid_kills
 localizeentry,#hash_7a7bf9496fc93e1
 localizeentry,#hash_7a7c09496fc9594
 localizeentry,#hash_7a7c19496fc9747
@@ -247,8 +247,8 @@ localizeentry,#hash_9777b59b7388906
 localizeentry,#hash_9777d59b7388c6c
 localizeentry,#hash_9777e59b7388e1f
 localizeentry,#hash_9778059b7389185
-localizeentry,#hash_9a1707dc944a3bc
-localizeentry,#hash_9a541090f7923d1
+localizeentry,#zm_towers/location_zeus_altar_room
+localizeentry,#zm_towers/crowd_warm_up
 localizeentry,#hash_9b98137ec7cd136
 localizeentry,d#hash_9b9be1e62972305
 localizeentry,d#hash_a074289074be076
@@ -417,7 +417,7 @@ localizeentry,#hash_efd20879ad5f0e0
 localizeentry,#hash_efd22879ad5f446
 localizeentry,#hash_efd23879ad5f5f9
 localizeentry,#hash_efd25879ad5f95f
-localizeentry,#hash_f06f1d12b9e06bb
+localizeentry,#zm_towers/location_ra_basement
 localizeentry,#hash_f1737aff2342c2d
 localizeentry,#hash_f2a1414993e8f41
 localizeentry,#hash_f2a1514993e90f4
@@ -465,7 +465,7 @@ localizeentry,#hash_10456fc4a84ce1e6
 localizeentry,#hash_104574c4a84cea65
 localizeentry,d#hash_106f7073f151125a
 localizeentry,#hash_107cd70abcec1413
-localizeentry,d#hash_10a6e66831e443fa
+localizeentry,d#zm_challenges/rapid_headshots
 localizeentry,#hash_10ab5b8d829b4340
 localizeentry,#hash_10ab608d829b4bbf
 localizeentry,#hash_10ab618d829b4d72
@@ -500,7 +500,7 @@ localizeentry,#hash_119800cf9ed5b60d
 localizeentry,d#mpui/sf
 localizeentry,d#mpui/rf
 localizeentry,d#hash_11cfa6d5f521dede
-localizeentry,d#hash_11d17195d5833bc4
+localizeentry,d#mpui/no_attachment
 localizeentry,#hash_11ef3279fd14a550
 localizeentry,#hash_11ef3379fd14a703
 localizeentry,#hash_11ef3479fd14a8b6
@@ -584,23 +584,23 @@ localizeentry,#hash_13d224ad66257523
 localizeentry,#hash_13d227ad66257a3c
 localizeentry,#hash_13d229ad66257da2
 localizeentry,#hash_13d22aad66257f55
-localizeentry,d#hash_13d235b06a9b195b
+localizeentry,d#menu/x_of_y
 localizeentry,d#mpui/barrelchoke_desc
 localizeentry,d#hash_13f64b913a8510ce
-localizeentry,#hash_140d9887b328fc9a
+localizeentry,#zm_towers/location_flooded_crypt
 localizeentry,#hash_1442971d74c38a1c
 localizeentry,#hash_148267fc3ac4d605
 localizeentry,#hash_1487cf3419ac809e
 localizeentry,#hash_1487d13419ac8404
 localizeentry,#hash_1487d23419ac85b7
 localizeentry,#hash_1487d43419ac891d
-localizeentry,d#hash_148e5fc10a26a69d
+localizeentry,d#hud/restart_prompt
 localizeentry,#hash_14a6f4dfa18ce67b
 localizeentry,#hash_14a6f5dfa18ce82e
 localizeentry,#hash_14a6f6dfa18ce9e1
 localizeentry,#hash_14a6f7dfa18ceb94
 localizeentry,#hash_14b69e677bad91ec
-localizeentry,d#hash_14b9981c6e3d2f76
+localizeentry,d#menu/camo_active_treasure
 localizeentry,#hash_14cc0759b287df4d
 localizeentry,#hash_14cdbe855a614a48
 localizeentry,#hash_1500d3381ab06391
@@ -608,8 +608,8 @@ localizeentry,#hash_150f2a4818a0cf6d
 localizeentry,#hash_155dc2914d12dfd3
 localizeentry,#hash_155dc5914d12e4ec
 localizeentry,#hash_155dc7914d12e852
-localizeentry,#hash_1567549ec3ba97d4
-localizeentry,d#hash_157811d05dd35f12
+localizeentry,#zm_towers/location_starting_area
+localizeentry,d#menu/player_detail
 localizeentry,#hash_15a33ac6b0bf9236
 localizeentry,#hash_15a33cc6b0bf959c
 localizeentry,#hash_15a33dc6b0bf974f
@@ -691,7 +691,7 @@ localizeentry,#hash_17a9640ce97e556e
 localizeentry,#hash_17a9670ce97e5a87
 localizeentry,d#hash_17c0eb37199a2d92
 localizeentry,d#mp/remote_exit
-localizeentry,d#hash_17ede46111f44fec
+localizeentry,d#mpui/no_attachment_desc
 localizeentry,#hash_180664478dfa258b
 localizeentry,#hash_180667478dfa2aa4
 localizeentry,#hash_180669478dfa2e0a
@@ -711,9 +711,9 @@ localizeentry,d#hash_18841a02137aeede
 localizeentry,#hash_1891bd3d00e2d1d8
 localizeentry,d#hash_18b7797e532aa1bb
 localizeentry,d#hash_18eaf4fb1061fde3
-localizeentry,d#hash_191d99adc60420b1
+localizeentry,d#menu/hud_vehicle_reload
 localizeentry,d#mpui/uber_desc
-localizeentry,d#hash_193c1c010f81e229
+localizeentry,d#mpui/camo_active_rapid_kills
 localizeentry,#hash_193d6dd3dbb8e0e8
 localizeentry,#hash_193d6fd3dbb8e44e
 localizeentry,#hash_193d70d3dbb8e601
@@ -772,7 +772,7 @@ localizeentry,#hash_1ac193661b0a2543
 localizeentry,#hash_1ac196661b0a2a5c
 localizeentry,#hash_1ac198661b0a2dc2
 localizeentry,#hash_1ac199661b0a2f75
-localizeentry,#hash_1ad73836208cbff4
+localizeentry,#zm_towers/location_ra_tunnel
 localizeentry,#hash_1ad9d710c2a52a28
 localizeentry,#hash_1ae9bc4aba81c53e
 localizeentry,d#hash_1b03c0fc3a12bbdb
@@ -830,7 +830,7 @@ localizeentry,#hash_1d1fb4c4bde55370
 localizeentry,#hash_1d1fb9c4bde55bef
 localizeentry,#hash_1d1fbac4bde55da2
 localizeentry,#hash_1d1fbbc4bde55f55
-localizeentry,d#hash_1d23bfbcd5f26261
+localizeentry,d#mpui/tank_inbound
 localizeentry,#hash_1d49497c506ef948
 localizeentry,#hash_1d494a7c506efafb
 localizeentry,#hash_1d494b7c506efcae
@@ -1015,7 +1015,7 @@ localizeentry,#hash_23dc1fa3e23b2cfd
 localizeentry,d#mpui/dualoptic_desc
 localizeentry,#hash_240f0267ab8415c8
 localizeentry,#hash_241698a67ac1d9d0
-localizeentry,#hash_241f621634edd22f
+localizeentry,#zm_towers/crowd_loves
 localizeentry,#hash_243782b1d893d898
 localizeentry,#hash_243787b1d893e117
 localizeentry,#hash_243788b1d893e2ca
@@ -1080,7 +1080,7 @@ localizeentry,#hash_26565b783abde5e9
 localizeentry,#hash_26565c783abde79c
 localizeentry,#hash_26565d783abde94f
 localizeentry,#hash_26565e783abdeb02
-localizeentry,d#hash_2674d175d3480e09
+localizeentry,d#mp/multiplier_x
 localizeentry,#hash_267935bf208c94e8
 localizeentry,d#mpui/pistolscope
 localizeentry,#hash_269300b1d9c7c0fb
@@ -1093,12 +1093,12 @@ localizeentry,#hash_2697567f904e1749
 localizeentry,#hash_2697597f904e1c62
 localizeentry,#hash_26a42907f3657c3e
 localizeentry,d#hash_26adc6b84f143b29
-localizeentry,#hash_26bd00647976ee13
+localizeentry,#zm_towers/location_fallen_hero
 localizeentry,#hash_26ff1e72eb6cee1e
 localizeentry,#hash_27274970847cede0
 localizeentry,#hash_27274e70847cf65f
 localizeentry,#hash_27275070847cf9c5
-localizeentry,#hash_2795247ad0a93910
+localizeentry,#zm_towers/location_zeus_entrance
 localizeentry,#hash_27b7554fcf4d22eb
 localizeentry,#hash_27b7564fcf4d249e
 localizeentry,#hash_27b7574fcf4d2651
@@ -1157,11 +1157,11 @@ localizeentry,#hash_29c0ffe387a75057
 localizeentry,#hash_29c100e387a7520a
 localizeentry,#hash_29c101e387a753bd
 localizeentry,d#hash_29c8316725752063
-localizeentry,d#hash_29d1b41ee09e09b8
+localizeentry,d#mpui/camo_active_kill_counter
 localizeentry,#hash_29d89cc5bfd4b4b4
 localizeentry,d#menu/x_kills
 localizeentry,d#hash_29e6a8d0f83f4fc6
-localizeentry,#hash_2a27c4b2d37ac547
+localizeentry,#zm_towers/location_odin_altar_room
 localizeentry,#hash_2a3585e6fbf36988
 localizeentry,#hash_2a4860e40142bac5
 localizeentry,d#hash_2a634db8501d93aa
@@ -1201,7 +1201,7 @@ localizeentry,#hash_2c30b8ba4b36ca45
 localizeentry,d#mpui/stabilizer_desc
 localizeentry,d#mpui/holdbreath
 localizeentry,#hash_2c9945b791cf30ea
-localizeentry,d#hash_2cab672fd372f942
+localizeentry,d#menu/camo_active_mystic
 localizeentry,#hash_2cacad5d4a6388d8
 localizeentry,#hash_2cacaf5d4a638c3e
 localizeentry,#hash_2cacb05d4a638df1
@@ -1259,7 +1259,7 @@ localizeentry,#hash_2de26f167032c63a
 localizeentry,#hash_2de270167032c7ed
 localizeentry,#hash_2de3be4032d26246
 localizeentry,#hash_2e06f289918c6aed
-localizeentry,#hash_2e1e7d63d11c4a1b
+localizeentry,#zm_towers/location_odin_tunnel
 localizeentry,#hash_2e3378fc204ab1c0
 localizeentry,#hash_2e3379fc204ab373
 localizeentry,#hash_2e337bfc204ab6d9
@@ -1300,7 +1300,7 @@ localizeentry,#hash_30733dec2e9e228a
 localizeentry,d#mpui/ir_desc
 localizeentry,#hash_3083207742f405f6
 localizeentry,d#mpui/spectating
-localizeentry,#hash_30a8de8c86fd7103
+localizeentry,#zm_towers/power_doors
 localizeentry,#hash_30d5fe23f37407f8
 localizeentry,#hash_30d60023f3740b5e
 localizeentry,#hash_30d60123f3740d11
@@ -1320,7 +1320,7 @@ localizeentry,#hash_3184ff9c6ad5007a
 localizeentry,#hash_3185009c6ad5022d
 localizeentry,#hash_319f2e7fa26ef152
 localizeentry,#zmweapon/shield_sword_turret_upgraded
-localizeentry,#hash_31d525e6dba9a3d3
+localizeentry,#zombie/equip_riotshield_pickup_hint_string
 localizeentry,#hash_31da84503a3c17a9
 localizeentry,#hash_31da85503a3c195c
 localizeentry,#hash_31da86503a3c1b0f
@@ -1336,7 +1336,7 @@ localizeentry,#hash_3244c5bfdd12da39
 localizeentry,#hash_3244c6bfdd12dbec
 localizeentry,#hash_3244c7bfdd12dd9f
 localizeentry,#hash_3244c8bfdd12df52
-localizeentry,d#hash_32591d26690f296c
+localizeentry,d#mpui/n_xp
 localizeentry,d#hash_3279150dc6bd1b3b
 localizeentry,d#mpui/camo_snowjob
 localizeentry,#hash_32940f0cbc36818a
@@ -1364,7 +1364,7 @@ localizeentry,#hash_3302bbe2bbc2ec28
 localizeentry,#hash_3302bde2bbc2ef8e
 localizeentry,#hash_3302bee2bbc2f141
 localizeentry,#hash_3302c0e2bbc2f4a7
-localizeentry,d#hash_33105d49e7fd102e
+localizeentry,d#menu/camo_active_brains
 localizeentry,#hash_331cacd7a4279bd0
 localizeentry,#hash_331cadd7a4279d83
 localizeentry,#hash_331caed7a4279f36
@@ -1382,7 +1382,7 @@ localizeentry,d#hash_33c5a3d6ed967788
 localizeentry,#hash_33e05a25f080d845
 localizeentry,d#hash_33f013eacb53964c
 localizeentry,d#weapon/incendiary_grenade
-localizeentry,#hash_340eafe8d0baeac2
+localizeentry,#zm_towers/location_danu_ra_bridge
 localizeentry,#hash_341b3d4a268bd8d0
 localizeentry,#hash_341b3e4a268bda83
 localizeentry,#hash_341b3f4a268bdc36
@@ -1456,7 +1456,7 @@ localizeentry,#hash_3678d44d30814a50
 localizeentry,#hash_3678d64d30814db6
 localizeentry,#hash_3678d74d30814f69
 localizeentry,#hash_3678d94d308152cf
-localizeentry,d#hash_367dd4c3c93edc80
+localizeentry,d#menu/camo_active_115
 localizeentry,#hash_367edac27d5cb386
 localizeentry,#hash_36a0dd0632abc670
 localizeentry,#hash_36a0e20632abceef
@@ -1512,7 +1512,7 @@ localizeentry,#hash_383f0849e819dee9
 localizeentry,#hash_383f0949e819e09c
 localizeentry,#hash_383f0a49e819e24f
 localizeentry,#hash_383f0b49e819e402
-localizeentry,#hash_384dc630decdd5e5
+localizeentry,#zm_towers/location_danu_tunnel
 localizeentry,d#hash_38698d6863661eb6
 localizeentry,d#hash_38702abdee3837d0
 localizeentry,#hash_38761f6e30e9b0db
@@ -1539,7 +1539,7 @@ localizeentry,#hash_395f075d8c36e9cb
 localizeentry,#hash_395f095d8c36ed31
 localizeentry,#hash_395f0c5d8c36f24a
 localizeentry,d#mpui/extbarrel2
-localizeentry,#hash_397ee221838b64ee
+localizeentry,#zm_towers/location_danu_basement
 localizeentry,#hash_398f783113402b40
 localizeentry,#hash_398f793113402cf3
 localizeentry,#hash_398f7f3113403725
@@ -1548,7 +1548,7 @@ localizeentry,d#mpui/grip_desc
 localizeentry,#hash_39b1fdbaa4b9c5cb
 localizeentry,#hash_39b200baa4b9cae4
 localizeentry,#hash_39b203baa4b9cffd
-localizeentry,d#hash_39bac218bf0160b1
+localizeentry,d#mpui/reticle_color_1
 localizeentry,#hash_3a1cb4599b4d7363
 localizeentry,#hash_3a1cb7599b4d787c
 localizeentry,#hash_3a1cb9599b4d7be2
@@ -1590,7 +1590,7 @@ localizeentry,#hash_3b9f072a1a895376
 localizeentry,#hash_3b9f082a1a895529
 localizeentry,d#mpui/camo_darkmatter
 localizeentry,d#hash_3bb4fa8f6dc7bb6e
-localizeentry,#hash_3bf0a3cc4bf210d3
+localizeentry,#zm_towers/location_zeus_basement
 localizeentry,#hash_3bfd7de1352d37c6
 localizeentry,#hash_3bfd7ee1352d3979
 localizeentry,#hash_3c31983964ddbbae
@@ -1601,7 +1601,7 @@ localizeentry,d#options/hide
 localizeentry,d#hash_3c781f3d248e0804
 localizeentry,d#hash_3c929cabec952c14
 localizeentry,d#hash_3ca968dee9e5dc02
-localizeentry,d#hash_3cbdafac7f4a7bd2
+localizeentry,d#menu/camo_active_spinal
 localizeentry,d#hash_3ceae24f2bf7166c
 localizeentry,#hash_3d0af09c10d73750
 localizeentry,#hash_3d0af59c10d73fcf
@@ -1655,7 +1655,7 @@ localizeentry,#hash_3e57a24e40becca3
 localizeentry,#hash_3e57a34e40bece56
 localizeentry,#hash_3e57a84e40bed6d5
 localizeentry,d#mpui/camo_chameleon
-localizeentry,#hash_3eb632726bcfd3b8
+localizeentry,#zm_towers/location_odin_zeus_bridge
 localizeentry,#hash_3ebd44a0dd35c3b2
 localizeentry,#hash_3ebef05d918ff183
 localizeentry,#hash_3ebef35d918ff69c
@@ -1762,7 +1762,7 @@ localizeentry,#hash_427463d4d162c2a8
 localizeentry,#hash_427464d4d162c45b
 localizeentry,#hash_427465d4d162c60e
 localizeentry,#hash_42746ad4d162ce8d
-localizeentry,#hash_42941b7294416898
+localizeentry,#zm_towers/location_ra_entrance
 localizeentry,#hash_42a2c7b96676fbfb
 localizeentry,#hash_42a2cab966770114
 localizeentry,#hash_42a2ccb96677047a
@@ -1803,7 +1803,7 @@ localizeentry,d#hash_43b0cfc850dbcc04
 localizeentry,d#mpui/camo_bliss
 localizeentry,#hash_443583baf6162034
 localizeentry,#zombie/craft_shield_sword
-localizeentry,#hash_4478ef302c1af9be
+localizeentry,#zm_towers/crowd_no_love
 localizeentry,#hash_447c26912dd35173
 localizeentry,#hash_447c29912dd3568c
 localizeentry,#hash_447c2b912dd359f2
@@ -1952,7 +1952,7 @@ localizeentry,#hash_4a5741dbcc05082b
 localizeentry,#hash_4a5742dbcc0509de
 localizeentry,#hash_4a5747dbcc05125d
 localizeentry,d#hash_4a584bc8c443f246
-localizeentry,#hash_4a67009994e6a476
+localizeentry,#zm_towers/location_challenge_podium
 localizeentry,d#hash_4a6f079813e273c3
 localizeentry,#hash_4ab7aa134fa8d6b0
 localizeentry,#hash_4ab7ab134fa8d863
@@ -2166,7 +2166,7 @@ localizeentry,#hash_51697f23caa114f9
 localizeentry,#hash_519c2d415ef217fd
 localizeentry,d#hash_51aafb1548ffec49
 localizeentry,#hash_51ae58346462e5ea
-localizeentry,d#hash_51af1b2f0736916b
+localizeentry,d#mpui/first_person_view
 localizeentry,#hash_51b091e5cfff467c
 localizeentry,#hash_51cf2182349cb6eb
 localizeentry,#hash_51e137c710825578
@@ -2182,9 +2182,9 @@ localizeentry,#hash_52274853d1946ce6
 localizeentry,#hash_52274a53d194704c
 localizeentry,#hash_52274b53d19471ff
 localizeentry,#hash_52274d53d1947565
-localizeentry,d#hash_522bb851d29dec00
-localizeentry,d#hash_522bba51d29def66
-localizeentry,d#hash_522bbb51d29df119
+localizeentry,d#mpui/perk_notify_2
+localizeentry,d#mpui/perk_notify_0
+localizeentry,d#mpui/perk_notify_1
 localizeentry,#hash_523abec9bb875bb8
 localizeentry,#hash_523ac3c9bb876437
 localizeentry,#hash_523ac4c9bb8765ea
@@ -2277,13 +2277,13 @@ localizeentry,#hash_54736977e79e14d3
 localizeentry,#hash_54736a77e79e1686
 localizeentry,#hash_54736b77e79e1839
 localizeentry,#hash_54736c77e79e19ec
-localizeentry,d#hash_547439dffbb26594
+localizeentry,d#menu/play_music_sample
 localizeentry,#hash_548fc8a0c0bd24d6
 localizeentry,#hash_548fc9a0c0bd2689
 localizeentry,#hash_548fcaa0c0bd283c
 localizeentry,#hash_5490320df63beb69
 localizeentry,d#mpui/extrapellets
-localizeentry,#hash_54ab01103f8534bd
+localizeentry,#zm_towers/location_pap_room
 localizeentry,#hash_54dacdef808d9df1
 localizeentry,#hash_54daceef808d9fa4
 localizeentry,#hash_54dacfef808da157
@@ -2292,7 +2292,7 @@ localizeentry,d#hash_54e4fb1367aa3001
 localizeentry,#hash_5501784aa04e0df2
 localizeentry,#hash_5507292b5bd03c4d
 localizeentry,#hash_5508264363b9e3a3
-localizeentry,#hash_553f97cb9500b3bf
+localizeentry,#zm_towers/location_odin_zeus_tunnel
 localizeentry,d#zmui/extrapellets_desc
 localizeentry,d#hash_556fbdaebf02d158
 localizeentry,#hash_55776637da423a38
@@ -2334,7 +2334,7 @@ localizeentry,#hash_57d6aa76040a2b46
 localizeentry,#hash_57d70547fc613d79
 localizeentry,#hash_57d70747fc6140df
 localizeentry,#hash_57d70847fc614292
-localizeentry,#hash_57d88881fa24cfef
+localizeentry,#zm_towers/crowd_hates
 localizeentry,#hash_57e48c3d6477b33b
 localizeentry,#hash_57e4913d6477bbba
 localizeentry,#hash_57e4923d6477bd6d
@@ -2457,7 +2457,7 @@ localizeentry,#hash_5bfe48a8e6a1508b
 localizeentry,#hash_5bfe49a8e6a1523e
 localizeentry,#hash_5bfe4ea8e6a15abd
 localizeentry,d#hash_5c0d9b140a188ce0
-localizeentry,#hash_5c1dcbfe0b5001dd
+localizeentry,#zm_towers/location_danu_altar_room
 localizeentry,d#hash_5c28147c226eb600
 localizeentry,#hash_5c285e8ebae28108
 localizeentry,#hash_5c285f8ebae282bb
@@ -2488,7 +2488,7 @@ localizeentry,#hash_5cb94bfd87646a88
 localizeentry,#hash_5cb950fd87647307
 localizeentry,#hash_5cb951fd876474ba
 localizeentry,#hash_5cb952fd8764766d
-localizeentry,d#hash_5cc43b420cfb8a60
+localizeentry,d#mpui/third_person_view
 localizeentry,d#mpui/mixclip
 localizeentry,d#mpui/mms_desc
 localizeentry,d#hash_5d2085a9dd85a33f
@@ -2597,7 +2597,7 @@ localizeentry,#hash_60c761ddd99bd922
 localizeentry,#hash_60d0a2116fe02835
 localizeentry,#hash_60d79ff743e500ee
 localizeentry,#hash_61488b717027e255
-localizeentry,#hash_6182c3f17fbe7e38
+localizeentry,#zm_towers/location_odin_basement
 localizeentry,d#hash_61991b6ea093b704
 localizeentry,#hash_619fd3e0f509c300
 localizeentry,#hash_619fd5e0f509c666
@@ -2618,7 +2618,7 @@ localizeentry,#hash_62046ba5229eeff3
 localizeentry,#hash_62046da5229ef359
 localizeentry,#hash_620470a5229ef872
 localizeentry,#hash_62152ad65458eeae
-localizeentry,#hash_622a5e1614b58b7c
+localizeentry,#zm_towers/location_zeus_tunnel
 localizeentry,d#mpui/steadyaim
 localizeentry,d#hash_623ecaf180739c95
 localizeentry,d#hash_6248e0253e0b1c86
@@ -2634,7 +2634,7 @@ localizeentry,#hash_62e83760519e6223
 localizeentry,#hash_62e83860519e63d6
 localizeentry,#hash_62e83960519e6589
 localizeentry,#hash_62e83a60519e673c
-localizeentry,#hash_62e9254687180522
+localizeentry,#zm_towers/crowd_likes
 localizeentry,#hash_630a77ddd54317b8
 localizeentry,#hash_630a78ddd543196b
 localizeentry,#hash_630a79ddd5431b1e
@@ -2651,7 +2651,7 @@ localizeentry,#hash_6353561804598d01
 localizeentry,#hash_6353571804598eb4
 localizeentry,#hash_6353581804599067
 localizeentry,#hash_635359180459921a
-localizeentry,d#hash_6370b5a97249c317
+localizeentry,d#feature/gun_tag
 localizeentry,#hash_6377553225e4d048
 localizeentry,#hash_6377563225e4d1fb
 localizeentry,#hash_6377583225e4d561
@@ -2778,7 +2778,7 @@ localizeentry,#hash_67bb8684c6e4302a
 localizeentry,#hash_67d517fb5c846f30
 localizeentry,#hash_67d51afb5c847449
 localizeentry,#hash_67d51cfb5c8477af
-localizeentry,#hash_6803828af6a2f994
+localizeentry,#zm_towers/location_ra_altar_room
 localizeentry,#hash_68077b0d36fb9371
 localizeentry,#hash_6809e9ade1128fe1
 localizeentry,#hash_6809eaade1129194
@@ -2820,7 +2820,7 @@ localizeentry,#hash_68ca4003c63df740
 localizeentry,#hash_68ca4103c63df8f3
 localizeentry,#hash_68ca4203c63dfaa6
 localizeentry,#hash_68ca4703c63e0325
-localizeentry,#hash_68fd9aced4fcdecc
+localizeentry,#zm_towers/location_cursed_room
 localizeentry,d#mpui/extbarrel_desc
 localizeentry,#hash_690311d54f6f4a8b
 localizeentry,#hash_690312d54f6f4c3e
@@ -2852,7 +2852,7 @@ localizeentry,#hash_6a378061925f48af
 localizeentry,#hash_6a378161925f4a62
 localizeentry,d#mp/back
 localizeentry,d#hash_6a4930978aef6c45
-localizeentry,#hash_6a6563f3b19ad5bd
+localizeentry,#zm_towers/challenge_complete
 localizeentry,#hash_6a73ef7328c30e98
 localizeentry,#hash_6a73f07328c3104b
 localizeentry,#hash_6a73f17328c311fe
@@ -2965,7 +2965,7 @@ localizeentry,#hash_6e214d34708e5079
 localizeentry,#hash_6e214e34708e522c
 localizeentry,#hash_6e214f34708e53df
 localizeentry,#hash_6e215034708e5592
-localizeentry,d#hash_6e2fd7423cbe42b0
+localizeentry,d#mpui/camo_active_objective_kills
 localizeentry,#hash_6e4748aa5ebcb4dd
 localizeentry,#hash_6e6527512b8db9e0
 localizeentry,#hash_6e652c512b8dc25f
@@ -2978,7 +2978,7 @@ localizeentry,#hash_6e78460d3beba88d
 localizeentry,d#hash_6e86b49d6d5196af
 localizeentry,d#hash_6e8e6d2639901410
 localizeentry,#hash_6ed7b369aa2b19ff
-localizeentry,#hash_6edbbd092bc3117f
+localizeentry,#zm_towers/location_odin_entrance
 localizeentry,#hash_6eed738473df5636
 localizeentry,#hash_6eed748473df57e9
 localizeentry,#hash_6eed758473df599c
@@ -3160,7 +3160,7 @@ localizeentry,d#hash_7534921ea3f6a183
 localizeentry,d#hash_7562db33708b09f0
 localizeentry,d#hash_7564cce16f4274f6
 localizeentry,#hash_756891f8e9b19c50
-localizeentry,#hash_75825b791d3a7f4d
+localizeentry,#zm_towers/location_danu_ra_tunnel
 localizeentry,d#mpui/damage
 localizeentry,d#hash_758d93baadbc199d
 localizeentry,#hash_75add73ac9df6bbc
@@ -3215,7 +3215,7 @@ localizeentry,#hash_77d33303258f7841
 localizeentry,#hash_77d33403258f79f4
 localizeentry,d#hash_77dce7635423ba68
 localizeentry,d#hash_77e7311dc74dccf5
-localizeentry,d#hash_77f9d83f9e77c0d3
+localizeentry,d#menu/camo_active_celestial
 localizeentry,#hash_780306c1ff28cf69
 localizeentry,#hash_780307c1ff28d11c
 localizeentry,#hash_780308c1ff28d2cf
@@ -3264,9 +3264,9 @@ localizeentry,#hash_7a529bbe83eab75f
 localizeentry,#hash_7a529cbe83eab912
 localizeentry,d#mpui/dw_desc
 localizeentry,d#hash_7a780871028530f5
-localizeentry,#hash_7a784e915fb4da82
+localizeentry,#zm_towers/location_body_pit
 localizeentry,d#hash_7a899f8fa9163c6e
-localizeentry,#hash_7a9264bacc159479
+localizeentry,#zm_towers/location_danu_entrance
 localizeentry,#hash_7aa36cf205608188
 localizeentry,#hash_7aa36df20560833b
 localizeentry,#hash_7aa36ef2056084ee
@@ -3293,7 +3293,7 @@ localizeentry,#hash_7b70bae05f6e3379
 localizeentry,#hash_7b70bce05f6e36df
 localizeentry,#hash_7b872cd695b7476f
 localizeentry,d#hash_7bb31f180eab141c
-localizeentry,d#hash_7bbe615a9a441e5f
+localizeentry,d#feature/gun_emblem
 localizeentry,#hash_7bd4a45891699633
 localizeentry,#hash_7bd4a75891699b4c
 localizeentry,#hash_7bd4a95891699eb2
@@ -3366,7 +3366,7 @@ localizeentry,d#hash_7df18b5276f84ca6
 localizeentry,#hash_7e0661a02f9e0d1b
 localizeentry,#hash_7e0663a02f9e1081
 localizeentry,#hash_7e0664a02f9e1234
-localizeentry,#hash_7e0881f88c624f82
+localizeentry,#zm_towers/crowd_loathes
 localizeentry,#hash_7e1e5ae29e70956b
 localizeentry,#hash_7e1e5be29e70971e
 localizeentry,#hash_7e1e5ce29e7098d1
@@ -3417,9 +3417,9 @@ localizeentry,#hash_7ff36ea105e99167
 localizeentry,#hash_7ff36fa105e9931a
 localizeentry,#hash_7ff370a105e994cd
 keyvaluepairs,#en_zm_towers
-ttf,d#hash_1459f17f5b5ffefe
-ttf,d#hash_410b483cf72f16f2
-ttf,d#hash_413a9dcb2b171ceb
-ttf,d#hash_613b31a5842e8426
+ttf,d#dinnext_regular
+ttf,d#ttmussels_regular
+ttf,d#skorzhen
+ttf,d#0arame_mono_stencil
 ttf,d#default
-ttf,d#hash_70b575c9cf218b88
+ttf,d#ttmussels_demibold

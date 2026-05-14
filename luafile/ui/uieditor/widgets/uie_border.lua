@@ -27,7 +27,7 @@ CoD.uie_Border.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	rightPC = LUI.UIImage.new( 0, 0, 0, 686, 0, 1, 0, 0 )
 	rightPC:setRGB( ColorSet.PlayerYellow.r, ColorSet.PlayerYellow.g, ColorSet.PlayerYellow.b )
 	rightPC:setAlpha( 0 )
-	rightPC:setImage( RegisterImage( 0x6B7CDF731D0F3F6 ) )
+	rightPC:setImage( RegisterImage( "uie_scoreboard_list_indicator_bg" ) )
 	self:addElement( rightPC )
 	self.rightPC = rightPC
 	
@@ -36,7 +36,7 @@ CoD.uie_Border.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	right2PC = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	right2PC:setRGB( ColorSet.PlayerYellow.r, ColorSet.PlayerYellow.g, ColorSet.PlayerYellow.b )
 	right2PC:setAlpha( 0 )
-	right2PC:setImage( RegisterImage( 0x6B7CDF731D0F3F6 ) )
+	right2PC:setImage( RegisterImage( "uie_scoreboard_list_indicator_bg" ) )
 	right2PC:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	right2PC:setShaderVector( 0, 5, 0, 0, 0 )
 	self:addElement( right2PC )

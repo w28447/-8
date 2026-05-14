@@ -282,7 +282,7 @@ function function_72ba0df6( einflictor, attacker, idamage, smeansofdeath, weapon
         if ( isdefined( level.var_e190d640 ) && level.var_e190d640 )
         {
             e_player = ct_utils::get_player();
-            e_player thread ct_utils::function_80bf685b( 20 - level.var_62dd3f4a );
+            e_player thread ct_utils::ingame_objective_set_points( 20 - level.var_62dd3f4a );
         }
     }
     
@@ -1012,7 +1012,7 @@ function function_c8e681c8()
     level.var_f3fb470f = undefined;
     level thread function_5ceffaa6( "stop_nag", 0 );
     level thread ct_vo::function_14b08e49( array( #"hash_21ad27ad404090b2" ), "stop_nag" );
-    level waittill( #"hash_48b4c5f856407d62" );
+    level waittill( #"spawn_select_closed" );
     level notify( #"stop_nag" );
     e_player clientfield::set_player_uimodel( "hudItems.spawnSelectHidePrompt", 0 );
     
@@ -1073,7 +1073,7 @@ function function_c8e681c8()
     level.var_f3fb470f = undefined;
     level thread function_5ceffaa6( "stop_nag", 1 );
     level thread ct_vo::function_14b08e49( array( #"hash_612ae33753ce1a52" ), "stop_nag" );
-    level waittill( #"hash_48b4c5f856407d62" );
+    level waittill( #"spawn_select_closed" );
     level notify( #"stop_nag" );
     level notify( #"start_spawn_beacon_exit_collision" );
     level.var_4a4cff9b = undefined;
@@ -1206,7 +1206,7 @@ function function_5ceffaa6( str_level_endon, var_651072b9 )
 // Size: 0x19c
 function function_9d45d90a( var_95a93511, var_6238499c, var_b20fd485 )
 {
-    level endon( #"combattraining_logic_finished", #"hash_48b4c5f856407d62" );
+    level endon( #"combattraining_logic_finished", #"spawn_select_closed" );
     e_player = ct_utils::get_player();
     
     if ( isdefined( var_95a93511 ) )
@@ -1443,7 +1443,7 @@ function function_d4bbc142()
     }
     
     e_player = ct_utils::get_player();
-    e_player ct_utils::function_d09d6958( #"hash_9e43b70f5fc84ff" );
+    e_player ct_utils::ingame_objective_set_text( #"hash_9e43b70f5fc84ff" );
     ct_utils::function_654280be();
     e_player = ct_utils::get_player();
     e_player ct_bots::function_26d45f32( 1 );
@@ -1765,7 +1765,7 @@ function function_c43189cd()
             ct_utils::function_e44c5b8e( #"ac130", 10 );
             e_player = ct_utils::get_player();
             e_player thread ct_utils::function_61c3d59c( undefined, undefined, "dynobj_KillToEarnSeraphChopper" );
-            e_player ct_utils::function_80bf685b( 0 );
+            e_player ct_utils::ingame_objective_set_points( 0 );
             e_player thread ct_utils::function_68848e5( "ac130" );
             level.var_a86320e8 = undefined;
             level.var_a86320e8 = gettime() / 1000;
@@ -1782,7 +1782,7 @@ function function_c43189cd()
                     break;
                 }
                 
-                e_player thread ct_utils::function_80bf685b( level.var_de284b17 );
+                e_player thread ct_utils::ingame_objective_set_points( level.var_de284b17 );
                 
                 if ( !var_93781b01 && level.var_de284b17 >= 800 )
                 {
@@ -2043,7 +2043,7 @@ function gunship_event()
     setbombtimer( "A", n_bomb_timer );
     waitframe( 1 );
     e_player thread ct_utils::function_61c3d59c( undefined, undefined, "dynobj_KillSoldiers" );
-    e_player ct_utils::function_80bf685b( 20 );
+    e_player ct_utils::ingame_objective_set_points( 20 );
     level thread function_79293a0b();
     level thread function_e47d773c();
     level.var_9d057e74 = struct::get_array( "s_seraph_soldiers_courtyard", "targetname" );
@@ -2074,7 +2074,7 @@ function gunship_event()
     }
     
     level.var_74bfba73 = undefined;
-    level notify( #"hash_4049796fbd169552" );
+    level notify( #"gunship_event_complete" );
     e_player = getplayers()[ 0 ];
     e_player show();
     ac130::function_8721028e( level.ac130.owner, 1 );
@@ -2100,7 +2100,7 @@ function gunship_event()
 // Size: 0x210
 function function_e47d773c()
 {
-    level endon( #"combattraining_logic_finished", #"hash_4049796fbd169552" );
+    level endon( #"combattraining_logic_finished", #"gunship_event_complete" );
     level thread ct_vo::function_5df1a850( level.ac130, array( #"hash_30bea962898791f8" ) );
     level thread function_b8fea992( "s_chopper_enemy_wave1", randomfloatrange( 0.7, 1.7 ), "stop_flood_spawners" );
     wait 15;
@@ -2165,7 +2165,7 @@ function function_b8fea992( str_spawn_locs, var_264ee2f5, str_endon_notify )
 // Size: 0xec
 function function_79293a0b()
 {
-    level endon( #"combattraining_logic_finished", #"hash_4049796fbd169552" );
+    level endon( #"combattraining_logic_finished", #"gunship_event_complete" );
     wait 35;
     n_start_time = gettime() / 1000;
     
@@ -2644,7 +2644,7 @@ function function_7e060369()
     
     while ( true )
     {
-        waitresult = level waittill( #"hash_31be1f8b27209ad0" );
+        waitresult = level waittill( #"spawn_beacon_spawned" );
         e_beacon = waitresult.beacon.spawnbeacon;
         
         if ( isdefined( e_beacon ) && !isbot( waitresult.owner ) )
@@ -2867,9 +2867,9 @@ function function_fa3dd4f0()
     while ( true )
     {
         level.var_3711d636 = undefined;
-        level waittill( #"hash_4c1be11f1e312a36" );
+        level waittill( #"spawn_select_open" );
         level.var_3711d636 = 1;
-        level waittill( #"hash_48b4c5f856407d62" );
+        level waittill( #"spawn_select_closed" );
         level.var_3711d636 = undefined;
         waitframe( 1 );
     }

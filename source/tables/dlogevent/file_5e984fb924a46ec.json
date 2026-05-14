@@ -1,6 +1,6 @@
 {
     "name": "#hash_5e984fb924a46ec",
-    "unk28": "#hash_302fdc79cc7f4548",
+    "unk28": "#pmem_size",
     "ddlDef": "#hash_73cecaa08d2c69cc",
     "unk18": 0,
     "unk19": 1,
@@ -47,7 +47,7 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT32"
                     },

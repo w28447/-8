@@ -3,7 +3,7 @@
     "baseWeapon": "#killstreak_ai_tank",
     "displayname": "#killstreak/ai_tank_drop",
     "weapon70": "#killstreak_ai_tank_drop",
-    "streamkey": "#hash_2b86cdd80b130c3d",
+    "streamkey": "#killstreak_ai_tank_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

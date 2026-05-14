@@ -36,9 +36,9 @@
         "tag_fx_brake_light_left"
     ],
     "sndMaterialNames": [
-        "#hash_7970fb87a5d80091",
-        "#hash_749cd68093518a44",
-        "#hash_2d31e9996c9cef7d"
+        "#veh_atv_road",
+        "#veh_atv_slide",
+        "#veh_atv_peel"
     ],
     "skidSpeedMin": 250,
     "skidSpeedMax": 600,
@@ -142,14 +142,14 @@
                     {
                         "GAMEPAD": "#GAMEPAD",
                         "hash_7aecb1d7": 0,
-                        "hash_5dba026ffa1d58cd:hash_4be786c9": "localized17#hash_5dba026ffa1d58cd",
+                        "menu/hud_vehicle_steer:hash_4be786c9": "localized17#menu/hud_vehicle_steer",
                         "hash_334a8e60": "left",
                         "prompt": "+lookstick"
                     },
                     {
                         "GAMEPAD": "#GAMEPAD",
                         "hash_7aecb1d7": 0,
-                        "hash_2b136dbf97f5d00d:hash_4be786c9": "localized17#hash_2b136dbf97f5d00d",
+                        "menu/free_look:hash_4be786c9": "localized17#menu/free_look",
                         "hash_334a8e60": "left",
                         "prompt": "+speed_throw"
                     }

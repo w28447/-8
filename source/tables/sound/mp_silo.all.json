@@ -107,13 +107,13 @@
         {
             "value": 269,
             "next": 65535,
-            "name": "#hash_c4a4d3584e7ac22",
+            "name": "#amb_cable_creak",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_c4a4d3584e7ac22",
+                    "name": "#amb_cable_creak",
                     "assetId": "#amb/material_movement/creaks/cable/cable_creak_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -152,7 +152,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_c4a4d3584e7ac22",
+                    "name": "#amb_cable_creak",
                     "assetId": "#amb/material_movement/creaks/cable/cable_creak_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -191,7 +191,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_c4a4d3584e7ac22",
+                    "name": "#amb_cable_creak",
                     "assetId": "#amb/material_movement/creaks/cable/cable_creak_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -230,7 +230,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_c4a4d3584e7ac22",
+                    "name": "#amb_cable_creak",
                     "assetId": "#amb/material_movement/creaks/cable/cable_creak_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -269,7 +269,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_c4a4d3584e7ac22",
+                    "name": "#amb_cable_creak",
                     "assetId": "#amb/material_movement/creaks/cable/cable_creak_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -308,7 +308,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_c4a4d3584e7ac22",
+                    "name": "#amb_cable_creak",
                     "assetId": "#amb/material_movement/creaks/cable/cable_creak_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -347,7 +347,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_c4a4d3584e7ac22",
+                    "name": "#amb_cable_creak",
                     "assetId": "#amb/material_movement/creaks/cable/cable_creak_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -1035,13 +1035,13 @@
         {
             "value": 289,
             "next": 65535,
-            "name": "#hash_3eeefdf762713cfa",
+            "name": "#amb_fire_alarm",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3eeefdf762713cfa",
+                    "name": "#amb_fire_alarm",
                     "assetId": "#amb/alarms/building/amb_building_alarm_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -1084,13 +1084,13 @@
         {
             "value": 62,
             "next": 65535,
-            "name": "#hash_7b0cc91c8136ee38",
+            "name": "#amb_flag_flap",
             "sequence": 0,
             "cullDistance": 500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7b0cc91c8136ee38",
+                    "name": "#amb_flag_flap",
                     "assetId": "#amb/material_movement/rustling/plastic/flag/plastic_flap_lp.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -1387,13 +1387,13 @@
         {
             "value": 126,
             "next": 20,
-            "name": "#hash_4218b15834df0b26",
+            "name": "#amb_gust_cold",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4218b15834df0b26",
+                    "name": "#amb_gust_cold",
                     "assetId": "#amb/environment/wind/gusts/cold/long/wind_gust_long_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -1432,7 +1432,7 @@
                     "unk178": "#hash_200001010"
                 },
                 {
-                    "name": "#hash_4218b15834df0b26",
+                    "name": "#amb_gust_cold",
                     "assetId": "#amb/environment/wind/gusts/cold/long/wind_gust_long_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -1471,7 +1471,7 @@
                     "unk178": "#hash_200001010"
                 },
                 {
-                    "name": "#hash_4218b15834df0b26",
+                    "name": "#amb_gust_cold",
                     "assetId": "#amb/environment/wind/gusts/cold/long/wind_gust_long_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -1510,7 +1510,7 @@
                     "unk178": "#hash_200001010"
                 },
                 {
-                    "name": "#hash_4218b15834df0b26",
+                    "name": "#amb_gust_cold",
                     "assetId": "#amb/environment/wind/gusts/cold/long/wind_gust_long_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -1549,7 +1549,7 @@
                     "unk178": "#hash_200001010"
                 },
                 {
-                    "name": "#hash_4218b15834df0b26",
+                    "name": "#amb_gust_cold",
                     "assetId": "#amb/environment/wind/gusts/cold/long/wind_gust_long_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -1588,7 +1588,7 @@
                     "unk178": "#hash_200001010"
                 },
                 {
-                    "name": "#hash_4218b15834df0b26",
+                    "name": "#amb_gust_cold",
                     "assetId": "#amb/environment/wind/gusts/cold/long/wind_gust_long_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -1627,7 +1627,7 @@
                     "unk178": "#hash_200001010"
                 },
                 {
-                    "name": "#hash_4218b15834df0b26",
+                    "name": "#amb_gust_cold",
                     "assetId": "#amb/environment/wind/gusts/cold/long/wind_gust_long_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -2702,13 +2702,13 @@
         {
             "value": 138,
             "next": 24,
-            "name": "#hash_68d360aa565ed76a",
+            "name": "#amb_ice_crack",
             "sequence": 0,
             "cullDistance": 850,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_68d360aa565ed76a",
+                    "name": "#amb_ice_crack",
                     "assetId": "#amb/environment/snow/ice/ice_crack_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -2747,7 +2747,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_68d360aa565ed76a",
+                    "name": "#amb_ice_crack",
                     "assetId": "#amb/environment/snow/ice/ice_crack_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -2786,7 +2786,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_68d360aa565ed76a",
+                    "name": "#amb_ice_crack",
                     "assetId": "#amb/environment/snow/ice/ice_crack_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -2825,7 +2825,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_68d360aa565ed76a",
+                    "name": "#amb_ice_crack",
                     "assetId": "#amb/environment/snow/ice/ice_crack_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -2864,7 +2864,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_68d360aa565ed76a",
+                    "name": "#amb_ice_crack",
                     "assetId": "#amb/environment/snow/ice/ice_crack_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -2903,7 +2903,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_68d360aa565ed76a",
+                    "name": "#amb_ice_crack",
                     "assetId": "#amb/environment/snow/ice/ice_crack_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -3337,13 +3337,13 @@
         {
             "value": 303,
             "next": 65535,
-            "name": "#hash_635e1ca0bd54617a",
+            "name": "#amb_metal_creak_int",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_635e1ca0bd54617a",
+                    "name": "#amb_metal_creak_int",
                     "assetId": "#amb/material_movement/creaks/metal/stress/interior/interior_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -3382,7 +3382,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_635e1ca0bd54617a",
+                    "name": "#amb_metal_creak_int",
                     "assetId": "#amb/material_movement/creaks/metal/stress/interior/interior_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -3421,7 +3421,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_635e1ca0bd54617a",
+                    "name": "#amb_metal_creak_int",
                     "assetId": "#amb/material_movement/creaks/metal/stress/interior/interior_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -3460,7 +3460,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_635e1ca0bd54617a",
+                    "name": "#amb_metal_creak_int",
                     "assetId": "#amb/material_movement/creaks/metal/stress/interior/interior_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -3499,7 +3499,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_635e1ca0bd54617a",
+                    "name": "#amb_metal_creak_int",
                     "assetId": "#amb/material_movement/creaks/metal/stress/interior/interior_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -3538,7 +3538,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_635e1ca0bd54617a",
+                    "name": "#amb_metal_creak_int",
                     "assetId": "#amb/material_movement/creaks/metal/stress/interior/interior_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -3581,13 +3581,13 @@
         {
             "value": 117,
             "next": 65535,
-            "name": "#hash_7fb29d7f33d75e5e",
+            "name": "#amb_metal_creak_platform",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7fb29d7f33d75e5e",
+                    "name": "#amb_metal_creak_platform",
                     "assetId": "#amb/material_movement/creaks/metal/stress/platform/stair_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -3626,7 +3626,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_7fb29d7f33d75e5e",
+                    "name": "#amb_metal_creak_platform",
                     "assetId": "#amb/material_movement/creaks/metal/stress/platform/stair_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -3665,7 +3665,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_7fb29d7f33d75e5e",
+                    "name": "#amb_metal_creak_platform",
                     "assetId": "#amb/material_movement/creaks/metal/stress/platform/stair_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -3704,7 +3704,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_7fb29d7f33d75e5e",
+                    "name": "#amb_metal_creak_platform",
                     "assetId": "#amb/material_movement/creaks/metal/stress/platform/stair_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -3846,13 +3846,13 @@
         {
             "value": 277,
             "next": 65535,
-            "name": "#hash_4167076cd5ad90b1",
+            "name": "#amb_radar_explo",
             "sequence": 0,
             "cullDistance": 5000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4167076cd5ad90b1",
+                    "name": "#amb_radar_explo",
                     "secondaryname": "#hash_1197b99d88c6c0bb",
                     "assetId": "#mpl/mpl_silo/radar_explo/radar_lrg_explo.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
@@ -4485,13 +4485,13 @@
         {
             "value": 248,
             "next": 65535,
-            "name": "#hash_30f768616c78427",
+            "name": "#amb_snow_debris",
             "sequence": 0,
             "cullDistance": 850,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_30f768616c78427",
+                    "name": "#amb_snow_debris",
                     "assetId": "#amb/material_movement/debris/snow/snow_debris_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -4530,7 +4530,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_30f768616c78427",
+                    "name": "#amb_snow_debris",
                     "assetId": "#amb/material_movement/debris/snow/snow_debris_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -4569,7 +4569,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_30f768616c78427",
+                    "name": "#amb_snow_debris",
                     "assetId": "#amb/material_movement/debris/snow/snow_debris_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -4608,7 +4608,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_30f768616c78427",
+                    "name": "#amb_snow_debris",
                     "assetId": "#amb/material_movement/debris/snow/snow_debris_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -4700,13 +4700,13 @@
         {
             "value": 207,
             "next": 65535,
-            "name": "#hash_385714968632733a",
+            "name": "#amb_tape_flap",
             "sequence": 0,
             "cullDistance": 500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_385714968632733a",
+                    "name": "#amb_tape_flap",
                     "assetId": "#amb/material_movement/rustling/plastic/tape/tape_flap_1.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -4745,7 +4745,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_385714968632733a",
+                    "name": "#amb_tape_flap",
                     "assetId": "#amb/material_movement/rustling/plastic/tape/tape_flap_2.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -4788,13 +4788,13 @@
         {
             "value": 137,
             "next": 65535,
-            "name": "#hash_43fb20713e410a4d",
+            "name": "#amb_tv_static",
             "sequence": 0,
             "cullDistance": 500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_43fb20713e410a4d",
+                    "name": "#amb_tv_static",
                     "assetId": "#amb/electronics/tv/static/tv_static_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -5516,13 +5516,13 @@
         {
             "value": 174,
             "next": 65535,
-            "name": "#hash_31f777916298d72",
+            "name": "#dst_cover_concrete",
             "sequence": 0,
             "cullDistance": 550,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -5561,7 +5561,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -5600,7 +5600,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -5639,7 +5639,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -5678,7 +5678,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -5717,7 +5717,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -5767,7 +5767,7 @@
             "aliases": [
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -5808,7 +5808,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -5849,7 +5849,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -5890,7 +5890,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -5931,7 +5931,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -5972,7 +5972,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -6013,7 +6013,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -6545,13 +6545,13 @@
         {
             "value": 60,
             "next": 86,
-            "name": "#hash_5977d1f5f8457ae5",
+            "name": "#dst_fire_extinguisher",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5977d1f5f8457ae5",
+                    "name": "#dst_fire_extinguisher",
                     "assetId": "#dst/prop/fire_extinguisher/fire_extinguisher_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -6642,13 +6642,13 @@
         {
             "value": 43,
             "next": 65535,
-            "name": "#hash_2fc9b1cdafb1c5db",
+            "name": "#dst_foodstand",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2fc9b1cdafb1c5db",
+                    "name": "#dst_foodstand",
                     "assetId": "#dst/prop/foodstand/foodstand_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -6687,7 +6687,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_2fc9b1cdafb1c5db",
+                    "name": "#dst_foodstand",
                     "assetId": "#dst/prop/foodstand/foodstand_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -6875,13 +6875,13 @@
         {
             "value": 53,
             "next": 96,
-            "name": "#hash_419e84642ebe554",
+            "name": "#dst_gas_pipe_lp",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_419e84642ebe554",
+                    "name": "#dst_gas_pipe_lp",
                     "assetId": "#dst/pipe/gas/loop/gas_pipe_lp.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -8209,13 +8209,13 @@
         {
             "value": 34,
             "next": 65535,
-            "name": "#hash_4f8c480d8e8f07b6",
+            "name": "#dst_pipe_steam",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4f8c480d8e8f07b6",
+                    "name": "#dst_pipe_steam",
                     "secondaryname": "#hash_54538dea28a0400e",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -8355,13 +8355,13 @@
         {
             "value": 134,
             "next": 65535,
-            "name": "#hash_4ec5a3e02263fc0e",
+            "name": "#dst_propane_tank_explo",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
@@ -8402,7 +8402,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
@@ -8443,7 +8443,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
@@ -8484,7 +8484,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
@@ -8525,7 +8525,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
@@ -8566,7 +8566,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
@@ -8607,7 +8607,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
@@ -8659,7 +8659,7 @@
             "aliases": [
                 {
                     "name": "#hash_238170c19d279f5",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -8699,7 +8699,7 @@
                 },
                 {
                     "name": "#hash_238170c19d279f5",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -8739,7 +8739,7 @@
                 },
                 {
                     "name": "#hash_238170c19d279f5",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -8779,7 +8779,7 @@
                 },
                 {
                     "name": "#hash_238170c19d279f5",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -8822,13 +8822,13 @@
         {
             "value": 141,
             "next": 65535,
-            "name": "#hash_344ec28fee2dea4c",
+            "name": "#dst_rock_large",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_344ec28fee2dea4c",
+                    "name": "#dst_rock_large",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
                     "assetFileNameRelease": "#mp_silo.all",
@@ -8877,7 +8877,7 @@
             "aliases": [
                 {
                     "name": "#dst_server",
-                    "secondaryname": "#hash_25a264b901d17919",
+                    "secondaryname": "#dst_server_glass",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
                     "assetFileNameRelease": "#mp_silo.all",
@@ -8919,14 +8919,14 @@
         {
             "value": 285,
             "next": 65535,
-            "name": "#hash_25a264b901d17919",
+            "name": "#dst_server_glass",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_25a264b901d17919",
-                    "secondaryname": "#hash_2f095673f11faa44",
+                    "name": "#dst_server_glass",
+                    "secondaryname": "#dst_server_power",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -8965,8 +8965,8 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_25a264b901d17919",
-                    "secondaryname": "#hash_2f095673f11faa44",
+                    "name": "#dst_server_glass",
+                    "secondaryname": "#dst_server_power",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -9005,8 +9005,8 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_25a264b901d17919",
-                    "secondaryname": "#hash_2f095673f11faa44",
+                    "name": "#dst_server_glass",
+                    "secondaryname": "#dst_server_power",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -9049,13 +9049,13 @@
         {
             "value": 267,
             "next": 65535,
-            "name": "#hash_2f095673f11faa44",
+            "name": "#dst_server_power",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2f095673f11faa44",
+                    "name": "#dst_server_power",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
                     "assetFileNameRelease": "#mp_silo.all",
@@ -9776,13 +9776,13 @@
         {
             "value": 194,
             "next": 65535,
-            "name": "#hash_58218bc4f7624185",
+            "name": "#dst_steam_pipe_lp",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_58218bc4f7624185",
+                    "name": "#dst_steam_pipe_lp",
                     "assetId": "#dst/pipe/steam/loop/steam_pipe_lp.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -10630,13 +10630,13 @@
         {
             "value": 217,
             "next": 65535,
-            "name": "#hash_72725b98cf0834ac",
+            "name": "#dst_trash_bag",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_72725b98cf0834ac",
+                    "name": "#dst_trash_bag",
                     "assetId": "#hash_131702bdb9183384",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -10675,7 +10675,7 @@
                     "unk178": "#hash_503090305"
                 },
                 {
-                    "name": "#hash_72725b98cf0834ac",
+                    "name": "#dst_trash_bag",
                     "assetId": "#hash_2264ca2ac3c87869",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -10714,7 +10714,7 @@
                     "unk178": "#hash_503090305"
                 },
                 {
-                    "name": "#hash_72725b98cf0834ac",
+                    "name": "#dst_trash_bag",
                     "assetId": "#hash_62c73c6a2cca2abe",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -10753,7 +10753,7 @@
                     "unk178": "#hash_503090305"
                 },
                 {
-                    "name": "#hash_72725b98cf0834ac",
+                    "name": "#dst_trash_bag",
                     "assetId": "#hash_1884c87605737c5b",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -10845,13 +10845,13 @@
         {
             "value": 152,
             "next": 65535,
-            "name": "#hash_1a6485b96677518d",
+            "name": "#dst_water_bottle",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1a6485b96677518d",
+                    "name": "#dst_water_bottle",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
                     "assetFileNameRelease": "#mp_silo.all",
@@ -10941,13 +10941,13 @@
         {
             "value": 157,
             "next": 65535,
-            "name": "#hash_7809ea482909306c",
+            "name": "#dst_wood_crate",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7809ea482909306c",
+                    "name": "#dst_wood_crate",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
                     "assetFileNameRelease": "#mp_silo.all",
@@ -11386,7 +11386,7 @@
             "aliases": [
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -11427,7 +11427,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -11468,7 +11468,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -11509,7 +11509,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -11550,7 +11550,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -11591,7 +11591,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -11632,7 +11632,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -11676,14 +11676,14 @@
         {
             "value": 304,
             "next": 65535,
-            "name": "#hash_310e1517e8130d26",
+            "name": "#exp_barrel_close",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_310e1517e8130d26",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "name": "#exp_barrel_close",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/rip/exp_barrel_rip_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -11723,8 +11723,8 @@
                     "unk178": "#hash_6030b0804"
                 },
                 {
-                    "name": "#hash_310e1517e8130d26",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "name": "#exp_barrel_close",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/rip/exp_barrel_rip_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -11764,8 +11764,8 @@
                     "unk178": "#hash_6030b0804"
                 },
                 {
-                    "name": "#hash_310e1517e8130d26",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "name": "#exp_barrel_close",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/rip/exp_barrel_rip_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -11809,13 +11809,13 @@
         {
             "value": 251,
             "next": 112,
-            "name": "#hash_7fe19ceed35907ce",
+            "name": "#exp_barrel_dist",
             "sequence": 0,
             "cullDistance": 30000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7fe19ceed35907ce",
+                    "name": "#exp_barrel_dist",
                     "assetId": "#exp/prop/barrel/dist/exp_barrel_dist_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -11855,7 +11855,7 @@
                     "unk178": "#hash_6000b0304"
                 },
                 {
-                    "name": "#hash_7fe19ceed35907ce",
+                    "name": "#exp_barrel_dist",
                     "assetId": "#exp/prop/barrel/dist/exp_barrel_dist_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -11948,14 +11948,14 @@
         {
             "value": 91,
             "next": 65535,
-            "name": "#hash_3e8d50aeefef2d0e",
+            "name": "#exp_barrel_flux_l",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3e8d50aeefef2d0e",
-                    "secondaryname": "#hash_3e8d3aaeefef07ac",
+                    "name": "#exp_barrel_flux_l",
+                    "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#exp/prop/barrel/flux/exp_barrel_flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -11999,14 +11999,14 @@
         {
             "value": 7,
             "next": 65535,
-            "name": "#hash_3e8d3aaeefef07ac",
+            "name": "#exp_barrel_flux_r",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3e8d3aaeefef07ac",
-                    "secondaryname": "#hash_7fe19ceed35907ce",
+                    "name": "#exp_barrel_flux_r",
+                    "secondaryname": "#exp_barrel_dist",
                     "assetId": "#exp/prop/barrel/flux/exp_barrel_flux_r_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -12050,14 +12050,14 @@
         {
             "value": 114,
             "next": 150,
-            "name": "#hash_8ef0ca7881f8aab",
+            "name": "#exp_barrel_lfe",
             "sequence": 0,
             "cullDistance": 3000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_8ef0ca7881f8aab",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "name": "#exp_barrel_lfe",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -12096,8 +12096,8 @@
                     "unk178": "#hash_c030b0802"
                 },
                 {
-                    "name": "#hash_8ef0ca7881f8aab",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "name": "#exp_barrel_lfe",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -12136,8 +12136,8 @@
                     "unk178": "#hash_c030b0802"
                 },
                 {
-                    "name": "#hash_8ef0ca7881f8aab",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "name": "#exp_barrel_lfe",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -12176,8 +12176,8 @@
                     "unk178": "#hash_c030b0802"
                 },
                 {
-                    "name": "#hash_8ef0ca7881f8aab",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "name": "#exp_barrel_lfe",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -15320,7 +15320,7 @@
             "aliases": [
                 {
                     "name": "#hash_200e28bcd26bab77",
-                    "secondaryname": "#hash_3e8d3aaeefef07ac",
+                    "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -15414,13 +15414,13 @@
         {
             "value": 17,
             "next": 65535,
-            "name": "#hash_2e887c70bfe4df2a",
+            "name": "#exp_mp_propane_tank_explo",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
@@ -15461,7 +15461,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
@@ -15502,7 +15502,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
@@ -15543,7 +15543,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
@@ -15584,7 +15584,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
@@ -15625,7 +15625,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
@@ -15666,7 +15666,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
@@ -15884,7 +15884,7 @@
             "aliases": [
                 {
                     "name": "#hash_4c4fd4c61d8d67f0",
-                    "secondaryname": "#hash_3e8d3aaeefef07ac",
+                    "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -16370,7 +16370,7 @@
             "aliases": [
                 {
                     "name": "#hash_456af38afaef9d77",
-                    "secondaryname": "#hash_3e8d3aaeefef07ac",
+                    "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -16471,7 +16471,7 @@
             "aliases": [
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -16512,7 +16512,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -16553,7 +16553,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -16594,7 +16594,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -16635,7 +16635,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -16676,7 +16676,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -16717,7 +16717,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -18304,13 +18304,13 @@
         {
             "value": 149,
             "next": 65535,
-            "name": "#hash_1519e3326638cc63",
+            "name": "#fly_bump_container",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1519e3326638cc63",
+                    "name": "#fly_bump_container",
                     "assetId": "#fly/bump/container/bump_container_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -18351,7 +18351,7 @@
                     "unk178": "#hash_7000d0203"
                 },
                 {
-                    "name": "#hash_1519e3326638cc63",
+                    "name": "#fly_bump_container",
                     "assetId": "#fly/bump/container/bump_container_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -18392,7 +18392,7 @@
                     "unk178": "#hash_7000d0203"
                 },
                 {
-                    "name": "#hash_1519e3326638cc63",
+                    "name": "#fly_bump_container",
                     "assetId": "#fly/bump/container/bump_container_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -18433,7 +18433,7 @@
                     "unk178": "#hash_7000d0203"
                 },
                 {
-                    "name": "#hash_1519e3326638cc63",
+                    "name": "#fly_bump_container",
                     "assetId": "#fly/bump/container/bump_container_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -18474,7 +18474,7 @@
                     "unk178": "#hash_7000d0203"
                 },
                 {
-                    "name": "#hash_1519e3326638cc63",
+                    "name": "#fly_bump_container",
                     "assetId": "#fly/bump/container/bump_container_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -18515,7 +18515,7 @@
                     "unk178": "#hash_7000d0203"
                 },
                 {
-                    "name": "#hash_1519e3326638cc63",
+                    "name": "#fly_bump_container",
                     "assetId": "#fly/bump/container/bump_container_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -39394,13 +39394,13 @@
         {
             "value": 241,
             "next": 65535,
-            "name": "#hash_6851c7ef18c99a2f",
+            "name": "#fly_step_mattress_npc",
             "sequence": 0,
             "cullDistance": 3400,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6851c7ef18c99a2f",
+                    "name": "#fly_step_mattress_npc",
                     "assetId": "#fly/step/mattress/fly_step_mattress_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -39441,7 +39441,7 @@
                     "unk178": "#hash_7000d020e"
                 },
                 {
-                    "name": "#hash_6851c7ef18c99a2f",
+                    "name": "#fly_step_mattress_npc",
                     "assetId": "#fly/step/mattress/fly_step_mattress_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -39482,7 +39482,7 @@
                     "unk178": "#hash_7000d020e"
                 },
                 {
-                    "name": "#hash_6851c7ef18c99a2f",
+                    "name": "#fly_step_mattress_npc",
                     "assetId": "#fly/step/mattress/fly_step_mattress_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -39523,7 +39523,7 @@
                     "unk178": "#hash_7000d020e"
                 },
                 {
-                    "name": "#hash_6851c7ef18c99a2f",
+                    "name": "#fly_step_mattress_npc",
                     "assetId": "#fly/step/mattress/fly_step_mattress_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -39568,13 +39568,13 @@
         {
             "value": 293,
             "next": 65535,
-            "name": "#hash_6def88eed3270d4a",
+            "name": "#fly_step_mattress_plr",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6def88eed3270d4a",
+                    "name": "#fly_step_mattress_plr",
                     "assetId": "#fly/step/mattress/fly_step_mattress_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -39615,7 +39615,7 @@
                     "unk178": "#hash_12000c0102"
                 },
                 {
-                    "name": "#hash_6def88eed3270d4a",
+                    "name": "#fly_step_mattress_plr",
                     "assetId": "#fly/step/mattress/fly_step_mattress_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -39656,7 +39656,7 @@
                     "unk178": "#hash_12000c0102"
                 },
                 {
-                    "name": "#hash_6def88eed3270d4a",
+                    "name": "#fly_step_mattress_plr",
                     "assetId": "#fly/step/mattress/fly_step_mattress_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -39697,7 +39697,7 @@
                     "unk178": "#hash_12000c0102"
                 },
                 {
-                    "name": "#hash_6def88eed3270d4a",
+                    "name": "#fly_step_mattress_plr",
                     "assetId": "#fly/step/mattress/fly_step_mattress_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -39742,13 +39742,13 @@
         {
             "value": 246,
             "next": 65535,
-            "name": "#hash_778c546d4bf1f13d",
+            "name": "#fly_step_metal",
             "sequence": 0,
             "cullDistance": 1300,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_778c546d4bf1f13d",
+                    "name": "#fly_step_metal",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
                     "assetFileNameRelease": "#mp_silo.all",
@@ -39788,7 +39788,7 @@
                     "unk178": "#hash_7000d0202"
                 },
                 {
-                    "name": "#hash_778c546d4bf1f13d",
+                    "name": "#fly_step_metal",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
                     "assetFileNameRelease": "#mp_silo.all",
@@ -42044,13 +42044,13 @@
         {
             "value": 196,
             "next": 65535,
-            "name": "#hash_642770a6e291745c",
+            "name": "#fly_step_rocks",
             "sequence": 0,
             "cullDistance": 1300,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_642770a6e291745c",
+                    "name": "#fly_step_rocks",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
                     "assetFileNameRelease": "#mp_silo.all",
@@ -42090,7 +42090,7 @@
                     "unk178": "#hash_7000d0802"
                 },
                 {
-                    "name": "#hash_642770a6e291745c",
+                    "name": "#fly_step_rocks",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
                     "assetFileNameRelease": "#mp_silo.all",
@@ -42735,7 +42735,7 @@
             "aliases": [
                 {
                     "name": "#fly_step_shells",
-                    "secondaryname": "#hash_4f12c14c8757b7a",
+                    "secondaryname": "#fly_step_shells_sweet",
                     "assetId": "#fly/step/shells/shell_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -42777,7 +42777,7 @@
                 },
                 {
                     "name": "#fly_step_shells",
-                    "secondaryname": "#hash_4f12c14c8757b7a",
+                    "secondaryname": "#fly_step_shells_sweet",
                     "assetId": "#fly/step/shells/shell_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -42819,7 +42819,7 @@
                 },
                 {
                     "name": "#fly_step_shells",
-                    "secondaryname": "#hash_4f12c14c8757b7a",
+                    "secondaryname": "#fly_step_shells_sweet",
                     "assetId": "#fly/step/shells/shell_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -42861,7 +42861,7 @@
                 },
                 {
                     "name": "#fly_step_shells",
-                    "secondaryname": "#hash_4f12c14c8757b7a",
+                    "secondaryname": "#fly_step_shells_sweet",
                     "assetId": "#fly/step/shells/shell_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -42903,7 +42903,7 @@
                 },
                 {
                     "name": "#fly_step_shells",
-                    "secondaryname": "#hash_4f12c14c8757b7a",
+                    "secondaryname": "#fly_step_shells_sweet",
                     "assetId": "#fly/step/shells/shell_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -42945,7 +42945,7 @@
                 },
                 {
                     "name": "#fly_step_shells",
-                    "secondaryname": "#hash_4f12c14c8757b7a",
+                    "secondaryname": "#fly_step_shells_sweet",
                     "assetId": "#fly/step/shells/shell_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -42987,7 +42987,7 @@
                 },
                 {
                     "name": "#fly_step_shells",
-                    "secondaryname": "#hash_4f12c14c8757b7a",
+                    "secondaryname": "#fly_step_shells_sweet",
                     "assetId": "#fly/step/shells/shell_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -43029,7 +43029,7 @@
                 },
                 {
                     "name": "#fly_step_shells",
-                    "secondaryname": "#hash_4f12c14c8757b7a",
+                    "secondaryname": "#fly_step_shells_sweet",
                     "assetId": "#fly/step/shells/shell_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -43071,7 +43071,7 @@
                 },
                 {
                     "name": "#fly_step_shells",
-                    "secondaryname": "#hash_4f12c14c8757b7a",
+                    "secondaryname": "#fly_step_shells_sweet",
                     "assetId": "#fly/step/shells/shell_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -43113,7 +43113,7 @@
                 },
                 {
                     "name": "#fly_step_shells",
-                    "secondaryname": "#hash_4f12c14c8757b7a",
+                    "secondaryname": "#fly_step_shells_sweet",
                     "assetId": "#fly/step/shells/shell_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -43155,7 +43155,7 @@
                 },
                 {
                     "name": "#fly_step_shells",
-                    "secondaryname": "#hash_4f12c14c8757b7a",
+                    "secondaryname": "#fly_step_shells_sweet",
                     "assetId": "#fly/step/shells/shell_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -43197,7 +43197,7 @@
                 },
                 {
                     "name": "#fly_step_shells",
-                    "secondaryname": "#hash_4f12c14c8757b7a",
+                    "secondaryname": "#fly_step_shells_sweet",
                     "assetId": "#fly/step/shells/shell_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -43242,13 +43242,13 @@
         {
             "value": 187,
             "next": 261,
-            "name": "#hash_76b49dc84578b31d",
+            "name": "#fly_step_shells_npc",
             "sequence": 0,
             "cullDistance": 3400,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_76b49dc84578b31d",
+                    "name": "#fly_step_shells_npc",
                     "secondaryname": "#hash_657e8ed3dbc52ebe",
                     "assetId": "#fly/step/shells/shell_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
@@ -43290,7 +43290,7 @@
                     "unk178": "#hash_7000d020e"
                 },
                 {
-                    "name": "#hash_76b49dc84578b31d",
+                    "name": "#fly_step_shells_npc",
                     "secondaryname": "#hash_657e8ed3dbc52ebe",
                     "assetId": "#fly/step/shells/shell_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
@@ -43332,7 +43332,7 @@
                     "unk178": "#hash_7000d020e"
                 },
                 {
-                    "name": "#hash_76b49dc84578b31d",
+                    "name": "#fly_step_shells_npc",
                     "secondaryname": "#hash_657e8ed3dbc52ebe",
                     "assetId": "#fly/step/shells/shell_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
@@ -43374,7 +43374,7 @@
                     "unk178": "#hash_7000d020e"
                 },
                 {
-                    "name": "#hash_76b49dc84578b31d",
+                    "name": "#fly_step_shells_npc",
                     "secondaryname": "#hash_657e8ed3dbc52ebe",
                     "assetId": "#fly/step/shells/shell_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
@@ -43416,7 +43416,7 @@
                     "unk178": "#hash_7000d020e"
                 },
                 {
-                    "name": "#hash_76b49dc84578b31d",
+                    "name": "#fly_step_shells_npc",
                     "secondaryname": "#hash_657e8ed3dbc52ebe",
                     "assetId": "#fly/step/shells/shell_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
@@ -43458,7 +43458,7 @@
                     "unk178": "#hash_7000d020e"
                 },
                 {
-                    "name": "#hash_76b49dc84578b31d",
+                    "name": "#fly_step_shells_npc",
                     "secondaryname": "#hash_657e8ed3dbc52ebe",
                     "assetId": "#fly/step/shells/shell_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
@@ -43504,13 +43504,13 @@
         {
             "value": 307,
             "next": 65535,
-            "name": "#hash_169b82c7c6db3b84",
+            "name": "#fly_step_shells_plr",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_169b82c7c6db3b84",
+                    "name": "#fly_step_shells_plr",
                     "secondaryname": "#hash_53cc3dd3d1a40243",
                     "assetId": "#fly/step/shells/shell_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
@@ -43552,7 +43552,7 @@
                     "unk178": "#hash_12000c0802"
                 },
                 {
-                    "name": "#hash_169b82c7c6db3b84",
+                    "name": "#fly_step_shells_plr",
                     "secondaryname": "#hash_53cc3dd3d1a40243",
                     "assetId": "#fly/step/shells/shell_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
@@ -43594,7 +43594,7 @@
                     "unk178": "#hash_12000c0802"
                 },
                 {
-                    "name": "#hash_169b82c7c6db3b84",
+                    "name": "#fly_step_shells_plr",
                     "secondaryname": "#hash_53cc3dd3d1a40243",
                     "assetId": "#fly/step/shells/shell_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
@@ -43636,7 +43636,7 @@
                     "unk178": "#hash_12000c0802"
                 },
                 {
-                    "name": "#hash_169b82c7c6db3b84",
+                    "name": "#fly_step_shells_plr",
                     "secondaryname": "#hash_53cc3dd3d1a40243",
                     "assetId": "#fly/step/shells/shell_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
@@ -43678,7 +43678,7 @@
                     "unk178": "#hash_12000c0802"
                 },
                 {
-                    "name": "#hash_169b82c7c6db3b84",
+                    "name": "#fly_step_shells_plr",
                     "secondaryname": "#hash_53cc3dd3d1a40243",
                     "assetId": "#fly/step/shells/shell_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
@@ -43720,7 +43720,7 @@
                     "unk178": "#hash_12000c0802"
                 },
                 {
-                    "name": "#hash_169b82c7c6db3b84",
+                    "name": "#fly_step_shells_plr",
                     "secondaryname": "#hash_53cc3dd3d1a40243",
                     "assetId": "#fly/step/shells/shell_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
@@ -43766,13 +43766,13 @@
         {
             "value": 259,
             "next": 65535,
-            "name": "#hash_4f12c14c8757b7a",
+            "name": "#fly_step_shells_sweet",
             "sequence": 0,
             "cullDistance": 1300,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4f12c14c8757b7a",
+                    "name": "#fly_step_shells_sweet",
                     "assetId": "#fly/step/shells_sweet/shells_sweet_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -43813,7 +43813,7 @@
                     "unk178": "#hash_7000d0802"
                 },
                 {
-                    "name": "#hash_4f12c14c8757b7a",
+                    "name": "#fly_step_shells_sweet",
                     "assetId": "#fly/step/shells_sweet/shells_sweet_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -43854,7 +43854,7 @@
                     "unk178": "#hash_7000d0802"
                 },
                 {
-                    "name": "#hash_4f12c14c8757b7a",
+                    "name": "#fly_step_shells_sweet",
                     "assetId": "#fly/step/shells_sweet/shells_sweet_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -43895,7 +43895,7 @@
                     "unk178": "#hash_7000d0802"
                 },
                 {
-                    "name": "#hash_4f12c14c8757b7a",
+                    "name": "#fly_step_shells_sweet",
                     "assetId": "#fly/step/shells_sweet/shells_sweet_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -44394,13 +44394,13 @@
         {
             "value": 180,
             "next": 265,
-            "name": "#hash_1ec308916f5b6e67",
+            "name": "#fly_step_tarp",
             "sequence": 0,
             "cullDistance": 1300,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1ec308916f5b6e67",
+                    "name": "#fly_step_tarp",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
                     "assetFileNameRelease": "#mp_silo.all",
@@ -44440,7 +44440,7 @@
                     "unk178": "#hash_7000d0202"
                 },
                 {
-                    "name": "#hash_1ec308916f5b6e67",
+                    "name": "#fly_step_tarp",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
                     "assetFileNameRelease": "#mp_silo.all",
@@ -44484,13 +44484,13 @@
         {
             "value": 144,
             "next": 304,
-            "name": "#hash_1e3fe7dc6b3e5eff",
+            "name": "#fly_step_tarp_npc",
             "sequence": 0,
             "cullDistance": 3400,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1e3fe7dc6b3e5eff",
+                    "name": "#fly_step_tarp_npc",
                     "assetId": "#fly/step/tarp/fly_step_tarp_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -44531,7 +44531,7 @@
                     "unk178": "#hash_7000d020e"
                 },
                 {
-                    "name": "#hash_1e3fe7dc6b3e5eff",
+                    "name": "#fly_step_tarp_npc",
                     "assetId": "#fly/step/tarp/fly_step_tarp_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -44572,7 +44572,7 @@
                     "unk178": "#hash_7000d020e"
                 },
                 {
-                    "name": "#hash_1e3fe7dc6b3e5eff",
+                    "name": "#fly_step_tarp_npc",
                     "assetId": "#fly/step/tarp/fly_step_tarp_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -44613,7 +44613,7 @@
                     "unk178": "#hash_7000d020e"
                 },
                 {
-                    "name": "#hash_1e3fe7dc6b3e5eff",
+                    "name": "#fly_step_tarp_npc",
                     "assetId": "#fly/step/tarp/fly_step_tarp_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -44658,13 +44658,13 @@
         {
             "value": 41,
             "next": 276,
-            "name": "#hash_3cdfe8dcc5db6bfa",
+            "name": "#fly_step_tarp_plr",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3cdfe8dcc5db6bfa",
+                    "name": "#fly_step_tarp_plr",
                     "assetId": "#fly/step/tarp/fly_step_tarp_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -44705,7 +44705,7 @@
                     "unk178": "#hash_12000c0102"
                 },
                 {
-                    "name": "#hash_3cdfe8dcc5db6bfa",
+                    "name": "#fly_step_tarp_plr",
                     "assetId": "#fly/step/tarp/fly_step_tarp_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -44746,7 +44746,7 @@
                     "unk178": "#hash_12000c0102"
                 },
                 {
-                    "name": "#hash_3cdfe8dcc5db6bfa",
+                    "name": "#fly_step_tarp_plr",
                     "assetId": "#fly/step/tarp/fly_step_tarp_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -44787,7 +44787,7 @@
                     "unk178": "#hash_12000c0102"
                 },
                 {
-                    "name": "#hash_3cdfe8dcc5db6bfa",
+                    "name": "#fly_step_tarp_plr",
                     "assetId": "#fly/step/tarp/fly_step_tarp_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -51668,13 +51668,13 @@
         {
             "value": 101,
             "next": 65535,
-            "name": "#hash_60ba48fbfec52444",
+            "name": "#pfx_dirt_fall_long",
             "sequence": 0,
             "cullDistance": 1750,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_60ba48fbfec52444",
+                    "name": "#pfx_dirt_fall_long",
                     "assetId": "#pfx/dirt/long_fall/dirt_fall_long_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -51713,7 +51713,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_60ba48fbfec52444",
+                    "name": "#pfx_dirt_fall_long",
                     "assetId": "#pfx/dirt/long_fall/dirt_fall_long_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -51752,7 +51752,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_60ba48fbfec52444",
+                    "name": "#pfx_dirt_fall_long",
                     "assetId": "#pfx/dirt/long_fall/dirt_fall_long_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -51791,7 +51791,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_60ba48fbfec52444",
+                    "name": "#pfx_dirt_fall_long",
                     "assetId": "#pfx/dirt/long_fall/dirt_fall_long_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -51883,13 +51883,13 @@
         {
             "value": 30,
             "next": 65535,
-            "name": "#hash_1ce2ee8fafd2e832",
+            "name": "#pfx_fire_fall",
             "sequence": 0,
             "cullDistance": 1700,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1ce2ee8fafd2e832",
+                    "name": "#pfx_fire_fall",
                     "assetId": "#pfx/fire/fall/fire_fall_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -51928,7 +51928,7 @@
                     "unk178": "#hash_500000108"
                 },
                 {
-                    "name": "#hash_1ce2ee8fafd2e832",
+                    "name": "#pfx_fire_fall",
                     "assetId": "#pfx/fire/fall/fire_fall_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -51967,7 +51967,7 @@
                     "unk178": "#hash_500000108"
                 },
                 {
-                    "name": "#hash_1ce2ee8fafd2e832",
+                    "name": "#pfx_fire_fall",
                     "assetId": "#pfx/fire/fall/fire_fall_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -52006,7 +52006,7 @@
                     "unk178": "#hash_500000108"
                 },
                 {
-                    "name": "#hash_1ce2ee8fafd2e832",
+                    "name": "#pfx_fire_fall",
                     "assetId": "#pfx/fire/fall/fire_fall_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -52045,7 +52045,7 @@
                     "unk178": "#hash_500000108"
                 },
                 {
-                    "name": "#hash_1ce2ee8fafd2e832",
+                    "name": "#pfx_fire_fall",
                     "assetId": "#pfx/fire/fall/fire_fall_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -52084,7 +52084,7 @@
                     "unk178": "#hash_500000108"
                 },
                 {
-                    "name": "#hash_1ce2ee8fafd2e832",
+                    "name": "#pfx_fire_fall",
                     "assetId": "#pfx/fire/fall/fire_fall_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -52127,13 +52127,13 @@
         {
             "value": 10,
             "next": 309,
-            "name": "#hash_63bcf282cc7317c1",
+            "name": "#pfx_fire_impact",
             "sequence": 0,
             "cullDistance": 1700,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_63bcf282cc7317c1",
+                    "name": "#pfx_fire_impact",
                     "assetId": "#amb/fire/embers/fire_ember_burn_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -52172,7 +52172,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_63bcf282cc7317c1",
+                    "name": "#pfx_fire_impact",
                     "assetId": "#amb/fire/embers/fire_ember_burn_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -52211,7 +52211,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_63bcf282cc7317c1",
+                    "name": "#pfx_fire_impact",
                     "assetId": "#amb/fire/embers/fire_ember_burn_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -52303,13 +52303,13 @@
         {
             "value": 258,
             "next": 65535,
-            "name": "#hash_53b94f368a6a4748",
+            "name": "#pfx_rock_fall_long",
             "sequence": 0,
             "cullDistance": 1750,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_53b94f368a6a4748",
+                    "name": "#pfx_rock_fall_long",
                     "assetId": "#pfx/rock/debris/rock_fall_long_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -52348,7 +52348,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_53b94f368a6a4748",
+                    "name": "#pfx_rock_fall_long",
                     "assetId": "#pfx/rock/debris/rock_fall_long_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -52387,7 +52387,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_53b94f368a6a4748",
+                    "name": "#pfx_rock_fall_long",
                     "assetId": "#pfx/rock/debris/rock_fall_long_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -52426,7 +52426,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_53b94f368a6a4748",
+                    "name": "#pfx_rock_fall_long",
                     "assetId": "#pfx/rock/debris/rock_fall_long_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -52465,7 +52465,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_53b94f368a6a4748",
+                    "name": "#pfx_rock_fall_long",
                     "assetId": "#pfx/rock/debris/rock_fall_long_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -52504,7 +52504,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_53b94f368a6a4748",
+                    "name": "#pfx_rock_fall_long",
                     "assetId": "#pfx/rock/debris/rock_fall_long_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -52547,13 +52547,13 @@
         {
             "value": 147,
             "next": 65535,
-            "name": "#hash_631f3e0d7b9b9359",
+            "name": "#pfx_snow_debris",
             "sequence": 0,
             "cullDistance": 1750,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_631f3e0d7b9b9359",
+                    "name": "#pfx_snow_debris",
                     "assetId": "#amb/material_movement/debris/snow/snow_debris_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -52592,7 +52592,7 @@
                     "unk178": "#hash_500000308"
                 },
                 {
-                    "name": "#hash_631f3e0d7b9b9359",
+                    "name": "#pfx_snow_debris",
                     "assetId": "#amb/material_movement/debris/snow/snow_debris_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -52631,7 +52631,7 @@
                     "unk178": "#hash_500000308"
                 },
                 {
-                    "name": "#hash_631f3e0d7b9b9359",
+                    "name": "#pfx_snow_debris",
                     "assetId": "#amb/material_movement/debris/snow/snow_debris_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -52670,7 +52670,7 @@
                     "unk178": "#hash_500000308"
                 },
                 {
-                    "name": "#hash_631f3e0d7b9b9359",
+                    "name": "#pfx_snow_debris",
                     "assetId": "#amb/material_movement/debris/snow/snow_debris_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -53006,13 +53006,13 @@
         {
             "value": 102,
             "next": 65535,
-            "name": "#hash_380616a41ce8d365",
+            "name": "#pfx_water_splash",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_380616a41ce8d365",
+                    "name": "#pfx_water_splash",
                     "assetId": "#amb/environment/water/splash/water_splash/water_spray_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -53055,13 +53055,13 @@
         {
             "value": 212,
             "next": 65535,
-            "name": "#hash_2f81dbcc3010ce32",
+            "name": "#pfx_water_trickle",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2f81dbcc3010ce32",
+                    "name": "#pfx_water_trickle",
                     "assetId": "#amb/environment/water/runoff/water_runoff_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_silo.all",
                     "assetIdRelease": "#mp_silo.all",
@@ -53206,7 +53206,7 @@
             "reverb": "#mp_final_killcam",
             "loop": "#hash_44463359dd025b23",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
+            "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
@@ -53226,8 +53226,8 @@
             "reverb": "#room_hallway",
             "loop": "#hash_60aa34fc6ea42b7b",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": false,
@@ -53246,8 +53246,8 @@
             "reverb": "#big_hangar",
             "loop": "#hash_60aa34fc6ea42b7b",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": false,
@@ -53266,8 +53266,8 @@
             "reverb": "#room_livingRoom",
             "loop": "#hash_60aa34fc6ea42b7b",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": false,
@@ -53286,8 +53286,8 @@
             "reverb": "#room_bedroom",
             "loop": "#hash_60aa34fc6ea42b7b",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": false,
@@ -53306,7 +53306,7 @@
             "reverb": "#outdoor_clean",
             "loop": "#hash_69f6a83806409e23",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
+            "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
@@ -53326,7 +53326,7 @@
             "reverb": "#room_bedroom",
             "loop": "#hash_69f6a83806409e23",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
+            "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
@@ -53346,8 +53346,8 @@
             "reverb": "#room_bedroom",
             "loop": "#hash_60aa34fc6ea42b7b",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": false,
@@ -53366,8 +53366,8 @@
             "reverb": "#narrow_stairwell",
             "loop": "#hash_60aa34fc6ea42b7b",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": false,
@@ -53386,8 +53386,8 @@
             "reverb": "#narrow_sewerpipe",
             "loop": "#hash_60aa34fc6ea42b7b",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": false,
@@ -53399,9 +53399,9 @@
     ],
     "scriptIdLookups": [],
     "streamKeysSABL": {
-        "streamKey1": "#hash_196f1d4d47653519",
+        "streamKey1": "#mp_silo_all_stream",
         "dataSize1": 4096,
-        "fileKey": "#hash_19eca471c2c0a744",
+        "fileKey": "#mp_silo_all_loaded",
         "fileLen": 68357120
     },
     "streamKeysSABS": {

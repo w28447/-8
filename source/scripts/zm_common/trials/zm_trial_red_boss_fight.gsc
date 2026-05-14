@@ -76,7 +76,7 @@ function private on_end( round_reset )
 // Size: 0x1f0
 function private start_boss_fight()
 {
-    level endon( #"end_game", #"hash_7646638df88a3656" );
+    level endon( #"end_game", #"trial_round_end" );
     
     /#
         level flag::set( "<dev string:x38>" );

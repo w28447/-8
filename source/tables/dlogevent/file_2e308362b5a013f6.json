@@ -1,6 +1,6 @@
 {
     "name": "#hash_2e308362b5a013f6",
-    "ddlDef": "#hash_2c79836a5791401e",
+    "ddlDef": "#gamedata/ddl/generated/dlog_event_dml.ddl",
     "unk18": 1,
     "unk19": 1,
     "unk1a": 0,
@@ -46,7 +46,7 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT32"
                     },

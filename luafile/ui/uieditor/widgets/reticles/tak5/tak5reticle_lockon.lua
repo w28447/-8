@@ -10,7 +10,7 @@ CoD.Tak5Reticle_LockOn.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local reticleBg = LUI.UIImage.new( 0, 0, 54, 96, 0, 0, 54, 96 )
 	reticleBg:setAlpha( 0.25 )
-	reticleBg:setImage( RegisterImage( 0x23BB3031AA3E882 ) )
+	reticleBg:setImage( RegisterImage( "uie_ui_hud_tak5_reticle_center_backing" ) )
 	self:addElement( reticleBg )
 	self.reticleBg = reticleBg
 	

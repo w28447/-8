@@ -3,7 +3,7 @@
     "baseWeapon": "#sig_buckler_lh",
     "displayname": "#weapon/sig_buckler_dw",
     "dualwieldWeaponName": "#sig_buckler_dw_mp",
-    "streamkey": "#hash_3fbe4476a3fbae56",
+    "streamkey": "#sig_buckler_lh_soundbank",
     "worldModelTagRight": "tag_weapon_left",
     "worldModelTagLeft": "tag_weapon_right",
     "stowedModelTag": "tag_stowed_back",

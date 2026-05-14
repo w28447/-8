@@ -3,7 +3,7 @@
     "baseWeapon": "#perseus_bolt_projectile",
     "displayname": "#zmweapon/ww_crossbow_t8_upgraded",
     "weapon70": "#special_crossbow",
-    "streamkey": "#hash_15d9ccc6309c2c16",
+    "streamkey": "#perseus_bolt_projectile_soundbank",
     "scrstr_8c8": [
         "tag_rail",
         "tag_arms_base",
@@ -106,7 +106,7 @@
     "image_e98": "#t7_icon_weapon_special_crossbow_bayonet_kf",
     "image_1048": "#t7_icon_weapon_hero_outrider_kf",
     "fireRumble": "#crossbow_fire",
-    "normalImpactSounds": "#hash_39bfdec1ee94b227",
-    "bounceImpactSounds": "#hash_39bfdec1ee94b227",
-    "dudImpactSounds": "#hash_39bfdec1ee94b227"
+    "normalImpactSounds": "#ww_crossbow_impact",
+    "bounceImpactSounds": "#ww_crossbow_impact",
+    "dudImpactSounds": "#ww_crossbow_impact"
 }

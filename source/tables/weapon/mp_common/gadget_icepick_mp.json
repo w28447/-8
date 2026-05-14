@@ -2,7 +2,7 @@
     "name": "#gadget_icepick_mp",
     "baseWeapon": "#gadget_icepick",
     "weapon70": "#icepick",
-    "streamkey": "#hash_5cb88f10249cd152",
+    "streamkey": "#gadget_icepick_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

@@ -26,7 +26,7 @@ function __init__()
         return;
     }
     
-    zm_trial::register_challenge( #"hash_168c1517a89a7cd", &on_begin, &on_end );
+    zm_trial::register_challenge( #"shocking_spree", &on_begin, &on_end );
 }
 
 // Namespace namespace_d9987f47/namespace_d9987f47
@@ -93,7 +93,7 @@ function private on_end( round_reset )
     
     level.var_21c2f32a = undefined;
     level.var_943b6e2b = undefined;
-    level notify( #"hash_31c14df051f6c165" );
+    level notify( #"stop_wallbuy_watcher" );
     
     foreach ( player in getplayers() )
     {
@@ -112,7 +112,7 @@ function private on_end( round_reset )
 // Size: 0x32, Type: bool
 function is_active()
 {
-    challenge = zm_trial::function_a36e8c38( #"hash_168c1517a89a7cd" );
+    challenge = zm_trial::function_a36e8c38( #"shocking_spree" );
     return isdefined( challenge );
 }
 
@@ -122,7 +122,7 @@ function is_active()
 // Size: 0x220
 function private wallbuy_watcher()
 {
-    level endon( #"hash_31c14df051f6c165", #"game_ended" );
+    level endon( #"stop_wallbuy_watcher", #"game_ended" );
     
     while ( true )
     {

@@ -20,7 +20,7 @@ LUI.createMenu.mp_revive_prompt = function ( f1_arg0, f1_arg1 )
 	
 	local prompt = LUI.UIText.new( 0, 0, -48, 86, 0, 0, -44.5, -16.5 )
 	prompt:setAlpha( 0 )
-	prompt:setText( Engine[0xF9F1239CFD921FE]( 0x48FE93EDC5208D8 ) )
+	prompt:setText( Engine[0xF9F1239CFD921FE]( "cpui/revive" ) )
 	prompt:setTTF( "ttmussels_demibold" )
 	prompt:setLetterSpacing( 1 )
 	prompt:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -88,7 +88,7 @@ LUI.createMenu.mp_revive_prompt = function ( f1_arg0, f1_arg1 )
 	local iconarrow = LUI.UIImage.new( 0, 0, -31.5, 32.5, 0, 0, 25.5, 89.5 )
 	iconarrow:setAlpha( 0.55 )
 	iconarrow:setScale( 0.75, 0.75 )
-	iconarrow:setImage( RegisterImage( 0xAB17136E34541E3 ) )
+	iconarrow:setImage( RegisterImage( "uie_ui_hud_revive_arrow" ) )
 	self:addElement( iconarrow )
 	self.iconarrow = iconarrow
 	

@@ -126,7 +126,7 @@ CoD.CraftUtility.EmblemMaterialCategory = {
 	{
 		category = 2,
 		type = "camo",
-		name = 0xEF406A9AA40F3C0
+		name = "menu/emblem_material_camo"
 	},
 	{
 		category = 3,
@@ -511,11 +511,11 @@ CoD.CraftUtility.Gunsmith.GetWeaponStatHeader = function ( f35_arg0 )
 	if f35_arg0 == "kills" then
 		return 0x38DA78DAF5A2E50
 	elseif f35_arg0 == "headshots" then
-		return 0xB7F726A4177AF0E
+		return "menu/gunsmith_headshots_caps"
 	elseif f35_arg0 == "accuracy" then
 		return 0x4F23623155E78C2
 	elseif f35_arg0 == "kd" then
-		return 0x3B7EF353743CDA4
+		return "menu/gunsmith_kd_caps"
 	elseif f35_arg0 == "destroyed" then
 		return 0x10D2D106F97C7E2
 	elseif f35_arg0 == "backstabber_kill" then
@@ -3305,9 +3305,9 @@ end
 CoD.CraftUtility.EmblemEditor_HandleBackInEditMode = function ( f259_arg0, f259_arg1, f259_arg2 )
 	Engine[0xD6328110E2C6C7C]( f259_arg2 )
 	if IsPaintshop( f259_arg2 ) == true then
-		f259_arg0.PaintshopFrame.CommonHeader.subtitle:setText( Engine[0xF9F1239CFD921FE]( 0xEBF0E83B479C6AB ) )
+		f259_arg0.PaintshopFrame.CommonHeader.subtitle:setText( Engine[0xF9F1239CFD921FE]( "menu/paintshop_caps" ) )
 	else
-		f259_arg0.EmblemEditorFrame.CommonHeader.subtitle:setText( Engine[0xF9F1239CFD921FE]( 0x5E93B286AFFF18D ) )
+		f259_arg0.EmblemEditorFrame.CommonHeader.subtitle:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_editor_caps" ) )
 	end
 	CoD.CraftUtility.SetEmblemEditorProperties( f259_arg2, Enum.CustomizationEditorMode[0x3EBDFD4FFDC7DA3], "editorMode" )
 	CoD.SwapFocusableElements( f259_arg2, f259_arg0.emptyFocusable, f259_arg0.layerCarousel )
@@ -4792,7 +4792,7 @@ end
 
 CoD.CraftUtility.EmblemEntitlements = {
 	{
-		nameHash = 0x2429A195CE84D1A,
+		nameHash = "sku",
 		storageFileType = Enum.StorageFileType[0xBCE8CBF08D7751],
 		entitlementRefs = {
 			0xDCD5350DF98F438
@@ -4874,7 +4874,7 @@ CoD.CraftUtility.GetPaintjobEditorTitle = function ( f402_arg0, f402_arg1 )
 	if CoD.CraftUtility.IsEditMode( f402_arg0 ) then
 		return 0x4C605091FA75941
 	else
-		return 0xEBF0E83B479C6AB
+		return "menu/paintshop_caps"
 	end
 end
 
@@ -4882,7 +4882,7 @@ CoD.CraftUtility.GetEmblemEditorTitle = function ( f403_arg0, f403_arg1 )
 	if CoD.CraftUtility.IsEditMode( f403_arg0 ) then
 		return 0x4C605091FA75941
 	else
-		return 0x5E93B286AFFF18D
+		return "menu/emblem_editor_caps"
 	end
 end
 

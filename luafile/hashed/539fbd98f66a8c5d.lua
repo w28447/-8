@@ -59,7 +59,7 @@ CoD.WZTeamScoreboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 		end
 	end, function ( f7_arg0, f7_arg1, f7_arg2 )
 		if not IsScoreboardPlayerSelf( f7_arg0, f7_arg2 ) and IsScoreboardPlayerMuted( f7_arg2, f7_arg0 ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x39685D9366015DB, nil, nil )
+			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/unmute_player", nil, nil )
 			return true
 		elseif not IsScoreboardPlayerSelf( f7_arg0, f7_arg2 ) then
 			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x12FAB6BE7D9F2EA, nil, nil )

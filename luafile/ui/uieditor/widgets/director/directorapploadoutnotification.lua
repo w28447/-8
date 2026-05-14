@@ -11,7 +11,7 @@ CoD.DirectorAppLoadoutNotification.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local diamond = LUI.UIImage.new( 0.5, 0.5, -10, 10, 1, 1, -17, 13 )
 	diamond:setRGB( 0.67, 0.75, 0.17 )
 	diamond:setAlpha( 0 )
-	diamond:setImage( RegisterImage( 0x12BCD69A713EF90 ) )
+	diamond:setImage( RegisterImage( "uie_ui_menu_common_diamond" ) )
 	self:addElement( diamond )
 	self.diamond = diamond
 	
@@ -24,7 +24,7 @@ CoD.DirectorAppLoadoutNotification.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local diamond2 = LUI.UIImage.new( 0.5, 0.5, -10, 10, 1, 1, -21, 9 )
 	diamond2:setRGB( 0.1, 0.12, 0.03 )
 	diamond2:setAlpha( 0 )
-	diamond2:setImage( RegisterImage( 0x12BCD69A713EF90 ) )
+	diamond2:setImage( RegisterImage( "uie_ui_menu_common_diamond" ) )
 	self:addElement( diamond2 )
 	self.diamond2 = diamond2
 	

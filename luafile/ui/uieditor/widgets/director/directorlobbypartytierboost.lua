@@ -24,7 +24,7 @@ CoD.DirectorLobbyPartyTierBoost.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local Header = LUI.UIText.new( 0, 0, 37, 369, 0.5, 0.5, -22, -1 )
 	Header:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	Header:setText( LocalizeToUpperString( 0x687BCA25FDF9F2B ) )
+	Header:setText( LocalizeToUpperString( "menu/tier_boost" ) )
 	Header:setTTF( "ttmussels_regular" )
 	Header:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
 	Header:setLetterSpacing( 3 )

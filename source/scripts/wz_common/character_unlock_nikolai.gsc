@@ -213,7 +213,7 @@ function function_4ac25840( dead_team )
 function private function_587e512e()
 {
     self playsoundtoplayer( #"hash_1c4290ca92541819", self );
-    self playsound( #"hash_8489803fbb0e650" );
+    self playsound( #"evt_metal_gate" );
     
     foreach ( player in getplayers( self.team ) )
     {

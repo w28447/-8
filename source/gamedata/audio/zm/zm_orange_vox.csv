@@ -15,7 +15,7 @@
 #location_enter,#facility_geological,#vox_facility_geological_enter,0,0,TRUE,FALSE,FALSE,FALSE
 #location_enter,#ice_flow,#vox_golden_pap_react,0,0,TRUE,FALSE,FALSE,FALSE
 #punchcard_1,#pickup,#vox_punchcard_1_pickup,0,0,FALSE,FALSE,FALSE,FALSE
-#punchcard_2,#hash_218450780e0957b3,#hash_35c946ee7d89155d,0,0,FALSE,FALSE,FALSE,FALSE
+#punchcard_2,#pickup_punched,#vox_punchcard_2_pickup_punched,0,0,FALSE,FALSE,FALSE,FALSE
 #punchcard_2,#hash_493b4e6a8f1278d,#hash_52378df470d0a88b,0,0,FALSE,FALSE,FALSE,FALSE
 #punchcard_1,#insert,#vox_punchcard_1_insert,0,0,FALSE,FALSE,FALSE,FALSE
 #punchcard_2,#insert_0,#vox_punchcard_2_insert_0,0,0,FALSE,FALSE,FALSE,FALSE
@@ -45,10 +45,10 @@
 #musicbox,#start,#vox_musicbox_start,0,0,FALSE,FALSE,FALSE,FALSE
 #musicbox,#end,#vox_musicbox_end,0,0,FALSE,FALSE,FALSE,FALSE
 #musicbox,#first,#vox_musicbox_first,0,0,FALSE,FALSE,FALSE,FALSE
-#hash_fd2a7627792d1,#nikolai_0,#hash_15c6a8ee5ba234c,0,0,FALSE,FALSE,FALSE,FALSE
-#hash_fd2a7627792d1,#nikolai_1,#hash_15c6b8ee5ba24ff,0,0,FALSE,FALSE,FALSE,FALSE
-#hash_fcfa762778db8,#nikolai_1,#hash_34430a1091f48116,0,0,FALSE,FALSE,FALSE,FALSE
-#hash_fcfa762778db8,#nikolai_1_0,#hash_5428b7fc315ec141,0,0,FALSE,FALSE,FALSE,FALSE
+#round_end_1,#nikolai_0,#vox_round_end_1_nikolai_0,0,0,FALSE,FALSE,FALSE,FALSE
+#round_end_1,#nikolai_1,#vox_round_end_1_nikolai_1,0,0,FALSE,FALSE,FALSE,FALSE
+#round_end_2,#nikolai_1,#vox_round_end_2_nikolai_1,0,0,FALSE,FALSE,FALSE,FALSE
+#round_end_2,#nikolai_1_0,#vox_round_end_2_nikolai_1_0,0,0,FALSE,FALSE,FALSE,FALSE
 #roundstart,#special,#vox_roundstart_special,0,0,FALSE,FALSE,FALSE,FALSE
 #pablo,#intro_0,#vox_pablo_intro_0,0,0,FALSE,FALSE,FALSE,FALSE
 #pablo,#intro_1,#vox_pablo_intro_1,0,0,FALSE,FALSE,FALSE,FALSE
@@ -150,7 +150,7 @@
 #device,#fail,#vox_device_fail,0,0,FALSE,FALSE,FALSE,FALSE
 #device,#pap_give,#vox_device_pap_give,0,0,FALSE,FALSE,FALSE,FALSE
 #device,#pap_take,#vox_device_pap_take,0,0,FALSE,FALSE,FALSE,FALSE
-#device,#hash_35fe5458525dd655,#hash_549030026224cbce,0,0,FALSE,FALSE,FALSE,FALSE
+#device,#pap_give_final,#vox_device_pap_give_final,0,0,FALSE,FALSE,FALSE,FALSE
 #device,#hash_117daf37fe5804d6,#hash_2afdd7a8acba7721,0,0,FALSE,FALSE,FALSE,FALSE
 #device,#hash_66f0450635c596c9,#hash_2fbc5c784ba782b6,0,0,FALSE,FALSE,FALSE,FALSE
 #travel,#pap_island,#vox_travel_pap_island,0,0,FALSE,FALSE,FALSE,FALSE

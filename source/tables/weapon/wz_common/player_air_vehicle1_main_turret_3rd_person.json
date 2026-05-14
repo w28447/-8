@@ -3,7 +3,7 @@
     "baseWeapon": "#player_air_vehicle1_main_turret_3rd_person",
     "displayname": "#killstreak/overwatch_snipers",
     "weapon70": "#overwatch_helicopter",
-    "streamkey": "#hash_a05199d6857b9f2",
+    "streamkey": "#player_air_vehicle1_main_turret_3rd_person_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -44,7 +44,7 @@
     "tunables2": "#hash_24523f8d4146bcdb",
     "tracers": [
         "#hunter_bullet",
-        "#hash_62577fe123865537"
+        "#hunter_bullet_enemy"
     ],
     "turretAnimSettings": "#player_helicopter_pilot",
     "fireRumble": "#wasp_mg_turret_fire",

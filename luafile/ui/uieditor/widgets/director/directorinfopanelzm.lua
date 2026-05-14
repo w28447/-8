@@ -200,7 +200,7 @@ CoD.DirectorInfoPanelZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local IntStatHeader2 = LUI.UIText.new( 0, 0, 185, 355, 1, 1, -303, -285 )
 	IntStatHeader2:setRGB( ColorSet.T8__GOLD.r, ColorSet.T8__GOLD.g, ColorSet.T8__GOLD.b )
 	IntStatHeader2:setAlpha( 0 )
-	IntStatHeader2:setText( LocalizeToUpperString( 0x8E2A982E7E6C57A ) )
+	IntStatHeader2:setText( LocalizeToUpperString( "zmui/headshots_caps" ) )
 	IntStatHeader2:setTTF( "skorzhen" )
 	IntStatHeader2:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	IntStatHeader2:setAlignment( Enum.LUIAlignment[0x6ED4298C93DC5ED] )

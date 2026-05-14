@@ -1,0 +1,12 @@
+{
+    "name": "#loot_tags_bib",
+    "type": "#tag",
+    "material": "#hash_4cc2887435b9bd3c",
+    "bundle": {
+        "type": "#tag",
+        "entitlement": "#hash_289cf2f06422b2aa",
+        "title": "localized18#tags/bib",
+        "icon": "image#ui_icon_tags_bib",
+        "isdefault": 0
+    }
+}

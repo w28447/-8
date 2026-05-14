@@ -114,7 +114,7 @@ CoD.ZMAARTrialTabRoundList.__clipsPerState = {
 			f13_arg0.ZMAARTrialTabRoundListInternal.Medal:completeAnimation()
 			f13_arg0.ZMAARTrialTabRoundListInternal.MedalText:completeAnimation()
 			f13_arg0.ZMAARTrialTabRoundListInternal.MedalAchievedText:completeAnimation()
-			f13_arg0.ZMAARTrialTabRoundListInternal.ListBg:setImage( RegisterImage( 0xA703FE14F98C63C ) )
+			f13_arg0.ZMAARTrialTabRoundListInternal.ListBg:setImage( RegisterImage( "uie_trial_rules_bronze_normal" ) )
 			f13_arg0.ZMAARTrialTabRoundListInternal.Medal:setImage( RegisterImage( 0x2638A7737E9BD02 ) )
 			f13_arg0.ZMAARTrialTabRoundListInternal.MedalText:setRGB( 0.66, 0.3, 0.2 )
 			f13_arg0.ZMAARTrialTabRoundListInternal.MedalText:setText( LocalizeToUpperString( "zmtrials/bronze" ) )

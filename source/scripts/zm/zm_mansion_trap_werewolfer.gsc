@@ -51,7 +51,7 @@ function __init__()
     zm_traps::register_trap_basic_info( "werewolfer", &function_670dda89, &zm_trap_electric::trap_audio );
     zm_traps::register_trap_damage( "werewolfer", &function_436d9a24, &ai_damage );
     level flag::init( #"hash_2287cf5d6310237e" );
-    level flag::init( #"hash_6f483dda6f8ab19d" );
+    level flag::init( #"werewolf_trap_active" );
     
     if ( !isdefined( level.var_7aa02c24 ) )
     {
@@ -73,7 +73,7 @@ function __main__()
     
     level flag::wait_till( "all_players_spawned" );
     level.var_4cca20a9 = getent( "mdl_ww_trap_machine", "targetname" );
-    level.var_4cca20a9 clientfield::set( "" + #"hash_17df66ef5f71c0de", 1 );
+    level.var_4cca20a9 clientfield::set( "" + #"trap_light_wolf", 1 );
 }
 
 // Namespace zm_trap_werewolfer/zm_mansion_trap_werewolfer
@@ -92,7 +92,7 @@ function function_670dda89()
     }
     
     level notify( #"traps_activated", { #var_be3f58a:self.script_string } );
-    level flag::set( #"hash_6f483dda6f8ab19d" );
+    level flag::set( #"werewolf_trap_active" );
     level thread function_408fcb87();
     level exploder::exploder( "fxexp_ele_trap_activate" );
     
@@ -102,7 +102,7 @@ function function_670dda89()
     }
     
     self.mdl_handle rotatepitch( 90, 0.5 );
-    level.var_4cca20a9 clientfield::set( "" + #"hash_17df66ef5f71c0de", 2 );
+    level.var_4cca20a9 clientfield::set( "" + #"trap_light_wolf", 2 );
     fx_points = struct::get_array( self.target, "targetname" );
     
     for ( i = 0; i < fx_points.size ; i++ )
@@ -115,7 +115,7 @@ function function_670dda89()
     self waittilltimeout( self._trap_duration, #"trap_deactivate" );
     self notify( #"trap_done" );
     level exploder::stop_exploder( "fxexp_ele_trap_activate" );
-    level flag::clear( #"hash_6f483dda6f8ab19d" );
+    level flag::clear( #"werewolf_trap_active" );
     self thread function_38b44aab();
 }
 
@@ -127,7 +127,7 @@ function function_408fcb87()
 {
     t_trap = getent( "werewolfer", "script_noteworthy" );
     
-    while ( level flag::get( #"hash_6f483dda6f8ab19d" ) )
+    while ( level flag::get( #"werewolf_trap_active" ) )
     {
         foreach ( player in getplayers() )
         {
@@ -152,7 +152,7 @@ function function_38b44aab()
     wait n_cooldown;
     self.mdl_handle rotatepitch( -90, 0.5 );
     wait 0.5;
-    level.var_4cca20a9 clientfield::set( "" + #"hash_17df66ef5f71c0de", 1 );
+    level.var_4cca20a9 clientfield::set( "" + #"trap_light_wolf", 1 );
     level notify( #"traps_available", { #var_be3f58a:self.script_string } );
 }
 

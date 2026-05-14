@@ -59,7 +59,7 @@ CoD.StartMenu_Options_Network_OverviewPanel.new = function ( f1_arg0, f1_arg1, f
 	
 	local SupportLabel = LUI.UIText.new( 0.5, 0.5, -440, 265, 0, 0, 0, 30 )
 	SupportLabel:setRGB( 0.63, 0.57, 0.2 )
-	SupportLabel:setText( LocalizeToUpperString( 0x2966DEA29EC8CAB ) )
+	SupportLabel:setText( LocalizeToUpperString( "menu/options_network_support_link" ) )
 	SupportLabel:setTTF( "ttmussels_regular" )
 	SupportLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	self:addElement( SupportLabel )

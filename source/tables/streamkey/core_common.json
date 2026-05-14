@@ -7681,7 +7681,7 @@
             "keyFlags": 1
         },
         {
-            "name": "#hash_24b05dd8d7d6b6e2",
+            "name": "#xanim_mm_zombie_stand_idle",
             "xPakEntry": {
                 "key": "#hash_f06b1be91090176e",
                 "offset": 0,
@@ -14781,7 +14781,7 @@
             "keyFlags": 1
         },
         {
-            "name": "#hash_1213fecb63fcd911",
+            "name": "#xanim_mm_zombie_sprint",
             "xPakEntry": {
                 "key": "#hash_fcdf320508a03c28",
                 "offset": 0,
@@ -25361,7 +25361,7 @@
             "keyFlags": 1
         },
         {
-            "name": "#hash_534ff6a13f01e207",
+            "name": "#core_common_all_stream",
             "xPakEntry": {
                 "key": "#hash_e1cdee4132068c63",
                 "offset": 0,
@@ -25380,7 +25380,7 @@
             "keyFlags": 3
         },
         {
-            "name": "#hash_76e75d71a262d7ce",
+            "name": "#core_common_all_loaded",
             "xPakEntry": {
                 "key": "#hash_e1cdee4132068c63",
                 "offset": 0,

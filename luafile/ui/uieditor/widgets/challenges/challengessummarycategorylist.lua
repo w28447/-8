@@ -52,7 +52,7 @@ CoD.ChallengesSummaryCategoryList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local Career = CoD.ChallengesSummaryCategory.new( f1_arg0, f1_arg1, 0.5, 0.5, -343.5, -143.5, 0.5, 0.5, -112.5, 112.5 )
 	Career.SummaryCategory.Icon:setImage( RegisterImage( 0xD5763EFD0940486 ) )
-	Career.SummaryCategory.Name:setText( Engine[0xF9F1239CFD921FE]( 0x70C18F2AE62C195 ) )
+	Career.SummaryCategory.Name:setText( Engine[0xF9F1239CFD921FE]( "challenge/career" ) )
 	Career:subscribeToGlobalModel( f1_arg1, "ChallengesMPCategoryStats", "career", function ( model )
 		Career:setModel( model, f1_arg1 )
 	end )

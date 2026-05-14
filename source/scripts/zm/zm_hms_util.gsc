@@ -261,10 +261,10 @@ function function_6a0d675d( str_alias, n_variant = int( -1 ), b_wait_if_busy = 0
 // Params 0
 // Checksum 0xc851b75d, Offset: 0xbc8
 // Size: 0x54
-function function_3c173d37()
+function vo_stop_all()
 {
-    level notify( #"hash_1a91b42d31e0b28d" );
-    level zm_vo::function_3c173d37( ( 0, 0, 0 ), 2147483647 );
+    level notify( #"stop_all_vo" );
+    level zm_vo::vo_stop_all( ( 0, 0, 0 ), 2147483647 );
     level function_29fe9a5d();
 }
 
@@ -468,7 +468,7 @@ function function_b2e1326( var_58df9892, var_1dc9c1bf = 1 )
             }
             else
             {
-                self sethintstring( #"hash_23c1c09e94181fdb", var_1dc9c1bf );
+                self sethintstring( #"zombie/button_buy_trap", var_1dc9c1bf );
             }
             
             break;
@@ -1014,7 +1014,7 @@ function function_df67a12d( category, subcategory )
         while ( true )
         {
             waitframe( 1 );
-            str_command = getdvarstring( #"hash_6c7113bf98c41367", "<dev string:x9d>" );
+            str_command = getdvarstring( #"zm_hms_util_cmd", "<dev string:x9d>" );
             
             switch ( str_command )
             {
@@ -1025,7 +1025,7 @@ function function_df67a12d( category, subcategory )
                     break;
             }
             
-            setdvar( #"hash_6c7113bf98c41367", "<dev string:x9d>" );
+            setdvar( #"zm_hms_util_cmd", "<dev string:x9d>" );
         }
     }
 

@@ -3,7 +3,7 @@
     "baseWeapon": "#molotov_fire",
     "displayname": "#weapon/incendiary_grenade",
     "weapon70": "#eq_molotov",
-    "streamkey": "#hash_5c65c8801ae95e4c",
+    "streamkey": "#molotov_fire_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

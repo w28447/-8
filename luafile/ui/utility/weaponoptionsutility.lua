@@ -153,19 +153,19 @@ CoD.WeaponOptionsUtility.lootReticlesData = {
 	}
 }
 CoD.WeaponOptionsUtility.AlternateCamoLootIDLookup = {
-	[0x1DFE074FEBC1A47] = 0x59A388BF07ABE52,
+	["camo_active_ar_accurate_base"] = 0x59A388BF07ABE52,
 	[0x2942BCBD7F7246F] = 0x5B27C275D00AFF6,
-	[0x28DE2E37D153637] = 0xC8771E638D67490,
-	[0x325109E26315E0E] = 0xE14EDE6FF41AFB,
+	["camo_active_lmg_standard_base"] = 0xC8771E638D67490,
+	[0x325109E26315E0E] = "loot_pistol_standard_sig_01",
 	[0x5A80B864AB2ADC1] = 0x42D89F32491DB77,
 	[0xC5ADF2858A5FEC3] = 0x49CB9D6A4494AB8,
 	[0xDF1F30EBFF59926] = 0x230D8D739579C05,
-	[0x4DB1E39878EB37B] = 0x59A388BF07ABE52,
+	["camo_active_headshot_wrapper"] = 0x59A388BF07ABE52,
 	[0xBD97AD0F3FACEC2] = 0xC8771E638D67490,
 	[0xC4A4AD82AFB4F73] = 0x49CB9D6A4494AB8,
 	[0x5101C7F1BB3A40E] = 0x42D89F32491DB77,
 	[0x91335CF48FD4407] = 0x5B27C275D00AFF6,
-	[0x90DB1296EA96393] = 0xE14EDE6FF41AFB,
+	[0x90DB1296EA96393] = "loot_pistol_standard_sig_01",
 	[0x1FAD9ED9BDABAAC] = 0x230D8D739579C05
 }
 CoD.WeaponOptionsUtility.GoldCamoRef = 0x6C5B9DFD41304A0
@@ -522,7 +522,7 @@ CoD.WeaponOptionsUtility.GetWeaponOptionsTable = function ( f10_arg0, f10_arg1, 
 			elseif f11_arg2 == CoD.CACUtility.mpPrestigeAttachments[1].ref then
 				f11_local5 = Engine[0xF9F1239CFD921FE]( 0x66658F1A18557C1, Engine.GetItemName( f11_arg1 ) )
 			elseif f11_arg2 == CoD.CACUtility.mpPrestigeAttachments[2].ref then
-				f11_local5 = Engine[0xF9F1239CFD921FE]( 0xC8CDEE70D07873D, Engine.GetItemName( f11_arg1 ) )
+				f11_local5 = Engine[0xF9F1239CFD921FE]( "menu/weapon_prestige_kill_counter", Engine.GetItemName( f11_arg1 ) )
 			end
 			f11_local6 = f11_local0:create( "name" )
 			f11_local6:set( f11_local2 )
@@ -1335,7 +1335,7 @@ DataSources.ActiveCamoStagesList = DataSourceHelpers.ListSetup( "ActiveCamoStage
 					f42_local11 = false
 				end
 				local f42_local12 = f42_local5.stages[f42_local8]
-				if not f42_local12[0xFA3391DB68E4425] or f42_local12[0xFA3391DB68E4425] ~= 1 then
+				if not f42_local12["disabled"] or f42_local12["disabled"] ~= 1 then
 					local f42_local13 = Engine.TableLookup( CoD.CACUtility.CamoOptionsTable, Enum[0x5DD5CC8AEA7314B][0xA6342D60A0D5AAE], Enum[0x5DD5CC8AEA7314B][0xAA94CABDA68EB21], f42_local12[0xEB90A3D94D23B68] )
 					local f42_local14 = Engine[0xF9F1239CFD921FE]( 0x55472550AF1CAB2 )
 					if f42_local11 and f42_local7 < f42_local8 then
@@ -1426,7 +1426,7 @@ DataSources.WeaponCharmList = ListHelper_SetupDataSource( "WeaponCharmList", fun
 	if f46_local5 then
 		for f46_local16, f46_local17 in ipairs( f46_local5 ) do
 			if f46_local16 ~= 1 then
-				local f46_local9 = CoD.BlackMarketTableUtility.LootInfoLookup( f46_arg0, f46_local17[0x28887F70BF5EBA], f46_local17[0x562938AF86028A0], f46_local4 )
+				local f46_local9 = CoD.BlackMarketTableUtility.LootInfoLookup( f46_arg0, f46_local17["lootid"], f46_local17[0x562938AF86028A0], f46_local4 )
 				local f46_local10 = f46_local9.isLoot or f46_local9.isEntitlement
 				if f46_local9.owned and f46_local10 then
 					local f46_local11 = table.insert
@@ -1437,8 +1437,8 @@ DataSources.WeaponCharmList = ListHelper_SetupDataSource( "WeaponCharmList", fun
 						category = 0xF5E657D5E5ED4E7,
 						icon = f46_local17[0xBFF4CC56C2092F0] or "blacktransparent",
 						itemIndex = f46_local16 - 1,
-						frontendModel = f46_local17[0x8A334535BE3AFB1] and Engine[0xC53F8D38DF9042B]( f46_local17[0x8A334535BE3AFB1] ) or 0x0,
-						description = f46_local17[0xCC44970C8397929] and Engine[0xF9F1239CFD921FE]( f46_local17[0xCC44970C8397929] ) or "",
+						frontendModel = f46_local17["charmfrontendmodel"] and Engine[0xC53F8D38DF9042B]( f46_local17["charmfrontendmodel"] ) or 0x0,
+						description = f46_local17["description"] and Engine[0xF9F1239CFD921FE]( f46_local17["description"] ) or "",
 						isEquippedFn = CoD.WeaponOptionsUtility.IsWeaponCharmEquipped,
 						isNewFn = CoD.BreadcrumbUtility.IsWeaponAccessoryNew,
 						unlockInfo = f46_local9.unlockInfo or ""
@@ -1472,7 +1472,7 @@ DataSources.WeaponCharmList = ListHelper_SetupDataSource( "WeaponCharmList", fun
 						f46_local15 = f46_local9.isEntitlement or false
 					end
 					f46_local14.hideRarity = f46_local15
-					f46_local14.lootId = f46_local17[0x28887F70BF5EBA]
+					f46_local14.lootId = f46_local17["lootid"]
 					f46_local13.models = f46_local14
 					f46_local11( f46_local12, f46_local13 )
 				end
@@ -1547,15 +1547,15 @@ DataSources.WeaponDeathFxList = ListHelper_SetupDataSource( "WeaponDeathFxList",
 	local f49_local4 = {
 		weaponRef = f49_local3
 	}
-	local f49_local5 = Engine[0xA7E3CD65E63086F]( 0xA8F031F7C7B2ED8 )
+	local f49_local5 = Engine[0xA7E3CD65E63086F]( "weapondeathfx_list" )
 	if f49_local5 then
 		for f49_local17, f49_local18 in ipairs( f49_local5 ) do
 			if f49_local17 ~= 1 then
-				local f49_local9 = CoD.BlackMarketTableUtility.LootInfoLookup( f49_arg0, f49_local18[0x28887F70BF5EBA], f49_local18[0x562938AF86028A0], f49_local4 )
+				local f49_local9 = CoD.BlackMarketTableUtility.LootInfoLookup( f49_arg0, f49_local18["lootid"], f49_local18[0x562938AF86028A0], f49_local4 )
 				local f49_local10 = f49_local9.isLoot or f49_local9.isEntitlement
 				if f49_local9.owned and f49_local10 then
 					local f49_local11 = true
-					if f49_local18[0x28887F70BF5EBA] == 0x9A9BD2389B3C356 and CoD.BaseUtility.IsDvarEnabled( "ui_hideRavenDeathFX" ) then
+					if f49_local18["lootid"] == 0x9A9BD2389B3C356 and CoD.BaseUtility.IsDvarEnabled( "ui_hideRavenDeathFX" ) then
 						f49_local11 = false
 					end
 					if f49_local11 then
@@ -1619,7 +1619,7 @@ DataSources.WeaponDeathFxList = ListHelper_SetupDataSource( "WeaponDeathFxList",
 							end
 						end
 						f49_local15.hideRarity = f49_local16
-						f49_local15.lootId = f49_local18[0x28887F70BF5EBA]
+						f49_local15.lootId = f49_local18["lootid"]
 						f49_local14.models = f49_local15
 						f49_local12( f49_local13, f49_local14 )
 					end
@@ -1726,7 +1726,7 @@ CoD.WeaponOptionsUtility.GetWeaponOptionItemInfo = function ( f53_arg0, f53_arg1
 end
 
 CoD.WeaponOptionsUtility.IsDarkmatterLockedForDLC = function ( f54_arg0, f54_arg1, f54_arg2, f54_arg3, f54_arg4 )
-	if Engine.TableLookup( CoD.CACUtility.CamoOptionsTable, Enum[0x5DD5CC8AEA7314B][0xAA94CABDA68EB21], Enum[0x5DD5CC8AEA7314B][0xB79D07B3744EA1A], "camo", Enum[0x5DD5CC8AEA7314B][0xA6342D60A0D5AAE], f54_arg4 ) == 0x229B17B6185BE37 then
+	if Engine.TableLookup( CoD.CACUtility.CamoOptionsTable, Enum[0x5DD5CC8AEA7314B][0xAA94CABDA68EB21], Enum[0x5DD5CC8AEA7314B][0xB79D07B3744EA1A], "camo", Enum[0x5DD5CC8AEA7314B][0xA6342D60A0D5AAE], f54_arg4 ) == "camo_darkmatter" then
 		return CoD.WeaponOptionsUtility.IsGoldCamoLockedForWeapon( f54_arg0, f54_arg1, f54_arg2 )
 	else
 		return false
@@ -1940,8 +1940,8 @@ CoD.WeaponOptionsUtility.IsWeaponSignatureThemeUnlocked = function ( f63_arg0, f
 				local f63_local8 = f63_local4.signatureWeaponModelSlot:get()
 				if f63_local7 then
 					for f63_local17, f63_local18 in pairs( Engine[0x9F0BB7D52A7A978]( f63_local7 ) ) do
-						if f63_local18[0x3CF8E8F9081468B] == f63_local8 then
-							local f63_local12, f63_local13 = CoD.BlackMarketTableUtility[0x5DDB72D0172A035]( f63_arg2, f63_local18[0x28887F70BF5EBA] )
+						if f63_local18["index"] == f63_local8 then
+							local f63_local12, f63_local13 = CoD.BlackMarketTableUtility[0x5DDB72D0172A035]( f63_arg2, f63_local18["lootid"] )
 							if f63_local12 then
 								return f63_local13
 							end
@@ -2347,7 +2347,7 @@ end
 CoD.WeaponOptionsUtility.GetWeaponDeathFxIconForItemIndex = function ( f86_arg0 )
 	local f86_local0 = tonumber( f86_arg0 )
 	if f86_local0 > CoD.CACUtility.EmptyItemIndex then
-		local f86_local1 = Engine[0xA7E3CD65E63086F]( 0xA8F031F7C7B2ED8 )
+		local f86_local1 = Engine[0xA7E3CD65E63086F]( "weapondeathfx_list" )
 		if f86_local1 then
 			for f86_local5, f86_local6 in ipairs( f86_local1 ) do
 				if f86_local5 - 1 == f86_local0 then
@@ -2972,7 +2972,7 @@ CoD.WeaponOptionsUtility.DeathFxCharacterUpdate = function ( f116_arg0, f116_arg
 	local f116_local1 = CoD.BaseUtility.GetMenuStorageLoadoutBuffer( f116_arg0 )
 	local f116_local2 = 1
 	if f116_local1 and f116_local1[0x8A76647E94009C3] then
-		local f116_local3 = f116_local1[0x8A76647E94009C3][0xDF5E6BB54765F4C]:get()
+		local f116_local3 = f116_local1[0x8A76647E94009C3]["characterindex"]:get()
 		if not f116_local3 or f116_local3 == 0 then
 			f116_local3 = 1
 		end

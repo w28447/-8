@@ -148,7 +148,7 @@ function private on_player_spawned()
 // Size: 0x144
 function function_40c7a8fd()
 {
-    level endon( #"hash_7646638df88a3656", #"end_game" );
+    level endon( #"trial_round_end", #"end_game" );
     wait 3.5;
     
     foreach ( player in getplayers() )
@@ -169,7 +169,7 @@ function function_40c7a8fd()
 function private function_69fa75f8()
 {
     self endon( #"disconnect" );
-    level endon( #"hash_7646638df88a3656" );
+    level endon( #"trial_round_end" );
     
     while ( true )
     {
@@ -199,7 +199,7 @@ function private function_69fa75f8()
 function function_6d8cf829()
 {
     self endon( #"disconnect" );
-    level endon( #"hash_7646638df88a3656", #"end_game" );
+    level endon( #"trial_round_end", #"end_game" );
     
     while ( true )
     {
@@ -218,7 +218,7 @@ function private function_ad641569()
     self notify( "3d0a827cbf03ae74" );
     self endon( "3d0a827cbf03ae74" );
     self endon( #"disconnect" );
-    level endoncallback( &function_1a109202, #"hash_7646638df88a3656", #"host_migration_begin" );
+    level endoncallback( &function_1a109202, #"trial_round_end", #"host_migration_begin" );
     
     while ( true )
     {
@@ -275,7 +275,7 @@ function function_1a109202( str_notify )
 // Size: 0xb0
 function private function_604ff1eb()
 {
-    level endon( #"hash_7646638df88a3656", #"end_game" );
+    level endon( #"trial_round_end", #"end_game" );
     wait 5;
     
     foreach ( player in getplayers() )

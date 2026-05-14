@@ -541,7 +541,7 @@ function function_f7dbfdf9( player, unitrigger )
     if ( isdefined( player ) )
     {
         player notify( #"crafting_fail" );
-        player playsound( #"hash_15b7f680d9f65b62" );
+        player playsound( #"zmb_crafting_fail" );
     }
 }
 
@@ -554,7 +554,7 @@ function function_d95a600f( player, unitrigger )
     if ( isdefined( player ) )
     {
         player notify( #"crafting_success" );
-        player playsound( #"hash_421a00cb329b2a45" );
+        player playsound( #"zmb_crafting_success" );
     }
 }
 
@@ -754,7 +754,7 @@ function function_f665fde0( trig )
     unitrigger_stub.script_parameters = trig.script_parameters;
     unitrigger_stub.script_string = trig.script_string;
     unitrigger_stub.cursor_hint = "HINT_NOICON";
-    unitrigger_stub.hint_string = #"hash_a502ccb8fec4c7a";
+    unitrigger_stub.hint_string = #"zombie/build_piece_missing";
     unitrigger_stub.script_unitrigger_type = "unitrigger_box_use";
     unitrigger_stub.require_look_at = 1;
     unitrigger_stub.require_look_toward = 0;
@@ -1571,7 +1571,7 @@ function private function_9693e041( player )
 {
     if ( player function_7bffa1ac( self.blueprint.w_result ) )
     {
-        self.hint_string = #"hash_718d32f9e8cea17";
+        self.hint_string = #"zombie/build_piece_only_one";
         self.cost = undefined;
         return true;
     }
@@ -1595,14 +1595,14 @@ function private function_9693e041( player )
         }
         else
         {
-            self.hint_string = #"hash_53fd856df9288be7";
+            self.hint_string = #"zombie/build_piece_have_one";
             self.cost = undefined;
             return true;
         }
     }
     else if ( !player function_2d53738e( self.blueprint.w_result ) && ( isdefined( self.blueprint.var_c028dcfe ) && self.blueprint.var_c028dcfe && !player function_48ce9379( self.blueprint.w_result ) || isdefined( level.var_905507c3 ) && level.var_905507c3 ) )
     {
-        str = self.blueprint.var_abd9b2d0;
+        str = self.blueprint.purchasepromptfree;
         str_pc = function_c9163c5d( str );
         hint_str = zm_utility::function_d6046228( str, str_pc );
         self.hint_string = isdefined( hint_str ) ? hint_str : "";
@@ -1616,7 +1616,7 @@ function private function_9693e041( player )
     {
         if ( !( isdefined( _shad_turret_debug_server ) && _shad_turret_debug_server ) )
         {
-            str = self.blueprint.var_391591d0;
+            str = self.blueprint.purchaseprompt;
             str_pc = function_c9163c5d( str );
             self.hint_string = zm_utility::function_d6046228( str, str_pc );
         }
@@ -1625,7 +1625,7 @@ function private function_9693e041( player )
         
         if ( self.cost == 0 )
         {
-            str = self.blueprint.var_abd9b2d0;
+            str = self.blueprint.purchasepromptfree;
             str_pc = function_c9163c5d( str );
             hint_str = zm_utility::function_d6046228( str, str_pc );
             self.hint_string = isdefined( hint_str ) ? hint_str : "";
@@ -1980,7 +1980,7 @@ function private function_15d10d06( player )
         return true;
     }
     
-    str = self.blueprint.var_391591d0;
+    str = self.blueprint.purchaseprompt;
     str_pc = function_c9163c5d( str );
     self.hint_string = zm_utility::function_d6046228( str, str_pc );
     return true;
@@ -2179,13 +2179,13 @@ function private function_42673a26( player )
                 setdvar( #"hash_43086839e587cc6c", "<dev string:x1be>" );
             }
             
-            component = getdvarstring( #"hash_3a357be22156749e" );
+            component = getdvarstring( #"devgui_crafting_component" );
             
             if ( component != "<dev string:x1be>" )
             {
                 w_comp = get_component( component );
                 array::thread_all( devgui_get_players(), &function_3e29352d, w_comp );
-                setdvar( #"hash_3a357be22156749e", "<dev string:x1be>" );
+                setdvar( #"devgui_crafting_component", "<dev string:x1be>" );
             }
             
             wait 1;

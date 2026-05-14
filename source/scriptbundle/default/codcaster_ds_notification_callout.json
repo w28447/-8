@@ -1,7 +1,7 @@
 {
     "hash_dfedf08e": 0,
     "categoryindex": 0,
-    "description": "localized17#hash_173e132a6781abe8",
+    "description": "localized17#codcaster/ds_callout_cards_desc",
     "menu/on": "localized17#menu/on",
     "hash_10e01ad5": 1,
     "iscategory": 0,
@@ -21,7 +21,7 @@
     "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "codcaster_ds_notification_callout",
-    "displayname": "localized17#hash_2839353c3f7c0920",
+    "displayname": "localized17#codcaster/ds_callout_cards",
     "rangestartvalue": 0,
     "isdisabled": 0,
     "hash_d6897f56": 0,

@@ -68,7 +68,7 @@
 #molotov_cocktail_multikill_2,0,100,0,0,0,FALSE,0,FALSE,7#,#stats_molotov_multikill_x2_summary,8#medal_molotov_multikill_x2_summary,TRUE,TRUE,FALSE,#combat,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #molotov_kill,0,0,0,0,0,FALSE,0,FALSE,7#,#,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #hash_6504afb1698bb9bc,0,0,0,0,0,FALSE,0,FALSE,7#,#,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
-#hash_4edb96d5817acc7b,0,0,0,0,0,FALSE,0,FALSE,7#,#,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
+#molotov_burn_assist,0,0,0,0,0,FALSE,0,FALSE,7#,#,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #frag_multikill_2,0,100,0,0,0,FALSE,0,FALSE,7#,#stats_frag_multikill_x2_summary,8#medal_frag_multikill_x2_summary,TRUE,TRUE,FALSE,#combat,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #frag_grenade_kill,0,0,0,0,0,FALSE,0,FALSE,7#,#,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #hatchet_kill,0,100,0,0,0,FALSE,0,FALSE,7#,#stats_hatchet_kill,8#medal_hatchet_kill,TRUE,TRUE,FALSE,#combat,#,#,#,#,FALSE,FALSE,0,u9?0,0
@@ -76,7 +76,7 @@
 #trophy_defense,0,25,25,0,0,FALSE,0,FALSE,7#hash_24da2389569c2729,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #trophy_system_kill,0,25,0,0,0,FALSE,0,FALSE,7#,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #destroyed_trophy_system,0,0,25,0,0,FALSE,0,FALSE,7#score/destroyed_trophy_system,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
-#hash_7b589b3c0bd1a913,0,25,15,0,0,FALSE,0,FALSE,7#hash_619e3d27fd0c8f96,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
+#concussion_grenade_concussed_enemy,0,25,15,0,0,FALSE,0,FALSE,7#score/concussed_enemy,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #concussion_grenade_kill,0,100,25,0,0,FALSE,0,FALSE,7#score/concussion_kill,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #concussion_grenade_assist,0,50,25,0,0,FALSE,0,FALSE,7#score/concussion_assist,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #concussion_grenade_multikill_2,0,100,0,0,0,FALSE,0,FALSE,7#,#stats_concussion_grenade_multikill_x2_summary,8#medal_concussion_grenade_multikill_x2_summary,TRUE,TRUE,FALSE,#combat,#,#,#,#,FALSE,FALSE,0,u9?0,0
@@ -89,9 +89,9 @@
 #cluster_semtex_kill,0,100,0,0,0,FALSE,0,FALSE,7#,#stats_cluster_semtex_kill,8#,TRUE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #cluster_semtex_multikill_2,0,100,0,0,0,FALSE,0,FALSE,7#,#stats_cluster_semtex_multikill_x2_summary,8#medal_cluster_semtex_multikill_x2_summary,TRUE,TRUE,FALSE,#specialist,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #supply_pod_used,0,50,25,0,0,FALSE,0,FALSE,7#hash_10fbfaa2c954a9b1,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
-#golden_kill_bonus,0,100,25,0,0,FALSE,0,FALSE,7#hash_4ec73f7297efe2e3,#stats_golden_kill_bonus,8#,TRUE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
-#hash_7b62ccbe655dc08a,0,100,25,0,0,FALSE,0,FALSE,7#hash_4ec73f7297efe2e3,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
-#hash_131b23d720fc82c3,0,0,0,0,0,FALSE,0,FALSE,7#hash_466d6254312953b8,#stats_golden_ammo_bonus,8#,TRUE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
+#golden_kill_bonus,0,100,25,0,0,FALSE,0,FALSE,7#score/golden_ammo_kill,#stats_golden_kill_bonus,8#,TRUE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
+#hash_7b62ccbe655dc08a,0,100,25,0,0,FALSE,0,FALSE,7#score/golden_ammo_kill,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
+#golden_ammo_assist,0,0,0,0,0,FALSE,0,FALSE,7#hash_466d6254312953b8,#stats_golden_ammo_bonus,8#,TRUE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #hash_3f731ac2a7da28fe,0,100,0,0,0,FALSE,0,FALSE,7#,#stats_golden_ammo_multikill_2,8#medal_golden_ammo_multikill,TRUE,TRUE,FALSE,#specialist,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #radiation_field_radiating_enemy,0,10,25,0,0,FALSE,0,FALSE,7#hash_5d65b0d99fdce098,#stats_radiation_field_radiating_enemy,8#,TRUE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #radiation_field_kill,0,100,25,0,0,FALSE,0,FALSE,7#score/radiation_kill,#stats_radiation_field_kill,8#,TRUE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
@@ -102,7 +102,7 @@
 #hawk_tag_kill,0,50,25,0,0,FALSE,0,FALSE,7#score/hawk_tag_kill,#stats_hawk_tag_kill,8#,TRUE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #hawk_tag_multikill_2,0,100,0,0,0,FALSE,0,FALSE,7#,#stats_hawk_tag_multikill_x2,8#medal_hawk_tag_multikill_x2,TRUE,TRUE,FALSE,#specialist,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #seeker_shock_mine_paralyzed_enemy,0,25,10,0,0,FALSE,0,FALSE,7#hash_37a722e15f6ca95a,#stats_seeker_shock_mine_paralyzed_enemy,8#,TRUE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,25,u9?0,0
-#seeker_shock_mine_killed_paralyzed_enemy,0,25,25,0,0,FALSE,0,FALSE,7#hash_1a09660f39662fab,#stats_seeker_shock_mine_killed_paralyzed_enemy,8#,TRUE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
+#seeker_shock_mine_killed_paralyzed_enemy,0,25,25,0,0,FALSE,0,FALSE,7#score/killed_paralyzed_enemy,#stats_seeker_shock_mine_killed_paralyzed_enemy,8#,TRUE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #seeker_shock_mine_paralyze_assist,0,50,100,0,0,FALSE,0,FALSE,7#score/seeker_mine_assist,#stats_seeker_shock_mine_paralyze_assist,8#,TRUE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #seeker_shock_mine_paralyzed_headshot,0,100,0,0,0,FALSE,0,FALSE,7#,#stats_seeker_shock_mine_paralyzed_headshot,8#medal_seeker_shock_mine_paralyzed_headshot,TRUE,TRUE,FALSE,#specialist,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #seeker_shock_mine_multikill_2,0,100,0,0,0,FALSE,0,FALSE,7#,#stats_seeker_shock_mine_multikill_x2_summary,8#,TRUE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
@@ -120,7 +120,7 @@
 #smoke_multikill_2,0,100,0,0,0,FALSE,0,FALSE,7#,#stats_spectre_smoke_multikill_2,8#medal_spectre_smoke_multikill_2,TRUE,TRUE,FALSE,#specialist,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #smoke_assist,0,50,15,0,0,FALSE,0,FALSE,7#score/spectre_smoke_assist,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #smoke_kill,0,100,25,0,0,FALSE,0,FALSE,7#score/spectre_smoke_kill,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
-#hash_6024b59ca1d3b641,0,10,25,0,0,FALSE,0,FALSE,7#hash_1201440b73b03bf2,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
+#concertina_wire_damage,0,10,25,0,0,FALSE,0,FALSE,7#hash_1201440b73b03bf2,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #concertina_wire_kill,0,50,50,0,0,FALSE,0,FALSE,7#score/concertina_wire_kill,#stats_concertina_wire_kill,8#,TRUE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #concertina_wire_snared_kill,0,100,25,0,0,FALSE,0,FALSE,7#score/concertina_wire_snared_kill,#stats_concertina_wire_snared_kill,8#,TRUE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #concertina_wire_assist,0,50,50,0,0,FALSE,0,FALSE,7#score/concertina_wire_assist,#stats_concertina_wire_assist,8#,TRUE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
@@ -159,7 +159,7 @@
 #tak5_boosted,0,25,25,0,0,FALSE,0,FALSE,7#hash_383ede815c3776bd,#stats_tak5_boosted,8#,TRUE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #stim_kill,0,0,0,0,0,FALSE,0,FALSE,7#hash_1cc6074a001e1722,#stats_stim_kill,8#,TRUE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #tak5_multikill_2,0,100,0,0,0,FALSE,0,FALSE,7#,#stats_tak5_multikill_x2_multikill_summary,8#medal_tak5_multikill_x2,TRUE,TRUE,FALSE,#specialist,#,#,#,#,FALSE,FALSE,0,u9?0,0
-#purifier_kill,0,50,25,0,0,FALSE,0,FALSE,7#hash_6d0622ece174cbf9,#stats_purifier_kill,8#,TRUE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
+#purifier_kill,0,50,25,0,0,FALSE,0,FALSE,7#score/flamethrower_kill,#stats_purifier_kill,8#,TRUE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #purifier_multikill_2,0,100,0,0,0,FALSE,0,FALSE,7#,#stats_purifier_x2_multikill_summary,8#medal_purifier_x2_multikill_summary,TRUE,TRUE,FALSE,#specialist,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #attack_dog_kill,0,50,25,0,0,FALSE,0,FALSE,7#score/dog_kill,#stats_attack_dog_kill,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #attack_dog_multikill_2,0,100,0,0,0,FALSE,0,FALSE,7#,#stats_attack_dog_x2_multikill_summary,8#medal_attack_dog_x2_multikill_summary,TRUE,TRUE,FALSE,#specialist,#,#,#,#,FALSE,FALSE,0,u9?0,0
@@ -228,7 +228,7 @@
 #annihilator_shutdown,0,100,25,0,0,FALSE,0,FALSE,7#score/annihilator_shutdown,#stats_annihilator_shutdown,8#medal_annihilator_shutdown,TRUE,TRUE,TRUE,#antispecialist,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #attack_dog_shutdown,0,100,50,0,0,FALSE,0,FALSE,7#score/attack_dog_shutdown,#stats_attack_dog_shutdown,8#medal_attack_dog_shutdown,TRUE,TRUE,TRUE,#antispecialist,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #tak5_shutdown,0,100,25,0,0,FALSE,0,FALSE,7#score/tak5_shutdown,#stats_tak_5_shutdown,8#medal_tak_5_shutdown,TRUE,TRUE,TRUE,#antispecialist,#,#,#,#,FALSE,FALSE,0,u9?0,0
-#deployable_cover_shutdown,0,100,25,0,0,FALSE,0,FALSE,7#hash_27020e1ae8ec27d9,#stats_deployable_cover_shutdown,8#medal_deployable_cover_shutdown,TRUE,TRUE,TRUE,#antispecialist,#,#,#,#,FALSE,FALSE,0,u9?0,0
+#deployable_cover_shutdown,0,100,25,0,0,FALSE,0,FALSE,7#score/destroyed_cover,#stats_deployable_cover_shutdown,8#medal_deployable_cover_shutdown,TRUE,TRUE,TRUE,#antispecialist,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #vision_pulse_shutdown,0,100,25,0,0,FALSE,0,FALSE,7#score/vision_pulse_shutdown,#stats_vision_pulse_shutdown,8#medal_vision_pulse_shutdown,TRUE,TRUE,TRUE,#antispecialist,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #radiation_field_shutdown,0,100,25,0,0,FALSE,0,FALSE,7#score/radiation_field_shutdown,#stats_radiation_field_shutdown,8#medal_radiation_field_shutdown,TRUE,TRUE,TRUE,#antispecialist,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #hacker_shutdown,0,100,50,0,0,FALSE,0,FALSE,7#score/hacker_shutdown,#stats_hacker_shutdown,8#,TRUE,TRUE,TRUE,#antispecialist,#,#,#,#,FALSE,FALSE,0,u9?0,0
@@ -253,10 +253,10 @@
 #hash_47c2a64b85e116e5,0,250,150,0,0,FALSE,0,FALSE,7#hash_5d7ab1caa1b4bd42,#stats_gunship_killjoy,8#medal_gunship_killjoy,TRUE,TRUE,TRUE,#antiscorestreak,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #hash_2150d242911dfe3d,0,50,50,0,0,FALSE,0,FALSE,7#hash_6e0fc58d1fb4a0ac,#stats_mesh_mine_destroy,8#,TRUE,TRUE,TRUE,#,#,#,#,#,FALSE,FALSE,50,u9?0,0
 #sensor_dart_shutdown,0,50,50,0,0,FALSE,0,FALSE,7#score/sensor_dart_shutdown,#stats_sensor_dart_destroy,8#,TRUE,TRUE,TRUE,#,#,#,#,#,FALSE,FALSE,50,u9?0,0
-#hash_4ccb940ea15047ba,0,50,50,0,0,FALSE,0,FALSE,7#hash_72b34caee6bce929,#stats_razor_wire_destroy,8#,TRUE,TRUE,TRUE,#,#,#,#,#,FALSE,FALSE,50,u9?0,0
+#concertina_wire_shutdown,0,50,50,0,0,FALSE,0,FALSE,7#score/concertina_wire_shutdown,#stats_razor_wire_destroy,8#,TRUE,TRUE,TRUE,#,#,#,#,#,FALSE,FALSE,50,u9?0,0
 #shroud_shutdown,0,50,50,0,0,FALSE,0,FALSE,7#score/shroud_shutdown,#stats_shroud_shutdown,8#,TRUE,TRUE,TRUE,#,#,#,#,#,FALSE,FALSE,50,u9?0,0
 #hash_2cc3287407441d3e,0,50,50,0,0,FALSE,0,FALSE,7#hash_705d7813dd1e1775,#stats_seeker_destroy,8#,TRUE,TRUE,TRUE,#,#,#,#,#,FALSE,FALSE,50,u9?0,0
-#hash_707b29867fba333d,0,50,50,0,0,FALSE,0,FALSE,7#hash_617265d2c4d8d9ac,#stats_assault_pack_destroy,8#,TRUE,TRUE,TRUE,#,#,#,#,#,FALSE,FALSE,50,u9?0,0
+#supply_pod_shutdown,0,50,50,0,0,FALSE,0,FALSE,7#score/supply_pod_shutdown,#stats_assault_pack_destroy,8#,TRUE,TRUE,TRUE,#,#,#,#,#,FALSE,FALSE,50,u9?0,0
 #forward_spawn_deactivated,0,50,50,0,0,FALSE,0,FALSE,7#hash_7f6eeb72160f9576,#stats_tac_deploy_destroy,8#,TRUE,TRUE,TRUE,#,#,#,#,#,FALSE,FALSE,50,u9?0,0
 #hawk_destroyed,0,50,50,0,0,FALSE,0,FALSE,7#score/hawk_destroyed,#stats_hawk_destroy,8#,TRUE,TRUE,TRUE,#,#,#,#,#,FALSE,FALSE,50,u9?0,0
 #killed_attacker,0,25,25,0,0,FALSE,0,TRUE,7#score/killed_attacker,#stats_killed_attacker,8#,TRUE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
@@ -267,8 +267,8 @@
 #eliminated_enemy,0,100,0,0,0,FALSE,0,FALSE,7#,#stats_eliminated_enemy,8#medal_eliminated_enemy,TRUE,TRUE,FALSE,#gamemode,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #kill_enemy_that_is_capping_your_objective,0,50,0,0,0,FALSE,0,FALSE,7#,#stats_kill_enemy_that_is_capping_your_objective,8#medal_kill_enemy_that_is_capping_your_objective,TRUE,TRUE,FALSE,#gamemode,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #neutral_b_secured,0,500,100,0,0,FALSE,0,TRUE,7#score/neutral_b_secured,#stats_neutral_b_secured,8#medal_neutral_b_secured,TRUE,TRUE,FALSE,#gamemode,#,#,#,#,FALSE,FALSE,0,u9?0,0
-#dom_point_neutral_secured,0,50,50,0,0,FALSE,0,TRUE,7#hash_4169caaf649733eb,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
-#dom_point_secured,0,100,100,0,0,FALSE,0,TRUE,7#hash_547d7bf268c00204,#stats_position_secure,8#medal_dom_point_secured,TRUE,TRUE,FALSE,#gamemode,#,#,#,#,FALSE,FALSE,0,u9?0,0
+#dom_point_neutral_secured,0,50,50,0,0,FALSE,0,TRUE,7#score/neutral_position_secure,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
+#dom_point_secured,0,100,100,0,0,FALSE,0,TRUE,7#score/enemy_position_secure,#stats_position_secure,8#medal_dom_point_secured,TRUE,TRUE,FALSE,#gamemode,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #kill_enemy_while_capping_dom,0,50,25,0,0,FALSE,0,TRUE,7#hash_6b8fb98459bbafe8,#stats_kill_enemy_while_capping,8#medal_kill_enemy_while_capping_dom,TRUE,TRUE,FALSE,#gamemode,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #hash_7edabe01ed05afa3,0,25,25,0,0,FALSE,0,FALSE,7#hash_759582c5dfc07fa6,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #kill_confirmed,0,50,100,0,0,FALSE,0,TRUE,7#score/kill_confirmed,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
@@ -320,11 +320,11 @@
 #humiliation_gun,0,100,0,0,0,FALSE,0,FALSE,7#,#stats_humiliation_gun,8#medal_gungame_humillation,TRUE,TRUE,FALSE,#gamemode,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #melee_leader_gun,0,100,0,0,0,FALSE,0,FALSE,7#,#stats_melee_leader_gun,8#medal_gungame_regicide,TRUE,TRUE,FALSE,#gamemode,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #kill_in_3_seconds_gun,0,150,0,0,0,FALSE,0,FALSE,7#,#stats_kill_in_3_seconds_gun,8#medal_gungame_gunslinger,TRUE,TRUE,FALSE,#gamemode,#,#,#,#,FALSE,FALSE,0,u9?0,0
-#setback_sas,0,100,10,0,0,FALSE,0,TRUE,7#hash_6751eab989a1a86f,#stats_setback_sas,8#medal_setback_sas,TRUE,TRUE,FALSE,#gamemode,#,#,#,#,FALSE,FALSE,0,u9?0,0
+#setback_sas,0,100,10,0,0,FALSE,0,TRUE,7#score/humiliation_sas,#stats_setback_sas,8#medal_setback_sas,TRUE,TRUE,FALSE,#gamemode,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #humiliation_sas,0,100,0,0,0,FALSE,0,FALSE,7#,#stats_melee_leader_gun,8#medal_gungame_regicide,TRUE,TRUE,FALSE,#gamemode,#,#,#,#,FALSE,FALSE,0,u9?0,0
-#hash_6c8030eb05b53d5a,0,100,25,0,0,FALSE,0,FALSE,7#hash_3344a7a144349125,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
-#hash_614b27b37ccee280,0,100,100,0,0,FALSE,0,FALSE,7#hash_4540ff4b12c5f139,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
-#hash_25ec47f9609803a9,0,100,100,0,0,FALSE,0,FALSE,7#hash_1a3da1644636a00e,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
+#melee_kill_sas,0,100,25,0,0,FALSE,0,FALSE,7#score/melee_kill_sas,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
+#crossbow_kill_sas,0,100,100,0,0,FALSE,0,FALSE,7#score/crossbow_kill_sas,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
+#ballistic_knife_kill_sas,0,100,100,0,0,FALSE,0,FALSE,7#score/ballistic_knife_kill_sas,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #survivor,0,100,10,0,0,FALSE,0,FALSE,7#score/survivor,#stats_survivor,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #clean_enemy_collect,0,50,25,0,0,FALSE,0,FALSE,7#score/clean_enemy_collect,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #clean_enemy_deposit,0,100,50,0,0,FALSE,0,TRUE,7#score/clean_enemy_deposit,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
@@ -342,7 +342,7 @@
 #shamrock_assist_collect,0,50,25,0,0,FALSE,0,FALSE,7#score/shamrock_assist_collect,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #first_infected,0,0,200,0,0,FALSE,0,FALSE,7#score/first_infected,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #infected_survivor,0,100,200,0,0,FALSE,0,FALSE,7#score/infected_survivor,#stats_infected_survivor,8#medal_infected_survivor,TRUE,TRUE,FALSE,#gamemode,#,#,#,#,FALSE,FALSE,0,u9?0,0
-#survivor_still_alive,0,0,50,0,0,FALSE,0,FALSE,7#hash_541891e4eb1897e0,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
+#survivor_still_alive,0,0,50,0,0,FALSE,0,FALSE,7#score/survivor_infect,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #final_survivor,0,250,350,0,0,FALSE,0,FALSE,7#score/final_survivor,#stats_final_survivor,8#medal_final_survivor,TRUE,TRUE,FALSE,#gamemode,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #infected_infect_3_enemies,0,150,0,0,0,FALSE,0,FALSE,7#,#stats_infect_3_enemies,8#medal_infect_3_enemies,TRUE,TRUE,FALSE,#gamemode,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #infected_survive_30_seconds,0,150,0,0,0,FALSE,0,FALSE,7#,#stats_survive_30_seconds,8#medal_survive_30_seconds,TRUE,TRUE,FALSE,#gamemode,#,#,#,#,FALSE,FALSE,0,u9?0,0
@@ -352,7 +352,7 @@
 #prop_survived,0,50,0,0,0,FALSE,0,FALSE,7#,#stats_prop_survived,8#medal_prop_survived,TRUE,TRUE,FALSE,#gamemode,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #clone_was_destroyed,0,10,10,0,0,FALSE,0,FALSE,7#score/decoy_killed,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #still_alive,0,25,25,0,0,FALSE,0,TRUE,7#score/still_alive,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
-#still_alive_medium_bonus,0,50,50,0,0,FALSE,0,FALSE,7#hash_3184402c05ae6ab,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
+#still_alive_medium_bonus,0,50,50,0,0,FALSE,0,FALSE,7#score/still_alive_med_bonus,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #still_alive_large_bonus,0,75,75,0,0,FALSE,0,FALSE,7#score/still_alive_large_bonus,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #still_alive_extra_large_bonus,0,100,100,0,0,FALSE,0,FALSE,7#score/still_alive_extra_large_bonus,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #kill_enemy_grenade_throwback,0,0,0,0,0,FALSE,0,FALSE,7#,#,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
@@ -367,7 +367,7 @@
 #hash_658629ce68f99fb5,0,0,0,0,0,FALSE,0,FALSE,7#,#,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #molotov_cocktail_burn,0,0,0,0,0,FALSE,0,FALSE,7#,#,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #hash_606050eba99a3913,0,0,0,0,0,FALSE,0,FALSE,7#,#,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
-#hash_1ed8a05490cfe606,0,0,0,0,0,FALSE,0,FALSE,7#,#,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
+#trophy_system_shielded,0,0,0,0,0,FALSE,0,FALSE,7#,#,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #hash_2f3000a4b38e9235,0,0,0,0,0,FALSE,0,FALSE,7#,#,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #hash_1352459d518467e4,0,0,0,0,0,FALSE,0,FALSE,7#,#,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #hash_6da3ec0deab3fd5f,0,0,0,0,0,FALSE,0,FALSE,7#,#,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
@@ -378,7 +378,7 @@
 #hash_71388b5d1f84fa54,0,0,0,0,0,FALSE,0,FALSE,7#,#,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #hash_23ea1436025bb7d5,0,0,0,0,0,FALSE,0,FALSE,7#,#,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #hash_615d2e02d1d3769c,0,0,0,0,0,FALSE,0,FALSE,7#,#,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
-#hash_1f661efe5e6707ad,0,0,0,0,0,FALSE,0,FALSE,7#,#,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
+#sensor_dart_assist_unique,0,0,0,0,0,FALSE,0,FALSE,7#,#,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #grapple_gun_escape,0,0,0,0,0,FALSE,0,FALSE,7#,#,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #grapple_slam_combo,0,0,0,0,0,FALSE,0,FALSE,7#,#,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #hash_51561cf52234268f,0,0,0,0,0,FALSE,0,FALSE,7#,#,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
@@ -386,7 +386,7 @@
 #attack_dog_savior,0,0,0,0,0,FALSE,0,FALSE,7#,#,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #hash_6a0a43aa391f18f,0,0,0,0,0,FALSE,0,FALSE,7#,#,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #hash_4f2f85d71af52a0a,0,0,0,0,0,FALSE,0,FALSE,7#,#,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
-#hash_bad79b50f40ce0b,0,0,0,0,0,FALSE,0,FALSE,7#,#,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
+#vision_pulse_assist_unique,0,0,0,0,0,FALSE,0,FALSE,7#,#,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #annihilator_collateral,0,0,0,0,0,FALSE,0,FALSE,7#,#,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #hash_65740dfcbe404000,0,0,0,0,0,FALSE,0,FALSE,7#,#,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #war_machine_demolition,0,0,0,0,0,FALSE,0,FALSE,7#,#,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0

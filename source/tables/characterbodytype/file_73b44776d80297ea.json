@@ -3,7 +3,7 @@
     "displayName": "#heroes/zombie_female",
     "mpDialog": "#zombie_female",
     "playerSoundsTable": "#cp_playersounds",
-    "playerFXTable": "#hash_471b500cc678f872",
+    "playerFXTable": "#wz_playerfx",
     "image_68": "#hash_ca743352599e6c01",
     "positionDraftPortrait": "#ui_icon_specialist_portrait_draft_zombie_female",
     "lootUiIcon": "#loot_03_ui_icon_blackmarket_reserves_zombie_female",

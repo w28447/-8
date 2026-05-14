@@ -476,7 +476,7 @@ function private function_abd3bc1a()
     self flagsys::clear( #"hash_287397edba8966f9" );
     self val::set( #"player_insertion", "freezecontrols", 1 );
     self val::set( #"player_insertion", "disablegadgets", 1 );
-    self val::set( #"hash_37b74f87edd2df20", "show_hud", 0 );
+    self val::set( #"player_insertion_hud", "show_hud", 0 );
     self val::set( #"hash_ce6d3e6ece6e18d", "show_weapon_hud", 0 );
     self death_circle::function_b57e3cde( 1 );
     
@@ -514,7 +514,7 @@ function private function_7a4c1517()
 {
     self val::reset( #"player_insertion", "freezecontrols" );
     self val::reset( #"player_insertion", "disablegadgets" );
-    self val::reset( #"hash_37b74f87edd2df20", "show_hud" );
+    self val::reset( #"player_insertion_hud", "show_hud" );
     self val::reset( #"hash_ce6d3e6ece6e18d", "show_weapon_hud" );
 }
 
@@ -763,7 +763,7 @@ function function_35742117( insertion )
         
         player setorigin( player.resurrect_origin );
         player setplayerangles( player.resurrect_angles );
-        level callback::callback( #"hash_74b19f5972b0ee52", { #player:player } );
+        level callback::callback( #"player_insertion_drop", { #player:player } );
     }
     
     function_dd34168c( insertion, #"insertion_begin_completed" );
@@ -1016,7 +1016,7 @@ function function_adc8cff4( reinserting = 0 )
     self val::set( #"player_insertion", "disable_oob", 0 );
     self clientfield::set_to_player( "realtime_multiplay", 1 );
     self thread function_7bf9c38f( reinserting );
-    level callback::callback( #"hash_74b19f5972b0ee52", { #player:self } );
+    level callback::callback( #"player_insertion_drop", { #player:self } );
 }
 
 // Namespace player_insertion/player_insertion
@@ -1348,7 +1348,7 @@ function function_ca5b6591( insertion, startorigin, endorigin, var_872f085f )
     
     foreach ( player in insertion.players )
     {
-        player playrumbleonentity( #"hash_233b436a07cd091a" );
+        player playrumbleonentity( #"infiltration_camera_rumble" );
     }
     
     wait 0.2;
@@ -1369,7 +1369,7 @@ function function_ca5b6591( insertion, startorigin, endorigin, var_872f085f )
             continue;
         }
         
-        player playrumbleonentity( #"hash_62ba49f452a20378" );
+        player playrumbleonentity( #"infiltration_rumble_lg" );
     }
     
     wait 2;
@@ -2014,7 +2014,7 @@ function function_d9dfa25()
     a_formations[ a_formations.size ] = s_formation;
     
     /#
-        index = getdvarint( #"hash_5293cadde39a7ceb", -1 );
+        index = getdvarint( #"dev_formation_index", -1 );
         
         if ( index > -1 )
         {
@@ -2129,7 +2129,7 @@ function function_700e474f( startorigin, endorigin, var_872f085f, goal, index )
     var_9fa20618 = firstgoal + rotatepoint( offset, var_872f085f );
     
     /#
-        if ( getdvarint( #"hash_5bbd3d044e1ec1b8", 0 ) )
+        if ( getdvarint( #"dev_draw_goals", 0 ) )
         {
             self thread function_84898b3f( firstgoal, var_9fa20618, endorigin, index );
         }
@@ -2180,7 +2180,7 @@ function function_71da60d1()
     {
         self endon( #"death" );
         
-        while ( getdvarint( #"hash_5bbd3d044e1ec1b8", 0 ) )
+        while ( getdvarint( #"dev_draw_goals", 0 ) )
         {
             color = index < 0 ? ( 0, 0, 1 ) : ( 1, 0, 0 );
             sphere( firstgoal, 700, color );
@@ -2613,7 +2613,7 @@ function function_1c06c249( plane )
     if ( isplayer( self ) && isdefined( plane ) )
     {
         self match_record::function_ded5f5b6( #"hash_1657e02fb5073e4a", plane.origin );
-        self match_record::set_player_stat( #"hash_16618233fdac5c29", gettime() );
+        self match_record::set_player_stat( #"deployment_jump_time", gettime() );
         self match_record::set_player_stat( #"hash_63b95d780b2bd355", self flagsys::get( #"hash_224cb97b8f682317" ) );
     }
 }
@@ -2706,8 +2706,8 @@ function function_2d683dc2( aircraft )
     
     self thread player_freefall( aircraft );
     self hide_postfx();
-    self stoprumble( #"hash_233b436a07cd091a" );
-    level callback::callback( #"hash_74b19f5972b0ee52", { #player:self } );
+    self stoprumble( #"infiltration_camera_rumble" );
+    level callback::callback( #"player_insertion_drop", { #player:self } );
 }
 
 // Namespace player_insertion/player_insertion
@@ -2772,8 +2772,8 @@ function function_4630bf0a()
     if ( isplayer( self ) )
     {
         self match_record::function_ded5f5b6( #"hash_7d9d379ecba10793", self.origin );
-        self match_record::set_player_stat( #"hash_1469faf3180d8b7a", gettime() );
-        self.var_37ef8626 = gettime();
+        self match_record::set_player_stat( #"deployment_land_time", gettime() );
+        self.deployment_land_time = gettime();
     }
 }
 
@@ -2785,7 +2785,7 @@ function function_4eb0c560()
 {
     [[ level.wingsuit_hud ]]->close( self );
     self val::reset( #"player_insertion", "disablegadgets" );
-    self val::reset( #"hash_37b74f87edd2df20", "show_hud" );
+    self val::reset( #"player_insertion_hud", "show_hud" );
     self val::reset( #"hash_ce6d3e6ece6e18d", "show_weapon_hud" );
     self setclientuivisibilityflag( "weapon_hud_visible", 1 );
     
@@ -3150,7 +3150,7 @@ function function_8fc2a69e()
         while ( true )
         {
             waitframe( 1 );
-            string = getdvarstring( #"hash_683dafe2da41b42e", "<dev string:x282>" );
+            string = getdvarstring( #"insertion_devgui_cmd", "<dev string:x282>" );
             start_insertion = 0;
             
             switch ( string )
@@ -3169,7 +3169,7 @@ function function_8fc2a69e()
                 level function_8dcd8623();
             }
             
-            setdvar( #"hash_683dafe2da41b42e", "<dev string:x282>" );
+            setdvar( #"insertion_devgui_cmd", "<dev string:x282>" );
             
             if ( getdvarint( #"hash_5566ccc7de522a4a", 0 ) )
             {

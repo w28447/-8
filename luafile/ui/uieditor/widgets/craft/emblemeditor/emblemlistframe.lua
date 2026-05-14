@@ -140,7 +140,7 @@ CoD.EmblemListFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 		end
 	end, function ( f15_arg0, f15_arg1, f15_arg2 )
 		if IsLive() and CoD.ModelUtility.IsSelfModelValueEqualTo( f15_arg0, f15_arg2, "isNonClickableEmblem", 0 ) and not IsElementInState( f15_arg0, "BMClassified" ) and CoD.CraftUtility.Emblems_CanEnterEmblemEditor( f15_arg0, f15_arg2 ) and not CraftItemIsReadOnly( f15_arg0, f15_arg2 ) and not SelectingGroupEmblem( f15_arg2 ) and CoD.CraftUtility.EmblemEditor_IsEditor( self, f15_arg1 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f15_arg0, f15_arg2, "trialLocked" ) and not CoD.CraftUtility.EmblemEditor_IsEditingClanEmblem( self, f15_arg1 ) then
-			CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x71A05463D63F902, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/edit_emblem", nil, "ui_confirm" )
 			return true
 		elseif CoD.CraftUtility.Emblem_IsOccupied( f15_arg0, f15_arg2 ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f15_arg0, f15_arg2, "isNonClickableEmblem", 0 ) and CoD.ModelUtility.IsSelfModelValueTrue( f15_arg0, f15_arg2, "owned" ) and not CoD.CraftUtility.EmblemEditor_IsEditor( self, f15_arg1 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f15_arg0, f15_arg2, "trialLocked" ) and not MenuPropertyIsTrue( f15_arg1, "_selectGroupEmblem" ) and not CoD.CraftUtility.EmblemEditor_IsEditingClanEmblem( self, f15_arg1 ) then
 			CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xA24F9854A60C871, nil, "ui_confirm" )

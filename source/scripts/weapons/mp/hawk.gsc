@@ -132,8 +132,8 @@ function spawn_hawk()
     bundle = level.hawk_settings.bundle;
     var_a33bcd86 = int( isdefined( bundle.var_a33bcd86 ) ? bundle.var_a33bcd86 : 0 );
     vehicle function_d733412a( 0 );
-    self callback::function_d8abfc3d( #"hash_247d67dbf83dbc1a", &function_903cf6aa );
-    self callback::function_d8abfc3d( #"hash_72a7670db71677f", &function_3e6a41b7 );
+    self callback::function_d8abfc3d( #"remote_missile_started", &function_903cf6aa );
+    self callback::function_d8abfc3d( #"remote_missile_ended", &function_3e6a41b7 );
     
     if ( isbot( self ) )
     {
@@ -339,8 +339,8 @@ function watch_destroyed( vehicle )
     
     if ( isdefined( self ) )
     {
-        self callback::function_52ac9652( #"hash_247d67dbf83dbc1a", &function_903cf6aa );
-        self callback::function_52ac9652( #"hash_72a7670db71677f", &function_3e6a41b7 );
+        self callback::function_52ac9652( #"remote_missile_started", &function_903cf6aa );
+        self callback::function_52ac9652( #"remote_missile_ended", &function_3e6a41b7 );
         
         if ( !self util::function_63d27d4e( "remote_missile" ) )
         {
@@ -378,7 +378,7 @@ function function_17b75237( attacker, victim, weapon, attackerweapon, meansofdea
         return false;
     }
     
-    if ( gettime() - ( isdefined( var_f27d6782.var_a7e1d732 ) ? var_f27d6782.var_a7e1d732 : 0 ) <= int( level.hawk_settings.bundle.var_fb7c1412 * 1000 ) )
+    if ( gettime() - ( isdefined( var_f27d6782.var_a7e1d732 ) ? var_f27d6782.var_a7e1d732 : 0 ) <= int( level.hawk_settings.bundle.tag_grace_period * 1000 ) )
     {
         if ( isdefined( level.playgadgetsuccess ) )
         {
@@ -1042,7 +1042,7 @@ function function_9ace0fb6( targets )
                     info.state = 1;
                     info.var_a7e1d732 = time;
                 }
-                else if ( isdefined( info.var_a7e1d732 ) && time - info.var_a7e1d732 < int( bundle.var_fb7c1412 * 1000 ) )
+                else if ( isdefined( info.var_a7e1d732 ) && time - info.var_a7e1d732 < int( bundle.tag_grace_period * 1000 ) )
                 {
                     info.state = 1;
                     info.var_a7e1d732 = time;

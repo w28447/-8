@@ -424,9 +424,9 @@ function function_4b3bc61d( attacker, weapon, target )
         playfx( level._equipment_explode_fx_lg, self.origin );
     }
     
-    if ( isdefined( level.shroudbundle.var_bb6c29b4 ) && isdefined( weapon ) && weapon == getweapon( #"shock_rifle" ) )
+    if ( isdefined( level.shroudbundle.shockrifledestructionfx ) && isdefined( weapon ) && weapon == getweapon( #"shock_rifle" ) )
     {
-        playfx( level.shroudbundle.var_bb6c29b4, self.origin );
+        playfx( level.shroudbundle.shockrifledestructionfx, self.origin );
     }
     
     if ( isdefined( attacker ) && self.owner util::isenemyplayer( attacker ) )

@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_zapoc_nuke",
+    "type": "#gesture",
+    "gesture": "#hash_2b703988131975b0",
+    "gesture2": "#boast_zapoc_nuke_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/ka-boom",
+        "icon": "image#ui_icon_emotes_nuke",
+        "isdefault": 0
+    }
+}

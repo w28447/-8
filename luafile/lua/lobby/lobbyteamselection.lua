@@ -29,15 +29,15 @@ Lobby.TeamSelection.ShouldAssignToTeam = function ( f2_arg0 )
 	local f2_local3 = LobbyData.GetCurrentMenuTarget()
 	if not f2_local3 then
 		return false
-	elseif f2_local3[0xEB7DDC7F079D51B] == Enum.LobbyMainMode[0xD5FBB8D74AC6D62] or f2_local0 == Enum.LobbyModule[0xC46B73E8E18BA2] then
+	elseif f2_local3["mainmode"] == Enum.LobbyMainMode[0xD5FBB8D74AC6D62] or f2_local0 == Enum.LobbyModule[0xC46B73E8E18BA2] then
 		return false
-	elseif f2_local3[0xEB7DDC7F079D51B] == Enum.LobbyMainMode[0x7B50049993542C0] then
+	elseif f2_local3["mainmode"] == Enum.LobbyMainMode[0x7B50049993542C0] then
 		return true
-	elseif f2_local3[0xEB7DDC7F079D51B] == Enum.LobbyMainMode[0x7E41449995CD57E] then
+	elseif f2_local3["mainmode"] == Enum.LobbyMainMode[0x7E41449995CD57E] then
 		return true
-	elseif f2_local3[0xEB7DDC7F079D51B] == Enum.LobbyMainMode[0x79D01499920B292] then
+	elseif f2_local3["mainmode"] == Enum.LobbyMainMode[0x79D01499920B292] then
 		return true
-	elseif f2_local3[0xEB7DDC7F079D51B] == Enum.LobbyMainMode[0x78C124999125C42] then
+	elseif f2_local3["mainmode"] == Enum.LobbyMainMode[0x78C124999125C42] then
 		return true
 	else
 		return false
@@ -115,7 +115,7 @@ Lobby.TeamSelection.AutoAssignPlayers = function ( f4_arg0 )
 		end
 		Engine.PrintInfo( Enum[0x7A63DCD561B0FA8][0x59962D5EF982597], "-----------------------------------------\n" )
 	end
-	if f4_local1[0xEB7DDC7F079D51B] ~= Enum.LobbyMainMode[0xD5FBB8D74AC6D62] then
+	if f4_local1["mainmode"] ~= Enum.LobbyMainMode[0xD5FBB8D74AC6D62] then
 		f4_local14 = {
 			[Enum.LobbyMainMode[0x7B50049993542C0]] = Lobby.TeamSelection.AutoAssignPlayersCP,
 			[Enum.LobbyMainMode[0x7E41449995CD57E]] = Lobby.TeamSelection.AutoAssignPlayersMP,
@@ -125,7 +125,7 @@ Lobby.TeamSelection.AutoAssignPlayers = function ( f4_arg0 )
 		if Dvar[0x4BADE8473F0165F]:get() == true and f4_local4 ~= Enum.LobbyMode[0xF5EE25D311E5223] then
 			Lobby.MatchmakingAsync.AssignTeams( f4_local2, true, true )
 		else
-			f4_local14[f4_local1[0xEB7DDC7F079D51B]]( f4_local13 )
+			f4_local14[f4_local1["mainmode"]]( f4_local13 )
 		end
 	end
 end
@@ -327,14 +327,14 @@ Lobby.TeamSelection.OnMatchEnd = function ( f13_arg0 )
 		return 
 	end
 	local f13_local3 = LobbyData.GetCurrentMenuTarget()
-	if f13_local3[0xEB7DDC7F079D51B] == Enum.LobbyMainMode[0x79D01499920B292] then
+	if f13_local3["mainmode"] == Enum.LobbyMainMode[0x79D01499920B292] then
 		local f13_local4 = Engine[0x755D55B3813D249]( Enum.LobbyModule[0x98EA1BB7164D103], f13_local1 )
 		for f13_local8, f13_local9 in ipairs( f13_local4.sessionClients ) do
 			Engine[0xD506AB0E93540B3]( f13_local1, f13_local9.xuid, Enum.team_t[0x2A34B055ADD98AB] )
 		end
-	elseif f13_local3[0xEB7DDC7F079D51B] == Enum.LobbyMainMode[0x78C124999125C42] and f13_local2 == Enum.LobbyMode[0xF5EE25D311E5223] then
+	elseif f13_local3["mainmode"] == Enum.LobbyMainMode[0x78C124999125C42] and f13_local2 == Enum.LobbyMode[0xF5EE25D311E5223] then
 		
-	elseif f13_local3[0xEB7DDC7F079D51B] ~= Enum.LobbyMainMode[0x7E41449995CD57E] then
+	elseif f13_local3["mainmode"] ~= Enum.LobbyMainMode[0x7E41449995CD57E] then
 		Lobby.TeamSelection.Clear()
 	elseif f13_local2 == Enum.LobbyMode[0xF5EE25D311E5223] and Engine.GetGametypeSetting( "teamAssignment" ) == LuaEnum.TEAM_ASSIGNMENT.AUTO then
 		Lobby.TeamSelection.ClearTeam( Enum.team_t[0x2A34B055ADD98AB] )

@@ -1,4 +1,4 @@
-#using script_71e26f08f03b7a7a;
+#using scripts\mp_common\item_supply_drop_system.gsc;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\system_shared;
 #using scripts\core_common\util_shared;
@@ -89,7 +89,7 @@ function on_player_killed()
         
         if ( attacker.var_a028bb76 >= 2 )
         {
-            attacker character_unlock::function_c8beca5e( #"menendez_unlock", #"hash_4bc3134998048aa7", 1 );
+            attacker character_unlock::function_c8beca5e( #"menendez_unlock", #"menendez_unlock_melee", 1 );
         }
     }
 }
@@ -114,7 +114,7 @@ function private function_b00fd65d()
     
     if ( var_49170438 < maxteamplayers + 2 )
     {
-        namespace_3d2704b3::function_d0178153( #"supply_drop_stash_cu20" );
+        item_supply_drop_system::function_d0178153( #"supply_drop_stash_cu20" );
     }
 }
 

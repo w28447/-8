@@ -14,7 +14,7 @@ function init()
 {
     level init_flags();
     level.var_e2103f01 = 0;
-    zm_items::function_4d230236( getweapon( #"hash_31fb0b01bd55c7bf" ), &function_a28f0b21 );
+    zm_items::function_4d230236( getweapon( #"zitem_office_trap_battery_part_1" ), &function_a28f0b21 );
     zm_items::function_4d230236( getweapon( #"zitem_office_trap_battery_part_2" ), &function_af5c24bb );
     level function_e021562c();
 }

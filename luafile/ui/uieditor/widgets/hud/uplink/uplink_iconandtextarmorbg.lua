@@ -22,7 +22,7 @@ CoD.uplink_IconandTextArmorbg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.Shield = Shield
 	
 	local armorLabel = LUI.UIText.new( 0, 0, 0, 62, 0, 0, 0, 30 )
-	armorLabel:setText( Engine[0xF9F1239CFD921FE]( 0x62964D05398F61A ) )
+	armorLabel:setText( Engine[0xF9F1239CFD921FE]( "mp/hud_uplink_armor" ) )
 	armorLabel:setTTF( "ttmussels_demibold" )
 	armorLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	LUI.OverrideFunction_CallOriginalFirst( armorLabel, "setText", function ( element, controller )

@@ -228,7 +228,7 @@ LUI.createMenu.ItemShopCaseExchangeConfirmation = function ( f1_arg0, f1_arg1 )
 			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
 			return false
 		elseif not IsElementInState( self.FullscreenPopupTemplate, "WorkingState" ) and not IsElementInState( self.FullscreenPopupTemplate, "FinishedState" ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( self, f18_arg2, "casePrice", 0 ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x7C2737E72EC4A26, nil, nil )
+			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/exchange", nil, nil )
 			return true
 		else
 			return false

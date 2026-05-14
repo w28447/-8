@@ -111,7 +111,7 @@ CoD.CodCasterObjectiveStatusControlSite.__clipsPerState = {
 			
 			f7_arg0.siteLetter:completeAnimation()
 			f7_arg0.siteLetter:setScale( 0.5, 0.5 )
-			f7_arg0.siteLetter:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9AC94D48B47268A ) )
+			f7_arg0.siteLetter:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_glow" ) )
 			f7_local0( f7_arg0.siteLetter )
 			f7_arg0.nextClip = "pulse"
 		end

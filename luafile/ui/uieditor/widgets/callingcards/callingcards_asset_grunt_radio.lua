@@ -17,7 +17,7 @@ CoD.CallingCards_Asset_grunt_radio.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local grunt = LUI.UIImage.new( 0, 0, 0, 392, 0, 0, 0.5, 240.5 )
 	grunt:setScale( 1.02, 1.02 )
-	grunt:setImage( RegisterImage( 0xD8A3FC556302898 ) )
+	grunt:setImage( RegisterImage( "uie_grunt_body" ) )
 	self:addElement( grunt )
 	self.grunt = grunt
 	

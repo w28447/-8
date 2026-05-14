@@ -105,7 +105,7 @@ CoD.SpecialistHeadquarters.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	ArchivesButton = CoD.DirectorSelectButtonSpecialistHeadquarters.new( f1_arg0, f1_arg1, 0.5, 0.5, -860, -464, 0.5, 0.5, -21, 184 )
 	ArchivesButton.Image:setImage( RegisterImage( 0xC77871E23260FE1 ) )
-	ArchivesButton.Header:setText( LocalizeToUpperString( 0xC94F6359C701D44 ) )
+	ArchivesButton.Header:setText( LocalizeToUpperString( "menu/archives" ) )
 	ArchivesButton:appendEventHandler( "on_session_start", function ( f13_arg0, f13_arg1 )
 		f13_arg1.menu = f13_arg1.menu or f1_arg0
 		CoD.Menu.UpdateButtonShownState( f13_arg0, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )

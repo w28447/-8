@@ -166,7 +166,7 @@ CoD.vhud_dart_button_all.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	TextBox2 = LUI.UIText.new( 0, 0, 649, 841, 0, 0, 249.5, 265.5 )
 	TextBox2:setAlpha( 0 )
-	TextBox2:setText( Engine[0xF9F1239CFD921FE]( 0xB1A03F2448A49D9 ) )
+	TextBox2:setText( Engine[0xF9F1239CFD921FE]( "menu/hud_vehicle_slow" ) )
 	TextBox2:setTTF( "ttmussels_regular" )
 	TextBox2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	TextBox2:setShaderVector( 0, 0, 0, 0, 0 )

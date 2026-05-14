@@ -284,17 +284,17 @@ function function_a87e7c22( subtarget )
         {
             self.var_d2c05029[ subtarget ] = time + 150;
             bone = self submodelboneforsubtarget( subtarget );
-            self playrenderoverridebundle( #"hash_20bdbaa0db5eb57d", bone );
+            self playrenderoverridebundle( #"rob_vehicle_target", bone );
             wait 0.1;
-            self stoprenderoverridebundle( #"hash_20bdbaa0db5eb57d", bone );
+            self stoprenderoverridebundle( #"rob_vehicle_target", bone );
         }
         
         return;
     }
     
-    self playrenderoverridebundle( #"hash_20bdbaa0db5eb57d" );
+    self playrenderoverridebundle( #"rob_vehicle_target" );
     wait 0.15;
-    self stoprenderoverridebundle( #"hash_20bdbaa0db5eb57d" );
+    self stoprenderoverridebundle( #"rob_vehicle_target" );
 }
 
 // Namespace vehicle/vehicle_shared

@@ -94,7 +94,7 @@ CoD.NineBangReticle_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.Pip3 = Pip3
 	
 	Reticle = LUI.UIImage.new( 0, 0, 60.5, 92.5, 0, 0, 59, 91 )
-	Reticle:setImage( RegisterImage( 0xCE2DEFE7CFE38B3 ) )
+	Reticle:setImage( RegisterImage( "uie_ui_hud_reticle_flashbang" ) )
 	self:addElement( Reticle )
 	self.Reticle = Reticle
 	

@@ -5,7 +5,7 @@
     "altWeapon": "#hash_3bb7ce9a7b6a0c1c",
     "weapon70": "#sig_bow_quickshot",
     "luigiReticleWidget": "BowLauncherReticle",
-    "streamkey": "#hash_2856d2a2123821ae",
+    "streamkey": "#sig_bow_quickshot5_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -45,7 +45,7 @@
             "1 0.0507"
         ]
     ],
-    "sound90": "#hash_65d9cd190f18b6f5",
+    "sound90": "#wpn_arrow_loop",
     "firesound": "#hash_6e290f765a99faab",
     "firesoundplayer": "#hash_44d5a8768bb5d0a6",
     "sound270": "#hash_24db08faf35699e1",
@@ -57,7 +57,7 @@
     "sound800": "#hash_54f28bb508a46096",
     "sound810": "#hash_54f28bb508a46096",
     "tunables1": "#sig_bow_quickshot5_tunables_mp",
-    "sharedWeaponSounds": "#hash_976e198cea3170c",
+    "sharedWeaponSounds": "#bow_launcher",
     "#hash_2e4a8800": "#sig_bow_scoreevents",
     "projectilemodel": "#wpn_t8_sig_bow_projectile",
     "viewmodel": [
@@ -91,8 +91,8 @@
         "#hash_c15b461b7420c6d2",
         "#hash_bb3f97cf646813ac"
     ],
-    "normalImpactFX": "#hash_543debda11c394d3",
+    "normalImpactFX": "#bow_explosion",
     "bounceImpactFX": "#hero_bow_sm_enter",
-    "normalImpactSounds": "#hash_7f28ebd16e6319e",
+    "normalImpactSounds": "#sparrow_impact",
     "bounceImpactSounds": "#arrow_impact_charged"
 }

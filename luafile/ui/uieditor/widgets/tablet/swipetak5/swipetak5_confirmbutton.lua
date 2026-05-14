@@ -18,7 +18,7 @@ CoD.SwipeTak5_ConfirmButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.TiledBacking = TiledBacking
 	
 	local BgStripe = LUI.UIImage.new( 0, 0, 56, 244, 0, 0, 30, 70 )
-	BgStripe:setImage( RegisterImage( 0x19A4B1AAF40AD17 ) )
+	BgStripe:setImage( RegisterImage( "uie_ui_hud_tak5_confirmation_stripe" ) )
 	BgStripe:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	BgStripe:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( BgStripe )
@@ -27,7 +27,7 @@ CoD.SwipeTak5_ConfirmButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local BgStripeColor = LUI.UIImage.new( 0, 0, 56, 244, 0, 0, 30, 70 )
 	BgStripeColor:setRGB( 1, 0.8, 0 )
 	BgStripeColor:setAlpha( 0 )
-	BgStripeColor:setImage( RegisterImage( 0x19A4B1AAF40AD17 ) )
+	BgStripeColor:setImage( RegisterImage( "uie_ui_hud_tak5_confirmation_stripe" ) )
 	BgStripeColor:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	BgStripeColor:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( BgStripeColor )
@@ -67,7 +67,7 @@ CoD.SwipeTak5_ConfirmButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.ConfirmTextAdd = ConfirmTextAdd
 	
 	local ConfirmButtonFrame = LUI.UIImage.new( 0, 0, 52, 248, 0, 0, 26, 74 )
-	ConfirmButtonFrame:setImage( RegisterImage( 0xCA68993C4E8509E ) )
+	ConfirmButtonFrame:setImage( RegisterImage( "uie_ui_hud_tak5_confirmation_button" ) )
 	ConfirmButtonFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ConfirmButtonFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	ConfirmButtonFrame:setupNineSliceShader( 12, 8 )
@@ -77,7 +77,7 @@ CoD.SwipeTak5_ConfirmButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local ConfirmButtonFrameColor = LUI.UIImage.new( 0, 0, 52, 248, 0, 0, 26, 74 )
 	ConfirmButtonFrameColor:setRGB( 1, 0.8, 0 )
 	ConfirmButtonFrameColor:setAlpha( 0 )
-	ConfirmButtonFrameColor:setImage( RegisterImage( 0xCA68993C4E8509E ) )
+	ConfirmButtonFrameColor:setImage( RegisterImage( "uie_ui_hud_tak5_confirmation_button" ) )
 	ConfirmButtonFrameColor:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	ConfirmButtonFrameColor:setShaderVector( 0, 0, 0, 0, 0 )
 	ConfirmButtonFrameColor:setupNineSliceShader( 12, 8 )

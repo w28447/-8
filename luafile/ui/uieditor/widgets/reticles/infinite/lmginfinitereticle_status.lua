@@ -8,14 +8,14 @@ CoD.lmgInfiniteReticle_Status.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.soundSet = "default"
 	
 	local FrameTop = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, -2, 11 )
-	FrameTop:setImage( RegisterImage( 0xAF3C6E15AEDD887 ) )
+	FrameTop:setImage( RegisterImage( "uie_t7_weapon_lmg_screen_frame" ) )
 	FrameTop:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FrameTop )
 	self.FrameTop = FrameTop
 	
 	local FrameBottom = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 22, 35 )
 	FrameBottom:setXRot( 180 )
-	FrameBottom:setImage( RegisterImage( 0xAF3C6E15AEDD887 ) )
+	FrameBottom:setImage( RegisterImage( "uie_t7_weapon_lmg_screen_frame" ) )
 	FrameBottom:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FrameBottom )
 	self.FrameBottom = FrameBottom

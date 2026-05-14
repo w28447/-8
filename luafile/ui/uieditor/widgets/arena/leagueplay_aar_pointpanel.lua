@@ -54,7 +54,7 @@ CoD.LeaguePlay_AAR_PointPanel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local PerformBg = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	PerformBg:setAlpha( 0.8 )
-	PerformBg:setImage( RegisterImage( 0xF95A1671A1AB874 ) )
+	PerformBg:setImage( RegisterImage( "uie_ui_menu_aar_perform_repeat_bg" ) )
 	PerformBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	PerformBg:setShaderVector( 0, 0, 0, 0, 0 )
 	PerformBg:setupNineSliceShader( 344, 136 )

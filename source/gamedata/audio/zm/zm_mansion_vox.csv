@@ -45,7 +45,7 @@
 #component_pickup,#bat_bile,#hash_12fcbcf5f7dfcc6f,0,0,FALSE,FALSE,FALSE,FALSE
 #component_pickup,#chaos_material,#hash_161206ddd7dcc321,0,0,FALSE,FALSE,FALSE,FALSE
 #component_pickup,#experiment_comp,#hash_66bfd55d9cda1c1c,0,0,FALSE,FALSE,FALSE,FALSE
-#component_pickup,#hash_72e94c726a72d3c,#hash_31e2f2fbfc612834,0,0,FALSE,FALSE,FALSE,FALSE
+#component_pickup,#nos_chaos_material,#hash_31e2f2fbfc612834,0,0,FALSE,FALSE,FALSE,FALSE
 #component_pickup,#prima_materia,#hash_df83a3dd6a41068,0,0,FALSE,FALSE,FALSE,FALSE
 #component_pickup,#weapon_frame,#hash_6b409320cf2568d3,0,0,FALSE,FALSE,FALSE,FALSE
 #component_pickup,#charcoal,#hash_768c1d673e16d1ad,0,0,FALSE,FALSE,FALSE,FALSE

@@ -31,7 +31,7 @@ CoD.vhud_ms_NotificationFlir.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.NotificationAltBox00 = NotificationAltBox00
 	
 	local FLIR = LUI.UIText.new( 0, 1, 0, 0, 0.5, 0.5, -12, 12 )
-	FLIR:setText( Engine[0xF9F1239CFD921FE]( 0xD90B4CA18DA31B7 ) )
+	FLIR:setText( Engine[0xF9F1239CFD921FE]( "menu/hud_vehicle_ir" ) )
 	FLIR:setTTF( "default" )
 	FLIR:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xD756CD9A5F1F1B4 ) )
 	FLIR:setShaderVector( 0, 0, 1, 0, 0 )

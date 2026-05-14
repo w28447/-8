@@ -56,7 +56,7 @@ function init()
     serverfield::register( "billiard_ball_sunk_sf", 8000, getminbitcountfornum( 9 ), "int", &function_cf048af );
     clientfield::register( "world", "" + #"hash_354bb8ac5de6640a", 8000, getminbitcountfornum( 9 ), "int" );
     clientfield::register( "world", "" + #"hash_75594bca6b54706e", 8000, 1, "int" );
-    clientfield::register( "world", "" + #"hash_2c115514da4cee51", 17000, 1, "int" );
+    clientfield::register( "world", "" + #"force_stream_silver_bullets", 17000, 1, "int" );
     clientfield::register( "scriptmover", "" + #"barrel_drip", 8000, 1, "counter" );
     clientfield::register( "scriptmover", "" + #"barrel_spray", 8000, 1, "counter" );
     register_steps();
@@ -502,7 +502,7 @@ function function_c63076b4( var_2afee46 = 1 )
             if ( var_2afee46 )
             {
                 level.a_s_barrels[ i ] thread function_85e39c4d();
-                level clientfield::set( "" + #"hash_2c115514da4cee51", 1 );
+                level clientfield::set( "" + #"force_stream_silver_bullets", 1 );
             }
         }
         
@@ -588,7 +588,7 @@ function function_28995f54( var_a276c861 )
 {
     if ( level flag::get( #"hash_63f87f83cf6cbc6a" ) )
     {
-        level clientfield::set( "" + #"hash_2c115514da4cee51", 0 );
+        level clientfield::set( "" + #"force_stream_silver_bullets", 0 );
         return;
     }
     
@@ -631,7 +631,7 @@ function function_e3a40726()
     
     if ( !( isdefined( var_36d56d5e ) && var_36d56d5e ) )
     {
-        level clientfield::set( "" + #"hash_2c115514da4cee51", 0 );
+        level clientfield::set( "" + #"force_stream_silver_bullets", 0 );
     }
 }
 
@@ -712,7 +712,7 @@ function function_b601eebc()
         }
         
         self.stub.mdl_item delete();
-        level clientfield::set( "" + #"hash_2c115514da4cee51", 0 );
+        level clientfield::set( "" + #"force_stream_silver_bullets", 0 );
         player mansion_silver_bullet::function_4e849ab();
         zm_unitrigger::unregister_unitrigger( self.stub );
     }
@@ -892,7 +892,7 @@ function function_35ab22f4()
         
         while ( true )
         {
-            if ( getdvarint( #"hash_3dcf262f16faced0", 0 ) )
+            if ( getdvarint( #"billiard_ball_debug", 0 ) )
             {
                 print3d( ( -1440, -580, 120 ), "<dev string:xe0>" + level.var_e967a159, ( 1, 1, 1 ), 1, 1, 6 );
             }
@@ -1094,7 +1094,7 @@ function function_7f4f9503( str_bgb )
     
     if ( level.bgb[ str_bgb ].limit_type == "activated" )
     {
-        self notify( #"hash_27b238d082f65849", str_bgb );
+        self notify( #"bgb_gumball_anim_activate", str_bgb );
         self bgb::activation_start();
         self thread bgb::run_activation_func( str_bgb );
     }
@@ -1229,7 +1229,7 @@ function function_63c873d9( var_dc2ad9ce )
                                 a_e_players[ i ].var_d2822b91++;
                             }
                             
-                            var_dc2ad9ce notify( #"hash_239e896260dae2d8" );
+                            var_dc2ad9ce notify( #"secret_chamber_vo_played" );
                             return;
                         }
                         
@@ -1249,7 +1249,7 @@ function function_63c873d9( var_dc2ad9ce )
 // Size: 0x172
 function function_840d0d56()
 {
-    self endon( #"hash_239e896260dae2d8" );
+    self endon( #"secret_chamber_vo_played" );
     var_e699d494 = zm_zonemgr::get_zone_from_position( self.origin, 1 );
     assert( isdefined( var_e699d494 ), "<dev string:xea>" + self.origin );
     var_8259b1e9 = zm_cleanup::get_adjacencies_to_zone( var_e699d494 );

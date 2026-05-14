@@ -27,7 +27,7 @@ function __init__()
 // Size: 0x5c
 function init_clientfields()
 {
-    clientfield::register( "toplayer", "" + #"hash_61ff06b1f8850806", 1, 1, "int", &drawer_rumble, 0, 0 );
+    clientfield::register( "toplayer", "" + #"drawer_rumble_feedback", 1, 1, "int", &drawer_rumble, 0, 0 );
 }
 
 // Namespace zm_office_ww_quest/zm_office_ww_quest

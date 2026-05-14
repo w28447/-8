@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_wetwork_plant_blackflag",
+    "type": "#gesture",
+    "gesture": "#hash_4c14b37b23aa5462",
+    "gesture2": "#hash_66796c68b67a4cfd",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/jolly_roger",
+        "icon": "image#ui_icon_emotes_blackflag",
+        "isdefault": 0
+    }
+}

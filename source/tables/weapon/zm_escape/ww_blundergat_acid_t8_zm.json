@@ -3,7 +3,7 @@
     "baseWeapon": "#ww_blundergat_acid_t8",
     "displayname": "#zmweapon/acidgat",
     "weapon70": "#ww_blundergat_t8",
-    "streamkey": "#hash_77e801b41df239bf",
+    "streamkey": "#ww_blundergat_acid_t8_soundbank",
     "scrstr_8c8": [
         "tag_armor_acid",
         "tag_armor",

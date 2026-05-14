@@ -7,7 +7,7 @@
     "entries": [
         {
             "name": "#hash_7ac66c9ad92051ff",
-            "description": "#hash_6fdcc66d6ac640ff",
+            "description": "#playlist/zm_zod",
             "lobbyMainMode": "CAMPAIGN",
             "image": "#ui_icon_gamemode_zm_gauntlet",
             "imageBackground": "#hash_c33394350e965ad8",
@@ -42,7 +42,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -113,7 +113,7 @@
             "rotations": [
                 {
                     "map": "#zm_zodt8",
-                    "gametype": "#hash_3f5ca727e8114fe5",
+                    "gametype": "#gametype_zm_ztrials",
                     "weight": 1,
                     "isFree": false
                 }
@@ -157,7 +157,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -228,7 +228,7 @@
             "rotations": [
                 {
                     "map": "#zm_towers",
-                    "gametype": "#hash_3f5ca727e8114fe5",
+                    "gametype": "#gametype_zm_ztrials",
                     "weight": 1,
                     "isFree": false
                 }
@@ -273,7 +273,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -344,7 +344,7 @@
             "rotations": [
                 {
                     "map": "#zm_office",
-                    "gametype": "#hash_3f5ca727e8114fe5",
+                    "gametype": "#gametype_zm_ztrials",
                     "weight": 1,
                     "isFree": false
                 }
@@ -389,7 +389,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -460,7 +460,7 @@
             "rotations": [
                 {
                     "map": "#zm_escape",
-                    "gametype": "#hash_3f5ca727e8114fe5",
+                    "gametype": "#gametype_zm_ztrials",
                     "weight": 1,
                     "isFree": false
                 }
@@ -469,7 +469,7 @@
         },
         {
             "name": "#hash_d6866ee9e12320f",
-            "description": "#hash_1c6c7f02f2a5c119",
+            "description": "#zmtrials/dotn",
             "unique_name": "#hash_708ca3393b7322ab",
             "dlcName": "dlc1zm",
             "lobbyMainMode": "CAMPAIGN",
@@ -506,7 +506,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -577,7 +577,7 @@
             "rotations": [
                 {
                     "map": "#zm_mansion",
-                    "gametype": "#hash_3f5ca727e8114fe5",
+                    "gametype": "#gametype_zm_ztrials",
                     "weight": 1,
                     "isFree": false
                 }
@@ -623,7 +623,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -694,7 +694,7 @@
             "rotations": [
                 {
                     "map": "#zm_red",
-                    "gametype": "#hash_3f5ca727e8114fe5",
+                    "gametype": "#gametype_zm_ztrials",
                     "weight": 1,
                     "isFree": false
                 }
@@ -703,7 +703,7 @@
         },
         {
             "name": "#hash_51055b01e3fb17fd",
-            "description": "#hash_6fdcc66d6ac640ff",
+            "description": "#playlist/zm_zod",
             "lobbyMainMode": "CAMPAIGN",
             "image": "#ui_icon_gamemode_zm_gauntlet",
             "imageBackground": "#hash_c33394350e965ad8",
@@ -738,7 +738,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -824,7 +824,7 @@
             "rotations": [
                 {
                     "map": "#zm_zodt8",
-                    "gametype": "#hash_3f5ca727e8114fe5",
+                    "gametype": "#gametype_zm_ztrials",
                     "weight": 1,
                     "isFree": false
                 }
@@ -833,7 +833,7 @@
         },
         {
             "name": "#hash_54422adca0acd1eb",
-            "description": "#hash_640d886bb4070112",
+            "description": "#zmtrials/dac",
             "unique_name": "#hash_2e9ec32a2b942215",
             "dlcName": "dlc3zm",
             "lobbyMainMode": "CAMPAIGN",
@@ -870,7 +870,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -941,7 +941,7 @@
             "rotations": [
                 {
                     "map": "#zm_white",
-                    "gametype": "#hash_3f5ca727e8114fe5",
+                    "gametype": "#gametype_zm_ztrials",
                     "weight": 1,
                     "isFree": false
                 }
@@ -986,7 +986,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -1057,7 +1057,7 @@
             "rotations": [
                 {
                     "map": "#zm_orange",
-                    "gametype": "#hash_3f5ca727e8114fe5",
+                    "gametype": "#gametype_zm_ztrials",
                     "weight": 1,
                     "isFree": false
                 }

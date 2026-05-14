@@ -21,7 +21,7 @@ function init()
     level thread function_91858511();
     level.draftactivecam = "";
     level.draftxcam = #"ui_cam_draft_common";
-    level.var_482af62e = #"hash_12263e5d70551bf9";
+    level.var_482af62e = #"ui_cam_draft_common_zoom";
     level.var_df72fe54 = undefined;
     level.draftcharacters = [];
     level.var_6963abdb = [];
@@ -508,7 +508,7 @@ function setup_team( localclientnum )
     }
     else if ( sessionmode == 0 )
     {
-        level.draftxcam = #"hash_590b617ac1441b1b";
+        level.draftxcam = #"ui_scene_cam_zm_lobby";
         targetname = "ZMdraftCharacter";
     }
     
@@ -552,12 +552,12 @@ function function_a5644aa3( localclientnum )
     
     while ( true )
     {
-        level waittill( #"hash_4bb9479c29665c84" );
+        level waittill( #"positiondraft_changingcharacter" );
         function_532dfc0b( localclientnum, 1000 );
         level.var_e6802f10 = 1;
-        waitresult = level waittill( #"hash_4ef5fa5de0b8868b", #"hash_3f81f5a6c0c89878" );
+        waitresult = level waittill( #"positiondraft_changingcharactercomplete", #"positiondraft_resetcharacterscene" );
         
-        if ( waitresult._notify == #"hash_4ef5fa5de0b8868b" )
+        if ( waitresult._notify == #"positiondraft_changingcharactercomplete" )
         {
             function_e79c182b( localclientnum, 1000 );
         }
@@ -582,10 +582,10 @@ function function_9c896b69( localclientnum )
     
     while ( true )
     {
-        waitresult = level waittill( #"positiondraft_update", #"positiondraft_reject", #"hash_6f2435126950e914" );
+        waitresult = level waittill( #"positiondraft_update", #"positiondraft_reject", #"positiondraft_characterselected" );
         localclientnum = waitresult.localclientnum;
         
-        if ( waitresult._notify == #"hash_6f2435126950e914" )
+        if ( waitresult._notify == #"positiondraft_characterselected" )
         {
             level childthread update_team( localclientnum, 1 );
             level childthread function_1cf2437c( localclientnum, waitresult.characterindex );
@@ -852,7 +852,7 @@ function function_91858511()
             
             if ( isdefined( waitresult.var_b69dc9af ) && waitresult.var_b69dc9af )
             {
-                level notify( #"hash_21c79522aa982cdd" );
+                level notify( #"positiondraft_close_finished" );
             }
         }
     }

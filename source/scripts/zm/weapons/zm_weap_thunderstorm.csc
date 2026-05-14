@@ -24,8 +24,8 @@ function __init__()
 {
     clientfield::register( "scriptmover", "" + #"aoe_indicator", 16000, 1, "counter", &aoe_indicator_fx, 0, 0 );
     clientfield::register( "scriptmover", "" + #"electric_storm", 16000, 1, "int", &electric_storm_fx, 0, 0 );
-    clientfield::register( "scriptmover", "" + #"hash_7006a7d528a6f05c", 16000, 3, "int", &function_6e837718, 0, 0 );
-    clientfield::register( "actor", "" + #"hash_51b05e5d116438a9", 16000, 3, "int", &function_46a56fe2, 0, 0 );
+    clientfield::register( "scriptmover", "" + #"pegasus_beam_start", 16000, 3, "int", &pegasus_beam_start, 0, 0 );
+    clientfield::register( "actor", "" + #"pegasus_beam_target", 16000, 3, "int", &function_46a56fe2, 0, 0 );
     clientfield::register( "actor", "" + #"hash_561a1fd86bc1a53a", 16000, 1, "int", &function_ab086ad8, 0, 0 );
     clientfield::register( "scriptmover", "" + #"hash_43cf6c236d2e9ba", 16000, 1, "counter", &function_acecb36a, 0, 0 );
     clientfield::register( "scriptmover", "" + #"pegasus_staff_fx", 16000, 1, "int", &function_5b4619, 0, 0 );
@@ -124,7 +124,7 @@ function function_acecb36a( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0x32e5a7b8, Offset: 0x9b8
 // Size: 0x11c
-function function_6e837718( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function pegasus_beam_start( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     level.var_667af8b4[ newval ] = self;
     

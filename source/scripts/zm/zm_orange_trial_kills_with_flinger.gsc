@@ -86,7 +86,7 @@ function private on_end( round_reset )
 // Size: 0x100
 function private function_c80f40af()
 {
-    level endon( #"hash_7646638df88a3656" );
+    level endon( #"trial_round_end" );
     
     while ( level.var_61541a89 < level.var_b07feb9b )
     {

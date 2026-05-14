@@ -1,6 +1,6 @@
 {
     "name": "#dlog_event_message_size",
-    "unk28": "#hash_47624b84df02d550",
+    "unk28": "#message_size",
     "ddlDef": "#gamedata/ddl/generated/dlog_event_message_size.ddl",
     "unk18": 0,
     "unk19": 1,
@@ -47,7 +47,7 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT32"
                     },
@@ -110,7 +110,7 @@
     ],
     "members": [
         {
-            "name": "#hash_410e02df5064f43",
+            "name": "#max_compressed",
             "scrName": "#hash_5bb006c8",
             "type": "INT32"
         },
@@ -120,7 +120,7 @@
             "type": "INT32"
         },
         {
-            "name": "#hash_158f176cc1f5249c",
+            "name": "#max_data_transfer",
             "scrName": "#hash_6e002e02",
             "type": "INT32"
         },
@@ -145,7 +145,7 @@
             "type": "UINT32"
         },
         {
-            "name": "#hash_53c7dcda3f87b0b8",
+            "name": "#max_uncompressed",
             "scrName": "#hash_3b704a14",
             "type": "INT32"
         },

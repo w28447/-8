@@ -553,7 +553,7 @@ CoD.NotificationUtility.GetMedalData = function ( f20_arg0 )
 		local f20_local2 = Engine[0xE00B2F29271C60B]( f20_local1 )
 		if f20_local2 then
 			f20_local0.name = f20_local2[0x8E69067413FE145] or 0x0
-			f20_local0.description = f20_local2[0xCC44970C8397929] or 0x0
+			f20_local0.description = f20_local2["description"] or 0x0
 			f20_local0.iconSmall = f20_local2[0xDA32D2BFAA81507]
 			f20_local0.iconLarge = f20_local2[0x8027A8209C5D65F]
 			f20_local0.widgetName = f20_local2[0x7F0119E3154625]

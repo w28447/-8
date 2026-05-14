@@ -9,13 +9,13 @@
         {
             "value": 22,
             "next": 65535,
-            "name": "#hash_739e49483e8fcfc6",
+            "name": "#amb_birds_random",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_739e49483e8fcfc6",
+                    "name": "#amb_birds_random",
                     "assetId": "#amb/animals/birds/jungle/chatter/chatter_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -54,7 +54,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_739e49483e8fcfc6",
+                    "name": "#amb_birds_random",
                     "assetId": "#amb/animals/birds/jungle/chatter/chatter_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -93,7 +93,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_739e49483e8fcfc6",
+                    "name": "#amb_birds_random",
                     "assetId": "#amb/animals/birds/jungle/chatter/chatter_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -132,7 +132,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_739e49483e8fcfc6",
+                    "name": "#amb_birds_random",
                     "assetId": "#amb/animals/birds/jungle/chatter/chatter_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -171,7 +171,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_739e49483e8fcfc6",
+                    "name": "#amb_birds_random",
                     "assetId": "#amb/animals/birds/jungle/chatter/chatter_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -210,7 +210,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_739e49483e8fcfc6",
+                    "name": "#amb_birds_random",
                     "assetId": "#amb/animals/birds/jungle/chatter/chatter_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -249,7 +249,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_739e49483e8fcfc6",
+                    "name": "#amb_birds_random",
                     "assetId": "#amb/animals/birds/jungle/chatter/chatter_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -288,7 +288,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_739e49483e8fcfc6",
+                    "name": "#amb_birds_random",
                     "assetId": "#amb/animals/birds/jungle/chatter/chatter_07.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -327,7 +327,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_739e49483e8fcfc6",
+                    "name": "#amb_birds_random",
                     "assetId": "#amb/animals/birds/jungle/chatter/chatter_08.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -366,7 +366,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_739e49483e8fcfc6",
+                    "name": "#amb_birds_random",
                     "assetId": "#amb/animals/birds/jungle/chatter/chatter_09.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -405,7 +405,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_739e49483e8fcfc6",
+                    "name": "#amb_birds_random",
                     "assetId": "#amb/animals/birds/jungle/chatter/chatter_10.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -448,13 +448,13 @@
         {
             "value": 119,
             "next": 4,
-            "name": "#hash_4fb484daa1ae90ab",
+            "name": "#amb_creek_bubble",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4fb484daa1ae90ab",
+                    "name": "#amb_creek_bubble",
                     "assetId": "#amb/environment/water/brook/light/water_brook_l.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -497,13 +497,13 @@
         {
             "value": 69,
             "next": 65535,
-            "name": "#hash_774f8b1c23d48a20",
+            "name": "#amb_creek_bubble_light",
             "sequence": 0,
             "cullDistance": 900,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_774f8b1c23d48a20",
+                    "name": "#amb_creek_bubble_light",
                     "assetId": "#amb/environment/water/brook/rock_splash_lp/amb_creek_rock_lp_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -1631,13 +1631,13 @@
         {
             "value": 31,
             "next": 65535,
-            "name": "#hash_6287c53be5a867dc",
+            "name": "#amb_metal_fire",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6287c53be5a867dc",
+                    "name": "#amb_metal_fire",
                     "assetId": "#dst/generic/fire/barrel/barrel_fire_02.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -2305,13 +2305,13 @@
         {
             "value": 55,
             "next": 65535,
-            "name": "#hash_603d8f73f6eca425",
+            "name": "#amb_tree_leaves",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_603d8f73f6eca425",
+                    "name": "#amb_tree_leaves",
                     "assetId": "#amb/environment/wind/gusts/gust_leaves/amb_gust_leaves_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -2350,7 +2350,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_603d8f73f6eca425",
+                    "name": "#amb_tree_leaves",
                     "assetId": "#amb/environment/wind/gusts/gust_leaves/amb_gust_leaves_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -2389,7 +2389,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_603d8f73f6eca425",
+                    "name": "#amb_tree_leaves",
                     "assetId": "#amb/environment/wind/gusts/gust_leaves/amb_gust_leaves_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -2428,7 +2428,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_603d8f73f6eca425",
+                    "name": "#amb_tree_leaves",
                     "assetId": "#amb/environment/wind/gusts/gust_leaves/amb_gust_leaves_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -2467,7 +2467,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_603d8f73f6eca425",
+                    "name": "#amb_tree_leaves",
                     "assetId": "#amb/environment/wind/gusts/gust_leaves/amb_gust_leaves_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -2506,7 +2506,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_603d8f73f6eca425",
+                    "name": "#amb_tree_leaves",
                     "assetId": "#amb/environment/wind/gusts/gust_leaves/amb_gust_leaves_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -2545,7 +2545,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_603d8f73f6eca425",
+                    "name": "#amb_tree_leaves",
                     "assetId": "#amb/environment/wind/gusts/gust_leaves/amb_gust_leaves_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -2584,7 +2584,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_603d8f73f6eca425",
+                    "name": "#amb_tree_leaves",
                     "assetId": "#amb/environment/wind/gusts/gust_leaves/amb_gust_leaves_07.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -2623,7 +2623,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_603d8f73f6eca425",
+                    "name": "#amb_tree_leaves",
                     "assetId": "#amb/environment/wind/gusts/gust_leaves/amb_gust_leaves_08.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -2662,7 +2662,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_603d8f73f6eca425",
+                    "name": "#amb_tree_leaves",
                     "assetId": "#amb/environment/wind/gusts/gust_leaves/amb_gust_leaves_09.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -2701,7 +2701,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_603d8f73f6eca425",
+                    "name": "#amb_tree_leaves",
                     "assetId": "#amb/environment/wind/gusts/gust_leaves/amb_gust_leaves_10.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -2740,7 +2740,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_603d8f73f6eca425",
+                    "name": "#amb_tree_leaves",
                     "assetId": "#amb/environment/wind/gusts/gust_leaves/amb_gust_leaves_11.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -2783,13 +2783,13 @@
         {
             "value": 177,
             "next": 65535,
-            "name": "#hash_5bd7bc73f9521c12",
+            "name": "#amb_trees_creak",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5bd7bc73f9521c12",
+                    "name": "#amb_trees_creak",
                     "assetId": "#amb/creak/tree/tree_creak_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -2828,7 +2828,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_5bd7bc73f9521c12",
+                    "name": "#amb_trees_creak",
                     "assetId": "#amb/creak/tree/tree_creak_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -2867,7 +2867,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_5bd7bc73f9521c12",
+                    "name": "#amb_trees_creak",
                     "assetId": "#amb/creak/tree/tree_creak_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -2906,7 +2906,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_5bd7bc73f9521c12",
+                    "name": "#amb_trees_creak",
                     "assetId": "#amb/creak/tree/tree_creak_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -3203,13 +3203,13 @@
         {
             "value": 174,
             "next": 19,
-            "name": "#hash_332742e9fadf31af",
+            "name": "#amb_wind_dead_left",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_332742e9fadf31af",
+                    "name": "#amb_wind_dead_left",
                     "assetId": "#amb/environment/location_bgs/swamp/swamp_day_amb_l.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -3252,13 +3252,13 @@
         {
             "value": 128,
             "next": 65535,
-            "name": "#hash_270e902272bbd9a0",
+            "name": "#amb_wind_dead_right",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_270e902272bbd9a0",
+                    "name": "#amb_wind_dead_right",
                     "assetId": "#amb/environment/location_bgs/swamp/swamp_day_amb_r.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -3683,13 +3683,13 @@
         {
             "value": 159,
             "next": 65535,
-            "name": "#hash_6845c2088ad88a3c",
+            "name": "#amb_wind_hollow",
             "sequence": 0,
             "cullDistance": 1100,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6845c2088ad88a3c",
+                    "name": "#amb_wind_hollow",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
                     "assetFileNameRelease": "#mp_jungle2.all",
@@ -3830,13 +3830,13 @@
         {
             "value": 114,
             "next": 65535,
-            "name": "#hash_66bf4dbabf6ad256",
+            "name": "#amb_wind_left",
             "sequence": 0,
             "cullDistance": 2250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_66bf4dbabf6ad256",
+                    "name": "#amb_wind_left",
                     "assetId": "#amb/environment/location_bgs/swamp/swamp_day_amb_l.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -3879,13 +3879,13 @@
         {
             "value": 70,
             "next": 38,
-            "name": "#hash_e095e483463882b",
+            "name": "#amb_wind_right",
             "sequence": 0,
             "cullDistance": 2250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_e095e483463882b",
+                    "name": "#amb_wind_right",
                     "assetId": "#amb/environment/location_bgs/swamp/swamp_day_amb_r.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -3928,13 +3928,13 @@
         {
             "value": 194,
             "next": 65535,
-            "name": "#hash_73279fba4bb9ec56",
+            "name": "#amb_wood_creak",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_73279fba4bb9ec56",
+                    "name": "#amb_wood_creak",
                     "assetId": "#amb/material_movement/creaks/wood/light/wood_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -3973,7 +3973,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_73279fba4bb9ec56",
+                    "name": "#amb_wood_creak",
                     "assetId": "#amb/material_movement/creaks/wood/light/wood_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -4012,7 +4012,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_73279fba4bb9ec56",
+                    "name": "#amb_wood_creak",
                     "assetId": "#amb/material_movement/creaks/wood/light/wood_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -4051,7 +4051,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_73279fba4bb9ec56",
+                    "name": "#amb_wood_creak",
                     "assetId": "#amb/material_movement/creaks/wood/light/wood_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -4090,7 +4090,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_73279fba4bb9ec56",
+                    "name": "#amb_wood_creak",
                     "assetId": "#amb/material_movement/creaks/wood/light/wood_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -4129,7 +4129,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_73279fba4bb9ec56",
+                    "name": "#amb_wood_creak",
                     "assetId": "#amb/material_movement/creaks/wood/light/wood_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -4168,7 +4168,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_73279fba4bb9ec56",
+                    "name": "#amb_wood_creak",
                     "assetId": "#amb/material_movement/creaks/wood/light/wood_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -4211,13 +4211,13 @@
         {
             "value": 79,
             "next": 39,
-            "name": "#hash_7e0bea318c0fa5cc",
+            "name": "#amb_wood_creak_hvy",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7e0bea318c0fa5cc",
+                    "name": "#amb_wood_creak_hvy",
                     "assetId": "#amb/material_movement/creaks/wood/hvy/hvy_wood_creak_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -4256,7 +4256,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_7e0bea318c0fa5cc",
+                    "name": "#amb_wood_creak_hvy",
                     "assetId": "#amb/material_movement/creaks/wood/hvy/hvy_wood_creak_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -4295,7 +4295,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_7e0bea318c0fa5cc",
+                    "name": "#amb_wood_creak_hvy",
                     "assetId": "#amb/material_movement/creaks/wood/hvy/hvy_wood_creak_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -4334,7 +4334,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_7e0bea318c0fa5cc",
+                    "name": "#amb_wood_creak_hvy",
                     "assetId": "#amb/material_movement/creaks/wood/hvy/hvy_wood_creak_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -4373,7 +4373,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_7e0bea318c0fa5cc",
+                    "name": "#amb_wood_creak_hvy",
                     "assetId": "#amb/material_movement/creaks/wood/hvy/hvy_wood_creak_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -4412,7 +4412,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_7e0bea318c0fa5cc",
+                    "name": "#amb_wood_creak_hvy",
                     "assetId": "#amb/material_movement/creaks/wood/hvy/hvy_wood_creak_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -4451,7 +4451,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_7e0bea318c0fa5cc",
+                    "name": "#amb_wood_creak_hvy",
                     "assetId": "#amb/material_movement/creaks/wood/hvy/hvy_wood_creak_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -4490,7 +4490,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_7e0bea318c0fa5cc",
+                    "name": "#amb_wood_creak_hvy",
                     "assetId": "#amb/material_movement/creaks/wood/hvy/hvy_wood_creak_07.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -4529,7 +4529,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_7e0bea318c0fa5cc",
+                    "name": "#amb_wood_creak_hvy",
                     "assetId": "#amb/material_movement/creaks/wood/hvy/hvy_wood_creak_08.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -4568,7 +4568,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_7e0bea318c0fa5cc",
+                    "name": "#amb_wood_creak_hvy",
                     "assetId": "#amb/material_movement/creaks/wood/hvy/hvy_wood_creak_09.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -4607,7 +4607,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_7e0bea318c0fa5cc",
+                    "name": "#amb_wood_creak_hvy",
                     "assetId": "#amb/material_movement/creaks/wood/hvy/hvy_wood_creak_10.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -4646,7 +4646,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_7e0bea318c0fa5cc",
+                    "name": "#amb_wood_creak_hvy",
                     "assetId": "#amb/material_movement/creaks/wood/hvy/hvy_wood_creak_11.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -4685,7 +4685,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_7e0bea318c0fa5cc",
+                    "name": "#amb_wood_creak_hvy",
                     "assetId": "#amb/material_movement/creaks/wood/hvy/hvy_wood_creak_12.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -4724,7 +4724,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_7e0bea318c0fa5cc",
+                    "name": "#amb_wood_creak_hvy",
                     "assetId": "#amb/material_movement/creaks/wood/hvy/hvy_wood_creak_13.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -4763,7 +4763,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_7e0bea318c0fa5cc",
+                    "name": "#amb_wood_creak_hvy",
                     "assetId": "#amb/material_movement/creaks/wood/hvy/hvy_wood_creak_14.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -4855,13 +4855,13 @@
         {
             "value": 142,
             "next": 65535,
-            "name": "#hash_5eb690639ce50eba",
+            "name": "#dst_car_fire",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5eb690639ce50eba",
+                    "name": "#dst_car_fire",
                     "assetId": "#dst/generic/fire/car/car_fire_03.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -6989,13 +6989,13 @@
         {
             "value": 141,
             "next": 29,
-            "name": "#hash_31f777916298d72",
+            "name": "#dst_cover_concrete",
             "sequence": 0,
             "cullDistance": 550,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -7034,7 +7034,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -7073,7 +7073,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -7112,7 +7112,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -7151,7 +7151,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -7190,7 +7190,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -7240,7 +7240,7 @@
             "aliases": [
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -7281,7 +7281,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -7322,7 +7322,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -7363,7 +7363,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -7404,7 +7404,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -7445,7 +7445,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -7486,7 +7486,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -8018,13 +8018,13 @@
         {
             "value": 76,
             "next": 75,
-            "name": "#hash_5977d1f5f8457ae5",
+            "name": "#dst_fire_extinguisher",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5977d1f5f8457ae5",
+                    "name": "#dst_fire_extinguisher",
                     "assetId": "#dst/prop/fire_extinguisher/fire_extinguisher_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -8115,13 +8115,13 @@
         {
             "value": 3,
             "next": 65535,
-            "name": "#hash_2fc9b1cdafb1c5db",
+            "name": "#dst_foodstand",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2fc9b1cdafb1c5db",
+                    "name": "#dst_foodstand",
                     "assetId": "#dst/prop/foodstand/foodstand_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -8160,7 +8160,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_2fc9b1cdafb1c5db",
+                    "name": "#dst_foodstand",
                     "assetId": "#dst/prop/foodstand/foodstand_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -8348,13 +8348,13 @@
         {
             "value": 136,
             "next": 65535,
-            "name": "#hash_419e84642ebe554",
+            "name": "#dst_gas_pipe_lp",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_419e84642ebe554",
+                    "name": "#dst_gas_pipe_lp",
                     "assetId": "#dst/pipe/gas/loop/gas_pipe_lp.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -9772,13 +9772,13 @@
         {
             "value": 157,
             "next": 24,
-            "name": "#hash_4f8c480d8e8f07b6",
+            "name": "#dst_pipe_steam",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4f8c480d8e8f07b6",
+                    "name": "#dst_pipe_steam",
                     "secondaryname": "#hash_54538dea28a0400e",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -9918,13 +9918,13 @@
         {
             "value": 125,
             "next": 65535,
-            "name": "#hash_4ec5a3e02263fc0e",
+            "name": "#dst_propane_tank_explo",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
@@ -9965,7 +9965,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
@@ -10006,7 +10006,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
@@ -10047,7 +10047,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
@@ -10088,7 +10088,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
@@ -10129,7 +10129,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
@@ -10170,7 +10170,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
@@ -10222,7 +10222,7 @@
             "aliases": [
                 {
                     "name": "#hash_238170c19d279f5",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -10262,7 +10262,7 @@
                 },
                 {
                     "name": "#hash_238170c19d279f5",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -10302,7 +10302,7 @@
                 },
                 {
                     "name": "#hash_238170c19d279f5",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -10342,7 +10342,7 @@
                 },
                 {
                     "name": "#hash_238170c19d279f5",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -10385,13 +10385,13 @@
         {
             "value": 98,
             "next": 65535,
-            "name": "#hash_344ec28fee2dea4c",
+            "name": "#dst_rock_large",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_344ec28fee2dea4c",
+                    "name": "#dst_rock_large",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
                     "assetFileNameRelease": "#mp_jungle2.all",
@@ -10440,7 +10440,7 @@
             "aliases": [
                 {
                     "name": "#dst_server",
-                    "secondaryname": "#hash_25a264b901d17919",
+                    "secondaryname": "#dst_server_glass",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
                     "assetFileNameRelease": "#mp_jungle2.all",
@@ -10482,14 +10482,14 @@
         {
             "value": 68,
             "next": 65535,
-            "name": "#hash_25a264b901d17919",
+            "name": "#dst_server_glass",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_25a264b901d17919",
-                    "secondaryname": "#hash_2f095673f11faa44",
+                    "name": "#dst_server_glass",
+                    "secondaryname": "#dst_server_power",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -10528,8 +10528,8 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_25a264b901d17919",
-                    "secondaryname": "#hash_2f095673f11faa44",
+                    "name": "#dst_server_glass",
+                    "secondaryname": "#dst_server_power",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -10568,8 +10568,8 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_25a264b901d17919",
-                    "secondaryname": "#hash_2f095673f11faa44",
+                    "name": "#dst_server_glass",
+                    "secondaryname": "#dst_server_power",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -10612,13 +10612,13 @@
         {
             "value": 167,
             "next": 25,
-            "name": "#hash_2f095673f11faa44",
+            "name": "#dst_server_power",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2f095673f11faa44",
+                    "name": "#dst_server_power",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
                     "assetFileNameRelease": "#mp_jungle2.all",
@@ -11339,13 +11339,13 @@
         {
             "value": 49,
             "next": 65535,
-            "name": "#hash_58218bc4f7624185",
+            "name": "#dst_steam_pipe_lp",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_58218bc4f7624185",
+                    "name": "#dst_steam_pipe_lp",
                     "assetId": "#dst/pipe/steam/loop/steam_pipe_lp.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -12193,13 +12193,13 @@
         {
             "value": 61,
             "next": 65535,
-            "name": "#hash_72725b98cf0834ac",
+            "name": "#dst_trash_bag",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_72725b98cf0834ac",
+                    "name": "#dst_trash_bag",
                     "assetId": "#hash_131702bdb9183384",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -12238,7 +12238,7 @@
                     "unk178": "#hash_503090305"
                 },
                 {
-                    "name": "#hash_72725b98cf0834ac",
+                    "name": "#dst_trash_bag",
                     "assetId": "#hash_2264ca2ac3c87869",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -12277,7 +12277,7 @@
                     "unk178": "#hash_503090305"
                 },
                 {
-                    "name": "#hash_72725b98cf0834ac",
+                    "name": "#dst_trash_bag",
                     "assetId": "#hash_62c73c6a2cca2abe",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -12316,7 +12316,7 @@
                     "unk178": "#hash_503090305"
                 },
                 {
-                    "name": "#hash_72725b98cf0834ac",
+                    "name": "#dst_trash_bag",
                     "assetId": "#hash_1884c87605737c5b",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -12408,13 +12408,13 @@
         {
             "value": 59,
             "next": 111,
-            "name": "#hash_1a6485b96677518d",
+            "name": "#dst_water_bottle",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1a6485b96677518d",
+                    "name": "#dst_water_bottle",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
                     "assetFileNameRelease": "#mp_jungle2.all",
@@ -12504,13 +12504,13 @@
         {
             "value": 40,
             "next": 104,
-            "name": "#hash_7809ea482909306c",
+            "name": "#dst_wood_crate",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7809ea482909306c",
+                    "name": "#dst_wood_crate",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
                     "assetFileNameRelease": "#mp_jungle2.all",
@@ -13314,13 +13314,13 @@
         {
             "value": 165,
             "next": 120,
-            "name": "#hash_6d60852ef9ecfe86",
+            "name": "#exp_armor_debris",
             "sequence": 0,
             "cullDistance": 7000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -13360,7 +13360,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -13400,7 +13400,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -13440,7 +13440,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -13480,7 +13480,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -13520,7 +13520,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -13560,7 +13560,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -13600,7 +13600,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_07.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -13640,7 +13640,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_08.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -13680,7 +13680,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_09.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -13720,7 +13720,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_10.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -13760,7 +13760,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_11.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -13811,7 +13811,7 @@
             "aliases": [
                 {
                     "name": "#hash_68d529ce159011b5",
-                    "secondaryname": "#hash_6d60852ef9ecfe86",
+                    "secondaryname": "#exp_armor_debris",
                     "assetId": "#exp/distant/small_distant/exp_small_distant_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -13852,7 +13852,7 @@
                 },
                 {
                     "name": "#hash_68d529ce159011b5",
-                    "secondaryname": "#hash_6d60852ef9ecfe86",
+                    "secondaryname": "#exp_armor_debris",
                     "assetId": "#exp/distant/small_distant/exp_small_distant_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -13893,7 +13893,7 @@
                 },
                 {
                     "name": "#hash_68d529ce159011b5",
-                    "secondaryname": "#hash_6d60852ef9ecfe86",
+                    "secondaryname": "#exp_armor_debris",
                     "assetId": "#exp/distant/small_distant/exp_small_distant_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -13934,7 +13934,7 @@
                 },
                 {
                     "name": "#hash_68d529ce159011b5",
-                    "secondaryname": "#hash_6d60852ef9ecfe86",
+                    "secondaryname": "#exp_armor_debris",
                     "assetId": "#exp/distant/small_distant/exp_small_distant_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -14168,7 +14168,7 @@
             "aliases": [
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -14209,7 +14209,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -14250,7 +14250,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -14291,7 +14291,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -14332,7 +14332,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -14373,7 +14373,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -14414,7 +14414,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -14458,14 +14458,14 @@
         {
             "value": 52,
             "next": 128,
-            "name": "#hash_310e1517e8130d26",
+            "name": "#exp_barrel_close",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_310e1517e8130d26",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "name": "#exp_barrel_close",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/rip/exp_barrel_rip_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -14505,8 +14505,8 @@
                     "unk178": "#hash_6030b0804"
                 },
                 {
-                    "name": "#hash_310e1517e8130d26",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "name": "#exp_barrel_close",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/rip/exp_barrel_rip_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -14546,8 +14546,8 @@
                     "unk178": "#hash_6030b0804"
                 },
                 {
-                    "name": "#hash_310e1517e8130d26",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "name": "#exp_barrel_close",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/rip/exp_barrel_rip_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -14591,13 +14591,13 @@
         {
             "value": 1,
             "next": 65535,
-            "name": "#hash_7fe19ceed35907ce",
+            "name": "#exp_barrel_dist",
             "sequence": 0,
             "cullDistance": 30000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7fe19ceed35907ce",
+                    "name": "#exp_barrel_dist",
                     "assetId": "#exp/prop/barrel/dist/exp_barrel_dist_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -14637,7 +14637,7 @@
                     "unk178": "#hash_6000b0304"
                 },
                 {
-                    "name": "#hash_7fe19ceed35907ce",
+                    "name": "#exp_barrel_dist",
                     "assetId": "#exp/prop/barrel/dist/exp_barrel_dist_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -14730,14 +14730,14 @@
         {
             "value": 47,
             "next": 132,
-            "name": "#hash_3e8d50aeefef2d0e",
+            "name": "#exp_barrel_flux_l",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3e8d50aeefef2d0e",
-                    "secondaryname": "#hash_3e8d3aaeefef07ac",
+                    "name": "#exp_barrel_flux_l",
+                    "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#exp/prop/barrel/flux/exp_barrel_flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -14781,14 +14781,14 @@
         {
             "value": 126,
             "next": 65535,
-            "name": "#hash_3e8d3aaeefef07ac",
+            "name": "#exp_barrel_flux_r",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3e8d3aaeefef07ac",
-                    "secondaryname": "#hash_7fe19ceed35907ce",
+                    "name": "#exp_barrel_flux_r",
+                    "secondaryname": "#exp_barrel_dist",
                     "assetId": "#exp/prop/barrel/flux/exp_barrel_flux_r_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -14832,14 +14832,14 @@
         {
             "value": 18,
             "next": 133,
-            "name": "#hash_8ef0ca7881f8aab",
+            "name": "#exp_barrel_lfe",
             "sequence": 0,
             "cullDistance": 3000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_8ef0ca7881f8aab",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "name": "#exp_barrel_lfe",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -14878,8 +14878,8 @@
                     "unk178": "#hash_c030b0802"
                 },
                 {
-                    "name": "#hash_8ef0ca7881f8aab",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "name": "#exp_barrel_lfe",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -14918,8 +14918,8 @@
                     "unk178": "#hash_c030b0802"
                 },
                 {
-                    "name": "#hash_8ef0ca7881f8aab",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "name": "#exp_barrel_lfe",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -14958,8 +14958,8 @@
                     "unk178": "#hash_c030b0802"
                 },
                 {
-                    "name": "#hash_8ef0ca7881f8aab",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "name": "#exp_barrel_lfe",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -18102,7 +18102,7 @@
             "aliases": [
                 {
                     "name": "#hash_200e28bcd26bab77",
-                    "secondaryname": "#hash_3e8d3aaeefef07ac",
+                    "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -18196,13 +18196,13 @@
         {
             "value": 169,
             "next": 65535,
-            "name": "#hash_2e887c70bfe4df2a",
+            "name": "#exp_mp_propane_tank_explo",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
@@ -18243,7 +18243,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
@@ -18284,7 +18284,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
@@ -18325,7 +18325,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
@@ -18366,7 +18366,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
@@ -18407,7 +18407,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
@@ -18448,7 +18448,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
@@ -18666,7 +18666,7 @@
             "aliases": [
                 {
                     "name": "#hash_4c4fd4c61d8d67f0",
-                    "secondaryname": "#hash_3e8d3aaeefef07ac",
+                    "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -19152,7 +19152,7 @@
             "aliases": [
                 {
                     "name": "#hash_456af38afaef9d77",
-                    "secondaryname": "#hash_3e8d3aaeefef07ac",
+                    "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -19253,7 +19253,7 @@
             "aliases": [
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -19294,7 +19294,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -19335,7 +19335,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -19376,7 +19376,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -19417,7 +19417,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -19458,7 +19458,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -19499,7 +19499,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -19644,14 +19644,14 @@
         {
             "value": 172,
             "next": 9,
-            "name": "#hash_23a8d14db44a77a5",
+            "name": "#exp_veh_close_layer",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_23a8d14db44a77a5",
-                    "secondaryname": "#hash_712e3703787e4a71",
+                    "name": "#exp_veh_close_layer",
+                    "secondaryname": "#exp_veh_decay",
                     "assetId": "#exp/vehicle/close/exp_veh_close_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -19690,8 +19690,8 @@
                     "unk178": "#hash_6030b0204"
                 },
                 {
-                    "name": "#hash_23a8d14db44a77a5",
-                    "secondaryname": "#hash_712e3703787e4a71",
+                    "name": "#exp_veh_close_layer",
+                    "secondaryname": "#exp_veh_decay",
                     "assetId": "#exp/vehicle/close/exp_veh_close_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -19730,8 +19730,8 @@
                     "unk178": "#hash_6030b0204"
                 },
                 {
-                    "name": "#hash_23a8d14db44a77a5",
-                    "secondaryname": "#hash_712e3703787e4a71",
+                    "name": "#exp_veh_close_layer",
+                    "secondaryname": "#exp_veh_decay",
                     "assetId": "#exp/vehicle/close/exp_veh_close_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -19770,8 +19770,8 @@
                     "unk178": "#hash_6030b0204"
                 },
                 {
-                    "name": "#hash_23a8d14db44a77a5",
-                    "secondaryname": "#hash_712e3703787e4a71",
+                    "name": "#exp_veh_close_layer",
+                    "secondaryname": "#exp_veh_decay",
                     "assetId": "#exp/vehicle/close/exp_veh_close_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -19814,14 +19814,14 @@
         {
             "value": 24,
             "next": 177,
-            "name": "#hash_127c91df9b564016",
+            "name": "#exp_veh_debris",
             "sequence": 0,
             "cullDistance": 5000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -19860,8 +19860,8 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -19900,8 +19900,8 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -19940,8 +19940,8 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -19980,8 +19980,8 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -20020,8 +20020,8 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -20060,8 +20060,8 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -20100,8 +20100,8 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_07.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -20140,8 +20140,8 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_08.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -20184,19 +20184,19 @@
         {
             "value": 36,
             "next": 178,
-            "name": "#hash_712e3703787e4a71",
+            "name": "#exp_veh_decay",
             "sequence": 0,
             "cullDistance": 12000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_712e3703787e4a71",
-                    "secondaryname": "#hash_7332c548b8e60625",
+                    "name": "#exp_veh_decay",
+                    "secondaryname": "#exp_veh_flux_l",
                     "assetId": "#exp/decay/refresh/exp_explosion_decay_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
                     "assetFileNameRelease": "#mp_jungle2.all",
-                    "contextType": "#hash_730721b0b6373e1",
+                    "contextType": "#ringoff_plr",
                     "contextValue": "#outdoor",
                     "reverbSend": 0.001,
                     "centerSend": 0,
@@ -20232,13 +20232,13 @@
                     "unk178": "#hash_1b030b0101"
                 },
                 {
-                    "name": "#hash_712e3703787e4a71",
-                    "secondaryname": "#hash_7332c548b8e60625",
+                    "name": "#exp_veh_decay",
+                    "secondaryname": "#exp_veh_flux_l",
                     "assetId": "#exp/decay/refresh/exp_explosion_decay_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
                     "assetFileNameRelease": "#mp_jungle2.all",
-                    "contextType": "#hash_730721b0b6373e1",
+                    "contextType": "#ringoff_plr",
                     "contextValue": "#outdoor",
                     "reverbSend": 0.001,
                     "centerSend": 0,
@@ -20278,14 +20278,14 @@
         {
             "value": 108,
             "next": 65535,
-            "name": "#hash_7332c548b8e60625",
+            "name": "#exp_veh_flux_l",
             "sequence": 0,
             "cullDistance": 13000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7332c548b8e60625",
-                    "secondaryname": "#hash_7332d748b8e624bb",
+                    "name": "#exp_veh_flux_l",
+                    "secondaryname": "#exp_veh_flux_r",
                     "assetId": "#exp/vehicle/flux/veh_flux_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -20324,8 +20324,8 @@
                     "unk178": "#hash_6030e0103"
                 },
                 {
-                    "name": "#hash_7332c548b8e60625",
-                    "secondaryname": "#hash_7332d748b8e624bb",
+                    "name": "#exp_veh_flux_l",
+                    "secondaryname": "#exp_veh_flux_r",
                     "assetId": "#exp/vehicle/flux/veh_flux_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -20364,8 +20364,8 @@
                     "unk178": "#hash_6030e0103"
                 },
                 {
-                    "name": "#hash_7332c548b8e60625",
-                    "secondaryname": "#hash_7332d748b8e624bb",
+                    "name": "#exp_veh_flux_l",
+                    "secondaryname": "#exp_veh_flux_r",
                     "assetId": "#exp/vehicle/flux/veh_flux_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -20404,8 +20404,8 @@
                     "unk178": "#hash_6030e0103"
                 },
                 {
-                    "name": "#hash_7332c548b8e60625",
-                    "secondaryname": "#hash_7332d748b8e624bb",
+                    "name": "#exp_veh_flux_l",
+                    "secondaryname": "#exp_veh_flux_r",
                     "assetId": "#exp/vehicle/flux/veh_flux_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -20448,13 +20448,13 @@
         {
             "value": 34,
             "next": 65535,
-            "name": "#hash_7332d748b8e624bb",
+            "name": "#exp_veh_flux_r",
             "sequence": 0,
             "cullDistance": 13000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7332d748b8e624bb",
+                    "name": "#exp_veh_flux_r",
                     "assetId": "#exp/vehicle/flux/veh_flux_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -20493,7 +20493,7 @@
                     "unk178": "#hash_6030e0103"
                 },
                 {
-                    "name": "#hash_7332d748b8e624bb",
+                    "name": "#exp_veh_flux_r",
                     "assetId": "#exp/vehicle/flux/veh_flux_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -20532,7 +20532,7 @@
                     "unk178": "#hash_6030e0103"
                 },
                 {
-                    "name": "#hash_7332d748b8e624bb",
+                    "name": "#exp_veh_flux_r",
                     "assetId": "#exp/vehicle/flux/veh_flux_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -20571,7 +20571,7 @@
                     "unk178": "#hash_6030e0103"
                 },
                 {
-                    "name": "#hash_7332d748b8e624bb",
+                    "name": "#exp_veh_flux_r",
                     "assetId": "#exp/vehicle/flux/veh_flux_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -20621,7 +20621,7 @@
             "aliases": [
                 {
                     "name": "#exp_veh_large",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -20662,7 +20662,7 @@
                 },
                 {
                     "name": "#exp_veh_large",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -20703,7 +20703,7 @@
                 },
                 {
                     "name": "#exp_veh_large",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -20747,13 +20747,13 @@
         {
             "value": 33,
             "next": 65535,
-            "name": "#hash_680a1ca45380de2",
+            "name": "#exp_veh_lfe",
             "sequence": 0,
             "cullDistance": 3500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_680a1ca45380de2",
+                    "name": "#exp_veh_lfe",
                     "secondaryname": "#hash_bbafec33c2adca2",
                     "assetId": "#exp/vehicle/lfe/exp_veh_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
@@ -20853,7 +20853,7 @@
             "aliases": [
                 {
                     "name": "#exp_veh_med",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -20894,7 +20894,7 @@
                 },
                 {
                     "name": "#exp_veh_med",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -20935,7 +20935,7 @@
                 },
                 {
                     "name": "#exp_veh_med",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -21074,7 +21074,7 @@
             "aliases": [
                 {
                     "name": "#exp_veh_small",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -21115,7 +21115,7 @@
                 },
                 {
                     "name": "#exp_veh_small",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -21156,7 +21156,7 @@
                 },
                 {
                     "name": "#exp_veh_small",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -21792,13 +21792,13 @@
         {
             "value": 140,
             "next": 195,
-            "name": "#hash_1ce2ee8fafd2e832",
+            "name": "#pfx_fire_fall",
             "sequence": 0,
             "cullDistance": 700,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1ce2ee8fafd2e832",
+                    "name": "#pfx_fire_fall",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
                     "assetFileNameRelease": "#mp_jungle2.all",
@@ -21840,13 +21840,13 @@
         {
             "value": 105,
             "next": 65535,
-            "name": "#hash_20919b5a2195c1e1",
+            "name": "#pfx_fire_line",
             "sequence": 0,
             "cullDistance": 800,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_20919b5a2195c1e1",
+                    "name": "#pfx_fire_line",
                     "assetId": "#amb/fire/bonfire/bonfire.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -22287,7 +22287,7 @@
             "aliases": [
                 {
                     "name": "#hash_bbafec33c2adca2",
-                    "secondaryname": "#hash_127c91df9b564016",
+                    "secondaryname": "#exp_veh_debris",
                     "assetId": "#exp/distant/small_distant/exp_small_distant_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -22328,7 +22328,7 @@
                 },
                 {
                     "name": "#hash_bbafec33c2adca2",
-                    "secondaryname": "#hash_127c91df9b564016",
+                    "secondaryname": "#exp_veh_debris",
                     "assetId": "#exp/distant/small_distant/exp_small_distant_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -22369,7 +22369,7 @@
                 },
                 {
                     "name": "#hash_bbafec33c2adca2",
-                    "secondaryname": "#hash_127c91df9b564016",
+                    "secondaryname": "#exp_veh_debris",
                     "assetId": "#exp/distant/small_distant/exp_small_distant_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -22410,7 +22410,7 @@
                 },
                 {
                     "name": "#hash_bbafec33c2adca2",
-                    "secondaryname": "#hash_127c91df9b564016",
+                    "secondaryname": "#exp_veh_debris",
                     "assetId": "#exp/distant/small_distant/exp_small_distant_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -22556,11 +22556,11 @@
             "reverb": "#mp_final_killcam",
             "loop": "#hash_44463359dd025b23",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
+            "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
+            "globalContextType": "#ringoff_plr",
             "globalContextValue": "#outdoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
@@ -22578,12 +22578,12 @@
             "reverb": "#narrow_cave",
             "loop": "#hash_5f0cf846c1e5f92e",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 0.7,
             "reverbWetLevel": 1,
@@ -22600,12 +22600,12 @@
             "reverb": "#room_laboratory",
             "loop": "#hash_5f0cf846c1e5f92e",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 0.7,
             "reverbWetLevel": 1,
@@ -22622,11 +22622,11 @@
             "reverb": "#outdoor_echo",
             "loop": "#hash_8abeeabd2aa2c9c",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
+            "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
+            "globalContextType": "#ringoff_plr",
             "globalContextValue": "#outdoor",
             "defaultRoom": true,
             "reverbDryLevel": 1,
@@ -22644,11 +22644,11 @@
             "reverb": "#room_bedroom",
             "loop": "#hash_8abeeabd2aa2c9c",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
+            "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
+            "globalContextType": "#ringoff_plr",
             "globalContextValue": "#outdoor",
             "defaultRoom": false,
             "reverbDryLevel": 0.7,
@@ -22666,11 +22666,11 @@
             "reverb": "#room_bedroom",
             "loop": "#hash_8abeeabd2aa2c9c",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
+            "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
+            "globalContextType": "#ringoff_plr",
             "globalContextValue": "#outdoor",
             "defaultRoom": false,
             "reverbDryLevel": 0.7,
@@ -22688,12 +22688,12 @@
             "reverb": "#room_bedroom",
             "loop": "#hash_5f0cf846c1e5f92e",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 0.7,
             "reverbWetLevel": 1,
@@ -22710,12 +22710,12 @@
             "reverb": "#room_hallway",
             "loop": "#hash_5f0cf846c1e5f92e",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 0.7,
             "reverbWetLevel": 1,
@@ -22725,9 +22725,9 @@
     ],
     "scriptIdLookups": [],
     "streamKeysSABL": {
-        "streamKey1": "#hash_138efa391b393db7",
+        "streamKey1": "#mp_jungle2_all_stream",
         "dataSize1": 4096,
-        "fileKey": "#hash_663060e9149379de",
+        "fileKey": "#mp_jungle2_all_loaded",
         "fileLen": 60467328
     },
     "streamKeysSABS": {

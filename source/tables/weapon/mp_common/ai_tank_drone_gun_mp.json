@@ -2,7 +2,7 @@
     "name": "#ai_tank_drone_gun_mp",
     "baseWeapon": "#ai_tank_drone_gun",
     "weapon70": "#ai_tank_marker",
-    "streamkey": "#hash_308b1069264d6f82",
+    "streamkey": "#ai_tank_drone_gun_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

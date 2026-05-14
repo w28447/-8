@@ -71,7 +71,7 @@ CoD.SurveyUtility.TestOpenSurvey = function ( f6_arg0, f6_arg1 )
 			0x9374CB5F1C473B8,
 			0x1A71767CB661181,
 			0x95F0F01B84486F8,
-			0xC9EBE411155B7FC
+			"menu/advanced_volume"
 		}
 	} )
 	local f6_local0 = DataSources.SurveyQuestion.getModel( f6_arg1 )
@@ -91,7 +91,7 @@ CoD.SurveyUtility.SendSurveyDlogResponse = function ( f7_arg0, f7_arg1 )
 	local f7_local5 = false
 	Engine[0xDE279ECDDDD966]( f7_arg1, 0x218DD882E1DEBD5, {
 		[0x86E8661F478F5EB] = f7_local1,
-		[0x76D620761488EBE] = f7_local2,
+		["response"] = f7_local2,
 		[0x274D6DC485E5069] = f7_local3,
 		[0x301FC2C39A80AAB] = f7_local4
 	} )
@@ -108,7 +108,7 @@ CoD.SurveyUtility.CloseSurvey = function ( f8_arg0, f8_arg1 )
 		local f8_local5 = true
 		Engine[0xDE279ECDDDD966]( f8_arg1, 0x218DD882E1DEBD5, {
 			[0x86E8661F478F5EB] = f8_local1,
-			[0x76D620761488EBE] = f8_local2,
+			["response"] = f8_local2,
 			[0x274D6DC485E5069] = f8_local3,
 			[0x301FC2C39A80AAB] = f8_local4
 		} )

@@ -29,14 +29,14 @@ CoD[0xA99D05EEE776A3].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local colorOverlay = LUI.UIImage.new( 0, 0, 0, 720, 0, 0, 0, 180 )
 	colorOverlay:setAlpha( 0.7 )
-	colorOverlay:setImage( RegisterImage( 0xE2241C13DA260A1 ) )
+	colorOverlay:setImage( RegisterImage( "uie_color_overlay" ) )
 	colorOverlay:setMaterial( LUI.UIImage.GetCachedMaterial( 0x655565C7B387234 ) )
 	self:addElement( colorOverlay )
 	self.colorOverlay = colorOverlay
 	
 	local bearBlack = LUI.UIImage.new( 0, 0, 0, 720, 0, 0, 0, 180 )
 	bearBlack:setAlpha( 0.5 )
-	bearBlack:setImage( RegisterImage( 0x829C42E07C1DC89 ) )
+	bearBlack:setImage( RegisterImage( "uie_black_bear" ) )
 	self:addElement( bearBlack )
 	self.bearBlack = bearBlack
 	

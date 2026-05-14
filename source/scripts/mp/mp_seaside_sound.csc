@@ -18,7 +18,7 @@ function church_bells()
     while ( true )
     {
         wait 300;
-        playsound( 0, #"hash_5727281a9dcec94e", ( -587, 2988, 1901 ) );
+        playsound( 0, #"amb_church_bells", ( -587, 2988, 1901 ) );
     }
 }
 

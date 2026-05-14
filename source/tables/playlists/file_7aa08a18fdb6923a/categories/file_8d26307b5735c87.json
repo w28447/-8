@@ -6,7 +6,7 @@
     "environmentMask": 1,
     "entries": [
         {
-            "name": "#hash_156af3876506127e",
+            "name": "#entry_mp_core_tdm_antilag",
             "description": "#hash_405aa8de310bb428",
             "unique_name": "#hash_5e690166b44b6d70",
             "visibleProfileVar": "#hash_5e563e6544ff9705",
@@ -83,7 +83,7 @@
                 },
                 {
                     "type": "unk:3",
-                    "name": "#hash_3378f6e813f4494a",
+                    "name": "#use_skill",
                     "platformMask": 7,
                     "environmentMask": 7,
                     "utcStartTime": 0,
@@ -100,7 +100,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_1294d23bca5f2fe6",
+                    "name": "#sv_antilaganim",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -2453,7 +2453,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_115556efd1526bf8",
+                    "name": "#ui_showwzaar",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -2502,7 +2502,7 @@
             ],
             "rotations": [
                 {
-                    "map": "#hash_203dc191f38e4ea7",
+                    "map": "#wz_features_test",
                     "gametype": "#hash_cb4dd0ca1c2c141",
                     "weight": 1,
                     "isFree": true
@@ -2555,7 +2555,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_115556efd1526bf8",
+                    "name": "#ui_showwzaar",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -2837,7 +2837,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_115556efd1526bf8",
+                    "name": "#ui_showwzaar",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -2956,7 +2956,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_115556efd1526bf8",
+                    "name": "#ui_showwzaar",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -3119,7 +3119,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_115556efd1526bf8",
+                    "name": "#ui_showwzaar",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -3341,7 +3341,7 @@
         },
         {
             "name": "#hash_3c0331f13a6766de",
-            "description": "#hash_772c0eca6afe73df",
+            "description": "#playlist/warzone_weapons_test",
             "unique_name": "#hash_e2871bfa7c93671",
             "visibleProfileVar": "#hash_72642ac141d2411d",
             "lobbyMainMode": "WARZONE",
@@ -3385,7 +3385,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_115556efd1526bf8",
+                    "name": "#ui_showwzaar",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -3433,7 +3433,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_574abad326242b33",
+                    "name": "#scr_wzaar_dev",
                     "value": "0",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -3583,7 +3583,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_115556efd1526bf8",
+                    "name": "#ui_showwzaar",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -3700,7 +3700,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_115556efd1526bf8",
+                    "name": "#ui_showwzaar",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -3859,7 +3859,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_115556efd1526bf8",
+                    "name": "#ui_showwzaar",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -4018,7 +4018,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_115556efd1526bf8",
+                    "name": "#ui_showwzaar",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -4177,7 +4177,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_115556efd1526bf8",
+                    "name": "#ui_showwzaar",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 7,

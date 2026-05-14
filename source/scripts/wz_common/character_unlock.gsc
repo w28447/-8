@@ -1,4 +1,4 @@
-#using script_71e26f08f03b7a7a;
+#using scripts\mp_common\item_supply_drop_system.gsc;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\player\player_stats;
 #using scripts\core_common\system_shared;
@@ -485,6 +485,6 @@ function function_d2294476( var_2ab9d3bd, replacementcount, var_3afaa57b )
         replacementcount = 1;
     }
     
-    namespace_3d2704b3::function_f0297225( var_2ab9d3bd, replacementcount, var_3afaa57b );
+    item_supply_drop_system::function_f0297225( var_2ab9d3bd, replacementcount, var_3afaa57b );
 }
 

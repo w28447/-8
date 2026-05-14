@@ -251,8 +251,8 @@ CoD.ZMInventoryUtility.SetupObjectiveProgressModels = function ( f22_arg0, f22_a
 		return 
 	end
 	local f22_local1 = DataSources.ZMObjectiveProgressInfo.getModel( f22_arg1 )
-	if f22_local0[0x2BBFB873BECFCCC] then
-		f22_local1.background:set( f22_local0[0x2BBFB873BECFCCC] )
+	if f22_local0["objectivebackground"] then
+		f22_local1.background:set( f22_local0["objectivebackground"] )
 	end
 	if f22_local0[0xEF84B6E3C25015D] and f22_local0[0xEF84B6E3C25015D] ~= 0 then
 		local f22_local2 = f22_local0.objnonlinearprogitems
@@ -336,7 +336,7 @@ CoD.ZMInventoryUtility.HandleObjectiveProgressStageChange = function ( f25_arg0,
 	local f25_local1 = CoD.ZMInventoryUtility.GetMapInventoryTable()
 	if f25_local1 and f25_local1.objprogitems and f25_local0 < #f25_local1.objprogitems then
 		local f25_local2 = f25_arg0:getModel()
-		f25_local2.description:set( f25_local1.objprogitems[f25_local0 + 1][0xCC44970C8397929] )
+		f25_local2.description:set( f25_local1.objprogitems[f25_local0 + 1]["description"] )
 	else
 		local f25_local2 = f25_arg0:getModel()
 		f25_local2.description:set( 0x0 )

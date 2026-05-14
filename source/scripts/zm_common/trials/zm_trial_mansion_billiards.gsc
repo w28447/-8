@@ -62,9 +62,9 @@ function private on_end( round_reset )
 // Size: 0x9c
 function private function_b7bc0616()
 {
-    level endon( #"hash_7646638df88a3656", #"end_game" );
+    level endon( #"trial_round_end", #"end_game" );
     zm_trial_util::function_7d32b7d0( 0 );
-    function_f5ad51bd();
+    disable_newtonian_negation();
     level flag::wait_till( #"hash_4207012c64662b4d" );
     waitframe( 1 );
     zm_trial_util::function_7d32b7d0( 1 );
@@ -75,7 +75,7 @@ function private function_b7bc0616()
 // Params 0, eflags: 0x4
 // Checksum 0xf46d3f03, Offset: 0x2a8
 // Size: 0xfc
-function private function_f5ad51bd()
+function private disable_newtonian_negation()
 {
     foreach ( player in getplayers() )
     {

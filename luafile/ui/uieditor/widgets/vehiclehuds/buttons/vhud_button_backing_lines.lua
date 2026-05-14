@@ -14,7 +14,7 @@ CoD.vhud_button_backing_lines.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.ButtonHexLines = ButtonHexLines
 	
 	local ButtonTriLines = LUI.UIImage.new( 0.5, 0.5, -55, 55, 0.5, 0.5, -55, 55 )
-	ButtonTriLines:setImage( RegisterImage( 0xB3DF7AA704A4681 ) )
+	ButtonTriLines:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_button_frametri" ) )
 	ButtonTriLines:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ButtonTriLines )
 	self.ButtonTriLines = ButtonTriLines
@@ -22,7 +22,7 @@ CoD.vhud_button_backing_lines.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local ButtonTriLines0 = LUI.UIImage.new( 0.5, 0.5, -55, 55, 0.5, 0.5, -55, 55 )
 	ButtonTriLines0:setAlpha( 0.3 )
 	ButtonTriLines0:setZoom( 7 )
-	ButtonTriLines0:setImage( RegisterImage( 0xB3DF7AA704A4681 ) )
+	ButtonTriLines0:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_button_frametri" ) )
 	ButtonTriLines0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ButtonTriLines0 )
 	self.ButtonTriLines0 = ButtonTriLines0
@@ -30,7 +30,7 @@ CoD.vhud_button_backing_lines.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local ButtonTriLines00 = LUI.UIImage.new( 0.5, 0.5, -55, 55, 0.5, 0.5, -55, 55 )
 	ButtonTriLines00:setAlpha( 0.1 )
 	ButtonTriLines00:setZoom( 15 )
-	ButtonTriLines00:setImage( RegisterImage( 0xB3DF7AA704A4681 ) )
+	ButtonTriLines00:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_button_frametri" ) )
 	ButtonTriLines00:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ButtonTriLines00 )
 	self.ButtonTriLines00 = ButtonTriLines00

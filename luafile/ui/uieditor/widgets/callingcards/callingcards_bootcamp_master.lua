@@ -9,7 +9,7 @@ CoD[0x7B1519A3669E105].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local background = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	background:setImage( RegisterImage( 0x432FE212E6B9A35 ) )
+	background:setImage( RegisterImage( "uie_ui_icon_callingcards_bootcamp_master_background" ) )
 	background:setMaterial( LUI.UIImage.GetCachedMaterial( 0x73D72BCD14C2AAD ) )
 	background:setShaderVector( 0, 1, 1, 0, 0 )
 	background:setShaderVector( 1, 0.03, 0, 0, 0 )
@@ -42,7 +42,7 @@ CoD[0x7B1519A3669E105].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.moon = moon
 	
 	local dude = LUI.UIImage.new( 0, 0, 660.5, 900.5, 0, 0, 0, 240 )
-	dude:setImage( RegisterImage( 0x520B4077359542D ) )
+	dude:setImage( RegisterImage( "uie_ui_icon_callingcards_bootcamp_master_dude" ) )
 	self:addElement( dude )
 	self.dude = dude
 	

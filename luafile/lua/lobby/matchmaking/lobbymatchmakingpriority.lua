@@ -14,7 +14,7 @@ Lobby.MatchmakingPriority.mpPublicGame = {}
 Lobby.MatchmakingPriority.doaPublicGame = {}
 Lobby.MatchmakingPriority.OnMatchmakingPriorityQuit = function ( f1_arg0 )
 	local f1_local0 = LobbyData.GetLobbyMenuByID( LobbyData.GetLobbyNav() )
-	if f1_local0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_PUBLIC ) then
+	if f1_local0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_PUBLIC ) then
 		Lobby.MatchmakingPriority.AddHost( f1_arg0.hostSecId, Enum.JoinType[0x1375971BA46DA71] )
 	end
 end

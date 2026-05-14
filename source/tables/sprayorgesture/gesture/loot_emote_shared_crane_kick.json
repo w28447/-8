@@ -5,7 +5,7 @@
     "gesture2": "#boast_crane_kick_fem",
     "bundle": {
         "type": "#gesture",
-        "title": "localized18#hash_2991d0b9c1a7202",
+        "title": "localized18#emotes/finishing_move",
         "icon": "image#ui_icon_emotes_s3_crane_kick",
         "isdefault": 0
     }

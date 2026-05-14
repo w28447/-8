@@ -1,4 +1,4 @@
-#using script_71e26f08f03b7a7a;
+#using scripts\mp_common\item_supply_drop_system.gsc;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\system_shared;
 #using scripts\core_common\util_shared;
@@ -99,7 +99,7 @@ function private function_b00fd65d()
     
     if ( var_49170438 < maxteamplayers + 2 )
     {
-        namespace_3d2704b3::function_d0178153( #"supply_drop_stash_battery" );
+        item_supply_drop_system::function_d0178153( #"supply_drop_stash_battery" );
     }
 }
 

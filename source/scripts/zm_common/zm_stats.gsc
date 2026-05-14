@@ -58,7 +58,7 @@ function __init__()
 // Size: 0xbc
 function function_a8758411()
 {
-    if ( getdvarint( #"hash_27ff853067d7c38c", 0 ) )
+    if ( getdvarint( #"daily_callings_enabled_zm", 0 ) )
     {
         var_821f7fa0 = getdvarint( #"zm_active_event_calling", 0 );
         
@@ -120,7 +120,7 @@ function player_stats_init()
     self globallogic_score::initpersstat( #"meat_stink_pickedup", 0 );
     self globallogic_score::initpersstat( #"carpenter_pickedup", 0 );
     self globallogic_score::initpersstat( #"fire_sale_pickedup", 0 );
-    self globallogic_score::initpersstat( #"hash_27399de28b76c5c6", 0 );
+    self globallogic_score::initpersstat( #"bonfire_sale_pickedup", 0 );
     self globallogic_score::initpersstat( #"minigun_pickedup", 0 );
     self globallogic_score::initpersstat( #"island_seed_pickedup", 0 );
     self globallogic_score::initpersstat( #"hero_weapon_power_pickedup", 0 );
@@ -129,8 +129,8 @@ function player_stats_init()
     self globallogic_score::initpersstat( #"zmarcade_key_pickedup", 0 );
     self globallogic_score::initpersstat( #"shield_charge_pickedup", 0 );
     self globallogic_score::initpersstat( #"dung_pickedup", 0 );
-    self globallogic_score::initpersstat( #"hash_1b192689f4c8c402", 0 );
-    self globallogic_score::initpersstat( #"hash_65472fa120ebce1c", 0 );
+    self globallogic_score::initpersstat( #"bonus_points_player_pickedup", 0 );
+    self globallogic_score::initpersstat( #"free_perk_pickedup", 0 );
     self globallogic_score::initpersstat( #"bonus_points_team_pickedup", 0 );
     self globallogic_score::initpersstat( #"ww_grenade_pickedup", 0 );
     self globallogic_score::initpersstat( #"use_magicbox", 0 );
@@ -177,9 +177,9 @@ function player_stats_init()
     self globallogic_score::initpersstat( #"specialty_mod_awareness_drank", 0 );
     self globallogic_score::initpersstat( #"specialty_mod_berserker_drank", 0 );
     self globallogic_score::initpersstat( #"specialty_mod_shield_drank", 0 );
-    self globallogic_score::initpersstat( #"hash_310ed4181d9aeddc", 0 );
-    self globallogic_score::initpersstat( #"hash_6505f09a128cba8d", 0 );
-    self globallogic_score::initpersstat( #"hash_319e4ab05f961113", 0 );
+    self globallogic_score::initpersstat( #"specialty_mod_zombshell_drank", 0 );
+    self globallogic_score::initpersstat( #"specialty_mod_wolf_protector_drank", 0 );
+    self globallogic_score::initpersstat( #"specialty_mod_death_dash_drank", 0 );
     self globallogic_score::initpersstat( #"claymores_planted", 0 );
     self globallogic_score::initpersstat( #"claymores_pickedup", 0 );
     self globallogic_score::initpersstat( #"bouncingbetty_planted", 0 );
@@ -289,24 +289,24 @@ function player_stats_init()
         self stats::set_stat( #"hash_1c539a1b16b48b16", 0 );
     }
     
-    if ( getdvarint( #"hash_27ff853067d7c38c", 0 ) )
+    if ( getdvarint( #"daily_callings_enabled_zm", 0 ) )
     {
-        var_87b499fb = self stats::get_stat( #"hash_18e3320ccf4091e5", #"hash_487f0fce798b3a4b" );
+        var_87b499fb = self stats::get_stat( #"daily_calling_stats", #"current_daily_calling" );
         var_8962d9b1 = isdefined( level.var_d479261a ) ? level.var_d479261a : 0;
-        self stats::set_stat( #"hash_18e3320ccf4091e5", #"hash_487f0fce798b3a4b", var_8962d9b1 );
-        previousutc = self stats::get_stat( #"hash_18e3320ccf4091e5", #"calling_timestamp" );
+        self stats::set_stat( #"daily_calling_stats", #"current_daily_calling", var_8962d9b1 );
+        previousutc = self stats::get_stat( #"daily_calling_stats", #"calling_timestamp" );
         currentutc = getutc();
         var_222b02a1 = currentutc - previousutc;
         var_ee21b34b = 86400;
         
         if ( var_87b499fb !== var_8962d9b1 || previousutc == 0 || var_222b02a1 > var_ee21b34b )
         {
-            self stats::set_stat( #"hash_18e3320ccf4091e5", #"progress", 0 );
-            self stats::set_stat( #"hash_18e3320ccf4091e5", #"calling_timestamp", currentutc );
+            self stats::set_stat( #"daily_calling_stats", #"progress", 0 );
+            self stats::set_stat( #"daily_calling_stats", #"calling_timestamp", currentutc );
         }
     }
     
-    if ( getdvarint( #"hash_11da02ca40639de5", 0 ) )
+    if ( getdvarint( #"faction_callings_enabled_zm", 0 ) )
     {
         self zm_callings::function_f3393d6a();
     }
@@ -957,7 +957,7 @@ function function_523fee8d( stat_name )
         return 0;
     }
     
-    return stats::get_stat( #"playerstatsbymap", level.script, #"statsbygametype", level.gametype, #"hash_413b4abc26595b34", level.gamedifficulty, #"stats", stat_name, #"statvalue" );
+    return stats::get_stat( #"playerstatsbymap", level.script, #"statsbygametype", level.gametype, #"statsbydifficulty", level.gamedifficulty, #"stats", stat_name, #"statvalue" );
 }
 
 // Namespace zm_stats/zm_stats
@@ -971,7 +971,7 @@ function function_7866854a( stat_name, value )
         return;
     }
     
-    stats::set_stat( #"playerstatsbymap", level.script, #"statsbygametype", level.gametype, #"hash_413b4abc26595b34", level.gamedifficulty, #"stats", stat_name, #"statvalue", value );
+    stats::set_stat( #"playerstatsbymap", level.script, #"statsbygametype", level.gametype, #"statsbydifficulty", level.gamedifficulty, #"stats", stat_name, #"statvalue", value );
 }
 
 // Namespace zm_stats/zm_stats
@@ -985,7 +985,7 @@ function function_9288c79b( stat_name, value )
         return;
     }
     
-    stats::inc_stat( #"playerstatsbymap", level.script, #"statsbygametype", level.gametype, #"hash_413b4abc26595b34", level.gamedifficulty, #"stats", stat_name, #"statvalue", value );
+    stats::inc_stat( #"playerstatsbymap", level.script, #"statsbygametype", level.gametype, #"statsbydifficulty", level.gamedifficulty, #"stats", stat_name, #"statvalue", value );
 }
 
 // Namespace zm_stats/zm_stats
@@ -999,7 +999,7 @@ function function_2726a7c2( stat_name )
         return;
     }
     
-    stats::inc_stat( #"playerstatsbymap", level.script, #"statsbygametype", level.gametype, #"hash_413b4abc26595b34", level.gamedifficulty, #"stats", stat_name, #"statvalue", 1 );
+    stats::inc_stat( #"playerstatsbymap", level.script, #"statsbygametype", level.gametype, #"statsbydifficulty", level.gamedifficulty, #"stats", stat_name, #"statvalue", 1 );
 }
 
 // Namespace zm_stats/zm_stats
@@ -1040,7 +1040,7 @@ function function_8e274b32( stat_name )
     }
     
     assert( isdefined( level.var_6d87ac05 ) && isdefined( level.var_6d87ac05.name ) );
-    return stats::get_stat( #"hash_5abf25946ab0ce9a", level.var_6d87ac05.name, stat_name );
+    return stats::get_stat( #"playerstatsbytrial", level.var_6d87ac05.name, stat_name );
 }
 
 // Namespace zm_stats/zm_stats
@@ -1055,7 +1055,7 @@ function function_a05b3b23( stat_name, value )
     }
     
     assert( isdefined( level.var_6d87ac05 ) && isdefined( level.var_6d87ac05.name ), "<dev string:x57>" );
-    stats::set_stat( #"hash_5abf25946ab0ce9a", level.var_6d87ac05.name, stat_name, value );
+    stats::set_stat( #"playerstatsbytrial", level.var_6d87ac05.name, stat_name, value );
 }
 
 // Namespace zm_stats/zm_stats
@@ -1070,7 +1070,7 @@ function registerchand_grow_( stat_name )
     }
     
     assert( isdefined( level.var_6d87ac05 ) && isdefined( level.var_6d87ac05.name ), "<dev string:xa8>" );
-    stats::inc_stat( #"hash_5abf25946ab0ce9a", level.var_6d87ac05.name, stat_name, 1 );
+    stats::inc_stat( #"playerstatsbytrial", level.var_6d87ac05.name, stat_name, 1 );
 }
 
 // Namespace zm_stats/zm_stats
@@ -1635,7 +1635,7 @@ function update_global_counters_on_match_end()
     meat_stink_pickedup = 0;
     carpenter_pickedup = 0;
     fire_sale_pickedup = 0;
-    var_d61f06ce = 0;
+    bonfire_sale_pickedup = 0;
     minigun_pickedup = 0;
     island_seed_pickedup = 0;
     hero_weapon_power_pickedup = 0;
@@ -1644,8 +1644,8 @@ function update_global_counters_on_match_end()
     zmarcade_key_pickedup = 0;
     shield_charge_pickedup = 0;
     dung_pickedup = 0;
-    var_614312ad = 0;
-    var_be43e4a5 = 0;
+    bonus_points_player_pickedup = 0;
+    free_perk_pickedup = 0;
     bonus_points_team_pickedup = 0;
     ww_grenade_pickedup = 0;
     zombie_blood_pickedup = 0;
@@ -1792,7 +1792,7 @@ function update_global_counters_on_match_end()
         meat_stink_pickedup += player.pers[ #"meat_stink_pickedup" ];
         carpenter_pickedup += player.pers[ #"carpenter_pickedup" ];
         fire_sale_pickedup += player.pers[ #"fire_sale_pickedup" ];
-        var_d61f06ce += player.pers[ #"hash_27399de28b76c5c6" ];
+        bonfire_sale_pickedup += player.pers[ #"bonfire_sale_pickedup" ];
         minigun_pickedup += player.pers[ #"minigun_pickedup" ];
         island_seed_pickedup += player.pers[ #"island_seed_pickedup" ];
         hero_weapon_power_pickedup += player.pers[ #"hero_weapon_power_pickedup" ];
@@ -1801,8 +1801,8 @@ function update_global_counters_on_match_end()
         zmarcade_key_pickedup += player.pers[ #"zmarcade_key_pickedup" ];
         shield_charge_pickedup += player.pers[ #"shield_charge_pickedup" ];
         dung_pickedup += player.pers[ #"dung_pickedup" ];
-        var_614312ad += player.pers[ #"hash_1b192689f4c8c402" ];
-        var_be43e4a5 += player.pers[ #"hash_65472fa120ebce1c" ];
+        bonus_points_player_pickedup += player.pers[ #"bonus_points_player_pickedup" ];
+        free_perk_pickedup += player.pers[ #"free_perk_pickedup" ];
         bonus_points_team_pickedup += player.pers[ #"bonus_points_team_pickedup" ];
         ww_grenade_pickedup += player.pers[ #"ww_grenade_pickedup" ];
         use_magicbox += player.pers[ #"use_magicbox" ];
@@ -2127,7 +2127,7 @@ function function_c0c6ab19( var_ad971622, n_value = 1, var_b68b08b1 = 0 )
         n_value *= getdvarint( #"hash_56e2a9e5690e0373", 1 );
     #/
     
-    if ( getdvarint( #"hash_27ff853067d7c38c", 0 ) && getdvarint( #"zm_active_event_calling", 0 ) && isdefined( level.var_ad5d54b ) )
+    if ( getdvarint( #"daily_callings_enabled_zm", 0 ) && getdvarint( #"zm_active_event_calling", 0 ) && isdefined( level.var_ad5d54b ) )
     {
         s_event_calling_task = level.var_ad5d54b[ self function_3e561f63() ];
         
@@ -2137,7 +2137,7 @@ function function_c0c6ab19( var_ad971622, n_value = 1, var_b68b08b1 = 0 )
         }
     }
     
-    if ( getdvarint( #"hash_27ff853067d7c38c", 0 ) && getdvarint( #"zm_active_daily_calling", 0 ) )
+    if ( getdvarint( #"daily_callings_enabled_zm", 0 ) && getdvarint( #"zm_active_daily_calling", 0 ) )
     {
         /#
             if ( getdvar( #"hash_acdd08b365cb62f", 0 ) )
@@ -2149,13 +2149,13 @@ function function_c0c6ab19( var_ad971622, n_value = 1, var_b68b08b1 = 0 )
                     function_e8c496dd( var_a4aebab9 );
                 }
                 
-                var_87b499fb = self stats::get_stat( #"hash_18e3320ccf4091e5", #"hash_487f0fce798b3a4b" );
+                var_87b499fb = self stats::get_stat( #"daily_calling_stats", #"current_daily_calling" );
                 var_8962d9b1 = isdefined( level.var_d479261a ) ? level.var_d479261a : 0;
-                self stats::set_stat( #"hash_18e3320ccf4091e5", #"hash_487f0fce798b3a4b", var_8962d9b1 );
+                self stats::set_stat( #"daily_calling_stats", #"current_daily_calling", var_8962d9b1 );
                 
                 if ( var_87b499fb !== var_8962d9b1 )
                 {
-                    self stats::set_stat( #"hash_18e3320ccf4091e5", #"progress", 0 );
+                    self stats::set_stat( #"daily_calling_stats", #"progress", 0 );
                 }
             }
         #/
@@ -2166,7 +2166,7 @@ function function_c0c6ab19( var_ad971622, n_value = 1, var_b68b08b1 = 0 )
         }
     }
     
-    if ( getdvarint( #"hash_11da02ca40639de5", 0 ) )
+    if ( getdvarint( #"faction_callings_enabled_zm", 0 ) )
     {
         if ( isdefined( self.var_96d6f6d1 ) )
         {
@@ -2263,16 +2263,16 @@ function function_e8c496dd( var_d479261a )
 // Size: 0x33c
 function function_55109709( s_daily_calling_task, n_value = 1 )
 {
-    var_e4edaaf0 = self stats::get_stat( #"hash_18e3320ccf4091e5", #"progress" );
+    var_e4edaaf0 = self stats::get_stat( #"daily_calling_stats", #"progress" );
     
     if ( isdefined( var_e4edaaf0 ) && isdefined( s_daily_calling_task ) && isdefined( s_daily_calling_task.var_e226ec4f ) && var_e4edaaf0 < s_daily_calling_task.var_e226ec4f )
     {
         if ( var_e4edaaf0 + n_value >= s_daily_calling_task.var_e226ec4f )
         {
-            self stats::set_stat( #"hash_18e3320ccf4091e5", #"progress", s_daily_calling_task.var_e226ec4f );
+            self stats::set_stat( #"daily_calling_stats", #"progress", s_daily_calling_task.var_e226ec4f );
             self luinotifyevent( #"zombie_callings_notification", 3, 1, s_daily_calling_task.var_de86e878, self getentitynumber() );
             self addrankxpvalue( "daily_calling_task", s_daily_calling_task.n_xp );
-            var_ae857992 = getdvarint( #"hash_60d812bef0f782fb", 2 );
+            var_ae857992 = getdvarint( #"loot_season_number", 2 );
             self function_e8f77739( #"hash_74ccf1507183e99f", var_ae857992 );
             uploadstats( self );
             self function_4835d26a();
@@ -2291,7 +2291,7 @@ function function_55109709( s_daily_calling_task, n_value = 1 )
             iprintln( self.name + "<dev string:x1f2>" + hashtostring( s_daily_calling_task.var_ad971622 ) + "<dev string:x1c0>" + progress + "<dev string:x1d2>" + target );
         #/
         
-        self stats::inc_stat( #"hash_18e3320ccf4091e5", #"progress", n_value );
+        self stats::inc_stat( #"daily_calling_stats", #"progress", n_value );
     }
 }
 

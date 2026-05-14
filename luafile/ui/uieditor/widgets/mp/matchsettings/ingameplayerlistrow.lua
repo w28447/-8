@@ -9,7 +9,7 @@ CoD.InGamePlayerListRow.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local TeamColorBacking = LUI.UIImage.new( 0, 1.01, -5, -5, 0, 1.19, -3, -3 )
 	TeamColorBacking:setAlpha( 0.8 )
-	TeamColorBacking:setImage( RegisterImage( 0x3AA5FC267DC2C8 ) )
+	TeamColorBacking:setImage( RegisterImage( "uie_ui_menu_cac_text_bg01" ) )
 	TeamColorBacking:linkToElementModel( self, "teamBGColor", true, function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then

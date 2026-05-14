@@ -1,4 +1,4 @@
-#using script_cb32d07c95e5628;
+#using scripts\mp_common\item_spawn_groups_util.gsc;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\clientfield_shared;
 #using scripts\core_common\math_shared;
@@ -80,7 +80,7 @@ function private __init__()
                 setdvar( #"wz_flare_drop", 0 );
             }
             
-            if ( getdvarint( #"hash_5dc24c61c66f6fee", 0 ) > 0 )
+            if ( getdvarint( #"wz_debug_supply_drop", 0 ) > 0 )
             {
                 debug_supply_drop();
             }
@@ -820,7 +820,7 @@ function private function_924a11ff( itemspawnlist )
     self.origin = neworigin - anglestoup( self.angles ) * 27.5;
     self dontinterpolate();
     self setmodel( "p8_fxanim_wz_supply_stash_04_mod" );
-    items = self namespace_65181344::function_5eada592( itemspawnlist, 1 );
+    items = self item_spawn_groups_util::function_5eada592( itemspawnlist, 1 );
     wait 60;
     
     if ( isdefined( self ) )

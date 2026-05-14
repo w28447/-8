@@ -9,13 +9,13 @@ CoD.WarzonePlayerMarker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local MarkerImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	MarkerImage:setImage( RegisterImage( 0x20CAFED954FCC8 ) )
+	MarkerImage:setImage( RegisterImage( "ui_icon_minimap_warzone_waypoint" ) )
 	self:addElement( MarkerImage )
 	self.MarkerImage = MarkerImage
 	
 	local MarkerImageAnim = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	MarkerImageAnim:setAlpha( 0 )
-	MarkerImageAnim:setImage( RegisterImage( 0x20CAFED954FCC8 ) )
+	MarkerImageAnim:setImage( RegisterImage( "ui_icon_minimap_warzone_waypoint" ) )
 	self:addElement( MarkerImageAnim )
 	self.MarkerImageAnim = MarkerImageAnim
 	

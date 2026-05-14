@@ -102,7 +102,7 @@ CoD.AARTierRewardDupeIndicator.__clipsPerState = {
 			f7_arg0.Message:completeAnimation()
 			f7_arg0.Message:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 			f7_arg0.Message:setAlpha( 0 )
-			f7_arg0.Message:setText( LocalizeToUpperString( 0xA20B3C525975E97 ) )
+			f7_arg0.Message:setText( LocalizeToUpperString( "ui/re_rolling" ) )
 			f7_local1( f7_arg0.Message )
 		end,
 		ReRolled = function ( f10_arg0, f10_arg1 )
@@ -171,7 +171,7 @@ CoD.AARTierRewardDupeIndicator.__clipsPerState = {
 			f14_arg0.Message:completeAnimation()
 			f14_arg0.Message:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 			f14_arg0.Message:setAlpha( 0 )
-			f14_arg0.Message:setText( LocalizeToUpperString( 0xA20B3C525975E97 ) )
+			f14_arg0.Message:setText( LocalizeToUpperString( "ui/re_rolling" ) )
 			f14_local1( f14_arg0.Message )
 		end,
 		ReRolled = function ( f17_arg0, f17_arg1 )

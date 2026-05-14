@@ -3,7 +3,7 @@
     "baseWeapon": "#inventory_planemortar",
     "displayname": "#killstreak/planemortar",
     "weapon70": "#planemortar",
-    "streamkey": "#hash_63ff7a19dcef549",
+    "streamkey": "#inventory_planemortar_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

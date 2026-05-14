@@ -169,7 +169,7 @@ CoD.SwipeTak5_CharacterPortrait.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.FrameEmptyX = FrameEmptyX
 	
 	local ScorePip = LUI.UIImage.new( 0, 0, 3, 13, 0, 0, 3, 13 )
-	ScorePip:setImage( RegisterImage( 0x4FCFCDE5B5BEF0 ) )
+	ScorePip:setImage( RegisterImage( "uie_ui_hud_tak5_score_linker" ) )
 	ScorePip:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	ScorePip:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( ScorePip )

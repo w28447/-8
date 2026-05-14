@@ -2,7 +2,7 @@
     "name": "#amws_launcher_turret_mp_player",
     "baseWeapon": "#amws_launcher_turret_mp_player",
     "weapon70": "#killstreak_ai_tank_drop",
-    "streamkey": "#hash_4494a427423486d7",
+    "streamkey": "#amws_launcher_turret_mp_player_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

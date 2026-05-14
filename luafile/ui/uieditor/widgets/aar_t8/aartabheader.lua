@@ -36,7 +36,7 @@ CoD.AARTabHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	local TabTitle = LUI.UIText.new( 0, 0, 113, 968, 0, 0, 30, 105 )
 	TabTitle:setRGB( 0.9, 0.89, 0.78 )
 	TabTitle:setAlpha( 0.3 )
-	TabTitle:setText( Engine[0xF9F1239CFD921FE]( 0xAB769C72F266516 ) )
+	TabTitle:setText( Engine[0xF9F1239CFD921FE]( "aar/victory" ) )
 	TabTitle:setTTF( "ttmussels_demibold" )
 	TabTitle:setLetterSpacing( 10 )
 	TabTitle:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

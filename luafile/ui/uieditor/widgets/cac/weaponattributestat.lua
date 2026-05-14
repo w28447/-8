@@ -26,7 +26,7 @@ CoD.WeaponAttributeStat.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local weaponAttribute = LUI.UIImage.new( 0, 0, 151.5, 401.5, 0, 0, 6.5, 11.5 )
 	weaponAttribute:setRGB( 0.69, 0.67, 0.6 )
-	weaponAttribute:setImage( RegisterImage( 0xC5E891775405697 ) )
+	weaponAttribute:setImage( RegisterImage( "uie_img_t7_menu_cacselection_infoboxameterfill" ) )
 	weaponAttribute:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	weaponAttribute:setShaderVector( 0, 0, 0, 0, 0 )
 	weaponAttribute:setShaderVector( 1, 0, 0, 0, 0 )
@@ -37,7 +37,7 @@ CoD.WeaponAttributeStat.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	self.weaponAttribute = weaponAttribute
 	
 	local attachmentAttribute = LUI.UIImage.new( 0, 0, 151.5, 401.5, 0, 0, 6.5, 11.5 )
-	attachmentAttribute:setImage( RegisterImage( 0xC5E891775405697 ) )
+	attachmentAttribute:setImage( RegisterImage( "uie_img_t7_menu_cacselection_infoboxameterfill" ) )
 	attachmentAttribute:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	attachmentAttribute:setShaderVector( 0, 0, 0, 0, 0 )
 	attachmentAttribute:setShaderVector( 1, 0, 0, 0, 0 )

@@ -848,7 +848,7 @@ Lobby.Actions.OpenSurvey = function ( f79_arg0, f79_arg1 )
 		controller = f79_arg0,
 		fromTarget = f79_arg1,
 		startFuncPtr = function ( f80_arg0 )
-			if f79_arg1[0xEB7DDC7F079D51B] == Enum.LobbyMainMode[0xD5FBB8D74AC6D62] then
+			if f79_arg1["mainmode"] == Enum.LobbyMainMode[0xD5FBB8D74AC6D62] then
 				LobbyVM.ExecuteLobbyVMOpenSurvey( f80_arg0.controller )
 			end
 			LobbyVM.ProcessCompleteSuccess( {
@@ -1228,7 +1228,7 @@ Lobby.Actions.CanHostServer = function ( f113_arg0, f113_arg1 )
 		failureReason = nil,
 		startFuncPtr = function ( f114_arg0 )
 			local f114_local0 = Engine[0x29B25E8DA873863]( Engine[0xEA2BE00F49480D]( Enum.LobbyType[0x92676CF5B6FCD43] ) and Enum.LobbyModule[0x98EA1BB7164D103] or Enum.LobbyModule[0xC46B73E8E18BA2], Enum.LobbyType[0x92676CF5B6FCD43] )
-			if f114_arg0.toTarget[0xEB7DDC7F079D51B] == Enum.LobbyMainMode[0x7E41449995CD57E] then
+			if f114_arg0.toTarget["mainmode"] == Enum.LobbyMainMode[0x7E41449995CD57E] then
 				if Engine.IsFeatureBanned and Engine.IsFeatureBanned( f114_arg0.controller, LuaEnum.FEATURE_BAN.MP_HOSTING ) == true then
 					Engine.PrintError( Enum[0x7A63DCD561B0FA8][0x59962D5EF982597], "CANNOT HOST A SERVER: HOST_SERVER_BANNED_FROM_HOSTING.\n" )
 					LobbyVM.ProcessCompleteFailure( {
@@ -1614,7 +1614,7 @@ Lobby.Actions.QoSJoinSearchResults = function ( f122_arg0, f122_arg1, f122_arg2 
 					[0xC301327501D1E33] = f126_local0.validResult,
 					[0xB5C735486FC7CCB] = f126_local0.xuid,
 					[0x4F06C6EEDA8117E] = f126_local0.gameSecurityId,
-					[0xDF1F57DCD0A3E0A] = f126_local0.gameSecurityKey,
+					["game_security_key"] = f126_local0.gameSecurityKey,
 					[0x531894BFD7141D0] = f126_local0.hostAddress,
 					[0x2B41998FA3BFFF5] = f126_local0.protocol,
 					[0x73E75F9F7CD05DB] = f126_local0.isMP,
@@ -1645,7 +1645,7 @@ Lobby.Actions.QoSJoinSearchResults = function ( f122_arg0, f122_arg1, f122_arg2 
 					[0xC301327501D1E33] = f126_local0.validResult,
 					[0xB5C735486FC7CCB] = f126_local0.xuid,
 					[0x4F06C6EEDA8117E] = f126_local0.gameSecurityId,
-					[0xDF1F57DCD0A3E0A] = f126_local0.gameSecurityKey,
+					["game_security_key"] = f126_local0.gameSecurityKey,
 					[0x531894BFD7141D0] = f126_local0.hostAddress,
 					[0x2B41998FA3BFFF5] = f126_local0.protocol,
 					[0x73E75F9F7CD05DB] = f126_local0.isMP,
@@ -1672,7 +1672,7 @@ Lobby.Actions.QoSJoinSearchResults = function ( f122_arg0, f122_arg1, f122_arg2 
 						[0xC301327501D1E33] = f126_local0.validResult,
 						[0xB5C735486FC7CCB] = f126_local0.xuid,
 						[0x4F06C6EEDA8117E] = f126_local0.gameSecurityId,
-						[0xDF1F57DCD0A3E0A] = f126_local0.gameSecurityKey,
+						["game_security_key"] = f126_local0.gameSecurityKey,
 						[0x531894BFD7141D0] = f126_local0.hostAddress,
 						[0x2B41998FA3BFFF5] = f126_local0.protocol,
 						[0x73E75F9F7CD05DB] = f126_local0.isMP,
@@ -1699,7 +1699,7 @@ Lobby.Actions.QoSJoinSearchResults = function ( f122_arg0, f122_arg1, f122_arg2 
 					[0xC301327501D1E33] = f126_local0.validResult,
 					[0xB5C735486FC7CCB] = f126_local0.xuid,
 					[0x4F06C6EEDA8117E] = f126_local0.gameSecurityId,
-					[0xDF1F57DCD0A3E0A] = f126_local0.gameSecurityKey,
+					["game_security_key"] = f126_local0.gameSecurityKey,
 					[0x531894BFD7141D0] = f126_local0.hostAddress,
 					[0x2B41998FA3BFFF5] = f126_local0.protocol,
 					[0x73E75F9F7CD05DB] = f126_local0.isMP,
@@ -1724,7 +1724,7 @@ Lobby.Actions.QoSJoinSearchResults = function ( f122_arg0, f122_arg1, f122_arg2 
 				[0xC301327501D1E33] = f126_local0.validResult,
 				[0xB5C735486FC7CCB] = f126_local0.xuid,
 				[0x4F06C6EEDA8117E] = f126_local0.gameSecurityId,
-				[0xDF1F57DCD0A3E0A] = f126_local0.gameSecurityKey,
+				["game_security_key"] = f126_local0.gameSecurityKey,
 				[0x531894BFD7141D0] = f126_local0.hostAddress,
 				[0x2B41998FA3BFFF5] = f126_local0.protocol,
 				[0x73E75F9F7CD05DB] = f126_local0.isMP,
@@ -2599,7 +2599,7 @@ Lobby.Actions.SetSavedOrDefaultMap = function ( f196_arg0, f196_arg1 )
 					Engine[0x9DB4788AE93C72D]( f197_local0, f197_local1 )
 				end
 			end
-			if f196_arg1[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_CUSTOM ) or f196_arg1[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_ARENA_CUSTOM ) then
+			if f196_arg1["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_CUSTOM ) or f196_arg1["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_ARENA_CUSTOM ) then
 				Engine[0xB4A27DBBE6D51CF]( f197_local0, true )
 			end
 			LobbyVM.ProcessCompleteSuccess( {

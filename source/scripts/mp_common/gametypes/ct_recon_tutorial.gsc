@@ -180,7 +180,7 @@ function function_72ba0df6( einflictor, attacker, idamage, smeansofdeath, weapon
                         level thread ct_vo::function_41e59aeb( array( #"hash_77c6ce9bf6da35f4" ), 1 );
                         break;
                     default:
-                        level thread ct_vo::function_41e59aeb( array( #"hash_72daf28dd50991c5" ), 1 );
+                        level thread ct_vo::function_41e59aeb( array( #"vox_tvoi_tutor_reco_death" ), 1 );
                         break;
                 }
             }
@@ -280,7 +280,7 @@ function function_86c058b()
     ct_vo::function_3ca1b77d();
     level thread ct_vo::function_831e0584( array( #"hash_63c5e3c0cbf4683b" ) );
     e_player = getplayers()[ 0 ];
-    a_str_vo = array( #"hash_94c2603d3b522a7" );
+    a_str_vo = array( #"vox_tvoi_tutor_reco_start" );
     e_player thread ct_utils::function_61c3d59c( #"hash_75a61367f89fc81a", a_str_vo );
     s_loc = struct::get( "s_recon_vision_pulse_obj", "targetname" );
     waypoint = ct_utils::create_waypoint( #"hash_1f1deaa6bff12db8", s_loc.origin, s_loc.angles, #"any", undefined, 40, undefined );
@@ -466,7 +466,7 @@ function function_ae2eb600()
     s_loc = struct::get( "s_inside_church", "targetname" );
     ct_utils::function_9a4e412e( s_loc, "in_church" );
     level notify( #"start_enter_church_collision" );
-    level notify( #"hash_439e586d5a4210cd" );
+    level notify( #"player_inside_church" );
     ct_utils::function_e9ab1003( "s_inside_church" );
 }
 
@@ -819,7 +819,7 @@ function function_f6c6baf3()
     
     while ( true )
     {
-        waitresult = e_player waittill( #"hash_70f03cfbb15356c0" );
+        waitresult = e_player waittill( #"sensor_dart_active" );
         e_dart = waitresult.dart;
         level.var_5008031d = e_dart;
         var_308b5f44 = struct::get( "s_blightfather_dart_loc", "targetname" );
@@ -956,7 +956,7 @@ function function_39f9d433()
     level.var_79671f89 = 1;
     e_player = ct_utils::get_player();
     e_player thread ct_utils::function_61c3d59c( undefined, undefined, "dynobj_KillZombies" );
-    e_player ct_utils::function_80bf685b( 50 * level.var_6cd64bc3 );
+    e_player ct_utils::ingame_objective_set_points( 50 * level.var_6cd64bc3 );
     e_player.var_d5d10814 = undefined;
     wait 0.1;
     n_cost = killstreaks::get_killstreak_momentum_cost( e_player, level.var_b4a06c5b );
@@ -984,7 +984,7 @@ function function_39f9d433()
             wait 1.5;
             e_player = getplayers()[ 0 ];
             globallogic_score::_setplayermomentum( e_player, 0 );
-            e_player thread ct_utils::function_80bf685b( 0 );
+            e_player thread ct_utils::ingame_objective_set_points( 0 );
             level thread function_bb44f289( 10, 25, 0 );
         }
         
@@ -1196,7 +1196,7 @@ function zombie_death_watcher()
             ct_utils::function_b3b2c91e();
         }
         
-        e_player thread ct_utils::function_80bf685b( e_player.pers[ #"momentum" ] );
+        e_player thread ct_utils::ingame_objective_set_points( e_player.pers[ #"momentum" ] );
     }
     else
     {
@@ -1218,7 +1218,7 @@ function function_79d4c106()
     e_player thread ct_utils::function_61c3d59c( var_7d5a0f5e, undefined );
     level thread ct_vo::function_14b08e49( array( #"hash_2613f24ad4fa5cbc" ), "stop_nag" );
     setdvar( #"hash_3e06b14c41136e95", 0 );
-    e_player waittill( #"hash_7b84cc3c326479a6" );
+    e_player waittill( #"overwatch_helicopter_called" );
     setdvar( #"hash_3e06b14c41136e95", 1 );
     level notify( #"stop_nag" );
     ct_utils::function_daa27144();
@@ -1636,7 +1636,7 @@ function function_35bd7aef( s_loc )
     self val::set( #"ai_church", "ignoreall", 1 );
     self val::set( #"ai_church", "ignoreme", 1 );
     self thread ct_utils::function_5b59f3b7( self.origin, self.angles, 32 );
-    level waittill( #"hash_439e586d5a4210cd" );
+    level waittill( #"player_inside_church" );
     self val::reset( #"ai_church", "ignoreme" );
     n_delay = randomfloatrange( 0.2, 0.8 );
     wait n_delay;

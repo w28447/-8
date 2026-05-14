@@ -28,14 +28,14 @@ function __init__()
 // Size: 0x24
 function on_gameplay_started( localclientnum )
 {
-    level thread function_5a9c338e( localclientnum );
+    level thread handle_pa( localclientnum );
 }
 
 // Namespace mp_casino_scripted/mp_casino_scripted
 // Params 1
 // Checksum 0xa369f310, Offset: 0x140
 // Size: 0x250
-function function_5a9c338e( localclientnum )
+function handle_pa( localclientnum )
 {
     level endon( #"hash_d5c5c322d0ccf8" );
     a_v_pa[ 0 ] = ( 33, -1286, 292 );

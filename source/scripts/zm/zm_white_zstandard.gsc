@@ -306,7 +306,7 @@ function function_c87db3f7( str_next_defend )
     level flag::wait_till( "started_defend_area" );
     level.s_portal_power thread zm_white_portals::disable_teleporter();
     level.s_portal_street_mid thread zm_white_portals::disable_teleporter();
-    level waittill( #"hash_7a04a7fb98fa4e4d" );
+    level waittill( #"end_defend_area" );
     wait 2;
     level.s_portal_power thread zm_white_portals::reenable_teleporter();
     level.s_portal_street_mid thread zm_white_portals::reenable_teleporter();
@@ -378,7 +378,7 @@ function function_8daf4de5()
 function function_54b015d9()
 {
     level zm_utility::function_e64ac3b6( 16, #"hash_1de54db35ad2c33a" );
-    level thread zm_audio::sndannouncerplayvox( #"hash_6acb03a0373891c1", undefined, undefined, undefined, 1 );
+    level thread zm_audio::sndannouncerplayvox( #"jolting_jacks", undefined, undefined, undefined, 1 );
 }
 
 // Namespace zm_white_zstandard/zm_white_zstandard
@@ -387,7 +387,7 @@ function function_54b015d9()
 // Size: 0x9c
 function intro_zombie_dog( n_round_number )
 {
-    level endon( #"hash_7a04a7fb98fa4e4d" );
+    level endon( #"end_defend_area" );
     n_spawn_count = 0;
     
     while ( n_spawn_count < 3 )
@@ -421,7 +421,7 @@ function function_b4cae8b9()
 // Size: 0xa4
 function intro_nova_crawler( n_round_number )
 {
-    level endon( #"hash_7a04a7fb98fa4e4d" );
+    level endon( #"end_defend_area" );
     n_spawn_count = 0;
     
     while ( n_spawn_count < 3 )
@@ -501,7 +501,7 @@ function function_a39e7a56()
             
             if ( isdefined( ai ) )
             {
-                n_delay = isdefined( zombie_utility::get_zombie_var( #"zombie_spawn_delay" ) ) ? zombie_utility::get_zombie_var( #"zombie_spawn_delay" ) : zombie_utility::get_zombie_var( #"hash_7d5a25e2463f7fc5" );
+                n_delay = isdefined( zombie_utility::get_zombie_var( #"zombie_spawn_delay" ) ) ? zombie_utility::get_zombie_var( #"zombie_spawn_delay" ) : zombie_utility::get_zombie_var( #"zombie_spawn_delay_base" );
                 level.defend_spawns++;
             }
             
@@ -689,6 +689,6 @@ function registerlast_truck_headshot_()
 function function_a97f7327()
 {
     level zm_utility::function_7a35b1d7( #"hash_299d0a3534135476" );
-    level thread zm_audio::sndannouncerplayvox( #"hash_3acd6d72567def3a", undefined, undefined, undefined, 1 );
+    level thread zm_audio::sndannouncerplayvox( #"door_open_all", undefined, undefined, undefined, 1 );
 }
 

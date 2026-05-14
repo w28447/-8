@@ -1,4 +1,4 @@
-#using script_cb32d07c95e5628;
+#using scripts\mp_common\item_spawn_groups_util.gsc;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\clientfield_shared;
 #using scripts\core_common\flagsys_shared;
@@ -127,11 +127,11 @@ function private event_handler[event_cf200f34] function_209450ae( eventstruct )
     
     if ( dynent.targetname == "spring_event_homunculus" )
     {
-        a_items = var_7580ce3e namespace_65181344::function_fd87c780( #"spring_event_homunculus_list", 5 );
+        a_items = var_7580ce3e item_spawn_groups_util::function_fd87c780( #"spring_event_homunculus_list", 5 );
     }
     else
     {
-        a_items = var_7580ce3e namespace_65181344::function_fd87c780( #"zombie_apoc_event_homunculus_list", 7 );
+        a_items = var_7580ce3e item_spawn_groups_util::function_fd87c780( #"zombie_apoc_event_homunculus_list", 7 );
     }
     
     foreach ( item in a_items )

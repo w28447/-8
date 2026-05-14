@@ -29,12 +29,12 @@ CoD.LootContractsUtility.UpdatePinnedContracts = function ( f2_arg0, f2_arg1, f2
 			f2_local1:set( Enum[0xDFD9060F3FE5DA8][0x969C88B07100A11] )
 			f2_local1 = f2_arg2 - 1
 			if not CoD.BaseUtility.IsDvarEnabled( "ui_forcePinContractTimeOut" ) then
-				Engine[0x356A2C9C226F6]( f2_arg0, 3, 0xCF6C99AECF79C4F, 1, f2_local1, 2, f2_arg3, 3, f2_arg1 )
+				Engine[0x356A2C9C226F6]( f2_arg0, 3, "pin_contract", 1, f2_local1, 2, f2_arg3, 3, f2_arg1 )
 			end
 			local f2_local2 = LobbyData.GetCurrentMenuTarget()
 			local f2_local3
 			if f2_local2 then
-				f2_local3 = f2_local2[0x8B72E07B55C3AC0]
+				f2_local3 = f2_local2["id"]
 				if not f2_local3 then
 				
 				else
@@ -42,7 +42,7 @@ CoD.LootContractsUtility.UpdatePinnedContracts = function ( f2_arg0, f2_arg1, f2
 						Engine[0xDE279ECDDDD966]( f2_arg0, 0x16179386F1005C3, {
 							[0xA771618F6FE31D1] = f2_local1,
 							[0xB9C77D208D5A439] = f2_arg3,
-							[0x225E201820AC337] = f2_arg1,
+							["contract_mode"] = f2_arg1,
 							[0xF90D702FFE79972] = f2_local3,
 							[0x7223EC6A1AA41D3] = Engine[0x316595FEDC72451]()
 						} )

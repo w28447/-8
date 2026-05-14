@@ -1,10 +1,10 @@
 {
     "buttonimage": "image#ui_icon_blackmarket_promos_dempsey_button_small",
     "popupimage": "image#ui_icon_blackmarket_promos_dempsey_large_preview",
-    "nametext": "localized17#hash_31c0ad0f49c3e60d",
+    "nametext": "localized17#menu/dempsey_blackout_character_bundle",
     "categorytext": "localized17#hash_30951b5b7749b8df",
     "name": "dempsey_blackout_character_bundle",
-    "desctext": "localized17#hash_3e04cea4bbfd5737",
+    "desctext": "localized17#menu/dempsey_blackout_character_bundle_desc",
     "previewimage": "image#ui_icon_blackmarket_promos_dempsey_item_detail",
     "reserveimage": "image#ui_icon_blackmarket_promos_dempsey_button_large"
 }

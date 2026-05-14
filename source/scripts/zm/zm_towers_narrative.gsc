@@ -30,7 +30,7 @@ function init()
     level flag::init( #"hash_3e90f82a2802b3" );
     level flag::init( #"hash_26c9e53e0e558572" );
     level flag::init( #"hash_4863d7214aa660e2" );
-    level flag::init( #"hash_5ee1f3505b34a52d" );
+    level flag::init( #"remus_started" );
     
     if ( !zm_utility::is_ee_enabled() )
     {
@@ -426,7 +426,7 @@ function function_831dcf3e()
         
         if ( zm_utility::is_ee_enabled() )
         {
-            mdl_fx clientfield::set( "" + #"hash_5afda864f8b64f5c", 0 );
+            mdl_fx clientfield::set( "" + #"narrative_brazier_fire", 0 );
         }
         
         mdl_fx delete();
@@ -451,13 +451,13 @@ function function_51f7da68()
     
     if ( self flag::get( #"hash_6e4b1162d4626a6e" ) )
     {
-        mdl_fx clientfield::set( "" + #"hash_5afda864f8b64f5c", 0 );
+        mdl_fx clientfield::set( "" + #"narrative_brazier_fire", 0 );
         self flag::clear( #"hash_6e4b1162d4626a6e" );
     }
     
     while ( true )
     {
-        s_waitresult = level waittill( #"hash_3042a9bf2f57ea0a" );
+        s_waitresult = level waittill( #"wraith_fire_impact" );
         v_origin = s_waitresult.var_814c9389;
         
         if ( istouching( v_origin, self ) )
@@ -472,7 +472,7 @@ function function_51f7da68()
     {
         level.var_75fb83c = var_d34eaa6e;
         self flag::set( #"hash_6e4b1162d4626a6e" );
-        mdl_fx clientfield::set( "" + #"hash_5afda864f8b64f5c", 1 );
+        mdl_fx clientfield::set( "" + #"narrative_brazier_fire", 1 );
         
         if ( level.var_75fb83c >= level.var_3d8b20c0 )
         {

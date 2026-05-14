@@ -36,7 +36,7 @@
 #material,35,35,#menu_camo_scorch_green_pattern,#mpui/camo_scorch_green,0,0,0,0,#loot,#mc/mtl_t7_camo_loot_scorch_green,#em_material_t7_camo_loot_scorch_green,0
 #material,36,36,#menu_camo_flecktarn_purple_pattern,#mpui/camo_flecktarn_purple,0,0,0,0,#loot,#mc/mtl_t7_camo_loot_flecktarn_purple,#em_material_t7_camo_loot_flecktarn_purple,0
 #material,37,37,#menu_camo_flecktarn_stealth_pattern,#mpui/camo_flecktarn_stealth,0,0,0,0,#loot,#mc/mtl_t7_camo_loot_flecktarn_stealth,#em_material_t7_camo_loot_flecktarn_stealth,0
-#material,38,38,#menu_camo_flecktarn_shiny_pattern,#hash_771984ba937ab1fe,0,0,0,0,#loot,#mc/mtl_t7_camo_loot_flecktarn_shiny,#em_material_t7_camo_loot_flecktarn_shiny,0
+#material,38,38,#menu_camo_flecktarn_shiny_pattern,#mpui/camo_flecktarn_emissive,0,0,0,0,#loot,#mc/mtl_t7_camo_loot_flecktarn_shiny,#em_material_t7_camo_loot_flecktarn_shiny,0
 #material,39,39,#menu_camo_snowblo_green_pattern,#mpui/camo_snowblo_green,0,0,0,0,#loot,#mc/mtl_t7_camo_loot_snowblo_green,#em_material_t7_camo_loot_snowblo_green,0
 #material,40,40,#menu_camo_dante_crazy_pattern,#mpui/camo_dante_crazy,0,0,0,0,#loot,#mc/mtl_t7_camo_loot_dante_crazy,#em_material_t7_camo_loot_dante_crazy,0
 #material,41,41,#menu_camo_dante_hallucination_pattern,#mpui/camo_dante_hallucination,0,0,0,0,#loot,#mc/mtl_t7_camo_loot_dante_hallucination,#em_material_t7_camo_loot_dante_hallucination,0

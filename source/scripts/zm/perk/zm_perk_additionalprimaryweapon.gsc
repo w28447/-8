@@ -136,7 +136,7 @@ function take_additional_primary_weapon_perk( b_pause, str_perk, str_result, n_s
     
     if ( isdefined( self.laststandpistol ) )
     {
-        self endon( #"disconnect", #"hash_499749b8848c21fd" );
+        self endon( #"disconnect", #"additional_primary_weapon_tracker" );
         
         if ( self.laststandpistol !== self.var_2a62e678 )
         {
@@ -189,8 +189,8 @@ function take_additional_primary_weapon_perk( b_pause, str_perk, str_result, n_s
 // Size: 0x2b8
 function function_1a9f3a91()
 {
-    self notify( #"hash_499749b8848c21fd" );
-    self endon( #"disconnect", #"hash_4dba2ff9e70127f5", #"hash_499749b8848c21fd" );
+    self notify( #"additional_primary_weapon_tracker" );
+    self endon( #"disconnect", #"hash_4dba2ff9e70127f5", #"additional_primary_weapon_tracker" );
     
     while ( isdefined( self.s_loadout ) )
     {
@@ -207,7 +207,7 @@ function function_1a9f3a91()
     
     while ( true )
     {
-        s_result = self waittill( #"weapon_change", #"hash_29c66728ccd27f03" );
+        s_result = self waittill( #"weapon_change", #"restore_additional_primary_weapon" );
         
         if ( isdefined( self.laststandpistol ) )
         {

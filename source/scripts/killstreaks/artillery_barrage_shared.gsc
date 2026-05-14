@@ -712,7 +712,7 @@ function function_ae65820c( delay )
     
     if ( isdefined( self ) )
     {
-        self playloopsound( #"hash_6e9ee0f0f9ecd8d7" );
+        self playloopsound( #"exp_artillery_barrage_incoming" );
     }
 }
 

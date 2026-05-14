@@ -8,7 +8,7 @@ CoD.CallingCards_replacer_smoke.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.soundSet = "default"
 	
 	local smoke = LUI.UIImage.new( 0, 0, -40, 456, 0, 0, -202, 38 )
-	smoke:setImage( RegisterImage( 0xF63B04BC0AA5720 ) )
+	smoke:setImage( RegisterImage( "uie_ui_icon_callingcards_replacer_smoke" ) )
 	self:addElement( smoke )
 	self.smoke = smoke
 	

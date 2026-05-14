@@ -15,7 +15,7 @@ CoD.LauncherMultiReticle_UI3D_Internal.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local reticle = LUI.UIImage.new( 0, 0, 0, 768, 0, 0, 2, 770 )
 	reticle:setRGB( 0.64, 1, 0.81 )
-	reticle:setImage( RegisterImage( 0xA9C4C435ACF4EE9 ) )
+	reticle:setImage( RegisterImage( "uie_mtl_wpn_t7_launch_multi_glass_red" ) )
 	self:addElement( reticle )
 	self.reticle = reticle
 	

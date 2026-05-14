@@ -15,7 +15,7 @@ CoD.vhud_hellstorm_button_layout.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	KBMClusterBombActionName = LUI.UIText.new( 0.5, 0.5, -583, -283, 1, 1, -159, -143 )
 	KBMClusterBombActionName:setAlpha( 0 )
-	KBMClusterBombActionName:setText( Engine[0xF9F1239CFD921FE]( 0x6368EB0A070207A ) )
+	KBMClusterBombActionName:setText( Engine[0xF9F1239CFD921FE]( "menu/hud_vehicle_clusterbomb" ) )
 	KBMClusterBombActionName:setTTF( "ttmussels_regular" )
 	KBMClusterBombActionName:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	KBMClusterBombActionName:setShaderVector( 0, 0, 0, 0, 0 )
@@ -41,7 +41,7 @@ CoD.vhud_hellstorm_button_layout.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	KBMSlowDownActionName = LUI.UIText.new( 0.5, 0.5, 278.5, 578.5, 1, 1, -159, -143 )
 	KBMSlowDownActionName:setAlpha( 0 )
-	KBMSlowDownActionName:setText( Engine[0xF9F1239CFD921FE]( 0xB1A03F2448A49D9 ) )
+	KBMSlowDownActionName:setText( Engine[0xF9F1239CFD921FE]( "menu/hud_vehicle_slow" ) )
 	KBMSlowDownActionName:setTTF( "ttmussels_regular" )
 	KBMSlowDownActionName:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	KBMSlowDownActionName:setShaderVector( 0, 0, 0, 0, 0 )

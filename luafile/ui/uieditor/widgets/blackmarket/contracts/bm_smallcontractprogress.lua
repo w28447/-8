@@ -47,7 +47,7 @@ CoD.BM_SmallContractProgress.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local ProgressBarComplete = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	ProgressBarComplete:setAlpha( 0 )
-	ProgressBarComplete:setImage( RegisterImage( 0x200DFB498DD9B4E ) )
+	ProgressBarComplete:setImage( RegisterImage( "uie_ui_menu_contracts_ring_small_complete" ) )
 	ProgressBarComplete:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	ProgressBarComplete:setShaderVector( 1, 0.5, 0, 0, 0 )
 	ProgressBarComplete:setShaderVector( 2, 0.5, 0, 0, 0 )

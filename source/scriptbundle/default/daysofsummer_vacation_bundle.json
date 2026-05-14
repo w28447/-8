@@ -1,10 +1,10 @@
 {
     "buttonimage": "image#ui_icon_blackmarket_promos_summer_menendez_button_small",
     "popupimage": "image#ui_icon_blackmarket_promos_summer_menendez_large_preview",
-    "nametext": "localized17#hash_6030a439ce848337",
+    "nametext": "localized17#menu/daysofsummer_vacation_bundle",
     "categorytext": "localized17#hash_30951b5b7749b8df",
     "name": "daysofsummer_vacation_bundle",
-    "desctext": "localized17#hash_2143d92784606069",
+    "desctext": "localized17#menu/daysofsummer_vacation_bundle_desc",
     "previewimage": "image#ui_icon_blackmarket_promos_summer_menendez_item_detail",
     "reserveimage": "image#ui_icon_blackmarket_promos_summer_menendez_button_large"
 }

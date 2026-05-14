@@ -21,7 +21,7 @@ CoD.ScrStk_MeterInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local Fill = LUI.UIImage.new( 0.5, 0.5, -9, 7, 0.5, 0.5, -58, 96 )
 	Fill:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
 	Fill:setXRot( 180 )
-	Fill:setImage( RegisterImage( 0xBECC85DF0ADD5A3 ) )
+	Fill:setImage( RegisterImage( "uie_ui_hud_core_streak_widget_meter_fill" ) )
 	Fill:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	Fill:setShaderVector( 0, 1, 0, 0, 0 )
 	Fill:setShaderVector( 1, 0, 0, 0, 0 )

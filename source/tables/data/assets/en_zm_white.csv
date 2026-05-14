@@ -139,14 +139,14 @@ localizeentry,#hash_363b64e294aae80
 localizeentry,#hash_363b74e294ab033
 localizeentry,#hash_363b94e294ab399
 localizeentry,#hash_363bc4e294ab8b2
-localizeentry,d#hash_375ac490696f74c
+localizeentry,d#zombie/points_pickup
 localizeentry,d#hash_38a2cf22c48d6c3
 localizeentry,#hash_392fb1c4d23b1a0
 localizeentry,#hash_392fc1c4d23b353
 localizeentry,#hash_393091c4d23c96a
 localizeentry,#zmweapon/riotshield
 localizeentry,#hash_3b1888151d4b06b
-localizeentry,#hash_3b6d1cb5a0d8c6c
+localizeentry,#zm_escape/trap_cooldown
 localizeentry,#hash_3bc93a1234524ae
 localizeentry,#hash_3c5aaa0d3d7fe53
 localizeentry,#hash_3c5aba0d3d80006
@@ -322,7 +322,7 @@ localizeentry,#hash_75a76c9e419d43b
 localizeentry,#hash_75a77c9e419d5ee
 localizeentry,#hash_75a79c9e419d954
 localizeentry,#hash_76c961b869fc1f1
-localizeentry,d#hash_76f7af1c550c84c
+localizeentry,d#zm_challenges/rapid_kills
 localizeentry,#hash_781708ca90230df
 localizeentry,#hash_784d761b374cb3f
 localizeentry,#hash_784d861b374ccf2
@@ -649,7 +649,7 @@ localizeentry,#hash_10912d0df9254e90
 localizeentry,#hash_10912e0df9255043
 localizeentry,#hash_10912f0df92551f6
 localizeentry,#hash_1091340df9255a75
-localizeentry,d#hash_10a6e66831e443fa
+localizeentry,d#zm_challenges/rapid_headshots
 localizeentry,#hash_10a7260f668c61d4
 localizeentry,#hash_10b00d576737b6c9
 localizeentry,#hash_10b1aba87a28ce1d
@@ -701,7 +701,7 @@ localizeentry,#hash_11afda224204c60c
 localizeentry,d#mpui/sf
 localizeentry,d#mpui/rf
 localizeentry,d#hash_11cfa6d5f521dede
-localizeentry,d#hash_11d17195d5833bc4
+localizeentry,d#mpui/no_attachment
 localizeentry,#hash_11e5b018c3b3cb9c
 localizeentry,#hash_11e5b118c3b3cd4f
 localizeentry,#hash_11e5b218c3b3cf02
@@ -817,7 +817,7 @@ localizeentry,#hash_13bb516316d3057b
 localizeentry,#hash_13bb546316d30a94
 localizeentry,#hash_13bb566316d30dfa
 localizeentry,#hash_13bb576316d30fad
-localizeentry,d#hash_13d235b06a9b195b
+localizeentry,d#menu/x_of_y
 localizeentry,d#mpui/barrelchoke_desc
 localizeentry,#hash_13ddeba217ac7a00
 localizeentry,#hash_13ddeca217ac7bb3
@@ -850,12 +850,12 @@ localizeentry,#hash_147ea4233b0dac6c
 localizeentry,#hash_147ea5233b0dae1f
 localizeentry,#hash_147ea6233b0dafd2
 localizeentry,#hash_14892eda87420294
-localizeentry,d#hash_148e5fc10a26a69d
+localizeentry,d#hud/restart_prompt
 localizeentry,#hash_14a124c4426a84b0
 localizeentry,#hash_14a131c4426a9ac7
 localizeentry,#hash_14a132c4426a9c7a
 localizeentry,#hash_14a133c4426a9e2d
-localizeentry,#hash_14a3ca0459a490cd
+localizeentry,#zm_escape/spinning_trap
 localizeentry,#hash_14b287db137ae199
 localizeentry,#hash_14b288db137ae34c
 localizeentry,#hash_14b289db137ae4ff
@@ -863,7 +863,7 @@ localizeentry,#hash_14b28adb137ae6b2
 localizeentry,#hash_14b35cc487c385fd
 localizeentry,#hash_14b5ed692052b5ae
 localizeentry,#hash_14b8fc04055c2b9e
-localizeentry,d#hash_14b9981c6e3d2f76
+localizeentry,d#menu/camo_active_treasure
 localizeentry,#hash_14ce0620a69386f7
 localizeentry,#hash_14d1e3bc53718a6c
 localizeentry,#hash_14d1e8bc537192eb
@@ -900,7 +900,7 @@ localizeentry,#hash_15729b42b807489c
 localizeentry,#hash_15729e42b8074db5
 localizeentry,#hash_1572a042b807511b
 localizeentry,#hash_15761ceb7f9e7713
-localizeentry,d#hash_157811d05dd35f12
+localizeentry,d#menu/player_detail
 localizeentry,#hash_157a63a577169043
 localizeentry,#hash_157a64a5771691f6
 localizeentry,#hash_157a65a5771693a9
@@ -1029,7 +1029,7 @@ localizeentry,#hash_17ce2c2af25fe0a4
 localizeentry,#hash_17d9ccffb62f0f91
 localizeentry,#hash_17e86673b938ebb9
 localizeentry,d#mp/remote_exit
-localizeentry,d#hash_17ede46111f44fec
+localizeentry,d#mpui/no_attachment_desc
 localizeentry,#hash_17f86af9c5a89e4e
 localizeentry,#hash_18172fcb8f2c1536
 localizeentry,#hash_181731cb8f2c189c
@@ -1084,11 +1084,11 @@ localizeentry,#hash_18ecc622b2f4235e
 localizeentry,#hash_18eccb22b2f42bdd
 localizeentry,#hash_18ff132245c6e8e7
 localizeentry,#hash_1910800d830971f0
-localizeentry,d#hash_191d99adc60420b1
+localizeentry,d#menu/hud_vehicle_reload
 localizeentry,#hash_1923621001f3835f
 localizeentry,#hash_1923631001f38512
 localizeentry,d#mpui/uber_desc
-localizeentry,d#hash_193c1c010f81e229
+localizeentry,d#mpui/camo_active_rapid_kills
 localizeentry,#hash_194b753872ee95fc
 localizeentry,#hash_194c891a72364de0
 localizeentry,#hash_194c8b1a72365146
@@ -1167,7 +1167,7 @@ localizeentry,#hash_1b1f70ff2f2b371a
 localizeentry,#hash_1b1f71ff2f2b38cd
 localizeentry,#hash_1b205976db08ec04
 localizeentry,#hash_1b55eddad9ea2bbe
-localizeentry,#hash_1b60859f3a2f9d03
+localizeentry,#zm_white/location_bunker_lounge
 localizeentry,#hash_1b61596539a1cecb
 localizeentry,#hash_1b615c6539a1d3e4
 localizeentry,#hash_1b615e6539a1d74a
@@ -1258,7 +1258,7 @@ localizeentry,#hash_1d0ed7148a7cdd19
 localizeentry,#hash_1d0ed9148a7ce07f
 localizeentry,#hash_1d0fc16b4d59b521
 localizeentry,#hash_1d175f6387d44262
-localizeentry,d#hash_1d23bfbcd5f26261
+localizeentry,d#mpui/tank_inbound
 localizeentry,#hash_1d2c699b99234063
 localizeentry,#hash_1d4d5150977d08a4
 localizeentry,#hash_1d4d5250977d0a57
@@ -1331,7 +1331,7 @@ localizeentry,#hash_1ebcae6083e40764
 localizeentry,#hash_1ebcb06083e40aca
 localizeentry,#hash_1ebcb16083e40c7d
 localizeentry,d#hash_1ec28f865f9444e3
-localizeentry,#hash_1ec883f1cf006ca9
+localizeentry,#zm_white/location_bunker_beds
 localizeentry,#hash_1eca145586bdf1a9
 localizeentry,#hash_1ecf10bdaf920b62
 localizeentry,#hash_1ecf13bdaf92107b
@@ -1416,7 +1416,7 @@ localizeentry,#hash_2064a5e72a4f74d1
 localizeentry,#hash_207b7f1729f231dd
 localizeentry,d#hash_208eb7d41301aac0
 localizeentry,#hash_209b7a0a83ce0276
-localizeentry,#hash_20bd99c897a2920c
+localizeentry,#zm_white/location_bunker_apd
 localizeentry,#hash_20c3b4d1aebdafce
 localizeentry,#hash_20e4a3e2d07811fa
 localizeentry,#hash_20e4f58acffb1c79
@@ -1569,7 +1569,7 @@ localizeentry,#hash_23b264261f260b56
 localizeentry,#hash_23b265261f260d09
 localizeentry,#hash_23b266261f260ebc
 localizeentry,#hash_23b8cd28a5e6831c
-localizeentry,d#hash_23c1c09e94181fdb
+localizeentry,d#zombie/button_buy_trap
 localizeentry,#hash_23d2d8e4d43d781d
 localizeentry,d#mpui/camo_jungle
 localizeentry,#hash_23ef9bd527c321ce
@@ -1693,7 +1693,7 @@ localizeentry,#hash_26590dfa2446ef2f
 localizeentry,#hash_26590ffa2446f295
 localizeentry,#hash_266151283f707db2
 localizeentry,#hash_2661a4fc987a7a82
-localizeentry,d#hash_2674d175d3480e09
+localizeentry,d#mp/multiplier_x
 localizeentry,d#mpui/pistolscope
 localizeentry,#hash_26896b7acd42b672
 localizeentry,#hash_268d3666c1e723d5
@@ -1813,7 +1813,7 @@ localizeentry,#hash_29b7086f0fbe3e43
 localizeentry,#hash_29c4bb6beaba052a
 localizeentry,#hash_29c7766dbe65fcc0
 localizeentry,d#hash_29c8316725752063
-localizeentry,d#hash_29d1b41ee09e09b8
+localizeentry,d#mpui/camo_active_kill_counter
 localizeentry,#hash_29e25d70d487bce9
 localizeentry,#hash_29e25e70d487be9c
 localizeentry,#hash_29e25f70d487c04f
@@ -1887,7 +1887,7 @@ localizeentry,#hash_2b771053ac647715
 localizeentry,#hash_2b771153ac6478c8
 localizeentry,#hash_2b771253ac647a7b
 localizeentry,#hash_2b771353ac647c2e
-localizeentry,#hash_2b7eb95e4bf7ed70
+localizeentry,#zm_escape/acid_trap
 localizeentry,d#mpui/acog_desc
 localizeentry,#hash_2b80f2a9c1c1fc96
 localizeentry,#hash_2b80fca9c1c20d94
@@ -1939,7 +1939,7 @@ localizeentry,#hash_2c724dc792cdc35a
 localizeentry,#hash_2c7a975806b1721c
 localizeentry,#hash_2c9a788720618e43
 localizeentry,#hash_2ca8ae2273fe76ae
-localizeentry,d#hash_2cab672fd372f942
+localizeentry,d#menu/camo_active_mystic
 localizeentry,#hash_2cae1fb452e67446
 localizeentry,#hash_2cb972dbf4e899de
 localizeentry,#hash_2cbb60dcaa3a91e8
@@ -2216,7 +2216,7 @@ localizeentry,#hash_31ce6d964ecbc5bb
 localizeentry,#hash_31ce70964ecbcad4
 localizeentry,#hash_31ce72964ecbce3a
 localizeentry,#hash_31ce73964ecbcfed
-localizeentry,#hash_31d525e6dba9a3d3
+localizeentry,#zombie/equip_riotshield_pickup_hint_string
 localizeentry,d#hash_31e9d057a03398bf
 localizeentry,#hash_31ecc80bdebdda00
 localizeentry,#hash_31ecc90bdebddbb3
@@ -2240,7 +2240,7 @@ localizeentry,#hash_3246fb6a8febd9fc
 localizeentry,#hash_3247006a8febe27b
 localizeentry,#hash_3247026a8febe5e1
 localizeentry,#hash_3255be2fcb2f6b9f
-localizeentry,d#hash_32591d26690f296c
+localizeentry,d#mpui/n_xp
 localizeentry,#hash_325b52170bda2176
 localizeentry,#hash_3262580790190195
 localizeentry,#hash_32754667ceebbf09
@@ -2277,7 +2277,7 @@ localizeentry,#hash_32fa112e9fe55d3f
 localizeentry,#hash_330632ab750c0ef6
 localizeentry,#hash_330633ab750c10a9
 localizeentry,#hash_33063dab750c21a7
-localizeentry,d#hash_33105d49e7fd102e
+localizeentry,d#menu/camo_active_brains
 localizeentry,#hash_33116738f78d04b3
 localizeentry,#hash_33154af4da82a32e
 localizeentry,#hash_33154cf4da82a694
@@ -2380,7 +2380,7 @@ localizeentry,#hash_35120f8994c78fef
 localizeentry,#hash_351a359dee18e66c
 localizeentry,#hash_351b049df4a1e79e
 localizeentry,#zombie/ray_gun_upgraded
-localizeentry,#hash_352ef8e844f92ce3
+localizeentry,#zm_white/location_bunker_diner
 localizeentry,#hash_3531e99e5b0b21c3
 localizeentry,#hash_3531ea9e5b0b2376
 localizeentry,#hash_3531eb9e5b0b2529
@@ -2441,7 +2441,7 @@ localizeentry,#hash_366c737a652a5cfa
 localizeentry,#hash_367bd30bd3ff18e9
 localizeentry,#hash_367bdc0bd3ff2834
 localizeentry,#hash_367bde0bd3ff2b9a
-localizeentry,d#hash_367dd4c3c93edc80
+localizeentry,d#menu/camo_active_115
 localizeentry,#hash_368a461713bb5210
 localizeentry,#hash_368a471713bb53c3
 localizeentry,#hash_368a491713bb5729
@@ -2576,7 +2576,7 @@ localizeentry,d#mpui/extbarrel2
 localizeentry,#hash_398e96340148bf5f
 localizeentry,#hash_39a88e90c1ec05b4
 localizeentry,d#mpui/grip_desc
-localizeentry,d#hash_39bac218bf0160b1
+localizeentry,d#mpui/reticle_color_1
 localizeentry,#hash_39be56c54cf66b6f
 localizeentry,#hash_39be59c54cf67088
 localizeentry,#hash_39be5bc54cf673ee
@@ -2702,7 +2702,7 @@ localizeentry,#hash_3c81b006854bc6fd
 localizeentry,d#hash_3c929cabec952c14
 localizeentry,#hash_3c96b365f3e31263
 localizeentry,d#hash_3ca968dee9e5dc02
-localizeentry,d#hash_3cbdafac7f4a7bd2
+localizeentry,d#menu/camo_active_spinal
 localizeentry,#hash_3cdcfaf909e7dfc0
 localizeentry,#hash_3cdcfff909e7e83f
 localizeentry,#hash_3cdd00f909e7e9f2
@@ -2902,7 +2902,7 @@ localizeentry,#hash_40fb417ef1f3c1b9
 localizeentry,#hash_40fb4c7ef1f3d46a
 localizeentry,#hash_410bcc852b683ee8
 localizeentry,#hash_410cbd2c1f8e7ce9
-localizeentry,d#hash_41122a695bc6065d
+localizeentry,d#zmtrials/player_took_damage
 localizeentry,#hash_411e9ba3d08b7643
 localizeentry,#hash_411e9ea3d08b7b5c
 localizeentry,#hash_411ea0a3d08b7ec2
@@ -2947,7 +2947,7 @@ localizeentry,#hash_41b4a842ec1e6e46
 localizeentry,#hash_41b4a942ec1e6ff9
 localizeentry,#hash_41b4b342ec1e80f7
 localizeentry,d#hash_41bd4c5cdc9ef279
-localizeentry,#hash_41e42ae2624eac36
+localizeentry,#zm_white/replace_weapon
 localizeentry,d#mpui/elo
 localizeentry,d#hash_41ed99048f6cb7f0
 localizeentry,#hash_41fe4e7cd7b6b120
@@ -3295,7 +3295,7 @@ localizeentry,#hash_4a621c0c0f51fef9
 localizeentry,#hash_4a6b20a71fb9496b
 localizeentry,d#hash_4a6f079813e273c3
 localizeentry,#hash_4a7e3021e7639a07
-localizeentry,#hash_4aa0489391d8a215
+localizeentry,#zm_white/location_culdesac
 localizeentry,#hash_4aa2bd47353c1c51
 localizeentry,#hash_4aa8bb0c12969126
 localizeentry,#hash_4ab4590a9e7739a5
@@ -3628,7 +3628,7 @@ localizeentry,#hash_51a631c22ba559f0
 localizeentry,#hash_51a63ec22ba57007
 localizeentry,#hash_51a63fc22ba571ba
 localizeentry,#hash_51a640c22ba5736d
-localizeentry,d#hash_51af1b2f0736916b
+localizeentry,d#mpui/first_person_view
 localizeentry,#hash_51b5283efb74f8d1
 localizeentry,#hash_51b9885d308d14d9
 localizeentry,#hash_51b9ead2598f0d53
@@ -3655,9 +3655,9 @@ localizeentry,#hash_5206e39a933e4c78
 localizeentry,#hash_5206e49a933e4e2b
 localizeentry,#hash_5206e69a933e5191
 localizeentry,#hash_5206e99a933e56aa
-localizeentry,d#hash_522bb851d29dec00
-localizeentry,d#hash_522bba51d29def66
-localizeentry,d#hash_522bbb51d29df119
+localizeentry,d#mpui/perk_notify_2
+localizeentry,d#mpui/perk_notify_0
+localizeentry,d#mpui/perk_notify_1
 localizeentry,#hash_523e3aa1694f45e7
 localizeentry,#hash_524d500954651d9c
 localizeentry,#hash_524d510954651f4f
@@ -3748,7 +3748,7 @@ localizeentry,#hash_5455e2db289c6e93
 localizeentry,#hash_5455e3db289c7046
 localizeentry,#hash_5455e4db289c71f9
 localizeentry,#hash_5455e5db289c73ac
-localizeentry,d#hash_547439dffbb26594
+localizeentry,d#menu/play_music_sample
 localizeentry,d#hash_54835bb50736a328
 localizeentry,d#mpui/extrapellets
 localizeentry,#hash_54b7c3efc0a37247
@@ -3864,7 +3864,7 @@ localizeentry,#hash_573ccdabc3e88029
 localizeentry,#hash_573cd0abc3e88542
 localizeentry,#hash_57447e320f46829e
 localizeentry,#hash_57516d7d358e63df
-localizeentry,#hash_575e5c7bf38523da
+localizeentry,#zm_white/location_bunker_storage
 localizeentry,#hash_5771bcdaadafa973
 localizeentry,#hash_5771c7daadafbc24
 localizeentry,#hash_5771c9daadafbf8a
@@ -4061,7 +4061,7 @@ localizeentry,#hash_5be1315df91d9884
 localizeentry,#hash_5be1335df91d9bea
 localizeentry,#hash_5be1345df91d9d9d
 localizeentry,#hash_5bebd2b55f01c5ad
-localizeentry,#hash_5c07441c7372a5f3
+localizeentry,#zm_escape/trap_active
 localizeentry,d#hash_5c0d9b140a188ce0
 localizeentry,d#hash_5c28147c226eb600
 localizeentry,#hash_5c5dc99b74812e44
@@ -4079,7 +4079,7 @@ localizeentry,#hash_5cb46289edfbc629
 localizeentry,#hash_5cb46389edfbc7dc
 localizeentry,#hash_5cb46489edfbc98f
 localizeentry,#hash_5cb46589edfbcb42
-localizeentry,d#hash_5cc43b420cfb8a60
+localizeentry,d#mpui/third_person_view
 localizeentry,d#mpui/mixclip
 localizeentry,d#mpui/mms_desc
 localizeentry,#hash_5cd9e38dac41519e
@@ -4232,7 +4232,7 @@ localizeentry,#hash_5fe97e835d5c6eb5
 localizeentry,#hash_5ff2706ec25a9735
 localizeentry,#hash_5ff2716ec25a98e8
 localizeentry,#hash_5ff2736ec25a9c4e
-localizeentry,#hash_5ff3990c30bac4bc
+localizeentry,#zm_white/location_truck
 localizeentry,#hash_5ff3b8125ab2f892
 localizeentry,d#hash_6000dbbe3421103a
 localizeentry,#hash_60075f182b9337dc
@@ -4371,7 +4371,7 @@ localizeentry,#hash_6343cb877c0ad3e9
 localizeentry,#hash_6343d5877c0ae4e7
 localizeentry,#hash_6351687bf19a8eca
 localizeentry,#hash_63687e5cf20a1be4
-localizeentry,d#hash_6370b5a97249c317
+localizeentry,d#feature/gun_tag
 localizeentry,d#mpui/camo_6speed
 localizeentry,#hash_63a41a3440033eab
 localizeentry,#hash_63a41d34400343c4
@@ -4435,7 +4435,7 @@ localizeentry,#hash_654318237d724d83
 localizeentry,#hash_65431a237d7250e9
 localizeentry,d#hash_654b3a8ecbf13a67
 localizeentry,#hash_6564461db5a54c41
-localizeentry,#hash_65a022b0b93714b1
+localizeentry,#zm_escape/acid_trap_unavailable
 localizeentry,#hash_65c335aef8b29cac
 localizeentry,#hash_65c336aef8b29e5f
 localizeentry,#hash_65c33baef8b2a6de
@@ -4782,7 +4782,7 @@ localizeentry,#hash_6e0ef46e2e278f64
 localizeentry,#hash_6e0ef56e2e279117
 localizeentry,#hash_6e0ef66e2e2792ca
 localizeentry,d#hash_6e155a8da74ae1b6
-localizeentry,d#hash_6e2fd7423cbe42b0
+localizeentry,d#mpui/camo_active_objective_kills
 localizeentry,#hash_6e3021fb215d8ca0
 localizeentry,#hash_6e3022fb215d8e53
 localizeentry,#hash_6e3023fb215d9006
@@ -5177,7 +5177,7 @@ localizeentry,#hash_77d828bf167841c2
 localizeentry,#hash_77d829bf16784375
 localizeentry,d#hash_77dce7635423ba68
 localizeentry,d#hash_77e7311dc74dccf5
-localizeentry,d#hash_77f9d83f9e77c0d3
+localizeentry,d#menu/camo_active_celestial
 localizeentry,#hash_7801946321518946
 localizeentry,#hash_78087b2389928ca3
 localizeentry,#hash_780e4daf4784846f
@@ -5302,7 +5302,7 @@ localizeentry,#hash_7b1571a6a9a3ce4c
 localizeentry,#hash_7b1576a6a9a3d6cb
 localizeentry,#hash_7b1577a6a9a3d87e
 localizeentry,#hash_7b1578a6a9a3da31
-localizeentry,#hash_7b20b0be4c557f4e
+localizeentry,#zm_white/location_security_checkpoint
 localizeentry,#hash_7b350047d30a26bb
 localizeentry,#hash_7b37c7c286684138
 localizeentry,#hash_7b39ed8801951c98
@@ -5323,7 +5323,7 @@ localizeentry,#hash_7ba83b5e1616e64a
 localizeentry,#hash_7ba83c5e1616e7fd
 localizeentry,#hash_7bb1b12f39cb43b8
 localizeentry,d#hash_7bb31f180eab141c
-localizeentry,d#hash_7bbe615a9a441e5f
+localizeentry,d#feature/gun_emblem
 localizeentry,#hash_7bca7cc064e275db
 localizeentry,#hash_7bd790c20424a12e
 localizeentry,#hash_7bd93344f27746d3
@@ -5523,9 +5523,9 @@ localizeentry,#hash_7fe84d434d1b3604
 localizeentry,#hash_7ff693f6233bb921
 localizeentry,#hash_7ff902c8bfcedd56
 keyvaluepairs,#en_zm_white
-ttf,d#hash_1459f17f5b5ffefe
-ttf,d#hash_410b483cf72f16f2
-ttf,d#hash_413a9dcb2b171ceb
-ttf,d#hash_613b31a5842e8426
+ttf,d#dinnext_regular
+ttf,d#ttmussels_regular
+ttf,d#skorzhen
+ttf,d#0arame_mono_stencil
 ttf,d#default
-ttf,d#hash_70b575c9cf218b88
+ttf,d#ttmussels_demibold

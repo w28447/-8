@@ -46,7 +46,7 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT32"
                     },
@@ -85,17 +85,17 @@
     ],
     "members": [
         {
-            "name": "#hash_31a5d51248a1d2c",
+            "name": "#crm_screen_button_pressed",
             "scrName": "#hash_5befad02",
             "type": "UINT8"
         },
         {
-            "name": "#hash_13a1a70556201a2d",
+            "name": "#crm_message_id",
             "scrName": "#hash_5553aa16",
             "type": "UINT64"
         },
         {
-            "name": "#hash_43c83260dd96c90c",
+            "name": "#crm_screen_id",
             "scrName": "#hash_8f02a713",
             "type": "STRING",
             "len": 32

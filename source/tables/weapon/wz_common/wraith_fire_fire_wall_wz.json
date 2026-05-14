@@ -3,7 +3,7 @@
     "baseWeapon": "#wraith_fire_fire_wall",
     "displayname": "#weapon/incendiary_grenade",
     "weapon70": "#incendiary_grenade",
-    "streamkey": "#hash_5df78fc60bbc6b6b",
+    "streamkey": "#wraith_fire_fire_wall_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

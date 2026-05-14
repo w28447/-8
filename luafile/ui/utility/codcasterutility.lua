@@ -289,7 +289,7 @@ end
 CoD.CodCasterUtility.IsCodCasterSupportedGameType = function ( f31_arg0 )
 	local f31_local0 = Engine.GetGlobalModel()
 	f31_local0 = f31_local0["MapVote.mapVoteGameModeNext"].get( f31_local0["MapVote.mapVoteGameModeNext"] )
-	if f31_local0 == 0x8915B07B53BB7FA or f31_local0 == 0x5194D18FAD99705 then
+	if f31_local0 == "dm" or f31_local0 == 0x5194D18FAD99705 then
 		return false
 	else
 		return true
@@ -1286,7 +1286,7 @@ CoD.CodCasterUtility.CodCasterSettings.DisplaySettingsCategories = {
 CoD.CodCasterUtility.CodCasterSettings.LoadoutSettingsCategories = {
 	{
 		ref = "PrimaryWeapon",
-		groupName = 0xCB2D4EFE37D882B,
+		groupName = "codcaster/ls_primary_weapon",
 		datasourceNameHeader = "CodCasterLoadoutSettingsPrimaryWeaponList",
 		datasourceFunc = CoD.CodCasterUtility.CodCasterSettingsLoadoutSettingsPrimaryWeapon,
 		isDefaultCondition = CoD.CodCasterUtility.AreCodCasterOptionsDefault,
@@ -1294,7 +1294,7 @@ CoD.CodCasterUtility.CodCasterSettings.LoadoutSettingsCategories = {
 	},
 	{
 		ref = "SecondaryWeapon",
-		groupName = 0xA305350B533949F,
+		groupName = "codcaster/ls_secondary_weapon",
 		datasourceNameHeader = "CodCasterLoadoutSettingsSecondaryWeaponList",
 		datasourceFunc = CoD.CodCasterUtility.CodCasterSettingsLoadoutSettingsSecondaryWeapon,
 		isDefaultCondition = CoD.CodCasterUtility.AreCodCasterOptionsDefault,

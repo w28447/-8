@@ -1287,7 +1287,7 @@ CoD.ZMLoadoutUtility.SetEquippedClass = function ( f54_arg0, f54_arg1 )
 			if f54_local1 then
 				local f54_local2 = f54_local1[Engine[0xBBE3328FE08B8C7]()]
 				if f54_local2 then
-					local f54_local3 = f54_local2[0x78E9CEF0ED273BD]
+					local f54_local3 = f54_local2["equippedcustomclass"]
 					if f54_local3 and f54_local3:get() ~= f54_arg1 then
 						f54_local3:set( f54_arg1 )
 					end

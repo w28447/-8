@@ -9,7 +9,7 @@ CoD.WarScoreInfo_Capture_ProgressBarSegment.new = function ( f1_arg0, f1_arg1, f
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local ProgressBarBacking = LUI.UIImage.new( 0, 0, 0, 132, 0, 0, -30, 42 )
-	ProgressBarBacking:setImage( RegisterImage( 0xDEE5B319E9FA023 ) )
+	ProgressBarBacking:setImage( RegisterImage( "uie_hud_common_core_score_centertopbar_empty" ) )
 	self:addElement( ProgressBarBacking )
 	self.ProgressBarBacking = ProgressBarBacking
 	

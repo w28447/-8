@@ -3,7 +3,7 @@
     "baseWeapon": "#knife_loadout",
     "displayname": "#weapon/knife_loadout",
     "weapon70": "#knife_loadout",
-    "streamkey": "#hash_2fa372c686048623",
+    "streamkey": "#knife_loadout_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",

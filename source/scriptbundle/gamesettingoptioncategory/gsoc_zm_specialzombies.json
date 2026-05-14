@@ -3,6 +3,6 @@
     "hash_ce9b2d06": "gsol_zm_specialzombies",
     "type": "gamesettingoptioncategory",
     "name": "gsoc_zm_specialzombies",
-    "hash_40c3c9f045a1912d:hash_dea17465": "localized17#hash_40c3c9f045a1912d",
-    "hash_7233749e09322c66:hash_608158f2": "localized17#hash_7233749e09322c66"
+    "menu/general_settings_desc:hash_dea17465": "localized17#menu/general_settings_desc",
+    "menu/special_zombies_caps:hash_608158f2": "localized17#menu/special_zombies_caps"
 }

@@ -55,7 +55,7 @@ CoD[0x8ADB7D5ED7C6A8B].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local blastout = LUI.UIImage.new( 0, 0, 420.5, 670.5, 0, 0, -180, 420 )
 	blastout:setZRot( -52 )
 	blastout:setScale( 1.7, 1 )
-	blastout:setImage( RegisterImage( 0x19C7EA49FDEE505 ) )
+	blastout:setImage( RegisterImage( "uie_ui_icon_callingcards_zm_weapons_equipment_debri" ) )
 	blastout:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	blastout:setShaderVector( 0, 1, 1, 0, 0 )
 	blastout:setShaderVector( 1, 0, 1, 0, 0 )

@@ -15,7 +15,7 @@ CoD.WarScoreInfo_RoundPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.Backing = Backing
 	
 	local RoundFill = LUI.UIImage.new( 0, 0, 5, 27, 0, 0, 9, 25 )
-	RoundFill:setImage( RegisterImage( 0x62CBF3EB8A7E651 ) )
+	RoundFill:setImage( RegisterImage( "uie_ui_hud_core_objective_widget_round_fill" ) )
 	RoundFill.__Color = function ( f2_arg0 )
 		local f2_local0 = f2_arg0:get()
 		if f2_local0 ~= nil then

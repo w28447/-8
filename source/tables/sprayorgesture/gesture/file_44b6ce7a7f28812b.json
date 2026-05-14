@@ -1,8 +1,8 @@
 {
     "name": "#hash_44b6ce7a7f28812b",
     "type": "#gesture",
-    "gesture": "#hash_124e7202cb2c25c1",
-    "gesture2": "#hash_38f2297e91350f6a",
+    "gesture": "#boast_zombiefied",
+    "gesture2": "#boast_zombiefied_fem",
     "bundle": {
         "type": "#gesture",
         "entitlement": "#hash_6a38b1ff8a50a167",

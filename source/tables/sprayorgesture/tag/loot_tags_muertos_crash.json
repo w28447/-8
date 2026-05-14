@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_muertos_crash",
+    "type": "#tag",
+    "material": "#hash_20a47869806ce1c3",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#tags/muertos_crash",
+        "icon": "image#loot_ui_icon_tags_muertos_crash",
+        "isdefault": 0
+    }
+}

@@ -4,7 +4,7 @@
     "primaryLights": 602,
     "lightExploders": [
         {
-            "lightExploderName": "#hash_7e17d35a668424",
+            "lightExploderName": "#exp_lgt_draft",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -107,7 +107,7 @@
     ],
     "probeExploders": [
         {
-            "lightExploderName": "#hash_7e17d35a668424",
+            "lightExploderName": "#exp_lgt_draft",
             "triggerData": [
                 {
                     "probeID": 207,

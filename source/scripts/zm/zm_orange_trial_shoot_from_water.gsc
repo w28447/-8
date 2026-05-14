@@ -37,7 +37,7 @@ function __init__()
 function private on_begin()
 {
     str_targetname = "trials_shoot_from_water";
-    callback::function_33f0ddd3( &function_33f0ddd3 );
+    callback::on_player_loadout_changed( &on_player_loadout_changed );
     level zm_trial::function_25ee130( 1 );
     
     foreach ( player in getplayers() )
@@ -52,7 +52,7 @@ function private on_begin()
 // Size: 0xe2
 function private on_end( round_reset )
 {
-    callback::function_824d206( &function_33f0ddd3 );
+    callback::function_824d206( &on_player_loadout_changed );
     level zm_trial::function_25ee130( 0 );
     
     foreach ( player in getplayers() )
@@ -71,7 +71,7 @@ function private on_end( round_reset )
 function private function_9e0e99e1()
 {
     self endon( #"disconnect" );
-    level endon( #"hash_7646638df88a3656" );
+    level endon( #"trial_round_end" );
     b_locked_weapons = 0;
     
     while ( true )
@@ -135,7 +135,7 @@ function private function_9e0e99e1()
 // Params 1, eflags: 0x4
 // Checksum 0x2ada9956, Offset: 0x658
 // Size: 0x1f8
-function private function_33f0ddd3( s_event )
+function private on_player_loadout_changed( s_event )
 {
     if ( s_event.event === "give_weapon" || s_event.event === "give_weapon_alt" || s_event.event == "give_weapon_dual" )
     {

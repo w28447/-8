@@ -330,7 +330,7 @@ DataSources.StartMenuTabs = ListHelper_SetupDataSource( "StartMenuTabs", functio
 		end
 	elseif not LuaUtils.OfflineOnlyDemo() and not IsPlayerAGuest( f17_arg0 ) then
 		local f17_local4 = LobbyData.GetCurrentMenuTarget()
-		local f17_local5 = f17_local4[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING )
+		local f17_local5 = f17_local4["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING )
 		local f17_local6 = DataSources.StartMenuBreadcrumbs.getModel( f17_arg0 )
 		DataSources.StartMenuBreadcrumbs.recreateStartTabBreadcrumbModelsIfNeeded( f17_arg0, f17_local1, f17_local6 )
 		if not IsLobbyNetworkModeLAN() and (not CoD.DirectorUtility.IsOfflineDemo() or Engine[0xCB675CA7856DA25]()) and f17_local1 ~= Enum.eModes[0xB22E0240605CFFE] and not f17_local5 then

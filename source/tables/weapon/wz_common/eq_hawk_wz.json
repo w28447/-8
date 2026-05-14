@@ -3,7 +3,7 @@
     "baseWeapon": "#eq_hawk",
     "displayname": "#weapon/hawk",
     "weapon70": "#eq_hawk",
-    "streamkey": "#hash_32266df6cb5e5873",
+    "streamkey": "#eq_hawk_soundbank",
     "scrstr_8c8": [
         "tag_equipment_hero"
     ],

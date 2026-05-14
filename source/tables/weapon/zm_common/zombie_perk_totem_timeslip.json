@@ -1,7 +1,7 @@
 {
     "name": "#zombie_perk_totem_timeslip",
     "baseWeapon": "#zombie_perk_totem_timeslip",
-    "streamkey": "#hash_5603fd582ae065c2",
+    "streamkey": "#zombie_perk_totem_timeslip_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",
@@ -33,7 +33,7 @@
     "sound4e0": "#hash_7de02f3f0a5f070b",
     "tunables1": "#hash_2c79f27fac9515c3",
     "gestureTables": [
-        "#hash_5d924e953031e62a"
+        "#gestable_zombie_perk_totem_timeslip"
     ],
     "viewmodel": [
         "#wpn_t8_zm_perk_totem_time_slip_view"

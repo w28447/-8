@@ -72,7 +72,7 @@ function on_trigger( s_info )
         function_2d706436( e_player );
     #/
     
-    if ( getdvarint( #"hash_517c09bbb9e82a90", 1 ) && isalive( e_player ) && !( isdefined( e_player.var_6754f1c5 ) && e_player.var_6754f1c5 ) && getwaterheight( e_player.origin ) - e_player.origin[ 2 ] >= getdvarint( #"hash_65893d2be0da2532", 30 ) )
+    if ( getdvarint( #"hash_517c09bbb9e82a90", 1 ) && isalive( e_player ) && !( isdefined( e_player.var_6754f1c5 ) && e_player.var_6754f1c5 ) && getwaterheight( e_player.origin ) - e_player.origin[ 2 ] >= getdvarint( #"scr_freezing_water_depth", 30 ) )
     {
         /#
             if ( getdvarint( #"hash_a23c3aad7eb7dd", 0 ) )
@@ -114,7 +114,7 @@ function function_aa962363( e_player )
 {
     foreach ( t_water in level.var_a6f19c15 )
     {
-        if ( isalive( e_player ) && isdefined( t_water ) && e_player istouching( t_water ) && getwaterheight( e_player.origin ) - e_player.origin[ 2 ] >= getdvarint( #"hash_65893d2be0da2532", 30 ) )
+        if ( isalive( e_player ) && isdefined( t_water ) && e_player istouching( t_water ) && getwaterheight( e_player.origin ) - e_player.origin[ 2 ] >= getdvarint( #"scr_freezing_water_depth", 30 ) )
         {
             return true;
         }

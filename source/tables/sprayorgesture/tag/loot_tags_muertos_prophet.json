@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_muertos_prophet",
+    "type": "#tag",
+    "material": "#hash_1ce42c272341c3fa",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#tags/muertos_prophet",
+        "icon": "image#loot_ui_icon_tags_muertos_prophet",
+        "isdefault": 0
+    }
+}

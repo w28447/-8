@@ -1,8 +1,8 @@
 {
     "name": "#hash_6c9b96da0996fb0f",
     "type": "#gesture",
-    "gesture": "#hash_47bfcd992dc282c9",
-    "gesture2": "#hash_24509e2f628bbb72",
+    "gesture": "#boast_smokebomb_failure",
+    "gesture2": "#boast_smokebomb_failure_fem",
     "bundle": {
         "type": "#gesture",
         "title": "localized18#emotes/smoke_bombed",

@@ -2,7 +2,7 @@
     "name": "#sticky_grenade_extra_zm",
     "baseWeapon": "#sticky_grenade_extra",
     "displayname": "#weapon/sticky_grenade",
-    "streamkey": "#hash_3259967d91654c",
+    "streamkey": "#sticky_grenade_extra_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",
@@ -56,7 +56,7 @@
         "#hash_c15b461b7420c6d2",
         "#hash_bb3f97cf646813ac"
     ],
-    "normalImpactFX": "#hash_bc0ef9a18e7b5ef",
+    "normalImpactFX": "#grenade_explosion_sticky_zm",
     "bounceImpactFX": "#grenade_bounce",
     "dudImpactFX": "#grenade_dud",
     "normalImpactSounds": "#hash_e8e0a97bbbf0b555",

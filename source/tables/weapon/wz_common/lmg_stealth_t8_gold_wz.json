@@ -5,7 +5,7 @@
     "xhash_60": "#hash_5098009d0abcc7fb",
     "weapon70": "#lmg_stealth_t8_gold",
     "weapon890": "#lmg_stealth_t8_wz",
-    "streamkey": "#hash_5c48db0e91f0fdb5",
+    "streamkey": "#lmg_stealth_t8_gold_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -66,7 +66,7 @@
     "sound210": "#hash_464ce958923d1422",
     "sound240": "#hash_631a067190b54300",
     "sound250": "#hash_242aa17124751841",
-    "sound260": "#hash_515f54aa1f553686",
+    "sound260": "#prj_crack_supersonic",
     "sound5e0": "#fly_scope_zoom",
     "sound600": "#hash_209cb2974ae55ec0",
     "sound610": "#hash_209cb2974ae55ec0",

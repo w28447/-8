@@ -17,14 +17,14 @@ function preload()
 // Size: 0x5c
 function init_clientfields()
 {
-    clientfield::register( "toplayer", "" + #"hash_33c373888aa78dc2", 20000, 1, "counter", &function_e67464c1, 0, 0 );
+    clientfield::register( "toplayer", "" + #"key_press_feedback", 20000, 1, "counter", &key_press_feedback, 0, 0 );
 }
 
 // Namespace zm_white_computer_system/zm_white_computer_system
 // Params 7
 // Checksum 0x881b2d84, Offset: 0x110
 // Size: 0x6c
-function function_e67464c1( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function key_press_feedback( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( newval )
     {

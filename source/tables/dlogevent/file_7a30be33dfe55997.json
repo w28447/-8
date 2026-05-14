@@ -46,7 +46,7 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT32"
                     },
@@ -143,28 +143,28 @@
                         "type": "UINT64"
                     },
                     {
-                        "name": "#hash_204f262b1f3b8ccf",
+                        "name": "#next_game_match_id",
                         "scrName": "#hash_b5180208",
                         "type": "UINT64"
                     },
                     {
-                        "name": "#hash_238a1943270a668e",
+                        "name": "#last_game_match_id",
                         "scrName": "#hash_105d7660",
                         "type": "UINT64"
                     },
                     {
-                        "name": "#hash_274f4160f246b900",
+                        "name": "#utc_timestamp_last_game_end",
                         "scrName": "#hash_72dcb4c8",
                         "type": "UINT64"
                     },
                     {
-                        "name": "#hash_296aeed34055c468",
+                        "name": "#next_game_map_name",
                         "scrName": "#hash_11b170d5",
                         "type": "STRING",
                         "len": 48
                     },
                     {
-                        "name": "#hash_300f7cbb339f0026",
+                        "name": "#lobby_host_id",
                         "scrName": "#hash_4486ea9b",
                         "type": "UINT64"
                     },
@@ -179,13 +179,13 @@
                         "type": "INT32"
                     },
                     {
-                        "name": "#hash_3bca0a9c8f341c79",
+                        "name": "#last_game_map_name",
                         "scrName": "#hash_fb937b6e",
                         "type": "STRING",
                         "len": 48
                     },
                     {
-                        "name": "#hash_3d6dceb705c92439",
+                        "name": "#reason_intermission_ended",
                         "scrName": "#hash_5dd7cf0",
                         "type": "INT32"
                     },
@@ -195,12 +195,12 @@
                         "type": "BOOL"
                     },
                     {
-                        "name": "#hash_4f2f10801676ac78",
+                        "name": "#lobby_merge_target",
                         "scrName": "#hash_63eaa79c",
                         "type": "UINT64"
                     },
                     {
-                        "name": "#hash_522c2d85063ec515",
+                        "name": "#utc_timestamp_created",
                         "scrName": "#hash_7f8ed65b",
                         "type": "UINT64"
                     },
@@ -210,7 +210,7 @@
                         "type": "UINT64"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT64"
                     },
@@ -225,13 +225,13 @@
                         "type": "INT32"
                     },
                     {
-                        "name": "#hash_5e523aef49ce7554",
+                        "name": "#datacenter_id",
                         "scrName": "#hash_f4b09241",
                         "type": "STRING",
                         "len": 32
                     },
                     {
-                        "name": "#hash_623fd292cbf4dd16",
+                        "name": "#num_seconds_blocked",
                         "scrName": "#hash_52850c42",
                         "type": "UINT32"
                     },
@@ -241,7 +241,7 @@
                         "type": "INT32"
                     },
                     {
-                        "name": "#hash_7a177695ffbdbbbf",
+                        "name": "#dedi_hostname",
                         "scrName": "#hash_36513169",
                         "type": "STRING",
                         "len": 92

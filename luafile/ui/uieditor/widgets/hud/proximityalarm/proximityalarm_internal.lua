@@ -46,7 +46,7 @@ CoD.ProximityAlarm_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.icon = icon
 	
 	text = LUI.UIText.new( 0.27, 0.27, 0, 216, 0.3, 0.3, 0, 30 )
-	text:setText( Engine[0xF9F1239CFD921FE]( 0xFCEDC5C8AC323F8 ) )
+	text:setText( Engine[0xF9F1239CFD921FE]( "weapon/alarm_set" ) )
 	text:setTTF( "ttmussels_demibold" )
 	text:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	self:addElement( text )

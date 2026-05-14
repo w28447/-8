@@ -1,4 +1,4 @@
-#using script_52d2de9b438adc78;
+#using scripts\killstreaks\ir_strobe_deploy.gsc;
 #using scripts\core_common\ai_shared;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\challenges_shared;
@@ -58,7 +58,7 @@ function __init__()
     ir_strobe::init_shared();
     level.crateownerusetime = 500;
     level.cratenonownerusetime = int( getgametypesetting( #"cratecapturetime" ) * 1000 );
-    level.supplydropdisarmcrate = #"hash_20071ab3686e8d58";
+    level.supplydropdisarmcrate = #"killstreak/supply_drop_disarm_hint";
     clientfield::register( "vehicle", "supplydrop_care_package_state", 1, 1, "int" );
     clientfield::register( "vehicle", "supplydrop_ai_tank_state", 1, 1, "int" );
     clientfield::register( "scriptmover", "supplydrop_thrusters_state", 1, 1, "int" );
@@ -86,8 +86,8 @@ function __init__()
     function_d51de8cf( "tank_robot", 30, 40 );
     function_d51de8cf( "drone_squadron", 30, 40 );
     function_d51de8cf( "overwatch_helicopter", 30, 40 );
-    function_e611181f( "inventory_tank_robot", "killstreak", "tank_robot", 75, #"hash_6f13430dac318d3b", undefined, undefined, &ai_tank::crateland );
-    function_e611181f( "tank_robot", "killstreak", "tank_robot", 75, #"hash_6f13430dac318d3b", undefined, undefined, &ai_tank::crateland );
+    function_e611181f( "inventory_tank_robot", "killstreak", "tank_robot", 75, #"killstreak/ai_tank_crate", undefined, undefined, &ai_tank::crateland );
+    function_e611181f( "tank_robot", "killstreak", "tank_robot", 75, #"killstreak/ai_tank_crate", undefined, undefined, &ai_tank::crateland );
     level.cratecategoryweights = [];
     level.cratecategorytypeweights = [];
     
@@ -391,15 +391,15 @@ function givespecializedcrateweapon( weapon )
     switch ( weapon.name )
     {
         case #"minigun":
-            level thread popups::displayteammessagetoall( #"hash_3b566d06e5a482e1", self );
+            level thread popups::displayteammessagetoall( #"killstreak/minigun_inbound", self );
             level weapons::add_limited_weapon( weapon, self, 3 );
             break;
         case #"m32":
-            level thread popups::displayteammessagetoall( #"hash_25ae9096a4ce050c", self );
+            level thread popups::displayteammessagetoall( #"killstreak/m32_inbound", self );
             level weapons::add_limited_weapon( weapon, self, 3 );
             break;
         case #"m220_tow":
-            level thread popups::displayteammessagetoall( #"hash_51751eb890739762", self );
+            level thread popups::displayteammessagetoall( #"killstreak/m220_tow_inbound", self );
             level weapons::add_limited_weapon( weapon, self, 3 );
             break;
         case #"mp40_blinged":
@@ -751,7 +751,7 @@ function use_killstreak_death_machine( killstreak )
         return true;
     }
     
-    level thread popups::displayteammessagetoall( #"hash_3b566d06e5a482e1", self );
+    level thread popups::displayteammessagetoall( #"killstreak/minigun_inbound", self );
     level weapons::add_limited_weapon( weapon, self, 3 );
     self takeweapon( currentweapon );
     self giveweapon( weapon );
@@ -2834,7 +2834,7 @@ function destroyhelicopter( var_fec7078b )
         self.flare_ent = undefined;
     }
     
-    self notify( #"hash_525537be2de4c159", { #position:self.origin, #direction:self.angles, #owner:self.owner } );
+    self notify( #"drop_crate_on_death", { #position:self.origin, #direction:self.angles, #owner:self.owner } );
     lbexplode();
 }
 
@@ -3799,12 +3799,12 @@ function helidropcrate( killstreak, originalowner, offset, killcament, killstrea
     }
     
     team = self.team;
-    waitresult = helicopter waittill( #"drop_crate", #"hash_525537be2de4c159" );
+    waitresult = helicopter waittill( #"drop_crate", #"drop_crate_on_death" );
     chopperowner = waitresult.owner;
     origin = waitresult.position;
     angles = waitresult.direction;
     
-    if ( waitresult._notify == #"hash_525537be2de4c159" )
+    if ( waitresult._notify == #"drop_crate_on_death" )
     {
         crate cratedelete( 0 );
         return;
@@ -3878,7 +3878,7 @@ function helidestroyed()
     
     self setspeed( 25, 5 );
     wait randomfloatrange( 0.5, 1.5 );
-    self notify( #"hash_525537be2de4c159", { #position:self.origin, #direction:self.angles, #owner:self.owner } );
+    self notify( #"drop_crate_on_death", { #position:self.origin, #direction:self.angles, #owner:self.owner } );
     lbexplode();
 }
 

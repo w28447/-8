@@ -1,5 +1,5 @@
 #using script_23c01b321e642c31;
-#using script_28bfe6df1650ab79;
+#using scripts\zm_common\trials\zm_trial_death_from_above.gsc;
 #using script_30ba61ad5559c51d;
 #using script_43642da1b2402e5c;
 #using script_6951ea86fdae9ae0;
@@ -61,7 +61,7 @@ function main()
             level.var_b691023c = undefined;
         }
         
-        level waittill( #"hash_5d42d8ee7a08b543" );
+        level waittill( #"trial_round_start" );
         
         switch ( level.round_number )
         {
@@ -82,7 +82,7 @@ function main()
                 break;
         }
         
-        level waittill( #"hash_7646638df88a3656" );
+        level waittill( #"trial_round_end" );
         
         if ( isdefined( level.e_avogadro ) )
         {
@@ -154,7 +154,7 @@ function function_439b486f()
         exploder::exploder( "fxexp_disco_lgt" );
         var_51bef3af = spawn( "script_model", ( 1, 1145, -350 ) );
         var_51bef3af playsound( #"hash_c8d3a1557c42ab7" );
-        s_notify = level waittilltimeout( 253, #"hash_7646638df88a3656" );
+        s_notify = level waittilltimeout( 253, #"trial_round_end" );
         var_51bef3af stopsound( #"hash_c8d3a1557c42ab7" );
         waitframe( 1 );
         var_51bef3af delete();
@@ -200,7 +200,7 @@ function function_1bc491ab()
     {
         ai.health = int( ai.health * 2 );
         level.zombie_total--;
-        n_delay = isdefined( zombie_utility::get_zombie_var( #"zombie_spawn_delay" ) ) ? zombie_utility::get_zombie_var( #"zombie_spawn_delay" ) : zombie_utility::get_zombie_var( #"hash_7d5a25e2463f7fc5" );
+        n_delay = isdefined( zombie_utility::get_zombie_var( #"zombie_spawn_delay" ) ) ? zombie_utility::get_zombie_var( #"zombie_spawn_delay" ) : zombie_utility::get_zombie_var( #"zombie_spawn_delay_base" );
         wait n_delay;
         return true;
     }
@@ -214,7 +214,7 @@ function function_1bc491ab()
 // Size: 0x134
 function spawn_boss()
 {
-    level endon( #"end_game", #"hash_7646638df88a3656" );
+    level endon( #"end_game", #"trial_round_end" );
     exploder::exploder( "fxexp_pyramid_open" );
     s_apd_door = struct::get( "apd_door_scene", "targetname" );
     level waittill( #"zombie_total_set" );
@@ -247,7 +247,7 @@ function function_e478fb2a()
 // Size: 0x17c
 function spawn_done( n_threshold )
 {
-    level endon( #"hash_7646638df88a3656" );
+    level endon( #"trial_round_end" );
     waitframe( 1 );
     
     if ( isdefined( level.e_avogadro ) )

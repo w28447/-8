@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_caricature_ajax",
+    "type": "#tag",
+    "material": "#hash_64307c3fa7b33210",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#tags/caricature_ajax",
+        "icon": "image#loot_ui_icon_tags_caricature_ajax",
+        "isdefault": 0
+    }
+}

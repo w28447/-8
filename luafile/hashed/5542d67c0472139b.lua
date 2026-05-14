@@ -30,7 +30,7 @@ CoD.EquippedBGBInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local EmptyHighlight = LUI.UIImage.new( 0.5, 0.5, -102, 102, 0.5, 0.5, -102, 102 )
 	EmptyHighlight:setAlpha( 0 )
-	EmptyHighlight:setImage( RegisterImage( 0xFA49018B8B7B52D ) )
+	EmptyHighlight:setImage( RegisterImage( "uie_ui_menu_zombies_cac_elixir_loadout_empty_highlight" ) )
 	self:addElement( EmptyHighlight )
 	self.EmptyHighlight = EmptyHighlight
 	

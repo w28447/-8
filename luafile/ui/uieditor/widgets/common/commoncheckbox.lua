@@ -39,7 +39,7 @@ CoD.CommonCheckbox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local dashBacking = LUI.UIImage.new( 0, 0, 4, 36, 0, 0, 4.5, 36.5 )
 	dashBacking:setScale( 1.5, 1.5 )
-	dashBacking:setImage( RegisterImage( 0x4BB3E0B0E9A1D7E ) )
+	dashBacking:setImage( RegisterImage( "uie_ui_menu_cac_allocation_pip_empty" ) )
 	self:addElement( dashBacking )
 	self.dashBacking = dashBacking
 	

@@ -30,7 +30,7 @@ CoD[0x7ED38F84B5D585D].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.skulls = skulls
 	
 	local SkullsClosed = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	SkullsClosed:setImage( RegisterImage( 0x1286684211212BE ) )
+	SkullsClosed:setImage( RegisterImage( "uie_ui_icon_callingcards_wz_insigniaechelons_master_skulls_closed" ) )
 	self:addElement( SkullsClosed )
 	self.SkullsClosed = SkullsClosed
 	

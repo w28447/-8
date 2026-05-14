@@ -36,7 +36,7 @@ LUI.createMenu.TimelineEditorFilmOptions = function ( f1_arg0, f1_arg1 )
 	
 	local Title = LUI.UIText.new( 0, 0, 30, 380, 0, 0, 195, 234 )
 	Title:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
-	Title:setText( LocalizeToUpperString( 0x2FA47140D97F89D ) )
+	Title:setText( LocalizeToUpperString( "menu/options_caps" ) )
 	Title:setTTF( "ttmussels_regular" )
 	Title:setLetterSpacing( 1 )
 	Title:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

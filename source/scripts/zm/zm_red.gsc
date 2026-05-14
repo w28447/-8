@@ -123,7 +123,7 @@ function event_handler[level_init] main( eventstruct )
     clientfield::register( "actor", "" + #"hash_2856f87ecdfaf62", 16000, 1, "counter" );
     clientfield::register( "actor", "" + #"hash_1bdce857fd614cef", 16000, 1, "counter" );
     clientfield::register( "world", "" + #"postfx_play", 16000, 2, "int" );
-    clientfield::register( "world", "" + #"hash_71f9fcfb2cd84a9c", 16000, 1, "int" );
+    clientfield::register( "world", "" + #"boss_arena_visgroup", 16000, 1, "int" );
     clientfield::register( "toplayer", "" + #"eye_vignette", 16000, 1, "int" );
     level._effect[ #"headshot" ] = #"zombie/fx_bul_flesh_head_fatal_zmb";
     level._effect[ #"headshot_nochunks" ] = #"zombie/fx_bul_flesh_head_nochunks_zmb";
@@ -381,7 +381,7 @@ function private function_6f63ad34()
 // Size: 0x10e
 function function_ea526b81()
 {
-    level flag::wait_till( #"hash_7943879f3be8ccc6" );
+    level flag::wait_till( #"dark_side_open" );
     level.var_5b175281 = level.check_for_valid_spawn_near_team_callback;
     level.check_for_valid_spawn_near_team_callback = &function_f0bd229;
     
@@ -412,7 +412,7 @@ function function_a7641284()
     }
     
     level endon( #"egg_free", #"pap_quest_completed" );
-    var_af2013df = array( #"hash_67695ee69c57c0b2", #"hash_61de3b8fe6f6a35" );
+    var_af2013df = array( #"serpent_pass_eagle_free", #"cliff_tombs_eagle_free" );
     level flag::wait_till_all( var_af2013df );
     
     while ( true )
@@ -496,7 +496,7 @@ function init_flags()
 {
     level flag::init( #"round_one" );
     level flag::init( #"spartoi_resurrect" );
-    level flag::init( #"hash_6c92a415bd4bb739" );
+    level flag::init( #"sentinel_interacted" );
     level flag::init( #"pegasus_exited" );
 }
 
@@ -555,7 +555,7 @@ function registermp_vehicles_agr_prespawn( s_chest )
 // Size: 0x954
 function function_c000f08b()
 {
-    level endon( #"end_game", #"hash_49085a6baf9c2c27" );
+    level endon( #"end_game", #"early_round_reset" );
     
     if ( zm_custom::function_901b751c( #"zmenhancedstate" ) == 2 || zm_custom::function_901b751c( #"zmminibossstate" ) == 2 || zm_custom::function_901b751c( #"startround" ) > 1 )
     {
@@ -731,7 +731,7 @@ function function_c000f08b()
 // Size: 0x70
 function function_d2085d57()
 {
-    level endon( #"hash_1cf28f130f16e2eb", #"hash_49085a6baf9c2c27" );
+    level endon( #"hash_1cf28f130f16e2eb", #"early_round_reset" );
     level flag::wait_till( "gameplay_started" );
     exploder::stop_exploder( "exp_lgt_temple_gameplay_group" );
     level notify( #"hash_1cf28f130f16e2eb" );
@@ -743,7 +743,7 @@ function function_d2085d57()
 // Size: 0x144
 function private function_d7831b0f()
 {
-    level endon( #"end_game", #"hash_49085a6baf9c2c27" );
+    level endon( #"end_game", #"early_round_reset" );
     level thread function_a3e22935();
     s_result = level waittill( #"end_of_round", #"hash_dc34ebe02d09532" );
     level.no_powerups = undefined;
@@ -766,7 +766,7 @@ function private function_a3e22935()
 {
     level endon( #"end_game", #"end_of_round", #"hash_dc34ebe02d09532" );
     level waittill( #"host_migration_begin" );
-    level notify( #"hash_49085a6baf9c2c27" );
+    level notify( #"early_round_reset" );
     level waittill( #"host_migration_end" );
     level thread function_c000f08b();
     wait 1;
@@ -786,7 +786,7 @@ function private function_12b9b9a9()
         level.var_c54ec9bb = undefined;
         level.noroundnumber = undefined;
         level.max_zombie_func = undefined;
-        level notify( #"hash_49085a6baf9c2c27" );
+        level notify( #"early_round_reset" );
     }
     
     a_s_spawns = struct::get_array( #"hash_39721602c33f4cc7" );
@@ -1421,7 +1421,7 @@ function play_outro()
         zm_devgui::zombie_devgui_open_sesame();
     #/
     
-    level zm_vo::function_3c173d37( ( 0, 0, 0 ), 2147483647 );
+    level zm_vo::vo_stop_all( ( 0, 0, 0 ), 2147483647 );
     level zm_audio::sndvoxoverride( 1 );
     zombie_utility::clear_all_corpses();
     util::set_lighting_state( 0 );
@@ -1669,7 +1669,7 @@ function function_f2427bae( slot, weapon )
 // Size: 0x164
 function function_46159bb7( a_s_valid_respawn_points )
 {
-    if ( level flag::get( #"hash_7943879f3be8ccc6" ) )
+    if ( level flag::get( #"dark_side_open" ) )
     {
         return a_s_valid_respawn_points;
     }
@@ -2142,28 +2142,28 @@ function function_fbf0e632()
         switch ( cmd )
         {
             case #"hash_6eb30455e9df06a1":
-                level thread function_71a6c3ea();
+                level thread super_open_sesame();
                 function_eeb6a1e7();
                 scene::add_scene_func( "<dev string:x24be>", &function_5b984671, "<dev string:x24d8>" );
                 scene::add_scene_func( "<dev string:x24be>", &function_ea8d45ef, "<dev string:x24df>" );
                 scene::play( "<dev string:x24be>" );
                 return 1;
             case #"hash_6eb30155e9df0188":
-                level thread function_71a6c3ea();
+                level thread super_open_sesame();
                 function_eeb6a1e7();
                 scene::add_scene_func( "<dev string:x24e6>", &function_75ef7b1f, "<dev string:x24d8>" );
                 scene::add_scene_func( "<dev string:x24e6>", &function_ea8d45ef, "<dev string:x24df>" );
                 scene::play( "<dev string:x24e6>" );
                 return 1;
             case #"hash_6eb30255e9df033b":
-                level thread function_71a6c3ea();
+                level thread super_open_sesame();
                 function_eeb6a1e7();
                 scene::add_scene_func( "<dev string:x2506>", &function_883a1fb8, "<dev string:x24d8>" );
                 scene::add_scene_func( "<dev string:x2506>", &function_ea8d45ef, "<dev string:x24df>" );
                 scene::play( "<dev string:x2506>" );
                 return 1;
             case #"hash_6eb30755e9df0bba":
-                level thread function_71a6c3ea();
+                level thread super_open_sesame();
                 function_eeb6a1e7();
                 scene::play( "<dev string:x2526>" );
                 return 1;
@@ -2172,17 +2172,17 @@ function function_fbf0e632()
                 function_eeb6a1e7();
                 level thread play_outro();
                 return 1;
-            case #"hash_50d92ca3c6c7c2a8":
-                level thread function_71a6c3ea();
+            case #"super_open_sesame":
+                level thread super_open_sesame();
                 return 1;
             case #"enable_cave_zone":
                 level thread function_f39d0796();
                 return 1;
-            case #"hash_4abb72859ec9576c":
-                level thread function_3594d78b();
+            case #"force_spawn_gegenees":
+                level thread force_spawn_gegenees();
                 break;
-            case #"hash_2f2a0c012b9587d3":
-                level thread function_590ce3bd();
+            case #"force_spawn_spartoi":
+                level thread force_spawn_spartoi();
                 break;
             case #"hash_23e8dfb7c173d426":
                 level thread function_80b73b4();
@@ -2295,7 +2295,7 @@ function function_fbf0e632()
             case #"hash_5e2fc595f8d3d7bd":
                 level thread zm_red_power_quest::devgui_complete();
                 return 1;
-            case #"hash_55435ba74ce9b712":
+            case #"challenge_shield_and_spear_damage":
                 level.var_656c1a37 = 0;
                 level thread zm_red_challenges::start_challenge();
                 break;
@@ -2346,15 +2346,15 @@ function function_fbf0e632()
                 level.var_656c1a37 = 10;
                 level thread zm_red_challenges::start_challenge();
                 break;
-            case #"hash_7629cafaf2e465e3":
+            case #"challenge_kill_with_equipment":
                 level.var_656c1a37 = 9;
                 level thread zm_red_challenges::start_challenge();
                 break;
-            case #"hash_368aef09ae7ed576":
+            case #"challenge_kill_with_hero_weapon":
                 level.var_656c1a37 = 12;
                 level thread zm_red_challenges::start_challenge();
                 break;
-            case #"hash_2e0e00c6ad36186f":
+            case #"challenge_kill_with_god_hand":
                 level.var_656c1a37 = 8;
                 level thread zm_red_challenges::start_challenge();
                 break;
@@ -2454,7 +2454,7 @@ function function_fbf0e632()
             case #"greek_fire":
                 level thread zm_red_main_quest::function_25bb4829( 1 );
                 break;
-            case #"hash_4e0fd48904ba6582":
+            case #"oracle_boon_reset_all":
                 foreach ( player in getplayers() )
                 {
                     player.var_6a885e6e = 0;
@@ -2476,7 +2476,7 @@ function function_fbf0e632()
                 }
                 
                 break;
-            case #"hash_66233ad30c165ffd":
+            case #"oracle_boon_reset_ammo":
                 foreach ( player in getplayers() )
                 {
                     player.var_6a885e6e = 0;
@@ -2547,7 +2547,7 @@ function function_fbf0e632()
     // Params 0
     // Checksum 0x9a209e0d, Offset: 0x94e0
     // Size: 0x4c, Type: dev
-    function function_71a6c3ea()
+    function super_open_sesame()
     {
         zm_devgui::zombie_devgui_open_sesame();
         scene::init( "<dev string:x25c3>" );
@@ -2633,8 +2633,8 @@ function function_fbf0e632()
         level thread zm_red_pap_quest::function_5a4d8124();
         level flag::set( #"cage_dropped" );
         level flag::set( #"eagle_attack" );
-        level flag::set( #"hash_67695ee69c57c0b2" );
-        level flag::set( #"hash_61de3b8fe6f6a35" );
+        level flag::set( #"serpent_pass_eagle_free" );
+        level flag::set( #"cliff_tombs_eagle_free" );
     }
 
     // Namespace zm_red/zm_red
@@ -2658,9 +2658,9 @@ function function_fbf0e632()
         level flag::set( #"pap_quest_completed" );
         level flag::set( #"zm_red_fasttravel_open" );
         level flag::set( #"cage_dropped" );
-        level flag::set( #"hash_67695ee69c57c0b2" );
-        level flag::set( #"hash_61de3b8fe6f6a35" );
-        level flag::set( #"hash_7943879f3be8ccc6" );
+        level flag::set( #"serpent_pass_eagle_free" );
+        level flag::set( #"cliff_tombs_eagle_free" );
+        level flag::set( #"dark_side_open" );
         level thread zm_red_power_quest::devgui_complete();
         level thread scene::play( #"p8_fxanim_zm_red_omphalos_crystal_left_bundle", "<dev string:x260e>" );
         level thread scene::play( #"p8_fxanim_zm_red_omphalos_crystal_front_bundle", "<dev string:x260e>" );
@@ -2695,7 +2695,7 @@ function function_fbf0e632()
     // Params 0
     // Checksum 0x1e06d387, Offset: 0x9e88
     // Size: 0x1c, Type: dev
-    function function_3594d78b()
+    function force_spawn_gegenees()
     {
         zombie_gegenees_util::spawn_single( 1 );
     }
@@ -2704,7 +2704,7 @@ function function_fbf0e632()
     // Params 0
     // Checksum 0x34e1ba6b, Offset: 0x9eb0
     // Size: 0x1c, Type: dev
-    function function_590ce3bd()
+    function force_spawn_spartoi()
     {
         zombie_skeleton_util::function_1ea880bd( 1 );
     }
@@ -2718,17 +2718,17 @@ function function_fbf0e632()
         self notify( "<dev string:x263d>" );
         self endon( "<dev string:x263d>" );
         
-        if ( getdvarint( #"hash_49d01fe7f6492094", 0 ) == 0 )
+        if ( getdvarint( #"dev_draw_spawn_locations", 0 ) == 0 )
         {
-            setdvar( #"hash_49d01fe7f6492094", 1 );
+            setdvar( #"dev_draw_spawn_locations", 1 );
         }
         else
         {
-            setdvar( #"hash_49d01fe7f6492094", 0 );
+            setdvar( #"dev_draw_spawn_locations", 0 );
             return;
         }
         
-        while ( getdvarint( #"hash_49d01fe7f6492094", 0 ) )
+        while ( getdvarint( #"dev_draw_spawn_locations", 0 ) )
         {
             function_e8760afa( level.zm_loc_types[ #"zombie_location" ] );
             function_e8760afa( level.zm_loc_types[ #"gegenees_location" ] );

@@ -9,7 +9,7 @@ CoD.InGameTrialsRulesColumnTall.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local BackgroundTall = LUI.UIImage.new( 0, 0, 0, 388, 0.5, 0.5, -402.5, 402.5 )
-	BackgroundTall:setImage( RegisterImage( 0xA703FE14F98C63C ) )
+	BackgroundTall:setImage( RegisterImage( "uie_trial_rules_bronze_normal" ) )
 	BackgroundTall:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	BackgroundTall:setShaderVector( 0, 0, 0, 0, 0.36 )
 	BackgroundTall:setupNineSliceShader( 310, 350 )

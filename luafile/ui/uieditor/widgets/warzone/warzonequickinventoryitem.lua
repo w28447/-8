@@ -25,7 +25,7 @@ CoD.WarzoneQuickInventoryItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	ActiveBG:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
 	ActiveBG:setAlpha( 0 )
 	ActiveBG:setScale( 0.9, 0.9 )
-	ActiveBG:setImage( RegisterImage( 0x7A63CD655CD7572 ) )
+	ActiveBG:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_qe_glow" ) )
 	ActiveBG:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	ActiveBG:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( ActiveBG )

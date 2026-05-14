@@ -377,7 +377,7 @@ function function_90a854d2( slot )
     /#
         if ( getdvarint( #"hash_657185da33fd5f8", 0 ) > 0 )
         {
-            var_38280f2f = #"hash_6a1133003efe7380";
+            var_38280f2f = #"undefined_contract_name";
             
             switch ( slot )
             {

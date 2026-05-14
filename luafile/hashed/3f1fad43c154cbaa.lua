@@ -60,7 +60,7 @@ CoD.SpawnTimerNew.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	local ClockGlow = LUI.UIImage.new( 0, 0, 0, 210, 0, 0, 0, 210 )
 	ClockGlow:setRGB( 0.92, 0.89, 0.72 )
 	ClockGlow:setImage( RegisterImage( 0x7178A7AED7645A8 ) )
-	ClockGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9AD9C230B10C37 ) )
+	ClockGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_add" ) )
 	ClockGlow:setShaderVector( 0, SetVectorComponent( 0, 0, 1, 0.1, 0, 0 ) )
 	ClockGlow:setShaderVector( 1, 0.5, 0, 0, 0 )
 	ClockGlow:setShaderVector( 2, 0.5, 0, 0, 0 )

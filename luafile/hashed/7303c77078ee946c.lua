@@ -58,7 +58,7 @@ CoD.remoteMissileTargetLockonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local HawkLockOnTertiaryAdd = LUI.UIImage.new( 0.5, 0.5, -32, 32, 0.5, 0.5, -32, 32 )
 	HawkLockOnTertiaryAdd:setAlpha( 0 )
-	HawkLockOnTertiaryAdd:setImage( RegisterImage( 0xF49E7BEB3BBA576 ) )
+	HawkLockOnTertiaryAdd:setImage( RegisterImage( "uie_ui_hud_reticles_hawk_lock_tertiary_add" ) )
 	HawkLockOnTertiaryAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	HawkLockOnTertiaryAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( HawkLockOnTertiaryAdd )
@@ -66,13 +66,13 @@ CoD.remoteMissileTargetLockonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local HawkLockOnPrimary = LUI.UIImage.new( 0.5, 0.5, -64, 64, 0.5, 0.5, -64, 64 )
 	HawkLockOnPrimary:setAlpha( 0 )
-	HawkLockOnPrimary:setImage( RegisterImage( 0x59D785052C4A122 ) )
+	HawkLockOnPrimary:setImage( RegisterImage( "uie_ui_hud_reticles_hawk_lock_primary" ) )
 	self:addElement( HawkLockOnPrimary )
 	self.HawkLockOnPrimary = HawkLockOnPrimary
 	
 	local HawkLockOnSecondary = LUI.UIImage.new( 0.5, 0.5, -64, 64, 0.5, 0.5, -64, 64 )
 	HawkLockOnSecondary:setAlpha( 0 )
-	HawkLockOnSecondary:setImage( RegisterImage( 0xFC2005938D6CD2E ) )
+	HawkLockOnSecondary:setImage( RegisterImage( "uie_ui_hud_reticles_hawk_lock_secondary" ) )
 	self:addElement( HawkLockOnSecondary )
 	self.HawkLockOnSecondary = HawkLockOnSecondary
 	

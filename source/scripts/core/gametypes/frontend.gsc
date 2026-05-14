@@ -388,11 +388,11 @@ function callback_playerconnect()
     // Size: 0x160, Type: dev
     function function_e4ea0153()
     {
-        setdvar( #"hash_3319d0fd07c9ead8", "<dev string:x86>" );
+        setdvar( #"scr_aar_devgui_cmd", "<dev string:x86>" );
         
         while ( true )
         {
-            aarcmd = getdvarstring( #"hash_3319d0fd07c9ead8", "<dev string:x86>" );
+            aarcmd = getdvarstring( #"scr_aar_devgui_cmd", "<dev string:x86>" );
             
             if ( aarcmd == "<dev string:x86>" )
             {
@@ -417,7 +417,7 @@ function callback_playerconnect()
                 function_9eac333e();
             }
             
-            setdvar( #"hash_3319d0fd07c9ead8", "<dev string:x86>" );
+            setdvar( #"scr_aar_devgui_cmd", "<dev string:x86>" );
             wait 0.25;
         }
     }

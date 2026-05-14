@@ -345,7 +345,7 @@ LUI.createMenu.SupportSelection = function ( f1_arg0, f1_arg1 )
 	
 	local SelectedHeader = LUI.UIText.new( 0.5, 0.5, 443.5, 787.5, 0.5, 0.5, -373.5, -349.5 )
 	SelectedHeader:setRGB( 0.86, 0.74, 0.25 )
-	SelectedHeader:setText( LocalizeToUpperString( 0xF3659CEDAE6509E ) )
+	SelectedHeader:setText( LocalizeToUpperString( "menu/selected" ) )
 	SelectedHeader:setTTF( "ttmussels_regular" )
 	SelectedHeader:setLetterSpacing( 6 )
 	SelectedHeader:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )

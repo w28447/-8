@@ -211,7 +211,7 @@ function function_a8fc3bf1( s_info )
 // Size: 0xc4
 function function_2301b50d()
 {
-    if ( !getdvarint( #"hash_235decda8742ffc6", 1 ) )
+    if ( !getdvarint( #"dev_geothermal_geysers", 1 ) )
     {
         return;
     }
@@ -232,7 +232,7 @@ function geyser_think()
     self.t_geyser.s_scene = self;
     self.t_geyser callback::on_trigger( &function_da3ef83b );
     
-    while ( getdvarint( #"hash_235decda8742ffc6", 1 ) )
+    while ( getdvarint( #"dev_geothermal_geysers", 1 ) )
     {
         /#
             level thread function_a5242577( self, ( 0, 1, 0 ) );
@@ -282,7 +282,7 @@ function function_da3ef83b( s_info )
 {
     e_player = s_info.activator;
     
-    if ( getdvarint( #"hash_235decda8742ffc6", 1 ) && isalive( e_player ) && self.s_scene.var_b0902cc0 !== "Shot 1" )
+    if ( getdvarint( #"dev_geothermal_geysers", 1 ) && isalive( e_player ) && self.s_scene.var_b0902cc0 !== "Shot 1" )
     {
         if ( isvehicle( e_player ) )
         {

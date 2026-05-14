@@ -18,7 +18,7 @@ CoD[0x720E7CB0E9CFA73].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local background2 = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	background2:setAlpha( 0.55 )
-	background2:setImage( RegisterImage( 0xC9026E2920DBBAC ) )
+	background2:setImage( RegisterImage( "uie_ui_icon_callingcards_dystopian_bgglow" ) )
 	self:addElement( background2 )
 	self.background2 = background2
 	
@@ -43,7 +43,7 @@ CoD[0x720E7CB0E9CFA73].__resetProperties = function ( f2_arg0 )
 	f2_arg0.characer:setAlpha( 1 )
 	f2_arg0.characer:setZRot( 0 )
 	f2_arg0.background2:setAlpha( 0.55 )
-	f2_arg0.background2:setImage( RegisterImage( 0xC9026E2920DBBAC ) )
+	f2_arg0.background2:setImage( RegisterImage( "uie_ui_icon_callingcards_dystopian_bgglow" ) )
 end
 
 CoD[0x720E7CB0E9CFA73].__clipsPerState = {
@@ -83,7 +83,7 @@ CoD[0x720E7CB0E9CFA73].__clipsPerState = {
 			
 			f3_arg0.background2:completeAnimation()
 			f3_arg0.background2:setAlpha( 1 )
-			f3_arg0.background2:setImage( RegisterImage( 0xC9026E2920DBBAC ) )
+			f3_arg0.background2:setImage( RegisterImage( "uie_ui_icon_callingcards_dystopian_bgglow" ) )
 			f3_local0( f3_arg0.background2 )
 			local f3_local1 = function ( f9_arg0 )
 				local f9_local0 = function ( f10_arg0 )

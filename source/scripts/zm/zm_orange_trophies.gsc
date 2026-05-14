@@ -261,7 +261,7 @@ function function_3202188()
     
     while ( self.var_65b6215d.size < 5 )
     {
-        s_result = self waittill( #"hash_1ac4338b0d419091" );
+        s_result = self waittill( #"pap_use_finished" );
         
         if ( s_result.var_7139c18c == "pap_taken" )
         {
@@ -632,9 +632,9 @@ function third_fallen_soldiers_robots_decon_room_cleared()
         level.var_55b76576 = array( level.var_55b76576 );
     }
     
-    if ( !isinarray( level.var_55b76576, #"hash_52d967f4fc8b12fc" ) )
+    if ( !isinarray( level.var_55b76576, #"outer_walkway_open" ) )
     {
-        level.var_55b76576[ level.var_55b76576.size ] = #"hash_52d967f4fc8b12fc";
+        level.var_55b76576[ level.var_55b76576.size ] = #"outer_walkway_open";
     }
     
     if ( !isdefined( level.var_55b76576 ) )

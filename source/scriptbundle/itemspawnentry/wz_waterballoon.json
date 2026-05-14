@@ -43,7 +43,7 @@
     "hash_ee67711f": 1,
     "handler": "#generic_equipment_pickup",
     "armortier": 0,
-    "pickupicon": "image#hash_5badc60c6d95c6c",
+    "pickupicon": "image#ui_icon_weapon_hud_water_balloon",
     "stackable": 1,
     "hash_8c9a7dc8": 0,
     "hash_15b88fde": 0,

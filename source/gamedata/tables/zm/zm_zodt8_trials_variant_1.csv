@@ -20,14 +20,14 @@
 9,#magic_trick,7#hash_1879c4efe154b7db,7#hash_3847f14b6f3e878d,7#,#use_magicbox,#2,#,#,#,#,#,#,#
 9,#,7#,7#,7#,#random_teleport,#15,#30,#,#,#,#,#,#
 10,#waterlogged,7#hash_5d1d7585c39b1b15,7#hash_14e32bf4f4789fbf,7#,#friendly_fire,#,#,#,#,#,#,#,#
-10,#,7#,7#,7#,#defend_area,#hash_6e21d05e4d40b57a,#hash_5e2686030984da5d,#hash_3a6ddc441fd92406,#zone_cargo,#,#,#,#
+10,#,7#,7#,7#,#defend_area,#s_destination_cargo_hold,#hash_5e2686030984da5d,#hash_3a6ddc441fd92406,#zone_cargo,#,#,#,#
 10,#,7#,7#,7#,#hash_6c768f3c15d55377,#perk_drunk,#,#,#,#,#,#,#
-10,#,7#,7#,7#,#give_reward,#hash_20e770cec441c9f2,#hash_59f3691e270c0200,#hash_40772c55aaa62bd0,#hash_2f238d964d0b6267,#,#,#,#
+10,#,7#,7#,7#,#give_reward,#fastest_time_to_round_10,#hash_59f3691e270c0200,#hash_40772c55aaa62bd0,#hash_2f238d964d0b6267,#,#,#,#
 11,#door_man,7#hash_7e639eaeecc873fe,7#hash_230598ae0d4fd24e,7#,#open_all_doors,#60,#,#,#,#,#,#,#
 12,#crawling_with_zombies,7#hash_2823448d77d3b887,7#hash_2673809df8c33919,7#,#crawlers_only,#,#,#,#,#,#,#,#
 12,#,7#,7#,7#,#sprinters_only,#,#,#,#,#,#,#,#
 12,#,7#,7#,7#,#hash_64d77357e69aee75,#prone,#,#,#,#,#,#,#
-13,#hash_4618bdd6ab5de60c,7#hash_2110391e7e7586d0,7#hash_7ee2f55273bf91f8,7#,#acquire_weapon,#hash_74285cd06483f6da,#,#,#,#,#,#,#
+13,#hash_4618bdd6ab5de60c,7#hash_2110391e7e7586d0,7#hash_7ee2f55273bf91f8,7#,#acquire_weapon,#re_upgraded_weapon,#,#,#,#,#,#,#
 13,#,7#,7#,7#,#hash_5124770c13a75bab,#points,#50,#,#,#,#,#,#
 14,#perk_allergy,7#hash_241f9cad1edf2fb9,7#hash_5585afd07d9abe93,7#,#disable_perks,#,#,#,#,#,#,#,#
 14,#,7#,7#,7#,#disable_bgbs,#,#,#,#,#,#,#,#
@@ -47,7 +47,7 @@
 20,#engine_room_rumble,7#hash_5ff4184a20005456,7#hash_3367be9cb3de4426,7#,#defend_area,#s_destination_engine_room,#hash_4101f1034b6bb306,#hash_60cb7078f7d454a5,#zone_engine,#zone_upper_engine_room,#,#,#
 20,#,7#,7#,7#,#special_enemy,#stoker,#20,#30,#hash_64096a5a5d944158,#,#,#,#
 20,#,7#,7#,7#,#hash_6c768f3c15d55377,#random_blindness,#,#,#,#,#,#,#
-20,#,7#,7#,7#,#give_reward,#hash_20e46acec43f89e9,#hash_47257c1e41559994,#hash_fd6b3df8a0ba964,#hash_70d008641f35a1f0,#,#,#,#
+20,#,7#,7#,7#,#give_reward,#fastest_time_to_round_20,#hash_47257c1e41559994,#hash_fd6b3df8a0ba964,#hash_70d008641f35a1f0,#,#,#,#
 21,#level_headed,7#hash_2045bfcb4ec0b4ad,7#hash_43062aaa02d5d217,7#,#acquire_weapon,#hero_lv3_weapon,#,#,#,#,#,#,#
 21,#,7#,7#,7#,#hash_64d77357e69aee75,#hash_6c6c8f6b349b8751,#,#,#,#,#,#,#
 21,#,7#,7#,7#,#hash_6840f605489bddc2,#hash_6c6c8f6b349b8751,#,#,#,#,#,#,#
@@ -70,7 +70,7 @@
 29,#,7#,7#,7#,#hash_322751dde777c910,#sprint,#5,#,#,#,#,#,#
 29,#,7#,7#,7#,#fast_travel_rush,#60,#,#,#,#,#,#,#
 30,#the_grand_finale,7#hash_5caca63ea5d79d4f,7#hash_190dd5ec5f5612c1,7#,#friendly_fire,#3,#,#,#,#,#,#,#
-30,#,7#,7#,7#,#defend_area,#hash_3c9744dde32b0ee,#hash_ac52d58f0973396,#hash_319a657e16bbd595,#zone_grand_stairs_a_deck,#zone_grand_stairs_b_deck,#zone_grand_stairs_c_deck,#zone_grand_stairs_d_deck,#zone_grand_stairs_bottom
+30,#,7#,7#,7#,#defend_area,#s_destination_grand_staircase,#hash_ac52d58f0973396,#hash_319a657e16bbd595,#zone_grand_stairs_a_deck,#zone_grand_stairs_b_deck,#zone_grand_stairs_c_deck,#zone_grand_stairs_d_deck,#zone_grand_stairs_bottom
 30,#,7#,7#,7#,#force_archetypes,#blight_father,#,#,#,#,#,#,#
 30,#,7#,7#,7#,#restrict_controls,#invert,#,#,#,#,#,#,#
 30,#,7#,7#,7#,#give_reward,#fastest_time_to_complete_round_30,#hash_2b5c1c69bebf4f4,#hash_18f9261a2caa7739,#hash_7de12be102824219,#hash_65a6063dd5dc5425,#1,#,#

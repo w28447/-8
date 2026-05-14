@@ -2,9 +2,9 @@
     "name": "#eq_tripwire_mp",
     "baseWeapon": "#eq_tripwire",
     "displayname": "#weapon/tripwire",
-    "weapon40": "#hash_6ab9c2aaf6bdf385",
+    "weapon40": "#eq_tripwire_anims_mp",
     "weapon70": "#eq_tripwire",
-    "streamkey": "#hash_59280d3de7ed7840",
+    "streamkey": "#eq_tripwire_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -39,8 +39,8 @@
     "projexplosionsoundplayer": "#exp_tripwire",
     "sound7d0": "#hash_a5579115a16f4fb",
     "hitsound": "#hash_644a18cd873e501d",
-    "tunables1": "#hash_5e7d21903c182e4f",
-    "tunables2": "#hash_5e7d21903c182e4f",
+    "tunables1": "#eq_tripwire_tunables_mp_pc",
+    "tunables2": "#eq_tripwire_tunables_mp_pc",
     "cacWeaponXCam": "#hash_4c52178dd6886a99",
     "sharedWeaponSounds": "#equipment",
     "statusEffects": [
@@ -84,7 +84,7 @@
     "#hash_96850284": "#jammer_tripwire",
     "#hash_26f68e75": "#icepick_tripwire",
     "normalImpactFX": "#hash_3d863221d143a54e",
-    "bounceImpactFX": "#hash_65f5dfacee65c150",
+    "bounceImpactFX": "#tripwire_bounce",
     "normalImpactSounds": "#hash_e8e0a97bbbf0b555",
     "bounceImpactSounds": "#gel_bounce"
 }

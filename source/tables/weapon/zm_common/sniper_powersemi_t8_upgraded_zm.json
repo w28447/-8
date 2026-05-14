@@ -4,7 +4,7 @@
     "displayname": "#zmweapon/sniper_powersemi_t8_upgraded",
     "xhash_60": "#hash_4c7da8ad0822113c",
     "weapon70": "#sniper_powersemi_t8",
-    "streamkey": "#hash_4ee8e4b10aa98a76",
+    "streamkey": "#sniper_powersemi_t8_upgraded_soundbank",
     "scrstr_8c8": [
         "tag_sights_off",
         "tag_clan_tag",
@@ -67,7 +67,7 @@
     "sound210": "#hash_3f969a2cbe6bf119",
     "sound240": "#hash_474a10cd847c7803",
     "sound250": "#hash_146e19cd67fe19de",
-    "sound260": "#hash_515f54aa1f553686",
+    "sound260": "#prj_crack_supersonic",
     "sound310": "#hash_553957b278d8e879",
     "sound5e0": "#fly_scope_zoom",
     "sound600": "#hash_5c9addf2686f77e2",

@@ -22,7 +22,7 @@ function autoexec __init__system__()
 // Size: 0x44
 function __main__()
 {
-    if ( getdvarint( #"hash_6360671422e5591a", 1 ) )
+    if ( getdvarint( #"scr_mp_zombie_museum_teleporter", 1 ) )
     {
         level thread teleporters_init();
     }

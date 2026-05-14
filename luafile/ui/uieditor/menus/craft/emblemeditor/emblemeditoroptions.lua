@@ -178,7 +178,7 @@ LUI.createMenu.EmblemEditorOptions = function ( f1_arg0, f1_arg1 )
 	
 	local Title = LUI.UIText.new( 0, 0, 1313.5, 1842.5, 0, 0, 32, 77 )
 	Title:setRGB( ColorSet.T8__BEIGE__HEADER.r, ColorSet.T8__BEIGE__HEADER.g, ColorSet.T8__BEIGE__HEADER.b )
-	Title:setText( Engine[0xF9F1239CFD921FE]( 0x2FA47140D97F89D ) )
+	Title:setText( Engine[0xF9F1239CFD921FE]( "menu/options_caps" ) )
 	Title:setTTF( "ttmussels_demibold" )
 	Title:setLetterSpacing( 4 )
 	Title:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

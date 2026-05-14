@@ -193,10 +193,10 @@ function registerbehaviorscriptfunctions()
     behaviortreenetworkutility::registerbehaviortreescriptapi( #"hash_25c4de2eb81f27cb", &function_a2d1d120 );
     assert( isscriptfunctionptr( &function_b7fe306e ) );
     behaviortreenetworkutility::registerbehaviortreescriptapi( #"hash_389c07d3893e660", &function_b7fe306e );
-    assert( isscriptfunctionptr( &function_36903815 ) );
-    behaviortreenetworkutility::registerbehaviortreescriptapi( #"hash_1607f20e814fb19b", &function_36903815 );
-    assert( isscriptfunctionptr( &function_f01e64d6 ) );
-    behaviortreenetworkutility::registerbehaviortreescriptapi( #"hash_173e1c9378200965", &function_f01e64d6 );
+    assert( isscriptfunctionptr( &stokerrangedattackintroanim ) );
+    behaviortreenetworkutility::registerbehaviortreescriptapi( #"stokerrangedattackintroanim", &stokerrangedattackintroanim );
+    assert( isscriptfunctionptr( &stokerrangedattackanim ) );
+    behaviortreenetworkutility::registerbehaviortreescriptapi( #"stokerrangedattackanim", &stokerrangedattackanim );
     assert( isscriptfunctionptr( &function_dee90338 ) );
     behaviortreenetworkutility::registerbehaviortreescriptapi( #"hash_3e875851311be4e8", &function_dee90338 );
     assert( isscriptfunctionptr( &function_b6e7676d ) );
@@ -758,7 +758,7 @@ function private function_b7fe306e( entity )
 // Params 1, eflags: 0x4
 // Checksum 0x7958b20e, Offset: 0x2dc0
 // Size: 0x2c
-function private function_f01e64d6( entity )
+function private stokerrangedattackanim( entity )
 {
     /#
         function_752a64b8( "<dev string:x124>" );
@@ -769,7 +769,7 @@ function private function_f01e64d6( entity )
 // Params 1, eflags: 0x4
 // Checksum 0xcb959c9d, Offset: 0x2df8
 // Size: 0x4c
-function private function_36903815( entity )
+function private stokerrangedattackintroanim( entity )
 {
     /#
         function_752a64b8( "<dev string:x13f>" );
@@ -965,7 +965,7 @@ function private function_5878b360( entity )
         return false;
     }
     
-    return distancesquared( entity.origin, entity.enemy.origin ) <= entity ai::function_9139c839().var_2512cf3b * entity ai::function_9139c839().var_2512cf3b;
+    return distancesquared( entity.origin, entity.enemy.origin ) <= entity ai::function_9139c839().stokerrangedattackmaxdist * entity ai::function_9139c839().stokerrangedattackmaxdist;
 }
 
 // Namespace zm_ai_stoker/zm_ai_stoker
@@ -1421,7 +1421,7 @@ function function_b381320( var_dbce0c44 )
     }
     else
     {
-        var_1797c23a = 1 + max( 0, floor( ( level.round_number - zombie_utility::get_zombie_var( #"hash_3b4ad7449c039d1b" ) ) / 3 ) );
+        var_1797c23a = 1 + max( 0, floor( ( level.round_number - zombie_utility::get_zombie_var( #"stoker_start_round" ) ) / 3 ) );
     }
     
     var_2506688 = var_1797c23a < 8 ? max( var_1797c23a - 3, 0 ) : var_1797c23a * 0.75;

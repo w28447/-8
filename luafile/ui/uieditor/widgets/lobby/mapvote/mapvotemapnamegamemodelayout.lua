@@ -10,7 +10,7 @@ CoD.MapVoteMapNameGameModeLayout.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local MapName = LUI.UIText.new( 0, 0, 19, 248, 0, 0, 2, 23 )
 	MapName:setRGB( 0.14, 0.14, 0.14 )
-	MapName:setText( Engine[0xF9F1239CFD921FE]( 0xE3B3C10A2A0E949 ) )
+	MapName:setText( Engine[0xF9F1239CFD921FE]( "mpui/offshore" ) )
 	MapName:setTTF( "ttmussels_demibold" )
 	MapName:setLetterSpacing( 4 )
 	MapName:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

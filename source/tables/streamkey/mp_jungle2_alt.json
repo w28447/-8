@@ -1,7 +1,7 @@
 {
     "keys": [
         {
-            "name": "#hash_40050a233bdf9a1f",
+            "name": "#mp_jungle2_alt_all_stream",
             "xPakEntry": {
                 "key": "#hash_ee0d31e567397d7b",
                 "offset": 0,
@@ -20,7 +20,7 @@
             "keyFlags": 3
         },
         {
-            "name": "#hash_7f6e94e3cb6380b6",
+            "name": "#mp_jungle2_alt_all_loaded",
             "xPakEntry": {
                 "key": "#hash_f5042429488bb18b",
                 "offset": 0,
@@ -229,7 +229,7 @@
             "keyFlags": 0
         },
         {
-            "name": "#hash_3a8bfb0049ead15b",
+            "name": "#mp_jungle2_alt_sst_0_0",
             "xPakEntry": {
                 "key": "#hash_f611f8a0406e3883",
                 "offset": 0,

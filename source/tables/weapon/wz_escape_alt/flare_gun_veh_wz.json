@@ -1,8 +1,8 @@
 {
     "name": "#flare_gun_veh_wz",
     "baseWeapon": "#flare_gun_veh",
-    "displayname": "#hash_1baf554773e559a1",
-    "streamkey": "#hash_219ce7451151d0b4",
+    "displayname": "#weapon/flare_gun_veh_wz",
+    "streamkey": "#flare_gun_veh_soundbank",
     "scrstr_8c8": [
         "tag_equipment_hero"
     ],

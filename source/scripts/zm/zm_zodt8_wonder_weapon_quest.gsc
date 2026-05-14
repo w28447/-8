@@ -46,7 +46,7 @@ function init()
         zm_sq::register( #"hash_1222a3e832bad772", #"hash_6cc4f52e0ed36f92", #"hash_13b313981d67dc94", &step_2_setup, &step_2_cleanup );
         zm_sq::register( #"hash_1222a3e832bad772", #"hash_575b4d3faca8bf2e", #"hash_13b314981d67de47", &step_3_setup, &step_3_cleanup );
         zm_sq::register( #"hash_1222a3e832bad772", #"hash_1d89a5560669ab60", #"hash_13b311981d67d92e", &step_4_setup, &step_4_cleanup );
-        level flag::init( #"hash_1562cc6d96b2bc4" );
+        level flag::init( #"stoker_key_obtained" );
         level flag::init( #"hash_635fa9d7a8be6607" );
         level flag::init( #"hash_2889330d50a4cc38" );
         level flag::init( #"hash_35ab49975b4cc894" );
@@ -66,7 +66,7 @@ function init()
         
         if ( isdefined( w_blueprint ) )
         {
-            w_blueprint.component01.var_62a98b13 = #"hash_4223e614aaaeb5be";
+            w_blueprint.component01.var_62a98b13 = #"onion_swan";
             w_blueprint.component02.var_62a98b13 = #"condenser_coil";
             w_blueprint.component03.var_62a98b13 = #"hash_d2d731e2804301b";
             w_blueprint.component01.var_25bb96cc = #"hash_604432f9a80a26e3";
@@ -133,7 +133,7 @@ function private step_1_setup( var_a276c861 )
     if ( !var_a276c861 )
     {
         callback::on_ai_spawned( &function_f7b0a02a );
-        level waittill( #"hash_1562cc6d96b2bc4" );
+        level waittill( #"stoker_key_obtained" );
     }
 }
 
@@ -155,13 +155,13 @@ function private step_1_cleanup( var_a276c861, var_19e802fa )
                 level.var_85a8dbba delete();
             }
             
-            level flag::set( #"hash_1562cc6d96b2bc4" );
+            level flag::set( #"stoker_key_obtained" );
         }
         
         return;
     }
     
-    level flag::set( #"hash_1562cc6d96b2bc4" );
+    level flag::set( #"stoker_key_obtained" );
 }
 
 // Namespace zodt8_wonder_weapon_quest/zm_zodt8_wonder_weapon_quest
@@ -170,7 +170,7 @@ function private step_1_cleanup( var_a276c861, var_19e802fa )
 // Size: 0x29c
 function private function_f7b0a02a()
 {
-    level endon( #"hash_1562cc6d96b2bc4", #"end_game" );
+    level endon( #"stoker_key_obtained", #"end_game" );
     
     if ( self.archetype == #"stoker" )
     {
@@ -210,7 +210,7 @@ function private function_f7b0a02a()
 // Size: 0x144
 function private function_a20e6e5d()
 {
-    level endon( #"hash_503e8bfd27a38f08", #"hash_1562cc6d96b2bc4", #"end_game" );
+    level endon( #"hash_503e8bfd27a38f08", #"stoker_key_obtained", #"end_game" );
     waitresult = level.var_85a8dbba waittill( #"trigger" );
     player = waitresult.activator;
     
@@ -222,7 +222,7 @@ function private function_a20e6e5d()
     
     level.var_85a8dbba delete();
     level.var_86d6efbf delete();
-    level flag::set( #"hash_1562cc6d96b2bc4" );
+    level flag::set( #"stoker_key_obtained" );
 }
 
 // Namespace zodt8_wonder_weapon_quest/zm_zodt8_wonder_weapon_quest
@@ -231,7 +231,7 @@ function private function_a20e6e5d()
 // Size: 0x120
 function private function_ca409b53()
 {
-    level endon( #"hash_1562cc6d96b2bc4", #"hash_1562cc6d96b2bc4", #"end_game" );
+    level endon( #"stoker_key_obtained", #"stoker_key_obtained", #"end_game" );
     level.var_86d6efbf rotate( ( 0, 360, 0 ) );
     wait 15;
     level.var_86d6efbf zm_powerups::hide_and_show( &ghost, &show );
@@ -568,7 +568,7 @@ function private function_10d4ff8d( e_player )
     {
         self setvisibletoplayer( e_player );
         self setcursorhint( "HINT_WEAPON", level.w_tricannon_base );
-        self sethintstring( #"hash_6a4c5538a960189d" );
+        self sethintstring( #"zombie/trade_weapon_fill" );
         return 1;
     }
     

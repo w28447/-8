@@ -1353,7 +1353,7 @@ function tutorial_init( weapon )
 // Params 6
 // Checksum 0xa7346c82, Offset: 0x3a60
 // Size: 0x388
-function tutorial_hints( slot, weapon, var_8430d11b, var_6c65cb8d, var_eadf8864, var_be7c29a3 )
+function tutorial_hints( slot, weapon, hint_equip, var_6c65cb8d, var_eadf8864, var_be7c29a3 )
 {
     self notify( "equip_tutorial_text_" + weapon.name );
     self endon( #"disconnect", #"death", "equip_tutorial_text_" + weapon.name );
@@ -1415,10 +1415,10 @@ function tutorial_hints( slot, weapon, var_8430d11b, var_6c65cb8d, var_eadf8864,
         if ( !self tutorial_timer( weapon, "recentlyEquipText" ) && isdefined( var_6c65cb8d ) && isdefined( var_be7c29a3 ) && self [[ var_be7c29a3 ]]( slot, weapon ) )
         {
             self tutorial_timer( weapon, "recentlyEquipText", 60 );
-            self thread [[ var_6c65cb8d ]]( var_8430d11b, 0, "hide_gadget_equip_hint", 7 );
+            self thread [[ var_6c65cb8d ]]( hint_equip, 0, "hide_gadget_equip_hint", 7 );
             
             /#
-                self function_374c4352( var_8430d11b );
+                self function_374c4352( hint_equip );
             #/
         }
         
@@ -2028,7 +2028,7 @@ function function_fc4dc54( var_6fcde3b6 = 0 )
                 case #"ability_power_f":
                     abilities_devgui_handle_player_command( cmd, &function_3db3dc4f, arg );
                     break;
-                case #"hash_5b8a32e219f9ae64":
+                case #"equipment_power_f":
                     abilities_devgui_handle_player_command( cmd, &function_626f2cd1, arg );
                     break;
                 case #"hash_2d2f6f2bb98a38b3":
@@ -2037,7 +2037,7 @@ function function_fc4dc54( var_6fcde3b6 = 0 )
                 case #"hash_5ddbad8870b98e93":
                     abilities_devgui_handle_player_command( cmd, &function_ce4e80a7, arg );
                     break;
-                case #"hash_5515835378aa90c8":
+                case #"give_special_offhand_slot":
                     abilities_devgui_handle_player_command( cmd, &function_4f50aea3, arg );
                     break;
                 case #"hash_67d528f29bfc7c97":

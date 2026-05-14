@@ -17,7 +17,7 @@ CoD[0xC92A2CB5341FC62].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.background = background
 	
 	local Robber = LUI.UIImage.new( 0, 0, 219, 947, 0, 0, -32, 232 )
-	Robber:setImage( RegisterImage( 0xE8B98C48D9B8956 ) )
+	Robber:setImage( RegisterImage( "uie_ui_menu_callingcards_robbery_hero" ) )
 	self:addElement( Robber )
 	self.Robber = Robber
 	

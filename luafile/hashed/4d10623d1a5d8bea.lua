@@ -100,7 +100,7 @@ Lobby.Stats.OnWarzoneMatchStart = function ( f9_arg0 )
 			local f9_local3 = Engine.GetPlayerStats( f9_local0, Engine[0x8E494FC6037B54]() )
 			if f9_local3 then
 				f9_local3[0x6BFF22CED3C153C][0x792C1F90C3A5C7F]:set( Engine[0x69811927938FCD7]() )
-				f9_local3[0x6BFF22CED3C153C][0xDF5E6BB54765F4C]:set( Engine[0x40145EEB2E913D2]( f9_local0, Engine.GetClientNum( f9_local0 ) ) )
+				f9_local3[0x6BFF22CED3C153C]["characterindex"]:set( Engine[0x40145EEB2E913D2]( f9_local0, Engine.GetClientNum( f9_local0 ) ) )
 			end
 		end
 	end
@@ -146,11 +146,11 @@ Lobby.Stats.OnUILoad = function ( f10_arg0 )
 						f10_local13( 0xE4E1EB9512BA7B5, f10_local16 )
 					end
 					f10_local11[0x10E63FBE7F624F5]:set( 0 )
-					f10_local11[0x3F9FA1A7D1C1E8F]:set( f10_local14( 0x3BF15114F02AF7B ) )
+					f10_local11[0x3F9FA1A7D1C1E8F]:set( f10_local14( "time_played_total" ) )
 					f10_local11[0x80C2F604F99D74B]:set( f10_local14( 0x80C2F604F99D74B ) )
 					f10_local11[0x6ED920648D707FA]:set( f10_local14( 0x6ED920648D707FA ) )
 					f10_local11[0xEE08D8D2973448]:set( f10_local5[0xEE08D8D2973448]:get() )
-					f10_local11[0x95906BC03912AC4]:set( f10_local5[0x95906BC03912AC4]:get() )
+					f10_local11["placement_team"]:set( f10_local5["placement_team"]:get() )
 					f10_local11[0xD0CFE94310960B1]:set( 1 )
 					Engine.StorageWrite( f10_local0, Enum.StorageFileType[0xAB0E693244221BC] )
 				end
@@ -258,7 +258,7 @@ Lobby.Stats.ValidateCharacterOutfits = function ( f22_arg0, f22_arg1 )
 				f22_local3( f22_local4.outfits, f22_local19[0xF7F78E9EBEFCE27] )
 				f22_local3( f22_local4.outfits, f22_local19[0xD9FCEAC8FF24CBD] )
 				for f22_local13, f22_local14 in ipairs( f22_local4.outfits ) do
-					local f22_local15 = f22_local19[0xE5C77948998E49][f22_local13 - 1]
+					local f22_local15 = f22_local19["selectedoutfititems"][f22_local13 - 1]
 					if f22_local15 then
 						for f22_local11, f22_local12 in ipairs( CoDLoadoutsShared.characterCustomizationRegions ) do
 							f22_local3( f22_local14[f22_local12.name], f22_local15[0x12BCDFA518CC913][f22_local12.stat] )
@@ -288,7 +288,7 @@ Lobby.Stats.FixupCAC = function ( f24_arg0, f24_arg1 )
 				local f25_local4 = Engine[0x9F0BB7D52A7A978]( f25_local3 )
 				local f25_local5 = false
 				for f25_local9, f25_local10 in ipairs( f25_local4 ) do
-					if f25_local10[0x3CF8E8F9081468B] == f25_local2 then
+					if f25_local10["index"] == f25_local2 then
 						f25_local5 = true
 						break
 					end
@@ -355,7 +355,7 @@ Lobby.Stats.OnMPLoadoutsDownloaded = function ( f26_arg0, f26_arg1, f26_arg2 )
 					if f26_local3[0x147738D5CEE9199] and f26_local3[0x147738D5CEE9199][f26_local12] and f26_local3[0x147738D5CEE9199][f26_local12][0xCF85C301A206997] then
 						f26_local3[0x147738D5CEE9199][f26_local12][0xCF85C301A206997][0][0x3930AAFA5D6AC7B][0]:set( 1 )
 						for f26_local19, f26_local20 in DDLUtils.ipairs( f26_local3[0x147738D5CEE9199][f26_local12][0xCF85C301A206997] ) do
-							for f26_local16, f26_local17 in DDLUtils.pairs( f26_local20[0xC519DA7A1F958C5] ) do
+							for f26_local16, f26_local17 in DDLUtils.pairs( f26_local20["parts"] ) do
 								f26_local17[0xD834AEE4BD18D13][0]:set( 1 )
 							end
 						end
@@ -473,25 +473,25 @@ Lobby.Stats.UpdateWZStatsCheck = function ( f34_arg0 )
 	local f34_local1 = f34_local0[0x426CDF8D9F44EB8]
 	if f34_local1 ~= nil and f34_local1:get() == 0 then
 		local f34_local2 = {
-			[0xC229A4571E9BFA] = Engine.GetXUID64( f34_arg0.controller ),
-			[0x8928A12A20A9D67] = f34_local0[0xD59E8BFAC78A33B][0x8928A12A20A9D67][0x3BF77799B56C06C]:get(),
-			[0x39537506D3C46] = f34_local0[0xD59E8BFAC78A33B][0x39537506D3C46][0x3BF77799B56C06C]:get(),
-			[0xDA76FCF32C2EE79] = f34_local0[0xD59E8BFAC78A33B][0xDA76FCF32C2EE79][0x3BF77799B56C06C]:get(),
-			[0xC5941725865AE68] = f34_local0[0xD59E8BFAC78A33B][0xC5941725865AE68][0x3BF77799B56C06C]:get(),
-			[0x8FEDB9313539419] = f34_local0[0xD59E8BFAC78A33B][0x8FEDB9313539419][0x3BF77799B56C06C]:get()
+			["user_id"] = Engine.GetXUID64( f34_arg0.controller ),
+			["rankxp"] = f34_local0[0xD59E8BFAC78A33B]["rankxp"]["statvalue"]:get(),
+			[0x39537506D3C46] = f34_local0[0xD59E8BFAC78A33B][0x39537506D3C46]["statvalue"]:get(),
+			[0xDA76FCF32C2EE79] = f34_local0[0xD59E8BFAC78A33B][0xDA76FCF32C2EE79]["statvalue"]:get(),
+			[0xC5941725865AE68] = f34_local0[0xD59E8BFAC78A33B][0xC5941725865AE68]["statvalue"]:get(),
+			[0x8FEDB9313539419] = f34_local0[0xD59E8BFAC78A33B][0x8FEDB9313539419]["statvalue"]:get()
 		}
 		local f34_local3 = function ( f35_arg0 )
 			for f35_local3, f35_local4 in pairs( {
-				0x8928A12A20A9D67,
+				"rankxp",
 				0x39537506D3C46,
 				0xDA76FCF32C2EE79,
 				0xC5941725865AE68,
 				0x8FEDB9313539419,
 				0x7803B7AF4E9C3B9,
 				0xA9FE1A4C26B89D9,
-				0x182B762B7BAD117
+				"minxp"
 			} ) do
-				f35_arg0[f35_local4][0x3BF77799B56C06C]:set( f35_arg0[f35_local4][0x3BF77799B56C06C]:get() * 10 )
+				f35_arg0[f35_local4]["statvalue"]:set( f35_arg0[f35_local4]["statvalue"]:get() * 10 )
 			end
 		end
 		
@@ -554,7 +554,7 @@ Lobby.Stats.ValidateWZCharacterSelection = function ( f36_arg0 )
 	
 	local f36_local9 = Engine.StorageGetBuffer( f36_arg0, Enum.StorageFileType[0xDF87425733853AE] )
 	if f36_local9 then
-		local f36_local10 = f36_local9[0x766CE60E25569A3][0x8A76647E94009C3][0xDF5E6BB54765F4C]
+		local f36_local10 = f36_local9[0x766CE60E25569A3][0x8A76647E94009C3]["characterindex"]
 		local f36_local11 = f36_local9[0x766CE60E25569A3][0xA8BD5071BCB463C]
 		if not f36_local3( f36_local10 ) then
 			f36_local10:set( f36_local2 )
@@ -566,11 +566,11 @@ Lobby.Stats.ValidateWZCharacterSelection = function ( f36_arg0 )
 			f36_local9[0x766CE60E25569A3][0xF48E22CED35E56D][f36_local16]:set( 1 )
 		end
 		for f36_local15, f36_local16 in DDLUtils.ipairs( f36_local9[0xD8B36A24FC2E466] ) do
-			if f36_local16[0xFAC82D8B8152CBE] and f36_local16[0xFAC82D8B8152CBE]:get() ~= Enum.CustomizationPaintjobInvalidID[0x60CAA8D66ED63A5] then
-				f36_local16[0xFAC82D8B8152CBE]:set( Enum.CustomizationPaintjobInvalidID[0x60CAA8D66ED63A5] )
+			if f36_local16["paintjobslot"] and f36_local16["paintjobslot"]:get() ~= Enum.CustomizationPaintjobInvalidID[0x60CAA8D66ED63A5] then
+				f36_local16["paintjobslot"]:set( Enum.CustomizationPaintjobInvalidID[0x60CAA8D66ED63A5] )
 			end
-			if f36_local16[0xBD5E7FE64A21BCC] and f36_local16[0xBD5E7FE64A21BCC]:get() ~= 0 and not f36_local7( f36_local16[0xBD5E7FE64A21BCC]:get() ) then
-				f36_local16[0xBD5E7FE64A21BCC]:set( 0 )
+			if f36_local16["charmindex"] and f36_local16["charmindex"]:get() ~= 0 and not f36_local7( f36_local16["charmindex"]:get() ) then
+				f36_local16["charmindex"]:set( 0 )
 			end
 			if f36_local16[0xE86D585FF221CC1] and f36_local16[0xE86D585FF221CC1]:get() ~= 0 and not f36_local8( f36_local16[0xE86D585FF221CC1]:get() ) then
 				f36_local16[0xE86D585FF221CC1]:set( 0 )
@@ -602,8 +602,8 @@ Lobby.Stats.ValidateZMWeaponArmory = function ( f41_arg0 )
 	end
 	
 	local f41_local3 = function ( f43_arg0 )
-		if f43_arg0[0xBD5E7FE64A21BCC] and f43_arg0[0xBD5E7FE64A21BCC]:get() ~= 0 and not f41_local2( f43_arg0[0xBD5E7FE64A21BCC]:get(), f41_local0 ) then
-			f43_arg0[0xBD5E7FE64A21BCC]:set( 0 )
+		if f43_arg0["charmindex"] and f43_arg0["charmindex"]:get() ~= 0 and not f41_local2( f43_arg0["charmindex"]:get(), f41_local0 ) then
+			f43_arg0["charmindex"]:set( 0 )
 		end
 		if f43_arg0[0xE86D585FF221CC1] and f43_arg0[0xE86D585FF221CC1]:get() ~= 0 and not f41_local2( f43_arg0[0xE86D585FF221CC1]:get(), f41_local1 ) then
 			f43_arg0[0xE86D585FF221CC1]:set( 0 )
@@ -720,7 +720,7 @@ Lobby.Stats.OnProfileCommonStatsDownloaded = function ( f45_arg0 )
 			f46_local2 = 0
 		end
 		
-		for f45_local9, f45_local10 in DDLUtils.ipairs( f45_local0[0xD17B4E10FA9C28C] ) do
+		for f45_local9, f45_local10 in DDLUtils.ipairs( f45_local0["mpcharacters"] ) do
 			f45_local5( f45_local10, f45_local9, false )
 		end
 		f45_local6 = Engine[0x1657A284F55F9CD]( Enum.eModes[0xBF1DCC8138A9D39] )
@@ -762,7 +762,7 @@ Lobby.Stats.OnProfileCommonStatsDownloaded = function ( f45_arg0 )
 			end
 		end
 		
-		f45_local6( Enum.eModes[0x83EBA96F36BC4E5], f45_local0[0xD17B4E10FA9C28C] )
+		f45_local6( Enum.eModes[0x83EBA96F36BC4E5], f45_local0["mpcharacters"] )
 		f45_local6( Enum.eModes[0xBF1DCC8138A9D39], f45_local0[0x45B0C69A09ED208] )
 	end
 	if f45_local1 then
@@ -828,7 +828,7 @@ function ResetLoadoutsForMode( f53_arg0, f53_arg1 )
 			local f54_local1 = f54_local0.cacLoadouts
 			if f54_local1 then
 				local f54_local2 = Enum.eModes[0x3723205FAE52C4A]
-				local f54_local3 = Engine[0xE00B2F29271C60B]( 0x9EEE28789FE067A )
+				local f54_local3 = Engine[0xE00B2F29271C60B]( "zm_default_loadouts" )
 				for f54_local4 = 0, #f54_local1 - 1, 1 do
 					local f54_local7 = f54_local1[f54_local4]
 					for f54_local8 = 1, #f54_local7.customclass, 1 do
@@ -864,7 +864,7 @@ Lobby.Stats.OnPostPrestige = function ( f56_arg0 )
 		Engine[0x39A49F8F53E0E89]()
 		local f56_local2 = Engine.GetPlayerStats( f56_local0, Enum[0x303F77CADBF82AB][0xF27E237306A62E0], f56_local1 )
 		if f56_local2 then
-			local f56_local3 = f56_local2[0xD59E8BFAC78A33B][0x1E79BD3853D120F][0x3BF77799B56C06C]:get()
+			local f56_local3 = f56_local2[0xD59E8BFAC78A33B][0x1E79BD3853D120F]["statvalue"]:get()
 			for f56_local7, f56_local8 in ipairs( Engine.GetHeroList( f56_local1 ) ) do
 				local f56_local9 = Engine[0xB678B832BC9DC0]( f56_local1, f56_local8.bodyIndex )
 				if f56_local9 and f56_local9[0x8E63886F9B0BAB] == 1 then

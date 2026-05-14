@@ -372,7 +372,7 @@ function function_a4c8ce2a( data )
         }
     }
     
-    var_67d27328 = player stats::get_stat( #"arenastats", 2, #"leagueplaystats", #"hash_36cd820c1ff6c16b" );
+    var_67d27328 = player stats::get_stat( #"arenastats", 2, #"leagueplaystats", #"aarsubdivisionpoints" );
     
     if ( var_67d27328 > 0 )
     {
@@ -390,7 +390,7 @@ function function_a4c8ce2a( data )
 function contract_win( winner )
 {
     winner increment_cwl_contract( #"contract_wl_win_games" );
-    winner increment_cwl_contract( #"hash_2809e14b0f3b4c5e" );
+    winner increment_cwl_contract( #"contract_wl_win_games_hard" );
     var_15b1abd9 = winner stats::get_stat_global( #"hash_a06075423336d9c" );
     
     if ( var_15b1abd9 > 0 )

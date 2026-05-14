@@ -5,7 +5,7 @@
     "xhash_60": "#hash_38d45a247fe1bcfb",
     "weapon70": "#special_ballisticknife_t8_dw",
     "dualwieldWeaponName": "#special_ballisticknife_t8_lh_upgraded_zm",
-    "streamkey": "#hash_557511b3e7c000dd",
+    "streamkey": "#special_ballisticknife_t8_dw_upgraded_soundbank",
     "scrstr_8c8": [
         "tag_camo_darkmatter",
         "tag_camo_diamond"
@@ -37,7 +37,7 @@
     "#hash_2cf49821": true,
     "#hash_d2751f9d": false,
     "#hash_554be9f7": false,
-    "sound90": "#hash_216f906579fc3e07",
+    "sound90": "#wpn_hatchet_projectile_lp",
     "firesound": "#hash_583d4dce85ea8a0d",
     "firesoundplayer": "#hash_3c75e1a12a3f8143",
     "sound240": "#hash_5993e31af4dd53ec",

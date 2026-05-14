@@ -1,8 +1,8 @@
 {
     "name": "#hash_3271758694bac379",
     "type": "#gesture",
-    "gesture": "#hash_624b211304edd177",
-    "gesture2": "#hash_11aa992272feb040",
+    "gesture": "#boast_linedancing",
+    "gesture2": "#boast_linedancing_fem",
     "bundle": {
         "type": "#gesture",
         "title": "localized18#emotes/barn_burner",

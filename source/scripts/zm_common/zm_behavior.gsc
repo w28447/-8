@@ -289,8 +289,8 @@ function private initzmbehaviorsandasm()
     behaviortreenetworkutility::registerbehaviortreescriptapi( #"zombiegrappleactionstart", &zombiegrappleactionstart );
     assert( isscriptfunctionptr( &zombieknockdownactionstart ) );
     behaviortreenetworkutility::registerbehaviortreescriptapi( #"zombieknockdownactionstart", &zombieknockdownactionstart );
-    assert( isscriptfunctionptr( &function_c8939973 ) );
-    behaviortreenetworkutility::registerbehaviortreescriptapi( #"hash_a6273a84b4237ce", &function_c8939973 );
+    assert( isscriptfunctionptr( &zombieknockdownactionterminate ) );
+    behaviortreenetworkutility::registerbehaviortreescriptapi( #"zombieknockdownactionterminate", &zombieknockdownactionterminate );
     assert( isscriptfunctionptr( &zombiegetupactionterminate ) );
     behaviortreenetworkutility::registerbehaviortreescriptapi( #"zombiegetupactionterminate", &zombiegetupactionterminate );
     assert( isscriptfunctionptr( &zombiepushedactionstart ) );
@@ -1312,7 +1312,7 @@ function zombieknockdownactionstart( behaviortreeentity )
 // Params 1, eflags: 0x4
 // Checksum 0xb7357207, Offset: 0x5398
 // Size: 0x54
-function private function_c8939973( behaviortreeentity )
+function private zombieknockdownactionterminate( behaviortreeentity )
 {
     if ( isdefined( behaviortreeentity.missinglegs ) && behaviortreeentity.missinglegs )
     {
@@ -2297,7 +2297,7 @@ function notetrackboardmelee( animationentity )
                 
                 if ( playertriggerdistsq < triggerdistsq && heightdiff * heightdiff < triggerdistsq )
                 {
-                    animationentity.player_targets[ i ] playsoundtoplayer( #"hash_75318bcffca7ff06", animationentity.player_targets[ i ] );
+                    animationentity.player_targets[ i ] playsoundtoplayer( #"evt_player_swiped_victim", animationentity.player_targets[ i ] );
                     animationentity.player_targets[ i ] dodamage( animationentity.meleeweapon.meleedamage, animationentity.origin, self, self, "none", "MOD_MELEE" );
                     break;
                 }

@@ -63,7 +63,7 @@ class cbarricade : cdoor
         
         while ( true )
         {
-            m_e_door waittill( #"hash_7166c13e79b73f9" );
+            m_e_door waittill( #"player_opened_door" );
             
             if ( isdefined( var_a2f96f78.target ) )
             {
@@ -178,7 +178,7 @@ class cbarricade : cdoor
         if ( isdefined( m_s_bundle.var_ccc6dafc ) && m_s_bundle.var_ccc6dafc )
         {
             m_e_door setcandamage( 1 );
-            m_e_door val::set( #"hash_25bedd86747e41e1", "allowdeath", 0 );
+            m_e_door val::set( #"c_door_damage", "allowdeath", 0 );
             thread function_b4a1f06a();
         }
         

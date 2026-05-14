@@ -3,7 +3,7 @@
     "baseWeapon": "#tomahawk_t8",
     "displayname": "#zmweapon/tomahawk",
     "weapon70": "#tomahawk_t8",
-    "streamkey": "#hash_1835a0c5ed471a5a",
+    "streamkey": "#tomahawk_t8_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",

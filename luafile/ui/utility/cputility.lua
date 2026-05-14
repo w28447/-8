@@ -4,14 +4,14 @@ CoD.CPUtility.DIFFICULTY = {}
 CoD.CPUtility.DIFFICULTY[0] = 0xD7E1D993C0E7DEB
 CoD.CPUtility.DIFFICULTY[1] = 0x4124241026221C9
 CoD.CPUtility.DIFFICULTY[2] = 0xEB0FE85B0C234B0
-CoD.CPUtility.DIFFICULTY[3] = 0xFB64400A3AE1C4E
+CoD.CPUtility.DIFFICULTY[3] = "menu/veteran"
 CoD.CPUtility.DIFFICULTY[4] = 0x1A2BA986D982F
 CoD.CPUtility.DIFFICULTY_DESC = {}
 CoD.CPUtility.DIFFICULTY_DESC[0] = 0xE6EE823F2A199D7
 CoD.CPUtility.DIFFICULTY_DESC[1] = 0xDD1C9C6348D427D
 CoD.CPUtility.DIFFICULTY_DESC[2] = 0xAE85AB083535732
 CoD.CPUtility.DIFFICULTY_DESC[3] = 0x5D910F0B084B1E8
-CoD.CPUtility.DIFFICULTY_DESC[4] = 0xC562663F9E9D20F
+CoD.CPUtility.DIFFICULTY_DESC[4] = "menu/diff_heroic_desc"
 CoD.CPUtility.DIFFICULTY_ICON = {}
 CoD.CPUtility.DIFFICULTY_ICON[0] = "playlist_sp_recr"
 CoD.CPUtility.DIFFICULTY_ICON[1] = "playlist_sp_reg"
@@ -244,7 +244,7 @@ CoD.CPUtility.SetupFrontendForFaction = function ( f31_arg0, f31_arg1 )
 	local f31_local1 = f31_local0.companion:get()
 	if f31_arg1 ~= CoD.CPUtility.GetFactionFromStats( f31_local0 ) then
 		for f31_local5, f31_local6 in ipairs( CoD.PlayerRoleUtility.GetHeroList( Enum.eModes[0x60063C67132EB69] ) ) do
-			if f31_local6[0xF9152904EFC2385] ~= 0 and (not f31_local6[0x679A55C07A090C1] or f31_local6[0x679A55C07A090C1] == f31_arg1) then
+			if f31_local6["iscompanion"] ~= 0 and (not f31_local6[0x679A55C07A090C1] or f31_local6[0x679A55C07A090C1] == f31_arg1) then
 				f31_local1 = f31_local6.bodyIndex
 				break
 			end
@@ -696,7 +696,7 @@ CoD.CPUtility.SpawnDynamicCPHUDWidgets = function ( f58_arg0, f58_arg1 )
 			local f58_local8 = Engine.CreateModel( f58_local0, "bleedOutModel" .. f58_local7 )
 			local f58_local9 = Engine.CreateModel( f58_local8, "playerName" )
 			Engine.SetModelValue( f58_local9, GetClientName( f58_arg1, f58_local7 ) )
-			Engine.SetModelValue( Engine.CreateModel( f58_local8, "prompt" ), 0x48FE93EDC5208D8 )
+			Engine.SetModelValue( Engine.CreateModel( f58_local8, "prompt" ), "cpui/revive" )
 			Engine.SetModelValue( Engine.CreateModel( f58_local8, "clockPercent" ), 0 )
 			Engine.SetModelValue( Engine.CreateModel( f58_local8, "bleedOutPercent" ), 0 )
 			Engine.SetModelValue( Engine.CreateModel( f58_local8, "stateFlags" ), 0 )
@@ -762,7 +762,7 @@ CoD.CPUtility.SetupNewsroomDataWatchers = function ( f68_arg0, f68_arg1 )
 					local f69_local1 = f68_local2:create( "torch.donatorName" )
 					f69_local1:set( f69_local0[0x4BCADBA8E631B86] and Engine.Localize( f69_local0[0x4BCADBA8E631B86] ) or "" )
 					f69_local1 = f68_local2:create( "torch.donatorAmount" )
-					f69_local1:set( f69_local0[0x113FE7EA2B16969] or 0 )
+					f69_local1:set( f69_local0["amount"] or 0 )
 				end
 			end
 		end )

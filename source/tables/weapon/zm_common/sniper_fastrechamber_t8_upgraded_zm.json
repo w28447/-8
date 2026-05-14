@@ -4,7 +4,7 @@
     "displayname": "#zmweapon/sniper_fastrechamber_t8_upgraded",
     "xhash_60": "#hash_3795ead29c556c2c",
     "weapon70": "#sniper_fastrechamber_t8",
-    "streamkey": "#hash_5b372a8bc3988076",
+    "streamkey": "#sniper_fastrechamber_t8_upgraded_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -67,7 +67,7 @@
     "sound210": "#hash_3f969a2cbe6bf119",
     "sound240": "#hash_474a10cd847c7803",
     "sound250": "#hash_146e19cd67fe19de",
-    "sound260": "#hash_515f54aa1f553686",
+    "sound260": "#prj_crack_supersonic",
     "sound310": "#hash_553957b278d8e879",
     "sound5e0": "#fly_scope_zoom",
     "sound600": "#hash_5c9addf2686f77e2",
@@ -81,7 +81,7 @@
     "weaponIconXCam": "#hash_f211e9b88c267b99",
     "attachments": [
         "#hash_f459a0af8e8f912b",
-        "#hash_1847195a90eddc18"
+        "#acog_sniper_upgraded"
     ],
     "attachmentUniques": [
         "#hash_8b367929b2267b6f",

@@ -13,7 +13,7 @@ CoD.HUDUtility.GagdetHintIndex = LuaEnum.createEnum( "GADGET_HINT_INDEX_NONE", "
 CoD.HUDUtility.SpecialistWeaponHints = {
 	[CoD.HUDUtility.GagdetHintIndex.GADGET_HINT_INDEX_NONE] = 0x0,
 	[CoD.HUDUtility.GagdetHintIndex.GADGET_HINT_INDEX_BATTLESHIELD] = 0xA4B259D73C66D4A,
-	[CoD.HUDUtility.GagdetHintIndex.GADGET_HINT_INDEX_BATTLESHIELD_PRESS] = 0x898E3EB1FCC7D86,
+	[CoD.HUDUtility.GagdetHintIndex.GADGET_HINT_INDEX_BATTLESHIELD_PRESS] = "mp/battleshield_hint_press",
 	[CoD.HUDUtility.GagdetHintIndex.GADGET_HINT_INDEX_BATTLESHIELD_TOGGLE] = 0x89E067F1A8B2F83,
 	[CoD.HUDUtility.GagdetHintIndex.GADGET_HINT_INDEX_RADIATION_FIELD] = 0xB9271B74C9E78D1,
 	[CoD.HUDUtility.GagdetHintIndex.GADGET_HINT_INDEX_RADIATION_FIELD_PRESS] = 0xEDF1A87591E1A19,
@@ -596,7 +596,7 @@ CoD.HUDUtility.SetupWaypoint = function ( f33_arg0, f33_arg1, f33_arg2 )
 end
 
 CoD.HUDUtility.GetButtonPromptText = function ( f34_arg0, f34_arg1 )
-	local f34_local0 = GetObjectiveXHashProperty( 0x1BB6EE6EB270DC8, f34_arg0 )
+	local f34_local0 = GetObjectiveXHashProperty( "buttonprompttext", f34_arg0 )
 	local f34_local1
 	if f34_arg1 ~= 0 then
 		f34_local1 = GetObjectiveXHashProperty( 0xF05079AB07DE82A .. f34_arg1, f34_arg0 )
@@ -734,7 +734,7 @@ CoD.HUDUtility.Get3DWeaponHintPickupHintText = function ( f44_arg0, f44_arg1 )
 		elseif CoD.BitUtility.IsBitSet( f44_local1, CoD.HUDUtility.Weapon3DHintStateFlags.EQUIPS ) then
 			f44_local0 = 0x38B775D97E72F0C
 		elseif CoD.BitUtility.IsBitSet( f44_local1, CoD.HUDUtility.Weapon3DHintStateFlags.SWAPS ) then
-			f44_local0 = 0x25F8C30A0958A7B
+			f44_local0 = "warzone/swap"
 		else
 			f44_local0 = 0x339E923E692AD5E
 		end
@@ -760,7 +760,7 @@ CoD.HUDUtility.Get3DWeaponHintPickupHintTextWithPickUpOptions = function ( f45_a
 				f45_local0 = 0x38B775D97E72F0C
 			end
 		elseif CoD.BitUtility.IsBitSet( f45_local2, CoD.HUDUtility.Weapon3DHintStateFlags.SWAPS ) then
-			f45_local0 = 0x25F8C30A0958A7B
+			f45_local0 = "warzone/swap"
 		else
 			f45_local0 = 0x339E923E692AD5E
 		end
@@ -778,7 +778,7 @@ CoD.HUDUtility.Get3DWeaponHintAlsoPickupHintTextWithPickUpOptions = function ( f
 		elseif CoD.BitUtility.IsBitSet( f46_local2, CoD.HUDUtility.Weapon3DHintStateFlags.ALSO_ALLOW_WEAPON_ATTACHMENT_SWAP ) then
 			f46_local0 = 0x928DC6C23119D85
 		elseif CoD.BitUtility.IsBitSet( f46_local2, CoD.HUDUtility.Weapon3DHintStateFlags.ALSO_ALLOW_SWAP ) then
-			f46_local0 = 0x25F8C30A0958A7B
+			f46_local0 = "warzone/swap"
 		else
 			f46_local0 = 0x339E923E692AD5E
 		end
@@ -1870,7 +1870,7 @@ CoD.HUDUtility.GetMeansOfDeathTable = function ()
 		local f128_local1 = Engine[0xA7E3CD65E63086F]( 0x90E99B72AB53006 )
 		if f128_local1 then
 			for f128_local5, f128_local6 in ipairs( f128_local1 ) do
-				f128_local0[Enum[0x52177B239BFECC1][Engine[0xC53F8D38DF9042B]( f128_local6[0x808591917670EE3] )]] = f128_local6
+				f128_local0[Enum[0x52177B239BFECC1][Engine[0xC53F8D38DF9042B]( f128_local6["mod"] )]] = f128_local6
 			end
 		end
 		CoD.HUDUtility.MeansOfDeathTable = f128_local0
@@ -1954,7 +1954,7 @@ CoD.HUDUtility.InitLoadingImageOrMovie = function ( f131_arg0, f131_arg1 )
 	CoD.HUDUtility.InitLoadingMovie( f131_arg1 )
 	if CoD.HUDUtility.IsMovieShowing( f131_arg1 ) then
 		Engine.SetDvar( "ui_useloadingmovie", 1 )
-		if CoD.BaseUtility.GetMapValue( f131_local0, 0xDB9057B4131C76B ) == 1 then
+		if CoD.BaseUtility.GetMapValue( f131_local0, "fadetowhite" ) == 1 then
 			local f131_local2 = "$white"
 		end
 		f131_local1 = f131_local2 or "black"
@@ -2015,7 +2015,7 @@ CoD.HUDUtility.GetDidYouKnowString = function ( f134_arg0 )
 		if CoD.HUDUtility.IsGameTypeEqualToString( "warzone_hot_pursuit" ) then
 			table.insert( f134_local2, 0xEE90511FD901B40 )
 		elseif CoD.HUDUtility.IsGameTypeWzAmbush() then
-			table.insert( f134_local2, 0x6D86EE985C93E1B )
+			table.insert( f134_local2, "warzoneambush" )
 		elseif CoD.HUDUtility.IsGameTypeWzSpectre() then
 			table.insert( f134_local2, 0x3296DC50458C5D3 )
 		elseif CoD.HUDUtility.IsGameTypeWzGroundWar() then
@@ -4308,7 +4308,7 @@ CoD.HUDUtility.PrematchCountdownPostLoad = function ( f314_arg0, f314_arg1 )
 	
 	f314_arg0.setupCountdown = CoD.HUDUtility.SetupPrematchCountdown
 	f314_arg0:setState( f314_arg1, "DefaultState" )
-	local f314_local1 = Engine.GetGametypeSetting( 0x2035BC579C2A9BE ) * 1000
+	local f314_local1 = Engine.GetGametypeSetting( "prematchperiod" ) * 1000
 	local f314_local2 = Engine.CurrentGameTime()
 	local f314_local3 = 250
 	if f314_local2 < f314_local1 then
@@ -4347,7 +4347,7 @@ CoD.HUDUtility.PrematchCountdownMinimizePostLoad = function ( f324_arg0, f324_ar
 	f324_arg0:subscribeToGlobalModel( f324_arg1, "PerController", "scriptNotify", function ( model )
 		local f327_local0 = model:get()
 		if f327_local0 == 0xB0B843215635D02 then
-			f324_arg0.__startCounterTime = Engine.CurrentGameTime() + Engine.GetGametypeSetting( 0x2035BC579C2A9BE ) * 1000
+			f324_arg0.__startCounterTime = Engine.CurrentGameTime() + Engine.GetGametypeSetting( "prematchperiod" ) * 1000
 			local f327_local1 = Engine.GetModelForController( f324_arg1 )
 			f327_local1 = f327_local1:create( "PositionDraft.stage" )
 			f327_local1:set( 6 )
@@ -4637,7 +4637,7 @@ end
 
 CoD.HUDUtility.SetupArmbladeReticles = function ( f355_arg0, f355_arg1 )
 	f355_arg0:subscribeToGlobalModel( f355_arg1, "PerController", "playerAbilities.playerGadget2.id", function ( model )
-		if model and Engine.GetModelValue( model ) == 0x36FE71BB75A52D1 then
+		if model and Engine.GetModelValue( model ) == "sig_blade_mp" then
 			if not f355_arg0.armbladeReticles then
 				local f356_local0 = Engine.CreateModel( Engine.GetModelForController( f355_arg1 ), "ArmbladeReticles" )
 				f355_arg0.armbladeReticles = {}
@@ -4671,7 +4671,7 @@ end
 
 CoD.HUDUtility.SetupWZArmbladeReticles = function ( f357_arg0, f357_arg1 )
 	f357_arg0:subscribeToGlobalModel( f357_arg1, "PerController", "heldWeapons.0.equippedWeaponReference", function ( model )
-		if model and Engine.GetModelValue( model ) == 0x324DD1BB71A5659 then
+		if model and Engine.GetModelValue( model ) == "sig_blade_wz" then
 			if not f357_arg0.armbladeReticles then
 				local f358_local0 = Engine.CreateModel( Engine.GetModelForController( f357_arg1 ), "ArmbladeReticles" )
 				f357_arg0.armbladeReticles = {}
@@ -5035,16 +5035,16 @@ CoD.HUDUtility.IsCurrentViewmodelWeaponGamemodeHiddenAmmo = function ( f393_arg0
 			0x65A2EBAA201D495,
 			0x8D46D6D3C93330B,
 			0x562979F67BFEFFF,
-			0x26C5489CFFA7C30,
+			"autoturret",
 			0x2FBE0D2D902501,
-			0x5616C6730A7DCC8,
+			"dart",
 			0x2EC0918F04F7165,
 			0x5B9FCAA74732856,
 			0x82ECE2084CFFB6D
 		}
 		local f393_local1 = {
 			0xC0D17BAD169557B,
-			0xDA3712362F9CCBE
+			"killstreak_remote"
 		}
 		CoD.HUDUtility.HiddenAmmoWeapons = {}
 		local f393_local2 = string.lower( CoD.gameMode )
@@ -5285,7 +5285,7 @@ DataSources.KillcamEquipment = DataSourceHelpers.ListSetup( "KillcamEquipment", 
 				name = f418_local0.displayName,
 				icon = f418_local0.previewImage,
 				loadoutSlotIndex = f418_local0.loadoutSlotIndex,
-				sortIndex = f418_local0[0xD909934375BE707]
+				sortIndex = f418_local0["sortindex"]
 			}
 			if not f416_local2[f418_local0.loadoutSlotIndex] then
 				f416_local2[f418_local0.loadoutSlotIndex] = 1
@@ -5892,7 +5892,7 @@ DataSources.CalloutWheel = DataSourceHelpers.ListSetup( "CalloutWheel", function
 				f460_local0 = false
 			end
 			return f460_local0
-		elseif f460_arg0 == 0x218F5B8A3D9D231 then
+		elseif f460_arg0 == "ffa_gun" then
 			local f460_local0 = CoD.HUDUtility.IsGameTypeEqualToString( "dm" )
 			if not f460_local0 then
 				f460_local0 = CoD.HUDUtility.IsGameTypeEqualToString( "gun" )
@@ -5941,9 +5941,9 @@ DataSources.CalloutWheel = DataSourceHelpers.ListSetup( "CalloutWheel", function
 					end
 					local f459_local15 = 0
 					local f459_local16 = Engine[0xF9F1239CFD921FE]( f459_local24[0xA31296C0C1B6029] )
-					if f459_local10[f459_local24[0x59DF2BAFFBFC38]].team:get() == CoD.TeamUtility.GetTeamIDForController( f459_arg0 ) and f459_local24[0xCEF4564406075F8] ~= nil then
+					if f459_local10[f459_local24[0x59DF2BAFFBFC38]].team:get() == CoD.TeamUtility.GetTeamIDForController( f459_arg0 ) and f459_local24["titlealt"] ~= nil then
 						f459_local15 = 100
-						f459_local16 = Engine[0xF9F1239CFD921FE]( f459_local24[0xCEF4564406075F8] )
+						f459_local16 = Engine[0xF9F1239CFD921FE]( f459_local24["titlealt"] )
 					end
 					table.insert( f459_local0, {
 						models = {
@@ -5996,7 +5996,7 @@ DataSources.CalloutWheel = DataSourceHelpers.ListSetup( "CalloutWheel", function
 					f459_local3.inLastStand = f459_local9.hudItems.health.inLastStand
 				end
 				if f459_local9.hudItems.health.inLastStand:get() then
-					f459_local15 = Engine[0xF9F1239CFD921FE]( f459_local24[0xCEF4564406075F8] )
+					f459_local15 = Engine[0xF9F1239CFD921FE]( f459_local24["titlealt"] )
 					f459_local16 = 100
 				else
 					f459_local15 = Engine[0xF9F1239CFD921FE]( f459_local24[0xA31296C0C1B6029] )
@@ -6033,7 +6033,7 @@ end, nil, nil, function ( f462_arg0, f462_arg1, f462_arg2 )
 end )
 CoD.HUDUtility.AddCalloutWheelCallback = function ( f463_arg0, f463_arg1 )
 	f463_arg1._onChooseWedge = function ( f464_arg0, f464_arg1, f464_arg2 )
-		Engine[0x46C794158F47657]( f463_arg0, 0x7177AF8D2789CE8, 0x3C44F5A1B0581D4, (f464_arg2.arrayIndex:get() or f464_arg0) + f464_arg2.addNumber:get() )
+		Engine[0x46C794158F47657]( f463_arg0, 0x7177AF8D2789CE8, "selected", (f464_arg2.arrayIndex:get() or f464_arg0) + f464_arg2.addNumber:get() )
 	end
 	
 end
@@ -6143,7 +6143,7 @@ end
 CoD.HUDUtility.LoadingHeaderNotShown = function ()
 	local f470_local0 = LobbyData.GetCurrentMenuTarget()
 	local f470_local1
-	if f470_local0[0x8B72E07B55C3AC0] ~= LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING ) then
+	if f470_local0["id"] ~= LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING ) then
 		f470_local1 = IsSimulateCT()
 	else
 		f470_local1 = true
@@ -6154,7 +6154,7 @@ end
 CoD.HUDUtility.ShowRestartLevelPrompt = function ()
 	local f471_local0 = LobbyData.GetCurrentMenuTarget()
 	if CoD.isZombie then
-		if Engine[0x69811927938FCD7]() ~= "ztutorial" and ((Engine.SessionModeIsMode( Enum[0x1DD23D27A61F09A][0x3E66A586897A605] ) == true) or (Engine.SessionModeIsMode( Enum[0x1DD23D27A61F09A][0xB674220A0C7377] ) == true) or (f471_local0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_PRIVATE )) or f471_local0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_CUSTOM )) then
+		if Engine[0x69811927938FCD7]() ~= "ztutorial" and ((Engine.SessionModeIsMode( Enum[0x1DD23D27A61F09A][0x3E66A586897A605] ) == true) or (Engine.SessionModeIsMode( Enum[0x1DD23D27A61F09A][0xB674220A0C7377] ) == true) or (f471_local0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_PRIVATE )) or f471_local0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_CUSTOM )) then
 			return true
 		end
 	end

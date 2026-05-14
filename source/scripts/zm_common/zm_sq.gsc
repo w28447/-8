@@ -14,7 +14,7 @@
     // Size: 0x44, Type: dev
     function private autoexec init()
     {
-        if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+        if ( getdvarint( #"zm_debug_ee_system", 0 ) )
         {
             adddebugcommand( "<dev string:x38>" );
         }
@@ -35,7 +35,7 @@ function register( name, step_name, var_e788cdd7, setup_func, cleanup_func, var_
         
         if ( !isdefined( name ) )
         {
-            if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+            if ( getdvarint( #"zm_debug_ee_system", 0 ) )
             {
                 iprintlnbold( "<dev string:xca>" );
                 println( "<dev string:xca>" );
@@ -46,7 +46,7 @@ function register( name, step_name, var_e788cdd7, setup_func, cleanup_func, var_
         
         if ( !isdefined( step_name ) )
         {
-            if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+            if ( getdvarint( #"zm_debug_ee_system", 0 ) )
             {
                 iprintlnbold( "<dev string:x10d>" );
                 println( "<dev string:x10d>" );
@@ -57,7 +57,7 @@ function register( name, step_name, var_e788cdd7, setup_func, cleanup_func, var_
         
         if ( !isdefined( setup_func ) )
         {
-            if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+            if ( getdvarint( #"zm_debug_ee_system", 0 ) )
             {
                 iprintlnbold( "<dev string:x155>" );
                 println( "<dev string:x155>" );
@@ -68,7 +68,7 @@ function register( name, step_name, var_e788cdd7, setup_func, cleanup_func, var_
         
         if ( !isdefined( cleanup_func ) )
         {
-            if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+            if ( getdvarint( #"zm_debug_ee_system", 0 ) )
             {
                 iprintlnbold( "<dev string:x19e>" );
                 println( "<dev string:x19e>" );
@@ -79,7 +79,7 @@ function register( name, step_name, var_e788cdd7, setup_func, cleanup_func, var_
         
         if ( isdefined( level._ee ) && isdefined( level._ee[ name ] ) && isdefined( var_d6ca4caf ) && isdefined( level._ee[ name ].record_stat ) )
         {
-            if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+            if ( getdvarint( #"zm_debug_ee_system", 0 ) )
             {
                 iprintlnbold( "<dev string:x1e9>" );
                 println( "<dev string:x1e9>" );
@@ -169,7 +169,7 @@ function start( name, var_9d8cf7f = 0 )
     if ( level._ee[ name ].started )
     {
         /#
-            if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+            if ( getdvarint( #"zm_debug_ee_system", 0 ) )
             {
                 iprintlnbold( "<dev string:x244>" + hashtostring( name ) + "<dev string:x265>" );
                 println( "<dev string:x244>" + hashtostring( name ) + "<dev string:x265>" );
@@ -242,7 +242,7 @@ function private run_step( ee, step, var_5ea5c94d )
     level endon( #"game_ended" );
     
     /#
-        if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+        if ( getdvarint( #"zm_debug_ee_system", 0 ) )
         {
             iprintlnbold( hashtostring( ee.name ) + "<dev string:x2c4>" + hashtostring( step.name ) + "<dev string:x2c8>" );
             println( hashtostring( ee.name ) + "<dev string:x2c4>" + hashtostring( step.name ) + "<dev string:x2c8>" );
@@ -259,7 +259,7 @@ function private run_step( ee, step, var_5ea5c94d )
     }
     
     /#
-        if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+        if ( getdvarint( #"zm_debug_ee_system", 0 ) )
         {
             iprintlnbold( hashtostring( ee.name ) + "<dev string:x2c4>" + hashtostring( step.name ) + "<dev string:x2da>" );
             println( hashtostring( ee.name ) + "<dev string:x2c4>" + hashtostring( step.name ) + "<dev string:x2da>" );
@@ -275,7 +275,7 @@ function private run_step( ee, step, var_5ea5c94d )
     [[ step.cleanup_func ]]( var_5ea5c94d, ended_early );
     
     /#
-        if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+        if ( getdvarint( #"zm_debug_ee_system", 0 ) )
         {
             iprintlnbold( hashtostring( ee.name ) + "<dev string:x2c4>" + hashtostring( step.name ) + "<dev string:x2ef>" );
             println( hashtostring( ee.name ) + "<dev string:x2c4>" + hashtostring( step.name ) + "<dev string:x2ef>" );
@@ -359,7 +359,7 @@ function private run_step( ee, step, var_5ea5c94d )
     }
     
     /#
-        if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+        if ( getdvarint( #"zm_debug_ee_system", 0 ) )
         {
             iprintlnbold( "<dev string:x244>" + hashtostring( ee.name ) + "<dev string:x306>" );
             println( "<dev string:x244>" + hashtostring( ee.name ) + "<dev string:x306>" );
@@ -388,7 +388,7 @@ function private function_3f795dc3( ee, step, var_5ea5c94d )
 function private function_df365859( notifyhash )
 {
     /#
-        if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+        if ( getdvarint( #"zm_debug_ee_system", 0 ) )
         {
             iprintlnbold( hashtostring( self.ee.name ) + "<dev string:x2c4>" + hashtostring( self.name ) + "<dev string:x316>" );
             println( hashtostring( self.ee.name ) + "<dev string:x2c4>" + hashtostring( self.name ) + "<dev string:x316>" );
@@ -415,7 +415,7 @@ function private function_df365859( notifyhash )
         
         if ( index == -1 )
         {
-            if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+            if ( getdvarint( #"zm_debug_ee_system", 0 ) )
             {
                 iprintlnbold( "<dev string:x244>" + hashtostring( ee_name ) + "<dev string:x325>" + hashtostring( step_name ) );
                 println( "<dev string:x244>" + hashtostring( ee_name ) + "<dev string:x325>" + hashtostring( step_name ) );
@@ -506,7 +506,7 @@ function private function_df365859( notifyhash )
             return;
         }
         
-        if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+        if ( getdvarint( #"zm_debug_ee_system", 0 ) )
         {
             iprintlnbold( "<dev string:x3e0>" + hashtostring( ee_name ) + "<dev string:x2c4>" + hashtostring( ee.steps[ ee.current_step ].name ) + "<dev string:x3f6>" );
             println( "<dev string:x3e0>" + hashtostring( ee_name ) + "<dev string:x2c4>" + hashtostring( ee.steps[ ee.current_step ].name ) + "<dev string:x3f6>" );
@@ -532,7 +532,7 @@ function private function_df365859( notifyhash )
                 
                 if ( waitresult._notify == #"timeout" )
                 {
-                    if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+                    if ( getdvarint( #"zm_debug_ee_system", 0 ) )
                     {
                         iprintlnbold( "<dev string:x41e>" + hashtostring( ee_name ) + "<dev string:x2c4>" + hashtostring( ee.steps[ ee.current_step ].name ) );
                         println( "<dev string:x41e>" + hashtostring( ee_name ) + "<dev string:x2c4>" + hashtostring( ee.steps[ ee.current_step ].name ) );
@@ -545,7 +545,7 @@ function private function_df365859( notifyhash )
             wait 1;
         }
         
-        if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+        if ( getdvarint( #"zm_debug_ee_system", 0 ) )
         {
             iprintlnbold( "<dev string:x448>" + hashtostring( ee.name ) + "<dev string:x2c4>" + hashtostring( ee.steps[ ee.current_step ].name ) + "<dev string:x456>" );
             println( "<dev string:x448>" + hashtostring( ee.name ) + "<dev string:x2c4>" + hashtostring( ee.steps[ ee.current_step ].name ) + "<dev string:x456>" );
@@ -590,7 +590,7 @@ function private function_df365859( notifyhash )
                     
                     if ( var_f2c264bb < ee.current_step )
                     {
-                        if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+                        if ( getdvarint( #"zm_debug_ee_system", 0 ) )
                         {
                             iprintlnbold( "<dev string:x45f>" + hashtostring( ee.name ) + "<dev string:x2c4>" + hashtostring( ee.steps[ ee.current_step ].name ) );
                             println( "<dev string:x45f>" + hashtostring( ee.name ) + "<dev string:x2c4>" + hashtostring( ee.steps[ ee.current_step ].name ) );
@@ -598,7 +598,7 @@ function private function_df365859( notifyhash )
                     }
                     else if ( var_f2c264bb == ee.current_step )
                     {
-                        if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+                        if ( getdvarint( #"zm_debug_ee_system", 0 ) )
                         {
                             iprintlnbold( "<dev string:x48f>" + hashtostring( ee.name ) + "<dev string:x2c4>" + hashtostring( step_name ) );
                             println( "<dev string:x48f>" + hashtostring( ee.name ) + "<dev string:x2c4>" + hashtostring( step_name ) );
@@ -606,7 +606,7 @@ function private function_df365859( notifyhash )
                     }
                     else
                     {
-                        if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+                        if ( getdvarint( #"zm_debug_ee_system", 0 ) )
                         {
                             iprintlnbold( "<dev string:x4a2>" + hashtostring( ee.name ) + "<dev string:x2c4>" + hashtostring( step_name ) + "<dev string:x456>" );
                             println( "<dev string:x4a2>" + hashtostring( ee.name ) + "<dev string:x2c4>" + hashtostring( step_name ) + "<dev string:x456>" );
@@ -628,7 +628,7 @@ function private function_df365859( notifyhash )
                     
                     if ( var_f2c264bb < ee.current_step )
                     {
-                        if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+                        if ( getdvarint( #"zm_debug_ee_system", 0 ) )
                         {
                             iprintlnbold( "<dev string:x4b1>" + hashtostring( ee.name ) + "<dev string:x2c4>" + hashtostring( ee.steps[ ee.current_step ].name ) );
                             println( "<dev string:x4b1>" + hashtostring( ee.name ) + "<dev string:x2c4>" + hashtostring( ee.steps[ ee.current_step ].name ) );

@@ -609,11 +609,11 @@
                     var_a572f325 = spawnstruct();
                 }
                 
-                var_a572f325.drawbig = getdvarint( #"hash_13d62f4d290ef671", 0 );
+                var_a572f325.drawbig = getdvarint( #"cg_drawxcaminfobig", 0 );
                 var_a572f325.var_2640d68e = getdvarint( #"scr_show_shot_info_for_igcs", 0 );
                 var_a572f325.drawfps = getdvarint( #"cg_drawfps", 1 );
                 level.var_a572f325 = var_a572f325;
-                setdvar( #"hash_13d62f4d290ef671", 1 );
+                setdvar( #"cg_drawxcaminfobig", 1 );
                 setdvar( #"scr_show_shot_info_for_igcs", 1 );
                 setdvar( #"cg_drawfps", 0 );
                 adddebugcommand( 0, "<dev string:x208>" );
@@ -653,7 +653,7 @@
                     }
                 }
                 
-                setdvar( #"hash_13d62f4d290ef671", drawbig );
+                setdvar( #"cg_drawxcaminfobig", drawbig );
                 setdvar( #"scr_show_shot_info_for_igcs", var_2640d68e );
                 setdvar( #"cg_drawfps", drawfps );
                 adddebugcommand( 0, "<dev string:x216>" );

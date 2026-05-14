@@ -5,7 +5,7 @@
     "headImpactType": 2,
     "bodyImpactType": 2,
     "destructibleDef": "#c_t8_zmb_blightfather1_dst_def_noreveal",
-    "ragdollDef": "#hash_37dfd3e67b2689ae",
+    "ragdollDef": "#blight_father_ragdoll",
     "body": "#c_t8_zmb_blightfather_body1_noreveal",
     "head": "#c_t8_zmb_blightfather_head1_noreveal"
 }

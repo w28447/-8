@@ -4,7 +4,7 @@
     "chrName": "marl",
     "mpDialog": "#marlton",
     "playerSoundsTable": "#cp_playersounds",
-    "playerFXTable": "#hash_471b500cc678f872",
+    "playerFXTable": "#wz_playerfx",
     "image_68": "#ui_icon_specialist_portrait_hud_johnson",
     "positionDraftPortrait": "#ui_icon_specialist_portrait_draft_johnson",
     "positionDraftIcon": "#ui_icon_specialist_portrait_draft_johnson",

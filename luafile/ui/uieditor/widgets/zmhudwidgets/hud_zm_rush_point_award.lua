@@ -26,7 +26,7 @@ CoD.HUD_ZM_Rush_Point_Award.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local Title = LUI.UIText.new( 0, 0, 0.5, 400.5, 0, 0, 148, 184 )
 	Title:setRGB( ColorSet.GroupName.r, ColorSet.GroupName.g, ColorSet.GroupName.b )
-	Title:setText( Engine[0xF9F1239CFD921FE]( 0x375AC490696F74C ) )
+	Title:setText( Engine[0xF9F1239CFD921FE]( "zombie/points_pickup" ) )
 	Title:setTTF( "skorzhen" )
 	Title:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
 	Title:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

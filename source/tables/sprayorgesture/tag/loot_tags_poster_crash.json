@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_poster_crash",
+    "type": "#tag",
+    "material": "#hash_61aab32f4472e0e3",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_677d10b70e4bb3d1",
+        "icon": "image#loot_ui_icon_tags_poster_crash",
+        "isdefault": 0
+    }
+}

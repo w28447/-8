@@ -80,7 +80,7 @@ CoD.MOTD_BannerImageInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.FrameSelectedInnerGlow = FrameSelectedInnerGlow
 	
 	local FrameSelectedCorner = LUI.UIImage.new( 0, 1, -8, 8, 0, 1, -8, 8 )
-	FrameSelectedCorner:setImage( RegisterImage( 0x793C73633F620BB ) )
+	FrameSelectedCorner:setImage( RegisterImage( "uie_ui_menu_store_focus_pips" ) )
 	FrameSelectedCorner:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrameSelectedCorner:setShaderVector( 0, 0, 0, 0, 0 )
 	FrameSelectedCorner:setupNineSliceShader( 44, 44 )

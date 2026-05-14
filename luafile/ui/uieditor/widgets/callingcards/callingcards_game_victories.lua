@@ -41,7 +41,7 @@ CoD[0x4AFF0067298BAB8].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local kraken = LUI.UIImage.new( 0, 0, 0, 964, 0, 0, 0, 240 )
 	kraken:setAlpha( 0.5 )
 	kraken:setScale( 1.02, 1.02 )
-	kraken:setImage( RegisterImage( 0xC5AFD0403E0C769 ) )
+	kraken:setImage( RegisterImage( "uie_callingcards_game_victories_kraken" ) )
 	kraken:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	kraken:setShaderVector( 0, 1.27, 0, 0, 0 )
 	self:addElement( kraken )
@@ -73,7 +73,7 @@ CoD[0x4AFF0067298BAB8].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local diverRight = LUI.UIImage.new( 0, 0, 741.5, 957.5, 0, 0, 68, 228 )
 	diverRight:setAlpha( 0.5 )
-	diverRight:setImage( RegisterImage( 0x35FABA1C9ED9D10 ) )
+	diverRight:setImage( RegisterImage( "uie_callingcards_game_victories_diver_right" ) )
 	diverRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	diverRight:setShaderVector( 0, 1.3, 0, 0, 0 )
 	self:addElement( diverRight )

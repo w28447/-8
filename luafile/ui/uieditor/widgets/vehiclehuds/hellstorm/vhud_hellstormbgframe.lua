@@ -14,28 +14,28 @@ CoD.vhud_HellstormBGFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local frameBL = LUI.UIImage.new( 1, 1, -1923, -1569, 0, 0, 1083, 881 )
-	frameBL:setImage( RegisterImage( 0x27C1DE5DFC08228 ) )
+	frameBL:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_corner_line" ) )
 	frameBL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	frameBL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( frameBL )
 	self.frameBL = frameBL
 	
 	local frameTL = LUI.UIImage.new( 0, 0, -5, 349, 0, 0, -4, 198 )
-	frameTL:setImage( RegisterImage( 0x27C1DE5DFC08228 ) )
+	frameTL:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_corner_line" ) )
 	frameTL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	frameTL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( frameTL )
 	self.frameTL = frameTL
 	
 	local frameTR = LUI.UIImage.new( 1, 1, 5, -349, 0, 0, -3, 199 )
-	frameTR:setImage( RegisterImage( 0x27C1DE5DFC08228 ) )
+	frameTR:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_corner_line" ) )
 	frameTR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	frameTR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( frameTR )
 	self.frameTR = frameTR
 	
 	local frameBR = LUI.UIImage.new( 1, 1, 5, -349, 0, 0, 1083, 881 )
-	frameBR:setImage( RegisterImage( 0x27C1DE5DFC08228 ) )
+	frameBR:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_corner_line" ) )
 	frameBR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	frameBR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( frameBR )

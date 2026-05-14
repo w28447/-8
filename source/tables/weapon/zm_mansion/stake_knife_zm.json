@@ -1,7 +1,7 @@
 {
     "name": "#stake_knife_zm",
     "baseWeapon": "#stake_knife",
-    "streamkey": "#hash_4426db4b79d26d79",
+    "streamkey": "#stake_knife_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",

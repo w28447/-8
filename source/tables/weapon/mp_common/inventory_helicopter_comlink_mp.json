@@ -3,7 +3,7 @@
     "baseWeapon": "#inventory_helicopter_comlink",
     "displayname": "#killstreak/helicopter_comlink",
     "weapon70": "#helicopter_comlink",
-    "streamkey": "#hash_5e693698b611b0dd",
+    "streamkey": "#inventory_helicopter_comlink_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",

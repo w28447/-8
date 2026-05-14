@@ -18,7 +18,7 @@
     "deathFxTag": "tag_motor_steer_animate",
     "deathFxSound": "#hash_2149db0c502305e3",
     "sndMaterialNames": [
-        "#hash_6a18d331e9b820c6"
+        "#veh_boat_road"
     ],
     "skidSpeedMin": 350,
     "skidSpeedMax": 650,

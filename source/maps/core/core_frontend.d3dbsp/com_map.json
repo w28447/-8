@@ -628,7 +628,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_6403efb7a51cdc3",
+            "lightExploderName": "#core_frontend_spectre_play",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -5215,7 +5215,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_24d7595c104d99fd",
+            "lightExploderName": "#core_frontend_ruin_play",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -7118,7 +7118,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_36d8994eb81f73e7",
+            "lightExploderName": "#lgtexp_quartermaster_weapon",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -8411,7 +8411,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_4f8f2a276e106474",
+            "lightExploderName": "#core_frontend_buff_play",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -8589,7 +8589,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_52b98b4da6ce33ec",
+            "lightExploderName": "#lgtexp_aar_zm",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -8738,7 +8738,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_52de984da6ed6640",
+            "lightExploderName": "#lgtexp_aar_wz",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -10635,7 +10635,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_6124f2e8298845fe",
+            "lightExploderName": "#core_frontend_helicopter3",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -11739,7 +11739,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_69b7f04da50bb277",
+            "lightExploderName": "#core_frontend_ruin_sitting_bull",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -13754,7 +13754,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_7d59ef8568c3cf91",
+            "lightExploderName": "#lgtexp_specialist_hub",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -14061,7 +14061,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_4f8f2a276e106474",
+            "lightExploderName": "#core_frontend_buff_play",
             "triggerData": [
                 {
                     "probeID": 79,
@@ -14228,7 +14228,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_24d7595c104d99fd",
+            "lightExploderName": "#core_frontend_ruin_play",
             "triggerData": [
                 {
                     "probeID": 75,
@@ -14274,7 +14274,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_69b7f04da50bb277",
+            "lightExploderName": "#core_frontend_ruin_sitting_bull",
             "triggerData": [
                 {
                     "probeID": 74,
@@ -14362,7 +14362,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_6403efb7a51cdc3",
+            "lightExploderName": "#core_frontend_spectre_play",
             "triggerData": [
                 {
                     "probeID": 69,
@@ -14539,7 +14539,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_7d59ef8568c3cf91",
+            "lightExploderName": "#lgtexp_specialist_hub",
             "triggerData": [
                 {
                     "probeID": 64,

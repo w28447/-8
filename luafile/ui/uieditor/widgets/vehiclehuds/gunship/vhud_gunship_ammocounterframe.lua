@@ -28,7 +28,7 @@ CoD.vhud_gunship_ammocounterframe.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.DotTiledBacking = DotTiledBacking
 	
 	local AmmoFrameInuse = LUI.UIImage.new( 1, 1, -148, 0, -0.02, -0.02, 2.5, 120.5 )
-	AmmoFrameInuse:setImage( RegisterImage( 0x83F5377573CDA03 ) )
+	AmmoFrameInuse:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_weapon_frame_inuse" ) )
 	self:addElement( AmmoFrameInuse )
 	self.AmmoFrameInuse = AmmoFrameInuse
 	

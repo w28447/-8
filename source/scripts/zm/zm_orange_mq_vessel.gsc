@@ -250,7 +250,7 @@ function private function_a5fa6428()
 {
     level endon( #"end_game", #"vessel_found" );
     wait 2;
-    zm_hms_util::function_3c173d37();
+    zm_hms_util::vo_stop_all();
     level.var_60b08c24 zm_hms_util::function_6a0d675d( #"hash_33c988fee37ea6da", 0, 0, 1 );
     level.var_60b08c24 zm_hms_util::function_6a0d675d( #"hash_33c988fee37ea6da", 1, 0, 1 );
     
@@ -313,7 +313,7 @@ function private function_9c223c27()
     self endon( #"death" );
     self.e_vessel show();
     self zm_orange_ee_dynamite::function_170afe2c( 1 );
-    self waittill( #"hash_126c823a82e09010" );
+    self waittill( #"dynamite_bomb_detonated" );
     self.e_safe hide();
     
     if ( level.var_98138d6b > 1 )

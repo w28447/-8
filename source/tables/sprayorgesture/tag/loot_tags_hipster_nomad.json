@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_hipster_nomad",
+    "type": "#tag",
+    "material": "#hash_50241781e70391df",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#tags/hipster_nomad",
+        "icon": "image#loot_ui_icon_tags_hipster_nomad",
+        "isdefault": 0
+    }
+}

@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "playeranim#hash_cce5e432f8e05f3",
+                            "anim": "playeranim#int_red_plant_lightning_rod",
                             "entrytype": "anim"
                         }
                     ],

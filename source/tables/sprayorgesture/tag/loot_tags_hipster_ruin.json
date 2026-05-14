@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_hipster_ruin",
+    "type": "#tag",
+    "material": "#hash_49f0a26feec0d1e",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#tags/hipster_ruin",
+        "icon": "image#loot_ui_icon_tags_hipster_ruin",
+        "isdefault": 0
+    }
+}

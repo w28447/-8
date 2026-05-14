@@ -20,7 +20,7 @@ LUI.createMenu.AAR_RankedPlayRankChange = function ( f1_arg0, f1_arg1 )
 	self.bg = bg
 	
 	local RankUpDown = LUI.UIText.new( 0, 0, 824, 1024, 0, 0, 130.5, 167.5 )
-	RankUpDown:setText( Engine[0xF9F1239CFD921FE]( 0x448F89A07B04731 ) )
+	RankUpDown:setText( Engine[0xF9F1239CFD921FE]( "arena/ranked_play" ) )
 	RankUpDown:setTTF( "default" )
 	RankUpDown:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	RankUpDown:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

@@ -1,4 +1,4 @@
-#using script_59a783d756554a80;
+#using scripts\zm\zm_office_vo_hooks.gsc;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\exploder_shared;
 #using scripts\core_common\flag_shared;
@@ -23,10 +23,10 @@ function pentagon_packapunch_init()
     level.defcon_level = 1;
     level.defcon_activated = 0;
     level.ignore_spawner_func = &pentagon_ignore_spawner;
-    level._effect[ #"hash_4ec0caccaa9167d3" ] = #"hash_6cd6da1c7e245c1c";
-    level.var_5531a118 = level._effect[ #"hash_4ec0caccaa9167d3" ];
-    level._effect[ #"hash_415ba37393754417" ] = #"hash_35cb5be5a38af07c";
-    level.var_2e21f906 = level._effect[ #"hash_415ba37393754417" ];
+    level._effect[ #"defcon_light_green" ] = #"hash_6cd6da1c7e245c1c";
+    level.defcon_light_green = level._effect[ #"defcon_light_green" ];
+    level._effect[ #"defcon_light_red" ] = #"hash_35cb5be5a38af07c";
+    level.defcon_light_red = level._effect[ #"defcon_light_red" ];
     level thread defcon_sign_lights();
     punch_switches = getentarray( "punch_switch", "targetname" );
     
@@ -60,7 +60,7 @@ function defcon_sign_setup()
                 self.lights[ j ] setmodel( "p8_zm_off_trap_switch_light_green_on" );
                 self.var_dd7da790[ j ] = util::spawn_model( "tag_origin", self.lights[ j ].origin );
                 self.var_dd7da790[ j ].angles = self.lights[ j ].angles;
-                self.var_dd7da790[ j ].var_fe0165db = playfxontag( level.var_5531a118, self.var_dd7da790[ j ], "tag_origin" );
+                self.var_dd7da790[ j ].var_fe0165db = playfxontag( level.defcon_light_green, self.var_dd7da790[ j ], "tag_origin" );
             }
         }
     }
@@ -90,7 +90,7 @@ function defcon_sign_setup()
                     self.var_dd7da790[ j ] delete();
                     self.var_dd7da790[ j ] = util::spawn_model( "tag_origin", self.lights[ j ].origin );
                     self.var_dd7da790[ j ].angles = self.lights[ j ].angles;
-                    self.var_dd7da790[ j ].var_b8a3170a = playfxontag( level.var_2e21f906, self.var_dd7da790[ j ], "tag_origin" );
+                    self.var_dd7da790[ j ].var_b8a3170a = playfxontag( level.defcon_light_red, self.var_dd7da790[ j ], "tag_origin" );
                 }
                 
                 if ( isdefined( self.lights[ j ].script_noteworthy ) && self.lights[ j ].script_noteworthy == "defcon_handle" )
@@ -109,7 +109,7 @@ function defcon_sign_setup()
             
             if ( level.zombie_vars[ #"zombie_powerup_bonfire_sale_on" ] == 0 )
             {
-                level thread namespace_8f53e87b::play_pentagon_announcer_vox( #"vox_pentagon_defcon", level.defcon_level );
+                level thread zm_office_vo_hooks::play_pentagon_announcer_vox( #"vox_pentagon_defcon", level.defcon_level );
             }
             
             level thread defcon_sign_lights();
@@ -122,11 +122,11 @@ function defcon_sign_setup()
             {
                 if ( level flag::get( #"hash_38f45c699c5d5d63" ) )
                 {
-                    level thread namespace_8f53e87b::function_777b7961( user );
+                    level thread zm_office_vo_hooks::function_777b7961( user );
                 }
                 else
                 {
-                    level thread namespace_8f53e87b::play_pentagon_announcer_vox( #"vox_pentagon_defcon", level.defcon_level );
+                    level thread zm_office_vo_hooks::play_pentagon_announcer_vox( #"vox_pentagon_defcon", level.defcon_level );
                 }
             }
             
@@ -144,7 +144,7 @@ function defcon_sign_setup()
         
         if ( !level flag::get( "bonfire_reset" ) )
         {
-            level thread namespace_8f53e87b::play_pentagon_announcer_vox( #"hash_55967e6191de36d2" );
+            level thread zm_office_vo_hooks::play_pentagon_announcer_vox( #"hash_55967e6191de36d2" );
         }
         
         if ( isdefined( self.lights ) )
@@ -157,7 +157,7 @@ function defcon_sign_setup()
                     self.var_dd7da790[ j ] delete();
                     self.var_dd7da790[ j ] = util::spawn_model( "tag_origin", self.lights[ j ].origin );
                     self.var_dd7da790[ j ].angles = self.lights[ j ].angles;
-                    self.var_dd7da790[ j ].var_fe0165db = playfxontag( level.var_5531a118, self.var_dd7da790[ j ], "tag_origin" );
+                    self.var_dd7da790[ j ].var_fe0165db = playfxontag( level.defcon_light_green, self.var_dd7da790[ j ], "tag_origin" );
                 }
                 
                 if ( isdefined( self.lights[ j ].script_noteworthy ) && self.lights[ j ].script_noteworthy == "defcon_handle" )
@@ -421,7 +421,7 @@ function pack_door_init()
     while ( true )
     {
         trigger setcursorhint( "HINT_NOICON" );
-        trigger sethintstring( #"hash_11b82b0d638f6098" );
+        trigger sethintstring( #"zm_office/pack_room_door" );
         level waittill( #"defcon_activated", #"player_in_pack" );
         players = getplayers();
         trigger sethintstring( "" );
@@ -600,7 +600,7 @@ function function_cacd3270()
         
         if ( level.zombie_vars[ #"zombie_powerup_bonfire_sale_on" ] == 0 || !level flag::get( "<dev string:x43>" ) )
         {
-            level thread namespace_8f53e87b::play_pentagon_announcer_vox( #"vox_pentagon_defcon", level.defcon_level );
+            level thread zm_office_vo_hooks::play_pentagon_announcer_vox( #"vox_pentagon_defcon", level.defcon_level );
         }
         
         level thread defcon_sign_lights();
@@ -616,7 +616,7 @@ function function_cacd3270()
         
         if ( !level flag::get( "<dev string:x43>" ) )
         {
-            level thread namespace_8f53e87b::play_pentagon_announcer_vox( #"hash_55967e6191de36d2" );
+            level thread zm_office_vo_hooks::play_pentagon_announcer_vox( #"hash_55967e6191de36d2" );
         }
         
         if ( isdefined( self.lights ) )
@@ -629,7 +629,7 @@ function function_cacd3270()
                     self.var_dd7da790[ j ] delete();
                     self.var_dd7da790[ j ] = util::spawn_model( "<dev string:x98>", self.lights[ j ].origin );
                     self.var_dd7da790[ j ].angles = self.lights[ j ].angles;
-                    self.var_dd7da790[ j ].var_fe0165db = playfxontag( level.var_5531a118, self.var_dd7da790[ j ], "<dev string:x98>" );
+                    self.var_dd7da790[ j ].var_fe0165db = playfxontag( level.defcon_light_green, self.var_dd7da790[ j ], "<dev string:x98>" );
                 }
                 
                 if ( isdefined( self.lights[ j ].script_noteworthy ) && self.lights[ j ].script_noteworthy == "<dev string:xa5>" )

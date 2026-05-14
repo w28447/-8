@@ -3,7 +3,7 @@
     "displayName": "#heroes/david_mason",
     "mpDialog": "#david_mason",
     "playerSoundsTable": "#cp_playersounds",
-    "playerFXTable": "#hash_471b500cc678f872",
+    "playerFXTable": "#wz_playerfx",
     "image_68": "#hash_cbcdd7db99125961",
     "positionDraftPortrait": "#ui_icon_specialist_portrait_draft_david_mason",
     "lootUiIcon": "#loot_04_ui_icon_blackmarket_reserves_david_mason",

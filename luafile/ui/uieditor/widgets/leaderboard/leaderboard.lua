@@ -80,7 +80,7 @@ CoD.Leaderboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 		end
 	end, function ( f10_arg0, f10_arg1, f10_arg2 )
 		if IsSelfInState( self, "DefaultState" ) and not IsRepeatButtonPress( nil ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x820DDD869ABBFAA], 0x35B6BF6242A52D2, nil, nil )
+			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x820DDD869ABBFAA], "menu/lb_page_down", nil, nil )
 			return true
 		else
 			return false

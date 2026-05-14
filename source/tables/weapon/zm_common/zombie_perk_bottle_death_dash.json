@@ -1,7 +1,7 @@
 {
     "name": "#zombie_perk_bottle_death_dash",
     "baseWeapon": "#zombie_perk_bottle_death_dash",
-    "streamkey": "#hash_41c19f1b64789d83",
+    "streamkey": "#zombie_perk_bottle_death_dash_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",
@@ -33,7 +33,7 @@
     "sound4e0": "#hash_7de02f3f0a5f070b",
     "tunables1": "#zombie_perk_bottle_death_dash_tunables",
     "gestureTables": [
-        "#hash_88ac2dade478f38"
+        "#gestable_perk_bottle"
     ],
     "viewmodel": [
         "#wpn_t8_zm_perk_bottle_blaze_view"

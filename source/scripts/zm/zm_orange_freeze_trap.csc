@@ -16,7 +16,7 @@ function init()
     clientfield::register( "scriptmover", "freeze_trap_fx", 24000, 1, "int", &freeze_trap_fx, 0, 0 );
     clientfield::register( "toplayer", "player_freeze_trap_post_fx", 24000, 1, "int", &player_freeze_trap_post_fx, 0, 0 );
     level._effect[ #"freeze_spray" ] = #"hash_424786ecbc7f5672";
-    level._effect[ #"hash_4131e133ed64bb15" ] = #"hash_48d74d13d0c569c";
+    level._effect[ #"freeze_spray_death" ] = #"hash_48d74d13d0c569c";
     level._effect[ #"hash_4dbed2be32ca74bc" ] = #"hash_29ac72c5aa5398bc";
     level._effect[ #"hash_4b8af2aba0424cf3" ] = #"hash_709cca7d0048aa72";
     level._effect[ #"hash_64e2b0ae28329360" ] = #"hash_69af1783a31b44f7";
@@ -51,7 +51,7 @@ function freeze_trap_fx( localclientnum, oldval, newval, bnewent, binitialsnap, 
         self.var_91180673 = undefined;
     }
     
-    playfx( localclientnum, level._effect[ #"hash_4131e133ed64bb15" ], self.origin );
+    playfx( localclientnum, level._effect[ #"freeze_spray_death" ], self.origin );
 }
 
 // Namespace zm_orange_freeze_trap/zm_orange_freeze_trap
@@ -96,7 +96,7 @@ function player_freeze_trap_post_fx( localclientnum, oldval, newval, bnewent, bi
         }
         
         self notify( #"player_freeze_trap_post_fx_complete" );
-        self.var_f08ae416 = self playloopsound( #"hash_341a3fa00975f232" );
+        self.var_f08ae416 = self playloopsound( #"zmb_trap_acid_loop_plr" );
         self.var_b2ea9ecc = 0.825;
         self thread function_4443ecea( localclientnum );
         self thread postfx::playpostfxbundle( #"pstfx_frost_loop_fullscreen" );

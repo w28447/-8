@@ -46,7 +46,7 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT32"
                     },
@@ -86,7 +86,7 @@
                         "type": "INT64"
                     },
                     {
-                        "name": "#hash_6bdd7ebe59310aa2",
+                        "name": "#match_making_id",
                         "scrName": "#hash_b8bfa824",
                         "type": "UINT64"
                     }
@@ -118,7 +118,7 @@
             }
         },
         {
-            "name": "#hash_5e4bfcda8096b6e1",
+            "name": "#nat_discovery_sends",
             "arraySize": 16,
             "members": {
                 "name": "#hash_a2a2c8805cc0914",
@@ -129,17 +129,17 @@
                         "type": "BOOL"
                     },
                     {
-                        "name": "#hash_2602c209d2a3de6a",
+                        "name": "#dst_port",
                         "scrName": "#hash_f6f189a",
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_32e3f837e2ac1c9b",
+                        "name": "#ms_since_start",
                         "scrName": "#hash_aaa06d3e",
                         "type": "UINT32"
                     },
                     {
-                        "name": "#hash_63d6798714c8e5f6",
+                        "name": "#dst_addr",
                         "scrName": "#hash_911b5346",
                         "type": "UINT32"
                     },
@@ -152,33 +152,33 @@
             }
         },
         {
-            "name": "#hash_7f8edb1cd5a272d3",
+            "name": "#nat_discovery_result",
             "arraySize": 0,
             "members": {
                 "name": "#hash_4aabf3d6d297186e",
                 "members": [
                     {
-                        "name": "#hash_14f1eb54888a48c",
+                        "name": "#test1_mapped_port",
                         "scrName": "#hash_bbb2a9c3",
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_23798c701bcdea4",
+                        "name": "#test1_sec_port",
                         "scrName": "#hash_ee962eb7",
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_2a6fcae39ad43a1",
+                        "name": "#server1_addr",
                         "scrName": "#hash_e3580b10",
                         "type": "UINT32"
                     },
                     {
-                        "name": "#hash_7090a8e65737cfe",
+                        "name": "#max_resends",
                         "scrName": "#hash_cfbaf4ef",
                         "type": "UINT32"
                     },
                     {
-                        "name": "#hash_7b159647cb4c325",
+                        "name": "#test1_from_port",
                         "scrName": "#hash_d24d3f59",
                         "type": "UINT16"
                     },
@@ -188,7 +188,7 @@
                         "type": "FLOAT"
                     },
                     {
-                        "name": "#hash_1a0878dd9531a4a7",
+                        "name": "#test3_from_port",
                         "scrName": "#hash_7a1e5851",
                         "type": "UINT16"
                     },
@@ -203,27 +203,27 @@
                         "type": "UINT32"
                     },
                     {
-                        "name": "#hash_1f423da65e71efd6",
+                        "name": "#test3_mapped_addr",
                         "scrName": "#hash_4a0c4a11",
                         "type": "UINT32"
                     },
                     {
-                        "name": "#hash_310fe31f4220a4bd",
+                        "name": "#server1_port",
                         "scrName": "#hash_27538220",
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_325802219f696907",
+                        "name": "#test1_ms_since_start",
                         "scrName": "#hash_263d6c62",
                         "type": "UINT32"
                     },
                     {
-                        "name": "#hash_3b7201e7c31f08d9",
+                        "name": "#test1_from_addr",
                         "scrName": "#hash_1acc16ef",
                         "type": "UINT32"
                     },
                     {
-                        "name": "#hash_3e3d1b120db91cc8",
+                        "name": "#test2_ms_since_start",
                         "scrName": "#hash_1ec34b82",
                         "type": "UINT32"
                     },
@@ -233,37 +233,37 @@
                         "type": "UINT8"
                     },
                     {
-                        "name": "#hash_4545326e89cd38d8",
+                        "name": "#test2_from_addr",
                         "scrName": "#hash_1610ca25",
                         "type": "UINT32"
                     },
                     {
-                        "name": "#hash_4ed5f043bba32d74",
+                        "name": "#test1_sec_addr",
                         "scrName": "#hash_592dde8b",
                         "type": "UINT32"
                     },
                     {
-                        "name": "#hash_5aa5063252bd0e0c",
+                        "name": "#test1_mapped_addr",
                         "scrName": "#hash_59753602",
                         "type": "UINT32"
                     },
                     {
-                        "name": "#hash_5bb9a16052a3577f",
+                        "name": "#test3_from_addr",
                         "scrName": "#hash_8af4f94a",
                         "type": "UINT32"
                     },
                     {
-                        "name": "#hash_5e07862919680c4a",
+                        "name": "#test3_mapped_port",
                         "scrName": "#hash_ae7de6b3",
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_62762c09afec9add",
+                        "name": "#test3_ms_since_start",
                         "scrName": "#hash_df6a2e73",
                         "type": "UINT32"
                     },
                     {
-                        "name": "#hash_6282c2f132172388",
+                        "name": "#test2_from_port",
                         "scrName": "#hash_eb00f288",
                         "type": "UINT16"
                     }

@@ -697,7 +697,7 @@ function function_75b4c8bc()
 function function_7913d068( hideduration )
 {
     level endon( #"game_ended", #"props_hide_over" );
-    var_fb3f700 = hideduration * 1000 + gettime();
+    countdownendtime = hideduration * 1000 + gettime();
     
     foreach ( player in level.players )
     {
@@ -717,10 +717,10 @@ function function_7913d068( hideduration )
     {
         foreach ( player in level.players )
         {
-            level.hide_timer mp_prop_timer::set_timeremaining( player, int( ( var_fb3f700 - gettime() ) / 1000 ) );
+            level.hide_timer mp_prop_timer::set_timeremaining( player, int( ( countdownendtime - gettime() ) / 1000 ) );
         }
         
-        n_current_time = ( var_fb3f700 - gettime() ) / 1000;
+        n_current_time = ( countdownendtime - gettime() ) / 1000;
         var_4dd94c4c = int( n_current_time );
         
         if ( var_4dd94c4c <= 5 && var_4dd94c4c > 0 )
@@ -1256,7 +1256,7 @@ function monitortimers()
 function function_6fd396()
 {
     level endon( #"game_ended", #"props_hide_over" );
-    var_fb3f700 = int( level.phsettings.prophidetime + gettime() / 1000 );
+    countdownendtime = int( level.phsettings.prophidetime + gettime() / 1000 );
     totaltimepassed = 0;
     
     while ( true )
@@ -1272,7 +1272,7 @@ function function_6fd396()
         timepassed = int( hostmigration::waittillhostmigrationdone() / 1000 );
         totaltimepassed += timepassed;
         timepassed = totaltimepassed;
-        var_af091f9e = var_fb3f700 + timepassed - int( gettime() / 1000 );
+        var_af091f9e = countdownendtime + timepassed - int( gettime() / 1000 );
         level.phcountdowntimer settimer( var_af091f9e );
         
         if ( useprophudserver() && level.phsettings.propwhistletime > 0 )
@@ -1742,8 +1742,8 @@ function propwatchcleanupondisconnect()
 // Size: 0x7c
 function propwatchcleanuponroundend()
 {
-    self notify( #"hash_23d745b724b7c0bd" );
-    self endon( #"hash_23d745b724b7c0bd", #"disconnect" );
+    self notify( #"propwatchdeleteroundend" );
+    self endon( #"propwatchdeleteroundend", #"disconnect" );
     level waittill( #"round_end_done" );
     self propcleanup();
     self propclonecleanup();
@@ -2120,9 +2120,9 @@ function setupprop()
             }
             
             var_d0a5fa3b = 0;
-            anglesx = getdvarfloat( #"hash_1cc010d013592cb", -0.0123 );
-            anglesy = getdvarfloat( #"hash_1cc000d01359118", -0.0123 );
-            anglesz = getdvarfloat( #"hash_1cc030d01359631", -0.0123 );
+            anglesx = getdvarfloat( #"prop_anglesx", -0.0123 );
+            anglesy = getdvarfloat( #"prop_anglesy", -0.0123 );
+            anglesz = getdvarfloat( #"prop_anglesz", -0.0123 );
             
             if ( anglesx != -0.0123 && anglesx != var_309e583f.anglesoffset[ 0 ] )
             {
@@ -2480,7 +2480,7 @@ function givelastonteamwarning()
     
     if ( self util::isprop() )
     {
-        level notify( #"hash_2732c975dc66dd9e" );
+        level notify( #"nopropstospectate" );
         level.nopropsspectate = 1;
     }
     

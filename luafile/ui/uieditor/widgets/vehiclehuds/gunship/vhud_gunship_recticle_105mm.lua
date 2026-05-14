@@ -77,7 +77,7 @@ CoD.vhud_gunship_recticle_105mm.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.reticle105CornerBR = reticle105CornerBR
 	
 	local reticle105OuterTR = LUI.UIImage.new( 0, 0, 564, 668, 0, 0, 0, 104 )
-	reticle105OuterTR:setImage( RegisterImage( 0x2CAC22006CAD1D3 ) )
+	reticle105OuterTR:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_reticle_105_outer" ) )
 	reticle105OuterTR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	reticle105OuterTR:setShaderVector( 0, 1.2, 0, 0, 0 )
 	self:addElement( reticle105OuterTR )
@@ -85,7 +85,7 @@ CoD.vhud_gunship_recticle_105mm.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local reticle105OuterTL = LUI.UIImage.new( 0, 0, 0, 104, 0, 0, 0, 104 )
 	reticle105OuterTL:setZRot( 90 )
-	reticle105OuterTL:setImage( RegisterImage( 0x2CAC22006CAD1D3 ) )
+	reticle105OuterTL:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_reticle_105_outer" ) )
 	reticle105OuterTL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	reticle105OuterTL:setShaderVector( 0, 1.2, 0, 0, 0 )
 	self:addElement( reticle105OuterTL )
@@ -93,7 +93,7 @@ CoD.vhud_gunship_recticle_105mm.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local reticle105OuterBL = LUI.UIImage.new( 0, 0, 0, 104, 0, 0, 407.5, 511.5 )
 	reticle105OuterBL:setZRot( 180 )
-	reticle105OuterBL:setImage( RegisterImage( 0x2CAC22006CAD1D3 ) )
+	reticle105OuterBL:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_reticle_105_outer" ) )
 	reticle105OuterBL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	reticle105OuterBL:setShaderVector( 0, 1.2, 0, 0, 0 )
 	self:addElement( reticle105OuterBL )
@@ -101,7 +101,7 @@ CoD.vhud_gunship_recticle_105mm.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local reticle105OuterBR = LUI.UIImage.new( 0, 0, 564, 668, 0, 0, 407.5, 511.5 )
 	reticle105OuterBR:setZRot( 270 )
-	reticle105OuterBR:setImage( RegisterImage( 0x2CAC22006CAD1D3 ) )
+	reticle105OuterBR:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_reticle_105_outer" ) )
 	reticle105OuterBR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	reticle105OuterBR:setShaderVector( 0, 1.2, 0, 0, 0 )
 	self:addElement( reticle105OuterBR )

@@ -108,7 +108,7 @@ CoD.GameEndScoreOutcomeFFABarSmall.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local GlowRing = LUI.UIImage.new( 0, 0, 9, 103, 0, 0, 13, 107 )
 	GlowRing:setAlpha( 0.15 )
-	GlowRing:setImage( RegisterImage( 0x7A63CD655CD7572 ) )
+	GlowRing:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_qe_glow" ) )
 	GlowRing:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowRing )
 	self.GlowRing = GlowRing

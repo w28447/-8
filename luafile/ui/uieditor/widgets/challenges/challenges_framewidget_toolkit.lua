@@ -20,7 +20,7 @@ CoD.Challenges_FrameWidget_Toolkit.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local Title = CoD.Challenges_Category_Title.new( f1_arg0, f1_arg1, 0, 0, 112.5, 412.5, 0.5, 0.5, -300, 300 )
 	Title.ChallengesPercentCompleteWidgetLG.Name:setText( Engine[0xF9F1239CFD921FE]( 0x677D363E896D453 ) )
-	Title.ChallengesPercentCompleteWidgetLG.Icon:setImage( RegisterImage( 0x904EC48676B9EA2 ) )
+	Title.ChallengesPercentCompleteWidgetLG.Icon:setImage( RegisterImage( "ui_icon_challenges_zmtoolkit_large" ) )
 	Title:subscribeToGlobalModel( f1_arg1, "ChallengesZMCategoryStats", "toolkit", function ( model )
 		Title:setModel( model, f1_arg1 )
 	end )

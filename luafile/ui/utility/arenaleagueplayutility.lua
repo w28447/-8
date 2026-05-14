@@ -295,7 +295,7 @@ CoD.ArenaLeaguePlayUtility.GetSkillDivisionTier = function ( f20_arg0 )
 	if f20_local3 and #f20_local3.skilldivisiontierlist then
 		if f20_local1 == nil or #f20_local1 ~= #f20_local3.skilldivisiontierlist then
 			for f20_local7, f20_local8 in ipairs( f20_local3.skilldivisiontierlist ) do
-				if f20_arg0 < f20_local8[0xEF4A299024B430B] then
+				if f20_arg0 < f20_local8["maxskillrating"] then
 					f20_local0 = f20_local7
 				end
 			end
@@ -326,7 +326,7 @@ CoD.ArenaLeaguePlayUtility.GetSkillDivisionBannerAndName = function ( f21_arg0, 
 		if f21_local4 == nil or #f21_local4 ~= #f21_local6.skilldivisiontierlist then
 			if f21_local6 and #f21_local6.skilldivisiontierlist then
 				for f21_local15, f21_local16 in ipairs( f21_local6.skilldivisiontierlist ) do
-					if f21_arg0 < f21_local16[0xEF4A299024B430B] then
+					if f21_arg0 < f21_local16["maxskillrating"] then
 						f21_local2 = f21_local16[0xDC1B5D80C1B7F38]
 						f21_local3 = f21_local16[0x7118DE1BE688883]
 						for f21_local13, f21_local14 in ipairs( f21_local16.bannerlist ) do
@@ -602,7 +602,7 @@ DataSources.LeaguePlay = {
 		if not f46_local0.LeaguePlay then
 			local f46_local1 = f46_local0:create( "LeaguePlay" )
 			local f46_local2 = f46_local1:create( "leaguePlayName" )
-			f46_local2:set( 0xEA9804CE492884E )
+			f46_local2:set( "arena/event_league_play_name" )
 			f46_local1:create( "leaguePlayRank" )
 			f46_local1:create( "leaguePlayIcon" )
 			f46_local1:create( "leaguePlayIconLarge" )

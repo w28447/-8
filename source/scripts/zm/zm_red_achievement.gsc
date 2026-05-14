@@ -42,7 +42,7 @@ function function_3aed7ccf()
 function private function_ec51ce01()
 {
     self endon( #"disconnect" );
-    level waittill( #"hash_71d7e6a55a1ca9e" );
+    level waittill( #"boss_battle_over" );
     
     if ( zm_utility::is_classic() )
     {
@@ -218,7 +218,7 @@ function private function_3c39c720()
     
     while ( true )
     {
-        s_result = self waittill( #"hash_4969a839c4e666dc" );
+        s_result = self waittill( #"start_beam_attack" );
         
         if ( self flag::get( #"ww_combat_active" ) )
         {
@@ -354,7 +354,7 @@ function private function_84d102f2()
             
             waitframe( 1 );
             
-            if ( level flag::get( #"hash_67695ee69c57c0b2" ) && level flag::get( #"hash_61de3b8fe6f6a35" ) )
+            if ( level flag::get( #"serpent_pass_eagle_free" ) && level flag::get( #"cliff_tombs_eagle_free" ) )
             {
                 /#
                     self iprintlnbold( "<dev string:x10b>" );

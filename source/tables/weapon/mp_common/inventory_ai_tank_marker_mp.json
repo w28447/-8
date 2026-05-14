@@ -1,9 +1,9 @@
 {
     "name": "#inventory_ai_tank_marker_mp",
     "baseWeapon": "#inventory_ai_tank_marker",
-    "displayname": "#hash_5586ad9ad1c57b67",
+    "displayname": "#weapon/ai_tank_drop",
     "weapon70": "#ai_tank_marker",
-    "streamkey": "#hash_67740ba500337608",
+    "streamkey": "#inventory_ai_tank_marker_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

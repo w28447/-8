@@ -1,6 +1,6 @@
 type,name
 streamerworld,#hash_7a4076ff1032faa3
-physpreset,#hash_8e5ab17b8353d20
+physpreset,#physpreset_mirror
 physpreset,#hash_11290539932a619d
 physpreset,d#metal_tray
 physpreset,#treasure_coin
@@ -13703,8 +13703,8 @@ image,d#i_wpn_t8_eqp_briefcase_bomb_glass_s
 image,#i_t8_concrete_spackle_painted_01_c
 image,#i_t8_concrete_spackle_painted_01_n
 image,#i_p8_zm_gla_wall_arena_wood_01_set_decor_01_m
-streamkey,#hash_62cffb36fd9b4854
-streamkey,#hash_35bc27cce3d19af1
+streamkey,#mp_nuketown_4_all_stream
+streamkey,#mp_nuketown_4_all_loaded
 streamkey,#hash_42fba781d1373e26
 streamkey,#hash_47b13f5b03d7d637
 sound,#mp_nuketown_4.all
@@ -13754,12 +13754,12 @@ surfacesounddef,#mannfootstep_crouch_run_bot
 surfacesounddef,d#hash_3d9213dabaf08c81
 surfacesounddef,#mannfootstep_walk_bot
 surfacesounddef,#mannfootstep_ladder_hand_bot
-surfacesounddef,#hash_6a9264c7627e1b73
+surfacesounddef,#phy_glass_bottle_sounddef
 surfacesounddef,#mannfootstep_run_bot
 surfacesounddef,#hash_77789965ad08507e
 surfacesounddef,d#fist_melee_surface_plr
 surfacesounddef,d#hash_7ada1cf9d8035750
-surfacesounddef,#hash_7df43ad9f11765ff
+surfacesounddef,#phy_book_sounddef
 entitysoundimpacts,d#entity_fist_victim
 entitysoundimpacts,d#entity_fist_swipe_player
 entitysoundimpacts,d#entity_fist_player
@@ -30225,7 +30225,7 @@ streamkey,#hash_5eeaeb051833fd64
 streamkey,#hash_5eeaec051833ff17
 streamkey,#hash_5eeaed05183400ca
 streamkey,#hash_5eeaee051834027d
-streamkey,#hash_5f2062afd7c4d91e
+streamkey,#mp_nuketown_4_sst_0_0
 streamkey,#hash_5f5f6b167a27ea10
 streamkey,#hash_5f5f6c167a27ebc3
 streamkey,#hash_5f5f6d167a27ed76
@@ -39568,10 +39568,10 @@ sharedweaponsounds,d#fist
 fx,#hash_224ef24b00756523
 fx,#hash_6a24e19597bb8475
 fx,#hash_70f6e089a971b0aa
-impactsoundstable,#hash_d698a0c5be3e240
+impactsoundstable,#phy_glass_bottle
 impactsoundstable,#phy_book
-impactsoundstable,d#hash_368fb7ec6eff7aa6
-impactsoundstable,#hash_3c179f6b071380af
+impactsoundstable,d#phy_plastic_bucket
+impactsoundstable,#phy_plastic_small
 impactsoundstable,d#phy_cardboard
 footsteptable,#mannfootstep
 animmappingtable,#hash_e705855d824681c

@@ -108,7 +108,7 @@ CoD.ButtonFrame_MeritRecord.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.WinMerits = WinMerits
 	
 	local ChallengeMerits = CoD.PlayerStatsMerits.new( f1_arg0, f1_arg1, 0, 0, 23, 523, 0, 0, 305, 323 )
-	ChallengeMerits.TypeText:setText( Engine[0xF9F1239CFD921FE]( 0x99CD580A52B2E53 ) )
+	ChallengeMerits.TypeText:setText( Engine[0xF9F1239CFD921FE]( "menu/challenges_caps" ) )
 	ChallengeMerits:subscribeToGlobalModel( f1_arg1, "PlayerBarracksMerits", "challenges", function ( model )
 		ChallengeMerits:setModel( model, f1_arg1 )
 	end )
@@ -118,7 +118,7 @@ CoD.ButtonFrame_MeritRecord.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local TotalMeritsValue = LUI.UIText.new( 0, 0, 463.5, 663.5, 0, 0, 259.5, 293.5 )
 	TotalMeritsValue:setRGB( 0.69, 0.56, 0.04 )
 	TotalMeritsValue.__String_Reference = function ()
-		TotalMeritsValue:setText( CoD.PlayerStatsUtility.GetPlayerStorageStat( f1_arg0, 0x8928A12A20A9D67, "" ) )
+		TotalMeritsValue:setText( CoD.PlayerStatsUtility.GetPlayerStorageStat( f1_arg0, "rankxp", "" ) )
 	end
 	
 	TotalMeritsValue.__String_Reference()

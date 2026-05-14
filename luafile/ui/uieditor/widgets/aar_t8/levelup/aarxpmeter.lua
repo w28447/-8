@@ -110,7 +110,7 @@ CoD.AARXpMeter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	ExpPointer:setRGB( 0.9, 0.89, 0.78 )
 	ExpPointer:setAlpha( 0 )
 	ExpPointer:setZRot( -45 )
-	ExpPointer:setImage( RegisterImage( 0x2764FF85084B3A4 ) )
+	ExpPointer:setImage( RegisterImage( "uie_ui_menu_social_emblem_corner" ) )
 	ExpPointer:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	ExpPointer:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( ExpPointer )

@@ -88,11 +88,11 @@ Lobby.Process.CreateDedicatedLANLobby = function ( f7_arg0, f7_arg1 )
 	local f7_local1 = Lobby.Actions.SetNetworkMode( f7_arg0, Enum.LobbyNetworkMode[0xBAA8EC6F3E77255] )
 	local f7_local2 = Lobby.Actions.LobbySettings( f7_arg0, f7_arg1 )
 	local f7_local3 = Lobby.Actions.UpdateUI( f7_arg0, f7_arg1 )
-	local f7_local4 = Lobby.Actions.LobbyHostStart( f7_arg0, f7_arg1[0xEB7DDC7F079D51B], f7_arg1.LobbyType, f7_arg1.LobbyMode, f7_arg1[0xEE71E4EE12BC453], "", "" )
+	local f7_local4 = Lobby.Actions.LobbyHostStart( f7_arg0, f7_arg1["mainmode"], f7_arg1.LobbyType, f7_arg1.LobbyMode, f7_arg1[0xEE71E4EE12BC453], "", "" )
 	local f7_local5 = Lobby.Actions.LobbyVMCall( Lobby.Timer.HostingLobby, {
 		controller = f7_arg0,
 		lobbyType = f7_arg1.LobbyType,
-		mainMode = f7_arg1[0xEB7DDC7F079D51B],
+		mainMode = f7_arg1["mainmode"],
 		lobbyTimerType = f7_arg1[0x558B67A321D1120]
 	} )
 	local f7_local6, f7_local7 = nil
@@ -132,7 +132,7 @@ Lobby.Process.CreateDedicatedLobby = function ( f9_arg0, f9_arg1 )
 	local f9_local2 = Lobby.Actions.SetNetworkMode( f9_arg0, Enum.LobbyNetworkMode[0xE99F41098B71960] )
 	local f9_local3 = Lobby.Actions.LobbySettings( f9_arg0, f9_arg1 )
 	local f9_local4 = Lobby.Actions.UpdateUI( f9_arg0, f9_arg1 )
-	local f9_local5 = Lobby.Actions.LobbyHostStart( f9_arg0, f9_arg1[0xEB7DDC7F079D51B], f9_arg1.LobbyType, f9_arg1.LobbyMode, f9_arg1[0xEE71E4EE12BC453], "", "" )
+	local f9_local5 = Lobby.Actions.LobbyHostStart( f9_arg0, f9_arg1["mainmode"], f9_arg1.LobbyType, f9_arg1.LobbyMode, f9_arg1[0xEE71E4EE12BC453], "", "" )
 	local f9_local6 = Lobby.Actions.AdvertiseLobby( true )
 	local f9_local7 = Lobby.Actions.ExecuteScript( f9_local0 )
 	local f9_local8 = {
@@ -217,7 +217,7 @@ Lobby.Process.CreateAsyncMatchmakingLobby = function ( f13_arg0, f13_arg1, f13_a
 	end
 	local f13_local5 = Lobby.Actions.OpenSpinner()
 	local f13_local6 = Lobby.Actions.CloseSpinnerAllowJoining()
-	local f13_local7 = Lobby.Actions.LobbyHostStart( f13_arg0, f13_arg1[0xEB7DDC7F079D51B], f13_arg1.LobbyType, f13_arg1.LobbyMode, f13_arg1[0xEE71E4EE12BC453], "", "", f13_arg2 )
+	local f13_local7 = Lobby.Actions.LobbyHostStart( f13_arg0, f13_arg1["mainmode"], f13_arg1.LobbyType, f13_arg1.LobbyMode, f13_arg1[0xEE71E4EE12BC453], "", "", f13_arg2 )
 	local f13_local8 = Lobby.Actions.LobbyInfoProbe( f13_arg0, {
 		xuid = Engine.GetXUID64( f13_arg0 )
 	} )
@@ -231,7 +231,7 @@ Lobby.Process.CreateAsyncMatchmakingLobby = function ( f13_arg0, f13_arg1, f13_a
 	local f13_local14 = Lobby.Actions.LobbyVMCall( Lobby.Timer.HostingLobby, {
 		controller = f13_arg0,
 		lobbyType = f13_arg1.LobbyType,
-		mainMode = f13_arg1[0xEB7DDC7F079D51B],
+		mainMode = f13_arg1["mainmode"],
 		lobbyTimerType = f13_arg1[0x558B67A321D1120]
 	} )
 	local f13_local15 = Lobby.Actions.ExecuteScript( f13_local1 )
@@ -549,7 +549,7 @@ Lobby.Process.AsyncMatchmakingStartAsyncMatchmaker = function ( f34_arg0 )
 	local f34_local27 = Lobby.Interrupt.AsyncMatchmakingErrorMsg( Lobby.Process.AsynMatchMakingRecover, f34_local0, Engine[0xF9F1239CFD921FE]( 0x3A32B690B0CF2C8 ), f34_local23 )
 	local f34_local28 = Lobby.Interrupt.AsyncMatchmakingErrorMsg( Lobby.Process.AsynMatchMakingRecover, f34_local0, Engine[0xF9F1239CFD921FE]( 0x128045808A178F3, f34_local6.maxPartySize ) )
 	local f34_local29 = Lobby.Interrupt.AsyncMatchmakingErrorMsg( Lobby.Process.AsynMatchMakingRecover, f34_local0, Engine[0xF9F1239CFD921FE]( 0xB44D2306F5FF2B6 ) )
-	local f34_local30 = Lobby.Interrupt.AsyncMatchmakingErrorMsg( Lobby.Process.AsynMatchMakingRecover, f34_local0, Engine[0xF9F1239CFD921FE]( 0x4D828BE8ECE6C1F ) )
+	local f34_local30 = Lobby.Interrupt.AsyncMatchmakingErrorMsg( Lobby.Process.AsynMatchMakingRecover, f34_local0, Engine[0xF9F1239CFD921FE]( "menu/spectre_restricted" ) )
 	local f34_local31 = Lobby.Interrupt.ErrorMsg( Lobby.Process.AsynMatchMakingRecover, f34_local0, Engine[0xF9F1239CFD921FE]( 0x3A32B690B0CF2C8 ) )
 	local f34_local32 = {
 		head = f34_local12,
@@ -1196,7 +1196,7 @@ Lobby.Process.Recover = function ( f69_arg0, f69_arg1 )
 		return nil
 	end
 	local f69_local2 = LobbyData.GetLobbyMenuByName( f69_local1[0xEE55A183F29FDD5] )
-	local f69_local3 = LobbyData.GetLobbyMenuByName( f69_local2[0xADEEFEFDA7AD0E3] )
+	local f69_local3 = LobbyData.GetLobbyMenuByName( f69_local2["backtarget"] )
 	local f69_local4 = Lobby.Actions.OpenSpinner( nil, true )
 	local f69_local5 = Lobby.Actions.LobbyInRecovery()
 	local f69_local6 = Lobby.Actions.LobbyClientEnd( Enum.LobbyType[0xA1647599284110] )
@@ -1204,7 +1204,7 @@ Lobby.Process.Recover = function ( f69_arg0, f69_arg1 )
 	local f69_local8 = Lobby.Actions.LobbyClientEnd( Enum.LobbyType[0x92676CF5B6FCD43] )
 	local f69_local9 = Lobby.Actions.LobbyHostEnd( Enum.LobbyType[0x92676CF5B6FCD43] )
 	local f69_local10 = Lobby.Actions.LobbySettings( f69_arg0, f69_local2 )
-	local f69_local11 = Lobby.Actions.ForceLobbyUIScreen( f69_arg0, f69_local2[0x8B72E07B55C3AC0] )
+	local f69_local11 = Lobby.Actions.ForceLobbyUIScreen( f69_arg0, f69_local2["id"] )
 	local f69_local12 = Lobby.Actions.UpdateUI( f69_arg0, f69_local2 )
 	local f69_local13 = Lobby.Actions.ArenaErrorShutdown( f69_arg0 )
 	local f69_local14 = Lobby.Actions.SetDefaultArenaPlaylist( f69_arg0 )
@@ -1213,7 +1213,7 @@ Lobby.Process.Recover = function ( f69_arg0, f69_arg1 )
 	local f69_local17 = Lobby.Actions.LobbyVMCallRetVal( Lobby.Timer.HostingLobbyEnd, {
 		controller = f69_arg0,
 		lobbyType = f69_local1.LobbyType,
-		mainMode = f69_local1[0xEB7DDC7F079D51B]
+		mainMode = f69_local1["mainmode"]
 	}, true, false, false )
 	local f69_local18 = {
 		head = f69_local4,
@@ -1242,7 +1242,7 @@ Lobby.Process.Recover = function ( f69_arg0, f69_arg1 )
 		if f69_local3.LobbyType == Enum.LobbyType[0xB0756CC6FC8665C] then
 			
 		elseif f69_local3.LobbyType ~= f69_local2.LobbyType then
-			local f69_local22 = Lobby.Actions.LobbyHostStart( f69_arg0, f69_local3[0xEB7DDC7F079D51B], f69_local3.LobbyType, f69_local3.LobbyMode, f69_local3[0xEE71E4EE12BC453], f69_local20, f69_local19 )
+			local f69_local22 = Lobby.Actions.LobbyHostStart( f69_arg0, f69_local3["mainmode"], f69_local3.LobbyType, f69_local3.LobbyMode, f69_local3[0xEE71E4EE12BC453], f69_local20, f69_local19 )
 			local f69_local23 = Lobby.Actions.LobbyHostAddPrimary( f69_local3.LobbyType )
 			local f69_local24 = Lobby.Actions.LobbyClientStart( f69_local3.LobbyType )
 			f69_local22.name = f69_local22.name .. "_1"
@@ -1250,8 +1250,8 @@ Lobby.Process.Recover = function ( f69_arg0, f69_arg1 )
 			Lobby.Process.AddActions( f69_local22, f69_local23 )
 			Lobby.Process.AddActions( f69_local23, f69_local24 )
 			f69_local21 = f69_local24
-		elseif f69_local2[0xEB7DDC7F079D51B] == Enum.LobbyMainMode[0x7B50049993542C0] or f69_local2[0xEB7DDC7F079D51B] == Enum.LobbyMainMode[0x79D01499920B292] then
-			local f69_local22 = Lobby.Actions.LobbyHostStart( f69_arg0, f69_local2[0xEB7DDC7F079D51B], Enum.LobbyType[0xA1647599284110], f69_local2.LobbyMode, f69_local2[0xEE71E4EE12BC453], f69_local20, f69_local19 )
+		elseif f69_local2["mainmode"] == Enum.LobbyMainMode[0x7B50049993542C0] or f69_local2["mainmode"] == Enum.LobbyMainMode[0x79D01499920B292] then
+			local f69_local22 = Lobby.Actions.LobbyHostStart( f69_arg0, f69_local2["mainmode"], Enum.LobbyType[0xA1647599284110], f69_local2.LobbyMode, f69_local2[0xEE71E4EE12BC453], f69_local20, f69_local19 )
 			local f69_local23 = Lobby.Actions.LobbyHostAddPrimary( Enum.LobbyType[0xA1647599284110] )
 			local f69_local24 = Lobby.Actions.LobbyClientStart( Enum.LobbyType[0xA1647599284110] )
 			f69_local22.name = f69_local22.name .. "_4"
@@ -1262,13 +1262,13 @@ Lobby.Process.Recover = function ( f69_arg0, f69_arg1 )
 		end
 	end
 	if f69_local2.LobbyType == Enum.LobbyType[0xA1647599284110] then
-		local f69_local22 = Lobby.Actions.LobbyHostStart( f69_arg0, f69_local2[0xEB7DDC7F079D51B], f69_local2.LobbyType, f69_local2.LobbyMode, f69_local2[0xEE71E4EE12BC453], f69_local20, f69_local19 )
+		local f69_local22 = Lobby.Actions.LobbyHostStart( f69_arg0, f69_local2["mainmode"], f69_local2.LobbyType, f69_local2.LobbyMode, f69_local2[0xEE71E4EE12BC453], f69_local20, f69_local19 )
 		local f69_local23 = Lobby.Actions.LobbyHostAddPrimary( f69_local2.LobbyType )
 		local f69_local24 = Lobby.Actions.LobbyClientStart( f69_local2.LobbyType )
 		local f69_local25 = Lobby.Actions.LobbyVMCall( Lobby.Timer.HostingLobby, {
 			controller = f69_arg0,
 			lobbyType = f69_local2.LobbyType,
-			mainMode = f69_local2[0xEB7DDC7F079D51B],
+			mainMode = f69_local2["mainmode"],
 			lobbyTimerType = f69_local2[0x558B67A321D1120]
 		} )
 		f69_local22.name = f69_local22.name .. "_2"
@@ -1288,7 +1288,7 @@ Lobby.Process.Recover = function ( f69_arg0, f69_arg1 )
 			end
 		end
 		
-		local f69_local23 = Lobby.Actions.LobbyHostStart( f69_arg0, f69_local2[0xEB7DDC7F079D51B], f69_local2.LobbyType, f69_local2.LobbyMode, f69_local2[0xEE71E4EE12BC453], f69_local20, f69_local19 )
+		local f69_local23 = Lobby.Actions.LobbyHostStart( f69_arg0, f69_local2["mainmode"], f69_local2.LobbyType, f69_local2.LobbyMode, f69_local2[0xEE71E4EE12BC453], f69_local20, f69_local19 )
 		local f69_local24 = Lobby.Actions.LobbyInfoProbe( f69_arg0, {
 			xuid = Engine.GetXUID64( f69_arg0 )
 		} )
@@ -1298,7 +1298,7 @@ Lobby.Process.Recover = function ( f69_arg0, f69_arg1 )
 		local f69_local26 = Lobby.Actions.LobbyVMCall( Lobby.Timer.HostingLobby, {
 			controller = f69_arg0,
 			lobbyType = f69_local2.LobbyType,
-			mainMode = f69_local2[0xEB7DDC7F079D51B],
+			mainMode = f69_local2["mainmode"],
 			lobbyTimerType = f69_local2[0x558B67A321D1120]
 		} )
 		f69_local23.name = f69_local23.name .. "_3"
@@ -1334,7 +1334,7 @@ end
 
 Lobby.Process.ForceToMenu = function ( f71_arg0, f71_arg1, f71_arg2 )
 	local f71_local0 = f71_arg1[0x364CF0AB5CDF3BC]
-	local f71_local1 = f71_arg1[0xEB7DDC7F079D51B]
+	local f71_local1 = f71_arg1["mainmode"]
 	local f71_local2 = f71_arg1[0xBDB8620451D6112]
 	local f71_local3 = f71_arg1[0xEE71E4EE12BC453]
 	local f71_local4 = Lobby.Actions.LobbySettings( f71_arg0, f71_arg1 )
@@ -1342,7 +1342,7 @@ Lobby.Process.ForceToMenu = function ( f71_arg0, f71_arg1, f71_arg2 )
 	local f71_local6 = Lobby.Actions.LobbyHostEnd( Enum.LobbyType[0xA1647599284110] )
 	local f71_local7 = Lobby.Actions.LobbyClientEnd( Enum.LobbyType[0x92676CF5B6FCD43] )
 	local f71_local8 = Lobby.Actions.LobbyHostEnd( Enum.LobbyType[0x92676CF5B6FCD43] )
-	local f71_local9 = Lobby.Actions.ForceLobbyUIScreen( f71_arg0, f71_arg1[0x8B72E07B55C3AC0] )
+	local f71_local9 = Lobby.Actions.ForceLobbyUIScreen( f71_arg0, f71_arg1["id"] )
 	local f71_local10 = Lobby.Actions.UpdateUI( f71_arg0, f71_arg1 )
 	local f71_local11 = {
 		head = f71_local4,
@@ -1380,7 +1380,7 @@ Lobby.Process.HostLeftNoMigrationCreatePrivateLobby = function ( f72_arg0, f72_a
 			Lobby.Timer.HostingLobby( {
 				controller = f72_arg0,
 				lobbyType = f72_local0.LobbyType,
-				mainMode = f72_local0[0xEB7DDC7F079D51B],
+				mainMode = f72_local0["mainmode"],
 				lobbyTimerType = f72_local0[0x558B67A321D1120]
 			} )
 		end
@@ -1431,7 +1431,7 @@ Lobby.Process.PromoteClientToPrivateLobbyHost = function ( f74_arg0, f74_arg1, f
 			Lobby.Timer.HostingLobby( {
 				controller = f74_arg0,
 				lobbyType = f74_local1.LobbyType,
-				mainMode = f74_local1[0xEB7DDC7F079D51B],
+				mainMode = f74_local1["mainmode"],
 				lobbyTimerType = f74_local1[0x558B67A321D1120],
 				status = f75_local0,
 				statusValue = f75_local1
@@ -1480,7 +1480,7 @@ Lobby.Process.PromoteClientToGameLobbyHost = function ( f78_arg0, f78_arg1, f78_
 			Lobby.Timer.HostingLobby( {
 				controller = f78_arg0,
 				lobbyType = f78_local1.LobbyType,
-				mainMode = f78_local1[0xEB7DDC7F079D51B],
+				mainMode = f78_local1["mainmode"],
 				lobbyTimerType = f78_local1[0x558B67A321D1120],
 				status = f78_local3,
 				statusValue = f78_local4
@@ -1683,7 +1683,7 @@ Lobby.Process.DevmapClient = function ( f87_arg0 )
 		f87_local3 = Enum.LobbyNetworkMode[0xE99F41098B71960]
 	end
 	local f87_local4 = LobbyData.GetLobbyMenuByName( f87_local2 )
-	local f87_local5 = f87_local4[0xEB7DDC7F079D51B]
+	local f87_local5 = f87_local4["mainmode"]
 	local f87_local6 = f87_local4.LobbyType
 	local f87_local7 = f87_local4.LobbyMode
 	local f87_local8 = f87_local4[0xEE71E4EE12BC453]
@@ -1750,11 +1750,11 @@ Lobby.Process.Devmap = function ( f88_arg0, f88_arg1, f88_arg2, f88_arg3 )
 	if f88_arg1 ~= Enum.LobbyMainMode[0xD5FBB8D74AC6D62] then
 		f88_local6 = LobbyData.GetLobbyMenuByName( f88_local0[f88_local1][f88_arg1] )
 	end
-	local f88_local7 = f88_local5[0xEB7DDC7F079D51B]
+	local f88_local7 = f88_local5["mainmode"]
 	local f88_local8 = f88_local5.LobbyType
 	local f88_local9 = f88_local5.LobbyMode
 	local f88_local10 = f88_local5[0xEE71E4EE12BC453]
-	local f88_local11 = f88_local6[0xEB7DDC7F079D51B]
+	local f88_local11 = f88_local6["mainmode"]
 	local f88_local12 = f88_local6.LobbyType
 	local f88_local13 = f88_local6.LobbyMode
 	local f88_local14 = f88_local6[0xEE71E4EE12BC453]
@@ -1782,7 +1782,7 @@ Lobby.Process.Devmap = function ( f88_arg0, f88_arg1, f88_arg2, f88_arg3 )
 	Lobby.Process.AddActions( f88_local20, f88_local21 )
 	Lobby.Process.AddActions( f88_local21, f88_local24 )
 	Lobby.Process.AddActions( f88_local24, f88_local22 )
-	if true == Dvar[0xAE7B8C6AE85C57F]:get() and Dvar[0xCDDC2FC45915C64]:get() > 1 then
+	if true == Dvar["splitscreen"]:get() and Dvar[0xCDDC2FC45915C64]:get() > 1 then
 		local f88_local26 = Lobby.Actions.LobbyHostAddLocal( 1, f88_local12 )
 		Lobby.Process.AddActions( f88_local22, f88_local26 )
 		Lobby.Process.AddActions( f88_local26, f88_local23 )
@@ -1801,7 +1801,7 @@ Lobby.Process.PrimaryControllerSignedIn = function ( f90_arg0 )
 	local f90_local4 = Lobby.Actions.LobbySettings( f90_arg0, f90_local1 )
 	local f90_local5 = Lobby.Actions.UpdateUI( f90_arg0, f90_local1 )
 	local f90_local6 = Lobby.Actions.SignUserInToLive( f90_arg0 )
-	local f90_local7 = Lobby.Actions.ErrorPopupMsg( 0xA781E500F1BE74D )
+	local f90_local7 = Lobby.Actions.ErrorPopupMsg( "xboxlive/signedout" )
 	local f90_local8 = Engine[0xEA2BE00F49480D]( Enum.LobbyType[0x92676CF5B6FCD43] )
 	local f90_local9 = Engine[0xEA2BE00F49480D]( Enum.LobbyType[0xA1647599284110] )
 	local f90_local10 = Lobby.Actions.LobbyClientEnd( Enum.LobbyType[0xA1647599284110] )
@@ -1834,7 +1834,7 @@ Lobby.Process.PrimaryControllerSignedOut = function ( f91_arg0 )
 	local f91_local4 = Lobby.Actions.LobbySettings( f91_arg0, f91_local1 )
 	local f91_local5 = Lobby.Actions.UpdateUI( f91_arg0, f91_local1 )
 	local f91_local6 = Lobby.Actions.SignUserOutOfLive( f91_arg0 )
-	local f91_local7 = Lobby.Actions.ErrorPopupMsg( 0xA781E500F1BE74D )
+	local f91_local7 = Lobby.Actions.ErrorPopupMsg( "xboxlive/signedout" )
 	local f91_local8 = Engine[0xEA2BE00F49480D]( Enum.LobbyType[0x92676CF5B6FCD43] )
 	local f91_local9 = Engine[0xEA2BE00F49480D]( Enum.LobbyType[0xA1647599284110] )
 	local f91_local10 = Lobby.Actions.LobbyClientEnd( Enum.LobbyType[0xA1647599284110] )

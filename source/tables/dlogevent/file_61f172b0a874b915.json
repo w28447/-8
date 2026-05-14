@@ -46,7 +46,7 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT32"
                     },
@@ -59,68 +59,68 @@
             }
         },
         {
-            "name": "#hash_2b1372bddf3a584c",
+            "name": "#dtls_association",
             "arraySize": 0,
             "members": {
                 "name": "#hash_33bf07591958a6f1",
                 "members": [
                     {
-                        "name": "#hash_a0f382d7c109dd4",
+                        "name": "#init_resends",
                         "scrName": "#hash_ea870e92",
                         "type": "UINT8"
                     },
                     {
-                        "name": "#hash_ebf5cf2789352f3",
+                        "name": "#peer_ip",
                         "scrName": "#hash_b197696c",
                         "type": "UINT32"
                     },
                     {
-                        "name": "#hash_1264c84bbee08f80",
+                        "name": "#send_seq_num",
                         "scrName": "#hash_cb09dccb",
                         "type": "INT32"
                     },
                     {
-                        "name": "#hash_1d3d37b4bfd07e57",
+                        "name": "#stage_init_ms_since_start",
                         "scrName": "#hash_4416d2e0",
                         "type": "UINT32"
                     },
                     {
-                        "name": "#hash_20d721b4939feee8",
+                        "name": "#cookie_resends",
                         "scrName": "#hash_c7e2cd54",
                         "type": "UINT8"
                     },
                     {
-                        "name": "#hash_21b204228b9c30ad",
+                        "name": "#peer_port",
                         "scrName": "#hash_d6111b5b",
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_25dca3aaf0f14efe",
+                        "name": "#recv_seq_num",
                         "scrName": "#hash_addb1e98",
                         "type": "INT32"
                     },
                     {
-                        "name": "#hash_266b42dab96feeb0",
+                        "name": "#established_ms_since_start",
                         "scrName": "#hash_303350c1",
                         "type": "UINT32"
                     },
                     {
-                        "name": "#hash_3b6396c9a7bb3501",
+                        "name": "#stage_init_ack_ms_since_start",
                         "scrName": "#hash_4673abf0",
                         "type": "UINT32"
                     },
                     {
-                        "name": "#hash_4926ebe3920f1011",
+                        "name": "#stage_cookie_ack_ms_since_start",
                         "scrName": "#hash_188bf3a3",
                         "type": "UINT32"
                     },
                     {
-                        "name": "#hash_49b55debef4aed9b",
+                        "name": "#lifetime_ms",
                         "scrName": "#hash_f2b2143",
                         "type": "UINT32"
                     },
                     {
-                        "name": "#hash_57645f4f490fadfb",
+                        "name": "#stage_cookie_echo_ms_since_start",
                         "scrName": "#hash_fcc0cbde",
                         "type": "UINT32"
                     },
@@ -160,7 +160,7 @@
                         "type": "INT64"
                     },
                     {
-                        "name": "#hash_6bdd7ebe59310aa2",
+                        "name": "#match_making_id",
                         "scrName": "#hash_b8bfa824",
                         "type": "UINT64"
                     }

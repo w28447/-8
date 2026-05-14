@@ -16,7 +16,7 @@ CoD.SpawnSelectTeamStatusItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local hazardbackplate = LUI.UIImage.new( 0, 0, 7.5, 42.5, 0, 0, 8, 32 )
 	hazardbackplate:setAlpha( 0 )
-	hazardbackplate:setImage( RegisterImage( 0x4F22E2837954FCC ) )
+	hazardbackplate:setImage( RegisterImage( "uie_ui_menu_hazard_backplate" ) )
 	self:addElement( hazardbackplate )
 	self.hazardbackplate = hazardbackplate
 	

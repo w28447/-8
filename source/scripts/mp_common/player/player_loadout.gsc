@@ -789,9 +789,9 @@ function private give_talents()
     
     foreach ( var_ebdddedf in self.var_c8836f02 )
     {
-        if ( var_ebdddedf.namehash == #"hash_6be738527a4213aa" && level.hardcoremode )
+        if ( var_ebdddedf.namehash == #"gear_armor_mp" && level.hardcoremode )
         {
-            var_ebdddedf.namehash = #"hash_5c9c79c25b74b7bb";
+            var_ebdddedf.namehash = #"gear_armor_hardcore_mp";
         }
         
         var_b3ed76f5 = function_c84c77d8( var_ebdddedf.loadoutslot );
@@ -1536,7 +1536,7 @@ function function_c3448ab0( slot, previous_weapon, force_give_gadget_health_rege
     
     if ( globallogic_utils::function_308e3379() )
     {
-        secondaryoffhand = getweapon( #"hash_28323cd36d8b5f93" );
+        secondaryoffhand = getweapon( #"gadget_health_regen_bb" );
         secondaryoffhandcount = 0;
     }
     else if ( force_give_gadget_health_regen === 1 && level.new_health_model )
@@ -1862,11 +1862,11 @@ function private function_b61852e1()
     self notify( "25e412c683e8d36" );
     self endon( "25e412c683e8d36" );
     waitframe( 1 );
-    self luinotifyevent( #"hash_21e30e91084f7e66", 0 );
+    self luinotifyevent( #"post_loadout_given", 0 );
     wait 0.1;
-    self luinotifyevent( #"hash_21e30e91084f7e66", 0 );
+    self luinotifyevent( #"post_loadout_given", 0 );
     wait 0.5;
-    self luinotifyevent( #"hash_21e30e91084f7e66", 0 );
+    self luinotifyevent( #"post_loadout_given", 0 );
 }
 
 // Namespace loadout/player_loadout

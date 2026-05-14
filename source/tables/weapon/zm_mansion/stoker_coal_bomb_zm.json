@@ -2,7 +2,7 @@
     "name": "#stoker_coal_bomb_zm",
     "baseWeapon": "#stoker_coal_bomb",
     "displayname": "#weapon/proximity_grenade",
-    "streamkey": "#hash_233d3efd60beade6",
+    "streamkey": "#stoker_coal_bomb_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

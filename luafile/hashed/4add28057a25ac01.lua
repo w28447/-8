@@ -31,7 +31,7 @@ CoD.PaintCanIdentityWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.StatValue = StatValue
 	
 	local PaintCanImage = LUI.UIImage.new( 0, 0, 194, 246, 0, 0, -6, 46 )
-	PaintCanImage:setImage( RegisterImage( 0xB808223FCD4471D ) )
+	PaintCanImage:setImage( RegisterImage( "ui_icon_inventory_spray_can" ) )
 	self:addElement( PaintCanImage )
 	self.PaintCanImage = PaintCanImage
 	

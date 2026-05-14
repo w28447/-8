@@ -105,7 +105,7 @@ CoD.ItemShopInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	self.previewGestureButton = previewGestureButton
 	
 	local PreviewButton = CoD.ItemShopPreviewButton.new( f1_arg0, f1_arg1, 0, 0, 23, 249, 0, 0, 61.5, 370.5 )
-	PreviewButton.Button.Text:setText( LocalizeToUpperString( 0x52FB29ED3A3CA79 ) )
+	PreviewButton.Button.Text:setText( LocalizeToUpperString( "menu/preview" ) )
 	PreviewButton:linkToElementModel( self, nil, false, function ( model )
 		PreviewButton:setModel( model, f1_arg1 )
 	end )
@@ -141,10 +141,10 @@ CoD.ItemShopInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 		end
 	end, function ( f11_arg0, f11_arg1, f11_arg2 )
 		if CoD.ModelUtility.IsSelfModelValueEqualTo( f11_arg0, f11_arg2, "allowFrozenMoment", true ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x52FB29ED3A3CA79, nil, nil )
+			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/preview", nil, nil )
 			return true
 		elseif CoD.ModelUtility.IsSelfModelValueNonEmptyString( f11_arg0, f11_arg2, "movieName" ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x52FB29ED3A3CA79, nil, nil )
+			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/preview", nil, nil )
 			return true
 		else
 			return false

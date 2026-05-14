@@ -56,7 +56,7 @@ function on_spawn( watcher )
     grenade.maxhealth = 10000;
     grenade.health = grenade.maxhealth;
     grenade setmaxhealth( grenade.maxhealth );
-    grenade notify( #"hash_5a09ded231e405ad" );
+    grenade notify( #"decoy_grenade_stationary" );
     grenade clientfield::set( "decoy_grenade_footsteps", 0 );
     grenade function_e9d18b65();
 }
@@ -67,7 +67,7 @@ function on_spawn( watcher )
 // Size: 0x68
 function play_footsteps()
 {
-    self endon( #"death", #"hash_5a09ded231e405ad" );
+    self endon( #"death", #"decoy_grenade_stationary" );
     wait 0.25;
     
     while ( true )
@@ -131,9 +131,9 @@ function function_7c24c60f( reloadtime )
     self endon( #"death" );
     time_ratio = reloadtime / 3;
     wait time_ratio;
-    self playsound( #"hash_337f5ae3f1674ad3" );
+    self playsound( #"fly_ar_standard_mag_out" );
     wait time_ratio;
-    self playsound( #"hash_7a315f233edf3cba" );
+    self playsound( #"fly_ar_standard_mag_in" );
     wait time_ratio;
 }
 

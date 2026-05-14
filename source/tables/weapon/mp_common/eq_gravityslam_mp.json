@@ -3,7 +3,7 @@
     "baseWeapon": "#eq_gravityslam",
     "displayname": "#weapon/gravityslam",
     "weapon70": "#eq_gravityslam",
-    "streamkey": "#hash_702e91e09b51a719",
+    "streamkey": "#eq_gravityslam_soundbank",
     "scrstr_8c8": [
         "tag_ability_hero"
     ],

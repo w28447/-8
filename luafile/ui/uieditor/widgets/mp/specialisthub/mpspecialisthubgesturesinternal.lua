@@ -120,7 +120,7 @@ CoD.MPSpecialistHUBGesturesInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 		end
 	end, function ( f13_arg0, f13_arg1, f13_arg2 )
 		if IsGamepad( f13_arg2 ) and CoD.ModelUtility.IsSelfModelValueTrue( f13_arg0, f13_arg2, "available" ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x52FB29ED3A3CA79, nil, nil )
+			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0xC083113BC81F23F], "menu/preview", nil, nil )
 			return true
 		else
 			return false

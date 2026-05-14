@@ -36,7 +36,7 @@ function init_shared()
     level.var_ccdda8d1 = params.setype;
     level.var_660293e0 = [];
     level.var_d3b05dcb = [];
-    level._effect[ #"hash_6024e139900c449a" ] = #"hash_3937ef26298b6caf";
+    level._effect[ #"wraith_fire_fire_light_fx" ] = #"hash_3937ef26298b6caf";
     weaponobjects::function_e6400478( #"eq_wraith_fire", &function_5ea93036, 1 );
     weaponobjects::function_e6400478( #"eq_wraith_fire_extra", &function_5ea93036, 1 );
     level.var_f9145520 = 0;
@@ -71,7 +71,7 @@ function function_4dbceded()
 {
     self waittill( #"death" );
     waittillframeend();
-    self notify( #"hash_51d0dcaebb5940a5" );
+    self notify( #"wraith_fire_deleted" );
 }
 
 // Namespace wraith_fire/wraith_fire
@@ -80,7 +80,7 @@ function function_4dbceded()
 // Size: 0x264
 function function_13f6636b( owner, weapon )
 {
-    self endon( #"hacked", #"hash_51d0dcaebb5940a5" );
+    self endon( #"hacked", #"wraith_fire_deleted" );
     assert( isdefined( weapon.customsettings ), "<dev string:x38>" + weapon.name );
     self thread function_4dbceded();
     team = self.team;
@@ -379,9 +379,9 @@ function function_8a03d3f3( owner, impactpos, startpos, normal, multiplier, rota
     locations[ #"tallfire" ] = [];
     locations[ #"smallfire" ] = [];
     locations[ #"steam" ] = [];
-    fxcount = customsettings.var_b650dc43;
+    fxcount = customsettings.molotov_fire_count;
     var_33ad9452 = isdefined( customsettings.var_bc24d9d3 ) ? customsettings.var_bc24d9d3 : 0;
-    fxcount = int( math::clamp( fxcount * multiplier + 6, 6, customsettings.var_b650dc43 ) );
+    fxcount = int( math::clamp( fxcount * multiplier + 6, 6, customsettings.molotov_fire_count ) );
     
     if ( multiplier < 0.04 )
     {
@@ -503,11 +503,11 @@ function function_8a03d3f3( owner, impactpos, startpos, normal, multiplier, rota
     {
         if ( isdefined( mdl_anchor ) )
         {
-            playfxontag( level._effect[ #"hash_6024e139900c449a" ], mdl_anchor, "tag_origin", 0 );
+            playfxontag( level._effect[ #"wraith_fire_fire_light_fx" ], mdl_anchor, "tag_origin", 0 );
         }
         else
         {
-            e_light_fx = playfx( level._effect[ #"hash_6024e139900c449a" ], var_6b23e1c9, forward, normal, 0, team );
+            e_light_fx = playfx( level._effect[ #"wraith_fire_fire_light_fx" ], var_6b23e1c9, forward, normal, 0, team );
             
             if ( !isdefined( level.var_d3b05dcb ) )
             {
@@ -633,7 +633,7 @@ function function_4e5a1dd3( mdl_anchor )
     // Size: 0xb4, Type: dev
     function incendiary_debug_line( from, to, color, depthtest, time )
     {
-        debug_rcbomb = getdvarint( #"hash_75de04766593ca0c", 0 );
+        debug_rcbomb = getdvarint( #"scr_wraith_fire_debug", 0 );
         
         if ( debug_rcbomb == 1 )
         {
@@ -746,7 +746,7 @@ function damageeffectarea( owner, position, killcament, normal, weapon, customse
             break;
         }
         
-        wait customsettings.var_90bd7d92;
+        wait customsettings.molotov_damage_interval;
     }
     
     arrayremovevalue( self.var_ebf0b1c9, undefined );
@@ -1202,10 +1202,10 @@ function damageinfirearea( origin, killcament, trace, position, weapon, customse
     self endon( #"death" );
     timer = 0;
     
-    if ( candofiredamage( killcament, self, customsettings.var_90bd7d92 ) )
+    if ( candofiredamage( killcament, self, customsettings.molotov_damage_interval ) )
     {
         /#
-            level.var_eb1010d2 = getdvarint( #"hash_75de04766593ca0c", 0 );
+            level.var_eb1010d2 = getdvarint( #"scr_wraith_fire_debug", 0 );
             
             if ( level.var_eb1010d2 )
             {
@@ -1318,7 +1318,7 @@ function hitpos( start, end, color )
     trace = bullettrace( start, end, 0, undefined );
     
     /#
-        level.var_eb1010d2 = getdvarint( #"hash_75de04766593ca0c", 0 );
+        level.var_eb1010d2 = getdvarint( #"scr_wraith_fire_debug", 0 );
         
         if ( level.var_eb1010d2 )
         {
@@ -1380,7 +1380,7 @@ function resetfiredamage( entnum, time )
 function function_85ff22aa( origin, radius, color, alpha, time )
 {
     /#
-        debug_fire = getdvarint( #"hash_66232b46a7e21dec", 0 );
+        debug_fire = getdvarint( #"debug_wraith_fire_fire", 0 );
         
         if ( debug_fire > 0 )
         {

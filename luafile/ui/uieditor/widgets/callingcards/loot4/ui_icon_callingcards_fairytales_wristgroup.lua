@@ -14,7 +14,7 @@ CoD.ui_icon_callingcards_fairytales_wristgroup.new = function ( f1_arg0, f1_arg1
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local wrist = LUI.UIImage.new( 0, 0, -91, 21, 0, 0, -43.5, 28.5 )
-	wrist:setImage( RegisterImage( 0x2B1088221AE1D01 ) )
+	wrist:setImage( RegisterImage( "uie_ui_icon_callingcards_fairytale_wrist" ) )
 	self:addElement( wrist )
 	self.wrist = wrist
 	

@@ -51,8 +51,8 @@ CoD.WZUtility.QuestItemUpdateTypes = {
 }
 CoD.WZUtility.ArmorAssetList = {
 	0x68173E016D45C2A,
-	0x8578856A247AB60,
-	0x6F80136C3B79D9E
+	"armor_item_medium",
+	"armor_item_small"
 }
 CoD.WZUtility.DisableZoomIn = {}
 CoD.WZUtility.DisableZoomOut = {}
@@ -148,7 +148,7 @@ local f0_local1 = {
 	0xCB6925EBE3BC0D6,
 	0xF8F3D92031F6F7,
 	0xEF408B2B3E35377,
-	0xF662B8266F6BE66,
+	"ar_an94_t8",
 	0x9B31EB328208B,
 	0xF1D38574585B35E,
 	0xF42BB0A766B63B4,
@@ -161,7 +161,7 @@ local f0_local1 = {
 	0x8B38FA134E54223,
 	0xF1F9926E48404F7,
 	0xB3E3BAE603F9641,
-	0xB73B6226AAA80F5,
+	"tr_midburst_t8",
 	0xDC98FE2DC7C7650,
 	0x328BAA07BF1D03B,
 	0xB2CB0CDA291AE11,
@@ -174,7 +174,7 @@ local f0_local1 = {
 	0x840B7B398F4BB83,
 	0x7B5B30F9AA8786C,
 	0x69CFF6935966A74,
-	0xB75A649C0E85983,
+	"sniper_powersemi_t8",
 	0x85D0D5E33D6802B,
 	0x9618269D014E1FE,
 	0x3D6E545E88450C5,
@@ -187,7 +187,7 @@ local f0_local1 = {
 	0x5A57559D3BDC159,
 	0x3D1FC53331A5B,
 	0xB0E53F588197120,
-	0x82D4D1D3EC87299,
+	"melee_club_t8",
 	0xC1FF1AD76B46DA2,
 	0xA44144DDCDC7A06
 }
@@ -875,7 +875,7 @@ end
 
 CoD.WZUtility.GetInventoryEquipText = function ( f78_arg0 )
 	if f78_arg0 == "killstreak" then
-		return 0xA56BF6A96B02984
+		return "menu/deploy"
 	else
 		return 0x38B775D97E72F0C
 	end
@@ -1307,11 +1307,11 @@ DataSources.HorizontalCompassPips = {
 			0x3F0AC03EEA3DB64
 		}
 		local f120_local6 = {
-			0x71DD096AE31E233,
+			"warzone/compass_northwest",
 			0xEBC7401C462CB11,
 			0x87488A61EAA0973,
 			0x6982C0C4CDC4751,
-			0x71DD096AE31E233,
+			"warzone/compass_northwest",
 			0xEBC7401C462CB11
 		}
 		local f120_local7 = 270
@@ -1442,7 +1442,7 @@ CoD.WZUtility.CreateCharacterCategoryDataSource = function ( f130_arg0, f130_arg
 					local f131_local11 = CoD.PlayerRoleUtility.IsRoleBMLocked( f131_arg0, f131_local2, f131_local29 )
 					local f131_local12 = f131_local11
 					local f131_local13
-					if f131_local30[0x9173E55822A88B5] == 1 or not CoD.PlayerRoleUtility.IsRoleUnlocked( f131_arg0, f131_local2, f131_local29 ) then
+					if f131_local30["lockcharacter"] == 1 or not CoD.PlayerRoleUtility.IsRoleUnlocked( f131_arg0, f131_local2, f131_local29 ) then
 						if f131_local30[0xC98250D6799E088] == 1 then
 							f131_local13 = not f131_local4
 						else
@@ -1547,7 +1547,7 @@ CoD.WZUtility.CreateCharacterCategoryDataSource = function ( f130_arg0, f130_arg
 									f131_local23.properties = {
 										characterIndex = f131_local29,
 										character = f131_local28,
-										sortIndex = f131_local30[0xD909934375BE707],
+										sortIndex = f131_local30["sortindex"],
 										selectIndex = f131_local16,
 										purchasable = f131_local15
 									}
@@ -1620,7 +1620,7 @@ CoD.WZUtility.CreateCharacterCategoryDataSource = function ( f130_arg0, f130_arg
 								f131_local23.properties = {
 									characterIndex = f131_local29,
 									character = f131_local28,
-									sortIndex = f131_local30[0xD909934375BE707],
+									sortIndex = f131_local30["sortindex"],
 									selectIndex = f131_local16,
 									purchasable = f131_local15
 								}
@@ -1693,7 +1693,7 @@ CoD.WZUtility.CreateCharacterCategoryDataSource = function ( f130_arg0, f130_arg
 						f131_local23.properties = {
 							characterIndex = f131_local29,
 							character = f131_local28,
-							sortIndex = f131_local30[0xD909934375BE707],
+							sortIndex = f131_local30["sortindex"],
 							selectIndex = f131_local16,
 							purchasable = f131_local15
 						}
@@ -2399,10 +2399,10 @@ end
 
 CoD.WZUtility.PrepareAttachmentsForWeaponId = function ( f167_arg0, f167_arg1, f167_arg2 )
 	local f167_local0 = {
-		0x77A5BA2B401E21F,
+		"weapon/optic",
 		0x5CD233DFC9B82A2,
 		0xD4083C0F1E954E5,
-		0xA7D7820F10FF00C,
+		"weapon/magazine",
 		0xFFFBEF52142B4AE,
 		0x16C441601DA8BEC
 	}
@@ -2962,7 +2962,7 @@ CoD.WZUtility.InitPlayerMarker = function ( f227_arg0, f227_arg1, f227_arg2, f22
 			local f230_local5 = Engine[0xE4D2F32833CFA6C]( f230_local2 )
 			local f230_local6 = f230_local5:create( "isMarkerIconPlaced" )
 			f230_local6:set( true )
-		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, 0x123261C89A0BC7A ) then
+		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, "teammate_waypoint_removed" ) then
 			local f230_local2 = f230_local1[1]
 			Engine.SendClientScriptNotify( f227_arg3, "teammate_waypoint_removed", {
 				clientNum = f230_local2,
@@ -4385,7 +4385,7 @@ CoD.WZUtility.AnyReinsertionsRemaining = function ( f356_arg0 )
 	local f356_local1 = f356_local0.reinsertionIndex:get()
 	local f356_local2 = f356_local0.collapseCount:get()
 	local f356_local3 = true
-	if Engine.GetGametypeSetting( 0x6F135D596EEEE7A ) == 1 then
+	if Engine.GetGametypeSetting( "wzenablewaverespawn" ) == 1 then
 		local f356_local4 = CoD.SafeGetModelValue( Engine.GetModelForController( f356_arg0 ), "hudItems.playerCanRedeploy" )
 		if not f356_local4 or f356_local4 <= 0 then
 			f356_local3 = false
@@ -4799,7 +4799,7 @@ CoD.WZUtility.IsWarzoneUIHidden = function ( f384_arg0, f384_arg1, f384_arg2 )
 	local f384_local0 = Engine.GetProfileVarInt( f384_arg0, f384_arg2 )
 	local f384_local1 = Engine.GetGametypeSetting( "maxTeamPlayers" )
 	if f384_local0 ~= nil then
-		if f384_local0 == Enum[0x893D841C87EFCD2][0xA9F1990B36EA121] then
+		if f384_local0 == Enum[0x893D841C87EFCD2]["warzone_show"] then
 			return false
 		elseif f384_local0 == Enum[0x893D841C87EFCD2][0xAF5BF04553FFD4A] then
 			return f384_local1 > 1

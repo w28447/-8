@@ -48,11 +48,11 @@ localizeentry,#mpui/camo_dante
 localizeentry,#mpui/sf
 localizeentry,#mpui/rf
 localizeentry,#hash_11cfa6d5f521dede
-localizeentry,#hash_11d17195d5833bc4
+localizeentry,#mpui/no_attachment
 localizeentry,#mpui/uber
 localizeentry,#mpui/barrelchoke_desc
 localizeentry,#hash_13f64b913a8510ce
-localizeentry,#hash_14b9981c6e3d2f76
+localizeentry,#menu/camo_active_treasure
 localizeentry,#mpui/camo_redhex
 localizeentry,#hash_15cf0d46af70291b
 localizeentry,#mpui/null
@@ -61,10 +61,10 @@ localizeentry,#hash_166b7f0f8f0d22fc
 localizeentry,#mpui/suppressed_desc
 localizeentry,#hash_17783814d047454c
 localizeentry,#hash_17c0eb37199a2d92
-localizeentry,#hash_17ede46111f44fec
+localizeentry,#mpui/no_attachment_desc
 localizeentry,#hash_18b7797e532aa1bb
 localizeentry,#mpui/uber_desc
-localizeentry,#hash_193c1c010f81e229
+localizeentry,#mpui/camo_active_rapid_kills
 localizeentry,#hash_1960a6223dd21d1a
 localizeentry,#mpui/barrelchoke
 localizeentry,#hash_1c07c87a45375aaf
@@ -96,7 +96,7 @@ localizeentry,#mpui/fmj2_desc
 localizeentry,#hash_28f8d698fe4d79d2
 localizeentry,#zmui/high_caliber_2_desc
 localizeentry,#mpui/holdbreath_desc
-localizeentry,#hash_29d1b41ee09e09b8
+localizeentry,#mpui/camo_active_kill_counter
 localizeentry,#hash_2a634db8501d93aa
 localizeentry,#hash_2aa6fa1848766679
 localizeentry,#hash_2b0fae1c09a3d8a9
@@ -106,7 +106,7 @@ localizeentry,#mpui/camo_ardent
 localizeentry,#mpui/acog_desc
 localizeentry,#mpui/stabilizer_desc
 localizeentry,#mpui/holdbreath
-localizeentry,#hash_2cab672fd372f942
+localizeentry,#menu/camo_active_mystic
 localizeentry,#hash_2d003d6a1240093c
 localizeentry,#hash_2d85a60f366822d1
 localizeentry,#mpui/reflex
@@ -119,7 +119,7 @@ localizeentry,#hash_30f532e9051a3691
 localizeentry,#hash_31e9d057a03398bf
 localizeentry,#hash_3279150dc6bd1b3b
 localizeentry,#mpui/camo_snowjob
-localizeentry,#hash_33105d49e7fd102e
+localizeentry,#menu/camo_active_brains
 localizeentry,#hash_33c5a3d6ed967788
 localizeentry,#hash_33f013eacb53964c
 localizeentry,#mpui/holo_desc
@@ -127,7 +127,7 @@ localizeentry,#mpui/quickdraw2
 localizeentry,#hash_360742434808cf8e
 localizeentry,#hash_3640fdfd426ba4b4
 localizeentry,#hash_366888e106b2bbb3
-localizeentry,#hash_367dd4c3c93edc80
+localizeentry,#menu/camo_active_115
 localizeentry,#hash_36be4a2f9e325b50
 localizeentry,#mpui/fmj
 localizeentry,#hash_3824d76b4a721017
@@ -138,14 +138,14 @@ localizeentry,#hash_3916397fbdb60669
 localizeentry,#mpui/killcounter
 localizeentry,#mpui/extbarrel2
 localizeentry,#mpui/grip_desc
-localizeentry,#hash_39bac218bf0160b1
+localizeentry,#mpui/reticle_color_1
 localizeentry,#hash_3a294441722f3c4d
 localizeentry,#mpui/reddot_desc
 localizeentry,#hash_3ae42f7d6eabab5a
 localizeentry,#mpui/camo_darkmatter
 localizeentry,#menu/multiplayer_desc
 localizeentry,#hash_3ca968dee9e5dc02
-localizeentry,#hash_3cbdafac7f4a7bd2
+localizeentry,#menu/camo_active_spinal
 localizeentry,#hash_3d26eb8dafae98e9
 localizeentry,#zmui/suppressor_desc
 localizeentry,#mpui/tacknife
@@ -244,7 +244,7 @@ localizeentry,#mpui/reddot
 localizeentry,#hash_627f640830ae263b
 localizeentry,#hash_628b6122d68a8d45
 localizeentry,#hash_629d187300caa85d
-localizeentry,#hash_6370b5a97249c317
+localizeentry,#feature/gun_tag
 localizeentry,#mpui/camo_6speed
 localizeentry,#mpui/clantag
 localizeentry,#hash_644187f4990e9841
@@ -267,7 +267,7 @@ localizeentry,#hash_6c1e82cce2e2763e
 localizeentry,#hash_6c8d7834e1591a50
 localizeentry,#mpui/camo_wmd
 localizeentry,#hash_6e155a8da74ae1b6
-localizeentry,#hash_6e2fd7423cbe42b0
+localizeentry,#mpui/camo_active_objective_kills
 localizeentry,#hash_6e86b49d6d5196af
 localizeentry,#mpui/rangefinder
 localizeentry,#mpui/stabilizer
@@ -288,7 +288,7 @@ localizeentry,#hash_768c5aeecc2d7cc4
 localizeentry,#mpui/grip2_desc
 localizeentry,#hash_7725a43a5e8755ad
 localizeentry,#hash_77dce7635423ba68
-localizeentry,#hash_77f9d83f9e77c0d3
+localizeentry,#menu/camo_active_celestial
 localizeentry,#hash_7833cc16d9fa0749
 localizeentry,#mpui/rf_desc
 localizeentry,#mpui/mk_desc
@@ -301,7 +301,7 @@ localizeentry,#mpui/dw_desc
 localizeentry,#hash_7a780871028530f5
 localizeentry,#hash_7a899f8fa9163c6e
 localizeentry,#mpui/rangefinder_desc
-localizeentry,#hash_7bbe615a9a441e5f
+localizeentry,#feature/gun_emblem
 localizeentry,#hash_7bf8bcf55e2bd26e
 localizeentry,#mpui/mms
 localizeentry,#hash_7d3e69af1a992cec

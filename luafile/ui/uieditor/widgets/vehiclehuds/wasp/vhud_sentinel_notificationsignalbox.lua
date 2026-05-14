@@ -9,7 +9,7 @@ CoD.vhud_sentinel_NotificationSignalBox.new = function ( f1_arg0, f1_arg1, f1_ar
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local STRONG = LUI.UIText.new( 0, 1, 0, 0, 0, 0, 10, 34 )
-	STRONG:setText( Engine[0xF9F1239CFD921FE]( 0x2E90397EC44E953 ) )
+	STRONG:setText( Engine[0xF9F1239CFD921FE]( "menu/hud_vehicle_strong" ) )
 	STRONG:setTTF( "default" )
 	STRONG:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xD756CD9A5F1F1B4 ) )
 	STRONG:setShaderVector( 0, 0, 1, 0, 0 )
@@ -24,7 +24,7 @@ CoD.vhud_sentinel_NotificationSignalBox.new = function ( f1_arg0, f1_arg1, f1_ar
 	self.STRONG = STRONG
 	
 	local STRONG0 = LUI.UIText.new( 0, 1, 0, 0, 0, 0, 10, 34 )
-	STRONG0:setText( Engine[0xF9F1239CFD921FE]( 0x2E90397EC44E953 ) )
+	STRONG0:setText( Engine[0xF9F1239CFD921FE]( "menu/hud_vehicle_strong" ) )
 	STRONG0:setTTF( "default" )
 	STRONG0:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	STRONG0:setLetterSpacing( 6 )

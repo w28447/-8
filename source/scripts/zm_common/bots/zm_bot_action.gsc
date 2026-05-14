@@ -44,8 +44,8 @@ function __main__()
 function register_actions()
 {
     bot_action::register_action( #"melee_zombie_enemy", &bot_action::current_melee_weapon_rank, &function_aa4daa54, &bot_action::melee_enemy );
-    bot_action::register_action( #"hash_22d98a5a241c78ba", &bot_action::rank_priority, &function_b4d8b7d6, &function_3c22de9a );
-    bot_action::register_action( #"hash_5c2824c8a8f125f7", &bot_action::rank_priority, &function_ae19f70f, &function_2c6e5988 );
+    bot_action::register_action( #"use_zombie_interact", &bot_action::rank_priority, &function_b4d8b7d6, &use_zombie_interact );
+    bot_action::register_action( #"use_zombie_weapon_upgrade", &bot_action::rank_priority, &function_ae19f70f, &use_zombie_weapon_upgrade );
     bot_action::register_action( #"zombie_auto_revive", &bot_action::rank_priority, &function_f4707540, &zombie_auto_revive );
     bot_action::register_action( #"zombie_reload_weapon", &bot_action::current_weapon_rank, &bot_action::reload_weapon_weight, &zombie_reload_weapon );
     bot_action::register_action( #"zombie_revive_player", &bot_action::rank_priority, &function_296516b4, &bot_action::revive_player );
@@ -120,7 +120,7 @@ function throw_chakram( actionparams )
             self bottapbutton( 24 );
         }
         
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
     }
 }
 
@@ -237,7 +237,7 @@ function function_ef04e9cc( actionparams )
     
     while ( self isswitchingweapons() )
     {
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
     }
 }
 
@@ -467,7 +467,7 @@ function function_ae19f70f( actionparams )
 function function_99428ae2( actionparams )
 {
     self notify( #"hash_782d5f24975a7cd1" );
-    self endon( #"hash_782d5f24975a7cd1", #"hash_5b4f399c08222e2", #"death", #"entering_last_stand", #"enter_vehicle", #"animscripted_start", #"hash_1728f8b5de3bde13" );
+    self endon( #"hash_782d5f24975a7cd1", #"bot_action_stop", #"death", #"entering_last_stand", #"enter_vehicle", #"animscripted_start", #"hash_1728f8b5de3bde13" );
     level endon( #"game_ended" );
     self waittill( #"wallbuy_done" );
     actionparams.var_d9c6fa12 = 1;
@@ -489,7 +489,7 @@ function private function_f59547eb( trigger )
 // Params 1
 // Checksum 0x87de6fc6, Offset: 0x1570
 // Size: 0x84
-function function_2c6e5988( actionparams )
+function use_zombie_weapon_upgrade( actionparams )
 {
     zombie_weapon_upgrade = actionparams.zombie_weapon_upgrade;
     trigger = zombie_weapon_upgrade.trigger_stub.playertrigger[ self getentitynumber() ];
@@ -639,7 +639,7 @@ function function_b4d8b7d6( actionparams )
 // Params 1
 // Checksum 0xb0f5bd1f, Offset: 0x1b28
 // Size: 0xa4
-function function_3c22de9a( actionparams )
+function use_zombie_interact( actionparams )
 {
     trigger = function_d41104ab( actionparams.interact );
     self bottapbutton( 3 );
@@ -701,7 +701,7 @@ function zombie_scan_for_threats( actionparams )
             self bot_action::function_c17972fc();
         }
         
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
         targetvisible = self bot_action::is_target_visible( actionparams );
     }
 }
@@ -719,7 +719,7 @@ function zombie_reload_weapon( actionparams )
         self bottapbutton( 4 );
     }
     
-    self waittill( #"hash_347a612b61067eb3" );
+    self waittill( #"bot_action_update" );
     
     while ( self isreloading() )
     {
@@ -754,7 +754,7 @@ function zombie_reload_weapon( actionparams )
             self bot_action::function_c17972fc();
         }
         
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
     }
 }
 

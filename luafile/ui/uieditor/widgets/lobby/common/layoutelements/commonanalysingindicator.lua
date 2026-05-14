@@ -52,7 +52,7 @@ CoD.CommonAnalysingIndicator.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local ConnectedText = LUI.UIImage.new( 0, 0, 81.5, 181.5, 0, 0, 20.5, 52.5 )
 	ConnectedText:setAlpha( 0 )
-	ConnectedText:setImage( RegisterImage( 0x67F8C000069CCEE ) )
+	ConnectedText:setImage( RegisterImage( "uie_ui_menu_inspection_connected_text" ) )
 	ConnectedText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	ConnectedText:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ConnectedText )
@@ -60,7 +60,7 @@ CoD.CommonAnalysingIndicator.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local ConnectedTextDepth = LUI.UIImage.new( 0, 0, 81.5, 181.5, 0, 0, 20.5, 52.5 )
 	ConnectedTextDepth:setAlpha( 0 )
-	ConnectedTextDepth:setImage( RegisterImage( 0x67F8C000069CCEE ) )
+	ConnectedTextDepth:setImage( RegisterImage( "uie_ui_menu_inspection_connected_text" ) )
 	ConnectedTextDepth:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	ConnectedTextDepth:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ConnectedTextDepth )
@@ -68,7 +68,7 @@ CoD.CommonAnalysingIndicator.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local Arrow = LUI.UIImage.new( 0, 0, 58.5, 70.5, 0, 0, 41.5, 53.5 )
 	Arrow:setZRot( -90 )
-	Arrow:setImage( RegisterImage( 0x2764FF85084B3A4 ) )
+	Arrow:setImage( RegisterImage( "uie_ui_menu_social_emblem_corner" ) )
 	Arrow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	Arrow:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Arrow )

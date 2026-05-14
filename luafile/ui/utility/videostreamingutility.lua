@@ -81,7 +81,7 @@ CoD.VideoStreamingUtility.LiveEventNewQualities = function ( f6_arg0 )
 						if f6_local2 then
 							f6_local2 = false
 							f6_local3 = true
-							f6_local11 = Engine[0xF9F1239CFD921FE]( 0x56E3C9DF1FEE64 )
+							f6_local11 = Engine[0xF9F1239CFD921FE]( "menu/mlg_quality_best" )
 						else
 							f6_local11 = Engine[0xF9F1239CFD921FE]( 0xB961CE5CE287588, f6_local10 )
 							if not f6_local3 and f6_local10 == f6_local1 then
@@ -284,11 +284,11 @@ CoD.VideoStreamingUtility.MLGUniqueIdToURL = function ( f22_arg0, f22_arg1, f22_
 					end
 				end
 			end
-			LuaUtils.UI_ShowErrorMessageDialog( f22_arg1, 0x2D63571522A693D, 0x127999393F1681 )
+			LuaUtils.UI_ShowErrorMessageDialog( f22_arg1, 0x2D63571522A693D, "menu/error_caps" )
 		end )
 	else
 		Engine.PrintError( Enum[0x7A63DCD561B0FA8][0x1725ABF82092BD8], "MLG Organization ID is invalid for current platform. No VoDs can be downloaded.\n" )
-		LuaUtils.UI_ShowErrorMessageDialog( f22_arg1, 0x2D63571522A693D, 0x127999393F1681 )
+		LuaUtils.UI_ShowErrorMessageDialog( f22_arg1, 0x2D63571522A693D, "menu/error_caps" )
 	end
 end
 

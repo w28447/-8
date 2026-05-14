@@ -1,9 +1,9 @@
-CoD[0xA90B69ECEBAE127] = InheritFrom( LUI.UIElement )
-CoD[0xA90B69ECEBAE127].__defaultWidth = 960
-CoD[0xA90B69ECEBAE127].__defaultHeight = 240
-CoD[0xA90B69ECEBAE127].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD["callingcards_wz_heroics_master"] = InheritFrom( LUI.UIElement )
+CoD["callingcards_wz_heroics_master"].__defaultWidth = 960
+CoD["callingcards_wz_heroics_master"].__defaultHeight = 240
+CoD["callingcards_wz_heroics_master"].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0xA90B69ECEBAE127] )
+	self:setClass( CoD["callingcards_wz_heroics_master"] )
 	self.id = "CallingCards_wz_Heroics_Master"
 	self.soundSet = "default"
 	f1_arg0:addElementToPendingUpdateStateList( self )
@@ -68,7 +68,7 @@ CoD[0xA90B69ECEBAE127].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local bullets = LUI.UIImage.new( 0, 0, 330, 562, 0, 0, 91, 165 )
 	bullets:setZRot( 7 )
 	bullets:setScale( 0.8, 1 )
-	bullets:setImage( RegisterImage( 0x9395081C1C3E0B1 ) )
+	bullets:setImage( RegisterImage( "uie_grunt_bullet_shot" ) )
 	bullets:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	bullets:setShaderVector( 0, 0, 6, 0, 0 )
 	bullets:setShaderVector( 1, 15, 0, 0, 0 )
@@ -88,7 +88,7 @@ CoD[0xA90B69ECEBAE127].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0xA90B69ECEBAE127].__resetProperties = function ( f2_arg0 )
+CoD["callingcards_wz_heroics_master"].__resetProperties = function ( f2_arg0 )
 	f2_arg0.soldier1:completeAnimation()
 	f2_arg0.soldier2:completeAnimation()
 	f2_arg0.glows:completeAnimation()
@@ -99,7 +99,7 @@ CoD[0xA90B69ECEBAE127].__resetProperties = function ( f2_arg0 )
 	f2_arg0.bullets:setAlpha( 1 )
 end
 
-CoD[0xA90B69ECEBAE127].__clipsPerState = {
+CoD["callingcards_wz_heroics_master"].__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()

@@ -75,7 +75,7 @@ LUI.createMenu.FTUEWZProgressionMenu = function ( f1_arg0, f1_arg1 )
 	self.Echelon60Info = Echelon60Info
 	
 	local Echelon80Info = CoD.FTUEWZProgressionWidget.new( f1_local1, f1_arg0, 0.5, 0.5, 36, 313, 0, 0, 110.5, 410.5 )
-	Echelon80Info.EchelonImage:setImage( RegisterImage( 0xD6CFE6E8E76E445 ) )
+	Echelon80Info.EchelonImage:setImage( RegisterImage( "ui_icon_rank_wz_level80_large" ) )
 	Echelon80Info.EchelonTitle:setText( Engine[0xF9F1239CFD921FE]( 0xA3A998EB2BFD676 ) )
 	Echelon80Info.EchelonIndex:setText( LocalizeStringWithParameter( 0x294790D215078A9, 80 ) )
 	self:addElement( Echelon80Info )

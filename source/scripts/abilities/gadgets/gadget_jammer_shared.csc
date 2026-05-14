@@ -118,7 +118,7 @@ function player_isjammed( localclientnum, oldval, newval, bnewent, binitialsnap,
         self notify( #"stop_sounds" );
         self postfx::playpostfxbundle( #"hash_3a2aaa69f5eeab6f" );
         playsound( localclientnum, #"hash_4a43757dd4b02977" );
-        level.var_6d8e6535[ localclientnum ] = function_604c9983( localclientnum, #"hash_2be3b9789976a6b" );
+        level.var_6d8e6535[ localclientnum ] = function_604c9983( localclientnum, #"mpl_emp_static_loop" );
         self thread function_e9e14905( localclientnum );
         return;
     }
@@ -159,13 +159,13 @@ function function_4a82368f( local_client_num, oldval, newval, bnewent, binitials
 {
     if ( newval == 1 )
     {
-        self postfx::playpostfxbundle( #"hash_68b6dee9bf4fbfbe" );
+        self postfx::playpostfxbundle( #"pstfx_disrupted_mantis" );
         return;
     }
     
     if ( newval == 0 )
     {
-        self postfx::stoppostfxbundle( #"hash_68b6dee9bf4fbfbe" );
+        self postfx::stoppostfxbundle( #"pstfx_disrupted_mantis" );
     }
 }
 

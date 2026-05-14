@@ -43,8 +43,8 @@ function __init__()
     globallogic_score::function_82fb1afa( level.spawnbeaconsettings.beaconweapon, &function_5bfd1343 );
     globallogic_score::function_2b2c09db( level.spawnbeaconsettings.beaconweapon, &function_3e8ff788 );
     globallogic_score::function_b150f9ac( level.spawnbeaconsettings.beaconweapon, &function_cdeb9089 );
-    deployable::register_deployable( getweapon( #"hash_7ab3f9a730359659" ), &function_9aafb7bb, undefined );
-    weaponobjects::function_e6400478( #"hash_7ab3f9a730359659", &function_d80ff6a7, 1 );
+    deployable::register_deployable( getweapon( #"spawn_beacon_held" ), &function_9aafb7bb, undefined );
+    weaponobjects::function_e6400478( #"spawn_beacon_held", &function_d80ff6a7, 1 );
     function_50e42513();
     setupspawnlists();
 }
@@ -215,7 +215,7 @@ function playerspawnedfromspawnbeacon( spawnbeacon, var_d8f817bc )
     
     if ( level.gametype === "dm" || level.gametype === "dm_hc" )
     {
-        spawnbeacon.health -= isdefined( level.spawnbeaconsettings.settingsbundle.var_ebe18d92 ) ? level.spawnbeaconsettings.settingsbundle.var_ebe18d92 : 0;
+        spawnbeacon.health -= isdefined( level.spawnbeaconsettings.settingsbundle.dmhealthdeductionperspawn ) ? level.spawnbeaconsettings.settingsbundle.dmhealthdeductionperspawn : 0;
     }
     else
     {
@@ -472,7 +472,7 @@ function private function_e67b6bd( player )
     spawnbeacon.alivetime = ( isdefined( spawnbeacon.alivetime ) ? spawnbeacon.alivetime : 0 ) + float( gettime() - ( isdefined( spawnbeacon.var_1df612a0 ) ? spawnbeacon.var_1df612a0 : spawnbeacon.birthtime ) ) / 1000;
     remainingtime = ( isdefined( level.spawnbeaconsettings.settingsbundle.timeout ) ? level.spawnbeaconsettings.settingsbundle.timeout : 0 ) - spawnbeacon.alivetime;
     
-    if ( remainingtime <= ( isdefined( level.spawnbeaconsettings.settingsbundle.var_a0ffd0e4 ) ? level.spawnbeaconsettings.settingsbundle.var_a0ffd0e4 : 0 ) )
+    if ( remainingtime <= ( isdefined( level.spawnbeaconsettings.settingsbundle.minimumalivetime ) ? level.spawnbeaconsettings.settingsbundle.minimumalivetime : 0 ) )
     {
         return;
     }
@@ -497,7 +497,7 @@ function private function_e67b6bd( player )
     level.spawnbeaconsettings.beacons[ spawnbeacon.objectiveid ] = undefined;
     userspawnselection::removespawnbeacon( spawnbeacon.objectiveid );
     objective_delete( spawnbeacon.objectiveid );
-    heldweapon = getweapon( #"hash_7ab3f9a730359659" );
+    heldweapon = getweapon( #"spawn_beacon_held" );
     spawnbeacon.owner giveweapon( heldweapon );
     spawnbeacon.owner switchtoweapon( heldweapon, 1 );
     spawnbeacon.owner disableweaponcycling();
@@ -510,7 +510,7 @@ function private function_e67b6bd( player )
         player playsound( level.spawnbeaconsettings.settingsbundle.pickupaudio );
     }
     
-    spawnbeacon.owner.var_c4a4cb7d = self;
+    spawnbeacon.owner.heldbeacon = self;
     spawnbeacon.var_ca3a0f16 = 1;
 }
 
@@ -520,17 +520,17 @@ function private function_e67b6bd( player )
 // Size: 0x5ac
 function function_f989dc0a( watcher, owner )
 {
-    if ( !isdefined( owner ) || !isdefined( owner.var_c4a4cb7d ) )
+    if ( !isdefined( owner ) || !isdefined( owner.heldbeacon ) )
     {
         return;
     }
     
-    spawnbeacon = owner.var_c4a4cb7d.parentobj;
+    spawnbeacon = owner.heldbeacon.parentobj;
     spawnbeacon endon( #"death" );
     spawnbeacon thread weaponobjects::onspawnuseweaponobject( watcher, owner );
     spawnbeacon.var_ca3a0f16 = 0;
     
-    if ( !( isdefined( owner.var_c4a4cb7d.previouslyhacked ) && owner.var_c4a4cb7d.previouslyhacked ) )
+    if ( !( isdefined( owner.heldbeacon.previouslyhacked ) && owner.heldbeacon.previouslyhacked ) )
     {
         if ( isdefined( owner ) )
         {
@@ -551,7 +551,7 @@ function function_f989dc0a( watcher, owner )
             createspawngroupforspawnbeacon( spawnbeacon, spawnbeacon.var_9bab32d9.spawns );
         }
         
-        owner takeweapon( getweapon( #"hash_7ab3f9a730359659" ) );
+        owner takeweapon( getweapon( #"spawn_beacon_held" ) );
         owner enableweaponcycling();
         owner enableoffhandweapons();
         owner enableoffhandspecial();

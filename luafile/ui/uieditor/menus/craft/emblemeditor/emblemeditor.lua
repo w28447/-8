@@ -548,7 +548,7 @@ LUI.createMenu.EmblemEditor = function ( f1_arg0, f1_arg1 )
 			return false
 		end
 	end, false )
-	layerGrid:AddContextualMenuAction( f1_local1, f1_arg0, 0x972C68080927021, function ( f58_arg0, f58_arg1, f58_arg2, f58_arg3 )
+	layerGrid:AddContextualMenuAction( f1_local1, f1_arg0, "menu/emblem_link_layers", function ( f58_arg0, f58_arg1, f58_arg2, f58_arg3 )
 		if not CoD.CraftUtility.IsLayerEmpty( self, f58_arg0, f58_arg2 ) and not CoD.CraftUtility.Emblem_IsLayerGrouped( f58_arg0, f58_arg2 ) and not CoD.CraftUtility.Emblems_IsLayerLinked( f58_arg0, f58_arg2 ) then
 			return function ( f59_arg0, f59_arg1, f59_arg2, f59_arg3 )
 				CoD.CraftUtility.EmblemEditor_LayerGainFocus( f59_arg1, self, f59_arg0, f59_arg2 )
@@ -572,7 +572,7 @@ LUI.createMenu.EmblemEditor = function ( f1_arg0, f1_arg1 )
 			
 		end
 	end )
-	layerGrid:AddContextualMenuAction( f1_local1, f1_arg0, 0xE4FD6AD543818C0, function ( f62_arg0, f62_arg1, f62_arg2, f62_arg3 )
+	layerGrid:AddContextualMenuAction( f1_local1, f1_arg0, "menu/emblem_cut_layer", function ( f62_arg0, f62_arg1, f62_arg2, f62_arg3 )
 		if not CoD.CraftUtility.IsLayerEmpty( self, f62_arg0, f62_arg2 ) then
 			return function ( f63_arg0, f63_arg1, f63_arg2, f63_arg3 )
 				CoD.CraftUtility.EmblemEditor_LayerGainFocus( f63_arg1, self, f63_arg0, f63_arg2 )
@@ -584,7 +584,7 @@ LUI.createMenu.EmblemEditor = function ( f1_arg0, f1_arg1 )
 			
 		end
 	end )
-	layerGrid:AddContextualMenuAction( f1_local1, f1_arg0, 0x5AEC3D591F4359E, function ( f64_arg0, f64_arg1, f64_arg2, f64_arg3 )
+	layerGrid:AddContextualMenuAction( f1_local1, f1_arg0, "menu/copy", function ( f64_arg0, f64_arg1, f64_arg2, f64_arg3 )
 		if not CoD.CraftUtility.IsLayerEmpty( self, f64_arg0, f64_arg2 ) then
 			return function ( f65_arg0, f65_arg1, f65_arg2, f65_arg3 )
 				CoD.CraftUtility.EmblemEditor_LayerGainFocus( f65_arg1, self, f65_arg0, f65_arg2 )
@@ -597,7 +597,7 @@ LUI.createMenu.EmblemEditor = function ( f1_arg0, f1_arg1 )
 			
 		end
 	end )
-	layerGrid:AddContextualMenuAction( f1_local1, f1_arg0, 0xC557F1B0FF34983, function ( f66_arg0, f66_arg1, f66_arg2, f66_arg3 )
+	layerGrid:AddContextualMenuAction( f1_local1, f1_arg0, "menu/emblem_layer_paste", function ( f66_arg0, f66_arg1, f66_arg2, f66_arg3 )
 		if not CoD.CraftUtility.IsClipboardEmpty( f66_arg2 ) and CoD.CraftUtility.Emblem_CanPastFromClipboard( f66_arg0, f66_arg2 ) then
 			return function ( f67_arg0, f67_arg1, f67_arg2, f67_arg3 )
 				CoD.CraftUtility.EmblemEditor_LayerGainFocus( f67_arg1, self, f67_arg0, f67_arg2 )
@@ -1982,10 +1982,10 @@ LUI.createMenu.EmblemEditor = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f199_arg0, f199_arg1, f199_arg2 )
 		if CoD.CraftUtility.IsBrowseMode( f199_arg2 ) and IsPC() then
-			CoD.Menu.SetButtonLabel( f199_arg1, Enum.LUIButton[0x22361E23588705A], 0x2FA47140D97F89D, nil, "ui_contextual_1" )
+			CoD.Menu.SetButtonLabel( f199_arg1, Enum.LUIButton[0x22361E23588705A], "menu/options_caps", nil, "ui_contextual_1" )
 			return true
 		elseif CoD.CraftUtility.IsBrowseMode( f199_arg2 ) then
-			CoD.Menu.SetButtonLabel( f199_arg1, Enum.LUIButton[0x22361E23588705A], 0x2FA47140D97F89D, nil, "ui_contextual_1" )
+			CoD.Menu.SetButtonLabel( f199_arg1, Enum.LUIButton[0x22361E23588705A], "menu/options_caps", nil, "ui_contextual_1" )
 			return true
 		elseif CoD.CraftUtility.IsEditMode( f199_arg2 ) then
 			CoD.Menu.SetButtonLabel( f199_arg1, Enum.LUIButton[0x22361E23588705A], 0x0, nil, "ui_contextual_1" )

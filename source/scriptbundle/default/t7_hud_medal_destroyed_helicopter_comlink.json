@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_destroyed_helicopter_comlink",
     "backinglarge": "image#t7_hud_medal_backing_scorestreak_killjoy_lrg",
     "iconsmall": "image#t7_hud_medal_destroyed_helicopter_comlink",
-    "stringref": "localized17#hash_7c2dd7f198cf61c3",
+    "stringref": "localized17#medal/destroyed_heli_comlink",
     "iconlarge": "image#t7_hud_medal_destroyed_helicopter_comlink_lrg"
 }

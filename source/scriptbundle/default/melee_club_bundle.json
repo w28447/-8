@@ -1,10 +1,10 @@
 {
     "buttonimage": "image#ui_icon_blackmarket_promos_melee_polynesian_club_button_small",
     "popupimage": "image#ui_icon_blackmarket_promos_melee_polynesian_club_large_preview",
-    "nametext": "localized17#hash_51b07b0c2119b31b",
+    "nametext": "localized17#menu/melee_club_bundle",
     "categorytext": "localized17#hash_30951b5b7749b8df",
     "name": "melee_club_bundle",
-    "desctext": "localized17#hash_f867f03a9396ecd",
+    "desctext": "localized17#menu/melee_club_bundle_desc",
     "previewimage": "image#ui_icon_blackmarket_promos_melee_polynesian_club_item_detail",
     "reserveimage": "image#ui_icon_blackmarket_promos_melee_polynesian_club_button_large"
 }

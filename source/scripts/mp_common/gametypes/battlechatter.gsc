@@ -672,7 +672,7 @@ function pain_vox( meansofdeath, weapon )
         }
         else if ( meansofdeath == "MOD_MELEE" )
         {
-            dialogkey = playerbundle.var_b801796c;
+            dialogkey = playerbundle.exertpainpunched;
         }
         else
         {
@@ -949,7 +949,7 @@ function function_bd715920( var_28b40381, attacker, eventorigin, eventobject, ti
         case #"eq_hawk":
         case #"frag_grenade":
         case #"eq_swat_grenade":
-        case #"hash_3f62a872201cd1ce":
+        case #"swat_grenade_payload":
         case #"hash_5825488ac68418af":
         case #"eq_cluster_semtex_grenade":
         case #"eq_slow_grenade":
@@ -1091,7 +1091,7 @@ function private function_95e44f78( weapon, timedelay )
             dialogkey = playerbundle.var_fa5db24c;
             break;
         case #"eq_concertina_wire":
-            dialogkey = playerbundle.var_b51a051a;
+            dialogkey = playerbundle.concertinawireweaponthreat;
             break;
         case #"eq_slow_grenade":
         case #"concussion_grenade":
@@ -1105,7 +1105,7 @@ function private function_95e44f78( weapon, timedelay )
             dialogkey = playerbundle.var_35e44265;
             break;
         case #"eq_swat_grenade":
-        case #"hash_3f62a872201cd1ce":
+        case #"swat_grenade_payload":
         case #"hash_5825488ac68418af":
             dialogkey = playerbundle.var_29a98af1;
             break;
@@ -1122,7 +1122,7 @@ function private function_95e44f78( weapon, timedelay )
             dialogkey = playerbundle.var_e6d1c1e3;
             break;
         case #"ability_smart_cover":
-            dialogkey = playerbundle.var_efb67b32;
+            dialogkey = playerbundle.smartcoverweaponthreat;
             break;
         case #"gadget_supplypod":
             dialogkey = playerbundle.var_2339275b;
@@ -1137,10 +1137,10 @@ function private function_95e44f78( weapon, timedelay )
             dialogkey = playerbundle.var_606d0b06;
             break;
         case #"eq_tripwire":
-            dialogkey = playerbundle.var_6f89cd5;
+            dialogkey = playerbundle.tripwireweaponthreat;
             break;
         case #"gadget_spawnbeacon":
-            dialogkey = playerbundle.var_1b7e4074;
+            dialogkey = playerbundle.spawnbeaconweaponthreat;
             break;
         case #"eq_molotov":
             dialogkey = playerbundle.var_c4b4c50e;
@@ -1149,7 +1149,7 @@ function private function_95e44f78( weapon, timedelay )
             dialogkey = playerbundle.var_27b0d135;
             break;
         case #"gadget_icepick":
-            dialogkey = playerbundle.var_e21e8b0a;
+            dialogkey = playerbundle.icepickweaponthreat;
             break;
         case #"eq_hawk":
             dialogkey = playerbundle.var_f1416960;
@@ -1757,16 +1757,16 @@ function function_f5c48bfa( attacker, owner, gadgetweapon, attackerweapon )
     switch ( gadgetweapon.name )
     {
         case #"eq_sensor":
-            dialogkey = playerbundle.var_6f728fb2;
+            dialogkey = playerbundle.sensordartweapondestroyed;
             break;
         case #"gadget_spawnbeacon":
-            dialogkey = playerbundle.var_d2fd550a;
+            dialogkey = playerbundle.spawnbeaconweapondestroyed;
             break;
         case #"claymore":
-            dialogkey = playerbundle.var_827669e9;
+            dialogkey = playerbundle.claymoreweapondestroyed;
             break;
         case #"eq_concertina_wire":
-            dialogkey = playerbundle.var_e4bd50dc;
+            dialogkey = playerbundle.concertinawireweapondestroyed;
             break;
         case #"gun_mini_turret":
             dialogkey = playerbundle.var_1b6223ae;
@@ -1775,29 +1775,29 @@ function function_f5c48bfa( attacker, owner, gadgetweapon, attackerweapon )
             dialogkey = playerbundle.dogweapondestroyed;
             break;
         case #"seeker_mine_arc":
-            dialogkey = playerbundle.var_e79fdef1;
+            dialogkey = playerbundle.seekermineweapondestroyed;
             var_45a3f7df = 1;
             break;
         case #"ability_smart_cover":
-            dialogkey = playerbundle.var_1ab815cb;
+            dialogkey = playerbundle.smartcoverweapondestroyed;
             break;
         case #"gadget_supplypod":
             dialogkey = playerbundle.supplypodweapondestroyed;
             break;
         case #"eq_tripwire":
-            dialogkey = playerbundle.var_63661ff;
+            dialogkey = playerbundle.tripwireweapondestroyed;
             break;
         case #"trophy_system":
-            dialogkey = playerbundle.var_faa66cb4;
+            dialogkey = playerbundle.trophysystemweapondestroyed;
             break;
         case #"eq_emp_grenade":
-            dialogkey = playerbundle.var_bbc9856;
+            dialogkey = playerbundle.jammerweapondestroyed;
             break;
         case #"eq_hawk":
             dialogkey = playerbundle.hawkweapondestroyed;
             break;
         case #"eq_shroud":
-            dialogkey = playerbundle.var_987d028;
+            dialogkey = playerbundle.shroudweapondestroyed;
             break;
         default:
             return;
@@ -2951,7 +2951,7 @@ function play_gadget_ready( weapon, userflip = 0 )
             dialogkey = playerbundle.var_d294848f;
             break;
         case #"ability_smart_cover":
-            dialogkey = playerbundle.var_47d3c3bd;
+            dialogkey = playerbundle.smartcoverweaponready;
             break;
         case #"mute_smoke":
             dialogkey = playerbundle.var_7b1fe307;
@@ -2978,7 +2978,7 @@ function play_gadget_ready( weapon, userflip = 0 )
             dialogkey = playerbundle.warmachineweaponready;
             break;
         case #"eq_swat_grenade":
-        case #"hash_3f62a872201cd1ce":
+        case #"swat_grenade_payload":
         case #"hash_5825488ac68418af":
             dialogkey = playerbundle.var_cb080e91;
             break;
@@ -2986,19 +2986,19 @@ function play_gadget_ready( weapon, userflip = 0 )
             dialogkey = playerbundle.semtexready;
             break;
         case #"eq_concertina_wire":
-            dialogkey = playerbundle.var_b55793d6;
+            dialogkey = playerbundle.concertinawireweaponready;
             break;
         case #"eq_seeker_mine":
-            dialogkey = playerbundle.var_486b28c0;
+            dialogkey = playerbundle.seekermineweaponready;
             break;
         case #"eq_sensor":
-            dialogkey = playerbundle.var_e4a019a;
+            dialogkey = playerbundle.sensordartweaponready;
             break;
         case #"eq_tripwire":
-            dialogkey = playerbundle.var_3a5a4e80;
+            dialogkey = playerbundle.tripwireweaponready;
             break;
         case #"gadget_icepick":
-            dialogkey = playerbundle.var_a2661f2f;
+            dialogkey = playerbundle.icepickweaponready;
             break;
         case #"eq_emp_grenade":
             dialogkey = playerbundle.var_8610c190;
@@ -3675,15 +3675,15 @@ function function_cad61ec( weapon )
     switch ( weapon.name )
     {
         case #"eq_concertina_wire":
-            dialogkey = playerbundle.var_6d3b52e5;
+            dialogkey = playerbundle.concertinawireweaponuse;
             var_4d031df6 = playerbundle.var_45efe6f7;
             break;
         case #"ability_smart_cover":
-            dialogkey = playerbundle.var_906d49a;
+            dialogkey = playerbundle.smartcoverweaponuse;
             var_4d031df6 = playerbundle.var_918699f4;
             break;
         case #"gadget_spawnbeacon":
-            dialogkey = playerbundle.var_41c2519b;
+            dialogkey = playerbundle.spawnbeaconweaponuse;
             var_4d031df6 = playerbundle.var_9a961aab;
             break;
         case #"gadget_supplypod":
@@ -3847,7 +3847,7 @@ function play_gadget_activate( weapon )
             break;
         case #"hash_5825488ac68418af":
         case #"eq_swat_grenade":
-        case #"hash_3f62a872201cd1ce":
+        case #"swat_grenade_payload":
             dialogkey = playerbundle.flashbangweaponuse;
             break;
         case #"frag_grenade":
@@ -3887,7 +3887,7 @@ function play_gadget_activate( weapon )
             dialogkey = playerbundle.molotovweaponuse;
             break;
         case #"mute_smoke":
-            dialogkey = playerbundle.var_201fd007;
+            dialogkey = playerbundle.p8_chi_fuel_tank_large_01_catwalk_ladder_ring01;
             break;
         case #"hero_flamethrower":
             self function_bd715920( weapon, self, self.origin, self );
@@ -3964,7 +3964,7 @@ function play_gadget_activate( weapon )
             dialogkey = playerbundle.shroudweaponuse;
             break;
         case #"eq_smoke":
-            dialogkey = playerbundle.var_201fd007;
+            dialogkey = playerbundle.p8_chi_fuel_tank_large_01_catwalk_ladder_ring01;
             var_4d031df6 = playerbundle.var_54bd09ab;
             var_3bf73cf3 = function_94b5718c( self );
             
@@ -4091,7 +4091,7 @@ function play_gadget_success( weapon, waitkey, victim, var_5d738b56 )
         case #"molotov_fire":
         case #"eq_swat_grenade":
         case #"eq_grapple":
-        case #"hash_3f62a872201cd1ce":
+        case #"swat_grenade_payload":
         case #"eq_smoke":
         case #"eq_concertina_wire":
         case #"gadget_health_boost":

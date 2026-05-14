@@ -5,7 +5,7 @@
     "xhash_60": "#hash_578f5fa70f0f0761",
     "weapon70": "#ar_stealth_t8_operator",
     "weapon890": "#ar_stealth_t8_wz",
-    "streamkey": "#hash_251d15b1d518658a",
+    "streamkey": "#ar_stealth_t8_operator_soundbank",
     "scrstr_8c8": [
         "tag_dbal",
         "tag_clan_tag",
@@ -69,7 +69,7 @@
     "sound210": "#hash_2b902c34c9ae43f5",
     "sound240": "#hash_5eabe6a258a16f56",
     "sound250": "#hash_430505a2008aefdb",
-    "sound260": "#hash_515f54aa1f553686",
+    "sound260": "#prj_crack_supersonic",
     "sound800": "#hash_5ee962527afebfb1",
     "sound810": "#hash_5ee962527afebfb1",
     "tunables1": "#ar_stealth_t8_operator_tunables_wz",

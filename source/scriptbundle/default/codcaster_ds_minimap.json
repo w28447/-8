@@ -1,11 +1,11 @@
 {
     "options": [
         {
-            "label": "localized17#hash_4115218ea657d7e7",
+            "label": "localized17#codcaster/minimap_standard",
             "value": "1"
         },
         {
-            "label": "localized17#hash_74933938ee8fa2c1",
+            "label": "localized17#codcaster/minimap_full_view",
             "value": "2"
         },
         {
@@ -15,7 +15,7 @@
     ],
     "hash_dfedf08e": 1,
     "categoryindex": 0,
-    "description": "localized17#hash_2e10a2436a7f7271",
+    "description": "localized17#codcaster/ds_minimap_desc",
     "menu/on": "localized17#menu/on",
     "hash_10e01ad5": 1,
     "iscategory": 0,

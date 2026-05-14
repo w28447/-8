@@ -535,7 +535,7 @@ LUI.createMenu.PositionDraft_Teams = function ( f1_arg0, f1_arg1 )
 		GoBack( self, f41_arg2 )
 		return true
 	end, function ( f42_arg0, f42_arg1, f42_arg2 )
-		CoD.Menu.SetButtonLabel( f42_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x972E7D1EB1EF77F, nil, nil )
+		CoD.Menu.SetButtonLabel( f42_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "challenge/backdraft", nil, nil )
 		return true
 	end, false )
 	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x93AB4C84F113EE1], "TAB", function ( f43_arg0, f43_arg1, f43_arg2, f43_arg3 )

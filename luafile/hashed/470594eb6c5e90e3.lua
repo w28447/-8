@@ -26,7 +26,7 @@ CoD.StartMenu_Inventory_SwitchWeaponTab.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local HeaderWeapon = LUI.UIText.new( 0, 1, 0, 0, 0, 0, 0, 22 )
 	HeaderWeapon:setRGB( 0, 0, 0 )
-	HeaderWeapon:setText( Engine[0xF9F1239CFD921FE]( 0x7D2E25BD6067A8 ) )
+	HeaderWeapon:setText( Engine[0xF9F1239CFD921FE]( "warzone/weapon_1" ) )
 	HeaderWeapon:setTTF( "ttmussels_regular" )
 	HeaderWeapon:setLetterSpacing( 4 )
 	HeaderWeapon:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -36,7 +36,7 @@ CoD.StartMenu_Inventory_SwitchWeaponTab.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local HeaderWeaponAsian = LUI.UIText.new( 0, 1, 0, 0, 0, 0, 5, 17 )
 	HeaderWeaponAsian:setRGB( 0, 0, 0 )
-	HeaderWeaponAsian:setText( Engine[0xF9F1239CFD921FE]( 0x7D2E25BD6067A8 ) )
+	HeaderWeaponAsian:setText( Engine[0xF9F1239CFD921FE]( "warzone/weapon_1" ) )
 	HeaderWeaponAsian:setTTF( "ttmussels_regular" )
 	HeaderWeaponAsian:setLetterSpacing( 4 )
 	HeaderWeaponAsian:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

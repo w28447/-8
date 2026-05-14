@@ -279,10 +279,10 @@ Lobby.Platform.OnPlatformJoinOrbis = function ( f16_arg0 )
 				return 
 			end
 		end
-		f16_local9 = Enum.JoinType[0xC21E48130C4B82B]
+		f16_local9 = Enum.JoinType["join_type_friend"]
 	else
 		if f16_local3 == false then
-			f16_local7 = Enum.JoinType[0xC21E48130C4B82B]
+			f16_local7 = Enum.JoinType["join_type_friend"]
 			f16_local4 = nil
 		end
 		Lobby.ProcessQueue.AddToQueue( "PS4SessionJoin", Lobby.ProcessPlatform.PS4AcceptInvite( f16_local0, f16_local1, f16_local4, f16_local5, f16_local7, LuaEnum.LEAVE_WITH_PARTY.WITHOUT ) )
@@ -300,7 +300,7 @@ Lobby.Platform.InGamePlatformJoinOrbis = function ( f17_arg0 )
 	local f17_local7 = Enum.JoinType[0xD4D58772DE8652]
 	if f17_local3 == false then
 		f17_local4 = nil
-		f17_local7 = Enum.JoinType[0xC21E48130C4B82B]
+		f17_local7 = Enum.JoinType["join_type_friend"]
 	end
 	return Lobby.ProcessPlatform.PS4AcceptInvite( f17_local0, f17_local1, f17_local4, f17_local5, f17_local7, LuaEnum.LEAVE_WITH_PARTY.WITHOUT )
 end
@@ -342,11 +342,11 @@ Lobby.Platform.OnPlatformJoinDurango = function ( f18_arg0 )
 				return nil
 			end
 		end
-		f18_local4 = Enum.JoinType[0xC21E48130C4B82B]
+		f18_local4 = Enum.JoinType["join_type_friend"]
 	elseif f18_arg0.invite == true then
 		Lobby.ProcessQueue.AddToQueue( "XboxAcceptInvite", Lobby.ProcessPlatform.XboxJoin( Engine.GetControllerForXuid( f18_arg0.invitedXuid ), f18_arg0.senderXuid, Enum.JoinType[0xD4D58772DE8652], LuaEnum.LEAVE_WITH_PARTY.WITHOUT ) )
 	else
-		Lobby.ProcessQueue.AddToQueue( "XboxSessionJoin", Lobby.ProcessPlatform.XboxJoin( Engine.GetControllerForXuid( f18_arg0.joinerXuid ), f18_arg0.joineeXuid, Enum.JoinType[0xC21E48130C4B82B], LuaEnum.LEAVE_WITH_PARTY.WITHOUT ) )
+		Lobby.ProcessQueue.AddToQueue( "XboxSessionJoin", Lobby.ProcessPlatform.XboxJoin( Engine.GetControllerForXuid( f18_arg0.joinerXuid ), f18_arg0.joineeXuid, Enum.JoinType["join_type_friend"], LuaEnum.LEAVE_WITH_PARTY.WITHOUT ) )
 	end
 end
 
@@ -354,7 +354,7 @@ Lobby.Platform.InGamePlatformJoinDurango = function ( f19_arg0 )
 	if f19_arg0.invite == true then
 		return Lobby.ProcessPlatform.XboxJoin( Engine.GetControllerForXuid( f19_arg0.invitedXuid ), f19_arg0.senderXuid, Enum.JoinType[0xD4D58772DE8652], LuaEnum.LEAVE_WITH_PARTY.WITHOUT )
 	else
-		return Lobby.ProcessPlatform.XboxJoin( Engine.GetControllerForXuid( f19_arg0.joinerXuid ), f19_arg0.joineeXuid, Enum.JoinType[0xC21E48130C4B82B], LuaEnum.LEAVE_WITH_PARTY.WITHOUT )
+		return Lobby.ProcessPlatform.XboxJoin( Engine.GetControllerForXuid( f19_arg0.joinerXuid ), f19_arg0.joineeXuid, Enum.JoinType["join_type_friend"], LuaEnum.LEAVE_WITH_PARTY.WITHOUT )
 	end
 end
 
@@ -463,7 +463,7 @@ Lobby.Platform.PlatformSessionPS4Error = function ( f27_arg0, f27_arg1 )
 			return 
 		end
 		local f27_local1 = LobbyData.GetCurrentMenuTarget()
-		if f27_local1[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.MAIN ) then
+		if f27_local1["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.MAIN ) then
 			return 
 		end
 		local f27_local2 = {

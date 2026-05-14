@@ -1,4 +1,4 @@
-#using script_301f64a4090c381a;
+#using scripts\zm_common\zm_faction_buffs.gsc;
 #using scripts\core_common\aat_shared;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\callbacks_shared;
@@ -489,8 +489,8 @@ function private turn_on( origin, radius )
     pap_machine flag::set( "pap_waiting_for_user" );
     pap_machine flag::set( "Pack_A_Punch_on" );
     pap_machine flag::clear( "Pack_A_Punch_off" );
-    pap_machine notify( #"hash_222aa78f79091e7" );
-    level notify( #"hash_222aa78f79091e7" );
+    pap_machine notify( #"pack_a_punch_on_notify" );
+    level notify( #"pack_a_punch_on_notify" );
     level flag::set( "pap_machine_active" );
 }
 
@@ -533,8 +533,8 @@ function private turn_off( origin, radius )
     zm_unitrigger::unregister_unitrigger( pap_machine.unitrigger_stub );
     pap_machine flag::set( "Pack_A_Punch_off" );
     pap_machine flag::clear( "Pack_A_Punch_on" );
-    pap_machine notify( #"hash_672bc8ddbec0fa33" );
-    level notify( #"hash_672bc8ddbec0fa33" );
+    pap_machine notify( #"pack_a_punch_off_notify" );
+    level notify( #"pack_a_punch_off_notify" );
     level flag::clear( "pap_machine_active" );
     pap_machine thread function_615ef6fe();
 }
@@ -665,7 +665,7 @@ function function_c0bdaa76( b_on )
 // Size: 0x4ee
 function private function_72cf5db2()
 {
-    self endon( #"hash_672bc8ddbec0fa33", #"death" );
+    self endon( #"pack_a_punch_off_notify", #"death" );
     pap_machine = self.stub.zbarrier;
     b_power_off = !pap_machine is_on();
     
@@ -754,7 +754,7 @@ function private function_72cf5db2()
 // Size: 0x36, Type: bool
 function function_ec9ac3b2( e_player, current_weapon )
 {
-    if ( e_player namespace_e38c57c1::function_3da195ec( current_weapon ) )
+    if ( e_player zm_faction_buffs::function_3da195ec( current_weapon ) )
     {
         return true;
     }
@@ -946,7 +946,7 @@ function private function_222c0292( current_weapon, packa_rollers, pap_machine, 
     if ( isdefined( self ) )
     {
         self.var_9b0383f5 = undefined;
-        self notify( #"hash_1ac4338b0d419091", { #var_7139c18c:s_result._notify } );
+        self notify( #"pap_use_finished", { #var_7139c18c:s_result._notify } );
     }
     
     pap_machine thread function_ecb78870();
@@ -958,7 +958,7 @@ function private function_222c0292( current_weapon, packa_rollers, pap_machine, 
 // Size: 0x552
 function private third_person_weapon_upgrade( current_weapon, current_weaponoptions, upgrade_weapon, packa_rollers, pap_machine )
 {
-    pap_machine endon( #"hash_672bc8ddbec0fa33" );
+    pap_machine endon( #"pack_a_punch_off_notify" );
     var_d85decd8 = self getbuildkitweapon( current_weapon );
     var_1eca29de = self getbuildkitweapon( upgrade_weapon );
     
@@ -996,12 +996,12 @@ function private third_person_weapon_upgrade( current_weapon, current_weaponopti
     
     if ( self hasperk( #"specialty_cooldown" ) )
     {
-        pap_machine playsound( #"hash_552a43efc3f770d" );
+        pap_machine playsound( #"zmb_perks_packa_upgrade_short" );
         var_397d50da = min( var_397d50da, 1.25 );
     }
     else if ( util::get_game_type() === #"zstandard" )
     {
-        pap_machine playsound( #"hash_552a43efc3f770d" );
+        pap_machine playsound( #"zmb_perks_packa_upgrade_short" );
     }
     else
     {
@@ -1045,7 +1045,7 @@ function private wait_for_player_to_take( player, weapon, packa_timer, var_a8643
     upgrade_weapon = pap_machine.unitrigger_stub.upgrade_weapon;
     assert( isdefined( current_weapon ), "<dev string:x197>" );
     assert( isdefined( upgrade_weapon ), "<dev string:x1c8>" );
-    pap_machine endon( #"pap_timeout", #"hash_672bc8ddbec0fa33" );
+    pap_machine endon( #"pap_timeout", #"pack_a_punch_off_notify" );
     
     while ( isdefined( player ) )
     {
@@ -1109,7 +1109,7 @@ function private wait_for_player_to_take( player, weapon, packa_timer, var_a8643
                 else
                 {
                     upgrade_weapon = player zm_weapons::give_build_kit_weapon( upgrade_weapon, pap_machine.unitrigger_stub.var_3ded6a21, pap_machine.unitrigger_stub.var_f716c676 );
-                    player zm_weapons::function_7c5dd4bd( upgrade_weapon );
+                    player zm_weapons::give_full_ammo( upgrade_weapon );
                 }
                 
                 player notify( #"weapon_give", upgrade_weapon );

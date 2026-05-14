@@ -1,7 +1,7 @@
 {
     "hash_dfedf08e": 0,
     "categoryindex": 0,
-    "description": "localized17#hash_77162ef92aabd1e0",
+    "description": "localized17#codcaster/ds_team_identity_desc",
     "menu/on": "localized17#menu/on",
     "hash_10e01ad5": 1,
     "iscategory": 0,
@@ -21,7 +21,7 @@
     "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "codcaster_ds_team_identity",
-    "displayname": "localized17#hash_64e051f15ae3b3b8",
+    "displayname": "localized17#codcaster/ds_team_identity",
     "rangestartvalue": 0,
     "isdisabled": 0,
     "hash_d6897f56": 0,

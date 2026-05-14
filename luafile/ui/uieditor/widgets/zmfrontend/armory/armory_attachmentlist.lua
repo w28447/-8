@@ -32,7 +32,7 @@ CoD.Armory_AttachmentList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local AttachmentHeader = LUI.UIText.new( 0.5, 0.5, -392.5, 392.5, 0, 0, -8, 10 )
 	AttachmentHeader:setRGB( 0.39, 0.39, 0.39 )
-	AttachmentHeader:setText( Engine[0xF9F1239CFD921FE]( 0x56E6F15BA89EEED ) )
+	AttachmentHeader:setText( Engine[0xF9F1239CFD921FE]( "mpui/attachments_caps" ) )
 	AttachmentHeader:setTTF( "ttmussels_demibold" )
 	AttachmentHeader:setLetterSpacing( 4 )
 	AttachmentHeader:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

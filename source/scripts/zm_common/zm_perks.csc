@@ -115,7 +115,7 @@ function perks_register_clientfield()
         clientfield::register( "clientuimodel", "hudItems.extraPerkVapor." + i + ".specialEffectActive", n_version, 1, "int", undefined, 0, 0 );
     }
     
-    clientfield::register( "scriptmover", "" + #"hash_cf74c35ecc5a49", 1, 1, "int", &function_bb184fed, 0, 0 );
+    clientfield::register( "scriptmover", "" + #"init_perk_altar_icon", 1, 1, "int", &init_perk_altar_icon, 0, 0 );
     clientfield::register( "toplayer", "" + #"hash_35fe26fc5cb223b3", 1, 3, "int", &_train_sd_bombexplode, 0, 1 );
     clientfield::register( "toplayer", "" + #"hash_6fb426c48a4877e0", 1, 3, "int", &function_d5f2f6ac, 0, 1 );
     clientfield::register( "toplayer", "" + #"hash_345845080e40675d", 1, 3, "int", &function_136826b0, 0, 1 );
@@ -126,7 +126,7 @@ function perks_register_clientfield()
         clientfield::register( "world", "" + #"zeus_bird_fx", 1, 1, "int", &zeus_bird_fx, 0, 0 );
         clientfield::register( "scriptmover", "" + #"hash_50eb488e58f66198", 1, 1, "int", &function_52c149b2, 0, 0 );
         clientfield::register( "allplayers", "" + #"hash_222c3403d2641ea6", 1, 3, "int", &function_ab7cd429, 0, 0 );
-        clientfield::register( "toplayer", "" + #"hash_17283692696da23b", 1, 1, "counter", &function_ccbdf992, 0, 0 );
+        clientfield::register( "toplayer", "" + #"perk_totem_rob", 1, 1, "counter", &perk_totem_rob, 0, 0 );
     }
     
     level thread perk_init_code_callbacks();
@@ -357,7 +357,7 @@ function play_perk_fx_on_client( client_num, fx_light, duration )
 // Params 7
 // Checksum 0x4fb2227b, Offset: 0x16a8
 // Size: 0x6c
-function function_ccbdf992( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function perk_totem_rob( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( newval )
     {
@@ -369,7 +369,7 @@ function function_ccbdf992( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0xf026dd1b, Offset: 0x1720
 // Size: 0x5a4
-function function_bb184fed( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function init_perk_altar_icon( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( newval )
     {

@@ -9,13 +9,13 @@
         {
             "value": 635,
             "next": 65535,
-            "name": "#hash_52e89c5b80b0dffe",
+            "name": "#cac_cac_reenter",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_52e89c5b80b0dffe",
+                    "name": "#cac_cac_reenter",
                     "assetId": "#uin/2k18/generic/ui_backout.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -58,13 +58,13 @@
         {
             "value": 626,
             "next": 65535,
-            "name": "#hash_7cf560cf70dc3649",
+            "name": "#cac_cmn_backout",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7cf560cf70dc3649",
+                    "name": "#cac_cmn_backout",
                     "assetId": "#uin/2k18/generic/ui_backout.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -107,13 +107,13 @@
         {
             "value": 624,
             "next": 65535,
-            "name": "#hash_bbe3f566ca97586",
+            "name": "#cac_cmn_deny",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_bbe3f566ca97586",
+                    "name": "#cac_cmn_deny",
                     "assetId": "#uin/generic/deny.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -254,13 +254,13 @@
         {
             "value": 659,
             "next": 65535,
-            "name": "#hash_28730cc91a5591e9",
+            "name": "#cac_enter_cac",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_28730cc91a5591e9",
+                    "name": "#cac_enter_cac",
                     "assetId": "#uin/cac/cac_enter.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -303,13 +303,13 @@
         {
             "value": 47,
             "next": 65535,
-            "name": "#hash_42be5f488a9f5075",
+            "name": "#cac_equipment_add",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_42be5f488a9f5075",
+                    "name": "#cac_equipment_add",
                     "assetId": "#uin/2k18/generic/ui_equip_add.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -352,13 +352,13 @@
         {
             "value": 591,
             "next": 65535,
-            "name": "#hash_1c2df0082dd2e436",
+            "name": "#cac_equipment_add_equipment",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1c2df0082dd2e436",
+                    "name": "#cac_equipment_add_equipment",
                     "assetId": "#uin/2k18/generic/ui_equip_add.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -401,13 +401,13 @@
         {
             "value": 355,
             "next": 65535,
-            "name": "#hash_e2e6683017a1828",
+            "name": "#cac_equipment_add_lethal",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_e2e6683017a1828",
+                    "name": "#cac_equipment_add_lethal",
                     "assetId": "#uin/2k18/generic/ui_equip_add.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -450,13 +450,13 @@
         {
             "value": 133,
             "next": 8,
-            "name": "#hash_7e28b81c65289862",
+            "name": "#cac_equipment_add_mod",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7e28b81c65289862",
+                    "name": "#cac_equipment_add_mod",
                     "assetId": "#uin/2k18/generic/ui_equip_add.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -499,13 +499,13 @@
         {
             "value": 291,
             "next": 65535,
-            "name": "#hash_6cb357c56dd695d3",
+            "name": "#cac_equipment_add_tactical",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6cb357c56dd695d3",
+                    "name": "#cac_equipment_add_tactical",
                     "assetId": "#uin/2k18/generic/ui_equip_add.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -597,13 +597,13 @@
         {
             "value": 160,
             "next": 13,
-            "name": "#hash_220862a4ca76a9e2",
+            "name": "#cac_equipment_remove",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_220862a4ca76a9e2",
+                    "name": "#cac_equipment_remove",
                     "assetId": "#uin/2k18/generic/ui_equip_rem.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -646,13 +646,13 @@
         {
             "value": 363,
             "next": 65535,
-            "name": "#hash_17ebc743bf3ff343",
+            "name": "#cac_globe_draw",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_17ebc743bf3ff343",
+                    "name": "#cac_globe_draw",
                     "assetId": "#uin/cac/cac_globe_draw.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -695,13 +695,13 @@
         {
             "value": 299,
             "next": 65535,
-            "name": "#hash_2713b5b1caf03ab2",
+            "name": "#cac_grid_equip_item",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2713b5b1caf03ab2",
+                    "name": "#cac_grid_equip_item",
                     "assetId": "#uin/2k18/generic/gen_variation/ui_button_gen_00.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -740,7 +740,7 @@
                     "unk178": "#hash_e04140802"
                 },
                 {
-                    "name": "#hash_2713b5b1caf03ab2",
+                    "name": "#cac_grid_equip_item",
                     "assetId": "#uin/2k18/generic/gen_variation/ui_button_gen_01.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -779,7 +779,7 @@
                     "unk178": "#hash_e04140802"
                 },
                 {
-                    "name": "#hash_2713b5b1caf03ab2",
+                    "name": "#cac_grid_equip_item",
                     "assetId": "#uin/2k18/generic/gen_variation/ui_button_gen_02.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -818,7 +818,7 @@
                     "unk178": "#hash_e04140802"
                 },
                 {
-                    "name": "#hash_2713b5b1caf03ab2",
+                    "name": "#cac_grid_equip_item",
                     "assetId": "#uin/2k18/generic/gen_variation/ui_button_gen_03.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -857,7 +857,7 @@
                     "unk178": "#hash_e04140802"
                 },
                 {
-                    "name": "#hash_2713b5b1caf03ab2",
+                    "name": "#cac_grid_equip_item",
                     "assetId": "#uin/2k18/generic/gen_variation/ui_button_gen_04.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -896,7 +896,7 @@
                     "unk178": "#hash_e04140802"
                 },
                 {
-                    "name": "#hash_2713b5b1caf03ab2",
+                    "name": "#cac_grid_equip_item",
                     "assetId": "#uin/2k18/generic/gen_variation/ui_button_gen_05.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -935,7 +935,7 @@
                     "unk178": "#hash_e04140802"
                 },
                 {
-                    "name": "#hash_2713b5b1caf03ab2",
+                    "name": "#cac_grid_equip_item",
                     "assetId": "#uin/2k18/generic/gen_variation/ui_button_gen_06.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -978,13 +978,13 @@
         {
             "value": 497,
             "next": 65535,
-            "name": "#hash_7cee4c56e2e0ea5",
+            "name": "#cac_grid_equip_item_wildcard",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7cee4c56e2e0ea5",
+                    "name": "#cac_grid_equip_item_wildcard",
                     "assetId": "#uin/generic/titlecard_start.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -1027,14 +1027,14 @@
         {
             "value": 550,
             "next": 65535,
-            "name": "#hash_76d3df3d35c4ed6d",
+            "name": "#cac_grid_nav",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_76d3df3d35c4ed6d",
-                    "secondaryname": "#hash_7a44f29ce569e84",
+                    "name": "#cac_grid_nav",
+                    "secondaryname": "#cac_grid_nav_swt",
                     "assetId": "#uin/2k18/generic/ui_grd_nav.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -1077,13 +1077,13 @@
         {
             "value": 537,
             "next": 65535,
-            "name": "#hash_7a44f29ce569e84",
+            "name": "#cac_grid_nav_swt",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7a44f29ce569e84",
+                    "name": "#cac_grid_nav_swt",
                     "assetId": "#uin/2k18/generic/ui_tick.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -1126,13 +1126,13 @@
         {
             "value": 21,
             "next": 65535,
-            "name": "#hash_1526060100cf0425",
+            "name": "#cac_loadout_edit_sel",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1526060100cf0425",
+                    "name": "#cac_loadout_edit_sel",
                     "assetId": "#uin/generic/awesome.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -1175,13 +1175,13 @@
         {
             "value": 533,
             "next": 65535,
-            "name": "#hash_55a5eaeb64c4ba46",
+            "name": "#cac_loadout_edit_select_primary",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_55a5eaeb64c4ba46",
+                    "name": "#cac_loadout_edit_select_primary",
                     "assetId": "#uin/cac/cac_select_weapons_menu.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -1224,13 +1224,13 @@
         {
             "value": 336,
             "next": 65535,
-            "name": "#hash_4a10695a226bd43a",
+            "name": "#cac_loadout_edit_select_secondary",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4a10695a226bd43a",
+                    "name": "#cac_loadout_edit_select_secondary",
                     "assetId": "#uin/cac/cac_select_weapons_menu.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -1371,13 +1371,13 @@
         {
             "value": 667,
             "next": 65535,
-            "name": "#hash_791e4027013455df",
+            "name": "#cac_loadout_nav",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_791e4027013455df",
+                    "name": "#cac_loadout_nav",
                     "assetId": "#uin/cac/cac_loadout_nav.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -1420,13 +1420,13 @@
         {
             "value": 380,
             "next": 65535,
-            "name": "#hash_78ea258d84fd654e",
+            "name": "#cac_loadout_wildcard_nav",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_78ea258d84fd654e",
+                    "name": "#cac_loadout_wildcard_nav",
                     "assetId": "#uin/cac/cac_loadout_nav.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -1469,13 +1469,13 @@
         {
             "value": 485,
             "next": 65535,
-            "name": "#hash_2a4baf5067079ac4",
+            "name": "#cac_main_edit_loadout",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2a4baf5067079ac4",
+                    "name": "#cac_main_edit_loadout",
                     "assetId": "#uin/generic/cac_edit_class.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -1567,13 +1567,13 @@
         {
             "value": 75,
             "next": 65535,
-            "name": "#hash_4072db479525d2d8",
+            "name": "#cac_main_nav",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4072db479525d2d8",
+                    "name": "#cac_main_nav",
                     "assetId": "#uin/2k18/generic/ui_main_nav.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -1616,13 +1616,13 @@
         {
             "value": 240,
             "next": 25,
-            "name": "#hash_114d43832bf0fe67",
+            "name": "#cac_open_wpn_cust",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_114d43832bf0fe67",
+                    "name": "#cac_open_wpn_cust",
                     "assetId": "#uin/2k18/generic/ui_nav_select.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -1665,13 +1665,13 @@
         {
             "value": 82,
             "next": 65535,
-            "name": "#hash_24b9269d4a9454ba",
+            "name": "#cac_open_wpn_cust_sub",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_24b9269d4a9454ba",
+                    "name": "#cac_open_wpn_cust_sub",
                     "assetId": "#uin/2k18/generic/ui_nav_select.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -1714,13 +1714,13 @@
         {
             "value": 193,
             "next": 65535,
-            "name": "#hash_7562f15ee47169a0",
+            "name": "#cac_overload_enter",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7562f15ee47169a0",
+                    "name": "#cac_overload_enter",
                     "assetId": "#uin/generic/deny.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -1763,13 +1763,13 @@
         {
             "value": 235,
             "next": 65535,
-            "name": "#hash_5a39de1dd5b93b5e",
+            "name": "#cac_overload_exit",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5a39de1dd5b93b5e",
+                    "name": "#cac_overload_exit",
                     "assetId": "#uin/2k18/generic/ui_backout.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -1812,13 +1812,13 @@
         {
             "value": 172,
             "next": 65535,
-            "name": "#hash_7aa992a4f16ff44e",
+            "name": "#cac_overload_select",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7aa992a4f16ff44e",
+                    "name": "#cac_overload_select",
                     "assetId": "#uin/2k18/generic/ui_overload_swap.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -1861,13 +1861,13 @@
         {
             "value": 67,
             "next": 34,
-            "name": "#hash_1eac2aaa9ea6bd8",
+            "name": "#cac_perk_equip",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1eac2aaa9ea6bd8",
+                    "name": "#cac_perk_equip",
                     "assetId": "#uin/cac/cac_perk_equip.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -2008,13 +2008,13 @@
         {
             "value": 350,
             "next": 65535,
-            "name": "#hash_195acb15fded7e7b",
+            "name": "#cac_safearea",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_195acb15fded7e7b",
+                    "name": "#cac_safearea",
                     "assetId": "#uin/cac/cac_ui_border.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -2057,13 +2057,13 @@
         {
             "value": 65,
             "next": 0,
-            "name": "#hash_38d26b7786465506",
+            "name": "#cac_screen_fade",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_38d26b7786465506",
+                    "name": "#cac_screen_fade",
                     "assetId": "#uin/cac/cac_screen_fade.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -2155,13 +2155,13 @@
         {
             "value": 6,
             "next": 615,
-            "name": "#hash_e202b35df17eb7",
+            "name": "#cac_slide_equip_item",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_e202b35df17eb7",
+                    "name": "#cac_slide_equip_item",
                     "assetId": "#uin/2k18/generic/ui_equip.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -2204,13 +2204,13 @@
         {
             "value": 293,
             "next": 2,
-            "name": "#hash_c76a7fa31efdeac",
+            "name": "#cac_slide_equip_item_weapon",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_c76a7fa31efdeac",
+                    "name": "#cac_slide_equip_item_weapon",
                     "assetId": "#uin/generic/wpn_equip_pri_sec.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -2253,13 +2253,13 @@
         {
             "value": 223,
             "next": 65535,
-            "name": "#hash_1539220a2804c06",
+            "name": "#cac_slide_nav",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1539220a2804c06",
+                    "name": "#cac_slide_nav",
                     "assetId": "#uin/2k18/generic/ui_slide_vert.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -2302,13 +2302,13 @@
         {
             "value": 58,
             "next": 16,
-            "name": "#hash_1c3d68b0d527497",
+            "name": "#cac_slide_nav_down",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1c3d68b0d527497",
+                    "name": "#cac_slide_nav_down",
                     "assetId": "#uin/2k18/generic/ui_slide_hor.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -2351,13 +2351,13 @@
         {
             "value": 307,
             "next": 65535,
-            "name": "#hash_7f9a5cfe2012d7c5",
+            "name": "#cac_slide_nav_lr",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7f9a5cfe2012d7c5",
+                    "name": "#cac_slide_nav_lr",
                     "assetId": "#uin/2k18/generic/ui_slide_vert.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -2400,13 +2400,13 @@
         {
             "value": 224,
             "next": 43,
-            "name": "#hash_7f7c58fe1ff9d36a",
+            "name": "#cac_slide_nav_ud",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7f7c58fe1ff9d36a",
+                    "name": "#cac_slide_nav_ud",
                     "assetId": "#uin/2k18/generic/ui_slide_hor.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -2449,13 +2449,13 @@
         {
             "value": 28,
             "next": 65535,
-            "name": "#hash_7f7c64fe1ff9e7ce",
+            "name": "#cac_slide_nav_up",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7f7c64fe1ff9e7ce",
+                    "name": "#cac_slide_nav_up",
                     "assetId": "#uin/2k18/generic/ui_slide_hor.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -2988,13 +2988,13 @@
         {
             "value": 49,
             "next": 58,
-            "name": "#hash_6e6c28dfca98a5ee",
+            "name": "#cac_wildcard_remove",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6e6c28dfca98a5ee",
+                    "name": "#cac_wildcard_remove",
                     "assetId": "#uin/cac/cac_grid_equip.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -3037,13 +3037,13 @@
         {
             "value": 623,
             "next": 65535,
-            "name": "#hash_65ad8b14e2d79ced",
+            "name": "#cac_wpn_cust_exit",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_65ad8b14e2d79ced",
+                    "name": "#cac_wpn_cust_exit",
                     "assetId": "#uin/2k18/generic/ui_backout.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -3086,13 +3086,13 @@
         {
             "value": 156,
             "next": 590,
-            "name": "#hash_3fa60f123267b59a",
+            "name": "#cac_wpn_cust_nav",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3fa60f123267b59a",
+                    "name": "#cac_wpn_cust_nav",
                     "assetId": "#uin/2k18/generic/ui_slide_vert.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -6124,13 +6124,13 @@
         {
             "value": 140,
             "next": 94,
-            "name": "#hash_284ca3378448c9b8",
+            "name": "#fly_emote_cigar",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_284ca3378448c9b8",
+                    "name": "#fly_emote_cigar",
                     "assetId": "#fly/emotes/cigar_ext.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -6566,13 +6566,13 @@
         {
             "value": 35,
             "next": 65535,
-            "name": "#hash_296a6096c5fe78f",
+            "name": "#fly_emote_coin",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_296a6096c5fe78f",
+                    "name": "#fly_emote_coin",
                     "assetId": "#fly/emotes/coin_02.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -7919,7 +7919,7 @@
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
                     "assetFileNameRelease": "#core_ui.all",
-                    "contextType": "#hash_1f7fb6af8fd92cb5",
+                    "contextType": "#perspective",
                     "contextValue": "#npc",
                     "reverbSend": 0.0056234132,
                     "centerSend": 0,
@@ -7960,7 +7960,7 @@
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
                     "assetFileNameRelease": "#core_ui.all",
-                    "contextType": "#hash_1f7fb6af8fd92cb5",
+                    "contextType": "#perspective",
                     "contextValue": "#player",
                     "reverbSend": 0.0056234132,
                     "centerSend": 0,
@@ -9524,7 +9524,7 @@
             "aliases": [
                 {
                     "name": "#hash_4d7446f16421e763",
-                    "secondaryname": "#hash_1766babde7fad765",
+                    "secondaryname": "#fly_emote_halloween",
                     "assetId": "#fly/emotes/fem_jackolantern.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -11161,13 +11161,13 @@
         {
             "value": 277,
             "next": 65535,
-            "name": "#hash_1766babde7fad765",
+            "name": "#fly_emote_halloween",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1766babde7fad765",
+                    "name": "#fly_emote_halloween",
                     "assetId": "#fly/emotes/halloween.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -13747,7 +13747,7 @@
             "aliases": [
                 {
                     "name": "#hash_4a260dbc85543ae0",
-                    "secondaryname": "#hash_1766babde7fad765",
+                    "secondaryname": "#fly_emote_halloween",
                     "assetId": "#fly/emotes/male_jackolatern.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -14419,13 +14419,13 @@
         {
             "value": 147,
             "next": 200,
-            "name": "#hash_122d94c02045aa46",
+            "name": "#fly_emote_money",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_122d94c02045aa46",
+                    "name": "#fly_emote_money",
                     "assetId": "#fly/emotes/money_01.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -16210,13 +16210,13 @@
         {
             "value": 202,
             "next": 65535,
-            "name": "#hash_6dcc465e1f5c3943",
+            "name": "#fly_emote_ratchet",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6dcc465e1f5c3943",
+                    "name": "#fly_emote_ratchet",
                     "assetId": "#fly/emotes/ratchet.sn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -22725,13 +22725,13 @@
         {
             "value": 289,
             "next": 408,
-            "name": "#hash_43bd003e5120f836",
+            "name": "#fly_emote_sparkler",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_43bd003e5120f836",
+                    "name": "#fly_emote_sparkler",
                     "assetId": "#hash_7b704acb7543d952",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -22774,13 +22774,13 @@
         {
             "value": 607,
             "next": 65535,
-            "name": "#hash_7e38d9521c235f19",
+            "name": "#fly_emote_spin_loop",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7e38d9521c235f19",
+                    "name": "#fly_emote_spin_loop",
                     "assetId": "#fly/emotes/spin_loop.pl100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -25460,13 +25460,13 @@
         {
             "value": 687,
             "next": 555,
-            "name": "#hash_78a9a1c3d920bd22",
+            "name": "#fly_emote_watching_you_f",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_78a9a1c3d920bd22",
+                    "name": "#fly_emote_watching_you_f",
                     "assetId": "#fly/emotes/watching_you_fem.sn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -25509,13 +25509,13 @@
         {
             "value": 233,
             "next": 65535,
-            "name": "#hash_7d51e16dbd09360f",
+            "name": "#fly_emote_wave",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7d51e16dbd09360f",
+                    "name": "#fly_emote_wave",
                     "assetId": "#fly/emotes/wave_var/wave_00.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -25554,7 +25554,7 @@
                     "unk178": "#hash_16000a0102"
                 },
                 {
-                    "name": "#hash_7d51e16dbd09360f",
+                    "name": "#fly_emote_wave",
                     "assetId": "#fly/emotes/wave_var/wave_01.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -25593,7 +25593,7 @@
                     "unk178": "#hash_16000a0102"
                 },
                 {
-                    "name": "#hash_7d51e16dbd09360f",
+                    "name": "#fly_emote_wave",
                     "assetId": "#fly/emotes/wave_var/wave_02.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -26423,13 +26423,13 @@
         {
             "value": 72,
             "next": 65535,
-            "name": "#hash_67c609444595f804",
+            "name": "#mus_gameover_intro",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_67c609444595f804",
+                    "name": "#mus_gameover_intro",
                     "assetId": "#mus/zm/gameover/deathsong_v1_mas.sn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -33246,13 +33246,13 @@
         {
             "value": 644,
             "next": 65535,
-            "name": "#hash_2788d84b543a8108",
+            "name": "#uin_back_mode_select",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2788d84b543a8108",
+                    "name": "#uin_back_mode_select",
                     "assetId": "#uin/2k18/generic/ui_backout.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -33344,13 +33344,13 @@
         {
             "value": 616,
             "next": 65535,
-            "name": "#hash_6c0c1608ff21c6d8",
+            "name": "#uin_cmn_backout",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6c0c1608ff21c6d8",
+                    "name": "#uin_cmn_backout",
                     "assetId": "#uin/2k18/generic/ui_backout.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -33442,13 +33442,13 @@
         {
             "value": 692,
             "next": 584,
-            "name": "#hash_69764f34055f4f72",
+            "name": "#uin_contract_activate",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_69764f34055f4f72",
+                    "name": "#uin_contract_activate",
                     "assetId": "#hash_1788b77c951564dc",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -33540,13 +33540,13 @@
         {
             "value": 646,
             "next": 65535,
-            "name": "#hash_9d76d871fb917bb",
+            "name": "#uin_create_game",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_9d76d871fb917bb",
+                    "name": "#uin_create_game",
                     "assetId": "#uin/cac/cac_hpan.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -33687,13 +33687,13 @@
         {
             "value": 93,
             "next": 65535,
-            "name": "#hash_7189e32d38304a22",
+            "name": "#uin_draft_bar_done",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7189e32d38304a22",
+                    "name": "#uin_draft_bar_done",
                     "assetId": "#uin/ready/char_confirm.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -33785,13 +33785,13 @@
         {
             "value": 294,
             "next": 65535,
-            "name": "#hash_73454a2c46a51ff6",
+            "name": "#uin_draft_bar_fill_loop",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_73454a2c46a51ff6",
+                    "name": "#uin_draft_bar_fill_loop",
                     "assetId": "#uin/ready/char_bar_fill.ll100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -33883,13 +33883,13 @@
         {
             "value": 315,
             "next": 65535,
-            "name": "#hash_12bba496c9f925a4",
+            "name": "#uin_equipment_add",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_12bba496c9f925a4",
+                    "name": "#uin_equipment_add",
                     "assetId": "#uin/2k18/generic/ui_equip_add.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -33932,13 +33932,13 @@
         {
             "value": 278,
             "next": 544,
-            "name": "#hash_679a4fe6d940f42d",
+            "name": "#uin_equipment_remove",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_679a4fe6d940f42d",
+                    "name": "#uin_equipment_remove",
                     "assetId": "#uin/2k18/generic/ui_equip_rem.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -33981,13 +33981,13 @@
         {
             "value": 249,
             "next": 65535,
-            "name": "#hash_17daa2de696ad29a",
+            "name": "#uin_featured_scroll",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_17daa2de696ad29a",
+                    "name": "#uin_featured_scroll",
                     "assetId": "#uin/generic/uin_featured.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -34030,13 +34030,13 @@
         {
             "value": 634,
             "next": 65535,
-            "name": "#hash_471a16728d32456a",
+            "name": "#uin_friends_left_right",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_471a16728d32456a",
+                    "name": "#uin_friends_left_right",
                     "assetId": "#uin/navigation/slide.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -34129,13 +34129,13 @@
         {
             "value": 658,
             "next": 65535,
-            "name": "#hash_19bcc21c06ab75e3",
+            "name": "#uin_igr_monthly_reward_unlock",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_19bcc21c06ab75e3",
+                    "name": "#uin_igr_monthly_reward_unlock",
                     "assetId": "#hash_ef01787c562ba3c",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -34178,13 +34178,13 @@
         {
             "value": 561,
             "next": 65535,
-            "name": "#hash_6e813ea9ec516ac3",
+            "name": "#uin_igr_receivereward_in",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6e813ea9ec516ac3",
+                    "name": "#uin_igr_receivereward_in",
                     "assetId": "#hash_1bc01d0c6db3232c",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -34227,13 +34227,13 @@
         {
             "value": 484,
             "next": 65535,
-            "name": "#hash_4ded9bc83d1f630",
+            "name": "#uin_igr_receivereward_out",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4ded9bc83d1f630",
+                    "name": "#uin_igr_receivereward_out",
                     "assetId": "#hash_7e250722c3e5c8c5",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -34276,13 +34276,13 @@
         {
             "value": 664,
             "next": 65535,
-            "name": "#hash_10946b29d16dcc74",
+            "name": "#uin_igr_receivestar",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_10946b29d16dcc74",
+                    "name": "#uin_igr_receivestar",
                     "assetId": "#hash_659c0aa2636fcfb5",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -34325,13 +34325,13 @@
         {
             "value": 672,
             "next": 65535,
-            "name": "#hash_24df62689aa58255",
+            "name": "#uin_igr_rewardslider",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_24df62689aa58255",
+                    "name": "#uin_igr_rewardslider",
                     "assetId": "#hash_5b6c4cac256c354a",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -34374,13 +34374,13 @@
         {
             "value": 69,
             "next": 552,
-            "name": "#hash_555363892a71db2c",
+            "name": "#uin_igr_starreward",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_555363892a71db2c",
+                    "name": "#uin_igr_starreward",
                     "assetId": "#hash_7baffa3f83ccabf9",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -34423,13 +34423,13 @@
         {
             "value": 290,
             "next": 65535,
-            "name": "#hash_150d910b4cc99b47",
+            "name": "#uin_igr_tieracquired_in",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_150d910b4cc99b47",
+                    "name": "#uin_igr_tieracquired_in",
                     "assetId": "#hash_62cd6dbcad92e6e8",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -34472,13 +34472,13 @@
         {
             "value": 677,
             "next": 65535,
-            "name": "#hash_45579933997691cc",
+            "name": "#uin_igr_tieracquired_out",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_45579933997691cc",
+                    "name": "#uin_igr_tieracquired_out",
                     "assetId": "#hash_24db32370f422079",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -34521,13 +34521,13 @@
         {
             "value": 678,
             "next": 65535,
-            "name": "#hash_145e8e3126c4967b",
+            "name": "#uin_igr_tokenreward",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_145e8e3126c4967b",
+                    "name": "#uin_igr_tokenreward",
                     "assetId": "#hash_b0052f5ee5f82e0",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -34570,13 +34570,13 @@
         {
             "value": 690,
             "next": 65535,
-            "name": "#hash_448e5560ab4f453f",
+            "name": "#uin_igr_weeklyrewardunlock",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_448e5560ab4f453f",
+                    "name": "#uin_igr_weeklyrewardunlock",
                     "assetId": "#hash_306ba567c1e8c1c4",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -34668,13 +34668,13 @@
         {
             "value": 693,
             "next": 65535,
-            "name": "#hash_5e84353bfc210f5e",
+            "name": "#uin_level_up",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5e84353bfc210f5e",
+                    "name": "#uin_level_up",
                     "assetId": "#mus/mp/level_up/mus_level_up_00.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -34717,13 +34717,13 @@
         {
             "value": 694,
             "next": 65535,
-            "name": "#hash_1a72b24ac5320100",
+            "name": "#uin_level_up_cp",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1a72b24ac5320100",
+                    "name": "#uin_level_up_cp",
                     "assetId": "#mpl/medal_earn/medal_earned_00.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -34762,7 +34762,7 @@
                     "unk178": "#hash_104140802"
                 },
                 {
-                    "name": "#hash_1a72b24ac5320100",
+                    "name": "#uin_level_up_cp",
                     "assetId": "#mpl/medal_earn/medal_earned_01.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -34801,7 +34801,7 @@
                     "unk178": "#hash_104140802"
                 },
                 {
-                    "name": "#hash_1a72b24ac5320100",
+                    "name": "#uin_level_up_cp",
                     "assetId": "#mpl/medal_earn/medal_earned_02.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -34844,13 +34844,13 @@
         {
             "value": 127,
             "next": 65535,
-            "name": "#hash_1a5bb34ac51f23d2",
+            "name": "#uin_level_up_zm",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1a5bb34ac51f23d2",
+                    "name": "#uin_level_up_zm",
                     "assetId": "#mpl/medal_earn/medal_earned_00.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -34889,7 +34889,7 @@
                     "unk178": "#hash_104140802"
                 },
                 {
-                    "name": "#hash_1a5bb34ac51f23d2",
+                    "name": "#uin_level_up_zm",
                     "assetId": "#mpl/medal_earn/medal_earned_01.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -34928,7 +34928,7 @@
                     "unk178": "#hash_104140802"
                 },
                 {
-                    "name": "#hash_1a5bb34ac51f23d2",
+                    "name": "#uin_level_up_zm",
                     "assetId": "#mpl/medal_earn/medal_earned_02.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -34971,13 +34971,13 @@
         {
             "value": 430,
             "next": 65535,
-            "name": "#hash_18124aa92cf3bfad",
+            "name": "#uin_list_action_generic",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_18124aa92cf3bfad",
+                    "name": "#uin_list_action_generic",
                     "assetId": "#hash_742e205804c95a9d",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -35069,13 +35069,13 @@
         {
             "value": 14,
             "next": 564,
-            "name": "#hash_72b009ba84920379",
+            "name": "#uin_list_close_generic",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_72b009ba84920379",
+                    "name": "#uin_list_close_generic",
                     "assetId": "#uin/2k18/generic/ui_party_slide_back.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -35118,14 +35118,14 @@
         {
             "value": 264,
             "next": 565,
-            "name": "#hash_1f0319e53a0ab7b",
+            "name": "#uin_list_horizontal_generic",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1f0319e53a0ab7b",
-                    "secondaryname": "#hash_392ecdf9db6bbfee",
+                    "name": "#uin_list_horizontal_generic",
+                    "secondaryname": "#uin_list_horizontal_generic_swt",
                     "assetId": "#uin/2k18/generic/ui_tick.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -35168,13 +35168,13 @@
         {
             "value": 169,
             "next": 567,
-            "name": "#hash_392ecdf9db6bbfee",
+            "name": "#uin_list_horizontal_generic_swt",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_392ecdf9db6bbfee",
+                    "name": "#uin_list_horizontal_generic_swt",
                     "assetId": "#uin/navigation/slide.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -35217,13 +35217,13 @@
         {
             "value": 295,
             "next": 65535,
-            "name": "#hash_3d77b4eefd341fc1",
+            "name": "#uin_list_vertical_generic",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3d77b4eefd341fc1",
+                    "name": "#uin_list_vertical_generic",
                     "assetId": "#uin/2k18/generic/ui_tick.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -35413,13 +35413,13 @@
         {
             "value": 280,
             "next": 65535,
-            "name": "#hash_51b1c35e1905aef5",
+            "name": "#uin_lobby_exit",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_51b1c35e1905aef5",
+                    "name": "#uin_lobby_exit",
                     "assetId": "#uin/2k18/generic/ui_mp_leave.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -35707,13 +35707,13 @@
         {
             "value": 474,
             "next": 65535,
-            "name": "#hash_41d75c46a9f4e0ba",
+            "name": "#uin_main_edit",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_41d75c46a9f4e0ba",
+                    "name": "#uin_main_edit",
                     "assetId": "#uin/generic/cac_edit_class.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -35854,13 +35854,13 @@
         {
             "value": 402,
             "next": 65535,
-            "name": "#hash_41f78d0460aefa97",
+            "name": "#uin_main_nav",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_41f78d0460aefa97",
+                    "name": "#uin_main_nav",
                     "assetId": "#uin/2k18/generic/ui_main_nav.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -35952,13 +35952,13 @@
         {
             "value": 305,
             "next": 65535,
-            "name": "#hash_79b0b8a52a073463",
+            "name": "#uin_map_vote",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_79b0b8a52a073463",
+                    "name": "#uin_map_vote",
                     "assetId": "#uin/2k18/generic/ui_map_vote.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -36001,13 +36001,13 @@
         {
             "value": 112,
             "next": 65535,
-            "name": "#hash_1099574951e3a4e2",
+            "name": "#uin_menu_action",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1099574951e3a4e2",
+                    "name": "#uin_menu_action",
                     "assetId": "#uin/2k18/generic/ui_sub_confirm.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -36050,13 +36050,13 @@
         {
             "value": 523,
             "next": 65535,
-            "name": "#hash_f5de3e68079db96",
+            "name": "#uin_menu_selection",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_f5de3e68079db96",
+                    "name": "#uin_menu_selection",
                     "assetId": "#uin/2k18/generic/ui_select.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -36099,13 +36099,13 @@
         {
             "value": 473,
             "next": 65535,
-            "name": "#hash_39267d96af1e4e85",
+            "name": "#uin_message_screen_open",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_39267d96af1e4e85",
+                    "name": "#uin_message_screen_open",
                     "assetId": "#hash_276c9def5b6a6873",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -36197,13 +36197,13 @@
         {
             "value": 226,
             "next": 65535,
-            "name": "#hash_21989eb21ae6a179",
+            "name": "#uin_mp_end_bar",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_21989eb21ae6a179",
+                    "name": "#uin_mp_end_bar",
                     "assetId": "#uin/2k18/mp/end_game_barfill.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -36442,13 +36442,13 @@
         {
             "value": 695,
             "next": 65535,
-            "name": "#hash_460a3bcd120b2472",
+            "name": "#uin_mtx_card_slam",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_460a3bcd120b2472",
+                    "name": "#uin_mtx_card_slam",
                     "assetId": "#hash_3fdb311e2fb1d1d",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -36589,14 +36589,14 @@
         {
             "value": 688,
             "next": 65535,
-            "name": "#hash_1ef8a45a011a419a",
+            "name": "#uin_mtx_grid_nav_common",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1ef8a45a011a419a",
-                    "secondaryname": "#hash_7a44f29ce569e84",
+                    "name": "#uin_mtx_grid_nav_common",
+                    "secondaryname": "#cac_grid_nav_swt",
                     "assetId": "#hash_890cb3691f79d77",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -36639,14 +36639,14 @@
         {
             "value": 685,
             "next": 65535,
-            "name": "#hash_6baec2e90f41f312",
+            "name": "#uin_mtx_grid_nav_epic",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6baec2e90f41f312",
-                    "secondaryname": "#hash_7a44f29ce569e84",
+                    "name": "#uin_mtx_grid_nav_epic",
+                    "secondaryname": "#cac_grid_nav_swt",
                     "assetId": "#hash_5e341b41ef07afc5",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -36689,14 +36689,14 @@
         {
             "value": 254,
             "next": 65535,
-            "name": "#hash_282abe534dd58aaa",
+            "name": "#uin_mtx_grid_nav_legend",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_282abe534dd58aaa",
-                    "secondaryname": "#hash_7a44f29ce569e84",
+                    "name": "#uin_mtx_grid_nav_legend",
+                    "secondaryname": "#cac_grid_nav_swt",
                     "assetId": "#hash_1799a26105ea1fbe",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -36739,14 +36739,14 @@
         {
             "value": 611,
             "next": 65535,
-            "name": "#hash_d42964335ae2403",
+            "name": "#uin_mtx_grid_nav_rare",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_d42964335ae2403",
-                    "secondaryname": "#hash_7a44f29ce569e84",
+                    "name": "#uin_mtx_grid_nav_rare",
+                    "secondaryname": "#cac_grid_nav_swt",
                     "assetId": "#hash_3c4db59e9137af90",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -36789,14 +36789,14 @@
         {
             "value": 682,
             "next": 65535,
-            "name": "#hash_1dda0bf237ba06e3",
+            "name": "#uin_mtx_grid_nav_ultra",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1dda0bf237ba06e3",
-                    "secondaryname": "#hash_7a44f29ce569e84",
+                    "name": "#uin_mtx_grid_nav_ultra",
+                    "secondaryname": "#cac_grid_nav_swt",
                     "assetId": "#hash_4d572e6cde93715b",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -36839,13 +36839,13 @@
         {
             "value": 174,
             "next": 65535,
-            "name": "#hash_74c42f635eb7902c",
+            "name": "#uin_mtx_item_aar_common",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_74c42f635eb7902c",
+                    "name": "#uin_mtx_item_aar_common",
                     "assetId": "#hash_15cffaa0321ba443",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -36888,13 +36888,13 @@
         {
             "value": 521,
             "next": 65535,
-            "name": "#hash_7fc3170d4bc932c0",
+            "name": "#uin_mtx_item_aar_epic",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7fc3170d4bc932c0",
+                    "name": "#uin_mtx_item_aar_epic",
                     "assetId": "#hash_6ef9e4e41957ad77",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -36937,13 +36937,13 @@
         {
             "value": 70,
             "next": 594,
-            "name": "#hash_4e6a395dbb33b06c",
+            "name": "#uin_mtx_item_aar_legend",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4e6a395dbb33b06c",
+                    "name": "#uin_mtx_item_aar_legend",
                     "assetId": "#hash_d703a9ba3e16cb",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -36986,13 +36986,13 @@
         {
             "value": 85,
             "next": 65535,
-            "name": "#hash_372cfecc1a7da1a5",
+            "name": "#uin_mtx_item_aar_rare",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_372cfecc1a7da1a5",
+                    "name": "#uin_mtx_item_aar_rare",
                     "assetId": "#hash_4800f080550c013c",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -37035,13 +37035,13 @@
         {
             "value": 318,
             "next": 599,
-            "name": "#hash_54c00a78e9ab8f5d",
+            "name": "#uin_mtx_item_aar_ultra",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_54c00a78e9ab8f5d",
+                    "name": "#uin_mtx_item_aar_ultra",
                     "assetId": "#hash_1ac85cdf71f105c",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -37133,13 +37133,13 @@
         {
             "value": 451,
             "next": 603,
-            "name": "#hash_3c7d0832739728c4",
+            "name": "#uin_mtx_item_get_common",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3c7d0832739728c4",
+                    "name": "#uin_mtx_item_get_common",
                     "secondaryname": "#hash_503f7174442340a9",
                     "assetId": "#hash_7a15625a417885e",
                     "assetFileNameSustain": "#core_ui.all",
@@ -37232,13 +37232,13 @@
         {
             "value": 285,
             "next": 65535,
-            "name": "#hash_5b3ddb6c9c24a7b8",
+            "name": "#uin_mtx_item_get_epic",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5b3ddb6c9c24a7b8",
+                    "name": "#uin_mtx_item_get_epic",
                     "secondaryname": "#hash_7a8e5291e14449bd",
                     "assetId": "#hash_32b3b15d52b867bc",
                     "assetFileNameSustain": "#core_ui.all",
@@ -37331,13 +37331,13 @@
         {
             "value": 236,
             "next": 65535,
-            "name": "#hash_2057778cfe977474",
+            "name": "#uin_mtx_item_get_legend",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2057778cfe977474",
+                    "name": "#uin_mtx_item_get_legend",
                     "secondaryname": "#hash_3b54ea23b445e2b9",
                     "assetId": "#hash_7a15625a417885e",
                     "assetFileNameSustain": "#core_ui.all",
@@ -37430,13 +37430,13 @@
         {
             "value": 676,
             "next": 65535,
-            "name": "#hash_68bce21f69f33a6d",
+            "name": "#uin_mtx_item_get_rare",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_68bce21f69f33a6d",
+                    "name": "#uin_mtx_item_get_rare",
                     "secondaryname": "#hash_6bfcef51dab252be",
                     "assetId": "#hash_7a15625a417885e",
                     "assetFileNameSustain": "#core_ui.all",
@@ -37529,13 +37529,13 @@
         {
             "value": 415,
             "next": 65535,
-            "name": "#hash_2b7f598bdcc5dc25",
+            "name": "#uin_mtx_item_get_ultra",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2b7f598bdcc5dc25",
+                    "name": "#uin_mtx_item_get_ultra",
                     "secondaryname": "#hash_59f2b3a19932d8d6",
                     "assetId": "#hash_22e8524c3ac9f3b3",
                     "assetFileNameSustain": "#core_ui.all",
@@ -37628,13 +37628,13 @@
         {
             "value": 574,
             "next": 65535,
-            "name": "#hash_730f3429cb67f459",
+            "name": "#uin_mtx_item_purchased_stamp",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_730f3429cb67f459",
+                    "name": "#uin_mtx_item_purchased_stamp",
                     "assetId": "#hash_32dad6bee1fb880",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -37677,13 +37677,13 @@
         {
             "value": 661,
             "next": 65535,
-            "name": "#hash_249dd507deb21186",
+            "name": "#uin_mtx_item_reroll",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_249dd507deb21186",
+                    "name": "#uin_mtx_item_reroll",
                     "assetId": "#hash_3e4c8b26dc69a8fe",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -37775,13 +37775,13 @@
         {
             "value": 525,
             "next": 65535,
-            "name": "#hash_79328ad2ac4afcb2",
+            "name": "#uin_mtx_my_deals",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_79328ad2ac4afcb2",
+                    "name": "#uin_mtx_my_deals",
                     "assetId": "#hash_5b63c9e264106c85",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -37824,13 +37824,13 @@
         {
             "value": 390,
             "next": 65535,
-            "name": "#hash_29898b3b0a8fb05a",
+            "name": "#uin_open_friends",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_29898b3b0a8fb05a",
+                    "name": "#uin_open_friends",
                     "assetId": "#uin/2k18/generic/ui_nav_select.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -37923,13 +37923,13 @@
         {
             "value": 18,
             "next": 65535,
-            "name": "#hash_40152d31c82973b2",
+            "name": "#uin_paint_camera",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_40152d31c82973b2",
+                    "name": "#uin_paint_camera",
                     "assetId": "#uin/navigation/cam_switch/cam_switch_00.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -37968,7 +37968,7 @@
                     "unk178": "#hash_e04140802"
                 },
                 {
-                    "name": "#hash_40152d31c82973b2",
+                    "name": "#uin_paint_camera",
                     "assetId": "#uin/navigation/cam_switch/cam_switch_01.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -38007,7 +38007,7 @@
                     "unk178": "#hash_e04140802"
                 },
                 {
-                    "name": "#hash_40152d31c82973b2",
+                    "name": "#uin_paint_camera",
                     "assetId": "#uin/navigation/cam_switch/cam_switch_02.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -38046,7 +38046,7 @@
                     "unk178": "#hash_e04140802"
                 },
                 {
-                    "name": "#hash_40152d31c82973b2",
+                    "name": "#uin_paint_camera",
                     "assetId": "#uin/navigation/cam_switch/cam_switch_03.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -38089,13 +38089,13 @@
         {
             "value": 323,
             "next": 65535,
-            "name": "#hash_46ea54622826e266",
+            "name": "#uin_paint_color_mixer",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_46ea54622826e266",
+                    "name": "#uin_paint_color_mixer",
                     "assetId": "#uin/2k18/generic/ui_nav_select.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -38138,13 +38138,13 @@
         {
             "value": 132,
             "next": 625,
-            "name": "#hash_6e58fe83a8b9a48b",
+            "name": "#uin_paint_color_picker",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6e58fe83a8b9a48b",
+                    "name": "#uin_paint_color_picker",
                     "assetId": "#uin/2k18/generic/ui_nav_select.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -38187,13 +38187,13 @@
         {
             "value": 321,
             "next": 619,
-            "name": "#hash_6c7b316ab027b8c1",
+            "name": "#uin_paint_color_select",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6c7b316ab027b8c1",
+                    "name": "#uin_paint_color_select",
                     "assetId": "#uin/2k18/generic/ui_nav_select.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -38236,13 +38236,13 @@
         {
             "value": 20,
             "next": 65535,
-            "name": "#hash_55ca97b3b206385b",
+            "name": "#uin_paint_decal_cat_nav",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_55ca97b3b206385b",
+                    "name": "#uin_paint_decal_cat_nav",
                     "assetId": "#uin/navigation/slide.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -38285,13 +38285,13 @@
         {
             "value": 192,
             "next": 65535,
-            "name": "#hash_1f8599a26ab2d578",
+            "name": "#uin_paint_decal_nav",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1f8599a26ab2d578",
+                    "name": "#uin_paint_decal_nav",
                     "assetId": "#uin/2k18/generic/ui_tick.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -38334,13 +38334,13 @@
         {
             "value": 255,
             "next": 65535,
-            "name": "#hash_6adfb2cd5fefff87",
+            "name": "#uin_paint_decal_select",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6adfb2cd5fefff87",
+                    "name": "#uin_paint_decal_select",
                     "assetId": "#uin/2k18/generic/ui_nav_select.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -38383,13 +38383,13 @@
         {
             "value": 649,
             "next": 65535,
-            "name": "#hash_660b76bd1c5d55ff",
+            "name": "#uin_paint_grid_nav",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_660b76bd1c5d55ff",
+                    "name": "#uin_paint_grid_nav",
                     "assetId": "#uin/2k18/generic/ui_tick.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -38432,13 +38432,13 @@
         {
             "value": 83,
             "next": 629,
-            "name": "#hash_32c6257dcfab32ad",
+            "name": "#uin_paint_image_flip_toggle",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_32c6257dcfab32ad",
+                    "name": "#uin_paint_image_flip_toggle",
                     "assetId": "#uin/2k18/generic/ui_toggle.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -38530,13 +38530,13 @@
         {
             "value": 524,
             "next": 65535,
-            "name": "#hash_4098debb9e56a1b4",
+            "name": "#uin_paint_image_outline_toggle",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4098debb9e56a1b4",
+                    "name": "#uin_paint_image_outline_toggle",
                     "assetId": "#uin/2k18/generic/ui_toggle.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -38579,13 +38579,13 @@
         {
             "value": 210,
             "next": 65535,
-            "name": "#hash_5ad992d087f1ecf6",
+            "name": "#uin_paint_layer_scroll",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5ad992d087f1ecf6",
+                    "name": "#uin_paint_layer_scroll",
                     "assetId": "#uin/navigation/slide.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -38628,13 +38628,13 @@
         {
             "value": 1,
             "next": 65535,
-            "name": "#hash_5c504eedf8c035e7",
+            "name": "#uin_paint_layer_select",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5c504eedf8c035e7",
+                    "name": "#uin_paint_layer_select",
                     "assetId": "#uin/2k18/generic/ui_nav_select.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -38677,13 +38677,13 @@
         {
             "value": 418,
             "next": 65535,
-            "name": "#hash_69fd8ef30b9f8e61",
+            "name": "#uin_paint_options",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_69fd8ef30b9f8e61",
+                    "name": "#uin_paint_options",
                     "assetId": "#uin/2k18/generic/ui_nav_select.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -38726,13 +38726,13 @@
         {
             "value": 502,
             "next": 65535,
-            "name": "#hash_d7655be3140ecc1",
+            "name": "#uin_paint_select",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_d7655be3140ecc1",
+                    "name": "#uin_paint_select",
                     "assetId": "#uin/2k18/generic/ui_nav_select.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -38775,13 +38775,13 @@
         {
             "value": 393,
             "next": 649,
-            "name": "#hash_7d5e69a2ffaa923f",
+            "name": "#uin_paint_weapon_scroll",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7d5e69a2ffaa923f",
+                    "name": "#uin_paint_weapon_scroll",
                     "assetId": "#uin/navigation/slide.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -38824,13 +38824,13 @@
         {
             "value": 126,
             "next": 65535,
-            "name": "#hash_d788280aff41c01",
+            "name": "#uin_party_ease_slide",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_d788280aff41c01",
+                    "name": "#uin_party_ease_slide",
                     "assetId": "#uin/2k18/generic/ui_party_slide.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -38873,13 +38873,13 @@
         {
             "value": 99,
             "next": 636,
-            "name": "#hash_40a3ed35bb3e3de9",
+            "name": "#uin_party_ease_slide_back",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_40a3ed35bb3e3de9",
+                    "name": "#uin_party_ease_slide_back",
                     "assetId": "#uin/2k18/generic/ui_party_slide_back.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -38922,13 +38922,13 @@
         {
             "value": 39,
             "next": 633,
-            "name": "#hash_2e221b80769bb317",
+            "name": "#uin_perk_equip",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2e221b80769bb317",
+                    "name": "#uin_perk_equip",
                     "assetId": "#uin/cac/cac_perk_equip.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -39020,13 +39020,13 @@
         {
             "value": 292,
             "next": 650,
-            "name": "#hash_5e30670cab903f21",
+            "name": "#uin_points_confirmed",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5e30670cab903f21",
+                    "name": "#uin_points_confirmed",
                     "assetId": "#hash_74aedcee16b0300f",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -39069,13 +39069,13 @@
         {
             "value": 309,
             "next": 65535,
-            "name": "#hash_3cdea86fd1f2298b",
+            "name": "#uin_points_purchase",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3cdea86fd1f2298b",
+                    "name": "#uin_points_purchase",
                     "assetId": "#hash_12c7caf808decfdc",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -39118,13 +39118,13 @@
         {
             "value": 466,
             "next": 65535,
-            "name": "#hash_51d8df81022c6e45",
+            "name": "#uin_press_generic",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_51d8df81022c6e45",
+                    "name": "#uin_press_generic",
                     "assetId": "#uin/2k18/generic/gen_variation/ui_button_gen_00.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -39163,7 +39163,7 @@
                     "unk178": "#hash_e04140801"
                 },
                 {
-                    "name": "#hash_51d8df81022c6e45",
+                    "name": "#uin_press_generic",
                     "assetId": "#uin/2k18/generic/gen_variation/ui_button_gen_01.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -39202,7 +39202,7 @@
                     "unk178": "#hash_e04140801"
                 },
                 {
-                    "name": "#hash_51d8df81022c6e45",
+                    "name": "#uin_press_generic",
                     "assetId": "#uin/2k18/generic/gen_variation/ui_button_gen_02.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -39241,7 +39241,7 @@
                     "unk178": "#hash_e04140801"
                 },
                 {
-                    "name": "#hash_51d8df81022c6e45",
+                    "name": "#uin_press_generic",
                     "assetId": "#uin/2k18/generic/gen_variation/ui_button_gen_03.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -39280,7 +39280,7 @@
                     "unk178": "#hash_e04140801"
                 },
                 {
-                    "name": "#hash_51d8df81022c6e45",
+                    "name": "#uin_press_generic",
                     "assetId": "#uin/2k18/generic/gen_variation/ui_button_gen_04.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -39319,7 +39319,7 @@
                     "unk178": "#hash_e04140801"
                 },
                 {
-                    "name": "#hash_51d8df81022c6e45",
+                    "name": "#uin_press_generic",
                     "assetId": "#uin/2k18/generic/gen_variation/ui_button_gen_05.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -39358,7 +39358,7 @@
                     "unk178": "#hash_e04140801"
                 },
                 {
-                    "name": "#hash_51d8df81022c6e45",
+                    "name": "#uin_press_generic",
                     "assetId": "#uin/2k18/generic/gen_variation/ui_button_gen_06.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -39401,13 +39401,13 @@
         {
             "value": 50,
             "next": 65535,
-            "name": "#hash_219203f5ae701203",
+            "name": "#uin_prestige_activate",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_219203f5ae701203",
+                    "name": "#uin_prestige_activate",
                     "assetId": "#hash_1cb37c06e4542956",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -39450,13 +39450,13 @@
         {
             "value": 427,
             "next": 65535,
-            "name": "#hash_547c9ab68f422f0c",
+            "name": "#uin_radial_confirm",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_547c9ab68f422f0c",
+                    "name": "#uin_radial_confirm",
                     "assetId": "#hash_35d3a7485a5e73f0",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -39499,13 +39499,13 @@
         {
             "value": 201,
             "next": 65535,
-            "name": "#hash_288f77a5f502647d",
+            "name": "#uin_radial_scroll",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_288f77a5f502647d",
+                    "name": "#uin_radial_scroll",
                     "assetId": "#hash_742e205804c95a9d",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -39548,13 +39548,13 @@
         {
             "value": 281,
             "next": 647,
-            "name": "#hash_6f9c7e5ca281e6de",
+            "name": "#uin_ready_bar_done",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6f9c7e5ca281e6de",
+                    "name": "#uin_ready_bar_done",
                     "assetId": "#uin/ready/char_confirm.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -39940,13 +39940,13 @@
         {
             "value": 104,
             "next": 655,
-            "name": "#hash_1e0ac62e6a30a2a2",
+            "name": "#uin_specialist_select",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1e0ac62e6a30a2a2",
+                    "name": "#uin_specialist_select",
                     "assetId": "#uin/2k18/generic/ui_spec_selection.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -40038,13 +40038,13 @@
         {
             "value": 641,
             "next": 65535,
-            "name": "#hash_5da050c473d28bf4",
+            "name": "#uin_splashscreen_exit",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5da050c473d28bf4",
+                    "name": "#uin_splashscreen_exit",
                     "assetId": "#uin/2k18/generic/gen_variation/ui_button_gen_00.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -40083,7 +40083,7 @@
                     "unk178": "#hash_e04140802"
                 },
                 {
-                    "name": "#hash_5da050c473d28bf4",
+                    "name": "#uin_splashscreen_exit",
                     "assetId": "#uin/2k18/generic/gen_variation/ui_button_gen_01.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -40122,7 +40122,7 @@
                     "unk178": "#hash_e04140802"
                 },
                 {
-                    "name": "#hash_5da050c473d28bf4",
+                    "name": "#uin_splashscreen_exit",
                     "assetId": "#uin/2k18/generic/gen_variation/ui_button_gen_02.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -40161,7 +40161,7 @@
                     "unk178": "#hash_e04140802"
                 },
                 {
-                    "name": "#hash_5da050c473d28bf4",
+                    "name": "#uin_splashscreen_exit",
                     "assetId": "#uin/2k18/generic/gen_variation/ui_button_gen_03.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -40200,7 +40200,7 @@
                     "unk178": "#hash_e04140802"
                 },
                 {
-                    "name": "#hash_5da050c473d28bf4",
+                    "name": "#uin_splashscreen_exit",
                     "assetId": "#uin/2k18/generic/gen_variation/ui_button_gen_04.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -40239,7 +40239,7 @@
                     "unk178": "#hash_e04140802"
                 },
                 {
-                    "name": "#hash_5da050c473d28bf4",
+                    "name": "#uin_splashscreen_exit",
                     "assetId": "#uin/2k18/generic/gen_variation/ui_button_gen_05.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -40278,7 +40278,7 @@
                     "unk178": "#hash_e04140802"
                 },
                 {
-                    "name": "#hash_5da050c473d28bf4",
+                    "name": "#uin_splashscreen_exit",
                     "assetId": "#uin/2k18/generic/gen_variation/ui_button_gen_06.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -40419,13 +40419,13 @@
         {
             "value": 337,
             "next": 65535,
-            "name": "#hash_77aa7a202900f3a0",
+            "name": "#uin_stats_switch",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_77aa7a202900f3a0",
+                    "name": "#uin_stats_switch",
                     "assetId": "#uin/2k18/mp/gpad_scoreboard.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -40566,13 +40566,13 @@
         {
             "value": 621,
             "next": 65535,
-            "name": "#hash_de86161c45ed813",
+            "name": "#uin_timer_10",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_de86161c45ed813",
+                    "name": "#uin_timer_10",
                     "assetId": "#uin/timer/beep/evt_mpl_clock_sting_10.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -40615,13 +40615,13 @@
         {
             "value": 311,
             "next": 65535,
-            "name": "#hash_1d6795922c96daf8",
+            "name": "#uin_timer_2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1d6795922c96daf8",
+                    "name": "#uin_timer_2",
                     "assetId": "#uin/2k18/wz/countdown_timer.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -40664,13 +40664,13 @@
         {
             "value": 440,
             "next": 65535,
-            "name": "#hash_1d6796922c96dcab",
+            "name": "#uin_timer_3",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1d6796922c96dcab",
+                    "name": "#uin_timer_3",
                     "assetId": "#uin/2k18/wz/countdown_timer.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -40713,13 +40713,13 @@
         {
             "value": 165,
             "next": 65535,
-            "name": "#hash_1d679b922c96e52a",
+            "name": "#uin_timer_4",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1d679b922c96e52a",
+                    "name": "#uin_timer_4",
                     "assetId": "#uin/2k18/wz/countdown_timer.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -40811,13 +40811,13 @@
         {
             "value": 200,
             "next": 660,
-            "name": "#hash_154ac3692454c763",
+            "name": "#uin_timer_esports_beep",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_154ac3692454c763",
+                    "name": "#uin_timer_esports_beep",
                     "assetId": "#mpl/wager/timer/timer_wager_doot.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -41007,13 +41007,13 @@
         {
             "value": 181,
             "next": 65535,
-            "name": "#hash_369c705863c97c9e",
+            "name": "#uin_toggle_featured_playlist",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_369c705863c97c9e",
+                    "name": "#uin_toggle_featured_playlist",
                     "assetId": "#uin/2k18/generic/ui_deploy.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -41252,13 +41252,13 @@
         {
             "value": 79,
             "next": 65535,
-            "name": "#hash_3cc7ae972b117866",
+            "name": "#uin_warning_generic",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3cc7ae972b117866",
+                    "name": "#uin_warning_generic",
                     "assetId": "#hash_6072fe08188bcc38",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -41301,13 +41301,13 @@
         {
             "value": 319,
             "next": 679,
-            "name": "#hash_7735833aa3fb2bcb",
+            "name": "#uin_wl_division_place",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7735833aa3fb2bcb",
+                    "name": "#uin_wl_division_place",
                     "assetId": "#hash_6dde421fc2b5dbf2",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -41350,13 +41350,13 @@
         {
             "value": 510,
             "next": 65535,
-            "name": "#hash_ba7014de756041a",
+            "name": "#uin_wlh_current_rank",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_ba7014de756041a",
+                    "name": "#uin_wlh_current_rank",
                     "assetId": "#hash_2a21d1ad38f60200",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -41399,13 +41399,13 @@
         {
             "value": 399,
             "next": 65535,
-            "name": "#hash_3217c5f80883a1",
+            "name": "#uin_wlh_defeat",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3217c5f80883a1",
+                    "name": "#uin_wlh_defeat",
                     "assetId": "#hash_36cd37d4cf2e9f99",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -41497,13 +41497,13 @@
         {
             "value": 327,
             "next": 697,
-            "name": "#hash_7adaa557d68d66ac",
+            "name": "#uin_wlh_ladder_points",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7adaa557d68d66ac",
+                    "name": "#uin_wlh_ladder_points",
                     "assetId": "#hash_2769c0fb5239bdd8",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -41546,13 +41546,13 @@
         {
             "value": 545,
             "next": 65535,
-            "name": "#hash_3f16d1acb91587b",
+            "name": "#uin_wlh_league_play_results",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3f16d1acb91587b",
+                    "name": "#uin_wlh_league_play_results",
                     "assetId": "#hash_5ee8ea2bf069af5d",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -41693,13 +41693,13 @@
         {
             "value": 187,
             "next": 65535,
-            "name": "#hash_5d8ed49ca0196f85",
+            "name": "#uin_wlh_placement",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5d8ed49ca0196f85",
+                    "name": "#uin_wlh_placement",
                     "assetId": "#hash_4919a7216f63e3e3",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -41742,13 +41742,13 @@
         {
             "value": 411,
             "next": 682,
-            "name": "#hash_1f88299d600b7b41",
+            "name": "#uin_wlh_placement_bonus",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1f88299d600b7b41",
+                    "name": "#uin_wlh_placement_bonus",
                     "assetId": "#hash_4ea7bbc5fa736e5f",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -41840,13 +41840,13 @@
         {
             "value": 566,
             "next": 65535,
-            "name": "#hash_2d028acf2d80d72c",
+            "name": "#uin_wlh_victory",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2d028acf2d80d72c",
+                    "name": "#uin_wlh_victory",
                     "assetId": "#hash_1952b0364b466e8",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -41889,13 +41889,13 @@
         {
             "value": 121,
             "next": 690,
-            "name": "#hash_714010f1e3fec4f0",
+            "name": "#uin_wz_aar_box",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_714010f1e3fec4f0",
+                    "name": "#uin_wz_aar_box",
                     "assetId": "#hash_7e5650f63929274b",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -41938,13 +41938,13 @@
         {
             "value": 429,
             "next": 694,
-            "name": "#hash_1866fa75faa05d7a",
+            "name": "#uin_wz_aar_challenge_complete",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1866fa75faa05d7a",
+                    "name": "#uin_wz_aar_challenge_complete",
                     "assetId": "#hash_56ffcbd426773c99",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -41987,13 +41987,13 @@
         {
             "value": 19,
             "next": 65535,
-            "name": "#hash_52b3e0c967ad85d4",
+            "name": "#uin_wz_aar_char_unlock",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_52b3e0c967ad85d4",
+                    "name": "#uin_wz_aar_char_unlock",
                     "assetId": "#hash_22c5964e8bbe7763",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -42085,13 +42085,13 @@
         {
             "value": 431,
             "next": 65535,
-            "name": "#hash_241e2746e888eefd",
+            "name": "#uin_wz_menu_equip_close",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_241e2746e888eefd",
+                    "name": "#uin_wz_menu_equip_close",
                     "assetId": "#hash_78ed001df5428e3d",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -42134,13 +42134,13 @@
         {
             "value": 549,
             "next": 65535,
-            "name": "#hash_3e15947cbea99e0b",
+            "name": "#uin_wz_menu_equip_open",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3e15947cbea99e0b",
+                    "name": "#uin_wz_menu_equip_open",
                     "assetId": "#hash_371df29b0501d4a1",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -42569,9 +42569,9 @@
     "ambients": [],
     "scriptIdLookups": [],
     "streamKeysSABL": {
-        "streamKey1": "#hash_325bf5ac2899a482",
+        "streamKey1": "#core_ui_all_stream",
         "dataSize1": 8192,
-        "fileKey": "#hash_379c970609b13c83",
+        "fileKey": "#core_ui_all_loaded",
         "fileLen": 24988544
     },
     "streamKeysSABS": {

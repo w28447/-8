@@ -1,9 +1,9 @@
-CoD[0x90EBA40764624FE] = InheritFrom( LUI.UIElement )
-CoD[0x90EBA40764624FE].__defaultWidth = 960
-CoD[0x90EBA40764624FE].__defaultHeight = 240
-CoD[0x90EBA40764624FE].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD["callingcards_loot2_steampunk"] = InheritFrom( LUI.UIElement )
+CoD["callingcards_loot2_steampunk"].__defaultWidth = 960
+CoD["callingcards_loot2_steampunk"].__defaultHeight = 240
+CoD["callingcards_loot2_steampunk"].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0x90EBA40764624FE] )
+	self:setClass( CoD["callingcards_loot2_steampunk"] )
 	self.id = "callingcards_loot2_steampunk"
 	self.soundSet = "none"
 	f1_arg0:addElementToPendingUpdateStateList( self )
@@ -14,7 +14,7 @@ CoD[0x90EBA40764624FE].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.bg = bg
 	
 	local fogtubes = LUI.UIImage.new( 0, 0, 12, 452, 0, 0, -14, 130 )
-	fogtubes:setImage( RegisterImage( 0x280127F94509C50 ) )
+	fogtubes:setImage( RegisterImage( "uie_ui_menu_callingcards_steampunk_fogtubes" ) )
 	self:addElement( fogtubes )
 	self.fogtubes = fogtubes
 	
@@ -71,7 +71,7 @@ CoD[0x90EBA40764624FE].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0x90EBA40764624FE].__resetProperties = function ( f2_arg0 )
+CoD["callingcards_loot2_steampunk"].__resetProperties = function ( f2_arg0 )
 	f2_arg0.body:completeAnimation()
 	f2_arg0.particles2:completeAnimation()
 	f2_arg0.particles3:completeAnimation()
@@ -105,7 +105,7 @@ CoD[0x90EBA40764624FE].__resetProperties = function ( f2_arg0 )
 	f2_arg0.particles1:setAlpha( 1 )
 end
 
-CoD[0x90EBA40764624FE].__clipsPerState = {
+CoD["callingcards_loot2_steampunk"].__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()

@@ -3,7 +3,7 @@
     "baseWeapon": "#zhield_zword_lh",
     "displayname": "#weapon/sig_buckler_dw",
     "dualwieldWeaponName": "#zhield_zword_dw_zm",
-    "streamkey": "#hash_515ae731b6276a9f",
+    "streamkey": "#zhield_zword_lh_soundbank",
     "scrstr_8d8": [
         "tag_ik_loc_le_dw"
     ],
@@ -33,7 +33,7 @@
     "#hash_554be9f7": false,
     "sound660": "#uin_unavailable_charging",
     "tunables1": "#zhield_zword_lh_tunables_zm",
-    "sharedWeaponSounds": "#hash_7ed5a8a63848a4a8",
+    "sharedWeaponSounds": "#zhield_towers_shield",
     "viewmodel": [
         "#hash_40af8d244cfc1cb"
     ],

@@ -1,7 +1,7 @@
 {
     "name": "#zitem_office_trap_battery_part_1_zm",
-    "baseWeapon": "#hash_31fb0b01bd55c7bf",
-    "streamkey": "#hash_571b85bc5ae4a7d",
+    "baseWeapon": "#zitem_office_trap_battery_part_1",
+    "streamkey": "#zitem_office_trap_battery_part_1_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

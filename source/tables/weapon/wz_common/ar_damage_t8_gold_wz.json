@@ -5,7 +5,7 @@
     "xhash_60": "#hash_7d37bbfb8ec41ac7",
     "weapon70": "#ar_damage_t8_gold",
     "weapon890": "#ar_damage_t8_wz",
-    "streamkey": "#hash_22998294bdade7c4",
+    "streamkey": "#ar_damage_t8_gold_soundbank",
     "scrstr_8c8": [
         "tag_sights_front_off",
         "tag_sights_rear_off",
@@ -70,7 +70,7 @@
     "sound210": "#hash_2b902c34c9ae43f5",
     "sound240": "#hash_5eabe6a258a16f56",
     "sound250": "#hash_430505a2008aefdb",
-    "sound260": "#hash_515f54aa1f553686",
+    "sound260": "#prj_crack_supersonic",
     "sound600": "#hash_209cb2974ae55ec0",
     "sound610": "#hash_209cb2974ae55ec0",
     "sound800": "#hash_5ee962527afebfb1",

@@ -341,7 +341,7 @@ CoD.EmblemEditorLayerProperties.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	LayerUsed = LUI.UIText.new( 0, 0, 81, 259, 0, 0, 3.5, 28.5 )
 	LayerUsed:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	LayerUsed:setText( Engine[0xF9F1239CFD921FE]( 0x3357A304FD698FC ) )
+	LayerUsed:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_layers_used" ) )
 	LayerUsed:setTTF( "ttmussels_regular" )
 	LayerUsed:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	LayerUsed:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

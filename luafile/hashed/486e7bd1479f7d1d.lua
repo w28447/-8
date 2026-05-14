@@ -109,7 +109,7 @@ CoD.WeaponOptionInfoInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local FramePlaceLeft = LUI.UIImage.new( 0, 0, -2, 22, 1, 1, -14, 16 )
 	FramePlaceLeft:setAlpha( 0.04 )
-	FramePlaceLeft:setImage( RegisterImage( 0x4AEBE97B7C64301 ) )
+	FramePlaceLeft:setImage( RegisterImage( "uie_ui_menu_aar_common_open_frame" ) )
 	FramePlaceLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FramePlaceLeft:setShaderVector( 0, 0, 0, 0, 0 )
 	FramePlaceLeft:setupNineSliceShader( 24, 24 )
@@ -119,7 +119,7 @@ CoD.WeaponOptionInfoInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local FramePlaceRight = LUI.UIImage.new( 1, 1, -22, 2, 1, 1, -14, 16 )
 	FramePlaceRight:setAlpha( 0.04 )
 	FramePlaceRight:setYRot( 180 )
-	FramePlaceRight:setImage( RegisterImage( 0x4AEBE97B7C64301 ) )
+	FramePlaceRight:setImage( RegisterImage( "uie_ui_menu_aar_common_open_frame" ) )
 	FramePlaceRight:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FramePlaceRight:setShaderVector( 0, 0, 0, 0, 0 )
 	FramePlaceRight:setupNineSliceShader( 24, 24 )

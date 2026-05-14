@@ -55,7 +55,7 @@ CoD.systemOverlay_connectinganim.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local fuilines = LUI.UIImage.new( 0, 0, 1, 549, 0, 0, 0, 286 )
 	fuilines:setAlpha( 0.5 )
-	fuilines:setImage( RegisterImage( 0x30BE7E4BCFE86AE ) )
+	fuilines:setImage( RegisterImage( "uie_ui_menu_overlays_anim_fui" ) )
 	fuilines:setMaterial( LUI.UIImage.GetCachedMaterial( 0x5956C6C1FD41D3C ) )
 	fuilines:setShaderVector( 0, 0.2, 1, 0, 0 )
 	fuilines:setShaderVector( 1, 0, 0, 0, 0 )

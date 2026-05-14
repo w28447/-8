@@ -38,7 +38,7 @@ function __init__()
     callback::on_item_pickup( &function_4467066e );
     callback::add_callback( #"on_player_downed", &function_ef53914c );
     callback::on_player_killed_with_params( &function_de83cc91 );
-    callback::add_callback( #"hash_405e46788e83af41", &start_beams );
+    callback::add_callback( #"death_circle_start", &start_beams );
 }
 
 // Namespace wz_spectre/wz_spectre

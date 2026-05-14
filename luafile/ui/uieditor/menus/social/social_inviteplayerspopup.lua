@@ -91,7 +91,7 @@ LUI.createMenu.Social_InvitePlayersPopup = function ( f1_arg0, f1_arg1 )
 	local InvitePlayersText = LUI.UIText.new( 0.5, 0.5, -460.5, 460.5, 0, 0, 72, 96 )
 	InvitePlayersText:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	InvitePlayersText:setAlpha( 0.6 )
-	InvitePlayersText:setText( LocalizeToUpperString( 0xC4EB9FE5F09A2E7 ) )
+	InvitePlayersText:setText( LocalizeToUpperString( "menu/invite_players" ) )
 	InvitePlayersText:setTTF( "ttmussels_regular" )
 	InvitePlayersText:setLetterSpacing( 4 )
 	InvitePlayersText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -153,7 +153,7 @@ LUI.createMenu.Social_InvitePlayersPopup = function ( f1_arg0, f1_arg1 )
 	
 	local SelectedCount2 = LUI.UIText.new( 0.5, 0.5, 233, 433, 0, 0, 522, 547 )
 	SelectedCount2:setAlpha( 0.7 )
-	SelectedCount2:setText( LocalizeToUpperString( 0xF3659CEDAE6509E ) )
+	SelectedCount2:setText( LocalizeToUpperString( "menu/selected" ) )
 	SelectedCount2:setTTF( "ttmussels_regular" )
 	SelectedCount2:setLetterSpacing( 4 )
 	SelectedCount2:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -172,13 +172,13 @@ LUI.createMenu.Social_InvitePlayersPopup = function ( f1_arg0, f1_arg1 )
 	self.noPlayersOnlineText = noPlayersOnlineText
 	
 	local LayoutTopBar = LUI.UIImage.new( 0.5, 0.5, -473, 473, 0, 0, 40, 68 )
-	LayoutTopBar:setImage( RegisterImage( 0x87C348C36FF085C ) )
+	LayoutTopBar:setImage( RegisterImage( "uie_ui_menu_social_popup_menu_bar" ) )
 	self:addElement( LayoutTopBar )
 	self.LayoutTopBar = LayoutTopBar
 	
 	local LayoutTopBar2 = LUI.UIImage.new( 0.5, 0.5, -473, 473, 0, 0, 1012, 1040 )
 	LayoutTopBar2:setZRot( 180 )
-	LayoutTopBar2:setImage( RegisterImage( 0x87C348C36FF085C ) )
+	LayoutTopBar2:setImage( RegisterImage( "uie_ui_menu_social_popup_menu_bar" ) )
 	self:addElement( LayoutTopBar2 )
 	self.LayoutTopBar2 = LayoutTopBar2
 	

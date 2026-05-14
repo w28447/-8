@@ -18,7 +18,7 @@ CoD.vhud_turret_damageicon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local Red = LUI.UIImage.new( 0.5, 0.5, -73, 74, 0.5, 0.5, -73, 74 )
 	Red:setAlpha( 0.8 )
-	Red:setImage( RegisterImage( 0xFA5129C8BD4F5B0 ) )
+	Red:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_turret_damageiconred" ) )
 	Red:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	Red:setShaderVector( 1, 0, 0, 0, 0 )
 	Red:setShaderVector( 2, 1, 0, 0, 0 )

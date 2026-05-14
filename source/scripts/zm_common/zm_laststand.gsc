@@ -322,7 +322,7 @@ function playerlaststand( einflictor, attacker, idamage, smeansofdeath, weapon, 
     }
     
     self.n_downs += 1;
-    bleedout_time = getdvarfloat( #"hash_1116ba0f929df636", isdefined( self.var_b92e42da ) ? self.var_b92e42da : getdvarfloat( #"player_laststandbleedouttime", 0 ) );
+    bleedout_time = getdvarfloat( #"player_laststandbleedouttimeoverride", isdefined( self.var_b92e42da ) ? self.var_b92e42da : getdvarfloat( #"player_laststandbleedouttime", 0 ) );
     
     if ( zm_custom::function_901b751c( #"zmlimiteddownsamount" ) && self.n_downs > zm_custom::function_901b751c( #"zmlimiteddownsamount" ) )
     {
@@ -1443,7 +1443,7 @@ function revive_trigger_think( t_secondary )
             {
                 if ( e_player can_revive( self, 1, 1 ) && e_player istouching( t_revive ) || n_depth > 20 )
                 {
-                    t_revive setrevivehintstring( #"hash_12272c5573321d90", self.team );
+                    t_revive setrevivehintstring( #"zombie/button_to_revive_player", self.team );
                     break;
                 }
                 
@@ -1452,7 +1452,7 @@ function revive_trigger_think( t_secondary )
             
             if ( e_player can_revive_via_override( self ) || e_player can_revive( self ) || n_depth > 20 )
             {
-                t_revive setrevivehintstring( #"hash_12272c5573321d90", self.team );
+                t_revive setrevivehintstring( #"zombie/button_to_revive_player", self.team );
                 break;
             }
         }
@@ -1776,7 +1776,7 @@ function revive_do_revive( e_revivee, w_reviver, w_revive_tool, t_secondary )
     revived = 0;
     e_revivee notify( #"player_being_revived" );
     e_revivee.revivetrigger.beingrevived = 1;
-    e_revivee thread laststand::revive_hud_show_n_fade( #"hash_12e2c5e29f8ce6ad", 3, self );
+    e_revivee thread laststand::revive_hud_show_n_fade( #"zombie/player_is_reviving_you", 3, self );
     e_revivee.revivetrigger sethintstring( "" );
     
     if ( isplayer( e_revivee ) )
@@ -1830,7 +1830,7 @@ function revive_do_revive( e_revivee, w_reviver, w_revive_tool, t_secondary )
         }
     }
     
-    e_revivee.revivetrigger sethintstring( #"hash_12272c5573321d90" );
+    e_revivee.revivetrigger sethintstring( #"zombie/button_to_revive_player" );
     e_revivee.revivetrigger.beingrevived = 0;
     
     if ( isdefined( self ) )
@@ -2168,7 +2168,7 @@ function revive_hud_think()
                     }
                 }
                 
-                players[ i ] thread laststand::revive_hud_show_n_fade( #"hash_453f3038b87fbc77", 3, playertorevive );
+                players[ i ] thread laststand::revive_hud_show_n_fade( #"zombie/player_needs_to_be_revived", 3, playertorevive );
             }
             
             playertorevive.revivetrigger.createtime = undefined;

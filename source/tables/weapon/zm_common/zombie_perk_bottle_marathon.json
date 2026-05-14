@@ -1,7 +1,7 @@
 {
     "name": "#zombie_perk_bottle_marathon",
     "baseWeapon": "#zombie_perk_bottle_marathon",
-    "streamkey": "#hash_1d0e74473b9628ae",
+    "streamkey": "#zombie_perk_bottle_marathon_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",
@@ -33,7 +33,7 @@
     "sound4e0": "#hash_7de02f3f0a5f070b",
     "tunables1": "#zombie_perk_bottle_marathon_tunables",
     "gestureTables": [
-        "#hash_88ac2dade478f38"
+        "#gestable_perk_bottle"
     ],
     "viewmodel": [
         "#wpn_t8_zm_perk_bottle_staminup_view"

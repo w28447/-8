@@ -1,7 +1,7 @@
 {
     "name": "#brutus_special_melee",
     "baseWeapon": "#brutus_special_melee",
-    "streamkey": "#hash_2d3c525917fd70d1",
+    "streamkey": "#brutus_special_melee_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

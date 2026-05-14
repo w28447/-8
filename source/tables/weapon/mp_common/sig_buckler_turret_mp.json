@@ -4,7 +4,7 @@
     "displayname": "#weapon/sig_buckler_dw",
     "altWeapon": "#sig_buckler_dw_mp",
     "weapon70": "#sig_buckler_dw",
-    "streamkey": "#hash_817fa8d58f73660",
+    "streamkey": "#sig_buckler_turret_soundbank",
     "worldModelTagRight": "tag_weapon_left",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

@@ -284,10 +284,10 @@ CoD.StartMenu_InventoryList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x1F464950EB4AA26, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 6000 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_confirm" )
 			return true
 		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f23_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f23_arg0, f23_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f23_arg0, f23_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.ATTACH ) and CoD.ModelUtility.IsGlobalDataSourceModelValueTrue( f23_arg2, "WarzoneInventory", "showAttachments" ) then
-			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0xC083113BC81F23F], 0xE7CFC872D6A405D, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0xC083113BC81F23F], "warzone/attach", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
 		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f23_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f23_arg0, f23_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f23_arg0, f23_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.SWAP ) then
-			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0xC083113BC81F23F], 0xB4A0F5945BB8108, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0xC083113BC81F23F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
 		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f23_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f23_arg0, f23_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f23_arg0, f23_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.EQUIP ) then
 			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x38B775D97E72F0C, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
@@ -422,13 +422,13 @@ CoD.StartMenu_InventoryList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 			CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0xBDF67DCF97EBC09, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE1" )
 			return true
 		elseif IsMouseOrKeyboard( f31_arg2 ) and CoD.WZUtility.ScoreboardVisibilitySetAndPC( f31_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f31_arg0, f31_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f31_arg0, f31_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.ATTACH ) and CoD.ModelUtility.IsGlobalDataSourceModelValueTrue( f31_arg2, "WarzoneInventory", "showAttachments" ) then
-			CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0xE7CFC872D6A405D, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE1" )
+			CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], "warzone/attach", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE1" )
 			return true
 		elseif IsMouseOrKeyboard( f31_arg2 ) and CoD.WZUtility.ScoreboardVisibilitySetAndPC( f31_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f31_arg0, f31_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f31_arg0, f31_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.CONSUME ) then
 			CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0x1F464950EB4AA26, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE1" )
 			return true
 		elseif IsMouseOrKeyboard( f31_arg2 ) and CoD.WZUtility.ScoreboardVisibilitySetAndPC( f31_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f31_arg0, f31_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f31_arg0, f31_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.SWAP ) then
-			CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0xB4A0F5945BB8108, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE1" )
+			CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE1" )
 			return true
 		else
 			return false
@@ -547,7 +547,7 @@ CoD.StartMenu_InventoryList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 			
 		end
 	end )
-	List:AddContextualMenuAction( f1_arg0, f1_arg1, 0xE7CFC872D6A405D, function ( f42_arg0, f42_arg1, f42_arg2, f42_arg3 )
+	List:AddContextualMenuAction( f1_arg0, f1_arg1, "warzone/attach", function ( f42_arg0, f42_arg1, f42_arg2, f42_arg3 )
 		if not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f42_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f42_arg0, f42_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f42_arg0, f42_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.ATTACH ) and CoD.ModelUtility.IsGlobalDataSourceModelValueTrue( f42_arg2, "WarzoneInventory", "showAttachments" ) then
 			return function ( f43_arg0, f43_arg1, f43_arg2, f43_arg3 )
 				CoD.WZUtility.SendInventoryEquipNotify( f43_arg2, f43_arg0, f43_arg1, false )
@@ -557,7 +557,7 @@ CoD.StartMenu_InventoryList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 			
 		end
 	end )
-	List:AddContextualMenuAction( f1_arg0, f1_arg1, 0xB4A0F5945BB8108, function ( f44_arg0, f44_arg1, f44_arg2, f44_arg3 )
+	List:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/swap", function ( f44_arg0, f44_arg1, f44_arg2, f44_arg3 )
 		if not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f44_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f44_arg0, f44_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f44_arg0, f44_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.SWAP ) then
 			return function ( f45_arg0, f45_arg1, f45_arg2, f45_arg3 )
 				CoD.WZUtility.SendInventoryEquipNotify( f45_arg2, f45_arg0, f45_arg1, false )

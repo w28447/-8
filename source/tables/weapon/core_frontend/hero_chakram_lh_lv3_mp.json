@@ -4,7 +4,7 @@
     "displayname": "#weapon/hero_chakram",
     "weapon70": "#hero_chakram_lv1",
     "dualwieldWeaponName": "#hero_chakram_lv3_mp",
-    "streamkey": "#hash_4dff7c61ae187ce2",
+    "streamkey": "#hero_chakram_lh_lv3_soundbank",
     "worldModelTagRight": "tag_weapon_left",
     "worldModelTagLeft": "tag_weapon_right",
     "scrstr_118c": "tag_fx2_le",
@@ -53,9 +53,9 @@
     "fireRumble": "#pistol_fire",
     "fx_be0": "#hash_4c63b5118642af89",
     "fx_be8": "#hash_4c63b5118642af89",
-    "normalImpactSounds": "#hash_2daea729fdf78dec",
-    "exitImpactSounds": "#hash_2daea729fdf78dec",
-    "bounceImpactSounds": "#hash_2daea729fdf78dec",
-    "dudImpactSounds": "#hash_2daea729fdf78dec",
-    "soundsImpact_1000": "#hash_2daea729fdf78dec"
+    "normalImpactSounds": "#zm_chakram_projectile",
+    "exitImpactSounds": "#zm_chakram_projectile",
+    "bounceImpactSounds": "#zm_chakram_projectile",
+    "dudImpactSounds": "#zm_chakram_projectile",
+    "soundsImpact_1000": "#zm_chakram_projectile"
 }

@@ -9,7 +9,7 @@ CoD.PositionDraft_Searching.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local Searching = LUI.UIText.new( 0, 1, 0, 0, 0.5, 0.5, -10, 10 )
-	Searching:setText( LocalizeToUpperString( 0x2660F4D87BFCE63 ) )
+	Searching:setText( LocalizeToUpperString( "menu/fileshare_searching" ) )
 	Searching:setTTF( "ttmussels_regular" )
 	Searching:setLetterSpacing( 1 )
 	Searching:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -49,7 +49,7 @@ CoD.PositionDraft_Searching.__resetProperties = function ( f4_arg0 )
 	f4_arg0.Searching:completeAnimation()
 	f4_arg0.Searching:setLeftRight( 0, 1, 0, 0 )
 	f4_arg0.Searching:setTopBottom( 0.5, 0.5, -10, 10 )
-	f4_arg0.Searching:setText( LocalizeToUpperString( 0x2660F4D87BFCE63 ) )
+	f4_arg0.Searching:setText( LocalizeToUpperString( "menu/fileshare_searching" ) )
 end
 
 CoD.PositionDraft_Searching.__clipsPerState = {
@@ -60,7 +60,7 @@ CoD.PositionDraft_Searching.__clipsPerState = {
 			f5_arg0.Searching:completeAnimation()
 			f5_arg0.Searching:setLeftRight( 0, 1, 1, 1 )
 			f5_arg0.Searching:setTopBottom( 0, 0, 0.5, 26.5 )
-			f5_arg0.Searching:setText( LocalizeToUpperString( 0x2660F4D87BFCE63 ) )
+			f5_arg0.Searching:setText( LocalizeToUpperString( "menu/fileshare_searching" ) )
 			f5_arg0.clipFinished( f5_arg0.Searching )
 		end
 	},

@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_caricature_recon",
+    "type": "#tag",
+    "material": "#hash_4c554e8d1cabc6bd",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#tags/caricature_recon",
+        "icon": "image#loot_ui_icon_tags_caricature_recon",
+        "isdefault": 0
+    }
+}

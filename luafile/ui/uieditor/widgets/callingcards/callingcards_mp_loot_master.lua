@@ -18,7 +18,7 @@ CoD[0xDF8326B7C9D17D4].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.background = background
 	
 	local debris01 = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	debris01:setImage( RegisterImage( 0x9FA84AD3E32A684 ) )
+	debris01:setImage( RegisterImage( "uie_callingcards_mp_loot_master_debris" ) )
 	debris01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x73D72BCD14C2AAD ) )
 	debris01:setShaderVector( 0, 1, 1, 0, 0 )
 	debris01:setShaderVector( 1, 0.05, 0, 0, 0 )
@@ -32,7 +32,7 @@ CoD[0xDF8326B7C9D17D4].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.lighteningGlow = lighteningGlow
 	
 	local lighteningGlow2 = LUI.UIImage.new( 0, 0, -5.5, 176.5, 0, 0, -18.5, 163.5 )
-	lighteningGlow2:setImage( RegisterImage( 0x776D8BF0963B6EE ) )
+	lighteningGlow2:setImage( RegisterImage( "uie_callingcards_mp_loot_master_lightening" ) )
 	lighteningGlow2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( lighteningGlow2 )
 	self.lighteningGlow2 = lighteningGlow2

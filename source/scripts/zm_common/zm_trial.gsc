@@ -393,7 +393,7 @@ function function_361e2cb0()
     zm_trial_util::set_game_state( 2 );
     level.trials_success = 1;
     wait 3;
-    level notify( #"hash_4c09c9d01060d7ad" );
+    level notify( #"devgui_end_round_think" );
     level notify( #"end_game" );
 }
 
@@ -418,7 +418,7 @@ function function_18b797ec()
     
     zm_trial_util::set_game_state( 3 );
     wait 3;
-    level notify( #"hash_4c09c9d01060d7ad" );
+    level notify( #"devgui_end_round_think" );
     level notify( #"end_game" );
 }
 
@@ -860,7 +860,7 @@ function function_74872db6()
         }
     }
     
-    level notify( #"hash_5d42d8ee7a08b543" );
+    level notify( #"trial_round_start" );
 }
 
 // Namespace zm_trial/zm_trial
@@ -874,8 +874,8 @@ function on_round_end()
         return;
     }
     
-    level notify( #"hash_7646638df88a3656" );
-    playsoundatposition( #"hash_351022f2dd6aba77", ( 0, 0, 0 ) );
+    level notify( #"trial_round_end" );
+    playsoundatposition( #"zmb_trials_round_end", ( 0, 0, 0 ) );
     assert( isdefined( level.var_d77a6967 ) );
     assert( isdefined( level.var_3dd975d5 ) );
     

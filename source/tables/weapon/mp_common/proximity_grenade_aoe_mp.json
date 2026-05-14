@@ -2,7 +2,7 @@
     "name": "#proximity_grenade_aoe_mp",
     "baseWeapon": "#proximity_grenade_aoe",
     "displayname": "#weapon/proximity_grenade",
-    "streamkey": "#hash_6bbec5aed90cadf9",
+    "streamkey": "#proximity_grenade_aoe_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -53,5 +53,5 @@
     "image_e90": "#t7_hud_icon_menu_shockcharge_kf",
     "fx_ed8": "#weapon/fx_prox_grenade_exp",
     "fx_f00": "#weapon/fx_prox_grenade_elec_trail",
-    "bounceImpactSounds": "#hash_21a1550b0fa62b00"
+    "bounceImpactSounds": "#proximity_grenade_bounce"
 }

@@ -14,7 +14,7 @@ CoD.CenterReticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	self.LeftOutside = LeftOutside
 	
 	local LeftInside = LUI.UIImage.new( 0.5, 0.5, -640, -136, 0.5, 0.5, -144, 144 )
-	LeftInside:setImage( RegisterImage( 0x8701156ECFD8271 ) )
+	LeftInside:setImage( RegisterImage( "uie_t7_hud_blackcell_left_inside" ) )
 	self:addElement( LeftInside )
 	self.LeftInside = LeftInside
 	

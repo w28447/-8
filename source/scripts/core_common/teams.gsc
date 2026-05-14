@@ -117,7 +117,7 @@ function function_959bac94()
     // Size: 0x134, Type: dev
     function private function_ba459d03( team )
     {
-        if ( isdefined( level.var_ba13fb7a ) && level.var_ba13fb7a )
+        if ( isdefined( level.debug_team_assignment ) && level.debug_team_assignment )
         {
             team_str = string( team );
             
@@ -149,9 +149,9 @@ function function_959bac94()
     {
         foreach ( party_member in party.party_members )
         {
-            var_2798314b = party_member getparty();
+            party_member_party = party_member getparty();
             
-            if ( var_2798314b.var_a15e4438 != party.var_a15e4438 )
+            if ( party_member_party.party_member_count != party.party_member_count )
             {
                 assertmsg( "<dev string:xa5>" );
             }

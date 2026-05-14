@@ -88,7 +88,7 @@ CoD[0x8A9D1228888C8CB].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local fire = LUI.UIImage.new( 0, 0, -364, 596, 0, 0, 171, 411 )
 	fire:setZRot( 21 )
-	fire:setImage( RegisterImage( 0x6D41E45DB5AFD40 ) )
+	fire:setImage( RegisterImage( "uie_callingcards_global_master_firebreath" ) )
 	fire:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	fire:setShaderVector( 0, 0, 5, 0, 0 )
 	fire:setShaderVector( 1, 12, 0, 0, 0 )

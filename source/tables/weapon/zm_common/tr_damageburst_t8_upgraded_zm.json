@@ -4,7 +4,7 @@
     "displayname": "#zmweapon/tr_damageburst_t8_upgraded",
     "xhash_60": "#hash_271a78301dcdfff1",
     "weapon70": "#tr_damageburst_t8",
-    "streamkey": "#hash_4d77c6171b7b696d",
+    "streamkey": "#tr_damageburst_t8_upgraded_soundbank",
     "scrstr_8c8": [
         "tag_camo_darkmatter",
         "tag_camo_diamond",
@@ -63,7 +63,7 @@
     "sound210": "#hash_271370c5b9078536",
     "sound240": "#hash_474a10cd847c7803",
     "sound250": "#hash_146e19cd67fe19de",
-    "sound260": "#hash_515f54aa1f553686",
+    "sound260": "#prj_crack_supersonic",
     "sound600": "#hash_209cb2974ae55ec0",
     "sound610": "#hash_209cb2974ae55ec0",
     "sound800": "#hash_5ee962527afebfb1",
@@ -75,7 +75,7 @@
     "weaponIconXCam": "#hash_cb88e4084eecacd2",
     "attachments": [
         "#hash_f459a0af8e8f912b",
-        "#hash_2bd64b9e627a70cf"
+        "#acog_tr_upgraded"
     ],
     "attachmentUniques": [
         "#hash_d9a280c31bdcff10",

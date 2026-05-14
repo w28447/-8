@@ -606,7 +606,7 @@ function warp_player()
     self clientfield::increment_to_player( "teleporter_arrive", 1 );
     playfx( level._effect[ #"portal_dest" ], self.origin, ( 1, 0, 0 ), ( 0, 0, 1 ) );
     playsoundatposition( #"evt_teleporter_go", self.origin );
-    self playsoundtoplayer( #"hash_39876bf613387fef", self );
+    self playsoundtoplayer( #"evt_teleporter_go_plr", self );
     wait 0.5;
     self.teleporting = 0;
     util::setclientsysstate( "levelNotify", "cool_fx", self );
@@ -839,7 +839,7 @@ function song()
 // Size: 0x22c
 function quiz()
 {
-    level endon( #"hash_1a91b42d31e0b28d" );
+    level endon( #"stop_all_vo" );
     level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_73fd31eafa77ad51", 0, 1 );
     level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_23131f0d452094c1", 0, 0 );
     level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_23131f0d452094c1", 1, 0 );

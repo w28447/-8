@@ -184,7 +184,7 @@ f0_local0.QuitGame = function ( f15_arg0, f15_arg1 )
 	elseif f0_local0.IsRankedGame() and f0_local0.IsHost() and not Engine.HostMigrationWaitingForPlayers() and Engine[0x22EAAB59AA27E9B]( "g_gameEnded" ) ~= 1 then
 		Engine.UpdateStatsForQuit( f15_arg0, true )
 		local f15_local4 = LobbyData.GetLobbyMenuByID( Engine[0x9882F293C327557]() )
-		local f15_local5 = f15_local4[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_PRIVATE )
+		local f15_local5 = f15_local4["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_PRIVATE )
 		local f15_local6 = 2
 		if Enum.UIVisibilityBit and Engine.IsVisibilityBitSet( f15_arg0, Enum.UIVisibilityBit[0x6FFF566DCC09BBD] ) then
 			f15_local6 = 1
@@ -728,7 +728,7 @@ f0_local0.SetDefaultLoadoutItems = function ( f49_arg0, f49_arg1, f49_arg2, f49_
 				f49_local10 = f49_arg1[f49_local12]
 			end
 		end
-		f0_local0.updateSlotList( f49_local10, f49_arg0.specialty, 0x340308F6832282F, f49_arg2 )
+		f0_local0.updateSlotList( f49_local10, f49_arg0.specialty, "specialty", f49_arg2 )
 		local f49_local12 = f49_arg1[0x647C3A51BFBCEBF]
 		if f49_local1 > 1 then
 			local f49_local13 = 0x647C3A51BFBCEBF .. f49_local2
@@ -741,7 +741,7 @@ f0_local0.SetDefaultLoadoutItems = function ( f49_arg0, f49_arg1, f49_arg2, f49_
 	if f49_arg2 == Enum.eModes[0x83EBA96F36BC4E5] then
 		f0_local0.updateItemIndexFromLoadoutHash( f49_arg1[0xC76C1E0D1EE45F7], f49_arg0.tacticalgear, f49_arg2 )
 		f0_local0.updateSlotList( f49_arg1.talents, f49_arg0.talent, 0x5FB380CEA24A88B, f49_arg2 )
-		f0_local0.updateSlotList( f49_arg1.bonuscards, f49_arg0.bonuscard, 0x84B95474A4F22DA, f49_arg2 )
+		f0_local0.updateSlotList( f49_arg1.bonuscards, f49_arg0.bonuscard, "bonuscard", f49_arg2 )
 	end
 end
 
@@ -909,7 +909,7 @@ f0_local0.GetDefaultLoadoutForCurrentMode = function ()
 			return Engine[0xE00B2F29271C60B]( 0x705A80062BD09C2 )
 		end
 	elseif f59_local0 == Enum.eModes[0x3723205FAE52C4A] then
-		return Engine[0xE00B2F29271C60B]( 0x9EEE28789FE067A )
+		return Engine[0xE00B2F29271C60B]( "zm_default_loadouts" )
 	elseif f59_local0 == Enum.eModes[0xBF1DCC8138A9D39] then
 		return Engine[0xE00B2F29271C60B]( 0x5E2F5F439F26596 )
 	else
@@ -944,7 +944,7 @@ f0_local0.SetCACRootToDefault = function ( f60_arg0 )
 			end
 			CoDShared.SetDefaultGlobalLoadout( f60_local1, f60_local3, f60_local0 )
 		elseif f60_local0 == Enum.eModes[0x3723205FAE52C4A] then
-			local f60_local3 = Engine[0xE00B2F29271C60B]( 0x9EEE28789FE067A )
+			local f60_local3 = Engine[0xE00B2F29271C60B]( "zm_default_loadouts" )
 			local f60_local4 = Engine[0xBBE3328FE08B8C7]()
 			if f60_local2 then
 				for f60_local5 = 1, #f60_local1.customclass, 1 do
@@ -985,7 +985,7 @@ f0_local0.Loot.Crates = {
 	0x91701EF423E11E1
 }
 f0_local0.Loot.SeasonParams = {
-	[0x73355E5E2DBA44D] = {
+	["loot_season_1"] = {
 		[f0_local0.Loot.SEASON_INFO_NUMBER] = 1,
 		[f0_local0.Loot.SEASON_INFO_MAX_TIERS] = 200,
 		[f0_local0.Loot.SEASON_INFO_DROP_VERSIONS] = "1",
@@ -994,16 +994,16 @@ f0_local0.Loot.SeasonParams = {
 		[f0_local0.Loot.SEASON_INFO_ASSET_ALLRNG] = 0x45763E4B241D123,
 		[f0_local0.Loot.SEASON_INFO_TABLENAME] = 0x627C92BE5FDCDD0
 	},
-	[0x73352E5E2DB9F34] = {
+	["loot_season_2"] = {
 		[f0_local0.Loot.SEASON_INFO_NUMBER] = 2,
 		[f0_local0.Loot.SEASON_INFO_MAX_TIERS] = 100,
 		[f0_local0.Loot.SEASON_INFO_DROP_VERSIONS] = "1,2,3",
 		[f0_local0.Loot.SEASON_INFO_HIGHEST_DROP_VERSION] = 3,
 		[f0_local0.Loot.SEASON_INFO_ASSET_POSTSEASON] = 0xBC1FDA3602A81B6,
-		[f0_local0.Loot.SEASON_INFO_ASSET_ALLRNG] = 0x7156584833CE8D0,
+		[f0_local0.Loot.SEASON_INFO_ASSET_ALLRNG] = "loot_season_2_postseason_all_rng",
 		[f0_local0.Loot.SEASON_INFO_TABLENAME] = 0x71B16584E35BB31
 	},
-	[0x73353E5E2DBA0E7] = {
+	["loot_season_3"] = {
 		[f0_local0.Loot.SEASON_INFO_NUMBER] = 3,
 		[f0_local0.Loot.SEASON_INFO_MAX_TIERS] = 100,
 		[f0_local0.Loot.SEASON_INFO_DROP_VERSIONS] = "1,2,3,4,5",
@@ -1012,7 +1012,7 @@ f0_local0.Loot.SeasonParams = {
 		[f0_local0.Loot.SEASON_INFO_ASSET_ALLRNG] = 0xC54B39CE7655BF1,
 		[f0_local0.Loot.SEASON_INFO_TABLENAME] = 0xD3EBD52E3A6338A
 	},
-	[0x73350E5E2DB9BCE] = {
+	["loot_season_4"] = {
 		[f0_local0.Loot.SEASON_INFO_NUMBER] = 4,
 		[f0_local0.Loot.SEASON_INFO_MAX_TIERS] = 50,
 		[f0_local0.Loot.SEASON_INFO_DROP_VERSIONS] = "1,2,3,4,5,6",
@@ -1021,7 +1021,7 @@ f0_local0.Loot.SeasonParams = {
 		[f0_local0.Loot.SEASON_INFO_ASSET_ALLRNG] = 0xFD3AC1D8D4268E6,
 		[f0_local0.Loot.SEASON_INFO_TABLENAME] = 0x7A467206BBDFF3B
 	},
-	[0x73351E5E2DB9D81] = {
+	["loot_season_5"] = {
 		[f0_local0.Loot.SEASON_INFO_NUMBER] = 5,
 		[f0_local0.Loot.SEASON_INFO_MAX_TIERS] = 50,
 		[f0_local0.Loot.SEASON_INFO_DROP_VERSIONS] = "1,2,3,4,5,6,7,8",
@@ -1030,7 +1030,7 @@ f0_local0.Loot.SeasonParams = {
 		[f0_local0.Loot.SEASON_INFO_ASSET_ALLRNG] = 0xF6E98C54AF4B67F,
 		[f0_local0.Loot.SEASON_INFO_TABLENAME] = 0x61D002E194284DC
 	},
-	[0x7334EE5E2DB9868] = {
+	["loot_season_6"] = {
 		[f0_local0.Loot.SEASON_INFO_NUMBER] = 6,
 		[f0_local0.Loot.SEASON_INFO_MAX_TIERS] = 40,
 		[f0_local0.Loot.SEASON_INFO_DROP_VERSIONS] = "1,2,3,4,5,6,7,8,9",
@@ -1039,21 +1039,21 @@ f0_local0.Loot.SeasonParams = {
 		[f0_local0.Loot.SEASON_INFO_ASSET_ALLRNG] = 0x8D889252E3E782C,
 		[f0_local0.Loot.SEASON_INFO_TABLENAME] = 0x7424A3B6A94A7BD
 	},
-	[0x7334FE5E2DB9A1B] = {
+	["loot_season_7"] = {
 		[f0_local0.Loot.SEASON_INFO_NUMBER] = 7,
 		[f0_local0.Loot.SEASON_INFO_MAX_TIERS] = 60,
 		[f0_local0.Loot.SEASON_INFO_DROP_VERSIONS] = "1,2,3,4,5,6,7,8,9,10",
 		[f0_local0.Loot.SEASON_INFO_HIGHEST_DROP_VERSION] = 10,
-		[f0_local0.Loot.SEASON_INFO_ASSET_POSTSEASON] = 0xB868A761E54E653,
+		[f0_local0.Loot.SEASON_INFO_ASSET_POSTSEASON] = "loot_season_7_postseason",
 		[f0_local0.Loot.SEASON_INFO_ASSET_ALLRNG] = 0xD9BDCC983A0931D,
 		[f0_local0.Loot.SEASON_INFO_TABLENAME] = 0xF0E131157E4FC6
 	},
-	[0x7334CE5E2DB9502] = {
+	["loot_season_8"] = {
 		[f0_local0.Loot.SEASON_INFO_NUMBER] = 8,
 		[f0_local0.Loot.SEASON_INFO_MAX_TIERS] = 50,
 		[f0_local0.Loot.SEASON_INFO_DROP_VERSIONS] = "1,2,3,4,5,6,7,8,9,10,11",
 		[f0_local0.Loot.SEASON_INFO_HIGHEST_DROP_VERSION] = 11,
-		[f0_local0.Loot.SEASON_INFO_ASSET_POSTSEASON] = 0x1EA71735DBD7584,
+		[f0_local0.Loot.SEASON_INFO_ASSET_POSTSEASON] = "loot_season_8_postseason",
 		[f0_local0.Loot.SEASON_INFO_ASSET_ALLRNG] = 0x1DB2EA27F50DA32,
 		[f0_local0.Loot.SEASON_INFO_TABLENAME] = 0x3ABDE23DA74CF07
 	}
@@ -1279,8 +1279,8 @@ f0_local0.Loot.GetWeaponPurchasedData = function ( f75_arg0, f75_arg1 )
 					local f75_local8 = CoDShared.IsLootItemOwnedByName( f75_arg0, f75_local17 )
 					if not f75_local8 then
 						for f75_local14, f75_local15 in ipairs( Engine[0x9F0BB7D52A7A978]( f75_local17 ) ) do
-							if f75_local15[0x28887F70BF5EBA] ~= 0x0 then
-								local f75_local12, f75_local13 = CoDShared.IsLootItemOwnedByNameSimple( f75_arg0, f75_local15[0x28887F70BF5EBA] )
+							if f75_local15["lootid"] ~= 0x0 then
+								local f75_local12, f75_local13 = CoDShared.IsLootItemOwnedByNameSimple( f75_arg0, f75_local15["lootid"] )
 								if f75_local13 then
 									f75_local8 = true
 									break
@@ -1442,7 +1442,7 @@ f0_local0[0x562F4B21BD0FAB0] = function ( f83_arg0, f83_arg1 )
 	local f83_local1, f83_local2 = nil
 	if f83_local0 then
 		if f83_arg1 == Enum.eModes[0x83EBA96F36BC4E5] then
-			f83_local1 = f83_local0[0xD17B4E10FA9C28C]
+			f83_local1 = f83_local0["mpcharacters"]
 			local f83_local3 = Engine[0xFC41172469DB251]( f83_arg0 )
 			if f83_local3 then
 				f83_local2 = f83_local3[0x147738D5CEE9199]
@@ -1468,8 +1468,8 @@ f0_local0[0x562F4B21BD0FAB0] = function ( f83_arg0, f83_arg1 )
 			f83_local15[0xEFB826D1A3BB80A]:set( f83_local16 )
 			local f83_local17 = f83_local14[0xD9FCEAC8FF24CBD]:get()
 			f83_local15[0x32308E50B7EEFA8]:set( f83_local17 )
-			local f83_local18 = f83_local14[0xE5C77948998E49][f83_local16]
-			local f83_local19 = f83_local14[0xE5C77948998E49][f83_local17]
+			local f83_local18 = f83_local14["selectedoutfititems"][f83_local16]
+			local f83_local19 = f83_local14["selectedoutfititems"][f83_local17]
 			for f83_local6, f83_local7 in DDLUtils.pairs( f83_local18[0x12BCDFA518CC913] ) do
 				if f83_local6 == Enum.CharacterItemType[0x8E3A65D78229DC1] then
 					f83_local15[0x4DAF419B5CE4B42][f83_local6]:set( f83_local19[f83_local6]:get() )
@@ -1534,7 +1534,7 @@ f0_local0.ReportUser = function ( f85_arg0, f85_arg1, f85_arg2, f85_arg3, f85_ar
 		[0x9219FBE4AAC71B6] = f85_arg3,
 		[0x336E379BA146826] = Engine[0xD52E2360F482280](),
 		[0x3E2AC46BE8D2A8] = f85_local0,
-		[0xBDAB42C07F19812] = f85_local1,
+		["object_id"] = f85_local1,
 		[0x46401B5D2A8D2A4] = f85_arg5
 	} )
 end

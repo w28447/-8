@@ -329,7 +329,7 @@ function function_1082e3b7()
     level thread function_d5b13da7();
     level.var_e6db911d = 1;
     ct_bots::deactivate_bots();
-    level thread ct_utils::function_bfa522d1( 0 );
+    level thread ct_utils::simulation_pulse( 0 );
     level.var_571c3787 = 1;
 }
 

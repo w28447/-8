@@ -3,7 +3,7 @@
     "baseWeapon": "#gun_mini_turret",
     "displayname": "#weapon/mini_turret",
     "weapon70": "#mini_turret",
-    "streamkey": "#hash_1d883977b1a25a1e",
+    "streamkey": "#gun_mini_turret_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

@@ -1,6 +1,6 @@
 {
     "name": "#hash_715c9fc619a6d1cd",
-    "unk28": "#hash_24a9e6aeb83db749",
+    "unk28": "#bitfields_perf",
     "ddlDef": "#hash_3ca7410634c7dd2d",
     "unk18": 0,
     "unk19": 1,
@@ -47,7 +47,7 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT32"
                     },
@@ -115,7 +115,7 @@
             "type": "INT32"
         },
         {
-            "name": "#hash_1946e5ecc3720231",
+            "name": "#maxbitfields",
             "scrName": "#hash_7990aeaa",
             "type": "INT32"
         },
@@ -145,7 +145,7 @@
             "type": "INT32"
         },
         {
-            "name": "#hash_321b73ec8694423f",
+            "name": "#minbitfields",
             "scrName": "#hash_5c472541",
             "type": "INT32"
         },
@@ -155,7 +155,7 @@
             "type": "INT32"
         },
         {
-            "name": "#hash_77a6c7a5044549d3",
+            "name": "#bitfieldsavg",
             "scrName": "#hash_4a8c8c21",
             "type": "INT32"
         }

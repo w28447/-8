@@ -18,15 +18,15 @@
         "tag_wheel_right_spin"
     ],
     "sndMaterialNames": [
-        "#hash_74d0ce5747ca339c",
-        "#hash_593b785e5a4cad59"
+        "#veh_raps_mini_road",
+        "#veh_raps_mini_skid"
     ],
     "skidSpeedMin": 100,
     "skidSpeedMax": 600,
     "peelSpeedMax": 600,
     "model": "#veh_t8_drone_seeker_rig",
     "deathModel": "#veh_t8_drone_seeker_rig",
-    "soundDef": "#hash_58530417dbdade35",
+    "soundDef": "#veh_raps_mini",
     "compassIconMaterial": "#t7_hud_minimap_enemy_quad",
     "lightCollisionRumble": "#veh_collision_light",
     "heavyCollisionRumble": "#veh_collision_heavy",

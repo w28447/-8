@@ -4,7 +4,7 @@
     "displayname": "#zmweapon/shield_spectral_upg",
     "altWeapon": "#zhield_spectral_dw_upgraded_zm",
     "weapon70": "#zhield_spectral_dw",
-    "streamkey": "#hash_4c1d1efff90e66f0",
+    "streamkey": "#zhield_spectral_turret_upgraded_soundbank",
     "worldModelTagRight": "tag_weapon_left",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -46,7 +46,7 @@
     "sound6c0": "#hash_1e69091865bbdbb8",
     "sound800": "#hash_21cba6ae89a3493c",
     "sound810": "#hash_21cba6ae89a3493c",
-    "tunables1": "#hash_42db4e483646b769",
+    "tunables1": "#zhield_spectral_turret_tunables_upgraded_zm",
     "sharedWeaponSounds": "#battle_shield",
     "tracers": [
         "#pistol",

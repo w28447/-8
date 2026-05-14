@@ -20,7 +20,7 @@ CoD.Challenges_FrameWidget_Expert.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local Title = CoD.Challenges_Category_Title.new( f1_arg0, f1_arg1, 0, 0, 112.5, 412.5, 0.5, 0.5, -300, 300 )
 	Title.ChallengesPercentCompleteWidgetLG.Name:setText( Engine[0xF9F1239CFD921FE]( 0x892ED10E8BF4877 ) )
-	Title.ChallengesPercentCompleteWidgetLG.Icon:setImage( RegisterImage( 0xED0FBCBD4D7A1A8 ) )
+	Title.ChallengesPercentCompleteWidgetLG.Icon:setImage( RegisterImage( "ui_icon_challenges_zmexpert_large" ) )
 	Title:subscribeToGlobalModel( f1_arg1, "ChallengesZMCategoryStats", "expert", function ( model )
 		Title:setModel( model, f1_arg1 )
 	end )
@@ -28,7 +28,7 @@ CoD.Challenges_FrameWidget_Expert.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.Title = Title
 	
 	local Strategist = CoD.ChallengesCategoryButton.new( f1_arg0, f1_arg1, 0, 0, 555, 1555, 0, 0, 227, 327 )
-	Strategist.ChallengesCategoryButtonInternal.Name:setText( Engine[0xF9F1239CFD921FE]( 0x9ADE67A378FCCC2 ) )
+	Strategist.ChallengesCategoryButtonInternal.Name:setText( Engine[0xF9F1239CFD921FE]( "zm_challenges/strategist" ) )
 	Strategist:subscribeToGlobalModel( f1_arg1, "ChallengesZMCategoryStats", "strategist", function ( model )
 		Strategist:setModel( model, f1_arg1 )
 	end )

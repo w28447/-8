@@ -127,7 +127,7 @@ function function_cf70f2fe( startstruct )
     
     while ( self bot_chain::function_58b429fb() )
     {
-        self waittill( #"hash_382a628dad5ecbb5" );
+        self waittill( #"stop_follow_chain" );
     }
     
     if ( !isdefined( self.bot.var_bd883a25 ) )

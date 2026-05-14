@@ -28,8 +28,8 @@ function __init__()
 {
     callback::on_start_gametype( &init );
     level.new_health_model = getdvarint( #"new_health_model", 1 ) > 0;
-    level.var_a7985066 = getdvarint( #"hash_1b8e30b9cc6b8dbc", 50 );
-    level.var_9b350462 = getdvarint( #"hash_3dfb7b6187d80898", 70 );
+    level.var_a7985066 = getdvarint( #"critical_health_start", 50 );
+    level.var_9b350462 = getdvarint( #"critical_health_stop", 70 );
     
     if ( level.new_health_model )
     {

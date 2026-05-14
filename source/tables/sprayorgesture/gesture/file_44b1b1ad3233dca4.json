@@ -1,8 +1,8 @@
 {
     "name": "#hash_44b1b1ad3233dca4",
     "type": "#gesture",
-    "gesture": "#hash_46571ea35350ae21",
-    "gesture2": "#hash_51b790f5c610df8a",
+    "gesture": "#boast_homerun",
+    "gesture2": "#boast_homerun_fem",
     "bundle": {
         "type": "#gesture",
         "title": "localized18#emotes/home_run",

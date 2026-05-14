@@ -15,7 +15,7 @@ CoD.WarScoreInfo_Deliver_FlagStateWidget.new = function ( f1_arg0, f1_arg1, f1_a
 	
 	local BGoutline = LUI.UIImage.new( 0, 0, 0, 192, 0, 0, -2, 22 )
 	BGoutline:setRGB( 0, 0, 0 )
-	BGoutline:setImage( RegisterImage( 0xC8B4B2EA11CF679 ) )
+	BGoutline:setImage( RegisterImage( "uie_hud_common_core_score_stage2_outline" ) )
 	self:addElement( BGoutline )
 	self.BGoutline = BGoutline
 	
@@ -148,7 +148,7 @@ CoD.WarScoreInfo_Deliver_FlagStateWidget.__clipsPerState = {
 			f4_arg0.BGoutline:setAlpha( 0 )
 			f4_arg0.clipFinished( f4_arg0.BGoutline )
 			f4_arg0.StateText:completeAnimation()
-			f4_arg0.StateText:setText( Engine[0xF9F1239CFD921FE]( 0x239605D85D5B9FE ) )
+			f4_arg0.StateText:setText( Engine[0xF9F1239CFD921FE]( "menu/waypoint_home" ) )
 			f4_arg0.clipFinished( f4_arg0.StateText )
 			f4_arg0.home:completeAnimation()
 			f4_arg0.home:setLeftRight( 0, 0, 65, 125 )

@@ -597,7 +597,7 @@ class celevator
         
         if ( b_inside )
         {
-            var_2af3d553 endon( #"hash_10ae3aed4e10c4c7" );
+            var_2af3d553 endon( #"player_left_elevator" );
         }
         
         while ( true )
@@ -691,7 +691,7 @@ class celevator
             
             if ( n_distance > 128 )
             {
-                var_2af3d553 notify( #"hash_10ae3aed4e10c4c7" );
+                var_2af3d553 notify( #"player_left_elevator" );
                 e_player clientfield::set_to_player( "elevator_floor_selection", 0 );
                 flag::clear( "inner_button_menu_active" );
                 var_10b20309.mdl_gameobject.interactteam = #"any";

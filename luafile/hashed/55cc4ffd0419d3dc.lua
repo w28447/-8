@@ -183,7 +183,7 @@ CoD.HVOCardInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	self.TeamBarAnim = TeamBarAnim
 	
 	local TeamBarBase = LUI.UIImage.new( 0, 0, 151.5, 475.5, 0, 0, 36, 72 )
-	TeamBarBase:setImage( RegisterImage( 0x48863AFCAB54A9 ) )
+	TeamBarBase:setImage( RegisterImage( "uie_ui_hud_hvo_bar" ) )
 	TeamBarBase.__Color = function ( f10_arg0 )
 		local f10_local0 = f10_arg0:get()
 		if f10_local0 ~= nil then
@@ -209,7 +209,7 @@ CoD.HVOCardInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	self.TeamBarBase = TeamBarBase
 	
 	local TeamBarMuted = LUI.UIImage.new( 0, 0, 151.5, 475.5, 0, 0, 49.5, 58.5 )
-	TeamBarMuted:setImage( RegisterImage( 0x48863AFCAB54A9 ) )
+	TeamBarMuted:setImage( RegisterImage( "uie_ui_hud_hvo_bar" ) )
 	TeamBarMuted:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	TeamBarMuted.__Color = function ( f12_arg0 )
 		local f12_local0 = f12_arg0:get()
@@ -236,7 +236,7 @@ CoD.HVOCardInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	self.TeamBarMuted = TeamBarMuted
 	
 	local TeamBarBright = LUI.UIImage.new( 0, 0, 151.5, 475.5, 0, 0, 36, 72 )
-	TeamBarBright:setImage( RegisterImage( 0x48863AFCAB54A9 ) )
+	TeamBarBright:setImage( RegisterImage( "uie_ui_hud_hvo_bar" ) )
 	TeamBarBright:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	TeamBarBright:setShaderVector( 0, 2, 0, 0, 0 )
 	TeamBarBright.__Color = function ( f14_arg0 )

@@ -40,9 +40,9 @@ function __init__()
     level.var_9d47488.script = &function_c3d93fc;
     level.var_9d47488.weapon = getweapon( "eq_seeker_mine" );
     level.var_9d47488.prompt = seeker_mine_prompt::register( "seeker_mine_prompt" );
-    level.var_9d47488.var_8e526d12 = getweapon( #"hash_27d90cc12712230f" );
-    level.var_9d47488.var_42f768ff = getweapon( #"hash_1ca0e9052a71989" );
-    level.var_9d47488.var_4bbc3170 = getweapon( #"hash_597ead6ff2ce9284" );
+    level.var_9d47488.var_8e526d12 = getweapon( #"seeker_mine_loop" );
+    level.var_9d47488.var_42f768ff = getweapon( #"seeker_mine_fail" );
+    level.var_9d47488.var_4bbc3170 = getweapon( #"seeker_mine_success" );
     level.var_f93c9e9c = &function_b6ee86e3;
     function_5aa948ab();
     callback::on_connect( &onplayerconnect );
@@ -107,9 +107,9 @@ function function_5aa948ab()
         level.var_9d47488.tunables.var_9abfd5cf = 0;
     }
     
-    if ( !isdefined( level.var_9d47488.tunables.var_e8e9a9cc ) )
+    if ( !isdefined( level.var_9d47488.tunables.rootedtime ) )
     {
-        level.var_9d47488.tunables.var_e8e9a9cc = 0;
+        level.var_9d47488.tunables.rootedtime = 0;
     }
     
     if ( !isdefined( level.var_9d47488.tunables.successdelaytime ) )
@@ -420,9 +420,9 @@ function function_f43b3686( originalowner )
         }
     }
     
-    if ( isdefined( level.seekerminebundle.var_bb6c29b4 ) && isdefined( weapon ) && weapon == getweapon( #"shock_rifle" ) )
+    if ( isdefined( level.seekerminebundle.shockrifledestructionfx ) && isdefined( weapon ) && weapon == getweapon( #"shock_rifle" ) )
     {
-        playfx( level.seekerminebundle.var_bb6c29b4, self.origin );
+        playfx( level.seekerminebundle.shockrifledestructionfx, self.origin );
     }
     
     arrayremovevalue( level.seeker_mine[ originalownerentnum ].mines, self );
@@ -791,7 +791,7 @@ function mine_destroy()
 // Size: 0x15c
 function minigame_start( var_26b2b1bb, seekermine )
 {
-    self notify( #"hash_3319597daca726ad" );
+    self notify( #"seeker_minigame_start" );
     self.var_dda9b735.state = 0;
     self.var_dda9b735.prompt = 0;
     self.var_dda9b735.isshocked = 1;
@@ -881,7 +881,7 @@ function function_dfbbefb8()
     wait level.var_9d47488.tunables.perceptiontime;
     self.var_dda9b735.prompt = 0;
     wait level.var_9d47488.tunables.var_9bdbf8df;
-    self notify( #"hash_13bc4f053f8da5b0" );
+    self notify( #"seeker_mine_prompt_closed" );
     self.var_dda9b735.prompt = 3;
 }
 
@@ -917,7 +917,7 @@ function function_6c023d11()
         waitframe( 1 );
     }
     
-    self notify( #"hash_89051c7805b3d19" );
+    self notify( #"seeker_mine_death" );
 }
 
 // Namespace seeker_mine_mp/seeker_mine
@@ -999,7 +999,7 @@ function function_f6f0c876( var_26b2b1bb, seekermine )
         return;
     }
     
-    self notify( #"hash_13bc4f053f8da5b0" );
+    self notify( #"seeker_mine_prompt_closed" );
     gesturetable = "gestable_shocked_reaction";
     var_84a7f98e = undefined;
     waitduration = 0;
@@ -1028,7 +1028,7 @@ function function_f6f0c876( var_26b2b1bb, seekermine )
             break;
         case 1:
             gesturetable = "gestable_shocked_success";
-            var_84a7f98e = getweapon( #"hash_597ead6ff2ce9284" );
+            var_84a7f98e = getweapon( #"seeker_mine_success" );
             islooping = 0;
             self playsoundtoplayer( #"uin_seeker_qte_success", self );
             self battlechatter::function_72b65730();
@@ -1045,7 +1045,7 @@ function function_f6f0c876( var_26b2b1bb, seekermine )
             break;
         case 3:
             gesturetable = "gestable_shocked_success";
-            var_84a7f98e = getweapon( #"hash_597ead6ff2ce9284" );
+            var_84a7f98e = getweapon( #"seeker_mine_success" );
             islooping = 0;
             self playsoundtoplayer( #"uin_seeker_qte_success", self );
             println( "<dev string:x92>" );
@@ -1068,11 +1068,11 @@ function function_24d08109( seekermine, waitduration, var_26b2b1bb, state )
     self notify( "d5876c031211735" );
     self endon( "d5876c031211735" );
     self endon( #"death" );
-    self waittilltimeout( waitduration, #"hash_89051c7805b3d19" );
+    self waittilltimeout( waitduration, #"seeker_mine_death" );
     
     if ( state == 1 )
     {
-        wait level.var_9d47488.tunables.var_e8e9a9cc;
+        wait level.var_9d47488.tunables.rootedtime;
     }
     else
     {
@@ -1143,7 +1143,7 @@ function function_e380fde7( var_84a7f98e, gesturetable, waitduration, islooping,
     
     if ( isdefined( self.var_dda9b735.islooping ) && self.var_dda9b735.islooping )
     {
-        self waittilltimeout( waitduration, #"hash_89051c7805b3d19" );
+        self waittilltimeout( waitduration, #"seeker_mine_death" );
         
         if ( isdefined( self ) && isdefined( self.var_dda9b735.gesture ) )
         {

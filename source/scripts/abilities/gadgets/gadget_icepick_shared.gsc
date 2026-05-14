@@ -523,7 +523,7 @@ function function_6c031486( hacker )
     }
     
     icepickweapon = getweapon( #"gadget_icepick" );
-    hacker notify( #"hash_7b4714f415b8f49e" );
+    hacker notify( #"force_end_hack" );
     var_3e361f1a = hacker gadgetgetslot( icepickweapon );
     hacker gadgetdeactivate( var_3e361f1a, icepickweapon );
     hacker switchtoweapon();
@@ -608,7 +608,7 @@ function private sort_vehicles( &array, sort_func )
 // Size: 0x522
 function private starthack( player )
 {
-    player endoncallback( &function_4802ca63, #"death", #"hash_7b4714f415b8f49e" );
+    player endoncallback( &function_4802ca63, #"death", #"force_end_hack" );
     level.var_fdb0a658 = 1;
     player clientfield::set_player_uimodel( "IcePickInfo.hackStarted", 1 );
     icepickweapon = getweapon( #"gadget_icepick" );
@@ -695,7 +695,7 @@ function private starthack( player )
 // Size: 0x158
 function private function_aaf0a382( entities, player, max )
 {
-    player endon( #"death", #"hash_7b4714f415b8f49e" );
+    player endon( #"death", #"force_end_hack" );
     var_e8e3cc00 = 0;
     
     foreach ( entity in entities )
@@ -731,7 +731,7 @@ function private function_aaf0a382( entities, player, max )
 // Size: 0x65c
 function private function_2b2ed159( entity, attackingplayer )
 {
-    attackingplayer endon( #"death", #"hash_7b4714f415b8f49e" );
+    attackingplayer endon( #"death", #"force_end_hack" );
     var_87bdc7d3 = int( function_ab1f58d0( entity ) * 1000 );
     var_7570395 = 0;
     attackingplayer.var_e989badb = entity;
@@ -858,7 +858,7 @@ function private function_2b2ed159( entity, attackingplayer )
 // Size: 0x146
 function function_4802ca63( str_notify )
 {
-    if ( str_notify != #"hash_7b4714f415b8f49e" || !isdefined( self ) || !isplayer( self ) )
+    if ( str_notify != #"force_end_hack" || !isdefined( self ) || !isplayer( self ) )
     {
         return;
     }
@@ -1226,7 +1226,7 @@ function private gadget_icepick_off( slot, weapon )
 {
     self clientfield::set_to_player( "gadget_icepick_on", 0 );
     self notify( #"hash_2945c35e0b146804" );
-    self notify( #"hash_7b4714f415b8f49e" );
+    self notify( #"force_end_hack" );
     self function_124efc19( 0 );
     self function_de8a54a6( 1 );
     self.var_6704e6fa = 1;
@@ -1295,7 +1295,7 @@ function private function_d1f6e8d0( player )
 // Size: 0xb4
 function function_f1148c2c( player )
 {
-    player endon( #"death", #"hash_7b4714f415b8f49e" );
+    player endon( #"death", #"force_end_hack" );
     player notify( #"hash_5e72464fef90323e" );
     
     if ( player isswitchingweapons() )

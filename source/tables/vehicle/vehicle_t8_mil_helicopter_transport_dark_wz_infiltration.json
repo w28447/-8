@@ -56,14 +56,14 @@
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "hash_2577b757c1ca9678:hash_4be786c9": "localized17#hash_2577b757c1ca9678",
+                        "menu/hud_vehicle_flyup:hash_4be786c9": "localized17#menu/hud_vehicle_flyup",
                         "hash_334a8e60": "left",
                         "prompt": "+vehiclemoveup"
                     },
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "hash_29f6a908f9b269ad:hash_4be786c9": "localized17#hash_29f6a908f9b269ad",
+                        "menu/hud_vehicle_flydown:hash_4be786c9": "localized17#menu/hud_vehicle_flydown",
                         "hash_334a8e60": "left",
                         "prompt": "+vehiclemovedown"
                     }

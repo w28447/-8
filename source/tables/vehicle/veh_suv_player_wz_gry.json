@@ -44,16 +44,16 @@
         "tag_fx_tail_light_right"
     ],
     "sndMaterialNames": [
-        "#hash_7e38583efb5b3d74",
-        "#hash_38ea8f41899c817b",
-        "#hash_368b1a4febb1ede4"
+        "#veh_suv_road",
+        "#veh_suv_slide",
+        "#veh_suv_peel"
     ],
     "skidSpeedMin": 250,
     "skidSpeedMax": 600,
     "peelSpeedMax": 176,
     "model": "#veh_t8_civ_suv_large_warzone_gry",
     "deathModel": "#veh_t8_civ_suv_large_dead_gry",
-    "soundDef": "#hash_5e27611f94fd78db",
+    "soundDef": "#veh_suv_wz",
     "compassIconMaterial": "#hash_1c5a110f3ad06651",
     "destructibleDef": "#hash_3a1ab4f33f45eb3f",
     "tacticalModeIcon": "#hash_604d9ded60b4f5a4",
@@ -75,7 +75,7 @@
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "hash_1c59b497e5ef478f:hash_4be786c9": "localized17#hash_1c59b497e5ef478f",
+                        "menu/aim_down_the_sight:hash_4be786c9": "localized17#menu/aim_down_the_sight",
                         "hash_334a8e60": "left",
                         "prompt": "+speed_throw"
                     }
@@ -154,7 +154,7 @@
                     {
                         "GAMEPAD": "#GAMEPAD",
                         "hash_7aecb1d7": 0,
-                        "hash_5dba026ffa1d58cd:hash_4be786c9": "localized17#hash_5dba026ffa1d58cd",
+                        "menu/hud_vehicle_steer:hash_4be786c9": "localized17#menu/hud_vehicle_steer",
                         "hash_334a8e60": "left",
                         "prompt": "+lookstick"
                     },
@@ -168,7 +168,7 @@
                     {
                         "GAMEPAD": "#GAMEPAD",
                         "hash_7aecb1d7": 0,
-                        "hash_2b136dbf97f5d00d:hash_4be786c9": "localized17#hash_2b136dbf97f5d00d",
+                        "menu/free_look:hash_4be786c9": "localized17#menu/free_look",
                         "hash_334a8e60": "left",
                         "prompt": "+speed_throw"
                     }

@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_juggle_soccer_ball",
+    "type": "#gesture",
+    "gesture": "#boast_juggle_soccer_ball",
+    "gesture2": "#boast_juggle_soccer_ball_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/bend_it",
+        "icon": "image#ui_icon_emotes_jugglesoccreball",
+        "isdefault": 0
+    }
+}

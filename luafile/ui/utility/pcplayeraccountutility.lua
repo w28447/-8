@@ -13,7 +13,7 @@ DataSources.PCPlayerAccountTabs = ListHelper_SetupDataSource( "PCPlayerAccountTa
 	local f3_local1 = CoD.StartMenuUtility.GetSessionModeFromLobby()
 	if not LuaUtils.OfflineOnlyDemo() and not IsPlayerAGuest( f3_arg0 ) then
 		local f3_local2 = LobbyData.GetCurrentMenuTarget()
-		local f3_local3 = f3_local2[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING )
+		local f3_local3 = f3_local2["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING )
 		if not IsLobbyNetworkModeLAN() and (not CoD.DirectorUtility.IsOfflineDemo() or Engine[0xCB675CA7856DA25]()) and f3_local1 ~= Enum.eModes[0xB22E0240605CFFE] and not f3_local3 then
 			local f3_local4 = "CoD.StartMenu_Barracks"
 			if f3_local1 == Enum.eModes[0x3723205FAE52C4A] then

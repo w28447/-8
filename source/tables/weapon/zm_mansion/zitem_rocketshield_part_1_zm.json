@@ -1,7 +1,7 @@
 {
     "name": "#zitem_rocketshield_part_1_zm",
     "baseWeapon": "#zitem_rocketshield_part_1",
-    "streamkey": "#hash_229fa8d5d83d7480",
+    "streamkey": "#zitem_rocketshield_part_1_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

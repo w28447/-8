@@ -20,16 +20,16 @@ function init()
     level._effect[ #"powerup_intro" ] = #"hash_630b0bc30e08935f";
     level._effect[ #"powerup_grabbed" ] = #"zombie/fx_powerup_grab_green_zmb";
     level._effect[ #"powerup_on_solo" ] = #"zombie/fx_powerup_on_solo_zmb";
-    level._effect[ #"hash_1bbdf961a543a8a4" ] = #"hash_5c054ea9b299c2f0";
+    level._effect[ #"powerup_intro_solo" ] = #"hash_5c054ea9b299c2f0";
     level._effect[ #"powerup_grabbed_solo" ] = #"zombie/fx_powerup_grab_solo_zmb";
     level._effect[ #"powerup_on_caution" ] = #"zombie/fx_powerup_on_caution_zmb";
-    level._effect[ #"hash_216d76ce6f19d51c" ] = #"hash_2e09347c65fb17c1";
+    level._effect[ #"powerup_intro_caution" ] = #"hash_2e09347c65fb17c1";
     level._effect[ #"powerup_grabbed_caution" ] = #"zombie/fx_powerup_grab_caution_zmb";
     
     if ( isdefined( level.using_zombie_powerups ) && level.using_zombie_powerups )
     {
         level._effect[ #"powerup_on_red" ] = #"zombie/fx_powerup_on_red_zmb";
-        level._effect[ #"hash_68ab4922f64db792" ] = #"hash_62b15f4f400643ab";
+        level._effect[ #"powerup_intro_red" ] = #"hash_62b15f4f400643ab";
         level._effect[ #"powerup_grabbed_red" ] = #"zombie/fx_powerup_grab_red_zmb";
     }
     
@@ -168,13 +168,13 @@ function function_618b5680( localclientnum, oldval, newval, bnewent, binitialsna
             str_fx = level._effect[ #"powerup_intro" ];
             break;
         case 2:
-            str_fx = level._effect[ #"hash_1bbdf961a543a8a4" ];
+            str_fx = level._effect[ #"powerup_intro_solo" ];
             break;
         case 3:
-            str_fx = level._effect[ #"hash_68ab4922f64db792" ];
+            str_fx = level._effect[ #"powerup_intro_red" ];
             break;
         case 4:
-            str_fx = level._effect[ #"hash_216d76ce6f19d51c" ];
+            str_fx = level._effect[ #"powerup_intro_caution" ];
         default:
             return;
     }
@@ -249,7 +249,7 @@ function private play_powerup_fx( localclientnum, str_fx, var_6df65756 = 0 )
     
     if ( var_6df65756 && !isdefined( self.var_71e06c56 ) )
     {
-        self playsound( localclientnum, #"hash_3a25dc0ad86a722c" );
+        self playsound( localclientnum, #"zmb_spawn_powerup_intro" );
         self.var_71e06c56 = self playloopsound( #"hash_3119fa236ffcf847" );
     }
     

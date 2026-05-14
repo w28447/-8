@@ -1,9 +1,9 @@
 {
     "name": "#zhield_frost_lh_zm",
     "baseWeapon": "#zhield_frost_lh",
-    "displayname": "#hash_49b2e832f765cb5",
+    "displayname": "#zmweapon/fhield",
     "dualwieldWeaponName": "#zhield_frost_dw_zm",
-    "streamkey": "#hash_3e8633c7578c6557",
+    "streamkey": "#zhield_frost_lh_soundbank",
     "worldModelTagRight": "tag_weapon_left",
     "worldModelTagLeft": "tag_weapon_right",
     "stowedModelTag": "tag_stowed_back",

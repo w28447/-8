@@ -3,7 +3,7 @@
     "baseWeapon": "#melee_bowie_bloody",
     "displayname": "#weapon/bowie",
     "weapon70": "#melee_bowie",
-    "streamkey": "#hash_7eb3dc5c8019c5c2",
+    "streamkey": "#melee_bowie_bloody_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "scrstr_118c": "tag_fx",
@@ -32,7 +32,7 @@
     "#hash_554be9f7": false,
     "sound800": "#hash_5fd68d0455a0b8",
     "sound810": "#hash_5fd68d0455a0b8",
-    "tunables1": "#hash_2edfb7494b062e41",
+    "tunables1": "#melee_bowie_tunables_mp",
     "attachments": [
         "#hash_f459a0af8e8f912b"
     ],

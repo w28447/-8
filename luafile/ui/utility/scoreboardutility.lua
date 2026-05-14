@@ -73,11 +73,11 @@ CoD.ScoreboardUtility.UpdateScoreboardClientMuteButtonPrompt = function ( f9_arg
 		if Engine[0xAC4DDADDA07242F]( f9_arg1, Engine[0xC3DF042E7492B66]( Enum.LobbyModule[0xC46B73E8E18BA2] ), f9_local4 ) then
 			Engine.SetModelValue( f9_local3, 0x6BEF50FAD886D13 )
 		else
-			Engine.SetModelValue( f9_local3, 0x322978D8B62A956 )
+			Engine.SetModelValue( f9_local3, "menu/mute_caps" )
 		end
 	else
 		Engine.SetModelValue( f9_local2, false )
-		Engine.SetModelValue( f9_local3, 0x322978D8B62A956 )
+		Engine.SetModelValue( f9_local3, "menu/mute_caps" )
 	end
 end
 
@@ -454,7 +454,7 @@ DataSources.ScoreboardSortOptions = ListHelper_SetupDataSource( "ScoreboardSortO
 	f39_local5 = {
 		models = {
 			id = "scoreboard.kills",
-			name = 0x9ED65B8840AFA44,
+			name = "mpui/kills",
 			icon = "icon_scoreboard_badge_kills128"
 		}
 	}

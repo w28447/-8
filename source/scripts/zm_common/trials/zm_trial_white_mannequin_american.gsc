@@ -54,7 +54,7 @@ function private on_begin()
     }
     
     e_mannequin_door zm_white_private_mannequin::function_a51b6403( 0 );
-    callback::function_33f0ddd3( &function_33f0ddd3 );
+    callback::on_player_loadout_changed( &on_player_loadout_changed );
     level zm_trial::function_25ee130( 1 );
     
     if ( isdefined( level.mannequin_ally ) )
@@ -72,7 +72,7 @@ function private on_begin()
 // Size: 0x13c
 function private on_end( round_reset )
 {
-    callback::function_824d206( &function_33f0ddd3 );
+    callback::function_824d206( &on_player_loadout_changed );
     level zm_trial::function_25ee130( 0 );
     
     foreach ( player in getplayers() )
@@ -104,7 +104,7 @@ function function_26edbcdc( inflictor, attacker, damage, flags, meansofdeath, we
 function private function_545d53bf()
 {
     self endon( #"disconnect" );
-    level endon( #"hash_7646638df88a3656" );
+    level endon( #"trial_round_end" );
     b_locked_weapons = 0;
     
     while ( true )
@@ -136,7 +136,7 @@ function private function_545d53bf()
 // Params 1, eflags: 0x4
 // Checksum 0x705ef076, Offset: 0x6c0
 // Size: 0x124
-function private function_33f0ddd3( s_event )
+function private on_player_loadout_changed( s_event )
 {
     if ( s_event.event === "give_weapon" )
     {

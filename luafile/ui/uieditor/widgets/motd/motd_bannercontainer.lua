@@ -161,7 +161,7 @@ CoD.MOTD_BannerContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x33A50A66558D623, nil, nil )
 			return true
 		elseif CoD.MOTDUtility.MOTD_IsContractAction( self, f10_arg2, f10_arg0 ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xE07AF27BEA3B907, nil, nil )
+			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/motd_contracts", nil, nil )
 			return true
 		elseif CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
 			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xAC3B80C833B60E1, nil, nil )

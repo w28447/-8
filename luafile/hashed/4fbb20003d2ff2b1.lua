@@ -27,7 +27,7 @@ CoD.StartMenu_Inventory_SwitchWeaponTab_Activate.new = function ( f1_arg0, f1_ar
 	local HeaderWeapon = LUI.UIText.new( 0, 1, 25, -25, 0.5, 0.5, -11, 11 )
 	HeaderWeapon:setRGB( 0, 0, 0 )
 	HeaderWeapon:setAlpha( 0 )
-	HeaderWeapon:setText( Engine[0xF9F1239CFD921FE]( 0x5B8A625B47D0EBA ) )
+	HeaderWeapon:setText( Engine[0xF9F1239CFD921FE]( "wz/weapon_with_id" ) )
 	HeaderWeapon:setTTF( "ttmussels_regular" )
 	HeaderWeapon:setLetterSpacing( 4 )
 	HeaderWeapon:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

@@ -60,7 +60,7 @@ CoD.DirectorGameRulesContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	self.FrontendFrameSelectedGlow = FrontendFrameSelectedGlow
 	
 	local FrontendFocusPip = LUI.UIImage.new( 0, 1, -6, 6, 0, 1, -6, 6 )
-	FrontendFocusPip:setImage( RegisterImage( 0x793C73633F620BB ) )
+	FrontendFocusPip:setImage( RegisterImage( "uie_ui_menu_store_focus_pips" ) )
 	FrontendFocusPip:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFocusPip:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFocusPip:setupNineSliceShader( 40, 40 )

@@ -2,47 +2,47 @@
     "imagearray": [
         {
             "image": "image#ui_icon_hvo_killer_ajax",
-            "specialist": "#hash_641d42086962443d"
+            "specialist": "#pbt_mp_swatpolice"
         },
         {
             "image": "image#ui_icon_hvo_killer_battery",
-            "specialist": "#hash_25d901b2845affb5"
+            "specialist": "#pbt_mp_battery"
         },
         {
             "image": "image#ui_icon_hvo_killer_crash",
-            "specialist": "#hash_271546989f2b39c0"
+            "specialist": "#pbt_mp_buffassault"
         },
         {
             "image": "image#ui_icon_hvo_killer_firebreak",
-            "specialist": "#hash_17c8471ad085983b"
+            "specialist": "#pbt_mp_firebreak"
         },
         {
             "image": "image#ui_icon_hvo_killer_nomad",
-            "specialist": "#hash_bac19a8a93f750a"
+            "specialist": "#pbt_mp_trapper"
         },
         {
             "image": "image#ui_icon_hvo_killer_prophet",
-            "specialist": "#hash_74a7b1f09eb77129"
+            "specialist": "#pbt_mp_technomancer"
         },
         {
             "image": "image#ui_icon_hvo_killer_recon",
-            "specialist": "#hash_265a8bfe9e6a3a8f"
+            "specialist": "#pbt_mp_recon"
         },
         {
             "image": "image#ui_icon_hvo_killer_ruin",
-            "specialist": "#hash_215efce6af8d9a10"
+            "specialist": "#pbt_mp_mercenary"
         },
         {
             "image": "image#ui_icon_hvo_killer_seraph",
-            "specialist": "#hash_35abb557417d97bc"
+            "specialist": "#pbt_mp_enforcer"
         },
         {
             "image": "image#ui_icon_hvo_killer_torque",
-            "specialist": "#hash_34c5e1c04823489d"
+            "specialist": "#pbt_mp_engineer"
         },
         {
             "image": "image#ui_icon_hvo_killer_spectra",
-            "specialist": "#hash_4c0746fa548d2220"
+            "specialist": "#pbt_mp_spectre"
         }
     ],
     "statsarray": [

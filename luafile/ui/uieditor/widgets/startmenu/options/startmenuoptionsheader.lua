@@ -30,7 +30,7 @@ CoD.StartMenuOptionsHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local UnderlineTexture = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, -2, 0 )
 	UnderlineTexture:setRGB( 0.15, 0.15, 0.15 )
-	UnderlineTexture:setImage( RegisterImage( 0x1FC25912CF54567 ) )
+	UnderlineTexture:setImage( RegisterImage( "uie_ui_menu_director_grain_bg01" ) )
 	UnderlineTexture:setMaterial( LUI.UIImage.GetCachedMaterial( 0x655565C7B387234 ) )
 	self:addElement( UnderlineTexture )
 	self.UnderlineTexture = UnderlineTexture

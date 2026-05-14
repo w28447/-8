@@ -1,7 +1,7 @@
 {
     "name": "#hash_3a56a2c7cfdb0274",
     "model": "#hash_8c721e0c7743f14",
-    "unk20": "#hash_325f2362f43ee75a",
+    "unk20": "#veh_mphd_car_compact_green_dead",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [
@@ -18,7 +18,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_5eb690639ce50eba",
+                    "name": "#dst_car_fire",
                     "unk28": "tag_body_d0"
                 },
                 {

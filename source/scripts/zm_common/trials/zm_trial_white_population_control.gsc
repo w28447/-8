@@ -94,7 +94,7 @@ function private on_end( round_reset )
 // Size: 0x8c
 function private monitor_trigger()
 {
-    level endon( #"hash_7646638df88a3656" );
+    level endon( #"trial_round_end" );
     level.var_d76270a8 = spawn( "trigger_damage_new", ( -208, 530, -24 ), 1048576 | 2097152 | 8388608, 16, 16 );
     level.var_d76270a8 thread function_75f0aac6();
 }
@@ -133,7 +133,7 @@ function private function_75f0aac6()
 // Size: 0x4b0
 function nuked_population_sign_think( n_base = 99 )
 {
-    level endon( #"hash_7646638df88a3656" );
+    level endon( #"trial_round_end" );
     var_50f6b3f4 = getent( "counter_tens", "targetname" );
     var_d02e9cd = getent( "counter_ones", "targetname" );
     var_50f6b3f4 rotateto( var_50f6b3f4.start_angles, 0.05 );
@@ -253,7 +253,7 @@ function set_dvar_float_if_unset( dvar, value, reset = 0 )
 // Size: 0x72
 function private function_a4adaedb()
 {
-    level endon( #"hash_7646638df88a3656" );
+    level endon( #"trial_round_end" );
     level.var_382a24b0 = 1;
     n_threshold = level.total_zombies_killed + level.zombie_total;
     

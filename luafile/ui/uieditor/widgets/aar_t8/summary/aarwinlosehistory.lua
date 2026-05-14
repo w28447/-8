@@ -25,7 +25,7 @@ CoD.AARWinLoseHistory.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local Text = LUI.UIText.new( 0, 1, 0, 0, 0.5, 0.5, -66.5, -51.5 )
 	Text:setRGB( 0, 0.7, 0.85 )
-	Text:setText( LocalizeToUpperString( 0xBCD9AEC3F8CFEBE ) )
+	Text:setText( LocalizeToUpperString( "aar/win" ) )
 	Text:setTTF( "dinnext_regular" )
 	Text:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
 	Text:setLetterSpacing( 4 )
@@ -36,7 +36,7 @@ CoD.AARWinLoseHistory.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local TextAdd = LUI.UIText.new( 0, 1, 0, 0, 0.5, 0.5, -66.5, -51.5 )
 	TextAdd:setRGB( 0, 0.7, 0.85 )
-	TextAdd:setText( LocalizeToUpperString( 0xBCD9AEC3F8CFEBE ) )
+	TextAdd:setText( LocalizeToUpperString( "aar/win" ) )
 	TextAdd:setTTF( "dinnext_regular" )
 	TextAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x336C1AE82B1520A ) )
 	TextAdd:setLetterSpacing( 4 )
@@ -115,7 +115,7 @@ CoD.AARWinLoseHistory.__resetProperties = function ( f7_arg0 )
 	f7_arg0.InValidNormal:setAlpha( 0 )
 	f7_arg0.TextAdd:setTopBottom( 0.5, 0.5, -66.5, -51.5 )
 	f7_arg0.TextAdd:setAlpha( 1 )
-	f7_arg0.TextAdd:setText( LocalizeToUpperString( 0xBCD9AEC3F8CFEBE ) )
+	f7_arg0.TextAdd:setText( LocalizeToUpperString( "aar/win" ) )
 	f7_arg0.BarAdd:setAlpha( 0.5 )
 	f7_arg0.Bar:setTopBottom( 0, 0, -0.5, 117.5 )
 	f7_arg0.Bar:setRGB( 1, 1, 1 )
@@ -123,7 +123,7 @@ CoD.AARWinLoseHistory.__resetProperties = function ( f7_arg0 )
 	f7_arg0.Bar:setZRot( 180 )
 	f7_arg0.Text:setTopBottom( 0.5, 0.5, -66.5, -51.5 )
 	f7_arg0.Text:setAlpha( 1 )
-	f7_arg0.Text:setText( LocalizeToUpperString( 0xBCD9AEC3F8CFEBE ) )
+	f7_arg0.Text:setText( LocalizeToUpperString( "aar/win" ) )
 end
 
 CoD.AARWinLoseHistory.__clipsPerState = {
@@ -239,12 +239,12 @@ CoD.AARWinLoseHistory.__clipsPerState = {
 			f18_arg0.Text:completeAnimation()
 			f18_arg0.Text:setTopBottom( 0.5, 0.5, 52.5, 67.5 )
 			f18_arg0.Text:setAlpha( 0.3 )
-			f18_arg0.Text:setText( LocalizeToUpperString( 0xFD9D91DD463FA49 ) )
+			f18_arg0.Text:setText( LocalizeToUpperString( "aar/lose" ) )
 			f18_arg0.clipFinished( f18_arg0.Text )
 			f18_arg0.TextAdd:completeAnimation()
 			f18_arg0.TextAdd:setTopBottom( 0.5, 0.5, 52.5, 67.5 )
 			f18_arg0.TextAdd:setAlpha( 0 )
-			f18_arg0.TextAdd:setText( LocalizeToUpperString( 0xFD9D91DD463FA49 ) )
+			f18_arg0.TextAdd:setText( LocalizeToUpperString( "aar/lose" ) )
 			f18_arg0.clipFinished( f18_arg0.TextAdd )
 		end
 	},
@@ -264,12 +264,12 @@ CoD.AARWinLoseHistory.__clipsPerState = {
 			f19_arg0.Text:completeAnimation()
 			f19_arg0.Text:setTopBottom( 0.5, 0.5, 52.5, 67.5 )
 			f19_arg0.Text:setAlpha( 0.3 )
-			f19_arg0.Text:setText( LocalizeToUpperString( 0x5F8F9DBF6F19D92 ) )
+			f19_arg0.Text:setText( LocalizeToUpperString( "aar/draw" ) )
 			f19_arg0.clipFinished( f19_arg0.Text )
 			f19_arg0.TextAdd:completeAnimation()
 			f19_arg0.TextAdd:setTopBottom( 0.5, 0.5, 52.5, 67.5 )
 			f19_arg0.TextAdd:setAlpha( 0 )
-			f19_arg0.TextAdd:setText( LocalizeToUpperString( 0x5F8F9DBF6F19D92 ) )
+			f19_arg0.TextAdd:setText( LocalizeToUpperString( "aar/draw" ) )
 			f19_arg0.clipFinished( f19_arg0.TextAdd )
 		end
 	}

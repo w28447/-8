@@ -161,12 +161,12 @@ function init_flags()
     level flag::init( #"kp_upg_main" );
     level flag::init( #"kp_upg_dead" );
     level flag::init( #"kp_upg_green" );
-    level flag::init( #"hash_4e56d6c8c78b24ef" );
-    level flag::init( #"hash_737628b9329f3e72" );
-    level flag::init( #"hash_72e622de2019c9f5" );
-    level flag::init( #"hash_1ccd179637a573e3" );
-    level flag::init( #"hash_70c18019036e06" );
-    level flag::init( #"hash_7c0a6f1432d54fc5" );
+    level flag::init( #"kp_upg_main_reveal" );
+    level flag::init( #"kp_upg_dead_reveal" );
+    level flag::init( #"kp_upg_green_reveal" );
+    level flag::init( #"kp_upg_main_insert" );
+    level flag::init( #"kp_upg_dead_insert" );
+    level flag::init( #"kp_upg_green_insert" );
     level flag::init( #"knight_main_hall_stationed" );
     level flag::init( #"knight_cemetery_stationed" );
     level flag::init( #"knight_greenhouse_stationed" );
@@ -807,7 +807,7 @@ function function_2aa04f9f()
                     mdl_upg playsound( #"hash_4b1143cc57b2474b" );
                     mdl_upg playloopsound( #"hash_661ab5dd3a814d28" );
                     util::wait_network_frame();
-                    mdl_upg.fx_org clientfield::set( "" + #"hash_51257ec597a8f84f", 2 );
+                    mdl_upg.fx_org clientfield::set( "" + #"pap_key_pickup", 2 );
                     var_47323b73 = s_loc zm_unitrigger::create( undefined, 100, &function_566d3cd2 );
                     var_47323b73.script_flag = self.script_flag;
                     var_47323b73.mdl_upg = mdl_upg;
@@ -936,7 +936,7 @@ function function_566d3cd2()
 // Size: 0x54
 function function_3c832025()
 {
-    self clientfield::set( "" + #"hash_51257ec597a8f84f", 0 );
+    self clientfield::set( "" + #"pap_key_pickup", 0 );
     wait 1.5;
     
     if ( isdefined( self ) )
@@ -989,7 +989,7 @@ function function_fb54ddba()
         
         if ( s_result._notify !== "weapon_change" || !mansion_util::is_shield( s_result.weapon ) )
         {
-            self notify( #"hash_459246e5bfcc3713" );
+            self notify( #"shield_swapped" );
         }
     }
 }
@@ -1001,7 +1001,7 @@ function function_fb54ddba()
 function function_4c8574b3()
 {
     self endon( #"disconnect" );
-    self waittilltimeout( 55, #"shield_timeout", #"hash_459246e5bfcc3713", #"destroy_riotshield" );
+    self waittilltimeout( 55, #"shield_timeout", #"shield_swapped", #"destroy_riotshield" );
     self.is_blue = 0;
     self clientfield::set( "" + #"shield_fire", 0 );
     self notify( #"shield_timeout" );
@@ -2198,7 +2198,7 @@ function forest_assault()
     callback::on_ai_killed( &function_de68c9b7 );
     wait 2;
     level thread mansion_util::function_bb613572( function_d11cc23b(), #"hash_6402d013069eb3a" );
-    level thread function_d217c492();
+    level thread _angles_cp_medal_no_deaths();
     level flag::wait_till( "forest_final" );
     function_b5ab717();
     level thread function_3d151222( #"forest", #"defend_comp" );
@@ -2249,7 +2249,7 @@ function private function_3d151222( var_f49ead21, var_5e1197bc )
 // Params 0
 // Checksum 0x5ef1d6b8, Offset: 0x88d8
 // Size: 0x3b8
-function function_d217c492()
+function _angles_cp_medal_no_deaths()
 {
     function_f0a7d11b();
     wait 10;

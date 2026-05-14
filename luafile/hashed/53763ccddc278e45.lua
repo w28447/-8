@@ -130,7 +130,7 @@ CoD.PC_MultiItemPickup.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0x38B775D97E72F0C, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE1" )
 			return true
 		elseif IsMouseOrKeyboard( f13_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f13_arg0, f13_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsGlobalDataSourceModelValueEnumBitSet( f13_arg2, "HUDItems", "weapon3dHintState", CoD.HUDUtility.Weapon3DHintStateFlags.SWAPS ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0x25F8C30A0958A7B, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE1" )
+			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], "warzone/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE1" )
 			return true
 		elseif IsMouseOrKeyboard( f13_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f13_arg0, f13_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEnumBitSet( f13_arg2, "HUDItems", "weapon3dHintState", CoD.HUDUtility.Weapon3DHintStateFlags.INVENTORY_FULL ) then
 			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0x339E923E692AD5E, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE1" )
@@ -167,7 +167,7 @@ CoD.PC_MultiItemPickup.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 			CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0xA86619565BE54DB], 0x928DC6C23119D85, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE3" )
 			return true
 		elseif IsMouseOrKeyboard( f15_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f15_arg0, f15_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.HUDUtility.ShowTriangleAttachmentPickupPrompt( f15_arg2 ) and CoD.ModelUtility.IsGlobalDataSourceModelValueEnumBitSet( f15_arg2, "HUDItems", "weapon3dHintState", CoD.HUDUtility.Weapon3DHintStateFlags.INVENTORY_FULL ) then
-			CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0xA86619565BE54DB], 0x25F8C30A0958A7B, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE3" )
+			CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0xA86619565BE54DB], "warzone/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE3" )
 			return true
 		elseif IsMouseOrKeyboard( f15_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f15_arg0, f15_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.HUDUtility.ShowTriangleAttachmentPickupPrompt( f15_arg2 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEnumBitSet( f15_arg2, "HUDItems", "weapon3dHintState", CoD.HUDUtility.Weapon3DHintStateFlags.SWAPS ) and not CoD.WZUtility.InventoryItemDisplaysEquip( f15_arg0, f15_arg2 ) then
 			CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0xA86619565BE54DB], 0x38B775D97E72F0C, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE3" )

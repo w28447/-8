@@ -1,7 +1,7 @@
 {
     "name": "#zitem_orange_heat_pack_part_1_zm",
     "baseWeapon": "#zitem_orange_heat_pack_part_1",
-    "streamkey": "#hash_8bad2826905a82e",
+    "streamkey": "#zitem_orange_heat_pack_part_1_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

@@ -832,7 +832,7 @@ function private function_6c92ebda( behaviortreeentity, asmstatename )
 // Size: 0x66
 function private function_e137506e( electriccatalyst )
 {
-    self endon( #"death", #"disconnect", #"hash_7283e5f17e4fa10a" );
+    self endon( #"death", #"disconnect", #"electric_shock_finished" );
     electriccatalyst waittill( #"death" );
     self notify( #"killed_electric_catalyst" );
 }
@@ -857,7 +857,7 @@ function private function_73961a38( notifyhash )
     }
     
     self.var_6b8f84c7 = undefined;
-    self notify( #"hash_7283e5f17e4fa10a" );
+    self notify( #"electric_shock_finished" );
 }
 
 // Namespace zm_ai_catalyst/zm_ai_catalyst
@@ -1923,10 +1923,10 @@ function round_spawn()
         {
             waitframe( 1 );
             
-            if ( getdvarstring( #"hash_403368b958977fcb", "<dev string:x1fe>" ) != "<dev string:x1fe>" )
+            if ( getdvarstring( #"spawn_catalyst_type", "<dev string:x1fe>" ) != "<dev string:x1fe>" )
             {
-                function_fa69f8d2( int( getdvarstring( #"hash_403368b958977fcb" ) ) );
-                setdvar( #"hash_403368b958977fcb", "<dev string:x1fe>" );
+                function_fa69f8d2( int( getdvarstring( #"spawn_catalyst_type" ) ) );
+                setdvar( #"spawn_catalyst_type", "<dev string:x1fe>" );
             }
         }
     }

@@ -171,7 +171,7 @@ function init_crane()
         crane waittill( #"movedone" );
     }
     
-    if ( !getdvarint( #"hash_2d698a5ac4538f6d", 1 ) || !getgametypesetting( #"allowmapscripting" ) )
+    if ( !getdvarint( #"dev_russianbase_crane", 1 ) || !getgametypesetting( #"allowmapscripting" ) )
     {
         foreach ( button in crane.buttons )
         {

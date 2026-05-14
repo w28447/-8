@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_caricature_nomad",
+    "type": "#tag",
+    "material": "#hash_69758343c31e9581",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#tags/caricature_nomad",
+        "icon": "image#loot_ui_icon_tags_caricature_nomad",
+        "isdefault": 0
+    }
+}

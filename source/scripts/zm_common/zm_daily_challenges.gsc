@@ -310,7 +310,7 @@ function death_check_for_challenge_updates( e_attacker )
     
     if ( zm_loadout::is_lethal_grenade( w_damage ) )
     {
-        e_attacker zm_stats::increment_challenge_stat( #"hash_5f9b7801af13f397" );
+        e_attacker zm_stats::increment_challenge_stat( #"zm_daily_kills_equipment" );
         
         /#
             debug_print( "<dev string:x25f>" );
@@ -485,7 +485,7 @@ function earned_points_tracking()
         
         if ( zm_utility::is_standard() )
         {
-            player zm_stats::increment_challenge_stat( #"hash_7ea82afc1c790346", n_points );
+            player zm_stats::increment_challenge_stat( #"zm_daily_earn_rush_points", n_points );
         }
         else
         {

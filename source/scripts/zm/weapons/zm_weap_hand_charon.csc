@@ -33,17 +33,17 @@ function __init__()
     level._effect[ #"charon_proj" ] = #"hash_4952906e2b897ac8";
     level._effect[ #"charon_proj_charged" ] = #"hash_3a0c132d4e39ba81";
     level._effect[ #"charon_proj_impact" ] = #"hash_25c4a39b373bfc67";
-    level._effect[ #"hash_3a8801fc057183dc" ] = #"hash_237010c93c358590";
+    level._effect[ #"charon_proj_charged_impact" ] = #"hash_237010c93c358590";
     level._effect[ #"hash_4ce416875acfbfab" ] = #"hash_6c9f6d6353ff3c71";
     level._effect[ #"hash_4cdd0a875ac98c99" ] = #"hash_6ca6596354053923";
     level._effect[ #"charon_pool" ] = #"hash_3d88b8f128288ebe";
     level._effect[ #"charon_impact_torso" ] = #"hash_6937321c4a8e7349";
-    level._effect[ #"hash_74d5f15912f2e8ee" ] = #"hash_7fca1782163cbb01";
-    level._effect[ #"hash_779c72a2983289e3" ] = #"hash_55d06957e137b062";
-    level._effect[ #"hash_e84c5306b5ffdf7" ] = #"hash_b3bc039e7aca94";
-    level._effect[ #"hash_4c22be78d74e1de8" ] = #"hash_1e3e41de01894921";
-    level._effect[ #"hash_1bce475aa707ac4c" ] = #"hash_5dab3144897e562f";
-    level._effect[ #"hash_322a2cba1a33e239" ] = #"hash_4611402cb26df20";
+    level._effect[ #"charon_impact_arm_left" ] = #"hash_7fca1782163cbb01";
+    level._effect[ #"charon_impact_arm_right" ] = #"hash_55d06957e137b062";
+    level._effect[ #"charon_impact_hip_left" ] = #"hash_b3bc039e7aca94";
+    level._effect[ #"charon_impact_hip_right" ] = #"hash_1e3e41de01894921";
+    level._effect[ #"charon_impact_leg_left" ] = #"hash_5dab3144897e562f";
+    level._effect[ #"charon_impact_leg_right" ] = #"hash_4611402cb26df20";
     level._effect[ #"hash_355fbaf759524a7c" ] = #"hash_6d56f51f9b1fabaa";
     level._effect[ #"hash_1b9a6c3712623d2b" ] = #"hash_2ea0cefc397c3d81";
     level._effect[ #"hash_2bb39e5073633f5b" ] = #"hash_31e7c5600f464e95";
@@ -106,32 +106,32 @@ function function_d64a6790( localclientnum, oldval, newval, bnewent, binitialsna
             
             if ( isdefined( self gettagorigin( "j_elbow_le" ) ) )
             {
-                util::playfxontag( localclientnum, level._effect[ #"hash_74d5f15912f2e8ee" ], self, "j_elbow_le" );
+                util::playfxontag( localclientnum, level._effect[ #"charon_impact_arm_left" ], self, "j_elbow_le" );
             }
             
             if ( isdefined( self gettagorigin( "j_elbow_ri" ) ) )
             {
-                util::playfxontag( localclientnum, level._effect[ #"hash_779c72a2983289e3" ], self, "j_elbow_ri" );
+                util::playfxontag( localclientnum, level._effect[ #"charon_impact_arm_right" ], self, "j_elbow_ri" );
             }
             
             if ( isdefined( self gettagorigin( "j_hip_le" ) ) )
             {
-                util::playfxontag( localclientnum, level._effect[ #"hash_e84c5306b5ffdf7" ], self, "j_hip_le" );
+                util::playfxontag( localclientnum, level._effect[ #"charon_impact_hip_left" ], self, "j_hip_le" );
             }
             
             if ( isdefined( self gettagorigin( "j_hip_ri" ) ) )
             {
-                util::playfxontag( localclientnum, level._effect[ #"hash_4c22be78d74e1de8" ], self, "j_hip_ri" );
+                util::playfxontag( localclientnum, level._effect[ #"charon_impact_hip_right" ], self, "j_hip_ri" );
             }
             
             if ( isdefined( self gettagorigin( "j_knee_le" ) ) )
             {
-                util::playfxontag( localclientnum, level._effect[ #"hash_1bce475aa707ac4c" ], self, "j_knee_le" );
+                util::playfxontag( localclientnum, level._effect[ #"charon_impact_leg_left" ], self, "j_knee_le" );
             }
             
             if ( isdefined( self gettagorigin( "j_knee_ri" ) ) )
             {
-                util::playfxontag( localclientnum, level._effect[ #"hash_322a2cba1a33e239" ], self, "j_knee_ri" );
+                util::playfxontag( localclientnum, level._effect[ #"charon_impact_leg_right" ], self, "j_knee_ri" );
             }
             
             if ( isdefined( self gettagorigin( "j_spinelower" ) ) )
@@ -196,32 +196,32 @@ function function_120153b7( localclientnum, oldval, newval, bnewent, binitialsna
     
     if ( isdefined( self gettagorigin( "j_elbow_le" ) ) )
     {
-        util::playfxontag( localclientnum, level._effect[ #"hash_74d5f15912f2e8ee" ], self, "j_elbow_le" );
+        util::playfxontag( localclientnum, level._effect[ #"charon_impact_arm_left" ], self, "j_elbow_le" );
     }
     
     if ( isdefined( self gettagorigin( "j_elbow_ri" ) ) )
     {
-        util::playfxontag( localclientnum, level._effect[ #"hash_779c72a2983289e3" ], self, "j_elbow_ri" );
+        util::playfxontag( localclientnum, level._effect[ #"charon_impact_arm_right" ], self, "j_elbow_ri" );
     }
     
     if ( isdefined( self gettagorigin( "j_hip_le" ) ) )
     {
-        util::playfxontag( localclientnum, level._effect[ #"hash_e84c5306b5ffdf7" ], self, "j_hip_le" );
+        util::playfxontag( localclientnum, level._effect[ #"charon_impact_hip_left" ], self, "j_hip_le" );
     }
     
     if ( isdefined( self gettagorigin( "j_hip_ri" ) ) )
     {
-        util::playfxontag( localclientnum, level._effect[ #"hash_4c22be78d74e1de8" ], self, "j_hip_ri" );
+        util::playfxontag( localclientnum, level._effect[ #"charon_impact_hip_right" ], self, "j_hip_ri" );
     }
     
     if ( isdefined( self gettagorigin( "j_knee_le" ) ) )
     {
-        util::playfxontag( localclientnum, level._effect[ #"hash_1bce475aa707ac4c" ], self, "j_knee_le" );
+        util::playfxontag( localclientnum, level._effect[ #"charon_impact_leg_left" ], self, "j_knee_le" );
     }
     
     if ( isdefined( self gettagorigin( "j_knee_ri" ) ) )
     {
-        util::playfxontag( localclientnum, level._effect[ #"hash_322a2cba1a33e239" ], self, "j_knee_ri" );
+        util::playfxontag( localclientnum, level._effect[ #"charon_impact_leg_right" ], self, "j_knee_ri" );
     }
     
     if ( isdefined( self gettagorigin( "j_spinelower" ) ) )
@@ -308,7 +308,7 @@ function function_12c042fc( localclientnum, oldval, newval, bnewent, binitialsna
     }
     else if ( newval == 2 )
     {
-        playfx( localclientnum, level._effect[ #"hash_3a8801fc057183dc" ], v_org, v_ang );
+        playfx( localclientnum, level._effect[ #"charon_proj_charged_impact" ], v_org, v_ang );
     }
     
     playsound( localclientnum, #"hash_5674d8ca7846c4a5", self.origin );

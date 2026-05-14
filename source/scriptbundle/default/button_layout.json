@@ -25,21 +25,21 @@
             "value": "5"
         },
         {
-            "label": "localized17#hash_1e31a517d89f8d8b",
+            "label": "localized17#menu/bumperjumper",
             "value": "6"
         },
         {
-            "label": "localized17#hash_528bdecc81455bad",
+            "label": "localized17#menu/bumpertactical",
             "value": "7"
         },
         {
-            "label": "localized17#hash_186146d66336a088",
+            "label": "localized17#menu/stickmove",
             "value": "8"
         }
     ],
     "hash_dfedf08e": 0,
     "categoryindex": 0,
-    "description": "localized17#hash_19d2c802dfef955e",
+    "description": "localized17#platform/button_layout_desc",
     "menu/on": "localized17#menu/on",
     "hash_10e01ad5": 1,
     "iscategory": 0,

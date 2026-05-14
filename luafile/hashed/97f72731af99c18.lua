@@ -945,12 +945,12 @@ Lobby.JSON.CreateStartSearchParamDoc = function ( f29_arg0 )
 	local f29_local21 = Engine[0x786FFC9E621CAB7]()
 	Lobby.MatchmakingAsync.MatchmakingSearchSummaryLog[0x22C2D85063EC515] = f29_local21
 	Lobby.MatchmakingAsync.PartyToMatchSummary[0x22C2D85063EC515] = f29_local21
-	if f29_arg0 == nil and f29_local11.mainMode ~= f29_local20[0xEB7DDC7F079D51B] then
+	if f29_arg0 == nil and f29_local11.mainMode ~= f29_local20["mainmode"] then
 		Lobby.JSON.ErrorWrite( nil, f29_local0, "Playlist entry mainMode and lobby mainMode Don't match!!" )
 		return nil
-	elseif f29_local20[0xEB7DDC7F079D51B] == Enum.LobbyMainMode[0x79D01499920B292] or f29_local20[0xEB7DDC7F079D51B] == Enum.LobbyMainMode[0x7B50049993542C0] then
+	elseif f29_local20["mainmode"] == Enum.LobbyMainMode[0x79D01499920B292] or f29_local20["mainmode"] == Enum.LobbyMainMode[0x7B50049993542C0] then
 		f29_local8 = 1
-	elseif f29_local20[0xEB7DDC7F079D51B] == Enum.LobbyMainMode[0x78C124999125C42] then
+	elseif f29_local20["mainmode"] == Enum.LobbyMainMode[0x78C124999125C42] then
 		f29_local8 = 1
 		if Dvar[0xA546240BBE08638]:exists() and Dvar[0xA546240BBE08638]:get() then
 			f29_local9 = LuaEnum.NeedForDedicatedServer.NOT_NEEDED
@@ -960,7 +960,7 @@ Lobby.JSON.CreateStartSearchParamDoc = function ( f29_arg0 )
 			f29_local15 = f29_local22.fillParty
 		end
 	end
-	if LuaDefine.isPCClient and f29_local20[0xEB7DDC7F079D51B] == Enum.LobbyMainMode[0x7E41449995CD57E] and Dvar[0x3617F20591CC64]:exists() and Dvar[0x3617F20591CC64]:get() then
+	if LuaDefine.isPCClient and f29_local20["mainmode"] == Enum.LobbyMainMode[0x7E41449995CD57E] and Dvar[0x3617F20591CC64]:exists() and Dvar[0x3617F20591CC64]:get() then
 		f29_local9 = LuaEnum.NeedForDedicatedServer.REQUIRED
 	end
 	if f29_local20.LobbyMode == Enum.LobbyMode[0xD42D003CEEA3F87] then
@@ -992,13 +992,13 @@ Lobby.JSON.CreateStartSearchParamDoc = function ( f29_arg0 )
 		else
 			error( "Unsupported platform" )
 		end
-		if f29_local20[0xEB7DDC7F079D51B] == Enum.LobbyMainMode[0x78C124999125C42] then
+		if f29_local20["mainmode"] == Enum.LobbyMainMode[0x78C124999125C42] then
 			f29_local14 = f29_local14 .. "-wz"
 			if Dvar[0xAFE8B91B7B953C3]:exists() then
 				suffix = "100"
 				f29_local14 = f29_local14 .. "-" .. suffix
 			end
-		elseif f29_local20[0xEB7DDC7F079D51B] == Enum.LobbyMainMode[0x7E41449995CD57E] then
+		elseif f29_local20["mainmode"] == Enum.LobbyMainMode[0x7E41449995CD57E] then
 			f29_local14 = f29_local14 .. "-mp"
 		end
 	end
@@ -1184,9 +1184,9 @@ Lobby.JSON.CreateStartSearchParamDoc = function ( f29_arg0 )
 					if f29_local48 == 1 then
 						local f29_local51 = Engine.GetPrimaryController()
 						local f29_local52 = nil
-						if f29_local20[0xEB7DDC7F079D51B] == Enum.LobbyMainMode[0x79D01499920B292] then
+						if f29_local20["mainmode"] == Enum.LobbyMainMode[0x79D01499920B292] then
 							f29_local52 = Engine.StorageGetBuffer( f29_local51, Enum.StorageFileType[0xEC77AD28A19F8E0] )
-						elseif f29_local20[0xEB7DDC7F079D51B] == Enum.LobbyMainMode[0x7E41449995CD57E] then
+						elseif f29_local20["mainmode"] == Enum.LobbyMainMode[0x7E41449995CD57E] then
 							f29_local52 = Engine.StorageGetBuffer( f29_local51, Enum.StorageFileType[0xFDE358A242AFA2C] )
 						end
 						if f29_local52 then

@@ -4,7 +4,7 @@
     "primaryLights": 2928,
     "lightExploders": [
         {
-            "lightExploderName": "#hash_4960a70860c7eb0",
+            "lightExploderName": "#lgtexp_xd_sh110",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -209,7 +209,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_4960f70860c872f",
+            "lightExploderName": "#lgtexp_xd_sh115",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -278,7 +278,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_4999070860f9839",
+            "lightExploderName": "#lgtexp_xd_sh100",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -411,7 +411,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_49d16708612b1c2",
+            "lightExploderName": "#lgtexp_xd_sh130",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -488,7 +488,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_4a01c708614f1cb",
+            "lightExploderName": "#lgtexp_xd_sh120",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -541,7 +541,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_4a3a27086180b54",
+            "lightExploderName": "#lgtexp_xd_sh150",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -762,7 +762,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_4a72870861b24dd",
+            "lightExploderName": "#lgtexp_xd_sh140",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -847,7 +847,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_4aa8e70861e0806",
+            "lightExploderName": "#lgtexp_xd_sh170",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -892,7 +892,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_4ae14708621218f",
+            "lightExploderName": "#lgtexp_xd_sh160",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -1001,7 +1001,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_4b11a7086236198",
+            "lightExploderName": "#lgtexp_xd_sh190",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -1262,7 +1262,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_4b4a07086267b21",
+            "lightExploderName": "#lgtexp_xd_sh180",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -4063,7 +4063,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_3f7536915bf68483",
+            "lightExploderName": "#lgt_exp_boss_rollup_1",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -4076,7 +4076,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_3f7537915bf68636",
+            "lightExploderName": "#lgt_exp_boss_rollup_2",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -4089,7 +4089,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_3f7538915bf687e9",
+            "lightExploderName": "#lgt_exp_boss_rollup_3",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -4102,7 +4102,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_3f7539915bf6899c",
+            "lightExploderName": "#lgt_exp_boss_rollup_4",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -5308,7 +5308,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_69a88f707687ef10",
+            "lightExploderName": "#lgtexp_xd_sh280",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -5361,7 +5361,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_69c39f70769ed1f8",
+            "lightExploderName": "#lgtexp_xd_sh200",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -5422,7 +5422,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_69c7257076a1eb81",
+            "lightExploderName": "#lgtexp_xd_sh210",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -5579,7 +5579,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_69c7287076a1f09a",
+            "lightExploderName": "#lgtexp_xd_sh215",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -5632,7 +5632,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_69ca2b7076a42b8a",
+            "lightExploderName": "#lgtexp_xd_sh220",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -5877,7 +5877,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_69cd917076a70eb3",
+            "lightExploderName": "#lgtexp_xd_sh230",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -6122,7 +6122,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_69d1177076aa283c",
+            "lightExploderName": "#lgtexp_xd_sh240",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -6231,7 +6231,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_69d49d7076ad41c5",
+            "lightExploderName": "#lgtexp_xd_sh250",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -6444,7 +6444,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_69d8237076b05b4e",
+            "lightExploderName": "#lgtexp_xd_sh260",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -6513,7 +6513,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_69db297076b29b57",
+            "lightExploderName": "#lgtexp_xd_sh270",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -7221,7 +7221,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_72beca707bcc52db",
+            "lightExploderName": "#lgtexp_xd_sh380",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -7290,7 +7290,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_72becd707bcc57f4",
+            "lightExploderName": "#lgtexp_xd_sh385",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -7319,7 +7319,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_72cfc8707bdac2a8",
+            "lightExploderName": "#lgtexp_xd_sh330",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -7516,7 +7516,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_72d2ce707bdd02b1",
+            "lightExploderName": "#lgtexp_xd_sh320",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -7713,7 +7713,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_72d654707be01c3a",
+            "lightExploderName": "#lgtexp_xd_sh310",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -7790,7 +7790,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_72d9ba707be2ff63",
+            "lightExploderName": "#lgtexp_xd_sh300",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -7931,7 +7931,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_72d9bd707be3047c",
+            "lightExploderName": "#lgtexp_xd_sh305",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -7992,7 +7992,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_72dd40707be618ec",
+            "lightExploderName": "#lgtexp_xd_sh370",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -8101,7 +8101,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_72e0c6707be93275",
+            "lightExploderName": "#lgtexp_xd_sh360",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -8314,7 +8314,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_72e3cc707beb727e",
+            "lightExploderName": "#lgtexp_xd_sh350",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -8503,7 +8503,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_72e752707bee8c07",
+            "lightExploderName": "#lgtexp_xd_sh340",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -8872,7 +8872,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_7bd4e57081108046",
+            "lightExploderName": "#lgtexp_xd_sh080",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -8997,7 +8997,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_7bd86b70811399cf",
+            "lightExploderName": "#lgtexp_xd_sh090",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -9258,7 +9258,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_7bdb71708115d9d8",
+            "lightExploderName": "#lgtexp_xd_sh060",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -9455,7 +9455,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_7bdef7708118f361",
+            "lightExploderName": "#lgtexp_xd_sh070",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -9564,7 +9564,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_7be27d70811c0cea",
+            "lightExploderName": "#lgtexp_xd_sh040",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -9713,7 +9713,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_7be5e370811ef013",
+            "lightExploderName": "#lgtexp_xd_sh050",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -9790,7 +9790,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_7be969708122099c",
+            "lightExploderName": "#lgtexp_xd_sh020",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -10107,7 +10107,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_7bec6f70812449a5",
+            "lightExploderName": "#lgtexp_xd_sh030",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -10552,7 +10552,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_7bf37b70812a7cb7",
+            "lightExploderName": "#lgtexp_xd_sh010",
             "triggerData": [
                 {
                     "delayOn": 0,
@@ -11637,7 +11637,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_7be5e370811ef013",
+            "lightExploderName": "#lgtexp_xd_sh050",
             "triggerData": [
                 {
                     "probeID": 713,
@@ -11651,7 +11651,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_7bdb71708115d9d8",
+            "lightExploderName": "#lgtexp_xd_sh060",
             "triggerData": [
                 {
                     "probeID": 713,
@@ -11665,7 +11665,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_7bdef7708118f361",
+            "lightExploderName": "#lgtexp_xd_sh070",
             "triggerData": [
                 {
                     "probeID": 713,
@@ -11679,7 +11679,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_7bd4e57081108046",
+            "lightExploderName": "#lgtexp_xd_sh080",
             "triggerData": [
                 {
                     "probeID": 713,
@@ -11693,7 +11693,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_7bd86b70811399cf",
+            "lightExploderName": "#lgtexp_xd_sh090",
             "triggerData": [
                 {
                     "probeID": 713,
@@ -11707,7 +11707,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_4999070860f9839",
+            "lightExploderName": "#lgtexp_xd_sh100",
             "triggerData": [
                 {
                     "probeID": 713,
@@ -11721,7 +11721,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_4960a70860c7eb0",
+            "lightExploderName": "#lgtexp_xd_sh110",
             "triggerData": [
                 {
                     "probeID": 713,
@@ -11735,7 +11735,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_4960f70860c872f",
+            "lightExploderName": "#lgtexp_xd_sh115",
             "triggerData": [
                 {
                     "probeID": 713,
@@ -11749,7 +11749,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_49d16708612b1c2",
+            "lightExploderName": "#lgtexp_xd_sh130",
             "triggerData": [
                 {
                     "probeID": 714,
@@ -11763,7 +11763,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_4a72870861b24dd",
+            "lightExploderName": "#lgtexp_xd_sh140",
             "triggerData": [
                 {
                     "probeID": 712,
@@ -11777,7 +11777,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_4a3a27086180b54",
+            "lightExploderName": "#lgtexp_xd_sh150",
             "triggerData": [
                 {
                     "probeID": 712,
@@ -11791,7 +11791,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_4ae14708621218f",
+            "lightExploderName": "#lgtexp_xd_sh160",
             "triggerData": [
                 {
                     "probeID": 712,
@@ -11805,7 +11805,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_4b4a07086267b21",
+            "lightExploderName": "#lgtexp_xd_sh180",
             "triggerData": [
                 {
                     "probeID": 712,
@@ -11819,7 +11819,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_4b11a7086236198",
+            "lightExploderName": "#lgtexp_xd_sh190",
             "triggerData": [
                 {
                     "probeID": 712,
@@ -11833,7 +11833,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_69c39f70769ed1f8",
+            "lightExploderName": "#lgtexp_xd_sh200",
             "triggerData": [
                 {
                     "probeID": 712,
@@ -11847,7 +11847,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_69c7257076a1eb81",
+            "lightExploderName": "#lgtexp_xd_sh210",
             "triggerData": [
                 {
                     "probeID": 714,
@@ -11861,7 +11861,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_69c7287076a1f09a",
+            "lightExploderName": "#lgtexp_xd_sh215",
             "triggerData": [
                 {
                     "probeID": 712,
@@ -11875,7 +11875,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_69ca2b7076a42b8a",
+            "lightExploderName": "#lgtexp_xd_sh220",
             "triggerData": [
                 {
                     "probeID": 712,
@@ -11889,7 +11889,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_69cd917076a70eb3",
+            "lightExploderName": "#lgtexp_xd_sh230",
             "triggerData": [
                 {
                     "probeID": 712,
@@ -11903,7 +11903,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_69d1177076aa283c",
+            "lightExploderName": "#lgtexp_xd_sh240",
             "triggerData": [
                 {
                     "probeID": 712,
@@ -11917,7 +11917,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_69d49d7076ad41c5",
+            "lightExploderName": "#lgtexp_xd_sh250",
             "triggerData": [
                 {
                     "probeID": 712,
@@ -11931,7 +11931,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_69d8237076b05b4e",
+            "lightExploderName": "#lgtexp_xd_sh260",
             "triggerData": [
                 {
                     "probeID": 712,
@@ -11945,7 +11945,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_69db297076b29b57",
+            "lightExploderName": "#lgtexp_xd_sh270",
             "triggerData": [
                 {
                     "probeID": 712,
@@ -11959,7 +11959,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_69a88f707687ef10",
+            "lightExploderName": "#lgtexp_xd_sh280",
             "triggerData": [
                 {
                     "probeID": 712,
@@ -11973,7 +11973,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_72d9bd707be3047c",
+            "lightExploderName": "#lgtexp_xd_sh305",
             "triggerData": [
                 {
                     "probeID": 711,
@@ -11987,7 +11987,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_72d2ce707bdd02b1",
+            "lightExploderName": "#lgtexp_xd_sh320",
             "triggerData": [
                 {
                     "probeID": 712,
@@ -12001,7 +12001,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_72cfc8707bdac2a8",
+            "lightExploderName": "#lgtexp_xd_sh330",
             "triggerData": [
                 {
                     "probeID": 710,
@@ -12015,7 +12015,7 @@
             ]
         },
         {
-            "lightExploderName": "#hash_72beca707bcc52db",
+            "lightExploderName": "#lgtexp_xd_sh380",
             "triggerData": [
                 {
                     "probeID": 709,

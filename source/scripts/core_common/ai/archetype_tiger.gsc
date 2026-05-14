@@ -1428,7 +1428,7 @@ function function_b708cfe7()
         while ( true )
         {
             waitframe( 1 );
-            string = getdvarstring( #"hash_3b467d1615c469f8", "<dev string:x60>" );
+            string = getdvarstring( #"tiger_devgui_cmd", "<dev string:x60>" );
             cmd = strtok( string, "<dev string:x185>" );
             
             if ( cmd.size > 0 )
@@ -1454,7 +1454,7 @@ function function_b708cfe7()
                 }
             }
             
-            setdvar( #"hash_3b467d1615c469f8", "<dev string:x60>" );
+            setdvar( #"tiger_devgui_cmd", "<dev string:x60>" );
         }
     }
 

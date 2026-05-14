@@ -1,7 +1,7 @@
 {
     "hash_dfedf08e": 0,
     "categoryindex": 0,
-    "description": "localized17#hash_3497f3f256360615",
+    "description": "localized17#codcaster/ds_waypoint_markers_desc",
     "menu/on": "localized17#menu/on",
     "hash_10e01ad5": 1,
     "iscategory": 0,
@@ -21,7 +21,7 @@
     "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "codcaster_ds_waypoint_markers",
-    "displayname": "localized17#hash_6a6ed171eca1ca83",
+    "displayname": "localized17#codcaster/ds_waypoint_markers",
     "rangestartvalue": 0,
     "isdisabled": 0,
     "hash_d6897f56": 0,

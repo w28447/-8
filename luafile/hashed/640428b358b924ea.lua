@@ -60,7 +60,7 @@ CoD.Barracks_StatsOverview_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	TimePlayedText:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	TimePlayedText:setAlpha( 0.5 )
 	TimePlayedText.__String_Reference = function ()
-		TimePlayedText:setText( SecondsAsTimePlayedString( CoD.PlayerStatsUtility.GetWZGameModePlayerStorageStat( f1_arg1, f1_arg0, 0x3BF15114F02AF7B, 0x0 ) ) )
+		TimePlayedText:setText( SecondsAsTimePlayedString( CoD.PlayerStatsUtility.GetWZGameModePlayerStorageStat( f1_arg1, f1_arg0, "time_played_total", 0x0 ) ) )
 	end
 	
 	TimePlayedText.__String_Reference()
@@ -170,7 +170,7 @@ CoD.Barracks_StatsOverview_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	end
 	
 	AverageDamage.StatValue.__Stat_Value()
-	AverageDamage.StatHeaderText:setText( LocalizeToUpperString( 0x588676CED526A6F ) )
+	AverageDamage.StatHeaderText:setText( LocalizeToUpperString( "menu/avg_damage" ) )
 	self:addElement( AverageDamage )
 	self.AverageDamage = AverageDamage
 	

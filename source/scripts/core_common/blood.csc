@@ -501,8 +501,8 @@ function private splatter_postfx( localclientnum, player, damage, var_cd141ca2, 
     level endon( localclientnum + "splatter_postfx" + var_cd141ca2 );
     blur = 0;
     opacity = 0;
-    var_587ce5b0 = 0;
-    var_49774f1 = 0;
+    ramp_in_time = 0;
+    ramp_out_time = 0;
     hold_time = 0;
     splatter = getsplatter( localclientnum );
     
@@ -511,19 +511,19 @@ function private splatter_postfx( localclientnum, player, damage, var_cd141ca2, 
         splatter.var_90495387 = getservertime( localclientnum );
         blur = level.blood.var_de10c136.dot.blur;
         opacity = level.blood.var_de10c136.dot.opacity;
-        var_587ce5b0 = level.blood.var_de10c136.dot.var_587ce5b0;
+        ramp_in_time = level.blood.var_de10c136.dot.ramp_in_time;
         hold_time = level.blood.var_de10c136.dot.hold_time;
     }
     else if ( function_b51756a0( localclientnum, splatter, damage ) )
     {
         for ( i = level.blood.var_de10c136.damage_ranges - 1; i >= 0 ; i-- )
         {
-            if ( damage > level.blood.var_de10c136.range[ i ].start || level.blood.scriptbundle.var_3e1e9389 - 1 == i && death )
+            if ( damage > level.blood.var_de10c136.range[ i ].start || level.blood.scriptbundle.damage_range_death - 1 == i && death )
             {
                 blur = level.blood.var_de10c136.range[ i ].blur;
                 opacity = level.blood.var_de10c136.range[ i ].opacity;
-                var_587ce5b0 = level.blood.var_de10c136.var_587ce5b0[ i ];
-                var_49774f1 = level.blood.var_de10c136.var_49774f1[ i ];
+                ramp_in_time = level.blood.var_de10c136.ramp_in_time[ i ];
+                ramp_out_time = level.blood.var_de10c136.ramp_out_time[ i ];
                 hold_time = level.blood.var_de10c136.hold_time[ i ];
                 break;
             }
@@ -534,17 +534,17 @@ function private splatter_postfx( localclientnum, player, damage, var_cd141ca2, 
     {
         blur = 0;
         opacity = 0;
-        var_587ce5b0 = 0;
-        var_49774f1 = 0;
+        ramp_in_time = 0;
+        ramp_out_time = 0;
         hold_time = 0;
     }
     
-    level thread rampvalue( localclientnum, 0, opacity, var_587ce5b0, var_cd141ca2, "Opacity" );
-    level thread rampvalue( localclientnum, 0, blur, var_587ce5b0, var_cd141ca2, "Blur Amount" );
-    wait float( var_587ce5b0 ) / 1000;
+    level thread rampvalue( localclientnum, 0, opacity, ramp_in_time, var_cd141ca2, "Opacity" );
+    level thread rampvalue( localclientnum, 0, blur, ramp_in_time, var_cd141ca2, "Blur Amount" );
+    wait float( ramp_in_time ) / 1000;
     wait float( hold_time ) / 1000;
-    level thread rampvalue( localclientnum, opacity, 0, var_49774f1, var_cd141ca2, "Opacity" );
-    level thread rampvalue( localclientnum, blur, 0, var_49774f1, var_cd141ca2, "Blur Amount" );
+    level thread rampvalue( localclientnum, opacity, 0, ramp_out_time, var_cd141ca2, "Opacity" );
+    level thread rampvalue( localclientnum, blur, 0, ramp_out_time, var_cd141ca2, "Blur Amount" );
 }
 
 // Namespace blood/blood
@@ -886,7 +886,7 @@ function private function_9a8dc0ec( localclientnum, playerhealth, forceupdate )
     
     if ( new_blood_stage != prior_blood_stage || forceupdate )
     {
-        ramptime = prior_blood_stage < new_blood_stage ? level.blood.var_587ce5b0 : level.blood.var_49774f1;
+        ramptime = prior_blood_stage < new_blood_stage ? level.blood.ramp_in_time : level.blood.ramp_out_time;
         self thread function_c0cdd1f2( localclientnum, level.blood.fade[ prior_blood_stage ], level.blood.fade[ new_blood_stage ], ramptime, #"fade", self.pstfx_blood );
         self thread function_c0cdd1f2( localclientnum, level.blood.opacity[ prior_blood_stage ], level.blood.opacity[ new_blood_stage ], ramptime, #"opacity", self.pstfx_blood );
         self thread function_c0cdd1f2( localclientnum, level.blood.var_4c8629ad[ prior_blood_stage ], level.blood.var_4c8629ad[ new_blood_stage ], ramptime, #"vignette darkening amount", self.pstfx_blood );
@@ -919,7 +919,7 @@ function private function_9a8dc0ec( localclientnum, playerhealth, forceupdate )
 function function_c0cdd1f2( localclientnum, stagefrom, stageto, ramptime, key, postfx )
 {
     self endon( #"death" );
-    self endon( #"hash_6d50f64fe99aed76" );
+    self endon( #"endramppostfx" );
     self notify( "rampPostFx" + key + postfx );
     self endon( "rampPostFx" + key + postfx );
     util::lerp_generic( localclientnum, ramptime, &function_b0298a0, stagefrom, stageto, key, postfx );
@@ -965,7 +965,7 @@ function private function_70299400( localclientnum )
 // Size: 0x1ac
 function private function_436ee4c2( localclientnum, pstfx_blood )
 {
-    self notify( #"hash_6d50f64fe99aed76" );
+    self notify( #"endramppostfx" );
     
     if ( isdefined( self ) )
     {
@@ -1254,17 +1254,17 @@ function private function_dd830dee()
     
     if ( !isdefined( level.blood.rob.hold_time ) )
     {
-        level.blood.rob.hold_time = isdefined( level.blood.scriptbundle.var_ae06158b ) ? level.blood.scriptbundle.var_ae06158b : 0;
+        level.blood.rob.hold_time = isdefined( level.blood.scriptbundle.rob_hold_time ) ? level.blood.scriptbundle.rob_hold_time : 0;
     }
     
     if ( !isdefined( level.blood.rob.fade_time ) )
     {
-        level.blood.rob.fade_time = isdefined( level.blood.scriptbundle.var_356550c9 ) ? level.blood.scriptbundle.var_356550c9 : 0;
+        level.blood.rob.fade_time = isdefined( level.blood.scriptbundle.rob_fade_time ) ? level.blood.scriptbundle.rob_fade_time : 0;
     }
     
     if ( !isdefined( level.blood.rob.damage_threshold ) )
     {
-        level.blood.rob.damage_threshold = isdefined( level.blood.scriptbundle.var_8635c7a1 ) ? level.blood.scriptbundle.var_8635c7a1 : 0;
+        level.blood.rob.damage_threshold = isdefined( level.blood.scriptbundle.rob_damage_threshold ) ? level.blood.scriptbundle.rob_damage_threshold : 0;
     }
     
     if ( !isdefined( level.blood.var_f5479429 ) )
@@ -1272,8 +1272,8 @@ function private function_dd830dee()
         level.blood.var_f5479429 = isdefined( level.blood.scriptbundle.var_f5479429 ) ? level.blood.scriptbundle.var_f5479429 : 0;
     }
     
-    level.blood.var_587ce5b0 = level.blood.scriptbundle.var_587ce5b0;
-    level.blood.var_49774f1 = level.blood.scriptbundle.var_49774f1;
+    level.blood.ramp_in_time = level.blood.scriptbundle.ramp_in_time;
+    level.blood.ramp_out_time = level.blood.scriptbundle.ramp_out_time;
     
     if ( !isdefined( level.blood.var_f5479429 ) )
     {
@@ -1323,14 +1323,14 @@ function private function_b0e51f43()
         level.blood.var_de10c136.damage_ranges = isdefined( level.blood.scriptbundle.damage_ranges ) ? level.blood.scriptbundle.damage_ranges : 1;
     }
     
-    if ( !isdefined( level.blood.var_de10c136.var_3e1e9389 ) )
+    if ( !isdefined( level.blood.var_de10c136.damage_range_death ) )
     {
-        level.blood.var_de10c136.var_3e1e9389 = isdefined( level.blood.scriptbundle.var_3e1e9389 ) ? level.blood.scriptbundle.var_3e1e9389 : 1;
+        level.blood.var_de10c136.damage_range_death = isdefined( level.blood.scriptbundle.damage_range_death ) ? level.blood.scriptbundle.damage_range_death : 1;
     }
     
     level.blood.var_de10c136.range = [];
-    level.blood.var_de10c136.var_587ce5b0 = [];
-    level.blood.var_de10c136.var_49774f1 = [];
+    level.blood.var_de10c136.ramp_in_time = [];
+    level.blood.var_de10c136.ramp_out_time = [];
     level.blood.var_de10c136.hold_time = [];
     
     for ( i = 0; i < level.blood.var_de10c136.damage_ranges ; i++ )
@@ -1359,14 +1359,14 @@ function private function_b0e51f43()
             level.blood.var_de10c136.range[ i ].opacity = isdefined( level.blood.scriptbundle.( "damage_range_opacity_" + i ) ) ? level.blood.scriptbundle.( "damage_range_opacity_" + i ) : 0;
         }
         
-        if ( !isdefined( level.blood.var_de10c136.var_587ce5b0[ i ] ) )
+        if ( !isdefined( level.blood.var_de10c136.ramp_in_time[ i ] ) )
         {
-            level.blood.var_de10c136.var_587ce5b0[ i ] = isdefined( level.blood.scriptbundle.( "hit_flash_ramp_in_time_" + i ) ) ? level.blood.scriptbundle.( "hit_flash_ramp_in_time_" + i ) : 0;
+            level.blood.var_de10c136.ramp_in_time[ i ] = isdefined( level.blood.scriptbundle.( "hit_flash_ramp_in_time_" + i ) ) ? level.blood.scriptbundle.( "hit_flash_ramp_in_time_" + i ) : 0;
         }
         
-        if ( !isdefined( level.blood.var_de10c136.var_49774f1[ i ] ) )
+        if ( !isdefined( level.blood.var_de10c136.ramp_out_time[ i ] ) )
         {
-            level.blood.var_de10c136.var_49774f1[ i ] = isdefined( level.blood.scriptbundle.( "hit_flash_ramp_out_time_" + i ) ) ? level.blood.scriptbundle.( "hit_flash_ramp_out_time_" + i ) : 0;
+            level.blood.var_de10c136.ramp_out_time[ i ] = isdefined( level.blood.scriptbundle.( "hit_flash_ramp_out_time_" + i ) ) ? level.blood.scriptbundle.( "hit_flash_ramp_out_time_" + i ) : 0;
         }
         
         if ( !isdefined( level.blood.var_de10c136.hold_time[ i ] ) )
@@ -1387,14 +1387,14 @@ function private function_b0e51f43()
         level.blood.var_de10c136.dot.opacity = isdefined( level.blood.scriptbundle.( "dot_opacity" ) ) ? level.blood.scriptbundle.( "dot_opacity" ) : 0;
     }
     
-    if ( !isdefined( level.blood.var_de10c136.dot.var_587ce5b0 ) )
+    if ( !isdefined( level.blood.var_de10c136.dot.ramp_in_time ) )
     {
-        level.blood.var_de10c136.dot.var_587ce5b0 = isdefined( level.blood.scriptbundle.( "dot_hit_flash_ramp_in_time" ) ) ? level.blood.scriptbundle.( "dot_hit_flash_ramp_in_time" ) : 0;
+        level.blood.var_de10c136.dot.ramp_in_time = isdefined( level.blood.scriptbundle.( "dot_hit_flash_ramp_in_time" ) ) ? level.blood.scriptbundle.( "dot_hit_flash_ramp_in_time" ) : 0;
     }
     
-    if ( !isdefined( level.blood.var_de10c136.dot.var_49774f1 ) )
+    if ( !isdefined( level.blood.var_de10c136.dot.ramp_out_time ) )
     {
-        level.blood.var_de10c136.dot.var_49774f1 = isdefined( level.blood.scriptbundle.( "dot_hit_flash_ramp_out_time" ) ) ? level.blood.scriptbundle.( "dot_hit_flash_ramp_out_time" ) : 0;
+        level.blood.var_de10c136.dot.ramp_out_time = isdefined( level.blood.scriptbundle.( "dot_hit_flash_ramp_out_time" ) ) ? level.blood.scriptbundle.( "dot_hit_flash_ramp_out_time" ) : 0;
     }
     
     if ( !isdefined( level.blood.var_de10c136.dot.hold_time ) )

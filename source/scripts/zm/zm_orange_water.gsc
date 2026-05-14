@@ -40,8 +40,8 @@ function init()
 // Size: 0x144
 function init_clientfields()
 {
-    clientfield::register( "allplayers", "" + #"hash_55543319943057f1", 24000, 1, "int" );
-    clientfield::register( "toplayer", "" + #"hash_5160727729fd57a2", 24000, 1, "int" );
+    clientfield::register( "allplayers", "" + #"water_player_freeze_fx", 24000, 1, "int" );
+    clientfield::register( "toplayer", "" + #"water_player_freeze_sfx", 24000, 1, "int" );
     clientfield::register( "toplayer", "" + #"hash_13f1aaee7ebf9986", 24000, 2, "int" );
     clientfield::register( "toplayer", "" + #"hash_603fc9d210bdbc4d", 24000, 1, "int" );
     clientfield::register( "toplayer", "" + #"hash_67340426cd141891", 24000, 2, "int" );
@@ -399,7 +399,7 @@ function function_6cf1cc01()
     self.b_in_water = 0;
     self notify( #"hash_668824b34b3076bc" );
     
-    if ( !level flag::get( #"hell_on_earth" ) && !level flag::get( #"hash_198bc172b5af7f25" ) )
+    if ( !level flag::get( #"hell_on_earth" ) && !level flag::get( #"trials_hell_on_earth" ) )
     {
         self allowsprint( 1 );
         self allowslide( 1 );
@@ -517,8 +517,8 @@ function water_player_freeze()
     self notify( #"player_frozen" );
     self zm_orange_ee_freeze_mode::function_3931c78();
     self function_bad6907c();
-    self clientfield::set( "" + #"hash_55543319943057f1", 1 );
-    self clientfield::set_to_player( "" + #"hash_5160727729fd57a2", 1 );
+    self clientfield::set( "" + #"water_player_freeze_fx", 1 );
+    self clientfield::set_to_player( "" + #"water_player_freeze_sfx", 1 );
     t_ice = spawn( "trigger_damage", self.origin, 0, 15, 72 );
     t_ice enablelinkto();
     t_ice linkto( self );
@@ -540,12 +540,12 @@ function water_player_freeze()
         self.var_d844486 = 1;
     }
     
-    self waittill( #"hash_53bfad7081c69dee" );
+    self waittill( #"water_player_freeze_broken" );
     self playsound( #"hash_2f8c9575cb36a298" );
     self.var_7dc2d507 = 0;
     self function_46c3bbf7();
-    self clientfield::set( "" + #"hash_55543319943057f1", 0 );
-    self clientfield::set_to_player( "" + #"hash_5160727729fd57a2", 0 );
+    self clientfield::set( "" + #"water_player_freeze_fx", 0 );
+    self clientfield::set_to_player( "" + #"water_player_freeze_sfx", 0 );
     self clientfield::set_to_player( "" + #"hash_603fc9d210bdbc4d", 1 );
     waitframe( 2 );
     self clientfield::set_to_player( "" + #"hash_603fc9d210bdbc4d", 0 );
@@ -736,7 +736,7 @@ function function_26234f4c( str_notify )
 // Size: 0x92
 function function_872ec0b2( t_ice )
 {
-    self endon( #"death", #"hash_53bfad7081c69dee" );
+    self endon( #"death", #"water_player_freeze_broken" );
     
     while ( true )
     {
@@ -747,7 +747,7 @@ function function_872ec0b2( t_ice )
             continue;
         }
         
-        self notify( #"hash_53bfad7081c69dee" );
+        self notify( #"water_player_freeze_broken" );
     }
 }
 
@@ -757,14 +757,14 @@ function function_872ec0b2( t_ice )
 // Size: 0x266
 function function_6cadbaff()
 {
-    self endon( #"death", #"hash_53bfad7081c69dee" );
+    self endon( #"death", #"water_player_freeze_broken" );
     
     if ( level flag::get( #"break_freeze_faster" ) )
     {
         self waittill( #"weapon_melee", #"weapon_melee_power" );
         self playrumbleonentity( "damage_heavy" );
         self clientfield::set_to_player( "" + #"hash_67340426cd141891", 0 );
-        self notify( #"hash_53bfad7081c69dee" );
+        self notify( #"water_player_freeze_broken" );
         return;
     }
     
@@ -779,7 +779,7 @@ function function_6cadbaff()
     self waittill( #"weapon_melee", #"weapon_melee_power" );
     self playrumbleonentity( "damage_heavy" );
     self clientfield::set_to_player( "" + #"hash_67340426cd141891", 0 );
-    self notify( #"hash_53bfad7081c69dee" );
+    self notify( #"water_player_freeze_broken" );
 }
 
 // Namespace zm_orange_water/zm_orange_water
@@ -788,19 +788,19 @@ function function_6cadbaff()
 // Size: 0xd6
 function function_8eb7b0f7()
 {
-    self endon( #"death", #"hash_53bfad7081c69dee" );
+    self endon( #"death", #"water_player_freeze_broken" );
     
     if ( level flag::get( #"break_freeze_faster" ) )
     {
         wait 3;
         self clientfield::set_to_player( "" + #"hash_67340426cd141891", 0 );
-        self notify( #"hash_53bfad7081c69dee" );
+        self notify( #"water_player_freeze_broken" );
         return;
     }
     
     wait 5;
     self clientfield::set_to_player( "" + #"hash_67340426cd141891", 0 );
-    self notify( #"hash_53bfad7081c69dee" );
+    self notify( #"water_player_freeze_broken" );
 }
 
 // Namespace zm_orange_water/zm_orange_water
@@ -846,8 +846,8 @@ function function_34e1762b()
     self.var_7dc2d507 = 1;
     self notify( #"player_frozen" );
     self function_e22d95bc();
-    self clientfield::set( "" + #"hash_55543319943057f1", 1 );
-    self clientfield::set_to_player( "" + #"hash_5160727729fd57a2", 1 );
+    self clientfield::set( "" + #"water_player_freeze_fx", 1 );
+    self clientfield::set_to_player( "" + #"water_player_freeze_sfx", 1 );
     self function_615d3be0();
     self function_d793c8ff();
     self function_bad6907c();
@@ -857,11 +857,11 @@ function function_34e1762b()
     self.t_ice = t_ice;
     self thread function_872ec0b2( t_ice );
     self thread function_6cadbaff();
-    self waittill( #"hash_53bfad7081c69dee" );
+    self waittill( #"water_player_freeze_broken" );
     self.var_7dc2d507 = 0;
     self function_46c3bbf7();
-    self clientfield::set( "" + #"hash_55543319943057f1", 0 );
-    self clientfield::set_to_player( "" + #"hash_5160727729fd57a2", 0 );
+    self clientfield::set( "" + #"water_player_freeze_fx", 0 );
+    self clientfield::set_to_player( "" + #"water_player_freeze_sfx", 0 );
     self clientfield::set_to_player( "" + #"hash_603fc9d210bdbc4d", 1 );
     waitframe( 2 );
     self clientfield::set_to_player( "" + #"hash_603fc9d210bdbc4d", 0 );

@@ -90,7 +90,7 @@ function tryuseqrdrone( lifeid )
     
     if ( !self isonground() )
     {
-        self iprintlnbold( #"hash_7602a0cff466eccd" );
+        self iprintlnbold( #"killstreak/qrdrone_not_placeable" );
         return 0;
     }
     
@@ -191,7 +191,7 @@ function setcarryingqrdrone( carryqrdrone )
     {
         if ( self.team != #"spectator" )
         {
-            self iprintlnbold( #"hash_7602a0cff466eccd" );
+            self iprintlnbold( #"killstreak/qrdrone_not_placeable" );
         }
         
         if ( isdefined( carryqrdrone.soundent ) )
@@ -897,7 +897,7 @@ function qrdrone_death( attacker, weapon, dir, damagetype )
     
     if ( isdefined( attacker ) && isplayer( attacker ) && attacker != self.owner )
     {
-        level thread popups::displayteammessagetoall( #"hash_1b5291e0c76c5c6d", attacker );
+        level thread popups::displayteammessagetoall( #"score/destroyed_qrdrone", attacker );
         
         if ( self.owner util::isenemyplayer( attacker ) )
         {

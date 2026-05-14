@@ -188,7 +188,7 @@ function function_f2f4ced8()
     
     if ( !isdefined( level.var_b491030 ) || level flag::get( #"main_quest_completed" ) )
     {
-        self playsound( #"hash_5d69a47fd8c0e9e5" );
+        self playsound( #"zmb_ai_brutus_spawn_laugh" );
     }
 }
 
@@ -297,7 +297,7 @@ function private registerbehaviorscriptfunctions()
     behaviortreenetworkutility::registerbehaviortreescriptapi( #"hash_643443bf9243e4ff", &function_4ec678fe );
     assert( isscriptfunctionptr( &function_f4a61e6a ) );
     behaviortreenetworkutility::registerbehaviortreescriptapi( #"hash_5800441474109ca6", &function_f4a61e6a );
-    animationstatenetwork::registernotetrackhandlerfunction( "hit_ground", &function_85e8940a );
+    animationstatenetwork::registernotetrackhandlerfunction( "hit_ground", &brutusgroundslam );
     animationstatenetwork::registernotetrackhandlerfunction( "locked", &brutuslockdownstub );
     animationstatenetwork::registeranimationmocomp( "mocomp_purchase_lockdown@brutus", &function_14ed6be, undefined, undefined );
     assert( isscriptfunctionptr( &function_3c3e6f4a ) );
@@ -723,7 +723,7 @@ function private function_f4a61e6a( entity )
 // Params 1, eflags: 0x4
 // Checksum 0x3ddcf9b9, Offset: 0x2820
 // Size: 0x3a0
-function private function_85e8940a( entity )
+function private brutusgroundslam( entity )
 {
     players = getplayers();
     zombies = getaiteamarray( level.zombie_team );
@@ -731,7 +731,7 @@ function private function_85e8940a( entity )
     ents = arraysortclosest( ents, entity.origin, undefined, 0, entity ai::function_9139c839().var_1709a39 );
     shock_status_effect = getstatuseffect( #"shock_zm_trap" );
     entity clientfield::increment( "brutus_shock_attack", 1 );
-    level notify( #"hash_7a4ba7676000c3c6", { #brutus:self } );
+    level notify( #"brutus_ground_slam", { #brutus:self } );
     
     foreach ( ent in ents )
     {
@@ -747,7 +747,7 @@ function private function_85e8940a( entity )
                 continue;
             }
             
-            damage = mapfloat( entity getpathfindingradius() + 15, entity ai::function_9139c839().var_1709a39, entity ai::function_9139c839().var_7ea758e1, 0, distance( entity.origin, ent.origin ) );
+            damage = mapfloat( entity getpathfindingradius() + 15, entity ai::function_9139c839().var_1709a39, entity ai::function_9139c839().shockattackdamage, 0, distance( entity.origin, ent.origin ) );
             damage = int( max( 10, damage ) );
             ent dodamage( damage, entity.origin, entity, entity, "none" );
             ent status_effect::status_effect_apply( shock_status_effect, undefined, self, 0 );

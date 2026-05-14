@@ -1,7 +1,7 @@
 {
     "gameobjecttype": "use",
     "support_allow_weapons": 0,
-    "str_hint": "localized17#hash_39031c6cdac0f6ad",
+    "str_hint": "localized17#objectives_gameobject_battery",
     "slayer_carrier_speed_slow": 1,
     "hash_e45035d4": 0,
     "support_carrier_speed_slow": 1,

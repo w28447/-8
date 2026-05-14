@@ -52,7 +52,7 @@ CoD.ChallengesSummaryDarkOps_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local Icon = LUI.UIImage.new( 0.5, 0.5, -85, 85, 0.5, 0.5, -111, 59 )
 	Icon:setScale( 0.75, 0.75 )
-	Icon:setImage( RegisterImage( 0xDF1AC892A896FAF ) )
+	Icon:setImage( RegisterImage( "t7_icons_challenges_mp_darkops" ) )
 	self:addElement( Icon )
 	self.Icon = Icon
 	

@@ -500,16 +500,16 @@ function function_7314957c( player, result )
     }
     
     timeplayed = game.timepassed / 1000;
-    var_906bdcf3 = spawnstruct();
-    var_906bdcf3.match_id = getdemofileid();
-    var_906bdcf3.game_variant = "zm";
-    var_906bdcf3.game_mode = level.gametype;
-    var_906bdcf3.private_match = sessionmodeisprivate();
-    var_906bdcf3.game_map = util::get_map_name();
-    var_906bdcf3.player_xuid = player getxuid( 1 );
-    var_906bdcf3.player_ip = player getipaddress();
-    var_906bdcf3.season_pass_owned = player hasseasonpass( 0 );
-    var_906bdcf3.dlc_owned = player getdlcavailable();
+    end_match_info = spawnstruct();
+    end_match_info.match_id = getdemofileid();
+    end_match_info.game_variant = "zm";
+    end_match_info.game_mode = level.gametype;
+    end_match_info.private_match = sessionmodeisprivate();
+    end_match_info.game_map = util::get_map_name();
+    end_match_info.player_xuid = player getxuid( 1 );
+    end_match_info.player_ip = player getipaddress();
+    end_match_info.season_pass_owned = player hasseasonpass( 0 );
+    end_match_info.dlc_owned = player getdlcavailable();
     var_811ed119 = spawnstruct();
     var_811ed119.match_kills = player.kills;
     var_811ed119.match_deaths = player.deaths;
@@ -536,7 +536,7 @@ function function_7314957c( player, result )
     end_match_zm.revives = player player::function_2abc116( "revives" );
     end_match_zm.doors = player player::function_2abc116( "doors_purchased" );
     end_match_zm.downs = player player::function_2abc116( "downs" );
-    function_92d1707f( #"dlog_event_end_match", #"hash_71960e91f80c3365", var_906bdcf3, #"hash_4682ee0eb5071d2", var_811ed119, #"end_match_loadout", end_match_loadout, #"end_match_zm", end_match_zm );
+    function_92d1707f( #"dlog_event_end_match", #"end_match_info", end_match_info, #"hash_4682ee0eb5071d2", var_811ed119, #"end_match_loadout", end_match_loadout, #"end_match_zm", end_match_zm );
 }
 
 // Namespace globallogic_player/globallogic_player

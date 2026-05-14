@@ -51,7 +51,7 @@ CoD[0xF9CFD00690D1FA7].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local hubcaps = LUI.UIImage.new( 0, 0, 697, 851, 0, 0, 119, 232 )
 	hubcaps:setScale( 0.75, 0.75 )
-	hubcaps:setImage( RegisterImage( 0xBF478D29875A9B7 ) )
+	hubcaps:setImage( RegisterImage( "uie_hubcaps" ) )
 	hubcaps:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD526D3FD71F281 ) )
 	hubcaps:setShaderVector( 0, 0, 2, 0, 0 )
 	hubcaps:setShaderVector( 1, 0, 0, 0, 0 )

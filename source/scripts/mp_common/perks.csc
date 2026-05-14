@@ -625,7 +625,7 @@ function function_365c39ef( awareness_action, bundle )
             return bundle.var_6ae8117c;
         case #"doublejump_boosted":
             return bundle.var_37bac39d;
-        case #"hash_589eac8b592bcb4d":
+        case #"melee_missed":
             return bundle.var_3b22f5be;
         case #"weapon_fired":
             return bundle.var_abea5dd8;
@@ -664,7 +664,7 @@ function monitor_detectnearbyenemies( local_client_num )
     while ( true )
     {
         /#
-            if ( getdvarint( #"hash_340cb17d497f0877", 0 ) > 0 )
+            if ( getdvarint( #"live_update_awareness", 0 ) > 0 )
             {
                 level.var_6fc25f5c = getscriptbundle( #"awareness" );
                 var_55336d8d = level.var_6fc25f5c;

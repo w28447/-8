@@ -22,7 +22,7 @@ CoD[0xDF24394E064A5D7].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local swordSheen = LUI.UIImage.new( 0, 0, 643, 707, 0, 0, 0, 240 )
 	swordSheen:setAlpha( 0.15 )
-	swordSheen:setImage( RegisterImage( 0x58441FFB2F0BD7C ) )
+	swordSheen:setImage( RegisterImage( "uie_ui_icon_callingcards_mp_100percent_sword_shine" ) )
 	swordSheen:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	swordSheen:setShaderVector( 0, 0, 4, 0, 0 )
 	swordSheen:setShaderVector( 1, 2, 0, 0, 0 )

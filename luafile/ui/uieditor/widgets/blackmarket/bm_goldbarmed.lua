@@ -16,7 +16,7 @@ CoD.BM_GoldBarMed.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	self.backing = backing
 	
 	local skull = LUI.UIImage.new( 0.5, 0.5, -32, 32, 0.5, 0.5, -32, 32 )
-	skull:setImage( RegisterImage( 0x5B182E59E86600C ) )
+	skull:setImage( RegisterImage( "ui_icon_blackmarket_lockskull_128" ) )
 	self:addElement( skull )
 	self.skull = skull
 	

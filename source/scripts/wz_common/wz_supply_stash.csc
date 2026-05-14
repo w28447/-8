@@ -32,7 +32,7 @@ function __init__()
 // Size: 0x124
 function private on_localclient_connect( localclientnum )
 {
-    if ( isdefined( getgametypesetting( #"wzenablebountyhuntervehicles" ) ) && getgametypesetting( #"wzenablebountyhuntervehicles" ) || isdefined( getgametypesetting( #"hash_23e09b48546a7e3b" ) ) && getgametypesetting( #"hash_23e09b48546a7e3b" ) )
+    if ( isdefined( getgametypesetting( #"wzenablebountyhuntervehicles" ) ) && getgametypesetting( #"wzenablebountyhuntervehicles" ) || isdefined( getgametypesetting( #"wzheavymetalheroesvehicles" ) ) && getgametypesetting( #"wzheavymetalheroesvehicles" ) )
     {
         level thread function_53d906fd( localclientnum );
         return;

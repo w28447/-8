@@ -13,7 +13,7 @@ CoD.VehicleGround_HashText.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local Arrow = LUI.UIImage.new( 0.5, 0.5, -30, -6, 0.5, 0.5, -11, 5 )
 	Arrow:setRGB( 0.8, 0.82, 0.87 )
 	Arrow:setZRot( -90 )
-	Arrow:setImage( RegisterImage( 0x37605B8A38BAC3B ) )
+	Arrow:setImage( RegisterImage( "uie_t7_cp_hud_woundedsoldier_arrowt" ) )
 	self:addElement( Arrow )
 	self.Arrow = Arrow
 	

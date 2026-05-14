@@ -4,7 +4,7 @@
     "displayname": "#zmweapon/tr_midburst_t8_upgraded",
     "xhash_60": "#hash_63911714bbfffc18",
     "weapon70": "#tr_midburst_t8",
-    "streamkey": "#hash_7518b9255a78a024",
+    "streamkey": "#tr_midburst_t8_upgraded_soundbank",
     "scrstr_8c8": [
         "tag_cap_plug",
         "tag_flap_lft_lrg_stock_01_pba",
@@ -74,7 +74,7 @@
     "sound210": "#hash_271370c5b9078536",
     "sound240": "#hash_474a10cd847c7803",
     "sound250": "#hash_146e19cd67fe19de",
-    "sound260": "#hash_515f54aa1f553686",
+    "sound260": "#prj_crack_supersonic",
     "sound5e0": "#fly_scope_zoom",
     "sound600": "#hash_209cb2974ae55ec0",
     "sound610": "#hash_209cb2974ae55ec0",
@@ -87,7 +87,7 @@
     "weaponIconXCam": "#hash_92ae1b2ebc36aaf5",
     "attachments": [
         "#hash_f459a0af8e8f912b",
-        "#hash_2bd64b9e627a70cf"
+        "#acog_tr_upgraded"
     ],
     "attachmentUniques": [
         "#hash_e3b87eeb6af836fb",

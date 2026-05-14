@@ -77,7 +77,7 @@ LUI.createMenu.LeaguePlayOverview = function ( f1_arg0, f1_arg1 )
 	
 	local AARPerformBg = LUI.UIImage.new( 0.5, 0.5, -960, 960, 0.5, 0.5, -489.5, -96.5 )
 	AARPerformBg:setAlpha( 0.5 )
-	AARPerformBg:setImage( RegisterImage( 0xF95A1671A1AB874 ) )
+	AARPerformBg:setImage( RegisterImage( "uie_ui_menu_aar_perform_repeat_bg" ) )
 	AARPerformBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	AARPerformBg:setShaderVector( 0, 0, 0, 0, 0 )
 	AARPerformBg:setupNineSliceShader( 344, 136 )

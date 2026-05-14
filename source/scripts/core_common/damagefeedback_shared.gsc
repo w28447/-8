@@ -162,11 +162,11 @@ function hit_alert_sfx_mp( mod, inflictor, perkfeedback, weapon, victim, psoffse
         }
         else if ( weapon.name == #"waterballoon" )
         {
-            hitalias = #"hash_1fd605562fb1fd3a";
+            hitalias = #"mpl_hit_alert_waterball";
         }
         else if ( isvehicle( victim ) )
         {
-            hitalias = #"hash_2ce81d103e923201";
+            hitalias = #"mpl_hit_vehicle";
         }
         else if ( isdefined( victim ) && isdefined( victim.victimsoundmod ) )
         {
@@ -176,7 +176,7 @@ function hit_alert_sfx_mp( mod, inflictor, perkfeedback, weapon, victim, psoffse
                     hitalias = #"mpl_hit_alert_escort";
                     break;
                 case #"vehicle":
-                    hitalias = #"hash_2ce81d103e923201";
+                    hitalias = #"mpl_hit_vehicle";
                     break;
                 default:
                     hitalias = #"mpl_hit_alert";

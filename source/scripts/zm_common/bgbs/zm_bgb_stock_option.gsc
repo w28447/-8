@@ -69,7 +69,7 @@ function enable()
 function disable()
 {
     self endon( #"disconnect" );
-    self notify( #"hash_120ea24fd48cb17a" );
+    self notify( #"disable_stock_option" );
     wait 0.1;
     
     if ( self hasperk( "specialty_ammodrainsfromstockfirst" ) )
@@ -100,7 +100,7 @@ function validation()
 // Size: 0x1b0
 function function_1ff1beff()
 {
-    self endon( #"disconnect", #"player_downed", #"hash_120ea24fd48cb17a" );
+    self endon( #"disconnect", #"player_downed", #"disable_stock_option" );
     w_current = self getcurrentweapon();
     
     if ( !( isdefined( w_current.isheroweapon ) && w_current.isheroweapon ) && !zm_weapons::is_wonder_weapon( w_current ) )

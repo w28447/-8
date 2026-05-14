@@ -187,39 +187,39 @@ function get_location_string( e_player )
     switch ( str_zone )
     {
         case #"zone_floor2_bedroom":
-            str_display = #"hash_5b174f0e82a56362";
+            str_display = #"zm_mansion/location_floor2_bedroom";
             break;
         case #"zone_floor2_trophy_room":
-            str_display = #"hash_799f29c8059bb492";
+            str_display = #"zm_mansion/location_floor2_trophy_room";
             break;
         case #"zone_hallway_to_bedroom":
             str_display = #"hash_39314f35659fff4b";
             break;
         case #"zone_cellar":
-            str_display = #"hash_5d4530599612a24a";
+            str_display = #"zm_mansion/location_cellar";
             break;
         case #"zone_cemetery_path_right":
         case #"zone_cemetery_entrance":
         case #"zone_cemetery_path_left":
-            str_display = #"hash_5141bcb2e5b72c28";
+            str_display = #"zm_mansion/location_cemetery_entrance";
             break;
         case #"zone_cemetery_graveyard":
-            str_display = #"hash_b91dba12f5681cb";
+            str_display = #"zm_mansion/location_cemetery_graveyard";
             break;
         case #"zone_cemetery_mausoleum":
-            str_display = #"hash_336573cc6209fb70";
+            str_display = #"zm_mansion/location_cemetery_mausoleum";
             break;
         case #"zone_entrance_hall":
-            str_display = #"hash_294db47b299baf9f";
+            str_display = #"zm_mansion/location_entrance_hall";
             break;
         case #"zone_dining_hallway":
-            str_display = #"hash_cc69f561c03e329";
+            str_display = #"zm_mansion/location_dining_hallway";
             break;
         case #"zone_trophy_to_dining_stairs":
-            str_display = #"hash_7085496da10debc3";
+            str_display = #"zm_mansion/location_trophy_to_dining";
             break;
         case #"zone_dining_room":
-            str_display = #"hash_4cfb09573e278f6a";
+            str_display = #"zm_mansion/location_dining_room";
             break;
         case #"zone_foyer_east":
             str_display = #"hash_2d30bd945675677f";
@@ -234,64 +234,64 @@ function get_location_string( e_player )
             str_display = #"hash_47b54639df53d26e";
             break;
         case #"zone_forest_entrance":
-            str_display = #"hash_4d0468edce809e3b";
+            str_display = #"zm_mansion/location_forest_entrance";
             break;
         case #"zone_forest_center":
         case #"zone_forest_n":
         case #"zone_forest_s":
-            str_display = #"hash_1b96528add0fc9c0";
+            str_display = #"zm_mansion/location_forest";
             break;
         case #"zone_greenhouse_entrance":
-            str_display = #"hash_3ea748d6a647de7b";
+            str_display = #"zm_mansion/location_greenhouse_entrance";
             break;
         case #"zone_greenhouse_lab":
-            str_display = #"hash_4fa0217a1bf4ccdc";
+            str_display = #"zm_mansion/location_greenhouse_lab";
             break;
         case #"zone_sidegarden_right":
-            str_display = #"hash_14a22fcc9cae07e";
+            str_display = #"zm_mansion/location_sidegarden_right";
             break;
         case #"zone_library":
             str_display = #"hash_430969697efda742";
             break;
         case #"zone_library_upper":
-            str_display = #"hash_75a8495d302e976f";
+            str_display = #"zm_mansion/location_library_upper";
             break;
         case #"zone_library_hallway_lower":
-            str_display = #"hash_4c90c8d92a3dcb37";
+            str_display = #"zm_mansion/location_library_hallway_lower";
             break;
         case #"zone_library_hallway_upper":
-            str_display = #"hash_4e4c72cec577f4b6";
+            str_display = #"zm_mansion/location_library_hallway_upper";
             break;
         case #"zone_main_hall":
-            str_display = #"hash_41d4a90493982b62";
+            str_display = #"zm_mansion/location_main_hall";
             break;
         case #"zone_main_hall_north":
-            str_display = #"hash_2bad94e7d912ccc6";
+            str_display = #"zm_mansion/location_main_hall_north";
             break;
         case #"zone_grand_staircase":
-            str_display = #"hash_7a3ea6bcf44cfc17";
+            str_display = #"zm_mansion/location_grand_staircase";
             break;
         case #"zone_start_east":
         case #"zone_start_west":
             str_display = #"hash_1ac770988eda8b85";
             break;
         case #"zone_start_corner_east":
-            str_display = #"hash_2dbd7524c1dc4b3f";
+            str_display = #"zm_mansion/location_start_corner_east";
             break;
         case #"zone_start_corner_west":
-            str_display = #"hash_3d345090017751d5";
+            str_display = #"zm_mansion/location_start_corner_west";
             break;
         case #"zone_start_room_west":
-            str_display = #"hash_1da61d307197c763";
+            str_display = #"zm_mansion/location_start_room_west";
             break;
         case #"zone_arena":
-            str_display = #"hash_517224645b7ac008";
+            str_display = #"zm_mansion/location_arena";
             break;
         case #"zone_underground":
-            str_display = #"hash_ce97d364ff4b9c6";
+            str_display = #"zm_mansion/location_underground";
             break;
         default:
-            str_display = #"hash_33c27ddc507381e3";
+            str_display = #"zm_mansion/location_undefined";
             break;
     }
     
@@ -304,16 +304,16 @@ function get_location_string( e_player )
 // Size: 0x214
 function function_17ac86f7()
 {
-    self thread zm_audio::function_713192b1( #"hash_4cfb09573e278f6a", #"dining_room" );
-    self thread zm_audio::function_713192b1( #"hash_14a22fcc9cae07e", #"garden" );
-    self thread zm_audio::function_713192b1( #"hash_4e4c72cec577f4b6", #"billiards_room" );
-    self thread zm_audio::function_713192b1( #"hash_1b96528add0fc9c0", #"forest" );
-    self thread zm_audio::function_713192b1( #"hash_b91dba12f5681cb", #"cemetary" );
-    self thread zm_audio::function_713192b1( #"hash_517224645b7ac008", #"druid_arena" );
-    self thread zm_audio::function_713192b1( #"hash_ce97d364ff4b9c6", #"catacomb" );
-    self thread zm_audio::function_713192b1( #"hash_4fa0217a1bf4ccdc", #"greenhouse" );
+    self thread zm_audio::function_713192b1( #"zm_mansion/location_dining_room", #"dining_room" );
+    self thread zm_audio::function_713192b1( #"zm_mansion/location_sidegarden_right", #"garden" );
+    self thread zm_audio::function_713192b1( #"zm_mansion/location_library_hallway_upper", #"billiards_room" );
+    self thread zm_audio::function_713192b1( #"zm_mansion/location_forest", #"forest" );
+    self thread zm_audio::function_713192b1( #"zm_mansion/location_cemetery_graveyard", #"cemetary" );
+    self thread zm_audio::function_713192b1( #"zm_mansion/location_arena", #"druid_arena" );
+    self thread zm_audio::function_713192b1( #"zm_mansion/location_underground", #"catacomb" );
+    self thread zm_audio::function_713192b1( #"zm_mansion/location_greenhouse_lab", #"greenhouse" );
     self thread zm_audio::function_713192b1( #"hash_430969697efda742", #"library" );
-    self thread zm_audio::function_713192b1( #"hash_41d4a90493982b62", #"main_hall" );
-    self thread zm_audio::function_713192b1( #"hash_5b174f0e82a56362", #"master_bed" );
+    self thread zm_audio::function_713192b1( #"zm_mansion/location_main_hall", #"main_hall" );
+    self thread zm_audio::function_713192b1( #"zm_mansion/location_floor2_bedroom", #"master_bed" );
 }
 

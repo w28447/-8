@@ -1254,10 +1254,10 @@ function private function_7706a6fa( commander )
         var_31b80437 = tolower( var_832340f2 );
         components = array();
         var_35301d62 = array();
-        var_35301d62[ #"hash_f5c6c6aa7dc0f6d" ] = array();
-        var_35301d62[ #"hash_6e9081699001bcd9" ] = array();
-        var_35301d62[ #"hash_3bf68fbcb5c53b6c" ] = array();
-        var_35301d62[ #"hash_4984fd4b0ba666a2" ] = array();
+        var_35301d62[ #"missioncomponent_defend" ] = array();
+        var_35301d62[ #"missioncomponent_destroy" ] = array();
+        var_35301d62[ #"missioncomponent_capturearea" ] = array();
+        var_35301d62[ #"missioncomponent_goto" ] = array();
         
         foreach ( missioncomponent in level.var_8239a46c )
         {
@@ -1272,16 +1272,16 @@ function private function_7706a6fa( commander )
             
             switch ( type )
             {
-                case #"hash_f5c6c6aa7dc0f6d":
+                case #"missioncomponent_defend":
                     var_b313868d[ #"type" ] = "defend";
                     break;
-                case #"hash_6e9081699001bcd9":
+                case #"missioncomponent_destroy":
                     var_b313868d[ #"type" ] = "destroy";
                     break;
-                case #"hash_3bf68fbcb5c53b6c":
+                case #"missioncomponent_capturearea":
                     var_b313868d[ #"type" ] = "capturearea";
                     break;
-                case #"hash_4984fd4b0ba666a2":
+                case #"missioncomponent_goto":
                     if ( isdefined( component.var_c68dc48c ) || isdefined( component.var_b95bcdc6 ) )
                     {
                         var_b313868d[ #"type" ] = "goto";
@@ -1580,11 +1580,11 @@ function private function_86270cca( planner, constant )
     
     if ( getdvarint( #"hash_6cad7fcde98d23ee", 0 ) )
     {
-        var_41ecbdf4 = array();
+        pathablesquads = array();
         
         if ( !isdefined( target ) || !isarray( validsquads ) || validsquads.size <= 0 )
         {
-            planner::setblackboardattribute( planner, #"hash_1a25f2c4feaf60cf", var_41ecbdf4 );
+            planner::setblackboardattribute( planner, #"pathable_valid_squads", pathablesquads );
             return spawnstruct();
         }
         
@@ -1598,10 +1598,10 @@ function private function_86270cca( planner, constant )
                 
                 if ( pathablegameobjects.size > 0 )
                 {
-                    var_3703551e = array();
-                    var_3703551e[ #"squad" ] = squad;
-                    var_3703551e[ #"pathablegameobjects" ] = pathablegameobjects;
-                    var_41ecbdf4[ var_41ecbdf4.size ] = var_3703551e;
+                    pathablesquad = array();
+                    pathablesquad[ #"squad" ] = squad;
+                    pathablesquad[ #"pathablegameobjects" ] = pathablegameobjects;
+                    pathablesquads[ pathablesquads.size ] = pathablesquad;
                 }
             }
         }
@@ -1616,10 +1616,10 @@ function private function_86270cca( planner, constant )
                 
                 if ( pathablecomponents.size > 0 )
                 {
-                    var_3703551e = array();
-                    var_3703551e[ #"squad" ] = squad;
-                    var_3703551e[ #"pathablecomponents" ] = pathablecomponents;
-                    var_41ecbdf4[ var_41ecbdf4.size ] = var_3703551e;
+                    pathablesquad = array();
+                    pathablesquad[ #"squad" ] = squad;
+                    pathablesquad[ #"pathablecomponents" ] = pathablecomponents;
+                    pathablesquads[ pathablesquads.size ] = pathablesquad;
                 }
             }
         }
@@ -1634,28 +1634,28 @@ function private function_86270cca( planner, constant )
                 
                 if ( pathablebundles.size > 0 )
                 {
-                    var_3703551e = array();
-                    var_3703551e[ #"squad" ] = squad;
-                    var_3703551e[ #"pathablebundles" ] = pathablebundles;
-                    var_41ecbdf4[ var_41ecbdf4.size ] = var_3703551e;
+                    pathablesquad = array();
+                    pathablesquad[ #"squad" ] = squad;
+                    pathablesquad[ #"pathablebundles" ] = pathablebundles;
+                    pathablesquads[ pathablesquads.size ] = pathablesquad;
                 }
             }
         }
         
-        planner::setblackboardattribute( planner, #"hash_1a25f2c4feaf60cf", var_41ecbdf4 );
+        planner::setblackboardattribute( planner, #"pathable_valid_squads", pathablesquads );
     }
     else
     {
-        var_41ecbdf4 = array();
+        pathablesquads = array();
         
         foreach ( squad in validsquads )
         {
-            var_3703551e = array();
-            var_3703551e[ #"squad" ] = squad;
-            var_41ecbdf4[ var_41ecbdf4.size ] = var_3703551e;
+            pathablesquad = array();
+            pathablesquad[ #"squad" ] = squad;
+            pathablesquads[ pathablesquads.size ] = pathablesquad;
         }
         
-        planner::setblackboardattribute( planner, #"hash_1a25f2c4feaf60cf", var_41ecbdf4 );
+        planner::setblackboardattribute( planner, #"pathable_valid_squads", pathablesquads );
     }
     
     return spawnstruct();
@@ -2337,7 +2337,7 @@ function private function_d58b0781( planner, constants )
 // Size: 0x3a
 function private function_45f841ea( planner, constants )
 {
-    return function_faa6dd57( planner, constants, #"hash_1a25f2c4feaf60cf" );
+    return function_faa6dd57( planner, constants, #"pathable_valid_squads" );
 }
 
 // Namespace plannercommanderutility/planner_commander_utility

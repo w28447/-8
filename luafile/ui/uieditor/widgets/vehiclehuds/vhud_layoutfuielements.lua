@@ -73,7 +73,7 @@ CoD.vhud_layoutFuiElements.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.FuiTextTop = FuiTextTop
 	
 	local FuiTextTopLeft = LUI.UIImage.new( 0, 0, 8, 146, 0, 0, 23, 179 )
-	FuiTextTopLeft:setImage( RegisterImage( 0xF76E0892AF9A77E ) )
+	FuiTextTopLeft:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_fui_text_left_top" ) )
 	FuiTextTopLeft:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	FuiTextTopLeft:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiTextTopLeft )

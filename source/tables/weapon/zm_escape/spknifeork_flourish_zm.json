@@ -1,7 +1,7 @@
 {
     "name": "#spknifeork_flourish_zm",
     "baseWeapon": "#spknifeork_flourish",
-    "streamkey": "#hash_7b42fc4c1aeb7ed6",
+    "streamkey": "#spknifeork_flourish_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

@@ -41,14 +41,14 @@ CoD.MeritOverlayBoard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	PlaceBackingBot:setRGB( 0.08, 0.08, 0.08 )
 	PlaceBackingBot:setAlpha( 0.6 )
 	PlaceBackingBot:setXRot( 180 )
-	PlaceBackingBot:setImage( RegisterImage( 0xB8DD04A1F640E8C ) )
+	PlaceBackingBot:setImage( RegisterImage( "uie_ui_menu_aar_merit_side_half_bg" ) )
 	self:addElement( PlaceBackingBot )
 	self.PlaceBackingBot = PlaceBackingBot
 	
 	local PlaceBackingTop = LUI.UIImage.new( 0, 0, 300, 16, 0, 0, 33.5, 156.5 )
 	PlaceBackingTop:setRGB( 0.08, 0.08, 0.08 )
 	PlaceBackingTop:setAlpha( 0.6 )
-	PlaceBackingTop:setImage( RegisterImage( 0xB8DD04A1F640E8C ) )
+	PlaceBackingTop:setImage( RegisterImage( "uie_ui_menu_aar_merit_side_half_bg" ) )
 	self:addElement( PlaceBackingTop )
 	self.PlaceBackingTop = PlaceBackingTop
 	
@@ -76,14 +76,14 @@ CoD.MeritOverlayBoard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	MeritBackingBot:setRGB( 0, 0, 0 )
 	MeritBackingBot:setAlpha( 0.3 )
 	MeritBackingBot:setXRot( 180 )
-	MeritBackingBot:setImage( RegisterImage( 0xB8DD04A1F640E8C ) )
+	MeritBackingBot:setImage( RegisterImage( "uie_ui_menu_aar_merit_side_half_bg" ) )
 	self:addElement( MeritBackingBot )
 	self.MeritBackingBot = MeritBackingBot
 	
 	local MeritBackingTop = LUI.UIImage.new( 0, 0, 818, 1102, 0, 0, 33.5, 156.5 )
 	MeritBackingTop:setRGB( 0, 0, 0 )
 	MeritBackingTop:setAlpha( 0.3 )
-	MeritBackingTop:setImage( RegisterImage( 0xB8DD04A1F640E8C ) )
+	MeritBackingTop:setImage( RegisterImage( "uie_ui_menu_aar_merit_side_half_bg" ) )
 	self:addElement( MeritBackingTop )
 	self.MeritBackingTop = MeritBackingTop
 	
@@ -167,7 +167,7 @@ CoD.MeritOverlayBoard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local FramePlaceRight = LUI.UIImage.new( 0, 0, 661, 1115, 0, 0, 31, 272 )
 	FramePlaceRight:setAlpha( 0.2 )
 	FramePlaceRight:setZRot( 180 )
-	FramePlaceRight:setImage( RegisterImage( 0x4AEBE97B7C64301 ) )
+	FramePlaceRight:setImage( RegisterImage( "uie_ui_menu_aar_common_open_frame" ) )
 	FramePlaceRight:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FramePlaceRight:setShaderVector( 0, 0, 0, 0, 0 )
 	FramePlaceRight:setupNineSliceShader( 24, 24 )
@@ -176,7 +176,7 @@ CoD.MeritOverlayBoard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local FramePlaceLeft = LUI.UIImage.new( 0, 0, 3, 670, 0, 0, 29, 271 )
 	FramePlaceLeft:setAlpha( 0.2 )
-	FramePlaceLeft:setImage( RegisterImage( 0x4AEBE97B7C64301 ) )
+	FramePlaceLeft:setImage( RegisterImage( "uie_ui_menu_aar_common_open_frame" ) )
 	FramePlaceLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FramePlaceLeft:setShaderVector( 0, 0, 0, 0, 0 )
 	FramePlaceLeft:setupNineSliceShader( 24, 24 )
@@ -222,7 +222,7 @@ CoD.MeritOverlayBoard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local PlaceLabel = LUI.UIText.new( 0, 0.26, 110, 110, 0, 0, 6, 33 )
 	PlaceLabel:setRGB( 0.92, 0.92, 0.92 )
 	PlaceLabel:setAlpha( 0.5 )
-	PlaceLabel:setText( LocalizeToUpperString( 0x62C273392778D63 ) )
+	PlaceLabel:setText( LocalizeToUpperString( "aar/place" ) )
 	PlaceLabel:setTTF( "default" )
 	PlaceLabel:setLetterSpacing( 2 )
 	PlaceLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -240,7 +240,7 @@ CoD.MeritOverlayBoard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local DotVline01 = LUI.UIImage.new( 0, 0, 297, 301, 0, 0, 36, 216 )
 	DotVline01:setAlpha( 0.1 )
-	DotVline01:setImage( RegisterImage( 0xA203A520EC9739C ) )
+	DotVline01:setImage( RegisterImage( "uie_ui_menu_aar_common_vdotline" ) )
 	DotVline01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DotVline01:setShaderVector( 0, 0, 0, 0, 0 )
 	DotVline01:setupNineSliceShader( 4, 68 )
@@ -316,7 +316,7 @@ CoD.MeritOverlayBoard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local Vline02 = LUI.UIImage.new( 0, 0, 818, 822, 0, 0, 33, 266 )
 	Vline02:setAlpha( 0.1 )
-	Vline02:setImage( RegisterImage( 0x6927F8E2C961771 ) )
+	Vline02:setImage( RegisterImage( "uie_ui_menu_aar_common_vline" ) )
 	Vline02:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Vline02:setShaderVector( 0, 0, 0, 0, 0 )
 	Vline02:setupNineSliceShader( 2, 12 )
@@ -325,7 +325,7 @@ CoD.MeritOverlayBoard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local Vline01 = LUI.UIImage.new( 0, 0, 664, 668, 0, 0, 33, 265 )
 	Vline01:setAlpha( 0.1 )
-	Vline01:setImage( RegisterImage( 0x6927F8E2C961771 ) )
+	Vline01:setImage( RegisterImage( "uie_ui_menu_aar_common_vline" ) )
 	Vline01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Vline01:setShaderVector( 0, 0, 0, 0, 0 )
 	Vline01:setupNineSliceShader( 2, 12 )

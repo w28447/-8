@@ -52,7 +52,7 @@ CoD.Barracks_StatsOverview_ZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	TimePlayedText:setRGB( 0.92, 0.92, 0.92 )
 	TimePlayedText:setAlpha( 0.5 )
 	TimePlayedText.__String_Reference = function ()
-		TimePlayedText:setText( SecondsAsTimePlayedString( CoD.PlayerStatsUtility.GetPlayerStorageStat( f1_arg0, 0x3BF15114F02AF7B, 0x0 ) ) )
+		TimePlayedText:setText( SecondsAsTimePlayedString( CoD.PlayerStatsUtility.GetPlayerStorageStat( f1_arg0, "time_played_total", 0x0 ) ) )
 	end
 	
 	TimePlayedText.__String_Reference()
@@ -82,7 +82,7 @@ CoD.Barracks_StatsOverview_ZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local Headshots = CoD.PlayerStatsMain.new( f1_arg0, f1_arg1, 0, 0, 15.5, 215.5, 0, 0, 194, 261 )
 	Headshots.StatValue:setText( CoD.PlayerStatsUtility.GetGameModePlayerStorageStat( f1_arg1, f1_arg0, CoD.PlayerStatsUtility.ZMGameModeTable, 0x4E570D3CBD6AFF0, 11235 ) )
-	Headshots.StatHeaderText:setText( Engine[0xF9F1239CFD921FE]( 0x8E2A982E7E6C57A ) )
+	Headshots.StatHeaderText:setText( Engine[0xF9F1239CFD921FE]( "zmui/headshots_caps" ) )
 	self:addElement( Headshots )
 	self.Headshots = Headshots
 	

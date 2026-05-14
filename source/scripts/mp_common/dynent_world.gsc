@@ -237,7 +237,7 @@ function private function_2f394f36()
     trigger.var_a9309589 = var_c61b7280;
     trigger.dynentstate = state;
     bundle = function_489009c1( var_c61b7280 );
-    v_offset = ( isdefined( bundle.var_aa0fba03 ) ? bundle.var_aa0fba03 : 0, isdefined( bundle.var_f8525687 ) ? bundle.var_f8525687 : 0, isdefined( bundle.var_54b28eee ) ? bundle.var_54b28eee : 0 );
+    v_offset = ( isdefined( bundle.use_trigger_offset_x ) ? bundle.use_trigger_offset_x : 0, isdefined( bundle.use_trigger_offset_y ) ? bundle.use_trigger_offset_y : 0, isdefined( bundle.use_trigger_offset_z ) ? bundle.use_trigger_offset_z : 0 );
     v_offset = rotatepoint( v_offset, var_c61b7280.angles );
     trigger.origin = var_c61b7280.origin + v_offset;
     trigger.usetime = isdefined( bundle.use_time ) ? bundle.use_time : 0;
@@ -405,7 +405,7 @@ function use_dynent( dynent, activator )
     if ( isdefined( bundle ) && isdefined( bundle.dynentstates ) && isdefined( bundle.dynentstates[ stateindex ] ) )
     {
         state = bundle.dynentstates[ stateindex ];
-        var_9bdcfcd8 = isdefined( state.var_8a7fcb87 ) ? state.var_8a7fcb87 : 0;
+        var_9bdcfcd8 = isdefined( state.state_on_interact ) ? state.state_on_interact : 0;
         
         if ( isdefined( activator ) )
         {
@@ -415,11 +415,11 @@ function use_dynent( dynent, activator )
             
             if ( dot > 0 )
             {
-                var_9bdcfcd8 = isdefined( state.var_8a7fcb87 ) ? state.var_8a7fcb87 : 0;
+                var_9bdcfcd8 = isdefined( state.state_on_interact ) ? state.state_on_interact : 0;
             }
             else
             {
-                var_9bdcfcd8 = isdefined( state.var_afc94db1 ) ? state.var_afc94db1 : 0;
+                var_9bdcfcd8 = isdefined( state.state_on_facing ) ? state.state_on_facing : 0;
             }
         }
         

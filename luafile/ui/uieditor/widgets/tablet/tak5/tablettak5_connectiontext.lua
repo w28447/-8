@@ -31,12 +31,12 @@ CoD.TabletTak5_ConnectionText.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.ConnectionAdd = ConnectionAdd
 	
 	local ConnectionData = LUI.UIImage.new( 0, 0, 16, 144, 0, 0, 9, 23 )
-	ConnectionData:setImage( RegisterImage( 0x8E347AC2B6C1AAA ) )
+	ConnectionData:setImage( RegisterImage( "uie_ui_hud_tak5_data_normal" ) )
 	self:addElement( ConnectionData )
 	self.ConnectionData = ConnectionData
 	
 	local ConnectionDataAdd = LUI.UIImage.new( 0, 0, 16, 144, 0, 0, 9, 23 )
-	ConnectionDataAdd:setImage( RegisterImage( 0x8E347AC2B6C1AAA ) )
+	ConnectionDataAdd:setImage( RegisterImage( "uie_ui_hud_tak5_data_normal" ) )
 	ConnectionDataAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	ConnectionDataAdd:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( ConnectionDataAdd )

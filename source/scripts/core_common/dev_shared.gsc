@@ -253,7 +253,7 @@
                         setdvar( #"r_umbranumthreads", 1 );
                         setdvar( #"r_umbradistancescale", 0.1 );
                         setdvar( #"r_uselensfov", 0 );
-                        setdvar( #"hash_5ee9a4ac16993e50", 1 );
+                        setdvar( #"r_developer", 1 );
                         setdvar( #"debug_show_viewpos", 0 );
                         thread drawminimapbounds( viewpos, mincorner, maxcorner );
                     }

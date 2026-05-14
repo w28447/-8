@@ -1,7 +1,7 @@
 {
     "hash_dfedf08e": 0,
     "categoryindex": 0,
-    "description": "localized17#hash_571a8603a8bbb49",
+    "description": "localized17#menu/mute_all_except_party_option_desc",
     "menu/on": "localized17#menu/on",
     "hash_10e01ad5": 0,
     "iscategory": 0,
@@ -21,7 +21,7 @@
     "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "mute_all_except_party",
-    "displayname": "localized17#hash_7c38774888e8f257",
+    "displayname": "localized17#menu/mute_all_except_party_option",
     "rangestartvalue": 0,
     "isdisabled": 0,
     "hash_d6897f56": 0,

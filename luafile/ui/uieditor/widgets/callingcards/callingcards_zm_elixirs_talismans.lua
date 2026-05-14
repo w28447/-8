@@ -26,7 +26,7 @@ CoD[0x2991D141DEC107A].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.zombies = zombies
 	
 	local wires = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	wires:setImage( RegisterImage( 0x57996D2145E9AAC ) )
+	wires:setImage( RegisterImage( "uie_ui_icon_callingcards_zm_elixirs_talismans_wires" ) )
 	self:addElement( wires )
 	self.wires = wires
 	

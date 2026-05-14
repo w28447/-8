@@ -18,7 +18,7 @@ CoD.OverheadName_Killcam_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.YouCircle = YouCircle
 	
 	local YouText = LUI.UIText.new( 0, 0, 71, 129, 0, 0, -49.5, -28.5 )
-	YouText:setText( LocalizeToUpperString( 0x4657C39C60632A0 ) )
+	YouText:setText( LocalizeToUpperString( "wz/you" ) )
 	YouText:setTTF( "default" )
 	YouText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	YouText:setAlignment( Enum.LUIAlignment[0x6ED4298C93DC5ED] )

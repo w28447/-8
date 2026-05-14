@@ -16,7 +16,7 @@ CoD.WZKillcamCompass.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local WZBacker = LUI.UIImage.new( 0.5, 0.5, -160, 160, 0.5, 0.5, -156, 156 )
-	WZBacker:setImage( RegisterImage( 0xB2E3E92561D4EB9 ) )
+	WZBacker:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_map_square_backer" ) )
 	self:addElement( WZBacker )
 	self.WZBacker = WZBacker
 	

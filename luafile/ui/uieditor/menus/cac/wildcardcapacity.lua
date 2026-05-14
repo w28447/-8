@@ -24,7 +24,7 @@ LUI.createMenu.WildcardCapacity = function ( f1_arg0, f1_arg1 )
 	
 	local Title = LUI.UIText.new( 0, 0, 154, 1173, 0, 0, 186, 245 )
 	Title:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	Title:setText( LocalizeToUpperString( 0xE2C3AE1D6F2A2A3 ) )
+	Title:setText( LocalizeToUpperString( "menu/too_many_wildcards" ) )
 	Title:setTTF( "ttmussels_demibold" )
 	Title:setLetterSpacing( 6 )
 	Title:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

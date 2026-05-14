@@ -10,7 +10,7 @@ CoD.Social_PlayersListButton_JoinAndInviteButton.new = function ( f1_arg0, f1_ar
 	
 	local joinableIcon = LUI.UIImage.new( 1, 1, -24, 0, 0.5, 0.5, -18, 18 )
 	joinableIcon:setRGB( 0.87, 0.9, 0.9 )
-	joinableIcon:setImage( RegisterImage( 0xD3145ED87B4F77F ) )
+	joinableIcon:setImage( RegisterImage( "uie_t7_menu_frontend_iconjoinable" ) )
 	joinableIcon:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE8F55203998700A ) )
 	self:addElement( joinableIcon )
 	self.joinableIcon = joinableIcon

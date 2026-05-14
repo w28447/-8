@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_zapoc_roadwarrior_unicycle",
+    "type": "#gesture",
+    "gesture": "#hash_4a0b62b78ef7b9f7",
+    "gesture2": "#hash_68b9c8dc0bd960c0",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/speed_demon",
+        "icon": "image#ui_icon_emotes_unicycle",
+        "isdefault": 0
+    }
+}

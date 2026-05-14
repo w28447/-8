@@ -4,7 +4,7 @@
     "displayname": "#zmweapon/tr_longburst_t8_upgraded",
     "xhash_60": "#hash_7f5fb85f5b58ed0e",
     "weapon70": "#tr_longburst_t8",
-    "streamkey": "#hash_4bf084c92856fd78",
+    "streamkey": "#tr_longburst_t8_upgraded_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -63,7 +63,7 @@
     "sound210": "#hash_271370c5b9078536",
     "sound240": "#hash_474a10cd847c7803",
     "sound250": "#hash_146e19cd67fe19de",
-    "sound260": "#hash_515f54aa1f553686",
+    "sound260": "#prj_crack_supersonic",
     "sound600": "#hash_209cb2974ae55ec0",
     "sound610": "#hash_209cb2974ae55ec0",
     "sound800": "#hash_5ee962527afebfb1",
@@ -75,7 +75,7 @@
     "weaponIconXCam": "#hash_c0dc0f5074bce9d3",
     "attachments": [
         "#hash_f459a0af8e8f912b",
-        "#hash_2bd64b9e627a70cf"
+        "#acog_tr_upgraded"
     ],
     "attachmentUniques": [
         "#hash_fc7714ac7bb56d95",

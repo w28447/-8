@@ -128,7 +128,7 @@ CoD.ProximityAlarm.__clipsPerState = {
 			f10_arg0.ProximityAlarm:completeAnimation()
 			f10_arg0.ProximityAlarm.text:completeAnimation()
 			f10_arg0.ProximityAlarm:setAlpha( 0 )
-			f10_arg0.ProximityAlarm.text:setText( Engine[0xF9F1239CFD921FE]( 0x6D07C2DB72A2619 ) )
+			f10_arg0.ProximityAlarm.text:setText( Engine[0xF9F1239CFD921FE]( "weapon/c4_armed" ) )
 			f10_arg0.clipFinished( f10_arg0.ProximityAlarm )
 		end,
 		DefaultState = function ( f11_arg0, f11_arg1 )
@@ -200,7 +200,7 @@ CoD.ProximityAlarm.__clipsPerState = {
 			f18_arg0.ProximityAlarm:completeAnimation()
 			f18_arg0.ProximityAlarm.text:completeAnimation()
 			f18_arg0.ProximityAlarm:setAlpha( 0 )
-			f18_arg0.ProximityAlarm.text:setText( Engine[0xF9F1239CFD921FE]( 0xFCEDC5C8AC323F8 ) )
+			f18_arg0.ProximityAlarm.text:setText( Engine[0xF9F1239CFD921FE]( "weapon/alarm_set" ) )
 			f18_arg0.clipFinished( f18_arg0.ProximityAlarm )
 		end,
 		DefaultState = function ( f19_arg0, f19_arg1 )

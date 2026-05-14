@@ -215,15 +215,15 @@ function removearmor()
 // Size: 0x54
 function private function_c6de6bdd()
 {
-    self menus::register_menu_response_callback( "BountyHunterBuy", &function_40eb02fc );
-    self menus::register_menu_response_callback( "BountyHunterPackageSelect", &function_40eb02fc );
+    self menus::register_menu_response_callback( "BountyHunterBuy", &buy_package );
+    self menus::register_menu_response_callback( "BountyHunterPackageSelect", &buy_package );
 }
 
 // Namespace dynamic_loadout/dynamic_loadout
 // Params 2, eflags: 0x4
 // Checksum 0xc57d2bc1, Offset: 0xfe8
 // Size: 0x58c
-function private function_40eb02fc( response, intpayload )
+function private buy_package( response, intpayload )
 {
     if ( !isdefined( intpayload ) )
     {
@@ -245,65 +245,65 @@ function private function_40eb02fc( response, intpayload )
     
     switch ( response )
     {
-        case #"hash_28554ae159269915":
+        case #"buy_package_primary":
             clientfield = "luielement.BountyHunterLoadout.primary";
             slot = 0;
             break;
-        case #"hash_c785a629253dcd5":
+        case #"buy_package_secondary":
             clientfield = "luielement.BountyHunterLoadout.secondary";
             slot = 1;
             break;
-        case #"hash_390a1acd2edcd5b7":
+        case #"buy_package_primary_attachment_1":
             var_e120a933 = 1;
             clientfield = "luielement.BountyHunterLoadout.primaryAttachmentTrack.tierPurchased";
             slot = 11;
             break;
-        case #"hash_390a1bcd2edcd76a":
+        case #"buy_package_primary_attachment_2":
             var_e120a933 = 2;
             clientfield = "luielement.BountyHunterLoadout.primaryAttachmentTrack.tierPurchased";
             slot = 11;
             break;
-        case #"hash_390a1ccd2edcd91d":
+        case #"buy_package_primary_attachment_3":
             var_e120a933 = 3;
             clientfield = "luielement.BountyHunterLoadout.primaryAttachmentTrack.tierPurchased";
             slot = 11;
             break;
-        case #"hash_2acbda1102e614f7":
+        case #"buy_package_secondary_attachment_1":
             var_e120a933 = 1;
             clientfield = "luielement.BountyHunterLoadout.secondaryAttachmentTrack.tierPurchased";
             slot = 12;
             break;
-        case #"hash_2acbdb1102e616aa":
+        case #"buy_package_secondary_attachment_2":
             var_e120a933 = 2;
             clientfield = "luielement.BountyHunterLoadout.secondaryAttachmentTrack.tierPurchased";
             slot = 12;
             break;
-        case #"hash_2acbdc1102e6185d":
+        case #"buy_package_secondary_attachment_3":
             var_e120a933 = 3;
             clientfield = "luielement.BountyHunterLoadout.secondaryAttachmentTrack.tierPurchased";
             slot = 12;
             break;
-        case #"hash_7760a837c6f81098":
+        case #"buy_package_armor":
             clientfield = "luielement.BountyHunterLoadout.armor";
             slot = 5;
             break;
-        case #"hash_46637ad5c1dd8390":
+        case #"buy_package_mobility":
             clientfield = "luielement.BountyHunterLoadout.mobilityTrack.tierPurchased";
             slot = 6;
             break;
-        case #"hash_603babb2a7c35420":
+        case #"buy_package_recon":
             clientfield = "luielement.BountyHunterLoadout.reconTrack.tierPurchased";
             slot = 7;
             break;
-        case #"hash_5792934483949728":
+        case #"buy_package_assault":
             clientfield = "luielement.BountyHunterLoadout.assaultTrack.tierPurchased";
             slot = 8;
             break;
-        case #"hash_265c0500ba88a4a4":
+        case #"buy_package_support":
             clientfield = "luielement.BountyHunterLoadout.supportTrack.tierPurchased";
             slot = 9;
             break;
-        case #"hash_7b3685fb5a146b83":
+        case #"buy_package_ammo":
             isammo = 1;
             
             if ( function_2b402d5d( package ) )
@@ -316,12 +316,12 @@ function private function_40eb02fc( response, intpayload )
             }
             
             break;
-        case #"hash_6e8d37dc2b55eb07":
+        case #"buy_package_scorestreak":
             isscorestreak = 1;
             clientfield = "luielement.BountyHunterLoadout.scorestreak";
             slot = 10;
             break;
-        case #"hash_45dc798feb538f7b":
+        case #"buy_package_equipment":
             clientfield = "luielement.BountyHunterLoadout.equipment";
             slot = 2;
             break;
@@ -604,7 +604,7 @@ function private function_d2f0197a()
 {
     if ( isdefined( self.pers[ #"dynamic_loadout" ].armor ) )
     {
-        self addtalent( #"hash_6be738527a4213aa" );
+        self addtalent( #"gear_armor_mp" );
         armor = self.pers[ #"dynamic_loadout" ].armor;
         self function_52630bb( armor );
         self armor::set_armor( armor.armor, armor.armor, 0, armor.var_767b7337, armor.var_782dbf79, armor.var_673a16ad, armor.var_741010b5, 1, 1, 1 );

@@ -502,7 +502,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 	},
 	RestartGamePopup = {
 		menuName = "SystemOverlay_Compact",
-		title = Engine[0xF9F1239CFD921FE]( 0xB0660C067FEB8B2 ),
+		title = Engine[0xF9F1239CFD921FE]( "menu/continue_restart" ),
 		description = Engine[0xF9F1239CFD921FE]( 0x6E41AC9D5FFDEB ),
 		categoryType = CoD.OverlayUtility.OverlayTypes.Quit,
 		listDatasource = function ()
@@ -563,8 +563,8 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 	},
 	RestartMissionPopup = {
 		menuName = "SystemOverlay_FreeCursor",
-		title = Engine[0xF9F1239CFD921FE]( 0xB0660C067FEB8B2 ),
-		description = Engine[0xF9F1239CFD921FE]( 0xA4142654C681BBB ),
+		title = Engine[0xF9F1239CFD921FE]( "menu/continue_restart" ),
+		description = Engine[0xF9F1239CFD921FE]( "menu/restart_mission_text" ),
 		categoryType = CoD.OverlayUtility.OverlayTypes.Quit,
 		[CoD.OverlayUtility.aCrossPromptFn] = function ( f52_arg0 )
 			return function ( f53_arg0, f53_arg1 )
@@ -583,7 +583,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 			end
 			
 		end,
-		[CoD.OverlayUtility.aCrossPromptText] = 0xD06CC23B526BABD,
+		[CoD.OverlayUtility.aCrossPromptText] = "menu/restart_mission_caps",
 		[CoD.OverlayUtility.bCirclePromptFn] = function ( f54_arg0 )
 			return function ( f55_arg0, f55_arg1 )
 				Engine.SetDvar( "cl_paused", 0 )
@@ -678,7 +678,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 			if f63_local1 == nil or f63_local1 == "" or f63_local1 == 0x0 then
 				local f63_local2 = Engine.GetModelValue( Engine.GetModel( f63_local0, "messageType" ) )
 				if f63_local2 == Enum.MessageDialogType[0x296CBAC6039D717] then
-					f63_local1 = 0xA63CCA126DA271B
+					f63_local1 = "menu/info"
 				elseif f63_local2 == Enum.MessageDialogType[0x8D00D07404A3DE5] then
 					f63_local1 = 0xD0CB6ADB37BED49
 				elseif f63_local2 == Enum.MessageDialogType[0x8BCCDF5038F1B0B] then
@@ -947,7 +947,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 				} )
 				table.insert( f89_local0, {
 					models = {
-						displayText = Engine[0xF9F1239CFD921FE]( 0x9E22C6CE275ABC3 )
+						displayText = Engine[0xF9F1239CFD921FE]( "menu/preview_segment" )
 					},
 					properties = {
 						action = function ( f92_arg0, f92_arg1, f92_arg2, f92_arg3, f92_arg4 )
@@ -1889,7 +1889,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 		menuName = "SystemOverlay_Full",
 		frameWidget = "CoD.systemOverlay_SaveEmblemFrame",
 		title = Engine[0xF9F1239CFD921FE]( 0xB92671421489FE1 ),
-		description = Engine[0xF9F1239CFD921FE]( 0xAAC383C11CADD1B ),
+		description = Engine[0xF9F1239CFD921FE]( "menu/save_emblem_desc" ),
 		categoryType = CoD.OverlayUtility.OverlayTypes.Save,
 		inputText = function ( f200_arg0, f200_arg1, f200_arg2, f200_arg3 )
 			if f200_arg1 then
@@ -2157,7 +2157,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 		frameWidget = "CoD.systemOverlay_DailyChallengeWarningFrame",
 		categoryType = CoD.OverlayUtility.OverlayTypes.Notice,
 		title = 0x24093201635E25B,
-		description = 0x3FFE8BBAFA58EAA,
+		description = "menu/abandon_challenge_desc",
 		listDatasource = function ()
 			DataSources.DailyChallengeWarningOverlay = DataSourceHelpers.ListSetup( "DailyChallengeWarningOverlay", function ( f225_arg0 )
 				return {
@@ -2174,7 +2174,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 					},
 					{
 						models = {
-							displayText = LocalizeToUpperString( 0x8BAF8C765361E1A )
+							displayText = LocalizeToUpperString( "menu/abandon_challenge" )
 						},
 						properties = {
 							action = function ( f227_arg0, f227_arg1, f227_arg2, f227_arg3, f227_arg4 )
@@ -2258,7 +2258,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 				if Engine[0x440310E3919716]( f237_arg0 ) then
 					table.insert( f237_local0, {
 						models = {
-							displayText = LocalizeToUpperString( 0x8BAF8C765361E1A )
+							displayText = LocalizeToUpperString( "menu/abandon_challenge" )
 						},
 						properties = {
 							action = function ( f239_arg0, f239_arg1, f239_arg2, f239_arg3, f239_arg4 )
@@ -2275,7 +2275,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 	},
 	CraftNoChangesNotification = {
 		menuName = "SystemOverlay_FreeCursor",
-		title = 0x259DC0AE25F0626,
+		title = "menu/emblem_no_changes_title",
 		description = 0x70A4BEE310634C1,
 		categoryType = CoD.OverlayUtility.OverlayTypes.GenericMessage,
 		[CoD.OverlayUtility.aCrossPromptFn] = function ( f240_arg0 )
@@ -2406,7 +2406,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 	PublisherFilesChangedPopup = {
 		menuName = "SystemOverlay_FreeCursor",
 		title = 0x41A646FD4F798CE,
-		description = 0x4E62FD61197D6DF,
+		description = "menu/refetch_wad_confirmation_message",
 		categoryType = CoD.OverlayUtility.OverlayTypes.Connection,
 		listDatasource = function ()
 			DataSources.PublisherFilesChangedPopup_List = DataSourceHelpers.ListSetup( "PublisherFilesChangedPopup_List", function ( f259_arg0 )
@@ -2769,7 +2769,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 				if f307_local0 ~= "" then
 					table.insert( f307_local2, {
 						models = {
-							displayText = Engine[0xF9F1239CFD921FE]( 0xA63CCA126DA271B )
+							displayText = Engine[0xF9F1239CFD921FE]( "menu/info" )
 						},
 						properties = {
 							action = OpenAnticheatPolicyInBrowser
@@ -2875,7 +2875,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 							action = function ( f322_arg0, f322_arg1, f322_arg2, f322_arg3, f322_arg4 )
 								CoD.MetricsUtility.ReportUser( f322_arg2, f320_local0, "offensive", 1, true )
 								GoBack( f322_arg0, f322_arg2 )
-								CoD.OverlayUtility.ShowToast( "Invite", Engine.Localize( 0xE64954DBD80A7CF ), f320_local1, f320_local2 )
+								CoD.OverlayUtility.ShowToast( "Invite", Engine.Localize( "menu/reportplayer_offensive_language_reported" ), f320_local1, f320_local2 )
 							end,
 							actionParam = f320_local0
 						}
@@ -3126,7 +3126,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 				return {
 					{
 						models = {
-							displayText = 0x7C57347FF991141
+							displayText = "menu/leave_lobby_leave_alone"
 						},
 						properties = {
 							action = function ( f351_arg0, f351_arg1, f351_arg2, f351_arg3, f351_arg4 )
@@ -3178,7 +3178,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 				return {
 					{
 						models = {
-							displayText = 0x7C57347FF991141
+							displayText = "menu/leave_lobby_leave_alone"
 						},
 						properties = {
 							action = function ( f357_arg0, f357_arg1, f357_arg2, f357_arg3, f357_arg4 )
@@ -3229,7 +3229,7 @@ CoD.OverlayUtility.Overlays = LuaUtils.OverrideTable( CoD.OverlayUtility.Overlay
 		categoryType = CoD.OverlayUtility.OverlayTypes.Quit,
 		title = Engine[0xF9F1239CFD921FE]( 0xC31F6523A462DB6 ),
 		description = "",
-		[CoD.OverlayUtility.aCrossPromptText] = 0xF420F9DB5188F96,
+		[CoD.OverlayUtility.aCrossPromptText] = "menu/leave_lobby_leave_lobby",
 		[CoD.OverlayUtility.aCrossPromptFn] = function ( f360_arg0 )
 			return function ( f361_arg0, f361_arg1 )
 				GoBack( f361_arg0, f361_arg1 )

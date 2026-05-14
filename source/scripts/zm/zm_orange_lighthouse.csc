@@ -44,9 +44,9 @@ function init_clientfields()
 function init_fx()
 {
     level._effect[ #"lighthouse_beam" ] = #"hash_5549637de48b4ff5";
-    level._effect[ #"hash_4eeea3cde4956976" ] = #"hash_52b7a2fb71b00d26";
-    level._effect[ #"hash_33dbdabd23d73303" ] = #"hash_1806470e7079c133";
-    level._effect[ #"hash_21a180bd19425da5" ] = #"hash_5cd0d0e65e6d535";
+    level._effect[ #"lighthouse_beam_blue" ] = #"hash_52b7a2fb71b00d26";
+    level._effect[ #"lighthouse_beam_pap" ] = #"hash_1806470e7079c133";
+    level._effect[ #"lighthouse_beam_red" ] = #"hash_5cd0d0e65e6d535";
     level._effect[ #"hash_58fef59f738c6315" ] = #"explosions/fx8_exp_elec_killstreak";
     level._effect[ #"hash_48d5d5ee69c7e417" ] = #"hash_64be6c1537ad552e";
     level._effect[ #"hash_4d1abbf031ca2c63" ] = #"hash_6144e721b78e74a4";
@@ -81,7 +81,7 @@ function function_6a10478( localclientnum, oldval, newval, bnewent, binitialsnap
             self.fx_id = util::playfxontag( localclientnum, level._effect[ #"lighthouse_beam" ], self, "tag_origin" );
             self playsound( localclientnum, #"hash_c28cead5117620" );
             self.centerstruct = spawn( 0, self.origin, "script_origin" );
-            self.centerstruct playloopsound( #"hash_6181b0e69ec35a3b" );
+            self.centerstruct playloopsound( #"zmb_lighthouse_beam" );
             break;
         case 2:
             if ( isdefined( self.centerstruct ) )
@@ -90,7 +90,7 @@ function function_6a10478( localclientnum, oldval, newval, bnewent, binitialsnap
                 self.centerstruct delete();
             }
             
-            self.fx_id = util::playfxontag( localclientnum, level._effect[ #"hash_4eeea3cde4956976" ], self, "tag_origin" );
+            self.fx_id = util::playfxontag( localclientnum, level._effect[ #"lighthouse_beam_blue" ], self, "tag_origin" );
             self playsound( localclientnum, #"hash_261c471e4722bb37" );
             self.centerstruct = spawn( 0, self.origin, "script_origin" );
             self.centerstruct playloopsound( #"hash_b838aafaa7056a0" );
@@ -102,7 +102,7 @@ function function_6a10478( localclientnum, oldval, newval, bnewent, binitialsnap
                 self.centerstruct delete();
             }
             
-            self.fx_id = util::playfxontag( localclientnum, level._effect[ #"hash_33dbdabd23d73303" ], self, "tag_origin" );
+            self.fx_id = util::playfxontag( localclientnum, level._effect[ #"lighthouse_beam_pap" ], self, "tag_origin" );
             self playsound( localclientnum, #"hash_153e70c4ae966276" );
             self.centerstruct = spawn( 0, self.origin, "script_origin" );
             self.centerstruct playloopsound( #"hash_764437252a54048d" );
@@ -114,7 +114,7 @@ function function_6a10478( localclientnum, oldval, newval, bnewent, binitialsnap
                 self.centerstruct delete();
             }
             
-            self.fx_id = util::playfxontag( localclientnum, level._effect[ #"hash_21a180bd19425da5" ], self, "tag_origin" );
+            self.fx_id = util::playfxontag( localclientnum, level._effect[ #"lighthouse_beam_red" ], self, "tag_origin" );
             self playsound( localclientnum, #"hash_3734fecc702f7cd0" );
             self.centerstruct = spawn( 0, self.origin, "script_origin" );
             self.centerstruct playloopsound( #"hash_518712532057a8b" );

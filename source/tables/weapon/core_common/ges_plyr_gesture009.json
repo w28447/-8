@@ -1,7 +1,7 @@
 {
     "name": "#ges_plyr_gesture009",
     "baseWeapon": "#ges_plyr_gesture009",
-    "streamkey": "#hash_6159eb6e5c24977d",
+    "streamkey": "#ges_plyr_gesture009_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -28,9 +28,9 @@
     "#hash_554be9f7": false,
     "sound240": "#hash_631a067190b54300",
     "sound250": "#hash_242aa17124751841",
-    "tunables1": "#hash_6e6e70a84ac33620",
+    "tunables1": "#ges_plyr_gesture001_tunables",
     "gestureTables": [
-        "#hash_37196faafcd2fea7"
+        "#gestable_blinded_reaction"
     ],
     "viewmodel": [
         "#wpn_t8_eqp_stem_shot_view"

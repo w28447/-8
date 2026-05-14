@@ -18,7 +18,7 @@ CoD.AARUtility.GameOrder = {}
 CoD.AARUtility.GameOrder[0x88F5B13A5B62C55] = 1
 CoD.AARUtility.GameOrder[0x88F5A13A5B62AA2] = 2
 CoD.AARUtility.GameOrder[0x88F5913A5B628EF] = 3
-CoD.AARUtility.GameOrder[0x8B20213668F3A80] = 4
+CoD.AARUtility.GameOrder["menu/prestige_icons_game_waw"] = 4
 CoD.AARUtility.MaxRank = 55
 require( "ui/utility/overlayutility" )
 require( "ui/utility/challengesutility" )
@@ -764,7 +764,7 @@ DataSources.AARTabs = ListHelper_SetupDataSource( "AARTabs", function ( f38_arg0
 			end
 			table.insert( f38_local0, {
 				models = {
-					tabName = Engine[0xF9F1239CFD921FE]( 0x8F69F5BDD4F7C26 ),
+					tabName = Engine[0xF9F1239CFD921FE]( "menu/aar_tab_medals_caps" ),
 					action = CoD.AARUtility.SwitchAARTabs,
 					param = CoD.AARUtility.AARTabs.AAR_MEDALS
 				},
@@ -819,7 +819,7 @@ DataSources.AARTabs = ListHelper_SetupDataSource( "AARTabs", function ( f38_arg0
 			end
 			table.insert( f38_local0, {
 				models = {
-					tabName = Engine[0xF9F1239CFD921FE]( 0x8F69F5BDD4F7C26 ),
+					tabName = Engine[0xF9F1239CFD921FE]( "menu/aar_tab_medals_caps" ),
 					action = CoD.AARUtility.SwitchAARTabs,
 					param = CoD.AARUtility.AARTabs.AAR_MEDALS
 				},
@@ -854,7 +854,7 @@ DataSources.AARTabs = ListHelper_SetupDataSource( "AARTabs", function ( f38_arg0
 		if CoD.AARUtility.GetCurrentGametype( f38_arg0 ) == "ztrials" then
 			table.insert( f38_local0, {
 				models = {
-					tabName = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0xB8937E3C7212A42 ) ),
+					tabName = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "zmtrials/trial" ) ),
 					action = CoD.AARUtility.SwitchAARTabs,
 					param = CoD.AARUtility.AARTabs.AAR_TRIAL
 				},
@@ -948,7 +948,7 @@ DataSources.AARTabs = ListHelper_SetupDataSource( "AARTabs", function ( f38_arg0
 		if CoD.BaseUtility.IsDvarEnabled( "ui_wzMedalsEnabled" ) then
 			table.insert( f38_local0, {
 				models = {
-					tabName = Engine[0xF9F1239CFD921FE]( 0x8F69F5BDD4F7C26 ),
+					tabName = Engine[0xF9F1239CFD921FE]( "menu/aar_tab_medals_caps" ),
 					action = CoD.AARUtility.SwitchAARTabs,
 					param = CoD.AARUtility.AARTabs.AAR_MEDALS
 				},
@@ -1006,14 +1006,14 @@ DataSources.AARStatTypeTabHeader = ListHelper_SetupDataSource( "AARStatTypeTabHe
 		if CoD.AARUtility.IsGametypeObjectiveType( f39_arg0 ) then
 			table.insert( f39_local0, {
 				models = {
-					title = 0x2832FDB48FB8003,
+					title = "aar/objective",
 					type = CoD.AARUtility.AARStatType.OBJECTIVE
 				}
 			} )
 		elseif CoD.AARUtility.IsGameTypeEqualToString( "ctf", f39_arg0 ) then
 			table.insert( f39_local0, {
 				models = {
-					title = 0x2832FDB48FB8003,
+					title = "aar/objective",
 					type = CoD.AARUtility.AARStatType.CAPTURES_AND_RETURNS
 				}
 			} )
@@ -1395,7 +1395,7 @@ DataSources.AARMedalsList = ListHelper_SetupDataSource( "AARMedalsList", functio
 				else
 					f56_local10 = Engine[0xF9F1239CFD921FE]( 0xBCE3D9B07DE63B7, f56_local9 )
 				end
-				if f56_local5 and f56_local15.name == 0x6A3BB5B3F6DB9EF then
+				if f56_local5 and f56_local15.name == "medal/shutdown" then
 					f56_local5.timesEarned = f56_local5.timesEarned + f56_local13
 				end
 				table.insert( f56_local0, {
@@ -1408,7 +1408,7 @@ DataSources.AARMedalsList = ListHelper_SetupDataSource( "AARMedalsList", functio
 						xpValue = f56_local10
 					}
 				} )
-				if f56_local15.name == 0x6A3BB5B3F6DB9EF then
+				if f56_local15.name == "medal/shutdown" then
 					f56_local5 = f56_local0[#f56_local0].models
 				end
 			end
@@ -1591,13 +1591,13 @@ CoD.AARUtility.GetPlayerRewards = function ( f60_arg0 )
 	end
 	
 	local f60_local12 = function ( f65_arg0, f65_arg1, f65_arg2 )
-		f65_arg0.title = f65_arg1[0xC9C4F192EAB4DCD]
+		f65_arg0.title = f65_arg1["customclassname"]
 		f65_arg0.primaryImage = f60_local11( f65_arg1[0xF31137FF783E939] )
 		f65_arg0.secondaryImage = f60_local11( f65_arg1[0x7FBC18FBDAA00D1] )
 		f65_arg0.grenadeImage = f60_local11( f65_arg1[0x64BE52A1BDE5211] )
 		f65_arg0.tacticalGearImage = f60_local11( f65_arg1[0xC76C1E0D1EE45F7], true )
 		f65_arg0.perksDataSource = CoD.AARUtility.CreateClassRewardPreviewDataSource( "AARClassRewardPerks_" .. f65_arg2, f65_arg1.talents, 0x5FB380CEA24A88B, Enum[0x6EB546760F890D2][0x8EA6ADA81FD4511] )
-		f65_arg0.wildcardsDataSource = CoD.AARUtility.CreateClassRewardPreviewDataSource( "AARClassRewardWildcards_" .. f65_arg2, f65_arg1.bonuscards, 0x84B95474A4F22DA, Enum[0x6EB546760F890D2][0x1A949B83CC070B0] )
+		f65_arg0.wildcardsDataSource = CoD.AARUtility.CreateClassRewardPreviewDataSource( "AARClassRewardWildcards_" .. f65_arg2, f65_arg1.bonuscards, "bonuscard", Enum[0x6EB546760F890D2][0x1A949B83CC070B0] )
 	end
 	
 	local f60_local13 = function ( f66_arg0, f66_arg1 )
@@ -1814,7 +1814,7 @@ CoD.AARUtility.GetChallengeRewards = function ( f72_arg0 )
 			return 
 		end
 		f73_local0.mainTitle = f73_arg0.categoryName
-		f73_local0.levelText = Engine[0xF9F1239CFD921FE]( 0x3547C51E854B9C9 )
+		f73_local0.levelText = Engine[0xF9F1239CFD921FE]( "aar/challenge_complete" )
 		f73_local0.mainIcon = f73_arg0.icon
 		f73_local0.rewardType = CoD.AARUtility.AARRewardType.CHALLENGE
 		f73_local0.challengeName = f73_arg0.titleText
@@ -3440,7 +3440,7 @@ CoD.AARUtility.AddTierRewardDataToTable = function ( f153_arg0, f153_arg1, f153_
 				0x8F8028D9C81781C,
 				0xFF7352068DF6710,
 				0xCB5B4C6D31CECE7,
-				0xC5E06DECE4D0D60
+				"weapon_bribe"
 			} ) do
 				if f154_local4 == f154_arg0 then
 					return true
@@ -4565,7 +4565,7 @@ CoD.AARUtility.SetupMeritRewardModels = function ( f207_arg0, f207_arg1, f207_ar
 	end
 	f207_local23( f207_local24, f207_local25 )
 	f207_local23 = f207_local22:create( "winLabel" )
-	f207_local23:set( 0xBCD9AEC3F8CFEBE )
+	f207_local23:set( "aar/win" )
 	f207_local23 = f207_local22:create( "challengeCoinImage" )
 	f207_local23:set( "blacktransparent" )
 	f207_local23 = f207_local22:create( "paintCans" )
@@ -4658,7 +4658,7 @@ CoD.AARUtility.SetupMeritRewardModels = function ( f207_arg0, f207_arg1, f207_ar
 	if not f207_local30 then
 		f207_local30 = 0
 	end
-	local f207_local31 = Engine[0xF9F1239CFD921FE]( 0xBCD9AEC3F8CFEBE )
+	local f207_local31 = Engine[0xF9F1239CFD921FE]( "aar/win" )
 	f207_local29 = f207_local30
 	f207_local30 = {}
 	f207_local31 = f207_arg0._challengeMerits
@@ -4677,7 +4677,7 @@ CoD.AARUtility.SetupMeritRewardModels = function ( f207_arg0, f207_arg1, f207_ar
 	if not f207_local32 then
 		f207_local32 = 0
 	end
-	local f207_local33 = Engine[0xF9F1239CFD921FE]( 0x8F69F5BDD4F7C26 )
+	local f207_local33 = Engine[0xF9F1239CFD921FE]( "menu/aar_tab_medals_caps" )
 	f207_local31 = f207_local32
 	f207_local26[1] = f207_local27
 	f207_local26[2] = f207_local28
@@ -5432,7 +5432,7 @@ CoD.OverlayUtility.AddSystemOverlay( "AAR_LeaguePlayDivPlacement", {
 		if f251_local0 and f251_local0.leagueNameCode and f251_local0.leagueNameCode:get() then
 			return Engine[0xF9F1239CFD921FE]( 0xA833716CBB8F05A )
 		else
-			return Engine[0xF9F1239CFD921FE]( 0x127999393F1681 )
+			return Engine[0xF9F1239CFD921FE]( "menu/error_caps" )
 		end
 	end,
 	description = function ( f252_arg0 )

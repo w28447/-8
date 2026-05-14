@@ -3,7 +3,7 @@
     "baseWeapon": "#special_crossbow_t8",
     "displayname": "#weapon/special_crossbow_t8",
     "weapon70": "#special_crossbow_t8",
-    "streamkey": "#hash_578ca886119ed324",
+    "streamkey": "#special_crossbow_t8_soundbank",
     "scrstr_8c8": [
         "tag_camo_darkmatter",
         "tag_camo_diamond"
@@ -47,8 +47,8 @@
         ]
     ],
     "sound90": "#hash_62f37f9672d626e5",
-    "firesound": "#hash_5596b8a24f607466",
-    "firesoundplayer": "#hash_506617a29560098b",
+    "firesound": "#wpn_crossbow_fire_npc",
+    "firesoundplayer": "#wpn_crossbow_fire_plr",
     "sound240": "#hash_683733eab40de48b",
     "sound250": "#hash_3ee3cceae529ba86",
     "sound270": "#hash_24db08faf35699e1",
@@ -80,14 +80,14 @@
     "image_e90": "#ui_icon_obit_special_crossbow",
     "image_e98": "#ui_icon_obit_special_crossbow",
     "fireRumble": "#pistol_fire",
-    "rumble_dc8": "#hash_37945215019ab043",
+    "rumble_dc8": "#pistol_adsfire",
     "rumble_e20": "#hash_322cc8a226215312",
     "fx_bc8": "#hash_5b930daa9ce3f024",
     "fx_bd0": "#hash_5b99f9aa9ce9ecd6",
     "fx_f00": "#hash_5213cb518100fa34",
     "normalImpactFX": "#knife_large_enter",
-    "bounceImpactFX": "#hash_410092704f4a03c",
-    "normalImpactSounds": "#hash_2475219d05bb0940",
+    "bounceImpactFX": "#crossbow_enter",
+    "normalImpactSounds": "#crossbow_impact",
     "bounceImpactSounds": "#bolt_impact",
     "dudImpactSounds": "#bolt_impact"
 }

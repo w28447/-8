@@ -3,7 +3,7 @@
     "baseWeapon": "#melee_coinbag_t8",
     "displayname": "#weapon/melee_coinbag_t8",
     "weapon70": "#melee_coinbag_t8",
-    "streamkey": "#hash_3431258164cadca8",
+    "streamkey": "#melee_coinbag_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",

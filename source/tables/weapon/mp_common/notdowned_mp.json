@@ -2,7 +2,7 @@
     "name": "#notdowned_mp",
     "baseWeapon": "#notdowned",
     "displayname": "#weapon/noweapon",
-    "streamkey": "#hash_187250f7eadaf3b1",
+    "streamkey": "#notdowned_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

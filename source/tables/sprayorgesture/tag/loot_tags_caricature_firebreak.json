@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_caricature_firebreak",
+    "type": "#tag",
+    "material": "#hash_4ac5aab0b76ad43d",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#tags/caricature_firebreak",
+        "icon": "image#loot_ui_icon_tags_caricature_firebreak",
+        "isdefault": 0
+    }
+}

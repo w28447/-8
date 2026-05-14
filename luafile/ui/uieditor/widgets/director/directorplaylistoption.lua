@@ -15,7 +15,7 @@ CoD.DirectorPlaylistOption.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local DirectorPlaylistOptionaInternal = CoD.DirectorPlaylistOptionInternal.new( f1_arg0, f1_arg1, 0, 0, 0, 372, 0, 0, 0, 246 )
 	DirectorPlaylistOptionaInternal.SceneBlur:setAlpha( 0 )
 	DirectorPlaylistOptionaInternal.ImageMask:setAlpha( 0 )
-	DirectorPlaylistOptionaInternal.MiddleText:setText( LocalizeToUpperString( 0xA43B10D9DA121A ) )
+	DirectorPlaylistOptionaInternal.MiddleText:setText( LocalizeToUpperString( "menu/waiting_caps" ) )
 	DirectorPlaylistOptionaInternal:linkToElementModel( self, nil, false, function ( model )
 		DirectorPlaylistOptionaInternal:setModel( model, f1_arg1 )
 	end )

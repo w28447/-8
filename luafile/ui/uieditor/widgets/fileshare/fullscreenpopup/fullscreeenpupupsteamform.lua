@@ -67,7 +67,7 @@ CoD.FullscreeenPupupSteamForm.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local ErrorTitle = LUI.UIText.new( 0, 0, 690, 990, 0, 0, 365, 437 )
 	ErrorTitle:setAlpha( 0 )
-	ErrorTitle:setText( Engine[0xF9F1239CFD921FE]( 0x127999393F1681 ) )
+	ErrorTitle:setText( Engine[0xF9F1239CFD921FE]( "menu/error_caps" ) )
 	ErrorTitle:setTTF( "default" )
 	ErrorTitle:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	self:addElement( ErrorTitle )

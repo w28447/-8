@@ -43,7 +43,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -105,7 +105,7 @@
             "rotations": [
                 {
                     "map": "#zm_zodt8",
-                    "gametype": "#hash_2a4c013991812fa",
+                    "gametype": "#gametype_zm_ztutorial",
                     "weight": 1,
                     "isFree": false
                 }
@@ -150,7 +150,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -212,7 +212,7 @@
             "rotations": [
                 {
                     "map": "#zm_zodt8",
-                    "gametype": "#hash_2a4c013991812fa",
+                    "gametype": "#gametype_zm_ztutorial",
                     "weight": 1,
                     "isFree": false
                 }
@@ -221,7 +221,7 @@
         },
         {
             "name": "#hash_2d79f8672ff9bbea",
-            "description": "#hash_6fdcc66d6ac640ff",
+            "description": "#playlist/zm_zod",
             "lobbyMainMode": "CAMPAIGN",
             "image": "#ui_icon_gamemode_zm_classic",
             "imageBackground": "#ui_icon_director_tile_zm_zod",
@@ -256,7 +256,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -336,7 +336,7 @@
         },
         {
             "name": "#hash_28da6427c3fd6279",
-            "description": "#hash_6fdcc66d6ac640ff",
+            "description": "#playlist/zm_zod",
             "lobbyMainMode": "CAMPAIGN",
             "image": "#ui_icon_gamemode_zm_classic",
             "imageBackground": "#ui_icon_director_tile_zm_zod",
@@ -371,7 +371,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -451,7 +451,7 @@
         },
         {
             "name": "#hash_36c12b0eb6d6097a",
-            "description": "#hash_6fdcc66d6ac640ff",
+            "description": "#playlist/zm_zod",
             "lobbyMainMode": "CAMPAIGN",
             "image": "#ui_icon_gamemode_zm_classic",
             "imageBackground": "#ui_icon_director_tile_zm_zod",
@@ -486,7 +486,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -566,7 +566,7 @@
         },
         {
             "name": "#hash_14b2a98668e1fdf9",
-            "description": "#hash_6fdcc66d6ac640ff",
+            "description": "#playlist/zm_zod",
             "lobbyMainMode": "CAMPAIGN",
             "image": "#ui_icon_gamemode_zm_classic",
             "imageBackground": "#ui_icon_director_tile_zm_zod",
@@ -601,7 +601,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -716,7 +716,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -831,7 +831,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -946,7 +946,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -1061,7 +1061,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -1177,7 +1177,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -1293,7 +1293,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -1409,7 +1409,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -1525,7 +1525,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -1640,7 +1640,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -1755,7 +1755,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -1870,7 +1870,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -1985,7 +1985,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -2102,7 +2102,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -2219,7 +2219,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -2336,7 +2336,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -2453,7 +2453,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -2570,7 +2570,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -2687,7 +2687,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -2804,7 +2804,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -2921,7 +2921,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -3038,7 +3038,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -3155,7 +3155,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -3272,7 +3272,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -3389,7 +3389,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -3505,7 +3505,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -3621,7 +3621,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -3737,7 +3737,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -3853,7 +3853,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,

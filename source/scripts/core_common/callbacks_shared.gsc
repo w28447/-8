@@ -954,9 +954,9 @@ function remove_on_trigger_once( func, obj )
 // Params 2
 // Checksum 0x9229cd7b, Offset: 0x21b0
 // Size: 0x3c
-function function_33f0ddd3( func, obj )
+function on_player_loadout_changed( func, obj )
 {
-    add_callback( #"hash_39bf72fd97e248a0", func, obj );
+    add_callback( #"on_player_loadout_changed", func, obj );
 }
 
 // Namespace callback/callbacks_shared
@@ -965,7 +965,7 @@ function function_33f0ddd3( func, obj )
 // Size: 0x3c
 function function_824d206( func, obj )
 {
-    remove_callback( #"hash_39bf72fd97e248a0", func, obj );
+    remove_callback( #"on_player_loadout_changed", func, obj );
 }
 
 // Namespace callback/callbacks_shared
@@ -990,9 +990,9 @@ function remove_on_boast( func, obj )
 // Params 2
 // Checksum 0x22cae9ff, Offset: 0x22d0
 // Size: 0x3c
-function function_5753ac6e( func, obj )
+function on_boast_end( func, obj )
 {
-    add_callback( #"hash_4a9c56bba76da754", func, obj );
+    add_callback( #"on_boast_end", func, obj );
 }
 
 // Namespace callback/callbacks_shared
@@ -1001,7 +1001,7 @@ function function_5753ac6e( func, obj )
 // Size: 0x3c
 function function_16046baa( func, obj )
 {
-    remove_callback( #"hash_4a9c56bba76da754", func, obj );
+    remove_callback( #"on_boast_end", func, obj );
 }
 
 // Namespace callback/callbacks_shared
@@ -1401,7 +1401,7 @@ function event_handler[player_boast] codecallback_playerboast( eventstruct )
 function event_handler[event_8451509a] function_e35aeddd( eventstruct )
 {
     self endon( #"disconnect" );
-    callback( #"hash_4a9c56bba76da754" );
+    callback( #"on_boast_end" );
 }
 
 // Namespace callback/player_melee
@@ -1799,7 +1799,7 @@ function event_handler[underwater] codecallback_underwater( eventstruct )
 // Size: 0x2c
 function event_handler[event_d6f9e6ad] function_8877d89( eventstruct )
 {
-    self callback( #"hash_42aa89b2a0951308", eventstruct );
+    self callback( #"player_grapple_failed", eventstruct );
 }
 
 /#

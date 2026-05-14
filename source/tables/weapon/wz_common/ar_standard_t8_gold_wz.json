@@ -5,7 +5,7 @@
     "xhash_60": "#hash_6d0971e4ab0042f8",
     "weapon70": "#ar_standard_t8_gold",
     "weapon890": "#ar_standard_t8_wz",
-    "streamkey": "#hash_349e9bd92ee4224",
+    "streamkey": "#ar_standard_t8_gold_soundbank",
     "scrstr_8c8": [
         "tag_camo_darkmatter",
         "tag_camo_diamond",
@@ -56,7 +56,7 @@
         ]
     ],
     "firesounddistant": "#hash_56369e9a0553981f",
-    "sound140": "#hash_7f76c55af2378ba3",
+    "sound140": "#wpn_ar_standard_fire_npc",
     "sound150": "#wpn_ar_standard_fire_plr",
     "sound180": "#hash_6224b7e674c8a525",
     "sound190": "#hash_1cc2ba820ea93198",
@@ -67,7 +67,7 @@
     "sound210": "#hash_2b902c34c9ae43f5",
     "sound240": "#hash_5eabe6a258a16f56",
     "sound250": "#hash_430505a2008aefdb",
-    "sound260": "#hash_515f54aa1f553686",
+    "sound260": "#prj_crack_supersonic",
     "sound600": "#hash_209cb2974ae55ec0",
     "sound610": "#hash_209cb2974ae55ec0",
     "sound800": "#hash_5ee962527afebfb1",

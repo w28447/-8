@@ -42,7 +42,7 @@ CoD.TabletTak5_AmmoPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local FrameAmmoUsed = LUI.UIImage.new( 0, 0, -3, 43, 0, 0, -3.5, 76.5 )
 	FrameAmmoUsed:setAlpha( 0 )
-	FrameAmmoUsed:setImage( RegisterImage( 0x9EF0FDFF66C7E38 ) )
+	FrameAmmoUsed:setImage( RegisterImage( "uie_ui_hud_tak5_ammo_frame_used" ) )
 	self:addElement( FrameAmmoUsed )
 	self.FrameAmmoUsed = FrameAmmoUsed
 	

@@ -1,7 +1,7 @@
 {
     "hash_dfedf08e": 0,
     "categoryindex": 0,
-    "description": "localized17#hash_20a89461376b5a31",
+    "description": "localized17#codcaster/ls_secondary_weapon_desc",
     "menu/on": "localized17#menu/on",
     "hash_10e01ad5": 1,
     "iscategory": 0,
@@ -21,7 +21,7 @@
     "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "codcaster_ls_secondary_wpn",
-    "displayname": "localized17#hash_a305350b533949f",
+    "displayname": "localized17#codcaster/ls_secondary_weapon",
     "rangestartvalue": 0,
     "isdisabled": 0,
     "hash_d6897f56": 0,

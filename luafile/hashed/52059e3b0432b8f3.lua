@@ -85,7 +85,7 @@ LUI.createMenu.DownButNotOut = function ( f1_arg0, f1_arg1 )
 	self.RedBarLargeThickTop = RedBarLargeThickTop
 	
 	local TextBGTiled = LUI.UIImage.new( 0.5, 0.5, -678, 678, 0.5, 0.5, -90, 90 )
-	TextBGTiled:setImage( RegisterImage( 0x22666E7FB297C80 ) )
+	TextBGTiled:setImage( RegisterImage( "uie_ui_hud_wz_deathcam_text_bg_tileable" ) )
 	TextBGTiled:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TextBGTiled:setShaderVector( 0, 0, 0, 0.32, 0.6 )
 	TextBGTiled:setupNineSliceShader( 48, 48 )
@@ -99,7 +99,7 @@ LUI.createMenu.DownButNotOut = function ( f1_arg0, f1_arg1 )
 	
 	local TextBGTiledAdd = LUI.UIImage.new( 0.5, 0.5, -678, 678, 0.5, 0.5, -90, 90 )
 	TextBGTiledAdd:setAlpha( 0 )
-	TextBGTiledAdd:setImage( RegisterImage( 0x22666E7FB297C80 ) )
+	TextBGTiledAdd:setImage( RegisterImage( "uie_ui_hud_wz_deathcam_text_bg_tileable" ) )
 	TextBGTiledAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TextBGTiledAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	TextBGTiledAdd:setupNineSliceShader( 48, 48 )

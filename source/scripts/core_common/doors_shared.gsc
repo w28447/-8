@@ -133,7 +133,7 @@ class cdoor
             {
                 if ( isdefined( var_7d28591d ) && var_7d28591d )
                 {
-                    var_2b9a525f = m_s_bundle.var_f2943dab + var_3880cb10;
+                    var_2b9a525f = m_s_bundle.door_swing_angle_barricaded + var_3880cb10;
                 }
                 else
                 {
@@ -149,7 +149,7 @@ class cdoor
         {
             if ( isdefined( var_7d28591d ) && var_7d28591d )
             {
-                var_2b9a525f = m_s_bundle.var_f2943dab;
+                var_2b9a525f = m_s_bundle.door_swing_angle_barricaded;
             }
             else
             {
@@ -489,7 +489,7 @@ class cdoor
     // Size: 0x36e
     function function_2190a0ee( b_reusable, var_23456fbb )
     {
-        m_e_door endon( #"hash_190d72393c0a8869", #"delete", #"gameobject_deleted" );
+        m_e_door endon( #"used_up_door", #"delete", #"gameobject_deleted" );
         
         while ( true )
         {
@@ -508,7 +508,7 @@ class cdoor
             {
                 if ( !b_reusable )
                 {
-                    m_e_door notify( #"hash_190d72393c0a8869" );
+                    m_e_door notify( #"used_up_door" );
                 }
                 
                 unlock();
@@ -536,7 +536,7 @@ class cdoor
                         thread function_145675ba( e_player, m_s_bundle.var_a22b716, var_f40ac45d, var_3488a701 );
                     }
                     
-                    m_e_door notify( #"hash_7166c13e79b73f9" );
+                    m_e_door notify( #"player_opened_door" );
                     open();
                 }
             }
@@ -1567,7 +1567,7 @@ function setup_door_info( s_door_bundle, s_door_instance, c_door )
         s_door_bundle.door_open_time = s_door_instance.door_open_time;
         s_door_bundle.door_slide_open_units = s_door_instance.door_slide_open_units;
         s_door_bundle.door_swing_angle = s_door_instance.door_swing_angle;
-        s_door_bundle.var_f2943dab = s_door_instance.var_f2943dab;
+        s_door_bundle.door_swing_angle_barricaded = s_door_instance.door_swing_angle_barricaded;
         s_door_bundle.door_closes = s_door_instance.door_closes;
         s_door_bundle.var_d37e8f3e = s_door_instance.var_d37e8f3e;
         s_door_bundle.door_start_open = s_door_instance.door_start_open;
@@ -1589,7 +1589,7 @@ function setup_door_info( s_door_bundle, s_door_instance, c_door )
         s_door_instance.door_open_time = undefined;
         s_door_instance.door_slide_open_units = undefined;
         s_door_instance.door_swing_angle = undefined;
-        s_door_instance.var_f2943dab = undefined;
+        s_door_instance.door_swing_angle_barricaded = undefined;
         s_door_instance.door_closes = undefined;
         s_door_instance.var_d37e8f3e = undefined;
         s_door_instance.door_start_open = undefined;
@@ -1702,9 +1702,9 @@ function setup_door_info( s_door_bundle, s_door_instance, c_door )
         c_door.m_s_bundle.door_swing_angle = 0;
     }
     
-    if ( !isdefined( c_door.m_s_bundle.var_f2943dab ) )
+    if ( !isdefined( c_door.m_s_bundle.door_swing_angle_barricaded ) )
     {
-        c_door.m_s_bundle.var_f2943dab = 0;
+        c_door.m_s_bundle.door_swing_angle_barricaded = 0;
     }
     
     if ( isdefined( c_door.m_s_bundle.door_closes ) && c_door.m_s_bundle.door_closes )
@@ -1985,8 +1985,8 @@ function function_dc98f943( c_door )
     
     target_set( e_door );
     level notify( #"hash_9db88375ef038b", { #c_door:c_door, #player:waitresult.player } );
-    e_door val::set( #"hash_25bedd86747e41e1", "takedamage", 1 );
-    e_door val::set( #"hash_25bedd86747e41e1", "allowdeath", 1 );
+    e_door val::set( #"c_door_damage", "takedamage", 1 );
+    e_door val::set( #"c_door_damage", "allowdeath", 1 );
     
     if ( isdefined( c_door.m_s_bundle.registersidestepshouldstun ) )
     {
@@ -2024,8 +2024,8 @@ function function_dc98f943( c_door )
         e_door function_dfee3dec();
     }
     
-    e_door val::reset( #"hash_25bedd86747e41e1", "takedamage" );
-    e_door val::reset( #"hash_25bedd86747e41e1", "allowdeath" );
+    e_door val::reset( #"c_door_damage", "takedamage" );
+    e_door val::reset( #"c_door_damage", "allowdeath" );
     e_door.health = 0;
     
     if ( isdefined( c_door.m_s_bundle.var_ffb77aca ) )

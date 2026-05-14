@@ -182,7 +182,7 @@ CoD.TabletLocationSelector_Internal.__clipsPerState = {
 			f14_arg0.MessagePromptStandard:completeAnimation()
 			f14_arg0.MessagePromptStandard.CursorHintText:completeAnimation()
 			f14_arg0.MessagePromptStandard:setAlpha( 0 )
-			f14_arg0.MessagePromptStandard.CursorHintText:setText( Engine[0xF9F1239CFD921FE]( 0x397C7860EF08AA3 ) )
+			f14_arg0.MessagePromptStandard.CursorHintText:setText( Engine[0xF9F1239CFD921FE]( "menu/remaining_target" ) )
 			f14_arg0.clipFinished( f14_arg0.MessagePromptStandard )
 			f14_arg0.buttonprompt:completeAnimation()
 			f14_arg0.buttonprompt:setTopBottom( 0, 0, 682, 727 )

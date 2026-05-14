@@ -3,7 +3,7 @@
     "baseWeapon": "#eq_decoy_grenade",
     "displayname": "#weapon/decoy_grenade",
     "weapon70": "#decoy_grenade",
-    "streamkey": "#hash_55a7e50b2cb70f07",
+    "streamkey": "#eq_decoy_grenade_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",
@@ -56,7 +56,7 @@
     "rumble_de8": "#grenade_rumble",
     "fx_f00": "#weapon/fx_trail_grenade",
     "underwaterExplosionSurfaceFX": [
-        "#hash_7b70232b2892e045",
+        "#explosions/fx8_exp_grenade_water",
         "#hash_415b461b7420c6d2",
         "#hash_3b3f97cf646813ac"
     ],

@@ -88,7 +88,7 @@ function private on_end( round_reset )
     
     level.var_21c2f32a = undefined;
     level.var_943b6e2b = undefined;
-    level notify( #"hash_31c14df051f6c165" );
+    level notify( #"stop_wallbuy_watcher" );
     
     foreach ( player in getplayers() )
     {
@@ -112,7 +112,7 @@ function is_active()
 // Size: 0x1e0
 function private wallbuy_watcher()
 {
-    level endon( #"hash_31c14df051f6c165", #"game_ended" );
+    level endon( #"stop_wallbuy_watcher", #"game_ended" );
     
     while ( true )
     {

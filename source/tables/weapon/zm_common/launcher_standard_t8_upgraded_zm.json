@@ -5,7 +5,7 @@
     "xhash_60": "#hash_108196ba6d0a0fed",
     "weapon70": "#launcher_standard_t8",
     "luigiReticleWidget": "rocketLauncherReticle",
-    "streamkey": "#hash_6764ede9aced78db",
+    "streamkey": "#launcher_standard_t8_upgraded_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -50,9 +50,9 @@
         ]
     ],
     "sound90": "#hash_540a563c135f722f",
-    "sounda0": "#hash_5fd3d93f612e7109",
+    "sounda0": "#wpn_rpg_fire_rocket_oneshot",
     "firesound": "#hash_17e0c3ff6bf8993f",
-    "firesoundplayer": "#hash_5b276531f25d74b6",
+    "firesoundplayer": "#wpn_rpg_fire_plr_pap",
     "sound240": "#hash_fc4ca27d80d6d52",
     "sound250": "#hash_4232e127f42d7cf7",
     "sound270": "#hash_4382ea72adea8a5c",

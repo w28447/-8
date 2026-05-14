@@ -1,4 +1,4 @@
-#using script_cb32d07c95e5628;
+#using scripts\mp_common\item_spawn_groups_util.gsc;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\clientfield_shared;
 #using scripts\core_common\gamestate;
@@ -194,7 +194,7 @@ function function_1deb2b38( var_b721e8a9 )
     
     if ( isdefined( var_b721e8a9 ) )
     {
-        a_items = var_b721e8a9 namespace_65181344::function_fd87c780( #"zombie_bathtub_ee_list", 1 );
+        a_items = var_b721e8a9 item_spawn_groups_util::function_fd87c780( #"zombie_bathtub_ee_list", 1 );
         
         foreach ( item in a_items )
         {

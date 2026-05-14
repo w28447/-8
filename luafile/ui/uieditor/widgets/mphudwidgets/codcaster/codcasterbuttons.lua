@@ -20,7 +20,7 @@ CoD.CodCasterButtons.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	self.CodCasterButtonsBG = CodCasterButtonsBG
 	
 	local ToggleList1 = CoD.CodCasterButtonPromptContainer.new( f1_arg0, f1_arg1, 0, 0, 856, 1120, 0, 0, 45, 83 )
-	ToggleList1.Prompt.KeyPrompt.keybind:setText( Engine[0xF9F1239CFD921FE]( 0xB5C6FCB5ACEAB52 ) )
+	ToggleList1.Prompt.KeyPrompt.keybind:setText( Engine[0xF9F1239CFD921FE]( "key/downarrow" ) )
 	ToggleList1.Text:setText( Engine[0xF9F1239CFD921FE]( 0x1C66D706E4682A ) )
 	ToggleList1:subscribeToGlobalModel( f1_arg1, "Controller", "dpad_down_button_image", function ( model )
 		local f2_local0 = model:get()

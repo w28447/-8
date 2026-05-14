@@ -13,7 +13,7 @@ CoD[0xF9B8B7EB4A5FEE].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local bg = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	bg:setImage( RegisterImage( 0xA260E4DE48FDD91 ) )
+	bg:setImage( RegisterImage( "uie_ui_menu_callingcards_surrealistlandscape_bg" ) )
 	self:addElement( bg )
 	self.bg = bg
 	

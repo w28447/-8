@@ -48,7 +48,7 @@ LUI.createMenu.Prestige_PlayerLevel = function ( f1_arg0, f1_arg1 )
 	self.TiledPlusGrid = TiledPlusGrid
 	
 	local GenericMenuFrame = CoD.GenericMenuFrame.new( f1_local1, f1_arg0, 0, 1, 0, 0, 0, 1, 0, 0 )
-	GenericMenuFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( CoD.PrestigeUtility.GetPrestigeMenuTitleString( 0x2EB4043431740D3 ) ) )
+	GenericMenuFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( CoD.PrestigeUtility.GetPrestigeMenuTitleString( "menu/player_level" ) ) )
 	GenericMenuFrame.CommonHeader.subtitle.subtitle:setText( "" )
 	self:addElement( GenericMenuFrame )
 	self.GenericMenuFrame = GenericMenuFrame
@@ -222,7 +222,7 @@ LUI.createMenu.Prestige_PlayerLevel = function ( f1_arg0, f1_arg1 )
 	self.CustomizePrestigeIconButton = CustomizePrestigeIconButton
 	
 	local PrestigeFanfare = CoD.Prestige_Fanfare.new( f1_local1, f1_arg0, 0.5, 0.5, -350, 350, 0.5, 0.5, -540, 540 )
-	PrestigeFanfare.PrestigeImage:setImage( RegisterImage( CoD.PlayerStatsUtility.GetNextPrestigeIcon( f1_local1, true, 0x30F9A21089722D4 ) ) )
+	PrestigeFanfare.PrestigeImage:setImage( RegisterImage( CoD.PlayerStatsUtility.GetNextPrestigeIcon( f1_local1, true, "t7_icon_rank_mp_level_21" ) ) )
 	PrestigeFanfare.PrestigeTitle:setText( Engine[0xF9F1239CFD921FE]( CoD.PlayerStatsUtility.GetNextPrestigeFanfareText( f1_local1, 0x9E3050512D6C49B ) ) )
 	PrestigeFanfare.PrestigeTitle2:setText( CoD.PlayerStatsUtility.GetNextPrestigeTitle( f1_local1, 0x910399F02006FB7 ) )
 	self:addElement( PrestigeFanfare )

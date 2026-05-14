@@ -63,7 +63,7 @@ function function_b53c3ad2( localclientnum, oldval, newval, bnewent, binitialsna
         return;
     }
     
-    self notify( #"hash_16c59bda348653cd" );
+    self notify( #"stop_static_postfx" );
     
     if ( isdefined( self.var_2d39c392 ) && self.var_2d39c392 )
     {
@@ -82,7 +82,7 @@ function private function_d765daa4( localclientnum )
     self endon( "214105bf7d36e37f" );
     self endon( #"death" );
     self endon( #"exit_vehicle" );
-    self endon( #"hash_16c59bda348653cd" );
+    self endon( #"stop_static_postfx" );
     
     while ( true )
     {

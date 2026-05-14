@@ -206,7 +206,7 @@ function function_72ba0df6( einflictor, attacker, idamage, smeansofdeath, weapon
         if ( isalive( level.players[ 0 ] ) )
         {
             level.var_3cdb14a8--;
-            level.players[ 0 ] ct_utils::function_80bf685b( level.var_3cdb14a8 );
+            level.players[ 0 ] ct_utils::ingame_objective_set_points( level.var_3cdb14a8 );
         }
         
         return;
@@ -394,7 +394,7 @@ function function_6dd7691f()
     
     level.var_e72728b8 = undefined;
     level thread function_885de242();
-    level notify( #"hash_58b92d4fec6c6932" );
+    level notify( #"stop_assault_pack_lower_collision" );
     level notify( #"start_assault_pack_lower_exit_collision" );
     level.players[ 0 ] thread function_c93a1ee3();
     level ct_vo::play_vo( #"hash_4338c28cf3210c0e", 1 );
@@ -406,7 +406,7 @@ function function_6dd7691f()
     level thread ct_bots::activate_bots( level.var_72c3ea74.size, #"axis" );
     wait 3;
     level.players[ 0 ] thread ct_utils::function_61c3d59c( undefined, undefined, "dynobj_TeamDefend" );
-    level.players[ 0 ] ct_utils::function_80bf685b( level.var_3cdb14a8 );
+    level.players[ 0 ] ct_utils::ingame_objective_set_points( level.var_3cdb14a8 );
     level thread function_9ece6b44();
     wait 1;
     level flag::wait_till( "second_battle_over" );
@@ -780,7 +780,7 @@ function function_45f0ba8d()
         setdvar( #"hash_3e06b14c41136e95", 0 );
         level.players[ 0 ] thread ct_utils::function_61c3d59c( undefined, undefined, "dynobj_EarnMantis" );
         level.var_37591676 = 0;
-        level.players[ 0 ] ct_utils::function_80bf685b( level.var_37591676 );
+        level.players[ 0 ] ct_utils::ingame_objective_set_points( level.var_37591676 );
         level.players[ 0 ].momentum = 0;
         globallogic_score::_setplayermomentum( level.players[ 0 ], level.var_37591676 );
         level.players[ 0 ] thread function_9b2c973f();
@@ -799,7 +799,7 @@ function function_45f0ba8d()
         if ( level flag::get( "squad_dead" ) || !isalive( level.players[ 0 ] ) )
         {
             level flag::set( "stop_reinforce" );
-            level.players[ 0 ] ct_utils::function_1bb93418();
+            level.players[ 0 ] ct_utils::ingame_objective_close();
             level.players[ 0 ] ct_utils::function_49e0c5bc( 1 );
             
             if ( level flag::get( "squad_dead" ) )
@@ -845,9 +845,9 @@ function function_537c9eea()
 {
     self endon( #"death" );
     level endon( #"killstreak_ready" );
-    self waittill( #"hash_600461f8d5fa1837" );
+    self waittill( #"killstreak_ready_tank_robot" );
     level.var_51ff7a58 = 1;
-    self ct_utils::function_1bb93418();
+    self ct_utils::ingame_objective_close();
     level notify( #"killstreak_ready" );
 }
 
@@ -882,12 +882,12 @@ function function_1089714c( str_type )
     
     if ( level.var_37591676 < 1000 )
     {
-        level.players[ 0 ] ct_utils::function_80bf685b( level.var_37591676 );
+        level.players[ 0 ] ct_utils::ingame_objective_set_points( level.var_37591676 );
     }
     else
     {
         level.var_51ff7a58 = 1;
-        level.players[ 0 ] ct_utils::function_1bb93418();
+        level.players[ 0 ] ct_utils::ingame_objective_close();
         level notify( #"killstreak_ready" );
     }
     
@@ -918,7 +918,7 @@ function function_667b9fbc()
 function function_9b2c973f()
 {
     level endon( #"combattraining_logic_finished" );
-    self endon( #"hash_600461f8d5fa1837" );
+    self endon( #"killstreak_ready_tank_robot" );
     level endon( #"squad_dead" );
     a_bots = self ct_bots::function_71ec2b36();
     n_squad_size = a_bots.size;

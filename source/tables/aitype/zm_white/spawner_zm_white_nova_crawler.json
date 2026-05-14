@@ -19,7 +19,7 @@
     ],
     "meleeWeapon": "#zombie_ai_defaultmelee_zm",
     "aimTable": "#soldier_aim",
-    "footstepTable": "#hash_3368aeee6dad5cf",
+    "footstepTable": "#zombfootstep_quad",
     "footstepScriptCallback": false,
     "footstepFXTable1": "#player_footstep",
     "footstepFXTable2": "#player_footstep",

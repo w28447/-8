@@ -23,7 +23,7 @@ CoD.StartMenu_Button_Emblem_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	self.NoiseTiledBacking2 = NoiseTiledBacking2
 	
 	local BgGrid = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	BgGrid:setImage( RegisterImage( 0xCB7B28E1ED13921 ) )
+	BgGrid:setImage( RegisterImage( "uie_ui_menu_start_menu_grid" ) )
 	BgGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
 	BgGrid:setShaderVector( 0, 0, 0, 0, 0 )
 	BgGrid:setShaderVector( 1, 1, 1, 0, 0 )

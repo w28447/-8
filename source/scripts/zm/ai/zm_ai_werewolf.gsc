@@ -1574,7 +1574,7 @@ function private function_43f02cf0( entity )
         return 0;
     }
     
-    if ( randomintrangeinclusive( 0, 100 ) < entity ai::function_9139c839().var_d9838997 )
+    if ( randomintrangeinclusive( 0, 100 ) < entity ai::function_9139c839().summonwolvespercentchance )
     {
         entity.summon_wolves = 1;
     }
@@ -1597,7 +1597,7 @@ function private function_f8912291( entity )
 {
     entity.var_48baa747 = 1;
     entity.summon_wolves = undefined;
-    entity.var_1a60ad62 = gettime() + entity ai::function_9139c839().var_fe050356;
+    entity.var_1a60ad62 = gettime() + entity ai::function_9139c839().summonwolvescooldown;
     entity.blockingpain = 1;
 }
 
@@ -1609,7 +1609,7 @@ function private function_fcc1c537( entity )
 {
     entity.var_48baa747 = 0;
     entity.ai.var_d6cd1d4e = gettime() + int( entity ai::function_9139c839().var_6d4b0dd6 * 1000 );
-    entity.var_1a60ad62 = gettime() + entity ai::function_9139c839().var_fe050356;
+    entity.var_1a60ad62 = gettime() + entity ai::function_9139c839().summonwolvescooldown;
     entity.blockingpain = 0;
 }
 
@@ -1728,7 +1728,7 @@ function private summonwolves( entity )
         while ( true )
         {
             waitframe( 1 );
-            string = getdvarstring( #"hash_4fe745cc8a7d9b8c", "<dev string:x41>" );
+            string = getdvarstring( #"werewolf_devgui_cmd", "<dev string:x41>" );
             cmd = strtok( string, "<dev string:x30a>" );
             
             if ( cmd.size > 0 )
@@ -1771,7 +1771,7 @@ function private summonwolves( entity )
                 }
             }
             
-            setdvar( #"hash_4fe745cc8a7d9b8c", "<dev string:x41>" );
+            setdvar( #"werewolf_devgui_cmd", "<dev string:x41>" );
         }
     }
 

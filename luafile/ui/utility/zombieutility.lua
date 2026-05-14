@@ -3,7 +3,7 @@ CoD.ZombieUtility.TrialsInfoStates = LuaEnum.createEnum( "STATE_INVISIBLE", "STA
 CoD.ZombieUtility.TrialsGameStates = LuaEnum.createEnum( "STATE_PLAYING", "STATE_ROUND_RESET", "STATE_GAME_OVER_SUCCESS", "STATE_GAME_OVER_FAILURE" )
 CoD.ZombieUtility.MapToTrialsCSVPrefix = {
 	[0x7E9384351288E52] = 0xEFE70CADBE4C183,
-	[0xAA390030BE9DEF9] = 0xAB7DAAB01B8557E,
+	["zm_office"] = 0xAB7DAAB01B8557E,
 	[0xAFE286CA5500B9B] = 0x879F08905406A48,
 	[0x51FD293040F234E] = 0xDA20E363F296451,
 	[0xA005252D762E06A] = 0x72CB250BE51DE37,
@@ -36,7 +36,7 @@ CoD.ZombieUtility.SpecialZombiesImages = {
 	0xE4D4FAAF81E0A90,
 	0xB43D1FE4B9ECF8,
 	0x90621ED6D987BD3,
-	0x1040AF86CF7665C,
+	"ui_hud_zm_rush_joltingjacks",
 	0xE15FF6A079B0562,
 	0x9477BAAE284D117
 }
@@ -106,7 +106,7 @@ CoD.ZombieUtility.TutorialStringOverrideKBM = {
 	[0x2ED5BAFC1E1A62C] = 0x3F817FB61BDA3C8
 }
 CoD.ZombieUtility.ZMTrialsEnum = {
-	0x53BD8D8AFD745E0,
+	"zm_zodt8_default",
 	0xB56BDCBA095CB41,
 	0x8CA3D7404460ABF,
 	0xD84C5587B7C3DD4,
@@ -442,7 +442,7 @@ CoD.ZombieUtility.OpenZombieLoadout = function ( f20_arg0, f20_arg1 )
 end
 
 CoD.ZombieUtility.TrialsTimerShouldShow = function ()
-	if Engine.GetGametypeSetting( 0x2876DC918CC6666 ) == 1 and CoD.ModelUtility.IsGlobalModelValueEqualTo( "ZMHudGlobal.trials.gameState", 0 ) then
+	if Engine.GetGametypeSetting( "zmshowtimer" ) == 1 and CoD.ModelUtility.IsGlobalModelValueEqualTo( "ZMHudGlobal.trials.gameState", 0 ) then
 		return true
 	else
 		return false
@@ -544,7 +544,7 @@ CoD.ZombieUtility.IsVigorStatusEffectActive = function ( f29_arg0 )
 			return f29_local2
 		else
 			local f29_local2
-			if f29_local1 ~= 0xDAA9B10B8CD9489 and f29_local1 ~= 0x26970A561F83FC then
+			if f29_local1 ~= "hero_scepter_lv2_zm" and f29_local1 ~= 0x26970A561F83FC then
 				f29_local2 = false
 			else
 				f29_local2 = true
@@ -1514,7 +1514,7 @@ CoD.ZombieUtility.GetEquivalentPublicPlaylist = function ( f108_arg0, f108_arg1 
 			local f108_local6 = f108_local2[f108_local3]
 			if f108_local6.hidden ~= true then
 				local f108_local7 = LuaUtils.GetEModeForLobbyMainMode( f108_local6.lobbyMainMode )
-				if (f108_local7 == nil or CoD.DirectorUtility.IsSessionModeAvailable( f108_arg0, f108_local7 )) and f108_local1[0xEB7DDC7F079D51B] == f108_local6.lobbyMainMode then
+				if (f108_local7 == nil or CoD.DirectorUtility.IsSessionModeAvailable( f108_arg0, f108_local7 )) and f108_local1["mainmode"] == f108_local6.lobbyMainMode then
 					local f108_local8 = f108_local6.entries
 					for f108_local9 = 1, #f108_local8, 1 do
 						local f108_local12 = f108_local8[f108_local9]
@@ -1538,7 +1538,7 @@ CoD.ZombieUtility.GetEquivalentPrivatePlaylist = function ( f109_arg0, f109_arg1
 			local f109_local6 = f109_local2[f109_local3]
 			if f109_local6.hidden ~= true then
 				local f109_local7 = LuaUtils.GetEModeForLobbyMainMode( f109_local6.lobbyMainMode )
-				if (f109_local7 == nil or CoD.DirectorUtility.IsSessionModeAvailable( f109_arg0, f109_local7 )) and f109_local1[0xEB7DDC7F079D51B] == f109_local6.lobbyMainMode then
+				if (f109_local7 == nil or CoD.DirectorUtility.IsSessionModeAvailable( f109_arg0, f109_local7 )) and f109_local1["mainmode"] == f109_local6.lobbyMainMode then
 					local f109_local8 = f109_local6.entries
 					for f109_local9 = 1, #f109_local8, 1 do
 						local f109_local12 = f109_local8[f109_local9]
@@ -1737,7 +1737,7 @@ CoD.ZombieUtility.UpdateZMPlaylistInfo = function ( f112_arg0, f112_arg1, f112_a
 			f112_local1.statInt3:set( f112_local10[0xEC5DC2C8D272CE9]:get() )
 			local f112_local11 = f112_local10[0xE770CEC441C9F2]:get()
 			if f112_local11 == 0 then
-				f112_local1.statTimeString1:set( Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0x9FDF805B7D869B6 ) ) )
+				f112_local1.statTimeString1:set( Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "zmtrials/incomplete" ) ) )
 				f112_local1.bronzeComplete:set( false )
 			else
 				f112_local1.statTimeString1:set( f112_local6( f112_local11 ) )
@@ -1745,7 +1745,7 @@ CoD.ZombieUtility.UpdateZMPlaylistInfo = function ( f112_arg0, f112_arg1, f112_a
 			end
 			local f112_local12 = f112_local10[0xE46ACEC43F89E9]:get()
 			if f112_local12 == 0 then
-				f112_local1.statTimeString2:set( Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0x9FDF805B7D869B6 ) ) )
+				f112_local1.statTimeString2:set( Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "zmtrials/incomplete" ) ) )
 				f112_local1.silverComplete:set( false )
 			else
 				f112_local1.statTimeString2:set( f112_local6( f112_local12 ) )
@@ -1753,7 +1753,7 @@ CoD.ZombieUtility.UpdateZMPlaylistInfo = function ( f112_arg0, f112_arg1, f112_a
 			end
 			local f112_local13 = f112_local10[0x112691B7B737CE0]:get()
 			if f112_local13 == 0 then
-				f112_local1.statTimeString3:set( Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0x9FDF805B7D869B6 ) ) )
+				f112_local1.statTimeString3:set( Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "zmtrials/incomplete" ) ) )
 				f112_local1.goldComplete:set( false )
 			else
 				f112_local1.statTimeString3:set( f112_local6( f112_local13 ) )
@@ -1776,7 +1776,7 @@ CoD.ZombieUtility.GetQuickPlayPlaylistID = function ( f115_arg0 )
 		local f115_local5 = f115_local1[f115_local2]
 		if f115_local5.hidden ~= true then
 			local f115_local6 = LuaUtils.GetEModeForLobbyMainMode( f115_local5.lobbyMainMode )
-			if (f115_local6 == nil or CoD.DirectorUtility.IsSessionModeAvailable( f115_arg0, f115_local6 )) and f115_local0[0xEB7DDC7F079D51B] == f115_local5.lobbyMainMode then
+			if (f115_local6 == nil or CoD.DirectorUtility.IsSessionModeAvailable( f115_arg0, f115_local6 )) and f115_local0["mainmode"] == f115_local5.lobbyMainMode then
 				local f115_local7 = f115_local5.entries
 				for f115_local8 = 1, #f115_local7, 1 do
 					local f115_local11 = f115_local7[f115_local8]
@@ -2180,7 +2180,7 @@ CoD.ZombieUtility.ZMSummaryListGenericInfoTableFunc = function ( f124_arg0, f124
 				value = CoD.TextUtility.FormatNumberWithDelimiters( f124_local1.kills )
 			},
 			{
-				title = 0x8E2A982E7E6C57A,
+				title = "zmui/headshots_caps",
 				value = CoD.TextUtility.FormatNumberWithDelimiters( f124_local1.headshots )
 			},
 			{
@@ -2209,7 +2209,7 @@ CoD.ZombieUtility.ZMSummaryListGenericInfoTableFunc = function ( f124_arg0, f124
 			value = CoD.TextUtility.FormatNumberWithDelimiters( f124_local1.kills )
 		}
 		local f124_local8 = {
-			title = 0x8E2A982E7E6C57A,
+			title = "zmui/headshots_caps",
 			value = CoD.TextUtility.FormatNumberWithDelimiters( f124_local1.headshots )
 		}
 		local f124_local9 = {
@@ -2266,7 +2266,7 @@ CoD.ZombieUtility.ZMSummaryListGenericInfoTableFunc = function ( f124_arg0, f124
 				value = CoD.TextUtility.FormatNumberWithDelimiters( f124_local1.kills )
 			},
 			{
-				title = 0x8E2A982E7E6C57A,
+				title = "zmui/headshots_caps",
 				value = CoD.TextUtility.FormatNumberWithDelimiters( f124_local1.headshots )
 			},
 			{
@@ -2316,7 +2316,7 @@ CoD.ZombieUtility.ZMAllTimeSummaryListGenericInfoTableFunc = function ( f125_arg
 				value = CoD.TextUtility.FormatNumberWithDelimiters( f125_local1.allTimeKills )
 			},
 			{
-				title = 0x8E2A982E7E6C57A,
+				title = "zmui/headshots_caps",
 				value = CoD.TextUtility.FormatNumberWithDelimiters( f125_local1.allTimeHeadshots )
 			},
 			{
@@ -2337,7 +2337,7 @@ CoD.ZombieUtility.ZMAllTimeSummaryListGenericInfoTableFunc = function ( f125_arg
 			value = CoD.TextUtility.FormatNumberWithDelimiters( f125_local1.allTimeKills )
 		}
 		local f125_local8 = {
-			title = 0x8E2A982E7E6C57A,
+			title = "zmui/headshots_caps",
 			value = CoD.TextUtility.FormatNumberWithDelimiters( f125_local1.allTimeHeadshots )
 		}
 		local f125_local9 = {
@@ -2394,7 +2394,7 @@ CoD.ZombieUtility.ZMAllTimeSummaryListGenericInfoTableFunc = function ( f125_arg
 				value = CoD.TextUtility.FormatNumberWithDelimiters( f125_local1.allTimeKills )
 			},
 			{
-				title = 0x8E2A982E7E6C57A,
+				title = "zmui/headshots_caps",
 				value = CoD.TextUtility.FormatNumberWithDelimiters( f125_local1.allTimeHeadshots )
 			},
 			{
@@ -2841,7 +2841,7 @@ DataSources.DirectorPlaylistMapList = DataSourceHelpers.ListSetup( "DirectorPlay
 			f149_local22 = true
 		end
 		local f149_local23 = LuaUtils.PlaylistRulesIncludes( f149_local15.rules, 0x2319BDFEBA279FB, "2" )
-		local f149_local24 = LuaUtils.PlaylistRulesIncludes( f149_local15.rules, 0xCDF40B7B2EB8235, "2" )
+		local f149_local24 = LuaUtils.PlaylistRulesIncludes( f149_local15.rules, "scr_gunxpscalezm", "2" )
 		local f149_local25 = CoD.ZombieUtility.IsDoubleNP( f149_arg0 )
 		local f149_local26 = f149_local15[0xE45AEA6EE3C751B] and 2 or 1
 		local f149_local27 = table.insert
@@ -2956,7 +2956,7 @@ DataSources.DirectorPlaylistGameTypeList = DataSourceHelpers.ListSetup( "Directo
 		local f152_local14 = false
 		if f152_local8 == CoD.ZombieUtility.ZMPlaylistTabs.FEATURED then
 			f152_local14 = not f152_local6
-			f152_local12 = 0xF29BEFC80072FF5
+			f152_local12 = "menu/featured"
 			f152_local13 = f152_local3.featuredCategory and f152_local3 and not f152_local3.excludePublicLobby
 		elseif f152_local8 == CoD.ZombieUtility.ZMPlaylistTabs.PUBLIC then
 			f152_local12 = 0x7E251454EDF7A26
@@ -3048,7 +3048,7 @@ CoD.ZombieUtility.GetUnfilteredPlaylistEntriesForTab = function ( f154_arg0, f15
 		local f154_local6 = f154_local2[f154_local3]
 		if f154_local6.hidden ~= true then
 			local f154_local7 = LuaUtils.GetEModeForLobbyMainMode( f154_local6.lobbyMainMode )
-			if (f154_local7 == nil or CoD.DirectorUtility.IsSessionModeAvailable( f154_arg0, f154_local7 )) and f154_local1[0xEB7DDC7F079D51B] == f154_local6.lobbyMainMode then
+			if (f154_local7 == nil or CoD.DirectorUtility.IsSessionModeAvailable( f154_arg0, f154_local7 )) and f154_local1["mainmode"] == f154_local6.lobbyMainMode then
 				local f154_local8 = f154_local6.entries
 				for f154_local9 = 1, #f154_local8, 1 do
 					local f154_local12 = false

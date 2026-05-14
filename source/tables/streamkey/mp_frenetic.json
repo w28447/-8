@@ -1,7 +1,7 @@
 {
     "keys": [
         {
-            "name": "#hash_3f57a96671896ef8",
+            "name": "#mp_frenetic_all_stream",
             "xPakEntry": {
                 "key": "#hash_ee78e39338a16393",
                 "offset": 0,
@@ -20,7 +20,7 @@
             "keyFlags": 3
         },
         {
-            "name": "#hash_6bbbe352e1f1ba75",
+            "name": "#mp_frenetic_all_loaded",
             "xPakEntry": {
                 "key": "#hash_f5a056f9370ca264",
                 "offset": 0,
@@ -5093,7 +5093,7 @@
             "keyFlags": 0
         },
         {
-            "name": "#hash_1cf047a9b6e557c2",
+            "name": "#mp_frenetic_sst_0_0",
             "xPakEntry": {
                 "key": "#hash_e3231da6af406240",
                 "offset": 0,

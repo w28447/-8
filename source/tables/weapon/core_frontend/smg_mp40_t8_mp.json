@@ -3,7 +3,7 @@
     "baseWeapon": "#smg_mp40_t8",
     "displayname": "#weapon/smg_mp40",
     "weapon70": "#smg_mp40_t8",
-    "streamkey": "#hash_722211988fb04499",
+    "streamkey": "#smg_mp40_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",

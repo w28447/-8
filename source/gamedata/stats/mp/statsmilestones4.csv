@@ -24,7 +24,7 @@
 791,3,50,#global,#hash_656a2ab7e777796b,7#hash_64828cc15851816a,1500,0,u3?0,#,#,0,7#,u3?0,1,FALSE,gear,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 792,4,75,#global,#hash_656a2ab7e777796b,7#hash_64828cc15851816a,3000,0,u3?0,#,#mastery_gear,0,7#hash_57cf934513e5b15a,u3?0,1,FALSE,gear,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
 793,0,10,#global,#hash_1dd0ef4785aa4084,7#hash_62387d8c0c1042e9,750,0,u3?0,#,#mastery_gear,0,7#hash_3122a2b35bea72e3,u3?0,1,FALSE,gear,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
-794,0,25,#global,#hash_47c5c8af0f105c71,7#hash_49ae19c5f05ea90,750,0,u3?0,#,#mastery_gear,0,7#hash_34a1412bd528e2b8,u3?0,1,FALSE,gear,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
+794,0,25,#global,#objective_ekia_full_heal_medicalinjectiongun,7#hash_49ae19c5f05ea90,750,0,u3?0,#,#mastery_gear,0,7#hash_34a1412bd528e2b8,u3?0,1,FALSE,gear,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
 795,0,15,#global,#ekia_minimap_awareness_tracker,7#hash_3e567c220f7511e6,750,0,u3?0,#,#mastery_gear,0,7#hash_7fa518cc91809616,u3?0,1,FALSE,gear,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
 796,0,1,#global,#hash_7db6a4180312b94c,7#hash_31deb4cf7a99ea3e,750,0,u3?0,#,#mastery_gear,0,7#hash_22dc63ef784f5b8e,u3?0,1,FALSE,gear,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
 797,0,10,#global,#ekia_critical_heal_medicalinjectiongun_revenge,7#hash_3496862576522f10,750,0,u3?0,#,#mastery_gear,0,7#hash_2e01d0d10f846038,u3?0,1,FALSE,gear,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
@@ -113,7 +113,7 @@
 959,0,15,#global,#hash_580b295b38c0ee38,7#hash_50fe2969a5ba8070,1000,0,u3?0,#,#mastery_equipment,0,7#hash_56112328235060d8,u3?0,1,FALSE,equipment,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 960,0,25,#global,#hash_707d06184cf09b50,7#hash_19d725a1362216d0,1000,0,u3?0,#,#mastery_equipment,0,7#hash_67c41c7d5f1b41f8,u3?0,1,FALSE,equipment,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 961,0,5,#global,#stats_frag_multikill_x2_summary,7#hash_5dd8ad5c4c068708,1000,0,u3?0,#,#mastery_equipment,0,7#hash_6dfd785eac76dd10,u3?0,1,FALSE,equipment,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
-962,0,10,#global,#hash_1a02c128bae3a6a0,7#hash_712a52108f0ead6e,1000,0,u3?0,#,#mastery_equipment,0,7#hash_70a85fdba13b4d5e,u3?0,1,FALSE,equipment,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
+962,0,10,#global,#objective_ekia_concussed_enemy,7#hash_712a52108f0ead6e,1000,0,u3?0,#,#mastery_equipment,0,7#hash_70a85fdba13b4d5e,u3?0,1,FALSE,equipment,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 963,0,12,#global,#mastery_equipment,7#hash_3c092912420755c,10000,0,u3?0,#,#completed_all_challenges,0,7#hash_3cb024fab879fea4,u3?0,1,FALSE,equipment,FALSE,TRUE,FALSE,TRUE,FALSE,#,#,0
 964,0,25,#global,#hash_6803083fa39064a4,7#hash_3251a4b746d59251,500,0,u3?0,#,#,0,7#,u3?0,1,FALSE,wildcards,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 965,1,75,#global,#hash_6803083fa39064a4,7#hash_3251a4b746d59251,1000,0,u3?0,#,#,0,7#,u3?0,1,FALSE,wildcards,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0

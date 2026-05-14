@@ -46,7 +46,7 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT32"
                     },
@@ -124,7 +124,7 @@
             "type": "INT8"
         },
         {
-            "name": "#hash_4f2369bc188f798c",
+            "name": "#current_mem",
             "scrName": "#hash_5d73b997",
             "type": "UINT32"
         },
@@ -166,7 +166,7 @@
             "type": "BOOL"
         },
         {
-            "name": "#hash_7f4072cde37a7be8",
+            "name": "#subscription_count",
             "scrName": "#hash_63b46511",
             "type": "INT32"
         }

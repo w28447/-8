@@ -26,7 +26,7 @@ CoD[0x60D0B6654F8E009].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local tail = LUI.UIImage.new( 0, 0, -16, 121, 0, 0, 27, 164 )
 	tail:setZRot( -34 )
-	tail:setImage( RegisterImage( 0x6010168A9A0D3F2 ) )
+	tail:setImage( RegisterImage( "uie_ui_icon_callingcards_loot_cowboysandmonsters_fishtail" ) )
 	self:addElement( tail )
 	self.tail = tail
 	

@@ -77,7 +77,7 @@ Lobby.Events.OnMatchLaunchClient = {
 	function ( f3_arg0 )
 		Engine[0xDE279ECDDDD966]( Engine.GetPrimaryController(), 0xACF4E8AA288B3A5, {
 			[0xA988C5BE2B9606C] = f3_arg0.lobbyModule,
-			[0x193F66F4B46350C] = f3_arg0.lobbyType,
+			["lobby_type"] = f3_arg0.lobbyType,
 			[0x63C8C33B4DB02C7] = f3_arg0.lobbyMode
 		} )
 	end

@@ -30,22 +30,22 @@ CoD[0x14ECFF745AEB685].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.cop1 = cop1
 	
 	local glass1 = LUI.UIImage.new( 0, 0, 6, 342, 0, 0, 51, 299 )
-	glass1:setImage( RegisterImage( 0xA6E5A0F0AD19C7E ) )
+	glass1:setImage( RegisterImage( "uie_ui_menu_callingcards_heavymetal_glass1" ) )
 	self:addElement( glass1 )
 	self.glass1 = glass1
 	
 	local glass2 = LUI.UIImage.new( 0, 0, 349, 597, 0, 0, 120, 264 )
-	glass2:setImage( RegisterImage( 0xA6E590F0AD19ACB ) )
+	glass2:setImage( RegisterImage( "uie_ui_menu_callingcards_heavymetal_glass2" ) )
 	self:addElement( glass2 )
 	self.glass2 = glass2
 	
 	local glass3 = LUI.UIImage.new( 0, 0, 609.5, 825.5, 0, 0, 106, 306 )
-	glass3:setImage( RegisterImage( 0xA6E580F0AD19918 ) )
+	glass3:setImage( RegisterImage( "uie_ui_menu_callingcards_heavymetal_glass3" ) )
 	self:addElement( glass3 )
 	self.glass3 = glass3
 	
 	local glass4 = LUI.UIImage.new( 0, 0, 670.5, 1006.5, 0, 0, -8, 240 )
-	glass4:setImage( RegisterImage( 0xA6E5F0F0AD1A4FD ) )
+	glass4:setImage( RegisterImage( "uie_ui_menu_callingcards_heavymetal_glass4" ) )
 	self:addElement( glass4 )
 	self.glass4 = glass4
 	

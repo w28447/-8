@@ -3,7 +3,7 @@
     "baseWeapon": "#ww_tricannon_t8",
     "displayname": "#zmweapon/ww_tricannon_t8",
     "weapon70": "#ww_tricannon_t8",
-    "streamkey": "#hash_77248b4e2fdfedbf",
+    "streamkey": "#ww_tricannon_t8_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

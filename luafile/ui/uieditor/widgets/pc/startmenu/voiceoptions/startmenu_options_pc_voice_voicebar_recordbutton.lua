@@ -138,7 +138,7 @@ CoD.StartMenu_Options_PC_Voice_VoiceBar_RecordButton.__clipsPerState = {
 			local f11_local1 = function ( f13_arg0 )
 				f11_arg0.RecordImage:beginAnimation( 200 )
 				f11_arg0.RecordImage:setRGB( 1, 0.22, 0.16 )
-				f11_arg0.RecordImage:setImage( RegisterImage( 0x3BB127E81D2363C ) )
+				f11_arg0.RecordImage:setImage( RegisterImage( "uie_voice_stop" ) )
 				f11_arg0.RecordImage:registerEventHandler( "interrupted_keyframe", f11_arg0.clipInterrupted )
 				f11_arg0.RecordImage:registerEventHandler( "transition_complete_keyframe", f11_arg0.clipFinished )
 			end
@@ -172,7 +172,7 @@ CoD.StartMenu_Options_PC_Voice_VoiceBar_RecordButton.__clipsPerState = {
 			f16_arg0.clipFinished( f16_arg0.Background )
 			f16_arg0.RecordImage:completeAnimation()
 			f16_arg0.RecordImage:setRGB( 1, 0.22, 0.16 )
-			f16_arg0.RecordImage:setImage( RegisterImage( 0x3BB127E81D2363C ) )
+			f16_arg0.RecordImage:setImage( RegisterImage( "uie_voice_stop" ) )
 			f16_arg0.clipFinished( f16_arg0.RecordImage )
 			f16_arg0.PCHighlightBorder:completeAnimation()
 			f16_arg0.PCHighlightBorder:setAlpha( 1 )
@@ -187,7 +187,7 @@ CoD.StartMenu_Options_PC_Voice_VoiceBar_RecordButton.__clipsPerState = {
 			f17_arg0.clipFinished( f17_arg0.Background )
 			f17_arg0.RecordImage:completeAnimation()
 			f17_arg0.RecordImage:setRGB( 1, 0.22, 0.16 )
-			f17_arg0.RecordImage:setImage( RegisterImage( 0x3BB127E81D2363C ) )
+			f17_arg0.RecordImage:setImage( RegisterImage( "uie_voice_stop" ) )
 			f17_arg0.clipFinished( f17_arg0.RecordImage )
 			f17_arg0.PCHighlightBorder:completeAnimation()
 			f17_arg0.PCHighlightBorder:setAlpha( 1 )
@@ -215,7 +215,7 @@ CoD.StartMenu_Options_PC_Voice_VoiceBar_RecordButton.__clipsPerState = {
 			
 			f18_arg0.RecordImage:completeAnimation()
 			f18_arg0.RecordImage:setRGB( 1, 0.22, 0.16 )
-			f18_arg0.RecordImage:setImage( RegisterImage( 0x3BB127E81D2363C ) )
+			f18_arg0.RecordImage:setImage( RegisterImage( "uie_voice_stop" ) )
 			f18_local1( f18_arg0.RecordImage )
 			f18_arg0.PCHighlightBorder:completeAnimation()
 			f18_arg0.PCHighlightBorder:setAlpha( 1 )
@@ -243,7 +243,7 @@ CoD.StartMenu_Options_PC_Voice_VoiceBar_RecordButton.__clipsPerState = {
 			
 			f21_arg0.RecordImage:completeAnimation()
 			f21_arg0.RecordImage:setRGB( 1, 0.22, 0.16 )
-			f21_arg0.RecordImage:setImage( RegisterImage( 0x3BB127E81D2363C ) )
+			f21_arg0.RecordImage:setImage( RegisterImage( "uie_voice_stop" ) )
 			f21_local1( f21_arg0.RecordImage )
 			f21_arg0.PCHighlightBorder:completeAnimation()
 			f21_arg0.PCHighlightBorder:setAlpha( 1 )
@@ -273,7 +273,7 @@ CoD.StartMenu_Options_PC_Voice_VoiceBar_RecordButton.__clipsPerState = {
 			
 			f24_arg0.RecordImage:completeAnimation()
 			f24_arg0.RecordImage:setRGB( 1, 0.22, 0.16 )
-			f24_arg0.RecordImage:setImage( RegisterImage( 0x3BB127E81D2363C ) )
+			f24_arg0.RecordImage:setImage( RegisterImage( "uie_voice_stop" ) )
 			f24_local1( f24_arg0.RecordImage )
 			local f24_local2 = function ( f27_arg0 )
 				f24_arg0.PCHighlightBorder:playClip( "DefaultClip" )

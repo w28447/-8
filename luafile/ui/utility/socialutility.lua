@@ -345,7 +345,7 @@ CoD.SocialUtility.SendInvites = function ( f26_arg0, f26_arg1 )
 		inviteCount = 0
 	}
 	if CoD.isPC and not CoD.canSendInvites( f26_arg1 ) then
-		LuaUtils.UI_ShowErrorMessageDialog( f26_arg1, 0x1B3BB99254ECCCC, 0x127999393F1681 )
+		LuaUtils.UI_ShowErrorMessageDialog( f26_arg1, 0x1B3BB99254ECCCC, "menu/error_caps" )
 		return 
 	elseif f26_arg0.inviteType then
 		for f26_local4, f26_local5 in pairs( CoD.SocialUtility.CheckedInvitees ) do
@@ -851,7 +851,7 @@ CoD.SocialUtility.GetFriendsButtonOptions = function ( f36_arg0, f36_arg1, f36_a
 								params = {
 									controller = f36_arg0,
 									xuid = f36_arg2,
-									joinType = Enum.JoinType[0xC21E48130C4B82B],
+									joinType = Enum.JoinType["join_type_friend"],
 									goBack = true
 								}
 							} )
@@ -890,7 +890,7 @@ CoD.SocialUtility.GetFriendsButtonOptions = function ( f36_arg0, f36_arg1, f36_a
 	f36_local4()
 	if f36_local5.info.hasEverPlayed == true and not f36_local3 and (not (not f36_arg1 or not f36_arg1.menu or f36_arg1.menu.disableInspection or IsInGame()) or IsPC() and not IsInGame() and f36_arg5 and f36_arg6 ~= "SinglePlayerInspection" and f36_arg6 ~= "LobbyInspection") then
 		table.insert( f36_local0, {
-			text = 0xFF0DBCF80106E7B,
+			text = "menu/inspect_player",
 			id = "inspectPlayer",
 			disabled = false,
 			action = function ( f38_arg0, f38_arg1, f38_arg2, f38_arg3, f38_arg4 )
@@ -969,7 +969,7 @@ CoD.SocialUtility.GetFriendsButtonOptions = function ( f36_arg0, f36_arg1, f36_a
 		if f36_local6 or f36_local7 then
 			if f36_local8 then
 				table.insert( f36_local0, {
-					text = 0x39685D9366015DB,
+					text = "menu/unmute_player",
 					id = "unmutePlayer",
 					disabled = false,
 					action = UnMutePlayer,
@@ -2073,7 +2073,7 @@ DataSources.PartyControlsList = DataSourceHelpers.ListSetup( "PartyControlsList"
 		table.insert( f60_local3, f0_local1( f60_arg0 ) )
 	end
 	if (CoD.isPC or not CoD.DirectorUtility.DisableForCurrentMilestone( f60_arg0 )) and ShouldShowLeaveParty( f60_arg0 ) then
-		table.insert( f60_local3, f60_local2( f60_arg0, 0xBC2011402700EA4, "uie_t7_menu_social_leave_party", 0xEF2D3320785B51A, function ( f67_arg0, f67_arg1, f67_arg2, f67_arg3, f67_arg4 )
+		table.insert( f60_local3, f60_local2( f60_arg0, "menu/manage_party_leave_button", "uie_t7_menu_social_leave_party", 0xEF2D3320785B51A, function ( f67_arg0, f67_arg1, f67_arg2, f67_arg3, f67_arg4 )
 			if not CoD.isPC then
 				CoD.OverlayUtility.CreateOverlay( f67_arg2, f67_arg4, "LobbyLeavePopup", LuaEnum.LEAVE_LOBBY_POPUP.MANAGE_PARTY_LEAVE )
 			else

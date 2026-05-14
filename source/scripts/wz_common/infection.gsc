@@ -1,4 +1,4 @@
-#using script_cb32d07c95e5628;
+#using scripts\mp_common\item_spawn_groups_util.gsc;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\clientfield_shared;
 #using scripts\core_common\infection;
@@ -366,7 +366,7 @@ function private function_70f6e873( params )
     
     attacker = params.eattacker;
     origin = self.origin;
-    items = self namespace_65181344::function_fd87c780( #"zombie_infected_itemlist", 1 );
+    items = self item_spawn_groups_util::function_fd87c780( #"zombie_infected_itemlist", 1 );
     
     foreach ( item in items )
     {

@@ -50,15 +50,15 @@
 #air_vent,#repair_react,#vox_air_vent_repair_react,0,0,FALSE,FALSE,FALSE,FALSE
 #air_vent,#repaired_react,#vox_air_vent_repaired_react,0,0,FALSE,FALSE,FALSE,FALSE
 #mmtd,#place,#vox_mmtd_place,0,0,FALSE,FALSE,FALSE,FALSE
-#power_switch,#activate,#hash_20d3116fdeafe16d,0,0,FALSE,FALSE,FALSE,FALSE
+#power_switch,#activate,#vox_power_switch,0,0,FALSE,FALSE,FALSE,FALSE
 #roundstart,#special,#vox_roundstart_special,0,0,FALSE,FALSE,FALSE,FALSE
 #trap_electric,#activate,#vox_trap_electric_activate,20,0,FALSE,FALSE,FALSE,FALSE
 #trap_generic,#activate,#vox_trap_generic_activate,20,0,FALSE,FALSE,FALSE,FALSE
 #boss,#release,#vox_boss_release,0,0,FALSE,FALSE,FALSE,FALSE
 #boss,#canister_instruct,#vox_boss_canister_instruct,0,0,FALSE,FALSE,FALSE,FALSE
 #boss,#electric_warn,#vox_boss_electric_warn,0,0,FALSE,FALSE,FALSE,FALSE
-#boss,#hash_44be98a2ee6ccd03,#hash_3a561b214fd1c2f5,0,0,FALSE,FALSE,FALSE,FALSE
-#boss,#hash_3b5b885459a89377,#hash_2260a354cf8d04c1,0,0,FALSE,FALSE,FALSE,FALSE
+#boss,#radial_attack_react,#vox_boss_radial_attack_react,0,0,FALSE,FALSE,FALSE,FALSE
+#boss,#no_bullet_react,#vox_boss_no_bullet_react,0,0,FALSE,FALSE,FALSE,FALSE
 #boss,#success,#vox_boss_success,0,0,FALSE,FALSE,FALSE,FALSE
 #ww,#kit_built,#vox_ww_kit_built,0,0,FALSE,FALSE,FALSE,FALSE
 #ww,#v_ammo_pickup,#vox_ww_v_ammo_pickup,0,0,FALSE,FALSE,FALSE,FALSE
@@ -74,7 +74,7 @@
 #ww,#z_craft,#vox_ww_z_craft,0,0,FALSE,FALSE,FALSE,FALSE
 #adam,#activate,#vox_adam_activate,0,0,FALSE,FALSE,FALSE,TRUE
 #kill,#streak_adam,#hash_ef37e503bea9d0d,0,60,FALSE,FALSE,FALSE,TRUE
-#revive,#adam,#hash_53f88233b5c25d74,0,60,FALSE,FALSE,FALSE,TRUE
+#revive,#adam,#vox_adam_revive_react,0,60,FALSE,FALSE,FALSE,TRUE
 #s1,#prove,#vox_s1_prove,0,0,FALSE,FALSE,FALSE,FALSE
 #s2,#locate,#vox_s2_locate,0,0,FALSE,FALSE,FALSE,FALSE
 #s2,#escort,#vox_s2_escort,0,0,FALSE,FALSE,FALSE,FALSE

@@ -33,7 +33,7 @@ function __init__()
     function_e9e03d6f( #"not_in_combat", &function_b94f5770 );
     function_e9e03d6f( #"revive_player", &function_8adaa75f );
     function_e9e03d6f( #"gameobject_interact", &function_daab6847 );
-    function_e9e03d6f( #"hash_797d652ff338b7d4", &function_90ff35fc );
+    function_e9e03d6f( #"vehicle_gameobject_interact", &function_90ff35fc );
     function_e9e03d6f( #"visible_enemy", &handle_visible_enemy );
     function_e9e03d6f( #"find_best_cover", &handle_find_best_cover );
     function_aa8c6854( #"goal", &get_goal_center );
@@ -85,7 +85,7 @@ function start()
 // Size: 0x4a
 function stop()
 {
-    self notify( #"hash_6cefc75b9a427c7d" );
+    self notify( #"bot_position_stop" );
     self function_e027100a();
     
     if ( isdefined( self.bot ) )
@@ -100,7 +100,7 @@ function stop()
 // Size: 0x2c
 function reset()
 {
-    self.bot.var_18fa994c = 0;
+    self.bot.nextpositiontime = 0;
     self function_e027100a();
 }
 
@@ -123,7 +123,7 @@ function update( tacbundle )
         return;
     }
     
-    if ( self.bot.var_18fa994c > gettime() )
+    if ( self.bot.nextpositiontime > gettime() )
     {
         return;
     }
@@ -171,12 +171,12 @@ function update( tacbundle )
     
     if ( isdefined( self.bot.var_2ee077ff ) )
     {
-        self.bot.var_18fa994c = self.bot.var_2ee077ff;
+        self.bot.nextpositiontime = self.bot.var_2ee077ff;
         self.bot.var_2ee077ff = undefined;
         return;
     }
     
-    self.bot.var_18fa994c = bot::function_7aeb27f1( self.bot.tacbundle.var_1f8a6a2, self.bot.tacbundle.var_2fc77943 );
+    self.bot.nextpositiontime = bot::function_7aeb27f1( self.bot.tacbundle.nextpositiontimemin, self.bot.tacbundle.nextpositiontimemax );
 }
 
 // Namespace bot_position/bot_position
@@ -195,7 +195,7 @@ function private function_e027100a()
 // Size: 0x96
 function handle_goal()
 {
-    self endon( #"death", #"hash_6cefc75b9a427c7d" );
+    self endon( #"death", #"bot_position_stop" );
     level endon( #"game_ended" );
     
     while ( isdefined( self.bot ) )
@@ -216,7 +216,7 @@ function handle_goal()
 // Size: 0x10e
 function handle_goal_changed()
 {
-    self endon( #"death", #"hash_6cefc75b9a427c7d" );
+    self endon( #"death", #"bot_position_stop" );
     level endon( #"game_ended" );
     
     while ( isdefined( self.bot ) )
@@ -248,7 +248,7 @@ function handle_goal_changed()
 // Size: 0x8e
 function handle_path_success()
 {
-    self endon( #"death", #"hash_6cefc75b9a427c7d" );
+    self endon( #"death", #"bot_position_stop" );
     level endon( #"game_ended" );
     
     while ( isdefined( self.bot ) )
@@ -265,7 +265,7 @@ function handle_path_success()
 // Size: 0x14c
 function handle_path_failed()
 {
-    self endon( #"death", #"hash_6cefc75b9a427c7d" );
+    self endon( #"death", #"bot_position_stop" );
     level endon( #"game_ended" );
     
     while ( isdefined( self.bot ) )
@@ -431,7 +431,7 @@ function can_teleport()
 // Size: 0xce
 function function_2bcdf566()
 {
-    self endon( #"death", #"hash_6cefc75b9a427c7d" );
+    self endon( #"death", #"bot_position_stop" );
     level endon( #"game_ended" );
     
     while ( isdefined( self.bot ) )

@@ -151,7 +151,7 @@ function function_cf613da7()
 {
     if ( !self util::gadget_is_in_use( 2 ) )
     {
-        level thread ct_utils::function_bfa522d1( 0 );
+        level thread ct_utils::simulation_pulse( 0 );
     }
 }
 

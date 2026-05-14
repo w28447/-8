@@ -52,10 +52,10 @@
         level thread dev::devgui_test_chart_think();
         level thread devgui_player_spawn_think();
         level thread devgui_vehicle_spawn_think();
-        level thread function_7bef8d25();
+        level thread devgui_health_think();
         level thread function_be0f9897();
         level thread dev::function_487bf571();
-        level thread function_46b22d99();
+        level thread devgui_end_round_think();
         level thread function_773432e2();
         level thread function_6a24e58f();
         level thread function_57edec18();
@@ -1093,10 +1093,10 @@
     // Params 0
     // Checksum 0xb5557b13, Offset: 0x3438
     // Size: 0x1a0, Type: dev
-    function function_7bef8d25()
+    function devgui_health_think()
     {
-        level notify( #"hash_6a8b1c9e1485919d" );
-        level endon( #"hash_6a8b1c9e1485919d" );
+        level notify( #"devgui_health_think" );
+        level endon( #"devgui_health_think" );
         wait 5;
         function_e4b86469();
         wait 1;
@@ -1136,10 +1136,10 @@
     // Params 0
     // Checksum 0x817ce5ea, Offset: 0x35e0
     // Size: 0x1b8, Type: dev
-    function function_46b22d99()
+    function devgui_end_round_think()
     {
-        level notify( #"hash_4c09c9d01060d7ad" );
-        level endon( #"hash_4c09c9d01060d7ad" );
+        level notify( #"devgui_end_round_think" );
+        level endon( #"devgui_end_round_think" );
         wait 2;
         function_9fb69cba();
         wait 0.5;

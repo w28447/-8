@@ -13,7 +13,7 @@ CoD.ArenaFindGameDetailModes.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local AARPerformBg = LUI.UIImage.new( 0, 0, 0, 460, 0, 0, 0, 210 )
 	AARPerformBg:setAlpha( 0.5 )
-	AARPerformBg:setImage( RegisterImage( 0xF95A1671A1AB874 ) )
+	AARPerformBg:setImage( RegisterImage( "uie_ui_menu_aar_perform_repeat_bg" ) )
 	AARPerformBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	AARPerformBg:setShaderVector( 0, 0, 0, 0, 0 )
 	AARPerformBg:setupNineSliceShader( 344, 136 )

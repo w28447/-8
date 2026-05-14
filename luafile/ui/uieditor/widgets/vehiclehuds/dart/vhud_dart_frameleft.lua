@@ -19,7 +19,7 @@ CoD.vhud_dart_frameLeft.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	self.FrameGraphicLeft = FrameGraphicLeft
 	
 	local FrameHlineLeft = LUI.UIImage.new( 0, 0, 209, 391, 0, 0, 238, 246 )
-	FrameHlineLeft:setImage( RegisterImage( 0x9F9F4F6492BE854 ) )
+	FrameHlineLeft:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_frame_hline" ) )
 	FrameHlineLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	FrameHlineLeft:setShaderVector( 0, 0, 1, 0, 0 )
 	FrameHlineLeft:setShaderVector( 1, 0, 0, 0, 0 )
@@ -30,7 +30,7 @@ CoD.vhud_dart_frameLeft.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	self.FrameHlineLeft = FrameHlineLeft
 	
 	local FrameHlineLeft2 = LUI.UIImage.new( 0, 0, 209, 391, 0, 0, 238, 246 )
-	FrameHlineLeft2:setImage( RegisterImage( 0x9F9F4F6492BE854 ) )
+	FrameHlineLeft2:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_frame_hline" ) )
 	FrameHlineLeft2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	FrameHlineLeft2:setShaderVector( 0, 0, 1, 0, 0 )
 	FrameHlineLeft2:setShaderVector( 1, 0, 0, 0, 0 )

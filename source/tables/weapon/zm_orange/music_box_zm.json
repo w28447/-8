@@ -3,7 +3,7 @@
     "baseWeapon": "#music_box",
     "displayname": "#zmweapon/music_box",
     "weapon70": "#music_box",
-    "streamkey": "#hash_2c2000b90a0a8a54",
+    "streamkey": "#music_box_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

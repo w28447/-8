@@ -15,7 +15,7 @@
     "shouldCullDistance": false,
     "cullDistance": 300,
     "hasLowAmmoState": false,
-    "waypointText": "#hash_4c0b015a205aa137",
+    "waypointText": "#zmtrials/sacrifice",
     "waypointImage": "#uie_t7_zm_hud_obj_goto",
     "unk30": 300,
     "bundle": {

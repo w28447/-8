@@ -840,7 +840,7 @@ function function_7103a97e()
 {
     playsoundatposition( #"hash_3fc59a2ac3e3a5b9", ( 0, 0, 0 ) );
     wait 0.5;
-    level zm_hms_util::function_3c173d37();
+    level zm_hms_util::vo_stop_all();
     level.var_8200dc81 zm_hms_util::function_6a0d675d( "vox_air_vent_repair", 0, 0 );
     thread zm_hms_util::function_fd24e47f( "vox_air_vent_repair_react", -1, 0, 1 );
 }
@@ -1086,10 +1086,10 @@ function function_b990c084()
 // Size: 0xbc
 function function_bd2bb73a()
 {
-    level.var_8200dc81 zm_hms_util::function_6a0d675d( #"hash_66d4e14752453ba5", 0, 0 );
-    level zm_hms_util::function_3c173d37();
-    level.var_8200dc81 zm_hms_util::function_6a0d675d( #"hash_66d4e047524539f2", 0, 0, 1 );
-    level zm_hms_util::function_3c173d37();
+    level.var_8200dc81 zm_hms_util::function_6a0d675d( #"vox_air_vent_repaired_0", 0, 0 );
+    level zm_hms_util::vo_stop_all();
+    level.var_8200dc81 zm_hms_util::function_6a0d675d( #"vox_air_vent_repaired_1", 0, 0, 1 );
+    level zm_hms_util::vo_stop_all();
     level zm_hms_util::function_fd24e47f( "vox_air_vent_repaired_react", -1, 0, 1 );
 }
 
@@ -1571,7 +1571,7 @@ function function_2791c411()
         level flag::wait_till( #"bunker_beds_to_bunker_power" );
     }
     
-    level.var_9808f4d = zombie_utility::get_zombie_var( #"hash_7d5a25e2463f7fc5" );
+    level.var_9808f4d = zombie_utility::get_zombie_var( #"zombie_spawn_delay_base" );
     
     while ( !level flag::get( #"hash_40856b65dff0f6eb" ) )
     {
@@ -1829,7 +1829,7 @@ function function_2330b278()
     level.zones[ #"zone_bunker_power_2" ].adjacent_zones[ #"zone_bunker_beds_2" ].is_connected = 0;
     level.var_4a31d48a = 0;
     level.var_f9c3678e = 0;
-    zombie_utility::set_zombie_var( #"hash_7d5a25e2463f7fc5", level.var_9808f4d * 0.75 );
+    zombie_utility::set_zombie_var( #"zombie_spawn_delay_base", level.var_9808f4d * 0.75 );
     
     /#
         iprintlnbold( "<dev string:x2ea>" );
@@ -1847,7 +1847,7 @@ function function_2330b278()
     #/
     
     level.var_8200dc81 thread zm_hms_util::function_6a0d675d( #"hash_56c42fa94656e07b", 0, 0 );
-    zombie_utility::set_zombie_var( #"hash_7d5a25e2463f7fc5", level.var_9808f4d * 0.5 );
+    zombie_utility::set_zombie_var( #"zombie_spawn_delay_base", level.var_9808f4d * 0.5 );
     level.var_9c82c58d = 0.8;
     wait 30;
     
@@ -1997,7 +1997,7 @@ function function_6acd363d( is_completed )
     level.fn_custom_round_ai_spawn = level.var_dc22f98;
     level.var_dc22f98 = undefined;
     level.var_819e7dfd[ #"zombie_dog" ].var_87ed2709 = level.old_dog_spawn;
-    zombie_utility::set_zombie_var( #"hash_7d5a25e2463f7fc5", level.var_9808f4d );
+    zombie_utility::set_zombie_var( #"zombie_spawn_delay_base", level.var_9808f4d );
     music::setmusicstate( "none" );
     level.musicsystemoverride = 0;
     level.zombie_total = 0;
@@ -2541,7 +2541,7 @@ function power_room_fan_control()
     var_e03da92 = 10;
     level flag::wait_till( #"hash_5cdee936ef283689" );
     self rotatevelocity( ( 0, 0, var_8ada9d ), var_f63ac386, var_f63ac386, 0 );
-    self playloopsound( #"hash_3c2abf1f67d713e4" );
+    self playloopsound( #"amb_exhaust_fan" );
     wait var_f63ac386;
     
     while ( level flag::get( #"hash_5cdee936ef283689" ) )

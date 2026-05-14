@@ -1,7 +1,7 @@
 {
     "name": "#zitem_silver_molten_part_3_zm",
     "baseWeapon": "#zitem_silver_molten_part_3",
-    "streamkey": "#hash_359551b63729fcc0",
+    "streamkey": "#zitem_silver_molten_part_3_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

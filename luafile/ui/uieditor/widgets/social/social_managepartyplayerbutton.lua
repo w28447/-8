@@ -47,7 +47,7 @@ CoD.Social_ManagePartyPlayerButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 		end
 	end, function ( f6_arg0, f6_arg1, f6_arg2 )
 		if CoD.ModelUtility.IsSelfModelValueTrue( self, f6_arg2, "empty" ) then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xC4EB9FE5F09A2E7, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/invite_players", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -79,7 +79,7 @@ CoD.Social_ManagePartyPlayerButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	FrontendFocusPip = LUI.UIImage.new( 0, 1, -6, 6, 0, 1, -6, 6 )
 	FrontendFocusPip:setAlpha( 0 )
-	FrontendFocusPip:setImage( RegisterImage( 0x793C73633F620BB ) )
+	FrontendFocusPip:setImage( RegisterImage( "uie_ui_menu_store_focus_pips" ) )
 	FrontendFocusPip:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFocusPip:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFocusPip:setupNineSliceShader( 40, 40 )

@@ -1,4 +1,4 @@
-#using script_cb32d07c95e5628;
+#using scripts\mp_common\item_spawn_groups_util.gsc;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\clientfield_shared;
 #using scripts\core_common\infection;
@@ -38,7 +38,7 @@ function private __init__()
     
     /#
         level.var_80bea5a6 = 0;
-        level thread function_b4f41a02();
+        level thread wz_ai_devgui();
     #/
     
     level.var_8a3036cc = 0;
@@ -87,11 +87,11 @@ function private __init__()
     // Params 0
     // Checksum 0x8b2c7d5, Offset: 0x668
     // Size: 0x430, Type: dev
-    function function_b4f41a02()
+    function wz_ai_devgui()
     {
         level endon( #"game_ended" );
         aitypes = array( #"spawner_boct_zombie_wz", #"spawner_boct_zombie_mob_wz", #"spawner_wz_blight_father", #"spawner_boct_zombie_dog_wz", #"spawner_boct_brutus_special_wz", #"spawner_boct_brutus_wz", #"spawner_boct_avogadro" );
-        setdvar( #"hash_209287456d55fca1", "<dev string:x38>" );
+        setdvar( #"wz_ai_devgui_cmd", "<dev string:x38>" );
         
         foreach ( type in aitypes )
         {
@@ -107,7 +107,7 @@ function private __init__()
         while ( true )
         {
             wait 0.1;
-            cmd = getdvarstring( #"hash_209287456d55fca1", "<dev string:x38>" );
+            cmd = getdvarstring( #"wz_ai_devgui_cmd", "<dev string:x38>" );
             
             if ( cmd == "<dev string:x38>" )
             {
@@ -118,7 +118,7 @@ function private __init__()
             
             switch ( cmd_tokens[ 0 ] )
             {
-                case #"hash_c0b89e8d4a71cff":
+                case #"debug_spawn_ai":
                     player = level.players[ 0 ];
                     direction = player getplayerangles();
                     direction_vec = anglestoforward( direction );
@@ -131,7 +131,7 @@ function private __init__()
                     break;
             }
             
-            setdvar( #"hash_209287456d55fca1", "<dev string:x38>" );
+            setdvar( #"wz_ai_devgui_cmd", "<dev string:x38>" );
         }
     }
 
@@ -912,7 +912,7 @@ function function_d92e3c5a( attacker, ai_zone, itemlist )
     }
     
     v_origin = self.origin;
-    items = self namespace_65181344::function_fd87c780( itemlist, self.itemdropcount );
+    items = self item_spawn_groups_util::function_fd87c780( itemlist, self.itemdropcount );
     
     if ( !isdefined( self ) )
     {
@@ -1285,7 +1285,7 @@ function function_bf357ddf( spawnpt, itemlist )
     if ( isdefined( spawnpt.target ) )
     {
         var_10508147 = struct::get( spawnpt.target, "targetname" );
-        items = self namespace_65181344::function_fd87c780( itemlist, 1 );
+        items = self item_spawn_groups_util::function_fd87c780( itemlist, 1 );
         
         for ( i = 0; i < items.size ; i++ )
         {

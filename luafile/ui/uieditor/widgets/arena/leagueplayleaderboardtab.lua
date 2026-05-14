@@ -17,7 +17,7 @@ CoD.LeaguePlayLeaderboardTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local AARPerformBg2 = LUI.UIImage.new( 0, 0, 240, 1677, 0, 0, 120, 216 )
 	AARPerformBg2:setAlpha( 0.5 )
-	AARPerformBg2:setImage( RegisterImage( 0xF95A1671A1AB874 ) )
+	AARPerformBg2:setImage( RegisterImage( "uie_ui_menu_aar_perform_repeat_bg" ) )
 	AARPerformBg2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	AARPerformBg2:setShaderVector( 0, 0, 0, 0, 0 )
 	AARPerformBg2:setupNineSliceShader( 344, 136 )

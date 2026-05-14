@@ -39,10 +39,10 @@ function autoexec __init__system__()
 function __init__()
 {
     n_bits = getminbitcountfornum( 4 );
-    clientfield::register( "scriptmover", "" + #"hash_5ecbfb9042fc7f38", 1, 1, "int" );
-    clientfield::register( "actor", "" + #"hash_588871862d19b97d", 1, 1, "int" );
-    clientfield::register( "scriptmover", "" + #"hash_2be4ce9b84bd3b58", 1, 1, "counter" );
-    clientfield::register( "actor", "" + #"hash_338ecd1287d0623b", 1, 1, "counter" );
+    clientfield::register( "scriptmover", "" + #"soul_catcher_portal", 1, 1, "int" );
+    clientfield::register( "actor", "" + #"soul_catcher_charge_start", 1, 1, "int" );
+    clientfield::register( "scriptmover", "" + #"soul_catcher_impact", 1, 1, "counter" );
+    clientfield::register( "actor", "" + #"soul_catcher_eaten", 1, 1, "counter" );
     clientfield::register( "scriptmover", "" + #"tomahawk_pickup_fx", 1, n_bits, "int" );
     clientfield::register( "scriptmover", "" + #"hash_51657261e835ac7c", 1, n_bits, "int" );
     clientfield::register( "toplayer", "" + #"tomahawk_pickup_fx", 13000, 1, "int" );
@@ -201,7 +201,7 @@ function function_d2093ddd( willbekilled, inflictor, attacker, damage, flags, mo
                     self.animname = "zombie_eaten";
                     self notsolid();
                     self setteam( util::get_enemy_team( self.team ) );
-                    attacker notify( #"hash_2706d6137c04adf4" );
+                    attacker notify( #"fed_wolf_head" );
                     self.var_cfd3756 = level.a_s_soul_catchers[ i ];
                     self.var_cfd3756.var_aa1a7f2e = 1;
                     
@@ -263,7 +263,7 @@ function function_e40e9d94( n_eating_anim, ai_zombie, e_activator )
     
     if ( isdefined( ai_zombie ) )
     {
-        ai_zombie clientfield::set( "" + #"hash_588871862d19b97d", 1 );
+        ai_zombie clientfield::set( "" + #"soul_catcher_charge_start", 1 );
     }
     
     vec_dir = self.s_scene.origin - var_678e573f.origin;
@@ -329,7 +329,7 @@ function function_e40e9d94( n_eating_anim, ai_zombie, e_activator )
     if ( isdefined( ai_zombie ) )
     {
         ai_zombie unlink();
-        ai_zombie clientfield::set( "" + #"hash_588871862d19b97d", 0 );
+        ai_zombie clientfield::set( "" + #"soul_catcher_charge_start", 0 );
         self.s_scene scene::play( var_3e4fd9fd, ai_zombie );
     }
     else
@@ -337,7 +337,7 @@ function function_e40e9d94( n_eating_anim, ai_zombie, e_activator )
         self.s_scene scene::play( var_3e4fd9fd );
     }
     
-    var_3e1900e4 clientfield::increment( "" + #"hash_2be4ce9b84bd3b58" );
+    var_3e1900e4 clientfield::increment( "" + #"soul_catcher_impact" );
     self.var_43bd3b5++;
     self notify( #"finished_eating" );
     self.var_aa1a7f2e = 0;
@@ -358,7 +358,7 @@ function function_37937b33()
 {
     self endon( #"death" );
     self waittill( #"zombie_eaten_hide" );
-    self clientfield::increment( "" + #"hash_338ecd1287d0623b" );
+    self clientfield::increment( "" + #"soul_catcher_eaten" );
     self ghost();
 }
 
@@ -416,7 +416,7 @@ function soul_catcher_state_manager()
         self.t_hurt show();
     }
     
-    self.mdl_rune clientfield::set( "" + #"hash_5ecbfb9042fc7f38", 1 );
+    self.mdl_rune clientfield::set( "" + #"soul_catcher_portal", 1 );
     self.s_scene scene::play( "Start" );
     self flag::set( #"wolf_intro_anim_complete" );
     self waittill( #"finished_eating" );
@@ -428,7 +428,7 @@ function soul_catcher_state_manager()
     }
     
     self notify( #"hash_1c2dd0a16f7ac134" );
-    self.mdl_rune clientfield::set( "" + #"hash_5ecbfb9042fc7f38", 0 );
+    self.mdl_rune clientfield::set( "" + #"soul_catcher_portal", 0 );
     self.mdl_rune setmodel( "p8_zm_esc_dream_catcher" );
     self.s_scene scene::play( "Depart" );
 }
@@ -653,7 +653,7 @@ function tomahawk_pickup()
         }
         else
         {
-            trigger sethintstring( #"hash_1cf1c33d78cb53aa" );
+            trigger sethintstring( #"zm_escape/tomahawk_pickup" );
         }
         
         trigger setcursorhint( "HINT_NOICON" );

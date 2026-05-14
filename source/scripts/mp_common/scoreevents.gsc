@@ -304,7 +304,7 @@ function scoreeventplayerkill( data, time )
                 {
                     processscoreevent( #"kill_enemy_who_killed_teammate", attacker, victim, weapon );
                     attacker activecamo::function_896ac347( weapon, #"avenger", 1 );
-                    attacker activecamo::function_896ac347( weapon, #"hash_39ab7cda18fd5c74", 1 );
+                    attacker activecamo::function_896ac347( weapon, #"take_it_personally", 1 );
                     victim recordkillmodifier( "avenger" );
                 }
             }
@@ -449,7 +449,7 @@ function scoreeventplayerkill( data, time )
             {
                 if ( function_9aef690a( weapon ) )
                 {
-                    processscoreevent( #"hash_1f661efe5e6707ad", var_78056843, victim, weapon );
+                    processscoreevent( #"sensor_dart_assist_unique", var_78056843, victim, weapon );
                 }
                 else
                 {
@@ -509,7 +509,7 @@ function scoreeventplayerkill( data, time )
                     continue;
                 }
                 
-                if ( effect.var_3d1ed4bd == getweapon( #"hash_3f62a872201cd1ce" ) || effect.var_3d1ed4bd == getweapon( #"seeker_mine_arc" ) || effect.var_3d1ed4bd == getweapon( #"eq_slow_grenade" ) )
+                if ( effect.var_3d1ed4bd == getweapon( #"swat_grenade_payload" ) || effect.var_3d1ed4bd == getweapon( #"seeker_mine_arc" ) || effect.var_3d1ed4bd == getweapon( #"eq_slow_grenade" ) )
                 {
                     processscoreevent( #"hash_61640bd6bb7451ad", attacker, victim, effect.var_3d1ed4bd );
                     break;
@@ -556,8 +556,8 @@ function scoreeventplayerkill( data, time )
         {
             processscoreevent( #"kill_enemy_who_has_high_score", attacker, victim, weapon );
             attacker activecamo::function_896ac347( weapon, #"kingslayer", 1 );
-            attacker activecamo::function_896ac347( weapon, #"hash_39ab7cda18fd5c74", 1 );
-            attacker contracts::increment_contract( #"hash_a75db3f2b544591" );
+            attacker activecamo::function_896ac347( weapon, #"take_it_personally", 1 );
+            attacker contracts::increment_contract( #"contract_wl_kingslayer" );
         }
         
         if ( victimwasunderwater && exlosivedamage )
@@ -615,7 +615,7 @@ function scoreeventplayerkill( data, time )
             {
                 if ( function_9aef690a( weapon ) )
                 {
-                    processscoreevent( #"hash_bad79b50f40ce0b", victimlastvisionpulsedby, victim, level.weaponvisionpulse );
+                    processscoreevent( #"vision_pulse_assist_unique", victimlastvisionpulsedby, victim, level.weaponvisionpulse );
                 }
                 else
                 {
@@ -857,7 +857,7 @@ function scoreeventplayerkill( data, time )
                     processscoreevent( #"revenge_kill", attacker, victim, weapon );
                     attacker stats::function_e24eec31( weapon, #"revenge_kill", 1 );
                     attacker activecamo::function_896ac347( weapon, #"revenge", 1 );
-                    attacker activecamo::function_896ac347( weapon, #"hash_39ab7cda18fd5c74", 1 );
+                    attacker activecamo::function_896ac347( weapon, #"take_it_personally", 1 );
                     victim recordkillmodifier( "revenge" );
                     attacker.lastkilledby = undefined;
                 }
@@ -868,7 +868,7 @@ function scoreeventplayerkill( data, time )
                 level.globalbuzzkills++;
                 processscoreevent( #"stop_enemy_killstreak", attacker, victim, weapon );
                 attacker activecamo::function_896ac347( weapon, #"buzzkill", 1 );
-                attacker activecamo::function_896ac347( weapon, #"hash_39ab7cda18fd5c74", 1 );
+                attacker activecamo::function_896ac347( weapon, #"take_it_personally", 1 );
                 victim recordkillmodifier( "buzzkill" );
             }
             
@@ -2111,7 +2111,7 @@ function ongameend( data )
         {
             if ( !match::get_flag( "tie" ) && player.team == winner )
             {
-                player.pers[ #"hash_6344af0b142ed0b6" ] = 1;
+                player.pers[ #"loot_tier_skip" ] = 1;
                 processscoreevent( #"won_match", player, undefined, undefined );
                 return;
             }
@@ -2125,7 +2125,7 @@ function ongameend( data )
             {
                 if ( level.placement[ #"all" ][ index ] == player )
                 {
-                    player.pers[ #"hash_6344af0b142ed0b6" ] = 1;
+                    player.pers[ #"loot_tier_skip" ] = 1;
                     processscoreevent( #"won_match", player, undefined, undefined );
                     return;
                 }

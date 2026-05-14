@@ -21,7 +21,7 @@ CoD.StartMenu_Barracks_ZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local ProgressUnlocks = CoD.StartMenu_Button_LG.new( f1_arg0, f1_arg1, 0.5, 0.5, -324.5, 322.5, 0.5, 0.5, -344, 38 )
-	ProgressUnlocks.ButtonInternal.ImageContainer.ImageContainer:setImage( RegisterImage( 0xCB7B28E1ED13921 ) )
+	ProgressUnlocks.ButtonInternal.ImageContainer.ImageContainer:setImage( RegisterImage( "uie_ui_menu_start_menu_grid" ) )
 	ProgressUnlocks.ButtonInternal.StartMenuButtonFrame:changeFrameWidget( CoD.ButtonFrame_Progress )
 	ProgressUnlocks.ButtonInternal.ButtonTitle.HeaderText:setText( LocalizeToUpperString( "menu/progress_unlocks" ) )
 	ProgressUnlocks:registerEventHandler( "gain_focus", function ( element, event )

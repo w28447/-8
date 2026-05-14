@@ -16,7 +16,7 @@ CoD.PCWidgetUtility.PartyInviteStatus = {
 CoD.PCWidgetUtility.CurrentChatInputWidget = {}
 CoD.PCWidgetUtility.VoiceChatChannelsOptions = {
 	{
-		name = Engine[0xF9F1239CFD921FE]( 0xDC308EED3C91279 ),
+		name = Engine[0xF9F1239CFD921FE]( "menu/voice_chat_party" ),
 		value = 0
 	},
 	{
@@ -3246,14 +3246,14 @@ CoD.PCWidgetUtility.PlayerContextualMenuExtraOptionsData = {
 		enableFct = nil
 	},
 	{
-		name = 0xC4EB9FE5F09A2E7,
+		name = "menu/invite_players",
 		id = "invitePlayersToParty",
 		clickFct = CoD.PCWidgetUtility.OpenInvitePlayerPopup,
 		visibilityFct = CoD.PCWidgetUtility.ShowInvitePlayersToParty,
 		enableFct = nil
 	},
 	{
-		name = 0xBC2011402700EA4,
+		name = "menu/manage_party_leave_button",
 		id = "leaveParty",
 		clickFct = CoD.PCWidgetUtility.LeaveParty,
 		visibilityFct = CoD.PCWidgetUtility.ShowLeaveParty,
@@ -3535,7 +3535,7 @@ CoD.PCWidgetUtility.ReportDropdownOptions = {
 		value = 2,
 		description = Engine[0xF9F1239CFD921FE]( 0xB804A7D12B045B3 ),
 		confirmation = Engine[0xF9F1239CFD921FE]( 0xBF3C356602228DA ),
-		chatConfirmation = Engine[0xF9F1239CFD921FE]( 0xE64954DBD80A7CF ),
+		chatConfirmation = Engine[0xF9F1239CFD921FE]( "menu/reportplayer_offensive_language_reported" ),
 		reason = Enum[0x3636486ECC29E13][0xDAF54FBD07FE70D],
 		source = Enum[0xE4996868826FAEE][0xDF74048DC41F55A],
 		action = function ( f290_arg0, f290_arg1 )
@@ -3598,7 +3598,7 @@ CoD.PCWidgetUtility.ReportDropdownOptions = {
 		end
 	},
 	{
-		name = Engine[0xF9F1239CFD921FE]( 0xFE4AA96E0028906 ),
+		name = Engine[0xF9F1239CFD921FE]( "menu/report_user_booster_caps" ),
 		value = 7,
 		description = Engine[0xF9F1239CFD921FE]( 0xF85E8086F061446 ),
 		confirmation = Engine[0xF9F1239CFD921FE]( 0xFBD108477DE79BD ),

@@ -627,7 +627,7 @@ function set_entity_draft_unselected( localclientnum, on_off )
     }
     else
     {
-        rob = #"hash_68bd6efcb1324e3";
+        rob = #"rob_draft_unselected";
     }
     
     if ( isdefined( on_off ) && on_off )

@@ -34,7 +34,7 @@ function main()
 {
     level flag::init( #"freeze_mode" );
     level flag::init( #"all_freeze" );
-    zm_audio::sndannouncervoxadd( #"freeze_mode", #"hash_2df47a99f054462e" );
+    zm_audio::sndannouncervoxadd( #"freeze_mode", #"vox_freeze_mode" );
     level.var_50c3a25b = getentarray( "freeze_mode_ice", "targetname" );
     
     foreach ( ice in level.var_50c3a25b )
@@ -61,7 +61,7 @@ function main()
 // Size: 0x5c
 function freeze_quest( var_a276c861 )
 {
-    level flag::wait_till_any( array( #"all_freeze", #"hell_on_earth", #"hash_198bc172b5af7f25" ) );
+    level flag::wait_till_any( array( #"all_freeze", #"hell_on_earth", #"trials_hell_on_earth" ) );
 }
 
 // Namespace zm_orange_ee_freeze_mode/zm_orange_ee_freeze_mode
@@ -75,7 +75,7 @@ function freeze_quest_cleanup( var_a276c861, var_19e802fa )
         level flag::set( #"all_freeze" );
     }
     
-    if ( level flag::get( #"hell_on_earth" ) || level flag::get( #"hash_198bc172b5af7f25" ) )
+    if ( level flag::get( #"hell_on_earth" ) || level flag::get( #"trials_hell_on_earth" ) )
     {
         return;
     }
@@ -147,16 +147,16 @@ function function_1bb74851()
 {
     self.var_e1257157 = 0;
     self.var_adf5d9b4 = [];
-    self.var_adf5d9b4[ #"hash_2fb0927a65d8a9e" ] = 0;
-    self.var_adf5d9b4[ #"hash_75f05448c75c06f" ] = 0;
-    self.var_adf5d9b4[ #"hash_335d7ee067ac0e68" ] = 0;
-    self.var_adf5d9b4[ #"hash_63f7af429c316620" ] = 0;
-    self.var_adf5d9b4[ #"hash_1e6b498a976cdcb5" ] = 0;
-    self.var_adf5d9b4[ #"hash_3a98581b802c0296" ] = 0;
-    self.var_adf5d9b4[ #"hash_3461ddd73c20a747" ] = 0;
-    self.var_adf5d9b4[ #"hash_99011c41f3d5380" ] = 0;
-    self.var_adf5d9b4[ #"hash_381e2912fb0376dc" ] = 0;
-    self.var_adf5d9b4[ #"hash_18aaabdeba54214a" ] = 0;
+    self.var_adf5d9b4[ #"zm_orange/location_lighthouse_cove" ] = 0;
+    self.var_adf5d9b4[ #"zm_orange/location_beach" ] = 0;
+    self.var_adf5d9b4[ #"zm_orange/location_cargo_hold" ] = 0;
+    self.var_adf5d9b4[ #"zm_orange/location_artifact_storage" ] = 0;
+    self.var_adf5d9b4[ #"zm_orange/location_frozen_crevasse" ] = 0;
+    self.var_adf5d9b4[ #"zm_orange/location_hidden_path" ] = 0;
+    self.var_adf5d9b4[ #"zm_orange/location_ice_grotto" ] = 0;
+    self.var_adf5d9b4[ #"zm_orange/location_docks" ] = 0;
+    self.var_adf5d9b4[ #"zm_orange/location_lagoon" ] = 0;
+    self.var_adf5d9b4[ #"zm_orange/location_sunken_path" ] = 0;
 }
 
 // Namespace zm_orange_ee_freeze_mode/zm_orange_ee_freeze_mode
@@ -298,8 +298,8 @@ function function_9364acc1()
     self.var_7dc2d507 = 1;
     self notify( #"player_frozen" );
     self zm_orange_water::function_bad6907c();
-    self clientfield::set( "" + #"hash_55543319943057f1", 1 );
-    self clientfield::set_to_player( "" + #"hash_5160727729fd57a2", 1 );
+    self clientfield::set( "" + #"water_player_freeze_fx", 1 );
+    self clientfield::set_to_player( "" + #"water_player_freeze_sfx", 1 );
     t_ice = spawn( "trigger_damage", self.origin, 0, 15, 72 );
     t_ice enablelinkto();
     t_ice linkto( self );
@@ -313,12 +313,12 @@ function function_9364acc1()
         self.var_d844486 = 1;
     }
     
-    self waittill( #"hash_53bfad7081c69dee" );
+    self waittill( #"water_player_freeze_broken" );
     self playsound( #"hash_2f8c9575cb36a298" );
     self.var_7dc2d507 = 0;
     self zm_orange_water::function_46c3bbf7();
-    self clientfield::set( "" + #"hash_55543319943057f1", 0 );
-    self clientfield::set_to_player( "" + #"hash_5160727729fd57a2", 0 );
+    self clientfield::set( "" + #"water_player_freeze_fx", 0 );
+    self clientfield::set_to_player( "" + #"water_player_freeze_sfx", 0 );
     self clientfield::set_to_player( "" + #"hash_603fc9d210bdbc4d", 1 );
     waitframe( 2 );
     self clientfield::set_to_player( "" + #"hash_603fc9d210bdbc4d", 0 );

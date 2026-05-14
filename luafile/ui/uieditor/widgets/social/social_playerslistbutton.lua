@@ -103,7 +103,7 @@ CoD.Social_PlayersListButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		if IsElementInState( self.SocialPlayersListButtonJoinAndInviteButton, "Joinable" ) then
 			SetControllerModelValue( f10_arg2, "PositionDraft.ResetOnCloseCharacterSelection", 1 )
 			SetSelectedFriendXUID( self, self, f10_arg2 )
-			LobbyQuickJoin( f10_arg1, self, self, f10_arg2, Enum.JoinType[0xC21E48130C4B82B], true )
+			LobbyQuickJoin( f10_arg1, self, self, f10_arg2, Enum.JoinType["join_type_friend"], true )
 			return true
 		else
 			

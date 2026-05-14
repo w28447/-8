@@ -1,7 +1,7 @@
 {
     "name": "#zombie_perk_totem_tortoise",
     "baseWeapon": "#zombie_perk_totem_tortoise",
-    "streamkey": "#hash_1afcd66b04c32ea6",
+    "streamkey": "#zombie_perk_totem_tortoise_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",
@@ -33,7 +33,7 @@
     "sound4e0": "#hash_7de02f3f0a5f070b",
     "tunables1": "#hash_2c79f27fac9515c3",
     "gestureTables": [
-        "#hash_5b04303388c73792"
+        "#gestable_zombie_perk_totem_tortoise"
     ],
     "viewmodel": [
         "#wpn_t8_zm_perk_totem_victorious_tortoise_view"

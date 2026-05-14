@@ -4,7 +4,7 @@
     "displayname": "#weapon/local_heal",
     "weapon70": "#eq_localheal",
     "luigiReticleWidget": "SwipeTak5",
-    "streamkey": "#hash_733e650e63c55467",
+    "streamkey": "#eq_localheal_soundbank",
     "scrstr_8c8": [
         "tag_tac_knife_animate",
         "tag_cord_animate"

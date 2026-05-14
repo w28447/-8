@@ -130,7 +130,7 @@
             ],
             "hash_1d91eeba": 1,
             "hash_7db3435c": 0,
-            "clientfield": "#hash_6608231515ad6e93"
+            "clientfield": "#teleporter_modifier_item_1"
         },
         {
             "stages": [
@@ -140,7 +140,7 @@
             ],
             "hash_1d91eeba": 1,
             "hash_7db3435c": 0,
-            "clientfield": "#hash_6608241515ad7046"
+            "clientfield": "#teleporter_modifier_item_2"
         },
         {
             "stages": [
@@ -150,7 +150,7 @@
             ],
             "hash_1d91eeba": 1,
             "hash_7db3435c": 0,
-            "clientfield": "#hash_6608251515ad71f9"
+            "clientfield": "#teleporter_modifier_item_3"
         }
     ],
     "zm_office_challenges:hash_5a90928f": "#zm_office_challenges",

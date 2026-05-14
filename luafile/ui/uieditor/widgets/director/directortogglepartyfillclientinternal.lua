@@ -93,7 +93,7 @@ CoD.DirectorTogglePartyFillClientInternal.new = function ( f1_arg0, f1_arg1, f1_
 	
 	local MiddleText = LUI.UIText.new( 0.17, 0.83, 16, -16, 0.5, 0.5, -12, 12 )
 	MiddleText:setRGB( 0.31, 0.29, 0.29 )
-	MiddleText:setText( LocalizeToUpperString( 0xA43B10D9DA121A ) )
+	MiddleText:setText( LocalizeToUpperString( "menu/waiting_caps" ) )
 	MiddleText:setTTF( "ttmussels_regular" )
 	MiddleText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
 	MiddleText:setLetterSpacing( 3 )
@@ -105,7 +105,7 @@ CoD.DirectorTogglePartyFillClientInternal.new = function ( f1_arg0, f1_arg1, f1_
 	local MiddleTextFocus = LUI.UIText.new( 0.17, 0.83, 16, -16, 0.5, 0.5, -12, 12 )
 	MiddleTextFocus:setRGB( 0.28, 0.25, 0.24 )
 	MiddleTextFocus:setAlpha( 0 )
-	MiddleTextFocus:setText( LocalizeToUpperString( 0xA43B10D9DA121A ) )
+	MiddleTextFocus:setText( LocalizeToUpperString( "menu/waiting_caps" ) )
 	MiddleTextFocus:setTTF( "ttmussels_regular" )
 	MiddleTextFocus:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	MiddleTextFocus:setShaderVector( 0, 0.13, 0, 0, 0 )

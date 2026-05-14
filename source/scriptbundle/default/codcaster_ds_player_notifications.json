@@ -1,7 +1,7 @@
 {
     "hash_dfedf08e": 0,
     "categoryindex": 0,
-    "description": "localized17#hash_6aa680f464e9b692",
+    "description": "localized17#codcaster/ds_player_notifications_desc",
     "menu/on": "localized17#menu/on",
     "hash_10e01ad5": 0,
     "iscategory": 0,
@@ -21,7 +21,7 @@
     "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "codcaster_ds_player_notifications",
-    "displayname": "localized17#hash_502dbb62222e4a02",
+    "displayname": "localized17#codcaster/ds_player_notifications",
     "rangestartvalue": 0,
     "isdisabled": 0,
     "hash_d6897f56": 0,

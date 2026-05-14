@@ -292,13 +292,13 @@
         {
             "value": 1,
             "next": 5,
-            "name": "#hash_42a42d44cfd33d19",
+            "name": "#vox_homun_deploy_exert_homu",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_42a42d44cfd33d19",
+                    "name": "#vox_homun_deploy_exert_homu",
                     "assetId": "#hash_4671261b4a1366e3",
                     "assetFileNameSustain": "#wz_escape.en",
                     "assetIdRelease": "#wz_escape.en",
@@ -1660,7 +1660,7 @@
                     "assetFileNameSustain": "#wz_escape.en",
                     "assetIdRelease": "#wz_escape.en",
                     "assetFileNameRelease": "#wz_escape.en",
-                    "contextType1": "#hash_1f7fb6af8fd92cb5",
+                    "contextType1": "#perspective",
                     "contextValue1": "#player",
                     "reverbSend": 0.019952621,
                     "centerSend": 0,
@@ -1983,13 +1983,13 @@
         {
             "value": 8,
             "next": 65535,
-            "name": "#hash_d6fe5a5829acf43",
+            "name": "#vox_homun_scream_exert_homu",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_d6fe5a5829acf43",
+                    "name": "#vox_homun_scream_exert_homu",
                     "assetId": "#hash_488350f60637e3c1",
                     "assetFileNameSustain": "#wz_escape.en",
                     "assetIdRelease": "#wz_escape.en",

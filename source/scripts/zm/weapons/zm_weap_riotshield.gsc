@@ -1,4 +1,4 @@
-#using script_301f64a4090c381a;
+#using scripts\zm_common\zm_faction_buffs.gsc;
 #using scripts\core_common\ai\zombie_death;
 #using scripts\core_common\ai\zombie_utility;
 #using scripts\core_common\ai_shared;
@@ -422,7 +422,7 @@ function player_damage_shield( idamage, bheld, fromcode = 0, smod = "MOD_UNKNOWN
 // Size: 0x32
 function function_d24e0d61()
 {
-    var_41f4ea3c = self.var_9c2026aa + namespace_e38c57c1::function_cbf286b0();
+    var_41f4ea3c = self.var_9c2026aa + zm_faction_buffs::function_cbf286b0();
     return 1 - var_41f4ea3c;
 }
 

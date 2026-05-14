@@ -1,6 +1,6 @@
 #using script_34e49e82e2f499e1;
-#using script_5f3e7d348fbc5283;
-#using script_71e26f08f03b7a7a;
+#using scripts\wz_common\wz_pot_of_gold.gsc;
+#using scripts\mp_common\item_supply_drop_system.gsc;
 #using script_7611295950bc2c87;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\callbacks_shared;
@@ -60,12 +60,12 @@ function event_handler[level_init] main( eventstruct )
     if ( isdefined( getgametypesetting( #"wzheavymetalheroes" ) ) && getgametypesetting( #"wzheavymetalheroes" ) )
     {
         level.var_2089aa11 = #"supply_drop_stash_parent_dlc1_heroes";
-        namespace_3d2704b3::function_f0297225( #"supply_drop_stash_parent_dlc1_flare_gun_heroes", 2, 4 );
+        item_supply_drop_system::function_f0297225( #"supply_drop_stash_parent_dlc1_flare_gun_heroes", 2, 4 );
     }
     
     if ( util::get_game_type() == "warzone_pandemic_quad" )
     {
-        namespace_3d2704b3::function_f0297225( #"supply_drop_stash_parent_pandemic", 2147483647, 100 );
+        item_supply_drop_system::function_f0297225( #"supply_drop_stash_parent_pandemic", 2147483647, 100 );
         level function_5725bc63();
     }
     
@@ -313,24 +313,24 @@ function function_2560f130()
         var_55d52358 = function_91b29d2a( var_284a1b99.target );
         var_f41e1beb = function_91b29d2a( var_25e0e288.target );
         
-        if ( getdvarint( #"hash_50975241d48cd6e1", 0 ) )
+        if ( getdvarint( #"dev_draw_atv", 0 ) )
         {
             var_4ff6627b = arraycombine( var_4ff6627b, var_6c8a74fa, 0, 0 );
         }
         
-        if ( getdvarint( #"hash_5e06d8d533e0af7c", 0 ) )
+        if ( getdvarint( #"dev_draw_cargo_truck", 0 ) )
         {
             var_4ff6627b = arraycombine( var_4ff6627b, var_346f9993, 0, 0 );
             var_4ff6627b = arraycombine( var_4ff6627b, var_46a9ff45, 0, 0 );
         }
         
-        if ( getdvarint( #"hash_723608e658ae5e0", 0 ) )
+        if ( getdvarint( #"dev_draw_heli", 0 ) )
         {
             var_4ff6627b = arraycombine( var_4ff6627b, var_99b9c72b, 0, 0 );
             var_4ff6627b = arraycombine( var_4ff6627b, var_78e45028, 0, 0 );
         }
         
-        if ( getdvarint( #"hash_25be466ac3a75b4f", 0 ) )
+        if ( getdvarint( #"dev_draw_raft", 0 ) )
         {
             var_4ff6627b = arraycombine( var_4ff6627b, var_6b5f6eb2, 0, 0 );
             var_4ff6627b = arraycombine( var_4ff6627b, var_8c0143c5, 0, 0 );
@@ -340,22 +340,22 @@ function function_2560f130()
             var_4ff6627b = arraycombine( var_4ff6627b, var_d5253bc7, 0, 0 );
         }
         
-        if ( getdvarint( #"hash_14ddfe1d4333e9e", 0 ) )
+        if ( getdvarint( #"dev_draw_muscle_car", 0 ) )
         {
             var_4ff6627b = arraycombine( var_4ff6627b, var_2ee195e7, 0, 0 );
         }
         
-        if ( getdvarint( #"hash_6ba532422c2147de", 0 ) )
+        if ( getdvarint( #"dev_draw_suv", 0 ) )
         {
             var_4ff6627b = arraycombine( var_4ff6627b, var_55d52358, 0, 0 );
         }
         
-        if ( getdvarint( #"hash_4b7e74dc0f26db48", 0 ) )
+        if ( getdvarint( #"dev_draw_arav", 0 ) )
         {
             var_4ff6627b = arraycombine( var_4ff6627b, var_c3fc5903, 0, 0 );
         }
         
-        if ( getdvarint( #"hash_5248bb421df16d24", 0 ) )
+        if ( getdvarint( #"dev_draw_pbr", 0 ) )
         {
             var_4ff6627b = arraycombine( var_4ff6627b, var_f41e1beb, 0, 0 );
         }
@@ -397,7 +397,7 @@ function function_2560f130()
     // Size: 0x1fa, Type: dev
     function function_c447999a()
     {
-        level endon( #"hash_78e53817cafb5265" );
+        level endon( #"start_warzone_button" );
         
         if ( !getdvarint( #"hash_4b508e86f8bff982", 0 ) )
         {
@@ -525,24 +525,24 @@ function function_2560f130()
         var_55d52358 = function_91b29d2a( var_284a1b99.target );
         var_f41e1beb = function_91b29d2a( var_25e0e288.target );
         
-        if ( getdvarint( #"hash_50975241d48cd6e1", 0 ) )
+        if ( getdvarint( #"dev_draw_atv", 0 ) )
         {
             var_4ff6627b = arraycombine( var_4ff6627b, var_6c8a74fa, 0, 0 );
         }
         
-        if ( getdvarint( #"hash_5e06d8d533e0af7c", 0 ) )
+        if ( getdvarint( #"dev_draw_cargo_truck", 0 ) )
         {
             var_4ff6627b = arraycombine( var_4ff6627b, var_346f9993, 0, 0 );
             var_4ff6627b = arraycombine( var_4ff6627b, var_46a9ff45, 0, 0 );
         }
         
-        if ( getdvarint( #"hash_723608e658ae5e0", 0 ) )
+        if ( getdvarint( #"dev_draw_heli", 0 ) )
         {
             var_4ff6627b = arraycombine( var_4ff6627b, var_99b9c72b, 0, 0 );
             var_4ff6627b = arraycombine( var_4ff6627b, var_78e45028, 0, 0 );
         }
         
-        if ( getdvarint( #"hash_25be466ac3a75b4f", 0 ) )
+        if ( getdvarint( #"dev_draw_raft", 0 ) )
         {
             var_4ff6627b = arraycombine( var_4ff6627b, var_6b5f6eb2, 0, 0 );
             var_4ff6627b = arraycombine( var_4ff6627b, var_8c0143c5, 0, 0 );
@@ -552,22 +552,22 @@ function function_2560f130()
             var_4ff6627b = arraycombine( var_4ff6627b, var_d5253bc7, 0, 0 );
         }
         
-        if ( getdvarint( #"hash_14ddfe1d4333e9e", 0 ) )
+        if ( getdvarint( #"dev_draw_muscle_car", 0 ) )
         {
             var_4ff6627b = arraycombine( var_4ff6627b, var_2ee195e7, 0, 0 );
         }
         
-        if ( getdvarint( #"hash_6ba532422c2147de", 0 ) )
+        if ( getdvarint( #"dev_draw_suv", 0 ) )
         {
             var_4ff6627b = arraycombine( var_4ff6627b, var_55d52358, 0, 0 );
         }
         
-        if ( getdvarint( #"hash_4b7e74dc0f26db48", 0 ) )
+        if ( getdvarint( #"dev_draw_arav", 0 ) )
         {
             var_4ff6627b = arraycombine( var_4ff6627b, var_c3fc5903, 0, 0 );
         }
         
-        if ( getdvarint( #"hash_5248bb421df16d24", 0 ) )
+        if ( getdvarint( #"dev_draw_pbr", 0 ) )
         {
             var_4ff6627b = arraycombine( var_4ff6627b, var_f41e1beb, 0, 0 );
         }
@@ -650,7 +650,7 @@ function function_2560f130()
     // Size: 0x436, Type: dev
     function function_f42944c7()
     {
-        if ( !getdvarint( #"hash_57a9b32c8a8503f1", 0 ) || !self function_1221d304() )
+        if ( !getdvarint( #"dev_draw_vehicles", 0 ) || !self function_1221d304() )
         {
             return;
         }
@@ -683,7 +683,7 @@ function function_2560f130()
         str_type = hashtostring( self.vehicletype );
         v_color = self function_b2775b52();
         
-        while ( getdvarint( #"hash_57a9b32c8a8503f1", 0 ) )
+        while ( getdvarint( #"dev_draw_vehicles", 0 ) )
         {
             var_91d1913b = distance2d( level.players[ 0 ].origin, self.origin );
             n_radius = 0.015 * var_91d1913b;
@@ -722,7 +722,7 @@ function function_2560f130()
         level notify( #"hash_79845fe0e187bb22" );
         level endon( #"hash_79845fe0e187bb22" );
         
-        while ( getdvarint( #"hash_57a9b32c8a8503f1", 0 ) )
+        while ( getdvarint( #"dev_draw_vehicles", 0 ) )
         {
             n_total = 0;
             var_bd9acc19 = 176;
@@ -753,7 +753,7 @@ function function_2560f130()
     // Size: 0x4fe, Type: dev
     function function_1221d304()
     {
-        a_str_types = array( #"vehicle_boct_mil_truck_cargo_wz_dark", #"vehicle_boct_mil_truck_cargo_wz_green", #"vehicle_boct_mil_truck_cargo_wz_tan", #"vehicle_boct_mil_boat_tactical_raft_wz_blk", #"vehicle_boct_mil_boat_tactical_raft_wz_gry", #"vehicle_boct_mil_boat_tactical_raft_wz_odg", #"veh_quad_player_wz_blk", #"hash_232abda4e81275f4", #"veh_quad_player_wz_grn", #"veh_quad_player_wz_red", #"veh_quad_player_wz_tan", #"vehicle_t8_mil_helicopter_light_transport_wz_grey", #"vehicle_t8_mil_helicopter_light_transport_wz_tan", #"vehicle_t8_mil_helicopter_light_transport_wz_dark", #"vehicle_t8_mil_helicopter_light_transport_wz_black", #"veh_fav_player_wz_blk", #"veh_fav_player_wz_grn", #"veh_fav_player_wz_tan", #"veh_muscle_car_convertible_player_wz_bandit_blk", #"veh_muscle_car_convertible_player_wz_blu", #"veh_muscle_car_convertible_player_wz_grn", #"veh_muscle_car_convertible_player_wz_org", #"veh_muscle_car_convertible_player_wz_phantom", #"veh_muscle_car_convertible_player_wz_red", #"veh_muscle_car_convertible_player_wz_replacer", #"veh_muscle_car_convertible_player_wz_wht", #"veh_muscle_car_convertible_player_wz_ylw", #"veh_muscle_car_convertible_player_wz_blk", #"veh_muscle_car_convertible_player_wz_racing_grn", #"veh_suv_player_police_wz", #"vehicle_boct_mil_boat_pbr_wz_police", #"veh_suv_player_wz_blk", #"veh_suv_player_wz_gry", #"veh_suv_player_wz_met_gry", #"veh_suv_player_wz_wht", #"vehicle_t8_mil_helicopter_light_transport_wz_police", #"veh_suv_player_private_security_wz", #"veh_quad_player_wz_police", #"hash_482e864157620248", #"hash_1d37bc413f25898e", #"hash_1d37af413f257377", #"hash_8ea0340ead96490", #"hash_79bf6a7491c80c7", #"hash_32e4c0a7619f03a9", #"hash_22d9b5a7a0d9dd73", #"vehicle_boct_mil_boat_pbr_wz_black", #"vehicle_boct_mil_boat_pbr_wz_green", #"vehicle_boct_mil_boat_pbr_wz_grey", #"vehicle_boct_mil_boat_pbr_wz_tan", #"vehicle_t8_mil_helicopter_light_gunner_wz_black", #"vehicle_t8_mil_helicopter_light_gunner_wz_dark", #"vehicle_t8_mil_helicopter_light_gunner_wz_green", #"vehicle_t8_mil_helicopter_light_gunner_wz_grey", #"vehicle_t8_mil_helicopter_light_gunner_wz_tan", #"hash_77ac4aa97a8b5aa2", #"vehicle_t8_mil_tank_wz_black", #"vehicle_t8_mil_tank_wz_green", #"vehicle_t8_mil_tank_wz_grey", #"vehicle_t8_mil_tank_wz_tan", #"veh_motorcycle_sidecar_player_wz", #"veh_motorcycle_sidecar_player_wz", #"veh_motorcycle_sidecar_player_wz_dark_grey", #"veh_motorcycle_sidecar_player_wz_light_grey", #"veh_motorcycle_sidecar_player_wz_metal_grey", #"hash_275b12ca9b3cc010", #"veh_motorcycle_sidecar_player_wz_tan", #"veh_motorcycle_sidecar_player_wz_white", #"veh_motorcycle_sidecar_player_wz_heroes", #"vehicle_t8_mil_helicopter_light_gunner_wz_heroes", #"veh_fav_player_wz_heroes" );
+        a_str_types = array( #"vehicle_boct_mil_truck_cargo_wz_dark", #"vehicle_boct_mil_truck_cargo_wz_green", #"vehicle_boct_mil_truck_cargo_wz_tan", #"vehicle_boct_mil_boat_tactical_raft_wz_blk", #"vehicle_boct_mil_boat_tactical_raft_wz_gry", #"vehicle_boct_mil_boat_tactical_raft_wz_odg", #"veh_quad_player_wz_blk", #"veh_quad_player_wz_blu", #"veh_quad_player_wz_grn", #"veh_quad_player_wz_red", #"veh_quad_player_wz_tan", #"vehicle_t8_mil_helicopter_light_transport_wz_grey", #"vehicle_t8_mil_helicopter_light_transport_wz_tan", #"vehicle_t8_mil_helicopter_light_transport_wz_dark", #"vehicle_t8_mil_helicopter_light_transport_wz_black", #"veh_fav_player_wz_blk", #"veh_fav_player_wz_grn", #"veh_fav_player_wz_tan", #"veh_muscle_car_convertible_player_wz_bandit_blk", #"veh_muscle_car_convertible_player_wz_blu", #"veh_muscle_car_convertible_player_wz_grn", #"veh_muscle_car_convertible_player_wz_org", #"veh_muscle_car_convertible_player_wz_phantom", #"veh_muscle_car_convertible_player_wz_red", #"veh_muscle_car_convertible_player_wz_replacer", #"veh_muscle_car_convertible_player_wz_wht", #"veh_muscle_car_convertible_player_wz_ylw", #"veh_muscle_car_convertible_player_wz_blk", #"veh_muscle_car_convertible_player_wz_racing_grn", #"veh_suv_player_police_wz", #"vehicle_boct_mil_boat_pbr_wz_police", #"veh_suv_player_wz_blk", #"veh_suv_player_wz_gry", #"veh_suv_player_wz_met_gry", #"veh_suv_player_wz_wht", #"vehicle_t8_mil_helicopter_light_transport_wz_police", #"veh_suv_player_private_security_wz", #"veh_quad_player_wz_police", #"hash_482e864157620248", #"hash_1d37bc413f25898e", #"hash_1d37af413f257377", #"hash_8ea0340ead96490", #"hash_79bf6a7491c80c7", #"hash_32e4c0a7619f03a9", #"hash_22d9b5a7a0d9dd73", #"vehicle_boct_mil_boat_pbr_wz_black", #"vehicle_boct_mil_boat_pbr_wz_green", #"vehicle_boct_mil_boat_pbr_wz_grey", #"vehicle_boct_mil_boat_pbr_wz_tan", #"vehicle_t8_mil_helicopter_light_gunner_wz_black", #"vehicle_t8_mil_helicopter_light_gunner_wz_dark", #"vehicle_t8_mil_helicopter_light_gunner_wz_green", #"vehicle_t8_mil_helicopter_light_gunner_wz_grey", #"vehicle_t8_mil_helicopter_light_gunner_wz_tan", #"hash_77ac4aa97a8b5aa2", #"vehicle_t8_mil_tank_wz_black", #"vehicle_t8_mil_tank_wz_green", #"vehicle_t8_mil_tank_wz_grey", #"vehicle_t8_mil_tank_wz_tan", #"veh_motorcycle_sidecar_player_wz", #"veh_motorcycle_sidecar_player_wz", #"veh_motorcycle_sidecar_player_wz_dark_grey", #"veh_motorcycle_sidecar_player_wz_light_grey", #"veh_motorcycle_sidecar_player_wz_metal_grey", #"hash_275b12ca9b3cc010", #"veh_motorcycle_sidecar_player_wz_tan", #"veh_motorcycle_sidecar_player_wz_white", #"veh_motorcycle_sidecar_player_wz_heroes", #"vehicle_t8_mil_helicopter_light_gunner_wz_heroes", #"veh_fav_player_wz_heroes" );
         
         foreach ( str_type in a_str_types )
         {
@@ -775,7 +775,7 @@ function function_2560f130()
         switch ( self.vehicletype )
         {
             case #"veh_quad_player_wz_blk":
-            case #"hash_232abda4e81275f4":
+            case #"veh_quad_player_wz_blu":
             case #"veh_quad_player_wz_grn":
             case #"veh_quad_player_wz_tan":
             case #"veh_quad_player_wz_red":
@@ -846,7 +846,7 @@ function function_2560f130()
     // Size: 0x218, Type: dev
     function function_6a3e277()
     {
-        if ( !getdvarint( #"hash_9af4a204686e76d", 0 ) || !self function_1221d304() )
+        if ( !getdvarint( #"dev_draw_water_depth", 0 ) || !self function_1221d304() )
         {
             return;
         }
@@ -855,7 +855,7 @@ function function_2560f130()
         self util::delay( "<dev string:x372>", undefined, &function_fe9593b2 );
         level flag::wait_till( "<dev string:x33d>" );
         
-        while ( getdvarint( #"hash_9af4a204686e76d", 0 ) )
+        while ( getdvarint( #"dev_draw_water_depth", 0 ) )
         {
             waitframe( 1 );
             
@@ -882,7 +882,7 @@ function function_2560f130()
         self endon( #"death" );
         level flag::wait_till( "<dev string:x33d>" );
         
-        while ( getdvarint( #"hash_9af4a204686e76d", 0 ) )
+        while ( getdvarint( #"dev_draw_water_depth", 0 ) )
         {
             waitframe( 1 );
             
@@ -906,14 +906,14 @@ function function_2560f130()
     // Size: 0xfe, Type: dev
     function function_2d706436()
     {
-        if ( !getdvarint( #"hash_9af4a204686e76d", 0 ) )
+        if ( !getdvarint( #"dev_draw_water_depth", 0 ) )
         {
             return;
         }
         
         self endon( #"death", #"disconnect" );
         
-        while ( getdvarint( #"hash_9af4a204686e76d", 0 ) )
+        while ( getdvarint( #"dev_draw_water_depth", 0 ) )
         {
             n_height = getwaterheight( self.origin ) - self.origin[ 2 ];
             
@@ -1022,12 +1022,12 @@ function function_2560f130()
         {
             waitframe( 2 );
             
-            if ( !getdvarint( #"hash_639a741f419f5790", 0 ) )
+            if ( !getdvarint( #"dev_kill_player_vehicle", 0 ) )
             {
                 continue;
             }
             
-            setdvar( #"hash_639a741f419f5790", 0 );
+            setdvar( #"dev_kill_player_vehicle", 0 );
             
             foreach ( var_f0ffe8b2 in level.var_6eef6733 )
             {
@@ -1614,7 +1614,7 @@ function function_2560f130()
     // Size: 0x2b0, Type: dev
     function private event_handler[event_9673dc9a] function_f9b68fd7( eventstruct )
     {
-        if ( !getdvarint( #"hash_69592e1b2d05fb21", 0 ) )
+        if ( !getdvarint( #"dev_draw_dynents", 0 ) )
         {
             return;
         }
@@ -1623,7 +1623,7 @@ function function_2560f130()
         dynent notify( #"debug_draw" );
         dynent endon( #"debug_draw" );
         
-        while ( getdvarint( #"hash_69592e1b2d05fb21", 0 ) )
+        while ( getdvarint( #"dev_draw_dynents", 0 ) )
         {
             waitframe( 10 );
             
@@ -1761,7 +1761,7 @@ function function_2560f130()
                     continue;
                 }
                 
-                level notify( #"hash_7e565f1e80f93ecd" );
+                level notify( #"new_damage_circles" );
                 
                 if ( getdvarint( #"hash_5fd194403e0d175e", 0 ) || !isdefined( tracepoint ) )
                 {
@@ -1886,7 +1886,7 @@ function function_2560f130()
     // Size: 0x34e, Type: dev
     function function_61e22785( tracepoint, radius, num_damage, color )
     {
-        self endon( #"hash_7e565f1e80f93ecd" );
+        self endon( #"new_damage_circles" );
         
         while ( !getdvarint( #"hash_5fd194403e0d175e", 0 ) )
         {

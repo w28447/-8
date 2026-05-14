@@ -37,7 +37,7 @@ function __init__()
     clientfield::register( "vehicle", "" + #"zombie_spectral_key_stun", 1, n_bits, "int", &function_b570d455, 0, 0 );
     clientfield::register( "scriptmover", "" + #"zombie_spectral_key_stun", 1, n_bits, "int", &function_b570d455, 0, 0 );
     clientfield::register( "scriptmover", "" + #"spectral_key_essence", 1, 1, "int", &function_5655dc55, 0, 0 );
-    clientfield::register( "allplayers", "" + #"hash_7663ae2eb866d2eb", 1, 1, "counter", &function_50119cc1, 0, 0 );
+    clientfield::register( "allplayers", "" + #"spectral_key_absorb", 1, 1, "counter", &spectral_key_absorb, 0, 0 );
     clientfield::register( "allplayers", "" + #"spectral_key_charging", 1, 2, "int", &function_36c349d0, 0, 0 );
     clientfield::register( "allplayers", "" + #"spectral_shield_blast", 1, 1, "counter", &function_6b58c030, 0, 0 );
     clientfield::register( "scriptmover", "" + #"shield_crafting_fx", 1, 1, "counter", &shield_crafting_fx, 0, 0 );
@@ -340,11 +340,11 @@ function function_a950c92c( localclientnum )
     while ( true )
     {
         level.var_443d1164 = undefined;
-        s_result = level waittill( #"hash_73ff8d0d706c332d", #"hash_527d9fdde8903b80" );
+        s_result = level waittill( #"set_beam_target", #"clear_beam_target" );
         level.var_443d1164 = 1;
         self function_4700b6cd( localclientnum );
         
-        if ( s_result._notify === #"hash_73ff8d0d706c332d" && s_result.e_attacker === self && isdefined( s_result.e_target ) )
+        if ( s_result._notify === #"set_beam_target" && s_result.e_attacker === self && isdefined( s_result.e_target ) )
         {
             var_3da509de = s_result.e_target;
             self thread function_5ab769d8( localclientnum );
@@ -729,7 +729,7 @@ function function_3dec76cb( localclientnum, e_target, e_attacker, var_19f39a16 =
     
     if ( var_19f39a16 )
     {
-        level notify( #"hash_73ff8d0d706c332d", { #e_target:e_target, #e_attacker:e_attacker } );
+        level notify( #"set_beam_target", { #e_target:e_target, #e_attacker:e_attacker } );
         
         if ( e_target.archetype === #"zombie_dog" )
         {
@@ -739,7 +739,7 @@ function function_3dec76cb( localclientnum, e_target, e_attacker, var_19f39a16 =
         return;
     }
     
-    level notify( #"hash_527d9fdde8903b80", { #e_target:e_target, #e_attacker:e_attacker } );
+    level notify( #"clear_beam_target", { #e_target:e_target, #e_attacker:e_attacker } );
     
     if ( isdefined( e_target ) && !isalive( e_target ) && e_target.archetype === #"zombie" )
     {
@@ -765,7 +765,7 @@ function function_9c08e4b6( localclientnum, e_target, e_attacker )
         waitframe( 1 );
     }
     
-    level notify( #"hash_527d9fdde8903b80", { #e_target:e_target, #e_attacker:e_attacker } );
+    level notify( #"clear_beam_target", { #e_target:e_target, #e_attacker:e_attacker } );
     
     if ( !isalive( e_target ) && isdefined( var_545d6c28 ) )
     {
@@ -919,7 +919,7 @@ function function_7203304d( localclientnum )
 // Params 7
 // Checksum 0xedaedea6, Offset: 0x3220
 // Size: 0x11c
-function function_50119cc1( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function spectral_key_absorb( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( !function_98890cd8( self.weapon ) )
     {

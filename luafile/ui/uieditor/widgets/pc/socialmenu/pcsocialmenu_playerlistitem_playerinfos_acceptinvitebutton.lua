@@ -19,7 +19,7 @@ CoD.PCSocialMenu_PlayerListItem_PlayerInfos_AcceptInviteButton.new = function ( 
 	self.AcceptIcon = AcceptIcon
 	
 	local NineSliceShaderImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	NineSliceShaderImage:setImage( RegisterImage( 0xD21D1B533ED3AEA ) )
+	NineSliceShaderImage:setImage( RegisterImage( "uie_borderbutton2_9s" ) )
 	NineSliceShaderImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	NineSliceShaderImage:setShaderVector( 0, 0, 0, 0, 0 )
 	NineSliceShaderImage:setupNineSliceShader( 14, 14 )

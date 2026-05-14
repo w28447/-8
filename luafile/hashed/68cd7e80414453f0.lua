@@ -179,7 +179,7 @@ CoD.PerformanceOptionGrid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	Label = LUI.UIText.new( 0, 0, 9, 349, 0, 0, 11, 27 )
 	Label:setRGB( ColorSet.T8__OFF__GRAY.r, ColorSet.T8__OFF__GRAY.g, ColorSet.T8__OFF__GRAY.b )
-	Label:setText( LocalizeToUpperString( 0xE28A07E0C69E9E9 ) )
+	Label:setText( LocalizeToUpperString( "weapon_options/performance" ) )
 	Label:setTTF( "default" )
 	Label:setLetterSpacing( 4 )
 	Label:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

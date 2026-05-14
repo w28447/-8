@@ -3,7 +3,7 @@
     "baseWeapon": "#elephant_eye_projectile",
     "displayname": "#zmweapon/ww_crossbow_t8_upgraded",
     "weapon70": "#special_crossbow",
-    "streamkey": "#hash_21262118426fbde2",
+    "streamkey": "#elephant_eye_projectile_soundbank",
     "scrstr_8c8": [
         "tag_rail",
         "tag_arms_base",
@@ -107,7 +107,7 @@
     "image_1048": "#t7_icon_weapon_hero_outrider_kf",
     "fireRumble": "#crossbow_fire",
     "fx_f00": "#hash_75fbc74ecece09dd",
-    "normalImpactSounds": "#hash_39bfdec1ee94b227",
-    "bounceImpactSounds": "#hash_39bfdec1ee94b227",
-    "dudImpactSounds": "#hash_39bfdec1ee94b227"
+    "normalImpactSounds": "#ww_crossbow_impact",
+    "bounceImpactSounds": "#ww_crossbow_impact",
+    "dudImpactSounds": "#ww_crossbow_impact"
 }

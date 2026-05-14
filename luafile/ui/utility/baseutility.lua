@@ -289,7 +289,7 @@ end
 
 CoD.BaseUtility.SwitchModeOnMenu = function ( f47_arg0 )
 	local f47_local0 = LobbyData.GetCurrentMenuTarget()
-	CoD.BaseUtility.SwitchMode( f47_arg0, LuaUtils.GetEModeForLobbyMainMode( f47_local0[0xEB7DDC7F079D51B] ) )
+	CoD.BaseUtility.SwitchMode( f47_arg0, LuaUtils.GetEModeForLobbyMainMode( f47_local0["mainmode"] ) )
 end
 
 CoD.BaseUtility.ProcessGridAction = function ( f48_arg0, f48_arg1, f48_arg2, f48_arg3 )

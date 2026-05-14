@@ -1,7 +1,7 @@
 {
     "hash_dfedf08e": 0,
     "categoryindex": 0,
-    "description": "localized17#hash_7cedb7fd7243874c",
+    "description": "localized17#codcaster/ds_voip_dock_desc",
     "menu/on": "localized17#menu/on",
     "hash_10e01ad5": 0,
     "iscategory": 0,
@@ -21,7 +21,7 @@
     "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "codcaster_ds_voip_dock",
-    "displayname": "localized17#hash_8e58ed90b20c3e4",
+    "displayname": "localized17#codcaster/ds_voip_dock",
     "rangestartvalue": 0,
     "isdisabled": 0,
     "hash_d6897f56": 0,

@@ -114,19 +114,19 @@ function event_handler[level_init] main( eventstruct )
     clientfield::register( "scriptmover", "trap_switch_smoke", 1, 1, "int" );
     clientfield::register( "toplayer", "acid_trap_postfx", 1, 1, "int" );
     clientfield::register( "toplayer", "" + #"pickup_dung", 1, 1, "int" );
-    clientfield::register( "toplayer", "" + #"hash_2bbcb9e09bd7bb26", 1, 1, "counter" );
+    clientfield::register( "toplayer", "" + #"challenge_complete_crowd_react", 1, 1, "counter" );
     clientfield::register( "scriptmover", "entry_gate_dust", 1, 1, "int" );
-    clientfield::register( "world", "" + #"hash_16b9e3d69cb7a017", 1, 1, "int" );
-    clientfield::register( "scriptmover", "" + #"hash_42cc4bf5e47478c5", 1, 1, "int" );
+    clientfield::register( "world", "" + #"boss_battle_teleport", 1, 1, "int" );
+    clientfield::register( "scriptmover", "" + #"ww_quest_brazier_fire", 1, 1, "int" );
     clientfield::register( "scriptmover", "" + #"hash_3b746cf6eec416b2", 1, 1, "int" );
-    clientfield::register( "world", "" + #"hash_584e8f7433246444", 1, 1, "int" );
-    clientfield::register( "world", "" + #"hash_418c1c843450232b", 1, 1, "int" );
-    clientfield::register( "world", "" + #"hash_4d547bf36c6cb2d8", 1, 1, "int" );
-    clientfield::register( "world", "" + #"hash_38ba3ad0902aa355", 1, 1, "int" );
-    clientfield::register( "world", "" + #"hash_24d7233bb17e6558", 1, 1, "int" );
+    clientfield::register( "world", "" + #"ww_quest_fire_trail", 1, 1, "int" );
+    clientfield::register( "world", "" + #"ww_quest_scorpio_danu", 1, 1, "int" );
+    clientfield::register( "world", "" + #"ww_quest_scorpio_ra", 1, 1, "int" );
+    clientfield::register( "world", "" + #"ww_quest_scorpio_odin", 1, 1, "int" );
+    clientfield::register( "world", "" + #"ww_quest_scorpio_zeus", 1, 1, "int" );
     clientfield::register( "scriptmover", "" + #"ww_quest_melting", 1, 1, "counter" );
-    clientfield::register( "scriptmover", "" + #"hash_2c6f04d08665dbda", 1, 1, "int" );
-    clientfield::register( "scriptmover", "" + #"hash_2a332df32456c86f", 1, 1, "int" );
+    clientfield::register( "scriptmover", "" + #"impervious_jar_petals", 1, 1, "int" );
+    clientfield::register( "scriptmover", "" + #"impervious_jar_landed", 1, 1, "int" );
     clientfield::register( "scriptmover", "" + #"hash_48ad84f9cf6a33f0", 1, 1, "counter" );
     clientfield::register( "zbarrier", "" + #"hash_3974bea828fbf7f7", 1, 1, "int" );
     clientfield::register( "zbarrier", "" + #"hash_3a51c9895d4afcf7", 1, 1, "int" );
@@ -134,7 +134,7 @@ function event_handler[level_init] main( eventstruct )
     clientfield::register( "zbarrier", "" + #"hash_5dc6f97e5850e1d1", 1, 1, "int" );
     clientfield::register( "toplayer", "" + #"ww_quest_earthquake", 1, 1, "counter" );
     clientfield::register( "world", "" + #"hash_2383fd01b106ced8", 1, 1, "int" );
-    clientfield::register( "world", "" + #"hash_3c58464f16d8a1be", 1, 1, "int" );
+    clientfield::register( "world", "" + #"reveal_ee_space", 1, 1, "int" );
     clientfield::register( "scriptmover", "" + #"hash_6ff3eb2dd0078a51", 1, 1, "counter" );
     clientfield::register( "world", "" + #"hash_445060dbbf244b04", 1, 1, "int" );
     clientfield::register( "world", "" + #"hash_a2fb645044ed12e", 1, 1, "int" );
@@ -142,7 +142,7 @@ function event_handler[level_init] main( eventstruct )
     clientfield::register( "scriptmover", "" + #"hash_c382c02584ba249", 1, 1, "int" );
     clientfield::register( "scriptmover", "" + #"hash_273efcc293063e5e", 1, 1, "int" );
     clientfield::register( "scriptmover", "" + #"fertilizer_smell", 1, 1, "int" );
-    clientfield::register( "world", "" + #"hash_5a3e1454226ef7a4", 1, 1, "int" );
+    clientfield::register( "world", "" + #"fertilizer_smell_bowl", 1, 1, "int" );
     clientfield::register( "world", "" + #"hash_73088ea3053b96f1", 1, 1, "int" );
     clientfield::register( "actor", "" + #"hash_233e31d0c2b47b1b", 1, 1, "int" );
     clientfield::register( "actor", "" + #"hash_12dfb8249f8212d2", 1, 1, "int" );
@@ -150,8 +150,8 @@ function event_handler[level_init] main( eventstruct )
     clientfield::register( "scriptmover", "ra_eyes_beam_fire", 1, 1, "int" );
     clientfield::register( "scriptmover", "ra_rooftop_eyes_beam_fire", 1, 1, "int" );
     clientfield::register( "world", "" + #"hash_57c08e5f4792690c", 1, 1, "int" );
-    clientfield::register( "world", "" + #"hash_440f23773f551a48", 1, 1, "int" );
-    clientfield::register( "world", "" + #"hash_4e5e2b411c997804", 1, 1, "int" );
+    clientfield::register( "world", "" + #"force_stream_glyph", 1, 1, "int" );
+    clientfield::register( "world", "" + #"force_stream_pedestal", 1, 1, "int" );
     clientfield::register( "toplayer", "" + #"maelstrom_initiate", 1, 1, "counter" );
     clientfield::register( "world", "" + #"maelstrom_initiate_fx", 1, 1, "int" );
     clientfield::register( "scriptmover", "" + #"maelstrom_conduct", 1, 1, "int" );
@@ -160,13 +160,13 @@ function event_handler[level_init] main( eventstruct )
     clientfield::register( "scriptmover", "" + #"maelstrom_discharge", 1, 1, "counter" );
     clientfield::register( "actor", "" + #"maelstrom_death", 1, 1, "counter" );
     clientfield::register( "toplayer", "" + #"maelstrom_storm", 1, 1, "int" );
-    clientfield::register( "toplayer", "" + #"hash_182c03ff2a21c07c", 1, 1, "counter" );
+    clientfield::register( "toplayer", "" + #"maelstrom_storm_change", 1, 1, "counter" );
     clientfield::register( "toplayer", "" + #"maelstrom_ending", 1, 1, "int" );
     clientfield::register( "world", "" + #"hash_1f09a5290d31eb37", 1, 1, "counter" );
     clientfield::register( "scriptmover", "" + #"hash_63e758aa5387132a", 1, 1, "counter" );
-    clientfield::register( "scriptmover", "" + #"hash_23ba00d2f804acc2", 1, 1, "int" );
+    clientfield::register( "scriptmover", "" + #"defend_key_glint", 1, 1, "int" );
     clientfield::register( "scriptmover", "" + #"hash_2407f687f7d24a83", 1, 1, "int" );
-    clientfield::register( "scriptmover", "" + #"hash_5afda864f8b64f5c", 1, 1, "int" );
+    clientfield::register( "scriptmover", "" + #"narrative_brazier_fire", 1, 1, "int" );
     clientfield::register( "world", "" + #"hash_39e6b14b9e5b0f3d", 1, 1, "int" );
     level.var_210ce105 = zm_towers_crowd_meter::register( "zm_towers_crowd_meter" );
     level._effect[ #"headshot" ] = #"zombie/fx_bul_flesh_head_fatal_zmb";
@@ -175,7 +175,7 @@ function event_handler[level_init] main( eventstruct )
     level._effect[ #"animscript_gib_fx" ] = #"zombie/fx_blood_torso_explo_zmb";
     level._effect[ #"animscript_gibtrail_fx" ] = #"blood/fx_blood_gib_limb_trail";
     level._effect[ #"switch_sparks" ] = #"electric/fx8_sparks_burst_dir_sm_orange_os";
-    level._effect[ #"hash_21167096dfea3409" ] = #"hash_b6f89a048c38cf6";
+    level._effect[ #"custom_pandora_light" ] = #"hash_b6f89a048c38cf6";
     level.default_start_location = "zone_starting_area_ra";
     level.default_game_mode = "zclassic";
     level.var_cd8b6cd0 = 2;
@@ -238,7 +238,7 @@ function event_handler[level_init] main( eventstruct )
     level thread zm_towers_side_quests::init();
     level.vending_machines_powered_on_at_start = 1;
     level flag::set( "power_on" );
-    level.var_d5bd7049 = #"hash_30a8de8c86fd7103";
+    level.var_d5bd7049 = #"zm_towers/power_doors";
     
     if ( !zm_utility::is_standard() )
     {
@@ -679,8 +679,8 @@ function init_announcer()
     zm_audio::sndannouncervoxadd( #"hash_260c83bb9470b", #"hash_7f3dee972dfa0bf1" );
     zm_audio::sndannouncervoxadd( #"hash_78c79ed7fe5a14e6", #"hash_739067da8bb4af8c" );
     zm_audio::sndannouncervoxadd( #"hash_2865f19fb8f73873", #"hash_4f6a00a5a3c6564d" );
-    zm_audio::sndannouncervoxadd( #"hash_2a8f3ff63eb265a9", #"hash_327de5526794e5f0" );
-    zm_audio::sndannouncervoxadd( #"challenges_challenge_completed", #"hash_5b911d862216715d" );
+    zm_audio::sndannouncervoxadd( #"challenges_challenge_available", #"hash_327de5526794e5f0" );
+    zm_audio::sndannouncervoxadd( #"challenges_challenge_completed", #"vox_challenges_complete" );
     zm_audio::sndannouncervoxadd( #"challenges_danu_completed", #"hash_fc0a3fb08fac69b" );
     zm_audio::sndannouncervoxadd( #"challenges_ra_completed", #"hash_203f6b90f79090f0" );
     zm_audio::sndannouncervoxadd( #"challenges_odin_completed", #"hash_34daf48f11cac2b1" );
@@ -703,7 +703,7 @@ function init_announcer()
     zm_audio::sndannouncervoxadd( #"hash_3d5fccf222ba3ab6", #"vox_m_quest_danu_complete" );
     zm_audio::sndannouncervoxadd( #"hash_5719edb294612f4c", #"hash_e36933881b70a00" );
     zm_audio::sndannouncervoxadd( #"hash_42bbe4989b9a4cbe", #"hash_7ce238dcabc6916d" );
-    zm_audio::sndannouncervoxadd( #"hash_41d25c641d7c8484", #"hash_21f31b9d98f1e332" );
+    zm_audio::sndannouncervoxadd( #"main_quest_defend_complete", #"hash_21f31b9d98f1e332" );
     zm_audio::sndannouncervoxadd( #"hash_bc10546af7f7b09", #"hash_2c87f4c5bf8b38f4" );
     zm_audio::sndannouncervoxadd( #"hash_70f3ffdacf094858", #"hash_59983ce3c5c98bea" );
     zm_audio::sndannouncervoxadd( #"hash_5b34919a0ea0ac80", #"hash_6394a17f6fd9a269" );
@@ -852,7 +852,7 @@ function function_f1e7bc35( s_spot )
         level scene::play( str_scene, self );
     }
     
-    self notify( #"hash_1d525fe23da088ca" );
+    self notify( #"left_spawn_gate" );
     
     if ( self.archetype == #"gladiator" )
     {
@@ -878,7 +878,7 @@ function function_dccf4bb9( mdl_gate )
     }
     
     mdl_gate.var_408d5ee6++;
-    self waittill( #"death", #"hash_1d525fe23da088ca" );
+    self waittill( #"death", #"left_spawn_gate" );
     mdl_gate.var_408d5ee6--;
 }
 
@@ -901,7 +901,7 @@ function function_6f26118c( mdl_gate )
         waitframe( 1 );
     }
     
-    self notify( #"hash_1d525fe23da088ca" );
+    self notify( #"left_spawn_gate" );
 }
 
 // Namespace zm_towers/zm_towers
@@ -910,7 +910,7 @@ function function_6f26118c( mdl_gate )
 // Size: 0x1e
 function function_f493ba80( notifyhash )
 {
-    self notify( #"hash_1d525fe23da088ca" );
+    self notify( #"left_spawn_gate" );
 }
 
 // Namespace zm_towers/zm_towers
@@ -995,7 +995,7 @@ function custom_pandora_fx_func()
     {
         if ( self.zbarrier.script_string === "t8_magicbox" )
         {
-            playfxontag( level._effect[ #"hash_21167096dfea3409" ], self.pandora_light, "tag_origin" );
+            playfxontag( level._effect[ #"custom_pandora_light" ], self.pandora_light, "tag_origin" );
             return;
         }
         
@@ -1030,7 +1030,7 @@ function magicbox_host_migration()
                 {
                     if ( chest.zbarrier.script_string === "t8_magicbox" )
                     {
-                        playfxontag( level._effect[ #"hash_21167096dfea3409" ], chest.pandora_light, "tag_origin" );
+                        playfxontag( level._effect[ #"custom_pandora_light" ], chest.pandora_light, "tag_origin" );
                     }
                     else
                     {
@@ -1386,12 +1386,12 @@ function setup_end_igc( var_24486b2e = 1 )
                 level.s_remus.var_12b6c455 = 11;
                 level thread zm_towers_narrative::function_d6e81c01( #"hash_49fb781467abd24c", #"hash_634818c98eff6728" );
                 break;
-            case #"hash_63968ec6789bd654":
+            case #"remus_wall":
                 mdl_wall = level.s_remus.a_objects[ 14 ];
                 mdl_wall scene::play( #"p8_fxanim_zm_towers_wall_2_bundle", mdl_wall );
                 break;
-            case #"hash_36c98a2b5fcf250c":
-                level flag::set( #"hash_6205682540170b8" );
+            case #"arena_rock_on":
+                level flag::set( #"arena_rock_unlocked" );
                 level clientfield::set( "<dev string:xe1d>" + #"hash_39e6b14b9e5b0f3d", 1 );
                 break;
             case #"hash_5f00c356627b87c":
@@ -1430,7 +1430,7 @@ function setup_end_igc( var_24486b2e = 1 )
                 }
                 
                 break;
-            case #"hash_50d92ca3c6c7c2a8":
+            case #"super_open_sesame":
                 level thread function_4110a06f();
                 return 1;
             case #"hash_3ce58f31f72a510f":

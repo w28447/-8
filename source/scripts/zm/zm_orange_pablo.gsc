@@ -28,7 +28,7 @@ function init()
     level.pablo_npc.name = "herm";
     level.pablo_npc.isspeaking = 0;
     level.pablo_npc.var_5b6ebfd0 = 0;
-    level.pablo_npc flag::init( #"hash_5945cee69b029018" );
+    level.pablo_npc flag::init( #"interact_vo_done" );
     level flag::init( #"pablo_intro" );
     level flag::init( #"hash_641f14d0b2fd57d7" );
     level flag::init( #"hash_6e81da82129193f6" );
@@ -149,14 +149,14 @@ function private pablo_intro()
         {
             str_alias = #"hash_61f15b67b89a32a7";
             
-            if ( level flag::get( #"hash_3310bb35ce396e49" ) )
+            if ( level flag::get( #"pap_rock_picked_up" ) )
             {
                 str_alias = #"vox_meet_pablo_have_rock";
             }
             
             level function_e44c7c0c( str_alias );
             
-            if ( !level flag::get( #"hash_3310bb35ce396e49" ) )
+            if ( !level flag::get( #"pap_rock_picked_up" ) )
             {
                 a_players = zm_zonemgr::get_players_in_zone( "lighthouse_level_4", 1 );
                 player = zm_hms_util::function_3815943c( a_players );
@@ -456,8 +456,8 @@ function private function_39614d4b()
         }
     }
     
-    self flag::wait_till( #"hash_5945cee69b029018" );
-    self flag::clear( #"hash_5945cee69b029018" );
+    self flag::wait_till( #"interact_vo_done" );
+    self flag::clear( #"interact_vo_done" );
     self.var_df3d62aa = undefined;
     level.var_f45a0bfd.is_moving = 0;
     self notify( #"hash_688d0bffbc9f5888" );
@@ -487,7 +487,7 @@ function private function_9f77ef2( s_info )
         level function_e44c7c0c( s_info.var_e7b75754, s_info.var_c67e664c );
     }
     
-    self flag::set( #"hash_5945cee69b029018" );
+    self flag::set( #"interact_vo_done" );
 }
 
 // Namespace zm_orange_pablo/zm_orange_pablo

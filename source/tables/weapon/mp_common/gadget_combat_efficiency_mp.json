@@ -2,7 +2,7 @@
     "name": "#gadget_combat_efficiency_mp",
     "baseWeapon": "#gadget_combat_efficiency",
     "displayname": "#weapon/gadget_combat_efficiency",
-    "streamkey": "#hash_4cee880fb5d3c43c",
+    "streamkey": "#gadget_combat_efficiency_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

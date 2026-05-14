@@ -30,7 +30,7 @@ function preload()
 // Size: 0x44
 function init_clientfields()
 {
-    clientfield::register( "toplayer", "" + #"hash_33c373888aa78dc2", 20000, 1, "counter" );
+    clientfield::register( "toplayer", "" + #"key_press_feedback", 20000, 1, "counter" );
 }
 
 // Namespace zm_white_computer_system/zm_white_computer_system
@@ -206,7 +206,7 @@ function function_bcec00bc( origin, arc_angle_degrees = 90, do_trace, e_ignore =
 // Size: 0x482
 function function_f359c8a0( s_key, e_player )
 {
-    e_player clientfield::increment_to_player( "" + #"hash_33c373888aa78dc2", 1 );
+    e_player clientfield::increment_to_player( "" + #"key_press_feedback", 1 );
     level.var_f13364b4.var_12633dc5 = e_player;
     
     switch ( s_key.script_string )
@@ -756,7 +756,7 @@ function function_6b002f3c()
 // Size: 0x54
 function function_c9dcb3aa()
 {
-    level flag::set( #"hash_3ee874ebee843004" );
+    level flag::set( #"private_mannequin_program_code_entered" );
     
     /#
         iprintlnbold( "<dev string:x21b>" + level.var_f13364b4.n_code_sawyer );
@@ -769,9 +769,9 @@ function function_c9dcb3aa()
 // Size: 0xa8
 function function_69dd6c5b()
 {
-    if ( level flag::get( #"hash_3ee874ebee843004" ) )
+    if ( level flag::get( #"private_mannequin_program_code_entered" ) )
     {
-        level flag::set( #"hash_315d0bf1d50724f0" );
+        level flag::set( #"sawyer_authorization_code_entered" );
         
         /#
             iprintlnbold( "<dev string:x242>" + level.var_f13364b4.n_code_mccain );
@@ -789,11 +789,11 @@ function function_69dd6c5b()
 // Size: 0xd8
 function function_97ab5da4()
 {
-    a_flags = array( #"hash_3ee874ebee843004", #"hash_315d0bf1d50724f0" );
+    a_flags = array( #"private_mannequin_program_code_entered", #"sawyer_authorization_code_entered" );
     
     if ( level flag::get_all( a_flags ) )
     {
-        level flag::set( #"hash_359cbec050523f4" );
+        level flag::set( #"mccain_authorization_code_entered" );
         
         /#
             iprintlnbold( "<dev string:x269>" + level.var_f13364b4.n_code_pernell );
@@ -811,11 +811,11 @@ function function_97ab5da4()
 // Size: 0xb8
 function function_9a405843()
 {
-    a_flags = array( #"hash_3ee874ebee843004", #"hash_315d0bf1d50724f0", #"hash_359cbec050523f4" );
+    a_flags = array( #"private_mannequin_program_code_entered", #"sawyer_authorization_code_entered", #"mccain_authorization_code_entered" );
     
     if ( level flag::get_all( a_flags ) )
     {
-        level flag::set( #"hash_130656ec8ad5480d" );
+        level flag::set( #"pernell_authorization_code_entered" );
         return;
     }
     
@@ -851,16 +851,16 @@ function function_68dfeba9()
 // Size: 0x466
 function function_8fff2dd()
 {
-    level._effect[ #"hash_7c49a746639d8fb9" ] = "maps/zm_white/fx8_zm_white_code_type_0";
-    level._effect[ #"hash_7c49a646639d8e06" ] = "maps/zm_white/fx8_zm_white_code_type_1";
-    level._effect[ #"hash_7c49a546639d8c53" ] = "maps/zm_white/fx8_zm_white_code_type_2";
-    level._effect[ #"hash_7c49a446639d8aa0" ] = "maps/zm_white/fx8_zm_white_code_type_3";
-    level._effect[ #"hash_7c49ab46639d9685" ] = "maps/zm_white/fx8_zm_white_code_type_4";
-    level._effect[ #"hash_7c49aa46639d94d2" ] = "maps/zm_white/fx8_zm_white_code_type_5";
-    level._effect[ #"hash_7c49a946639d931f" ] = "maps/zm_white/fx8_zm_white_code_type_6";
-    level._effect[ #"hash_7c49a846639d916c" ] = "maps/zm_white/fx8_zm_white_code_type_7";
-    level._effect[ #"hash_7c49af46639d9d51" ] = "maps/zm_white/fx8_zm_white_code_type_8";
-    level._effect[ #"hash_7c49ae46639d9b9e" ] = "maps/zm_white/fx8_zm_white_code_type_9";
+    level._effect[ #"code_value_0" ] = "maps/zm_white/fx8_zm_white_code_type_0";
+    level._effect[ #"code_value_1" ] = "maps/zm_white/fx8_zm_white_code_type_1";
+    level._effect[ #"code_value_2" ] = "maps/zm_white/fx8_zm_white_code_type_2";
+    level._effect[ #"code_value_3" ] = "maps/zm_white/fx8_zm_white_code_type_3";
+    level._effect[ #"code_value_4" ] = "maps/zm_white/fx8_zm_white_code_type_4";
+    level._effect[ #"code_value_5" ] = "maps/zm_white/fx8_zm_white_code_type_5";
+    level._effect[ #"code_value_6" ] = "maps/zm_white/fx8_zm_white_code_type_6";
+    level._effect[ #"code_value_7" ] = "maps/zm_white/fx8_zm_white_code_type_7";
+    level._effect[ #"code_value_8" ] = "maps/zm_white/fx8_zm_white_code_type_8";
+    level._effect[ #"code_value_9" ] = "maps/zm_white/fx8_zm_white_code_type_9";
     level._effect[ #"hash_440d5b73d8a98ff4" ] = "maps/zm_office/fx8_fxanim_zm_office_code_paint_0";
     level._effect[ #"hash_440d5c73d8a991a7" ] = "maps/zm_office/fx8_fxanim_zm_office_code_paint_1";
     level._effect[ #"hash_440d5d73d8a9935a" ] = "maps/zm_office/fx8_fxanim_zm_office_code_paint_2";
@@ -1133,23 +1133,23 @@ function clock_countdown()
     self.var_4cdc88ae = 1;
     level.e_face_screen function_b2fba7f5();
     level.e_face_screen thread function_a196c54b();
-    self endon( #"hash_10b7419f15453a9e" );
+    self endon( #"cancel_clock_countdown" );
     self function_80707067();
     self function_5e0b6734( 1, 0, 1, 0, 1 );
     self waittill( #"hash_6cb5d5beb3730446" );
-    self function_9b1511fa();
+    self cancel_clock_countdown();
 }
 
 // Namespace zm_white_computer_system/zm_white_computer_system
 // Params 0
 // Checksum 0xbc25a3c3, Offset: 0x4880
 // Size: 0x4e
-function function_9b1511fa()
+function cancel_clock_countdown()
 {
     self function_58dddc4e();
     self function_eb17b80b();
     self.var_4cdc88ae = 0;
-    self notify( #"hash_10b7419f15453a9e" );
+    self notify( #"cancel_clock_countdown" );
 }
 
 // Namespace zm_white_computer_system/zm_white_computer_system
@@ -1807,7 +1807,7 @@ function rushmore_speech_flag()
 // Size: 0xd4
 function function_5b16217f()
 {
-    level endon( #"hash_1a91b42d31e0b28d" );
+    level endon( #"stop_all_vo" );
     level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_45f67ba6693762f7", 0, 0 );
     level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_45f67ba6693762f7", 1, 0, 1 );
     level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_45f67ba6693762f7", 2, 0, 1 );

@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_exotic_shared_selfie",
+    "type": "#gesture",
+    "gesture": "#boast_selfie",
+    "gesture2": "#boast_selfie_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/selfie",
+        "icon": "image#ui_icon_emotes_selfy",
+        "isdefault": 0
+    }
+}

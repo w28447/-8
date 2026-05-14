@@ -73,7 +73,7 @@ CoD.MapVoteZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	self.DirectorMapGameTypeAndDifficulty = DirectorMapGameTypeAndDifficulty
 	
 	local MapVoteItemRandomZM = CoD.MapVoteItemZM.new( f1_arg0, f1_arg1, 0, 0, 0, 394, 0, 0, 249, 355 )
-	MapVoteItemRandomZM.MapImage:setImage( RegisterImage( 0xEDBAE30E94D38D3 ) )
+	MapVoteItemRandomZM.MapImage:setImage( RegisterImage( "uie_lui_random_map_vote" ) )
 	MapVoteItemRandomZM.GameMode:setText( LocalizeToUpperString( 0xFDFC63B040DE92E ) )
 	MapVoteItemRandomZM.MapName:setText( LocalizeToUpperString( 0x8C899D3B96CB850 ) )
 	MapVoteItemRandomZM.GameModeIcon:setImage( RegisterImage( "blacktransparent" ) )

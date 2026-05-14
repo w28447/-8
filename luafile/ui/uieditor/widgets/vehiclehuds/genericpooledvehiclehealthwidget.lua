@@ -25,7 +25,7 @@ CoD.genericPooledVehicleHealthWidget.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	self.HealthBarBacking = HealthBarBacking
 	
 	local VehicleIconBacking = LUI.UIImage.new( 0, 0, 19, 91, 0, 0, 181, 215 )
-	VehicleIconBacking:setImage( RegisterImage( 0x8226750AF58416B ) )
+	VehicleIconBacking:setImage( RegisterImage( "uie_hud_minimap_health_meter_icon_bg" ) )
 	self:addElement( VehicleIconBacking )
 	self.VehicleIconBacking = VehicleIconBacking
 	

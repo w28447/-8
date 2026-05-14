@@ -1052,7 +1052,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_66bf4dbabf6ad256",
+                    "value": "#amb_wind_left",
                     "unk1a": true
                 },
                 {
@@ -1172,7 +1172,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_e095e483463882b",
+                    "value": "#amb_wind_right",
                     "unk1a": true
                 },
                 {
@@ -1244,7 +1244,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_66bf4dbabf6ad256",
+                    "value": "#amb_wind_left",
                     "unk1a": true
                 },
                 {
@@ -1652,7 +1652,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_e095e483463882b",
+                    "value": "#amb_wind_right",
                     "unk1a": true
                 },
                 {
@@ -2972,7 +2972,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_e095e483463882b",
+                    "value": "#amb_wind_right",
                     "unk1a": true
                 },
                 {
@@ -6122,7 +6122,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_5d71820dcc6e1151",
+                    "value": "#amb_light_hum",
                     "unk1a": true
                 }
             ]
@@ -6182,7 +6182,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_5d71820dcc6e1151",
+                    "value": "#amb_light_hum",
                     "unk1a": true
                 }
             ]
@@ -6602,7 +6602,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3a77e1e5125d0a7c",
+                    "value": "#amb_steam_hiss",
                     "unk1a": true
                 }
             ]
@@ -6662,7 +6662,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_5d71820dcc6e1151",
+                    "value": "#amb_light_hum",
                     "unk1a": true
                 }
             ]
@@ -7460,7 +7460,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3a77e1e5125d0a7c",
+                    "value": "#amb_steam_hiss",
                     "unk1a": true
                 }
             ]
@@ -7520,7 +7520,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3a77e1e5125d0a7c",
+                    "value": "#amb_steam_hiss",
                     "unk1a": true
                 }
             ]
@@ -7580,7 +7580,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3a77e1e5125d0a7c",
+                    "value": "#amb_steam_hiss",
                     "unk1a": true
                 }
             ]
@@ -9932,7 +9932,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_5d71820dcc6e1151",
+                    "value": "#amb_light_hum",
                     "unk1a": true
                 }
             ]
@@ -13772,7 +13772,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_7b0cc91c8136ee38",
+                    "value": "#amb_flag_flap",
                     "unk1a": true
                 },
                 {

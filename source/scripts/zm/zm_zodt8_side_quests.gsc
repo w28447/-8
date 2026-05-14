@@ -98,10 +98,10 @@ function init_clientfields()
 function init_flags()
 {
     level flag::init( #"hash_2aaea7cd22f44712" );
-    level flag::init( #"hash_3799c8bb28e2f2f" );
+    level flag::init( #"skeleton_car_crash" );
     level flag::init( #"activate_sea_walkers" );
-    level flag::init( #"hash_480b6b675a3076ec" );
-    level flag::init( #"hash_525ff2b2a2f7d97a" );
+    level flag::init( #"sea_walkers_queued" );
+    level flag::init( #"vomit_blade_acquired" );
     level flag::init( #"hash_f244999377a9081" );
     level flag::init( #"hash_598d4e6af1cf4c39" );
     level flag::init( #"hash_5721fa890b4af81a" );
@@ -123,8 +123,8 @@ function init_quests()
     zm_sq::register( #"fishy_offering", #"step_2", #"hash_189533bc9c584bd8", &fishy_offering_step_2_setup, &fishy_offering_step_2_cleanup );
     zm_sq::register( #"portal_pass", #"step_1", #"portal_pass_step_1", &portal_pass_step_1_setup, &portal_pass_step_1_cleanup );
     zm_sq::register( #"portal_pass", #"step_2", #"portal_pass_step_2", &portal_pass_step_2_setup, &portal_pass_step_2_cleanup );
-    zm_sq::register( #"hash_68677a02650cad00", #"step_1", #"hash_4ba91dee7d31240b", &function_b87c71d7, &function_46a445cd );
-    zm_sq::register( #"hash_68677a02650cad00", #"step_2", #"hash_4ba91eee7d3125be", &function_9a209775, &function_2ae7b2a6 );
+    zm_sq::register( #"skull_singers", #"step_1", #"hash_4ba91dee7d31240b", &function_b87c71d7, &function_46a445cd );
+    zm_sq::register( #"skull_singers", #"step_2", #"hash_4ba91eee7d3125be", &function_9a209775, &function_2ae7b2a6 );
     zm_sq::register( #"ships_engineer", #"step_1", #"ships_engineer_step_1", &ships_engineer_1_setup, &ships_engineer_1_cleanup );
     zm_sq::register( #"ships_engineer", #"step_2", #"ships_engineer_step_2", &ships_engineer_2_setup, &ships_engineer_2_cleanup );
     zm_sq::register( #"ships_engineer", #"step_3", #"ships_engineer_step_3", &ships_engineer_3_setup, &ships_engineer_3_cleanup );
@@ -140,7 +140,7 @@ function init_quests()
     zm_sq::start( #"vomit_blade" );
     zm_sq::start( #"fishy_offering" );
     zm_sq::start( #"portal_pass" );
-    zm_sq::start( #"hash_68677a02650cad00" );
+    zm_sq::start( #"skull_singers" );
     zm_sq::start( #"ships_engineer" );
 }
 
@@ -189,7 +189,7 @@ function function_b156b71()
     level thread function_9e34f29();
     
     /#
-        if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+        if ( getdvarint( #"zm_debug_ee_system", 0 ) )
         {
             iprintlnbold( "<dev string:x38>" );
             println( "<dev string:x38>" );
@@ -270,7 +270,7 @@ function function_977835f8()
         exploder::exploder( "exp_engine_warning_light_" + a_s_valves[ i ].script_int );
         
         /#
-            if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+            if ( getdvarint( #"zm_debug_ee_system", 0 ) )
             {
                 debugstar( a_s_valves[ i ].origin, 9999 );
             }
@@ -661,7 +661,7 @@ function function_7071d9b0()
     trigger = spawn( "trigger_damage", level.var_92dc9c0d.origin, 0, 16, 16 );
     
     /#
-        if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+        if ( getdvarint( #"zm_debug_ee_system", 0 ) )
         {
             debugstar( level.var_92dc9c0d.origin, 50000, ( 1, 0.5, 0 ) );
         }
@@ -681,7 +681,7 @@ function function_7071d9b0()
     trigger delete();
     
     /#
-        if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+        if ( getdvarint( #"zm_debug_ee_system", 0 ) )
         {
             iprintlnbold( "<dev string:x4b>" );
             println( "<dev string:x4b>" );
@@ -699,7 +699,7 @@ function portal_pass_step_2_setup( var_5ea5c94d )
 {
     if ( !var_5ea5c94d )
     {
-        level waittill( #"hash_3fe51713857b3c4" );
+        level waittill( #"portal_pass_spawned" );
     }
 }
 
@@ -748,7 +748,7 @@ function function_9be06570()
         {
             s_moveto = struct::get( s_moveto.script_teleport );
             
-            if ( s_moveto.targetname === #"hash_a7644632e1952ad" )
+            if ( s_moveto.targetname === #"poop_deck_teleport" )
             {
                 v_offset = ( 128, 0, 64 );
                 b_rail = 1;
@@ -801,7 +801,7 @@ function function_9be06570()
         s_moveto = struct::get( s_moveto.target );
     }
     
-    level notify( #"hash_3fe51713857b3c4" );
+    level notify( #"portal_pass_spawned" );
     function_cbee939b( var_a3b04877 );
 }
 
@@ -815,7 +815,7 @@ function function_9f2f0210( var_a3b04877 )
     level.var_33918b88 = undefined;
     
     /#
-        if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+        if ( getdvarint( #"zm_debug_ee_system", 0 ) )
         {
             iprintlnbold( "<dev string:x64>" );
             println( "<dev string:x64>" );
@@ -834,7 +834,7 @@ function function_cbee939b( var_a9e11cb7 )
 {
     self notify( "142674eccecae6a" );
     self endon( "142674eccecae6a" );
-    s_loc = struct::get( #"hash_2b406c6248d8f47b" );
+    s_loc = struct::get( #"portal_pass_end" );
     
     if ( !isdefined( var_a9e11cb7 ) )
     {
@@ -855,7 +855,7 @@ function function_cbee939b( var_a9e11cb7 )
     callback::on_connect( &function_76351c42 );
     
     /#
-        if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+        if ( getdvarint( #"zm_debug_ee_system", 0 ) )
         {
             iprintlnbold( "<dev string:x85>" );
             println( "<dev string:x85>" );
@@ -910,7 +910,7 @@ function function_76351c42()
 // Size: 0x4a0
 function fishy_offering_step_1_setup( var_5ea5c94d )
 {
-    a_spots = array::randomize( struct::get_array( #"hash_152bb6bdedef598a" ) );
+    a_spots = array::randomize( struct::get_array( #"fish_spawn_loc" ) );
     e_fish = getent( "dead_offering", "targetname" );
     e_fish val::set( #"fishy_offering", "takedamage", 1 );
     e_fish val::set( #"fishy_offering", "allowdeath", 0 );
@@ -980,7 +980,7 @@ function fishy_offering_step_2_setup( var_5ea5c94d )
     playsoundatposition( #"hash_42f8105535463377", s_trigger.origin );
     
     /#
-        if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+        if ( getdvarint( #"zm_debug_ee_system", 0 ) )
         {
             iprintlnbold( "<dev string:x9d>" );
             println( "<dev string:x9d>" );
@@ -1162,7 +1162,7 @@ function function_ebb2139()
         waitresult = self waittill( #"trigger" );
         e_player = waitresult.activator;
         
-        if ( !zm_utility::can_use( e_player ) || level flag::get( #"hash_480b6b675a3076ec" ) )
+        if ( !zm_utility::can_use( e_player ) || level flag::get( #"sea_walkers_queued" ) )
         {
             continue;
         }
@@ -1192,7 +1192,7 @@ function function_ebb2139()
 // Size: 0x134
 function function_5daf1bb7()
 {
-    level flag::set( #"hash_480b6b675a3076ec" );
+    level flag::set( #"sea_walkers_queued" );
     s_fx_loc = struct::get( #"floaters_fx" );
     playrumbleonposition( "grenade_rumble", s_fx_loc.origin );
     level waittill( #"start_of_round" );
@@ -1201,7 +1201,7 @@ function function_5daf1bb7()
     level.var_d889fbd9 = level.round_number;
     level waittill( #"end_of_round" );
     level flag::clear( #"activate_sea_walkers" );
-    level flag::clear( #"hash_480b6b675a3076ec" );
+    level flag::clear( #"sea_walkers_queued" );
 }
 
 // Namespace zodt8_side_quests/zm_zodt8_side_quests
@@ -1474,7 +1474,7 @@ function function_50f4cc80()
             e_player zm_audio::create_and_play_dialog( #"component_pickup", #"generic" );
             
             /#
-                if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+                if ( getdvarint( #"zm_debug_ee_system", 0 ) )
                 {
                     iprintlnbold( self.var_83fad8a9 );
                     println( self.var_83fad8a9 );
@@ -1563,7 +1563,7 @@ function function_ae4e9016()
                 self.var_6f7cfe6d rotateyaw( 90, 0.25, 0.25 );
                 self.var_6f7cfe6d playsound( #"zmb_safe_open" );
                 self.var_6f7cfe6d waittill( #"rotatedone" );
-                self.var_6f7cfe6d playloopsound( #"hash_11a6234e1396e816" );
+                self.var_6f7cfe6d playloopsound( #"zmb_safe_open_loop" );
                 level.var_534a0586 = 0;
                 self.b_closed = 0;
                 
@@ -1688,7 +1688,7 @@ function function_e9104d6d( var_a276c861 )
         s_loc = struct::get( #"hash_43dc57b8641ea004" );
         s_loc zm_unitrigger::create( undefined, undefined, &zm_unitrigger::function_69168e61 );
         s_loc thread function_7f18a333();
-        level flag::wait_till( #"hash_3799c8bb28e2f2f" );
+        level flag::wait_till( #"skeleton_car_crash" );
     }
 }
 
@@ -1750,7 +1750,7 @@ function function_7f18a333()
         mdl_car thread scene::play( #"aib_vign_zm_zod_base_drvr_01" );
         function_75bdcb53( mdl_car );
         
-        if ( !level flag::get( #"hash_3799c8bb28e2f2f" ) )
+        if ( !level flag::get( #"skeleton_car_crash" ) )
         {
             level waittill( #"end_of_round" );
             mdl_car.origin = v_origin + ( 0, 0, -100 );
@@ -1783,10 +1783,10 @@ function function_75bdcb53( mdl_car )
     nd_start = getvehiclenode( "jones_start_node", "targetname" );
     mdl_car clientfield::set( "" + #"car_fx", 1 );
     
-    while ( n_start_round + 3 > level.round_number && !level flag::get( #"hash_3799c8bb28e2f2f" ) )
+    while ( n_start_round + 3 > level.round_number && !level flag::get( #"skeleton_car_crash" ) )
     {
         /#
-            if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+            if ( getdvarint( #"zm_debug_ee_system", 0 ) )
             {
                 iprintlnbold( "<dev string:xb1>" );
                 println( "<dev string:xb1>" );
@@ -1811,7 +1811,7 @@ function function_75bdcb53( mdl_car )
     veh_car delete();
     
     /#
-        if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+        if ( getdvarint( #"zm_debug_ee_system", 0 ) )
         {
             iprintlnbold( "<dev string:xc9>" );
             println( "<dev string:xc9>" );
@@ -2034,7 +2034,7 @@ function function_73bdaf30()
     
     if ( isdefined( mdl_shield ) )
     {
-        mdl_shield playsound( #"hash_4e75eec96f7ea36a" );
+        mdl_shield playsound( #"zmb_shield_land" );
         mdl_shield setmodel( #"hash_7f061176170234d9" );
         mdl_shield clientfield::set( "" + #"shield_frost_fx", 1 );
         earthquake( 0.5, 1.25, mdl_shield.origin, 512 );
@@ -2172,7 +2172,7 @@ function fireworks_show()
     foreach ( s_launcher in level.a_s_launchers )
     {
         s_launcher.var_f0bbde5 = struct::get( s_launcher.target );
-        s_launcher flag::init( #"hash_2078d5bf94139877" );
+        s_launcher flag::init( #"fired_this_round" );
         s_unitrigger = s_launcher zm_unitrigger::create( undefined, undefined, &use_launcher );
         zm_unitrigger::function_47625e58( s_unitrigger, s_unitrigger.origin + ( 0, 0, 32 ) );
         zm_unitrigger::function_89380dda( s_unitrigger );
@@ -2188,7 +2188,7 @@ function fireworks_show()
         
         foreach ( s_launcher in level.a_s_launchers )
         {
-            s_launcher flag::clear( #"hash_2078d5bf94139877" );
+            s_launcher flag::clear( #"fired_this_round" );
         }
         
         while ( level.var_ba8e1acf.size > 0 )
@@ -2244,7 +2244,7 @@ function init_flare( v_origin, v_angles, str_color )
     mdl_flare val::set( #"mdl_flare", "allowdeath", 0 );
     mdl_flare val::set( #"mdl_flare", "takedamage", 1 );
     mdl_flare.str_color = str_color;
-    mdl_flare flag::init( #"hash_2078d5bf94139877" );
+    mdl_flare flag::init( #"fired_this_round" );
     return mdl_flare;
 }
 
@@ -2262,7 +2262,7 @@ function init_flare( v_origin, v_angles, str_color )
             player.mdl_flare = mdl_flare;
         }
         
-        if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+        if ( getdvarint( #"zm_debug_ee_system", 0 ) )
         {
             iprintlnbold( str_color + "<dev string:xd5>" );
             println( str_color + "<dev string:xd5>" );
@@ -2311,7 +2311,7 @@ function function_e01b477f( var_2cb1cbce, var_46a3f206 )
         switch ( self.str_color )
         {
             case #"red":
-                if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+                if ( getdvarint( #"zm_debug_ee_system", 0 ) )
                 {
                     iprintlnbold( "<dev string:xf3>" );
                     println( "<dev string:xf3>" );
@@ -2319,7 +2319,7 @@ function function_e01b477f( var_2cb1cbce, var_46a3f206 )
                 
                 break;
             case #"green":
-                if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+                if ( getdvarint( #"zm_debug_ee_system", 0 ) )
                 {
                     iprintlnbold( "<dev string:x109>" );
                     println( "<dev string:x109>" );
@@ -2327,7 +2327,7 @@ function function_e01b477f( var_2cb1cbce, var_46a3f206 )
                 
                 break;
             case #"blue":
-                if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+                if ( getdvarint( #"zm_debug_ee_system", 0 ) )
                 {
                     iprintlnbold( "<dev string:x121>" );
                     println( "<dev string:x121>" );
@@ -2411,12 +2411,12 @@ function function_7ae29395()
         
         if ( isplayer( waitresult.activator ) )
         {
-            self.s_launcher flag::set( #"hash_2078d5bf94139877" );
+            self.s_launcher flag::set( #"fired_this_round" );
             var_a3c52257 = 0;
             
             foreach ( s_launcher in level.a_s_launchers )
             {
-                if ( s_launcher flag::get( #"hash_2078d5bf94139877" ) )
+                if ( s_launcher flag::get( #"fired_this_round" ) )
                 {
                     var_a3c52257++;
                 }
@@ -2502,7 +2502,7 @@ function function_9a6d950f()
     
     while ( isdefined( self ) && isdefined( mdl_car ) )
     {
-        if ( self istouching( mdl_car ) || getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+        if ( self istouching( mdl_car ) || getdvarint( #"zm_debug_ee_system", 0 ) )
         {
             self notify( #"hash_714cd031b5f28ab8" );
             self.origin = mdl_car.origin;
@@ -2522,7 +2522,7 @@ function function_9a6d950f()
             }
             
             self playsound( #"hash_5a8158d766d5258b" );
-            level flag::set( #"hash_3799c8bb28e2f2f" );
+            level flag::set( #"skeleton_car_crash" );
             break;
         }
         
@@ -2690,7 +2690,7 @@ function vomit_blade_cleanup( var_a276c861, var_19e802fa )
     /#
         if ( getdvarint( #"zm_debug_ee", 0 ) )
         {
-            level flag::set( #"hash_525ff2b2a2f7d97a" );
+            level flag::set( #"vomit_blade_acquired" );
             level flag::wait_till( "<dev string:x138>" );
             
             foreach ( player in util::get_active_players() )
@@ -2764,7 +2764,7 @@ function function_cc7214a9( params )
         return;
     }
     
-    if ( level flag::get( #"hash_525ff2b2a2f7d97a" ) )
+    if ( level flag::get( #"vomit_blade_acquired" ) )
     {
         self thread function_500ea537( params );
     }
@@ -2806,7 +2806,7 @@ function function_cc7214a9( params )
                     if ( player.var_f8b767c9 >= 9 && !player hasweapon( getweapon( #"bowie_knife_vomit" ) ) )
                     {
                         /#
-                            if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+                            if ( getdvarint( #"zm_debug_ee_system", 0 ) )
                             {
                                 iprintlnbold( "<dev string:x14e>" );
                                 println( "<dev string:x14e>" );
@@ -2827,7 +2827,7 @@ function function_cc7214a9( params )
                         }
                         
                         player zm_melee_weapon::award_melee_weapon( #"bowie_knife_vomit" );
-                        level flag::set( #"hash_525ff2b2a2f7d97a" );
+                        level flag::set( #"vomit_blade_acquired" );
                         player util::delay( 0.5, "death", &zm_audio::create_and_play_dialog, #"vomit_knife", #"mod_react" );
                     }
                 }
@@ -3167,7 +3167,7 @@ function function_ff05eb5()
                 
                 playsoundatposition( #"hash_5ef8e030b84ace08", self.origin );
                 level thread scene::play( str_bundle, "sample" );
-                waitresult.attacker util::delay( 3, "death", &zm_audio::create_and_play_dialog, #"hash_68677a02650cad00", #"correct_tune" );
+                waitresult.attacker util::delay( 3, "death", &zm_audio::create_and_play_dialog, #"skull_singers", #"correct_tune" );
                 
                 if ( !( isdefined( self.var_d6fff827 ) && self.var_d6fff827 ) )
                 {
@@ -3187,7 +3187,7 @@ function function_ff05eb5()
             
             playsoundatposition( #"hash_165a8e8934d64af5", self.origin );
             level thread scene::play( str_bundle, "fail" );
-            waitresult.attacker util::delay( 3, "death", &zm_audio::create_and_play_dialog, #"hash_68677a02650cad00", #"wrong_tune" );
+            waitresult.attacker util::delay( 3, "death", &zm_audio::create_and_play_dialog, #"skull_singers", #"wrong_tune" );
         }
     }
 }

@@ -54,13 +54,13 @@ CoD.ReservesReroll.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	self.TiledBacking2 = TiledBacking2
 	
 	local LayoutTopBar = LUI.UIImage.new( 0, 1, -1, 1, 0, 0, -1, 27 )
-	LayoutTopBar:setImage( RegisterImage( 0x87C348C36FF085C ) )
+	LayoutTopBar:setImage( RegisterImage( "uie_ui_menu_social_popup_menu_bar" ) )
 	self:addElement( LayoutTopBar )
 	self.LayoutTopBar = LayoutTopBar
 	
 	local LayoutTopBar2 = LUI.UIImage.new( 0, 1, -1, 1, 1, 1, -27, 1 )
 	LayoutTopBar2:setZRot( 180 )
-	LayoutTopBar2:setImage( RegisterImage( 0x87C348C36FF085C ) )
+	LayoutTopBar2:setImage( RegisterImage( "uie_ui_menu_social_popup_menu_bar" ) )
 	self:addElement( LayoutTopBar2 )
 	self.LayoutTopBar2 = LayoutTopBar2
 	

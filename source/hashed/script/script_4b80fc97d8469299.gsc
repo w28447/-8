@@ -60,9 +60,9 @@ function main()
     }
     
     level.var_d7374603 = 0;
-    level.var_3089454f = getentarray( "mq_pap_vessel", "targetname" );
+    level.a_e_pap_vessels = getentarray( "mq_pap_vessel", "targetname" );
     
-    foreach ( e_vessel in level.var_3089454f )
+    foreach ( e_vessel in level.a_e_pap_vessels )
     {
         e_vessel hide();
     }
@@ -155,7 +155,7 @@ function function_816c3132( var_5ea5c94d )
             wait 1;
         }
         
-        level flag::set( #"hash_3028604821838259" );
+        level flag::set( #"golden_pap_active" );
         level flag::set( #"hash_1d9afa9be4c10160" );
         level thread zm_orange_pap::function_56db9cdc();
         level.var_1c53964e thread zm_hms_util::function_6a0d675d( #"hash_17b44ac72ae4b92f", -1, 0, 1 );
@@ -200,7 +200,7 @@ function function_3c9be590( var_5ea5c94d, ended_early )
         s_challenge_station zm_orange_challenges::function_fd8a137e();
     }
     
-    level flag::clear( #"hash_3028604821838259" );
+    level flag::clear( #"golden_pap_active" );
     zm_hms_util::pause_zombies( 1, 0 );
     level flag::set( #"disable_special_rounds" );
     zm_orange_mq_hell::spawn_guide();
@@ -414,7 +414,7 @@ function function_dc380897()
     level endon( #"game_end" );
     self flag::clear( "pap_waiting_for_user" );
     
-    foreach ( vessel in level.var_3089454f )
+    foreach ( vessel in level.a_e_pap_vessels )
     {
         if ( vessel.script_noteworthy === self.script_noteworthy )
         {
@@ -431,7 +431,7 @@ function function_dc380897()
     }
     else if ( level.var_d7374603 == 3 )
     {
-        player thread zm_orange_util::function_51b752a9( #"hash_549030026224cbce", -1, 0, 1 );
+        player thread zm_orange_util::function_51b752a9( #"vox_device_pap_give_final", -1, 0, 1 );
     }
     else if ( level.var_d7374603 == 4 )
     {
@@ -469,7 +469,7 @@ function function_dc380897()
     var_deb6871b.var_b9989e12 = hash( var_deb6871b.script_noteworthy );
     zm_sq_modules::function_3f808d3d( var_deb6871b.var_b9989e12 );
     level flag::set( #"infinite_round_spawning" );
-    var_deb6871b waittill( #"hash_1f9b852104ab2c13" );
+    var_deb6871b waittill( #"soul_capture_complete" );
     
     /#
         if ( getdvarint( #"zm_debug_ee", 0 ) )
@@ -492,7 +492,7 @@ function function_dc380897()
     self.e_fire playsound( #"hash_49156c17a247721c" );
     arrayremovevalue( level.var_4d8e32c8, self );
     
-    if ( !level flag::get( #"hash_3028604821838259" ) )
+    if ( !level flag::get( #"golden_pap_active" ) )
     {
         wait 1;
         level notify( #"hash_39b6629ce957cce9" );
@@ -513,13 +513,13 @@ function function_dc380897()
             player thread zm_orange_util::function_51b752a9( #"hash_2fbc5c784ba782b6", -1, 0, 1 );
         }
         
-        arrayremovevalue( level.var_3089454f, self.vessel );
+        arrayremovevalue( level.a_e_pap_vessels, self.vessel );
         self.vessel delete();
         level flag::set( #"hash_11d64d1f93c196cc" );
         return;
     }
     
-    arrayremovevalue( level.var_3089454f, self.vessel );
+    arrayremovevalue( level.a_e_pap_vessels, self.vessel );
     self.vessel delete();
 }
 
@@ -591,7 +591,7 @@ function soul_captured( var_f0e6c7a2, ent )
     
     if ( var_f0e6c7a2.var_7944be4a >= var_f0e6c7a2.n_souls_required )
     {
-        var_f0e6c7a2 function_a66f0de2();
+        var_f0e6c7a2 complete_soul_capture();
     }
 }
 
@@ -599,11 +599,11 @@ function soul_captured( var_f0e6c7a2, ent )
 // Params 0
 // Checksum 0x2417befc, Offset: 0x2240
 // Size: 0xa4
-function function_a66f0de2()
+function complete_soul_capture()
 {
     zm_sq_modules::function_2a94055d( self.var_b9989e12 );
     level.var_d7374603++;
-    self notify( #"hash_1f9b852104ab2c13" );
+    self notify( #"soul_capture_complete" );
     level flag::clear( #"infinite_round_spawning" );
     
     if ( level.var_d7374603 > 3 )

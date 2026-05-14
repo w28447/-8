@@ -4446,7 +4446,7 @@ function function_93844822( e_player, b_skip_scene, b_enter = 1 )
     {
         if ( b_enter )
         {
-            debug_scene = getdvarstring( #"hash_56b164d8150f9e8d", "" );
+            debug_scene = getdvarstring( #"debug_vehiclescene", "" );
             
             if ( debug_scene != "" )
             {
@@ -4488,7 +4488,7 @@ function function_93844822( e_player, b_skip_scene, b_enter = 1 )
         }
         else
         {
-            debug_scene = getdvarstring( #"hash_56b164d8150f9e8d", "" );
+            debug_scene = getdvarstring( #"debug_vehiclescene", "" );
             
             if ( debug_scene != "" )
             {

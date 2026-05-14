@@ -3,7 +3,7 @@
     "baseWeapon": "#gadget_supplypod",
     "displayname": "#supplypod/name",
     "weapon70": "#gadget_supplypod",
-    "streamkey": "#hash_56d659bfcbcd56e6",
+    "streamkey": "#gadget_supplypod_soundbank",
     "scrstr_8c8": [
         "tag_equipment_hero"
     ],
@@ -57,7 +57,7 @@
     "hudIcon": "#ui_icon_ability_spawnbeacon",
     "image_e90": "#ui_icon_ability_spawnbeacon",
     "image_1048": "#ui_icon_ability_spawnbeacon",
-    "beam_e88": "#hash_4976bd99debbb48d",
+    "beam_e88": "#supplypod_beam",
     "#hash_96850284": "#jammer_supplypod",
     "#hash_26f68e75": "#icepick_supplypod"
 }

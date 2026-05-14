@@ -59,7 +59,7 @@ CoD.WZAAR_PaintCans.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local PaintCanImage = LUI.UIImage.new( 0, 0, 177, 241, 0, 0, 14, 78 )
 	PaintCanImage:setZRot( 38 )
-	PaintCanImage:setImage( RegisterImage( 0xB808223FCD4471D ) )
+	PaintCanImage:setImage( RegisterImage( "ui_icon_inventory_spray_can" ) )
 	self:addElement( PaintCanImage )
 	self.PaintCanImage = PaintCanImage
 	

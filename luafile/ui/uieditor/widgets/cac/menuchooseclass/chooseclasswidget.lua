@@ -31,7 +31,7 @@ CoD.ChooseClassWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.XCamMouseControl = XCamMouseControl
 	
 	local perk1Header = CoD.CategoryHeader.new( f1_arg0, f1_arg1, 0.5, 0.5, 335, 460, 1, 1, -497, -481 )
-	perk1Header.header:setText( LocalizeToUpperString( 0xCC26359EAAED27A ) )
+	perk1Header.header:setText( LocalizeToUpperString( "mpui/perk1" ) )
 	perk1Header:subscribeToGlobalModel( f1_arg1, "LoadoutBreadcrumbs", "talent1", function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then
@@ -42,7 +42,7 @@ CoD.ChooseClassWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.perk1Header = perk1Header
 	
 	local perk2Header = CoD.CategoryHeader.new( f1_arg0, f1_arg1, 0.5, 0.5, 455, 580, 1, 1, -497, -481 )
-	perk2Header.header:setText( LocalizeToUpperString( 0xCC26259EAAED0C7 ) )
+	perk2Header.header:setText( LocalizeToUpperString( "mpui/perk2" ) )
 	perk2Header:subscribeToGlobalModel( f1_arg1, "LoadoutBreadcrumbs", "talent2", function ( model )
 		local f3_local0 = model:get()
 		if f3_local0 ~= nil then
@@ -53,7 +53,7 @@ CoD.ChooseClassWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.perk2Header = perk2Header
 	
 	local perk3Header = CoD.CategoryHeader.new( f1_arg0, f1_arg1, 0.5, 0.5, 575, 700, 1, 1, -497, -481 )
-	perk3Header.header:setText( LocalizeToUpperString( 0xCC26159EAAECF14 ) )
+	perk3Header.header:setText( LocalizeToUpperString( "mpui/perk3" ) )
 	perk3Header:subscribeToGlobalModel( f1_arg1, "LoadoutBreadcrumbs", "talent3", function ( model )
 		local f4_local0 = model:get()
 		if f4_local0 ~= nil then
@@ -64,7 +64,7 @@ CoD.ChooseClassWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.perk3Header = perk3Header
 	
 	local SecondaryAttachmentHeader = CoD.CategoryHeader.new( f1_arg0, f1_arg1, 0.5, 0.5, -184, -59, 1, 1, -287, -271 )
-	SecondaryAttachmentHeader.header:setText( Engine[0xF9F1239CFD921FE]( 0x56E6F15BA89EEED ) )
+	SecondaryAttachmentHeader.header:setText( Engine[0xF9F1239CFD921FE]( "mpui/attachments_caps" ) )
 	self:addElement( SecondaryAttachmentHeader )
 	self.SecondaryAttachmentHeader = SecondaryAttachmentHeader
 	
@@ -96,7 +96,7 @@ CoD.ChooseClassWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.EquipmentHeader = EquipmentHeader
 	
 	local PrimaryAttachmentHeader = CoD.CategoryHeader.new( f1_arg0, f1_arg1, 0.5, 0.5, -563, -438, 1, 1, -287, -271 )
-	PrimaryAttachmentHeader.header:setText( Engine[0xF9F1239CFD921FE]( 0x56E6F15BA89EEED ) )
+	PrimaryAttachmentHeader.header:setText( Engine[0xF9F1239CFD921FE]( "mpui/attachments_caps" ) )
 	self:addElement( PrimaryAttachmentHeader )
 	self.PrimaryAttachmentHeader = PrimaryAttachmentHeader
 	
@@ -864,7 +864,7 @@ CoD.ChooseClassWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.wildcards = wildcards
 	
 	secondary = CoD.LoadoutClassItem.new( f1_arg0, f1_arg1, 0.5, 0.5, -304, 46, 1, 1, -475, -271 )
-	secondary.PrimaryHeader.header:setText( Engine[0xF9F1239CFD921FE]( 0x73F876131FB1D9D ) )
+	secondary.PrimaryHeader.header:setText( Engine[0xF9F1239CFD921FE]( "mpui/secondary_caps" ) )
 	secondary:linkToElementModel( self, "secondary", false, function ( model )
 		secondary:setModel( model, f1_arg1 )
 	end )

@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_random_set_3_4_battery",
+    "type": "#tag",
+    "material": "#hash_40278f296f676e1d",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_1ce3389a9103ca7",
+        "icon": "image#loot_ui_icon_tags_random_set_3_4_battery",
+        "isdefault": 0
+    }
+}

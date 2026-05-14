@@ -2,7 +2,7 @@
     "name": "#supplydrop_marker_mp",
     "baseWeapon": "#supplydrop_marker",
     "weapon70": "#supplydrop_marker",
-    "streamkey": "#hash_70fa05f75b356fe4",
+    "streamkey": "#supplydrop_marker_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -32,7 +32,7 @@
     "sound240": "#hash_631a067190b54300",
     "sound250": "#hash_242aa17124751841",
     "tunables1": "#supplydrop_marker_tunables_mp",
-    "weaponHeadObjective": "#hash_1b5a86007f598bbc",
+    "weaponHeadObjective": "#airdrop_swat_team",
     "#hash_2e4a8800": "#swat_team_scoreevents",
     "projectilemodel": "#wpn_t8_eqp_grenade_smoke_projectile",
     "viewmodel": [

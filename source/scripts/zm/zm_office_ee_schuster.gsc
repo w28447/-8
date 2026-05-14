@@ -58,7 +58,7 @@ function ee_schuster_step1_setup( var_5ea5c94d )
     
     foreach ( e_player in a_e_players )
     {
-        if ( e_player zm_characters::is_character( array( #"prt_zm_richtofen", #"prt_zm_richtofen_ofc", #"hash_5a715cb0a6e071ae" ) ) )
+        if ( e_player zm_characters::is_character( array( #"prt_zm_richtofen", #"prt_zm_richtofen_ofc", #"prt_zm_richtofen_whi_novials" ) ) )
         {
             foreach ( var_9dc0380f in var_66ef9199 )
             {

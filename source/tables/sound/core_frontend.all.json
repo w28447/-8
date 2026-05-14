@@ -59,13 +59,13 @@
         {
             "value": 78,
             "next": 44,
-            "name": "#hash_5b709e0bda2af7e7",
+            "name": "#amb_lab_bg",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5b709e0bda2af7e7",
+                    "name": "#amb_lab_bg",
                     "assetId": "#hash_60fbf1ed63e2db4f",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -862,13 +862,13 @@
         {
             "value": 57,
             "next": 13,
-            "name": "#hash_1ae59e521538dd6e",
+            "name": "#bik_core_frontend_brains_wrapper",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1ae59e521538dd6e",
+                    "name": "#bik_core_frontend_brains_wrapper",
                     "assetId": "#hash_7ea8f751e5944cb5",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -1352,13 +1352,13 @@
         {
             "value": 72,
             "next": 26,
-            "name": "#hash_109a3701675396ff",
+            "name": "#bik_core_frontend_melee_stopsign",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_109a3701675396ff",
+                    "name": "#bik_core_frontend_melee_stopsign",
                     "assetId": "#hash_4d4a007c0bbe2c4e",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -1401,13 +1401,13 @@
         {
             "value": 137,
             "next": 65535,
-            "name": "#hash_18df65b40e32c382",
+            "name": "#bik_core_frontend_melee_zombiearm",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_18df65b40e32c382",
+                    "name": "#bik_core_frontend_melee_zombiearm",
                     "assetId": "#hash_7dc556f7a541b96e",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -1450,13 +1450,13 @@
         {
             "value": 257,
             "next": 65535,
-            "name": "#hash_72d2b17b4239cfc6",
+            "name": "#bik_core_frontend_phased_wrapper",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_72d2b17b4239cfc6",
+                    "name": "#bik_core_frontend_phased_wrapper",
                     "assetId": "#hash_2c45c35be1f5ad2c",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -1548,13 +1548,13 @@
         {
             "value": 268,
             "next": 65535,
-            "name": "#hash_389dfa3358a1fff",
+            "name": "#bik_core_frontend_rng_reserve",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_389dfa3358a1fff",
+                    "name": "#bik_core_frontend_rng_reserve",
                     "assetId": "#hash_477f8c05872f99bd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -1598,13 +1598,13 @@
         {
             "value": 263,
             "next": 65535,
-            "name": "#hash_2112b3a7924f7f59",
+            "name": "#bik_core_frontend_shattered_wrapper",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2112b3a7924f7f59",
+                    "name": "#bik_core_frontend_shattered_wrapper",
                     "assetId": "#hash_1c2a7de6b8c153bd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -1941,13 +1941,13 @@
         {
             "value": 274,
             "next": 65535,
-            "name": "#hash_6f93c8fab71f1db5",
+            "name": "#bik_core_frontend_smg_burst",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6f93c8fab71f1db5",
+                    "name": "#bik_core_frontend_smg_burst",
                     "assetId": "#bik/black_market/core_frontend_smg_burst.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -2568,13 +2568,13 @@
         {
             "value": 44,
             "next": 46,
-            "name": "#hash_7d9695c08a3f71d2",
+            "name": "#bik_core_frontend_spinal_wrapper",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7d9695c08a3f71d2",
+                    "name": "#bik_core_frontend_spinal_wrapper",
                     "assetId": "#hash_423be78300310add",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -2912,13 +2912,13 @@
         {
             "value": 119,
             "next": 65535,
-            "name": "#hash_3df0846612909055",
+            "name": "#bik_mp_ajax_equipment",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3df0846612909055",
+                    "name": "#bik_mp_ajax_equipment",
                     "assetId": "#bik/wz/specialist/frontend/ajax/gl_ajax_equipment.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -2961,13 +2961,13 @@
         {
             "value": 272,
             "next": 65535,
-            "name": "#hash_12190711c5c9127b",
+            "name": "#bik_mp_ajax_weapon",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_12190711c5c9127b",
+                    "name": "#bik_mp_ajax_weapon",
                     "assetId": "#bik/wz/specialist/frontend/ajax/gl_ajax_weapon.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -3010,13 +3010,13 @@
         {
             "value": 218,
             "next": 65535,
-            "name": "#hash_32bd421ea337d94a",
+            "name": "#bik_mp_battery_equipment",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_32bd421ea337d94a",
+                    "name": "#bik_mp_battery_equipment",
                     "assetId": "#bik/wz/specialist/frontend/battery/gl_battery_equipment.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -3059,13 +3059,13 @@
         {
             "value": 4,
             "next": 58,
-            "name": "#hash_265ce0f3f13818da",
+            "name": "#bik_mp_battery_weapon",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_265ce0f3f13818da",
+                    "name": "#bik_mp_battery_weapon",
                     "assetId": "#bik/wz/specialist/frontend/battery/gl_battery_weapon.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -3108,13 +3108,13 @@
         {
             "value": 82,
             "next": 65535,
-            "name": "#hash_6fde482764ac7d28",
+            "name": "#bik_mp_crash_equipment",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6fde482764ac7d28",
+                    "name": "#bik_mp_crash_equipment",
                     "assetId": "#bik/wz/specialist/frontend/crash/gl_crash_equipment.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -3157,13 +3157,13 @@
         {
             "value": 33,
             "next": 65535,
-            "name": "#hash_2d7ddf35f00840e4",
+            "name": "#bik_mp_crash_weapon",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2d7ddf35f00840e4",
+                    "name": "#bik_mp_crash_weapon",
                     "assetId": "#bik/wz/specialist/frontend/crash/gl_crash_weapon.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -3206,13 +3206,13 @@
         {
             "value": 279,
             "next": 65535,
-            "name": "#hash_7cfce3e38b1679a0",
+            "name": "#bik_mp_firebreak_equipment",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7cfce3e38b1679a0",
+                    "name": "#bik_mp_firebreak_equipment",
                     "assetId": "#bik/wz/specialist/frontend/firebreak/gl_firebreak_equipment.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -3255,13 +3255,13 @@
         {
             "value": 277,
             "next": 65535,
-            "name": "#hash_3e7b0db568188dfc",
+            "name": "#bik_mp_firebreak_weapon",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3e7b0db568188dfc",
+                    "name": "#bik_mp_firebreak_weapon",
                     "assetId": "#bik/wz/specialist/frontend/firebreak/gl_firebreak_weapon.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -3304,13 +3304,13 @@
         {
             "value": 269,
             "next": 65535,
-            "name": "#hash_3899d46652acc2a8",
+            "name": "#bik_mp_nomad_equipment",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3899d46652acc2a8",
+                    "name": "#bik_mp_nomad_equipment",
                     "assetId": "#bik/wz/specialist/frontend/nomad/gl_nomad_equipment.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -3353,13 +3353,13 @@
         {
             "value": 267,
             "next": 65535,
-            "name": "#hash_3098086ae94b1164",
+            "name": "#bik_mp_nomad_weapon",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3098086ae94b1164",
+                    "name": "#bik_mp_nomad_weapon",
                     "assetId": "#bik/wz/specialist/frontend/nomad/gl_nomad_weapon.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -3402,13 +3402,13 @@
         {
             "value": 265,
             "next": 65535,
-            "name": "#hash_797ad176d939762f",
+            "name": "#bik_mp_outrider_equipment",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_797ad176d939762f",
+                    "name": "#bik_mp_outrider_equipment",
                     "assetId": "#bik/wz/specialist/tu13/mp_outrider_equipment.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -3451,13 +3451,13 @@
         {
             "value": 1,
             "next": 65535,
-            "name": "#hash_1579be3c358d5e99",
+            "name": "#bik_mp_outrider_weapon",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1579be3c358d5e99",
+                    "name": "#bik_mp_outrider_weapon",
                     "assetId": "#bik/wz/specialist/tu13/mp_outrider_weapon.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -3500,13 +3500,13 @@
         {
             "value": 65,
             "next": 65535,
-            "name": "#hash_9ae43feca89b9bd",
+            "name": "#bik_mp_prophet_equipment",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_9ae43feca89b9bd",
+                    "name": "#bik_mp_prophet_equipment",
                     "assetId": "#bik/wz/specialist/frontend/prophet/gl_prophet_equipment.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -3549,13 +3549,13 @@
         {
             "value": 42,
             "next": 65,
-            "name": "#hash_731f6adaffd234c3",
+            "name": "#bik_mp_prophet_weapon",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_731f6adaffd234c3",
+                    "name": "#bik_mp_prophet_weapon",
                     "assetId": "#bik/wz/specialist/frontend/prophet/gl_prophet_weapon.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -3598,13 +3598,13 @@
         {
             "value": 282,
             "next": 65535,
-            "name": "#hash_415f84c1ee3b09fc",
+            "name": "#bik_mp_recon_equipment",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_415f84c1ee3b09fc",
+                    "name": "#bik_mp_recon_equipment",
                     "assetId": "#bik/wz/specialist/frontend/recon/gl_recon_equipment.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -3647,13 +3647,13 @@
         {
             "value": 264,
             "next": 65535,
-            "name": "#hash_25d2c75c3270b620",
+            "name": "#bik_mp_recon_weapon",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_25d2c75c3270b620",
+                    "name": "#bik_mp_recon_weapon",
                     "assetId": "#bik/wz/specialist/frontend/recon/gl_recon_weapon.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -3696,13 +3696,13 @@
         {
             "value": 260,
             "next": 65535,
-            "name": "#hash_7d5fa24514d5bfad",
+            "name": "#bik_mp_ruin_equipment",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7d5fa24514d5bfad",
+                    "name": "#bik_mp_ruin_equipment",
                     "assetId": "#bik/wz/specialist/frontend/ruin/gl_ruin_equipment.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -3745,13 +3745,13 @@
         {
             "value": 189,
             "next": 65535,
-            "name": "#hash_3c38ade9202e50d3",
+            "name": "#bik_mp_ruin_weapon",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3c38ade9202e50d3",
+                    "name": "#bik_mp_ruin_weapon",
                     "assetId": "#bik/wz/specialist/frontend/ruin/gl_ruin_weapon.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -3794,13 +3794,13 @@
         {
             "value": 247,
             "next": 65535,
-            "name": "#hash_a79c9bbb7272366",
+            "name": "#bik_mp_seraph_equipment",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_a79c9bbb7272366",
+                    "name": "#bik_mp_seraph_equipment",
                     "assetId": "#bik/wz/specialist/frontend/seraph/gl_seraph_equipment.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -3843,13 +3843,13 @@
         {
             "value": 145,
             "next": 65535,
-            "name": "#hash_40f68b92ae9953be",
+            "name": "#bik_mp_seraph_weapon",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_40f68b92ae9953be",
+                    "name": "#bik_mp_seraph_weapon",
                     "assetId": "#bik/wz/specialist/frontend/seraph/gl_seraph_weapon.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -3892,13 +3892,13 @@
         {
             "value": 243,
             "next": 65535,
-            "name": "#hash_320950a159c84ce9",
+            "name": "#bik_mp_torque_equipment",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_320950a159c84ce9",
+                    "name": "#bik_mp_torque_equipment",
                     "assetId": "#bik/wz/specialist/frontend/torque/gl_torque_equipment.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -3941,13 +3941,13 @@
         {
             "value": 30,
             "next": 74,
-            "name": "#hash_62a3a7b855e74a07",
+            "name": "#bik_mp_torque_weapon",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_62a3a7b855e74a07",
+                    "name": "#bik_mp_torque_weapon",
                     "assetId": "#bik/wz/specialist/frontend/torque/gl_torque_weapon.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -3990,13 +3990,13 @@
         {
             "value": 97,
             "next": 65535,
-            "name": "#hash_41817be02a182a65",
+            "name": "#bik_mp_zero_equipment",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_41817be02a182a65",
+                    "name": "#bik_mp_zero_equipment",
                     "assetId": "#bik/black_market/mp_zero_equipment.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -4039,13 +4039,13 @@
         {
             "value": 69,
             "next": 65535,
-            "name": "#hash_27f14c185c3824eb",
+            "name": "#bik_mp_zero_weapon",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_27f14c185c3824eb",
+                    "name": "#bik_mp_zero_weapon",
                     "assetId": "#bik/black_market/mp_zero_weapon.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -4088,13 +4088,13 @@
         {
             "value": 60,
             "next": 65535,
-            "name": "#hash_1054b6e085bb3f38",
+            "name": "#bik_wz_teaser_trailer",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1054b6e085bb3f38",
+                    "name": "#bik_wz_teaser_trailer",
                     "assetId": "#bik/wz/wz_teaser/blackout_teaser_mix_12.sn100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -7147,13 +7147,13 @@
         {
             "value": 223,
             "next": 65535,
-            "name": "#hash_14404eee1bf15f05",
+            "name": "#evt_mixer_drain",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_14404eee1bf15f05",
+                    "name": "#evt_mixer_drain",
                     "assetId": "#hash_3236a34be26bd6dc",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -8487,14 +8487,14 @@
         {
             "value": 109,
             "next": 65535,
-            "name": "#hash_2943242cb89eb873",
+            "name": "#uin_cac_attach_ads_rld",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2943242cb89eb873",
-                    "secondaryname": "#hash_273655bac92f5f01",
+                    "name": "#uin_cac_attach_ads_rld",
+                    "secondaryname": "#uin_cac_attach_base",
                     "assetId": "#uin/2k18/cac/cac_attach_ads_rld.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -8537,14 +8537,14 @@
         {
             "value": 144,
             "next": 150,
-            "name": "#hash_8c48cb3a308b3e8",
+            "name": "#uin_cac_attach_barrel",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_8c48cb3a308b3e8",
-                    "secondaryname": "#hash_273655bac92f5f01",
+                    "name": "#uin_cac_attach_barrel",
+                    "secondaryname": "#uin_cac_attach_base",
                     "assetId": "#uin/2k18/cac/cac_attach_barrel.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -8587,14 +8587,14 @@
         {
             "value": 185,
             "next": 154,
-            "name": "#hash_437e916fe0f50890",
+            "name": "#uin_cac_attach_barrelchoke",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_437e916fe0f50890",
-                    "secondaryname": "#hash_273655bac92f5f01",
+                    "name": "#uin_cac_attach_barrelchoke",
+                    "secondaryname": "#uin_cac_attach_base",
                     "assetId": "#uin/2k18/cac/cac_attach_barrelchoke.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -8637,13 +8637,13 @@
         {
             "value": 190,
             "next": 153,
-            "name": "#hash_273655bac92f5f01",
+            "name": "#uin_cac_attach_base",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_273655bac92f5f01",
+                    "name": "#uin_cac_attach_base",
                     "assetId": "#uin/2k18/cac/cac_attach_base.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -8686,14 +8686,14 @@
         {
             "value": 85,
             "next": 65535,
-            "name": "#hash_655b00742b1adcd0",
+            "name": "#uin_cac_attach_bayonet",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_655b00742b1adcd0",
-                    "secondaryname": "#hash_273655bac92f5f01",
+                    "name": "#uin_cac_attach_bayonet",
+                    "secondaryname": "#uin_cac_attach_base",
                     "assetId": "#uin/2k18/cac/cac_attach_bayonet.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -8736,14 +8736,14 @@
         {
             "value": 149,
             "next": 65535,
-            "name": "#hash_319528abed36658d",
+            "name": "#uin_cac_attach_beltfeed",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_319528abed36658d",
-                    "secondaryname": "#hash_273655bac92f5f01",
+                    "name": "#uin_cac_attach_beltfeed",
+                    "secondaryname": "#uin_cac_attach_base",
                     "assetId": "#uin/2k18/cac/cac_attach_beltfeed.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -8786,14 +8786,14 @@
         {
             "value": 192,
             "next": 65535,
-            "name": "#hash_2921002d3703dae9",
+            "name": "#uin_cac_attach_burstcount",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2921002d3703dae9",
-                    "secondaryname": "#hash_273655bac92f5f01",
+                    "name": "#uin_cac_attach_burstcount",
+                    "secondaryname": "#uin_cac_attach_base",
                     "assetId": "#uin/2k18/cac/cac_attach_burstcount.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -8836,14 +8836,14 @@
         {
             "value": 201,
             "next": 64,
-            "name": "#hash_25d1930d5a362d59",
+            "name": "#uin_cac_attach_crossbar",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_25d1930d5a362d59",
-                    "secondaryname": "#hash_273655bac92f5f01",
+                    "name": "#uin_cac_attach_crossbar",
+                    "secondaryname": "#uin_cac_attach_base",
                     "assetId": "#uin/2k18/cac/cac_attach_crossbar.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -8886,14 +8886,14 @@
         {
             "value": 214,
             "next": 113,
-            "name": "#hash_62cf8aac508c0c1f",
+            "name": "#uin_cac_attach_dragon",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_62cf8aac508c0c1f",
-                    "secondaryname": "#hash_273655bac92f5f01",
+                    "name": "#uin_cac_attach_dragon",
+                    "secondaryname": "#uin_cac_attach_base",
                     "assetId": "#uin/2k18/cac/cac_attach_dragon.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -8936,14 +8936,14 @@
         {
             "value": 246,
             "next": 65535,
-            "name": "#hash_261301b69bff178d",
+            "name": "#uin_cac_attach_dualwield",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_261301b69bff178d",
-                    "secondaryname": "#hash_273655bac92f5f01",
+                    "name": "#uin_cac_attach_dualwield",
+                    "secondaryname": "#uin_cac_attach_base",
                     "assetId": "#uin/2k18/cac/cac_attach_dualwield.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -8986,14 +8986,14 @@
         {
             "value": 209,
             "next": 65535,
-            "name": "#hash_4d2cf618b73f27f7",
+            "name": "#uin_cac_attach_fasthand",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4d2cf618b73f27f7",
-                    "secondaryname": "#hash_273655bac92f5f01",
+                    "name": "#uin_cac_attach_fasthand",
+                    "secondaryname": "#uin_cac_attach_base",
                     "assetId": "#uin/2k18/cac/cac_attach_fasthand.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -9036,14 +9036,14 @@
         {
             "value": 204,
             "next": 109,
-            "name": "#hash_7bd14c7b26773919",
+            "name": "#uin_cac_attach_fastmag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7bd14c7b26773919",
-                    "secondaryname": "#hash_273655bac92f5f01",
+                    "name": "#uin_cac_attach_fastmag",
+                    "secondaryname": "#uin_cac_attach_base",
                     "assetId": "#uin/2k18/cac/cac_attach_fastmag.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -9086,14 +9086,14 @@
         {
             "value": 176,
             "next": 65535,
-            "name": "#hash_59521bf8503ccac3",
+            "name": "#uin_cac_attach_fatbarrel",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_59521bf8503ccac3",
-                    "secondaryname": "#hash_273655bac92f5f01",
+                    "name": "#uin_cac_attach_fatbarrel",
+                    "secondaryname": "#uin_cac_attach_base",
                     "assetId": "#uin/2k18/cac/cac_attach_fatbarrel.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -9136,14 +9136,14 @@
         {
             "value": 203,
             "next": 65535,
-            "name": "#hash_d597ba5249a5551",
+            "name": "#uin_cac_attach_fmj",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_d597ba5249a5551",
-                    "secondaryname": "#hash_273655bac92f5f01",
+                    "name": "#uin_cac_attach_fmj",
+                    "secondaryname": "#uin_cac_attach_base",
                     "assetId": "#uin/2k18/cac/cac_attach_fmj.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -9186,14 +9186,14 @@
         {
             "value": 138,
             "next": 121,
-            "name": "#hash_37d33a352c25218",
+            "name": "#uin_cac_attach_grip",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_37d33a352c25218",
-                    "secondaryname": "#hash_273655bac92f5f01",
+                    "name": "#uin_cac_attach_grip",
+                    "secondaryname": "#uin_cac_attach_base",
                     "assetId": "#uin/2k18/cac/cac_attach_grip.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -9236,14 +9236,14 @@
         {
             "value": 202,
             "next": 65535,
-            "name": "#hash_4ff9668126b53aca",
+            "name": "#uin_cac_attach_hi_explo",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4ff9668126b53aca",
-                    "secondaryname": "#hash_273655bac92f5f01",
+                    "name": "#uin_cac_attach_hi_explo",
+                    "secondaryname": "#uin_cac_attach_base",
                     "assetId": "#uin/2k18/cac/cac_attach_hi_explo.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -9286,14 +9286,14 @@
         {
             "value": 164,
             "next": 65535,
-            "name": "#hash_7fd226e2b0d089e1",
+            "name": "#uin_cac_attach_hical",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7fd226e2b0d089e1",
-                    "secondaryname": "#hash_273655bac92f5f01",
+                    "name": "#uin_cac_attach_hical",
+                    "secondaryname": "#uin_cac_attach_base",
                     "assetId": "#uin/2k18/cac/cac_attach_hical.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -9343,7 +9343,7 @@
             "aliases": [
                 {
                     "name": "#uin_cac_attach_knife",
-                    "secondaryname": "#hash_273655bac92f5f01",
+                    "secondaryname": "#uin_cac_attach_base",
                     "assetId": "#uin/2k18/cac/cac_attach_knife.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -9386,14 +9386,14 @@
         {
             "value": 143,
             "next": 163,
-            "name": "#hash_147231af6efe4d94",
+            "name": "#uin_cac_attach_lasersight",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_147231af6efe4d94",
-                    "secondaryname": "#hash_273655bac92f5f01",
+                    "name": "#uin_cac_attach_lasersight",
+                    "secondaryname": "#uin_cac_attach_base",
                     "assetId": "#uin/2k18/cac/cac_attach_lasersight.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -9436,14 +9436,14 @@
         {
             "value": 49,
             "next": 112,
-            "name": "#hash_751befd3c164c7e8",
+            "name": "#uin_cac_attach_mags",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_751befd3c164c7e8",
-                    "secondaryname": "#hash_273655bac92f5f01",
+                    "name": "#uin_cac_attach_mags",
+                    "secondaryname": "#uin_cac_attach_base",
                     "assetId": "#uin/2k18/cac/cac_attach_mags.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -9486,14 +9486,14 @@
         {
             "value": 21,
             "next": 168,
-            "name": "#hash_f8c1be7b96cc456",
+            "name": "#uin_cac_attach_rapid",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_f8c1be7b96cc456",
-                    "secondaryname": "#hash_273655bac92f5f01",
+                    "name": "#uin_cac_attach_rapid",
+                    "secondaryname": "#uin_cac_attach_base",
                     "assetId": "#uin/2k18/cac/cac_attach_rapid.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -9536,14 +9536,14 @@
         {
             "value": 55,
             "next": 169,
-            "name": "#hash_4e8a19a7bcee92e2",
+            "name": "#uin_cac_attach_reflex",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4e8a19a7bcee92e2",
-                    "secondaryname": "#hash_273655bac92f5f01",
+                    "name": "#uin_cac_attach_reflex",
+                    "secondaryname": "#uin_cac_attach_base",
                     "assetId": "#uin/2k18/cac/cac_attach_reflex.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -9586,14 +9586,14 @@
         {
             "value": 96,
             "next": 65535,
-            "name": "#hash_8ad33d17aeb5784",
+            "name": "#uin_cac_attach_remove",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_8ad33d17aeb5784",
-                    "secondaryname": "#hash_220862a4ca76a9e2",
+                    "name": "#uin_cac_attach_remove",
+                    "secondaryname": "#cac_equipment_remove",
                     "assetId": "#uin/2k18/cac/cac_rem_attach.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -9643,7 +9643,7 @@
             "aliases": [
                 {
                     "name": "#hash_5db15a3f4dfa7496",
-                    "secondaryname": "#hash_273655bac92f5f01",
+                    "secondaryname": "#uin_cac_attach_base",
                     "assetId": "#uin/2k18/cac/cac_attach_rocket_cache.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -9686,14 +9686,14 @@
         {
             "value": 18,
             "next": 170,
-            "name": "#hash_1022fee3737577b",
+            "name": "#uin_cac_attach_skullsplit",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1022fee3737577b",
-                    "secondaryname": "#hash_273655bac92f5f01",
+                    "name": "#uin_cac_attach_skullsplit",
+                    "secondaryname": "#uin_cac_attach_base",
                     "assetId": "#uin/2k18/cac/cac_attach_skullsplit.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -9736,14 +9736,14 @@
         {
             "value": 161,
             "next": 65535,
-            "name": "#hash_3a3f0ff3ae775679",
+            "name": "#uin_cac_attach_stabilizer",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3a3f0ff3ae775679",
-                    "secondaryname": "#hash_273655bac92f5f01",
+                    "name": "#uin_cac_attach_stabilizer",
+                    "secondaryname": "#uin_cac_attach_base",
                     "assetId": "#uin/2k18/cac/cac_attach_stabilize_alt.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -9786,14 +9786,14 @@
         {
             "value": 91,
             "next": 174,
-            "name": "#hash_4087973efdcd8d4a",
+            "name": "#uin_cac_attach_stock",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4087973efdcd8d4a",
-                    "secondaryname": "#hash_273655bac92f5f01",
+                    "name": "#uin_cac_attach_stock",
+                    "secondaryname": "#uin_cac_attach_base",
                     "assetId": "#uin/2k18/cac/cac_attach_stock.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -9836,14 +9836,14 @@
         {
             "value": 124,
             "next": 176,
-            "name": "#hash_7bfb4395fa59e3cc",
+            "name": "#uin_cac_attach_strelok",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7bfb4395fa59e3cc",
-                    "secondaryname": "#hash_273655bac92f5f01",
+                    "name": "#uin_cac_attach_strelok",
+                    "secondaryname": "#uin_cac_attach_base",
                     "assetId": "#uin/2k18/cac/cac_attach_strelok.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -9886,14 +9886,14 @@
         {
             "value": 94,
             "next": 65535,
-            "name": "#hash_47b9e33310afc455",
+            "name": "#uin_cac_attach_strobe",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_47b9e33310afc455",
-                    "secondaryname": "#hash_273655bac92f5f01",
+                    "name": "#uin_cac_attach_strobe",
+                    "secondaryname": "#uin_cac_attach_base",
                     "assetId": "#uin/2k18/cac/cac_attach_strobe.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -9936,14 +9936,14 @@
         {
             "value": 156,
             "next": 110,
-            "name": "#hash_7f3e8dd2ed8ae957",
+            "name": "#uin_cac_attach_suppress",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7f3e8dd2ed8ae957",
-                    "secondaryname": "#hash_273655bac92f5f01",
+                    "name": "#uin_cac_attach_suppress",
+                    "secondaryname": "#uin_cac_attach_base",
                     "assetId": "#uin/2k18/cac/cac_attach_suppress.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -9986,13 +9986,13 @@
         {
             "value": 175,
             "next": 65535,
-            "name": "#hash_18e0b2608ca2f319",
+            "name": "#uin_cac_equip_axe",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_18e0b2608ca2f319",
+                    "name": "#uin_cac_equip_axe",
                     "secondaryname": "#uin_cac_equip_base",
                     "assetId": "#uin/2k18/cac/cac_equip_axe.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
@@ -10085,13 +10085,13 @@
         {
             "value": 173,
             "next": 111,
-            "name": "#hash_405acba6fac3c64f",
+            "name": "#uin_cac_equip_concussion",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_405acba6fac3c64f",
+                    "name": "#uin_cac_equip_concussion",
                     "secondaryname": "#uin_cac_equip_base",
                     "assetId": "#uin/2k18/cac/cac_equip_concussion.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
@@ -10135,13 +10135,13 @@
         {
             "value": 186,
             "next": 65535,
-            "name": "#hash_7db5dfe56804ae5b",
+            "name": "#uin_cac_equip_frag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7db5dfe56804ae5b",
+                    "name": "#uin_cac_equip_frag",
                     "secondaryname": "#uin_cac_equip_base",
                     "assetId": "#uin/2k18/cac/cac_equip_frag.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
@@ -10185,13 +10185,13 @@
         {
             "value": 120,
             "next": 194,
-            "name": "#hash_787a3f221d00ef7f",
+            "name": "#uin_cac_equip_molotov",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_787a3f221d00ef7f",
+                    "name": "#uin_cac_equip_molotov",
                     "secondaryname": "#uin_cac_equip_base",
                     "assetId": "#uin/2k18/cac/cac_equip_molotov.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
@@ -10235,14 +10235,14 @@
         {
             "value": 105,
             "next": 179,
-            "name": "#hash_675488ef839e0023",
+            "name": "#uin_cac_equip_remove",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_675488ef839e0023",
-                    "secondaryname": "#hash_220862a4ca76a9e2",
+                    "name": "#uin_cac_equip_remove",
+                    "secondaryname": "#cac_equipment_remove",
                     "assetId": "#uin/2k18/cac/cac_rem_eqp.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -10691,7 +10691,7 @@
             "aliases": [
                 {
                     "name": "#hash_52cd8b4f4906745a",
-                    "secondaryname": "#hash_220862a4ca76a9e2",
+                    "secondaryname": "#cac_equipment_remove",
                     "assetId": "#uin/2k18/cac/cac_rem_gear.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -12379,13 +12379,13 @@
         {
             "value": 155,
             "next": 65535,
-            "name": "#hash_7171a25a546a33",
+            "name": "#uin_cac_wc_browse",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7171a25a546a33",
+                    "name": "#uin_cac_wc_browse",
                     "assetId": "#uin/2k18/cac/cac_wildcard_browse.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -12832,7 +12832,7 @@
             "aliases": [
                 {
                     "name": "#hash_58cf7a81be5ea28e",
-                    "secondaryname": "#hash_220862a4ca76a9e2",
+                    "secondaryname": "#cac_equipment_remove",
                     "assetId": "#uin/2k18/cac/cac_rem_wpn.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -13320,13 +13320,13 @@
         {
             "value": 106,
             "next": 255,
-            "name": "#hash_819e33766a7c7a4",
+            "name": "#uin_zcac_elixir_slot",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_819e33766a7c7a4",
+                    "name": "#uin_zcac_elixir_slot",
                     "assetId": "#uin/2k18/zmb_cac/zmb_elixir_slot_select.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -13668,13 +13668,13 @@
         {
             "value": 131,
             "next": 262,
-            "name": "#hash_34aa7cb7b74f765c",
+            "name": "#uin_zcac_menu_open",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_34aa7cb7b74f765c",
+                    "name": "#uin_zcac_menu_open",
                     "assetId": "#uin/2k18/zmb_cac/zmb_open_menu.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -15391,10 +15391,10 @@
             "reverb": "#room_closet",
             "loop": "#hash_7b5dac073fa3347a",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,
@@ -15411,10 +15411,10 @@
             "reverb": "#room_closet",
             "loop": "#hash_5f0cf846c1e5f92e",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,
@@ -15430,9 +15430,9 @@
             "id": "#cp_sh_cairo_main_room",
             "reverb": "#room_livingRoom",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
-            "globalContextType": "#hash_730721b0b6373e1",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
+            "globalContextType": "#ringoff_plr",
             "globalContextValue": "#outdoor",
             "defaultRoom": true,
             "reverbDryLevel": 1,
@@ -15450,10 +15450,10 @@
             "reverb": "#room_closet",
             "loop": "#hash_5f0cf846c1e5f92e",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,
@@ -15470,10 +15470,10 @@
             "reverb": "#room_laboratory",
             "loop": "#hash_5f0cf846c1e5f92e",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,
@@ -15490,9 +15490,9 @@
             "reverb": "#mp_final_killcam",
             "loop": "#hash_44463359dd025b23",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
+            "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
-            "globalContextType": "#hash_730721b0b6373e1",
+            "globalContextType": "#ringoff_plr",
             "globalContextValue": "#outdoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
@@ -15510,10 +15510,10 @@
             "reverb": "#room_closet",
             "loop": "#hash_17be3290a0fea5c9",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,
@@ -15530,10 +15530,10 @@
             "reverb": "#room_closet",
             "loop": "#hash_33fe1f5b393ccba7",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,
@@ -15550,10 +15550,10 @@
             "reverb": "#room_closet",
             "loop": "#hash_48cf8d8361a38258",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,
@@ -15569,10 +15569,10 @@
             "id": "#mp_hero_firebreak",
             "reverb": "#room_closet",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,
@@ -15589,10 +15589,10 @@
             "reverb": "#room_closet",
             "loop": "#hash_51b4d1b89dc8345e",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,
@@ -15609,10 +15609,10 @@
             "reverb": "#room_closet",
             "loop": "#hash_64ec0ede9f71ab0f",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,
@@ -15629,10 +15629,10 @@
             "reverb": "#room_closet",
             "loop": "#hash_36e6b047f51f0a75",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,
@@ -15649,10 +15649,10 @@
             "reverb": "#room_closet",
             "loop": "#amb_reaper_room",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,
@@ -15669,10 +15669,10 @@
             "reverb": "#room_closet",
             "loop": "#hash_56093f8dc099f97f",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,
@@ -15689,10 +15689,10 @@
             "reverb": "#room_closet",
             "loop": "#hash_79e5652a2fd8f67e",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,
@@ -15709,10 +15709,10 @@
             "reverb": "#room_closet",
             "loop": "#hash_192fa158e1d7c7e2",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,
@@ -15729,10 +15729,10 @@
             "reverb": "#room_laboratory",
             "loop": "#hash_51f6bd7ef763b5dd",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,
@@ -15747,12 +15747,12 @@
             "duck": "default",
             "id": "#zm_elx_dml",
             "reverb": "#room_laboratory",
-            "loop": "#hash_5b709e0bda2af7e7",
+            "loop": "#amb_lab_bg",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,
@@ -15769,9 +15769,9 @@
             "reverb": "#outdoor_echo",
             "loop": "#hash_74ffc12afc336d06",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
+            "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
-            "globalContextType": "#hash_730721b0b6373e1",
+            "globalContextType": "#ringoff_plr",
             "globalContextValue": "#outdoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
@@ -15782,9 +15782,9 @@
     ],
     "scriptIdLookups": [],
     "streamKeysSABL": {
-        "streamKey1": "#hash_3b9a0e97a9dd448c",
+        "streamKey1": "#core_frontend_all_stream",
         "dataSize1": 4096,
-        "fileKey": "#hash_4badae32d1dacef9",
+        "fileKey": "#core_frontend_all_loaded",
         "fileLen": 40104064
     },
     "streamKeysSABS": {

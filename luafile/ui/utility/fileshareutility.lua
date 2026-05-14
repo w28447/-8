@@ -1,7 +1,7 @@
 CoD.FileshareUtility = {}
 CoD.FileshareUtility.FileshareGetMatchmakingMode = function ( f1_arg0 )
 	local f1_local0 = tonumber( f1_arg0 )
-	local f1_local1 = 0xFDC5ED3E75BC851
+	local f1_local1 = "menu/fileshare_category_public_match"
 	if not f1_local0 then
 		return ""
 	elseif f1_local0 == Enum.eGameModes[0x5E90ACB801E4A3D] or f1_local0 == Enum.eGameModes[0x7B5630CD29180CB] then
@@ -264,7 +264,7 @@ CoD.FileshareUtility.CommunityTitles = {
 }
 CoD.FileshareUtility.ToastTypes = {
 	LIKE = {
-		kicker = 0x7C41679348F59D9,
+		kicker = "menu/fileshare_action_liked",
 		description = "%s",
 		functionIcon = "uie_t7_icon_menu_options_like"
 	},
@@ -284,7 +284,7 @@ CoD.FileshareUtility.ToastTypes = {
 		functionIcon = "t7_icon_menu_simple_delete"
 	},
 	DELETED_PUBLISH = {
-		kicker = 0xF046CE9CB5B5A78,
+		kicker = "menu/fileshare_action_deleted_published",
 		description = "%s",
 		functionIcon = "t7_icon_menu_simple_delete"
 	},
@@ -900,7 +900,7 @@ CoD.FileshareUtility.SetupFileShareSummary_MP = function ( f69_arg0, f69_arg1, f
 			f69_local15 = Engine[0xF9F1239CFD921FE]( 0x1B24DF9DBEFF72F )
 			f69_local16 = f69_local18
 		elseif f69_local9 < 3 then
-			f69_local15 = Engine[0xF9F1239CFD921FE]( 0x994A7E688945611 )
+			f69_local15 = Engine[0xF9F1239CFD921FE]( "menu/fileshare_victory" )
 			f69_local16 = f69_local20
 		else
 			f69_local15 = Engine[0xF9F1239CFD921FE]( 0xC69242B76A5D212 )
@@ -910,7 +910,7 @@ CoD.FileshareUtility.SetupFileShareSummary_MP = function ( f69_arg0, f69_arg1, f
 		f69_local15 = Engine[0xF9F1239CFD921FE]( 0x1B24DF9DBEFF72F )
 		f69_local16 = f69_local18
 	elseif f69_local8 == f69_local6 then
-		f69_local15 = Engine[0xF9F1239CFD921FE]( 0x994A7E688945611 )
+		f69_local15 = Engine[0xF9F1239CFD921FE]( "menu/fileshare_victory" )
 		f69_local16 = f69_local20
 	else
 		f69_local15 = Engine[0xF9F1239CFD921FE]( 0xC69242B76A5D212 )
@@ -954,17 +954,17 @@ CoD.FileshareUtility.SetupFileShareSummary_MP = function ( f69_arg0, f69_arg1, f
 		end
 	end
 	local f69_local22, f69_local24, f69_local25, f69_local26 = nil
-	if f69_local7 == 0x6E8B11944572258 or f69_local7 == 0x8915B07B53BB7FA then
+	if f69_local7 == 0x6E8B11944572258 or f69_local7 == "dm" then
 		f69_local22 = Engine[0xF9F1239CFD921FE]( 0x44C900F3A44CF0A )
 		f69_local24 = CoD.GetKDRatio( f69_local23.kills:get(), f69_local23.deaths:get() )
 		f69_local25 = Engine[0xF9F1239CFD921FE]( 0x18CA55058E6B3A7 )
 		f69_local26 = f69_local23.assists:get()
-	elseif f69_local7 == 0xAAF4118F474831B or f69_local7 == 0x8BA4707B55E9B12 then
+	elseif f69_local7 == 0xAAF4118F474831B or f69_local7 == "hq" then
 		f69_local22 = Engine[0xF9F1239CFD921FE]( 0x2FA06E3E230002C )
 		f69_local24 = f69_local21.captures
 		f69_local25 = Engine[0xF9F1239CFD921FE]( 0x53A6BBADFAAFDE8 )
 		f69_local26 = f69_local21.returns
-	elseif f69_local7 == 0x18BECD72BBC155B then
+	elseif f69_local7 == "koth" then
 		f69_local22 = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0xA4424A69B99B9E5 ) )
 		f69_local24 = CoD.GetTimeText( f69_local21.objectiveTime * 1000 )
 		f69_local25 = Engine[0xF9F1239CFD921FE]( 0x53A6BBADFAAFDE8 )
@@ -979,7 +979,7 @@ CoD.FileshareUtility.SetupFileShareSummary_MP = function ( f69_arg0, f69_arg1, f
 		f69_local24 = f69_local21.plants
 		f69_local25 = Engine[0xF9F1239CFD921FE]( 0x51332C8EA3091FE )
 		f69_local26 = f69_local21.defuses
-	elseif f69_local7 == 0xBC9FA91195D6ED7 then
+	elseif f69_local7 == "conf" then
 		f69_local22 = Engine[0xF9F1239CFD921FE]( 0x9E88F8E4394E52 )
 		f69_local24 = f69_local21.captures
 		f69_local25 = Engine[0xF9F1239CFD921FE]( 0xA891E598EE9F7EA )

@@ -1,4 +1,4 @@
-#using script_52d2de9b438adc78;
+#using scripts\killstreaks\ir_strobe_deploy.gsc;
 #using script_702b73ee97d18efe;
 #using scripts\core_common\ai_shared;
 #using scripts\core_common\animation_shared;
@@ -1113,7 +1113,7 @@ function private function_b3faa437()
     bagomoney.ondrop = &function_62d627a0;
     bagomoney.var_22389d70 = 0;
     bagomoney.var_78149e41 = gameobjects::get_next_obj_id();
-    objective_add( bagomoney.var_78149e41, "invisible", bagomoney, #"hash_34a0ac740c9d0bc2" );
+    objective_add( bagomoney.var_78149e41, "invisible", bagomoney, #"bag_o_money_held" );
     objective_onentity( bagomoney.var_78149e41, bagomoney );
     bagomoney gameobjects::set_visible_team( #"none" );
     level.bagomoney = bagomoney;
@@ -1165,7 +1165,7 @@ function private function_cd23eebc( player )
 // Size: 0x25c
 function private function_319af5a2( player )
 {
-    self endon( #"hash_1af469c6cd76e56b" );
+    self endon( #"bagomoney_dropped" );
     objective_setprogress( self.var_78149e41, float( level.var_3e14d8dd ) / level.var_b2a8558a );
     player clientfield::set_to_player( "bountyBagMoney", int( float( level.var_3e14d8dd ) / level.var_16fd9420 ) );
     
@@ -1205,7 +1205,7 @@ function private function_319af5a2( player )
 // Size: 0x1d4
 function private function_62d627a0( player )
 {
-    self notify( #"hash_1af469c6cd76e56b" );
+    self notify( #"bagomoney_dropped" );
     self.visuals[ 0 ] solid();
     
     if ( isdefined( self.var_78149e41 ) )
@@ -1680,7 +1680,7 @@ function private function_1aca4a4e( helicopter, destination )
                 
                 if ( !ispointinnavvolume( var_7f4a508d, "navvolume_big" ) )
                 {
-                    self waittilltimeout( 10, #"hash_340ab3c2b94ff86a" );
+                    self waittilltimeout( 10, #"switched_pathing" );
                 }
             }
         }
@@ -1787,7 +1787,7 @@ function private function_656691ab()
                 self function_9ffc1856( self.heligoalpos, 1 );
             }
             
-            self notify( #"hash_340ab3c2b94ff86a" );
+            self notify( #"switched_pathing" );
             break;
         }
         
@@ -2270,7 +2270,7 @@ function resume_time()
         while ( true )
         {
             wait 0.25;
-            var_9b37b387 = getdvarint( #"hash_312d65fd43c7008c", 0 );
+            var_9b37b387 = getdvarint( #"scr_bounty_money", 0 );
             
             if ( var_9b37b387 <= 0 )
             {
@@ -2285,7 +2285,7 @@ function resume_time()
                 player clientfield::set_to_player( "<dev string:xd2>", player.pers[ #"money" ] );
             }
             
-            setdvar( #"hash_312d65fd43c7008c", 0 );
+            setdvar( #"scr_bounty_money", 0 );
         }
     }
 

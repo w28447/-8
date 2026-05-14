@@ -14,7 +14,7 @@ CoD.AmmoWidget_StockAmmoPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local GlowLeak = LUI.UIImage.new( 0, 0, -1, 20, 0, 0, 20, 92 )
 	GlowLeak:setRGB( 0.76, 0.76, 0.73 )
 	GlowLeak:setAlpha( 0.2 )
-	GlowLeak:setImage( RegisterImage( 0x1DA3FD465AC2534 ) )
+	GlowLeak:setImage( RegisterImage( "uie_ui_hud_core_ammo_widget_glow_ammo" ) )
 	GlowLeak:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	GlowLeak:setShaderVector( 0, 0, 1, 0, 0 )
 	GlowLeak:setShaderVector( 1, 0, 0, 0, 0 )

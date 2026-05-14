@@ -1,10 +1,10 @@
 {
     "buttonimage": "image#ui_icon_blackmarket_promos_bundle_blackknight_button_small",
     "popupimage": "image#ui_icon_blackmarket_promos_blackknight_large_preview",
-    "nametext": "localized17#hash_3832ed7c6a055720",
+    "nametext": "localized17#menu/prophet_deserteagle_outfit_bundle",
     "categorytext": "localized17#hash_30951b5b7749b8df",
     "name": "prophet_deserteagle_outfit_bundle",
-    "desctext": "localized17#hash_1a5ddd0cc6e6d5e8",
+    "desctext": "localized17#menu/prophet_deserteagle_outfit_bundle_desc",
     "previewimage": "image#ui_icon_blackmarket_promos_blackknight_item_detail",
     "reserveimage": "image#ui_icon_blackmarket_promos_bundle_blackknight_button_large"
 }

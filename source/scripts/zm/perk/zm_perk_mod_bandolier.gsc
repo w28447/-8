@@ -99,7 +99,7 @@ function function_9335851()
                     
                     if ( n_clip + var_8e477029 >= n_clip_size )
                     {
-                        self playsoundtoplayer( #"hash_1306cd3cf0ce7b64", self );
+                        self playsoundtoplayer( #"zmb_perk_bandolier_reload", self );
                     }
                     
                     continue;
@@ -109,7 +109,7 @@ function function_9335851()
                 {
                     self setweaponammoclip( weapon, n_clip + 1 );
                     self setweaponammostock( weapon, n_stock_size - 1 );
-                    self playsoundtoplayer( #"hash_1306cd3cf0ce7b64", self );
+                    self playsoundtoplayer( #"zmb_perk_bandolier_reload", self );
                 }
             }
         }

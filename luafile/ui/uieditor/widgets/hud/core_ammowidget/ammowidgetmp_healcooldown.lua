@@ -77,7 +77,7 @@ CoD.AmmowidgetMP_HealCooldown.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	FullBackingDeployed:setRGB( 0.79, 0.55, 0 )
 	FullBackingDeployed:setAlpha( 0 )
 	FullBackingDeployed:setZRot( 180 )
-	FullBackingDeployed:setImage( RegisterImage( 0x482C522ED478AB1 ) )
+	FullBackingDeployed:setImage( RegisterImage( "uie_hud_common_core_ammo_panelcenter2" ) )
 	self:addElement( FullBackingDeployed )
 	self.FullBackingDeployed = FullBackingDeployed
 	

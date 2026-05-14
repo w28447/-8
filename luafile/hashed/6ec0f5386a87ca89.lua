@@ -18,8 +18,8 @@ CoD.SpawnRegionRing.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	self.SpawnArea = SpawnArea
 	
 	local SpawnRadius = LUI.UIImage.new( -0.05, 1.05, 0, 0, -0.05, 1.05, 0, 0 )
-	SpawnRadius:setImage( RegisterImage( 0x6F3EA10B8A1F9D9 ) )
-	SpawnRadius:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9AD9C230B10C37 ) )
+	SpawnRadius:setImage( RegisterImage( "uie_ui_hud_selectspawn_range" ) )
+	SpawnRadius:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_add" ) )
 	SpawnRadius:setShaderVector( 0, 1, 0, 0, 0 )
 	SpawnRadius:setShaderVector( 1, 0.5, 0, 0, 0 )
 	SpawnRadius:setShaderVector( 2, 0.5, 0, 0, 0 )

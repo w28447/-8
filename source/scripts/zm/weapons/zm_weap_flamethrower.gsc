@@ -973,7 +973,7 @@ function private function_72601dd2( e_player, var_ab287846, n_push_away, n_lift_
             self.var_68f4c9de = util::spawn_model( "tag_origin", v_pos, self.angles );
             self.var_68f4c9de thread scene::init( #"p8_zm_flame_tornado_miniboss_scene", self );
             self thread function_e6f0a2c7( var_ab287846 );
-            var_ab287846 waittill( #"death", #"hash_751e0293eed9a1cf", #"hash_124840b260697eb9" );
+            var_ab287846 waittill( #"death", #"hash_751e0293eed9a1cf", #"miniboss_scene_stop" );
             
             if ( isdefined( self ) && isdefined( self.var_68f4c9de ) )
             {
@@ -1087,7 +1087,7 @@ function private function_e6f0a2c7( var_ab287846 )
         waitframe( 1 );
     }
     
-    var_ab287846 notify( #"hash_124840b260697eb9" );
+    var_ab287846 notify( #"miniboss_scene_stop" );
 }
 
 // Namespace zm_weap_flamethrower/zm_weap_flamethrower

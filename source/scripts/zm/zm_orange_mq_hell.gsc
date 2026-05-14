@@ -42,8 +42,8 @@
 // Size: 0x444
 function preload()
 {
-    clientfield::register( "scriptmover", "" + #"hash_6aaf03a4358f45f5", 24000, 1, "counter" );
-    clientfield::register( "scriptmover", "" + #"hash_6a4317183d0ca452", 24000, 1, "counter" );
+    clientfield::register( "scriptmover", "" + #"ring_of_fire_start", 24000, 1, "counter" );
+    clientfield::register( "scriptmover", "" + #"ring_of_fire_shrink", 24000, 1, "counter" );
     clientfield::register( "world", "" + #"lava_init", 24000, 1, "int" );
     clientfield::register( "world", "" + #"lava_control", 24000, 2, "int" );
     clientfield::register( "world", "" + #"hash_72b5b0359ca48427", 24000, 1, "int" );
@@ -91,7 +91,7 @@ function function_5309464a( var_5ea5c94d )
         #/
         
         level thread function_a340f5a2();
-        level flag::wait_till( #"hash_621acea2fedc0408" );
+        level flag::wait_till( #"agarthan_device_collected" );
     }
 }
 
@@ -160,7 +160,7 @@ function function_f1749965()
     }
     
     level.var_5d5b7e8e.e_ring = util::spawn_model( "p8_big_cylinder", level.var_5d5b7e8e.s_ring_center.origin );
-    level.var_5d5b7e8e.e_ring clientfield::increment( "" + #"hash_6aaf03a4358f45f5", 1 );
+    level.var_5d5b7e8e.e_ring clientfield::increment( "" + #"ring_of_fire_start", 1 );
     level.var_5d5b7e8e.e_ring.n_radius = 500;
     level.var_5d5b7e8e.e_ring thread function_af9fb8d1();
     level.var_5d5b7e8e.e_ring thread function_556d1b32();
@@ -181,7 +181,7 @@ function function_556d1b32()
     {
         wait 0.1;
         self.n_radius = max( 200, self.n_radius - 1 );
-        level.var_5d5b7e8e.e_ring clientfield::increment( "" + #"hash_6a4317183d0ca452", 1 );
+        level.var_5d5b7e8e.e_ring clientfield::increment( "" + #"ring_of_fire_shrink", 1 );
     }
 }
 
@@ -290,7 +290,7 @@ function function_7922664f()
     level.var_5d5b7e8e.nd_start = getvehiclenode( "hell_path_start", "targetname" );
     level.var_35e33dbe = getentarray( "lava_rock", "targetname" );
     array::run_all( level.var_35e33dbe, &lava_rock_init );
-    level flag::init( #"hash_621acea2fedc0408" );
+    level flag::init( #"agarthan_device_collected" );
 }
 
 // Namespace zm_orange_mq_hell/zm_orange_mq_hell
@@ -793,7 +793,7 @@ function function_27c3d40f()
 function function_199360fe()
 {
     wait 6;
-    playsoundatposition( #"hash_7450f52d085366c6", ( 0, 0, 0 ) );
+    playsoundatposition( #"evt_last_stand_riser", ( 0, 0, 0 ) );
 }
 
 // Namespace zm_orange_mq_hell/zm_orange_mq_hell
@@ -817,7 +817,7 @@ function function_d12badc3( n_radius )
 // Size: 0x8c
 function function_2855a4fc( e_item, e_player )
 {
-    level flag::set( #"hash_621acea2fedc0408" );
+    level flag::set( #"agarthan_device_collected" );
     e_player playrumbleonentity( "zm_mansion_atlas_interact_rumble" );
     e_item.mdl_lantern delete();
     
@@ -918,7 +918,7 @@ function function_7a57c14( s_notify )
 // Size: 0x154
 function function_737be926()
 {
-    zm_hms_util::function_3c173d37();
+    zm_hms_util::vo_stop_all();
     
     foreach ( e_player in getplayers() )
     {

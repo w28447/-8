@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_zapoc_toy_raygun",
+    "type": "#gesture",
+    "gesture": "#hash_72410a72a10eb186",
+    "gesture2": "#hash_71332d3f616ccf9",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/blast-o-matic",
+        "icon": "image#ui_icon_emotes_toyraygun",
+        "isdefault": 0
+    }
+}

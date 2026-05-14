@@ -1,7 +1,7 @@
 {
     "hash_dfedf08e": 0,
     "categoryindex": 0,
-    "description": "localized17#hash_67a854a58a430f14",
+    "description": "localized17#demo/options_auto_dolly_record_desc",
     "menu/on": "localized17#menu/on",
     "hash_10e01ad5": 0,
     "iscategory": 0,
@@ -21,7 +21,7 @@
     "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "demo_autodollyrecord",
-    "displayname": "localized17#hash_2441c44a0354276c",
+    "displayname": "localized17#demo/options_auto_dolly_record",
     "rangestartvalue": 0,
     "isdisabled": 0,
     "hash_d6897f56": 0,

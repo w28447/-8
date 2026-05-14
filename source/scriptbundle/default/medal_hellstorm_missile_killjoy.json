@@ -1,10 +1,10 @@
 {
-    "description": "localized17#hash_724392a7e9625b54",
+    "description": "localized17#medal/destroyed_remote_missile_desc",
     "backingsmall": "image#$whitetransparent",
     "widget": "BadasseryMedal",
     "name": "medal_hellstorm_missile_killjoy",
     "backinglarge": "image#$whitetransparent",
     "iconsmall": "image#ui_icon_medal_intercepted",
-    "stringref": "localized17#hash_5507c01821fb34ac",
+    "stringref": "localized17#medal/destroyed_remote_missile",
     "iconlarge": "image#ui_icon_medal_intercepted_large"
 }

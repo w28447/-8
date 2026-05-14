@@ -1139,7 +1139,7 @@ function callback_playerkilled( einflictor, attacker, idamage, smeansofdeath, we
         
         if ( sessionmodeiswarzonegame() )
         {
-            self luinotifyevent( #"hash_5b2d65a026de792d", 0 );
+            self luinotifyevent( #"quick_fade_up", 0 );
         }
     }
     else if ( self.cancelkillcam )

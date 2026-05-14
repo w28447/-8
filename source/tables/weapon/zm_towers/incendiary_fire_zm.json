@@ -3,7 +3,7 @@
     "baseWeapon": "#incendiary_fire",
     "displayname": "#weapon/incendiary_grenade",
     "weapon70": "#incendiary_grenade",
-    "streamkey": "#hash_69a47879a9ad1052",
+    "streamkey": "#incendiary_fire_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

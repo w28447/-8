@@ -176,7 +176,7 @@ CoD.SpawnSelectKillcam.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local PCKillCamHint02 = nil
 	
 	PCKillCamHint02 = CoD.PC_KillCamHint.new( f1_arg0, f1_arg1, 0, 0, 105, 819, 0, 0, 972, 995 )
-	PCKillCamHint02.PcHint:setText( Engine[0xF9F1239CFD921FE]( 0x88EEE5B13D09FB5 ) )
+	PCKillCamHint02.PcHint:setText( Engine[0xF9F1239CFD921FE]( "menu/change_specialist" ) )
 	self:addElement( PCKillCamHint02 )
 	self.PCKillCamHint02 = PCKillCamHint02
 	

@@ -46,7 +46,7 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT32"
                     },
@@ -101,7 +101,7 @@
             "type": "INT32"
         },
         {
-            "name": "#hash_7ad364242ed0cb7e",
+            "name": "#video_ispooled",
             "scrName": "#hash_12a4e71c",
             "type": "BOOL"
         }

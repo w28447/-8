@@ -58,13 +58,13 @@
         {
             "value": 325,
             "next": 65535,
-            "name": "#hash_167dacb00bed8a16",
+            "name": "#amb_broadland_birds",
             "sequence": 0,
             "cullDistance": 5500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_167dacb00bed8a16",
+                    "name": "#amb_broadland_birds",
                     "assetId": "#mpl/mpl_hacienda/birds/broadland_birds.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -254,13 +254,13 @@
         {
             "value": 86,
             "next": 3,
-            "name": "#hash_79051c58cffee589",
+            "name": "#amb_ceiling_fan",
             "sequence": 0,
             "cullDistance": 600,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_79051c58cffee589",
+                    "name": "#amb_ceiling_fan",
                     "assetId": "#amb/industrial/fan/ceiling/slow/fan_slow_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -518,13 +518,13 @@
         {
             "value": 415,
             "next": 65535,
-            "name": "#hash_62a278281295d8ad",
+            "name": "#amb_doves",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_62a278281295d8ad",
+                    "name": "#amb_doves",
                     "assetId": "#mpl/mpl_hacienda/birds/doves/dove_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -563,7 +563,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_62a278281295d8ad",
+                    "name": "#amb_doves",
                     "assetId": "#mpl/mpl_hacienda/birds/doves/dove_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -602,7 +602,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_62a278281295d8ad",
+                    "name": "#amb_doves",
                     "assetId": "#mpl/mpl_hacienda/birds/doves/dove_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -694,13 +694,13 @@
         {
             "value": 22,
             "next": 137,
-            "name": "#hash_3e3391e943572e2d",
+            "name": "#amb_flamenco",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3e3391e943572e2d",
+                    "name": "#amb_flamenco",
                     "assetId": "#hash_2e4728bed9b0553c",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -1075,13 +1075,13 @@
         {
             "value": 346,
             "next": 65535,
-            "name": "#hash_4ad9106b6df3e008",
+            "name": "#amb_grand_clock_chime",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4ad9106b6df3e008",
+                    "name": "#amb_grand_clock_chime",
                     "assetId": "#mpl/mpl_hacienda/grand_clock/grand_clock_chime.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -1124,13 +1124,13 @@
         {
             "value": 255,
             "next": 44,
-            "name": "#hash_21431415061f1df1",
+            "name": "#amb_grand_clock_tick",
             "sequence": 0,
             "cullDistance": 750,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_21431415061f1df1",
+                    "name": "#amb_grand_clock_tick",
                     "assetId": "#mpl/mpl_hacienda/grand_clock/grand_clock_tick.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -1173,13 +1173,13 @@
         {
             "value": 34,
             "next": 65535,
-            "name": "#hash_65337304c8c7b0cd",
+            "name": "#amb_gust_dry",
             "sequence": 0,
             "cullDistance": 1600,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_65337304c8c7b0cd",
+                    "name": "#amb_gust_dry",
                     "assetId": "#amb/environment/wind/gusts/wind_gust_low/amb_wind_gust_low_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -1218,7 +1218,7 @@
                     "unk178": "#hash_200001908"
                 },
                 {
-                    "name": "#hash_65337304c8c7b0cd",
+                    "name": "#amb_gust_dry",
                     "assetId": "#amb/environment/wind/gusts/wind_gust_low/amb_wind_gust_low_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -1257,7 +1257,7 @@
                     "unk178": "#hash_200001908"
                 },
                 {
-                    "name": "#hash_65337304c8c7b0cd",
+                    "name": "#amb_gust_dry",
                     "assetId": "#amb/environment/wind/gusts/wind_gust_low/amb_wind_gust_low_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -1296,7 +1296,7 @@
                     "unk178": "#hash_200001908"
                 },
                 {
-                    "name": "#hash_65337304c8c7b0cd",
+                    "name": "#amb_gust_dry",
                     "assetId": "#amb/environment/wind/gusts/wind_gust_low/amb_wind_gust_low_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -1339,13 +1339,13 @@
         {
             "value": 254,
             "next": 65535,
-            "name": "#hash_153cb65adb3c6503",
+            "name": "#amb_gust_dry_qt",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_153cb65adb3c6503",
+                    "name": "#amb_gust_dry_qt",
                     "assetId": "#amb/environment/wind/gusts/gust_dry/amb_wind_gust_dry_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -1384,7 +1384,7 @@
                     "unk178": "#hash_200001906"
                 },
                 {
-                    "name": "#hash_153cb65adb3c6503",
+                    "name": "#amb_gust_dry_qt",
                     "assetId": "#amb/environment/wind/gusts/gust_dry/amb_wind_gust_dry_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -1423,7 +1423,7 @@
                     "unk178": "#hash_200001906"
                 },
                 {
-                    "name": "#hash_153cb65adb3c6503",
+                    "name": "#amb_gust_dry_qt",
                     "assetId": "#amb/environment/wind/gusts/gust_dry/amb_wind_gust_dry_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -1462,7 +1462,7 @@
                     "unk178": "#hash_200001906"
                 },
                 {
-                    "name": "#hash_153cb65adb3c6503",
+                    "name": "#amb_gust_dry_qt",
                     "assetId": "#amb/environment/wind/gusts/gust_dry/amb_wind_gust_dry_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -1501,7 +1501,7 @@
                     "unk178": "#hash_200001906"
                 },
                 {
-                    "name": "#hash_153cb65adb3c6503",
+                    "name": "#amb_gust_dry_qt",
                     "assetId": "#amb/environment/wind/gusts/gust_dry/amb_wind_gust_dry_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -1540,7 +1540,7 @@
                     "unk178": "#hash_200001906"
                 },
                 {
-                    "name": "#hash_153cb65adb3c6503",
+                    "name": "#amb_gust_dry_qt",
                     "assetId": "#amb/environment/wind/gusts/gust_dry/amb_wind_gust_dry_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -1579,7 +1579,7 @@
                     "unk178": "#hash_200001906"
                 },
                 {
-                    "name": "#hash_153cb65adb3c6503",
+                    "name": "#amb_gust_dry_qt",
                     "assetId": "#amb/environment/wind/gusts/gust_dry/amb_wind_gust_dry_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -2414,13 +2414,13 @@
         {
             "value": 344,
             "next": 65535,
-            "name": "#hash_78fdf1759bc24b5c",
+            "name": "#amb_leaves_rustle",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_78fdf1759bc24b5c",
+                    "name": "#amb_leaves_rustle",
                     "assetId": "#amb/material_movement/rustling/leaves/leaves_rustle_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -2459,7 +2459,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_78fdf1759bc24b5c",
+                    "name": "#amb_leaves_rustle",
                     "assetId": "#amb/material_movement/rustling/leaves/leaves_rustle_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -2498,7 +2498,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_78fdf1759bc24b5c",
+                    "name": "#amb_leaves_rustle",
                     "assetId": "#amb/material_movement/rustling/leaves/leaves_rustle_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -2537,7 +2537,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_78fdf1759bc24b5c",
+                    "name": "#amb_leaves_rustle",
                     "assetId": "#amb/material_movement/rustling/leaves/leaves_rustle_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -2576,7 +2576,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_78fdf1759bc24b5c",
+                    "name": "#amb_leaves_rustle",
                     "assetId": "#amb/material_movement/rustling/leaves/leaves_rustle_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -2615,7 +2615,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_78fdf1759bc24b5c",
+                    "name": "#amb_leaves_rustle",
                     "assetId": "#amb/material_movement/rustling/leaves/leaves_rustle_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -2654,7 +2654,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_78fdf1759bc24b5c",
+                    "name": "#amb_leaves_rustle",
                     "assetId": "#amb/material_movement/rustling/leaves/leaves_rustle_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -2693,7 +2693,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_78fdf1759bc24b5c",
+                    "name": "#amb_leaves_rustle",
                     "assetId": "#amb/material_movement/rustling/leaves/leaves_rustle_07.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -2732,7 +2732,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_78fdf1759bc24b5c",
+                    "name": "#amb_leaves_rustle",
                     "assetId": "#amb/material_movement/rustling/leaves/leaves_rustle_08.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -3843,13 +3843,13 @@
         {
             "value": 171,
             "next": 65535,
-            "name": "#hash_bef5ab94d3ebe5e",
+            "name": "#amb_light_breeze",
             "sequence": 0,
             "cullDistance": 5500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_bef5ab94d3ebe5e",
+                    "name": "#amb_light_breeze",
                     "assetId": "#amb/environment/wind/light_breeze/amb_wind_light_breeze_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -3892,13 +3892,13 @@
         {
             "value": 324,
             "next": 269,
-            "name": "#hash_b258a3d47ed538c",
+            "name": "#amb_light_buzz",
             "sequence": 0,
             "cullDistance": 600,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_b258a3d47ed538c",
+                    "name": "#amb_light_buzz",
                     "assetId": "#amb/lights/flourescent/fluorescent_light.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -4137,13 +4137,13 @@
         {
             "value": 87,
             "next": 65535,
-            "name": "#hash_48b1933f25659cde",
+            "name": "#amb_peacock",
             "sequence": 0,
             "cullDistance": 1750,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_48b1933f25659cde",
+                    "name": "#amb_peacock",
                     "assetId": "#hash_422d8e910c46a80e",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -5232,13 +5232,13 @@
         {
             "value": 391,
             "next": 65535,
-            "name": "#hash_73279fba4bb9ec56",
+            "name": "#amb_wood_creak",
             "sequence": 0,
             "cullDistance": 600,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_73279fba4bb9ec56",
+                    "name": "#amb_wood_creak",
                     "assetId": "#amb/material_movement/creaks/wood/hvy/hvy_wood_creak_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -5277,7 +5277,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_73279fba4bb9ec56",
+                    "name": "#amb_wood_creak",
                     "assetId": "#amb/material_movement/creaks/wood/hvy/hvy_wood_creak_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -5316,7 +5316,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_73279fba4bb9ec56",
+                    "name": "#amb_wood_creak",
                     "assetId": "#amb/material_movement/creaks/wood/hvy/hvy_wood_creak_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -5355,7 +5355,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_73279fba4bb9ec56",
+                    "name": "#amb_wood_creak",
                     "assetId": "#amb/material_movement/creaks/wood/hvy/hvy_wood_creak_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -5394,7 +5394,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_73279fba4bb9ec56",
+                    "name": "#amb_wood_creak",
                     "assetId": "#amb/material_movement/creaks/wood/hvy/hvy_wood_creak_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -5433,7 +5433,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_73279fba4bb9ec56",
+                    "name": "#amb_wood_creak",
                     "assetId": "#amb/material_movement/creaks/wood/hvy/hvy_wood_creak_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -5472,7 +5472,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_73279fba4bb9ec56",
+                    "name": "#amb_wood_creak",
                     "assetId": "#amb/material_movement/creaks/wood/hvy/hvy_wood_creak_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -5511,7 +5511,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_73279fba4bb9ec56",
+                    "name": "#amb_wood_creak",
                     "assetId": "#amb/material_movement/creaks/wood/hvy/hvy_wood_creak_07.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -5550,7 +5550,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_73279fba4bb9ec56",
+                    "name": "#amb_wood_creak",
                     "assetId": "#amb/material_movement/creaks/wood/hvy/hvy_wood_creak_08.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -5589,7 +5589,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_73279fba4bb9ec56",
+                    "name": "#amb_wood_creak",
                     "assetId": "#amb/material_movement/creaks/wood/hvy/hvy_wood_creak_09.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -5628,7 +5628,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_73279fba4bb9ec56",
+                    "name": "#amb_wood_creak",
                     "assetId": "#amb/material_movement/creaks/wood/hvy/hvy_wood_creak_10.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -5667,7 +5667,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_73279fba4bb9ec56",
+                    "name": "#amb_wood_creak",
                     "assetId": "#amb/material_movement/creaks/wood/hvy/hvy_wood_creak_11.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -5706,7 +5706,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_73279fba4bb9ec56",
+                    "name": "#amb_wood_creak",
                     "assetId": "#amb/material_movement/creaks/wood/hvy/hvy_wood_creak_12.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -5745,7 +5745,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_73279fba4bb9ec56",
+                    "name": "#amb_wood_creak",
                     "assetId": "#amb/material_movement/creaks/wood/hvy/hvy_wood_creak_13.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -5784,7 +5784,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_73279fba4bb9ec56",
+                    "name": "#amb_wood_creak",
                     "assetId": "#amb/material_movement/creaks/wood/hvy/hvy_wood_creak_14.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -6208,13 +6208,13 @@
         {
             "value": 212,
             "next": 65535,
-            "name": "#hash_5eb690639ce50eba",
+            "name": "#dst_car_fire",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5eb690639ce50eba",
+                    "name": "#dst_car_fire",
                     "assetId": "#dst/generic/fire/car/car_fire_03.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -8342,13 +8342,13 @@
         {
             "value": 189,
             "next": 188,
-            "name": "#hash_31f777916298d72",
+            "name": "#dst_cover_concrete",
             "sequence": 0,
             "cullDistance": 550,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -8387,7 +8387,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -8426,7 +8426,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -8465,7 +8465,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -8504,7 +8504,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -8543,7 +8543,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -8593,7 +8593,7 @@
             "aliases": [
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -8634,7 +8634,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -8675,7 +8675,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -8716,7 +8716,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -8757,7 +8757,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -8798,7 +8798,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -8839,7 +8839,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -9371,13 +9371,13 @@
         {
             "value": 304,
             "next": 65535,
-            "name": "#hash_5977d1f5f8457ae5",
+            "name": "#dst_fire_extinguisher",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5977d1f5f8457ae5",
+                    "name": "#dst_fire_extinguisher",
                     "assetId": "#dst/prop/fire_extinguisher/fire_extinguisher_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -9468,13 +9468,13 @@
         {
             "value": 411,
             "next": 65535,
-            "name": "#hash_2fc9b1cdafb1c5db",
+            "name": "#dst_foodstand",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2fc9b1cdafb1c5db",
+                    "name": "#dst_foodstand",
                     "assetId": "#dst/prop/foodstand/foodstand_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -9513,7 +9513,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_2fc9b1cdafb1c5db",
+                    "name": "#dst_foodstand",
                     "assetId": "#dst/prop/foodstand/foodstand_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -9701,13 +9701,13 @@
         {
             "value": 3,
             "next": 87,
-            "name": "#hash_419e84642ebe554",
+            "name": "#dst_gas_pipe_lp",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_419e84642ebe554",
+                    "name": "#dst_gas_pipe_lp",
                     "assetId": "#dst/pipe/gas/loop/gas_pipe_lp.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -11125,13 +11125,13 @@
         {
             "value": 181,
             "next": 113,
-            "name": "#hash_4f8c480d8e8f07b6",
+            "name": "#dst_pipe_steam",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4f8c480d8e8f07b6",
+                    "name": "#dst_pipe_steam",
                     "secondaryname": "#hash_54538dea28a0400e",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -11271,13 +11271,13 @@
         {
             "value": 142,
             "next": 65535,
-            "name": "#hash_4ec5a3e02263fc0e",
+            "name": "#dst_propane_tank_explo",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
@@ -11318,7 +11318,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
@@ -11359,7 +11359,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
@@ -11400,7 +11400,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
@@ -11441,7 +11441,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
@@ -11482,7 +11482,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
@@ -11523,7 +11523,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
@@ -11575,7 +11575,7 @@
             "aliases": [
                 {
                     "name": "#hash_238170c19d279f5",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -11615,7 +11615,7 @@
                 },
                 {
                     "name": "#hash_238170c19d279f5",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -11655,7 +11655,7 @@
                 },
                 {
                     "name": "#hash_238170c19d279f5",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -11695,7 +11695,7 @@
                 },
                 {
                     "name": "#hash_238170c19d279f5",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -11738,13 +11738,13 @@
         {
             "value": 122,
             "next": 110,
-            "name": "#hash_344ec28fee2dea4c",
+            "name": "#dst_rock_large",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_344ec28fee2dea4c",
+                    "name": "#dst_rock_large",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
                     "assetFileNameRelease": "#mp_hacienda.all",
@@ -11793,7 +11793,7 @@
             "aliases": [
                 {
                     "name": "#dst_server",
-                    "secondaryname": "#hash_25a264b901d17919",
+                    "secondaryname": "#dst_server_glass",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
                     "assetFileNameRelease": "#mp_hacienda.all",
@@ -11835,14 +11835,14 @@
         {
             "value": 283,
             "next": 65535,
-            "name": "#hash_25a264b901d17919",
+            "name": "#dst_server_glass",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_25a264b901d17919",
-                    "secondaryname": "#hash_2f095673f11faa44",
+                    "name": "#dst_server_glass",
+                    "secondaryname": "#dst_server_power",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -11881,8 +11881,8 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_25a264b901d17919",
-                    "secondaryname": "#hash_2f095673f11faa44",
+                    "name": "#dst_server_glass",
+                    "secondaryname": "#dst_server_power",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -11921,8 +11921,8 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_25a264b901d17919",
-                    "secondaryname": "#hash_2f095673f11faa44",
+                    "name": "#dst_server_glass",
+                    "secondaryname": "#dst_server_power",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -11965,13 +11965,13 @@
         {
             "value": 107,
             "next": 121,
-            "name": "#hash_2f095673f11faa44",
+            "name": "#dst_server_power",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2f095673f11faa44",
+                    "name": "#dst_server_power",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
                     "assetFileNameRelease": "#mp_hacienda.all",
@@ -12692,13 +12692,13 @@
         {
             "value": 357,
             "next": 65535,
-            "name": "#hash_58218bc4f7624185",
+            "name": "#dst_steam_pipe_lp",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_58218bc4f7624185",
+                    "name": "#dst_steam_pipe_lp",
                     "assetId": "#dst/pipe/steam/loop/steam_pipe_lp.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -13546,13 +13546,13 @@
         {
             "value": 369,
             "next": 65535,
-            "name": "#hash_72725b98cf0834ac",
+            "name": "#dst_trash_bag",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_72725b98cf0834ac",
+                    "name": "#dst_trash_bag",
                     "assetId": "#hash_131702bdb9183384",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -13591,7 +13591,7 @@
                     "unk178": "#hash_503090305"
                 },
                 {
-                    "name": "#hash_72725b98cf0834ac",
+                    "name": "#dst_trash_bag",
                     "assetId": "#hash_2264ca2ac3c87869",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -13630,7 +13630,7 @@
                     "unk178": "#hash_503090305"
                 },
                 {
-                    "name": "#hash_72725b98cf0834ac",
+                    "name": "#dst_trash_bag",
                     "assetId": "#hash_62c73c6a2cca2abe",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -13669,7 +13669,7 @@
                     "unk178": "#hash_503090305"
                 },
                 {
-                    "name": "#hash_72725b98cf0834ac",
+                    "name": "#dst_trash_bag",
                     "assetId": "#hash_1884c87605737c5b",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -13761,13 +13761,13 @@
         {
             "value": 312,
             "next": 65535,
-            "name": "#hash_1a6485b96677518d",
+            "name": "#dst_water_bottle",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1a6485b96677518d",
+                    "name": "#dst_water_bottle",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
                     "assetFileNameRelease": "#mp_hacienda.all",
@@ -13857,13 +13857,13 @@
         {
             "value": 58,
             "next": 129,
-            "name": "#hash_7809ea482909306c",
+            "name": "#dst_wood_crate",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7809ea482909306c",
+                    "name": "#dst_wood_crate",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
                     "assetFileNameRelease": "#mp_hacienda.all",
@@ -14452,7 +14452,7 @@
             "aliases": [
                 {
                     "name": "#hash_668dfcbb61723329",
-                    "secondaryname": "#hash_43315ee97d040317",
+                    "secondaryname": "#evt_little_bird_wash",
                     "assetId": "#veh/helicopter/chopper/veh_chopper_far.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -14495,13 +14495,13 @@
         {
             "value": 453,
             "next": 65535,
-            "name": "#hash_43315ee97d040317",
+            "name": "#evt_little_bird_wash",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_43315ee97d040317",
+                    "name": "#evt_little_bird_wash",
                     "assetId": "#mpl/mpl_hacienda/little_bird/little_bird_wash_01.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -14817,13 +14817,13 @@
         {
             "value": 156,
             "next": 65535,
-            "name": "#hash_6d60852ef9ecfe86",
+            "name": "#exp_armor_debris",
             "sequence": 0,
             "cullDistance": 7000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -14863,7 +14863,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -14903,7 +14903,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -14943,7 +14943,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -14983,7 +14983,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -15023,7 +15023,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -15063,7 +15063,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -15103,7 +15103,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_07.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -15143,7 +15143,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_08.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -15183,7 +15183,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_09.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -15223,7 +15223,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_10.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -15263,7 +15263,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_11.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -15314,7 +15314,7 @@
             "aliases": [
                 {
                     "name": "#hash_68d529ce159011b5",
-                    "secondaryname": "#hash_6d60852ef9ecfe86",
+                    "secondaryname": "#exp_armor_debris",
                     "assetId": "#exp/distant/small_distant/exp_small_distant_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -15355,7 +15355,7 @@
                 },
                 {
                     "name": "#hash_68d529ce159011b5",
-                    "secondaryname": "#hash_6d60852ef9ecfe86",
+                    "secondaryname": "#exp_armor_debris",
                     "assetId": "#exp/distant/small_distant/exp_small_distant_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -15396,7 +15396,7 @@
                 },
                 {
                     "name": "#hash_68d529ce159011b5",
-                    "secondaryname": "#hash_6d60852ef9ecfe86",
+                    "secondaryname": "#exp_armor_debris",
                     "assetId": "#exp/distant/small_distant/exp_small_distant_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -15437,7 +15437,7 @@
                 },
                 {
                     "name": "#hash_68d529ce159011b5",
-                    "secondaryname": "#hash_6d60852ef9ecfe86",
+                    "secondaryname": "#exp_armor_debris",
                     "assetId": "#exp/distant/small_distant/exp_small_distant_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -15671,7 +15671,7 @@
             "aliases": [
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -15712,7 +15712,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -15753,7 +15753,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -15794,7 +15794,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -15835,7 +15835,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -15876,7 +15876,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -15917,7 +15917,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -15961,14 +15961,14 @@
         {
             "value": 150,
             "next": 145,
-            "name": "#hash_310e1517e8130d26",
+            "name": "#exp_barrel_close",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_310e1517e8130d26",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "name": "#exp_barrel_close",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/rip/exp_barrel_rip_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -16008,8 +16008,8 @@
                     "unk178": "#hash_6030b0804"
                 },
                 {
-                    "name": "#hash_310e1517e8130d26",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "name": "#exp_barrel_close",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/rip/exp_barrel_rip_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -16049,8 +16049,8 @@
                     "unk178": "#hash_6030b0804"
                 },
                 {
-                    "name": "#hash_310e1517e8130d26",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "name": "#exp_barrel_close",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/rip/exp_barrel_rip_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -16094,13 +16094,13 @@
         {
             "value": 393,
             "next": 65535,
-            "name": "#hash_7fe19ceed35907ce",
+            "name": "#exp_barrel_dist",
             "sequence": 0,
             "cullDistance": 30000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7fe19ceed35907ce",
+                    "name": "#exp_barrel_dist",
                     "assetId": "#exp/prop/barrel/dist/exp_barrel_dist_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -16140,7 +16140,7 @@
                     "unk178": "#hash_6000b0304"
                 },
                 {
-                    "name": "#hash_7fe19ceed35907ce",
+                    "name": "#exp_barrel_dist",
                     "assetId": "#exp/prop/barrel/dist/exp_barrel_dist_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -16233,14 +16233,14 @@
         {
             "value": 77,
             "next": 65535,
-            "name": "#hash_3e8d50aeefef2d0e",
+            "name": "#exp_barrel_flux_l",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3e8d50aeefef2d0e",
-                    "secondaryname": "#hash_3e8d3aaeefef07ac",
+                    "name": "#exp_barrel_flux_l",
+                    "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#exp/prop/barrel/flux/exp_barrel_flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -16284,14 +16284,14 @@
         {
             "value": 266,
             "next": 65535,
-            "name": "#hash_3e8d3aaeefef07ac",
+            "name": "#exp_barrel_flux_r",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3e8d3aaeefef07ac",
-                    "secondaryname": "#hash_7fe19ceed35907ce",
+                    "name": "#exp_barrel_flux_r",
+                    "secondaryname": "#exp_barrel_dist",
                     "assetId": "#exp/prop/barrel/flux/exp_barrel_flux_r_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -16335,14 +16335,14 @@
         {
             "value": 443,
             "next": 160,
-            "name": "#hash_8ef0ca7881f8aab",
+            "name": "#exp_barrel_lfe",
             "sequence": 0,
             "cullDistance": 3000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_8ef0ca7881f8aab",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "name": "#exp_barrel_lfe",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -16381,8 +16381,8 @@
                     "unk178": "#hash_c030b0802"
                 },
                 {
-                    "name": "#hash_8ef0ca7881f8aab",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "name": "#exp_barrel_lfe",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -16421,8 +16421,8 @@
                     "unk178": "#hash_c030b0802"
                 },
                 {
-                    "name": "#hash_8ef0ca7881f8aab",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "name": "#exp_barrel_lfe",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -16461,8 +16461,8 @@
                     "unk178": "#hash_c030b0802"
                 },
                 {
-                    "name": "#hash_8ef0ca7881f8aab",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "name": "#exp_barrel_lfe",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -19605,7 +19605,7 @@
             "aliases": [
                 {
                     "name": "#hash_200e28bcd26bab77",
-                    "secondaryname": "#hash_3e8d3aaeefef07ac",
+                    "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -19699,13 +19699,13 @@
         {
             "value": 110,
             "next": 186,
-            "name": "#hash_2e887c70bfe4df2a",
+            "name": "#exp_mp_propane_tank_explo",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
@@ -19746,7 +19746,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
@@ -19787,7 +19787,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
@@ -19828,7 +19828,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
@@ -19869,7 +19869,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
@@ -19910,7 +19910,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
@@ -19951,7 +19951,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
@@ -20169,7 +20169,7 @@
             "aliases": [
                 {
                     "name": "#hash_4c4fd4c61d8d67f0",
-                    "secondaryname": "#hash_3e8d3aaeefef07ac",
+                    "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -20655,7 +20655,7 @@
             "aliases": [
                 {
                     "name": "#hash_456af38afaef9d77",
-                    "secondaryname": "#hash_3e8d3aaeefef07ac",
+                    "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -20756,7 +20756,7 @@
             "aliases": [
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -20797,7 +20797,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -20838,7 +20838,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -20879,7 +20879,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -20920,7 +20920,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -20961,7 +20961,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -21002,7 +21002,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -21147,14 +21147,14 @@
         {
             "value": 99,
             "next": 65535,
-            "name": "#hash_23a8d14db44a77a5",
+            "name": "#exp_veh_close_layer",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_23a8d14db44a77a5",
-                    "secondaryname": "#hash_712e3703787e4a71",
+                    "name": "#exp_veh_close_layer",
+                    "secondaryname": "#exp_veh_decay",
                     "assetId": "#exp/vehicle/close/exp_veh_close_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -21193,8 +21193,8 @@
                     "unk178": "#hash_6030b0204"
                 },
                 {
-                    "name": "#hash_23a8d14db44a77a5",
-                    "secondaryname": "#hash_712e3703787e4a71",
+                    "name": "#exp_veh_close_layer",
+                    "secondaryname": "#exp_veh_decay",
                     "assetId": "#exp/vehicle/close/exp_veh_close_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -21233,8 +21233,8 @@
                     "unk178": "#hash_6030b0204"
                 },
                 {
-                    "name": "#hash_23a8d14db44a77a5",
-                    "secondaryname": "#hash_712e3703787e4a71",
+                    "name": "#exp_veh_close_layer",
+                    "secondaryname": "#exp_veh_decay",
                     "assetId": "#exp/vehicle/close/exp_veh_close_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -21273,8 +21273,8 @@
                     "unk178": "#hash_6030b0204"
                 },
                 {
-                    "name": "#hash_23a8d14db44a77a5",
-                    "secondaryname": "#hash_712e3703787e4a71",
+                    "name": "#exp_veh_close_layer",
+                    "secondaryname": "#exp_veh_decay",
                     "assetId": "#exp/vehicle/close/exp_veh_close_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -21317,14 +21317,14 @@
         {
             "value": 423,
             "next": 65535,
-            "name": "#hash_127c91df9b564016",
+            "name": "#exp_veh_debris",
             "sequence": 0,
             "cullDistance": 5000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -21363,8 +21363,8 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -21403,8 +21403,8 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -21443,8 +21443,8 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -21483,8 +21483,8 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -21523,8 +21523,8 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -21563,8 +21563,8 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -21603,8 +21603,8 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_07.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -21643,8 +21643,8 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_08.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -21687,19 +21687,19 @@
         {
             "value": 329,
             "next": 65535,
-            "name": "#hash_712e3703787e4a71",
+            "name": "#exp_veh_decay",
             "sequence": 0,
             "cullDistance": 12000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_712e3703787e4a71",
-                    "secondaryname": "#hash_7332c548b8e60625",
+                    "name": "#exp_veh_decay",
+                    "secondaryname": "#exp_veh_flux_l",
                     "assetId": "#exp/decay/refresh/exp_explosion_decay_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
                     "assetFileNameRelease": "#mp_hacienda.all",
-                    "contextType": "#hash_730721b0b6373e1",
+                    "contextType": "#ringoff_plr",
                     "contextValue": "#outdoor",
                     "reverbSend": 0.001,
                     "centerSend": 0,
@@ -21735,13 +21735,13 @@
                     "unk178": "#hash_1b030b0101"
                 },
                 {
-                    "name": "#hash_712e3703787e4a71",
-                    "secondaryname": "#hash_7332c548b8e60625",
+                    "name": "#exp_veh_decay",
+                    "secondaryname": "#exp_veh_flux_l",
                     "assetId": "#exp/decay/refresh/exp_explosion_decay_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
                     "assetFileNameRelease": "#mp_hacienda.all",
-                    "contextType": "#hash_730721b0b6373e1",
+                    "contextType": "#ringoff_plr",
                     "contextValue": "#outdoor",
                     "reverbSend": 0.001,
                     "centerSend": 0,
@@ -21781,14 +21781,14 @@
         {
             "value": 412,
             "next": 65535,
-            "name": "#hash_7332c548b8e60625",
+            "name": "#exp_veh_flux_l",
             "sequence": 0,
             "cullDistance": 13000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7332c548b8e60625",
-                    "secondaryname": "#hash_7332d748b8e624bb",
+                    "name": "#exp_veh_flux_l",
+                    "secondaryname": "#exp_veh_flux_r",
                     "assetId": "#exp/vehicle/flux/veh_flux_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -21827,8 +21827,8 @@
                     "unk178": "#hash_6030e0103"
                 },
                 {
-                    "name": "#hash_7332c548b8e60625",
-                    "secondaryname": "#hash_7332d748b8e624bb",
+                    "name": "#exp_veh_flux_l",
+                    "secondaryname": "#exp_veh_flux_r",
                     "assetId": "#exp/vehicle/flux/veh_flux_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -21867,8 +21867,8 @@
                     "unk178": "#hash_6030e0103"
                 },
                 {
-                    "name": "#hash_7332c548b8e60625",
-                    "secondaryname": "#hash_7332d748b8e624bb",
+                    "name": "#exp_veh_flux_l",
+                    "secondaryname": "#exp_veh_flux_r",
                     "assetId": "#exp/vehicle/flux/veh_flux_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -21907,8 +21907,8 @@
                     "unk178": "#hash_6030e0103"
                 },
                 {
-                    "name": "#hash_7332c548b8e60625",
-                    "secondaryname": "#hash_7332d748b8e624bb",
+                    "name": "#exp_veh_flux_l",
+                    "secondaryname": "#exp_veh_flux_r",
                     "assetId": "#exp/vehicle/flux/veh_flux_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -21951,13 +21951,13 @@
         {
             "value": 311,
             "next": 65535,
-            "name": "#hash_7332d748b8e624bb",
+            "name": "#exp_veh_flux_r",
             "sequence": 0,
             "cullDistance": 13000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7332d748b8e624bb",
+                    "name": "#exp_veh_flux_r",
                     "assetId": "#exp/vehicle/flux/veh_flux_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -21996,7 +21996,7 @@
                     "unk178": "#hash_6030e0103"
                 },
                 {
-                    "name": "#hash_7332d748b8e624bb",
+                    "name": "#exp_veh_flux_r",
                     "assetId": "#exp/vehicle/flux/veh_flux_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -22035,7 +22035,7 @@
                     "unk178": "#hash_6030e0103"
                 },
                 {
-                    "name": "#hash_7332d748b8e624bb",
+                    "name": "#exp_veh_flux_r",
                     "assetId": "#exp/vehicle/flux/veh_flux_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -22074,7 +22074,7 @@
                     "unk178": "#hash_6030e0103"
                 },
                 {
-                    "name": "#hash_7332d748b8e624bb",
+                    "name": "#exp_veh_flux_r",
                     "assetId": "#exp/vehicle/flux/veh_flux_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -22124,7 +22124,7 @@
             "aliases": [
                 {
                     "name": "#exp_veh_large",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -22165,7 +22165,7 @@
                 },
                 {
                     "name": "#exp_veh_large",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -22206,7 +22206,7 @@
                 },
                 {
                     "name": "#exp_veh_large",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -22250,13 +22250,13 @@
         {
             "value": 335,
             "next": 65535,
-            "name": "#hash_680a1ca45380de2",
+            "name": "#exp_veh_lfe",
             "sequence": 0,
             "cullDistance": 3500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_680a1ca45380de2",
+                    "name": "#exp_veh_lfe",
                     "secondaryname": "#hash_bbafec33c2adca2",
                     "assetId": "#exp/vehicle/lfe/exp_veh_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
@@ -22356,7 +22356,7 @@
             "aliases": [
                 {
                     "name": "#exp_veh_med",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -22397,7 +22397,7 @@
                 },
                 {
                     "name": "#exp_veh_med",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -22438,7 +22438,7 @@
                 },
                 {
                     "name": "#exp_veh_med",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -22577,7 +22577,7 @@
             "aliases": [
                 {
                     "name": "#exp_veh_small",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -22618,7 +22618,7 @@
                 },
                 {
                     "name": "#exp_veh_small",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -22659,7 +22659,7 @@
                 },
                 {
                     "name": "#exp_veh_small",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -84960,13 +84960,13 @@
         {
             "value": 278,
             "next": 65535,
-            "name": "#hash_697017e52c88d9a",
+            "name": "#prj_bullet_explode_dirt",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_697017e52c88d9a",
+                    "name": "#prj_bullet_explode_dirt",
                     "secondaryname": "#hash_769dda65549ad6ee",
                     "assetId": "#prj/bullet/explosive/prj_bullet_explosive_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
@@ -85007,7 +85007,7 @@
                     "unk178": "#hash_6031b0808"
                 },
                 {
-                    "name": "#hash_697017e52c88d9a",
+                    "name": "#prj_bullet_explode_dirt",
                     "secondaryname": "#hash_769dda65549ad6ee",
                     "assetId": "#prj/bullet/explosive/prj_bullet_explosive_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
@@ -85048,7 +85048,7 @@
                     "unk178": "#hash_6031b0808"
                 },
                 {
-                    "name": "#hash_697017e52c88d9a",
+                    "name": "#prj_bullet_explode_dirt",
                     "secondaryname": "#hash_769dda65549ad6ee",
                     "assetId": "#prj/bullet/explosive/prj_bullet_explosive_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
@@ -85089,7 +85089,7 @@
                     "unk178": "#hash_6031b0808"
                 },
                 {
-                    "name": "#hash_697017e52c88d9a",
+                    "name": "#prj_bullet_explode_dirt",
                     "secondaryname": "#hash_769dda65549ad6ee",
                     "assetId": "#prj/bullet/explosive/prj_bullet_explosive_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
@@ -85134,13 +85134,13 @@
         {
             "value": 368,
             "next": 65535,
-            "name": "#hash_57ed9ad1bae18a32",
+            "name": "#prj_bullet_explode_rock",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_57ed9ad1bae18a32",
+                    "name": "#prj_bullet_explode_rock",
                     "secondaryname": "#hash_588c93fa0d7f7f5e",
                     "assetId": "#prj/bullet/explosive/prj_bullet_explosive_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
@@ -85181,7 +85181,7 @@
                     "unk178": "#hash_6031b0808"
                 },
                 {
-                    "name": "#hash_57ed9ad1bae18a32",
+                    "name": "#prj_bullet_explode_rock",
                     "secondaryname": "#hash_588c93fa0d7f7f5e",
                     "assetId": "#prj/bullet/explosive/prj_bullet_explosive_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
@@ -85222,7 +85222,7 @@
                     "unk178": "#hash_6031b0808"
                 },
                 {
-                    "name": "#hash_57ed9ad1bae18a32",
+                    "name": "#prj_bullet_explode_rock",
                     "secondaryname": "#hash_588c93fa0d7f7f5e",
                     "assetId": "#prj/bullet/explosive/prj_bullet_explosive_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
@@ -85263,7 +85263,7 @@
                     "unk178": "#hash_6031b0808"
                 },
                 {
-                    "name": "#hash_57ed9ad1bae18a32",
+                    "name": "#prj_bullet_explode_rock",
                     "secondaryname": "#hash_588c93fa0d7f7f5e",
                     "assetId": "#prj/bullet/explosive/prj_bullet_explosive_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
@@ -85308,13 +85308,13 @@
         {
             "value": 200,
             "next": 95,
-            "name": "#hash_60c9fe9c798040a",
+            "name": "#prj_bullet_explode_wood",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_60c9fe9c798040a",
+                    "name": "#prj_bullet_explode_wood",
                     "secondaryname": "#hash_2834c0d05561ba6e",
                     "assetId": "#prj/bullet/explosive/prj_bullet_explosive_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
@@ -85355,7 +85355,7 @@
                     "unk178": "#hash_6031b0808"
                 },
                 {
-                    "name": "#hash_60c9fe9c798040a",
+                    "name": "#prj_bullet_explode_wood",
                     "secondaryname": "#hash_2834c0d05561ba6e",
                     "assetId": "#prj/bullet/explosive/prj_bullet_explosive_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
@@ -85396,7 +85396,7 @@
                     "unk178": "#hash_6031b0808"
                 },
                 {
-                    "name": "#hash_60c9fe9c798040a",
+                    "name": "#prj_bullet_explode_wood",
                     "secondaryname": "#hash_2834c0d05561ba6e",
                     "assetId": "#prj/bullet/explosive/prj_bullet_explosive_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
@@ -85437,7 +85437,7 @@
                     "unk178": "#hash_6031b0808"
                 },
                 {
-                    "name": "#hash_60c9fe9c798040a",
+                    "name": "#prj_bullet_explode_wood",
                     "secondaryname": "#hash_2834c0d05561ba6e",
                     "assetId": "#prj/bullet/explosive/prj_bullet_explosive_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
@@ -85869,7 +85869,7 @@
             "aliases": [
                 {
                     "name": "#hash_bbafec33c2adca2",
-                    "secondaryname": "#hash_127c91df9b564016",
+                    "secondaryname": "#exp_veh_debris",
                     "assetId": "#exp/distant/small_distant/exp_small_distant_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -85910,7 +85910,7 @@
                 },
                 {
                     "name": "#hash_bbafec33c2adca2",
-                    "secondaryname": "#hash_127c91df9b564016",
+                    "secondaryname": "#exp_veh_debris",
                     "assetId": "#exp/distant/small_distant/exp_small_distant_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -85951,7 +85951,7 @@
                 },
                 {
                     "name": "#hash_bbafec33c2adca2",
-                    "secondaryname": "#hash_127c91df9b564016",
+                    "secondaryname": "#exp_veh_debris",
                     "assetId": "#exp/distant/small_distant/exp_small_distant_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -85992,7 +85992,7 @@
                 },
                 {
                     "name": "#hash_bbafec33c2adca2",
-                    "secondaryname": "#hash_127c91df9b564016",
+                    "secondaryname": "#exp_veh_debris",
                     "assetId": "#exp/distant/small_distant/exp_small_distant_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_hacienda.all",
                     "assetIdRelease": "#mp_hacienda.all",
@@ -86195,11 +86195,11 @@
             "reverb": "#mp_final_killcam",
             "loop": "#hash_44463359dd025b23",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
+            "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
+            "globalContextType": "#ringoff_plr",
             "globalContextValue": "#outdoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
@@ -86217,11 +86217,11 @@
             "reverb": "#room_bedroom",
             "loop": "#hash_41ae96f63b62a646",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
+            "globalContextType": "#ringoff_plr",
             "globalContextValue": "#outdoor",
             "defaultRoom": false,
             "reverbDryLevel": 0.7,
@@ -86239,12 +86239,12 @@
             "reverb": "#room_livingRoom",
             "loop": "#hash_7af83b36b0a3cb23",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 0.7,
             "reverbWetLevel": 1,
@@ -86261,12 +86261,12 @@
             "reverb": "#room_hallway",
             "loop": "#hash_7af83b36b0a3cb23",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 0.7,
             "reverbWetLevel": 1,
@@ -86283,12 +86283,12 @@
             "reverb": "#room_laboratory",
             "loop": "#hash_7af83b36b0a3cb23",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 0.7,
             "reverbWetLevel": 1,
@@ -86305,12 +86305,12 @@
             "reverb": "#room_livingRoom",
             "loop": "#hash_7af83b36b0a3cb23",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 0.7,
             "reverbWetLevel": 1,
@@ -86327,12 +86327,12 @@
             "reverb": "#room_livingRoom",
             "loop": "#hash_7af83b36b0a3cb23",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 0.7,
             "reverbWetLevel": 1,
@@ -86349,11 +86349,11 @@
             "reverb": "#outdoor_still",
             "loop": "#hash_4b0b46362d256289",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
+            "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
+            "globalContextType": "#ringoff_plr",
             "globalContextValue": "#outdoor",
             "defaultRoom": true,
             "reverbDryLevel": 1,
@@ -86371,11 +86371,11 @@
             "reverb": "#room_bedroom",
             "loop": "#hash_41ae96f63b62a646",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
+            "globalContextType": "#ringoff_plr",
             "globalContextValue": "#outdoor",
             "defaultRoom": false,
             "reverbDryLevel": 0.7,
@@ -86393,12 +86393,12 @@
             "reverb": "#room_hallway",
             "loop": "#hash_7af83b36b0a3cb23",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 0.7,
             "reverbWetLevel": 1,
@@ -86415,12 +86415,12 @@
             "reverb": "#room_bedroom",
             "loop": "#hash_7af83b36b0a3cb23",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 0.7,
             "reverbWetLevel": 1,
@@ -86437,12 +86437,12 @@
             "reverb": "#room_bedroom",
             "loop": "#hash_7af83b36b0a3cb23",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 0.7,
             "reverbWetLevel": 1,
@@ -86459,12 +86459,12 @@
             "reverb": "#room_bedroom",
             "loop": "#hash_7af83b36b0a3cb23",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 0.7,
             "reverbWetLevel": 1,
@@ -86481,12 +86481,12 @@
             "reverb": "#room_laboratory",
             "loop": "#hash_7af83b36b0a3cb23",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 0.7,
             "reverbWetLevel": 1,
@@ -86496,9 +86496,9 @@
     ],
     "scriptIdLookups": [],
     "streamKeysSABL": {
-        "streamKey1": "#hash_5464f91fd61ddff3",
+        "streamKey1": "#mp_hacienda_all_stream",
         "dataSize1": 4096,
-        "fileKey": "#hash_7f0b998dc430599a",
+        "fileKey": "#mp_hacienda_all_loaded",
         "fileLen": 130970240
     },
     "streamKeysSABS": {

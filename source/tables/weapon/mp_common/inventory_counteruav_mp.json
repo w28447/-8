@@ -3,7 +3,7 @@
     "baseWeapon": "#inventory_counteruav",
     "displayname": "#killstreak/cuav",
     "weapon70": "#counteruav",
-    "streamkey": "#hash_394bb1a4761db682",
+    "streamkey": "#inventory_counteruav_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",

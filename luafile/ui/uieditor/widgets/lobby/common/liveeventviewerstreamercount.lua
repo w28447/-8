@@ -11,7 +11,7 @@ CoD.LiveEventViewerStreamerCount.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local streamerCountIcon = LUI.UIImage.new( 1, 1, -236, -198, 1, 1, -38, 0 )
-	streamerCountIcon:setImage( RegisterImage( 0xBFAC9B8CEAA96D1 ) )
+	streamerCountIcon:setImage( RegisterImage( "uie_twitch_streamers_white" ) )
 	self:addElement( streamerCountIcon )
 	self.streamerCountIcon = streamerCountIcon
 	

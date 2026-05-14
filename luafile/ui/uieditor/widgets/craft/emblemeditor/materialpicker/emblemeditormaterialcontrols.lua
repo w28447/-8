@@ -22,7 +22,7 @@ CoD.EmblemEditorMaterialControls.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	self.BackingTop = BackingTop
 	
 	local rotateText = LUI.UIText.new( 0, 0, 82, 360, 0, 0, 117.5, 142.5 )
-	rotateText:setText( Engine[0xF9F1239CFD921FE]( 0xC718AEEBB3E6B97 ) )
+	rotateText:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_rotate_material" ) )
 	rotateText:setTTF( "ttmussels_regular" )
 	rotateText:setLetterSpacing( 2 )
 	rotateText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

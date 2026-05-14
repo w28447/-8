@@ -149,7 +149,7 @@ function function_bda82828()
     }
     
     level.a_mdl_chaos = [];
-    a_s_chaos = struct::get_array( #"hash_2cb6fcd3ae46aec0" );
+    a_s_chaos = struct::get_array( #"s_chaos_audience" );
     
     foreach ( s_audience in a_s_chaos )
     {
@@ -320,7 +320,7 @@ function function_77dd379a()
     }
     
     level.a_mdl_chaos = [];
-    a_s_chaos = struct::get_array( #"hash_2cb6fcd3ae46aec0" );
+    a_s_chaos = struct::get_array( #"s_chaos_audience" );
     
     foreach ( s_audience in a_s_chaos )
     {
@@ -334,7 +334,7 @@ function function_77dd379a()
     level.var_2f2b78fb.var_5579012f = 80;
     level.var_2f2b78fb.var_30c1e68b = 25;
     level thread function_ee7ebb1a();
-    level waittill( #"hash_7a04a7fb98fa4e4d" );
+    level waittill( #"end_defend_area" );
     wait 0.75;
     level flag::clear( "spawn_zombies" );
     level thread lui::screen_flash( 0.2, 1, 0.5, 1, "white" );
@@ -361,7 +361,7 @@ function function_77dd379a()
 // Size: 0x180
 function function_ee7ebb1a()
 {
-    level endon( #"game_ended", #"hash_7a04a7fb98fa4e4d" );
+    level endon( #"game_ended", #"end_defend_area" );
     a_mdl_zombies = array::randomize( level.var_9400690b );
     
     foreach ( mdl_zombie in a_mdl_zombies )
@@ -401,7 +401,7 @@ function function_3ff7750a()
         }
     }
     
-    if ( !level flag::get( #"hash_6c92a415bd4bb739" ) )
+    if ( !level flag::get( #"sentinel_interacted" ) )
     {
         player zm_vo::function_a2bd5a0c( #"hash_5f91baafb561a09d", 0, 1, 9999, 1 );
     }
@@ -988,7 +988,7 @@ function function_b3d827f()
     
     if ( zm_utility::is_player_valid( e_player ) )
     {
-        level flag::set( #"hash_6c92a415bd4bb739" );
+        level flag::set( #"sentinel_interacted" );
         mdl_sentinel_artifact = getent( "mdl_sentinel_artifact", "targetname" );
         mdl_sentinel_artifact clientfield::set( "" + #"artifact_glow", 0 );
         mdl_sentinel_artifact stoploopsound();
@@ -1024,14 +1024,14 @@ function function_969cb6b2( e_player )
             b_disable = var_f40360e8 === level.round_number;
         }
         
-        if ( level flag::get( #"hash_6c92a415bd4bb739" ) )
+        if ( level flag::get( #"sentinel_interacted" ) )
         {
             b_disable = 1;
         }
         
         if ( !b_disable && b_is_valid )
         {
-            str_prompt = zm_utility::function_d6046228( #"hash_65fb48b6dbf04c10", #"hash_2e613e6f3511ecbc" );
+            str_prompt = zm_utility::function_d6046228( #"zm_red/activate_sentinel_artifact", #"hash_2e613e6f3511ecbc" );
             self sethintstringforplayer( e_player, str_prompt );
             return true;
         }
@@ -1306,7 +1306,7 @@ function pegasus_intro()
     level.musicsystemoverride = 0;
     level thread zm_audio::sndmusicsystem_playstate( "poweron_event_complete", zm_utility::is_trials() );
     level thread function_350204ca( #"vox_pegasus_react_first" );
-    playsoundatposition( #"hash_2642ecae6103f09b", mdl_pegasus.origin );
+    playsoundatposition( #"zmb_vocals_pegasus_intro", mdl_pegasus.origin );
     mdl_pegasus clientfield::increment( "" + #"register_pegasus" );
     mdl_pegasus clientfield::set( "" + #"pegasus_teleport", 1 );
     level flag::set( #"pegasus_ready" );
@@ -2008,7 +2008,7 @@ function function_f95a14a0()
     
     self ghost();
     self notsolid();
-    self val::set( #"hash_65edbe063d05f17b", "ignoreall", 1 );
+    self val::set( #"skeleton_fake_death", "ignoreall", 1 );
     self.var_126d7bef = 1;
     self.ignore_round_spawn_failsafe = 1;
     self.b_ignore_cleanup = 1;
@@ -2047,7 +2047,7 @@ function function_f95a14a0()
         self.e_linkto delete();
     }
     
-    self val::reset( #"hash_65edbe063d05f17b", "ignoreall" );
+    self val::reset( #"skeleton_fake_death", "ignoreall" );
     
     if ( zm_utility::is_trials() )
     {

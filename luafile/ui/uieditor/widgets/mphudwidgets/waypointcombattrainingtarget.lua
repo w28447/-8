@@ -316,7 +316,7 @@ CoD.WaypointCombatTrainingTarget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	end )
 	CircleGlow:setAlpha( 0 )
 	CircleGlow:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
-	CircleGlow.image:setImage( RegisterImage( 0xBA7D68F673291B4 ) )
+	CircleGlow.image:setImage( RegisterImage( "uie_ui_hud_common_circle_medium" ) )
 	CircleGlow.image:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_normal" ) )
 	CircleGlow:linkToElementModel( self, "color", true, function ( model )
 		local f37_local0 = model:get()

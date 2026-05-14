@@ -9,13 +9,13 @@ CoD.CallingCards_Asset_mech.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local mecha = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, -0.5, 239.5 )
-	mecha:setImage( RegisterImage( 0xF04A504B1C1B9F9 ) )
+	mecha:setImage( RegisterImage( "uie_mecha" ) )
 	self:addElement( mecha )
 	self.mecha = mecha
 	
 	local mechaLights = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, -1, 239 )
 	mechaLights:setAlpha( 0 )
-	mechaLights:setImage( RegisterImage( 0x2A520050DDD47FF ) )
+	mechaLights:setImage( RegisterImage( "uie_mecha_lights" ) )
 	self:addElement( mechaLights )
 	self.mechaLights = mechaLights
 	

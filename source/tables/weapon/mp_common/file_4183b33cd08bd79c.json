@@ -58,10 +58,10 @@
     ],
     "firesounddistant": "#hash_5f022cd68aefd198",
     "firesound": "#hash_68f909bd693be788",
-    "firesoundplayer": "#hash_1a6dd1a3e7684ef9",
-    "sound1d0": "#hash_3740a6a3662d9d58",
+    "firesoundplayer": "#wpn_sniper_powerbolt_fire_plr",
+    "sound1d0": "#wpn_sniper_powerbolt_fire_npc",
     "sound1e0": "#hash_5c696f2c3d313f78",
-    "sound200": "#hash_1a6dd1a3e7684ef9",
+    "sound200": "#wpn_sniper_powerbolt_fire_plr",
     "sound210": "#hash_3f969a2cbe6bf119",
     "sound240": "#hash_474a10cd847c7803",
     "sound250": "#hash_146e19cd67fe19de",
@@ -116,6 +116,6 @@
     "fx_c98": "#hash_b22a4fa483be6b03",
     "normalImpactFX": "#bullet_xtreme_enter",
     "exitImpactFX": "#bullet_xtreme_exit",
-    "normalImpactSounds": "#hash_132e2f57949d9eb9",
+    "normalImpactSounds": "#bullet_impact_sniper_nest",
     "exitImpactSounds": "#hash_d0191cc37bfbfeea"
 }

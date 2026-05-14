@@ -9,7 +9,7 @@ CoD.AmmoWidget_OverheatMeter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local Backing = LUI.UIImage.new( 0.12, 1, -2, -2, 0.37, 0.6, 1, 1 )
-	Backing:setImage( RegisterImage( 0xAE59221A9E029C2 ) )
+	Backing:setImage( RegisterImage( "uie_ui_hud_core_overheat_backplate" ) )
 	Backing:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	Backing:setShaderVector( 0, 0, 0.05, 0, 0.05 )
 	self:addElement( Backing )

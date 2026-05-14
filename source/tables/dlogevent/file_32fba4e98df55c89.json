@@ -46,7 +46,7 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT32"
                     },
@@ -176,7 +176,7 @@
                         "type": "BOOL"
                     },
                     {
-                        "name": "#hash_669ca7a9de06f403",
+                        "name": "#from_lobby_type",
                         "scrName": "#hash_467fd567",
                         "type": "INT32",
                         "len": 60
@@ -193,12 +193,12 @@
                         "s111u20": true
                     },
                     {
-                        "name": "#hash_7a4b7f92d7e1dc7b",
+                        "name": "#to_match_lobby_id",
                         "scrName": "#hash_117563a1",
                         "type": "UINT64"
                     },
                     {
-                        "name": "#hash_7d8e410d4a2c6050",
+                        "name": "#to_lobby_type",
                         "scrName": "#hash_90462f32",
                         "type": "INT32",
                         "len": 60

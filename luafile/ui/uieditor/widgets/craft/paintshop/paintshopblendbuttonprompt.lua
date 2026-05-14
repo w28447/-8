@@ -69,7 +69,7 @@ CoD.PaintshopBlendButtonPrompt.__clipsPerState = {
 			f7_arg0:__resetProperties()
 			f7_arg0:setupElementClipCounter( 1 )
 			f7_arg0.label:completeAnimation()
-			f7_arg0.label:setText( Engine[0xF9F1239CFD921FE]( 0xCB9F26855E3227A ) )
+			f7_arg0.label:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_toggle_to_sticker" ) )
 			f7_arg0.clipFinished( f7_arg0.label )
 		end
 	},
@@ -84,7 +84,7 @@ CoD.PaintshopBlendButtonPrompt.__clipsPerState = {
 			f9_arg0:__resetProperties()
 			f9_arg0:setupElementClipCounter( 1 )
 			f9_arg0.label:completeAnimation()
-			f9_arg0.label:setText( Engine[0xF9F1239CFD921FE]( 0xCB9F26855E3227A ) )
+			f9_arg0.label:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_toggle_to_sticker" ) )
 			f9_arg0.clipFinished( f9_arg0.label )
 		end
 	}

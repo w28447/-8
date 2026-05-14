@@ -1,7 +1,7 @@
 {
     "name": "#zitem_silver_bullet_part_4_zm",
     "baseWeapon": "#zitem_silver_bullet_part_4",
-    "streamkey": "#hash_48c275e45dc3b3a4",
+    "streamkey": "#zitem_silver_bullet_part_4_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

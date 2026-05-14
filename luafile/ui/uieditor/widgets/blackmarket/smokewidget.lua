@@ -40,7 +40,7 @@ CoD.smokewidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	self.smoke4 = smoke4
 	
 	local mask = LUI.UIImage.new( 0, 0, 0, 273, 0, 0, -57, 357 )
-	mask:setImage( RegisterImage( 0x1A57A07BDE1F1E0 ) )
+	mask:setImage( RegisterImage( "uie_t7_blackmarket_crate_smokemask" ) )
 	self:addElement( mask )
 	self.mask = mask
 	

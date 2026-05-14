@@ -1,7 +1,7 @@
 {
     "name": "#apc_cougar_camera",
     "baseWeapon": "#apc_cougar_camera",
-    "streamkey": "#hash_1975370642bebb71",
+    "streamkey": "#apc_cougar_camera_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

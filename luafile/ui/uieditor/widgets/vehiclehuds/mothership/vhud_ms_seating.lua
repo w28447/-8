@@ -13,7 +13,7 @@ CoD.vhud_ms_Seating.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	self.anyChildUsesUpdateState = true
 	
 	local msDamageFillBar = LUI.UIImage.new( 0.5, 0.5, -58.5, 58.5, 0.5, 0.5, -55, 62 )
-	msDamageFillBar:setImage( RegisterImage( 0xB7F24D24774A7CD ) )
+	msDamageFillBar:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_damagefillbar" ) )
 	msDamageFillBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	msDamageFillBar:setShaderVector( 0, 0, 1, 0, 0 )
 	msDamageFillBar:setShaderVector( 1, 0, 0, 0, 0 )

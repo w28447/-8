@@ -73,12 +73,12 @@ function open_door( a_str_door_names, var_47eb646a = 0, var_91ccb2d7, b_play_aud
             if ( a_str_door_names.size > 1 || a_e_zombie_doors.size > 1 )
             {
                 level thread function_7a35b1d7( #"hash_3b522b4b62050e3c" );
-                level thread zm_audio::sndannouncerplayvox( #"hash_79b3b9e8ed3f0631", undefined, undefined, undefined, 1 );
+                level thread zm_audio::sndannouncerplayvox( #"door_open_mult", undefined, undefined, undefined, 1 );
             }
             else
             {
                 level thread function_7a35b1d7( #"hash_7203281c0385cddd" );
-                level thread zm_audio::sndannouncerplayvox( #"hash_77e06980e2fc1567", undefined, undefined, undefined, 1 );
+                level thread zm_audio::sndannouncerplayvox( #"door_open_single", undefined, undefined, undefined, 1 );
             }
             
             var_6e4ed9cd = 1;
@@ -976,7 +976,7 @@ function function_428cfaae( var_679cd7a8, var_6cc77d4e, hide_notify, n_obj_id, v
 function function_9704c82e( s_defend, var_e1feb2f6 )
 {
     level endon( #"end_game" );
-    level waittill( #"hash_7a04a7fb98fa4e4d" );
+    level waittill( #"end_defend_area" );
     level notify( #"hash_1dabaf25a56177a1" );
     wait 0.1;
     gameobjects::release_obj_id( var_e1feb2f6 );
@@ -1054,7 +1054,7 @@ function function_33798535( var_31721422, a_str_zones, var_ed1db1a7, var_6cc77d4
         level flag::set( #"disable_fast_travel" );
     }
     
-    level waittill( #"hash_7a04a7fb98fa4e4d" );
+    level waittill( #"end_defend_area" );
     
     if ( level flag::exists( #"disable_fast_travel" ) )
     {
@@ -1129,7 +1129,7 @@ function function_be8f8c85()
 // Size: 0x370
 function function_3b09971f( var_ed1db1a7, var_de0f1997, a_str_zones )
 {
-    level endon( #"end_game", #"started_defend_area", #"hash_7a04a7fb98fa4e4d" );
+    level endon( #"end_game", #"started_defend_area", #"end_defend_area" );
     
     if ( level.players.size == 1 )
     {
@@ -1336,7 +1336,7 @@ function function_f7bb860a()
 function function_766eff6( var_31721422, a_str_zones, var_de0f1997, var_f7c3c527 )
 {
     self endon( #"disconnect" );
-    level endon( #"end_game", #"hash_7a04a7fb98fa4e4d" );
+    level endon( #"end_game", #"end_defend_area" );
     self.var_fd3dfced = 0;
     
     if ( level.var_f995ece6 zm_trial_timer::is_open( self ) )
@@ -1475,7 +1475,7 @@ function function_766eff6( var_31721422, a_str_zones, var_de0f1997, var_f7c3c527
     
     self clientfield::set_to_player( "zm_zone_out_of_bounds", 0 );
     self zm_trial_util::stop_timer();
-    level notify( #"hash_7a04a7fb98fa4e4d" );
+    level notify( #"end_defend_area" );
 }
 
 // Namespace zm_utility/zm_utility_zstandard
@@ -1485,7 +1485,7 @@ function function_766eff6( var_31721422, a_str_zones, var_de0f1997, var_f7c3c527
 function function_7042bcf9( a_str_zones )
 {
     self endon( #"disconnect" );
-    level endon( #"end_game", #"hash_7a04a7fb98fa4e4d" );
+    level endon( #"end_game", #"end_defend_area" );
     
     while ( true )
     {
@@ -1522,7 +1522,7 @@ function function_7042bcf9( a_str_zones )
 function player_left_zone( a_str_zones, var_8e2567b1, var_9faecc20 )
 {
     self endon( #"disconnect" );
-    level endoncallback( &function_4cf5b2e1, #"end_game", #"hash_7a04a7fb98fa4e4d" );
+    level endoncallback( &function_4cf5b2e1, #"end_game", #"end_defend_area" );
     
     while ( true )
     {
@@ -1680,7 +1680,7 @@ function function_4cf5b2e1( str_notify )
 function function_ac41a624()
 {
     self endon( #"disconnect" );
-    level endon( #"end_game", #"hash_7a04a7fb98fa4e4d" );
+    level endon( #"end_game", #"end_defend_area" );
     
     if ( !isdefined( level.var_9149f3ac ) )
     {
@@ -1959,7 +1959,7 @@ function enable_power_switch( b_enable = 0, var_909e9d3d = 0, str_value, str_key
                 if ( !var_c996d382 )
                 {
                     var_c996d382 = 1;
-                    level util::delay( 4, "end_game", &array::thread_all, getplayers(), &zm_equipment::show_hint_text, #"hash_5bdc1f7024280e4e" );
+                    level util::delay( 4, "end_game", &array::thread_all, getplayers(), &zm_equipment::show_hint_text, #"zmarcade/power_on" );
                     level thread zm_audio::sndannouncerplayvox( #"power_activated" );
                 }
             }

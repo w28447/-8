@@ -47,7 +47,7 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT32"
                     },
@@ -147,12 +147,12 @@
             "len": 32
         },
         {
-            "name": "#hash_27f986f9f86c15ef",
+            "name": "#is_4k",
             "scrName": "#hash_42991f40",
             "type": "BOOL"
         },
         {
-            "name": "#hash_2a6477485c88d7e9",
+            "name": "#isplaygo",
             "scrName": "#hash_c04505c2",
             "type": "BOOL"
         },
@@ -168,7 +168,7 @@
             "len": 64
         },
         {
-            "name": "#hash_326518fcfc54ec7c",
+            "name": "#is_dyn_res",
             "scrName": "#hash_7376ef66",
             "type": "BOOL"
         },

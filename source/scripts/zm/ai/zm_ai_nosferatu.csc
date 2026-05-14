@@ -148,7 +148,7 @@ function function_3468dc45( localclientnum )
 {
     self notify( #"nosferatu_damage_fx" );
     self endon( #"death", #"disconnect", #"nosferatu_damage_fx" );
-    self endoncallback( &function_84346679, #"death", #"hash_70253e729ea3d013" );
+    self endoncallback( &function_84346679, #"death", #"nosferatu_damage_fx_timeout" );
     
     if ( !self postfx::function_556665f2( "pstfx_zm_man_curse" ) )
     {
@@ -161,8 +161,8 @@ function function_3468dc45( localclientnum )
         self.var_222e996f = self playloopsound( #"hash_5b12d6dc3fd13c3d" );
     }
     
-    level waittilltimeout( level.var_371d767c, #"hash_7646638df88a3656" );
-    self notify( #"hash_70253e729ea3d013" );
+    level waittilltimeout( level.var_371d767c, #"trial_round_end" );
+    self notify( #"nosferatu_damage_fx_timeout" );
 }
 
 // Namespace zm_ai_nosferatu/zm_ai_nosferatu

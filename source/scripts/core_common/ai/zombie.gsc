@@ -954,7 +954,7 @@ function zombieshouldmeleecondition( entity )
 function private function_1b8c9407( entity )
 {
     /#
-        if ( getdvarint( #"hash_1a5939d8c37a2e07", 0 ) )
+        if ( getdvarint( #"disable_zombie_full_pain", 0 ) )
         {
             return false;
         }

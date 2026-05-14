@@ -346,9 +346,9 @@ function function_b5433e55( bookmark )
     potm_bookmarks.infoindex = bookmark.var_900768bc.index;
     potm_bookmarks.info_id = bookmark.var_900768bc.id;
     potm_bookmarks.mainclientnum = bookmark.mainclientnum;
-    potm_bookmarks.var_9b2cab54 = getclientname( bookmark.var_81538b15 );
+    potm_bookmarks.mainclientname = getclientname( bookmark.var_81538b15 );
     potm_bookmarks.otherclientnum = bookmark.otherclientnum;
-    potm_bookmarks.var_3b8a36fd = getclientname( bookmark.var_f28fb772 );
+    potm_bookmarks.otherclientname = getclientname( bookmark.var_f28fb772 );
     potm_bookmarks.scoreaddition = bookmark.scoreaddition;
     potm_bookmarks.scoremultiplier = bookmark.scoremultiplier;
     potm_bookmarks.scoreeventpriority = bookmark.scoreeventpriority;
@@ -831,7 +831,7 @@ function private function_60211cf4( sequence )
         event = sequence.params.events[ cameraindex ];
         processevent = 1;
         
-        if ( isdefined( event.cameraname ) && event.cameraname == #"hash_520dfab6dc8b7832" )
+        if ( isdefined( event.cameraname ) && event.cameraname == #"cc_first_person" )
         {
             level thread function_d1cb3471();
         }
@@ -1387,7 +1387,7 @@ function function_d1cb3471()
     function private waitthennotifyplaypotm()
     {
         setdvar( #"scr_force_potm", 0 );
-        setdvar( #"hash_2428eb9c3d05eee0", 0 );
+        setdvar( #"scr_force_potm_fancy", 0 );
         level function_b6a5e7fa( 1 );
     }
 
@@ -2992,7 +2992,7 @@ function function_c65274ed()
         hostplayer setluimenudata( menu, #"eventduration", int( duration ) );
         hostplayer setluimenudata( menu, #"scoreeventpriority", int( priority ) );
         hostplayer setluimenudata( menu, #"hash_752b983964003a68", int( var_e567d17 ) );
-        hostplayer setluimenudata( menu, #"hash_5935b658727b020c", var_1be0f2c3 );
+        hostplayer setluimenudata( menu, #"eventkillcamparams", var_1be0f2c3 );
         hostplayer setluimenudata( menu, #"hash_33d80b75d9c6d88d", var_4775155a );
     }
 
@@ -3040,7 +3040,7 @@ function function_c65274ed()
             level thread waitthennotifyplaypotm();
         }
         
-        if ( getdvarint( #"hash_2428eb9c3d05eee0", 0 ) == 1 )
+        if ( getdvarint( #"scr_force_potm_fancy", 0 ) == 1 )
         {
             level thread waitthennotifyplaypotm();
         }

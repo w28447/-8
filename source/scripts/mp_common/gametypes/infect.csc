@@ -33,7 +33,7 @@ function function_fd78da38( localclientnum, oldval, newval, bnewent, binitialsna
                 {
                     if ( player flag::exists( #"friendly" ) )
                     {
-                        player renderoverridebundle::stop_bundle( #"friendly", sessionmodeiscampaigngame() ? #"hash_1cbf6d26721c59a7" : #"hash_1c90592671f4c6e9", 0 );
+                        player renderoverridebundle::stop_bundle( #"friendly", sessionmodeiscampaigngame() ? #"rob_sonar_set_friendly_cp" : #"rob_sonar_set_friendly_mp", 0 );
                     }
                 }
             }
@@ -43,7 +43,7 @@ function function_fd78da38( localclientnum, oldval, newval, bnewent, binitialsna
         
         if ( self flag::exists( #"friendly" ) )
         {
-            self renderoverridebundle::stop_bundle( #"friendly", sessionmodeiscampaigngame() ? #"hash_1cbf6d26721c59a7" : #"hash_1c90592671f4c6e9", 0 );
+            self renderoverridebundle::stop_bundle( #"friendly", sessionmodeiscampaigngame() ? #"rob_sonar_set_friendly_cp" : #"rob_sonar_set_friendly_mp", 0 );
         }
     }
 }

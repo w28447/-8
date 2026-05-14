@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_vehicles_drone",
+    "type": "#tag",
+    "material": "#hash_72cc08e5024e2196",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_1cccf42405720988",
+        "icon": "image#loot_ui_icon_tags_vehicles_drone",
+        "isdefault": 0
+    }
+}

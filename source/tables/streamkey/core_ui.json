@@ -1,7 +1,7 @@
 {
     "keys": [
         {
-            "name": "#hash_325bf5ac2899a482",
+            "name": "#core_ui_all_stream",
             "xPakEntry": {
                 "key": "#hash_e2f726b9655368db",
                 "offset": 0,
@@ -20,7 +20,7 @@
             "keyFlags": 3
         },
         {
-            "name": "#hash_379c970609b13c83",
+            "name": "#core_ui_all_loaded",
             "xPakEntry": {
                 "key": "#hash_f743dc8daf89180c",
                 "offset": 0,

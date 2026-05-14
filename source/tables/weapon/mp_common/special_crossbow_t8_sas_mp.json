@@ -3,7 +3,7 @@
     "baseWeapon": "#special_crossbow_t8_sas",
     "displayname": "#weapon/special_crossbow_t8",
     "weapon70": "#special_crossbow_t8",
-    "streamkey": "#hash_1a5dd9c998e91282",
+    "streamkey": "#special_crossbow_t8_sas_soundbank",
     "scrstr_8c8": [
         "tag_camo_darkmatter",
         "tag_camo_diamond"
@@ -47,8 +47,8 @@
         ]
     ],
     "sound90": "#hash_62f37f9672d626e5",
-    "firesound": "#hash_5596b8a24f607466",
-    "firesoundplayer": "#hash_506617a29560098b",
+    "firesound": "#wpn_crossbow_fire_npc",
+    "firesoundplayer": "#wpn_crossbow_fire_plr",
     "sound240": "#hash_683733eab40de48b",
     "sound250": "#hash_3ee3cceae529ba86",
     "sound270": "#hash_24db08faf35699e1",
@@ -86,7 +86,7 @@
         "#hash_c15b461b7420c6d2",
         "#hash_bb3f97cf646813ac"
     ],
-    "normalImpactFX": "#hash_543debda11c394d3",
+    "normalImpactFX": "#bow_explosion",
     "bounceImpactFX": "#hash_8410092704f4a03c",
     "normalImpactSounds": "#hash_e8e0a97bbbf0b555",
     "bounceImpactSounds": "#hash_9804b102c9e65ad1",

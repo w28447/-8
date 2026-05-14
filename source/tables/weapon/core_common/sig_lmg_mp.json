@@ -4,7 +4,7 @@
     "displayname": "#weapon/sig_lmg",
     "altWeapon": "#sig_lmg_alt_mp",
     "luigiReticleWidget": "ScytheReticle",
-    "streamkey": "#hash_1abb629692305f43",
+    "streamkey": "#sig_lmg_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -50,7 +50,7 @@
     "firesound": "#hash_1a8618a42206290a",
     "firesoundplayer": "#hash_43d97fa3f0ea530f",
     "sound250": "#uin_unavailable_charging",
-    "sound260": "#hash_515f54aa1f553686",
+    "sound260": "#prj_crack_supersonic",
     "sound3e0": "#hash_60f9893b7fbb721d",
     "gadgetreadysoundplayer": "#hash_6f9f9ddee6f7c03",
     "sound660": "#uin_unavailable_charging",
@@ -64,7 +64,7 @@
     ],
     "statusEffects": [
         {
-            "effect": "#hash_2d37104ba9e6e867",
+            "effect": "#suppress_reaper_lmg",
             "statusEffects:unk10": "[32h0x0=][ll0x0=3f80000000000000][f0x0=0][f0x4=1] 00 00 00 00 00 00 80 3f"
         },
         {
@@ -89,7 +89,7 @@
     "inventoryIconZm": "#ui_icon_weapon_hud_scythe",
     "hudIcon": "#hash_9151f5aa76ee4c3f",
     "image_e90": "#ui_icon_obit_scythe",
-    "fireRumble": "#hash_343ebed0d19bf830",
+    "fireRumble": "#heavygun_fire_reaper_lmg",
     "fx_bc8": "#hash_589558fcb970ee47",
     "fx_bd0": "#hash_588f4cfcb96c6e35",
     "fx_bd8": "#hash_44dba22da4f666da",

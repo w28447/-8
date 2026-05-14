@@ -31,7 +31,7 @@ CoD.OptionsUtility.ButtonLayoutListAssetName = 0x389ADF5BAE5D049
 CoD.OptionsUtility.DemoButtonLayoutListAssetName = 0x863A4B07CDC6A22
 CoD.OptionsUtility.StickLayoutListAssetName = 0xB603FFBDE556AD3
 CoD.OptionsUtility.EnabledDisabledLabels = {
-	0x94EB0E3329EDF5F,
+	"menu/disabled",
 	0x742854D20BB9B14
 }
 CoD.OptionsUtility.EnabledDisabledValues = {
@@ -155,7 +155,7 @@ CoD.OptionsUtility.GetGameSettingsInfoFromTable = function ( f7_arg0 )
 		local f7_local0 = {
 			name = f7_arg0[0x55F116BF695C8F6],
 			setting = f7_arg0[0x14C73E954E9760B],
-			image = f7_arg0[0x245C555A23CB4AE] or "blacktransparent",
+			image = f7_arg0["descriptionimage"] or "blacktransparent",
 			useLongSlider = f7_arg0[0xDD5060AA2F3FF5F] == 1,
 			addUnlimitedButton = f7_arg0[0xD268F562204A4FB] == 1
 		}
@@ -241,7 +241,7 @@ CoD.OptionsUtility.GetGametypeWinConditionsTable = function ( f8_arg0 )
 	local f8_local2 = f8_local1 and f8_local1[f8_arg0 .. "_winconditionslist"]
 	if f8_local2 then
 		for f8_local6, f8_local7 in ipairs( f8_local2 ) do
-			table.insert( f8_local0, f8_local7[0x3C119C726692754] )
+			table.insert( f8_local0, f8_local7["option"] )
 		end
 	end
 	return f8_local0
@@ -253,7 +253,7 @@ CoD.OptionsUtility.GetGametypeAdvancedOptionsTable = function ( f9_arg0 )
 	local f9_local2 = f9_local1 and f9_local1[f9_arg0 .. "_advancedoptionslist"]
 	if f9_local2 then
 		for f9_local6, f9_local7 in ipairs( f9_local2 ) do
-			table.insert( f9_local0, f9_local7[0x3C119C726692754] )
+			table.insert( f9_local0, f9_local7["option"] )
 		end
 	end
 	return f9_local0
@@ -343,7 +343,7 @@ CoD.OptionsUtility.PlayerSettings.AudioSettings = {
 		}
 	},
 	{
-		groupName = 0xC9EBE411155B7FC,
+		groupName = "menu/advanced_volume",
 		options = {
 			"voice_volume",
 			"music_volume",
@@ -429,7 +429,7 @@ CoD.OptionsUtility.PlayerSettings.TheaterSettings = {
 		}
 	},
 	{
-		groupName = 0xB850A750B6DE292,
+		groupName = "demo/director_mode_options",
 		options = {
 			"demo_autodollyrecord",
 			"demo_autodollykeyframeinterval"
@@ -505,13 +505,13 @@ DataSourceHelpers.PerControllerDataSourceSetup( "ButtonLayoutLabels", "ButtonLay
 		f12_local3:set( f12_local0 )
 	end
 	
-	f11_local14( "xbA_psCross", 0x574A8D65872F471 )
-	f11_local14( "xbB_psCircle", 0x574A5D65872EF58 )
-	f11_local14( "xbX_psSquare", 0x574AFD658730056 )
-	f11_local14( "xbY_psTriangle", 0x574B0D658730209 )
+	f11_local14( "xbA_psCross", "button_a" )
+	f11_local14( "xbB_psCircle", "button_b" )
+	f11_local14( "xbX_psSquare", "button_x" )
+	f11_local14( "xbY_psTriangle", "button_y" )
 	f11_local14( "back", 0xC5B9961DE2A7859 )
 	f11_local14( "start", 0xB6549C9442290D2 )
-	f11_local14( "leftDpad", 0x6636C500CD317C7 )
+	f11_local14( "leftDpad", "button_left" )
 	f11_local14( "rightDpad", 0x44ED6DCD32FB7F8 )
 	f11_local14( "upDpad", 0x872FD384B8E9347 )
 	f11_local14( "downDpad", 0xE6F4A963B341BA2 )
@@ -594,7 +594,7 @@ CoD.OptionsUtility.GetPlayerSettingDefaultValueFromOptionInfo = function ( f16_a
 		elseif f16_arg1[0xC97F4CCEE4EFEB7] == 1 then
 			f16_local0 = f16_arg1[0x77326D80ECDE714]
 		elseif f16_arg1.options then
-			local f16_local2 = f16_arg1.options[(f16_arg1[0x2A5CFFC76A4879] or 0) + 1]
+			local f16_local2 = f16_arg1.options[(f16_arg1["defaultoptionindex"] or 0) + 1]
 			if f16_local2 then
 				f16_local0 = tonumber( f16_local2[0xCE4FD9430E80CEA] )
 			end
@@ -735,7 +735,7 @@ CoD.OptionsUtility.GetDefaultOptionIndex = function ( f26_arg0 )
 			end
 		end
 	elseif f26_arg0[0xA45F46644AD8745] then
-		return (f26_arg0[0x2A5CFFC76A4879] or 0) + 1
+		return (f26_arg0["defaultoptionindex"] or 0) + 1
 	end
 	return 1
 end
@@ -824,7 +824,7 @@ CoD.OptionsUtility.CreatePlayerSettingsDatasource = function ( f28_arg0, f28_arg
 		f28_local8 = {
 			models = {
 				name = Engine[0xF9F1239CFD921FE]( f28_local0[0x55F116BF695C8F6] or 0x0 ),
-				hintText = Engine[0xF9F1239CFD921FE]( f28_local0[0xCC44970C8397929] or 0x0 ),
+				hintText = Engine[0xF9F1239CFD921FE]( f28_local0["description"] or 0x0 ),
 				optionAssetName = f28_arg1,
 				optionsDatasource = CoD.OptionsUtility.CreateOptionDataSource( f28_arg0, f28_local5, f28_local2, f28_local0[0x6E183377E0C37F4], f28_local4, f28_local7, f28_arg1 ),
 				currentSelection = f28_local6
@@ -1014,11 +1014,11 @@ CoD.OptionsUtility.PlayerSettingsNetworkListPrepare = function ( f40_arg0 )
 		isHidden = true
 	} ) )
 	local f40_local17, f40_local18 = Engine.GetSystemInfo( f40_arg0, CoD.SYSINFO_INTERNAL_IP_ADDRESS )
-	table.insert( f40_local0, CoD.OptionsUtility.CreatePlayerSettingsButtonDatasource( Engine[0xF9F1239CFD921FE]( 0x32CA1559CDF918A ), Engine[0xF9F1239CFD921FE]( 0x87FC2843A65DDAA ), f40_local12, {
+	table.insert( f40_local0, CoD.OptionsUtility.CreatePlayerSettingsButtonDatasource( Engine[0xF9F1239CFD921FE]( 0x32CA1559CDF918A ), Engine[0xF9F1239CFD921FE]( "platform/options_network_about_internal_ip_desc_off" ), f40_local12, {
 		action = CoD.OptionsUtility.ShowHideNetworkSettingInfo,
 		hiddenLabel = Engine[0xF9F1239CFD921FE]( 0xC241C17DD620CFF ),
 		showingLabel = f40_local17,
-		hiddenDesc = Engine[0xF9F1239CFD921FE]( 0x87FC2843A65DDAA ),
+		hiddenDesc = Engine[0xF9F1239CFD921FE]( "platform/options_network_about_internal_ip_desc_off" ),
 		showingDesc = Engine[0xF9F1239CFD921FE]( 0xC1498B590516530 ),
 		isHidden = true
 	} ) )
@@ -1436,10 +1436,10 @@ CoD.OptionsUtility.DvarShownCustomGameOptions = {
 		0x2EE429BB9CE771C
 	},
 	[0xE30B8B2F3629DA3] = {
-		0x6DF1564C342C831,
+		"zmelixirperkaholic",
 		0x7FF67C16576E231,
 		0xBEC3890EA83D709,
-		0xB0BEFCBAC8AEDE6
+		"zmelixirreigndrops"
 	},
 	[0xBFA5BDA576BE7C4] = {
 		0x5AABD057794561C,
@@ -1450,7 +1450,7 @@ CoD.OptionsUtility.DvarShownCustomGameOptions = {
 		0x821E81969996ECE
 	},
 	[0xE1190045EF3588B] = {
-		0x75EC38C3F3487D5
+		"zmperkswolfprotector"
 	},
 	[0xC1A8ED8D0BF271C] = {
 		0x44B157A9FA6573D
@@ -1661,7 +1661,7 @@ CoD.OptionsUtility.CACRestrictionCategories = {
 	},
 	{
 		id = "Attachments",
-		name = 0x56E6F15BA89EEED,
+		name = "mpui/attachments_caps",
 		tabIndex = 2,
 		image = 0xC0BC7A99737BD47
 	},
@@ -1679,7 +1679,7 @@ CoD.OptionsUtility.CACRestrictionCategories = {
 	},
 	{
 		id = "Perks",
-		name = 0xE2669E63163D964,
+		name = "menu/perks_caps",
 		tabIndex = 5,
 		image = 0xF307FB3B72049A8
 	},
@@ -1912,7 +1912,7 @@ CoD.OptionsUtility.CustomGameOptions.GametypeOptionCategories = {
 	},
 	{
 		ref = "gameplay",
-		groupName = 0xA31D2DFFA5784E3,
+		groupName = "menu/gameplay",
 		datasourceNameHeader = "GameplayOptionsList",
 		gameSettingListName = 0x982E1C9D180D09
 	}
@@ -1933,7 +1933,7 @@ CoD.OptionsUtility.CustomGameOptions.SpecialistOptionCategories = {
 	},
 	{
 		ref = "health",
-		groupName = 0xFC1BF5051FD9C7F,
+		groupName = "menu/health_and_damage_caps",
 		datasourceNameHeader = "HealthOptionsList",
 		gameSettingListName = 0x157C260765CC9B
 	},
@@ -2086,7 +2086,7 @@ CoD.OptionsUtility.CustomGameOptions.EquipmentRestrictionOptionCategories = {
 CoD.OptionsUtility.CustomGameOptions.PerkRestrictionOptionCategories = {
 	{
 		ref = "Perk1",
-		groupName = 0xCC26359EAAED27A,
+		groupName = "mpui/perk1",
 		datasourceNameHeader = "perk1",
 		gameSettingListName = 0xD35EC3B2B4D4FCD,
 		datasourceFunc = CoD.OptionsUtility.PrepareRestrictionGameOptions,
@@ -2094,7 +2094,7 @@ CoD.OptionsUtility.CustomGameOptions.PerkRestrictionOptionCategories = {
 	},
 	{
 		ref = "Perk2",
-		groupName = 0xCC26259EAAED0C7,
+		groupName = "mpui/perk2",
 		datasourceNameHeader = "perk2",
 		gameSettingListName = 0x1932698FEBB43EC,
 		datasourceFunc = CoD.OptionsUtility.PrepareRestrictionGameOptions,
@@ -2102,7 +2102,7 @@ CoD.OptionsUtility.CustomGameOptions.PerkRestrictionOptionCategories = {
 	},
 	{
 		ref = "Perk3",
-		groupName = 0xCC26159EAAECF14,
+		groupName = "mpui/perk3",
 		datasourceNameHeader = "perk3",
 		gameSettingListName = 0xDF45CFA77E25457,
 		datasourceFunc = CoD.OptionsUtility.PrepareRestrictionGameOptions,
@@ -2138,7 +2138,7 @@ CoD.OptionsUtility.CustomGameOptions.WildcardRestrictionOptionCategories = {
 CoD.OptionsUtility.CustomGameOptions.WeaponAttachmentRestrictionOptionCategories = {
 	{
 		ref = "clantag",
-		name = 0x87AD82563AAAC53,
+		name = "menu/clan_name",
 		datasourceNameHeader = "clantag",
 		gameSettingListName = 0x30934E4914D5786,
 		datasourceFunc = CoD.OptionsUtility.PrepareRestrictionGameOptions,
@@ -2183,7 +2183,7 @@ CoD.OptionsUtility.CustomGameOptions.WeaponAttachmentRestrictionOptionCategories
 	},
 	{
 		ref = "extclip",
-		name = 0x8539DADE7DED104,
+		name = "mpui/extclip",
 		datasourceNameHeader = "extc",
 		gameSettingListName = 0x673BA0BE6C8221F,
 		datasourceFunc = CoD.OptionsUtility.PrepareRestrictionGameOptions,
@@ -2192,7 +2192,7 @@ CoD.OptionsUtility.CustomGameOptions.WeaponAttachmentRestrictionOptionCategories
 	},
 	{
 		ref = "extclip2",
-		name = 0x4E62480FF9D7EC2,
+		name = "mpui/extclip2",
 		datasourceNameHeader = "extc_2",
 		gameSettingListName = 0xCA7D90A41C4A251,
 		datasourceFunc = CoD.OptionsUtility.PrepareRestrictionGameOptions,
@@ -2219,7 +2219,7 @@ CoD.OptionsUtility.CustomGameOptions.WeaponAttachmentRestrictionOptionCategories
 	},
 	{
 		ref = "fastreload2",
-		name = 0xBA6C2F3C3FBB276,
+		name = "mpui/fastreload2",
 		datasourceNameHeader = "fastr_2",
 		gameSettingListName = 0x52765527DA9A64D,
 		datasourceFunc = CoD.OptionsUtility.PrepareRestrictionGameOptions,
@@ -2296,7 +2296,7 @@ CoD.OptionsUtility.CustomGameOptions.WeaponAttachmentRestrictionOptionCategories
 		gameSettingListName = 0xB1EE51F35879D2B,
 		datasourceFunc = CoD.OptionsUtility.PrepareRestrictionGameOptions,
 		isDefaultCondition = CoD.OptionsUtility.AreRestrictionOpionsDefault,
-		image = 0x52B907E1C78F6D9
+		image = "ui_icon_attachment_quickdraw"
 	},
 	{
 		ref = "quickdraw2",
@@ -2345,7 +2345,7 @@ CoD.OptionsUtility.CustomGameOptions.WeaponAttachmentRestrictionOptionCategories
 	},
 	{
 		ref = "stalker",
-		name = 0x5ACC09D0CCF025,
+		name = "mpui/stalker",
 		datasourceNameHeader = "stalk",
 		gameSettingListName = 0xCC1175D26B7BD0E,
 		datasourceFunc = CoD.OptionsUtility.PrepareRestrictionGameOptions,
@@ -2410,12 +2410,12 @@ CoD.OptionsUtility.CustomGameOptions.WeaponScopeRestrictionOptionCategories = {
 	},
 	{
 		ref = "dualop",
-		name = 0x20EA333C5EC0972,
+		name = "mpui/dualoptic",
 		datasourceNameHeader = "dualop",
 		gameSettingListName = 0xB9D2BC62F846E9D,
 		datasourceFunc = CoD.OptionsUtility.PrepareRestrictionGameOptions,
 		isDefaultCondition = CoD.OptionsUtility.AreRestrictionOpionsDefault,
-		image = 0x6264D3601836C7
+		image = "ui_icon_attachment_dualoptic"
 	},
 	{
 		ref = "elo",
@@ -3330,7 +3330,7 @@ DataSources.PrivacySettingOptionList = DataSourceHelpers.ListSetup( "PrivacySett
 			f165_local1[f165_local10.name] = f165_local10
 		end
 	end
-	f165_local6 = Engine[0xE00B2F29271C60B]( 0x32F219664D64096 )
+	f165_local6 = Engine[0xE00B2F29271C60B]( "privacysettingslist" )
 	if f165_local6 and f165_local6.privacySettingsList then
 		for f165_local10, f165_local24 in ipairs( f165_local6.privacySettingsList ) do
 			local f165_local25 = f165_local1[f165_local24[0xADCC08CA48ED01A]]
@@ -3573,7 +3573,7 @@ CoD.OptionsUtility.CreateEnabledDisabledProfileVar = function ( f184_arg0, f184_
 			desc = f184_arg2
 		},
 		{
-			name = Engine[0xF9F1239CFD921FE]( 0x94EB0E3329EDF5F ),
+			name = Engine[0xF9F1239CFD921FE]( "menu/disabled" ),
 			value = 0,
 			title = f184_arg1,
 			desc = f184_arg2
@@ -3605,7 +3605,7 @@ CoD.OptionsUtility.CreateEnabledDisabledOptions = function ( f185_arg0, f185_arg
 					desc = f185_arg2
 				},
 				{
-					name = Engine[0xF9F1239CFD921FE]( 0x94EB0E3329EDF5F ),
+					name = Engine[0xF9F1239CFD921FE]( "menu/disabled" ),
 					value = 0,
 					title = f185_arg1,
 					desc = f185_arg2
@@ -3643,7 +3643,7 @@ CoD.OptionsUtility.CreateRestrictionListOptions = function ( f187_arg0, f187_arg
 					image = f187_arg4.image
 				},
 				{
-					name = Engine[0xF9F1239CFD921FE]( 0x94EB0E3329EDF5F ),
+					name = Engine[0xF9F1239CFD921FE]( "menu/disabled" ),
 					value = f187_local4,
 					title = f187_arg1,
 					desc = f187_arg2[2],

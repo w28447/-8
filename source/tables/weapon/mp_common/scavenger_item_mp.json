@@ -2,7 +2,7 @@
     "name": "#scavenger_item_mp",
     "baseWeapon": "#scavenger_item",
     "weapon70": "#weapon_null",
-    "streamkey": "#hash_412f61d317bf1ce1",
+    "streamkey": "#scavenger_item_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

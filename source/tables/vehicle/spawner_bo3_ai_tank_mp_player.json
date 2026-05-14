@@ -46,35 +46,35 @@
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "hash_4c7d903a026627fc:hash_4be786c9": "localized17#hash_4c7d903a026627fc",
+                        "menu/hud_vehicle_exit:hash_4be786c9": "localized17#menu/hud_vehicle_exit",
                         "hash_334a8e60": "left",
                         "prompt": "+activate"
                     },
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "hash_473cfed0ced28318:hash_4be786c9": "localized17#hash_473cfed0ced28318",
+                        "menu/hud_vehicle_toggle:hash_4be786c9": "localized17#menu/hud_vehicle_toggle",
                         "hash_334a8e60": "left",
                         "prompt": "+gostand"
                     },
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "hash_5f6588c74f549827:hash_4be786c9": "localized17#hash_5f6588c74f549827",
+                        "menu/hud_vehicle_fire_machine_gun:hash_4be786c9": "localized17#menu/hud_vehicle_fire_machine_gun",
                         "hash_334a8e60": "left",
                         "prompt": "+vehicleattacksecond"
                     },
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "hash_1a14ac950dd062ca:hash_4be786c9": "localized17#hash_1a14ac950dd062ca",
+                        "menu/hud_vehicle_fire_rockets:hash_4be786c9": "localized17#menu/hud_vehicle_fire_rockets",
                         "hash_334a8e60": "left",
                         "prompt": "+vehicleattack"
                     },
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "hash_64d22aa20ae809f:hash_4be786c9": "localized17#hash_64d22aa20ae809f",
+                        "menu/hud_vehicle_zoom:hash_4be786c9": "localized17#menu/hud_vehicle_zoom",
                         "hash_334a8e60": "left",
                         "prompt": "+speed_throw"
                     }

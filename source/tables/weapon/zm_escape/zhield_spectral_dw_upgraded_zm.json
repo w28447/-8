@@ -5,7 +5,7 @@
     "altWeapon": "#zhield_spectral_turret_upgraded_zm",
     "weapon70": "#zhield_spectral_dw",
     "dualwieldWeaponName": "#zhield_spectral_lh_upgraded_zm",
-    "streamkey": "#hash_588d078b4a03671",
+    "streamkey": "#zhield_spectral_dw_upgraded_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_right",
     "stowedModelTag": "tag_stowed_back",
@@ -68,7 +68,7 @@
     "sound6c0": "#hash_1e69091865bbdbb8",
     "sound800": "#hash_21cba6ae89a3493c",
     "sound810": "#hash_21cba6ae89a3493c",
-    "tunables1": "#hash_4a2dad1015be5914",
+    "tunables1": "#zhield_spectral_dw_tunables_upgraded_zm",
     "sharedWeaponSounds": "#battle_shield",
     "viewmodel": [
         "#hash_607323a4b934bd31"

@@ -6020,7 +6020,7 @@ image,#i_c_t7_warrior_head1_beardcards_c
 image,d#i_t7_micro_metal_painted_01_c
 image,d#i_t7_micro_metal_painted_01_g
 image,d#i_t7_micro_metal_painted_01_n
-image,#hash_10a52648f073a7e6
+image,#i_lut_mp_icebreaker
 image,#i_mtl_p7_mou_electric_switch_metal_01_m
 image,#i_mtl_p7_mou_electric_switch_metal_01_n
 image,d#i_t8_micro_cloth_canvas_01_n
@@ -9431,8 +9431,8 @@ image,d#i_wpn_t8_eqp_briefcase_bomb_glass_c
 image,d#i_wpn_t8_eqp_briefcase_bomb_glass_s
 image,#i_t7_metal_rust_ceiling_01_n
 image,#hash_7fef57bb16c29711
-streamkey,#hash_4aac9f9176be075
-streamkey,#hash_61fa477489389190
+streamkey,#mp_icebreaker_all_stream
+streamkey,#mp_icebreaker_all_loaded
 streamkey,#hash_544a276778074053
 streamkey,#hash_5762bf7a4579a1fa
 sound,#mp_icebreaker.all
@@ -9491,10 +9491,10 @@ scriptparsetree,#scripts/mp/mp_icebreaker_water.csc
 scriptparsetree,#scripts/mp/mp_icebreaker.csc
 keyvaluepairs,#mp_icebreaker
 surfacesounddef,#hash_10a1856d06431be9
-surfacesounddef,#hash_4f71e0eed77a071c
+surfacesounddef,#phy_canteen_sounddef
 surfacesounddef,d#hash_5d772ccdaa011a7f
 surfacesounddef,#hash_63bf6c0e360eff28
-surfacesounddef,#hash_6a9264c7627e1b73
+surfacesounddef,#phy_glass_bottle_sounddef
 surfacesounddef,#hash_74551b28aee5c060
 entitysoundimpacts,d#victim_raps_impact
 entitysoundimpacts,d#entity_bounce
@@ -9541,7 +9541,7 @@ navmesh,#mp_icebreaker
 navvolume,#mp_icebreaker
 triggerlist,#maps/mp/mp_icebreaker.d3dbsp
 cpu_occlusion_data,#maps/mp/mp_icebreaker.d3dbsp
-streamkey,#hash_9ba612845b29219
+streamkey,#mp_icebreaker_sst_0_0
 streamkey,#hash_102be0ecd83c85d8
 streamkey,#hash_102be1ecd83c878b
 streamkey,#hash_102be4ecd83c8ca4
@@ -12304,11 +12304,11 @@ material,d#mc/bullet_collision_concrete
 material,d#ei/gfx_spark_single_em
 fx,#hash_f5d6a530821200c
 fx,#hash_28beeb15751b348f
-impactsoundstable,#hash_1c73bd0ca5a9739
-impactsoundstable,#hash_d698a0c5be3e240
-impactsoundstable,#hash_2098af09759b9cc0
+impactsoundstable,#phy_metal_barrel
+impactsoundstable,#phy_glass_bottle
+impactsoundstable,#veh_zodiac_impact
 impactsoundstable,#phy_canteen
-impactsoundstable,d#hash_695bd5aa13e21e64
+impactsoundstable,d#phy_metal_pan
 impactsoundstable,#hash_6f454713be8f30ae
 maptableentrylevelassets,#mp_icebreaker
 physpreset,#barrel_metal
@@ -13557,7 +13557,7 @@ surfacefxtable,#hash_206e9be9ad7f64b
 entityfximpacts,d#entity_enter
 entitylist,#maps/mp/mp_icebreaker.d3dbsp
 impactsfxtable,#hash_714e2d08fdcdcee2
-physpreset,#hash_5ae89e7d7a715d1
+physpreset,#zodiac_physpreset
 xmodel,#veh_t8_mil_boat_tactical_raft
 image,#hash_7a2b772e4c99fcf4
 image,#*cookie_array

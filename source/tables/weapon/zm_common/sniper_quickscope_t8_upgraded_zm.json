@@ -4,7 +4,7 @@
     "displayname": "#zmweapon/sniper_quickscope_t8_upgraded",
     "xhash_60": "#hash_1c2fb7d246370cfa",
     "weapon70": "#sniper_quickscope_t8",
-    "streamkey": "#hash_29c2f6fddb8ee8e",
+    "streamkey": "#sniper_quickscope_t8_upgraded_soundbank",
     "scrstr_8c8": [
         "tag_antenna_wire2b_pba",
         "tag_antenna_wire2_pba",
@@ -68,7 +68,7 @@
     "sound210": "#hash_3f969a2cbe6bf119",
     "sound240": "#hash_474a10cd847c7803",
     "sound250": "#hash_146e19cd67fe19de",
-    "sound260": "#hash_515f54aa1f553686",
+    "sound260": "#prj_crack_supersonic",
     "sound310": "#hash_553957b278d8e879",
     "sound5e0": "#fly_scope_zoom",
     "sound600": "#hash_5c9addf2686f77e2",
@@ -82,7 +82,7 @@
     "weaponIconXCam": "#hash_c212f517dce26f87",
     "attachments": [
         "#hash_f459a0af8e8f912b",
-        "#hash_1847195a90eddc18"
+        "#acog_sniper_upgraded"
     ],
     "attachmentUniques": [
         "#hash_b184a01f7ba624c1",

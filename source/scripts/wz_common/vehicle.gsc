@@ -409,56 +409,56 @@ function private on_vehicle_collision( params )
         case #"player_atv":
             var_1fdf316c = getdvarfloat( #"hash_3c9cb797fd1a7f8b", 30 );
             var_a7796a79 = getdvarfloat( #"hash_67059652c5fc1945", 60 );
-            mindamage = getdvarfloat( #"hash_1f5d38cc94106adf", 50 );
-            maxdamage = getdvarfloat( #"hash_66a67ad27c3cd339", 200 );
+            mindamage = getdvarfloat( #"atv_min_damage", 50 );
+            maxdamage = getdvarfloat( #"atv_max_damage", 200 );
             var_1831f049 = 1;
             var_a1805d6e = 0.7;
             break;
         case #"cargo_truck_wz":
             var_1fdf316c = getdvarfloat( #"hash_4bbc02727c5ebc00", 30 );
             var_a7796a79 = getdvarfloat( #"hash_7d04949e6e62380e", 60 );
-            mindamage = getdvarfloat( #"hash_52512d74a3eaae58", 30 );
-            maxdamage = getdvarfloat( #"hash_5702452fcb66d0de", 150 );
+            mindamage = getdvarfloat( #"cargo_truck_min_damage", 30 );
+            maxdamage = getdvarfloat( #"cargo_truck_max_damage", 150 );
             var_1831f049 = 2;
             var_a1805d6e = 0.9;
             break;
         case #"player_fav":
             var_1fdf316c = getdvarfloat( #"hash_21e0e2bc88bf5eee", 30 );
             var_a7796a79 = getdvarfloat( #"hash_7584662ee854d540", 60 );
-            mindamage = getdvarfloat( #"hash_435111f252ea9cfe", 40 );
-            maxdamage = getdvarfloat( #"hash_3a9f03cd0d3c6a98", 175 );
+            mindamage = getdvarfloat( #"arav_min_damage", 40 );
+            maxdamage = getdvarfloat( #"arav_max_damage", 175 );
             var_1831f049 = 2;
             var_a1805d6e = 0.9;
             break;
         case #"player_muscle":
             var_1fdf316c = getdvarfloat( #"hash_46ffe025ec0e29a3", 30 );
             var_a7796a79 = getdvarfloat( #"hash_1cf739db893af58d", 60 );
-            mindamage = getdvarfloat( #"hash_75a62632d4824747", 40 );
-            maxdamage = getdvarfloat( #"hash_46431eb054c6591", 175 );
+            mindamage = getdvarfloat( #"muscle_min_damage", 40 );
+            maxdamage = getdvarfloat( #"muscle_max_damage", 175 );
             var_1831f049 = 2;
             var_a1805d6e = 0.9;
             break;
         case #"player_suv":
             var_1fdf316c = getdvarfloat( #"hash_31bcf3ba672e011a", 30 );
             var_a7796a79 = getdvarfloat( #"hash_6205883210ae5f44", 60 );
-            mindamage = getdvarfloat( #"hash_299248d6a8cd7aba", 40 );
-            maxdamage = getdvarfloat( #"hash_64fad23d050b27dc", 175 );
+            mindamage = getdvarfloat( #"suv_min_damage", 40 );
+            maxdamage = getdvarfloat( #"suv_max_damage", 175 );
             var_1831f049 = 2;
             var_a1805d6e = 0.9;
             break;
         case #"player_tank":
             var_1fdf316c = getdvarfloat( #"hash_c5ad19a486bd60a", 30 );
             var_a7796a79 = getdvarfloat( #"hash_4f511bbff314c254", 60 );
-            mindamage = getdvarfloat( #"hash_11000a506eed148a", 0 );
-            maxdamage = getdvarfloat( #"hash_35d85e4c7595b48c", 0 );
+            mindamage = getdvarfloat( #"tank_min_damage", 0 );
+            maxdamage = getdvarfloat( #"tank_max_damage", 0 );
             var_1831f049 = 2;
             var_a1805d6e = 0.9;
             break;
         case #"player_motorcycle":
             var_1fdf316c = getdvarfloat( #"hash_2b5bc92dcb8ebcf9", 30 );
             var_a7796a79 = getdvarfloat( #"hash_201167604d4407b7", 60 );
-            mindamage = getdvarfloat( #"hash_1ff8cff709af67d", 20 );
-            maxdamage = getdvarfloat( #"hash_6c1be10e4f16becb", 100 );
+            mindamage = getdvarfloat( #"moto_min_damage", 20 );
+            maxdamage = getdvarfloat( #"moto_max_damage", 100 );
             var_1831f049 = 2;
             var_a1805d6e = 0.9;
             break;
@@ -619,7 +619,7 @@ function function_69c9e9a0()
     
     while ( true )
     {
-        waitresult = level waittill( #"hash_4aced1739d6627a2" );
+        waitresult = level waittill( #"veh_outofworld" );
         vehicle = waitresult.vehicle;
         
         if ( !isvehicle( vehicle ) )
@@ -728,7 +728,7 @@ function function_3054737a( vehicle )
         return;
     }
     
-    vehicle.session = { #vehicle:vehicle.vehicletype, #var_2dbaf8ca:vehicle.origin[ 0 ], #var_1ff15d37:vehicle.origin[ 1 ], #var_16f7d5d0:vehicle.origin[ 0 ], #var_4ba3155:vehicle.origin[ 1 ], #vehicle_id:vehicle.trackingindex, #start_time:gettime(), #end_time:0, #start_health:vehicle.health, #end_health:vehicle.health, #first_player:int( self getxuid( 1 ) ), #max_occupants:1, #var_309ad81f:0, #var_5ba0df6e:0, #var_770fd50d:0, #var_33f48e5a:0, #var_ecd1fe60:0, #vehicle_kills:0, #passenger_damage_taken:0, #var_45bf3627:0, #raw\russian\sound\vox\scripted\isa\vox_isa_encourage_lost_01.SN65.xenon.snd:0, #passenger_kills:0 };
+    vehicle.session = { #vehicle:vehicle.vehicletype, #start_pos_x:vehicle.origin[ 0 ], #start_pos_y:vehicle.origin[ 1 ], #end_pos_x:vehicle.origin[ 0 ], #end_pos_y:vehicle.origin[ 1 ], #vehicle_id:vehicle.trackingindex, #start_time:gettime(), #end_time:0, #start_health:vehicle.health, #end_health:vehicle.health, #first_player:int( self getxuid( 1 ) ), #max_occupants:1, #var_309ad81f:0, #var_5ba0df6e:0, #var_770fd50d:0, #var_33f48e5a:0, #var_ecd1fe60:0, #vehicle_kills:0, #passenger_damage_taken:0, #var_45bf3627:0, #raw\russian\sound\vox\scripted\isa\vox_isa_encourage_lost_01.SN65.xenon.snd:0, #passenger_kills:0 };
 }
 
 // Namespace wz_vehicle/vehicle
@@ -746,8 +746,8 @@ function function_2d00376( vehicle )
     {
         vehicle.session.end_time = function_f8d53445();
         vehicle.session.end_health = int( max( 0, vehicle.health ) );
-        vehicle.session.var_16f7d5d0 = vehicle.origin[ 0 ];
-        vehicle.session.var_4ba3155 = vehicle.origin[ 1 ];
+        vehicle.session.end_pos_x = vehicle.origin[ 0 ];
+        vehicle.session.end_pos_y = vehicle.origin[ 1 ];
         function_92d1707f( #"hash_4fd470ea26ade803", vehicle.session );
         vehicle.session = undefined;
     }
@@ -1266,7 +1266,7 @@ function event_handler[exit_vehicle] codecallback_vehicleexit( eventstruct )
         return;
     }
     
-    vehicle function_6a65d095();
+    vehicle disable_trophy_system();
     
     if ( isdefined( vehicle.var_97f1b32a ) && vehicle.var_97f1b32a )
     {
@@ -1347,7 +1347,7 @@ function event_handler[change_seat] function_2aa4e6cf( eventstruct )
             
             if ( isdefined( vehicle.var_4b0fd2dc ) && vehicle.var_4b0fd2dc )
             {
-                vehicle function_6a65d095();
+                vehicle disable_trophy_system();
             }
             
             vehicle notify( #"hash_2d45f3f009f1b3b3" );
@@ -1516,7 +1516,7 @@ function private function_f6bb77f1( params )
             return;
         }
         
-        self function_6a65d095();
+        self disable_trophy_system();
     }
 }
 
@@ -1966,7 +1966,7 @@ function private function_da0c353b( player, eventstruct )
     
     if ( eventstruct.seat_index === 0 )
     {
-        if ( isdefined( getgametypesetting( #"hash_7695bdd7b20cdda" ) ) ? getgametypesetting( #"hash_7695bdd7b20cdda" ) : 0 )
+        if ( isdefined( getgametypesetting( #"wzenablereplacercarswap" ) ) ? getgametypesetting( #"wzenablereplacercarswap" ) : 0 )
         {
             if ( isdefined( self.var_8d120ff ) && self.var_8d120ff )
             {
@@ -2667,7 +2667,7 @@ function private function_b0dd571a()
 {
     self endon( #"death" );
     self waittill( #"enter_vehicle" );
-    offset = getdvarint( #"hash_626d3139a5fd29ca", -70 );
+    offset = getdvarint( #"scr_helicopter_origin_offset", -70 );
     
     while ( true )
     {
@@ -3915,8 +3915,8 @@ function private function_4885ce1( params )
         
         var_1fdf316c = getdvarfloat( #"hash_54a2c2e9555f2e5e", 35 );
         var_a7796a79 = getdvarfloat( #"hash_70c1f7e69c442750", 140 );
-        mindamage = getdvarfloat( #"hash_42dae76d8ea47a8e", 75 );
-        maxdamage = getdvarfloat( #"hash_55d628640db7ed48", 3000 );
+        mindamage = getdvarfloat( #"heli_min_damage", 75 );
+        maxdamage = getdvarfloat( #"heli_max_damage", 3000 );
         speed = self getspeedmph();
         
         if ( isdefined( params.entity ) && isvehicle( params.entity ) )
@@ -4324,7 +4324,7 @@ function function_ee42a973( player )
 function function_33a25ecf( owner )
 {
     owner endon( #"disconnect" );
-    self endon( #"death", #"hash_23b61069705a7782" );
+    self endon( #"death", #"disable_trophy_system" );
     
     while ( true )
     {
@@ -4445,11 +4445,11 @@ function projectile_explode( projectile )
 // Params 0
 // Checksum 0x535bdfe5, Offset: 0xce38
 // Size: 0x56
-function function_6a65d095()
+function disable_trophy_system()
 {
     if ( isdefined( self.var_4b0fd2dc ) && self.var_4b0fd2dc )
     {
-        self notify( #"hash_23b61069705a7782" );
+        self notify( #"disable_trophy_system" );
         self stoploopsound( 0.25 );
         self.var_4b0fd2dc = undefined;
     }

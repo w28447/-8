@@ -9,7 +9,7 @@ CoD.vhud_HellstormCenterMeter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local Meter = LUI.UIImage.new( 0, 0, 0, 824, 0, 0, 0, 824 )
 	Meter:setImage( RegisterImage( 0x1D295E568DDF30C ) )
-	Meter:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9AD9C230B10C37 ) )
+	Meter:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_add" ) )
 	Meter:setShaderVector( 0, 1, 0, 0, 0 )
 	Meter:setShaderVector( 1, 0.5, 0, 0, 0 )
 	Meter:setShaderVector( 2, 0.5, 0, 0, 0 )

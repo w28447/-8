@@ -20,7 +20,7 @@ CoD[0xA6A41AD9A5A2C18].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.gunner = gunner
 	
 	local bulletFall1 = LUI.UIImage.new( 0, 0, 122.5, 506.5, 0, 0, 0, 240 )
-	bulletFall1:setImage( RegisterImage( 0xE668E2E1604875E ) )
+	bulletFall1:setImage( RegisterImage( "uie_ui_icon_callingcards_wz_darkops_master_bulletdrop1" ) )
 	bulletFall1:setMaterial( LUI.UIImage.GetCachedMaterial( 0x73D72BCD14C2AAD ) )
 	bulletFall1:setShaderVector( 0, 1, 1, 0, 0 )
 	bulletFall1:setShaderVector( 1, 0, -0.25, 0, 0 )
@@ -28,7 +28,7 @@ CoD[0xA6A41AD9A5A2C18].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.bulletFall1 = bulletFall1
 	
 	local bulletFall2 = LUI.UIImage.new( 0, 0, 701, 1085, 0, 0, 0, 240 )
-	bulletFall2:setImage( RegisterImage( 0xE668D2E160485AB ) )
+	bulletFall2:setImage( RegisterImage( "uie_ui_icon_callingcards_wz_darkops_master_bulletdrop2" ) )
 	bulletFall2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x73D72BCD14C2AAD ) )
 	bulletFall2:setShaderVector( 0, 1, 1, 0, 0 )
 	bulletFall2:setShaderVector( 1, 0, -0.25, 0, 0 )

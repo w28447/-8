@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_warriors_ajax",
+    "type": "#tag",
+    "material": "#hash_69ade482789e4210",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_626f717d17a08170",
+        "icon": "image#loot_ui_icon_tags_warriors_ajax",
+        "isdefault": 0
+    }
+}

@@ -1428,27 +1428,27 @@ function event_handler[weapon_change] function_6846a2b7( eventstruct )
     self callback( #"weapon_change", eventstruct );
 }
 
-// Namespace callback/event_41480c76
+// Namespace callback/offhand_weapon_change
 // Params 1, eflags: 0x40
 // Checksum 0xad15e02c, Offset: 0x3268
 // Size: 0x6c
-function event_handler[event_41480c76] function_c33f3471( eventstruct )
+function event_handler[offhand_weapon_change] function_c33f3471( eventstruct )
 {
     if ( self function_21c0fa55() )
     {
-        level callback( #"hash_4152cf6a61494581", eventstruct );
+        level callback( #"offhand_weapon_change", eventstruct );
     }
     
-    self callback( #"hash_4152cf6a61494581", eventstruct );
+    self callback( #"offhand_weapon_change", eventstruct );
 }
 
-// Namespace callback/event_6e84b1b1
+// Namespace callback/localclientusingoffhand
 // Params 1, eflags: 0x40
 // Checksum 0x9ecc4447, Offset: 0x32e0
 // Size: 0x2c
-function event_handler[event_6e84b1b1] function_ff9acfac( eventstruct )
+function event_handler[localclientusingoffhand] function_ff9acfac( eventstruct )
 {
-    level callback( #"hash_2fc4cfecaed47583", eventstruct );
+    level callback( #"localclientusingoffhand", eventstruct );
 }
 
 // Namespace callback/event_eae361ae

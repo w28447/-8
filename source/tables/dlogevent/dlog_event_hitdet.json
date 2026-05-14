@@ -46,7 +46,7 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT32"
                     },
@@ -114,12 +114,12 @@
             "type": "FLOAT"
         },
         {
-            "name": "#hash_aae124f4ed1846e",
+            "name": "#dir_offset",
             "scrName": "#hash_bb7491ed",
             "type": "FLOAT"
         },
         {
-            "name": "#hash_150b59790cfad3fa",
+            "name": "#segment_end_offset",
             "scrName": "#hash_9acef332",
             "type": "FLOAT"
         },
@@ -129,7 +129,7 @@
             "type": "BOOL"
         },
         {
-            "name": "#hash_1f6cb274898a232a",
+            "name": "#source_offset",
             "scrName": "#hash_a741ba69",
             "type": "FLOAT"
         },
@@ -144,12 +144,12 @@
             "type": "FLOAT"
         },
         {
-            "name": "#hash_2a1e95e3a58c334c",
+            "name": "#enemy_in_vehicle",
             "scrName": "#hash_2646cfaa",
             "type": "BOOL"
         },
         {
-            "name": "#hash_2b9d070619bac7c1",
+            "name": "#was_rewound",
             "scrName": "#hash_2a2224e2",
             "type": "BOOL"
         },
@@ -186,7 +186,7 @@
             "type": "BOOL"
         },
         {
-            "name": "#hash_4aac85027c3a650c",
+            "name": "#matched_server_bullet",
             "scrName": "#hash_a9c49110",
             "type": "BOOL"
         },
@@ -206,7 +206,7 @@
             "type": "FLOAT"
         },
         {
-            "name": "#hash_62d1da867bb2ff57",
+            "name": "#attacker_ping",
             "scrName": "#hash_f7adc936",
             "type": "INT32"
         },
@@ -217,17 +217,17 @@
             "s111u20": true
         },
         {
-            "name": "#hash_6ca68a826d8d5015",
+            "name": "#segment_start_offset",
             "scrName": "#hash_85f8e54b",
             "type": "FLOAT"
         },
         {
-            "name": "#hash_798dacddc7e656b3",
+            "name": "#anim_rewound",
             "scrName": "#hash_13738ea7",
             "type": "BOOL"
         },
         {
-            "name": "#hash_79ec1ef18401690b",
+            "name": "#extrapolating",
             "scrName": "#hash_e1f6b17d",
             "type": "BOOL"
         }

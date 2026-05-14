@@ -308,10 +308,10 @@ function init_spawns()
 // Size: 0x1a4
 function function_8dec32e2()
 {
-    zm_transform::function_cfca77a7( zm_ai_catalyst::function_bbb2bab5( 1 ), #"hash_7c89b1397a38e3ad", &zm_ai_utility::function_db610082, 0, undefined, &function_724b3e30, "aib_vign_zm_zod_catalyst_corrosive_spawn_pre_split", "aib_vign_zm_zod_catalyst_corrosive_spawn_post_split" );
-    zm_transform::function_cfca77a7( zm_ai_catalyst::function_bbb2bab5( 4 ), #"hash_7c89ae397a38de94", &zm_ai_utility::function_db610082, 0, undefined, &function_724b3e30, "aib_vign_zm_zod_catalyst_water_spawn_pre_split", "aib_vign_zm_zod_catalyst_water_spawn_post_split" );
-    zm_transform::function_cfca77a7( zm_ai_catalyst::function_bbb2bab5( 3 ), #"hash_7c89af397a38e047", &zm_ai_utility::function_db610082, 0, undefined, &function_724b3e30, "aib_vign_zm_zod_catalyst_electric_spawn_pre_split", "aib_vign_zm_zod_catalyst_electric_spawn_post_split" );
-    zm_transform::function_cfca77a7( zm_ai_catalyst::function_bbb2bab5( 2 ), #"hash_7c89ac397a38db2e", &zm_ai_utility::function_db610082, 0, undefined, &function_724b3e30, "aib_vign_zm_zod_catalyst_plasma_spawn_pre_split", "aib_vign_zm_zod_catalyst_plasma_spawn_post_split" );
+    zm_transform::function_cfca77a7( zm_ai_catalyst::function_bbb2bab5( 1 ), #"boss_fight_transform1", &zm_ai_utility::function_db610082, 0, undefined, &function_724b3e30, "aib_vign_zm_zod_catalyst_corrosive_spawn_pre_split", "aib_vign_zm_zod_catalyst_corrosive_spawn_post_split" );
+    zm_transform::function_cfca77a7( zm_ai_catalyst::function_bbb2bab5( 4 ), #"boss_fight_transform2", &zm_ai_utility::function_db610082, 0, undefined, &function_724b3e30, "aib_vign_zm_zod_catalyst_water_spawn_pre_split", "aib_vign_zm_zod_catalyst_water_spawn_post_split" );
+    zm_transform::function_cfca77a7( zm_ai_catalyst::function_bbb2bab5( 3 ), #"boss_fight_transform3", &zm_ai_utility::function_db610082, 0, undefined, &function_724b3e30, "aib_vign_zm_zod_catalyst_electric_spawn_pre_split", "aib_vign_zm_zod_catalyst_electric_spawn_post_split" );
+    zm_transform::function_cfca77a7( zm_ai_catalyst::function_bbb2bab5( 2 ), #"boss_fight_transform4", &zm_ai_utility::function_db610082, 0, undefined, &function_724b3e30, "aib_vign_zm_zod_catalyst_plasma_spawn_pre_split", "aib_vign_zm_zod_catalyst_plasma_spawn_post_split" );
 }
 
 // Namespace mansion_boss_ww/zm_mansion_boss_ww
@@ -652,14 +652,14 @@ function boss_teleport_players( var_a88dacea )
     
     if ( var_a88dacea )
     {
-        level zm_vo::function_3c173d37();
+        level zm_vo::vo_stop_all();
         level zm_audio::sndvoxoverride( 1 );
         wait 1.3;
         level util::delay( 5.9, undefined, &function_ceb48615 );
         var_45e1b44b = level.s_boss.a_s_align[ 3 ];
         var_45e1b44b thread scene::play( #"aib_t8_zm_mnsn_hallion_intro" );
         level thread function_52818528();
-        level notify( #"hash_4b195fabca6f5aaf" );
+        level notify( #"boss_intro_started" );
         util::wait_network_frame();
         var_45e1b44b.scene_ents[ #"fakeactor 1" ] thread function_8d29523e( #"boss_visible" );
         var_45e1b44b.scene_ents[ #"fakeactor 1" ] thread function_8d29523e( #"boss_invisible" );
@@ -726,7 +726,7 @@ function function_528abede( s_loc, var_79bdd0d5 )
     {
         self val::set( "bossfight_intro", "freezecontrols", 1 );
         self val::set( "bossfight_intro", "disable_weapons", 1 );
-        level waittill( #"hash_4b195fabca6f5aaf" );
+        level waittill( #"boss_intro_started" );
         self thread lui::screen_fade_in( 0.1 );
         level waittill( #"boss_intro_done" );
         self val::reset( "bossfight_intro", "freezecontrols" );
@@ -1025,7 +1025,7 @@ function function_738f7574( n_stage )
         if ( var_3b12bc77 )
         {
             level thread function_f433c7f5( n_stage );
-            level waittill( #"hash_3d52ec26acedf741" );
+            level waittill( #"boss_attack_complete" );
         }
         
         if ( var_de4b911c )
@@ -1033,13 +1033,13 @@ function function_738f7574( n_stage )
             if ( level flag::get( #"hash_f4dfa99c5e22bc6" ) )
             {
                 level thread function_fdd04f47( n_stage );
-                level waittill( #"hash_3d52ec26acedf741" );
+                level waittill( #"boss_attack_complete" );
             }
             else if ( !var_3b12bc77 )
             {
                 level waittill( #"hash_f4dfa99c5e22bc6" );
                 level thread function_fdd04f47( n_stage );
-                level waittill( #"hash_3d52ec26acedf741" );
+                level waittill( #"boss_attack_complete" );
             }
         }
         
@@ -1259,7 +1259,7 @@ function function_f433c7f5( n_stage )
     }
     
     wait 2;
-    level notify( #"hash_3d52ec26acedf741" );
+    level notify( #"boss_attack_complete" );
 }
 
 // Namespace mansion_boss_ww/zm_mansion_boss_ww
@@ -1279,7 +1279,7 @@ function function_7bcf3048()
 // Size: 0x368
 function function_c1b6e914()
 {
-    level endon( #"hash_4be216e72d412c40", #"hash_3d52ec26acedf741", #"hash_38f29f9cb03586ea", #"end_game", #"intermission" );
+    level endon( #"hash_4be216e72d412c40", #"boss_attack_complete", #"hash_38f29f9cb03586ea", #"end_game", #"intermission" );
     self endon( #"death" );
     
     while ( true )
@@ -1363,7 +1363,7 @@ function function_367de434()
 // Size: 0x2dc
 function function_cc0b32f8( n_stage )
 {
-    level endon( #"hash_3d52ec26acedf741", #"end_game", #"intermission" );
+    level endon( #"boss_attack_complete", #"end_game", #"intermission" );
     level waittill( #"boss_captured" );
     level notify( #"hash_4be216e72d412c40" );
     
@@ -1433,7 +1433,7 @@ function function_13552544()
 // Size: 0x2fc
 function function_3aa2bc7a( v_blast_origin )
 {
-    level endon( #"hash_3d52ec26acedf741", #"end_game", #"intermission" );
+    level endon( #"boss_attack_complete", #"end_game", #"intermission" );
     a_players = util::get_active_players();
     a_players = arraysortclosest( a_players, v_blast_origin, undefined, 0, 200 );
     
@@ -1526,7 +1526,7 @@ function function_1a240284( n_stage, var_2100633b )
     util::wait_network_frame();
     self.origin = ( 0, 0, 0 );
     function_f25a51e4( 0 );
-    level notify( #"hash_3d52ec26acedf741" );
+    level notify( #"boss_attack_complete" );
     
     if ( var_2100633b )
     {
@@ -1827,7 +1827,7 @@ function function_fdd04f47( n_stage )
     var_45e1b44b thread function_677a2503();
     var_45e1b44b.scene_ents[ #"fakeactor 1" ] function_d84758c();
     level flag::clear( #"hash_f4dfa99c5e22bc6" );
-    level notify( #"hash_3d52ec26acedf741" );
+    level notify( #"boss_attack_complete" );
 }
 
 // Namespace mansion_boss_ww/zm_mansion_boss_ww
@@ -2323,7 +2323,7 @@ function function_ec25f7c2()
         util::wait_network_frame();
     }
     
-    level waittill( #"hash_3d52ec26acedf741" );
+    level waittill( #"boss_attack_complete" );
     self function_ccd8387e( 0 );
     level flag::set( #"hash_eed1544f10c5bb3" );
 }
@@ -2492,7 +2492,7 @@ function function_f5b2d086()
 {
     level endon( #"hash_38f29f9cb03586ea", #"spawn_zombies", #"hash_71fd67248b9a37ca", #"end_game", #"intermission" );
     wait 10;
-    var_e8ebec1d = array( #"hash_7c89b1397a38e3ad", #"hash_7c89ae397a38de94", #"hash_7c89af397a38e047", #"hash_7c89ac397a38db2e" );
+    var_e8ebec1d = array( #"boss_fight_transform1", #"boss_fight_transform2", #"boss_fight_transform3", #"boss_fight_transform4" );
     level.var_8a64ef3a = 0;
     var_ffd2fe87 = 4 + level.var_f3c4bd00;
     
@@ -2776,7 +2776,7 @@ function function_8f28b521()
             case #"gear_up":
                 level thread gear_up();
                 return 1;
-            case #"hash_1270cae114bc8c94":
+            case #"boss_start_bf":
                 level thread function_e7520565();
                 return 1;
             case #"hash_3426f6de3d18b749":
@@ -2815,7 +2815,7 @@ function function_8f28b521()
             case #"hash_5dad3801740fa24a":
                 level notify( #"hash_38f29f9cb03586ea" );
                 return 1;
-            case #"hash_456d8c20be179a97":
+            case #"boss_play_outro":
                 level thread function_abdd578e();
                 return 1;
         }
@@ -2972,7 +2972,7 @@ function function_8f28b521()
             level.var_80d31f80 = 1;
         }
         
-        level zm_vo::function_3c173d37();
+        level zm_vo::vo_stop_all();
         level zm_audio::sndvoxoverride( 1 );
         var_45e1b44b = level.s_boss.a_s_align[ 3 ];
         var_45e1b44b thread scene::play( #"aib_t8_zm_mnsn_hallion_intro" );

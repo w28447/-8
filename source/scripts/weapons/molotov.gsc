@@ -33,7 +33,7 @@ function init_shared()
     level.var_e6a4f161 = params.var_18d16a6b;
     level.var_5d450296 = params.setype;
     level.var_e8a6b3ee = [];
-    level._effect[ #"hash_31b6cc906e6d0ae0" ] = #"hash_6b74a0816b45e3f8";
+    level._effect[ #"molotov_fire_light_fx" ] = #"hash_6b74a0816b45e3f8";
     weaponobjects::function_e6400478( #"eq_molotov", &function_853f8cff, 1 );
 }
 
@@ -424,9 +424,9 @@ function function_8a03d3f3( owner, impactpos, startpos, normal, multiplier, rota
     locations[ #"tallfire" ] = [];
     locations[ #"smallfire" ] = [];
     locations[ #"steam" ] = [];
-    fxcount = customsettings.var_b650dc43;
+    fxcount = customsettings.molotov_fire_count;
     var_33ad9452 = isdefined( customsettings.var_bc24d9d3 ) ? customsettings.var_bc24d9d3 : 0;
-    fxcount = int( math::clamp( fxcount * multiplier + 6, 6, customsettings.var_b650dc43 ) );
+    fxcount = int( math::clamp( fxcount * multiplier + 6, 6, customsettings.molotov_fire_count ) );
     
     if ( multiplier < 0.04 )
     {
@@ -541,7 +541,7 @@ function function_8a03d3f3( owner, impactpos, startpos, normal, multiplier, rota
     
     if ( !is_under_water( var_6b23e1c9 ) )
     {
-        playfx( level._effect[ #"hash_31b6cc906e6d0ae0" ], var_6b23e1c9, forward, normal, 0, team );
+        playfx( level._effect[ #"molotov_fire_light_fx" ], var_6b23e1c9, forward, normal, 0, team );
         
         if ( !isdefined( wallpos ) )
         {
@@ -554,9 +554,9 @@ function function_8a03d3f3( owner, impactpos, startpos, normal, multiplier, rota
         return;
     }
     
-    if ( !isdefined( level.var_801fd65e ) )
+    if ( !isdefined( level.molotov_count ) )
     {
-        level.var_801fd65e = 0;
+        level.molotov_count = 0;
     }
     
     if ( !isdefined( level.var_a88ac760 ) )
@@ -673,7 +673,7 @@ function damageeffectarea( owner, position, killcament, normal, weapon, customse
         
         if ( isdefined( firesound ) )
         {
-            firesound playloopsound( #"hash_d2a83cecbfbd9e2" );
+            firesound playloopsound( #"wpn_molotov_fire" );
         }
         
         level thread influencers::create_grenade_influencers( isdefined( owner ) ? owner.team : undefined, weapon, fireeffectarea );
@@ -735,7 +735,7 @@ function damageeffectarea( owner, position, killcament, normal, weapon, customse
             }
         }
         
-        wait customsettings.var_90bd7d92;
+        wait customsettings.molotov_damage_interval;
     }
     
     arrayremovevalue( self.var_ebf0b1c9, undefined );
@@ -1093,7 +1093,7 @@ function damageinfirearea( origin, killcament, trace, position, weapon, customse
     self endon( #"disconnect", #"death" );
     timer = 0;
     
-    if ( candofiredamage( killcament, self, customsettings.var_90bd7d92 ) )
+    if ( candofiredamage( killcament, self, customsettings.molotov_damage_interval ) )
     {
         /#
             level.molotov_debug = getdvarint( #"scr_molotov_debug", 0 );

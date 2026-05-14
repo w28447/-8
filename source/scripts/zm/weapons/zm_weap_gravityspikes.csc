@@ -34,7 +34,7 @@ function __init__()
     level._effect[ #"gravityspikes_trap_loop" ] = #"hash_7df2dbfda69b0792";
     level._effect[ #"gravityspikes_trap_end" ] = #"hash_70f0169b86a98ce1";
     level._effect[ #"gravityspikes_shockwave" ] = #"hash_74ea4245b0e1646d";
-    level._effect[ #"hash_2c2dcd840a548ef2" ] = #"hash_77964e1811bb9a67";
+    level._effect[ #"gravityspikes_shockwave_left" ] = #"hash_77964e1811bb9a67";
     level._effect[ #"hash_1758af99ff212148" ] = #"hash_74f12e45b0e7611f";
     level._effect[ #"gravity_trap_spike_spark" ] = #"hash_34fb31ef6c57f845";
     level._effect[ #"zombie_sparky" ] = #"hash_751b9a4bf53bfb69";
@@ -479,7 +479,7 @@ function gravity_shock_wave_fx( localclientnum, oldval, newval, bnewent, binitia
         if ( self zm_utility::is_first_person( localclientnum ) )
         {
             self.var_c145bf0d[ localclientnum ] = playviewmodelfx( localclientnum, level._effect[ #"gravityspikes_shockwave" ], "tag_weapon" );
-            self.var_faf5c3df[ localclientnum ] = playviewmodelfx( localclientnum, level._effect[ #"hash_2c2dcd840a548ef2" ], "tag_weapon_le" );
+            self.var_faf5c3df[ localclientnum ] = playviewmodelfx( localclientnum, level._effect[ #"gravityspikes_shockwave_left" ], "tag_weapon_le" );
         }
         else
         {

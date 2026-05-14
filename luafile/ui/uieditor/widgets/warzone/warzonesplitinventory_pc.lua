@@ -154,8 +154,8 @@ CoD.WarzoneSplitInventory_PC.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 			modelName = "canDecrement"
 		} )
 	end, false )
-	RemoveButton.Image:setImage( RegisterImage( 0x7746A3CDCE95A2B ) )
-	RemoveButton.add:setImage( RegisterImage( 0x7746A3CDCE95A2B ) )
+	RemoveButton.Image:setImage( RegisterImage( "uie_ui_menu_common_remove_minus" ) )
+	RemoveButton.add:setImage( RegisterImage( "uie_ui_menu_common_remove_minus" ) )
 	RemoveButton:registerEventHandler( "gain_focus", function ( element, event )
 		local f14_local0 = nil
 		if element.gainFocus then

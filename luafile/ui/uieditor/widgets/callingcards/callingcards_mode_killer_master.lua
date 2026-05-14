@@ -32,7 +32,7 @@ CoD[0x323BABA7CF22289].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local boatHighlight = LUI.UIImage.new( 0, 0, 198, 574, 0, 0, 90, 240 )
 	boatHighlight:setRGB( 0.37, 0.06, 0.06 )
-	boatHighlight:setImage( RegisterImage( 0x84A816E3DC5638B ) )
+	boatHighlight:setImage( RegisterImage( "uie_boat_highlights" ) )
 	self:addElement( boatHighlight )
 	self.boatHighlight = boatHighlight
 	
@@ -42,7 +42,7 @@ CoD[0x323BABA7CF22289].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.skelly = skelly
 	
 	local lightOverlay = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	lightOverlay:setImage( RegisterImage( 0x62FACC6015838B4 ) )
+	lightOverlay:setImage( RegisterImage( "uie_skelly_highlight" ) )
 	self:addElement( lightOverlay )
 	self.lightOverlay = lightOverlay
 	

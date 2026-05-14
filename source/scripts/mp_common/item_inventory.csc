@@ -1442,13 +1442,13 @@ function private function_1a99656a( localclientnum, inventoryitem, networkid, it
         setuimodelvalue( createuimodel( inventoryitem.itemuimodel, "armorMax" ), armormax );
         description = isdefined( item.itementry.description ) ? item.itementry.description : #"";
         
-        if ( getdvar( #"hash_4a5fd7d94cfc9dfd", 0 ) == 1 )
+        if ( getdvar( #"wz_mp_character_unlocks_outfits", 0 ) == 1 )
         {
             if ( isdefined( item.itementry.unlockableitemref ) )
             {
-                if ( isdefined( item.itementry.var_a51bc1f7 ) )
+                if ( isdefined( item.itementry.outfitunlockdescription ) )
                 {
-                    description = isdefined( item.itementry.var_a51bc1f7 ) ? item.itementry.var_a51bc1f7 : #"";
+                    description = isdefined( item.itementry.outfitunlockdescription ) ? item.itementry.outfitunlockdescription : #"";
                 }
             }
         }
@@ -3298,12 +3298,12 @@ function function_6231c19( params )
         networkid = item_world_util::function_970b8d86( self, var_a4250c2b );
         item = function_15d578f4( params.localclientnum, networkid );
         
-        if ( isdefined( item ) && isdefined( item.itementry ) && isdefined( item.itementry.var_340eac1f ) && item.itementry.var_340eac1f )
+        if ( isdefined( item ) && isdefined( item.itementry ) && isdefined( item.itementry.istacticalweapon ) && item.itementry.istacticalweapon )
         {
             setuimodelvalue( level.var_53cbbb33[ params.localclientnum ], 0 );
             setuimodelvalue( level.var_3a0390dd[ params.localclientnum ], 1 );
         }
-        else if ( isdefined( item ) && isdefined( item.itementry ) && isdefined( item.itementry.var_dc6c5d3b ) && item.itementry.var_dc6c5d3b )
+        else if ( isdefined( item ) && isdefined( item.itementry ) && isdefined( item.itementry.isoperatorweapon ) && item.itementry.isoperatorweapon )
         {
             setuimodelvalue( level.var_3a0390dd[ params.localclientnum ], 0 );
             setuimodelvalue( level.var_53cbbb33[ params.localclientnum ], 1 );
@@ -3491,22 +3491,22 @@ function function_b1136fc8( localclientnum, item )
         switch ( item.itementry.itemtype )
         {
             case #"weapon":
-                playsound( localclientnum, #"hash_67fed8a52accbb23", item.origin );
+                playsound( localclientnum, #"fly_drop_weapon", item.origin );
                 break;
             case #"ammo":
                 playsound( localclientnum, #"fly_drop_generic", item.origin );
                 break;
             case #"health":
-                playsound( localclientnum, #"hash_4d393a136d0df945", item.origin );
+                playsound( localclientnum, #"fly_drop_health", item.origin );
                 break;
             case #"equipment":
                 playsound( localclientnum, #"fly_drop_generic", item.origin );
                 break;
             case #"armor":
-                playsound( localclientnum, #"hash_6bd51d5a531ff32", item.origin );
+                playsound( localclientnum, #"fly_drop_armor", item.origin );
                 break;
             case #"backpack":
-                playsound( localclientnum, #"hash_60e9138ddc9660ed", item.origin );
+                playsound( localclientnum, #"fly_drop_backpack", item.origin );
                 break;
             case #"attachment":
                 playsound( localclientnum, #"fly_drop_generic", item.origin );
@@ -3541,13 +3541,13 @@ function function_31868137( localclientnum, item )
         switch ( item.itementry.itemtype )
         {
             case #"weapon":
-                playsound( localclientnum, #"hash_62fabedcce13774c", item.origin );
+                playsound( localclientnum, #"fly_pickup_weapon", item.origin );
                 break;
             case #"ammo":
                 playsound( localclientnum, #"fly_pickup_ammo", item.origin );
                 break;
             case #"health":
-                playsound( localclientnum, #"hash_7cb9f9cf7068ccee", item.origin );
+                playsound( localclientnum, #"fly_pickup_health", item.origin );
                 break;
             case #"equipment":
                 playsound( localclientnum, #"fly_pickup_generic", item.origin );
@@ -3556,10 +3556,10 @@ function function_31868137( localclientnum, item )
                 playsound( localclientnum, #"fly_pickup_armor", item.origin );
                 break;
             case #"backpack":
-                playsound( localclientnum, #"hash_69949bb7db9ef21e", item.origin );
+                playsound( localclientnum, #"fly_pickup_backpack", item.origin );
                 break;
             case #"attachment":
-                playsound( localclientnum, #"hash_48ae9b1190e79fc5", item.origin );
+                playsound( localclientnum, #"fly_pickup_attachment", item.origin );
                 break;
             case #"quest":
                 playsound( localclientnum, #"hash_5738a0fcb2e4efca", item.origin );

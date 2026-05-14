@@ -5,21 +5,21 @@
             "value": "0"
         },
         {
-            "label": "localized17#hash_1b6bc5ccab0bdee1",
+            "label": "localized17#menu/colorblind_deuteranopia",
             "value": "1"
         },
         {
-            "label": "localized17#hash_5c699d4cbbfef34d",
+            "label": "localized17#menu/colorblind_protanopia",
             "value": "2"
         },
         {
-            "label": "localized17#hash_4d464ae076b53d33",
+            "label": "localized17#menu/colorblind_tritanopia",
             "value": "3"
         }
     ],
     "hash_dfedf08e": 0,
     "categoryindex": 0,
-    "description": "localized17#hash_6d45a212046b2873",
+    "description": "localized17#menu/colorblind_mode_desc",
     "menu/on": "localized17#menu/on",
     "hash_10e01ad5": 1,
     "iscategory": 0,
@@ -39,7 +39,7 @@
     "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "colorblind_mode",
-    "displayname": "localized17#hash_2692617b8b2392d9",
+    "displayname": "localized17#menu/colorblind_mode",
     "rangestartvalue": 0,
     "isdisabled": 0,
     "hash_d6897f56": 0,

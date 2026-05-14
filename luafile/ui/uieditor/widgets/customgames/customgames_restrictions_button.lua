@@ -131,7 +131,7 @@ CoD.CustomGames_Restrictions_Button.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	TopBarFocus = LUI.UIImage.new( 0, 1, -11, 11, 0, 0, -13, -7 )
 	TopBarFocus:setAlpha( 0 )
-	TopBarFocus:setImage( RegisterImage( 0x7E8B272A3927DAB ) )
+	TopBarFocus:setImage( RegisterImage( "uie_ui_menu_cac_primary_button_top_bar_focused" ) )
 	TopBarFocus:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TopBarFocus )
 	self.TopBarFocus = TopBarFocus

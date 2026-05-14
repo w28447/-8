@@ -46,7 +46,7 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT32"
                     },
@@ -96,7 +96,7 @@
             "type": "INT32"
         },
         {
-            "name": "#hash_1a553941a735de81",
+            "name": "#lobby_main_mode",
             "scrName": "#hash_f1d8be1",
             "type": "INT32",
             "len": 60

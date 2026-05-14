@@ -165,7 +165,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_115556efd1526bf8",
+                    "name": "#ui_showwzaar",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -508,7 +508,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_115556efd1526bf8",
+                    "name": "#ui_showwzaar",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -986,7 +986,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_115556efd1526bf8",
+                    "name": "#ui_showwzaar",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -1239,7 +1239,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_115556efd1526bf8",
+                    "name": "#ui_showwzaar",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -1492,7 +1492,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_115556efd1526bf8",
+                    "name": "#ui_showwzaar",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -1745,7 +1745,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_115556efd1526bf8",
+                    "name": "#ui_showwzaar",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -1857,7 +1857,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_115556efd1526bf8",
+                    "name": "#ui_showwzaar",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 7,

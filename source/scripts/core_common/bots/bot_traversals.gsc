@@ -73,7 +73,7 @@ function cancel()
 // Size: 0xbc
 function fallback_traversal( endpos )
 {
-    self endon( #"death", #"hash_a729d7d4c6847f6", #"hash_37fc5d1ffce4acaf" );
+    self endon( #"death", #"hash_a729d7d4c6847f6", #"bot_traversal_timeout" );
     self endoncallback( &release_control, #"entering_last_stand", #"new_shot" );
     level endon( #"game_ended" );
     self teleport( endpos, "Legacy fallback" );
@@ -106,7 +106,7 @@ function function_c3452ef9( params )
 // Size: 0x41c
 function volume_traversal( params )
 {
-    self endon( #"death", #"hash_a729d7d4c6847f6", #"hash_37fc5d1ffce4acaf" );
+    self endon( #"death", #"hash_a729d7d4c6847f6", #"bot_traversal_timeout" );
     self endoncallback( &release_control, #"entering_last_stand", #"new_shot" );
     level endon( #"game_ended" );
     self.bot.traversal = params;
@@ -222,7 +222,7 @@ function traversal_timeout( params )
         self botprinterror( "<dev string:x137>" + params.startnode.origin );
     #/
     
-    self notify( #"hash_37fc5d1ffce4acaf" );
+    self notify( #"bot_traversal_timeout" );
     self thread function_c3452ef9( params );
     self.bot.traversal = undefined;
     self botreleasemanualcontrol();

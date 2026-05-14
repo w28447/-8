@@ -12,7 +12,7 @@ CoD[0x6B87D0160EF7465].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local background = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	background:setImage( RegisterImage( 0x78650DB1D151D48 ) )
+	background:setImage( RegisterImage( "uie_hero_background" ) )
 	self:addElement( background )
 	self.background = background
 	

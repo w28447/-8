@@ -658,15 +658,15 @@ function private function_77d6d1fa( entity )
         entity.var_a0c65fba = ( 0, 0, 0 );
     }
     
-    var_9461d9d2 = anglestoforward( self.angles );
+    _attack_barrier_sprint = anglestoforward( self.angles );
     
     if ( isdefined( self.favoriteenemy ) )
     {
-        var_9461d9d2 = self.favoriteenemy.origin - self.origin;
+        _attack_barrier_sprint = self.favoriteenemy.origin - self.origin;
     }
     
-    entity.var_a0c65fba = var_9461d9d2;
-    var_afa8e25c = checknavmeshdirection( self.origin, var_9461d9d2, 1000, self getpathfindingradius() );
+    entity.var_a0c65fba = _attack_barrier_sprint;
+    var_afa8e25c = checknavmeshdirection( self.origin, _attack_barrier_sprint, 1000, self getpathfindingradius() );
     
     if ( isdefined( var_afa8e25c ) )
     {
@@ -674,7 +674,7 @@ function private function_77d6d1fa( entity )
         return;
     }
     
-    entity.var_952f8260 = entity.origin + var_9461d9d2;
+    entity.var_952f8260 = entity.origin + _attack_barrier_sprint;
 }
 
 // Namespace zm_ai_avogadro/zm_ai_avogadro
@@ -794,8 +794,8 @@ function private function_292adb83( entity, asmstatename )
     
     if ( result == 5 )
     {
-        var_9461d9d2 = entity.var_952f8260 - self.origin;
-        var_a4d89907 = vectordot( entity.var_a0c65fba, var_9461d9d2 );
+        _attack_barrier_sprint = entity.var_952f8260 - self.origin;
+        var_a4d89907 = vectordot( entity.var_a0c65fba, _attack_barrier_sprint );
         
         if ( var_a4d89907 < 0 || function_96e43661( entity ) )
         {

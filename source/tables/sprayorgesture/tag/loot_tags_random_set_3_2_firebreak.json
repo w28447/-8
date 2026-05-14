@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_random_set_3_2_firebreak",
+    "type": "#tag",
+    "material": "#hash_7e7280cd3150f2cd",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_1ce3289a9103af4",
+        "icon": "image#loot_ui_icon_tags_random_set_3_2_firebreak",
+        "isdefault": 0
+    }
+}

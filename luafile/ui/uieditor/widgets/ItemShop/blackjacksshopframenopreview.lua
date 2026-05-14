@@ -131,7 +131,7 @@ CoD.BlackJacksShopFrameNoPreview.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 		end
 	end, function ( f14_arg0, f14_arg1, f14_arg2 )
 		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f14_arg0, f14_arg2, "movieName" ) and IsGamepad( f14_arg2 ) then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x52FB29ED3A3CA79, nil, nil )
+			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0xC083113BC81F23F], "menu/preview", nil, nil )
 			return true
 		else
 			return false
@@ -150,7 +150,7 @@ CoD.BlackJacksShopFrameNoPreview.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 		end
 	end, function ( f16_arg0, f16_arg1, f16_arg2 )
 		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f16_arg0, f16_arg2, "movieName" ) and IsMouseOrKeyboard( f16_arg2 ) then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0xA86619565BE54DB], 0x52FB29ED3A3CA79, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0xA86619565BE54DB], "menu/preview", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
@@ -192,7 +192,7 @@ CoD.BlackJacksShopFrameNoPreview.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 			CoD.GridAndListUtility.UpdateDataSource( f21_local0, true, true, true )
 		end
 	end )
-	FeaturedSlot1:AddContextualMenuAction( f1_arg0, f1_arg1, 0x52FB29ED3A3CA79, function ( f22_arg0, f22_arg1, f22_arg2, f22_arg3 )
+	FeaturedSlot1:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/preview", function ( f22_arg0, f22_arg1, f22_arg2, f22_arg3 )
 		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f22_arg0, f22_arg2, "movieName" ) then
 			return function ( f23_arg0, f23_arg1, f23_arg2, f23_arg3 )
 				SetControllerModelValue( f23_arg2, "LootStreamProgress.playAnimation", false )
@@ -222,7 +222,7 @@ CoD.BlackJacksShopFrameNoPreview.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	FeaturedLabel = LUI.UIText.new( 0.5, 0.5, -845, -605, 0.5, 0.5, -388, -370 )
 	FeaturedLabel:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	FeaturedLabel:setText( LocalizeToUpperString( 0xF29BEFC80072FF5 ) )
+	FeaturedLabel:setText( LocalizeToUpperString( "menu/featured" ) )
 	FeaturedLabel:setTTF( "ttmussels_regular" )
 	FeaturedLabel:setLetterSpacing( 4 )
 	FeaturedLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -333,7 +333,7 @@ CoD.BlackJacksShopFrameNoPreview.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 		end
 	end, function ( f36_arg0, f36_arg1, f36_arg2 )
 		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f36_arg0, f36_arg2, "movieName" ) and IsGamepad( f36_arg2 ) then
-			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x52FB29ED3A3CA79, nil, nil )
+			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0xC083113BC81F23F], "menu/preview", nil, nil )
 			return true
 		else
 			return false
@@ -352,7 +352,7 @@ CoD.BlackJacksShopFrameNoPreview.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 		end
 	end, function ( f38_arg0, f38_arg1, f38_arg2 )
 		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f38_arg0, f38_arg2, "movieName" ) and IsMouseOrKeyboard( f38_arg2 ) then
-			CoD.Menu.SetButtonLabel( f38_arg1, Enum.LUIButton[0xA86619565BE54DB], 0x52FB29ED3A3CA79, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+			CoD.Menu.SetButtonLabel( f38_arg1, Enum.LUIButton[0xA86619565BE54DB], "menu/preview", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
@@ -394,7 +394,7 @@ CoD.BlackJacksShopFrameNoPreview.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 			CoD.GridAndListUtility.UpdateDataSource( f43_local0, true, true, true )
 		end
 	end )
-	FeaturedSlot2:AddContextualMenuAction( f1_arg0, f1_arg1, 0x52FB29ED3A3CA79, function ( f44_arg0, f44_arg1, f44_arg2, f44_arg3 )
+	FeaturedSlot2:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/preview", function ( f44_arg0, f44_arg1, f44_arg2, f44_arg3 )
 		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f44_arg0, f44_arg2, "movieName" ) then
 			return function ( f45_arg0, f45_arg1, f45_arg2, f45_arg3 )
 				SetControllerModelValue( f45_arg2, "LootStreamProgress.playAnimation", false )
@@ -502,7 +502,7 @@ CoD.BlackJacksShopFrameNoPreview.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 		end
 	end, function ( f57_arg0, f57_arg1, f57_arg2 )
 		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f57_arg0, f57_arg2, "movieName" ) and IsGamepad( f57_arg2 ) then
-			CoD.Menu.SetButtonLabel( f57_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x52FB29ED3A3CA79, nil, nil )
+			CoD.Menu.SetButtonLabel( f57_arg1, Enum.LUIButton[0xC083113BC81F23F], "menu/preview", nil, nil )
 			return true
 		else
 			return false
@@ -521,7 +521,7 @@ CoD.BlackJacksShopFrameNoPreview.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 		end
 	end, function ( f59_arg0, f59_arg1, f59_arg2 )
 		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f59_arg0, f59_arg2, "movieName" ) and IsMouseOrKeyboard( f59_arg2 ) then
-			CoD.Menu.SetButtonLabel( f59_arg1, Enum.LUIButton[0xA86619565BE54DB], 0x52FB29ED3A3CA79, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+			CoD.Menu.SetButtonLabel( f59_arg1, Enum.LUIButton[0xA86619565BE54DB], "menu/preview", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
@@ -563,7 +563,7 @@ CoD.BlackJacksShopFrameNoPreview.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 			CoD.GridAndListUtility.UpdateDataSource( f64_local0, true, true, true )
 		end
 	end )
-	SpecialOrders:AddContextualMenuAction( f1_arg0, f1_arg1, 0x52FB29ED3A3CA79, function ( f65_arg0, f65_arg1, f65_arg2, f65_arg3 )
+	SpecialOrders:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/preview", function ( f65_arg0, f65_arg1, f65_arg2, f65_arg3 )
 		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f65_arg0, f65_arg2, "movieName" ) then
 			return function ( f66_arg0, f66_arg1, f66_arg2, f66_arg3 )
 				SetControllerModelValue( f66_arg2, "LootStreamProgress.playAnimation", false )

@@ -4,7 +4,7 @@
     "displayname": "#zmweapon/ww_crossbow_t8_upgraded",
     "weapon50": "#ww_crossbow_charged_t8_upgraded_zm",
     "weapon70": "#ww_crossbow_t8",
-    "streamkey": "#hash_76002e6590b34188",
+    "streamkey": "#ww_crossbow_t8_upgraded_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -78,7 +78,7 @@
     "fx_bd0": "#hash_fbadfbe7348ad4d",
     "fx_f00": "#hash_6c7ae381de64a8d8",
     "fx_f88": "#hash_2b4f0b7b45b86a3d",
-    "normalImpactSounds": "#hash_39bfdec1ee94b227",
-    "bounceImpactSounds": "#hash_39bfdec1ee94b227",
-    "dudImpactSounds": "#hash_39bfdec1ee94b227"
+    "normalImpactSounds": "#ww_crossbow_impact",
+    "bounceImpactSounds": "#ww_crossbow_impact",
+    "dudImpactSounds": "#ww_crossbow_impact"
 }

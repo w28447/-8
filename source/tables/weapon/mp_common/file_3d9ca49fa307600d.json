@@ -46,7 +46,7 @@
             "1 0.0507"
         ]
     ],
-    "sound90": "#hash_65d9cd190f18b6f5",
+    "sound90": "#wpn_arrow_loop",
     "firesound": "#hash_314898765c6d1e5",
     "firesoundplayer": "#hash_2c83fe8734c38e6c",
     "sound270": "#hash_24db08faf35699e1",
@@ -58,7 +58,7 @@
     "sound800": "#hash_54f28bb508a46096",
     "sound810": "#hash_54f28bb508a46096",
     "tunables1": "#hash_6d4306f7e84558b0",
-    "sharedWeaponSounds": "#hash_976e198cea3170c",
+    "sharedWeaponSounds": "#bow_launcher",
     "#hash_2e4a8800": "#sig_bow_scoreevents",
     "projectilemodel": "#wpn_t8_sig_bow_projectile",
     "viewmodel": [
@@ -92,8 +92,8 @@
         "#hash_c15b461b7420c6d2",
         "#hash_bb3f97cf646813ac"
     ],
-    "normalImpactFX": "#hash_543debda11c394d3",
+    "normalImpactFX": "#bow_explosion",
     "bounceImpactFX": "#hero_bow_sm_enter",
-    "normalImpactSounds": "#hash_7f28ebd16e6319e",
+    "normalImpactSounds": "#sparrow_impact",
     "bounceImpactSounds": "#arrow_impact_charged"
 }

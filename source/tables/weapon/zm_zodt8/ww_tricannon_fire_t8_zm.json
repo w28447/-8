@@ -3,7 +3,7 @@
     "baseWeapon": "#ww_tricannon_fire_t8",
     "displayname": "#zmweapon/ww_tricannon_fire_t8",
     "weapon70": "#ww_tricannon_t8",
-    "streamkey": "#hash_7d21ce5b360c8978",
+    "streamkey": "#ww_tricannon_fire_t8_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -64,7 +64,7 @@
     ],
     "viewPersistentEffectSet": "#hash_470961feadf9931",
     "enemyDeathFxSet": "#weapon_pistol_energy_knockback",
-    "normalImpactFX": "#hash_698665a6bc87d2e0",
+    "normalImpactFX": "#kraken_fire_explosion",
     "normalImpactSounds": "#hash_e8e0a97bbbf0b555",
     "bounceImpactSounds": "#grenade_bounce"
 }

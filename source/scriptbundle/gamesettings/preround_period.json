@@ -1,5 +1,5 @@
 {
-    "hinttext": "localized17#hash_282b58980b01884e",
+    "hinttext": "localized17#menu/preround_timer_hint",
     "configstringfiletype": "scriptbundle",
     "value8": "7",
     "value9": "8",
@@ -22,7 +22,7 @@
     "label": "localized17#menu/x_seconds",
     "hash_5a6dee5a": 0,
     "name": "preround_period",
-    "displayname": "localized17#hash_4d3aed9c5ecc443a",
+    "displayname": "localized17#menu/preround_timer",
     "label1": "localized17#menu/disabled",
     "label2": "localized17#menu/1_second",
     "hash_54e336e4": 0,

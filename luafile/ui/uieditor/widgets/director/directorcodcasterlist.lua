@@ -121,7 +121,7 @@ CoD.DirectorCoDCasterList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x2D7AF821FE36BC6, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f16_arg2, f16_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f16_arg2, f16_arg0 ) and IsGamepad( f16_arg2 ) then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xB4A0F5945BB8108, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f16_arg2, f16_arg0 ) and IsGamepad( f16_arg2 ) then
 			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x9038794D2FBCFAA, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )

@@ -438,7 +438,7 @@ function insanity_mode_step3_setup( var_5ea5c94d )
             {
                 zm_unitrigger::unregister_unitrigger( s_insanity_mode_confirmation.s_unitrigger );
                 zm_white_main_quest::function_63e4838b( 0 );
-                level.countdown_clock zm_white_computer_system::function_9b1511fa();
+                level.countdown_clock zm_white_computer_system::cancel_clock_countdown();
             }
         }
     }
@@ -764,7 +764,7 @@ function function_e16c950d( weapon )
         self takeweapon( weapon );
         weapon_upgrade = self zm_weapons::give_build_kit_weapon( weapon_upgrade );
         self thread aat::remove( weapon_upgrade );
-        self zm_weapons::function_7c5dd4bd( weapon_upgrade );
+        self zm_weapons::give_full_ammo( weapon_upgrade );
         
         if ( isdefined( level.aat_in_use ) && level.aat_in_use && zm_weapons::weapon_supports_aat( weapon_upgrade ) )
         {

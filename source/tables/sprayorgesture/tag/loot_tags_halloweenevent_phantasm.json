@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_halloweenevent_phantasm",
+    "type": "#tag",
+    "material": "#hash_6d5bc5a629731e1c",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_5477c218b90eedac",
+        "icon": "image#loot_ui_icon_tags_halloweenevent_phantasm",
+        "isdefault": 0
+    }
+}

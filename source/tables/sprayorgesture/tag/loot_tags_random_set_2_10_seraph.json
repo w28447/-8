@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_random_set_2_10_seraph",
+    "type": "#tag",
+    "material": "#hash_439355232b46888b",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_1ce2f89a91035db",
+        "icon": "image#loot_ui_icon_tags_random_set_2_10_seraph",
+        "isdefault": 0
+    }
+}

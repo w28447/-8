@@ -90,7 +90,7 @@ function function_49f4b6ee()
 // Params 4
 // Checksum 0xd4ae85d9, Offset: 0x368
 // Size: 0x13e
-function add( var_7c8fcded, var_3ed63752, var_28066539, var_df7ee5d1 = #"hash_2082da6662372184" )
+function add( var_7c8fcded, var_3ed63752, var_28066539, var_df7ee5d1 = #"zmb_armor_receive" )
 {
     var_4812bba2 = 0;
     
@@ -190,7 +190,7 @@ function damage( n_damage, mod_type, e_attacker )
         }
         
         self.armor = 0;
-        self playsound( #"hash_2817ca3f96127e62" );
+        self playsound( #"zmb_armor_break" );
         return ( n_damage - var_ee47fd1b );
     }
     
@@ -227,7 +227,7 @@ function damage( n_damage, mod_type, e_attacker )
             
             if ( self.armor <= 0 )
             {
-                self playsound( #"hash_2817ca3f96127e62" );
+                self playsound( #"zmb_armor_break" );
             }
             
             n_index++;

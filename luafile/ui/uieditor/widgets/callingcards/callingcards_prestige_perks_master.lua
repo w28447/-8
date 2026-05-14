@@ -59,7 +59,7 @@ CoD[0x5A8AAFD2B78F5C7].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.party3 = party3
 	
 	local racoonTail = LUI.UIImage.new( 0, 0, 703, 855, 0, 0, 139, 243 )
-	racoonTail:setImage( RegisterImage( 0xAB1DC1DACCD772E ) )
+	racoonTail:setImage( RegisterImage( "uie_ui_icon_callingcards_prestige_master_racoon_tail" ) )
 	self:addElement( racoonTail )
 	self.racoonTail = racoonTail
 	

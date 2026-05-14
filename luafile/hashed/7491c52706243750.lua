@@ -94,7 +94,7 @@ CoD.SpawnRegionName.__clipsPerState = {
 			f4_arg0.DangerText:setTopBottom( 0, 0, 69, 89 )
 			f4_arg0.DangerText:setRGB( 0.58, 0.58, 0.58 )
 			f4_arg0.DangerText:setAlpha( 0 )
-			f4_arg0.DangerText:setText( Engine[0xF9F1239CFD921FE]( 0x5630C8431CF6803 ) )
+			f4_arg0.DangerText:setText( Engine[0xF9F1239CFD921FE]( "weapon/empgrenade_stat_caps" ) )
 			f4_arg0.clipFinished( f4_arg0.DangerText )
 		end
 	},
@@ -150,7 +150,7 @@ CoD.SpawnRegionName.__clipsPerState = {
 			f8_arg0.DangerText:completeAnimation()
 			f8_arg0.DangerText:setRGB( 0.58, 0.58, 0.58 )
 			f8_arg0.DangerText:setAlpha( 0 )
-			f8_arg0.DangerText:setText( Engine[0xF9F1239CFD921FE]( 0x94EB0E3329EDF5F ) )
+			f8_arg0.DangerText:setText( Engine[0xF9F1239CFD921FE]( "menu/disabled" ) )
 			f8_arg0.clipFinished( f8_arg0.DangerText )
 			f8_arg0.TimerBacking:completeAnimation()
 			f8_arg0.TimerBacking:setAlpha( 0 )

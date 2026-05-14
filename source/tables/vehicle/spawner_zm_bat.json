@@ -22,7 +22,7 @@
     "soundDef": "#veh_bat",
     "compassIconMaterial": "#t7_hud_minimap_enemy_hunter",
     "animStateMachine": "#bat.ai_asm",
-    "animSelectorTable": "#hash_1bc31544a73647f3",
+    "animSelectorTable": "#bat.ai_ast",
     "animMappingTable": "#bat.ai_am",
     "steerAxisName": "AXIS_LSTICK",
     "gasAxisName": "AXIS_LSTICK",

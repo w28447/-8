@@ -3,7 +3,7 @@
     "displayName": "#heroes/cosmic_silverback",
     "mpDialog": "#cosmic_silverback",
     "playerSoundsTable": "#cp_playersounds",
-    "playerFXTable": "#hash_471b500cc678f872",
+    "playerFXTable": "#wz_playerfx",
     "image_68": "#hash_f1d79e5ea66bcc73",
     "positionDraftPortrait": "#ui_icon_specialist_portrait_draft_cosmic_silverback",
     "characterFootsteps": "#defaultplayerfootstep",

@@ -1558,7 +1558,7 @@ function private function_44e3e0d1( var_51a7ab9c )
             v_dir = player.origin - var_51a7ab9c;
             v_dir = ( v_dir[ 0 ], v_dir[ 1 ], 0.1 );
             v_dir = vectornormalize( v_dir );
-            n_push_strength = getdvarint( #"hash_708ca0a943843f57", 500 );
+            n_push_strength = getdvarint( #"blightfather_n_push_strength", 500 );
             n_push_strength = 200 + randomint( n_push_strength - 200 );
             v_player_velocity = player getvelocity();
             player setvelocity( v_player_velocity + v_dir * n_push_strength );

@@ -11,7 +11,7 @@ CoD.vhud_HellstormLayoutTracker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local LayoutTracker = LUI.UIImage.new( 0, 0, 0, 592, 0, 0, 0, 68 )
 	LayoutTracker:setAlpha( 0.5 )
 	LayoutTracker:setScale( 0.5, 0.5 )
-	LayoutTracker:setImage( RegisterImage( 0xAA63CDB31348F4 ) )
+	LayoutTracker:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_top_fui" ) )
 	LayoutTracker:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	LayoutTracker:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( LayoutTracker )

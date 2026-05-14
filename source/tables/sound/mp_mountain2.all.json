@@ -948,13 +948,13 @@
         {
             "value": 159,
             "next": 65535,
-            "name": "#hash_7df5936bf211e1e2",
+            "name": "#amb_fan_spin",
             "sequence": 0,
             "cullDistance": 1100,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7df5936bf211e1e2",
+                    "name": "#amb_fan_spin",
                     "assetId": "#hash_727817573146089d",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -997,13 +997,13 @@
         {
             "value": 71,
             "next": 65535,
-            "name": "#hash_691af66e6ee059ba",
+            "name": "#amb_fire_xlrg",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_691af66e6ee059ba",
+                    "name": "#amb_fire_xlrg",
                     "assetId": "#amb/fire/extreme/extreme.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -1973,13 +1973,13 @@
         {
             "value": 161,
             "next": 65535,
-            "name": "#hash_6ad307714ed601ee",
+            "name": "#amb_gust_rattle",
             "sequence": 0,
             "cullDistance": 950,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6ad307714ed601ee",
+                    "name": "#amb_gust_rattle",
                     "assetId": "#amb/environment/wind/gusts/rattle_gust/gust_rattle_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -2018,7 +2018,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_6ad307714ed601ee",
+                    "name": "#amb_gust_rattle",
                     "assetId": "#amb/environment/wind/gusts/rattle_gust/gust_rattle_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -2057,7 +2057,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_6ad307714ed601ee",
+                    "name": "#amb_gust_rattle",
                     "assetId": "#amb/environment/wind/gusts/rattle_gust/gust_rattle_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -2096,7 +2096,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_6ad307714ed601ee",
+                    "name": "#amb_gust_rattle",
                     "assetId": "#amb/environment/wind/gusts/rattle_gust/gust_rattle_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -2135,7 +2135,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_6ad307714ed601ee",
+                    "name": "#amb_gust_rattle",
                     "assetId": "#amb/environment/wind/gusts/rattle_gust/gust_rattle_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -2178,13 +2178,13 @@
         {
             "value": 162,
             "next": 65535,
-            "name": "#hash_23b0991f9e05a62c",
+            "name": "#amb_metal_creak",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_23b0991f9e05a62c",
+                    "name": "#amb_metal_creak",
                     "assetId": "#amb/material_movement/creaks/metal/stress/light/amb_metal_stress_light01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -2223,7 +2223,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_23b0991f9e05a62c",
+                    "name": "#amb_metal_creak",
                     "assetId": "#amb/material_movement/creaks/metal/stress/light/amb_metal_stress_light02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -2262,7 +2262,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_23b0991f9e05a62c",
+                    "name": "#amb_metal_creak",
                     "assetId": "#amb/material_movement/creaks/metal/stress/light/amb_metal_stress_light03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -2301,7 +2301,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_23b0991f9e05a62c",
+                    "name": "#amb_metal_creak",
                     "assetId": "#amb/material_movement/creaks/metal/stress/light/amb_metal_stress_light04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -3215,13 +3215,13 @@
         {
             "value": 90,
             "next": 65535,
-            "name": "#hash_4e4a96c5a7ad056a",
+            "name": "#amb_power_station",
             "sequence": 0,
             "cullDistance": 1100,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4e4a96c5a7ad056a",
+                    "name": "#amb_power_station",
                     "assetId": "#amb/industrial/power/hum/hum.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -3909,13 +3909,13 @@
         {
             "value": 20,
             "next": 38,
-            "name": "#hash_3a77e1e5125d0a7c",
+            "name": "#amb_steam_hiss",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3a77e1e5125d0a7c",
+                    "name": "#amb_steam_hiss",
                     "assetId": "#amb/industrial/steam/small/steam_loop.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -4259,7 +4259,7 @@
             "aliases": [
                 {
                     "name": "#hash_16182205f3c5e3b8",
-                    "secondaryname": "#hash_6ad307714ed601ee",
+                    "secondaryname": "#amb_gust_rattle",
                     "assetId": "#amb/environment/wind/gusts/cold/amb_gust_cold_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -4299,7 +4299,7 @@
                 },
                 {
                     "name": "#hash_16182205f3c5e3b8",
-                    "secondaryname": "#hash_6ad307714ed601ee",
+                    "secondaryname": "#amb_gust_rattle",
                     "assetId": "#amb/environment/wind/gusts/cold/amb_gust_cold_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -4339,7 +4339,7 @@
                 },
                 {
                     "name": "#hash_16182205f3c5e3b8",
-                    "secondaryname": "#hash_6ad307714ed601ee",
+                    "secondaryname": "#amb_gust_rattle",
                     "assetId": "#amb/environment/wind/gusts/cold/amb_gust_cold_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -4379,7 +4379,7 @@
                 },
                 {
                     "name": "#hash_16182205f3c5e3b8",
-                    "secondaryname": "#hash_6ad307714ed601ee",
+                    "secondaryname": "#amb_gust_rattle",
                     "assetId": "#amb/environment/wind/gusts/cold/amb_gust_cold_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -4419,7 +4419,7 @@
                 },
                 {
                     "name": "#hash_16182205f3c5e3b8",
-                    "secondaryname": "#hash_6ad307714ed601ee",
+                    "secondaryname": "#amb_gust_rattle",
                     "assetId": "#amb/environment/wind/gusts/cold/amb_gust_cold_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -4459,7 +4459,7 @@
                 },
                 {
                     "name": "#hash_16182205f3c5e3b8",
-                    "secondaryname": "#hash_6ad307714ed601ee",
+                    "secondaryname": "#amb_gust_rattle",
                     "assetId": "#amb/environment/wind/gusts/cold/amb_gust_cold_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -4499,7 +4499,7 @@
                 },
                 {
                     "name": "#hash_16182205f3c5e3b8",
-                    "secondaryname": "#hash_6ad307714ed601ee",
+                    "secondaryname": "#amb_gust_rattle",
                     "assetId": "#amb/environment/wind/gusts/cold/amb_gust_cold_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -4539,7 +4539,7 @@
                 },
                 {
                     "name": "#hash_16182205f3c5e3b8",
-                    "secondaryname": "#hash_6ad307714ed601ee",
+                    "secondaryname": "#amb_gust_rattle",
                     "assetId": "#amb/environment/wind/gusts/cold/amb_gust_cold_07.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -5472,13 +5472,13 @@
         {
             "value": 18,
             "next": 59,
-            "name": "#hash_31f777916298d72",
+            "name": "#dst_cover_concrete",
             "sequence": 0,
             "cullDistance": 550,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -5517,7 +5517,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -5556,7 +5556,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -5595,7 +5595,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -5634,7 +5634,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -5673,7 +5673,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -5723,7 +5723,7 @@
             "aliases": [
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -5764,7 +5764,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -5805,7 +5805,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -5846,7 +5846,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -5887,7 +5887,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -5928,7 +5928,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -5969,7 +5969,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -6501,13 +6501,13 @@
         {
             "value": 167,
             "next": 76,
-            "name": "#hash_5977d1f5f8457ae5",
+            "name": "#dst_fire_extinguisher",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5977d1f5f8457ae5",
+                    "name": "#dst_fire_extinguisher",
                     "assetId": "#dst/prop/fire_extinguisher/fire_extinguisher_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -6598,13 +6598,13 @@
         {
             "value": 47,
             "next": 65535,
-            "name": "#hash_2fc9b1cdafb1c5db",
+            "name": "#dst_foodstand",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2fc9b1cdafb1c5db",
+                    "name": "#dst_foodstand",
                     "assetId": "#dst/prop/foodstand/foodstand_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -6643,7 +6643,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_2fc9b1cdafb1c5db",
+                    "name": "#dst_foodstand",
                     "assetId": "#dst/prop/foodstand/foodstand_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -6831,13 +6831,13 @@
         {
             "value": 174,
             "next": 65535,
-            "name": "#hash_419e84642ebe554",
+            "name": "#dst_gas_pipe_lp",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_419e84642ebe554",
+                    "name": "#dst_gas_pipe_lp",
                     "assetId": "#dst/pipe/gas/loop/gas_pipe_lp.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -8165,13 +8165,13 @@
         {
             "value": 179,
             "next": 65535,
-            "name": "#hash_4f8c480d8e8f07b6",
+            "name": "#dst_pipe_steam",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4f8c480d8e8f07b6",
+                    "name": "#dst_pipe_steam",
                     "secondaryname": "#hash_54538dea28a0400e",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -8311,13 +8311,13 @@
         {
             "value": 183,
             "next": 65535,
-            "name": "#hash_4ec5a3e02263fc0e",
+            "name": "#dst_propane_tank_explo",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
@@ -8358,7 +8358,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
@@ -8399,7 +8399,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
@@ -8440,7 +8440,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
@@ -8481,7 +8481,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
@@ -8522,7 +8522,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
@@ -8563,7 +8563,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
@@ -8615,7 +8615,7 @@
             "aliases": [
                 {
                     "name": "#hash_238170c19d279f5",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -8655,7 +8655,7 @@
                 },
                 {
                     "name": "#hash_238170c19d279f5",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -8695,7 +8695,7 @@
                 },
                 {
                     "name": "#hash_238170c19d279f5",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -8735,7 +8735,7 @@
                 },
                 {
                     "name": "#hash_238170c19d279f5",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -8778,13 +8778,13 @@
         {
             "value": 52,
             "next": 65535,
-            "name": "#hash_344ec28fee2dea4c",
+            "name": "#dst_rock_large",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_344ec28fee2dea4c",
+                    "name": "#dst_rock_large",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
                     "assetFileNameRelease": "#mp_mountain2.all",
@@ -8833,7 +8833,7 @@
             "aliases": [
                 {
                     "name": "#dst_server",
-                    "secondaryname": "#hash_25a264b901d17919",
+                    "secondaryname": "#dst_server_glass",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
                     "assetFileNameRelease": "#mp_mountain2.all",
@@ -8875,14 +8875,14 @@
         {
             "value": 177,
             "next": 65535,
-            "name": "#hash_25a264b901d17919",
+            "name": "#dst_server_glass",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_25a264b901d17919",
-                    "secondaryname": "#hash_2f095673f11faa44",
+                    "name": "#dst_server_glass",
+                    "secondaryname": "#dst_server_power",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -8921,8 +8921,8 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_25a264b901d17919",
-                    "secondaryname": "#hash_2f095673f11faa44",
+                    "name": "#dst_server_glass",
+                    "secondaryname": "#dst_server_power",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -8961,8 +8961,8 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_25a264b901d17919",
-                    "secondaryname": "#hash_2f095673f11faa44",
+                    "name": "#dst_server_glass",
+                    "secondaryname": "#dst_server_power",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -9005,13 +9005,13 @@
         {
             "value": 139,
             "next": 65535,
-            "name": "#hash_2f095673f11faa44",
+            "name": "#dst_server_power",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2f095673f11faa44",
+                    "name": "#dst_server_power",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
                     "assetFileNameRelease": "#mp_mountain2.all",
@@ -9937,13 +9937,13 @@
         {
             "value": 61,
             "next": 65535,
-            "name": "#hash_58218bc4f7624185",
+            "name": "#dst_steam_pipe_lp",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_58218bc4f7624185",
+                    "name": "#dst_steam_pipe_lp",
                     "assetId": "#dst/pipe/steam/loop/steam_pipe_lp.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -11798,13 +11798,13 @@
         {
             "value": 78,
             "next": 123,
-            "name": "#hash_72725b98cf0834ac",
+            "name": "#dst_trash_bag",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_72725b98cf0834ac",
+                    "name": "#dst_trash_bag",
                     "assetId": "#hash_131702bdb9183384",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -11843,7 +11843,7 @@
                     "unk178": "#hash_503090305"
                 },
                 {
-                    "name": "#hash_72725b98cf0834ac",
+                    "name": "#dst_trash_bag",
                     "assetId": "#hash_2264ca2ac3c87869",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -11882,7 +11882,7 @@
                     "unk178": "#hash_503090305"
                 },
                 {
-                    "name": "#hash_72725b98cf0834ac",
+                    "name": "#dst_trash_bag",
                     "assetId": "#hash_62c73c6a2cca2abe",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -11921,7 +11921,7 @@
                     "unk178": "#hash_503090305"
                 },
                 {
-                    "name": "#hash_72725b98cf0834ac",
+                    "name": "#dst_trash_bag",
                     "assetId": "#hash_1884c87605737c5b",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -12013,13 +12013,13 @@
         {
             "value": 84,
             "next": 129,
-            "name": "#hash_1a6485b96677518d",
+            "name": "#dst_water_bottle",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1a6485b96677518d",
+                    "name": "#dst_water_bottle",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
                     "assetFileNameRelease": "#mp_mountain2.all",
@@ -12109,13 +12109,13 @@
         {
             "value": 173,
             "next": 65535,
-            "name": "#hash_7809ea482909306c",
+            "name": "#dst_wood_crate",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7809ea482909306c",
+                    "name": "#dst_wood_crate",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
                     "assetFileNameRelease": "#mp_mountain2.all",
@@ -12837,7 +12837,7 @@
             "aliases": [
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -12878,7 +12878,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -12919,7 +12919,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -12960,7 +12960,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -13001,7 +13001,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -13042,7 +13042,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -13083,7 +13083,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -13127,14 +13127,14 @@
         {
             "value": 28,
             "next": 65535,
-            "name": "#hash_310e1517e8130d26",
+            "name": "#exp_barrel_close",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_310e1517e8130d26",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "name": "#exp_barrel_close",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/rip/exp_barrel_rip_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -13174,8 +13174,8 @@
                     "unk178": "#hash_6030b0804"
                 },
                 {
-                    "name": "#hash_310e1517e8130d26",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "name": "#exp_barrel_close",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/rip/exp_barrel_rip_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -13215,8 +13215,8 @@
                     "unk178": "#hash_6030b0804"
                 },
                 {
-                    "name": "#hash_310e1517e8130d26",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "name": "#exp_barrel_close",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/rip/exp_barrel_rip_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -13260,13 +13260,13 @@
         {
             "value": 79,
             "next": 65535,
-            "name": "#hash_7fe19ceed35907ce",
+            "name": "#exp_barrel_dist",
             "sequence": 0,
             "cullDistance": 30000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7fe19ceed35907ce",
+                    "name": "#exp_barrel_dist",
                     "assetId": "#exp/prop/barrel/dist/exp_barrel_dist_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -13306,7 +13306,7 @@
                     "unk178": "#hash_6000b0304"
                 },
                 {
-                    "name": "#hash_7fe19ceed35907ce",
+                    "name": "#exp_barrel_dist",
                     "assetId": "#exp/prop/barrel/dist/exp_barrel_dist_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -13399,14 +13399,14 @@
         {
             "value": 147,
             "next": 65535,
-            "name": "#hash_3e8d50aeefef2d0e",
+            "name": "#exp_barrel_flux_l",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3e8d50aeefef2d0e",
-                    "secondaryname": "#hash_3e8d3aaeefef07ac",
+                    "name": "#exp_barrel_flux_l",
+                    "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#exp/prop/barrel/flux/exp_barrel_flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -13450,14 +13450,14 @@
         {
             "value": 142,
             "next": 65535,
-            "name": "#hash_3e8d3aaeefef07ac",
+            "name": "#exp_barrel_flux_r",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3e8d3aaeefef07ac",
-                    "secondaryname": "#hash_7fe19ceed35907ce",
+                    "name": "#exp_barrel_flux_r",
+                    "secondaryname": "#exp_barrel_dist",
                     "assetId": "#exp/prop/barrel/flux/exp_barrel_flux_r_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -13501,14 +13501,14 @@
         {
             "value": 132,
             "next": 65535,
-            "name": "#hash_8ef0ca7881f8aab",
+            "name": "#exp_barrel_lfe",
             "sequence": 0,
             "cullDistance": 3000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_8ef0ca7881f8aab",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "name": "#exp_barrel_lfe",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -13547,8 +13547,8 @@
                     "unk178": "#hash_c030b0802"
                 },
                 {
-                    "name": "#hash_8ef0ca7881f8aab",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "name": "#exp_barrel_lfe",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -13587,8 +13587,8 @@
                     "unk178": "#hash_c030b0802"
                 },
                 {
-                    "name": "#hash_8ef0ca7881f8aab",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "name": "#exp_barrel_lfe",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -13627,8 +13627,8 @@
                     "unk178": "#hash_c030b0802"
                 },
                 {
-                    "name": "#hash_8ef0ca7881f8aab",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "name": "#exp_barrel_lfe",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -16771,7 +16771,7 @@
             "aliases": [
                 {
                     "name": "#hash_200e28bcd26bab77",
-                    "secondaryname": "#hash_3e8d3aaeefef07ac",
+                    "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -16865,13 +16865,13 @@
         {
             "value": 166,
             "next": 65535,
-            "name": "#hash_2e887c70bfe4df2a",
+            "name": "#exp_mp_propane_tank_explo",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
@@ -16912,7 +16912,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
@@ -16953,7 +16953,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
@@ -16994,7 +16994,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
@@ -17035,7 +17035,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
@@ -17076,7 +17076,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
@@ -17117,7 +17117,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
@@ -17335,7 +17335,7 @@
             "aliases": [
                 {
                     "name": "#hash_4c4fd4c61d8d67f0",
-                    "secondaryname": "#hash_3e8d3aaeefef07ac",
+                    "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -17821,7 +17821,7 @@
             "aliases": [
                 {
                     "name": "#hash_456af38afaef9d77",
-                    "secondaryname": "#hash_3e8d3aaeefef07ac",
+                    "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -17922,7 +17922,7 @@
             "aliases": [
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -17963,7 +17963,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -18004,7 +18004,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -18045,7 +18045,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -18086,7 +18086,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -18127,7 +18127,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -18168,7 +18168,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -18212,13 +18212,13 @@
         {
             "value": 24,
             "next": 6,
-            "name": "#hash_1588176dda3bc6e6",
+            "name": "#exp_tank_fire",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1588176dda3bc6e6",
+                    "name": "#exp_tank_fire",
                     "secondaryname": "#hash_6851c2d6b952f353",
                     "assetId": "#amb/fire/medium/medium.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
@@ -19364,11 +19364,11 @@
             "reverb": "#mp_final_killcam",
             "loop": "#hash_44463359dd025b23",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
+            "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
+            "globalContextType": "#ringoff_plr",
             "globalContextValue": "#outdoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
@@ -19386,12 +19386,12 @@
             "reverb": "#room_hallway",
             "loop": "#hash_2780081d881700cc",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 0.7,
             "reverbWetLevel": 1,
@@ -19408,11 +19408,11 @@
             "reverb": "#narrow_sewerpipe",
             "loop": "#hash_33b781d7316b6fe",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
+            "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
+            "globalContextType": "#ringoff_plr",
             "globalContextValue": "#outdoor",
             "defaultRoom": false,
             "reverbDryLevel": 0.8,
@@ -19430,12 +19430,12 @@
             "reverb": "#outdoor_still",
             "loop": "#hash_2780081d881700cc",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 1,
             "reverbWetLevel": 1,
@@ -19452,12 +19452,12 @@
             "reverb": "#room_laboratory",
             "loop": "#hash_2780081d881700cc",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 0.7,
             "reverbWetLevel": 1,
@@ -19474,12 +19474,12 @@
             "reverb": "#room_livingRoom",
             "loop": "#hash_2780081d881700cc",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 0.7,
             "reverbWetLevel": 1,
@@ -19496,12 +19496,12 @@
             "reverb": "#room_livingRoom",
             "loop": "#hash_2780081d881700cc",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 0.7,
             "reverbWetLevel": 1,
@@ -19518,12 +19518,12 @@
             "reverb": "#narrow_sewerpipe",
             "loop": "#hash_2780081d881700cc",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 0.7,
             "reverbWetLevel": 1,
@@ -19540,11 +19540,11 @@
             "reverb": "#outdoor_slap",
             "loop": "#hash_33b781d7316b6fe",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
+            "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
+            "globalContextType": "#ringoff_plr",
             "globalContextValue": "#outdoor",
             "defaultRoom": true,
             "reverbDryLevel": 1,
@@ -19562,11 +19562,11 @@
             "reverb": "#room_bedroom",
             "loop": "#hash_2780081d881700cc",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
+            "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
+            "globalContextType": "#ringoff_plr",
             "globalContextValue": "#outdoor",
             "defaultRoom": false,
             "reverbDryLevel": 0.8,
@@ -19584,12 +19584,12 @@
             "reverb": "#room_bedroom",
             "loop": "#hash_2780081d881700cc",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
-            "globalContextType": "#hash_730721b0b6373e1",
-            "globalContextValue": "#hash_249092f25acbb312",
+            "globalContextType": "#ringoff_plr",
+            "globalContextValue": "#indoor",
             "defaultRoom": false,
             "reverbDryLevel": 0.7,
             "reverbWetLevel": 1,
@@ -19599,9 +19599,9 @@
     ],
     "scriptIdLookups": [],
     "streamKeysSABL": {
-        "streamKey1": "#hash_2a1511736a05dc91",
+        "streamKey1": "#mp_mountain2_all_stream",
         "dataSize1": 4096,
-        "fileKey": "#hash_70abc70c18183ec",
+        "fileKey": "#mp_mountain2_all_loaded",
         "fileLen": 52069248
     },
     "streamKeysSABS": {

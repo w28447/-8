@@ -3,7 +3,7 @@
     "baseWeapon": "#hero_flamethrower_t8_lv3",
     "displayname": "#hash_4a081ed23f9db2d8",
     "weapon70": "#hero_flamethrower_t8_lv1",
-    "streamkey": "#hash_1979c15f8db57b0b",
+    "streamkey": "#hero_flamethrower_t8_lv3_soundbank",
     "scrstr_8c8": [
         "tag_exhaust_air",
         "tag_exhaust_cap"
@@ -70,7 +70,7 @@
     "sound810": "#hash_41b8cf5f69b41ad4",
     "tunables1": "#hero_flamethrower_t8_lv3_tunables_zm",
     "cacWeaponXCam": "#hash_db5c34f7d9e1861",
-    "sharedWeaponSounds": "#hash_3a2266757f78c03f",
+    "sharedWeaponSounds": "#zm_flamethrower_lvl3",
     "flameTableFirstPerson": "#default_flame_firstperson",
     "flameTableThirdPerson": "#default_flame_thirdperson",
     "statusEffects": [

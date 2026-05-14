@@ -167,7 +167,7 @@ CoD.vhud_dart_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local FuiLinkBR = LUI.UIImage.new( 0, 0, 1532, 1412, 0, 0, 723, 1083 )
 	FuiLinkBR:setAlpha( 0.9 )
-	FuiLinkBR:setImage( RegisterImage( 0xCD3C264D574BD7C ) )
+	FuiLinkBR:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_layout_element" ) )
 	FuiLinkBR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	FuiLinkBR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiLinkBR )
@@ -175,7 +175,7 @@ CoD.vhud_dart_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local FuiLinkBL = LUI.UIImage.new( 0, 0, 398.5, 518.5, 0, 0, 723, 1083 )
 	FuiLinkBL:setAlpha( 0.9 )
-	FuiLinkBL:setImage( RegisterImage( 0xCD3C264D574BD7C ) )
+	FuiLinkBL:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_layout_element" ) )
 	FuiLinkBL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	FuiLinkBL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiLinkBL )
@@ -183,7 +183,7 @@ CoD.vhud_dart_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local FuiLinkTL = LUI.UIImage.new( 0, 0, 398.5, 518.5, 0, 0, 360, 0 )
 	FuiLinkTL:setAlpha( 0.9 )
-	FuiLinkTL:setImage( RegisterImage( 0xCD3C264D574BD7C ) )
+	FuiLinkTL:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_layout_element" ) )
 	FuiLinkTL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	FuiLinkTL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiLinkTL )
@@ -191,7 +191,7 @@ CoD.vhud_dart_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local FuiLinkTR = LUI.UIImage.new( 0, 0, 1532, 1412, 0, 0, 360, 0 )
 	FuiLinkTR:setAlpha( 0.9 )
-	FuiLinkTR:setImage( RegisterImage( 0xCD3C264D574BD7C ) )
+	FuiLinkTR:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_layout_element" ) )
 	FuiLinkTR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	FuiLinkTR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiLinkTR )

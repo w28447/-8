@@ -66,7 +66,7 @@ CoD.vhud_HellstormCenterFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local LockTR = LUI.UIImage.new( 0, 0, 684.5, 776.5, 0, 0, 228, 380 )
 	LockTR:setAlpha( 0.8 )
-	LockTR:setImage( RegisterImage( 0x75D0C8E54010860 ) )
+	LockTR:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_reticle_trlock" ) )
 	LockTR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	LockTR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( LockTR )
@@ -74,7 +74,7 @@ CoD.vhud_HellstormCenterFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local LockBL = LUI.UIImage.new( 0, 0, 234.5, 142.5, 0, 0, 694, 542 )
 	LockBL:setAlpha( 0.8 )
-	LockBL:setImage( RegisterImage( 0x75D0C8E54010860 ) )
+	LockBL:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_reticle_trlock" ) )
 	LockBL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	LockBL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( LockBL )
@@ -82,7 +82,7 @@ CoD.vhud_HellstormCenterFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local LockBR = LUI.UIImage.new( 0, 0, 684.5, 776.5, 0, 0, 694, 542 )
 	LockBR:setAlpha( 0.8 )
-	LockBR:setImage( RegisterImage( 0x75D0C8E54010860 ) )
+	LockBR:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_reticle_trlock" ) )
 	LockBR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	LockBR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( LockBR )
@@ -90,7 +90,7 @@ CoD.vhud_HellstormCenterFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local LockTL = LUI.UIImage.new( 0, 0, 237.5, 145.5, 0, 0, 228, 380 )
 	LockTL:setAlpha( 0.8 )
-	LockTL:setImage( RegisterImage( 0x75D0C8E54010860 ) )
+	LockTL:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_reticle_trlock" ) )
 	LockTL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	LockTL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( LockTL )

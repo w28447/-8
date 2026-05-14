@@ -20,7 +20,7 @@ CoD.InputPrompt.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 		{
 			stateName = "Hidden",
 			condition = function ( menu, element, event )
-				return CoD.HUDUtility.IsObjectiveXHashPropertyValueEqualTo( self, 0x1BB6EE6EB270DC8, nil )
+				return CoD.HUDUtility.IsObjectiveXHashPropertyValueEqualTo( self, "buttonprompttext", nil )
 			end
 		}
 	} )

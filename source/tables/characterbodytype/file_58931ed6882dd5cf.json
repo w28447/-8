@@ -3,7 +3,7 @@
     "displayName": "#wz/woods_caps",
     "mpDialog": "#woods",
     "playerSoundsTable": "#cp_playersounds",
-    "playerFXTable": "#hash_471b500cc678f872",
+    "playerFXTable": "#wz_playerfx",
     "image_68": "#hash_bd7f2b8c6bbd39ff",
     "positionDraftPortrait": "#ui_icon_hero_portrait_draft_woods",
     "positionDraftIcon": "#hash_bd7f2b8c6bbd39ff",

@@ -16,7 +16,7 @@
 function init()
 {
     var_440ad52e = getminbitcountfornum( 6 );
-    clientfield::register( "scriptmover", "" + #"hash_1f572bbcdde55d9d", 1, getminbitcountfornum( 5 ), "int", &function_49b054dd, 0, 0 );
+    clientfield::register( "scriptmover", "" + #"lighthouse_red_beam", 1, getminbitcountfornum( 5 ), "int", &function_49b054dd, 0, 0 );
     clientfield::register( "scriptmover", "" + #"dm_energy", 1, var_440ad52e, "int", &function_d36b21ad, 0, 0 );
     clientfield::register( "scriptmover", "" + #"hash_4bea78fdf78a2613", 1, 1, "int", &function_c8043066, 0, 0 );
     clientfield::register( "scriptmover", "" + #"orb_explosion", 1, 1, "int", &orb_explosion, 0, 0 );
@@ -33,8 +33,8 @@ function init()
     clientfield::register( "scriptmover", "" + #"hash_2928b6d60aaacda6", 1, getminbitcountfornum( 7 ), "int", &function_6357e884, 0, 0 );
     clientfield::register( "scriptmover", "" + #"seagull_glint_fx", 1, 1, "int", &seagull_glint_fx, 0, 0 );
     clientfield::register( "toplayer", "" + #"duffel_prison", 1, 1, "int", &duffel_prison, 0, 0 );
-    clientfield::register( "toplayer", "" + #"hash_1ee540924e569350", 1, 1, "int", &function_e83bf3a, 0, 0 );
-    clientfield::register( "actor", "" + #"hash_27db1707c088563c", 1, 1, "int", &function_e33e10b9, 0, 0 );
+    clientfield::register( "toplayer", "" + #"shell_shock_player", 1, 1, "int", &function_e83bf3a, 0, 0 );
+    clientfield::register( "actor", "" + #"brutus_stun_shell", 1, 1, "int", &brutus_stun_shell, 0, 0 );
     clientfield::register( "scriptmover", "" + #"hash_376c030aee1d6ccb", 1, 2, "int", &function_3537ad19, 0, 0 );
     clientfield::register( "scriptmover", "" + #"corpse_burn_fx", 1, 1, "int", &group_bot_mp, 0, 0 );
     clientfield::register( "allplayers", "" + #"hash_b8601726e1e4a6a", 1, 1, "int", &function_5688631d, 0, 0 );
@@ -50,12 +50,12 @@ function init()
     level._effect[ #"energy_glow" ] = #"hash_390f28af5955af1f";
     level._effect[ #"kr_glow" ] = #"hash_10198f7ef5535f3a";
     level._effect[ #"ritual_gobo" ] = #"hash_140f0bd65e4d70d2";
-    level._effect[ #"hash_180f832f742958d6" ] = #"hash_66bb6697a9882bd6";
-    level._effect[ #"door_explosion" ] = #"hash_4fba451426ea3bb7";
+    level._effect[ #"ritual_gobo_activate" ] = #"hash_66bb6697a9882bd6";
+    level._effect[ #"door_explosion" ] = #"explosions/fx8_exp_bomb_wood";
     level._effect[ #"seagull_trail_fx" ] = #"hash_5028a74e717df332";
     level._effect[ #"hash_7d5a495febe292e4" ] = #"hash_321ad275226af072";
     level._effect[ #"seagull_disappear_fx" ] = #"hash_2a63b961f5ed2417";
-    level._effect[ #"hash_6d3840ae2ba64bdd" ] = #"hash_362eac491136c198";
+    level._effect[ #"lighthouse_r_b" ] = #"hash_362eac491136c198";
     level._effect[ #"hash_289e42e25063ac26" ] = #"hash_e714752caf5a93d";
     level._effect[ #"hash_287c57e25046e96f" ] = #"hash_e416a52caccc0f4";
     level._effect[ #"hash_287868e250431d7b" ] = #"hash_e454d52cad07884";
@@ -66,7 +66,7 @@ function init()
     level._effect[ #"hash_6b3f19f4c90a1b75" ] = #"hash_6f69cced7e86cb70";
     level._effect[ #"hash_508055920f327121" ] = #"hash_8c3d3c756b91f54";
     level._effect[ #"corpse_burn_fx" ] = #"hash_1f06be75e7efc6a2";
-    level._effect[ "" + #"hash_3fafd72f00908d53" ] = #"hash_992fe8f8e8dfb1";
+    level._effect[ "" + #"shock_brutus_sp" ] = #"hash_992fe8f8e8dfb1";
     scene::add_scene_func( #"p8_fxanim_zm_esc_blast_afterlife_seagull_ghost_bundle", &function_bbf4268e, "shot_1" );
 }
 
@@ -114,7 +114,7 @@ function function_d36b21ad( localclientnum, oldval, newval, bnewent, binitialsna
 // Size: 0xfa
 function function_c8043066( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    s_portal = struct::get( #"hash_4f3ae1de39c4b3e3" );
+    s_portal = struct::get( #"dm_energy_tag_origin" );
     
     if ( newval == 1 )
     {
@@ -174,7 +174,7 @@ function ritual_circle( localclientnum, oldval, newval, bnewent, binitialsnap, f
     {
         self.n_fx_id = util::playfxontag( localclientnum, level._effect[ #"ritual_gobo" ], self, "tag_origin" );
         wait 1.6;
-        util::playfxontag( localclientnum, level._effect[ #"hash_180f832f742958d6" ], self, "tag_origin" );
+        util::playfxontag( localclientnum, level._effect[ #"ritual_gobo_activate" ], self, "tag_origin" );
         return;
     }
     
@@ -266,9 +266,9 @@ function seagull_blast_fx( localclientnum, oldval, newval, bnewent, binitialsnap
             mdl_ghost delete();
         }
         
-        if ( isdefined( level._effect[ #"hash_1839aae8f96148af" ] ) )
+        if ( isdefined( level._effect[ #"air_blast_2" ] ) )
         {
-            self.var_99f0142a = util::playfxontag( localclientnum, level._effect[ #"hash_1839aae8f96148af" ], self, "tag_origin" );
+            self.var_99f0142a = util::playfxontag( localclientnum, level._effect[ #"air_blast_2" ], self, "tag_origin" );
         }
     }
 }
@@ -376,7 +376,7 @@ function function_49b054dd( localclientnum, oldval, newval, bnewent, binitialsna
     
     if ( newval == 1 )
     {
-        self.var_29749873 = util::playfxontag( localclientnum, level._effect[ #"hash_6d3840ae2ba64bdd" ], self, "tag_origin" );
+        self.var_29749873 = util::playfxontag( localclientnum, level._effect[ #"lighthouse_r_b" ], self, "tag_origin" );
         return;
     }
     
@@ -427,7 +427,7 @@ function summoning_key_glow( localclientnum, oldval, newval, bnewent, binitialsn
 // Size: 0x7c
 function function_de16ce8a( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    util::playfxontag( localclientnum, level._effect[ "" + #"hash_3fafd72f00908d53" ], self, "tag_origin" );
+    util::playfxontag( localclientnum, level._effect[ "" + #"shock_brutus_sp" ], self, "tag_origin" );
 }
 
 // Namespace paschal/zm_escape_paschal
@@ -554,7 +554,7 @@ function function_e83bf3a( localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7
 // Checksum 0xf41aafdf, Offset: 0x2840
 // Size: 0x15e
-function function_e33e10b9( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function brutus_stun_shell( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( newval == 1 )
     {

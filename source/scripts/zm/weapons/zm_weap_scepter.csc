@@ -37,7 +37,7 @@ function __init__()
     level._effect[ #"hash_1c2f974106158a5f" ] = #"hash_7c1a6aad09dc0d7a";
     level._effect[ #"hash_1c28ab41060f8dad" ] = #"hash_7c145ead09d78d68";
     level._effect[ #"scepter_bubble" ] = #"hash_17756eb35aac3766";
-    level._effect[ #"hash_4c17911c3aed59ae" ] = #"hash_15d8d928da3054a8";
+    level._effect[ #"scepter_bubble_end" ] = #"hash_15d8d928da3054a8";
     level._effect[ #"hash_47a7d03689c68789" ] = #"hash_7bf95975cc22d9e3";
     level._effect[ #"scepter_revive" ] = #"hash_7247f41820f6a4ac";
     level._effect[ #"scepter_heal" ] = #"zombie/fx_bgb_near_death_3p";
@@ -319,7 +319,7 @@ function beacon_fx( localclientnum, oldval, newval, bnewent, binitialsnap, field
     if ( isdefined( self.n_beacon_fx ) )
     {
         deletefx( localclientnum, self.n_beacon_fx, 1 );
-        util::playfxontag( localclientnum, level._effect[ #"hash_4c17911c3aed59ae" ], self, "tag_origin" );
+        util::playfxontag( localclientnum, level._effect[ #"scepter_bubble_end" ], self, "tag_origin" );
         self.n_beacon_fx = undefined;
     }
     
@@ -396,7 +396,7 @@ function revive_fx( localclientnum, oldval, newval, bnewent, binitialsnap, field
         {
             self.var_a776839a = util::playfxontag( localclientnum, level._effect[ #"scepter_revive" ], self, "tag_eye" );
             sndorigin = self gettagorigin( "J_Eyeball_LE" );
-            self playsound( localclientnum, #"hash_29c60da797dd7b3" );
+            self playsound( localclientnum, #"wpn_scepter_revive" );
         }
         
         return;

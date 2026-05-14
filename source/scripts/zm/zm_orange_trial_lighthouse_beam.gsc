@@ -48,7 +48,7 @@ function private on_begin()
 {
     str_targetname = "trials_lighthouse_beam";
     level setup_lighthouse();
-    callback::function_33f0ddd3( &function_33f0ddd3 );
+    callback::on_player_loadout_changed( &on_player_loadout_changed );
     level zm_trial::function_25ee130( 1 );
     
     foreach ( player in getplayers() )
@@ -65,7 +65,7 @@ function private on_end( round_reset )
 {
     level notify( #"hash_2b53ed06a97eb26c" );
     level.e_lighthouse_light function_f223e16f( round_reset );
-    callback::function_824d206( &function_33f0ddd3 );
+    callback::function_824d206( &on_player_loadout_changed );
     level zm_trial::function_25ee130( 0 );
     
     foreach ( player in getplayers() )
@@ -130,7 +130,7 @@ function private setup_lighthouse()
     
     if ( level.e_lighthouse_light.var_58df9892 == 3 || level.e_lighthouse_light.var_58df9892 == 8 )
     {
-        level.e_lighthouse_light notify( #"hash_1aa56851d9d4ec0d" );
+        level.e_lighthouse_light notify( #"trap_state_change" );
         
         if ( isdefined( level.e_lighthouse_light.vh_target ) )
         {
@@ -159,7 +159,7 @@ function private setup_lighthouse()
 function function_dbad2f5a()
 {
     self endon( #"death", #"hash_2b53ed06a97eb26c" );
-    level.e_lighthouse_light notify( #"hash_78fc5bbd712046b0" );
+    level.e_lighthouse_light notify( #"lighthouse_state_change" );
     
     for ( vh_target = spawner::simple_spawn_single( getent( "virgil", "targetname" ) ); !isdefined( vh_target ) ; vh_target = spawner::simple_spawn_single( getent( "virgil", "targetname" ) ) )
     {
@@ -237,7 +237,7 @@ function function_f223e16f( round_reset )
 function private function_1e902f3b()
 {
     self endon( #"disconnect" );
-    level endon( #"hash_7646638df88a3656" );
+    level endon( #"trial_round_end" );
     b_locked_weapons = 0;
     
     while ( true )
@@ -285,7 +285,7 @@ function function_91f0d131()
 // Params 1, eflags: 0x4
 // Checksum 0x3cc6df86, Offset: 0xe88
 // Size: 0xa4
-function private function_33f0ddd3( s_event )
+function private on_player_loadout_changed( s_event )
 {
     if ( s_event.event === "give_weapon" )
     {

@@ -165,17 +165,17 @@
         {
             "hash_7db3435c": 0,
             "pieceimage": "image#ui_icon_inventory_zm_red_shield_part_cover",
-            "clientfield": "#hash_5ec82cf18a254c3c"
+            "clientfield": "#zm_red_shield_part_1"
         },
         {
             "hash_7db3435c": 0,
             "pieceimage": "image#ui_icon_inventory_zm_red_shield_part_spear",
-            "clientfield": "#hash_5ec82ff18a255155"
+            "clientfield": "#zm_red_shield_part_2"
         },
         {
             "hash_7db3435c": 0,
             "pieceimage": "image#ui_icon_inventory_zm_red_shield_part_strap",
-            "clientfield": "#hash_5ec82ef18a254fa2"
+            "clientfield": "#zm_red_shield_part_3"
         }
     ],
     "quests": [
@@ -191,7 +191,7 @@
                             ],
                             "hash_1d91eeba": 1,
                             "hash_7db3435c": 0,
-                            "clientfield": "#hash_3b7a4acbf51a22e8"
+                            "clientfield": "#zm_red_pegasus_bridle_item"
                         }
                     ],
                     "list_items": 1

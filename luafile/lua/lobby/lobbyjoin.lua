@@ -44,11 +44,11 @@ Lobby.Join.OnJoinableCheck = function ( f6_arg0 )
 	local f6_local2 = LobbyData.GetCurrentMenuTarget()
 	local f6_local3 = false
 	if Engine[0xE39F1F30B306065]() == false and Engine[0xDFE2D4D623AD782]() == true and f6_local2.LobbyType == Enum.LobbyType[0x92676CF5B6FCD43] and (f6_local2.LobbyMode == Enum.LobbyMode[0xBB5FD8AEFC4D4B9] or f6_local2.LobbyMode == Enum.LobbyMode[0xD42D003CEEA3F87]) then
-		if f6_local2[0xEB7DDC7F079D51B] == Enum.LobbyMainMode[0x7B50049993542C0] and Engine[0x9E5BE3B4BBA4E0E]( "cpProcessingJoinCheck" ) then
+		if f6_local2["mainmode"] == Enum.LobbyMainMode[0x7B50049993542C0] and Engine[0x9E5BE3B4BBA4E0E]( "cpProcessingJoinCheck" ) then
 			return Enum.JoinResult[0xB1C0D3E06FFEFB4]
-		elseif f6_local2[0xEB7DDC7F079D51B] == Enum.LobbyMainMode[0x7E41449995CD57E] and Engine[0x9E5BE3B4BBA4E0E]( "mpProcessingJoinCheck" ) then
+		elseif f6_local2["mainmode"] == Enum.LobbyMainMode[0x7E41449995CD57E] and Engine[0x9E5BE3B4BBA4E0E]( "mpProcessingJoinCheck" ) then
 			return Enum.JoinResult[0xB1C0D3E06FFEFB4]
-		elseif f6_local2[0xEB7DDC7F079D51B] == Enum.LobbyMainMode[0x79D01499920B292] and Engine[0x9E5BE3B4BBA4E0E]( "zmProcessingJoinCheck" ) then
+		elseif f6_local2["mainmode"] == Enum.LobbyMainMode[0x79D01499920B292] and Engine[0x9E5BE3B4BBA4E0E]( "zmProcessingJoinCheck" ) then
 			return Enum.JoinResult[0xB1C0D3E06FFEFB4]
 		end
 	end
@@ -100,7 +100,7 @@ Lobby.Join.OnJoinableCheck = function ( f6_arg0 )
 				return Enum.JoinResult[0x761A111744279]
 			elseif (Engine.IsInGame() or Lobby.Launch.IsHostLaunching()) and false == Lobby.Join.ZMAllowJoin then
 				return Enum.JoinResult[0xAA3151947FE5E10]
-			elseif f6_local2[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_PRIVATE ) then
+			elseif f6_local2["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_PRIVATE ) then
 				f6_local3 = true
 			end
 		elseif Engine[0x56B4618D857143D]() and Engine[0xE39F1F30B306065]() == false then
@@ -225,13 +225,13 @@ Lobby.Join.JoinResultToString = function ( f8_arg0, f8_arg1 )
 		f8_local0.errorMsg = 0xFE324A6C23AE852
 	elseif f8_arg0 == Enum.JoinResult[0x19A37262B4933A9] then
 		f8_local0.debug = f8_local0.debug .. "NETWORK_MODE_MISMATCH"
-		f8_local0.errorMsg = 0xC1262984183DEAB
+		f8_local0.errorMsg = "menu/join_result_network_mode_mismatch"
 	elseif f8_arg0 == Enum.JoinResult[0x11A1F5E2557ADEE] then
 		f8_local0.debug = f8_local0.debug .. "MISMATCH_PLAYLISTID"
 		f8_local0.errorMsg = 0xF5E0383755610
 	elseif f8_arg0 == Enum.JoinResult[0x1CCAC9B57144FBD] then
 		f8_local0.debug = f8_local0.debug .. "MISMATCH_PLAYLIST_VERSION_TO_NEW"
-		f8_local0.errorMsg = 0x4CF317BC479F1B7
+		f8_local0.errorMsg = "menu/join_result_mismatch_playlist_version_to_new"
 	elseif f8_arg0 == Enum.JoinResult[0x773649B50BD4912] then
 		f8_local0.debug = f8_local0.debug .. "MISMATCH_PLAYLIST_VERSION_TO_OLD"
 		f8_local0.errorMsg = 0x980F57BBD5293F8
@@ -243,7 +243,7 @@ Lobby.Join.JoinResultToString = function ( f8_arg0, f8_arg1 )
 		f8_local0.errorMsg = 0xDEE524B618DC8D4
 	elseif f8_arg0 == Enum.JoinResult[0x8B163743DD1778A] then
 		f8_local0.debug = f8_local0.debug .. "MISMATCH_FFOTD_VERSION_TO_NEW"
-		f8_local0.errorMsg = 0x4CF317BC479F1B7
+		f8_local0.errorMsg = "menu/join_result_mismatch_playlist_version_to_new"
 	elseif f8_arg0 == Enum.JoinResult[0x7D7F7441FCFB31] then
 		f8_local0.debug = f8_local0.debug .. "MISMATCH_FFOTD_VERSION_TO_OLD"
 		f8_local0.errorMsg = 0x980F57BBD5293F8
@@ -270,7 +270,7 @@ Lobby.Join.JoinResultToString = function ( f8_arg0, f8_arg1 )
 		f8_local0.errorMsg = 0x2FB253405B55FEB
 	elseif f8_arg0 == Enum.JoinResult[0xB89BCD557A3E9E9] then
 		f8_local0.debug = f8_local0.debug .. "CHUNK_MP_REQUIRED"
-		f8_local0.errorMsg = 0xB09CBEFC0B1F611
+		f8_local0.errorMsg = "menu/join_result_mp_required"
 	elseif f8_arg0 == Enum.JoinResult[0xE89CBC6ED1BB751] then
 		f8_local0.debug = f8_local0.debug .. "CHUNK_ZM_REQUIRED"
 		f8_local0.errorMsg = 0x52914AE3D277E49
@@ -294,7 +294,7 @@ Lobby.Join.JoinResultToString = function ( f8_arg0, f8_arg1 )
 		f8_local0.errorMsg = 0x269234E91BB604E
 	elseif Engine[0x9E5BE3B4BBA4E0E]( "probation_league_enabled" ) and f8_arg0 == Enum.JoinResult[0xFC4025228C014F4] then
 		f8_local0.debug = f8_local0.debug .. "JOIN_RESULT_IN_ARENA_PROBATION"
-		f8_local0.errorMsg = 0x204EF7E6A9E9E44
+		f8_local0.errorMsg = "menu/join_denied_arena_probation"
 	elseif f8_arg0 == Enum.JoinResult[0xB1D61382C39F8A] then
 		f8_local0.debug = f8_local0.debug .. "JOIN_RESULT_BAD_DLC_BITS"
 		f8_local0.errorMsg = 0x609344F0F879051

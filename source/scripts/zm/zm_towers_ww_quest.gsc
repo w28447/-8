@@ -28,7 +28,7 @@
 // Size: 0xb0c
 function init()
 {
-    level._effect[ #"hash_42cc4bf5e47478c5" ] = #"hash_387c78244f5f45e5";
+    level._effect[ #"ww_quest_brazier_fire" ] = #"hash_387c78244f5f45e5";
     level._effect[ #"hash_5b4e7c178480d885" ] = #"hash_62eafc17a432322a";
     level flag::init( #"hash_57454e59c155098d" );
     level flag::init( #"hash_2fb4b4431d3ed627" );
@@ -50,19 +50,19 @@ function init()
     level flag::init( #"hash_70b6094c8cd39890" );
     zm_sq::register( #"ww_quest", #"destroy_wall", #"destroy_wall", &destroy_wall_setup, &destroy_wall_cleanup );
     zm_sq::register( #"ww_quest", #"knock_brazier", #"knock_brazier", &knock_brazier_setup, &knock_brazier_cleanup );
-    zm_sq::register( #"ww_quest", #"hash_32b57ffc37ccf79a", #"hash_32b57ffc37ccf79a", &function_26956e1e, &function_4f056f0c );
+    zm_sq::register( #"ww_quest", #"grab_rough_statue", #"grab_rough_statue", &function_26956e1e, &function_4f056f0c );
     zm_sq::register( #"ww_quest", #"hash_2e681afa5f81f37", #"hash_2e681afa5f81f37", &function_708cd4d, &function_c4e5bf05 );
-    zm_sq::register( #"ww_quest", #"hash_27967f916a97a057", #"hash_27967f916a97a057", &function_2eea86a9, &function_57b4770f );
-    zm_sq::register( #"ww_quest", #"hash_34d18772151ea4fa", #"hash_34d18772151ea4fa", &function_a1e2245, &function_e02f2459 );
-    zm_sq::register( #"ww_quest", #"hash_2e126c422fbf5654", #"hash_2e126c422fbf5654", &function_9ef8d102, &function_1c380f29 );
-    zm_sq::register( #"ww_quest", #"hash_396293edac63aa6f", #"hash_396293edac63aa6f", &function_dd053937, &function_4509873 );
-    zm_sq::register( #"ww_quest", #"hash_776efec5f9b03a68", #"hash_776efec5f9b03a68", &function_a616131a, &function_605806f );
-    zm_sq::register( #"ww_quest", #"hash_7e929133c03a391b", #"hash_7e929133c03a391b", &function_ac4e38bc, &function_8c32234c );
+    zm_sq::register( #"ww_quest", #"place_rough_statue", #"place_rough_statue", &function_2eea86a9, &function_57b4770f );
+    zm_sq::register( #"ww_quest", #"melt_rough_statue", #"melt_rough_statue", &function_a1e2245, &function_e02f2459 );
+    zm_sq::register( #"ww_quest", #"grab_serket_spile", #"grab_serket_spile", &function_9ef8d102, &function_1c380f29 );
+    zm_sq::register( #"ww_quest", #"earn_impervious_jar", #"earn_impervious_jar", &function_dd053937, &function_4509873 );
+    zm_sq::register( #"ww_quest", #"take_impervious_jar", #"take_impervious_jar", &function_a616131a, &function_605806f );
+    zm_sq::register( #"ww_quest", #"plant_serket_spile", #"plant_serket_spile", &function_ac4e38bc, &function_8c32234c );
     zm_sq::register( #"ww_quest", #"place_impervious_jar", #"place_impervious_jar", &place_impervious_jar_setup, &place_impervious_jar_cleanup );
-    zm_sq::register( #"ww_quest", #"hash_530b93342f7f39ae", #"hash_530b93342f7f39ae", &function_bbdde10e, &function_40f77b4a );
+    zm_sq::register( #"ww_quest", #"fill_impervious_jar", #"fill_impervious_jar", &function_bbdde10e, &function_40f77b4a );
     zm_sq::register( #"ww_quest", #"hash_38a9bcd55c0565ca", #"hash_38a9bcd55c0565ca", &function_ab13e06, &function_868dcb6d );
-    zm_sq::register( #"ww_quest", #"hash_2512f1281c5c7237", #"hash_2512f1281c5c7237", &function_869d271a, &function_79875787 );
-    zm_sq::register( #"ww_quest", #"hash_4e767f415b51d0a1", #"hash_4e767f415b51d0a1", &function_3cadd22, &function_f04288b4 );
+    zm_sq::register( #"ww_quest", #"poison_magic_box", #"poison_magic_box", &function_869d271a, &function_79875787 );
+    zm_sq::register( #"ww_quest", #"take_wonder_weapon", #"take_wonder_weapon", &function_3cadd22, &function_f04288b4 );
     zm_sq::start( #"ww_quest", 1 );
     level scene::add_scene_func( "p8_fxanim_zm_towers_ww_quest_bowl_bundle", &function_73808ab9, "init" );
     var_85034658 = array( "danu", "ra", "odin", "zeus" );
@@ -99,7 +99,7 @@ function function_73808ab9( a_ents )
     mdl_fx = util::spawn_model( "tag_origin", s_fx.origin, s_fx.angles );
     s_fx struct::delete();
     mdl_fx linkto( mdl_brazier, "tag_fx_jnt" );
-    mdl_fx clientfield::set( "" + #"hash_42cc4bf5e47478c5", 1 );
+    mdl_fx clientfield::set( "" + #"ww_quest_brazier_fire", 1 );
     level.var_1285519 = mdl_fx;
     level scene::remove_scene_func( "p8_fxanim_zm_towers_ww_quest_bowl_bundle", &function_73808ab9, "init" );
 }
@@ -149,26 +149,26 @@ function knock_brazier_setup( b_skipped )
 function knock_brazier_cleanup( b_skipped, var_19e802fa )
 {
     wait 0.05;
-    level.var_1285519 clientfield::set( "" + #"hash_42cc4bf5e47478c5", 0 );
+    level.var_1285519 clientfield::set( "" + #"ww_quest_brazier_fire", 0 );
     level.var_1285519 clientfield::set( "" + #"hash_3b746cf6eec416b2", 1 );
     level scene::play( "p8_fxanim_zm_towers_ww_quest_bowl_bundle" );
-    level clientfield::set( "" + #"hash_584e8f7433246444", 1 );
+    level clientfield::set( "" + #"ww_quest_fire_trail", 1 );
     level flag::set( #"hash_17f15c9242ddea6f" );
     wait 1;
     
     switch ( level.var_9f950fe2 )
     {
         case #"danu":
-            str_clientfield = "" + #"hash_418c1c843450232b";
+            str_clientfield = "" + #"ww_quest_scorpio_danu";
             break;
         case #"ra":
-            str_clientfield = "" + #"hash_4d547bf36c6cb2d8";
+            str_clientfield = "" + #"ww_quest_scorpio_ra";
             break;
         case #"odin":
-            str_clientfield = "" + #"hash_38ba3ad0902aa355";
+            str_clientfield = "" + #"ww_quest_scorpio_odin";
             break;
         case #"zeus":
-            str_clientfield = "" + #"hash_24d7233bb17e6558";
+            str_clientfield = "" + #"ww_quest_scorpio_zeus";
             break;
     }
     
@@ -181,7 +181,7 @@ function knock_brazier_cleanup( b_skipped, var_19e802fa )
 // Size: 0x13c
 function function_be25f239()
 {
-    level endon( #"hash_70b6094c8cd39890", #"hash_9b33f522f6f1424", #"end_game" );
+    level endon( #"hash_70b6094c8cd39890", #"rough_statue_picked_up", #"end_game" );
     var_7ccafcfd = getent( "t_l_t_w_w_q", "targetname" );
     level flag::wait_till( #"hash_17f15c9242ddea6f" );
     s_info = var_7ccafcfd waittill( #"trigger" );
@@ -205,7 +205,7 @@ function function_26956e1e( b_skipped )
     
     s_loc = struct::get( "s_ww_quest_rough_statue_unitrigger_" + level.var_9f950fe2 );
     e_player = s_loc zm_unitrigger::function_fac87205( &function_bdcb6aac );
-    level notify( #"hash_9b33f522f6f1424" );
+    level notify( #"rough_statue_picked_up" );
     e_player thread function_710d3ac7();
 }
 
@@ -767,13 +767,13 @@ function function_a616131a( b_skipped )
     }
     
     mdl_jar notsolid();
-    mdl_jar clientfield::set( "" + #"hash_2c6f04d08665dbda", 1 );
+    mdl_jar clientfield::set( "" + #"impervious_jar_petals", 1 );
     n_time = mdl_jar zm_utility::fake_physicslaunch( var_8fa68ef.origin, 1000 );
     wait n_time;
     mdl_jar.origin = var_8fa68ef.origin;
     mdl_jar.angles = var_8fa68ef.angles;
-    mdl_jar clientfield::set( "" + #"hash_2a332df32456c86f", 1 );
-    mdl_jar clientfield::set( "" + #"hash_2c6f04d08665dbda", 0 );
+    mdl_jar clientfield::set( "" + #"impervious_jar_landed", 1 );
+    mdl_jar clientfield::set( "" + #"impervious_jar_petals", 0 );
     s_loc = struct::get( var_8fa68ef.target );
     s_loc.var_6d6bbd67 = mdl_jar;
     e_player = s_loc zm_unitrigger::function_fac87205( &function_5f2a9b69 );
@@ -790,7 +790,7 @@ function function_a616131a( b_skipped )
 function function_605806f( b_skipped, var_19e802fa )
 {
     level flag::set( #"hash_45259bb6368fc0d3" );
-    level zm_ui_inventory::function_7df6bb60( #"hash_d3e328bb2670edf", 1 );
+    level zm_ui_inventory::function_7df6bb60( #"zm_towers_ww_quest_impervious_jar", 1 );
 }
 
 // Namespace zm_towers_ww_quest/zm_towers_ww_quest
@@ -894,7 +894,7 @@ function place_impervious_jar_cleanup( b_skipped, var_19e802fa )
     mdl_jar_filled = util::spawn_model( #"p8_zm_gla_jar_gold_01_full", v_origin - ( 0, 0, 2048 ), v_angles );
     level.var_6d6bbd67 = mdl_jar;
     level.var_1028e128 = mdl_jar_filled;
-    level zm_ui_inventory::function_7df6bb60( #"hash_d3e328bb2670edf", 0 );
+    level zm_ui_inventory::function_7df6bb60( #"zm_towers_ww_quest_impervious_jar", 0 );
 }
 
 // Namespace zm_towers_ww_quest/zm_towers_ww_quest
@@ -961,7 +961,7 @@ function function_ab13e06( b_skipped )
     s_loc = struct::get( "s_ww_quest_place_impervious_jar" );
     e_player = s_loc zm_unitrigger::function_fac87205( &function_f6781b0f );
     level.var_b2b15659 = 1;
-    e_player thread zm_vo::function_a2bd5a0c( #"hash_7afc64a7fa6a0db4", 0, 0, 9999, 1 );
+    e_player thread zm_vo::function_a2bd5a0c( #"vox_imp_jar_fill_pickup", 0, 0, 9999, 1 );
     level.var_b2b15659 = 0;
 }
 
@@ -973,7 +973,7 @@ function function_868dcb6d( b_skipped, var_19e802fa )
 {
     level flag::set( #"hash_1c66e5c351c08de1" );
     level.var_1028e128 delete();
-    level zm_ui_inventory::function_7df6bb60( #"hash_d3e328bb2670edf", 2 );
+    level zm_ui_inventory::function_7df6bb60( #"zm_towers_ww_quest_impervious_jar", 2 );
 }
 
 // Namespace zm_towers_ww_quest/zm_towers_ww_quest
@@ -1047,7 +1047,7 @@ function function_79875787( b_skipped, var_19e802fa )
     callback::on_spawned( &function_e7e07200 );
     array::thread_all( level.players, &function_e7e07200 );
     level.customrandomweaponweights = &function_73ed3038;
-    level zm_ui_inventory::function_7df6bb60( #"hash_d3e328bb2670edf", 0 );
+    level zm_ui_inventory::function_7df6bb60( #"zm_towers_ww_quest_impervious_jar", 0 );
     
     /#
         if ( b_skipped )

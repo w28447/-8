@@ -39,7 +39,7 @@ function ai_init()
 // Size: 0xc8
 function function_41822a58()
 {
-    if ( getdvarint( #"hash_20cd968623dbb8ef", 0 ) )
+    if ( getdvarint( #"scr_wz_patrol_ai", 0 ) )
     {
         patrolspawns = struct::get_array( "wz_patrol_loc", "targetname" );
         
@@ -391,7 +391,7 @@ function function_b25a6169()
 // Size: 0x128
 function function_af46682( patroller )
 {
-    level endon( #"game_ended", #"hash_12a8f2c59a67e4fc" );
+    level endon( #"game_ended", #"death_circle_clear" );
     patroller endon( #"death" );
     
     while ( !isdefined( level.deathcircle ) )

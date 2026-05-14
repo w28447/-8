@@ -1,7 +1,7 @@
 {
     "name": "#mannequin_ai_defaultmelee_mp",
     "baseWeapon": "#mannequin_ai_defaultmelee",
-    "streamkey": "#hash_42c7daacc78f8246",
+    "streamkey": "#mannequin_ai_defaultmelee_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

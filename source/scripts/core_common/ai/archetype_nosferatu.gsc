@@ -1,4 +1,4 @@
-#using script_1f0e83e43bf9c3b9;
+#using scripts\core_common\ai\archetype_nosferatu_interface.gsc;
 #using scripts\core_common\aat_shared;
 #using scripts\core_common\ai\systems\ai_blackboard;
 #using scripts\core_common\ai\systems\animation_state_machine_mocomp;

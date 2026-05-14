@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_hipster_crash",
+    "type": "#tag",
+    "material": "#hash_7c08d7b7fbe74c9f",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#tags/hipster_crash",
+        "icon": "image#loot_ui_icon_tags_hipster_crash",
+        "isdefault": 0
+    }
+}

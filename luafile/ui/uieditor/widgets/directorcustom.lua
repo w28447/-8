@@ -286,7 +286,7 @@ CoD.directorCustom.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 			modelName = "lobbyRoot.privateClient.update"
 		} )
 	end, false )
-	SetUpMatchButton.MapImage.PlaylistHeader.GameModeText:setText( Engine[0xF9F1239CFD921FE]( 0x2FA47140D97F89D ) )
+	SetUpMatchButton.MapImage.PlaylistHeader.GameModeText:setText( Engine[0xF9F1239CFD921FE]( "menu/options_caps" ) )
 	SetUpMatchButton.MapImage.PlaylistHeader.GameModeText:setTTF( "ttmussels_regular" )
 	ZMLoadoutPreviewInfo = SetUpMatchButton
 	StartButton = SetUpMatchButton.subscribeToModel

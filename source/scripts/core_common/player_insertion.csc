@@ -141,7 +141,7 @@ function private function_6c4ae982( localclientnum )
             if ( wormhole_fx === 1 && !var_d5823792 )
             {
                 var_d5823792 = 1;
-                playsound( localclientnum, #"hash_37244e4f8de40dd5" );
+                playsound( localclientnum, #"evt_portal_spawn" );
                 local_player codeplaypostfxbundle( "pstfx_wz_esc_tele_reveal" );
                 local_player codeplaypostfxbundle( "pstfx_wz_esc_tele_sprites" );
             }
@@ -180,7 +180,7 @@ function function_ed1567cc( localclientnum, oldval, newval, bnewent, binitialsna
             self function_d309e55a( "tag_ramp_control_animate", 1 );
         }
         
-        self playsound( 0, #"hash_329be5a324e42ee1" );
+        self playsound( 0, #"evt_plane_door_open" );
         level notify( #"hash_5975d5f569535c41" );
         return;
     }

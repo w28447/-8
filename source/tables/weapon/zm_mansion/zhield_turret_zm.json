@@ -4,7 +4,7 @@
     "displayname": "#weapon/sig_buckler_dw",
     "altWeapon": "#zhield_dw_zm",
     "weapon70": "#zhield_dw",
-    "streamkey": "#hash_2823cb39434aa852",
+    "streamkey": "#zhield_turret_soundbank",
     "worldModelTagRight": "tag_weapon_left",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

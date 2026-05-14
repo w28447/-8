@@ -58,7 +58,7 @@
     "weapon": "weapon#hero_annihilator_wz",
     "type": "itemspawnentry",
     "hash_7a80f06e": 0,
-    "unlockableitemref": "#hash_3fd5bb2354a7541d",
+    "unlockableitemref": "#wz_character_enforcer",
     "hash_d1f348db": 0,
     "hash_cc1bbd2c": 0,
     "hash_ae6581c0": 0,

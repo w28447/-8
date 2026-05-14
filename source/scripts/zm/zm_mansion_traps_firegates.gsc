@@ -30,9 +30,9 @@
 #using scripts\zm_common\zm_utility;
 #using scripts\zm_common\zm_vo;
 
-#namespace namespace_a35b43eb;
+#namespace zm_traps_firegates;
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 0, eflags: 0x2
 // Checksum 0x83328c83, Offset: 0x348
 // Size: 0x44
@@ -41,7 +41,7 @@ function autoexec __init__system__()
     system::register( #"zm_trap_firegate", &__init__, &__main__, undefined );
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 0
 // Checksum 0xc44f1655, Offset: 0x398
 // Size: 0x94
@@ -59,7 +59,7 @@ function __init__()
     init_clientfields();
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 0
 // Checksum 0x80f724d1, Offset: 0x438
 // Size: 0x4
@@ -68,17 +68,17 @@ function __main__()
     
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 0
 // Checksum 0xe6f4dd8a, Offset: 0x448
 // Size: 0x84
 function init_clientfields()
 {
     clientfield::register( "scriptmover", "" + #"trap_light", 8000, 2, "int" );
-    clientfield::register( "scriptmover", "" + #"hash_17df66ef5f71c0de", 8000, 2, "int" );
+    clientfield::register( "scriptmover", "" + #"trap_light_wolf", 8000, 2, "int" );
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 0
 // Checksum 0x92199037, Offset: 0x4d8
 // Size: 0x24
@@ -87,7 +87,7 @@ function init()
     callback::on_connect( &function_96e29e5f );
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 0
 // Checksum 0x80f724d1, Offset: 0x508
 // Size: 0x4
@@ -96,7 +96,7 @@ function function_96e29e5f()
     
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 0
 // Checksum 0x1da75408, Offset: 0x518
 // Size: 0x1d4
@@ -127,7 +127,7 @@ function function_85839afe()
     zm_traps::register_trap_damage( "firegate", &function_26578bc6, &function_5ad19000 );
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 1
 // Checksum 0x5001ab25, Offset: 0x6f8
 // Size: 0x20, Type: bool
@@ -136,7 +136,7 @@ function function_960a9a04( e_ent )
     return e_ent.script_noteworthy === "firegate";
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 0
 // Checksum 0x98839377, Offset: 0x720
 // Size: 0x2fc
@@ -192,7 +192,7 @@ function function_bd8eddac()
     self thread function_aa539d7b();
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 0
 // Checksum 0x58daaa5b, Offset: 0xa28
 // Size: 0x4c8
@@ -251,7 +251,7 @@ function function_aa539d7b()
     }
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 0
 // Checksum 0x81684d0b, Offset: 0xef8
 // Size: 0x2a0
@@ -313,7 +313,7 @@ function function_5b8a557f()
     }
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 0, eflags: 0x4
 // Checksum 0xa2c4ef5a, Offset: 0x11a0
 // Size: 0x52
@@ -325,7 +325,7 @@ function private function_1bcb6813()
     }
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 1
 // Checksum 0xff9426be, Offset: 0x1200
 // Size: 0x2ee, Type: bool
@@ -358,7 +358,7 @@ function function_9026cbcd( player )
         }
         else
         {
-            self sethintstring( #"hash_23c1c09e94181fdb", self.stub.e_trap.zombie_cost );
+            self sethintstring( #"zombie/button_buy_trap", self.stub.e_trap.zombie_cost );
             return true;
         }
     }
@@ -390,7 +390,7 @@ function function_9026cbcd( player )
     return true;
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 0
 // Checksum 0xbb7f2cf5, Offset: 0x14f8
 // Size: 0x1ac
@@ -430,7 +430,7 @@ function function_a8f79714()
     array::add( level.var_4f17d729, function_2a5a929( "gardens" ) );
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 2
 // Checksum 0xd314a96e, Offset: 0x16b0
 // Size: 0x1a6
@@ -457,7 +457,7 @@ function function_2a5a929( str_location, mdl_orb )
     return var_47323b73;
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 0
 // Checksum 0x12e8e03b, Offset: 0x1860
 // Size: 0x178
@@ -489,7 +489,7 @@ function function_b1bd4115()
     }
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 2
 // Checksum 0x6bd0b63a, Offset: 0x19e0
 // Size: 0xf4
@@ -520,7 +520,7 @@ function function_7b170638( var_8163cc4, b_found )
     }
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 0
 // Checksum 0xcd0cf0a6, Offset: 0x1ae0
 // Size: 0x70
@@ -536,7 +536,7 @@ function pickup_spin()
     }
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 0
 // Checksum 0x5dff4318, Offset: 0x1b58
 // Size: 0x1a4
@@ -571,7 +571,7 @@ function function_16746b30()
     }
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 0
 // Checksum 0x80f724d1, Offset: 0x1d08
 // Size: 0x4
@@ -580,7 +580,7 @@ function function_30db46c1()
     
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 1
 // Checksum 0x867523e, Offset: 0x1d18
 // Size: 0x310
@@ -623,7 +623,7 @@ function function_45a2294f( str_id )
     }
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 1
 // Checksum 0xbc41a44c, Offset: 0x2030
 // Size: 0xa4
@@ -645,7 +645,7 @@ function activate_trap( e_player )
     }
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 0
 // Checksum 0xf4ba6dc, Offset: 0x20e0
 // Size: 0xa6
@@ -660,7 +660,7 @@ function deactivate_trap()
     self notify( #"trap_done" );
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 1
 // Checksum 0xc1ebcc06, Offset: 0x2190
 // Size: 0x1dc
@@ -698,7 +698,7 @@ function function_7d9e84f9( str_color = "red" )
     self playsound( #"hash_370460eab1a33ee6" );
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 0
 // Checksum 0x38c4bc0a, Offset: 0x2378
 // Size: 0x56
@@ -712,7 +712,7 @@ function function_5627d722()
     }
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 1
 // Checksum 0xe3cdd376, Offset: 0x23d8
 // Size: 0x31c
@@ -776,7 +776,7 @@ function function_5ad19000( e_trap )
     self dodamage( 20000, e_trap.origin, undefined, e_trap, undefined, "MOD_BURNED", 0, undefined );
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 1
 // Checksum 0xd5c6450, Offset: 0x2700
 // Size: 0xa4
@@ -788,7 +788,7 @@ function function_26578bc6( t_damage )
     }
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 0
 // Checksum 0xdd602ce0, Offset: 0x27b0
 // Size: 0x20c
@@ -835,7 +835,7 @@ function function_21fd7c39()
     }
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 0, eflags: 0x4
 // Checksum 0xe79e73e9, Offset: 0x29c8
 // Size: 0xa4
@@ -848,7 +848,7 @@ function private function_1eeda1e5()
     self thread zm_vo::vo_say( str_vo, 0, 1, 9999 );
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 0
 // Checksum 0x6d8ff046, Offset: 0x2a78
 // Size: 0x34
@@ -858,7 +858,7 @@ function function_7947b7ee()
     self.bulletclip notsolid();
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 0
 // Checksum 0xfd696e93, Offset: 0x2ab8
 // Size: 0x4e
@@ -869,7 +869,7 @@ function blue_fire()
     self notify( #"extinguish" );
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 1, eflags: 0x4
 // Checksum 0xc8a53b0e, Offset: 0x2b10
 // Size: 0x1e2

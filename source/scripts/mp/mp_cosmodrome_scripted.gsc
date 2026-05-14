@@ -588,7 +588,7 @@ function kill_equipment( rocket_kill_trig )
             color = ( 0, 1, 0 );
         }
         
-        while ( getdvarint( #"hash_2115192db52b1b16", 0 ) )
+        while ( getdvarint( #"dev_debug_pa", 0 ) )
         {
             foreach ( loc in locs )
             {
@@ -611,7 +611,7 @@ function kill_equipment( rocket_kill_trig )
             color = ( 0, 1, 0 );
         }
         
-        if ( getdvarint( #"hash_2115192db52b1b16", 0 ) )
+        if ( getdvarint( #"dev_debug_pa", 0 ) )
         {
             /#
                 print3d( loc + ( 0, 0, 32 ), alias, color, 1, 1.2, 120 );

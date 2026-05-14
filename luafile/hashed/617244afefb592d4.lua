@@ -267,8 +267,8 @@ CoD.StartMenu_Inventory_CurrentWeaponPC.new = function ( f1_arg0, f1_arg1, f1_ar
 			modelName = "currentWeaponIndex"
 		} )
 	end, false )
-	HeaderWeapon2.HeaderWeapon:setText( Engine[0xF9F1239CFD921FE]( 0x7D3125BD606CC1 ) )
-	HeaderWeapon2.HeaderWeaponAsian:setText( Engine[0xF9F1239CFD921FE]( 0x7D3125BD606CC1 ) )
+	HeaderWeapon2.HeaderWeapon:setText( Engine[0xF9F1239CFD921FE]( "warzone/weapon_2" ) )
+	HeaderWeapon2.HeaderWeaponAsian:setText( Engine[0xF9F1239CFD921FE]( "warzone/weapon_2" ) )
 	SwitchWeaponImage = HeaderWeapon2
 	GamepadText = HeaderWeapon2.subscribeToModel
 	f1_local9 = DataSources.WarzoneInventory.getModel( f1_arg1 )

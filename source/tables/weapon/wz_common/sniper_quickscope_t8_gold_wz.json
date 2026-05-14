@@ -5,7 +5,7 @@
     "xhash_60": "#hash_687434eef5a36ef8",
     "weapon70": "#sniper_quickscope_t8_gold",
     "weapon890": "#sniper_quickscope_t8_wz",
-    "streamkey": "#hash_43f017a40685d5a8",
+    "streamkey": "#sniper_quickscope_t8_gold_soundbank",
     "scrstr_8c8": [
         "tag_antenna_wire1_pba",
         "tag_antenna_wire3_pba",
@@ -68,7 +68,7 @@
     "sound210": "#hash_3f969a2cbe6bf119",
     "sound240": "#hash_474a10cd847c7803",
     "sound250": "#hash_146e19cd67fe19de",
-    "sound260": "#hash_515f54aa1f553686",
+    "sound260": "#prj_crack_supersonic",
     "sound310": "#hash_553957b278d8e879",
     "sound5e0": "#fly_scope_zoom",
     "sound600": "#hash_5c9addf2686f77e2",

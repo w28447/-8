@@ -400,7 +400,7 @@ function function_20edb636( weapon, playerbundle )
             returnstruct.var_17a094cf = playerbundle.tempestweaponsuccess;
             break;
         case #"eq_tripwire":
-            returnstruct.var_17a094cf = playerbundle.var_eb8b9d7a;
+            returnstruct.var_17a094cf = playerbundle.tripwireweaponsuccess;
             break;
         case #"hero_pineapplegun":
             returnstruct.var_17a094cf = playerbundle.warmachineweaponsuccess;
@@ -411,10 +411,10 @@ function function_20edb636( weapon, playerbundle )
             returnstruct.var_17a094cf = playerbundle.var_febcf0b;
             break;
         case #"eq_concertina_wire":
-            returnstruct.var_17a094cf = playerbundle.var_d5983ddb;
+            returnstruct.var_17a094cf = playerbundle.concertinawireweaponsuccess;
             break;
         case #"eq_swat_grenade":
-        case #"hash_3f62a872201cd1ce":
+        case #"swat_grenade_payload":
         case #"hash_5825488ac68418af":
             returnstruct.var_17a094cf = playerbundle.var_bd81e586;
             returnstruct.startdelay = mpdialog_value( "nineBangSuccessDialogBuffer", 0 );
@@ -432,7 +432,7 @@ function function_20edb636( weapon, playerbundle )
             returnstruct.startdelay = mpdialog_value( "radiationFieldPodSuccessDialogBuffer", 0 );
             break;
         case #"eq_sensor":
-            returnstruct.var_17a094cf = playerbundle.var_ef10cbc3;
+            returnstruct.var_17a094cf = playerbundle.sensordartweaponsuccess;
             break;
         case #"gadget_supplypod":
             returnstruct.var_17a094cf = playerbundle.var_383d5df3;
@@ -445,7 +445,7 @@ function function_20edb636( weapon, playerbundle )
             returnstruct.var_17a094cf = playerbundle.var_74dd2839;
             break;
         case #"gadget_icepick":
-            returnstruct.var_17a094cf = playerbundle.var_e870e40c;
+            returnstruct.var_17a094cf = playerbundle.icepickweaponsuccess;
             break;
         case #"eq_hawk":
             returnstruct.var_17a094cf = playerbundle.var_bcaf7574;

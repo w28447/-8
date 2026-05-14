@@ -24,15 +24,15 @@ function init()
     var_b7863a03 = getminbitcountfornum( 3 );
     clientfield::register( "allplayers", "" + #"spear_fire_fx", 16000, 1, "int", &spear_fire_fx, 0, 1 );
     clientfield::register( "allplayers", "" + #"hash_4a149c9daff159cd", 16000, 1, "int", &function_d02ccc7c, 0, 1 );
-    clientfield::register( "toplayer", "" + #"hash_7343b1cdab1f31c5", 16000, 1, "counter", &function_3d3614aa, 0, 0 );
-    clientfield::register( "scriptmover", "" + #"hash_2a17f2993036fab4", 16000, 1, "counter", &function_6a9e68bf, 0, 0 );
+    clientfield::register( "toplayer", "" + #"spear_fire_rumble", 16000, 1, "counter", &spear_fire_rumble, 0, 0 );
+    clientfield::register( "scriptmover", "" + #"greek_fire_annihilate", 16000, 1, "counter", &greek_fire_annihilate, 0, 0 );
     clientfield::register( "scriptmover", "" + #"rune_fire", 16000, 1, "int", &function_659d8180, 0, 0 );
     clientfield::register( "scriptmover", "" + #"monument_eyes", 16000, var_7551dff2, "int", &monument_eyes, 0, 0 );
     clientfield::register( "scriptmover", "" + #"hash_78fa79d021d86cb6", 16000, 1, "int", &function_27f4136d, 0, 0 );
     clientfield::register( "scriptmover", "" + #"hash_4f90c0f4c5bc1c42", 16000, 1, "int", &function_31d064c0, 0, 0 );
     clientfield::register( "scriptmover", "" + #"hash_784f06b253332f8f", 16000, 1, "counter", &function_148f3698, 0, 0 );
     clientfield::register( "toplayer", "" + #"hash_491027931a3fc18f", 16000, 1, "int", &function_efc5ca9d, 0, 0 );
-    clientfield::register( "world", "" + #"hash_682b7b65432b7746", 16000, var_b7863a03, "int", &function_fb3b37f4, 0, 0 );
+    clientfield::register( "world", "" + #"oil_trail_decal", 16000, var_b7863a03, "int", &oil_trail_decal, 0, 0 );
     clientfield::register( "toplayer", "" + #"hash_214549d33d068451", 16000, 1, "counter", &function_405ead09, 0, 0 );
     clientfield::register( "world", "" + #"hash_51858e923e750c33", 16000, 2, "int", &function_8d3c45d8, 0, 0 );
     clientfield::register( "world", "" + #"hash_2b05d4c6217bac22", 16000, 2, "int", &function_e8ce5b81, 0, 0 );
@@ -49,7 +49,7 @@ function init()
     clientfield::register( "toplayer", "" + #"hash_11480c2b11f0c92f", 16000, 1, "counter", &function_b1017eda, 0, 0 );
     clientfield::register( "scriptmover", "" + #"hash_6d76e4b7a31537af", 16000, 1, "int", &function_ddf8e6d7, 0, 0 );
     clientfield::register( "world", "" + #"hash_4d77ba61cd7f3eb7", 16000, 1, "counter", &function_81289c69, 0, 0 );
-    clientfield::register( "world", "" + #"hash_43972920fa314daa", 16000, 2, "int", &function_73a5ca1a, 0, 0 );
+    clientfield::register( "world", "" + #"light_hemera_beam", 16000, 2, "int", &light_hemera_beam, 0, 0 );
     clientfield::register( "toplayer", "" + #"hash_25cfe5e9786d97e7", 16000, 1, "int", &function_4d61e8ab, 0, 0 );
     clientfield::register( "scriptmover", "" + #"hash_125706eb7b363924", 16000, 1, "int", &function_c6c41fb1, 0, 0 );
     clientfield::register( "vehicle", "" + #"hash_7fc7f7b5958831d4", 16000, 1, "int", &function_ad6b5484, 0, 0 );
@@ -83,7 +83,7 @@ function init()
     clientfield::register( "world", "" + #"play_fanfare", 16000, var_995dd8bf, "int", &play_fanfare, 0, 0 );
     clientfield::register( "scriptmover", "" + #"blood_teleport", 16000, 1, "counter", &blood_teleport, 0, 0 );
     clientfield::register( "allplayers", "" + #"hash_67b317587e795ec2", 16000, 1, "int", &function_bb7443e, 0, 0 );
-    clientfield::register( "allplayers", "" + #"hash_10275bcd47e53936", 16000, 1, "int", &function_f5ec271e, 0, 0 );
+    clientfield::register( "allplayers", "" + #"blood_graphic_content", 16000, 1, "int", &blood_graphic_content, 0, 0 );
     clientfield::register( "toplayer", "" + #"hash_49068d48a9eb7b89", 16000, 2, "int", &function_9b5699b4, 0, 0 );
     clientfield::register( "world", "" + #"hash_51e28147388ee3d8", 16000, 1, "int", &function_59ea1144, 0, 0 );
     clientfield::register( "world", "" + #"hash_16e27bea0cc1b56b", 16000, 1, "int", &function_806b16b7, 0, 0 );
@@ -96,7 +96,7 @@ function init()
     level._effect[ #"hash_7210806af22770bb" ] = #"hash_527b5ca4206503fd";
     level._effect[ #"hash_48f9a29daf00294a" ] = #"hash_752bfcf80c9da234";
     level._effect[ #"hash_48f3969daefba938" ] = #"hash_7531e8f80ca1ebe6";
-    level._effect[ #"hash_2a17f2993036fab4" ] = #"hash_6638fd8cf4876df";
+    level._effect[ #"greek_fire_annihilate" ] = #"hash_6638fd8cf4876df";
     level._effect[ #"rune_fire" ] = #"hash_7504bcf503817eb2";
     level._effect[ #"hash_784f06b253332f8f" ] = #"hash_7d24820ee5231fef";
     level._effect[ #"hash_797e7381ba62ff8a" ] = #"hash_795ee7d89d6f10d2";
@@ -213,28 +213,28 @@ function function_70f269cd( localclientnum, newval, str_step )
     switch ( str_step )
     {
         case #"oil":
-            a_s_points = function_cc7e9fc3( #"hash_219b4f20890b177b" );
+            a_s_points = function_cc7e9fc3( #"s_progress_oil" );
             break;
         case #"reflect":
-            a_s_points = function_cc7e9fc3( #"hash_6ae79ecdde61ddea", #"hash_219b4f20890b177b" );
+            a_s_points = function_cc7e9fc3( #"s_progress_reflect", #"s_progress_oil" );
             break;
         case #"split_prophecy":
-            a_s_points = function_cc7e9fc3( #"hash_64f85050330547ca", #"hash_6ae79ecdde61ddea" );
+            a_s_points = function_cc7e9fc3( #"s_progress_split_prophecy", #"s_progress_reflect" );
             break;
         case #"split_light":
-            a_s_points = function_cc7e9fc3( #"hash_218b3395cd5cfd78", #"hash_6ae79ecdde61ddea" );
+            a_s_points = function_cc7e9fc3( #"s_progress_split_light", #"s_progress_reflect" );
             break;
         case #"prophecy":
-            a_s_points = function_cc7e9fc3( #"hash_215626beb36c1b07", #"hash_64f85050330547ca" );
+            a_s_points = function_cc7e9fc3( #"s_progress_prophecy", #"s_progress_split_prophecy" );
             break;
         case #"light":
-            a_s_points = function_cc7e9fc3( #"hash_20ba31ada21bdeaf", #"hash_218b3395cd5cfd78" );
+            a_s_points = function_cc7e9fc3( #"s_progress_light", #"s_progress_split_light" );
             break;
         case #"play":
-            a_s_points = function_cc7e9fc3( #"hash_30d4d7a6ef033383" );
+            a_s_points = function_cc7e9fc3( #"s_progress_play" );
             break;
         case #"blood":
-            a_s_points = function_cc7e9fc3( #"hash_196c59af72f28307", #"hash_30d4d7a6ef033383" );
+            a_s_points = function_cc7e9fc3( #"s_progress_blood", #"s_progress_play" );
             break;
     }
     
@@ -537,7 +537,7 @@ function function_d02ccc7c( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0xb94ea77e, Offset: 0x3630
 // Size: 0x64
-function function_3d3614aa( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function spear_fire_rumble( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     self playrumbleonentity( localclientnum, #"hash_230077451d7197c1" );
 }
@@ -546,9 +546,9 @@ function function_3d3614aa( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0x15965299, Offset: 0x36a0
 // Size: 0x74
-function function_6a9e68bf( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
+function greek_fire_annihilate( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
-    util::playfxontag( localclientnum, level._effect[ #"hash_2a17f2993036fab4" ], self, "tag_origin" );
+    util::playfxontag( localclientnum, level._effect[ #"greek_fire_annihilate" ], self, "tag_origin" );
 }
 
 // Namespace zm_red_main_quest/zm_red_main_quest
@@ -619,7 +619,7 @@ function function_9dbc7c12( localclientnum, oldval, newval, bnewent, binitialsna
 // Size: 0xd4
 function function_613a43b6( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
-    s_fx = struct::get( #"hash_1ccb47ff147a81f4" );
+    s_fx = struct::get( #"s_prophecy_line" );
     playfx( localclientnum, level._effect[ #"hash_530e1caa1a8c81d2" ], s_fx.origin, anglestoforward( s_fx.angles ), anglestoup( s_fx.angles ) );
 }
 
@@ -636,7 +636,7 @@ function function_b1017eda( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0xde46c10a, Offset: 0x3b40
 // Size: 0xe0
-function function_fb3b37f4( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function oil_trail_decal( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( newval )
     {
@@ -786,7 +786,7 @@ function function_81289c69( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0xa3dc9f64, Offset: 0x4278
 // Size: 0x53c
-function function_73a5ca1a( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function light_hemera_beam( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( !isdefined( level.var_94068374 ) )
     {
@@ -1569,7 +1569,7 @@ function function_67b43987( localclientnum, newval, str_ww )
 // Size: 0x346
 function function_141a55a4( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    a_s_glyphs = struct::get_array( #"hash_61ba778e4f6ae3e" );
+    a_s_glyphs = struct::get_array( #"s_play_warn" );
     
     if ( newval )
     {
@@ -1739,7 +1739,7 @@ function function_180e26e2()
     level.var_bbe677e8[ #"close" ] = [];
     level.var_bbe677e8[ #"far" ] = [];
     level.var_bbe677e8[ #"all" ] = [];
-    a_s_pos = struct::get_array( #"hash_7c9fecc7da908461" );
+    a_s_pos = struct::get_array( #"s_play_react" );
     
     foreach ( s_pos in a_s_pos )
     {
@@ -1827,7 +1827,7 @@ function function_bb7443e( localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7
 // Checksum 0x190e0c7a, Offset: 0x76d8
 // Size: 0x124
-function function_f5ec271e( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function blood_graphic_content( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( newval )
     {
@@ -1901,7 +1901,7 @@ function function_9b5699b4( localclientnum, oldval, newval, bnewent, binitialsna
 // Size: 0x12c
 function function_59ea1144( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    s_omphalos = struct::get( #"hash_2ea39900a13a8305" );
+    s_omphalos = struct::get( #"s_cleanse_dest" );
     
     if ( newval )
     {
@@ -1925,7 +1925,7 @@ function function_59ea1144( localclientnum, oldval, newval, bnewent, binitialsna
 // Size: 0x1a0
 function function_806b16b7( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    s_omphalos = struct::get( #"hash_2ea39900a13a8305" );
+    s_omphalos = struct::get( #"s_cleanse_dest" );
     
     if ( !isdefined( s_omphalos.mdl_rumble ) )
     {
@@ -2028,7 +2028,7 @@ function function_83a7c416( localclientnum )
     self notify( "4cde9c02a6d66818" );
     self endon( "4cde9c02a6d66818" );
     level endon( #"end_game" );
-    s_fx = struct::get( #"hash_3ad02ac72362ec5c" );
+    s_fx = struct::get( #"s_cleanse_electrify" );
     b_swap = 0;
     var_43997e53 = 2;
     
@@ -2101,7 +2101,7 @@ function function_842fb5d0( localclientnum, oldval, newval, bnewent, binitialsna
 // Size: 0x18c
 function cleanse_portal( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    s_fx = struct::get( #"hash_2ea39900a13a8305" );
+    s_fx = struct::get( #"s_cleanse_dest" );
     
     if ( newval )
     {

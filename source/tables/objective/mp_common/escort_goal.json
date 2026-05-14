@@ -15,7 +15,7 @@
     "shouldCullDistance": false,
     "cullDistance": 300,
     "hasLowAmmoState": false,
-    "waypointText": "#hash_7d7c9864e22e30b9",
+    "waypointText": "#objectives/escort_goal_defend",
     "waypointImage": "#hash_278e67ae6794f956",
     "unk30": 300,
     "bundle": {

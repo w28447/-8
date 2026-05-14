@@ -7,7 +7,7 @@
     "entries": [
         {
             "name": "#hash_5e3516ca15ac8b76",
-            "description": "#hash_6fdcc66d6ac640ff",
+            "description": "#playlist/zm_zod",
             "lobbyMainMode": "CAMPAIGN",
             "image": "#ui_icon_gamemode_zm_classic",
             "imageBackground": "#ui_icon_director_tile_zm_zod",
@@ -42,7 +42,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -113,7 +113,7 @@
             "rotations": [
                 {
                     "map": "#zm_zodt8",
-                    "gametype": "#hash_258d8197652b186",
+                    "gametype": "#gametype_zm_ztcm_zod",
                     "weight": 1,
                     "isFree": false
                 }
@@ -157,7 +157,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -228,7 +228,7 @@
             "rotations": [
                 {
                     "map": "#zm_towers",
-                    "gametype": "#hash_616f698a73f70523",
+                    "gametype": "#gametype_zm_ztcm_towers",
                     "weight": 1,
                     "isFree": true
                 }
@@ -273,7 +273,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -344,7 +344,7 @@
             "rotations": [
                 {
                     "map": "#zm_escape",
-                    "gametype": "#hash_13f9d8bc3e1a7ae6",
+                    "gametype": "#gametype_zm_ztcm_escape",
                     "weight": 1,
                     "isFree": false
                 }
@@ -390,7 +390,7 @@
             "rules": [
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_8a2424003e8e98a",
+                    "name": "#lobby_readyuppercentrequired",
                     "value": ".65",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -461,7 +461,7 @@
             "rotations": [
                 {
                     "map": "#zm_mansion",
-                    "gametype": "#hash_1e5875499cb656c2",
+                    "gametype": "#gametype_zm_ztcm_mansion",
                     "weight": 1,
                     "isFree": false
                 }

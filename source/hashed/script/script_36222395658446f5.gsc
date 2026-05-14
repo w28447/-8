@@ -917,11 +917,11 @@ function function_d291665f()
     
     while ( !self flag::get( #"hash_1213756b45a941f0" ) )
     {
-        waitresult = level waittill( #"hash_148b3ce521088846", #"hash_317f58ba0d580c27", #"hash_528d7b7f7d6c51a1" );
+        waitresult = level waittill( #"spin_trap_kill", #"acid_trap_kill", #"fan_trap_kill" );
         
         switch ( waitresult._notify )
         {
-            case #"hash_148b3ce521088846":
+            case #"spin_trap_kill":
                 if ( isdefined( self.var_8d32f494 ) )
                 {
                     self.var_8d32f494++;
@@ -938,7 +938,7 @@ function function_d291665f()
                 }
                 
                 break;
-            case #"hash_317f58ba0d580c27":
+            case #"acid_trap_kill":
                 if ( isdefined( self.var_78b705d8 ) )
                 {
                     self.var_78b705d8++;
@@ -955,7 +955,7 @@ function function_d291665f()
                 }
                 
                 break;
-            case #"hash_528d7b7f7d6c51a1":
+            case #"fan_trap_kill":
                 if ( isdefined( self.var_27738b05 ) )
                 {
                     self.var_27738b05++;
@@ -984,7 +984,7 @@ function function_68eca9eb()
 {
     self endon( #"disconnect" );
     level.t_g_o_s4 = getent( "t_g_o_s4", "targetname" );
-    self thread function_da7db256();
+    self thread ee_exp_monkey_fire_();
     self flag::wait_till( #"hash_21827937692e2aba" );
     self construction();
 }
@@ -993,7 +993,7 @@ function function_68eca9eb()
 // Params 0
 // Checksum 0x2c0ba604, Offset: 0x3d78
 // Size: 0x15e
-function function_da7db256()
+function ee_exp_monkey_fire_()
 {
     self endon( #"disconnect", #"hash_21827937692e2aba" );
     

@@ -3,7 +3,7 @@
     "baseWeapon": "#tank_robot_launcher_turret_ct",
     "displayname": "#weapon/tank_robot",
     "weapon70": "#ai_tank_marker",
-    "streamkey": "#hash_4c886ff93c0db27e",
+    "streamkey": "#tank_robot_launcher_turret_ct_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

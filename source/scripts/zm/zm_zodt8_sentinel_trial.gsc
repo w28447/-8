@@ -89,7 +89,7 @@ function init_fx()
 // Size: 0x674
 function init_clientfields()
 {
-    clientfield::register( "world", "" + #"hash_3c58464f16d8a1be", 1, 1, "int" );
+    clientfield::register( "world", "" + #"reveal_ee_space", 1, 1, "int" );
     clientfield::register( "scriptmover", "" + #"essence_fx", 1, 1, "int" );
     clientfield::register( "scriptmover", "" + #"land_fx", 1, 1, "int" );
     clientfield::register( "scriptmover", "" + #"planet_light", 1, getminbitcountfornum( 9 ), "int" );
@@ -99,7 +99,7 @@ function init_clientfields()
     clientfield::register( "scriptmover", "" + #"ice_damage_fx", 1, 2, "int" );
     clientfield::register( "scriptmover", "" + #"ice_rising_fx", 1, 1, "int" );
     clientfield::register( "scriptmover", "" + #"blocker_fx", 1, 1, "int" );
-    clientfield::register( "scriptmover", "" + #"hash_68e2384b254175da", 1, 1, "counter" );
+    clientfield::register( "scriptmover", "" + #"planet_glyph_activate", 1, 1, "counter" );
     clientfield::register( "scriptmover", "" + #"pipe_fx", 1, 2, "int" );
     clientfield::register( "scriptmover", "" + #"teleport_sigil", 1, 1, "int" );
     clientfield::register( "scriptmover", "" + #"hash_46e2ed49fb0f55c6", 1, 1, "int" );
@@ -111,7 +111,7 @@ function init_clientfields()
     clientfield::register( "toplayer", "" + #"iceberg_rumbles", 1, 1, "int" );
     clientfield::register( "toplayer", "" + #"cold_time_fx", 1, 1, "counter" );
     clientfield::register( "toplayer", "" + #"icy_bubbles", 1, 1, "int" );
-    clientfield::register( "toplayer", "" + #"hash_58b44c320123e829", 1, 1, "int" );
+    clientfield::register( "toplayer", "" + #"water_ragdolls", 1, 1, "int" );
     clientfield::register( "toplayer", "" + #"camera_snow", 1, 1, "int" );
     clientfield::register( "vehicle", "" + #"orb_fx", 1, 1, "int" );
 }
@@ -134,12 +134,12 @@ function init_flags()
     level flag::init( #"catalyst_encounters_completed" );
     level flag::init( #"hash_7a31252c7c941976" );
     level flag::init( #"hash_27a2746eb30e61c" );
-    level flag::init( #"hash_3e80d503318a5674" );
+    level flag::init( #"artifact_picked_up" );
     level flag::init( #"hash_452df3df817c57f9" );
-    level flag::init( #"hash_63a102a7ae564e99" );
+    level flag::init( #"orrery_initialized" );
     level flag::init( #"orrery_activated" );
-    level flag::init( #"hash_76dd603f61fa542d" );
-    level flag::init( #"hash_77f76266b597a1f7" );
+    level flag::init( #"orrery_revealed" );
+    level flag::init( #"planet_out_of_order" );
     level flag::init( #"planet_step_completed" );
     level flag::init( #"hash_1a742576c41a0ab9" );
     level flag::init( #"hash_767ce45fce848b88" );
@@ -171,7 +171,7 @@ function init_steps()
 // Size: 0x2ec
 function function_91be5845()
 {
-    level.a_s_sparks = array::randomize( struct::get_array( #"hash_b29f24eab97a1d" ) );
+    level.a_s_sparks = array::randomize( struct::get_array( #"catalyst_spark_loc" ) );
     a_str_noteworthy = array( #"hash_41a5c5168ffb2a97", #"hash_400a481490a4e390", #"hash_5562e324d230f057", #"hash_41fae186552f1259" );
     
     while ( level.a_s_sparks.size > a_str_noteworthy.size )
@@ -299,7 +299,7 @@ function function_e3163424( var_5ea5c94d )
 function function_c4bd3743( var_5ea5c94d, ended_early )
 {
     level flag::set( "power_on" );
-    level flag::set( #"hash_3e80d503318a5674" );
+    level flag::set( #"artifact_picked_up" );
     zm_utility::giveachievement_wrapper( "ZM_ZODT8_TRIAL_STEP_1", 1 );
 }
 
@@ -523,7 +523,7 @@ function function_f4e792d3( var_d0b3106f, var_b267963b, var_a761a549 )
     if ( var_a3ea9bcc > n_angle + 10 || var_a3ea9bcc < n_angle - 10 )
     {
         /#
-            if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+            if ( getdvarint( #"zm_debug_ee_system", 0 ) )
             {
                 iprintlnbold( "<dev string:x88>" + self.script_zone + "<dev string:xa7>" + self.targetname );
                 println( "<dev string:x88>" + self.script_zone + "<dev string:xa7>" + self.targetname );
@@ -531,7 +531,7 @@ function function_f4e792d3( var_d0b3106f, var_b267963b, var_a761a549 )
         #/
         
         /#
-            if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+            if ( getdvarint( #"zm_debug_ee_system", 0 ) )
             {
                 iprintlnbold( "<dev string:xac>" + var_d0b3106f + "<dev string:xc3>" );
                 println( "<dev string:xac>" + var_d0b3106f + "<dev string:xc3>" );
@@ -539,7 +539,7 @@ function function_f4e792d3( var_d0b3106f, var_b267963b, var_a761a549 )
         #/
         
         /#
-            if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+            if ( getdvarint( #"zm_debug_ee_system", 0 ) )
             {
                 iprintlnbold( "<dev string:xce>" + var_a3ea9bcc / -30 + "<dev string:xc3>" );
                 println( "<dev string:xce>" + var_a3ea9bcc / -30 + "<dev string:xc3>" );
@@ -840,7 +840,7 @@ function function_c76f5e7f()
                     else
                     {
                         /#
-                            if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+                            if ( getdvarint( #"zm_debug_ee_system", 0 ) )
                             {
                                 iprintlnbold( "<dev string:x16f>" + self.script_noteworthy );
                                 println( "<dev string:x16f>" + self.script_noteworthy );
@@ -1142,7 +1142,7 @@ function function_73a32bb4( var_5ea5c94d )
     function_ce111e55();
     
     /#
-        if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+        if ( getdvarint( #"zm_debug_ee_system", 0 ) )
         {
             gear_up( 1, 0 );
         }
@@ -1325,7 +1325,7 @@ function function_1c841015()
         if ( !level flag::get( #"water_drained_aft" ) )
         {
             level thread zm_zodt8::change_water_height_aft( 1 );
-            level notify( #"hash_47d532bd5a3fa1f5" );
+            level notify( #"water_drained_aft_water_pump" );
         }
         
         s_result = level flag::wait_till_any( a_flags );
@@ -1349,7 +1349,7 @@ function function_1c841015()
         
         callback::on_spawned( &function_8b8eabba );
         function_3a730415();
-        level flag::wait_till( #"hash_3e80d503318a5674" );
+        level flag::wait_till( #"artifact_picked_up" );
         level flag::set( #"catalyst_encounters_completed" );
         break;
     }
@@ -1364,7 +1364,7 @@ function function_3a730415( b_success = 1 )
     wait 3;
     music::setmusicstate( "none" );
     level.musicsystemoverride = 0;
-    function_63a0f09e( b_success );
+    main_quest_screen_flash( b_success );
     wait 5;
     
     if ( b_success )
@@ -1554,7 +1554,7 @@ function function_8a0679e4( s_struct, s_portal )
 {
     s_portal function_6099877a( 64 );
     
-    if ( !level flag::get( #"hash_3e80d503318a5674" ) )
+    if ( !level flag::get( #"artifact_picked_up" ) )
     {
         level thread function_8a0679e4( s_struct, s_portal );
         return;
@@ -1575,7 +1575,7 @@ function function_8a0679e4( s_struct, s_portal )
     level.var_eeb98313 = &function_65880cbe;
     level clientfield::set( "fasttravel_exploder", 0 );
     level thread function_43a16eb7( s_struct.script_noteworthy, s_portal );
-    level waittill( #"hash_332a98e65f5dce4" );
+    level waittill( #"mq_teleport_start" );
     function_999a6c5( s_struct.script_noteworthy, 1 );
     s_powerup = struct::get( s_struct.script_noteworthy, "script_powerup" );
     
@@ -1944,7 +1944,7 @@ function function_ad0eee44( str_element )
     zm_sq_modules::function_3f808d3d( #"hash_34f827c2750a5a25" + str_element );
     s_artifact = struct::get( #"hash_34f827c2750a5a25" + str_element );
     s_moveto = struct::get( s_artifact.target );
-    level flag::clear( #"hash_3e80d503318a5674" );
+    level flag::clear( #"artifact_picked_up" );
     mdl_artifact = util::spawn_model( #"hash_12eedcc89df28c41", s_artifact.origin, s_artifact.angles );
     mdl_artifact notsolid();
     mdl_artifact setscale( 1.25 );
@@ -1971,7 +1971,7 @@ function function_ad0eee44( str_element )
     zm_sq_modules::function_2a94055d( #"hash_34f827c2750a5a25" + str_element );
     waitframe( 1 );
     
-    if ( level flag::get( #"hash_511653209a0c8cc5" + str_element + "_completed" ) )
+    if ( level flag::get( #"catalyst_spark_" + str_element + "_completed" ) )
     {
         switch ( str_element )
         {
@@ -2014,7 +2014,7 @@ function function_ad0eee44( str_element )
         }
     }
     
-    level flag::set( #"hash_3e80d503318a5674" );
+    level flag::set( #"artifact_picked_up" );
     mdl_artifact delete();
 }
 
@@ -2351,7 +2351,7 @@ function function_92cd9426( var_5ea5c94d, ended_early )
     
     if ( level flag::get( #"water_drained_fore" ) )
     {
-        level flag::set( #"hash_76dd603f61fa542d" );
+        level flag::set( #"orrery_revealed" );
         return;
     }
     
@@ -2484,7 +2484,7 @@ function function_1f9c58bd()
         wait 0.2;
     }
     
-    level flag::set( #"hash_76dd603f61fa542d" );
+    level flag::set( #"orrery_revealed" );
 }
 
 // Namespace zodt8_sentinel/zm_zodt8_sentinel_trial
@@ -2663,9 +2663,9 @@ function function_443b1ad2( var_5ea5c94d )
     level zm_ui_inventory::function_7df6bb60( #"zm_zodt8_sentinel_trial", 6 );
     
     /#
-        if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+        if ( getdvarint( #"zm_debug_ee_system", 0 ) )
         {
-            level flag::set( #"hash_76dd603f61fa542d" );
+            level flag::set( #"orrery_revealed" );
         }
     #/
     
@@ -2682,7 +2682,7 @@ function function_443b1ad2( var_5ea5c94d )
         function_9d73036a();
         
         /#
-            if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+            if ( getdvarint( #"zm_debug_ee_system", 0 ) )
             {
                 a_glyphs = struct::get_array( #"planet_glyph", "<dev string:xde>" );
                 
@@ -2698,7 +2698,7 @@ function function_443b1ad2( var_5ea5c94d )
             }
         #/
         
-        level flag::wait_till( #"hash_63a102a7ae564e99" );
+        level flag::wait_till( #"orrery_initialized" );
         function_63ce4441();
     }
 }
@@ -2768,11 +2768,11 @@ function function_4f658ef7()
     self endon( #"death" );
     s_glyph = self.stub.related_parent;
     
-    while ( !level flag::get( #"hash_63a102a7ae564e99" ) )
+    while ( !level flag::get( #"orrery_initialized" ) )
     {
         s_glyph.mdl_glyph show();
         self waittill( #"trigger" );
-        s_glyph.mdl_glyph clientfield::increment( "" + #"hash_68e2384b254175da", 1 );
+        s_glyph.mdl_glyph clientfield::increment( "" + #"planet_glyph_activate", 1 );
         s_glyph.mdl_glyph util::delay( 0.5, #"hash_158580acc65694d5", &hide_self );
         mdl_planet = getent( s_glyph.targetname, "str_object_name" );
         
@@ -2813,7 +2813,7 @@ function function_4f658ef7()
         }
         
         /#
-            if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+            if ( getdvarint( #"zm_debug_ee_system", 0 ) )
             {
                 iprintlnbold( s_glyph.targetname + "<dev string:x1bf>" );
                 println( s_glyph.targetname + "<dev string:x1bf>" );
@@ -2821,7 +2821,7 @@ function function_4f658ef7()
         #/
         
         level thread planet_behavior( mdl_planet );
-        level waittill( #"hash_158580acc65694d5", #"hash_63a102a7ae564e99" );
+        level waittill( #"hash_158580acc65694d5", #"orrery_initialized" );
     }
     
     if ( isdefined( s_glyph ) && isdefined( s_glyph.mdl_glyph ) )
@@ -2861,7 +2861,7 @@ function function_8b9aec1a()
     }
     
     waitframe( 1 );
-    level flag::set( #"hash_63a102a7ae564e99" );
+    level flag::set( #"orrery_initialized" );
 }
 
 // Namespace zodt8_sentinel/zm_zodt8_sentinel_trial
@@ -2917,7 +2917,7 @@ function function_63ce4441()
         
         if ( level flag::get( #"hash_1a742576c41a0ab9" ) )
         {
-            level flag::wait_till_any( array( #"planet_step_completed", #"hash_77f76266b597a1f7" ) );
+            level flag::wait_till_any( array( #"planet_step_completed", #"planet_out_of_order" ) );
             
             if ( level flag::get( #"planet_step_completed" ) )
             {
@@ -2926,7 +2926,7 @@ function function_63ce4441()
         }
         
         /#
-            if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+            if ( getdvarint( #"zm_debug_ee_system", 0 ) )
             {
                 iprintlnbold( "<dev string:x1d2>" );
                 println( "<dev string:x1d2>" );
@@ -2958,7 +2958,7 @@ function function_63ce4441()
 // Size: 0x148
 function function_7711ae4b( a_glyphs, mdl_light )
 {
-    level endon( #"hash_77f76266b597a1f7" );
+    level endon( #"planet_out_of_order" );
     
     for ( i = 0; i < a_glyphs.size ; i++ )
     {
@@ -2981,7 +2981,7 @@ function function_7711ae4b( a_glyphs, mdl_light )
 // Size: 0x10c
 function function_f016aaf8( a_glyphs, mdl_light )
 {
-    level endon( #"hash_77f76266b597a1f7" );
+    level endon( #"planet_out_of_order" );
     
     for ( i = 0; i < a_glyphs.size ; i++ )
     {
@@ -3001,7 +3001,7 @@ function function_f016aaf8( a_glyphs, mdl_light )
 // Size: 0x45c
 function function_50b3a576( str_planet_name, n_number )
 {
-    level endoncallback( &function_699ac1b, str_planet_name + "_pickup", #"planet_step_completed", #"hash_77f76266b597a1f7" );
+    level endoncallback( &function_699ac1b, str_planet_name + "_pickup", #"planet_step_completed", #"planet_out_of_order" );
     
     while ( !level flag::exists( str_planet_name + "_pickup" ) )
     {
@@ -3070,7 +3070,7 @@ function function_50b3a576( str_planet_name, n_number )
     }
     
     /#
-        if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+        if ( getdvarint( #"zm_debug_ee_system", 0 ) )
         {
             iprintlnbold( "<dev string:x1f4>" + str_zone );
             println( "<dev string:x1f4>" + str_zone );
@@ -3357,7 +3357,7 @@ function function_f84f44e5( str_planet_name )
 // Size: 0x64c
 function function_51054f59()
 {
-    level flag::wait_till( #"hash_76dd603f61fa542d" );
+    level flag::wait_till( #"orrery_revealed" );
     var_43b4f0a = struct::get( #"loc_sun" );
     playsoundatposition( #"hash_792f64fc5493af58", var_43b4f0a.origin );
     exploder::exploder( "exp_crate_blast" );
@@ -3369,10 +3369,10 @@ function function_51054f59()
         e_crate delete();
     }
     
-    level flag::wait_till( #"hash_63a102a7ae564e99" );
+    level flag::wait_till( #"orrery_initialized" );
     
     /#
-        if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+        if ( getdvarint( #"zm_debug_ee_system", 0 ) )
         {
             iprintlnbold( "<dev string:x21b>" );
             println( "<dev string:x21b>" );
@@ -3389,7 +3389,7 @@ function function_51054f59()
         
         if ( isdefined( s_result.e_who ) )
         {
-            s_result.e_who zm_audio::create_and_play_dialog( #"m_quest", #"hash_7ccac254437d97c2" );
+            s_result.e_who zm_audio::create_and_play_dialog( #"m_quest", #"orrery_interact_first" );
         }
         
         playsoundatposition( #"hash_1321699865d55fc2", var_27805204.origin );
@@ -3406,9 +3406,9 @@ function function_51054f59()
         level flag::set( #"infinite_round_spawning" );
         level.a_planets = arraycopy( level.var_21807a83 );
         
-        if ( level flag::get( #"hash_77f76266b597a1f7" ) )
+        if ( level flag::get( #"planet_out_of_order" ) )
         {
-            level flag::clear( #"hash_77f76266b597a1f7" );
+            level flag::clear( #"planet_out_of_order" );
         }
         
         waitframe( 1 );
@@ -3428,7 +3428,7 @@ function function_51054f59()
         level flag::clear( #"infinite_round_spawning" );
         level flag::clear( #"pause_round_timeout" );
         level waittill( #"end_of_round", #"start_of_round" );
-        var_27805204 notify( #"hash_3ff9c95fe61d398c" );
+        var_27805204 notify( #"orrery_reset" );
     }
     
     zm_unitrigger::unregister_unitrigger( var_27805204.s_unitrigger );
@@ -3443,7 +3443,7 @@ function function_384c480f()
 {
     while ( !level flag::get( #"planet_step_completed" ) )
     {
-        s_result = self waittill( #"trigger_activated", #"hash_3ff9c95fe61d398c" );
+        s_result = self waittill( #"trigger_activated", #"orrery_reset" );
         
         if ( s_result._notify === "trigger_activated" )
         {
@@ -3527,7 +3527,7 @@ function planet_behavior( mdl_planet )
         mdl_planet.origin = var_44c99f3b.origin;
         mdl_planet linkto( var_44c99f3b );
         
-        while ( !level flag::get( #"hash_77f76266b597a1f7" ) )
+        while ( !level flag::get( #"planet_out_of_order" ) )
         {
             if ( isdefined( var_44c99f3b ) )
             {
@@ -3552,7 +3552,7 @@ function planet_behavior( mdl_planet )
 // Size: 0xfc
 function planet_cleanup( mdl_planet )
 {
-    level waittill( #"hash_77f76266b597a1f7", mdl_planet.str_object_name + "_pickup" );
+    level waittill( #"planet_out_of_order", mdl_planet.str_object_name + "_pickup" );
     
     if ( isdefined( mdl_planet ) )
     {
@@ -3756,14 +3756,14 @@ function function_acc65da4( mdl_planet )
         mdl_planet rotate( ( 15, 50, 0 ) );
         mdl_planet playsound( #"hash_6e67e59759b21e8e" );
         
-        if ( !level flag::get( #"hash_77f76266b597a1f7" ) )
+        if ( !level flag::get( #"planet_out_of_order" ) )
         {
             mdl_planet playloopsound( #"hash_733ab9b8fda8f02b" );
             level thread function_647da52c( str_planet_name );
             
             if ( str_planet_name == #"sun" )
             {
-                s_landing function_6099877a( undefined, #"hash_77f76266b597a1f7" );
+                s_landing function_6099877a( undefined, #"planet_out_of_order" );
             }
             else
             {
@@ -3781,7 +3781,7 @@ function function_acc65da4( mdl_planet )
             }
             else
             {
-                level flag::set( #"hash_77f76266b597a1f7" );
+                level flag::set( #"planet_out_of_order" );
                 zm_unitrigger::unregister_unitrigger( s_landing.s_unitrigger );
             }
         }
@@ -3795,17 +3795,17 @@ function function_acc65da4( mdl_planet )
         mdl_planet stoploopsound();
         mdl_planet playsound( #"hash_7007602a9c1e2b84" );
         mdl_planet clientfield::set( "" + #"land_fx", 0 );
-        level flag::set( #"hash_77f76266b597a1f7" );
+        level flag::set( #"planet_out_of_order" );
         
         /#
             iprintlnbold( "<dev string:x230>" );
         #/
     }
     
-    if ( !level flag::get( #"hash_63a102a7ae564e99" ) )
+    if ( !level flag::get( #"orrery_initialized" ) )
     {
         waitframe( 1 );
-        level flag::clear( #"hash_77f76266b597a1f7" );
+        level flag::clear( #"planet_out_of_order" );
         level notify( #"hash_158580acc65694d5" );
     }
 }
@@ -3816,7 +3816,7 @@ function function_acc65da4( mdl_planet )
 // Size: 0x8c
 function function_1f6c1c1f()
 {
-    level endon( #"hash_77f76266b597a1f7" );
+    level endon( #"planet_out_of_order" );
     s_result = self waittill( #"trigger_activated" );
     
     if ( isdefined( s_result.e_who ) )
@@ -3831,7 +3831,7 @@ function function_1f6c1c1f()
 // Size: 0x1a4
 function function_647da52c( str_planet_name )
 {
-    level endon( #"hash_77f76266b597a1f7", str_planet_name + "_pickup" );
+    level endon( #"planet_out_of_order", str_planet_name + "_pickup" );
     n_interval = 10;
     n_current_time = 0;
     
@@ -3860,7 +3860,7 @@ function function_647da52c( str_planet_name )
             playsoundatposition( #"hash_1e42da88156af69f", ( 0, 0, 0 ) );
             
             /#
-                if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+                if ( getdvarint( #"zm_debug_ee_system", 0 ) )
                 {
                     iprintlnbold( "<dev string:x237>" );
                     println( "<dev string:x237>" );
@@ -3869,7 +3869,7 @@ function function_647da52c( str_planet_name )
         }
     }
     
-    level flag::set( #"hash_77f76266b597a1f7" );
+    level flag::set( #"planet_out_of_order" );
 }
 
 // Namespace zodt8_sentinel/zm_zodt8_sentinel_trial
@@ -3893,7 +3893,7 @@ function function_8ec70b18( var_5ea5c94d )
     level zm_ui_inventory::function_7df6bb60( #"zm_zodt8_sentinel_trial", 7 );
     
     /#
-        if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+        if ( getdvarint( #"zm_debug_ee_system", 0 ) )
         {
             gear_up();
         }
@@ -3924,7 +3924,7 @@ function function_8ec70b18( var_5ea5c94d )
         level flag::wait_till( #"hash_349bc60cedc7491e" );
         streamermodelhint( #"p8_zm_zod_teleport_symbol", 10 );
         streamermodelhint( #"hash_15e8ba772c745d63", 10 );
-        level thread function_63a0f09e();
+        level thread main_quest_screen_flash();
         music::setmusicstate( "none" );
         level.musicsystemoverride = 0;
         wait 1;
@@ -4072,7 +4072,7 @@ function function_cfd304b3()
 // Size: 0x3ac
 function function_5473a2b3( n_round )
 {
-    level thread function_63a0f09e( 0 );
+    level thread main_quest_screen_flash( 0 );
     music::setmusicstate( "none" );
     level.musicsystemoverride = 0;
     wait 0.5;
@@ -4118,10 +4118,10 @@ function function_1cfbff5e()
 {
     level flag::set( #"disable_fast_travel" );
     level clientfield::set( "fasttravel_exploder", 0 );
-    level thread function_63a0f09e();
+    level thread main_quest_screen_flash();
     wait 0.5;
     clean_up_ai();
-    s_blockers = struct::get_array( #"hash_653ae82f1c11d82c" );
+    s_blockers = struct::get_array( #"initial_mq_block" );
     level.a_mdl_blockers = [];
     level.var_1012c716 = 0;
     n_players = util::get_active_players().size;
@@ -4240,7 +4240,7 @@ function function_a68ae7b5( s_blocker, n_health )
         }
     }
     
-    if ( s_blocker.script_string === #"hash_3f00f45f819284ba" )
+    if ( s_blocker.script_string === #"any_mq_block" )
     {
         level flag::set( #"hash_349bc60cedc7491e" );
         return;
@@ -4409,7 +4409,7 @@ function get_spawnpoints( var_78837396 = 1, var_7d9a5da1 )
     
     if ( a_s_spawnpoints.size )
     {
-        s_final = struct::get( #"hash_3f00f45f819284ba", "script_string" );
+        s_final = struct::get( #"any_mq_block", "script_string" );
         a_s_spawnpoints = arraysortclosest( a_s_spawnpoints, s_final.origin, var_7d9a5da1 );
     }
     
@@ -4591,7 +4591,7 @@ function function_9003b2d4()
     s_struct function_6099877a();
     s_struct.var_b7273b77 = 0;
     function_d3786e2e( getent( "iceberg_water", "targetname" ) getentitynumber() );
-    level clientfield::set( "" + #"hash_3c58464f16d8a1be", 1 );
+    level clientfield::set( "" + #"reveal_ee_space", 1 );
     level.disable_nuke_delay_spawning = 1;
     level notify( #"disable_nuke_delay_spawning" );
     level flag::set( #"hash_280d10a2ac060edb" );
@@ -4661,7 +4661,7 @@ function function_c8c01471()
     
     foreach ( player in util::get_active_players() )
     {
-        player clientfield::set_to_player( "" + #"hash_58b44c320123e829", 1 );
+        player clientfield::set_to_player( "" + #"water_ragdolls", 1 );
     }
     
     level flag::wait_till_clear( #"hash_280d10a2ac060edb" );
@@ -4772,10 +4772,10 @@ function function_7b4cd474()
     a_icebergs[ a_icebergs.size ] = var_a93e2138;
     s_tree = struct::get( #"hash_1022226235c54b6" );
     
-    if ( !getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+    if ( !getdvarint( #"zm_debug_ee_system", 0 ) )
     {
         level.zm_bgb_anywhere_but_here_validation_override = &return_false;
-        s_loc = struct::get( #"hash_3f00f45f819284ba", "script_string" );
+        s_loc = struct::get( #"any_mq_block", "script_string" );
         level thread function_43a16eb7( #"interior_interact", s_loc );
         
         foreach ( player in util::get_active_players() )
@@ -4784,7 +4784,7 @@ function function_7b4cd474()
         }
         
         level thread function_c8c01471();
-        level waittill( #"hash_332a98e65f5dce4" );
+        level waittill( #"mq_teleport_start" );
         level.musicsystemoverride = 1;
         music::setmusicstate( "location_tree" );
         a_players = util::get_active_players();
@@ -4818,8 +4818,8 @@ function function_7b4cd474()
     
     var_a93e2138 show();
     level thread function_43a16eb7( #"iceberg_viewing", s_tree );
-    level waittill( #"hash_332a98e65f5dce4" );
-    level clientfield::set( "" + #"hash_3c58464f16d8a1be", 0 );
+    level waittill( #"mq_teleport_start" );
+    level clientfield::set( "" + #"reveal_ee_space", 0 );
     music::setmusicstate( "none" );
     level.musicsystemoverride = 0;
     zm_audio::sndvoxoverride( 1 );
@@ -4960,7 +4960,7 @@ function function_28228fa2( s_tree )
     mdl_artifact clientfield::set( "" + #"hash_46e2ed49fb0f55c6", 0 );
     veh_orb waittilltimeout( 10, #"reached_end_node" );
     playsoundatposition( #"hash_1a6436fc53efe56f", ( 0, 0, 0 ) );
-    level thread function_63a0f09e( 1 );
+    level thread main_quest_screen_flash( 1 );
     wait 1;
     
     foreach ( player in a_players )
@@ -5018,7 +5018,7 @@ function function_6fef3bc3( nd_path )
         }
     }
     
-    level waittill( #"hash_332a98e65f5dce4" );
+    level waittill( #"mq_teleport_start" );
     
     if ( isdefined( mdl_planet ) )
     {
@@ -5121,7 +5121,7 @@ function function_594ebc75( var_5ea5c94d )
     level flag::set( #"pause_round_timeout" );
     
     /#
-        if ( getdvarint( #"hash_7919e37cd5d57659", 0 ) )
+        if ( getdvarint( #"zm_debug_ee_system", 0 ) )
         {
             level clientfield::set( "<dev string:x253>" + #"hash_7f2f74f05d1f1b75", 3 );
             zm_devgui::zombie_devgui_open_sesame();
@@ -5134,7 +5134,7 @@ function function_594ebc75( var_5ea5c94d )
     
     if ( !level flag::get( "water_drained_fore" ) )
     {
-        level notify( #"hash_5625f76c55116195" );
+        level notify( #"water_drained_fore_end" );
         level.e_clip_water_fore.origin = ( level.e_clip_water_fore.origin[ 0 ], level.e_clip_water_fore.origin[ 1 ], level.var_1b85943e );
         level.e_clip_water_fore rotateroll( -1.5, 0.1 );
         level.e_clip_water_fore waittill( #"rotatedone" );
@@ -5157,7 +5157,7 @@ function function_594ebc75( var_5ea5c94d )
     level clientfield::set( "fasttravel_exploder", 0 );
     scene::function_d8a83a50( "cin_zm_zod_outro", &function_5dc629ad, "play" );
     scene::function_d8a83a50( "cin_zm_zod_outro", &function_c41154ec, "Shot090" );
-    scene::function_d8a83a50( "cin_zm_zod_outro", &function_44a2fe02, "Shot110" );
+    scene::function_d8a83a50( "cin_zm_zod_outro", &reveal_ee_space, "Shot110" );
     scene::function_d8a83a50( "cin_zm_zod_outro", &function_d87932b5, "Shot120" );
     scene::function_d8a83a50( "cin_zm_zod_outro", &end_game, "done" );
     level thread scene::play( "cin_zm_zod_outro" );
@@ -5186,9 +5186,9 @@ function function_d87932b5()
 // Params 0
 // Checksum 0x638005eb, Offset: 0x13428
 // Size: 0x84
-function function_44a2fe02()
+function reveal_ee_space()
 {
-    level clientfield::set( "" + #"hash_3c58464f16d8a1be", 1 );
+    level clientfield::set( "" + #"reveal_ee_space", 1 );
     getent( "mov_ship_rob", "targetname" ) clientfield::set( "" + #"hash_6e41de51a0092771", 0 );
 }
 
@@ -5445,7 +5445,7 @@ function function_43a16eb7( var_e6d63e1c, s_loc )
 function function_26284c6a( a_players )
 {
     array::wait_till( a_players, #"hash_1c35eb15aa210d6", 1 );
-    level notify( #"hash_332a98e65f5dce4" );
+    level notify( #"mq_teleport_start" );
 }
 
 // Namespace zodt8_sentinel/zm_zodt8_sentinel_trial
@@ -5494,17 +5494,17 @@ function clean_up_ai( var_82ea43f2 = 0, var_a8d0b313 = 1, b_hide_body = 1 )
 // Params 2
 // Checksum 0x4b77e413, Offset: 0x14310
 // Size: 0x288
-function function_63a0f09e( b_success = 1, var_d1a2823e = 1 )
+function main_quest_screen_flash( b_success = 1, var_d1a2823e = 1 )
 {
     a_players = util::get_active_players();
     
     foreach ( player in a_players )
     {
-        player val::set( #"hash_519b32068605d08f", "takedamage", 0 );
+        player val::set( #"main_quest_screen_flash", "takedamage", 0 );
         
         if ( var_d1a2823e )
         {
-            player val::set( #"hash_519b32068605d08f", "freezecontrols", 1 );
+            player val::set( #"main_quest_screen_flash", "freezecontrols", 1 );
         }
         
         player clientfield::set_to_player( "" + #"main_flash", b_success );
@@ -5521,11 +5521,11 @@ function function_63a0f09e( b_success = 1, var_d1a2823e = 1 )
     {
         if ( isdefined( player ) )
         {
-            player val::reset( #"hash_519b32068605d08f", "takedamage" );
+            player val::reset( #"main_quest_screen_flash", "takedamage" );
             
             if ( var_d1a2823e )
             {
-                player val::reset( #"hash_519b32068605d08f", "freezecontrols" );
+                player val::reset( #"main_quest_screen_flash", "freezecontrols" );
             }
             
             player clientfield::set_to_player( "" + #"main_flash", 0 );

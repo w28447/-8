@@ -11,7 +11,7 @@ CoD.PC_TooltipsPromptsBackground.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local DropShadow = LUI.UIImage.new( 0, 1, -10, 30, 0, 1, -12, 28 )
 	DropShadow:setRGB( 0, 0, 0 )
 	DropShadow:setAlpha( 0.6 )
-	DropShadow:setImage( RegisterImage( 0xF8AD9AE7EF787EF ) )
+	DropShadow:setImage( RegisterImage( "uie_dropshadow_9s" ) )
 	DropShadow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	DropShadow:setShaderVector( 0, 0, 0, 0, 0 )
 	DropShadow:setupNineSliceShader( 60, 60 )

@@ -50,7 +50,7 @@ function zone_init()
     zm_zonemgr::add_adjacent_zone( "labs_hallway2", "labs_zone2", "lab2_level3", 0 );
     zm_zonemgr::add_adjacent_zone( "labs_hallway1", "labs_zone3", "lab3_level3", 0 );
     zm_zonemgr::add_adjacent_zone( "labs_zone1", "labs_hallway1", "lab1_level3", 1 );
-    zm_zonemgr::add_adjacent_zone( "cage", "cage_upper", #"hash_537cc10c9deca9da", 0 );
+    zm_zonemgr::add_adjacent_zone( "cage", "cage_upper", #"visited_groom_lake", 0 );
     level.zones[ #"conference_level1" ].num_spawners = 4;
     level.zones[ #"hallway_level1" ].num_spawners = 4;
     level thread function_d03a6fa( "conference_level1", "offices_level1", "conf1_offices1" );
@@ -142,18 +142,18 @@ function get_location_string( e_player )
             }
             else
             {
-                str_display = #"hash_2960dd7ca313a1d0";
+                str_display = #"zm_office/location_conference_level1";
             }
             
             break;
         case #"hallway_level1":
-            str_display = #"hash_23e7b86056327ad8";
+            str_display = #"zm_office/location_hallway_level1";
             break;
         case #"file_room_level1":
-            str_display = #"hash_43e992b83f837d3e";
+            str_display = #"zm_office/location_file_room_level1";
             break;
         case #"offices_level1":
-            str_display = #"hash_179368775ecfafa9";
+            str_display = #"zm_office/location_offices_level1";
             break;
         case #"war_room_zone_south":
         case #"war_room_zone_north":
@@ -167,23 +167,23 @@ function get_location_string( e_player )
             str_display = #"hash_572f6dd3e58ede79";
             break;
         case #"conference_level2":
-            str_display = #"hash_2960e07ca313a6e9";
+            str_display = #"zm_office/location_conference_level2";
             break;
         case #"labs_elevator":
         case #"labs_hallway1":
-            str_display = #"hash_48fce08911acd38a";
+            str_display = #"zm_office/location_labs_hallway1";
             break;
         case #"labs_hallway2":
-            str_display = #"hash_48fcdf8911acd1d7";
+            str_display = #"zm_office/location_labs_hallway2";
             break;
         case #"labs_zone1":
-            str_display = #"hash_6e0edea58f326450";
+            str_display = #"zm_office/location_labs_zone1";
             break;
         case #"labs_zone2":
-            str_display = #"hash_6e0ee1a58f326969";
+            str_display = #"zm_office/location_labs_zone2";
             break;
         case #"labs_zone3":
-            str_display = #"hash_6e0ee0a58f3267b6";
+            str_display = #"zm_office/location_labs_zone3";
             break;
         case #"cage_upper":
         case #"cage":

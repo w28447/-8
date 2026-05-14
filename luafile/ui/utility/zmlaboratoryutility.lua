@@ -484,12 +484,12 @@ DataSources.ZMLaboratoryResultsItemList = ListHelper_SetupDataSource( "Laborator
 	local f40_local1 = {}
 	if Dvar[0x659A867DE4952AA]:exists() and tonumber( Dvar[0x659A867DE4952AA]:get() ) > 0 then
 		local f40_local2 = {
-			0x9FFE1C3C96379,
+			"zm_bgb_cache_back",
 			0x953696819BF1875,
 			0x458181EB9DBDE8B,
-			0xB69B008E289DED4,
+			"zm_bgb_free_fire",
 			0xD4A36921F5E48F0,
-			0xAB718D345FF910,
+			"zm_bgb_kill_joy",
 			0x5A9D6022E571C6,
 			0x6D3DF5058C56523,
 			0xBBB25554D3F7F6B,
@@ -498,7 +498,7 @@ DataSources.ZMLaboratoryResultsItemList = ListHelper_SetupDataSource( "Laborator
 		}
 		local f40_local3 = {
 			0x96A42B9715FCF4E,
-			0xCAFC6BD7BFA105A,
+			"talisman_box_guarantee_lmg",
 			0xECEF105EDFCE221,
 			0xA2042B3984A50AC,
 			0xC39AFAA7B8D508C,
@@ -525,10 +525,10 @@ DataSources.ZMLaboratoryResultsItemList = ListHelper_SetupDataSource( "Laborator
 			0x50670241DFB72AF,
 			0x5066F241DFB70FC,
 			0xEEBDA916971B02,
-			0x24D9B998E4BC4F8,
+			"talisman_start_weapon_ar",
 			0x76221EC95A6B4D1,
 			0xA0802EC72B26A24,
-			0xD2C0474517A8626
+			"talisman_weapon_reducepapcost"
 		}
 		f40_local1 = {
 			{
@@ -637,10 +637,10 @@ DataSources.ZMLaboratoryNPItemList = {
 			if not f43_local1.properties.actionParam.price then
 				f43_local1.properties.actionParam.price = f43_local1.models.price
 			end
-			if f43_arg1[0x9D73ABDD04877EA] and f43_arg1[0x53302081973C2C4] then
+			if f43_arg1[0x9D73ABDD04877EA] and f43_arg1["globstate"] then
 				f43_local1.properties.focusChangedNotifyParams = {
 					centrifuge_color = f43_arg1[0x9D73ABDD04877EA],
-					glob_state = f43_arg1[0x53302081973C2C4]
+					glob_state = f43_arg1["globstate"]
 				}
 			end
 			table.insert( f43_arg0, f43_local1 )
@@ -827,7 +827,7 @@ DataSources.ZMLaboratoryPlasmaItemList = ListHelper_SetupDataSource( "ZMLaborato
 	end
 	
 	local f56_local1 = {}
-	f56_local0( f56_local1, 500052, 0x8EB5BCEA98B4CF2, 0x795BFC763A155F4, 300, 2000, true, CoD.ZMLaboratoryUtility.PurchasePlasmaOrCoDPoints )
+	f56_local0( f56_local1, 500052, 0x8EB5BCEA98B4CF2, "ui_icon_laboratory_nebulium_offer_large", 300, 2000, true, CoD.ZMLaboratoryUtility.PurchasePlasmaOrCoDPoints )
 	f56_local0( f56_local1, 500051, 0xFF5560BC462E0F0, 0x4873AB8342CF356, 75, 500, false, CoD.ZMLaboratoryUtility.PurchasePlasmaOrCoDPoints )
 	f56_local0( f56_local1, 500050, 0x8EB5BCEA98B4CF2, 0x4C2114E022FF6AC, 30, 200, false, CoD.ZMLaboratoryUtility.PurchasePlasmaOrCoDPoints )
 	return f56_local1

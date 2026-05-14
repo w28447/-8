@@ -587,28 +587,28 @@ end
 
 function IsCampaign()
 	local f79_local0 = LobbyData.GetCurrentMenuTarget()
-	return f79_local0[0xEB7DDC7F079D51B] == Enum.LobbyMainMode[0x7B50049993542C0]
+	return f79_local0["mainmode"] == Enum.LobbyMainMode[0x7B50049993542C0]
 end
 
 function IsMultiplayer()
 	local f80_local0 = LobbyData.GetCurrentMenuTarget()
-	return f80_local0[0xEB7DDC7F079D51B] == Enum.LobbyMainMode[0x7E41449995CD57E]
+	return f80_local0["mainmode"] == Enum.LobbyMainMode[0x7E41449995CD57E]
 end
 
 function IsZombies()
 	local f81_local0 = LobbyData.GetCurrentMenuTarget()
-	return f81_local0[0xEB7DDC7F079D51B] == Enum.LobbyMainMode[0x79D01499920B292]
+	return f81_local0["mainmode"] == Enum.LobbyMainMode[0x79D01499920B292]
 end
 
 function IsWarzone()
 	local f82_local0 = LobbyData.GetCurrentMenuTarget()
-	return f82_local0[0xEB7DDC7F079D51B] == Enum.LobbyMainMode[0x78C124999125C42]
+	return f82_local0["mainmode"] == Enum.LobbyMainMode[0x78C124999125C42]
 end
 
 function IsWarzoneOrCurrentMilestone()
 	local f83_local0 = LobbyData.GetCurrentMenuTarget()
 	local f83_local1
-	if f83_local0[0xEB7DDC7F079D51B] ~= Enum.LobbyMainMode[0x78C124999125C42] then
+	if f83_local0["mainmode"] ~= Enum.LobbyMainMode[0x78C124999125C42] then
 		f83_local1 = CoD.DirectorUtility.DisableForCurrentMilestone( nil )
 	else
 		f83_local1 = true
@@ -637,7 +637,7 @@ function IsAttackDefendGametype()
 end
 
 function IsNeutralGametype( f86_arg0 )
-	if Engine.GetGametypeSetting( 0xC20A87C80EDB10E ) == 1 then
+	if Engine.GetGametypeSetting( "neutralzone" ) == 1 then
 		return true
 	else
 		return false
@@ -1020,7 +1020,7 @@ function IsDoubleXP( f128_arg0 )
 		return false
 	else
 		local f128_local0 = LobbyData.GetCurrentMenuTarget()
-		if f128_local0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING ) or IsSimulateCT() then
+		if f128_local0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING ) or IsSimulateCT() then
 			return false
 		elseif CoD.HUDUtility.IsGameTypeEqualToString( "ztutorial" ) and not InFrontend() then
 			return false
@@ -1041,7 +1041,7 @@ function IsDoubleWeaponXP( f129_arg0 )
 		end
 	end
 	local f129_local0 = LobbyData.GetCurrentMenuTarget()
-	if f129_local0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING ) or IsSimulateCT() then
+	if f129_local0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING ) or IsSimulateCT() then
 		return false
 	elseif CoD.HUDUtility.IsGameTypeEqualToString( "ztutorial" ) and not InFrontend() then
 		return false
@@ -1057,7 +1057,7 @@ function IsTierBoostActive( f130_arg0 )
 		return false
 	else
 		local f130_local0 = LobbyData.GetCurrentMenuTarget()
-		if f130_local0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING ) or IsSimulateCT() then
+		if f130_local0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING ) or IsSimulateCT() then
 			return false
 		elseif CoD.BaseUtility.IsDvarEnabled( "ui_fakeTierBoost" ) then
 			return true
@@ -1701,7 +1701,7 @@ end
 
 function CustomClassesEnabled()
 	local f196_local0 = LobbyData.GetCurrentMenuTarget()
-	if f196_local0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING ) or IsSimulateCT() then
+	if f196_local0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING ) or IsSimulateCT() then
 		return false
 	else
 		return Engine.GetGametypeSetting( 0xD8F4FBEC8CEDE50 ) == 0

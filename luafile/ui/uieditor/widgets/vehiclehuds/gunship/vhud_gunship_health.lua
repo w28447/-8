@@ -18,7 +18,7 @@ CoD.vhud_gunship_health.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	self.VehicleHpBg = VehicleHpBg
 	
 	local Health = CoD.vhud_attack_helicopter_health.new( f1_arg0, f1_arg1, 1, 1, -320.5, -75.5, 1, 1, -147, -33 )
-	Health.BackImage:setImage( RegisterImage( 0xD473EB6538DEF86 ) )
+	Health.BackImage:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_hp_icon_normal" ) )
 	Health.Overlay:setImage( RegisterImage( 0x12292CEE63E41B0 ) )
 	Health:linkToElementModel( self, nil, false, function ( model )
 		Health:setModel( model, f1_arg1 )

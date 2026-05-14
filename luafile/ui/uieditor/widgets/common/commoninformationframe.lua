@@ -101,7 +101,7 @@ CoD.CommonInformationFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local InfoText = LUI.UIText.new( 0, 0, 445, 645, 0, 0, 8, 18 )
 	InfoText:setRGB( 0.92, 0.92, 0.92 )
 	InfoText:setAlpha( 0.05 )
-	InfoText:setText( LocalizeToUpperString( 0xA63CCA126DA271B ) )
+	InfoText:setText( LocalizeToUpperString( "menu/info" ) )
 	InfoText:setTTF( "ttmussels_regular" )
 	InfoText:setLetterSpacing( 2 )
 	InfoText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

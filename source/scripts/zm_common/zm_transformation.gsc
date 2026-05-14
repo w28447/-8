@@ -302,7 +302,7 @@ function function_d2374144( entity, id )
     }
     
     level.var_b175714d[ id ].var_2939a01a[ level.var_b175714d[ id ].var_2939a01a.size ] = entity;
-    entity thread function_525526be( id );
+    entity thread clean_up_transformation( id );
 }
 
 // Namespace zm_transform/zm_transformation
@@ -313,7 +313,7 @@ function function_1afce5aa( entity )
 {
     assert( isdefined( entity.var_d41ca76d ) );
     assert( isinarray( level.var_b175714d[ entity.var_d41ca76d ].var_2939a01a, entity ) );
-    entity notify( #"hash_610e5a8c0ec1a4b6" );
+    entity notify( #"clean_up_transformation" );
 }
 
 // Namespace zm_transform/zm_transformation
@@ -337,7 +337,7 @@ function function_e95ec8df( clear_active = 0 )
         
         foreach ( var_d41ca76d in transformation.var_2939a01a )
         {
-            var_d41ca76d notify( #"hash_610e5a8c0ec1a4b6" );
+            var_d41ca76d notify( #"clean_up_transformation" );
         }
     }
 }
@@ -429,9 +429,9 @@ function function_a261938f( entity )
 // Params 1, eflags: 0x4
 // Checksum 0xbd4ac679, Offset: 0x1350
 // Size: 0xb6
-function private function_525526be( id )
+function private clean_up_transformation( id )
 {
-    waitresult = self waittill( #"death", #"transformation_started", #"hash_610e5a8c0ec1a4b6" );
+    waitresult = self waittill( #"death", #"transformation_started", #"clean_up_transformation" );
     
     if ( waitresult._notify != "death" )
     {
@@ -904,14 +904,14 @@ function function_bbaec2fd()
         while ( true )
         {
             wait 0.2;
-            cmd = getdvarstring( #"hash_439ed91bbc9ac4c0", "<dev string:x103>" );
+            cmd = getdvarstring( #"transformation_devgui_cmd", "<dev string:x103>" );
             
             if ( cmd == "<dev string:x103>" )
             {
                 continue;
             }
             
-            setdvar( #"hash_439ed91bbc9ac4c0", "<dev string:x103>" );
+            setdvar( #"transformation_devgui_cmd", "<dev string:x103>" );
             cmd = strtok( cmd, "<dev string:x5db>" );
             
             switch ( cmd[ 0 ] )

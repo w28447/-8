@@ -410,7 +410,7 @@ function open_door( str_door_name )
 // Params 1
 // Checksum 0x5a8b041f, Offset: 0x2a98
 // Size: 0x74
-function function_204dd117( targetname )
+function teleport_to( targetname )
 {
     node = getnode( targetname, "targetname" );
     self setorigin( node.origin );
@@ -838,7 +838,7 @@ function function_513e90cf()
     
     zm_characters::set_character( array( #"prt_zm_diego", #"prt_zm_diego_dlc0" ) );
     music::setmusicstate( "tutorial_beginner_start" );
-    self function_204dd117( "tutorial_beginner_start" );
+    self teleport_to( "tutorial_beginner_start" );
     self takeallweapons();
     self function_3fe47ed7( "pistol_topbreak_t8" );
     self giveweapon( level.weaponbasemelee );
@@ -892,7 +892,7 @@ function function_5bc503b1()
 // Size: 0x74
 function function_1dab7ef1()
 {
-    self function_204dd117( "tutorial_beginner_start" );
+    self teleport_to( "tutorial_beginner_start" );
     self function_fac53b63( array( "tutorial_zm_spawner_shoot_zombie" ), 1 );
     level.var_a4ad706d[ 0 ] thread function_16c8867e( self );
 }
@@ -938,7 +938,7 @@ function shoot_zombie()
     level waittill( #"zombie_shot" );
     function_a09d93d9();
     self notify( #"shoot_zombie_completed" );
-    self notify( #"hash_c366d831c1ff919" );
+    self notify( #"shoot_zombie_killed" );
     function_68da8e33( #"hash_4b3c8234832c799e", 0.3 );
     w_pistol = self getcurrentweapon();
     
@@ -1010,7 +1010,7 @@ function wallbuy()
 // Size: 0x6c
 function points_reset()
 {
-    self function_204dd117( "tutorial_points_start" );
+    self teleport_to( "tutorial_points_start" );
     self thread function_fac53b63( array( "tutorial_zm_spawner_points_1", "tutorial_zm_spawner_points_2", "tutorial_zm_spawner_points_3", "tutorial_zm_spawner_points_4" ), 1 );
 }
 
@@ -1067,7 +1067,7 @@ function doorbuy()
 // Size: 0x5c
 function function_979b1a9f()
 {
-    self function_204dd117( "tutorial_rounds_start" );
+    self teleport_to( "tutorial_rounds_start" );
     self function_fac53b63( array( "tutorial_zm_spawner_rounds_1", "tutorial_zm_spawner_rounds_2", "tutorial_zm_spawner_rounds_3" ) );
 }
 
@@ -1089,7 +1089,7 @@ function rounds()
 // Size: 0x4c
 function function_c55bfc51()
 {
-    self function_204dd117( "tutorial_barrierrepair_start" );
+    self teleport_to( "tutorial_barrierrepair_start" );
     self function_fac53b63( array( "tutorial_zm_spawner_barrier" ) );
 }
 
@@ -1190,7 +1190,7 @@ function magicbox()
     level flag::wait_till_clear( "tutorial_vo_playing" );
     function_68da8e33( #"hash_7a9ff9dcf14fb90b", 0.5 );
     function_68da8e33( #"hash_212ed6f23e15aabf", 0.8 );
-    function_68da8e33( #"hash_17a3d677a0f6162e", 1 );
+    function_68da8e33( #"vox_beginner_end_narr_0", 1 );
 }
 
 // Namespace zm_zodt8_tutorial/zm_zodt8_tutorial
@@ -1199,7 +1199,7 @@ function magicbox()
 // Size: 0x74
 function function_dc366ad7()
 {
-    self function_204dd117( "tutorial_playerwilldie_start" );
+    self teleport_to( "tutorial_playerwilldie_start" );
     self function_fac53b63( array( "tutorial_zm_spawner_playerwilldie_1", "tutorial_zm_spawner_playerwilldie_2", "tutorial_zm_spawner_playerwilldie_3", "tutorial_zm_spawner_playerwilldie_4", "tutorial_zm_spawner_playerwilldie_5", "tutorial_zm_spawner_playerwilldie_6" ) );
 }
 
@@ -1233,7 +1233,7 @@ function function_88b4ae49()
 function function_bfd3a7b1()
 {
     zm_characters::set_character( array( #"prt_zm_scarlett", #"prt_zm_scarlett_dlc0" ) );
-    self function_204dd117( "tutorial_intermediate_start" );
+    self teleport_to( "tutorial_intermediate_start" );
     music::setmusicstate( "tutorial_intermediate_start" );
     var_1c8259f7 = getweapon( "zitem_rocketshield_part_2" );
     var_57654fbc = getweapon( "zitem_rocketshield_part_3" );
@@ -1247,8 +1247,8 @@ function function_bfd3a7b1()
     self function_3fe47ed7( "ar_accurate_t8" );
     self giveweapon( level.weaponbasemelee );
     self function_43b2606b();
-    self zm_perks::function_9bdf581f( #"specialty_staminup", 0 );
-    self zm_perks::function_9bdf581f( #"specialty_extraammo", 1 );
+    self zm_perks::give_perk_vapor( #"specialty_staminup", 0 );
+    self zm_perks::give_perk_vapor( #"specialty_extraammo", 1 );
     self freeze_player_controls();
     function_edf32a3b( 8 );
     util::streamer_wait();
@@ -1280,7 +1280,7 @@ function function_bfd3a7b1()
     self lui::screen_fade_out( 5 );
     level thread bot::remove_bot( level.tutorialbot );
     zm_characters::set_character( array( #"prt_zm_stanton", #"prt_zm_stanton_dlc0" ) );
-    self function_204dd117( "tutorial_advanced_start" );
+    self teleport_to( "tutorial_advanced_start" );
     self.is_drinking = 0;
     a_pap = struct::get_array( "pap_quest_interact", "targetname" );
     a_pap[ 0 ].unitrigger_stub thread zodt8_pap_quest::function_5c299a0f( self );
@@ -1294,10 +1294,10 @@ function function_bfd3a7b1()
     self function_3fe47ed7( "zhield_dw" );
     self giveweapon( level.weaponbasemelee );
     self function_43b2606b();
-    self zm_perks::function_9bdf581f( #"specialty_staminup", 0 );
-    self zm_perks::function_9bdf581f( #"specialty_extraammo", 1 );
-    self zm_perks::function_9bdf581f( #"specialty_cooldown", 2 );
-    self zm_perks::function_9bdf581f( #"specialty_deadshot", 3 );
+    self zm_perks::give_perk_vapor( #"specialty_staminup", 0 );
+    self zm_perks::give_perk_vapor( #"specialty_extraammo", 1 );
+    self zm_perks::give_perk_vapor( #"specialty_cooldown", 2 );
+    self zm_perks::give_perk_vapor( #"specialty_deadshot", 3 );
     wait 1;
     self zm_laststand::function_3d685b5f( 0 );
     self freeze_player_controls();
@@ -1339,7 +1339,7 @@ function perks()
 // Size: 0x134
 function function_7cc916a4()
 {
-    self function_204dd117( "tutorial_equipment_start" );
+    self teleport_to( "tutorial_equipment_start" );
     a_grenades = getentarray( "grenade", "classname" );
     array::delete_all( a_grenades );
     function_fac53b63( array( "tutorial_zm_spawner_equipment_1", "tutorial_zm_spawner_equipment_2", "tutorial_zm_spawner_equipment_3" ), 1 );
@@ -1444,9 +1444,9 @@ function function_2d2a2ec6()
 // Params 0
 // Checksum 0x9e8c85c4, Offset: 0x6a40
 // Size: 0x16a
-function function_a52087a1()
+function bot_reset()
 {
-    self function_204dd117( "tutorial_bot_start" );
+    self teleport_to( "tutorial_bot_start" );
     
     if ( isdefined( level.var_634ee380 ) )
     {
@@ -1470,7 +1470,7 @@ function function_a52087a1()
 // Size: 0xb8
 function function_b375d3c3()
 {
-    level endon( #"end_game", #"hash_5cefed971a2f1a52" );
+    level endon( #"end_game", #"tutorial_progressed" );
     self endon( #"death" );
     self waittill( #"player_downed" );
     self endon( #"player_revived", #"zombified", #"disconnect" );
@@ -1517,7 +1517,7 @@ function bot()
         ai_zombie.var_72411ccf = &function_40bfbff0;
     }
     
-    function_6e9fe428( &function_a52087a1 );
+    function_6e9fe428( &bot_reset );
     self thread function_c0a37283();
     self waittill( #"nuke_triggered" );
     function_a09d93d9();
@@ -1780,7 +1780,7 @@ function function_e35fa479()
 // Size: 0x84
 function power_reset()
 {
-    self function_204dd117( "tutorial_power_start" );
+    self teleport_to( "tutorial_power_start" );
     function_fac53b63( array( "tutorial_zm_spawner_power_1", "tutorial_zm_spawner_power_2", "tutorial_zm_spawner_power_3", "tutorial_zm_spawner_power_4", "tutorial_zm_spawner_power_5" ) );
     level.tutorialbot thread function_e35fa479();
 }
@@ -1833,7 +1833,7 @@ function function_4491a7c()
 // Size: 0x154
 function function_23dadcc9()
 {
-    self function_204dd117( "tutorial_special_weapons_start" );
+    self teleport_to( "tutorial_special_weapons_start" );
     function_cf5f5964( "tutorial_zm_spawner_specialweapons_charge" );
     function_fac53b63( array( "tutorial_zm_spawner_specialweapons_1", "tutorial_zm_spawner_specialweapons_2", "tutorial_zm_spawner_specialweapons_3", "tutorial_zm_spawner_specialweapons_4", "tutorial_zm_spawner_specialweapons_5", "tutorial_zm_spawner_specialweapons_6", "tutorial_zm_spawner_specialweapons_7", "tutorial_zm_spawner_specialweapons_8", "tutorial_zm_spawner_specialweapons_9", "tutorial_zm_spawner_specialweapons_10" ) );
     self gadgetpowerset( 2, 100 );
@@ -1927,7 +1927,7 @@ function elixirs()
     
     self thread function_3e1e39f8( #"hash_52ed5bafc1e1a62c", "tutorial_used_anywhere_but_here" );
     level waittill( #"tutorial_used_anywhere_but_here" );
-    self function_204dd117( "tutorial_elixers" );
+    self teleport_to( "tutorial_elixers" );
     level.var_3c8ad64b = -1;
 }
 
@@ -1951,7 +1951,7 @@ function function_818a3a72()
 {
     self function_3fe47ed7( "smg_handling_t8" );
     self function_3fe47ed7( "ar_stealth_t8" );
-    self function_204dd117( "tutorial_PAP_start" );
+    self teleport_to( "tutorial_PAP_start" );
     self thread function_3901e82e();
 }
 
@@ -1989,7 +1989,7 @@ function pap()
 // Size: 0x6c
 function function_737ee059()
 {
-    self function_204dd117( "tutorial_fast_travel_start" );
+    self teleport_to( "tutorial_fast_travel_start" );
     function_fac53b63( array( "tutorial_zm_spawner_fast_travel_1", "tutorial_zm_spawner_fast_travel_2", "tutorial_zm_spawner_fast_travel_3", "tutorial_zm_spawner_fast_travel_4", "tutorial_zm_spawner_fast_travel_5" ) );
 }
 

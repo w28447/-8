@@ -1246,7 +1246,7 @@ function private function_9398e511()
     {
         switch ( cmd )
         {
-            case #"hash_4d20b9f9a8da7a33":
+            case #"brutus_round_skip":
                 level.var_cab8d080 = 1;
                 
                 if ( isdefined( level.next_brutus_round ) )

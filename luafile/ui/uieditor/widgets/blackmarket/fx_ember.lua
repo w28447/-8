@@ -17,7 +17,7 @@ CoD.fx_Ember.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_ar
 	self.Ember = Ember
 	
 	local mask = LUI.UIImage.new( 0.01, 1, 0, 0, 0.13, 0.73, -54, -60 )
-	mask:setImage( RegisterImage( 0x1A57A07BDE1F1E0 ) )
+	mask:setImage( RegisterImage( "uie_t7_blackmarket_crate_smokemask" ) )
 	self:addElement( mask )
 	self.mask = mask
 	

@@ -1,7 +1,7 @@
 {
     "keys": [
         {
-            "name": "#hash_7aacbce463988d7a",
+            "name": "#mp_morocco_all_stream",
             "xPakEntry": {
                 "key": "#hash_f19fa492dafe82eb",
                 "offset": 0,
@@ -20,7 +20,7 @@
             "keyFlags": 3
         },
         {
-            "name": "#hash_6e5f8003ae35486b",
+            "name": "#mp_morocco_all_loaded",
             "xPakEntry": {
                 "key": "#hash_e0c5655ee2200454",
                 "offset": 0,
@@ -92246,7 +92246,7 @@
             "keyFlags": 0
         },
         {
-            "name": "#hash_743193b4589b9ae4",
+            "name": "#mp_morocco_sst_0_0",
             "xPakEntry": {
                 "key": "#hash_e3939bd937656e42",
                 "offset": 0,

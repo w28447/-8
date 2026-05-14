@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_vehicles_recon_car",
+    "type": "#tag",
+    "material": "#hash_1da339641b46ce0a",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_310f5d1f4663f5dc",
+        "icon": "image#loot_ui_icon_tags_vehicles_recon_car",
+        "isdefault": 0
+    }
+}

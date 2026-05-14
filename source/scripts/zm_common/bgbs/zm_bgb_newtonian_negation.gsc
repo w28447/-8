@@ -59,7 +59,7 @@ function enable()
 // Size: 0x3c
 function function_4712db36()
 {
-    self endon( #"hash_429f79a1bdb91087" );
+    self endon( #"newtonian_negation_disable" );
     self waittill( #"disconnect" );
     thread disable();
 }
@@ -72,7 +72,7 @@ function disable()
 {
     if ( isdefined( self ) )
     {
-        self notify( #"hash_429f79a1bdb91087" );
+        self notify( #"newtonian_negation_disable" );
     }
     
     foreach ( player in level.players )

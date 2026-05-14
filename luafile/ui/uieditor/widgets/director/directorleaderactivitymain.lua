@@ -28,7 +28,7 @@ CoD.DirectorLeaderActivityMain.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local Waiting = LUI.UIText.new( 0, 0, 0, 178, 0, 0, 0, 20 )
 	Waiting:setRGB( 0.86, 0.74, 0.25 )
-	Waiting:setText( LocalizeToUpperString( 0xA43B10D9DA121A ) )
+	Waiting:setText( LocalizeToUpperString( "menu/waiting_caps" ) )
 	Waiting:setTTF( "ttmussels_demibold" )
 	Waiting:setLetterSpacing( 6 )
 	Waiting:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

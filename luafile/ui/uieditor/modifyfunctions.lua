@@ -763,7 +763,7 @@ end
 
 function LocalServerStatusToString( f104_arg0 )
 	if f104_arg0 == 0 then
-		return 0xDA680012C01968D
+		return "menu/lobby"
 	else
 		return 0xEF105DFE1446B3B
 	end
@@ -841,7 +841,7 @@ function LocalizeWithNatType( f111_arg0 )
 	if f111_local0 == 1 then
 		return Engine[0xF9F1239CFD921FE]( 0xBE02352B7C7ADA9, Engine[0xF9F1239CFD921FE]( 0x6ED205D2902BCCD ) )
 	elseif f111_local0 == 2 then
-		return Engine[0xF9F1239CFD921FE]( 0xBE02352B7C7ADA9, Engine[0xF9F1239CFD921FE]( 0x6382C5E67F9468C ) )
+		return Engine[0xF9F1239CFD921FE]( 0xBE02352B7C7ADA9, Engine[0xF9F1239CFD921FE]( "menu/sysinfo_nat_type_moderate_lobby" ) )
 	elseif f111_local0 == 3 then
 		return Engine[0xF9F1239CFD921FE]( 0xBE02352B7C7ADA9, Engine[0xF9F1239CFD921FE]( 0x9AA44209F0D1934 ) )
 	else
@@ -857,7 +857,7 @@ function DivideByScoreLimit( f113_arg0, f113_arg1, f113_arg2, f113_arg3, f113_ar
 	local f113_local0 = nil
 	if Dvar[0xFF54369D6573B91]:get() == "dom" or Dvar[0xFF54369D6573B91]:get() == "ball" or Dvar[0xFF54369D6573B91]:get() == "dom_dm" then
 		local f113_local1 = Engine.GetGametypeSetting( 0x1BE65BD13DB0766 ) or 0
-		local f113_local2 = Engine.GetGametypeSetting( 0x521DCAB34B80E72 ) or 0
+		local f113_local2 = Engine.GetGametypeSetting( "roundscorelimit" ) or 0
 		if f113_local1 > 2 then
 			f113_local0 = (Engine.GetRoundsPlayed( f113_arg0 ) + 1) * f113_local2
 		else

@@ -33,7 +33,7 @@ function private __init__()
     level.aat_reroll = [];
     level.var_bdba6ee8 = [];
     callback::on_connect( &on_player_connect );
-    callback::function_33f0ddd3( &function_33f0ddd3 );
+    callback::on_player_loadout_changed( &on_player_loadout_changed );
     spawners = getspawnerarray();
     
     foreach ( spawner in spawners )
@@ -82,7 +82,7 @@ function private on_player_connect()
 // Params 1, eflags: 0x4
 // Checksum 0xa7b81afc, Offset: 0x468
 // Size: 0x8c
-function private function_33f0ddd3( s_event )
+function private on_player_loadout_changed( s_event )
 {
     if ( s_event.event === "take_weapon" && isdefined( s_event.weapon ) )
     {

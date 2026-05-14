@@ -1,7 +1,7 @@
 {
     "name": "#zitem_tricannon_upgrade_part_2_zm",
     "baseWeapon": "#zitem_tricannon_upgrade_part_2",
-    "streamkey": "#hash_72f3652a1567b325",
+    "streamkey": "#zitem_tricannon_upgrade_part_2_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

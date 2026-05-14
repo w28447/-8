@@ -56,7 +56,7 @@ CoD.SupplyChainStreamInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	GridTiled:setRGB( 0.6, 0.89, 1 )
 	GridTiled:setAlpha( 0.06 )
 	GridTiled:setScale( 1.01, 1.01 )
-	GridTiled:setImage( RegisterImage( 0xAC3234E1F71D1D6 ) )
+	GridTiled:setImage( RegisterImage( "uie_hud_common_corner_pip" ) )
 	GridTiled:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	GridTiled:setShaderVector( 0, 0, 0, 0, 0 )
 	GridTiled:setupNineSliceShader( 8, 8 )

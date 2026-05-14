@@ -2,7 +2,7 @@
     "name": "#default_specialist_equipment_mp",
     "baseWeapon": "#default_specialist_equipment",
     "displayname": "#weapon/m2fraggrenade",
-    "streamkey": "#hash_6fa2e0675d5a7d27",
+    "streamkey": "#default_specialist_equipment_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_warriors_seraph",
+    "type": "#tag",
+    "material": "#hash_4c414a45f5779d93",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_172576cea7f1af3",
+        "icon": "image#loot_ui_icon_tags_warriors_seraph",
+        "isdefault": 0
+    }
+}

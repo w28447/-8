@@ -245,7 +245,7 @@ function function_72ba0df6( einflictor, attacker, idamage, smeansofdeath, weapon
         }
         
         level notify( #"stop_nag" );
-        ct_vo::function_c72e58c1();
+        ct_vo::play_vo_end();
         ct_vo::function_47ece28d();
         
         if ( level.var_ad7c0539 === 7 )
@@ -551,7 +551,7 @@ function function_27e2d4aa()
         wait 0.5;
     }
     
-    ct_vo::function_c72e58c1();
+    ct_vo::play_vo_end();
     ct_vo::function_47ece28d();
     wait 0.1;
     level.players[ 0 ] ct_vo::play_vo( #"hash_4a3fa914d1ccc37c", 1 );
@@ -616,7 +616,7 @@ function function_a03539a3()
     }
     
     level notify( #"hash_4c9c5fbc89779e64" );
-    ct_vo::function_c72e58c1();
+    ct_vo::play_vo_end();
     ct_vo::function_47ece28d();
     level thread ct_vo::play_vo( #"hash_281160c4a36c9dd0", 0 );
     ct_utils::function_c2a10fc();
@@ -864,7 +864,7 @@ function function_8d7d4d37()
             level notify( #"bounce_failed" );
             wait 0.5;
             level.players[ 0 ] ct_utils::function_49e0c5bc( 0, 0 );
-            ct_vo::function_c72e58c1();
+            ct_vo::play_vo_end();
             ct_vo::function_47ece28d();
             level flag::clear( "enemy_arrived" );
             level notify( #"start_war_machine_wall_bounce_forward_collision" );
@@ -929,7 +929,7 @@ function function_de37fc52()
         if ( !level flag::get( "window_hit" ) )
         {
             level.players[ 0 ] ct_utils::function_49e0c5bc( 0, 0 );
-            ct_vo::function_c72e58c1();
+            ct_vo::play_vo_end();
             ct_vo::function_47ece28d();
         }
         
@@ -985,7 +985,7 @@ function function_18161780()
         level notify( #"hash_4c9c5fbc89779e64" );
         level thread ct_vo::play_vo( #"hash_324ec3f3d3717311", 0 );
         level.players[ 0 ] thread ct_utils::function_61c3d59c( undefined, undefined, "dynobj_KillMantises" );
-        level.players[ 0 ] ct_utils::function_80bf685b( level.var_1bbf6bf1 );
+        level.players[ 0 ] ct_utils::ingame_objective_set_points( level.var_1bbf6bf1 );
         level.players[ 0 ] spawn_mantis( "s_battery_mantis_1", 1 );
         
         if ( isalive( level.players[ 0 ] ) )
@@ -1019,7 +1019,7 @@ function function_18161780()
     while ( !level flag::get( "mantis_dead_2" ) )
     {
         level.players[ 0 ] spawn_mantis( "s_battery_mantis_2", 3 );
-        level.players[ 0 ] ct_utils::function_80bf685b( level.var_1bbf6bf1 );
+        level.players[ 0 ] ct_utils::ingame_objective_set_points( level.var_1bbf6bf1 );
         
         if ( isalive( level.players[ 0 ] ) )
         {
@@ -1038,7 +1038,7 @@ function function_18161780()
             if ( level.var_1bbf6bf1 < 5 )
             {
                 level.var_1bbf6bf1 = 5;
-                level.players[ 0 ] ct_utils::function_80bf685b( level.var_1bbf6bf1 );
+                level.players[ 0 ] ct_utils::ingame_objective_set_points( level.var_1bbf6bf1 );
             }
         }
         
@@ -1053,7 +1053,7 @@ function function_18161780()
     while ( !level flag::get( "mantis_dead_3" ) )
     {
         level.players[ 0 ] spawn_mantis( "s_battery_mantis_3", 2 );
-        level.players[ 0 ] ct_utils::function_80bf685b( level.var_1bbf6bf1 );
+        level.players[ 0 ] ct_utils::ingame_objective_set_points( level.var_1bbf6bf1 );
         level thread ct_vo::function_14b08e49( array( #"hash_74ef556ec3948300" ), "stop_nag" );
         
         if ( isalive( level.players[ 0 ] ) )
@@ -1073,7 +1073,7 @@ function function_18161780()
             if ( level.var_1bbf6bf1 < 3 )
             {
                 level.var_1bbf6bf1 = 3;
-                level.players[ 0 ] ct_utils::function_80bf685b( level.var_1bbf6bf1 );
+                level.players[ 0 ] ct_utils::ingame_objective_set_points( level.var_1bbf6bf1 );
             }
         }
         
@@ -1199,7 +1199,7 @@ function function_8e068518()
         level flag::clear( "stop_reinforce" );
         level.players[ 0 ] thread ct_utils::function_61c3d59c( undefined, undefined, "dynobj_KillToEarnLightningStrike" );
         level.var_ff7ed5c8 = 0;
-        level.players[ 0 ] ct_utils::function_80bf685b( level.var_ff7ed5c8 );
+        level.players[ 0 ] ct_utils::ingame_objective_set_points( level.var_ff7ed5c8 );
         level.players[ 0 ].momentum = 0;
         globallogic_score::_setplayermomentum( level.players[ 0 ], level.var_ff7ed5c8 );
         level.players[ 0 ] thread function_30128519();
@@ -1216,9 +1216,9 @@ function function_8e068518()
         
         if ( !isalive( level.players[ 0 ] ) )
         {
-            level.players[ 0 ] ct_utils::function_1bb93418();
+            level.players[ 0 ] ct_utils::ingame_objective_close();
             level.var_ff7ed5c8 = 0;
-            level.players[ 0 ] ct_utils::function_80bf685b( level.var_ff7ed5c8 );
+            level.players[ 0 ] ct_utils::ingame_objective_set_points( level.var_ff7ed5c8 );
             level.players[ 0 ].momentum = 0;
             globallogic_score::_setplayermomentum( level.players[ 0 ], level.var_ff7ed5c8 );
         }
@@ -1260,14 +1260,14 @@ function function_86610592()
     
     if ( level.var_ff7ed5c8 < 900 )
     {
-        level.players[ 0 ] ct_utils::function_80bf685b( level.var_ff7ed5c8 );
+        level.players[ 0 ] ct_utils::ingame_objective_set_points( level.var_ff7ed5c8 );
     }
     else
     {
         level.var_51ff7a58 = 1;
-        level.players[ 0 ] ct_utils::function_1bb93418();
+        level.players[ 0 ] ct_utils::ingame_objective_close();
         level notify( #"killstreak_ready" );
-        level.players[ 0 ] notify( #"hash_d492b9f291b1e7b" );
+        level.players[ 0 ] notify( #"killstreak_ready_planemortar" );
     }
     
     if ( level.var_ff7ed5c8 > 700 )
@@ -1283,9 +1283,9 @@ function function_86610592()
 function function_537c9eea()
 {
     self endon( #"death" );
-    self waittill( #"hash_d492b9f291b1e7b" );
+    self waittill( #"killstreak_ready_planemortar" );
     self.var_51ff7a58 = 1;
-    self ct_utils::function_1bb93418();
+    self ct_utils::ingame_objective_close();
 }
 
 // Namespace ct_battery_tutorial/ct_battery_tutorial
@@ -1352,7 +1352,7 @@ function function_e17f2b8a()
                 {
                     level flag::clear( "scorestreak_fail" );
                     level ct_vo::play_vo( #"hash_bebb353e21b47f1", 1 );
-                    level.players[ 0 ] ct_utils::function_1bb93418();
+                    level.players[ 0 ] ct_utils::ingame_objective_close();
                 }
                 else if ( level flag::get( "scorestreak_done" ) )
                 {
@@ -1445,7 +1445,7 @@ function function_c8eefe3b( var_c361acde )
     if ( s_result.attacker === level.players[ 0 ] )
     {
         level.var_1bbf6bf1--;
-        level.players[ 0 ] ct_utils::function_80bf685b( level.var_1bbf6bf1 );
+        level.players[ 0 ] ct_utils::ingame_objective_set_points( level.var_1bbf6bf1 );
     }
 }
 
@@ -1567,7 +1567,7 @@ function grenade_sticky_watcher()
 {
     self endon( #"death" );
     waitresult = self waittill( #"stuck_to_player" );
-    level notify( #"hash_791dd53f2a2f4a6", { #player:waitresult.player, #grenade:self } );
+    level notify( #"grenade_stuck_to_player", { #player:waitresult.player, #grenade:self } );
 }
 
 // Namespace ct_battery_tutorial/ct_battery_tutorial
@@ -1870,7 +1870,7 @@ function function_8670e3b1( s_loc )
     
     while ( true )
     {
-        waitresult = level waittill( #"hash_791dd53f2a2f4a6" );
+        waitresult = level waittill( #"grenade_stuck_to_player" );
         e_player = waitresult.player;
         e_grenade = waitresult.grenade;
         

@@ -203,7 +203,7 @@ function perk_random_machine_stub_update_prompt( player )
         
         if ( !player zm_utility::can_player_purchase_perk() )
         {
-            self.hint_string = #"hash_4c509a13051ab81";
+            self.hint_string = #"zombie/random_perk_too_many";
             
             if ( isdefined( n_purchase_limit ) )
             {
@@ -216,7 +216,7 @@ function perk_random_machine_stub_update_prompt( player )
         {
             if ( isdefined( self.stub.trigger_target.grab_perk_hint ) && self.stub.trigger_target.grab_perk_hint )
             {
-                self.hint_string = #"hash_58afe6f04e854611";
+                self.hint_string = #"zombie/random_perk_pickup";
                 return 1;
             }
             else
@@ -231,7 +231,7 @@ function perk_random_machine_stub_update_prompt( player )
             
             if ( !player zm_utility::can_player_purchase_perk() )
             {
-                self.hint_string = #"hash_4c509a13051ab81";
+                self.hint_string = #"zombie/random_perk_too_many";
                 
                 if ( isdefined( n_purchase_limit ) )
                 {
@@ -242,7 +242,7 @@ function perk_random_machine_stub_update_prompt( player )
             }
             else
             {
-                self.hint_string = #"hash_5a5c92d88d46def";
+                self.hint_string = #"zombie/random_perk_buy";
                 self.hint_parm1 = level._random_zombie_perk_cost;
                 return 1;
             }
@@ -251,7 +251,7 @@ function perk_random_machine_stub_update_prompt( player )
         return;
     }
     
-    self.hint_string = #"hash_2696440da6a4b627";
+    self.hint_string = #"zombie/random_perk_elsewhere";
     return 0;
 }
 
@@ -1000,7 +1000,7 @@ function is_power_on( n_power_index )
             case #"wunderfizz_idle":
                 e_wunderfizz thread set_perk_random_machine_state( "<dev string:x7b>" );
                 break;
-            case #"hash_67d324a91b1fd821":
+            case #"wunderfizz_power_off":
                 e_wunderfizz thread set_perk_random_machine_state( "<dev string:x82>" );
                 break;
             case #"wunderfizz_initial":

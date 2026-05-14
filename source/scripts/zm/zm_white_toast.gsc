@@ -141,12 +141,12 @@ function stat_tracker_setup( b_skipped )
 {
     level endon( #"end_game", #"stat_tracker" + "_ended_early" );
     
-    while ( !level flag::exists( #"hash_5aa1c9627e8626e0" ) )
+    while ( !level flag::exists( #"shard_step_complete" ) )
     {
         wait 1;
     }
     
-    level flag::wait_till( #"hash_5aa1c9627e8626e0" );
+    level flag::wait_till( #"shard_step_complete" );
 }
 
 // Namespace zm_white_toast/zm_white_toast
@@ -155,7 +155,7 @@ function stat_tracker_setup( b_skipped )
 // Size: 0x34
 function stat_tracker_cleanup( b_skipped, var_19e802fa )
 {
-    level flag::set( #"hash_5aa1c9627e8626e0" );
+    level flag::set( #"shard_step_complete" );
 }
 
 // Namespace zm_white_toast/zm_white_toast
@@ -208,7 +208,7 @@ function function_94c0714()
     level flag::set( #"infinite_round_spawning" );
     level flag::set( #"pause_round_timeout" );
     level flag::set( "world_is_paused" );
-    zm_hms_util::function_3c173d37();
+    zm_hms_util::vo_stop_all();
     level.var_8200dc81 thread zm_hms_util::function_6a0d675d( #"hash_46be55ed9729001b", 0, 0 );
     level flag::clear( "world_is_paused" );
     zm_sq_modules::function_3f808d3d( "sc_toast_apd" );
@@ -282,13 +282,13 @@ function function_ca3759b1()
     
     spawn_boss();
     exploder::exploder( "fxexp_avo_elec_floor" );
-    zm_hms_util::function_3c173d37();
+    zm_hms_util::vo_stop_all();
     level.e_avogadro zm_hms_util::function_6a0d675d( #"vox_boss_release", 0, 0, 1 );
-    zm_hms_util::function_3c173d37();
+    zm_hms_util::vo_stop_all();
     zm_hms_util::function_fd24e47f( "vox_boss_release", 1, 0, 1 );
-    zm_hms_util::function_3c173d37();
+    zm_hms_util::vo_stop_all();
     level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"vox_boss_release", 2, 0, 1 );
-    zm_hms_util::function_3c173d37();
+    zm_hms_util::vo_stop_all();
     level.e_avogadro zm_hms_util::function_6a0d675d( #"vox_boss_release", 3, 0, 1 );
     
     /#
@@ -304,7 +304,7 @@ function function_ca3759b1()
     
     function_5ef0416();
     zm_white_util::function_6f635c39( "boss_lockdown" );
-    zm_hms_util::function_3c173d37();
+    zm_hms_util::vo_stop_all();
     level.var_8200dc81 zm_hms_util::function_6a0d675d( #"vox_boss_release", 4, 0 );
     
     /#
@@ -326,7 +326,7 @@ function function_ca3759b1()
     level zm_white_util::function_ec34b5ee( "vox_boss_nuke_count_nine_ncom_0" );
     level zm_white_util::function_ec34b5ee( "vox_boss_nuke_count_eight_ncom_0" );
     level zm_white_util::function_ec34b5ee( "vox_boss_nuke_count_seven_ncom_0" );
-    playsoundatposition( #"hash_5dddf55133ac4bcf", ( -576, -1992, -87 ) );
+    playsoundatposition( #"evt_nuke_incoming", ( -576, -1992, -87 ) );
     level zm_white_util::function_ec34b5ee( "vox_boss_nuke_count_six_ncom_0" );
     level zm_white_util::function_ec34b5ee( "vox_boss_nuke_count_five_ncom_0" );
     level zm_white_util::function_ec34b5ee( "vox_boss_nuke_count_four_ncom_0" );
@@ -343,7 +343,7 @@ function function_ca3759b1()
     playsoundatposition( #"hash_782025025ec70d68", ( 0, 0, 0 ) );
     exploder::exploder( "fxexp_nuke_event" );
     wait 2;
-    zm_hms_util::function_3c173d37();
+    zm_hms_util::vo_stop_all();
     wait 2;
     level.e_avogadro zm_hms_util::function_6a0d675d( #"hash_5233a87eed32231a", 0, 0 );
     
@@ -440,7 +440,7 @@ function function_ca3759b1()
     }
     
     level notify( #"avog_captured" );
-    zm_hms_util::function_3c173d37();
+    zm_hms_util::vo_stop_all();
     level.e_shard.name = "avog";
     level.e_shard thread zm_hms_util::function_6a0d675d( #"hash_1617ecba0bd3c76c", 3, 0 );
     music::setmusicstate( "none" );
@@ -453,9 +453,9 @@ function function_ca3759b1()
     level thread function_3418b6f6();
     zm_hms_util::pause_zombies( 1, 0 );
     wait 2;
-    zm_hms_util::function_3c173d37();
+    zm_hms_util::vo_stop_all();
     level.var_8200dc81 zm_hms_util::function_6a0d675d( #"hash_1617ecba0bd3c76c", 1, 0, 1 );
-    zm_hms_util::function_3c173d37();
+    zm_hms_util::vo_stop_all();
     level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_1617ecba0bd3c76c", 2, 0, 1 );
     level.e_apd_computer_screens function_43124a8f();
     
@@ -482,7 +482,7 @@ function function_ca3759b1()
     storage_canister thread function_8c2bda65( 3, 1 );
     beds_canister = struct::get( "cp_toast_apd_beds", "script_noteworthy" );
     beds_canister thread function_8c2bda65( 3, 1 );
-    zm_hms_util::function_3c173d37();
+    zm_hms_util::vo_stop_all();
     level.e_shard zm_hms_util::function_6a0d675d( #"vox_boss_success", 0, 0, 1 );
     level function_45b60e0e();
     level function_976e7caa();
@@ -638,11 +638,11 @@ function function_3b0da1a8( str_hint )
 function function_1e689ec8()
 {
     level endon( #"preamble_started" );
-    zm_hms_util::function_3c173d37();
+    zm_hms_util::vo_stop_all();
     level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"vox_boss_intro", 0, 0, 1 );
-    zm_hms_util::function_3c173d37();
+    zm_hms_util::vo_stop_all();
     level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"vox_boss_intro", 1, 0, 1 );
-    zm_hms_util::function_3c173d37();
+    zm_hms_util::vo_stop_all();
     zm_hms_util::function_fd24e47f( "vox_boss_intro", -1, 0, 1 );
 }
 
@@ -653,15 +653,15 @@ function function_1e689ec8()
 function canister_instruct()
 {
     level endon( #"hash_56dcbeaf295dd09e" );
-    zm_hms_util::function_3c173d37();
+    zm_hms_util::vo_stop_all();
     zm_hms_util::function_fd24e47f( "vox_boss_canister_instruct", 0, 0, 1 );
-    zm_hms_util::function_3c173d37();
+    zm_hms_util::vo_stop_all();
     level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"vox_boss_canister_instruct", 1, 0, 1 );
-    zm_hms_util::function_3c173d37();
+    zm_hms_util::vo_stop_all();
     level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"vox_boss_canister_instruct", 3, 0, 1 );
-    zm_hms_util::function_3c173d37();
+    zm_hms_util::vo_stop_all();
     level.var_8200dc81 zm_hms_util::function_6a0d675d( #"vox_boss_canister_instruct", 4, 0, 1 );
-    zm_hms_util::function_3c173d37();
+    zm_hms_util::vo_stop_all();
     level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"vox_boss_canister_instruct", 5, 0, 1 );
 }
 
@@ -672,11 +672,11 @@ function canister_instruct()
 function function_26739c84()
 {
     level endon( #"avog_captured" );
-    zm_hms_util::function_3c173d37();
+    zm_hms_util::vo_stop_all();
     level.var_8200dc81 zm_hms_util::function_6a0d675d( #"hash_e23ab83d54dcb8c", 0, 0, 1 );
-    zm_hms_util::function_3c173d37();
+    zm_hms_util::vo_stop_all();
     level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_e23ab83d54dcb8c", 1, 0, 1 );
-    zm_hms_util::function_3c173d37();
+    zm_hms_util::vo_stop_all();
     level.e_avogadro zm_hms_util::function_6a0d675d( #"hash_599ad19acca1d1c8", 3, 0, 1 );
     vol_beds = getent( "vol_soul_beds", "targetname" );
     
@@ -696,12 +696,12 @@ function function_26739c84()
 // Size: 0xcc
 function s_construction_push_point_a_markets()
 {
-    level endon( #"hash_5aa1c9627e8626e0" );
-    zm_hms_util::function_3c173d37();
+    level endon( #"shard_step_complete" );
+    zm_hms_util::vo_stop_all();
     level.var_8200dc81 zm_hms_util::function_6a0d675d( #"vox_boss_success", 1, 0, 1 );
-    zm_hms_util::function_3c173d37();
+    zm_hms_util::vo_stop_all();
     level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"vox_boss_success", 2, 0, 1 );
-    zm_hms_util::function_3c173d37();
+    zm_hms_util::vo_stop_all();
     zm_hms_util::function_fd24e47f( "vox_boss_success", 3, 0, 1 );
 }
 
@@ -1112,8 +1112,8 @@ function function_abb0b62()
         {
             if ( e_player zm_audio::can_speak() )
             {
-                zm_hms_util::function_3c173d37();
-                e_player zm_hms_util::function_51b752a9( #"hash_2260a354cf8d04c1", -1, 0, 1 );
+                zm_hms_util::vo_stop_all();
+                e_player zm_hms_util::function_51b752a9( #"vox_boss_no_bullet_react", -1, 0, 1 );
                 var_51f3793d = 1;
                 b_spoke = 1;
             }
@@ -1123,8 +1123,8 @@ function function_abb0b62()
             if ( level.e_avogadro zm_audio::can_speak() )
             {
                 var_ca2331b5 = a_reactions[ i ];
-                zm_hms_util::function_3c173d37();
-                level.e_avogadro zm_hms_util::function_6a0d675d( #"hash_2260a354cf8d04c1", var_ca2331b5, 0, 1 );
+                zm_hms_util::vo_stop_all();
+                level.e_avogadro zm_hms_util::function_6a0d675d( #"vox_boss_no_bullet_react", var_ca2331b5, 0, 1 );
                 b_spoke = 1;
                 i++;
             }
@@ -1160,7 +1160,7 @@ function downed_react()
         {
             if ( level.e_avogadro zm_audio::can_speak() )
             {
-                zm_hms_util::function_3c173d37();
+                zm_hms_util::vo_stop_all();
                 level.e_avogadro zm_hms_util::function_6a0d675d( #"hash_4f74505970e866da", -1, 0, 1 );
                 b_spoke = 1;
             }
@@ -1216,8 +1216,8 @@ function function_927c0f2e()
                 
                 if ( e_player zm_audio::can_speak() )
                 {
-                    zm_hms_util::function_3c173d37();
-                    e_player zm_hms_util::function_51b752a9( #"hash_3a561b214fd1c2f5", -1, 0, 1 );
+                    zm_hms_util::vo_stop_all();
+                    e_player zm_hms_util::function_51b752a9( #"vox_boss_radial_attack_react", -1, 0, 1 );
                     b_spoke = 1;
                 }
             }
@@ -1275,7 +1275,7 @@ function function_8149ceff()
                 
                 if ( e_player zm_audio::can_speak() )
                 {
-                    zm_hms_util::function_3c173d37();
+                    zm_hms_util::vo_stop_all();
                     e_player zm_hms_util::function_51b752a9( #"vox_boss_electric_warn", -1, 0, 1 );
                     b_spoke = 1;
                 }
@@ -1346,7 +1346,7 @@ function function_1fba7fc2()
                 if ( var_d1e952c4 zm_audio::can_speak() )
                 {
                     alias = base_alias + str_name + "_avog_" + a_taunts[ str_name ][ 0 ];
-                    zm_hms_util::function_3c173d37();
+                    zm_hms_util::vo_stop_all();
                     var_d1e952c4 zm_audio::do_player_or_npc_playvox( alias, 1 );
                     arrayremoveindex( a_taunts[ str_name ], 0 );
                     b_spoke = 1;
@@ -1452,9 +1452,9 @@ function function_b58e5865()
     
     level.var_5da5aff4 = 0;
     
-    if ( level flag::get( #"hash_398e4b1e72edb4ee" ) )
+    if ( level flag::get( #"lounge_revoked" ) )
     {
-        level flag::clear( #"hash_398e4b1e72edb4ee" );
+        level flag::clear( #"lounge_revoked" );
         exploder::stop_exploder( "fxexp_elec_lounge" );
     }
     
@@ -1518,7 +1518,7 @@ function function_be93a2bf()
         ai.health = int( ai.health * 2 );
         ai thread function_ea2d02a6();
         level.zombie_total--;
-        n_delay = isdefined( zombie_utility::get_zombie_var( #"zombie_spawn_delay" ) ) ? zombie_utility::get_zombie_var( #"zombie_spawn_delay" ) : zombie_utility::get_zombie_var( #"hash_7d5a25e2463f7fc5" );
+        n_delay = isdefined( zombie_utility::get_zombie_var( #"zombie_spawn_delay" ) ) ? zombie_utility::get_zombie_var( #"zombie_spawn_delay" ) : zombie_utility::get_zombie_var( #"zombie_spawn_delay_base" );
         
         if ( flag::get( #"hash_2b7c76b6b0dfc0fd" ) )
         {
@@ -1728,7 +1728,7 @@ function function_dbbdda4c( e_player )
             }
         #/
         
-        zm_hms_util::function_3c173d37();
+        zm_hms_util::vo_stop_all();
         level.var_8200dc81 thread zm_hms_util::function_6a0d675d( #"hash_5c371dc17ccdf97", 0, 0, 1 );
         playsoundatposition( #"hash_3fc59a2ac3e3a5b9", ( 0, 0, 0 ) );
         self.var_3fc5ae3d = 1;
@@ -1753,10 +1753,10 @@ function function_dbbdda4c( e_player )
 function function_5f7d6e4c()
 {
     self endon( #"hash_56dcbeaf295dd09e", #"end_game" );
-    zm_hms_util::function_3c173d37();
+    zm_hms_util::vo_stop_all();
     level.var_8200dc81 zm_hms_util::function_6a0d675d( #"hash_529b7231d7ddbe80", 0, 0, 1 );
     n_variant = randomintrangeinclusive( 0, 9 );
-    zm_hms_util::function_3c173d37();
+    zm_hms_util::vo_stop_all();
     level.e_avogadro zm_hms_util::function_6a0d675d( #"hash_7c662a0005eae5d4", n_variant, 0, 1 );
 }
 
@@ -1807,7 +1807,7 @@ function function_a6a4a162()
             apd_canister = struct::get( "cp_toast_apd_diner", "script_noteworthy" );
             level function_594dae();
             apd_canister thread function_8c2bda65( 3, 0 );
-            zm_hms_util::function_3c173d37();
+            zm_hms_util::vo_stop_all();
             level.var_8200dc81 zm_hms_util::function_6a0d675d( #"hash_278f7dd58492d72f", 0, 0, 1 );
             level thread function_377062e2();
             wait 5;
@@ -1817,7 +1817,7 @@ function function_a6a4a162()
             apd_canister = struct::get( "cp_toast_apd_lounge", "script_noteworthy" );
             level function_6fd6c18f();
             apd_canister thread function_8c2bda65( 3, 0 );
-            zm_hms_util::function_3c173d37();
+            zm_hms_util::vo_stop_all();
             level.var_8200dc81 zm_hms_util::function_6a0d675d( #"hash_5aa17424c77358bf", 0, 0, 1 );
             level thread function_377062e2();
             wait 5;
@@ -1827,7 +1827,7 @@ function function_a6a4a162()
             apd_canister = struct::get( "cp_toast_apd", "script_noteworthy" );
             level function_6f083d9c();
             apd_canister thread function_8c2bda65( 3, 0 );
-            zm_hms_util::function_3c173d37();
+            zm_hms_util::vo_stop_all();
             level.var_8200dc81 zm_hms_util::function_6a0d675d( #"hash_6a8081b211c908ce", 0, 0, 1 );
             level thread function_377062e2();
             wait 5;
@@ -1837,7 +1837,7 @@ function function_a6a4a162()
             apd_canister = struct::get( "cp_toast_apd_beds", "script_noteworthy" );
             level function_8ba67fdc();
             apd_canister thread function_8c2bda65( 3, 0 );
-            zm_hms_util::function_3c173d37();
+            zm_hms_util::vo_stop_all();
             level.var_8200dc81 zm_hms_util::function_6a0d675d( #"hash_740bffff7149b220", 0, 0, 1 );
             level thread function_377062e2();
             wait 5;
@@ -1859,19 +1859,19 @@ function function_2dfd8e82()
     switch ( level.var_65e355f )
     {
         case 1:
-            zm_hms_util::function_3c173d37();
+            zm_hms_util::vo_stop_all();
             level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_52ef0df6d3730e90", 1, 0, 1 );
             break;
         case 2:
-            zm_hms_util::function_3c173d37();
+            zm_hms_util::vo_stop_all();
             level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_75fc60c1d10de4c2", 1, 0, 1 );
             break;
         case 3:
-            zm_hms_util::function_3c173d37();
+            zm_hms_util::vo_stop_all();
             level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_6e3f8bae61789524", 1, 0, 1 );
             break;
         case 4:
-            zm_hms_util::function_3c173d37();
+            zm_hms_util::vo_stop_all();
             level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_599ad19acca1d1c8", 1, 0, 1 );
             break;
     }
@@ -1888,19 +1888,19 @@ function function_377062e2()
     switch ( level.var_65e355f )
     {
         case 1:
-            zm_hms_util::function_3c173d37();
+            zm_hms_util::vo_stop_all();
             level.e_avogadro zm_hms_util::function_6a0d675d( #"hash_52ef0df6d3730e90", 2, 0, 1 );
             break;
         case 2:
-            zm_hms_util::function_3c173d37();
+            zm_hms_util::vo_stop_all();
             level.e_avogadro zm_hms_util::function_6a0d675d( #"hash_75fc60c1d10de4c2", 2, 0, 1 );
             break;
         case 3:
-            zm_hms_util::function_3c173d37();
+            zm_hms_util::vo_stop_all();
             level.e_avogadro zm_hms_util::function_6a0d675d( #"hash_6e3f8bae61789524", 2, 0, 1 );
             break;
         case 4:
-            zm_hms_util::function_3c173d37();
+            zm_hms_util::vo_stop_all();
             level.e_avogadro zm_hms_util::function_6a0d675d( #"hash_599ad19acca1d1c8", 2, 0, 1 );
             level flag::set( #"toast_final_charge" );
             break;

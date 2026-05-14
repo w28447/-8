@@ -1,5 +1,5 @@
 {
-    "hinttext": "localized17#hash_598fe127f7f26042",
+    "hinttext": "localized17#menu/number_of_lives_hint",
     "configstringfiletype": "scriptbundle",
     "value8": "7",
     "value9": "8",
@@ -19,7 +19,7 @@
     "label": "localized17#menu/x_lives",
     "hash_5a6dee5a": 0,
     "name": "player_num_lives",
-    "displayname": "localized17#hash_6b02b19b36d9315e",
+    "displayname": "localized17#menu/number_of_lives",
     "label1": "localized17#menu/unlimited",
     "label2": "localized17#menu/1_life",
     "hash_54e336e4": 0,

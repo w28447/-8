@@ -130,7 +130,7 @@ LUI.createMenu.LeaguePlayRankRules = function ( f1_arg0, f1_arg1 )
 	
 	local SilverRankReward = CoD.leaguePlayEndRankRulesRewards.new( f1_local1, f1_arg0, 0.5, 0.5, -345, -135, 0.5, 0.5, -276.5, 73.5 )
 	SilverRankReward.Top25:setText( Engine[0xF9F1239CFD921FE]( 0xB828F9D4DF6BFCF ) )
-	SilverRankReward.BronzeRankIcon:setImage( RegisterImage( 0xBF9E348B97EB4A0 ) )
+	SilverRankReward.BronzeRankIcon:setImage( RegisterImage( "uie_ui_icon_mp_league_07_02_large" ) )
 	self:addElement( SilverRankReward )
 	self.SilverRankReward = SilverRankReward
 	
@@ -149,7 +149,7 @@ LUI.createMenu.LeaguePlayRankRules = function ( f1_arg0, f1_arg1 )
 	local DiamondRankReward = CoD.leaguePlayEndRankRulesRewards.new( f1_local1, f1_arg0, 0.5, 0.5, 375, 585, 0.5, 0.5, -276.5, 73.5 )
 	DiamondRankReward.Top25:setAlpha( 0 )
 	DiamondRankReward.Reward:setAlpha( 0 )
-	DiamondRankReward.BronzeRankIcon:setImage( RegisterImage( 0x4224A5995B2359E ) )
+	DiamondRankReward.BronzeRankIcon:setImage( RegisterImage( "uie_ui_icon_mp_league_07_04_large" ) )
 	DiamondRankReward.TopTriangle:setAlpha( 0.4 )
 	self:addElement( DiamondRankReward )
 	self.DiamondRankReward = DiamondRankReward

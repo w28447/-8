@@ -121,7 +121,7 @@ function init()
     
     callback::on_connect( &on_player_connect );
     callback::on_disconnect( &on_player_disconnect );
-    callback::function_33f0ddd3( &function_6ef2b98f );
+    callback::on_player_loadout_changed( &function_6ef2b98f );
     callback::on_ai_killed( &function_cb939976 );
     level.var_67713b46 = &function_d271c27e;
     level.var_3e3d6409 = &function_f5f50d2b;
@@ -856,7 +856,7 @@ function function_809767d( str_hand )
     zm_unitrigger::unitrigger_force_per_player_triggers( s_unitrigger, 1 );
     var_a1327d58 flag::init( #"hash_58c0761173ca055" );
     var_a1327d58 flag::init( #"hash_19f136c3e517eb81" );
-    var_a1327d58 flag::init( #"hash_582906087b67b7c6" );
+    var_a1327d58 flag::init( #"flag_ww_quests_portal_active" );
     var_a1327d58 flag::init( #"flag_ww_quests_portal_available" );
     var_a1327d58 flag::init( #"hash_71e34916a790c3f" );
     s_quest.var_a1327d58 = var_a1327d58;
@@ -926,7 +926,7 @@ function function_6ef2b98f( eventstruct )
     
     if ( eventstruct.event == "give_weapon" && isdefined( function_9b3e9487( eventstruct.weapon ) ) && function_9b3e9487( eventstruct.weapon ) && self flag::get( #"hash_664c4b8d9b3d0237" ) )
     {
-        self notify( #"hash_540044cdce85f636" );
+        self notify( #"picked_up_ww" );
     }
     
     self thread function_f25f67a7();
@@ -945,7 +945,7 @@ function function_841236e4( w_weapon, var_b6bc44ed )
     
     if ( w_weapon.name === #"ww_hand_h_uncharged" || w_weapon.name === #"ww_hand_h" || w_weapon.name === #"ww_hand_h_upgraded" )
     {
-        self notify( #"hash_3f0faacb0cc98a9", { #b_success:0 } );
+        self notify( #"light_energy_dropped", { #b_success:0 } );
         var_caa76b60 = #"light";
     }
     else if ( w_weapon.name === #"ww_hand_c_uncharged" || w_weapon.name === #"ww_hand_c" || w_weapon.name === #"ww_hand_c_upgraded" )
@@ -1032,7 +1032,7 @@ function on_player_damage( einflictor, eattacker, idamage, idflags, smeansofdeat
         }
         else if ( self flag::get( "carrying_light_energy" ) )
         {
-            self notify( #"hash_3f0faacb0cc98a9", { #b_success:0 } );
+            self notify( #"light_energy_dropped", { #b_success:0 } );
         }
     }
     
@@ -1140,7 +1140,7 @@ function function_9f665c5d( e_player )
                 self sethintstringforplayer( e_player, str_prompt );
                 return true;
             }
-            else if ( w_wonder_weapon === s_shrine.var_884c4b3a && s_shrine flag::get( #"hash_582906087b67b7c6" ) )
+            else if ( w_wonder_weapon === s_shrine.var_884c4b3a && s_shrine flag::get( #"flag_ww_quests_portal_active" ) )
             {
                 str_prompt = zm_utility::function_d6046228( #"hash_758d9ac1d50488b4", #"hash_7cf0aaa08ece2918" );
                 self sethintstringforplayer( e_player, str_prompt );
@@ -1161,7 +1161,7 @@ function function_9f665c5d( e_player )
                 self sethintstringforplayer( e_player, str_prompt );
                 return true;
             }
-            else if ( w_wonder_weapon === s_shrine.var_884c4b3a && s_shrine flag::get( #"hash_582906087b67b7c6" ) )
+            else if ( w_wonder_weapon === s_shrine.var_884c4b3a && s_shrine flag::get( #"flag_ww_quests_portal_active" ) )
             {
                 str_prompt = zm_utility::function_d6046228( #"hash_645ccf84af1a142", #"hash_3d74cbb3721616" );
                 self sethintstringforplayer( e_player, str_prompt );
@@ -1176,7 +1176,7 @@ function function_9f665c5d( e_player )
         
         if ( s_shrine.targetname === "s_ww_quests_light_box_interact" )
         {
-            if ( w_wonder_weapon === s_shrine.var_884c4b3a && s_shrine flag::get( #"hash_582906087b67b7c6" ) )
+            if ( w_wonder_weapon === s_shrine.var_884c4b3a && s_shrine flag::get( #"flag_ww_quests_portal_active" ) )
             {
                 str_prompt = zm_utility::function_d6046228( #"hash_62361fcb7d133dca", #"hash_3bf3c84f50358ace" );
                 self sethintstringforplayer( e_player, str_prompt );
@@ -1191,7 +1191,7 @@ function function_9f665c5d( e_player )
         
         if ( s_shrine.targetname === "s_ww_quests_air_box_interact" )
         {
-            if ( w_wonder_weapon === s_shrine.var_884c4b3a && s_shrine flag::get( #"hash_582906087b67b7c6" ) )
+            if ( w_wonder_weapon === s_shrine.var_884c4b3a && s_shrine flag::get( #"flag_ww_quests_portal_active" ) )
             {
                 str_prompt = zm_utility::function_d6046228( #"hash_681a8bda87d29252", #"hash_7046249526e855e6" );
                 self sethintstringforplayer( e_player, str_prompt );
@@ -1204,7 +1204,7 @@ function function_9f665c5d( e_player )
             }
         }
         
-        if ( w_current === s_shrine.var_884c4b3a && !s_shrine flag::get( #"hash_582906087b67b7c6" ) && !e_player flag::get( #"hash_8cdde8e6a8607f1" ) && e_player getcurrentweapon() != level.w_sprout && !e_player flag::get( "carrying_light_energy" ) )
+        if ( w_current === s_shrine.var_884c4b3a && !s_shrine flag::get( #"flag_ww_quests_portal_active" ) && !e_player flag::get( #"hash_8cdde8e6a8607f1" ) && e_player getcurrentweapon() != level.w_sprout && !e_player flag::get( "carrying_light_energy" ) )
         {
             str_prompt = zm_utility::function_d6046228( #"hash_6591ab9f6ce79e7e", #"hash_6d78c0c2901bd46a" );
             self sethintstringforplayer( e_player, str_prompt );
@@ -1233,9 +1233,9 @@ function function_75fd2345()
         {
             if ( isdefined( self.stub ) && isdefined( self.stub.related_parent ) )
             {
-                if ( self.stub.related_parent flag::get( #"hash_582906087b67b7c6" ) )
+                if ( self.stub.related_parent flag::get( #"flag_ww_quests_portal_active" ) )
                 {
-                    self.stub.related_parent notify( #"hash_16ea93eb944ff512", { #e_who:e_player } );
+                    self.stub.related_parent notify( #"trigger_activated_portal", { #e_who:e_player } );
                     continue;
                 }
                 
@@ -1649,7 +1649,7 @@ function function_a7e94e36( a_ents )
 function private function_2db4d0dc( e_player )
 {
     e_player endon( #"disconnect" );
-    self endon( #"hash_c060aee019d11e0" );
+    self endon( #"melee_timed_out" );
     
     while ( true )
     {
@@ -1670,7 +1670,7 @@ function private function_2db4d0dc( e_player )
 function function_97c8cfa0( e_player )
 {
     self.var_481aa649 = 1;
-    self notify( #"hash_c060aee019d11e0" );
+    self notify( #"melee_timed_out" );
     
     if ( zm_utility::is_player_valid( e_player ) )
     {
@@ -1684,7 +1684,7 @@ function function_97c8cfa0( e_player )
 // Size: 0x4c
 function private function_576d6fe0( e_player )
 {
-    self endon( #"hash_c060aee019d11e0" );
+    self endon( #"melee_timed_out" );
     e_player waittilltimeout( 180, #"disconnect" );
     self thread function_97c8cfa0();
 }
@@ -1906,7 +1906,7 @@ function function_f5639b00( e_player )
     
     if ( isplayer( e_player ) )
     {
-        e_player waittill( #"disconnect", #"hash_540044cdce85f636" );
+        e_player waittill( #"disconnect", #"picked_up_ww" );
     }
     
     if ( isdefined( e_player ) )
@@ -3090,14 +3090,14 @@ function function_65d82d13()
 // Size: 0x132
 function light_energy_carry( e_player )
 {
-    e_player endon( #"disconnect", #"hash_3f0faacb0cc98a9" );
+    e_player endon( #"disconnect", #"light_energy_dropped" );
     callback::on_weapon_change( &function_fbcb1210 );
     
     while ( true )
     {
         if ( e_player ismeleeing() && distance( e_player.origin, self.var_a1327d58.origin ) < 150 && e_player getcurrentweapon() === self.w_uncharged_hand )
         {
-            e_player notify( #"hash_3f0faacb0cc98a9", { #b_success:1 } );
+            e_player notify( #"light_energy_dropped", { #b_success:1 } );
             callback::remove_on_weapon_change( &function_fbcb1210 );
             break;
         }
@@ -3112,7 +3112,7 @@ function light_energy_carry( e_player )
 // Size: 0x36
 function function_fbcb1210( s_params )
 {
-    self notify( #"hash_3f0faacb0cc98a9", { #b_success:0 } );
+    self notify( #"light_energy_dropped", { #b_success:0 } );
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
@@ -3122,7 +3122,7 @@ function function_fbcb1210( s_params )
 function function_9aa74e4( var_542837e6, e_player, str_clientfield )
 {
     e_player endon( #"disconnect" );
-    s_result = e_player waittill( #"hash_3f0faacb0cc98a9", #"fake_death" );
+    s_result = e_player waittill( #"light_energy_dropped", #"fake_death" );
     
     if ( s_result._notify == "fake_death" )
     {
@@ -3211,7 +3211,7 @@ function function_9c79eeed( e_player )
     {
         wait 0.5;
         exploder::exploder( "fxexp_wq_h_shrine" );
-        self.var_a1327d58 flag::set( #"hash_582906087b67b7c6" );
+        self.var_a1327d58 flag::set( #"flag_ww_quests_portal_active" );
         e_player thread zm_vo::vo_say( #"hash_31853afc1ad7ea18", 0, 1, 9999, 1, 1 );
         wait 1;
         self thread function_4e2445e0();
@@ -3243,7 +3243,7 @@ function function_dbe1d7b8()
 // Size: 0x84
 function light_countdown( n_time )
 {
-    self endon( #"hash_3f0faacb0cc98a9" );
+    self endon( #"light_energy_dropped" );
     n_duration = 1;
     
     while ( true )
@@ -3252,7 +3252,7 @@ function light_countdown( n_time )
         
         if ( n_time <= 0 )
         {
-            self notify( #"hash_3f0faacb0cc98a9", { #b_success:0 } );
+            self notify( #"light_energy_dropped", { #b_success:0 } );
             break;
         }
         
@@ -3889,7 +3889,7 @@ function function_41cb93cc( e_player )
     e_player waittill( #"weapon_change_complete" );
     e_player.var_7e19c3db = 0;
     callback::on_weapon_change( &function_3462981 );
-    callback::function_33f0ddd3( &function_3b0917e6 );
+    callback::on_player_loadout_changed( &function_3b0917e6 );
     e_player enableweaponcycling();
     self thread function_1c5aedd8( e_player );
     e_player thread function_54da9fac();
@@ -4029,7 +4029,7 @@ function function_1c5aedd8( e_player )
     
     if ( isdefined( e_player.var_ada0236a ) && e_player.var_ada0236a )
     {
-        e_player zm_weapons::function_7c5dd4bd( s_quest.w_uncharged_hand );
+        e_player zm_weapons::give_full_ammo( s_quest.w_uncharged_hand );
     }
     else
     {
@@ -4118,7 +4118,7 @@ function function_4e2445e0()
     
     while ( true )
     {
-        s_waitresult = var_a1327d58 waittill( #"hash_16ea93eb944ff512" );
+        s_waitresult = var_a1327d58 waittill( #"trigger_activated_portal" );
         
         if ( namespace_8216831d::is_active() )
         {
@@ -4281,7 +4281,7 @@ function function_6161ce9a( e_player )
     
     if ( !level flag::get( "round_reset" ) )
     {
-        s_result = e_player waittilltimeout( 20, #"hash_1b2c21ba7b18dbf9", #"hash_52d2f17ac6d67de2", #"hash_4969a839c4e666dc", #"start_beaming", #"death" );
+        s_result = e_player waittilltimeout( 20, #"hash_1b2c21ba7b18dbf9", #"hash_52d2f17ac6d67de2", #"start_beam_attack", #"start_beaming", #"death" );
     }
     
     if ( isdefined( s_result ) && s_result._notify === "timeout" )
@@ -4513,7 +4513,7 @@ function function_aea7779d( e_player )
     e_player enableweaponfire();
     e_player enableweaponcycling();
     e_player enableoffhandweapons();
-    e_player notify( #"hash_2e6703c5e5328b2a" );
+    e_player notify( #"offhand_weapon_enabled" );
     e_player flag::clear( #"ww_combat_active" );
     e_player.var_ac8a5779 = undefined;
     e_player.var_7881756e = undefined;
@@ -4823,7 +4823,7 @@ function function_530d7ea0( var_bcf66490, e_player )
         if ( isdefined( var_bcf66490 ) && var_bcf66490 )
         {
             exploder::exploder( self.var_f94ca998 );
-            playsoundatposition( #"hash_2545ab11d0e8966a", self.var_a1327d58.origin );
+            playsoundatposition( #"zmb_portal_open", self.var_a1327d58.origin );
         }
         else if ( self.var_a1327d58 flag::get( "flag_ww_quests_portal_available" ) )
         {
@@ -4837,11 +4837,11 @@ function function_530d7ea0( var_bcf66490, e_player )
     
     if ( isdefined( var_bcf66490 ) && var_bcf66490 )
     {
-        self.var_a1327d58 flag::set( #"hash_582906087b67b7c6" );
+        self.var_a1327d58 flag::set( #"flag_ww_quests_portal_active" );
         return;
     }
     
-    self.var_a1327d58 flag::clear( #"hash_582906087b67b7c6" );
+    self.var_a1327d58 flag::clear( #"flag_ww_quests_portal_active" );
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
@@ -4862,7 +4862,7 @@ function function_2d281542( var_bcf66490 )
         return;
     }
     
-    if ( self.var_a1327d58 flag::get( #"hash_582906087b67b7c6" ) )
+    if ( self.var_a1327d58 flag::get( #"flag_ww_quests_portal_active" ) )
     {
         level thread scene::play( "p8_fxanim_zm_red_gaia_portal_bundle", "retreat" );
         self.mdl_portal clientfield::set( "" + #"gaia_portal_fx", var_bcf66490 );
@@ -5348,7 +5348,7 @@ function pack_portal_fx( s_pap_interact )
     else if ( isdefined( self.var_4d50be8e ) )
     {
         exploder::exploder( self.var_4d50be8e );
-        playsoundatposition( #"hash_2545ab11d0e8966a", s_pap_interact.origin );
+        playsoundatposition( #"zmb_portal_open", s_pap_interact.origin );
     }
     else if ( isdefined( self.var_285af63c ) )
     {
@@ -5372,7 +5372,7 @@ function pack_portal_fx( s_pap_interact )
     if ( isdefined( self.var_4d50be8e ) )
     {
         exploder::stop_exploder( self.var_4d50be8e );
-        playsoundatposition( #"hash_15e7e9734cce421e", s_pap_interact.origin );
+        playsoundatposition( #"zmb_portal_close", s_pap_interact.origin );
         return;
     }
     
@@ -5717,7 +5717,7 @@ function function_f2081007( e_player, s_pap_interact )
         {
             exploder::exploder( self.var_4d50be8e );
             exploder::exploder( self.var_83a4152c );
-            playsoundatposition( #"hash_2545ab11d0e8966a", s_pap_interact.origin );
+            playsoundatposition( #"zmb_portal_open", s_pap_interact.origin );
         }
         else if ( isdefined( self.mdl_return_portal ) )
         {
@@ -5795,7 +5795,7 @@ function function_f2081007( e_player, s_pap_interact )
     {
         exploder::stop_exploder( self.var_83a4152c );
         exploder::stop_exploder( self.var_4d50be8e );
-        playsoundatposition( #"hash_15e7e9734cce421e", s_pap_interact.origin );
+        playsoundatposition( #"zmb_portal_close", s_pap_interact.origin );
         return;
     }
     
@@ -5900,7 +5900,7 @@ function private function_43a6c665( w_cur )
 // Size: 0xec
 function function_7d2500d8()
 {
-    self endon( #"death", #"hash_2e6703c5e5328b2a" );
+    self endon( #"death", #"offhand_weapon_enabled" );
     
     if ( !isdefined( self.boss_sm_warlord_support ) )
     {
@@ -6411,7 +6411,7 @@ function function_8d47bf8( e_player )
     // Size: 0x7a, Type: dev
     function function_d8765f3d()
     {
-        level zm_red::function_71a6c3ea();
+        level zm_red::super_open_sesame();
         level notify( level.var_d225ea18[ #"earth" ].var_c2f7f323 );
         waitframe( 1 );
         level.var_29e62693 = 1;

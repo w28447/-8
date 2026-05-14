@@ -4,7 +4,7 @@
     "displayname": "#weapon/tr_longburst_t8",
     "xhash_60": "#hash_3f977e111378e884",
     "weapon70": "#tr_longburst_t8",
-    "streamkey": "#hash_5dc02bddc3ecf28b",
+    "streamkey": "#tr_longburst_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -63,7 +63,7 @@
     "sound210": "#hash_271370c5b9078536",
     "sound240": "#hash_474a10cd847c7803",
     "sound250": "#hash_146e19cd67fe19de",
-    "sound260": "#hash_515f54aa1f553686",
+    "sound260": "#prj_crack_supersonic",
     "sound600": "#hash_209cb2974ae55ec0",
     "sound610": "#hash_209cb2974ae55ec0",
     "sound800": "#hash_5ee962527afebfb1",
@@ -76,7 +76,7 @@
     "attachments": [
         "#hash_f459a0af8e8f912b",
         "#acog_wz",
-        "#hash_6bd994daaf35e844"
+        "#adsreload_wz"
     ],
     "attachmentUniques": [
         "#hash_7546751b471b20d7",
@@ -112,7 +112,7 @@
     "inventoryIconZm": "#ui_icon_weapon_hud_tr_longburst",
     "image_e90": "#ui_icon_obit_tr_longburst",
     "fireRumble": "#tr_fire",
-    "rumble_dc8": "#hash_7dd6fef6710af3ba",
+    "rumble_dc8": "#tr_adsfire",
     "rumble_e20": "#hash_322cc8a226215312",
     "fx_bc8": "#hash_644d8a6e01d72f1b",
     "fx_bd0": "#hash_64467e6e01d0fc09",

@@ -22,7 +22,7 @@
     "type": "spawnbeaconsettings",
     "hash_4ec7afbf": 1,
     "ambientaudio": "mpl_spawn_beacon_loop_npc",
-    "cannotbuild": "localized18#hash_37605398dce96965",
+    "cannotbuild": "localized18#weapon/cant_plant_equipment",
     "deployedenemy": "spawnbeacondeployedenemy",
     "rechargetime": 60,
     "hash_16c1e258e6127807:hash_40d2181e": "localized18#hash_16c1e258e6127807",

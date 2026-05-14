@@ -12,7 +12,7 @@ CoD.CompetitiveAARDivisionRankAwardPlaces.new = function ( f1_arg0, f1_arg1, f1_
 	
 	local Position = LUI.UIText.new( 0.15, 0.15, -85.5, 214.5, 0, 0, 11, 39 )
 	Position:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	Position:setText( Engine[0xF9F1239CFD921FE]( 0x62C273392778D63 ) )
+	Position:setText( Engine[0xF9F1239CFD921FE]( "aar/place" ) )
 	Position:setTTF( "ttmussels_regular" )
 	Position:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
 	Position:setLetterSpacing( 1 )

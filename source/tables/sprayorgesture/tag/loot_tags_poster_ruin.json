@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_poster_ruin",
+    "type": "#tag",
+    "material": "#hash_10919e4df995623a",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_1a1858749e927a78",
+        "icon": "image#loot_ui_icon_tags_poster_ruin",
+        "isdefault": 0
+    }
+}

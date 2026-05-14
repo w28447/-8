@@ -91,7 +91,7 @@ CoD.HighValueOperatives.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local killcamTitle = LUI.UIText.new( 0, 0, 50, 1922, 0, 0, 17, 67 )
 	killcamTitle:setRGB( ColorSet.T8__GOLD.r, ColorSet.T8__GOLD.g, ColorSet.T8__GOLD.b )
 	killcamTitle:setScale( 1.02, 1.02 )
-	killcamTitle:setText( LocalizeToUpperString( 0x6D7524BAE8B5798 ) )
+	killcamTitle:setText( LocalizeToUpperString( "mpui/high_value_operatives" ) )
 	killcamTitle:setTTF( "ttmussels_regular" )
 	killcamTitle:setLetterSpacing( 14 )
 	killcamTitle:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

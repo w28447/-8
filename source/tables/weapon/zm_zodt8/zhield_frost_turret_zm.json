@@ -1,10 +1,10 @@
 {
     "name": "#zhield_frost_turret_zm",
     "baseWeapon": "#zhield_frost_turret",
-    "displayname": "#hash_49b2e832f765cb5",
+    "displayname": "#zmweapon/fhield",
     "altWeapon": "#zhield_frost_dw_zm",
     "weapon70": "#zhield_frost_dw",
-    "streamkey": "#hash_1c1ff9f2f2225b91",
+    "streamkey": "#zhield_frost_turret_soundbank",
     "worldModelTagRight": "tag_weapon_left",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

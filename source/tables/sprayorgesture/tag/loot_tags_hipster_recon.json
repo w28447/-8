@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_hipster_recon",
+    "type": "#tag",
+    "material": "#hash_66d5dcc7365be2db",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#tags/hipster_recon",
+        "icon": "image#loot_ui_icon_tags_hipster_recon",
+        "isdefault": 0
+    }
+}

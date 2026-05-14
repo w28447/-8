@@ -3,7 +3,7 @@
     "baseWeapon": "#gegenees_golden_spear_projectile",
     "displayname": "#zmweapon/ww_crossbow_t8_upgraded",
     "weapon70": "#special_crossbow",
-    "streamkey": "#hash_6f9540348c2d9a2e",
+    "streamkey": "#gegenees_golden_spear_projectile_soundbank",
     "scrstr_8c8": [
         "tag_rail",
         "tag_arms_base",
@@ -84,7 +84,7 @@
     "projexplosionsoundplayer": "#hash_1ff75f0dd7ab4a0c",
     "sound800": "#hash_54f28bb508a46096",
     "sound810": "#hash_54f28bb508a46096",
-    "tunables1": "#hash_38c50876a0e6fb59",
+    "tunables1": "#gegenees_spear_tunables_zm",
     "cacWeaponXCam": "#ui_cam_cac_special_crossbow",
     "cacAttachmentsXCam": "#ui_cam_cac_special_crossbow",
     "weaponIconXCam": "#hash_b2556c49982dea72",
@@ -107,7 +107,7 @@
     "image_1048": "#t7_icon_weapon_hero_outrider_kf",
     "fx_ed8": "#hash_51b33bb22601397b",
     "fx_f00": "#hash_6ef0f1647e3ba536",
-    "normalImpactSounds": "#hash_39bfdec1ee94b227",
-    "bounceImpactSounds": "#hash_39bfdec1ee94b227",
-    "dudImpactSounds": "#hash_39bfdec1ee94b227"
+    "normalImpactSounds": "#ww_crossbow_impact",
+    "bounceImpactSounds": "#ww_crossbow_impact",
+    "dudImpactSounds": "#ww_crossbow_impact"
 }

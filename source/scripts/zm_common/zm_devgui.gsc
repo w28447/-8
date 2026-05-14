@@ -2111,7 +2111,7 @@
                     }
                     
                     break;
-                case #"hash_2c320318aed843b2":
+                case #"100_self_revives":
                     array::thread_all( getplayers(), &zm_laststand::function_3d685b5f, 100 );
                     break;
                 case #"hash_72783b08840a3ab7":
@@ -2439,7 +2439,7 @@
                 case #"keyline_always":
                     zombie_devgui_keyline_always();
                     break;
-                case #"hash_1e51dfcdbebdf936":
+                case #"toggle_round_timeout":
                     robotsupportsovercover_manager_();
                     break;
                 case #"debug_counts":
@@ -2469,19 +2469,19 @@
                 case #"hash_3f826ccc785705ba":
                     function_26417ea7();
                     break;
-                case #"hash_683b625d2ace3726":
-                    function_fb88b423();
+                case #"knockdown_all_ai":
+                    knockdown_all_ai();
                     break;
                 case #"hash_3f9e70ff9f34194a":
                     function_1b531660();
                     break;
-                case #"hash_4369eeba583c6d2d":
+                case #"give_weapon_charm":
                     function_61a7bb28();
                     break;
-                case #"hash_757311298fe0366e":
+                case #"cycle_weapon_charm":
                     function_184b9c6a();
                     break;
-                case #"hash_27a8af524430a8e1":
+                case #"reset_weapon_charm":
                     function_986a2585();
                     break;
                 case #"cycle_death_fx":
@@ -4004,7 +4004,7 @@
                     players[ i ] takeweapon( weap );
                     weapon = players[ i ] zm_weapons::give_build_kit_weapon( weapon );
                     players[ i ] thread aat::remove( weapon );
-                    players[ i ] zm_weapons::function_7c5dd4bd( weapon );
+                    players[ i ] zm_weapons::give_full_ammo( weapon );
                     players[ i ] switchtoweapon( weapon );
                 }
             }
@@ -4054,7 +4054,7 @@
                 weapon = zm_weapons::get_base_weapon( weap );
                 players[ i ] takeweapon( weap );
                 weapon = players[ i ] zm_weapons::give_build_kit_weapon( weapon );
-                players[ i ] zm_weapons::function_7c5dd4bd( weapon );
+                players[ i ] zm_weapons::give_full_ammo( weapon );
                 players[ i ] switchtoweapon( weapon );
             }
         }
@@ -4448,7 +4448,7 @@
                 
                 players[ i ] takeweapon( weapon );
                 weapon = players[ i ] zm_weapons::give_build_kit_weapon( weapon );
-                players[ i ] zm_weapons::function_7c5dd4bd( weapon );
+                players[ i ] zm_weapons::give_full_ammo( weapon );
                 players[ i ] switchtoweapon( weapon );
             }
         }
@@ -5602,7 +5602,7 @@
     // Params 0
     // Checksum 0x3054d939, Offset: 0x103a0
     // Size: 0xa8, Type: dev
-    function function_fb88b423()
+    function knockdown_all_ai()
     {
         zombies = getaiarray();
         
@@ -5695,13 +5695,13 @@
         self notify( "<dev string:x12e5>" );
         self endon( "<dev string:x12e5>" );
         function_7c9dd642();
-        setdvar( #"hash_46eec505e691414c", "<dev string:x38>" );
+        setdvar( #"scr_zm_inventory_clientfield", "<dev string:x38>" );
         setdvar( #"hash_74f1952a0f93d08e", -1 );
         
         while ( true )
         {
             wait 0.1;
-            var_9261da43 = getdvar( #"hash_46eec505e691414c", "<dev string:x38>" );
+            var_9261da43 = getdvar( #"scr_zm_inventory_clientfield", "<dev string:x38>" );
             var_10acd4fa = getdvar( #"hash_74f1952a0f93d08e", -1 );
             
             if ( var_9261da43 == "<dev string:x38>" && var_10acd4fa == -1 )
@@ -5732,7 +5732,7 @@
                 }
             }
             
-            setdvar( #"hash_46eec505e691414c", "<dev string:x38>" );
+            setdvar( #"scr_zm_inventory_clientfield", "<dev string:x38>" );
             setdvar( #"hash_74f1952a0f93d08e", -1 );
         }
     }

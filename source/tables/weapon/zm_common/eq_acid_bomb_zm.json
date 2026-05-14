@@ -3,7 +3,7 @@
     "baseWeapon": "#eq_acid_bomb",
     "displayname": "#weapon/acid_bomb",
     "weapon70": "#eq_acid_bomb",
-    "streamkey": "#hash_6e098ac9cb40859c",
+    "streamkey": "#eq_acid_bomb_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",
@@ -59,8 +59,8 @@
         "#hash_c15b461b7420c6d2",
         "#hash_bb3f97cf646813ac"
     ],
-    "normalImpactFX": "#hash_bc0ef9a18e7b5ef",
+    "normalImpactFX": "#grenade_explosion_sticky_zm",
     "bounceImpactFX": "#grenade_bounce",
     "dudImpactFX": "#grenade_dud",
-    "bounceImpactSounds": "#hash_22f28f7573089407"
+    "bounceImpactSounds": "#acidbomb_stick"
 }

@@ -3,7 +3,7 @@
     "baseWeapon": "#eq_sensor",
     "displayname": "#weapon/sensor_dart",
     "weapon70": "#eq_sensor",
-    "streamkey": "#hash_1b2c4bd79146b540",
+    "streamkey": "#eq_sensor_soundbank",
     "scrstr_8c8": [
         "tag_equipment_hero"
     ],

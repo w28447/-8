@@ -5,7 +5,7 @@
             "value": "2"
         },
         {
-            "label": "localized17#hash_74615c4f22fb455c",
+            "label": "localized17#menu/indicator_abbreviated",
             "value": "1"
         },
         {
@@ -16,7 +16,7 @@
     "hash_dfedf08e": 0,
     "descriptionimage": "image#hash_4f10fdc252f86729",
     "categoryindex": 0,
-    "description": "localized17#hash_65c197c3e3ac4a18",
+    "description": "localized17#platform/team_indicator_desc",
     "hash_4f445f7612232efc:hash_60fcfffa": "localized17#hash_4f445f7612232efc",
     "hash_10e01ad5": 1,
     "iscategory": 0,

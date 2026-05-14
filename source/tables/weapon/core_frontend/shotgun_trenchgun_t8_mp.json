@@ -3,7 +3,7 @@
     "baseWeapon": "#shotgun_trenchgun_t8",
     "displayname": "#weapon/shotgun_trenchgun_t8",
     "weapon70": "#shotgun_trenchgun_t8",
-    "streamkey": "#hash_4051cc0fd16863d",
+    "streamkey": "#shotgun_trenchgun_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",

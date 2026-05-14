@@ -300,7 +300,7 @@ CoD.AARUtilityCP.CheckWeaponRewards = function ( f18_arg0, f18_arg1, f18_arg2, f
 		local f18_local1 = Engine.TableLookup( CoD.attachmentTable, 0, 4, f18_arg3 )
 		f18_local0.name = Engine.TableLookup( CoD.attachmentTable, 3, 4, f18_arg3 )
 		f18_local0.icon = Engine.GetAttachmentUniqueImageByAttachmentIndex( Enum.eModes[0x83EBA96F36BC4E5], f18_arg2, tonumber( f18_local1 ) )
-		f18_local0.description = 0x51E8029FC8EC490
+		f18_local0.description = "cpui/attachment"
 		CoD.AARUtilityCP.AddToArray( f18_arg1.Rewards, f18_local0 )
 	end
 	if f18_arg4 ~= nil and f18_arg4 ~= "0" and f18_arg4 ~= "" then
@@ -488,7 +488,7 @@ CoD.AARUtilityCP.CheckAccolades = function ( f25_arg0, f25_arg1, f25_arg2 )
 					local f25_local8 = "uie_headicon_dead"
 					for f25_local12, f25_local13 in pairs( f25_local2 ) do
 						if f25_local13[0xF5AD32CD03EB6EB] == f25_local7 then
-							f25_local8 = CoD.AARUtilityCP.GetAccoladeIconFromType( f25_local13[0x5DA6A510BA77322] )
+							f25_local8 = CoD.AARUtilityCP.GetAccoladeIconFromType( f25_local13["challengewidget"] )
 							break
 						end
 					end

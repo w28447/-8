@@ -258,13 +258,13 @@ function function_7b29c2d2( weapon )
     {
         self thread activecamo::function_896ac347( weapon, #"rapid_kills", 1 );
         self.var_88ebd633.var_d9449a3 = 0;
-        self notify( #"hash_7e9b17b054c01cb3" );
+        self notify( #"rapid_kills_timeout" );
         return;
     }
     
     if ( self.var_88ebd633.var_d9449a3 == 1 )
     {
-        self thread function_160898c();
+        self thread rapid_kills_timeout();
     }
 }
 
@@ -272,10 +272,10 @@ function function_7b29c2d2( weapon )
 // Params 0, eflags: 0x4
 // Checksum 0xbc106c03, Offset: 0x940
 // Size: 0x4e
-function private function_160898c()
+function private rapid_kills_timeout()
 {
-    self notify( #"hash_7e9b17b054c01cb3" );
-    self endon( #"death", #"hash_7e9b17b054c01cb3" );
+    self notify( #"rapid_kills_timeout" );
+    self endon( #"death", #"rapid_kills_timeout" );
     wait 5;
     self.var_88ebd633.var_d9449a3 = 0;
 }
@@ -305,13 +305,13 @@ function function_432cf6d( weapon )
     {
         self thread activecamo::function_896ac347( weapon, #"rapid_headshots", 1 );
         self.var_88ebd633.var_bcacb3a3 = 0;
-        self notify( #"hash_3dbf3a8521ba1621" );
+        self notify( #"rapid_headshots_timeout" );
         return;
     }
     
     if ( self.var_88ebd633.var_bcacb3a3 == 1 )
     {
-        self thread function_d01affa9();
+        self thread rapid_headshots_timeout();
     }
 }
 
@@ -319,10 +319,10 @@ function function_432cf6d( weapon )
 // Params 0, eflags: 0x4
 // Checksum 0x67dcfa9a, Offset: 0xae8
 // Size: 0x4e
-function private function_d01affa9()
+function private rapid_headshots_timeout()
 {
-    self notify( #"hash_3dbf3a8521ba1621" );
-    self endon( #"death", #"hash_3dbf3a8521ba1621" );
+    self notify( #"rapid_headshots_timeout" );
+    self endon( #"death", #"rapid_headshots_timeout" );
     wait 7;
     self.var_88ebd633.var_bcacb3a3 = 0;
 }

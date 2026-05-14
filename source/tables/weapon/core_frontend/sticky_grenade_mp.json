@@ -2,7 +2,7 @@
     "name": "#sticky_grenade_mp",
     "baseWeapon": "#sticky_grenade",
     "displayname": "#weapon/sticky_grenade",
-    "streamkey": "#hash_1777408519e61a1d",
+    "streamkey": "#sticky_grenade_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

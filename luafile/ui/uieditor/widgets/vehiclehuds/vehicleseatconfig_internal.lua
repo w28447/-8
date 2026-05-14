@@ -146,7 +146,7 @@ CoD.VehicleSeatConfig_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local CargoTruckBg = LUI.UIImage.new( 0, 0, 49, 101, 0, 0, 76, 204 )
 	CargoTruckBg:setRGB( 0.13, 0.13, 0.13 )
 	CargoTruckBg:setAlpha( 0 )
-	CargoTruckBg:setImage( RegisterImage( 0xF2D2EC9113EFEA8 ) )
+	CargoTruckBg:setImage( RegisterImage( "uie_ui_icon_wz_hud_vehicle_truck" ) )
 	CargoTruckBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	CargoTruckBg:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( CargoTruckBg )
@@ -154,13 +154,13 @@ CoD.VehicleSeatConfig_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local CargoTruckDamage = LUI.UIImage.new( 0, 0, 49, 101, 0, 0, 76, 204 )
 	CargoTruckDamage:setAlpha( 0 )
-	CargoTruckDamage:setImage( RegisterImage( 0x9F258CF87FC6A10 ) )
+	CargoTruckDamage:setImage( RegisterImage( "uie_ui_icon_wz_hud_vehicle_truck_damage" ) )
 	self:addElement( CargoTruckDamage )
 	self.CargoTruckDamage = CargoTruckDamage
 	
 	local CargoTruck = LUI.UIImage.new( 0, 0, 49, 101, 0, 0, 76, 204 )
 	CargoTruck:setAlpha( 0 )
-	CargoTruck:setImage( RegisterImage( 0xF2D2EC9113EFEA8 ) )
+	CargoTruck:setImage( RegisterImage( "uie_ui_icon_wz_hud_vehicle_truck" ) )
 	CargoTruck:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	CargoTruck:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( CargoTruck )
@@ -169,7 +169,7 @@ CoD.VehicleSeatConfig_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local AtvBg = LUI.UIImage.new( 0, 0, 51, 99, 0, 0, 99, 191 )
 	AtvBg:setRGB( 0.13, 0.13, 0.13 )
 	AtvBg:setAlpha( 0 )
-	AtvBg:setImage( RegisterImage( 0x27E79F1D382A1DA ) )
+	AtvBg:setImage( RegisterImage( "uie_ui_icon_wz_hud_vehicle_atv" ) )
 	AtvBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	AtvBg:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( AtvBg )
@@ -183,7 +183,7 @@ CoD.VehicleSeatConfig_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local Atv = LUI.UIImage.new( 0, 0, 51, 99, 0, 0, 99, 191 )
 	Atv:setAlpha( 0 )
-	Atv:setImage( RegisterImage( 0x27E79F1D382A1DA ) )
+	Atv:setImage( RegisterImage( "uie_ui_icon_wz_hud_vehicle_atv" ) )
 	Atv:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	Atv:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Atv )

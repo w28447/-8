@@ -653,7 +653,7 @@ function function_f5116ee2( localclientnum, oldval, newval, bnewent, binitialsna
 // Size: 0x17e
 function function_8c5b87a7( localclientnum )
 {
-    self notify( #"hash_2bb8be6b846aed93" );
+    self notify( #"boss_attack_beam_end" );
     
     if ( isdefined( self.var_ca2681ca ) )
     {
@@ -702,8 +702,8 @@ function function_c6932c3b( localclientnum, oldval, newval, bnewent, binitialsna
 // Size: 0x304
 function function_e8071e64( localclientnum )
 {
-    self notify( #"hash_2bb8be6b846aed93" );
-    self endon( #"hash_2bb8be6b846aed93", #"death" );
+    self notify( #"boss_attack_beam_end" );
+    self endon( #"boss_attack_beam_end", #"death" );
     assert( isdefined( level.var_90bda347 ) );
     
     if ( !isdefined( level.var_90bda347 ) )
@@ -768,7 +768,7 @@ function function_a96b063f()
 // Size: 0x86
 function function_da0759d0()
 {
-    self endon( #"hash_2bb8be6b846aed93" );
+    self endon( #"boss_attack_beam_end" );
     
     while ( isdefined( self.var_ca2681ca ) && isdefined( level.var_90bda347 ) )
     {
@@ -818,7 +818,7 @@ function function_ff52ba5a( localclientnum )
 // Size: 0x150
 function function_2585c107()
 {
-    self endon( #"hash_2bb8be6b846aed93" );
+    self endon( #"boss_attack_beam_end" );
     level endon( #"intermission" );
     
     while ( true )
@@ -845,7 +845,7 @@ function function_2585c107()
 function function_1c341163( localclientnum )
 {
     level endon( #"intermission" );
-    self waittill( #"hash_2bb8be6b846aed93" );
+    self waittill( #"boss_attack_beam_end" );
     soundstoplineemitter( #"hash_3d5a33369bbe2308", self.var_da4fd8df, self.var_608d2b77 );
     
     if ( isdefined( self ) )
@@ -993,7 +993,7 @@ function function_b415e676( localclientnum, oldval, newval, bnewent, binitialsna
 // Size: 0x124
 function function_e3c6c272( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    self notify( #"hash_7541447588c20db8" );
+    self notify( #"boss_end_breath_fx" );
     
     if ( isdefined( self.var_c605c611 ) && self zm_utility::is_first_person( localclientnum ) )
     {
@@ -1024,7 +1024,7 @@ function function_e3c6c272( localclientnum, oldval, newval, bnewent, binitialsna
 // Size: 0x118
 function function_ae2a3a29( localclientnum )
 {
-    self endon( #"hash_7541447588c20db8", #"death" );
+    self endon( #"boss_end_breath_fx", #"death" );
     
     while ( true )
     {

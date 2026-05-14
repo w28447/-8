@@ -37,7 +37,7 @@ function init()
 {
     init_clientfields();
     init_flags();
-    zm_armor::register( #"hash_35c87147e29f1708", 1 );
+    zm_armor::register( #"challenge_reward_armor", 1 );
 }
 
 // Namespace zm_orange_challenges/zm_orange_challenges
@@ -56,14 +56,14 @@ function init_clientfields()
 function init_flags()
 {
     level flag::init( #"all_challenges_complete" );
-    level flag::init( #"hash_4a8105909cc2603d" );
+    level flag::init( #"bell_challenge_active" );
     level flag::init( #"break_freeze_faster" );
     level flag::init( #"challenge_active" );
     level flag::init( #"challenges_started" );
     level flag::init( #"extra_snowballs" );
     level flag::init( #"hash_2a1215d8a3e31013" );
     level flag::init( #"half_price_traps" );
-    level flag::init( #"hash_84593b9650c7abf" );
+    level flag::init( #"soup_challenge_active" );
     level flag::init( #"hash_2d3f1dd5445d3423" );
     level flag::init( #"hash_4e33fc3d32735214" );
     level flag::init( #"hash_701aa76674161d36" );
@@ -285,7 +285,7 @@ function function_9f2ab302()
 // Size: 0x29e
 function function_af2eff2e()
 {
-    level endon( #"end_game", #"hell_on_earth", #"hash_198bc172b5af7f25" );
+    level endon( #"end_game", #"hell_on_earth", #"trials_hell_on_earth" );
     self endon( #"challenge_station_completed" );
     
     while ( true )
@@ -721,7 +721,7 @@ function function_6d50f216()
 function function_2ae162bf()
 {
     level endon( #"end_game" );
-    level flag::set( #"hash_84593b9650c7abf" );
+    level flag::set( #"soup_challenge_active" );
     var_d6578e1f = self.var_d6578e1f;
     
     foreach ( s_ingredient in var_d6578e1f.a_s_ingredients )
@@ -803,7 +803,7 @@ function function_39ca7654()
     self.var_d6578e1f.var_2abe7ecb = getentarray( "challenges_bell", "targetname" );
     var_2abe7ecb = self.var_d6578e1f.var_2abe7ecb;
     self.var_d6578e1f function_3bb5cdd9( self );
-    level flag::set( #"hash_4a8105909cc2603d" );
+    level flag::set( #"bell_challenge_active" );
 }
 
 // Namespace zm_orange_challenges/zm_orange_challenges
@@ -813,7 +813,7 @@ function function_39ca7654()
 function function_a0ebbf07()
 {
     level endon( #"end_game" );
-    level flag::clear( #"hash_4a8105909cc2603d" );
+    level flag::clear( #"bell_challenge_active" );
     
     foreach ( var_c3e20cb in self.var_d6578e1f.var_2abe7ecb )
     {
@@ -1142,7 +1142,7 @@ function function_8288a87()
 function function_a80a048d( s_challenge )
 {
     level endon( #"end_game" );
-    self endon( #"hash_759e710e575d89bb" );
+    self endon( #"whack_a_mole_target_hit" );
     s_challenge endon( #"hash_1a4fcb205b5695b5", s_challenge.str_notify );
     wait 0.5;
     self rotateyaw( 360, s_challenge.var_8aa74ff0 - 1 );
@@ -1208,7 +1208,7 @@ function function_8645fbe7( s_challenge )
             self.b_is_up = 0;
             s_challenge.var_d71fc7c++;
             self waittill( #"movedone" );
-            self notify( #"hash_759e710e575d89bb" );
+            self notify( #"whack_a_mole_target_hit" );
             return;
         }
     }
@@ -1646,7 +1646,7 @@ function function_65a629f5()
     }
     
     self.e_soup_pot setmodel( "p8_cas_kitchenware_soup_pot" );
-    level flag::clear( #"hash_84593b9650c7abf" );
+    level flag::clear( #"soup_challenge_active" );
 }
 
 // Namespace zm_orange_challenges/zm_orange_challenges
@@ -1966,7 +1966,7 @@ function function_472fa2ca( s_challenge )
                 break;
             case 1:
                 var_66bb9366 = #"hash_53f014fab33492d8";
-                playsoundatposition( #"hash_23c7a9bf9d34bbe4", self.origin );
+                playsoundatposition( #"zmb_bell_c", self.origin );
                 break;
             case 2:
                 var_66bb9366 = #"hash_594894375473c7b";
@@ -1974,7 +1974,7 @@ function function_472fa2ca( s_challenge )
                 break;
             case 3:
                 var_66bb9366 = #"hash_33ce9da949624fae";
-                playsoundatposition( #"hash_23c7a5bf9d34b518", self.origin );
+                playsoundatposition( #"zmb_bell_g", self.origin );
                 break;
         }
         
@@ -1986,7 +1986,7 @@ function function_472fa2ca( s_challenge )
             }
         }
         
-        if ( level flag::get( #"hash_4a8105909cc2603d" ) )
+        if ( level flag::get( #"bell_challenge_active" ) )
         {
             if ( s_challenge.n_current_progress > s_challenge.a_n_sequence.size )
             {
@@ -2606,7 +2606,7 @@ function function_816f228f( e_who )
             {
                 if ( !player laststand::player_is_in_laststand() && isalive( player ) )
                 {
-                    player zm_armor::add( #"hash_35c87147e29f1708", 100, 100 );
+                    player zm_armor::add( #"challenge_reward_armor", 100, 100 );
                 }
             }
             
@@ -2673,7 +2673,7 @@ function swap_weapon( w_reward )
     {
         if ( w_gun.rootweapon === w_reward )
         {
-            self zm_weapons::function_7c5dd4bd( w_gun );
+            self zm_weapons::give_full_ammo( w_gun );
             return;
         }
     }
@@ -2791,7 +2791,7 @@ function function_fd8a137e( n_time = 0 )
     // Params 0
     // Checksum 0xa1df1dbb, Offset: 0x88c8
     // Size: 0xa4, Type: dev
-    function function_e4b04738()
+    function complete_current_challenge()
     {
         if ( level flag::get( #"challenge_active" ) )
         {

@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_exotic_shared_rubiks",
+    "type": "#gesture",
+    "gesture": "#boast_rubiks",
+    "gesture2": "#boast_rubiks_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/nub",
+        "icon": "image#hash_3852a21167e01508",
+        "isdefault": 0
+    }
+}

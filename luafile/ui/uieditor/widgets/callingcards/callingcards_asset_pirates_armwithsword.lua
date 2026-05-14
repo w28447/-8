@@ -15,7 +15,7 @@ CoD.CallingCards_Asset_Pirates_armwithsword.new = function ( f1_arg0, f1_arg1, f
 	self.sword = sword
 	
 	local armwithsword = LUI.UIImage.new( 0, 0, -259, 21, 0, 0, -42, 62 )
-	armwithsword:setImage( RegisterImage( 0x328F6C59D434D72 ) )
+	armwithsword:setImage( RegisterImage( "uie_ui_icon_callingcards_pirates_arm1" ) )
 	self:addElement( armwithsword )
 	self.armwithsword = armwithsword
 	

@@ -14,7 +14,7 @@ CoD.KillcamKillCount.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local Numbers = LUI.UIText.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Numbers:setRGB( 0.06, 0.06, 0.06 )
-	Numbers:setText( Engine[0xF9F1239CFD921FE]( 0x4323579690CF719 ) )
+	Numbers:setText( Engine[0xF9F1239CFD921FE]( "mpui/xx_caps" ) )
 	Numbers:setTTF( "ttmussels_demibold" )
 	Numbers:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	Numbers:setAlignment( Enum.LUIAlignment[0x6ED4298C93DC5ED] )

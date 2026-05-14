@@ -4,7 +4,7 @@
     "displayname": "#zmweapon/tr_powersemi_t8_upgraded",
     "xhash_60": "#hash_6f0f2c46aaa1964b",
     "weapon70": "#tr_powersemi_t8",
-    "streamkey": "#hash_3f6057e5fb7df70b",
+    "streamkey": "#tr_powersemi_t8_upgraded_soundbank",
     "scrstr_8c8": [
         "tag_rail",
         "tag_clan_tag",
@@ -58,13 +58,13 @@
     "firesounddistant": "#hash_56369e9a0553981f",
     "firesound": "#hash_24d194855279d036",
     "firesoundplayer": "#hash_92ab384fa6350bb",
-    "sound1d0": "#hash_42947c781e8d48ec",
+    "sound1d0": "#wpn_tr_powersemi_fire_npc",
     "sound1e0": "#hash_66dc17c6260010db",
-    "sound200": "#hash_3ea9cf778b50c1ad",
+    "sound200": "#wpn_tr_powersemi_fire_plr",
     "sound210": "#hash_271370c5b9078536",
     "sound240": "#hash_474a10cd847c7803",
     "sound250": "#hash_146e19cd67fe19de",
-    "sound260": "#hash_515f54aa1f553686",
+    "sound260": "#prj_crack_supersonic",
     "sound600": "#hash_209cb2974ae55ec0",
     "sound610": "#hash_209cb2974ae55ec0",
     "sound800": "#hash_5ee962527afebfb1",
@@ -76,7 +76,7 @@
     "weaponIconXCam": "#hash_ce9a910c37f05cb4",
     "attachments": [
         "#hash_f459a0af8e8f912b",
-        "#hash_2bd64b9e627a70cf"
+        "#acog_tr_upgraded"
     ],
     "attachmentUniques": [
         "#hash_bb7257f62d48575e",

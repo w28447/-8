@@ -9,7 +9,7 @@ CoD.PC_VoDViewerOverlayResizeButton.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local BTNResize = LUI.UIImage.new( 0.98, 0.98, -34.5, 0.5, 0.98, 0.98, -34.5, 0.5 )
-	BTNResize:setImage( RegisterImage( 0xD1A05682DF07D9 ) )
+	BTNResize:setImage( RegisterImage( "uie_ui_icon_video_fullscreen" ) )
 	self:addElement( BTNResize )
 	self.BTNResize = BTNResize
 	

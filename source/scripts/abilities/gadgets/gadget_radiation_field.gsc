@@ -152,7 +152,7 @@ function sndonoverride_eye_()
     
     total_time = level.radiationfield_bundle.baseduration + level.radiationfield_bundle.midduration;
     redline = 0.75;
-    player notify( #"hash_477083bb681cce64" );
+    player notify( #"radiation_field_start" );
     
     while ( true )
     {
@@ -274,7 +274,7 @@ function function_1503c832( weapon )
     player.var_ab42e44e = player.origin;
     player.var_ab42e44e += fwd;
     player.var_e9791ff9 = gameobjects::get_next_obj_id();
-    objective_add( player.var_e9791ff9, "active", ( player.var_ab42e44e[ 0 ], player.var_ab42e44e[ 1 ], player.var_ab42e44e[ 2 ] ), #"hash_1bf4e9e4ba326a9" );
+    objective_add( player.var_e9791ff9, "active", ( player.var_ab42e44e[ 0 ], player.var_ab42e44e[ 1 ], player.var_ab42e44e[ 2 ] ), #"radiation_field_meter" );
     objective_setteam( player.var_e9791ff9, player.team );
     objective_setinvisibletoall( player.var_e9791ff9 );
     objective_setvisibletoplayer( player.var_e9791ff9, player );
@@ -497,7 +497,7 @@ function damage_state( state_id, weapon, min_radius, max_radius, min_height, max
                         }
                         
                         array::add( player.var_57e6a430, var_a3ca7cb2 );
-                        player playlocalsound( #"hash_6808d51f3971786e" );
+                        player playlocalsound( #"mpl_rad_hit_notify" );
                         
                         if ( isplayer( var_a3ca7cb2 ) )
                         {
@@ -661,7 +661,7 @@ function function_a1cc4c59( weapon, killcament )
     player.var_5350f794 = undefined;
     damage_state( 1, weapon, level.radiationfield_bundle.var_4d16c61f, level.radiationfield_bundle.var_9c3a936e, level.radiationfield_bundle.baseheightmin, level.radiationfield_bundle.baseheightmax, level.radiationfield_bundle.baseduration, level.radiationfield_bundle.var_1acd89e2, level.radiationfield_bundle.var_e5a95fca, undefined, killcament );
     damage_state( 2, weapon, level.radiationfield_bundle.var_9c3a936e, level.radiationfield_bundle.midradius, level.radiationfield_bundle.baseheightmax, level.radiationfield_bundle.midheight, level.radiationfield_bundle.midduration, level.radiationfield_bundle.var_1acd89e2, level.radiationfield_bundle.var_e5a95fca, undefined, killcament );
-    player playlocalsound( #"hash_352529c7ca9f6143" );
+    player playlocalsound( #"mpl_rad_field_meltdown_alert" );
     player hide_player();
     player.var_d44d1214 clientfield::set( "self_destruct_start", 1 );
     player function_6b83f6a9( 1 );
@@ -739,7 +739,7 @@ function shutdown( var_fb096220 )
 {
     profilestart();
     player = self;
-    player notify( #"hash_4aaf6d6479e7cf20" );
+    player notify( #"radiation_field_stop" );
     
     if ( isdefined( player ) && player function_831bf182() )
     {

@@ -141,7 +141,7 @@ function onuse( player )
     
     if ( isdefined( self.visuals[ 0 ] ) )
     {
-        self.visuals[ 0 ] playsoundtoplayer( #"hash_59915eb03bb56417", player );
+        self.visuals[ 0 ] playsoundtoplayer( #"mpl_killconfirm_tags_pickup_plr", player );
         self.visuals[ 0 ] playsoundtoallbutplayer( #"mpl_killconfirm_tags_pickup", player );
     }
     

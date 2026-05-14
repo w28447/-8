@@ -67,7 +67,7 @@ function function_3088962c()
     while ( true )
     {
         var_255fe317 = 0;
-        s_notify = self waittill( #"weapon_change", #"hash_3cc002901b983064" );
+        s_notify = self waittill( #"weapon_change", #"silver_bullets_given" );
         
         if ( s_notify._notify === #"weapon_change" )
         {
@@ -112,7 +112,7 @@ function function_766980a4()
         
         if ( s_result.produced == getweapon( #"zitem_silver_bullet_part_4" ) )
         {
-            level zm_ui_inventory::function_7df6bb60( #"hash_26da6ef83af4ba62", 1 );
+            level zm_ui_inventory::function_7df6bb60( #"q_silver_bullets_phase", 1 );
             break;
         }
     }
@@ -489,7 +489,7 @@ function function_4e849ab()
     
     if ( isdefined( var_ff915b1d ) && var_ff915b1d )
     {
-        self notify( #"hash_3cc002901b983064" );
+        self notify( #"silver_bullets_given" );
     }
     
     return var_ff915b1d;

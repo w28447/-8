@@ -1,5 +1,5 @@
 #using script_36222395658446f5;
-#using script_46cea9e5d4ef9e21;
+#using scripts\zm\zm_escape_nixie_clock.gsc;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\clientfield_shared;
@@ -144,7 +144,7 @@ function function_3fcb1e5e()
     var_8171dd3a = randomint( 10 );
     var_8dfff656 = randomint( 10 );
     
-    for ( var_44e1e41b = randomint( 10 ); !namespace_1063645::function_aac7105a( var_8171dd3a, var_8dfff656, var_44e1e41b ) ; var_44e1e41b = randomint( 10 ) )
+    for ( var_44e1e41b = randomint( 10 ); !nixie_clock::function_aac7105a( var_8171dd3a, var_8dfff656, var_44e1e41b ) ; var_44e1e41b = randomint( 10 ) )
     {
         var_8171dd3a = randomint( 10 );
         var_8dfff656 = randomint( 10 );
@@ -200,7 +200,7 @@ function function_1c5d2f2()
 {
     level flag::wait_till( #"hash_ed90925c898d1b0" );
     var_83aecc80 = struct::get( "nixie_tube_2" );
-    playsoundatposition( #"hash_59db059ae5cc54c2", var_83aecc80.origin );
+    playsoundatposition( #"evt_nixie_clock_confirm", var_83aecc80.origin );
     var_e0ed1d92 = struct::get( "citadel_elevator" );
     var_e0ed1d92 thread function_6b107487();
 }
@@ -805,7 +805,7 @@ function function_be995f48( mdl_tomahawk, mdl_powerup )
             e_player zm_crafting::function_3e29352d( w_component );
         }
         
-        level flag::set( #"hash_7039457b1cc827de" );
+        level flag::set( #"have_wardens_key" );
     }
 
 #/

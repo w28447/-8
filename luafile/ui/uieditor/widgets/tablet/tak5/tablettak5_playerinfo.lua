@@ -133,7 +133,7 @@ CoD.TabletTak5_PlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local SearchingString = LUI.UIText.new( 0, 0, 0, 124, 0, 0, 104.5, 127.5 )
 	SearchingString:setRGB( ColorSet.T8__GOLD.r, ColorSet.T8__GOLD.g, ColorSet.T8__GOLD.b )
-	SearchingString:setText( Engine[0xF9F1239CFD921FE]( 0x2660F4D87BFCE63 ) )
+	SearchingString:setText( Engine[0xF9F1239CFD921FE]( "menu/fileshare_searching" ) )
 	SearchingString:setTTF( "dinnext_regular" )
 	SearchingString:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	SearchingString:setAlignment( Enum.LUIAlignment[0x6ED4298C93DC5ED] )
@@ -171,13 +171,13 @@ CoD.TabletTak5_PlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.HealIndicator = HealIndicator
 	
 	local FrameBot = LUI.UIImage.new( 0, 0, -3, 127, 0, 0, 219, 233 )
-	FrameBot:setImage( RegisterImage( 0x614FFDE5DDC2DFB ) )
+	FrameBot:setImage( RegisterImage( "uie_ui_hud_tak5_player_layout_bracket" ) )
 	self:addElement( FrameBot )
 	self.FrameBot = FrameBot
 	
 	local FrameTop = LUI.UIImage.new( 0, 0, -3, 127, 0, 0, -3, 11 )
 	FrameTop:setZRot( 180 )
-	FrameTop:setImage( RegisterImage( 0x614FFDE5DDC2DFB ) )
+	FrameTop:setImage( RegisterImage( "uie_ui_hud_tak5_player_layout_bracket" ) )
 	self:addElement( FrameTop )
 	self.FrameTop = FrameTop
 	

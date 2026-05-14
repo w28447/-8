@@ -889,7 +889,7 @@ CoD.PCUtil.Craft_GetEmblemEditorSolidColorActions = function ( f65_arg0 )
 	if IsPaintshop( f65_arg0 ) then
 		table.insert( f65_local0, {
 			models = {
-				actionName = 0xCB9F26855E3227A,
+				actionName = "menu/emblem_toggle_to_sticker",
 				widgetType = "button",
 				perControllerStatusModel = "Emblem.EmblemSelectedLayerProperties.blend",
 				action = function ( f69_arg0, f69_arg1, f69_arg2, f69_arg3, f69_arg4 )
@@ -901,7 +901,7 @@ CoD.PCUtil.Craft_GetEmblemEditorSolidColorActions = function ( f65_arg0 )
 							label = 0x4336F8BDF41A51E
 						},
 						[1] = {
-							label = 0xCB9F26855E3227A
+							label = "menu/emblem_toggle_to_sticker"
 						}
 					}
 				end
@@ -986,7 +986,7 @@ CoD.PCUtil.Craft_GetEmblemEditorGradientModeActions = function ( f72_arg0 )
 	if IsPaintshop( f72_arg0 ) then
 		table.insert( f72_local0, {
 			models = {
-				actionName = 0xCB9F26855E3227A,
+				actionName = "menu/emblem_toggle_to_sticker",
 				widgetType = "button",
 				perControllerStatusModel = "Emblem.EmblemSelectedLayerProperties.blend",
 				action = function ( f76_arg0, f76_arg1, f76_arg2, f76_arg3, f76_arg4 )
@@ -998,7 +998,7 @@ CoD.PCUtil.Craft_GetEmblemEditorGradientModeActions = function ( f72_arg0 )
 							label = 0x4336F8BDF41A51E
 						},
 						[1] = {
-							label = 0xCB9F26855E3227A
+							label = "menu/emblem_toggle_to_sticker"
 						}
 					}
 				end
@@ -1168,7 +1168,7 @@ CoD.PCUtil.Craft_GetEmblemEditorMaterialActions = function ()
 	f83_local2 = f83_local0
 	f83_local3 = {}
 	f83_local4 = {
-		actionName = 0xC718AEEBB3E6B97,
+		actionName = "menu/emblem_rotate_material",
 		widgetType = "slider",
 		perControllerValueModel = "Emblem.EmblemSelectedLayerProperties.material_angle",
 		lowValue = 0,
@@ -1633,7 +1633,7 @@ if CoD.isPublicOnlineGame() then
 	local f0_local5 = IsMultiplayer()
 	local f0_local6 = Engine[0xF9F1239CFD921FE]( 0xFC9034400BFB613 )
 end
-f0_local4.description = f0_local5 and f0_local6 or Engine[0xF9F1239CFD921FE]( 0xE600BD476A84DE9 )
+f0_local4.description = f0_local5 and f0_local6 or Engine[0xF9F1239CFD921FE]( "menu/are_you_sure" )
 f0_local4.categoryType = CoD.OverlayUtility.OverlayTypes.Quit
 f0_local4.listDatasource = function ( f131_arg0 )
 	DataSources.QuitGamePopup_List = DataSourceHelpers.ListSetup( "QuitGamePopup_List", function ( f132_arg0 )
@@ -1731,7 +1731,7 @@ f0_local3.QuitPCArenaMatchPopup = {
 	menuName = "SystemOverlay_Compact",
 	frameWidget = LuaUtils.IsArenaPublicGame() and "CoD.systemOverlay_QuitLeaguePlay" or nil,
 	title = Engine[0xF9F1239CFD921FE]( 0x10A724241848AC8 ),
-	description = CoD.isPublicOnlineGame() and Engine[0xF9F1239CFD921FE]( 0x896B29D6A289A61 ) or Engine[0xF9F1239CFD921FE]( 0xE600BD476A84DE9 ),
+	description = CoD.isPublicOnlineGame() and Engine[0xF9F1239CFD921FE]( 0x896B29D6A289A61 ) or Engine[0xF9F1239CFD921FE]( "menu/are_you_sure" ),
 	categoryType = CoD.OverlayUtility.OverlayTypes.Quit,
 	listDatasource = function ( f143_arg0 )
 		DataSources.QuitGamePopup_List = DataSourceHelpers.ListSetup( "QuitGamePopup_List", function ( f144_arg0 )
@@ -1917,7 +1917,7 @@ if CoD.isPublicOnlineGame() then
 	local f0_local7 = IsMultiplayer()
 	local f0_local8 = Engine[0xF9F1239CFD921FE]( 0x9439ED4B6B6C69A ) .. "\n\n" .. Engine[0xF9F1239CFD921FE]( 0xFC9034400BFB613 )
 end
-f0_local4.description = f0_local7 and f0_local8 or Engine[0xF9F1239CFD921FE]( 0x9439ED4B6B6C69A ) .. "\n\n" .. Engine[0xF9F1239CFD921FE]( 0xE600BD476A84DE9 )
+f0_local4.description = f0_local7 and f0_local8 or Engine[0xF9F1239CFD921FE]( 0x9439ED4B6B6C69A ) .. "\n\n" .. Engine[0xF9F1239CFD921FE]( "menu/are_you_sure" )
 f0_local4.categoryType = CoD.OverlayUtility.OverlayTypes.Quit
 f0_local4.listDatasource = function ()
 	DataSources.QuitPCGamePopup_List = DataSourceHelpers.ListSetup( "QuitPCGamePopup_List", function ( f171_arg0 )
@@ -1986,7 +1986,7 @@ f0_local3.QuitPCArenaGamePopup = {
 	menuName = "SystemOverlay_Compact",
 	frameWidget = LuaUtils.IsArenaPublicGame() and "CoD.systemOverlay_QuitLeaguePlay" or nil,
 	title = Engine[0xF9F1239CFD921FE]( 0x89E88D593CFB09 ),
-	description = CoD.isPublicOnlineGame() and Engine[0xF9F1239CFD921FE]( 0x9439ED4B6B6C69A ) .. "\n\n" .. Engine[0xF9F1239CFD921FE]( 0x896B29D6A289A61 ) or Engine[0xF9F1239CFD921FE]( 0x9439ED4B6B6C69A ) .. "\n\n" .. Engine[0xF9F1239CFD921FE]( 0xE600BD476A84DE9 ),
+	description = CoD.isPublicOnlineGame() and Engine[0xF9F1239CFD921FE]( 0x9439ED4B6B6C69A ) .. "\n\n" .. Engine[0xF9F1239CFD921FE]( 0x896B29D6A289A61 ) or Engine[0xF9F1239CFD921FE]( 0x9439ED4B6B6C69A ) .. "\n\n" .. Engine[0xF9F1239CFD921FE]( "menu/are_you_sure" ),
 	categoryType = CoD.OverlayUtility.OverlayTypes.Quit,
 	listDatasource = function ()
 		DataSources.QuitPCGamePopup_List = DataSourceHelpers.ListSetup( "QuitPCGamePopup_List", function ( f181_arg0 )
@@ -2078,7 +2078,7 @@ f0_local3.LeaveLobbyPopupPC = {
 		if f193_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_PARTY then
 			f193_local0 = 0xB69F71ABEAEC777
 		elseif f193_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_AND_DISBAND_PARTY then
-			f193_local0 = 0xE6679EE5787CB48
+			f193_local0 = "menu/leave_lobby_disband_from_party_title"
 		elseif f193_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_LOBBY then
 			f193_local0 = 0x318119895303B4B
 		elseif f193_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_LOBBY_AND_PARTY then
@@ -2093,11 +2093,11 @@ f0_local3.LeaveLobbyPopupPC = {
 	description = function ( f194_arg0 )
 		local f194_local0 = 0x0
 		if f194_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_PARTY then
-			f194_local0 = 0xB543EF9A1104B6E
+			f194_local0 = "menu/leave_lobby_leave_party_hint"
 		elseif f194_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_AND_DISBAND_PARTY then
 			f194_local0 = 0xEF7BFBB3912534B
 		elseif f194_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_LOBBY_AND_PARTY then
-			f194_local0 = 0xB543EF9A1104B6E
+			f194_local0 = "menu/leave_lobby_leave_party_hint"
 		elseif f194_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.MANAGE_PARTY_LEAVE then
 			f194_local0 = 0xE47086DBA25578E
 		end
@@ -2142,7 +2142,7 @@ f0_local3.LeaveLobbyPopupPC = {
 		elseif f200_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_LOBBY then
 			table.insert( f200_local0, {
 				action = CoD.OverlayUtility.Overlays.LobbyLeavePopup.getGoBackFn( LuaEnum.LEAVE_WITH_PARTY.WITHOUT ),
-				text = 0xF420F9DB5188F96
+				text = "menu/leave_lobby_leave_lobby"
 			} )
 		elseif f200_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_LOBBY_AND_PARTY then
 			table.insert( f200_local0, {
@@ -2156,7 +2156,7 @@ f0_local3.LeaveLobbyPopupPC = {
 			} )
 			table.insert( f200_local0, {
 				action = CoD.OverlayUtility.Overlays.LobbyLeavePopup.getGoBackFn( LuaEnum.LEAVE_WITH_PARTY.WITHOUT ),
-				text = 0x7C57347FF991141
+				text = "menu/leave_lobby_leave_alone"
 			} )
 		elseif f200_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.MANAGE_PARTY_LEAVE then
 			table.insert( f200_local0, {

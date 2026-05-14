@@ -62,7 +62,7 @@ function private on_player_damage( params )
     {
         var_57807cdc = [];
         array::add( var_57807cdc, self, 0 );
-        zm_trial::fail( #"hash_41122a695bc6065d", var_57807cdc );
+        zm_trial::fail( #"zmtrials/player_took_damage", var_57807cdc );
     }
 }
 

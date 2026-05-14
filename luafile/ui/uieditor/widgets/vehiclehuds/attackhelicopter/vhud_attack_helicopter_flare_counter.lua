@@ -43,7 +43,7 @@ CoD.vhud_attack_helicopter_flare_counter.new = function ( f1_arg0, f1_arg1, f1_a
 	self.FlareFrameInuseGlow = FlareFrameInuseGlow
 	
 	local FlareFrameInuse = LUI.UIImage.new( 0, 0, 0, 148, 0, 0, 0, 118 )
-	FlareFrameInuse:setImage( RegisterImage( 0x83F5377573CDA03 ) )
+	FlareFrameInuse:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_weapon_frame_inuse" ) )
 	self:addElement( FlareFrameInuse )
 	self.FlareFrameInuse = FlareFrameInuse
 	

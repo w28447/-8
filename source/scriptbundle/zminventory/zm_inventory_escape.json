@@ -43,17 +43,17 @@
         {
             "hash_7db3435c": 0,
             "pieceimage": "image#hash_59dbf83a8853a547",
-            "clientfield": "#hash_66f5a1e5c9a28e30"
+            "clientfield": "#zm_escape_shield_part2"
         },
         {
             "hash_7db3435c": 0,
             "pieceimage": "image#hash_7ecdca2dfb9523e8",
-            "clientfield": "#hash_66f5a4e5c9a29349"
+            "clientfield": "#zm_escape_shield_part1"
         },
         {
             "hash_7db3435c": 0,
             "pieceimage": "image#hash_463a54ad71577205",
-            "clientfield": "#hash_66f5a2e5c9a28fe3"
+            "clientfield": "#zm_escape_shield_part3"
         }
     ],
     "objprogitems": [

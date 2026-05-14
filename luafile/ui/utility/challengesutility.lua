@@ -71,7 +71,7 @@ CoD.ChallengesUtility.ChallengeCategoryTable = {
 }
 CoD.ChallengesUtility.ChallengeCategoryDisplayName = {
 	operations = 0xCE9A53873255D09,
-	career = 0x70C18F2AE62C195,
+	career = "challenge/career",
 	scorestreaks = 0xCD2E0542DA537BE,
 	prestige = 0xF45564D1E059F32
 }
@@ -391,14 +391,14 @@ DataSources.ChallengesTabs = ListHelper_SetupDataSource( "ChallengesTabs", funct
 	local f14_local2 = CoD.StartMenuUtility.GetSessionModeFromLobby()
 	if f14_local2 == Enum.eModes[0x83EBA96F36BC4E5] then
 		CoD.ChallengesUtility.CreateChallengeTab( f14_arg0, f14_local0, 0xCE9A53873255D09, "CoD.Challenges_FrameWidget_Operations", "operations", f14_local1 )
-		CoD.ChallengesUtility.CreateChallengeTab( f14_arg0, f14_local0, 0x70C18F2AE62C195, "CoD.Challenges_FrameWidget_Career", "career", f14_local1 )
+		CoD.ChallengesUtility.CreateChallengeTab( f14_arg0, f14_local0, "challenge/career", "CoD.Challenges_FrameWidget_Career", "career", f14_local1 )
 		CoD.ChallengesUtility.CreateChallengeTab( f14_arg0, f14_local0, 0xCD2E0542DA537BE, "CoD.Challenges_FrameWidget_Scorestreaks", "scorestreaks", f14_local1 )
 		CoD.ChallengesUtility.CreateChallengeTab( f14_arg0, f14_local0, 0xF45564D1E059F32, "CoD.Challenges_FrameWidget_Prestige", "prestige", f14_local1 )
 	elseif f14_local2 == Enum.eModes[0x3723205FAE52C4A] then
 		CoD.ChallengesUtility.CreateChallengeTab( f14_arg0, f14_local0, 0x892ED10E8BF4877, "CoD.Challenges_FrameWidget_Expert", "expert", f14_local1 )
 		CoD.ChallengesUtility.CreateChallengeTab( f14_arg0, f14_local0, 0x677D363E896D453, "CoD.Challenges_FrameWidget_Toolkit", "toolkit", f14_local1 )
 	else
-		CoD.ChallengesUtility.CreateChallengeTab( f14_arg0, f14_local0, 0x70C18F2AE62C195, "CoD.ChallengesFramewidgetCareerWZ", "career", f14_local1 )
+		CoD.ChallengesUtility.CreateChallengeTab( f14_arg0, f14_local0, "challenge/career", "CoD.ChallengesFramewidgetCareerWZ", "career", f14_local1 )
 		CoD.ChallengesUtility.CreateChallengeTab( f14_arg0, f14_local0, 0xCE9A53873255D09, "CoD.ChallengesFramewidgetOperationsWZ", "operations", f14_local1 )
 	end
 	return f14_local0
@@ -440,7 +440,7 @@ DataSources.PrestigeTabs = ListHelper_SetupDataSource( "PrestigeTabs", function 
 	local f18_local1 = Engine.GetGlobalModel()
 	f18_local1 = f18_local1.challengeCategory:get()
 	CoD.ChallengesUtility.CreateChallengeTab( f18_arg0, f18_local0, 0x5286388DDB2A3DE, "CoD.ChallengesStickerbook", "handling", f18_local1 )
-	CoD.ChallengesUtility.CreateChallengeTab( f18_arg0, f18_local0, 0x43286D0DE2B2332, "CoD.ChallengesStickerbook", "efficiency", f18_local1 )
+	CoD.ChallengesUtility.CreateChallengeTab( f18_arg0, f18_local0, "challenge/efficiency", "CoD.ChallengesStickerbook", "efficiency", f18_local1 )
 	CoD.ChallengesUtility.CreateChallengeTab( f18_arg0, f18_local0, 0x80013311B8CB58F, "CoD.ChallengesStickerbook", "tacticalkits", f18_local1 )
 	CoD.ChallengesUtility.CreateChallengeTab( f18_arg0, f18_local0, 0x4AEF303ED69E004, "CoD.ChallengesStickerbook", "gear", f18_local1 )
 	CoD.ChallengesUtility.CreateChallengeTab( f18_arg0, f18_local0, 0x6F78F5AEA99A7E8, "CoD.ChallengesStickerbook", "perks", f18_local1 )
@@ -463,7 +463,7 @@ DataSources.ExpertTabs = ListHelper_SetupDataSource( "ExpertTabs", function ( f2
 	f20_local1 = f20_local1.challengeCategory:get()
 	CoD.ChallengesUtility.CreateChallengeTab( f20_arg0, f20_local0, 0xB31D6069443FEFE, "CoD.ChallengesStickerbook", "hunter", f20_local1 )
 	CoD.ChallengesUtility.CreateChallengeTab( f20_arg0, f20_local0, 0xD818E0F459A2CFA, "CoD.ChallengesStickerbook", "survivalist", f20_local1 )
-	CoD.ChallengesUtility.CreateChallengeTab( f20_arg0, f20_local0, 0x9ADE67A378FCCC2, "CoD.ChallengesStickerbook", "strategist", f20_local1 )
+	CoD.ChallengesUtility.CreateChallengeTab( f20_arg0, f20_local0, "zm_challenges/strategist", "CoD.ChallengesStickerbook", "strategist", f20_local1 )
 	return f20_local0
 end )
 DataSources.CareerWZTabs = ListHelper_SetupDataSource( "CareerWZTabs", function ( f21_arg0 )
@@ -2006,7 +2006,7 @@ DataSources.CallingCardsTabs = ListHelper_SetupDataSource( "CallingCardsTabs", f
 			f79_local2( 0xB06081B8B4567F2, "CoD.CallingCardsStickerbook", "zm", true )
 		end
 		f79_local2( 0xA2DD20750465431, "CoD.CallingCardsStickerbook", "wz", true )
-		f79_local2( 0xE1E56BF62CCB5F2, "CoD.CallingCardsStickerbook", "masters", true )
+		f79_local2( "menu/masters", "CoD.CallingCardsStickerbook", "masters", true )
 		if CoD.BlackMarketUtility.BuildCallingCardSets( f79_arg0, f79_arg1.menu ) then
 			f79_local2( "menu/black_market", "CoD.CallingCards_Set_BlackMarket", "loot", true )
 		end
@@ -2027,7 +2027,7 @@ CoD.ChallengesUtility.GetEmblemBackgroundImageText = function ( f81_arg0, f81_ar
 	}
 	if f81_local1 then
 		f81_local3 = CoD.emblemIconsTable
-		f81_local2 = 0x6C028A55BD26B51
+		f81_local2 = "menu/emblem"
 		f81_local4 = {
 			3
 		}
@@ -2188,7 +2188,7 @@ CoD.ChallengesUtility.DiamondCamoImages = {
 	[0xD24CEBED0A8EC7B] = 0xADC6BCF531C9714,
 	[0x9618269D014E1FE] = 0x505F93D1D6A8731,
 	[0xA44144DDCDC7A06] = 0x80FA4DF9430A3F0,
-	[0x82D4D1D3EC87299] = 0x80FA4DF9430A3F0,
+	["melee_club_t8"] = 0x80FA4DF9430A3F0,
 	[0xCB6925EBE3BC0D6] = 0x4E63DF28241BC3C,
 	[0xAB1184700CE0AA6] = 0x80FA4DF9430A3F0,
 	[0x7F46C2CAF1DE7FC] = 0x536A313952C3C15,
@@ -2334,8 +2334,8 @@ CoD.ChallengesUtility.GetChallengeRewardInfo = function ( f87_arg0, f87_arg1, f8
 		local f87_local27 = Engine.TableLookup( CoD.attachmentTable, Enum.attachmentTableColumn_e[0xF65E25C47700E9F], Enum.attachmentTableColumn_e[0x5AE79C9066CF279], f87_local10 )
 		f87_local18 = Engine.Localize( f87_local14, f87_local27 )
 		if f87_arg3 == Enum.statsMilestoneTypes_t[0x5CB1517DC5C10C1] then
-			if f87_local5 == 0x229B17B6185BE37 then
-				f87_local20 = 0x9583723AEC6E7BB
+			if f87_local5 == "camo_darkmatter" then
+				f87_local20 = "ui_icon_camonotification_darkmatter"
 			else
 				local f87_local28 = Engine[0xC6F8EC444864600]( f87_local0, f87_arg2, Enum.milestoneTableColumns_t[0xBD6B92975B2A6AB] )
 				if not f87_local28 then
@@ -2379,7 +2379,7 @@ CoD.ChallengesUtility.GetChallengeRewardInfo = function ( f87_arg0, f87_arg1, f8
 	elseif f87_local10 == "activecamounveil" then
 		if Engine.TableLookup( CoD.attachmentTable, Enum.attachmentTableColumn_e[0x9A2FFE632B9ED93], Enum.attachmentTableColumn_e[0x419575E672F6FA2], f87_local5 ) then
 			local f87_local28 = Engine.TableLookup( CoD.attachmentTable, Enum.attachmentTableColumn_e[0xF65E25C47700E9F], Enum.attachmentTableColumn_e[0x419575E672F6FA2], f87_local5 )
-			f87_local20 = 0x18CDADFEDA5A37F .. Engine.TableLookup( CoD.attachmentTable, Enum.attachmentTableColumn_e[0x5AE79C9066CF279], Enum.attachmentTableColumn_e[0x419575E672F6FA2], f87_local5 ) .. "_icon"
+			f87_local20 = "ar_accurate_t8_" .. Engine.TableLookup( CoD.attachmentTable, Enum.attachmentTableColumn_e[0x5AE79C9066CF279], Enum.attachmentTableColumn_e[0x419575E672F6FA2], f87_local5 ) .. "_icon"
 			f87_local26 = {
 				displayString = f87_local28,
 				weaponName = Engine.GetItemName( f87_arg4, Enum[0x6EB546760F890D2][0x569E84652131CD7] ),

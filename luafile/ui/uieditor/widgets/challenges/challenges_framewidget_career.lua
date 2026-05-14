@@ -19,7 +19,7 @@ CoD.Challenges_FrameWidget_Career.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.TitleBG = TitleBG
 	
 	local Title = CoD.Challenges_Category_Title.new( f1_arg0, f1_arg1, 0, 0, 112.5, 412.5, 0.5, 0.5, -300, 300 )
-	Title.ChallengesPercentCompleteWidgetLG.Name:setText( Engine[0xF9F1239CFD921FE]( 0x70C18F2AE62C195 ) )
+	Title.ChallengesPercentCompleteWidgetLG.Name:setText( Engine[0xF9F1239CFD921FE]( "challenge/career" ) )
 	Title.ChallengesPercentCompleteWidgetLG.Icon:setImage( RegisterImage( 0x64348118754B76 ) )
 	Title:subscribeToGlobalModel( f1_arg1, "ChallengesMPCategoryStats", "career", function ( model )
 		Title:setModel( model, f1_arg1 )

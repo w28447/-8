@@ -82,7 +82,7 @@ function lowermessagethink()
 // Size: 0x10c
 function setlowermessage( text, time )
 {
-    self notify( #"hash_6ceeeb477ece797b" );
+    self notify( #"change_lower_message" );
     
     if ( !isdefined( level.lower_message ) )
     {
@@ -107,7 +107,7 @@ function setlowermessage( text, time )
 // Size: 0x84
 function clearlowermessage()
 {
-    self endon( #"hash_6ceeeb477ece797b" );
+    self endon( #"change_lower_message" );
     
     if ( !isdefined( level.lower_message ) || !isplayer( self ) )
     {
@@ -124,7 +124,7 @@ function clearlowermessage()
 // Size: 0x74
 function private function_fa47c5af()
 {
-    self endon( #"hash_6ceeeb477ece797b", #"disconnect" );
+    self endon( #"change_lower_message", #"disconnect" );
     wait 1;
     level.lower_message lower_message::set_message( self, #"" );
     level.lower_message lower_message::set_countdowntimeseconds( self, 0 );

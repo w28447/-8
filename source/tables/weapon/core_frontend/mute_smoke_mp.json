@@ -4,7 +4,7 @@
     "displayname": "#weapon/mute_smoke",
     "weapon70": "#mute_smoke",
     "luigiReticleWidget": "LauncherMultiReticle",
-    "streamkey": "#hash_649e43898942f278",
+    "streamkey": "#mute_smoke_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

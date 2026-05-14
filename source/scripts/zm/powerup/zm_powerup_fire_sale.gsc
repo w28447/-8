@@ -332,7 +332,7 @@ function sndfiresalemusic_stop()
     {
         if ( isdefined( struct.sndent ) )
         {
-            struct.sndent playsound( #"hash_332ced69176833bb" );
+            struct.sndent playsound( #"mus_fire_sale_end" );
             waitframe( 1 );
             struct.sndent delete();
             struct.sndent = undefined;

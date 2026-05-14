@@ -26,12 +26,12 @@ function __init__()
         return;
     }
     
-    aat::register( "zm_aat_frostbite", #"hash_5386c3e338c1b314", "t7_icon_zm_aat_thunder_wall" );
-    clientfield::register( "actor", "zm_aat_frostbite_trail_clientfield", 1, 1, "int", &function_bad6b477, 1, 0 );
-    clientfield::register( "vehicle", "zm_aat_frostbite_trail_clientfield", 1, 1, "int", &function_bad6b477, 1, 0 );
+    aat::register( "zm_aat_frostbite", #"zmui/zm_aat_frostbite", "t7_icon_zm_aat_thunder_wall" );
+    clientfield::register( "actor", "zm_aat_frostbite_trail_clientfield", 1, 1, "int", &aat_frostbite_trail, 1, 0 );
+    clientfield::register( "vehicle", "zm_aat_frostbite_trail_clientfield", 1, 1, "int", &aat_frostbite_trail, 1, 0 );
     clientfield::register( "actor", "zm_aat_frostbite_explosion_clientfield", 1, 1, "counter", &aat_frostbite_explosion, 1, 0 );
     clientfield::register( "vehicle", "zm_aat_frostbite_explosion_clientfield", 1, 1, "counter", &aat_frostbite_explosion, 1, 0 );
-    level._effect[ #"hash_139ac9f86d1a96cd" ] = "zm_weapons/fx8_aat_water_torso";
+    level._effect[ #"aat_frostbite_trail" ] = "zm_weapons/fx8_aat_water_torso";
     level._effect[ #"aat_frostbite_explosion" ] = "zm_weapons/fx8_aat_water_exp";
 }
 
@@ -39,7 +39,7 @@ function __init__()
 // Params 7
 // Checksum 0x719853ad, Offset: 0x3d0
 // Size: 0x174
-function function_bad6b477( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function aat_frostbite_trail( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( newval )
     {
@@ -50,7 +50,7 @@ function function_bad6b477( localclientnum, oldval, newval, bnewent, binitialsna
             str_fx_tag = "tag_origin";
         }
         
-        self.var_c19403bf = util::playfxontag( localclientnum, level._effect[ #"hash_139ac9f86d1a96cd" ], self, str_fx_tag );
+        self.var_c19403bf = util::playfxontag( localclientnum, level._effect[ #"aat_frostbite_trail" ], self, str_fx_tag );
         
         if ( self.archetype === #"catalyst" || self.archetype === #"tiger" )
         {

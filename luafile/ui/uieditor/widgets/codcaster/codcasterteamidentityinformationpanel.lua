@@ -23,7 +23,7 @@ CoD.CodCasterTeamIdentityInformationPanel.new = function ( f1_arg0, f1_arg1, f1_
 	
 	local CodCasterTeam2Information = CoD.CodCasterTeamIdentityInformation.new( f1_arg0, f1_arg1, 0, 0, 0, 684, 0, 0, 282, 560 )
 	CodCasterTeam2Information.TeamLogoTitle:setText( LocalizeToUpperString( 0x7594C4235BAF38F ) )
-	CodCasterTeam2Information.TeamNameTitle:setText( LocalizeToUpperString( 0x750B8544C6063AB ) )
+	CodCasterTeam2Information.TeamNameTitle:setText( LocalizeToUpperString( "codcaster/team2_name" ) )
 	CodCasterTeam2Information.TeamColorTitle:setText( LocalizeToUpperString( 0x75FBF79F95C5DBF ) )
 	CodCasterTeam2Information:subscribeToGlobalModel( f1_arg1, "TeamIdentity", "team2", function ( model )
 		CodCasterTeam2Information:setModel( model, f1_arg1 )

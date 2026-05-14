@@ -40,7 +40,7 @@ CoD.OverheadNamePlatoonReviveIcon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.ReviveIcon = ReviveIcon
 	
 	local Arrows2 = LUI.UIImage.new( 0.29, 0.71, 0, 0, 0.83, 1.13, -14, -14 )
-	Arrows2:setImage( RegisterImage( 0xAB17136E34541E3 ) )
+	Arrows2:setImage( RegisterImage( "uie_ui_hud_revive_arrow" ) )
 	Arrows2:linkToElementModel( self, "platoonIndicatorScale", true, function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then

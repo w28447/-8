@@ -93,7 +93,7 @@ CoD.OverheadName_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	self.WaypointPattern = WaypointPattern
 	
 	local YouText2 = LUI.UIText.new( 0.5, 0.5, -29, 29, 0, 0, -68.5, -47.5 )
-	YouText2:setText( LocalizeToUpperString( 0x4657C39C60632A0 ) )
+	YouText2:setText( LocalizeToUpperString( "wz/you" ) )
 	YouText2:setTTF( "ttmussels_demibold" )
 	YouText2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	YouText2:setShaderVector( 0, 0.5, 0, 0, 0 )
@@ -106,7 +106,7 @@ CoD.OverheadName_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	self.YouText2 = YouText2
 	
 	local Arrows = LUI.UIImage.new( 0.5, 0.5, -16, 16, 0, 0, -28.5, 3.5 )
-	Arrows:setImage( RegisterImage( 0xAB17136E34541E3 ) )
+	Arrows:setImage( RegisterImage( "uie_ui_hud_revive_arrow" ) )
 	self:addElement( Arrows )
 	self.Arrows = Arrows
 	

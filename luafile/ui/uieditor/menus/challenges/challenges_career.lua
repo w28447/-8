@@ -33,7 +33,7 @@ LUI.createMenu.Challenges_Career = function ( f1_arg0, f1_arg1 )
 	self.TabFrame = TabFrame
 	
 	local MenuFrame = CoD.GenericMenuFrameIdentity.new( f1_local1, f1_arg0, 0, 1, 0, 0, 0, 1, 0, 0 )
-	MenuFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x70C18F2AE62C195 ) )
+	MenuFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "challenge/career" ) )
 	MenuFrame:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then

@@ -156,10 +156,10 @@ function register_steps()
 // Size: 0x1c4
 function init_flags()
 {
-    level flag::init( #"hash_546b8f78e6510d81" );
-    level flag::init( #"hash_546b8c78e6510868" );
-    level flag::init( #"hash_546b8d78e6510a1b" );
-    level flag::init( #"hash_546b9278e651129a" );
+    level flag::init( #"symbol_hit_player_1" );
+    level flag::init( #"symbol_hit_player_2" );
+    level flag::init( #"symbol_hit_player_3" );
+    level flag::init( #"symbol_hit_player_4" );
     level flag::init( #"ley_start" );
     level flag::init( #"rings_done" );
     level flag::init( #"ring_rotate" );
@@ -167,9 +167,9 @@ function init_flags()
     level flag::init( #"combo_dialed" );
     level flag::init( #"combo_done" );
     level flag::init( #"house_defend" );
-    level flag::init( #"hash_b240a9137ecc6f9" );
+    level flag::init( #"house_defend_done" );
     level flag::init( #"greenhouse_open" );
-    level flag::init( #"hash_702dbaf6695a5607" );
+    level flag::init( #"telescope_in_place" );
 }
 
 // Namespace mansion_ley_line/zm_mansion_ley_line
@@ -206,7 +206,7 @@ function cleanup_step_1( var_5ea5c94d, ended_early )
     level flag::set( #"gazed_library" );
     level flag::set( #"ley_start" );
     
-    foreach ( str_flag in array( #"hash_546b8f78e6510d81", #"hash_546b8c78e6510868", #"hash_546b8d78e6510a1b", #"hash_546b9278e651129a" ) )
+    foreach ( str_flag in array( #"symbol_hit_player_1", #"symbol_hit_player_2", #"symbol_hit_player_3", #"symbol_hit_player_4" ) )
     {
         level flag::set( str_flag );
     }
@@ -268,7 +268,7 @@ function init_step_3( var_a276c861 )
 // Size: 0x2bc
 function cleanup_step_3( var_5ea5c94d, ended_early )
 {
-    level notify( #"hash_11429494f29d116d" );
+    level notify( #"power_beam_done" );
     level flag::set( #"ley_start" );
     level flag::set( #"rings_done" );
     
@@ -313,7 +313,7 @@ function init_step_4( var_a276c861 )
         level flag::clear( #"zombie_drop_powerups" );
         mansion_util::function_45ac4bb8();
         level thread function_f3668a9();
-        level thread mansion_util::function_bb613572( function_a7bed514(), #"hash_b240a9137ecc6f9" );
+        level thread mansion_util::function_bb613572( function_a7bed514(), #"house_defend_done" );
         wave_1();
         wave_3();
         a_players = util::get_active_players();
@@ -335,7 +335,7 @@ function init_step_4( var_a276c861 )
 function cleanup_step_4( var_5ea5c94d, ended_early )
 {
     level flag::set( #"greenhouse_open" );
-    level flag::set( #"hash_b240a9137ecc6f9" );
+    level flag::set( #"house_defend_done" );
     level notify( #"hash_3c7945247db32d89" );
     mdl_stone = getent( "stone_obs", "targetname" );
     
@@ -449,7 +449,7 @@ function function_fde77b55( mdl_coil )
     
     while ( true )
     {
-        level flag::wait_till_any( array( #"hash_546b8f78e6510d81", #"hash_546b8c78e6510868", #"hash_546b8d78e6510a1b", #"hash_546b9278e651129a" ) );
+        level flag::wait_till_any( array( #"symbol_hit_player_1", #"symbol_hit_player_2", #"symbol_hit_player_3", #"symbol_hit_player_4" ) );
         a_str_flags = [];
         
         for ( i = 1; i < getplayers().size + 1 ; i++ )
@@ -895,7 +895,7 @@ function function_250cf19b()
     level endon( #"greenhouse_open", #"wheel_locked" );
     level scene::stop( #"p8_fxanim_zm_man_dome_crank_bundle" );
     level thread scene::play( #"p8_fxanim_zm_man_dome_crank_bundle", "reset" );
-    level flag::wait_till( #"hash_702dbaf6695a5607" );
+    level flag::wait_till( #"telescope_in_place" );
     waitframe( 1 );
     level scene::stop( #"p8_fxanim_zm_man_dome_crank_bundle" );
     level thread scene::play( #"p8_fxanim_zm_man_dome_crank_bundle", "part_open" );
@@ -1001,7 +1001,7 @@ function function_250cf19b()
 function function_5164d716()
 {
     level endon( #"wheel_locked", #"greenhouse_open" );
-    level flag::wait_till( #"hash_702dbaf6695a5607" );
+    level flag::wait_till( #"telescope_in_place" );
     t_wheel = getent( "trigger_obs_wheel_lock", "targetname" );
     t_wheel.health = 99999;
     
@@ -1441,7 +1441,7 @@ function function_d8162064()
     mdl_door_left linkto( level.mdl_telescope, "p8_zm_man_greenhouse_ext_dome_01_link_jnt" );
     array::run_all( util::get_active_players(), &clientfield::increment_to_player, "" + #"mansion_mq_rumble", 1 );
     level scene::play( #"p8_fxanim_zm_man_telescope_bundle" );
-    level flag::set( #"hash_702dbaf6695a5607" );
+    level flag::set( #"telescope_in_place" );
 }
 
 // Namespace mansion_ley_line/zm_mansion_ley_line
@@ -1478,7 +1478,7 @@ function function_a99a5c4e( a_s_valid_respawn_points )
 // Size: 0xec
 function power_beam()
 {
-    level endon( #"hash_11429494f29d116d" );
+    level endon( #"power_beam_done" );
     level flag::wait_till( #"combo_done" );
     level clientfield::set( "" + #"skybox_stream", 1 );
     var_7f147f52 = getent( "t_eshield_check", "targetname" );
@@ -1493,7 +1493,7 @@ function power_beam()
 // Size: 0x292
 function function_d5bfc8e8()
 {
-    level endon( #"hash_11429494f29d116d" );
+    level endon( #"power_beam_done" );
     self endon( #"death" );
     self.a_bashers = [];
     var_1a50a8c5 = undefined;
@@ -1572,9 +1572,9 @@ function function_b87ae607( n_stage )
     
     while ( true )
     {
-        level flag::wait_till( #"hash_6f483dda6f8ab19d" );
+        level flag::wait_till( #"werewolf_trap_active" );
         
-        while ( level flag::get( #"hash_6f483dda6f8ab19d" ) )
+        while ( level flag::get( #"werewolf_trap_active" ) )
         {
             foreach ( player in util::get_active_players() )
             {
@@ -1602,7 +1602,7 @@ function function_371e56be( e_trap )
     self endon( #"disconnect", #"hash_1e76041e9fa5f479", #"death" );
     self clientfield::set( "" + #"shield_elec_fx", 1 );
     
-    while ( level flag::get( #"hash_6f483dda6f8ab19d" ) && self istouching( e_trap ) && mansion_util::is_shield( self getcurrentweapon() ) )
+    while ( level flag::get( #"werewolf_trap_active" ) && self istouching( e_trap ) && mansion_util::is_shield( self getcurrentweapon() ) )
     {
         waitframe( 1 );
     }
@@ -1612,7 +1612,7 @@ function function_371e56be( e_trap )
     
     if ( !mansion_util::is_shield( self getcurrentweapon() ) )
     {
-        self notify( #"hash_459246e5bfcc3713" );
+        self notify( #"shield_swapped" );
         self notify( #"hash_1e76041e9fa5f479" );
     }
     
@@ -1622,7 +1622,7 @@ function function_371e56be( e_trap )
         
         if ( s_result._notify !== "weapon_change" || !mansion_util::is_shield( s_result.weapon ) )
         {
-            self notify( #"hash_459246e5bfcc3713" );
+            self notify( #"shield_swapped" );
         }
     }
 }
@@ -1634,7 +1634,7 @@ function function_371e56be( e_trap )
 function function_53577dc7()
 {
     self endon( #"disconnect" );
-    self waittilltimeout( 9.2, #"shield_timeout", #"hash_459246e5bfcc3713", #"destroy_riotshield" );
+    self waittilltimeout( 9.2, #"shield_timeout", #"shield_swapped", #"destroy_riotshield" );
     self.var_4ceff143 = 0;
     self clientfield::set( "" + #"shield_elec_fx", 0 );
     self notify( #"shield_timeout" );
@@ -1646,7 +1646,7 @@ function function_53577dc7()
 // Size: 0x306
 function tube_shoot()
 {
-    level flag::wait_till( #"hash_702dbaf6695a5607" );
+    level flag::wait_till( #"telescope_in_place" );
     level.mdl_telescope clientfield::set( "" + #"power_beam", 2 );
     level.mdl_telescope playsound( #"hash_7602966ff564e065" );
     level.mdl_telescope playloopsound( #"hash_69b6d00136d35f2b" );
@@ -1680,7 +1680,7 @@ function tube_shoot()
 // Size: 0x6c
 function function_f3668a9()
 {
-    level flag::wait_till( #"hash_b240a9137ecc6f9" );
+    level flag::wait_till( #"house_defend_done" );
     wait 15;
     level flag::set( #"spawn_zombies" );
     level flag::set( #"zombie_drop_powerups" );
@@ -1795,7 +1795,7 @@ function function_31e641f5()
 function function_a8ddd91f()
 {
     level endon( #"greenhouse_open" );
-    level flag::wait_till( #"hash_b240a9137ecc6f9" );
+    level flag::wait_till( #"house_defend_done" );
     level thread zm_utility::function_9ad5aeb1( 0, 1, 0, 1, 0 );
     level.var_84b2907f = undefined;
     wait 2;
@@ -1859,7 +1859,7 @@ function function_78a99a79()
 // Size: 0x36c
 function wave_1()
 {
-    level endon( #"hash_b240a9137ecc6f9" );
+    level endon( #"house_defend_done" );
     level flag::wait_till( #"house_defend" );
     wait 2;
     n_players = getplayers().size;
@@ -1993,7 +1993,7 @@ function function_655a2fcc()
 // Size: 0x2c4
 function wave_2()
 {
-    level endon( #"hash_b240a9137ecc6f9" );
+    level endon( #"house_defend_done" );
     wait 2;
     
     switch ( getplayers().size )
@@ -2094,7 +2094,7 @@ function function_a918c691()
 // Size: 0x3fc
 function wave_3()
 {
-    level endon( #"hash_b240a9137ecc6f9" );
+    level endon( #"house_defend_done" );
     wait 3.5;
     n_players = getplayers().size;
     
@@ -2247,7 +2247,7 @@ function function_acf54a6a()
     {
         if ( level.var_4b9e58af < 1 )
         {
-            level flag::set( #"hash_b240a9137ecc6f9" );
+            level flag::set( #"house_defend_done" );
             return;
         }
         

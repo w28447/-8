@@ -31,7 +31,7 @@ CoD[0xC38A19E12618D51].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.girl = girl
 	
 	local hair = LUI.UIImage.new( 0, 0, 613, 661, 0, 0, 25.5, 153.5 )
-	hair:setImage( RegisterImage( 0x4945D9F428E0909 ) )
+	hair:setImage( RegisterImage( "uie_ui_icon_callingcards_operations_precision_master_hair" ) )
 	self:addElement( hair )
 	self.hair = hair
 	

@@ -194,7 +194,7 @@ LUI.createMenu.DirectorCustomGameSetUpWZ = function ( f1_arg0, f1_arg1 )
 			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x2D7AF821FE36BC6, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f16_arg2, f16_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f16_arg2, f16_arg0 ) and IsGamepad( f16_arg2 ) then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xB4A0F5945BB8108, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f16_arg2, f16_arg0 ) and IsGamepad( f16_arg2 ) then
 			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x9038794D2FBCFAA, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
@@ -324,7 +324,7 @@ LUI.createMenu.DirectorCustomGameSetUpWZ = function ( f1_arg0, f1_arg1 )
 			CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x2D7AF821FE36BC6, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f31_arg2, f31_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f31_arg2, f31_arg0 ) and IsGamepad( f31_arg2 ) then
-			CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xB4A0F5945BB8108, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f31_arg2, f31_arg0 ) and IsGamepad( f31_arg2 ) then
 			CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x9038794D2FBCFAA, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
@@ -464,7 +464,7 @@ LUI.createMenu.DirectorCustomGameSetUpWZ = function ( f1_arg0, f1_arg1 )
 			CoD.Menu.SetButtonLabel( f46_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x2D7AF821FE36BC6, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f46_arg2, f46_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f46_arg2, f46_arg0 ) and IsGamepad( f46_arg2 ) then
-			CoD.Menu.SetButtonLabel( f46_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xB4A0F5945BB8108, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f46_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f46_arg2, f46_arg0 ) and IsGamepad( f46_arg2 ) then
 			CoD.Menu.SetButtonLabel( f46_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x9038794D2FBCFAA, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
@@ -594,7 +594,7 @@ LUI.createMenu.DirectorCustomGameSetUpWZ = function ( f1_arg0, f1_arg1 )
 			CoD.Menu.SetButtonLabel( f61_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x2D7AF821FE36BC6, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f61_arg2, f61_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f61_arg2, f61_arg0 ) and IsGamepad( f61_arg2 ) then
-			CoD.Menu.SetButtonLabel( f61_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xB4A0F5945BB8108, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f61_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f61_arg2, f61_arg0 ) and IsGamepad( f61_arg2 ) then
 			CoD.Menu.SetButtonLabel( f61_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x9038794D2FBCFAA, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
@@ -799,7 +799,7 @@ LUI.createMenu.DirectorCustomGameSetUpWZ = function ( f1_arg0, f1_arg1 )
 			CoD.Menu.SetButtonLabel( f81_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x2D7AF821FE36BC6, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f81_arg2, f81_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f81_arg2, f81_arg0 ) and IsGamepad( f81_arg2 ) then
-			CoD.Menu.SetButtonLabel( f81_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xB4A0F5945BB8108, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f81_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f81_arg2, f81_arg0 ) and IsGamepad( f81_arg2 ) then
 			CoD.Menu.SetButtonLabel( f81_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x9038794D2FBCFAA, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
@@ -929,7 +929,7 @@ LUI.createMenu.DirectorCustomGameSetUpWZ = function ( f1_arg0, f1_arg1 )
 			CoD.Menu.SetButtonLabel( f96_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x2D7AF821FE36BC6, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f96_arg2, f96_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f96_arg2, f96_arg0 ) and IsGamepad( f96_arg2 ) then
-			CoD.Menu.SetButtonLabel( f96_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xB4A0F5945BB8108, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f96_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f96_arg2, f96_arg0 ) and IsGamepad( f96_arg2 ) then
 			CoD.Menu.SetButtonLabel( f96_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x9038794D2FBCFAA, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
@@ -1070,7 +1070,7 @@ LUI.createMenu.DirectorCustomGameSetUpWZ = function ( f1_arg0, f1_arg1 )
 			CoD.Menu.SetButtonLabel( f111_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x2D7AF821FE36BC6, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f111_arg2, f111_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f111_arg2, f111_arg0 ) and IsGamepad( f111_arg2 ) then
-			CoD.Menu.SetButtonLabel( f111_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xB4A0F5945BB8108, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f111_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f111_arg2, f111_arg0 ) and IsGamepad( f111_arg2 ) then
 			CoD.Menu.SetButtonLabel( f111_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x9038794D2FBCFAA, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
@@ -1212,7 +1212,7 @@ LUI.createMenu.DirectorCustomGameSetUpWZ = function ( f1_arg0, f1_arg1 )
 			CoD.Menu.SetButtonLabel( f126_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x2D7AF821FE36BC6, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f126_arg2, f126_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f126_arg2, f126_arg0 ) and IsGamepad( f126_arg2 ) then
-			CoD.Menu.SetButtonLabel( f126_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xB4A0F5945BB8108, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f126_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f126_arg2, f126_arg0 ) and IsGamepad( f126_arg2 ) then
 			CoD.Menu.SetButtonLabel( f126_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x9038794D2FBCFAA, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
@@ -1354,7 +1354,7 @@ LUI.createMenu.DirectorCustomGameSetUpWZ = function ( f1_arg0, f1_arg1 )
 			CoD.Menu.SetButtonLabel( f141_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x2D7AF821FE36BC6, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f141_arg2, f141_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f141_arg2, f141_arg0 ) and IsGamepad( f141_arg2 ) then
-			CoD.Menu.SetButtonLabel( f141_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xB4A0F5945BB8108, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f141_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f141_arg2, f141_arg0 ) and IsGamepad( f141_arg2 ) then
 			CoD.Menu.SetButtonLabel( f141_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x9038794D2FBCFAA, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )

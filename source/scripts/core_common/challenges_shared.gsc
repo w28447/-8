@@ -1044,12 +1044,12 @@ function function_90185171( totaltimeplayed, credits, casexp )
             {
                 if ( getdvarint( #"loot_tier_skips_enabled", 0 ) == 1 && getdvarint( #"lootcontracts_daily_tier_skip", 0 ) != 1 )
                 {
-                    if ( !isdefined( player.pers[ #"hash_6344af0b142ed0b6" ] ) )
+                    if ( !isdefined( player.pers[ #"loot_tier_skip" ] ) )
                     {
-                        player.pers[ #"hash_6344af0b142ed0b6" ] = 0;
+                        player.pers[ #"loot_tier_skip" ] = 0;
                     }
                     
-                    if ( player.pers[ #"hash_6344af0b142ed0b6" ] )
+                    if ( player.pers[ #"loot_tier_skip" ] )
                     {
                         player function_cce105c8( #"tier_skip", 1, 1, 2, modeindex );
                     }
@@ -1066,7 +1066,7 @@ function function_90185171( totaltimeplayed, credits, casexp )
             {
                 if ( sessionmodeismultiplayergame() && getdvarint( #"hash_107f9b52b0455b54", 1 ) || sessionmodeiswarzonegame() && getdvarint( #"hash_10d78d52b08fb960", 1 ) )
                 {
-                    var_ae857992 = getdvarint( #"hash_60d812bef0f782fb", 2 );
+                    var_ae857992 = getdvarint( #"loot_season_number", 2 );
                     println( "<dev string:x1ce>" + casexp );
                     player function_cce105c8( #"hash_7c81ccc32581870e", 1, int( casexp ), 2, modeindex, 3, int( totaltimeplayed ), 4, int( var_ae857992 ) );
                 }
@@ -1109,9 +1109,9 @@ function private function_d6f929d6()
     
     foreach ( player in level.players )
     {
-        if ( isdefined( player.pers[ #"hash_150795bee4d46ce4" ] ) )
+        if ( isdefined( player.pers[ #"first_connect_time" ] ) )
         {
-            var_28ee869a = gettime() - player.pers[ #"hash_150795bee4d46ce4" ];
+            var_28ee869a = gettime() - player.pers[ #"first_connect_time" ];
             player function_659f7dc( var_28ee869a, var_b50d0caa, var_7f6396f0 );
         }
     }
@@ -1239,7 +1239,7 @@ function controllerparticipationcheck()
                 if ( !self.pers[ #"controllerparticipationinactivitywarnings" ] )
                 {
                     self.pers[ #"controllerparticipationinactivitywarnings" ]++;
-                    self iprintlnbold( #"hash_59bd89e170a924ac" );
+                    self iprintlnbold( #"game/inactivedropwarning" );
                 }
                 else
                 {
@@ -1272,7 +1272,7 @@ function function_57d8515c()
     
     var_37c0d246 = 25;
     level.var_5b7e9056 = isdefined( getgametypesetting( #"hash_410c5c7c1e60b534" ) ) ? getgametypesetting( #"hash_410c5c7c1e60b534" ) : 0;
-    level.var_df437ed2 = isdefined( getgametypesetting( #"hash_451245a24412d90f" ) ) ? getgametypesetting( #"hash_451245a24412d90f" ) : 0;
+    level.controllerparticipationcheckinterval = isdefined( getgametypesetting( #"controllerparticipationcheckinterval" ) ) ? getgametypesetting( #"controllerparticipationcheckinterval" ) : 0;
     level.var_42dca1dd = isdefined( getgametypesetting( #"hash_6ae29c8144cb7659" ) ) ? getgametypesetting( #"hash_6ae29c8144cb7659" ) : 0;
     level.var_8e1c2aa1 = isdefined( getgametypesetting( #"hash_35e9fc8eee6881e0" ) ) ? getgametypesetting( #"hash_35e9fc8eee6881e0" ) : 0;
     level.var_5d96cc20 = isdefined( getgametypesetting( #"hash_7adb62a64c6d963" ) ) ? getgametypesetting( #"hash_7adb62a64c6d963" ) : 0;
@@ -1281,7 +1281,7 @@ function function_57d8515c()
     
     for ( ;; )
     {
-        wait level.var_df437ed2;
+        wait level.controllerparticipationcheckinterval;
         playerschecked = 0;
         players = getplayers();
         
@@ -1691,7 +1691,7 @@ function earnedmicrowaveassistscore( score )
     self stats::function_dad108fa( #"assist_score_killstreak", score );
     self stats::function_e24eec31( getweapon( #"microwave_turret_deploy" ), #"assists", 1 );
     self stats::function_e24eec31( getweapon( #"microwave_turret_deploy" ), #"assist_score", score );
-    self contracts::increment_contract( #"hash_4840654e4b2597a5", score );
+    self contracts::increment_contract( #"contract_mp_scorestreak_assists", score );
 }
 
 // Namespace challenges/challenges_shared
@@ -1704,7 +1704,7 @@ function earnedcuavassistscore( score )
     self stats::function_dad108fa( #"assist_score_killstreak", score );
     self stats::function_e24eec31( getweapon( #"counteruav" ), #"assists", 1 );
     self stats::function_e24eec31( getweapon( #"counteruav" ), #"assist_score", score );
-    self contracts::increment_contract( #"hash_4840654e4b2597a5", score );
+    self contracts::increment_contract( #"contract_mp_scorestreak_assists", score );
 }
 
 // Namespace challenges/challenges_shared
@@ -1717,7 +1717,7 @@ function earneduavassistscore( score )
     self stats::function_dad108fa( #"assist_score_killstreak", score );
     self stats::function_e24eec31( getweapon( #"uav" ), #"assists", 1 );
     self stats::function_e24eec31( getweapon( #"uav" ), #"assist_score", score );
-    self contracts::increment_contract( #"hash_4840654e4b2597a5", score );
+    self contracts::increment_contract( #"contract_mp_scorestreak_assists", score );
 }
 
 // Namespace challenges/challenges_shared
@@ -1730,7 +1730,7 @@ function earnedsatelliteassistscore( score )
     self stats::function_dad108fa( #"assist_score_killstreak", score );
     self stats::function_e24eec31( getweapon( #"satellite" ), #"assists", 1 );
     self stats::function_e24eec31( getweapon( #"satellite" ), #"assist_score", score );
-    self contracts::increment_contract( #"hash_4840654e4b2597a5", score );
+    self contracts::increment_contract( #"contract_mp_scorestreak_assists", score );
 }
 
 // Namespace challenges/challenges_shared
@@ -1743,7 +1743,7 @@ function earnedempassistscore( score )
     self stats::function_dad108fa( #"assist_score_killstreak", score );
     self stats::function_e24eec31( getweapon( #"emp_turret" ), #"assists", 1 );
     self stats::function_e24eec31( getweapon( #"emp_turret" ), #"assist_score", score );
-    self contracts::increment_contract( #"hash_4840654e4b2597a5", score );
+    self contracts::increment_contract( #"contract_mp_scorestreak_assists", score );
 }
 
 // Namespace challenges/challenges_shared

@@ -60,7 +60,7 @@
     },
     {
         "name": "#hash_23c5dd4aec082633",
-        "description": "#hash_36e1d731162b6b02",
+        "description": "#mpui/ffa",
         "gametype": "#dm",
         "rules": [
             {
@@ -104,7 +104,7 @@
     },
     {
         "name": "#hash_54d3e825d700ac23",
-        "description": "#hash_1e00137b84b224a7",
+        "description": "#mpui/search_and_destroy_classic",
         "gametype": "#sd",
         "rules": [
             {
@@ -207,7 +207,7 @@
     },
     {
         "name": "#hash_2706306fb8e1a1ca",
-        "description": "#hash_2b00dcb5539c46e3",
+        "description": "#mpui/safeguard",
         "gametype": "#escort",
         "rules": [
             {
@@ -229,7 +229,7 @@
     },
     {
         "name": "#hash_3b415f2ebd0c392f",
-        "description": "#hash_16d96976e0a8fb6c",
+        "description": "#mpui/one_in_the_chamber",
         "gametype": "#oic",
         "rules": [
             {
@@ -251,7 +251,7 @@
     },
     {
         "name": "#hash_534d54d59eae90f4",
-        "description": "#hash_209c9ca8643610d9",
+        "description": "#mpui/gungame",
         "gametype": "#gun",
         "rules": [
             {
@@ -433,7 +433,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3d328d2e96ec7",
+                "name": "#maxuniquerolesperteam_1",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -451,7 +451,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3d428d2e9707a",
+                "name": "#maxuniquerolesperteam_2",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -469,7 +469,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3d528d2e9722d",
+                "name": "#maxuniquerolesperteam_3",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -487,7 +487,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3ce28d2e96648",
+                "name": "#maxuniquerolesperteam_4",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -505,7 +505,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3cf28d2e967fb",
+                "name": "#maxuniquerolesperteam_5",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -523,7 +523,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3d028d2e969ae",
+                "name": "#maxuniquerolesperteam_6",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -541,7 +541,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3d128d2e96b61",
+                "name": "#maxuniquerolesperteam_7",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -559,7 +559,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3ca28d2e95f7c",
+                "name": "#maxuniquerolesperteam_8",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -577,7 +577,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3cb28d2e9612f",
+                "name": "#maxuniquerolesperteam_9",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -595,7 +595,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_2a5ec55e62a78db5",
+                "name": "#maxuniquerolesperteam_10",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -613,7 +613,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_2a5ec45e62a78c02",
+                "name": "#maxuniquerolesperteam_11",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -631,7 +631,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_2a5ec35e62a78a4f",
+                "name": "#maxuniquerolesperteam_12",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -649,7 +649,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_2a5ec25e62a7889c",
+                "name": "#maxuniquerolesperteam_13",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -725,7 +725,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3d328d2e96ec7",
+                "name": "#maxuniquerolesperteam_1",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -743,7 +743,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3d428d2e9707a",
+                "name": "#maxuniquerolesperteam_2",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -761,7 +761,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3d528d2e9722d",
+                "name": "#maxuniquerolesperteam_3",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -779,7 +779,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3ce28d2e96648",
+                "name": "#maxuniquerolesperteam_4",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -797,7 +797,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3cf28d2e967fb",
+                "name": "#maxuniquerolesperteam_5",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -815,7 +815,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3d028d2e969ae",
+                "name": "#maxuniquerolesperteam_6",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -833,7 +833,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3d128d2e96b61",
+                "name": "#maxuniquerolesperteam_7",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -851,7 +851,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3ca28d2e95f7c",
+                "name": "#maxuniquerolesperteam_8",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -869,7 +869,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3cb28d2e9612f",
+                "name": "#maxuniquerolesperteam_9",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -887,7 +887,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_2a5ec55e62a78db5",
+                "name": "#maxuniquerolesperteam_10",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -905,7 +905,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_2a5ec45e62a78c02",
+                "name": "#maxuniquerolesperteam_11",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -923,7 +923,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_2a5ec35e62a78a4f",
+                "name": "#maxuniquerolesperteam_12",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -941,7 +941,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_2a5ec25e62a7889c",
+                "name": "#maxuniquerolesperteam_13",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -1136,7 +1136,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3d328d2e96ec7",
+                "name": "#maxuniquerolesperteam_1",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -1154,7 +1154,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3d428d2e9707a",
+                "name": "#maxuniquerolesperteam_2",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -1172,7 +1172,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3d528d2e9722d",
+                "name": "#maxuniquerolesperteam_3",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -1190,7 +1190,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3ce28d2e96648",
+                "name": "#maxuniquerolesperteam_4",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -1208,7 +1208,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3cf28d2e967fb",
+                "name": "#maxuniquerolesperteam_5",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -1226,7 +1226,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3d028d2e969ae",
+                "name": "#maxuniquerolesperteam_6",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -1244,7 +1244,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3d128d2e96b61",
+                "name": "#maxuniquerolesperteam_7",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -1262,7 +1262,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3ca28d2e95f7c",
+                "name": "#maxuniquerolesperteam_8",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -1280,7 +1280,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3cb28d2e9612f",
+                "name": "#maxuniquerolesperteam_9",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -1298,7 +1298,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_2a5ec55e62a78db5",
+                "name": "#maxuniquerolesperteam_10",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -1316,7 +1316,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_2a5ec45e62a78c02",
+                "name": "#maxuniquerolesperteam_11",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -1334,7 +1334,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_2a5ec35e62a78a4f",
+                "name": "#maxuniquerolesperteam_12",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -1352,7 +1352,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_2a5ec25e62a7889c",
+                "name": "#maxuniquerolesperteam_13",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -1458,7 +1458,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3d328d2e96ec7",
+                "name": "#maxuniquerolesperteam_1",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -1476,7 +1476,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3d428d2e9707a",
+                "name": "#maxuniquerolesperteam_2",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -1494,7 +1494,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3d528d2e9722d",
+                "name": "#maxuniquerolesperteam_3",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -1512,7 +1512,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3ce28d2e96648",
+                "name": "#maxuniquerolesperteam_4",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -1530,7 +1530,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3cf28d2e967fb",
+                "name": "#maxuniquerolesperteam_5",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -1548,7 +1548,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3d028d2e969ae",
+                "name": "#maxuniquerolesperteam_6",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -1566,7 +1566,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3d128d2e96b61",
+                "name": "#maxuniquerolesperteam_7",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -1584,7 +1584,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3ca28d2e95f7c",
+                "name": "#maxuniquerolesperteam_8",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -1602,7 +1602,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_43d3cb28d2e9612f",
+                "name": "#maxuniquerolesperteam_9",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -1620,7 +1620,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_2a5ec55e62a78db5",
+                "name": "#maxuniquerolesperteam_10",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -1638,7 +1638,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_2a5ec45e62a78c02",
+                "name": "#maxuniquerolesperteam_11",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -1656,7 +1656,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_2a5ec35e62a78a4f",
+                "name": "#maxuniquerolesperteam_12",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -1674,7 +1674,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_2a5ec25e62a7889c",
+                "name": "#maxuniquerolesperteam_13",
                 "value": "2",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -1804,7 +1804,7 @@
     },
     {
         "name": "#hash_40111b494edd22de",
-        "description": "#hash_1e00137b84b224a7",
+        "description": "#mpui/search_and_destroy_classic",
         "gametype": "#sd_cwl",
         "rules": [
             {
@@ -2151,7 +2151,7 @@
     },
     {
         "name": "#hash_65c3878c312e5616",
-        "description": "#hash_723e134bac793baa",
+        "description": "#playlist/dom_dm",
         "gametype": "#dom_dm",
         "rules": [
             {
@@ -2377,7 +2377,7 @@
     },
     {
         "name": "#hash_10fd064f85a2f648",
-        "description": "#hash_5a7f9a3b5cda9e77",
+        "description": "#mpui/sticks_and_stones",
         "gametype": "#sas",
         "rules": [
             {
@@ -2399,7 +2399,7 @@
     },
     {
         "name": "#hash_7fd1dd3daa032485",
-        "description": "#hash_36e1d731162b6b02",
+        "description": "#mpui/ffa",
         "gametype": "#dm",
         "rules": [
             {
@@ -2473,7 +2473,7 @@
     },
     {
         "name": "#hash_3a29fa301c31c305",
-        "description": "#hash_36e1d731162b6b02",
+        "description": "#mpui/ffa",
         "gametype": "#dm_hc",
         "rules": [
             {
@@ -2495,7 +2495,7 @@
     },
     {
         "name": "#hash_ca607e6dced8bf5",
-        "description": "#hash_1e00137b84b224a7",
+        "description": "#mpui/search_and_destroy_classic",
         "gametype": "#sd_hc",
         "rules": [
             {
@@ -2574,7 +2574,7 @@
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -2582,7 +2582,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -2716,7 +2716,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_3013a6dbeb6db37e",
+                "name": "#wz_stash_fix",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -2755,7 +2755,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_1a7fb37f5707eb2c",
+                "name": "#ui_showwzpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -2764,7 +2764,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_205f15191c599449",
+                "name": "#enablewzweaponpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -2848,7 +2848,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_7695bdd7b20cdda",
+                "name": "#wzenablereplacercarswap",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -2856,7 +2856,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_7695bdd7b20cdda",
+                        "unk0": "#wzenablereplacercarswap",
                         "unk10": 0
                     }
                 ]
@@ -2975,7 +2975,7 @@
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -2983,7 +2983,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -3117,7 +3117,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_3013a6dbeb6db37e",
+                "name": "#wz_stash_fix",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -3156,7 +3156,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_1a7fb37f5707eb2c",
+                "name": "#ui_showwzpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -3165,7 +3165,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_205f15191c599449",
+                "name": "#enablewzweaponpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -3249,7 +3249,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_7695bdd7b20cdda",
+                "name": "#wzenablereplacercarswap",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -3257,7 +3257,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_7695bdd7b20cdda",
+                        "unk0": "#wzenablereplacercarswap",
                         "unk10": 0
                     }
                 ]
@@ -3371,12 +3371,12 @@
     },
     {
         "name": "#hash_25bc3d7fa3b2b4dd",
-        "description": "#hash_478cdde7f189a9ea",
+        "description": "#playlist/warzone_solo",
         "gametype": "#warzone_solo",
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -3384,7 +3384,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -3518,7 +3518,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_3013a6dbeb6db37e",
+                "name": "#wz_stash_fix",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -3557,7 +3557,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_1a7fb37f5707eb2c",
+                "name": "#ui_showwzpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -3566,7 +3566,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_205f15191c599449",
+                "name": "#enablewzweaponpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -3650,7 +3650,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_7695bdd7b20cdda",
+                "name": "#wzenablereplacercarswap",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -3658,7 +3658,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_7695bdd7b20cdda",
+                        "unk0": "#wzenablereplacercarswap",
                         "unk10": 0
                     }
                 ]
@@ -3777,7 +3777,7 @@
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -3785,7 +3785,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -3919,7 +3919,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_3013a6dbeb6db37e",
+                "name": "#wz_stash_fix",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -3958,7 +3958,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_1a7fb37f5707eb2c",
+                "name": "#ui_showwzpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -3967,7 +3967,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_205f15191c599449",
+                "name": "#enablewzweaponpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -4051,7 +4051,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_7695bdd7b20cdda",
+                "name": "#wzenablereplacercarswap",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -4059,7 +4059,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_7695bdd7b20cdda",
+                        "unk0": "#wzenablereplacercarswap",
                         "unk10": 0
                     }
                 ]
@@ -4223,7 +4223,7 @@
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -4231,7 +4231,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -4365,7 +4365,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_3013a6dbeb6db37e",
+                "name": "#wz_stash_fix",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -4404,7 +4404,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_1a7fb37f5707eb2c",
+                "name": "#ui_showwzpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -4413,7 +4413,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_205f15191c599449",
+                "name": "#enablewzweaponpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -4497,7 +4497,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_7695bdd7b20cdda",
+                "name": "#wzenablereplacercarswap",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -4505,7 +4505,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_7695bdd7b20cdda",
+                        "unk0": "#wzenablereplacercarswap",
                         "unk10": 0
                     }
                 ]
@@ -4619,12 +4619,12 @@
     },
     {
         "name": "#hash_7538cf94b86a14a5",
-        "description": "#hash_366500dad22a6515",
+        "description": "#playlist/warzone_deposit",
         "gametype": "#warzone_hot_pursuit",
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -4632,7 +4632,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -4766,7 +4766,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_3013a6dbeb6db37e",
+                "name": "#wz_stash_fix",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -4805,7 +4805,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_1a7fb37f5707eb2c",
+                "name": "#ui_showwzpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -4814,7 +4814,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_205f15191c599449",
+                "name": "#enablewzweaponpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -4898,7 +4898,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_7695bdd7b20cdda",
+                "name": "#wzenablereplacercarswap",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -4906,7 +4906,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_7695bdd7b20cdda",
+                        "unk0": "#wzenablereplacercarswap",
                         "unk10": 0
                     }
                 ]
@@ -5025,7 +5025,7 @@
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -5033,7 +5033,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -5115,7 +5115,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_3013a6dbeb6db37e",
+                "name": "#wz_stash_fix",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -5169,7 +5169,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_1a7fb37f5707eb2c",
+                "name": "#ui_showwzpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -5178,7 +5178,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_205f15191c599449",
+                "name": "#enablewzweaponpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -5284,7 +5284,7 @@
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -5292,7 +5292,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -5314,7 +5314,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_1a7fb37f5707eb2c",
+                "name": "#ui_showwzpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -5323,7 +5323,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_205f15191c599449",
+                "name": "#enablewzweaponpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -5384,7 +5384,7 @@
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -5392,7 +5392,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -5526,7 +5526,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_3013a6dbeb6db37e",
+                "name": "#wz_stash_fix",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -5565,7 +5565,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_1a7fb37f5707eb2c",
+                "name": "#ui_showwzpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -5574,7 +5574,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_205f15191c599449",
+                "name": "#enablewzweaponpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -5658,7 +5658,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_7695bdd7b20cdda",
+                "name": "#wzenablereplacercarswap",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -5666,7 +5666,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_7695bdd7b20cdda",
+                        "unk0": "#wzenablereplacercarswap",
                         "unk10": 0
                     }
                 ]
@@ -5785,7 +5785,7 @@
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -5793,7 +5793,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -5927,7 +5927,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_3013a6dbeb6db37e",
+                "name": "#wz_stash_fix",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -5966,7 +5966,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_1a7fb37f5707eb2c",
+                "name": "#ui_showwzpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -5975,7 +5975,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_205f15191c599449",
+                "name": "#enablewzweaponpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -6059,7 +6059,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_7695bdd7b20cdda",
+                "name": "#wzenablereplacercarswap",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -6067,7 +6067,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_7695bdd7b20cdda",
+                        "unk0": "#wzenablereplacercarswap",
                         "unk10": 0
                     }
                 ]
@@ -6261,7 +6261,7 @@
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -6269,7 +6269,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -6403,7 +6403,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_3013a6dbeb6db37e",
+                "name": "#wz_stash_fix",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -6442,7 +6442,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_1a7fb37f5707eb2c",
+                "name": "#ui_showwzpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -6451,7 +6451,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_205f15191c599449",
+                "name": "#enablewzweaponpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -6535,7 +6535,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_7695bdd7b20cdda",
+                "name": "#wzenablereplacercarswap",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -6543,7 +6543,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_7695bdd7b20cdda",
+                        "unk0": "#wzenablereplacercarswap",
                         "unk10": 0
                     }
                 ]
@@ -6657,12 +6657,12 @@
     },
     {
         "name": "#hash_3acd3f42b1cd9dad",
-        "description": "#hash_478cdde7f189a9ea",
+        "description": "#playlist/warzone_solo",
         "gametype": "#warzone_ambush_v2_solo",
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -6670,7 +6670,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -6804,7 +6804,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_3013a6dbeb6db37e",
+                "name": "#wz_stash_fix",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -6843,7 +6843,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_1a7fb37f5707eb2c",
+                "name": "#ui_showwzpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -6852,7 +6852,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_205f15191c599449",
+                "name": "#enablewzweaponpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -6936,7 +6936,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_7695bdd7b20cdda",
+                "name": "#wzenablereplacercarswap",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -6944,7 +6944,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_7695bdd7b20cdda",
+                        "unk0": "#wzenablereplacercarswap",
                         "unk10": 0
                     }
                 ]
@@ -7138,7 +7138,7 @@
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -7146,7 +7146,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -7205,7 +7205,7 @@
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -7213,7 +7213,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -7347,7 +7347,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_3013a6dbeb6db37e",
+                "name": "#wz_stash_fix",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -7386,7 +7386,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_1a7fb37f5707eb2c",
+                "name": "#ui_showwzpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -7395,7 +7395,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_205f15191c599449",
+                "name": "#enablewzweaponpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -7479,7 +7479,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_7695bdd7b20cdda",
+                "name": "#wzenablereplacercarswap",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -7487,7 +7487,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_7695bdd7b20cdda",
+                        "unk0": "#wzenablereplacercarswap",
                         "unk10": 0
                     }
                 ]
@@ -7591,7 +7591,7 @@
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -7599,7 +7599,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -7621,7 +7621,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_1a7fb37f5707eb2c",
+                "name": "#ui_showwzpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -7630,7 +7630,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_205f15191c599449",
+                "name": "#enablewzweaponpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -7691,7 +7691,7 @@
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -7699,7 +7699,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -7833,7 +7833,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_3013a6dbeb6db37e",
+                "name": "#wz_stash_fix",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -7872,7 +7872,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_1a7fb37f5707eb2c",
+                "name": "#ui_showwzpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -7881,7 +7881,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_205f15191c599449",
+                "name": "#enablewzweaponpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -7965,7 +7965,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_7695bdd7b20cdda",
+                "name": "#wzenablereplacercarswap",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -7973,7 +7973,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_7695bdd7b20cdda",
+                        "unk0": "#wzenablereplacercarswap",
                         "unk10": 0
                     }
                 ]
@@ -8092,7 +8092,7 @@
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -8100,7 +8100,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -8122,7 +8122,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_1a7fb37f5707eb2c",
+                "name": "#ui_showwzpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -8131,7 +8131,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_205f15191c599449",
+                "name": "#enablewzweaponpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -8192,7 +8192,7 @@
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -8200,7 +8200,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -8239,12 +8239,12 @@
     },
     {
         "name": "#hash_2b9c97538d85c6dc",
-        "description": "#hash_2378f1a47f1c20f9",
+        "description": "#playlist/warzone_heavy_metal_heroes",
         "gametype": "#warzone_heavy_metal_heroes",
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -8252,7 +8252,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -8386,7 +8386,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_3013a6dbeb6db37e",
+                "name": "#wz_stash_fix",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -8425,7 +8425,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_1a7fb37f5707eb2c",
+                "name": "#ui_showwzpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -8434,7 +8434,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_205f15191c599449",
+                "name": "#enablewzweaponpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -8518,7 +8518,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_7695bdd7b20cdda",
+                "name": "#wzenablereplacercarswap",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -8526,7 +8526,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_7695bdd7b20cdda",
+                        "unk0": "#wzenablereplacercarswap",
                         "unk10": 0
                     }
                 ]
@@ -8645,7 +8645,7 @@
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -8653,7 +8653,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -8787,7 +8787,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_3013a6dbeb6db37e",
+                "name": "#wz_stash_fix",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -8826,7 +8826,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_1a7fb37f5707eb2c",
+                "name": "#ui_showwzpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -8835,7 +8835,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_205f15191c599449",
+                "name": "#enablewzweaponpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -8919,7 +8919,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_7695bdd7b20cdda",
+                "name": "#wzenablereplacercarswap",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -8927,7 +8927,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_7695bdd7b20cdda",
+                        "unk0": "#wzenablereplacercarswap",
                         "unk10": 0
                     }
                 ]
@@ -9121,7 +9121,7 @@
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -9129,7 +9129,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -9173,7 +9173,7 @@
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -9181,7 +9181,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -9263,7 +9263,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_3013a6dbeb6db37e",
+                "name": "#wz_stash_fix",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -9317,7 +9317,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_1a7fb37f5707eb2c",
+                "name": "#ui_showwzpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -9326,7 +9326,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_205f15191c599449",
+                "name": "#enablewzweaponpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -9427,12 +9427,12 @@
     },
     {
         "name": "#hash_6308b75626669098",
-        "description": "#hash_478cdde7f189a9ea",
+        "description": "#playlist/warzone_solo",
         "gametype": "#warzone_hardcore_solo",
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -9440,7 +9440,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -9522,7 +9522,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_3013a6dbeb6db37e",
+                "name": "#wz_stash_fix",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -9576,7 +9576,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_1a7fb37f5707eb2c",
+                "name": "#ui_showwzpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -9585,7 +9585,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_205f15191c599449",
+                "name": "#enablewzweaponpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -9691,7 +9691,7 @@
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -9699,7 +9699,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -9833,7 +9833,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_3013a6dbeb6db37e",
+                "name": "#wz_stash_fix",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -9872,7 +9872,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_1a7fb37f5707eb2c",
+                "name": "#ui_showwzpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -9881,7 +9881,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_205f15191c599449",
+                "name": "#enablewzweaponpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -9965,7 +9965,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_7695bdd7b20cdda",
+                "name": "#wzenablereplacercarswap",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -9973,7 +9973,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_7695bdd7b20cdda",
+                        "unk0": "#wzenablereplacercarswap",
                         "unk10": 0
                     }
                 ]
@@ -10092,7 +10092,7 @@
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -10100,7 +10100,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -10153,7 +10153,7 @@
         ]
     },
     {
-        "name": "#hash_41162f83a371d70d",
+        "name": "#gametype_zm_zstandard",
         "gametype": "#zstandard",
         "rules": [
             {
@@ -10168,7 +10168,7 @@
         ]
     },
     {
-        "name": "#hash_3f5ca727e8114fe5",
+        "name": "#gametype_zm_ztrials",
         "gametype": "#ztrials",
         "rules": [
             {
@@ -10199,7 +10199,7 @@
         ]
     },
     {
-        "name": "#hash_2a4c013991812fa",
+        "name": "#gametype_zm_ztutorial",
         "gametype": "#ztutorial",
         "rules": [
             {
@@ -10214,7 +10214,7 @@
         ]
     },
     {
-        "name": "#hash_258d8197652b186",
+        "name": "#gametype_zm_ztcm_zod",
         "gametype": "#ztcm_zod",
         "rules": [
             {
@@ -10229,7 +10229,7 @@
         ]
     },
     {
-        "name": "#hash_616f698a73f70523",
+        "name": "#gametype_zm_ztcm_towers",
         "gametype": "#ztcm_towers",
         "rules": [
             {
@@ -10244,7 +10244,7 @@
         ]
     },
     {
-        "name": "#hash_13f9d8bc3e1a7ae6",
+        "name": "#gametype_zm_ztcm_escape",
         "gametype": "#ztcm_escape",
         "rules": [
             {
@@ -10259,7 +10259,7 @@
         ]
     },
     {
-        "name": "#hash_1e5875499cb656c2",
+        "name": "#gametype_zm_ztcm_mansion",
         "gametype": "#ztcm_mansion",
         "rules": [
             {
@@ -10275,12 +10275,12 @@
     },
     {
         "name": "#hash_4dc8028fb00656ec",
-        "description": "#hash_478cdde7f189a9ea",
+        "description": "#playlist/warzone_solo",
         "gametype": "#warzone_solo",
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -10288,7 +10288,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -10422,7 +10422,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_3013a6dbeb6db37e",
+                "name": "#wz_stash_fix",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -10461,7 +10461,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_1a7fb37f5707eb2c",
+                "name": "#ui_showwzpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -10470,7 +10470,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_205f15191c599449",
+                "name": "#enablewzweaponpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -10554,7 +10554,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_7695bdd7b20cdda",
+                "name": "#wzenablereplacercarswap",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -10562,7 +10562,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_7695bdd7b20cdda",
+                        "unk0": "#wzenablereplacercarswap",
                         "unk10": 0
                     }
                 ]
@@ -10699,7 +10699,7 @@
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -10707,7 +10707,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -10841,7 +10841,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_3013a6dbeb6db37e",
+                "name": "#wz_stash_fix",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -10880,7 +10880,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_1a7fb37f5707eb2c",
+                "name": "#ui_showwzpersonalization",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -10889,7 +10889,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_205f15191c599449",
+                "name": "#enablewzweaponpersonalization",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -10973,7 +10973,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_7695bdd7b20cdda",
+                "name": "#wzenablereplacercarswap",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -10981,7 +10981,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_7695bdd7b20cdda",
+                        "unk0": "#wzenablereplacercarswap",
                         "unk10": 0
                     }
                 ]
@@ -11109,7 +11109,7 @@
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -11117,7 +11117,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -11251,7 +11251,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_3013a6dbeb6db37e",
+                "name": "#wz_stash_fix",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -11290,7 +11290,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_1a7fb37f5707eb2c",
+                "name": "#ui_showwzpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -11299,7 +11299,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_205f15191c599449",
+                "name": "#enablewzweaponpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -11383,7 +11383,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_7695bdd7b20cdda",
+                "name": "#wzenablereplacercarswap",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -11391,7 +11391,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_7695bdd7b20cdda",
+                        "unk0": "#wzenablereplacercarswap",
                         "unk10": 0
                     }
                 ]
@@ -11547,7 +11547,7 @@
     },
     {
         "name": "#hash_377cecdfe4b57bb7",
-        "description": "#hash_1e00137b84b224a7",
+        "description": "#mpui/search_and_destroy_classic",
         "gametype": "#sd_cwl",
         "rules": [
             {
@@ -11708,7 +11708,7 @@
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -11716,7 +11716,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -11850,7 +11850,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_3013a6dbeb6db37e",
+                "name": "#wz_stash_fix",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -11889,7 +11889,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_1a7fb37f5707eb2c",
+                "name": "#ui_showwzpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -11898,7 +11898,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_205f15191c599449",
+                "name": "#enablewzweaponpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -11982,7 +11982,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_7695bdd7b20cdda",
+                "name": "#wzenablereplacercarswap",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -11990,7 +11990,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_7695bdd7b20cdda",
+                        "unk0": "#wzenablereplacercarswap",
                         "unk10": 0
                     }
                 ]
@@ -12094,7 +12094,7 @@
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -12102,7 +12102,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -12206,7 +12206,7 @@
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -12214,7 +12214,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -12348,7 +12348,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_3013a6dbeb6db37e",
+                "name": "#wz_stash_fix",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -12387,7 +12387,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_1a7fb37f5707eb2c",
+                "name": "#ui_showwzpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -12396,7 +12396,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_205f15191c599449",
+                "name": "#enablewzweaponpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -12480,7 +12480,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_7695bdd7b20cdda",
+                "name": "#wzenablereplacercarswap",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -12488,7 +12488,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_7695bdd7b20cdda",
+                        "unk0": "#wzenablereplacercarswap",
                         "unk10": 0
                     }
                 ]
@@ -12615,7 +12615,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_3392857d44a435b6",
+                "name": "#wzenablehuey",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -12623,7 +12623,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_3392857d44a435b6",
+                        "unk0": "#wzenablehuey",
                         "unk10": 0
                     }
                 ]
@@ -12682,7 +12682,7 @@
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -12690,7 +12690,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -12749,7 +12749,7 @@
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -12757,7 +12757,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -12861,7 +12861,7 @@
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -12869,7 +12869,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -13003,7 +13003,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_3013a6dbeb6db37e",
+                "name": "#wz_stash_fix",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -13042,7 +13042,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_1a7fb37f5707eb2c",
+                "name": "#ui_showwzpersonalization",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -13051,7 +13051,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_205f15191c599449",
+                "name": "#enablewzweaponpersonalization",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -13135,7 +13135,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_7695bdd7b20cdda",
+                "name": "#wzenablereplacercarswap",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -13143,7 +13143,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_7695bdd7b20cdda",
+                        "unk0": "#wzenablereplacercarswap",
                         "unk10": 0
                     }
                 ]
@@ -13271,7 +13271,7 @@
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -13279,7 +13279,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -13301,7 +13301,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_1a7fb37f5707eb2c",
+                "name": "#ui_showwzpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -13310,7 +13310,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_205f15191c599449",
+                "name": "#enablewzweaponpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -13386,7 +13386,7 @@
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -13394,7 +13394,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -13416,7 +13416,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_1a7fb37f5707eb2c",
+                "name": "#ui_showwzpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -13425,7 +13425,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_205f15191c599449",
+                "name": "#enablewzweaponpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -13501,7 +13501,7 @@
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -13509,7 +13509,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -13531,7 +13531,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_1a7fb37f5707eb2c",
+                "name": "#ui_showwzpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -13540,7 +13540,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_205f15191c599449",
+                "name": "#enablewzweaponpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -13611,12 +13611,12 @@
     },
     {
         "name": "#hash_85e8d969c3cacac",
-        "description": "#hash_478cdde7f189a9ea",
+        "description": "#playlist/warzone_solo",
         "gametype": "#warzone_escape_cqf_solo",
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -13624,7 +13624,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -13646,7 +13646,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_1a7fb37f5707eb2c",
+                "name": "#ui_showwzpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -13655,7 +13655,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_205f15191c599449",
+                "name": "#enablewzweaponpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -13726,12 +13726,12 @@
     },
     {
         "name": "#hash_296e0b7f34359dd9",
-        "description": "#hash_478cdde7f189a9ea",
+        "description": "#playlist/warzone_solo",
         "gametype": "#warzone_solo",
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -13739,7 +13739,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]
@@ -13873,7 +13873,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_3013a6dbeb6db37e",
+                "name": "#wz_stash_fix",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -13912,7 +13912,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_1a7fb37f5707eb2c",
+                "name": "#ui_showwzpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -13921,7 +13921,7 @@
             },
             {
                 "type": "SET_DVAR",
-                "name": "#hash_205f15191c599449",
+                "name": "#enablewzweaponpersonalization",
                 "value": "1",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -14005,7 +14005,7 @@
             },
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_7695bdd7b20cdda",
+                "name": "#wzenablereplacercarswap",
                 "value": "0",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -14013,7 +14013,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_7695bdd7b20cdda",
+                        "unk0": "#wzenablereplacercarswap",
                         "unk10": 0
                     }
                 ]
@@ -14176,7 +14176,7 @@
         "rules": [
             {
                 "type": "GAMETYPE_SETTINGS",
-                "name": "#hash_6024ee628431415",
+                "name": "#killcamhistoryseconds",
                 "value": "1800",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -14184,7 +14184,7 @@
                 "utcEndTime": 0,
                 "unk40": [
                     {
-                        "unk0": "#hash_6024ee628431415",
+                        "unk0": "#killcamhistoryseconds",
                         "unk10": 0
                     }
                 ]

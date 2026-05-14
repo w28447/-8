@@ -325,7 +325,7 @@ function function_9d9892d2( master_switch )
 // Size: 0x48
 function artifact_mind_on( master_switch, fx_pos, user )
 {
-    level notify( #"hash_3e80d503318a5674", { #player:user } );
+    level notify( #"artifact_picked_up", { #player:user } );
 }
 
 // Namespace zm_power/zm_power

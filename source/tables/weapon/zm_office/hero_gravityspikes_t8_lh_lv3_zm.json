@@ -4,7 +4,7 @@
     "displayname": "#hash_1cba478a3a2ba155",
     "weapon70": "#hero_gravityspikes_t8_lv1",
     "dualwieldWeaponName": "#hero_gravityspikes_t8_lv3_zm",
-    "streamkey": "#hash_436f5327e25ecd4b",
+    "streamkey": "#hero_gravityspikes_t8_lh_lv3_soundbank",
     "worldModelTagRight": "tag_weapon_left",
     "worldModelTagLeft": "tag_weapon_right",
     "stowedModelTag": "tag_stowed_back",
@@ -38,7 +38,7 @@
     "sound800": "#hash_5fd68d0455a0b8",
     "sound810": "#hash_5fd68d0455a0b8",
     "tunables1": "#hero_gravityspikes_t8_lh_lv3_tunables_zm",
-    "sharedWeaponSounds": "#hash_4a937818f45c65d8",
+    "sharedWeaponSounds": "#dg4",
     "viewmodel": [
         "#wpn_t8_zm_talon_spikes_dw_view"
     ],

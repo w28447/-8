@@ -28,7 +28,7 @@ function __init__()
     clientfield::register( "scriptmover", "ouranos_shoot", 16000, 1, "counter", &function_b3ffbfd, 0, 0 );
     clientfield::register( "scriptmover", "ouranos_impact", 16000, 1, "counter", &ouranos_impact_fx, 0, 0 );
     clientfield::register( "allplayers", "" + #"ouranos_beam_fire", 16000, 1, "int", &skull_turret_beam_fire, 0, 1 );
-    clientfield::register( "allplayers", "" + #"hash_4fb73e88d45af0ef", 16000, 1, "int", &function_98b06f97, 0, 1 );
+    clientfield::register( "allplayers", "" + #"ouranos_beam_fire_sfx", 16000, 1, "int", &ouranos_beam_fire_sfx, 0, 1 );
     clientfield::register( "actor", "" + #"ouranos_proj_knock", 16000, getminbitcountfornum( 3 ), "int", &function_a1d614f9, 0, 1 );
     clientfield::register( "actor", "" + #"ouranos_zombie_impact", 16000, 1, "counter", &function_1322534b, 0, 0 );
     serverfield::register( "ouranos_feather_hit", 16000, getminbitcountfornum( 3 ), "int" );
@@ -270,7 +270,7 @@ function skull_turret_beam_fire( localclientnum, oldval, newval, bnewent, biniti
 // Params 7
 // Checksum 0x2d87370e, Offset: 0x1060
 // Size: 0x10e
-function function_98b06f97( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function ouranos_beam_fire_sfx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( newval == 1 )
     {

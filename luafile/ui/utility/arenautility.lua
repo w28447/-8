@@ -399,7 +399,7 @@ CoD.ArenaUtility.ShowCurrentEventDetails = function ( f26_arg0 )
 		f26_arg0.RankedPlayDetails:show()
 	elseif f26_local0.eventType == Enum[0xC0EA92D04BC003B][0xC32571741C5B730] then
 		local f26_local5 = f26_local1:create( "arenaSubtitle" )
-		f26_local5:set( 0xEA9804CE492884E )
+		f26_local5:set( "arena/event_league_play_name" )
 		f26_arg0.LeaguePlayDetails:show()
 	elseif f26_local0.eventType == Enum[0xC0EA92D04BC003B][0x70DF63F42A5E56A] then
 		DataSources.InvitationalDetails.PopulateWidget( f26_arg0.InvitationalDetails, f26_local4, f26_local3, Engine[0xE00B2F29271C60B]( f26_local0.event ) )
@@ -564,7 +564,7 @@ CoD.ArenaUtility.UpdateArenaOnLobbyNav = function ()
 	local f40_local3 = Engine.GetGlobalModel()
 	local f40_local4 = f40_local3.Arena
 	local f40_local5 = f40_local3.LeaguePlay
-	if f40_local0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_ARENA_PREGAME ) then
+	if f40_local0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_ARENA_PREGAME ) then
 		CoD.ArenaUtility.CheckArenaStats( f40_local2, f40_local1 )
 		CoD.ArenaLeaguePlayUtility.CheckIfProcessingLeagueID( f40_local2 )
 	end
@@ -869,7 +869,7 @@ CoD.ArenaUtility.PopulateStats = function ( f49_arg0 )
 		DataSources.LeaguePlay.PopulateWidget( f49_arg0, f49_local18, Engine[0xE00B2F29271C60B]( f49_local0.event ) )
 		DataSources.ArenaGauntlet.PopulateWidget( f49_arg0 )
 		local f49_local19 = f49_local3:create( "arenaSubtitle" )
-		f49_local19:set( 0xEA9804CE492884E )
+		f49_local19:set( "arena/event_league_play_name" )
 	elseif f49_local0.eventType == Enum[0xC0EA92D04BC003B][0x70DF63F42A5E56A] then
 		local f49_local15 = Engine[0xE00B2F29271C60B]( f49_local0.event )
 		local f49_local19 = f49_local0.startOffset <= f49_local14

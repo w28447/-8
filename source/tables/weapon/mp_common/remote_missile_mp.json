@@ -3,7 +3,7 @@
     "baseWeapon": "#remote_missile",
     "displayname": "#killstreak/remote_missile",
     "weapon70": "#remote_missile",
-    "streamkey": "#hash_19decfe68dc0e9ae",
+    "streamkey": "#remote_missile_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

@@ -364,7 +364,7 @@ function function_672eb1dc( var_21839a96, var_57ec466d )
     wait 5;
     var_58b3e56b = mansion_util::function_89e9bca5( var_21839a96, s_loc.origin, s_loc.angles );
     playsoundatposition( var_57ec466d, var_58b3e56b.origin );
-    level notify( #"hash_144b3192f03325f3" );
+    level notify( #"prima_materia_created" );
 }
 
 // Namespace ww_lvl2_quest/zm_mansion_ww_lvl2_quest

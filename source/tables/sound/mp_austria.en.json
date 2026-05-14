@@ -9,13 +9,13 @@
         {
             "value": 28,
             "next": 65535,
-            "name": "#hash_5ac106668a9f63e",
+            "name": "#vox_germ_german_radio_0",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5ac106668a9f63e",
+                    "name": "#vox_germ_german_radio_0",
                     "assetId": "#hash_4ee07a56210cb8ab",
                     "assetFileNameSustain": "#mp_austria.en",
                     "assetIdRelease": "#mp_austria.en",
@@ -59,13 +59,13 @@
         {
             "value": 6,
             "next": 2,
-            "name": "#hash_5ac116668a9f7f1",
+            "name": "#vox_germ_german_radio_1",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5ac116668a9f7f1",
+                    "name": "#vox_germ_german_radio_1",
                     "assetId": "#hash_2e2c13f3c8db75dc",
                     "assetFileNameSustain": "#mp_austria.en",
                     "assetIdRelease": "#mp_austria.en",
@@ -109,13 +109,13 @@
         {
             "value": 15,
             "next": 65535,
-            "name": "#hash_4d595203d8cffcf3",
+            "name": "#vox_germ_german_radio_10",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4d595203d8cffcf3",
+                    "name": "#vox_germ_german_radio_10",
                     "assetId": "#hash_5187656b9cdba9b6",
                     "assetFileNameSustain": "#mp_austria.en",
                     "assetIdRelease": "#mp_austria.en",
@@ -159,13 +159,13 @@
         {
             "value": 37,
             "next": 65535,
-            "name": "#hash_4d595103d8cffb40",
+            "name": "#vox_germ_german_radio_11",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4d595103d8cffb40",
+                    "name": "#vox_germ_german_radio_11",
                     "assetId": "#hash_479ff256ce7c708d",
                     "assetFileNameSustain": "#mp_austria.en",
                     "assetIdRelease": "#mp_austria.en",
@@ -209,13 +209,13 @@
         {
             "value": 52,
             "next": 65535,
-            "name": "#hash_4d595403d8d00059",
+            "name": "#vox_germ_german_radio_12",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4d595403d8d00059",
+                    "name": "#vox_germ_german_radio_12",
                     "assetId": "#hash_429dc1d40e8751c4",
                     "assetFileNameSustain": "#mp_austria.en",
                     "assetIdRelease": "#mp_austria.en",
@@ -259,13 +259,13 @@
         {
             "value": 9,
             "next": 6,
-            "name": "#hash_4d595303d8cffea6",
+            "name": "#vox_germ_german_radio_13",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4d595303d8cffea6",
+                    "name": "#vox_germ_german_radio_13",
                     "assetId": "#hash_4c0504c440c975f3",
                     "assetFileNameSustain": "#mp_austria.en",
                     "assetIdRelease": "#mp_austria.en",
@@ -309,13 +309,13 @@
         {
             "value": 16,
             "next": 65535,
-            "name": "#hash_4d595603d8d003bf",
+            "name": "#vox_germ_german_radio_14",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4d595603d8d003bf",
+                    "name": "#vox_germ_german_radio_14",
                     "assetId": "#hash_55f1503ab11a2ee2",
                     "assetFileNameSustain": "#mp_austria.en",
                     "assetIdRelease": "#mp_austria.en",
@@ -359,13 +359,13 @@
         {
             "value": 46,
             "next": 65535,
-            "name": "#hash_4d595503d8d0020c",
+            "name": "#vox_germ_german_radio_15",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4d595503d8d0020c",
+                    "name": "#vox_germ_german_radio_15",
                     "assetId": "#hash_31b8f09c2659a7c9",
                     "assetFileNameSustain": "#mp_austria.en",
                     "assetIdRelease": "#mp_austria.en",
@@ -409,13 +409,13 @@
         {
             "value": 36,
             "next": 65535,
-            "name": "#hash_4d595803d8d00725",
+            "name": "#vox_germ_german_radio_16",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4d595803d8d00725",
+                    "name": "#vox_germ_german_radio_16",
                     "assetId": "#hash_789f953afe65b580",
                     "assetFileNameSustain": "#mp_austria.en",
                     "assetIdRelease": "#mp_austria.en",
@@ -1721,7 +1721,7 @@
                     "assetIdRelease": "#mp_austria.en",
                     "assetFileNameRelease": "#mp_austria.en",
                     "contextType": "#mature",
-                    "contextValue": "#hash_77b24048d2701d49",
+                    "contextValue": "#explicit",
                     "reverbSend": 0.01,
                     "centerSend": 0,
                     "volMin": 0.12589253,
@@ -1863,7 +1863,7 @@
                     "assetIdRelease": "#mp_austria.en",
                     "assetFileNameRelease": "#mp_austria.en",
                     "contextType": "#mature",
-                    "contextValue": "#hash_77b24048d2701d49",
+                    "contextValue": "#explicit",
                     "reverbSend": 0.01,
                     "centerSend": 0,
                     "volMin": 0.12589253,
@@ -2055,7 +2055,7 @@
                     "assetIdRelease": "#mp_austria.en",
                     "assetFileNameRelease": "#mp_austria.en",
                     "contextType": "#mature",
-                    "contextValue": "#hash_77b24048d2701d49",
+                    "contextValue": "#explicit",
                     "reverbSend": 0.01,
                     "centerSend": 0,
                     "volMin": 0.12589253,

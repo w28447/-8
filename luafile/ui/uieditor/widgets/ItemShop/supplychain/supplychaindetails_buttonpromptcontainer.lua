@@ -74,7 +74,7 @@ CoD.SupplyChainDetails_ButtonPromptContainer.new = function ( f1_arg0, f1_arg1, 
 		} )
 	end )
 	ToggleOutfitPreview.KeyPrompt.keybind:setText( CoD.BaseUtility.AlreadyLocalized( "[{ui_contextual_1}]" ) )
-	ToggleOutfitPreview.togglePreviewLabel:setText( Engine[0xF9F1239CFD921FE]( 0x7C59A6407407976 ) )
+	ToggleOutfitPreview.togglePreviewLabel:setText( Engine[0xF9F1239CFD921FE]( "menu/hide_details" ) )
 	ToggleOutfitPreview:subscribeToGlobalModel( f1_arg1, "Controller", "back_button_image", function ( model )
 		local f9_local0 = model:get()
 		if f9_local0 ~= nil then

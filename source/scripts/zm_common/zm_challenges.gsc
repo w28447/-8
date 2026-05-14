@@ -238,7 +238,7 @@ function death_check_for_challenge_updates( e_attacker )
                 e_attacker stats::function_e24eec31( w_damage, #"heavykills", 1 );
                 e_attacker stats::inc_stat( #"item_stats", w_damage.name, #"heavykills", #"statvalue", 1 );
                 e_attacker thread activecamo::function_896ac347( w_damage, #"heavy_kills", 1 );
-                e_attacker thread activecamo::function_896ac347( w_damage, #"hash_39ab7cda18fd5c74", 1 );
+                e_attacker thread activecamo::function_896ac347( w_damage, #"take_it_personally", 1 );
                 e_attacker contracts::increment_zm_contract( #"contract_zm_heavy_kills" );
                 break;
             case #"miniboss":
@@ -250,7 +250,7 @@ function death_check_for_challenge_updates( e_attacker )
                 e_attacker stats::function_e24eec31( w_damage, #"minibosskills", 1 );
                 e_attacker stats::inc_stat( #"item_stats", w_damage.name, #"minibosskills", #"statvalue", 1 );
                 e_attacker thread activecamo::function_896ac347( w_damage, #"mini_boss_kills", 1 );
-                e_attacker thread activecamo::function_896ac347( w_damage, #"hash_39ab7cda18fd5c74", 1 );
+                e_attacker thread activecamo::function_896ac347( w_damage, #"take_it_personally", 1 );
                 e_attacker contracts::increment_zm_contract( #"contract_zm_miniboss_kills" );
                 break;
             case #"popcorn":
@@ -261,11 +261,11 @@ function death_check_for_challenge_updates( e_attacker )
                 e_attacker stats::function_e24eec31( w_damage, #"verminkills", 1 );
                 e_attacker stats::inc_stat( #"item_stats", w_damage.name, #"verminkills", #"statvalue", 1 );
                 e_attacker thread activecamo::function_896ac347( w_damage, #"vermin_kills", 1 );
-                e_attacker thread activecamo::function_896ac347( w_damage, #"hash_39ab7cda18fd5c74", 1 );
+                e_attacker thread activecamo::function_896ac347( w_damage, #"take_it_personally", 1 );
                 e_attacker contracts::increment_zm_contract( #"contract_zm_vermin_kills" );
                 break;
             case #"enhanced":
-                e_attacker thread activecamo::function_896ac347( w_damage, #"hash_39ab7cda18fd5c74", 1 );
+                e_attacker thread activecamo::function_896ac347( w_damage, #"take_it_personally", 1 );
                 e_attacker thread activecamo::function_896ac347( w_damage, #"enhanced_kills", 1 );
                 break;
         }
@@ -279,7 +279,7 @@ function death_check_for_challenge_updates( e_attacker )
             #/
             
             e_attacker thread activecamo::function_896ac347( w_damage, #"enhanced_kills", 1 );
-            e_attacker thread activecamo::function_896ac347( w_damage, #"hash_39ab7cda18fd5c74", 1 );
+            e_attacker thread activecamo::function_896ac347( w_damage, #"take_it_personally", 1 );
             e_attacker contracts::increment_zm_contract( #"contract_zm_catalyst_kills" );
             
             if ( isdefined( self.var_69a981e6 ) && self.var_69a981e6 )
@@ -986,7 +986,7 @@ function function_e40c9d13()
 // Size: 0x1354
 function function_a3cd4521()
 {
-    if ( self stats::get_stat( #"playerstatslist", #"hash_516183f89adeace1" ) )
+    if ( self stats::get_stat( #"playerstatslist", #"mastery_challenge_fixup" ) )
     {
         return;
     }
@@ -1228,7 +1228,7 @@ function function_a3cd4521()
         var_a9d7bd6++;
     }
     
-    if ( self stats::get_stat_challenge_tier( #"hash_3ebae93ea866519c" ) == 3 )
+    if ( self stats::get_stat_challenge_tier( #"gum_gobbler_powerups_grabbed" ) == 3 )
     {
         var_a9d7bd6++;
     }
@@ -1482,7 +1482,7 @@ function function_a3cd4521()
         self stats::function_dad108fa( #"hash_72a217263c8a78f", var_a9d7bd6 - var_76f39460 );
     }
     
-    self stats::set_stat( #"playerstatslist", #"hash_516183f89adeace1", 1 );
+    self stats::set_stat( #"playerstatslist", #"mastery_challenge_fixup", 1 );
 }
 
 // Namespace zm_challenges/zm_challenges

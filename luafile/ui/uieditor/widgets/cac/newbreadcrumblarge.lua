@@ -9,7 +9,7 @@ CoD.NewBreadcrumbLarge.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local NewIcon = LUI.UIImage.new( 0.5, 0.5, -56, 56, 0.5, 0.5, -12, 12 )
-	NewIcon:setImage( RegisterImage( 0xEF2F878EFAE7140 ) )
+	NewIcon:setImage( RegisterImage( "uie_ui_icon_frontend_helptag2" ) )
 	self:addElement( NewIcon )
 	self.NewIcon = NewIcon
 	

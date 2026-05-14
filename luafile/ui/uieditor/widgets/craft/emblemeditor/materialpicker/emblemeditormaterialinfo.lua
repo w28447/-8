@@ -58,7 +58,7 @@ CoD.EmblemEditorMaterialInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	TextBox4 = LUI.UIText.new( 0, 0, 5, 225, 0, 0, 3.5, 28.5 )
 	TextBox4:setRGB( 0.92, 0.89, 0.72 )
-	TextBox4:setText( Engine[0xF9F1239CFD921FE]( 0x3357A304FD698FC ) )
+	TextBox4:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_layers_used" ) )
 	TextBox4:setTTF( "ttmussels_regular" )
 	TextBox4:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	TextBox4:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -105,7 +105,7 @@ CoD.EmblemEditorMaterialInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	rotationText = LUI.UIText.new( 0, 0, 345.5, 541.5, 0, 0, 3, 28 )
 	rotationText:setRGB( 0.92, 0.89, 0.72 )
-	rotationText:setText( Engine[0xF9F1239CFD921FE]( 0x925F93629C148F6 ) )
+	rotationText:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_material_rotation" ) )
 	rotationText:setTTF( "ttmussels_regular" )
 	rotationText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	rotationText:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )

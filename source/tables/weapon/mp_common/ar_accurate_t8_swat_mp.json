@@ -4,7 +4,7 @@
     "displayname": "#weapon/ar_accurate_t8",
     "xhash_60": "#hash_60602ad2be1da8df",
     "weapon70": "#swat_team",
-    "streamkey": "#hash_34087f0cd07ba4e6",
+    "streamkey": "#ar_accurate_t8_swat_soundbank",
     "scrstr_8c8": [
         "tag_sights_off",
         "tag_clan_tag",
@@ -68,7 +68,7 @@
     "sound210": "#hash_2b902c34c9ae43f5",
     "sound240": "#hash_5eabe6a258a16f56",
     "sound250": "#hash_430505a2008aefdb",
-    "sound260": "#hash_515f54aa1f553686",
+    "sound260": "#prj_crack_supersonic",
     "sound600": "#hash_209cb2974ae55ec0",
     "sound610": "#hash_209cb2974ae55ec0",
     "sound800": "#hash_5ee962527afebfb1",

@@ -25,7 +25,7 @@ CoD.ScrStk_MeterPanel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local Slots = LUI.UIImage.new( 0, 0, -4, 12, 0, 0, 28, 182 )
 	Slots:setAlpha( 0.08 )
-	Slots:setImage( RegisterImage( 0xBECC85DF0ADD5A3 ) )
+	Slots:setImage( RegisterImage( "uie_ui_hud_core_streak_widget_meter_fill" ) )
 	self:addElement( Slots )
 	self.Slots = Slots
 	

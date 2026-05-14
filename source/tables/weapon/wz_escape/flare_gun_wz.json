@@ -2,7 +2,7 @@
     "name": "#flare_gun_wz",
     "baseWeapon": "#flare_gun",
     "displayname": "#weapon/flare_gun_wz",
-    "streamkey": "#hash_12ee0aed6cebcf8",
+    "streamkey": "#flare_gun_soundbank",
     "scrstr_8c8": [
         "tag_equipment_hero"
     ],

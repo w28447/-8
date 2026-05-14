@@ -54,7 +54,7 @@ CoD[0x141F5FCBDC4E50].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.mistBack = mistBack
 	
 	local monks = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	monks:setImage( RegisterImage( 0x8CF33C5DA47701B ) )
+	monks:setImage( RegisterImage( "uie_ui_icon_callingcards_zm_prestige_allseeingeye_pyramid_monks" ) )
 	self:addElement( monks )
 	self.monks = monks
 	
@@ -67,7 +67,7 @@ CoD[0x141F5FCBDC4E50].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.mistFront = mistFront
 	
 	local torchFlames = LUI.UIImage.new( 0, 0, 116.5, 200.5, 0, 0, 36, 204 )
-	torchFlames:setImage( RegisterImage( 0xE3F87E34FC86F39 ) )
+	torchFlames:setImage( RegisterImage( "uie_ui_icon_callingcards_zm_prestige_allseeingeye_pyramid_torch_flame" ) )
 	torchFlames:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	torchFlames:setShaderVector( 0, 0, 5, 0, 0 )
 	torchFlames:setShaderVector( 1, 10, 0, 0, 0 )
@@ -76,7 +76,7 @@ CoD[0x141F5FCBDC4E50].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local torchFlames2 = LUI.UIImage.new( 0, 0, 824.5, 902.5, 0, 0, 70, 216 )
 	torchFlames2:setZRot( 11 )
-	torchFlames2:setImage( RegisterImage( 0xE3F87E34FC86F39 ) )
+	torchFlames2:setImage( RegisterImage( "uie_ui_icon_callingcards_zm_prestige_allseeingeye_pyramid_torch_flame" ) )
 	torchFlames2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	torchFlames2:setShaderVector( 0, 0, 5, 0, 0 )
 	torchFlames2:setShaderVector( 1, 10, 0, 0, 0 )
@@ -84,7 +84,7 @@ CoD[0x141F5FCBDC4E50].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.torchFlames2 = torchFlames2
 	
 	local torchFlames3 = LUI.UIImage.new( 0, 0, 408.5, 444.5, 0, 0, 99, 167 )
-	torchFlames3:setImage( RegisterImage( 0xE3F87E34FC86F39 ) )
+	torchFlames3:setImage( RegisterImage( "uie_ui_icon_callingcards_zm_prestige_allseeingeye_pyramid_torch_flame" ) )
 	torchFlames3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	torchFlames3:setShaderVector( 0, 0, 5, 0, 0 )
 	torchFlames3:setShaderVector( 1, 10, 0, 0, 0 )
@@ -92,7 +92,7 @@ CoD[0x141F5FCBDC4E50].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.torchFlames3 = torchFlames3
 	
 	local torchFlames4 = LUI.UIImage.new( 0, 0, 298.5, 324.5, 0, 0, 126, 176 )
-	torchFlames4:setImage( RegisterImage( 0xE3F87E34FC86F39 ) )
+	torchFlames4:setImage( RegisterImage( "uie_ui_icon_callingcards_zm_prestige_allseeingeye_pyramid_torch_flame" ) )
 	torchFlames4:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	torchFlames4:setShaderVector( 0, 0, 5, 0, 0 )
 	torchFlames4:setShaderVector( 1, 10, 0, 0, 0 )
@@ -100,7 +100,7 @@ CoD[0x141F5FCBDC4E50].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.torchFlames4 = torchFlames4
 	
 	local torchFlames5 = LUI.UIImage.new( 0, 0, 895.5, 921.5, 0, 0, 115, 165 )
-	torchFlames5:setImage( RegisterImage( 0xE3F87E34FC86F39 ) )
+	torchFlames5:setImage( RegisterImage( "uie_ui_icon_callingcards_zm_prestige_allseeingeye_pyramid_torch_flame" ) )
 	torchFlames5:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	torchFlames5:setShaderVector( 0, 0, 5, 0, 0 )
 	torchFlames5:setShaderVector( 1, 10, 0, 0, 0 )

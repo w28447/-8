@@ -33,7 +33,7 @@
     "sound240": "#hash_631a067190b54300",
     "sound250": "#hash_242aa17124751841",
     "gadgetreadysoundplayer": "#hash_6f5b79a1a69b43a8",
-    "projexplosionsound": "#hash_117d3a361091a4a5",
+    "projexplosionsound": "#exp_semtex_cluster_bomb",
     "tunables1": "#hash_1981acf2c6ae47e1",
     "cacWeaponXCam": "#hash_e602e473c324fc07",
     "sharedWeaponSounds": "#equipment",
@@ -76,7 +76,7 @@
         "#hash_c15b461b7420c6d2",
         "#hash_bb3f97cf646813ac"
     ],
-    "normalImpactFX": "#hash_25bf0d1ebd614ccd",
+    "normalImpactFX": "#grenade_explosion_mini",
     "bounceImpactFX": "#grenade_bounce",
     "dudImpactFX": "#grenade_dud",
     "normalImpactSounds": "#hash_e8e0a97bbbf0b555",

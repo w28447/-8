@@ -41,7 +41,7 @@ CoD.StartMenu_Options_Network_StatusOverview.new = function ( f1_arg0, f1_arg1, 
 	
 	local FirstPartyStateLabel = LUI.UIText.new( 0, 0, 15, 685, 0, 0, 18, 39 )
 	FirstPartyStateLabel:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	FirstPartyStateLabel:setText( Engine[0xF9F1239CFD921FE]( 0x9066173CB0661D3 ) )
+	FirstPartyStateLabel:setText( Engine[0xF9F1239CFD921FE]( "platform/options_network_signed_in" ) )
 	FirstPartyStateLabel:setTTF( "ttmussels_regular" )
 	FirstPartyStateLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	FirstPartyStateLabel:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -50,7 +50,7 @@ CoD.StartMenu_Options_Network_StatusOverview.new = function ( f1_arg0, f1_arg1, 
 	
 	local ServerStateLabel = LUI.UIText.new( 0, 0, 15, 685, 0, 0, 47.5, 68.5 )
 	ServerStateLabel:setRGB( ColorSet.ResistanceHigh.r, ColorSet.ResistanceHigh.g, ColorSet.ResistanceHigh.b )
-	ServerStateLabel:setText( Engine[0xF9F1239CFD921FE]( 0x141786406295A0F ) )
+	ServerStateLabel:setText( Engine[0xF9F1239CFD921FE]( "menu/options_network_cod_connected" ) )
 	ServerStateLabel:setTTF( "ttmussels_regular" )
 	ServerStateLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	self:addElement( ServerStateLabel )
@@ -146,7 +146,7 @@ CoD.StartMenu_Options_Network_StatusOverview.__resetProperties = function ( f6_a
 	f6_arg0.InternetStateLabel:completeAnimation()
 	f6_arg0.ServerStateLabel:setRGB( ColorSet.ResistanceHigh.r, ColorSet.ResistanceHigh.g, ColorSet.ResistanceHigh.b )
 	f6_arg0.ServerStateLabel:setAlpha( 1 )
-	f6_arg0.ServerStateLabel:setText( Engine[0xF9F1239CFD921FE]( 0x141786406295A0F ) )
+	f6_arg0.ServerStateLabel:setText( Engine[0xF9F1239CFD921FE]( "menu/options_network_cod_connected" ) )
 	f6_arg0.FocusBorder:setAlpha( 0 )
 	f6_arg0.FocusBrackets:setLeftRight( 0, 1, -10, 10 )
 	f6_arg0.FocusBrackets:setTopBottom( 0, 1, -10, 10 )
@@ -154,7 +154,7 @@ CoD.StartMenu_Options_Network_StatusOverview.__resetProperties = function ( f6_a
 	f6_arg0.FocusGlow:setAlpha( 0 )
 	f6_arg0.SelectorOverlay:setAlpha( 0.02 )
 	f6_arg0.FirstPartyStateLabel:setAlpha( 1 )
-	f6_arg0.FirstPartyStateLabel:setText( Engine[0xF9F1239CFD921FE]( 0x9066173CB0661D3 ) )
+	f6_arg0.FirstPartyStateLabel:setText( Engine[0xF9F1239CFD921FE]( "platform/options_network_signed_in" ) )
 	f6_arg0.InternetStateLabel:setAlpha( 0 )
 end
 

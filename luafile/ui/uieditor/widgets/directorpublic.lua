@@ -162,8 +162,8 @@ CoD.directorPublic.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 			modelName = "lobbyRoot.lobbyMainMode"
 		} )
 	end, false )
-	WarzoneHostPlayButton.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( 0xA56BF6A96B02984 ) )
-	WarzoneHostPlayButton.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( 0xA56BF6A96B02984 ) )
+	WarzoneHostPlayButton.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( menu/deploy ) )
+	WarzoneHostPlayButton.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( menu/deploy ) )
 	WarzoneHostPlayButton:registerEventHandler( "gain_focus", function ( element, event )
 		local f13_local0 = nil
 		if element.gainFocus then

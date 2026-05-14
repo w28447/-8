@@ -46,7 +46,7 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT32"
                     },
@@ -59,7 +59,7 @@
             }
         },
         {
-            "name": "#hash_22e7ee56fe6a2b7e",
+            "name": "#local_common_addr",
             "arraySize": 0,
             "members": {
                 "name": "#hash_e34a94c0792bab1",
@@ -70,17 +70,17 @@
                         "type": "UINT8"
                     },
                     {
-                        "name": "#hash_4b5ffc955581a19e",
+                        "name": "#public_port",
                         "scrName": "#hash_8d6f1e24",
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_78725a00fca985de",
+                        "name": "#local_addr_count",
                         "scrName": "#hash_207bd54f",
                         "type": "INT32"
                     },
                     {
-                        "name": "#hash_7eeb3b0b30e2921a",
+                        "name": "#public_addr",
                         "scrName": "#hash_7d4e5670",
                         "type": "UINT32"
                     }
@@ -115,7 +115,7 @@
                         "type": "INT64"
                     },
                     {
-                        "name": "#hash_6bdd7ebe59310aa2",
+                        "name": "#match_making_id",
                         "scrName": "#hash_b8bfa824",
                         "type": "UINT64"
                     }
@@ -147,13 +147,13 @@
             }
         },
         {
-            "name": "#hash_44fc45dab2310729",
+            "name": "#local_addrs_array",
             "arraySize": 8,
             "members": {
                 "name": "#hash_c5a2a1d52b4736a",
                 "members": [
                     {
-                        "name": "#hash_1a03a43c6642e4d6",
+                        "name": "#local_port",
                         "scrName": "#hash_d74784cd",
                         "type": "UINT16"
                     },
@@ -166,13 +166,13 @@
             }
         },
         {
-            "name": "#hash_58aa869928d7d892",
+            "name": "#remote_addrs_array",
             "arraySize": 0,
             "members": {
                 "name": "#hash_c5a2a1d52b4736a",
                 "members": [
                     {
-                        "name": "#hash_1a03a43c6642e4d6",
+                        "name": "#local_port",
                         "scrName": "#hash_d74784cd",
                         "type": "UINT16"
                     },
@@ -185,7 +185,7 @@
             }
         },
         {
-            "name": "#hash_6089290346f7b59b",
+            "name": "#nat_trav_attempts",
             "arraySize": 0,
             "members": {
                 "name": "#hash_7b68e004c189468",
@@ -196,7 +196,7 @@
                         "type": "BOOL"
                     },
                     {
-                        "name": "#hash_2602c209d2a3de6a",
+                        "name": "#dst_port",
                         "scrName": "#hash_f6f189a",
                         "type": "UINT16"
                     },
@@ -206,17 +206,17 @@
                         "type": "UINT8"
                     },
                     {
-                        "name": "#hash_32e3f837e2ac1c9b",
+                        "name": "#ms_since_start",
                         "scrName": "#hash_aaa06d3e",
                         "type": "UINT32"
                     },
                     {
-                        "name": "#hash_3e5e3237821d5d2d",
+                        "name": "#src_port",
                         "scrName": "#hash_fe1a5bd5",
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_63d6798714c8e5f6",
+                        "name": "#dst_addr",
                         "scrName": "#hash_911b5346",
                         "type": "UINT32"
                     },
@@ -229,7 +229,7 @@
             }
         },
         {
-            "name": "#hash_64b3fe339e2f8e7d",
+            "name": "#remote_common_addr",
             "arraySize": 0,
             "members": {
                 "name": "#hash_e34a94c0792bab1",
@@ -240,17 +240,17 @@
                         "type": "UINT8"
                     },
                     {
-                        "name": "#hash_4b5ffc955581a19e",
+                        "name": "#public_port",
                         "scrName": "#hash_8d6f1e24",
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_78725a00fca985de",
+                        "name": "#local_addr_count",
                         "scrName": "#hash_207bd54f",
                         "type": "INT32"
                     },
                     {
-                        "name": "#hash_7eeb3b0b30e2921a",
+                        "name": "#public_addr",
                         "scrName": "#hash_7d4e5670",
                         "type": "UINT32"
                     }
@@ -258,7 +258,7 @@
             }
         },
         {
-            "name": "#hash_66f494620905df80",
+            "name": "#nat_trav_result",
             "arraySize": 0,
             "members": {
                 "name": "#hash_35c568a786416877",
@@ -274,7 +274,7 @@
                         "type": "UINT32"
                     },
                     {
-                        "name": "#hash_22f16d87b0d38c49",
+                        "name": "#stun_addr",
                         "scrName": "#hash_13e7ae76",
                         "type": "UINT32"
                     },
@@ -284,32 +284,32 @@
                         "type": "BOOL"
                     },
                     {
-                        "name": "#hash_52521ecd1275d391",
+                        "name": "#real_port",
                         "scrName": "#hash_ea8ac676",
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_577f8ff7bcc50665",
+                        "name": "#stage_3_tries",
                         "scrName": "#hash_1aff9e06",
                         "type": "UINT8"
                     },
                     {
-                        "name": "#hash_70259f4fbb3f7a05",
+                        "name": "#real_addr",
                         "scrName": "#hash_6afabc5",
                         "type": "UINT32"
                     },
                     {
-                        "name": "#hash_704803f9a40e1995",
+                        "name": "#stun_port",
                         "scrName": "#hash_b5960f",
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_73d00e385e338d72",
+                        "name": "#stage_2_tries",
                         "scrName": "#hash_c281c2d8",
                         "type": "UINT8"
                     },
                     {
-                        "name": "#hash_7e8eac6f87a5c1ef",
+                        "name": "#stage_1_tries",
                         "scrName": "#hash_3f09299b",
                         "type": "UINT8"
                     }

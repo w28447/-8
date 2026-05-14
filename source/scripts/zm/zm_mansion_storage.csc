@@ -24,13 +24,13 @@ function init()
     serverfield::register( "billiard_ball_sunk_sf", 8000, getminbitcountfornum( 9 ), "int" );
     clientfield::register( "world", "" + #"hash_354bb8ac5de6640a", 8000, getminbitcountfornum( 9 ), "int", &function_954a27a2, 0, 0 );
     clientfield::register( "world", "" + #"hash_75594bca6b54706e", 8000, 1, "int", &function_68e49445, 0, 0 );
-    clientfield::register( "world", "" + #"hash_2c115514da4cee51", 17000, 1, "int", &function_2dbadedf, 0, 0 );
+    clientfield::register( "world", "" + #"force_stream_silver_bullets", 17000, 1, "int", &force_stream_silver_bullets, 0, 0 );
     clientfield::register( "scriptmover", "" + #"barrel_drip", 8000, 1, "counter", &function_3e37bb63, 0, 0 );
     clientfield::register( "scriptmover", "" + #"barrel_spray", 8000, 1, "counter", &function_5e130882, 0, 0 );
     level._effect[ #"barrel_drip" ] = #"hash_657c3b5d3d9bfdfa";
     level._effect[ #"barrel_splash" ] = #"hash_42bcb312df258591";
-    level._effect[ #"hash_6a63e8eb86cc88e2" ] = #"hash_5934158bcfb9c884";
-    level._effect[ #"hash_345c6b60fb9b8682" ] = #"hash_782ae54493a94c4a";
+    level._effect[ #"barrel_pray" ] = #"hash_5934158bcfb9c884";
+    level._effect[ #"billiard_ball_disappear" ] = #"hash_782ae54493a94c4a";
 }
 
 // Namespace mansion_storage/zm_mansion_storage
@@ -57,7 +57,7 @@ function function_3e37bb63( localclientnum, oldval, newval, bnewent, binitialsna
 // Size: 0xb4
 function function_5e130882( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    self.fx = util::playfxontag( localclientnum, level._effect[ #"hash_6a63e8eb86cc88e2" ], self, "tag_origin" );
+    self.fx = util::playfxontag( localclientnum, level._effect[ #"barrel_pray" ], self, "tag_origin" );
     wait 3;
     
     if ( isdefined( self ) && isdefined( self.fx ) )
@@ -149,7 +149,7 @@ function function_eb218e8d()
         
         while ( true )
         {
-            if ( getdvarint( #"hash_3dcf262f16faced0", 0 ) )
+            if ( getdvarint( #"billiard_ball_debug", 0 ) )
             {
                 v_color = function_8a8a409b( self ) ? ( 0, 1, 0 ) : ( 1, 0, 0 );
                 print3d( self.origin + ( 0, 0, self.script_int ), "<dev string:x38>" + self.script_int, v_color, undefined, 0.5 );
@@ -199,7 +199,7 @@ function function_68e49445( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0x8ae6bd61, Offset: 0x1038
 // Size: 0x7c
-function function_2dbadedf( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function force_stream_silver_bullets( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( newval )
     {
@@ -225,7 +225,7 @@ function function_954a27a2( localclientnum, oldval, newval, bnewent, binitialsna
         {
             if ( var_4fe0b0ee.origin[ 2 ] >= 27 )
             {
-                playfxondynent( level._effect[ #"hash_345c6b60fb9b8682" ], var_4fe0b0ee );
+                playfxondynent( level._effect[ #"billiard_ball_disappear" ], var_4fe0b0ee );
             }
             
             setdynentenabled( var_4fe0b0ee, 0 );

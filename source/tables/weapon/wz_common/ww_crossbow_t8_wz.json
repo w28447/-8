@@ -3,7 +3,7 @@
     "baseWeapon": "#ww_crossbow_t8",
     "displayname": "#zmweapon/ww_crossbow_t8",
     "weapon70": "#ww_crossbow_t8",
-    "streamkey": "#hash_13305efb13169f3b",
+    "streamkey": "#ww_crossbow_t8_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -90,7 +90,7 @@
     "fx_f00": "#hash_6c7ae381de64a8d8",
     "fx_f88": "#hash_2b4f0b7b45b86a3d",
     "normalImpactFX": "#hash_448dd8dc0d45c84d",
-    "normalImpactSounds": "#hash_39bfdec1ee94b227",
-    "bounceImpactSounds": "#hash_39bfdec1ee94b227",
-    "dudImpactSounds": "#hash_39bfdec1ee94b227"
+    "normalImpactSounds": "#ww_crossbow_impact",
+    "bounceImpactSounds": "#ww_crossbow_impact",
+    "dudImpactSounds": "#ww_crossbow_impact"
 }

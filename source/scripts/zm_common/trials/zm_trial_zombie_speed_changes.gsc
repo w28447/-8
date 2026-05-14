@@ -59,7 +59,7 @@ function private on_end( round_reset )
 // Size: 0x220
 function private function_4458377c()
 {
-    level endon( #"hash_7646638df88a3656" );
+    level endon( #"trial_round_end" );
     
     while ( true )
     {

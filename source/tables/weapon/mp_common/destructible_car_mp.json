@@ -3,7 +3,7 @@
     "baseWeapon": "#destructible_car",
     "displayname": "#weapon/m2fraggrenade",
     "weapon70": "#destructible_car",
-    "streamkey": "#hash_5341d3a07008958",
+    "streamkey": "#destructible_car_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

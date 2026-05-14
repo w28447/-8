@@ -3,7 +3,7 @@
     "baseWeapon": "#ability_dog",
     "displayname": "#dog/name",
     "weapon70": "#ability_dog",
-    "streamkey": "#hash_1d9b515d5e005eaa",
+    "streamkey": "#ability_dog_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",
@@ -34,7 +34,7 @@
     "tunables1": "#ability_dog_tunables_mp",
     "cacWeaponXCam": "#ui_cam_cac_equip_blackhat",
     "gestureTables": [
-        "#hash_2c75f3bef8443438"
+        "#gestable_dog_calling"
     ],
     "#hash_2e4a8800": "#ability_dog_mp_scoreevents",
     "viewmodel": [

@@ -46,7 +46,7 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT32"
                     },
@@ -170,12 +170,12 @@
             "type": "UINT32"
         },
         {
-            "name": "#hash_4b57cc6a0164c1b2",
+            "name": "#start_pos_y",
             "scrName": "#hash_1ff15d37",
             "type": "FLOAT"
         },
         {
-            "name": "#hash_4b57cd6a0164c365",
+            "name": "#start_pos_x",
             "scrName": "#hash_2dbaf8ca",
             "type": "FLOAT"
         },
@@ -205,12 +205,12 @@
             "type": "UINT16"
         },
         {
-            "name": "#hash_6373313e132d49b8",
+            "name": "#end_pos_x",
             "scrName": "#hash_16f7d5d0",
             "type": "FLOAT"
         },
         {
-            "name": "#hash_6373323e132d4b6b",
+            "name": "#end_pos_y",
             "scrName": "#hash_4ba3155",
             "type": "FLOAT"
         },

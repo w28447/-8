@@ -39,7 +39,7 @@ Lobby.Hopper.UpdateLobbyData = function ( f1_arg0, f1_arg1 )
 		Lobby.Timer.HostingLobby( {
 			controller = f1_local4,
 			lobbyType = f1_local3.LobbyType,
-			mainMode = f1_local3[0xEB7DDC7F079D51B],
+			mainMode = f1_local3["mainmode"],
 			lobbyTimerType = f1_local3[0x558B67A321D1120]
 		} )
 	else

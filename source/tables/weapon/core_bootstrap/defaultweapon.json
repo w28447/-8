@@ -43,7 +43,7 @@
     "tunables1": "#defaultweapon_tunables",
     "sharedWeaponSounds": "#default",
     "tracers": [
-        "#hash_5f1316a3f062283"
+        "#defaulttracer"
     ],
     "viewmodel": [
         "#viewmodel_default"

@@ -351,7 +351,7 @@ CoD.PaintshopControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.FreeScale = FreeScale
 	
 	local Move = CoD.PaintshopButtonPrompt.new( f1_arg0, f1_arg1, 0, 0, 20, 420, 0, 0, 33, 79 )
-	Move.label:setText( Engine[0xF9F1239CFD921FE]( 0x507A3A71D9218BE ) )
+	Move.label:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_move_emblem" ) )
 	Move:subscribeToGlobalModel( f1_arg1, "Controller", "move_left_stick_button_image", function ( model )
 		local f33_local0 = model:get()
 		if f33_local0 ~= nil then

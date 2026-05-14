@@ -15,7 +15,7 @@
     "shouldCullDistance": true,
     "cullDistance": 9999,
     "hasLowAmmoState": false,
-    "waypointImage": "#hash_23b2f139a0d64182",
+    "waypointImage": "#ui_icon_waypoint_defend_player",
     "unk30": 300,
     "bundle": {
         "hash_10b16ca8": 3,

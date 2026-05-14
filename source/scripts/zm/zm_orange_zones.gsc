@@ -122,8 +122,8 @@ function zone_init()
     else
     {
         zm_zonemgr::add_adjacent_zone( "lagoon", "sunken_path", #"hash_48e7d63b38c5e2da", 0 );
-        zm_zonemgr::add_adjacent_zone( "main_entrance", "outer_walkway", #"hash_52d967f4fc8b12fc", 0 );
-        zm_zonemgr::add_adjacent_zone( "outer_walkway", "loading_platform", #"hash_52d967f4fc8b12fc", 0 );
+        zm_zonemgr::add_adjacent_zone( "main_entrance", "outer_walkway", #"outer_walkway_open", 0 );
+        zm_zonemgr::add_adjacent_zone( "outer_walkway", "loading_platform", #"outer_walkway_open", 0 );
         zm_zonemgr::add_adjacent_zone( "beach", "lighthouse_cove", #"hash_38c97197db36afb7", 0 );
     }
     
@@ -426,109 +426,109 @@ function get_location_string( e_player, str_zone )
     {
         case #"docks_1":
         case #"docks_2":
-            str_display = #"hash_99011c41f3d5380";
+            str_display = #"zm_orange/location_docks";
             break;
         case #"boathouse":
-            str_display = #"hash_6b2f9edfc77ea9b2";
+            str_display = #"zm_orange/location_boathouse";
             break;
         case #"frozen_crevasse":
-            str_display = #"hash_1e6b498a976cdcb5";
+            str_display = #"zm_orange/location_frozen_crevasse";
             break;
         case #"ice_grotto":
-            str_display = #"hash_3461ddd73c20a747";
+            str_display = #"zm_orange/location_ice_grotto";
             break;
         case #"lighthouse_annex":
-            str_display = #"hash_43a7944f79cf9bf1";
+            str_display = #"zm_orange/location_lighthouse_annex";
             break;
         case #"lagoon":
-            str_display = #"hash_381e2912fb0376dc";
+            str_display = #"zm_orange/location_lagoon";
             break;
         case #"lighthouse_cove":
-            str_display = #"hash_2fb0927a65d8a9e";
+            str_display = #"zm_orange/location_lighthouse_cove";
             break;
         case #"lighthouse_station":
-            str_display = #"hash_1424b8bac646249f";
+            str_display = #"zm_orange/location_lighthouse_station";
             break;
         case #"lighthouse_level_1":
-            str_display = #"hash_7957c402b1b2ef31";
+            str_display = #"zm_orange/location_lighthouse_level_1";
             break;
         case #"lighthouse_level_2":
-            str_display = #"hash_7957c102b1b2ea18";
+            str_display = #"zm_orange/location_lighthouse_level_2";
             break;
         case #"lighthouse_level_3":
-            str_display = #"hash_7957c202b1b2ebcb";
+            str_display = #"zm_orange/location_lighthouse_level_3";
             break;
         case #"lighthouse_level_4":
-            str_display = #"hash_7957c702b1b2f44a";
+            str_display = #"zm_orange/location_lighthouse_level_4";
             break;
         case #"lighthouse_approach":
-            str_display = #"hash_39b4e46fd4bebad5";
+            str_display = #"zm_orange/location_lighthouse_approach";
             break;
         case #"beach":
-            str_display = #"hash_75f05448c75c06f";
+            str_display = #"zm_orange/location_beach";
             break;
         case #"hidden_path":
-            str_display = #"hash_3a98581b802c0296";
+            str_display = #"zm_orange/location_hidden_path";
             break;
         case #"gangway":
-            str_display = #"hash_1797071bcd3e6fe6";
+            str_display = #"zm_orange/location_gangway";
             break;
         case #"stern":
-            str_display = #"hash_4c328e01a462f48a";
+            str_display = #"zm_orange/location_stern";
             break;
         case #"navigation":
-            str_display = #"hash_3d82a67e307a0426";
+            str_display = #"zm_orange/location_navigation";
             break;
         case #"sun_deck":
-            str_display = #"hash_38990c0828e68602";
+            str_display = #"zm_orange/location_sun_deck";
             break;
         case #"bridge":
-            str_display = #"hash_5dbcb178cb1573c1";
+            str_display = #"zm_orange/location_bridge";
             break;
         case #"cargo_hold":
-            str_display = #"hash_335d7ee067ac0e68";
+            str_display = #"zm_orange/location_cargo_hold";
             break;
         case #"artifact_storage":
-            str_display = #"hash_63f7af429c316620";
+            str_display = #"zm_orange/location_artifact_storage";
             break;
         case #"main_deck":
-            str_display = #"hash_75d26f96a738d2a3";
+            str_display = #"zm_orange/location_main_deck";
             break;
         case #"forecastle":
-            str_display = #"hash_3befc74a37bbeb9e";
+            str_display = #"zm_orange/location_forecastle";
             break;
         case #"main_entrance":
-            str_display = #"hash_520e403cdf1ae8";
+            str_display = #"zm_orange/location_main_entrance";
             break;
         case #"security_lobby":
-            str_display = #"hash_19a2493217019135";
+            str_display = #"zm_orange/location_security_lobby";
             break;
         case #"geological_processing":
-            str_display = #"hash_21450c4a4a6646d6";
+            str_display = #"zm_orange/location_geological_processing";
             break;
         case #"upper_catwalk":
-            str_display = #"hash_65457ae6fbfe6c32";
+            str_display = #"zm_orange/location_upper_catwalk";
             break;
         case #"human_infusion":
-            str_display = #"hash_46ef5a594e42c371";
+            str_display = #"zm_orange/location_human_infusion";
             break;
         case #"decontamination":
-            str_display = #"hash_6571eafdcddb13ab";
+            str_display = #"zm_orange/location_decontamination";
             break;
         case #"specimen_storage":
-            str_display = #"hash_12750e3f1d3659e4";
+            str_display = #"zm_orange/location_specimen_storage";
             break;
         case #"loading_platform":
-            str_display = #"hash_4f2b74b3fea599ba";
+            str_display = #"zm_orange/location_loading_platform";
             break;
         case #"outer_walkway":
-            str_display = #"hash_778497a569854310";
+            str_display = #"zm_orange/location_outer_walkway";
             break;
         case #"ice_floe":
-            str_display = #"hash_550cd5295ec40e4a";
+            str_display = #"zm_orange/location_ice_floe";
             break;
         case #"sunken_path":
-            str_display = #"hash_18aaabdeba54214a";
+            str_display = #"zm_orange/location_sunken_path";
             break;
         default:
             str_display = undefined;
@@ -544,21 +544,21 @@ function get_location_string( e_player, str_zone )
 // Size: 0x2dc
 function function_17ac86f7()
 {
-    self thread zm_audio::function_713192b1( #"hash_6b2f9edfc77ea9b2", #"boathouse" );
-    self thread zm_audio::function_713192b1( #"hash_2fb0927a65d8a9e", #"lighthouse_cove" );
-    self thread zm_audio::function_713192b1( #"hash_75f05448c75c06f", #"beach" );
-    self thread zm_audio::function_713192b1( #"hash_4c328e01a462f48a", #"ship_stern" );
-    self thread zm_audio::function_713192b1( #"hash_5dbcb178cb1573c1", #"ship_bridge" );
-    self thread zm_audio::function_713192b1( #"hash_38990c0828e68602", #"ship_bridge" );
-    self thread zm_audio::function_713192b1( #"hash_75d26f96a738d2a3", #"ship_main" );
-    self thread zm_audio::function_713192b1( #"hash_335d7ee067ac0e68", #"ship_cargo" );
-    self thread zm_audio::function_713192b1( #"hash_520e403cdf1ae8", #"facility_main" );
-    self thread zm_audio::function_713192b1( #"hash_12750e3f1d3659e4", #"facility_specimen" );
-    self thread zm_audio::function_713192b1( #"hash_6571eafdcddb13ab", #"hash_2781f0de96fa6e4e" );
-    self thread zm_audio::function_713192b1( #"hash_46ef5a594e42c371", #"facility_infusion" );
-    self thread zm_audio::function_713192b1( #"hash_65457ae6fbfe6c32", #"facility_infusion" );
-    self thread zm_audio::function_713192b1( #"hash_21450c4a4a6646d6", #"facility_geological" );
-    self thread function_f7a190a8( undefined, 15, #"hash_99011c41f3d5380", #"docks" );
+    self thread zm_audio::function_713192b1( #"zm_orange/location_boathouse", #"boathouse" );
+    self thread zm_audio::function_713192b1( #"zm_orange/location_lighthouse_cove", #"lighthouse_cove" );
+    self thread zm_audio::function_713192b1( #"zm_orange/location_beach", #"beach" );
+    self thread zm_audio::function_713192b1( #"zm_orange/location_stern", #"ship_stern" );
+    self thread zm_audio::function_713192b1( #"zm_orange/location_bridge", #"ship_bridge" );
+    self thread zm_audio::function_713192b1( #"zm_orange/location_sun_deck", #"ship_bridge" );
+    self thread zm_audio::function_713192b1( #"zm_orange/location_main_deck", #"ship_main" );
+    self thread zm_audio::function_713192b1( #"zm_orange/location_cargo_hold", #"ship_cargo" );
+    self thread zm_audio::function_713192b1( #"zm_orange/location_main_entrance", #"facility_main" );
+    self thread zm_audio::function_713192b1( #"zm_orange/location_specimen_storage", #"facility_specimen" );
+    self thread zm_audio::function_713192b1( #"zm_orange/location_decontamination", #"hash_2781f0de96fa6e4e" );
+    self thread zm_audio::function_713192b1( #"zm_orange/location_human_infusion", #"facility_infusion" );
+    self thread zm_audio::function_713192b1( #"zm_orange/location_upper_catwalk", #"facility_infusion" );
+    self thread zm_audio::function_713192b1( #"zm_orange/location_geological_processing", #"facility_geological" );
+    self thread function_f7a190a8( undefined, 15, #"zm_orange/location_docks", #"docks" );
 }
 
 // Namespace zm_orange_zones/zm_orange_zones

@@ -8,7 +8,7 @@
     "spawnInfluencers1": "#none",
     "spawnInfluencers2": "#none",
     "deathFx": "#hash_11c84a4f2b0183f9",
-    "deathFxSound": "#hash_626995667a4ff5c",
+    "deathFxSound": "#exp_veh_chopper",
     "skidSpeedMin": 100,
     "skidSpeedMax": 600,
     "peelSpeedMax": 600,

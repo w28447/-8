@@ -23,7 +23,7 @@ CoD.PrestigeUtility.BASE_WZ_PRESTIGE_CALLING_CARD_ID = 694
 CoD.PrestigeUtility.PrestigeStrings = {
 	[0x5741301630398C1] = {
 		default = 0x4FA6EF886E18DDE,
-		zm = 0x481131AE361D3EA,
+		zm = "menu/zm_prestige_fresh_start_desc",
 		wz = 0x4FA6EF886E18DDE
 	},
 	[0xDBA7AA206A2D3FB] = {
@@ -33,7 +33,7 @@ CoD.PrestigeUtility.PrestigeStrings = {
 	},
 	[0xD7BA68A227B09B3] = {
 		default = 0xC7B58DE94790471,
-		zm = 0x93DDE94AFD8A4FD,
+		zm = "menu/zm_prestige_mode_locked_hint",
 		wz = 0xA4263C3A9043A6D
 	},
 	[0xB0D02EE8BF8B029] = {
@@ -468,7 +468,7 @@ CoD.PrestigeUtility.GetMasterPrestigeCard = function ( f21_arg0, f21_arg1 )
 	if f21_local0 ~= f21_local1 then
 		return nil
 	else
-		local f21_local2 = Engine[0xF9F1239CFD921FE]( 0xEBE8DFCB123DA37, f21_local1 )
+		local f21_local2 = Engine[0xF9F1239CFD921FE]( "class/prestige_master_unlock_desc", f21_local1 )
 		local f21_local3 = CoD.PrestigeUtility.GetBackgroundIdByPLevel( f21_arg0, f21_local1, f21_arg1 )
 		return {
 			models = {
@@ -991,10 +991,10 @@ CoD.PrestigeUtility.GetNextLevelText = function ( f57_arg0, f57_arg1, f57_arg2 )
 	if CoD.PlayerStatsUtility.IsPrestigeMasterForMenu( Engine.CurrentSessionMode(), f57_arg0 ) then
 		f57_local0 = CoD.PlayerStatsUtility.HashStorageLookupForMenu( f57_arg0, {
 			0xD59E8BFAC78A33B,
-			0x82D5F0A666E1010
+			"paragon_rank"
 		} )
 		if CoD.PrestigeUtility.PRESTIGE_MASTER_MAX_RANK <= f57_local0 then
-			return Engine[0xF9F1239CFD921FE]( 0x648FC67DF4BF35E )
+			return Engine[0xF9F1239CFD921FE]( "menu/max_level" )
 		else
 			return ConvertToUpperString( LocalizeIntoString( 0xC10AE96A0B5807E, math.min( f57_local0 + 1, CoD.PrestigeUtility.PRESTIGE_MASTER_MAX_RANK ) + CoD.PrestigeUtility.PRESTIGE_MASTER_DISPLAY_RANK_OFFSET ) )
 		end
@@ -1002,7 +1002,7 @@ CoD.PrestigeUtility.GetNextLevelText = function ( f57_arg0, f57_arg1, f57_arg2 )
 		if IsWarzone() then
 			return Engine[0xF9F1239CFD921FE]( 0xF80010008304EC0 )
 		else
-			return Engine[0xF9F1239CFD921FE]( 0x648FC67DF4BF35E )
+			return Engine[0xF9F1239CFD921FE]( "menu/max_level" )
 		end
 	elseif f57_local1 <= f57_local0 then
 		return ""
@@ -1023,7 +1023,7 @@ CoD.PrestigeUtility.GetNextLevelXPText = function ( f58_arg0, f58_arg1, f58_arg2
 	local f58_local2 = CoD.RankUtility.GetRankCap()
 	if CoD.PlayerStatsUtility.IsPrestigeMasterForMenu( Engine.CurrentSessionMode(), f58_arg0 ) then
 		if CoD.PrestigeUtility.PRESTIGE_MASTER_MAX_RANK <= f58_local1 then
-			return Engine[0xF9F1239CFD921FE]( 0x648FC67DF4BF35E )
+			return Engine[0xF9F1239CFD921FE]( "menu/max_level" )
 		else
 			local f58_local3 = math.min( f58_local1 + 1, CoD.PrestigeUtility.PRESTIGE_MASTER_MAX_RANK )
 			return ConvertToUpperString( LocalizeIntoString( 0xC10AE96A0B5807E, f58_local0 ) )
@@ -1032,7 +1032,7 @@ CoD.PrestigeUtility.GetNextLevelXPText = function ( f58_arg0, f58_arg1, f58_arg2
 		if IsWarzone() then
 			return Engine[0xF9F1239CFD921FE]( 0xF80010008304EC0 )
 		else
-			return Engine[0xF9F1239CFD921FE]( 0x648FC67DF4BF35E )
+			return Engine[0xF9F1239CFD921FE]( "menu/max_level" )
 		end
 	end
 	local f58_local3 = nil
@@ -1057,7 +1057,7 @@ end
 local f0_local0 = {
 	SPECIALISTS = {
 		displayText = "menu/specialists",
-		description = 0x840DDF6BE6B0F38,
+		description = "menu/permanent_unlocks_specialists_desc",
 		image = "t7_icon_pbt_mp_battery_head1_skin1_rwd",
 		action = OpenChooseCharacterLoadout,
 		param = ""
@@ -1084,21 +1084,21 @@ local f0_local0 = {
 		param = CoD.PrestigeUtility.ContentCategory.TACTICAL
 	},
 	PERK1 = {
-		displayText = 0xCC26359EAAED27A,
-		description = 0xEA29654F1DC4ACB,
+		displayText = "mpui/perk1",
+		description = "menu/permanent_unlocks_perk1_desc",
 		image = "t7_hud_perk_jetcharge_rwd",
 		action = OpenPermanentUnlockCategoryMenu,
 		param = CoD.PrestigeUtility.ContentCategory.PERK1
 	},
 	PERK2 = {
-		displayText = 0xCC26259EAAED0C7,
-		description = 0xDFED4FA3CF1FC40,
+		displayText = "mpui/perk2",
+		description = "menu/permanent_unlocks_perk2_desc",
 		image = "t7_hud_perk_fasthands_rwd",
 		action = OpenPermanentUnlockCategoryMenu,
 		param = CoD.PrestigeUtility.ContentCategory.PERK2
 	},
 	PERK3 = {
-		displayText = 0xCC26159EAAECF14,
+		displayText = "mpui/perk3",
 		description = 0x45E54E8EAF5FE1D,
 		image = "t7_hud_perk_gungho_rwd",
 		action = OpenPermanentUnlockCategoryMenu,
@@ -1289,7 +1289,7 @@ CoD.PrestigeUtility.GetWZRewardsForRank = function ( f67_arg0, f67_arg1, f67_arg
 	}
 	local f67_local10
 	if f67_local4 > 0 then
-		f67_local10 = Engine[0xF9F1239CFD921FE]( 0x70AA86CA0BD5920, f67_local4 )
+		f67_local10 = Engine[0xF9F1239CFD921FE]( "menu/merits_n", f67_local4 )
 		if not f67_local10 then
 		
 		else
@@ -1352,7 +1352,7 @@ CoD.PrestigeUtility.GetRewardsForRank = function ( f68_arg0, f68_arg1, f68_arg2,
 		local f68_local8 = CoD.PrestigeUtility.SpecialLoadoutRewards[f68_local23.rewardName]
 		if f68_local8 ~= nil then
 			local f68_local9 = f68_local8.index
-			if not f68_local1 or not 0x9EEE28789FE067A then
+			if not f68_local1 or not "zm_default_loadouts" then
 				local f68_local10 = LuaUtils.IsArenaMode()
 				local f68_local11 = 0x4FF2B60D157BBB2
 				local f68_local12 = 0x705A80062BD09C2
@@ -1400,7 +1400,7 @@ CoD.PrestigeUtility.GetRewardsForRank = function ( f68_arg0, f68_arg1, f68_arg2,
 									goto basicblock_27:
 								end
 							end
-							f68_local21 = f68_local15[0xC9C4F192EAB4DCD]
+							f68_local21 = f68_local15["customclassname"]
 						end
 					end
 					f68_local17 = f68_local15[0xF31137FF783E939]
@@ -1412,7 +1412,7 @@ CoD.PrestigeUtility.GetRewardsForRank = function ( f68_arg0, f68_arg1, f68_arg2,
 			local f68_local9 = CoD.CACUtility.GetUnlockableItemTable()
 			f68_local9 = f68_local9[f68_local7]
 			local f68_local13 = f68_local2 or Engine[0xD876F030270CB95]( f68_arg0, f68_arg1, Engine[0xE12950F85CC3F92]( f68_arg1, f68_local7 ) )
-			if f68_local1 and f68_local9.nameHash == 0xA9DD31E84AAAB4E then
+			if f68_local1 and f68_local9.nameHash == "pistol_topbreak_t8" then
 				f68_local13 = true
 			end
 			table.insert( f68_local0, {
@@ -1603,7 +1603,7 @@ DataSources.LevelRewardLoadoutInfo = ListHelper_SetupDataSource( "LevelRewardLoa
 	local f71_local6 = CoD.PrestigeUtility.GetPrestigeGameMode()
 	local f71_local7 = CoD.PrestigeUtility.SpecialLoadoutRewards[f71_local5]
 	local f71_local8 = f71_local7.index
-	if not f71_local1 or not 0x9EEE28789FE067A then
+	if not f71_local1 or not "zm_default_loadouts" then
 		local f71_local9 = LuaUtils.IsArenaMode()
 		local f71_local10 = 0x4FF2B60D157BBB2
 		local f71_local11 = 0x705A80062BD09C2
@@ -1626,7 +1626,7 @@ DataSources.LevelRewardLoadoutInfo = ListHelper_SetupDataSource( "LevelRewardLoa
 				end
 				if f71_local14.specialties_2 then
 					for f71_local18, f71_local19 in ipairs( f71_local14.specialties_2 ) do
-						f71_local3( f71_local19[0x340308F6832282F], Enum[0x6EB546760F890D2][0x9AF82A21BAD026D], f71_local6 )
+						f71_local3( f71_local19["specialty"], Enum[0x6EB546760F890D2][0x9AF82A21BAD026D], f71_local6 )
 					end
 				end
 			else
@@ -1641,7 +1641,7 @@ DataSources.LevelRewardLoadoutInfo = ListHelper_SetupDataSource( "LevelRewardLoa
 				end
 				if f71_local14.bonuscards then
 					for f71_local18, f71_local19 in ipairs( f71_local14.bonuscards ) do
-						f71_local3( f71_local19[0x84B95474A4F22DA], Enum[0x6EB546760F890D2][0x1A949B83CC070B0], f71_local6 )
+						f71_local3( f71_local19["bonuscard"], Enum[0x6EB546760F890D2][0x1A949B83CC070B0], f71_local6 )
 					end
 				end
 			end
@@ -1807,7 +1807,7 @@ CoD.OverlayUtility.AddSystemOverlay( "PrestigeFreshStart1", {
 CoD.OverlayUtility.AddSystemOverlay( "PrestigeFreshStart2", {
 	menuName = "SystemOverlay_Full",
 	frameWidget = "CoD.systemOverlay_Prestige",
-	title = Engine[0xF9F1239CFD921FE]( 0xE600BD476A84DE9 ),
+	title = Engine[0xF9F1239CFD921FE]( "menu/are_you_sure" ),
 	subtitle = Engine[0xF9F1239CFD921FE]( 0xEA01E48F3DF7660 ),
 	description = Engine[0xF9F1239CFD921FE]( CoD.PrestigeUtility.GetStringForMode( 0xDBA7AA206A2D3FB ) ),
 	supportText = Engine[0xF9F1239CFD921FE]( 0xECA1CDC726D1BD4 ),
@@ -1854,7 +1854,7 @@ CoD.OverlayUtility.AddSystemOverlay( "PrestigeMasterNotification", {
 		if CoD.isZombie == true then
 			return Engine[0xF9F1239CFD921FE]( 0x2F1A76D4186CCC5 )
 		else
-			return Engine[0xF9F1239CFD921FE]( 0x122E59E4E76F889 )
+			return Engine[0xF9F1239CFD921FE]( "menu/prestige_master_notification" )
 		end
 	end,
 	image = function ( f98_arg0 )

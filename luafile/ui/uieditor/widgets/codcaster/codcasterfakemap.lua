@@ -19,7 +19,7 @@ CoD.CodCasterFakeMap.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	self.Map = Map
 	
 	local ObjA = LUI.UIImage.new( 0, 0, 115, 163, 0, 0, 451.5, 499.5 )
-	ObjA:setImage( RegisterImage( 0x24C57F8DB0BFCE6 ) )
+	ObjA:setImage( RegisterImage( "t7_hud_waypoints_neutral_new_a_mini" ) )
 	ObjA:subscribeToGlobalModel( f1_arg1, "TeamIdentity", "team1.teamColor", function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then
@@ -47,7 +47,7 @@ CoD.CodCasterFakeMap.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local Friendly1 = LUI.UIImage.new( 0, 0, 357, 405, 0, 0, 467, 515 )
 	Friendly1:setZRot( -29 )
-	Friendly1:setImage( RegisterImage( 0x5AE9DCC3F499F1B ) )
+	Friendly1:setImage( RegisterImage( "t7_hud_waypoints_compassping_enemydirectional" ) )
 	Friendly1:subscribeToGlobalModel( f1_arg1, "TeamIdentity", "team1.teamColor", function ( model )
 		local f4_local0 = model:get()
 		if f4_local0 ~= nil then
@@ -83,7 +83,7 @@ CoD.CodCasterFakeMap.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local Enemy1 = LUI.UIImage.new( 0, 0, 474, 522, 0, 0, 324, 372 )
 	Enemy1:setZRot( 110 )
-	Enemy1:setImage( RegisterImage( 0x5AE9DCC3F499F1B ) )
+	Enemy1:setImage( RegisterImage( "t7_hud_waypoints_compassping_enemydirectional" ) )
 	Enemy1:subscribeToGlobalModel( f1_arg1, "TeamIdentity", "team2.teamColor", function ( model )
 		local f7_local0 = model:get()
 		if f7_local0 ~= nil then
@@ -95,7 +95,7 @@ CoD.CodCasterFakeMap.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local Enemy2 = LUI.UIImage.new( 0, 0, 701, 749, 0, 0, 462, 510 )
 	Enemy2:setZRot( 90 )
-	Enemy2:setImage( RegisterImage( 0x5AE9DCC3F499F1B ) )
+	Enemy2:setImage( RegisterImage( "t7_hud_waypoints_compassping_enemydirectional" ) )
 	Enemy2:subscribeToGlobalModel( f1_arg1, "TeamIdentity", "team2.teamColor", function ( model )
 		local f8_local0 = model:get()
 		if f8_local0 ~= nil then

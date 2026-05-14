@@ -43,7 +43,7 @@ function preload()
     clientfield::register( "scriptmover", "" + #"hash_5e1264789183cde1", 20000, 1, "int" );
     clientfield::register( "toplayer", "" + #"hash_72a33f6d2cc925c5", 20000, 1, "int" );
     clientfield::register( "toplayer", "" + #"hash_1df297369e47699a", 20000, 1, "counter" );
-    clientfield::register( "toplayer", "" + #"hash_7d631c764117de1e", 20000, 1, "counter" );
+    clientfield::register( "toplayer", "" + #"prime_jump_scare", 20000, 1, "counter" );
     clientfield::register( "toplayer", "" + #"hash_f2d0b920043dbbd", 20000, 1, "counter" );
     clientfield::register( "toplayer", "" + #"delete_model", 20000, 1, "counter" );
     callback::on_spawned( &function_ba51762d );
@@ -95,7 +95,7 @@ function init_quests()
     zm_sq::register( #"mee_mixed", #"step_1", #"mee_mixed_step1", &mee_mixed_step1_setup, &mee_mixed_step1_cleanup );
     level flag::init( #"hash_502f2e83a538c679" );
     level flag::init( #"hash_7346ae8e42a74ce6" );
-    zm_sq::register( #"jump_scare", #"step_1", #"hash_3203b932029a4e0b", &jump_scare, &jump_scare_cleanup );
+    zm_sq::register( #"jump_scare", #"step_1", #"jump_scare_quest", &jump_scare, &jump_scare_cleanup );
     level flag::wait_till( #"all_players_spawned" );
     
     if ( zm_utility::is_ee_enabled() )
@@ -1487,12 +1487,12 @@ function track_player_eyes()
 {
     self notify( #"track_player_eyes" );
     self endon( #"disconnect", #"track_player_eyes" );
-    level endon( #"hash_10a56459715cd20e", #"insanity_mode_triggered" );
+    level endon( #"reset_all_clocks", #"insanity_mode_triggered" );
     self thread function_cbeb9a33();
     b_saw_the_wth = 0;
     var_616e76c5 = struct::get( "sq_gl_scare", "targetname" );
     waitframe( 1 );
-    self clientfield::increment_to_player( "" + #"hash_7d631c764117de1e", 1 );
+    self clientfield::increment_to_player( "" + #"prime_jump_scare", 1 );
     
     while ( !b_saw_the_wth )
     {

@@ -3,7 +3,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "meansofdeath",
     "name": "mod_melee_weapon_butt",
-    "displayname": "localized17#hash_6aa46dc01ddaa598",
+    "displayname": "localized17#ui/mod_melee_weapon_butt",
     "icon": "image#ui_icon_meansofdeath_melee_weapon_butt",
     "iconlarge": "image#ui_icon_meansofdeath_melee_weapon_butt_xl"
 }

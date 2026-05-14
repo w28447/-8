@@ -1,0 +1,8 @@
+{
+    "name": "#gsocl_zm_enemies",
+    "type": "gamesettingoptioncategory",
+    "bundles": [
+        "#gamesettingoptioncategory/#gsoc_zm_basiczombies",
+        "#gamesettingoptioncategory/#gsoc_zm_specialzombies"
+    ]
+}

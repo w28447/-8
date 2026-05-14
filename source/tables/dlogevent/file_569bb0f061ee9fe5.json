@@ -1,6 +1,6 @@
 {
     "name": "#hash_569bb0f061ee9fe5",
-    "ddlDef": "#hash_578dbeaea88dfab1",
+    "ddlDef": "#gamedata/ddl/generated/dlog_event_lobby_qos.ddl",
     "unk18": 0,
     "unk19": 1,
     "unk1a": 0,
@@ -46,7 +46,7 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT32"
                     },
@@ -85,7 +85,7 @@
     ],
     "members": [
         {
-            "name": "#hash_df1f57dcd0a3e0a",
+            "name": "#game_security_key",
             "scrName": "#hash_1461376e",
             "type": "STRING",
             "len": 48
@@ -117,7 +117,7 @@
             "type": "INT32"
         },
         {
-            "name": "#hash_3155d04edc797a1a",
+            "name": "#min_latency",
             "scrName": "#hash_ba7eb0ec",
             "type": "INT32"
         },
@@ -127,12 +127,12 @@
             "type": "INT32"
         },
         {
-            "name": "#hash_34f06c6eeda8117e",
+            "name": "#game_security_id",
             "scrName": "#hash_fcb5a3f9",
             "type": "UINT64"
         },
         {
-            "name": "#hash_3c83aaf4b52386c5",
+            "name": "#num_available_slots",
             "scrName": "#hash_9905270f",
             "type": "INT32"
         },
@@ -148,7 +148,7 @@
             "len": 32
         },
         {
-            "name": "#hash_460665ebc12305d7",
+            "name": "#is_match_ending_soon",
             "scrName": "#hash_b0d0a2ef",
             "type": "BOOL"
         },
@@ -180,13 +180,13 @@
             "s111u20": true
         },
         {
-            "name": "#hash_70259f4fbb3f7a05",
+            "name": "#real_addr",
             "scrName": "#hash_6afabc5",
             "type": "STRING",
             "len": 64
         },
         {
-            "name": "#hash_756c01933e1c7b2e",
+            "name": "#allow_guests",
             "scrName": "#hash_366d3b43",
             "type": "BOOL"
         },

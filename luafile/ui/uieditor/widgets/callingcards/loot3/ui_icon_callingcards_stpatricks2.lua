@@ -18,12 +18,12 @@ CoD.ui_icon_callingcards_stpatricks2.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	self.bg2 = bg2
 	
 	local bg = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	bg:setImage( RegisterImage( 0x3FEEEC80AA00E0B ) )
+	bg:setImage( RegisterImage( "uie_st_patricks_frame_02_bg2" ) )
 	self:addElement( bg )
 	self.bg = bg
 	
 	local rainbow = LUI.UIImage.new( 0, 0, 113, 473, 0, 0, -169, 191 )
-	rainbow:setImage( RegisterImage( 0xA2637705007A83A ) )
+	rainbow:setImage( RegisterImage( "uie_st_patricks_frame_02_rainbow" ) )
 	rainbow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	rainbow:setShaderVector( 0, 0, 1, 0, 0 )
 	rainbow:setShaderVector( 1, 0, 0, 0, 0 )
@@ -35,7 +35,7 @@ CoD.ui_icon_callingcards_stpatricks2.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local rainbow2 = LUI.UIImage.new( 0, 0, 491.5, 851.5, 0, 0, -169, 191 )
 	rainbow2:setYRot( 180 )
-	rainbow2:setImage( RegisterImage( 0xA2637705007A83A ) )
+	rainbow2:setImage( RegisterImage( "uie_st_patricks_frame_02_rainbow" ) )
 	rainbow2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	rainbow2:setShaderVector( 0, 0, 1, 0, 0 )
 	rainbow2:setShaderVector( 1, 0, 0, 0, 0 )
@@ -51,7 +51,7 @@ CoD.ui_icon_callingcards_stpatricks2.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	self.crack = crack
 	
 	local ruin1 = LUI.UIImage.new( 0, 0, 409.5, 577.5, 0, 0, 11, 227 )
-	ruin1:setImage( RegisterImage( 0x935CE20700DE2E9 ) )
+	ruin1:setImage( RegisterImage( "uie_st_patricks_frame_02_ruin1" ) )
 	self:addElement( ruin1 )
 	self.ruin1 = ruin1
 	
@@ -101,7 +101,7 @@ CoD.ui_icon_callingcards_stpatricks2.__resetProperties = function ( f2_arg0 )
 	f2_arg0.ruin1:setLeftRight( 0, 0, 409.5, 577.5 )
 	f2_arg0.ruin1:setTopBottom( 0, 0, 11, 227 )
 	f2_arg0.ruin1:setScale( 1, 1 )
-	f2_arg0.ruin1:setImage( RegisterImage( 0x935CE20700DE2E9 ) )
+	f2_arg0.ruin1:setImage( RegisterImage( "uie_st_patricks_frame_02_ruin1" ) )
 	f2_arg0.bg:setAlpha( 1 )
 	f2_arg0.rainbow:setShaderVector( 0, 0, 1, 0, 0 )
 	f2_arg0.rainbow:setShaderVector( 1, 0, 0, 0, 0 )
@@ -214,7 +214,7 @@ CoD.ui_icon_callingcards_stpatricks2.__clipsPerState = {
 			f3_arg0.ruin1:setLeftRight( 0, 0, 407.5, 575.5 )
 			f3_arg0.ruin1:setTopBottom( 0, 0, -226, -10 )
 			f3_arg0.ruin1:setScale( 0.8, 0.9 )
-			f3_arg0.ruin1:setImage( RegisterImage( 0x935CB20700DDDD0 ) )
+			f3_arg0.ruin1:setImage( RegisterImage( "uie_st_patricks_frame_02_ruin2" ) )
 			f3_local4( f3_arg0.ruin1 )
 			local f3_local5 = function ( f11_arg0 )
 				local f11_local0 = function ( f12_arg0 )

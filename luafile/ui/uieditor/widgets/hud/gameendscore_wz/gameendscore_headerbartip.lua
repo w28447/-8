@@ -86,13 +86,13 @@ CoD.GameEndScore_HeaderBarTip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.CrossMarkMid = CrossMarkMid
 	
 	local FrameTop2 = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, -1, 15 )
-	FrameTop2:setImage( RegisterImage( 0x5FDC97796CA8AC2 ) )
+	FrameTop2:setImage( RegisterImage( "uie_ui_hud_wz_endgame_frame_short" ) )
 	self:addElement( FrameTop2 )
 	self.FrameTop2 = FrameTop2
 	
 	local FrameBot = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, -15, 1 )
 	FrameBot:setXRot( 180 )
-	FrameBot:setImage( RegisterImage( 0x5FDC97796CA8AC2 ) )
+	FrameBot:setImage( RegisterImage( "uie_ui_hud_wz_endgame_frame_short" ) )
 	self:addElement( FrameBot )
 	self.FrameBot = FrameBot
 	

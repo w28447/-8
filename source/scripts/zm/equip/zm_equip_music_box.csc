@@ -21,7 +21,7 @@ function __init__()
 {
     clientfield::register( "scriptmover", "" + #"music_box_light_fx", 24000, 1, "int", &music_box_light_fx, 0, 0 );
     clientfield::register( "scriptmover", "" + #"music_box_teleport", 1, 1, "int", &music_box_teleport, 0, 0 );
-    clientfield::register( "actor", "" + #"hash_4881cb6bc59fdc49", 24000, 1, "int", &function_e722a4fd, 0, 0 );
+    clientfield::register( "actor", "" + #"music_box_zombie_flame_trail_fx", 24000, 1, "int", &music_box_zombie_flame_trail_fx, 0, 0 );
 }
 
 // Namespace music_box/zm_equip_music_box
@@ -124,7 +124,7 @@ function music_box_teleport( localclientnum, oldval, newval, bnewent, binitialsn
 // Params 7
 // Checksum 0xe1c370d, Offset: 0x698
 // Size: 0xbe
-function function_e722a4fd( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function music_box_zombie_flame_trail_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( isdefined( self ) )
     {

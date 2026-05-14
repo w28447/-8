@@ -12,7 +12,7 @@ CoD[0x6E6DDD790C76F5E].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local Image0 = LUI.UIImage.new( 0, 0, 0, 720, 0, 0, 0, 180 )
-	Image0:setImage( RegisterImage( 0xA0922EE446FF0DC ) )
+	Image0:setImage( RegisterImage( "uie_t7_loot_callingcard_cutie_animals_master_bg" ) )
 	self:addElement( Image0 )
 	self.Image0 = Image0
 	
@@ -28,7 +28,7 @@ CoD[0x6E6DDD790C76F5E].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local Image20 = LUI.UIImage.new( 0, 0, 0, 720, 0, 0, 0, 180 )
 	Image20:setAlpha( 0 )
-	Image20:setImage( RegisterImage( 0x5D694B0BBDACF7C ) )
+	Image20:setImage( RegisterImage( "uie_t7_loot_callingcard_cutie_animals_master_chicks2" ) )
 	self:addElement( Image20 )
 	self.Image20 = Image20
 	

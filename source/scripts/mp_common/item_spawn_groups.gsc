@@ -1,4 +1,4 @@
-#using script_cb32d07c95e5628;
+#using scripts\mp_common\item_spawn_groups_util.gsc;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\struct;
 
@@ -10,7 +10,7 @@
 // Size: 0x8c
 function setup( seedvalue, reset = 1 )
 {
-    if ( !namespace_65181344::is_enabled() )
+    if ( !item_spawn_groups_util::is_enabled() )
     {
         return;
     }
@@ -22,6 +22,6 @@ function setup( seedvalue, reset = 1 )
         level callback::callback( #"hash_11bd48298bde44a4", undefined );
     }
     
-    namespace_65181344::setup_groups( reset );
+    item_spawn_groups_util::setup_groups( reset );
 }
 

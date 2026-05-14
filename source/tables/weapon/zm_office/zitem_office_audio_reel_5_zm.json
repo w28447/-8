@@ -1,7 +1,7 @@
 {
     "name": "#zitem_office_audio_reel_5_zm",
     "baseWeapon": "#zitem_office_audio_reel_5",
-    "streamkey": "#hash_5c6919ec7be5a3f5",
+    "streamkey": "#zitem_office_audio_reel_5_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

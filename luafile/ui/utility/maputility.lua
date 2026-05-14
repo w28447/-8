@@ -125,7 +125,7 @@ CoD.MapUtility.CreateMapListDatasource = function ( f10_arg0, f10_arg1, f10_arg2
 		local f11_local0 = {}
 		local f11_local1 = CoD.LobbyUtility.GetClientList()
 		local f11_local2 = function ( f12_arg0 )
-			if CoD.BaseUtility.IsDvarEnabled( "ui_remove_mp_jungle2_alt" ) and f12_arg0.id == 0x1FBA3911BD65DAA then
+			if CoD.BaseUtility.IsDvarEnabled( "ui_remove_mp_jungle2_alt" ) and f12_arg0.id == "mp_jungle2_alt" then
 				return false
 			else
 				return true

@@ -13,7 +13,7 @@ CoD.MeritReportHeaderText.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local PlaceLabel = LUI.UIText.new( 0, 0, 0, 262, 0, 0, 33, 87 )
 	PlaceLabel:setRGB( 0.92, 0.92, 0.92 )
 	PlaceLabel:setAlpha( 0.5 )
-	PlaceLabel:setText( LocalizeToUpperString( 0x62C273392778D63 ) )
+	PlaceLabel:setText( LocalizeToUpperString( "aar/place" ) )
 	PlaceLabel:setTTF( "default" )
 	PlaceLabel:setLetterSpacing( 4 )
 	PlaceLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

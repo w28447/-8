@@ -3,7 +3,7 @@
     "baseWeapon": "#smg_drum_pistol_t8",
     "displayname": "#weapon/smg_drum_pistol_t8",
     "weapon70": "#smg_drum_pistol_t8",
-    "streamkey": "#hash_3f9a3dd06507e2ae",
+    "streamkey": "#smg_drum_pistol_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",

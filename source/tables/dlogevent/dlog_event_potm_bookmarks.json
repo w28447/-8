@@ -47,7 +47,7 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT32"
                     },
@@ -155,7 +155,7 @@
             "type": "INT32"
         },
         {
-            "name": "#hash_4ecd2e74910a3344",
+            "name": "#mainclientname",
             "scrName": "#hash_9b2cab54",
             "type": "STRING",
             "len": 48
@@ -191,7 +191,7 @@
             "type": "BOOL"
         },
         {
-            "name": "#hash_72fd8192928b978d",
+            "name": "#otherclientname",
             "scrName": "#hash_3b8a36fd",
             "type": "STRING",
             "len": 48

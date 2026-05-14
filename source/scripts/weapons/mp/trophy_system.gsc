@@ -31,6 +31,6 @@ function __init__()
 function function_ccfcde75( trophy, grenade )
 {
     self battlechatter::function_bd715920( trophy.weapon, grenade.owner, grenade.origin, trophy );
-    self contracts::increment_contract( #"hash_369e3fd5caa5145b" );
+    self contracts::increment_contract( #"contract_mp_trophy_system_defense" );
 }
 

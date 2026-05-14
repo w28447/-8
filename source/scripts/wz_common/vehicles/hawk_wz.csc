@@ -35,7 +35,7 @@ function __init__()
     level.var_aac98621 = [];
     level.var_8dfa7ed7 = [];
     
-    for ( ti = 0; ti < level.hawk_settings.bundle.var_48e78794 ; ti++ )
+    for ( ti = 0; ti < level.hawk_settings.bundle.tag_max_targets ; ti++ )
     {
         uifield = remote_missile_target_lockon::register_clientside( hash( "remote_missile_target_lockon" + ti ) );
         level.var_aac98621[ ti ] = uifield;
@@ -181,7 +181,7 @@ function private function_ec2a2906( localclientnum )
     controllermodel = getuimodelforcontroller( localclientnum );
     player_entnum = self getentitynumber();
     
-    for ( ti = 0; ti < level.hawk_settings.bundle.var_48e78794 ; ti++ )
+    for ( ti = 0; ti < level.hawk_settings.bundle.tag_max_targets ; ti++ )
     {
         uifield = level.var_aac98621[ ti ];
         
@@ -213,7 +213,7 @@ function private function_ec2a2906( localclientnum )
 // Size: 0xb2
 function private function_3c760dfe( localclientnum )
 {
-    for ( ti = 0; ti < level.hawk_settings.bundle.var_48e78794 ; ti++ )
+    for ( ti = 0; ti < level.hawk_settings.bundle.tag_max_targets ; ti++ )
     {
         uifield = level.var_aac98621[ ti ];
         
@@ -416,7 +416,7 @@ function private function_9ace0fb6( localclientnum )
             info.state = 1;
             info.var_a7e1d732 = time;
         }
-        else if ( isdefined( info.var_a7e1d732 ) && time - info.var_a7e1d732 < int( bundle.var_fb7c1412 * 1000 ) )
+        else if ( isdefined( info.var_a7e1d732 ) && time - info.var_a7e1d732 < int( bundle.tag_grace_period * 1000 ) )
         {
             info.state = 1;
             info.var_a7e1d732 = time;
@@ -505,7 +505,7 @@ function private update_target_hud( localclientnum, targets )
     var_1dcaad7e = [];
     var_97e92766 = [];
     
-    for ( ti = 0; ti < level.hawk_settings.bundle.var_48e78794 ; ti++ )
+    for ( ti = 0; ti < level.hawk_settings.bundle.tag_max_targets ; ti++ )
     {
         uifield = level.var_aac98621[ ti ];
         entnum = self function_bbb5186f( ti );
@@ -521,9 +521,9 @@ function private update_target_hud( localclientnum, targets )
     
     controllermodel = getuimodelforcontroller( localclientnum );
     bundle = level.hawk_settings.bundle;
-    var_59d4144b = isdefined( bundle.var_59d4144b ) ? bundle.var_59d4144b : 0.5;
-    var_e7c561e2 = isdefined( bundle.var_e7c561e2 ) ? bundle.var_e7c561e2 : 0.3;
-    var_98977cea = isdefined( bundle.var_98977cea ) ? bundle.var_98977cea : 2;
+    lockon_base_scale = isdefined( bundle.lockon_base_scale ) ? bundle.lockon_base_scale : 0.5;
+    lockon_min_scale = isdefined( bundle.lockon_min_scale ) ? bundle.lockon_min_scale : 0.3;
+    lockon_max_scale = isdefined( bundle.lockon_max_scale ) ? bundle.lockon_max_scale : 2;
     now = gettime();
     var_5044f28d = [];
     var_a980942f = self function_364150fd();
@@ -570,9 +570,9 @@ function private update_target_hud( localclientnum, targets )
             screen_origin = project3dto2d( localclientnum, target.origin );
             var_20a99afd = project3dto2d( localclientnum, target.origin + ( 0, 0, 60 ) );
             screen_height = distance2d( screen_origin, var_20a99afd );
-            var_fcd926d5 = var_59d4144b * screen_height / 60;
-            var_fcd926d5 = math::clamp( var_fcd926d5, var_e7c561e2, var_98977cea );
-            setuimodelvalue( self.var_d32addbf[ ti ], var_fcd926d5 );
+            lockon_scale = lockon_base_scale * screen_height / 60;
+            lockon_scale = math::clamp( lockon_scale, lockon_min_scale, lockon_max_scale );
+            setuimodelvalue( self.var_d32addbf[ ti ], lockon_scale );
             var_d7caaee9 = 1;
             
             foreach ( hawk in var_a980942f )
@@ -588,7 +588,7 @@ function private update_target_hud( localclientnum, targets )
         }
     }
     
-    for ( ti = 0; ti < level.hawk_settings.bundle.var_48e78794 ; ti++ )
+    for ( ti = 0; ti < level.hawk_settings.bundle.tag_max_targets ; ti++ )
     {
         if ( !( isdefined( var_5044f28d[ ti ] ) && var_5044f28d[ ti ] ) )
         {
@@ -975,6 +975,6 @@ function private function_bba5f8f7()
     
     function_1eaaceab( targets );
     bundle = level.hawk_settings.bundle;
-    return arraysortclosest( targets, var_ef7046e6, bundle.var_48e78794, 0, bundle.tag_distance );
+    return arraysortclosest( targets, var_ef7046e6, bundle.tag_max_targets, 0, bundle.tag_distance );
 }
 

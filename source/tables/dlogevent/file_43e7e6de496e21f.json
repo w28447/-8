@@ -46,7 +46,7 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT32"
                     },
@@ -86,7 +86,7 @@
                         "type": "INT64"
                     },
                     {
-                        "name": "#hash_6bdd7ebe59310aa2",
+                        "name": "#match_making_id",
                         "scrName": "#hash_b8bfa824",
                         "type": "UINT64"
                     }
@@ -118,28 +118,28 @@
             }
         },
         {
-            "name": "#hash_5d48574fc72fa62a",
+            "name": "#upnp_result",
             "arraySize": 0,
             "members": {
                 "name": "#hash_75410917f1349195",
                 "members": [
                     {
-                        "name": "#hash_2d44b36998706f7",
+                        "name": "#device_addr",
                         "scrName": "#hash_59005aa7",
                         "type": "UINT32"
                     },
                     {
-                        "name": "#hash_1050a7ff012698f8",
+                        "name": "#conf_port_selection_mode",
                         "scrName": "#hash_cc9c2591",
                         "type": "UINT8"
                     },
                     {
-                        "name": "#hash_18cb1067529b24e6",
+                        "name": "#conf_port_pool_size",
                         "scrName": "#hash_322dffee",
                         "type": "UINT32"
                     },
                     {
-                        "name": "#hash_1b0d39256f62ffa4",
+                        "name": "#conf_gateway_addr",
                         "scrName": "#hash_e8215c81",
                         "type": "UINT32"
                     },
@@ -154,67 +154,67 @@
                         "type": "UINT32"
                     },
                     {
-                        "name": "#hash_20b0abc2a13dc92b",
+                        "name": "#conf_response_timeout",
                         "scrName": "#hash_543ac3fa",
                         "type": "FLOAT"
                     },
                     {
-                        "name": "#hash_20f159c75c2c7f4e",
+                        "name": "#conf_connect_timeout",
                         "scrName": "#hash_bd32c3d0",
                         "type": "FLOAT"
                     },
                     {
-                        "name": "#hash_34c5635e8db13ab3",
+                        "name": "#game_port",
                         "scrName": "#hash_c3506e3f",
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_3772e4882104a032",
+                        "name": "#conf_discovery_timeout",
                         "scrName": "#hash_7cc94c69",
                         "type": "FLOAT"
                     },
                     {
-                        "name": "#hash_383e72b38f06fdef",
+                        "name": "#device_port",
                         "scrName": "#hash_5ce2af17",
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_4d8b250da4767eb7",
+                        "name": "#conf_discovery_retries",
                         "scrName": "#hash_13969774",
                         "type": "UINT32"
                     },
                     {
-                        "name": "#hash_4d8e465f87a92f48",
+                        "name": "#discovery_attempts",
                         "scrName": "#hash_b51a6cdc",
                         "type": "UINT32"
                     },
                     {
-                        "name": "#hash_54d04e9876cf3bb2",
+                        "name": "#device_port_status",
                         "scrName": "#hash_49d42a39",
                         "type": "UINT8"
                     },
                     {
-                        "name": "#hash_58d62c257c3f9e9d",
+                        "name": "#conf_run_mode",
                         "scrName": "#hash_8ab2f809",
                         "type": "UINT8"
                     },
                     {
-                        "name": "#hash_5bf606466b9e7bbb",
+                        "name": "#conf_only_use_gateway",
                         "scrName": "#hash_4d59a7e3",
                         "type": "BOOL"
                     },
                     {
-                        "name": "#hash_66838b2bb2c0d307",
+                        "name": "#device_external_addr",
                         "scrName": "#hash_c64b3a4",
                         "type": "UINT32"
                     },
                     {
-                        "name": "#hash_70f2b19ca673843f",
+                        "name": "#device_external_port",
                         "scrName": "#hash_4f9439a0",
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_7a7ad9d0b762f0d3",
+                        "name": "#conf_mapping_retries",
                         "scrName": "#hash_2943ed20",
                         "type": "UINT32"
                     }
@@ -222,7 +222,7 @@
             }
         },
         {
-            "name": "#hash_7c0d8ffa40ab2f1c",
+            "name": "#upnp_discovered_device",
             "arraySize": 4,
             "members": {
                 "name": "#hash_3463e9551f90555",
@@ -233,13 +233,13 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_113c5771496a44ed",
+                        "name": "#notify_server_field",
                         "scrName": "#hash_76b1cf26",
                         "type": "STRING",
                         "len": 128
                     },
                     {
-                        "name": "#hash_32e3f837e2ac1c9b",
+                        "name": "#ms_since_start",
                         "scrName": "#hash_aaa06d3e",
                         "type": "UINT32"
                     },

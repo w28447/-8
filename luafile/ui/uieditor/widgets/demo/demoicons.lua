@@ -28,7 +28,7 @@ CoD.DemoIcons.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	self.Image2 = Image2
 	
 	local Image3 = LUI.UIImage.new( 0.5, 0.5, -189.5, -159.5, 0.5, 0.5, -88, -58 )
-	Image3:setImage( RegisterImage( 0xF49153C89A3CA30 ) )
+	Image3:setImage( RegisterImage( "theater_back" ) )
 	self:addElement( Image3 )
 	self.Image3 = Image3
 	
@@ -38,7 +38,7 @@ CoD.DemoIcons.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	self.Image4 = Image4
 	
 	local Image5 = LUI.UIImage.new( 0.5, 0.5, -85, -55, 0.5, 0.5, -88, -58 )
-	Image5:setImage( RegisterImage( 0x4A75BA93E5118AB ) )
+	Image5:setImage( RegisterImage( "theater_screenshot" ) )
 	self:addElement( Image5 )
 	self.Image5 = Image5
 	
@@ -286,7 +286,7 @@ CoD.DemoIcons.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	self.Image48 = Image48
 	
 	local Image49 = LUI.UIImage.new( 0.5, 0.5, 226, 256, 0.5, 0.5, 0, 30 )
-	Image49:setImage( RegisterImage( 0x14B4FB9A172E592 ) )
+	Image49:setImage( RegisterImage( "theater_save" ) )
 	self:addElement( Image49 )
 	self.Image49 = Image49
 	

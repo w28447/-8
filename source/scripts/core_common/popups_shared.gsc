@@ -625,7 +625,7 @@ function on_player_connect()
                     player = level.players[ 1 ];
                 }
                 
-                level.players[ 0 ] displayteammessagetoall( #"hash_286f843fea185e5", player );
+                level.players[ 0 ] displayteammessagetoall( #"killstreak/destroyed_helicopter", player );
             }
             
             reset = getdvarint( #"scr_popupreset", 1 );
@@ -813,7 +813,7 @@ function displayteammessagetoteam( message, player, team, optionalarg, var_3d4cf
         cur_player.teammessagequeue[ size ].optionalarg = optionalarg;
         cur_player.teammessagequeue[ size ].var_3d4cfe83 = var_3d4cfe83;
         cur_player.teammessagequeue[ size ].var_cf88c427 = var_cf88c427;
-        callback::callback( #"hash_41781454d98b676a", cur_player.teammessagequeue[ size ] );
+        callback::callback( #"popups_team_message", cur_player.teammessagequeue[ size ] );
         cur_player function_eb9328f3();
     }
 }
@@ -857,11 +857,11 @@ function function_921657e4()
         
         if ( isdefined( nextnotifydata.var_3d4cfe83 ) && nextnotifydata.var_3d4cfe83 )
         {
-            notifyhash = #"hash_22b5b25be43ad2d7";
+            notifyhash = #"player_callout_colon";
         }
         else if ( isdefined( nextnotifydata.var_cf88c427 ) && nextnotifydata.var_cf88c427 )
         {
-            notifyhash = #"hash_2a3c608f65b1cead";
+            notifyhash = #"player_callout_number";
         }
         
         if ( isdefined( nextnotifydata.optionalarg ) )

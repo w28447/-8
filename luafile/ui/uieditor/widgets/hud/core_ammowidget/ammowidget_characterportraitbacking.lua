@@ -1213,7 +1213,7 @@ CoD.AmmoWidget_CharacterPortraitBacking.__clipsPerState = {
 			f69_arg0.Timer:setRGB( 1, 0.41, 0 )
 			f69_arg0.Timer:setAlpha( 1 )
 			f69_arg0.Timer:setZRot( 0 )
-			f69_arg0.Timer:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9AD9C230B10C37 ) )
+			f69_arg0.Timer:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_add" ) )
 			f69_arg0.Timer:setShaderVector( 1, 0.5, 0, 0, 0 )
 			f69_arg0.Timer:setShaderVector( 2, 0.5, 0, 0, 0 )
 			f69_arg0.Timer:setShaderVector( 3, 0, 0, 0, 0 )

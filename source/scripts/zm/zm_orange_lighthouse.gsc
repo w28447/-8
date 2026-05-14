@@ -119,7 +119,7 @@ function function_da304f6e( n_state )
 {
     if ( level.e_lighthouse_light.n_light_state !== n_state )
     {
-        level.e_lighthouse_light notify( #"hash_78fc5bbd712046b0" );
+        level.e_lighthouse_light notify( #"lighthouse_state_change" );
         level.e_lighthouse_light.n_light_state = n_state;
         
         if ( !is_trap_active() )
@@ -144,7 +144,7 @@ function function_d85bd834()
             level.e_lighthouse_light thread lighthouse_freakout();
             break;
         case 2:
-            level.e_lighthouse_light thread function_92b102fc();
+            level.e_lighthouse_light thread lighthouse_pap();
             break;
         case 3:
             level.e_lighthouse_light thread function_dbad2f5a();
@@ -158,7 +158,7 @@ function function_d85bd834()
 // Size: 0x84
 function function_dbad2f5a()
 {
-    self endon( #"death", #"hash_78fc5bbd712046b0" );
+    self endon( #"death", #"lighthouse_state_change" );
     level endon( #"end_game" );
     self thread function_1b488412( level.s_power_intro.origin, 1 );
     wait 5;
@@ -171,7 +171,7 @@ function function_dbad2f5a()
 // Size: 0x13e
 function function_1aeab14e()
 {
-    self endon( #"death", #"hash_78fc5bbd712046b0" );
+    self endon( #"death", #"lighthouse_state_change" );
     var_14c78bd5 = 2;
     var_223dfca3 = 0.2;
     var_d4cb0c1 = var_223dfca3 / 2;
@@ -200,7 +200,7 @@ function function_1aeab14e()
 // Size: 0xce
 function lighthouse_freakout()
 {
-    self endon( #"death", #"hash_78fc5bbd712046b0" );
+    self endon( #"death", #"lighthouse_state_change" );
     
     while ( true )
     {
@@ -214,7 +214,7 @@ function lighthouse_freakout()
 // Params 0
 // Checksum 0xf88b934b, Offset: 0xc18
 // Size: 0x84
-function function_92b102fc()
+function lighthouse_pap()
 {
     v_pap = level.var_7d8bf93f.origin;
     self function_1b488412( v_pap, 1 );
@@ -331,7 +331,7 @@ function function_602d605()
     level.e_lighthouse_light clientfield::set( "lighthouse_on", 2 );
     level.e_lighthouse_light.b_blue = 1;
     
-    if ( level flag::get( #"hash_3028604821838259" ) )
+    if ( level flag::get( #"golden_pap_active" ) )
     {
         exploder::exploder( "fxexp_pap_light_icefloe" );
     }
@@ -379,7 +379,7 @@ function function_ad646ef8( n_state )
     
     if ( e_lighthouse.var_58df9892 !== n_state )
     {
-        e_lighthouse notify( #"hash_1aa56851d9d4ec0d" );
+        e_lighthouse notify( #"trap_state_change" );
         e_lighthouse.var_58df9892 = n_state;
         
         /#
@@ -406,7 +406,7 @@ function function_ad646ef8( n_state )
                 array::thread_all( level.var_f92c8836, &function_76adab5e );
                 break;
             case 3:
-                e_lighthouse notify( #"hash_78fc5bbd712046b0" );
+                e_lighthouse notify( #"lighthouse_state_change" );
                 e_lighthouse thread function_71399d9c();
                 break;
             case 4:
@@ -456,7 +456,7 @@ function function_74b930af( n_time, n_state )
 // Size: 0x21c
 function function_71399d9c()
 {
-    self endon( #"death", #"hash_1aa56851d9d4ec0d" );
+    self endon( #"death", #"trap_state_change" );
     
     for ( vh_target = spawner::simple_spawn_single( getent( "virgil", "targetname" ) ); !isdefined( vh_target ) ; vh_target = spawner::simple_spawn_single( getent( "virgil", "targetname" ) ) )
     {
@@ -572,7 +572,7 @@ function function_56b9aca4( e_activator )
 // Size: 0x7c
 function function_72ff128e( v_target )
 {
-    self endon( #"death", #"hash_1aa56851d9d4ec0d" );
+    self endon( #"death", #"trap_state_change" );
     self function_1b488412( v_target, 1 );
     self waittill( #"rotatedone" );
     level thread function_ad646ef8( 6 );
@@ -584,7 +584,7 @@ function function_72ff128e( v_target )
 // Size: 0x74
 function shoot_trap_target( v_target, e_activator )
 {
-    self endon( #"death", #"hash_1aa56851d9d4ec0d" );
+    self endon( #"death", #"trap_state_change" );
     wait 0.5;
     trigger_trap_explosion( v_target, e_activator );
     level thread function_ad646ef8( 7 );
@@ -655,7 +655,7 @@ function function_27304b98( var_a5a067c5, var_a75e9b3b )
 // Size: 0xdc
 function function_ef69a891( var_a5a067c5, e_activator )
 {
-    self endon( #"death", #"hash_1aa56851d9d4ec0d" );
+    self endon( #"death", #"trap_state_change" );
     e_target = var_a5a067c5 function_56b9aca4( e_activator );
     
     if ( !isdefined( e_target ) )
@@ -679,7 +679,7 @@ function function_ef69a891( var_a5a067c5, e_activator )
 // Size: 0x6e
 function function_ea089392()
 {
-    self endon( #"death", #"hash_1aa56851d9d4ec0d" );
+    self endon( #"death", #"trap_state_change" );
     
     while ( true )
     {
@@ -1011,11 +1011,11 @@ function function_b00e24fb()
 // Size: 0x80
 function function_fcbb2307()
 {
-    level endon( #"hash_9a7b18e2622af5d" );
+    level endon( #"lighthouse_power_on" );
     self endon( #"death" );
     waitresult = self waittill( #"trigger" );
     level.var_9a8dee15 = waitresult.activator;
-    level notify( #"hash_9a7b18e2622af5d" );
+    level notify( #"lighthouse_power_on" );
 }
 
 /#

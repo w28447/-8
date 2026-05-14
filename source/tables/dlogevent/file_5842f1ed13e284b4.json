@@ -74,7 +74,7 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT32"
                     },
@@ -149,7 +149,7 @@
             }
         },
         {
-            "name": "#hash_5f9e5fe5b8245404",
+            "name": "#interpolation_histogram",
             "arraySize": 42,
             "members": {
                 "name": "#hash_46f2ea4cc6f0ef92",
@@ -198,7 +198,7 @@
             "type": "INT32"
         },
         {
-            "name": "#hash_1db36ca43f8ad917",
+            "name": "#total_frame_count",
             "scrName": "#hash_3bcc7193",
             "type": "UINT32"
         },

@@ -1,9 +1,9 @@
 {
     "name": "#inventory_recon_car_mp",
     "baseWeapon": "#inventory_recon_car",
-    "displayname": "#hash_63ef4a1fc82803dc",
+    "displayname": "#reconcar/name",
     "weapon70": "#recon_car",
-    "streamkey": "#hash_3655ff0b63162e9c",
+    "streamkey": "#inventory_recon_car_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

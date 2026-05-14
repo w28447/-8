@@ -17,7 +17,7 @@ CoD[0x3E8AA265071E59F].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.bg = bg
 	
 	local earthlive = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	earthlive:setImage( RegisterImage( 0xB535F535FE3052 ) )
+	earthlive:setImage( RegisterImage( "uie_ui_icon_callingcards_zombies_100percent_earth_live" ) )
 	self:addElement( earthlive )
 	self.earthlive = earthlive
 	

@@ -1,7 +1,7 @@
 {
     "name": "#null_offhand_secondary_mp",
     "baseWeapon": "#null_offhand_secondary",
-    "streamkey": "#hash_798dfd5ec7ceb46c",
+    "streamkey": "#null_offhand_secondary_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

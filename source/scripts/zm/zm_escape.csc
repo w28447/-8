@@ -1,8 +1,8 @@
 #using script_11c9779550732489;
 #using scripts\zm\zm_escape_weap_quest_spoon.csc;
-#using script_4f8f41168a7c3ea8;
+#using scripts\zm\zm_escape_weap_quest_mg.csc;
 #using scripts\zm\zm_escape_weap_quest_spork.csc;
-#using script_675455e5e6c0c5ad;
+#using scripts\zm\zm_escape_nixie_clock.csc;
 #using script_711bbbba637da80;
 #using scripts\core_common\clientfield_shared;
 #using scripts\core_common\exploder_shared;
@@ -68,7 +68,7 @@ function event_handler[level_init] main( eventstruct )
     clientfield::register( "world", "" + #"hash_24deaa9795e06d41", 1, 1, "int", &function_eef4ae09, 0, 0 );
     clientfield::register( "world", "" + #"hash_4a8a7b58bf6cd5d8", 1, 1, "int", &function_516663f8, 0, 0 );
     clientfield::register( "world", "" + #"hash_29fea4571b8649a0", 1, 1, "int", &function_d8b90aba, 0, 0 );
-    clientfield::register( "world", "" + #"hash_cd028842e18845e", 1, 1, "counter", &function_a104a4cb, 0, 0 );
+    clientfield::register( "world", "" + #"rumble_water_tower", 1, 1, "counter", &rumble_water_tower, 0, 0 );
     clientfield::register( "allplayers", "" + #"hash_500a87b29014ef02", 1, 1, "int", &function_5e901c8c, 0, 1 );
     clientfield::register( "toplayer", "" + #"player_pbg_bank", 1, 1, "int", &set_player_pbg_bank, 0, 1 );
     clientfield::register( "vehicle", "" + #"gondola_light", 1, 1, "int", &gondola_light, 0, 1 );
@@ -76,7 +76,7 @@ function event_handler[level_init] main( eventstruct )
     zm_escape_weap_quest_spoon::init_clientfields();
     zm_escape_util::init_clientfields();
     paschal::init();
-    namespace_1063645::init_clientfields();
+    nixie_clock::init_clientfields();
     fast_travel_hellholes::init_clientfields();
     zm_utility::function_beed5764( "rob_zm_eyes_red", #"zm_ai/fx8_zombie_eye_glow_red" );
     level._effect[ #"headshot" ] = #"zombie/fx_bul_flesh_head_fatal_zmb";
@@ -93,7 +93,7 @@ function event_handler[level_init] main( eventstruct )
     level.var_d0ab70a2 = #"gamedata/weapons/zm/zm_escape_weapons.csv";
     level._effect[ #"hash_2bba72fdcc5508b5" ] = #"hash_2ac7ec38d265c496";
     level._effect[ #"chest_light_closed" ] = #"hash_5b118cefec864e37";
-    level._effect[ #"hash_9d26763cbe16490" ] = #"hash_5a9159bef624d260";
+    level._effect[ #"magic_box_arrive" ] = #"hash_5a9159bef624d260";
     level._effect[ #"magic_box_leave" ] = #"hash_2b008afec3e70add";
     level._effect[ #"switch_sparks" ] = #"hash_26f37488feec03c3";
     level.var_5603a802 = "pstfx_zm_hellhole";
@@ -117,7 +117,7 @@ function rumble_gondola( localclientnum, oldval, newval, bnewent, binitialsnap, 
     
     if ( newval == 1 )
     {
-        self endon( #"hash_6d7afe7c92e095d8" );
+        self endon( #"rumble_gondola_finished" );
         
         while ( true )
         {
@@ -132,7 +132,7 @@ function rumble_gondola( localclientnum, oldval, newval, bnewent, binitialsnap, 
         return;
     }
     
-    self notify( #"hash_6d7afe7c92e095d8" );
+    self notify( #"rumble_gondola_finished" );
     
     if ( isinarray( getlocalplayers(), self ) )
     {
@@ -179,7 +179,7 @@ function function_eef4ae09( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0x53879e99, Offset: 0x1068
 // Size: 0xe4
-function function_a104a4cb( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
+function rumble_water_tower( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
     var_83771283 = struct::get( "s_break_large_metal" );
     playrumbleonposition( localclientnum, "zm_escape_metal_rumble1", var_83771283.origin );

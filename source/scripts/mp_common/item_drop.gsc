@@ -83,9 +83,9 @@ function __init__()
     {
         while ( true )
         {
-            if ( getdvarint( #"hash_9fd3c7ff85dca2c", 0 ) )
+            if ( getdvarint( #"scr_clear_item_drops", 0 ) )
             {
-                setdvar( #"hash_9fd3c7ff85dca2c", 0 );
+                setdvar( #"scr_clear_item_drops", 0 );
                 function_8a5fd783();
             }
             
@@ -108,7 +108,7 @@ function private function_3b2b6383( origin, angles, normal, itementry, var_ba40b
     {
         if ( var_ba40b4c1 && isdefined( itementry.overrideorientation ) && itementry.overrideorientation )
         {
-            angles = combineangles( angles, ( isdefined( itementry.var_d1f348db ) ? itementry.var_d1f348db : 0, isdefined( itementry.var_cc1bbd2c ) ? itementry.var_cc1bbd2c : 0, isdefined( itementry.var_ae6581c0 ) ? itementry.var_ae6581c0 : 0 ) );
+            angles = combineangles( angles, ( isdefined( itementry.dropangleoffsetx ) ? itementry.dropangleoffsetx : 0, isdefined( itementry.dropangleoffsety ) ? itementry.dropangleoffsety : 0, isdefined( itementry.dropangleoffsetz ) ? itementry.dropangleoffsetz : 0 ) );
         }
         else
         {
@@ -131,7 +131,7 @@ function private function_feb1473( itementry, var_ba40b4c1 )
     {
         if ( var_ba40b4c1 && isdefined( itementry.overrideorientation ) && itementry.overrideorientation )
         {
-            origin = ( isdefined( itementry.var_8a122876 ) ? itementry.var_8a122876 : 0, isdefined( itementry.var_7c4c8ceb ) ? itementry.var_7c4c8ceb : 0, isdefined( itementry.var_ee67711f ) ? itementry.var_ee67711f : 0 );
+            origin = ( isdefined( itementry.droppositionoffsetx ) ? itementry.droppositionoffsetx : 0, isdefined( itementry.droppositionoffsety ) ? itementry.droppositionoffsety : 0, isdefined( itementry.droppositionoffsetz ) ? itementry.droppositionoffsetz : 0 );
         }
         else
         {
@@ -1267,7 +1267,7 @@ function drop_item( weapon = undefined, count = 0, amount = 0, itemid, position,
         return;
     }
     
-    if ( isdefined( item.itementry.var_340eac1f ) && item.itementry.var_340eac1f )
+    if ( isdefined( item.itementry.istacticalweapon ) && item.itementry.istacticalweapon )
     {
         originalattachments = item.attachments;
         item.attachments = attachments;

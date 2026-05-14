@@ -73,7 +73,7 @@ CoD.AARTierRewardItemGlowAnimationRare.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local DotPattern = LUI.UIImage.new( 0, 0, 0, 310, 0, 0, 0, 630 )
 	DotPattern:setAlpha( 0 )
-	DotPattern:setImage( RegisterImage( 0xA0DEAC037514E0E ) )
+	DotPattern:setImage( RegisterImage( "uie_ui_menu_common_dot_pattern" ) )
 	DotPattern:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DotPattern:setShaderVector( 0, 0, 0, 0, 0 )
 	DotPattern:setupNineSliceShader( 32, 32 )
@@ -89,7 +89,7 @@ CoD.AARTierRewardItemGlowAnimationRare.new = function ( f1_arg0, f1_arg1, f1_arg
 	local DotPattern2 = LUI.UIImage.new( 0, 0, 0, 310, 0, 0, 0, 630 )
 	DotPattern2:setAlpha( 0 )
 	DotPattern2:setScale( 3, 3 )
-	DotPattern2:setImage( RegisterImage( 0xA0DEAC037514E0E ) )
+	DotPattern2:setImage( RegisterImage( "uie_ui_menu_common_dot_pattern" ) )
 	DotPattern2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DotPattern2:setShaderVector( 0, 0, 0, 0, 0 )
 	DotPattern2:setupNineSliceShader( 32, 32 )

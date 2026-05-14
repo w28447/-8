@@ -393,7 +393,7 @@ function function_48d7e846()
     level flag::wait_till_all( level.var_ac9cb27a );
     level flag::set( #"hash_79e07d3dcfbfb5ae" );
     level.var_4b9d0136 thread scene::play( #"p8_fxanim_zm_esc_water_tower_bundle", level.var_4b9d0136 );
-    level thread clientfield::increment( "" + #"hash_cd028842e18845e", 1 );
+    level thread clientfield::increment( "" + #"rumble_water_tower", 1 );
     wait 3;
     e_closest = arraygetclosest( level.var_4b9d0136.origin, zm_vo::get_valid_players() );
     

@@ -1,9 +1,9 @@
-CoD[0x1C8E42E011D260E] = InheritFrom( LUI.UIElement )
-CoD[0x1C8E42E011D260E].__defaultWidth = 960
-CoD[0x1C8E42E011D260E].__defaultHeight = 240
-CoD[0x1C8E42E011D260E].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD["callingcards_zombieapocalypse"] = InheritFrom( LUI.UIElement )
+CoD["callingcards_zombieapocalypse"].__defaultWidth = 960
+CoD["callingcards_zombieapocalypse"].__defaultHeight = 240
+CoD["callingcards_zombieapocalypse"].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0x1C8E42E011D260E] )
+	self:setClass( CoD["callingcards_zombieapocalypse"] )
 	self.id = "CallingCards_zombieapocalypse"
 	self.soundSet = "none"
 	f1_arg0:addElementToPendingUpdateStateList( self )
@@ -60,7 +60,7 @@ CoD[0x1C8E42E011D260E].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0x1C8E42E011D260E].__resetProperties = function ( f2_arg0 )
+CoD["callingcards_zombieapocalypse"].__resetProperties = function ( f2_arg0 )
 	f2_arg0.zombie1:completeAnimation()
 	f2_arg0.man1:completeAnimation()
 	f2_arg0.man2:completeAnimation()
@@ -81,7 +81,7 @@ CoD[0x1C8E42E011D260E].__resetProperties = function ( f2_arg0 )
 	f2_arg0.headblood:setLeftRight( 0, 0, 624, 960 )
 end
 
-CoD[0x1C8E42E011D260E].__clipsPerState = {
+CoD["callingcards_zombieapocalypse"].__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()

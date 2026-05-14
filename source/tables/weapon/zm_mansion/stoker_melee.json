@@ -1,7 +1,7 @@
 {
     "name": "#stoker_melee",
     "baseWeapon": "#stoker_melee",
-    "streamkey": "#hash_16a7e2dde0fc1012",
+    "streamkey": "#stoker_melee_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -29,5 +29,5 @@
     "sound240": "#hash_631a067190b54300",
     "sound250": "#hash_242aa17124751841",
     "tunables1": "#stoker_melee_tunables",
-    "sharedWeaponSounds": "#hash_5606f90e87d974b"
+    "sharedWeaponSounds": "#zm_stoker_shovel"
 }

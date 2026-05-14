@@ -107,7 +107,7 @@ CoD.CodCaster.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 			modelName = "playerTeam"
 		} )
 	end, false )
-	waitingForPlayers.TextBox:setText( Engine[0xF9F1239CFD921FE]( 0xE26CA69C50088EB ) )
+	waitingForPlayers.TextBox:setText( Engine[0xF9F1239CFD921FE]( "mp/waiting_for_players_shoutcaster" ) )
 	waitingForPlayers.TextBox:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	self:addElement( waitingForPlayers )
 	self.waitingForPlayers = waitingForPlayers

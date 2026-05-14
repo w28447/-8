@@ -106,10 +106,10 @@ LUI.createMenu.ContractDetailsSunset = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f12_arg0, f12_arg1, f12_arg2 )
 		if CoD.ModelUtility.IsSelfModelValueEqualTo( f12_arg0, f12_arg2, "allowFrozenMoment", true ) and IsMouseOrKeyboard( f12_arg2 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x52FB29ED3A3CA79, nil, "ui_remove" )
+			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/preview", nil, "ui_remove" )
 			return true
 		elseif CoD.ModelUtility.IsSelfModelValueNonEmptyString( f12_arg0, f12_arg2, "movieName" ) and IsMouseOrKeyboard( f12_arg2 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x52FB29ED3A3CA79, nil, "ui_remove" )
+			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/preview", nil, "ui_remove" )
 			return true
 		else
 			return false
@@ -614,7 +614,7 @@ LUI.createMenu.ContractDetailsSunset = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f69_arg0, f69_arg1, f69_arg2 )
 		if CoD.BlackMarketUtility.CanPlayGesture( f69_arg1 ) then
-			CoD.Menu.SetButtonLabel( f69_arg1, Enum.LUIButton[0x29E5695FF1401AD], 0x52FB29ED3A3CA79, nil, "ui_contextual_2" )
+			CoD.Menu.SetButtonLabel( f69_arg1, Enum.LUIButton[0x29E5695FF1401AD], "menu/preview", nil, "ui_contextual_2" )
 			return true
 		else
 			return false
@@ -653,10 +653,10 @@ LUI.createMenu.ContractDetailsSunset = function ( f1_arg0, f1_arg1 )
 			CoD.Menu.SetButtonLabel( f71_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_remove" )
 			return false
 		elseif CoD.ModelUtility.IsSelfModelValueEqualTo( f71_arg0, f71_arg2, "allowFrozenMoment", true ) then
-			CoD.Menu.SetButtonLabel( f71_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x52FB29ED3A3CA79, nil, "ui_remove" )
+			CoD.Menu.SetButtonLabel( f71_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/preview", nil, "ui_remove" )
 			return true
 		elseif CoD.ModelUtility.IsSelfModelValueNonEmptyString( f71_arg0, f71_arg2, "movieName" ) then
-			CoD.Menu.SetButtonLabel( f71_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x52FB29ED3A3CA79, nil, "ui_remove" )
+			CoD.Menu.SetButtonLabel( f71_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/preview", nil, "ui_remove" )
 			return true
 		else
 			return false

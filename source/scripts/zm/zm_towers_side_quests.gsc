@@ -24,7 +24,7 @@ function init()
 {
     level flag::init( #"hash_26c0c05d0a3e382f" );
     level flag::init( #"pyre_lit" );
-    level flag::init( #"hash_6205682540170b8" );
+    level flag::init( #"arena_rock_unlocked" );
     level._effect[ #"hash_3ecc995bb97331ac" ] = #"hash_37631c88b85a74ec";
     level.s_side_quests = spawnstruct();
     level.s_side_quests.var_25f5a473 = struct::get_array( "s_pyre" );
@@ -169,7 +169,7 @@ function function_fb74fc5f()
     
     while ( true )
     {
-        s_waitresult = level waittill( #"hash_3042a9bf2f57ea0a" );
+        s_waitresult = level waittill( #"wraith_fire_impact" );
         v_origin = s_waitresult.var_814c9389;
         
         if ( isplayer( s_waitresult.attacker ) )
@@ -489,7 +489,7 @@ function arena_rock()
     var_c2b730ca = getent( "viking_salute", "targetname" );
     var_c2b730ca thread function_3ce07a2b();
     level waittill( #"21_guns" );
-    level flag::set( #"hash_6205682540170b8" );
+    level flag::set( #"arena_rock_unlocked" );
     level clientfield::set( "" + #"hash_39e6b14b9e5b0f3d", 1 );
 }
 
@@ -539,7 +539,7 @@ function function_4670ef4d()
     
     if ( self.damagelocation === "helmet" || self.damagelocation === "head" || self.damagelocation === "neck" )
     {
-        level notify( #"hash_5a1a76d189cf6925" );
+        level notify( #"killowatt_headshot" );
         level.s_side_quests.var_7d942960++;
         self playsound( "zmb_ee_gtr_sting_" + level.s_side_quests.var_7d942960 );
     }
@@ -555,7 +555,7 @@ function function_c846dfc3()
     
     while ( true )
     {
-        level waittill( #"hash_5a1a76d189cf6925" );
+        level waittill( #"killowatt_headshot" );
         
         if ( level.s_side_quests.var_7d942960 >= 8 )
         {
@@ -621,10 +621,10 @@ function function_5d0d1807()
     
     foreach ( model in a_mdl_fire )
     {
-        model clientfield::set( "" + #"hash_5afda864f8b64f5c", 1 );
+        model clientfield::set( "" + #"narrative_brazier_fire", 1 );
     }
     
-    level waittill( #"hash_7b9245ff51f3d4f7" );
+    level waittill( #"special_round_ending" );
     a_scenes = struct::get_array( "special_rounds_scene_alt", "targetname" );
     
     foreach ( s_scene in a_scenes )
@@ -635,7 +635,7 @@ function function_5d0d1807()
     
     foreach ( model in a_mdl_fire )
     {
-        model clientfield::set( "" + #"hash_5afda864f8b64f5c", 0 );
+        model clientfield::set( "" + #"narrative_brazier_fire", 0 );
     }
 }
 
@@ -707,7 +707,7 @@ function function_def71ac3()
     {
         self waittill( #"hash_29bd5874900989d6" );
         
-        if ( self.var_b3122c84 == #"hash_4a67009994e6a476" && !( isdefined( self.var_a4ab5d88 ) && self.var_a4ab5d88 ) )
+        if ( self.var_b3122c84 == #"zm_towers/location_challenge_podium" && !( isdefined( self.var_a4ab5d88 ) && self.var_a4ab5d88 ) )
         {
             self.var_a4ab5d88 = 1;
             level notify( #"hash_46267aa0f17a3c00", { #var_8571ab76:1 } );

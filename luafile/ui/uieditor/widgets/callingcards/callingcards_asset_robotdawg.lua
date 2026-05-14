@@ -10,7 +10,7 @@ CoD.CallingCards_Asset_robotdawg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local body = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	body:setScale( 1.05, 1.05 )
-	body:setImage( RegisterImage( 0x25E6711FBD7EEA7 ) )
+	body:setImage( RegisterImage( "uie_ui_icon_callingcards_wz_vehicular_master_body" ) )
 	self:addElement( body )
 	self.body = body
 	

@@ -31,7 +31,7 @@ CoD.ScrStk_CombatEfficiencyPulse.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local Glow = LUI.UIImage.new( 0.5, 0.5, -84, 86, 0.5, 0.5, -88, 88 )
 	Glow:setRGB( 0, 0.6, 1 )
 	Glow:setAlpha( 0 )
-	Glow:setImage( RegisterImage( 0x1BB2C084812E7B6 ) )
+	Glow:setImage( RegisterImage( "uie_t7_cp_hud_tacmode_glow" ) )
 	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow

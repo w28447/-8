@@ -268,7 +268,7 @@ function function_7d779cf7( gamedifficulty )
 // Size: 0x266
 function function_926fcb2f( b_success )
 {
-    level endon( #"hash_42057c28bd084d77" );
+    level endon( #"destroysites_reset" );
     
     if ( level.ctdifficulty !== 0 )
     {
@@ -389,7 +389,7 @@ function j_fore_le_01()
 function function_4b5c96a0()
 {
     self endon( #"death", #"target_destroyed" );
-    level endon( #"ct_ruin_end", #"hash_42057c28bd084d77" );
+    level endon( #"ct_ruin_end", #"destroysites_reset" );
     self.waypoint gameobjects::set_visible_team( #"any" );
     b_keyline = 0;
     
@@ -424,7 +424,7 @@ function function_4b5c96a0()
         {
             level.var_b5529824--;
             e_attacker thread ct_utils::function_785eb2ca();
-            level thread ct_utils::function_bfa522d1( 0 );
+            level thread ct_utils::simulation_pulse( 0 );
             e_model clientfield::set( "enemyobj_keyline_render", 0 );
             waitframe( 1 );
             e_model hide();

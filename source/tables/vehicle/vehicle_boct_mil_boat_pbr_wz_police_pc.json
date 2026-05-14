@@ -31,7 +31,7 @@
         "tag_steering_wheel"
     ],
     "sndMaterialNames": [
-        "#hash_3dfaeb4220a1dc72"
+        "#veh_pbr_road"
     ],
     "skidSpeedMin": 350,
     "skidSpeedMax": 650,
@@ -60,7 +60,7 @@
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "hash_1c59b497e5ef478f:hash_4be786c9": "localized17#hash_1c59b497e5ef478f",
+                        "menu/aim_down_the_sight:hash_4be786c9": "localized17#menu/aim_down_the_sight",
                         "hash_334a8e60": "left",
                         "prompt": "+speed_throw"
                     }
@@ -113,7 +113,7 @@
                     {
                         "GAMEPAD": "#GAMEPAD",
                         "hash_7aecb1d7": 0,
-                        "hash_5dba026ffa1d58cd:hash_4be786c9": "localized17#hash_5dba026ffa1d58cd",
+                        "menu/hud_vehicle_steer:hash_4be786c9": "localized17#menu/hud_vehicle_steer",
                         "hash_334a8e60": "left",
                         "prompt": "+lookstick"
                     },

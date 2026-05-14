@@ -43,7 +43,7 @@ CoD.AARLevelUpReward.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local PlusTL = LUI.UIImage.new( 0, 0, 57, 89, 0, 0, 43, 75 )
 	PlusTL:setAlpha( 0.02 )
 	PlusTL:setScale( 0.8, 0.8 )
-	PlusTL:setImage( RegisterImage( 0x1ACA8BD7BB22ADB ) )
+	PlusTL:setImage( RegisterImage( "uie_ui_menu_aar_common_thin_cross" ) )
 	PlusTL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PlusTL )
 	self.PlusTL = PlusTL
@@ -51,7 +51,7 @@ CoD.AARLevelUpReward.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local PlusBR = LUI.UIImage.new( 0, 0, 728, 760, 0, 0, 216, 248 )
 	PlusBR:setAlpha( 0.02 )
 	PlusBR:setScale( 0.8, 0.8 )
-	PlusBR:setImage( RegisterImage( 0x1ACA8BD7BB22ADB ) )
+	PlusBR:setImage( RegisterImage( "uie_ui_menu_aar_common_thin_cross" ) )
 	PlusBR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PlusBR )
 	self.PlusBR = PlusBR
@@ -59,7 +59,7 @@ CoD.AARLevelUpReward.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local PlusTR = LUI.UIImage.new( 0, 0, 728, 760, 0, 0, 43, 75 )
 	PlusTR:setAlpha( 0.02 )
 	PlusTR:setScale( 0.8, 0.8 )
-	PlusTR:setImage( RegisterImage( 0x1ACA8BD7BB22ADB ) )
+	PlusTR:setImage( RegisterImage( "uie_ui_menu_aar_common_thin_cross" ) )
 	PlusTR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PlusTR )
 	self.PlusTR = PlusTR
@@ -67,7 +67,7 @@ CoD.AARLevelUpReward.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local PlusBL = LUI.UIImage.new( 0, 0, 57, 89, 0, 0, 216, 248 )
 	PlusBL:setAlpha( 0.02 )
 	PlusBL:setScale( 0.8, 0.8 )
-	PlusBL:setImage( RegisterImage( 0x1ACA8BD7BB22ADB ) )
+	PlusBL:setImage( RegisterImage( "uie_ui_menu_aar_common_thin_cross" ) )
 	PlusBL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PlusBL )
 	self.PlusBL = PlusBL

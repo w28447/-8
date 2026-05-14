@@ -1,7 +1,7 @@
 {
     "name": "#atv_camera_turret",
     "baseWeapon": "#atv_camera_turret",
-    "streamkey": "#hash_5d9cedca1153b10d",
+    "streamkey": "#atv_camera_turret_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -29,8 +29,8 @@
     "sound240": "#hash_631a067190b54300",
     "sound250": "#hash_242aa17124751841",
     "sound830": "#platform/use_drive",
-    "tunables1": "#hash_324b05c7cc5b6864",
-    "tunables2": "#hash_324b05c7cc5b6864",
+    "tunables1": "#atv_camera_turret_tunables_pc",
+    "tunables2": "#atv_camera_turret_tunables_pc",
     "tracers": [
         "#lmg",
         "#hash_e2bdd456ce2308cc"

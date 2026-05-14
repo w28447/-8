@@ -5,7 +5,7 @@
     "xhash_60": "#hash_1a5fc0b7a17d6eb8",
     "weapon70": "#shotgun_fullauto_t8",
     "weapon890": "#shotgun_fullauto_t8_wz",
-    "streamkey": "#hash_16962286c2d8ef2e",
+    "streamkey": "#shotgun_fullauto_t8_gold_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -51,8 +51,8 @@
         ]
     ],
     "firesounddistant": "#hash_34c98fc26535cfe4",
-    "firesound": "#hash_4a367cbfce96fbc6",
-    "firesoundplayer": "#hash_4505dbc0149690eb",
+    "firesound": "#wpn_shotgun_auto_fire_npc",
+    "firesoundplayer": "#wpn_shotgun_auto_fire_plr",
     "sound1d0": "#hash_43517b69d02d8d0",
     "sound1e0": "#hash_5540fa19f1ea52ed",
     "sound200": "#hash_5ae0b2b6ce1cff31",

@@ -43,7 +43,7 @@ function autoexec __init__system__()
 // Size: 0x54
 function __init__()
 {
-    level flag::init( #"hash_7039457b1cc827de" );
+    level flag::init( #"have_wardens_key" );
     level.lighting_state = 0;
     callback::on_connect( &function_6a1500f1 );
 }
@@ -68,7 +68,7 @@ function init_clientfields()
 {
     clientfield::register( "scriptmover", "" + #"hash_7327d0447d656234", 1, 1, "int" );
     clientfield::register( "item", "" + #"hash_76662556681a502c", 1, 1, "int" );
-    clientfield::register( "scriptmover", "" + #"hash_59be891b288663cc", 1, 1, "int" );
+    clientfield::register( "scriptmover", "" + #"locked_crafting_table_fx", 1, 1, "int" );
     clientfield::register( "toplayer", "" + #"hash_257c215ab25a21c5", 1, 1, "counter" );
 }
 
@@ -304,7 +304,7 @@ function function_1abf5396( var_cba19e17 )
         {
             waitresult.activator dodamage( 10, waitresult.activator.origin );
             waitresult.activator clientfield::increment_to_player( "" + #"hash_257c215ab25a21c5" );
-            waitresult.activator playsoundtoplayer( #"hash_75318bcffca7ff06", waitresult.activator );
+            waitresult.activator playsoundtoplayer( #"evt_player_swiped_victim", waitresult.activator );
             wait 4;
         }
         
@@ -338,9 +338,9 @@ function function_b5ac159d()
 // Size: 0x184
 function function_8164716a()
 {
-    level endon( #"hash_7039457b1cc827de" );
+    level endon( #"have_wardens_key" );
     
-    while ( !level flag::get( #"hash_7039457b1cc827de" ) )
+    while ( !level flag::get( #"have_wardens_key" ) )
     {
         var_5601237b = zm_crafting::function_31d883d7();
         
@@ -348,14 +348,14 @@ function function_8164716a()
         {
             if ( s_blueprint.w_result == getweapon( #"zhield_spectral_dw" ) )
             {
-                level flag::set( #"hash_7039457b1cc827de" );
+                level flag::set( #"have_wardens_key" );
                 break;
             }
         }
         
         if ( zm_items::player_has( level.players[ 0 ], zm_crafting::get_component( #"zitem_spectral_shield_part_3" ) ) )
         {
-            level flag::set( #"hash_7039457b1cc827de" );
+            level flag::set( #"have_wardens_key" );
             break;
         }
         
@@ -979,13 +979,13 @@ function private function_5d3c7c04()
         if ( s_result._notify == #"brutus_locked" )
         {
             var_89ddd572 = util::spawn_model( "tag_origin", s_result.s_stub.origin, s_result.s_stub.angles );
-            var_89ddd572 clientfield::set( "" + #"hash_59be891b288663cc", 1 );
+            var_89ddd572 clientfield::set( "" + #"locked_crafting_table_fx", 1 );
             continue;
         }
         
         if ( isdefined( var_89ddd572 ) )
         {
-            var_89ddd572 clientfield::set( "" + #"hash_59be891b288663cc", 0 );
+            var_89ddd572 clientfield::set( "" + #"locked_crafting_table_fx", 0 );
             var_89ddd572 delete();
         }
     }

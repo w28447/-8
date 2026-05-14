@@ -35,7 +35,7 @@ CoD.CamoListSelectionWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.TechnicalGrid = TechnicalGrid
 	
 	local PerformanceGrid = CoD.PerformanceOptionGrid.new( f1_arg0, f1_arg1, 0, 0, -9, 383, 0, 0, 25, 375 )
-	PerformanceGrid.Label:setText( LocalizeToUpperString( 0xE28A07E0C69E9E9 ) )
+	PerformanceGrid.Label:setText( LocalizeToUpperString( "weapon_options/performance" ) )
 	self:addElement( PerformanceGrid )
 	self.PerformanceGrid = PerformanceGrid
 	

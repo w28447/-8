@@ -16,7 +16,7 @@ CoD.vhud_gunship_recticle_25mm.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	self.reticle25Circle = reticle25Circle
 	
 	local reticle25CenterBox = LUI.UIImage.new( 0, 0, 113, 157, 0, 0, 106, 150 )
-	reticle25CenterBox:setImage( RegisterImage( 0x63E68F1E8DF5E32 ) )
+	reticle25CenterBox:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_reticle_25_outer_box" ) )
 	reticle25CenterBox:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	reticle25CenterBox:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( reticle25CenterBox )

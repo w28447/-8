@@ -43,10 +43,10 @@ function register_actions()
     register_action( #"reload_weapon", &current_weapon_rank, &reload_weapon_weight, &reload_weapon );
     register_action( #"look_for_enemy", &current_weapon_rank, &look_for_enemy_weight, &look_for_enemy );
     register_action( #"hash_55fc6b6e868ae6c3", &current_weapon_rank, &function_1176a20b, &function_e0dcb8c1 );
-    register_action( #"hash_2bbb309be663cb4c", &function_728212e8, &scan_for_threats_weight, &function_9e1d8dfe );
+    register_action( #"scan_for_threats_ct", &function_728212e8, &scan_for_threats_weight, &scan_for_threats_ct );
     register_action( #"scan_for_threats", &function_728212e8, &scan_for_threats_weight, &scan_for_threats );
     register_action( #"bleed_out", &rank_priority, &bleed_out_weight, &bleed_out );
-    register_action( #"hash_7aaeac32a4e1bf84", &weapon_rank, &function_36505c2d, &function_a314673 );
+    register_action( #"hip_fire_bulletweapon", &weapon_rank, &function_36505c2d, &hip_fire_bulletweapon );
     register_action( #"hash_434716893aa869f3", &weapon_rank, &function_294f4909, &function_e73c8946 );
     register_action( #"hash_4c707ba80bf09cec", &weapon_rank, &function_294f4909, &function_22e2ba8c );
     register_action( #"hash_3d7dd2878425bcce", &weapon_rank, &function_2bc7472b, &function_36ca6d92 );
@@ -126,7 +126,7 @@ function function_42907fd4()
 // Size: 0x16
 function stop()
 {
-    self notify( #"hash_5b4f399c08222e2" );
+    self notify( #"bot_action_stop" );
 }
 
 // Namespace bot_action/bot_action
@@ -137,7 +137,7 @@ function reset()
 {
     if ( isdefined( self.bot ) )
     {
-        self.bot.var_bdbba2cd = 0;
+        self.bot.nextactiontime = 0;
     }
 }
 
@@ -149,7 +149,7 @@ function update()
 {
     if ( isdefined( self.bot.action ) )
     {
-        self notify( #"hash_347a612b61067eb3" );
+        self notify( #"bot_action_update" );
         
         /#
             forcedstr = isdefined( self.bot.actionparams.forced ) && self.bot.actionparams.forced ? "<dev string:x38>" : "<dev string:x43>";
@@ -314,7 +314,7 @@ function register_weapon( weaponname, rankfunc )
 function register_bulletweapon( weaponname )
 {
     register_weapon( weaponname, &function_22991a48 );
-    function_a2c83569( weaponname, #"hash_7aaeac32a4e1bf84" );
+    function_a2c83569( weaponname, #"hip_fire_bulletweapon" );
     function_a2c83569( weaponname, #"hash_434716893aa869f3" );
 }
 
@@ -551,7 +551,7 @@ function function_9480d296()
 // Size: 0x138
 function private execution_loop()
 {
-    self endon( #"hash_5b4f399c08222e2", #"death", #"entering_last_stand", #"enter_vehicle", #"animscripted_start" );
+    self endon( #"bot_action_stop", #"death", #"entering_last_stand", #"enter_vehicle", #"animscripted_start" );
     level endon( #"game_ended" );
     
     while ( self bot::initialized() )
@@ -583,14 +583,14 @@ function private execution_loop()
 // Size: 0x1f2
 function private function_e7b123e8( actionparams )
 {
-    self endoncallback( &function_7a456ee0, #"hash_5b4f399c08222e2", #"death", #"entering_last_stand", #"enter_vehicle", #"animscripted_start" );
+    self endoncallback( &function_7a456ee0, #"bot_action_stop", #"death", #"entering_last_stand", #"enter_vehicle", #"animscripted_start" );
     level endon( #"game_ended" );
     action = actionparams.action;
     self.bot.action = action;
     self.bot.actionparams = actionparams;
     self thread action_timeout( action.name );
     executetime = gettime();
-    self function_fef5423c( self.bot.tacbundle.var_5eaa9e02, self.bot.tacbundle.var_bc0b2a06 );
+    self function_fef5423c( self.bot.tacbundle.nextactiontimemin, self.bot.tacbundle.nextactiontimemax );
     self [[ action.executefunc ]]( actionparams );
     self notify( #"hash_1728f8b5de3bde13" );
     finishtime = gettime();
@@ -601,7 +601,7 @@ function private function_e7b123e8( actionparams )
             self botprinterror( "<dev string:xfb>" + hashtostring( action.name ) + "<dev string:x105>" );
         #/
         
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
     }
     
     self.bot.action = undefined;
@@ -629,7 +629,7 @@ function private function_7a456ee0( notifyhash )
 // Size: 0xfe
 function private action_timeout( actionname )
 {
-    self endon( #"hash_5b4f399c08222e2", #"death", #"entering_last_stand", #"enter_vehicle", #"animscripted_start", #"hash_1728f8b5de3bde13" );
+    self endon( #"bot_action_stop", #"death", #"entering_last_stand", #"enter_vehicle", #"animscripted_start", #"hash_1728f8b5de3bde13" );
     level endon( #"game_ended" );
     wait 10;
     
@@ -642,7 +642,7 @@ function private action_timeout( actionname )
         self botprintwarning( "<dev string:xfb>" + hashtostring( actionname ) + "<dev string:x119>" + 10 + "<dev string:x12d>" );
     #/
     
-    self notify( #"hash_5b4f399c08222e2" );
+    self notify( #"bot_action_stop" );
 }
 
 // Namespace bot_action/bot_action
@@ -651,7 +651,7 @@ function private action_timeout( actionname )
 // Size: 0x3a
 function function_fef5423c( smin, smax )
 {
-    self.bot.var_bdbba2cd = bot::function_7aeb27f1( smin, smax );
+    self.bot.nextactiontime = bot::function_7aeb27f1( smin, smax );
 }
 
 // Namespace bot_action/bot_action
@@ -660,7 +660,7 @@ function function_fef5423c( smin, smax )
 // Size: 0x18, Type: bool
 function function_cf788c22()
 {
-    return gettime() > self.bot.var_bdbba2cd;
+    return gettime() > self.bot.nextactiontime;
 }
 
 // Namespace bot_action/bot_action
@@ -1412,7 +1412,7 @@ function look_for_enemy( actionparams )
     while ( !self function_cf788c22() && self function_ab4c3550() && self bot::in_combat() && self is_target_enemy( actionparams ) && !self is_target_visible( actionparams ) )
     {
         self function_d273d4e7();
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
     }
 }
 
@@ -1497,7 +1497,7 @@ function function_e0dcb8c1( actionparams )
     {
         self function_8a2b82ad( actionparams );
         self aim_at_target( actionparams );
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
     }
 }
 
@@ -1563,7 +1563,7 @@ function scan_for_threats( actionparams )
             self function_2b8f7067();
         }
         
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
         targetvisible = self is_target_visible( actionparams );
     }
 }
@@ -1572,7 +1572,7 @@ function scan_for_threats( actionparams )
 // Params 1
 // Checksum 0x218cc68b, Offset: 0x4830
 // Size: 0x1aa
-function function_9e1d8dfe( actionparams )
+function scan_for_threats_ct( actionparams )
 {
     targetvisible = self is_target_visible( actionparams );
     actionparams.targetvisible = targetvisible;
@@ -1598,7 +1598,7 @@ function function_9e1d8dfe( actionparams )
             self function_2b8f7067();
         }
         
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
         targetvisible = self is_target_visible( actionparams );
     }
 }
@@ -1775,7 +1775,7 @@ function revive_player( actionparams )
         }
         
         self bot_stance::crouch();
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
     }
     
     while ( isalive( player ) && isdefined( player.revivetrigger ) && self istouching( player.revivetrigger ) )
@@ -1783,7 +1783,7 @@ function revive_player( actionparams )
         self look_at_point( player.revivetrigger.origin, "Revive Trigger", ( 1, 1, 1 ) );
         self bot_stance::crouch();
         self bottapbutton( 3 );
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
     }
     
     self function_e0c89027();
@@ -1972,7 +1972,7 @@ function function_40aa6f87( actionparams )
     while ( isdefined( self.bot.traversal ) )
     {
         self botsetlookpoint( self.bot.traversal.endpos );
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
     }
 }
 
@@ -2014,11 +2014,11 @@ function switch_to_weapon( actionparams )
 {
     weapon = actionparams.weapon;
     self botswitchtoweapon( weapon );
-    self waittill( #"hash_347a612b61067eb3" );
+    self waittill( #"bot_action_update" );
     
     while ( self isswitchingweapons() )
     {
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
     }
 }
 
@@ -2128,7 +2128,7 @@ function reload_weapon( actionparams )
         self bottapbutton( 4 );
     }
     
-    self waittill( #"hash_347a612b61067eb3" );
+    self waittill( #"bot_action_update" );
     
     while ( self isreloading() )
     {
@@ -2157,7 +2157,7 @@ function reload_weapon( actionparams )
             self function_2b8f7067();
         }
         
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
     }
 }
 
@@ -2274,7 +2274,7 @@ function melee_glass( actionparams )
 {
     self look_along_path();
     self bottapbutton( 2 );
-    self waittill( #"hash_347a612b61067eb3" );
+    self waittill( #"bot_action_update" );
     
     if ( self ismeleeing() )
     {
@@ -2282,7 +2282,7 @@ function melee_glass( actionparams )
         
         while ( self ismeleeing() )
         {
-            self waittill( #"hash_347a612b61067eb3" );
+            self waittill( #"bot_action_update" );
         }
     }
 }
@@ -2396,13 +2396,13 @@ function melee_enemy( actionparams )
         return;
     }
     
-    self waittill( #"hash_347a612b61067eb3" );
+    self waittill( #"bot_action_update" );
     
     if ( self ismeleeing() )
     {
         while ( self ismeleeing() )
         {
-            self waittill( #"hash_347a612b61067eb3" );
+            self waittill( #"bot_action_update" );
         }
     }
 }
@@ -2480,7 +2480,7 @@ function function_36505c2d( actionparams )
 // Params 1
 // Checksum 0xa1f8e0ef, Offset: 0x6cd8
 // Size: 0x10e
-function function_a314673( actionparams )
+function hip_fire_bulletweapon( actionparams )
 {
     weapon = actionparams.weapon;
     
@@ -2495,7 +2495,7 @@ function function_a314673( actionparams )
             self bot::function_e2c892a5( 1 );
         }
         
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
     }
 }
 
@@ -2628,7 +2628,7 @@ function function_e73c8946( actionparams )
             }
         }
         
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
     }
 }
 
@@ -2655,7 +2655,7 @@ function function_22e2ba8c( actionparams )
             {
                 if ( !isdefined( self.bot.var_ddc0e12b ) )
                 {
-                    self.bot.var_ddc0e12b = randomfloat( 1 ) < ( isdefined( self.bot.tacbundle.var_6ef48dfa ) ? self.bot.tacbundle.var_6ef48dfa : 0 );
+                    self.bot.var_ddc0e12b = randomfloat( 1 ) < ( isdefined( self.bot.tacbundle.sniperquickscopechance ) ? self.bot.tacbundle.sniperquickscopechance : 0 );
                 }
                 
                 if ( !isdefined( self.bot.var_f2b47a08 ) )
@@ -2679,7 +2679,7 @@ function function_22e2ba8c( actionparams )
             }
         }
         
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
     }
 }
 
@@ -2795,7 +2795,7 @@ function function_36ca6d92( actionparams )
             }
         }
         
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
     }
     
     self function_b74c1de4();
@@ -2803,7 +2803,7 @@ function function_36ca6d92( actionparams )
     
     while ( self isswitchingweapons() )
     {
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
     }
 }
 
@@ -2939,7 +2939,7 @@ function fire_grenade( actionparams )
             }
         }
         
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
     }
 }
 
@@ -3056,7 +3056,7 @@ function fire_locked_rocketlauncher( actionparams )
             }
         }
         
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
         
         if ( self isfiring() )
         {
@@ -3072,7 +3072,7 @@ function fire_locked_rocketlauncher( actionparams )
             self aim_at_target( actionparams );
         }
         
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
     }
 }
 
@@ -3171,7 +3171,7 @@ function fire_rocketlauncher( actionparams )
                     if ( self playerads() >= 1 )
                     {
                         self bottapbutton( 0 );
-                        self waittill( #"hash_347a612b61067eb3" );
+                        self waittill( #"bot_action_update" );
                         break;
                     }
                 }
@@ -3182,7 +3182,7 @@ function fire_rocketlauncher( actionparams )
             }
         }
         
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
         
         if ( self isfiring() )
         {
@@ -3198,7 +3198,7 @@ function fire_rocketlauncher( actionparams )
             self aim_at_target( actionparams );
         }
         
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
     }
 }
 
@@ -3233,7 +3233,7 @@ function activate_health_gadget( actionparams )
     
     while ( self isthrowinggrenade() || !self isweaponready() || self getcurrentweapon() == level.weaponnone )
     {
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
     }
 }
 
@@ -3274,13 +3274,13 @@ function throw_offhand( actionparams )
     slot = self gadgetgetslot( weapon );
     button = self function_c6e02c38( weapon );
     self function_5aa9dd1b( actionparams );
-    self waittill( #"hash_347a612b61067eb3" );
+    self waittill( #"bot_action_update" );
     
     while ( !self function_d911b948() )
     {
         self function_5aa9dd1b( actionparams );
         self bottapbutton( button );
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
     }
     
     holding = 1;
@@ -3299,7 +3299,7 @@ function throw_offhand( actionparams )
             }
         }
         
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
     }
     
     if ( holding )
@@ -3309,13 +3309,13 @@ function throw_offhand( actionparams )
             self bottapbutton( 71 );
             self bottapbutton( 49 );
             self function_c17972fc();
-            self waittill( #"hash_347a612b61067eb3" );
+            self waittill( #"bot_action_update" );
         }
     }
     
     while ( !self isweaponready() || self getcurrentweapon() == level.weaponnone )
     {
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
     }
 }
 
@@ -3422,7 +3422,7 @@ function bleed_out( actionparams )
     while ( !isdefined( self.revivetrigger ) && !( isdefined( self.revivetrigger.beingrevived ) && self.revivetrigger.beingrevived ) )
     {
         self bottapbutton( 3 );
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
     }
 }
 
@@ -4059,8 +4059,8 @@ function function_31a76186( actionparams )
 // Size: 0x68, Type: bool
 function function_bacb1c08( actionparams )
 {
-    var_b4c8298c = isdefined( self.bot.tacbundle.var_b4c8298c ) ? self.bot.tacbundle.var_b4c8298c : 0;
-    return self botgetlookdot() >= var_b4c8298c;
+    adsfiredot = isdefined( self.bot.tacbundle.adsfiredot ) ? self.bot.tacbundle.adsfiredot : 0;
+    return self botgetlookdot() >= adsfiredot;
 }
 
 // Namespace bot_action/bot_action
@@ -4510,7 +4510,7 @@ function function_a9847723( weapon )
     }
     
     self bottapbutton( button );
-    self waittill( #"hash_347a612b61067eb3" );
+    self waittill( #"bot_action_update" );
 }
 
 // Namespace bot_action/bot_action
@@ -4528,9 +4528,9 @@ function function_8171a298( weapon )
     }
     
     self botswitchtoweapon( weapon );
-    self waittill( #"hash_347a612b61067eb3" );
+    self waittill( #"bot_action_update" );
     self bottapbutton( button );
-    self waittill( #"hash_347a612b61067eb3" );
+    self waittill( #"bot_action_update" );
 }
 
 // Namespace bot_action/bot_action
@@ -4549,7 +4549,7 @@ function function_ec16df22( weapon )
     
     self bottapbutton( button );
     self botswitchtoweapon( weapon );
-    self waittill( #"hash_347a612b61067eb3" );
+    self waittill( #"bot_action_update" );
 }
 
 // Namespace bot_action/bot_action
@@ -4566,7 +4566,7 @@ function test_gadget( actionparams )
             self botprinterror( "<dev string:x667>" + "<dev string:x681>" );
         #/
         
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
         return;
     }
     
@@ -4574,7 +4574,7 @@ function test_gadget( actionparams )
     
     while ( self isthrowinggrenade() || !self isweaponready() || self getcurrentweapon() == level.weaponnone )
     {
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
     }
 }
 
@@ -4659,7 +4659,7 @@ function deploy_gadget( actionparams, checkgrenade )
             self botprinterror( "<dev string:x6cd>" + "<dev string:x681>" );
         #/
         
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
         return;
     }
     
@@ -4667,7 +4667,7 @@ function deploy_gadget( actionparams, checkgrenade )
     
     while ( isdefined( checkgrenade ) && checkgrenade && self isthrowinggrenade() || !self isweaponready() || self getcurrentweapon() == level.weaponnone )
     {
-        self waittill( #"hash_347a612b61067eb3" );
+        self waittill( #"bot_action_update" );
     }
 }
 
@@ -4696,7 +4696,7 @@ function function_e7fa3d0()
 function function_29163ca5( weapon )
 {
     self botswitchtoweapon( weapon );
-    self waittill( #"hash_347a612b61067eb3" );
+    self waittill( #"bot_action_update" );
 }
 
 // Namespace bot_action/bot_action

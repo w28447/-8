@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_shared_popnlock_02",
+    "type": "#gesture",
+    "gesture": "#boast_popnlock_02",
+    "gesture2": "#boast_popnlock_02_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/king_tut",
+        "icon": "image#ui_icon_emotes_poplock2",
+        "isdefault": 0
+    }
+}

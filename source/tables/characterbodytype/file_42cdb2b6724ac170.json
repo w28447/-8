@@ -3,7 +3,7 @@
     "displayName": "#heroes/sarah_hall",
     "mpDialog": "#sarah_hall",
     "playerSoundsTable": "#cp_playersounds",
-    "playerFXTable": "#hash_471b500cc678f872",
+    "playerFXTable": "#wz_playerfx",
     "image_68": "#hash_cbf1e6e0bca7f951",
     "positionDraftPortrait": "#ui_icon_specialist_portrait_draft_sarah_hall",
     "lootUiIcon": "#hash_d71ff172a98804bb",

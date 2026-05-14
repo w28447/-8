@@ -47,7 +47,7 @@ CoD.BlackMarketTableUtility.ContractsTable.names = {
 	[0xD5B58A7C44E0BC9] = 0xDB3F62E91D6D4AD,
 	[0x650E2D48996A074] = 0x336BD62B45CB0D0,
 	[0x752D82E21C59CA2] = 0xC64CBCB4009D532,
-	[0x5E9C5F76F4313EE] = 0x6E3947D0C285856,
+	["loot_contract_battery_muertos"] = 0x6E3947D0C285856,
 	[0x1B99BA75FC6815B] = 0xA197B26A979BA03,
 	[0x62B4C89DF6C4748] = 0xB792A1E77329130,
 	[0x5572016F98EBF] = 0xDFF687B4909D53F,
@@ -58,10 +58,10 @@ CoD.BlackMarketTableUtility.ContractsTable.names = {
 	[0xCE320ACBEC7290] = 0x13CEC2364DF5AFC,
 	[0x6C3A0C6A5852E6C] = 0x95E85714371B8FC,
 	[0x5F6E52B608F6C7E] = 0x145AE564FD82FBE,
-	[0xCB9C0A6A8FC9EA6] = 0x2198DABA1541BB6,
+	["loot_contract_patriot"] = 0x2198DABA1541BB6,
 	[0xDB59140223584C0] = 0xA6F0C62E947A34,
 	[0xFEE79CED1E551FE] = 0x827A99C57C1B6C2,
-	[0xC11B7AB14B273E7] = 0x3DAB37E1DEF60D3,
+	["loot_contract_zero_cyberpunk"] = 0x3DAB37E1DEF60D3,
 	[0xFC6CB71E2F11C96] = 0x31C625E585AA402,
 	[0x604EA469518489] = 0x8FC5C29700A10C9,
 	[0xAF2C89CAAA95830] = 0xB4AC0940ECC3F38,
@@ -70,7 +70,7 @@ CoD.BlackMarketTableUtility.ContractsTable.names = {
 	[0xA9F4E2CBBA7040C] = 0x564E6A117034834,
 	[0xE7FDE1BD5E47B70] = 0x94BD1A0F5BF3C10,
 	[0x5D47C8C08C8A28B] = 0xC83D1A0A6BA0F7B,
-	[0x1B0C137006CF499] = 0xA5195F46F22BC31,
+	["loot_contract_misty"] = 0xA5195F46F22BC31,
 	[0xEFF03983B758670] = 0xDDDFFB3C508A690,
 	[0x223F86D05190129] = 0xEDA0608CF97548D,
 	[0xAB1C8C15097A6A7] = 0xBF4180C336F0D0B,
@@ -78,9 +78,9 @@ CoD.BlackMarketTableUtility.ContractsTable.names = {
 	[0xD310A26870C9133] = 0x25C3644FDCCCFAF,
 	[0x35B8EE2FFF03EE6] = 0xDE297F3D53BD86E,
 	[0x403D89F35E32813] = 0x6586E2580AADDB,
-	[0x909B7A622671FE8] = 0x8D926D4195CCFC8,
+	["loot_contract_fourth_of_july_event_stream"] = 0x8D926D4195CCFC8,
 	[0x634027E6133E1B0] = 0xDB01E2D49663E38,
-	[0xE953C96C4C8741] = 0xC2657C533E45C45,
+	["loot_contract_replacer_vacation"] = 0xC2657C533E45C45,
 	[0x93237993610A155] = 0x5664BCA02258FE5,
 	[0x1BDE9579F6B96DB] = 0x6B7E027B542D407,
 	[0xB41BB8669A0A872] = 0x4D842D45F57F3A6,
@@ -93,12 +93,12 @@ CoD.BlackMarketTableUtility.ContractsTable.names = {
 	[0x22E668AD573497] = 0xECD1931CDCEB2FB
 }
 CoD.BlackMarketTableUtility.StatBasedOutfitUnlocks = {
-	[0xB1FBC7172438FB8] = {
+	["zm_halloween_2018_reward_1"] = {
 		storageFile = Enum.StorageFileType[0xA57D6164B91A8FC],
 		path = {
 			0xB52E51401F0229C,
 			0xEA9AC6C7DB71C76,
-			0x6FE97FCC27C5EA
+			"reward_1"
 		},
 		lockedStringRef = 0x369ABF4C17436E3,
 		unlockedStringRef = 0xD655AC8E9A3ACCC,
@@ -131,12 +131,12 @@ CoD.BlackMarketTableUtility.StatBasedOutfitUnlocks = {
 			0x3716D88CBAEEB95
 		}
 	},
-	[0xB1FBF71724394D1] = {
+	["zm_halloween_2018_reward_2"] = {
 		storageFile = Enum.StorageFileType[0xA57D6164B91A8FC],
 		path = {
 			0xB52E51401F0229C,
 			0xEA9AC6C7DB71C76,
-			0x6FE87FCC27C437
+			"reward_2"
 		},
 		lockedStringRef = 0x369ABF4C17436E3,
 		unlockedStringRef = 0xD655AC8E9A3ACCC,
@@ -169,12 +169,12 @@ CoD.BlackMarketTableUtility.StatBasedOutfitUnlocks = {
 			0x88070541D135C3C
 		}
 	},
-	[0xB1FBE717243931E] = {
+	["zm_halloween_2018_reward_3"] = {
 		storageFile = Enum.StorageFileType[0xA57D6164B91A8FC],
 		path = {
 			0xB52E51401F0229C,
 			0xEA9AC6C7DB71C76,
-			0x6FE77FCC27C284
+			"reward_3"
 		},
 		lockedStringRef = 0x369ABF4C17436E3,
 		unlockedStringRef = 0xD655AC8E9A3ACCC,
@@ -207,12 +207,12 @@ CoD.BlackMarketTableUtility.StatBasedOutfitUnlocks = {
 			0x2CCDA68FB9F2501
 		}
 	},
-	[0xB1FC17172439837] = {
+	["zm_halloween_2018_reward_4"] = {
 		storageFile = Enum.StorageFileType[0xA57D6164B91A8FC],
 		path = {
 			0xB52E51401F0229C,
 			0xEA9AC6C7DB71C76,
-			0x6FE67FCC27C0D1
+			"reward_4"
 		},
 		lockedStringRef = 0x369ABF4C17436E3,
 		unlockedStringRef = 0xD655AC8E9A3ACCC,
@@ -250,7 +250,7 @@ CoD.BlackMarketTableUtility.StatBasedOutfitUnlocks = {
 		path = {
 			0xB52E51401F0229C,
 			0xEE6634B4CB6E9E2,
-			0x6FE97FCC27C5EA
+			"reward_1"
 		},
 		lockedStringRef = 0x59A4FBDA30BC349,
 		unlockedStringRef = 0x780F5BDCFEFA0A6,
@@ -289,7 +289,7 @@ CoD.BlackMarketTableUtility.StatBasedOutfitUnlocks = {
 		path = {
 			0xB52E51401F0229C,
 			0xEE6634B4CB6E9E2,
-			0x6FE87FCC27C437
+			"reward_2"
 		},
 		lockedStringRef = 0x59A4FBDA30BC349,
 		unlockedStringRef = 0x780F5BDCFEFA0A6,
@@ -328,7 +328,7 @@ CoD.BlackMarketTableUtility.StatBasedOutfitUnlocks = {
 		path = {
 			0xB52E51401F0229C,
 			0xEE6634B4CB6E9E2,
-			0x6FE77FCC27C284
+			"reward_3"
 		},
 		lockedStringRef = 0x59A4FBDA30BC349,
 		unlockedStringRef = 0x780F5BDCFEFA0A6,
@@ -367,7 +367,7 @@ CoD.BlackMarketTableUtility.StatBasedOutfitUnlocks = {
 		path = {
 			0xB52E51401F0229C,
 			0xEE6634B4CB6E9E2,
-			0x6FE67FCC27C0D1
+			"reward_4"
 		},
 		lockedStringRef = 0x59A4FBDA30BC349,
 		unlockedStringRef = 0x780F5BDCFEFA0A6,
@@ -406,7 +406,7 @@ CoD.BlackMarketTableUtility[0x33358695872A441] = {
 	[0xAAEF8C1B2CB1C79] = 0xF410B145DCE17BD,
 	[0x1205A986B4A89A7] = 0xA9842F6BEC0E568,
 	[0x814FA48F1A5AE2A] = 0x999516E5E35A515,
-	[0x3AEA5A87AEA226F] = 0x8596BC069593313,
+	[0x3AEA5A87AEA226F] = "prt_wz_firebreak",
 	[0xADFBB57B3F4939E] = 0x3D7717027A0F92,
 	[0xD1E23073FFE5E47] = 0xB77F84C47802222,
 	[0x2802518C8458986] = 0x2361C68E083D401,
@@ -430,7 +430,7 @@ CoD.BlackMarketTableUtility[0x48F022EAF4F53A3] = {
 		path = {
 			0xD59E8BFAC78A33B,
 			0x2C88C6128E0BE61,
-			0x3BF77799B56C06C
+			"statvalue"
 		},
 		lockedStringRef = 0xC6DC1A7FAC1E48,
 		unlockedStringRef = 0xFBC87DDBF94F262,
@@ -443,7 +443,7 @@ CoD.BlackMarketTableUtility[0x48F022EAF4F53A3] = {
 		path = {
 			0xD59E8BFAC78A33B,
 			0xD31F5C1693D096,
-			0x3BF77799B56C06C
+			"statvalue"
 		},
 		lockedStringRef = 0xDEADD371D74E38C,
 		unlockedStringRef = 0x74B2C581B1EE696,
@@ -456,7 +456,7 @@ CoD.BlackMarketTableUtility[0x48F022EAF4F53A3] = {
 		path = {
 			0xD59E8BFAC78A33B,
 			0xFEEBDA8BD7FDC,
-			0x3BF77799B56C06C
+			"statvalue"
 		},
 		lockedStringRef = 0xD04C533DC2235E6,
 		unlockedStringRef = 0x57F0E5854DC9308,
@@ -464,12 +464,12 @@ CoD.BlackMarketTableUtility[0x48F022EAF4F53A3] = {
 			return false
 		end
 	},
-	[0xAC5E92FDC84EEB4] = {
+	["ui_icon_stickers_gauntlet_hellcatraz"] = {
 		storageFile = Enum.StorageFileType[0xA57D6164B91A8FC],
 		path = {
 			0xD59E8BFAC78A33B,
 			0x402D97CCDAE530F,
-			0x3BF77799B56C06C
+			"statvalue"
 		},
 		lockedStringRef = 0xF075735A3BB5BB6,
 		unlockedStringRef = 0x9ADB853E213968F,
@@ -482,7 +482,7 @@ CoD.BlackMarketTableUtility[0x48F022EAF4F53A3] = {
 		path = {
 			0xD59E8BFAC78A33B,
 			0x3D2D5674D304C2D,
-			0x3BF77799B56C06C
+			"statvalue"
 		},
 		lockedStringRef = 0x16859B1C782F9F2,
 		unlockedStringRef = 0xE70F147F622CC72,
@@ -495,7 +495,7 @@ CoD.BlackMarketTableUtility[0x48F022EAF4F53A3] = {
 		path = {
 			0xD59E8BFAC78A33B,
 			0x12C92D966D3F90B,
-			0x3BF77799B56C06C
+			"statvalue"
 		},
 		lockedStringRef = 0x57782883FEE8976,
 		unlockedStringRef = 0x9BD658EB1AA6206,
@@ -508,7 +508,7 @@ CoD.BlackMarketTableUtility[0x48F022EAF4F53A3] = {
 		path = {
 			0xD59E8BFAC78A33B,
 			0x5A6063DD5DC5425,
-			0x3BF77799B56C06C
+			"statvalue"
 		},
 		lockedStringRef = 0x56A30ED7D329F5C,
 		unlockedStringRef = 0x1C2ECA0D6772E3A,
@@ -521,7 +521,7 @@ CoD.BlackMarketTableUtility[0x48F022EAF4F53A3] = {
 		path = {
 			0xD59E8BFAC78A33B,
 			0x5018EB03FB43999,
-			0x3BF77799B56C06C
+			"statvalue"
 		},
 		lockedStringRef = 0xEAA7F3D6F2BA4CC,
 		unlockedStringRef = 0x6DB81F2D0441E41,
@@ -534,7 +534,7 @@ CoD.BlackMarketTableUtility[0x48F022EAF4F53A3] = {
 		path = {
 			0xD59E8BFAC78A33B,
 			0x5FB724D439B8956,
-			0x3BF77799B56C06C
+			"statvalue"
 		},
 		lockedStringRef = 0x5B5BA355D71196A,
 		unlockedStringRef = 0x46A5E16D5603427,
@@ -636,7 +636,7 @@ CoD.BlackMarketTableUtility.GetStatsBasedUnlockId = function ()
 end
 
 CoD.BlackMarketTableUtility[0xB789987DAEDF129] = {
-	[0xE14EDE6FF41AFB] = "346173322",
+	["loot_pistol_standard_sig_01"] = "346173322",
 	[0x5B27C275D00AFF6] = "345570600"
 }
 CoD.BlackMarketTableUtility[0xACB591F93627122] = {
@@ -664,7 +664,7 @@ CoD.BlackMarketTableUtility[0x5DDB72D0172A035] = function ( f24_arg0, f24_arg1 )
 end
 
 CoD.BlackMarketTableUtility[0x152E2ED863A7D7A] = {
-	[0x6536463B3690BA5] = {
+	["c_t8_bo_jumpkit_game_cartridge"] = {
 		entitlement = 0x15BE56C5EA0253,
 		_id = "500036",
 		itemID = "445584988"
@@ -776,7 +776,7 @@ CoD.BlackMarketTableUtility[0x14DE8345BDDBCA8] = {
 	[0x5D901B2845AFFB5] = 500202,
 	[0x71546989F2B39C0] = 500203,
 	[0x7C8471AD085983B] = 500204,
-	[0xBAC19A8A93F750A] = 500205,
+	["pbt_mp_trapper"] = 500205,
 	[0x4A7B1F09EB77129] = 500206,
 	[0x65A8BFE9E6A3A8F] = 500207,
 	[0x15EFCE6AF8D9A10] = 500208,
@@ -793,10 +793,10 @@ CoD.BlackMarketTableUtility.GetInfoIfOnlyOwnedNonBaseWeapon = function ( f28_arg
 		if f28_local0 and #f28_local0 > 0 then
 			for f28_local6, f28_local7 in ipairs( f28_local0 ) do
 				if f28_local7 then
-					local f28_local4 = f28_local7[0x28887F70BF5EBA]
+					local f28_local4 = f28_local7["lootid"]
 					local f28_local5 = CoD.BlackMarketTableUtility.GetContrabandInfoForPlayer( f28_arg0, f28_local4, f28_arg4 )
 					if f28_local5 and f28_local5.owned and not CoD.CACUtility.DvarHideUnlockableItem( f28_local4, Engine.CurrentSessionMode() ) then
-						f28_local5.useVariantSlot = f28_local7[0x3CF8E8F9081468B]
+						f28_local5.useVariantSlot = f28_local7["index"]
 						return f28_local5
 					end
 				end
@@ -1185,7 +1185,7 @@ CoD.BlackMarketTableUtility.GetFullContractItemInfo = function ( f47_arg0, f47_a
 		f47_local0 = {
 			name = f47_arg1,
 			rarity = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.MasterContractTable.name, f47_local1[1], CoD.BlackMarketTableUtility.MasterContractTable.COL_RARITY ),
-			category = 0xDD6F73800E544EF
+			category = "special_order"
 		}
 	end
 	return f47_local0
@@ -2237,7 +2237,7 @@ CoD.BlackMarketTableUtility.GetItemShopInfoForPlayer = function ( f89_arg0, f89_
 end
 
 CoD.BlackMarketTableUtility.LootBonusTable = {}
-CoD.BlackMarketTableUtility.LootBonusTable.name = 0x30CAA8686798E2B
+CoD.BlackMarketTableUtility.LootBonusTable.name = "gamedata/loot/loot_bonus.csv"
 CoD.BlackMarketTableUtility.LootBonusTable.COL_NAMEHASH = 0
 CoD.BlackMarketTableUtility.LootBonusTable.COL_TYPE = 1
 CoD.BlackMarketTableUtility.LootBonusTable.COL_SET = 2
@@ -2538,7 +2538,7 @@ end
 
 CoD.BlackMarketTableUtility.GetMyShopItemId = function ( f106_arg0, f106_arg1 )
 	local f106_local0 = CoD.BlackMarketTableUtility.GetMyShopItemCategory( f106_arg0, f106_arg1 )
-	if f106_local0 == 0xDD6F73800E544EF then
+	if f106_local0 == "special_order" then
 		for f106_local4, f106_local5 in pairs( CoD.BlackMarketTableUtility.ContractsTable.names ) do
 			if f106_local4 == f106_arg1 then
 				return CoD.BlackMarketTableUtility.GetContractId( f106_local4 )
@@ -2546,7 +2546,7 @@ CoD.BlackMarketTableUtility.GetMyShopItemId = function ( f106_arg0, f106_arg1 )
 		end
 	elseif f106_local0 == 0x31315EF3FB1AE07 then
 		return CoD.BlackMarketTableUtility.GetItemShopEntryId( f106_arg0, f106_arg1 )
-	elseif f106_local0 == 0x8E5BF2EC7407C28 then
+	elseif f106_local0 == "loot_stream" then
 		return CoD.BlackMarketTableUtility.GetSeasonItemId( f106_arg0, f106_arg1 )
 	end
 	return nil
@@ -2635,7 +2635,7 @@ end
 
 CoD.BlackMarketTableUtility.GetDeterministicItemId = function ( f111_arg0, f111_arg1 )
 	local f111_local0 = CoD.BlackMarketTableUtility.GetDeterministicItemCategory( f111_arg0, f111_arg1 )
-	if f111_local0 == 0xDD6F73800E544EF then
+	if f111_local0 == "special_order" then
 		for f111_local4, f111_local5 in pairs( CoD.BlackMarketTableUtility.ContractsTable.names ) do
 			if f111_local4 == f111_arg1 then
 				return CoD.BlackMarketTableUtility.GetContractId( f111_local4 )
@@ -2643,7 +2643,7 @@ CoD.BlackMarketTableUtility.GetDeterministicItemId = function ( f111_arg0, f111_
 		end
 	elseif f111_local0 == 0x31315EF3FB1AE07 then
 		return CoD.BlackMarketTableUtility.GetItemShopEntryId( f111_arg0, f111_arg1 )
-	elseif f111_local0 == 0x8E5BF2EC7407C28 then
+	elseif f111_local0 == "loot_stream" then
 		return CoD.BlackMarketTableUtility.GetSeasonItemId( f111_arg0, f111_arg1 )
 	end
 	return nil

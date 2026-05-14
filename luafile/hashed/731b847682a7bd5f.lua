@@ -58,7 +58,7 @@ CoD.CamoFilterButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local BracketL = LUI.UIImage.new( 1, 1, -105.5, -97.5, 0.5, 0.5, -10.5, 13.5 )
 	BracketL:setAlpha( 0 )
-	BracketL:setImage( RegisterImage( 0x6AA0A70F33D3978 ) )
+	BracketL:setImage( RegisterImage( "uie_ui_menu_specialist_hub_customize_bracket" ) )
 	BracketL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BracketL )
 	self.BracketL = BracketL
@@ -66,7 +66,7 @@ CoD.CamoFilterButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local BracketR = LUI.UIImage.new( 1, 1, -29.5, -21.5, 0.5, 0.5, -11.5, 12.5 )
 	BracketR:setAlpha( 0 )
 	BracketR:setZRot( 180 )
-	BracketR:setImage( RegisterImage( 0x6AA0A70F33D3978 ) )
+	BracketR:setImage( RegisterImage( "uie_ui_menu_specialist_hub_customize_bracket" ) )
 	BracketR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BracketR )
 	self.BracketR = BracketR

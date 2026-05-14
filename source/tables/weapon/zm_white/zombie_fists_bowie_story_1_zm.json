@@ -2,7 +2,7 @@
     "name": "#zombie_fists_bowie_story_1_zm",
     "baseWeapon": "#zombie_fists_bowie_story_1",
     "displayname": "#zmweapon/none",
-    "streamkey": "#hash_25f6abc290507a06",
+    "streamkey": "#zombie_fists_bowie_story_1_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",

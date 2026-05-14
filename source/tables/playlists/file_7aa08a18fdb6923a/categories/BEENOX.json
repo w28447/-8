@@ -50,7 +50,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_115556efd1526bf8",
+                    "name": "#ui_showwzaar",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -98,7 +98,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_70d75463b2b9ca00",
+                    "name": "#scr_scripterrorsarefatal",
                     "value": "true",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -161,7 +161,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_115556efd1526bf8",
+                    "name": "#ui_showwzaar",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -209,7 +209,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_70d75463b2b9ca00",
+                    "name": "#scr_scripterrorsarefatal",
                     "value": "true",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -272,7 +272,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_115556efd1526bf8",
+                    "name": "#ui_showwzaar",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -320,7 +320,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_70d75463b2b9ca00",
+                    "name": "#scr_scripterrorsarefatal",
                     "value": "true",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -340,7 +340,7 @@
         },
         {
             "name": "#hash_246fc249aedf0abf",
-            "description": "#hash_6ad4c3e45839018d",
+            "description": "#playlist/beenox",
             "unique_name": "#hash_1da58296cd29f9b7",
             "visibleProfileVar": "#hash_5e563e6544ff9705",
             "lobbyMainMode": "MULTIPLAYER",
@@ -626,7 +626,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_115556efd1526bf8",
+                    "name": "#ui_showwzaar",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -770,7 +770,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_115556efd1526bf8",
+                    "name": "#ui_showwzaar",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -914,7 +914,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_115556efd1526bf8",
+                    "name": "#ui_showwzaar",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -1025,7 +1025,7 @@
                 },
                 {
                     "type": "SET_DVAR",
-                    "name": "#hash_115556efd1526bf8",
+                    "name": "#ui_showwzaar",
                     "value": "1",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -1223,7 +1223,7 @@
                 },
                 {
                     "type": "GAMETYPE_SETTINGS",
-                    "name": "#hash_6eb44149a8ac6dd1",
+                    "name": "#wzenablevehicledrops",
                     "value": "0",
                     "platformMask": 7,
                     "environmentMask": 7,
@@ -1231,7 +1231,7 @@
                     "utcEndTime": 0,
                     "unk40": [
                         {
-                            "unk0": "#hash_6eb44149a8ac6dd1",
+                            "unk0": "#wzenablevehicledrops",
                             "unk10": 0
                         }
                     ]

@@ -304,7 +304,7 @@ LUI.createMenu.MPSpecialistHUBInspect = function ( f1_arg0, f1_arg1 )
 		OpenOverlay( self, "MPSpecialistHUBPreviewMoment", f34_arg2 )
 		return true
 	end, function ( f35_arg0, f35_arg1, f35_arg2 )
-		CoD.Menu.SetButtonLabel( f35_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x52FB29ED3A3CA79, nil, "ui_contextual_2" )
+		CoD.Menu.SetButtonLabel( f35_arg1, Enum.LUIButton[0xC083113BC81F23F], "menu/preview", nil, "ui_contextual_2" )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

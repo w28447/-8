@@ -142,7 +142,7 @@ function function_2297363d( localclientnum )
         {
             if ( doearthquake )
             {
-                player.grappleeq = earthquake( localclientnum, level.grapplebundle.var_1598129, 10000, player.origin, 0, 0 );
+                player.grappleeq = earthquake( localclientnum, level.grapplebundle.grapplescreenshake, 10000, player.origin, 0, 0 );
                 doearthquake = 0;
             }
             

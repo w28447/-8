@@ -77,7 +77,7 @@ function __init__()
     clientfield::register( "vehicle", "" + #"zombie_spectral_key_stun", 1, n_bits, "int" );
     clientfield::register( "scriptmover", "" + #"zombie_spectral_key_stun", 1, n_bits, "int" );
     clientfield::register( "scriptmover", "" + #"spectral_key_essence", 1, 1, "int" );
-    clientfield::register( "allplayers", "" + #"hash_7663ae2eb866d2eb", 1, 1, "counter" );
+    clientfield::register( "allplayers", "" + #"spectral_key_absorb", 1, 1, "counter" );
     clientfield::register( "allplayers", "" + #"spectral_key_charging", 1, 2, "int" );
     clientfield::register( "allplayers", "" + #"spectral_shield_blast", 1, 1, "counter" );
     clientfield::register( "scriptmover", "" + #"shield_crafting_fx", 1, 1, "counter" );
@@ -118,7 +118,7 @@ function __main__()
 function function_70072647()
 {
     self.var_9fd623ed = 0;
-    self callback::function_33f0ddd3( &function_33f0ddd3 );
+    self callback::on_player_loadout_changed( &on_player_loadout_changed );
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield
@@ -144,7 +144,7 @@ function function_98890cd8( w_current )
 // Params 1, eflags: 0x4
 // Checksum 0x2e6d782b, Offset: 0xc18
 // Size: 0x1de
-function private function_33f0ddd3( eventstruct )
+function private on_player_loadout_changed( eventstruct )
 {
     if ( eventstruct.weapon === level.var_d7e67022 || eventstruct.weapon === level.var_637136f3 )
     {
@@ -217,7 +217,7 @@ function function_4173ee30()
         }
         
         zm_hero_weapon::show_hint( w_current, #"hash_1656aebadea29360" );
-        self playsoundtoplayer( #"hash_6a9b5c781d4019b2", self );
+        self playsoundtoplayer( #"zmb_shield_on", self );
         
         if ( w_current == level.var_637136f3 )
         {
@@ -294,7 +294,7 @@ function function_401e4768()
     
     if ( function_98890cd8( self.previousweapon ) )
     {
-        self playsoundtoplayer( #"hash_6632e419b4028fc4", self );
+        self playsoundtoplayer( #"zmb_shield_off", self );
     }
     
     self thread function_cb1c46b8( 0 );
@@ -405,7 +405,7 @@ function private function_b952c1b( ai_zombie )
     var_88f24b00 delete();
     wait 0.1;
     self playsoundontag( #"zmb_sq_souls_impact", "tag_weapon_right" );
-    self clientfield::increment( "" + #"hash_7663ae2eb866d2eb" );
+    self clientfield::increment( "" + #"spectral_key_absorb" );
     self.var_9fd623ed = math::clamp( self.var_9fd623ed + 1, 0, self.var_f7c822b5 * 3 );
     self thread function_804309c();
     self notify( #"hash_22a49f7903e394a5" );
@@ -580,7 +580,7 @@ function melee_power( weapon )
     if ( self.var_9fd623ed >= 3 && ( weapon == level.var_4e845c84 || weapon == level.var_58e17ce3 ) )
     {
         self clientfield::increment( "" + #"spectral_shield_blast", 1 );
-        self playsound( #"hash_4fa7a7bff648310f" );
+        self playsound( #"zmb_shield_blast" );
         self.var_9fd623ed = math::clamp( self.var_9fd623ed - 3, 0, self.var_f7c822b5 * 3 );
         self thread function_804309c();
         self notify( #"hash_22a49f7903e394a5" );
@@ -1662,7 +1662,7 @@ function function_9693e041( player )
             return;
         }
         
-        self.hint_string = #"hash_53fd856df9288be7";
+        self.hint_string = #"zombie/build_piece_have_one";
         self.cost = undefined;
         return 1;
     }

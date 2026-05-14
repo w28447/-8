@@ -1,6 +1,6 @@
 {
     "name": "#hash_4e459fbe6fa4ca49",
-    "unk28": "#hash_3173b9517dfa5fd5",
+    "unk28": "#badstatsversion",
     "ddlDef": "#hash_5135fbfc7951277d",
     "unk18": 0,
     "unk19": 1,
@@ -47,7 +47,7 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT32"
                     },
@@ -116,7 +116,7 @@
             "len": 48
         },
         {
-            "name": "#hash_5615eb55a49125e3",
+            "name": "#ourversion",
             "scrName": "#hash_d91eb821",
             "type": "INT32"
         },

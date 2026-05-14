@@ -34,13 +34,13 @@ class cct_shared_button_prompt : cluielem
             return;
         }
         
-        if ( #"hash_321379c3a0d01a39" == state_name )
+        if ( #"smoke_button_off" == state_name )
         {
             player clientfield::function_9bf78ef8( _uid, "_state", 3 );
             return;
         }
         
-        if ( #"hash_39ade572f801d7d0" == state_name )
+        if ( #"frag_button_off" == state_name )
         {
             player clientfield::function_9bf78ef8( _uid, "_state", 4 );
             return;
@@ -52,25 +52,25 @@ class cct_shared_button_prompt : cluielem
             return;
         }
         
-        if ( #"hash_554e932bc3ab8c3e" == state_name )
+        if ( #"x_button_off" == state_name )
         {
             player clientfield::function_9bf78ef8( _uid, "_state", 6 );
             return;
         }
         
-        if ( #"hash_15620c895dcec00e" == state_name )
+        if ( #"smoke_button_paused" == state_name )
         {
             player clientfield::function_9bf78ef8( _uid, "_state", 7 );
             return;
         }
         
-        if ( #"hash_2cb5a2ce94a6ee6d" == state_name )
+        if ( #"frag_button_paused" == state_name )
         {
             player clientfield::function_9bf78ef8( _uid, "_state", 8 );
             return;
         }
         
-        if ( #"hash_4df4fd56580d5967" == state_name )
+        if ( #"x_button_paused" == state_name )
         {
             player clientfield::function_9bf78ef8( _uid, "_state", 9 );
             return;
@@ -106,13 +106,13 @@ class cct_shared_button_prompt : cluielem
             return;
         }
         
-        if ( #"hash_1e3e2411c866b2a0" == state_name )
+        if ( #"square_button_paused_off" == state_name )
         {
             player clientfield::function_9bf78ef8( _uid, "_state", 15 );
             return;
         }
         
-        if ( #"hash_55f9c9d7bfc38059" == state_name )
+        if ( #"square_button_off" == state_name )
         {
             player clientfield::function_9bf78ef8( _uid, "_state", 16 );
             return;

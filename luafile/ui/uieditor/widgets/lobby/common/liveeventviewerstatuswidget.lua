@@ -10,7 +10,7 @@ CoD.LiveEventViewerStatusWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local liveLabel = LUI.UIText.new( 0, 0, 38, 77, 0.5, 0.5, -19, 19 )
-	liveLabel:setText( Engine[0xF9F1239CFD921FE]( 0x4AD4D7A985521CF ) )
+	liveLabel:setText( Engine[0xF9F1239CFD921FE]( "menu/live_caps" ) )
 	liveLabel:setTTF( "default" )
 	liveLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	self:addElement( liveLabel )
@@ -65,7 +65,7 @@ CoD.LiveEventViewerStatusWidget.__resetProperties = function ( f5_arg0 )
 	f5_arg0.liveCircle:setRGB( 1, 0, 0 )
 	f5_arg0.liveCircle:setAlpha( 1 )
 	f5_arg0.liveLabel:setAlpha( 1 )
-	f5_arg0.liveLabel:setText( Engine[0xF9F1239CFD921FE]( 0x4AD4D7A985521CF ) )
+	f5_arg0.liveLabel:setText( Engine[0xF9F1239CFD921FE]( "menu/live_caps" ) )
 end
 
 CoD.LiveEventViewerStatusWidget.__clipsPerState = {

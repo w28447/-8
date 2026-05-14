@@ -98,7 +98,7 @@ CoD.BonuscardUtility.BonuscardInfoTable = {
 	[0xB03ADC532F77517] = {
 		modifiedSlotEnum = CoD.BonuscardUtility.BonuscardModifiedSlotType.TALENT_6
 	},
-	[0x1F0C17573BB2E79] = {
+	["bonuscard_overkill"] = {
 		modifiedSlotEnum = CoD.BonuscardUtility.BonuscardModifiedSlotType.SECONDARY
 	},
 	[0x439C6CFA8A0CFEB] = {

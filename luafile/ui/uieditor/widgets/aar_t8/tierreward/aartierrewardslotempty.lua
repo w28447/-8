@@ -26,7 +26,7 @@ CoD.AARTierRewardSlotEmpty.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local Brackets = LUI.UIImage.new( 0, 1, -4, 4, 0, 1, -4, 4 )
 	Brackets:setRGB( 0.49, 0.49, 0.49 )
 	Brackets:setAlpha( 0.03 )
-	Brackets:setImage( RegisterImage( 0x793C73633F620BB ) )
+	Brackets:setImage( RegisterImage( "uie_ui_menu_store_focus_pips" ) )
 	Brackets:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Brackets:setShaderVector( 0, 0, 0, 0, 0 )
 	Brackets:setupNineSliceShader( 44, 44 )

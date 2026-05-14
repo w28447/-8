@@ -14,7 +14,7 @@ CoD.DirectorZMTutorialSelectItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local DirectorPlaylistOptionaInternal = CoD.DirectorPlaylistOptionInternal.new( f1_arg0, f1_arg1, 0, 1, 0, 0, 0, 1, 0, 0 )
-	DirectorPlaylistOptionaInternal.MiddleText:setText( LocalizeToUpperString( 0xA43B10D9DA121A ) )
+	DirectorPlaylistOptionaInternal.MiddleText:setText( LocalizeToUpperString( "menu/waiting_caps" ) )
 	DirectorPlaylistOptionaInternal.GamemodeIcon:setAlpha( 0 )
 	DirectorPlaylistOptionaInternal.PlaylistImage:setAlpha( 1 )
 	DirectorPlaylistOptionaInternal.DoubleXPCardIconsLeftAligned:setAlpha( 0 )

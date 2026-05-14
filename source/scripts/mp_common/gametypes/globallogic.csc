@@ -243,7 +243,7 @@ function function_765b7c63( local_client_num, oldval, newval, bnewent, binitials
     {
         if ( !( isdefined( self.var_33b61b6f ) && self.var_33b61b6f ) )
         {
-            self.var_8e7f416f = self playloopsound( #"hash_a93a3bf58dbd89d" );
+            self.var_8e7f416f = self playloopsound( #"fly_thermal_scope" );
             self.var_33b61b6f = 1;
         }
     }

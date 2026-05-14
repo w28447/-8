@@ -29,7 +29,7 @@ CoD.StartMenu_Barracks_WL.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 			end
 		}
 	} )
-	ProgressUnlocks.ButtonInternal.ImageContainer.ImageContainer:setImage( RegisterImage( 0xCB7B28E1ED13921 ) )
+	ProgressUnlocks.ButtonInternal.ImageContainer.ImageContainer:setImage( RegisterImage( "uie_ui_menu_start_menu_grid" ) )
 	ProgressUnlocks.ButtonInternal.StartMenuButtonFrame:changeFrameWidget( CoD.ButtonFrame_WorldLeagueProgress )
 	ProgressUnlocks.ButtonInternal.ButtonTitle.HeaderText:setText( LocalizeToUpperString( 0x4ACCE4091313402 ) )
 	ProgressUnlocks:registerEventHandler( "gain_focus", function ( element, event )
@@ -134,9 +134,9 @@ CoD.StartMenu_Barracks_WL.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.StatsOverview = StatsOverview
 	
 	LeaguePlayMedals = CoD.StartMenu_Button_LG.new( f1_arg0, f1_arg1, 0.5, 0.5, -836.5, -367.5, 0.5, 0.5, 66.5, 336.5 )
-	LeaguePlayMedals.ButtonInternal.ImageContainer.ImageContainer:setImage( RegisterImage( 0xCB7B28E1ED13921 ) )
+	LeaguePlayMedals.ButtonInternal.ImageContainer.ImageContainer:setImage( RegisterImage( "uie_ui_menu_start_menu_grid" ) )
 	LeaguePlayMedals.ButtonInternal.StartMenuButtonFrame:changeFrameWidget( CoD.ButtonFrame_ArenaMedals )
-	LeaguePlayMedals.ButtonInternal.ButtonTitle.HeaderText:setText( LocalizeHash( 0x8F69F5BDD4F7C26 ) )
+	LeaguePlayMedals.ButtonInternal.ButtonTitle.HeaderText:setText( LocalizeHash( "menu/aar_tab_medals_caps" ) )
 	LeaguePlayMedals:subscribeToGlobalModel( f1_arg1, "PlayerShowcase", "medal", function ( model )
 		LeaguePlayMedals.ButtonInternal.ButtonTitle.NewIcon:setModel( model, f1_arg1 )
 	end )
@@ -171,7 +171,7 @@ CoD.StartMenu_Barracks_WL.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local LeaguePlayCareer = CoD.StartMenu_Button_LG.new( f1_arg0, f1_arg1, 0.5, 0.5, -836.5, -367.5, 0.5, 0.5, -336.5, -58.5 )
 	LeaguePlayCareer:setAlpha( 0 )
-	LeaguePlayCareer.ButtonInternal.ImageContainer.ImageContainer:setImage( RegisterImage( 0xCB7B28E1ED13921 ) )
+	LeaguePlayCareer.ButtonInternal.ImageContainer.ImageContainer:setImage( RegisterImage( "uie_ui_menu_start_menu_grid" ) )
 	LeaguePlayCareer.ButtonInternal.StartMenuButtonFrame:changeFrameWidget( CoD.ButtonFrame_ArenaBarracksStats )
 	LeaguePlayCareer.ButtonInternal.ButtonTitle.HeaderText:setText( LocalizeHash( 0xEED2099B101A416 ) )
 	self:addElement( LeaguePlayCareer )

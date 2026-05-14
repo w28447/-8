@@ -32,7 +32,7 @@ Lobby.Debug.LobbyMember = {
 	[0xE7F6DC955C3E51F] = {}
 }
 Lobby.Debug.Matchmaking = {
-	[0xFE1BB65E8DE4D51] = Engine.DefaultID64Value(),
+	["to_matchmaking_id"] = Engine.DefaultID64Value(),
 	[0xA4B7F92D7E1DC7B] = Engine.DefaultID64Value()
 }
 Lobby.Debug.jbEvent = LuaEnum.JB_MATCHMAKING_EVENT.START
@@ -147,8 +147,8 @@ Lobby.Debug.LobbyValidate = function ()
 	if f5_local0 ~= LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.MAIN ) and f5_local0 ~= LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_LAN ) and f5_local0 ~= LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE ) and f5_local1[0xBDB8620451D6112] ~= f5_local2 then
 		Engine.PrintInfo( Enum[0x7A63DCD561B0FA8][0xC1DE3DC19B3B20D], Lobby.Debug.COLOR.MAGENTA .. "Lobby.Debug.LobbyValidate: Network Mode mismatch. uiInfo.@networkMode(" .. f5_local1[0xBDB8620451D6112] .. ") ~= networkMode(" .. f5_local2 .. ").\n" )
 	end
-	if f5_local1[0xEB7DDC7F079D51B] ~= f5_local3 then
-		Engine.PrintInfo( Enum[0x7A63DCD561B0FA8][0xC1DE3DC19B3B20D], Lobby.Debug.COLOR.MAGENTA .. "Lobby.Debug.LobbyValidate: Main Mode mismatch. uiInfo.@mainMode(" .. f5_local1[0xEB7DDC7F079D51B] .. ") ~= mainMode(" .. f5_local3 .. ").\n" )
+	if f5_local1["mainmode"] ~= f5_local3 then
+		Engine.PrintInfo( Enum[0x7A63DCD561B0FA8][0xC1DE3DC19B3B20D], Lobby.Debug.COLOR.MAGENTA .. "Lobby.Debug.LobbyValidate: Main Mode mismatch. uiInfo.@mainMode(" .. f5_local1["mainmode"] .. ") ~= mainMode(" .. f5_local3 .. ").\n" )
 	end
 	if f5_local1[0x364CF0AB5CDF3BC] ~= f5_local4 then
 		Engine.PrintInfo( Enum[0x7A63DCD561B0FA8][0xC1DE3DC19B3B20D], string.format( Lobby.Debug.COLOR.MAGENTA .. "Lobby.Debug.LobbyValidate: Private active mismatch. uiInfo.@isPrivate(%s) ~= privateActive(%s).\n", tostring( f5_local1[0x364CF0AB5CDF3BC] ), tostring( f5_local4 ) ) )
@@ -560,12 +560,12 @@ Lobby.Debug.OnProcessStart = function ( f30_arg0 )
 		end
 		Lobby.Debug.LobbyMember[0x3081CC1B79588F9] = f30_local6
 	end
-	Lobby.Debug.ProcessQueueDlogEvent[0x20C75B526B35282][0x8C4483FED6CF75E] = Lobby.Debug.ProcessQueueDlogEvent[0x20C75B526B35282][0xFE1BB65E8DE4D51]
+	Lobby.Debug.ProcessQueueDlogEvent[0x20C75B526B35282][0x8C4483FED6CF75E] = Lobby.Debug.ProcessQueueDlogEvent[0x20C75B526B35282]["to_matchmaking_id"]
 	Lobby.Debug.ProcessQueueDlogEvent[0x20C75B526B35282][0xC2F2B7A55FD35A8] = Lobby.Debug.ProcessQueueDlogEvent[0x20C75B526B35282][0xA4B7F92D7E1DC7B]
 end
 
 Lobby.Debug.OnAsyncMatchmaking = function ( f31_arg0 )
-	Lobby.Debug.Matchmaking[0xFE1BB65E8DE4D51] = f31_arg0.matchMakingID
+	Lobby.Debug.Matchmaking["to_matchmaking_id"] = f31_arg0.matchMakingID
 	Lobby.Debug.Matchmaking[0xA4B7F92D7E1DC7B] = f31_arg0.lobbyID
 end
 
@@ -582,7 +582,7 @@ Lobby.Debug.OnActionComplete = function ( f32_arg0, f32_arg1, f32_arg2 )
 			if not f32_local1 then
 			
 			else
-				f32_local0[0x1BBB45E57D09096] = f32_local1
+				f32_local0["next_name"] = f32_local1
 				actions[0xAB8AAB6B2814644][actions[0x44BDF8CCA0D560F]][0x56F2A8CEDD956FD] = f32_arg0.actionId
 				actions[0xAB8AAB6B2814644][actions[0x44BDF8CCA0D560F]][0x73DFB188DE1A27D] = f32_arg2
 				Lobby.Debug.ProcessQueueDlogEvent[0x20C75B526B35282][0xB950829C03B3406] = Lobby.Debug.ProcessQueueDlogEvent[0x20C75B526B35282][0xB950829C03B3406] or f32_arg2
@@ -618,7 +618,7 @@ Lobby.Debug.OnProcessComplete = function ()
 	Lobby.Debug.ProcessQueueDlogEvent[0xE7F6DC955C3E51F] = Lobby.Debug.LobbyMember[0xE7F6DC955C3E51F]
 	Lobby.Debug.ProcessQueueDlogEvent[0x20C75B526B35282][0x3081CC1B79588F9] = Lobby.Debug.LobbyMember[0x3081CC1B79588F9]
 	Lobby.Debug.ProcessQueueDlogEvent[0x20C75B526B35282][0x9BF5522E36C4FF6] = Lobby.Debug.LobbyMember[0x9BF5522E36C4FF6]
-	Lobby.Debug.ProcessQueueDlogEvent[0x20C75B526B35282][0xFE1BB65E8DE4D51] = Lobby.Debug.Matchmaking[0xFE1BB65E8DE4D51]
+	Lobby.Debug.ProcessQueueDlogEvent[0x20C75B526B35282]["to_matchmaking_id"] = Lobby.Debug.Matchmaking["to_matchmaking_id"]
 	Lobby.Debug.ProcessQueueDlogEvent[0x20C75B526B35282][0xA4B7F92D7E1DC7B] = Lobby.Debug.Matchmaking[0xA4B7F92D7E1DC7B]
 	if Dvar[0xB59E659FCF4DB51]:get() then
 		Engine[0xDE279ECDDDD966]( Engine.GetPrimaryController(), 0x2FBA4E98DF55C89, Lobby.Debug.ProcessQueueDlogEvent )
@@ -627,10 +627,10 @@ Lobby.Debug.OnProcessComplete = function ()
 end
 
 Lobby.Debug.ResetProcessQueueDlogEvent = function ()
-	to_matchmaking_id = Lobby.Debug.ProcessQueueDlogEvent[0x20C75B526B35282][0xFE1BB65E8DE4D51]
+	to_matchmaking_id = Lobby.Debug.ProcessQueueDlogEvent[0x20C75B526B35282]["to_matchmaking_id"]
 	to_match_lobby_id = Lobby.Debug.ProcessQueueDlogEvent[0x20C75B526B35282][0xA4B7F92D7E1DC7B]
 	Lobby.Debug.ProcessQueueDlogEvent[0x20C75B526B35282] = {}
-	Lobby.Debug.ProcessQueueDlogEvent[0x20C75B526B35282][0xFE1BB65E8DE4D51] = to_matchmaking_id
+	Lobby.Debug.ProcessQueueDlogEvent[0x20C75B526B35282]["to_matchmaking_id"] = to_matchmaking_id
 	Lobby.Debug.ProcessQueueDlogEvent[0x20C75B526B35282][0xA4B7F92D7E1DC7B] = to_match_lobby_id
 	Lobby.Debug.Action[0x44BDF8CCA0D560F] = 0
 	Lobby.Debug.Action[0xAB8AAB6B2814644] = {}
@@ -646,7 +646,7 @@ Lobby.Debug.OnSessionStart = function ( f35_arg0 )
 	f35_arg0.lobbyID = Engine[0x8CB6D1C656D57EE]( f35_local0, f35_local1 )
 	Engine[0xDE279ECDDDD966]( Engine.GetPrimaryController(), 0x8152512C03A265B, {
 		[0xA988C5BE2B9606C] = f35_arg0.lobbyModule,
-		[0x193F66F4B46350C] = f35_arg0.lobbyType,
+		["lobby_type"] = f35_arg0.lobbyType,
 		[0x63C8C33B4DB02C7] = f35_arg0.lobbyMode
 	} )
 	if f35_local1 == Enum.LobbyType[0x92676CF5B6FCD43] and f35_local0 == Enum.LobbyModule[0x98EA1BB7164D103] and (not Dvar[0x4BADE8473F0165F]:exists() or not Dvar[0x4BADE8473F0165F]:get()) then
@@ -661,7 +661,7 @@ Lobby.Debug.OnSessionEnd = function ( f36_arg0 )
 	f36_arg0.lobbyID = Engine[0x8CB6D1C656D57EE]( f36_local0, f36_local1 )
 	Engine[0xDE279ECDDDD966]( Engine.GetPrimaryController(), 0x56D8D6EEEB3533E, {
 		[0xA988C5BE2B9606C] = f36_arg0.lobbyModule,
-		[0x193F66F4B46350C] = f36_arg0.lobbyType,
+		["lobby_type"] = f36_arg0.lobbyType,
 		[0x63C8C33B4DB02C7] = f36_arg0.lobbyMode
 	} )
 end
@@ -672,7 +672,7 @@ Lobby.Debug.OnMatchStart = function ( f37_arg0 )
 	local f37_local2 = f37_arg0.lobbyMode
 	Engine[0xDE279ECDDDD966]( Engine.GetPrimaryController(), 0xE254CD7EDAA8B12, {
 		[0xA988C5BE2B9606C] = f37_arg0.lobbyModule,
-		[0x193F66F4B46350C] = f37_arg0.lobbyType,
+		["lobby_type"] = f37_arg0.lobbyType,
 		[0x63C8C33B4DB02C7] = f37_arg0.lobbyMode
 	} )
 	if Dvar[0xAC9C04A5EFC9DAD]:exists() then
@@ -684,7 +684,7 @@ end
 Lobby.Debug.OnMatchEnd = function ( f38_arg0 )
 	Engine[0xDE279ECDDDD966]( Engine.GetPrimaryController(), 0x567090FC821F077, {
 		[0xA988C5BE2B9606C] = f38_arg0.lobbyModule,
-		[0x193F66F4B46350C] = f38_arg0.lobbyType,
+		["lobby_type"] = f38_arg0.lobbyType,
 		[0x63C8C33B4DB02C7] = f38_arg0.lobbyMode
 	} )
 end
@@ -734,7 +734,7 @@ Lobby.Debug.CreateDedicatedBotTestGameLobbyNONMatchmaking = function ( f42_arg0,
 		Lobby.Timer.HostingLobby( {
 			controller = f42_arg0,
 			lobbyType = f42_arg2.LobbyType,
-			mainMode = f42_arg2[0xEB7DDC7F079D51B],
+			mainMode = f42_arg2["mainmode"],
 			lobbyTimerType = f42_arg2[0x558B67A321D1120]
 		} )
 		Lobby.Matchmaking.ClearSearchInfo()
@@ -754,7 +754,7 @@ Lobby.Debug.CreateDedicatedBotTestGameLobbyNONMatchmaking = function ( f42_arg0,
 	local f42_local9 = Lobby.Actions.WaitForJoiningClients( 5000 )
 	local f42_local10 = Lobby.Actions.ExecuteScript( f42_local4 )
 	local f42_local11 = Lobby.Actions.ExecuteScript( f42_local5 )
-	local f42_local12 = Lobby.Actions.LobbyHostStart( f42_arg0, f42_arg2[0xEB7DDC7F079D51B], f42_arg2.LobbyType, f42_arg2.LobbyMode, f42_arg2[0xEE71E4EE12BC453], f42_arg3, f42_arg4 )
+	local f42_local12 = Lobby.Actions.LobbyHostStart( f42_arg0, f42_arg2["mainmode"], f42_arg2.LobbyType, f42_arg2.LobbyMode, f42_arg2[0xEE71E4EE12BC453], f42_arg3, f42_arg4 )
 	local f42_local13 = Lobby.Actions.ExecuteScript( f42_local6 )
 	local f42_local14 = Lobby.Actions.LobbySettings( f42_arg0, f42_arg2 )
 	local f42_local15 = Lobby.Actions.UpdateUI( f42_arg0, f42_arg2 )

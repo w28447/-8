@@ -432,7 +432,7 @@ function function_c80bac1f( shockcharge, var_51415470, shockduration )
     }
     
     shocked_hands = getweapon( #"shocked_hands" );
-    var_cb36e12 = getweapon( #"hash_19abd3767bd1566d" );
+    crawl_hands = getweapon( #"force_crawl_hands" );
     self giveweapon( shocked_hands );
     self switchtoweaponimmediate( shocked_hands, 1 );
     prevstance = self getstance();
@@ -443,8 +443,8 @@ function function_c80bac1f( shockcharge, var_51415470, shockduration )
     self allowcrouch( 1 );
     self allowprone( 0 );
     self allowstand( 0 );
-    self giveweapon( var_cb36e12 );
-    self switchtoweaponimmediate( var_cb36e12, 1 );
+    self giveweapon( crawl_hands );
+    self switchtoweaponimmediate( crawl_hands, 1 );
     
     if ( isplayer( self ) )
     {
@@ -474,7 +474,7 @@ function function_c80bac1f( shockcharge, var_51415470, shockduration )
     
     self.var_beee9523 = 0;
     self function_3474c820();
-    playsoundatposition( #"hash_f2b6a97233cbeb2", self.origin );
+    playsoundatposition( #"wpn_shockrifle_electrocution_end", self.origin );
     
     if ( isplayer( self ) )
     {
@@ -484,7 +484,7 @@ function function_c80bac1f( shockcharge, var_51415470, shockduration )
     }
     
     self enableweaponcycling();
-    self takeweapon( var_cb36e12 );
+    self takeweapon( crawl_hands );
     self takeweapon( shocked_hands );
     self killstreaks::switch_to_last_non_killstreak_weapon( 1, 0, 0 );
     self waittill( #"weapon_change" );

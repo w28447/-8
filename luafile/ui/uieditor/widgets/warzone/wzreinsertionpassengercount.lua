@@ -52,7 +52,7 @@ CoD.WZReinsertionPassengerCount.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local ImagePandemic = LUI.UIImage.new( 1, 1, -1788, -1753, 0, 0, 27.5, 62.5 )
 	ImagePandemic:setAlpha( 0 )
-	ImagePandemic:setImage( RegisterImage( 0x7EAC82FFC1BA9E1 ) )
+	ImagePandemic:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_icon_pandemic" ) )
 	self:addElement( ImagePandemic )
 	self.ImagePandemic = ImagePandemic
 	

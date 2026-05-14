@@ -10,7 +10,7 @@ CoD.TabletLocationSelector_PointMarker.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local IconFrame = LUI.UIImage.new( 0.74, 0.74, -44, 20, 0.76, 0.76, -44, 20 )
 	IconFrame:setAlpha( 0 )
-	IconFrame:setImage( RegisterImage( 0x87A7AC36F9F587F ) )
+	IconFrame:setImage( RegisterImage( "uie_ui_hud_cp_hud_tacmode_echo" ) )
 	self:addElement( IconFrame )
 	self.IconFrame = IconFrame
 	

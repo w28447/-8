@@ -167,7 +167,7 @@ CoD.DirectorPublicPlayerLists.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
 			return false
 		elseif not CoD.ModelUtility.IsSelfModelValueEnumFlagSet( f18_arg0, f18_arg2, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xFF0DBCF80106E7B, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/inspect_player", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -354,7 +354,7 @@ CoD.DirectorPublicPlayerLists.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
 			return false
 		elseif not CoD.ModelUtility.IsSelfModelValueEnumFlagSet( f36_arg0, f36_arg2, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) then
-			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xFF0DBCF80106E7B, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/inspect_player", nil, "ui_confirm" )
 			return true
 		else
 			return false

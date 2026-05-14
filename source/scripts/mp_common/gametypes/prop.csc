@@ -189,25 +189,25 @@ function highlightprop( localclientnum, oldval, newval, bnewent, binitialsnap, f
 {
     if ( newval == 0 )
     {
-        self notify( #"hash_3fe34dcd29fd6a0f" );
+        self notify( #"highlightpropteamchange" );
         self duplicate_render::update_dr_flag( localclientnum, "prop_ally", 0 );
         self duplicate_render::update_dr_flag( localclientnum, "prop_clone", 0 );
         return;
     }
     
-    self thread function_15e0dfb8( localclientnum, newval );
+    self thread highlightpropteamchange( localclientnum, newval );
 }
 
 // Namespace prop/prop
 // Params 2
 // Checksum 0xf46ec040, Offset: 0xd20
 // Size: 0x20a
-function function_15e0dfb8( localclientnum, var_dc9f0c39 )
+function highlightpropteamchange( localclientnum, var_dc9f0c39 )
 {
     self endon( #"entityshutdown" );
     level endon( #"disconnect" );
-    self notify( #"hash_3fe34dcd29fd6a0f" );
-    self endon( #"hash_3fe34dcd29fd6a0f" );
+    self notify( #"highlightpropteamchange" );
+    self endon( #"highlightpropteamchange" );
     
     while ( true )
     {
@@ -239,23 +239,23 @@ function highlightplayer( localclientnum, oldval, newval, bnewent, binitialsnap,
 {
     if ( newval == 0 )
     {
-        self notify( #"hash_3fe34dcd29fd6a0f" );
+        self notify( #"highlightpropteamchange" );
         self duplicate_render::update_dr_flag( localclientnum, "prop_clone", 0 );
         return;
     }
     
-    self thread function_29561f83( localclientnum, newval );
+    self thread highlightplayerteamchange( localclientnum, newval );
 }
 
 // Namespace prop/prop
 // Params 2
 // Checksum 0x81a996ff, Offset: 0xfe8
 // Size: 0x12a
-function function_29561f83( localclientnum, var_dc9f0c39 )
+function highlightplayerteamchange( localclientnum, var_dc9f0c39 )
 {
     self endon( #"entityshutdown" );
-    self notify( #"hash_3f606627f154954b" );
-    self endon( #"hash_3f606627f154954b" );
+    self notify( #"highlightplayerteamchange" );
+    self endon( #"highlightplayerteamchange" );
     
     while ( true )
     {

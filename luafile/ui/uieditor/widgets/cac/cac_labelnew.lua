@@ -8,7 +8,7 @@ CoD.cac_LabelNew.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	self.soundSet = "default"
 	
 	local Image00 = LUI.UIImage.new( 0.5, 0.5, -78, 78, 0.5, 0.5, -18, 18 )
-	Image00:setImage( RegisterImage( 0xAC1D744CB8E38F2 ) )
+	Image00:setImage( RegisterImage( "uie_t7_menu_cac_iconnewbanner" ) )
 	self:addElement( Image00 )
 	self.Image00 = Image00
 	

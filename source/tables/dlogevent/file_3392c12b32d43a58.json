@@ -46,7 +46,7 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT32"
                     },
@@ -59,7 +59,7 @@
             }
         },
         {
-            "name": "#hash_294b5b1dc0642b63",
+            "name": "#ip_discovery_result",
             "arraySize": 0,
             "members": {
                 "name": "#hash_6ff4b416acbedfc8",
@@ -80,22 +80,22 @@
                         "type": "UINT32"
                     },
                     {
-                        "name": "#hash_3795c515da21f010",
+                        "name": "#server_addr",
                         "scrName": "#hash_33d2a8ec",
                         "type": "UINT32"
                     },
                     {
-                        "name": "#hash_4b5ffc955581a19e",
+                        "name": "#public_port",
                         "scrName": "#hash_8d6f1e24",
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_61f7e598d316c750",
+                        "name": "#server_port",
                         "scrName": "#hash_a3d1091f",
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_7eeb3b0b30e2921a",
+                        "name": "#public_addr",
                         "scrName": "#hash_7d4e5670",
                         "type": "UINT32"
                     }
@@ -130,7 +130,7 @@
                         "type": "INT64"
                     },
                     {
-                        "name": "#hash_6bdd7ebe59310aa2",
+                        "name": "#match_making_id",
                         "scrName": "#hash_b8bfa824",
                         "type": "UINT64"
                     }
@@ -162,13 +162,13 @@
             }
         },
         {
-            "name": "#hash_7c2a2b8cc4afe569",
+            "name": "#retry_times_ms",
             "arraySize": 10,
             "members": {
                 "name": "#hash_6538fe05961782a3",
                 "members": [
                     {
-                        "name": "#hash_7bd602a5f16fdf88",
+                        "name": "#retry_time_ms",
                         "scrName": "#hash_63ac7391",
                         "type": "UINT32"
                     }

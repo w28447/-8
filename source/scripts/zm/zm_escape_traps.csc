@@ -81,7 +81,7 @@ function rumble_fan_trap( localclientnum, oldval, newval, bnewent, binitialsnap,
     
     if ( newval == 1 )
     {
-        self endon( #"hash_583695c3e21830e7" );
+        self endon( #"rumble_fan_trap_finished" );
         
         while ( true )
         {
@@ -96,7 +96,7 @@ function rumble_fan_trap( localclientnum, oldval, newval, bnewent, binitialsnap,
         return;
     }
     
-    self notify( #"hash_583695c3e21830e7" );
+    self notify( #"rumble_fan_trap_finished" );
 }
 
 // Namespace zm_escape_traps/zm_escape_traps
@@ -169,7 +169,7 @@ function player_acid_trap_post_fx( localclientnum, oldval, newval, bnewent, bini
         }
         
         self notify( #"player_acid_trap_post_fx_complete" );
-        self.var_431ddde9 = self playloopsound( #"hash_341a3fa00975f232" );
+        self.var_431ddde9 = self playloopsound( #"zmb_trap_acid_loop_plr" );
         self thread function_17956e93( localclientnum );
         self thread postfx::playpostfxbundle( #"pstfx_zm_acid_dmg" );
         self.var_b1409d8f = playfxoncamera( localclientnum, level._effect[ #"hash_4391e5c4b43c63c9" ] );
@@ -318,7 +318,7 @@ function rumble_spinning_trap( localclientnum, oldval, newval, bnewent, binitial
     
     if ( newval == 1 )
     {
-        self endon( #"hash_6fb55d3438a8d5fa" );
+        self endon( #"rumble_spinning_trap_finished" );
         
         while ( true )
         {
@@ -333,6 +333,6 @@ function rumble_spinning_trap( localclientnum, oldval, newval, bnewent, binitial
         return;
     }
     
-    self notify( #"hash_6fb55d3438a8d5fa" );
+    self notify( #"rumble_spinning_trap_finished" );
 }
 

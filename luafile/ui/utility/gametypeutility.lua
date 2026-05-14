@@ -148,7 +148,7 @@ CoD.GameTypeUtility.DoesGameTypeSupportBots = function ( f10_arg0 )
 		return false
 	elseif f10_arg0 == "prop" or f10_arg0 == "bounty" or f10_arg0 == "escort" then
 		return false
-	elseif f10_arg0 == 0x572880E35379C18 or f10_arg0 == 0x32C064CAF1E3CA6 or f10_arg0 == 0xB60DB445FBF5155 then
+	elseif f10_arg0 == "prop" or f10_arg0 == 0x32C064CAF1E3CA6 or f10_arg0 == 0xB60DB445FBF5155 then
 		return false
 	else
 		return true

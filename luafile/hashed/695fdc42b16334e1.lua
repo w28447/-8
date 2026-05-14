@@ -16,13 +16,13 @@ CoD.ZMSpecialWeapon_StageInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local CircleOFF = LUI.UIImage.new( 0, 0, -11, 53, 0, 0, -12, 52 )
 	CircleOFF:setRGB( ColorSet.T8__BEIGE__HEADER.r, ColorSet.T8__BEIGE__HEADER.g, ColorSet.T8__BEIGE__HEADER.b )
-	CircleOFF:setImage( RegisterImage( 0x9C20F78C21F507D ) )
+	CircleOFF:setImage( RegisterImage( "uie_ui_menu_zombies_cac_special_weapon_inspect_off" ) )
 	self:addElement( CircleOFF )
 	self.CircleOFF = CircleOFF
 	
 	local CircleON = LUI.UIImage.new( 0, 0, -11, 53, 0, 0, -12, 52 )
 	CircleON:setRGB( 0.58, 0.85, 1 )
-	CircleON:setImage( RegisterImage( 0xF061C994A027B01 ) )
+	CircleON:setImage( RegisterImage( "uie_ui_menu_zombies_cac_special_weapon_inspect_on" ) )
 	CircleON:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CircleON )
 	self.CircleON = CircleON

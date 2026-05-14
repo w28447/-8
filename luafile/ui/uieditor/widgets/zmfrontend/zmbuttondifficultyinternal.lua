@@ -155,7 +155,7 @@ CoD.ZMButtonDifficultyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local Header = LUI.UIText.new( 0.01, 0.97, 7, 7, 1, 1, -26.5, -4.5 )
 	Header:setRGB( 0.58, 0.58, 0.58 )
-	Header:setText( LocalizeToUpperString( 0xA43B10D9DA121A ) )
+	Header:setText( LocalizeToUpperString( "menu/waiting_caps" ) )
 	Header:setTTF( "ttmussels_regular" )
 	Header:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
 	Header:setLetterSpacing( 3 )
@@ -170,7 +170,7 @@ CoD.ZMButtonDifficultyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local MiddleText = LUI.UIText.new( 0.02, 0.98, 0, 0, 0.5, 0.5, -11, 11 )
 	MiddleText:setRGB( 0.58, 0.58, 0.58 )
-	MiddleText:setText( LocalizeToUpperString( 0xA43B10D9DA121A ) )
+	MiddleText:setText( LocalizeToUpperString( "menu/waiting_caps" ) )
 	MiddleText:setTTF( "ttmussels_regular" )
 	MiddleText:setLetterSpacing( 3 )
 	MiddleText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

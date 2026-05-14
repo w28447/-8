@@ -10,7 +10,7 @@ CoD.ArmorPortraitZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local armor = LUI.UIImage.new( -0.07, 1.07, 0, 0, -0.07, 1.07, 0, 0 )
 	armor:setAlpha( 0 )
-	armor:setImage( RegisterImage( 0x66921D2569FBAE6 ) )
+	armor:setImage( RegisterImage( "uie_ui_icon_hud_zb_bodyarmor" ) )
 	self:addElement( armor )
 	self.armor = armor
 	

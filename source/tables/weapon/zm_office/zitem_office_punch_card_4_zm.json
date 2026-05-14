@@ -1,7 +1,7 @@
 {
     "name": "#zitem_office_punch_card_4_zm",
     "baseWeapon": "#zitem_office_punch_card_4",
-    "streamkey": "#hash_3410d61a70cde106",
+    "streamkey": "#zitem_office_punch_card_4_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

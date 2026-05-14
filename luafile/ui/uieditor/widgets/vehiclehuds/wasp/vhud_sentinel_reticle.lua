@@ -82,7 +82,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local CenterReticleSolid = LUI.UIImage.new( 0.5, 0.5, -126, 129, 0.5, 0.5, -64, 68 )
 	CenterReticleSolid:setAlpha( 0.05 )
-	CenterReticleSolid:setImage( RegisterImage( 0xF50FD29C375ED40 ) )
+	CenterReticleSolid:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_centerreticlesolid" ) )
 	CenterReticleSolid:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CenterReticleSolid )
 	self.CenterReticleSolid = CenterReticleSolid
@@ -122,7 +122,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local OutsideRingLines = LUI.UIImage.new( 0.5, 0.5, -301, 302, 0.5, 0.5, -187, 187 )
 	OutsideRingLines:setAlpha( 0.3 )
-	OutsideRingLines:setImage( RegisterImage( 0x27B699A6B2378F5 ) )
+	OutsideRingLines:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_outsideringline" ) )
 	OutsideRingLines:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( OutsideRingLines )
 	self.OutsideRingLines = OutsideRingLines

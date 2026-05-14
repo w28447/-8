@@ -1,7 +1,7 @@
 {
     "name": "#ir_strobe_mp",
     "baseWeapon": "#ir_strobe",
-    "streamkey": "#hash_451533eec11e7288",
+    "streamkey": "#ir_strobe_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -31,7 +31,7 @@
     "sound240": "#hash_631a067190b54300",
     "sound250": "#hash_242aa17124751841",
     "tunables1": "#ir_strobe_tunables_mp",
-    "weaponHeadObjective": "#hash_1b5a86007f598bbc",
+    "weaponHeadObjective": "#airdrop_swat_team",
     "#hash_2e4a8800": "#swat_team_scoreevents",
     "viewmodel": [
         "#wpn_t8_eqp_ir_strobe_view"

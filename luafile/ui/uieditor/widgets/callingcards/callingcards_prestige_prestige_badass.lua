@@ -1,9 +1,9 @@
-CoD[0x660D368575962A3] = InheritFrom( LUI.UIElement )
-CoD[0x660D368575962A3].__defaultWidth = 960
-CoD[0x660D368575962A3].__defaultHeight = 240
-CoD[0x660D368575962A3].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD["callingcards_prestige_prestige_badass"] = InheritFrom( LUI.UIElement )
+CoD["callingcards_prestige_prestige_badass"].__defaultWidth = 960
+CoD["callingcards_prestige_prestige_badass"].__defaultHeight = 240
+CoD["callingcards_prestige_prestige_badass"].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0x660D368575962A3] )
+	self:setClass( CoD["callingcards_prestige_prestige_badass"] )
 	self.id = "CallingCards_Prestige_Prestige_Badass"
 	self.soundSet = "default"
 	f1_arg0:addElementToPendingUpdateStateList( self )
@@ -37,7 +37,7 @@ CoD[0x660D368575962A3].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.headOpen = headOpen
 	
 	local bodyGlow = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	bodyGlow:setImage( RegisterImage( 0x188943CF31471F1 ) )
+	bodyGlow:setImage( RegisterImage( "uie_ui_icon_callingcards_mp_prestige_prestige_badass_body_glow" ) )
 	self:addElement( bodyGlow )
 	self.bodyGlow = bodyGlow
 	
@@ -68,7 +68,7 @@ CoD[0x660D368575962A3].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0x660D368575962A3].__resetProperties = function ( f2_arg0 )
+CoD["callingcards_prestige_prestige_badass"].__resetProperties = function ( f2_arg0 )
 	f2_arg0.wings:completeAnimation()
 	f2_arg0.skull:completeAnimation()
 	f2_arg0.headClosed:completeAnimation()
@@ -86,7 +86,7 @@ CoD[0x660D368575962A3].__resetProperties = function ( f2_arg0 )
 	f2_arg0.headOpen:setAlpha( 1 )
 end
 
-CoD[0x660D368575962A3].__clipsPerState = {
+CoD["callingcards_prestige_prestige_badass"].__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()

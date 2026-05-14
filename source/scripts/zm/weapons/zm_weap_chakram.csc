@@ -40,8 +40,8 @@ function __init__()
     level._effect[ #"hash_720f204e4406ddbf" ] = #"hash_59cdb0226e644934";
     level._effect[ #"hash_15593b3f860346f5" ] = #"hash_1e957556dba822e6";
     level._effect[ #"chakram_head_pop" ] = #"hash_68100f653a5baf2f";
-    level._effect[ #"hash_6dca5478f1baf5ce" ] = #"hash_1ff88e4b147015b2";
-    level._effect[ #"hash_3364e81f269deca0" ] = #"hash_656272f0184ae1fc";
+    level._effect[ #"chakram_throw_trail" ] = #"hash_1ff88e4b147015b2";
+    level._effect[ #"chakram_throw_impact" ] = #"hash_656272f0184ae1fc";
     level._effect[ #"hash_5c2ba805602ea484" ] = #"hash_3904517ed3636935";
     level._effect[ #"hash_455a47023bc1da46" ] = #"hash_2109d3278a7b54fa";
     level._effect[ #"hash_bc1e5225071e47d" ] = #"hash_2ca473741924f0c";
@@ -114,7 +114,7 @@ function chakram_throw_trail_fx( localclientnum, oldval, newval, bnewent, biniti
 {
     if ( newval == 1 )
     {
-        self.fx_trail = util::playfxontag( localclientnum, level._effect[ #"hash_6dca5478f1baf5ce" ], self, "tag_fx" );
+        self.fx_trail = util::playfxontag( localclientnum, level._effect[ #"chakram_throw_trail" ], self, "tag_fx" );
         
         if ( !isdefined( self.snd_looper ) )
         {
@@ -144,7 +144,7 @@ function chakram_throw_impact_fx( localclientnum, oldval, newval, bnewent, binit
 {
     if ( newval )
     {
-        playfx( localclientnum, level._effect[ #"hash_3364e81f269deca0" ], self.origin, anglestoforward( self.angles ) );
+        playfx( localclientnum, level._effect[ #"chakram_throw_impact" ], self.origin, anglestoforward( self.angles ) );
         playsound( localclientnum, #"hash_72a17706cb2656cd", self.origin );
     }
 }
@@ -157,7 +157,7 @@ function chakram_throw_special_impact_fx( localclientnum, oldval, newval, bnewen
 {
     if ( newval )
     {
-        util::playfxontag( localclientnum, level._effect[ #"hash_3364e81f269deca0" ], self, "j_spine4" );
+        util::playfxontag( localclientnum, level._effect[ #"chakram_throw_impact" ], self, "j_spine4" );
         playsound( localclientnum, #"hash_72a17706cb2656cd", self.origin );
     }
 }

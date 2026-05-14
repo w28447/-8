@@ -221,7 +221,7 @@
                             ],
                             "hash_1d91eeba": 1,
                             "hash_7db3435c": 0,
-                            "clientfield": "#hash_247c6c73bebc1022"
+                            "clientfield": "#q_silver_bullets_1"
                         },
                         {
                             "stages": [
@@ -231,7 +231,7 @@
                             ],
                             "hash_1d91eeba": 1,
                             "hash_7db3435c": 0,
-                            "clientfield": "#hash_247c6b73bebc0e6f"
+                            "clientfield": "#q_silver_bullets_2"
                         },
                         {
                             "stages": [
@@ -241,7 +241,7 @@
                             ],
                             "hash_1d91eeba": 1,
                             "hash_7db3435c": 0,
-                            "clientfield": "#hash_247c6a73bebc0cbc"
+                            "clientfield": "#q_silver_bullets_3"
                         }
                     ],
                     "list_items": 3
@@ -265,7 +265,7 @@
             "hash_7db3435c": 0,
             "hash_516217cd": 2,
             "name": "special ammo",
-            "hash_26da6ef83af4ba62:hash_a0ebe517": "#hash_26da6ef83af4ba62"
+            "q_silver_bullets_phase:hash_a0ebe517": "#q_silver_bullets_phase"
         },
         {
             "phases": [
@@ -279,7 +279,7 @@
                             ],
                             "hash_1d91eeba": 1,
                             "hash_7db3435c": 0,
-                            "clientfield": "#hash_7965886c1a11312f"
+                            "clientfield": "#q_silver_bullets_chems_1"
                         },
                         {
                             "stages": [
@@ -289,7 +289,7 @@
                             ],
                             "hash_1d91eeba": 1,
                             "hash_7db3435c": 0,
-                            "clientfield": "#hash_7965896c1a1132e2"
+                            "clientfield": "#q_silver_bullets_chems_2"
                         },
                         {
                             "stages": [
@@ -299,7 +299,7 @@
                             ],
                             "hash_1d91eeba": 1,
                             "hash_7db3435c": 0,
-                            "clientfield": "#hash_79658a6c1a113495"
+                            "clientfield": "#q_silver_bullets_chems_3"
                         }
                     ],
                     "list_items": 3

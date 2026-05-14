@@ -10,21 +10,21 @@ CoD.StoreFeaturedFrameGrid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local plus03 = LUI.UIImage.new( 0, 0, 1043.5, 1059.5, 0, 0, 333, 349 )
 	plus03:setAlpha( 0.1 )
-	plus03:setImage( RegisterImage( 0x6B407AF1C17CF78 ) )
+	plus03:setImage( RegisterImage( "uie_ui_menu_store_bg_plus" ) )
 	plus03:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( plus03 )
 	self.plus03 = plus03
 	
 	local plus02 = LUI.UIImage.new( 0, 0, 687, 703, 0, 0, 333, 349 )
 	plus02:setAlpha( 0.1 )
-	plus02:setImage( RegisterImage( 0x6B407AF1C17CF78 ) )
+	plus02:setImage( RegisterImage( "uie_ui_menu_store_bg_plus" ) )
 	plus02:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( plus02 )
 	self.plus02 = plus02
 	
 	local plus01 = LUI.UIImage.new( 0, 0, 332, 348, 0, 0, 333, 349 )
 	plus01:setAlpha( 0.1 )
-	plus01:setImage( RegisterImage( 0x6B407AF1C17CF78 ) )
+	plus01:setImage( RegisterImage( "uie_ui_menu_store_bg_plus" ) )
 	plus01:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( plus01 )
 	self.plus01 = plus01

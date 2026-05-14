@@ -127,7 +127,7 @@ function function_9d65db70( einflictor, attacker, idamage, smeansofdeath, weapon
         }
         
         e_player thread function_e12a129( self.origin );
-        level thread ct_utils::function_bfa522d1();
+        level thread ct_utils::simulation_pulse();
         
         if ( weapon === getweapon( #"hero_pineapplegun" ) || weapon === getweapon( #"hero_pineapple_grenade" ) )
         {
@@ -151,7 +151,7 @@ function function_6db6572b()
     level thread ct_utils::function_6b71f442();
     
     /#
-        level thread function_868cd9ac();
+        level thread devgui_ct_battery();
     #/
 }
 
@@ -902,7 +902,7 @@ function private function_4e049216( einflictor, eattacker, idamage, idflags, sme
     }
     else if ( smeansofdeath === "MOD_IMPACT" && weapon === getweapon( #"hero_pineapplegun" ) )
     {
-        level notify( #"hash_788c0d72802f35af", { #v_loc:vpoint } );
+        level notify( #"pineapple_grenade_impact", { #v_loc:vpoint } );
         self.damagetaken += 751;
     }
     else if ( weapon === getweapon( #"eq_cluster_semtex_grenade" ) && !( isdefined( self.var_21c8bc5f ) && self.var_21c8bc5f ) )
@@ -1035,7 +1035,7 @@ function private function_1f04fda( einflictor, eattacker, idamage, idflags, smea
     
     if ( weapon === w_pineapple )
     {
-        level notify( #"hash_788c0d72802f35af", { #v_loc:vpoint } );
+        level notify( #"pineapple_grenade_impact", { #v_loc:vpoint } );
     }
     else if ( smeansofdeath !== "MOD_IMPACT" && weapon === w_cluster )
     {
@@ -1246,7 +1246,7 @@ function function_52d196f2( n_difficulty = 2 )
     
     e_player thread function_9be2d75f();
     a_parms = [];
-    a_parms[ #"hash_72de0eaa7f3c7619" ] = var_a7b6c024[ n_difficulty ];
+    a_parms[ #"node_wait_mods" ] = var_a7b6c024[ n_difficulty ];
     a_parms[ #"attack_rest" ] = var_89d9697a[ n_difficulty ];
     a_parms[ #"shoot_spread" ] = var_ed621a12[ n_difficulty ];
     a_parms[ #"speed" ] = var_c52588b6[ n_difficulty ];
@@ -1316,7 +1316,7 @@ function function_4674d2e7()
     
     while ( true )
     {
-        s_notify = level waittill( #"hash_788c0d72802f35af" );
+        s_notify = level waittill( #"pineapple_grenade_impact" );
         var_1c5e8282 = distance( self.origin, s_notify.v_loc );
         
         if ( var_1c5e8282 < 4 )
@@ -1435,10 +1435,10 @@ function function_f75c4ec2( v_target )
     // Params 0
     // Checksum 0x10cdab8d, Offset: 0x4638
     // Size: 0x6f8, Type: dev
-    function function_868cd9ac()
+    function devgui_ct_battery()
     {
         sessionmode = currentsessionmode();
-        setdvar( #"hash_16e650a0fe963515", "<dev string:x84>" );
+        setdvar( #"devgui_ct_battery", "<dev string:x84>" );
         level flag::init( "<dev string:x6d>" );
         
         if ( sessionmode != 4 )
@@ -1454,7 +1454,7 @@ function function_f75c4ec2( v_target )
         while ( true )
         {
             wait 0.25;
-            cmd = getdvarstring( #"hash_16e650a0fe963515", "<dev string:x84>" );
+            cmd = getdvarstring( #"devgui_ct_battery", "<dev string:x84>" );
             
             if ( cmd == "<dev string:x84>" )
             {
@@ -1503,7 +1503,7 @@ function function_f75c4ec2( v_target )
                     }
                     
                     break;
-                case #"hash_47e019566f91d4d1":
+                case #"keylines_on":
                     if ( !( isdefined( level.var_d6d98fbe ) && level.var_d6d98fbe ) )
                     {
                         level.var_d6d98fbe = 1;
@@ -1529,7 +1529,7 @@ function function_f75c4ec2( v_target )
                     }
                     
                     break;
-                case #"hash_3384d4df94b5c66d":
+                case #"keylines_off":
                     if ( isdefined( level.var_d6d98fbe ) && level.var_d6d98fbe )
                     {
                         level.var_d6d98fbe = 0;
@@ -1557,7 +1557,7 @@ function function_f75c4ec2( v_target )
                     break;
             }
             
-            setdvar( #"hash_16e650a0fe963515", "<dev string:x84>" );
+            setdvar( #"devgui_ct_battery", "<dev string:x84>" );
         }
     }
 

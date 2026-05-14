@@ -150,14 +150,14 @@ function function_fa0d912f( var_7b4ae7d1 )
                 fields = getcharacterfields( role_index, currentsessionmode() );
                 count += 1;
                 
-                if ( isdefined( fields ) && isdefined( fields.var_49a55967 ) && fields.var_49a55967 )
+                if ( isdefined( fields ) && isdefined( fields.iscombattrainingenabled ) && fields.iscombattrainingenabled )
                 {
                     break;
                 }
             }
             while ( count < var_5ec2386a );
             
-            if ( !isdefined( fields ) || !( isdefined( fields.var_49a55967 ) && fields.var_49a55967 ) )
+            if ( !isdefined( fields ) || !( isdefined( fields.iscombattrainingenabled ) && fields.iscombattrainingenabled ) )
             {
                 role_index = 1;
             }
@@ -1659,11 +1659,11 @@ function function_ae20926a()
     self clientfield::set( "player_keyline_render", 0 );
     self.v_train_inbound_igc = 1;
     level.var_88024dd9--;
-    level thread ct_utils::function_bfa522d1( 0 );
+    level thread ct_utils::simulation_pulse( 0 );
     e_player = getplayers()[ 0 ];
     e_player thread ct_utils::function_329f9ba6( #"hash_30cf2650faf0b7fb", 4, "green", 2 );
     e_player thread ct_utils::function_d471f8fa( 30, undefined, 1 );
-    level notify( #"hash_4467c8999d018835" );
+    level notify( #"soldier_rescued" );
 }
 
 // Namespace ct_bots/ct_bots
@@ -1685,7 +1685,7 @@ function function_b7307ff()
 {
     self waittill( #"death" );
     level.var_88024dd9--;
-    level thread ct_utils::function_bfa522d1( 0 );
+    level thread ct_utils::simulation_pulse( 0 );
     e_player = getplayers()[ 0 ];
     e_player thread ct_utils::function_329f9ba6( #"hash_9d6017f6c7829ad", 4, "red", 2 );
     e_player thread ct_utils::function_d471f8fa( -30, undefined, 1 );

@@ -1,7 +1,7 @@
 {
     "keys": [
         {
-            "name": "#hash_2d2bbbbfaf9d8820",
+            "name": "#mp_embassy_all_stream",
             "xPakEntry": {
                 "key": "#hash_e992333d3be89ebb",
                 "offset": 0,
@@ -20,7 +20,7 @@
             "keyFlags": 3
         },
         {
-            "name": "#hash_42abe2169c13bb0d",
+            "name": "#mp_embassy_all_loaded",
             "xPakEntry": {
                 "key": "#hash_e52f2d5c25a5a13c",
                 "offset": 0,
@@ -95913,7 +95913,7 @@
             "keyFlags": 0
         },
         {
-            "name": "#hash_5112872ce21e53fa",
+            "name": "#mp_embassy_sst_0_0",
             "xPakEntry": {
                 "key": "#hash_eba10238f22ef61a",
                 "offset": 0,

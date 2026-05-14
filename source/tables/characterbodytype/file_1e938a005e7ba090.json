@@ -3,7 +3,7 @@
     "displayName": "#heroes/hudson",
     "mpDialog": "#hudson",
     "playerSoundsTable": "#cp_playersounds",
-    "playerFXTable": "#hash_471b500cc678f872",
+    "playerFXTable": "#wz_playerfx",
     "image_68": "#hash_92cfb590ee3839fd",
     "positionDraftPortrait": "#ui_icon_specialist_portrait_draft_hudson",
     "lootUiIcon": "#loot_04_ui_icon_blackmarket_stream_hudson",

@@ -327,7 +327,7 @@ LUI.createMenu.prototype_hud = function ( f1_arg0, f1_arg1 )
 	self.FanfareText = FanfareText
 	
 	local Image = LUI.UIImage.new( 0, 0, 896, 1024, 0, 0, 237.5, 365.5 )
-	Image:setImage( RegisterImage( 0x82BCD08E989CF5 ) )
+	Image:setImage( RegisterImage( "ui_icon_medal_victor_large" ) )
 	Image:linkToElementModel( self, "fanfare_visibility", true, function ( model )
 		local f30_local0 = model:get()
 		if f30_local0 ~= nil then
@@ -416,7 +416,7 @@ LUI.createMenu.prototype_hud = function ( f1_arg0, f1_arg1 )
 	self.FanfareText2 = FanfareText2
 	
 	local Image2 = LUI.UIImage.new( 0, 0, 896, 1024, 0, 0, 237.5, 365.5 )
-	Image2:setImage( RegisterImage( 0x82BCD08E989CF5 ) )
+	Image2:setImage( RegisterImage( "ui_icon_medal_victor_large" ) )
 	Image2:linkToElementModel( self, "fail_fanfare_visibility", true, function ( model )
 		local f37_local0 = model:get()
 		if f37_local0 ~= nil then

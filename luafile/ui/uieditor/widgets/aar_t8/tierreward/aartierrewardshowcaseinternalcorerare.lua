@@ -15,7 +15,7 @@ CoD.AARTierRewardShowcaseInternalCoreRare.new = function ( f1_arg0, f1_arg1, f1_
 	
 	local BGPatternThick = LUI.UIImage.new( 0.5, 0.5, -160, 152, 0, 0, 23, 603 )
 	BGPatternThick:setAlpha( 0.62 )
-	BGPatternThick:setImage( RegisterImage( 0x817450E3AF39C23 ) )
+	BGPatternThick:setImage( RegisterImage( "uie_ui_menu_common_mtx_button_bg_rare_thin" ) )
 	BGPatternThick:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	BGPatternThick:setShaderVector( 0, 0, 1, 0, 0 )
 	BGPatternThick:setShaderVector( 1, 0, 0, 0, 0 )

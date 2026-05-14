@@ -14,7 +14,7 @@ physpreset,#debris_chunk_light
 physpreset,#ashtray
 physpreset,#hash_4195e8f5d68dc0a6
 physpreset,#cardboardbox_full
-physpreset,#hash_5c2d217edb4867d8
+physpreset,#fence_wood_physpreset_wz
 physpreset,d#default
 physpreset,#ceramic_cup
 physconstraints,#hash_fe9c6b81e03887
@@ -14065,7 +14065,7 @@ image,#i_t8_concrete_sidewalk_paver_02_n
 image,#i_t8_concrete_sidewalk_paver_02_g
 image,#i_t8_concrete_sidewalk_paver_02_c
 image,#i_t8_concrete_sidewalk_paver_02_r
-image,#hash_1c2fa9b4a1c580aa
+image,#i_lut_mp_austria
 image,#i_mtl_p8_zm_zod_luggage_millionaire_set_metal_decal_c
 image,#i_mtl_p8_zm_zod_luggage_millionaire_set_metal_decal_n
 image,#i_veh_t8_drone_rcxdh_emissive_flasher_e
@@ -17387,7 +17387,7 @@ image,#i_c_t7_techno_body1_coat_n
 image,#i_c_t7_techno_body1_coat_c
 image,#i_c_t7_techno_body1_coat_g
 image,d#i_veh_t8_metal_painted_rough_01_n
-image,#hash_526fcd489f86213a
+image,#zm_white_window_glass_c
 image,#i_p8_zm_zod_micro_wood_teak_01_n
 image,#i_mtl_p8_kit_spa_gen_03_frame_thin_wood_01_m
 image,d#i_veh_t8_glass_dirty_grimes_01_512_g
@@ -20042,8 +20042,8 @@ image,d#i_wpn_t8_eqp_briefcase_bomb_glass_s
 image,#i_t7_metal_rust_ceiling_01_n
 image,#i_t7_metal_rust_ceiling_01_c
 image,#i_p8_zm_gla_wall_arena_wood_01_set_decor_01_m
-streamkey,#hash_34e275fce486b531
-streamkey,#hash_a81fed80d365e8c
+streamkey,#mp_austria_all_stream
+streamkey,#mp_austria_all_loaded
 streamkey,#hash_48008a700b8db477
 streamkey,#hash_4432be4794e0db9e
 sound,#mp_austria.all
@@ -20080,10 +20080,10 @@ scriptparsetree,#scripts/mp/mp_maps_lighting.csc
 scriptparsetreeforced,#mp_austria
 keyvaluepairs,#mp_austria
 surfacesounddef,#hash_d75a4c66d609515
-surfacesounddef,#hash_6a9264c7627e1b73
-surfacesounddef,d#hash_7a02727ac7423cc9
+surfacesounddef,#phy_glass_bottle_sounddef
+surfacesounddef,d#phy_gibs_sounddef
 surfacesounddef,d#hash_7ada1cf9d8035750
-surfacesounddef,#hash_7df43ad9f11765ff
+surfacesounddef,#phy_book_sounddef
 sanim,#p8_fxanim_gp_flag_hanging_02_back_s3_sanim
 sanim,#p8_fxanim_mp_austria_banner_beer_01_s3_sanim
 sanim,#p8_fxanim_mp_austria_banner_long_01_s1_sanim
@@ -20119,7 +20119,7 @@ lightdescription,#hash_7191a8a3f9f6a8bb
 lightdescription,#hash_764090f0b51d60f8
 lightdescription,d#hash_7b53a75a92fa83e9
 xcam,#ui_cam_draft_common
-xcam,#hash_12263e5d70551bf9
+xcam,#ui_cam_draft_common_zoom
 xcam,#ui_cam_endgame_mp_apartments
 bgcache,#mp_austria
 texturecombo,#mp_austria
@@ -34111,7 +34111,7 @@ streamkey,#hash_568fd735af580932
 streamkey,#hash_568fd835af580ae5
 streamkey,#hash_568fdb35af580ffe
 streamkey,#hash_568fdc35af5811b1
-streamkey,#hash_5692f398d06074d5
+streamkey,#mp_austria_sst_0_0
 streamkey,#hash_56935435af5b1370
 streamkey,#hash_56935535af5b1523
 streamkey,#hash_56935635af5b16d6
@@ -42728,7 +42728,7 @@ material,#mc/mtl_p7_crate_wood_02_lid_metal_blend_snow
 material,#hash_e525c5deb399379
 material,#mc/mtl_p7_zm_sta_shoe_vintage_male_02_cloth_grey
 material,#mc/mtl_p8_zm_esc_warden_clock
-material,#hash_e6e48f40f97bb15
+material,#vd/infinite_blackness_decal
 material,#mc/mtl_p7_book_vintage_cover_01
 material,#hash_e792cc6171be5c7
 material,#mc/p8_jpn_decal_wood_rings_top
@@ -45338,7 +45338,7 @@ material,#mc/mtl_p8_cas_light_chandelier_set_glass
 material,#mc/mtl_p8_crate_wood_decal_03_bolt
 material,#hash_4c423e14bb4e1572
 material,#mc/mtl_p8_aut_vista_building_set_decal_01
-material,#hash_4c4b713a91095564
+material,#clt/global_invisible
 material,#hash_4c4e3e63870b137a
 material,#wc/t7_zm_ctl_stone_wall_smooth
 material,#mc/t7_ban_metal_perforated_panel
@@ -47361,8 +47361,8 @@ material,#hash_7ffb1d269ba80af9
 material,#mc/mtl_p7_foliage_flower_bouquet_petal_white
 fx,#hash_459b2af2b7dbc0ac
 fx,#hash_48da2896148d9169
-impactsoundstable,#hash_d698a0c5be3e240
-impactsoundstable,#hash_2c30b74ea7b1bee2
+impactsoundstable,#phy_glass_bottle
+impactsoundstable,#phy_toy_car
 impactsoundstable,#phy_book
 impactsoundstable,d#phy_gibs
 impactsoundstable,d#phy_cardboard
@@ -47373,7 +47373,7 @@ physpreset,#hash_21e7f03694999243
 physpreset,#p7_toy_dump_truck
 physpreset,#p7_dinnerware_ceramic
 physpreset,#book
-physpreset,#hash_51f2b9dd7124c757
+physpreset,#coffee_bag_sml
 physpreset,d#gib
 physpreset,#cardboardbox_empty
 physpreset,#bottle_glass

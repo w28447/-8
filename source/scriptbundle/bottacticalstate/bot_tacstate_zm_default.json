@@ -85,7 +85,7 @@
             "name": "#hash_78881ac649c38041"
         },
         {
-            "name": "#hash_5c2824c8a8f125f7"
+            "name": "#use_zombie_weapon_upgrade"
         },
         {
             "name": "#zombie_reload_weapon"
@@ -100,7 +100,7 @@
             "name": "#melee_zombie_enemy"
         },
         {
-            "name": "#hash_22d98a5a241c78ba"
+            "name": "#use_zombie_interact"
         },
         {
             "name": "#look_for_enemy"

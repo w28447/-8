@@ -7541,7 +7541,7 @@ image,#i_mtl_p7_mou_electric_switch_metal_04_m
 image,#i_mtl_p7_mou_electric_switch_metal_04_n
 image,#i_t8_decal_tech_detail_panel_05_s
 image,#i_t8_decal_tech_detail_panel_05_o
-image,#hash_64b4f94776264a7a
+image,#i_lut_mp_maldives
 image,#i_mtl_p8_col_conveyor_unit_main_panel_line_g
 image,#i_mtl_p8_col_conveyor_unit_main_panel_line_n
 image,d#i_t8_micro_rock_granite_02_g
@@ -8375,8 +8375,8 @@ image,d#i_wpn_t8_eqp_briefcase_bomb_glass_c
 image,d#i_wpn_t8_eqp_briefcase_bomb_glass_s
 image,#i_t7_metal_rust_ceiling_01_n
 image,#i_t8_concrete_spackle_painted_01_n
-streamkey,#hash_690afc22637876bd
-streamkey,#hash_610d11a82377d608
+streamkey,#mp_maldives_all_stream
+streamkey,#mp_maldives_all_loaded
 streamkey,#hash_5239fecc12ab0eb
 streamkey,#hash_72350b93d66521a2
 sound,#mp_maldives.all
@@ -8414,11 +8414,11 @@ scriptparsetree,#scripts/mp/mp_maps_lighting.csc
 scriptparsetreeforced,#mp_maldives
 keyvaluepairs,#mp_maldives
 surfacesounddef,#surface_heli_impact
-surfacesounddef,#hash_6a9264c7627e1b73
+surfacesounddef,#phy_glass_bottle_sounddef
 surfacesounddef,#hash_716dd3824fd09e86
 surfacesounddef,#hash_77789965ad08507e
 surfacesounddef,d#hash_7ada1cf9d8035750
-surfacesounddef,#hash_7df43ad9f11765ff
+surfacesounddef,#phy_book_sounddef
 entitysoundimpacts,d#victim_raps_impact
 entitysoundimpacts,d#entity_bounce
 scriptbundle,#cdp_commander_maldives
@@ -9862,7 +9862,7 @@ streamkey,#hash_1538641964e6ef04
 streamkey,#hash_1538651964e6f0b7
 streamkey,#hash_1538661964e6f26a
 streamkey,#hash_1538671964e6f41d
-streamkey,#hash_162107575f663e11
+streamkey,#mp_maldives_sst_0_0
 streamkey,#hash_1651ed21d6b2b590
 streamkey,#hash_1651ee21d6b2b743
 streamkey,#hash_1651ef21d6b2b8f6
@@ -21561,10 +21561,10 @@ material,d#ei/gfx_distort_heat
 fx,#hash_459b2af2b7dbc0ac
 fx,#hash_45b4657cfe1eb0b0
 fx,#hash_54ebf564643a8a0b
-impactsoundstable,#hash_d698a0c5be3e240
+impactsoundstable,#phy_glass_bottle
 impactsoundstable,#hash_1b5fd18b421b9877
 impactsoundstable,#phy_book
-impactsoundstable,#hash_3c179f6b071380af
+impactsoundstable,#phy_plastic_small
 impactsoundstable,d#phy_cardboard
 impactsoundstable,#veh_heli_impact
 scriptbundle,#gameobject_mp_maldives_interact_call_elevator
@@ -22192,7 +22192,7 @@ fx,d#impacts/fx_bul_impact_boss_body_nonfatal
 fx,d#hash_e52e3fa45a13512
 fx,d#hash_f8df4e0d58ea786
 fx,#hash_1008bbbc9ba91883
-fx,d#hash_15bc8395437b3654
+fx,d#explosions/fx8_exp_grenade_smolder
 fx,d#blood/fx_blood_decal_impact_ground
 fx,#hash_167200dd937eaf3b
 fx,#hash_184cda3df1b98d5a
@@ -22690,7 +22690,7 @@ entityfximpacts,d#entity_enter
 staticlevelfxlist,#maps/mp/mp_maldives.d3dbsp
 entitylist,#maps/mp/mp_maldives.d3dbsp
 impactsfxtable,#hash_666ca9c33b54789f
-physpreset,#hash_60a446939d0686a1
+physpreset,#heli_physpreset
 xmodel,#hash_283f8cce22c70dcc
 image,#hash_7a2b772e4c99fcf4
 image,#*cookie_array

@@ -1146,7 +1146,7 @@ class csceneobject : cscriptbundleobjectbase
             }
             else
             {
-                if ( isdefined( loop ) && loop && isdefined( _s.var_69db1665 ) && _s.var_69db1665 )
+                if ( isdefined( loop ) && loop && isdefined( _s.loopbacktostart ) && _s.loopbacktostart )
                 {
                     n_start_time = undefined;
                 }
@@ -4000,7 +4000,7 @@ function private function_c802b491( s_tracker, str_mode )
 // Size: 0xba, Type: bool
 function function_46546b5c( s_tracker, str_scenedef )
 {
-    if ( getdvarint( #"hash_862358d532e674c", 0 ) === 1 )
+    if ( getdvarint( #"scr_scene_skip_custom_games", 0 ) === 1 )
     {
         var_41c1a1b7 = getscriptbundle( str_scenedef );
         

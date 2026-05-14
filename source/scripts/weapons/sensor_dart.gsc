@@ -251,7 +251,7 @@ function function_f4970a20( watcher, player )
         return;
     }
     
-    player notify( #"hash_70f03cfbb15356c0", { #dart:self } );
+    player notify( #"sensor_dart_active", { #dart:self } );
     player clientfield::set_player_uimodel( "hudItems.sensorDartCount", player.sensor_darts.size );
     player stats::function_e24eec31( self.weapon, #"used", 1 );
     self util::make_sentient();
@@ -357,16 +357,16 @@ function function_4db10465()
 // Size: 0x204
 function function_4b3bc61d( attacker, weapon, target )
 {
-    level notify( #"hash_4ee855fb0aa467c9" );
+    level notify( #"sensor_dart_destroyed" );
     
     if ( !isdefined( weapon ) || !weapon.isemp )
     {
         playfx( level._equipment_explode_fx_lg, self.origin );
     }
     
-    if ( isdefined( level.sensordartbundle.var_bb6c29b4 ) && isdefined( weapon ) && weapon == getweapon( #"shock_rifle" ) )
+    if ( isdefined( level.sensordartbundle.shockrifledestructionfx ) && isdefined( weapon ) && weapon == getweapon( #"shock_rifle" ) )
     {
-        playfx( level.sensordartbundle.var_bb6c29b4, self.origin );
+        playfx( level.sensordartbundle.shockrifledestructionfx, self.origin );
     }
     
     if ( isdefined( attacker ) && self.owner util::isenemyplayer( attacker ) )
@@ -385,7 +385,7 @@ function function_4b3bc61d( attacker, weapon, target )
         self [[ level.var_d2600afc ]]( attacker, self.owner, self.weapon, weapon );
     }
     
-    self.owner luinotifyevent( #"hash_4ee855fb0aa467c9" );
+    self.owner luinotifyevent( #"sensor_dart_destroyed" );
     self delete();
 }
 

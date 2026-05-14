@@ -1,9 +1,9 @@
-CoD[0xFE0FBDC105843CB] = InheritFrom( LUI.UIElement )
-CoD[0xFE0FBDC105843CB].__defaultWidth = 960
-CoD[0xFE0FBDC105843CB].__defaultHeight = 240
-CoD[0xFE0FBDC105843CB].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD["callingcards_tour_of_duty_master"] = InheritFrom( LUI.UIElement )
+CoD["callingcards_tour_of_duty_master"].__defaultWidth = 960
+CoD["callingcards_tour_of_duty_master"].__defaultHeight = 240
+CoD["callingcards_tour_of_duty_master"].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0xFE0FBDC105843CB] )
+	self:setClass( CoD["callingcards_tour_of_duty_master"] )
 	self.id = "CallingCards_Tour_Of_Duty_Master"
 	self.soundSet = "default"
 	f1_arg0:addElementToPendingUpdateStateList( self )
@@ -81,7 +81,7 @@ CoD[0xFE0FBDC105843CB].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0xFE0FBDC105843CB].__resetProperties = function ( f2_arg0 )
+CoD["callingcards_tour_of_duty_master"].__resetProperties = function ( f2_arg0 )
 	f2_arg0.warrior:completeAnimation()
 	f2_arg0.Image:completeAnimation()
 	f2_arg0.dust2:completeAnimation()
@@ -102,7 +102,7 @@ CoD[0xFE0FBDC105843CB].__resetProperties = function ( f2_arg0 )
 	f2_arg0.bloodSpray2:setAlpha( 0.98 )
 end
 
-CoD[0xFE0FBDC105843CB].__clipsPerState = {
+CoD["callingcards_tour_of_duty_master"].__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()

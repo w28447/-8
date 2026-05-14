@@ -15,7 +15,7 @@ CoD.DirectorMapVoteRuleIcon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local Custom = LUI.UIText.new( 0, 0, -25, 175, 0, 0, 22, 263 )
 	Custom:setAlpha( 0 )
-	Custom:setText( Engine[0xF9F1239CFD921FE]( 0xB53C6BDCB1662EB ) )
+	Custom:setText( Engine[0xF9F1239CFD921FE]( "mpui/asterisk" ) )
 	Custom:setTTF( "default" )
 	Custom:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	Custom:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

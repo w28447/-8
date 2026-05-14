@@ -96,11 +96,11 @@ function function_988b8f91( e_attacker, w_weapon )
         a_e_blasted_zombies = array::remove_dead( a_e_blasted_zombies );
         a_e_blasted_zombies = array::remove_undefined( a_e_blasted_zombies );
         
-        foreach ( var_8eee7949 in a_e_blasted_zombies )
+        foreach ( e_blasted_zombie in a_e_blasted_zombies )
         {
-            if ( isdefined( var_8eee7949 ) )
+            if ( isdefined( e_blasted_zombie ) )
             {
-                var_8eee7949 thread function_cd252d6e( e_attacker, w_weapon );
+                e_blasted_zombie thread function_cd252d6e( e_attacker, w_weapon );
                 util::wait_network_frame( randomintrange( 1, 3 ) );
             }
         }

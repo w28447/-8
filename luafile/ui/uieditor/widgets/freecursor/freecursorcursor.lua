@@ -33,21 +33,21 @@ CoD.freeCursorCursor.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local outer_ring = LUI.UIImage.new( 0, 0, 42.5, 98.5, 0, 0, 40, 96 )
 	outer_ring:setAlpha( 0.4 )
-	outer_ring:setImage( RegisterImage( 0x6E934ACA6F508E7 ) )
+	outer_ring:setImage( RegisterImage( "uie_ui_menu_cursor_outer_ring" ) )
 	self:addElement( outer_ring )
 	self.outer_ring = outer_ring
 	
 	local outerring2 = LUI.UIImage.new( 0, 0, 42.5, 98.5, 0, 0, 40, 96 )
 	outerring2:setAlpha( 0 )
 	outerring2:setScale( 0.8, 0.8 )
-	outerring2:setImage( RegisterImage( 0x6E934ACA6F508E7 ) )
+	outerring2:setImage( RegisterImage( "uie_ui_menu_cursor_outer_ring" ) )
 	self:addElement( outerring2 )
 	self.outerring2 = outerring2
 	
 	local outerring = LUI.UIImage.new( 0, 0, 42.5, 98.5, 0, 0, 40, 96 )
 	outerring:setAlpha( 0 )
 	outerring:setScale( 0.8, 0.8 )
-	outerring:setImage( RegisterImage( 0x6E934ACA6F508E7 ) )
+	outerring:setImage( RegisterImage( "uie_ui_menu_cursor_outer_ring" ) )
 	self:addElement( outerring )
 	self.outerring = outerring
 	

@@ -39,7 +39,7 @@ function __init__()
 function private on_begin()
 {
     callback::on_weapon_fired( &on_weapon_fired );
-    callback::function_33f0ddd3( &function_33f0ddd3 );
+    callback::on_player_loadout_changed( &on_player_loadout_changed );
     callback::on_weapon_change( &zm_trial_util::function_79518194 );
     
     foreach ( player in getplayers() )
@@ -58,7 +58,7 @@ function private on_begin()
 function private on_end( round_reset )
 {
     callback::remove_on_weapon_fired( &on_weapon_fired );
-    callback::function_824d206( &function_33f0ddd3 );
+    callback::function_824d206( &on_player_loadout_changed );
     callback::remove_on_weapon_change( &zm_trial_util::function_79518194 );
     
     foreach ( player in getplayers() )
@@ -74,7 +74,7 @@ function private on_end( round_reset )
 // Params 1, eflags: 0x4
 // Checksum 0x70037877, Offset: 0x3f0
 // Size: 0x154
-function private function_33f0ddd3( s_event )
+function private on_player_loadout_changed( s_event )
 {
     if ( s_event.event === "give_weapon" )
     {
@@ -137,7 +137,7 @@ function private function_29ee24dd( weapon )
     {
         while ( true )
         {
-            s_waitresult = self waittill( #"reload", #"zmb_max_ammo", #"hash_278526d0bbdb4ce7", #"hash_1fbfdb0105f48f89", #"player_downed", #"death" );
+            s_waitresult = self waittill( #"reload", #"zmb_max_ammo", #"give_full_ammo", #"hash_1fbfdb0105f48f89", #"player_downed", #"death" );
             w_current = self getcurrentweapon();
             
             if ( s_waitresult._notify == "reload" && weapon != w_current )

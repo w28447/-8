@@ -1,8 +1,8 @@
 {
     "name": "#hash_7a86851b84495c9",
     "type": "#gesture",
-    "gesture": "#hash_73ceba3dd139a067",
-    "gesture2": "#hash_695042b8a78d950",
+    "gesture": "#boast_bad_perk",
+    "gesture2": "#boast_bad_perk_fem",
     "sub": [
         {
             "gesture": "#hash_5b27202b71d70e03",
@@ -17,7 +17,7 @@
                 "#hash_6c8d991db6f42c4a",
                 "#hash_57d9e98fa3f08f76",
                 "#hash_203a1dcc75cf8c53",
-                "#hash_76ccdd2bfc985ae8",
+                "#prt_wz_reaper_bo3",
                 "#prt_wz_spectre",
                 "#prt_mp_spectre",
                 "#prt_mp_reaper",

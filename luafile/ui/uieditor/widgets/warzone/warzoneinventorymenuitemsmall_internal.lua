@@ -115,7 +115,7 @@ CoD.WarzoneInventoryMenuItemSmall_Internal.new = function ( f1_arg0, f1_arg1, f1
 	
 	FrameSelectedCorner = LUI.UIImage.new( 0.02, 0.98, -10, 10, 0.02, 0.98, -10, 10 )
 	FrameSelectedCorner:setAlpha( 0 )
-	FrameSelectedCorner:setImage( RegisterImage( 0x793C73633F620BB ) )
+	FrameSelectedCorner:setImage( RegisterImage( "uie_ui_menu_store_focus_pips" ) )
 	FrameSelectedCorner:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrameSelectedCorner:setShaderVector( 0, 0, 0, 0, 0 )
 	FrameSelectedCorner:setupNineSliceShader( 22, 22 )

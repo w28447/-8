@@ -86,7 +86,7 @@ CoD.ItemShopRarityBackgroundStream_Rare.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local BGPatternThin2 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BGPatternThin2:setAlpha( 0.5 )
-	BGPatternThin2:setImage( RegisterImage( 0x817450E3AF39C23 ) )
+	BGPatternThin2:setImage( RegisterImage( "uie_ui_menu_common_mtx_button_bg_rare_thin" ) )
 	BGPatternThin2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xC221B51E4063E3D ) )
 	BGPatternThin2:setShaderVector( 0, 0, 0, 0, 0 )
 	BGPatternThin2:setShaderVector( 1, 1, 1, 0, 0 )

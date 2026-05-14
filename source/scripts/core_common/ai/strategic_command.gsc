@@ -1879,11 +1879,11 @@ function function_f867cce0( missioncomponent, commanderteam )
     
     switch ( type )
     {
-        case #"hash_6e9081699001bcd9":
+        case #"missioncomponent_destroy":
             break;
-        case #"hash_3bf68fbcb5c53b6c":
+        case #"missioncomponent_capturearea":
             break;
-        case #"hash_4984fd4b0ba666a2":
+        case #"missioncomponent_goto":
             break;
         default:
             return false;
@@ -2008,9 +2008,9 @@ function querypointsinsideposition( bot, position, radius, halfheight )
     function private function_1891d0d2( points, obb )
     {
         var_2586092e = 50;
-        var_c2a08848 = 0;
+        serverframecount = 0;
         
-        while ( var_c2a08848 < var_2586092e )
+        while ( serverframecount < var_2586092e )
         {
             if ( getdvarint( #"ai_debugsquadpointquery", 0 ) )
             {
@@ -2022,7 +2022,7 @@ function querypointsinsideposition( bot, position, radius, halfheight )
                 }
             }
             
-            var_c2a08848++;
+            serverframecount++;
             waitframe( 1 );
         }
     }

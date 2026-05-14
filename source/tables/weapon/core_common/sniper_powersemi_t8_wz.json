@@ -4,7 +4,7 @@
     "displayname": "#weapon/sniper_powersemi_t8",
     "xhash_60": "#hash_5fb0be242a7504a2",
     "weapon70": "#sniper_powersemi_t8",
-    "streamkey": "#hash_544fb3c17f4c33c1",
+    "streamkey": "#sniper_powersemi_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -66,7 +66,7 @@
     "sound210": "#hash_3f969a2cbe6bf119",
     "sound240": "#hash_474a10cd847c7803",
     "sound250": "#hash_146e19cd67fe19de",
-    "sound260": "#hash_515f54aa1f553686",
+    "sound260": "#prj_crack_supersonic",
     "sound310": "#hash_553957b278d8e879",
     "sound5e0": "#fly_scope_zoom",
     "sound600": "#hash_5c9addf2686f77e2",
@@ -82,7 +82,7 @@
     "attachments": [
         "#hash_f459a0af8e8f912b",
         "#acog_wz",
-        "#hash_6bd994daaf35e844"
+        "#adsreload_wz"
     ],
     "attachmentUniques": [
         "#hash_70fbe08e8b915d59",
@@ -90,7 +90,7 @@
         "#hash_641bff769768e86a"
     ],
     "sharedWeaponSounds": "#rifle",
-    "ballisticDesc": "#hash_77ea811fd6047f63",
+    "ballisticDesc": "#338_fmj",
     "tracers": [
         "#hash_7a6c24626f115206",
         "#hash_70561f677d3c0da1"
@@ -114,7 +114,7 @@
     "inventoryIconZm": "#ui_icon_weapon_hud_sniper_powersemi_wz",
     "image_e90": "#ui_icon_obit_sniper_powersemi",
     "fireRumble": "#sniper_fire",
-    "rumble_dc8": "#hash_2e361344d740b1c3",
+    "rumble_dc8": "#sniper_adsfire",
     "rumble_e20": "#hash_322cc8a226215312",
     "fx_bc8": "#hash_3366ec5ecfaa3b8c",
     "fx_bd0": "#hash_336df85ecfb06e9e",

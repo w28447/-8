@@ -55,7 +55,7 @@ CoD.TabletTak5_HealthBonus.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.BonusText = BonusText
 	
 	local ScorePip = LUI.UIImage.new( 0, 0, 0, 10, 0, 0, -9.5, 0.5 )
-	ScorePip:setImage( RegisterImage( 0x4FCFCDE5B5BEF0 ) )
+	ScorePip:setImage( RegisterImage( "uie_ui_hud_tak5_score_linker" ) )
 	ScorePip:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	ScorePip:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( ScorePip )

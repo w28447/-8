@@ -115,7 +115,7 @@ function function_acac764e()
     }
     
     newindex = ( index + 1 ) % 10;
-    self.pers[ #"hash_76fbbcf94dab5536" ] = newindex;
+    self.pers[ #"recent_stat_index" ] = newindex;
     self stats::set_stat( #"playerstatsbygametype", level.var_12323003, #"prevscoreindex", newindex );
 }
 
@@ -368,7 +368,7 @@ function challenge_complete( eventstruct )
             {
                 return;
             }
-            else if ( getdvarint( #"hash_730fab929626f598", 0 ) == 0 )
+            else if ( getdvarint( #"ui_zmenablemasterycamos", 0 ) == 0 )
             {
                 if ( var_a05af556 === #"camo_gold" || var_a05af556 === #"camo_diamond" || var_a05af556 === #"camo_darkmatter" )
                 {
@@ -384,7 +384,7 @@ function challenge_complete( eventstruct )
     
     challengenamehash = tablelookupcolumnforrow( tablename, row, 5 );
     
-    if ( challengenamehash === #"hash_4a80d584aac2e7d0" )
+    if ( challengenamehash === #"challenge/empty_string" )
     {
         return;
     }

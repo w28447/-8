@@ -14,7 +14,7 @@ CoD.BM_ContractProgress.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local MeterGlowComplete = LUI.UIImage.new( 0.5, 0.5, -134, 134, 0.5, 0.5, -180, 88 )
 	MeterGlowComplete:setAlpha( 0 )
 	MeterGlowComplete:setImage( RegisterImage( 0x34F2CCA3975B1DE ) )
-	MeterGlowComplete:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9AD9C230B10C37 ) )
+	MeterGlowComplete:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_add" ) )
 	MeterGlowComplete:setShaderVector( 0, 1, 0, 0, 0 )
 	MeterGlowComplete:setShaderVector( 1, 0.5, 0, 0, 0 )
 	MeterGlowComplete:setShaderVector( 2, 0.5, 0, 0, 0 )
@@ -24,8 +24,8 @@ CoD.BM_ContractProgress.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	self.MeterGlowComplete = MeterGlowComplete
 	
 	local MeterGlow = LUI.UIImage.new( 0.5, 0.5, -133, 135, 0.5, 0.5, -180, 88 )
-	MeterGlow:setImage( RegisterImage( 0x2097AB9046A99C4 ) )
-	MeterGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x9AD9C230B10C37 ) )
+	MeterGlow:setImage( RegisterImage( "uie_ui_menu_contracts_ring_glow" ) )
+	MeterGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_add" ) )
 	MeterGlow:setShaderVector( 1, 0.5, 0, 0, 0 )
 	MeterGlow:setShaderVector( 2, 0.5, 0, 0, 0 )
 	MeterGlow:setShaderVector( 3, 0, 0, 0, 0 )

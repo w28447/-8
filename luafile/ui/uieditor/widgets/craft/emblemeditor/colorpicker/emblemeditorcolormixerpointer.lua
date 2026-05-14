@@ -28,7 +28,7 @@ CoD.EmblemEditorColorMixerPointer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local Arrow = LUI.UIImage.new( 0, 0, -5, 7, 0, 0, -18.5, -6.5 )
 	Arrow:setZRot( -45 )
-	Arrow:setImage( RegisterImage( 0x2764FF85084B3A4 ) )
+	Arrow:setImage( RegisterImage( "uie_ui_menu_social_emblem_corner" ) )
 	Arrow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	Arrow:setShaderVector( 0, 3.2, 0, 0, 0 )
 	self:addElement( Arrow )

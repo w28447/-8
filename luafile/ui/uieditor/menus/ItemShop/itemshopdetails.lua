@@ -367,7 +367,7 @@ LUI.createMenu.ItemShopDetails = function ( f1_arg0, f1_arg1 )
 			CoD.Menu.SetButtonLabel( f44_arg1, Enum.LUIButton[0x29E5695FF1401AD], 0x0, nil, "ui_contextual_2" )
 			return false
 		elseif CoD.BlackMarketUtility.CanPlayGesture( f44_arg1 ) then
-			CoD.Menu.SetButtonLabel( f44_arg1, Enum.LUIButton[0x29E5695FF1401AD], 0x52FB29ED3A3CA79, nil, "ui_contextual_2" )
+			CoD.Menu.SetButtonLabel( f44_arg1, Enum.LUIButton[0x29E5695FF1401AD], "menu/preview", nil, "ui_contextual_2" )
 			return true
 		else
 			return false
@@ -403,7 +403,7 @@ LUI.createMenu.ItemShopDetails = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f48_arg0, f48_arg1, f48_arg2 )
 		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f48_arg0, f48_arg2, "movieName" ) and IsPC() then
-			CoD.Menu.SetButtonLabel( f48_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x52FB29ED3A3CA79, nil, "ui_remove" )
+			CoD.Menu.SetButtonLabel( f48_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], menu/preview, nil, "ui_remove" )
 			return true
 		else
 			return false
@@ -481,10 +481,10 @@ LUI.createMenu.ItemShopDetails = function ( f1_arg0, f1_arg1 )
 			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_remove" )
 			return false
 		elseif CoD.ModelUtility.IsSelfModelValueEqualTo( f54_arg0, f54_arg2, "allowFrozenMoment", true ) then
-			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x52FB29ED3A3CA79, nil, "ui_remove" )
+			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x755DA1E2E7C263F], menu/preview, nil, "ui_remove" )
 			return true
 		elseif CoD.ModelUtility.IsSelfModelValueNonEmptyString( f54_arg0, f54_arg2, "movieName" ) then
-			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x52FB29ED3A3CA79, nil, "ui_remove" )
+			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x755DA1E2E7C263F], menu/preview, nil, "ui_remove" )
 			return true
 		else
 			return false

@@ -39,7 +39,7 @@ function function_6889bb61( var_74d544ba )
     
     if ( isdefined( var_74d544ba ) && var_74d544ba )
     {
-        level waittill( #"hash_4c62fe02843b1a98" );
+        level waittill( #"draft_game_start" );
     }
     
     self clientfield::set_to_player( "screen_blur", 1 );
@@ -53,7 +53,7 @@ function function_6889bb61( var_74d544ba )
     
     if ( isdefined( level._objective_zapper_tall ) )
     {
-        self [[ level._objective_zapper_tall ]]( #"hash_2ac3b79c708dcfd5" );
+        self [[ level._objective_zapper_tall ]]( #"default_desc_training" );
     }
     
     self disableweapons();

@@ -282,13 +282,13 @@ function on_player_spawned()
 {
     self endon( #"death" );
     self thread function_8e0b371();
-    self thread zm_audio::function_713192b1( #"hash_7a784e915fb4da82", #"body_pit" );
-    self thread zm_audio::function_713192b1( #"hash_2a27c4b2d37ac547", #"odin_floor" );
-    self thread zm_audio::function_713192b1( #"hash_f06f1d12b9e06bb", #"ra_base" );
-    self thread zm_audio::function_713192b1( #"hash_54ab01103f8534bd", #"temple" );
-    self thread zm_audio::function_713192b1( #"hash_3bf0a3cc4bf210d3", #"zeus_base" );
-    self thread zm_audio::function_713192b1( #"hash_397ee221838b64ee", #"danu" );
-    self thread zm_audio::function_713192b1( #"hash_5c1dcbfe0b5001dd", #"danu" );
+    self thread zm_audio::function_713192b1( #"zm_towers/location_body_pit", #"body_pit" );
+    self thread zm_audio::function_713192b1( #"zm_towers/location_odin_altar_room", #"odin_floor" );
+    self thread zm_audio::function_713192b1( #"zm_towers/location_ra_basement", #"ra_base" );
+    self thread zm_audio::function_713192b1( #"zm_towers/location_pap_room", #"temple" );
+    self thread zm_audio::function_713192b1( #"zm_towers/location_zeus_basement", #"zeus_base" );
+    self thread zm_audio::function_713192b1( #"zm_towers/location_danu_basement", #"danu" );
+    self thread zm_audio::function_713192b1( #"zm_towers/location_danu_altar_room", #"danu" );
 }
 
 // Namespace zm_towers_zones/zm_towers_zones
@@ -331,51 +331,51 @@ function get_location_string( e_player )
     switch ( str_zone )
     {
         case #"zone_starting_area_center":
-            str_display = #"hash_4a67009994e6a476";
+            str_display = #"zm_towers/location_challenge_podium";
             break;
         case #"zone_starting_area_tunnel":
         case #"zone_starting_area_odin":
         case #"zone_starting_area_ra":
         case #"zone_starting_area_danu":
         case #"zone_starting_area_zeus":
-            str_display = #"hash_1567549ec3ba97d4";
+            str_display = #"zm_towers/location_starting_area";
             break;
         case #"zone_danu_top_floor":
-            str_display = #"hash_5c1dcbfe0b5001dd";
+            str_display = #"zm_towers/location_danu_altar_room";
             break;
         case #"zone_danu_ground_floor":
         case #"zone_danu_hallway":
-            str_display = #"hash_7a9264bacc159479";
+            str_display = #"zm_towers/location_danu_entrance";
             break;
         case #"zone_danu_basement":
-            str_display = #"hash_397ee221838b64ee";
+            str_display = #"zm_towers/location_danu_basement";
             break;
         case #"zone_ra_top_floor":
-            str_display = #"hash_6803828af6a2f994";
+            str_display = #"zm_towers/location_ra_altar_room";
             break;
         case #"zone_ra_hallway":
         case #"zone_ra_ground_floor":
-            str_display = #"hash_42941b7294416898";
+            str_display = #"zm_towers/location_ra_entrance";
             break;
         case #"zone_ra_basement":
-            str_display = #"hash_f06f1d12b9e06bb";
+            str_display = #"zm_towers/location_ra_basement";
             break;
         case #"zone_odin_top_floor":
-            str_display = #"hash_2a27c4b2d37ac547";
+            str_display = #"zm_towers/location_odin_altar_room";
             break;
         case #"zone_odin_ground_floor":
         case #"zone_odin_hallway":
-            str_display = #"hash_6edbbd092bc3117f";
+            str_display = #"zm_towers/location_odin_entrance";
             break;
         case #"zone_odin_basement":
-            str_display = #"hash_6182c3f17fbe7e38";
+            str_display = #"zm_towers/location_odin_basement";
             break;
         case #"zone_zeus_top_floor":
-            str_display = #"hash_9a1707dc944a3bc";
+            str_display = #"zm_towers/location_zeus_altar_room";
             break;
         case #"zone_zeus_hallway":
         case #"zone_zeus_ground_floor":
-            str_display = #"hash_2795247ad0a93910";
+            str_display = #"zm_towers/location_zeus_entrance";
             break;
         case #"zone_zeus_basement":
             if ( level flag::get( #"hash_26c0c05d0a3e382f" ) )
@@ -384,50 +384,50 @@ function get_location_string( e_player )
             }
             else
             {
-                str_display = #"hash_3bf0a3cc4bf210d3";
+                str_display = #"zm_towers/location_zeus_basement";
             }
             
             break;
         case #"zone_danu_ra_bridge":
-            str_display = #"hash_340eafe8d0baeac2";
+            str_display = #"zm_towers/location_danu_ra_bridge";
             break;
         case #"zone_odin_zeus_bridge":
-            str_display = #"hash_3eb632726bcfd3b8";
+            str_display = #"zm_towers/location_odin_zeus_bridge";
             break;
         case #"zone_danu_ra_tunnel":
-            str_display = #"hash_75825b791d3a7f4d";
+            str_display = #"zm_towers/location_danu_ra_tunnel";
             break;
         case #"zone_danu_tunnel":
-            str_display = #"hash_384dc630decdd5e5";
+            str_display = #"zm_towers/location_danu_tunnel";
             break;
         case #"zone_ra_tunnel":
-            str_display = #"hash_1ad73836208cbff4";
+            str_display = #"zm_towers/location_ra_tunnel";
             break;
         case #"zone_fallen_hero":
-            str_display = #"hash_26bd00647976ee13";
+            str_display = #"zm_towers/location_fallen_hero";
             break;
         case #"zone_odin_tunnel":
-            str_display = #"hash_2e1e7d63d11c4a1b";
+            str_display = #"zm_towers/location_odin_tunnel";
             break;
         case #"zone_odin_zeus_tunnel":
-            str_display = #"hash_553f97cb9500b3bf";
+            str_display = #"zm_towers/location_odin_zeus_tunnel";
             break;
         case #"zone_zeus_tunnel":
-            str_display = #"hash_622a5e1614b58b7c";
+            str_display = #"zm_towers/location_zeus_tunnel";
             break;
         case #"zone_cursed_room":
-            str_display = #"hash_68fd9aced4fcdecc";
+            str_display = #"zm_towers/location_cursed_room";
             break;
         case #"zone_flooded_crypt":
-            str_display = #"hash_140d9887b328fc9a";
+            str_display = #"zm_towers/location_flooded_crypt";
             break;
         case #"zone_body_pit":
-            str_display = #"hash_7a784e915fb4da82";
+            str_display = #"zm_towers/location_body_pit";
             break;
         case #"zone_pap_room":
-        case #"hash_3c2efff9d599c329":
+        case #"zone_pap_room_balcony_body_pit":
         case #"zone_pap_room_balcony_flooded_crypt":
-            str_display = #"hash_54ab01103f8534bd";
+            str_display = #"zm_towers/location_pap_room";
             break;
         default:
             str_display = undefined;

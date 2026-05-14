@@ -1,11 +1,11 @@
 require( "ui/uieditor/widgets/callingcards/callingcards_asset_ghost_spin" )
 
-CoD[0x16E4D2022024D11] = InheritFrom( LUI.UIElement )
-CoD[0x16E4D2022024D11].__defaultWidth = 960
-CoD[0x16E4D2022024D11].__defaultHeight = 240
-CoD[0x16E4D2022024D11].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD["callingcards_zm_darkops"] = InheritFrom( LUI.UIElement )
+CoD["callingcards_zm_darkops"].__defaultWidth = 960
+CoD["callingcards_zm_darkops"].__defaultHeight = 240
+CoD["callingcards_zm_darkops"].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0x16E4D2022024D11] )
+	self:setClass( CoD["callingcards_zm_darkops"] )
 	self.id = "CallingCards_zm_DarkOps"
 	self.soundSet = "default"
 	self.anyChildUsesUpdateState = true
@@ -84,14 +84,14 @@ CoD[0x16E4D2022024D11].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0x16E4D2022024D11].__resetProperties = function ( f2_arg0 )
+CoD["callingcards_zm_darkops"].__resetProperties = function ( f2_arg0 )
 	f2_arg0.ghostSpin:completeAnimation()
 	f2_arg0.paranormal:completeAnimation()
 	f2_arg0.ghostSpin:setAlpha( 1 )
 	f2_arg0.paranormal:setAlpha( 0.5 )
 end
 
-CoD[0x16E4D2022024D11].__clipsPerState = {
+CoD["callingcards_zm_darkops"].__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()
@@ -132,7 +132,7 @@ CoD[0x16E4D2022024D11].__clipsPerState = {
 		end
 	}
 }
-CoD[0x16E4D2022024D11].__onClose = function ( f8_arg0 )
+CoD["callingcards_zm_darkops"].__onClose = function ( f8_arg0 )
 	f8_arg0.ghostSpin:close()
 end
 

@@ -3,7 +3,7 @@
     "baseWeapon": "#gadget_vision_pulse",
     "displayname": "#weapon/gadget_vision_pulse",
     "weapon70": "#gadget_vision_pulse",
-    "streamkey": "#hash_47b273e8565f3a2e",
+    "streamkey": "#gadget_vision_pulse_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",

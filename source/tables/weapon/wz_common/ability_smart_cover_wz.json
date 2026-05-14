@@ -3,7 +3,7 @@
     "baseWeapon": "#ability_smart_cover",
     "displayname": "#smartcover/name",
     "weapon70": "#ability_smart_cover",
-    "streamkey": "#hash_2a473e9efb82bc19",
+    "streamkey": "#ability_smart_cover_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

@@ -1089,7 +1089,7 @@ function function_3e3b6ce1()
             }
             
             var_b9733045 = self targetting_delay::function_1c169b3a( target, 0 );
-            canseetarget = var_b9733045 && target sightconetrace( self function_d3a9800e(), self, anglestoforward( self.angles ), self.settings.var_e7260470 );
+            canseetarget = var_b9733045 && target sightconetrace( self function_d3a9800e(), self, anglestoforward( self.angles ), self.settings.vis_cone_angle );
             
             if ( isdefined( level.var_6cfbe5a ) )
             {

@@ -1,4 +1,4 @@
-#using script_301f64a4090c381a;
+#using scripts\zm_common\zm_faction_buffs.gsc;
 #using scripts\core_common\clientfield_shared;
 #using scripts\core_common\flag_shared;
 #using scripts\core_common\struct;
@@ -508,7 +508,7 @@ function wall_weapon_update_prompt( player )
             }
             else
             {
-                self.stub.hint_string = #"hash_18379e4e114fabf9";
+                self.stub.hint_string = #"zombie/weaponcostonly_cfill_bgb_secret_shopper";
             }
             
             if ( self.stub.var_8d306e51 )
@@ -548,7 +548,7 @@ function wall_weapon_update_prompt( player )
             }
             else
             {
-                self.stub.hint_string = #"hash_60606b68e93a29c8";
+                self.stub.hint_string = #"zombie/weaponcostonly_cfill";
             }
             
             if ( self.stub.var_8d306e51 )
@@ -627,7 +627,7 @@ function wall_weapon_update_prompt( player )
             }
             else
             {
-                self.stub.hint_string = #"hash_4a6901dda0793d3c";
+                self.stub.hint_string = #"zombie/weaponammoonly_cfill_bgb_secret_shopper";
             }
             
             if ( self.stub.var_8d306e51 )
@@ -682,7 +682,7 @@ function wall_weapon_update_prompt( player )
             }
             else
             {
-                self.stub.hint_string = #"hash_382490a598f64833";
+                self.stub.hint_string = #"zombie/weaponammoonly_cfill";
             }
             
             if ( self.stub.var_8d306e51 )
@@ -795,7 +795,7 @@ function get_weapon_hint_ammo()
         return #"hash_2791ecebb85142c4";
     }
     
-    return #"hash_60606b68e93a29c8";
+    return #"zombie/weaponcostonly_cfill";
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
@@ -1128,7 +1128,7 @@ function weapon_spawn_think()
                     {
                         player zm_stats::increment_client_stat( "upgraded_ammo_purchased" );
                         player zm_stats::increment_player_stat( "upgraded_ammo_purchased" );
-                        player namespace_e38c57c1::function_183814d3();
+                        player zm_faction_buffs::function_183814d3();
                     }
                     else
                     {

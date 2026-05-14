@@ -92,7 +92,7 @@ CoD.SpecialistOutfitCategory_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local BracketL = LUI.UIImage.new( 1, 1, -82, -74, 0, 0, 23, 47 )
 	BracketL:setAlpha( 0 )
-	BracketL:setImage( RegisterImage( 0x6AA0A70F33D3978 ) )
+	BracketL:setImage( RegisterImage( "uie_ui_menu_specialist_hub_customize_bracket" ) )
 	BracketL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BracketL )
 	self.BracketL = BracketL
@@ -109,7 +109,7 @@ CoD.SpecialistOutfitCategory_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	local BracketR = LUI.UIImage.new( 1, 1, -24, -16, 0, 0, 22, 46 )
 	BracketR:setAlpha( 0 )
 	BracketR:setZRot( 180 )
-	BracketR:setImage( RegisterImage( 0x6AA0A70F33D3978 ) )
+	BracketR:setImage( RegisterImage( "uie_ui_menu_specialist_hub_customize_bracket" ) )
 	BracketR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BracketR )
 	self.BracketR = BracketR

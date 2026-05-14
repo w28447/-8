@@ -24789,7 +24789,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77a91310b1046ce3",
+                    "value": "#amb_thunder_dist",
                     "unk1a": true
                 },
                 {
@@ -24849,7 +24849,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77a91310b1046ce3",
+                    "value": "#amb_thunder_dist",
                     "unk1a": true
                 },
                 {
@@ -30261,7 +30261,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77a91310b1046ce3",
+                    "value": "#amb_thunder_dist",
                     "unk1a": true
                 },
                 {

@@ -88,7 +88,7 @@ CoD.DirectorSelectButtonImageInternal.new = function ( f1_arg0, f1_arg1, f1_arg2
 			end
 		}
 	} )
-	ButtonName.GameModeText:setText( ToUpper( CoD.BaseUtility.LocalizeIfXHash( 0xA43B10D9DA121A ) ) )
+	ButtonName.GameModeText:setText( ToUpper( CoD.BaseUtility.LocalizeIfXHash( "menu/waiting_caps" ) ) )
 	ButtonName.GameModeText:setTTF( "ttmussels_regular" )
 	self:addElement( ButtonName )
 	self.ButtonName = ButtonName

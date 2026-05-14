@@ -360,7 +360,7 @@ f0_local0.GetDisplayNameForLobbyMainMode = function ( f29_arg0 )
 end
 
 f0_local0.GetDefaultMap = function ( f30_arg0 )
-	local f30_local0 = f0_local0.LobbyMainModeData[f30_arg0[0xEB7DDC7F079D51B]]
+	local f30_local0 = f0_local0.LobbyMainModeData[f30_arg0["mainmode"]]
 	local f30_local1 = f30_local0 and f30_local0.eMode
 	if f30_arg0.eGameModes == Enum.eGameModes[0x7B5630CD29180CB] then
 		if f30_local1 then
@@ -376,7 +376,7 @@ f0_local0.GetDefaultMap = function ( f30_arg0 )
 end
 
 f0_local0.GetDefaultGameType = function ( f31_arg0 )
-	local f31_local0 = f0_local0.LobbyMainModeData[f31_arg0[0xEB7DDC7F079D51B]]
+	local f31_local0 = f0_local0.LobbyMainModeData[f31_arg0["mainmode"]]
 	local f31_local1 = f31_local0 and f31_local0.eMode
 	if f31_arg0.eGameModes == Enum.eGameModes[0x7B5630CD29180CB] or f31_arg0.eGameModes == Enum.eGameModes[0x58ECA70A244C08F] then
 		if f31_local1 then
@@ -1175,7 +1175,7 @@ f0_local0.UpdateDailyCallingDvar = function ()
 	end
 	local f87_local1 = #f87_local0.dailyschedule - 1
 	local f87_local2 = Engine[0x786FFC9E621CAB7]()
-	local f87_local3 = Engine[0x90B6BCE69A8E08B]( tostring( f87_local0[0x21C303DA786A89C] ) )
+	local f87_local3 = Engine[0x90B6BCE69A8E08B]( tostring( f87_local0["callingstarttime"] ) )
 	if f87_local2 < f87_local3 then
 		Engine.SetDvar( "zm_active_daily_calling", 0 )
 		return 
@@ -1295,7 +1295,7 @@ f0_local0.SetLastSelectedSpecialist = function ( f95_arg0, f95_arg1 )
 	if Engine.CurrentSessionMode() == Enum.eModes[0xBF1DCC8138A9D39] then
 		local f95_local0 = Engine.StorageGetBuffer( f95_arg0, Enum.StorageFileType[0xDF87425733853AE] )
 		if f95_local0 then
-			f95_local0[0x766CE60E25569A3][0x8A76647E94009C3][0xDF5E6BB54765F4C]:set( f95_arg1 )
+			f95_local0[0x766CE60E25569A3][0x8A76647E94009C3]["characterindex"]:set( f95_arg1 )
 		end
 	end
 end
@@ -1321,7 +1321,7 @@ f0_local0.IsCompatibleNatConnection = function ( f96_arg0, f96_arg1 )
 	if f96_arg1 == nil then
 		f96_arg1 = Engine.GetNatType()
 	end
-	if f96_arg1 == Enum.XONLINE_NAT_TYPE[0x13C8D4EF221C85D] or f96_arg0 == Enum.XONLINE_NAT_TYPE[0x13C8D4EF221C85D] then
+	if f96_arg1 == Enum.XONLINE_NAT_TYPE["xonline_nat_unknown"] or f96_arg0 == Enum.XONLINE_NAT_TYPE["xonline_nat_unknown"] then
 		return true
 	else
 		return f0_local2[f96_arg1][f96_arg0]

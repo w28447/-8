@@ -20,7 +20,7 @@
             return;
         }
         
-        var_94237d8 = array( #"hash_20deab97abbf7b12", #"hash_764a5fc3ba8820d2", #"hash_647ebc7d24425fee", #"tcmgoal" );
+        var_94237d8 = array( #"classicpact_tasks", #"rushpact_tasks", #"tcmpact_tasks", #"tcmgoal" );
         i = 0;
         
         foreach ( var_acbd7392 in var_94237d8 )
@@ -56,7 +56,7 @@
             str = strreplace( cmd, "<dev string:x53>", "<dev string:x14c>" );
             var_762ca590 = hash( str );
             
-            if ( !getdvarint( #"hash_11da02ca40639de5", 0 ) )
+            if ( !getdvarint( #"faction_callings_enabled_zm", 0 ) )
             {
                 iprintln( "<dev string:x153>" + self.name );
             }
@@ -97,7 +97,7 @@
             interval = arr[ 0 ];
             interval = int( interval );
             
-            if ( !getdvarint( #"hash_11da02ca40639de5", 0 ) )
+            if ( !getdvarint( #"faction_callings_enabled_zm", 0 ) )
             {
                 iprintln( "<dev string:x153>" + self.name );
                 return;

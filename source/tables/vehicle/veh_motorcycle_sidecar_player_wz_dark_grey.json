@@ -45,17 +45,17 @@
         "tag_taillight_right_fx"
     ],
     "sndMaterialNames": [
-        "#hash_7970fb87a5d80091",
-        "#hash_749cd68093518a44",
-        "#hash_2d31e9996c9cef7d"
+        "#veh_atv_road",
+        "#veh_atv_slide",
+        "#veh_atv_peel"
     ],
     "skidSpeedMin": 250,
     "skidSpeedMax": 600,
     "peelSpeedMax": 176,
     "model": "#hash_2d31fbd654b4b2a1",
     "deathModel": "#hash_60162578a7915a7d",
-    "soundDef": "#hash_140ca7b24e37dd34",
-    "compassIconMaterial": "#hash_615100f7d14044c4",
+    "soundDef": "#veh_motorcycle_wz",
+    "compassIconMaterial": "#compass_vehicle_motorcycle",
     "destructibleDef": "#hash_37756fa3b4252076",
     "tacticalModeIcon": "#hash_6c7ba888137c81b9",
     "steerAxisName": "AXIS_LSTICK",
@@ -152,14 +152,14 @@
                     {
                         "GAMEPAD": "#GAMEPAD",
                         "hash_7aecb1d7": 0,
-                        "hash_5dba026ffa1d58cd:hash_4be786c9": "localized17#hash_5dba026ffa1d58cd",
+                        "menu/hud_vehicle_steer:hash_4be786c9": "localized17#menu/hud_vehicle_steer",
                         "hash_334a8e60": "left",
                         "prompt": "+lookstick"
                     },
                     {
                         "GAMEPAD": "#GAMEPAD",
                         "hash_7aecb1d7": 0,
-                        "hash_2b136dbf97f5d00d:hash_4be786c9": "localized17#hash_2b136dbf97f5d00d",
+                        "menu/free_look:hash_4be786c9": "localized17#menu/free_look",
                         "hash_334a8e60": "left",
                         "prompt": "+speed_throw"
                     }

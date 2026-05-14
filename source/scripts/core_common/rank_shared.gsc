@@ -114,8 +114,8 @@ function initscoreinfo()
             var_a434fd2d = tablelookupcolumnforrow( scoreinfotablename, row, 20 );
             is_deprecated = tablelookupcolumnforrow( scoreinfotablename, row, 21 );
             bounty_reward = tablelookupcolumnforrow( scoreinfotablename, row, 22 );
-            var_65181181 = int( isdefined( tablelookupcolumnforrow( scoreinfotablename, row, 24 ) ) ? tablelookupcolumnforrow( scoreinfotablename, row, 24 ) : 0 );
-            registerscoreinfo( type, row, lp, xp, sp, hs, res, var_e775f7ed, dp, is_objective, label, medalname, job_type, var_b6593614, var_1a39d14, var_bdbfb0e, var_a434fd2d, is_deprecated, bounty_reward, var_65181181 );
+            mark2_bonus_xp = int( isdefined( tablelookupcolumnforrow( scoreinfotablename, row, 24 ) ) ? tablelookupcolumnforrow( scoreinfotablename, row, 24 ) : 0 );
+            registerscoreinfo( type, row, lp, xp, sp, hs, res, var_e775f7ed, dp, is_objective, label, medalname, job_type, var_b6593614, var_1a39d14, var_bdbfb0e, var_a434fd2d, is_deprecated, bounty_reward, mark2_bonus_xp );
             
             if ( !isdefined( game.scoreinfoinitialized ) )
             {
@@ -136,7 +136,7 @@ function initscoreinfo()
                     ismedal = 1;
                 }
                 
-                registerxp( type, xp, addplayerstat, ismedal, dp, row, var_65181181 );
+                registerxp( type, xp, addplayerstat, ismedal, dp, row, mark2_bonus_xp );
             }
         }
     }
@@ -162,7 +162,7 @@ function getrankxpcapped( inrankxp )
 // Params 20
 // Checksum 0x78cc2557, Offset: 0xba0
 // Size: 0x748
-function registerscoreinfo( type, row, lp, xp, sp, hs, res, var_e775f7ed, dp, is_obj, label, medalname, job_type, var_b6593614, var_1a39d14, var_bdbfb0e, var_a434fd2d, is_deprecated, bounty_reward, var_65181181 )
+function registerscoreinfo( type, row, lp, xp, sp, hs, res, var_e775f7ed, dp, is_obj, label, medalname, job_type, var_b6593614, var_1a39d14, var_bdbfb0e, var_a434fd2d, is_deprecated, bounty_reward, mark2_bonus_xp )
 {
     overridedvar = "scr_" + level.gametype + "_score_" + type;
     
@@ -279,9 +279,9 @@ function registerscoreinfo( type, row, lp, xp, sp, hs, res, var_e775f7ed, dp, is
             level.scoreinfo[ type ][ #"bounty_reward" ] = bounty_reward;
         }
         
-        if ( isdefined( var_65181181 ) && var_65181181 )
+        if ( isdefined( mark2_bonus_xp ) && mark2_bonus_xp )
         {
-            level.scoreinfo[ type ][ #"hash_691aeaca4a1866e3" ] = var_65181181;
+            level.scoreinfo[ type ][ #"mark2_bonus_xp" ] = mark2_bonus_xp;
         }
         
         return;
@@ -338,8 +338,8 @@ function getscoreinfovalue( type )
         }
         
         /#
-            var_1eb7c454 = getdvarfloat( #"hash_eae9a8ee387705d", 1 );
-            n_score = int( n_score * var_1eb7c454 );
+            dev_score_multiplier = getdvarfloat( #"dev_score_multiplier", 1 );
+            n_score = int( n_score * dev_score_multiplier );
         #/
         
         return n_score;

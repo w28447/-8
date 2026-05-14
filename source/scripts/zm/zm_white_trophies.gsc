@@ -51,7 +51,7 @@ function on_player_connect()
 function shard_watcher()
 {
     level endon( #"game_ended" );
-    self waittill( #"hash_5aa1c9627e8626e0" );
+    self waittill( #"shard_step_complete" );
     
     /#
         iprintlnbold( "<dev string:x38>" + "<dev string:x4b>" );
@@ -66,7 +66,7 @@ function shard_watcher()
 // Size: 0xec
 function function_e0aaa050()
 {
-    level endon( #"game_ended", #"hash_5aa1c9627e8626e0" );
+    level endon( #"game_ended", #"shard_step_complete" );
     self endon( #"death", #"disconnect" );
     
     for ( i = 0; i < 20 ; i++ )
@@ -92,7 +92,7 @@ function function_e0aaa050()
 // Size: 0xd4
 function function_f37ba127()
 {
-    level endon( #"game_ended", #"hash_5aa1c9627e8626e0" );
+    level endon( #"game_ended", #"shard_step_complete" );
     self endon( #"disconnect" );
     
     while ( true )
@@ -119,7 +119,7 @@ function function_f37ba127()
 // Size: 0xac
 function function_9785ebce()
 {
-    level endon( #"game_ended", #"hash_5aa1c9627e8626e0" );
+    level endon( #"game_ended", #"shard_step_complete" );
     
     for ( i = 0; i < 4 ; i++ )
     {
@@ -222,7 +222,7 @@ function function_2c104547( s_params )
 // Size: 0xa4
 function pap_watcher()
 {
-    level endon( #"game_ended", #"hash_5aa1c9627e8626e0" );
+    level endon( #"game_ended", #"shard_step_complete" );
     level waittill( #"pap_power_ready" );
     
     if ( level.round_number <= 5 )
@@ -276,7 +276,7 @@ function function_48f916b( params )
 // Size: 0x19e
 function function_5e1138a2()
 {
-    level endon( #"hash_5aa1c9627e8626e0" );
+    level endon( #"shard_step_complete" );
     self endon( #"disconnect" );
     
     while ( true )
@@ -303,12 +303,12 @@ function function_5e1138a2()
                     #/
                     
                     self zm_utility::giveachievement_wrapper( "zm_white_perk", 0 );
-                    self notify( #"hash_1305a28597a2e439" );
+                    self notify( #"stop_perk_watcher" );
                     return;
                 }
             }
             
-            self notify( #"hash_1305a28597a2e439" );
+            self notify( #"stop_perk_watcher" );
             self.var_c9f12812 = array( 0, 0, 0, 0 );
         }
     }
@@ -320,7 +320,7 @@ function function_5e1138a2()
 // Size: 0x82
 function perk_watcher()
 {
-    self endon( #"hash_1305a28597a2e439", #"disconnect" );
+    self endon( #"stop_perk_watcher", #"disconnect" );
     
     while ( true )
     {
@@ -356,7 +356,7 @@ function function_91cfddc4()
 // Size: 0x1e2
 function function_df71a9b9()
 {
-    level endon( #"game_ended", #"hash_5aa1c9627e8626e0" );
+    level endon( #"game_ended", #"shard_step_complete" );
     
     while ( true )
     {

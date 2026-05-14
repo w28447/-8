@@ -1,4 +1,4 @@
-#using script_7ca3324ffa5389e4;
+#using scripts\core_common\player\player_free_fall_util.csc;
 #using scripts\core\gametypes\frontend_blackmarket;
 #using scripts\core\gametypes\frontend_draft;
 #using scripts\core_common\activecamo_shared;
@@ -588,7 +588,7 @@ function function_37304ace( localclientnum, menu_name )
     
     while ( true )
     {
-        waitresult = level waittill( #"hash_6d381d5ecca233c6" );
+        waitresult = level waittill( #"inspect_player_weapon" );
         
         if ( isdefined( waitresult.clear_weapon ) && waitresult.clear_weapon )
         {
@@ -1297,7 +1297,7 @@ function entityspawned( localclientnum )
             adddebugcommand( localclientnum, "<dev string:x66>" + var_ee63b362 + "<dev string:x369>" + "<dev string:x373>" + "<dev string:x167>" + name + "<dev string:x9a>" );
         }
         
-        setdvar( #"hash_1311d7636a782655", "<dev string:x4b>" );
+        setdvar( #"weap_render_name", "<dev string:x4b>" );
         setdvar( #"weap_render", "<dev string:x4b>" );
         var_c11ba901 = array( "<dev string:x2e7>", "<dev string:x2f5>", "<dev string:x2fc>", "<dev string:x303>", "<dev string:x386>", "<dev string:x38f>", "<dev string:x39a>" );
         weapon_name = "<dev string:x4b>";
@@ -1307,9 +1307,9 @@ function entityspawned( localclientnum )
         {
             wait 0.1;
             
-            if ( getdvarstring( #"hash_1311d7636a782655", weapon_name ) != weapon_name )
+            if ( getdvarstring( #"weap_render_name", weapon_name ) != weapon_name )
             {
-                weapon_name = getdvarstring( #"hash_1311d7636a782655" );
+                weapon_name = getdvarstring( #"weap_render_name" );
                 
                 if ( weapon_name != "<dev string:x4b>" )
                 {
@@ -1402,7 +1402,7 @@ function entityspawned( localclientnum )
         assert( isdefined( getent( localclientnum, "<dev string:x43f>", "<dev string:xb6>" ) ) );
         assert( isdefined( struct::get( #"fx_trail_start" ) ) );
         assert( isdefined( struct::get( #"fx_trail_end" ) ) );
-        jumpkits = namespace_eb06e24d::get_jumpkits();
+        jumpkits = player_free_fall_util::get_jumpkits();
         
         foreach ( i, jumpkit in jumpkits )
         {
@@ -1418,16 +1418,16 @@ function entityspawned( localclientnum )
             waitframe( 1 );
         }
         
-        setdvar( #"hash_4243dd01393aa940", "<dev string:x4b>" );
+        setdvar( #"jumpkit_render", "<dev string:x4b>" );
         var_f7a528f2 = "<dev string:x4b>";
         
         while ( true )
         {
             wait 0.1;
             
-            if ( getdvarstring( #"hash_4243dd01393aa940", var_f7a528f2 ) != var_f7a528f2 )
+            if ( getdvarstring( #"jumpkit_render", var_f7a528f2 ) != var_f7a528f2 )
             {
-                var_f7a528f2 = getdvarstring( #"hash_4243dd01393aa940" );
+                var_f7a528f2 = getdvarstring( #"jumpkit_render" );
                 
                 if ( var_f7a528f2 != "<dev string:x4b>" )
                 {
@@ -1457,7 +1457,7 @@ function entityspawned( localclientnum )
         if ( jumpkit == -1 )
         {
             var_d4e4e3a8 = 0;
-            var_dcb0ef67 = namespace_eb06e24d::function_3045dd71() - 1;
+            var_dcb0ef67 = player_free_fall_util::function_3045dd71() - 1;
         }
         else
         {
@@ -1491,12 +1491,12 @@ function entityspawned( localclientnum )
             
             for ( i = var_d4e4e3a8; i <= var_dcb0ef67 ; i++ )
             {
-                kit_name = namespace_eb06e24d::get_jumpkits()[ i ];
+                kit_name = player_free_fall_util::get_jumpkits()[ i ];
                 
                 switch ( type )
                 {
                     case 1:
-                        trail = namespace_eb06e24d::function_6452f9c5( i );
+                        trail = player_free_fall_util::function_6452f9c5( i );
                         
                         if ( !isdefined( trail ) || !isdefined( trail.body_trail ) )
                         {
@@ -1540,7 +1540,7 @@ function entityspawned( localclientnum )
         }
         
         level notify( "<dev string:x16b>" + localclientnum, { #menu:"<dev string:x40e>", #status:"<dev string:x18e>" } );
-        setdvar( #"hash_4243dd01393aa940", "<dev string:x4b>" );
+        setdvar( #"jumpkit_render", "<dev string:x4b>" );
         function_59013397();
     }
 
@@ -2860,7 +2860,7 @@ function lobby_main( localclientnum, menu_name, state )
         else if ( level.lastlobbystate === "warzone" || level.lastlobbystate === "zm_online" || level.lastlobbystate === "zm_custom" )
         {
             level notify( #"positiondraft_close", { #localclientnum:localclientnum, #var_b69dc9af:1 } );
-            level waittill( #"hash_21c79522aa982cdd" );
+            level waittill( #"positiondraft_close_finished" );
         }
         else if ( level.lastlobbystate === "inspect_specialist" )
         {

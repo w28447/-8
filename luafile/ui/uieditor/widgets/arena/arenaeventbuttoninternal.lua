@@ -90,7 +90,7 @@ CoD.ArenaEventButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local MiddleTextFocus = LUI.UIText.new( -0, -0, 15, 135, 0.5, 0.5, -12, 12 )
 	MiddleTextFocus:setRGB( 0.28, 0.25, 0.24 )
 	MiddleTextFocus:setAlpha( 0 )
-	MiddleTextFocus:setText( LocalizeToUpperString( 0xA43B10D9DA121A ) )
+	MiddleTextFocus:setText( LocalizeToUpperString( "menu/waiting_caps" ) )
 	MiddleTextFocus:setTTF( "ttmussels_regular" )
 	MiddleTextFocus:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	MiddleTextFocus:setShaderVector( 0, 0.13, 0, 0, 0 )
@@ -115,7 +115,7 @@ CoD.ArenaEventButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local MiddleText = LUI.UIText.new( -0, -0, 15, 135, 0.5, 0.5, -12, 12 )
 	MiddleText:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	MiddleText:setText( LocalizeToUpperString( 0xA43B10D9DA121A ) )
+	MiddleText:setText( LocalizeToUpperString( "menu/waiting_caps" ) )
 	MiddleText:setTTF( "ttmussels_regular" )
 	MiddleText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
 	MiddleText:setLetterSpacing( 3 )

@@ -3,7 +3,7 @@
     "baseWeapon": "#sig_blade_projectile",
     "altWeapon": "#sig_blade_mp",
     "weapon70": "#sig_blade",
-    "streamkey": "#hash_51721449abb722c1",
+    "streamkey": "#sig_blade_projectile_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -48,10 +48,10 @@
             "1 0"
         ]
     ],
-    "sound90": "#hash_216f906579fc3e07",
+    "sound90": "#wpn_hatchet_projectile_lp",
     "firesound": "#hash_62bc81d6f08683a5",
     "firesoundplayer": "#hash_c2af6d6bf818d2c",
-    "sound260": "#hash_48b9cfe38764779f",
+    "sound260": "#prj_crack_chaser",
     "sound3e0": "#hash_60f9893b7fbb721d",
     "gadgetreadysoundplayer": "#hash_57d21ba4b293b71a",
     "sound660": "#uin_unavailable_charging",
@@ -60,7 +60,7 @@
     "sound820": "#hash_5ee962527afebfb1",
     "tunables1": "#sig_blade_projectile_tunables_mp",
     "cacWeaponXCam": "#hash_2547de4f2204205b",
-    "sharedWeaponSounds": "#hash_4a38d52fa5f2e692",
+    "sharedWeaponSounds": "#blade_katana_projectile",
     "tracers": [
         "#lightninggun_tracer",
         "#lightninggun_tracer"

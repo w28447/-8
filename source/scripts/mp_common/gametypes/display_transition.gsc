@@ -262,7 +262,7 @@ function function_b3964dc9()
     
     player = self;
     player function_3f65d5d3();
-    player function_61d01718( level.var_d1455682.eliminateddisplaytransition, #"hash_ee32e40c182320b" );
+    player function_61d01718( level.var_d1455682.eliminateddisplaytransition, #"downbutnotout_transition" );
 }
 
 // Namespace display_transition/display_transition
@@ -277,7 +277,7 @@ function function_f4c03c3b()
     }
     
     self.var_58f00ca2 = 1;
-    self thread function_61d01718( level.var_d1455682.eliminateddisplaytransition, #"hash_4a3306cfce6719bc" );
+    self thread function_61d01718( level.var_d1455682.eliminateddisplaytransition, #"team_elimination_transition" );
 }
 
 // Namespace display_transition/display_transition
@@ -294,14 +294,14 @@ function function_1caf5c87( team )
         if ( player != self )
         {
             player.var_58f00ca2 = 1;
-            player thread function_61d01718( level.var_d1455682.eliminateddisplaytransition, #"hash_4a3306cfce6719bc" );
+            player thread function_61d01718( level.var_d1455682.eliminateddisplaytransition, #"team_elimination_transition" );
         }
     }
     
     if ( self.team == team )
     {
         self.var_58f00ca2 = 1;
-        self function_61d01718( level.var_d1455682.eliminateddisplaytransition, #"hash_4a3306cfce6719bc" );
+        self function_61d01718( level.var_d1455682.eliminateddisplaytransition, #"team_elimination_transition" );
     }
 }
 
@@ -438,14 +438,14 @@ function private function_8feabee3( transition, outcome )
 // Size: 0x214
 function private function_26bbb839( transition, outcome )
 {
-    thread function_b8e20f5f( transition, outcome, transition.slowdown, transition.var_d7f20c92, &function_9185f489 );
+    thread function_b8e20f5f( transition, outcome, transition.slowdown, transition.slowdowntimestart, &function_9185f489 );
     thread function_b8e20f5f( transition, outcome, transition.freezeplayers, transition.freezetime, &function_a3b4d41d );
     thread function_b8e20f5f( transition, outcome, transition.announcehalftime, transition.announcehalftimetime, &function_8feabee3 );
     thread function_b8e20f5f( transition, outcome, transition.announceencouragement, transition.announceencouragementtime, &function_b7fec738 );
-    thread function_b8e20f5f( transition, outcome, transition.var_7a712c7, transition.var_a803fe51, &function_66713ac );
+    thread function_b8e20f5f( transition, outcome, transition.announceroundswitchsides, transition.var_a803fe51, &function_66713ac );
     thread function_b8e20f5f( transition, outcome, transition.announceendgame, transition.announceendgametime, &function_654c0030 );
     thread function_b8e20f5f( transition, outcome, transition.var_f9995c63, transition.var_41fc87a8, &function_d9d842b2 );
-    thread function_b8e20f5f( transition, outcome, transition.pickup_message, transition.var_5026a297, &function_e22f5208 );
+    thread function_b8e20f5f( transition, outcome, transition.pickup_message, transition.playerintermissiontime, &function_e22f5208 );
 }
 
 // Namespace display_transition/display_transition
@@ -838,7 +838,7 @@ function round_end_wait( time )
         return;
     }
     
-    level waittilltimeout( time * level.var_49d9aa70, #"hash_197c640e2f684a74" );
+    level waittilltimeout( time * level.var_49d9aa70, #"force_end_transition" );
 }
 
 // Namespace display_transition/display_transition

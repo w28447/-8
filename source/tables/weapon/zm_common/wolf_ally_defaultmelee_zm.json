@@ -1,7 +1,7 @@
 {
     "name": "#wolf_ally_defaultmelee_zm",
     "baseWeapon": "#wolf_ally_defaultmelee",
-    "streamkey": "#hash_319243faa2507274",
+    "streamkey": "#wolf_ally_defaultmelee_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

@@ -5,7 +5,7 @@
     "weapon50": "#hero_bowlauncher4_mp",
     "weapon70": "#hero_bowlauncher",
     "luigiReticleWidget": "BowLauncherReticle",
-    "streamkey": "#hash_1db2f266afc17821",
+    "streamkey": "#hero_bowlauncher3_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "scrstr_118c": "tag_flash",
@@ -46,7 +46,7 @@
             "1 0.0507"
         ]
     ],
-    "sound90": "#hash_65d9cd190f18b6f5",
+    "sound90": "#wpn_arrow_loop",
     "firesound": "#hash_314898765c6d1e5",
     "firesoundplayer": "#hash_2c83fe8734c38e6c",
     "sound240": "#hash_fc4ca27d80d6d52",
@@ -60,7 +60,7 @@
     "sound800": "#hash_54f28bb508a46096",
     "sound810": "#hash_54f28bb508a46096",
     "tunables1": "#hero_bowlauncher3_tunables_mp",
-    "sharedWeaponSounds": "#hash_976e198cea3170c",
+    "sharedWeaponSounds": "#bow_launcher",
     "projectilemodel": "#wpn_t8_sig_bow_projectile",
     "viewmodel": [
         "#wpn_t8_sig_bow_view"
@@ -89,7 +89,7 @@
         "#explosions/fx_exp_grenade_water_shllw",
         "#explosions/fx_exp_grenade_water_surface_deep"
     ],
-    "normalImpactFX": "#hash_543debda11c394d3",
+    "normalImpactFX": "#bow_explosion",
     "bounceImpactFX": "#hero_bow_sm_enter",
     "bounceImpactSounds": "#arrow_impact"
 }

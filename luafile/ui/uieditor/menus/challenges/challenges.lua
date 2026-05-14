@@ -46,7 +46,7 @@ LUI.createMenu.Challenges = function ( f2_arg0, f2_arg1 )
 	self.TabFrame = TabFrame
 	
 	local MenuFrame = CoD.GenericMenuFrameIdentity.new( f2_local1, f2_arg0, 0, 1, 0, 0, 0, 1, 0, 0 )
-	MenuFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x99CD580A52B2E53 ) )
+	MenuFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/challenges_caps" ) )
 	MenuFrame:subscribeToGlobalModel( f2_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f3_local0 = model:get()
 		if f3_local0 ~= nil then

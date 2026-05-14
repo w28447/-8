@@ -5,7 +5,7 @@
     "xhash_60": "#hash_20596314e42aab7d",
     "weapon70": "#smg_fastburst_t8_gold",
     "weapon890": "#smg_fastburst_t8_wz",
-    "streamkey": "#hash_7c97245db7a77d2b",
+    "streamkey": "#smg_fastburst_t8_gold_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -57,8 +57,8 @@
         ]
     ],
     "firesounddistant": "#hash_1fa3c110880b1635",
-    "sound100": "#hash_307a0e91921d3616",
-    "sound110": "#hash_14d42d913a08699b",
+    "sound100": "#wpn_smg_fastburst_fire_npc",
+    "sound110": "#wpn_smg_fastburst_fire_plr",
     "sound120": "#hash_578e70df6b25aec6",
     "sound130": "#hash_525dcfdfb12543eb",
     "sound1d0": "#hash_6c8e17f0e9f801f8",
@@ -67,7 +67,7 @@
     "sound210": "#hash_17d1d4e632c60859",
     "sound240": "#hash_5ae3a947d20ed584",
     "sound250": "#hash_76898c482a23a565",
-    "sound260": "#hash_515f54aa1f553686",
+    "sound260": "#prj_crack_supersonic",
     "sound600": "#hash_72a07537a35e0368",
     "sound610": "#hash_72a07537a35e0368",
     "sound800": "#hash_41b8cf5f69b41ad4",

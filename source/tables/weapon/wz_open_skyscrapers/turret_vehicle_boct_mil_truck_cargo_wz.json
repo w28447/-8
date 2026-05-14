@@ -1,7 +1,7 @@
 {
     "name": "#turret_vehicle_boct_mil_truck_cargo_wz",
     "baseWeapon": "#turret_vehicle_boct_mil_truck_cargo",
-    "streamkey": "#hash_757e479e0f9cf49d",
+    "streamkey": "#turret_vehicle_boct_mil_truck_cargo_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

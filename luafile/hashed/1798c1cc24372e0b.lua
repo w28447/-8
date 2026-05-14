@@ -9,7 +9,7 @@ CoD.PC_VodViewerQuitButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local BTNQuit = LUI.UIImage.new( 0.98, 0.98, -49, 1, 0.02, 0.02, -1, 49 )
-	BTNQuit:setImage( RegisterImage( 0x9ECB977BE93F2AB ) )
+	BTNQuit:setImage( RegisterImage( "uie_close_icon" ) )
 	self:addElement( BTNQuit )
 	self.BTNQuit = BTNQuit
 	

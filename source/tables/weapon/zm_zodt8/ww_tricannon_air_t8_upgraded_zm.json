@@ -3,7 +3,7 @@
     "baseWeapon": "#ww_tricannon_air_t8_upgraded",
     "displayname": "#zmweapon/ww_tricannon_air_t8_upgraded",
     "weapon70": "#ww_tricannon_t8",
-    "streamkey": "#hash_233e9ea82a3641fb",
+    "streamkey": "#ww_tricannon_air_t8_upgraded_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

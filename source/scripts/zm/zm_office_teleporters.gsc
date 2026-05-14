@@ -1,4 +1,4 @@
-#using script_4bae07eadc57bb51;
+#using scripts\zm\zm_office_groom_lake_quest.gsc;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\clientfield_shared;
@@ -247,7 +247,7 @@ function function_9b917fd5( is_powered )
     }
     
     self zm_pack_a_punch::set_state_hidden();
-    level waittill( #"hash_537cc10c9deca9da" );
+    level waittill( #"visited_groom_lake" );
     self zm_pack_a_punch::function_bb629351( 1 );
 }
 
@@ -367,7 +367,7 @@ function teleport_player( user )
     playfx( level._effect[ #"teleport_arrive" ], user.origin );
     playfx( level._effect[ #"portal_dest" ], var_298e4578.origin, ( 1, 0, 0 ), ( 0, 0, 1 ) );
     playsoundatposition( #"evt_teleporter_go", var_298e4578.origin );
-    user playsoundtoplayer( #"hash_39876bf613387fef", user );
+    user playsoundtoplayer( #"evt_teleporter_go_plr", user );
     wait 0.5;
     user function_96e88318();
     util::setclientsysstate( "levelNotify", "cool_fx", user );
@@ -426,7 +426,7 @@ function cooldown_portal_timer( e_user )
         return;
     }
     
-    self endon( #"death", #"hash_3c91bf90cecbe758" );
+    self endon( #"death", #"kill_portal_cooldown" );
     
     if ( !isdefined( self.a_e_users ) )
     {
@@ -907,7 +907,7 @@ function function_bb3f9afd()
     zm_unitrigger::unregister_unitrigger( s_portal.s_unitrigger );
     arrayremoveindex( level.a_s_portals, "portal_war_room", 1 );
     s_portal notify( #"hash_6db43858f08123dd" );
-    s_portal notify( #"hash_3c91bf90cecbe758" );
+    s_portal notify( #"kill_portal_cooldown" );
     s_portal = level.var_905aea40;
     
     if ( util::get_game_type() == #"zstandard" )
@@ -1329,7 +1329,7 @@ function function_a6bb56f6()
         if ( s_portal.script_noteworthy != "portal_war_room_map" || util::get_game_type() != #"zstandard" )
         {
             s_portal.var_cd2f1fed = 1;
-            s_portal notify( #"hash_3c91bf90cecbe758" );
+            s_portal notify( #"kill_portal_cooldown" );
             s_portal.a_e_users = [];
             
             foreach ( e_player in getplayers() )

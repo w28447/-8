@@ -23,7 +23,7 @@
     "sideArm": "#pistol_standard_zm",
     "grenadeWeapon": "#frag_grenade_zm",
     "aimTable": "#robot_aim",
-    "footstepTable": "#hash_1f42d66eb72ae76c",
+    "footstepTable": "#zombfootstep_mannequin",
     "footstepScriptCallback": false,
     "footstepFXTable1": "#player_footstep",
     "footstepFXTable2": "#player_footstep",

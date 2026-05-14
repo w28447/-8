@@ -123,7 +123,7 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT32"
                     },
@@ -547,7 +547,7 @@
             "type": "FLOAT"
         },
         {
-            "name": "#hash_b8a5310b16895f8",
+            "name": "#streamer_mesh_quality",
             "scrName": "#hash_dafe17b4",
             "type": "FLOAT"
         },
@@ -557,7 +557,7 @@
             "type": "FLOAT"
         },
         {
-            "name": "#hash_41c61675e9a0b2d1",
+            "name": "#streamer_mbytes",
             "scrName": "#hash_c83e48bf",
             "type": "INT32"
         },
@@ -577,7 +577,7 @@
             "type": "BOOL"
         },
         {
-            "name": "#hash_6535fe3e4fdf1dab",
+            "name": "#game_clock_ms",
             "scrName": "#hash_e4049955",
             "type": "INT32"
         },

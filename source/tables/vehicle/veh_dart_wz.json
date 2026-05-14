@@ -48,28 +48,28 @@
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "hash_b1a03f2448a49d9:hash_4be786c9": "localized17#hash_b1a03f2448a49d9",
+                        "menu/hud_vehicle_slow:hash_4be786c9": "localized17#menu/hud_vehicle_slow",
                         "hash_334a8e60": "left",
                         "prompt": "+speed_throw"
                     },
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "hash_5dba026ffa1d58cd:hash_4be786c9": "localized17#hash_5dba026ffa1d58cd",
+                        "menu/hud_vehicle_steer:hash_4be786c9": "localized17#menu/hud_vehicle_steer",
                         "hash_334a8e60": "left",
                         "prompt": "+lookstick"
                     },
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "hash_5627dec5036bc76c:hash_4be786c9": "localized17#hash_5627dec5036bc76c",
+                        "menu/hud_vehicle_detonate:hash_4be786c9": "localized17#menu/hud_vehicle_detonate",
                         "hash_334a8e60": "left",
                         "prompt": "+vehicleattack"
                     },
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "hash_79d336e3dd657b0a:hash_4be786c9": "localized17#hash_79d336e3dd657b0a",
+                        "menu/hud_vehicle_speedboost:hash_4be786c9": "localized17#menu/hud_vehicle_speedboost",
                         "hash_334a8e60": "left",
                         "prompt": "+breath_sprint"
                     }

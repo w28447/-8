@@ -38,7 +38,7 @@ function _init_()
     clientfield::register( "actor", "" + #"hash_1aa3522b88c2b76f", 1, 1, "int" );
     clientfield::register( "actor", "" + #"hash_5ad28d5f104a6e3b", 1, 1, "int" );
     namespace_9ff9f642::register_slowdown( #"freezegun_slowdown", 0.85, 10 );
-    namespace_9ff9f642::register_slowdown( #"hash_5a1a7bceb3b8fded", 0.65, 15 );
+    namespace_9ff9f642::register_slowdown( #"freezegun_slowdown_big", 0.65, 15 );
     level.var_58e6238 = &mp_dom_flag_d_captured_byinterfaceattributes;
     level.var_f975b6ae = &function_9a01c5b0;
 }
@@ -102,7 +102,7 @@ function function_b65fd5ae( params )
     
     if ( self.var_4592c713 || params.weapon == level.w_freezegun_upgraded )
     {
-        str_slowdown = #"hash_5a1a7bceb3b8fded";
+        str_slowdown = #"freezegun_slowdown_big";
     }
     
     if ( self.archetype != #"zombie_dog" )
@@ -128,7 +128,7 @@ function slow_watcher( str_slowdown )
     self.var_4592c713 = 1;
     n_wait = 10;
     
-    if ( str_slowdown == #"hash_5a1a7bceb3b8fded" )
+    if ( str_slowdown == #"freezegun_slowdown_big" )
     {
         n_wait = 15;
     }

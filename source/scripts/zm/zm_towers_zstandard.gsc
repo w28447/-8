@@ -352,7 +352,7 @@ function defend_areas()
     level thread zm_utility::function_33798535( s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7 );
     level flag::wait_till( "started_defend_area" );
     level util::delay( 5, "end_game", &zm_round_spawning::function_376e51ef, #"gladiator_marauder" );
-    level waittill( #"hash_7a04a7fb98fa4e4d" );
+    level waittill( #"end_defend_area" );
     zm_utility::function_fef4b36a( #"temple" );
     level util::delay( 5, "end_game", &zm_round_spawning::function_376e51ef, #"tiger" );
     level notify( #"hash_2ff6268271a25ffa" );
@@ -385,7 +385,7 @@ function defend_areas()
     level thread zm_utility::function_33798535( s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7 );
     level flag::wait_till( "started_defend_area" );
     level thread zm_towers_special_rounds::function_93eab559();
-    level waittill( #"hash_7a04a7fb98fa4e4d" );
+    level waittill( #"end_defend_area" );
     level thread zm_towers_special_rounds::function_417990b9();
     zm_utility::function_fef4b36a( #"arena" );
     
@@ -487,7 +487,7 @@ function function_5dff542c()
     
     while ( true )
     {
-        level waittill( #"hash_7a04a7fb98fa4e4d" );
+        level waittill( #"end_defend_area" );
         
         foreach ( player in level.players )
         {

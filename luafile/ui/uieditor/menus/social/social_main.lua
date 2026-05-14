@@ -176,7 +176,7 @@ LUI.createMenu.Social_Main = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f21_arg0, f21_arg1, f21_arg2 )
 		if CoD.ClanUtility.ShowClanOptionPrompt( f21_arg2 ) then
-			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x22361E23588705A], 0x2FA47140D97F89D, nil, "ui_contextual_1" )
+			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x22361E23588705A], "menu/options_caps", nil, "ui_contextual_1" )
 			return true
 		else
 			return false

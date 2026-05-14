@@ -156,7 +156,7 @@ CoD.PaintshopColorLayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	LayerUsedText = LUI.UIText.new( 0, 0, 6, 156, 0, 0, 7, 32 )
 	LayerUsedText:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	LayerUsedText:setText( Engine[0xF9F1239CFD921FE]( 0x3357A304FD698FC ) )
+	LayerUsedText:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_layers_used" ) )
 	LayerUsedText:setTTF( "ttmussels_regular" )
 	LayerUsedText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	LayerUsedText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

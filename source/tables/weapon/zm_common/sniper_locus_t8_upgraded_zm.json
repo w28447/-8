@@ -4,7 +4,7 @@
     "displayname": "#zmweapon/sniper_locus_t8_upgraded",
     "xhash_60": "#hash_5dc6749320169bff",
     "weapon70": "#sniper_locus_t8",
-    "streamkey": "#hash_5d9394f8f1886daf",
+    "streamkey": "#sniper_locus_t8_upgraded_soundbank",
     "scrstr_8c8": [
         "tag_camo_darkmatter",
         "tag_camo_diamond"
@@ -62,7 +62,7 @@
     "sound200": "#hash_eed602173233aca",
     "sound240": "#hash_631a067190b54300",
     "sound250": "#hash_242aa17124751841",
-    "sound260": "#hash_515f54aa1f553686",
+    "sound260": "#prj_crack_supersonic",
     "sound270": "#prj_whizby",
     "sound310": "#hash_553957b278d8e879",
     "sound5e0": "#fly_scope_zoom",
@@ -77,7 +77,7 @@
     "weaponIconXCam": "#hash_da36991b2da1ef84",
     "attachments": [
         "#hash_f459a0af8e8f912b",
-        "#hash_1847195a90eddc18"
+        "#acog_sniper_upgraded"
     ],
     "attachmentUniques": [
         "#hash_d72406b9984b3712",

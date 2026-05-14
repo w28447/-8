@@ -37,9 +37,9 @@ function autoexec __init__system__()
 // Size: 0x4b4
 function __init__()
 {
-    clientfield::register( "scriptmover", "" + #"hash_64f62d9a3170948e", 1, 1, "int" );
-    clientfield::register( "actor", "" + #"hash_6848ec3d200d443b", 1, 1, "int" );
-    clientfield::register( "vehicle", "" + #"hash_6848ec3d200d443b", 1, 1, "int" );
+    clientfield::register( "scriptmover", "" + #"cf_shrink_globe", 1, 1, "int" );
+    clientfield::register( "actor", "" + #"cf_shrink_zombie", 1, 1, "int" );
+    clientfield::register( "vehicle", "" + #"cf_shrink_zombie", 1, 1, "int" );
     clientfield::register( "actor", "" + #"hash_6f59675863e19a50", 1, 1, "int" );
     clientfield::register( "vehicle", "" + #"hash_6f59675863e19a50", 1, 1, "int" );
     clientfield::register( "scriptmover", "" + #"hash_32156a79f13e8c37", 1, 1, "int" );
@@ -47,7 +47,7 @@ function __init__()
     clientfield::register( "actor", "" + #"hash_1dd40649a6474f30", 1, 1, "int" );
     clientfield::register( "vehicle", "" + #"hash_1dd40649a6474f30", 1, 1, "int" );
     clientfield::register( "scriptmover", "" + #"hash_12b19992ccb300e7", 1, 1, "int" );
-    clientfield::register( "scriptmover", "" + #"hash_54fdcf7f8eb5449e", 1, 1, "int" );
+    clientfield::register( "scriptmover", "" + #"cf_drag_portal", 1, 1, "int" );
     clientfield::register( "scriptmover", "" + #"hash_69b312bcaae6308b", 1, 1, "int" );
     clientfield::register( "actor", "" + #"hash_2ff818c8cb4c17ba", 1, 1, "int" );
     clientfield::register( "vehicle", "" + #"hash_2ff818c8cb4c17ba", 1, 1, "int" );
@@ -991,8 +991,8 @@ function function_ca108f41( v_origin, e_attacker, var_a257f75d, var_41bf50f )
         wait 10;
     }
     
-    e_origin notify( #"hash_775ddc8cde7b36e4" );
-    e_trigger notify( #"hash_775ddc8cde7b36e4" );
+    e_origin notify( #"end_shrink_globe" );
+    e_trigger notify( #"end_shrink_globe" );
     e_trigger delete();
     
     if ( level.var_2ec91d6e[ var_a257f75d ] == 3 )
@@ -1017,7 +1017,7 @@ function function_ca108f41( v_origin, e_attacker, var_a257f75d, var_41bf50f )
 // Size: 0x8e
 function function_9b512839( e_trigger )
 {
-    e_trigger endon( #"hash_775ddc8cde7b36e4" );
+    e_trigger endon( #"end_shrink_globe" );
     self endon( #"disconnect" );
     
     for ( var_358ea838 = 0; var_358ea838 < 15 ; var_358ea838++ )
@@ -1035,9 +1035,9 @@ function function_9b512839( e_trigger )
 function shrink_globe()
 {
     waitframe( 1 );
-    self clientfield::set( "" + #"hash_64f62d9a3170948e", 1 );
-    self waittill( #"hash_775ddc8cde7b36e4" );
-    self clientfield::set( "" + #"hash_64f62d9a3170948e", 0 );
+    self clientfield::set( "" + #"cf_shrink_globe", 1 );
+    self waittill( #"end_shrink_globe" );
+    self clientfield::set( "" + #"cf_shrink_globe", 0 );
     wait 2;
     self delete();
 }
@@ -1048,7 +1048,7 @@ function shrink_globe()
 // Size: 0xa0
 function function_e607e26e( e_attacker )
 {
-    self endon( #"hash_775ddc8cde7b36e4" );
+    self endon( #"end_shrink_globe" );
     self thread function_f8679f8d( 3, &function_c9b2e87f, e_attacker );
     
     while ( true )
@@ -1099,7 +1099,7 @@ function function_c9b2e87f( ... )
             self val::set( #"hash_16bf0b1b6bc69c97", "ignoreall", 1 );
             self val::set( #"hash_7e08001e1389be82", "ignoreme", 1 );
             self.marked_for_death = 1;
-            self clientfield::set( "" + #"hash_6848ec3d200d443b", 1 );
+            self clientfield::set( "" + #"cf_shrink_zombie", 1 );
             waitframe( 1 );
             self ghost();
             self thread namespace_9ff9f642::slowdown( #"hash_193617f42c166879" );
@@ -1265,8 +1265,8 @@ function function_ad3de341( e_attacker )
         self notify( #"hash_2250ef170a9d4a6" );
     }
     
-    self val::set( #"hash_1b572998d0efb58f", "ignoreall", 1 );
-    self val::set( #"hash_1b572998d0efb58f", "ignoreme", 1 );
+    self val::set( #"ai_confused", "ignoreall", 1 );
+    self val::set( #"ai_confused", "ignoreme", 1 );
     self.canbetargetedbyturnedzombies = 0;
     self.v_zombie_custom_goal_pos = self.origin;
     self zombie_utility::set_zombie_run_cycle( "walk" );
@@ -1501,7 +1501,7 @@ function function_e5e6e403( ... )
             }
             
             wait 0.5;
-            self thread function_3ebc5d0c( e_attacker );
+            self thread spin_cycle_zombie_death_gib( e_attacker );
             break;
         default:
             self thread function_2d3beb68( 1, e_attacker );
@@ -1574,7 +1574,7 @@ function function_6476c708( e_attacker, e_tornado )
         wait 0.5;
     }
     
-    self thread function_3ebc5d0c( e_attacker );
+    self thread spin_cycle_zombie_death_gib( e_attacker );
 }
 
 // Namespace ww_random_ray_gun/zm_weap_random_ray_gun
@@ -1583,7 +1583,7 @@ function function_6476c708( e_attacker, e_tornado )
 // Size: 0x74
 function function_a7fcc7db()
 {
-    self endon( #"hash_76dc39ad26e9f187" );
+    self endon( #"spin_cycle_zombie_death_gib" );
     waitresult = self waittill( #"death" );
     
     if ( isdefined( self ) )
@@ -1597,12 +1597,12 @@ function function_a7fcc7db()
 // Params 1
 // Checksum 0x92264b2c, Offset: 0x4fb8
 // Size: 0x15c
-function function_3ebc5d0c( e_attacker )
+function spin_cycle_zombie_death_gib( e_attacker )
 {
     if ( isalive( self ) )
     {
         self scene::stop();
-        self notify( #"hash_76dc39ad26e9f187" );
+        self notify( #"spin_cycle_zombie_death_gib" );
         self function_61b2f057( e_attacker, level.var_74cf08b1 );
         self zm_utility::function_ffc279( ( 0, 0, 0 ), e_attacker, self.health + 666, level.var_4b14202f );
         
@@ -1663,7 +1663,7 @@ function function_b9078d40( v_origin, e_attacker, var_a257f75d )
     e_portal.targetname = "entity_drag";
     e_attacker.e_trigger = spawn( "trigger_radius", v_origin, 512 | 1, 128, 128 );
     e_trigger = e_attacker.e_trigger;
-    e_portal clientfield::set( "" + #"hash_54fdcf7f8eb5449e", 1 );
+    e_portal clientfield::set( "" + #"cf_drag_portal", 1 );
     waitframe( 1 );
     e_trigger thread function_1250965b( e_attacker );
     e_trigger thread function_1beb7376( e_attacker );
@@ -1691,7 +1691,7 @@ function function_b9078d40( v_origin, e_attacker, var_a257f75d )
     
     e_trigger notify( #"hash_7e07bb5b7a331e0b" );
     e_trigger delete();
-    e_portal clientfield::set( "" + #"hash_54fdcf7f8eb5449e", 0 );
+    e_portal clientfield::set( "" + #"cf_drag_portal", 0 );
     waitframe( 1 );
     e_portal delete();
     

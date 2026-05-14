@@ -3,7 +3,7 @@
     "baseWeapon": "#zhield_spectral_lh",
     "displayname": "#zmweapon/shield_spectral",
     "dualwieldWeaponName": "#zhield_spectral_dw_zm",
-    "streamkey": "#hash_3b089205cea92351",
+    "streamkey": "#zhield_spectral_lh_soundbank",
     "scrstr_8c8": [
         "tag_hellbox_lock_le"
     ],

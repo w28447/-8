@@ -22,7 +22,7 @@ CoD[0x687E459DB800FBA].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.character02 = character02
 	
 	local helmet = LUI.UIImage.new( 0, 0, 0, 272, 0, 0, 48, 240 )
-	helmet:setImage( RegisterImage( 0x5B185331FCFEE6E ) )
+	helmet:setImage( RegisterImage( "uie_ui_menu_callingcards_warriorcreatures_helmet" ) )
 	self:addElement( helmet )
 	self.helmet = helmet
 	

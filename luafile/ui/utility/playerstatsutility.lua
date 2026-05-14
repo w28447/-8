@@ -27,7 +27,7 @@ CoD.PlayerStatsUtility.ZMGameModeTable = {
 CoD.PlayerStatsUtility.ZMMaps = {
 	0x51FD293040F234E,
 	0xA005252D762E06A,
-	0xAA390030BE9DEF9,
+	"zm_office",
 	0x63EFA8337233574,
 	0xAFE286CA5500B9B,
 	0x7E9384351288E52,
@@ -89,7 +89,7 @@ CoD.PlayerStatsUtility.HashStorageLookup = function ( f2_arg0, f2_arg1, f2_arg2 
 	if not f2_local0 then
 		return 
 	end
-	local f2_local1 = f2_local0[0x3BF77799B56C06C]
+	local f2_local1 = f2_local0["statvalue"]
 	if not f2_local1 then
 		return f2_local0:get()
 	elseif IsArenaMode() then
@@ -149,7 +149,7 @@ CoD.PlayerStatsUtility.GetCurrentRankAndPrestigeFromMenuStorageBuffer = function
 end
 
 CoD.PlayerStatsUtility.GetCurrentRankAndXPFromMenuStorageBuffer = function ( f7_arg0 )
-	return CoD.PlayerStatsUtility.HashPlayerStatsStorageLookupForMenu( f7_arg0, nil, 0xDB3201FD1EB3847 ) or 0, CoD.PlayerStatsUtility.HashPlayerStatsStorageLookupForMenu( f7_arg0, nil, 0x8928A12A20A9D67 ) or 0
+	return CoD.PlayerStatsUtility.HashPlayerStatsStorageLookupForMenu( f7_arg0, nil, 0xDB3201FD1EB3847 ) or 0, CoD.PlayerStatsUtility.HashPlayerStatsStorageLookupForMenu( f7_arg0, nil, "rankxp" ) or 0
 end
 
 CoD.PlayerStatsUtility.GetWZGameModeTableValue = function ( f8_arg0, f8_arg1, f8_arg2 )
@@ -183,7 +183,7 @@ CoD.PlayerStatsUtility.GetMedalsListTable = function ()
 					if f9_local10 and f9_local5 and f9_local7 and f9_local7 ~= 0x0 then
 						CoD.PlayerStatsUtility.MedalsListTable[f9_local5] = {
 							name = f9_local10[0x8E69067413FE145] or 0x0,
-							description = f9_local10[0xCC44970C8397929] or 0x0,
+							description = f9_local10["description"] or 0x0,
 							iconSmall = f9_local10[0xDA32D2BFAA81507],
 							iconLarge = f9_local10[0x8027A8209C5D65F],
 							timesEarned = 0,
@@ -562,7 +562,7 @@ end
 
 CoD.PlayerStatsUtility.GetRank = function ( f37_arg0, f37_arg1 )
 	local f37_local0, f37_local1 = CoD.PlayerStatsUtility.GetCurrentRankAndPrestigeFromMenuStorageBuffer( f37_arg0 )
-	local f37_local2 = CoD.PlayerStatsUtility.HashPlayerStatsStorageLookupForMenu( f37_arg0, nil, 0x82D5F0A666E1010 ) or 0
+	local f37_local2 = CoD.PlayerStatsUtility.HashPlayerStatsStorageLookupForMenu( f37_arg0, nil, "paragon_rank" ) or 0
 	local f37_local3 = Engine.CurrentSessionMode()
 	if f37_local3 == Enum.eModes[0xBF1DCC8138A9D39] then
 		return CoD.WZUtility.GetDecoratedStringForRank( f37_local0, f37_local2, f37_local1 )
@@ -636,7 +636,7 @@ CoD.PlayerStatsUtility.GetLevelString = function ( f42_arg0, f42_arg1 )
 	elseif IsGameModeParagonCapable( f42_local2 ) and Engine.GetPrestigeCap( f42_local2 ) <= f42_local1 then
 		return Engine[0xF9F1239CFD921FE]( 0x21235EA457AB637, Engine.GetParagonRankDisplayLevel( CoD.PlayerStatsUtility.HashStorageLookupForMenu( f42_arg0, {
 			0xD59E8BFAC78A33B,
-			0x82D5F0A666E1010
+			"paragon_rank"
 		} ), f42_local2 ) )
 	elseif f42_local2 == Enum.eModes[0xBF1DCC8138A9D39] then
 		return Engine[0xF9F1239CFD921FE]( 0x294790D215078A9, CoD.WZUtility.GetWZLevel( CoD.RankUtility.GetRankInfoField( f42_local2, f42_local0, 0x8DDC90A9D7C709D, 1 ) ) )
@@ -673,7 +673,7 @@ CoD.PlayerStatsUtility.GetCurrentXPOverNextRankXP = function ( f45_arg0, f45_arg
 	if f45_local3 then
 		f45_local1 = CoD.PlayerStatsUtility.HashStorageLookupForMenu( f45_arg0, {
 			0xD59E8BFAC78A33B,
-			0x82D5F0A666E1010
+			"paragon_rank"
 		} )
 		f45_local2 = CoD.PlayerStatsUtility.GetPrestigeMasterAbsoluteXP( f45_local0, CoD.PlayerStatsUtility.HashStorageLookupForMenu( f45_arg0, {
 			0xD59E8BFAC78A33B,
@@ -709,7 +709,7 @@ CoD.PlayerStatsUtility.GetCurrentRankProgress = function ( f47_arg0, f47_arg1, f
 	local f47_local1, f47_local2 = CoD.PlayerStatsUtility.GetCurrentRankAndXPFromMenuStorageBuffer( f47_arg0 )
 	local f47_local3 = CoD.PlayerStatsUtility.IsPrestigeMasterForMenu( f47_local0, f47_arg0 )
 	if not f47_local3 or not Engine[0x109F8F1C5A3513B]( f47_local1, f47_local0 ) then
-		local f47_local4 = CoD.RankUtility.GetRankInfoField( f47_local0, f47_local1, 0x182B762B7BAD117, 0 )
+		local f47_local4 = CoD.RankUtility.GetRankInfoField( f47_local0, f47_local1, "minxp", 0 )
 	end
 	if not f47_local3 or not Engine[0xE7C7AB06A7E4905]( f47_local1, f47_local0 ) then
 		local f47_local5 = CoD.RankUtility.GetRankInfoField( f47_local0, f47_local1, 0xA9FE1A4C26B89D9, 0 )
@@ -717,7 +717,7 @@ CoD.PlayerStatsUtility.GetCurrentRankProgress = function ( f47_arg0, f47_arg1, f
 	if f47_local3 then
 		f47_local1 = CoD.PlayerStatsUtility.HashStorageLookupForMenu( f47_arg0, {
 			0xD59E8BFAC78A33B,
-			0x82D5F0A666E1010
+			"paragon_rank"
 		} )
 		f47_local2 = CoD.PlayerStatsUtility.GetPrestigeMasterAbsoluteXP( f47_local0, CoD.PlayerStatsUtility.HashStorageLookupForMenu( f47_arg0, {
 			0xD59E8BFAC78A33B,
@@ -772,7 +772,7 @@ CoD.PlayerStatsUtility.GetPrestigeProgress = function ( f51_arg0, f51_arg1, f51_
 	local f51_local0 = CoD.PlayerStatsUtility.HashPlayerStatsStorageLookupForMenu( f51_arg0, nil, 0xDB3201FD1EB3847 ) or 0
 	local f51_local1 = CoD.RankUtility.GetRankCap()
 	if CoD.PlayerStatsUtility.IsPrestigeMasterForMenu( CoD.BaseUtility.GetMenuSessionMode( f51_arg0 ), f51_arg0 ) then
-		f51_local0 = CoD.PlayerStatsUtility.HashPlayerStatsStorageLookupForMenu( f51_arg0, nil, 0x82D5F0A666E1010 ) or 0
+		f51_local0 = CoD.PlayerStatsUtility.HashPlayerStatsStorageLookupForMenu( f51_arg0, nil, "paragon_rank" ) or 0
 		f51_local1 = CoD.RankUtility.MAX_PARAGON_RANK
 	end
 	return f51_local0 / math.max( 1, f51_local1 ), 0, 0, 0
@@ -783,7 +783,7 @@ CoD.PlayerStatsUtility.GetPrestigeProgressFractionString = function ( f52_arg0, 
 	local f52_local1 = CoD.RankUtility.GetRankCap()
 	local f52_local2 = CoD.BaseUtility.GetMenuSessionMode( f52_arg0 )
 	if CoD.PlayerStatsUtility.IsPrestigeMasterForMenu( f52_local2, f52_arg0 ) then
-		f52_local0 = CoD.PlayerStatsUtility.HashPlayerStatsStorageLookupForMenu( f52_arg0, nil, 0x82D5F0A666E1010 ) or 0
+		f52_local0 = CoD.PlayerStatsUtility.HashPlayerStatsStorageLookupForMenu( f52_arg0, nil, "paragon_rank" ) or 0
 		f52_local1 = CoD.RankUtility.MAX_PARAGON_RANK
 	end
 	if f52_local2 == Enum.eModes[0xBF1DCC8138A9D39] and not CoD.PlayerStatsUtility.IsPrestigeMasterForMenu( f52_local2, f52_arg0 ) then
@@ -1051,7 +1051,7 @@ DataSources.MedalsList = ListHelper_SetupDataSource( "MedalsList", function ( f6
 				else
 					f67_local10 = Engine[0xF9F1239CFD921FE]( 0xBCE3D9B07DE63B7, f67_local12.baseMedalXP * f67_local13 )
 				end
-				if f67_local5 and f67_local12.name == 0x6A3BB5B3F6DB9EF then
+				if f67_local5 and f67_local12.name == "medal/shutdown" then
 					f67_local5.timesEarned = f67_local5.timesEarned + f67_local13
 				end
 				table.insert( f67_local0, {
@@ -1065,7 +1065,7 @@ DataSources.MedalsList = ListHelper_SetupDataSource( "MedalsList", function ( f6
 						xpValue = f67_local10
 					}
 				} )
-				if f67_local12.name == 0x6A3BB5B3F6DB9EF then
+				if f67_local12.name == "medal/shutdown" then
 					f67_local5 = f67_local0[#f67_local0].models
 				end
 			end

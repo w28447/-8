@@ -1,7 +1,7 @@
 {
     "name": "#zitem_red_strike_part_1_zm",
     "baseWeapon": "#zitem_red_strike_part_1",
-    "streamkey": "#hash_65b0c7999085f4d1",
+    "streamkey": "#zitem_red_strike_part_1_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

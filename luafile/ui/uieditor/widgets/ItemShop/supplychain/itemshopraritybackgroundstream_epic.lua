@@ -62,7 +62,7 @@ CoD.ItemShopRarityBackgroundStream_Epic.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local BGPatternThin = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BGPatternThin:setAlpha( 0.09 )
-	BGPatternThin:setImage( RegisterImage( 0xDAC40E840BDF91C ) )
+	BGPatternThin:setImage( RegisterImage( "uie_ui_menu_common_mtx_button_bg_epic_thin" ) )
 	BGPatternThin:setMaterial( LUI.UIImage.GetCachedMaterial( 0xC221B51E4063E3D ) )
 	BGPatternThin:setShaderVector( 0, 0, 0, 0, 0 )
 	BGPatternThin:setShaderVector( 1, 1, 1, 0, 0 )

@@ -81,7 +81,7 @@ CoD.ProductFromBit = {
 	}
 }
 CoD.profileKey_gametype = 0x792C1F90C3A5C7F
-CoD.profileKey_map = 0x80F5919176D2D91
+CoD.profileKey_map = "map"
 CoD.attachmentTable = 0xCFEB5C2C217B385
 CoD.backgroundsTable = 0xA24C07219458C5B
 CoD.didYouKnowTable = 0xF9D3BFB4832D305
@@ -111,7 +111,7 @@ end
 CoD.PlayFrontendMusicForLobby = function ( f4_arg0 )
 	local f4_local0 = nil
 	local f4_local1 = LobbyData.GetLobbyMenuByID( f4_arg0 )
-	if f4_local1[0xEB7DDC7F079D51B] == Enum.LobbyMainMode[0x79D01499920B292] and CoD.PCKoreaUtility.ShowKorea15Plus() then
+	if f4_local1["mainmode"] == Enum.LobbyMainMode[0x79D01499920B292] and CoD.PCKoreaUtility.ShowKorea15Plus() then
 		return 
 	else
 		f4_local0 = f4_local1 and f4_local1[0x9F541C0AE41279]
@@ -135,7 +135,7 @@ end
 CoD.Currencies = {}
 CoD.Currencies.COD_POINTS = 0xB7F40FB4E8165B5
 CoD.Currencies.ZM_NEBULIUM_PLASMA = 0x29BE58E64C4830B
-CoD.Currencies.MP_PRESTIGE_TOKEN = 0x7383BC9312521B2
+CoD.Currencies.MP_PRESTIGE_TOKEN = "mp_prestige_token"
 CoD.Currencies.ZM_PRESTIGE_TOKEN = 0x3EDC88C2BF44B8A
 CoD.Currencies.DOTD_INCENTIVE_TOKEN = 0x1C7EA5D9369C760
 CoD.Currencies.BLACKOPSPASS_INCENTIVE_TOKEN = 0x8A567E09E922681
@@ -187,11 +187,11 @@ CoD.SetupMode = function ( f7_arg0 )
 		CoD.scoreInfoTable = CoD.scoreInfoTableMP
 		CoD.weaponAttributes = 0xAB70A73C80987CF
 		CoD.statsMilestonePath = 0x87CF26422669B76
-		CoD.gunLevelsTable = 0x7D6337A77EF98AD
+		CoD.gunLevelsTable = "gamedata/weapons/mp/mp_gunlevels.csv"
 		CoD.emblemIconsTable = 0x25E8C4A61C9BFDA
 		CoD.gameMode = "MP"
 		CoD.profileKey_gametype = 0x792C1F90C3A5C7F
-		CoD.profileKey_map = 0x80F5919176D2D91
+		CoD.profileKey_map = "map"
 		CoD.isModeSelected = true
 		local f7_local0 = Engine[0x69811927938FCD7]()
 		if not f7_local0 or f7_local0 == "" then
@@ -202,7 +202,7 @@ CoD.SetupMode = function ( f7_arg0 )
 	if CoD.gameModeEnum == Enum.eModes[0x60063C67132EB69] then
 		CoD.isCampaign = true
 		CoD.protoMapsTable = 0x160D3837EDD2EDB
-		CoD.statsMilestonePath = 0x929B58638C59880
+		CoD.statsMilestonePath = "gamedata/stats/cp/statsmilestones"
 		CoD.scoreInfoTable = 0xFF88B807408D20A
 		CoD.weaponAttributes = 0x8CD79CD0F5DC983
 		CoD.statsMilestone = 0x4208F5B04921371
@@ -210,14 +210,14 @@ CoD.SetupMode = function ( f7_arg0 )
 		CoD.gameMode = "CP"
 		CoD.isModeSelected = true
 		CoD.profileKey_gametype = 0x18F3F96B2374B6B
-		CoD.profileKey_map = 0x9EBC53C8753C0E1
+		CoD.profileKey_map = "map_cp"
 	end
 	if CoD.gameModeEnum == Enum.eModes[0x3723205FAE52C4A] then
 		CoD.isZombie = true
 		CoD.weaponAttributes = 0x297479F395531C3
 		CoD.statsMilestonePath = 0x4A621A5800B5B4A
 		CoD.profileKey_gametype = 0x1DD2E96B2794FD9
-		CoD.profileKey_map = 0xA03CC3C87685EA7
+		CoD.profileKey_map = "map_zm"
 		CoD.gameMode = "ZM"
 		CoD.isModeSelected = true
 		CoD.gunLevelsTable = 0xEA60CF27BEDFA51
@@ -229,10 +229,10 @@ CoD.SetupMode = function ( f7_arg0 )
 		CoD.scoreInfoTable = 0x7EA4C79706FD49B
 		CoD.weaponAttributes = 0xAB70A73C80987CF
 		CoD.statsMilestonePath = 0x87CF26422669B76
-		CoD.gunLevelsTable = 0x7D6337A77EF98AD
+		CoD.gunLevelsTable = "gamedata/weapons/mp/mp_gunlevels.csv"
 		CoD.emblemIconsTable = 0x25E8C4A61C9BFDA
 		CoD.profileKey_gametype = 0x1D34196B2711B9D
-		CoD.profileKey_map = 0xA2FC33C878D8A47
+		CoD.profileKey_map = "map_wz"
 		CoD.gameMode = "WZ"
 		CoD.isModeSelected = true
 	end
@@ -249,7 +249,7 @@ CoD.getStatsMilestoneTable = function ( f8_arg0, f8_arg1 )
 		f8_arg1 = Engine.CurrentSessionMode()
 	end
 	if f8_arg1 == Enum.eModes[0x60063C67132EB69] then
-		return 0x929B58638C59880 .. f8_arg0 .. ".csv"
+		return "gamedata/stats/cp/statsmilestones" .. f8_arg0 .. ".csv"
 	elseif f8_arg1 == Enum.eModes[0x83EBA96F36BC4E5] then
 		return 0x87CF26422669B76 .. f8_arg0 .. ".csv"
 	elseif f8_arg1 == Enum.eModes[0x3723205FAE52C4A] then
@@ -710,7 +710,7 @@ CoD.IsTeamChangeAllowed = function ( f35_arg0 )
 		return false
 	else
 		local f35_local0 = LobbyData.GetCurrentMenuTarget()
-		if f35_local0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING ) or IsSimulateCT() then
+		if f35_local0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING ) or IsSimulateCT() then
 			return false
 		elseif Engine.GetGametypeSetting( 0x9088FF007A6191A ) == 1 then
 			return true
@@ -1103,7 +1103,7 @@ CoD.GetCombatRecordStatFromArgPath = function ( f65_arg0, ... )
 			return 
 		end
 	end
-	f65_local0 = f65_arg0[0x3BF77799B56C06C]
+	f65_local0 = f65_arg0["statvalue"]
 	if not f65_local0 then
 		return 
 	elseif LuaUtils.IsArenaMode() == false then

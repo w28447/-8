@@ -25,11 +25,11 @@ LUI.createMenu.KillcamMenu = function ( f1_arg0, f1_arg1 )
 	local PlayOfTheMatchWidget = CoD.PlayOfTheMatchWidget.new( f1_local1, f1_arg0, 0.5, 0.5, -960, 960, 0.5, 0.5, -540, 540 )
 	PlayOfTheMatchWidget:subscribeToGlobalModel( f1_arg0, "PerController", "scriptNotify", function ( model )
 		local f2_local0 = PlayOfTheMatchWidget
-		if CoD.ModelUtility.IsParamModelEqualToHashString( model, 0x337E1F7E8F768D2 ) and not IsPC() then
+		if CoD.ModelUtility.IsParamModelEqualToHashString( model, "show_player_profile" ) and not IsPC() then
 			SetElementState( self, f2_local0, f1_arg0, "PlayOfTheMatch" )
 		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, 0xBB70498F448D405 ) then
 			SetElementState( self, f2_local0, f1_arg0, "DefaultState" )
-		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, 0x337E1F7E8F768D2 ) and IsPC() then
+		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, "show_player_profile" ) and IsPC() then
 			SetElementState( self, f2_local0, f1_arg0, "PlayOfTheMatchPC" )
 		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, 0xBCAD2526C42E308 ) then
 			SetElementState( self, f2_local0, f1_arg0, "DefaultState" )
@@ -42,7 +42,7 @@ LUI.createMenu.KillcamMenu = function ( f1_arg0, f1_arg1 )
 	FinalKillcamWidget:setAlpha( 0 )
 	FinalKillcamWidget:subscribeToGlobalModel( f1_arg0, "PerController", "scriptNotify", function ( model )
 		local f3_local0 = FinalKillcamWidget
-		if CoD.ModelUtility.IsParamModelEqualToHashString( model, 0x337E1F7E8F768D2 ) then
+		if CoD.ModelUtility.IsParamModelEqualToHashString( model, "show_player_profile" ) then
 			SetElementState( self, f3_local0, f1_arg0, "DefaultState" )
 		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, 0xBB70498F448D405 ) then
 			SetElementState( self, f3_local0, f1_arg0, "FinalKillcam" )

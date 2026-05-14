@@ -53,7 +53,7 @@ LUI.createMenu.wz_revive_prompt = function ( f1_arg0, f1_arg1 )
 	local iconarrow = LUI.UIImage.new( 0.5, 0.5, -32, 32, 0.5, 0.5, -48, 16 )
 	iconarrow:setAlpha( 0.55 )
 	iconarrow:setScale( 0.75, 0.75 )
-	iconarrow:setImage( RegisterImage( 0xAB17136E34541E3 ) )
+	iconarrow:setImage( RegisterImage( "uie_ui_hud_revive_arrow" ) )
 	self:addElement( iconarrow )
 	self.iconarrow = iconarrow
 	

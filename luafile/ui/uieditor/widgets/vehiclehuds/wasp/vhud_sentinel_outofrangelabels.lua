@@ -27,7 +27,7 @@ CoD.vhud_sentinel_outOfRangeLabels.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local outOfRangeTitle = LUI.UIText.new( 0.5, 0.5, -176, 176, 0, 0, 0, 45 )
 	outOfRangeTitle:setRGB( 1, 0, 0 )
 	outOfRangeTitle:setAlpha( 0 )
-	outOfRangeTitle:setText( Engine[0xF9F1239CFD921FE]( 0xE08EA7B79681E9C ) )
+	outOfRangeTitle:setText( Engine[0xF9F1239CFD921FE]( "cpui/link_error" ) )
 	outOfRangeTitle:setTTF( "ttmussels_demibold" )
 	outOfRangeTitle:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xFAEF6B981087FCE ) )
 	outOfRangeTitle:setShaderVector( 0, 0.2, 0, 0, 0 )

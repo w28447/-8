@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_vehicles_atv",
+    "type": "#tag",
+    "material": "#hash_580666d720ef05fd",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_674868f306ec6e37",
+        "icon": "image#loot_ui_icon_tags_vehicles_atv",
+        "isdefault": 0
+    }
+}

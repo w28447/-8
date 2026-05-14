@@ -1,11 +1,11 @@
 require( "ui/uieditor/widgets/callingcards/callingcards_asset_spiderleg_animated" )
 
-CoD[0xE9560377C67385F] = InheritFrom( LUI.UIElement )
-CoD[0xE9560377C67385F].__defaultWidth = 960
-CoD[0xE9560377C67385F].__defaultHeight = 240
-CoD[0xE9560377C67385F].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD["callingcards_zm_survivalist"] = InheritFrom( LUI.UIElement )
+CoD["callingcards_zm_survivalist"].__defaultWidth = 960
+CoD["callingcards_zm_survivalist"].__defaultHeight = 240
+CoD["callingcards_zm_survivalist"].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0xE9560377C67385F] )
+	self:setClass( CoD["callingcards_zm_survivalist"] )
 	self.id = "CallingCards_zm_Survivalist"
 	self.soundSet = "default"
 	self.anyChildUsesUpdateState = true
@@ -91,7 +91,7 @@ CoD[0xE9560377C67385F].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.frontWebs = frontWebs
 	
 	local grimaceFace = LUI.UIImage.new( 0, 0, 593, 705, 0, 0, -1, 95 )
-	grimaceFace:setImage( RegisterImage( 0x6CC8E27AF979B2C ) )
+	grimaceFace:setImage( RegisterImage( "uie_ui_icon_callingcards_zm_survivalist_dude_grimace" ) )
 	grimaceFace:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD526D3FD71F281 ) )
 	grimaceFace:setShaderVector( 0, 0, 4, 0, 0 )
 	grimaceFace:setShaderVector( 1, 1, 0, 0, 0 )
@@ -113,7 +113,7 @@ CoD[0xE9560377C67385F].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0xE9560377C67385F].__resetProperties = function ( f2_arg0 )
+CoD["callingcards_zm_survivalist"].__resetProperties = function ( f2_arg0 )
 	f2_arg0.spiderLeg:completeAnimation()
 	f2_arg0.frontWebs:completeAnimation()
 	f2_arg0.backwebs:completeAnimation()
@@ -135,7 +135,7 @@ CoD[0xE9560377C67385F].__resetProperties = function ( f2_arg0 )
 	f2_arg0.spiderLeg2:setScale( 0.9, 0.9 )
 end
 
-CoD[0xE9560377C67385F].__clipsPerState = {
+CoD["callingcards_zm_survivalist"].__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()
@@ -238,7 +238,7 @@ CoD[0xE9560377C67385F].__clipsPerState = {
 		end
 	}
 }
-CoD[0xE9560377C67385F].__onClose = function ( f16_arg0 )
+CoD["callingcards_zm_survivalist"].__onClose = function ( f16_arg0 )
 	f16_arg0.spiderLeg4:close()
 	f16_arg0.spiderLeg3:close()
 	f16_arg0.spiderLeg2:close()

@@ -196,7 +196,7 @@ function function_6db6572b()
     level.var_f682cf14 = util::spawn_model( "tag_origin", ( 0, 0, 0 ), ( 0, 0, 0 ) );
     
     /#
-        level thread function_d69c54a8();
+        level thread devgui_ct_torque();
     #/
 }
 
@@ -291,7 +291,7 @@ function function_cf3224fe( b_success )
         level.ai_vip flag::clear( "vip_checkpoint_goto" );
         level.ai_vip flag::clear( "vip_checkpoint_action" );
         level.ai_vip.waypoint_defend ct_utils::function_f9ed304d();
-        level.ai_vip.var_ebc76246 ct_utils::function_f9ed304d();
+        level.ai_vip.waypoint_escort ct_utils::function_f9ed304d();
         level.ai_vip = undefined;
         
         foreach ( var_94dda6f in level.var_ac03813 )
@@ -573,7 +573,7 @@ function function_27bf93d( var_93b6a23b = 2000, var_844ac87e = 1 )
 function j_fore_le_01()
 {
     level endoncallback( &function_76a85acc, #"combattraining_logic_finished" );
-    level notify( #"hash_b368182103cc73" );
+    level notify( #"vip_go_path" );
     ct_utils::function_6d7f4ec6( 45 );
     e_player = ct_utils::get_player();
     level thread checkpoints_think();
@@ -648,7 +648,7 @@ function function_5a72abb2()
     
     foreach ( var_94dda6f in level.var_ac03813 )
     {
-        var_94dda6f.waypoint = ct_utils::create_waypoint( #"hash_3fc4cf91a22dada9", var_94dda6f.origin, ( 0, 0, 0 ), #"allies", #"allies", 0, undefined );
+        var_94dda6f.waypoint = ct_utils::create_waypoint( #"ct_waypoint_defend", var_94dda6f.origin, ( 0, 0, 0 ), #"allies", #"allies", 0, undefined );
         var_94dda6f.waypoint gameobjects::set_visible_team( "none" );
     }
 }
@@ -722,8 +722,8 @@ function function_96d0afea( n_ndx, var_c8e04bda = 0 )
     level.ai_vip notify( #"hash_3bd66153d302d5e3" );
     wait 2;
     a_parms = function_e4e6f295( n_ndx );
-    self thread function_db21e968( a_parms[ #"hash_26e3f994cd3be7ad" ], 0, a_parms[ #"hash_6ac476a653e52b43" ], a_parms[ #"hash_79c09420f2a9d1b5" ], a_parms[ #"hash_c89b29b1052eb3a" ], a_parms[ #"hash_65d515c48dec9a90" ] );
-    level.ai_vip thread function_db21e968( a_parms[ #"hash_666d68ff5ab5708b" ], 0, a_parms[ #"hash_1b654f4b57692315" ], a_parms[ #"hash_26f2c8d3a06033f3" ], a_parms[ #"hash_53a6b6a30b8be9ae" ], a_parms[ #"hash_4afa2b23e812aa80" ] );
+    self thread function_db21e968( a_parms[ #"hash_26e3f994cd3be7ad" ], 0, a_parms[ #"range_min_player" ], a_parms[ #"range_max_player" ], a_parms[ #"hash_c89b29b1052eb3a" ], a_parms[ #"hash_65d515c48dec9a90" ] );
+    level.ai_vip thread function_db21e968( a_parms[ #"hash_666d68ff5ab5708b" ], 0, a_parms[ #"range_min_vip" ], a_parms[ #"range_max_vip" ], a_parms[ #"hash_53a6b6a30b8be9ae" ], a_parms[ #"hash_4afa2b23e812aa80" ] );
     self thread function_2444772e( 30 );
     level waittill( #"sabotage_done" );
     self thread function_beca73db();
@@ -758,13 +758,13 @@ function function_e4e6f295( n_difficulty )
     var_ff9426c0 = array( 1.5, 1.25, 1, 1, 0.8 );
     var_9ae27512 = [];
     var_9ae27512[ #"hash_26e3f994cd3be7ad" ] = var_81f1eb5e[ n_difficulty ];
-    var_9ae27512[ #"hash_6ac476a653e52b43" ] = var_8b6d0a97[ n_difficulty ];
-    var_9ae27512[ #"hash_79c09420f2a9d1b5" ] = var_4d52eb53[ n_difficulty ];
+    var_9ae27512[ #"range_min_player" ] = var_8b6d0a97[ n_difficulty ];
+    var_9ae27512[ #"range_max_player" ] = var_4d52eb53[ n_difficulty ];
     var_9ae27512[ #"hash_c89b29b1052eb3a" ] = var_fabb2516[ n_difficulty ];
     var_9ae27512[ #"hash_65d515c48dec9a90" ] = var_ee09c06e[ n_difficulty ];
     var_9ae27512[ #"hash_666d68ff5ab5708b" ] = var_c17eeb05[ n_difficulty ];
-    var_9ae27512[ #"hash_1b654f4b57692315" ] = var_2b736d3f[ n_difficulty ];
-    var_9ae27512[ #"hash_26f2c8d3a06033f3" ] = var_c3cf4425[ n_difficulty ];
+    var_9ae27512[ #"range_min_vip" ] = var_2b736d3f[ n_difficulty ];
+    var_9ae27512[ #"range_max_vip" ] = var_c3cf4425[ n_difficulty ];
     var_9ae27512[ #"hash_53a6b6a30b8be9ae" ] = var_1377e036[ n_difficulty ];
     var_9ae27512[ #"hash_4afa2b23e812aa80" ] = var_ff9426c0[ n_difficulty ];
     return var_9ae27512;
@@ -793,8 +793,8 @@ function function_2444772e( n_time, var_94629f1a = 50 )
     }
     
     self ct_utils::function_c314f6b1( 45 );
-    self thread ct_utils::function_b42ce622( #"hash_7185fe2194047325" );
-    level thread ct_utils::function_bfa522d1();
+    self thread ct_utils::function_b42ce622( #"sabotagedata_complete" );
+    level thread ct_utils::simulation_pulse();
     level.ai_vip flag::clear( "vip_checkpoint_action" );
     level notify( #"sabotage_done" );
     wait 3;
@@ -908,8 +908,8 @@ function function_3e213427()
     level.ai_vip.var_38b6161f = 1;
     level.ai_vip.waypoint_defend = level.ai_vip ct_utils::create_waypoint( #"hash_1a511b2e1cdb8c7f", level.ai_vip.origin, level.ai_vip.angles, #"allies", undefined, 0, undefined );
     level.ai_vip.waypoint_defend gameobjects::set_visible_team( "none" );
-    level.ai_vip.var_ebc76246 = level.ai_vip ct_utils::create_waypoint( #"hash_69b9c95819486ff3", level.ai_vip.origin, level.ai_vip.angles, #"allies", undefined, 0, undefined );
-    level.ai_vip.var_ebc76246 gameobjects::set_visible_team( "any" );
+    level.ai_vip.waypoint_escort = level.ai_vip ct_utils::create_waypoint( #"hash_69b9c95819486ff3", level.ai_vip.origin, level.ai_vip.angles, #"allies", undefined, 0, undefined );
+    level.ai_vip.waypoint_escort gameobjects::set_visible_team( "any" );
     level.ai_vip clientfield::set( "set_vip", 2 );
     level.ai_vip.health = 250;
     
@@ -1070,7 +1070,7 @@ function vip_checkpoint_action()
 {
     self endon( #"death" );
     self.waypoint_defend gameobjects::set_visible_team( "any" );
-    self.var_ebc76246 gameobjects::set_visible_team( "none" );
+    self.waypoint_escort gameobjects::set_visible_team( "none" );
     self.var_d8f38f = getnode( level.var_94dda6f.target, "targetname" );
     self.var_33b6732b = getclosestpointonnavmesh( self.var_d8f38f.origin );
     self setgoal( self.var_33b6732b, 1, 1 );
@@ -1108,7 +1108,7 @@ function vip_checkpoint_action()
     self.var_ef59b90 = 3;
     self function_4852f39d();
     self.waypoint_defend gameobjects::set_visible_team( "none" );
-    self.var_ebc76246 gameobjects::set_visible_team( "any" );
+    self.waypoint_escort gameobjects::set_visible_team( "any" );
 }
 
 // Namespace ct_torque/ct_torque
@@ -1178,10 +1178,10 @@ function spawn_robot( str_team = #"allies", var_3b640040 = "walk" )
 // Params 0
 // Checksum 0x4829106a, Offset: 0x4488
 // Size: 0x122
-function function_91c380a()
+function vip_go_path()
 {
     self endoncallback( &function_b47c8ec8, #"death" );
-    level waittill( #"hash_b368182103cc73" );
+    level waittill( #"vip_go_path" );
     
     for ( var_1d6b3936 = getnode( "nd_vip_start_path", "targetname" ); isdefined( var_1d6b3936.target ) ; var_1d6b3936 = getnode( var_1d6b3936.target, "targetname" ) )
     {
@@ -1605,10 +1605,10 @@ function function_dd64960c( a_ents )
     // Params 0
     // Checksum 0x33fdf0eb, Offset: 0x5aa0
     // Size: 0x988, Type: dev
-    function function_d69c54a8()
+    function devgui_ct_torque()
     {
         sessionmode = currentsessionmode();
-        setdvar( #"hash_2bdefa89fdfb0546", "<dev string:x97>" );
+        setdvar( #"devgui_ct_torque", "<dev string:x97>" );
         level flag::init( "<dev string:x9a>" );
         
         if ( sessionmode != 4 )
@@ -1639,7 +1639,7 @@ function function_dd64960c( a_ents )
         while ( true )
         {
             wait 0.25;
-            cmd = getdvarstring( #"hash_2bdefa89fdfb0546", "<dev string:x97>" );
+            cmd = getdvarstring( #"devgui_ct_torque", "<dev string:x97>" );
             
             if ( cmd == "<dev string:x97>" )
             {
@@ -1692,7 +1692,7 @@ function function_dd64960c( a_ents )
                     }
                     
                     break;
-                case #"hash_5ec503eac0f129d9":
+                case #"vip_move_stop":
                     if ( isalive( level.ai_vip ) )
                     {
                         function_6fc5325c();
@@ -1768,7 +1768,7 @@ function function_dd64960c( a_ents )
                     break;
             }
             
-            setdvar( #"hash_2bdefa89fdfb0546", "<dev string:x97>" );
+            setdvar( #"devgui_ct_torque", "<dev string:x97>" );
         }
     }
 

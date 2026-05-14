@@ -12,7 +12,7 @@ CoD.TabletLocationSelector_MessagePrompt_Planemortar.new = function ( f1_arg0, f
 	self.anyChildUsesUpdateState = true
 	
 	local TabletLocationSelectorHintText = CoD.TabletLocationSelector_HintText.new( f1_arg0, f1_arg1, 0.5, 0.5, -285, 245, 0.5, 0.5, -20, 20 )
-	TabletLocationSelectorHintText.CursorHintText:setText( Engine[0xF9F1239CFD921FE]( 0x397C7860EF08AA3 ) )
+	TabletLocationSelectorHintText.CursorHintText:setText( Engine[0xF9F1239CFD921FE]( "menu/remaining_target" ) )
 	self:addElement( TabletLocationSelectorHintText )
 	self.TabletLocationSelectorHintText = TabletLocationSelectorHintText
 	

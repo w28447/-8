@@ -1,7 +1,7 @@
 {
     "hash_dfedf08e": 0,
     "categoryindex": 0,
-    "description": "localized17#hash_f384a1adc1261e8",
+    "description": "localized17#codcaster/qs_third_person_hint",
     "menu/on": "localized17#menu/on",
     "hash_10e01ad5": 0,
     "iscategory": 0,
@@ -21,7 +21,7 @@
     "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "codcaster_ds_third_person",
-    "displayname": "localized17#hash_7c272b48ff2b94e8",
+    "displayname": "localized17#codcaster/qs_third_person",
     "rangestartvalue": 0,
     "isdisabled": 0,
     "hash_d6897f56": 0,

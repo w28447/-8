@@ -402,13 +402,13 @@
         {
             "value": 261,
             "next": 1,
-            "name": "#hash_41204f583fec6679",
+            "name": "#amb_fan_ceiling",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_41204f583fec6679",
+                    "name": "#amb_fan_ceiling",
                     "assetId": "#amb/industrial/fan/ceiling/slow/fan_slow_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -447,7 +447,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_41204f583fec6679",
+                    "name": "#amb_fan_ceiling",
                     "assetId": "#amb/industrial/fan/ceiling/slow/fan_slow_01.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -490,13 +490,13 @@
         {
             "value": 258,
             "next": 65535,
-            "name": "#hash_16bfc231cf77bd00",
+            "name": "#amb_fan_rattle",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_16bfc231cf77bd00",
+                    "name": "#amb_fan_rattle",
                     "assetId": "#amb/industrial/weather_vane/vane_01.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -891,13 +891,13 @@
         {
             "value": 255,
             "next": 3,
-            "name": "#hash_4218b15834df0b26",
+            "name": "#amb_gust_cold",
             "sequence": 0,
             "cullDistance": 1600,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4218b15834df0b26",
+                    "name": "#amb_gust_cold",
                     "assetId": "#amb/environment/wind/gusts/cold/long/wind_gust_long_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -936,7 +936,7 @@
                     "unk178": "#hash_200001908"
                 },
                 {
-                    "name": "#hash_4218b15834df0b26",
+                    "name": "#amb_gust_cold",
                     "assetId": "#amb/environment/wind/gusts/cold/long/wind_gust_long_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -975,7 +975,7 @@
                     "unk178": "#hash_200001908"
                 },
                 {
-                    "name": "#hash_4218b15834df0b26",
+                    "name": "#amb_gust_cold",
                     "assetId": "#amb/environment/wind/gusts/cold/long/wind_gust_long_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -1014,7 +1014,7 @@
                     "unk178": "#hash_200001908"
                 },
                 {
-                    "name": "#hash_4218b15834df0b26",
+                    "name": "#amb_gust_cold",
                     "assetId": "#amb/environment/wind/gusts/cold/long/wind_gust_long_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -1053,7 +1053,7 @@
                     "unk178": "#hash_200001908"
                 },
                 {
-                    "name": "#hash_4218b15834df0b26",
+                    "name": "#amb_gust_cold",
                     "assetId": "#amb/environment/wind/gusts/cold/long/wind_gust_long_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -1092,7 +1092,7 @@
                     "unk178": "#hash_200001908"
                 },
                 {
-                    "name": "#hash_4218b15834df0b26",
+                    "name": "#amb_gust_cold",
                     "assetId": "#amb/environment/wind/gusts/cold/long/wind_gust_long_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -1131,7 +1131,7 @@
                     "unk178": "#hash_200001908"
                 },
                 {
-                    "name": "#hash_4218b15834df0b26",
+                    "name": "#amb_gust_cold",
                     "assetId": "#amb/environment/wind/gusts/cold/long/wind_gust_long_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -1457,13 +1457,13 @@
         {
             "value": 227,
             "next": 65535,
-            "name": "#hash_68d360aa565ed76a",
+            "name": "#amb_ice_crack",
             "sequence": 0,
             "cullDistance": 750,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_68d360aa565ed76a",
+                    "name": "#amb_ice_crack",
                     "assetId": "#amb/environment/snow/ice/ice_crack_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -1502,7 +1502,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_68d360aa565ed76a",
+                    "name": "#amb_ice_crack",
                     "assetId": "#amb/environment/snow/ice/ice_crack_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -1541,7 +1541,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_68d360aa565ed76a",
+                    "name": "#amb_ice_crack",
                     "assetId": "#amb/environment/snow/ice/ice_crack_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -1580,7 +1580,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_68d360aa565ed76a",
+                    "name": "#amb_ice_crack",
                     "assetId": "#amb/environment/snow/ice/ice_crack_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -1619,7 +1619,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_68d360aa565ed76a",
+                    "name": "#amb_ice_crack",
                     "assetId": "#amb/environment/snow/ice/ice_crack_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -1658,7 +1658,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_68d360aa565ed76a",
+                    "name": "#amb_ice_crack",
                     "assetId": "#amb/environment/snow/ice/ice_crack_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -1701,13 +1701,13 @@
         {
             "value": 20,
             "next": 15,
-            "name": "#hash_b258a3d47ed538c",
+            "name": "#amb_light_buzz",
             "sequence": 0,
             "cullDistance": 600,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_b258a3d47ed538c",
+                    "name": "#amb_light_buzz",
                     "assetId": "#amb/lights/buzz/buzz_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -1947,13 +1947,13 @@
         {
             "value": 131,
             "next": 27,
-            "name": "#hash_683fa9c204fffef2",
+            "name": "#amb_paper_rustle",
             "sequence": 0,
             "cullDistance": 700,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_683fa9c204fffef2",
+                    "name": "#amb_paper_rustle",
                     "assetId": "#amb/material_movement/rustling/paper/subtle/paper_movement_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -1992,7 +1992,7 @@
                     "unk178": "#hash_200000208"
                 },
                 {
-                    "name": "#hash_683fa9c204fffef2",
+                    "name": "#amb_paper_rustle",
                     "assetId": "#amb/material_movement/rustling/paper/subtle/paper_movement_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -2031,7 +2031,7 @@
                     "unk178": "#hash_200000208"
                 },
                 {
-                    "name": "#hash_683fa9c204fffef2",
+                    "name": "#amb_paper_rustle",
                     "assetId": "#amb/material_movement/rustling/paper/subtle/paper_movement_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -2070,7 +2070,7 @@
                     "unk178": "#hash_200000208"
                 },
                 {
-                    "name": "#hash_683fa9c204fffef2",
+                    "name": "#amb_paper_rustle",
                     "assetId": "#amb/material_movement/rustling/paper/subtle/paper_movement_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -2109,7 +2109,7 @@
                     "unk178": "#hash_200000208"
                 },
                 {
-                    "name": "#hash_683fa9c204fffef2",
+                    "name": "#amb_paper_rustle",
                     "assetId": "#amb/material_movement/rustling/paper/subtle/paper_movement_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -2148,7 +2148,7 @@
                     "unk178": "#hash_200000208"
                 },
                 {
-                    "name": "#hash_683fa9c204fffef2",
+                    "name": "#amb_paper_rustle",
                     "assetId": "#amb/material_movement/rustling/paper/subtle/paper_movement_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -2191,13 +2191,13 @@
         {
             "value": 70,
             "next": 65535,
-            "name": "#hash_3bb6b6eac48c5883",
+            "name": "#amb_phone_ring",
             "sequence": 0,
             "cullDistance": 700,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3bb6b6eac48c5883",
+                    "name": "#amb_phone_ring",
                     "assetId": "#zmb/level/zm_office/phone/phone_ring.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -3275,13 +3275,13 @@
         {
             "value": 252,
             "next": 65535,
-            "name": "#hash_3a7901fb83d6fb92",
+            "name": "#amb_silo_creak",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3a7901fb83d6fb92",
+                    "name": "#amb_silo_creak",
                     "assetId": "#amb/material_movement/creaks/metal/stress/large/large_metal_stress_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -3320,7 +3320,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_3a7901fb83d6fb92",
+                    "name": "#amb_silo_creak",
                     "assetId": "#amb/material_movement/creaks/metal/stress/large/large_metal_stress_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -3359,7 +3359,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_3a7901fb83d6fb92",
+                    "name": "#amb_silo_creak",
                     "assetId": "#amb/material_movement/creaks/metal/stress/large/large_metal_stress_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -3398,7 +3398,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_3a7901fb83d6fb92",
+                    "name": "#amb_silo_creak",
                     "assetId": "#amb/material_movement/creaks/metal/stress/large/large_metal_stress_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -3437,7 +3437,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_3a7901fb83d6fb92",
+                    "name": "#amb_silo_creak",
                     "assetId": "#amb/material_movement/creaks/metal/stress/large/large_metal_stress_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -3476,7 +3476,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_3a7901fb83d6fb92",
+                    "name": "#amb_silo_creak",
                     "assetId": "#amb/material_movement/creaks/metal/stress/large/large_metal_stress_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -3515,7 +3515,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_3a7901fb83d6fb92",
+                    "name": "#amb_silo_creak",
                     "assetId": "#amb/material_movement/creaks/metal/stress/large/large_metal_stress_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -3554,7 +3554,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_3a7901fb83d6fb92",
+                    "name": "#amb_silo_creak",
                     "assetId": "#amb/material_movement/creaks/metal/stress/large/large_metal_stress_07.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -3593,7 +3593,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_3a7901fb83d6fb92",
+                    "name": "#amb_silo_creak",
                     "assetId": "#amb/material_movement/creaks/metal/stress/large/large_metal_stress_08.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -3997,13 +3997,13 @@
         {
             "value": 249,
             "next": 65535,
-            "name": "#hash_761c344d0fcb4f8b",
+            "name": "#amb_sink_drip",
             "sequence": 0,
             "cullDistance": 600,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_761c344d0fcb4f8b",
+                    "name": "#amb_sink_drip",
                     "assetId": "#amb/environment/water/drip/sink/amb_drip_sink_lp.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -4242,13 +4242,13 @@
         {
             "value": 216,
             "next": 65535,
-            "name": "#hash_489948c17ecb2506",
+            "name": "#amb_vent_exhaust",
             "sequence": 0,
             "cullDistance": 600,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_489948c17ecb2506",
+                    "name": "#amb_vent_exhaust",
                     "assetId": "#hash_727817573146089d",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -4831,13 +4831,13 @@
         {
             "value": 212,
             "next": 65535,
-            "name": "#hash_5eb690639ce50eba",
+            "name": "#dst_car_fire",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5eb690639ce50eba",
+                    "name": "#dst_car_fire",
                     "assetId": "#dst/generic/fire/car/car_fire_03.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -6965,13 +6965,13 @@
         {
             "value": 119,
             "next": 32,
-            "name": "#hash_31f777916298d72",
+            "name": "#dst_cover_concrete",
             "sequence": 0,
             "cullDistance": 550,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -7010,7 +7010,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -7049,7 +7049,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -7088,7 +7088,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -7127,7 +7127,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -7166,7 +7166,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_31f777916298d72",
+                    "name": "#dst_cover_concrete",
                     "assetId": "#dst/cover/concrete/cover_concrete_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -7216,7 +7216,7 @@
             "aliases": [
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -7257,7 +7257,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -7298,7 +7298,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -7339,7 +7339,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -7380,7 +7380,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -7421,7 +7421,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -7462,7 +7462,7 @@
                 },
                 {
                     "name": "#hash_59e128a5a58e7d49",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -7994,13 +7994,13 @@
         {
             "value": 229,
             "next": 65535,
-            "name": "#hash_5977d1f5f8457ae5",
+            "name": "#dst_fire_extinguisher",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5977d1f5f8457ae5",
+                    "name": "#dst_fire_extinguisher",
                     "assetId": "#dst/prop/fire_extinguisher/fire_extinguisher_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -8091,13 +8091,13 @@
         {
             "value": 80,
             "next": 75,
-            "name": "#hash_2fc9b1cdafb1c5db",
+            "name": "#dst_foodstand",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2fc9b1cdafb1c5db",
+                    "name": "#dst_foodstand",
                     "assetId": "#dst/prop/foodstand/foodstand_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -8136,7 +8136,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_2fc9b1cdafb1c5db",
+                    "name": "#dst_foodstand",
                     "assetId": "#dst/prop/foodstand/foodstand_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -8324,13 +8324,13 @@
         {
             "value": 17,
             "next": 81,
-            "name": "#hash_419e84642ebe554",
+            "name": "#dst_gas_pipe_lp",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_419e84642ebe554",
+                    "name": "#dst_gas_pipe_lp",
                     "assetId": "#dst/pipe/gas/loop/gas_pipe_lp.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -9748,13 +9748,13 @@
         {
             "value": 176,
             "next": 65535,
-            "name": "#hash_4f8c480d8e8f07b6",
+            "name": "#dst_pipe_steam",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4f8c480d8e8f07b6",
+                    "name": "#dst_pipe_steam",
                     "secondaryname": "#hash_54538dea28a0400e",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -9894,13 +9894,13 @@
         {
             "value": 89,
             "next": 65535,
-            "name": "#hash_4ec5a3e02263fc0e",
+            "name": "#dst_propane_tank_explo",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
@@ -9941,7 +9941,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
@@ -9982,7 +9982,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
@@ -10023,7 +10023,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
@@ -10064,7 +10064,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
@@ -10105,7 +10105,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
@@ -10146,7 +10146,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_4ec5a3e02263fc0e",
+                    "name": "#dst_propane_tank_explo",
                     "secondaryname": "#hash_238170c19d279f5",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
@@ -10198,7 +10198,7 @@
             "aliases": [
                 {
                     "name": "#hash_238170c19d279f5",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -10238,7 +10238,7 @@
                 },
                 {
                     "name": "#hash_238170c19d279f5",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -10278,7 +10278,7 @@
                 },
                 {
                     "name": "#hash_238170c19d279f5",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -10318,7 +10318,7 @@
                 },
                 {
                     "name": "#hash_238170c19d279f5",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -10361,13 +10361,13 @@
         {
             "value": 282,
             "next": 65535,
-            "name": "#hash_344ec28fee2dea4c",
+            "name": "#dst_rock_large",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_344ec28fee2dea4c",
+                    "name": "#dst_rock_large",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
                     "assetFileNameRelease": "#mp_nuketown_4.all",
@@ -10416,7 +10416,7 @@
             "aliases": [
                 {
                     "name": "#dst_server",
-                    "secondaryname": "#hash_25a264b901d17919",
+                    "secondaryname": "#dst_server_glass",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
                     "assetFileNameRelease": "#mp_nuketown_4.all",
@@ -10458,14 +10458,14 @@
         {
             "value": 97,
             "next": 65535,
-            "name": "#hash_25a264b901d17919",
+            "name": "#dst_server_glass",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_25a264b901d17919",
-                    "secondaryname": "#hash_2f095673f11faa44",
+                    "name": "#dst_server_glass",
+                    "secondaryname": "#dst_server_power",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -10504,8 +10504,8 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_25a264b901d17919",
-                    "secondaryname": "#hash_2f095673f11faa44",
+                    "name": "#dst_server_glass",
+                    "secondaryname": "#dst_server_power",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -10544,8 +10544,8 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_25a264b901d17919",
-                    "secondaryname": "#hash_2f095673f11faa44",
+                    "name": "#dst_server_glass",
+                    "secondaryname": "#dst_server_power",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -10588,13 +10588,13 @@
         {
             "value": 243,
             "next": 30,
-            "name": "#hash_2f095673f11faa44",
+            "name": "#dst_server_power",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2f095673f11faa44",
+                    "name": "#dst_server_power",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
                     "assetFileNameRelease": "#mp_nuketown_4.all",
@@ -11315,13 +11315,13 @@
         {
             "value": 270,
             "next": 65535,
-            "name": "#hash_58218bc4f7624185",
+            "name": "#dst_steam_pipe_lp",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_58218bc4f7624185",
+                    "name": "#dst_steam_pipe_lp",
                     "assetId": "#dst/pipe/steam/loop/steam_pipe_lp.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -12169,13 +12169,13 @@
         {
             "value": 245,
             "next": 65535,
-            "name": "#hash_72725b98cf0834ac",
+            "name": "#dst_trash_bag",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_72725b98cf0834ac",
+                    "name": "#dst_trash_bag",
                     "assetId": "#hash_131702bdb9183384",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -12214,7 +12214,7 @@
                     "unk178": "#hash_503090305"
                 },
                 {
-                    "name": "#hash_72725b98cf0834ac",
+                    "name": "#dst_trash_bag",
                     "assetId": "#hash_2264ca2ac3c87869",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -12253,7 +12253,7 @@
                     "unk178": "#hash_503090305"
                 },
                 {
-                    "name": "#hash_72725b98cf0834ac",
+                    "name": "#dst_trash_bag",
                     "assetId": "#hash_62c73c6a2cca2abe",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -12292,7 +12292,7 @@
                     "unk178": "#hash_503090305"
                 },
                 {
-                    "name": "#hash_72725b98cf0834ac",
+                    "name": "#dst_trash_bag",
                     "assetId": "#hash_1884c87605737c5b",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -12384,13 +12384,13 @@
         {
             "value": 174,
             "next": 65535,
-            "name": "#hash_1a6485b96677518d",
+            "name": "#dst_water_bottle",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1a6485b96677518d",
+                    "name": "#dst_water_bottle",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
                     "assetFileNameRelease": "#mp_nuketown_4.all",
@@ -12480,13 +12480,13 @@
         {
             "value": 147,
             "next": 65535,
-            "name": "#hash_7809ea482909306c",
+            "name": "#dst_wood_crate",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7809ea482909306c",
+                    "name": "#dst_wood_crate",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
                     "assetFileNameRelease": "#mp_nuketown_4.all",
@@ -12918,13 +12918,13 @@
         {
             "value": 139,
             "next": 104,
-            "name": "#hash_56633dba71c68170",
+            "name": "#evt_mannequin_head",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_56633dba71c68170",
+                    "name": "#evt_mannequin_head",
                     "assetId": "#hash_233c4ec3d3ab3429",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -12963,7 +12963,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_56633dba71c68170",
+                    "name": "#evt_mannequin_head",
                     "assetId": "#hash_6a27eed5e59e5f44",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -13002,7 +13002,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_56633dba71c68170",
+                    "name": "#evt_mannequin_head",
                     "assetId": "#hash_765f87dbdcdc191b",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -13041,7 +13041,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_56633dba71c68170",
+                    "name": "#evt_mannequin_head",
                     "assetId": "#hash_6f84264d539b777e",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -13080,7 +13080,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_56633dba71c68170",
+                    "name": "#evt_mannequin_head",
                     "assetId": "#hash_729bfed36e820985",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -13119,7 +13119,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_56633dba71c68170",
+                    "name": "#evt_mannequin_head",
                     "assetId": "#hash_6b191513810eb50",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -13514,13 +13514,13 @@
         {
             "value": 30,
             "next": 134,
-            "name": "#hash_6e3923b8a120192c",
+            "name": "#evt_missile_explo",
             "sequence": 0,
             "cullDistance": 60000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6e3923b8a120192c",
+                    "name": "#evt_missile_explo",
                     "secondaryname": "#hash_4dcbf8aed0e742fa",
                     "assetId": "#exp/huge_distant/exp_huge_dist_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
@@ -13560,7 +13560,7 @@
                     "unk178": "#hash_1600140808"
                 },
                 {
-                    "name": "#hash_6e3923b8a120192c",
+                    "name": "#evt_missile_explo",
                     "secondaryname": "#hash_4dcbf8aed0e742fa",
                     "assetId": "#exp/huge_distant/exp_huge_dist_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
@@ -13600,7 +13600,7 @@
                     "unk178": "#hash_1600140808"
                 },
                 {
-                    "name": "#hash_6e3923b8a120192c",
+                    "name": "#evt_missile_explo",
                     "secondaryname": "#hash_4dcbf8aed0e742fa",
                     "assetId": "#exp/huge_distant/exp_huge_dist_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
@@ -13640,7 +13640,7 @@
                     "unk178": "#hash_1600140808"
                 },
                 {
-                    "name": "#hash_6e3923b8a120192c",
+                    "name": "#evt_missile_explo",
                     "secondaryname": "#hash_4dcbf8aed0e742fa",
                     "assetId": "#exp/huge_distant/exp_huge_dist_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
@@ -14283,13 +14283,13 @@
         {
             "value": 59,
             "next": 65535,
-            "name": "#hash_7fa9218fbd26396",
+            "name": "#evt_portal_sweet",
             "sequence": 0,
             "cullDistance": 60000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7fa9218fbd26396",
+                    "name": "#evt_portal_sweet",
                     "assetId": "#amb/weather/thunder/distant/low/short/thunder_low_dist_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -14328,7 +14328,7 @@
                     "unk178": "#hash_1600140808"
                 },
                 {
-                    "name": "#hash_7fa9218fbd26396",
+                    "name": "#evt_portal_sweet",
                     "assetId": "#amb/weather/thunder/distant/low/short/thunder_low_dist_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -14367,7 +14367,7 @@
                     "unk178": "#hash_1600140808"
                 },
                 {
-                    "name": "#hash_7fa9218fbd26396",
+                    "name": "#evt_portal_sweet",
                     "assetId": "#amb/weather/thunder/distant/low/short/thunder_low_dist_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -14406,7 +14406,7 @@
                     "unk178": "#hash_1600140808"
                 },
                 {
-                    "name": "#hash_7fa9218fbd26396",
+                    "name": "#evt_portal_sweet",
                     "assetId": "#amb/weather/thunder/distant/low/short/thunder_low_dist_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -14445,7 +14445,7 @@
                     "unk178": "#hash_1600140808"
                 },
                 {
-                    "name": "#hash_7fa9218fbd26396",
+                    "name": "#evt_portal_sweet",
                     "assetId": "#amb/weather/thunder/distant/low/short/thunder_low_dist_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -14711,13 +14711,13 @@
         {
             "value": 184,
             "next": 65535,
-            "name": "#hash_6d60852ef9ecfe86",
+            "name": "#exp_armor_debris",
             "sequence": 0,
             "cullDistance": 7000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -14757,7 +14757,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -14797,7 +14797,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -14837,7 +14837,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -14877,7 +14877,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -14917,7 +14917,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -14957,7 +14957,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -14997,7 +14997,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_07.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -15037,7 +15037,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_08.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -15077,7 +15077,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_09.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -15117,7 +15117,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_10.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -15157,7 +15157,7 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_6d60852ef9ecfe86",
+                    "name": "#exp_armor_debris",
                     "assetId": "#exp/vehicle/debris/armor/exp_armor_debris_11.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -15208,7 +15208,7 @@
             "aliases": [
                 {
                     "name": "#hash_68d529ce159011b5",
-                    "secondaryname": "#hash_6d60852ef9ecfe86",
+                    "secondaryname": "#exp_armor_debris",
                     "assetId": "#exp/distant/small_distant/exp_small_distant_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -15249,7 +15249,7 @@
                 },
                 {
                     "name": "#hash_68d529ce159011b5",
-                    "secondaryname": "#hash_6d60852ef9ecfe86",
+                    "secondaryname": "#exp_armor_debris",
                     "assetId": "#exp/distant/small_distant/exp_small_distant_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -15290,7 +15290,7 @@
                 },
                 {
                     "name": "#hash_68d529ce159011b5",
-                    "secondaryname": "#hash_6d60852ef9ecfe86",
+                    "secondaryname": "#exp_armor_debris",
                     "assetId": "#exp/distant/small_distant/exp_small_distant_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -15331,7 +15331,7 @@
                 },
                 {
                     "name": "#hash_68d529ce159011b5",
-                    "secondaryname": "#hash_6d60852ef9ecfe86",
+                    "secondaryname": "#exp_armor_debris",
                     "assetId": "#exp/distant/small_distant/exp_small_distant_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -15565,7 +15565,7 @@
             "aliases": [
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -15606,7 +15606,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -15647,7 +15647,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -15688,7 +15688,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -15729,7 +15729,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -15770,7 +15770,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -15811,7 +15811,7 @@
                 },
                 {
                     "name": "#exp_barrel",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -15855,14 +15855,14 @@
         {
             "value": 55,
             "next": 65535,
-            "name": "#hash_310e1517e8130d26",
+            "name": "#exp_barrel_close",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_310e1517e8130d26",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "name": "#exp_barrel_close",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/rip/exp_barrel_rip_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -15902,8 +15902,8 @@
                     "unk178": "#hash_6030b0804"
                 },
                 {
-                    "name": "#hash_310e1517e8130d26",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "name": "#exp_barrel_close",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/rip/exp_barrel_rip_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -15943,8 +15943,8 @@
                     "unk178": "#hash_6030b0804"
                 },
                 {
-                    "name": "#hash_310e1517e8130d26",
-                    "secondaryname": "#hash_8ef0ca7881f8aab",
+                    "name": "#exp_barrel_close",
+                    "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/rip/exp_barrel_rip_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -15988,13 +15988,13 @@
         {
             "value": 236,
             "next": 65535,
-            "name": "#hash_7fe19ceed35907ce",
+            "name": "#exp_barrel_dist",
             "sequence": 0,
             "cullDistance": 30000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7fe19ceed35907ce",
+                    "name": "#exp_barrel_dist",
                     "assetId": "#exp/prop/barrel/dist/exp_barrel_dist_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -16034,7 +16034,7 @@
                     "unk178": "#hash_6000b0304"
                 },
                 {
-                    "name": "#hash_7fe19ceed35907ce",
+                    "name": "#exp_barrel_dist",
                     "assetId": "#exp/prop/barrel/dist/exp_barrel_dist_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -16127,14 +16127,14 @@
         {
             "value": 130,
             "next": 65535,
-            "name": "#hash_3e8d50aeefef2d0e",
+            "name": "#exp_barrel_flux_l",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3e8d50aeefef2d0e",
-                    "secondaryname": "#hash_3e8d3aaeefef07ac",
+                    "name": "#exp_barrel_flux_l",
+                    "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#exp/prop/barrel/flux/exp_barrel_flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -16178,14 +16178,14 @@
         {
             "value": 73,
             "next": 151,
-            "name": "#hash_3e8d3aaeefef07ac",
+            "name": "#exp_barrel_flux_r",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3e8d3aaeefef07ac",
-                    "secondaryname": "#hash_7fe19ceed35907ce",
+                    "name": "#exp_barrel_flux_r",
+                    "secondaryname": "#exp_barrel_dist",
                     "assetId": "#exp/prop/barrel/flux/exp_barrel_flux_r_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -16229,14 +16229,14 @@
         {
             "value": 154,
             "next": 65535,
-            "name": "#hash_8ef0ca7881f8aab",
+            "name": "#exp_barrel_lfe",
             "sequence": 0,
             "cullDistance": 3000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_8ef0ca7881f8aab",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "name": "#exp_barrel_lfe",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -16275,8 +16275,8 @@
                     "unk178": "#hash_c030b0802"
                 },
                 {
-                    "name": "#hash_8ef0ca7881f8aab",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "name": "#exp_barrel_lfe",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -16315,8 +16315,8 @@
                     "unk178": "#hash_c030b0802"
                 },
                 {
-                    "name": "#hash_8ef0ca7881f8aab",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "name": "#exp_barrel_lfe",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -16355,8 +16355,8 @@
                     "unk178": "#hash_c030b0802"
                 },
                 {
-                    "name": "#hash_8ef0ca7881f8aab",
-                    "secondaryname": "#hash_3e8d50aeefef2d0e",
+                    "name": "#exp_barrel_lfe",
+                    "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -19499,7 +19499,7 @@
             "aliases": [
                 {
                     "name": "#hash_200e28bcd26bab77",
-                    "secondaryname": "#hash_3e8d3aaeefef07ac",
+                    "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -19593,13 +19593,13 @@
         {
             "value": 47,
             "next": 65535,
-            "name": "#hash_2e887c70bfe4df2a",
+            "name": "#exp_mp_propane_tank_explo",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
@@ -19640,7 +19640,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
@@ -19681,7 +19681,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
@@ -19722,7 +19722,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
@@ -19763,7 +19763,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
@@ -19804,7 +19804,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
@@ -19845,7 +19845,7 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_2e887c70bfe4df2a",
+                    "name": "#exp_mp_propane_tank_explo",
                     "secondaryname": "#hash_438dac17f69b90a2",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
@@ -20063,7 +20063,7 @@
             "aliases": [
                 {
                     "name": "#hash_4c4fd4c61d8d67f0",
-                    "secondaryname": "#hash_3e8d3aaeefef07ac",
+                    "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -20549,7 +20549,7 @@
             "aliases": [
                 {
                     "name": "#hash_456af38afaef9d77",
-                    "secondaryname": "#hash_3e8d3aaeefef07ac",
+                    "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -20650,7 +20650,7 @@
             "aliases": [
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -20691,7 +20691,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -20732,7 +20732,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -20773,7 +20773,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -20814,7 +20814,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -20855,7 +20855,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -20896,7 +20896,7 @@
                 },
                 {
                     "name": "#hash_2ec3de3874855810",
-                    "secondaryname": "#hash_310e1517e8130d26",
+                    "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -21041,14 +21041,14 @@
         {
             "value": 152,
             "next": 65535,
-            "name": "#hash_23a8d14db44a77a5",
+            "name": "#exp_veh_close_layer",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_23a8d14db44a77a5",
-                    "secondaryname": "#hash_712e3703787e4a71",
+                    "name": "#exp_veh_close_layer",
+                    "secondaryname": "#exp_veh_decay",
                     "assetId": "#exp/vehicle/close/exp_veh_close_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -21087,8 +21087,8 @@
                     "unk178": "#hash_6030b0204"
                 },
                 {
-                    "name": "#hash_23a8d14db44a77a5",
-                    "secondaryname": "#hash_712e3703787e4a71",
+                    "name": "#exp_veh_close_layer",
+                    "secondaryname": "#exp_veh_decay",
                     "assetId": "#exp/vehicle/close/exp_veh_close_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -21127,8 +21127,8 @@
                     "unk178": "#hash_6030b0204"
                 },
                 {
-                    "name": "#hash_23a8d14db44a77a5",
-                    "secondaryname": "#hash_712e3703787e4a71",
+                    "name": "#exp_veh_close_layer",
+                    "secondaryname": "#exp_veh_decay",
                     "assetId": "#exp/vehicle/close/exp_veh_close_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -21167,8 +21167,8 @@
                     "unk178": "#hash_6030b0204"
                 },
                 {
-                    "name": "#hash_23a8d14db44a77a5",
-                    "secondaryname": "#hash_712e3703787e4a71",
+                    "name": "#exp_veh_close_layer",
+                    "secondaryname": "#exp_veh_decay",
                     "assetId": "#exp/vehicle/close/exp_veh_close_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -21211,14 +21211,14 @@
         {
             "value": 259,
             "next": 65535,
-            "name": "#hash_127c91df9b564016",
+            "name": "#exp_veh_debris",
             "sequence": 0,
             "cullDistance": 5000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -21257,8 +21257,8 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -21297,8 +21297,8 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -21337,8 +21337,8 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -21377,8 +21377,8 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -21417,8 +21417,8 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -21457,8 +21457,8 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -21497,8 +21497,8 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_07.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -21537,8 +21537,8 @@
                     "unk178": "#hash_6030b0203"
                 },
                 {
-                    "name": "#hash_127c91df9b564016",
-                    "secondaryname": "#hash_23a8d14db44a77a5",
+                    "name": "#exp_veh_debris",
+                    "secondaryname": "#exp_veh_close_layer",
                     "assetId": "#exp/vehicle/debris/exp_veh_debris_08.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -21581,19 +21581,19 @@
         {
             "value": 209,
             "next": 65535,
-            "name": "#hash_712e3703787e4a71",
+            "name": "#exp_veh_decay",
             "sequence": 0,
             "cullDistance": 12000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_712e3703787e4a71",
-                    "secondaryname": "#hash_7332c548b8e60625",
+                    "name": "#exp_veh_decay",
+                    "secondaryname": "#exp_veh_flux_l",
                     "assetId": "#exp/decay/refresh/exp_explosion_decay_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
                     "assetFileNameRelease": "#mp_nuketown_4.all",
-                    "contextType": "#hash_730721b0b6373e1",
+                    "contextType": "#ringoff_plr",
                     "contextValue": "#outdoor",
                     "reverbSend": 0.001,
                     "centerSend": 0,
@@ -21629,13 +21629,13 @@
                     "unk178": "#hash_1b030b0101"
                 },
                 {
-                    "name": "#hash_712e3703787e4a71",
-                    "secondaryname": "#hash_7332c548b8e60625",
+                    "name": "#exp_veh_decay",
+                    "secondaryname": "#exp_veh_flux_l",
                     "assetId": "#exp/decay/refresh/exp_explosion_decay_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
                     "assetFileNameRelease": "#mp_nuketown_4.all",
-                    "contextType": "#hash_730721b0b6373e1",
+                    "contextType": "#ringoff_plr",
                     "contextValue": "#outdoor",
                     "reverbSend": 0.001,
                     "centerSend": 0,
@@ -21675,14 +21675,14 @@
         {
             "value": 265,
             "next": 65535,
-            "name": "#hash_7332c548b8e60625",
+            "name": "#exp_veh_flux_l",
             "sequence": 0,
             "cullDistance": 13000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7332c548b8e60625",
-                    "secondaryname": "#hash_7332d748b8e624bb",
+                    "name": "#exp_veh_flux_l",
+                    "secondaryname": "#exp_veh_flux_r",
                     "assetId": "#exp/vehicle/flux/veh_flux_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -21721,8 +21721,8 @@
                     "unk178": "#hash_6030e0103"
                 },
                 {
-                    "name": "#hash_7332c548b8e60625",
-                    "secondaryname": "#hash_7332d748b8e624bb",
+                    "name": "#exp_veh_flux_l",
+                    "secondaryname": "#exp_veh_flux_r",
                     "assetId": "#exp/vehicle/flux/veh_flux_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -21761,8 +21761,8 @@
                     "unk178": "#hash_6030e0103"
                 },
                 {
-                    "name": "#hash_7332c548b8e60625",
-                    "secondaryname": "#hash_7332d748b8e624bb",
+                    "name": "#exp_veh_flux_l",
+                    "secondaryname": "#exp_veh_flux_r",
                     "assetId": "#exp/vehicle/flux/veh_flux_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -21801,8 +21801,8 @@
                     "unk178": "#hash_6030e0103"
                 },
                 {
-                    "name": "#hash_7332c548b8e60625",
-                    "secondaryname": "#hash_7332d748b8e624bb",
+                    "name": "#exp_veh_flux_l",
+                    "secondaryname": "#exp_veh_flux_r",
                     "assetId": "#exp/vehicle/flux/veh_flux_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -21845,13 +21845,13 @@
         {
             "value": 159,
             "next": 65535,
-            "name": "#hash_7332d748b8e624bb",
+            "name": "#exp_veh_flux_r",
             "sequence": 0,
             "cullDistance": 13000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7332d748b8e624bb",
+                    "name": "#exp_veh_flux_r",
                     "assetId": "#exp/vehicle/flux/veh_flux_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -21890,7 +21890,7 @@
                     "unk178": "#hash_6030e0103"
                 },
                 {
-                    "name": "#hash_7332d748b8e624bb",
+                    "name": "#exp_veh_flux_r",
                     "assetId": "#exp/vehicle/flux/veh_flux_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -21929,7 +21929,7 @@
                     "unk178": "#hash_6030e0103"
                 },
                 {
-                    "name": "#hash_7332d748b8e624bb",
+                    "name": "#exp_veh_flux_r",
                     "assetId": "#exp/vehicle/flux/veh_flux_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -21968,7 +21968,7 @@
                     "unk178": "#hash_6030e0103"
                 },
                 {
-                    "name": "#hash_7332d748b8e624bb",
+                    "name": "#exp_veh_flux_r",
                     "assetId": "#exp/vehicle/flux/veh_flux_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -22018,7 +22018,7 @@
             "aliases": [
                 {
                     "name": "#exp_veh_large",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -22059,7 +22059,7 @@
                 },
                 {
                     "name": "#exp_veh_large",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -22100,7 +22100,7 @@
                 },
                 {
                     "name": "#exp_veh_large",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -22144,13 +22144,13 @@
         {
             "value": 280,
             "next": 65535,
-            "name": "#hash_680a1ca45380de2",
+            "name": "#exp_veh_lfe",
             "sequence": 0,
             "cullDistance": 3500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_680a1ca45380de2",
+                    "name": "#exp_veh_lfe",
                     "secondaryname": "#hash_bbafec33c2adca2",
                     "assetId": "#exp/vehicle/lfe/exp_veh_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
@@ -22250,7 +22250,7 @@
             "aliases": [
                 {
                     "name": "#exp_veh_med",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -22291,7 +22291,7 @@
                 },
                 {
                     "name": "#exp_veh_med",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -22332,7 +22332,7 @@
                 },
                 {
                     "name": "#exp_veh_med",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -22471,7 +22471,7 @@
             "aliases": [
                 {
                     "name": "#exp_veh_small",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -22512,7 +22512,7 @@
                 },
                 {
                     "name": "#exp_veh_small",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -22553,7 +22553,7 @@
                 },
                 {
                     "name": "#exp_veh_small",
-                    "secondaryname": "#hash_680a1ca45380de2",
+                    "secondaryname": "#exp_veh_lfe",
                     "assetId": "#exp/vehicle/base/exp_veh_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -29089,13 +29089,13 @@
         {
             "value": 221,
             "next": 65535,
-            "name": "#hash_16be606adefff243",
+            "name": "#pfx_snow_fall",
             "sequence": 0,
             "cullDistance": 1700,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_16be606adefff243",
+                    "name": "#pfx_snow_fall",
                     "assetId": "#amb/environment/snow/fall/snowfall_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -29134,7 +29134,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_16be606adefff243",
+                    "name": "#pfx_snow_fall",
                     "assetId": "#amb/environment/snow/fall/snowfall_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -29173,7 +29173,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_16be606adefff243",
+                    "name": "#pfx_snow_fall",
                     "assetId": "#amb/environment/snow/fall/snowfall_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -29212,7 +29212,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_16be606adefff243",
+                    "name": "#pfx_snow_fall",
                     "assetId": "#amb/environment/snow/fall/snowfall_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -29255,13 +29255,13 @@
         {
             "value": 168,
             "next": 65535,
-            "name": "#hash_5dfd4690ebab105c",
+            "name": "#pfx_snow_impact",
             "sequence": 0,
             "cullDistance": 1700,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5dfd4690ebab105c",
+                    "name": "#pfx_snow_impact",
                     "assetId": "#amb/environment/snow/impact/snow_impact_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -29300,7 +29300,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_5dfd4690ebab105c",
+                    "name": "#pfx_snow_impact",
                     "assetId": "#amb/environment/snow/impact/snow_impact_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -29339,7 +29339,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_5dfd4690ebab105c",
+                    "name": "#pfx_snow_impact",
                     "assetId": "#amb/environment/snow/impact/snow_impact_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -29378,7 +29378,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_5dfd4690ebab105c",
+                    "name": "#pfx_snow_impact",
                     "assetId": "#amb/environment/snow/impact/snow_impact_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -29417,7 +29417,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_5dfd4690ebab105c",
+                    "name": "#pfx_snow_impact",
                     "assetId": "#amb/environment/snow/impact/snow_impact_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -29460,13 +29460,13 @@
         {
             "value": 161,
             "next": 234,
-            "name": "#hash_694aaf72eca0e4dc",
+            "name": "#pfx_spark_sm",
             "sequence": 0,
             "cullDistance": 600,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_694aaf72eca0e4dc",
+                    "name": "#pfx_spark_sm",
                     "assetId": "#pfx/sparks/t8/med/pfx_t8_spark_md_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -29505,7 +29505,7 @@
                     "unk178": "#hash_500000804"
                 },
                 {
-                    "name": "#hash_694aaf72eca0e4dc",
+                    "name": "#pfx_spark_sm",
                     "assetId": "#pfx/sparks/t8/med/pfx_t8_spark_md_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -29544,7 +29544,7 @@
                     "unk178": "#hash_500000804"
                 },
                 {
-                    "name": "#hash_694aaf72eca0e4dc",
+                    "name": "#pfx_spark_sm",
                     "assetId": "#pfx/sparks/t8/med/pfx_t8_spark_md_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -30438,7 +30438,7 @@
             "aliases": [
                 {
                     "name": "#hash_bbafec33c2adca2",
-                    "secondaryname": "#hash_127c91df9b564016",
+                    "secondaryname": "#exp_veh_debris",
                     "assetId": "#exp/distant/small_distant/exp_small_distant_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -30479,7 +30479,7 @@
                 },
                 {
                     "name": "#hash_bbafec33c2adca2",
-                    "secondaryname": "#hash_127c91df9b564016",
+                    "secondaryname": "#exp_veh_debris",
                     "assetId": "#exp/distant/small_distant/exp_small_distant_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -30520,7 +30520,7 @@
                 },
                 {
                     "name": "#hash_bbafec33c2adca2",
-                    "secondaryname": "#hash_127c91df9b564016",
+                    "secondaryname": "#exp_veh_debris",
                     "assetId": "#exp/distant/small_distant/exp_small_distant_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -30561,7 +30561,7 @@
                 },
                 {
                     "name": "#hash_bbafec33c2adca2",
-                    "secondaryname": "#hash_127c91df9b564016",
+                    "secondaryname": "#exp_veh_debris",
                     "assetId": "#exp/distant/small_distant/exp_small_distant_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -30605,13 +30605,13 @@
         {
             "value": 151,
             "next": 65535,
-            "name": "#hash_18181c84e25f4c7c",
+            "name": "#vox_pa_ee_countdown_00",
             "sequence": 0,
             "cullDistance": 5000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_18181c84e25f4c7c",
+                    "name": "#vox_pa_ee_countdown_00",
                     "assetId": "#hash_1fa07f99cf0afa39",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -30654,13 +30654,13 @@
         {
             "value": 50,
             "next": 208,
-            "name": "#hash_18181d84e25f4e2f",
+            "name": "#vox_pa_ee_countdown_01",
             "sequence": 0,
             "cullDistance": 5000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_18181d84e25f4e2f",
+                    "name": "#vox_pa_ee_countdown_01",
                     "assetId": "#hash_3dbcfa4019a72554",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -30703,13 +30703,13 @@
         {
             "value": 157,
             "next": 65535,
-            "name": "#hash_18181e84e25f4fe2",
+            "name": "#vox_pa_ee_countdown_02",
             "sequence": 0,
             "cullDistance": 5000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_18181e84e25f4fe2",
+                    "name": "#vox_pa_ee_countdown_02",
                     "assetId": "#hash_3b8a1cb68f713b6b",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -30752,13 +30752,13 @@
         {
             "value": 220,
             "next": 65535,
-            "name": "#hash_18181f84e25f5195",
+            "name": "#vox_pa_ee_countdown_03",
             "sequence": 0,
             "cullDistance": 5000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_18181f84e25f5195",
+                    "name": "#vox_pa_ee_countdown_03",
                     "assetId": "#hash_40437a1ad3fa5a8e",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -30801,13 +30801,13 @@
         {
             "value": 46,
             "next": 65535,
-            "name": "#hash_18181884e25f45b0",
+            "name": "#vox_pa_ee_countdown_04",
             "sequence": 0,
             "cullDistance": 5000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_18181884e25f45b0",
+                    "name": "#vox_pa_ee_countdown_04",
                     "assetId": "#hash_2b50d47ae5865cd5",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -30850,13 +30850,13 @@
         {
             "value": 34,
             "next": 247,
-            "name": "#hash_18181984e25f4763",
+            "name": "#vox_pa_ee_countdown_05",
             "sequence": 0,
             "cullDistance": 5000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_18181984e25f4763",
+                    "name": "#vox_pa_ee_countdown_05",
                     "assetId": "#hash_5e3dd000413f6020",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -30899,13 +30899,13 @@
         {
             "value": 160,
             "next": 65535,
-            "name": "#hash_18181a84e25f4916",
+            "name": "#vox_pa_ee_countdown_06",
             "sequence": 0,
             "cullDistance": 5000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_18181a84e25f4916",
+                    "name": "#vox_pa_ee_countdown_06",
                     "assetId": "#hash_669a5000059517c7",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -30948,13 +30948,13 @@
         {
             "value": 126,
             "next": 275,
-            "name": "#hash_18181b84e25f4ac9",
+            "name": "#vox_pa_ee_countdown_07",
             "sequence": 0,
             "cullDistance": 5000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_18181b84e25f4ac9",
+                    "name": "#vox_pa_ee_countdown_07",
                     "assetId": "#hash_53f233b155d678aa",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -30997,13 +30997,13 @@
         {
             "value": 134,
             "next": 233,
-            "name": "#hash_18182484e25f5a14",
+            "name": "#vox_pa_ee_countdown_08",
             "sequence": 0,
             "cullDistance": 5000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_18182484e25f5a14",
+                    "name": "#vox_pa_ee_countdown_08",
                     "assetId": "#hash_21435a7150caa501",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -31046,13 +31046,13 @@
         {
             "value": 62,
             "next": 65535,
-            "name": "#hash_18182584e25f5bc7",
+            "name": "#vox_pa_ee_countdown_09",
             "sequence": 0,
             "cullDistance": 5000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_18182584e25f5bc7",
+                    "name": "#vox_pa_ee_countdown_09",
                     "assetId": "#hash_80df6f1505764fc",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -31095,13 +31095,13 @@
         {
             "value": 52,
             "next": 253,
-            "name": "#hash_181ba284e2626605",
+            "name": "#vox_pa_ee_countdown_10",
             "sequence": 0,
             "cullDistance": 5000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_181ba284e2626605",
+                    "name": "#vox_pa_ee_countdown_10",
                     "assetId": "#hash_17be1dde8045b31a",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -31144,13 +31144,13 @@
         {
             "value": 111,
             "next": 200,
-            "name": "#hash_181ba184e2626452",
+            "name": "#vox_pa_ee_countdown_11",
             "sequence": 0,
             "cullDistance": 5000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_181ba184e2626452",
+                    "name": "#vox_pa_ee_countdown_11",
                     "assetId": "#hash_70ebd7a878660777",
                     "assetFileNameSustain": "#mp_nuketown_4.all",
                     "assetIdRelease": "#mp_nuketown_4.all",
@@ -33232,7 +33232,7 @@
             "reverb": "#mp_final_killcam",
             "loop": "#hash_44463359dd025b23",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
+            "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
@@ -33252,8 +33252,8 @@
             "reverb": "#narrow_acduct",
             "loop": "#hash_388cae614e11293",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": false,
@@ -33272,8 +33272,8 @@
             "reverb": "#room_bedroom",
             "loop": "#hash_388cae614e11293",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": false,
@@ -33292,8 +33292,8 @@
             "reverb": "#room_hallway",
             "loop": "#hash_388cae614e11293",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": false,
@@ -33312,8 +33312,8 @@
             "reverb": "#room_livingRoom",
             "loop": "#hash_388cae614e11293",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": false,
@@ -33332,8 +33332,8 @@
             "reverb": "#room_bedroom",
             "loop": "#hash_388cae614e11293",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": false,
@@ -33352,7 +33352,7 @@
             "reverb": "#outdoor_clean",
             "loop": "#hash_5985f471f348c819",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
+            "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
@@ -33372,7 +33372,7 @@
             "reverb": "#room_bedroom",
             "loop": "#hash_5985f471f348c819",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
+            "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
@@ -33392,8 +33392,8 @@
             "reverb": "#room_bedroom",
             "loop": "#hash_388cae614e11293",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": false,
@@ -33412,8 +33412,8 @@
             "reverb": "#narrow_stairwell",
             "loop": "#hash_388cae614e11293",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": false,
@@ -33432,8 +33432,8 @@
             "reverb": "#room_closet",
             "loop": "#hash_388cae614e11293",
             "duckId": "#default",
-            "entityContextType0": "#hash_730721b0b6373e1",
-            "entityContextValue0": "#hash_249092f25acbb312",
+            "entityContextType0": "#ringoff_plr",
+            "entityContextValue0": "#indoor",
             "entityContextType1": "#water",
             "entityContextValue1": "#over",
             "defaultRoom": false,
@@ -33445,9 +33445,9 @@
     ],
     "scriptIdLookups": [],
     "streamKeysSABL": {
-        "streamKey1": "#hash_62cffb36fd9b4854",
+        "streamKey1": "#mp_nuketown_4_all_stream",
         "dataSize1": 4096,
-        "fileKey": "#hash_35bc27cce3d19af1",
+        "fileKey": "#mp_nuketown_4_all_loaded",
         "fileLen": 58417920
     },
     "streamKeysSABS": {

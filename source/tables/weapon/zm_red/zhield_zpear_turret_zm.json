@@ -4,7 +4,7 @@
     "displayname": "#zm_red/shield",
     "altWeapon": "#zhield_zpear_dw_zm",
     "weapon70": "#zhield_zpear_dw",
-    "streamkey": "#hash_3bfcf22c36eaff11",
+    "streamkey": "#zhield_zpear_turret_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -47,7 +47,7 @@
     "sound800": "#hash_21cba6ae89a3493c",
     "sound810": "#hash_21cba6ae89a3493c",
     "tunables1": "#zhield_zpear_turret_tunables_zm",
-    "sharedWeaponSounds": "#hash_7ed5a8a63848a4a8",
+    "sharedWeaponSounds": "#zhield_towers_shield",
     "projectilemodel": "#wpn_t8_zm_red_spear_view",
     "viewmodel": [
         "#hash_2c489f5df61e7807"

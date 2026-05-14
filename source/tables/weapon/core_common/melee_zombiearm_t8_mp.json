@@ -3,7 +3,7 @@
     "baseWeapon": "#melee_zombiearm_t8",
     "displayname": "#weapon/melee_zombiearm_t8",
     "weapon70": "#melee_zombiearm_t8",
-    "streamkey": "#hash_722b75d52db5306b",
+    "streamkey": "#melee_zombiearm_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",

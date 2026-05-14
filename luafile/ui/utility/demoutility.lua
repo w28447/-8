@@ -1655,7 +1655,7 @@ CoD.DemoUtility.BasicDemoShortcutsKBM = {
 	},
 	{
 		models = {
-			text = 0x587488246EAE3C5,
+			text = "demo/jump_forward",
 			keyprompt = "2"
 		}
 	},

@@ -48,7 +48,7 @@ CoD.EmblemEditorPCLegend.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local dropshadow = LUI.UIImage.new( 0, 1, -50, 50, 1, 1, -429.5, -180.5 )
 	dropshadow:setRGB( 0, 0, 0 )
 	dropshadow:setAlpha( 0.8 )
-	dropshadow:setImage( RegisterImage( 0xF8AD9AE7EF787EF ) )
+	dropshadow:setImage( RegisterImage( "uie_dropshadow_9s" ) )
 	dropshadow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	dropshadow:setShaderVector( 0, 0, 0, 0, 0 )
 	dropshadow:setupNineSliceShader( 120, 120 )

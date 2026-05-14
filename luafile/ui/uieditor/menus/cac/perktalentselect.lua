@@ -33,7 +33,7 @@ LUI.createMenu.PerkTalentSelect = function ( f1_arg0, f1_arg1 )
 	self.ItemInfo = ItemInfo
 	
 	local CACHeader = CoD.CACHeader.new( f1_local1, f1_arg0, 0.5, 0.5, -960, 960, 0, 0, 0, 67 )
-	CACHeader.subtitle.StageTitle:setText( LocalizeToUpperString( CoD.CACUtility.GetHeaderNameForLoadoutSlot( self, 0xE2669E63163D964 ) ) )
+	CACHeader.subtitle.StageTitle:setText( LocalizeToUpperString( CoD.CACUtility.GetHeaderNameForLoadoutSlot( self, "menu/perks_caps" ) ) )
 	CACHeader.subtitle.subtitle:setAlpha( 0 )
 	CACHeader:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f2_local0 = model:get()

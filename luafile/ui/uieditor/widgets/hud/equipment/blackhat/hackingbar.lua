@@ -10,7 +10,7 @@ CoD.HackingBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	
 	local BarScanning = LUI.UIImage.new( 0, 0, 0, 88, 0, 0, 0, 164 )
 	BarScanning:setZRot( 180 )
-	BarScanning:setImage( RegisterImage( 0x7B9A25ACFCE156B ) )
+	BarScanning:setImage( RegisterImage( "uie_t7_hud_blackhat_bar_scanning" ) )
 	BarScanning:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	BarScanning:setShaderVector( 0, 1, 0, 0, 0 )
 	BarScanning:setShaderVector( 1, 0, 0, 0, 0 )

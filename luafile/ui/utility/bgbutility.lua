@@ -60,14 +60,14 @@ CoD.BGBUtility.ElixirToEnumGameSettingsHash = {
 }
 CoD.BGBUtility.ElixirToBooleanGameSettingsHash = {
 	[0xFD9EDD393FF4F8E] = {
-		0x4006DAC21EA0736
+		"zmelixiralwaysdoneswiftly"
 	},
 	[0xD8BD1B24A9B47B] = {
 		0x230EF2B089AAD7F
 	},
-	[0xC763205EFEC59BD] = {
+	["zm_bgb_arsenal_accelerator"] = {
 		0xCE5566DDE9ED686,
-		0xB066C34278E6394
+		"zmspecweaponisenabled"
 	},
 	[0xFE8B03A7EA470C2] = {
 		0xA534A2A0F3EEDD3
@@ -78,7 +78,7 @@ CoD.BGBUtility.ElixirToBooleanGameSettingsHash = {
 	[0x347CB0CB814CCA8] = {
 		0xF82E568F5E2C04F
 	},
-	[0xBEB425CD6F858A2] = {
+	["zm_bgb_now_you_see_me"] = {
 		0xA8EE5887F138E39
 	},
 	[0xA5F7D0F1A62B2F7] = {
@@ -99,7 +99,7 @@ CoD.BGBUtility.ElixirToBooleanGameSettingsHash = {
 		0x16DB8C2D7FCACFB
 	},
 	[0x22BD6CA7FF53DEE] = {
-		0x14AA3CB07D2C0DB,
+		"zmelixirtemporalgift",
 		0x98A7F96C03E4B77
 	},
 	[0x77EA318753F5418] = {
@@ -110,7 +110,7 @@ CoD.BGBUtility.ElixirToBooleanGameSettingsHash = {
 	[0x6C1AB5011A1A011] = {
 		0xAFF42262B4EEE32
 	},
-	[0xD4F013AD65B6E27] = {
+	["zm_bgb_sword_flay"] = {
 		0xA7BD9C02B9FCE98,
 		0x16DB8C2D7FCACFB
 	},
@@ -130,33 +130,33 @@ CoD.BGBUtility.ElixirToBooleanGameSettingsHash = {
 	},
 	[0x9627DB608C66755] = {
 		0x16D4768994B25A5,
-		0x1F07A0F9F9155F1,
+		"zmpowerupdouble",
 		0x98A7F96C03E4B77
 	},
 	[0xFE59430E1D71B6C] = {
 		0x6468DE196046E72
 	},
 	[0x458181EB9DBDE8B] = {
-		0xDDF4EED89A60B8E,
+		"zmelixirextracredit",
 		0xBF54DA23EF8887B,
 		0x98A7F96C03E4B77
 	},
-	[0xAB718D345FF910] = {
-		0x72581CAB09B5C9F,
+	["zm_bgb_kill_joy"] = {
+		"zmelixirkilljoy",
 		0xD385A15A00AD7F7,
 		0x98A7F96C03E4B77
 	},
-	[0x2DA92422E3EA7D1] = {
+	["zm_bgb_soda_fountain"] = {
 		0xD1FB9161DDDF722,
 		0xD18F84F48BD5D1F
 	},
 	[0x953696819BF1875] = {
 		0xA779251EF8C8568
 	},
-	[0xB69B008E289DED4] = {
+	["zm_bgb_free_fire"] = {
 		0xAE3C77E1EBDC90D
 	},
-	[0x9FFE1C3C96379] = {
+	["zm_bgb_cache_back"] = {
 		0x60C19249D1B9390,
 		0xB6F66A1418EE8EC,
 		0x98A7F96C03E4B77
@@ -171,18 +171,18 @@ CoD.BGBUtility.ElixirToBooleanGameSettingsHash = {
 	},
 	[0xE31B245BDE5C7FC] = {
 		0xDD3D19705899DBD,
-		0xB066C34278E6394,
+		"zmspecweaponisenabled",
 		0xB69E8F8CBC6A4FF,
 		0x98A7F96C03E4B77
 	},
 	[0x4496E1B656C6651] = {
 		0xE84A4012DDF8A24
 	},
-	[0xD13857AEB37FE53] = {
+	["zm_bgb_near_death_experience"] = {
 		0x7FF67C16576E231
 	},
 	[0x913B5E2900CDF3F] = {
-		0x6DF1564C342C831,
+		"zmelixirperkaholic",
 		0xD18F84F48BD5D1F
 	},
 	[0x3884A663FDDDBE3] = {
@@ -190,19 +190,19 @@ CoD.BGBUtility.ElixirToBooleanGameSettingsHash = {
 		0x1A2CF319E12D9AE
 	},
 	[0xC80DF83E002A4D6] = {
-		0xA0DB64BB19E18AF
+		"zmelixirantientrapment"
 	},
 	[0x8932D2054C58CD0] = {
 		0xA9E56AE10CF58C9,
 		0x5A1298089D361F1
 	},
-	[0x7822C558A509DE9] = {
-		0x792079610DFAC24
+	["zm_bgb_head_scan"] = {
+		"zmelixirheadscan"
 	},
 	[0x9376AB9D627E38A] = {
 		0xE98C2376CACD382
 	},
-	[0xA303F67AFD6F4A8] = {
+	["zm_bgb_nowhere_but_there"] = {
 		0xB83ACFD4B361E44
 	},
 	[0x60CA45C0A2DAEF2] = {
@@ -224,8 +224,8 @@ CoD.BGBUtility.ElixirToBooleanGameSettingsHash = {
 		0x48716023024B395,
 		0x98A7F96C03E4B77
 	},
-	[0x242C2A18CEA5E1] = {
-		0xEEF480BD7662082
+	["zm_bgb_refresh_mint"] = {
+		"zmelixirrefreshmint"
 	},
 	[0xFD8F0866DBEDA28] = {
 		0x6436F50FAF41689
@@ -245,14 +245,14 @@ CoD.BGBUtility.ElixirToBooleanGameSettingsHash = {
 	[0x2E9E5C5026C2620] = {
 		0xBEC3890EA83D709
 	},
-	[0xD13857AEB37FE53] = {
+	["zm_bgb_near_death_experience"] = {
 		0x7FF67C16576E231
 	},
 	[0x98BD245E259C64F] = {
-		0xB0BEFCBAC8AEDE6,
+		"zmelixirreigndrops",
 		0x98A7F96C03E4B77
 	},
-	[0x7FB40C4D855E7AF] = {
+	["zm_bgb_head_drama"] = {
 		0x5AABD057794561C
 	},
 	[0xEBE3A344FB54080] = {

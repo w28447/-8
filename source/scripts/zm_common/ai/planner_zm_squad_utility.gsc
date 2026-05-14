@@ -1327,9 +1327,9 @@ function private function_8030d0d2( planner, params )
         
         while ( true )
         {
-            if ( getdvarint( #"hash_43057e52c6abc0a", 0 ) )
+            if ( getdvarint( #"debug_zm_blockers", 0 ) )
             {
-                function_8f74831a();
+                debug_zm_blockers();
             }
             
             if ( getdvarint( #"debug_zm_wallbuys", 0 ) )
@@ -1345,7 +1345,7 @@ function private function_8030d0d2( planner, params )
     // Params 0
     // Checksum 0x6611f0f4, Offset: 0x49b0
     // Size: 0x54, Type: dev
-    function function_8f74831a()
+    function debug_zm_blockers()
     {
         if ( !isdefined( level.var_257aa6d4 ) )
         {

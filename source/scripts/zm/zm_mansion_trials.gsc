@@ -1,4 +1,4 @@
-#using script_27561a336793031c;
+#using scripts\zm_common\trials\zm_trial_mansion_nosferatu_bite.gsc;
 #using script_30ba61ad5559c51d;
 #using script_5ee794294780ac28;
 #using script_717fd517896b8f30;

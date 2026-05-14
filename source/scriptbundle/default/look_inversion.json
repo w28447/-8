@@ -1,7 +1,7 @@
 {
     "options": [
         {
-            "label": "localized17#hash_49b77bd0a4122a0",
+            "label": "localized17#menu/not_inverted",
             "value": "0"
         },
         {
@@ -11,7 +11,7 @@
     ],
     "hash_dfedf08e": 0,
     "categoryindex": 0,
-    "description": "localized17#hash_15094916b17a28ae",
+    "description": "localized17#menu/look_inversion_desc",
     "menu/on": "localized17#menu/on",
     "hash_10e01ad5": 1,
     "iscategory": 0,

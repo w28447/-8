@@ -86,13 +86,13 @@
 #wolf_head,#feed_first,#vox_wolf_head_feed_first,0,0,FALSE,FALSE,FALSE,FALSE
 #zmb_blood,#pickup,#vox_zmb_blood_pickup,0,0,FALSE,FALSE,FALSE,FALSE
 #m_quest,#attic_react,#vox_m_quest_attic_react,0,0,FALSE,FALSE,FALSE,FALSE
-#m_quest,#hash_6a0e4f34de571bc2,#hash_7cf068b4ca0db57b,0,0,FALSE,FALSE,FALSE,FALSE
-#m_quest,#banjo_pickup,#hash_420cd62afa5f7e5f,0,0,FALSE,FALSE,FALSE,FALSE
+#m_quest,#banjo_down,#vox_m_quest_banjo_down,0,0,FALSE,FALSE,FALSE,FALSE
+#m_quest,#banjo_pickup,#vox_m_quest_banjo_pickup,0,0,FALSE,FALSE,FALSE,FALSE
 #m_quest,#boat_react,#vox_m_quest_boat_react,0,0,FALSE,FALSE,FALSE,FALSE
 #m_quest,#bout_react,#vox_m_quest_bout_react,0,0,FALSE,FALSE,FALSE,FALSE
 #m_quest,#hash_169bdb4f20c19f6a,#hash_69e992122611c96f,0,0,FALSE,FALSE,FALSE,FALSE
 #m_quest,#ghost_docks,#vox_m_quest_ghost_docks,0,0,FALSE,FALSE,FALSE,FALSE
-#m_quest,#ghost_Indu,#hash_58698646dc41b7cc,0,0,FALSE,FALSE,FALSE,FALSE
+#m_quest,#ghost_Indu,#vox_m_quest_ghost_Indu,0,0,FALSE,FALSE,FALSE,FALSE
 #m_quest,#ghost_power,#vox_m_quest_ghost_power,0,0,FALSE,FALSE,FALSE,FALSE
 #m_quest,#ghost_gone,#vox_m_quest_ghost_gone,0,0,FALSE,FALSE,FALSE,FALSE
 #m_quest,#ghost_murder,#vox_m_quest_ghost_murder,0,0,FALSE,FALSE,FALSE,FALSE
@@ -109,7 +109,7 @@
 #m_quest,#light_react,#vox_m_quest_light_react,0,0,FALSE,FALSE,FALSE,FALSE
 #m_quest,#hash_4f8bc81ebbd44e24,#hash_7157050e2f2429db,0,0,FALSE,FALSE,FALSE,FALSE
 #m_quest,#hash_78ea08235b9ab986,#hash_449831e8d03243ab,0,0,FALSE,FALSE,FALSE,FALSE
-#m_quest,#hash_1049fe312cd9fe48,#hash_744ecba5e638fd81,0,0,FALSE,FALSE,FALSE,FALSE
+#m_quest,#prim_win,#vox_m_quest_prim_win,0,0,FALSE,FALSE,FALSE,FALSE
 #m_quest,#hash_3628ca4fb470947e,#hash_7ece3932c57d8fad,0,0,FALSE,FALSE,FALSE,FALSE
 #m_quest,#ward_stun,#vox_m_quest_ward_stun,0,0,FALSE,FALSE,FALSE,FALSE
 #shield_piece,#pickup,#vox_pickup_generic,0,0,FALSE,FALSE,FALSE,FALSE

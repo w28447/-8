@@ -94,7 +94,7 @@ CoD.EmblemDrawWidgetNew.new = function ( f2_arg0, f2_arg1, f2_arg2, f2_arg3, f2_
 	local FrontendFocusPip = LUI.UIImage.new( 0, 1, -7, 7, 0, 1, -7, 7 )
 	FrontendFocusPip:setAlpha( 0 )
 	FrontendFocusPip:setScale( 1.06, 1.06 )
-	FrontendFocusPip:setImage( RegisterImage( 0x793C73633F620BB ) )
+	FrontendFocusPip:setImage( RegisterImage( "uie_ui_menu_store_focus_pips" ) )
 	FrontendFocusPip:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FrontendFocusPip:setShaderVector( 0, 0, 0, 0, 0 )
 	FrontendFocusPip:setupNineSliceShader( 52, 52 )

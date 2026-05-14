@@ -93,7 +93,7 @@ CoD.AARNemesis.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	self.TopBarRight01 = TopBarRight01
 	
 	local NemesisLabel = LUI.UIText.new( 0, 0, 7, 207, 0, 0, -27, -5 )
-	NemesisLabel:setText( Engine[0xF9F1239CFD921FE]( 0xFAD031D22FA608C ) )
+	NemesisLabel:setText( Engine[0xF9F1239CFD921FE]( "aar/nemesis" ) )
 	NemesisLabel:setTTF( "ttmussels_demibold" )
 	NemesisLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	NemesisLabel:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -129,7 +129,7 @@ CoD.AARNemesis.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	
 	local arrow = LUI.UIImage.new( 0, 0, -30, 2, 0, 0, 14, 46 )
 	arrow:setRGB( ColorSet.EnemyOrange.r, ColorSet.EnemyOrange.g, ColorSet.EnemyOrange.b )
-	arrow:setImage( RegisterImage( 0x3E7760566946173 ) )
+	arrow:setImage( RegisterImage( "uie_ui_menu_aar_nemesis_arrow" ) )
 	self:addElement( arrow )
 	self.arrow = arrow
 	

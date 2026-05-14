@@ -26,7 +26,7 @@ CoD.WarzoneInventoryHintItems.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local backingImage2 = LUI.UIImage.new( 0.5, 0.5, -32, 32, 0.5, 0.5, -32, 32 )
 	backingImage2:setRGB( 0, 0, 0 )
 	backingImage2:setAlpha( 0.9 )
-	backingImage2:setImage( RegisterImage( 0x30BBCD6E666199B ) )
+	backingImage2:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_qe_dpad_backer" ) )
 	self:addElement( backingImage2 )
 	self.backingImage2 = backingImage2
 	

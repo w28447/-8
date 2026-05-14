@@ -11,12 +11,12 @@ CoD.Target.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5
 	local timerbgshadow = LUI.UIImage.new( 0.5, 0.5, -175, 203, 0.5, 0.5, -152, 136 )
 	timerbgshadow:setRGB( 0, 0, 0 )
 	timerbgshadow:setAlpha( 0.8 )
-	timerbgshadow:setImage( RegisterImage( 0x19AABF619BA81F ) )
+	timerbgshadow:setImage( RegisterImage( "uie_t7_hud_rocketlauncher_timer" ) )
 	self:addElement( timerbgshadow )
 	self.timerbgshadow = timerbgshadow
 	
 	local timerbg = LUI.UIImage.new( 0.5, 0.5, -175, 203, 0.5, 0.5, -152, 136 )
-	timerbg:setImage( RegisterImage( 0x19AABF619BA81F ) )
+	timerbg:setImage( RegisterImage( "uie_t7_hud_rocketlauncher_timer" ) )
 	self:addElement( timerbg )
 	self.timerbg = timerbg
 	

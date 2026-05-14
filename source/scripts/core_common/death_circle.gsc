@@ -72,7 +72,7 @@ function init()
 // Size: 0x2a8
 function function_5e412e4a( var_ae6c2bbe )
 {
-    function_d81873aa( isdefined( var_ae6c2bbe.var_64232072 ) ? var_ae6c2bbe.var_64232072 : 1 );
+    function_d81873aa( isdefined( var_ae6c2bbe.initialcircledelay ) ? var_ae6c2bbe.initialcircledelay : 1 );
     level.var_cb3d0e42 = isdefined( var_ae6c2bbe.var_8d8aa969 ) ? var_ae6c2bbe.var_8d8aa969 : 0;
     level.var_672f2d98 = isdefined( var_ae6c2bbe.var_672f2d98 ) ? var_ae6c2bbe.var_672f2d98 : 0;
     function_114f128a( isdefined( var_ae6c2bbe.endgamedelay ) ? var_ae6c2bbe.endgamedelay : 0 );
@@ -396,11 +396,11 @@ function function_b57e3cde( enabled )
 {
     if ( enabled )
     {
-        self flagsys::set( #"hash_3bd867e0639cb28e" );
+        self flagsys::set( #"death_circle_immune" );
         return;
     }
     
-    self flagsys::clear( #"hash_3bd867e0639cb28e" );
+    self flagsys::clear( #"death_circle_immune" );
 }
 
 // Namespace death_circle/death_circle
@@ -409,7 +409,7 @@ function function_b57e3cde( enabled )
 // Size: 0x22
 function function_dca12a73()
 {
-    return flagsys::get( #"hash_3bd867e0639cb28e" );
+    return flagsys::get( #"death_circle_immune" );
 }
 
 // Namespace death_circle/death_circle
@@ -449,7 +449,7 @@ function private function_a1dbce4a()
 // Size: 0xc7c
 function start()
 {
-    level endoncallback( &cleanup_circle, #"game_ended", #"hash_12a8f2c59a67e4fc" );
+    level endoncallback( &cleanup_circle, #"game_ended", #"death_circle_clear" );
     
     if ( !level.var_d8958e58 || level.deathcircles.size <= 0 )
     {
@@ -481,8 +481,8 @@ function start()
     level thread function_dc15ad60();
     circle = undefined;
     var_9275bfa4 = undefined;
-    level flagsys::set( #"hash_405e46788e83af41" );
-    level callback::callback( #"hash_405e46788e83af41" );
+    level flagsys::set( #"death_circle_start" );
+    level callback::callback( #"death_circle_start" );
     level.var_74887eb = level.deathcircles.size;
     
     if ( util::get_game_type() == #"warzone_bigteam_dbno_quad" )
@@ -510,7 +510,7 @@ function start()
         
         if ( isdefined( nextcircle ) )
         {
-            level notify( #"hash_1ff3496c9049969" );
+            level notify( #"death_circle_changed" );
             var_7791d394 = nextcircle;
             
             if ( isdefined( getgametypesetting( #"hash_21ab1ca7e18bddcd" ) ) && getgametypesetting( #"hash_21ab1ca7e18bddcd" ) )
@@ -593,7 +593,7 @@ function start()
         }
         
         level.var_78442886 = i;
-        level callback::callback( #"hash_3057417db7f8acdd" );
+        level callback::callback( #"death_circle_moving" );
         
         if ( isdefined( nextcircle ) )
         {
@@ -605,7 +605,7 @@ function start()
         }
         
         level clientfield::set_world_uimodel( "hudItems.warzone.collapseTimerState", 0 );
-        level callback::callback( #"hash_7912e21750e4010d" );
+        level callback::callback( #"death_circle_locked" );
     }
     
     if ( level.deathcircle.radius <= 0 )
@@ -717,7 +717,7 @@ function private countdown( waitsec, circleindex, nextcircle )
 // Size: 0x286
 function private function_9229c3b3( scalesec, newradius, neworigin )
 {
-    level endon( #"game_ended", #"hash_12a8f2c59a67e4fc", #"hash_6adadb0779eac3c6" );
+    level endon( #"game_ended", #"death_circle_clear", #"sr_next_death_circle" );
     
     if ( scalesec <= 0 )
     {
@@ -826,7 +826,7 @@ function function_a086017a( point )
 // Size: 0x78e
 function private function_dc15ad60()
 {
-    level endoncallback( &cleanup_feedback, #"game_ended", #"hash_12a8f2c59a67e4fc" );
+    level endoncallback( &cleanup_feedback, #"game_ended", #"death_circle_clear" );
     
     while ( !isdefined( level.deathcircle ) )
     {
@@ -1257,7 +1257,7 @@ function function_4dc40125()
     // Size: 0x4c, Type: dev
     function private devgui_clear()
     {
-        level notify( #"hash_12a8f2c59a67e4fc" );
+        level notify( #"death_circle_clear" );
         
         if ( isdefined( level.deathcircle ) )
         {
@@ -1278,7 +1278,7 @@ function function_4dc40125()
             if ( getdvarint( #"deathcircle_debug", 0 ) )
             {
                 var_36b41a8 = getdvarint( #"hash_411ea20c685d88c1", 1 );
-                debugindex = getdvarint( #"hash_31a5138991bbbf63", -1 );
+                debugindex = getdvarint( #"deathcircle_debugindex", -1 );
                 var_a15ea324 = getdvarint( #"hash_118a6d37e5aa4589", 0 );
                 maxindex = level.deathcircles.size - 1;
                 
@@ -1370,9 +1370,9 @@ function function_4dc40125()
         {
             level.deathcircles = [];
             level.var_a425ed89 = 0;
-            centerstr = getdvarstring( #"hash_76b26d6e696b82e8", "<dev string:x519>" );
+            centerstr = getdvarstring( #"testcirclecenter", "<dev string:x519>" );
             damage = getdvarint( #"testcircledamage", 0 );
-            damageinterval = getdvarint( #"hash_700ae39acbcd84e5", 60 );
+            damageinterval = getdvarint( #"testcircledamageinterval", 60 );
             waitsec = getdvarint( #"hash_5779bb38cf5f61a9", 36000 );
             scalesec = getdvarint( #"hash_537f05a2ad3b9d7a", 60 );
             intensity = getdvarint( #"hash_16271dbe4d00b41e", 1 );

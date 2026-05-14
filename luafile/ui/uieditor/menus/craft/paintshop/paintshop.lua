@@ -67,7 +67,7 @@ LUI.createMenu.Paintshop = function ( f1_arg0, f1_arg1 )
 	self.paintjobSelector = paintjobSelector
 	
 	local MenuFrame = CoD.GenericMenuFrame.new( f1_local1, f1_arg0, 0, 1, 0, 0, 0, 1, 0, 0 )
-	MenuFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0xD5133E81D776975 ) )
+	MenuFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "mpui/paintjobs" ) )
 	MenuFrame:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f4_local0 = model:get()
 		if f4_local0 ~= nil then

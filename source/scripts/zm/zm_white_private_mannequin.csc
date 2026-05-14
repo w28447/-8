@@ -18,7 +18,7 @@ function autoexec __init__system__()
 // Size: 0x5c
 function __init__()
 {
-    clientfield::register( "world", "" + #"hash_681de2aa531ffcd0", 20000, 1, "int", &function_a1ee0828, 0, 0 );
+    clientfield::register( "world", "" + #"mannequin_force_stream", 20000, 1, "int", &mannequin_force_stream, 0, 0 );
 }
 
 // Namespace zm_white_private_mannequin/zm_white_private_mannequin
@@ -34,7 +34,7 @@ function __main__()
 // Params 7
 // Checksum 0xc41fb4c9, Offset: 0x188
 // Size: 0x7c
-function function_a1ee0828( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function mannequin_force_stream( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( newval )
     {

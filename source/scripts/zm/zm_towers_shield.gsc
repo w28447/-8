@@ -204,7 +204,7 @@ function function_28f576a9( player )
             return;
         }
         
-        self.hint_string = #"hash_53fd856df9288be7";
+        self.hint_string = #"zombie/build_piece_have_one";
         self.cost = undefined;
         return 1;
     }
@@ -949,7 +949,7 @@ function function_4e59dd4b()
 // Size: 0xe4
 function function_4284585f( b_skipped = 0 )
 {
-    level endon( #"end_game", #"hash_4a06aa98c6c7b671" );
+    level endon( #"end_game", #"boss_battle_started" );
     self endon( #"disconnect" );
     
     if ( b_skipped )

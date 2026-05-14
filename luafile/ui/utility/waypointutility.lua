@@ -19,7 +19,7 @@ CoD.WaypointUtility.IsObjectiveRequirementLabelHidden = function ( f1_arg0, f1_a
 end
 
 CoD.WaypointUtility.ShouldShowWaypointFrame = function ( f2_arg0, f2_arg1 )
-	if f2_arg1.objective[0xC89FB9D9D1E0F33] == 1 or f2_arg1.objective[0xE614D1FE7F77CDF] == 1 then
+	if f2_arg1.objective["nevershowprogress"] == 1 or f2_arg1.objective[0xE614D1FE7F77CDF] == 1 then
 		return false
 	end
 	local f2_local0 = Engine.GetTeamID( f2_arg0, Engine.GetPredictedClientNum( f2_arg0 ) )
@@ -102,7 +102,7 @@ CoD.WaypointUtility.ShouldShowWaypointAsPulsing = function ( f8_arg0, f8_arg1 )
 		if f8_local1 == 0 then
 			return false
 		elseif f8_local0.objective[0xEFFC4867F3CA257] == 1 then
-			local f8_local2 = f8_local0.objective[0x74BD46E9CEA006]
+			local f8_local2 = f8_local0.objective["progresssegmentcount"]
 			for f8_local3 = 1, f8_local2 - 1, 1 do
 				if f8_local1 == f8_local3 / f8_local2 then
 					return false
@@ -138,7 +138,7 @@ CoD.WaypointUtility.ShouldShowProgressOnIcon = function ( f10_arg0, f10_arg1 )
 		local f10_local3 = CoD.HUDUtility.GetCachedObjective( Engine.GetObjectiveName( f10_arg0, f10_local2 ) )
 		local f10_local4 = f10_local3
 		local f10_local5
-		if f10_local3[0xC89FB9D9D1E0F33] ~= 0 or f10_local3[0xE614D1FE7F77CDF] ~= 1 then
+		if f10_local3["nevershowprogress"] ~= 0 or f10_local3[0xE614D1FE7F77CDF] ~= 1 then
 			f10_local5 = false
 		else
 			f10_local5 = f10_local4 and true
@@ -178,7 +178,7 @@ CoD.WaypointUtility.ShouldShowPulsingProgressOnIcon = function ( f12_arg0, f12_a
 	end
 	if f12_local2 then
 		local f12_local3 = CoD.HUDUtility.GetCachedObjective( Engine.GetObjectiveName( f12_arg0, f12_local2 ) )
-		if f12_local3 and f12_local3[0xC89FB9D9D1E0F33] == 0 and f12_local3[0xE614D1FE7F77CDF] == 1 and f12_local3[0x254042508436EDA] == 1 then
+		if f12_local3 and f12_local3["nevershowprogress"] == 0 and f12_local3[0xE614D1FE7F77CDF] == 1 and f12_local3["showlowprogresspulse"] == 1 then
 			local f12_local4 = f12_local0.progress and f12_local0.progress:get() or 0
 			if f12_local4 > 0 then
 				return f12_local4 < f12_local3[0xD21C49136F5621B]
@@ -232,7 +232,7 @@ end
 CoD.WaypointUtility.SetProgressMeterSegmentationIfNeeded = function ( f16_arg0, f16_arg1, f16_arg2 )
 	local f16_local0 = CoD.HUDUtility.GetCachedObjective( Engine.GetObjectiveName( f16_arg0, f16_arg2 ) )
 	if f16_local0 and f16_local0[0xEFFC4867F3CA257] == 1 then
-		return f16_local0[0x74BD46E9CEA006], f16_arg1, 1, 0
+		return f16_local0["progresssegmentcount"], f16_arg1, 1, 0
 	else
 		return 0, 0, 0, 0
 	end

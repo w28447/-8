@@ -64,7 +64,7 @@ CoD.EmblemGradientColorButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.color = color
 	
 	local noColorImage = LUI.UIImage.new( 0, 0, 5, 376, 0, 0, 5, 43 )
-	noColorImage:setImage( RegisterImage( 0xAA36FFF196656AF ) )
+	noColorImage:setImage( RegisterImage( "uie_t7_menu_paintshop_transparent_hori" ) )
 	noColorImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6E9593DF28749F2 ) )
 	noColorImage:setShaderVector( 0, 4, 1, 0, 0 )
 	noColorImage:setShaderVector( 1, 0, 1, 0, 1 )

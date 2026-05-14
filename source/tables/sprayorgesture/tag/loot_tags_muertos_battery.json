@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_muertos_battery",
+    "type": "#tag",
+    "material": "#hash_5f2f26fd475ca0ad",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#tags/muertos_battery",
+        "icon": "image#loot_ui_icon_tags_muertos_battery",
+        "isdefault": 0
+    }
+}

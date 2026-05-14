@@ -4,7 +4,7 @@
     "displayname": "#weapon/shotgun_pump_t8",
     "xhash_60": "#hash_59e7a29ac1b1baf8",
     "weapon70": "#shotgun_pump_t8",
-    "streamkey": "#hash_700f37c8d726e83",
+    "streamkey": "#shotgun_pump_t8_soundbank",
     "scrstr_8c8": [
         "tag_side_strap_2",
         "tag_side_rail",
@@ -107,8 +107,8 @@
     "fx_c88": "#hash_68c03a568bff9252",
     "fx_c90": "#hash_68c03a568bff9252",
     "fx_c98": "#hash_68c03a568bff9252",
-    "normalImpactFX": "#hash_732fd0b76ec30328",
+    "normalImpactFX": "#shotgun_enter",
     "exitImpactFX": "#shotgun_exit",
-    "normalImpactSounds": "#hash_415fba9edcdfd2e4",
+    "normalImpactSounds": "#shotgun_impact",
     "exitImpactSounds": "#shotgun_exit"
 }

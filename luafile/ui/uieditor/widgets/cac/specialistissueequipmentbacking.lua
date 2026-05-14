@@ -17,7 +17,7 @@ CoD.SpecialistIssueEquipmentBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local BGBox = LUI.UIImage.new( 0, 1, 2, -2, 0, 1, 4, -4 )
 	BGBox:setAlpha( 0.6 )
-	BGBox:setImage( RegisterImage( 0x964976BCDBC131D ) )
+	BGBox:setImage( RegisterImage( "uie_ui_menu_cac_preview_class_bg_main" ) )
 	BGBox:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	BGBox:setShaderVector( 0, 0, 0, 0, 0 )
 	BGBox:setupNineSliceShader( 60, 44 )

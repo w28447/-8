@@ -7,7 +7,7 @@
             "ksaltweapon": "weapon#remote_missile_bomblet_mp"
         },
         {
-            "ksaltweapon": "weapon#hash_5ae515e967c2a10e"
+            "ksaltweapon": "weapon#remote_missile_mini_mp"
         }
     ],
     "ksbladeendspreadradius": 1,
@@ -16,7 +16,7 @@
     "ksshutdownonexit": 1,
     "hash_f5871fe4": "requestfutzremotemissile",
     "hash_fd663ee0": "duration:0",
-    "hash_5ff6323be2fa24ee:hash_6417048f": "localized17#hash_5ff6323be2fa24ee",
+    "killstreak/remote_missile_hacked:hash_6417048f": "localized17#killstreak/remote_missile_hacked",
     "ksburstfiremaxtime": 1.5,
     "ksburstfiredelaymintime": 0.5,
     "ksammostationclipsperresupply": 2,
@@ -40,7 +40,7 @@
     "hash_7742570a": "enemyremotemissilemultiple",
     "hash_cbe1e532": 1,
     "hash_2451b1f2": "enemyremotemissile",
-    "hash_3f750164757cd400:hash_502a0e23": "localized17#hash_3f750164757cd400",
+    "killstreak/remote_missile_not_usable:hash_502a0e23": "localized17#killstreak/remote_missile_not_usable",
     "kshero_gravityspikes": 1,
     "hash_dabf2484": 200,
     "kstime": "duration:0",
@@ -64,7 +64,7 @@
     "kshero_lightninggun": 1,
     "type": "killstreak",
     "ksarmorregenradius": 120,
-    "hash_51d92d65ecfa1d5f:hash_3211a185": "localized17#hash_51d92d65ecfa1d5f",
+    "killstreak/remote_missile_not_available:hash_3211a185": "localized17#killstreak/remote_missile_not_available",
     "hash_65d707d0": 1,
     "hash_7e0c13ac296abedd:hash_1d2a2ca4": "localized17#hash_7e0c13ac296abedd",
     "hash_7a502c34": "enemyremotemissilehacked",
@@ -89,7 +89,7 @@
     "hash_676a4c7": 1,
     "vmtype": "both",
     "ksdartacceleration": 35,
-    "hash_449c4ddbe0b71c11:hash_b45be9e6": "localized17#hash_449c4ddbe0b71c11",
+    "killstreak/earned_remote_missile:hash_b45be9e6": "localized17#killstreak/earned_remote_missile",
     "hash_2d890f85": 2,
     "ksshotgunenergytokill": 1,
     "hash_dff95af": 300,
@@ -167,7 +167,7 @@
     "ksexplosionouterradius": 200,
     "hash_f936eadc": 300,
     "hash_e7b30a9a": "remotemissiledialogbundle",
-    "hash_6e6eaa0f0e84412f:hash_667c638e": "localized17#hash_6e6eaa0f0e84412f",
+    "killstreak/remote_missile_inbound:hash_667c638e": "localized17#killstreak/remote_missile_inbound",
     "fxvalidlocation": "fx#killstreaks/fx_air_drop_marker_gold",
     "kshero_firefly_swarm": 1,
     "ksshotgunmultiplier": 2,

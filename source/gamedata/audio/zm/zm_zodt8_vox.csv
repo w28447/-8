@@ -17,8 +17,8 @@
 #skeleton_car,#react,#hash_343dcff882d17158,0,0,TRUE,FALSE,FALSE,FALSE
 #car,#crash,#vox_car_crash,0,0,TRUE,FALSE,FALSE,FALSE
 #shield_upgrade,#pick_up,#vox_shield_upgrade_pick_up,0,0,TRUE,FALSE,FALSE,FALSE
-#hash_68677a02650cad00,#correct_tune,#hash_601ec53cfedc8eba,0,0,TRUE,FALSE,FALSE,FALSE
-#hash_68677a02650cad00,#wrong_tune,#hash_8ad27c9e81fdd9b,0,0,TRUE,FALSE,FALSE,FALSE
+#skull_singers,#correct_tune,#vox_skull_singers_correct_tune,0,0,TRUE,FALSE,FALSE,FALSE
+#skull_singers,#wrong_tune,#vox_skull_singers_wrong_tune,0,0,TRUE,FALSE,FALSE,FALSE
 #engine_room,#alarm,#vox_engine_room_alarm,0,0,TRUE,FALSE,FALSE,FALSE
 #fireworks,#react,#vox_fireworks_react,0,0,TRUE,FALSE,FALSE,FALSE
 #vomit_knife,#mod_react,#vox_vomit_knife_mod_react,0,0,TRUE,FALSE,FALSE,FALSE
@@ -31,7 +31,7 @@
 #distillation_kit,#build,#vox_distillation_kit_build,0,0,TRUE,FALSE,FALSE,FALSE
 #fast_travel,#end,#vox_fast_travel_end,50,0,FALSE,TRUE,FALSE,FALSE
 #component_pickup,#hash_d2d731e2804301b,#hash_4a69ee1b53bfa83d,0,0,TRUE,FALSE,FALSE,FALSE
-#component_pickup,#hash_4223e614aaaeb5be,#hash_1778cc9d8b022754,0,0,TRUE,FALSE,FALSE,FALSE
+#component_pickup,#onion_swan,#vox_onion_swan_pick_up,0,0,TRUE,FALSE,FALSE,FALSE
 #component_pickup,#condenser_coil,#vox_condenser_coil_pick_up,0,0,TRUE,FALSE,FALSE,FALSE
 #pickup_catalyst,#decay,#hash_2a968fd7c4d7bda4,0,0,TRUE,FALSE,FALSE,FALSE
 #pickup_catalyst,#purity,#hash_e6ba7a4924b31ab,0,0,TRUE,FALSE,FALSE,FALSE
@@ -50,7 +50,7 @@
 #m_quest,#cat_sentinel,#vox_m_quest_cat_sentinel,0,0,TRUE,FALSE,FALSE,FALSE
 #m_quest,#hash_d70e28ab6ed340e,#hash_6a413b4d74b92971,0,0,TRUE,FALSE,FALSE,FALSE
 #m_quest,#sentinel_artifact,#vox_m_quest_sentinel_artifact,0,0,TRUE,FALSE,FALSE,FALSE
-#m_quest,#hash_7ccac254437d97c2,#hash_61094d6f2ad53949,0,0,TRUE,FALSE,FALSE,FALSE
+#m_quest,#orrery_interact_first,#vox_m_quest_orrery_interact_first,0,0,TRUE,FALSE,FALSE,FALSE
 #m_quest,#hash_45e36c01ad8ad25c,#hash_7ce167d241020437,0,0,TRUE,FALSE,FALSE,FALSE
 #m_quest,#hash_75e9e3640a38273,#hash_23be102927fbcf96,0,0,TRUE,FALSE,FALSE,FALSE
 #m_quest,#ambient_change,#vox_m_quest_ambient_change,0,0,TRUE,FALSE,FALSE,FALSE

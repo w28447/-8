@@ -1,4 +1,4 @@
-#using script_2f9a68261f6a17be;
+#using scripts\zm_common\trials\zm_trial_trap_kills_only.gsc;
 #using script_6951ea86fdae9ae0;
 #using scripts\core_common\ai\zombie_utility;
 #using scripts\core_common\ai_shared;
@@ -90,7 +90,7 @@ function function_1781c013()
 // Size: 0x44
 function function_5ba17a72()
 {
-    clientfield::register( "allplayers", "" + #"hash_7b8ad0ed3ef67813", 1, 1, "counter" );
+    clientfield::register( "allplayers", "" + #"perk_slider_explosion", 1, 1, "counter" );
 }
 
 // Namespace zm_perk_slider/zm_perk_slider
@@ -140,7 +140,7 @@ function function_1d4d3034()
 // Size: 0xac
 function function_ae56fb1a( b_pause, str_perk, str_result, n_slot )
 {
-    self notify( #"hash_6939dd7af68cec" );
+    self notify( #"stop_slide_watcher" );
     self zm_perks::function_f0ac059f( n_slot, 0, #"perk_slider" );
     self zm_perks::function_13880aa5( n_slot, 0, #"perk_slider" );
     self zm_perks::function_c8c7bc5( n_slot, 0, #"perk_slider" );
@@ -152,8 +152,8 @@ function function_ae56fb1a( b_pause, str_perk, str_result, n_slot )
 // Size: 0x172
 function function_dc9a257a( n_slot )
 {
-    self notify( #"hash_6939dd7af68cec" );
-    self endon( #"disconnect", #"hash_6939dd7af68cec" );
+    self notify( #"stop_slide_watcher" );
+    self endon( #"disconnect", #"stop_slide_watcher" );
     self slide_explosion( n_slot );
     self.var_f354086e = 0;
     
@@ -256,7 +256,7 @@ function slide_explosion( n_slot )
         {
             a_ai = self getenemiesinradius( self.origin, 256 );
             a_ai = arraysortclosest( a_ai, self.origin );
-            self clientfield::increment( "" + #"hash_7b8ad0ed3ef67813" );
+            self clientfield::increment( "" + #"perk_slider_explosion" );
             self zm_perks::function_13880aa5( n_slot, 0.05, #"perk_slider" );
             self zm_perks::function_c8c7bc5( n_slot, 0, #"perk_slider" );
             var_708c0444 = 0;
@@ -364,7 +364,7 @@ function private function_2772480a()
         return false;
     }
     
-    if ( namespace_b28d86fd::is_active() )
+    if ( zm_trial_trap_kills_only::is_active() )
     {
         return false;
     }

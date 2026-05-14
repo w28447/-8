@@ -46,7 +46,7 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT32"
                     },
@@ -83,7 +83,7 @@
             }
         },
         {
-            "name": "#hash_45c4c0c903afe1d3",
+            "name": "#gpus_info",
             "arraySize": 8,
             "members": {
                 "name": "#hash_6f622749aa2bbcbe",
@@ -132,7 +132,7 @@
             "type": "UINT32"
         },
         {
-            "name": "#hash_85c7bd324ffbc53",
+            "name": "#is_using_gsync",
             "scrName": "#hash_4bd922d0",
             "type": "BOOL"
         },
@@ -142,7 +142,7 @@
             "type": "UINT16"
         },
         {
-            "name": "#hash_b5093b3a47a3ef0",
+            "name": "#is_using_freesync2",
             "scrName": "#hash_60c55dcf",
             "type": "BOOL"
         },
@@ -167,7 +167,7 @@
             "type": "UINT32"
         },
         {
-            "name": "#hash_2b948819b7fded62",
+            "name": "#is_using_freesync",
             "scrName": "#hash_c1baf5b8",
             "type": "BOOL"
         },
@@ -177,12 +177,12 @@
             "type": "UINT16"
         },
         {
-            "name": "#hash_2d73b88a401c9b9e",
+            "name": "#tiled_resources_tier",
             "scrName": "#hash_6febc2ca",
             "type": "UINT8"
         },
         {
-            "name": "#hash_30bdfaf4ba9b4387",
+            "name": "#gpu_autodetected",
             "scrName": "#hash_2fd9b1f1",
             "type": "INT8"
         },
@@ -333,7 +333,7 @@
             "type": "INT32"
         },
         {
-            "name": "#hash_677e1a171188e031",
+            "name": "#total_vmem",
             "scrName": "#hash_30a88723",
             "type": "UINT32"
         },
@@ -380,7 +380,7 @@
             "len": 128
         },
         {
-            "name": "#hash_78cb8b567c4d2cea",
+            "name": "#avail_vmem",
             "scrName": "#hash_38c26923",
             "type": "UINT32"
         },

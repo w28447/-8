@@ -349,7 +349,7 @@ function function_671e5ede()
     
     level.var_394c5463 = 0;
     waypoint = ct_utils::create_waypoint( #"hash_14f53e0433721169", level.var_a62b1ae0.origin, ( 0, 0, 0 ), #"any", undefined, 0, undefined );
-    level thread ct_utils::function_bfa522d1( 0 );
+    level thread ct_utils::simulation_pulse( 0 );
     level thread function_3e3366eb();
     level.var_cbcb0078 = 0;
     
@@ -435,7 +435,7 @@ function function_dd1fa6e7()
 function function_1c8a3d23()
 {
     self endon( #"death" );
-    self waittill( #"hash_225857690f87699b" );
+    self waittill( #"seeker_mine_deployed" );
     level notify( #"stop_seeker_nag" );
     level.var_f0e1e497 = 1;
 }

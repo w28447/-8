@@ -15,7 +15,7 @@
     "shouldCullDistance": false,
     "cullDistance": 300,
     "hasLowAmmoState": false,
-    "waypointText": "#hash_293035ff005b620f",
+    "waypointText": "#menu/waypoint_grab",
     "waypointImage": "#t7_hud_waypoints_uplink_grab",
     "unk30": 300,
     "bundle": {
@@ -94,7 +94,7 @@
         "hash_f592e0d0": 0,
         "hash_4d4f1a20": 0,
         "hash_70eee7cb878b0b3d:hash_9b7eb9a": "localized17#hash_70eee7cb878b0b3d",
-        "hash_5421156ac7b7c324:hash_9b718f0f": "localized17#hash_5421156ac7b7c324",
+        "objectives/ball_download:hash_9b718f0f": "localized17#objectives/ball_download",
         "hash_eaddd9fc": 0,
         "hash_fc1caebc": 0,
         "hash_b767419a": 10,

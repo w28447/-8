@@ -401,7 +401,7 @@ LUI.createMenu.PersonalizeCharacter = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f45_arg0, f45_arg1, f45_arg2 )
 		if CoD.ModelUtility.IsSelfModelValueTrue( self, f45_arg2, "previewEnabled" ) then
-			CoD.Menu.SetButtonLabel( f45_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x52FB29ED3A3CA79, nil, "ui_contextual_1" )
+			CoD.Menu.SetButtonLabel( f45_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "menu/preview", nil, "ui_contextual_1" )
 			return true
 		else
 			return false

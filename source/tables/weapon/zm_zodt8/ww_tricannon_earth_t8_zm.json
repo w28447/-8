@@ -3,7 +3,7 @@
     "baseWeapon": "#ww_tricannon_earth_t8",
     "displayname": "#zmweapon/ww_tricannon_earth_t8",
     "weapon70": "#ww_tricannon_t8",
-    "streamkey": "#hash_750d2b7e0f3eddb2",
+    "streamkey": "#ww_tricannon_earth_t8_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -36,7 +36,7 @@
     "cacWeaponXCam": "#ui_cam_cac_shotgun_energy",
     "cacAttachmentsXCam": "#ui_cam_cac_shotgun_energy",
     "weaponIconXCam": "#ui_cam_icon_shotgun_energy",
-    "sharedWeaponSounds": "#hash_976e198cea3170c",
+    "sharedWeaponSounds": "#bow_launcher",
     "projectilemodel": "#wpn_t7_spike_launcher_projectile",
     "viewmodel": [
         "#wpn_t8_zm_broadside_cannon_view"

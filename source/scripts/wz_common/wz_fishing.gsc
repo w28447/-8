@@ -1,4 +1,4 @@
-#using script_cb32d07c95e5628;
+#using scripts\mp_common\item_spawn_groups_util.gsc;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\clientfield_shared;
 #using scripts\core_common\flagsys_shared;
@@ -267,12 +267,12 @@ function function_e8c63c15( player )
     if ( isdefined( buoy ) )
     {
         v_origin = buoy.origin;
-        items = buoy namespace_65181344::function_fd87c780( "fishing_hole_items", 1 );
+        items = buoy item_spawn_groups_util::function_fd87c780( "fishing_hole_items", 1 );
     }
     else
     {
         v_origin = self.origin;
-        items = self namespace_65181344::function_fd87c780( "fishing_hole_items", 1 );
+        items = self item_spawn_groups_util::function_fd87c780( "fishing_hole_items", 1 );
     }
     
     for ( i = 0; i < items.size ; i++ )
@@ -357,7 +357,7 @@ function function_6c71782a( dynent )
 {
     self notify( "48d65f5f22c36da2" );
     self endon( "48d65f5f22c36da2" );
-    self endon( #"death", #"hash_61bb9580151c93d5", #"hash_667fd08050e0942b" );
+    self endon( #"death", #"hash_61bb9580151c93d5", #"fishing_force_end" );
     
     if ( !isplayer( self ) )
     {

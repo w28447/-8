@@ -21,7 +21,7 @@ function __init__()
     level.w_tesla_sniper_t8 = getweapon( #"ww_tesla_sniper_t8" );
     level.w_tesla_sniper_upgraded_t8 = getweapon( #"ww_tesla_sniper_upgraded_t8" );
     level.var_490afdb9 = array( undefined, "zm_weapons/fx8_ww_tesla_sniper_bulb_d", "zm_weapons/fx8_ww_tesla_sniper_bulb_c", "zm_weapons/fx8_ww_tesla_sniper_bulb_b", "zm_weapons/fx8_ww_tesla_sniper_bulb_a" );
-    clientfield::register( "toplayer", "" + #"hash_3aad9502fc3b54f2", 24000, 1, "int", &function_87dc06ae, 0, 0 );
+    clientfield::register( "toplayer", "" + #"tesla_sniper_equipped", 24000, 1, "int", &function_87dc06ae, 0, 0 );
     clientfield::register( "actor", "zm_weapons/fx8_ww_tesla_sniper_impact_lg", 24000, 1, "counter", &function_190ae9a1, 0, 0 );
 }
 
@@ -51,7 +51,7 @@ function function_87dc06ae( localclientnum, oldval, newval, bnewent, binitialsna
         return;
     }
     
-    self notify( #"hash_319d2bba47dac2c4" );
+    self notify( #"tesla_gun_unequipped" );
     self function_a6907b54( localclientnum );
 }
 
@@ -61,7 +61,7 @@ function function_87dc06ae( localclientnum, oldval, newval, bnewent, binitialsna
 // Size: 0x242
 function function_2d6416dc( localclientnum )
 {
-    self endon( #"death", #"hash_319d2bba47dac2c4" );
+    self endon( #"death", #"tesla_gun_unequipped" );
     w_current = getcurrentweapon( localclientnum );
     n_clip_size = w_current.clipsize;
     

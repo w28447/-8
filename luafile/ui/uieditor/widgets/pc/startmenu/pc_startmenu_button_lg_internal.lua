@@ -173,7 +173,7 @@ CoD.PC_StartMenu_Button_LG_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local ButtonTitle = CoD.StartMenu_Identity_SubTitle.new( f1_arg0, f1_arg1, 0, 1, 6, -6, 0, 0, 0.5, 39.5 )
 	ButtonTitle:setRGB( 0.92, 0.92, 0.92 )
-	ButtonTitle.SubtitleText:setText( LocalizeToUpperString( 0x87AD82563AAAC53 ) )
+	ButtonTitle.SubtitleText:setText( LocalizeToUpperString( "menu/clan_name" ) )
 	self:addElement( ButtonTitle )
 	self.ButtonTitle = ButtonTitle
 	

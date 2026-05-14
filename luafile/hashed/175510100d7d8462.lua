@@ -147,16 +147,16 @@ Lobby.AE.ValidateWZContractXP = function ( f7_arg0, f7_arg1 )
 		f7_local2 = f7_local2[Enum.eModes[0xBF1DCC8138A9D39]]
 		local f7_local3 = Engine.StorageGetBuffer( f7_arg0, Enum.StorageFileType[0xAB0E693244221BC] )
 		if f7_local2 and f7_local3 then
-			local f7_local4 = f7_local3[0xD59E8BFAC78A33B][0x8ABD9FC5CA1D7A3][0x3BF77799B56C06C]
+			local f7_local4 = f7_local3[0xD59E8BFAC78A33B][0x8ABD9FC5CA1D7A3]["statvalue"]
 			local f7_local5 = f7_local4:get()
-			local f7_local6 = f7_local3[0xD59E8BFAC78A33B][0x8928A12A20A9D67][0x3BF77799B56C06C]
+			local f7_local6 = f7_local3[0xD59E8BFAC78A33B]["rankxp"]["statvalue"]
 			local f7_local7 = f7_local6:get()
 			local f7_local8 = false
 			if f7_local5 ~= f7_local0 then
 				local f7_local9 = f7_local0 - f7_local5
 				Engine[0xDE279ECDDDD966]( f7_arg0, 0x560E79F0D119335, {
-					[0xC229A4571E9BFA] = Engine.GetXUID64( f7_arg0 ),
-					[0x8928A12A20A9D67] = f7_local7,
+					["user_id"] = Engine.GetXUID64( f7_arg0 ),
+					["rankxp"] = f7_local7,
 					[0x8ABD9FC5CA1D7A3] = f7_local5,
 					[0x9CEF1E44929E9FE] = f7_local0
 				} )
@@ -175,8 +175,8 @@ Lobby.AE.ValidateWZContractXP = function ( f7_arg0, f7_arg1 )
 				f7_local8 = true
 			end
 			for f7_local9 = #f7_local2, 0, -1 do
-				if f7_local2[f7_local9][0x182B762B7BAD117] <= f7_local7 then
-					local f7_local12 = f7_local3[0xD59E8BFAC78A33B][0xDB3201FD1EB3847][0x3BF77799B56C06C]
+				if f7_local2[f7_local9]["minxp"] <= f7_local7 then
+					local f7_local12 = f7_local3[0xD59E8BFAC78A33B][0xDB3201FD1EB3847]["statvalue"]
 					if f7_local12:get() ~= f7_local9 then
 						f7_local12:set( f7_local9 )
 						f7_local8 = true

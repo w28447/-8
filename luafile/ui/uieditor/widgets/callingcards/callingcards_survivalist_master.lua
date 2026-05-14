@@ -9,7 +9,7 @@ CoD[0xFBA6FA155C2731A].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local background = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	background:setImage( RegisterImage( 0x1F758BFE3ED2E31 ) )
+	background:setImage( RegisterImage( "uie_callingcards_survivalist_master_background" ) )
 	background:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD526D3FD71F281 ) )
 	background:setShaderVector( 0, 0, 3, 0, 0 )
 	background:setShaderVector( 1, 12, 0, 0, 0 )
@@ -26,12 +26,12 @@ CoD[0xFBA6FA155C2731A].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.clouds = clouds
 	
 	local dude2 = LUI.UIImage.new( 0, 0, 427.5, 507.5, 0, 0, 74, 146 )
-	dude2:setImage( RegisterImage( 0xCD3D458B63DD709 ) )
+	dude2:setImage( RegisterImage( "uie_callingcards_survivalist_master_dude2" ) )
 	self:addElement( dude2 )
 	self.dude2 = dude2
 	
 	local dude1 = LUI.UIImage.new( 0, 0, 620.5, 932.5, 0, 0, 16, 240 )
-	dude1:setImage( RegisterImage( 0xCD3D158B63DD1F0 ) )
+	dude1:setImage( RegisterImage( "uie_callingcards_survivalist_master_dude1" ) )
 	dude1:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD526D3FD71F281 ) )
 	dude1:setShaderVector( 0, 0, 3, 0, 0 )
 	dude1:setShaderVector( 1, 18, 0, 0, 0 )

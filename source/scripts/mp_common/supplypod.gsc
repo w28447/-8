@@ -116,7 +116,7 @@ function function_bff5c062( supplypod, attackingplayer )
     supplypod.gameobject gameobjects::set_owner_team( attackingplayer.team );
     supplypod.gameobject gameobjects::set_visible_team( #"friendly" );
     supplypod.gameobject gameobjects::allow_use( #"friendly" );
-    supplypod notify( #"hash_523ddcbd662010e5" );
+    supplypod notify( #"end_damage_watcher" );
     supplypod notify( #"hacked" );
     
     if ( isdefined( supplypod.var_2d045452 ) )
@@ -226,7 +226,7 @@ function hintobjectivehint_updat( weapon )
     
     if ( isdefined( self.var_bfeea3dd ) && isalive( self.var_bfeea3dd ) && self != self.var_bfeea3dd )
     {
-        scoreevents::processscoreevent( #"hash_131b23d720fc82c3", self.var_bfeea3dd, undefined, level.var_934fb97.weapon );
+        scoreevents::processscoreevent( #"golden_ammo_assist", self.var_bfeea3dd, undefined, level.var_934fb97.weapon );
     }
     
     self playlocalsound( #"hash_6c2a2fee191330a0" );
@@ -252,7 +252,7 @@ function function_92856c6( attacker, victim, weapon, attackerweapon, meansofdeat
     {
         if ( isdefined( attacker.var_bfeea3dd ) && isalive( attacker.var_bfeea3dd ) && attacker != attacker.var_bfeea3dd )
         {
-            scoreevents::processscoreevent( #"hash_131b23d720fc82c3", attacker.var_bfeea3dd, undefined, level.var_934fb97.weapon );
+            scoreevents::processscoreevent( #"golden_ammo_assist", attacker.var_bfeea3dd, undefined, level.var_934fb97.weapon );
         }
         
         attacker playlocalsound( #"hash_6c2a2fee191330a0" );
@@ -434,7 +434,7 @@ function on_player_spawned()
             player.var_57de9100.trigger setinvisibletoplayer( player );
         }
         
-        player thread function_18f999b5( float( player.var_17d74a5c ) / 1000 );
+        player thread supplypodreactivate( float( player.var_17d74a5c ) / 1000 );
         player.var_17d74a5c += gettime();
         player clientfield::set_player_uimodel( "hudItems.goldenBullet", 1 );
     }
@@ -577,7 +577,7 @@ function function_890b2784()
 // Size: 0x1fe
 function function_827486aa( destroyedbyenemy, var_7497ba51 = 1 )
 {
-    self notify( #"hash_523ddcbd662010e5" );
+    self notify( #"end_damage_watcher" );
     self.var_ab0875aa = 1;
     
     if ( isdefined( self.var_83d9bfb5 ) && self.var_83d9bfb5 )
@@ -677,9 +677,9 @@ function function_9d4aabb9( destroyedbyenemy )
         self playsound( level.var_934fb97.bundle.destructionaudio );
     }
     
-    if ( isdefined( level.var_934fb97.bundle.var_bb6c29b4 ) && isdefined( self.var_d02ddb8e ) && self.var_d02ddb8e == getweapon( #"shock_rifle" ) )
+    if ( isdefined( level.var_934fb97.bundle.shockrifledestructionfx ) && isdefined( self.var_d02ddb8e ) && self.var_d02ddb8e == getweapon( #"shock_rifle" ) )
     {
-        playfx( level.var_934fb97.bundle.var_bb6c29b4, self.origin );
+        playfx( level.var_934fb97.bundle.shockrifledestructionfx, self.origin );
     }
     
     deployable::function_81598103( self );
@@ -742,7 +742,7 @@ function private function_3c4843e3( supplypod, timetoadd )
 function function_a2c40499( player )
 {
     level endon( #"game_ended" );
-    self endon( #"hash_523ddcbd662010e5" );
+    self endon( #"end_damage_watcher" );
     waitresult = player waittill( #"disconnect", #"joined_team", #"changed_specialist" );
     
     if ( !isdefined( self ) )
@@ -762,7 +762,7 @@ function watchfordeath()
 {
     level endon( #"game_ended" );
     self.owner endon( #"disconnect", #"joined_team", #"changed_specialist" );
-    self endon( #"hash_523ddcbd662010e5" );
+    self endon( #"end_damage_watcher" );
     waitresult = self waittill( #"death" );
     
     if ( !isdefined( self ) )
@@ -790,7 +790,7 @@ function watchfordamage()
 {
     self endon( #"death" );
     level endon( #"game_ended" );
-    self endon( #"hash_523ddcbd662010e5" );
+    self endon( #"end_damage_watcher" );
     supplypod = self;
     supplypod endon( #"death" );
     supplypod.health = level.var_934fb97.bundle.kshealth;
@@ -1059,7 +1059,7 @@ function private function_a1434496( team, player, result )
         {
             duration = isdefined( level.var_934fb97.bundle.var_84471829 ) ? level.var_934fb97.bundle.var_84471829 : 30;
             player.var_17d74a5c = gettime() + int( duration * 1000 );
-            player thread function_18f999b5( duration );
+            player thread supplypodreactivate( duration );
         }
         else
         {
@@ -1096,7 +1096,7 @@ function supplypod_catch( supplypod )
         }
         
         beamlaunch( supplypod, self, "tag_origin_animate", var_715428d3, level.var_934fb97.weapon );
-        playsoundatposition( #"hash_f70797817dfefdb", supplypod.origin );
+        playsoundatposition( #"mpl_supply_pod_can_launch", supplypod.origin );
     }
 }
 
@@ -1104,10 +1104,10 @@ function supplypod_catch( supplypod )
 // Params 1
 // Checksum 0x7d3f5b58, Offset: 0x3b00
 // Size: 0x134
-function function_18f999b5( waittime )
+function supplypodreactivate( waittime )
 {
-    self notify( #"hash_10cd6a20d4e45365" );
-    self endon( #"hash_10cd6a20d4e45365", #"disconnect" );
+    self notify( #"supplypodreactivate" );
+    self endon( #"supplypodreactivate", #"disconnect" );
     result = self waittilltimeout( waittime, #"death" );
     
     if ( result._notify == #"timeout" )
@@ -1186,7 +1186,7 @@ function function_63c23d02( supplypod )
     if ( isdefined( supplypod.var_3823265d ) )
     {
         self function_9abdee8c( supplypod );
-        playsoundatposition( #"hash_66e85d590b4f4b8", supplypod.origin );
+        playsoundatposition( #"mpl_supply_pod_deploy", supplypod.origin );
     }
     
     if ( isdefined( level.var_84bf013e ) )
@@ -1325,9 +1325,9 @@ function function_bcf0dd99()
 function function_b8a25634( owner )
 {
     player = self;
-    cooldowns[ 0 ] = level.var_934fb97.bundle.var_b9443d6b;
+    cooldowns[ 0 ] = level.var_934fb97.bundle.pod_equipment_cooldown;
     cooldowns[ 1 ] = level.var_934fb97.bundle.var_ea340924;
-    cooldowns[ 2 ] = level.var_934fb97.bundle.var_ff3d4d40;
+    cooldowns[ 2 ] = level.var_934fb97.bundle.pod_ability_cooldown;
     
     for ( slot = 0; slot < 3 ; slot++ )
     {

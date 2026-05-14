@@ -14,7 +14,7 @@ CoD.LobbyMemberStarCount.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	self.Backing = Backing
 	
 	local StarImage = LUI.UIImage.new( 0.5, 0.5, -17.5, 17.5, 0, 0, 4, 39 )
-	StarImage:setImage( RegisterImage( 0xA5CED7A3CD5BCF1 ) )
+	StarImage:setImage( RegisterImage( "ui_icon_trainingstars_progression" ) )
 	self:addElement( StarImage )
 	self.StarImage = StarImage
 	

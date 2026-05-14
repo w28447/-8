@@ -5,10 +5,10 @@
                 {
                     "descentrylist": [
                         {
-                            "descentry": "localized17#hash_4ffce427b1305595"
+                            "descentry": "localized17#menu/privacy_ccpa_desc"
                         }
                     ],
-                    "buttonlabel": "localized17#hash_5c78caf09b7d4d85",
+                    "buttonlabel": "localized17#menu/privacy_ccpa_button_label",
                     "hash_db9c06fd": 0,
                     "hash_7a610673": 1
                 }

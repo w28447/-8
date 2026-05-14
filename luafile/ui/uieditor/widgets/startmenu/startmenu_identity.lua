@@ -55,7 +55,7 @@ CoD.StartMenu_Identity.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	} )
 	EmblemEditor.ButtonInternal.imageContainer.ImageContainer:setImage( RegisterImage( 0x50C9EBA50F5E0B ) )
 	EmblemEditor.ButtonInternal.Title:setText( "" )
-	EmblemEditor.ButtonInternal.Subtitle.SubtitleText:setText( LocalizeHash( 0x5E93B286AFFF18D ) )
+	EmblemEditor.ButtonInternal.Subtitle.SubtitleText:setText( LocalizeHash( "menu/emblem_editor_caps" ) )
 	local Emblems = EmblemEditor
 	local Paintshop = EmblemEditor.subscribeToModel
 	local CallingCards = Engine.GetGlobalModel()
@@ -138,7 +138,7 @@ CoD.StartMenu_Identity.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	} )
 	Paintshop.ButtonInternal.imageContainer.ImageContainer:setImage( RegisterImage( 0x60BC44EA9E8F0EF ) )
 	Paintshop.ButtonInternal.Title:setText( "" )
-	Paintshop.ButtonInternal.Subtitle.SubtitleText:setText( LocalizeHash( 0xEBF0E83B479C6AB ) )
+	Paintshop.ButtonInternal.Subtitle.SubtitleText:setText( LocalizeHash( "menu/paintshop_caps" ) )
 	CallingCards = Paintshop
 	Emblems = Paintshop.subscribeToModel
 	local f1_local5 = Engine.GetGlobalModel()

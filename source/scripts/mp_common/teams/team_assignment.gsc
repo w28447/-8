@@ -29,7 +29,7 @@ function __init__()
     }
     
     /#
-        level.var_ba13fb7a = getdvarint( #"hash_40fe9055da22add4", 0 );
+        level.debug_team_assignment = getdvarint( #"debug_team_assignment", 0 );
     #/
 }
 
@@ -82,13 +82,13 @@ function function_ee150fcc( team, team_players )
     foreach ( player in team_players )
     {
         party = player getparty();
-        assert( party.var_a15e4438 <= level.maxteamplayers );
-        var_ab9e77bf[ party.party_id ] = party.fill ? party.var_a15e4438 : level.maxteamplayers;
+        assert( party.party_member_count <= level.maxteamplayers );
+        var_ab9e77bf[ party.party_id ] = party.fill ? party.party_member_count : level.maxteamplayers;
         
         /#
             if ( var_f8896168 )
             {
-                var_ab9e77bf[ party.party_id ] = party.var_a15e4438;
+                var_ab9e77bf[ party.party_id ] = party.party_member_count;
             }
         #/
     }
@@ -162,7 +162,7 @@ function function_efe5a681( team )
     available_spots = function_ee150fcc( team, team_players );
     party = self getparty();
     
-    if ( party.var_a15e4438 > available_spots )
+    if ( party.party_member_count > available_spots )
     {
         return false;
     }
@@ -390,7 +390,7 @@ function private function_1e545bc7()
     
     party = self getparty();
     
-    if ( isdefined( party ) && party.var_a15e4438 > 1 )
+    if ( isdefined( party ) && party.party_member_count > 1 )
     {
         return function_5d02dd86( party );
     }
@@ -860,7 +860,7 @@ function function_a9822793()
     var_ed0a1ecc = function_94478182( distribution );
     
     /#
-        if ( level.var_ba13fb7a )
+        if ( level.debug_team_assignment )
         {
             println( "<dev string:x38>" + "<dev string:xab>" );
             function_a9bfa6d6();
@@ -917,7 +917,7 @@ function function_a9822793()
     }
     
     /#
-        if ( level.var_ba13fb7a )
+        if ( level.debug_team_assignment )
         {
             println( "<dev string:x38>" + "<dev string:x111>" );
             function_a9bfa6d6();
@@ -933,7 +933,7 @@ function function_a9822793()
     // Size: 0x90, Type: dev
     function private function_a9bfa6d6()
     {
-        if ( level.var_ba13fb7a )
+        if ( level.debug_team_assignment )
         {
             foreach ( team in level.teams )
             {
@@ -994,7 +994,7 @@ function function_a9822793()
         foreach ( player in players )
         {
             party = player getparty();
-            println( "<dev string:x38>" + "<dev string:x172>" + player.name + "<dev string:x177>" + ( party.fill ? "<dev string:x183>" : "<dev string:x189>" ) + "<dev string:x18e>" + party.var_a15e4438 );
+            println( "<dev string:x38>" + "<dev string:x172>" + player.name + "<dev string:x177>" + ( party.fill ? "<dev string:x183>" : "<dev string:x189>" ) + "<dev string:x18e>" + party.party_member_count );
         }
     }
 

@@ -150,7 +150,7 @@ function private function_f2d27140( var_6a87ce6d )
         self zm_vo::function_cf1e151c( level.var_4687b0d0[ var_6a87ce6d ] );
     }
     
-    self notify( #"hash_53eb32eaa511640c" );
+    self notify( #"roll_stop_spin" );
     self stoploopsound();
     self playsound( #"hash_376eaa517cd09530" );
     self thread function_ad05f6f3();
@@ -180,7 +180,7 @@ function private function_64834acd()
 // Size: 0x9e
 function private function_21a979f7()
 {
-    self endon( #"hash_53eb32eaa511640c" );
+    self endon( #"roll_stop_spin" );
     
     while ( true )
     {

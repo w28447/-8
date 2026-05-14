@@ -128,7 +128,7 @@
             }
         },
         {
-            "name": "#hash_11fcb8f188ed5050",
+            "name": "#end_match_contracts",
             "arraySize": 0,
             "members": {
                 "name": "#hash_3506e586ba0277fb",
@@ -254,7 +254,7 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT32"
                     },
@@ -460,7 +460,7 @@
             }
         },
         {
-            "name": "#hash_71960e91f80c3365",
+            "name": "#end_match_info",
             "arraySize": 0,
             "members": {
                 "name": "#hash_5824d549adab1dc4",
@@ -538,7 +538,7 @@
             }
         },
         {
-            "name": "#hash_78a6c018d9f82184",
+            "name": "#end_match_specialist",
             "arraySize": 0,
             "members": {
                 "name": "#hash_3821d9754f594c79",

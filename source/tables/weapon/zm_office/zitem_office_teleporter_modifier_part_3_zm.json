@@ -1,7 +1,7 @@
 {
     "name": "#zitem_office_teleporter_modifier_part_3_zm",
     "baseWeapon": "#zitem_office_teleporter_modifier_part_3",
-    "streamkey": "#hash_6ebcb4c0af4926fc",
+    "streamkey": "#zitem_office_teleporter_modifier_part_3_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

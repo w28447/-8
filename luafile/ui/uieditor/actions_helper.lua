@@ -129,7 +129,7 @@ function RemoveItemFromClassSlot( f6_arg0, f6_arg1, f6_arg2, f6_arg3, f6_arg4 )
 			elseif f6_local3 == 0x8EC14572D948374 then
 				RemoveItemFromClassSlot( f6_arg0, "talent.1", f6_arg2, f6_arg3, f6_arg4 )
 				RemoveItemFromClassSlot( f6_arg0, "talent.2", f6_arg2, f6_arg3, f6_arg4 )
-			elseif f6_local3 == 0x1F0C17573BB2E79 then
+			elseif f6_local3 == "bonuscard_overkill" then
 				RemoveItemFromClassSlot( f6_arg0, "secondary", f6_arg2, f6_arg3, f6_arg4 )
 			elseif f6_local3 == 0x439C6CFA8A0CFEB then
 				RemoveItemFromClassSlot( f6_arg0, "primary", f6_arg2, f6_arg3, f6_arg4 )
@@ -269,7 +269,7 @@ function AttemptAttachItem( f7_arg0, f7_arg1, f7_arg2, f7_arg3, f7_arg4, f7_arg5
 		end
 	end
 	if f7_local1 and f7_arg5 > CoD.CACUtility.EmptyItemIndex then
-		if f7_local7 == 0x1F0C17573BB2E79 then
+		if f7_local7 == "bonuscard_overkill" then
 			RemoveItemFromClassSlot( f7_arg3, "secondary", f7_arg1, f7_local3, f7_arg2 )
 		elseif f7_local7 == 0x439C6CFA8A0CFEB then
 			RemoveItemFromClassSlot( f7_arg3, "primary", f7_arg1, f7_local3, f7_arg2 )

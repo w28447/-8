@@ -2,7 +2,7 @@
     "name": "#sticky_grenade_widows_wine_zm",
     "baseWeapon": "#sticky_grenade_widows_wine",
     "displayname": "#weapon/sticky_grenade",
-    "streamkey": "#hash_7950071936e3ffb3",
+    "streamkey": "#sticky_grenade_widows_wine_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",

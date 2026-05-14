@@ -1,4 +1,4 @@
-#using script_7ca3324ffa5389e4;
+#using scripts\core_common\player\player_free_fall_util.csc;
 #using scripts\core_common\animation_shared;
 #using scripts\core_common\audio_shared;
 #using scripts\core_common\callbacks_shared;
@@ -26,7 +26,7 @@ function autoexec __init__system__()
 // Size: 0x13e
 function __init__()
 {
-    level._effect[ #"hash_2d7e36f50e763c4a" ] = #"hash_3cb3a6fc9eb00337";
+    level._effect[ #"free_fall_ambient" ] = #"hash_3cb3a6fc9eb00337";
     level._effect[ #"hash_71f4fac26bef1997" ] = #"hash_3919b64dc762cab2";
     callback::add_callback( #"freefall", &function_c9a18304 );
     callback::add_callback( #"parachute", &function_26d46af3 );
@@ -52,7 +52,7 @@ function private function_6aac1790( var_dbb94a )
 // Size: 0x64
 function private function_a43054a8()
 {
-    parachute = self namespace_eb06e24d::get_parachute();
+    parachute = self player_free_fall_util::get_parachute();
     var_dbb94a = parachute.( "parachuteLit" );
     
     if ( isdefined( var_dbb94a ) )
@@ -67,7 +67,7 @@ function private function_a43054a8()
 // Size: 0x64
 function private function_1c10540b()
 {
-    parachute = self namespace_eb06e24d::get_parachute();
+    parachute = self player_free_fall_util::get_parachute();
     var_dbb94a = parachute.( "parachuteLit" );
     
     if ( isdefined( var_dbb94a ) )
@@ -101,7 +101,7 @@ function private function_26d46af3( eventstruct )
     }
     
     println( self.name + "<dev string:x38>" + eventstruct.parachute );
-    parachute = self namespace_eb06e24d::get_parachute();
+    parachute = self player_free_fall_util::get_parachute();
     var_dbb94a = parachute.( "parachuteLit" );
     
     if ( eventstruct.parachute )
@@ -362,7 +362,7 @@ function function_e8a9e948( localclientnum, var_695a7111 )
                 continue;
             }
             
-            contrail_fx = namespace_eb06e24d::get_trailfx();
+            contrail_fx = player_free_fall_util::get_trailfx();
             
             if ( isdefined( self.var_ba907ef1 ) && self.angles[ 2 ] < -20 )
             {
@@ -416,7 +416,7 @@ function function_a993866( localclientnum, var_9a17b15c )
     }
     
     println( self.name + "<dev string:xdf>" + var_9a17b15c );
-    trail_fx = namespace_eb06e24d::get_trailfx();
+    trail_fx = player_free_fall_util::get_trailfx();
     
     if ( self function_21c0fa55() )
     {
@@ -513,7 +513,7 @@ function function_3a56fe1b( localclientnum )
 {
     if ( !isdefined( self.var_1c0f821e ) )
     {
-        self.var_1c0f821e = play_fx_on_tag( localclientnum, level._effect[ #"hash_2d7e36f50e763c4a" ], "tag_origin" );
+        self.var_1c0f821e = play_fx_on_tag( localclientnum, level._effect[ #"free_fall_ambient" ], "tag_origin" );
         self thread function_ba7365ff( localclientnum, 6000, self.var_1c0f821e );
     }
     
@@ -564,7 +564,7 @@ function function_2bdd64a4( localclientnum )
     
     if ( self.origin[ 2 ] > 30000 )
     {
-        self playsound( localclientnum, #"hash_214da797e3f63ec5" );
+        self playsound( localclientnum, #"evt_deploy_plr" );
     }
 }
 
@@ -666,7 +666,7 @@ function function_fb8d00bf()
     
     if ( level.add_trails )
     {
-        trail_fx = self namespace_eb06e24d::get_trailfx();
+        trail_fx = self player_free_fall_util::get_trailfx();
         
         if ( isdefined( trail_fx.( "dropoff" ) ) )
         {
@@ -682,7 +682,7 @@ function function_fb8d00bf()
 function parachute_detach()
 {
     local_client_num = self.localclientnum;
-    chute = self namespace_eb06e24d::get_parachute();
+    chute = self player_free_fall_util::get_parachute();
     parachute = util::spawn_model( local_client_num, chute.parachutelit, self.origin, self.angles );
     
     if ( isdefined( parachute ) )

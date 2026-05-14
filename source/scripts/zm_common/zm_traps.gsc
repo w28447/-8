@@ -1,5 +1,5 @@
-#using script_2f9a68261f6a17be;
-#using script_301f64a4090c381a;
+#using scripts\zm_common\trials\zm_trial_trap_kills_only.gsc;
+#using scripts\zm_common\zm_faction_buffs.gsc;
 #using scripts\core_common\ai\zombie_death;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\callbacks_shared;
@@ -301,7 +301,7 @@ function function_783f63e9( var_1c9c3123 = 1 )
         return;
     }
     
-    if ( zm_utility::is_standard() || namespace_b28d86fd::is_active() )
+    if ( zm_utility::is_standard() || zm_trial_trap_kills_only::is_active() )
     {
         cheat_too_friendly_s_ = zm_utility::function_d6046228( #"hash_24a438482954901", #"hash_61d85c966dd9e83f" );
         self trap_set_string( cheat_too_friendly_s_ );
@@ -314,7 +314,7 @@ function function_783f63e9( var_1c9c3123 = 1 )
         return;
     }
     
-    cheat_too_friendly_s_ = zm_utility::function_d6046228( #"hash_23c1c09e94181fdb", #"hash_6e8ef1b690e98e51" );
+    cheat_too_friendly_s_ = zm_utility::function_d6046228( #"zombie/button_buy_trap", #"hash_6e8ef1b690e98e51" );
     self trap_set_string( cheat_too_friendly_s_, self.zombie_cost );
     
     if ( var_1c9c3123 )
@@ -364,7 +364,7 @@ function trap_use_think( trap )
 // Size: 0xb8
 function trap_purchase( e_player, n_cost )
 {
-    if ( namespace_b28d86fd::is_active() )
+    if ( zm_trial_trap_kills_only::is_active() )
     {
         return 1;
     }
@@ -1169,7 +1169,7 @@ function trap_disable( var_ccf895cc = #"zombie/trap_locked" )
 // Params 2
 // Checksum 0x8693f90d, Offset: 0x35f8
 // Size: 0x144
-function trap_enable( var_f9afc2b3 = #"hash_23c1c09e94181fdb", var_b8c50025 = #"hash_6e8ef1b690e98e51" )
+function trap_enable( var_f9afc2b3 = #"zombie/button_buy_trap", var_b8c50025 = #"hash_6e8ef1b690e98e51" )
 {
     if ( !( isdefined( self.var_b3166dc1 ) && self.var_b3166dc1 ) )
     {
@@ -1209,7 +1209,7 @@ function function_6966417b( var_ccf895cc = #"zombie/trap_locked" )
 // Params 2
 // Checksum 0x8913546e, Offset: 0x3828
 // Size: 0xf2
-function function_9d0c9706( var_f9afc2b3 = #"hash_23c1c09e94181fdb", var_b8c50025 = #"hash_6e8ef1b690e98e51" )
+function function_9d0c9706( var_f9afc2b3 = #"zombie/button_buy_trap", var_b8c50025 = #"hash_6e8ef1b690e98e51" )
 {
     a_t_traps = getentarray( "zombie_trap", "targetname" );
     

@@ -20,7 +20,7 @@ LUI.createMenu.ClanOptions = function ( f1_arg0, f1_arg1 )
 	self.BlackfadeBlur = BlackfadeBlur
 	
 	local ClanOptionsWidget = CoD.ClanOptionsWidget.new( f1_local1, f1_arg0, 0.5, 0.5, -960, 960, 0.5, 0.5, -540, 540 )
-	ClanOptionsWidget.CurrentClassName:setText( LocalizeToUpperString( 0x2FA47140D97F89D ) )
+	ClanOptionsWidget.CurrentClassName:setText( LocalizeToUpperString( "menu/options_caps" ) )
 	ClanOptionsWidget:registerEventHandler( "menu_loaded", function ( element, event )
 		local f2_local0 = nil
 		if element.menuLoaded then

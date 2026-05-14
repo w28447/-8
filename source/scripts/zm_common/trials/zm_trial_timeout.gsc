@@ -191,7 +191,7 @@ function function_d3eb9969()
 function private function_28663a8f()
 {
     self endon( #"death" );
-    level endon( #"hash_7646638df88a3656" );
+    level endon( #"trial_round_end" );
     wait 1;
     
     if ( !( isdefined( self.completed_emerging_into_playable_area ) && self.completed_emerging_into_playable_area ) && self.archetype === #"zombie" )
@@ -302,7 +302,7 @@ function private function_f22cd3f0( s_wait_location, ai_zombie )
 // Size: 0x23c
 function private function_8b87e57c( timer_label, grace_period, timer_value, var_1215371f )
 {
-    level endon( #"end_of_round", #"host_migration_begin", #"hash_7646638df88a3656", #"end_game" );
+    level endon( #"end_of_round", #"host_migration_begin", #"trial_round_end", #"end_game" );
     
     if ( !isdefined( level.var_489d6aa2 ) )
     {

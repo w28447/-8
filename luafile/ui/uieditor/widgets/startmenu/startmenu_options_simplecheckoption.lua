@@ -74,7 +74,7 @@ CoD.StartMenu_Options_SimpleCheckOption.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local DashBacking = LUI.UIImage.new( 0, 0, 17, 41, 0, 0, 18, 42 )
 	DashBacking:setScale( 1.5, 1.5 )
-	DashBacking:setImage( RegisterImage( 0x4BB3E0B0E9A1D7E ) )
+	DashBacking:setImage( RegisterImage( "uie_ui_menu_cac_allocation_pip_empty" ) )
 	self:addElement( DashBacking )
 	self.DashBacking = DashBacking
 	

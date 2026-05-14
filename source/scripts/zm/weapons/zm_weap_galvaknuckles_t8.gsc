@@ -31,7 +31,7 @@ function private __init__()
 // Size: 0x54
 function private __main__()
 {
-    zm_melee_weapon::init( #"galvaknuckles_t8", #"galvaknuckles_t8_flourish", 5000, "tazer_upgrade", #"hash_60606b68e93a29c8", "galva", undefined );
+    zm_melee_weapon::init( #"galvaknuckles_t8", #"galvaknuckles_t8_flourish", 5000, "tazer_upgrade", #"zombie/weaponcostonly_cfill", "galva", undefined );
 }
 
 // Namespace zm_weap_galvaknuckles_t8/zm_weap_galvaknuckles_t8

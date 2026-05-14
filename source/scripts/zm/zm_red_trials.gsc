@@ -1,6 +1,6 @@
-#using script_16fcc14b5f79bf3e;
+#using scripts\zm_common\trials\zm_trial_red_theater_quest.gsc;
 #using script_30ba61ad5559c51d;
-#using script_39347d985163e17;
+#using scripts\zm_common\trials\zm_trial_red_oracle_boon.gsc;
 #using script_3bb49f7cd141f7e7;
 #using script_45993630a26b2d85;
 #using script_5ee794294780ac28;

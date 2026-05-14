@@ -248,7 +248,7 @@ function private registerbehaviorscriptfunctions()
     behaviortreenetworkutility::registerbehaviortreescriptapi( #"hash_14196abc66fc78ee", &function_e2ab1df7 );
     assert( isscriptfunctionptr( &function_1bd1ebe7 ) );
     behaviortreenetworkutility::registerbehaviortreescriptapi( #"hash_6df8ee94ab700109", &function_1bd1ebe7 );
-    animationstatenetwork::registernotetrackhandlerfunction( "hit_ground", &function_85e8940a );
+    animationstatenetwork::registernotetrackhandlerfunction( "hit_ground", &brutusgroundslam );
 }
 
 // Namespace wz_ai_brutus/wz_ai_brutus
@@ -398,7 +398,7 @@ function private function_f4a61e6a( entity )
 // Params 1, eflags: 0x4
 // Checksum 0x3ca4449c, Offset: 0x1458
 // Size: 0x358
-function private function_85e8940a( entity )
+function private brutusgroundslam( entity )
 {
     if ( isdefined( entity.var_bc0e449a ) && entity.var_bc0e449a )
     {
@@ -433,7 +433,7 @@ function private function_85e8940a( entity )
             continue;
         }
         
-        damage = mapfloat( entity getpathfindingradius() + 15, entity ai::function_9139c839().var_1709a39, entity ai::function_9139c839().var_7ea758e1, 0, distance( entity.origin, player.origin ) );
+        damage = mapfloat( entity getpathfindingradius() + 15, entity ai::function_9139c839().var_1709a39, entity ai::function_9139c839().shockattackdamage, 0, distance( entity.origin, player.origin ) );
         damage = int( max( 10, damage ) );
         player dodamage( damage, entity.origin, entity, entity, "none", "MOD_PROJECTILE_SPLASH" );
         player status_effect::status_effect_apply( shock_status_effect, undefined, self, 0 );

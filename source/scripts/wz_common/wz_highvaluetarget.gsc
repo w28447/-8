@@ -34,8 +34,8 @@ function __init__()
     
     assert( level.wzhighvaluetargets <= 8 );
     clientfield::register( "allplayers", "ishighvaluetarget", 16000, 1, "int" );
-    callback::add_callback( #"hash_405e46788e83af41", &update_targets );
-    callback::add_callback( #"hash_7912e21750e4010d", &update_targets );
+    callback::add_callback( #"death_circle_start", &update_targets );
+    callback::add_callback( #"death_circle_locked", &update_targets );
     callback::add_callback( #"on_player_downed", &function_9141be4e );
     callback::on_player_killed_with_params( &function_3f8e4156 );
     callback::on_disconnect( &on_player_disconnect );
@@ -83,7 +83,7 @@ function private update_targets()
             
             if ( isalive( player ) )
             {
-                player playsoundtoplayer( #"hash_321dbeea036e0e68", player );
+                player playsoundtoplayer( #"evt_wz_bounty_success", player );
                 player luinotifyevent( #"hash_6b67aa04e378d681", 1, 12 );
                 item_supply_drop::drop_supply_drop( player.origin );
             }

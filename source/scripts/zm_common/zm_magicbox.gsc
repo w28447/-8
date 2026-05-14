@@ -404,7 +404,7 @@ function boxstub_update_prompt( player )
             }
             else
             {
-                self.hint_string = #"hash_6a4c5538a960189d";
+                self.hint_string = #"zombie/trade_weapon_fill";
             }
             
             if ( !( isdefined( self.stub.trigger_target.var_1f9dff37 ) && self.stub.trigger_target.var_1f9dff37 ) && !( isdefined( self.stub.trigger_target.var_481aa649 ) && self.stub.trigger_target.var_481aa649 ) && isdefined( self.stub.trigger_target.var_c2f3a87c ) && self.stub.trigger_target.var_c2f3a87c )
@@ -2674,9 +2674,9 @@ function treasure_chest_give_weapon( weapon, var_75c86f89, e_chest )
     }
     else if ( weapon === getweapon( #"special_crossbow_t8" ) )
     {
-        if ( zm_audio::function_63f85f39( #"magicbox", #"hash_36b817536004725" ) )
+        if ( zm_audio::function_63f85f39( #"magicbox", #"reaver_crossbow" ) )
         {
-            str_vo_line = #"hash_36b817536004725";
+            str_vo_line = #"reaver_crossbow";
         }
     }
     else

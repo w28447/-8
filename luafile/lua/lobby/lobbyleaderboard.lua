@@ -81,7 +81,7 @@ Lobby.Leaderboard.GetPointsPerGame = function ( f6_arg0, f6_arg1, f6_arg2 )
 end
 
 Lobby.Leaderboard.GetScorePerMinute = function ( f7_arg0, f7_arg1, f7_arg2 )
-	return math.max( 0, (Engine[0x6A6DD7FCE74F41]( f7_arg1, 0x10E63FBE7F624F5 ) + Engine[0xA339DAAB07A46F1]( f7_arg1, "Score" )) / (math.max( Lobby.Leaderboard.MIN_PLAY_TIME, Engine[0x6A6DD7FCE74F41]( f7_arg1, 0x3BF15114F02AF7B ) ) + Engine[0xA339DAAB07A46F1]( f7_arg1, "Time Played" )) / 60 )
+	return math.max( 0, (Engine[0x6A6DD7FCE74F41]( f7_arg1, 0x10E63FBE7F624F5 ) + Engine[0xA339DAAB07A46F1]( f7_arg1, "Score" )) / (math.max( Lobby.Leaderboard.MIN_PLAY_TIME, Engine[0x6A6DD7FCE74F41]( f7_arg1, "time_played_total" ) ) + Engine[0xA339DAAB07A46F1]( f7_arg1, "Time Played" )) / 60 )
 end
 
 Lobby.Leaderboard.GetKillDeathRatio = function ( f8_arg0 )
@@ -89,7 +89,7 @@ Lobby.Leaderboard.GetKillDeathRatio = function ( f8_arg0 )
 end
 
 Lobby.Leaderboard.GetTimePlayed = function ( f9_arg0 )
-	return math.max( Lobby.Leaderboard.MIN_PLAY_TIME, Engine[0x6A6DD7FCE74F41]( f9_arg0, 0x3BF15114F02AF7B ) )
+	return math.max( Lobby.Leaderboard.MIN_PLAY_TIME, Engine[0x6A6DD7FCE74F41]( f9_arg0, "time_played_total" ) )
 end
 
 Lobby.Leaderboard.GetGamesPlayed = function ( f10_arg0 )
@@ -197,7 +197,7 @@ Lobby.Leaderboard.LB_MP_GM_KOTH = function ( f19_arg0 )
 	local f19_local0 = f19_arg0.lbColName
 	local f19_local1 = f19_arg0.controller
 	if f19_local0 == "KOTH Avg Time" then
-		return (Engine[0xA339DAAB07A46F1]( f19_local1, "Captured Time" ) + Engine[0x6A6DD7FCE74F41]( f19_local1, 0x9CD0D30ECB61464 )) / math.max( 1, Engine[0xA339DAAB07A46F1]( f19_local1, "Games Played" ) + 1 )
+		return (Engine[0xA339DAAB07A46F1]( f19_local1, "Captured Time" ) + Engine[0x6A6DD7FCE74F41]( f19_local1, "objective_time" )) / math.max( 1, Engine[0xA339DAAB07A46F1]( f19_local1, "Games Played" ) + 1 )
 	else
 		return 0
 	end

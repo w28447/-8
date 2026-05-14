@@ -21,7 +21,7 @@ function autoexec __init__system__()
 function __init__()
 {
     enable_slider_perk_for_level();
-    level._effect[ #"hash_7b8ad0ed3ef67813" ] = "zombie/fx8_perk_phd_exp";
+    level._effect[ #"perk_slider_explosion" ] = "zombie/fx8_perk_phd_exp";
     zm_perks::function_f3c80d73( "zombie_perk_bottle_slider", "zombie_perk_totem_slider" );
 }
 
@@ -52,7 +52,7 @@ function init_slider()
 // Size: 0x5c
 function function_4bb29d61()
 {
-    clientfield::register( "allplayers", "" + #"hash_7b8ad0ed3ef67813", 1, 1, "counter", &function_4feff2f7, 0, 0 );
+    clientfield::register( "allplayers", "" + #"perk_slider_explosion", 1, 1, "counter", &function_4feff2f7, 0, 0 );
 }
 
 // Namespace zm_perk_slider/zm_perk_slider
@@ -72,7 +72,7 @@ function function_4feff2f7( localclientnum, oldval, newval, bnewent, binitialsna
 {
     if ( newval )
     {
-        util::playfxontag( localclientnum, level._effect[ #"hash_7b8ad0ed3ef67813" ], self, "j_spine" );
+        util::playfxontag( localclientnum, level._effect[ #"perk_slider_explosion" ], self, "j_spine" );
         self playsound( localclientnum, #"hash_25343ce78e1c9c6c" );
     }
 }

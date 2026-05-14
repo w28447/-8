@@ -136,7 +136,7 @@ CoD.BowLauncherReticle_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.DrawLine2 = DrawLine2
 	
 	local ADSCurve = LUI.UIImage.new( -0.47, -0.12, 127, 127, -0.01, 0.14, 9, 9 )
-	ADSCurve:setImage( RegisterImage( 0x8A25F3AC063C84B ) )
+	ADSCurve:setImage( RegisterImage( "uie_ui_hud_reticles_bowlauncher_ads_curve" ) )
 	self:addElement( ADSCurve )
 	self.ADSCurve = ADSCurve
 	

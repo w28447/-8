@@ -25,7 +25,7 @@ CoD.WeaponAttachmentsUtility.WeaponAttachmentGroupNames = {
 	},
 	{
 		attachmentGroup = Enum[0x7420BCDBDE17A84][0x2701CB609E58337],
-		name = 0x7DBA1D8EA36A999
+		name = "mpui/attachment_group_mod"
 	},
 	{
 		attachmentGroup = Enum[0x7420BCDBDE17A84][0x6EE211053211305],

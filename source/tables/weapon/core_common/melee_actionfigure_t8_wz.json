@@ -3,7 +3,7 @@
     "baseWeapon": "#melee_actionfigure_t8",
     "displayname": "#weapon/melee_actionfigure_t8",
     "weapon70": "#melee_actionfigure_t8",
-    "streamkey": "#hash_5879e7dd03d8d659",
+    "streamkey": "#melee_actionfigure_t8_soundbank",
     "scrstr_8c8": [
         "tag_camo_darkmatter",
         "tag_camo_diamond"

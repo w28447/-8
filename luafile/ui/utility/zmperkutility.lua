@@ -9,7 +9,7 @@ CoD.ZMPerkUtility.PerkVaporAltarNamesPerStory = {
 	{
 		0x73FDE36F4E19E34,
 		0xD3F294208202CC1,
-		0x8BC38BA30AECE69,
+		"zombie/soda",
 		0x58E91856722D715
 	},
 	{
@@ -35,8 +35,8 @@ CoD.ZMPerkUtility.PerkToBooleanGameSettingsHash = {
 	[0x82D5139616F522B] = {
 		0x7C5CC2D9B6CA16C
 	},
-	[0xE58FF2DF5BFD9B3] = {
-		0x31B19618CA4F41
+	["perk_dying_wish"] = {
+		"zmperksdyingwish"
 	},
 	[0x52086E4C25A6FE4] = {
 		0x690C4DCC61973EC
@@ -70,7 +70,7 @@ CoD.ZMPerkUtility.PerkToBooleanGameSettingsHash = {
 		0x9C28F0B2A623FA5
 	},
 	[0x334F2C7E1B57493] = {
-		0x75EC38C3F3487D5
+		"zmperkswolfprotector"
 	},
 	[0x73D5CE33DD7CDE9] = {
 		0x44B157A9FA6573D
@@ -321,7 +321,7 @@ DataSources.PerkSelectList = DataSourceHelpers.ListSetup( "PerkSelectList", func
 					displayName = f18_local10.displayName,
 					image = CoD.CACUtility.GetPreviewImageLarge( f18_local2, f18_local10 ),
 					description = f18_local10.description,
-					modifierName = Engine[0xF9F1239CFD921FE]( 0xEDA68561505E676, f18_local10[0x18FC01EA0DDD81D] or 0x0 ),
+					modifierName = Engine[0xF9F1239CFD921FE]( 0xEDA68561505E676, f18_local10["modifierdisplayname"] or 0x0 ),
 					modifierDesc = f18_local10[0xF3026F8ACAB12DA] or 0x0,
 					isRestricted = CoD.CACUtility.IsPerkRestricted( CoD.ZMPerkUtility.PerkToBooleanGameSettingsHash[f18_local10.nameHash], false )
 				},
@@ -425,7 +425,7 @@ CoD.ZMPerkUtility.PerkSlotFocused = function ( f26_arg0, f26_arg1, f26_arg2 )
 	end
 	local f26_local4 = f26_local3.displayName
 	local f26_local5 = f26_local3.description
-	local f26_local6 = Engine[0xF9F1239CFD921FE]( 0xEDA68561505E676, f26_local3[0x18FC01EA0DDD81D] or 0x0 )
+	local f26_local6 = Engine[0xF9F1239CFD921FE]( 0xEDA68561505E676, f26_local3["modifierdisplayname"] or 0x0 )
 	local f26_local7 = f26_local3[0xF3026F8ACAB12DA] or 0x0
 	if f26_arg0.PerkName and f26_local4 then
 		f26_arg0.PerkName:setText( LocalizeToUpperString( f26_local4 ) )
@@ -449,8 +449,8 @@ end
 
 CoD.ZMPerkUtility.GetPerkModifierName = function ( f27_arg0, f27_arg1 )
 	local f27_local0 = Engine[0x87395843D470BE2]( f27_arg1, Enum[0x6EB546760F890D2][0x9AF82A21BAD026D], Enum.eModes[0x3723205FAE52C4A] )
-	if f27_local0 and f27_local0[0x18FC01EA0DDD81D] then
-		return Engine[0xF9F1239CFD921FE]( 0xEDA68561505E676, f27_local0[0x18FC01EA0DDD81D] )
+	if f27_local0 and f27_local0["modifierdisplayname"] then
+		return Engine[0xF9F1239CFD921FE]( 0xEDA68561505E676, f27_local0["modifierdisplayname"] )
 	else
 		return f27_arg1
 	end

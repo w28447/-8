@@ -67,7 +67,7 @@ scriptparsetree,#scripts/zm_common/zm_cleanup_mgr.gsc
 scriptparsetree,#scripts/zm/perk/zm_perk_mod_quick_revive.gsc
 scriptparsetree,#scripts/zm_common/trials/zm_trial_round_ending_zone.gsc
 scriptparsetree,#scripts/zm_common/trials/zm_trial_upgrade_multiple.gsc
-scriptparsetree,#hash_e59b4cddfde38fe
+scriptparsetree,#scripts/zm_common/trials/zm_trial_kill_in_area.gsc
 scriptparsetree,#scripts/zm_common/zm_grappler.csc
 scriptparsetree,#scripts/zm_common/talisman/zm_talisman_perk_start_4.gsc
 scriptparsetree,#scripts/zm_common/talisman/zm_talisman_perk_reducecost_4.gsc
@@ -144,7 +144,7 @@ scriptparsetree,#scripts/zm_common/zm_trial_util.gsc
 scriptparsetree,#scripts/zm_common/trials/zm_trial_damage_drains_points.gsc
 scriptparsetree,#scripts/zm_common/zm_utility_zstandard.csc
 scriptparsetree,#scripts/zm/perk/zm_perk_electric_cherry.gsc
-scriptparsetree,#hash_28bfe6df1650ab79
+scriptparsetree,#scripts/zm_common/trials/zm_trial_death_from_above.gsc
 scriptparsetree,#scripts/zm/perk/zm_perk_mod_stronghold.gsc
 scriptparsetree,#scripts/zm_common/zm_quick_spawning.gsc
 scriptparsetree,#scripts/zm_common/zm_magicbox.csc
@@ -357,7 +357,7 @@ scriptparsetree,#scripts/zm_common/trials/zm_trial_disable_buys.csc
 scriptparsetree,#scripts/zm_common/trials/zm_trial_disable_perks.gsc
 scriptparsetree,#scripts/zm/perk/zm_perk_tortoise.gsc
 scriptparsetree,#scripts/zm_common/zm_powerups.csc
-scriptparsetree,#hash_6ff72d27da99fb12
+scriptparsetree,#scripts/zm_common/trials/zm_trial_fast_travel_rush.gsc
 scriptparsetree,#scripts/zm_common/trials/zm_trial_no_powerups.gsc
 scriptparsetree,#scripts/zm_common/talisman/zm_talisman_extra_claymore.gsc
 scriptparsetree,#scripts/zm/perk/zm_perk_death_perception.gsc

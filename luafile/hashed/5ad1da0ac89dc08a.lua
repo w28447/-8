@@ -35,7 +35,7 @@ CoD.SpawnSelectLocationMarker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.SpawnIconOutline = SpawnIconOutline
 	
 	local SpawnSelectLock = LUI.UIImage.new( 0, 0, 74.5, 122.5, 0, 0, 40.5, 88.5 )
-	SpawnSelectLock:setImage( RegisterImage( 0xB40AE443453183B ) )
+	SpawnSelectLock:setImage( RegisterImage( "uie_ui_hud_selectspawn_lock" ) )
 	SpawnSelectLock:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( SpawnSelectLock )
 	self.SpawnSelectLock = SpawnSelectLock
@@ -43,7 +43,7 @@ CoD.SpawnSelectLocationMarker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local SpawnSelectLockAdd = LUI.UIImage.new( 0, 0, 74.5, 122.5, 0, 0, 40.5, 88.5 )
 	SpawnSelectLockAdd:setAlpha( 0 )
 	SpawnSelectLockAdd:setScale( 1.1, 1.1 )
-	SpawnSelectLockAdd:setImage( RegisterImage( 0xB40AE443453183B ) )
+	SpawnSelectLockAdd:setImage( RegisterImage( "uie_ui_hud_selectspawn_lock" ) )
 	SpawnSelectLockAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( SpawnSelectLockAdd )
 	self.SpawnSelectLockAdd = SpawnSelectLockAdd

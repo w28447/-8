@@ -367,7 +367,7 @@ LUI.createMenu.StartMenu_Main = function ( f1_arg0, f1_arg1 )
 			CoD.Menu.SetButtonLabel( f29_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x0, nil, nil )
 			return false
 		elseif IsInGame() and not IsLobbyNetworkModeLAN() and not IsDemoPlaying() and not IsPC() and not IsGameTypeCombatTraining() then
-			CoD.Menu.SetButtonLabel( f29_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x478E0BA47CFB4A8, nil, nil )
+			CoD.Menu.SetButtonLabel( f29_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "menu/social", nil, nil )
 			return true
 		else
 			return false

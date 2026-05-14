@@ -3,7 +3,7 @@
     "baseWeapon": "#eq_shroud",
     "displayname": "#weapon/radar_shroud",
     "weapon70": "#eq_shroud",
-    "streamkey": "#hash_26aa555160aa7b6b",
+    "streamkey": "#eq_shroud_soundbank",
     "scrstr_8c8": [
         "tag_equipment_hero"
     ],
@@ -67,5 +67,5 @@
     "#hash_96850284": "#jammer_sensordart",
     "#hash_26f68e75": "#icepick_sensordart",
     "bounceImpactFX": "#bullet_large_enter",
-    "bounceImpactSounds": "#hash_6ea4f85282d97815"
+    "bounceImpactSounds": "#sensor_dart_projectile"
 }

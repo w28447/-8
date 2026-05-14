@@ -132,7 +132,7 @@ function function_88df772a( player, var_c895e25d, var_b1100790, var_f0996295 = 0
     
     if ( !var_f0996295 )
     {
-        player endoncallback( &function_57490fd5, #"hash_2a4a6c3c411261d8" );
+        player endoncallback( &function_57490fd5, #"close_zm_arcade_timer" );
     }
     
     self function_ecffd525( player );
@@ -232,7 +232,7 @@ function function_9bab3960( player, b_force_close = 0, var_b1100790 )
     {
         player.var_e325b124 = 0;
         self close( player );
-        player notify( #"hash_2a4a6c3c411261d8" );
+        player notify( #"close_zm_arcade_timer" );
         player.var_26b0547b = undefined;
         
         if ( b_force_close )

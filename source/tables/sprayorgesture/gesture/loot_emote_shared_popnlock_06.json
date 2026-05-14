@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_shared_popnlock_06",
+    "type": "#gesture",
+    "gesture": "#boast_popnlock_06",
+    "gesture2": "#boast_popnlock_06_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/breakn_for_beats",
+        "icon": "image#ui_icon_emotes_popnlock6",
+        "isdefault": 0
+    }
+}

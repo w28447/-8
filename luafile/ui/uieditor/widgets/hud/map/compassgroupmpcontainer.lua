@@ -27,7 +27,7 @@ CoD.CompassGroupMPContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.WZBlur = WZBlur
 	
 	local WZBacker = LUI.UIImage.new( 0, 0, 12, 332, 0, 0, 19, 331 )
-	WZBacker:setImage( RegisterImage( 0xB2E3E92561D4EB9 ) )
+	WZBacker:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_map_square_backer" ) )
 	self:addElement( WZBacker )
 	self.WZBacker = WZBacker
 	

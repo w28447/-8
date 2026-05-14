@@ -318,7 +318,7 @@ local f0_local13 = function ( f33_arg0, f33_arg1, f33_arg2, f33_arg3, f33_arg4, 
 	local f33_local2 = {}
 	local f33_local3 = 0
 	if 0 < #f33_local0 then
-		local f33_local4 = Engine.GetProfileVarInt( f33_arg0, 0xCA67B57C1673886 ) ~= 0
+		local f33_local4 = Engine.GetProfileVarInt( f33_arg0, "show_real_names" ) ~= 0
 		for f33_local28, f33_local25 in pairs( f33_local0 ) do
 			local f33_local9, f33_local8 = f0_local6( f33_arg0, f33_local25.xuid )
 			if CoD.LobbyUtility.IsPlayerInMyParty( f33_local25.xuid ) then

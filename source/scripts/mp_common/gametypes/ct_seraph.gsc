@@ -178,7 +178,7 @@ function function_6db6572b()
     level.var_7a0aaea2 = 216000;
     
     /#
-        level thread function_849be68a();
+        level thread devgui_ct_seraph();
     #/
 }
 
@@ -335,7 +335,7 @@ function function_37adbd8f()
     level.var_e6db911d = 1;
     level.var_6a0c3e3e = 1;
     ct_bots::deactivate_bots();
-    level thread ct_utils::function_bfa522d1( 0 );
+    level thread ct_utils::simulation_pulse( 0 );
     level.var_571c3787 = 1;
 }
 
@@ -416,7 +416,7 @@ function function_1ca79c02( var_edc95125 )
     
     if ( !level flag::get( "mission_failed" ) )
     {
-        level thread ct_utils::function_bfa522d1( 0 );
+        level thread ct_utils::simulation_pulse( 0 );
     }
     
     waitframe( 1 );
@@ -867,10 +867,10 @@ function function_8aa1c633()
     // Params 0
     // Checksum 0x17996f25, Offset: 0x28c0
     // Size: 0x1b8, Type: dev
-    function function_849be68a()
+    function devgui_ct_seraph()
     {
         sessionmode = currentsessionmode();
-        setdvar( #"hash_527da51d610a31b1", "<dev string:x38>" );
+        setdvar( #"devgui_ct_seraph", "<dev string:x38>" );
         level flag::init( "<dev string:x3b>" );
         
         if ( sessionmode != 4 )
@@ -881,7 +881,7 @@ function function_8aa1c633()
         while ( true )
         {
             wait 0.25;
-            cmd = getdvarstring( #"hash_527da51d610a31b1", "<dev string:x38>" );
+            cmd = getdvarstring( #"devgui_ct_seraph", "<dev string:x38>" );
             
             if ( cmd == "<dev string:x38>" )
             {
@@ -900,7 +900,7 @@ function function_8aa1c633()
                     break;
             }
             
-            setdvar( #"hash_527da51d610a31b1", "<dev string:x38>" );
+            setdvar( #"devgui_ct_seraph", "<dev string:x38>" );
         }
     }
 

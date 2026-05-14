@@ -64317,7 +64317,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_1f0fcc0a47fd257b",
+                    "value": "#amb_plastic_flag",
                     "unk1a": true
                 }
             ]
@@ -64371,7 +64371,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_1f0fcc0a47fd257b",
+                    "value": "#amb_plastic_flag",
                     "unk1a": true
                 }
             ]
@@ -64425,7 +64425,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_1f0fcc0a47fd257b",
+                    "value": "#amb_plastic_flag",
                     "unk1a": true
                 }
             ]
@@ -64479,7 +64479,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_1f0fcc0a47fd257b",
+                    "value": "#amb_plastic_flag",
                     "unk1a": true
                 }
             ]
@@ -66501,7 +66501,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_e60d0cf17a4f922",
+                    "value": "#amb_metal_rattle_1",
                     "unk1a": true
                 },
                 {
@@ -66549,7 +66549,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_e60d0cf17a4f922",
+                    "value": "#amb_metal_rattle_1",
                     "unk1a": true
                 },
                 {
@@ -66609,7 +66609,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_e60cfcf17a4f76f",
+                    "value": "#amb_metal_rattle_2",
                     "unk1a": true
                 }
             ]

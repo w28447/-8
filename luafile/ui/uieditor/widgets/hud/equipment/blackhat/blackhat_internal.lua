@@ -31,7 +31,7 @@ CoD.BlackHat_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local BgHacking = LUI.UIImage.new( 0, 1, -36, 40, 0, 1, 0, 0 )
 	BgHacking:setAlpha( 0 )
-	BgHacking:setImage( RegisterImage( 0x7489DE99C4D303D ) )
+	BgHacking:setImage( RegisterImage( "uie_t7_hud_blackhat_bg_hacking" ) )
 	self:addElement( BgHacking )
 	self.BgHacking = BgHacking
 	
@@ -416,7 +416,7 @@ CoD.BlackHat_Internal.__clipsPerState = {
 			
 			f22_arg0.StatusText:completeAnimation()
 			f22_arg0.StatusText:setAlpha( 1 )
-			f22_arg0.StatusText:setText( Engine[0xF9F1239CFD921FE]( 0x28A0321A7A231A5 ) )
+			f22_arg0.StatusText:setText( Engine[0xF9F1239CFD921FE]( "mpui/blackhat_team_hacking" ) )
 			f22_local3( f22_arg0.StatusText )
 			f22_arg0.PercentText:beginAnimation( 870 )
 			f22_arg0.PercentText:setAlpha( 1 )
@@ -474,7 +474,7 @@ CoD.BlackHat_Internal.__clipsPerState = {
 			
 			f27_arg0.StatusText:completeAnimation()
 			f27_arg0.StatusText:setAlpha( 1 )
-			f27_arg0.StatusText:setText( Engine[0xF9F1239CFD921FE]( 0xDEDBD93286F117 ) )
+			f27_arg0.StatusText:setText( Engine[0xF9F1239CFD921FE]( "mpui/blackhat_hacking" ) )
 			f27_local3( f27_arg0.StatusText )
 			f27_arg0.PercentText:beginAnimation( 870 )
 			f27_arg0.PercentText:setAlpha( 1 )

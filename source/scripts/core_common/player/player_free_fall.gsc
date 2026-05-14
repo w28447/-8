@@ -1,4 +1,4 @@
-#using script_1d29de500c266470;
+#using scripts\core_common\player\player_free_fall_util.gsc;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\clientfield_shared;
 #using scripts\core_common\system_shared;
@@ -37,7 +37,7 @@ function __init__()
 // Size: 0x56
 function get_wingsuit_model()
 {
-    wingsuit = self namespace_eb06e24d::get_wingsuit();
+    wingsuit = self player_free_fall_util::get_wingsuit();
     
     if ( self util::is_female() )
     {
@@ -64,7 +64,7 @@ function private function_c9a18304( eventstruct )
         
         if ( !isdefined( eventstruct.var_695a7111 ) || eventstruct.var_695a7111 )
         {
-            parachute = self namespace_eb06e24d::get_parachute();
+            parachute = self player_free_fall_util::get_parachute();
             parachute_weapon = parachute.( "parachute" );
             
             if ( isdefined( parachute_weapon ) )
@@ -89,7 +89,7 @@ function private function_c9a18304( eventstruct )
     
     if ( !self function_9a0edd92() )
     {
-        parachute = self namespace_eb06e24d::get_parachute();
+        parachute = self player_free_fall_util::get_parachute();
         parachute_weapon = parachute.( "parachute" );
         
         if ( isdefined( parachute_weapon ) )
@@ -127,7 +127,7 @@ function private function_b6e83203( delay )
         wait delay;
     }
     
-    parachute = self namespace_eb06e24d::get_parachute();
+    parachute = self player_free_fall_util::get_parachute();
     var_dbb94a = parachute.( "parachuteLit" );
     function_6aac1790( var_dbb94a );
 }
@@ -144,7 +144,7 @@ function private function_26d46af3( eventstruct )
         return;
     }
     
-    parachute = self namespace_eb06e24d::get_parachute();
+    parachute = self player_free_fall_util::get_parachute();
     parachute_weapon = parachute.( "parachute" );
     var_dbb94a = parachute.( "parachuteLit" );
     

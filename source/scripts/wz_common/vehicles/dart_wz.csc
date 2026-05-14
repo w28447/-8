@@ -56,7 +56,7 @@ function function_2d1ff9c7( localclientnum, oldval, newval, bnewent, binitialsna
         return;
     }
     
-    self notify( #"hash_16c59bda348653cd" );
+    self notify( #"stop_static_postfx" );
     
     if ( isdefined( self.var_ed19a23 ) && self.var_ed19a23 )
     {
@@ -88,7 +88,7 @@ function private dart_static_postfx( localclientnum )
 {
     self notify( "3edfd3cf94760371" );
     self endon( "3edfd3cf94760371" );
-    self endon( #"death", #"exit_vehicle", #"hash_16c59bda348653cd" );
+    self endon( #"death", #"exit_vehicle", #"stop_static_postfx" );
     
     while ( true )
     {

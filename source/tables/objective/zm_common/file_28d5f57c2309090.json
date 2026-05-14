@@ -15,7 +15,7 @@
     "shouldCullDistance": false,
     "cullDistance": 300,
     "hasLowAmmoState": false,
-    "waypointText": "#hash_13cb2c3e51e9ef2a",
+    "waypointText": "#zmtrials/defend_area",
     "waypointImage": "#uie_t7_zm_hud_obj_goto",
     "unk30": 300,
     "bundle": {

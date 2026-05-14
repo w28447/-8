@@ -54,7 +54,7 @@ function blind_apply( var_756fda07, weapon, applicant )
     
     if ( isdefined( blindarray[ var_c94d654b ] ) && blindarray[ var_c94d654b ] + 3000 < gettime() )
     {
-        if ( isdefined( weapon ) && weapon == getweapon( #"hash_3f62a872201cd1ce" ) )
+        if ( isdefined( weapon ) && weapon == getweapon( #"swat_grenade_payload" ) )
         {
             if ( isdefined( level.playgadgetsuccess ) )
             {
@@ -69,7 +69,7 @@ function blind_apply( var_756fda07, weapon, applicant )
                 
                 if ( applicant.var_a467e27f == ( isdefined( var_9194a036 ) ? var_9194a036 : 0 ) )
                 {
-                    applicant thread [[ level.playgadgetsuccess ]]( getweapon( #"hash_3f62a872201cd1ce" ), undefined, self.owner, undefined );
+                    applicant thread [[ level.playgadgetsuccess ]]( getweapon( #"swat_grenade_payload" ), undefined, self.owner, undefined );
                 }
             }
         }

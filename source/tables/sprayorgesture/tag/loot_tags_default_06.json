@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_default_06",
+    "type": "#tag",
+    "material": "#hash_7b6cdcca6e72d257",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#tags/default_06",
+        "icon": "image#ui_icon_tags_default_06",
+        "isdefault": 1
+    }
+}

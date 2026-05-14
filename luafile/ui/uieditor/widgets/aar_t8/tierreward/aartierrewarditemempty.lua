@@ -41,7 +41,7 @@ CoD.AARTierRewardItemEmpty.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local EmptyCrossPattern = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	EmptyCrossPattern:setRGB( 0.26, 0.26, 0.26 )
 	EmptyCrossPattern:setAlpha( 0.4 )
-	EmptyCrossPattern:setImage( RegisterImage( 0x7CE2B4A880C99EE ) )
+	EmptyCrossPattern:setImage( RegisterImage( "uie_ui_menu_common_empty_corner_pips" ) )
 	self:addElement( EmptyCrossPattern )
 	self.EmptyCrossPattern = EmptyCrossPattern
 	

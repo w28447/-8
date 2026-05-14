@@ -2,9 +2,9 @@
     "name": "#bowie_flourish_story_1_zm",
     "baseWeapon": "#bowie_flourish_story_1",
     "displayname": "#zmweapon/bowie",
-    "xhash_60": "#hash_15ed4cc1acafbdb4",
+    "xhash_60": "#au_bowie_knife",
     "weapon70": "#bowie_knife_story_1",
-    "streamkey": "#hash_409e80724aec877e",
+    "streamkey": "#bowie_flourish_story_1_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",

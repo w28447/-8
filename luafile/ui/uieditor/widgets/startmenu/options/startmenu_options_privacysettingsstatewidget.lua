@@ -100,7 +100,7 @@ CoD.StartMenu_Options_PrivacySettingsStateWidget.__clipsPerState = {
 			f9_arg0.SpinnerFlipbook:setAlpha( 0 )
 			f9_arg0.clipFinished( f9_arg0.SpinnerFlipbook )
 			f9_arg0.StateText:completeAnimation()
-			f9_arg0.StateText:setText( Engine[0xF9F1239CFD921FE]( 0x4B5DCFB002087D ) )
+			f9_arg0.StateText:setText( Engine[0xF9F1239CFD921FE]( "menu/privacy_settings_state_complete" ) )
 			f9_arg0.clipFinished( f9_arg0.StateText )
 		end
 	},

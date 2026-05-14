@@ -1,7 +1,7 @@
 {
     "name": "#zitem_riotshield_part_3_zm",
     "baseWeapon": "#zitem_riotshield_part_3",
-    "streamkey": "#hash_6cde3361f603c994",
+    "streamkey": "#zitem_riotshield_part_3_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

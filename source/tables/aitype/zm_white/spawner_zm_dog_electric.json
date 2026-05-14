@@ -6,7 +6,7 @@
     "team": "TEAM_AXIS",
     "species": "#dog",
     "archeType": "#zombie_dog",
-    "scoreType": "#hash_59f8816e5c2e5d4c",
+    "scoreType": "#zombie_dog_electric",
     "movementType": "#zombie_dog",
     "spawnInfluencers": [
         "#none",

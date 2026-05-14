@@ -826,19 +826,19 @@ function getdomflagusestring( label, neutralized )
         switch ( label )
         {
             case #"_a":
-                string = #"hash_3ff1c88b4360ea84";
+                string = #"mp/dom_flag_a_neutralized_by";
                 break;
             case #"_b":
                 string = #"hash_dd6191acefd6847";
                 break;
             case #"_c":
-                string = #"hash_25a2a0aff40c76aa";
+                string = #"mp/dom_flag_c_neutralized_by";
                 break;
             case #"_d":
-                string = #"hash_2bcd7171f9aae4a5";
+                string = #"mp/dom_flag_d_neutralized_by";
                 break;
             case #"_e":
-                string = #"hash_5334d65b46b55660";
+                string = #"mp/dom_flag_e_neutralized_by";
                 break;
             default:
                 break;
@@ -2511,7 +2511,7 @@ function function_1609a882( var_c1e98979 )
             averagetime = var_9669dd4c / domflag.var_249009fd.size;
         }
         
-        flagcapturedata = { #gametime:function_f8d53445(), #round:game.roundsplayed, #label:domflag gameobjects::get_label(), #firstcapture:domflag.firstcapture, #var_afd986ce:isdefined( averagetime ) ? averagetime : 0, #timescaptured:domflag.timescaptured };
+        flagcapturedata = { #gametime:function_f8d53445(), #round:game.roundsplayed, #label:domflag gameobjects::get_label(), #firstcapture:domflag.firstcapture, #averagetimeheld:isdefined( averagetime ) ? averagetime : 0, #timescaptured:domflag.timescaptured };
         function_92d1707f( #"dlog_event_flagcapturedata", flagcapturedata );
     }
 }

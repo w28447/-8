@@ -25,7 +25,7 @@ LUI.createMenu.WZTrialUpsellPopup = function ( f1_arg0, f1_arg1 )
 	self.FullscreenPopupTemplate = FullscreenPopupTemplate
 	
 	local PopupImage = LUI.UIImage.new( 0.5, 0.5, -960, -324, 0.5, 0.5, -213.5, 230.5 )
-	PopupImage:setImage( RegisterImage( 0xCDD43147C7EA23E ) )
+	PopupImage:setImage( RegisterImage( "uie_ui_menu_blackmarket_popup_image" ) )
 	self:addElement( PopupImage )
 	self.PopupImage = PopupImage
 	

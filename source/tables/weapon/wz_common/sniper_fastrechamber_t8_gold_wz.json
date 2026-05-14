@@ -5,7 +5,7 @@
     "xhash_60": "#hash_68c2da34bfa1b0ba",
     "weapon70": "#sniper_fastrechamber_t8_gold",
     "weapon890": "#sniper_fastrechamber_t8_wz",
-    "streamkey": "#hash_21e4eb2def891db0",
+    "streamkey": "#sniper_fastrechamber_t8_gold_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -68,7 +68,7 @@
     "sound210": "#hash_3f969a2cbe6bf119",
     "sound240": "#hash_474a10cd847c7803",
     "sound250": "#hash_146e19cd67fe19de",
-    "sound260": "#hash_515f54aa1f553686",
+    "sound260": "#prj_crack_supersonic",
     "sound310": "#hash_553957b278d8e879",
     "sound5e0": "#fly_scope_zoom",
     "sound600": "#hash_5c9addf2686f77e2",

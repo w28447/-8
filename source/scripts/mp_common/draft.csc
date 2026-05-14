@@ -58,7 +58,7 @@ function __init__()
     level.var_8cb8d474[ #"axis" ][ 3 ] = #"draft_player_struct_3_axis";
     level.var_8cb8d474[ #"axis" ][ 4 ] = #"draft_player_struct_4_axis";
     level.var_a72b250f = [];
-    level.var_a72b250f[ #"free" ] = #"hash_24d789c80dba10e6";
+    level.var_a72b250f[ #"free" ] = #"match_intro_free";
     level.var_a72b250f[ #"allies" ] = #"match_intro_allies";
     level.var_a72b250f[ #"axis" ] = #"match_intro_axis";
     level.var_a72b250f[ #"spectator" ] = #"match_intro_allies";

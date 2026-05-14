@@ -1,11 +1,11 @@
 require( "ui/uieditor/widgets/callingcards/callingcards_asset_dragon" )
 
-CoD[0x8482E5A4D7D79F3] = InheritFrom( LUI.UIElement )
-CoD[0x8482E5A4D7D79F3].__defaultWidth = 960
-CoD[0x8482E5A4D7D79F3].__defaultHeight = 240
-CoD[0x8482E5A4D7D79F3].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD["callingcards_dark_ops_master"] = InheritFrom( LUI.UIElement )
+CoD["callingcards_dark_ops_master"].__defaultWidth = 960
+CoD["callingcards_dark_ops_master"].__defaultHeight = 240
+CoD["callingcards_dark_ops_master"].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0x8482E5A4D7D79F3] )
+	self:setClass( CoD["callingcards_dark_ops_master"] )
 	self.id = "CallingCards_Dark_Ops_Master"
 	self.soundSet = "default"
 	self.anyChildUsesUpdateState = true
@@ -72,7 +72,7 @@ CoD[0x8482E5A4D7D79F3].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0x8482E5A4D7D79F3].__resetProperties = function ( f2_arg0 )
+CoD["callingcards_dark_ops_master"].__resetProperties = function ( f2_arg0 )
 	f2_arg0.dragon01:completeAnimation()
 	f2_arg0.soldierGlow:completeAnimation()
 	f2_arg0.dragon02:completeAnimation()
@@ -83,7 +83,7 @@ CoD[0x8482E5A4D7D79F3].__resetProperties = function ( f2_arg0 )
 	f2_arg0.soldierGun:setTopBottom( 0, 0, 0, 240 )
 end
 
-CoD[0x8482E5A4D7D79F3].__clipsPerState = {
+CoD["callingcards_dark_ops_master"].__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()
@@ -202,7 +202,7 @@ CoD[0x8482E5A4D7D79F3].__clipsPerState = {
 		end
 	}
 }
-CoD[0x8482E5A4D7D79F3].__onClose = function ( f20_arg0 )
+CoD["callingcards_dark_ops_master"].__onClose = function ( f20_arg0 )
 	f20_arg0.dragon01:close()
 end
 

@@ -3,7 +3,7 @@
     "baseWeapon": "#melee_amuletfist_t8",
     "displayname": "#weapon/melee_amuletfist_t8",
     "weapon70": "#melee_amuletfist_t8",
-    "streamkey": "#hash_8c8c1501b8e93df",
+    "streamkey": "#melee_amuletfist_t8_soundbank",
     "scrstr_8c8": [
         "tag_camo_darkmatter",
         "tag_camo_diamond"

@@ -1,7 +1,7 @@
 {
     "keys": [
         {
-            "name": "#hash_3d383abe102e4904",
+            "name": "#mp_seaside_all_stream",
             "xPakEntry": {
                 "key": "#hash_ff686d0af7e4fe1a",
                 "offset": 0,
@@ -20,7 +20,7 @@
             "keyFlags": 3
         },
         {
-            "name": "#hash_3743eded7ff29c41",
+            "name": "#mp_seaside_all_loaded",
             "xPakEntry": {
                 "key": "#hash_eaa6d62e8ce97cc8",
                 "offset": 0,
@@ -6708,7 +6708,7 @@
             "keyFlags": 0
         },
         {
-            "name": "#hash_7b3da40292586cce",
+            "name": "#mp_seaside_sst_0_0",
             "xPakEntry": {
                 "key": "#hash_e75d808926488c4a",
                 "offset": 0,

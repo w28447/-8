@@ -1,4 +1,4 @@
-#using script_59a783d756554a80;
+#using scripts\zm\zm_office_vo_hooks.gsc;
 #using scripts\core_common\aat_shared;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\clientfield_shared;

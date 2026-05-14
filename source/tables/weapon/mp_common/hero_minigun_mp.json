@@ -3,7 +3,7 @@
     "baseWeapon": "#hero_minigun",
     "displayname": "#weapon/hero_minigun",
     "weapon70": "#hero_minigun",
-    "streamkey": "#hash_61e5eaa0c10b567",
+    "streamkey": "#hero_minigun_soundbank",
     "scrstr_8c8": [
         "tag_minigun_flaps"
     ],

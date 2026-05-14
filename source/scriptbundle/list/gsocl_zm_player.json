@@ -1,0 +1,9 @@
+{
+    "name": "#gsocl_zm_player",
+    "type": "gamesettingoptioncategory",
+    "bundles": [
+        "#gamesettingoptioncategory/#gsoc_zm_health",
+        "#gamesettingoptioncategory/#gsoc_zm_points",
+        "#gamesettingoptioncategory/#gsoc_zm_laststand"
+    ]
+}

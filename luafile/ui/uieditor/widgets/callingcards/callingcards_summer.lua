@@ -11,7 +11,7 @@ CoD[0xD8E26CF160AEA12].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local background = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	background:setImage( RegisterImage( 0x97E5029D0A2DB72 ) )
+	background:setImage( RegisterImage( "uie_ui_icon_callingcards_summer_background" ) )
 	self:addElement( background )
 	self.background = background
 	
@@ -26,7 +26,7 @@ CoD[0xD8E26CF160AEA12].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.duck = duck
 	
 	local legs = LUI.UIImage.new( 0, 0, 87, 663, 0, 0, 53, 357 )
-	legs:setImage( RegisterImage( 0xBAFFA302EC83107 ) )
+	legs:setImage( RegisterImage( "uie_ui_icon_callingcards_summer_legs" ) )
 	self:addElement( legs )
 	self.legs = legs
 	

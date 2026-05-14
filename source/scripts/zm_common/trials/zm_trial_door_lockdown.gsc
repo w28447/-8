@@ -82,7 +82,7 @@ function is_active()
 // Size: 0x190
 function function_58fc4e38( n_delay = 0 )
 {
-    level endon( #"hash_7646638df88a3656" );
+    level endon( #"trial_round_end" );
     wait n_delay;
     a_s_blockers = struct::get_array( "trials_door_lockdown_clip" );
     
@@ -105,7 +105,7 @@ function function_58fc4e38( n_delay = 0 )
 // Size: 0x128
 function function_92f23ef0( n_delay = 0 )
 {
-    level endon( #"hash_7646638df88a3656" );
+    level endon( #"trial_round_end" );
     wait n_delay;
     a_s_blockers = struct::get_array( "trials_door_lockdown_clip" );
     

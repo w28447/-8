@@ -29,10 +29,10 @@ function function_6df391ab()
     {
         wz_common_fixup::item_replacer( var_d2223309, var_74257310, #"quad_wz_vehicle", #"" );
         wz_common_fixup::item_replacer( var_d2223309, var_74257310, #"quad_wz_vehicle_black", #"" );
-        wz_common_fixup::item_replacer( var_d2223309, var_74257310, #"hash_7df5c3630a76391e", #"" );
+        wz_common_fixup::item_replacer( var_d2223309, var_74257310, #"quad_wz_vehicle_blue", #"" );
         wz_common_fixup::item_replacer( var_d2223309, var_74257310, #"quad_wz_vehicle_green", #"" );
         wz_common_fixup::item_replacer( var_d2223309, var_74257310, #"quad_wz_vehicle_police", #"" );
-        wz_common_fixup::item_replacer( var_d2223309, var_74257310, #"hash_2a97e28588c0e70d", #"" );
+        wz_common_fixup::item_replacer( var_d2223309, var_74257310, #"quad_wz_vehicle_red", #"" );
         wz_common_fixup::item_replacer( var_d2223309, var_74257310, #"quad_wz_vehicle_tan", #"" );
     }
     
@@ -93,7 +93,7 @@ function function_6df391ab()
         wz_common_fixup::item_replacer( var_d2223309, var_74257310, #"helicopter_attack_wz_vehicle_black", #"" );
         wz_common_fixup::item_replacer( var_d2223309, var_74257310, #"helicopter_attack_wz_vehicle_green", #"" );
     }
-    else if ( !( isdefined( getgametypesetting( #"wztestallvehicles" ) ) && getgametypesetting( #"wztestallvehicles" ) ) && !( isdefined( getgametypesetting( #"wzbigteambattle" ) ) && getgametypesetting( #"wzbigteambattle" ) ) && !( isdefined( getgametypesetting( #"hash_23e09b48546a7e3b" ) ) && getgametypesetting( #"hash_23e09b48546a7e3b" ) ) )
+    else if ( !( isdefined( getgametypesetting( #"wztestallvehicles" ) ) && getgametypesetting( #"wztestallvehicles" ) ) && !( isdefined( getgametypesetting( #"wzbigteambattle" ) ) && getgametypesetting( #"wzbigteambattle" ) ) && !( isdefined( getgametypesetting( #"wzheavymetalheroesvehicles" ) ) && getgametypesetting( #"wzheavymetalheroesvehicles" ) ) )
     {
         wz_common_fixup::item_replacer( var_b5014996, var_f8a4c541, #"open_skyscraper_vehicles_heli", #"open_skyscraper_vehicles_attack_heli" );
         wz_common_fixup::item_replacer( var_b5014996, var_f8a4c541, #"open_skyscraper_vehicles_heli_clearing", #"open_skyscraper_vehicles_attack_heli_clearing" );
@@ -131,7 +131,7 @@ function function_6df391ab()
     
     if ( !( isdefined( getgametypesetting( #"wzenablereplacercar" ) ) && getgametypesetting( #"wzenablereplacercar" ) ) )
     {
-        wz_common_fixup::item_replacer( var_d2223309, var_74257310, #"hash_4bc7cb3d2c929e11", #"" );
+        wz_common_fixup::item_replacer( var_d2223309, var_74257310, #"muscle_car_wz_vehicle_replacer", #"" );
     }
     
     if ( !( isdefined( getgametypesetting( #"wzenablesuv" ) ) && getgametypesetting( #"wzenablesuv" ) ) )
@@ -153,12 +153,12 @@ function function_6df391ab()
         wz_common_fixup::item_replacer( var_d2223309, var_74257310, #"tank_wz_vehicle_grey", #"" );
         wz_common_fixup::item_replacer( var_d2223309, var_74257310, #"tank_wz_vehicle_tan", #"" );
     }
-    else if ( !( isdefined( getgametypesetting( #"wztestallvehicles" ) ) && getgametypesetting( #"wztestallvehicles" ) ) && !( isdefined( getgametypesetting( #"hash_23e09b48546a7e3b" ) ) && getgametypesetting( #"hash_23e09b48546a7e3b" ) ) )
+    else if ( !( isdefined( getgametypesetting( #"wztestallvehicles" ) ) && getgametypesetting( #"wztestallvehicles" ) ) && !( isdefined( getgametypesetting( #"wzheavymetalheroesvehicles" ) ) && getgametypesetting( #"wzheavymetalheroesvehicles" ) ) )
     {
         wz_common_fixup::item_replacer( var_b5014996, var_f8a4c541, #"open_skyscraper_vehicles_cargo_truck", #"open_skyscraper_vehicles_cargo_truck_extra_small" );
     }
     
-    if ( !( isdefined( getgametypesetting( #"wzenablebountyhuntervehicles" ) ) && getgametypesetting( #"wzenablebountyhuntervehicles" ) ) && !( isdefined( getgametypesetting( #"hash_23e09b48546a7e3b" ) ) && getgametypesetting( #"hash_23e09b48546a7e3b" ) ) && !( isdefined( getgametypesetting( #"wzenableheavymetalvehicles" ) ) && getgametypesetting( #"wzenableheavymetalvehicles" ) ) && !( isdefined( getgametypesetting( #"wzbigteambattle" ) ) && getgametypesetting( #"wzbigteambattle" ) ) && !( isdefined( getgametypesetting( #"wzwetworks" ) ) && getgametypesetting( #"wzwetworks" ) ) && !( isdefined( getgametypesetting( #"wztestallvehicles" ) ) && getgametypesetting( #"wztestallvehicles" ) ) )
+    if ( !( isdefined( getgametypesetting( #"wzenablebountyhuntervehicles" ) ) && getgametypesetting( #"wzenablebountyhuntervehicles" ) ) && !( isdefined( getgametypesetting( #"wzheavymetalheroesvehicles" ) ) && getgametypesetting( #"wzheavymetalheroesvehicles" ) ) && !( isdefined( getgametypesetting( #"wzenableheavymetalvehicles" ) ) && getgametypesetting( #"wzenableheavymetalvehicles" ) ) && !( isdefined( getgametypesetting( #"wzbigteambattle" ) ) && getgametypesetting( #"wzbigteambattle" ) ) && !( isdefined( getgametypesetting( #"wzwetworks" ) ) && getgametypesetting( #"wzwetworks" ) ) && !( isdefined( getgametypesetting( #"wztestallvehicles" ) ) && getgametypesetting( #"wztestallvehicles" ) ) )
     {
         if ( isdefined( getgametypesetting( #"wzenablemusclecar" ) ) && getgametypesetting( #"wzenablemusclecar" ) )
         {
@@ -206,7 +206,7 @@ function function_6df391ab()
         }
     }
     
-    if ( isdefined( getgametypesetting( #"wzbigteambattle" ) ) && getgametypesetting( #"wzbigteambattle" ) && !( isdefined( getgametypesetting( #"hash_23e09b48546a7e3b" ) ) && getgametypesetting( #"hash_23e09b48546a7e3b" ) ) && !( isdefined( getgametypesetting( #"wzenablebountyhuntervehicles" ) ) && getgametypesetting( #"wzenablebountyhuntervehicles" ) ) && !( isdefined( getgametypesetting( #"wzenableheavymetalvehicles" ) ) && getgametypesetting( #"wzenableheavymetalvehicles" ) ) && !( isdefined( getgametypesetting( #"wzwetworks" ) ) && getgametypesetting( #"wzwetworks" ) ) && !( isdefined( getgametypesetting( #"wztestallvehicles" ) ) && getgametypesetting( #"wztestallvehicles" ) ) )
+    if ( isdefined( getgametypesetting( #"wzbigteambattle" ) ) && getgametypesetting( #"wzbigteambattle" ) && !( isdefined( getgametypesetting( #"wzheavymetalheroesvehicles" ) ) && getgametypesetting( #"wzheavymetalheroesvehicles" ) ) && !( isdefined( getgametypesetting( #"wzenablebountyhuntervehicles" ) ) && getgametypesetting( #"wzenablebountyhuntervehicles" ) ) && !( isdefined( getgametypesetting( #"wzenableheavymetalvehicles" ) ) && getgametypesetting( #"wzenableheavymetalvehicles" ) ) && !( isdefined( getgametypesetting( #"wzwetworks" ) ) && getgametypesetting( #"wzwetworks" ) ) && !( isdefined( getgametypesetting( #"wztestallvehicles" ) ) && getgametypesetting( #"wztestallvehicles" ) ) )
     {
         wz_common_fixup::item_replacer( var_b5014996, var_f8a4c541, #"open_skyscraper_vehicles_muscle_car_hot_pursuit", #"open_skyscraper_vehicles_muscle_car_big_team" );
         wz_common_fixup::item_replacer( var_b5014996, var_f8a4c541, #"open_skyscraper_vehicles_atv", #"open_skyscraper_vehicles_atv_big_team" );
@@ -232,7 +232,7 @@ function function_6df391ab()
         }
     }
     
-    if ( isdefined( getgametypesetting( #"wzwetworks" ) ) && getgametypesetting( #"wzwetworks" ) && !( isdefined( getgametypesetting( #"hash_23e09b48546a7e3b" ) ) && getgametypesetting( #"hash_23e09b48546a7e3b" ) ) && !( isdefined( getgametypesetting( #"wzenablebountyhuntervehicles" ) ) && getgametypesetting( #"wzenablebountyhuntervehicles" ) ) && !( isdefined( getgametypesetting( #"wzenableheavymetalvehicles" ) ) && getgametypesetting( #"wzenableheavymetalvehicles" ) ) && !( isdefined( getgametypesetting( #"wzbigteambattle" ) ) && getgametypesetting( #"wzbigteambattle" ) ) && !( isdefined( getgametypesetting( #"wztestallvehicles" ) ) && getgametypesetting( #"wztestallvehicles" ) ) )
+    if ( isdefined( getgametypesetting( #"wzwetworks" ) ) && getgametypesetting( #"wzwetworks" ) && !( isdefined( getgametypesetting( #"wzheavymetalheroesvehicles" ) ) && getgametypesetting( #"wzheavymetalheroesvehicles" ) ) && !( isdefined( getgametypesetting( #"wzenablebountyhuntervehicles" ) ) && getgametypesetting( #"wzenablebountyhuntervehicles" ) ) && !( isdefined( getgametypesetting( #"wzenableheavymetalvehicles" ) ) && getgametypesetting( #"wzenableheavymetalvehicles" ) ) && !( isdefined( getgametypesetting( #"wzbigteambattle" ) ) && getgametypesetting( #"wzbigteambattle" ) ) && !( isdefined( getgametypesetting( #"wztestallvehicles" ) ) && getgametypesetting( #"wztestallvehicles" ) ) )
     {
         wz_common_fixup::item_replacer( var_d2223309, var_74257310, #"zodiac_wz_vehicle_odg", #"zodiac_wz_vehicle_grey" );
         wz_common_fixup::item_replacer( var_b5014996, var_f8a4c541, #"open_skyscraper_vehicles_muscle_car_hot_pursuit", #"open_skyscraper_vehicles_muscle_car_wetworks" );
@@ -242,7 +242,7 @@ function function_6df391ab()
         wz_common_fixup::item_replacer( var_b5014996, var_f8a4c541, #"open_skyscraper_vehicles_zodiac", #"open_skyscraper_vehicles_zodiac_wetworks" );
     }
     
-    if ( isdefined( getgametypesetting( #"hash_23e09b48546a7e3b" ) ) && getgametypesetting( #"hash_23e09b48546a7e3b" ) && !( isdefined( getgametypesetting( #"wzwetworks" ) ) && getgametypesetting( #"wzwetworks" ) ) && !( isdefined( getgametypesetting( #"wzenablebountyhuntervehicles" ) ) && getgametypesetting( #"wzenablebountyhuntervehicles" ) ) && !( isdefined( getgametypesetting( #"wzenableheavymetalvehicles" ) ) && getgametypesetting( #"wzenableheavymetalvehicles" ) ) && !( isdefined( getgametypesetting( #"wzbigteambattle" ) ) && getgametypesetting( #"wzbigteambattle" ) ) && !( isdefined( getgametypesetting( #"wztestallvehicles" ) ) && getgametypesetting( #"wztestallvehicles" ) ) )
+    if ( isdefined( getgametypesetting( #"wzheavymetalheroesvehicles" ) ) && getgametypesetting( #"wzheavymetalheroesvehicles" ) && !( isdefined( getgametypesetting( #"wzwetworks" ) ) && getgametypesetting( #"wzwetworks" ) ) && !( isdefined( getgametypesetting( #"wzenablebountyhuntervehicles" ) ) && getgametypesetting( #"wzenablebountyhuntervehicles" ) ) && !( isdefined( getgametypesetting( #"wzenableheavymetalvehicles" ) ) && getgametypesetting( #"wzenableheavymetalvehicles" ) ) && !( isdefined( getgametypesetting( #"wzbigteambattle" ) ) && getgametypesetting( #"wzbigteambattle" ) ) && !( isdefined( getgametypesetting( #"wztestallvehicles" ) ) && getgametypesetting( #"wztestallvehicles" ) ) )
     {
         wz_common_fixup::item_replacer( var_b5014996, var_f8a4c541, #"open_skyscraper_vehicles_atv", #"open_skyscraper_vehicles_atv_moto_heroes" );
         wz_common_fixup::item_replacer( var_b5014996, var_f8a4c541, #"open_skyscraper_vehicles_atv_ghost_town", #"open_skyscraper_vehicles_atv_ghost_town_police" );
@@ -257,7 +257,7 @@ function function_6df391ab()
         wz_common_fixup::item_replacer( var_b5014996, var_f8a4c541, #"open_skyscraper_vehicles_tank", #"vehicle_list_empty_wz" );
     }
     
-    if ( isdefined( getgametypesetting( #"wztestallvehicles" ) ) && getgametypesetting( #"wztestallvehicles" ) && !( isdefined( getgametypesetting( #"hash_23e09b48546a7e3b" ) ) && getgametypesetting( #"hash_23e09b48546a7e3b" ) ) && !( isdefined( getgametypesetting( #"wzwetworks" ) ) && getgametypesetting( #"wzwetworks" ) ) && !( isdefined( getgametypesetting( #"wzenablebountyhuntervehicles" ) ) && getgametypesetting( #"wzenablebountyhuntervehicles" ) ) && !( isdefined( getgametypesetting( #"wzenableheavymetalvehicles" ) ) && getgametypesetting( #"wzenableheavymetalvehicles" ) ) && !( isdefined( getgametypesetting( #"wzbigteambattle" ) ) && getgametypesetting( #"wzbigteambattle" ) ) )
+    if ( isdefined( getgametypesetting( #"wztestallvehicles" ) ) && getgametypesetting( #"wztestallvehicles" ) && !( isdefined( getgametypesetting( #"wzheavymetalheroesvehicles" ) ) && getgametypesetting( #"wzheavymetalheroesvehicles" ) ) && !( isdefined( getgametypesetting( #"wzwetworks" ) ) && getgametypesetting( #"wzwetworks" ) ) && !( isdefined( getgametypesetting( #"wzenablebountyhuntervehicles" ) ) && getgametypesetting( #"wzenablebountyhuntervehicles" ) ) && !( isdefined( getgametypesetting( #"wzenableheavymetalvehicles" ) ) && getgametypesetting( #"wzenableheavymetalvehicles" ) ) && !( isdefined( getgametypesetting( #"wzbigteambattle" ) ) && getgametypesetting( #"wzbigteambattle" ) ) )
     {
         wz_common_fixup::item_replacer( var_b5014996, var_f8a4c541, #"open_skyscraper_vehicles_muscle_car_hot_pursuit", #"open_skyscraper_vehicles_muscle_car_test" );
         wz_common_fixup::item_replacer( var_b5014996, var_f8a4c541, #"open_skyscraper_vehicles_atv", #"open_skyscraper_vehicles_atv_test" );

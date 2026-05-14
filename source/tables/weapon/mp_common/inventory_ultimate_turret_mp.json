@@ -3,7 +3,7 @@
     "baseWeapon": "#inventory_ultimate_turret",
     "displayname": "#weapon/ultimate_turret",
     "weapon70": "#ultimate_turret",
-    "streamkey": "#hash_78fd779506d11f88",
+    "streamkey": "#inventory_ultimate_turret_soundbank",
     "scrstr_8d8": [
         "tag_ik_loc_le"
     ],

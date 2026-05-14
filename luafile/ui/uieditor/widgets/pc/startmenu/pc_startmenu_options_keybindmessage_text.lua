@@ -111,7 +111,7 @@ CoD.PC_StartMenu_Options_KeybindMessage_Text.__clipsPerState = {
 			f5_arg0.Icon:completeAnimation()
 			f5_arg0.Icon:setRGB( 0.72, 0.21, 0.21 )
 			f5_arg0.Icon:setAlpha( 1 )
-			f5_arg0.Icon:setImage( RegisterImage( 0x8A51A51C46F2B11 ) )
+			f5_arg0.Icon:setImage( RegisterImage( "uie_error_icon" ) )
 			f5_arg0.clipFinished( f5_arg0.Icon )
 			f5_arg0.KeybindMessage:completeAnimation()
 			f5_arg0.KeybindMessage:setAlpha( 1 )

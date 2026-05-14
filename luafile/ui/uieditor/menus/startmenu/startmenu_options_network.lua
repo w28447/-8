@@ -159,7 +159,7 @@ DataSources.OptionNetworkSettings = DataSourceHelpers.ListSetup( "OptionNetworkS
 	table.insert( f7_local0, f0_local1( f7_arg0, 0x7B6345471085D98, 0x602CB27BDEB55F6, f7_local7, f7_local6, "CoD.StartMenu_Options_Network_DescriptionPanels", false ) )
 	table.insert( f7_local0, f0_local4( f7_arg0, 0x28B24D7EC3259D6, 0xCD225959429367C, 0xFA6535477C42613, 0xBE0FD8782640557, CoD.SYSINFO_GEOGRAPHICAL_REGION, "CoD.StartMenu_Options_Network_DescriptionPanels", false, 0x19CA1FFCCC5E01, 0xFCD61DA17014FCD ) )
 	table.insert( f7_local0, f0_local4( f7_arg0, 0x7367624D2662070, 0xF45C83E5855188A, 0x22E830E31485122, 0xD75251DBDF92FD4, CoD.SYSINFO_EXTERNAL_IP_ADDRESS, "CoD.StartMenu_Options_Network_DescriptionPanels", false, 0x7AFC8A64C29EB9E, 0xC2703C41D8B9AA0 ) )
-	table.insert( f7_local0, f0_local4( f7_arg0, 0x32CA1559CDF918A, 0xECFD5F1A222DCD8, 0xC1498B590516530, 0x87FC2843A65DDAA, CoD.SYSINFO_INTERNAL_IP_ADDRESS, "CoD.StartMenu_Options_Network_DescriptionPanels", false, 0x88C8C2AF0695B54, 0x5832A647D04E8A6 ) )
+	table.insert( f7_local0, f0_local4( f7_arg0, 0x32CA1559CDF918A, 0xECFD5F1A222DCD8, 0xC1498B590516530, "platform/options_network_about_internal_ip_desc_off", CoD.SYSINFO_INTERNAL_IP_ADDRESS, "CoD.StartMenu_Options_Network_DescriptionPanels", false, 0x88C8C2AF0695B54, 0x5832A647D04E8A6 ) )
 	if not CoD.isPC then
 		table.insert( f7_local0, f0_local5( f7_arg0 ) )
 	end

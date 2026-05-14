@@ -1,5 +1,5 @@
 #using script_2c5daa95f8fec03c;
-#using script_67e37e63e177f107;
+#using scripts\core_common\vehicles\elephant_dust_ball.gsc;
 #using scripts\core_common\ai\archetype_damage_utility;
 #using scripts\core_common\ai\archetype_locomotion_utility;
 #using scripts\core_common\ai\systems\ai_blackboard;
@@ -138,7 +138,7 @@ function function_67525edc( dustball )
             
             if ( distsq <= 150 * 150 )
             {
-                params = getstatuseffect( #"hash_12a64221f4d27f9b" );
+                params = getstatuseffect( #"elephant_spear_fire" );
                 weapon = getweapon( #"eq_molotov" );
                 target status_effect::status_effect_apply( params, weapon, dustball, 0, 3000, undefined, dustball.origin );
             }
@@ -318,7 +318,7 @@ function function_106b6b29()
 // Size: 0x21e
 function function_8d7ad318( launchpos, trajectory, targetpos )
 {
-    self endon( #"hash_79e095919e415a70", #"death" );
+    self endon( #"head_launch_done", #"death" );
     
     /#
         assert( trajectory.size );
@@ -397,7 +397,7 @@ function function_4b28fc8c( entity )
     }
     
     self playsound( #"hash_62894125ab280b62" );
-    self notify( #"hash_79e095919e415a70" );
+    self notify( #"head_launch_done" );
     
     if ( isdefined( entity.ai.var_502d9d0d ) )
     {
@@ -1031,7 +1031,7 @@ function private function_d8c752e0()
         waitframe( 1 );
     }
     
-    rider = function_e5f2ff53( self, "tag_char_align_a", #"hash_6101964904e7d17b" );
+    rider = function_e5f2ff53( self, "tag_char_align_a", #"elephant_rider_front" );
     rider.ai.var_758ed187 = #"hash_20cbd41b17321edc";
     rider.ai.var_4f12fc77 = "tag_char_align_a";
     rider.instakill_func = &function_707d0196;
@@ -1047,7 +1047,7 @@ function private function_d8c752e0()
     }
     
     rider thread function_2798bb2( self, rider );
-    rider = function_e5f2ff53( self, "tag_char_align_b", #"hash_2672ad69ba7c107" );
+    rider = function_e5f2ff53( self, "tag_char_align_b", #"elephant_rider_back" );
     rider.ai.var_758ed187 = #"hash_20cbd71b173223f5";
     rider.ai.var_4f12fc77 = "tag_char_align_b";
     rider.instakill_func = &function_707d0196;
@@ -1065,13 +1065,13 @@ function private function_d8c752e0()
     
     if ( isdefined( level.var_a52a5487 ) && level.var_a52a5487 )
     {
-        rider = function_e5f2ff53( self, "tag_char_align_c", #"hash_6101964904e7d17b" );
+        rider = function_e5f2ff53( self, "tag_char_align_c", #"elephant_rider_front" );
         rider.ai.var_758ed187 = #"hash_20cbd41b17321edc";
         rider.ai.var_4f12fc77 = "tag_char_align_c";
         rider.instakill_func = &function_707d0196;
         rider.ai.entryanim = #"hash_1447273275dbb9a9";
         rider thread function_2798bb2( self, rider );
-        rider = function_e5f2ff53( self, "tag_char_align_d", #"hash_2672ad69ba7c107" );
+        rider = function_e5f2ff53( self, "tag_char_align_d", #"elephant_rider_back" );
         rider.ai.var_758ed187 = #"hash_20cbd71b173223f5";
         rider.ai.var_4f12fc77 = "tag_char_align_d";
         rider.instakill_func = &function_707d0196;
@@ -1301,13 +1301,13 @@ function function_74fba881( elephant )
         {
             elephant detach( #"c_t8_zmb_dlc0_elephant_chain6", "tag_origin" );
             elephant attach( #"hash_4f282585ef50e907", "tag_origin" );
-            elephant playsound( #"hash_9d86c1e08ca3809" );
+            elephant playsound( #"exp_chain_break_final" );
         }
         else if ( elephant isattached( #"c_t8_zmb_dlc0_elephant_chain6_evil", "tag_origin" ) )
         {
             elephant detach( #"c_t8_zmb_dlc0_elephant_chain6_evil", "tag_origin" );
             elephant attach( #"hash_6594ef853a532da6", "tag_origin" );
-            elephant playsound( #"hash_9d86c1e08ca3809" );
+            elephant playsound( #"exp_chain_break_final" );
         }
         
         return;
@@ -1848,7 +1848,7 @@ function function_cd472d5( entity )
         return false;
     }
     
-    if ( isdefined( self.var_b554dbf2 ) && self.var_b554dbf2 )
+    if ( isdefined( self.forceprojectileattack ) && self.forceprojectileattack )
     {
         return false;
     }
@@ -1937,7 +1937,7 @@ function function_ce8fe2b0( entity, splitorigin )
             dustball.var_6353e3f1 = 1;
             entity.ai.var_f2d193df = gettime() + randomintrange( 5000, 8000 );
             
-            if ( isdefined( self.var_fe41477d ) && self.var_fe41477d )
+            if ( isdefined( self.forcegroundattack ) && self.forcegroundattack )
             {
                 entity.ai.var_f2d193df = gettime() + 5000;
             }
@@ -1988,7 +1988,7 @@ function function_69faa74( entity )
         return false;
     }
     
-    if ( isdefined( self.var_fe41477d ) && self.var_fe41477d )
+    if ( isdefined( self.forcegroundattack ) && self.forcegroundattack )
     {
         return false;
     }
@@ -2611,9 +2611,9 @@ function private function_707d0196( player, mod, shitloc )
         
         while ( true )
         {
-            setdvar( #"hash_7a7fc216709f1aa4", "<dev string:x4a>" );
+            setdvar( #"elephant_devgui_cmd", "<dev string:x4a>" );
             wait 0.2;
-            cmd = getdvarstring( #"hash_7a7fc216709f1aa4", "<dev string:x4a>" );
+            cmd = getdvarstring( #"elephant_devgui_cmd", "<dev string:x4a>" );
             
             if ( cmd == "<dev string:x4a>" )
             {
@@ -2701,13 +2701,13 @@ function private function_707d0196( player, mod, shitloc )
                     
                     break;
                 case #"hash_6f54f417f7b5ac51":
-                    level flag::set( #"hash_37071af70fe7a9f2" );
+                    level flag::set( #"flag_main_quest_completed" );
                     setdvar( #"hash_3065419bcba97739", 1 );
                     break;
                 case #"hash_484a268dfc6c97aa":
                     setdvar( #"zombie_default_max", 0 );
                     setdvar( #"hash_2b64162aa40fe2bb", 1 );
-                    level flag::set( #"hash_37071af70fe7a9f2" );
+                    level flag::set( #"flag_main_quest_completed" );
                     setdvar( #"hash_3065419bcba97739", 1 );
                     break;
                 case #"hash_1b7f90925f6498e3":
@@ -2737,13 +2737,13 @@ function private function_707d0196( player, mod, shitloc )
                     }
                     
                     break;
-                case #"hash_28ef2ead2bec713f":
+                case #"force_ground_attack":
                     elephants = getaiarchetypearray( #"elephant" );
                     
                     foreach ( elephant in elephants )
                     {
-                        elephant.var_fe41477d = 1;
-                        elephant.var_b554dbf2 = 0;
+                        elephant.forcegroundattack = 1;
+                        elephant.forceprojectileattack = 0;
                         elephant.ai.var_ea8d826a = 1;
                     }
                     
@@ -2753,19 +2753,19 @@ function private function_707d0196( player, mod, shitloc )
                     
                     foreach ( elephant in elephants )
                     {
-                        elephant.var_fe41477d = 0;
-                        elephant.var_b554dbf2 = 0;
+                        elephant.forcegroundattack = 0;
+                        elephant.forceprojectileattack = 0;
                         elephant.ai.var_ea8d826a = 0;
                     }
                     
                     break;
-                case #"hash_3659cf300f60df4b":
+                case #"force_projectile_attack":
                     elephants = getaiarchetypearray( #"elephant" );
                     
                     foreach ( elephant in elephants )
                     {
-                        elephant.var_b554dbf2 = 1;
-                        elephant.var_fe41477d = 0;
+                        elephant.forceprojectileattack = 1;
+                        elephant.forcegroundattack = 0;
                         elephant.ai.var_ea8d826a = 1;
                     }
                     
@@ -2775,8 +2775,8 @@ function private function_707d0196( player, mod, shitloc )
                     
                     foreach ( elephant in elephants )
                     {
-                        elephant.var_b554dbf2 = 0;
-                        elephant.var_fe41477d = 0;
+                        elephant.forceprojectileattack = 0;
+                        elephant.forcegroundattack = 0;
                         elephant.ai.var_ea8d826a = 0;
                     }
                     

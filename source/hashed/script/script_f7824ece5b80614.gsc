@@ -1,6 +1,6 @@
-#namespace namespace_eb06e24d;
+#namespace player_free_fall_util;
 
-// Namespace namespace_eb06e24d/namespace_eb06e24d
+// Namespace player_free_fall_util/player_free_fall_util
 // Params 0
 // Checksum 0x900e95e0, Offset: 0x68
 // Size: 0x86
@@ -14,7 +14,7 @@ function get_jumpkits()
     return level.var_aadba305;
 }
 
-// Namespace namespace_eb06e24d/namespace_eb06e24d
+// Namespace player_free_fall_util/player_free_fall_util
 // Params 0
 // Checksum 0xac1ee2e7, Offset: 0xf8
 // Size: 0x14
@@ -23,7 +23,7 @@ function function_3045dd71()
     return get_jumpkits().size;
 }
 
-// Namespace namespace_eb06e24d/namespace_eb06e24d
+// Namespace player_free_fall_util/player_free_fall_util
 // Params 1
 // Checksum 0x42a48370, Offset: 0x118
 // Size: 0xb2
@@ -41,7 +41,7 @@ function function_550c6257( var_ff60755f )
     return getscriptbundle( jumpkits[ var_ff60755f ] );
 }
 
-// Namespace namespace_eb06e24d/namespace_eb06e24d
+// Namespace player_free_fall_util/player_free_fall_util
 // Params 1
 // Checksum 0x3e13bb68, Offset: 0x1d8
 // Size: 0x4a
@@ -51,7 +51,7 @@ function function_83a2cad4( index )
     return getscriptbundle( kit.parachute );
 }
 
-// Namespace namespace_eb06e24d/namespace_eb06e24d
+// Namespace player_free_fall_util/player_free_fall_util
 // Params 1
 // Checksum 0x2877982, Offset: 0x230
 // Size: 0x4a
@@ -61,17 +61,17 @@ function function_aa3a05b1( index )
     return getscriptbundle( kit.wingsuit );
 }
 
-// Namespace namespace_eb06e24d/namespace_eb06e24d
+// Namespace player_free_fall_util/player_free_fall_util
 // Params 1
 // Checksum 0xa925b9e7, Offset: 0x288
 // Size: 0x4a
 function function_6452f9c5( index )
 {
     kit = function_550c6257( index );
-    return getscriptbundle( kit.var_4fa85a25 );
+    return getscriptbundle( kit.dropfxtrail );
 }
 
-// Namespace namespace_eb06e24d/namespace_eb06e24d
+// Namespace player_free_fall_util/player_free_fall_util
 // Params 0, eflags: 0x4
 // Checksum 0x578033cb, Offset: 0x2e0
 // Size: 0x9a
@@ -88,7 +88,7 @@ function private function_c72eb508()
     return self.var_9f20891;
 }
 
-// Namespace namespace_eb06e24d/namespace_eb06e24d
+// Namespace player_free_fall_util/player_free_fall_util
 // Params 1, eflags: 0x4
 // Checksum 0xe34ff4b1, Offset: 0x388
 // Size: 0x152
@@ -116,7 +116,7 @@ function private function_37ae175b( type )
     return var_5c27e968;
 }
 
-// Namespace namespace_eb06e24d/namespace_eb06e24d
+// Namespace player_free_fall_util/player_free_fall_util
 // Params 0
 // Checksum 0xb4a8ec8b, Offset: 0x4e8
 // Size: 0x2a
@@ -125,7 +125,7 @@ function get_parachute()
     return function_83a2cad4( self function_37ae175b( 0 ) );
 }
 
-// Namespace namespace_eb06e24d/namespace_eb06e24d
+// Namespace player_free_fall_util/player_free_fall_util
 // Params 0
 // Checksum 0xdbbe5311, Offset: 0x520
 // Size: 0x2a
@@ -134,7 +134,7 @@ function get_parachute_kit()
     return function_550c6257( self function_37ae175b( 0 ) );
 }
 
-// Namespace namespace_eb06e24d/namespace_eb06e24d
+// Namespace player_free_fall_util/player_free_fall_util
 // Params 0
 // Checksum 0x3f8b2a33, Offset: 0x558
 // Size: 0x2a
@@ -143,7 +143,7 @@ function get_wingsuit()
     return function_aa3a05b1( self function_37ae175b( 2 ) );
 }
 
-// Namespace namespace_eb06e24d/namespace_eb06e24d
+// Namespace player_free_fall_util/player_free_fall_util
 // Params 0
 // Checksum 0x50e3a665, Offset: 0x590
 // Size: 0x2a
@@ -152,7 +152,7 @@ function get_wingsuit_kit()
     return function_550c6257( self function_37ae175b( 2 ) );
 }
 
-// Namespace namespace_eb06e24d/namespace_eb06e24d
+// Namespace player_free_fall_util/player_free_fall_util
 // Params 0
 // Checksum 0xd987ac8b, Offset: 0x5c8
 // Size: 0x2a
@@ -161,7 +161,7 @@ function get_trailfx()
     return function_6452f9c5( self function_37ae175b( 1 ) );
 }
 
-// Namespace namespace_eb06e24d/namespace_eb06e24d
+// Namespace player_free_fall_util/player_free_fall_util
 // Params 0
 // Checksum 0x9bfabe8d, Offset: 0x600
 // Size: 0x2a

@@ -63,7 +63,7 @@ DataSourceHelpers.PerControllerDataSourceSetup( "SpecialistDossier", "Specialist
 					isLooping = false
 				},
 				hiResVideo = {
-					movieName = f6_local2[0xC5DF839C56F31C3],
+					movieName = f6_local2["intromovie"],
 					isStreamed = f6_local2[0x699F7FD98F479BA] ~= 0,
 					isLooping = false
 				}
@@ -405,7 +405,7 @@ end
 CoD.CTUtility.GetTutorialGameTypeMapDifficulty = function ( f30_arg0, f30_arg1 )
 	local f30_local0 = CoD.PlayerRoleUtility.GetCachedHeroInfo( f30_arg1, f30_arg0 )
 	local f30_local1, f30_local2, f30_local3 = nil
-	return f30_local0[0x9C1E00254C7E448], f30_local0[0xE07ADCFC96C3C7C], "tutorial"
+	return f30_local0[0x9C1E00254C7E448], f30_local0["ctmap"], "tutorial"
 end
 
 CoD.CTUtility.GetBaseGameTypeMapDifficulty = function ( f31_arg0, f31_arg1, f31_arg2, f31_arg3, f31_arg4, f31_arg5, f31_arg6 )
@@ -441,7 +441,7 @@ DataSources.SpecialistHeadquartersLoadoutList = ListHelper_SetupDataSource( "Spe
 		f33_arg4.models.noContextWidget = true
 		f33_arg4.models.detailedDesc = Engine[0xF9F1239CFD921FE]( CoD.PlayerRoleUtility.GetCharacterTraitSummary( f33_arg2, f33_local0 ) )
 		f33_arg4.properties.selectIndex = f32_local2 == f33_local0
-		f33_arg4.models.bio = f33_local1[0x541919134FDFF1] or 0x0
+		f33_arg4.models.bio = f33_local1["bio"] or 0x0
 		f33_arg4.models.bioHeader = f33_local1[0x668EA0FEF74A8D4] or 0x0
 		f33_arg4.models.bioHeaderImage = f33_local1[0x15AC9DAAD709DE1] or "blacktransparent"
 		f33_arg4.models.brandingImage = f33_local1[0xB2781A0B1BF2B7A] or "blacktransparent"
@@ -786,7 +786,7 @@ DataSources.ArchivesAudioList = ListHelper_SetupDataSource( "ArchivesAudioList",
 			end
 			table.insert( f40_local0, {
 				models = {
-					title = f40_local5[0x72CA5D0444F4DB5],
+					title = f40_local5["audiotitle"],
 					desc = f40_local8,
 					unlocked = f40_local7,
 					matureContent = f40_local5[0x3E2313142ABE602] ~= 0,
@@ -863,7 +863,7 @@ end
 CoD.CTUtility.SetDefaultSpecialist = function ( f47_arg0, f47_arg1 )
 	local f47_local0 = DataSources.SpecialistHeadquarters.getModel( f47_arg1 )
 	local f47_local1 = LobbyData.GetCurrentMenuTarget()
-	if f47_local1[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING ) then
+	if f47_local1["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING ) then
 		CoD.CTUtility.UpdateStarCount( f47_arg1 )
 		if f47_local0.HasSetDefaultSpecialist:get() then
 			return 
@@ -930,7 +930,7 @@ CoD.CTUtility.ShouldPlayIntroStoryMovie = function ( f48_arg0 )
 end
 
 CoD.CTUtility.ShouldPlayIntroTutorialMovie = function ( f49_arg0 )
-	local f49_local0 = CoD.CTUtility.HasSeenMovie( f49_arg0, 0x2250C2E7BB5C6E4 )
+	local f49_local0 = CoD.CTUtility.HasSeenMovie( f49_arg0, "woods_intro" )
 	local f49_local1 = CoD.CTUtility.GetArchivesBundle()
 	if not f49_local0 and f49_local1[0xB7DD66DDC6EC9A9] ~= nil and f49_local1[0xB7DD66DDC6EC9A9] ~= "" and CoD.CTUtility.CanPlayVideo( f49_arg0, f49_local1[0xE2A12AA0C693432] ) then
 		return true
@@ -1123,7 +1123,7 @@ CoD.CTUtility.GetLoadingMovie = function ( f66_arg0, f66_arg1, f66_arg2 )
 	for f66_local4 = 1, #f66_local3, 1 do
 		local f66_local7 = f66_local3[f66_local4]
 		if f66_local7[0xDB969B978E2ABA8] ~= 0 and f66_local7[0x9C1E00254C7E448] == f66_arg1 then
-			f66_local0 = f66_local7[0xC5DF839C56F31C3]
+			f66_local0 = f66_local7["intromovie"]
 			f66_local2 = true
 			break
 		end

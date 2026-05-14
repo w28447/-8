@@ -111,7 +111,7 @@ CoD.StickerSetFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 		end
 	end, function ( f13_arg0, f13_arg1, f13_arg2 )
 		if IsLive() and CoD.ModelUtility.IsSelfModelValueEqualTo( f13_arg0, f13_arg2, "isNonClickableEmblem", 0 ) and not IsElementInState( f13_arg0, "BMClassified" ) and CoD.CraftUtility.Emblems_CanEnterEmblemEditor( f13_arg0, f13_arg2 ) and not CraftItemIsReadOnly( f13_arg0, f13_arg2 ) and not SelectingGroupEmblem( f13_arg2 ) and CoD.CraftUtility.EmblemEditor_IsEditor( self, f13_arg1 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f13_arg0, f13_arg2, "trialLocked" ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x71A05463D63F902, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/edit_emblem", nil, "ui_confirm" )
 			return true
 		elseif CoD.CraftUtility.Emblem_IsOccupied( f13_arg0, f13_arg2 ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f13_arg0, f13_arg2, "isNonClickableEmblem", 0 ) and not CoD.CraftUtility.EmblemEditor_IsEditor( self, f13_arg1 ) and CoD.ModelUtility.IsSelfModelValueTrue( f13_arg0, f13_arg2, "owned" ) and not CoD.ModelUtility.IsSelfModelValueTrue( f13_arg0, f13_arg2, "trialLocked" ) and not MenuPropertyIsTrue( f13_arg1, "_selectGroupEmblem" ) then
 			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xA24F9854A60C871, nil, "ui_confirm" )
@@ -133,7 +133,7 @@ CoD.StickerSetFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 			
 		end
 	end )
-	stickerSetList:AddContextualMenuAction( f1_arg0, f1_arg1, 0x5AEC3D591F4359E, function ( f16_arg0, f16_arg1, f16_arg2, f16_arg3 )
+	stickerSetList:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/copy", function ( f16_arg0, f16_arg1, f16_arg2, f16_arg3 )
 		if CoD.CraftUtility.Emblem_IsOccupied( f16_arg0, f16_arg2 ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f16_arg0, f16_arg2, "isNonClickableEmblem", 0 ) and not IsPreBuiltEmblemTab( f16_arg2 ) and not SelectingGroupEmblem( f16_arg2 ) then
 			return function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
 				CoD.CraftUtility.EmblemSelect_CopyEmblem( self, f17_arg0, f17_arg2, f17_arg1 )

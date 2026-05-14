@@ -4,7 +4,7 @@
     "displayname": "#zmweapon/smg_standard_t8_upgraded",
     "xhash_60": "#hash_109f91c281b8b76c",
     "weapon70": "#smg_standard_t8",
-    "streamkey": "#hash_1cb1f8a90e685b26",
+    "streamkey": "#smg_standard_t8_upgraded_soundbank",
     "scrstr_8c8": [
         "tag_sights_off",
         "tag_clan_tag",
@@ -69,7 +69,7 @@
     "sound210": "#hash_17d1d4e632c60859",
     "sound240": "#hash_5ae3a947d20ed584",
     "sound250": "#hash_76898c482a23a565",
-    "sound260": "#hash_515f54aa1f553686",
+    "sound260": "#prj_crack_supersonic",
     "sound600": "#hash_72a07537a35e0368",
     "sound610": "#hash_72a07537a35e0368",
     "sound800": "#hash_41b8cf5f69b41ad4",

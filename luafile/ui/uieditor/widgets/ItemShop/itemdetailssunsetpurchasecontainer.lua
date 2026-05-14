@@ -161,8 +161,8 @@ CoD.ItemDetailsSunsetPurchaseContainer.new = function ( f1_arg0, f1_arg1, f1_arg
 			modelName = "casePrice"
 		} )
 	end )
-	ItemShopButtonCases.MiddleText:setText( LocalizeToUpperString( 0x7C2737E72EC4A26 ) )
-	ItemShopButtonCases.MiddleTextFocus:setText( LocalizeToUpperString( 0x7C2737E72EC4A26 ) )
+	ItemShopButtonCases.MiddleText:setText( LocalizeToUpperString( "menu/exchange" ) )
+	ItemShopButtonCases.MiddleTextFocus:setText( LocalizeToUpperString( "menu/exchange" ) )
 	f1_local6 = ItemShopButtonCases
 	f1_local4 = ItemShopButtonCases.subscribeToModel
 	f1_local7 = DataSources.ReservesItemCounts.getModel( f1_arg1 )

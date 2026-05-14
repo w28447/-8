@@ -10,7 +10,7 @@ CoD.Social_InfoPane_Presence_JoinableIcon.new = function ( f1_arg0, f1_arg1, f1_
 	
 	local joinableIcon = LUI.UIImage.new( 0, 0, 0, 32, 0.5, 0.5, -16, 16 )
 	joinableIcon:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	joinableIcon:setImage( RegisterImage( 0xD3145ED87B4F77F ) )
+	joinableIcon:setImage( RegisterImage( "uie_t7_menu_frontend_iconjoinable" ) )
 	joinableIcon:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE8F55203998700A ) )
 	self:addElement( joinableIcon )
 	self.joinableIcon = joinableIcon

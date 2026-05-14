@@ -8,11 +8,11 @@
 7,#shielded,7#zmtrials/shielded,7#zmtrials/shielded_desc,7#,#acquire_weapon,#zhield_dw,#,#,#,#,#,#,#
 8,#closed_for_business,7#zmtrials/closed_for_business,7#zmtrials/closed_for_business_desc,7#,#disable_buys,#,#,#,#,#,#,#,#
 9,#magic_trick,7#zmtrials/magic_trick,7#zmtrials/magic_trick_desc,7#,#use_magicbox,#,#,#,#,#,#,#,#
-10,#waterlogged,7#zmtrials/waterlogged,7#zmtrials/waterlogged_desc,7#,#defend_area,#hash_6e21d05e4d40b57a,#hash_5e2686030984da5d,#hash_3a6ddc441fd92406,#zone_cargo,#,#,#,#
-10,#,7#,7#,7#,#give_reward,#hash_20e770cec441c9f2,#hash_3ad6fd4b554f42a0,#uie_trial_medal_bronze,#hash_1c45a8ee71e29e37,#,#,#,#
+10,#waterlogged,7#zmtrials/waterlogged,7#zmtrials/waterlogged_desc,7#,#defend_area,#s_destination_cargo_hold,#hash_5e2686030984da5d,#hash_3a6ddc441fd92406,#zone_cargo,#,#,#,#
+10,#,7#,7#,7#,#give_reward,#fastest_time_to_round_10,#hash_3ad6fd4b554f42a0,#uie_trial_medal_bronze,#hash_1c45a8ee71e29e37,#,#,#,#
 11,#door_man,7#zmtrials/door_man,7#zmtrials/door_man_desc,7#,#open_all_doors,#,#,#,#,#,#,#,#
 12,#crawling_with_zombies,7#zmtrials/crawling_with_zombies,7#zmtrials/crawling_with_zombies_desc,7#,#crawlers_only,#,#,#,#,#,#,#,#
-13,#hash_4618bdd6ab5de60c,7#zmtrials/repackaged,7#zmtrials/repackaged_desc,7#,#acquire_weapon,#hash_74285cd06483f6da,#,#,#,#,#,#,#
+13,#hash_4618bdd6ab5de60c,7#zmtrials/repackaged,7#zmtrials/repackaged_desc,7#,#acquire_weapon,#re_upgraded_weapon,#,#,#,#,#,#,#
 14,#perk_allergy,7#zmtrials/perk_allergy,7#zmtrials/perk_allergy_desc,7#,#disable_perks,#,#,#,#,#,#,#,#
 15,#pooped,7#zmtrials/pooped,7#zmtrials/pooped_desc,7#,#defend_area,#s_destination_poop_deck,#hash_2ea09148e2b8bef7,#hash_5898b81572f90c84,#zone_poop_deck,#zone_poop_deck_lower,#,#,#
 16,#lever_again,7#zmtrials/lever_again,7#zmtrials/lever_again_desc,7#,#restrict_loadout,#leveraction,#,#,#,#,#,#,#
@@ -21,7 +21,7 @@
 19,#missing_the_points,7#zmtrials/missing_the_points,7#zmtrials/missing_the_points_desc,7#,#damage_drains_points,#10,#,#,#,#,#,#,#
 20,#engine_room_rumble,7#zmtrials/engine_room_rumble,7#zmtrials/engine_room_rumble_desc,7#,#defend_area,#s_destination_engine_room,#hash_4101f1034b6bb306,#hash_60cb7078f7d454a5,#zone_engine,#zone_upper_engine_room,#,#,#
 20,#,7#,7#,7#,#special_enemy,#stoker,#10,#15,#hash_64096a5a5d944158,#,#,#,#
-20,#,7#,7#,7#,#give_reward,#hash_20e46acec43f89e9,#hash_46044d0ce4567ceb,#uie_trial_medal_silver,#hash_29bf8d4ddf84dd24,#,#,#,#
+20,#,7#,7#,7#,#give_reward,#fastest_time_to_round_20,#hash_46044d0ce4567ceb,#uie_trial_medal_silver,#hash_29bf8d4ddf84dd24,#,#,#,#
 21,#level_headed,7#zmtrials/level_headed,7#zmtrials/level_headed_desc,7#,#acquire_weapon,#hero_lv3_weapon,#,#,#,#,#,#,#
 22,#cat_fight,7#zmtrials/cat_fight,7#zmtrials/cat_fight_desc,7#,#hash_3746f3c279f7a5ea,#10,#15,#20,#25,#,#,#,#
 23,#press_start,7#zmtrials/press_start,7#zmtrials/press_start_desc,7#,#reset_loadout,#,#,#,#,#,#,#,#
@@ -33,6 +33,6 @@
 27,#better_late_than_lever,7#zmtrials/better_late_than_lever,7#zmtrials/better_late_than_lever_desc,7#,#restrict_loadout,#leveraction,#,#,#,#,#,#,#
 28,#heads_up_deactivated,7#zmtrials/heads_up_deactivated,7#zmtrials/heads_up_deactivated_desc,7#,#disable_hud,#,#,#,#,#,#,#,#
 29,#unpacked,7#zmtrials/unpacked,7#zmtrials/unpacked_desc,7#,#disable_upgraded_weapons,#,#,#,#,#,#,#,#
-30,#the_grand_finale,7#zmtrials/the_grand_finale,7#zmtrials/the_grand_finale_desc,7#,#defend_area,#hash_3c9744dde32b0ee,#hash_ac52d58f0973396,#hash_319a657e16bbd595,#zone_grand_stairs_a_deck,#zone_grand_stairs_b_deck,#zone_grand_stairs_c_deck,#zone_grand_stairs_d_deck,#zone_grand_stairs_bottom
+30,#the_grand_finale,7#zmtrials/the_grand_finale,7#zmtrials/the_grand_finale_desc,7#,#defend_area,#s_destination_grand_staircase,#hash_ac52d58f0973396,#hash_319a657e16bbd595,#zone_grand_stairs_a_deck,#zone_grand_stairs_b_deck,#zone_grand_stairs_c_deck,#zone_grand_stairs_d_deck,#zone_grand_stairs_bottom
 30,#,7#,7#,7#,#force_archetypes,#blight_father,#,#,#,#,#,#,#
 30,#,7#,7#,7#,#give_reward,#fastest_time_to_complete_round_30,#hash_f60cd1936dfe2ae,#uie_trial_medal_gold,#hash_455678c15cd3bb55,#hash_2c88c6128e0be61,#1,#,#

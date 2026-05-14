@@ -35,7 +35,7 @@ CoD.LobbyUtility.GetClientList = function ()
 	local f3_local1 = Engine[0x755D55B3813D249]( f3_local0, Engine[0xC3DF042E7492B66]( f3_local0 ) )
 	local f3_local2 = nil
 	local f3_local3 = LobbyData.GetCurrentMenuTarget()
-	if f3_local3[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_PRIVATE ) then
+	if f3_local3["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_PRIVATE ) then
 		f3_local2 = f3_local1
 	else
 		f3_local2 = Engine[0x755D55B3813D249]( f3_local0, Enum.LobbyType[0xA1647599284110] )
@@ -302,7 +302,7 @@ CoD.LobbyUtility.LeaderActivity = {
 	},
 	CHOOSING_GAME_MODE = {
 		index = 3,
-		str = 0x1ABA2DD833D3F28
+		str = "menu/selecting_gametype"
 	},
 	SETTING_UP_BOTS = {
 		index = 4,
@@ -318,7 +318,7 @@ CoD.LobbyUtility.LeaderActivity = {
 	},
 	MODIFYING_HERO = {
 		index = 7,
-		str = 0x3FBBB9AAF77166C
+		str = "menu/modifying_hero"
 	},
 	VIEWING_PLAYLISTS = {
 		index = 8,
@@ -338,7 +338,7 @@ CoD.LobbyUtility.LeaderActivity = {
 	},
 	EDITING_CODCASTER_SETTINGS = {
 		index = 12,
-		str = 0x37DC5B3B89EB755
+		str = "menu/editing_codcaster_options"
 	},
 	AT_MEGACHEW_FACTORY = {
 		index = 13,
@@ -347,7 +347,7 @@ CoD.LobbyUtility.LeaderActivity = {
 	WAITING_TO_SELECT = {
 		index = 14,
 		str = "menu/ready",
-		select = 0xD6BACCCB20C09CF,
+		select = "menu/waiting_select",
 		main = 0x193E1BD7C5E960E
 	}
 }
@@ -599,7 +599,7 @@ CoD.LobbyUtility.NavigateToLobby = function ( f40_arg0, f40_arg1, f40_arg2, f40_
 		return 
 	elseif Engine[0xAEF2B6FA8A0BE77]() and not Engine[0x7567E8691BA45BA]() and not Engine[0xEE3E4DCDA4DB3F]() then
 		local f40_local1 = LobbyData.GetLobbyMenuByName( f40_arg1 )
-		f40_local1 = f40_local1[0xEB7DDC7F079D51B]
+		f40_local1 = f40_local1["mainmode"]
 		if f40_local1 ~= Enum.LobbyMainMode[0x78C124999125C42] then
 			local f40_local2 = 0x55D96CC762EABDD
 			if f40_local1 == Enum.LobbyMainMode[0x79D01499920B292] then
@@ -615,7 +615,7 @@ CoD.LobbyUtility.NavigateToLobby = function ( f40_arg0, f40_arg1, f40_arg2, f40_
 		local f40_local2 = false
 		local f40_local3 = false
 		local f40_local4 = LobbyData.GetLobbyMenuByName( f40_arg1 )
-		f40_local4 = f40_local4[0xEB7DDC7F079D51B]
+		f40_local4 = f40_local4["mainmode"]
 		local f40_local5 = 0x55D96CC762EABDD
 		if f40_local4 == Enum.LobbyMainMode[0x79D01499920B292] then
 			f40_local5 = 0xB06081B8B4567F2
@@ -705,27 +705,27 @@ CoD.LobbyUtility.ShowLeaveLobbyPopup = function ( f41_arg0 )
 	local f41_local3 = Engine[0x47928339DC88872]( Enum.LobbyType[0x92676CF5B6FCD43] )
 	local f41_local4 = Engine[0x44FC97037CE42ED]( Engine[0xEA2BE00F49480D]( Enum.LobbyType[0xA1647599284110] ) and Enum.LobbyModule[0x98EA1BB7164D103] or Enum.LobbyModule[0xC46B73E8E18BA2], Enum.LobbyType[0xA1647599284110], Enum[0x575E471C039DBD6][0x92BC25E18D296F] ) - Engine.GetUsedControllerCount() == 0
 	local f41_local5 = LuaEnum.LEAVE_LOBBY_POPUP.NONE
-	if f41_arg0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.MAIN ) then
+	if f41_arg0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.MAIN ) then
 		
-	elseif f41_arg0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_LAN ) or f41_arg0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE ) then
+	elseif f41_arg0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_LAN ) or f41_arg0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE ) then
 		if f41_local0 and f41_local2 then
 			f41_local5 = LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_AND_DISBAND_PARTY
 		elseif f41_local2 then
 			f41_local5 = LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_PARTY
 		end
-	elseif f41_arg0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_PREGAME ) or f41_arg0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_ARENA_PREGAME ) or f41_arg0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_PREGAME ) then
+	elseif f41_arg0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_PREGAME ) or f41_arg0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_ARENA_PREGAME ) or f41_arg0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_PREGAME ) then
 		if f41_local0 and f41_local2 and not f41_local4 then
 			f41_local5 = LuaEnum.LEAVE_LOBBY_POPUP.BRING_PARTY_LEAVE_ALONE
 		elseif f41_local2 then
 			f41_local5 = LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_LOBBY_AND_PARTY
 		end
-	elseif f41_arg0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_CP_THEATER ) or f41_arg0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_THEATER ) or f41_arg0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_THEATER ) or f41_arg0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_THEATER ) then
+	elseif f41_arg0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_CP_THEATER ) or f41_arg0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_THEATER ) or f41_arg0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_THEATER ) or f41_arg0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_THEATER ) then
 		if not f41_local0 and f41_local2 then
 			f41_local5 = LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_LOBBY_AND_PARTY
 		else
 			f41_local5 = LuaEnum.LEAVE_LOBBY_POPUP.NONE_LEAVE_WITH_PARTY
 		end
-	elseif f41_arg0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_PUBLIC ) or f41_arg0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_ARENA_MATCHMAKING ) or f41_arg0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_PRIVATE ) or f41_arg0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_PUBLIC ) then
+	elseif f41_arg0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_PUBLIC ) or f41_arg0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_ARENA_MATCHMAKING ) or f41_arg0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_PRIVATE ) or f41_arg0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_PUBLIC ) then
 		if not f41_local2 then
 			f41_local5 = LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_LOBBY
 		elseif f41_local0 and f41_local2 and not f41_local4 then
@@ -733,7 +733,7 @@ CoD.LobbyUtility.ShowLeaveLobbyPopup = function ( f41_arg0 )
 		elseif not f41_local0 and f41_local2 then
 			f41_local5 = LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_LOBBY_AND_PARTY
 		end
-	elseif f41_arg0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_WZ_PUBLIC ) then
+	elseif f41_arg0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_WZ_PUBLIC ) then
 		local f41_local6 = CoD.LobbyUtility.AllMembersInFrontend()
 		if not f41_local2 then
 			f41_local5 = LuaEnum.LEAVE_LOBBY_POPUP.NONE
@@ -742,9 +742,9 @@ CoD.LobbyUtility.ShowLeaveLobbyPopup = function ( f41_arg0 )
 		elseif not (f41_local0 or not f41_local2) or not f41_local6 then
 			f41_local5 = LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_LOBBY_AND_PARTY
 		end
-	elseif f41_arg0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_CP_CUSTOM ) or f41_arg0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_CUSTOM ) or f41_arg0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_ARENA_CUSTOM ) or f41_arg0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_CUSTOM ) or f41_arg0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_WZ_CUSTOM ) then
-		local f41_local6 = LobbyData.GetLobbyMenuByID( f41_arg0[0x8B72E07B55C3AC0] )
-		local f41_local7 = LobbyData.GetLobbyMenuByName( LuaUtils.LobbyMainModeData[f41_local6[0xEB7DDC7F079D51B]].PregameMenu )
+	elseif f41_arg0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_CP_CUSTOM ) or f41_arg0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_CUSTOM ) or f41_arg0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_ARENA_CUSTOM ) or f41_arg0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_CUSTOM ) or f41_arg0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_WZ_CUSTOM ) then
+		local f41_local6 = LobbyData.GetLobbyMenuByID( f41_arg0["id"] )
+		local f41_local7 = LobbyData.GetLobbyMenuByName( LuaUtils.LobbyMainModeData[f41_local6["mainmode"]].PregameMenu )
 		local f41_local8 = Engine.GetGlobalModel()
 		f41_local8 = f41_local8.lobbyRoot.lobbyList.playerCount:get()
 		if not f41_local8 or not f41_local8 then
@@ -764,7 +764,7 @@ CoD.LobbyUtility.ShowLeaveLobbyPopup = function ( f41_arg0 )
 		elseif not f41_local0 and f41_local2 then
 			f41_local5 = LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_LOBBY_AND_PARTY
 		end
-	elseif f41_arg0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_LAN_CP ) or f41_arg0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_LAN_MP ) or f41_arg0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_LAN_MP_ARENA ) or f41_arg0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_LAN_ZM ) then
+	elseif f41_arg0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_LAN_CP ) or f41_arg0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_LAN_MP ) or f41_arg0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_LAN_MP_ARENA ) or f41_arg0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_LAN_ZM ) then
 		if f41_local1 and f41_local3 then
 			f41_local5 = LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_AND_DISBAND_PARTY
 		else
@@ -792,7 +792,7 @@ CoD.LobbyUtility.StopManualTimer = function ( f43_arg0 )
 	Engine[0x87AE7E64BA5AD61]( "OnStopLobbyTimer", {
 		controller = f43_arg0,
 		lobbyType = f43_local0.LobbyType,
-		mainMode = f43_local0[0xEB7DDC7F079D51B]
+		mainMode = f43_local0["mainmode"]
 	} )
 end
 
@@ -821,7 +821,7 @@ CoD.LobbyUtility.LobbyGoBack = function ( f44_arg0, f44_arg1 )
 	elseif IsZombies() and IsLobbyNetworkModeLAN() and IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.ShowDirectorCustom( f44_arg0, f44_arg1 ) and CoD.ZombieUtility.IsZMOfflineScreenStateCustomGame() then
 		OpenSystemOverlay( f44_arg0, f44_arg0, f44_arg1, "LobbyLeaveZMOfflineCustom", nil )
 		return 
-	elseif f44_local0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_WZ_PUBLIC ) then
+	elseif f44_local0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_WZ_PUBLIC ) then
 		local f44_local3 = Engine.GetGlobalModel()
 		if f44_local3.lobbyRoot.publicLobby.stage:get() ~= LuaEnum.PUBLIC_LOBBY.INVALID and IsLobbyHostOfLobbyType( Enum.LobbyType[0xA1647599284110] ) then
 			Engine[0x87AE7E64BA5AD61]( "OnLobbyClientLeftEvent", {
@@ -831,10 +831,10 @@ CoD.LobbyUtility.LobbyGoBack = function ( f44_arg0, f44_arg1 )
 			return 
 		end
 	end
-	if (f44_local0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_PUBLIC ) or f44_local0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_ARENA_MATCHMAKING )) and IsLobbyHostOfLobbyType( Enum.LobbyType[0xA1647599284110] ) then
+	if (f44_local0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_PUBLIC ) or f44_local0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_ARENA_MATCHMAKING )) and IsLobbyHostOfLobbyType( Enum.LobbyType[0xA1647599284110] ) then
 		f44_local2( LuaEnum.LEAVE_WITH_PARTY.WITH )
 		return 
-	elseif f44_local0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING ) and not CoD.CTUtility.HasSeenMovie( f44_arg1, 0x9DE4F0913361A61 ) then
+	elseif f44_local0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING ) and not CoD.CTUtility.HasSeenMovie( f44_arg1, 0x9DE4F0913361A61 ) then
 		local f44_local4, f44_local5, f44_local6 = CoD.CTUtility.GetOverallSpecialistProgress( f44_arg1 )
 		local f44_local7 = CoD.CTUtility.GetArchivesBundle()
 		if f44_local5 and f44_local7[0x6F3C4D03C30332] ~= nil and f44_local7[0x6F3C4D03C30332] ~= "" and CoD.CTUtility.CanPlayVideo( f44_arg1, f44_local7[0x515E45AD81B9327] ) then
@@ -850,7 +850,7 @@ CoD.LobbyUtility.LobbyGoBack = function ( f44_arg0, f44_arg1 )
 	end
 	local f44_local3 = CoD.LobbyUtility.ShowLeaveLobbyPopup( f44_local0 )
 	local f44_local4 = Engine.GetGlobalModel()
-	if f44_local0[0x8B72E07B55C3AC0] ~= LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE ) and f44_local3 == LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_AND_DISBAND_PARTY and Engine.GetUsedControllerCount() == (f44_local4.lobbyRoot.lobbyList.playerCount:get() or 0) then
+	if f44_local0["id"] ~= LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE ) and f44_local3 == LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_AND_DISBAND_PARTY and Engine.GetUsedControllerCount() == (f44_local4.lobbyRoot.lobbyList.playerCount:get() or 0) then
 		f44_local3 = LuaEnum.LEAVE_LOBBY_POPUP.NONE
 	end
 	if f44_local3 > LuaEnum.LEAVE_LOBBY_POPUP.NONE_LEAVE_WITH_PARTY then
@@ -1056,7 +1056,7 @@ CoD.LobbyUtility.GetActivityString = function ( f59_arg0 )
 					end
 				end
 			end
-			return Engine[0xF9F1239CFD921FE]( 0x20D8C6763DEDD8F, Engine.Localize( f59_local8.str ) )
+			return Engine[0xF9F1239CFD921FE]( "menu/party_leader", Engine.Localize( f59_local8.str ) )
 		end
 	end
 	return ""
@@ -1892,7 +1892,7 @@ end
 CoD.LobbyUtility.DisbandParty = function ( f158_arg0, f158_arg1, f158_arg2 )
 	local f158_local0 = LobbyData.GetLobbyMenuByID( f158_arg2 )
 	GoBack( f158_arg0, f158_arg1 )
-	if f158_local0[0xADEEFEFDA7AD0E3] == LuaEnum.UI.MAIN then
+	if f158_local0["backtarget"] == LuaEnum.UI.MAIN then
 		for f158_local1 = 1, Engine.GetMaxControllerCount() - 1, 1 do
 			LobbyRemoveLocalClientFromLobby( f158_arg0, f158_local1 )
 		end
@@ -1908,7 +1908,7 @@ CoD.OverlayUtility.AddAutoDetectOverlay( "LobbyLeavePopup", {
 		if f159_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_PARTY then
 			f159_local0 = 0xB69F71ABEAEC777
 		elseif f159_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_AND_DISBAND_PARTY then
-			f159_local0 = 0xE6679EE5787CB48
+			f159_local0 = "menu/leave_lobby_disband_from_party_title"
 		elseif f159_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_LOBBY then
 			f159_local0 = 0x318119895303B4B
 		elseif f159_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_LOBBY_AND_PARTY then
@@ -1923,11 +1923,11 @@ CoD.OverlayUtility.AddAutoDetectOverlay( "LobbyLeavePopup", {
 	description = function ( f160_arg0 )
 		local f160_local0 = 0x0
 		if f160_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_PARTY then
-			f160_local0 = 0xB543EF9A1104B6E
+			f160_local0 = "menu/leave_lobby_leave_party_hint"
 		elseif f160_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_AND_DISBAND_PARTY then
 			f160_local0 = 0xEF7BFBB3912534B
 		elseif f160_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_LOBBY_AND_PARTY then
-			f160_local0 = 0xB543EF9A1104B6E
+			f160_local0 = "menu/leave_lobby_leave_party_hint"
 		elseif f160_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.MANAGE_PARTY_LEAVE then
 			f160_local0 = 0xE47086DBA25578E
 		end
@@ -1972,7 +1972,7 @@ CoD.OverlayUtility.AddAutoDetectOverlay( "LobbyLeavePopup", {
 		elseif f166_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_LOBBY then
 			table.insert( f166_local0, {
 				action = CoD.OverlayUtility.Overlays.LobbyLeavePopup.getGoBackFn( LuaEnum.LEAVE_WITH_PARTY.WITHOUT ),
-				text = 0xF420F9DB5188F96
+				text = "menu/leave_lobby_leave_lobby"
 			} )
 		elseif f166_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_LOBBY_AND_PARTY then
 			table.insert( f166_local0, {
@@ -1986,7 +1986,7 @@ CoD.OverlayUtility.AddAutoDetectOverlay( "LobbyLeavePopup", {
 			} )
 			table.insert( f166_local0, {
 				action = CoD.OverlayUtility.Overlays.LobbyLeavePopup.getGoBackFn( LuaEnum.LEAVE_WITH_PARTY.WITHOUT ),
-				text = 0x7C57347FF991141
+				text = "menu/leave_lobby_leave_alone"
 			} )
 		elseif f166_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.MANAGE_PARTY_LEAVE then
 			table.insert( f166_local0, {
@@ -2451,7 +2451,7 @@ CoD.LobbyUtility.Presence.ActivityStrings = {}
 CoD.LobbyUtility.Presence.ActivityStrings[Enum.PresenceActivity[0x49372DE9D3CE680]] = "null/empty"
 CoD.LobbyUtility.Presence.ActivityStrings[Enum.PresenceActivity[0x14916BC7C01AE13]] = "null/empty"
 CoD.LobbyUtility.Presence.ActivityStrings[Enum.PresenceActivity[0x5BC71242ADF26CC]] = 0x3520ACF1FF88175
-CoD.LobbyUtility.Presence.ActivityStrings[Enum.PresenceActivity[0x6A0F2DC99ADE81B]] = 0x92A0F337939C195
+CoD.LobbyUtility.Presence.ActivityStrings[Enum.PresenceActivity[0x6A0F2DC99ADE81B]] = "presence/looking_for_party"
 CoD.LobbyUtility.Presence.ActivityStrings[Enum.PresenceActivity[0x570428F1E5F8185]] = 0xB305AF9F0693803
 CoD.LobbyUtility.Presence.ActivityStrings[Enum.PresenceActivity[0xCBE4F2CD15105C6]] = 0xD5F01774DFDA821
 CoD.LobbyUtility.Presence.ActivityStrings[Enum.PresenceActivity[0x1AEAA695AC5EB0D]] = 0x3AE1A6F98E3D0B8
@@ -2461,19 +2461,19 @@ CoD.LobbyUtility.Presence.ActivityStrings[Enum.PresenceActivity[0xA7679ECD147AF5
 CoD.LobbyUtility.Presence.ActivityStrings[Enum.PresenceActivity[0xC6805A87801C6CB]] = 0xEF88B1188106EC9
 CoD.LobbyUtility.Presence.ActivityStrings[Enum.PresenceActivity[0x4A334D45185F6B]] = 0x3520ACF1FF88175
 CoD.LobbyUtility.Presence.ActivityStrings[Enum.PresenceActivity[0xE81D8707024075]] = 0x6F3647A52E50BDB
-CoD.LobbyUtility.Presence.ActivityStrings[Enum.PresenceActivity[0x7AA83AC0476244F]] = 0x92A0F337939C195
+CoD.LobbyUtility.Presence.ActivityStrings[Enum.PresenceActivity[0x7AA83AC0476244F]] = "presence/looking_for_party"
 CoD.LobbyUtility.Presence.ActivityStrings[Enum.PresenceActivity[0xF73EB38F67244F1]] = 0xB305AF9F0693803
 CoD.LobbyUtility.Presence.ActivityStrings[Enum.PresenceActivity[0xFE206CCBAD07FC3]] = 0xD5F01774DFDA821
 CoD.LobbyUtility.Presence.ActivityStrings[Enum.PresenceActivity[0x748FD38908AA0FD]] = 0xE906EBFDA3FF04
 CoD.LobbyUtility.Presence.ActivityStrings[Enum.PresenceActivity[0xDAC8680E83AD8E1]] = 0x3520ACF1FF88175
 CoD.LobbyUtility.Presence.ActivityStrings[Enum.PresenceActivity[0x4BF289EF1DBD8B]] = 0x6F3647A52E50BDB
-CoD.LobbyUtility.Presence.ActivityStrings[Enum.PresenceActivity[0x82E58F1EADE5729]] = 0x92A0F337939C195
+CoD.LobbyUtility.Presence.ActivityStrings[Enum.PresenceActivity[0x82E58F1EADE5729]] = "presence/looking_for_party"
 CoD.LobbyUtility.Presence.ActivityStrings[Enum.PresenceActivity[0x273A3389A55D9BF]] = 0xB305AF9F0693803
 CoD.LobbyUtility.Presence.ActivityStrings[Enum.PresenceActivity[0xF20A53DB89C94ED]] = 0xD5F01774DFDA821
 CoD.LobbyUtility.Presence.ActivityStrings[Enum.PresenceActivity[0x28985D4608133B3]] = 0x252D497455C5FA9
 CoD.LobbyUtility.Presence.ActivityStrings[Enum.PresenceActivity[0xFE56E96047E83F9]] = 0x3520ACF1FF88175
 CoD.LobbyUtility.Presence.ActivityStrings[Enum.PresenceActivity[0x5F246C347394203]] = 0x6F3647A52E50BDB
-CoD.LobbyUtility.Presence.ActivityStrings[Enum.PresenceActivity[0x8E137C5AAD633B1]] = 0x92A0F337939C195
+CoD.LobbyUtility.Presence.ActivityStrings[Enum.PresenceActivity[0x8E137C5AAD633B1]] = "presence/looking_for_party"
 CoD.LobbyUtility.Presence.ActivityStrings[Enum.PresenceActivity[0xB1D628ACB5DE257]] = 0xB305AF9F0693803
 CoD.LobbyUtility.Presence.ActivityStrings[Enum.PresenceActivity[0x20647E009460DD5]] = 0xD5F01774DFDA821
 CoD.LobbyUtility.Presence.StickyLobbyStrings = {}
@@ -2490,11 +2490,11 @@ CoD.LobbyUtility.Presence.ContextStrings[Enum.PresenceCtx[0xAB43F5FC3B1D47F]] = 
 CoD.LobbyUtility.Presence.ContextStrings[Enum.PresenceCtx[0x6E5169843F8060A]] = 0xEAC49902CCFCAF3
 CoD.LobbyUtility.Presence.ContextStrings[Enum.PresenceCtx[0x83133B37DEC6C0E]] = 0x708123409640966
 CoD.LobbyUtility.Presence.ContextStrings[Enum.PresenceCtx[0x13019B8A3BE3E0C]] = 0x6747795A62485EE
-CoD.LobbyUtility.Presence.ContextStrings[Enum.PresenceCtx[0x388C548A4995338]] = 0x8008E04FE1D817A
+CoD.LobbyUtility.Presence.ContextStrings[Enum.PresenceCtx[0x388C548A4995338]] = "presence/mp_custom_games"
 CoD.LobbyUtility.Presence.ContextStrings[Enum.PresenceCtx[0xEB6BF23C3E8DF40]] = 0x8B34A5CFCA886A7
 CoD.LobbyUtility.Presence.ContextStrings[Enum.PresenceCtx[0x2F025C1C623F80C]] = 0x708123409640966
 CoD.LobbyUtility.Presence.ContextStrings[Enum.PresenceCtx[0x8F23A57DC88F890]] = 0x678F90B79774906
-CoD.LobbyUtility.Presence.ContextStrings[Enum.PresenceCtx[0xBCFE38DE82A3E19]] = 0xFC98B88B9F75E67
+CoD.LobbyUtility.Presence.ContextStrings[Enum.PresenceCtx[0xBCFE38DE82A3E19]] = "presence/zm_private_game"
 CoD.LobbyUtility.Presence.ContextStrings[Enum.PresenceCtx[0x646D62F4F2FF73C]] = 0xE3EA8C15139713A
 CoD.LobbyUtility.Presence.ContextStrings[Enum.PresenceCtx[0xD6554BF1FA271B8]] = 0x708123409640966
 CoD.LobbyUtility.Presence.LobbyJoinableStrings = {}

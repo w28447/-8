@@ -176,7 +176,7 @@ local f0_local0 = {
 			name = "warPaints",
 			stat = 0xFB8B65946FBF7A2,
 			type = Enum.CharacterItemType[0x8E3A65D78229DC1],
-			displayName = 0x1ADD4C3535DC47,
+			displayName = "heroes/war_paint",
 			requiresBreadcrumb = true,
 			usedForPersonalizationPrompt = true
 		},
@@ -189,13 +189,13 @@ local f0_local0 = {
 		},
 		{
 			name = "arms",
-			stat = 0x93530843EABF472,
+			stat = "arms",
 			type = Enum.CharacterItemType[0x41B42F0A58AC50F],
 			displayName = 0xB29867907F22C9
 		},
 		{
 			name = "heads",
-			stat = 0xA8F12CC5F9A0C03,
+			stat = "head",
 			type = Enum.CharacterItemType[0x7AD40A4111A72FE],
 			displayName = 0xBB2FE19D4F795D8
 		},
@@ -209,7 +209,7 @@ local f0_local0 = {
 			name = "legs",
 			stat = 0x4B477ADA208116C,
 			type = Enum.CharacterItemType[0x83CBB806B732B11],
-			displayName = 0xC322CF71AF276BB
+			displayName = "heroes/legs"
 		},
 		{
 			name = "torsos",
@@ -224,7 +224,7 @@ local f0_local0 = {
 		[0x78D35E03A52B01A] = true,
 		[0xA011DFFEC0DD650] = true,
 		[0xE52518EC3FFD40D] = true,
-		[0x5517568F2FB8127] = true
+		["prt_mp_reaper"] = true
 	},
 	CreateList = function ( f1_arg0, f1_arg1, f1_arg2 )
 		local f1_local0 = {}
@@ -248,7 +248,7 @@ local f0_local0 = {
 			end )
 		else
 			table.sort( f3_arg0, function ( f5_arg0, f5_arg1 )
-				return f5_arg0[0xD909934375BE707] < f5_arg1[0xD909934375BE707]
+				return f5_arg0["sortindex"] < f5_arg1["sortindex"]
 			end )
 		end
 		return f3_arg0
@@ -557,8 +557,8 @@ local f0_local0 = {
 			for f24_local7, f24_local8 in ipairs( f24_local1 ) do
 				local f24_local5 = false
 				local f24_local6 = false
-				if f24_local8[0x28887F70BF5EBA] then
-					f24_local5, f24_local6 = CoDShared.IsLootItemOwnedByNameSimple( f24_arg0, f24_local8[0x28887F70BF5EBA] )
+				if f24_local8["lootid"] then
+					f24_local5, f24_local6 = CoDShared.IsLootItemOwnedByNameSimple( f24_arg0, f24_local8["lootid"] )
 				end
 				if (not f24_local5 or f24_local6) and (not f24_local8[0x562938AF86028A0] or Engine.HasEntitlement( f24_arg0, f24_local8[0x562938AF86028A0] )) then
 					table.insert( f24_local0, f24_local7 - 1 )
@@ -569,13 +569,13 @@ local f0_local0 = {
 	end,
 	[0xF3A3045A9BEB31] = function ( f25_arg0 )
 		local f25_local0 = {}
-		local f25_local1 = Engine[0xA7E3CD65E63086F]( 0xA8F031F7C7B2ED8 )
+		local f25_local1 = Engine[0xA7E3CD65E63086F]( "weapondeathfx_list" )
 		if f25_local1 then
 			for f25_local7, f25_local8 in ipairs( f25_local1 ) do
 				local f25_local5 = false
 				local f25_local6 = false
-				if f25_local8[0x28887F70BF5EBA] then
-					f25_local5, f25_local6 = CoDShared.IsLootItemOwnedByNameSimple( f25_arg0, f25_local8[0x28887F70BF5EBA] )
+				if f25_local8["lootid"] then
+					f25_local5, f25_local6 = CoDShared.IsLootItemOwnedByNameSimple( f25_arg0, f25_local8["lootid"] )
 				end
 				if (not f25_local5 or f25_local6) and (not f25_local8[0x562938AF86028A0] or Engine.HasEntitlement( f25_arg0, f25_local8[0x562938AF86028A0] )) then
 					table.insert( f25_local0, f25_local7 - 1 )
@@ -639,8 +639,8 @@ local f0_local0 = {
 							end
 						end
 					end
-					if f26_local11[f26_local17][0xBD5E7FE64A21BCC] and f26_local11[f26_local17][0xBD5E7FE64A21BCC]:get() ~= 0 and not f26_local6( f26_local11[f26_local17][0xBD5E7FE64A21BCC]:get(), f26_local4 ) then
-						f26_local11[f26_local17][0xBD5E7FE64A21BCC]:set( 0 )
+					if f26_local11[f26_local17]["charmindex"] and f26_local11[f26_local17]["charmindex"]:get() ~= 0 and not f26_local6( f26_local11[f26_local17]["charmindex"]:get(), f26_local4 ) then
+						f26_local11[f26_local17]["charmindex"]:set( 0 )
 					end
 					if f26_local11[f26_local17][0xE86D585FF221CC1] and f26_local11[f26_local17][0xE86D585FF221CC1]:get() ~= 0 and not f26_local6( f26_local11[f26_local17][0xE86D585FF221CC1]:get(), f26_local5 ) then
 						f26_local11[f26_local17][0xE86D585FF221CC1]:set( 0 )

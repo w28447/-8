@@ -16,25 +16,25 @@ CoD.CommonHeaderHUDBG02.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	self.CommonHeaderBG01 = CommonHeaderBG01
 	
 	local PipTL = LUI.UIImage.new( 0, 0, -4, 4, 0, 0, -4, 4 )
-	PipTL:setImage( RegisterImage( 0xAC3234E1F71D1D6 ) )
+	PipTL:setImage( RegisterImage( "uie_hud_common_corner_pip" ) )
 	PipTL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PipTL )
 	self.PipTL = PipTL
 	
 	local PipTL2 = LUI.UIImage.new( 1, 1, -4, 4, 0, 0, -4, 4 )
-	PipTL2:setImage( RegisterImage( 0xAC3234E1F71D1D6 ) )
+	PipTL2:setImage( RegisterImage( "uie_hud_common_corner_pip" ) )
 	PipTL2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PipTL2 )
 	self.PipTL2 = PipTL2
 	
 	local PipBL = LUI.UIImage.new( 0, 0, -4, 4, 1, 1, -4, 4 )
-	PipBL:setImage( RegisterImage( 0xAC3234E1F71D1D6 ) )
+	PipBL:setImage( RegisterImage( "uie_hud_common_corner_pip" ) )
 	PipBL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PipBL )
 	self.PipBL = PipBL
 	
 	local PipBL2 = LUI.UIImage.new( 1, 1, -4, 4, 1, 1, -4, 4 )
-	PipBL2:setImage( RegisterImage( 0xAC3234E1F71D1D6 ) )
+	PipBL2:setImage( RegisterImage( "uie_hud_common_corner_pip" ) )
 	PipBL2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PipBL2 )
 	self.PipBL2 = PipBL2
@@ -58,13 +58,13 @@ CoD.CommonHeaderHUDBG02.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	self.CommonLineAccentRight = CommonLineAccentRight
 	
 	local PipL = LUI.UIImage.new( 0, 0, -570, -562, 0.5, 0.5, -4, 4 )
-	PipL:setImage( RegisterImage( 0xAC3234E1F71D1D6 ) )
+	PipL:setImage( RegisterImage( "uie_hud_common_corner_pip" ) )
 	PipL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PipL )
 	self.PipL = PipL
 	
 	local PipR = LUI.UIImage.new( 1, 1, 562, 570, 0.5, 0.5, -4, 4 )
-	PipR:setImage( RegisterImage( 0xAC3234E1F71D1D6 ) )
+	PipR:setImage( RegisterImage( "uie_hud_common_corner_pip" ) )
 	PipR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PipR )
 	self.PipR = PipR

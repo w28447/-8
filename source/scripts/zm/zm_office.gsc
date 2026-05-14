@@ -1,7 +1,7 @@
 #using script_293299be863018bb;
-#using script_4bae07eadc57bb51;
-#using script_59a783d756554a80;
-#using script_7be39c34f66312aa;
+#using scripts\zm\zm_office_groom_lake_quest.gsc;
+#using scripts\zm\zm_office_vo_hooks.gsc;
+#using scripts\zm\zm_office_magicbox_screens.gsc;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\clientfield_shared;
 #using scripts\core_common\exploder_shared;
@@ -152,12 +152,12 @@ function event_handler[level_init] main( eventstruct )
     level thread zm_office_traps::init();
     level thread zm_office_cleanup::init();
     level thread zm_office_special_rounds::init();
-    level thread namespace_a5657ff1::init();
-    level thread namespace_6a81d072::init();
+    level thread zm_office_groom_lake_quest::init();
+    level thread zm_office_magicbox_screens::init();
     level thread zm_office_defcon::pentagon_packapunch_init();
     level thread zm_office_ww_quest::init();
     level thread namespace_6f62781f::init();
-    level thread namespace_8f53e87b::init();
+    level thread zm_office_vo_hooks::init();
     level thread zm_office_sound::main();
     
     if ( !zm_trial::is_trial_mode() )
@@ -572,7 +572,7 @@ function play_starting_vox()
 {
     level flag::wait_till( "start_zombie_round_logic" );
     wait 6;
-    level thread namespace_8f53e87b::play_pentagon_announcer_vox( #"hash_4728c591d3ef4bea" );
+    level thread zm_office_vo_hooks::play_pentagon_announcer_vox( #"hash_4728c591d3ef4bea" );
 }
 
 // Namespace zm_office/zm_office
@@ -696,7 +696,7 @@ function function_a8b0b884()
         e_player val::set( #"outro_scene", "freezecontrols", 1 );
     }
     
-    zm_vo::function_3c173d37();
+    zm_vo::vo_stop_all();
     level flag::clear( "spawn_zombies" );
 }
 
@@ -793,10 +793,10 @@ function function_eeb98313( a_s_respawn_points )
                     level thread zm_office_defcon::function_d2f6cecb();
                     break;
                 case #"hash_721e1a59dcdbed92":
-                    namespace_a5657ff1::function_5642f347();
+                    zm_office_groom_lake_quest::function_5642f347();
                     break;
                 case #"hash_3b41cd4492082280":
-                    namespace_a5657ff1::function_f33d3ab5();
+                    zm_office_groom_lake_quest::function_f33d3ab5();
                     break;
                 case #"enable_ww_crate":
                     level.s_ww_quest_reward zm_office_ww_quest::function_68f68bb4();

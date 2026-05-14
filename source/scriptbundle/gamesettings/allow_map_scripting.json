@@ -1,10 +1,10 @@
 {
-    "hinttext": "localized17#hash_4283b28ef9dea7a9",
+    "hinttext": "localized17#menu/allow_mp_map_scripting_hint",
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
     "hash_5a6dee5a": 0,
     "name": "allow_map_scripting",
-    "displayname": "localized17#hash_6e6c5ecac7443f2f",
+    "displayname": "localized17#menu/allow_mp_map_scripting",
     "hash_54e336e4": 0,
     "optionscount": 2,
     "hash_765cfd09": 0,

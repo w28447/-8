@@ -18,7 +18,7 @@ CoD.AARScoreWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local ScoreLabel = LUI.UIText.new( 0, 0, 18, 318, 0, 0, 12, 33 )
 	ScoreLabel:setRGB( ColorSet.PlayerYellow.r, ColorSet.PlayerYellow.g, ColorSet.PlayerYellow.b )
 	ScoreLabel:setAlpha( 0.2 )
-	ScoreLabel:setText( LocalizeToUpperString( 0x50C861EA97BB6F5 ) )
+	ScoreLabel:setText( LocalizeToUpperString( "mpui/score_caps" ) )
 	ScoreLabel:setTTF( "dinnext_regular" )
 	ScoreLabel:setLetterSpacing( 2 )
 	ScoreLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -82,7 +82,7 @@ CoD.AARScoreWidget.__resetProperties = function ( f5_arg0 )
 	f5_arg0.ScoreGlow:completeAnimation()
 	f5_arg0.ScoreLabel:completeAnimation()
 	f5_arg0.ScoreGlow:setAlpha( 0.4 )
-	f5_arg0.ScoreLabel:setText( LocalizeToUpperString( 0x50C861EA97BB6F5 ) )
+	f5_arg0.ScoreLabel:setText( LocalizeToUpperString( "mpui/score_caps" ) )
 end
 
 CoD.AARScoreWidget.__clipsPerState = {

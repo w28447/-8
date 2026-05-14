@@ -103,7 +103,7 @@ CoD.DirectorPartyList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x2EA47C1D2988981, nil, "ui_confirm" )
 			return true
 		elseif not CoD.ModelUtility.IsSelfModelValueEnumFlagSet( f12_arg0, f12_arg2, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and IsGamepad( f12_arg2 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xFF0DBCF80106E7B, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/inspect_player", nil, "ui_confirm" )
 			return true
 		elseif not CoD.ModelUtility.IsSelfModelValueEnumFlagSet( f12_arg0, f12_arg2, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and IsMouseOrKeyboard( f12_arg2 ) then
 			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )

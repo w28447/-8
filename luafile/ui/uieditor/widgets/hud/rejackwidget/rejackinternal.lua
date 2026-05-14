@@ -185,7 +185,7 @@ CoD.RejackInternal.new = function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3, f5_arg4,
 	self.Sound = Sound
 	
 	local RejackingTitle20 = LUI.UIText.new( 0, 0, 186, 723, 0, 0, 72, 132 )
-	RejackingTitle20:setText( Engine[0xF9F1239CFD921FE]( 0x1588D0473077EDE ) )
+	RejackingTitle20:setText( Engine[0xF9F1239CFD921FE]( "menu/rejack_ui3d_prompt" ) )
 	RejackingTitle20:setTTF( "ttmussels_demibold" )
 	RejackingTitle20:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	RejackingTitle20:setShaderVector( 0, 0, 0, 0, 0 )

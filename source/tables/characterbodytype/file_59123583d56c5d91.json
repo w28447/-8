@@ -3,7 +3,7 @@
     "displayName": "#heroes/shadowman",
     "mpDialog": "#shadowman",
     "playerSoundsTable": "#cp_playersounds",
-    "playerFXTable": "#hash_471b500cc678f872",
+    "playerFXTable": "#wz_playerfx",
     "image_68": "#hash_dd78cc31f45be476",
     "positionDraftPortrait": "#ui_icon_specialist_portrait_draft_shadowman",
     "positionDraftIcon": "#hash_dd78cc31f45be476",

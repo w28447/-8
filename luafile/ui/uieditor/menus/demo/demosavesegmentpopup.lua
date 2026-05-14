@@ -45,7 +45,7 @@ LUI.createMenu.DemoSaveSegmentPopup = function ( f1_arg0, f1_arg1 )
 	
 	local TitlePreview = LUI.UIText.new( 0.5, 0.5, -267, 835, 0.5, 0.5, 0, 21 )
 	TitlePreview:setRGB( ColorSet.T8__OFF__GRAY.r, ColorSet.T8__OFF__GRAY.g, ColorSet.T8__OFF__GRAY.b )
-	TitlePreview:setText( Engine[0xF9F1239CFD921FE]( 0x9E22C6CE275ABC3 ) )
+	TitlePreview:setText( Engine[0xF9F1239CFD921FE]( "menu/preview_segment" ) )
 	TitlePreview:setTTF( "ttmussels_regular" )
 	TitlePreview:setLetterSpacing( 2 )
 	TitlePreview:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -89,7 +89,7 @@ LUI.createMenu.DemoSaveSegmentPopup = function ( f1_arg0, f1_arg1 )
 	self.ButtonSave = ButtonSave
 	
 	local ButtonPreview = CoD.EmblemOptionsButton.new( f1_local1, f1_arg0, 0.5, 0.5, -267, 133, 0.5, 0.5, 24, 84 )
-	ButtonPreview.Button.Title:setText( Engine[0xF9F1239CFD921FE]( 0x9E22C6CE275ABC3 ) )
+	ButtonPreview.Button.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/preview_segment" ) )
 	ButtonPreview:registerEventHandler( "gain_focus", function ( element, event )
 		local f5_local0 = nil
 		if element.gainFocus then

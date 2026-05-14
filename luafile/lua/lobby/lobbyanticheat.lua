@@ -17,7 +17,7 @@ Lobby.Anticheat.MessageGroups[LuaEnum.ANTICHEAT_MESSAGE_GROUPS.ZM] = {
 		},
 		{
 			messageId = 2,
-			reference = 0x801110C02686106,
+			reference = "exe/ext_msg_device_minor",
 			url = 0xC85653EB5034B69
 		}
 	},
@@ -92,7 +92,7 @@ Lobby.Anticheat.MessageGroups[LuaEnum.ANTICHEAT_MESSAGE_GROUPS.MP] = {
 		},
 		{
 			messageId = 2,
-			reference = 0x801110C02686106,
+			reference = "exe/ext_msg_device_minor",
 			url = 0xC85653EB5034B69
 		}
 	},
@@ -174,7 +174,7 @@ Lobby.Anticheat.MessageGroups[LuaEnum.ANTICHEAT_MESSAGE_GROUPS.UGC] = {
 	{
 		{
 			messageId = 26,
-			reference = 0xEC00CB303D6374,
+			reference = "exe/ext_msg_ugc_very_offensive",
 			url = 0xD88A6FB4020F721
 		},
 		{
@@ -634,11 +634,11 @@ Lobby.Anticheat.Pump = function ()
 		return 
 	end
 	local f24_local0 = LobbyData.GetCurrentMenuTarget()
-	if f24_local0[0xEB7DDC7F079D51B] == Enum.LobbyMainMode[0x7E41449995CD57E] then
+	if f24_local0["mainmode"] == Enum.LobbyMainMode[0x7E41449995CD57E] then
 		Lobby.Anticheat.IsFeatureBanned( LuaEnum.FEATURE_BAN.LIVE_MP, true )
-	elseif f24_local0[0xEB7DDC7F079D51B] == Enum.LobbyMainMode[0x79D01499920B292] then
+	elseif f24_local0["mainmode"] == Enum.LobbyMainMode[0x79D01499920B292] then
 		Lobby.Anticheat.IsFeatureBanned( LuaEnum.FEATURE_BAN.LIVE_ZM, true )
-	elseif f24_local0[0xEB7DDC7F079D51B] == Enum.LobbyMainMode[0x7B50049993542C0] then
+	elseif f24_local0["mainmode"] == Enum.LobbyMainMode[0x7B50049993542C0] then
 		Lobby.Anticheat.IsFeatureBanned( LuaEnum.FEATURE_BAN.LIVE_CP, true )
 	end
 end

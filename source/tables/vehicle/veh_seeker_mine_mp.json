@@ -10,11 +10,11 @@
     "spawnInfluencers1": "#none",
     "spawnInfluencers2": "#none",
     "scriptBundleSettings": "#settings_seeker_mine_mp",
-    "deathFx": "#hash_18cc44d7128eefe7",
+    "deathFx": "#weapon/fx8_equip_seeker_exp",
     "deathFxTag": "tag_body",
     "deathFxSound": "#hash_30d12b0cffc117f4",
     "lightFx": [
-        "#hash_57f70f0edff008aa"
+        "#weapon/fx8_equip_seeker_idle"
     ],
     "lightFxTag": [
         "tag_body_animate"

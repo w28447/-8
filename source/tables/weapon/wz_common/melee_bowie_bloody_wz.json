@@ -3,7 +3,7 @@
     "baseWeapon": "#melee_bowie_bloody",
     "displayname": "#weapon/bowie",
     "weapon70": "#melee_bowie",
-    "streamkey": "#hash_7eb3dc5c8019c5c2",
+    "streamkey": "#melee_bowie_bloody_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "scrstr_118c": "tag_fx",

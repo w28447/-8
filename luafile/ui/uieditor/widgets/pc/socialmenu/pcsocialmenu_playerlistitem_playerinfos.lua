@@ -222,7 +222,7 @@ CoD.PCSocialMenu_PlayerListItem_PlayerInfos.new = function ( f1_arg0, f1_arg1, f
 		return f19_local0
 	end )
 	f1_arg0:AddButtonCallbackFunction( BTNAcceptInviteToParty, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f20_arg0, f20_arg1, f20_arg2, f20_arg3 )
-		LobbyQuickJoin( f20_arg1, self, self, f20_arg2, Enum.JoinType[0xC21E48130C4B82B], true )
+		LobbyQuickJoin( f20_arg1, self, self, f20_arg2, Enum.JoinType["join_type_friend"], true )
 		return true
 	end, function ( f21_arg0, f21_arg1, f21_arg2 )
 		CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )

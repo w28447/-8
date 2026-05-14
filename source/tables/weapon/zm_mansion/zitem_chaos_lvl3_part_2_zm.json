@@ -1,7 +1,7 @@
 {
     "name": "#zitem_chaos_lvl3_part_2_zm",
     "baseWeapon": "#zitem_chaos_lvl3_part_2",
-    "streamkey": "#hash_20b160235e32e4bc",
+    "streamkey": "#zitem_chaos_lvl3_part_2_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

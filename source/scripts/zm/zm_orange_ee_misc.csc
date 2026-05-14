@@ -30,15 +30,15 @@ function main()
 // Size: 0xb4
 function init_clientfields()
 {
-    clientfield::register( "toplayer", "" + #"hash_12114abc7407913b", 24000, 1, "counter", &function_30ed45c9, 0, 0 );
-    clientfield::register( "toplayer", "" + #"hash_5e38e846ce88405b", 24000, 1, "counter", &function_48a634b7, 0, 0 );
+    clientfield::register( "toplayer", "" + #"jump_scare_lighthouse", 24000, 1, "counter", &jump_scare_lighthouse, 0, 0 );
+    clientfield::register( "toplayer", "" + #"jump_scare_note", 24000, 1, "counter", &jump_scare_note, 0, 0 );
 }
 
 // Namespace zm_orange_ee_misc/zm_orange_ee_misc
 // Params 7
 // Checksum 0x8f529cf6, Offset: 0x1c8
 // Size: 0x8c
-function function_30ed45c9( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
+function jump_scare_lighthouse( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
     if ( newval )
     {
@@ -51,7 +51,7 @@ function function_30ed45c9( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0xd7cfa717, Offset: 0x260
 // Size: 0x8c
-function function_48a634b7( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
+function jump_scare_note( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
     if ( newval )
     {

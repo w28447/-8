@@ -72,7 +72,7 @@
         util::set_dvar_int_if_unset( "<dev string:x1f3>", 0 );
         util::set_dvar_int_if_unset( "<dev string:x20d>", 0 );
         util::set_dvar_int_if_unset( "<dev string:x227>", 0 );
-        setdvar( #"hash_4424a07b5272599a", 0 );
+        setdvar( #"scr_ph_showmodels", 0 );
         setdvar( #"hash_34a3e2c00f7cd27f", 0 );
         setdvar( #"hash_3fd977c7de8de72b", 0 );
         setdvar( #"hash_5fea18fb5a6e0027", 0 );
@@ -279,7 +279,7 @@
                 setdvar( #"hash_7115842bdfa67a2b", 0 );
             }
             
-            if ( getdvarint( #"hash_34e9a7fac83d28a6", 0 ) != 0 )
+            if ( getdvarint( #"scr_ph_showhealth", 0 ) != 0 )
             {
                 showhealth();
             }
@@ -289,10 +289,10 @@
                 function_38964c72();
             }
             
-            if ( getdvarint( #"hash_4424a07b5272599a", 0 ) != 0 )
+            if ( getdvarint( #"scr_ph_showmodels", 0 ) != 0 )
             {
                 showmodels();
-                setdvar( #"hash_4424a07b5272599a", 0 );
+                setdvar( #"scr_ph_showmodels", 0 );
             }
             
             if ( getdvarint( #"hash_84008139ad85e21", 0 ) != 0 )
@@ -320,10 +320,10 @@
                 setdvar( #"hash_740b6f4a4aa58f21", 0 );
             }
             
-            if ( getdvarint( #"hash_2441330d88677536", 0 ) != 0 && isdefined( level.players ) )
+            if ( getdvarint( #"scr_ph_cancelcountdown", 0 ) != 0 && isdefined( level.players ) )
             {
                 level notify( #"cancelcountdown" );
-                setdvar( #"hash_2441330d88677536", 0 );
+                setdvar( #"scr_ph_cancelcountdown", 0 );
             }
             
             if ( getdvarint( #"hash_7da18bcec6fafe7f", 0 ) != 0 )
@@ -380,8 +380,8 @@
         setdvar( #"cg_drawfps", enabled );
         setdvar( #"cg_drawtime", enabled );
         setdvar( #"cg_drawviewpos", enabled );
-        setdvar( #"hash_173fd7265ae0b7b1", enabled );
-        setdvar( #"hash_2d3acd259cd6aca6", enabled );
+        setdvar( #"cg_drawbuildname", enabled );
+        setdvar( #"cg_drawlimits", enabled );
     }
 
     // Namespace prop_dev/_prop_dev

@@ -3,7 +3,7 @@
     "baseWeapon": "#zhield_spectral_lh_upgraded",
     "displayname": "#zmweapon/shield_spectral_upg",
     "dualwieldWeaponName": "#zhield_spectral_dw_upgraded_zm",
-    "streamkey": "#hash_f8c2a09d8578da6",
+    "streamkey": "#zhield_spectral_lh_upgraded_soundbank",
     "worldModelTagRight": "tag_weapon_left",
     "worldModelTagLeft": "tag_weapon_right",
     "stowedModelTag": "tag_stowed_back",
@@ -29,7 +29,7 @@
     "#hash_d2751f9d": false,
     "#hash_554be9f7": false,
     "sound660": "#uin_unavailable_charging",
-    "tunables1": "#hash_7fadd2075e0cecab",
+    "tunables1": "#zhield_spectral_lh_tunables_upgraded_zm",
     "sharedWeaponSounds": "#battle_shield",
     "viewmodel": [
         "#hash_680f4721293d1e60"

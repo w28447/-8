@@ -27,7 +27,7 @@ function __init__()
         return;
     }
     
-    level.var_ef215639 = [ 1:#"hash_1483048e184df991", 2:#"hash_5b96bc3a1c23c571", 3:"evt_death_circle_strong" ];
+    level.var_ef215639 = [ 1:#"evt_death_circle_weak", 2:#"evt_death_circle_med", 3:"evt_death_circle_strong" ];
     level.var_cb450873 = #"hash_313f1d0b4ff27caa";
     level.var_f6795a59 = [ 1:#"hash_7c7ea03189fe65d8", 2:#"hash_5c64e89ab323857a", 3:#"hash_3fc5123369b4c59f" ];
     level.var_601fc3c5 = [ 1:#"wz/fx8_player_outside_circle", 2:#"hash_474c4d87482063e0", 3:#"hash_474c4e8748206593" ];
@@ -422,7 +422,7 @@ function private function_9e8e1f4f( localclientnum, tagfx = undefined )
 // Params 0, eflags: 0x4
 // Checksum 0x44d3f0d0, Offset: 0x1650
 // Size: 0x24
-function private function_63d6411e()
+function private death_circle_clear()
 {
     self setcompassicon( "" );
 }

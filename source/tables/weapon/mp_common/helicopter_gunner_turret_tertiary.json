@@ -3,7 +3,7 @@
     "baseWeapon": "#helicopter_gunner_turret_tertiary",
     "displayname": "#killstreak/helicopter_gunner",
     "weapon70": "#killstreak_helicopter_player_gunner",
-    "streamkey": "#hash_1e848113f3df8396",
+    "streamkey": "#helicopter_gunner_turret_tertiary_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

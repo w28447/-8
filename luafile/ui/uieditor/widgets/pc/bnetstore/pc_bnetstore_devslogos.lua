@@ -38,7 +38,7 @@ CoD.PC_BnetStore_DevsLogos.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local BeenoxLogo = LUI.UIFixedAspectRatioImage.new( 0, 0, 1122.5, 1225.5, 0, 0, 0, 25 )
 	BeenoxLogo:setRGB( 0.5, 0.5, 0.5 )
-	BeenoxLogo:setImage( RegisterImage( 0xF5A65E9B0061192 ) )
+	BeenoxLogo:setImage( RegisterImage( "uie_pc_bnetstore_beenoxlogo" ) )
 	self:addElement( BeenoxLogo )
 	self.BeenoxLogo = BeenoxLogo
 	

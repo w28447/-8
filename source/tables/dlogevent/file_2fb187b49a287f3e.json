@@ -46,7 +46,7 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT32"
                     },
@@ -59,13 +59,13 @@
             }
         },
         {
-            "name": "#hash_244cfe1af6487d5a",
+            "name": "#party_match_start",
             "arraySize": 0,
             "members": {
                 "name": "#hash_79a5e2d9e3912c45",
                 "members": [
                     {
-                        "name": "#hash_22bebb24c7131b96",
+                        "name": "#party_member_count",
                         "scrName": "#hash_a15e4438",
                         "type": "INT32"
                     },

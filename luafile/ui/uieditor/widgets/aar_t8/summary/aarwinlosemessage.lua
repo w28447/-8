@@ -41,7 +41,7 @@ CoD.AARWinLoseMessage.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	Percentage:linkToElementModel( self, "winRatio", true, function ( model )
 		local f3_local0 = model:get()
 		if f3_local0 ~= nil then
-			Percentage:setText( LocalizeStringWithParameter( 0xE76EC7543C727E0, f3_local0 ) )
+			Percentage:setText( LocalizeStringWithParameter( "aar/percentage", f3_local0 ) )
 		end
 	end )
 	self:addElement( Percentage )

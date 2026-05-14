@@ -1,6 +1,6 @@
 {
     "name": "#hash_a37c548bbe85e8a",
-    "ddlDef": "#hash_1f82a09c61e1b50a",
+    "ddlDef": "#gamedata/ddl/generated/dlog_event_exchange_process_product.ddl",
     "unk18": 1,
     "unk19": 1,
     "unk1a": 0,
@@ -46,7 +46,7 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT32"
                     },
@@ -85,7 +85,7 @@
     ],
     "members": [
         {
-            "name": "#hash_43580e5e98330afd",
+            "name": "#is_consumable",
             "scrName": "#hash_f095157f",
             "type": "BOOL"
         },

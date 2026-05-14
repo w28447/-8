@@ -21,7 +21,7 @@ CoD.Social_PlayersListButtonShared.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local TeamColorBacking = LUI.UIImage.new( 0, 1.01, 14, 14, 0, 1.19, -4, -4 )
 	TeamColorBacking:setAlpha( 0.5 )
-	TeamColorBacking:setImage( RegisterImage( 0x3AA5FC267DC2C8 ) )
+	TeamColorBacking:setImage( RegisterImage( "uie_ui_menu_cac_text_bg01" ) )
 	TeamColorBacking.__Color = function ( f2_arg0 )
 		local f2_local0 = f2_arg0:get()
 		if f2_local0 ~= nil then
@@ -46,7 +46,7 @@ CoD.Social_PlayersListButtonShared.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local OnOffBacking = LUI.UIImage.new( 0, 1.01, 14, 14, 0, 1.19, -4, -4 )
 	OnOffBacking:setAlpha( 0 )
-	OnOffBacking:setImage( RegisterImage( 0x3AA5FC267DC2C8 ) )
+	OnOffBacking:setImage( RegisterImage( "uie_ui_menu_cac_text_bg01" ) )
 	OnOffBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	OnOffBacking:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( OnOffBacking )

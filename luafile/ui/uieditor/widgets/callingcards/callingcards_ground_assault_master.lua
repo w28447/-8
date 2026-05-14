@@ -24,7 +24,7 @@ CoD[0x12E15CAA184F593].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local Dust = LUI.UIImage.new( 0, 0, 160, 600, 0, 0, -325, 395 )
 	Dust:setZRot( 57 )
-	Dust:setImage( RegisterImage( 0xAC4442169034D4 ) )
+	Dust:setImage( RegisterImage( "uie_dust_flow" ) )
 	Dust:setMaterial( LUI.UIImage.GetCachedMaterial( 0x73D72BCD14C2AAD ) )
 	Dust:setShaderVector( 0, 1, 1, 0, 0 )
 	Dust:setShaderVector( 1, 0, 2, 0, 0 )

@@ -5,18 +5,18 @@
 #using scripts\core_common\util_shared;
 #using scripts\zm_common\zm_utility;
 
-#namespace namespace_a35b43eb;
+#namespace zm_traps_firegates;
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 0, eflags: 0x2
 // Checksum 0x655b57c4, Offset: 0xd8
 // Size: 0x3c
 function autoexec __init__system__()
 {
-    system::register( #"hash_18d1bdf8dbbfec6c", &__init__, undefined, undefined );
+    system::register( #"zm_traps_firegates", &__init__, undefined, undefined );
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 0
 // Checksum 0x33b0c313, Offset: 0x120
 // Size: 0x72
@@ -27,17 +27,17 @@ function __init__()
     level._effect[ #"trap_light_red" ] = #"hash_7534672c207c08ed";
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 0
 // Checksum 0xce093a33, Offset: 0x1a0
 // Size: 0xb4
 function init_clientfields()
 {
     clientfield::register( "scriptmover", "" + #"trap_light", 8000, 2, "int", &function_1d5b8b9f, 0, 0 );
-    clientfield::register( "scriptmover", "" + #"hash_17df66ef5f71c0de", 8000, 2, "int", &function_b3f0f5cd, 0, 0 );
+    clientfield::register( "scriptmover", "" + #"trap_light_wolf", 8000, 2, "int", &function_b3f0f5cd, 0, 0 );
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 7
 // Checksum 0x798220c8, Offset: 0x260
 // Size: 0x142
@@ -67,7 +67,7 @@ function function_1d5b8b9f( localclientnum, oldval, newval, bnewent, binitialsna
     }
 }
 
-// Namespace namespace_a35b43eb/zm_mansion_traps_firegates
+// Namespace zm_traps_firegates/zm_mansion_traps_firegates
 // Params 7
 // Checksum 0xf9fbd3b4, Offset: 0x3b0
 // Size: 0x212

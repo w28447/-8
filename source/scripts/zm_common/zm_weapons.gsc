@@ -651,7 +651,7 @@ function add_zombie_weapon( weapon_name, upgrade_name, is_ee, cost, weaponvo, we
     }
     else
     {
-        struct.hint = #"hash_60606b68e93a29c8";
+        struct.hint = #"zombie/weaponcostonly_cfill";
     }
     
     struct.cost = cost;
@@ -1555,7 +1555,7 @@ function get_weapon_hint_ammo()
         return #"hash_2791ecebb85142c4";
     }
     
-    return #"hash_60606b68e93a29c8";
+    return #"zombie/weaponcostonly_cfill";
 }
 
 // Namespace zm_weapons/zm_weapons
@@ -1930,7 +1930,7 @@ function ammo_give( weapon, b_purchased = 1 )
             self zm_utility::play_sound_on_ent( "purchase" );
         }
         
-        self function_7c5dd4bd( weapon );
+        self give_full_ammo( weapon );
         return 1;
     }
     
@@ -2474,7 +2474,7 @@ function set_stowed_weapon( weapon )
 // Size: 0x34
 function clear_stowed_weapon()
 {
-    self notify( #"hash_70957a1035bda74b" );
+    self notify( #"change_stowed_weapon" );
     self.weapon_stowed = undefined;
     self clearstowedweapon();
 }
@@ -2667,7 +2667,7 @@ function function_f5a0899d( weapon, var_d921715f = 1 )
 // Params 1
 // Checksum 0xa6ca8c32, Offset: 0x67d0
 // Size: 0xf4
-function function_7c5dd4bd( w_weapon )
+function give_full_ammo( w_weapon )
 {
     if ( zm_loadout::function_2ff6913( w_weapon ) )
     {
@@ -2680,7 +2680,7 @@ function function_7c5dd4bd( w_weapon )
     }
     
     self setweaponammoclip( w_weapon, w_weapon.clipsize );
-    self notify( #"hash_278526d0bbdb4ce7" );
+    self notify( #"give_full_ammo" );
     
     if ( zm_trial_reset_loadout::is_active( 1 ) )
     {

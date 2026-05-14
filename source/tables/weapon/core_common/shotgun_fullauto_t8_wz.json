@@ -4,7 +4,7 @@
     "displayname": "#weapon/shotgun_fullauto_t8",
     "xhash_60": "#hash_1a5fc0b7a17d6eb8",
     "weapon70": "#shotgun_fullauto_t8",
-    "streamkey": "#hash_2fe18a754a29984f",
+    "streamkey": "#shotgun_fullauto_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -50,8 +50,8 @@
         ]
     ],
     "firesounddistant": "#hash_34c98fc26535cfe4",
-    "firesound": "#hash_4a367cbfce96fbc6",
-    "firesoundplayer": "#hash_4505dbc0149690eb",
+    "firesound": "#wpn_shotgun_auto_fire_npc",
+    "firesoundplayer": "#wpn_shotgun_auto_fire_plr",
     "sound1d0": "#hash_43517b69d02d8d0",
     "sound1e0": "#hash_5540fa19f1ea52ed",
     "sound200": "#hash_5ae0b2b6ce1cff31",
@@ -107,8 +107,8 @@
     "fx_c88": "#hash_68c03a568bff9252",
     "fx_c90": "#hash_68c03a568bff9252",
     "fx_c98": "#hash_68c03a568bff9252",
-    "normalImpactFX": "#hash_732fd0b76ec30328",
+    "normalImpactFX": "#shotgun_enter",
     "exitImpactFX": "#shotgun_exit",
-    "normalImpactSounds": "#hash_415fba9edcdfd2e4",
+    "normalImpactSounds": "#shotgun_impact",
     "exitImpactSounds": "#shotgun_exit"
 }

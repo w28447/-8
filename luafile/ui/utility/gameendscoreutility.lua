@@ -747,10 +747,10 @@ CoD.GameEndScoreUtility.SetupGameEndScoreWidget = function ( f26_arg0, f26_arg1 
 				name = modelValue,
 				data = CoD.GetScriptNotifyData( model )
 			} )
-		elseif modelValue == 0xEDDF3DE575BCDB5 then
+		elseif modelValue == "pre_potm_transition" then
 			local f27_local2 = Engine.GetModelForController( f26_arg1 )
 			f27_local2.scriptNotify:set( 0x29BC32407856CBF )
-		elseif modelValue == 0xE1E0E4D8E06D7E0 then
+		elseif modelValue == "post_potm_transition" then
 			local f27_local2 = Engine.GetModelForController( f26_arg1 )
 			f27_local2.scriptNotify:set( 0xBF5198C95E4E20A )
 		elseif modelValue == 0xC7A41B42481D554 then
@@ -803,7 +803,7 @@ CoD.GameEndScoreUtility.SetupGameEndScoreWidget = function ( f26_arg0, f26_arg1 
 			f26_local0.teamRanking:set( f27_local2[1] )
 		elseif modelValue == 0xEAA776EDD5D85D3 then
 			CoD.GameEndScoreUtility.ProcessHVOCard( f26_arg1, CoD.GetScriptNotifyData( model ) )
-		elseif modelValue == 0x9DFC8D44EA4547E then
+		elseif modelValue == "match_bonus_notify" then
 			local f27_local2 = CoD.GetScriptNotifyData( model )
 			f26_local0.matchBonus:set( f27_local2[1] )
 		end

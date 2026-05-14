@@ -352,7 +352,7 @@ function private gravityspikes_stuck_above_zombie_watcher()
 {
     self notify( "3582bc9c4933ff9f" );
     self endon( "3582bc9c4933ff9f" );
-    self endon( #"disconnect", #"bled_out", #"death", #"gravity_spike_expired", #"hash_55b145e95edc2ebe" );
+    self endon( #"disconnect", #"bled_out", #"death", #"gravity_spike_expired", #"gravity_spikes_planted" );
     var_88758440 = 1;
     
     while ( function_4d17107b( self getcurrentweapon() ) )
@@ -656,7 +656,7 @@ function private function_cc9e1996()
 // Size: 0x154
 function function_28be8532( w_gravityspikes )
 {
-    self endon( #"disconnect", #"bled_out", #"death", #"gravity_spike_expired", #"hash_55b145e95edc2ebe" );
+    self endon( #"disconnect", #"bled_out", #"death", #"gravity_spike_expired", #"gravity_spikes_planted" );
     
     while ( true )
     {
@@ -937,7 +937,7 @@ function function_1049648d( e_reviver, var_84280a99 )
 function plant_gravity_trap( w_gravityspikes )
 {
     self endoncallback( &function_c9830e97, #"bled_out", #"death" );
-    self notify( #"hash_55b145e95edc2ebe" );
+    self notify( #"gravity_spikes_planted" );
     self thread zm_hero_weapon::function_4e984e83( w_gravityspikes, 0.35 );
     self.var_80612bea = 1;
     self thread zm_audio::create_and_play_dialog( #"hero_level_3", #"gravityspikes" );

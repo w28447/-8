@@ -461,7 +461,7 @@ function check_for_reload_complete( weapon )
     
     while ( true )
     {
-        self waittill( #"reload", #"hash_278526d0bbdb4ce7" );
+        self waittill( #"reload", #"give_full_ammo" );
         current_weapon = self getcurrentweapon();
         
         if ( current_weapon == weapon )

@@ -275,7 +275,7 @@ function spawntacticalinsertion()
     triggerradius = 128;
     self.tacticalinsertion.friendlytrigger = spawn( "trigger_radius_use", self.tacticalinsertion.origin + ( 0, 0, 3 ) );
     self.tacticalinsertion.friendlytrigger setcursorhint( "HINT_NOICON", self.tacticalinsertion );
-    self.tacticalinsertion.friendlytrigger sethintstring( #"hash_83435f76ff5897f" );
+    self.tacticalinsertion.friendlytrigger sethintstring( #"mp/tactical_insertion_pickup" );
     
     if ( level.teambased )
     {
@@ -287,7 +287,7 @@ function spawntacticalinsertion()
     self.tacticalinsertion.friendlytrigger.claimedby = self;
     self.tacticalinsertion.enemytrigger = spawn( "trigger_radius_use", self.tacticalinsertion.origin + ( 0, 0, 3 ) );
     self.tacticalinsertion.enemytrigger setcursorhint( "HINT_NOICON", self.tacticalinsertion );
-    self.tacticalinsertion.enemytrigger sethintstring( #"hash_225043ec880f05f" );
+    self.tacticalinsertion.enemytrigger sethintstring( #"mp/tactical_insertion_destroy" );
     self.tacticalinsertion.enemytrigger setinvisibletoplayer( self );
     
     if ( level.teambased )
@@ -463,7 +463,7 @@ function cancel_button_press()
             text.fontscale = 1.6;
         }
         
-        text settext( #"hash_e0dad145a9829f1" );
+        text settext( #"platform/press_to_cancel_tactical_insertion" );
         text.alpha = 1;
         return text;
     }

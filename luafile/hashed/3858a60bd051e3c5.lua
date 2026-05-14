@@ -37,7 +37,7 @@ LUI.createMenu.SpecialistHeadquartersArchives = function ( f1_arg0, f1_arg1 )
 	
 	local SocialFrame = CoD.GenericMenuFrame.new( f1_local1, f1_arg0, 0, 1, 0, 0, 0, 1, 0, 0 )
 	SocialFrame.CommonHeader.BGSceneBlur:setAlpha( 1 )
-	SocialFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0xC94F6359C701D44 ) )
+	SocialFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/archives" ) )
 	SocialFrame:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then

@@ -253,7 +253,7 @@ function private function_10c80e10( eventstruct )
 // Params 1, eflags: 0x4
 // Checksum 0xaa5c0ee8, Offset: 0xe68
 // Size: 0x24
-function private function_33f0ddd3( eventstruct )
+function private on_player_loadout_changed( eventstruct )
 {
     self thread function_6a8979c9();
 }
@@ -477,11 +477,11 @@ function private on_begin( var_e097dc07, var_f5300808 )
             }
             
             player enableoffhandweapons();
-            callback::function_33f0ddd3( &function_10c80e10 );
+            callback::on_player_loadout_changed( &function_10c80e10 );
         }
     }
     
-    callback::function_33f0ddd3( &function_33f0ddd3 );
+    callback::on_player_loadout_changed( &on_player_loadout_changed );
     callback::on_weapon_change( &zm_trial_util::function_79518194 );
     zm_traps::function_6966417b();
     self function_e20ebcfd();
@@ -539,7 +539,7 @@ function private on_end( round_reset )
     }
     
     level.b_special_weapons = undefined;
-    callback::function_824d206( &function_33f0ddd3 );
+    callback::function_824d206( &on_player_loadout_changed );
     callback::remove_on_weapon_change( &zm_trial_util::function_79518194 );
     challenge = zm_trial::function_a36e8c38( #"restrict_loadout" );
     
@@ -771,7 +771,7 @@ function private function_f3fdd8f7()
 function private monitor_objective( challenge )
 {
     self endon( #"disconnect" );
-    level endon( #"hash_7646638df88a3656" );
+    level endon( #"trial_round_end" );
     assert( isarray( challenge.a_n_objective_ids ), "<dev string:x56>" );
     
     foreach ( n_objective_id in challenge.a_n_objective_ids )

@@ -3,7 +3,7 @@
     "baseWeapon": "#ww_tesla_gun_t8_upgraded",
     "displayname": "#zombie/tesla_gun_upgraded",
     "weapon70": "#tesla_gun",
-    "streamkey": "#hash_3985dfafdf1ece4a",
+    "streamkey": "#ww_tesla_gun_t8_upgraded_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

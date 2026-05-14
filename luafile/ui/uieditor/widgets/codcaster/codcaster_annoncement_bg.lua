@@ -21,7 +21,7 @@ CoD.Codcaster_annoncement_bg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.colorbg = colorbg
 	
 	local AnnouncementImageBackground = LUI.UIImage.new( 0.5, 0.5, -230, 230, 0, 0, 0, 32 )
-	AnnouncementImageBackground:setImage( RegisterImage( 0x5875249235577C3 ) )
+	AnnouncementImageBackground:setImage( RegisterImage( "uie_codcaster_announcement_bg" ) )
 	self:addElement( AnnouncementImageBackground )
 	self.AnnouncementImageBackground = AnnouncementImageBackground
 	

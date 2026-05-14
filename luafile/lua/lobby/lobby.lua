@@ -168,7 +168,7 @@ LobbyVM = {
 		f9_local3[0x3C8D0C915904179] = Engine.GetBuildStringField( Enum.BuildStringField[0xDD83FC85A90B9DE] )
 		f9_local3[0x503BF40BEE579B5] = Engine.GetBuildStringField( Enum.BuildStringField[0xF4435CE5FA728B4] )
 		f9_local3[0xE9C4B410C8C673C] = Engine.GetBuildStringField( Enum.BuildStringField[0x64E89CE128A661D] )
-		f9_local3[0xFE0F01D08734D0F] = Engine.GetBuildStringField( Enum.BuildStringField[0x78E1EA4884C34D6] )
+		f9_local3["build_name"] = Engine.GetBuildStringField( Enum.BuildStringField[0x78E1EA4884C34D6] )
 		f9_local0( f9_local1, f9_local2, f9_local3 )
 	end,
 	OnClientAdded = function ( f10_arg0 )
@@ -208,7 +208,7 @@ LobbyVM = {
 		f10_arg0.lobbyID = Engine[0x8CB6D1C656D57EE]( f10_local0, f10_local1 )
 		Engine[0xDE279ECDDDD966]( Engine.GetPrimaryController(), 0x84AA3CF21433C2, {
 			[0xA988C5BE2B9606C] = f10_arg0.lobbyModule,
-			[0x193F66F4B46350C] = f10_arg0.lobbyType,
+			["lobby_type"] = f10_arg0.lobbyType,
 			[0x63C8C33B4DB02C7] = f10_arg0.lobbyMode,
 			[0xB5C735486FC7CCB] = f10_arg0.xuid
 		} )
@@ -245,7 +245,7 @@ LobbyVM = {
 		end
 		Engine[0xDE279ECDDDD966]( Engine.GetPrimaryController(), 0x5D76FEC9A7AF604, {
 			[0xA988C5BE2B9606C] = f11_arg0.lobbyModule,
-			[0x193F66F4B46350C] = f11_arg0.lobbyType,
+			["lobby_type"] = f11_arg0.lobbyType,
 			[0x63C8C33B4DB02C7] = f11_arg0.lobbyMode,
 			[0xB5C735486FC7CCB] = f11_arg0.xuid
 		} )
@@ -271,7 +271,7 @@ LobbyVM = {
 		f13_local3:set( Engine[0xC53F8D38DF9042B]( f13_arg0.nextMap ) )
 		Engine[0xDE279ECDDDD966]( Engine.GetPrimaryController(), 0x393C9A4BAA822A3, {
 			[0xA988C5BE2B9606C] = f13_arg0.lobbyModule,
-			[0x193F66F4B46350C] = f13_arg0.lobbyType,
+			["lobby_type"] = f13_arg0.lobbyType,
 			[0x63C8C33B4DB02C7] = f13_arg0.lobbyMode,
 			[0xF3076BC189A19FF] = f13_arg0.currentMap,
 			[0xDB228AC0186F361] = f13_arg0.nextMap
@@ -317,7 +317,7 @@ LobbyVM = {
 		local f17_local5 = Engine.GetPrimaryController()
 		local f17_local6 = true
 		local f17_local7 = nil
-		local f17_local8 = Engine[0xF9F1239CFD921FE]( 0xB6154C132FDA6EE )
+		local f17_local8 = Engine[0xF9F1239CFD921FE]( "exe/disconnected_from_server" )
 		local f17_local9 = Lobby.Process.Recover( f17_local5 )
 		if f17_local4 == Enum.LobbyDisconnectClient[0xF1FF91F0B0EF524] then
 			
@@ -337,7 +337,7 @@ LobbyVM = {
 			end
 		elseif f17_local4 == Enum.LobbyDisconnectClient[0x18DF95700618225] then
 			if LobbyVM.ShouldShowContentChangedMessage( f17_local5, f17_local1 ) then
-				Engine[0xBC42C678E40DBE8]( Enum.errorCode[0x100911D2B38A4EF], Engine[0xF9F1239CFD921FE]( 0xDDDB3A5B7CE38F1 ) )
+				Engine[0xBC42C678E40DBE8]( Enum.errorCode[0x100911D2B38A4EF], Engine[0xF9F1239CFD921FE]( "menu/new_dlc_available" ) )
 			else
 				Engine[0xBC42C678E40DBE8]( Enum.errorCode[0x100911D2B38A4EF], Engine[0xF9F1239CFD921FE]( 0x609344F0F879051 ) )
 			end
@@ -424,7 +424,7 @@ LobbyVM = {
 		elseif false == Engine[0xE39F1F30B306065]() then
 			local f19_local2 = LobbyData.GetCurrentMenuTarget()
 			local f19_local3 = LobbyData.GetLobbyMenuByName( LuaEnum.UI.DIRECTOR_ONLINE_WZ_PUBLIC )
-			if f19_local2[0x8B72E07B55C3AC0] == f19_local3[0x8B72E07B55C3AC0] then
+			if f19_local2["id"] == f19_local3["id"] then
 				Engine[0x41D81D6B58AAF3F]( Enum.LobbyType[0xA1647599284110], f19_local3[0xEE71E4EE12BC453] )
 				Engine.Exec( Engine.GetPrimaryController(), "pubSemaphoreFetch 0" )
 			end
@@ -654,7 +654,7 @@ LobbyVM = {
 		local f32_local2 = Engine[0x3E68E350BEFE50D]( Enum.LobbyModule[0xC46B73E8E18BA2], Enum.LobbyType[0x92676CF5B6FCD43] )
 		local f32_local3 = false
 		local f32_local4 = LobbyData.GetCurrentMenuTarget()
-		if f32_local1 == Enum.LobbyType[0xA1647599284110] and f32_local2 == false and (f32_local4[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_PUBLIC ) or f32_local4[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_PUBLIC ) or f32_local4[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_ARENA_MATCHMAKING )) then
+		if f32_local1 == Enum.LobbyType[0xA1647599284110] and f32_local2 == false and (f32_local4["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_PUBLIC ) or f32_local4["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_PUBLIC ) or f32_local4["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_ARENA_MATCHMAKING )) then
 			f32_local3 = true
 		end
 		if f32_local3 == true then
@@ -822,7 +822,7 @@ LobbyVM = {
 			return false
 		else
 			local f45_local3 = LobbyData.GetCurrentMenuTarget()
-			if f45_local3[0x439FA113121ADC5] ~= 1 then
+			if f45_local3["hasmigration"] ~= 1 then
 				Engine.PrintWarning( Enum[0x7A63DCD561B0FA8][0x422418A32076161], "Cannot become host, lobby menu does not allow migration\n" )
 				return false
 			elseif Engine[0x8FCA273DF0BEF97]( f45_local1 ) then
@@ -868,10 +868,10 @@ LobbyVM = {
 			return 
 		end
 		Engine.PrintInfo( Enum[0x7A63DCD561B0FA8][0x59962D5EF982597], "Applying settings for menu: " .. f48_local1[0x4BCADBA8E631B86] .. ".\n" )
-		if not Engine.IsInventoryBusy( f48_local0 ) and Engine[0xCB675CA7856DA25]() and f48_local1[0xEB7DDC7F079D51B] ~= Enum.LobbyMainMode[0xD5FBB8D74AC6D62] and f48_local1[0xEB7DDC7F079D51B] ~= Enum.LobbyMainMode[0x78C124999125C42] then
+		if not Engine.IsInventoryBusy( f48_local0 ) and Engine[0xCB675CA7856DA25]() and f48_local1["mainmode"] ~= Enum.LobbyMainMode[0xD5FBB8D74AC6D62] and f48_local1["mainmode"] ~= Enum.LobbyMainMode[0x78C124999125C42] then
 			LuaUtils.SafeComError( Enum.errorCode[0x7039D0A1017FE92], 0x89F50A5AB4EE929 )
 		end
-		if not Engine.IsInventoryBusy( f48_local0 ) and f48_local1[0xEB7DDC7F079D51B] == Enum.LobbyMainMode[0x79D01499920B292] then
+		if not Engine.IsInventoryBusy( f48_local0 ) and f48_local1["mainmode"] == Enum.LobbyMainMode[0x79D01499920B292] then
 			if Engine[0xA8FBC7AC4C3F3A6]() then
 				LuaUtils.SafeComError( Enum.errorCode[0x7039D0A1017FE92], 0xB582AE90C06D4FF )
 			elseif Engine[0x5405A6484A88367]() then
@@ -880,7 +880,7 @@ LobbyVM = {
 		end
 		if not f48_local2 then
 			local f48_local4 = Engine[0x80964E6C43E0C4B]()
-			local f48_local5 = f48_local1[0xEB7DDC7F079D51B]
+			local f48_local5 = f48_local1["mainmode"]
 			if Engine.SwitchCampaignMode then
 				Engine.SwitchCampaignMode( Enum.CampaignMode[0xBC3515387CDAB7] )
 			end
@@ -929,16 +929,16 @@ LobbyVM = {
 			Engine.SetModelValue( Engine.CreateModel( Engine.GetGlobalModel(), "lobbyRoot.showSelect" ), true )
 			LobbyVM.lobbyID = f50_local4
 		end
-		Engine[0x58F4769A24A7C7B]( f50_local0[0x8B72E07B55C3AC0] )
+		Engine[0x58F4769A24A7C7B]( f50_local0["id"] )
 		LobbyData.SetLobbyNav( f50_local0 )
 		Engine.SetModelValue( Engine.CreateModel( Engine.GetGlobalModel(), "lobbyRoot.lobbyMode", true ), f50_local0.LobbyMode )
-		Engine.SetModelValue( Engine.CreateModel( Engine.GetGlobalModel(), "lobbyRoot.lobbyMainMode", true ), f50_local0[0xEB7DDC7F079D51B] )
+		Engine.SetModelValue( Engine.CreateModel( Engine.GetGlobalModel(), "lobbyRoot.lobbyMainMode", true ), f50_local0["mainmode"] )
 		Engine.SetModelValue( Engine.CreateModel( Engine.GetGlobalModel(), "lobbyRoot.lobbyGameMode", true ), f50_local0.eGameModes )
 		Engine.SetModelValue( Engine.CreateModel( Engine.GetGlobalModel(), "lobbyRoot.room", true ), f50_local3( f50_local0[0x355141FF0C48EDA] ) )
-		CoDShared[0x562F4B21BD0FAB0]( f50_local1, f50_local0[0xEB7DDC7F079D51B] )
+		CoDShared[0x562F4B21BD0FAB0]( f50_local1, f50_local0["mainmode"] )
 		if f50_local2 then
 			local f50_local5 = LobbyData.GetLobbyMenuByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_ARENA_PREGAME )
-			if f50_local5 ~= nil and f50_local0[0x8B72E07B55C3AC0] == f50_local5[0x8B72E07B55C3AC0] then
+			if f50_local5 ~= nil and f50_local0["id"] == f50_local5["id"] then
 				Lobby.Events.EventDispatcher( "OnClanUIEvent", {
 					controller = f50_local1,
 					event = LuaEnum.CLAN_UI_EVENT.INIT_MODELS
@@ -1182,7 +1182,7 @@ LobbyVM = {
 			servers = f77_local0.pingResults
 			for f77_local4, f77_local5 in ipairs( servers ) do
 				Engine[0xDE279ECDDDD966]( Engine.GetPrimaryController(), 0x744BF3845B0D442, {
-					[0xF90406E9A94ABE6] = f77_local5.location,
+					["location"] = f77_local5.location,
 					[0xF30E00DC53307A9] = f77_local5.ping
 				} )
 			end

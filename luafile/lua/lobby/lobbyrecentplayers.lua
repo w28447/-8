@@ -137,7 +137,7 @@ Lobby.RecentPlayers.OnWarzoneMatchStart = function ( f9_arg0 )
 end
 
 Lobby.RecentPlayers.OnLocalClientObituary = function ( f10_arg0 )
-	if Engine.CurrentSessionMode() == Enum.eModes[0xBF1DCC8138A9D39] and f10_arg0.meansofdeath ~= Enum[0x52177B239BFECC1][0x4D082D0A3EC7F41] then
+	if Engine.CurrentSessionMode() == Enum.eModes[0xBF1DCC8138A9D39] and f10_arg0.meansofdeath ~= Enum[0x52177B239BFECC1]["mod_downed"] then
 		assert( f10_arg0.controller ~= nil )
 		assert( f10_arg0.xuid ~= nil )
 		if f10_arg0.xuid ~= Engine.DefaultID64Value() and not Engine[0x5CB8E6B7FBBFFD5]( f10_arg0.xuid ) then

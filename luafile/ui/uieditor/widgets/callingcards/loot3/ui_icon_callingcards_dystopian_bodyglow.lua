@@ -14,7 +14,7 @@ CoD.ui_icon_callingcards_dystopian_bodyglow.new = function ( f1_arg0, f1_arg1, f
 	self.arm = arm
 	
 	local bodyglow = LUI.UIImage.new( 0, 0, 0, 272, 0, 0, 0, 200 )
-	bodyglow:setImage( RegisterImage( 0x8731E256C4C122A ) )
+	bodyglow:setImage( RegisterImage( "uie_ui_icon_callingcards_dystopian_bodyhighlight" ) )
 	self:addElement( bodyglow )
 	self.bodyglow = bodyglow
 	

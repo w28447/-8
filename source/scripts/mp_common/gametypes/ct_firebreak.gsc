@@ -473,7 +473,7 @@ function function_d6c7161f()
     
     while ( true )
     {
-        self waittill( #"hash_477083bb681cce64" );
+        self waittill( #"radiation_field_start" );
         var_326df4eb = undefined;
         
         foreach ( s_beacon in level.a_s_beacons )
@@ -492,7 +492,7 @@ function function_d6c7161f()
         {
             var_583c5a3b = 1.75 + 0.6 * level.var_f3bb2d59;
             n_start_time = gettime() / 1000;
-            self waittilltimeout( var_583c5a3b, #"hash_4aaf6d6479e7cf20" );
+            self waittilltimeout( var_583c5a3b, #"radiation_field_stop" );
             dt = gettime() / 1000 - n_start_time;
             
             if ( dt >= 1.75 )
@@ -522,7 +522,7 @@ function function_d6c7161f()
                 wait 0.1;
                 s_beacon.e_beacon delete();
                 wait 1;
-                level thread ct_utils::function_bfa522d1( 0 );
+                level thread ct_utils::simulation_pulse( 0 );
                 level.var_f3bb2d59++;
             }
         }
@@ -535,7 +535,7 @@ function function_d6c7161f()
 // Size: 0xf8
 function function_66a805d4( e_player )
 {
-    e_player endon( #"death", #"hash_4aaf6d6479e7cf20" );
+    e_player endon( #"death", #"radiation_field_stop" );
     
     while ( true )
     {

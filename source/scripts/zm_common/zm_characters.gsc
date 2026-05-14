@@ -521,7 +521,7 @@ function function_50b1ae32()
         return;
     }
     
-    if ( is_character( array( #"prt_zm_richtofen", #"prt_zm_richtofen_ofc", #"hash_5a715cb0a6e071ae" ) ) )
+    if ( is_character( array( #"prt_zm_richtofen", #"prt_zm_richtofen_ofc", #"prt_zm_richtofen_whi_novials" ) ) )
     {
         self.revivevox = "rich";
         self.selfrevivevox = "self";
@@ -563,7 +563,7 @@ function function_50b1ae32()
         return;
     }
     
-    if ( is_character( array( #"hash_73d71ff1e886bbe9" ) ) )
+    if ( is_character( array( #"prt_zm_richtofen_whi" ) ) )
     {
         self.revivevox = "uric";
         self.selfrevivevox = "self";
@@ -573,7 +573,7 @@ function function_50b1ae32()
         return;
     }
     
-    if ( is_character( array( #"hash_4cb4663e341a940" ) ) )
+    if ( is_character( array( #"prt_zm_dempsey_whi" ) ) )
     {
         self.talks_in_danger = 1;
         level.rich_sq_player = self;
@@ -585,7 +585,7 @@ function function_50b1ae32()
         return;
     }
     
-    if ( is_character( array( #"hash_78aa6812c38263ba" ) ) )
+    if ( is_character( array( #"prt_zm_nikolai_whi" ) ) )
     {
         self.revivevox = "unik";
         self.selfrevivevox = "self";
@@ -595,7 +595,7 @@ function function_50b1ae32()
         return;
     }
     
-    if ( is_character( array( #"hash_1fd4157dcafc6e45" ) ) )
+    if ( is_character( array( #"prt_zm_takeo_whi" ) ) )
     {
         self.revivevox = "utak";
         self.selfrevivevox = "self";

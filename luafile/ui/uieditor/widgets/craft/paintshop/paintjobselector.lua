@@ -116,7 +116,7 @@ CoD.PaintjobSelector.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 			
 		end
 	end )
-	paintjobsList:AddContextualMenuAction( f1_arg0, f1_arg1, 0x5AEC3D591F4359E, function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
+	paintjobsList:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/copy", function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
 		if Paintjobs_IsOccupied( f15_arg0, f15_arg2 ) then
 			return function ( f16_arg0, f16_arg1, f16_arg2, f16_arg3 )
 				PaintjobSelector_CopyPaintjob( self, f16_arg0, f16_arg2, "", f16_arg1 )

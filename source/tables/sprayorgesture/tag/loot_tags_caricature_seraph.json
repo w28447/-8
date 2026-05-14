@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_caricature_seraph",
+    "type": "#tag",
+    "material": "#hash_ed2b67bf0a20d93",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#tags/caricature_seraph",
+        "icon": "image#loot_ui_icon_tags_caricature_seraph",
+        "isdefault": 0
+    }
+}

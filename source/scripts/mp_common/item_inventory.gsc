@@ -830,7 +830,7 @@ function private function_2e10e66e( var_ab9610ad = undefined )
         return;
     }
     
-    item = function_434d0c2b( #"backpack", array( #"hash_7c3701ba5f0879c2" ), var_ab9610ad );
+    item = function_434d0c2b( #"backpack", array( #"backpack_item_fast" ), var_ab9610ad );
     
     if ( isdefined( item ) )
     {
@@ -4921,7 +4921,7 @@ function function_956a8ecd()
         return;
     }
     
-    self waittill( #"hash_363004a4e0ccc1f", #"hawk_settled", #"death", #"stationary" );
+    self waittill( #"recon_car_settled", #"hawk_settled", #"death", #"stationary" );
     var_d783088e = [];
     
     foreach ( sensordart in level.sensor_darts )
@@ -5142,7 +5142,7 @@ function use_killstreak( networkid, item )
         return;
     }
     
-    self sethintstring( #"hash_37605398dce96965" );
+    self sethintstring( #"weapon/cant_plant_equipment" );
     wait 1.5;
     
     if ( isdefined( self ) )

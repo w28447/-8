@@ -224,7 +224,7 @@ function function_72ba0df6( einflictor, attacker, idamage, smeansofdeath, weapon
                     level thread ct_vo::function_41e59aeb( array( #"hash_e219524f43ed980" ), 1 );
                     break;
                 case 8:
-                    level thread ct_vo::function_41e59aeb( array( #"hash_605295eab859687c" ), 1 );
+                    level thread ct_vo::function_41e59aeb( array( #"vox_tvoi_tutor_noma_score_player_dead" ), 1 );
                     break;
                 case 9:
                     level thread ct_vo::function_41e59aeb( array( #"hash_29c415884674152e" ), 1 );
@@ -808,7 +808,7 @@ function function_244e4db8()
     e_player = getplayers()[ 0 ];
     e_player thread ct_utils::function_61c3d59c( #"hash_6b153adcd9c8cfcb", undefined );
     wait 1;
-    level notify( #"hash_16cac42598bc6a4" );
+    level notify( #"juno_attack" );
     
     while ( true )
     {
@@ -948,12 +948,12 @@ function function_34696b67()
     ct_utils::function_e9ab1003( "s_defuse_bomb_obj" );
     level notify( #"stop_bomb_start_collision" );
     level notify( #"start_bomb_defend_collision" );
-    level thread ct_vo::function_831e0584( array( #"hash_758836b142ae69e2" ), 1 );
+    level thread ct_vo::function_831e0584( array( #"vox_tvoi_tutor_noma_defuse_bomb" ), 1 );
     ct_utils::function_9aca2fa0( "ct_action2" );
     s_loc = struct::get( "s_defuse_bomb_loc", "targetname" );
     e_bomb = util::spawn_model( "p8_mp_bomb_crate_whole", s_loc.origin, s_loc.angles );
     level.var_efb41f70 = 0;
-    ct_utils::function_9d1fc273( e_bomb, &function_ae12f07c, #"hash_7b74e27a1a2facf8", 5 );
+    ct_utils::function_9d1fc273( e_bomb, &function_ae12f07c, #"sd_defuse_prompt", 5 );
     e_bomb.gameobject.onbeginuse = &function_d2b15099;
     e_bomb.gameobject.useweapon = getweapon( #"briefcase_bomb_defuse" );
     
@@ -1089,7 +1089,7 @@ function function_76739a65()
     e_player = getplayers()[ 0 ];
     e_player thread ct_utils::function_68848e5( "ultimate_turret" );
     e_player thread ct_utils::function_61c3d59c( undefined, undefined, "dynobj_KillToEarnNomadKS" );
-    e_player ct_utils::function_80bf685b( 0 );
+    e_player ct_utils::ingame_objective_set_points( 0 );
     level.a_s_paths = [];
     level.a_s_paths[ level.a_s_paths.size ] = struct::get( "s_ks_righ_path1", "targetname" );
     level.a_s_paths[ level.a_s_paths.size ] = struct::get( "s_ks_righ_path2", "targetname" );
@@ -1100,7 +1100,7 @@ function function_76739a65()
     while ( !( isdefined( e_player.var_d5d10814 ) && e_player.var_d5d10814 ) )
     {
         e_player = getplayers()[ 0 ];
-        e_player thread ct_utils::function_80bf685b( level.var_de284b17 );
+        e_player thread ct_utils::ingame_objective_set_points( level.var_de284b17 );
         var_93781b01 = 0;
         level.var_e6db911d = 0;
         level.var_7b46025 = struct::get_array( "s_bomb_killstreak_bots", "targetname" );
@@ -1110,7 +1110,7 @@ function function_76739a65()
         while ( true )
         {
             e_player = getplayers()[ 0 ];
-            e_player thread ct_utils::function_80bf685b( level.var_de284b17 );
+            e_player thread ct_utils::ingame_objective_set_points( level.var_de284b17 );
             level.var_a86320e8 = gettime() / 1000;
             
             if ( !isalive( e_player ) )
@@ -1413,7 +1413,7 @@ function function_4f54cf00( s_loc, var_ebb5bb71 )
     function_432f35f8( s_loc );
     level.var_e72728b8 = array( #"ability_dog", #"eq_tripwire" );
     level notify( #"hash_32494c3c40fc33cb" );
-    level notify( #"hash_6fc151c22f7e43a8" );
+    level notify( #"tripwire_intro_msg" );
     e_mine delete();
     waypoint ct_utils::function_f9ed304d();
     waitframe( 1 );
@@ -1598,7 +1598,7 @@ function function_dfc80de0()
 function function_b7ff9e87()
 {
     self waittill( #"death" );
-    self val::reset( #"hash_3ae9db07bc956789", "ignoreall" );
+    self val::reset( #"reset_bot_tripwire", "ignoreall" );
 }
 
 // Namespace ct_nomad_tutorial/ct_nomad_tutorial
@@ -1624,7 +1624,7 @@ function function_89eab9e8()
     self clientfield::set( "enemy_keyline_render", 1 );
     s_path = struct::get( s_target.script_noteworthy, "targetname" );
     self thread ct_utils::function_1e7b75f2( s_path );
-    level waittill( #"hash_16cac42598bc6a4" );
+    level waittill( #"juno_attack" );
     self val::reset( #"dog_meat", "ignoreme" );
     self val::reset( #"dog_meat", "ignoreall" );
 }

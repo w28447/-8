@@ -5,7 +5,7 @@
     "xhash_60": "#hash_2c00574f9088d906",
     "weapon70": "#smg_accurate_t8_operator",
     "weapon890": "#smg_accurate_t8_wz",
-    "streamkey": "#hash_7debee600816c431",
+    "streamkey": "#smg_accurate_t8_operator_soundbank",
     "scrstr_8c8": [
         "tag_front_sights_off",
         "tag_rear_sights_off",
@@ -60,8 +60,8 @@
         ]
     ],
     "firesounddistant": "#hash_1fa3c110880b1635",
-    "sound100": "#hash_4908f1a2ac26061b",
-    "sound110": "#hash_93f4aa23f2bc776",
+    "sound100": "#wpn_smg_accurate_uber_fire_npc",
+    "sound110": "#wpn_smg_accurate_uber_fire_plr",
     "sound140": "#hash_703770da25e8e086",
     "sound150": "#hash_679fcfda690399ab",
     "sound180": "#hash_4dbc4a54bac5f3db",
@@ -72,7 +72,7 @@
     "sound210": "#hash_17d1d4e632c60859",
     "sound240": "#hash_5ae3a947d20ed584",
     "sound250": "#hash_76898c482a23a565",
-    "sound260": "#hash_515f54aa1f553686",
+    "sound260": "#prj_crack_supersonic",
     "sound600": "#hash_72a07537a35e0368",
     "sound610": "#hash_72a07537a35e0368",
     "sound800": "#hash_41b8cf5f69b41ad4",

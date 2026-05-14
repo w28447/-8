@@ -112,7 +112,7 @@ CoD.WeaponDeathFxSelectInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 		end
 	end, function ( f10_arg0, f10_arg1, f10_arg2 )
 		if IsGamepad( f10_arg2 ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x52FB29ED3A3CA79, nil, nil )
+			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "menu/preview", nil, nil )
 			return true
 		else
 			return false
@@ -127,7 +127,7 @@ CoD.WeaponDeathFxSelectInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 		end
 	end, function ( f12_arg0, f12_arg1, f12_arg2 )
 		if IsMouseOrKeyboard( f12_arg2 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0xA86619565BE54DB], 0x52FB29ED3A3CA79, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_contextual_1" )
+			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0xA86619565BE54DB], "menu/preview", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_contextual_1" )
 			return true
 		else
 			return false
@@ -165,7 +165,7 @@ CoD.WeaponDeathFxSelectInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 			return false
 		end
 	end, false )
-	DeathFxList:AddContextualMenuAction( f1_arg0, f1_arg1, 0x52FB29ED3A3CA79, function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
+	DeathFxList:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/preview", function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
 		return function ( f18_arg0, f18_arg1, f18_arg2, f18_arg3 )
 			CoD.WeaponOptionsUtility.PreviewDeathFx( f18_arg1, f18_arg0, f18_arg2 )
 		end

@@ -278,7 +278,7 @@ function function_fd3fa3a3()
     }
     
     var_4bdae8cd = struct::get( "p8_fxanim_zm_esc_recreationyard_rocks_c_bundle", "scriptbundlename" );
-    playsoundatposition( #"hash_83f364ceb17bf92", var_4bdae8cd.origin );
+    playsoundatposition( #"evt_fxa_rocks_recyard_c", var_4bdae8cd.origin );
     var_4bdae8cd thread scene::play( "Main & Idle Loop Out" );
 }
 
@@ -762,8 +762,8 @@ function function_e16c819a( a_ents )
 // Size: 0xaa
 function function_993f4add()
 {
-    self notify( #"hash_2c989e619ebfe50a" );
-    self endon( #"hash_2c989e619ebfe50a" );
+    self notify( #"start_damage_watcher" );
+    self endon( #"start_damage_watcher" );
     s_result = self waittill( #"death", #"b_h_stop_damage_watcher" );
     
     if ( s_result._notify == "death" )

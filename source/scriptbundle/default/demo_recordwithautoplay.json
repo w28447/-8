@@ -1,7 +1,7 @@
 {
     "hash_dfedf08e": 0,
     "categoryindex": 0,
-    "description": "localized17#hash_6f85b5bcfc3d4281",
+    "description": "localized17#demo/options_record_with_auto_play_desc",
     "menu/on": "localized17#menu/on",
     "hash_10e01ad5": 0,
     "iscategory": 0,
@@ -21,7 +21,7 @@
     "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "demo_recordwithautoplay",
-    "displayname": "localized17#hash_4942e5ae4a0bed0f",
+    "displayname": "localized17#demo/options_record_with_auto_play",
     "rangestartvalue": 0,
     "isdisabled": 0,
     "hash_d6897f56": 0,

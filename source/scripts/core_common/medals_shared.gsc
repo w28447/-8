@@ -90,7 +90,7 @@ function event_handler[player_medal] codecallback_medal( eventstruct )
 function function_8570168d()
 {
     /#
-        if ( getdvar( #"hash_49e94b7aefac4f49", 0 ) )
+        if ( getdvar( #"ui_simulatect", 0 ) )
         {
             return true;
         }

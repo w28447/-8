@@ -64,7 +64,7 @@ function private on_end( round_reset )
 // Size: 0x90
 function private monitor_flag( str_flag )
 {
-    level endon( #"hash_7646638df88a3656" );
+    level endon( #"trial_round_end" );
     
     while ( true )
     {

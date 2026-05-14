@@ -270,7 +270,7 @@ function function_ede7a778()
         self thread ct_utils::function_61c3d59c( #"hash_7657f4c839045d4" );
         self thread function_25bdd976();
         self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_prop_seeker_mine_nag", 7, 15 );
-        self waittill( #"hash_225857690f87699b" );
+        self waittill( #"seeker_mine_deployed" );
         self thread ct_utils::function_61c3d59c( #"hash_62b1eebe8dd5d654" );
         level notify( #"hash_60e26e14a51c5211" );
         waitframe( 1 );
@@ -281,7 +281,7 @@ function function_ede7a778()
     while ( !( isdefined( var_d7cff8ac ) && var_d7cff8ac ) );
     
     self waittill( #"seeker_discharge" );
-    level notify( #"hash_7fb05a5bbcb14d6b" );
+    level notify( #"seeker_found_target" );
     level.e_seeker_mine.overridevehicledamage = &function_8259415c;
     self function_222141a5();
     self allowmelee( 1 );
@@ -389,7 +389,7 @@ function function_1690f8ca()
     level.var_72c3ea74 = struct::get_array( "s_prophet_soldier_loc_2", "targetname" );
     level.var_da5432a2 = 0;
     level thread ct_bots::activate_bots( level.var_72c3ea74.size, #"axis" );
-    self val::set( #"hash_40d296a404d374dd", "ignoreme", 1 );
+    self val::set( #"seeker_distraction", "ignoreme", 1 );
     self ct_vo::function_831e0584( array( "vox_tvoi_tutor_prop_distract_enemy_0" ) );
     var_4bf2090e = 0;
     trig_tut_seeker2_deploy = getent( "trig_tut_seeker2_deploy", "targetname" );
@@ -401,7 +401,7 @@ function function_1690f8ca()
         self ct_utils::function_6ad0c151();
         self thread function_25bdd976();
         self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_prop_distract_enemy_nag", 7, 15 );
-        self waittill( #"hash_225857690f87699b" );
+        self waittill( #"seeker_mine_deployed" );
         level notify( #"hash_60e26e14a51c5211" );
         level.var_e72728b8 = array( #"eq_seeker_mine", #"shock_rifle" );
         self thread function_bd01a19b();
@@ -430,7 +430,7 @@ function function_1690f8ca()
     level notify( #"hash_7711f0aa30443b10" );
     self thread ct_vo::function_831e0584( array( "vox_tvoi_tutor_prop_throw_seeker" ) );
     self thread ct_utils::function_61c3d59c( #"hash_1bf4eaaf5d2ecee1", undefined );
-    self val::reset( #"hash_40d296a404d374dd", "ignoreme" );
+    self val::reset( #"seeker_distraction", "ignoreme" );
     self thread function_222141a5();
     self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_prop_shoot_enemy_nag", 10, 15 );
     ct_utils::function_d00e0eeb();
@@ -526,7 +526,7 @@ function function_969b78e1()
     level notify( #"colbounds_prophet_seeker3_on" );
     ct_utils::function_e9ab1003( undefined );
     function_7065027f();
-    self val::reset( #"hash_40d296a404d374dd", "ignoreme" );
+    self val::reset( #"seeker_distraction", "ignoreme" );
     
     while ( !isalive( level.var_924c5b44 ) )
     {
@@ -811,7 +811,7 @@ function function_8868dc7c()
     }
     
     self ct_utils::function_6ad0c151();
-    level notify( #"hash_56227775188dc01" );
+    level notify( #"cleanup_enemy_prophet" );
     ct_utils::function_c2a10fc();
     level.var_8fce01d = 0;
     wait 1;
@@ -1225,7 +1225,7 @@ function function_235b259b()
     waitframe( 1 );
     self thread ct_vo::function_831e0584( array( "vox_tvoi_tutor_prop_wine_enemy_locate" ) );
     self thread ct_utils::function_61c3d59c( undefined, undefined, "dynobj_KillEnemies" );
-    self thread ct_utils::function_80bf685b( level.var_c271b8e0 );
+    self thread ct_utils::ingame_objective_set_points( level.var_c271b8e0 );
     ct_utils::function_e9ab1003( str_respawn );
     self ct_utils::function_d00e0eeb();
     ct_utils::function_9aca2fa0( "ct_action" );
@@ -1245,7 +1245,7 @@ function function_235b259b()
     level notify( #"hash_60e26e14a51c5211" );
     waitframe( 1 );
     self thread ct_utils::function_61c3d59c( undefined, undefined, "dynobj_KillEnemies" );
-    self thread ct_utils::function_80bf685b( level.var_c271b8e0 );
+    self thread ct_utils::ingame_objective_set_points( level.var_c271b8e0 );
     ct_utils::function_e9ab1003( str_respawn );
     self ct_utils::function_d00e0eeb();
     ct_utils::function_9aca2fa0( "ct_action" );
@@ -1419,7 +1419,7 @@ function function_80ad1ef6()
     {
         e_player = ct_utils::get_player();
         level.var_c271b8e0--;
-        e_player thread ct_utils::function_80bf685b( level.var_c271b8e0 );
+        e_player thread ct_utils::ingame_objective_set_points( level.var_c271b8e0 );
     }
 }
 
@@ -1445,7 +1445,7 @@ function function_c7bb6e59()
     ct_utils::function_9aca2fa0( "ct_action2" );
     self thread function_f868e3e2();
     level flag::wait_till( "fin2_enemy_chopper_destroyed" );
-    level notify( #"hash_1c966d2b46abb009" );
+    level notify( #"surround_spawn_end" );
     level notify( #"hash_73522d92576b145b" );
     level notify( #"hash_60e26e14a51c5211" );
     self thread ct_vo::function_831e0584( array( "vox_tvoi_tutor_prop_score_hit" ) );
@@ -1496,7 +1496,7 @@ function function_c448a1e0()
         if ( !( isdefined( level.var_51ff7a58 ) && level.var_51ff7a58 ) )
         {
             self thread ct_utils::function_e96cc63f( 4, "s_tut_fin2_enemy", 1, 2, 3, 1, "fin2_enemy_bot" );
-            self waittill( #"hash_78aff79640650d11" );
+            self waittill( #"killstreak_ready_dart" );
             level notify( #"hash_3ce5abc259d8b041" );
             ct_utils::function_49e0c5bc();
         }
@@ -1578,7 +1578,7 @@ function function_2b6f2238()
         if ( isdefined( level.var_3d80a2a5 ) && level.var_3d80a2a5 )
         {
             self thread ct_utils::function_61c3d59c( undefined, undefined, "dynobj_EarnDart" );
-            self thread ct_utils::function_80bf685b( 0 );
+            self thread ct_utils::ingame_objective_set_points( 0 );
             level.var_d1f07c87 = 0;
             level thread ct_utils::function_e44c5b8e( #"dart", 10, 1 );
             self thread function_c448a1e0();
@@ -1764,7 +1764,7 @@ function function_383a4355()
     self val::set( #"enemy_prophet", "ignoreall", 1 );
     self thread ct_utils::function_5b59f3b7( s_loc.origin, s_loc.angles, 32, 1, 1, 1 );
     level.var_924c5b44 = self;
-    level waittill( #"hash_56227775188dc01" );
+    level waittill( #"cleanup_enemy_prophet" );
     self dodamage( self.health + 100, self.origin );
 }
 
@@ -1866,7 +1866,7 @@ function function_58c62280( b_keyline, var_2f3964e3 )
     switch ( level.var_8ca3c62 )
     {
         case 1:
-            level waittill( #"hash_7fb05a5bbcb14d6b" );
+            level waittill( #"seeker_found_target" );
             self val::reset( #"enemy_bot", "ignoreall" );
             self thread ct_utils::function_5b59f3b7( self.origin, self.angles, 200 );
             break;
@@ -2144,7 +2144,7 @@ function function_9bf1e805( e_player )
         }
     }
     
-    e_player notify( #"hash_225857690f87699b" );
+    e_player notify( #"seeker_mine_deployed" );
     
     while ( true )
     {
@@ -2228,9 +2228,9 @@ function function_f99e791d()
             level.var_d1f07c87 = 0;
             level.var_58360a73 = 0;
             self thread ct_utils::function_61c3d59c( undefined, undefined, "dynobj_EarnDart" );
-            self thread ct_utils::function_80bf685b( 0 );
+            self thread ct_utils::ingame_objective_set_points( 0 );
             self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_prop_score_nag", 20, 20 );
-            self waittill( #"hash_78aff79640650d11" );
+            self waittill( #"killstreak_ready_dart" );
             self thread ct_vo::function_831e0584( array( "vox_tvoi_tutor_prop_score_earn" ) );
             level.var_51ff7a58 = 1;
         }
@@ -2398,7 +2398,7 @@ function function_980638c8( params )
     
     if ( isplayer( eattacker ) && !( isdefined( level.var_51ff7a58 ) && level.var_51ff7a58 ) )
     {
-        level notify( #"hash_1dc7d838ff48073d" );
+        level notify( #"fin2_enemy_killed" );
         level notify( #"hash_60e26e14a51c5211" );
         cost = killstreaks::get_killstreak_momentum_cost( eattacker, #"dart" );
         var_23efb519 = level.var_dd8875fe;
@@ -2408,13 +2408,13 @@ function function_980638c8( params )
         eattacker globallogic_score::giveplayermomentumnotification( level.var_595e41ee, #"score/blank", undefined, 0, weapon, 0, eventindex, event, undefined );
         level.var_d1f07c87++;
         
-        if ( !eattacker ct_utils::function_a7540094() )
+        if ( !eattacker ct_utils::ingame_objective_is_open() )
         {
             eattacker thread ct_utils::function_61c3d59c( undefined, undefined, "dynobj_EarnDart" );
         }
         
         var_a3f2cb34 = level.var_595e41ee * level.var_d1f07c87;
-        eattacker thread ct_utils::function_80bf685b( var_a3f2cb34 );
+        eattacker thread ct_utils::ingame_objective_set_points( var_a3f2cb34 );
         
         if ( !( isdefined( level.var_58360a73 ) && level.var_58360a73 ) && level.var_d1f07c87 * level.var_595e41ee >= cost / 2 )
         {
@@ -2459,7 +2459,7 @@ function function_25bdd976( var_ccd0840c = 1, var_a4339f5b = 1, str_nag, var_23c
             self thread ct_vo::function_261ed63c( str_nag, 20, 20, "nag_give_player_one_seeker_end" );
         }
         
-        self waittill( #"hash_225857690f87699b" );
+        self waittill( #"seeker_mine_deployed" );
         level notify( #"nag_give_player_one_seeker_end" );
         array::add( level.var_e72728b8, #"eq_seeker_mine", 0 );
         
@@ -2529,7 +2529,7 @@ function function_222141a5( var_58d9f1c6 = 1 )
     {
         level endon( #"combattraining_logic_finished" );
         sessionmode = currentsessionmode();
-        setdvar( #"hash_42113ca5668d7812", "<dev string:x38>" );
+        setdvar( #"devgui_ct_prophet", "<dev string:x38>" );
         
         if ( sessionmode != 4 )
         {
@@ -2546,7 +2546,7 @@ function function_222141a5( var_58d9f1c6 = 1 )
         while ( true )
         {
             wait 0.25;
-            cmd = getdvarstring( #"hash_42113ca5668d7812", "<dev string:x38>" );
+            cmd = getdvarstring( #"devgui_ct_prophet", "<dev string:x38>" );
             
             if ( cmd == "<dev string:x38>" )
             {
@@ -2557,10 +2557,10 @@ function function_222141a5( var_58d9f1c6 = 1 )
             
             switch ( cmd )
             {
-                case #"hash_3438e777b263d2c2":
+                case #"dont_end_off":
                     level.var_94d65b52 = 0;
                     break;
-                case #"hash_617cd243f40d3ae8":
+                case #"dont_end_on":
                     level.var_94d65b52 = 1;
                     break;
                 case #"kill_player":
@@ -2587,7 +2587,7 @@ function function_222141a5( var_58d9f1c6 = 1 )
                     break;
             }
             
-            setdvar( #"hash_42113ca5668d7812", "<dev string:x38>" );
+            setdvar( #"devgui_ct_prophet", "<dev string:x38>" );
         }
     }
 

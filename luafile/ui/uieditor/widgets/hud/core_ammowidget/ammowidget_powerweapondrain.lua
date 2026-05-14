@@ -11,7 +11,7 @@ CoD.AmmoWidget_PowerWeaponDrain.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local ReadyGlow1b = LUI.UIImage.new( 0.16, 0.92, 1, 1, 0.46, 1.03, 0, 0 )
 	ReadyGlow1b:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	ReadyGlow1b:setAlpha( 0 )
-	ReadyGlow1b:setImage( RegisterImage( 0xA0CD7D7ED11D3D3 ) )
+	ReadyGlow1b:setImage( RegisterImage( "uie_ui_hud_core_player_widget_led_health" ) )
 	ReadyGlow1b:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	ReadyGlow1b:setShaderVector( 0, 0, 1, 0, 0 )
 	ReadyGlow1b:setShaderVector( 1, 0, 0, 0, 0 )

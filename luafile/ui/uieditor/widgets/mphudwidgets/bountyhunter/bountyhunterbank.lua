@@ -12,7 +12,7 @@ CoD.BountyHunterBank.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local Bank = LUI.UIText.new( 0, 0, -2, 110, 0, 1, 0, 0 )
 	Bank:setRGB( 0.07, 0.09, 0.04 )
-	Bank:setText( Engine[0xF9F1239CFD921FE]( 0x37A5FCCE8216B64 ) )
+	Bank:setText( Engine[0xF9F1239CFD921FE]( "bounty_hunter/bank" ) )
 	Bank:setTTF( "ttmussels_regular" )
 	Bank:setLetterSpacing( 8 )
 	Bank:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

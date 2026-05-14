@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_exotic_shared_jenga",
+    "type": "#gesture",
+    "gesture": "#boast_jenga",
+    "gesture2": "#boast_jenga_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#hash_5ba0afaf8925f0b6",
+        "icon": "image#hash_1e96a6b48143bec0",
+        "isdefault": 0
+    }
+}

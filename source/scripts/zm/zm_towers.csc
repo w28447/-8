@@ -63,7 +63,7 @@ function event_handler[level_init] main( eventstruct )
     clientfield::register( "scriptmover", "energy_soul", 1, 1, "int", &function_87e8980d, 0, 0 );
     clientfield::register( "scriptmover", "energy_soul_target", 1, 1, "int", &function_b29b7566, 0, 0 );
     clientfield::register( "scriptmover", "banner_soul_burst", 1, 1, "counter", &banner_soul_burst, 0, 0 );
-    clientfield::register( "toplayer", "" + #"hash_2bbcb9e09bd7bb26", 1, 1, "counter", &function_ee4f01d8, 0, 0 );
+    clientfield::register( "toplayer", "" + #"challenge_complete_crowd_react", 1, 1, "counter", &challenge_complete_crowd_react, 0, 0 );
     clientfield::register( "allplayers", "force_challenge_model", 1, 1, "int", &function_a1d393ad, 0, 1 );
     clientfield::register( "actor", "acid_trap_death_fx", 1, 1, "int", &acid_trap_death_fx, 0, 0 );
     clientfield::register( "scriptmover", "trap_switch_green", 1, 1, "int", &function_29bd0c51, 0, 0 );
@@ -75,16 +75,16 @@ function event_handler[level_init] main( eventstruct )
     clientfield::register( "world", "crowd_react_boss", 1, 1, "int", &crowd_react_boss, 0, 1 );
     clientfield::register( "world", "" + #"crowd_react_wave", 1, 1, "int", &crowd_react_wave, 0, 1 );
     clientfield::register( "toplayer", "snd_crowd_react", 1, 4, "int", &snd_crowd_react, 0, 0 );
-    clientfield::register( "scriptmover", "" + #"hash_42cc4bf5e47478c5", 1, 1, "int", &function_a8195148, 0, 0 );
+    clientfield::register( "scriptmover", "" + #"ww_quest_brazier_fire", 1, 1, "int", &ww_quest_brazier_fire, 0, 0 );
     clientfield::register( "scriptmover", "" + #"hash_3b746cf6eec416b2", 1, 1, "int", &function_24673586, 0, 0 );
-    clientfield::register( "world", "" + #"hash_584e8f7433246444", 1, 1, "int", &function_e9a85af, 0, 0 );
-    clientfield::register( "world", "" + #"hash_418c1c843450232b", 1, 1, "int", &function_90076b73, 0, 0 );
-    clientfield::register( "world", "" + #"hash_4d547bf36c6cb2d8", 1, 1, "int", &function_e26b1e6b, 0, 0 );
-    clientfield::register( "world", "" + #"hash_38ba3ad0902aa355", 1, 1, "int", &function_25a6ede2, 0, 0 );
-    clientfield::register( "world", "" + #"hash_24d7233bb17e6558", 1, 1, "int", &function_a2800857, 0, 0 );
+    clientfield::register( "world", "" + #"ww_quest_fire_trail", 1, 1, "int", &ww_quest_fire_trail, 0, 0 );
+    clientfield::register( "world", "" + #"ww_quest_scorpio_danu", 1, 1, "int", &ww_quest_scorpio_danu, 0, 0 );
+    clientfield::register( "world", "" + #"ww_quest_scorpio_ra", 1, 1, "int", &ww_quest_scorpio_ra, 0, 0 );
+    clientfield::register( "world", "" + #"ww_quest_scorpio_odin", 1, 1, "int", &ww_quest_scorpio_odin, 0, 0 );
+    clientfield::register( "world", "" + #"ww_quest_scorpio_zeus", 1, 1, "int", &ww_quest_scorpio_zeus, 0, 0 );
     clientfield::register( "scriptmover", "" + #"ww_quest_melting", 1, 1, "counter", &ww_quest_melting, 0, 0 );
-    clientfield::register( "scriptmover", "" + #"hash_2c6f04d08665dbda", 1, 1, "int", &function_76dd176c, 0, 0 );
-    clientfield::register( "scriptmover", "" + #"hash_2a332df32456c86f", 1, 1, "int", &function_5dc8b5fa, 0, 0 );
+    clientfield::register( "scriptmover", "" + #"impervious_jar_petals", 1, 1, "int", &impervious_jar_petals, 0, 0 );
+    clientfield::register( "scriptmover", "" + #"impervious_jar_landed", 1, 1, "int", &impervious_jar_landed, 0, 0 );
     clientfield::register( "scriptmover", "" + #"hash_48ad84f9cf6a33f0", 1, 1, "counter", &function_91305947, 0, 0 );
     clientfield::register( "zbarrier", "" + #"hash_3974bea828fbf7f7", 1, 1, "int", &function_ba86af94, 0, 0 );
     clientfield::register( "zbarrier", "" + #"hash_3a51c9895d4afcf7", 1, 1, "int", &function_36469123, 0, 0 );
@@ -92,7 +92,7 @@ function event_handler[level_init] main( eventstruct )
     clientfield::register( "zbarrier", "" + #"hash_5dc6f97e5850e1d1", 1, 1, "int", &function_1941a5ca, 0, 0 );
     clientfield::register( "toplayer", "" + #"ww_quest_earthquake", 1, 1, "counter", &ww_quest_earthquake, 0, 0 );
     clientfield::register( "scriptmover", "" + #"hash_333e3741e6552db3", 1, 1, "int", &function_e63747a9, 0, 0 );
-    clientfield::register( "world", "" + #"hash_3c58464f16d8a1be", 1, 1, "int", &function_44a2fe02, 0, 0 );
+    clientfield::register( "world", "" + #"reveal_ee_space", 1, 1, "int", &reveal_ee_space, 0, 0 );
     clientfield::register( "scriptmover", "" + #"hash_6ff3eb2dd0078a51", 1, 1, "counter", &function_8565be53, 0, 0 );
     clientfield::register( "world", "" + #"hash_445060dbbf244b04", 1, 1, "int", &function_35bf68a, 0, 0 );
     clientfield::register( "world", "" + #"hash_a2fb645044ed12e", 1, 1, "int", &function_605da720, 0, 0 );
@@ -100,7 +100,7 @@ function event_handler[level_init] main( eventstruct )
     clientfield::register( "scriptmover", "" + #"hash_c382c02584ba249", 1, 1, "int", &function_240a3342, 0, 0 );
     clientfield::register( "scriptmover", "" + #"hash_273efcc293063e5e", 1, 1, "int", &function_9eb43a48, 0, 0 );
     clientfield::register( "scriptmover", "" + #"fertilizer_smell", 1, 1, "int", &fertilizer_smell, 0, 0 );
-    clientfield::register( "world", "" + #"hash_5a3e1454226ef7a4", 1, 1, "int", &function_8fc72b02, 0, 0 );
+    clientfield::register( "world", "" + #"fertilizer_smell_bowl", 1, 1, "int", &fertilizer_smell_bowl, 0, 0 );
     clientfield::register( "world", "" + #"hash_73088ea3053b96f1", 1, 1, "int", &function_70e21be0, 0, 0 );
     clientfield::register( "actor", "" + #"hash_233e31d0c2b47b1b", 1, 1, "int", &function_9cb4a774, 0, 0 );
     clientfield::register( "actor", "" + #"hash_12dfb8249f8212d2", 1, 1, "int", &function_eba8a203, 0, 0 );
@@ -108,8 +108,8 @@ function event_handler[level_init] main( eventstruct )
     clientfield::register( "scriptmover", "ra_eyes_beam_fire", 1, 1, "int", &ra_eyes_beam_fire, 0, 0 );
     clientfield::register( "scriptmover", "ra_rooftop_eyes_beam_fire", 1, 1, "int", &ra_rooftop_eyes_beam_fire, 0, 0 );
     clientfield::register( "world", "" + #"hash_57c08e5f4792690c", 1, 1, "int", &function_339af7bd, 0, 0 );
-    clientfield::register( "world", "" + #"hash_440f23773f551a48", 1, 1, "int", &function_e131f9b8, 0, 0 );
-    clientfield::register( "world", "" + #"hash_4e5e2b411c997804", 1, 1, "int", &function_98d53b6b, 0, 0 );
+    clientfield::register( "world", "" + #"force_stream_glyph", 1, 1, "int", &force_stream_glyph, 0, 0 );
+    clientfield::register( "world", "" + #"force_stream_pedestal", 1, 1, "int", &force_stream_pedestal, 0, 0 );
     clientfield::register( "toplayer", "" + #"maelstrom_initiate", 1, 1, "counter", &maelstrom_initiate, 0, 0 );
     clientfield::register( "world", "" + #"maelstrom_initiate_fx", 1, 1, "int", &maelstrom_initiate_fx, 0, 0 );
     clientfield::register( "scriptmover", "" + #"maelstrom_conduct", 1, 1, "int", &maelstrom_conduct, 0, 0 );
@@ -118,15 +118,15 @@ function event_handler[level_init] main( eventstruct )
     clientfield::register( "scriptmover", "" + #"maelstrom_discharge", 1, 1, "counter", &maelstrom_discharge, 0, 0 );
     clientfield::register( "actor", "" + #"maelstrom_death", 1, 1, "counter", &maelstrom_death, 0, 0 );
     clientfield::register( "toplayer", "" + #"maelstrom_storm", 1, 1, "int", &maelstrom_storm, 0, 0 );
-    clientfield::register( "toplayer", "" + #"hash_182c03ff2a21c07c", 1, 1, "counter", &function_2d6ec02, 0, 0 );
+    clientfield::register( "toplayer", "" + #"maelstrom_storm_change", 1, 1, "counter", &maelstrom_storm_change, 0, 0 );
     clientfield::register( "toplayer", "" + #"maelstrom_ending", 1, 1, "int", &maelstrom_ending, 0, 0 );
     clientfield::register( "scriptmover", "" + #"hash_63e758aa5387132a", 1, 1, "counter", &function_7dbeb0c5, 0, 0 );
-    clientfield::register( "scriptmover", "" + #"hash_23ba00d2f804acc2", 1, 1, "int", &function_fa2e6690, 0, 0 );
-    clientfield::register( "world", "" + #"hash_16b9e3d69cb7a017", 1, 1, "int", &function_fc502d48, 0, 1 );
+    clientfield::register( "scriptmover", "" + #"defend_key_glint", 1, 1, "int", &defend_key_glint, 0, 0 );
+    clientfield::register( "world", "" + #"boss_battle_teleport", 1, 1, "int", &function_fc502d48, 0, 1 );
     clientfield::register( "world", "" + #"hash_1f09a5290d31eb37", 1, 1, "counter", &function_5b893414, 0, 0 );
     clientfield::register( "world", "" + #"hash_2383fd01b106ced8", 1, 1, "int", &function_4c2b87ed, 0, 0 );
     clientfield::register( "scriptmover", "" + #"hash_2407f687f7d24a83", 1, 1, "int", &function_5cdc8b28, 0, 0 );
-    clientfield::register( "scriptmover", "" + #"hash_5afda864f8b64f5c", 1, 1, "int", &function_5c9f28ec, 0, 0 );
+    clientfield::register( "scriptmover", "" + #"narrative_brazier_fire", 1, 1, "int", &narrative_brazier_fire, 0, 0 );
     clientfield::register( "world", "" + #"hash_39e6b14b9e5b0f3d", 1, 1, "int", &function_99220e91, 0, 0 );
     level._effect[ #"headshot" ] = #"zombie/fx_bul_flesh_head_fatal_zmb";
     level._effect[ #"headshot_nochunks" ] = #"zombie/fx_bul_flesh_head_nochunks_zmb";
@@ -136,16 +136,16 @@ function event_handler[level_init] main( eventstruct )
     level._effect[ #"hash_73172b799c18404e" ] = #"zombie/fx_teleport_flashback_zmb";
     level._effect[ #"entry_gate_dust" ] = #"hash_43b2eaf6037de947";
     level._effect[ #"special_round_smoke" ] = #"hash_7f90f442be248933";
-    level._effect[ #"hash_2a49b738100ad198" ] = #"hash_573f4333a69a2e97";
+    level._effect[ #"special_round_fire" ] = #"hash_573f4333a69a2e97";
     level._effect[ #"special_round_camera_start" ] = #"hash_5e456969dcb6d449";
     level._effect[ #"special_round_camera_persist" ] = #"hash_30a51086d1de2e56";
     level._effect[ #"trap_switch_green" ] = #"hash_24ce0898c3432283";
     level._effect[ #"trap_switch_red" ] = #"hash_1d6280fe28ef047";
     level._effect[ #"trap_switch_smoke" ] = #"hash_22722c91ebbd77f9";
-    level._effect[ #"hash_42cc4bf5e47478c5" ] = #"hash_387c78244f5f45e5";
+    level._effect[ #"ww_quest_brazier_fire" ] = #"hash_387c78244f5f45e5";
     level._effect[ #"hash_3b746cf6eec416b2" ] = #"hash_396a3bd29f816da1";
     level._effect[ #"hash_36535f89ec2488d7" ] = #"hash_5efc6976bcba1957";
-    level._effect[ #"hash_584e8f7433246444" ] = #"hash_682f944518a1171c";
+    level._effect[ #"ww_quest_fire_trail" ] = #"hash_682f944518a1171c";
     level._effect[ #"ww_quest_scorpio" ] = #"hash_2b4f2f30d115f02a";
     level._effect[ #"ww_quest_melting" ] = #"hash_2947a74c2209d11";
     level._effect[ #"hash_48ad84f9cf6a33f0" ] = #"hash_232d6ea0cf34968b";
@@ -175,11 +175,11 @@ function event_handler[level_init] main( eventstruct )
     level._effect[ #"hash_6ff3eb2dd0078a51" ] = #"hash_71198dfc5b0fd85";
     level._effect[ #"hash_3f79f6da0222ebc2" ] = #"hash_2f1958cd9b473bec";
     level._effect[ #"fertilizer_smell" ] = #"hash_48344f893bb65bf2";
-    level._effect[ #"hash_5a3e1454226ef7a4" ] = #"hash_62ef4090559ca8c8";
+    level._effect[ #"fertilizer_smell_bowl" ] = #"hash_62ef4090559ca8c8";
     level._effect[ #"hash_1f7bfd354d2472e3" ] = #"hash_153286962fe0c0c5";
     level._effect[ #"hash_1f7511354d1e7631" ] = #"hash_153992962fe6f3d7";
     level._effect[ #"maelstrom_initiate" ] = #"hash_223c6a623adb13fb";
-    level._effect[ #"hash_504ad50f841882fe" ] = #"hash_26b672f2c1c8a570";
+    level._effect[ #"maelstrom_conduct_elbow" ] = #"hash_26b672f2c1c8a570";
     level._effect[ #"hash_2cf77bcee904664d" ] = #"hash_50ce930e4dd4bc12";
     level._effect[ #"hash_2cf75dcee9043353" ] = #"hash_50c7bb0e4dcee15c";
     level._effect[ #"hash_4a9ad8ec06102c34" ] = #"hash_4d91ce766ebeda81";
@@ -196,8 +196,8 @@ function event_handler[level_init] main( eventstruct )
     level._effect[ #"maelstrom_death" ] = #"hash_6a5c671e82cb5243";
     level._effect[ #"maelstrom_camera_fx" ] = #"hash_33ca6401bbf3798c";
     level._effect[ #"hash_63e758aa5387132a" ] = #"hash_7df55a8e3d87037a";
-    level._effect[ #"hash_23ba00d2f804acc2" ] = #"hash_56b121a7e7eee303";
-    level._effect[ #"hash_5afda864f8b64f5c" ] = #"hash_5f48f8d916a0f612";
+    level._effect[ #"defend_key_glint" ] = #"hash_56b121a7e7eee303";
+    level._effect[ #"narrative_brazier_fire" ] = #"hash_5f48f8d916a0f612";
     level thread zm_audio_sq::init();
     level.var_d0ab70a2 = #"gamedata/weapons/zm/zm_towers_weapons.csv";
     level.var_210ce105 = zm_towers_crowd_meter::register( "zm_towers_crowd_meter" );
@@ -414,13 +414,13 @@ function fertilizer_smell( localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7
 // Checksum 0x3a07f43e, Offset: 0x3fd0
 // Size: 0x17c
-function function_8fc72b02( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function fertilizer_smell_bowl( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     s_fx = struct::get( #"hash_44451a49b3653789" );
     
     if ( newval )
     {
-        s_fx.var_c0a2fa6f = playfx( localclientnum, level._effect[ #"hash_5a3e1454226ef7a4" ], s_fx.origin + ( 0, 0, 4 ), anglestoforward( s_fx.angles ), anglestoup( s_fx.angles ) );
+        s_fx.var_c0a2fa6f = playfx( localclientnum, level._effect[ #"fertilizer_smell_bowl" ], s_fx.origin + ( 0, 0, 4 ), anglestoforward( s_fx.angles ), anglestoup( s_fx.angles ) );
         audio::playloopat( "zmb_funtime_fert_smell_lp", s_fx.origin );
         return;
     }
@@ -574,7 +574,7 @@ function function_339af7bd( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0x645cca51, Offset: 0x4a28
 // Size: 0x7c
-function function_e131f9b8( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function force_stream_glyph( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( newval )
     {
@@ -720,7 +720,7 @@ function function_fd119bd7( localclientnum, oldval, newval, bnewent, binitialsna
 {
     if ( newval )
     {
-        self.var_4e35f286 = playfx( localclientnum, level._effect[ #"hash_37043a271f6dd852" ], self.origin );
+        self.var_4e35f286 = playfx( localclientnum, level._effect[ #"chaos_ball_light" ], self.origin );
         return;
     }
     
@@ -1903,7 +1903,7 @@ function function_a1d393ad( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0x888c3ed3, Offset: 0xa4c0
 // Size: 0x118
-function function_ee4f01d8( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
+function challenge_complete_crowd_react( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
     a_s_crowd = struct::get_array( "sndCrowdOneshot" );
     
@@ -1924,7 +1924,7 @@ function acid_trap_death_fx( localclientnum, oldval, newval, bnewent, binitialsn
     if ( newval == 1 )
     {
         self.n_acid_trap_death_fx = util::playfxontag( localclientnum, level._effect[ #"acid_death" ], self, "j_spine4" );
-        self.var_5911b395 = self playloopsound( #"hash_21fbee9ffef9a6d7" );
+        self.var_5911b395 = self playloopsound( #"zmb_trap_acid_loop_npc" );
         return;
     }
     
@@ -2015,7 +2015,7 @@ function acid_trap_postfx( localclientnum, oldval, newval, bnewent, binitialsnap
     {
         self postfx::playpostfxbundle( "pstfx_zm_acid_dmg_towers" );
         self postfx::playpostfxbundle( "pstfx_zm_acid_dmg_towers_2" );
-        self.var_431ddde9 = self playloopsound( #"hash_341a3fa00975f232" );
+        self.var_431ddde9 = self playloopsound( #"zmb_trap_acid_loop_plr" );
         return;
     }
     
@@ -2032,11 +2032,11 @@ function acid_trap_postfx( localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7
 // Checksum 0x187965c3, Offset: 0xaaf8
 // Size: 0xbe
-function function_a8195148( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
+function ww_quest_brazier_fire( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
     if ( newval )
     {
-        self.var_7d8225fa = util::playfxontag( localclientnum, level._effect[ #"hash_42cc4bf5e47478c5" ], self, "tag_origin" );
+        self.var_7d8225fa = util::playfxontag( localclientnum, level._effect[ #"ww_quest_brazier_fire" ], self, "tag_origin" );
         return;
     }
     
@@ -2073,17 +2073,17 @@ function function_24673586( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0x4df56c3e, Offset: 0xacf0
 // Size: 0xd4
-function function_e9a85af( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
+function ww_quest_fire_trail( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
-    s_fx = struct::get( #"hash_43872a24dfb85c96" );
-    playfx( localclientnum, level._effect[ #"hash_584e8f7433246444" ], s_fx.origin, anglestoforward( s_fx.angles ), anglestoup( s_fx.angles ) );
+    s_fx = struct::get( #"s_ww_quest_fire_trail" );
+    playfx( localclientnum, level._effect[ #"ww_quest_fire_trail" ], s_fx.origin, anglestoforward( s_fx.angles ), anglestoup( s_fx.angles ) );
 }
 
 // Namespace zm_towers/zm_towers
 // Params 7
 // Checksum 0xa5fcc4fc, Offset: 0xadd0
 // Size: 0x5c
-function function_90076b73( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
+function ww_quest_scorpio_danu( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
     function_daa52f70( localclientnum, "danu" );
 }
@@ -2092,7 +2092,7 @@ function function_90076b73( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0xf168d246, Offset: 0xae38
 // Size: 0x5c
-function function_e26b1e6b( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
+function ww_quest_scorpio_ra( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
     function_daa52f70( localclientnum, "ra" );
 }
@@ -2101,7 +2101,7 @@ function function_e26b1e6b( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0x11c88909, Offset: 0xaea0
 // Size: 0x5c
-function function_25a6ede2( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
+function ww_quest_scorpio_odin( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
     function_daa52f70( localclientnum, "odin" );
 }
@@ -2110,7 +2110,7 @@ function function_25a6ede2( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0xd2c5097e, Offset: 0xaf08
 // Size: 0x5c
-function function_a2800857( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
+function ww_quest_scorpio_zeus( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
     function_daa52f70( localclientnum, "zeus" );
 }
@@ -2148,7 +2148,7 @@ function ww_quest_melting( localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7
 // Checksum 0xda777bee, Offset: 0xb0e0
 // Size: 0xbe
-function function_76dd176c( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
+function impervious_jar_petals( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
     if ( newval )
     {
@@ -2167,7 +2167,7 @@ function function_76dd176c( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0xbb6c96d0, Offset: 0xb1a8
 // Size: 0x74
-function function_5dc8b5fa( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
+function impervious_jar_landed( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
     playfx( localclientnum, level._effect[ #"hash_7bd75ae600e0a590" ], self.origin );
 }
@@ -2323,7 +2323,7 @@ function ww_quest_earthquake( localclientnum, oldval, newval, bnewent, binitials
 // Params 7
 // Checksum 0x4363469e, Offset: 0xb9d8
 // Size: 0xcc
-function function_98d53b6b( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
+function force_stream_pedestal( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
     if ( newval )
     {
@@ -2485,7 +2485,7 @@ function maelstrom_storm( localclientnum, oldval, newval, bnewent, binitialsnap,
 // Params 7
 // Checksum 0x8178c7a2, Offset: 0xc2d0
 // Size: 0x64
-function function_2d6ec02( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
+function maelstrom_storm_change( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
     self playsound( localclientnum, #"hash_57b0d65c6bc36311" );
 }
@@ -2518,11 +2518,11 @@ function function_7dbeb0c5( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0xdfe77e5a, Offset: 0xc488
 // Size: 0xbe
-function function_fa2e6690( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
+function defend_key_glint( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
     if ( newval )
     {
-        self.var_1cac7f38 = util::playfxontag( localclientnum, level._effect[ #"hash_23ba00d2f804acc2" ], self, "tag_origin" );
+        self.var_1cac7f38 = util::playfxontag( localclientnum, level._effect[ #"defend_key_glint" ], self, "tag_origin" );
         return;
     }
     
@@ -2618,11 +2618,11 @@ function function_a8fa1dc3( b_show )
 // Params 7
 // Checksum 0x145ca11d, Offset: 0xc908
 // Size: 0xee
-function function_5c9f28ec( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
+function narrative_brazier_fire( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
     if ( newval )
     {
-        self.var_7a3d3907 = playfx( localclientnum, level._effect[ #"hash_5afda864f8b64f5c" ], self.origin, anglestoforward( self.angles ), anglestoup( self.angles ) );
+        self.var_7a3d3907 = playfx( localclientnum, level._effect[ #"narrative_brazier_fire" ], self.origin, anglestoforward( self.angles ), anglestoup( self.angles ) );
         return;
     }
     
@@ -2650,7 +2650,7 @@ function function_e63747a9( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0x86ac0083, Offset: 0xcae0
 // Size: 0xc4
-function function_44a2fe02( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function reveal_ee_space( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( newval )
     {

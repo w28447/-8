@@ -11,7 +11,7 @@ CoD.vhud_agr_NotificationBox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	normalBox:setRGB( 0.49, 1, 0.74 )
 	normalBox:setAlpha( 0.08 )
 	normalBox:setZoom( -20 )
-	normalBox:setImage( RegisterImage( 0xA21BBF7C2B1FCAA ) )
+	normalBox:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_dart_notificationboxaltitude" ) )
 	normalBox:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	normalBox:setShaderVector( 0, 0, 0, 0, 0 )
 	normalBox:setupNineSliceShader( 27, 15 )
@@ -20,7 +20,7 @@ CoD.vhud_agr_NotificationBox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local addBox = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	addBox:setRGB( 0.74, 0.99, 0.84 )
-	addBox:setImage( RegisterImage( 0xA21BBF7C2B1FCAA ) )
+	addBox:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_dart_notificationboxaltitude" ) )
 	addBox:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	addBox:setShaderVector( 0, 0, 0, 0, 0 )
 	addBox:setupNineSliceShader( 27, 15 )

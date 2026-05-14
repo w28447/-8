@@ -34,7 +34,7 @@ CoD.DirectorLaboratoryButtonElixerOffer.new = function ( f1_arg0, f1_arg1, f1_ar
 	self.ElixerOfferBanner = ElixerOfferBanner
 	
 	local Image = LUI.UIImage.new( 0, 1, -1, 1, 0.5, 0.5, -20, 20 )
-	Image:setImage( RegisterImage( 0x2259DB5D4EC19BF ) )
+	Image:setImage( RegisterImage( "uie_ui_zm_laboratory_promo_nebulium_50_percent" ) )
 	self:addElement( Image )
 	self.Image = Image
 	

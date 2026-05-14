@@ -3,7 +3,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "meansofdeath",
     "name": "mod_death_circle",
-    "displayname": "localized17#hash_1525cc239faaec26",
+    "displayname": "localized17#ui/mod_death_circle",
     "icon": "image#ui_icon_meansofdeath_death_circle",
     "iconlarge": "image#ui_icon_meansofdeath_death_circle_xl"
 }

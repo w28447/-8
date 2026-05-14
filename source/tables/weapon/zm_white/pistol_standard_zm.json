@@ -3,7 +3,7 @@
     "baseWeapon": "#pistol_standard",
     "displayname": "#weapon/pistol_standard",
     "weapon70": "#pistol_standard",
-    "streamkey": "#hash_9735124c4dd2440",
+    "streamkey": "#pistol_standard_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -44,10 +44,10 @@
             "1 0.05"
         ]
     ],
-    "firesound": "#hash_2dfbf84e4dada927",
-    "firesoundplayer": "#hash_29a5094dba1592e2",
-    "sound1d0": "#hash_2dfbf84e4dada927",
-    "sound200": "#hash_29a5094dba1592e2",
+    "firesound": "#wpn_pistol_standard_fire_npc",
+    "firesoundplayer": "#wpn_pistol_standard_fire_plr",
+    "sound1d0": "#wpn_pistol_standard_fire_npc",
+    "sound200": "#wpn_pistol_standard_fire_plr",
     "sound240": "#hash_631a067190b54300",
     "sound250": "#hash_242aa17124751841",
     "sound600": "#hash_72a07537a35e0368",

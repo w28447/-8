@@ -30,7 +30,7 @@
                     ],
                     "hash_1d91eeba": 2,
                     "hash_7db3435c": 0,
-                    "clientfield": "#hash_d3e328bb2670edf"
+                    "clientfield": "#zm_towers_ww_quest_impervious_jar"
                 }
             ],
             "hash_b048489f": 2
@@ -40,17 +40,17 @@
         {
             "hash_7db3435c": 0,
             "pieceimage": "image#hash_79d9d85eebdb2b66",
-            "clientfield": "#hash_92a0fdeb0b5ec56"
+            "clientfield": "#zm_towers_shield_part_2"
         },
         {
             "hash_7db3435c": 0,
             "pieceimage": "image#hash_34a98cabb57ff31f",
-            "clientfield": "#hash_92a0edeb0b5eaa3"
+            "clientfield": "#zm_towers_shield_part_1"
         },
         {
             "hash_7db3435c": 0,
             "pieceimage": "image#hash_19e0a200ef5cbde3",
-            "clientfield": "#hash_92a10deb0b5ee09"
+            "clientfield": "#zm_towers_shield_part_3"
         }
     ],
     "quests": [
@@ -66,7 +66,7 @@
                             ],
                             "hash_1d91eeba": 1,
                             "hash_7db3435c": 0,
-                            "clientfield": "#hash_3250b2a811943f26"
+                            "clientfield": "#zm_towers_hellpools_part_1"
                         },
                         {
                             "stages": [
@@ -76,7 +76,7 @@
                             ],
                             "hash_1d91eeba": 1,
                             "hash_7db3435c": 0,
-                            "clientfield": "#hash_3250b1a811943d73"
+                            "clientfield": "#zm_towers_hellpools_part_2"
                         },
                         {
                             "stages": [
@@ -86,7 +86,7 @@
                             ],
                             "hash_1d91eeba": 1,
                             "hash_7db3435c": 0,
-                            "clientfield": "#hash_3250b0a811943bc0"
+                            "clientfield": "#zm_towers_hellpools_part_3"
                         }
                     ],
                     "list_items": 3
@@ -262,7 +262,7 @@
             ],
             "hash_1d91eeba": 3,
             "hash_7db3435c": 0,
-            "clientfield": "#hash_5114ed99a6bad03b"
+            "clientfield": "#zm_towers_pap_quest_tiger_head"
         }
     ],
     "objectivebackground": "image#hash_7caa43a24c715df",

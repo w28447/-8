@@ -56,7 +56,7 @@ CoD.MetricsUtility.ScreenView = function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
 			f7_local0 = f7_local1
 		end
 	end
-	Engine[0xDE279ECDDDD966]( f7_arg0, 0xE564E1B1EAF4F17, {
+	Engine[0xDE279ECDDDD966]( f7_arg0, "dlog_event_screen_view", {
 		[0x807A9F9A0F22827] = f7_arg1,
 		[0xA2EDD0D449524F6] = f7_arg2,
 		[0xA6F594B9F4471D1] = f7_local0,
@@ -97,12 +97,12 @@ CoD.MetricsUtility.BlackMarketItemShopEvent = function ( f11_arg0, f11_arg1, f11
 	Engine[0xDE279ECDDDD966]( f11_arg0, 0xE92ED589816851F, {
 		[0xA771618F6FE31D1] = f11_arg1,
 		[0x568640B035A56DF] = f11_arg2,
-		[0x2429A195CE84D1A] = f11_arg3,
-		[0x4F5DF80758A6345] = f11_arg4,
+		["sku"] = f11_arg3,
+		["itemname"] = f11_arg4,
 		[0x8DFD5E2759BA3F8] = CoDShared.Loot.GetSeasonInfoParam( CoDShared.Loot.GetCurrentSeason(), CoDShared.Loot.SEASON_INFO_NUMBER ),
 		[0x82F5F2F5FB1340] = CoDShared.Loot.GetTierBoostItemTotal( f11_arg0 ),
 		[0x4C576376A0BBFFC] = f11_arg5,
-		[0xB19CA31C6396947] = f11_arg6,
+		["stacktotal"] = f11_arg6,
 		[0x98197E5BC91D712] = Engine[0xF40679B550DCCA2]( f11_arg0, CoD.Currencies.COD_POINTS ),
 		[0x28E78264DD0C908] = CoDShared.Loot.GetLootCaseOwnedCount( f11_arg0 ),
 		[0x6BD92EC4B0578E0] = f11_arg7,
@@ -209,7 +209,7 @@ end
 CoD.MetricsUtility.PaintshopEvent = function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3, f17_arg4, f17_arg5, f17_arg6, f17_arg7 )
 	Engine[0xDE279ECDDDD966]( f17_arg0, 0x1CEF64DDE4E7F7C, {
 		[0x387BB5BE85C3C86] = f17_arg1,
-		[0xAF203AC9DD3208D] = f17_arg2,
+		["duration"] = f17_arg2,
 		[0x1B9FADEB749D5B7] = f17_arg3,
 		[0x5C19815194E5A8E] = f17_arg4,
 		[0xC5C0D006BB174D0] = f17_arg5,
@@ -220,7 +220,7 @@ end
 
 CoD.MetricsUtility.EmblemEvent = function ( f18_arg0, f18_arg1, f18_arg2, f18_arg3, f18_arg4 )
 	Engine[0xDE279ECDDDD966]( f18_arg0, 0xCF2128ACF6E5097, {
-		[0xAF203AC9DD3208D] = f18_arg1,
+		["duration"] = f18_arg1,
 		[0xC5C0D006BB174D0] = f18_arg2,
 		[0x39D0A763CEB875A] = f18_arg3,
 		[0xC0CC839524F23A3] = f18_arg4
@@ -228,7 +228,7 @@ CoD.MetricsUtility.EmblemEvent = function ( f18_arg0, f18_arg1, f18_arg2, f18_ar
 end
 
 CoD.MetricsUtility.PrestigeEvent = function ( f19_arg0, f19_arg1, f19_arg2, f19_arg3 )
-	Engine[0xDE279ECDDDD966]( f19_arg0, 0x7BB2EA7E9D9529C, {
+	Engine[0xDE279ECDDDD966]( f19_arg0, "dlog_event_prestige", {
 		[0xE7BBDA657E05B6A] = f19_arg1,
 		[0x622A9E6C156E077] = f19_arg2,
 		[0x231A1BEA995F83B] = f19_arg3

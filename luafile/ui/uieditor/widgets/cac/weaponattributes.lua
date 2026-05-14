@@ -236,7 +236,7 @@ CoD.WeaponAttributes.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local MagCountName = LUI.UIText.new( 0, 0, 9, 139, 0, 0, 154, 172 )
 	MagCountName:setRGB( 0.39, 0.39, 0.39 )
-	MagCountName:setText( LocalizeToUpperString( 0xCFA9EEE073FD746 ) )
+	MagCountName:setText( LocalizeToUpperString( "weapon/mags" ) )
 	MagCountName:setTTF( "ttmussels_regular" )
 	MagCountName:setLetterSpacing( 3 )
 	MagCountName:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )

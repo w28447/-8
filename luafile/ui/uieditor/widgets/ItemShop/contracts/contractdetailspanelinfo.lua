@@ -42,7 +42,7 @@ CoD.ContractDetailsPanelInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local PreviewLabel = LUI.UIText.new( 0, 0, 23, 758, 0, 0, 422, 438 )
 	PreviewLabel:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	PreviewLabel:setText( LocalizeToUpperString( 0x5BF1E7A46978C32 ) )
+	PreviewLabel:setText( LocalizeToUpperString( "menu/special_order_preview" ) )
 	PreviewLabel:setTTF( "ttmussels_regular" )
 	PreviewLabel:setLetterSpacing( 4 )
 	PreviewLabel:setLineSpacing( 1 )
@@ -89,7 +89,7 @@ CoD.ContractDetailsPanelInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.FuiBox02Right = FuiBox02Right
 	
 	local PreviewButton = CoD.ContractPreviewButton.new( f1_arg0, f1_arg1, 0, 0, 23, 249, 0, 0, 33, 342 )
-	PreviewButton.Button.Text:setText( LocalizeToUpperString( 0x52FB29ED3A3CA79 ) )
+	PreviewButton.Button.Text:setText( LocalizeToUpperString( "menu/preview" ) )
 	PreviewButton:linkToElementModel( self, nil, false, function ( model )
 		PreviewButton:setModel( model, f1_arg1 )
 	end )
@@ -135,10 +135,10 @@ CoD.ContractDetailsPanelInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		end
 	end, function ( f11_arg0, f11_arg1, f11_arg2 )
 		if CoD.ModelUtility.IsSelfModelValueEqualTo( f11_arg0, f11_arg2, "allowFrozenMoment", true ) and IsGamepad( f11_arg2 ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x52FB29ED3A3CA79, nil, nil )
+			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/preview", nil, nil )
 			return true
 		elseif CoD.ModelUtility.IsSelfModelValueNonEmptyString( f11_arg0, f11_arg2, "movieName" ) and IsGamepad( f11_arg2 ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x52FB29ED3A3CA79, nil, nil )
+			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/preview", nil, nil )
 			return true
 		else
 			return false

@@ -83,7 +83,7 @@ function function_777d7ba2()
     
     while ( true )
     {
-        level waittill( #"end_game", #"hash_7646638df88a3656" );
+        level waittill( #"end_game", #"trial_round_end" );
         
         if ( level.var_a2859227 != 1 )
         {
@@ -158,7 +158,7 @@ function function_9cf0edbf( localclientnum, b_show )
 {
     self notify( #"hash_3dec19d02cb07e9b" );
     self endon( #"hash_3dec19d02cb07e9b", #"death" );
-    level endon( #"hash_7646638df88a3656" );
+    level endon( #"trial_round_end" );
     
     while ( true )
     {

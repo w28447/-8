@@ -14,7 +14,7 @@ CoD.StageNotificationContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local CommonHeader = CoD.CommonHeader.new( f1_arg0, f1_arg1, 0, 1, 0, 0, 0, 0, 0, 67 )
-	CommonHeader.subtitle.subtitle:setText( Engine[0xF9F1239CFD921FE]( 0x27307830087A401 ) )
+	CommonHeader.subtitle.subtitle:setText( Engine[0xF9F1239CFD921FE]( "menu/customgames_caps" ) )
 	self:addElement( CommonHeader )
 	self.CommonHeader = CommonHeader
 	

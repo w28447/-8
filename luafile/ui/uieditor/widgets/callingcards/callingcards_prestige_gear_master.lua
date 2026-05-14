@@ -11,7 +11,7 @@ CoD[0x8CE52C91EA9361B].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local background = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	background:setImage( RegisterImage( 0x34AE856139B7CCB ) )
+	background:setImage( RegisterImage( "uie_ghostpirate_bg" ) )
 	self:addElement( background )
 	self.background = background
 	
@@ -52,7 +52,7 @@ CoD[0x8CE52C91EA9361B].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local Captain = LUI.UIImage.new( 0, 0, 697, 960, 0, 0, 0, 245 )
 	Captain:setAlpha( 0.9 )
-	Captain:setImage( RegisterImage( 0x53783C234AC1C71 ) )
+	Captain:setImage( RegisterImage( "uie_captain" ) )
 	self:addElement( Captain )
 	self.Captain = Captain
 	

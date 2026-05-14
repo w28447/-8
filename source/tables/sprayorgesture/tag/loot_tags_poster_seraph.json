@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_poster_seraph",
+    "type": "#tag",
+    "material": "#hash_f997132485319b9",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_27d1b8fe67ce58ef",
+        "icon": "image#loot_ui_icon_tags_poster_seraph",
+        "isdefault": 0
+    }
+}

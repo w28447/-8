@@ -3,7 +3,7 @@
     "baseWeapon": "#eq_nesting_doll_grenade_takeo",
     "displayname": "#zmweapon/nesting_doll_grenade",
     "weapon70": "#eq_nesting_doll_grenade",
-    "streamkey": "#hash_1a1b13d807dca56",
+    "streamkey": "#eq_nesting_doll_grenade_takeo_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

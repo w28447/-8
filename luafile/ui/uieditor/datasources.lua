@@ -799,13 +799,13 @@ DataSources.Month = {
 		Engine.SetModelValue( Engine.CreateModel( f85_local1, "month" ), Engine[0xF9F1239CFD921FE]( 0xB34151E185EE1CE ) )
 		Engine.SetModelValue( Engine.CreateModel( f85_local1, "monthIndex" ), 1 )
 		local f85_local2 = Engine.CreateModel( f85_local0, "february" )
-		Engine.SetModelValue( Engine.CreateModel( f85_local2, "month" ), Engine[0xF9F1239CFD921FE]( 0x5DC251DDFB469A2 ) )
+		Engine.SetModelValue( Engine.CreateModel( f85_local2, "month" ), Engine[0xF9F1239CFD921FE]( "menu/months_feb" ) )
 		Engine.SetModelValue( Engine.CreateModel( f85_local2, "monthIndex" ), 2 )
 		local f85_local3 = Engine.CreateModel( f85_local0, "march" )
 		Engine.SetModelValue( Engine.CreateModel( f85_local3, "month" ), Engine[0xF9F1239CFD921FE]( 0x124EC1DF836E76B ) )
 		Engine.SetModelValue( Engine.CreateModel( f85_local3, "monthIndex" ), 3 )
 		local f85_local4 = Engine.CreateModel( f85_local0, "april" )
-		Engine.SetModelValue( Engine.CreateModel( f85_local4, "month" ), Engine[0xF9F1239CFD921FE]( 0xCFE3E1DE34F6832 ) )
+		Engine.SetModelValue( Engine.CreateModel( f85_local4, "month" ), Engine[0xF9F1239CFD921FE]( "menu/months_apr" ) )
 		Engine.SetModelValue( Engine.CreateModel( f85_local4, "monthIndex" ), 4 )
 		local f85_local5 = Engine.CreateModel( f85_local0, "may" )
 		Engine.SetModelValue( Engine.CreateModel( f85_local5, "month" ), Engine[0xF9F1239CFD921FE]( 0x124E51DF836DB86 ) )
@@ -817,7 +817,7 @@ DataSources.Month = {
 		Engine.SetModelValue( Engine.CreateModel( f85_local7, "month" ), Engine[0xF9F1239CFD921FE]( 0xAF0131E1825119C ) )
 		Engine.SetModelValue( Engine.CreateModel( f85_local7, "monthIndex" ), 7 )
 		local f85_local8 = Engine.CreateModel( f85_local0, "august" )
-		Engine.SetModelValue( Engine.CreateModel( f85_local8, "month" ), Engine[0xF9F1239CFD921FE]( 0xCF45B1DE34744F4 ) )
+		Engine.SetModelValue( Engine.CreateModel( f85_local8, "month" ), Engine[0xF9F1239CFD921FE]( "menu/months_aug" ) )
 		Engine.SetModelValue( Engine.CreateModel( f85_local8, "monthIndex" ), 8 )
 		local f85_local9 = Engine.CreateModel( f85_local0, "september" )
 		Engine.SetModelValue( Engine.CreateModel( f85_local9, "month" ), Engine[0xF9F1239CFD921FE]( 0x7EA201E3AC6F62F ) )
@@ -904,7 +904,7 @@ DataSources.CACRestrictionSettingsTabs = ListHelper_SetupDataSource( "CACRestric
 	} )
 	table.insert( f94_local0, {
 		models = {
-			tabName = 0x56E6F15BA89EEED,
+			tabName = "mpui/attachments_caps",
 			tabWidget = "CoD.GameSettings_AttachmentRestriction",
 			tabIcon = ""
 		},
@@ -940,7 +940,7 @@ DataSources.CACRestrictionSettingsTabs = ListHelper_SetupDataSource( "CACRestric
 	} )
 	table.insert( f94_local0, {
 		models = {
-			tabName = 0xE2669E63163D964,
+			tabName = "menu/perks_caps",
 			tabWidget = "CoD.GameSettings_PerkRestriction",
 			tabIcon = ""
 		},
@@ -969,7 +969,7 @@ DataSources.GameSettingsTabs = ListHelper_SetupDataSource( "GameSettingsTabs", f
 	local f95_local1 = Engine[0xEA74FA7EE46E195]( Engine[0x69811927938FCD7]() )
 	local f95_local2 = f95_local1.nameRefCaps
 	local f95_local3 = LobbyData.GetCurrentMenuTarget()
-	local f95_local4 = f95_local3[0xEB7DDC7F079D51B]
+	local f95_local4 = f95_local3["mainmode"]
 	if f95_local4 == Enum.LobbyMainMode[0x7E41449995CD57E] or f95_local4 == Enum.LobbyMainMode[0x78C124999125C42] then
 		table.insert( f95_local0, {
 			models = {
@@ -1207,7 +1207,7 @@ DataSources.CodCasterDisplaySettingsButtonList = ListHelper_SetupDataSource( "Co
 		},
 		{
 			name = "Toolbar",
-			displayText = 0xE833ED6D22943CB,
+			displayText = "codcaster/ds_toolbar",
 			hintText = 0x4A677D947DAA8DD,
 			profileVar = "shoutcaster_ds_toolbar",
 			options = f99_local2
@@ -1235,7 +1235,7 @@ DataSources.CodCasterDisplaySettingsButtonList = ListHelper_SetupDataSource( "Co
 		},
 		{
 			name = "Scorestreaks",
-			displayText = 0x719AD669D6F0AA1,
+			displayText = "codcaster/ds_scorestreaks",
 			hintText = 0x2750070E33A06DB,
 			profileVar = "shoutcaster_ds_scorestreaks",
 			options = f99_local2
@@ -1243,7 +1243,7 @@ DataSources.CodCasterDisplaySettingsButtonList = ListHelper_SetupDataSource( "Co
 		{
 			name = "ScorestreakNotifications",
 			displayText = 0x3B3DF2EDB5CD01F,
-			hintText = 0xC27D2DDE8805CB1,
+			hintText = "codcaster/ds_scorestreak_notifications_desc",
 			profileVar = "shoutcaster_ds_scorestreaks_notification",
 			options = f99_local2
 		},
@@ -1291,7 +1291,7 @@ DataSources.CodCasterDisplaySettingsButtonList = ListHelper_SetupDataSource( "Co
 		},
 		{
 			name = "VoipDock",
-			displayText = 0x8E58ED90B20C3E4,
+			displayText = "codcaster/ds_voip_dock",
 			hintText = 0xCEDB7FD7243874C,
 			profileVar = "shoutcaster_ds_voip_dock",
 			options = f99_local2
@@ -1344,8 +1344,8 @@ DataSources.CodCasterLoadoutSettingsButtonList = ListHelper_SetupDataSource( "Co
 	for f101_local6, f101_local7 in ipairs( {
 		{
 			name = "Equipment",
-			displayText = 0xC2DCD41998F5070,
-			hintText = 0xA6232DDBCBCD0D8,
+			displayText = "codcaster/ls_equipment",
+			hintText = "codcaster/ls_equipment_desc",
 			profileVar = "shoutcaster_ls_equipment"
 		},
 		{
@@ -1699,7 +1699,7 @@ DataSources.StartMenuGameOptions = ListHelper_SetupDataSource( "StartMenuGameOpt
 		if f115_arg0 == Engine.GetPrimaryController() then
 			table.insert( f115_local0, {
 				models = {
-					displayText = 0xD06CC23B526BABD,
+					displayText = "menu/restart_mission_caps",
 					action = RestartMission
 				},
 				properties = {
@@ -1748,7 +1748,7 @@ DataSources.StartMenuGameOptions = ListHelper_SetupDataSource( "StartMenuGameOpt
 		if Engine.Team( f115_arg0, "name" ) ~= "TEAM_SPECTATOR" and Engine.GetGametypeSetting( 0xC78F5F54144DEA5 ) ~= 1 and (not IsIntDvarNonZero( "mp_prototype" ) or IsIntDvarNonZero( "mp_prototype_debug" )) then
 			table.insert( f115_local0, {
 				models = {
-					displayText = 0xC9A66F495BF3652,
+					displayText = "mpui/choose_class_button_caps",
 					action = ChooseClass
 				}
 			} )
@@ -1770,7 +1770,7 @@ DataSources.StartMenuGameOptions = ListHelper_SetupDataSource( "StartMenuGameOpt
 				action = StartMenuGoBack_ListElement
 			}
 		} )
-		local f115_local2 = f115_local1[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_PUBLIC )
+		local f115_local2 = f115_local1["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_PUBLIC )
 		local f115_local3 = f115_local1.LobbyType
 		if not Engine[0x573048F8D3B4E25]() then
 			f115_local3 = Engine[0xC3DF042E7492B66]( Enum.LobbyModule[0xC46B73E8E18BA2] )
@@ -2313,7 +2313,7 @@ DataSources.WeaponGroups = ListHelper_SetupDataSource( "WeaponGroups", function 
 	end
 	
 	local f153_local7 = CoD.BaseUtility.GetMenuLoadoutSlot( f153_arg1.menu )
-	local f153_local8 = CoD.BonuscardUtility.IsBonuscardEquipped( f153_local2, 0x1F0C17573BB2E79, f153_local3 )
+	local f153_local8 = CoD.BonuscardUtility.IsBonuscardEquipped( f153_local2, "bonuscard_overkill", f153_local3 )
 	local f153_local9 = CoD.BonuscardUtility.IsBonuscardEquipped( f153_local2, 0x439C6CFA8A0CFEB, f153_local3 )
 	if not (f153_local7 ~= "primary" or f153_local9) or f153_local8 then
 		f153_local6( CoD.CACUtility.GetWeaponGroupsNames( "primary" ), f153_local7 )
@@ -2868,7 +2868,7 @@ DataSources.DemoControlsButtons = {
 			if not IsDemoRestrictedBasicMode() then
 				table.insert( f172_local0, {
 					btnId = "screenshot",
-					icon = 0x4A75BA93E5118AB,
+					icon = "theater_screenshot",
 					hintText = 0x10358F774E52931,
 					buttonPromptImageModel = DataSources.Controller.Model.alt1_button_image,
 					buttonPromptStateModel = f172_arg1.menu.buttonModel[Enum.LUIButton[0xC083113BC81F23F]],
@@ -2885,7 +2885,7 @@ DataSources.DemoControlsButtons = {
 			end
 			table.insert( f172_local0, {
 				btnId = "jumpback",
-				icon = 0xF49153C89A3CA30,
+				icon = "theater_back",
 				hintText = 0x3D18552D1136C4D,
 				buttonPromptImageModel = DataSources.Controller.Model.dpad_left_button_image,
 				disabled = f172_local9:get() == -1,
@@ -2951,7 +2951,7 @@ DataSources.DemoControlsButtons = {
 						action = CoD.DemoUtility.ToggleDollyCameraMode
 					} )
 				else
-					local f172_local50 = 0xDAFE26EF8CF7BF8
+					local f172_local50 = "demo/play_dolly_camera_hint"
 					local f172_local51 = false
 					if f172_local13:get() <= 0 then
 						f172_local50 = 0x241E0906C51DEFF
@@ -3005,7 +3005,7 @@ DataSources.DemoControlsButtons = {
 			local f172_local52 = {
 				btnId = "jumpforward",
 				icon = 0xF17F3E8670657D4,
-				hintText = 0x602A86786DE61CB,
+				hintText = "demo/jump_forward_hint",
 				buttonPromptImageModel = DataSources.Controller.Model.dpad_right_button_image
 			}
 			local f172_local53
@@ -3270,14 +3270,14 @@ DataSources.DemoChooseModeButtonList = ListHelper_SetupDataSource( "DemoChooseMo
 	if not IsDemoContextHighlightReelMode() then
 		table.insert( f186_local2, {
 			btnId = "basic",
-			displayText = 0x2130485C18F0F01,
+			displayText = "demo/mode_basic",
 			hintText = 0x16B02B95FDC1B57,
 			icon = "theater_play"
 		} )
 		if not CoD.DemoUtility.IsCameraCyclingDisabled() then
 			table.insert( f186_local2, {
 				btnId = "director",
-				displayText = 0xA92002FAFF0222D,
+				displayText = "demo/mode_director",
 				hintText = 0x88DDE38B76BFC03,
 				icon = "theater_video"
 			} )
@@ -3299,7 +3299,7 @@ DataSources.DemoChooseModeButtonList = ListHelper_SetupDataSource( "DemoChooseMo
 		table.insert( f186_local2, {
 			btnId = "timeline",
 			displayText = 0x220393E7394569A,
-			hintText = 0xDCD7140AF745D6E,
+			hintText = "demo/mode_timeline_editor_hint",
 			icon = "theater_timeline"
 		} )
 	end
@@ -3533,7 +3533,7 @@ DataSources.DemoHighlightReelSettingsButtonList = ListHelper_SetupDataSource( "D
 		value = 3
 	} )
 	table.insert( f195_local6, {
-		name = 0x4DFF8E5C94ADC0B,
+		name = "menu/demo_highlight_reel_stars_four",
 		value = 4
 	} )
 	table.insert( f195_local6, {
@@ -4022,7 +4022,7 @@ DataSources.GroupsShowcaseButtons = ListHelper_SetupDataSource( "GroupsShowcaseB
 	table.insert( f211_local0, {
 		text = 0x1BE757701ED026D,
 		displayImage = "uie_t7_mp_icon_header_customgames",
-		hintText = 0x83220FC71548C1C,
+		hintText = "menu/groups_showcase_customgames_desc",
 		id = "customgame",
 		tabWidget = "CoD.FileshareCategoryContentList",
 		disabled = false,
@@ -4894,7 +4894,7 @@ DataSources.CPVideoPlayerList = ListHelper_SetupDataSource( "CPVideoPlayerList",
 	end
 	table.insert( f259_local0, {
 		models = {
-			displayText = Engine[0xF9F1239CFD921FE]( 0x664B00CAD4E64E4 ),
+			displayText = Engine[0xF9F1239CFD921FE]( "zmui/zod_caps" ),
 			video = "zm_zod_load_zodloadingmovie"
 		},
 		properties = {}
@@ -5068,7 +5068,7 @@ DataSources.XPProgressionBar = {
 		local f275_local7 = Engine.CreateModel( Engine.GetModelForController( f275_arg0 ), "XPProgressionBar" )
 		local f275_local8 = ""
 		if not (f275_local0 or f275_local5.nextRank <= CoD.RankUtility.GetRankCap()) or f275_local0 and f275_local5.nextRank >= CoD.RankUtility.GetParagonRankCap() then
-			f275_local8 = Engine[0xF9F1239CFD921FE]( 0x648FC67DF4BF35E )
+			f275_local8 = Engine[0xF9F1239CFD921FE]( "menu/max_level" )
 			f275_local5.nextRankIconMaterialName = "blacktransparent"
 		elseif f275_local5.displayLevelForNextRank > 0 then
 			f275_local8 = Engine[0xF9F1239CFD921FE]( 0xBC1D826D76D607F, f275_local5.displayLevelForNextRank )
@@ -5657,7 +5657,7 @@ DataSources.CombatRecordMPMedal4 = {
 				Engine.SetModelValue( Engine.CreateModel( f308_local0, "iconLarge" ), f308_local8.iconLarge )
 			end
 		else
-			Engine.SetModelValue( Engine.CreateModel( f308_local0, "medalRef" ), 0x9381BFDADA76E77 )
+			Engine.SetModelValue( Engine.CreateModel( f308_local0, "medalRef" ), "menu/specialist_weapon" )
 			Engine.SetModelValue( Engine.CreateModel( f308_local0, "value" ), "--" )
 			Engine.SetModelValue( Engine.CreateModel( f308_local0, "backingLarge" ), "uie_t7_hud_medal_backing_specialist_outline" )
 			Engine.SetModelValue( Engine.CreateModel( f308_local0, "iconLarge" ), "$blank" )
@@ -6890,7 +6890,7 @@ DataSources.StoreProductList = ListHelper_SetupDataSource( "Store.ProductList", 
 			if f385_local7.productNameHash == 0xA93E67FF169D892 and IsDurango() and (not Engine.IsLanguageSupportedInSKU( Enum[0xAA0EE37DF15F5A8][0xDC77F190F9D7964] ) or not Engine.IsLanguageSupportedInSKU( Enum[0xAA0EE37DF15F5A8][0xFDE0E0CF4EA7FAC] )) then
 				f385_local8 = false
 			end
-			if f385_local7.productNameHash == 0x617848314938AB9 and f385_local7.purchasestatus == Enum.StoreProductPurchaseStatus[0xC3D2ED4AABEAE6C] then
+			if f385_local7.productNameHash == "blackopspass" and f385_local7.purchasestatus == Enum.StoreProductPurchaseStatus[0xC3D2ED4AABEAE6C] then
 				f385_local8 = false
 			end
 			if f385_local8 and f385_local7.blackMarketName ~= 0xC78328FF7303B63 then
@@ -7027,7 +7027,7 @@ DataSources.StoreFeaturedProductList = ListHelper_SetupDataSource( "Store.Featur
 			if f387_local11.productNameHash == 0xA93E67FF169D892 and IsDurango() and (not Engine.IsLanguageSupportedInSKU( Enum[0xAA0EE37DF15F5A8][0xDC77F190F9D7964] ) or not Engine.IsLanguageSupportedInSKU( Enum[0xAA0EE37DF15F5A8][0xFDE0E0CF4EA7FAC] )) then
 				f387_local12 = false
 			end
-			if f387_local11.productNameHash == 0x617848314938AB9 and f387_local11.purchasestatus == Enum.StoreProductPurchaseStatus[0xC3D2ED4AABEAE6C] then
+			if f387_local11.productNameHash == "blackopspass" and f387_local11.purchasestatus == Enum.StoreProductPurchaseStatus[0xC3D2ED4AABEAE6C] then
 				f387_local12 = false
 			end
 			if f387_local11.availability == Enum[0xE8E23A7B8B67FF6][0x486D7E458864E50] then
@@ -7925,7 +7925,7 @@ DataSources.CustomGamesOptionsButtonList = ListHelper_SetupDataSource( "CustomGa
 	table.insert( f430_local0, {
 		displayText = 0x110D5B19A4FEA36,
 		displayImage = "t7_icon_menu_simple_publish",
-		displayDesc = 0xD5297656D74DCDD,
+		displayDesc = "menu/customgames_publish_desc",
 		action = OpenCustomGamePublishPrompt,
 		disabled = false
 	} )
@@ -7964,7 +7964,7 @@ DataSources.ScreenshotsOptionsButtonList = ListHelper_SetupDataSource( "Screensh
 		} )
 	end
 	if FileshareCanDeleteItem( f431_arg0 ) then
-		local f431_local1 = 0xE0F1CAE8E5DDA06
+		local f431_local1 = "menu/fileshare_delete_desc"
 		if FileshareIsLocalCategory( f431_arg0 ) then
 			f431_local1 = 0xD46527DE8E0E0EA
 		end
@@ -8071,13 +8071,13 @@ DataSources.ChangeGameModeNav = {
 			{
 				text = 0x2D456C4A11A18,
 				image = "uie_t7_mp_icon_header_customgames_large",
-				description = 0x8B650C1DBC3BABD,
+				description = "menu/fileshare_publish_description",
 				community = true
 			},
 			{
 				text = 0xAB87A6DD9E3E9EE,
 				image = "uie_t7_mp_icon_header_customgames_large",
-				description = 0x8B650C1DBC3BABD,
+				description = "menu/fileshare_publish_description",
 				community = false
 			}
 		}
@@ -8146,19 +8146,19 @@ DataSources.CustomGamesList = {
 			{
 				text = Engine[0xF9F1239CFD921FE]( 0xA290900E89E0154 ),
 				image = "img_t7_menu_startmenu_media_recent",
-				description = Engine[0xF9F1239CFD921FE]( 0x8B650C1DBC3BABD ),
+				description = Engine[0xF9F1239CFD921FE]( "menu/fileshare_publish_description" ),
 				action = OpenPopularCustomGames
 			},
 			{
 				text = Engine[0xF9F1239CFD921FE]( 0x705BD8CAF36BAE2 ),
 				image = "img_t7_menu_startmenu_media_popular",
-				description = Engine[0xF9F1239CFD921FE]( 0x8B650C1DBC3BABD ),
+				description = Engine[0xF9F1239CFD921FE]( "menu/fileshare_publish_description" ),
 				action = OpenTrendingCustomGames
 			},
 			{
 				text = Engine[0xF9F1239CFD921FE]( "menu/recent" ),
 				image = "img_t7_menu_startmenu_media_trending",
-				description = Engine[0xF9F1239CFD921FE]( 0x8B650C1DBC3BABD ),
+				description = Engine[0xF9F1239CFD921FE]( "menu/fileshare_publish_description" ),
 				action = OpenrRecentCustomGames
 			}
 		}
@@ -8267,8 +8267,8 @@ DataSources.CustomGamesList = {
 			Engine.SetModelValue( Engine.CreateModel( f448_local0, "isOfficial" ), f448_local4 )
 			Engine.SetModelValue( Engine.CreateModel( f448_local0, "createTime" ), f448_local5.createTime:get() )
 			if f448_local4 == true then
-				Engine.SetModelValue( Engine.CreateModel( f448_local0, "text" ), "^BBUTTON_CUSTOMGAME_ICON^ " .. Engine[0xF9F1239CFD921FE]( 0x42CD91611263B8F .. f448_local5.gameName:get() .. "_CAPS" ) )
-				Engine.SetModelValue( Engine.CreateModel( f448_local0, "buttonText" ), "^BBUTTON_CUSTOMGAME_ICON^ " .. Engine[0xF9F1239CFD921FE]( 0x42CD91611263B8F .. f448_local5.gameName:get() .. "_CAPS" ) )
+				Engine.SetModelValue( Engine.CreateModel( f448_local0, "text" ), "^BBUTTON_CUSTOMGAME_ICON^ " .. Engine[0xF9F1239CFD921FE]( "mpui/" .. f448_local5.gameName:get() .. "_CAPS" ) )
+				Engine.SetModelValue( Engine.CreateModel( f448_local0, "buttonText" ), "^BBUTTON_CUSTOMGAME_ICON^ " .. Engine[0xF9F1239CFD921FE]( "mpui/" .. f448_local5.gameName:get() .. "_CAPS" ) )
 			else
 				Engine.SetModelValue( Engine.CreateModel( f448_local0, "text" ), f448_local5.gameName:get() )
 				Engine.SetModelValue( Engine.CreateModel( f448_local0, "buttonText" ), f448_local5.gameName:get() )
@@ -8276,8 +8276,8 @@ DataSources.CustomGamesList = {
 			Engine.SetModelValue( Engine.CreateModel( f448_local0, "gameTypeString" ), f448_local5.gameType:get() )
 			if f448_local1 then
 				if f448_local4 == true then
-					Engine.SetModelValue( Engine.CreateModel( f448_local0, "description" ), Engine[0xF9F1239CFD921FE]( 0x42CD91611263B8F .. f448_local5.gameDescription:get() .. "_DESC" ) )
-					Engine.SetModelValue( Engine.CreateModel( f448_local0, "gameDescription" ), Engine[0xF9F1239CFD921FE]( 0x42CD91611263B8F .. f448_local5.gameDescription:get() .. "_DESC" ) )
+					Engine.SetModelValue( Engine.CreateModel( f448_local0, "description" ), Engine[0xF9F1239CFD921FE]( "mpui/" .. f448_local5.gameDescription:get() .. "_DESC" ) )
+					Engine.SetModelValue( Engine.CreateModel( f448_local0, "gameDescription" ), Engine[0xF9F1239CFD921FE]( "mpui/" .. f448_local5.gameDescription:get() .. "_DESC" ) )
 				else
 					Engine.SetModelValue( Engine.CreateModel( f448_local0, "description" ), f448_local5.gameDescription:get() )
 					Engine.SetModelValue( Engine.CreateModel( f448_local0, "gameDescription" ), f448_local5.gameDescription:get() )
@@ -8498,7 +8498,7 @@ DataSources.FilesharePublishedList = {
 			if f458_local17 and f458_local17 == true then
 				Engine.SetModelValue( f458_local18, 0xE16CE893CADAD65 )
 			else
-				Engine.SetModelValue( f458_local18, Engine[0xF9F1239CFD921FE]( 0x268D49B69383695 ) )
+				Engine.SetModelValue( f458_local18, Engine[0xF9F1239CFD921FE]( "menu/fileshare_publish_new" ) )
 			end
 		else
 			Engine.SetModelValue( f458_local3, false )
@@ -8678,7 +8678,7 @@ DataSources.FileshareCommunityList = {
 					if f463_local0 ~= Engine.CurrentSessionMode() then
 						local f463_local1 = ""
 						if f463_local0 == Enum.eModes[0x3723205FAE52C4A] then
-							f463_local1 = Engine[0xF9F1239CFD921FE]( 0x58DA4C1486566B5, 0x6282749A064CB35 )
+							f463_local1 = Engine[0xF9F1239CFD921FE]( 0x58DA4C1486566B5, "menu/zombie" )
 						else
 							f463_local1 = Engine[0xF9F1239CFD921FE]( 0x58DA4C1486566B5, 0x55D96CC762EABDD )
 						end
@@ -8805,7 +8805,7 @@ DataSources.FileshareCommunityCategoriesList = {
 			tabWidget = "CoD.FileshareCategoryContentList"
 		} )
 		table.insert( f470_local0, {
-			displayText = 0x27307830087A401,
+			displayText = "menu/customgames_caps",
 			displayImage = "uie_t7_mp_icon_header_customgames",
 			hintText = 0xC3782510A36AEC9,
 			category = "customgame",
@@ -8916,7 +8916,7 @@ DataSources.FileshareOptionsButtonList = ListHelper_SetupDataSource( "FileshareO
 	local f474_local1 = FileshareIsLocalCategory( f474_arg0 )
 	if not f474_local1 and FilesshareCanShowVoteOptions( f474_arg0 ) then
 		table.insert( f474_local0, {
-			displayText = 0xF9AB13BCE2EDB32,
+			displayText = "menu/fileshare_like",
 			displayImage = "uie_t7_icon_menu_options_like",
 			displayDesc = 0x62ACAE767815CA2,
 			action = CoD.FileshareUtility.ReportLike
@@ -8924,7 +8924,7 @@ DataSources.FileshareOptionsButtonList = ListHelper_SetupDataSource( "FileshareO
 		table.insert( f474_local0, {
 			displayText = 0x445C36EB6A8A7B0,
 			displayImage = "uie_t7_icon_menu_options_dislike",
-			displayDesc = 0xDF418B4E06D9918,
+			displayDesc = "menu/fileshare_dislike_desc",
 			action = CoD.FileshareUtility.ReportDislike
 		} )
 	end
@@ -8932,12 +8932,12 @@ DataSources.FileshareOptionsButtonList = ListHelper_SetupDataSource( "FileshareO
 		table.insert( f474_local0, {
 			displayText = 0x28A5D834251418D,
 			displayImage = "t7_icon_menu_options_download",
-			displayDesc = 0x38E4CB51F0AB9B7,
+			displayDesc = "menu/fileshare_download_desc",
 			action = CoD.FileshareUtility.DownloadAction
 		} )
 	end
 	if FileshareCanDeleteItem( f474_arg0 ) then
-		local f474_local2 = 0xE0F1CAE8E5DDA06
+		local f474_local2 = "menu/fileshare_delete_desc"
 		if f474_local1 then
 			f474_local2 = 0xD46527DE8E0E0EA
 		end
@@ -8952,7 +8952,7 @@ DataSources.FileshareOptionsButtonList = ListHelper_SetupDataSource( "FileshareO
 		table.insert( f474_local0, {
 			displayText = 0xE0254269ED8FFD3,
 			displayImage = "t7_icon_menu_simple_media_manager",
-			displayDesc = 0xD6D626F56CEC68B,
+			displayDesc = "menu/fileshare_player_details_desc",
 			action = ShowcaseOpenPlayerDetails
 		} )
 	end
@@ -9011,7 +9011,7 @@ DataSources.FileshareOptionsDeleteButtonList = {
 			{
 				displayText = "menu/cancel",
 				displayImage = "",
-				displayDesc = 0x38E4CB51F0AB9B7,
+				displayDesc = "menu/fileshare_download_desc",
 				action = CoD.FileshareUtility.DeleteNo
 			}
 		}
@@ -9040,7 +9040,7 @@ DataSources.FileshareSlotsFullButtonList = {
 				
 			else
 				table.insert( f478_local0, {
-					displayText = 0x84B4D57F67E6320,
+					displayText = "menu/fileshare_showcase_manager_caps",
 					displayImage = "",
 					displayDesc = 0x27D9AE8D6AE0E23,
 					action = CoD.FileshareUtility.OpenShowcaseManager
@@ -9050,7 +9050,7 @@ DataSources.FileshareSlotsFullButtonList = {
 				table.insert( f478_local0, {
 					displayText = 0xE16CE893CADAD65,
 					displayImage = "",
-					displayDesc = 0x38E4CB51F0AB9B7,
+					displayDesc = "menu/fileshare_download_desc",
 					action = CoD.FileshareUtility.OpenBuySlots
 				} )
 			end
@@ -9232,7 +9232,7 @@ DataSources.EmblemOptionsButtonList = ListHelper_SetupDataSource( "EmblemOptions
 		disabled = false
 	} )
 	table.insert( f490_local0, {
-		displayText = 0x5AEC3D591F4359E,
+		displayText = "menu/copy",
 		displayImage = "t7_icon_menu_simple_copy",
 		displayDesc = 0xB71D881428A80C9,
 		action = function ( f492_arg0, f492_arg1, f492_arg2, f492_arg3, f492_arg4 )
@@ -9245,7 +9245,7 @@ DataSources.EmblemOptionsButtonList = ListHelper_SetupDataSource( "EmblemOptions
 		table.insert( f490_local0, {
 			displayText = 0x9EF028EFD188F05,
 			displayImage = "t7_icon_menu_simple_rename",
-			displayDesc = 0x60F60FD8E452A1C,
+			displayDesc = "menu/emblem_rename_desc",
 			action = CoD.CraftUtility.EmblemRename,
 			disabled = false
 		} )
@@ -9358,7 +9358,7 @@ DataSources.PaintjobOptionsButtonList = ListHelper_SetupDataSource( "PaintjobOpt
 		disabled = false
 	} )
 	table.insert( f498_local0, {
-		displayText = 0x5AEC3D591F4359E,
+		displayText = "menu/copy",
 		displayImage = "t7_icon_menu_simple_copy",
 		displayDesc = 0x25139323E2D80F0,
 		action = function ( f500_arg0, f500_arg1, f500_arg2, f500_arg3, f500_arg4 )
@@ -9541,7 +9541,7 @@ DataSources.GunsmithSnapshotModeButtonList = ListHelper_SetupDataSource( "Gunsmi
 	table.insert( f507_local0, {
 		displayText = 0x0,
 		displayImage = "t7_menu_gunsmith_player",
-		displayDesc = 0xB27BE165F75034C,
+		displayDesc = "menu/gunsmith_snapshot_playerid",
 		action = Gunsmith_SnapshotToggleDisplayProperty,
 		visibilityModelName = "GunsmithSnapshot.PlayerID"
 	} )
@@ -9782,8 +9782,8 @@ DataSources.MediaManagerCustomGamesList = {
 			local f519_local5 = f519_local3.gameName:get()
 			local f519_local6 = f519_local3.gameDescription:get()
 			if Engine.GetModelValue( f519_local0, "isOfficial" ) then
-				f519_local5 = Engine[0xF9F1239CFD921FE]( 0x42CD91611263B8F .. f519_local3.gameName .. "_CAPS" )
-				f519_local6 = Engine[0xF9F1239CFD921FE]( 0x42CD91611263B8F .. f519_local3.gameName .. "_DESC" )
+				f519_local5 = Engine[0xF9F1239CFD921FE]( "mpui/" .. f519_local3.gameName .. "_CAPS" )
+				f519_local6 = Engine[0xF9F1239CFD921FE]( "mpui/" .. f519_local3.gameName .. "_DESC" )
 			end
 			Engine.SetModelValue( Engine.CreateModel( f519_local0, "name" ), f519_local5 )
 			Engine.SetModelValue( Engine.CreateModel( f519_local0, "gameName" ), f519_local5 )
@@ -10083,7 +10083,7 @@ DataSources.EmblemsList = {
 				f546_arg0.emblemName = Engine[0xF9F1239CFD921FE]( 0xC4863A6FBA65F63 )
 				f546_arg0.emblemTitle = Engine[0xF9F1239CFD921FE]( "menu/new" )
 				f546_arg0.emblemTextEntry = Engine[0xF9F1239CFD921FE]( 0x5D39DC4A7060698, CoD.CraftUtility.Emblems.GetTotalUsedEmblems( f545_arg0, Enum.StorageFileType[0x791C91FD2327632], nil ) + 1 )
-				f546_arg0.subTitle = Engine[0xF9F1239CFD921FE]( 0x9073B1D7922BADD )
+				f546_arg0.subTitle = Engine[0xF9F1239CFD921FE]( "menu/emblem_new_subtitle" )
 			end
 		end
 		
@@ -10104,7 +10104,7 @@ DataSources.EmblemsList = {
 			local f545_local6 = f545_local0:create( "isBMClassified" )
 			f545_local6:set( f545_local5 )
 			if f545_local5 then
-				f545_local3.subTitle = Engine[0xF9F1239CFD921FE]( 0x46AFD686962D8D2, 0x6C028A55BD26B51 )
+				f545_local3.subTitle = Engine[0xF9F1239CFD921FE]( 0x46AFD686962D8D2, "menu/emblem" )
 				f545_local3.emblemName = CoD.BlackMarketUtility.ClassifiedName( true )
 				f545_local3.emblemTitle = CoD.BlackMarketUtility.ClassifiedName( true )
 			end
@@ -10124,7 +10124,7 @@ DataSources.EmblemsList = {
 		f545_local4 = 0x84446BBFA84177E
 		local f545_local5 = false
 		if f545_local3.fileType == Enum.StorageFileType[0xB909AC87BFB6D6C] or f545_local3.fileType == Enum.StorageFileType[0x791C91FD2327632] or f545_local3.fileType == Enum.StorageFileType[0xBCE8CBF08D7751] then
-			f545_local4 = 0x6C028A55BD26B51
+			f545_local4 = "menu/emblem"
 			f545_local5 = true
 		end
 		local f545_local6 = f545_local0:create( "emblemTitle" )
@@ -10359,7 +10359,7 @@ DataSources.BookmarksList = ListHelper_SetupDataSource( "BookmarksList", functio
 	table.insert( f552_local0, {
 		models = {
 			bookmarkURL = "CIA-HomePage.htm",
-			bookmarkDesc = Engine[0xF9F1239CFD921FE]( 0xE97BD750D2D8AC )
+			bookmarkDesc = Engine[0xF9F1239CFD921FE]( "menu/codex_bookmark_ciahome" )
 		},
 		propteries = {}
 	} )
@@ -10438,7 +10438,7 @@ DataSources.BookmarksList = ListHelper_SetupDataSource( "BookmarksList", functio
 		table.insert( f552_local0, {
 			models = {
 				bookmarkURL = "CIA-Infection-AudioLandingPage.htm",
-				bookmarkDesc = Engine[0xF9F1239CFD921FE]( 0x4131B1A3CEE17F8 )
+				bookmarkDesc = Engine[0xF9F1239CFD921FE]( "menu/codex_bookmark_ciainfection" )
 			},
 			propteries = {}
 		} )
@@ -10703,7 +10703,7 @@ DataSources.ContextualMenu = {
 				if f573_local4 then
 					f573_local4 = CoD.PCWidgetUtility.ContextualMenuXuidModel:get()
 				end
-				if f573_local4 and Engine.GetProfileVarInt( f573_arg0, 0xCA67B57C1673886 ) ~= 0 and (Engine.GetXUID64( f573_arg0 ) == f573_local4 or Engine.IsFriendFromXUID( f573_arg0, f573_local4 )) then
+				if f573_local4 and Engine.GetProfileVarInt( f573_arg0, "show_real_names" ) ~= 0 and (Engine.GetXUID64( f573_arg0 ) == f573_local4 or Engine.IsFriendFromXUID( f573_arg0, f573_local4 )) then
 					f573_local5 = f573_local1:create( "titleNonLocalized" )
 					f573_local5:set( f573_local2 )
 				else
@@ -11003,7 +11003,7 @@ DataSources.LoadingScreenTeamInfo = {
 					end
 					
 					local f589_local40 = {
-						0x84E1CB596B7E53E,
+						"control",
 						0xACC245BA0ADF546,
 						0x9202CB1D2F5336B,
 						0xAAF4118F474831B,
@@ -11011,16 +11011,16 @@ DataSources.LoadingScreenTeamInfo = {
 						0xB3FFB6667877598,
 						0xAF7B31F15B60DC,
 						0xB60DB445FBF5155,
-						0x8D93207B57927F2,
+						"sd",
 						0xA9CE625ED68488A,
 						0xFAB537230960E87,
 						0x32C064CAF1E3CA6,
 						0x531EC9544A8FC3E,
-						0x572880E35379C18,
+						"prop",
 						0x5B707190CBF683C
 					}
 					local f589_local41 = {
-						0x18BECD72BBC155B,
+						"koth",
 						0x573521D07EF71F6
 					}
 					local f589_local42 = {
@@ -11028,12 +11028,12 @@ DataSources.LoadingScreenTeamInfo = {
 						0xAD10ED6E94A349C,
 						0xABBEFD6E937A3E5,
 						0xCB10CB6A270C743,
-						0xBC9FA91195D6ED7,
+						"conf",
 						0xE7FA1F82C9A9A9,
 						0xA20B01921DEF8C2,
 						0xF7992E5B48CDED8,
-						0x22D94195CD5E6DE,
-						0x26793195D075D72
+						"sas",
+						"svz"
 					}
 					if f589_local39( f589_local30, f589_local40 ) then
 						local f589_local43 = f589_local31.stat1:get()
@@ -11153,7 +11153,7 @@ DataSources.SwitchCameraWheel = {
 				cameraMode = Enum.demoCameraMode[0x3B1995A6E46FA28],
 				freeCameraMode = Enum.demoFreeCameraMode[0xFA038EBA43002CB],
 				image = "t7_hud_ks_drone_cuav_drop",
-				displayName = 0xD1DF32EE56FD27F
+				displayName = "menu/demo_dvr_edit_dolly_camera"
 			},
 			{
 				disabled = false,
@@ -11760,7 +11760,7 @@ DataSources.ChatClientEntriesList = {
 				end
 				f648_local10 = CoD.PCBattlenetUtility.StripBattleTagNumber( f648_arg1.chatEntries[f648_local8].properties.fullname )
 				f648_local11 = f648_local10
-				if f648_local10 ~= "" and Engine.GetProfileVarInt( f648_arg0, 0xCA67B57C1673886 ) ~= 0 and (f648_local0 ~= f648_arg1.chatEntries[f648_local8].properties.xuid or f648_local9 == Enum[0xF6296F5D7A38AD2][0x5E57997D82BCBD1]) then
+				if f648_local10 ~= "" and Engine.GetProfileVarInt( f648_arg0, "show_real_names" ) ~= 0 and (f648_local0 ~= f648_arg1.chatEntries[f648_local8].properties.xuid or f648_local9 == Enum[0xF6296F5D7A38AD2][0x5E57997D82BCBD1]) then
 					f648_local15 = f648_arg1.chatEntries[f648_local8].properties.realname
 					if f648_local15 and f648_local15 ~= "" then
 						f648_local10 = Engine[0xF9F1239CFD921FE]( 0x2482C16CD79B0E8, f648_local10, f648_local15 )

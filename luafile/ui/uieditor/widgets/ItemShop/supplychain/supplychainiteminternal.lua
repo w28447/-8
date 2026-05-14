@@ -168,7 +168,7 @@ CoD.SupplyChainItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.LockIcon = LockIcon
 	
 	local BMLockIcon = LUI.UIImage.new( 0.5, 0.5, -26, 26, 0.5, 0.5, -26, 26 )
-	BMLockIcon:setImage( RegisterImage( 0xE5D0B9C70B238F3 ) )
+	BMLockIcon:setImage( RegisterImage( "uie_t7_blackmarket_bribe" ) )
 	self:addElement( BMLockIcon )
 	self.BMLockIcon = BMLockIcon
 	

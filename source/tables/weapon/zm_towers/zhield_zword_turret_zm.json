@@ -4,7 +4,7 @@
     "displayname": "#zmweapon/shield_sword_turret",
     "altWeapon": "#zhield_zword_dw_zm",
     "weapon70": "#zhield_zword_dw",
-    "streamkey": "#hash_5631c29bd1abc639",
+    "streamkey": "#zhield_zword_turret_soundbank",
     "worldModelTagRight": "tag_weapon_left",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -47,7 +47,7 @@
     "sound800": "#hash_21cba6ae89a3493c",
     "sound810": "#hash_21cba6ae89a3493c",
     "tunables1": "#zhield_zword_turret_tunables_zm",
-    "sharedWeaponSounds": "#hash_7ed5a8a63848a4a8",
+    "sharedWeaponSounds": "#zhield_towers_shield",
     "viewmodel": [
         "#hash_2a2eae8b8d64d6c9"
     ],

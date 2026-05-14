@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_cutemonsters_01",
+    "type": "#tag",
+    "material": "#hash_64c96ceaaea7f1f4",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#tags/cutemonsters_01",
+        "icon": "image#loot_ui_icon_tags_cutemonsters_01",
+        "isdefault": 0
+    }
+}

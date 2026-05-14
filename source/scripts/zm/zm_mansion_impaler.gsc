@@ -1,4 +1,4 @@
-#using script_6b221588ece2c4aa;
+#using scripts\weapons\weaponobjects_crap.gsc;
 #using scripts\core_common\ai\systems\gib;
 #using scripts\core_common\ai\zombie_utility;
 #using scripts\core_common\array_shared;
@@ -38,7 +38,7 @@ function init()
 {
     clientfield::register( "scriptmover", "" + #"candle_light", 8000, 1, "int" );
     clientfield::register( "scriptmover", "" + #"monolith_water", 8000, 1, "int" );
-    clientfield::register( "scriptmover", "" + #"hash_4d45dc65a8307183", 8000, 1, "counter" );
+    clientfield::register( "scriptmover", "" + #"soul_possess_orb", 8000, 1, "counter" );
     clientfield::register( "actor", "" + #"soul_possess", 8000, 1, "int" );
     clientfield::register( "toplayer", "" + #"hash_3d7d4c5e6ed616e9", 8000, 1, "int" );
     clientfield::register( "scriptmover", "" + #"jewelry_dropped", 8000, 1, "int" );
@@ -191,7 +191,7 @@ function init_step_2( var_a276c861 )
 // Size: 0x18c
 function cleanup_step_2( var_5ea5c94d, ended_early )
 {
-    level notify( #"hash_3e6c62c9a38d67de" );
+    level notify( #"monolith_ghost_cleanup" );
     level flag::set( #"hash_f3875ca909e696f" );
     s_monolith = struct::get( "s_monolith" );
     
@@ -388,7 +388,7 @@ function function_d84548e7()
 // Size: 0x100
 function registerremaining_retreat_()
 {
-    level endon( #"hash_3e6c62c9a38d67de" );
+    level endon( #"monolith_ghost_cleanup" );
     
     while ( true )
     {
@@ -482,7 +482,7 @@ function function_c929af49()
 // Size: 0x21e
 function function_92e77dc6()
 {
-    level endon( #"hash_3e6c62c9a38d67de" );
+    level endon( #"monolith_ghost_cleanup" );
     level.monolith_ghost.mdl_head endon( #"death" );
     level.monolith_ghost endon( #"death" );
     self endon( #"disconnect" );
@@ -528,7 +528,7 @@ function function_9950740f()
 // Size: 0xbc
 function function_d17deac0( var_a6356bbe )
 {
-    level endon( #"hash_3e6c62c9a38d67de" );
+    level endon( #"monolith_ghost_cleanup" );
     nd_start = getvehiclenode( var_a6356bbe.target, "targetname" );
     level.monolith_ghost = util::spawn_model( "tag_origin", var_a6356bbe.origin, var_a6356bbe.angles );
     util::wait_network_frame();
@@ -541,7 +541,7 @@ function function_d17deac0( var_a6356bbe )
 // Size: 0x294
 function function_a6978e42( nd_start )
 {
-    level endon( #"hash_3e6c62c9a38d67de" );
+    level endon( #"monolith_ghost_cleanup" );
     self setmodel( #"c_t8_zmb_dlc1_catherine_ghost_body" );
     self.mdl_head = util::spawn_model( #"c_t8_zmb_dlc1_catherine_ghost_head", self.origin, self.angles );
     self.mdl_head linkto( self );
@@ -575,7 +575,7 @@ function function_a6978e42( nd_start )
 // Size: 0x55c
 function function_4802a272()
 {
-    level endon( #"hash_3e6c62c9a38d67de" );
+    level endon( #"monolith_ghost_cleanup" );
     self endon( #"death" );
     
     /#
@@ -838,7 +838,7 @@ function function_9ee098d5()
         
         if ( isdefined( e_possessed ) )
         {
-            fx_org clientfield::increment( "" + #"hash_4d45dc65a8307183" );
+            fx_org clientfield::increment( "" + #"soul_possess_orb" );
             n_time = function_c5a4ae6( fx_org.origin, e_possessed.origin );
             fx_org moveto( e_possessed gettagorigin( "j_spine4" ), n_time );
             level.monolith_ghost notify( #"hash_6edff0409a51550e" );

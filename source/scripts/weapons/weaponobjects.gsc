@@ -1,4 +1,4 @@
-#using script_6b221588ece2c4aa;
+#using scripts\weapons\weaponobjects_crap.gsc;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\challenges_shared;

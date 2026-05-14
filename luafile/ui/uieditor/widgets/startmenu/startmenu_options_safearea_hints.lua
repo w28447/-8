@@ -60,7 +60,7 @@ CoD.StartMenu_Options_SafeArea_Hints.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local ConfirmButtonPrompt = CoD.buttonprompt.new( f1_arg0, f1_arg1, 0, 0, 938, 1082, 0, 0, 706, 752 )
 	ConfirmButtonPrompt:setScale( 2, 2 )
-	ConfirmButtonPrompt.label:setText( Engine[0xF9F1239CFD921FE]( 0xEF7CFBE53FD6CD0 ) )
+	ConfirmButtonPrompt.label:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_confirm_changes" ) )
 	ConfirmButtonPrompt:subscribeToGlobalModel( f1_arg1, "Controller", "primary_button_image", function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then
@@ -91,7 +91,7 @@ CoD.StartMenu_Options_SafeArea_Hints.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	self.DisplayAreaAdjustment = DisplayAreaAdjustment
 	
 	local SettingPS4 = LUI.UIText.new( 0, 0, 260, 1660, 0, 0, 519, 549 )
-	SettingPS4:setText( Engine[0xF9F1239CFD921FE]( 0x7855C33B39CFA84 ) )
+	SettingPS4:setText( Engine[0xF9F1239CFD921FE]( "menu/setting_controlled" ) )
 	SettingPS4:setTTF( "dinnext_regular" )
 	SettingPS4:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	SettingPS4:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

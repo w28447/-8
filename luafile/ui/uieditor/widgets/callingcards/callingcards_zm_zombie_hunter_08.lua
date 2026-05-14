@@ -1,11 +1,11 @@
 require( "ui/uieditor/widgets/callingcards/callingcards_asset_falconfly" )
 
-CoD[0x5A97F2CC703C031] = InheritFrom( LUI.UIElement )
-CoD[0x5A97F2CC703C031].__defaultWidth = 960
-CoD[0x5A97F2CC703C031].__defaultHeight = 240
-CoD[0x5A97F2CC703C031].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD["callingcards_zm_zombie_hunter_08"] = InheritFrom( LUI.UIElement )
+CoD["callingcards_zm_zombie_hunter_08"].__defaultWidth = 960
+CoD["callingcards_zm_zombie_hunter_08"].__defaultHeight = 240
+CoD["callingcards_zm_zombie_hunter_08"].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0x5A97F2CC703C031] )
+	self:setClass( CoD["callingcards_zm_zombie_hunter_08"] )
 	self.id = "CallingCards_zm_Zombie_Hunter_08"
 	self.soundSet = "default"
 	self.anyChildUsesUpdateState = true
@@ -71,7 +71,7 @@ CoD[0x5A97F2CC703C031].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0x5A97F2CC703C031].__resetProperties = function ( f2_arg0 )
+CoD["callingcards_zm_zombie_hunter_08"].__resetProperties = function ( f2_arg0 )
 	f2_arg0.lightening1:completeAnimation()
 	f2_arg0.bg:completeAnimation()
 	f2_arg0.topwing:completeAnimation()
@@ -82,7 +82,7 @@ CoD[0x5A97F2CC703C031].__resetProperties = function ( f2_arg0 )
 	f2_arg0.lightening2:setAlpha( 0 )
 end
 
-CoD[0x5A97F2CC703C031].__clipsPerState = {
+CoD["callingcards_zm_zombie_hunter_08"].__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()
@@ -196,7 +196,7 @@ CoD[0x5A97F2CC703C031].__clipsPerState = {
 		end
 	}
 }
-CoD[0x5A97F2CC703C031].__onClose = function ( f20_arg0 )
+CoD["callingcards_zm_zombie_hunter_08"].__onClose = function ( f20_arg0 )
 	f20_arg0.topwing:close()
 end
 

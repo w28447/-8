@@ -1,4 +1,4 @@
-#using script_cb32d07c95e5628;
+#using scripts\mp_common\item_spawn_groups_util.gsc;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\math_shared;
 #using scripts\core_common\player\player_stats;
@@ -139,7 +139,7 @@ function function_79c8b708( var_b721e8a9 )
     
     if ( isdefined( spawn_point ) )
     {
-        a_items = spawn_point namespace_65181344::function_fd87c780( #"zombie_poster_ee_list", 5 );
+        a_items = spawn_point item_spawn_groups_util::function_fd87c780( #"zombie_poster_ee_list", 5 );
         
         foreach ( item in a_items )
         {

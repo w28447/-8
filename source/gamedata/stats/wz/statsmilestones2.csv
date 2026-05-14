@@ -1,4 +1,4 @@
-256,0,3,#global,#hash_3d392c6f96aa2ac1,7#hash_738b1106fc534e64,0,0,u3?0,#camo_active_headshot_wrapper,#,0,7#hash_63e36ad9e3a816cc,u3?0,0,FALSE,activecamounveil,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
+256,0,3,#global,#camo_active_headshot_base_headshots,7#hash_738b1106fc534e64,0,0,u3?0,#camo_active_headshot_wrapper,#,0,7#hash_63e36ad9e3a816cc,u3?0,0,FALSE,activecamounveil,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 257,0,3,#global,#camo_active_rapid_kills_base,7#hash_4b1f3ea8779a3b43,0,0,u3?0,#camo_active_rapid_kills_wrapper,#,0,7#hash_9d225b77ed54fd5,u3?0,0,FALSE,activecamounveil,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 258,0,5,#global,#hash_5cf945d7954a39e0,7#hash_4d1add8fb10e77c2,0,0,u3?0,#camo_active_kill_counter_wrapper,#,0,7#hash_5f5b4b5421ac8652,u3?0,0,FALSE,activecamounveil,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 259,0,2,#global,#hash_1ffb9d5647330a52,7#hash_d8d9dbe51a2c2a7,0,0,u3?0,#camo_active_showstopper_wrapper,#,0,7#hash_15e0a8358522d79,u3?0,0,FALSE,activecamounveil,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
@@ -25,7 +25,7 @@
 280,0,30,#weapon_pistol,#wz_camo4,7#hash_4d435ddc9e02e90f,0,277,u3?0,#camo_lima_wz,#challenges,0,7#,u3?1,0,FALSE,camo_lima_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 281,0,30,#weapon_pistol,#wz_camo5,7#hash_4d435ddc9e02e90f,0,277,u3?0,#camo_mike_wz,#challenges,0,7#,u3?1,0,FALSE,camo_mike_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 282,0,30,#weapon_pistol,#wz_camo6,7#hash_4d435ddc9e02e90f,0,277,u3?0,#camo_november_wz,#challenges,0,7#,u3?1,0,FALSE,camo_november_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
-283,0,6,#weapon_pistol,#challenges,7#hash_cac53ed46b6f021,0,0,u3?0,#camo_gold,#challenges,0,7#,u3?1,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
+283,0,6,#weapon_pistol,#challenges,7#challenge/mastery_expert,0,0,u3?0,#camo_gold,#challenges,0,7#,u3?1,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
 284,0,5,#weapon_smg,#wz_camo1,7#hash_4d435ddc9e02e90f,0,0,u3?0,#camo_alfa_wz,#,0,7#,u3?6,0,FALSE,camo_alfa_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 285,1,10,#weapon_smg,#wz_camo1,7#hash_4d435ddc9e02e90f,0,284,u3?0,#camo_bravo_wz,#,0,7#,u3?6,0,FALSE,camo_bravo_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 286,2,20,#weapon_smg,#wz_camo1,7#hash_4d435ddc9e02e90f,0,285,u3?0,#camo_charlie_wz,#,0,7#,u3?6,0,FALSE,camo_charlie_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
@@ -40,7 +40,7 @@
 295,0,30,#weapon_smg,#wz_camo4,7#hash_4d435ddc9e02e90f,0,292,u3?0,#camo_lima_wz,#challenges,0,7#,u3?6,0,FALSE,camo_lima_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 296,0,30,#weapon_smg,#wz_camo5,7#hash_4d435ddc9e02e90f,0,292,u3?0,#camo_mike_wz,#challenges,0,7#,u3?6,0,FALSE,camo_mike_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 297,0,30,#weapon_smg,#wz_camo6,7#hash_4d435ddc9e02e90f,0,292,u3?0,#camo_november_wz,#challenges,0,7#,u3?6,0,FALSE,camo_november_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
-298,0,6,#weapon_smg,#challenges,7#hash_cac53ed46b6f021,0,0,u3?0,#camo_gold,#challenges,0,7#,u3?6,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
+298,0,6,#weapon_smg,#challenges,7#challenge/mastery_expert,0,0,u3?0,#camo_gold,#challenges,0,7#,u3?6,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
 299,0,5,#weapon_assault,#wz_camo1,7#hash_4d435ddc9e02e90f,0,0,u3?0,#camo_alfa_wz,#,0,7#,u3?14,0,FALSE,camo_alfa_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 300,1,10,#weapon_assault,#wz_camo1,7#hash_4d435ddc9e02e90f,0,299,u3?0,#camo_bravo_wz,#,0,7#,u3?14,0,FALSE,camo_bravo_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 301,2,20,#weapon_assault,#wz_camo1,7#hash_4d435ddc9e02e90f,0,300,u3?0,#camo_charlie_wz,#,0,7#,u3?14,0,FALSE,camo_charlie_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
@@ -55,7 +55,7 @@
 310,0,30,#weapon_assault,#wz_camo4,7#hash_4d435ddc9e02e90f,0,307,u3?0,#camo_lima_wz,#challenges,0,7#,u3?14,0,FALSE,camo_lima_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 311,0,30,#weapon_assault,#wz_camo5,7#hash_4d435ddc9e02e90f,0,307,u3?0,#camo_mike_wz,#challenges,0,7#,u3?14,0,FALSE,camo_mike_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 312,0,30,#weapon_assault,#wz_camo6,7#hash_4d435ddc9e02e90f,0,307,u3?0,#camo_november_wz,#challenges,0,7#,u3?14,0,FALSE,camo_november_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
-313,0,6,#weapon_assault,#challenges,7#hash_cac53ed46b6f021,0,0,u3?0,#camo_gold,#challenges,0,7#,u3?14,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
+313,0,6,#weapon_assault,#challenges,7#challenge/mastery_expert,0,0,u3?0,#camo_gold,#challenges,0,7#,u3?14,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
 314,0,5,#weapon_lmg,#wz_camo1,7#hash_4d435ddc9e02e90f,0,0,u3?0,#camo_alfa_wz,#,0,7#,u3?22,0,FALSE,camo_alfa_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 315,1,10,#weapon_lmg,#wz_camo1,7#hash_4d435ddc9e02e90f,0,314,u3?0,#camo_bravo_wz,#,0,7#,u3?22,0,FALSE,camo_bravo_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 316,2,20,#weapon_lmg,#wz_camo1,7#hash_4d435ddc9e02e90f,0,315,u3?0,#camo_charlie_wz,#,0,7#,u3?22,0,FALSE,camo_charlie_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
@@ -70,7 +70,7 @@
 325,0,30,#weapon_lmg,#wz_camo4,7#hash_4d435ddc9e02e90f,0,322,u3?0,#camo_lima_wz,#challenges,0,7#,u3?22,0,FALSE,camo_lima_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 326,0,30,#weapon_lmg,#wz_camo5,7#hash_4d435ddc9e02e90f,0,322,u3?0,#camo_mike_wz,#challenges,0,7#,u3?22,0,FALSE,camo_mike_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 327,0,30,#weapon_lmg,#wz_camo6,7#hash_4d435ddc9e02e90f,0,322,u3?0,#camo_november_wz,#challenges,0,7#,u3?22,0,FALSE,camo_november_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
-328,0,6,#weapon_lmg,#challenges,7#hash_cac53ed46b6f021,0,0,u3?0,#camo_gold,#challenges,0,7#,u3?22,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
+328,0,6,#weapon_lmg,#challenges,7#challenge/mastery_expert,0,0,u3?0,#camo_gold,#challenges,0,7#,u3?22,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
 329,0,5,#weapon_cqb,#wz_camo1,7#hash_4d435ddc9e02e90f,0,0,u3?0,#camo_alfa_wz,#,0,7#,u3?28,0,FALSE,camo_alfa_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 330,1,10,#weapon_cqb,#wz_camo1,7#hash_4d435ddc9e02e90f,0,329,u3?0,#camo_bravo_wz,#,0,7#,u3?28,0,FALSE,camo_bravo_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 331,2,20,#weapon_cqb,#wz_camo1,7#hash_4d435ddc9e02e90f,0,330,u3?0,#camo_charlie_wz,#,0,7#,u3?28,0,FALSE,camo_charlie_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
@@ -85,7 +85,7 @@
 340,0,30,#weapon_cqb,#wz_camo4,7#hash_4d435ddc9e02e90f,0,337,u3?0,#camo_lima_wz,#challenges,0,7#,u3?28,0,FALSE,camo_lima_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 341,0,30,#weapon_cqb,#wz_camo5,7#hash_4d435ddc9e02e90f,0,337,u3?0,#camo_mike_wz,#challenges,0,7#,u3?28,0,FALSE,camo_mike_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 342,0,30,#weapon_cqb,#wz_camo6,7#hash_4d435ddc9e02e90f,0,337,u3?0,#camo_november_wz,#challenges,0,7#,u3?28,0,FALSE,camo_november_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
-343,0,6,#weapon_cqb,#challenges,7#hash_cac53ed46b6f021,0,0,u3?0,#camo_gold,#challenges,0,7#,u3?28,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
+343,0,6,#weapon_cqb,#challenges,7#challenge/mastery_expert,0,0,u3?0,#camo_gold,#challenges,0,7#,u3?28,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
 344,0,5,#weapon_sniper,#wz_camo1,7#hash_4d435ddc9e02e90f,0,0,u3?0,#camo_alfa_wz,#,0,7#,u3?32,0,FALSE,camo_alfa_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 345,1,10,#weapon_sniper,#wz_camo1,7#hash_4d435ddc9e02e90f,0,344,u3?0,#camo_bravo_wz,#,0,7#,u3?32,0,FALSE,camo_bravo_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 346,2,20,#weapon_sniper,#wz_camo1,7#hash_4d435ddc9e02e90f,0,345,u3?0,#camo_charlie_wz,#,0,7#,u3?32,0,FALSE,camo_charlie_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
@@ -100,7 +100,7 @@
 355,0,30,#weapon_sniper,#wz_camo4,7#hash_4d435ddc9e02e90f,0,352,u3?0,#camo_lima_wz,#challenges,0,7#,u3?32,0,FALSE,camo_lima_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 356,0,30,#weapon_sniper,#wz_camo5,7#hash_4d435ddc9e02e90f,0,352,u3?0,#camo_mike_wz,#challenges,0,7#,u3?32,0,FALSE,camo_mike_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 357,0,30,#weapon_sniper,#wz_camo6,7#hash_4d435ddc9e02e90f,0,352,u3?0,#camo_november_wz,#challenges,0,7#,u3?32,0,FALSE,camo_november_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
-358,0,6,#weapon_sniper,#challenges,7#hash_cac53ed46b6f021,0,0,u3?0,#camo_gold,#challenges,0,7#,u3?32,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
+358,0,6,#weapon_sniper,#challenges,7#challenge/mastery_expert,0,0,u3?0,#camo_gold,#challenges,0,7#,u3?32,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
 359,0,5,#weapon_tactical,#wz_camo1,7#hash_4d435ddc9e02e90f,0,0,u3?0,#camo_alfa_wz,#,0,7#,u3?38,0,FALSE,camo_alfa_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 360,1,10,#weapon_tactical,#wz_camo1,7#hash_4d435ddc9e02e90f,0,359,u3?0,#camo_bravo_wz,#,0,7#,u3?38,0,FALSE,camo_bravo_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 361,2,20,#weapon_tactical,#wz_camo1,7#hash_4d435ddc9e02e90f,0,360,u3?0,#camo_charlie_wz,#,0,7#,u3?38,0,FALSE,camo_charlie_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
@@ -115,7 +115,7 @@
 370,0,30,#weapon_tactical,#wz_camo4,7#hash_4d435ddc9e02e90f,0,367,u3?0,#camo_lima_wz,#challenges,0,7#,u3?38,0,FALSE,camo_lima_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 371,0,30,#weapon_tactical,#wz_camo5,7#hash_4d435ddc9e02e90f,0,367,u3?0,#camo_mike_wz,#challenges,0,7#,u3?38,0,FALSE,camo_mike_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 372,0,30,#weapon_tactical,#wz_camo6,7#hash_4d435ddc9e02e90f,0,367,u3?0,#camo_november_wz,#challenges,0,7#,u3?38,0,FALSE,camo_november_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
-373,0,6,#weapon_tactical,#challenges,7#hash_cac53ed46b6f021,0,0,u3?0,#camo_gold,#challenges,0,7#,u3?38,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
+373,0,6,#weapon_tactical,#challenges,7#challenge/mastery_expert,0,0,u3?0,#camo_gold,#challenges,0,7#,u3?38,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
 374,0,5,#weapon_launcher,#wz_camo1,7#hash_4d435ddc9e02e90f,0,0,u3?0,#camo_alfa_wz,#,0,7#,u3?44,0,FALSE,camo_alfa_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 375,1,10,#weapon_launcher,#wz_camo1,7#hash_4d435ddc9e02e90f,0,374,u3?0,#camo_bravo_wz,#,0,7#,u3?44,0,FALSE,camo_bravo_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 376,2,20,#weapon_launcher,#wz_camo1,7#hash_4d435ddc9e02e90f,0,375,u3?0,#camo_charlie_wz,#,0,7#,u3?44,0,FALSE,camo_charlie_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
@@ -130,15 +130,15 @@
 385,0,30,#weapon_launcher,#wz_camo4,7#hash_4d435ddc9e02e90f,0,382,u3?0,#camo_lima_wz,#challenges,0,7#,u3?44,0,FALSE,camo_lima_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 386,0,30,#weapon_launcher,#wz_camo5,7#hash_4d435ddc9e02e90f,0,382,u3?0,#camo_mike_wz,#challenges,0,7#,u3?44,0,FALSE,camo_mike_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 387,0,30,#weapon_launcher,#wz_camo6,7#hash_4d435ddc9e02e90f,0,382,u3?0,#camo_november_wz,#challenges,0,7#,u3?44,0,FALSE,camo_november_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
-388,0,6,#weapon_launcher,#challenges,7#hash_cac53ed46b6f021,0,0,u3?0,#camo_gold,#challenges,0,7#,u3?44,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
-389,0,42,#group,#challenges,7#hash_7c124bc27523a2cd,0,0,u3?0,#camo_diamond,#weapons_mastery,0,7#,u3?47,0,FALSE,camo_diamond,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
-390,0,42,#group,#challenges,7#hash_7c124bc27523a2cd,0,0,u3?0,#camo_diamond,#weapons_mastery,0,7#,u3?50,0,FALSE,camo_diamond,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
-391,0,28,#group,#challenges,7#hash_7c124bc27523a2cd,0,0,u3?0,#camo_diamond,#weapons_mastery,0,7#,u3?53,0,FALSE,camo_diamond,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
-392,0,28,#group,#challenges,7#hash_7c124bc27523a2cd,0,0,u3?0,#camo_diamond,#weapons_mastery,0,7#,u3?56,0,FALSE,camo_diamond,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
-393,0,14,#group,#challenges,7#hash_7c124bc27523a2cd,0,0,u3?0,#camo_diamond,#weapons_mastery,0,7#,u3?59,0,FALSE,camo_diamond,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
-394,0,28,#group,#challenges,7#hash_7c124bc27523a2cd,0,0,u3?0,#camo_diamond,#weapons_mastery,0,7#,u3?62,0,FALSE,camo_diamond,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
-395,0,21,#group,#challenges,7#hash_7c124bc27523a2cd,0,0,u3?0,#camo_diamond,#weapons_mastery,0,7#,u3?65,0,FALSE,camo_diamond,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
-396,0,7,#group,#challenges,7#hash_7c124bc27523a2cd,0,0,u3?0,#camo_diamond,#weapons_mastery,0,7#,u3?68,0,FALSE,camo_diamond,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
+388,0,6,#weapon_launcher,#challenges,7#challenge/mastery_expert,0,0,u3?0,#camo_gold,#challenges,0,7#,u3?44,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
+389,0,42,#group,#challenges,7#challenge/mastery_expert_group,0,0,u3?0,#camo_diamond,#weapons_mastery,0,7#,u3?47,0,FALSE,camo_diamond,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
+390,0,42,#group,#challenges,7#challenge/mastery_expert_group,0,0,u3?0,#camo_diamond,#weapons_mastery,0,7#,u3?50,0,FALSE,camo_diamond,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
+391,0,28,#group,#challenges,7#challenge/mastery_expert_group,0,0,u3?0,#camo_diamond,#weapons_mastery,0,7#,u3?53,0,FALSE,camo_diamond,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
+392,0,28,#group,#challenges,7#challenge/mastery_expert_group,0,0,u3?0,#camo_diamond,#weapons_mastery,0,7#,u3?56,0,FALSE,camo_diamond,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
+393,0,14,#group,#challenges,7#challenge/mastery_expert_group,0,0,u3?0,#camo_diamond,#weapons_mastery,0,7#,u3?59,0,FALSE,camo_diamond,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
+394,0,28,#group,#challenges,7#challenge/mastery_expert_group,0,0,u3?0,#camo_diamond,#weapons_mastery,0,7#,u3?62,0,FALSE,camo_diamond,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
+395,0,21,#group,#challenges,7#challenge/mastery_expert_group,0,0,u3?0,#camo_diamond,#weapons_mastery,0,7#,u3?65,0,FALSE,camo_diamond,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
+396,0,7,#group,#challenges,7#challenge/mastery_expert_group,0,0,u3?0,#camo_diamond,#weapons_mastery,0,7#,u3?68,0,FALSE,camo_diamond,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
 397,0,8,#global,#weapons_mastery,7#hash_b0df224bdf7bdd8,0,0,u3?0,#camo_darkmatter,#weapons_mastery,0,7#,u3?0,0,FALSE,camo_darkmatter,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
 398,0,5,#weapon_assault,#wz_camo1,7#hash_4d435ddc9e02e90f,0,0,u3?0,#camo_alfa_wz,#,0,7#,u3?71,0,FALSE,camo_alfa_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 399,1,10,#weapon_assault,#wz_camo1,7#hash_4d435ddc9e02e90f,0,398,u3?0,#camo_bravo_wz,#,0,7#,u3?71,0,FALSE,camo_bravo_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
@@ -154,7 +154,7 @@
 409,0,30,#weapon_assault,#wz_camo4,7#hash_4d435ddc9e02e90f,0,406,u3?0,#camo_lima_wz,#challenges_tu,0,7#,u3?71,0,FALSE,camo_lima_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 410,0,30,#weapon_assault,#wz_camo5,7#hash_4d435ddc9e02e90f,0,406,u3?0,#camo_mike_wz,#challenges_tu,0,7#,u3?71,0,FALSE,camo_mike_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 411,0,30,#weapon_assault,#wz_camo6,7#hash_4d435ddc9e02e90f,0,406,u3?0,#camo_november_wz,#challenges_tu,0,7#,u3?71,0,FALSE,camo_november_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
-412,0,6,#weapon_assault,#challenges_tu,7#hash_cac53ed46b6f021,0,0,u3?0,#camo_gold,#challenges_tu,0,7#,u3?71,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
+412,0,6,#weapon_assault,#challenges_tu,7#challenge/mastery_expert,0,0,u3?0,#camo_gold,#challenges_tu,0,7#,u3?71,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
 413,0,7,#weapon_assault,#challenges_tu,7#hash_7eb7910e3e10457a,0,389,u3?0,#camo_diamond,#,0,7#,u3?71,0,FALSE,camo_diamond,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 414,0,5,#weapon_smg,#wz_camo1,7#hash_4d435ddc9e02e90f,0,0,u3?0,#camo_alfa_wz,#,0,7#,u3?74,0,FALSE,camo_alfa_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 415,1,10,#weapon_smg,#wz_camo1,7#hash_4d435ddc9e02e90f,0,414,u3?0,#camo_bravo_wz,#,0,7#,u3?74,0,FALSE,camo_bravo_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
@@ -170,7 +170,7 @@
 425,0,30,#weapon_smg,#wz_camo4,7#hash_4d435ddc9e02e90f,0,422,u3?0,#camo_lima_wz,#challenges_tu,0,7#,u3?74,0,FALSE,camo_lima_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 426,0,30,#weapon_smg,#wz_camo5,7#hash_4d435ddc9e02e90f,0,422,u3?0,#camo_mike_wz,#challenges_tu,0,7#,u3?74,0,FALSE,camo_mike_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 427,0,30,#weapon_smg,#wz_camo6,7#hash_4d435ddc9e02e90f,0,422,u3?0,#camo_november_wz,#challenges_tu,0,7#,u3?74,0,FALSE,camo_november_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
-428,0,6,#weapon_smg,#challenges_tu,7#hash_cac53ed46b6f021,0,0,u3?0,#camo_gold,#challenges_tu,0,7#,u3?74,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
+428,0,6,#weapon_smg,#challenges_tu,7#challenge/mastery_expert,0,0,u3?0,#camo_gold,#challenges_tu,0,7#,u3?74,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
 429,0,7,#weapon_smg,#challenges_tu,7#hash_977a33d012834e,0,390,u3?0,#camo_diamond,#,0,7#,u3?74,0,FALSE,camo_diamond,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 430,0,5,#weapon_pistol,#wz_camo1,7#hash_4d435ddc9e02e90f,0,0,u3?0,#camo_alfa_wz,#,0,7#,u3?80,0,FALSE,camo_alfa_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 431,1,10,#weapon_pistol,#wz_camo1,7#hash_4d435ddc9e02e90f,0,430,u3?0,#camo_bravo_wz,#,0,7#,u3?80,0,FALSE,camo_bravo_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
@@ -186,7 +186,7 @@
 441,0,30,#weapon_pistol,#wz_camo4,7#hash_4d435ddc9e02e90f,0,438,u3?0,#camo_lima_wz,#challenges_tu,0,7#,u3?80,0,FALSE,camo_lima_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 442,0,30,#weapon_pistol,#wz_camo5,7#hash_4d435ddc9e02e90f,0,438,u3?0,#camo_mike_wz,#challenges_tu,0,7#,u3?80,0,FALSE,camo_mike_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 443,0,30,#weapon_pistol,#wz_camo6,7#hash_4d435ddc9e02e90f,0,438,u3?0,#camo_november_wz,#challenges_tu,0,7#,u3?80,0,FALSE,camo_november_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
-444,0,6,#weapon_pistol,#challenges_tu,7#hash_cac53ed46b6f021,0,0,u3?0,#camo_gold,#challenges_tu,0,7#,u3?80,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
+444,0,6,#weapon_pistol,#challenges_tu,7#challenge/mastery_expert,0,0,u3?0,#camo_gold,#challenges_tu,0,7#,u3?80,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
 445,0,7,#weapon_pistol,#challenges_tu,7#hash_3fc19442246ea776,0,395,u3?0,#camo_diamond,#,0,7#,u3?80,0,FALSE,camo_diamond,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 446,0,5,#weapon_cqb,#wz_camo1,7#hash_4d435ddc9e02e90f,0,0,u3?0,#camo_alfa_wz,#,0,7#,u3?83,0,FALSE,camo_alfa_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 447,1,10,#weapon_cqb,#wz_camo1,7#hash_4d435ddc9e02e90f,0,446,u3?0,#camo_bravo_wz,#,0,7#,u3?83,0,FALSE,camo_bravo_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
@@ -202,7 +202,7 @@
 457,0,30,#weapon_cqb,#wz_camo4,7#hash_4d435ddc9e02e90f,0,454,u3?0,#camo_lima_wz,#challenges_tu,0,7#,u3?83,0,FALSE,camo_lima_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 458,0,30,#weapon_cqb,#wz_camo5,7#hash_4d435ddc9e02e90f,0,454,u3?0,#camo_mike_wz,#challenges_tu,0,7#,u3?83,0,FALSE,camo_mike_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 459,0,30,#weapon_cqb,#wz_camo6,7#hash_4d435ddc9e02e90f,0,454,u3?0,#camo_november_wz,#challenges_tu,0,7#,u3?83,0,FALSE,camo_november_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
-460,0,6,#weapon_cqb,#challenges_tu,7#hash_cac53ed46b6f021,0,0,u3?0,#camo_gold,#challenges_tu,0,7#,u3?83,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
+460,0,6,#weapon_cqb,#challenges_tu,7#challenge/mastery_expert,0,0,u3?0,#camo_gold,#challenges_tu,0,7#,u3?83,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
 461,0,7,#weapon_cqb,#challenges_tu,7#hash_73ece7337fceede1,0,393,u3?0,#camo_diamond,#,0,7#,u3?83,0,FALSE,camo_diamond,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 462,0,5,#weapon_sniper,#wz_camo1,7#hash_4d435ddc9e02e90f,0,0,u3?0,#camo_alfa_wz,#,0,7#,u3?86,0,FALSE,camo_alfa_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 463,1,10,#weapon_sniper,#wz_camo1,7#hash_4d435ddc9e02e90f,0,462,u3?0,#camo_bravo_wz,#,0,7#,u3?86,0,FALSE,camo_bravo_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
@@ -218,7 +218,7 @@
 473,0,30,#weapon_sniper,#wz_camo4,7#hash_4d435ddc9e02e90f,0,470,u3?0,#camo_lima_wz,#challenges_tu,0,7#,u3?86,0,FALSE,camo_lima_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 474,0,30,#weapon_sniper,#wz_camo5,7#hash_4d435ddc9e02e90f,0,470,u3?0,#camo_mike_wz,#challenges_tu,0,7#,u3?86,0,FALSE,camo_mike_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 475,0,30,#weapon_sniper,#wz_camo6,7#hash_4d435ddc9e02e90f,0,470,u3?0,#camo_november_wz,#challenges_tu,0,7#,u3?86,0,FALSE,camo_november_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
-476,0,6,#weapon_sniper,#challenges_tu,7#hash_cac53ed46b6f021,0,0,u3?0,#camo_gold,#challenges_tu,0,7#,u3?86,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
+476,0,6,#weapon_sniper,#challenges_tu,7#challenge/mastery_expert,0,0,u3?0,#camo_gold,#challenges_tu,0,7#,u3?86,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
 477,0,7,#weapon_sniper,#challenges_tu,7#hash_2caa58b4ef6b78f6,0,392,u3?0,#camo_diamond,#,0,7#,u3?86,0,FALSE,camo_diamond,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 478,0,5,#weapon_sniper,#wz_camo1,7#hash_4d435ddc9e02e90f,0,0,u3?0,#camo_alfa_wz,#,0,7#,u3?89,0,FALSE,camo_alfa_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 479,1,10,#weapon_sniper,#wz_camo1,7#hash_4d435ddc9e02e90f,0,478,u3?0,#camo_bravo_wz,#,0,7#,u3?89,0,FALSE,camo_bravo_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
@@ -234,7 +234,7 @@
 489,0,30,#weapon_sniper,#wz_camo4,7#hash_4d435ddc9e02e90f,0,486,u3?0,#camo_lima_wz,#challenges_tu,0,7#,u3?89,0,FALSE,camo_lima_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 490,0,30,#weapon_sniper,#wz_camo5,7#hash_4d435ddc9e02e90f,0,486,u3?0,#camo_mike_wz,#challenges_tu,0,7#,u3?89,0,FALSE,camo_mike_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 491,0,30,#weapon_sniper,#wz_camo6,7#hash_4d435ddc9e02e90f,0,486,u3?0,#camo_november_wz,#challenges_tu,0,7#,u3?89,0,FALSE,camo_november_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
-492,0,6,#weapon_sniper,#challenges_tu,7#hash_cac53ed46b6f021,0,0,u3?0,#camo_gold,#challenges_tu,0,7#,u3?89,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
+492,0,6,#weapon_sniper,#challenges_tu,7#challenge/mastery_expert,0,0,u3?0,#camo_gold,#challenges_tu,0,7#,u3?89,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
 493,0,7,#weapon_sniper,#challenges_tu,7#hash_2caa58b4ef6b78f6,0,392,u3?0,#camo_diamond,#,0,7#,u3?89,0,FALSE,camo_diamond,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 494,0,5,#weapon_tactical,#wz_camo1,7#hash_4d435ddc9e02e90f,0,0,u3?0,#camo_alfa_wz,#,0,7#,u3?93,0,FALSE,camo_alfa_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 495,1,10,#weapon_tactical,#wz_camo1,7#hash_4d435ddc9e02e90f,0,494,u3?0,#camo_bravo_wz,#,0,7#,u3?93,0,FALSE,camo_bravo_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
@@ -250,7 +250,7 @@
 505,0,30,#weapon_tactical,#wz_camo4,7#hash_4d435ddc9e02e90f,0,502,u3?0,#camo_lima_wz,#challenges_tu,0,7#,u3?93,0,FALSE,camo_lima_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 506,0,30,#weapon_tactical,#wz_camo5,7#hash_4d435ddc9e02e90f,0,502,u3?0,#camo_mike_wz,#challenges_tu,0,7#,u3?93,0,FALSE,camo_mike_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 507,0,30,#weapon_tactical,#wz_camo6,7#hash_4d435ddc9e02e90f,0,502,u3?0,#camo_november_wz,#challenges_tu,0,7#,u3?93,0,FALSE,camo_november_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
-508,0,6,#weapon_tactical,#challenges_tu,7#hash_cac53ed46b6f021,0,0,u3?0,#camo_gold,#challenges_tu,0,7#,u3?93,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
+508,0,6,#weapon_tactical,#challenges_tu,7#challenge/mastery_expert,0,0,u3?0,#camo_gold,#challenges_tu,0,7#,u3?93,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
 509,0,7,#weapon_tactical,#challenges_tu,7#hash_7ee47b0e3e370e03,0,394,u3?0,#camo_diamond,#,0,7#,u3?93,0,FALSE,camo_diamond,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 510,0,5,#weapon_cqb,#wz_camo1,7#hash_4d435ddc9e02e90f,0,0,u3?0,#camo_alfa_wz,#,0,7#,u3?96,0,FALSE,camo_alfa_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 511,1,10,#weapon_cqb,#wz_camo1,7#hash_4d435ddc9e02e90f,0,510,u3?0,#camo_bravo_wz,#,0,7#,u3?96,0,FALSE,camo_bravo_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
@@ -266,7 +266,7 @@
 521,0,30,#weapon_cqb,#wz_camo4,7#hash_4d435ddc9e02e90f,0,518,u3?0,#camo_lima_wz,#challenges_tu,0,7#,u3?96,0,FALSE,camo_lima_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 522,0,30,#weapon_cqb,#wz_camo5,7#hash_4d435ddc9e02e90f,0,518,u3?0,#camo_mike_wz,#challenges_tu,0,7#,u3?96,0,FALSE,camo_mike_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 523,0,30,#weapon_cqb,#wz_camo6,7#hash_4d435ddc9e02e90f,0,518,u3?0,#camo_november_wz,#challenges_tu,0,7#,u3?96,0,FALSE,camo_november_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
-524,0,6,#weapon_cqb,#challenges_tu,7#hash_cac53ed46b6f021,0,0,u3?0,#camo_gold,#challenges_tu,0,7#,u3?96,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
+524,0,6,#weapon_cqb,#challenges_tu,7#challenge/mastery_expert,0,0,u3?0,#camo_gold,#challenges_tu,0,7#,u3?96,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
 525,0,7,#weapon_cqb,#challenges_tu,7#hash_73ece7337fceede1,0,393,u3?0,#camo_diamond,#,0,7#,u3?96,0,FALSE,camo_diamond,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 526,0,5,#weapon_knife,#wz_camo1,7#hash_4d435ddc9e02e90f,0,0,u3?0,#camo_alfa_wz,#,0,7#,u3?99,0,FALSE,camo_alfa_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 527,1,10,#weapon_knife,#wz_camo1,7#hash_4d435ddc9e02e90f,0,526,u3?0,#camo_bravo_wz,#,0,7#,u3?99,0,FALSE,camo_bravo_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
@@ -282,7 +282,7 @@
 537,0,30,#weapon_knife,#wz_camo4,7#hash_4d435ddc9e02e90f,0,534,u3?0,#camo_lima_wz,#challenges_tu,0,7#,u3?99,0,FALSE,camo_lima_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 538,0,30,#weapon_knife,#wz_camo5,7#hash_4d435ddc9e02e90f,0,534,u3?0,#camo_mike_wz,#challenges_tu,0,7#,u3?99,0,FALSE,camo_mike_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 539,0,30,#weapon_knife,#wz_camo6,7#hash_4d435ddc9e02e90f,0,534,u3?0,#camo_november_wz,#challenges_tu,0,7#,u3?99,0,FALSE,camo_november_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
-540,0,6,#weapon_knife,#challenges_tu,7#hash_cac53ed46b6f021,0,0,u3?0,#camo_gold,#challenges_tu,0,7#,u3?99,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
+540,0,6,#weapon_knife,#challenges_tu,7#challenge/mastery_expert,0,0,u3?0,#camo_gold,#challenges_tu,0,7#,u3?99,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
 541,0,7,#weapon_knife,#challenges_tu,7#hash_f49a6bc432e395a,0,540,u3?0,#camo_diamond,#,0,7#,u3?99,0,FALSE,camo_diamond,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 542,0,5,#weapon_special,#wz_camo1,7#hash_4d435ddc9e02e90f,0,0,u3?0,#camo_alfa_wz,#,0,7#,u3?102,0,FALSE,camo_alfa_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 543,1,10,#weapon_special,#wz_camo1,7#hash_4d435ddc9e02e90f,0,542,u3?0,#camo_bravo_wz,#,0,7#,u3?102,0,FALSE,camo_bravo_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
@@ -298,5 +298,5 @@
 553,0,30,#weapon_special,#wz_camo4,7#hash_4d435ddc9e02e90f,0,550,u3?0,#camo_lima_wz,#challenges_tu,0,7#,u3?102,0,FALSE,camo_lima_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 554,0,30,#weapon_special,#wz_camo5,7#hash_4d435ddc9e02e90f,0,550,u3?0,#camo_mike_wz,#challenges_tu,0,7#,u3?102,0,FALSE,camo_mike_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 555,0,30,#weapon_special,#wz_camo6,7#hash_4d435ddc9e02e90f,0,550,u3?0,#camo_november_wz,#challenges_tu,0,7#,u3?102,0,FALSE,camo_november_wz,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
-556,0,6,#weapon_special,#challenges_tu,7#hash_cac53ed46b6f021,0,0,u3?0,#camo_gold,#challenges_tu,0,7#,u3?102,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
+556,0,6,#weapon_special,#challenges_tu,7#challenge/mastery_expert,0,0,u3?0,#camo_gold,#challenges_tu,0,7#,u3?102,0,FALSE,camo_gold,FALSE,FALSE,FALSE,TRUE,FALSE,#,#,0
 557,0,7,#weapon_special,#challenges_tu,7#hash_707dd4abab680170,0,556,u3?0,#camo_diamond,#,0,7#,u3?102,0,FALSE,camo_diamond,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0

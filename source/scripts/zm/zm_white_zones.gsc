@@ -212,7 +212,7 @@ function get_location_string( e_player )
     {
         case #"zone_culdesac_green":
         case #"zone_culdesac_yellow":
-            str_display = #"hash_4aa0489391d8a215";
+            str_display = #"zm_white/location_culdesac";
             break;
         case #"zone_angled_house":
             str_display = #"hash_2ed7f0b52bd11574";
@@ -236,10 +236,10 @@ function get_location_string( e_player )
             str_display = #"hash_1277174ca2ba0df";
             break;
         case #"zone_truck":
-            str_display = #"hash_5ff3990c30bac4bc";
+            str_display = #"zm_white/location_truck";
             break;
         case #"zone_security_checkpoint":
-            str_display = #"hash_7b20b0be4c557f4e";
+            str_display = #"zm_white/location_security_checkpoint";
             break;
         case #"zone_street_start":
             str_display = #"hash_551b715f4aea3557";
@@ -260,7 +260,7 @@ function get_location_string( e_player )
             str_display = #"hash_75391830b5467acb";
             break;
         case #"zone_bunker_apd":
-            str_display = #"hash_20bd99c897a2920c";
+            str_display = #"zm_white/location_bunker_apd";
             break;
         case #"zone_solitary":
         case #"zone_bunker_solitary":
@@ -268,19 +268,19 @@ function get_location_string( e_player )
             break;
         case #"zone_bunker_lounge":
         case #"zone_bunker_lounge_entrance":
-            str_display = #"hash_1b60859f3a2f9d03";
+            str_display = #"zm_white/location_bunker_lounge";
             break;
         case #"zone_bunker_beds_2":
         case #"zone_bunker_beds_1":
-            str_display = #"hash_1ec883f1cf006ca9";
+            str_display = #"zm_white/location_bunker_beds";
             break;
         case #"zone_bunker_diner_entrance":
         case #"zone_bunker_diner":
-            str_display = #"hash_352ef8e844f92ce3";
+            str_display = #"zm_white/location_bunker_diner";
             break;
         case #"zone_bunker_storage":
         case #"zone_bunker_storage_entrance":
-            str_display = #"hash_575e5c7bf38523da";
+            str_display = #"zm_white/location_bunker_storage";
             break;
         case #"zone_bunker_power_1":
         case #"zone_bunker_power_2":

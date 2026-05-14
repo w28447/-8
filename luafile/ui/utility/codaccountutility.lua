@@ -488,7 +488,7 @@ DataSources.CODAccountRegisterInfoBasic = ListHelper_SetupDataSource( "CODAccoun
 		ShowKeyboard( f24_arg0, f24_arg1, f24_arg2, "KEYBOARD_TYPE_CONFIRM_PASSWORD" )
 	end
 	
-	table.insert( f21_local0, CoD.CoDAccountUtility.packageOptionsButtonData( 0x1770F1CA89E2DE5, 0x38D108F675E74EF, "", f21_local1 ) )
+	table.insert( f21_local0, CoD.CoDAccountUtility.packageOptionsButtonData( 0x1770F1CA89E2DE5, "menu/codaccount_register_email_desc", "", f21_local1 ) )
 	table.insert( f21_local0, CoD.CoDAccountUtility.packageOptionsButtonData( 0xA50C91C923FBBF6, 0x91EDCCE05D39D06, "", f21_local2 ) )
 	table.insert( f21_local0, CoD.CoDAccountUtility.packageOptionsButtonData( 0xC77EF01F8EFB323, 0x1086AB2243296F5, "", f21_local3 ) )
 	return f21_local0
@@ -785,7 +785,7 @@ DataSources.CODAccountSignInConfirmation = ListHelper_SetupDataSource( "CODAccou
 			Engine.SetModelValue( Engine.CreateModel( Engine.GetGlobalModel(), "lobbyRoot.spinnerActive" ), true )
 		else
 			GoBack( f47_arg0, f47_arg2 )
-			LuaUtils.UI_ShowErrorMessageDialog( f47_arg2, 0xA1F937DB15A3B0, 0x127999393F1681 )
+			LuaUtils.UI_ShowErrorMessageDialog( f47_arg2, 0xA1F937DB15A3B0, "menu/error_caps" )
 		end
 	end ) )
 	return f46_local0
@@ -851,7 +851,7 @@ DataSources.CODAccountRegisterConfirmation = ListHelper_SetupDataSource( "CODAcc
 			Engine.SetModelValue( Engine.CreateModel( Engine.GetGlobalModel(), "lobbyRoot.spinnerActive" ), true )
 		else
 			GoBack( f50_arg0, f50_arg2 )
-			LuaUtils.UI_ShowErrorMessageDialog( f50_arg2, 0xA1F937DB15A3B0, 0x127999393F1681 )
+			LuaUtils.UI_ShowErrorMessageDialog( f50_arg2, 0xA1F937DB15A3B0, "menu/error_caps" )
 		end
 	end ) )
 	return f48_local0
@@ -991,7 +991,7 @@ CoD.CoDAccountUtility.CodAccountOnTransactionResultUpdated = function ( f59_arg0
 			if f0_local0( f59_local2 ) then
 				GoBack( f59_arg0, f59_arg1 )
 			end
-			LuaUtils.UI_ShowErrorMessageDialog( f59_arg1, f59_local5, 0x127999393F1681 )
+			LuaUtils.UI_ShowErrorMessageDialog( f59_arg1, f59_local5, "menu/error_caps" )
 		end
 		Engine.SetModelValue( Engine.CreateModel( Engine.GetGlobalModel(), "lobbyRoot.spinnerActive" ), false )
 	end

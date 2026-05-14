@@ -59,14 +59,14 @@ CoD.FTUEUtility.FTUESequences.WZIntroduction = {
 					models = {
 						displayTitle = 0xED31E7E5010EC4A,
 						displayText = 0x82C11675D201653,
-						image = 0xB0740EFF786BB29
+						image = "ui_menu_ftue_how_to_wz_01"
 					}
 				},
 				{
 					models = {
 						displayTitle = 0xED31D7E5010EA97,
 						displayText = 0x82C12675D201806,
-						image = 0xB073DEFF786B610,
+						image = "ui_menu_ftue_how_to_wz_02",
 						korea15Image = 0x4806CFDC4641073
 					}
 				},
@@ -74,7 +74,7 @@ CoD.FTUEUtility.FTUESequences.WZIntroduction = {
 					models = {
 						displayTitle = 0xED31C7E5010E8E4,
 						displayText = 0x82C13675D2019B9,
-						image = 0xB073EEFF786B7C3
+						image = "ui_menu_ftue_how_to_wz_03"
 					}
 				}
 			}
@@ -227,7 +227,7 @@ CoD.FTUEUtility.FTUESequences.ZMZombieRushPlaylistIntroduction = {
 					models = {
 						displayTitle = 0x0,
 						displayText = 0x49529904F556FD2,
-						image = 0x64C57C756A1EA3C
+						image = "ui_menu_ftue_zm_public"
 					}
 				}
 			}
@@ -639,7 +639,7 @@ CoD.FTUEUtility.FTUESequences.BlackOpsPassUpsell = {
 				if f26_local2 then
 					f26_local2 = f26_local0[f26_local1].productNameHash:get()
 				end
-				if f26_local2 == 0x617848314938AB9 then
+				if f26_local2 == "blackopspass" then
 					local f26_local3 = f26_local0[f26_local1].productID
 					if f26_local3 then
 						f26_local3 = f26_local0[f26_local1].productID:get()
@@ -674,7 +674,7 @@ CoD.FTUEUtility.FTUESequences.PromoEvent = {
 					models = {
 						displayTitle = 0x0,
 						displayText = 0x2E59FC3EFBE5237,
-						image = 0x65D95F28D7925F5
+						image = "ui_icon_blackmarket_promos_shamrock_and_awe"
 					}
 				}
 			}

@@ -29,7 +29,7 @@ CoD.StartMenu_Options_Graphics_ColorBlindMinimapPreview.new = function ( f1_arg0
 	end
 	
 	playerScorestreakDiamond.__Color()
-	playerScorestreakDiamond:setImage( RegisterImage( 0xABBC4C99C38383F ) )
+	playerScorestreakDiamond:setImage( RegisterImage( "uie_t7_hud_enemysatellite_diamond_top_small" ) )
 	self:addElement( playerScorestreakDiamond )
 	self.playerScorestreakDiamond = playerScorestreakDiamond
 	
@@ -69,7 +69,7 @@ CoD.StartMenu_Options_Graphics_ColorBlindMinimapPreview.new = function ( f1_arg0
 	end
 	
 	enemyArrow.__Color()
-	enemyArrow:setImage( RegisterImage( 0x5AE9DCC3F499F1B ) )
+	enemyArrow:setImage( RegisterImage( "t7_hud_waypoints_compassping_enemydirectional" ) )
 	self:addElement( enemyArrow )
 	self.enemyArrow = enemyArrow
 	
@@ -89,7 +89,7 @@ CoD.StartMenu_Options_Graphics_ColorBlindMinimapPreview.new = function ( f1_arg0
 	end
 	
 	enemyScorestreakDiamond.__Color()
-	enemyScorestreakDiamond:setImage( RegisterImage( 0xABBC4C99C38383F ) )
+	enemyScorestreakDiamond:setImage( RegisterImage( "uie_t7_hud_enemysatellite_diamond_top_small" ) )
 	self:addElement( enemyScorestreakDiamond )
 	self.enemyScorestreakDiamond = enemyScorestreakDiamond
 	
@@ -201,7 +201,7 @@ CoD.StartMenu_Options_Graphics_ColorBlindMinimapPreview.new = function ( f1_arg0
 	end
 	
 	objectivePointA.__Color()
-	objectivePointA:setImage( RegisterImage( 0x24C57F8DB0BFCE6 ) )
+	objectivePointA:setImage( RegisterImage( "t7_hud_waypoints_neutral_new_a_mini" ) )
 	self:addElement( objectivePointA )
 	self.objectivePointA = objectivePointA
 	

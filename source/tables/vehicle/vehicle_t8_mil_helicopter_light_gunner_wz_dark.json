@@ -15,7 +15,7 @@
     "scriptBundleSettings": "#helicopter_wz_bundle_settings",
     "deathFx": "#hash_4475fd2c32ab3987",
     "deathFxTag": "tag_deathfx",
-    "deathFxSound": "#hash_626995667a4ff5c",
+    "deathFxSound": "#exp_veh_chopper",
     "unk11f4": [
         "tag_tail_rotor",
         "tag_main_rotor"
@@ -28,7 +28,7 @@
     "peelSpeedMax": 600,
     "model": "#hash_7829181fdfbbcb42",
     "deathModel": "#veh_t8_mil_helicopter_light_debris_fuselage",
-    "soundDef": "#hash_70aa32f249d9e457",
+    "soundDef": "#veh_heli_wz",
     "compassIconMaterial": "#hash_169458fb2df20b0e",
     "lightCollisionRumble": "#veh_collision_light",
     "heavyCollisionRumble": "#veh_collision_heavy",
@@ -53,7 +53,7 @@
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "hash_1c59b497e5ef478f:hash_4be786c9": "localized17#hash_1c59b497e5ef478f",
+                        "menu/aim_down_the_sight:hash_4be786c9": "localized17#menu/aim_down_the_sight",
                         "hash_334a8e60": "left",
                         "prompt": "+speed_throw"
                     }

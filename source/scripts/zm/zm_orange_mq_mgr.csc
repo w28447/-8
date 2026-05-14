@@ -24,7 +24,7 @@ function preload()
     zm_orange_mq_fuse::preload();
     namespace_4b68b2b3::preload();
     zm_orange_mq_sendoff::preload();
-    clientfield::register( "toplayer", "" + #"hash_668f474410d5c1d0", 24000, 1, "int", &clear_hud, 0, 0 );
+    clientfield::register( "toplayer", "" + #"gehen_clear_hud", 24000, 1, "int", &clear_hud, 0, 0 );
 }
 
 // Namespace zm_orange_mq_mgr/zm_orange_mq_mgr

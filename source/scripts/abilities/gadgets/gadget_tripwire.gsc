@@ -934,12 +934,12 @@ function function_9b3a657f( weapon )
     self clientfield::set( "friendlyequip", 1 );
     playfx( #"hash_65c5042becfbaa7d", self.origin );
     
-    if ( isdefined( level.tripwirebundle.var_bb6c29b4 ) && isdefined( weapon ) && weapon == getweapon( #"shock_rifle" ) )
+    if ( isdefined( level.tripwirebundle.shockrifledestructionfx ) && isdefined( weapon ) && weapon == getweapon( #"shock_rifle" ) )
     {
-        playfx( level.tripwirebundle.var_bb6c29b4, self.origin );
+        playfx( level.tripwirebundle.shockrifledestructionfx, self.origin );
     }
     
-    playsoundatposition( #"hash_5a530df2bd2b027c", self.origin );
+    playsoundatposition( #"wpn_tripwire_remove", self.origin );
     self stoploopsound( 0.5 );
     arrayremovevalue( level.tripwires, self );
     var_886bd8dc = self.var_886bd8dc;

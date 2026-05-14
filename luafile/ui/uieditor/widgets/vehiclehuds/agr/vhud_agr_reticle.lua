@@ -93,7 +93,7 @@ CoD.vhud_agr_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local Image0 = LUI.UIImage.new( 0.5, 0.5, 444, 749, 0.5, 0.5, -466, -229 )
 	Image0:setAlpha( 0.15 )
-	Image0:setImage( RegisterImage( 0xE73C388F701F405 ) )
+	Image0:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_agr_reticleoutsidelineblur" ) )
 	Image0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image0 )
 	self.Image0 = Image0
@@ -101,7 +101,7 @@ CoD.vhud_agr_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local Image1 = LUI.UIImage.new( 0.5, 0.5, 444, 749, 0.5, 0.5, 225, 462 )
 	Image1:setAlpha( 0.15 )
 	Image1:setXRot( -180 )
-	Image1:setImage( RegisterImage( 0xE73C388F701F405 ) )
+	Image1:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_agr_reticleoutsidelineblur" ) )
 	Image1:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image1 )
 	self.Image1 = Image1
@@ -109,7 +109,7 @@ CoD.vhud_agr_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local Image2 = LUI.UIImage.new( 0.5, 0.5, -774, -469, 0.5, 0.5, -466, -229 )
 	Image2:setAlpha( 0.15 )
 	Image2:setYRot( 180 )
-	Image2:setImage( RegisterImage( 0xE73C388F701F405 ) )
+	Image2:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_agr_reticleoutsidelineblur" ) )
 	Image2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image2 )
 	self.Image2 = Image2
@@ -118,7 +118,7 @@ CoD.vhud_agr_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	Image3:setAlpha( 0.15 )
 	Image3:setXRot( 180 )
 	Image3:setYRot( 180 )
-	Image3:setImage( RegisterImage( 0xE73C388F701F405 ) )
+	Image3:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_agr_reticleoutsidelineblur" ) )
 	Image3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image3 )
 	self.Image3 = Image3

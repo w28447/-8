@@ -1,7 +1,7 @@
 {
     "name": "#golden_knife_zm",
     "baseWeapon": "#golden_knife",
-    "streamkey": "#hash_bcf0265271ab28c",
+    "streamkey": "#golden_knife_soundbank",
     "worldModelTagRight": "tag_weapon_left",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

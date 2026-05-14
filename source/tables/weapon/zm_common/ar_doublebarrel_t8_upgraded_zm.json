@@ -4,7 +4,7 @@
     "displayname": "#zmweapon/ar_doublebarrel_upgraded",
     "xhash_60": "#hash_63ff9ab521d2252e",
     "weapon70": "#ar_doublebarrel_t8",
-    "streamkey": "#hash_62666bf73aabf9ee",
+    "streamkey": "#ar_doublebarrel_t8_upgraded_soundbank",
     "scrstr_8c8": [
         "tag_camo_darkmatter",
         "tag_camo_diamond"
@@ -66,7 +66,7 @@
     "sound210": "#hash_2b902c34c9ae43f5",
     "sound240": "#hash_5eabe6a258a16f56",
     "sound250": "#hash_430505a2008aefdb",
-    "sound260": "#hash_515f54aa1f553686",
+    "sound260": "#prj_crack_supersonic",
     "sound600": "#hash_209cb2974ae55ec0",
     "sound610": "#hash_209cb2974ae55ec0",
     "sound800": "#hash_5ee962527afebfb1",

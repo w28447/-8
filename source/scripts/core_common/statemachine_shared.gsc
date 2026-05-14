@@ -31,7 +31,7 @@ function create( name, owner, change_notify = "change_state" )
     state_machine.owner.state_machines[ state_machine.name ] = state_machine;
     
     /#
-        owner thread function_acc83382();
+        owner thread debugdrawstate();
     #/
     
     return state_machine;
@@ -352,7 +352,7 @@ function evaluate_connections( eval_func, params )
     // Params 0
     // Checksum 0x41ade5a, Offset: 0xeb0
     // Size: 0x270, Type: dev
-    function function_acc83382()
+    function debugdrawstate()
     {
         owner = self;
         
@@ -366,8 +366,8 @@ function evaluate_connections( eval_func, params )
             return;
         }
         
-        owner notify( #"hash_616497f187c816cf" );
-        owner endon( #"death", #"hash_616497f187c816cf" );
+        owner notify( #"debugdrawstate" );
+        owner endon( #"death", #"debugdrawstate" );
         heightstart = owner getmaxs()[ 2 ];
         
         if ( !isdefined( heightstart ) )

@@ -1,7 +1,7 @@
 {
     "name": "#zitem_white_mmtd_part_2_zm",
     "baseWeapon": "#zitem_white_mmtd_part_2",
-    "streamkey": "#hash_156852ceaf62fcfa",
+    "streamkey": "#zitem_white_mmtd_part_2_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

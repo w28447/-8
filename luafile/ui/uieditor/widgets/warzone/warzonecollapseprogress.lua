@@ -48,7 +48,7 @@ CoD.WarzoneCollapseProgress.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.safeZone = safeZone
 	
 	local playerPosition = LUI.UIImage.new( 0.7, 0.7, -14, 14, 1, 1, -18, 10 )
-	playerPosition:setImage( RegisterImage( 0xB2752BB1791031B ) )
+	playerPosition:setImage( RegisterImage( "ui_icon_global_runningman" ) )
 	playerPosition:subscribeToGlobalModel( f1_arg1, "HUDItems", "distanceFromDeathCircle", function ( model )
 		local f3_local0 = model:get()
 		if f3_local0 ~= nil then

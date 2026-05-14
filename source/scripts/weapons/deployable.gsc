@@ -34,7 +34,7 @@ function __init__()
     
     /#
         level.var_160dcfef.var_193db709 = [];
-        setdvar( #"hash_8d4e58d73e3f876", 0 );
+        setdvar( #"deployable_debug_on", 0 );
     #/
 }
 
@@ -260,7 +260,7 @@ function private function_ab25be55( weapon, sethintstring )
 {
     if ( self isplayerswimming() && !( isdefined( weapon.canuseunderwater ) ? weapon.canuseunderwater : 0 ) )
     {
-        self sethintstring( #"hash_37605398dce96965" );
+        self sethintstring( #"weapon/cant_plant_equipment" );
         return false;
     }
     

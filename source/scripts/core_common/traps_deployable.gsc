@@ -1532,7 +1532,7 @@ function clean_traps( all, skipto = undefined, flag = undefined )
 {
     if ( all )
     {
-        level notify( #"hash_6bd910abadea6345" );
+        level notify( #"traps_clean_all" );
     }
     
     if ( isdefined( skipto ) )
@@ -1611,7 +1611,7 @@ function function_8f66239f( flags )
 // Size: 0x8c
 function function_f6ea9af9( flag )
 {
-    level endon( #"hash_6bd910abadea6345" );
+    level endon( #"traps_clean_all" );
     level notify( "traps_clean" + "_" + flag );
     level endon( "traps_clean" + "_" + flag );
     level flag::wait_till( flag );

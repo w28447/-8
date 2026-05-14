@@ -55,7 +55,7 @@ CoD.AARPaintCansStat.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local PaintCanImage = LUI.UIImage.new( 0, 0, -13, 92, 0, 0, 29, 134 )
 	PaintCanImage:setAlpha( 0 )
-	PaintCanImage:setImage( RegisterImage( 0xB808223FCD4471D ) )
+	PaintCanImage:setImage( RegisterImage( "ui_icon_inventory_spray_can" ) )
 	self:addElement( PaintCanImage )
 	self.PaintCanImage = PaintCanImage
 	

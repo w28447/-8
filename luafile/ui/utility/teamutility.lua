@@ -2,7 +2,7 @@ CoD.TeamUtility = {}
 CoD.TeamUtility.TeamName = {}
 CoD.TeamUtility.TeamName[Enum.team_t[0x97263B3C1ABADF7]] = "mpui/autoassign"
 CoD.TeamUtility.TeamName[Enum.team_t[0xBD65CBD25CCBEDC]] = 0x75AD55270B8D7CE
-CoD.TeamUtility.TeamName[Enum.team_t[0xE4DDAC9C5C45556]] = 0xD6E737E18961BDC
+CoD.TeamUtility.TeamName[Enum.team_t[0xE4DDAC9C5C45556]] = "mpui/shoutcaster"
 if not CoD.isMultiplayer then
 	CoD.TeamUtility.TeamName[Enum.team_t[0xBD65CBD25CCBEDC]] = 0x75AD55270B8D7CE
 	CoD.TeamUtility.TeamName[Enum.team_t[0x855F9A6F0EA0143]] = 0xE283EA5896DD5A6

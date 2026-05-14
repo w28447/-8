@@ -587,13 +587,13 @@ function private function_dad4891b( player_in )
         {
             waitframe( 1 );
             
-            if ( !getdvarint( #"hash_879482f07431cc8", 0 ) )
+            if ( !getdvarint( #"force_zombie_cleanup", 0 ) )
             {
                 continue;
             }
             
             function_367e3573( 1 );
-            setdvar( #"hash_879482f07431cc8", 0 );
+            setdvar( #"force_zombie_cleanup", 0 );
         }
     }
 

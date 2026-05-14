@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_halloweenevent_jack_final",
+    "type": "#tag",
+    "material": "#hash_3cd3ddef7f84bcfc",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_5477be18b90ee6e0",
+        "icon": "image#loot_ui_icon_tags_halloweenevent_jack_final",
+        "isdefault": 0
+    }
+}

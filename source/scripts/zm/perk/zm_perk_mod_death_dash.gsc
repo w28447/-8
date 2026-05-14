@@ -91,7 +91,7 @@ function function_6607df78()
     
     while ( true )
     {
-        self waittill( #"hash_6e2a731bbdb686b8" );
+        self waittill( #"end_death_dash" );
         self clientfield::increment( "death_dash_pulse", 1 );
         self playrumbleonentity( "talon_spike" );
         var_baf7d060 = getaiteamarray( level.zombie_team );

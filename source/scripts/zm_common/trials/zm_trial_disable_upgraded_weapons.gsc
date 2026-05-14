@@ -46,7 +46,7 @@ function private on_begin()
     foreach ( player in getplayers() )
     {
         player function_6a8979c9();
-        player callback::function_33f0ddd3( &function_33f0ddd3 );
+        player callback::on_player_loadout_changed( &on_player_loadout_changed );
         player zm_trial_util::function_7dbb1712( 1 );
         player callback::on_weapon_change( &zm_trial_util::function_79518194 );
     }
@@ -63,7 +63,7 @@ function private on_end( round_reset )
 {
     foreach ( player in getplayers() )
     {
-        player callback::function_824d206( &function_33f0ddd3 );
+        player callback::function_824d206( &on_player_loadout_changed );
         player callback::remove_on_weapon_change( &zm_trial_util::function_79518194 );
         
         foreach ( weapon in player getweaponslist( 1 ) )
@@ -98,7 +98,7 @@ function is_active()
 // Params 1, eflags: 0x4
 // Checksum 0x45195f85, Offset: 0x538
 // Size: 0x24
-function private function_33f0ddd3( eventstruct )
+function private on_player_loadout_changed( eventstruct )
 {
     self function_6a8979c9();
 }

@@ -21,7 +21,7 @@ function autoexec __init__system__()
 // Size: 0x10c
 function __init__()
 {
-    clientfield::register( "actor", "nova_crawler_burst_clientfield", 1, 1, "int", &function_d8505ab6, 0, 0 );
+    clientfield::register( "actor", "nova_crawler_burst_clientfield", 1, 1, "int", &nova_crawler_burst_fx, 0, 0 );
     clientfield::register( "toplayer", "nova_crawler_burst_postfx_clientfield", 1, 1, "int", &function_c81db9a1, 0, 0 );
     clientfield::register( "toplayer", "nova_crawler_gas_cloud_postfx_clientfield", 1, 1, "int", &function_f8947dfe, 0, 0 );
     ai::add_archetype_spawn_function( #"nova_crawler", &function_1d34f2b6 );
@@ -36,7 +36,7 @@ function private function_1d34f2b6( localclientnum )
     if ( !isdefined( self._effect ) )
     {
         self._effect = [];
-        self._effect[ #"hash_219e13e8868d7af4" ] = "zm_ai/fx8_nova_crawler_gas_release";
+        self._effect[ #"nova_crawler_burst_fx" ] = "zm_ai/fx8_nova_crawler_gas_release";
     }
 }
 
@@ -44,11 +44,11 @@ function private function_1d34f2b6( localclientnum )
 // Params 7
 // Checksum 0x8af857d6, Offset: 0x308
 // Size: 0xb4
-function function_d8505ab6( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
+function nova_crawler_burst_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
-    if ( newval == 1 && isdefined( self._effect ) && isdefined( self._effect[ #"hash_219e13e8868d7af4" ] ) )
+    if ( newval == 1 && isdefined( self._effect ) && isdefined( self._effect[ #"nova_crawler_burst_fx" ] ) )
     {
-        playfx( localclientnum, self._effect[ #"hash_219e13e8868d7af4" ], self.origin );
+        playfx( localclientnum, self._effect[ #"nova_crawler_burst_fx" ], self.origin );
     }
 }
 

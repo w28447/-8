@@ -299,7 +299,7 @@ function function_fa03fc55()
 function function_d2845186()
 {
     level endon( #"hash_699329b4df616aed" );
-    level waittill( #"hash_4c62fe02843b1a98" );
+    level waittill( #"draft_game_start" );
     
     if ( isdefined( level.var_e92a00d3 ) )
     {
@@ -409,7 +409,7 @@ function function_1e84c767()
     function_9a022fbc( "close" );
     
     /#
-        level.var_63c19b1b = getdvarint( #"hash_6c85efe41dc0fd26", 0 ) == 1;
+        level.var_63c19b1b = getdvarint( #"scr_skip_ct_tutorial", 0 ) == 1;
     #/
     
     if ( !( isdefined( level.var_63c19b1b ) && level.var_63c19b1b ) )
@@ -493,7 +493,7 @@ function function_a217c7b4( b_success )
     e_player = getplayers( #"allies" )[ 0 ];
     e_player ct_ui::function_fa910e34( b_success, var_cd803a6b );
     level notify( #"hash_6731a3e5cccf7357" );
-    level notify( #"hash_42057c28bd084d77" );
+    level notify( #"destroysites_reset" );
 }
 
 // Namespace ct_core/ct_core

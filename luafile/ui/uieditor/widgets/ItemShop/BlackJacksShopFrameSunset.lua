@@ -178,7 +178,7 @@ CoD.BlackJacksShopFrameSunset.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 		end
 	end, function ( f19_arg0, f19_arg1, f19_arg2 )
 		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f19_arg0, f19_arg2, "movieName" ) and IsGamepad( f19_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f19_arg0, f19_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f19_arg0, f19_arg2, "revealed" ) then
-			CoD.Menu.SetButtonLabel( f19_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x52FB29ED3A3CA79, nil, nil )
+			CoD.Menu.SetButtonLabel( f19_arg1, Enum.LUIButton[0xC083113BC81F23F], "menu/preview", nil, nil )
 			return true
 		else
 			return false
@@ -197,7 +197,7 @@ CoD.BlackJacksShopFrameSunset.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 		end
 	end, function ( f21_arg0, f21_arg1, f21_arg2 )
 		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f21_arg0, f21_arg2, "movieName" ) and IsMouseOrKeyboard( f21_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f21_arg0, f21_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f21_arg0, f21_arg2, "revealed" ) then
-			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0xA86619565BE54DB], 0x52FB29ED3A3CA79, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0xA86619565BE54DB], "menu/preview", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
@@ -250,7 +250,7 @@ CoD.BlackJacksShopFrameSunset.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 			CoD.GridAndListUtility.UpdateDataSource( f29_local0, true, true, true )
 		end
 	end )
-	RNGItemSlot:AddContextualMenuAction( f1_arg0, f1_arg1, 0x52FB29ED3A3CA79, function ( f30_arg0, f30_arg1, f30_arg2, f30_arg3 )
+	RNGItemSlot:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/preview", function ( f30_arg0, f30_arg1, f30_arg2, f30_arg3 )
 		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f30_arg0, f30_arg2, "movieName" ) then
 			return function ( f31_arg0, f31_arg1, f31_arg2, f31_arg3 )
 				SetControllerModelValue( f31_arg2, "LootStreamProgress.playAnimation", false )
@@ -385,7 +385,7 @@ CoD.BlackJacksShopFrameSunset.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 		end
 	end, function ( f45_arg0, f45_arg1, f45_arg2 )
 		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f45_arg0, f45_arg2, "movieName" ) and IsGamepad( f45_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f45_arg0, f45_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f45_arg0, f45_arg2, "revealed" ) then
-			CoD.Menu.SetButtonLabel( f45_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x52FB29ED3A3CA79, nil, nil )
+			CoD.Menu.SetButtonLabel( f45_arg1, Enum.LUIButton[0xC083113BC81F23F], "menu/preview", nil, nil )
 			return true
 		else
 			return false
@@ -404,7 +404,7 @@ CoD.BlackJacksShopFrameSunset.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 		end
 	end, function ( f47_arg0, f47_arg1, f47_arg2 )
 		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f47_arg0, f47_arg2, "movieName" ) and IsMouseOrKeyboard( f47_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f47_arg0, f47_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f47_arg0, f47_arg2, "revealed" ) then
-			CoD.Menu.SetButtonLabel( f47_arg1, Enum.LUIButton[0xA86619565BE54DB], 0x52FB29ED3A3CA79, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+			CoD.Menu.SetButtonLabel( f47_arg1, Enum.LUIButton[0xA86619565BE54DB], "menu/preview", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
@@ -457,7 +457,7 @@ CoD.BlackJacksShopFrameSunset.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 			CoD.GridAndListUtility.UpdateDataSource( f55_local0, true, true, true )
 		end
 	end )
-	DeterministicItemSlot2:AddContextualMenuAction( f1_arg0, f1_arg1, 0x52FB29ED3A3CA79, function ( f56_arg0, f56_arg1, f56_arg2, f56_arg3 )
+	DeterministicItemSlot2:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/preview", function ( f56_arg0, f56_arg1, f56_arg2, f56_arg3 )
 		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f56_arg0, f56_arg2, "movieName" ) then
 			return function ( f57_arg0, f57_arg1, f57_arg2, f57_arg3 )
 				SetControllerModelValue( f57_arg2, "LootStreamProgress.playAnimation", false )
@@ -592,7 +592,7 @@ CoD.BlackJacksShopFrameSunset.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 		end
 	end, function ( f71_arg0, f71_arg1, f71_arg2 )
 		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f71_arg0, f71_arg2, "movieName" ) and IsGamepad( f71_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f71_arg0, f71_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f71_arg0, f71_arg2, "revealed" ) then
-			CoD.Menu.SetButtonLabel( f71_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x52FB29ED3A3CA79, nil, nil )
+			CoD.Menu.SetButtonLabel( f71_arg1, Enum.LUIButton[0xC083113BC81F23F], "menu/preview", nil, nil )
 			return true
 		else
 			return false
@@ -611,7 +611,7 @@ CoD.BlackJacksShopFrameSunset.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 		end
 	end, function ( f73_arg0, f73_arg1, f73_arg2 )
 		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f73_arg0, f73_arg2, "movieName" ) and IsMouseOrKeyboard( f73_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f73_arg0, f73_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f73_arg0, f73_arg2, "revealed" ) then
-			CoD.Menu.SetButtonLabel( f73_arg1, Enum.LUIButton[0xA86619565BE54DB], 0x52FB29ED3A3CA79, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+			CoD.Menu.SetButtonLabel( f73_arg1, Enum.LUIButton[0xA86619565BE54DB], "menu/preview", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
@@ -664,7 +664,7 @@ CoD.BlackJacksShopFrameSunset.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 			CoD.GridAndListUtility.UpdateDataSource( f81_local0, true, true, true )
 		end
 	end )
-	DeterministicItemSlot1:AddContextualMenuAction( f1_arg0, f1_arg1, 0x52FB29ED3A3CA79, function ( f82_arg0, f82_arg1, f82_arg2, f82_arg3 )
+	DeterministicItemSlot1:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/preview", function ( f82_arg0, f82_arg1, f82_arg2, f82_arg3 )
 		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f82_arg0, f82_arg2, "movieName" ) then
 			return function ( f83_arg0, f83_arg1, f83_arg2, f83_arg3 )
 				SetControllerModelValue( f83_arg2, "LootStreamProgress.playAnimation", false )

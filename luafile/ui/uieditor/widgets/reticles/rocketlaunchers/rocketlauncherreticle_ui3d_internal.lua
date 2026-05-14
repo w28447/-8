@@ -22,7 +22,7 @@ CoD.rocketLauncherReticle_UI3D_Internal.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local reticle = LUI.UIImage.new( 0, 0, 12, 762, 0, 0, 90, 649 )
 	reticle:setRGB( 0.64, 1, 0.81 )
-	reticle:setImage( RegisterImage( 0xFFC4F3156666395 ) )
+	reticle:setImage( RegisterImage( "uie_t7_hud_launcher_mainreticle" ) )
 	self:addElement( reticle )
 	self.reticle = reticle
 	

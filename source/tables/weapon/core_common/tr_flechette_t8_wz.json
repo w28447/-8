@@ -4,7 +4,7 @@
     "displayname": "#weapon/tr_flechette_t8",
     "xhash_60": "#hash_69383a7f98eebd1c",
     "weapon70": "#tr_flechette_t8",
-    "streamkey": "#hash_a89773e580ffb3b",
+    "streamkey": "#tr_flechette_t8_soundbank",
     "scrstr_8c8": [
         "tag_sights",
         "tag_clan_tag",
@@ -57,15 +57,15 @@
     ],
     "sound90": "#hash_62f37f9672d626e5",
     "firesounddistant": "#hash_56369e9a0553981f",
-    "firesound": "#hash_1a864f972fff5d11",
-    "firesoundplayer": "#hash_7f677c96d85c8ef8",
-    "sound1d0": "#hash_42947c781e8d48ec",
+    "firesound": "#wpn_tr_flechette_fire_npc",
+    "firesoundplayer": "#wpn_tr_flechette_fire_plr",
+    "sound1d0": "#wpn_tr_powersemi_fire_npc",
     "sound1e0": "#hash_66dc17c6260010db",
-    "sound200": "#hash_3ea9cf778b50c1ad",
+    "sound200": "#wpn_tr_powersemi_fire_plr",
     "sound210": "#hash_271370c5b9078536",
     "sound240": "#hash_683733eab40de48b",
     "sound250": "#hash_3ee3cceae529ba86",
-    "sound260": "#hash_515f54aa1f553686",
+    "sound260": "#prj_crack_supersonic",
     "sound600": "#hash_209cb2974ae55ec0",
     "sound610": "#hash_209cb2974ae55ec0",
     "sound800": "#hash_5ee962527afebfb1",
@@ -78,7 +78,7 @@
     "attachments": [
         "#hash_f459a0af8e8f912b",
         "#acog_wz",
-        "#hash_6bd994daaf35e844"
+        "#adsreload_wz"
     ],
     "attachmentUniques": [
         "#hash_113f2da1ebf727df",
@@ -123,10 +123,10 @@
     "fx_c90": "#hash_83613e307817774e",
     "fx_c98": "#hash_83613e307817774e",
     "fx_f00": "#hash_611c104f1f9c8dbc",
-    "normalImpactFX": "#hash_11a47eea24a8f26",
+    "normalImpactFX": "#flechette_enter",
     "exitImpactFX": "#bullet_large_exit",
-    "bounceImpactFX": "#hash_11a47eea24a8f26",
+    "bounceImpactFX": "#flechette_enter",
     "normalImpactSounds": "#bullet_impact",
     "exitImpactSounds": "#bullet_exit",
-    "bounceImpactSounds": "#hash_415fba9edcdfd2e4"
+    "bounceImpactSounds": "#shotgun_impact"
 }

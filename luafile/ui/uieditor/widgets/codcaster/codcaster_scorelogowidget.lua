@@ -9,7 +9,7 @@ CoD.codcaster_ScoreLogoWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local teamcolor = LUI.UIImage.new( 0.5, 0.5, -157.5, 157.5, 0, 0, 0, 98 )
-	teamcolor:setImage( RegisterImage( 0x23D16DB74116F90 ) )
+	teamcolor:setImage( RegisterImage( "uie_t7_codcaster_colorback" ) )
 	self:addElement( teamcolor )
 	self.teamcolor = teamcolor
 	
@@ -32,7 +32,7 @@ CoD.codcaster_ScoreLogoWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.logotopRight = logotopRight
 	
 	local numberbacking = LUI.UIImage.new( 0, 0, 2, 138, 0, 0, 2, 101 )
-	numberbacking:setImage( RegisterImage( 0x6CDBC64E321582 ) )
+	numberbacking:setImage( RegisterImage( "uie_t7_codcaster_numberbacking" ) )
 	self:addElement( numberbacking )
 	self.numberbacking = numberbacking
 	

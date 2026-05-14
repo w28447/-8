@@ -1,4 +1,4 @@
-#using script_59a783d756554a80;
+#using scripts\zm\zm_office_vo_hooks.gsc;
 #using scripts\core_common\ai\zombie_utility;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\callbacks_shared;
@@ -300,7 +300,7 @@ function function_6b3512d()
     
     level flag::wait_till( #"hash_429b6157c77015a2" );
     callback::remove_on_ai_killed( &function_8c040be2 );
-    e_player = namespace_8f53e87b::function_d62aaf66();
+    e_player = zm_office_vo_hooks::function_d62aaf66();
     
     if ( isdefined( e_player ) )
     {
@@ -408,7 +408,7 @@ function function_2ce54724()
 {
     while ( level.var_4b9c09fd > 0 )
     {
-        level flag::wait_till_clear( #"hash_26e9fe6561459de3" );
+        level flag::wait_till_clear( #"in_groom_lake" );
         wait 0.1;
     }
     

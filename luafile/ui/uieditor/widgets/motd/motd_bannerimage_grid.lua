@@ -9,84 +9,84 @@ CoD.MOTD_BannerImage_Grid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local plus08 = LUI.UIImage.new( 0, 0, 1689.5, 1705.5, 0, 0, 531, 547 )
 	plus08:setAlpha( 0.1 )
-	plus08:setImage( RegisterImage( 0x6B407AF1C17CF78 ) )
+	plus08:setImage( RegisterImage( "uie_ui_menu_store_bg_plus" ) )
 	plus08:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( plus08 )
 	self.plus08 = plus08
 	
 	local plus07 = LUI.UIImage.new( 0, 0, 1341.5, 1357.5, 0, 0, 532, 548 )
 	plus07:setAlpha( 0.1 )
-	plus07:setImage( RegisterImage( 0x6B407AF1C17CF78 ) )
+	plus07:setImage( RegisterImage( "uie_ui_menu_store_bg_plus" ) )
 	plus07:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( plus07 )
 	self.plus07 = plus07
 	
 	local plus06 = LUI.UIImage.new( 0, 0, 985.5, 1001.5, 0, 0, 532, 548 )
 	plus06:setAlpha( 0.1 )
-	plus06:setImage( RegisterImage( 0x6B407AF1C17CF78 ) )
+	plus06:setImage( RegisterImage( "uie_ui_menu_store_bg_plus" ) )
 	plus06:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( plus06 )
 	self.plus06 = plus06
 	
 	local plus05 = LUI.UIImage.new( 0, 0, 621.5, 637.5, 0, 0, 532, 548 )
 	plus05:setAlpha( 0.1 )
-	plus05:setImage( RegisterImage( 0x6B407AF1C17CF78 ) )
+	plus05:setImage( RegisterImage( "uie_ui_menu_store_bg_plus" ) )
 	plus05:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( plus05 )
 	self.plus05 = plus05
 	
 	local plus02 = LUI.UIImage.new( 0, 0, 985.5, 1001.5, 0, 0, 176, 192 )
 	plus02:setAlpha( 0.1 )
-	plus02:setImage( RegisterImage( 0x6B407AF1C17CF78 ) )
+	plus02:setImage( RegisterImage( "uie_ui_menu_store_bg_plus" ) )
 	plus02:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( plus02 )
 	self.plus02 = plus02
 	
 	local plus01 = LUI.UIImage.new( 0, 0, 621.5, 637.5, 0, 0, 176, 192 )
 	plus01:setAlpha( 0.1 )
-	plus01:setImage( RegisterImage( 0x6B407AF1C17CF78 ) )
+	plus01:setImage( RegisterImage( "uie_ui_menu_store_bg_plus" ) )
 	plus01:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( plus01 )
 	self.plus01 = plus01
 	
 	local plus03 = LUI.UIImage.new( 0, 0, 1341.5, 1357.5, 0, 0, 176, 192 )
 	plus03:setAlpha( 0.1 )
-	plus03:setImage( RegisterImage( 0x6B407AF1C17CF78 ) )
+	plus03:setImage( RegisterImage( "uie_ui_menu_store_bg_plus" ) )
 	plus03:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( plus03 )
 	self.plus03 = plus03
 	
 	local plus04 = LUI.UIImage.new( 0, 0, 1689.5, 1705.5, 0, 0, 176, 192 )
 	plus04:setAlpha( 0.1 )
-	plus04:setImage( RegisterImage( 0x6B407AF1C17CF78 ) )
+	plus04:setImage( RegisterImage( "uie_ui_menu_store_bg_plus" ) )
 	plus04:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( plus04 )
 	self.plus04 = plus04
 	
 	local plus11 = LUI.UIImage.new( 0, 0, 1341.5, 1357.5, 0, 0, 888, 904 )
 	plus11:setAlpha( 0.1 )
-	plus11:setImage( RegisterImage( 0x6B407AF1C17CF78 ) )
+	plus11:setImage( RegisterImage( "uie_ui_menu_store_bg_plus" ) )
 	plus11:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( plus11 )
 	self.plus11 = plus11
 	
 	local plus10 = LUI.UIImage.new( 0, 0, 985.5, 1001.5, 0, 0, 888, 904 )
 	plus10:setAlpha( 0.1 )
-	plus10:setImage( RegisterImage( 0x6B407AF1C17CF78 ) )
+	plus10:setImage( RegisterImage( "uie_ui_menu_store_bg_plus" ) )
 	plus10:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( plus10 )
 	self.plus10 = plus10
 	
 	local plus12 = LUI.UIImage.new( 0, 0, 1689.5, 1705.5, 0, 0, 888, 904 )
 	plus12:setAlpha( 0.1 )
-	plus12:setImage( RegisterImage( 0x6B407AF1C17CF78 ) )
+	plus12:setImage( RegisterImage( "uie_ui_menu_store_bg_plus" ) )
 	plus12:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( plus12 )
 	self.plus12 = plus12
 	
 	local plus09 = LUI.UIImage.new( 0, 0, 621.5, 637.5, 0, 0, 888, 904 )
 	plus09:setAlpha( 0.1 )
-	plus09:setImage( RegisterImage( 0x6B407AF1C17CF78 ) )
+	plus09:setImage( RegisterImage( "uie_ui_menu_store_bg_plus" ) )
 	plus09:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( plus09 )
 	self.plus09 = plus09

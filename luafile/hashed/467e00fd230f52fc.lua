@@ -70,7 +70,7 @@ CoD.bleedOutHealthWZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local CWOicon = LUI.UIImage.new( 0.5, 0.5, -60, 60, 0.5, 0.5, -88, 32 )
 	CWOicon:setAlpha( 0 )
-	CWOicon:setImage( RegisterImage( 0xC33BF43013D5A1 ) )
+	CWOicon:setImage( RegisterImage( "uie_ui_hud_wz_hud_cwo_icon" ) )
 	self:addElement( CWOicon )
 	self.CWOicon = CWOicon
 	

@@ -38,7 +38,7 @@ CoD[0x3890464C4936BF0].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.LightSpin2 = LightSpin2
 	
 	local bgCover = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	bgCover:setImage( RegisterImage( 0x24A3B8D35D9220E ) )
+	bgCover:setImage( RegisterImage( "uie_ui_icon_callingcards_marksman_master_background_cover" ) )
 	self:addElement( bgCover )
 	self.bgCover = bgCover
 	

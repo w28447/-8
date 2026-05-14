@@ -129,7 +129,7 @@ function function_7be1ea25()
             var_cfa5f67b = -2147483647;
             trace = bullettrace( ( x, y, var_bfd46ccc ), ( x, y, var_cfa5f67b ), 0, self, 1 );
             position = trace[ #"position" ];
-            objective_add( localclientnum, obj_id, "active", #"hash_4d290db83b852838", position, #"none", waitresult.clientnum );
+            objective_add( localclientnum, obj_id, "active", #"teammate_waypoint_infil", position, #"none", waitresult.clientnum );
             level thread function_97d0a8af( localclientnum, obj_id, x, y, waitresult.clientnum );
         }
         
@@ -416,7 +416,7 @@ function function_a1aaf8c0()
     
     while ( isdefined( self ) )
     {
-        waitresult = level waittill( #"hash_5af34d08eac79f88" );
+        waitresult = level waittill( #"teammateindex_change" );
         function_2dba6c5( waitresult.localclientnum, waitresult.teammateindex );
     }
 }

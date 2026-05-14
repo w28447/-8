@@ -19,7 +19,7 @@ LUI.createMenu.EmblemEditorMaterialPicker = function ( f1_arg0, f1_arg1 )
 	f1_local1:addElementToPendingUpdateStateList( self )
 	
 	local Background = LUI.UIImage.new( 0, 1, 3, 3, 0.5, 1.5, -540, -540 )
-	Background:setImage( RegisterImage( 0xEF427A6CB5D6885 ) )
+	Background:setImage( RegisterImage( "uie_t7_mp_menu_cac_version6_backdrop720p" ) )
 	self:addElement( Background )
 	self.Background = Background
 	

@@ -333,9 +333,9 @@ function function_5a1bf101( localclientnum )
     
     if ( isdefined( bundle ) )
     {
-        var_59d4144b = isdefined( bundle.var_59d4144b ) ? bundle.var_59d4144b : 0.5;
-        var_e7c561e2 = isdefined( bundle.var_e7c561e2 ) ? bundle.var_e7c561e2 : 0.3;
-        var_98977cea = isdefined( bundle.var_98977cea ) ? bundle.var_98977cea : 2;
+        lockon_base_scale = isdefined( bundle.lockon_base_scale ) ? bundle.lockon_base_scale : 0.5;
+        lockon_min_scale = isdefined( bundle.lockon_min_scale ) ? bundle.lockon_min_scale : 0.3;
+        lockon_max_scale = isdefined( bundle.lockon_max_scale ) ? bundle.lockon_max_scale : 2;
     }
     
     var_ebf5b862 = [];
@@ -385,9 +385,9 @@ function function_5a1bf101( localclientnum )
         /#
             if ( isdefined( bundle ) )
             {
-                var_59d4144b = isdefined( bundle.var_59d4144b ) ? bundle.var_59d4144b : 0.5;
-                var_e7c561e2 = isdefined( bundle.var_e7c561e2 ) ? bundle.var_e7c561e2 : 0.3;
-                var_98977cea = isdefined( bundle.var_98977cea ) ? bundle.var_98977cea : 2;
+                lockon_base_scale = isdefined( bundle.lockon_base_scale ) ? bundle.lockon_base_scale : 0.5;
+                lockon_min_scale = isdefined( bundle.lockon_min_scale ) ? bundle.lockon_min_scale : 0.3;
+                lockon_max_scale = isdefined( bundle.lockon_max_scale ) ? bundle.lockon_max_scale : 2;
             }
         #/
         
@@ -429,9 +429,9 @@ function function_5a1bf101( localclientnum )
             screen_origin = project3dto2d( localclientnum, target_player.origin );
             var_20a99afd = project3dto2d( localclientnum, target_player.origin + ( 0, 0, 60 ) );
             screen_height = distance2d( screen_origin, var_20a99afd );
-            var_fcd926d5 = var_59d4144b * screen_height / 60;
-            var_fcd926d5 = math::clamp( var_fcd926d5, var_e7c561e2, var_98977cea );
-            setuimodelvalue( var_1f3cc5f9[ ti ], var_fcd926d5 );
+            lockon_scale = lockon_base_scale * screen_height / 60;
+            lockon_scale = math::clamp( lockon_scale, lockon_min_scale, lockon_max_scale );
+            setuimodelvalue( var_1f3cc5f9[ ti ], lockon_scale );
             cooldown_time = now - var_6c8b920a[ ti ];
             
             if ( var_14569a7a < 1 || cooldown_time > 200 )

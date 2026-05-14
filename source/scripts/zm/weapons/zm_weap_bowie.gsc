@@ -46,7 +46,7 @@ function private __main__()
     }
     else
     {
-        prompt = #"hash_60606b68e93a29c8";
+        prompt = #"zombie/weaponcostonly_cfill";
     }
     
     level.str_bowie_knife = "bowie_knife";

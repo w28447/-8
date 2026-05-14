@@ -1,6 +1,6 @@
 type,name
 streamerworld,#hash_118a5d7f55996c4d
-physpreset,#hash_8e5ab17b8353d20
+physpreset,#physpreset_mirror
 physpreset,#water_cooler_bottle
 physpreset,#can_small
 physpreset,d#metal_tray
@@ -39,7 +39,7 @@ physconstraints,#hash_4a6cbcf01931b6cb
 physconstraints,#hash_57a376b93726c748
 physconstraints,#veh_t7_door_r_front_hinge_pc
 physconstraints,#hash_5ac5322264127716
-physconstraints,#hash_64c3ce1d1b1cbef5
+physconstraints,#phc_veh_mphd_car_compact
 physconstraints,#hash_66e387038a8b3063
 physconstraints,#citycar_launch_license
 physconstraints,#hash_71b9066a97244996
@@ -5432,7 +5432,7 @@ image,#i_mtl_p7_ac_unit_med_n
 image,#i_mtl_p7_ac_unit_med_o
 image,d#i_t8_micro_concrete_cinderblock_01_n
 image,#i_t8_micro_concrete_cinderblock_01_c
-image,#hash_1711f5eb40a3d1b9
+image,#plaster_wall_white_c
 image,#i_mtl_p7_wires_electrical_s
 image,#i_mtl_p7_wires_electrical_c
 image,#i_mtl_p7_wires_electrical_g
@@ -7232,8 +7232,8 @@ image,#i_p8_mp_bomb_crate_whole_destroyed_trim_r
 image,#i_t7_concrete_floor_broken_01_n
 image,#i_t7_concrete_floor_broken_01_c
 image,#i_t7_concrete_floor_broken_01_r
-image,#hash_463941434970c772
-image,#hash_463946434970cff1
+image,#i_door_wood_window_green_c
+image,#i_door_wood_window_green_n
 image,#i_mtl_p7_corrugated_sheet_metal_rust_dmg_01_proxy_depth
 image,#i_c_gen_reveal_512_rec_horiz_r
 image,#hash_467d4b757b8c42a8
@@ -9334,8 +9334,8 @@ image,d#i_wpn_t8_eqp_briefcase_bomb_glass_c
 image,d#i_wpn_t8_eqp_briefcase_bomb_glass_s
 image,#i_t7_metal_rust_ceiling_01_n
 image,#hash_7ff0795ae24e93cf
-streamkey,#hash_4d363ef8fcf4ff02
-streamkey,#hash_5276e052de0c9703
+streamkey,#mp_slums2_all_stream
+streamkey,#mp_slums2_all_loaded
 streamkey,#hash_255a327dbd691a48
 streamkey,#hash_78e8b30008a87565
 sound,#mp_slums2.all
@@ -9414,7 +9414,7 @@ surfacesounddef,d#hash_3d9213dabaf08c81
 surfacesounddef,#hash_4aac53656d2ff9bc
 surfacesounddef,d#hash_5d772ccdaa011a7f
 surfacesounddef,d#hash_68ba3f82b9e9d979
-surfacesounddef,#hash_6a9264c7627e1b73
+surfacesounddef,#phy_glass_bottle_sounddef
 surfacesounddef,#hash_77789965ad08507e
 surfacesounddef,d#hash_7ada1cf9d8035750
 sanim,#p8_fxanim_gp_foliage_distictis_hanging_ledge_32_s2_sanim
@@ -9491,7 +9491,7 @@ cpu_occlusion_data,#maps/mp/mp_slums2.d3dbsp
 image,#terrain_cutout_maps_default
 terraingfx,#maps/mp/mp_slums2.d3dbsp
 streamkey,#hash_35ca1ade077fa71b
-streamkey,#hash_379bc284d48f0d7c
+streamkey,#mp_slums2_sst_0_0
 streamkey,#hash_4273074efc80ea57
 material,#wc/t7_decal_damage_concrete_cracks_01_dark
 material,#hash_d9db9040fb066
@@ -11668,7 +11668,7 @@ material,#mc/mtl_p7_slu_wire_plastic_02
 material,#mc/mtl_p7_slu_wire_plastic_01
 material,#hash_4c3ae759114441e4
 material,#wc/t7_decal_damage_concrete_trim_01
-material,#hash_4c4b713a91095564
+material,#clt/global_invisible
 material,#vd/t7_mud_footprints_blend
 material,#mc/mtl_p7_slu_vent_panel_blot
 material,#hash_4c54890d824c2f5f
@@ -13035,13 +13035,13 @@ material,#wc/t7_hey_wood_plank_wide_01_wet
 material,#mc/mtl_p7_eth_rock_boulder_large_01_moss_down
 fx,#hash_5a7dd24793c648e4
 fx,#hash_74be9d36ffef06f9
-impactsoundstable,#hash_d698a0c5be3e240
-impactsoundstable,d#hash_1f8c37cb2cf6c55c
-impactsoundstable,d#hash_368fb7ec6eff7aa6
-impactsoundstable,#hash_3c179f6b071380af
+impactsoundstable,#phy_glass_bottle
+impactsoundstable,d#phy_rock_small
+impactsoundstable,d#phy_plastic_bucket
+impactsoundstable,#phy_plastic_small
 impactsoundstable,d#phy_cardboard
 impactsoundstable,d#hash_581e7127a50d1b3e
-impactsoundstable,d#hash_695bd5aa13e21e64
+impactsoundstable,d#phy_metal_pan
 impactsoundstable,#phy_fruit
 maptableentrylevelassets,#mp_slums2
 physpreset,#p7_bucket_plastic_5_gal_closed_green
@@ -13870,7 +13870,7 @@ fx,#hash_7b2e4176bb94d5e8
 fx,#hash_7eed6644a26d4433
 xanim,#p7_fxanim_gp_wire_sparking_med_thick_anim
 xmodel,#p7_slu_bucket_plastic_white_sml_row
-xmodel,#hash_30596043f0babf3
+xmodel,#veh_mphd_van_dest_red
 xmodel,#p7_slu_foliage_dandelion_weed_seeds
 xmodel,#p7_debris_trash_fabsoft_01
 xmodel,#veh_mphd_van_red
@@ -13883,7 +13883,7 @@ xmodel,#hash_11897e706157caaf
 xmodel,#p7_ceramic_tile_shower_loose_01_red
 xmodel,#hash_1398039d5ae3972c
 xmodel,#p7_food_fruit_banana_bunch_dmg_01a
-xmodel,#hash_1498c9af6a4b8fc8
+xmodel,#veh_mphd_van_dest_blue
 xmodel,#p7_bottle_plastic_shampoo02_dmg
 xmodel,#hash_1663d3c1c15f0aa2
 xmodel,#p7_bottle_plastic_2litre_cola_dmg

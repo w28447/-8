@@ -589,7 +589,7 @@ LUI.createMenu.Director = function ( f1_arg0, f1_arg1 )
 		end
 	end, function ( f48_arg0, f48_arg1, f48_arg2 )
 		if not IsPC() and not IsLAN() and not IsPlayerAGuest( f48_arg2 ) and IsPlayerAllowedToPlayOnline( f48_arg2 ) and not CoD.DirectorUtility.IsSocialButtonDisabledForDemo( f48_arg2 ) and not CoD.DirectorUtility.ShowDirectorTraining( f48_arg2 ) then
-			CoD.Menu.SetButtonLabel( f48_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x478E0BA47CFB4A8, nil, nil )
+			CoD.Menu.SetButtonLabel( f48_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "menu/social", nil, nil )
 			return true
 		elseif CoD.DirectorUtility.ShowDirectorSelect( f48_arg2 ) and IsPC() and not IsLAN() then
 			CoD.Menu.SetButtonLabel( f48_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x0, nil, nil )

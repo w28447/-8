@@ -19,7 +19,7 @@ CoD.vhud_agr_internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local Vignette = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Vignette:setAlpha( 0.85 )
-	Vignette:setImage( RegisterImage( 0xC4A3981E8245142 ) )
+	Vignette:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_agr_textureoverlayvignette" ) )
 	self:addElement( Vignette )
 	self.Vignette = Vignette
 	

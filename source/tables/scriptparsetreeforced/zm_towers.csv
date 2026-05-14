@@ -19,7 +19,7 @@ server,#scripts/core_common/ai/zombie.gsc
 server,#scripts/core_common/ai/archetype_elephant.gsc
 server,#scripts/core_common/ai/archetype_blight_father_interface.gsc
 server,#scripts/core_common/ai/archetype_catalyst_interface.gsc
-server,#script_67e37e63e177f107
+server,#scripts\core_common\vehicles\elephant_dust_ball.gsc
 server,#scripts/zm/ai/zm_ai_blight_father.gsc
 client,#scripts/core_common/ai/archetype_elephant.csc
 client,#scripts/zm/weapons/zm_weap_crossbow.csc
@@ -32,5 +32,5 @@ client,#scripts/core_common/ai/archetype_blight_father.csc
 client,#scripts/core_common/ai/archetype_catalyst.csc
 client,#scripts/zm/ai/zm_ai_catalyst.csc
 client,#scripts/core_common/ai/zombie.csc
-client,#script_bcfea63f62d87d3
+client,#scripts\core_common\vehicles\elephant_dust_ball.csc
 client,#scripts/zm/ai/zm_ai_blight_father.csc

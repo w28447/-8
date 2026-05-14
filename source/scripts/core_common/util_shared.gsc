@@ -3609,7 +3609,7 @@ function auto_delete( n_mode = 1, n_min_time_alive = 0, n_dist_horizontal = 0, n
         return;
     }
     
-    self endon( #"death", #"hash_375a9d48dd6a9427" );
+    self endon( #"death", #"cancel_auto_delete" );
     self notify( #"__auto_delete__" );
     self endon( #"__auto_delete__" );
     level flag::wait_till( "all_players_spawned" );
@@ -5978,7 +5978,7 @@ function is_spectating()
 function function_8570168d()
 {
     /#
-        if ( getdvar( #"hash_49e94b7aefac4f49", 0 ) )
+        if ( getdvar( #"ui_simulatect", 0 ) )
         {
             return true;
         }

@@ -25,7 +25,7 @@ CoD.RiotShieldHealth.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	self.TutorialHighlight = TutorialHighlight
 	
 	local ShieldIcon = LUI.UIImage.new( 0, 0, -13.5, 88.5, 0, 0, -12, 90 )
-	ShieldIcon:setImage( RegisterImage( CoD.ZombieUtility.GetShieldIconForCurrentMap( 0x43B28F6F4ED2E47 ) ) )
+	ShieldIcon:setImage( RegisterImage( CoD.ZombieUtility.GetShieldIconForCurrentMap( "ui_icon_weapons_zm_riot_shield_health" ) ) )
 	self:addElement( ShieldIcon )
 	self.ShieldIcon = ShieldIcon
 	

@@ -84,7 +84,7 @@ CoD.StartMenu_Barracks.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.Leaderboards = Leaderboards
 	
 	ProgressUnlocks = CoD.StartMenu_Button_LG.new( f1_arg0, f1_arg1, 0.5, 0.5, -324.5, 322.5, 0.5, 0.5, -336.5, 44.5 )
-	ProgressUnlocks.ButtonInternal.ImageContainer.ImageContainer:setImage( RegisterImage( 0xCB7B28E1ED13921 ) )
+	ProgressUnlocks.ButtonInternal.ImageContainer.ImageContainer:setImage( RegisterImage( "uie_ui_menu_start_menu_grid" ) )
 	ProgressUnlocks.ButtonInternal.StartMenuButtonFrame:changeFrameWidget( CoD.ButtonFrame_Progress )
 	ProgressUnlocks.ButtonInternal.ButtonTitle.HeaderText:setText( LocalizeToUpperString( "menu/progress_unlocks" ) )
 	ProgressUnlocks:registerEventHandler( "gain_focus", function ( element, event )
@@ -117,9 +117,9 @@ CoD.StartMenu_Barracks.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.ProgressUnlocks = ProgressUnlocks
 	
 	Medals = CoD.StartMenu_Button_LG.new( f1_arg0, f1_arg1, 0.5, 0.5, -836.5, -367.5, 0.5, 0.5, -336.5, 338.5 )
-	Medals.ButtonInternal.ImageContainer.ImageContainer:setImage( RegisterImage( 0xCB7B28E1ED13921 ) )
+	Medals.ButtonInternal.ImageContainer.ImageContainer:setImage( RegisterImage( "uie_ui_menu_start_menu_grid" ) )
 	Medals.ButtonInternal.StartMenuButtonFrame:changeFrameWidget( CoD.ButtonFrame_Medal )
-	Medals.ButtonInternal.ButtonTitle.HeaderText:setText( LocalizeHash( 0x8F69F5BDD4F7C26 ) )
+	Medals.ButtonInternal.ButtonTitle.HeaderText:setText( LocalizeHash( "menu/aar_tab_medals_caps" ) )
 	Medals:subscribeToGlobalModel( f1_arg1, "PlayerShowcase", "medal", function ( model )
 		Medals.ButtonInternal.ButtonTitle.NewIcon:setModel( model, f1_arg1 )
 	end )

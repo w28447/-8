@@ -11,7 +11,7 @@
     "exhaustFxTag1": "tag_body",
     "deathFx": "#hash_a81529815eca844",
     "deathFxTag": "tag_deathfx",
-    "deathFxSound": "#hash_626995667a4ff5c",
+    "deathFxSound": "#exp_veh_chopper",
     "lightFx": [
         "#hash_3d70aa7090b628a2"
     ],
@@ -31,7 +31,7 @@
     "model": "#hash_ddc6db6d475fae7",
     "deathModel": "#hash_ddc6db6d475fae7",
     "soundDef": "#hash_e1609607098dd6d",
-    "compassIconMaterial": "#hash_18f9149bdfa4c740",
+    "compassIconMaterial": "#t8_hud_waypoints_drone_hunter_scaled_down",
     "destructibleDef": "#hash_975764ca02ee4bd",
     "tacticalModeIcon": "#hash_679c5098faff525b",
     "steerAxisName": "AXIS_LSTICK",
@@ -59,14 +59,14 @@
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "hash_2577b757c1ca9678:hash_4be786c9": "localized17#hash_2577b757c1ca9678",
+                        "menu/hud_vehicle_flyup:hash_4be786c9": "localized17#menu/hud_vehicle_flyup",
                         "hash_334a8e60": "left",
                         "prompt": "+vehiclemoveup"
                     },
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "hash_29f6a908f9b269ad:hash_4be786c9": "localized17#hash_29f6a908f9b269ad",
+                        "menu/hud_vehicle_flydown:hash_4be786c9": "localized17#menu/hud_vehicle_flydown",
                         "hash_334a8e60": "left",
                         "prompt": "+vehiclemovedown"
                     }

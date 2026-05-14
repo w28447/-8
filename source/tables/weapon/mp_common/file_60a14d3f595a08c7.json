@@ -50,5 +50,5 @@
     "fx_ed8": "#weapon/fx_prox_grenade_exp",
     "fx_f00": "#weapon/fx_prox_grenade_elec_trail",
     "bounceImpactFX": "#grenade_bounce",
-    "bounceImpactSounds": "#hash_21a1550b0fa62b00"
+    "bounceImpactSounds": "#proximity_grenade_bounce"
 }

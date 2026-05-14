@@ -8,7 +8,7 @@
     "ammoindex": 0,
     "ammoregen": 0,
     "ammoScriptBundle": "#ammo_type_50cal_item",
-    "ammoType": "#hash_6307d6ff83c2c3d8",
+    "ammoType": "#.50 cal",
     "anyplayercanretrieve": 0,
     "bAltWeaponDisableSwitching": true,
     "bDieOnRespawn": false,

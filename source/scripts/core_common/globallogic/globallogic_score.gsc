@@ -776,7 +776,7 @@ function private function_d68ae402( inflictor, meansofdeath, victim, attacker, s
     {
         if ( attacker.multikills[ var_ac4c1 ].kills >= 2 )
         {
-            attacker contracts::increment_contract( #"hash_6696408f54c6ada7" );
+            attacker contracts::increment_contract( #"contract_mp_frag_double_kill" );
         }
     }
     

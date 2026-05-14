@@ -14,17 +14,17 @@ CoD[0x83DDFC8553ACB78].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.background = background
 	
 	local lion03 = LUI.UIImage.new( 0, 0, 333, 533, 0, 0, 90, 218 )
-	lion03:setImage( RegisterImage( 0x7579DCE1C2B55B8 ) )
+	lion03:setImage( RegisterImage( "uie_ui_menu_callingcards_safarihunter_lion3" ) )
 	self:addElement( lion03 )
 	self.lion03 = lion03
 	
 	local lion02 = LUI.UIImage.new( 0, 0, 160, 368, 0, 0, 64, 192 )
-	lion02:setImage( RegisterImage( 0x7579ECE1C2B576B ) )
+	lion02:setImage( RegisterImage( "uie_ui_menu_callingcards_safarihunter_lion2" ) )
 	self:addElement( lion02 )
 	self.lion02 = lion02
 	
 	local lion01 = LUI.UIImage.new( 0, 0, 94, 286, 0, 0, 75, 203 )
-	lion01:setImage( RegisterImage( 0x7579FCE1C2B591E ) )
+	lion01:setImage( RegisterImage( "uie_ui_menu_callingcards_safarihunter_lion1" ) )
 	self:addElement( lion01 )
 	self.lion01 = lion01
 	

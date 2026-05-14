@@ -9,7 +9,7 @@
 // Size: 0x84
 function preload()
 {
-    level._effect[ #"hash_490bb70162069301" ] = #"hash_406e48055b40a506";
+    level._effect[ #"agartha_wisp" ] = #"hash_406e48055b40a506";
     clientfield::register( "vehicle", "" + #"wisp_fx", 24000, 1, "int", &function_e5ecfa90, 0, 0 );
 }
 
@@ -19,6 +19,6 @@ function preload()
 // Size: 0x74
 function function_e5ecfa90( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    util::playfxontag( localclientnum, level._effect[ #"hash_490bb70162069301" ], self, "tag_origin" );
+    util::playfxontag( localclientnum, level._effect[ #"agartha_wisp" ], self, "tag_origin" );
 }
 

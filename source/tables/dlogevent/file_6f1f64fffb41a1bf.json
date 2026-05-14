@@ -46,7 +46,7 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT32"
                     },
@@ -89,7 +89,7 @@
                 "name": "#hash_718ac4f1b61972b0",
                 "members": [
                     {
-                        "name": "#hash_433bf14ac8ee287",
+                        "name": "#cached_cohort_id",
                         "scrName": "#hash_8b5954f7",
                         "type": "UINT64"
                     },

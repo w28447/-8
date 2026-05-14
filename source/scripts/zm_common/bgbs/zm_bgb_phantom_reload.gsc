@@ -43,7 +43,7 @@ function enable()
 // Size: 0x16
 function disable()
 {
-    self notify( #"hash_1980fe24a98adbe4" );
+    self notify( #"zm_bgb_phantom_reload_end" );
 }
 
 // Namespace zm_bgb_phantom_reload/zm_bgb_phantom_reload
@@ -52,7 +52,7 @@ function disable()
 // Size: 0xd6
 function function_44514728()
 {
-    self endon( #"hash_1980fe24a98adbe4" );
+    self endon( #"zm_bgb_phantom_reload_end" );
     
     while ( true )
     {

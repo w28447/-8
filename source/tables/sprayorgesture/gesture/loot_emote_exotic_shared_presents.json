@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_exotic_shared_presents",
+    "type": "#gesture",
+    "gesture": "#boast_presents",
+    "gesture2": "#boast_presents_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/presents-placeholder",
+        "icon": "image#ui_icon_specialist_portrait_hud_ruin_critical",
+        "isdefault": 0
+    }
+}

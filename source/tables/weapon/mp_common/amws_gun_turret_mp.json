@@ -3,7 +3,7 @@
     "baseWeapon": "#amws_gun_turret",
     "displayname": "#killstreak/ai_tank_drop",
     "weapon70": "#killstreak_ai_tank_drop",
-    "streamkey": "#hash_427e2f798a8aad31",
+    "streamkey": "#amws_gun_turret_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -63,7 +63,7 @@
     "tunables1": "#amws_gun_turret_tunables_mp",
     "tracers": [
         "#amws_bullet",
-        "#hash_51f6453b67bab6bd"
+        "#amws_bullet_enemy"
     ],
     "reticleCenter": "#hud_rts_mech_reticle",
     "inventoryIconZm": "#hud_hind_minigun",

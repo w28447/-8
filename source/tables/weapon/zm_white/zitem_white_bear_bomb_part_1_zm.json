@@ -1,7 +1,7 @@
 {
     "name": "#zitem_white_bear_bomb_part_1_zm",
     "baseWeapon": "#zitem_white_bear_bomb_part_1",
-    "streamkey": "#hash_313341505538c65a",
+    "streamkey": "#zitem_white_bear_bomb_part_1_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

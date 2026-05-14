@@ -147,7 +147,7 @@ function function_82ca1565( spawnpoint, gametype )
             return ( isdefined( spawnpoint.demolition_start_spawn ) && spawnpoint.demolition_start_spawn );
         case #"hash_6d83e5f1bdefa7dd":
             return ( isdefined( spawnpoint.demolition_defender_a ) && spawnpoint.demolition_defender_a );
-        case #"hash_6d83e2f1bdefa2c4":
+        case #"dem_defender_b":
             return ( isdefined( spawnpoint.demolition_defender_b ) && spawnpoint.demolition_defender_b );
         case #"control_attack_add_0":
             return ( isdefined( spawnpoint.control_attack_add_a ) && spawnpoint.control_attack_add_a );

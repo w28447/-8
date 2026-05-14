@@ -1,7 +1,7 @@
 {
     "keys": [
         {
-            "name": "#hash_5dea5930872e25b6",
+            "name": "#mp_cosmodrome_all_stream",
             "xPakEntry": {
                 "key": "#hash_f724aadd0e1eb1d5",
                 "offset": 0,
@@ -20,7 +20,7 @@
             "keyFlags": 3
         },
         {
-            "name": "#hash_33a4d9ce15ebff67",
+            "name": "#mp_cosmodrome_all_loaded",
             "xPakEntry": {
                 "key": "#hash_ecc97beea82ce9ac",
                 "offset": 0,
@@ -62777,7 +62777,7 @@
             "keyFlags": 0
         },
         {
-            "name": "#hash_411758d00e06db60",
+            "name": "#mp_cosmodrome_sst_0_0",
             "xPakEntry": {
                 "key": "#hash_e5d2546f1e69addb",
                 "offset": 0,

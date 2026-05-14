@@ -32,7 +32,7 @@ function init()
 // Size: 0x174
 function trap_activate()
 {
-    level notify( #"hash_e2465be027280d7" );
+    level notify( #"boil_trap_activated" );
     level exploder::exploder( "fxexp_trap_bath_switch" );
     playsoundatposition( "zmb_water_activate", level.var_d6ef5bfd.origin );
     level.var_d6ef5bfd playloopsound( #"hash_7aab9873087e7a2d" );
@@ -43,7 +43,7 @@ function trap_activate()
     wait self._trap_duration;
     playsoundatposition( "zmb_water_deactivate", level.var_d6ef5bfd.origin );
     level.var_d6ef5bfd stoploopsound( 0.5 );
-    level notify( #"hash_36bc97f51bb2bc8" );
+    level notify( #"boil_trap_done" );
     level function_5bf5b467();
     self notify( #"trap_done" );
     self thread trap_cooldown();
@@ -235,8 +235,8 @@ function function_3a067395( str_exploder )
 {
     self notify( "5a3476fe6548df85" );
     self endon( "5a3476fe6548df85" );
-    level endon( #"end_game", #"hash_e2465be027280d7" );
-    level waittill( #"hash_36bc97f51bb2bc8" );
+    level endon( #"end_game", #"boil_trap_activated" );
+    level waittill( #"boil_trap_done" );
     
     if ( str_exploder == "fxexp_trap_bath_bloody_lvl1" )
     {

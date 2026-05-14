@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_caricature_ruin",
+    "type": "#tag",
+    "material": "#hash_43f202a43acff2b4",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#tags/caricature_ruin",
+        "icon": "image#loot_ui_icon_tags_caricature_ruin",
+        "isdefault": 0
+    }
+}

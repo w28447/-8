@@ -455,7 +455,7 @@ function function_8916aa62( str_line )
         case #"hash_2bfb4eb3328f4aec":
             str_vo_line = #"hash_33c6fcca57aca8d";
             break;
-        case #"hash_5e5b1ca453e6f455":
+        case #"mural_bellerophon_fall":
             str_vo_line = #"hash_497d4298ff17357a";
             break;
         case #"hash_30574e66f25be5e4":
@@ -485,7 +485,7 @@ function function_8916aa62( str_line )
         case #"interact_sandals":
             str_vo_line = #"hash_13ae4ec246717759";
             break;
-        case #"hash_4d78ef43b2835e3b":
+        case #"interact_treasure_chest":
             str_vo_line = #"hash_4125f996df00a018";
             break;
         case #"interact_forge":

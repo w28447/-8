@@ -3,7 +3,7 @@
     "baseWeapon": "#pistol_revolver_t8",
     "displayname": "#weapon/pistol_revolver_t8",
     "weapon70": "#pistol_revolver_t8",
-    "streamkey": "#hash_58de9b2f17df2093",
+    "streamkey": "#pistol_revolver_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -50,15 +50,15 @@
         ]
     ],
     "firesounddistant": "#hash_f74753fbac3a42d",
-    "firesound": "#hash_37e48736e3336189",
-    "firesoundplayer": "#hash_3c56443776e1ea90",
-    "sound1d0": "#hash_37e48736e3336189",
+    "firesound": "#wpn_pistol_revolver_fire_npc",
+    "firesoundplayer": "#wpn_pistol_revolver_fire_plr",
+    "sound1d0": "#wpn_pistol_revolver_fire_npc",
     "sound1e0": "#hash_22478e79f6ed4610",
-    "sound200": "#hash_3c56443776e1ea90",
+    "sound200": "#wpn_pistol_revolver_fire_plr",
     "sound210": "#hash_78f4297a28091f71",
     "sound240": "#hash_6329b05b647edd44",
     "sound250": "#hash_7ed0935bbc956025",
-    "sound260": "#hash_515f54aa1f553686",
+    "sound260": "#prj_crack_supersonic",
     "sound800": "#hash_21cba6ae89a3493c",
     "sound810": "#hash_21cba6ae89a3493c",
     "tunables1": "#pistol_revolver_t8_tunables_zm",
@@ -73,7 +73,7 @@
         "#hash_10c72c5120ff5163"
     ],
     "sharedWeaponSounds": "#pistol",
-    "ballisticDesc": "#hash_6269fccbe6d86a70",
+    "ballisticDesc": "#45_fmj",
     "tracers": [
         "#hash_1cbad1eae7ceaf2c",
         "#hash_4627e8ce4cc5b8fb"
@@ -99,7 +99,7 @@
     "fx_bc8": "#hash_275ec03fa8473f64",
     "fx_bd0": "#hash_2765ac3fa84d3c16",
     "fx_bd8": "#hash_7282363a66bd14e2",
-    "normalImpactFX": "#hash_732fd0b76ec30328",
+    "normalImpactFX": "#shotgun_enter",
     "exitImpactFX": "#shotgun_exit",
     "normalImpactSounds": "#bullet_impact",
     "exitImpactSounds": "#bullet_exit"

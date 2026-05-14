@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_shared_popnlock_08",
+    "type": "#gesture",
+    "gesture": "#boast_popnlock_08",
+    "gesture2": "#boast_popnlock_08_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/jamn_on_the_one",
+        "icon": "image#ui_icon_emotes_popnlock8",
+        "isdefault": 0
+    }
+}

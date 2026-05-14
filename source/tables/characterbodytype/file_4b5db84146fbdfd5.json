@@ -3,7 +3,7 @@
     "displayName": "#heroes/woods_old",
     "mpDialog": "#woods_old",
     "playerSoundsTable": "#cp_playersounds",
-    "playerFXTable": "#hash_471b500cc678f872",
+    "playerFXTable": "#wz_playerfx",
     "image_68": "#hash_80aa60297921ab36",
     "positionDraftPortrait": "#hash_b1e8c13b8ac59c74",
     "characterFootsteps": "#defaultplayerfootstep",

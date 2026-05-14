@@ -12,7 +12,7 @@
 #build_complete,#zblueprint_trap_hellpools,#hash_54c90b4fd6b2dca9,0,0,FALSE,FALSE,FALSE,FALSE
 #fire_trail,#active,#vox_fire_trail_active,0,0,TRUE,FALSE,FALSE,FALSE
 #imp_jar,#pickup,#vox_imp_jar_pickup,0,0,TRUE,FALSE,FALSE,FALSE
-#hash_3a7466277372554d,#pickup,#hash_7afc64a7fa6a0db4,0,0,TRUE,FALSE,FALSE,FALSE
+#imp_jar_fill,#pickup,#vox_imp_jar_fill_pickup,0,0,TRUE,FALSE,FALSE,FALSE
 #box,#feed_elixir,#vox_box_feed_elixir,0,0,TRUE,FALSE,FALSE,FALSE
 #crowd,#positive_good,#vox_crowd_positive_good,0,0,FALSE,FALSE,FALSE,FALSE
 #crowd,#positive_great,#vox_crowd_positive_great,0,0,FALSE,FALSE,FALSE,FALSE
@@ -43,11 +43,11 @@
 #m_quest,#collect_wood,#vox_m_quest_collect_wood,0,0,TRUE,FALSE,FALSE,FALSE
 #m_quest,#danu_complete,#vox_m_quest_danu_complete,0,0,TRUE,FALSE,FALSE,FALSE
 #m_quest,#fury_arrive,#vox_m_quest_fury_arrive,0,0,TRUE,FALSE,FALSE,FALSE
-#m_quest,#hash_79dc404532bd8b8,#hash_1a458ffc30e9306d,0,0,TRUE,FALSE,FALSE,FALSE
+#m_quest,#fury_arrive_resp,#vox_m_quest_fury_arrive_resp,0,0,TRUE,FALSE,FALSE,FALSE
 #m_quest,#hash_249c85fdc05479b9,#hash_6e1019732c1a9fc4,0,0,TRUE,FALSE,FALSE,FALSE
 #m_quest,#fury_kill,#vox_m_quest_fury_kill,0,0,TRUE,FALSE,FALSE,FALSE
 #m_quest,#fury_start,#vox_m_quest_fury_start,0,0,TRUE,FALSE,FALSE,FALSE
-#m_quest,#hash_32945de55f48b610,#hash_51a59d04d4a7e8b1,0,0,TRUE,FALSE,FALSE,FALSE
+#m_quest,#gladiator_round_resp,#vox_m_quest_gladiator_round_resp,0,0,TRUE,FALSE,FALSE,FALSE
 #m_quest,#hash_4679377bf6d64ac1,#hash_129a667064652cd2,0,30,FALSE,FALSE,FALSE,FALSE
 #m_quest,#heart_nag,#vox_m_quest_heart_nag,0,30,FALSE,FALSE,FALSE,FALSE
 #m_quest,#key_pickup,#vox_m_quest_key_pickup,0,0,TRUE,FALSE,FALSE,FALSE
@@ -61,7 +61,7 @@
 #m_quest,#hash_1309305eff913aae,#hash_58fcefd43425141f,0,0,TRUE,FALSE,FALSE,FALSE
 #m_quest,#water_resp,#vox_m_quest_water_resp,0,0,TRUE,FALSE,FALSE,FALSE
 #m_quest,#wrath_arrive,#vox_m_quest_wrath_arrive,0,0,TRUE,FALSE,FALSE,FALSE
-#m_quest,#hash_373b7c4b959825ee,#hash_44e97ef312e11c41,0,0,TRUE,FALSE,FALSE,FALSE
+#m_quest,#wrath_arrive_resp,#vox_m_quest_wrath_arrive_resp,0,0,TRUE,FALSE,FALSE,FALSE
 #m_quest,#hash_21572eac71ae789f,#hash_256347ab90346d20,0,0,TRUE,FALSE,FALSE,FALSE
 #m_quest,#hash_43ca5bfbdf6d9de1,#hash_201c6d1fcf33bce8,0,0,TRUE,FALSE,FALSE,FALSE
 #shield_piece,#pickup,#vox_pickup_generic,0,0,FALSE,FALSE,FALSE,FALSE

@@ -29,7 +29,7 @@ CoD.CharacterSelection_FeaturedGamesList.new = function ( f1_arg0, f1_arg1, f1_a
 			modelName = "characterInT4"
 		} )
 	end )
-	WaW.GameIcon:setImage( RegisterImage( 0x3965E33060D4686 ) )
+	WaW.GameIcon:setImage( RegisterImage( "uie_ui_icon_wz_frontend_gameicon_waw" ) )
 	WaW:linkToElementModel( self, nil, false, function ( model )
 		WaW:setModel( model, f1_arg1 )
 	end )

@@ -41,7 +41,7 @@ CoD.InspectionPlayerLevel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local TopBracket = LUI.UIImage.new( 0, 1, -2, 2, 1, 1, -26.5, 3.5 )
 	TopBracket:setZRot( 180 )
-	TopBracket:setImage( RegisterImage( 0x46CC392945F433B ) )
+	TopBracket:setImage( RegisterImage( "uie_ui_menu_common_button_bracket" ) )
 	TopBracket:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	TopBracket:setShaderVector( 0, 0, 0, 0, 0 )
 	TopBracket:setupNineSliceShader( 12, 12 )

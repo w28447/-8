@@ -311,7 +311,7 @@ function function_e5bf8f08( player )
             }
             else
             {
-                self.stub.hint_string = #"hash_60606b68e93a29c8";
+                self.stub.hint_string = #"zombie/weaponcostonly_cfill";
             }
             
             if ( self.stub.var_8d306e51 )

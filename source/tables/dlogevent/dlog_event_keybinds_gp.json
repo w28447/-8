@@ -46,7 +46,7 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT32"
                     },
@@ -426,7 +426,7 @@
             "len": 24
         },
         {
-            "name": "#hash_54c88672dfdcc78a",
+            "name": "#toggleads_throw",
             "scrName": "#hash_163c76a7",
             "type": "STRING",
             "len": 24
@@ -480,7 +480,7 @@
             "len": 24
         },
         {
-            "name": "#hash_5d0b479ede0393d4",
+            "name": "#spraygesturewheel",
             "scrName": "#hash_e05a9619",
             "type": "STRING",
             "len": 24
@@ -552,7 +552,7 @@
             "len": 24
         },
         {
-            "name": "#hash_6a928eea40351a0f",
+            "name": "#vehicleattacksecond",
             "scrName": "#hash_28efa829",
             "type": "STRING",
             "len": 24
@@ -672,13 +672,13 @@
             "len": 24
         },
         {
-            "name": "#hash_78ac9e7c35c462a6",
+            "name": "#vehicleseat4",
             "scrName": "#hash_676102f1",
             "type": "STRING",
             "len": 24
         },
         {
-            "name": "#hash_78ac9f7c35c46459",
+            "name": "#vehicleseat5",
             "scrName": "#hash_dd2bee95",
             "type": "STRING",
             "len": 24
@@ -690,13 +690,13 @@
             "len": 24
         },
         {
-            "name": "#hash_78aca17c35c467bf",
+            "name": "#vehicleseat3",
             "scrName": "#hash_95215e71",
             "type": "STRING",
             "len": 24
         },
         {
-            "name": "#hash_78aca37c35c46b25",
+            "name": "#vehicleseat1",
             "scrName": "#hash_798ca748",
             "type": "STRING",
             "len": 24

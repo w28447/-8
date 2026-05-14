@@ -722,7 +722,7 @@ function function_e261b81d()
                 self function_36151fe3();
                 break;
             case 5:
-                self function_101763c9();
+                self ai_cleanup_state();
                 break;
             case 0:
             default:
@@ -969,8 +969,8 @@ function private function_cc9c6a13( state )
             self pathmode( "move allowed" );
             break;
         case 5:
-            self function_d1e55248( #"hash_5780e28b762b831a", 0 );
-            val::reset( #"hash_5780e28b762b831a", "ignoreall" );
+            self function_d1e55248( #"ai_cleanup_state", 0 );
+            val::reset( #"ai_cleanup_state", "ignoreall" );
             self pathmode( "move allowed" );
             break;
         default:
@@ -994,8 +994,8 @@ function private function_b8eff92a( state )
             self function_9758722( "sprint" );
             break;
         case 5:
-            self function_d1e55248( #"hash_5780e28b762b831a", !self.isonnavmesh );
-            val::set( #"hash_5780e28b762b831a", "ignoreall", 1 );
+            self function_d1e55248( #"ai_cleanup_state", !self.isonnavmesh );
+            val::set( #"ai_cleanup_state", "ignoreall", 1 );
             
             if ( !self.isonnavmesh )
             {
@@ -1099,7 +1099,7 @@ function private function_b793bca2()
 // Params 0, eflags: 0x4
 // Checksum 0x2282ad73, Offset: 0x3310
 // Size: 0x19e
-function private function_101763c9()
+function private ai_cleanup_state()
 {
     self endon( #"death" );
     spawn_point = self.ai_zone.spawn_points[ randomint( self.ai_zone.spawn_points.size ) ];

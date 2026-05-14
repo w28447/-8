@@ -122,7 +122,7 @@ CoD.DirectorSelectButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local Header = LUI.UIText.new( 0.01, 0.97, 9, 9, 1, 1, -26.5, -4.5 )
 	Header:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	Header:setText( LocalizeToUpperString( 0xA43B10D9DA121A ) )
+	Header:setText( LocalizeToUpperString( "menu/waiting_caps" ) )
 	Header:setTTF( "ttmussels_regular" )
 	Header:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
 	Header:setLetterSpacing( 6 )
@@ -132,7 +132,7 @@ CoD.DirectorSelectButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	self.Header = Header
 	
 	local MiddleText = LUI.UIText.new( 0.02, 0.98, 0, 0, 0.57, 0.57, -10, 12 )
-	MiddleText:setText( LocalizeToUpperString( 0xA43B10D9DA121A ) )
+	MiddleText:setText( LocalizeToUpperString( "menu/waiting_caps" ) )
 	MiddleText:setTTF( "ttmussels_regular" )
 	MiddleText:setLetterSpacing( 6 )
 	MiddleText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

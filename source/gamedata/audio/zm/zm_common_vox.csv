@@ -1,8 +1,8 @@
-#general,#attacked,#hash_413d2b04ac7f26f5,10,180,FALSE,FALSE,FALSE,FALSE
+#general,#attacked,#vox_attacked_zombie,10,180,FALSE,FALSE,FALSE,FALSE
 #general,#crawl_spawn,#hash_502a3f3d1bfa0eb4,30,0,FALSE,TRUE,FALSE,FALSE
 #general,#outofmoney,#hash_6f4d706590e9b576,0,30,FALSE,FALSE,FALSE,FALSE
 #general,#rebuild_boards,#hash_6ebb5fa1f7952f56,50,60,FALSE,FALSE,FALSE,FALSE
-#general,#gib,#hash_2827e3552e08123a,50,0,TRUE,TRUE,FALSE,FALSE
+#general,#gib,#vox_gib_zombie,50,0,TRUE,TRUE,FALSE,FALSE
 #revive,#down,#vox_revive_down,0,0,FALSE,FALSE,FALSE,TRUE
 #revive,#support,#vox_revive_support,0,0,FALSE,FALSE,FALSE,TRUE
 #revive,#up,#hash_600ae1105d71b666,0,0,FALSE,FALSE,FALSE,TRUE

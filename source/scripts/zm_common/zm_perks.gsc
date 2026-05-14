@@ -1,4 +1,4 @@
-#using script_301f64a4090c381a;
+#using scripts\zm_common\zm_faction_buffs.gsc;
 #using scripts\core_common\ai\zombie_utility;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\callbacks_shared;
@@ -1921,7 +1921,7 @@ function perks_register_clientfield()
         clientfield::register_clientuimodel( "hudItems.extraPerkVapor." + i + ".specialEffectActive", n_version, 1, "int", 0 );
     }
     
-    clientfield::register( "scriptmover", "" + #"hash_cf74c35ecc5a49", 1, 1, "int" );
+    clientfield::register( "scriptmover", "" + #"init_perk_altar_icon", 1, 1, "int" );
     clientfield::register( "toplayer", "" + #"hash_35fe26fc5cb223b3", 1, 3, "int" );
     clientfield::register( "toplayer", "" + #"hash_6fb426c48a4877e0", 1, 3, "int" );
     clientfield::register( "toplayer", "" + #"hash_345845080e40675d", 1, 3, "int" );
@@ -1932,7 +1932,7 @@ function perks_register_clientfield()
         clientfield::register( "world", "" + #"zeus_bird_fx", 1, 1, "int" );
         clientfield::register( "scriptmover", "" + #"hash_50eb488e58f66198", 1, 1, "int" );
         clientfield::register( "allplayers", "" + #"hash_222c3403d2641ea6", 1, 3, "int" );
-        clientfield::register( "toplayer", "" + #"hash_17283692696da23b", 1, 1, "counter" );
+        clientfield::register( "toplayer", "" + #"perk_totem_rob", 1, 1, "counter" );
     }
 }
 
@@ -2841,7 +2841,7 @@ function function_b7f2c635( player )
     {
         self.stub.var_36d60c16 = 1;
         player zm_score::add_to_player_score( 100 );
-        self playsoundtoplayer( #"hash_30fa33e2fb90b58f", player );
+        self playsoundtoplayer( #"evt_spare_change", player );
     }
     
     if ( player.var_47654123[ n_slot ] && !isdefined( player function_5ea0c6cf() ) )
@@ -2935,7 +2935,7 @@ function function_b7f2c635( player )
             n_cost -= player.talisman_perk_reducecost_4;
         }
         
-        n_cost = player namespace_e38c57c1::function_863dc0ef( n_cost );
+        n_cost = player zm_faction_buffs::function_863dc0ef( n_cost );
         n_cost = int( max( n_cost, 0 ) );
         
         if ( isdefined( var_c591876d ) && var_c591876d !== " " )
@@ -3052,7 +3052,7 @@ function function_f5da744e()
             current_cost -= player.talisman_perk_reducecost_4;
         }
         
-        current_cost = player namespace_e38c57c1::function_863dc0ef( current_cost );
+        current_cost = player zm_faction_buffs::function_863dc0ef( current_cost );
         current_cost = int( max( current_cost, 0 ) );
         
         if ( !player zm_score::can_player_purchase( current_cost ) )
@@ -3161,7 +3161,7 @@ function taking_cover_tanks_( player, perk, n_slot, s_vapor_altar )
             player thread function_ef7f9ab0( n_slot );
         }
         
-        player thread function_9bdf581f( perk, n_slot, 1 );
+        player thread give_perk_vapor( perk, n_slot, 1 );
         
         if ( isdefined( level.perk_bought_func ) )
         {
@@ -3314,11 +3314,11 @@ function function_b2ac6ee7()
 // Params 3
 // Checksum 0x37d887a4, Offset: 0x9b30
 // Size: 0x914
-function function_9bdf581f( perk, n_slot, b_bought = 0 )
+function give_perk_vapor( perk, n_slot, b_bought = 0 )
 {
     self endon( #"player_downed", #"disconnect", #"perk_abort_drinking" );
     level endon( #"end_game" );
-    level notify( #"hash_4e566c83cdfabe44", { #e_player:self, #perk:perk } );
+    level notify( #"give_perk_vapor", { #e_player:self, #perk:perk } );
     self perks::perk_setperk( perk );
     
     if ( isdefined( level._custom_perks[ perk ].var_658e2856 ) )
@@ -3736,7 +3736,7 @@ function function_cc24f525()
                 self.var_47654123[ n_slot ] = 0;
             }
             
-            self thread function_9bdf581f( var_16c042b8, n_slot );
+            self thread give_perk_vapor( var_16c042b8, n_slot );
         }
     }
 }
@@ -3776,7 +3776,7 @@ function function_29387491( var_16c042b8, n_slot )
             self.var_47654123[ n_slot ] = 0;
         }
         
-        self thread function_9bdf581f( var_16c042b8, n_slot );
+        self thread give_perk_vapor( var_16c042b8, n_slot );
         return;
     }
     
@@ -3891,7 +3891,7 @@ function private function_7723353c()
             self function_f9385a02( str_perk, n_slot );
         }
         
-        self function_9bdf581f( str_perk, n_slot );
+        self give_perk_vapor( str_perk, n_slot );
     }
 }
 
@@ -3938,7 +3938,7 @@ function function_8b413937( s_vapor_altar )
     {
         s_vapor_altar function_a30c73b9( "on" );
         waitframe( 1 );
-        s_vapor_altar.mdl_altar clientfield::set( "" + #"hash_cf74c35ecc5a49", 1 );
+        s_vapor_altar.mdl_altar clientfield::set( "" + #"init_perk_altar_icon", 1 );
     }
     
     s_vapor_altar function_a1bad730();
@@ -3956,7 +3956,7 @@ function function_8b413937( s_vapor_altar )
 function function_72c30be7( var_dd74d130, s_vapor_altar )
 {
     s_vapor_altar.mdl_altar = var_dd74d130[ #"prop 1" ];
-    s_vapor_altar.mdl_altar clientfield::set( "" + #"hash_cf74c35ecc5a49", 1 );
+    s_vapor_altar.mdl_altar clientfield::set( "" + #"init_perk_altar_icon", 1 );
 }
 
 // Namespace zm_perks/zm_perks
@@ -4398,7 +4398,7 @@ function function_df87281a( var_16c042b8, b_extra = 0 )
     else
     {
         self.var_c27f1e90[ 4 ] = var_16c042b8;
-        self function_9bdf581f( var_16c042b8, 4 );
+        self give_perk_vapor( var_16c042b8, 4 );
         self function_b8c12b0f( 3, 1 );
     }
     
@@ -4647,7 +4647,7 @@ function function_2babacc2()
         
         if ( n_slot >= 0 )
         {
-            self function_9bdf581f( var_16c042b8, n_slot, 0 );
+            self give_perk_vapor( var_16c042b8, n_slot, 0 );
             
             if ( !isdefined( var_8cf447e1 ) )
             {
@@ -4809,7 +4809,7 @@ function function_b2dfd295( perk, var_8c7df7fc )
             self thread function_f9385a02( perk, var_c3f41835 );
         }
         
-        self thread function_9bdf581f( perk, var_c3f41835 );
+        self thread give_perk_vapor( perk, var_c3f41835 );
         return;
     }
     

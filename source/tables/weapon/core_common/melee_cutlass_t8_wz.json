@@ -3,7 +3,7 @@
     "baseWeapon": "#melee_cutlass_t8",
     "displayname": "#weapon/melee_cutlass_t8",
     "weapon70": "#melee_cutlass_t8",
-    "streamkey": "#hash_7fc975f4b61d4d8c",
+    "streamkey": "#melee_cutlass_t8_soundbank",
     "scrstr_8c8": [
         "tag_camo_darkmatter",
         "tag_camo_diamond"

@@ -202,7 +202,7 @@ function function_d332685()
         }
         else
         {
-            e_who thread zm_orange_util::function_51b752a9( #"hash_35c946ee7d89155d" );
+            e_who thread zm_orange_util::function_51b752a9( #"vox_punchcard_2_pickup_punched" );
         }
         
         level zm_ui_inventory::function_7df6bb60( "zm_orange_zipquest_keycard_2", 1 );
@@ -660,7 +660,7 @@ function function_b53212e5()
 function sams_box_step6_setup( var_5ea5c94d )
 {
     level.var_79260935.w_music_box = getweapon( #"music_box" );
-    callback::function_33f0ddd3( &function_33f0ddd3 );
+    callback::on_player_loadout_changed( &on_player_loadout_changed );
     callback::on_disconnect( &on_disconnect );
     
     if ( !var_5ea5c94d )
@@ -769,7 +769,7 @@ function private on_disconnect()
 // Params 1, eflags: 0x4
 // Checksum 0x488296a4, Offset: 0x2ce8
 // Size: 0xa4
-function private function_33f0ddd3( s_event )
+function private on_player_loadout_changed( s_event )
 {
     if ( s_event.event === "take_weapon" && s_event.weapon === level.var_79260935.w_music_box && self.var_3b55baa1 !== level.var_79260935.w_music_box )
     {

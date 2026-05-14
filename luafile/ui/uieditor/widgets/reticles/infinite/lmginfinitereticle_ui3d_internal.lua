@@ -343,7 +343,7 @@ CoD.lmgInfiniteReticle_UI3D_Internal.__clipsPerState = {
 			f21_arg0.Status:setRGB( 1, 0, 0 )
 			f21_arg0.Status.FrameTop:setRGB( 1, 0, 0 )
 			f21_arg0.Status.FrameBottom:setRGB( 1, 0, 0 )
-			f21_arg0.Status.Status:setText( Engine[0xF9F1239CFD921FE]( 0x74D7427BD9FB2F2 ) )
+			f21_arg0.Status.Status:setText( Engine[0xF9F1239CFD921FE]( "mpui/lmg_magazine_empty_caps" ) )
 			f21_arg0.clipFinished( f21_arg0.Status )
 			f21_arg0.lmgInfiniteReticleExtras:completeAnimation()
 			f21_arg0.lmgInfiniteReticleExtras:setRGB( 1, 0, 0 )

@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_heavenlybodies_04",
+    "type": "#tag",
+    "material": "#hash_2a27138cf83667bb",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#tags/heavenlybodies_04",
+        "icon": "image#loot_ui_icon_tags_heavenlybodies_04",
+        "isdefault": 0
+    }
+}

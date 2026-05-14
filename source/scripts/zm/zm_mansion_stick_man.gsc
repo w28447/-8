@@ -44,7 +44,7 @@ function init()
     clientfield::register( "toplayer", "" + #"player_dragged", 8000, 1, "int" );
     clientfield::register( "toplayer", "" + #"hash_4be98315796ad666", 8000, 1, "int" );
     clientfield::register( "allplayers", "" + #"sacrifice_player", 8000, 1, "int" );
-    clientfield::register( "allplayers", "" + #"hash_30aa04edc476253f", 8000, 1, "int" );
+    clientfield::register( "allplayers", "" + #"sacrifice_player_dragged", 8000, 1, "int" );
     register_steps();
     init_flags();
     init_components();
@@ -512,7 +512,7 @@ function private function_44a7951d()
 {
     if ( self === level.stick_player )
     {
-        self notify( #"hash_1544918b5f670dae" );
+        self notify( #"sacrifice_player_reset" );
         self setvisibletoall();
         
         if ( isdefined( self.e_linkto ) )
@@ -527,7 +527,7 @@ function private function_44a7951d()
         }
         
         self thread function_a0a113c9( "death" );
-        level thread function_36d70cbd();
+        level thread sacrifice_player_reset();
     }
 }
 
@@ -540,7 +540,7 @@ function private function_4aa24b78()
     self notify( "5a517bbed613c3ee" );
     self endon( "5a517bbed613c3ee" );
     level endon( #"stone_visible" );
-    self endon( #"player_downed", #"death", #"hash_1544918b5f670dae" );
+    self endon( #"player_downed", #"death", #"sacrifice_player_reset" );
     
     if ( self === level.stick_player )
     {
@@ -553,7 +553,7 @@ function private function_4aa24b78()
 // Params 0, eflags: 0x4
 // Checksum 0xc5659002, Offset: 0x24f0
 // Size: 0x4cc
-function private function_36d70cbd()
+function private sacrifice_player_reset()
 {
     self notify( "2c7398c281ee6695" );
     self endon( "2c7398c281ee6695" );
@@ -689,7 +689,7 @@ function private function_8a51807c()
 function private function_d8ca90b7()
 {
     level endon( #"stick_drag" );
-    level.stick_player endon( #"disconnect", #"hash_1544918b5f670dae" );
+    level.stick_player endon( #"disconnect", #"sacrifice_player_reset" );
     level flag::wait_till( #"hash_7ffc33bb45377f5e" );
     
     while ( true )
@@ -763,7 +763,7 @@ function private function_959fcbff( player )
     }
     
     player.e_linkto clientfield::set( "" + #"hash_69b312bcaae6308b", 1 );
-    player clientfield::set( "" + #"hash_30aa04edc476253f", 1 );
+    player clientfield::set( "" + #"sacrifice_player_dragged", 1 );
     player.e_linkto movez( -80, 1.5 );
     wait 0.375;
     a_players = getplayers();
@@ -777,7 +777,7 @@ function private function_959fcbff( player )
     player thread function_25a79bc1();
     player.e_linkto waittilltimeout( 1.5 - 0.375, #"movedone" );
     player.e_linkto clientfield::set( "" + #"hash_69b312bcaae6308b", 0 );
-    player clientfield::set( "" + #"hash_30aa04edc476253f", 0 );
+    player clientfield::set( "" + #"sacrifice_player_dragged", 0 );
     s_pos = struct::get( "wm_ht_pos", "targetname" );
     player.e_linkto.origin = s_pos.origin;
     player setorigin( player.e_linkto.origin );
@@ -864,11 +864,11 @@ function private function_3b71b7a7()
 function private function_25a79bc1()
 {
     level endon( #"stone_visible" );
-    self endon( #"player_downed", #"death", #"hash_1544918b5f670dae" );
+    self endon( #"player_downed", #"death", #"sacrifice_player_reset" );
     
     while ( true )
     {
-        self waittill( #"fasttravel_over", #"hash_3e4335abc3d58a0b", #"hash_55489b8cb6c75352" );
+        self waittill( #"fasttravel_over", #"bgb_anywhere_but_here_complete", #"hash_55489b8cb6c75352" );
         
         if ( self !== level.stick_player )
         {
@@ -1258,7 +1258,7 @@ function function_6ae66179()
 // Size: 0x1cc
 function function_50955e48()
 {
-    self endon( #"player_downed", #"death", #"hash_1544918b5f670dae" );
+    self endon( #"player_downed", #"death", #"sacrifice_player_reset" );
     var_4e7ea1ce = 0;
     s_scene = struct::get( #"p8_fxanim_zm_man_wm_01_bundle", "scriptbundlename" );
     
@@ -1414,9 +1414,9 @@ function private player_stuck()
     
     var_3add8e25 = struct::get( "s_stick_scene", "targetname" );
     var_3add8e25 thread scene::play( level.var_9661fac0, self );
-    s_result = self waittilltimeout( getanimlength( var_cab90298 ), #"hash_1544918b5f670dae" );
+    s_result = self waittilltimeout( getanimlength( var_cab90298 ), #"sacrifice_player_reset" );
     
-    if ( s_result._notify === #"hash_1544918b5f670dae" )
+    if ( s_result._notify === #"sacrifice_player_reset" )
     {
         b_watcher = 0;
     }
@@ -1485,7 +1485,7 @@ function private function_1e60e7d2()
 function private function_be4a0b7a( n_timeout )
 {
     level endon( #"stick_drag" );
-    self endon( #"disconnect", #"hash_1544918b5f670dae" );
+    self endon( #"disconnect", #"sacrifice_player_reset" );
     n_start_time = gettime();
     
     for ( n_total_time = 0; !self util::stance_button_held() && n_total_time < n_timeout ; n_total_time = ( n_current_time - n_start_time ) / 1000 )

@@ -48,13 +48,13 @@ function function_bf5cad4e( gamemodedata )
     firstblood = ( isdefined( level.var_8a3a9ca4.firstblood ) ? level.var_8a3a9ca4.firstblood : 0 ) - ( isdefined( level.var_8a3a9ca4.roundstart ) ? level.var_8a3a9ca4.roundstart : 0 );
     alliesscore = isdefined( [[ level._getteamscore ]]( #"allies" ) ) ? [[ level._getteamscore ]]( #"allies" ) : 0;
     axisscore = isdefined( [[ level._getteamscore ]]( #"axis" ) ) ? [[ level._getteamscore ]]( #"axis" ) : 0;
-    var_5e25b17b = abs( alliesscore - axisscore );
+    scorediscrepancy = abs( alliesscore - axisscore );
     gamemodedata = {};
     gamemodedata.gamemode = level.gametype;
     gamemodedata.wintype = isdefined( gamemodedata.wintype ) ? gamemodedata.wintype : "NA";
     gamemodedata.matchtime = matchtime;
     gamemodedata.firstblood = firstblood;
-    gamemodedata.var_5e25b17b = var_5e25b17b;
+    gamemodedata.scorediscrepancy = scorediscrepancy;
     gamemodedata.timeremaining = isdefined( gamemodedata.remainingtime ) ? gamemodedata.remainingtime : 0;
     gamemodedata.var_20de6a02 = isdefined( gamemodedata.var_20de6a02 ) ? gamemodedata.var_20de6a02 : 0;
     gamemodedata.var_be1de2ab = isdefined( gamemodedata.var_be1de2ab ) ? gamemodedata.var_be1de2ab : 0;

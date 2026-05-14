@@ -16,7 +16,7 @@ LUI.createMenu.Store_DLC = function ( f1_arg0, f1_arg1 )
 	self.anyChildUsesUpdateState = true
 	
 	local Background = LUI.UIImage.new( 0.5, 0.5, -957, 963, 0.5, 0.5, -540, 540 )
-	Background:setImage( RegisterImage( 0xEF427A6CB5D6885 ) )
+	Background:setImage( RegisterImage( "uie_t7_mp_menu_cac_version6_backdrop720p" ) )
 	self:addElement( Background )
 	self.Background = Background
 	

@@ -3,7 +3,7 @@
     "baseWeapon": "#eq_grapple_ct",
     "displayname": "#weapon/grapple",
     "weapon70": "#eq_grapple",
-    "streamkey": "#hash_14d318a276a6dfc1",
+    "streamkey": "#eq_grapple_ct_soundbank",
     "scrstr_8c8": [
         "tag_equipment_hero"
     ],
@@ -43,12 +43,12 @@
     "sound2d0": "#hash_25ec27f993ae2c55",
     "sound2e0": "#hash_4e9b76e4b954bdea",
     "sound2f0": "#hash_698b9e8b665748f3",
-    "sound300": "#hash_5528c3f5ea8e4ef9",
+    "sound300": "#grap_use",
     "gadgetreadysoundplayer": "#hash_67e9c6ecf0a48a54",
     "sound480": "#hash_a7181716c85bdd5",
     "sound660": "#uin_unavailable_charging",
-    "tunables1": "#hash_1916d8a066432986",
-    "tunables2": "#hash_1916d8a066432986",
+    "tunables1": "#eq_grapple_tunables_ct_pc",
+    "tunables2": "#eq_grapple_tunables_ct_pc",
     "cacWeaponXCam": "#hash_3e8571e76d35fbc4",
     "sharedWeaponSounds": "#equipment",
     "customsettings": "#grapple_custom_settings",
@@ -81,6 +81,6 @@
     "tagFXSet930": "#hash_3644a792262fa1e8",
     "bounceImpactFX": "#hash_5230ebe069afb123",
     "fxImpact_fd8": "#hash_4c3696b14fc0372c",
-    "normalImpactSounds": "#hash_5b0fac3585c2a4c3",
-    "bounceImpactSounds": "#hash_5b0fac3585c2a4c3"
+    "normalImpactSounds": "#grapple_impact",
+    "bounceImpactSounds": "#grapple_impact"
 }

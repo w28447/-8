@@ -1,10 +1,10 @@
 {
     "buttonimage": "image#ui_icon_blackmarket_promos_gangster_button_small",
     "popupimage": "image#ui_icon_blackmarket_promos_gangster_large_preview",
-    "nametext": "localized17#hash_e60183a6d481a4b",
+    "nametext": "localized17#menu/battery_assassin_outfit_bundle",
     "categorytext": "localized17#hash_30951b5b7749b8df",
     "name": "battery_assassin_outfit_bundle",
-    "desctext": "localized17#hash_77cf65d9bb189c5d",
+    "desctext": "localized17#menu/battery_assassin_outfit_bundle_desc",
     "previewimage": "image#ui_icon_blackmarket_promos_gangster_item_detail",
     "reserveimage": "image#ui_icon_blackmarket_promos_gangster_button_large"
 }

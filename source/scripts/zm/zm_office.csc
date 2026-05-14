@@ -1,4 +1,4 @@
-#using script_578af034e151f03e;
+#using scripts\zm\zm_office_magicbox_screens.csc;
 #using scripts\core_common\clientfield_shared;
 #using scripts\core_common\exploder_shared;
 #using scripts\core_common\renderoverridebundle;
@@ -58,7 +58,7 @@ function event_handler[level_init] main( eventstruct )
     level thread setup_personality_character_exerts();
     exploder::exploder( "lgt_vending_mulekick_on" );
     util::waitforclient( 0 );
-    level namespace_6a81d072::init_pentagon_box_screens();
+    level zm_office_magicbox_screens::init_pentagon_box_screens();
     level thread pentagon_zpo_listener();
     level thread pentagon_tlo_listener();
     level thread function_b8da6f44();

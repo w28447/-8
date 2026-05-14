@@ -416,7 +416,7 @@ function slot_cb( localclientnum, oldval, newval, bnewent, binitialsnap, fieldna
         level.vsmgr[ type ].state[ localclientnum ].force_update = 1;
     }
     
-    level notify( #"hash_4dea82d5e85dfc" );
+    level notify( #"visionset_mgr_state" );
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
@@ -451,7 +451,7 @@ function lerp_cb( localclientnum, oldval, newval, bnewent, binitialsnap, fieldna
         level.vsmgr[ type ].state[ localclientnum ].force_update = 1;
     }
     
-    level notify( #"hash_4dea82d5e85dfc" );
+    level notify( #"visionset_mgr_state" );
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
@@ -579,7 +579,7 @@ function demo_jump_monitor()
             }
         }
         
-        level notify( #"hash_4dea82d5e85dfc" );
+        level notify( #"visionset_mgr_state" );
     }
 }
 
@@ -638,7 +638,7 @@ function monitor()
     
     while ( true )
     {
-        level waittill( #"hash_4dea82d5e85dfc" );
+        level waittill( #"visionset_mgr_state" );
         
         foreach ( k, v in level.vsmgr )
         {

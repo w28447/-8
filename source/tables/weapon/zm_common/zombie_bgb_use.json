@@ -1,7 +1,7 @@
 {
     "name": "#zombie_bgb_use",
     "baseWeapon": "#zombie_bgb_use",
-    "streamkey": "#hash_4488e1ea08a6a55d",
+    "streamkey": "#zombie_bgb_use_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

@@ -80,7 +80,7 @@ LUI.createMenu.Barracks_Medals = function ( f1_arg0, f1_arg1 )
 	self.MedalsTab = MedalsTab
 	
 	SocialFrame = CoD.GenericMenuFrame.new( f1_local1, f1_arg0, 0, 1, 0, 0, 0, 1, 0, 0 )
-	SocialFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x8F69F5BDD4F7C26 ) )
+	SocialFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/aar_tab_medals_caps" ) )
 	SocialFrame:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f8_local0 = model:get()
 		if f8_local0 ~= nil then

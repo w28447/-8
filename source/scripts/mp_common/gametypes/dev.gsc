@@ -631,7 +631,7 @@ function on_player_connected()
                 
                 setdvar( #"scr_devgui_spawn", "<dev string:x38>" );
             }
-            else if ( getdvarstring( #"hash_c9f8ff06a656024" ) != "<dev string:x38>" )
+            else if ( getdvarstring( #"scr_devgui_spawninspection" ) != "<dev string:x38>" )
             {
                 player = util::gethostplayer();
                 
@@ -654,7 +654,7 @@ function on_player_connected()
                     player setactionslot( 3, "<dev string:x22c>" );
                 }
                 
-                setdvar( #"hash_c9f8ff06a656024", "<dev string:x38>" );
+                setdvar( #"scr_devgui_spawninspection", "<dev string:x38>" );
             }
             else if ( getdvarstring( #"scr_player_ammo" ) != "<dev string:x38>" )
             {
@@ -720,10 +720,10 @@ function on_player_connected()
                 level thread devgui_increase_momentum( getdvarint( #"scr_give_player_score", 0 ) );
                 setdvar( #"scr_give_player_score", "<dev string:x38>" );
             }
-            else if ( getdvarstring( #"hash_7d7add0fb8d419c8" ) != "<dev string:x38>" )
+            else if ( getdvarstring( #"scr_reset_player_score" ) != "<dev string:x38>" )
             {
                 level thread function_e88bdbcf();
-                setdvar( #"hash_7d7add0fb8d419c8", "<dev string:x38>" );
+                setdvar( #"scr_reset_player_score", "<dev string:x38>" );
             }
             else if ( getdvarstring( #"scr_player_zero_ammo" ) != "<dev string:x38>" )
             {

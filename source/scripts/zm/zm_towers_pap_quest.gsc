@@ -68,7 +68,7 @@ function init()
 // Size: 0x3c
 function function_5ad3e281()
 {
-    level flag::wait_till( #"hash_2a7d461c7eff8179" );
+    level flag::wait_till( #"pap_quest_started" );
     changeadvertisedstatus( 0 );
 }
 
@@ -98,7 +98,7 @@ function function_a7faeaaf()
 function function_90a833e2()
 {
     level flag::init( #"pap_disabled" );
-    level flag::init( #"hash_2a7d461c7eff8179" );
+    level flag::init( #"pap_quest_started" );
     level flag::init( #"hash_798d51388d6e10f4" );
     level flag::init( #"hash_18134dc5b9b39a96" );
     level flag::init( #"hash_582eea77824b014d" );
@@ -198,7 +198,7 @@ function pap_quest_init( var_5ea5c94d )
     level zm_ui_inventory::function_7df6bb60( #"hash_4fce42c559430ff9", 1 );
     level zm_ui_inventory::function_7df6bb60( #"hash_6257a73f22800e57", 1 );
     level zm_ui_inventory::function_7df6bb60( #"hash_61f69ed4cbd8f2f5", 1 );
-    level zm_ui_inventory::function_7df6bb60( #"hash_5114ed99a6bad03b", 1 );
+    level zm_ui_inventory::function_7df6bb60( #"zm_towers_pap_quest_tiger_head", 1 );
     
     if ( !var_5ea5c94d )
     {
@@ -325,7 +325,7 @@ function pap_quest_restart()
     level zm_ui_inventory::function_7df6bb60( #"hash_4fce42c559430ff9", 1 );
     level zm_ui_inventory::function_7df6bb60( #"hash_6257a73f22800e57", 1 );
     level zm_ui_inventory::function_7df6bb60( #"hash_61f69ed4cbd8f2f5", 1 );
-    level zm_ui_inventory::function_7df6bb60( #"hash_5114ed99a6bad03b", 1 );
+    level zm_ui_inventory::function_7df6bb60( #"zm_towers_pap_quest_tiger_head", 1 );
     
     if ( isdefined( level.var_9ca6160c ) )
     {
@@ -450,7 +450,7 @@ function function_199b1814( str_tower, str_encounter )
         }
     }
     
-    level flag::set( #"hash_2a7d461c7eff8179" );
+    level flag::set( #"pap_quest_started" );
     level flag::set( var_31e5b512 );
     level flag::set( #"hash_798d51388d6e10f4" );
     
@@ -657,7 +657,7 @@ function function_199b1814( str_tower, str_encounter )
         }
     }
     
-    s_waitresult = level waittill( #"hash_2ea1048758a3ff14" );
+    s_waitresult = level waittill( #"pap_quest_drop_head" );
     v_origin = s_waitresult.v_origin;
     var_7246d429 = s_waitresult.var_7246d429;
     str_archetype = s_waitresult.str_archetype;
@@ -792,7 +792,7 @@ function function_9ec8ec89()
     if ( level.var_4629a597 >= level.var_5c51cf1a )
     {
         self thread zm_towers_util::function_ae1b4f5b( 100, 75, 75 );
-        level notify( #"hash_2ea1048758a3ff14", { #v_origin:v_origin, #var_7246d429:var_7246d429, #str_archetype:str_archetype, #str_subarchetype:str_subarchetype } );
+        level notify( #"pap_quest_drop_head", { #v_origin:v_origin, #var_7246d429:var_7246d429, #str_archetype:str_archetype, #str_subarchetype:str_subarchetype } );
     }
 }
 
@@ -1316,7 +1316,7 @@ function function_1191a919( str_encounter )
             str_clientfield = #"hash_61f69ed4cbd8f2f5";
             break;
         case #"tigers":
-            str_clientfield = #"hash_5114ed99a6bad03b";
+            str_clientfield = #"zm_towers_pap_quest_tiger_head";
             break;
         default:
             str_encounter = get_encounter( str_encounter );
@@ -1405,7 +1405,7 @@ function function_d7c092b9()
                 return;
         }
         
-        level flag::set( #"hash_2a7d461c7eff8179" );
+        level flag::set( #"pap_quest_started" );
         
         if ( level flag::get( #"hash_2cf71ce4a3d1c081" ) || level flag::get( var_31e5b512 ) )
         {

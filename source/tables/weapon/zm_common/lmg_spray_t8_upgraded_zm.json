@@ -4,7 +4,7 @@
     "displayname": "#zmweapon/lmg_spray_t8_upgraded",
     "xhash_60": "#hash_22c3ec38663e0d03",
     "weapon70": "#lmg_spray_t8",
-    "streamkey": "#hash_40b98d7adcd85ce1",
+    "streamkey": "#lmg_spray_t8_upgraded_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -67,7 +67,7 @@
     "sound210": "#hash_464ce958923d1422",
     "sound240": "#hash_631a067190b54300",
     "sound250": "#hash_242aa17124751841",
-    "sound260": "#hash_515f54aa1f553686",
+    "sound260": "#prj_crack_supersonic",
     "sound5e0": "#fly_scope_zoom",
     "sound600": "#hash_209cb2974ae55ec0",
     "sound610": "#hash_209cb2974ae55ec0",

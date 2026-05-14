@@ -1,7 +1,7 @@
 {
     "hash_dfedf08e": 0,
     "categoryindex": 0,
-    "description": "localized17#hash_36ba589c96ce7bd3",
+    "description": "localized17#codcaster/qs_player_card_hint",
     "menu/on": "localized17#menu/on",
     "hash_10e01ad5": 1,
     "iscategory": 0,
@@ -21,7 +21,7 @@
     "hash_43a952c1": 1,
     "maxvalue": 1,
     "name": "codcaster_qs_player_card",
-    "displayname": "localized17#hash_21a4d8254476d8dd",
+    "displayname": "localized17#codcaster/qs_player_card",
     "rangestartvalue": 0,
     "isdisabled": 0,
     "hash_d6897f56": 0,

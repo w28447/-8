@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_muertos_torque",
+    "type": "#tag",
+    "material": "#hash_73b061b74887476e",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#tags/muertos_torque",
+        "icon": "image#loot_ui_icon_tags_muertos_torque",
+        "isdefault": 0
+    }
+}

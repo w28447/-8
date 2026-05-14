@@ -13,7 +13,7 @@
     "menumusic": "lobby_mp",
     "room": "arena_pose",
     "hash_7f60c82f": 10,
-    "kicker": "localized17#hash_12df6ed539ca406a",
+    "kicker": "localized17#menu/arena_maintenance_caps",
     "isadvertised": 1,
     "maxclients": 10,
     "name": "director_online_mp_arena_matchmaking",

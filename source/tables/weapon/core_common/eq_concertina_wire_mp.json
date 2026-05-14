@@ -1,9 +1,9 @@
 {
     "name": "#eq_concertina_wire_mp",
     "baseWeapon": "#eq_concertina_wire",
-    "displayname": "#hash_27ca9e9ddb30522a",
+    "displayname": "#eq_concertina_wire/name",
     "weapon70": "#eq_concertina_wire",
-    "streamkey": "#hash_5566521dd70e38a6",
+    "streamkey": "#eq_concertina_wire_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

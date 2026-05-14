@@ -783,7 +783,7 @@ function elevator_move_to( elevator )
     elevator.active = 0;
     elevator enable_elevator_buys();
     elevator enable_callboxes();
-    elevator notify( #"hash_26d932820f7f5373" );
+    elevator notify( #"elevator_use_complete" );
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
@@ -1117,7 +1117,7 @@ function open_elev_doors()
                 }
                 
                 self.doors[ m ] thread relink_elev_doors( newpos2, self, 1 );
-                playsoundatposition( #"hash_5ef3b0941ea2aa74", newpos2 );
+                playsoundatposition( #"evt_elevator_office_door_open", newpos2 );
             }
             
             nd_elev2_in_war_room = getnode( "nd_elev2_in_war_room", "targetname" );
@@ -1173,7 +1173,7 @@ function open_elev_doors()
             pos3 = self.doors[ m ].startpos + self.doors[ m ].script_vector;
             newpos3 = ( pos3[ 0 ], pos3[ 1 ], self.doors[ m ].origin[ 2 ] );
             self.doors[ m ] thread relink_elev_doors( newpos3, self, 1 );
-            playsoundatposition( #"hash_5ef3b0941ea2aa74", newpos3 );
+            playsoundatposition( #"evt_elevator_office_door_open", newpos3 );
         }
         
         nd_elev2_in_level1 = getnode( "nd_elev2_in_level1", "targetname" );

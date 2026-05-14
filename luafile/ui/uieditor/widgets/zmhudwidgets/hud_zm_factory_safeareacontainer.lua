@@ -52,7 +52,7 @@ CoD.Hud_ZM_Factory_SafeAreaContainer.new = function ( f1_arg0, f1_arg1, f1_arg2,
 			AddZombieBGBNotification( self, f2_local0, f1_arg1, model )
 		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, 0xFE668F4EBC2E3F ) and not CoD.ModelUtility.IsGlobalModelValueEqualTo( "ZMHudGlobal.trials.hudDeactivated", 1 ) then
 			AddZombieNotification( self, f2_local0, f1_arg1, model )
-		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, 0x675B38B81564449 ) and not CoD.ModelUtility.IsGlobalModelValueEqualTo( "ZMHudGlobal.trials.hudDeactivated", 1 ) then
+		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, "zombie_callings_notification" ) and not CoD.ModelUtility.IsGlobalModelValueEqualTo( "ZMHudGlobal.trials.hudDeactivated", 1 ) then
 			CoD.ZombiesCallingsUtility.AddZombieCallingsNotification( self, f2_local0, model )
 		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, 0x58CF088766F3AFF ) and not CoD.ModelUtility.IsGlobalModelValueEqualTo( "ZMHudGlobal.trials.hudDeactivated", 1 ) then
 			AddZombieRushNotification( self, f2_local0, model, "Key" )
@@ -62,7 +62,7 @@ CoD.Hud_ZM_Factory_SafeAreaContainer.new = function ( f1_arg0, f1_arg1, f1_arg2,
 			CoD.ZombieUtility.AddTrialsRoundSplashNotification( self, f2_local0, model )
 		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, 0xE47C74793854333 ) and not CoD.ModelUtility.IsGlobalModelValueEqualTo( "ZMHudGlobal.trials.hudDeactivated", 1 ) then
 			CoD.ZombieUtility.SpecialZombieNotification( self, f2_local0, model )
-		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, 0x2F5757AD20BC3AE ) then
+		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, "zombie_notification_tcm_splash" ) then
 			CoD.ZombieUtility.AddTcmSplashNotification( self, f2_local0, model )
 		end
 	end )

@@ -5,7 +5,7 @@
     "xhash_60": "#hash_56fd11b3fbdd4886",
     "weapon70": "#tr_midburst_t8_operator",
     "weapon890": "#tr_midburst_t8_wz",
-    "streamkey": "#hash_be44f766b198004",
+    "streamkey": "#tr_midburst_t8_operator_soundbank",
     "scrstr_8c8": [
         "tag_cap_plug",
         "tag_flap_lft_lrg_stock_01_pba",
@@ -75,7 +75,7 @@
     "sound210": "#hash_271370c5b9078536",
     "sound240": "#hash_474a10cd847c7803",
     "sound250": "#hash_146e19cd67fe19de",
-    "sound260": "#hash_515f54aa1f553686",
+    "sound260": "#prj_crack_supersonic",
     "sound5e0": "#fly_scope_zoom",
     "sound600": "#hash_209cb2974ae55ec0",
     "sound610": "#hash_209cb2974ae55ec0",

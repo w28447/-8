@@ -126,7 +126,7 @@ function function_815e3997()
         }
         else
         {
-            trigger sethintstring( #"hash_c0173e448a7253f", 750 );
+            trigger sethintstring( #"zm_escape/move_gondola", 750 );
         }
         
         trigger setinvisibletoall();
@@ -676,7 +676,7 @@ function move_gondola( b_suppress_doors_close = 0 )
     
     foreach ( trigger in a_t_call )
     {
-        trigger sethintstring( #"hash_1923fe59e50dfb0e" );
+        trigger sethintstring( #"zm_escape/gondola_active" );
     }
     
     e_gondola = level.e_gondola;
@@ -849,7 +849,7 @@ function gondola_lights_red()
     foreach ( model in var_1d558ef4 )
     {
         model setmodel( #"p8_zm_esc_gondola_frame_light_red" );
-        playsoundatposition( #"hash_6e8a64e3abaab719", model.origin );
+        playsoundatposition( #"zmb_gondola_start_alert", model.origin );
         waitframe( 1 );
     }
     
@@ -1192,7 +1192,7 @@ function gondola_cooldown()
     
     foreach ( trigger in a_t_call )
     {
-        trigger sethintstring( #"hash_72dc5724ddfb88b5" );
+        trigger sethintstring( #"zm_escape/gondola_cooldown" );
     }
     
     wait 10;

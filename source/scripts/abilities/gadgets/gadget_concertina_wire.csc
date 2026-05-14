@@ -11,7 +11,7 @@
 function init_shared( var_4b51853b )
 {
     clientfield::register( "scriptmover", "concertinaWire_placed", 1, 5, "float", &function_6873a657, 0, 0 );
-    clientfield::register( "scriptmover", "concertinaWireDestroyed", 1, 1, "int", &function_8455c7c0, 0, 0 );
+    clientfield::register( "scriptmover", "concertinaWireDestroyed", 1, 1, "int", &concertina_wire_destroyed, 0, 0 );
     clientfield::register( "scriptmover", "concertinaWireDroopyBits", 1, 3, "int", &function_3a927971, 0, 0 );
     level.concertinawiresettings = spawnstruct();
     level.concertinawiresettings.bundle = getscriptbundle( var_4b51853b );
@@ -39,7 +39,7 @@ function function_34a7968c( localclientnum )
 // Params 7
 // Checksum 0x4ce3fc4f, Offset: 0x388
 // Size: 0x3c
-function function_8455c7c0( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function concertina_wire_destroyed( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     
 }
@@ -145,7 +145,7 @@ function function_1c2930c7( localclientnum )
             break;
         }
         
-        var_b43e8dc2 = player function_287dcf4b( level.concertinawiresettings.bundle.var_63aab046, level.concertinawiresettings.bundle.maxwidth, 0, 0, level.concertinawiresettings.concertinawireweapon );
+        var_b43e8dc2 = player function_287dcf4b( level.concertinawiresettings.bundle.maxplacementdistance, level.concertinawiresettings.bundle.maxwidth, 0, 0, level.concertinawiresettings.concertinawireweapon );
         
         if ( !isdefined( var_b43e8dc2 ) && !var_ccfe777 )
         {

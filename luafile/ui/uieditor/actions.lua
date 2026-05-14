@@ -612,13 +612,13 @@ function JoinSystemLinkServer( f97_arg0, f97_arg1, f97_arg2 )
 	local f97_local2 = nil
 	if f97_local1 == Enum.eModes[0x60063C67132EB69] then
 		local f97_local3 = LobbyData.GetLobbyMenuByName( LuaEnum.UI.DIRECTOR_LAN_CP )
-		f97_local2 = f97_local3[0xC45968D6338650E]
+		f97_local2 = f97_local3["maxlocalclientsnetwork"]
 	elseif f97_local1 == Enum.eModes[0x83EBA96F36BC4E5] then
 		local f97_local3 = LobbyData.GetLobbyMenuByName( LuaEnum.UI.DIRECTOR_LAN_MP )
-		f97_local2 = f97_local3[0xC45968D6338650E]
+		f97_local2 = f97_local3["maxlocalclientsnetwork"]
 	elseif f97_local1 == Enum.eModes[0x3723205FAE52C4A] then
 		local f97_local3 = LobbyData.GetLobbyMenuByName( LuaEnum.UI.DIRECTOR_LAN_ZM )
-		f97_local2 = f97_local3[0xC45968D6338650E]
+		f97_local2 = f97_local3["maxlocalclientsnetwork"]
 	end
 	if f97_local2 == nil then
 		f97_local2 = 1
@@ -951,7 +951,7 @@ function LaunchGamePrototype( f117_arg0, f117_arg1, f117_arg2 )
 	local f117_local2 = function ( f118_arg0, f118_arg1 )
 		local f118_local0 = LobbyData.GetLobbyMenuByName( f118_arg0 )
 		if f118_local0 then
-			f117_local1[f118_local0[0x8B72E07B55C3AC0]] = f118_arg1
+			f117_local1[f118_local0["id"]] = f118_arg1
 		end
 	end
 	
@@ -2180,7 +2180,7 @@ function NavigateToLobby_SelectionList( f237_arg0, f237_arg1, f237_arg2, f237_ar
 		if f237_local3 > 0 then
 			local f237_local4 = Engine.SecondsAsTime( f237_local3 )
 			if f237_local1 and f237_local0.eGameModes == Enum.eGameModes[0x95910ACF90F64AD] then
-				LuaUtils.UI_ShowErrorMessageDialog( f237_arg2, Engine[0xF9F1239CFD921FE]( 0xA5BCA09BFBE90BB, f237_local4 ), 0x9AEEA73CA9BBA3 )
+				LuaUtils.UI_ShowErrorMessageDialog( f237_arg2, Engine[0xF9F1239CFD921FE]( "menu/probation_given_public_match", f237_local4 ), 0x9AEEA73CA9BBA3 )
 				return 
 			elseif f237_local2 and f237_local0.eGameModes == Enum.eGameModes[0x58ECA70A244C08F] then
 				LuaUtils.UI_ShowErrorMessageDialog( f237_arg2, Engine[0xF9F1239CFD921FE]( 0x1E60B8AE3979C41, f237_local4 ), 0x9AEEA73CA9BBA3 )
@@ -2575,7 +2575,7 @@ function RestartGameImmediate( f291_arg0, f291_arg1 )
 	Engine.Exec( f291_arg1, "fade 0 0 0 255 0 0 1" )
 	Engine.Exec( f291_arg1, "silence" )
 	local f291_local0 = LobbyData.GetCurrentMenuTarget()
-	if (Engine.SessionModeIsMode( Enum[0x1DD23D27A61F09A][0x3E66A586897A605] ) == true) or (Engine.SessionModeIsMode( Enum[0x1DD23D27A61F09A][0xB674220A0C7377] ) == true) or f291_local0[0x8B72E07B55C3AC0] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_CUSTOM ) then
+	if (Engine.SessionModeIsMode( Enum[0x1DD23D27A61F09A][0x3E66A586897A605] ) == true) or (Engine.SessionModeIsMode( Enum[0x1DD23D27A61F09A][0xB674220A0C7377] ) == true) or f291_local0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_CUSTOM ) then
 		Engine.Exec( f291_arg1, "fast_restart" )
 	else
 		SendOwnMenuResponse( f291_arg0, f291_arg1, "restart_level_zm" )
@@ -3410,7 +3410,7 @@ function ClassOptionsResetToDefault( f360_arg0, f360_arg1, f360_arg2, f360_arg3 
 	if f360_local0 == Enum.eModes[0x60063C67132EB69] then
 		f360_local3 = 0x1C53105E8C011C4
 	elseif f360_local0 == Enum.eModes[0x3723205FAE52C4A] then
-		f360_local3 = 0x9EEE28789FE067A
+		f360_local3 = "zm_default_loadouts"
 		local f360_local5 = Engine.GetModelForController( f360_arg2 )
 		f360_local5 = f360_local5.selectedZMStory
 		f360_local4 = f360_local5 and f360_local5:get()
@@ -4648,10 +4648,10 @@ function GetGameplayOptionsAndSendToDlog( f470_arg0 )
 		0x449C35D713F0591,
 		0xC0183841682A478,
 		0x8E2603F64924C43,
-		0x51ACED7DF0546AF,
+		"healthbar_show_enemy",
 		0x908DA91B796EF6C,
 		0x4AE3D347A07EF76,
-		0xCA67B57C1673886,
+		"show_real_names",
 		0xA1248989633ACD3,
 		0x149D47F55A63FCE,
 		0x8307BBD1B08F4F6,
@@ -4669,8 +4669,8 @@ function GetGameplayOptionsAndSendToDlog( f470_arg0 )
 		0xE097D1CD549FC9F,
 		0x9EC6E9BBF1E624,
 		0xA8185C366CE482D,
-		0xDC87A9A3F0598F7,
-		0x5CAB10393A53422,
+		"altads_toggle",
+		"semtex_toggle",
 		0x7752D94F07335E2,
 		0x822BC17B9C05B55,
 		0x390921F2448418A,
@@ -4678,7 +4678,7 @@ function GetGameplayOptionsAndSendToDlog( f470_arg0 )
 		0xEB73EA37514AB9B,
 		0x6DE9FB5C4249D93,
 		0x8F129F338DA3F71,
-		0x17E6145DFB22A72,
+		"smartcover_toggle",
 		0x4450BE10E911B4A,
 		0x638BD10A42E5F63,
 		0x66E5DDF4F903021,

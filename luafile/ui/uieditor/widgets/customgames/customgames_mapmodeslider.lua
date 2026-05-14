@@ -82,7 +82,7 @@ CoD.CustomGames_MapModeSlider.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local TopBarFocus = LUI.UIImage.new( 0, 0, -28.5, 26.5, 0.5, 0.5, -3, 3 )
 	TopBarFocus:setAlpha( 0 )
 	TopBarFocus:setZRot( -90 )
-	TopBarFocus:setImage( RegisterImage( 0x7E8B272A3927DAB ) )
+	TopBarFocus:setImage( RegisterImage( "uie_ui_menu_cac_primary_button_top_bar_focused" ) )
 	TopBarFocus:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TopBarFocus )
 	self.TopBarFocus = TopBarFocus
@@ -108,7 +108,7 @@ CoD.CustomGames_MapModeSlider.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local ItemFrame = LUI.UIImage.new( 0, 0, -3.5, 403.5, 0, 0, -1, 51 )
 	ItemFrame:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	ItemFrame:setAlpha( 0.5 )
-	ItemFrame:setImage( RegisterImage( 0xD0077E26B9C8D34 ) )
+	ItemFrame:setImage( RegisterImage( "uie_ui_menu_store_element_frame_gray" ) )
 	ItemFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	ItemFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	ItemFrame:setupNineSliceShader( 12, 164 )

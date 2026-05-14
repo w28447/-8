@@ -3,6 +3,6 @@
     "hash_ce9b2d06": "gsol_zm_powerups",
     "type": "gamesettingoptioncategory",
     "name": "gsoc_zm_powerups",
-    "hash_40c3c9f045a1912d:hash_dea17465": "localized17#hash_40c3c9f045a1912d",
+    "menu/general_settings_desc:hash_dea17465": "localized17#menu/general_settings_desc",
     "menu/powerups_caps:hash_608158f2": "localized17#menu/powerups_caps"
 }

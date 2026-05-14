@@ -107,7 +107,7 @@ CoD.DirectorPlaylistOptionInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local MiddleText = LUI.UIText.new( 0.02, 0.98, 0, 0, 0.5, 0.5, -10, 12 )
 	MiddleText:setAlpha( 0 )
-	MiddleText:setText( LocalizeToUpperString( 0xA43B10D9DA121A ) )
+	MiddleText:setText( LocalizeToUpperString( "menu/waiting_caps" ) )
 	MiddleText:setTTF( "ttmussels_regular" )
 	MiddleText:setLetterSpacing( 6 )
 	MiddleText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

@@ -511,7 +511,7 @@ Lobby.Pregame.PrestageMonitorSpecialRules = function ()
 		Lobby.Timer.HostingLobby( {
 			controller = Engine.GetPrimaryController(),
 			lobbyType = Enum.LobbyType[0x92676CF5B6FCD43],
-			mainMode = f29_local1[0xEB7DDC7F079D51B],
+			mainMode = f29_local1["mainmode"],
 			lobbyTimerType = f29_local1[0x558B67A321D1120],
 			matchEnded = false,
 			status = Lobby.Timer.LOBBY_STATUS.RESET_TO_NEED

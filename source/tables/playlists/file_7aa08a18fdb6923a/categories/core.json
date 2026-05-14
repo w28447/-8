@@ -1,6 +1,6 @@
 {
     "name": "#core",
-    "description": "#hash_5b4dbd591f8ca14",
+    "description": "#menu/core",
     "lobbyMainMode": "MULTIPLAYER",
     "hidden": false,
     "environmentMask": 7,
@@ -611,7 +611,7 @@
             "bundle": {}
         },
         {
-            "name": "#hash_20867ea7f86fc969",
+            "name": "#entry_mp_core_ffa",
             "description": "#hash_659a967e48f78a5b",
             "unique_name": "#hash_4aa8774e63deef0d",
             "visibleProfileVar": "#hash_5e563e6544ff9705",
@@ -902,7 +902,7 @@
         {
             "name": "#hash_4f342c16bffb5bdc",
             "description": "#hash_2ebdae854ae04002",
-            "unique_name": "#hash_3528370fd5e5576b",
+            "unique_name": "#menu/conf_desc",
             "visibleProfileVar": "#hash_5e563e6544ff9705",
             "lobbyMainMode": "MULTIPLAYER",
             "image": "#ui_icon_gamemode_killconfirmed",
@@ -1191,7 +1191,7 @@
         {
             "name": "#hash_554fe0a85e84bc55",
             "description": "#hash_491b87e11827cf7",
-            "unique_name": "#hash_7fe554c515cc1a67",
+            "unique_name": "#menu/teams_take_turns_defending_no_spawn",
             "visibleProfileVar": "#hash_5e563e6544ff9705",
             "lobbyMainMode": "MULTIPLAYER",
             "image": "#ui_icon_gamemode_searchanddestroy",
@@ -1469,9 +1469,9 @@
             "bundle": {}
         },
         {
-            "name": "#hash_32a8bca802efdd52",
+            "name": "#entry_mp_core_dom",
             "description": "#hash_537f207e3e7d35f8",
-            "unique_name": "#hash_acc4fc4a376a207",
+            "unique_name": "#menu/capture_and_hold_the",
             "visibleProfileVar": "#hash_5e563e6544ff9705",
             "lobbyMainMode": "MULTIPLAYER",
             "image": "#ui_icon_gamemode_domination",
@@ -2047,7 +2047,7 @@
             "bundle": {}
         },
         {
-            "name": "#hash_3c4e6ca850a19261",
+            "name": "#entry_mp_core_tdm",
             "description": "#hash_4aabb07df17dbfbb",
             "unique_name": "#hash_15d9df5b420b29ad",
             "visibleProfileVar": "#hash_5e563e6544ff9705",
@@ -2125,7 +2125,7 @@
                 },
                 {
                     "type": "unk:3",
-                    "name": "#hash_3378f6e813f4494a",
+                    "name": "#use_skill",
                     "platformMask": 7,
                     "environmentMask": 7,
                     "utcStartTime": 0,
@@ -3108,7 +3108,7 @@
         },
         {
             "name": "#hash_cc0d1cfcb7ad2f0",
-            "description": "#hash_743699a3183be684",
+            "description": "#playlist/objective_moshpit",
             "unique_name": "#hash_45537e6afc7239ac",
             "visibleProfileVar": "#hash_5e563e6544ff9705",
             "lobbyMainMode": "MULTIPLAYER",

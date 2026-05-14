@@ -605,7 +605,7 @@ function function_3b0db3c2()
 {
     level.prematchperiod = max( level.prematchperiod, 5 );
     level thread character_banter::start();
-    level waittill( #"hash_78e53817cafb5265" );
+    level waittill( #"start_warzone_button" );
     level thread character_banter::stop();
     println( "<dev string:x64c>" );
     gameadvertisement::setadvertisedstatus( 0 );
@@ -690,7 +690,7 @@ function start_warzone()
     
     if ( isdefined( level.deathcirclerespawn ) && level.deathcirclerespawn )
     {
-        level callback::add_callback( #"hash_3057417db7f8acdd", &function_77319881 );
+        level callback::add_callback( #"death_circle_moving", &function_77319881 );
     }
     
     if ( sessionmodeisonlinegame() && getdvarint( #"hash_6aad986495699040", 0 ) != 0 )
@@ -1331,7 +1331,7 @@ function function_61c315e0()
     if ( infection::function_74650d7() )
     {
         params = globallogic::function_9c839e9();
-        function_ded0be06( params );
+        infection_end_game( params );
     }
 }
 
@@ -1385,15 +1385,15 @@ function function_eb1c0d37( teams )
 // Params 1
 // Checksum 0x2a72b663, Offset: 0x5250
 // Size: 0x51c
-function function_ded0be06( params )
+function infection_end_game( params )
 {
     if ( function_eb1c0d37( params.var_dfa2cc2c ) )
     {
-        level notify( #"hash_334bade8f4c0b69f" );
+        level notify( #"infection_end_game" );
     }
     else
     {
-        level endon( #"hash_334bade8f4c0b69f" );
+        level endon( #"infection_end_game" );
         
         if ( flagsys::get( #"hash_402b08cbe8f533d2" ) )
         {
@@ -1490,7 +1490,7 @@ function function_5af3a29( params )
 {
     if ( infection::function_74650d7() )
     {
-        level function_ded0be06( params );
+        level infection_end_game( params );
         return;
     }
     
@@ -1889,7 +1889,7 @@ function function_73b0f715( player = undefined )
         }
     }
     
-    level notify( #"hash_78e53817cafb5265" );
+    level notify( #"start_warzone_button" );
 }
 
 // Namespace warzone/warzone
@@ -2671,7 +2671,7 @@ function function_77319881()
     if ( !function_47851c07() )
     {
         player_reinsertion::function_8ea9be1c();
-        level callback::remove_callback( #"hash_3057417db7f8acdd", &function_77319881 );
+        level callback::remove_callback( #"death_circle_moving", &function_77319881 );
     }
 }
 

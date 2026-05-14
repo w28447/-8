@@ -1,7 +1,7 @@
 {
     "name": "#zombie_perk_totem_deadshot",
     "baseWeapon": "#zombie_perk_totem_deadshot",
-    "streamkey": "#hash_31a6d70e6fb7a6db",
+    "streamkey": "#zombie_perk_totem_deadshot_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",
@@ -33,7 +33,7 @@
     "sound4e0": "#hash_7de02f3f0a5f070b",
     "tunables1": "#hash_2c79f27fac9515c3",
     "gestureTables": [
-        "#hash_703351350215bcff"
+        "#gestable_zombie_perk_totem_deadshot"
     ],
     "viewmodel": [
         "#wpn_t8_zm_perk_totem_deadshot_view"

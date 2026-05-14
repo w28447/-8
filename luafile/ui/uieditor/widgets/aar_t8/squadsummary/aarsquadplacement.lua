@@ -10,7 +10,7 @@ CoD.AARSquadPlacement.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local PlaceLabel = LUI.UIText.new( 0, 0, 5, 230, 0.5, 0.5, -20, 20 )
 	PlaceLabel:setRGB( 0.9, 0.89, 0.78 )
-	PlaceLabel:setText( LocalizeToUpperString( 0x62C273392778D63 ) )
+	PlaceLabel:setText( LocalizeToUpperString( "aar/place" ) )
 	PlaceLabel:setTTF( "dinnext_regular" )
 	PlaceLabel:setLetterSpacing( 2 )
 	PlaceLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

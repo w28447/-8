@@ -535,7 +535,7 @@ else
 						f32_local3.potmClient:set( f32_local2 )
 					end
 				end
-			elseif modelValue == 0xEE32E40C182320B then
+			elseif modelValue == "downbutnotout_transition" then
 				assert( CoD.isWarzone )
 				f31_arg0.downButNotOutHUD = LUI.createMenu.DownButNotOut( f31_arg0.controller )
 				local f32_local1 = f31_arg0:getParent()
@@ -943,7 +943,7 @@ else
 				local f59_local8 = LUI.UIElement.new()
 				f59_local8:setLeftRight( true, true, 0, 0 )
 				f59_local8:setTopBottom( true, true, 0, 0 )
-				f59_local8:setImage( RegisterMaterial( 0xD76836DED6B251B ) )
+				f59_local8:setImage( RegisterMaterial( "compassping_enemy_diamond_bottom" ) )
 				f59_local8:setRGB( CoD.ColorUtility.ExplodeColor( CoD.ColorUtility.GetColorBlindColorForPlayer( f59_arg1, "EnemyScorestreakTarget" ) ) )
 				f59_arg0:addForceClosedChild( f59_local8 )
 				f59_local8:setupTargetHighlights_Enemy()
@@ -956,7 +956,7 @@ else
 			local f59_local8 = LUI.UIElement.new()
 			f59_local8:setLeftRight( true, true, 0, 0 )
 			f59_local8:setTopBottom( true, true, 0, 0 )
-			f59_local8:setImage( RegisterMaterial( 0xD76836DED6B251B ) )
+			f59_local8:setImage( RegisterMaterial( "compassping_enemy_diamond_bottom" ) )
 			f59_local8:setRGB( CoD.ColorUtility.ExplodeColor( CoD.ColorUtility.GetColorBlindColorForPlayer( f59_arg1, "PlayerYellow" ) ) )
 			f59_arg0:addForceClosedChild( f59_local8 )
 			f59_local8:setupTargetHighlights_Friendly()

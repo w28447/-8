@@ -36,7 +36,7 @@ CoD.DossierProgressBulletPoint.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local dashBacking = LUI.UIImage.new( 0, 0, 2, 32, 0, 0, 0.5, 30.5 )
 	dashBacking:setScale( 1.5, 1.5 )
-	dashBacking:setImage( RegisterImage( 0x4BB3E0B0E9A1D7E ) )
+	dashBacking:setImage( RegisterImage( "uie_ui_menu_cac_allocation_pip_empty" ) )
 	self:addElement( dashBacking )
 	self.dashBacking = dashBacking
 	

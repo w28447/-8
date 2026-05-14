@@ -46,14 +46,14 @@
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "hash_6a6f3045bdae0240:hash_4be786c9": "localized17#hash_6a6f3045bdae0240",
+                        "menu/hud_vehicle_fire:hash_4be786c9": "localized17#menu/hud_vehicle_fire",
                         "hash_334a8e60": "left",
                         "prompt": "+vehicleattack"
                     },
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "hash_4c7d903a026627fc:hash_4be786c9": "localized17#hash_4c7d903a026627fc",
+                        "menu/hud_vehicle_exit:hash_4be786c9": "localized17#menu/hud_vehicle_exit",
                         "hash_334a8e60": "left",
                         "prompt": "+activate"
                     },

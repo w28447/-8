@@ -71,7 +71,7 @@ CoD.OverlayUtility.AddSystemOverlay( "ResetToDefault", {
 		if f7_local1 then
 			f7_local0 = f7_local1.customClassName:get() or ""
 		end
-		return Engine[0xF9F1239CFD921FE]( 0x6C7FD70D0AC5247, f7_local0 )
+		return Engine[0xF9F1239CFD921FE]( "menu/which_default_class_desc", f7_local0 )
 	end,
 	categoryType = CoD.OverlayUtility.OverlayTypes.GenericMessage,
 	listDatasource = "ResetDefaultClass",
@@ -128,7 +128,7 @@ CoD.OverlayUtility.AddSystemOverlay( "PurchaseExtraSlotsConfirmation", {
 	end,
 	codpointcostString = function ( f17_arg0, f17_arg1 )
 		if f17_arg1.itemCODPointCost > 0 and Engine[0xF40679B550DCCA2]( f17_arg0, CoD.Currencies.COD_POINTS ) < f17_arg1.itemCODPointCost then
-			return Engine[0xF9F1239CFD921FE]( 0x23B61EC19CA8A6D, f17_arg1.itemCODPointCost )
+			return Engine[0xF9F1239CFD921FE]( "menu/codpoint_cost", f17_arg1.itemCODPointCost )
 		else
 			return ""
 		end
@@ -197,7 +197,7 @@ CoD.OverlayUtility.AddSystemOverlay( "PurchaseExtraSlotsConfirmation", {
 			if f18_arg1.itemCODPointCost > 0 and Engine[0xF40679B550DCCA2]( f19_arg0, CoD.Currencies.COD_POINTS ) < f18_arg1.itemCODPointCost then
 				table.insert( f19_local0, f19_local1( 0x63D5409DEC36DFA, CoD.FrontendCACUtility.GoBackAndPurchaseCodpointsAction, true, false ) )
 			elseif f18_arg1.itemCODPointCost > 0 then
-				table.insert( f19_local0, f19_local1( Engine[0xF9F1239CFD921FE]( 0x6804EA01CE713AC, CoD.CACUtility.GetExtraSlotCODPointCost() ), f19_local2, true, false ) )
+				table.insert( f19_local0, f19_local1( Engine[0xF9F1239CFD921FE]( "mpui/bm_trade_cod_points", CoD.CACUtility.GetExtraSlotCODPointCost() ), f19_local2, true, false ) )
 			end
 			table.insert( f19_local0, f19_local1( 0x6DA4540B4705513, f19_local3, false, false ) )
 			return f19_local0

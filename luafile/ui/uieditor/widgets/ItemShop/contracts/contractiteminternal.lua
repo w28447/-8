@@ -68,7 +68,7 @@ CoD.ContractItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local TileDots = LUI.UIImage.new( 0, 0, 1, 417, 0, 0, 125, 189 )
 	TileDots:setAlpha( 0 )
-	TileDots:setImage( RegisterImage( 0x3C8D2DBD72EBF38 ) )
+	TileDots:setImage( RegisterImage( "uie_ui_menu_common_tile_dot" ) )
 	TileDots:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TileDots:setShaderVector( 0, 0, 0, 0, 0 )
 	TileDots:setupNineSliceShader( 12, 12 )

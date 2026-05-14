@@ -69,7 +69,7 @@ CoD.EmblemIconClipboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 		} )
 	end, false )
 	Paste:setAlpha( 0.25 )
-	Paste.label:setText( Engine[0xF9F1239CFD921FE]( 0xC557F1B0FF34983 ) )
+	Paste.label:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_layer_paste" ) )
 	Paste:subscribeToGlobalModel( f1_arg1, "Controller", "right_stick_button_image", function ( model )
 		local f6_local0 = model:get()
 		if f6_local0 ~= nil then

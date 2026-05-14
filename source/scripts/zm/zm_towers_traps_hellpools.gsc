@@ -130,7 +130,7 @@ function function_b589dae1()
         
         foreach ( e_hellpool in level.a_e_hellpools )
         {
-            e_hellpool notify( #"hash_5aa6001392300725" );
+            e_hellpool notify( #"trap_deactivate_early" );
         }
     }
 }
@@ -407,7 +407,7 @@ function activate_trap( e_player )
         
         self flag::set( "activated" );
         self thread function_692db12();
-        self waittilltimeout( 15, #"hash_5aa6001392300725" );
+        self waittilltimeout( 15, #"trap_deactivate_early" );
         self deactivate_trap();
     }
 }

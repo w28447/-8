@@ -331,7 +331,7 @@ function function_1493a309( e_player )
         e_player playsound( #"hash_66a500811a472fac" );
         e_player clientfield::set_to_player( "" + #"pickup_dung", 1 );
         e_player util::delay( 5, "disconnect", &clientfield::set_to_player, "" + #"pickup_dung", 0 );
-        level notify( #"hash_694f58e8bc5dd48", { #e_player:e_player } );
+        level notify( #"picked_up_dung", { #e_player:e_player } );
     }
 }
 
@@ -378,7 +378,7 @@ function function_2d074f7d( params )
         }
         
         player.var_7df228aa.n_zombie_kills++;
-        player notify( #"hash_4093e684a539c91d" );
+        player notify( #"player_has_killed" );
         
         if ( player.var_7df228aa.n_zombie_kills == 10 )
         {
@@ -488,7 +488,7 @@ function function_1b848dc2()
     
     while ( true )
     {
-        s_waitresult = self waittilltimeout( 240, #"hash_4093e684a539c91d", #"death" );
+        s_waitresult = self waittilltimeout( 240, #"player_has_killed", #"death" );
         
         if ( isalive( self ) && s_waitresult._notify == "timeout" )
         {
@@ -992,7 +992,7 @@ function function_b8dfa139( str_event )
         case #"hash_c65be15b1aeb521":
             var_9c93ba8f = 5;
             break;
-        case #"hash_2048e4bc4cd51960":
+        case #"elephant_weak_point":
             var_9c93ba8f = 5;
             break;
         case #"trap_activated":
@@ -1015,13 +1015,13 @@ function function_b8dfa139( str_event )
         case #"hash_5986c925a370e137":
             var_9c93ba8f = 20;
             break;
-        case #"hash_300454c11a18ae03":
+        case #"challenge_complete_easy":
             var_9c93ba8f = 5;
             break;
-        case #"hash_39efd1a80488c531":
+        case #"challenge_complete_med":
             var_9c93ba8f = 10;
             break;
-        case #"hash_69fc3ba948618464":
+        case #"challenge_complete_hard":
             var_9c93ba8f = 15;
             break;
         case #"hash_4122108abe671eb7":
@@ -1036,7 +1036,7 @@ function function_b8dfa139( str_event )
         case #"player_death":
             var_9c93ba8f = -13;
             break;
-        case #"hash_1f2dfda53e67bf22":
+        case #"trap_kill_self":
             var_9c93ba8f = -12;
             break;
         case #"crawler_created":
@@ -1247,7 +1247,7 @@ function function_acab98ce( var_82c32aa7, var_9c93ba8f, var_ac39950d = 0, str_ev
     else
     {
         self clientfield::set_to_player( "snd_crowd_react", var_ee93032f );
-        self notify( #"hash_722941ef1aaab69f", { #var_ac39950d:var_ac39950d, #str_event:str_event } );
+        self notify( #"crowd_reacted", { #var_ac39950d:var_ac39950d, #str_event:str_event } );
     }
     
     /#
@@ -1280,7 +1280,7 @@ function function_bdb90d4()
     for ( var_8b88a695 = array::find( var_a849ed96, var_8f46fbc3 ); true ; var_8b88a695 = var_4245b6a3 )
     {
         b_announcer = 0;
-        s_waitresult = self waittill( #"hash_722941ef1aaab69f" );
+        s_waitresult = self waittill( #"crowd_reacted" );
         var_ac39950d = s_waitresult.var_ac39950d;
         var_aa1b1bfd = self.var_7df228aa.var_21ce4da6;
         var_4245b6a3 = array::find( var_a849ed96, var_aa1b1bfd );
@@ -1454,7 +1454,7 @@ function function_6ddff873()
 function function_75d594ec()
 {
     level endon( #"end_game" );
-    level waittill( #"hash_7b9245ff51f3d4f7" );
+    level waittill( #"special_round_ending" );
     
     if ( zm_audio::sndmusicsystem_isabletoplay() )
     {
@@ -1616,7 +1616,7 @@ function function_8e83be5d()
                 if ( isplayer( waitresult.e_victim ) )
                 {
                     e_player = waitresult.e_victim;
-                    str_event = #"hash_1f2dfda53e67bf22";
+                    str_event = #"trap_kill_self";
                 }
                 else
                 {
@@ -1790,12 +1790,12 @@ function function_308a32f0( e_player )
     {
         switch ( cmd )
         {
-            case #"hash_b988aa7a2727ae5":
+            case #"crowd_throw_item_immediate_good":
                 level flag::set( #"crowd_throw_item_immediate" );
                 level flag::set( #"hash_1a9f6d0c1e7684b4" );
                 level flag::clear( #"hash_80fa0541e21f744" );
                 break;
-            case #"hash_4840e9ef3902deb3":
+            case #"crowd_throw_item_immediate_bad":
                 level flag::set( #"crowd_throw_item_immediate" );
                 level flag::clear( #"hash_1a9f6d0c1e7684b4" );
                 level flag::set( #"hash_80fa0541e21f744" );
@@ -1895,9 +1895,9 @@ function function_308a32f0( e_player )
             case #"first_tiger_kill":
             case #"hash_1dc206ff31de03eb":
             case #"hash_1ecab55fd270f67b":
-            case #"hash_1f2dfda53e67bf22":
+            case #"trap_kill_self":
             case #"crawler_kill":
-            case #"hash_2048e4bc4cd51960":
+            case #"elephant_weak_point":
             case #"heavy_kill":
             case #"elephant_rider_kill":
             case #"hash_3d85834be3aff6d2":

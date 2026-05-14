@@ -17,14 +17,14 @@ CoD.TempestReticleInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local ReticleLineBottom = LUI.UIImage.new( 0.5, 0.5, -9, 9, 0.5, 0.5, -13, 59 )
 	ReticleLineBottom:setAlpha( 0.8 )
-	ReticleLineBottom:setImage( RegisterImage( 0xFD62A360F99E63 ) )
+	ReticleLineBottom:setImage( RegisterImage( "uie_tempest_reticle_line" ) )
 	ReticleLineBottom:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ReticleLineBottom )
 	self.ReticleLineBottom = ReticleLineBottom
 	
 	local ReticleLineTop = LUI.UIImage.new( 0.5, 0.5, -9, 9, 0.5, 0.5, -57, 13 )
 	ReticleLineTop:setAlpha( 0.8 )
-	ReticleLineTop:setImage( RegisterImage( 0xFD62A360F99E63 ) )
+	ReticleLineTop:setImage( RegisterImage( "uie_tempest_reticle_line" ) )
 	ReticleLineTop:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ReticleLineTop )
 	self.ReticleLineTop = ReticleLineTop

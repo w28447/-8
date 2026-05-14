@@ -3,7 +3,7 @@
     "baseWeapon": "#hero_annihilator",
     "displayname": "#weapon/hero_annihilator",
     "weapon70": "#hero_annihilator",
-    "streamkey": "#hash_6cee006a1eb3d40f",
+    "streamkey": "#hero_annihilator_soundbank",
     "scrstr_8c8": [
         "tag_ability_hero"
     ],
@@ -48,9 +48,9 @@
             "1 0.05"
         ]
     ],
-    "firesound": "#hash_1b854c1caea8c3e1",
-    "firesoundplayer": "#hash_1603791cf463ace8",
-    "sound260": "#hash_3688e306f64ced77",
+    "firesound": "#wpn_annihilator_fire_npc",
+    "firesoundplayer": "#wpn_annihilator_fire_plr",
+    "sound260": "#prj_crack_hero_annihilator",
     "sound3e0": "#hash_60f9893b7fbb721d",
     "gadgetreadysoundplayer": "#hash_180974fd54498192",
     "sound600": "#hash_72a07537a35e0368",

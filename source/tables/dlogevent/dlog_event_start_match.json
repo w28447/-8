@@ -46,7 +46,7 @@
                         "type": "UINT16"
                     },
                     {
-                        "name": "#hash_56a1b6d783aa7a25",
+                        "name": "#utc_timestamp_sent",
                         "scrName": "#hash_ee3228f8",
                         "type": "UINT32"
                     },
@@ -195,7 +195,7 @@
             "type": "BOOL"
         },
         {
-            "name": "#hash_27f986f9f86c15ef",
+            "name": "#is_4k",
             "scrName": "#hash_42991f40",
             "type": "BOOL"
         },
@@ -235,7 +235,7 @@
             "type": "UINT64"
         },
         {
-            "name": "#hash_6e58cdc751af2093",
+            "name": "#is_igr_paid",
             "scrName": "#hash_b9d85357",
             "type": "BOOL"
         },

@@ -1,5 +1,5 @@
 {
-    "hinttext": "localized17#hash_6257839640ebbf4f",
+    "hinttext": "localized17#menu/draft_required_clients_hint",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value3": "2",
@@ -10,7 +10,7 @@
     "type": "gamesettings",
     "hash_5a6dee5a": 0,
     "name": "draft_required_clients",
-    "displayname": "localized17#hash_4be2f986e87cb449",
+    "displayname": "localized17#menu/draft_required_clients",
     "label5": "localized17#menu/noloc",
     "label4": "localized17#menu/noloc",
     "label6": "localized17#menu/noloc",

@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_wetwork_joker_gun",
+    "type": "#gesture",
+    "gesture": "#hash_179463a7c99b37c3",
+    "gesture2": "#boast_wetwork_joker_gun_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/shooting_blanks",
+        "icon": "image#ui_icon_emotes_jokersgun",
+        "isdefault": 0
+    }
+}

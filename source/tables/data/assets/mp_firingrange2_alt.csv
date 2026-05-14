@@ -27,7 +27,7 @@ physconstraints,#hash_34b55dc6a81ea8a1
 physconstraints,d#hash_3dc6174bbfc0ab3b
 physconstraints,d#hash_402ab258a825d477
 physconstraints,#hash_4946810e3935b4d5
-physconstraints,#hash_545f974ab282c717
+physconstraints,#phc_veh_mphd_civ_tiara
 physconstraints,#veh_t7_door_r_front_hinge_pc
 physconstraints,#hash_5dbf3624dba6d10c
 physconstraints,d#hash_7a720825351a5a98
@@ -5926,8 +5926,8 @@ image,d#i_t7_snow_powder_01_n
 image,#i_t7_snow_powder_01_r
 image,#i_t7_water_base_c
 image,#hash_44a30efb17418ef
-image,#hash_44c43be6fb28233
-image,#hash_44c4ebe6fb294e4
+image,#jun_art_chain_n
+image,#jun_art_chain_c
 image,#i_mtl_p8_col_vista_foliage_jungle_young_palm_proxy_albedo
 image,d#i_t7_decal_grunge_dirty_sml_c
 image,#i_mtl_p8_wz_supply_stash_health_extras_o
@@ -11306,8 +11306,8 @@ image,#hash_7fe3cdeb106e3416
 image,#i_t7_metal_rust_ceiling_01_n
 image,#hash_7ff383f2c3687b12
 image,#hash_7ff384f2c3687cc5
-streamkey,#hash_1a037596e1dc9768
-streamkey,#hash_70f7f6192fff1b85
+streamkey,#mp_firingrange2_alt_all_stream
+streamkey,#mp_firingrange2_alt_all_loaded
 streamkey,#hash_be9752f2f525b32
 streamkey,#hash_1276ff525a4de4d3
 sound,#mp_firingrange2_alt.all
@@ -11372,7 +11372,7 @@ surfacesounddef,d#hash_2c191e6284ce597
 surfacesounddef,#surface_heli_impact
 surfacesounddef,d#hash_3d9213dabaf08c81
 surfacesounddef,d#hash_5d772ccdaa011a7f
-surfacesounddef,#hash_6a9264c7627e1b73
+surfacesounddef,#phy_glass_bottle_sounddef
 surfacesounddef,#hash_77789965ad08507e
 entitysoundimpacts,d#victim_raps_impact
 entitysoundimpacts,d#entity_bounce
@@ -11422,7 +11422,7 @@ image,#terrain_cutout_maps_default
 terraingfx,#maps/mp/mp_firingrange2_alt.d3dbsp
 streamkey,#hash_125a84f5db212dad
 streamkey,#hash_131de281d862348d
-streamkey,#hash_2949fe04f77afab2
+streamkey,#mp_firingrange2_alt_sst_0_0
 material,d#hash_c5a1ca8319cf
 material,d#hash_c7a1ca831d35
 material,d#hash_3c3a1ca854c40
@@ -13778,7 +13778,7 @@ material,#mc/mtl_p7_zm_ori_gutter_02
 material,#mc/mtl_p7_zm_ori_gutter_01
 material,d#mc/mtl_veh_t8_mil_heli_light_engine_titanium
 material,#wc/t7_decal_grunge_water_stain_02
-material,#hash_4c240c1358e0a69d
+material,#wc/jun_art_chain
 material,#hash_4c3577183fe86d4c
 material,#hash_4c413fe6ae4a1c85
 material,#mc/mtl_veh_mphd_tiara_int_engine_blue_dead
@@ -14115,7 +14115,7 @@ material,#hash_577f01229204a67e
 material,#mc/mtl_p7_fir_post_wood2
 material,#mc/mtl_p7_zm_tra_water_tower_dirt
 material,#mc/mtl_p7_fir_light_industrial_metal_black
-material,#hash_57d782b5d9a20669
+material,#wc/jun_art_metal_brushed
 material,#hash_57dada1cc88b4d6a
 material,#mc/mtl_p7_fir_wheel_gate_rubber
 material,#hash_57e54bae0d049ddc
@@ -15407,12 +15407,12 @@ material,d#ei/gfx_distort_heat
 fx,#hash_bf15adbbf5e9148
 fx,#hash_e79abfbba75ab21
 fx,#hash_753e4b6da0413140
-impactsoundstable,#hash_d698a0c5be3e240
-impactsoundstable,d#hash_1f8c37cb2cf6c55c
-impactsoundstable,d#hash_368fb7ec6eff7aa6
-impactsoundstable,#hash_3c179f6b071380af
+impactsoundstable,#phy_glass_bottle
+impactsoundstable,d#phy_rock_small
+impactsoundstable,d#phy_plastic_bucket
+impactsoundstable,#phy_plastic_small
 impactsoundstable,#veh_heli_impact
-impactsoundstable,d#hash_695bd5aa13e21e64
+impactsoundstable,d#phy_metal_pan
 maptableentrylevelassets,#mp_firingrange2_alt
 physpreset,#p7_cinder_block_broken_piece_2_1
 physpreset,#p7_jar_glass_lrg
@@ -16857,7 +16857,7 @@ staticlevelfxlist,#maps/mp/mp_firingrange2_alt.d3dbsp
 surfacefxtable,#hash_6c6f1a0dfa7afdca
 entityfximpacts,d#entity_enter
 impactsfxtable,#hash_666ca9c33b54789f
-physpreset,#hash_60a446939d0686a1
+physpreset,#heli_physpreset
 xmodel,#veh_t8_mil_helicopter_light_transport_warzone_black_dest
 scriptbundle,#p8_fxanim_mp_fir_flyover_bundle
 entitylist,#maps/mp/mp_firingrange2_alt.d3dbsp

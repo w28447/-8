@@ -237,14 +237,14 @@ function function_e5fdca70( origin, angles, player )
 // Size: 0x428
 function function_6fe5a945( player )
 {
-    assert( isdefined( level.concertinawiresettings.bundle.var_63aab046 ) );
+    assert( isdefined( level.concertinawiresettings.bundle.maxplacementdistance ) );
     
     if ( !isdefined( player ) || !isdefined( player.concertinawire ) )
     {
         return 0;
     }
     
-    var_b43e8dc2 = player function_287dcf4b( level.concertinawiresettings.bundle.var_63aab046, level.concertinawiresettings.bundle.maxwidth, 0, 0, level.concertinawiresettings.concertinawireweapon );
+    var_b43e8dc2 = player function_287dcf4b( level.concertinawiresettings.bundle.maxplacementdistance, level.concertinawiresettings.bundle.maxwidth, 0, 0, level.concertinawiresettings.concertinawireweapon );
     
     if ( !var_b43e8dc2.isvalid )
     {
@@ -615,7 +615,7 @@ function function_dd007be2()
 {
     level endon( #"game_ended" );
     self.owner endon( #"disconnect", #"joined_team", #"changed_specialist" );
-    self endon( #"hash_c72d58e3d4735b" );
+    self endon( #"concertina_wire_destroyed" );
     waitresult = self waittill( #"death" );
     
     if ( !isdefined( self ) )
@@ -675,7 +675,7 @@ function function_a1253947()
 function destroyconcertinawire( isselfdestruct )
 {
     concertinawire = self;
-    concertinawire notify( #"hash_c72d58e3d4735b" );
+    concertinawire notify( #"concertina_wire_destroyed" );
     concertinawire clientfield::set( "enemyequip", 0 );
     concertinawire clientfield::set( "friendlyequip", 0 );
     
@@ -706,9 +706,9 @@ function destroyconcertinawire( isselfdestruct )
         }
     }
     
-    if ( isdefined( level.concertinawiresettings.bundle.var_bb6c29b4 ) && isdefined( self.var_d02ddb8e ) && self.var_d02ddb8e == getweapon( #"shock_rifle" ) )
+    if ( isdefined( level.concertinawiresettings.bundle.shockrifledestructionfx ) && isdefined( self.var_d02ddb8e ) && self.var_d02ddb8e == getweapon( #"shock_rifle" ) )
     {
-        playfx( level.concertinawiresettings.bundle.var_bb6c29b4, concertinawire.origin );
+        playfx( level.concertinawiresettings.bundle.shockrifledestructionfx, concertinawire.origin );
     }
     
     removeindex = -1;
@@ -1009,12 +1009,12 @@ function function_f067d867( concertinawire )
         
         if ( var_e8c58890 )
         {
-            player playsound( #"hash_4b5965717e4efc71" );
+            player playsound( #"mpl_concertina_wire_hit" );
             player.var_45650309 = gettime();
             
             if ( ( isdefined( var_50487836 ) ? var_50487836 : 0 ) && !var_434fa90d )
             {
-                player gestures::function_56e00fbf( #"hash_3e06c757e4b20f4f", undefined, 0 );
+                player gestures::function_56e00fbf( #"gestable_concertina_reaction", undefined, 0 );
             }
         }
         
@@ -1139,7 +1139,7 @@ function function_a9160578( damagedealt, player )
     
     if ( isdefined( level.concertinawiresettings.bundle.damagescorethreshold ) && self.damagedealt >= level.concertinawiresettings.bundle.damagescorethreshold )
     {
-        scoreevents::processscoreevent( #"hash_6024b59ca1d3b641", self.owner, undefined, self.weapon, self.playersdamaged.size );
+        scoreevents::processscoreevent( #"concertina_wire_damage", self.owner, undefined, self.weapon, self.playersdamaged.size );
         self.damagedealt -= level.concertinawiresettings.bundle.damagescorethreshold;
     }
 }

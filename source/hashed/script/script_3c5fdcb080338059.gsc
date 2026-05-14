@@ -102,7 +102,7 @@ function private on_end( round_reset )
 function private function_7f62f098( challenge )
 {
     self endon( #"disconnect" );
-    level endon( #"hash_7646638df88a3656" );
+    level endon( #"trial_round_end" );
     
     while ( true )
     {
@@ -128,7 +128,7 @@ function private function_7f62f098( challenge )
 // Size: 0x18e
 function private function_69c5df45( challenge )
 {
-    level endon( #"hash_7646638df88a3656" );
+    level endon( #"trial_round_end" );
     
     while ( true )
     {
