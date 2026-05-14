@@ -1,7 +1,7 @@
 {
     "name": "#zombie_perk_totem_bandolier",
     "baseWeapon": "#zombie_perk_totem_bandolier",
-    "streamkey": "#zombie_perk_totem_bandolier_soundbank",
+    "soundbank": "#zombie_perk_totem_bandolier_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",

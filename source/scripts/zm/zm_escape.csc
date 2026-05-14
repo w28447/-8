@@ -1,8 +1,4 @@
 #using script_11c9779550732489;
-#using scripts\zm\zm_escape_weap_quest_spoon.csc;
-#using scripts\zm\zm_escape_weap_quest_mg.csc;
-#using scripts\zm\zm_escape_weap_quest_spork.csc;
-#using scripts\zm\zm_escape_nixie_clock.csc;
 #using script_711bbbba637da80;
 #using scripts\core_common\clientfield_shared;
 #using scripts\core_common\exploder_shared;
@@ -20,11 +16,15 @@
 #using scripts\zm\zm_escape_catwalk_event;
 #using scripts\zm\zm_escape_fast_travel_hellholes;
 #using scripts\zm\zm_escape_fx;
+#using scripts\zm\zm_escape_nixie_clock;
 #using scripts\zm\zm_escape_pap_quest;
 #using scripts\zm\zm_escape_paschal;
 #using scripts\zm\zm_escape_traps;
 #using scripts\zm\zm_escape_util;
 #using scripts\zm\zm_escape_weap_quest;
+#using scripts\zm\zm_escape_weap_quest_mg;
+#using scripts\zm\zm_escape_weap_quest_spoon;
+#using scripts\zm\zm_escape_weap_quest_spork;
 #using scripts\zm_common\load;
 #using scripts\zm_common\trials\zm_trial_door_lockdown;
 #using scripts\zm_common\util\ai_brutus_util;

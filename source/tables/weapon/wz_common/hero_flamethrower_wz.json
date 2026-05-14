@@ -3,7 +3,7 @@
     "baseWeapon": "#hero_flamethrower",
     "displayname": "#weapon/hero_flamethrower",
     "weapon70": "#hero_flamethrower",
-    "streamkey": "#hero_flamethrower_soundbank",
+    "soundbank": "#hero_flamethrower_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "scrstr_118c": "tag_flash",
@@ -66,7 +66,7 @@
     "tunables1": "#hero_flamethrower_tunables_wz_pc",
     "tunables2": "#hero_flamethrower_tunables_wz_pc",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_65ba98a154f4f9d6"
@@ -98,8 +98,8 @@
     "worldModel": [
         "#wpn_t8_sig_flamethrower_world"
     ],
-    "gadgetIconAvailable": "#hash_cb8ba3f3b8ea7bae",
-    "gadgetIconUnavailable": "#hash_a25744800491f963",
+    "gadgetIconAvailable": "#ui_icon_ultimate_purifier",
+    "gadgetIconUnavailable": "#ui_icon_ultimate_purifier_dark",
     "reticleCenter": "#hud_flamethrower_reticle",
     "inventoryIconZm": "#ui_icon_weapon_hud_hero_purifier",
     "hudIcon": "#t7_icon_weapon_hero_firebreak_kf",

@@ -2,7 +2,7 @@
     "name": "#willy_pete_zm",
     "baseWeapon": "#willy_pete",
     "displayname": "#weapon/willy_pete",
-    "streamkey": "#willy_pete_soundbank",
+    "soundbank": "#willy_pete_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",
@@ -36,7 +36,7 @@
     "projsmokeloopsound": "#wpn_smoke_hiss_lp",
     "projsmokeendsound": "#wpn_smoke_hiss_end",
     "tunables1": "#willy_pete_tunables_zm",
-    "cacWeaponXCam": "#hash_9bdd23d733f1a80c",
+    "cacWeaponXCam": "#ui_cam_cac_equip_smoke",
     "sharedWeaponSounds": "#equipment",
     "projectilemodel": "#wpn_t8_eqp_grenade_smoke_projectile",
     "viewmodel": [
@@ -53,5 +53,5 @@
     "image_e90": "#t7_hud_mp_inventory_smoke",
     "fx_ed8": "#hash_6d0b462715d6d1e8",
     "bounceImpactFX": "#grenade_bounce",
-    "bounceImpactSounds": "#hash_c6d8f2152c519b03"
+    "bounceImpactSounds": "#smoke_bounce"
 }

@@ -2,8 +2,8 @@
 #using script_3688d332e17e9ac1;
 #using script_69e3966400876ea0;
 #using script_760b801e43fe3017;
-#using scripts\zm_common\trials\zm_trial_kill_in_area.gsc;
 #using scripts\zm_common\trials\zm_trial_activate_hazards;
+#using scripts\zm_common\trials\zm_trial_kill_in_area;
 #using scripts\zm_common\trials\zm_trial_moving_hill;
 #using scripts\zm_common\trials\zm_trial_no_ads;
 #using scripts\zm_common\trials\zm_trial_no_sprint;

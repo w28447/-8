@@ -1,4 +1,3 @@
-#using scripts\zm\zm_office_vo_hooks.gsc;
 #using scripts\core_common\ai\zombie_utility;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\callbacks_shared;
@@ -12,6 +11,7 @@
 #using scripts\zm\zm_office_defcon;
 #using scripts\zm\zm_office_floors;
 #using scripts\zm\zm_office_teleporters;
+#using scripts\zm\zm_office_vo_hooks;
 #using scripts\zm\zm_office_zones;
 #using scripts\zm_common\callbacks;
 #using scripts\zm_common\util\ai_dog_util;

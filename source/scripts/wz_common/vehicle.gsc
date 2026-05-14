@@ -728,7 +728,7 @@ function function_3054737a( vehicle )
         return;
     }
     
-    vehicle.session = { #vehicle:vehicle.vehicletype, #start_pos_x:vehicle.origin[ 0 ], #start_pos_y:vehicle.origin[ 1 ], #end_pos_x:vehicle.origin[ 0 ], #end_pos_y:vehicle.origin[ 1 ], #vehicle_id:vehicle.trackingindex, #start_time:gettime(), #end_time:0, #start_health:vehicle.health, #end_health:vehicle.health, #first_player:int( self getxuid( 1 ) ), #max_occupants:1, #var_309ad81f:0, #var_5ba0df6e:0, #var_770fd50d:0, #var_33f48e5a:0, #var_ecd1fe60:0, #vehicle_kills:0, #passenger_damage_taken:0, #var_45bf3627:0, #raw\russian\sound\vox\scripted\isa\vox_isa_encourage_lost_01.SN65.xenon.snd:0, #passenger_kills:0 };
+    vehicle.session = { #vehicle:vehicle.vehicletype, #start_pos_x:vehicle.origin[ 0 ], #start_pos_y:vehicle.origin[ 1 ], #end_pos_x:vehicle.origin[ 0 ], #end_pos_y:vehicle.origin[ 1 ], #vehicle_id:vehicle.trackingindex, #start_time:gettime(), #end_time:0, #start_health:vehicle.health, #end_health:vehicle.health, #first_player:int( self getxuid( 1 ) ), #max_occupants:1, #var_309ad81f:0, #var_5ba0df6e:0, #var_770fd50d:0, #var_33f48e5a:0, #var_ecd1fe60:0, #vehicle_kills:0, #passenger_damage_taken:0, #var_45bf3627:0, #passenger_deaths:0, #passenger_kills:0 };
 }
 
 // Namespace wz_vehicle/vehicle
@@ -963,7 +963,7 @@ function on_player_killed( params )
         
         if ( isdefined( vehicle ) && isdefined( vehicle.session ) )
         {
-            vehicle.session.raw\russian\sound\vox\scripted\isa\vox_isa_encourage_lost_01.SN65.xenon.snd++;
+            vehicle.session.passenger_deaths++;
         }
     }
     

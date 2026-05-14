@@ -1,4 +1,3 @@
-#using scripts\killstreaks\ir_strobe_deploy.csc;
 #using scripts\core_common\ai_shared;
 #using scripts\core_common\clientfield_shared;
 #using scripts\core_common\flag_shared;
@@ -6,6 +5,7 @@
 #using scripts\core_common\struct;
 #using scripts\core_common\system_shared;
 #using scripts\core_common\util_shared;
+#using scripts\killstreaks\ir_strobe_deploy;
 #using scripts\killstreaks\killstreak_bundles;
 
 #namespace swat_team;

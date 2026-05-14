@@ -995,7 +995,7 @@ localizeentry,d#objectives/dm_hint
 localizeentry,d#zombie/richtofen
 localizeentry,d#hash_208eb7d41301aac0
 localizeentry,d#hash_208fc540b8884f14
-localizeentry,d#hash_2095da416d84f50c
+localizeentry,d#heroes/hacker_weapon_tips
 localizeentry,#zmui/special_weapon
 localizeentry,d#mpui/bb_sd
 localizeentry,#hash_20ca1cfb7fd63783
@@ -1044,7 +1044,7 @@ localizeentry,d#mpui/hcdm
 localizeentry,#hash_220b566d0856bb8d
 localizeentry,d#hash_2219d2672d506c37
 localizeentry,d#hash_221b7e9d719708d1
-localizeentry,d#hash_22343c3ae5fbcb69
+localizeentry,d#heroes/recon_weapon_tips
 localizeentry,#hash_223f5ebdd2190849
 localizeentry,d#mp/ctf_overtime_round_2_tie
 localizeentry,#hash_224c54fdcef87dd4
@@ -1782,7 +1782,7 @@ localizeentry,d#hash_3c882bfecd24ef58
 localizeentry,d#hash_3c929cabec952c14
 localizeentry,#hash_3c9665ab98f3ce62
 localizeentry,#menu/charm_shark
-localizeentry,d#hash_3ca3935f24b68d73
+localizeentry,d#heroes/engineer_weapon_tips
 localizeentry,d#hash_3ca968dee9e5dc02
 localizeentry,#mp/minus
 localizeentry,d#hash_3cae3d1b2f643ae0
@@ -2327,7 +2327,7 @@ localizeentry,#hash_4f8e08521b179d47
 localizeentry,d#mp/ended_game
 localizeentry,d#presence/one_in_the_chamber
 localizeentry,d#presence/ctf
-localizeentry,d#hash_5005244ea6568b03
+localizeentry,d#heroes/swatpolice_weapon_tips
 localizeentry,#hash_502a6c16b4316823
 localizeentry,d#hash_502b6147b487d459
 localizeentry,d#mpui/camo_fear
@@ -3110,7 +3110,7 @@ localizeentry,d#hash_6b331be475cc0933
 localizeentry,d#hash_6b510146a31748a7
 localizeentry,d#hash_6b5b44160430e38b
 localizeentry,#menu/charm_ufo
-localizeentry,d#hash_6b70c50c8f533ed6
+localizeentry,d#heroes/buffassault_weapon_tips
 localizeentry,d#hash_6b76c5bece983dc5
 localizeentry,#hash_6b78039c7686605d
 localizeentry,d#hash_6b828f9d4df6bfcf

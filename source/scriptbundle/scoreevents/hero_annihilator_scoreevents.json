@@ -1,14 +1,14 @@
 {
-    "annihilator_multikill_2": "#annihilator_multikill_2",
-    "annihilator_multikill_2": "#annihilator_multikill_2",
-    "annihilator_kill": "#annihilator_kill",
+    "multikill2scoreevent": "#annihilator_multikill_2",
+    "multikill6scoreevent": "#annihilator_multikill_2",
+    "killscoreevent": "#annihilator_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
-    "annihilator_multikill_2": "#annihilator_multikill_2",
+    "multikill4scoreevent": "#annihilator_multikill_2",
     "name": "hero_annihilator_scoreevents",
     "customsettingstype": "ability",
-    "annihilator_multikill_2": "#annihilator_multikill_2",
+    "multikill5scoreevent": "#annihilator_multikill_2",
     "annihilator_shutdown": "#annihilator_shutdown",
-    "annihilator_multikill_2": "#annihilator_multikill_2"
+    "multikill3scoreevent": "#annihilator_multikill_2"
 }

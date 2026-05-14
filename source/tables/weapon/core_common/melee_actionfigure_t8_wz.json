@@ -3,7 +3,7 @@
     "baseWeapon": "#melee_actionfigure_t8",
     "displayname": "#weapon/melee_actionfigure_t8",
     "weapon70": "#melee_actionfigure_t8",
-    "streamkey": "#melee_actionfigure_t8_soundbank",
+    "soundbank": "#melee_actionfigure_t8_soundbank",
     "scrstr_8c8": [
         "tag_camo_darkmatter",
         "tag_camo_diamond"
@@ -40,7 +40,7 @@
     "cacAttachmentsXCam": "#hash_2f819e28c35869cd",
     "weaponIconXCam": "#hash_5c160c82046c9725",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_3c62b7b1b0d8a10f"

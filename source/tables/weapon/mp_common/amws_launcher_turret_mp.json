@@ -2,7 +2,7 @@
     "name": "#amws_launcher_turret_mp",
     "baseWeapon": "#amws_launcher_turret",
     "weapon70": "#killstreak_ai_tank_drop",
-    "streamkey": "#amws_launcher_turret_soundbank",
+    "soundbank": "#amws_launcher_turret_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -37,7 +37,7 @@
     "projexplosionsound": "#wpn_rocket_explode",
     "sound830": "#hash_36e25fd652fdfac2",
     "sound840": "#hash_7a5614b91f27d6ca",
-    "tunables1": "#hash_576c6da2a012f006",
+    "tunables1": "#amws_launcher_turret_tunables_mp",
     "projectilemodel": "#projectile_t8_drone_amws_missile",
     "image_e90": "#t7_hud_obit_drone_amws",
     "fireRumble": "#heavygun_fire",
@@ -47,5 +47,5 @@
     "fx_f00": "#hash_8f8d0a431403706",
     "normalImpactFX": "#agr_explosion",
     "exitImpactFX": "#grenade_exit",
-    "normalImpactSounds": "#hash_e8e0a97bbbf0b555"
+    "normalImpactSounds": "#grenade_explode_material"
 }

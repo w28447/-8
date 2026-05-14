@@ -75,5 +75,5 @@ DEVBLOCK 0x65ea
 DEVBLOCK 0x68d2
 # zm_towers_challenges::function_a83b406a@22
 DEVBLOCK 0x8eba
-# zm_towers_challenges::function_e4b04738@22
+# zm_towers_challenges::complete_current_challenge@22
 DEVBLOCK 0x9022

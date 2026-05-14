@@ -3,7 +3,7 @@
     "baseWeapon": "#zhield_zpear_lh",
     "displayname": "#zm_red/shield",
     "dualwieldWeaponName": "#zhield_zpear_dw_zm",
-    "streamkey": "#zhield_zpear_lh_soundbank",
+    "soundbank": "#zhield_zpear_lh_soundbank",
     "scrstr_8d8": [
         "tag_ik_loc_le_dw"
     ],

@@ -4,7 +4,7 @@
     "displayname": "#weapon/smg_vmp_t8",
     "xhash_60": "#hash_b5f967e1a3cfa4",
     "weapon70": "#smg_vmp_t8",
-    "streamkey": "#smg_vmp_t8_soundbank",
+    "soundbank": "#smg_vmp_t8_soundbank",
     "scrstr_8c8": [
         "tag_camo_darkmatter",
         "tag_camo_diamond"
@@ -75,7 +75,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_smg_vmp",
     "weaponIconXCam": "#hash_2c7729bf50a3d403",
     "attachments": [
-        "#hash_f459a0af8e8f912b",
+        "#defaultattachment",
         "#acog_wz"
     ],
     "attachmentUniques": [

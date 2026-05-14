@@ -3,7 +3,7 @@
     "baseWeapon": "#smg_folding_t8",
     "displayname": "#weapon/smg_folding_t8",
     "weapon70": "#smg_folding_t8",
-    "streamkey": "#smg_folding_t8_soundbank",
+    "soundbank": "#smg_folding_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -76,7 +76,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_smg_folding",
     "weaponIconXCam": "#hash_437126d8dc00ed65",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_4264ef85e1fa0ddb"

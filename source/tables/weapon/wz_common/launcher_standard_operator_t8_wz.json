@@ -6,7 +6,7 @@
     "weapon70": "#launcher_standard_operator_t8",
     "luigiReticleWidget": "rocketLauncherReticle",
     "weapon890": "#launcher_standard_t8_wz",
-    "streamkey": "#launcher_standard_operator_t8_soundbank",
+    "soundbank": "#launcher_standard_operator_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -65,9 +65,9 @@
     "weaponCamo": "#hash_beec52c828eb87b1",
     "cacWeaponXCam": "#ui_cam_cac_launcher_standard",
     "cacAttachmentsXCam": "#ui_cam_cac_launcher_standard",
-    "weaponIconXCam": "#hash_f313e3dffba7aa5e",
+    "weaponIconXCam": "#ui_cam_icon_launcher_standard",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_8b9d7526cd644a9c"
@@ -111,12 +111,12 @@
     "fx_bd0": "#hash_b3fdff3e87fa64b4",
     "fx_f00": "#hash_f833ed31b97968fe",
     "underwaterExplosionSurfaceFX": [
-        "#hash_fb70232b2892e045",
+        "#explosions/fx8_exp_grenade_water",
         "#hash_c15b461b7420c6d2",
         "#hash_bb3f97cf646813ac"
     ],
-    "normalImpactFX": "#hash_f21f0aaa706eca71",
-    "bounceImpactFX": "#hash_8db8906417cda1de",
-    "normalImpactSounds": "#hash_e8e0a97bbbf0b555",
+    "normalImpactFX": "#rocket_explosion",
+    "bounceImpactFX": "#rocket_bounce",
+    "normalImpactSounds": "#grenade_explode_material",
     "bounceImpactSounds": "#grenade_bounce"
 }

@@ -3,7 +3,7 @@
     "baseWeapon": "#sniper_damagesemi_t8",
     "displayname": "#weapon/sniper_damagesemi_t8",
     "weapon70": "#sniper_damagesemi_t8",
-    "streamkey": "#sniper_damagesemi_t8_soundbank",
+    "soundbank": "#sniper_damagesemi_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -79,7 +79,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_sniper_damagesemi",
     "weaponIconXCam": "#hash_5acf8f7ff2a5b78d",
     "attachments": [
-        "#hash_f459a0af8e8f912b",
+        "#defaultattachment",
         "#acog_sniper"
     ],
     "attachmentUniques": [

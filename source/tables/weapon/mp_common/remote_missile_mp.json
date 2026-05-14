@@ -3,7 +3,7 @@
     "baseWeapon": "#remote_missile",
     "displayname": "#killstreak/remote_missile",
     "weapon70": "#remote_missile",
-    "streamkey": "#remote_missile_soundbank",
+    "soundbank": "#remote_missile_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -45,9 +45,9 @@
     "stowedmodel": [
         "#hash_1e46d2b849120cd9"
     ],
-    "gadgetIconAvailable": "#hash_82e2072e0fbe561a",
-    "gadgetIconUnavailable": "#hash_f750b9a28afe7a8a",
+    "gadgetIconAvailable": "#ui_icon_scorestreaks_remote_missile_light",
+    "gadgetIconUnavailable": "#ui_icon_scorestreaks_remote_missile_dark",
     "hudIcon": "#ui_icon_scorestreaks_hellstorm_hud",
-    "image_e90": "#hash_c3227bb78b459396",
+    "image_e90": "#ui_icon_obit_remote_missile",
     "image_1048": "#ui_icon_scorestreaks_hellstorm_hud"
 }

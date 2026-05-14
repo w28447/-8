@@ -17,9 +17,9 @@ version 8 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 3 size 0xc0
@@ -43,7 +43,7 @@ version 8 {
 
     // idx 0 members 4 size 0x338
     // offset 0x0, size 0x40
-    uint64 hash_6010d53d3fc2301f;
+    uint64 old_mask;
     // offset 0x40, size 0x1f8
     telemetry_header telemetry;
     // offset 0x238, size 0x40

@@ -1,5 +1,3 @@
-#using scripts\zm_common\trials\zm_trial_trap_kills_only.gsc;
-#using scripts\zm_common\zm_faction_buffs.gsc;
 #using scripts\core_common\ai\zombie_death;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\callbacks_shared;
@@ -12,11 +10,13 @@
 #using scripts\core_common\util_shared;
 #using scripts\core_common\visionset_mgr_shared;
 #using scripts\zm_common\trials\zm_trial_disable_buys;
+#using scripts\zm_common\trials\zm_trial_trap_kills_only;
 #using scripts\zm_common\util;
 #using scripts\zm_common\zm_audio;
 #using scripts\zm_common\zm_bgb;
 #using scripts\zm_common\zm_contracts;
 #using scripts\zm_common\zm_customgame;
+#using scripts\zm_common\zm_faction_buffs;
 #using scripts\zm_common\zm_laststand;
 #using scripts\zm_common\zm_net;
 #using scripts\zm_common\zm_score;

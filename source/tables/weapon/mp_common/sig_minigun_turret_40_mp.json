@@ -3,7 +3,7 @@
     "baseWeapon": "#sig_minigun_turret_40",
     "displayname": "#hash_28e56245387c39fd",
     "weapon70": "#sig_minigun",
-    "streamkey": "#sig_minigun_turret_40_soundbank",
+    "soundbank": "#sig_minigun_turret_40_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -94,6 +94,6 @@
     "fx_c98": "#hash_9c7f0dbc37829f85",
     "normalImpactFX": "#hash_dc5dac9355d4dd1c",
     "exitImpactFX": "#hash_c00b5ef5792265c2",
-    "normalImpactSounds": "#hash_f8e291a8acdea947",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "normalImpactSounds": "#bullet_explode",
+    "exitImpactSounds": "#bullet_exit"
 }

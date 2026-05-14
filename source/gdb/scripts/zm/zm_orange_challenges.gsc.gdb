@@ -11,5 +11,5 @@ STRING "<dev string:x38>" 0x6ccc
 ######################################################
 # zm_orange_challenges::function_b0d64cce@5c
 DEVBLOCK 0x6cc4
-# zm_orange_challenges::function_e4b04738@a
+# zm_orange_challenges::complete_current_challenge@a
 DEVBLOCK 0x88d2

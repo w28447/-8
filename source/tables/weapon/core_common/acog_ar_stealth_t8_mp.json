@@ -4,7 +4,7 @@
     "displayname": "#weapon/ar_stealth_t8",
     "altWeapon": "#ar_stealth_t8_mp",
     "weapon70": "#ar_stealth_t8",
-    "streamkey": "#acog_ar_stealth_t8_soundbank",
+    "soundbank": "#acog_ar_stealth_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",

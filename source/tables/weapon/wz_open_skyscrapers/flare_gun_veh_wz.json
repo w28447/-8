@@ -2,7 +2,7 @@
     "name": "#flare_gun_veh_wz",
     "baseWeapon": "#flare_gun_veh",
     "displayname": "#weapon/flare_gun_veh_wz",
-    "streamkey": "#flare_gun_veh_soundbank",
+    "soundbank": "#flare_gun_veh_soundbank",
     "scrstr_8c8": [
         "tag_equipment_hero"
     ],
@@ -55,12 +55,12 @@
     "reticleCenter": "#reticle_crossbow",
     "inventoryIconZm": "#ui_icon_ability_flare_veh",
     "hudIcon": "#ui_icon_ability_flare_veh",
-    "image_e90": "#hash_d47bf413316930d0",
+    "image_e90": "#ui_icon_equipment_sensordart",
     "fx_bc8": "#hash_227d8b384b93af3",
     "fx_bd0": "#hash_220ecb384b33e41",
     "fx_ed8": "#hash_51fd2e4fd2a2144c",
     "fx_ef0": "#hash_3c75a7a102caa32e",
     "fx_f00": "#hash_5f99e40139885a5",
-    "bounceImpactFX": "#hash_9cafc46b8c735870",
+    "bounceImpactFX": "#bullet_large_enter",
     "bounceImpactSounds": "#flare_projectile"
 }

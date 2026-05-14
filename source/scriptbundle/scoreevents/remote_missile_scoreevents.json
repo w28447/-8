@@ -1,5 +1,5 @@
 {
-    "hellstorm_missile_kill": "#hellstorm_missile_kill",
+    "killscoreevent": "#hellstorm_missile_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",

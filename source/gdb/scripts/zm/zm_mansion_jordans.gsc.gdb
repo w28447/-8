@@ -57,9 +57,9 @@ STRING "<dev string:xec>" 0x407c
 ######################################################
 # mansion_jordans::init@82
 DEVBLOCK 0x2ea
-# mansion_jordans::function_653412f4@f2
+# mansion_jordans::jordans_reward_init_step_1@f2
 DEVBLOCK 0x77a
-# mansion_jordans::function_653412f4@214
+# mansion_jordans::jordans_reward_init_step_1@214
 DEVBLOCK 0x89c
 # mansion_jordans::function_21334921@258
 DEVBLOCK 0x1070
@@ -67,13 +67,13 @@ DEVBLOCK 0x1070
 DEVBLOCK 0x1120
 # mansion_jordans::function_fefbf8c2@52
 DEVBLOCK 0x149a
-# mansion_jordans::function_db5aff40@f2
+# mansion_jordans::jordans_reward_init_step_2@f2
 DEVBLOCK 0x1842
-# mansion_jordans::function_c7da583f@384
+# mansion_jordans::jordans_reward_init_step_3@384
 DEVBLOCK 0x254c
-# mansion_jordans::function_ae072499@c2
+# mansion_jordans::jordans_reward_init_step_4@c2
 DEVBLOCK 0x2c72
-# mansion_jordans::function_57e9237a@ca
+# mansion_jordans::jordans_reward_cleanup_step_4@ca
 DEVBLOCK 0x2f42
 # mansion_jordans::function_ffc00d17@78
 DEVBLOCK 0x3158

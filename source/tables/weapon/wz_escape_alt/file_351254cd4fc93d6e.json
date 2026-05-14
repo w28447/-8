@@ -3,7 +3,7 @@
     "baseWeapon": "#hash_351254cd4fc93d6e",
     "displayname": "#weapon/tomahawk_t8",
     "weapon70": "#tomahawk_t8",
-    "streamkey": "#hash_2d1f750f619491a4",
+    "soundbank": "#hash_2d1f750f619491a4",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",
@@ -36,7 +36,7 @@
     "gadgetreadysoundplayer": "#hash_6f5b79a1a69b43a8",
     "sound660": "#uin_unavailable_charging",
     "tunables1": "#hash_4f8d2fe5bd40544b",
-    "cacWeaponXCam": "#hash_f1353967331e42f5",
+    "cacWeaponXCam": "#ui_cam_cac_equip_axe",
     "sharedWeaponSounds": "#equipment",
     "#hash_2e4a8800": "#eq_hatchet_mp_scoreevents",
     "projectilemodel": "#wpn_t8_zm_tomahawk_world",
@@ -54,6 +54,6 @@
     "image_e98": "#ui_icon_inventory_tomahawk",
     "fx_ed8": "#hash_e81b2b47d9fb71c9",
     "fx_f00": "#hash_f7b995b902df3cd9",
-    "bounceImpactFX": "#hash_a5f3e55b8e1070ab",
-    "bounceImpactSounds": "#hash_a9ab4424affe55ad"
+    "bounceImpactFX": "#knife_large_enter",
+    "bounceImpactSounds": "#hatchet_bounce"
 }

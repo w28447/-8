@@ -4,8 +4,8 @@
     "name": "stick_layout_legacy",
     "xenon_stick_move_look": "image#xenon_stick_move_look",
     "hash_c724d0d1": "enum:2",
-    "menu/rotate_left_right:hash_53e7bdc7": "localized17#menu/rotate_left_right",
-    "menu/strafe_left_right:hash_92e90c8c": "localized17#menu/strafe_left_right",
+    "menu/rotate_left_right": "localized17#menu/rotate_left_right",
+    "menu/strafe_left_right": "localized17#menu/strafe_left_right",
     "menu/look_down": "localized17#menu/look_down",
     "menu/move_forward": "localized17#menu/move_forward",
     "menu/look_up": "localized17#menu/look_up"

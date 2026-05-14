@@ -3,7 +3,7 @@
     "baseWeapon": "#ww_crossbow_t8",
     "displayname": "#zmweapon/ww_crossbow_t8",
     "weapon70": "#ww_crossbow_t8",
-    "streamkey": "#ww_crossbow_t8_soundbank",
+    "soundbank": "#ww_crossbow_t8_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -58,9 +58,9 @@
     "tunables1": "#ww_crossbow_t8_tunables_wz",
     "cacWeaponXCam": "#ui_cam_cac_special_crossbow",
     "cacAttachmentsXCam": "#ui_cam_cac_special_crossbow",
-    "weaponIconXCam": "#hash_b2556c49982dea72",
+    "weaponIconXCam": "#ui_cam_icon_special_crossbow",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_44403b90ea799d53"

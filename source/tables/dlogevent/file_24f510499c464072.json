@@ -135,7 +135,7 @@
         },
         {
             "name": "#prematch_duration_ms",
-            "scrName": "#hash_31942899",
+            "scrName": "#prematch_duration_ms",
             "type": "INT32"
         },
         {

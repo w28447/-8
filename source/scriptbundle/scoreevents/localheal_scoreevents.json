@@ -1,15 +1,15 @@
 {
-    "tak5_multikill_2": "#tak5_multikill_2",
-    "tak5_multikill_2": "#tak5_multikill_2",
-    "stim_kill": "#stim_kill",
+    "multikill2scoreevent": "#tak5_multikill_2",
+    "multikill6scoreevent": "#tak5_multikill_2",
+    "killscoreevent": "#stim_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "stim_activate_stim": "#stim_activate_stim",
     "vmtype": "both",
-    "tak5_multikill_2": "#tak5_multikill_2",
+    "multikill4scoreevent": "#tak5_multikill_2",
     "name": "localheal_scoreevents",
     "customsettingstype": "ability",
-    "tak5_multikill_2": "#tak5_multikill_2",
+    "multikill5scoreevent": "#tak5_multikill_2",
     "tak5_shutdown": "#tak5_shutdown",
-    "tak5_multikill_2": "#tak5_multikill_2"
+    "multikill3scoreevent": "#tak5_multikill_2"
 }

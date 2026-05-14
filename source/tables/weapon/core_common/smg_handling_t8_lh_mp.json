@@ -4,7 +4,7 @@
     "displayname": "#weapon/smg_handling_t8",
     "weapon70": "#smg_handling_t8",
     "dualwieldWeaponName": "#smg_handling_t8_dw_mp",
-    "streamkey": "#smg_handling_t8_lh_soundbank",
+    "soundbank": "#smg_handling_t8_lh_soundbank",
     "scrstr_8c8": [
         "tag_rail_optic",
         "tag_sights_off",
@@ -81,7 +81,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_smg_standard",
     "weaponIconXCam": "#ui_cam_icon_smg_standard",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_48b9d8f04a5886c8"

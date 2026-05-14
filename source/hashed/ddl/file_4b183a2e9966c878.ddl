@@ -17,9 +17,9 @@ version 2 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 3 size 0xc0
@@ -65,13 +65,13 @@ version 2 {
     // offset 0x20, size 0x1f8
     telemetry_header telemetry;
     // offset 0x218, size 0x20
-    int hash_2dc6184a8ee2b80b;
+    int agree_count;
     // offset 0x238, size 0x20
-    int hash_1e6cbdb3e41597ac;
+    int source_lobby_type;
     // offset 0x258, size 0xc0
     string(24) join_state;
     // offset 0x318, size 0x20
-    int hash_607616ff980b70cb;
+    int join_result;
     // offset 0x338, size 0x8
     hash_405641015bd81f7d nat_type;
     // offset 0x340, size 0xc0
@@ -81,9 +81,9 @@ version 2 {
     // offset 0x440, size 0x8
     hash_444b6eb55bc9535 join_type;
     // offset 0x448, size 0x40
-    string(8) hash_5aad3c28269ed622;
+    string(8) main_mode;
     // offset 0x488, size 0x20
-    int hash_1a1a1855f4dcf27c;
+    int target_lobby_type;
     // offset 0x4a8, size 0x1
     bool hash_5a10df4d02164354;
     // offset 0x4a9, size 0x7

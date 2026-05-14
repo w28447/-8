@@ -22,7 +22,7 @@
         "#c_t8_mp_swatbuddy_female1"
     ],
     "aimTable": "#soldier_aim",
-    "footstepTable": "#hash_b008da66d91b8ad7",
+    "footstepTable": "#defaultnpcfootstep",
     "footstepScriptCallback": false,
     "footstepFXTable1": "#player_footstep",
     "footstepFXTable2": "#player_footstep",

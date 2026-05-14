@@ -1,13 +1,13 @@
 {
-    "concertina_wire_multikill_2": "#concertina_wire_multikill_2",
-    "concertina_wire_multikill_2": "#concertina_wire_multikill_2",
+    "multikill2scoreevent": "#concertina_wire_multikill_2",
+    "multikill6scoreevent": "#concertina_wire_multikill_2",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
-    "concertina_wire_multikill_2": "#concertina_wire_multikill_2",
+    "multikill4scoreevent": "#concertina_wire_multikill_2",
     "name": "concertina_slowed_scoreevents",
     "customsettingstype": "status effect",
-    "concertina_wire_multikill_2": "#concertina_wire_multikill_2",
-    "concertina_wire_assist": "#concertina_wire_assist",
-    "concertina_wire_multikill_2": "#concertina_wire_multikill_2"
+    "multikill5scoreevent": "#concertina_wire_multikill_2",
+    "assistscoreevent": "#concertina_wire_assist",
+    "multikill3scoreevent": "#concertina_wire_multikill_2"
 }

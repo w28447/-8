@@ -4,7 +4,7 @@
     "displayname": "#zmweapon/bowie",
     "xhash_60": "#au_bowie_knife",
     "weapon70": "#bowie_knife",
-    "streamkey": "#bowie_knife_soundbank",
+    "soundbank": "#bowie_knife_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -39,7 +39,7 @@
     "tunables1": "#bowie_knife_tunables_zm",
     "weaponCamo": "#hash_511c3f983cd01165",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_638c7357797a4107"
@@ -55,5 +55,5 @@
     "meleeImpactRumble": "#defaultweapon_melee",
     "fx_f60": "#impacts/fx_flesh_hit_knife_zmb",
     "fx_f68": "#impacts/fx_flesh_hit_knife_zmb",
-    "normalImpactFX": "#hash_a5f3e55b8e1070ab"
+    "normalImpactFX": "#knife_large_enter"
 }

@@ -1,17 +1,17 @@
 {
-    "seeker_shock_mine_multikill_2": "#seeker_shock_mine_multikill_2",
-    "seeker_shock_mine_multikill_2": "#seeker_shock_mine_multikill_2",
-    "seeker_shock_mine_killed_paralyzed_enemy": "#seeker_shock_mine_killed_paralyzed_enemy",
+    "multikill2scoreevent": "#seeker_shock_mine_multikill_2",
+    "multikill6scoreevent": "#seeker_shock_mine_multikill_2",
+    "killscoreevent": "#seeker_shock_mine_killed_paralyzed_enemy",
     "hash_615d2e02d1d3769c:hash_2eaed769": "#hash_615d2e02d1d3769c",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "seeker_shock_mine_paralyzed_enemy": "#seeker_shock_mine_paralyzed_enemy",
     "vmtype": "both",
-    "seeker_shock_mine_multikill_2": "#seeker_shock_mine_multikill_2",
+    "multikill4scoreevent": "#seeker_shock_mine_multikill_2",
     "name": "shock_seeker_primary_scoreevents",
     "customsettingstype": "status effect",
-    "seeker_shock_mine_multikill_2": "#seeker_shock_mine_multikill_2",
+    "multikill5scoreevent": "#seeker_shock_mine_multikill_2",
     "hash_fcd2ff3a": 1,
-    "seeker_shock_mine_paralyze_assist": "#seeker_shock_mine_paralyze_assist",
-    "seeker_shock_mine_multikill_2": "#seeker_shock_mine_multikill_2"
+    "assistscoreevent": "#seeker_shock_mine_paralyze_assist",
+    "multikill3scoreevent": "#seeker_shock_mine_multikill_2"
 }

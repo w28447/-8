@@ -17,9 +17,9 @@ version 1 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 3 size 0xc0
@@ -43,21 +43,21 @@ version 1 {
 
     // idx 0 members 10 size 0x3d8
     // offset 0x0, size 0x20
-    uint hash_3c4fdf4f4943a710;
+    uint client_losses;
     // offset 0x20, size 0x1f8
     telemetry_header telemetry;
     // offset 0x218, size 0x20
-    uint hash_1cf0a057afbdbb2e;
+    uint client_losses_late_join;
     // offset 0x238, size 0x20
     uint hash_4a86a549996e6296;
     // offset 0x258, size 0x20
     uint hash_a0037751903d258;
     // offset 0x278, size 0x20
-    int hash_2f919e9869a7fb6a;
+    int client_league_id;
     // offset 0x298, size 0xc0
     client_header client;
     // offset 0x358, size 0x20
-    int hash_20e103c8d596edb6;
+    int current_league_id;
     // offset 0x378, size 0x20
     uint client_wins;
     // offset 0x398, size 0x40

@@ -3,7 +3,7 @@
     "baseWeapon": "#thunderstorm",
     "displayname": "#zombie/thunderstorm",
     "weapon70": "#zombie_cymbal_monkey",
-    "streamkey": "#thunderstorm_soundbank",
+    "soundbank": "#thunderstorm_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -55,9 +55,9 @@
     "image_e90": "#ui_icon_inventory_zm_red_eqp_lightning_rod",
     "image_1048": "#ui_icon_inventory_zm_red_eqp_lightning_rod",
     "rumble_de8": "#grenade_rumble",
-    "fx_f00": "#hash_80e7395fb42d35f6",
-    "normalImpactFX": "#hash_c80a3191309d3449",
+    "fx_f00": "#weapon/fx_trail_grenade",
+    "normalImpactFX": "#grenade_explosion",
     "bounceImpactFX": "#grenade_bounce",
     "dudImpactFX": "#grenade_dud",
-    "bounceImpactSounds": "#hash_a2f28f7573089407"
+    "bounceImpactSounds": "#acidbomb_stick"
 }

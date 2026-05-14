@@ -17,9 +17,9 @@ version 2 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 3 size 0xc0
@@ -37,15 +37,15 @@ version 2 {
         // offset 0x0, size 0x20
         uint retries;
         // offset 0x20, size 0x20
-        uint hash_7eeb3b0b30e2921a;
+        uint public_addr;
         // offset 0x40, size 0x10
-        uint:16 hash_4b5ffc955581a19e;
+        uint:16 public_port;
         // offset 0x50, size 0x8
         byte result;
         // offset 0x58, size 0x20
-        uint hash_3795c515da21f010;
+        uint server_addr;
         // offset 0x78, size 0x10
-        uint:16 hash_61f7e598d316c750;
+        uint:16 server_port;
         // offset 0x88, size 0x20
         uint duration_ms;
     };
@@ -53,13 +53,13 @@ version 2 {
     // idx 4 members 1 size 0x20
     struct hash_6538fe05961782a3 {
         // offset 0x0, size 0x20
-        uint hash_7bd602a5f16fdf88;
+        uint retry_time_ms;
     };
 
     // idx 5 members 5 size 0x120
     struct hash_6a65101a136eab93 {
         // offset 0x0, size 0x40
-        uint64 hash_6bdd7ebe59310aa2;
+        uint64 match_making_id;
         // offset 0x40, size 0x40
         uint64 lobby_id;
         // offset 0x80, size 0x20
@@ -83,12 +83,12 @@ version 2 {
     // offset 0x0, size 0x1f8
     telemetry_header telemetry;
     // offset 0x1f8, size 0x140
-    hash_6538fe05961782a3 hash_7c2a2b8cc4afe569[10];
+    hash_6538fe05961782a3 retry_times_ms[10];
     // offset 0x338, size 0xc0
     client_header client;
     // offset 0x3f8, size 0x120
     hash_6a65101a136eab93 header;
     // offset 0x518, size 0xa8
-    hash_6ff4b416acbedfc8 hash_294b5b1dc0642b63;
+    hash_6ff4b416acbedfc8 ip_discovery_result;
 }
 

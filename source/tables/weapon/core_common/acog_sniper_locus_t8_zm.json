@@ -4,7 +4,7 @@
     "displayname": "#weapon/sniper_locus_t8",
     "altWeapon": "#sniper_locus_t8_zm",
     "weapon70": "#sniper_locus_t8",
-    "streamkey": "#acog_sniper_locus_t8_soundbank",
+    "soundbank": "#acog_sniper_locus_t8_soundbank",
     "scrstr_8c8": [
         "tag_scope",
         "tag_scope_mount",
@@ -80,7 +80,7 @@
     "sound610": "#hash_5c9addf2686f77e2",
     "sound800": "#hash_17c846b05b70637f",
     "sound810": "#hash_17c846b05b70637f",
-    "tunables1": "#hash_58aab585ea255b38",
+    "tunables1": "#acog_sniper_locus_t8_tunables_zm",
     "weaponCamo": "#hash_7775313b0b6537e1",
     "cacWeaponXCam": "#ui_cam_cac_sniper_locus",
     "cacAttachmentsXCam": "#ui_cam_cac_sniper_locus",

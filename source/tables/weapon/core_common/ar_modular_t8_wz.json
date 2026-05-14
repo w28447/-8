@@ -4,7 +4,7 @@
     "displayname": "#weapon/ar_modular_t8",
     "xhash_60": "#hash_31944555f2219c91",
     "weapon70": "#ar_modular_t8",
-    "streamkey": "#ar_modular_t8_soundbank",
+    "soundbank": "#ar_modular_t8_soundbank",
     "scrstr_8c8": [
         "tag_adv_mag_full_attach",
         "tag_clan_tag",
@@ -79,7 +79,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_ar_modular",
     "weaponIconXCam": "#hash_438f1e86c8cd21f4",
     "attachments": [
-        "#hash_f459a0af8e8f912b",
+        "#defaultattachment",
         "#acog_wz"
     ],
     "attachmentUniques": [

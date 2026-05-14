@@ -1,15 +1,15 @@
 {
-    "molotov_cocktail_multikill_2": "#molotov_cocktail_multikill_2",
-    "molotov_cocktail_multikill_2": "#molotov_cocktail_multikill_2",
-    "molotov_kill": "#molotov_kill",
+    "multikill2scoreevent": "#molotov_cocktail_multikill_2",
+    "multikill6scoreevent": "#molotov_cocktail_multikill_2",
+    "killscoreevent": "#molotov_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "molotov_burn": "#molotov_burn",
     "vmtype": "both",
-    "molotov_cocktail_multikill_2": "#molotov_cocktail_multikill_2",
+    "multikill4scoreevent": "#molotov_cocktail_multikill_2",
     "name": "dot_molotov_scoreevents",
     "customsettingstype": "status effect",
-    "molotov_cocktail_multikill_2": "#molotov_cocktail_multikill_2",
-    "molotov_burn_assist:hash_170b3630": "#molotov_burn_assist",
-    "molotov_cocktail_multikill_2": "#molotov_cocktail_multikill_2"
+    "multikill5scoreevent": "#molotov_cocktail_multikill_2",
+    "assistscoreevent": "#molotov_burn_assist",
+    "multikill3scoreevent": "#molotov_cocktail_multikill_2"
 }

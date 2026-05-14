@@ -4,7 +4,7 @@
     "displayname": "#weapon/lmg_spray_t8",
     "xhash_60": "#hash_3dfb7c380dbca75",
     "weapon70": "#lmg_spray_t8",
-    "streamkey": "#lmg_spray_t8_soundbank",
+    "soundbank": "#lmg_spray_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -79,7 +79,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_lmg_spray",
     "weaponIconXCam": "#hash_5d2f2ef54f0d7348",
     "attachments": [
-        "#hash_f459a0af8e8f912b",
+        "#defaultattachment",
         "#acog_wz"
     ],
     "attachmentUniques": [

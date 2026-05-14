@@ -3,7 +3,7 @@
     "baseWeapon": "#thundergun_upgraded",
     "displayname": "#zmweapon/thundergun_upgraded",
     "weapon70": "#thundergun",
-    "streamkey": "#thundergun_upgraded_soundbank",
+    "soundbank": "#thundergun_upgraded_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "scrstr_118c": "tag_flash",

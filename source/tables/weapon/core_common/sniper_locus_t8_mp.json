@@ -3,7 +3,7 @@
     "baseWeapon": "#sniper_locus_t8",
     "displayname": "#weapon/sniper_locus_t8",
     "weapon70": "#sniper_locus_t8",
-    "streamkey": "#sniper_locus_t8_soundbank",
+    "soundbank": "#sniper_locus_t8_soundbank",
     "scrstr_8c8": [
         "tag_camo_darkmatter",
         "tag_camo_diamond"
@@ -76,7 +76,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_sniper_locus",
     "weaponIconXCam": "#hash_5a36991b2da1ef84",
     "attachments": [
-        "#hash_f459a0af8e8f912b",
+        "#defaultattachment",
         "#acog_sniper"
     ],
     "attachmentUniques": [

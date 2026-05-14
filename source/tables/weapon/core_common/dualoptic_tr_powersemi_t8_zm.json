@@ -4,7 +4,7 @@
     "displayname": "#weapon/tr_powersemi_t8",
     "altWeapon": "#tr_powersemi_t8_zm",
     "weapon70": "#tr_powersemi_t8",
-    "streamkey": "#dualoptic_tr_powersemi_t8_soundbank",
+    "soundbank": "#dualoptic_tr_powersemi_t8_soundbank",
     "scrstr_8c8": [
         "tag_rail",
         "tag_clan_tag",
@@ -69,7 +69,7 @@
     "sound610": "#hash_209cb2974ae55ec0",
     "sound800": "#hash_5ee962527afebfb1",
     "sound810": "#hash_5ee962527afebfb1",
-    "tunables1": "#hash_3ff6449abe163e3f",
+    "tunables1": "#dualoptic_tr_powersemi_t8_tunables_zm",
     "weaponCamo": "#hash_38cf522ecea13519",
     "cacWeaponXCam": "#ui_cam_cac_tr_powersemi",
     "cacAttachmentsXCam": "#ui_cam_cac_tr_powersemi",

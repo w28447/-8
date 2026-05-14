@@ -4,7 +4,7 @@
     "displayname": "#weapon/ar_stealth_t8",
     "altWeapon": "#ar_stealth_t8_zm",
     "weapon70": "#ar_stealth_t8",
-    "streamkey": "#acog_ar_stealth_t8_soundbank",
+    "soundbank": "#acog_ar_stealth_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -70,7 +70,7 @@
     "sound260": "#prj_crack_supersonic",
     "sound800": "#hash_5ee962527afebfb1",
     "sound810": "#hash_5ee962527afebfb1",
-    "tunables1": "#hash_3e0f213ea95a0a27",
+    "tunables1": "#acog_ar_stealth_t8_tunables_zm",
     "weaponCamo": "#hash_7f157774e0d8c138",
     "cacWeaponXCam": "#ui_cam_cac_ar_stealth",
     "cacAttachmentsXCam": "#ui_cam_cac_ar_stealth",

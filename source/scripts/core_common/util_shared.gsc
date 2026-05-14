@@ -2347,7 +2347,7 @@ function spawn_player_clone( player, animname, s_align, var_df23b31f = 0 )
             playerclone setmodel( var_1749f1e8 );
         }
         
-        headmodel = player startquantity();
+        headmodel = player function_44a7328f();
         
         if ( isdefined( headmodel ) )
         {
@@ -2363,7 +2363,7 @@ function spawn_player_clone( player, animname, s_align, var_df23b31f = 0 )
             playerclone setmodel( var_41206ae3 );
         }
         
-        headmodel = player startquantity();
+        headmodel = player function_44a7328f();
         
         if ( isdefined( headmodel ) )
         {

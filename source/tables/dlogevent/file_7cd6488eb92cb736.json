@@ -139,7 +139,7 @@
                     },
                     {
                         "name": "#keys_consumed",
-                        "scrName": "#hash_a7feba9c",
+                        "scrName": "#keys_consumed",
                         "type": "UINT8"
                     },
                     {

@@ -65,7 +65,7 @@
             "hash_6be35a7a": 4,
             "startweapon": "#pistol_topbreak_t8",
             "hash_a2df9d5d": 4,
-            "class/zm_scepter:hash_5f547a4f": "localized17#class/zm_scepter",
+            "class/zm_scepter": "localized17#class/zm_scepter",
             "hash_4a73ec43": 4,
             "primarygrenade": "#eq_frag_grenade",
             "herogadget": "#hero_minigun_t8_lv1"
@@ -135,7 +135,7 @@
             "hash_6be35a7a": 4,
             "startweapon": "#pistol_topbreak_t8",
             "hash_a2df9d5d": 4,
-            "class/zm_hammer:hash_5f547a4f": "localized17#class/zm_hammer",
+            "class/zm_hammer": "localized17#class/zm_hammer",
             "hash_4a73ec43": 4,
             "primarygrenade": "#eq_frag_grenade",
             "herogadget": "#hero_katana_t8_lv1"
@@ -205,7 +205,7 @@
             "hash_6be35a7a": 4,
             "startweapon": "#pistol_topbreak_t8",
             "hash_a2df9d5d": 4,
-            "class/zm_chakram:hash_5f547a4f": "localized17#class/zm_chakram",
+            "class/zm_chakram": "localized17#class/zm_chakram",
             "hash_4a73ec43": 4,
             "primarygrenade": "#eq_frag_grenade",
             "herogadget": "#hero_gravityspikes_t8_lv1"

@@ -15428,7 +15428,7 @@
             "farVerbName": "",
             "duck": "default",
             "id": "#cp_sh_cairo_main_room",
-            "reverb": "#room_livingRoom",
+            "reverb": "#room_livingroom",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",

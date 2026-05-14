@@ -1,10 +1,10 @@
-#using scripts\zm\zm_office_vo_hooks.gsc;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\exploder_shared;
 #using scripts\core_common\flag_shared;
 #using scripts\core_common\struct;
 #using scripts\core_common\util_shared;
 #using scripts\zm\zm_office_teleporters;
+#using scripts\zm\zm_office_vo_hooks;
 #using scripts\zm\zm_office_ww_quest;
 #using scripts\zm_common\zm_pack_a_punch;
 #using scripts\zm_common\zm_utility;

@@ -2,7 +2,7 @@
     "name": "#hash_1edcfc90683eeeff",
     "baseWeapon": "#hash_64fbc23d9a0d2be1",
     "displayname": "#weapon/empgrenade",
-    "streamkey": "#hash_5738abb376622eb",
+    "soundbank": "#hash_5738abb376622eb",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -49,5 +49,5 @@
     "image_e90": "#t7_hud_icon_menu_concussion_kf",
     "fx_ed8": "#explosions/fx_exp_grenade_concussion",
     "bounceImpactFX": "#grenade_bounce",
-    "bounceImpactSounds": "#hash_c6d8f2152c519b03"
+    "bounceImpactSounds": "#smoke_bounce"
 }

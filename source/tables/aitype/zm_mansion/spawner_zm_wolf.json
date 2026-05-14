@@ -15,11 +15,11 @@
     "typeSuffix": "_zombie_dog",
     "spawnerType": "hellhound",
     "character": [
-        "#hash_da6bb7233cd3bb69"
+        "#character_sp_direwolf"
     ],
     "meleeWeapon": "#dog_ai_defaultmelee_zm",
     "aimTable": "#soldier_aim",
-    "footstepTable": "#hash_da1e981fbbd333cf",
+    "footstepTable": "#zdogfootstep",
     "footstepScriptCallback": false,
     "footstepFXTable1": "#zm_wolf_footstep",
     "footstepFXTable2": "#zm_wolf_footstep",

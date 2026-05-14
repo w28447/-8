@@ -3,7 +3,7 @@
     "baseWeapon": "#lmg_standard_t8",
     "displayname": "#weapon/lmg_standard_t8",
     "weapon70": "#lmg_standard_t8",
-    "streamkey": "#lmg_standard_t8_soundbank",
+    "soundbank": "#lmg_standard_t8_soundbank",
     "scrstr_8c8": [
         "tag_sights_rear_off",
         "tag_sights_front_off",
@@ -78,7 +78,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_lmg_standard",
     "weaponIconXCam": "#hash_6d836fd8325ac81e",
     "attachments": [
-        "#hash_f459a0af8e8f912b",
+        "#defaultattachment",
         "#acog"
     ],
     "attachmentUniques": [

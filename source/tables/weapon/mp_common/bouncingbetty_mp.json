@@ -3,7 +3,7 @@
     "baseWeapon": "#bouncingbetty",
     "displayname": "#weapon/bouncingbetty",
     "weapon70": "#bouncingbetty",
-    "streamkey": "#bouncingbetty_soundbank",
+    "soundbank": "#bouncingbetty_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

@@ -128,7 +128,7 @@ STRING "<dev string:x33d>" 0x1084
 STRING "<dev string:x364>" 0x1094
 # zm_devgui::zombie_devgui_player_menu@314
 STRING "<dev string:x371>" 0x10d4
-# zm_devgui::__init__@c zm_devgui::__init__@38 zm_devgui::__init__@b0 zm_devgui::function_5ac8947e@4c zm_devgui::function_5ac8947e@80 zm_devgui::function_5ac8947e@ac zm_devgui::function_5ac8947e@e8 zm_devgui::function_5ac8947e@1d0 zm_devgui::function_c7dd7a17@28 zm_devgui::function_c7dd7a17@48 zm_devgui::function_2f5772bf@168 zm_devgui::zombie_devgui_validation_commands@14 zm_devgui::zombie_devgui_validation_commands@cc zm_devgui::zombie_devgui_validation_commands@1e4 zm_devgui::drawvalidation@3c0 zm_devgui::function_bcc8843e@4c zm_devgui::function_bcc8843e@9c zm_devgui::devgui_add_weapon@5c zm_devgui::devgui_add_weapon@64 zm_devgui::function_3b534f9c@f0 zm_devgui::function_3b534f9c@1b8 zm_devgui::function_3b534f9c@280 zm_devgui::function_3b534f9c@348 zm_devgui::zombie_weapon_devgui_think@d8 zm_devgui::zombie_healthbar@94 zm_devgui::zombie_devgui_think@2c74 zm_devgui::function_335cdac@b0 zm_devgui::function_bbeaa2da@d4 zm_devgui::function_fb482cad@114 zm_devgui::function_15ee6847@6c zm_devgui::function_b5d522f8@58 zm_devgui::function_b5d522f8@b8 zm_devgui::function_b5d522f8@10c zm_devgui::function_b5d522f8@15c zm_devgui::function_b5d522f8@220
+# zm_devgui::__init__@c zm_devgui::__init__@38 zm_devgui::__init__@b0 zm_devgui::function_5ac8947e@4c zm_devgui::function_5ac8947e@80 zm_devgui::function_5ac8947e@ac zm_devgui::function_5ac8947e@e8 zm_devgui::function_5ac8947e@1d0 zm_devgui::function_c7dd7a17@28 zm_devgui::function_c7dd7a17@48 zm_devgui::function_2f5772bf@168 zm_devgui::zombie_devgui_validation_commands@14 zm_devgui::zombie_devgui_validation_commands@cc zm_devgui::zombie_devgui_validation_commands@1e4 zm_devgui::drawvalidation@3c0 zm_devgui::function_bcc8843e@4c zm_devgui::function_bcc8843e@9c zm_devgui::devgui_add_weapon@5c zm_devgui::devgui_add_weapon@64 zm_devgui::function_3b534f9c@f0 zm_devgui::function_3b534f9c@1b8 zm_devgui::function_3b534f9c@280 zm_devgui::function_3b534f9c@348 zm_devgui::zombie_weapon_devgui_think@d8 zm_devgui::zombie_healthbar@94 zm_devgui::zombie_devgui_think@2c74 zm_devgui::function_335cdac@b0 zm_devgui::zombie_devgui_dump_traversals@d4 zm_devgui::function_fb482cad@114 zm_devgui::function_15ee6847@6c zm_devgui::function_b5d522f8@58 zm_devgui::function_b5d522f8@b8 zm_devgui::function_b5d522f8@10c zm_devgui::function_b5d522f8@15c zm_devgui::function_b5d522f8@220
 STRING "<dev string:x38>" 0x224 0x250 0x2c8 0x6c4 0x6f8 0x724 0x760 0x848 0x940 0x960 0xb40 0x18ec 0x19a4 0x1abc 0x2ec8 0x3874 0x38c4 0x3bf4 0x3bfc 0x3e10 0x3ed8 0x3fa0 0x4068 0x4170 0x4a24 0x7c14 0xc1f8 0xe4a4 0xe9d4 0x10144 0x108c0 0x10920 0x10974 0x109c4 0x10a88
 # zm_devgui::zombie_devgui_player_menu@324
 STRING "<dev string:x39c>" 0x10e4
@@ -280,7 +280,7 @@ STRING "<dev string:xba2>" 0x683c 0x68dc 0x6940 0x69e4 0x8748 0x87ec
 STRING "<dev string:xbad>" 0x685c 0x6914 0x876c 0x8824
 # zm_devgui::zombie_devgui_think@18e0 zm_devgui::zombie_devgui_think@19e8 zm_devgui::zombie_devgui_open_sesame@c8
 STRING "<dev string:xbbf>" 0x6880 0x6988 0x8790
-# zm_devgui::zombie_devgui_think@18d8 zm_devgui::zombie_devgui_think@19e0 zm_devgui::zombie_devgui_open_sesame@c0 zm_devgui::zombie_devgui_open_sesame@1b8 zm_devgui::zombie_devgui_open_sesame@2a8 zm_devgui::zombie_devgui_open_sesame@320 zm_devgui::function_84f0a909@60 zm_devgui::function_f12b8a34@54
+# zm_devgui::zombie_devgui_think@18d8 zm_devgui::zombie_devgui_think@19e0 zm_devgui::zombie_devgui_open_sesame@c0 zm_devgui::zombie_devgui_open_sesame@1b8 zm_devgui::zombie_devgui_open_sesame@2a8 zm_devgui::zombie_devgui_open_sesame@320 zm_devgui::zombie_devgui_pap_warp@60 zm_devgui::function_f12b8a34@54
 STRING "<dev string:xbd1>" 0x6878 0x6980 0x8788 0x8880 0x8970 0x89e8 0x94e0 0xee5c
 # zm_devgui::zombie_devgui_think@19c0 zm_devgui::zombie_devgui_think@1a78
 STRING "<dev string:xbde>" 0x6960 0x6a18
@@ -288,7 +288,7 @@ STRING "<dev string:xbde>" 0x6960 0x6a18
 STRING "<dev string:xbf1>" 0x81a8
 # zm_devgui::devgui_zombie_spawn@130 zm_devgui::spawn_archetype@2c
 STRING "<dev string:xc02>" 0x8260 0xfbdc
-# zm_devgui::function_6f066ef@a0
+# zm_devgui::devgui_zombie_spawn_dummy@a0
 STRING "<dev string:xc16>" 0x83c8
 # zm_devgui::zombie_devgui_player_menu_clear@18
 STRING "<dev string:xc1>" 0x8e0
@@ -320,7 +320,7 @@ STRING "<dev string:xca5>" 0x90e8
 STRING "<dev string:xcac>" 0x9220
 # zm_devgui::zombie_devgui_turn_player@144
 STRING "<dev string:xcc2>" 0x9254
-# zm_devgui::function_84f0a909@68
+# zm_devgui::zombie_devgui_pap_warp@68
 STRING "<dev string:xcd9>" 0x94e8
 # zm_devgui::zombie_devgui_toggle_ignore@ac zm_devgui::zombie_devgui_toggle_ignore@dc
 STRING "<dev string:xceb>" 0xaaec 0xab1c
@@ -336,7 +336,7 @@ STRING "<dev string:xd27>" 0xbbdc
 STRING "<dev string:xd30>" 0xbc18
 # zm_devgui::zombie_devgui_pack_current_weapon@ac zm_devgui::zombie_devgui_repack_current_weapon@a4 zm_devgui::zombie_devgui_unpack_current_weapon@ac zm_devgui::function_15ee6847@e8 zm_devgui::function_61a7bb28@94 zm_devgui::function_986a2585@94 zm_devgui::function_184b9c6a@94 zm_devgui::function_faf7abce@9c
 STRING "<dev string:xd53>" 0xbce4 0xbe8c 0xbff4 0x101c0 0x11404 0x11574 0x11684 0x11814
-# zm_devgui::function_c8ee84ba@70 zm_devgui::function_c83c6fa@68
+# zm_devgui::zombie_devgui_rank_max_all_weapons@70 zm_devgui::zombie_devgui_rank_zero_all_weapons@68
 STRING "<dev string:xd5f>" 0xc838 0xc988
 # zm_devgui::devgui_debug_hud@1d4
 STRING "<dev string:xd68>" 0xdc7c
@@ -374,13 +374,13 @@ STRING "<dev string:xe4c>" 0xe178
 STRING "<dev string:xe67>" 0xe378
 # zm_devgui::function_c7dd7a17@5c zm_devgui::function_c7dd7a17@8c zm_devgui::function_2f5772bf@190
 STRING "<dev string:xe6>" 0x974 0x9a4 0xb68
-# zm_devgui::function_bbeaa2da@140
+# zm_devgui::zombie_devgui_dump_traversals@140
 STRING "<dev string:xe81>" 0xe510
-# zm_devgui::function_bbeaa2da@188
+# zm_devgui::zombie_devgui_dump_traversals@188
 STRING "<dev string:xe9e>" 0xe558
 # zm_devgui::function_c7dd7a17@70
 STRING "<dev string:xea>" 0x988
-# zm_devgui::function_bbeaa2da@1b4
+# zm_devgui::zombie_devgui_dump_traversals@1b4
 STRING "<dev string:xead>" 0xe584
 # zm_devgui::function_fb482cad@8c zm_devgui::function_fb482cad@a4 zm_devgui::function_8817dd98@a0
 STRING "<dev string:xec8>" 0xe94c 0xe964 0xeaf0
@@ -533,9 +533,9 @@ DEVBLOCK 0x7e8a
 DEVBLOCK 0x7f42
 # zm_devgui::devgui_zombie_spawn@52
 DEVBLOCK 0x8182
-# zm_devgui::function_6f066ef@22
+# zm_devgui::devgui_zombie_spawn_dummy@22
 DEVBLOCK 0x834a
-# zm_devgui::function_7c17d00f@22
+# zm_devgui::devgui_zombie_spawn_near@22
 DEVBLOCK 0x8432
 # zm_devgui::devgui_make_crawler@3a
 DEVBLOCK 0x852a
@@ -557,13 +557,13 @@ DEVBLOCK 0x8dd6
 DEVBLOCK 0x8df2
 # zm_devgui::zombie_devgui_take_money@4a
 DEVBLOCK 0x8e1a
-# zm_devgui::function_dc7312be@1a
+# zm_devgui::zombie_devgui_take_ammo@1a
 DEVBLOCK 0x8eb2
-# zm_devgui::function_dc7312be@1e
+# zm_devgui::zombie_devgui_take_ammo@1e
 DEVBLOCK 0x8eb6
-# zm_devgui::function_dc7312be@3a
+# zm_devgui::zombie_devgui_take_ammo@3a
 DEVBLOCK 0x8ed2
-# zm_devgui::function_dc7312be@62
+# zm_devgui::zombie_devgui_take_ammo@62
 DEVBLOCK 0x8efa
 # zm_devgui::zombie_devgui_give_xp@a
 DEVBLOCK 0x905a
@@ -581,9 +581,9 @@ DEVBLOCK 0x917e
 DEVBLOCK 0x919a
 # zm_devgui::zombie_devgui_turn_player@b2
 DEVBLOCK 0x91c2
-# zm_devgui::function_4bb7eb36@3a
+# zm_devgui::zombie_devgui_chest_warp@3a
 DEVBLOCK 0x92ca
-# zm_devgui::function_84f0a909@42
+# zm_devgui::zombie_devgui_pap_warp@42
 DEVBLOCK 0x94c2
 # zm_devgui::zombie_devgui_cool_jetgun@2
 DEVBLOCK 0x968a
@@ -765,17 +765,17 @@ DEVBLOCK 0xc17a
 DEVBLOCK 0xc26a
 # zm_devgui::function_af7d932@1a
 DEVBLOCK 0xc2f2
-# zm_devgui::function_c8949116@3a
+# zm_devgui::zombie_devgui_rank_up_current_weapon@3a
 DEVBLOCK 0xc382
 # zm_devgui::function_9d21f44b@3a
 DEVBLOCK 0xc4ba
-# zm_devgui::function_e2a97bab@32
+# zm_devgui::zombie_devgui_rank_max_current_weapon@32
 DEVBLOCK 0xc5ea
-# zm_devgui::function_1a560cfc@2a
+# zm_devgui::zombie_devgui_rank_zero_current_weapon@2a
 DEVBLOCK 0xc6fa
-# zm_devgui::function_c8ee84ba@42
+# zm_devgui::zombie_devgui_rank_max_all_weapons@42
 DEVBLOCK 0xc80a
-# zm_devgui::function_c83c6fa@3a
+# zm_devgui::zombie_devgui_rank_zero_all_weapons@3a
 DEVBLOCK 0xc95a
 # zm_devgui::function_cbdab30d@a
 DEVBLOCK 0xca6a
@@ -783,13 +783,13 @@ DEVBLOCK 0xca6a
 DEVBLOCK 0xcb9a
 # zm_devgui::function_5da832fa@a
 DEVBLOCK 0xcbda
-# zm_devgui::function_8c9f2dea@2a
+# zm_devgui::zombie_devgui_rank_up_player@2a
 DEVBLOCK 0xcc4a
 # zm_devgui::function_b7ef4b8@2a
 DEVBLOCK 0xcd32
-# zm_devgui::function_9b4d61fa@22
+# zm_devgui::zombie_devgui_rank_max_player@22
 DEVBLOCK 0xce1a
-# zm_devgui::function_cdc3d061@1a
+# zm_devgui::zombie_devgui_rank_zero_player@1a
 DEVBLOCK 0xceda
 # zm_devgui::zombie_devgui_reopt_current_weapon@22
 DEVBLOCK 0xcf8a
@@ -823,13 +823,13 @@ DEVBLOCK 0xdda2
 DEVBLOCK 0xddea
 # zm_devgui::robotsupportsovercover_manager_@2
 DEVBLOCK 0xde32
-# zm_devgui::function_92523b12@2
+# zm_devgui::zombie_devgui_debug_counts@2
 DEVBLOCK 0xded2
 # zm_devgui::wait_for_zombie@5a
 DEVBLOCK 0xdf72
 # zm_devgui::zombie_draw_traversals@3a
 DEVBLOCK 0xe1ea
-# zm_devgui::function_bbeaa2da@62
+# zm_devgui::zombie_devgui_dump_traversals@62
 DEVBLOCK 0xe432
 # zm_devgui::function_e9b89aac@52
 DEVBLOCK 0xe5fa
@@ -887,7 +887,7 @@ DEVBLOCK 0x1004a
 DEVBLOCK 0x10102
 # zm_devgui::function_26417ea7@2
 DEVBLOCK 0x10362
-# zm_devgui::function_fb88b423@2a
+# zm_devgui::knockdown_all_ai@2a
 DEVBLOCK 0x103ca
 # zm_devgui::init_debug_center_screen@12
 DEVBLOCK 0x10462

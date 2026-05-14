@@ -4,7 +4,7 @@
     "displayname": "#weapon/ar_modular_t8",
     "altWeapon": "#ar_modular_t8_zm",
     "weapon70": "#ar_modular_t8",
-    "streamkey": "#acog_ar_modular_t8_soundbank",
+    "soundbank": "#acog_ar_modular_t8_soundbank",
     "scrstr_8c8": [
         "tag_adv_mag_full_attach",
         "tag_clan_tag",
@@ -73,7 +73,7 @@
     "sound610": "#hash_209cb2974ae55ec0",
     "sound800": "#hash_5ee962527afebfb1",
     "sound810": "#hash_5ee962527afebfb1",
-    "tunables1": "#hash_37640d4c1b3d91c",
+    "tunables1": "#acog_ar_modular_t8_tunables_zm",
     "weaponCamo": "#hash_6374c9209cc6531d",
     "cacWeaponXCam": "#ui_cam_cac_ar_modular",
     "cacAttachmentsXCam": "#ui_cam_cac_ar_modular",

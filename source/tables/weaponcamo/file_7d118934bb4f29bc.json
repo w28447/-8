@@ -1437,7 +1437,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -1527,7 +1527,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -1617,7 +1617,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -1694,7 +1694,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -1707,97 +1707,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
-                            "translationX": 0,
-                            "translationY": 0,
-                            "scaleX": 5,
-                            "scaleY": 5,
-                            "rotation": 0,
-                            "normalBlend": 1,
-                            "glossBlend": 1,
-                            "detailHeight": 0,
-                            "detailScale": "(0, 0)",
-                            "albedoTint": 0
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "materials": [
-                {
-                    "baseMaterials": [
-                        {
-                            "material": "#hash_2ca9369a7de39401"
-                        },
-                        {
-                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
-                        },
-                        {
-                            "material": "#hash_40293b57898f5509"
-                        },
-                        {
-                            "material": "#hash_5854630e69ad3947"
-                        },
-                        {
-                            "material": "#hash_27161a8f5b3c4323"
-                        }
-                    ],
-                    "camoMaterialChannels": [
-                        {
-                            "camoMaterial": "#hash_fc748c6852c137b3",
-                            "translationX": 0,
-                            "translationY": 0,
-                            "scaleX": 5,
-                            "scaleY": 5,
-                            "rotation": 0,
-                            "normalBlend": 1,
-                            "glossBlend": 1,
-                            "detailHeight": 0,
-                            "detailScale": "(0, 0)",
-                            "albedoTint": 0
-                        },
-                        {
-                            "camoMaterial": "#hash_fc748c6852c137b3",
-                            "translationX": 0,
-                            "translationY": 0,
-                            "scaleX": 5,
-                            "scaleY": 5,
-                            "rotation": 0,
-                            "normalBlend": 1,
-                            "glossBlend": 1,
-                            "detailHeight": 0,
-                            "detailScale": "(0, 0)",
-                            "albedoTint": 0
-                        },
-                        {
-                            "camoMaterial": "#hash_fc748c6852c137b3",
-                            "translationX": 0,
-                            "translationY": 0,
-                            "scaleX": 5,
-                            "scaleY": 5,
-                            "rotation": 0,
-                            "normalBlend": 1,
-                            "glossBlend": 1,
-                            "detailHeight": 0,
-                            "detailScale": "(0, 0)",
-                            "albedoTint": 0
-                        },
-                        {
-                            "camoMaterial": "#hash_c7973e537117af97",
-                            "translationX": 0,
-                            "translationY": 0,
-                            "scaleX": 5,
-                            "scaleY": 5,
-                            "rotation": 0,
-                            "normalBlend": 1,
-                            "glossBlend": 1,
-                            "detailHeight": 0,
-                            "detailScale": "(0, 0)",
-                            "albedoTint": 0
-                        },
-                        {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -1835,7 +1745,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_fc748b6852c13600",
+                            "camoMaterial": "#hash_fc748c6852c137b3",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -1847,6 +1757,83 @@
                             "detailScale": "(0, 0)",
                             "albedoTint": 0
                         },
+                        {
+                            "camoMaterial": "#hash_fc748c6852c137b3",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 5,
+                            "scaleY": 5,
+                            "rotation": 0,
+                            "normalBlend": 1,
+                            "glossBlend": 1,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        },
+                        {
+                            "camoMaterial": "#hash_fc748c6852c137b3",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 5,
+                            "scaleY": 5,
+                            "rotation": 0,
+                            "normalBlend": 1,
+                            "glossBlend": 1,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        },
+                        {
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 5,
+                            "scaleY": 5,
+                            "rotation": 0,
+                            "normalBlend": 1,
+                            "glossBlend": 1,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        },
+                        {
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 5,
+                            "scaleY": 5,
+                            "rotation": 0,
+                            "normalBlend": 1,
+                            "glossBlend": 1,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "materials": [
+                {
+                    "baseMaterials": [
+                        {
+                            "material": "#hash_2ca9369a7de39401"
+                        },
+                        {
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
+                        },
+                        {
+                            "material": "#hash_40293b57898f5509"
+                        },
+                        {
+                            "material": "#hash_5854630e69ad3947"
+                        },
+                        {
+                            "material": "#hash_27161a8f5b3c4323"
+                        }
+                    ],
+                    "camoMaterialChannels": [
                         {
                             "camoMaterial": "#hash_fc748b6852c13600",
                             "translationX": 0,
@@ -1874,7 +1861,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#hash_fc748b6852c13600",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -1887,7 +1874,20 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 5,
+                            "scaleY": 5,
+                            "rotation": 0,
+                            "normalBlend": 1,
+                            "glossBlend": 1,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        },
+                        {
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -34053,7 +34053,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 2,
@@ -34066,7 +34066,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 2,
@@ -34079,7 +34079,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 2,

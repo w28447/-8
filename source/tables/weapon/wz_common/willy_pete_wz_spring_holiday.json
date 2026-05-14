@@ -2,7 +2,7 @@
     "name": "#willy_pete_wz_spring_holiday",
     "baseWeapon": "#willy_pete_wz_spring_holiday",
     "displayname": "#weapon/willy_pete",
-    "streamkey": "#willy_pete_wz_spring_holiday_soundbank",
+    "soundbank": "#willy_pete_wz_spring_holiday_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",
@@ -53,5 +53,5 @@
     "image_e90": "#ui_icon_inventory_smoke_grenade",
     "fx_ed8": "#hash_13988fd86e6dd82a",
     "bounceImpactFX": "#grenade_bounce",
-    "bounceImpactSounds": "#hash_c6d8f2152c519b03"
+    "bounceImpactSounds": "#smoke_bounce"
 }

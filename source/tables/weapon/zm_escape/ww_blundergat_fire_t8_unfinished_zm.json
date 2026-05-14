@@ -3,7 +3,7 @@
     "baseWeapon": "#ww_blundergat_fire_t8_unfinished",
     "displayname": "#zmweapon/magmagat_unfinished",
     "weapon70": "#ww_blundergat_t8",
-    "streamkey": "#ww_blundergat_fire_t8_unfinished_soundbank",
+    "soundbank": "#ww_blundergat_fire_t8_unfinished_soundbank",
     "scrstr_8c8": [
         "tag_armor_acid",
         "tag_armor",

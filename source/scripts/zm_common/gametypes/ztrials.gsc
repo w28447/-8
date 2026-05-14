@@ -1,7 +1,5 @@
 #using script_1496ada77dc2f2e2;
 #using script_6951ea86fdae9ae0;
-#using scripts\zm_common\trials\zm_trial_pack_a_punch_sacrifice.gsc;
-#using scripts\zm_common\trials\zm_trial_no_player_death.gsc;
 #using script_7b843bf90a032750;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\flag_shared;
@@ -20,6 +18,8 @@
 #using scripts\zm_common\trials\zm_trial_double_damage;
 #using scripts\zm_common\trials\zm_trial_give_reward;
 #using scripts\zm_common\trials\zm_trial_headshots_only;
+#using scripts\zm_common\trials\zm_trial_no_player_death;
+#using scripts\zm_common\trials\zm_trial_pack_a_punch_sacrifice;
 #using scripts\zm_common\trials\zm_trial_reset_loadout;
 #using scripts\zm_common\trials\zm_trial_restrict_controls;
 #using scripts\zm_common\trials\zm_trial_restrict_loadout;

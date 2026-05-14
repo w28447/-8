@@ -19,7 +19,7 @@
     "characterselect": "#hash_2417a261054d47b",
     "name": "cosmic_silverback",
     "hash_27c16b52ff99309d:hash_207908de": "#hash_27c16b52ff99309d",
-    "hash_529b7ac8c01adefc:hash_b801796c": "#hash_529b7ac8c01adefc",
+    "exertpainpunched": "#hash_529b7ac8c01adefc",
     "boostloss": "#hash_54a79ef09a1e6b9a",
     "exertgascough": "#hash_e46a947334ba9fa",
     "exertpainfalling": "#hash_5fe6df302c932c5a",
@@ -37,6 +37,6 @@
     "exertbreathehurt": "#hash_54496b9d2a315ce8",
     "exertfullyhealedbreath": "#exert_fully_healed",
     "exertdeathdrowned": "#hash_72e48a4722b0303d",
-    "hash_1e9ca3c1466524dc:hash_c3b67de0": "#hash_1e9ca3c1466524dc",
+    "exertpainburn": "#hash_1e9ca3c1466524dc",
     "hash_14c0d62902c265fe:hash_1ca33ad4": "#hash_14c0d62902c265fe"
 }

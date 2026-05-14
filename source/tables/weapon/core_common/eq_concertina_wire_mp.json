@@ -3,7 +3,7 @@
     "baseWeapon": "#eq_concertina_wire",
     "displayname": "#eq_concertina_wire/name",
     "weapon70": "#eq_concertina_wire",
-    "streamkey": "#eq_concertina_wire_soundbank",
+    "soundbank": "#eq_concertina_wire_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

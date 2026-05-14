@@ -1,5 +1,5 @@
 {
-    "blade_throw_kill": "#blade_throw_kill",
+    "killscoreevent": "#blade_throw_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",

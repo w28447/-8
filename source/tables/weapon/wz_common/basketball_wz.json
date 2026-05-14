@@ -3,7 +3,7 @@
     "baseWeapon": "#basketball",
     "displayname": "#weapon/basketball",
     "weapon70": "#ball",
-    "streamkey": "#basketball_soundbank",
+    "soundbank": "#basketball_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -32,7 +32,7 @@
     "sound810": "#hash_5fd68d0455a0b8",
     "tunables1": "#basketball_tunables_wz",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_46c4a738ee047fa"

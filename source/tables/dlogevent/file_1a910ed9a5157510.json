@@ -124,7 +124,7 @@
                     },
                     {
                         "name": "#party_member_count",
-                        "scrName": "#hash_a15e4438",
+                        "scrName": "#party_member_count",
                         "type": "INT8"
                     },
                     {

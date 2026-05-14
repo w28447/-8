@@ -4,7 +4,7 @@
     "displayname": "#weapon/ar_galil_t8",
     "altWeapon": "#ar_galil_t8_mp",
     "weapon70": "#ar_galil_t8",
-    "streamkey": "#acog_ar_galil_t8_soundbank",
+    "soundbank": "#acog_ar_galil_t8_soundbank",
     "scrstr_8c8": [
         "tag_camo_darkmatter",
         "tag_camo_diamond",

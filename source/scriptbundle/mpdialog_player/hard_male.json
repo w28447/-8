@@ -19,7 +19,7 @@
     "characterselect": "#hash_764fe63c7a7c7b25",
     "name": "hard_male",
     "hash_73987b03b190089b:hash_207908de": "#hash_73987b03b190089b",
-    "hash_75fdf358730a5a2:hash_b801796c": "#hash_75fdf358730a5a2",
+    "exertpainpunched": "#hash_75fdf358730a5a2",
     "boostloss": "#hash_4fec488ef911bc68",
     "exertgascough": "#hash_24ae2e3ddccb5e94",
     "exertpainfalling": "#hash_65726889112e355c",
@@ -37,6 +37,6 @@
     "exertbreathehurt": "#hash_734e5cace4d44ae2",
     "exertfullyhealedbreath": "#exert_fully_healed",
     "exertdeathdrowned": "#hash_16a7ff7b13b5eb17",
-    "hash_73367beba47373c6:hash_c3b67de0": "#hash_73367beba47373c6",
+    "exertpainburn": "#hash_73367beba47373c6",
     "hash_1446ab8ad9e5ef0:hash_1ca33ad4": "#hash_1446ab8ad9e5ef0"
 }

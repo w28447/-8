@@ -96,7 +96,7 @@ scriptparsetree,#scripts/zm_common/trials/zm_trial_kill_with_special.gsc
 scriptparsetree,#scripts/zm_common/trials/zm_trial_disable_regen.gsc
 scriptparsetree,#scripts/zm/zm_lightning_chain.gsc
 scriptparsetree,#scripts/zm_common/zm_daily_challenges.gsc
-scriptparsetree,#hash_1793e0dffb81a6c8
+scriptparsetree,#scripts/zm_common/trials/zm_trial_pack_a_punch_sacrifice.csc
 scriptparsetree,#scripts/zm_common/trials/zm_trial_sprinters_only.gsc
 scriptparsetree,#scripts/zm_common/zm_melee_weapon.gsc
 scriptparsetree,#scripts/zm_common/zm_maptable.csc
@@ -162,9 +162,9 @@ scriptparsetree,#scripts/zm_common/zm_playerzombie.gsc
 scriptparsetree,#scripts/zm_common/trials/zm_trial_zombie_speed_changes.gsc
 scriptparsetree,#scripts/zm/perk/zm_perk_dying_wish.gsc
 scriptparsetree,#scripts/zm_common/talisman/zm_talisman_perk_reducecost_3.gsc
-scriptparsetree,#hash_2f9a68261f6a17be
+scriptparsetree,#scripts/zm_common/trials/zm_trial_trap_kills_only.gsc
 scriptparsetree,#scripts/zm_common/zm_progress.csc
-scriptparsetree,#hash_301f64a4090c381a
+scriptparsetree,#scripts/zm_common/zm_faction_buffs.gsc
 scriptparsetree,#scripts/zm_common/gametypes/spawning.gsc
 scriptparsetree,#scripts/zm/perk/zm_perk_mod_staminup.csc
 scriptparsetree,#hash_30ba61ad5559c51d
@@ -382,9 +382,9 @@ scriptparsetree,#hash_760b801e43fe3017
 scriptparsetree,#scripts/zm_common/zm_ui_inventory.csc
 scriptparsetree,#scripts/zm/zm_lightning_chain.csc
 scriptparsetree,#scripts/zm_common/ai/planner_zm_generic_commander.gsc
-scriptparsetree,#hash_770e34dfe9b07f3c
+scriptparsetree,#scripts/zm_common/trials/zm_trial_pack_a_punch_sacrifice.gsc
 scriptparsetree,#scripts/zm_common/gametypes/ztrials.gsc
-scriptparsetree,#hash_7828033bc0ecda72
+scriptparsetree,#scripts/zm_common/trials/zm_trial_no_player_death.gsc
 scriptparsetree,#scripts/zm_common/fx.gsc
 scriptparsetree,#scripts/zm/powerup/zm_powerup_weapon_minigun.csc
 scriptparsetree,#scripts/zm_common/zm_inventory.csc

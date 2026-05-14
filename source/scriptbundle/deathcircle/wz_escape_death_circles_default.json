@@ -12,8 +12,8 @@
             "hash_a3841ae2": 0,
             "hash_5a8689a9": 1,
             "circleradius": 19000,
-            "hash_112f6f50": 1000,
-            "hash_b9aec05c": -1000,
+            "circleoriginy": 1000,
+            "circleoriginx": -1000,
             "hash_b97ecd26": 1,
             "hash_85589312": 60
         },
@@ -29,8 +29,8 @@
             "hash_a3841ae2": 12457,
             "hash_5a8689a9": 1,
             "circleradius": 7000,
-            "hash_112f6f50": 1000,
-            "hash_b9aec05c": -1000,
+            "circleoriginy": 1000,
+            "circleoriginx": -1000,
             "hash_b97ecd26": 2,
             "hash_85589312": 60
         },
@@ -46,8 +46,8 @@
             "hash_a3841ae2": 17457,
             "hash_5a8689a9": 1,
             "circleradius": 5500,
-            "hash_112f6f50": 1000,
-            "hash_b9aec05c": -1000,
+            "circleoriginy": 1000,
+            "circleoriginx": -1000,
             "hash_b97ecd26": 10,
             "hash_85589312": 45
         },
@@ -63,8 +63,8 @@
             "hash_a3841ae2": 22457,
             "hash_5a8689a9": 1,
             "circleradius": 4000,
-            "hash_112f6f50": 1000,
-            "hash_b9aec05c": -1000,
+            "circleoriginy": 1000,
+            "circleoriginx": -1000,
             "hash_b97ecd26": 20,
             "hash_85589312": 30
         }
@@ -74,9 +74,9 @@
     "type": "deathcircle",
     "name": "wz_escape_death_circles_default",
     "hash_8d8aa969": 0,
-    "hash_904b645e": 0,
+    "endgamedelay": 0,
     "hash_7a60538a": 4,
-    "hash_64232072": 60,
+    "initialcircledelay": 60,
     "hash_6c870a00": 10,
     "hash_ab9cd581": 20
 }

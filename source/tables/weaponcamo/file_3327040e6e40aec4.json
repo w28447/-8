@@ -3353,7 +3353,7 @@
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_mp40_sights_alt2",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_mp40_weapon"
@@ -23058,7 +23058,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -23071,7 +23071,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1.5,
@@ -23084,7 +23084,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,

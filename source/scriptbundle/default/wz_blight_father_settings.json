@@ -19,7 +19,7 @@
             "instakilldamagescale": 0.5,
             "weaponid": "#hero_hammer_lv1",
             "weakpointdamagescale": 0.5,
-            "hash_97b22faa": 0.5,
+            "instakillweakpointdamagescale": 0.5,
             "damagescale": 0.5
         },
         {
@@ -27,7 +27,7 @@
             "instakilldamagescale": 0.5,
             "weaponid": "#hero_hammer_lv2",
             "weakpointdamagescale": 0.5,
-            "hash_97b22faa": 0.5,
+            "instakillweakpointdamagescale": 0.5,
             "damagescale": 0.5
         },
         {
@@ -35,7 +35,7 @@
             "instakilldamagescale": 0.5,
             "weaponid": "#hero_hammer_lv3",
             "weakpointdamagescale": 0.5,
-            "hash_97b22faa": 0.5,
+            "instakillweakpointdamagescale": 0.5,
             "damagescale": 0.5
         },
         {
@@ -43,7 +43,7 @@
             "instakilldamagescale": 0.5,
             "weaponid": "#hero_chakram_lv1",
             "weakpointdamagescale": 0.5,
-            "hash_97b22faa": 0.5,
+            "instakillweakpointdamagescale": 0.5,
             "damagescale": 0.5
         },
         {
@@ -51,7 +51,7 @@
             "instakilldamagescale": 0.5,
             "weaponid": "#hero_chakram_lv2",
             "weakpointdamagescale": 0.5,
-            "hash_97b22faa": 0.5,
+            "instakillweakpointdamagescale": 0.5,
             "damagescale": 0.5
         },
         {
@@ -59,7 +59,7 @@
             "instakilldamagescale": 0.5,
             "weaponid": "#hero_chakram_lv3",
             "weakpointdamagescale": 0.5,
-            "hash_97b22faa": 0.5,
+            "instakillweakpointdamagescale": 0.5,
             "damagescale": 0.5
         },
         {
@@ -67,7 +67,7 @@
             "instakilldamagescale": 0.5,
             "weaponid": "#hero_sword_pistol_lv1",
             "weakpointdamagescale": 0.5,
-            "hash_97b22faa": 0.5,
+            "instakillweakpointdamagescale": 0.5,
             "damagescale": 0.5
         },
         {
@@ -75,7 +75,7 @@
             "instakilldamagescale": 0.5,
             "weaponid": "#hero_sword_pistol_lv2",
             "weakpointdamagescale": 0.5,
-            "hash_97b22faa": 0.5,
+            "instakillweakpointdamagescale": 0.5,
             "damagescale": 0.5
         },
         {
@@ -83,7 +83,7 @@
             "instakilldamagescale": 0.5,
             "weaponid": "#hero_sword_pistol_lv3",
             "weakpointdamagescale": 0.5,
-            "hash_97b22faa": 0.5,
+            "instakillweakpointdamagescale": 0.5,
             "damagescale": 0.5
         },
         {
@@ -91,7 +91,7 @@
             "instakilldamagescale": 0.5,
             "weaponid": "#hero_scepter_lv1",
             "weakpointdamagescale": 1,
-            "hash_97b22faa": 1,
+            "instakillweakpointdamagescale": 1,
             "damagescale": 0.5
         },
         {
@@ -99,7 +99,7 @@
             "instakilldamagescale": 0.5,
             "weaponid": "#hero_scepter_lv2",
             "weakpointdamagescale": 1,
-            "hash_97b22faa": 1,
+            "instakillweakpointdamagescale": 1,
             "damagescale": 0.5
         },
         {
@@ -107,7 +107,7 @@
             "instakilldamagescale": 0.5,
             "weaponid": "#hero_scepter_lv3",
             "weakpointdamagescale": 1,
-            "hash_97b22faa": 1,
+            "instakillweakpointdamagescale": 1,
             "damagescale": 0.5
         },
         {
@@ -115,7 +115,7 @@
             "instakilldamagescale": 0.5,
             "weaponid": "#gun_mini_turret",
             "weakpointdamagescale": 0.25,
-            "hash_97b22faa": 0.5,
+            "instakillweakpointdamagescale": 0.5,
             "damagescale": 0.1
         },
         {
@@ -123,7 +123,7 @@
             "instakilldamagescale": 0.5,
             "weaponid": "#ww_hand_c",
             "weakpointdamagescale": 0.5,
-            "hash_97b22faa": 0.5,
+            "instakillweakpointdamagescale": 0.5,
             "damagescale": 0.5
         },
         {
@@ -131,7 +131,7 @@
             "instakilldamagescale": 0.5,
             "weaponid": "#ww_hand_c_upgraded",
             "weakpointdamagescale": 0.5,
-            "hash_97b22faa": 0.5,
+            "instakillweakpointdamagescale": 0.5,
             "damagescale": 0.5
         },
         {
@@ -139,7 +139,7 @@
             "instakilldamagescale": 0.5,
             "weaponid": "#ww_hand_g",
             "weakpointdamagescale": 0.5,
-            "hash_97b22faa": 0.5,
+            "instakillweakpointdamagescale": 0.5,
             "damagescale": 0.5
         },
         {
@@ -147,7 +147,7 @@
             "instakilldamagescale": 0.5,
             "weaponid": "#ww_hand_g_upgraded",
             "weakpointdamagescale": 0.5,
-            "hash_97b22faa": 0.5,
+            "instakillweakpointdamagescale": 0.5,
             "damagescale": 0.5
         },
         {
@@ -155,7 +155,7 @@
             "instakilldamagescale": 0.5,
             "weaponid": "#ww_hand_h",
             "weakpointdamagescale": 0.5,
-            "hash_97b22faa": 0.5,
+            "instakillweakpointdamagescale": 0.5,
             "damagescale": 0.5
         },
         {
@@ -163,7 +163,7 @@
             "instakilldamagescale": 0.5,
             "weaponid": "#ww_hand_h_upgraded",
             "weakpointdamagescale": 0.5,
-            "hash_97b22faa": 0.5,
+            "instakillweakpointdamagescale": 0.5,
             "damagescale": 0.5
         },
         {
@@ -171,7 +171,7 @@
             "instakilldamagescale": 0.5,
             "weaponid": "#ww_hand_o",
             "weakpointdamagescale": 0.5,
-            "hash_97b22faa": 0.5,
+            "instakillweakpointdamagescale": 0.5,
             "damagescale": 0.5
         },
         {
@@ -179,7 +179,7 @@
             "instakilldamagescale": 0.5,
             "weaponid": "#ww_hand_o_upgraded",
             "weakpointdamagescale": 0.5,
-            "hash_97b22faa": 0.5,
+            "instakillweakpointdamagescale": 0.5,
             "damagescale": 0.5
         },
         {
@@ -187,7 +187,7 @@
             "instakilldamagescale": 0.5,
             "weaponid": "#ww_hand_c_uncharged",
             "weakpointdamagescale": 0.5,
-            "hash_97b22faa": 0.5,
+            "instakillweakpointdamagescale": 0.5,
             "damagescale": 0.5
         },
         {
@@ -195,7 +195,7 @@
             "instakilldamagescale": 0.7,
             "weaponid": "#ww_hand_c_upgraded",
             "weakpointdamagescale": 0.7,
-            "hash_97b22faa": 0.7,
+            "instakillweakpointdamagescale": 0.7,
             "damagescale": 0.7
         },
         {
@@ -203,7 +203,7 @@
             "instakilldamagescale": 0.5,
             "weaponid": "#ww_hand_g_uncharged",
             "weakpointdamagescale": 0.5,
-            "hash_97b22faa": 0.5,
+            "instakillweakpointdamagescale": 0.5,
             "damagescale": 0.5
         },
         {
@@ -211,7 +211,7 @@
             "instakilldamagescale": 0.7,
             "weaponid": "#ww_hand_g_upgraded",
             "weakpointdamagescale": 0.7,
-            "hash_97b22faa": 0.7,
+            "instakillweakpointdamagescale": 0.7,
             "damagescale": 0.7
         },
         {
@@ -219,7 +219,7 @@
             "instakilldamagescale": 0.5,
             "weaponid": "#ww_hand_h_uncharged",
             "weakpointdamagescale": 0.5,
-            "hash_97b22faa": 0.5,
+            "instakillweakpointdamagescale": 0.5,
             "damagescale": 0.5
         },
         {
@@ -227,7 +227,7 @@
             "instakilldamagescale": 0.7,
             "weaponid": "#ww_hand_h_upgraded",
             "weakpointdamagescale": 0.7,
-            "hash_97b22faa": 0.7,
+            "instakillweakpointdamagescale": 0.7,
             "damagescale": 0.7
         },
         {
@@ -235,7 +235,7 @@
             "instakilldamagescale": 0.5,
             "weaponid": "#ww_hand_o_uncharged",
             "weakpointdamagescale": 0.5,
-            "hash_97b22faa": 0.5,
+            "instakillweakpointdamagescale": 0.5,
             "damagescale": 0.5
         },
         {
@@ -243,7 +243,7 @@
             "instakilldamagescale": 0.7,
             "weaponid": "#ww_hand_o_upgraded",
             "weakpointdamagescale": 0.7,
-            "hash_97b22faa": 0.7,
+            "instakillweakpointdamagescale": 0.7,
             "damagescale": 0.7
         }
     ],
@@ -284,7 +284,7 @@
     "hash_20c6e4ca": 0.25,
     "hash_c9e8cdb6": 12,
     "hash_b995c667": 38,
-    "hash_97b22faa": 2,
+    "instakillweakpointdamagescale": 2,
     "damagescale": 0.7,
     "hash_167cbf22": 64,
     "category": "#miniboss",

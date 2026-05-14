@@ -4,7 +4,7 @@
     "displayname": "#zmweapon/smg_drum_pistol_t8_upgraded",
     "xhash_60": "#hash_49f48418c1e61d89",
     "weapon70": "#smg_drum_pistol_t8",
-    "streamkey": "#smg_drum_pistol_t8_upgraded_soundbank",
+    "soundbank": "#smg_drum_pistol_t8_upgraded_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -75,15 +75,15 @@
     "weaponCamo": "#hash_63aaeaca69e72df9",
     "cacWeaponXCam": "#ui_cam_cac_smg_drum_pistol",
     "cacAttachmentsXCam": "#ui_cam_cac_smg_drum_pistol",
-    "weaponIconXCam": "#hash_a8373ccd71549c96",
+    "weaponIconXCam": "#ui_cam_icon_smg_fastfire",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_6e1794ebda9e4c58"
     ],
     "sharedWeaponSounds": "#smg",
-    "ballisticDesc": "#hash_fa8de762a01fac90",
+    "ballisticDesc": "#9mm_fmj",
     "tracers": [
         "#hash_a6d5c1a903fba6f4",
         "#hash_e0e8c9de7086f843"
@@ -96,10 +96,10 @@
         "#wpn_t8_zm_smg_primary_world"
     ],
     "reticleCenter": "#reticle_crossbow",
-    "inventoryIconZm": "#hash_c4f83df3c310dbec",
+    "inventoryIconZm": "#ui_icon_weapons_zm_smgdrumpistol",
     "image_e90": "#t7_icon_weapon_smg_fastfire_kf",
     "fireRumble": "#smg_fire",
-    "rumble_dc8": "#hash_a5737886a28a3a7b",
+    "rumble_dc8": "#smg_adsfire",
     "fx_bc8": "#hash_785b070ad413a638",
     "fx_bd0": "#hash_59dcccd22b7d037e",
     "fx_c80": "#hash_8a5567d0168ae02f",
@@ -109,5 +109,5 @@
     "fx_f00": "#weapon/fx_trail_nailgun",
     "normalImpactFX": "#hash_60cc6bcc1dedaadf",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

@@ -4,7 +4,7 @@
     "displayname": "#zmweapon/ray_gun_mk2y_upgraded",
     "weapon50": "#ray_gun_mk2y_upgraded_charged_zm",
     "weapon70": "#ray_gun_mk2",
-    "streamkey": "#ray_gun_mk2y_upgraded_soundbank",
+    "soundbank": "#ray_gun_mk2y_upgraded_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "scrstr_118c": "tag_flash",

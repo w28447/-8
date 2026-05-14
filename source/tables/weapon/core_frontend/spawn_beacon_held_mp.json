@@ -3,7 +3,7 @@
     "baseWeapon": "#spawn_beacon_held",
     "displayname": "#spawnbeacon/name",
     "weapon70": "#gadget_spawnbeacon",
-    "streamkey": "#spawn_beacon_held_soundbank",
+    "soundbank": "#spawn_beacon_held_soundbank",
     "scrstr_8c8": [
         "tag_equipment_hero"
     ],
@@ -38,7 +38,7 @@
     "sound3d0": "#hash_5a3eaf9d57abe7e8",
     "gadgetreadysoundplayer": "#hash_9ef965e78ebe5a4",
     "sound660": "#uin_unavailable_charging",
-    "tunables1": "#hash_45fb92ce4f554e56",
+    "tunables1": "#spawn_beacon_held_tunables_mp",
     "cacWeaponXCam": "#hash_56ac2651a5923b2a",
     "sharedWeaponSounds": "#equipment",
     "#hash_2e4a8800": "#gadget_spawnbeacon_scoreevents",

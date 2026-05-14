@@ -1,8 +1,8 @@
-#using scripts\mp_common\item_supply_drop_system.gsc;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\player\player_stats;
 #using scripts\core_common\system_shared;
 #using scripts\mp_common\item_inventory;
+#using scripts\mp_common\item_supply_drop_system;
 #using scripts\mp_common\item_world_fixup;
 
 #namespace character_unlock;

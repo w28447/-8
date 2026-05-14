@@ -4,7 +4,7 @@
     "displayname": "#weapon/ar_accurate_t8",
     "altWeapon": "#ar_accurate_t8_zm",
     "weapon70": "#ar_accurate_t8",
-    "streamkey": "#dualoptic_ar_accurate_t8_soundbank",
+    "soundbank": "#dualoptic_ar_accurate_t8_soundbank",
     "scrstr_8c8": [
         "tag_sights_off",
         "tag_clan_tag",
@@ -74,7 +74,7 @@
     "sound800": "#hash_5ee962527afebfb1",
     "sound810": "#hash_5ee962527afebfb1",
     "sound820": "#hash_279da5cfe15ceafc",
-    "tunables1": "#hash_666c954a14925129",
+    "tunables1": "#dualoptic_ar_accurate_t8_tunables_zm",
     "weaponCamo": "#hash_366b9415c0bbbb7b",
     "cacWeaponXCam": "#ui_cam_cac_ar_accurate",
     "cacAttachmentsXCam": "#ui_cam_cac_ar_accurate",

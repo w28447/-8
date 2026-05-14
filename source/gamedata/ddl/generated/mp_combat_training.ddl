@@ -7,7 +7,7 @@ version 3 {
         // offset 0x0, size 0x8
         trainingstate trainingstate;
         // offset 0x8, size 0x3
-        bool hash_5bc234d7be11d761[hash_1c9501e7b4c18b7e];
+        bool hash_5bc234d7be11d761[startypes];
         // offset 0xb, size 0x5
         uint:1 __pad[5];
     };
@@ -27,14 +27,14 @@ version 3 {
         weapon_class_kills_sniper, // 0x2,
         hash_1ebacadf6dc3dbdf, // 0x3,
         silver_stars, // 0x4,
-        hash_3caeae083fb50ceb, // 0x5,
+        weapon_class_kills_lmg, // 0x5,
         veteran_kills, // 0x6,
         gold_stars, // 0x7,
         scorestreak_kills, // 0x8,
-        hash_512584b15284d144, // 0x9,
-        hash_513bb5302a850f1c, // 0xa,
+        secondary_weapon_kills, // 0x9,
+        eq_ability_kills, // 0xa,
         best_killstreak, // 0xb,
-        hash_68046b0858420412, // 0xc,
+        weapon_class_kills_smg, // 0xc,
         hash_683d7dfc8782d6b9, // 0xd,
         headshots, // 0xe,
         melee_kills, // 0xf
@@ -50,7 +50,7 @@ version 3 {
     };
 
     // idx 3 members 3
-    enum hash_1c9501e7b4c18b7e {
+    enum startypes {
         bronze, // 0x0,
         gold, // 0x1,
         silver, // 0x2
@@ -68,7 +68,7 @@ version 3 {
     // offset 0x190, size 0x4
     bool hash_20141830935b7f11[hash_30e2ee84fb43aad7];
     // offset 0x194, size 0x1
-    bool hash_5b9483ca80247cc7;
+    bool allchallengescompleted;
     // offset 0x195, size 0x3
     uint:1 __pad[3];
 }
@@ -83,7 +83,7 @@ version 2 {
         // offset 0x0, size 0x8
         trainingstate trainingstate;
         // offset 0x8, size 0x3
-        bool hash_5bc234d7be11d761[hash_1c9501e7b4c18b7e];
+        bool hash_5bc234d7be11d761[startypes];
         // offset 0xb, size 0x5
         uint:1 __pad[5];
     };
@@ -103,14 +103,14 @@ version 2 {
         weapon_class_kills_sniper, // 0x2,
         hash_1ebacadf6dc3dbdf, // 0x3,
         silver_stars, // 0x4,
-        hash_3caeae083fb50ceb, // 0x5,
+        weapon_class_kills_lmg, // 0x5,
         veteran_kills, // 0x6,
         gold_stars, // 0x7,
         scorestreak_kills, // 0x8,
-        hash_512584b15284d144, // 0x9,
-        hash_513bb5302a850f1c, // 0xa,
+        secondary_weapon_kills, // 0x9,
+        eq_ability_kills, // 0xa,
         best_killstreak, // 0xb,
-        hash_68046b0858420412, // 0xc,
+        weapon_class_kills_smg, // 0xc,
         hash_683d7dfc8782d6b9, // 0xd,
         headshots, // 0xe,
         melee_kills, // 0xf
@@ -126,7 +126,7 @@ version 2 {
     };
 
     // idx 3 members 3
-    enum hash_1c9501e7b4c18b7e {
+    enum startypes {
         bronze, // 0x0,
         gold, // 0x1,
         silver, // 0x2
@@ -157,7 +157,7 @@ version 1 {
         // offset 0x0, size 0x8
         trainingstate trainingstate;
         // offset 0x8, size 0x3
-        bool hash_5bc234d7be11d761[hash_1c9501e7b4c18b7e];
+        bool hash_5bc234d7be11d761[startypes];
         // offset 0xb, size 0x5
         uint:1 __pad[5];
     };
@@ -176,14 +176,14 @@ version 1 {
         weapon_class_kills_sniper, // 0x2,
         hash_1ebacadf6dc3dbdf, // 0x3,
         silver_stars, // 0x4,
-        hash_3caeae083fb50ceb, // 0x5,
+        weapon_class_kills_lmg, // 0x5,
         veteran_kills, // 0x6,
         gold_stars, // 0x7,
         scorestreak_kills, // 0x8,
-        hash_512584b15284d144, // 0x9,
-        hash_513bb5302a850f1c, // 0xa,
+        secondary_weapon_kills, // 0x9,
+        eq_ability_kills, // 0xa,
         best_killstreak, // 0xb,
-        hash_68046b0858420412, // 0xc,
+        weapon_class_kills_smg, // 0xc,
         hash_683d7dfc8782d6b9, // 0xd,
         headshots, // 0xe,
         melee_kills, // 0xf
@@ -199,7 +199,7 @@ version 1 {
     };
 
     // idx 3 members 3
-    enum hash_1c9501e7b4c18b7e {
+    enum startypes {
         bronze, // 0x0,
         gold, // 0x1,
         silver, // 0x2

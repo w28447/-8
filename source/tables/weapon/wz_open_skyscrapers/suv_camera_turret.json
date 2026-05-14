@@ -1,7 +1,7 @@
 {
     "name": "#suv_camera_turret",
     "baseWeapon": "#suv_camera_turret",
-    "streamkey": "#suv_camera_turret_soundbank",
+    "soundbank": "#suv_camera_turret_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -33,13 +33,13 @@
     "tunables2": "#hash_18cc9a733a7e6997",
     "tracers": [
         "#lmg",
-        "#hash_e2bdd456ce2308cc"
+        "#lmg_enemy"
     ],
     "turretAnimSettings": "#player_turret_suv_driver_anims",
     "fx_bc8": "#weapon/fx_muz_veh_gun_med_3p",
     "fx_bd0": "#weapon/fx_muz_veh_gun_med_3p",
-    "normalImpactFX": "#hash_946d30ee171ae16a",
-    "exitImpactFX": "#hash_bf7991ca1680bd5c",
+    "normalImpactFX": "#bullet_ap_enter",
+    "exitImpactFX": "#bullet_ap_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

@@ -4,7 +4,7 @@
     "displayname": "#weapon/ar_fastfire_t8",
     "altWeapon": "#ar_fastfire_t8_zm",
     "weapon70": "#ar_fastfire_t8",
-    "streamkey": "#dualoptic_ar_fastfire_t8_soundbank",
+    "soundbank": "#dualoptic_ar_fastfire_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -72,7 +72,7 @@
     "sound610": "#hash_209cb2974ae55ec0",
     "sound800": "#hash_5ee962527afebfb1",
     "sound810": "#hash_5ee962527afebfb1",
-    "tunables1": "#hash_5a1c4ffbf38d6b41",
+    "tunables1": "#dualoptic_ar_fastfire_t8_tunables_zm",
     "weaponCamo": "#hash_439f65306848f2ef",
     "cacWeaponXCam": "#ui_cam_cac_ar_fastfire",
     "cacAttachmentsXCam": "#ui_cam_cac_ar_fastfire",

@@ -3,7 +3,7 @@
     "baseWeapon": "#knife_loadout",
     "displayname": "#weapon/knife_loadout",
     "weapon70": "#knife_loadout",
-    "streamkey": "#knife_loadout_soundbank",
+    "soundbank": "#knife_loadout_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -41,7 +41,7 @@
     "cacAttachmentsXCam": "#hash_82b4420c39dc808",
     "weaponIconXCam": "#hash_4ac976f8d23e2270",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#au_knife_loadout_none"

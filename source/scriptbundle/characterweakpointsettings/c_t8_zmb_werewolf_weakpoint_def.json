@@ -3,7 +3,7 @@
         {
             "hash_8223b0cf": 0,
             "type": "#weakpoint",
-            "hash_51e8b151": "tag_back_ws",
+            "hittag1": "tag_back_ws",
             "activebydefault": 1,
             "hitradius": 20,
             "health": 0.05
@@ -11,7 +11,7 @@
         {
             "hash_8223b0cf": 0,
             "type": "#weakpoint",
-            "hash_51e8b151": "tag_chest_ws",
+            "hittag1": "tag_chest_ws",
             "activebydefault": 1,
             "hitradius": 20,
             "health": 0.05

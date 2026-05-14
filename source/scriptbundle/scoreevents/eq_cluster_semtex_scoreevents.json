@@ -1,15 +1,15 @@
 {
-    "cluster_semtex_multikill_2": "#cluster_semtex_multikill_2",
-    "cluster_semtex_multikill_2": "#cluster_semtex_multikill_2",
-    "cluster_semtex_kill": "#cluster_semtex_kill",
+    "multikill2scoreevent": "#cluster_semtex_multikill_2",
+    "multikill6scoreevent": "#cluster_semtex_multikill_2",
+    "killscoreevent": "#cluster_semtex_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
-    "cluster_semtex_multikill_2": "#cluster_semtex_multikill_2",
+    "multikill4scoreevent": "#cluster_semtex_multikill_2",
     "name": "eq_cluster_semtex_scoreevents",
     "customsettingstype": "ability",
-    "cluster_semtex_multikill_2": "#cluster_semtex_multikill_2",
+    "multikill5scoreevent": "#cluster_semtex_multikill_2",
     "hash_62fadae1e80b17b5:hash_84eddb70": "#hash_62fadae1e80b17b5",
     "hash_fcd2ff3a": 1,
-    "cluster_semtex_multikill_2": "#cluster_semtex_multikill_2"
+    "multikill3scoreevent": "#cluster_semtex_multikill_2"
 }

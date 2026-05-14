@@ -1,7 +1,7 @@
 {
     "name": "#null_offhand_secondary_mp",
     "baseWeapon": "#null_offhand_secondary",
-    "streamkey": "#null_offhand_secondary_soundbank",
+    "soundbank": "#null_offhand_secondary_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -32,7 +32,7 @@
     "sound250": "#hash_242aa17124751841",
     "projexplosionsound": "#wpn_flash_grenade_explode",
     "tunables1": "#null_offhand_secondary_tunables_mp",
-    "cacWeaponXCam": "#hash_925937342df621cd",
+    "cacWeaponXCam": "#ui_cam_cac_equip_flashbang",
     "sharedWeaponSounds": "#equipment",
     "projectilemodel": "#wpn_t7_grenade_flashbang_projectile",
     "viewmodel": [
@@ -50,5 +50,5 @@
     "image_e90": "#blacktransparent",
     "fx_ed8": "#explosions/fx_exp_grenade_flshbng",
     "bounceImpactFX": "#grenade_bounce",
-    "bounceImpactSounds": "#hash_c48a0d9622bdb762"
+    "bounceImpactSounds": "#flash_bounce"
 }

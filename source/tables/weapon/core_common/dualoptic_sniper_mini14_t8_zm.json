@@ -4,7 +4,7 @@
     "displayname": "#weapon/sniper_mini14_t8",
     "altWeapon": "#sniper_mini14_t8_zm",
     "weapon70": "#sniper_mini14_t8",
-    "streamkey": "#dualoptic_sniper_mini14_t8_soundbank",
+    "soundbank": "#dualoptic_sniper_mini14_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -74,7 +74,7 @@
     "sound610": "#hash_5c9addf2686f77e2",
     "sound800": "#hash_17c846b05b70637f",
     "sound810": "#hash_17c846b05b70637f",
-    "tunables1": "#hash_586326a20415978d",
+    "tunables1": "#dualoptic_sniper_mini14_t8_tunables_zm",
     "weaponCamo": "#hash_1b1bdce30a0368ef",
     "cacWeaponXCam": "#ui_cam_cac_sniper_mini14",
     "cacAttachmentsXCam": "#ui_cam_cac_sniper_mini14",

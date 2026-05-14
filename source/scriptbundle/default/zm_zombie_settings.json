@@ -2,11 +2,11 @@
     "zombiesplitmdls": [
         {
             "c_t8_zmb_3rdclass_male_body1": "#c_t8_zmb_3rdclass_male_body1",
-            "hash_cdf1f53d": "model#"
+            "splitmdl": "model#"
         },
         {
             "c_t8_zmb_3rdclass_male_body2": "#c_t8_zmb_3rdclass_male_body2",
-            "hash_cdf1f53d": "model#"
+            "splitmdl": "model#"
         }
     ],
     "hash_9c0ebe1e": 5000,
@@ -41,7 +41,7 @@
     "hash_250a1683": 100,
     "hash_bacb0199": 2,
     "hash_6e7acfb4": 1.5,
-    "hash_97b22faa": 1,
+    "instakillweakpointdamagescale": 1,
     "damagescale": 1,
     "category": "#basic",
     "hash_854eebd": 0,

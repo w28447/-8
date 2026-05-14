@@ -617,7 +617,7 @@ localizeentry,d#hash_2076197971acef53
 localizeentry,d#zombie/richtofen
 localizeentry,#hash_208ea870ce3f300a
 localizeentry,d#hash_208eb7d41301aac0
-localizeentry,d#hash_2095da416d84f50c
+localizeentry,d#heroes/hacker_weapon_tips
 localizeentry,#hash_20aaff2ae8cd4664
 localizeentry,d#hash_20f040b3baacc402
 localizeentry,d#hash_20f4971a5e348c9e
@@ -651,7 +651,7 @@ localizeentry,#mp/item_on_respawn
 localizeentry,d#hash_22071bf9c4de88a5
 localizeentry,d#hash_2219d2672d506c37
 localizeentry,#hash_2232f0cfd847af2f
-localizeentry,d#hash_22343c3ae5fbcb69
+localizeentry,d#heroes/recon_weapon_tips
 localizeentry,d#weapon/melee_secretsanta_t8
 localizeentry,#hash_225a5cf3f4ceae68
 localizeentry,d#hash_226442eca8affe87
@@ -1219,7 +1219,7 @@ localizeentry,#menu/charm_shark
 localizeentry,#hash_3ca064480a56ac73
 localizeentry,#hash_3ca065480a56ae26
 localizeentry,#survival_prototype/objective_failed
-localizeentry,d#hash_3ca3935f24b68d73
+localizeentry,d#heroes/engineer_weapon_tips
 localizeentry,d#hash_3ca968dee9e5dc02
 localizeentry,d#menu/camo_active_spinal
 localizeentry,#weapon/smg_handling_t8_wz_desc
@@ -1586,7 +1586,7 @@ localizeentry,#mpui/seeker_mine_prompt
 localizeentry,#hash_4fe0bd6557dd8287
 localizeentry,#hash_4fe0be6557dd843a
 localizeentry,#hash_4feb8755eff8941b
-localizeentry,d#hash_5005244ea6568b03
+localizeentry,d#heroes/swatpolice_weapon_tips
 localizeentry,d#hash_502b6147b487d459
 localizeentry,d#mpui/camo_fear
 localizeentry,d#weapon/tr_powersemi_operator
@@ -2177,7 +2177,7 @@ localizeentry,#menu/waypoint_planting
 localizeentry,d#hash_6b454c4591b3595d
 localizeentry,d#hash_6b510146a31748a7
 localizeentry,#menu/charm_ufo
-localizeentry,d#hash_6b70c50c8f533ed6
+localizeentry,d#heroes/buffassault_weapon_tips
 localizeentry,#mp/rejack_terminate
 localizeentry,#hash_6b8b19a0cc3281e2
 localizeentry,d#hash_6b8d04b9dffa3093

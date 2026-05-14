@@ -1,4 +1,3 @@
-#using scripts\weapons\weaponobjects_crap.gsc;
 #using scripts\core_common\ai\systems\gib;
 #using scripts\core_common\ai\zombie_utility;
 #using scripts\core_common\array_shared;
@@ -12,6 +11,7 @@
 #using scripts\core_common\util_shared;
 #using scripts\core_common\vehicle_shared;
 #using scripts\weapons\weaponobjects;
+#using scripts\weapons\weaponobjects_crap;
 #using scripts\zm\ai\zm_ai_nosferatu;
 #using scripts\zm\zm_mansion_pap_quest;
 #using scripts\zm\zm_mansion_special_rounds;

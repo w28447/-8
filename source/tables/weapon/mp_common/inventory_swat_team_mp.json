@@ -2,7 +2,7 @@
     "name": "#inventory_swat_team_mp",
     "baseWeapon": "#inventory_swat_team",
     "weapon70": "#swat_team",
-    "streamkey": "#inventory_swat_team_soundbank",
+    "soundbank": "#inventory_swat_team_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",
@@ -42,8 +42,8 @@
     "worldModel": [
         "#wpn_t8_eqp_ir_strobe_world"
     ],
-    "gadgetIconAvailable": "#hash_863eaf2e0956ca56",
-    "gadgetIconUnavailable": "#hash_9fb99e3cafe7be8e",
+    "gadgetIconAvailable": "#ui_icon_scorestreaks_swat_team_light",
+    "gadgetIconUnavailable": "#ui_icon_scorestreaks_swat_team_dark",
     "inventoryIconZm": "#ui_icon_scorestreaks_striketeam_hud",
     "hudIcon": "#ui_icon_scorestreaks_striketeam_hud",
     "image_e90": "#ui_icon_scorestreaks_striketeam_hud",

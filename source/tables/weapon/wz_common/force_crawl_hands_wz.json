@@ -3,7 +3,7 @@
     "baseWeapon": "#force_crawl_hands",
     "displayname": "#weapon/bare_hands",
     "weapon70": "#bare_hands",
-    "streamkey": "#force_crawl_hands_soundbank",
+    "soundbank": "#force_crawl_hands_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -30,7 +30,7 @@
     "#hash_554be9f7": false,
     "sound800": "#hash_5fd68d0455a0b8",
     "sound810": "#hash_5fd68d0455a0b8",
-    "tunables1": "#hash_34047f6c812f270e",
+    "tunables1": "#force_crawl_hands_tunables_wz",
     "sharedWeaponSounds": "#fist",
     "viewmodel": [
         "#wpn_t7_none_view"

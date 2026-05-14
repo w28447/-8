@@ -15,7 +15,7 @@
     "shouldCullDistance": false,
     "cullDistance": 300,
     "hasLowAmmoState": false,
-    "waypointImage": "#hash_e20b351c46fff869",
+    "waypointImage": "#ui_icon_scorestreaks_straferun_dark",
     "unk30": 300,
     "bundle": {
         "hash_10b16ca8": 3,

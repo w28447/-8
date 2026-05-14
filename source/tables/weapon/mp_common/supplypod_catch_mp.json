@@ -1,7 +1,7 @@
 {
     "name": "#supplypod_catch_mp",
     "baseWeapon": "#supplypod_catch",
-    "streamkey": "#supplypod_catch_soundbank",
+    "soundbank": "#supplypod_catch_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",

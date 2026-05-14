@@ -1,11 +1,11 @@
 {
-    "concertina_wire_kill": "#concertina_wire_kill",
+    "killscoreevent": "#concertina_wire_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "concertina_wire_deployed": "#concertina_wire_deployed",
     "vmtype": "both",
     "name": "eq_concertina_wire_scoreevents",
     "customsettingstype": "ability",
-    "concertina_wire_shutdown:hash_3143c814": "#concertina_wire_shutdown",
+    "concertina_wire_shutdown": "#concertina_wire_shutdown",
     "hash_fcd2ff3a": 1
 }

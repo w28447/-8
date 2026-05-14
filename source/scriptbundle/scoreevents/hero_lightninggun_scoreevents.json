@@ -1,14 +1,14 @@
 {
-    "tempest_multikill_2": "#tempest_multikill_2",
-    "tempest_multikill_2": "#tempest_multikill_2",
-    "tempest_kill": "#tempest_kill",
+    "multikill2scoreevent": "#tempest_multikill_2",
+    "multikill6scoreevent": "#tempest_multikill_2",
+    "killscoreevent": "#tempest_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
-    "tempest_multikill_2": "#tempest_multikill_2",
+    "multikill4scoreevent": "#tempest_multikill_2",
     "name": "hero_lightninggun_scoreevents",
     "customsettingstype": "ability",
-    "tempest_multikill_2": "#tempest_multikill_2",
+    "multikill5scoreevent": "#tempest_multikill_2",
     "tempest_shutdown": "#tempest_shutdown",
-    "tempest_multikill_2": "#tempest_multikill_2"
+    "multikill3scoreevent": "#tempest_multikill_2"
 }

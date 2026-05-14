@@ -1,8 +1,4 @@
-#using scripts\zm\zm_escape_weap_quest_spoon.gsc;
-#using scripts\zm\zm_escape_weap_quest_mg.gsc;
 #using script_36222395658446f5;
-#using scripts\zm\zm_escape_nixie_clock.gsc;
-#using scripts\zm\zm_escape_weap_quest_spork.gsc;
 #using script_668c4fbb94671fb4;
 #using scripts\core_common\ai\zombie_utility;
 #using scripts\core_common\array_shared;
@@ -34,6 +30,7 @@
 #using scripts\zm\zm_escape_fx;
 #using scripts\zm\zm_escape_gamemodes;
 #using scripts\zm\zm_escape_magicbox;
+#using scripts\zm\zm_escape_nixie_clock;
 #using scripts\zm\zm_escape_pap_quest;
 #using scripts\zm\zm_escape_paschal;
 #using scripts\zm\zm_escape_pebble;
@@ -45,6 +42,9 @@
 #using scripts\zm\zm_escape_util;
 #using scripts\zm\zm_escape_vo_hooks;
 #using scripts\zm\zm_escape_weap_quest;
+#using scripts\zm\zm_escape_weap_quest_mg;
+#using scripts\zm\zm_escape_weap_quest_spoon;
+#using scripts\zm\zm_escape_weap_quest_spork;
 #using scripts\zm_common\load;
 #using scripts\zm_common\util\ai_brutus_util;
 #using scripts\zm_common\util\ai_dog_util;

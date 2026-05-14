@@ -24651,7 +24651,7 @@ weapontunables,#hatchet_tunables_mp
 weapontunables,#hash_455d87da3a767ef4
 weapontunables,#sig_minigun_turret_32_tunables_mp
 weapontunables,#willy_pete_tunables_mp
-weapontunables,#hash_45fb92ce4f554e56
+weapontunables,#spawn_beacon_held_tunables_mp
 weapontunables,#hash_4607d63321961635
 weapontunables,#hash_46e057970d266f32
 weapontunables,#killstreak_remote_tunables
@@ -24684,7 +24684,7 @@ weapontunables,#sig_minigun_turret_44_tunables_mp
 weapontunables,#ability_smart_cover_tunables_mp
 weapontunables,#hash_5734c24c2df0a5ae
 weapontunables,#hash_576c6da2a012f006
-weapontunables,d#hash_57cd2f4549caad28
+weapontunables,d#pistolscope_pistol_revolver_t8_tunables_mp
 weapontunables,#eq_grapple_tunables_mp_pc
 weapontunables,#straferun_tunables_mp
 weapontunables,#hash_58e2f7fffb47f167
@@ -24708,9 +24708,9 @@ weapontunables,#ultimate_turret_deploy_tunables_mp
 weapontunables,#proximity_grenade_aoe_tunables_mp
 weapontunables,#eq_smoke_tunables_mp
 weapontunables,#inventory_recon_car_tunables_mp
-weapontunables,#hash_63dce1dff44de076
+weapontunables,#sig_bow_quickshot_alt_tunables_mp
 weapontunables,#uav_tunables_mp
-weapontunables,d#hash_65d8d3c25c30edb4
+weapontunables,d#dualoptic_ar_damage_t8_tunables_mp
 weapontunables,#hash_66bc16f4b632adf7
 weapontunables,#eq_frag_grenade_tunables_mp
 weapontunables,#mute_smoke_tunables_mp

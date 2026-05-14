@@ -5,7 +5,7 @@
     "xhash_60": "#hash_7745cf8fd5da3913",
     "weapon70": "#special_ballisticknife_t8_dw",
     "dualwieldWeaponName": "#special_ballisticknife_t8_dw_upgraded_dw_zm",
-    "streamkey": "#special_ballisticknife_t8_lh_upgraded_lh_soundbank",
+    "soundbank": "#special_ballisticknife_t8_lh_upgraded_lh_soundbank",
     "scrstr_8c8": [
         "tag_camo_darkmatter",
         "tag_camo_diamond"
@@ -48,7 +48,7 @@
     "cacAttachmentsXCam": "#hash_cbb33dafd051a5c0",
     "weaponIconXCam": "#hash_cae568f9358e0a98",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_cd5b6b33033c8a76"
@@ -70,7 +70,7 @@
     "fx_bc8": "#hash_be3caddc73aa8167",
     "fx_bd0": "#hash_be35a1dc73a44e55",
     "fx_f00": "#hash_dfdd021d80dd8fc6",
-    "normalImpactFX": "#hash_a5f3e55b8e1070ab",
-    "bounceImpactFX": "#hash_e1b4c700060ee40c",
-    "bounceImpactSounds": "#hash_a9ab4424affe55ad"
+    "normalImpactFX": "#knife_large_enter",
+    "bounceImpactFX": "#bullet_small_enter",
+    "bounceImpactSounds": "#hatchet_bounce"
 }

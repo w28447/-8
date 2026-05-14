@@ -19,7 +19,7 @@
     "characterselect": "#hash_106feeec832414b2",
     "name": "blackjack_bo4",
     "hash_a77b3b9cbec8bec:hash_207908de": "#hash_a77b3b9cbec8bec",
-    "hash_16e65033fdd0317b:hash_b801796c": "#hash_16e65033fdd0317b",
+    "exertpainpunched": "#hash_16e65033fdd0317b",
     "boostloss": "#hash_307a901ce201dd59",
     "exertgascough": "#hash_475483171011401f",
     "exertpainfalling": "#hash_3bd513d53076b0a9",
@@ -37,6 +37,6 @@
     "exertbreathehurt": "#hash_1a72acb35638d5b5",
     "exertfullyhealedbreath": "#exert_fully_healed",
     "exertdeathdrowned": "#hash_3e12cdedd7b6d1d6",
-    "hash_6b424e6710e4fde3:hash_c3b67de0": "#hash_6b424e6710e4fde3",
+    "exertpainburn": "#hash_6b424e6710e4fde3",
     "hash_77817cd4a92f8d91:hash_1ca33ad4": "#hash_77817cd4a92f8d91"
 }

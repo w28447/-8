@@ -176,7 +176,7 @@ STRING "<dev string:x68>" 0x158 0x190 0x684 0x75c 0x950 0x9b0 0x9d4 0x9fc 0xbf4 
 STRING "<dev string:x69a>" 0x3130 0x3180
 # devgui::function_6a24e58f@370 devgui::function_6a24e58f@3c0
 STRING "<dev string:x69f>" 0x3140 0x3190
-# devgui::function_46b22d99@128 devgui::function_46b22d99@19c
+# devgui::devgui_end_round_think@128 devgui::devgui_end_round_think@19c
 STRING "<dev string:x6a3>" 0x3708 0x377c
 # devgui::function_773432e2@1e0
 STRING "<dev string:x6af>" 0x3b60
@@ -349,9 +349,9 @@ DEVBLOCK 0x2cea
 DEVBLOCK 0x2d72
 # devgui::function_6a24e58f@92
 DEVBLOCK 0x2e62
-# devgui::function_7bef8d25@1a
+# devgui::devgui_health_think@1a
 DEVBLOCK 0x3452
-# devgui::function_46b22d99@22
+# devgui::devgui_end_round_think@22
 DEVBLOCK 0x3602
 # devgui::function_be0f9897@22
 DEVBLOCK 0x37c2

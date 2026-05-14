@@ -3,7 +3,7 @@
     "baseWeapon": "#hash_7932008294f0d876",
     "displayname": "#weapon/bare_hands",
     "weapon70": "#bare_hands",
-    "streamkey": "#hash_7fbce7a91edf9d9c",
+    "soundbank": "#hash_7fbce7a91edf9d9c",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

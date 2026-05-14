@@ -156,7 +156,7 @@
         },
         {
             "name": "#mainclientname",
-            "scrName": "#hash_9b2cab54",
+            "scrName": "#mainclientname",
             "type": "STRING",
             "len": 48
         },
@@ -192,7 +192,7 @@
         },
         {
             "name": "#otherclientname",
-            "scrName": "#hash_3b8a36fd",
+            "scrName": "#otherclientname",
             "type": "STRING",
             "len": 48
         },

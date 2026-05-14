@@ -3,7 +3,7 @@
     "baseWeapon": "#ultimate_turret_deploy",
     "displayname": "#weapon/ultimate_turret",
     "weapon70": "#killstreak_mini_turret",
-    "streamkey": "#ultimate_turret_deploy_soundbank",
+    "soundbank": "#ultimate_turret_deploy_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -46,16 +46,16 @@
     "worldModel": [
         "#wpn_t8_eqp_turret_mini_world"
     ],
-    "gadgetIconAvailable": "#hash_ce2f10529d30058e",
-    "gadgetIconUnavailable": "#hash_ce2f10529d30058e",
-    "inventoryIconZm": "#hash_c5959a283d69e103",
-    "hudIcon": "#hash_ce2f10529d30058e",
-    "image_e90": "#hash_ce2f10529d30058e",
-    "image_1048": "#hash_ce2f10529d30058e",
+    "gadgetIconAvailable": "#ui_icon_equipment_miniturret",
+    "gadgetIconUnavailable": "#ui_icon_equipment_miniturret",
+    "inventoryIconZm": "#ui_icon_equipment_miniturret_dark",
+    "hudIcon": "#ui_icon_equipment_miniturret",
+    "image_e90": "#ui_icon_equipment_miniturret",
+    "image_1048": "#ui_icon_equipment_miniturret",
     "fx_bc8": "#hash_e1e9b23b3f789a92",
     "fx_bd0": "#hash_e1e2a63b3f726780",
     "#hash_26f68e75": "#icepick_carepkg",
-    "normalImpactFX": "#hash_e1b4c700060ee40c",
-    "exitImpactFX": "#hash_83b4b1d145ec9892",
-    "bounceImpactSounds": "#hash_c6d8f2152c519b03"
+    "normalImpactFX": "#bullet_small_enter",
+    "exitImpactFX": "#bullet_small_exit",
+    "bounceImpactSounds": "#smoke_bounce"
 }

@@ -4,7 +4,7 @@
     "displayname": "#weapon/smg_fastburst_t8",
     "altWeapon": "#smg_fastburst_t8_mp",
     "weapon70": "#smg_fastburst_t8",
-    "streamkey": "#pistolscope_smg_fastburst_t8_soundbank",
+    "soundbank": "#pistolscope_smg_fastburst_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",

@@ -35,7 +35,7 @@ version 26 {
         // offset 0x78, size 0x20
         int deployablebarrierdestroytime;
         // offset 0x98, size 0x10
-        uint:16 hash_6024ee628431415;
+        uint:16 killcamhistoryseconds;
         // offset 0xa8, size 0x20
         uint zmpapenabled;
         // offset 0xc8, size 0x8
@@ -57,7 +57,7 @@ version 26 {
         // offset 0x110, size 0x10
         uint:16 zmkillcap;
         // offset 0x120, size 0x8
-        uint:7 hash_16184f2fd4014b39;
+        uint:7 pregamepoststagetime;
         // offset 0x128, size 0x8
         uint:5 pointspermeleekill;
         // offset 0x130, size 0x8
@@ -85,7 +85,7 @@ version 26 {
         // offset 0x1a0, size 0x8
         uint:6 hash_6ae29c8144cb7659;
         // offset 0x1a8, size 0x10
-        uint:10 hash_3c82ffb472a21cac;
+        uint:10 flagcapturegraceperiod;
         // offset 0x1b8, size 0x8
         uint:3 gunselection;
         // offset 0x1c0, size 0x8
@@ -141,7 +141,7 @@ version 26 {
         // offset 0x2a0, size 0x8
         uint:4 carryscore;
         // offset 0x2a8, size 0x8
-        uint:4 hash_6e49ce7bbe6d3f1f;
+        uint:4 pregamepositionsorttype;
         // offset 0x2b0, size 0x8
         fixed<8,2> killeventscoremultiplier;
         // offset 0x2b8, size 0x8
@@ -199,7 +199,7 @@ version 26 {
         // offset 0x3d8, size 0x10
         uint:10 playermaxhealth;
         // offset 0x3e8, size 0x8
-        uint:7 hash_1833c853bfe78ffc;
+        uint:7 pregameprestagetime;
         // offset 0x3f0, size 0x8
         uint:5 hash_66a7d866327081eb;
         // offset 0x3f8, size 0x8
@@ -225,7 +225,7 @@ version 26 {
         // offset 0x5d8, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x5e0, size 0x8
-        uint:2 hash_47d4aa0161d78e15;
+        uint:2 teamassignment;
         // offset 0x5e8, size 0x8
         uint:2 zmcrawlerstate;
         // offset 0x5f0, size 0x10
@@ -287,7 +287,7 @@ version 26 {
         // offset 0x718, size 0x8
         uint:8 hash_6a48bbfb703d5c9c;
         // offset 0x720, size 0x8
-        uint:4 hash_239b391c77ebf8c1;
+        uint:4 pregamepositionshufflemethod;
         // offset 0x728, size 0x8
         uint:5 zmpowerupslimitround;
         // offset 0x730, size 0x10
@@ -311,7 +311,7 @@ version 26 {
         // offset 0x780, size 0x8
         uint:6 hash_410c5c7c1e60b534;
         // offset 0x788, size 0x8
-        uint:4 hash_552338718ec6d2df;
+        uint:4 maxallowedsecondaryattachments;
         // offset 0x790, size 0x10
         fixed<9,3> maxplayereventsperminute;
         // offset 0x7a0, size 0x10
@@ -329,7 +329,7 @@ version 26 {
         // offset 0x7e0, size 0x8
         uint:5 teamscoreperkillconfirmed;
         // offset 0x7e8, size 0x8
-        uint:5 hash_4e4352bd1aaeedfe;
+        uint:5 draftmatchstarttime;
         // offset 0x7f0, size 0x8
         fixed<8,2> waverespawndelay;
         // offset 0x7f8, size 0x8
@@ -361,7 +361,7 @@ version 26 {
         // offset 0x878, size 0x8
         uint:5 teamscoreperheadshot;
         // offset 0x880, size 0x8
-        uint:7 hash_1908ad844e6c3e37;
+        uint:7 pregamepostroundtime;
         // offset 0x888, size 0x8
         uint:4 pregameitemmaxvotes;
         // offset 0x890, size 0x8
@@ -403,7 +403,7 @@ version 26 {
         // offset 0x920, size 0x8
         uint:4 pickuptime;
         // offset 0x928, size 0x10
-        fixed<14,7> hash_451245a24412d90f;
+        fixed<14,7> controllerparticipationcheckinterval;
         // offset 0x938, size 0x20
         int hash_64727525f5957d06;
         // offset 0x958, size 0x8
@@ -497,7 +497,7 @@ version 26 {
         // offset 0xaf0, size 0x8
         uint:7 teamcount;
         // offset 0xaf8, size 0x20
-        int hash_7f38d88521da4c79;
+        int spawngroupradius;
         // offset 0xb18, size 0x8
         uint:4 roundlimit;
         // offset 0xb20, size 0x8
@@ -643,9 +643,9 @@ version 26 {
         // offset 0xbb5, size 0x1
         bool zmtalismanperkmodsingle;
         // offset 0xbb6, size 0x1
-        bool hash_62665aebde32c8ae;
+        bool pregamealwaysshowstreakedit;
         // offset 0xbb7, size 0x1
-        bool hash_18c053cae82c1167;
+        bool wagermatchhud;
         // offset 0xbb8, size 0x1
         bool hash_6cf5f53d1fbb1066;
         // offset 0xbb9, size 0x1
@@ -1165,7 +1165,7 @@ version 25 {
         // offset 0x78, size 0x20
         int deployablebarrierdestroytime;
         // offset 0x98, size 0x10
-        uint:16 hash_6024ee628431415;
+        uint:16 killcamhistoryseconds;
         // offset 0xa8, size 0x20
         uint zmpapenabled;
         // offset 0xc8, size 0x8
@@ -1187,7 +1187,7 @@ version 25 {
         // offset 0x110, size 0x10
         uint:16 zmkillcap;
         // offset 0x120, size 0x8
-        uint:7 hash_16184f2fd4014b39;
+        uint:7 pregamepoststagetime;
         // offset 0x128, size 0x8
         uint:5 pointspermeleekill;
         // offset 0x130, size 0x8
@@ -1215,7 +1215,7 @@ version 25 {
         // offset 0x1a0, size 0x8
         uint:6 hash_6ae29c8144cb7659;
         // offset 0x1a8, size 0x10
-        uint:10 hash_3c82ffb472a21cac;
+        uint:10 flagcapturegraceperiod;
         // offset 0x1b8, size 0x8
         uint:3 gunselection;
         // offset 0x1c0, size 0x8
@@ -1271,7 +1271,7 @@ version 25 {
         // offset 0x2a0, size 0x8
         uint:4 carryscore;
         // offset 0x2a8, size 0x8
-        uint:4 hash_6e49ce7bbe6d3f1f;
+        uint:4 pregamepositionsorttype;
         // offset 0x2b0, size 0x8
         fixed<8,2> killeventscoremultiplier;
         // offset 0x2b8, size 0x8
@@ -1329,7 +1329,7 @@ version 25 {
         // offset 0x3d8, size 0x10
         uint:10 playermaxhealth;
         // offset 0x3e8, size 0x8
-        uint:7 hash_1833c853bfe78ffc;
+        uint:7 pregameprestagetime;
         // offset 0x3f0, size 0x8
         uint:5 hash_66a7d866327081eb;
         // offset 0x3f8, size 0x8
@@ -1355,7 +1355,7 @@ version 25 {
         // offset 0x5d8, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x5e0, size 0x8
-        uint:2 hash_47d4aa0161d78e15;
+        uint:2 teamassignment;
         // offset 0x5e8, size 0x8
         uint:2 zmcrawlerstate;
         // offset 0x5f0, size 0x10
@@ -1417,7 +1417,7 @@ version 25 {
         // offset 0x718, size 0x8
         uint:8 hash_6a48bbfb703d5c9c;
         // offset 0x720, size 0x8
-        uint:4 hash_239b391c77ebf8c1;
+        uint:4 pregamepositionshufflemethod;
         // offset 0x728, size 0x8
         uint:5 zmpowerupslimitround;
         // offset 0x730, size 0x10
@@ -1441,7 +1441,7 @@ version 25 {
         // offset 0x780, size 0x8
         uint:6 hash_410c5c7c1e60b534;
         // offset 0x788, size 0x8
-        uint:4 hash_552338718ec6d2df;
+        uint:4 maxallowedsecondaryattachments;
         // offset 0x790, size 0x10
         fixed<9,3> maxplayereventsperminute;
         // offset 0x7a0, size 0x10
@@ -1459,7 +1459,7 @@ version 25 {
         // offset 0x7e0, size 0x8
         uint:5 teamscoreperkillconfirmed;
         // offset 0x7e8, size 0x8
-        uint:5 hash_4e4352bd1aaeedfe;
+        uint:5 draftmatchstarttime;
         // offset 0x7f0, size 0x8
         fixed<8,2> waverespawndelay;
         // offset 0x7f8, size 0x8
@@ -1491,7 +1491,7 @@ version 25 {
         // offset 0x878, size 0x8
         uint:5 teamscoreperheadshot;
         // offset 0x880, size 0x8
-        uint:7 hash_1908ad844e6c3e37;
+        uint:7 pregamepostroundtime;
         // offset 0x888, size 0x8
         uint:4 pregameitemmaxvotes;
         // offset 0x890, size 0x8
@@ -1533,7 +1533,7 @@ version 25 {
         // offset 0x920, size 0x8
         uint:4 pickuptime;
         // offset 0x928, size 0x10
-        fixed<14,7> hash_451245a24412d90f;
+        fixed<14,7> controllerparticipationcheckinterval;
         // offset 0x938, size 0x20
         int hash_64727525f5957d06;
         // offset 0x958, size 0x8
@@ -1627,7 +1627,7 @@ version 25 {
         // offset 0xaf0, size 0x8
         uint:7 teamcount;
         // offset 0xaf8, size 0x20
-        int hash_7f38d88521da4c79;
+        int spawngroupradius;
         // offset 0xb18, size 0x8
         uint:4 roundlimit;
         // offset 0xb20, size 0x8
@@ -1771,9 +1771,9 @@ version 25 {
         // offset 0xbb4, size 0x1
         bool zmtalismanperkmodsingle;
         // offset 0xbb5, size 0x1
-        bool hash_62665aebde32c8ae;
+        bool pregamealwaysshowstreakedit;
         // offset 0xbb6, size 0x1
-        bool hash_18c053cae82c1167;
+        bool wagermatchhud;
         // offset 0xbb7, size 0x1
         bool hash_6cf5f53d1fbb1066;
         // offset 0xbb8, size 0x1
@@ -2293,7 +2293,7 @@ version 24 {
         // offset 0x78, size 0x20
         int deployablebarrierdestroytime;
         // offset 0x98, size 0x10
-        uint:16 hash_6024ee628431415;
+        uint:16 killcamhistoryseconds;
         // offset 0xa8, size 0x20
         uint zmpapenabled;
         // offset 0xc8, size 0x8
@@ -2315,7 +2315,7 @@ version 24 {
         // offset 0x110, size 0x10
         uint:16 zmkillcap;
         // offset 0x120, size 0x8
-        uint:7 hash_16184f2fd4014b39;
+        uint:7 pregamepoststagetime;
         // offset 0x128, size 0x8
         uint:5 pointspermeleekill;
         // offset 0x130, size 0x8
@@ -2343,7 +2343,7 @@ version 24 {
         // offset 0x1a0, size 0x8
         uint:6 hash_6ae29c8144cb7659;
         // offset 0x1a8, size 0x10
-        uint:10 hash_3c82ffb472a21cac;
+        uint:10 flagcapturegraceperiod;
         // offset 0x1b8, size 0x8
         uint:3 gunselection;
         // offset 0x1c0, size 0x8
@@ -2397,7 +2397,7 @@ version 24 {
         // offset 0x298, size 0x8
         uint:4 carryscore;
         // offset 0x2a0, size 0x8
-        uint:4 hash_6e49ce7bbe6d3f1f;
+        uint:4 pregamepositionsorttype;
         // offset 0x2a8, size 0x8
         fixed<8,2> killeventscoremultiplier;
         // offset 0x2b0, size 0x8
@@ -2455,7 +2455,7 @@ version 24 {
         // offset 0x3d0, size 0x10
         uint:10 playermaxhealth;
         // offset 0x3e0, size 0x8
-        uint:7 hash_1833c853bfe78ffc;
+        uint:7 pregameprestagetime;
         // offset 0x3e8, size 0x8
         uint:5 hash_66a7d866327081eb;
         // offset 0x3f0, size 0x8
@@ -2481,7 +2481,7 @@ version 24 {
         // offset 0x5d0, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x5d8, size 0x8
-        uint:2 hash_47d4aa0161d78e15;
+        uint:2 teamassignment;
         // offset 0x5e0, size 0x8
         uint:2 zmcrawlerstate;
         // offset 0x5e8, size 0x10
@@ -2543,7 +2543,7 @@ version 24 {
         // offset 0x710, size 0x8
         uint:8 hash_6a48bbfb703d5c9c;
         // offset 0x718, size 0x8
-        uint:4 hash_239b391c77ebf8c1;
+        uint:4 pregamepositionshufflemethod;
         // offset 0x720, size 0x8
         uint:5 zmpowerupslimitround;
         // offset 0x728, size 0x10
@@ -2567,7 +2567,7 @@ version 24 {
         // offset 0x778, size 0x8
         uint:6 hash_410c5c7c1e60b534;
         // offset 0x780, size 0x8
-        uint:4 hash_552338718ec6d2df;
+        uint:4 maxallowedsecondaryattachments;
         // offset 0x788, size 0x10
         fixed<9,3> maxplayereventsperminute;
         // offset 0x798, size 0x10
@@ -2585,7 +2585,7 @@ version 24 {
         // offset 0x7d8, size 0x8
         uint:5 teamscoreperkillconfirmed;
         // offset 0x7e0, size 0x8
-        uint:5 hash_4e4352bd1aaeedfe;
+        uint:5 draftmatchstarttime;
         // offset 0x7e8, size 0x8
         fixed<8,2> waverespawndelay;
         // offset 0x7f0, size 0x8
@@ -2617,7 +2617,7 @@ version 24 {
         // offset 0x870, size 0x8
         uint:5 teamscoreperheadshot;
         // offset 0x878, size 0x8
-        uint:7 hash_1908ad844e6c3e37;
+        uint:7 pregamepostroundtime;
         // offset 0x880, size 0x8
         uint:4 pregameitemmaxvotes;
         // offset 0x888, size 0x8
@@ -2659,7 +2659,7 @@ version 24 {
         // offset 0x918, size 0x8
         uint:4 pickuptime;
         // offset 0x920, size 0x10
-        fixed<14,7> hash_451245a24412d90f;
+        fixed<14,7> controllerparticipationcheckinterval;
         // offset 0x930, size 0x20
         int hash_64727525f5957d06;
         // offset 0x950, size 0x8
@@ -2753,7 +2753,7 @@ version 24 {
         // offset 0xae8, size 0x8
         uint:7 teamcount;
         // offset 0xaf0, size 0x20
-        int hash_7f38d88521da4c79;
+        int spawngroupradius;
         // offset 0xb10, size 0x8
         uint:4 roundlimit;
         // offset 0xb18, size 0x8
@@ -2897,9 +2897,9 @@ version 24 {
         // offset 0xbac, size 0x1
         bool zmtalismanperkmodsingle;
         // offset 0xbad, size 0x1
-        bool hash_62665aebde32c8ae;
+        bool pregamealwaysshowstreakedit;
         // offset 0xbae, size 0x1
-        bool hash_18c053cae82c1167;
+        bool wagermatchhud;
         // offset 0xbaf, size 0x1
         bool hash_6cf5f53d1fbb1066;
         // offset 0xbb0, size 0x1
@@ -3421,7 +3421,7 @@ version 23 {
         // offset 0x78, size 0x20
         int deployablebarrierdestroytime;
         // offset 0x98, size 0x10
-        uint:16 hash_6024ee628431415;
+        uint:16 killcamhistoryseconds;
         // offset 0xa8, size 0x20
         uint zmpapenabled;
         // offset 0xc8, size 0x8
@@ -3443,7 +3443,7 @@ version 23 {
         // offset 0x110, size 0x10
         uint:16 zmkillcap;
         // offset 0x120, size 0x8
-        uint:7 hash_16184f2fd4014b39;
+        uint:7 pregamepoststagetime;
         // offset 0x128, size 0x8
         uint:5 pointspermeleekill;
         // offset 0x130, size 0x8
@@ -3471,7 +3471,7 @@ version 23 {
         // offset 0x1a0, size 0x8
         uint:6 hash_6ae29c8144cb7659;
         // offset 0x1a8, size 0x10
-        uint:10 hash_3c82ffb472a21cac;
+        uint:10 flagcapturegraceperiod;
         // offset 0x1b8, size 0x8
         uint:3 gunselection;
         // offset 0x1c0, size 0x8
@@ -3525,7 +3525,7 @@ version 23 {
         // offset 0x298, size 0x8
         uint:4 carryscore;
         // offset 0x2a0, size 0x8
-        uint:4 hash_6e49ce7bbe6d3f1f;
+        uint:4 pregamepositionsorttype;
         // offset 0x2a8, size 0x8
         fixed<8,2> killeventscoremultiplier;
         // offset 0x2b0, size 0x8
@@ -3583,7 +3583,7 @@ version 23 {
         // offset 0x3d0, size 0x10
         uint:10 playermaxhealth;
         // offset 0x3e0, size 0x8
-        uint:7 hash_1833c853bfe78ffc;
+        uint:7 pregameprestagetime;
         // offset 0x3e8, size 0x8
         uint:5 hash_66a7d866327081eb;
         // offset 0x3f0, size 0x8
@@ -3609,7 +3609,7 @@ version 23 {
         // offset 0x5d0, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x5d8, size 0x8
-        uint:2 hash_47d4aa0161d78e15;
+        uint:2 teamassignment;
         // offset 0x5e0, size 0x8
         uint:2 zmcrawlerstate;
         // offset 0x5e8, size 0x10
@@ -3671,7 +3671,7 @@ version 23 {
         // offset 0x710, size 0x8
         uint:8 hash_6a48bbfb703d5c9c;
         // offset 0x718, size 0x8
-        uint:4 hash_239b391c77ebf8c1;
+        uint:4 pregamepositionshufflemethod;
         // offset 0x720, size 0x8
         uint:5 zmpowerupslimitround;
         // offset 0x728, size 0x10
@@ -3695,7 +3695,7 @@ version 23 {
         // offset 0x778, size 0x8
         uint:6 hash_410c5c7c1e60b534;
         // offset 0x780, size 0x8
-        uint:4 hash_552338718ec6d2df;
+        uint:4 maxallowedsecondaryattachments;
         // offset 0x788, size 0x10
         fixed<9,3> maxplayereventsperminute;
         // offset 0x798, size 0x10
@@ -3713,7 +3713,7 @@ version 23 {
         // offset 0x7d8, size 0x8
         uint:5 teamscoreperkillconfirmed;
         // offset 0x7e0, size 0x8
-        uint:5 hash_4e4352bd1aaeedfe;
+        uint:5 draftmatchstarttime;
         // offset 0x7e8, size 0x8
         fixed<8,2> waverespawndelay;
         // offset 0x7f0, size 0x8
@@ -3745,7 +3745,7 @@ version 23 {
         // offset 0x870, size 0x8
         uint:5 teamscoreperheadshot;
         // offset 0x878, size 0x8
-        uint:7 hash_1908ad844e6c3e37;
+        uint:7 pregamepostroundtime;
         // offset 0x880, size 0x8
         uint:4 pregameitemmaxvotes;
         // offset 0x888, size 0x8
@@ -3787,7 +3787,7 @@ version 23 {
         // offset 0x918, size 0x8
         uint:4 pickuptime;
         // offset 0x920, size 0x10
-        fixed<14,7> hash_451245a24412d90f;
+        fixed<14,7> controllerparticipationcheckinterval;
         // offset 0x930, size 0x20
         int hash_64727525f5957d06;
         // offset 0x950, size 0x8
@@ -3881,7 +3881,7 @@ version 23 {
         // offset 0xae8, size 0x8
         uint:7 teamcount;
         // offset 0xaf0, size 0x20
-        int hash_7f38d88521da4c79;
+        int spawngroupradius;
         // offset 0xb10, size 0x8
         uint:4 roundlimit;
         // offset 0xb18, size 0x8
@@ -4025,9 +4025,9 @@ version 23 {
         // offset 0xbac, size 0x1
         bool zmtalismanperkmodsingle;
         // offset 0xbad, size 0x1
-        bool hash_62665aebde32c8ae;
+        bool pregamealwaysshowstreakedit;
         // offset 0xbae, size 0x1
-        bool hash_18c053cae82c1167;
+        bool wagermatchhud;
         // offset 0xbaf, size 0x1
         bool hash_6cf5f53d1fbb1066;
         // offset 0xbb0, size 0x1
@@ -4547,7 +4547,7 @@ version 22 {
         // offset 0x78, size 0x20
         int deployablebarrierdestroytime;
         // offset 0x98, size 0x10
-        uint:16 hash_6024ee628431415;
+        uint:16 killcamhistoryseconds;
         // offset 0xa8, size 0x20
         uint zmpapenabled;
         // offset 0xc8, size 0x8
@@ -4569,7 +4569,7 @@ version 22 {
         // offset 0x110, size 0x10
         uint:16 zmkillcap;
         // offset 0x120, size 0x8
-        uint:7 hash_16184f2fd4014b39;
+        uint:7 pregamepoststagetime;
         // offset 0x128, size 0x8
         uint:5 pointspermeleekill;
         // offset 0x130, size 0x8
@@ -4597,7 +4597,7 @@ version 22 {
         // offset 0x1a0, size 0x8
         uint:6 hash_6ae29c8144cb7659;
         // offset 0x1a8, size 0x10
-        uint:10 hash_3c82ffb472a21cac;
+        uint:10 flagcapturegraceperiod;
         // offset 0x1b8, size 0x8
         uint:3 gunselection;
         // offset 0x1c0, size 0x8
@@ -4651,7 +4651,7 @@ version 22 {
         // offset 0x298, size 0x8
         uint:4 carryscore;
         // offset 0x2a0, size 0x8
-        uint:4 hash_6e49ce7bbe6d3f1f;
+        uint:4 pregamepositionsorttype;
         // offset 0x2a8, size 0x8
         fixed<8,2> killeventscoremultiplier;
         // offset 0x2b0, size 0x8
@@ -4709,7 +4709,7 @@ version 22 {
         // offset 0x3d0, size 0x10
         uint:10 playermaxhealth;
         // offset 0x3e0, size 0x8
-        uint:7 hash_1833c853bfe78ffc;
+        uint:7 pregameprestagetime;
         // offset 0x3e8, size 0x8
         uint:5 hash_66a7d866327081eb;
         // offset 0x3f0, size 0x8
@@ -4735,7 +4735,7 @@ version 22 {
         // offset 0x5d0, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x5d8, size 0x8
-        uint:2 hash_47d4aa0161d78e15;
+        uint:2 teamassignment;
         // offset 0x5e0, size 0x8
         uint:2 zmcrawlerstate;
         // offset 0x5e8, size 0x10
@@ -4797,7 +4797,7 @@ version 22 {
         // offset 0x710, size 0x8
         uint:8 hash_6a48bbfb703d5c9c;
         // offset 0x718, size 0x8
-        uint:4 hash_239b391c77ebf8c1;
+        uint:4 pregamepositionshufflemethod;
         // offset 0x720, size 0x8
         uint:5 zmpowerupslimitround;
         // offset 0x728, size 0x10
@@ -4821,7 +4821,7 @@ version 22 {
         // offset 0x778, size 0x8
         uint:6 hash_410c5c7c1e60b534;
         // offset 0x780, size 0x8
-        uint:4 hash_552338718ec6d2df;
+        uint:4 maxallowedsecondaryattachments;
         // offset 0x788, size 0x10
         fixed<9,3> maxplayereventsperminute;
         // offset 0x798, size 0x10
@@ -4839,7 +4839,7 @@ version 22 {
         // offset 0x7d8, size 0x8
         uint:5 teamscoreperkillconfirmed;
         // offset 0x7e0, size 0x8
-        uint:5 hash_4e4352bd1aaeedfe;
+        uint:5 draftmatchstarttime;
         // offset 0x7e8, size 0x8
         fixed<8,2> waverespawndelay;
         // offset 0x7f0, size 0x8
@@ -4871,7 +4871,7 @@ version 22 {
         // offset 0x870, size 0x8
         uint:5 teamscoreperheadshot;
         // offset 0x878, size 0x8
-        uint:7 hash_1908ad844e6c3e37;
+        uint:7 pregamepostroundtime;
         // offset 0x880, size 0x8
         uint:4 pregameitemmaxvotes;
         // offset 0x888, size 0x8
@@ -4913,7 +4913,7 @@ version 22 {
         // offset 0x918, size 0x8
         uint:4 pickuptime;
         // offset 0x920, size 0x10
-        fixed<14,7> hash_451245a24412d90f;
+        fixed<14,7> controllerparticipationcheckinterval;
         // offset 0x930, size 0x20
         int hash_64727525f5957d06;
         // offset 0x950, size 0x8
@@ -5007,7 +5007,7 @@ version 22 {
         // offset 0xae8, size 0x8
         uint:7 teamcount;
         // offset 0xaf0, size 0x20
-        int hash_7f38d88521da4c79;
+        int spawngroupradius;
         // offset 0xb10, size 0x8
         uint:4 roundlimit;
         // offset 0xb18, size 0x8
@@ -5149,9 +5149,9 @@ version 22 {
         // offset 0xbab, size 0x1
         bool zmtalismanperkmodsingle;
         // offset 0xbac, size 0x1
-        bool hash_62665aebde32c8ae;
+        bool pregamealwaysshowstreakedit;
         // offset 0xbad, size 0x1
-        bool hash_18c053cae82c1167;
+        bool wagermatchhud;
         // offset 0xbae, size 0x1
         bool hash_6cf5f53d1fbb1066;
         // offset 0xbaf, size 0x1
@@ -5667,7 +5667,7 @@ version 21 {
         // offset 0x78, size 0x20
         int deployablebarrierdestroytime;
         // offset 0x98, size 0x10
-        uint:16 hash_6024ee628431415;
+        uint:16 killcamhistoryseconds;
         // offset 0xa8, size 0x20
         uint zmpapenabled;
         // offset 0xc8, size 0x8
@@ -5689,7 +5689,7 @@ version 21 {
         // offset 0x110, size 0x10
         uint:16 zmkillcap;
         // offset 0x120, size 0x8
-        uint:7 hash_16184f2fd4014b39;
+        uint:7 pregamepoststagetime;
         // offset 0x128, size 0x8
         uint:5 pointspermeleekill;
         // offset 0x130, size 0x8
@@ -5717,7 +5717,7 @@ version 21 {
         // offset 0x1a0, size 0x8
         uint:6 hash_6ae29c8144cb7659;
         // offset 0x1a8, size 0x10
-        uint:10 hash_3c82ffb472a21cac;
+        uint:10 flagcapturegraceperiod;
         // offset 0x1b8, size 0x8
         uint:3 gunselection;
         // offset 0x1c0, size 0x8
@@ -5771,7 +5771,7 @@ version 21 {
         // offset 0x298, size 0x8
         uint:4 carryscore;
         // offset 0x2a0, size 0x8
-        uint:4 hash_6e49ce7bbe6d3f1f;
+        uint:4 pregamepositionsorttype;
         // offset 0x2a8, size 0x8
         fixed<8,2> killeventscoremultiplier;
         // offset 0x2b0, size 0x8
@@ -5829,7 +5829,7 @@ version 21 {
         // offset 0x3d0, size 0x10
         uint:10 playermaxhealth;
         // offset 0x3e0, size 0x8
-        uint:7 hash_1833c853bfe78ffc;
+        uint:7 pregameprestagetime;
         // offset 0x3e8, size 0x8
         uint:5 hash_66a7d866327081eb;
         // offset 0x3f0, size 0x8
@@ -5855,7 +5855,7 @@ version 21 {
         // offset 0x5d0, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x5d8, size 0x8
-        uint:2 hash_47d4aa0161d78e15;
+        uint:2 teamassignment;
         // offset 0x5e0, size 0x8
         uint:2 zmcrawlerstate;
         // offset 0x5e8, size 0x10
@@ -5917,7 +5917,7 @@ version 21 {
         // offset 0x710, size 0x8
         uint:8 hash_6a48bbfb703d5c9c;
         // offset 0x718, size 0x8
-        uint:4 hash_239b391c77ebf8c1;
+        uint:4 pregamepositionshufflemethod;
         // offset 0x720, size 0x8
         uint:5 zmpowerupslimitround;
         // offset 0x728, size 0x10
@@ -5941,7 +5941,7 @@ version 21 {
         // offset 0x778, size 0x8
         uint:6 hash_410c5c7c1e60b534;
         // offset 0x780, size 0x8
-        uint:4 hash_552338718ec6d2df;
+        uint:4 maxallowedsecondaryattachments;
         // offset 0x788, size 0x10
         fixed<9,3> maxplayereventsperminute;
         // offset 0x798, size 0x10
@@ -5959,7 +5959,7 @@ version 21 {
         // offset 0x7d8, size 0x8
         uint:5 teamscoreperkillconfirmed;
         // offset 0x7e0, size 0x8
-        uint:5 hash_4e4352bd1aaeedfe;
+        uint:5 draftmatchstarttime;
         // offset 0x7e8, size 0x8
         fixed<8,2> waverespawndelay;
         // offset 0x7f0, size 0x8
@@ -5991,7 +5991,7 @@ version 21 {
         // offset 0x870, size 0x8
         uint:5 teamscoreperheadshot;
         // offset 0x878, size 0x8
-        uint:7 hash_1908ad844e6c3e37;
+        uint:7 pregamepostroundtime;
         // offset 0x880, size 0x8
         uint:4 pregameitemmaxvotes;
         // offset 0x888, size 0x8
@@ -6033,7 +6033,7 @@ version 21 {
         // offset 0x918, size 0x8
         uint:4 pickuptime;
         // offset 0x920, size 0x10
-        fixed<14,7> hash_451245a24412d90f;
+        fixed<14,7> controllerparticipationcheckinterval;
         // offset 0x930, size 0x20
         int hash_64727525f5957d06;
         // offset 0x950, size 0x8
@@ -6127,7 +6127,7 @@ version 21 {
         // offset 0xae8, size 0x8
         uint:7 teamcount;
         // offset 0xaf0, size 0x20
-        int hash_7f38d88521da4c79;
+        int spawngroupradius;
         // offset 0xb10, size 0x8
         uint:4 roundlimit;
         // offset 0xb18, size 0x8
@@ -6267,9 +6267,9 @@ version 21 {
         // offset 0xbaa, size 0x1
         bool zmtalismanperkmodsingle;
         // offset 0xbab, size 0x1
-        bool hash_62665aebde32c8ae;
+        bool pregamealwaysshowstreakedit;
         // offset 0xbac, size 0x1
-        bool hash_18c053cae82c1167;
+        bool wagermatchhud;
         // offset 0xbad, size 0x1
         bool hash_6cf5f53d1fbb1066;
         // offset 0xbae, size 0x1
@@ -6783,7 +6783,7 @@ version 20 {
         // offset 0x78, size 0x20
         int deployablebarrierdestroytime;
         // offset 0x98, size 0x10
-        uint:16 hash_6024ee628431415;
+        uint:16 killcamhistoryseconds;
         // offset 0xa8, size 0x20
         uint zmpapenabled;
         // offset 0xc8, size 0x8
@@ -6805,7 +6805,7 @@ version 20 {
         // offset 0x110, size 0x10
         uint:16 zmkillcap;
         // offset 0x120, size 0x8
-        uint:7 hash_16184f2fd4014b39;
+        uint:7 pregamepoststagetime;
         // offset 0x128, size 0x8
         uint:5 pointspermeleekill;
         // offset 0x130, size 0x8
@@ -6833,7 +6833,7 @@ version 20 {
         // offset 0x1a0, size 0x8
         uint:6 hash_6ae29c8144cb7659;
         // offset 0x1a8, size 0x10
-        uint:10 hash_3c82ffb472a21cac;
+        uint:10 flagcapturegraceperiod;
         // offset 0x1b8, size 0x8
         uint:3 gunselection;
         // offset 0x1c0, size 0x8
@@ -6887,7 +6887,7 @@ version 20 {
         // offset 0x298, size 0x8
         uint:4 carryscore;
         // offset 0x2a0, size 0x8
-        uint:4 hash_6e49ce7bbe6d3f1f;
+        uint:4 pregamepositionsorttype;
         // offset 0x2a8, size 0x8
         fixed<8,2> killeventscoremultiplier;
         // offset 0x2b0, size 0x8
@@ -6945,7 +6945,7 @@ version 20 {
         // offset 0x3d0, size 0x10
         uint:10 playermaxhealth;
         // offset 0x3e0, size 0x8
-        uint:7 hash_1833c853bfe78ffc;
+        uint:7 pregameprestagetime;
         // offset 0x3e8, size 0x8
         uint:5 hash_66a7d866327081eb;
         // offset 0x3f0, size 0x8
@@ -6971,7 +6971,7 @@ version 20 {
         // offset 0x5d0, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x5d8, size 0x8
-        uint:2 hash_47d4aa0161d78e15;
+        uint:2 teamassignment;
         // offset 0x5e0, size 0x8
         uint:2 zmcrawlerstate;
         // offset 0x5e8, size 0x10
@@ -7033,7 +7033,7 @@ version 20 {
         // offset 0x710, size 0x8
         uint:8 hash_6a48bbfb703d5c9c;
         // offset 0x718, size 0x8
-        uint:4 hash_239b391c77ebf8c1;
+        uint:4 pregamepositionshufflemethod;
         // offset 0x720, size 0x8
         uint:5 zmpowerupslimitround;
         // offset 0x728, size 0x10
@@ -7057,7 +7057,7 @@ version 20 {
         // offset 0x778, size 0x8
         uint:6 hash_410c5c7c1e60b534;
         // offset 0x780, size 0x8
-        uint:4 hash_552338718ec6d2df;
+        uint:4 maxallowedsecondaryattachments;
         // offset 0x788, size 0x10
         fixed<9,3> maxplayereventsperminute;
         // offset 0x798, size 0x10
@@ -7075,7 +7075,7 @@ version 20 {
         // offset 0x7d8, size 0x8
         uint:5 teamscoreperkillconfirmed;
         // offset 0x7e0, size 0x8
-        uint:5 hash_4e4352bd1aaeedfe;
+        uint:5 draftmatchstarttime;
         // offset 0x7e8, size 0x8
         fixed<8,2> waverespawndelay;
         // offset 0x7f0, size 0x8
@@ -7107,7 +7107,7 @@ version 20 {
         // offset 0x870, size 0x8
         uint:5 teamscoreperheadshot;
         // offset 0x878, size 0x8
-        uint:7 hash_1908ad844e6c3e37;
+        uint:7 pregamepostroundtime;
         // offset 0x880, size 0x8
         uint:4 pregameitemmaxvotes;
         // offset 0x888, size 0x8
@@ -7149,7 +7149,7 @@ version 20 {
         // offset 0x918, size 0x8
         uint:4 pickuptime;
         // offset 0x920, size 0x10
-        fixed<14,7> hash_451245a24412d90f;
+        fixed<14,7> controllerparticipationcheckinterval;
         // offset 0x930, size 0x20
         int hash_64727525f5957d06;
         // offset 0x950, size 0x8
@@ -7243,7 +7243,7 @@ version 20 {
         // offset 0xae8, size 0x8
         uint:7 teamcount;
         // offset 0xaf0, size 0x20
-        int hash_7f38d88521da4c79;
+        int spawngroupradius;
         // offset 0xb10, size 0x8
         uint:4 roundlimit;
         // offset 0xb18, size 0x8
@@ -7383,9 +7383,9 @@ version 20 {
         // offset 0xbaa, size 0x1
         bool zmtalismanperkmodsingle;
         // offset 0xbab, size 0x1
-        bool hash_62665aebde32c8ae;
+        bool pregamealwaysshowstreakedit;
         // offset 0xbac, size 0x1
-        bool hash_18c053cae82c1167;
+        bool wagermatchhud;
         // offset 0xbad, size 0x1
         bool hash_6cf5f53d1fbb1066;
         // offset 0xbae, size 0x1
@@ -7899,7 +7899,7 @@ version 19 {
         // offset 0x78, size 0x20
         int deployablebarrierdestroytime;
         // offset 0x98, size 0x10
-        uint:16 hash_6024ee628431415;
+        uint:16 killcamhistoryseconds;
         // offset 0xa8, size 0x20
         uint zmpapenabled;
         // offset 0xc8, size 0x8
@@ -7921,7 +7921,7 @@ version 19 {
         // offset 0x110, size 0x10
         uint:16 zmkillcap;
         // offset 0x120, size 0x8
-        uint:7 hash_16184f2fd4014b39;
+        uint:7 pregamepoststagetime;
         // offset 0x128, size 0x8
         uint:5 pointspermeleekill;
         // offset 0x130, size 0x8
@@ -7949,7 +7949,7 @@ version 19 {
         // offset 0x1a0, size 0x8
         uint:6 hash_6ae29c8144cb7659;
         // offset 0x1a8, size 0x10
-        uint:10 hash_3c82ffb472a21cac;
+        uint:10 flagcapturegraceperiod;
         // offset 0x1b8, size 0x8
         uint:3 gunselection;
         // offset 0x1c0, size 0x8
@@ -8003,7 +8003,7 @@ version 19 {
         // offset 0x298, size 0x8
         uint:4 carryscore;
         // offset 0x2a0, size 0x8
-        uint:4 hash_6e49ce7bbe6d3f1f;
+        uint:4 pregamepositionsorttype;
         // offset 0x2a8, size 0x8
         fixed<8,2> killeventscoremultiplier;
         // offset 0x2b0, size 0x8
@@ -8061,7 +8061,7 @@ version 19 {
         // offset 0x3d0, size 0x10
         uint:10 playermaxhealth;
         // offset 0x3e0, size 0x8
-        uint:7 hash_1833c853bfe78ffc;
+        uint:7 pregameprestagetime;
         // offset 0x3e8, size 0x8
         uint:5 hash_66a7d866327081eb;
         // offset 0x3f0, size 0x8
@@ -8087,7 +8087,7 @@ version 19 {
         // offset 0x5d0, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x5d8, size 0x8
-        uint:2 hash_47d4aa0161d78e15;
+        uint:2 teamassignment;
         // offset 0x5e0, size 0x8
         uint:2 zmcrawlerstate;
         // offset 0x5e8, size 0x10
@@ -8149,7 +8149,7 @@ version 19 {
         // offset 0x710, size 0x8
         uint:8 hash_6a48bbfb703d5c9c;
         // offset 0x718, size 0x8
-        uint:4 hash_239b391c77ebf8c1;
+        uint:4 pregamepositionshufflemethod;
         // offset 0x720, size 0x8
         uint:5 zmpowerupslimitround;
         // offset 0x728, size 0x10
@@ -8173,7 +8173,7 @@ version 19 {
         // offset 0x778, size 0x8
         uint:6 hash_410c5c7c1e60b534;
         // offset 0x780, size 0x8
-        uint:4 hash_552338718ec6d2df;
+        uint:4 maxallowedsecondaryattachments;
         // offset 0x788, size 0x10
         fixed<9,3> maxplayereventsperminute;
         // offset 0x798, size 0x10
@@ -8191,7 +8191,7 @@ version 19 {
         // offset 0x7d8, size 0x8
         uint:5 teamscoreperkillconfirmed;
         // offset 0x7e0, size 0x8
-        uint:5 hash_4e4352bd1aaeedfe;
+        uint:5 draftmatchstarttime;
         // offset 0x7e8, size 0x8
         fixed<8,2> waverespawndelay;
         // offset 0x7f0, size 0x8
@@ -8223,7 +8223,7 @@ version 19 {
         // offset 0x870, size 0x8
         uint:5 teamscoreperheadshot;
         // offset 0x878, size 0x8
-        uint:7 hash_1908ad844e6c3e37;
+        uint:7 pregamepostroundtime;
         // offset 0x880, size 0x8
         uint:4 pregameitemmaxvotes;
         // offset 0x888, size 0x8
@@ -8265,7 +8265,7 @@ version 19 {
         // offset 0x918, size 0x8
         uint:4 pickuptime;
         // offset 0x920, size 0x10
-        fixed<14,7> hash_451245a24412d90f;
+        fixed<14,7> controllerparticipationcheckinterval;
         // offset 0x930, size 0x20
         int hash_64727525f5957d06;
         // offset 0x950, size 0x8
@@ -8359,7 +8359,7 @@ version 19 {
         // offset 0xae8, size 0x8
         uint:7 teamcount;
         // offset 0xaf0, size 0x20
-        int hash_7f38d88521da4c79;
+        int spawngroupradius;
         // offset 0xb10, size 0x8
         uint:4 roundlimit;
         // offset 0xb18, size 0x8
@@ -8497,9 +8497,9 @@ version 19 {
         // offset 0xba9, size 0x1
         bool zmtalismanperkmodsingle;
         // offset 0xbaa, size 0x1
-        bool hash_62665aebde32c8ae;
+        bool pregamealwaysshowstreakedit;
         // offset 0xbab, size 0x1
-        bool hash_18c053cae82c1167;
+        bool wagermatchhud;
         // offset 0xbac, size 0x1
         bool hash_6cf5f53d1fbb1066;
         // offset 0xbad, size 0x1
@@ -9013,7 +9013,7 @@ version 18 {
         // offset 0x78, size 0x20
         int deployablebarrierdestroytime;
         // offset 0x98, size 0x10
-        uint:16 hash_6024ee628431415;
+        uint:16 killcamhistoryseconds;
         // offset 0xa8, size 0x20
         uint zmpapenabled;
         // offset 0xc8, size 0x8
@@ -9035,7 +9035,7 @@ version 18 {
         // offset 0x110, size 0x10
         uint:16 zmkillcap;
         // offset 0x120, size 0x8
-        uint:7 hash_16184f2fd4014b39;
+        uint:7 pregamepoststagetime;
         // offset 0x128, size 0x8
         uint:5 pointspermeleekill;
         // offset 0x130, size 0x8
@@ -9063,7 +9063,7 @@ version 18 {
         // offset 0x1a0, size 0x8
         uint:6 hash_6ae29c8144cb7659;
         // offset 0x1a8, size 0x10
-        uint:10 hash_3c82ffb472a21cac;
+        uint:10 flagcapturegraceperiod;
         // offset 0x1b8, size 0x8
         uint:3 gunselection;
         // offset 0x1c0, size 0x8
@@ -9117,7 +9117,7 @@ version 18 {
         // offset 0x298, size 0x8
         uint:4 carryscore;
         // offset 0x2a0, size 0x8
-        uint:4 hash_6e49ce7bbe6d3f1f;
+        uint:4 pregamepositionsorttype;
         // offset 0x2a8, size 0x8
         fixed<8,2> killeventscoremultiplier;
         // offset 0x2b0, size 0x8
@@ -9175,7 +9175,7 @@ version 18 {
         // offset 0x3d0, size 0x10
         uint:10 playermaxhealth;
         // offset 0x3e0, size 0x8
-        uint:7 hash_1833c853bfe78ffc;
+        uint:7 pregameprestagetime;
         // offset 0x3e8, size 0x8
         uint:5 hash_66a7d866327081eb;
         // offset 0x3f0, size 0x8
@@ -9201,7 +9201,7 @@ version 18 {
         // offset 0x5d0, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x5d8, size 0x8
-        uint:2 hash_47d4aa0161d78e15;
+        uint:2 teamassignment;
         // offset 0x5e0, size 0x8
         uint:2 zmcrawlerstate;
         // offset 0x5e8, size 0x10
@@ -9263,7 +9263,7 @@ version 18 {
         // offset 0x710, size 0x8
         uint:8 hash_6a48bbfb703d5c9c;
         // offset 0x718, size 0x8
-        uint:4 hash_239b391c77ebf8c1;
+        uint:4 pregamepositionshufflemethod;
         // offset 0x720, size 0x8
         uint:5 zmpowerupslimitround;
         // offset 0x728, size 0x10
@@ -9287,7 +9287,7 @@ version 18 {
         // offset 0x778, size 0x8
         uint:6 hash_410c5c7c1e60b534;
         // offset 0x780, size 0x8
-        uint:4 hash_552338718ec6d2df;
+        uint:4 maxallowedsecondaryattachments;
         // offset 0x788, size 0x10
         fixed<9,3> maxplayereventsperminute;
         // offset 0x798, size 0x10
@@ -9305,7 +9305,7 @@ version 18 {
         // offset 0x7d8, size 0x8
         uint:5 teamscoreperkillconfirmed;
         // offset 0x7e0, size 0x8
-        uint:5 hash_4e4352bd1aaeedfe;
+        uint:5 draftmatchstarttime;
         // offset 0x7e8, size 0x8
         fixed<8,2> waverespawndelay;
         // offset 0x7f0, size 0x8
@@ -9337,7 +9337,7 @@ version 18 {
         // offset 0x870, size 0x8
         uint:5 teamscoreperheadshot;
         // offset 0x878, size 0x8
-        uint:7 hash_1908ad844e6c3e37;
+        uint:7 pregamepostroundtime;
         // offset 0x880, size 0x8
         uint:4 pregameitemmaxvotes;
         // offset 0x888, size 0x8
@@ -9379,7 +9379,7 @@ version 18 {
         // offset 0x918, size 0x8
         uint:4 pickuptime;
         // offset 0x920, size 0x10
-        fixed<14,7> hash_451245a24412d90f;
+        fixed<14,7> controllerparticipationcheckinterval;
         // offset 0x930, size 0x20
         int hash_64727525f5957d06;
         // offset 0x950, size 0x8
@@ -9473,7 +9473,7 @@ version 18 {
         // offset 0xae8, size 0x8
         uint:7 teamcount;
         // offset 0xaf0, size 0x20
-        int hash_7f38d88521da4c79;
+        int spawngroupradius;
         // offset 0xb10, size 0x8
         uint:4 roundlimit;
         // offset 0xb18, size 0x10
@@ -9609,9 +9609,9 @@ version 18 {
         // offset 0xba1, size 0x1
         bool zmtalismanperkmodsingle;
         // offset 0xba2, size 0x1
-        bool hash_62665aebde32c8ae;
+        bool pregamealwaysshowstreakedit;
         // offset 0xba3, size 0x1
-        bool hash_18c053cae82c1167;
+        bool wagermatchhud;
         // offset 0xba4, size 0x1
         bool hash_6cf5f53d1fbb1066;
         // offset 0xba5, size 0x1
@@ -10125,7 +10125,7 @@ version 17 {
         // offset 0x78, size 0x20
         int deployablebarrierdestroytime;
         // offset 0x98, size 0x10
-        uint:16 hash_6024ee628431415;
+        uint:16 killcamhistoryseconds;
         // offset 0xa8, size 0x20
         uint zmpapenabled;
         // offset 0xc8, size 0x8
@@ -10147,7 +10147,7 @@ version 17 {
         // offset 0x110, size 0x10
         uint:16 zmkillcap;
         // offset 0x120, size 0x8
-        uint:7 hash_16184f2fd4014b39;
+        uint:7 pregamepoststagetime;
         // offset 0x128, size 0x8
         uint:5 pointspermeleekill;
         // offset 0x130, size 0x8
@@ -10175,7 +10175,7 @@ version 17 {
         // offset 0x1a0, size 0x8
         uint:6 hash_6ae29c8144cb7659;
         // offset 0x1a8, size 0x10
-        uint:10 hash_3c82ffb472a21cac;
+        uint:10 flagcapturegraceperiod;
         // offset 0x1b8, size 0x8
         uint:3 gunselection;
         // offset 0x1c0, size 0x8
@@ -10229,7 +10229,7 @@ version 17 {
         // offset 0x298, size 0x8
         uint:4 carryscore;
         // offset 0x2a0, size 0x8
-        uint:4 hash_6e49ce7bbe6d3f1f;
+        uint:4 pregamepositionsorttype;
         // offset 0x2a8, size 0x8
         fixed<8,2> killeventscoremultiplier;
         // offset 0x2b0, size 0x8
@@ -10287,7 +10287,7 @@ version 17 {
         // offset 0x3d0, size 0x10
         uint:10 playermaxhealth;
         // offset 0x3e0, size 0x8
-        uint:7 hash_1833c853bfe78ffc;
+        uint:7 pregameprestagetime;
         // offset 0x3e8, size 0x8
         uint:5 hash_66a7d866327081eb;
         // offset 0x3f0, size 0x8
@@ -10313,7 +10313,7 @@ version 17 {
         // offset 0x5d0, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x5d8, size 0x8
-        uint:2 hash_47d4aa0161d78e15;
+        uint:2 teamassignment;
         // offset 0x5e0, size 0x8
         uint:2 zmcrawlerstate;
         // offset 0x5e8, size 0x10
@@ -10375,7 +10375,7 @@ version 17 {
         // offset 0x710, size 0x8
         uint:8 hash_6a48bbfb703d5c9c;
         // offset 0x718, size 0x8
-        uint:4 hash_239b391c77ebf8c1;
+        uint:4 pregamepositionshufflemethod;
         // offset 0x720, size 0x8
         uint:5 zmpowerupslimitround;
         // offset 0x728, size 0x10
@@ -10399,7 +10399,7 @@ version 17 {
         // offset 0x778, size 0x8
         uint:6 hash_410c5c7c1e60b534;
         // offset 0x780, size 0x8
-        uint:4 hash_552338718ec6d2df;
+        uint:4 maxallowedsecondaryattachments;
         // offset 0x788, size 0x10
         fixed<9,3> maxplayereventsperminute;
         // offset 0x798, size 0x10
@@ -10417,7 +10417,7 @@ version 17 {
         // offset 0x7d8, size 0x8
         uint:5 teamscoreperkillconfirmed;
         // offset 0x7e0, size 0x8
-        uint:5 hash_4e4352bd1aaeedfe;
+        uint:5 draftmatchstarttime;
         // offset 0x7e8, size 0x8
         fixed<8,2> waverespawndelay;
         // offset 0x7f0, size 0x8
@@ -10449,7 +10449,7 @@ version 17 {
         // offset 0x870, size 0x8
         uint:5 teamscoreperheadshot;
         // offset 0x878, size 0x8
-        uint:7 hash_1908ad844e6c3e37;
+        uint:7 pregamepostroundtime;
         // offset 0x880, size 0x8
         uint:4 pregameitemmaxvotes;
         // offset 0x888, size 0x8
@@ -10491,7 +10491,7 @@ version 17 {
         // offset 0x918, size 0x8
         uint:4 pickuptime;
         // offset 0x920, size 0x10
-        fixed<14,7> hash_451245a24412d90f;
+        fixed<14,7> controllerparticipationcheckinterval;
         // offset 0x930, size 0x20
         int hash_64727525f5957d06;
         // offset 0x950, size 0x8
@@ -10585,7 +10585,7 @@ version 17 {
         // offset 0xae8, size 0x8
         uint:7 teamcount;
         // offset 0xaf0, size 0x20
-        int hash_7f38d88521da4c79;
+        int spawngroupradius;
         // offset 0xb10, size 0x8
         uint:4 roundlimit;
         // offset 0xb18, size 0x10
@@ -10721,9 +10721,9 @@ version 17 {
         // offset 0xba1, size 0x1
         bool zmtalismanperkmodsingle;
         // offset 0xba2, size 0x1
-        bool hash_62665aebde32c8ae;
+        bool pregamealwaysshowstreakedit;
         // offset 0xba3, size 0x1
-        bool hash_18c053cae82c1167;
+        bool wagermatchhud;
         // offset 0xba4, size 0x1
         bool hash_6cf5f53d1fbb1066;
         // offset 0xba5, size 0x1
@@ -11235,7 +11235,7 @@ version 16 {
         // offset 0x78, size 0x20
         int deployablebarrierdestroytime;
         // offset 0x98, size 0x10
-        uint:16 hash_6024ee628431415;
+        uint:16 killcamhistoryseconds;
         // offset 0xa8, size 0x20
         uint zmpapenabled;
         // offset 0xc8, size 0x8
@@ -11257,7 +11257,7 @@ version 16 {
         // offset 0x110, size 0x10
         uint:16 zmkillcap;
         // offset 0x120, size 0x8
-        uint:7 hash_16184f2fd4014b39;
+        uint:7 pregamepoststagetime;
         // offset 0x128, size 0x8
         uint:5 pointspermeleekill;
         // offset 0x130, size 0x8
@@ -11285,7 +11285,7 @@ version 16 {
         // offset 0x1a0, size 0x8
         uint:6 hash_6ae29c8144cb7659;
         // offset 0x1a8, size 0x10
-        uint:10 hash_3c82ffb472a21cac;
+        uint:10 flagcapturegraceperiod;
         // offset 0x1b8, size 0x8
         uint:3 gunselection;
         // offset 0x1c0, size 0x8
@@ -11337,7 +11337,7 @@ version 16 {
         // offset 0x290, size 0x8
         uint:4 carryscore;
         // offset 0x298, size 0x8
-        uint:4 hash_6e49ce7bbe6d3f1f;
+        uint:4 pregamepositionsorttype;
         // offset 0x2a0, size 0x8
         fixed<8,2> killeventscoremultiplier;
         // offset 0x2a8, size 0x8
@@ -11395,7 +11395,7 @@ version 16 {
         // offset 0x3c8, size 0x10
         uint:10 playermaxhealth;
         // offset 0x3d8, size 0x8
-        uint:7 hash_1833c853bfe78ffc;
+        uint:7 pregameprestagetime;
         // offset 0x3e0, size 0x8
         uint:5 hash_66a7d866327081eb;
         // offset 0x3e8, size 0x8
@@ -11421,7 +11421,7 @@ version 16 {
         // offset 0x5c8, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x5d0, size 0x8
-        uint:2 hash_47d4aa0161d78e15;
+        uint:2 teamassignment;
         // offset 0x5d8, size 0x8
         uint:2 zmcrawlerstate;
         // offset 0x5e0, size 0x10
@@ -11483,7 +11483,7 @@ version 16 {
         // offset 0x708, size 0x8
         uint:8 hash_6a48bbfb703d5c9c;
         // offset 0x710, size 0x8
-        uint:4 hash_239b391c77ebf8c1;
+        uint:4 pregamepositionshufflemethod;
         // offset 0x718, size 0x8
         uint:5 zmpowerupslimitround;
         // offset 0x720, size 0x10
@@ -11505,7 +11505,7 @@ version 16 {
         // offset 0x768, size 0x8
         uint:6 hash_410c5c7c1e60b534;
         // offset 0x770, size 0x8
-        uint:4 hash_552338718ec6d2df;
+        uint:4 maxallowedsecondaryattachments;
         // offset 0x778, size 0x10
         fixed<9,3> maxplayereventsperminute;
         // offset 0x788, size 0x10
@@ -11519,7 +11519,7 @@ version 16 {
         // offset 0x7b8, size 0x8
         uint:5 teamscoreperkillconfirmed;
         // offset 0x7c0, size 0x8
-        uint:5 hash_4e4352bd1aaeedfe;
+        uint:5 draftmatchstarttime;
         // offset 0x7c8, size 0x8
         fixed<8,2> waverespawndelay;
         // offset 0x7d0, size 0x8
@@ -11551,7 +11551,7 @@ version 16 {
         // offset 0x850, size 0x8
         uint:5 teamscoreperheadshot;
         // offset 0x858, size 0x8
-        uint:7 hash_1908ad844e6c3e37;
+        uint:7 pregamepostroundtime;
         // offset 0x860, size 0x8
         uint:4 pregameitemmaxvotes;
         // offset 0x868, size 0x8
@@ -11593,7 +11593,7 @@ version 16 {
         // offset 0x8f8, size 0x8
         uint:4 pickuptime;
         // offset 0x900, size 0x10
-        fixed<14,7> hash_451245a24412d90f;
+        fixed<14,7> controllerparticipationcheckinterval;
         // offset 0x910, size 0x20
         int hash_64727525f5957d06;
         // offset 0x930, size 0x8
@@ -11687,7 +11687,7 @@ version 16 {
         // offset 0xac8, size 0x8
         uint:7 teamcount;
         // offset 0xad0, size 0x20
-        int hash_7f38d88521da4c79;
+        int spawngroupradius;
         // offset 0xaf0, size 0x8
         uint:4 roundlimit;
         // offset 0xaf8, size 0x10
@@ -11823,9 +11823,9 @@ version 16 {
         // offset 0xb81, size 0x1
         bool zmtalismanperkmodsingle;
         // offset 0xb82, size 0x1
-        bool hash_62665aebde32c8ae;
+        bool pregamealwaysshowstreakedit;
         // offset 0xb83, size 0x1
-        bool hash_18c053cae82c1167;
+        bool wagermatchhud;
         // offset 0xb84, size 0x1
         bool hash_6cf5f53d1fbb1066;
         // offset 0xb85, size 0x1
@@ -12337,7 +12337,7 @@ version 15 {
         // offset 0x78, size 0x20
         int deployablebarrierdestroytime;
         // offset 0x98, size 0x10
-        uint:16 hash_6024ee628431415;
+        uint:16 killcamhistoryseconds;
         // offset 0xa8, size 0x20
         uint zmpapenabled;
         // offset 0xc8, size 0x8
@@ -12359,7 +12359,7 @@ version 15 {
         // offset 0x110, size 0x10
         uint:16 zmkillcap;
         // offset 0x120, size 0x8
-        uint:7 hash_16184f2fd4014b39;
+        uint:7 pregamepoststagetime;
         // offset 0x128, size 0x8
         uint:5 pointspermeleekill;
         // offset 0x130, size 0x8
@@ -12387,7 +12387,7 @@ version 15 {
         // offset 0x1a0, size 0x8
         uint:6 hash_6ae29c8144cb7659;
         // offset 0x1a8, size 0x10
-        uint:10 hash_3c82ffb472a21cac;
+        uint:10 flagcapturegraceperiod;
         // offset 0x1b8, size 0x8
         uint:3 gunselection;
         // offset 0x1c0, size 0x8
@@ -12439,7 +12439,7 @@ version 15 {
         // offset 0x290, size 0x8
         uint:4 carryscore;
         // offset 0x298, size 0x8
-        uint:4 hash_6e49ce7bbe6d3f1f;
+        uint:4 pregamepositionsorttype;
         // offset 0x2a0, size 0x8
         fixed<8,2> killeventscoremultiplier;
         // offset 0x2a8, size 0x8
@@ -12497,7 +12497,7 @@ version 15 {
         // offset 0x3c8, size 0x10
         uint:10 playermaxhealth;
         // offset 0x3d8, size 0x8
-        uint:7 hash_1833c853bfe78ffc;
+        uint:7 pregameprestagetime;
         // offset 0x3e0, size 0x8
         uint:5 hash_66a7d866327081eb;
         // offset 0x3e8, size 0x8
@@ -12523,7 +12523,7 @@ version 15 {
         // offset 0x5c8, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x5d0, size 0x8
-        uint:2 hash_47d4aa0161d78e15;
+        uint:2 teamassignment;
         // offset 0x5d8, size 0x8
         uint:2 zmcrawlerstate;
         // offset 0x5e0, size 0x10
@@ -12585,7 +12585,7 @@ version 15 {
         // offset 0x708, size 0x8
         uint:8 hash_6a48bbfb703d5c9c;
         // offset 0x710, size 0x8
-        uint:4 hash_239b391c77ebf8c1;
+        uint:4 pregamepositionshufflemethod;
         // offset 0x718, size 0x8
         uint:5 zmpowerupslimitround;
         // offset 0x720, size 0x10
@@ -12607,7 +12607,7 @@ version 15 {
         // offset 0x768, size 0x8
         uint:6 hash_410c5c7c1e60b534;
         // offset 0x770, size 0x8
-        uint:4 hash_552338718ec6d2df;
+        uint:4 maxallowedsecondaryattachments;
         // offset 0x778, size 0x10
         fixed<9,3> maxplayereventsperminute;
         // offset 0x788, size 0x10
@@ -12621,7 +12621,7 @@ version 15 {
         // offset 0x7b8, size 0x8
         uint:5 teamscoreperkillconfirmed;
         // offset 0x7c0, size 0x8
-        uint:5 hash_4e4352bd1aaeedfe;
+        uint:5 draftmatchstarttime;
         // offset 0x7c8, size 0x8
         fixed<8,2> waverespawndelay;
         // offset 0x7d0, size 0x8
@@ -12653,7 +12653,7 @@ version 15 {
         // offset 0x850, size 0x8
         uint:5 teamscoreperheadshot;
         // offset 0x858, size 0x8
-        uint:7 hash_1908ad844e6c3e37;
+        uint:7 pregamepostroundtime;
         // offset 0x860, size 0x8
         uint:4 pregameitemmaxvotes;
         // offset 0x868, size 0x8
@@ -12695,7 +12695,7 @@ version 15 {
         // offset 0x8f8, size 0x8
         uint:4 pickuptime;
         // offset 0x900, size 0x10
-        fixed<14,7> hash_451245a24412d90f;
+        fixed<14,7> controllerparticipationcheckinterval;
         // offset 0x910, size 0x20
         int hash_64727525f5957d06;
         // offset 0x930, size 0x8
@@ -12789,7 +12789,7 @@ version 15 {
         // offset 0xac8, size 0x8
         uint:7 teamcount;
         // offset 0xad0, size 0x20
-        int hash_7f38d88521da4c79;
+        int spawngroupradius;
         // offset 0xaf0, size 0x8
         uint:4 roundlimit;
         // offset 0xaf8, size 0x10
@@ -12923,9 +12923,9 @@ version 15 {
         // offset 0xb80, size 0x1
         bool zmtalismanperkmodsingle;
         // offset 0xb81, size 0x1
-        bool hash_62665aebde32c8ae;
+        bool pregamealwaysshowstreakedit;
         // offset 0xb82, size 0x1
-        bool hash_18c053cae82c1167;
+        bool wagermatchhud;
         // offset 0xb83, size 0x1
         bool hash_6cf5f53d1fbb1066;
         // offset 0xb84, size 0x1
@@ -13425,7 +13425,7 @@ version 14 {
         // offset 0x78, size 0x20
         int deployablebarrierdestroytime;
         // offset 0x98, size 0x10
-        uint:16 hash_6024ee628431415;
+        uint:16 killcamhistoryseconds;
         // offset 0xa8, size 0x20
         uint zmpapenabled;
         // offset 0xc8, size 0x8
@@ -13447,7 +13447,7 @@ version 14 {
         // offset 0x110, size 0x10
         uint:16 zmkillcap;
         // offset 0x120, size 0x8
-        uint:7 hash_16184f2fd4014b39;
+        uint:7 pregamepoststagetime;
         // offset 0x128, size 0x8
         uint:5 pointspermeleekill;
         // offset 0x130, size 0x8
@@ -13475,7 +13475,7 @@ version 14 {
         // offset 0x1a0, size 0x8
         uint:6 hash_6ae29c8144cb7659;
         // offset 0x1a8, size 0x10
-        uint:10 hash_3c82ffb472a21cac;
+        uint:10 flagcapturegraceperiod;
         // offset 0x1b8, size 0x8
         uint:3 gunselection;
         // offset 0x1c0, size 0x8
@@ -13527,7 +13527,7 @@ version 14 {
         // offset 0x290, size 0x8
         uint:4 carryscore;
         // offset 0x298, size 0x8
-        uint:4 hash_6e49ce7bbe6d3f1f;
+        uint:4 pregamepositionsorttype;
         // offset 0x2a0, size 0x8
         fixed<8,2> killeventscoremultiplier;
         // offset 0x2a8, size 0x8
@@ -13585,7 +13585,7 @@ version 14 {
         // offset 0x3c8, size 0x10
         uint:10 playermaxhealth;
         // offset 0x3d8, size 0x8
-        uint:7 hash_1833c853bfe78ffc;
+        uint:7 pregameprestagetime;
         // offset 0x3e0, size 0x8
         uint:5 hash_66a7d866327081eb;
         // offset 0x3e8, size 0x8
@@ -13611,7 +13611,7 @@ version 14 {
         // offset 0x5c8, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x5d0, size 0x8
-        uint:2 hash_47d4aa0161d78e15;
+        uint:2 teamassignment;
         // offset 0x5d8, size 0x8
         uint:2 zmcrawlerstate;
         // offset 0x5e0, size 0x10
@@ -13669,7 +13669,7 @@ version 14 {
         // offset 0x6f8, size 0x8
         uint:8 hash_6a48bbfb703d5c9c;
         // offset 0x700, size 0x8
-        uint:4 hash_239b391c77ebf8c1;
+        uint:4 pregamepositionshufflemethod;
         // offset 0x708, size 0x8
         uint:5 zmpowerupslimitround;
         // offset 0x710, size 0x10
@@ -13691,7 +13691,7 @@ version 14 {
         // offset 0x758, size 0x8
         uint:6 hash_410c5c7c1e60b534;
         // offset 0x760, size 0x8
-        uint:4 hash_552338718ec6d2df;
+        uint:4 maxallowedsecondaryattachments;
         // offset 0x768, size 0x10
         fixed<9,3> maxplayereventsperminute;
         // offset 0x778, size 0x10
@@ -13705,7 +13705,7 @@ version 14 {
         // offset 0x7a8, size 0x8
         uint:5 teamscoreperkillconfirmed;
         // offset 0x7b0, size 0x8
-        uint:5 hash_4e4352bd1aaeedfe;
+        uint:5 draftmatchstarttime;
         // offset 0x7b8, size 0x8
         fixed<8,2> waverespawndelay;
         // offset 0x7c0, size 0x8
@@ -13737,7 +13737,7 @@ version 14 {
         // offset 0x840, size 0x8
         uint:5 teamscoreperheadshot;
         // offset 0x848, size 0x8
-        uint:7 hash_1908ad844e6c3e37;
+        uint:7 pregamepostroundtime;
         // offset 0x850, size 0x8
         uint:4 pregameitemmaxvotes;
         // offset 0x858, size 0x8
@@ -13779,7 +13779,7 @@ version 14 {
         // offset 0x8e8, size 0x8
         uint:4 pickuptime;
         // offset 0x8f0, size 0x10
-        fixed<14,7> hash_451245a24412d90f;
+        fixed<14,7> controllerparticipationcheckinterval;
         // offset 0x900, size 0x20
         int hash_64727525f5957d06;
         // offset 0x920, size 0x8
@@ -13873,7 +13873,7 @@ version 14 {
         // offset 0xab8, size 0x8
         uint:7 teamcount;
         // offset 0xac0, size 0x20
-        int hash_7f38d88521da4c79;
+        int spawngroupradius;
         // offset 0xae0, size 0x8
         uint:4 roundlimit;
         // offset 0xae8, size 0x10
@@ -14007,9 +14007,9 @@ version 14 {
         // offset 0xb70, size 0x1
         bool zmtalismanperkmodsingle;
         // offset 0xb71, size 0x1
-        bool hash_62665aebde32c8ae;
+        bool pregamealwaysshowstreakedit;
         // offset 0xb72, size 0x1
-        bool hash_18c053cae82c1167;
+        bool wagermatchhud;
         // offset 0xb73, size 0x1
         bool hash_6cf5f53d1fbb1066;
         // offset 0xb74, size 0x1
@@ -14509,7 +14509,7 @@ version 13 {
         // offset 0x78, size 0x20
         int deployablebarrierdestroytime;
         // offset 0x98, size 0x10
-        uint:16 hash_6024ee628431415;
+        uint:16 killcamhistoryseconds;
         // offset 0xa8, size 0x20
         uint zmpapenabled;
         // offset 0xc8, size 0x8
@@ -14531,7 +14531,7 @@ version 13 {
         // offset 0x110, size 0x10
         uint:16 zmkillcap;
         // offset 0x120, size 0x8
-        uint:7 hash_16184f2fd4014b39;
+        uint:7 pregamepoststagetime;
         // offset 0x128, size 0x8
         uint:5 pointspermeleekill;
         // offset 0x130, size 0x8
@@ -14559,7 +14559,7 @@ version 13 {
         // offset 0x1a0, size 0x8
         uint:6 hash_6ae29c8144cb7659;
         // offset 0x1a8, size 0x10
-        uint:10 hash_3c82ffb472a21cac;
+        uint:10 flagcapturegraceperiod;
         // offset 0x1b8, size 0x8
         uint:3 gunselection;
         // offset 0x1c0, size 0x8
@@ -14611,7 +14611,7 @@ version 13 {
         // offset 0x290, size 0x8
         uint:4 carryscore;
         // offset 0x298, size 0x8
-        uint:4 hash_6e49ce7bbe6d3f1f;
+        uint:4 pregamepositionsorttype;
         // offset 0x2a0, size 0x8
         fixed<8,2> killeventscoremultiplier;
         // offset 0x2a8, size 0x8
@@ -14669,7 +14669,7 @@ version 13 {
         // offset 0x3c8, size 0x10
         uint:10 playermaxhealth;
         // offset 0x3d8, size 0x8
-        uint:7 hash_1833c853bfe78ffc;
+        uint:7 pregameprestagetime;
         // offset 0x3e0, size 0x8
         uint:5 hash_66a7d866327081eb;
         // offset 0x3e8, size 0x8
@@ -14695,7 +14695,7 @@ version 13 {
         // offset 0x5c8, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x5d0, size 0x8
-        uint:2 hash_47d4aa0161d78e15;
+        uint:2 teamassignment;
         // offset 0x5d8, size 0x8
         uint:2 zmcrawlerstate;
         // offset 0x5e0, size 0x10
@@ -14753,7 +14753,7 @@ version 13 {
         // offset 0x6f8, size 0x8
         uint:8 hash_6a48bbfb703d5c9c;
         // offset 0x700, size 0x8
-        uint:4 hash_239b391c77ebf8c1;
+        uint:4 pregamepositionshufflemethod;
         // offset 0x708, size 0x8
         uint:5 zmpowerupslimitround;
         // offset 0x710, size 0x10
@@ -14775,7 +14775,7 @@ version 13 {
         // offset 0x758, size 0x8
         uint:6 hash_410c5c7c1e60b534;
         // offset 0x760, size 0x8
-        uint:4 hash_552338718ec6d2df;
+        uint:4 maxallowedsecondaryattachments;
         // offset 0x768, size 0x10
         fixed<9,3> maxplayereventsperminute;
         // offset 0x778, size 0x10
@@ -14789,7 +14789,7 @@ version 13 {
         // offset 0x7a8, size 0x8
         uint:5 teamscoreperkillconfirmed;
         // offset 0x7b0, size 0x8
-        uint:5 hash_4e4352bd1aaeedfe;
+        uint:5 draftmatchstarttime;
         // offset 0x7b8, size 0x8
         fixed<8,2> waverespawndelay;
         // offset 0x7c0, size 0x8
@@ -14821,7 +14821,7 @@ version 13 {
         // offset 0x840, size 0x8
         uint:5 teamscoreperheadshot;
         // offset 0x848, size 0x8
-        uint:7 hash_1908ad844e6c3e37;
+        uint:7 pregamepostroundtime;
         // offset 0x850, size 0x8
         uint:4 pregameitemmaxvotes;
         // offset 0x858, size 0x8
@@ -14863,7 +14863,7 @@ version 13 {
         // offset 0x8e8, size 0x8
         uint:4 pickuptime;
         // offset 0x8f0, size 0x10
-        fixed<14,7> hash_451245a24412d90f;
+        fixed<14,7> controllerparticipationcheckinterval;
         // offset 0x900, size 0x20
         int hash_64727525f5957d06;
         // offset 0x920, size 0x8
@@ -14957,7 +14957,7 @@ version 13 {
         // offset 0xab8, size 0x8
         uint:7 teamcount;
         // offset 0xac0, size 0x20
-        int hash_7f38d88521da4c79;
+        int spawngroupradius;
         // offset 0xae0, size 0x8
         uint:4 roundlimit;
         // offset 0xae8, size 0x10
@@ -15091,9 +15091,9 @@ version 13 {
         // offset 0xb70, size 0x1
         bool zmtalismanperkmodsingle;
         // offset 0xb71, size 0x1
-        bool hash_62665aebde32c8ae;
+        bool pregamealwaysshowstreakedit;
         // offset 0xb72, size 0x1
-        bool hash_18c053cae82c1167;
+        bool wagermatchhud;
         // offset 0xb73, size 0x1
         bool hash_6cf5f53d1fbb1066;
         // offset 0xb74, size 0x1
@@ -15591,7 +15591,7 @@ version 12 {
         // offset 0x78, size 0x20
         int deployablebarrierdestroytime;
         // offset 0x98, size 0x10
-        uint:16 hash_6024ee628431415;
+        uint:16 killcamhistoryseconds;
         // offset 0xa8, size 0x20
         uint zmpapenabled;
         // offset 0xc8, size 0x8
@@ -15613,7 +15613,7 @@ version 12 {
         // offset 0x110, size 0x10
         uint:16 zmkillcap;
         // offset 0x120, size 0x8
-        uint:7 hash_16184f2fd4014b39;
+        uint:7 pregamepoststagetime;
         // offset 0x128, size 0x8
         uint:5 pointspermeleekill;
         // offset 0x130, size 0x8
@@ -15641,7 +15641,7 @@ version 12 {
         // offset 0x1a0, size 0x8
         uint:6 hash_6ae29c8144cb7659;
         // offset 0x1a8, size 0x10
-        uint:10 hash_3c82ffb472a21cac;
+        uint:10 flagcapturegraceperiod;
         // offset 0x1b8, size 0x8
         uint:3 gunselection;
         // offset 0x1c0, size 0x8
@@ -15693,7 +15693,7 @@ version 12 {
         // offset 0x290, size 0x8
         uint:4 carryscore;
         // offset 0x298, size 0x8
-        uint:4 hash_6e49ce7bbe6d3f1f;
+        uint:4 pregamepositionsorttype;
         // offset 0x2a0, size 0x8
         fixed<8,2> killeventscoremultiplier;
         // offset 0x2a8, size 0x8
@@ -15751,7 +15751,7 @@ version 12 {
         // offset 0x3c8, size 0x10
         uint:10 playermaxhealth;
         // offset 0x3d8, size 0x8
-        uint:7 hash_1833c853bfe78ffc;
+        uint:7 pregameprestagetime;
         // offset 0x3e0, size 0x8
         uint:5 hash_66a7d866327081eb;
         // offset 0x3e8, size 0x8
@@ -15777,7 +15777,7 @@ version 12 {
         // offset 0x5c8, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x5d0, size 0x8
-        uint:2 hash_47d4aa0161d78e15;
+        uint:2 teamassignment;
         // offset 0x5d8, size 0x8
         uint:2 zmcrawlerstate;
         // offset 0x5e0, size 0x10
@@ -15835,7 +15835,7 @@ version 12 {
         // offset 0x6f8, size 0x8
         uint:8 hash_6a48bbfb703d5c9c;
         // offset 0x700, size 0x8
-        uint:4 hash_239b391c77ebf8c1;
+        uint:4 pregamepositionshufflemethod;
         // offset 0x708, size 0x8
         uint:5 zmpowerupslimitround;
         // offset 0x710, size 0x10
@@ -15857,7 +15857,7 @@ version 12 {
         // offset 0x758, size 0x8
         uint:6 hash_410c5c7c1e60b534;
         // offset 0x760, size 0x8
-        uint:4 hash_552338718ec6d2df;
+        uint:4 maxallowedsecondaryattachments;
         // offset 0x768, size 0x10
         fixed<9,3> maxplayereventsperminute;
         // offset 0x778, size 0x10
@@ -15871,7 +15871,7 @@ version 12 {
         // offset 0x7a8, size 0x8
         uint:5 teamscoreperkillconfirmed;
         // offset 0x7b0, size 0x8
-        uint:5 hash_4e4352bd1aaeedfe;
+        uint:5 draftmatchstarttime;
         // offset 0x7b8, size 0x8
         fixed<8,2> waverespawndelay;
         // offset 0x7c0, size 0x8
@@ -15903,7 +15903,7 @@ version 12 {
         // offset 0x840, size 0x8
         uint:5 teamscoreperheadshot;
         // offset 0x848, size 0x8
-        uint:7 hash_1908ad844e6c3e37;
+        uint:7 pregamepostroundtime;
         // offset 0x850, size 0x8
         uint:4 pregameitemmaxvotes;
         // offset 0x858, size 0x8
@@ -15945,7 +15945,7 @@ version 12 {
         // offset 0x8e8, size 0x8
         uint:4 pickuptime;
         // offset 0x8f0, size 0x10
-        fixed<14,7> hash_451245a24412d90f;
+        fixed<14,7> controllerparticipationcheckinterval;
         // offset 0x900, size 0x20
         int hash_64727525f5957d06;
         // offset 0x920, size 0x8
@@ -16039,7 +16039,7 @@ version 12 {
         // offset 0xab8, size 0x8
         uint:7 teamcount;
         // offset 0xac0, size 0x20
-        int hash_7f38d88521da4c79;
+        int spawngroupradius;
         // offset 0xae0, size 0x8
         uint:4 roundlimit;
         // offset 0xae8, size 0x10
@@ -16171,9 +16171,9 @@ version 12 {
         // offset 0xb6f, size 0x1
         bool zmtalismanperkmodsingle;
         // offset 0xb70, size 0x1
-        bool hash_62665aebde32c8ae;
+        bool pregamealwaysshowstreakedit;
         // offset 0xb71, size 0x1
-        bool hash_18c053cae82c1167;
+        bool wagermatchhud;
         // offset 0xb72, size 0x1
         bool hash_6cf5f53d1fbb1066;
         // offset 0xb73, size 0x1
@@ -16671,7 +16671,7 @@ version 11 {
         // offset 0x78, size 0x20
         int deployablebarrierdestroytime;
         // offset 0x98, size 0x10
-        uint:16 hash_6024ee628431415;
+        uint:16 killcamhistoryseconds;
         // offset 0xa8, size 0x20
         uint zmpapenabled;
         // offset 0xc8, size 0x8
@@ -16693,7 +16693,7 @@ version 11 {
         // offset 0x110, size 0x10
         uint:16 zmkillcap;
         // offset 0x120, size 0x8
-        uint:7 hash_16184f2fd4014b39;
+        uint:7 pregamepoststagetime;
         // offset 0x128, size 0x8
         uint:5 pointspermeleekill;
         // offset 0x130, size 0x8
@@ -16721,7 +16721,7 @@ version 11 {
         // offset 0x1a0, size 0x8
         uint:6 hash_6ae29c8144cb7659;
         // offset 0x1a8, size 0x10
-        uint:10 hash_3c82ffb472a21cac;
+        uint:10 flagcapturegraceperiod;
         // offset 0x1b8, size 0x8
         uint:3 gunselection;
         // offset 0x1c0, size 0x8
@@ -16773,7 +16773,7 @@ version 11 {
         // offset 0x290, size 0x8
         uint:4 carryscore;
         // offset 0x298, size 0x8
-        uint:4 hash_6e49ce7bbe6d3f1f;
+        uint:4 pregamepositionsorttype;
         // offset 0x2a0, size 0x8
         fixed<8,2> killeventscoremultiplier;
         // offset 0x2a8, size 0x8
@@ -16831,7 +16831,7 @@ version 11 {
         // offset 0x3c8, size 0x10
         uint:10 playermaxhealth;
         // offset 0x3d8, size 0x8
-        uint:7 hash_1833c853bfe78ffc;
+        uint:7 pregameprestagetime;
         // offset 0x3e0, size 0x8
         uint:5 hash_66a7d866327081eb;
         // offset 0x3e8, size 0x8
@@ -16857,7 +16857,7 @@ version 11 {
         // offset 0x5c8, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x5d0, size 0x8
-        uint:2 hash_47d4aa0161d78e15;
+        uint:2 teamassignment;
         // offset 0x5d8, size 0x8
         uint:2 zmcrawlerstate;
         // offset 0x5e0, size 0x10
@@ -16915,7 +16915,7 @@ version 11 {
         // offset 0x6f8, size 0x8
         uint:8 hash_6a48bbfb703d5c9c;
         // offset 0x700, size 0x8
-        uint:4 hash_239b391c77ebf8c1;
+        uint:4 pregamepositionshufflemethod;
         // offset 0x708, size 0x8
         uint:5 zmpowerupslimitround;
         // offset 0x710, size 0x10
@@ -16937,7 +16937,7 @@ version 11 {
         // offset 0x758, size 0x8
         uint:6 hash_410c5c7c1e60b534;
         // offset 0x760, size 0x8
-        uint:4 hash_552338718ec6d2df;
+        uint:4 maxallowedsecondaryattachments;
         // offset 0x768, size 0x10
         fixed<9,3> maxplayereventsperminute;
         // offset 0x778, size 0x10
@@ -16951,7 +16951,7 @@ version 11 {
         // offset 0x7a8, size 0x8
         uint:5 teamscoreperkillconfirmed;
         // offset 0x7b0, size 0x8
-        uint:5 hash_4e4352bd1aaeedfe;
+        uint:5 draftmatchstarttime;
         // offset 0x7b8, size 0x8
         fixed<8,2> waverespawndelay;
         // offset 0x7c0, size 0x8
@@ -16981,7 +16981,7 @@ version 11 {
         // offset 0x838, size 0x8
         uint:5 teamscoreperheadshot;
         // offset 0x840, size 0x8
-        uint:7 hash_1908ad844e6c3e37;
+        uint:7 pregamepostroundtime;
         // offset 0x848, size 0x8
         uint:4 pregameitemmaxvotes;
         // offset 0x850, size 0x8
@@ -17023,7 +17023,7 @@ version 11 {
         // offset 0x8e0, size 0x8
         uint:4 pickuptime;
         // offset 0x8e8, size 0x10
-        fixed<14,7> hash_451245a24412d90f;
+        fixed<14,7> controllerparticipationcheckinterval;
         // offset 0x8f8, size 0x20
         int hash_64727525f5957d06;
         // offset 0x918, size 0x8
@@ -17117,7 +17117,7 @@ version 11 {
         // offset 0xab0, size 0x8
         uint:7 teamcount;
         // offset 0xab8, size 0x20
-        int hash_7f38d88521da4c79;
+        int spawngroupradius;
         // offset 0xad8, size 0x8
         uint:4 roundlimit;
         // offset 0xae0, size 0x10
@@ -17249,9 +17249,9 @@ version 11 {
         // offset 0xb67, size 0x1
         bool zmtalismanperkmodsingle;
         // offset 0xb68, size 0x1
-        bool hash_62665aebde32c8ae;
+        bool pregamealwaysshowstreakedit;
         // offset 0xb69, size 0x1
-        bool hash_18c053cae82c1167;
+        bool wagermatchhud;
         // offset 0xb6a, size 0x1
         bool hash_6cf5f53d1fbb1066;
         // offset 0xb6b, size 0x1
@@ -17747,7 +17747,7 @@ version 10 {
         // offset 0x78, size 0x20
         int deployablebarrierdestroytime;
         // offset 0x98, size 0x10
-        uint:16 hash_6024ee628431415;
+        uint:16 killcamhistoryseconds;
         // offset 0xa8, size 0x20
         uint zmpapenabled;
         // offset 0xc8, size 0x8
@@ -17767,7 +17767,7 @@ version 10 {
         // offset 0x108, size 0x10
         uint:16 zmkillcap;
         // offset 0x118, size 0x8
-        uint:7 hash_16184f2fd4014b39;
+        uint:7 pregamepoststagetime;
         // offset 0x120, size 0x8
         uint:5 pointspermeleekill;
         // offset 0x128, size 0x8
@@ -17795,7 +17795,7 @@ version 10 {
         // offset 0x198, size 0x8
         uint:6 hash_6ae29c8144cb7659;
         // offset 0x1a0, size 0x10
-        uint:10 hash_3c82ffb472a21cac;
+        uint:10 flagcapturegraceperiod;
         // offset 0x1b0, size 0x8
         uint:3 gunselection;
         // offset 0x1b8, size 0x8
@@ -17847,7 +17847,7 @@ version 10 {
         // offset 0x288, size 0x8
         uint:4 carryscore;
         // offset 0x290, size 0x8
-        uint:4 hash_6e49ce7bbe6d3f1f;
+        uint:4 pregamepositionsorttype;
         // offset 0x298, size 0x8
         fixed<8,2> killeventscoremultiplier;
         // offset 0x2a0, size 0x8
@@ -17905,7 +17905,7 @@ version 10 {
         // offset 0x3c0, size 0x10
         uint:10 playermaxhealth;
         // offset 0x3d0, size 0x8
-        uint:7 hash_1833c853bfe78ffc;
+        uint:7 pregameprestagetime;
         // offset 0x3d8, size 0x8
         uint:5 hash_66a7d866327081eb;
         // offset 0x3e0, size 0x8
@@ -17929,7 +17929,7 @@ version 10 {
         // offset 0x5b8, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x5c0, size 0x8
-        uint:2 hash_47d4aa0161d78e15;
+        uint:2 teamassignment;
         // offset 0x5c8, size 0x8
         uint:2 zmcrawlerstate;
         // offset 0x5d0, size 0x10
@@ -17985,7 +17985,7 @@ version 10 {
         // offset 0x6e0, size 0x8
         uint:8 hash_6a48bbfb703d5c9c;
         // offset 0x6e8, size 0x8
-        uint:4 hash_239b391c77ebf8c1;
+        uint:4 pregamepositionshufflemethod;
         // offset 0x6f0, size 0x8
         uint:5 zmpowerupslimitround;
         // offset 0x6f8, size 0x10
@@ -18007,7 +18007,7 @@ version 10 {
         // offset 0x740, size 0x8
         uint:6 hash_410c5c7c1e60b534;
         // offset 0x748, size 0x8
-        uint:4 hash_552338718ec6d2df;
+        uint:4 maxallowedsecondaryattachments;
         // offset 0x750, size 0x10
         fixed<9,3> maxplayereventsperminute;
         // offset 0x760, size 0x10
@@ -18021,7 +18021,7 @@ version 10 {
         // offset 0x790, size 0x8
         uint:5 teamscoreperkillconfirmed;
         // offset 0x798, size 0x8
-        uint:5 hash_4e4352bd1aaeedfe;
+        uint:5 draftmatchstarttime;
         // offset 0x7a0, size 0x8
         fixed<8,2> waverespawndelay;
         // offset 0x7a8, size 0x8
@@ -18051,7 +18051,7 @@ version 10 {
         // offset 0x820, size 0x8
         uint:5 teamscoreperheadshot;
         // offset 0x828, size 0x8
-        uint:7 hash_1908ad844e6c3e37;
+        uint:7 pregamepostroundtime;
         // offset 0x830, size 0x8
         uint:4 pregameitemmaxvotes;
         // offset 0x838, size 0x8
@@ -18093,7 +18093,7 @@ version 10 {
         // offset 0x8c8, size 0x8
         uint:4 pickuptime;
         // offset 0x8d0, size 0x10
-        fixed<14,7> hash_451245a24412d90f;
+        fixed<14,7> controllerparticipationcheckinterval;
         // offset 0x8e0, size 0x20
         int hash_64727525f5957d06;
         // offset 0x900, size 0x8
@@ -18185,7 +18185,7 @@ version 10 {
         // offset 0xa90, size 0x8
         uint:7 teamcount;
         // offset 0xa98, size 0x20
-        int hash_7f38d88521da4c79;
+        int spawngroupradius;
         // offset 0xab8, size 0x8
         uint:4 roundlimit;
         // offset 0xac0, size 0x10
@@ -18317,9 +18317,9 @@ version 10 {
         // offset 0xb47, size 0x1
         bool zmtalismanperkmodsingle;
         // offset 0xb48, size 0x1
-        bool hash_62665aebde32c8ae;
+        bool pregamealwaysshowstreakedit;
         // offset 0xb49, size 0x1
-        bool hash_18c053cae82c1167;
+        bool wagermatchhud;
         // offset 0xb4a, size 0x1
         bool hash_6cf5f53d1fbb1066;
         // offset 0xb4b, size 0x1
@@ -18815,7 +18815,7 @@ version 9 {
         // offset 0x78, size 0x20
         int deployablebarrierdestroytime;
         // offset 0x98, size 0x10
-        uint:16 hash_6024ee628431415;
+        uint:16 killcamhistoryseconds;
         // offset 0xa8, size 0x20
         uint zmpapenabled;
         // offset 0xc8, size 0x8
@@ -18835,7 +18835,7 @@ version 9 {
         // offset 0x108, size 0x10
         uint:16 zmkillcap;
         // offset 0x118, size 0x8
-        uint:7 hash_16184f2fd4014b39;
+        uint:7 pregamepoststagetime;
         // offset 0x120, size 0x8
         uint:5 pointspermeleekill;
         // offset 0x128, size 0x8
@@ -18863,7 +18863,7 @@ version 9 {
         // offset 0x198, size 0x8
         uint:6 hash_6ae29c8144cb7659;
         // offset 0x1a0, size 0x10
-        uint:10 hash_3c82ffb472a21cac;
+        uint:10 flagcapturegraceperiod;
         // offset 0x1b0, size 0x8
         uint:3 gunselection;
         // offset 0x1b8, size 0x8
@@ -18915,7 +18915,7 @@ version 9 {
         // offset 0x288, size 0x8
         uint:4 carryscore;
         // offset 0x290, size 0x8
-        uint:4 hash_6e49ce7bbe6d3f1f;
+        uint:4 pregamepositionsorttype;
         // offset 0x298, size 0x8
         fixed<8,2> killeventscoremultiplier;
         // offset 0x2a0, size 0x8
@@ -18973,7 +18973,7 @@ version 9 {
         // offset 0x3c0, size 0x10
         uint:10 playermaxhealth;
         // offset 0x3d0, size 0x8
-        uint:7 hash_1833c853bfe78ffc;
+        uint:7 pregameprestagetime;
         // offset 0x3d8, size 0x8
         uint:5 hash_66a7d866327081eb;
         // offset 0x3e0, size 0x8
@@ -18997,7 +18997,7 @@ version 9 {
         // offset 0x5b8, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x5c0, size 0x8
-        uint:2 hash_47d4aa0161d78e15;
+        uint:2 teamassignment;
         // offset 0x5c8, size 0x8
         uint:2 zmcrawlerstate;
         // offset 0x5d0, size 0x10
@@ -19053,7 +19053,7 @@ version 9 {
         // offset 0x6e0, size 0x8
         uint:8 hash_6a48bbfb703d5c9c;
         // offset 0x6e8, size 0x8
-        uint:4 hash_239b391c77ebf8c1;
+        uint:4 pregamepositionshufflemethod;
         // offset 0x6f0, size 0x8
         uint:5 zmpowerupslimitround;
         // offset 0x6f8, size 0x10
@@ -19075,7 +19075,7 @@ version 9 {
         // offset 0x740, size 0x8
         uint:6 hash_410c5c7c1e60b534;
         // offset 0x748, size 0x8
-        uint:4 hash_552338718ec6d2df;
+        uint:4 maxallowedsecondaryattachments;
         // offset 0x750, size 0x10
         fixed<9,3> maxplayereventsperminute;
         // offset 0x760, size 0x10
@@ -19089,7 +19089,7 @@ version 9 {
         // offset 0x790, size 0x8
         uint:5 teamscoreperkillconfirmed;
         // offset 0x798, size 0x8
-        uint:5 hash_4e4352bd1aaeedfe;
+        uint:5 draftmatchstarttime;
         // offset 0x7a0, size 0x8
         fixed<8,2> waverespawndelay;
         // offset 0x7a8, size 0x8
@@ -19119,7 +19119,7 @@ version 9 {
         // offset 0x820, size 0x8
         uint:5 teamscoreperheadshot;
         // offset 0x828, size 0x8
-        uint:7 hash_1908ad844e6c3e37;
+        uint:7 pregamepostroundtime;
         // offset 0x830, size 0x8
         uint:4 pregameitemmaxvotes;
         // offset 0x838, size 0x8
@@ -19161,7 +19161,7 @@ version 9 {
         // offset 0x8c8, size 0x8
         uint:4 pickuptime;
         // offset 0x8d0, size 0x10
-        fixed<14,7> hash_451245a24412d90f;
+        fixed<14,7> controllerparticipationcheckinterval;
         // offset 0x8e0, size 0x20
         int hash_64727525f5957d06;
         // offset 0x900, size 0x8
@@ -19253,7 +19253,7 @@ version 9 {
         // offset 0xa90, size 0x8
         uint:7 teamcount;
         // offset 0xa98, size 0x20
-        int hash_7f38d88521da4c79;
+        int spawngroupradius;
         // offset 0xab8, size 0x8
         uint:4 roundlimit;
         // offset 0xac0, size 0x10
@@ -19383,9 +19383,9 @@ version 9 {
         // offset 0xb46, size 0x1
         bool zmtalismanperkmodsingle;
         // offset 0xb47, size 0x1
-        bool hash_62665aebde32c8ae;
+        bool pregamealwaysshowstreakedit;
         // offset 0xb48, size 0x1
-        bool hash_18c053cae82c1167;
+        bool wagermatchhud;
         // offset 0xb49, size 0x1
         bool hash_6cf5f53d1fbb1066;
         // offset 0xb4a, size 0x1
@@ -19881,7 +19881,7 @@ version 8 {
         // offset 0x78, size 0x20
         int deployablebarrierdestroytime;
         // offset 0x98, size 0x10
-        uint:16 hash_6024ee628431415;
+        uint:16 killcamhistoryseconds;
         // offset 0xa8, size 0x20
         uint zmpapenabled;
         // offset 0xc8, size 0x8
@@ -19901,7 +19901,7 @@ version 8 {
         // offset 0x108, size 0x10
         uint:16 zmkillcap;
         // offset 0x118, size 0x8
-        uint:7 hash_16184f2fd4014b39;
+        uint:7 pregamepoststagetime;
         // offset 0x120, size 0x8
         uint:5 pointspermeleekill;
         // offset 0x128, size 0x8
@@ -19929,7 +19929,7 @@ version 8 {
         // offset 0x198, size 0x8
         uint:6 hash_6ae29c8144cb7659;
         // offset 0x1a0, size 0x10
-        uint:10 hash_3c82ffb472a21cac;
+        uint:10 flagcapturegraceperiod;
         // offset 0x1b0, size 0x8
         uint:3 gunselection;
         // offset 0x1b8, size 0x8
@@ -19981,7 +19981,7 @@ version 8 {
         // offset 0x288, size 0x8
         uint:4 carryscore;
         // offset 0x290, size 0x8
-        uint:4 hash_6e49ce7bbe6d3f1f;
+        uint:4 pregamepositionsorttype;
         // offset 0x298, size 0x8
         fixed<8,2> killeventscoremultiplier;
         // offset 0x2a0, size 0x8
@@ -20039,7 +20039,7 @@ version 8 {
         // offset 0x3c0, size 0x10
         uint:10 playermaxhealth;
         // offset 0x3d0, size 0x8
-        uint:7 hash_1833c853bfe78ffc;
+        uint:7 pregameprestagetime;
         // offset 0x3d8, size 0x8
         uint:5 hash_66a7d866327081eb;
         // offset 0x3e0, size 0x8
@@ -20063,7 +20063,7 @@ version 8 {
         // offset 0x5b8, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x5c0, size 0x8
-        uint:2 hash_47d4aa0161d78e15;
+        uint:2 teamassignment;
         // offset 0x5c8, size 0x8
         uint:2 zmcrawlerstate;
         // offset 0x5d0, size 0x10
@@ -20119,7 +20119,7 @@ version 8 {
         // offset 0x6e0, size 0x8
         uint:8 hash_6a48bbfb703d5c9c;
         // offset 0x6e8, size 0x8
-        uint:4 hash_239b391c77ebf8c1;
+        uint:4 pregamepositionshufflemethod;
         // offset 0x6f0, size 0x8
         uint:5 zmpowerupslimitround;
         // offset 0x6f8, size 0x10
@@ -20141,7 +20141,7 @@ version 8 {
         // offset 0x740, size 0x8
         uint:6 hash_410c5c7c1e60b534;
         // offset 0x748, size 0x8
-        uint:4 hash_552338718ec6d2df;
+        uint:4 maxallowedsecondaryattachments;
         // offset 0x750, size 0x10
         fixed<9,3> maxplayereventsperminute;
         // offset 0x760, size 0x10
@@ -20155,7 +20155,7 @@ version 8 {
         // offset 0x790, size 0x8
         uint:5 teamscoreperkillconfirmed;
         // offset 0x798, size 0x8
-        uint:5 hash_4e4352bd1aaeedfe;
+        uint:5 draftmatchstarttime;
         // offset 0x7a0, size 0x8
         fixed<8,2> waverespawndelay;
         // offset 0x7a8, size 0x8
@@ -20185,7 +20185,7 @@ version 8 {
         // offset 0x820, size 0x8
         uint:5 teamscoreperheadshot;
         // offset 0x828, size 0x8
-        uint:7 hash_1908ad844e6c3e37;
+        uint:7 pregamepostroundtime;
         // offset 0x830, size 0x8
         uint:4 pregameitemmaxvotes;
         // offset 0x838, size 0x8
@@ -20227,7 +20227,7 @@ version 8 {
         // offset 0x8c8, size 0x8
         uint:4 pickuptime;
         // offset 0x8d0, size 0x10
-        fixed<14,7> hash_451245a24412d90f;
+        fixed<14,7> controllerparticipationcheckinterval;
         // offset 0x8e0, size 0x20
         int hash_64727525f5957d06;
         // offset 0x900, size 0x8
@@ -20319,7 +20319,7 @@ version 8 {
         // offset 0xa90, size 0x8
         uint:7 teamcount;
         // offset 0xa98, size 0x20
-        int hash_7f38d88521da4c79;
+        int spawngroupradius;
         // offset 0xab8, size 0x8
         uint:4 roundlimit;
         // offset 0xac0, size 0x10
@@ -20449,9 +20449,9 @@ version 8 {
         // offset 0xb46, size 0x1
         bool zmtalismanperkmodsingle;
         // offset 0xb47, size 0x1
-        bool hash_62665aebde32c8ae;
+        bool pregamealwaysshowstreakedit;
         // offset 0xb48, size 0x1
-        bool hash_18c053cae82c1167;
+        bool wagermatchhud;
         // offset 0xb49, size 0x1
         bool hash_6cf5f53d1fbb1066;
         // offset 0xb4a, size 0x1
@@ -20945,7 +20945,7 @@ version 7 {
         // offset 0x78, size 0x20
         int deployablebarrierdestroytime;
         // offset 0x98, size 0x10
-        uint:16 hash_6024ee628431415;
+        uint:16 killcamhistoryseconds;
         // offset 0xa8, size 0x20
         uint zmpapenabled;
         // offset 0xc8, size 0x8
@@ -20965,7 +20965,7 @@ version 7 {
         // offset 0x108, size 0x10
         uint:16 zmkillcap;
         // offset 0x118, size 0x8
-        uint:7 hash_16184f2fd4014b39;
+        uint:7 pregamepoststagetime;
         // offset 0x120, size 0x8
         uint:5 pointspermeleekill;
         // offset 0x128, size 0x8
@@ -20993,7 +20993,7 @@ version 7 {
         // offset 0x198, size 0x8
         uint:6 hash_6ae29c8144cb7659;
         // offset 0x1a0, size 0x10
-        uint:10 hash_3c82ffb472a21cac;
+        uint:10 flagcapturegraceperiod;
         // offset 0x1b0, size 0x8
         uint:3 gunselection;
         // offset 0x1b8, size 0x8
@@ -21045,7 +21045,7 @@ version 7 {
         // offset 0x288, size 0x8
         uint:4 carryscore;
         // offset 0x290, size 0x8
-        uint:4 hash_6e49ce7bbe6d3f1f;
+        uint:4 pregamepositionsorttype;
         // offset 0x298, size 0x8
         fixed<8,2> killeventscoremultiplier;
         // offset 0x2a0, size 0x8
@@ -21103,7 +21103,7 @@ version 7 {
         // offset 0x3c0, size 0x10
         uint:10 playermaxhealth;
         // offset 0x3d0, size 0x8
-        uint:7 hash_1833c853bfe78ffc;
+        uint:7 pregameprestagetime;
         // offset 0x3d8, size 0x8
         uint:5 hash_66a7d866327081eb;
         // offset 0x3e0, size 0x8
@@ -21127,7 +21127,7 @@ version 7 {
         // offset 0x5b8, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x5c0, size 0x8
-        uint:2 hash_47d4aa0161d78e15;
+        uint:2 teamassignment;
         // offset 0x5c8, size 0x8
         uint:2 zmcrawlerstate;
         // offset 0x5d0, size 0x10
@@ -21183,7 +21183,7 @@ version 7 {
         // offset 0x6e0, size 0x8
         uint:8 hash_6a48bbfb703d5c9c;
         // offset 0x6e8, size 0x8
-        uint:4 hash_239b391c77ebf8c1;
+        uint:4 pregamepositionshufflemethod;
         // offset 0x6f0, size 0x8
         uint:5 zmpowerupslimitround;
         // offset 0x6f8, size 0x10
@@ -21205,7 +21205,7 @@ version 7 {
         // offset 0x740, size 0x8
         uint:6 hash_410c5c7c1e60b534;
         // offset 0x748, size 0x8
-        uint:4 hash_552338718ec6d2df;
+        uint:4 maxallowedsecondaryattachments;
         // offset 0x750, size 0x10
         fixed<9,3> maxplayereventsperminute;
         // offset 0x760, size 0x10
@@ -21219,7 +21219,7 @@ version 7 {
         // offset 0x790, size 0x8
         uint:5 teamscoreperkillconfirmed;
         // offset 0x798, size 0x8
-        uint:5 hash_4e4352bd1aaeedfe;
+        uint:5 draftmatchstarttime;
         // offset 0x7a0, size 0x8
         fixed<8,2> waverespawndelay;
         // offset 0x7a8, size 0x8
@@ -21249,7 +21249,7 @@ version 7 {
         // offset 0x820, size 0x8
         uint:5 teamscoreperheadshot;
         // offset 0x828, size 0x8
-        uint:7 hash_1908ad844e6c3e37;
+        uint:7 pregamepostroundtime;
         // offset 0x830, size 0x8
         uint:4 pregameitemmaxvotes;
         // offset 0x838, size 0x8
@@ -21291,7 +21291,7 @@ version 7 {
         // offset 0x8c8, size 0x8
         uint:4 pickuptime;
         // offset 0x8d0, size 0x10
-        fixed<14,7> hash_451245a24412d90f;
+        fixed<14,7> controllerparticipationcheckinterval;
         // offset 0x8e0, size 0x20
         int hash_64727525f5957d06;
         // offset 0x900, size 0x8
@@ -21383,7 +21383,7 @@ version 7 {
         // offset 0xa90, size 0x8
         uint:7 teamcount;
         // offset 0xa98, size 0x20
-        int hash_7f38d88521da4c79;
+        int spawngroupradius;
         // offset 0xab8, size 0x8
         uint:4 roundlimit;
         // offset 0xac0, size 0x10
@@ -21513,9 +21513,9 @@ version 7 {
         // offset 0xb46, size 0x1
         bool zmtalismanperkmodsingle;
         // offset 0xb47, size 0x1
-        bool hash_62665aebde32c8ae;
+        bool pregamealwaysshowstreakedit;
         // offset 0xb48, size 0x1
-        bool hash_18c053cae82c1167;
+        bool wagermatchhud;
         // offset 0xb49, size 0x1
         bool hash_6cf5f53d1fbb1066;
         // offset 0xb4a, size 0x1
@@ -22003,7 +22003,7 @@ version 6 {
         // offset 0x78, size 0x20
         int deployablebarrierdestroytime;
         // offset 0x98, size 0x10
-        uint:16 hash_6024ee628431415;
+        uint:16 killcamhistoryseconds;
         // offset 0xa8, size 0x20
         uint zmpapenabled;
         // offset 0xc8, size 0x8
@@ -22023,7 +22023,7 @@ version 6 {
         // offset 0x108, size 0x10
         uint:16 zmkillcap;
         // offset 0x118, size 0x8
-        uint:7 hash_16184f2fd4014b39;
+        uint:7 pregamepoststagetime;
         // offset 0x120, size 0x8
         uint:5 pointspermeleekill;
         // offset 0x128, size 0x8
@@ -22051,7 +22051,7 @@ version 6 {
         // offset 0x198, size 0x8
         uint:6 hash_6ae29c8144cb7659;
         // offset 0x1a0, size 0x10
-        uint:10 hash_3c82ffb472a21cac;
+        uint:10 flagcapturegraceperiod;
         // offset 0x1b0, size 0x8
         uint:3 gunselection;
         // offset 0x1b8, size 0x8
@@ -22103,7 +22103,7 @@ version 6 {
         // offset 0x288, size 0x8
         uint:4 carryscore;
         // offset 0x290, size 0x8
-        uint:4 hash_6e49ce7bbe6d3f1f;
+        uint:4 pregamepositionsorttype;
         // offset 0x298, size 0x8
         fixed<8,2> killeventscoremultiplier;
         // offset 0x2a0, size 0x8
@@ -22161,7 +22161,7 @@ version 6 {
         // offset 0x3c0, size 0x10
         uint:10 playermaxhealth;
         // offset 0x3d0, size 0x8
-        uint:7 hash_1833c853bfe78ffc;
+        uint:7 pregameprestagetime;
         // offset 0x3d8, size 0x8
         uint:5 hash_66a7d866327081eb;
         // offset 0x3e0, size 0x8
@@ -22185,7 +22185,7 @@ version 6 {
         // offset 0x5b8, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x5c0, size 0x8
-        uint:2 hash_47d4aa0161d78e15;
+        uint:2 teamassignment;
         // offset 0x5c8, size 0x8
         uint:2 zmcrawlerstate;
         // offset 0x5d0, size 0x10
@@ -22241,7 +22241,7 @@ version 6 {
         // offset 0x6e0, size 0x8
         uint:8 hash_6a48bbfb703d5c9c;
         // offset 0x6e8, size 0x8
-        uint:4 hash_239b391c77ebf8c1;
+        uint:4 pregamepositionshufflemethod;
         // offset 0x6f0, size 0x8
         uint:5 zmpowerupslimitround;
         // offset 0x6f8, size 0x10
@@ -22263,7 +22263,7 @@ version 6 {
         // offset 0x740, size 0x8
         uint:6 hash_410c5c7c1e60b534;
         // offset 0x748, size 0x8
-        uint:4 hash_552338718ec6d2df;
+        uint:4 maxallowedsecondaryattachments;
         // offset 0x750, size 0x10
         fixed<9,3> maxplayereventsperminute;
         // offset 0x760, size 0x10
@@ -22277,7 +22277,7 @@ version 6 {
         // offset 0x790, size 0x8
         uint:5 teamscoreperkillconfirmed;
         // offset 0x798, size 0x8
-        uint:5 hash_4e4352bd1aaeedfe;
+        uint:5 draftmatchstarttime;
         // offset 0x7a0, size 0x8
         fixed<8,2> waverespawndelay;
         // offset 0x7a8, size 0x8
@@ -22307,7 +22307,7 @@ version 6 {
         // offset 0x820, size 0x8
         uint:5 teamscoreperheadshot;
         // offset 0x828, size 0x8
-        uint:7 hash_1908ad844e6c3e37;
+        uint:7 pregamepostroundtime;
         // offset 0x830, size 0x8
         uint:4 pregameitemmaxvotes;
         // offset 0x838, size 0x8
@@ -22349,7 +22349,7 @@ version 6 {
         // offset 0x8c8, size 0x8
         uint:4 pickuptime;
         // offset 0x8d0, size 0x10
-        fixed<14,7> hash_451245a24412d90f;
+        fixed<14,7> controllerparticipationcheckinterval;
         // offset 0x8e0, size 0x20
         int hash_64727525f5957d06;
         // offset 0x900, size 0x8
@@ -22441,7 +22441,7 @@ version 6 {
         // offset 0xa90, size 0x8
         uint:7 teamcount;
         // offset 0xa98, size 0x20
-        int hash_7f38d88521da4c79;
+        int spawngroupradius;
         // offset 0xab8, size 0x8
         uint:4 roundlimit;
         // offset 0xac0, size 0x10
@@ -22569,9 +22569,9 @@ version 6 {
         // offset 0xb45, size 0x1
         bool zmtalismanperkmodsingle;
         // offset 0xb46, size 0x1
-        bool hash_62665aebde32c8ae;
+        bool pregamealwaysshowstreakedit;
         // offset 0xb47, size 0x1
-        bool hash_18c053cae82c1167;
+        bool wagermatchhud;
         // offset 0xb48, size 0x1
         bool hash_6cf5f53d1fbb1066;
         // offset 0xb49, size 0x1
@@ -23057,7 +23057,7 @@ version 5 {
         // offset 0x78, size 0x20
         int deployablebarrierdestroytime;
         // offset 0x98, size 0x10
-        uint:16 hash_6024ee628431415;
+        uint:16 killcamhistoryseconds;
         // offset 0xa8, size 0x20
         uint zmpapenabled;
         // offset 0xc8, size 0x8
@@ -23077,7 +23077,7 @@ version 5 {
         // offset 0x108, size 0x10
         uint:16 zmkillcap;
         // offset 0x118, size 0x8
-        uint:7 hash_16184f2fd4014b39;
+        uint:7 pregamepoststagetime;
         // offset 0x120, size 0x8
         uint:5 pointspermeleekill;
         // offset 0x128, size 0x8
@@ -23105,7 +23105,7 @@ version 5 {
         // offset 0x198, size 0x8
         uint:6 hash_6ae29c8144cb7659;
         // offset 0x1a0, size 0x10
-        uint:10 hash_3c82ffb472a21cac;
+        uint:10 flagcapturegraceperiod;
         // offset 0x1b0, size 0x8
         uint:3 gunselection;
         // offset 0x1b8, size 0x8
@@ -23155,7 +23155,7 @@ version 5 {
         // offset 0x280, size 0x8
         uint:4 carryscore;
         // offset 0x288, size 0x8
-        uint:4 hash_6e49ce7bbe6d3f1f;
+        uint:4 pregamepositionsorttype;
         // offset 0x290, size 0x8
         fixed<8,2> killeventscoremultiplier;
         // offset 0x298, size 0x8
@@ -23213,7 +23213,7 @@ version 5 {
         // offset 0x3b8, size 0x10
         uint:10 playermaxhealth;
         // offset 0x3c8, size 0x8
-        uint:7 hash_1833c853bfe78ffc;
+        uint:7 pregameprestagetime;
         // offset 0x3d0, size 0x8
         uint:5 hash_66a7d866327081eb;
         // offset 0x3d8, size 0x8
@@ -23235,7 +23235,7 @@ version 5 {
         // offset 0x5a8, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x5b0, size 0x8
-        uint:2 hash_47d4aa0161d78e15;
+        uint:2 teamassignment;
         // offset 0x5b8, size 0x8
         uint:2 zmcrawlerstate;
         // offset 0x5c0, size 0x10
@@ -23291,7 +23291,7 @@ version 5 {
         // offset 0x6d0, size 0x8
         uint:8 hash_6a48bbfb703d5c9c;
         // offset 0x6d8, size 0x8
-        uint:4 hash_239b391c77ebf8c1;
+        uint:4 pregamepositionshufflemethod;
         // offset 0x6e0, size 0x8
         uint:5 zmpowerupslimitround;
         // offset 0x6e8, size 0x10
@@ -23313,7 +23313,7 @@ version 5 {
         // offset 0x730, size 0x8
         uint:6 hash_410c5c7c1e60b534;
         // offset 0x738, size 0x8
-        uint:4 hash_552338718ec6d2df;
+        uint:4 maxallowedsecondaryattachments;
         // offset 0x740, size 0x10
         fixed<9,3> maxplayereventsperminute;
         // offset 0x750, size 0x10
@@ -23327,7 +23327,7 @@ version 5 {
         // offset 0x780, size 0x8
         uint:5 teamscoreperkillconfirmed;
         // offset 0x788, size 0x8
-        uint:5 hash_4e4352bd1aaeedfe;
+        uint:5 draftmatchstarttime;
         // offset 0x790, size 0x8
         fixed<8,2> waverespawndelay;
         // offset 0x798, size 0x8
@@ -23357,7 +23357,7 @@ version 5 {
         // offset 0x810, size 0x8
         uint:5 teamscoreperheadshot;
         // offset 0x818, size 0x8
-        uint:7 hash_1908ad844e6c3e37;
+        uint:7 pregamepostroundtime;
         // offset 0x820, size 0x8
         uint:4 pregameitemmaxvotes;
         // offset 0x828, size 0x8
@@ -23399,7 +23399,7 @@ version 5 {
         // offset 0x8b8, size 0x8
         uint:4 pickuptime;
         // offset 0x8c0, size 0x10
-        fixed<14,7> hash_451245a24412d90f;
+        fixed<14,7> controllerparticipationcheckinterval;
         // offset 0x8d0, size 0x20
         int hash_64727525f5957d06;
         // offset 0x8f0, size 0x8
@@ -23491,7 +23491,7 @@ version 5 {
         // offset 0xa80, size 0x8
         uint:7 teamcount;
         // offset 0xa88, size 0x20
-        int hash_7f38d88521da4c79;
+        int spawngroupradius;
         // offset 0xaa8, size 0x8
         uint:4 roundlimit;
         // offset 0xab0, size 0x10
@@ -23619,9 +23619,9 @@ version 5 {
         // offset 0xb35, size 0x1
         bool zmtalismanperkmodsingle;
         // offset 0xb36, size 0x1
-        bool hash_62665aebde32c8ae;
+        bool pregamealwaysshowstreakedit;
         // offset 0xb37, size 0x1
-        bool hash_18c053cae82c1167;
+        bool wagermatchhud;
         // offset 0xb38, size 0x1
         bool hash_6cf5f53d1fbb1066;
         // offset 0xb39, size 0x1
@@ -24107,7 +24107,7 @@ version 4 {
         // offset 0x78, size 0x20
         int deployablebarrierdestroytime;
         // offset 0x98, size 0x10
-        uint:16 hash_6024ee628431415;
+        uint:16 killcamhistoryseconds;
         // offset 0xa8, size 0x20
         uint zmpapenabled;
         // offset 0xc8, size 0x8
@@ -24127,7 +24127,7 @@ version 4 {
         // offset 0x108, size 0x10
         uint:16 zmkillcap;
         // offset 0x118, size 0x8
-        uint:7 hash_16184f2fd4014b39;
+        uint:7 pregamepoststagetime;
         // offset 0x120, size 0x8
         uint:5 pointspermeleekill;
         // offset 0x128, size 0x8
@@ -24155,7 +24155,7 @@ version 4 {
         // offset 0x198, size 0x8
         uint:6 hash_6ae29c8144cb7659;
         // offset 0x1a0, size 0x10
-        uint:10 hash_3c82ffb472a21cac;
+        uint:10 flagcapturegraceperiod;
         // offset 0x1b0, size 0x8
         uint:3 gunselection;
         // offset 0x1b8, size 0x8
@@ -24205,7 +24205,7 @@ version 4 {
         // offset 0x280, size 0x8
         uint:4 carryscore;
         // offset 0x288, size 0x8
-        uint:4 hash_6e49ce7bbe6d3f1f;
+        uint:4 pregamepositionsorttype;
         // offset 0x290, size 0x8
         fixed<8,2> killeventscoremultiplier;
         // offset 0x298, size 0x8
@@ -24263,7 +24263,7 @@ version 4 {
         // offset 0x3b8, size 0x10
         uint:10 playermaxhealth;
         // offset 0x3c8, size 0x8
-        uint:7 hash_1833c853bfe78ffc;
+        uint:7 pregameprestagetime;
         // offset 0x3d0, size 0x8
         uint:5 hash_66a7d866327081eb;
         // offset 0x3d8, size 0x8
@@ -24285,7 +24285,7 @@ version 4 {
         // offset 0x5a8, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x5b0, size 0x8
-        uint:2 hash_47d4aa0161d78e15;
+        uint:2 teamassignment;
         // offset 0x5b8, size 0x8
         uint:2 zmcrawlerstate;
         // offset 0x5c0, size 0x10
@@ -24341,7 +24341,7 @@ version 4 {
         // offset 0x6d0, size 0x8
         uint:8 hash_6a48bbfb703d5c9c;
         // offset 0x6d8, size 0x8
-        uint:4 hash_239b391c77ebf8c1;
+        uint:4 pregamepositionshufflemethod;
         // offset 0x6e0, size 0x8
         uint:5 zmpowerupslimitround;
         // offset 0x6e8, size 0x10
@@ -24363,7 +24363,7 @@ version 4 {
         // offset 0x730, size 0x8
         uint:6 hash_410c5c7c1e60b534;
         // offset 0x738, size 0x8
-        uint:4 hash_552338718ec6d2df;
+        uint:4 maxallowedsecondaryattachments;
         // offset 0x740, size 0x10
         fixed<9,3> maxplayereventsperminute;
         // offset 0x750, size 0x10
@@ -24377,7 +24377,7 @@ version 4 {
         // offset 0x780, size 0x8
         uint:5 teamscoreperkillconfirmed;
         // offset 0x788, size 0x8
-        uint:5 hash_4e4352bd1aaeedfe;
+        uint:5 draftmatchstarttime;
         // offset 0x790, size 0x8
         fixed<8,2> waverespawndelay;
         // offset 0x798, size 0x8
@@ -24407,7 +24407,7 @@ version 4 {
         // offset 0x810, size 0x8
         uint:5 teamscoreperheadshot;
         // offset 0x818, size 0x8
-        uint:7 hash_1908ad844e6c3e37;
+        uint:7 pregamepostroundtime;
         // offset 0x820, size 0x8
         uint:4 pregameitemmaxvotes;
         // offset 0x828, size 0x8
@@ -24449,7 +24449,7 @@ version 4 {
         // offset 0x8b8, size 0x8
         uint:4 pickuptime;
         // offset 0x8c0, size 0x10
-        fixed<14,7> hash_451245a24412d90f;
+        fixed<14,7> controllerparticipationcheckinterval;
         // offset 0x8d0, size 0x20
         int hash_64727525f5957d06;
         // offset 0x8f0, size 0x8
@@ -24541,7 +24541,7 @@ version 4 {
         // offset 0xa80, size 0x8
         uint:7 teamcount;
         // offset 0xa88, size 0x20
-        int hash_7f38d88521da4c79;
+        int spawngroupradius;
         // offset 0xaa8, size 0x8
         uint:4 roundlimit;
         // offset 0xab0, size 0x10
@@ -24669,9 +24669,9 @@ version 4 {
         // offset 0xb35, size 0x1
         bool zmtalismanperkmodsingle;
         // offset 0xb36, size 0x1
-        bool hash_62665aebde32c8ae;
+        bool pregamealwaysshowstreakedit;
         // offset 0xb37, size 0x1
-        bool hash_18c053cae82c1167;
+        bool wagermatchhud;
         // offset 0xb38, size 0x1
         bool zmelixirheadscan;
         // offset 0xb39, size 0x1
@@ -25153,7 +25153,7 @@ version 3 {
         // offset 0x70, size 0x20
         int deployablebarrierdestroytime;
         // offset 0x90, size 0x10
-        uint:16 hash_6024ee628431415;
+        uint:16 killcamhistoryseconds;
         // offset 0xa0, size 0x20
         uint zmpapenabled;
         // offset 0xc0, size 0x8
@@ -25173,7 +25173,7 @@ version 3 {
         // offset 0x100, size 0x10
         uint:16 zmkillcap;
         // offset 0x110, size 0x8
-        uint:7 hash_16184f2fd4014b39;
+        uint:7 pregamepoststagetime;
         // offset 0x118, size 0x8
         uint:5 pointspermeleekill;
         // offset 0x120, size 0x8
@@ -25199,7 +25199,7 @@ version 3 {
         // offset 0x188, size 0x8
         uint:3 ballcount;
         // offset 0x190, size 0x10
-        uint:10 hash_3c82ffb472a21cac;
+        uint:10 flagcapturegraceperiod;
         // offset 0x1a0, size 0x8
         uint:3 gunselection;
         // offset 0x1a8, size 0x8
@@ -25249,7 +25249,7 @@ version 3 {
         // offset 0x270, size 0x8
         uint:4 carryscore;
         // offset 0x278, size 0x8
-        uint:4 hash_6e49ce7bbe6d3f1f;
+        uint:4 pregamepositionsorttype;
         // offset 0x280, size 0x8
         fixed<8,2> killeventscoremultiplier;
         // offset 0x288, size 0x8
@@ -25307,7 +25307,7 @@ version 3 {
         // offset 0x3a8, size 0x10
         uint:10 playermaxhealth;
         // offset 0x3b8, size 0x8
-        uint:7 hash_1833c853bfe78ffc;
+        uint:7 pregameprestagetime;
         // offset 0x3c0, size 0x8
         uint:5 hash_66a7d866327081eb;
         // offset 0x3c8, size 0x8
@@ -25329,7 +25329,7 @@ version 3 {
         // offset 0x598, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x5a0, size 0x8
-        uint:2 hash_47d4aa0161d78e15;
+        uint:2 teamassignment;
         // offset 0x5a8, size 0x8
         uint:2 zmcrawlerstate;
         // offset 0x5b0, size 0x10
@@ -25385,7 +25385,7 @@ version 3 {
         // offset 0x6c0, size 0x8
         uint:8 hash_6a48bbfb703d5c9c;
         // offset 0x6c8, size 0x8
-        uint:4 hash_239b391c77ebf8c1;
+        uint:4 pregamepositionshufflemethod;
         // offset 0x6d0, size 0x8
         uint:5 zmpowerupslimitround;
         // offset 0x6d8, size 0x10
@@ -25405,7 +25405,7 @@ version 3 {
         // offset 0x718, size 0x8
         uint:7 servermsec;
         // offset 0x720, size 0x8
-        uint:4 hash_552338718ec6d2df;
+        uint:4 maxallowedsecondaryattachments;
         // offset 0x728, size 0x10
         fixed<9,3> maxplayereventsperminute;
         // offset 0x738, size 0x10
@@ -25419,7 +25419,7 @@ version 3 {
         // offset 0x768, size 0x8
         uint:5 teamscoreperkillconfirmed;
         // offset 0x770, size 0x8
-        uint:5 hash_4e4352bd1aaeedfe;
+        uint:5 draftmatchstarttime;
         // offset 0x778, size 0x8
         fixed<8,2> waverespawndelay;
         // offset 0x780, size 0x8
@@ -25449,7 +25449,7 @@ version 3 {
         // offset 0x7f8, size 0x8
         uint:5 teamscoreperheadshot;
         // offset 0x800, size 0x8
-        uint:7 hash_1908ad844e6c3e37;
+        uint:7 pregamepostroundtime;
         // offset 0x808, size 0x8
         uint:4 pregameitemmaxvotes;
         // offset 0x810, size 0x8
@@ -25581,7 +25581,7 @@ version 3 {
         // offset 0xa58, size 0x8
         uint:7 teamcount;
         // offset 0xa60, size 0x20
-        int hash_7f38d88521da4c79;
+        int spawngroupradius;
         // offset 0xa80, size 0x8
         uint:4 roundlimit;
         // offset 0xa88, size 0x10
@@ -25709,9 +25709,9 @@ version 3 {
         // offset 0xb0d, size 0x1
         bool zmtalismanperkmodsingle;
         // offset 0xb0e, size 0x1
-        bool hash_62665aebde32c8ae;
+        bool pregamealwaysshowstreakedit;
         // offset 0xb0f, size 0x1
-        bool hash_18c053cae82c1167;
+        bool wagermatchhud;
         // offset 0xb10, size 0x1
         bool zmelixirheadscan;
         // offset 0xb11, size 0x1
@@ -26193,7 +26193,7 @@ version 2 {
         // offset 0x70, size 0x20
         int deployablebarrierdestroytime;
         // offset 0x90, size 0x10
-        uint:16 hash_6024ee628431415;
+        uint:16 killcamhistoryseconds;
         // offset 0xa0, size 0x20
         uint zmpapenabled;
         // offset 0xc0, size 0x8
@@ -26213,7 +26213,7 @@ version 2 {
         // offset 0x100, size 0x10
         uint:16 zmkillcap;
         // offset 0x110, size 0x8
-        uint:7 hash_16184f2fd4014b39;
+        uint:7 pregamepoststagetime;
         // offset 0x118, size 0x8
         uint:5 pointspermeleekill;
         // offset 0x120, size 0x8
@@ -26239,7 +26239,7 @@ version 2 {
         // offset 0x188, size 0x8
         uint:3 ballcount;
         // offset 0x190, size 0x10
-        uint:10 hash_3c82ffb472a21cac;
+        uint:10 flagcapturegraceperiod;
         // offset 0x1a0, size 0x8
         uint:3 gunselection;
         // offset 0x1a8, size 0x8
@@ -26289,7 +26289,7 @@ version 2 {
         // offset 0x270, size 0x8
         uint:4 carryscore;
         // offset 0x278, size 0x8
-        uint:4 hash_6e49ce7bbe6d3f1f;
+        uint:4 pregamepositionsorttype;
         // offset 0x280, size 0x8
         fixed<8,2> killeventscoremultiplier;
         // offset 0x288, size 0x8
@@ -26347,7 +26347,7 @@ version 2 {
         // offset 0x3a8, size 0x10
         uint:10 playermaxhealth;
         // offset 0x3b8, size 0x8
-        uint:7 hash_1833c853bfe78ffc;
+        uint:7 pregameprestagetime;
         // offset 0x3c0, size 0x8
         uint:5 hash_66a7d866327081eb;
         // offset 0x3c8, size 0x8
@@ -26369,7 +26369,7 @@ version 2 {
         // offset 0x598, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x5a0, size 0x8
-        uint:2 hash_47d4aa0161d78e15;
+        uint:2 teamassignment;
         // offset 0x5a8, size 0x8
         uint:2 zmcrawlerstate;
         // offset 0x5b0, size 0x10
@@ -26425,7 +26425,7 @@ version 2 {
         // offset 0x6c0, size 0x8
         uint:8 hash_6a48bbfb703d5c9c;
         // offset 0x6c8, size 0x8
-        uint:4 hash_239b391c77ebf8c1;
+        uint:4 pregamepositionshufflemethod;
         // offset 0x6d0, size 0x8
         uint:5 zmpowerupslimitround;
         // offset 0x6d8, size 0x10
@@ -26445,7 +26445,7 @@ version 2 {
         // offset 0x718, size 0x8
         uint:7 servermsec;
         // offset 0x720, size 0x8
-        uint:4 hash_552338718ec6d2df;
+        uint:4 maxallowedsecondaryattachments;
         // offset 0x728, size 0x10
         fixed<9,3> maxplayereventsperminute;
         // offset 0x738, size 0x10
@@ -26459,7 +26459,7 @@ version 2 {
         // offset 0x768, size 0x8
         uint:5 teamscoreperkillconfirmed;
         // offset 0x770, size 0x8
-        uint:5 hash_4e4352bd1aaeedfe;
+        uint:5 draftmatchstarttime;
         // offset 0x778, size 0x8
         fixed<8,2> waverespawndelay;
         // offset 0x780, size 0x8
@@ -26489,7 +26489,7 @@ version 2 {
         // offset 0x7f8, size 0x8
         uint:5 teamscoreperheadshot;
         // offset 0x800, size 0x8
-        uint:7 hash_1908ad844e6c3e37;
+        uint:7 pregamepostroundtime;
         // offset 0x808, size 0x8
         uint:4 pregameitemmaxvotes;
         // offset 0x810, size 0x8
@@ -26621,7 +26621,7 @@ version 2 {
         // offset 0xa58, size 0x8
         uint:7 teamcount;
         // offset 0xa60, size 0x20
-        int hash_7f38d88521da4c79;
+        int spawngroupradius;
         // offset 0xa80, size 0x8
         uint:4 roundlimit;
         // offset 0xa88, size 0x10
@@ -26749,9 +26749,9 @@ version 2 {
         // offset 0xb0d, size 0x1
         bool zmtalismanperkmodsingle;
         // offset 0xb0e, size 0x1
-        bool hash_62665aebde32c8ae;
+        bool pregamealwaysshowstreakedit;
         // offset 0xb0f, size 0x1
-        bool hash_18c053cae82c1167;
+        bool wagermatchhud;
         // offset 0xb10, size 0x1
         bool zmelixirheadscan;
         // offset 0xb11, size 0x1
@@ -27231,7 +27231,7 @@ version 1 {
         // offset 0x70, size 0x20
         int deployablebarrierdestroytime;
         // offset 0x90, size 0x10
-        uint:16 hash_6024ee628431415;
+        uint:16 killcamhistoryseconds;
         // offset 0xa0, size 0x20
         uint zmpapenabled;
         // offset 0xc0, size 0x8
@@ -27251,7 +27251,7 @@ version 1 {
         // offset 0x100, size 0x10
         uint:16 zmkillcap;
         // offset 0x110, size 0x8
-        uint:7 hash_16184f2fd4014b39;
+        uint:7 pregamepoststagetime;
         // offset 0x118, size 0x8
         uint:5 pointspermeleekill;
         // offset 0x120, size 0x8
@@ -27277,7 +27277,7 @@ version 1 {
         // offset 0x188, size 0x8
         uint:3 ballcount;
         // offset 0x190, size 0x10
-        uint:10 hash_3c82ffb472a21cac;
+        uint:10 flagcapturegraceperiod;
         // offset 0x1a0, size 0x8
         uint:3 gunselection;
         // offset 0x1a8, size 0x8
@@ -27325,7 +27325,7 @@ version 1 {
         // offset 0x268, size 0x8
         uint:4 carryscore;
         // offset 0x270, size 0x8
-        uint:4 hash_6e49ce7bbe6d3f1f;
+        uint:4 pregamepositionsorttype;
         // offset 0x278, size 0x8
         fixed<8,2> killeventscoremultiplier;
         // offset 0x280, size 0x8
@@ -27383,7 +27383,7 @@ version 1 {
         // offset 0x3a0, size 0x10
         uint:10 playermaxhealth;
         // offset 0x3b0, size 0x8
-        uint:7 hash_1833c853bfe78ffc;
+        uint:7 pregameprestagetime;
         // offset 0x3b8, size 0x8
         uint:5 hash_66a7d866327081eb;
         // offset 0x3c0, size 0x8
@@ -27405,7 +27405,7 @@ version 1 {
         // offset 0x590, size 0x8
         uint:7 ticketslostondeath;
         // offset 0x598, size 0x8
-        uint:2 hash_47d4aa0161d78e15;
+        uint:2 teamassignment;
         // offset 0x5a0, size 0x8
         uint:2 zmcrawlerstate;
         // offset 0x5a8, size 0x10
@@ -27461,7 +27461,7 @@ version 1 {
         // offset 0x6b8, size 0x8
         uint:8 hash_6a48bbfb703d5c9c;
         // offset 0x6c0, size 0x8
-        uint:4 hash_239b391c77ebf8c1;
+        uint:4 pregamepositionshufflemethod;
         // offset 0x6c8, size 0x8
         uint:5 zmpowerupslimitround;
         // offset 0x6d0, size 0x10
@@ -27481,7 +27481,7 @@ version 1 {
         // offset 0x710, size 0x8
         uint:7 servermsec;
         // offset 0x718, size 0x8
-        uint:4 hash_552338718ec6d2df;
+        uint:4 maxallowedsecondaryattachments;
         // offset 0x720, size 0x10
         fixed<9,3> maxplayereventsperminute;
         // offset 0x730, size 0x10
@@ -27495,7 +27495,7 @@ version 1 {
         // offset 0x760, size 0x8
         uint:5 teamscoreperkillconfirmed;
         // offset 0x768, size 0x8
-        uint:5 hash_4e4352bd1aaeedfe;
+        uint:5 draftmatchstarttime;
         // offset 0x770, size 0x8
         fixed<8,2> waverespawndelay;
         // offset 0x778, size 0x8
@@ -27525,7 +27525,7 @@ version 1 {
         // offset 0x7f0, size 0x8
         uint:5 teamscoreperheadshot;
         // offset 0x7f8, size 0x8
-        uint:7 hash_1908ad844e6c3e37;
+        uint:7 pregamepostroundtime;
         // offset 0x800, size 0x8
         uint:4 pregameitemmaxvotes;
         // offset 0x808, size 0x8
@@ -27657,7 +27657,7 @@ version 1 {
         // offset 0xa50, size 0x8
         uint:7 teamcount;
         // offset 0xa58, size 0x20
-        int hash_7f38d88521da4c79;
+        int spawngroupradius;
         // offset 0xa78, size 0x8
         uint:4 roundlimit;
         // offset 0xa80, size 0x10
@@ -27785,9 +27785,9 @@ version 1 {
         // offset 0xb05, size 0x1
         bool zmtalismanperkmodsingle;
         // offset 0xb06, size 0x1
-        bool hash_62665aebde32c8ae;
+        bool pregamealwaysshowstreakedit;
         // offset 0xb07, size 0x1
-        bool hash_18c053cae82c1167;
+        bool wagermatchhud;
         // offset 0xb08, size 0x1
         bool zmelixirheadscan;
         // offset 0xb09, size 0x1

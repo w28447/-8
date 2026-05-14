@@ -22,9 +22,9 @@ STRING "<dev string:x38>" 0x62e0
 STRING "<dev string:x39d>" 0x6438
 # zm_escape::function_91d91b76@88
 STRING "<dev string:x3ac>" 0x6460
-# zm_escape::function_71a6c3ea@58
+# zm_escape::super_open_sesame@58
 STRING "<dev string:x3be>" 0x6610
-# zm_escape::function_71a6c3ea@50
+# zm_escape::super_open_sesame@50
 STRING "<dev string:x3ce>" 0x6608
 # zm_escape::function_2b57b5d6@6c
 STRING "<dev string:x3de>" 0x66bc
@@ -63,7 +63,7 @@ DEVBLOCK 0x23fa
 DEVBLOCK 0x628a
 # zm_escape::function_91d91b76@a
 DEVBLOCK 0x63e2
-# zm_escape::function_71a6c3ea@a
+# zm_escape::super_open_sesame@a
 DEVBLOCK 0x65c2
 # zm_escape::function_2b57b5d6@62
 DEVBLOCK 0x66b2

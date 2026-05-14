@@ -2,9 +2,9 @@
     "contracticon": "image#loot06_ui_icon_blackmarket_contracts_stuhlinger",
     "contracttitle": "localized17#menu/contract_stuhlinger",
     "name": "loot_contract_stuhlinger_presunset",
-    "loot06_ui_icon_blackmarket_contracts_stuhlinger_itemdetail:hash_4b258f2c": "image#loot06_ui_icon_blackmarket_contracts_stuhlinger_itemdetail",
+    "loot06_ui_icon_blackmarket_contracts_stuhlinger_itemdetail": "image#loot06_ui_icon_blackmarket_contracts_stuhlinger_itemdetail",
     "contractdescription": "localized17#menu/blackout_character",
     "white": "#white",
-    "loot06_ui_icon_blackmarket_contracts_stuhlinger_tall:hash_1c057e8c": "image#loot06_ui_icon_blackmarket_contracts_stuhlinger_tall",
+    "loot06_ui_icon_blackmarket_contracts_stuhlinger_tall": "image#loot06_ui_icon_blackmarket_contracts_stuhlinger_tall",
     "hash_74d15b181fda49b9:hash_e08fc162": "localized17#hash_74d15b181fda49b9"
 }

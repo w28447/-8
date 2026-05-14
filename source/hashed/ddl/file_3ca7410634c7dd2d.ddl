@@ -17,9 +17,9 @@ version 10 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 3 size 0xc0
@@ -53,7 +53,7 @@ version 10 {
 
     // idx 0 members 14 size 0x4c0
     // offset 0x0, size 0x20
-    int hash_77a6c7a5044549d3;
+    int bitfieldsavg;
     // offset 0x20, size 0x20
     int count;
     // offset 0x40, size 0xc0
@@ -63,15 +63,15 @@ version 10 {
     // offset 0x2f8, size 0x20
     int maxdata;
     // offset 0x318, size 0x20
-    int hash_1946e5ecc3720231;
+    int maxbitfields;
     // offset 0x338, size 0x20
-    int hash_22adbf5291b6f3ff;
+    int mindata;
     // offset 0x358, size 0x20
-    int hash_2b96b7ac2b44ab0c;
+    int fieldsavg;
     // offset 0x378, size 0x20
     int dataavg;
     // offset 0x398, size 0x20
-    int hash_321b73ec8694423f;
+    int minbitfields;
     // offset 0x3b8, size 0x40
     xhash arrayname;
     // offset 0x3f8, size 0xc0

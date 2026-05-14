@@ -3,7 +3,7 @@
     "baseWeapon": "#sniper_mini14_t8",
     "displayname": "#weapon/sniper_mini14_t8",
     "weapon70": "#sniper_mini14_t8",
-    "streamkey": "#sniper_mini14_t8_soundbank",
+    "soundbank": "#sniper_mini14_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -80,7 +80,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_sniper_mini14",
     "weaponIconXCam": "#hash_3d4941641616e95c",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_3df7908c02d25f66"

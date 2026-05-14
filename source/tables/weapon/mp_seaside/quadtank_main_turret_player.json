@@ -1,7 +1,7 @@
 {
     "name": "#quadtank_main_turret_player",
     "baseWeapon": "#quadtank_main_turret_player",
-    "streamkey": "#quadtank_main_turret_player_soundbank",
+    "soundbank": "#quadtank_main_turret_player_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -35,7 +35,7 @@
     "projexplosionsound": "#exp_quad_rocket",
     "sound830": "#hash_36e25fd652fdfac2",
     "sound840": "#hash_7a5614b91f27d6ca",
-    "tunables1": "#hash_621b652f36d11dec",
+    "tunables1": "#quadtank_main_turret_player_tunables",
     "tracers": [
         "#assaultrifle",
         "#assaultrifle_enemy"
@@ -46,6 +46,6 @@
     "fx_bd0": "#weapon/fx_muz_veh_quad_rocket_3p",
     "fx_f00": "#weapon/fx_trail_quad_rocket",
     "normalImpactFX": "#rocket_explosion_quadtank",
-    "exitImpactFX": "#hash_e9050d7b3430366e",
+    "exitImpactFX": "#grenade_exit",
     "normalImpactSounds": "#quadrocket_explode_material"
 }

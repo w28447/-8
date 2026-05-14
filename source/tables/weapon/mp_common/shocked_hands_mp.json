@@ -3,7 +3,7 @@
     "baseWeapon": "#shocked_hands",
     "displayname": "#weapon/bare_hands",
     "weapon70": "#bare_hands",
-    "streamkey": "#shocked_hands_soundbank",
+    "soundbank": "#shocked_hands_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

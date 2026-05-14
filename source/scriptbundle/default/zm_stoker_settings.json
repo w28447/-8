@@ -10,7 +10,7 @@
             "instakilldamagescale": 0.5,
             "weaponid": "#hero_scepter_lv1",
             "weakpointdamagescale": 1,
-            "hash_97b22faa": 1,
+            "instakillweakpointdamagescale": 1,
             "damagescale": 0.5
         },
         {
@@ -18,7 +18,7 @@
             "instakilldamagescale": 0.5,
             "weaponid": "#hero_scepter_lv1",
             "weakpointdamagescale": 1,
-            "hash_97b22faa": 1,
+            "instakillweakpointdamagescale": 1,
             "damagescale": 0.5
         },
         {
@@ -26,7 +26,7 @@
             "instakilldamagescale": 0.5,
             "weaponid": "#hero_scepter_lv1",
             "weakpointdamagescale": 1,
-            "hash_97b22faa": 1,
+            "instakillweakpointdamagescale": 1,
             "damagescale": 0.5
         }
     ],
@@ -48,11 +48,11 @@
     "hash_accd767d": 5,
     "name": "zm_stoker_settings",
     "minhealth": 5000,
-    "hash_2512cf3b": 600,
+    "stokerrangedattackmaxdist": 600,
     "weakpointdamagescale": 3,
     "hash_250a1683": 100,
     "hash_10d707f8": 1000,
-    "hash_97b22faa": 5,
+    "instakillweakpointdamagescale": 5,
     "damagescale": 0.5,
     "category": "#heavy",
     "hash_854eebd": 0.15,

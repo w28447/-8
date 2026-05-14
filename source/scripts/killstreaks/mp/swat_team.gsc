@@ -1,4 +1,3 @@
-#using scripts\killstreaks\ir_strobe_deploy.gsc;
 #using scripts\core_common\ai\archetype_damage_utility;
 #using scripts\core_common\ai\archetype_human;
 #using scripts\core_common\ai\archetype_human_interface;
@@ -28,6 +27,7 @@
 #using scripts\killstreaks\ai\tracking;
 #using scripts\killstreaks\airsupport;
 #using scripts\killstreaks\helicopter_shared;
+#using scripts\killstreaks\ir_strobe_deploy;
 #using scripts\killstreaks\killstreak_bundles;
 #using scripts\killstreaks\killstreakrules_shared;
 #using scripts\killstreaks\killstreaks_shared;

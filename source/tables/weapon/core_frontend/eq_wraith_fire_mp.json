@@ -2,7 +2,7 @@
     "name": "#eq_wraith_fire_mp",
     "baseWeapon": "#eq_wraith_fire",
     "displayname": "#weapon/wraith_fire",
-    "streamkey": "#eq_wraith_fire_soundbank",
+    "soundbank": "#eq_wraith_fire_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "scrstr_1190": "tag_rag_05_animated",
@@ -61,6 +61,6 @@
     "fx_ed8": "#hash_be014af37ce6e996",
     "fx_f00": "#hash_8764c40cff30dca5",
     "bounceImpactFX": "#grenade_bounce",
-    "normalImpactSounds": "#hash_af56ecde75b1d028",
-    "bounceImpactSounds": "#hash_c6d8f2152c519b03"
+    "normalImpactSounds": "#incendiary_grenade_explode_material",
+    "bounceImpactSounds": "#smoke_bounce"
 }

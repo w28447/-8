@@ -4,7 +4,7 @@
     "displayname": "#weapon/sniper_powerbolt_t8",
     "altWeapon": "#sniper_powerbolt_t8_zm",
     "weapon70": "#sniper_powerbolt_t8",
-    "streamkey": "#dualoptic_sniper_powerbolt_t8_soundbank",
+    "soundbank": "#dualoptic_sniper_powerbolt_t8_soundbank",
     "scrstr_8c8": [
         "tag_scope_mms_attach",
         "tag_clan_tag",
@@ -73,7 +73,7 @@
     "sound610": "#hash_5c9addf2686f77e2",
     "sound800": "#hash_17c846b05b70637f",
     "sound810": "#hash_17c846b05b70637f",
-    "tunables1": "#hash_3173ee7a5c37f443",
+    "tunables1": "#dualoptic_sniper_powerbolt_t8_tunables_zm",
     "weaponCamo": "#hash_3a8bb47020a85ef1",
     "cacWeaponXCam": "#ui_cam_cac_sniper_powerbolt",
     "cacAttachmentsXCam": "#ui_cam_cac_sniper_powerbolt",

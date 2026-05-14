@@ -1,7 +1,7 @@
 {
     "name": "#zombie_perk_totem_death_perception",
     "baseWeapon": "#zombie_perk_totem_death_perception",
-    "streamkey": "#zombie_perk_totem_death_perception_soundbank",
+    "soundbank": "#zombie_perk_totem_death_perception_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",

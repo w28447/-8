@@ -43965,7 +43965,7 @@
                         },
                         {
                             "material": "#hash_2d46ff75a89ebe7e",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_5edd14190c7bf792"
@@ -44056,7 +44056,7 @@
                         },
                         {
                             "material": "#hash_2d46ff75a89ebe7e",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_5edd14190c7bf792"
@@ -44147,7 +44147,7 @@
                         },
                         {
                             "material": "#hash_2d46ff75a89ebe7e",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_5edd14190c7bf792"
@@ -44238,7 +44238,7 @@
                         },
                         {
                             "material": "#hash_2d46ff75a89ebe7e",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_5edd14190c7bf792"
@@ -44329,7 +44329,7 @@
                         },
                         {
                             "material": "#hash_2d46ff75a89ebe7e",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_5edd14190c7bf792"
@@ -44337,7 +44337,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 2,
@@ -44350,7 +44350,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 2,
@@ -44363,7 +44363,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 2,
@@ -44376,7 +44376,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 2,
@@ -44389,7 +44389,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 2,
@@ -44420,7 +44420,7 @@
                         },
                         {
                             "material": "#hash_2d46ff75a89ebe7e",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_5edd14190c7bf792"
@@ -44946,7 +44946,7 @@
                         },
                         {
                             "material": "#hash_2d46ff75a89ebe7e",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_5edd14190c7bf792"
@@ -45472,7 +45472,7 @@
                         },
                         {
                             "material": "#hash_2d46ff75a89ebe7e",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -45547,7 +45547,7 @@
                         },
                         {
                             "material": "#hash_2d46ff75a89ebe7e",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -45622,7 +45622,7 @@
                         },
                         {
                             "material": "#hash_2d46ff75a89ebe7e",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -45697,7 +45697,7 @@
                         },
                         {
                             "material": "#hash_2d46ff75a89ebe7e",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -46207,7 +46207,7 @@
                         },
                         {
                             "material": "#hash_2d46ff75a89ebe7e",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -46282,7 +46282,7 @@
                         },
                         {
                             "material": "#hash_2d46ff75a89ebe7e",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -46357,7 +46357,7 @@
                         },
                         {
                             "material": "#hash_2d46ff75a89ebe7e",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -46432,7 +46432,7 @@
                         },
                         {
                             "material": "#hash_2d46ff75a89ebe7e",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -46942,7 +46942,7 @@
                         },
                         {
                             "material": "#hash_2d46ff75a89ebe7e",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_5edd14190c7bf792"
@@ -47033,7 +47033,7 @@
                         },
                         {
                             "material": "#hash_2d46ff75a89ebe7e",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_5edd14190c7bf792"
@@ -47124,7 +47124,7 @@
                         },
                         {
                             "material": "#hash_2d46ff75a89ebe7e",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_5edd14190c7bf792"
@@ -47215,7 +47215,7 @@
                         },
                         {
                             "material": "#hash_2d46ff75a89ebe7e",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_5edd14190c7bf792"
@@ -47741,7 +47741,7 @@
                         },
                         {
                             "material": "#hash_2d46ff75a89ebe7e",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_5edd14190c7bf792"
@@ -47832,7 +47832,7 @@
                         },
                         {
                             "material": "#hash_2d46ff75a89ebe7e",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_5edd14190c7bf792"
@@ -47923,7 +47923,7 @@
                         },
                         {
                             "material": "#hash_2d46ff75a89ebe7e",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_5edd14190c7bf792"
@@ -48014,7 +48014,7 @@
                         },
                         {
                             "material": "#hash_2d46ff75a89ebe7e",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_5edd14190c7bf792"

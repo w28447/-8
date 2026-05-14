@@ -17,9 +17,9 @@ version 3 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 3 size 0xc0
@@ -35,9 +35,9 @@ version 3 {
     // idx 3 members 18 size 0xe98
     struct hash_2f1c32e28bcd6a46 {
         // offset 0x0, size 0x40
-        uint64 hash_7a4b7f92d7e1dc7b;
+        uint64 to_match_lobby_id;
         // offset 0x40, size 0x40
-        uint64 hash_68c4483fed6cf75e;
+        uint64 from_matchmaking_id;
         // offset 0x80, size 0x40
         uint64 hash_740d73d751cf7979;
         // offset 0xc0, size 0x40
@@ -47,21 +47,21 @@ version 3 {
         // offset 0x108, size 0x400
         string(128) process_name;
         // offset 0x508, size 0x40
-        uint64 hash_2b50577fe93b2256;
+        uint64 from_lobby_id;
         // offset 0x548, size 0x20
-        int hash_669ca7a9de06f403;
+        int from_lobby_type;
         // offset 0x568, size 0x8
         byte hash_43081cc1b79588f9;
         // offset 0x570, size 0x20
-        int hash_4e650e9c822cb0ce;
+        int from_game_mode;
         // offset 0x590, size 0x40
-        uint64 hash_438c4b6c6afd6185;
+        uint64 to_lobby_id;
         // offset 0x5d0, size 0x20
-        int hash_7d8e410d4a2c6050;
+        int to_lobby_type;
         // offset 0x5f0, size 0x40
-        uint64 hash_fe1bb65e8de4d51;
+        uint64 to_matchmaking_id;
         // offset 0x630, size 0x20
-        int hash_2459c7bb3080c37f;
+        int to_game_mode;
         // offset 0x650, size 0x800
         string(256) extra_msg;
         // offset 0xe50, size 0x40

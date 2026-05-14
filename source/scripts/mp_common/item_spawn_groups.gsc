@@ -1,6 +1,6 @@
-#using scripts\mp_common\item_spawn_groups_util.gsc;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\struct;
+#using scripts\mp_common\item_spawn_groups_util;
 
 #namespace item_spawn_group;
 

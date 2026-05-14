@@ -4,7 +4,7 @@
     "displayname": "#weapon/sniper_fastrechamber_t8",
     "altWeapon": "#sniper_fastrechamber_t8_zm",
     "weapon70": "#sniper_fastrechamber_t8",
-    "streamkey": "#acog_sniper_fastrechamber_t8_soundbank",
+    "soundbank": "#acog_sniper_fastrechamber_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -74,7 +74,7 @@
     "sound610": "#hash_5c9addf2686f77e2",
     "sound800": "#hash_17c846b05b70637f",
     "sound810": "#hash_17c846b05b70637f",
-    "tunables1": "#hash_6ea9923645ef9a87",
+    "tunables1": "#acog_sniper_fastrechamber_t8_tunables_zm",
     "weaponCamo": "#hash_435b293a45c52000",
     "cacWeaponXCam": "#ui_cam_cac_sniper_fastrechamber",
     "cacAttachmentsXCam": "#ui_cam_cac_sniper_fastrechamber",

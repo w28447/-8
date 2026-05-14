@@ -3,7 +3,7 @@
     "baseWeapon": "#cymbal_monkey",
     "displayname": "#zombie/cymbal_monkey",
     "weapon70": "#zombie_cymbal_monkey",
-    "streamkey": "#cymbal_monkey_soundbank",
+    "soundbank": "#cymbal_monkey_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

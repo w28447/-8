@@ -3,7 +3,7 @@
     "baseWeapon": "#eq_slow_grenade_ph",
     "displayname": "#weapon/slow_grenade",
     "weapon70": "#eq_slow_grenade",
-    "streamkey": "#eq_slow_grenade_ph_soundbank",
+    "soundbank": "#eq_slow_grenade_ph_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",
@@ -69,5 +69,5 @@
     "image_e90": "#t7_hud_icon_menu_concussion_kf",
     "fx_ed8": "#explosions/fx8_exp_grenade_concussion",
     "bounceImpactFX": "#grenade_bounce",
-    "bounceImpactSounds": "#hash_c6d8f2152c519b03"
+    "bounceImpactSounds": "#smoke_bounce"
 }

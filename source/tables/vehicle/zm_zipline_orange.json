@@ -18,6 +18,6 @@
     "attackSecondaryButtonName": "BUTTON_RSHLDR",
     "bundle": {
         "healthpoolsize": 650,
-        "hash_7812fce8": 2
+        "healthpools": 2
     }
 }

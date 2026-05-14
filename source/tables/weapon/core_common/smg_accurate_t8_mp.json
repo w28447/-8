@@ -3,7 +3,7 @@
     "baseWeapon": "#smg_accurate_t8",
     "displayname": "#weapon/smg_accurate_t8",
     "weapon70": "#smg_accurate_t8",
-    "streamkey": "#smg_accurate_t8_soundbank",
+    "soundbank": "#smg_accurate_t8_soundbank",
     "scrstr_8c8": [
         "tag_front_sights_off",
         "tag_rear_sights_off",
@@ -78,7 +78,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_smg_accurate",
     "weaponIconXCam": "#hash_3acdd9333263ab42",
     "attachments": [
-        "#hash_f459a0af8e8f912b",
+        "#defaultattachment",
         "#acog"
     ],
     "attachmentUniques": [

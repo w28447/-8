@@ -1,7 +1,7 @@
 {
     "name": "#zombie_ai_defaultmelee",
     "baseWeapon": "#zombie_ai_defaultmelee",
-    "streamkey": "#zombie_ai_defaultmelee_soundbank",
+    "soundbank": "#zombie_ai_defaultmelee_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

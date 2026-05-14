@@ -4,7 +4,7 @@
     "displayname": "#weapon/smg_capacity_t8",
     "xhash_60": "#hash_687c2aab691854e5",
     "weapon70": "#smg_capacity_t8",
-    "streamkey": "#smg_capacity_t8_soundbank",
+    "soundbank": "#smg_capacity_t8_soundbank",
     "scrstr_8c8": [
         "tag_sights_off",
         "tag_camo_darkmatter",
@@ -77,7 +77,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_smg_capacity",
     "weaponIconXCam": "#ui_cam_icon_smg_capacity",
     "attachments": [
-        "#hash_f459a0af8e8f912b",
+        "#defaultattachment",
         "#acog_smg_wz"
     ],
     "attachmentUniques": [

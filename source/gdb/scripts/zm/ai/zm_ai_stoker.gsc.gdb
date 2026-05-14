@@ -4,9 +4,9 @@ CHECKSUM 0xb88561d1
 ######################################################
 ####################  DEV STRINGS  ###################
 ######################################################
-# zm_ai_stoker::function_f01e64d6@14
+# zm_ai_stoker::stokerrangedattackanim@14
 STRING "<dev string:x124>" 0x2dd4
-# zm_ai_stoker::function_36903815@14
+# zm_ai_stoker::stokerrangedattackintroanim@14
 STRING "<dev string:x13f>" 0x2e0c
 # zm_ai_stoker::function_dee90338@14
 STRING "<dev string:x160>" 0x2ebc
@@ -123,9 +123,9 @@ DEVBLOCK 0x2c32
 DEVBLOCK 0x2d3a
 # zm_ai_stoker::function_b7fe306e@a
 DEVBLOCK 0x2d72
-# zm_ai_stoker::function_f01e64d6@a
+# zm_ai_stoker::stokerrangedattackanim@a
 DEVBLOCK 0x2dca
-# zm_ai_stoker::function_36903815@a
+# zm_ai_stoker::stokerrangedattackintroanim@a
 DEVBLOCK 0x2e02
 # zm_ai_stoker::function_dee90338@a
 DEVBLOCK 0x2eb2

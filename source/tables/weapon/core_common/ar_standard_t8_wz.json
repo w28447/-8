@@ -4,7 +4,7 @@
     "displayname": "#weapon/ar_standard_t8",
     "xhash_60": "#hash_6d0971e4ab0042f8",
     "weapon70": "#ar_standard_t8",
-    "streamkey": "#ar_standard_t8_soundbank",
+    "soundbank": "#ar_standard_t8_soundbank",
     "scrstr_8c8": [
         "tag_camo_darkmatter",
         "tag_camo_diamond",
@@ -77,7 +77,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_ar_standard",
     "weaponIconXCam": "#ui_cam_icon_ar_standard",
     "attachments": [
-        "#hash_f459a0af8e8f912b",
+        "#defaultattachment",
         "#acog_wz"
     ],
     "attachmentUniques": [

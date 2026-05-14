@@ -33,7 +33,7 @@ DEVBLOCK 0x1cc8
 DEVBLOCK 0x1ccc
 # mansion_storage::function_c63076b4@252
 DEVBLOCK 0x223a
-# mansion_storage::function_ffc4a06a@15a
+# mansion_storage::storage_billiards_init_step_1@15a
 DEVBLOCK 0x2c7a
 # mansion_storage::function_cf048af@178
 DEVBLOCK 0x3158

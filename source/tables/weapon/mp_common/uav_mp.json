@@ -3,7 +3,7 @@
     "baseWeapon": "#uav",
     "displayname": "#killstreak/uav",
     "weapon70": "#uav",
-    "streamkey": "#uav_soundbank",
+    "soundbank": "#uav_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",

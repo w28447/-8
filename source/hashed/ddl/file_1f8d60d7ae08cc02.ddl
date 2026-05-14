@@ -17,9 +17,9 @@ version 2 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 3 size 0xc0
@@ -59,7 +59,7 @@ version 2 {
     // offset 0x100, size 0x1f8
     telemetry_header telemetry;
     // offset 0x2f8, size 0x8
-    byte hash_1173e4be95b4f8af;
+    byte revive_attempts;
     // offset 0x300, size 0x20
     uint end_time;
     // offset 0x320, size 0x20
@@ -69,13 +69,13 @@ version 2 {
     // offset 0x400, size 0x10
     uint:16 damage;
     // offset 0x410, size 0x10
-    uint:16 hash_49e1674a9d40893a;
+    uint:16 reviver_damage;
     // offset 0x420, size 0x1
     bool death;
     // offset 0x421, size 0x1
     bool bleed_out;
     // offset 0x422, size 0x1
-    bool hash_54a1c9c5f993e32f;
+    bool reviver_death;
     // offset 0x423, size 0x5
     uint:1 __pad[5];
 }

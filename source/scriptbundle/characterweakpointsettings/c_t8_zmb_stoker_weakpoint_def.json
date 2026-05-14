@@ -5,7 +5,7 @@
             "hash_641ce20e": 1,
             "hash_8223b0cf": 0,
             "type": "#armor",
-            "hash_51e8b151": "j_clavicle_ri",
+            "hittag1": "j_clavicle_ri",
             "activebydefault": 1,
             "hitradius": 12,
             "health": 0.1
@@ -15,7 +15,7 @@
             "hash_641ce20e": 1,
             "hash_8223b0cf": 0,
             "type": "#armor",
-            "hash_51e8b151": "j_clavicle_le",
+            "hittag1": "j_clavicle_le",
             "activebydefault": 1,
             "hitradius": 12,
             "health": 0.1
@@ -25,7 +25,7 @@
             "hash_641ce20e": 1,
             "hash_8223b0cf": 0,
             "type": "#armor",
-            "hash_51e8b151": "j_head",
+            "hittag1": "j_head",
             "activebydefault": 1,
             "hitradius": 10,
             "health": 0.1
@@ -43,7 +43,7 @@
             "hitloc": "left_arm_upper",
             "hash_8223b0cf": 0,
             "type": "#weakpoint",
-            "hash_51e8b151": "j_clavicle_le",
+            "hittag1": "j_clavicle_le",
             "hitradius": 12,
             "health": 1
         },
@@ -51,7 +51,7 @@
             "hitloc": "right_arm_upper",
             "hash_8223b0cf": 0,
             "type": "#weakpoint",
-            "hash_51e8b151": "j_clavicle_ri",
+            "hittag1": "j_clavicle_ri",
             "hitradius": 12,
             "health": 1
         },
@@ -59,7 +59,7 @@
             "hitloc": "head",
             "hash_8223b0cf": 0,
             "type": "#weakpoint",
-            "hash_51e8b151": "j_head",
+            "hittag1": "j_head",
             "hitradius": 10,
             "health": 1
         }

@@ -8,7 +8,7 @@ server,#scripts/core_common/ai/archetype_catalyst.gsc
 server,#scripts/core_common/ai/archetype_zombie_interface.gsc
 server,#scripts/core_common/ai/zombie.gsc
 server,#scripts/core_common/ai/archetype_nosferatu.gsc
-server,#scripts\core_common\ai\archetype_nosferatu_interface.gsc
+server,#scripts/core_common/ai/archetype_nosferatu_interface.gsc
 server,#scripts/zm/ai/zm_ai_werewolf.gsc
 server,#scripts/core_common/ai/archetype_blight_father_interface.gsc
 server,#scripts/core_common/ai/archetype_catalyst_interface.gsc

@@ -2,7 +2,7 @@
     "name": "#hash_4fc9fe45244cb400",
     "baseWeapon": "#hash_2ea46ca74ebdfcac",
     "displayname": "#weapon/lmg_arav",
-    "streamkey": "#hash_7d91e74c3e238a5e",
+    "soundbank": "#hash_7d91e74c3e238a5e",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -73,8 +73,8 @@
     "fx_c88": "#hash_d797e5e407d06708",
     "fx_c90": "#hash_d797e5e407d06708",
     "fx_c98": "#hash_d797e5e407d06708",
-    "normalImpactFX": "#hash_fee0671def6af7a4",
-    "exitImpactFX": "#hash_d6ef4fc6c00cc18e",
+    "normalImpactFX": "#bullet_xlarge_enter",
+    "exitImpactFX": "#bullet_large_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

@@ -17,9 +17,9 @@ version 16 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 3 size 0xc0
@@ -35,7 +35,7 @@ version 16 {
     // idx 3 members 3 size 0xc0
     struct hash_718ac4f1b61972b0 {
         // offset 0x0, size 0x40
-        uint64 hash_433bf14ac8ee287;
+        uint64 cached_cohort_id;
         // offset 0x40, size 0x40
         uint64 cohort_id;
         // offset 0x80, size 0x40

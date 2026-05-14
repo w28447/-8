@@ -4,7 +4,7 @@
     "displayname": "#zmweapon/shield_sword_turret",
     "altWeapon": "#zhield_zword_dw_zm",
     "weapon70": "#zhield_zword_dw",
-    "streamkey": "#zhield_zword_turret_soundbank",
+    "soundbank": "#zhield_zword_turret_soundbank",
     "worldModelTagRight": "tag_weapon_left",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -64,9 +64,9 @@
     "fireRumble": "#pistol_fire",
     "fx_c08": "#hash_7665ecbd288a84d7",
     "normalImpactFX": "#hash_7663a437edf20e34",
-    "exitImpactFX": "#hash_83b4b1d145ec9892",
-    "normalImpactSounds": "#hash_f8e291a8acdea947",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea",
+    "exitImpactFX": "#bullet_small_exit",
+    "normalImpactSounds": "#bullet_explode",
+    "exitImpactSounds": "#bullet_exit",
     "#hash_21329beb": [
         {
             "model": "#hash_2ade4f6bd9de10b4"

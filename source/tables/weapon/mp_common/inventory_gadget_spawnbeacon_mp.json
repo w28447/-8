@@ -3,7 +3,7 @@
     "baseWeapon": "#inventory_gadget_spawnbeacon",
     "displayname": "#spawnbeacon/name",
     "weapon70": "#gadget_spawnbeacon",
-    "streamkey": "#inventory_gadget_spawnbeacon_soundbank",
+    "soundbank": "#inventory_gadget_spawnbeacon_soundbank",
     "scrstr_8c8": [
         "tag_equipment_hero"
     ],

@@ -37,28 +37,28 @@
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "menu/hud_vehicle_switch_camera:hash_4be786c9": "localized17#menu/hud_vehicle_switch_camera",
+                        "menu/hud_vehicle_switch_camera": "localized17#menu/hud_vehicle_switch_camera",
                         "hash_334a8e60": "left",
                         "prompt": "+gostand"
                     },
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "menu/hud_vehicle_exit:hash_4be786c9": "localized17#menu/hud_vehicle_exit",
+                        "menu/hud_vehicle_exit": "localized17#menu/hud_vehicle_exit",
                         "hash_334a8e60": "left",
                         "prompt": "+activate"
                     },
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "menu/hud_vehicle_fire_machine_gun:hash_4be786c9": "localized17#menu/hud_vehicle_fire_machine_gun",
+                        "menu/hud_vehicle_fire_machine_gun": "localized17#menu/hud_vehicle_fire_machine_gun",
                         "hash_334a8e60": "left",
                         "prompt": "+vehicleattack"
                     },
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "menu/hud_vehicle_zoom:hash_4be786c9": "localized17#menu/hud_vehicle_zoom",
+                        "menu/hud_vehicle_zoom": "localized17#menu/hud_vehicle_zoom",
                         "hash_334a8e60": "left",
                         "prompt": "+speed_throw"
                     }
@@ -75,42 +75,42 @@
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "menu/hud_vehicle_switch_camera:hash_4be786c9": "localized17#menu/hud_vehicle_switch_camera",
+                        "menu/hud_vehicle_switch_camera": "localized17#menu/hud_vehicle_switch_camera",
                         "hash_334a8e60": "left",
                         "prompt": "+gostand"
                     },
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "menu/hud_vehicle_exit:hash_4be786c9": "localized17#menu/hud_vehicle_exit",
+                        "menu/hud_vehicle_exit": "localized17#menu/hud_vehicle_exit",
                         "hash_334a8e60": "left",
                         "prompt": "+activate"
                     },
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "menu/hud_vehicle_move:hash_4be786c9": "localized17#menu/hud_vehicle_move",
+                        "menu/hud_vehicle_move": "localized17#menu/hud_vehicle_move",
                         "hash_334a8e60": "left",
                         "prompt": "+smoke"
                     },
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "menu/hud_vehicle_fire_machine_gun:hash_4be786c9": "localized17#menu/hud_vehicle_fire_machine_gun",
+                        "menu/hud_vehicle_fire_machine_gun": "localized17#menu/hud_vehicle_fire_machine_gun",
                         "hash_334a8e60": "left",
                         "prompt": "+vehicleattack"
                     },
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "menu/hud_vehicle_fire_rockets:hash_4be786c9": "localized17#menu/hud_vehicle_fire_rockets",
+                        "menu/hud_vehicle_fire_rockets": "localized17#menu/hud_vehicle_fire_rockets",
                         "hash_334a8e60": "left",
                         "prompt": "+vehicleattacksecond"
                     },
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "menu/hud_vehicle_zoom:hash_4be786c9": "localized17#menu/hud_vehicle_zoom",
+                        "menu/hud_vehicle_zoom": "localized17#menu/hud_vehicle_zoom",
                         "hash_334a8e60": "left",
                         "prompt": "+speed_throw"
                     },
@@ -130,6 +130,6 @@
             }
         ],
         "healthpoolsize": 650,
-        "hash_7812fce8": 2
+        "healthpools": 2
     }
 }

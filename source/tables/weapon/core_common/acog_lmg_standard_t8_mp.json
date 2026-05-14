@@ -4,7 +4,7 @@
     "displayname": "#weapon/lmg_standard_t8",
     "altWeapon": "#lmg_standard_t8_mp",
     "weapon70": "#lmg_standard_t8",
-    "streamkey": "#acog_lmg_standard_t8_soundbank",
+    "soundbank": "#acog_lmg_standard_t8_soundbank",
     "scrstr_8c8": [
         "tag_sights_rear_off",
         "tag_sights_front_off",
@@ -73,7 +73,7 @@
     "sound610": "#hash_209cb2974ae55ec0",
     "sound800": "#hash_5ee962527afebfb1",
     "sound810": "#hash_5ee962527afebfb1",
-    "tunables1": "#hash_3d3b770ce079be8e",
+    "tunables1": "#acog_lmg_standard_t8_tunables_mp",
     "weaponCamo": "#hash_3887ca3fe780525f",
     "cacWeaponXCam": "#ui_cam_cac_lmg_standard",
     "cacAttachmentsXCam": "#ui_cam_cac_lmg_standard",

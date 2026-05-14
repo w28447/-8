@@ -3,7 +3,7 @@
     "baseWeapon": "#hero_scepter_lv1",
     "displayname": "#weapon/hero_scepter",
     "weapon70": "#hero_scepter_lv1",
-    "streamkey": "#hero_scepter_lv1_soundbank",
+    "soundbank": "#hero_scepter_lv1_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

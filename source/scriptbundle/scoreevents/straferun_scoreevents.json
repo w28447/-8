@@ -1,5 +1,5 @@
 {
-    "warthog_kill": "#warthog_kill",
+    "killscoreevent": "#warthog_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",

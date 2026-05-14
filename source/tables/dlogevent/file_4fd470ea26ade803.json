@@ -110,7 +110,7 @@
     "members": [
         {
             "name": "#passenger_deaths",
-            "scrName": "#raw/russian/sound/vox/scripted/isa/vox_isa_encourage_lost_01.SN65.xenon.snd",
+            "scrName": "#passenger_deaths",
             "type": "UINT16"
         },
         {
@@ -171,12 +171,12 @@
         },
         {
             "name": "#start_pos_y",
-            "scrName": "#hash_1ff15d37",
+            "scrName": "#start_pos_y",
             "type": "FLOAT"
         },
         {
             "name": "#start_pos_x",
-            "scrName": "#hash_2dbaf8ca",
+            "scrName": "#start_pos_x",
             "type": "FLOAT"
         },
         {
@@ -206,12 +206,12 @@
         },
         {
             "name": "#end_pos_x",
-            "scrName": "#hash_16f7d5d0",
+            "scrName": "#end_pos_x",
             "type": "FLOAT"
         },
         {
             "name": "#end_pos_y",
-            "scrName": "#hash_4ba3155",
+            "scrName": "#end_pos_y",
             "type": "FLOAT"
         },
         {

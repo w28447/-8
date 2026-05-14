@@ -5,7 +5,7 @@
             "instakilldamagescale": 0.3,
             "weaponid": "#ww_blundergat_t8",
             "weakpointdamagescale": 0.3,
-            "hash_97b22faa": 0.3,
+            "instakillweakpointdamagescale": 0.3,
             "damagescale": 0.3
         },
         {
@@ -13,7 +13,7 @@
             "instakilldamagescale": 0.3,
             "weaponid": "#ww_blundergat_t8_upgraded",
             "weakpointdamagescale": 0.3,
-            "hash_97b22faa": 0.3,
+            "instakillweakpointdamagescale": 0.3,
             "damagescale": 0.3
         },
         {
@@ -21,7 +21,7 @@
             "instakilldamagescale": 0.3,
             "weaponid": "#ww_blundergat_acid_t8",
             "weakpointdamagescale": 0.3,
-            "hash_97b22faa": 0.3,
+            "instakillweakpointdamagescale": 0.3,
             "damagescale": 0.3
         },
         {
@@ -29,7 +29,7 @@
             "instakilldamagescale": 0.3,
             "weaponid": "#ww_blundergat_acid_t8_upgraded",
             "weakpointdamagescale": 0.3,
-            "hash_97b22faa": 0.3,
+            "instakillweakpointdamagescale": 0.3,
             "damagescale": 0.3
         },
         {
@@ -37,7 +37,7 @@
             "instakilldamagescale": 0.3,
             "weaponid": "#ww_blundergat_fire_t8",
             "weakpointdamagescale": 0.3,
-            "hash_97b22faa": 0.3,
+            "instakillweakpointdamagescale": 0.3,
             "damagescale": 0.3
         },
         {
@@ -45,7 +45,7 @@
             "instakilldamagescale": 0.3,
             "weaponid": "#ww_blundergat_fire_t8_upgraded",
             "weakpointdamagescale": 0.3,
-            "hash_97b22faa": 0.3,
+            "instakillweakpointdamagescale": 0.3,
             "damagescale": 0.3
         },
         {
@@ -53,7 +53,7 @@
             "instakilldamagescale": 0.3,
             "weaponid": "#ww_blundergat_fire_t8_unfinished",
             "weakpointdamagescale": 0.3,
-            "hash_97b22faa": 0.3,
+            "instakillweakpointdamagescale": 0.3,
             "damagescale": 0.3
         },
         {
@@ -61,7 +61,7 @@
             "instakilldamagescale": 0.3,
             "weaponid": "#hash_193835f0385edbc3",
             "weakpointdamagescale": 0.3,
-            "hash_97b22faa": 0.3,
+            "instakillweakpointdamagescale": 0.3,
             "damagescale": 0.3
         },
         {
@@ -69,7 +69,7 @@
             "instakilldamagescale": 0.3,
             "weaponid": "#hash_7463389ec66d9d94",
             "weakpointdamagescale": 0.3,
-            "hash_97b22faa": 0.3,
+            "instakillweakpointdamagescale": 0.3,
             "damagescale": 0.3
         },
         {
@@ -77,7 +77,7 @@
             "instakilldamagescale": 0.3,
             "weaponid": "#hash_494f5501b3f8e1e9",
             "weakpointdamagescale": 0.3,
-            "hash_97b22faa": 0.3,
+            "instakillweakpointdamagescale": 0.3,
             "damagescale": 0.3
         },
         {
@@ -85,7 +85,7 @@
             "instakilldamagescale": 0.3,
             "weaponid": "#hash_3de0926b89369160",
             "weakpointdamagescale": 0.3,
-            "hash_97b22faa": 0.3,
+            "instakillweakpointdamagescale": 0.3,
             "damagescale": 0.3
         },
         {
@@ -93,7 +93,7 @@
             "instakilldamagescale": 0.12,
             "weaponid": "#hero_flamethrower_t8_lv1",
             "weakpointdamagescale": 0.12,
-            "hash_97b22faa": 0.12,
+            "instakillweakpointdamagescale": 0.12,
             "damagescale": 0.12
         },
         {
@@ -101,7 +101,7 @@
             "instakilldamagescale": 0.16,
             "weaponid": "#hero_flamethrower_t8_lv2",
             "weakpointdamagescale": 0.16,
-            "hash_97b22faa": 0.16,
+            "instakillweakpointdamagescale": 0.16,
             "damagescale": 0.16
         },
         {
@@ -109,7 +109,7 @@
             "instakilldamagescale": 0.2,
             "weaponid": "#hero_flamethrower_t8_lv3",
             "weakpointdamagescale": 0.2,
-            "hash_97b22faa": 0.2,
+            "instakillweakpointdamagescale": 0.2,
             "damagescale": 0.2
         },
         {
@@ -117,7 +117,7 @@
             "instakilldamagescale": 1,
             "weaponid": "#hero_gravityspikes_t8_lv1",
             "weakpointdamagescale": 1,
-            "hash_97b22faa": 1,
+            "instakillweakpointdamagescale": 1,
             "damagescale": 1
         },
         {
@@ -125,7 +125,7 @@
             "instakilldamagescale": 1,
             "weaponid": "#hero_gravityspikes_t8_lv2",
             "weakpointdamagescale": 1,
-            "hash_97b22faa": 1,
+            "instakillweakpointdamagescale": 1,
             "damagescale": 1
         },
         {
@@ -133,7 +133,7 @@
             "instakilldamagescale": 1,
             "weaponid": "#hero_gravityspikes_t8_lv3",
             "weakpointdamagescale": 1,
-            "hash_97b22faa": 1,
+            "instakillweakpointdamagescale": 1,
             "damagescale": 1
         },
         {
@@ -141,7 +141,7 @@
             "instakilldamagescale": 0.29,
             "weaponid": "#hero_katana_t8_lv1",
             "weakpointdamagescale": 0.29,
-            "hash_97b22faa": 0.29,
+            "instakillweakpointdamagescale": 0.29,
             "damagescale": 0.29
         },
         {
@@ -149,7 +149,7 @@
             "instakilldamagescale": 0.29,
             "weaponid": "#hero_katana_t8_lv2",
             "weakpointdamagescale": 0.29,
-            "hash_97b22faa": 0.29,
+            "instakillweakpointdamagescale": 0.29,
             "damagescale": 0.29
         },
         {
@@ -157,7 +157,7 @@
             "instakilldamagescale": 0.29,
             "weaponid": "#hero_katana_t8_lv3",
             "weakpointdamagescale": 0.29,
-            "hash_97b22faa": 0.29,
+            "instakillweakpointdamagescale": 0.29,
             "damagescale": 0.29
         },
         {
@@ -165,7 +165,7 @@
             "instakilldamagescale": 0.1,
             "weaponid": "#hero_minigun_t8_lv1",
             "weakpointdamagescale": 0.1,
-            "hash_97b22faa": 0.1,
+            "instakillweakpointdamagescale": 0.1,
             "damagescale": 0.1
         },
         {
@@ -173,7 +173,7 @@
             "instakilldamagescale": 0.1,
             "weaponid": "#hero_minigun_t8_lv2",
             "weakpointdamagescale": 0.1,
-            "hash_97b22faa": 0.1,
+            "instakillweakpointdamagescale": 0.1,
             "damagescale": 0.1
         },
         {
@@ -181,7 +181,7 @@
             "instakilldamagescale": 0.1,
             "weaponid": "#hero_minigun_t8_lv3",
             "weakpointdamagescale": 0.1,
-            "hash_97b22faa": 0.1,
+            "instakillweakpointdamagescale": 0.1,
             "damagescale": 0.1
         }
     ],
@@ -196,13 +196,13 @@
     "hash_af3fff17": 16,
     "hash_58b424ec": 240,
     "name": "zm_brutus_special_settings",
-    "hash_7ea758e1": 50,
+    "shockattackdamage": 50,
     "hash_da7f4645": 99,
     "minhealth": 500,
     "weakpointdamagescale": 0.1,
     "hash_250a1683": 1000,
     "hash_d0d2e3ce": 4500,
-    "hash_97b22faa": 0.1,
+    "instakillweakpointdamagescale": 0.1,
     "damagescale": 0.1,
     "category": "#boss",
     "hash_854eebd": 0.75,

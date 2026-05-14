@@ -4,7 +4,7 @@
     "displayname": "#weapon/sniper_powerbolt_t8",
     "altWeapon": "#sniper_powerbolt_t8_mp",
     "weapon70": "#sniper_powerbolt_t8",
-    "streamkey": "#dualoptic_sniper_powerbolt_t8_soundbank",
+    "soundbank": "#dualoptic_sniper_powerbolt_t8_soundbank",
     "scrstr_8c8": [
         "tag_scope",
         "tag_scope_mount",

@@ -178,7 +178,7 @@ STRING "<dev string:x95c>" 0x779c
 STRING "<dev string:x9a0>" 0x91ac
 # zm_perks::function_f5da744e@6e4
 STRING "<dev string:x9d7>" 0x91f4
-# zm_perks::function_9bdf581f@87c
+# zm_perks::give_perk_vapor@87c
 STRING "<dev string:xa13>" 0xa3ac
 # zm_perks::function_59fb56ff@24 zm_perks::function_59fb56ff@130
 STRING "<dev string:xa3b>" 0xab84 0xac90
@@ -355,9 +355,9 @@ DEVBLOCK 0x91a4
 DEVBLOCK 0x91ec
 # zm_perks::function_d11d4952@1bc
 DEVBLOCK 0x999c
-# zm_perks::function_9bdf581f@842
+# zm_perks::give_perk_vapor@842
 DEVBLOCK 0xa372
-# zm_perks::function_9bdf581f@874
+# zm_perks::give_perk_vapor@874
 DEVBLOCK 0xa3a4
 # zm_perks::function_59fb56ff@1c
 DEVBLOCK 0xab7c

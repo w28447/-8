@@ -2,7 +2,7 @@
     "name": "#equip_sprout_zm",
     "baseWeapon": "#equip_sprout",
     "displayname": "#hash_547c99b87a663c09",
-    "streamkey": "#equip_sprout_soundbank",
+    "soundbank": "#equip_sprout_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

@@ -1,7 +1,7 @@
 {
     "name": "#knife_zm",
     "baseWeapon": "#knife",
-    "streamkey": "#knife_soundbank",
+    "soundbank": "#knife_soundbank",
     "worldModelTagRight": "tag_weapon_left",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -40,5 +40,5 @@
     "meleeImpactRumble": "#defaultweapon_melee",
     "fx_f60": "#impacts/fx_flesh_hit_knife_zmb",
     "fx_f68": "#impacts/fx_flesh_hit_knife_zmb",
-    "normalImpactFX": "#hash_a5f3e55b8e1070ab"
+    "normalImpactFX": "#knife_large_enter"
 }

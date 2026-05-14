@@ -17,9 +17,9 @@ version 2 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 3 size 0xc0
@@ -37,7 +37,7 @@ version 2 {
         // offset 0x0, size 0x20
         int hash_6000a3f7b99ebc4b;
         // offset 0x20, size 0x20
-        uint hash_fc6534eb8b0b9e5;
+        uint get_host_by_names_count;
         // offset 0x40, size 0x8
         int:8 result;
         // offset 0x48, size 0x20
@@ -47,9 +47,9 @@ version 2 {
     // idx 4 members 2 size 0x30
     struct hash_2f7ae21344d86dba {
         // offset 0x0, size 0x20
-        uint hash_585f73b9a8dbaec2;
+        uint local_addr;
         // offset 0x20, size 0x10
-        uint:16 hash_1a03a43c6642e4d6;
+        uint:16 local_port;
     };
 
     // idx 5 members 3 size 0x140
@@ -57,7 +57,7 @@ version 2 {
         // offset 0x0, size 0x20
         uint addr;
         // offset 0x20, size 0x20
-        uint hash_5327ec0dac3839c4;
+        uint time_to_resolution_ms;
         // offset 0x40, size 0x100
         string(32) hostname;
     };
@@ -65,7 +65,7 @@ version 2 {
     // idx 6 members 5 size 0x120
     struct hash_6a65101a136eab93 {
         // offset 0x0, size 0x40
-        uint64 hash_6bdd7ebe59310aa2;
+        uint64 match_making_id;
         // offset 0x40, size 0x40
         uint64 lobby_id;
         // offset 0x80, size 0x20
@@ -89,14 +89,14 @@ version 2 {
     // offset 0x0, size 0x1f8
     telemetry_header telemetry;
     // offset 0x1f8, size 0xa00
-    hash_6b847dfe653f9716 hash_1fa61848c108ccd[8];
+    hash_6b847dfe653f9716 get_host_by_names[8];
     // offset 0xbf8, size 0x180
-    hash_2f7ae21344d86dba hash_277e88224edc9564[8];
+    hash_2f7ae21344d86dba local_addr_array[8];
     // offset 0xd78, size 0xc0
     client_header client;
     // offset 0xe38, size 0x120
     hash_6a65101a136eab93 header;
     // offset 0xf58, size 0x68
-    hash_4faa964964a05e35 hash_78a43a2161d0c844;
+    hash_4faa964964a05e35 net_result;
 }
 

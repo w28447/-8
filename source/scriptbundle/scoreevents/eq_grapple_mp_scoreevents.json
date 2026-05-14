@@ -1,14 +1,14 @@
 {
-    "grapple_gun_multikill_2": "#grapple_gun_multikill_2",
-    "grapple_gun_multikill_2": "#grapple_gun_multikill_2",
+    "multikill2scoreevent": "#grapple_gun_multikill_2",
+    "multikill6scoreevent": "#grapple_gun_multikill_2",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "grapple_gun_activated": "#grapple_gun_activated",
     "vmtype": "both",
-    "grapple_gun_multikill_2": "#grapple_gun_multikill_2",
+    "multikill4scoreevent": "#grapple_gun_multikill_2",
     "name": "eq_grapple_mp_scoreevents",
     "customsettingstype": "ability",
-    "grapple_gun_multikill_2": "#grapple_gun_multikill_2",
+    "multikill5scoreevent": "#grapple_gun_multikill_2",
     "hash_fcd2ff3a": 1,
-    "grapple_gun_multikill_2": "#grapple_gun_multikill_2"
+    "multikill3scoreevent": "#grapple_gun_multikill_2"
 }

@@ -4,7 +4,7 @@
     "displayname": "#hash_1cba478a3a2ba155",
     "weapon70": "#hero_gravityspikes_t8_lv1",
     "dualwieldWeaponName": "#hero_gravityspikes_t8_lv3_mp",
-    "streamkey": "#hero_gravityspikes_t8_lh_lv3_soundbank",
+    "soundbank": "#hero_gravityspikes_t8_lh_lv3_soundbank",
     "worldModelTagRight": "tag_weapon_left",
     "worldModelTagLeft": "tag_weapon_right",
     "stowedModelTag": "tag_stowed_back",

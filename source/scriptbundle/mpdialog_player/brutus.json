@@ -19,7 +19,7 @@
     "characterselect": "#hash_53be9ccd54be539e",
     "name": "brutus",
     "hash_1d11fd4fddf891f8:hash_207908de": "#hash_1d11fd4fddf891f8",
-    "hash_7a92b36622e8b94f:hash_b801796c": "#hash_7a92b36622e8b94f",
+    "exertpainpunched": "#hash_7a92b36622e8b94f",
     "boostloss": "#hash_1f9849bdf4b7f125",
     "exertgascough": "#hash_48939ea9e297685b",
     "exertpainfalling": "#hash_2d28fb46319ee28d",
@@ -37,6 +37,6 @@
     "exertbreathehurt": "#hash_3c20dbc383be7a1",
     "exertfullyhealedbreath": "#exert_fully_healed",
     "exertdeathdrowned": "#hash_58b503e7bb75adc2",
-    "hash_581bd538827a67ef:hash_c3b67de0": "#hash_581bd538827a67ef",
+    "exertpainburn": "#hash_581bd538827a67ef",
     "hash_38884005e057d13d:hash_1ca33ad4": "#hash_38884005e057d13d"
 }

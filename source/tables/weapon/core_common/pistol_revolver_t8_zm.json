@@ -3,7 +3,7 @@
     "baseWeapon": "#pistol_revolver_t8",
     "displayname": "#weapon/pistol_revolver_t8",
     "weapon70": "#pistol_revolver_t8",
-    "streamkey": "#pistol_revolver_t8_soundbank",
+    "soundbank": "#pistol_revolver_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -67,7 +67,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_pistol_revolver",
     "weaponIconXCam": "#hash_11906cf7b0117071",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_10c72c5120ff5163"

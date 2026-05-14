@@ -3,7 +3,7 @@
     "baseWeapon": "#trophy_system_bb",
     "displayname": "#weapon/trophy_system",
     "weapon70": "#trophy_system",
-    "streamkey": "#trophy_system_bb_soundbank",
+    "soundbank": "#trophy_system_bb_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -38,7 +38,7 @@
     "#hash_2f3ca476": "#mp/trophy_system_hacking",
     "#hash_5c29f743": "#hash_490c3521298b5e16",
     "projexplosionsound": "#exp_trophy_system",
-    "tunables1": "#hash_25c858e26896668d",
+    "tunables1": "#trophy_system_bb_tunables_mp",
     "cacWeaponXCam": "#ui_cam_cac_equip_trophy",
     "sharedWeaponSounds": "#equipment",
     "weaponHeadObjective": "#inworld_trophysystem",
@@ -62,6 +62,6 @@
     "#hash_96850284": "#jammer_trophy",
     "#hash_26f68e75": "#icepick_trophy",
     "bounceImpactFX": "#euip_bounce",
-    "normalImpactSounds": "#hash_e8e0a97bbbf0b555",
+    "normalImpactSounds": "#grenade_explode_material",
     "bounceImpactSounds": "#trophy_bounce"
 }

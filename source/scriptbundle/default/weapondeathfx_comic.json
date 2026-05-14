@@ -5,6 +5,6 @@
     "name": "weapondeathfx_comic",
     "displayname": "localized17#hash_3c2f4e092823eabc",
     "icon": "loot06_ui_icon_cac_death_fx_pow",
-    "bullet_comic_exit:hash_eeb78b92": "impact_fx_table#bullet_comic_exit",
+    "bullet_comic_exit": "impact_fx_table#bullet_comic_exit",
     "previewimage": "image#loot06_ui_icon_blackmarket_reserves_death_fx_pow"
 }

@@ -3,7 +3,7 @@
     "baseWeapon": "#helicopter_gunner_turret_primary",
     "displayname": "#killstreak/helicopter_gunner",
     "weapon70": "#killstreak_helicopter_player_gunner",
-    "streamkey": "#helicopter_gunner_turret_primary_soundbank",
+    "soundbank": "#helicopter_gunner_turret_primary_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -40,7 +40,7 @@
     "sound6a0": "#hash_cd10cf435c82deb",
     "sound6b0": "#hash_75cf8c2f6fe9dfc6",
     "sound6c0": "#hash_709eeb2fb5e974eb",
-    "tunables1": "#hash_23a0de0cd67f2599",
+    "tunables1": "#helicopter_gunner_turret_primary_tunables",
     "tracers": [
         "#mship_gunner",
         "#mship_gunner"

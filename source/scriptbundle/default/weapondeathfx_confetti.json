@@ -5,6 +5,6 @@
     "name": "weapondeathfx_confetti",
     "displayname": "localized17#hash_3ad34b109062d9c7",
     "icon": "loot04_ui_icon_cac_death_fx_confetti",
-    "bullet_confetti_exit:hash_eeb78b92": "impact_fx_table#bullet_confetti_exit",
+    "bullet_confetti_exit": "impact_fx_table#bullet_confetti_exit",
     "previewimage": "image#loot04_ui_icon_blackmarket_reserves_death_fx_confetti"
 }

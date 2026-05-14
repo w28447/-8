@@ -5,7 +5,7 @@
     "altWeapon": "#sig_buckler_turret_mp",
     "weapon70": "#sig_buckler_dw",
     "dualwieldWeaponName": "#sig_buckler_lh_mp",
-    "streamkey": "#sig_buckler_dw_soundbank",
+    "soundbank": "#sig_buckler_dw_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_right",
     "stowedModelTag": "tag_stowed_back",
@@ -85,8 +85,8 @@
     "worldModel": [
         "#wpn_t8_sig_battle_shield_gun_world"
     ],
-    "gadgetIconAvailable": "#hash_a7ccc4712f559c0b",
-    "gadgetIconUnavailable": "#hash_b5deb4d24b9ce230",
+    "gadgetIconAvailable": "#ui_icon_ultimate_shield",
+    "gadgetIconUnavailable": "#ui_icon_ultimate_shield_dark",
     "image_c70": "#uie_t7_uplink_shield",
     "image_c78": "#uie_t7_uplink_shield",
     "reticleSide": "#reticle_side_small",
@@ -103,8 +103,8 @@
     "fx_c88": "#hash_8a5567d0168ae02f",
     "fx_c90": "#hash_8a5567d0168ae02f",
     "fx_c98": "#hash_8a5567d0168ae02f",
-    "normalImpactFX": "#hash_e1b4c700060ee40c",
-    "exitImpactFX": "#hash_83b4b1d145ec9892",
+    "normalImpactFX": "#bullet_small_enter",
+    "exitImpactFX": "#bullet_small_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

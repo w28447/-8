@@ -38,7 +38,7 @@ STRING "<dev string:x2d6>" 0x13a3c
 STRING "<dev string:x2da>" 0x13bc4
 # zm_white_main_quest::soul_captured@278
 STRING "<dev string:x2ff>" 0x15040
-# zm_white_main_quest::function_b0b7e8a9@6fc
+# zm_white_main_quest::orb_start@6fc
 STRING "<dev string:x310>" 0x15cbc
 # zm_white_main_quest::function_c3a3c077@14 zm_white_main_quest::function_2193794@348 zm_white_main_quest::function_5a971787@34 zm_white_main_quest::mannequin_activate@168 zm_white_main_quest::soul_captured@228
 STRING "<dev string:x38>" 0x3254 0x4c88 0x83d4 0x139e8 0x14ff0
@@ -115,5 +115,5 @@ DEVBLOCK 0x13bba
 DEVBLOCK 0x14e62
 # zm_white_main_quest::soul_captured@21e
 DEVBLOCK 0x14fe6
-# zm_white_main_quest::function_b0b7e8a9@6f2
+# zm_white_main_quest::orb_start@6f2
 DEVBLOCK 0x15cb2

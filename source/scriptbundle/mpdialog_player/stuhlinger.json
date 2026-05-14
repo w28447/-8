@@ -19,7 +19,7 @@
     "characterselect": "#hash_2272de1d5f040ee6",
     "name": "stuhlinger",
     "hash_56c290d9ee24eea0:hash_207908de": "#hash_56c290d9ee24eea0",
-    "vox_stuh_exert_punch_take:hash_b801796c": "#vox_stuh_exert_punch_take",
+    "exertpainpunched": "#vox_stuh_exert_punch_take",
     "boostloss": "#hash_3bd57823bfea1a8d",
     "exertgascough": "#vox_stuh_exert_gas_cough",
     "exertpainfalling": "#vox_stuh_exert_pain",
@@ -37,6 +37,6 @@
     "exertbreathehurt": "#hash_7f316abed48e1239",
     "exertfullyhealedbreath": "#exert_fully_healed",
     "exertdeathdrowned": "#vox_stuh_exert_underwater_air_low",
-    "hash_44ff8bd7b5b95817:hash_c3b67de0": "#hash_44ff8bd7b5b95817",
+    "exertpainburn": "#hash_44ff8bd7b5b95817",
     "vox_stuh_exert_punch_give": "#vox_stuh_exert_punch_give"
 }

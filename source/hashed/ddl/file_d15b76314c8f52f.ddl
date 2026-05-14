@@ -17,9 +17,9 @@ version 1 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 3 size 0xc0
@@ -43,7 +43,7 @@ version 1 {
 
     // idx 0 members 10 size 0x350
     // offset 0x0, size 0x20
-    int hash_1a553941a735de81;
+    int lobby_main_mode;
     // offset 0x20, size 0x20
     int controller;
     // offset 0x40, size 0x1f8
@@ -57,7 +57,7 @@ version 1 {
     // offset 0x328, size 0x20
     int hash_5862d3f1b0f11978;
     // offset 0x348, size 0x1
-    bool hash_4b3088c31338f710;
+    bool is_private_host;
     // offset 0x349, size 0x1
     bool hash_46b8ae8b89bf06c2;
     // offset 0x34a, size 0x6

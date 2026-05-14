@@ -4,7 +4,7 @@
     "displayname": "#zmweapon/smg_thompson_upgraded",
     "xhash_60": "#hash_6a85c7077c69a36f",
     "weapon70": "#smg_thompson_t8",
-    "streamkey": "#smg_thompson_t8_upgraded_soundbank",
+    "soundbank": "#smg_thompson_t8_upgraded_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -74,13 +74,13 @@
     "cacWeaponXCam": "#ui_cam_cac_smg_thompson",
     "cacAttachmentsXCam": "#ui_cam_cac_smg_thompson",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_3a3514276f465f82"
     ],
     "sharedWeaponSounds": "#smg",
-    "ballisticDesc": "#hash_e269fccbe6d86a70",
+    "ballisticDesc": "#45_fmj",
     "tracers": [
         "#hash_a6d5c1a903fba6f4",
         "#hash_e0e8c9de7086f843"
@@ -103,8 +103,8 @@
     "fx_c88": "#hash_8a5567d0168ae02f",
     "fx_c90": "#hash_8a5567d0168ae02f",
     "fx_c98": "#hash_8a5567d0168ae02f",
-    "normalImpactFX": "#hash_9cafc46b8c735870",
-    "exitImpactFX": "#hash_d6ef4fc6c00cc18e",
+    "normalImpactFX": "#bullet_large_enter",
+    "exitImpactFX": "#bullet_large_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

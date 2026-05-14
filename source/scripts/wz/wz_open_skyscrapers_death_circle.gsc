@@ -1,4 +1,3 @@
-#using scripts\mp_common\item_supply_drop_system.gsc;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\compass;
@@ -8,6 +7,7 @@
 #using scripts\core_common\struct;
 #using scripts\core_common\util_shared;
 #using scripts\core_common\values_shared;
+#using scripts\mp_common\item_supply_drop_system;
 #using scripts\mp_common\load;
 
 #namespace wz_open_skyscrapers_death_circle;

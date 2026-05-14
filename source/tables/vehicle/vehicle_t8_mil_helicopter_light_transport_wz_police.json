@@ -46,7 +46,7 @@
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "menu/switch_seats:hash_4be786c9": "localized17#menu/switch_seats",
+                        "menu/switch_seats": "localized17#menu/switch_seats",
                         "hash_334a8e60": "left",
                         "prompt": "+switchseat"
                     }
@@ -86,14 +86,14 @@
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "menu/switch_seats:hash_4be786c9": "localized17#menu/switch_seats",
+                        "menu/switch_seats": "localized17#menu/switch_seats",
                         "hash_334a8e60": "left",
                         "prompt": "+switchseat"
                     },
                     {
                         "GAMEPAD": "#GAMEPAD",
                         "hash_7aecb1d7": 0,
-                        "menu/look:hash_4be786c9": "localized17#menu/look",
+                        "menu/look": "localized17#menu/look",
                         "hash_334a8e60": "left",
                         "prompt": "+lookstick"
                     },
@@ -107,14 +107,14 @@
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "menu/descend:hash_4be786c9": "localized17#menu/descend",
+                        "menu/descend": "localized17#menu/descend",
                         "hash_334a8e60": "left",
                         "prompt": "+vehiclemovedown"
                     },
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "menu/ascend:hash_4be786c9": "localized17#menu/ascend",
+                        "menu/ascend": "localized17#menu/ascend",
                         "hash_334a8e60": "left",
                         "prompt": "+vehiclemoveup"
                     }
@@ -146,6 +146,6 @@
             }
         ],
         "healthpoolsize": 3000,
-        "hash_7812fce8": 1
+        "healthpools": 1
     }
 }

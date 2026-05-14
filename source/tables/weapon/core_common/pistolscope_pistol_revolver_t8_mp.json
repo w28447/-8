@@ -4,7 +4,7 @@
     "displayname": "#weapon/pistol_revolver_t8",
     "altWeapon": "#pistol_revolver_t8_mp",
     "weapon70": "#pistol_revolver_t8",
-    "streamkey": "#pistolscope_pistol_revolver_t8_soundbank",
+    "soundbank": "#pistolscope_pistol_revolver_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",

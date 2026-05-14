@@ -2157,7 +2157,7 @@ localizeentry,#hash_208415268a898fd6
 localizeentry,#hash_208416268a899189
 localizeentry,d#hash_208eb7d41301aac0
 localizeentry,#hash_208fc540b8884f14
-localizeentry,d#hash_2095da416d84f50c
+localizeentry,d#heroes/hacker_weapon_tips
 localizeentry,#hash_20983c2af27c62f4
 localizeentry,#hash_20992077bc88c20f
 localizeentry,d#hash_2099306a05b2b467
@@ -2260,7 +2260,7 @@ localizeentry,#score/concertina_wire_assist
 localizeentry,#hash_222ff4d989ad3434
 localizeentry,#hash_222ff5d989ad35e7
 localizeentry,#emotes/sweet_shred
-localizeentry,#hash_22343c3ae5fbcb69
+localizeentry,#heroes/recon_weapon_tips
 localizeentry,#talent/cold_blooded_short
 localizeentry,#zmui/bgb_nowhere_but_there_desc
 localizeentry,#hash_223c4af406a5d047
@@ -4004,7 +4004,7 @@ localizeentry,#score/gravity_slam_shutdown
 localizeentry,#mpui/last_met_n_secs_ago
 localizeentry,d#zmui/bgb_newtonian_negation
 localizeentry,#hash_3c9f4edb5b374eb7
-localizeentry,#hash_3ca3935f24b68d73
+localizeentry,#heroes/engineer_weapon_tips
 localizeentry,d#hash_3ca968dee9e5dc02
 localizeentry,#hash_3cae3d1b2f643ae0
 localizeentry,d#hash_3cb024fab879fea4
@@ -5163,7 +5163,7 @@ localizeentry,#hash_4fe024168ca9b50b
 localizeentry,#contract/play_dom_desc
 localizeentry,#hash_4ff2200f82822410
 localizeentry,#hash_4ffff7e3fbcaa2d3
-localizeentry,#hash_5005244ea6568b03
+localizeentry,#heroes/swatpolice_weapon_tips
 localizeentry,#menu/join_result_mismatch_playlistid
 localizeentry,#hash_5010b72284e91d45
 localizeentry,#zm_contract/magicbox_desc
@@ -7073,7 +7073,7 @@ localizeentry,#menu/zombshell
 localizeentry,#mpui/embassy
 localizeentry,#zm_contract/single_special_desc
 localizeentry,#hash_6b6746cda81f1841
-localizeentry,#hash_6b70c50c8f533ed6
+localizeentry,#heroes/buffassault_weapon_tips
 localizeentry,#emotes/reconga
 localizeentry,#hash_6b76c5bece983dc5
 localizeentry,d#hash_6b7b091eac3f1cf5

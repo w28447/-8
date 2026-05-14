@@ -3,7 +3,7 @@
     "baseWeapon": "#gadget_jammer",
     "displayname": "#weapon/jammer",
     "weapon70": "#jammer",
-    "streamkey": "#gadget_jammer_soundbank",
+    "soundbank": "#gadget_jammer_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -54,6 +54,6 @@
     "image_e90": "#ui_icon_equipment_trophysystem",
     "fx_ed8": "#explosions/fx8_exp_equipment_lg",
     "bounceImpactFX": "#euip_bounce",
-    "normalImpactSounds": "#hash_e8e0a97bbbf0b555",
+    "normalImpactSounds": "#grenade_explode_material",
     "bounceImpactSounds": "#trophy_bounce"
 }

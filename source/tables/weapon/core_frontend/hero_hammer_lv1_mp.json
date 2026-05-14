@@ -3,7 +3,7 @@
     "baseWeapon": "#hero_hammer_lv1",
     "displayname": "#weapon/hero_hammer",
     "weapon70": "#hero_hammer_lv1",
-    "streamkey": "#hero_hammer_lv1_soundbank",
+    "soundbank": "#hero_hammer_lv1_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "scrstr_118c": "tag_flash",

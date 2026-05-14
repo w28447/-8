@@ -1,4 +1,3 @@
-#using scripts\zm_common\zm_faction_buffs.gsc;
 #using scripts\abilities\ability_player;
 #using scripts\core_common\ai\zombie_utility;
 #using scripts\core_common\ai_shared;
@@ -16,6 +15,7 @@
 #using scripts\zm_common\zm_cleanup_mgr;
 #using scripts\zm_common\zm_customgame;
 #using scripts\zm_common\zm_equipment;
+#using scripts\zm_common\zm_faction_buffs;
 #using scripts\zm_common\zm_loadout;
 #using scripts\zm_common\zm_score;
 #using scripts\zm_common\zm_stats;

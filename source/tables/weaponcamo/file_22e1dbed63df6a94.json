@@ -457,7 +457,7 @@
                     "baseMaterials": [
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_54b945d6b541c2a5"
@@ -532,7 +532,7 @@
                     "baseMaterials": [
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_54b945d6b541c2a5"
@@ -607,7 +607,7 @@
                     "baseMaterials": [
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_54b945d6b541c2a5"
@@ -682,7 +682,7 @@
                     "baseMaterials": [
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_54b945d6b541c2a5"
@@ -757,7 +757,7 @@
                     "baseMaterials": [
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_54b945d6b541c2a5"

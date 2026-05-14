@@ -4,7 +4,7 @@
     "displayname": "#weapon/pistol_revolver_t8",
     "altWeapon": "#pistol_revolver_t8_zm",
     "weapon70": "#pistol_revolver_t8",
-    "streamkey": "#pistolscope_pistol_revolver_t8_soundbank",
+    "soundbank": "#pistolscope_pistol_revolver_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -62,7 +62,7 @@
     "sound260": "#prj_crack_supersonic",
     "sound800": "#hash_21cba6ae89a3493c",
     "sound810": "#hash_21cba6ae89a3493c",
-    "tunables1": "#hash_57ae3c4549b012b0",
+    "tunables1": "#pistolscope_pistol_revolver_t8_tunables_zm",
     "weaponCamo": "#hash_65b2e137a25641fa",
     "cacWeaponXCam": "#ui_cam_cac_pistol_revolver",
     "cacAttachmentsXCam": "#ui_cam_cac_pistol_revolver",

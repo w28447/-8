@@ -2,9 +2,9 @@
     "contracticon": "image#loot07_ui_icon_blackmarket_contracts_weaver",
     "contracttitle": "localized17#hash_67e165c686d154cd",
     "name": "loot_contract_grigori_weaver",
-    "loot07_ui_icon_blackmarket_contracts_weaver_itemdetail:hash_4b258f2c": "image#loot07_ui_icon_blackmarket_contracts_weaver_itemdetail",
+    "loot07_ui_icon_blackmarket_contracts_weaver_itemdetail": "image#loot07_ui_icon_blackmarket_contracts_weaver_itemdetail",
     "contractdescription": "localized17#menu/blackout_character",
     "white": "#white",
-    "loot07_ui_icon_blackmarket_contracts_weaver_tall:hash_1c057e8c": "image#loot07_ui_icon_blackmarket_contracts_weaver_tall",
+    "loot07_ui_icon_blackmarket_contracts_weaver_tall": "image#loot07_ui_icon_blackmarket_contracts_weaver_tall",
     "hash_62c05d70bde3d2f7:hash_e08fc162": "localized17#hash_62c05d70bde3d2f7"
 }

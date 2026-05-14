@@ -4,6 +4,6 @@
     "name": "loot_contract_misty",
     "contractdescription": "localized17#menu/blackout_character",
     "white": "#white",
-    "loot03_ui_icon_blackmarket_contracts_misty_tall:hash_1c057e8c": "image#loot03_ui_icon_blackmarket_contracts_misty_tall",
+    "loot03_ui_icon_blackmarket_contracts_misty_tall": "image#loot03_ui_icon_blackmarket_contracts_misty_tall",
     "hash_490d8ac5a53902e6:hash_e08fc162": "localized17#hash_490d8ac5a53902e6"
 }

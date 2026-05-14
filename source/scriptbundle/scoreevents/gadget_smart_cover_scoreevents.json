@@ -1,15 +1,15 @@
 {
-    "deployable_cover_multikill_2": "#deployable_cover_multikill_2",
-    "deployable_cover_multikill_2": "#deployable_cover_multikill_2",
-    "deployable_cover_kill": "#deployable_cover_kill",
+    "multikill2scoreevent": "#deployable_cover_multikill_2",
+    "multikill6scoreevent": "#deployable_cover_multikill_2",
+    "killscoreevent": "#deployable_cover_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "deployable_cover_deployed": "#deployable_cover_deployed",
     "vmtype": "both",
-    "deployable_cover_multikill_2": "#deployable_cover_multikill_2",
+    "multikill4scoreevent": "#deployable_cover_multikill_2",
     "name": "gadget_smart_cover_scoreevents",
     "customsettingstype": "ability",
-    "deployable_cover_multikill_2": "#deployable_cover_multikill_2",
+    "multikill5scoreevent": "#deployable_cover_multikill_2",
     "deployable_cover_shutdown": "#deployable_cover_shutdown",
-    "deployable_cover_multikill_2": "#deployable_cover_multikill_2"
+    "multikill3scoreevent": "#deployable_cover_multikill_2"
 }

@@ -2,7 +2,7 @@
     "name": "#gadget_smart_cover_wz",
     "baseWeapon": "#gadget_smart_cover",
     "displayname": "#smartcover/name",
-    "streamkey": "#gadget_smart_cover_soundbank",
+    "soundbank": "#gadget_smart_cover_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

@@ -1,4 +1,3 @@
-#using scripts\zm\zm_office_vo_hooks.gsc;
 #using scripts\core_common\aat_shared;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\clientfield_shared;
@@ -6,6 +5,7 @@
 #using scripts\core_common\struct;
 #using scripts\core_common\system_shared;
 #using scripts\zm\zm_hms_util;
+#using scripts\zm\zm_office_vo_hooks;
 #using scripts\zm_common\zm_audio;
 #using scripts\zm_common\zm_characters;
 #using scripts\zm_common\zm_item_pickup;

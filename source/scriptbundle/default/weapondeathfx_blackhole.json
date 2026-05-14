@@ -5,6 +5,6 @@
     "name": "weapondeathfx_blackhole",
     "displayname": "localized17#hash_70b6e3d8673f01ed",
     "icon": "loot04_ui_icon_cac_death_fx_black_hole",
-    "bullet_blackhole_exit:hash_eeb78b92": "impact_fx_table#bullet_blackhole_exit",
+    "bullet_blackhole_exit": "impact_fx_table#bullet_blackhole_exit",
     "previewimage": "image#loot04_ui_icon_blackmarket_reserves_death_fx_black_hole"
 }

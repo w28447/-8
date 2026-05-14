@@ -4,7 +4,7 @@
     "displayname": "#zmweapon/bowie",
     "xhash_60": "#au_bowie_knife",
     "weapon70": "#bowie_knife",
-    "streamkey": "#bowie_flourish_soundbank",
+    "soundbank": "#bowie_flourish_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",

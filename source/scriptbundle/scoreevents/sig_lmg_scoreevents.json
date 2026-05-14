@@ -1,15 +1,15 @@
 {
-    "scythe_multikill_2": "#scythe_multikill_2",
-    "scythe_multikill_2": "#scythe_multikill_2",
-    "scythe_kill": "#scythe_kill",
+    "multikill2scoreevent": "#scythe_multikill_2",
+    "multikill6scoreevent": "#scythe_multikill_2",
+    "killscoreevent": "#scythe_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
-    "scythe_multikill_2": "#scythe_multikill_2",
+    "multikill4scoreevent": "#scythe_multikill_2",
     "name": "sig_lmg_scoreevents",
     "customsettingstype": "ability",
-    "scythe_multikill_2": "#scythe_multikill_2",
+    "multikill5scoreevent": "#scythe_multikill_2",
     "scythe_shutdown": "#scythe_shutdown",
-    "scythe_assist": "#scythe_assist",
-    "scythe_multikill_2": "#scythe_multikill_2"
+    "assistscoreevent": "#scythe_assist",
+    "multikill3scoreevent": "#scythe_multikill_2"
 }

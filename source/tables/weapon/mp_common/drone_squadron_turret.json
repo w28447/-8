@@ -3,7 +3,7 @@
     "baseWeapon": "#drone_squadron_turret",
     "displayname": "#killstreak/drone_squadron",
     "weapon70": "#drone_squadron",
-    "streamkey": "#drone_squadron_turret_soundbank",
+    "soundbank": "#drone_squadron_turret_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -59,5 +59,5 @@
     "normalImpactFX": "#bullet_ap_enter",
     "exitImpactFX": "#bullet_ap_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

@@ -3,7 +3,7 @@
     "baseWeapon": "#remote_missile_bomblet",
     "displayname": "#killstreak/remote_missile",
     "weapon70": "#remote_missile",
-    "streamkey": "#remote_missile_bomblet_soundbank",
+    "soundbank": "#remote_missile_bomblet_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -41,10 +41,10 @@
     "#hash_2e4a8800": "#remote_missile_bomblet_scoreevents",
     "projectilemodel": "#hash_1a8f1d4c26e19eab",
     "reticleCenter": "#reticle_center_cross",
-    "image_e90": "#hash_c3227bb78b459396",
+    "image_e90": "#ui_icon_obit_remote_missile",
     "fireRumble": "#tank_fire_mp",
     "rumble_de8": "#grenade_rumble",
     "fx_ed8": "#hash_1ae397a2f822f91f",
     "fx_f00": "#hash_d11b6a553b5ab91",
-    "normalImpactSounds": "#hash_e8e0a97bbbf0b555"
+    "normalImpactSounds": "#grenade_explode_material"
 }

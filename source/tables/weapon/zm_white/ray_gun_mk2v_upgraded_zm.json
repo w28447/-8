@@ -3,7 +3,7 @@
     "baseWeapon": "#ray_gun_mk2v_upgraded",
     "displayname": "#zmweapon/ray_gun_mk2v_upgraded",
     "weapon70": "#ray_gun_mk2",
-    "streamkey": "#ray_gun_mk2v_upgraded_soundbank",
+    "soundbank": "#ray_gun_mk2v_upgraded_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "scrstr_118c": "tag_flash",

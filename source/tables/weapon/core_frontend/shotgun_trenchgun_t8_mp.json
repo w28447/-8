@@ -3,7 +3,7 @@
     "baseWeapon": "#shotgun_trenchgun_t8",
     "displayname": "#weapon/shotgun_trenchgun_t8",
     "weapon70": "#shotgun_trenchgun_t8",
-    "streamkey": "#shotgun_trenchgun_t8_soundbank",
+    "soundbank": "#shotgun_trenchgun_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -65,9 +65,9 @@
     "weaponCamo": "#hash_7d118934bb4f29bc",
     "cacWeaponXCam": "#ui_cam_cac_shotgun_trenchgun",
     "cacAttachmentsXCam": "#ui_cam_cac_shotgun_trenchgun",
-    "weaponIconXCam": "#hash_f5c3c07d99378a6f",
+    "weaponIconXCam": "#ui_cam_icon_shotgun_pump",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_54765e7bf07c9cd"
@@ -87,15 +87,15 @@
     "inventoryIconZm": "#t7_icon_weapon_shotgun_pump_pu",
     "image_e90": "#t7_icon_weapon_shotgun_pump_kf",
     "fireRumble": "#shotgun_fire",
-    "rumble_dc8": "#hash_f1fceb6e20f9fbdc",
+    "rumble_dc8": "#shotgun_adsfire",
     "fx_bc8": "#hash_e772b94434b7d921",
     "fx_bd0": "#hash_e779a54434bdd5d3",
     "fx_c80": "#hash_6e32286d3d179753",
     "fx_c88": "#hash_6e32286d3d179753",
     "fx_c90": "#hash_6e32286d3d179753",
     "fx_c98": "#hash_6e32286d3d179753",
-    "normalImpactFX": "#hash_f32fd0b76ec30328",
-    "exitImpactFX": "#hash_96e6f5bf4a293426",
-    "normalImpactSounds": "#hash_c15fba9edcdfd2e4",
-    "exitImpactSounds": "#hash_96e6f5bf4a293426"
+    "normalImpactFX": "#shotgun_enter",
+    "exitImpactFX": "#shotgun_exit",
+    "normalImpactSounds": "#shotgun_impact",
+    "exitImpactSounds": "#shotgun_exit"
 }

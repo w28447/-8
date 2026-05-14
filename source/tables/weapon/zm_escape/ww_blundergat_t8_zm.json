@@ -3,7 +3,7 @@
     "baseWeapon": "#ww_blundergat_t8",
     "displayname": "#zmweapon/blundergat",
     "weapon70": "#ww_blundergat_t8",
-    "streamkey": "#ww_blundergat_t8_soundbank",
+    "soundbank": "#ww_blundergat_t8_soundbank",
     "scrstr_8c8": [
         "tag_muzzle_acid",
         "tag_barrel_le_acid",
@@ -62,6 +62,6 @@
     "fireRumble": "#shotgun_fire",
     "fx_bc8": "#hash_61c5d96cb8067ade",
     "fx_bd0": "#hash_4345af7e7b44f50",
-    "normalImpactFX": "#hash_f32fd0b76ec30328",
-    "exitImpactFX": "#hash_96e6f5bf4a293426"
+    "normalImpactFX": "#shotgun_enter",
+    "exitImpactFX": "#shotgun_exit"
 }

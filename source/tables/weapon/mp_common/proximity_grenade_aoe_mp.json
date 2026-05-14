@@ -2,7 +2,7 @@
     "name": "#proximity_grenade_aoe_mp",
     "baseWeapon": "#proximity_grenade_aoe",
     "displayname": "#weapon/proximity_grenade",
-    "streamkey": "#proximity_grenade_aoe_soundbank",
+    "soundbank": "#proximity_grenade_aoe_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

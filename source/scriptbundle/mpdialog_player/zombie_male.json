@@ -19,7 +19,7 @@
     "characterselect": "#hash_d8f6112ec7c97fb",
     "name": "zombie_male",
     "hash_7b3e26c90b52001d:hash_207908de": "#hash_7b3e26c90b52001d",
-    "hash_1fd1c9452eee797c:hash_b801796c": "#hash_1fd1c9452eee797c",
+    "exertpainpunched": "#hash_1fd1c9452eee797c",
     "boostloss": "#hash_38339c3be302da1a",
     "exertgascough": "#hash_f93730592e3657a",
     "exertpainfalling": "#hash_4372dc7b75779ada",
@@ -37,6 +37,6 @@
     "exertbreathehurt": "#hash_5b2b490d7bc0e468",
     "exertfullyhealedbreath": "#exert_fully_healed",
     "exertdeathdrowned": "#hash_7f9e4a70d4201abd",
-    "hash_345ead57316dbb5c:hash_c3b67de0": "#hash_345ead57316dbb5c",
+    "exertpainburn": "#hash_345ead57316dbb5c",
     "hash_61f724a57196007e:hash_1ca33ad4": "#hash_61f724a57196007e"
 }

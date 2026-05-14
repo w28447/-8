@@ -1302,8 +1302,8 @@ gesture,#ges_swim_idle
 gesture,#ges_mantle
 zbarrier,#zm_zodt8_packapunch
 zbarrier,#zodt8_magicbox
-zbarrier,#hash_494b947e466bcc25
-zbarrier,#hash_52a48789ffef2e9d
+zbarrier,#zm_zod_debris_power_02
+zbarrier,#zmcore_t8_basicwoodbarrier_white
 zbarrier,#zm_zod_debris_power
 zbarrier,#zm_zod_debris_02
 zbarrier,#zmcore_t8_basicwoodbarrier

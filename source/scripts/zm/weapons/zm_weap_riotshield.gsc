@@ -1,4 +1,3 @@
-#using scripts\zm_common\zm_faction_buffs.gsc;
 #using scripts\core_common\ai\zombie_death;
 #using scripts\core_common\ai\zombie_utility;
 #using scripts\core_common\ai_shared;
@@ -16,6 +15,7 @@
 #using scripts\zm_common\zm_audio;
 #using scripts\zm_common\zm_customgame;
 #using scripts\zm_common\zm_equipment;
+#using scripts\zm_common\zm_faction_buffs;
 #using scripts\zm_common\zm_laststand;
 #using scripts\zm_common\zm_player;
 #using scripts\zm_common\zm_powerups;

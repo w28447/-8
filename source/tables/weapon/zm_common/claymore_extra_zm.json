@@ -3,7 +3,7 @@
     "baseWeapon": "#claymore_extra",
     "displayname": "#weapon/claymore",
     "weapon70": "#claymore",
-    "streamkey": "#claymore_extra_soundbank",
+    "soundbank": "#claymore_extra_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -47,7 +47,7 @@
     "worldModel": [
         "#wpn_t8_zm_eqp_claymore_world"
     ],
-    "gadgetIconAvailable": "#hash_e24b6b9096319641",
+    "gadgetIconAvailable": "#ui_icon_equpiment_zm_claimore",
     "gadgetIconUnavailable": "#ui_icon_equpiment_zm_claimore_dark",
     "inventoryIconZm": "#ui_icon_equpiment_zm_claimore_dark",
     "hudIcon": "#ui_icon_equipment_claymore",
@@ -57,5 +57,5 @@
     "normalImpactFX": "#claymore_explosion_zm",
     "bounceImpactFX": "#grenade_bounce",
     "dudImpactFX": "#grenade_dud",
-    "normalImpactSounds": "#hash_e8e0a97bbbf0b555"
+    "normalImpactSounds": "#grenade_explode_material"
 }

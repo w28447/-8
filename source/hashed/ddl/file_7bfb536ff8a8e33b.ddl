@@ -17,9 +17,9 @@ version 12 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 3 size 0xc0
@@ -43,10 +43,10 @@ version 12 {
 
     // idx 1 members 4
     enum hash_6e584a2182d558dd {
-        hash_48c11f5af9af3a1, // 0x0,
+        skipback, // 0x0,
         no, // 0x1,
         yes, // 0x2,
-        hash_7f10c379eec64c4a, // 0x3
+        skipread, // 0x3
     };
 
     // idx 0 members 9 size 0x5a8

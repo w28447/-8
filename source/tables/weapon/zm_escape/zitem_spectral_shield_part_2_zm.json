@@ -1,7 +1,7 @@
 {
     "name": "#zitem_spectral_shield_part_2_zm",
     "baseWeapon": "#zitem_spectral_shield_part_2",
-    "streamkey": "#zitem_spectral_shield_part_2_soundbank",
+    "soundbank": "#zitem_spectral_shield_part_2_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

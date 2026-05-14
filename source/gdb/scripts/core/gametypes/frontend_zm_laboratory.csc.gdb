@@ -103,7 +103,7 @@ DEVBLOCK 0x398a
 DEVBLOCK 0x5b02
 # zm_laboratory::function_365bef4@740
 DEVBLOCK 0x72c8
-# zm_laboratory::function_4053acdb@84
+# zm_laboratory::skip_to_reveal@84
 DEVBLOCK 0x7d1c
 # zm_laboratory::function_254a0f6d@8a
 DEVBLOCK 0x855a

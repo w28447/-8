@@ -4,7 +4,7 @@
     "displayname": "#weapon/sniper_powersemi_t8",
     "altWeapon": "#sniper_powersemi_t8_zm",
     "weapon70": "#sniper_powersemi_t8",
-    "streamkey": "#dualoptic_sniper_powersemi_t8_soundbank",
+    "soundbank": "#dualoptic_sniper_powersemi_t8_soundbank",
     "scrstr_8c8": [
         "tag_sights_off",
         "tag_clan_tag",
@@ -74,7 +74,7 @@
     "sound610": "#hash_5c9addf2686f77e2",
     "sound800": "#hash_17c846b05b70637f",
     "sound810": "#hash_17c846b05b70637f",
-    "tunables1": "#hash_504d40e1fe1df528",
+    "tunables1": "#dualoptic_sniper_powersemi_t8_tunables_zm",
     "weaponCamo": "#hash_7e434cf327c6f3f0",
     "cacWeaponXCam": "#ui_cam_cac_sniper_powersemi",
     "cacAttachmentsXCam": "#ui_cam_cac_sniper_powersemi",

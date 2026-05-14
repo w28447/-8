@@ -17,9 +17,9 @@ version 6 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 3 size 0xc0
@@ -67,7 +67,7 @@ version 6 {
     // offset 0x358, size 0x40
     uint64 attacker_xuid;
     // offset 0x398, size 0x8
-    byte hash_1173e4be95b4f8af;
+    byte revive_attempts;
     // offset 0x3a0, size 0x20
     uint end_time;
     // offset 0x3c0, size 0x20
@@ -77,7 +77,7 @@ version 6 {
     // offset 0x4a0, size 0x10
     uint:16 damage;
     // offset 0x4b0, size 0x10
-    uint:16 hash_49e1674a9d40893a;
+    uint:16 reviver_damage;
     // offset 0x4c0, size 0x1
     bool death;
     // offset 0x4c1, size 0x1
@@ -85,7 +85,7 @@ version 6 {
     // offset 0x4c2, size 0x1
     bool friendly_fire;
     // offset 0x4c3, size 0x1
-    bool hash_54a1c9c5f993e32f;
+    bool reviver_death;
     // offset 0x4c4, size 0x4
     uint:1 __pad[4];
 }

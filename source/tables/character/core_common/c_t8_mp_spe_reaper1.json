@@ -4,7 +4,7 @@
     "voice": "american",
     "headImpactType": 5,
     "bodyImpactType": 6,
-    "ragdollDef": "#hash_83b0a45f1f7c3431",
+    "ragdollDef": "#defaultragdoll",
     "body": "#c_t8_mp_spe_reaper_body1",
     "head": "#c_t8_mp_spe_reaper_head1"
 }

@@ -1,92 +1,92 @@
 {
     "zombiesplitmdls": [
         {
-            "c_t8_zmb_dlc1_zombie_3rdclass_male_body1:hash_a3c9023c": "#c_t8_zmb_dlc1_zombie_3rdclass_male_body1",
-            "hash_cdf1f53d": "model#"
+            "c_t8_zmb_dlc1_zombie_3rdclass_male_body1": "#c_t8_zmb_dlc1_zombie_3rdclass_male_body1",
+            "splitmdl": "model#"
         },
         {
-            "c_t8_zmb_dlc1_zombie_3rdclass_male_body2:hash_a3c9023c": "#c_t8_zmb_dlc1_zombie_3rdclass_male_body2",
-            "hash_cdf1f53d": "model#"
+            "c_t8_zmb_dlc1_zombie_3rdclass_male_body2": "#c_t8_zmb_dlc1_zombie_3rdclass_male_body2",
+            "splitmdl": "model#"
         },
         {
             "hash_6af7a6d08eaeb24f:hash_a3c9023c": "#hash_6af7a6d08eaeb24f",
-            "hash_cdf1f53d": "model#"
+            "splitmdl": "model#"
         },
         {
             "hash_6af7a5d08eaeb09c:hash_a3c9023c": "#hash_6af7a5d08eaeb09c",
-            "hash_cdf1f53d": "model#"
+            "splitmdl": "model#"
         },
         {
             "hash_6af7a8d08eaeb5b5:hash_a3c9023c": "#hash_6af7a8d08eaeb5b5",
-            "hash_cdf1f53d": "model#"
+            "splitmdl": "model#"
         },
         {
-            "c_t8_zmb_dlc1_zombie_1stclass_female_body1_skin2:hash_a3c9023c": "#c_t8_zmb_dlc1_zombie_1stclass_female_body1_skin2",
-            "hash_cdf1f53d": "model#"
+            "c_t8_zmb_dlc1_zombie_1stclass_female_body1_skin2": "#c_t8_zmb_dlc1_zombie_1stclass_female_body1_skin2",
+            "splitmdl": "model#"
         },
         {
-            "c_t8_zmb_dlc1_zombie_1stclass_female_body1_skin3:hash_a3c9023c": "#c_t8_zmb_dlc1_zombie_1stclass_female_body1_skin3",
-            "hash_cdf1f53d": "model#"
+            "c_t8_zmb_dlc1_zombie_1stclass_female_body1_skin3": "#c_t8_zmb_dlc1_zombie_1stclass_female_body1_skin3",
+            "splitmdl": "model#"
         },
         {
             "hash_3e26cea28b672c67:hash_a3c9023c": "#hash_3e26cea28b672c67",
-            "hash_cdf1f53d": "model#"
+            "splitmdl": "model#"
         },
         {
-            "c_t8_zmb_dlc1_zombie_1stclass_male_body1:hash_a3c9023c": "#c_t8_zmb_dlc1_zombie_1stclass_male_body1",
-            "hash_cdf1f53d": "model#"
+            "c_t8_zmb_dlc1_zombie_1stclass_male_body1": "#c_t8_zmb_dlc1_zombie_1stclass_male_body1",
+            "splitmdl": "model#"
         },
         {
-            "c_t8_zmb_dlc1_zombie_1stclass_male_body1_skin2:hash_a3c9023c": "#c_t8_zmb_dlc1_zombie_1stclass_male_body1_skin2",
-            "hash_cdf1f53d": "model#"
+            "c_t8_zmb_dlc1_zombie_1stclass_male_body1_skin2": "#c_t8_zmb_dlc1_zombie_1stclass_male_body1_skin2",
+            "splitmdl": "model#"
         },
         {
-            "c_t8_zmb_dlc1_zombie_1stclass_male_body1_skin3:hash_a3c9023c": "#c_t8_zmb_dlc1_zombie_1stclass_male_body1_skin3",
-            "hash_cdf1f53d": "model#"
+            "c_t8_zmb_dlc1_zombie_1stclass_male_body1_skin3": "#c_t8_zmb_dlc1_zombie_1stclass_male_body1_skin3",
+            "splitmdl": "model#"
         },
         {
             "c_t8_zmb_1stclass_male_body2": "#c_t8_zmb_1stclass_male_body2",
-            "hash_cdf1f53d": "model#"
+            "splitmdl": "model#"
         },
         {
-            "c_t8_zmb_dlc1_zombie_1stclass_male_body3:hash_a3c9023c": "#c_t8_zmb_dlc1_zombie_1stclass_male_body3",
-            "hash_cdf1f53d": "model#"
+            "c_t8_zmb_dlc1_zombie_1stclass_male_body3": "#c_t8_zmb_dlc1_zombie_1stclass_male_body3",
+            "splitmdl": "model#"
         },
         {
-            "c_t8_zmb_dlc1_zombie_2ndclass_female_body1:hash_a3c9023c": "#c_t8_zmb_dlc1_zombie_2ndclass_female_body1",
-            "hash_cdf1f53d": "model#"
+            "c_t8_zmb_dlc1_zombie_2ndclass_female_body1": "#c_t8_zmb_dlc1_zombie_2ndclass_female_body1",
+            "splitmdl": "model#"
         },
         {
-            "c_t8_zmb_dlc1_zombie_2ndclass_female_body2:hash_a3c9023c": "#c_t8_zmb_dlc1_zombie_2ndclass_female_body2",
-            "hash_cdf1f53d": "model#"
+            "c_t8_zmb_dlc1_zombie_2ndclass_female_body2": "#c_t8_zmb_dlc1_zombie_2ndclass_female_body2",
+            "splitmdl": "model#"
         },
         {
             "c_t8_zmb_2ndclass_female_body3": "#c_t8_zmb_2ndclass_female_body3",
-            "hash_cdf1f53d": "model#"
+            "splitmdl": "model#"
         },
         {
-            "c_t8_zmb_dlc1_zombie_3rdclass_female_body1:hash_a3c9023c": "#c_t8_zmb_dlc1_zombie_3rdclass_female_body1",
-            "hash_cdf1f53d": "model#"
+            "c_t8_zmb_dlc1_zombie_3rdclass_female_body1": "#c_t8_zmb_dlc1_zombie_3rdclass_female_body1",
+            "splitmdl": "model#"
         },
         {
-            "c_t8_zmb_dlc1_zombie_3rdclass_female_body2:hash_a3c9023c": "#c_t8_zmb_dlc1_zombie_3rdclass_female_body2",
-            "hash_cdf1f53d": "model#"
+            "c_t8_zmb_dlc1_zombie_3rdclass_female_body2": "#c_t8_zmb_dlc1_zombie_3rdclass_female_body2",
+            "splitmdl": "model#"
         },
         {
-            "c_t8_zmb_dlc1_zombie_3rdclass_female_body3:hash_a3c9023c": "#c_t8_zmb_dlc1_zombie_3rdclass_female_body3",
-            "hash_cdf1f53d": "model#"
+            "c_t8_zmb_dlc1_zombie_3rdclass_female_body3": "#c_t8_zmb_dlc1_zombie_3rdclass_female_body3",
+            "splitmdl": "model#"
         },
         {
-            "c_t8_zmb_dlc1_zombie_3rdclass_male_body3:hash_a3c9023c": "#c_t8_zmb_dlc1_zombie_3rdclass_male_body3",
-            "hash_cdf1f53d": "model#"
+            "c_t8_zmb_dlc1_zombie_3rdclass_male_body3": "#c_t8_zmb_dlc1_zombie_3rdclass_male_body3",
+            "splitmdl": "model#"
         },
         {
-            "c_t8_zmb_dlc1_zombie_3rdclass_male_body3_skin2:hash_a3c9023c": "#c_t8_zmb_dlc1_zombie_3rdclass_male_body3_skin2",
-            "hash_cdf1f53d": "model#"
+            "c_t8_zmb_dlc1_zombie_3rdclass_male_body3_skin2": "#c_t8_zmb_dlc1_zombie_3rdclass_male_body3_skin2",
+            "splitmdl": "model#"
         },
         {
-            "c_t8_zmb_dlc1_zombie_3rdclass_male_body3_skin3:hash_a3c9023c": "#c_t8_zmb_dlc1_zombie_3rdclass_male_body3_skin3",
-            "hash_cdf1f53d": "model#"
+            "c_t8_zmb_dlc1_zombie_3rdclass_male_body3_skin3": "#c_t8_zmb_dlc1_zombie_3rdclass_male_body3_skin3",
+            "splitmdl": "model#"
         }
     ],
     "hash_9c0ebe1e": 5000,
@@ -121,7 +121,7 @@
     "hash_250a1683": 100,
     "hash_bacb0199": 2,
     "hash_6e7acfb4": 1.5,
-    "hash_97b22faa": 1,
+    "instakillweakpointdamagescale": 1,
     "damagescale": 1,
     "category": "#basic",
     "hash_854eebd": 0,

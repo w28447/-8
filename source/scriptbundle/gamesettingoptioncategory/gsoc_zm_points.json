@@ -3,6 +3,6 @@
     "hash_ce9b2d06": "gsol_zm_points",
     "type": "gamesettingoptioncategory",
     "name": "gsoc_zm_points",
-    "menu/general_settings_desc:hash_dea17465": "localized17#menu/general_settings_desc",
-    "menu/points_caps:hash_608158f2": "localized17#menu/points_caps"
+    "menu/general_settings_desc": "localized17#menu/general_settings_desc",
+    "menu/points_caps": "localized17#menu/points_caps"
 }

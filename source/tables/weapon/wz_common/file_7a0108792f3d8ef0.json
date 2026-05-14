@@ -1,7 +1,7 @@
 {
     "name": "#hash_7a0108792f3d8ef0",
     "baseWeapon": "#hash_7a0108792f3d8ef0",
-    "streamkey": "#hash_1e8a271763ca24e2",
+    "soundbank": "#hash_1e8a271763ca24e2",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -41,7 +41,7 @@
     "ballisticDesc": "#hash_e297011667973dfb",
     "tracers": [
         "#lmg",
-        "#hash_e2bdd456ce2308cc"
+        "#lmg_enemy"
     ],
     "turretAnimSettings": "#player_turret_huey_gunner2_anims",
     "reticleCenter": "#hash_ac0bcb8f12647ad4",
@@ -57,5 +57,5 @@
     "normalImpactFX": "#bullet_ap_enter",
     "exitImpactFX": "#bullet_ap_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

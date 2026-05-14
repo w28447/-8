@@ -3,7 +3,7 @@
     "baseWeapon": "#melee_stopsign_t8",
     "displayname": "#weapon/melee_stopsign_t8",
     "weapon70": "#melee_stopsign_t8",
-    "streamkey": "#melee_stopsign_t8_soundbank",
+    "soundbank": "#melee_stopsign_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -41,7 +41,7 @@
     "cacAttachmentsXCam": "#hash_19b0136d0b752c5e",
     "weaponIconXCam": "#hash_7c6f1d8717f77fe6",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_6a3752e919cd6324"

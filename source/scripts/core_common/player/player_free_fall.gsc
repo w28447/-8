@@ -1,6 +1,6 @@
-#using scripts\core_common\player\player_free_fall_util.gsc;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\clientfield_shared;
+#using scripts\core_common\player\player_free_fall_util;
 #using scripts\core_common\system_shared;
 #using scripts\core_common\util_shared;
 

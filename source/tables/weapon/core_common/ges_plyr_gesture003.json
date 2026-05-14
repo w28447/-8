@@ -1,7 +1,7 @@
 {
     "name": "#ges_plyr_gesture003",
     "baseWeapon": "#ges_plyr_gesture003",
-    "streamkey": "#ges_plyr_gesture003_soundbank",
+    "soundbank": "#ges_plyr_gesture003_soundbank",
     "scrstr_8c8": [
         "tag_equipment_hero"
     ],

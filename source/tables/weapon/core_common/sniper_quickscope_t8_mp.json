@@ -3,7 +3,7 @@
     "baseWeapon": "#sniper_quickscope_t8",
     "displayname": "#weapon/sniper_quickscope_t8",
     "weapon70": "#sniper_quickscope_t8",
-    "streamkey": "#sniper_quickscope_t8_soundbank",
+    "soundbank": "#sniper_quickscope_t8_soundbank",
     "scrstr_8c8": [
         "tag_antenna_wire2b_pba",
         "tag_antenna_wire2_pba",
@@ -81,7 +81,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_sniper_quickscope",
     "weaponIconXCam": "#ui_cam_icon_sniper_quickscope",
     "attachments": [
-        "#hash_f459a0af8e8f912b",
+        "#defaultattachment",
         "#acog_sniper"
     ],
     "attachmentUniques": [

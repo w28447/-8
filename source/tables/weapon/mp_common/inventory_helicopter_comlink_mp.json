@@ -3,7 +3,7 @@
     "baseWeapon": "#inventory_helicopter_comlink",
     "displayname": "#killstreak/helicopter_comlink",
     "weapon70": "#helicopter_comlink",
-    "streamkey": "#inventory_helicopter_comlink_soundbank",
+    "soundbank": "#inventory_helicopter_comlink_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",
@@ -45,8 +45,8 @@
     "worldModel": [
         "#wpn_t8_eqp_radio_handheld_world"
     ],
-    "gadgetIconAvailable": "#hash_b558444b0e562af3",
-    "gadgetIconUnavailable": "#hash_8b3963680b3c1361",
+    "gadgetIconAvailable": "#ui_icon_scorestreaks_attack_helicopter_light",
+    "gadgetIconUnavailable": "#ui_icon_scorestreaks_attack_helicopter_dark",
     "inventoryIconZm": "#compass_objpoint_helicopter",
     "hudIcon": "#compass_objpoint_helicopter",
     "image_e90": "#t7_hud_obit_drone_hunter",

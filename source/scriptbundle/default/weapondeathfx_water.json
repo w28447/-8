@@ -5,6 +5,6 @@
     "name": "weapondeathfx_water",
     "displayname": "localized17#hash_373b7a84e7ac2c2e",
     "icon": "loot04_ui_icon_cac_death_fx_water",
-    "bullet_water_exit:hash_eeb78b92": "impact_fx_table#bullet_water_exit",
+    "bullet_water_exit": "impact_fx_table#bullet_water_exit",
     "previewimage": "image#loot04_ui_icon_cac_death_fx_water"
 }

@@ -305,8 +305,8 @@ function function_96d38b95( result )
     end_match_contracts.special_contract_curent = specialcontractcurent;
     end_match_contracts.special_contract_completed = specialcontractcompleted;
     end_match_specialist = spawnstruct();
-    end_match_specialist.specialist_arms = player function_5d23af5b();
-    end_match_specialist.specialist_head = player startquantity();
+    end_match_specialist.var_3cc73d67 = player function_5d23af5b();
+    end_match_specialist.specialist_head = player function_44a7328f();
     end_match_specialist.specialist_legs = player function_cde23658();
     end_match_specialist.specialist_torso = player function_92ea4100();
     end_match_specialist.specialist_showcase = showcaseweapon.weapon.name;

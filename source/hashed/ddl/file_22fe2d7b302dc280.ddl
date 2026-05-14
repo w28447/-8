@@ -17,9 +17,9 @@ version 10 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 3 size 0xc0
@@ -55,9 +55,9 @@ version 10 {
     // offset 0x0, size 0x20
     float kd;
     // offset 0x20, size 0x20
-    float hash_49ebf2675743e7eb;
+    float dim0;
     // offset 0x40, size 0x20
-    float hash_49ebf1675743e638;
+    float dim1;
     // offset 0x60, size 0x20
     int rank;
     // offset 0x80, size 0x20
@@ -67,7 +67,7 @@ version 10 {
     // offset 0x160, size 0x20
     int score;
     // offset 0x180, size 0x20
-    int hash_56832bbcf195a9d3;
+    int dj_count;
     // offset 0x1a0, size 0x400
     string(128) hash_3b10bf5cc604677d;
     // offset 0x5a0, size 0x1f8
@@ -83,7 +83,7 @@ version 10 {
     // offset 0x9f8, size 0x20
     int dj_time;
     // offset 0xa18, size 0x20
-    int hash_5563ef374a80dc1d;
+    int sprint_count;
     // offset 0xa38, size 0x40
     xhash primaryloadoutweapon;
     // offset 0xa78, size 0x20
@@ -93,7 +93,7 @@ version 10 {
     // offset 0xab8, size 0x20
     int spawnid;
     // offset 0xad8, size 0x20
-    int hash_5c5a773574a98026;
+    int wallrun_count;
     // offset 0xaf8, size 0x20
     int gametime;
     // offset 0xb18, size 0xc0
@@ -107,7 +107,7 @@ version 10 {
     // offset 0xc58, size 0x20
     int rankxp;
     // offset 0xc78, size 0x20
-    float hash_475d9beecef8b15f;
+    float wallrun_dist;
     // offset 0xc98, size 0x20
     int wallrun_time;
     // offset 0xcb8, size 0x20
@@ -117,7 +117,7 @@ version 10 {
     // offset 0xcf8, size 0x20
     int meleekills;
     // offset 0xd18, size 0x20
-    float hash_491587fc34c54122;
+    float sprint_dist;
     // offset 0xd38, size 0x20
     int sprint_time;
     // offset 0xd58, size 0x20

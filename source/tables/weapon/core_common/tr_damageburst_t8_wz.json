@@ -4,7 +4,7 @@
     "displayname": "#weapon/tr_damageburst_t8",
     "xhash_60": "#hash_26810123565f406f",
     "weapon70": "#tr_damageburst_t8",
-    "streamkey": "#tr_damageburst_t8_soundbank",
+    "soundbank": "#tr_damageburst_t8_soundbank",
     "scrstr_8c8": [
         "tag_camo_darkmatter",
         "tag_camo_diamond",
@@ -74,7 +74,7 @@
     "cacAttachmentsXCam": "#hash_2663ad7452f8b0ca",
     "weaponIconXCam": "#hash_4b88e4084eecacd2",
     "attachments": [
-        "#hash_f459a0af8e8f912b",
+        "#defaultattachment",
         "#acog_wz",
         "#adsreload_wz"
     ],

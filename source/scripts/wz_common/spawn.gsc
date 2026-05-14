@@ -1,4 +1,3 @@
-#using scripts\core_common\player\player_free_fall_util.gsc;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\clientfield_shared;
@@ -6,6 +5,7 @@
 #using scripts\core_common\infection;
 #using scripts\core_common\match_record;
 #using scripts\core_common\player\player_free_fall;
+#using scripts\core_common\player\player_free_fall_util;
 #using scripts\core_common\player_insertion;
 #using scripts\core_common\spawning_shared;
 #using scripts\core_common\struct;

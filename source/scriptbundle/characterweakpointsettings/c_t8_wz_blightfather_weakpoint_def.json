@@ -3,8 +3,8 @@
         {
             "hash_8223b0cf": 0,
             "type": "#weakpoint",
-            "hash_910e2f9b": "j_head",
-            "hash_51e8b151": "tag_mouth_weakspot",
+            "hittag2": "j_head",
+            "hittag1": "tag_mouth_weakspot",
             "activebydefault": 1,
             "hitradius": 16,
             "health": 0.3
@@ -12,7 +12,7 @@
         {
             "hash_8223b0cf": 0,
             "type": "#weakpoint",
-            "hash_51e8b151": "tag_elbow_weakspot_le",
+            "hittag1": "tag_elbow_weakspot_le",
             "activebydefault": 1,
             "hitradius": 12,
             "health": 0.06
@@ -20,7 +20,7 @@
         {
             "hash_8223b0cf": 0,
             "type": "#weakpoint",
-            "hash_51e8b151": "tag_elbow_weakspot_ri",
+            "hittag1": "tag_elbow_weakspot_ri",
             "activebydefault": 1,
             "hitradius": 12,
             "health": 0.06
@@ -28,7 +28,7 @@
         {
             "hash_8223b0cf": 0,
             "type": "#weakpoint",
-            "hash_51e8b151": "tag_eggsack_weakspot_le",
+            "hittag1": "tag_eggsack_weakspot_le",
             "activebydefault": 1,
             "hitradius": 12,
             "health": 0.35
@@ -36,7 +36,7 @@
         {
             "hash_8223b0cf": 0,
             "type": "#weakpoint",
-            "hash_51e8b151": "tag_eggsack_weakspot_ri",
+            "hittag1": "tag_eggsack_weakspot_ri",
             "activebydefault": 1,
             "hitradius": 12,
             "health": 0.35

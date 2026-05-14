@@ -3,6 +3,6 @@
     "hash_ce9b2d06": "gsol_zm_standardweapons",
     "type": "gamesettingoptioncategory",
     "name": "gsoc_zm_standardweapons",
-    "menu/general_settings_desc:hash_dea17465": "localized17#menu/general_settings_desc",
-    "menu/standard_weapons_caps:hash_608158f2": "localized17#menu/standard_weapons_caps"
+    "menu/general_settings_desc": "localized17#menu/general_settings_desc",
+    "menu/standard_weapons_caps": "localized17#menu/standard_weapons_caps"
 }

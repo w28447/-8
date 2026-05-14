@@ -18,7 +18,7 @@
     "characterselect": "#hash_76694dd44128fa3c",
     "name": "mason",
     "hash_6a6f8c0254a5d424:hash_207908de": "#hash_6a6f8c0254a5d424",
-    "hash_20e55abac987ac83:hash_b801796c": "#hash_20e55abac987ac83",
+    "exertpainpunched": "#hash_20e55abac987ac83",
     "boostloss": "#hash_4522502201948c97",
     "exertgascough": "#hash_a9fd6ef429122a7",
     "exertpainfalling": "#hash_55c2be6323e02991",
@@ -36,6 +36,6 @@
     "exertbreathehurt": "#hash_2729ed29ef6f07d",
     "exertfullyhealedbreath": "#exert_fully_healed",
     "exertdeathdrowned": "#hash_44823fa4541c61e",
-    "hash_728deedfe9b32d1b:hash_c3b67de0": "#hash_728deedfe9b32d1b",
+    "exertpainburn": "#hash_728deedfe9b32d1b",
     "hash_a9b175bc222b7d9:hash_1ca33ad4": "#hash_a9b175bc222b7d9"
 }

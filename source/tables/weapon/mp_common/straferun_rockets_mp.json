@@ -2,7 +2,7 @@
     "name": "#straferun_rockets_mp",
     "baseWeapon": "#straferun_rockets",
     "weapon70": "#straferun",
-    "streamkey": "#straferun_rockets_soundbank",
+    "soundbank": "#straferun_rockets_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -45,5 +45,5 @@
     "rumble_de8": "#grenade_rumble",
     "fx_ed8": "#hash_1ae397a2f822f91f",
     "fx_f00": "#hash_209c0f28bb709b3c",
-    "normalImpactSounds": "#hash_e8e0a97bbbf0b555"
+    "normalImpactSounds": "#grenade_explode_material"
 }

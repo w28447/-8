@@ -1,7 +1,7 @@
 {
     "name": "#swat_grenade_payload_mp",
     "baseWeapon": "#swat_grenade_payload",
-    "streamkey": "#swat_grenade_payload_soundbank",
+    "soundbank": "#swat_grenade_payload_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -62,7 +62,7 @@
     "reticleSide": "#reticle_side_round",
     "inventoryIconZm": "#t7_hud_icon_menu_flash_pu",
     "hudIcon": "#t7_hud_mp_inventory_flashbang",
-    "image_e90": "#hash_a4eff6a4580467f5",
+    "image_e90": "#ui_icon_obit_swat_grenade",
     "rumble_de8": "#tactical_rumble",
     "fx_ed8": "#hash_7870d389a0af31dc",
     "bounceImpactFX": "#grenade_bounce"

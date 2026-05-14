@@ -4,7 +4,7 @@
     "displayname": "#weapon/hero_pineapplegun",
     "weapon70": "#hero_pineapplegun",
     "weapon880": "#hero_pineapple_grenade_mp",
-    "streamkey": "#hero_pineapplegun_soundbank",
+    "soundbank": "#hero_pineapplegun_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -57,7 +57,7 @@
     "tunables2": "#hero_pineapplegun_tunables_mp_pc",
     "cacWeaponXCam": "#ui_cam_cac_hero_pineapplegun",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_79d82bea595d6b0c"
@@ -87,8 +87,8 @@
     "worldModel": [
         "#wpn_t8_hero_war_machine_world"
     ],
-    "gadgetIconAvailable": "#hash_e578fc9a6f1d78b1",
-    "gadgetIconUnavailable": "#hash_df9b3dec216fa2d6",
+    "gadgetIconAvailable": "#ui_icon_ultimate_warmachine",
+    "gadgetIconUnavailable": "#ui_icon_ultimate_warmachine_dark",
     "reticleCenter": "#reticle_pineapplegun",
     "inventoryIconZm": "#ui_icon_weapon_hud_hero_warmachine",
     "hudIcon": "#hash_c62b10c791e45f5c",
@@ -101,7 +101,7 @@
     "fx_bd8": "#hash_3e99f483a765a91e",
     "fx_f00": "#hash_74e27053381609ee",
     "underwaterExplosionSurfaceFX": [
-        "#hash_fb70232b2892e045",
+        "#explosions/fx8_exp_grenade_water",
         "#hash_c15b461b7420c6d2",
         "#hash_bb3f97cf646813ac"
     ],

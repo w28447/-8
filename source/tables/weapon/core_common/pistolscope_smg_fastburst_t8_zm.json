@@ -4,7 +4,7 @@
     "displayname": "#weapon/smg_fastburst_t8",
     "altWeapon": "#smg_fastburst_t8_zm",
     "weapon70": "#smg_fastburst_t8",
-    "streamkey": "#pistolscope_smg_fastburst_t8_soundbank",
+    "soundbank": "#pistolscope_smg_fastburst_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -71,7 +71,7 @@
     "sound610": "#hash_72a07537a35e0368",
     "sound800": "#hash_41b8cf5f69b41ad4",
     "sound810": "#hash_41b8cf5f69b41ad4",
-    "tunables1": "#hash_dc7fa4d6b0e25e7",
+    "tunables1": "#pistolscope_smg_fastburst_t8_tunables_zm",
     "weaponCamo": "#hash_19946213ca0108b3",
     "cacWeaponXCam": "#ui_cam_cac_smg_fastburst",
     "cacAttachmentsXCam": "#ui_cam_cac_smg_fastburst",

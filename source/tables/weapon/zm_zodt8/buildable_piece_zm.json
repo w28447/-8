@@ -2,7 +2,7 @@
     "name": "#buildable_piece_zm",
     "baseWeapon": "#buildable_piece",
     "displayname": "#zombie/item_meat",
-    "streamkey": "#buildable_piece_soundbank",
+    "soundbank": "#buildable_piece_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

@@ -5,7 +5,7 @@
     "image": "loot05_ui_icon_blackmarket_item_shop_wingsuit_preview_savage",
     "name": "c_t8_bo_jumpkit_savage",
     "displayname": "localized17#hash_228d88341db37905",
-    "hash_4fa85a25": "scriptbundle&dfxt_savage",
+    "dropfxtrail": "scriptbundle&dfxt_savage",
     "entitlement": "#blackops_pack_survivor",
     "parachute": "scriptbundle&c_t8_bo_parachute_savage"
 }

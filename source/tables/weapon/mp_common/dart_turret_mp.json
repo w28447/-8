@@ -2,7 +2,7 @@
     "name": "#dart_turret_mp",
     "baseWeapon": "#dart_turret",
     "weapon70": "#killstreak_dart",
-    "streamkey": "#dart_turret_soundbank",
+    "soundbank": "#dart_turret_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -51,5 +51,5 @@
     "fx_f00": "#weapon/fx_trail_rocket_wasp",
     "normalImpactFX": "#agr_explosion",
     "exitImpactFX": "#grenade_exit",
-    "normalImpactSounds": "#hash_e8e0a97bbbf0b555"
+    "normalImpactSounds": "#grenade_explode_material"
 }

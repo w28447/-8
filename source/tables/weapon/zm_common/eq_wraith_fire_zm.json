@@ -3,7 +3,7 @@
     "baseWeapon": "#eq_wraith_fire",
     "displayname": "#weapon/wraith_fire",
     "weapon70": "#eq_wraith_fire",
-    "streamkey": "#eq_wraith_fire_soundbank",
+    "soundbank": "#eq_wraith_fire_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "scrstr_1190": "tag_rag_05_animated",
@@ -49,20 +49,20 @@
     "worldModel": [
         "#wpn_t8_zm_eqp_wraith_fire_world"
     ],
-    "gadgetIconAvailable": "#hash_c30b55584d35cbc2",
-    "gadgetIconUnavailable": "#hash_ea1a3eb7a4f1e41f",
+    "gadgetIconAvailable": "#ui_icon_equpiment_zm_wraithfire",
+    "gadgetIconUnavailable": "#ui_icon_equpiment_zm_wraithfire_dark",
     "reticleCenter": "#reticle_center_cross",
     "reticleSide": "#reticle_side_round",
-    "inventoryIconZm": "#hash_c30b55584d35cbc2",
-    "hudIcon": "#hash_c30b55584d35cbc2",
-    "image_e90": "#hash_c30b55584d35cbc2",
-    "image_eb0": "#hash_c30b55584d35cbc2",
-    "image_1048": "#hash_c30b55584d35cbc2",
+    "inventoryIconZm": "#ui_icon_equpiment_zm_wraithfire",
+    "hudIcon": "#ui_icon_equpiment_zm_wraithfire",
+    "image_e90": "#ui_icon_equpiment_zm_wraithfire",
+    "image_eb0": "#ui_icon_equpiment_zm_wraithfire",
+    "image_1048": "#ui_icon_equpiment_zm_wraithfire",
     "rumble_de8": "#grenade_rumble",
     "fx_be8": "#hash_8764c40cff30dca5",
     "fx_ed8": "#hash_be014af37ce6e996",
     "fx_f00": "#hash_8764c40cff30dca5",
     "bounceImpactFX": "#grenade_bounce",
-    "normalImpactSounds": "#hash_af56ecde75b1d028",
-    "bounceImpactSounds": "#hash_c6d8f2152c519b03"
+    "normalImpactSounds": "#incendiary_grenade_explode_material",
+    "bounceImpactSounds": "#smoke_bounce"
 }

@@ -1,4 +1,3 @@
-#using scripts\zm_common\zm_faction_buffs.gsc;
 #using scripts\core_common\ai\zombie_utility;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\clientfield_shared;
@@ -17,6 +16,7 @@
 #using scripts\zm_common\zm_contracts;
 #using scripts\zm_common\zm_customgame;
 #using scripts\zm_common\zm_daily_challenges;
+#using scripts\zm_common\zm_faction_buffs;
 #using scripts\zm_common\zm_score;
 #using scripts\zm_common\zm_spawner;
 #using scripts\zm_common\zm_stats;

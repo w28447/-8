@@ -130,7 +130,7 @@ STRING "<dev string:x2584>" 0x8920
 STRING "<dev string:x25a3>" 0x893c
 # zm_red::function_7c8b5f27@14 zm_red::spawn_pegasus@30 zm_red::ride_pegasus@80 zm_red::free_eagles@68 zm_red::complete_pap@88
 STRING "<dev string:x25b8>" 0x948c 0x95c8 0x9670 0x9870 0x9b28
-# zm_red::function_71a6c3ea@20 zm_red::ride_pegasus@100 zm_red::free_eagles@c8
+# zm_red::super_open_sesame@20 zm_red::ride_pegasus@100 zm_red::free_eagles@c8
 STRING "<dev string:x25c3>" 0x9500 0x96f0 0x98d0
 # zm_red::ride_pegasus@148
 STRING "<dev string:x25e6>" 0x9738
@@ -247,7 +247,7 @@ DEVBLOCK 0x715a
 DEVBLOCK 0x7b0a
 # zm_red::function_7c8b5f27@a
 DEVBLOCK 0x9482
-# zm_red::function_71a6c3ea@2
+# zm_red::super_open_sesame@2
 DEVBLOCK 0x94e2
 # zm_red::function_313ff13@2
 DEVBLOCK 0x953a
@@ -261,9 +261,9 @@ DEVBLOCK 0x9822
 DEVBLOCK 0x9aaa
 # zm_red::function_f39d0796@2
 DEVBLOCK 0x9e52
-# zm_red::function_3594d78b@2
+# zm_red::force_spawn_gegenees@2
 DEVBLOCK 0x9e8a
-# zm_red::function_590ce3bd@2
+# zm_red::force_spawn_spartoi@2
 DEVBLOCK 0x9eb2
 # zm_red::function_80b73b4@2
 DEVBLOCK 0x9eda

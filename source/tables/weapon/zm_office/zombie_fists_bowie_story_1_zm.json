@@ -2,7 +2,7 @@
     "name": "#zombie_fists_bowie_story_1_zm",
     "baseWeapon": "#zombie_fists_bowie_story_1",
     "displayname": "#zmweapon/none",
-    "streamkey": "#zombie_fists_bowie_story_1_soundbank",
+    "soundbank": "#zombie_fists_bowie_story_1_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -45,7 +45,7 @@
     ],
     "inventoryIconZm": "#ui_icon_weapon_hud_fists",
     "meleeImpactRumble": "#defaultweapon_melee",
-    "fx_f60": "#hash_cf4f7d3d49485130",
-    "fx_f68": "#hash_cf4f7d3d49485130",
-    "normalImpactFX": "#hash_a5f3e55b8e1070ab"
+    "fx_f60": "#impacts/fx_flesh_hit_knife_zmb",
+    "fx_f68": "#impacts/fx_flesh_hit_knife_zmb",
+    "normalImpactFX": "#knife_large_enter"
 }

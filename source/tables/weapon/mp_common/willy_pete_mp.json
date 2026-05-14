@@ -2,7 +2,7 @@
     "name": "#willy_pete_mp",
     "baseWeapon": "#willy_pete",
     "displayname": "#weapon/willy_pete",
-    "streamkey": "#willy_pete_soundbank",
+    "soundbank": "#willy_pete_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",
@@ -53,5 +53,5 @@
     "image_e90": "#t7_hud_mp_inventory_smoke",
     "fx_ed8": "#explosions/fx8_exp_grenade_smoke",
     "bounceImpactFX": "#grenade_bounce",
-    "bounceImpactSounds": "#hash_c6d8f2152c519b03"
+    "bounceImpactSounds": "#smoke_bounce"
 }

@@ -3,7 +3,7 @@
     "baseWeapon": "#trophy_system",
     "displayname": "#weapon/trophy_system",
     "weapon70": "#trophy_system",
-    "streamkey": "#trophy_system_soundbank",
+    "soundbank": "#trophy_system_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -62,6 +62,6 @@
     "#hash_96850284": "#jammer_trophy",
     "#hash_26f68e75": "#icepick_trophy",
     "bounceImpactFX": "#euip_bounce",
-    "normalImpactSounds": "#hash_e8e0a97bbbf0b555",
+    "normalImpactSounds": "#grenade_explode_material",
     "bounceImpactSounds": "#trophy_bounce"
 }

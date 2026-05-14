@@ -5,6 +5,6 @@
     "name": "weapondeathfx_lava",
     "displayname": "localized17#hash_256cae539ffe6011",
     "icon": "loot04_ui_icon_cac_death_fx_lava",
-    "bullet_lava_exit:hash_eeb78b92": "impact_fx_table#bullet_lava_exit",
+    "bullet_lava_exit": "impact_fx_table#bullet_lava_exit",
     "previewimage": "image#loot04_ui_icon_blackmarket_reserves_death_fx_lava"
 }

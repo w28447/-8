@@ -1,5 +1,4 @@
 #using script_24c32478acf44108;
-#using scripts\zm_common\trials\zm_trial_trap_kills_only.gsc;
 #using script_6951ea86fdae9ae0;
 #using scripts\core_common\ai\systems\gib;
 #using scripts\core_common\array_shared;
@@ -8,6 +7,7 @@
 #using scripts\core_common\system_shared;
 #using scripts\core_common\throttle_shared;
 #using scripts\zm_common\trials\zm_trial_restrict_loadout;
+#using scripts\zm_common\trials\zm_trial_trap_kills_only;
 #using scripts\zm_common\zm_cleanup_mgr;
 #using scripts\zm_common\zm_perks;
 #using scripts\zm_common\zm_score;

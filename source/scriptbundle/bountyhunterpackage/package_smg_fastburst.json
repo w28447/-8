@@ -18,7 +18,7 @@
             "attachmentlist": "hipgrip+rf+damage"
         }
     ],
-    "hash_ef921c3c": 1,
+    "refillpickup": 1,
     "configstringfiletype": "scriptbundle",
     "tracktier": 0,
     "type": "bountyhunterpackage",

@@ -4,7 +4,7 @@
     "displayname": "#weapon/tr_damageburst_t8",
     "altWeapon": "#tr_damageburst_t8_zm",
     "weapon70": "#tr_damageburst_t8",
-    "streamkey": "#acog_tr_damageburst_t8_soundbank",
+    "soundbank": "#acog_tr_damageburst_t8_soundbank",
     "scrstr_8c8": [
         "tag_camo_darkmatter",
         "tag_camo_diamond",
@@ -68,7 +68,7 @@
     "sound610": "#hash_209cb2974ae55ec0",
     "sound800": "#hash_5ee962527afebfb1",
     "sound810": "#hash_5ee962527afebfb1",
-    "tunables1": "#hash_5d57174832b059ca",
+    "tunables1": "#acog_tr_damageburst_t8_tunables_zm",
     "weaponCamo": "#hash_6edef55481c2b6df",
     "cacWeaponXCam": "#hash_2663ad7452f8b0ca",
     "cacAttachmentsXCam": "#hash_2663ad7452f8b0ca",

@@ -5,8 +5,8 @@
             "hash_8223b0cf": 0,
             "absolutehealth": 1,
             "type": "#armor",
-            "hash_910e2f9b": "j_helmet",
-            "hash_51e8b151": "j_head",
+            "hittag2": "j_helmet",
+            "hittag1": "j_head",
             "activebydefault": 1,
             "hitradius": 12,
             "health": 100
@@ -14,8 +14,8 @@
         {
             "hash_8223b0cf": 0,
             "type": "#weakpoint",
-            "hash_910e2f9b": "j_helmet",
-            "hash_51e8b151": "j_head",
+            "hittag2": "j_helmet",
+            "hittag1": "j_head",
             "hitradius": 12,
             "health": 2
         }

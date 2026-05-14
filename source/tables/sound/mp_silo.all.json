@@ -53263,7 +53263,7 @@
             "farVerbName": "",
             "duck": "default",
             "id": "#mp_silo_large_room",
-            "reverb": "#room_livingRoom",
+            "reverb": "#room_livingroom",
             "loop": "#hash_60aa34fc6ea42b7b",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",

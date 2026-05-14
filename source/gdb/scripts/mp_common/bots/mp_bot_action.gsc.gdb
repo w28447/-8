@@ -14,7 +14,7 @@ STRING "<dev string:x130>" 0x3858
 STRING "<dev string:x13d>" 0x3fa0 0x4f98
 # mp_bot_action::use_grapple@30
 STRING "<dev string:x14c>" 0x4028
-# mp_bot_action::use_grapple@38 mp_bot_action::function_79988b4b@38 mp_bot_action::function_76c8b8e8@40 mp_bot_action::use_tripwire@64
+# mp_bot_action::use_grapple@38 mp_bot_action::deploy_smart_cover@38 mp_bot_action::use_sensor_dart@40 mp_bot_action::use_tripwire@64
 STRING "<dev string:x169>" 0x4030 0x4b28 0x50f0 0x5dbc
 # mp_bot_action::function_9a0eb4f0@190 mp_bot_action::function_17a8721f@198
 STRING "<dev string:x17e>" 0x43e8 0x4e70
@@ -24,11 +24,11 @@ STRING "<dev string:x195>" 0x44e8
 STRING "<dev string:x1b4>" 0x4768 0x5c10
 # mp_bot_action::function_4a95cdaf@2f8
 STRING "<dev string:x1c5>" 0x4820
-# mp_bot_action::function_79988b4b@30
+# mp_bot_action::deploy_smart_cover@30
 STRING "<dev string:x1d3>" 0x4b20
 # mp_bot_action::function_17a8721f@390
 STRING "<dev string:x1f7>" 0x5068
-# mp_bot_action::function_76c8b8e8@38
+# mp_bot_action::use_sensor_dart@38
 STRING "<dev string:x215>" 0x50e8
 # mp_bot_action::function_7fa22be8@2c0
 STRING "<dev string:x236>" 0x54f8
@@ -155,7 +155,7 @@ DEVBLOCK 0x48a4
 DEVBLOCK 0x495c
 # mp_bot_action::function_e43892c4@1e0
 DEVBLOCK 0x4a38
-# mp_bot_action::function_79988b4b@28
+# mp_bot_action::deploy_smart_cover@28
 DEVBLOCK 0x4b18
 # mp_bot_action::function_17a8721f@74
 DEVBLOCK 0x4d4c
@@ -165,7 +165,7 @@ DEVBLOCK 0x4dfe
 DEVBLOCK 0x4f2a
 # mp_bot_action::function_17a8721f@31c
 DEVBLOCK 0x4ff4
-# mp_bot_action::function_76c8b8e8@30
+# mp_bot_action::use_sensor_dart@30
 DEVBLOCK 0x50e0
 # mp_bot_action::function_7fa22be8@74
 DEVBLOCK 0x52ac

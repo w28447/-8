@@ -45,7 +45,7 @@
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "menu/hud_vehicle_exit:hash_4be786c9": "localized17#menu/hud_vehicle_exit",
+                        "menu/hud_vehicle_exit": "localized17#menu/hud_vehicle_exit",
                         "hash_334a8e60": "left",
                         "prompt": "+activate"
                     },
@@ -59,7 +59,7 @@
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "menu/hud_vehicle_fire:hash_4be786c9": "localized17#menu/hud_vehicle_fire",
+                        "menu/hud_vehicle_fire": "localized17#menu/hud_vehicle_fire",
                         "hash_334a8e60": "left",
                         "prompt": "+attack"
                     }
@@ -79,6 +79,6 @@
             }
         ],
         "healthpoolsize": 650,
-        "hash_7812fce8": 2
+        "healthpools": 2
     }
 }

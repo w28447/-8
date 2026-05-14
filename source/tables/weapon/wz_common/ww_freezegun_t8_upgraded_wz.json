@@ -4,7 +4,7 @@
     "displayname": "#zmweapon/ww_freezegun_t8_upgraded",
     "xhash_60": "#hash_7902748b0b03b749",
     "weapon70": "#ww_freezegun_t8",
-    "streamkey": "#ww_freezegun_t8_upgraded_soundbank",
+    "soundbank": "#ww_freezegun_t8_upgraded_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -60,9 +60,9 @@
     "tunables1": "#ww_freezegun_t8_upgraded_tunables_wz",
     "cacWeaponXCam": "#ui_cam_cac_pistol_standard",
     "cacAttachmentsXCam": "#ui_cam_cac_pistol_standard",
-    "weaponIconXCam": "#hash_e42584bd33a7bcef",
+    "weaponIconXCam": "#ui_cam_icon_pistol_standard",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_7de0c7ad5fd82d18"

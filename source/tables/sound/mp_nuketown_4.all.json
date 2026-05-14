@@ -33309,7 +33309,7 @@
             "farVerbName": "",
             "duck": "default",
             "id": "#mp_nuketown4_large_room",
-            "reverb": "#room_livingRoom",
+            "reverb": "#room_livingroom",
             "loop": "#hash_388cae614e11293",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",

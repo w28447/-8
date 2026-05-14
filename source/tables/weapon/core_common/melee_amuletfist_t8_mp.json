@@ -3,7 +3,7 @@
     "baseWeapon": "#melee_amuletfist_t8",
     "displayname": "#weapon/melee_amuletfist_t8",
     "weapon70": "#melee_amuletfist_t8",
-    "streamkey": "#melee_amuletfist_t8_soundbank",
+    "soundbank": "#melee_amuletfist_t8_soundbank",
     "scrstr_8c8": [
         "tag_camo_darkmatter",
         "tag_camo_diamond"
@@ -40,7 +40,7 @@
     "cacAttachmentsXCam": "#hash_22bb849f5016a769",
     "weaponIconXCam": "#hash_63b0369032196801",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_1e5acb871f54e2e1"

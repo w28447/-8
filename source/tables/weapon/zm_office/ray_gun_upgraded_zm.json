@@ -4,7 +4,7 @@
     "displayname": "#zombie/ray_gun_upgraded",
     "xhash_60": "#au_ray_gun",
     "weapon70": "#ray_gun",
-    "streamkey": "#ray_gun_upgraded_soundbank",
+    "soundbank": "#ray_gun_upgraded_soundbank",
     "scrstr_8c8": [
         "tag_tac_knife_animate",
         "tag_cord_animate"

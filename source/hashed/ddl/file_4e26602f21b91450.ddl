@@ -17,9 +17,9 @@ version 9 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 3 size 0xc0
@@ -47,17 +47,17 @@ version 9 {
         // offset 0x0, size 0x8
         int:8 search_count;
         // offset 0x8, size 0x40
-        uint64 hash_248adccf3c622adc;
+        uint64 party_host_user_id;
         // offset 0x48, size 0x40
-        uint64 hash_522c2d85063ec515;
+        uint64 utc_timestamp_created;
         // offset 0x88, size 0x40
-        uint64 hash_2b4a32e71c22452;
+        uint64 utc_timestamp_game_start;
         // offset 0xc8, size 0x40
-        uint64 hash_56a1b6d783aa7a25;
+        uint64 utc_timestamp_sent;
         // offset 0x108, size 0x8
-        int:8 hash_22bebb24c7131b96;
+        int:8 party_member_count;
         // offset 0x110, size 0x1
-        bool hash_329a52ffc78a973;
+        bool joined_game_in_progress;
         // offset 0x111, size 0x7
         uint:1 __pad[7];
     };
@@ -67,35 +67,35 @@ version 9 {
         // offset 0x0, size 0x40
         uint64 xuid;
         // offset 0x40, size 0x40
-        uint64 hash_1d1bf732b0333b59;
+        uint64 utc_timestamp_joined_party;
         // offset 0x80, size 0x40
-        uint64 hash_70f1765710df7771;
+        uint64 utc_timestamp_left_party;
     };
 
     // idx 6 members 11 size 0x240
     struct hash_2f2fcb46292be6b {
         // offset 0x0, size 0x40
-        uint64 hash_4c352a5202cdd23f;
+        uint64 utc_timestamp_lobby_joined;
         // offset 0x40, size 0x40
-        uint64 hash_46838162d06a1e0d;
+        uint64 matchmaking_id;
         // offset 0x80, size 0x40
-        uint64 hash_391c576ac028696a;
+        uint64 utc_timestamp_lobby_exit;
         // offset 0xc0, size 0x40
-        uint64 hash_300f7cbb339f0026;
+        uint64 lobby_host_id;
         // offset 0x100, size 0x20
         int playlist_id;
         // offset 0x120, size 0x40
-        uint64 hash_5c868775a96e3de0;
+        uint64 utc_timestamp_search_start;
         // offset 0x160, size 0x20
         int search_outcome;
         // offset 0x180, size 0x20
         int playlist_version;
         // offset 0x1a0, size 0x40
-        uint64 hash_efdbe96a9503cf;
+        uint64 lobby_id_joined;
         // offset 0x1e0, size 0x20
         int ffotd_version;
         // offset 0x200, size 0x40
-        uint64 hash_63088d1189c30c01;
+        uint64 utc_timestamp_search_end;
     };
 
     // idx 0 members 5

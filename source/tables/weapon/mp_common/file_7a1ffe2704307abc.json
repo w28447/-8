@@ -2,7 +2,7 @@
     "name": "#hash_7a1ffe2704307abc",
     "baseWeapon": "#hash_7a1ffe2704307abc",
     "weapon70": "#recon_car",
-    "streamkey": "#hash_6c98ced73900e2ce",
+    "soundbank": "#hash_6c98ced73900e2ce",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -32,13 +32,13 @@
     "tunables1": "#hash_7def06baab1b7779",
     "tracers": [
         "#lmg",
-        "#hash_e2bdd456ce2308cc"
+        "#lmg_enemy"
     ],
     "#hash_2e4a8800": "#recon_car_scoreevents",
-    "image_e90": "#hash_95fc9c7df21711ab",
-    "image_e98": "#hash_95fc9c7df21711ab",
+    "image_e90": "#ui_icon_obit_recon_car",
+    "image_e98": "#ui_icon_obit_recon_car",
     "normalImpactFX": "#bullet_ap_enter",
     "exitImpactFX": "#bullet_ap_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

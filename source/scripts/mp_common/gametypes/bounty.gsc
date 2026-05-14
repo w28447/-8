@@ -1,4 +1,3 @@
-#using scripts\killstreaks\ir_strobe_deploy.gsc;
 #using script_702b73ee97d18efe;
 #using scripts\core_common\ai_shared;
 #using scripts\core_common\animation_shared;
@@ -19,6 +18,7 @@
 #using scripts\core_common\vehicle_shared;
 #using scripts\killstreaks\airsupport;
 #using scripts\killstreaks\helicopter_shared;
+#using scripts\killstreaks\ir_strobe_deploy;
 #using scripts\killstreaks\killstreak_bundles;
 #using scripts\killstreaks\killstreaks_shared;
 #using scripts\killstreaks\killstreaks_util;

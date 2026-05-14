@@ -1,7 +1,7 @@
 {
     "name": "#turret_bo3_mil_vtol_nrc",
     "baseWeapon": "#turret_bo3_mil_vtol_nrc",
-    "streamkey": "#turret_bo3_mil_vtol_nrc_soundbank",
+    "soundbank": "#turret_bo3_mil_vtol_nrc_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -36,7 +36,7 @@
     "sound250": "#hash_242aa17124751841",
     "sound830": "#hash_36e25fd652fdfac2",
     "sound840": "#hash_7a5614b91f27d6ca",
-    "tunables1": "#hash_161abbac0b3822d6",
+    "tunables1": "#turret_bo3_mil_vtol_nrc_tunables",
     "tracers": [
         "#helicopter"
     ],
@@ -47,5 +47,5 @@
     "normalImpactFX": "#bullet_ap_enter",
     "exitImpactFX": "#bullet_ap_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

@@ -1,5 +1,5 @@
 {
-    "attack_chopper_kill": "#attack_chopper_kill",
+    "killscoreevent": "#attack_chopper_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",

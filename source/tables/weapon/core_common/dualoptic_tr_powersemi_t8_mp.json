@@ -4,7 +4,7 @@
     "displayname": "#weapon/tr_powersemi_t8",
     "altWeapon": "#tr_powersemi_t8_mp",
     "weapon70": "#tr_powersemi_t8",
-    "streamkey": "#dualoptic_tr_powersemi_t8_soundbank",
+    "soundbank": "#dualoptic_tr_powersemi_t8_soundbank",
     "scrstr_8c8": [
         "tag_rail",
         "tag_clan_tag",

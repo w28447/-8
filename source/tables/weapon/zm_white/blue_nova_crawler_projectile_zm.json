@@ -3,7 +3,7 @@
     "baseWeapon": "#blue_nova_crawler_projectile",
     "displayname": "#zmweapon/ww_crossbow_t8_upgraded",
     "weapon70": "#special_crossbow",
-    "streamkey": "#blue_nova_crawler_projectile_soundbank",
+    "soundbank": "#blue_nova_crawler_projectile_soundbank",
     "scrstr_8c8": [
         "tag_rail",
         "tag_arms_base",
@@ -87,7 +87,7 @@
     "tunables1": "#white_nova_crawler_projectile_tunables_zm",
     "cacWeaponXCam": "#ui_cam_cac_special_crossbow",
     "cacAttachmentsXCam": "#ui_cam_cac_special_crossbow",
-    "weaponIconXCam": "#hash_b2556c49982dea72",
+    "weaponIconXCam": "#ui_cam_icon_special_crossbow",
     "sharedWeaponSounds": "#crossbow",
     "projectilemodel": "#tag_origin",
     "viewmodel": [

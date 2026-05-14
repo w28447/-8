@@ -3,7 +3,7 @@
     "baseWeapon": "#tank_robot_launcher_turret",
     "displayname": "#weapon/tank_robot",
     "weapon70": "#ai_tank_marker",
-    "streamkey": "#tank_robot_launcher_turret_soundbank",
+    "soundbank": "#tank_robot_launcher_turret_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -46,7 +46,7 @@
     "tunables2": "#hash_c27062d1f3c1ee3",
     "projectilemodel": "#projectile_t8_drone_amws_missile",
     "inventoryIconZm": "#t7_hud_ks_drone_amws_drop",
-    "image_e90": "#hash_fa04720fdc28b728",
+    "image_e90": "#ui_icon_obit_tank_robot",
     "fireRumble": "#heavygun_fire",
     "laser_e30": "#default_laser",
     "fx_bc8": "#hash_5dc10a4cbf8ef0b0",
@@ -55,5 +55,5 @@
     "#hash_96850284": "#jammer_tankrobot",
     "normalImpactFX": "#hero_pineapple_explosion",
     "exitImpactFX": "#grenade_exit",
-    "normalImpactSounds": "#hash_e8e0a97bbbf0b555"
+    "normalImpactSounds": "#grenade_explode_material"
 }

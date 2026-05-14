@@ -31,5 +31,5 @@ DEVBLOCK 0x4b0
 DEVBLOCK 0x550
 # match_record::function_ded5f5b6@38
 DEVBLOCK 0x640
-# match_record::function_34800eec@20
+# match_record::inc_player_stat@20
 DEVBLOCK 0x7c8

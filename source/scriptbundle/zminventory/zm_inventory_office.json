@@ -1,17 +1,17 @@
 {
     "shieldpieces": [
         {
-            "hash_7db3435c": 0,
+            "ispersonalitem": 0,
             "pieceimage": "image#hash_57735262a5266d93",
             "clientfield": "#shield_3"
         },
         {
-            "hash_7db3435c": 0,
+            "ispersonalitem": 0,
             "pieceimage": "image#hash_57735462a52670f9",
             "clientfield": "#shield_1"
         },
         {
-            "hash_7db3435c": 0,
+            "ispersonalitem": 0,
             "pieceimage": "image#hash_57735162a5266be0",
             "clientfield": "#shield_2"
         }
@@ -28,7 +28,7 @@
                                 }
                             ],
                             "hash_1d91eeba": 1,
-                            "hash_7db3435c": 0,
+                            "ispersonalitem": 0,
                             "clientfield": "#hash_56af1bf88e729603"
                         }
                     ],
@@ -43,14 +43,14 @@
                                 }
                             ],
                             "hash_1d91eeba": 1,
-                            "hash_7db3435c": 0,
+                            "ispersonalitem": 0,
                             "clientfield": "#hash_2695edd24ddf6e7b"
                         }
                     ],
                     "list_items": 1
                 }
             ],
-            "hash_7db3435c": 0,
+            "ispersonalitem": 0,
             "hash_516217cd": 2,
             "name": "trap_part_1",
             "hash_48c5bcc6c9fab9d6:hash_a0ebe517": "#hash_48c5bcc6c9fab9d6"
@@ -66,7 +66,7 @@
                                 }
                             ],
                             "hash_1d91eeba": 1,
-                            "hash_7db3435c": 0,
+                            "ispersonalitem": 0,
                             "clientfield": "#hash_639cad37c167bf8e"
                         }
                     ],
@@ -81,14 +81,14 @@
                                 }
                             ],
                             "hash_1d91eeba": 1,
-                            "hash_7db3435c": 0,
+                            "ispersonalitem": 0,
                             "clientfield": "#hash_4a5aa2652a3ee760"
                         }
                     ],
                     "list_items": 1
                 }
             ],
-            "hash_7db3435c": 0,
+            "ispersonalitem": 0,
             "hash_516217cd": 2,
             "name": "trap_part_2",
             "hash_7d940511ce9f0341:hash_a0ebe517": "#hash_7d940511ce9f0341"
@@ -129,7 +129,7 @@
                 }
             ],
             "hash_1d91eeba": 1,
-            "hash_7db3435c": 0,
+            "ispersonalitem": 0,
             "clientfield": "#teleporter_modifier_item_1"
         },
         {
@@ -139,7 +139,7 @@
                 }
             ],
             "hash_1d91eeba": 1,
-            "hash_7db3435c": 0,
+            "ispersonalitem": 0,
             "clientfield": "#teleporter_modifier_item_2"
         },
         {
@@ -149,11 +149,11 @@
                 }
             ],
             "hash_1d91eeba": 1,
-            "hash_7db3435c": 0,
+            "ispersonalitem": 0,
             "clientfield": "#teleporter_modifier_item_3"
         }
     ],
-    "zm_office_challenges:hash_5a90928f": "#zm_office_challenges",
+    "zm_office_challenges": "#zm_office_challenges",
     "configstringfiletype": "scriptbundle",
     "hash_aa76b7dd": 1,
     "hash_3e38620e": 0,
@@ -165,5 +165,5 @@
     "hash_f22d6ad5": 5,
     "hash_518608853a37856e:hash_f7d932ea": "#hash_518608853a37856e",
     "hash_f3d39d90": 0,
-    "hash_38b9613": 0
+    "isobjprogressnonlinear": 0
 }

@@ -1,7 +1,7 @@
 {
     "name": "#zombie_perk_totem_death_dash",
     "baseWeapon": "#zombie_perk_totem_death_dash",
-    "streamkey": "#zombie_perk_totem_death_dash_soundbank",
+    "soundbank": "#zombie_perk_totem_death_dash_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",

@@ -4,7 +4,7 @@
     "displayname": "#weapon/sniper_damagesemi_t8",
     "altWeapon": "#sniper_damagesemi_t8_zm",
     "weapon70": "#sniper_damagesemi_t8",
-    "streamkey": "#acog_sniper_damagesemi_t8_soundbank",
+    "soundbank": "#acog_sniper_damagesemi_t8_soundbank",
     "scrstr_8c8": [
         "tag_scope",
         "tag_scope_mount",

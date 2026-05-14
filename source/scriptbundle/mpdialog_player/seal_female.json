@@ -19,7 +19,7 @@
     "characterselect": "#hash_49fb1a13680b485c",
     "name": "seal_female",
     "hash_14bbbbe942b9c2ca:hash_207908de": "#hash_14bbbbe942b9c2ca",
-    "hash_3e71ab56a06caf09:hash_b801796c": "#hash_3e71ab56a06caf09",
+    "exertpainpunched": "#hash_3e71ab56a06caf09",
     "boostloss": "#hash_5450b1867b779f37",
     "exertgascough": "#hash_749de8d6ae93b299",
     "exertpainfalling": "#hash_6036c035d4265d83",
@@ -37,6 +37,6 @@
     "exertbreathehurt": "#hash_6437104a3e9fedaf",
     "exertfullyhealedbreath": "#exert_fully_healed",
     "exertdeathdrowned": "#hash_6fab3e9de7c5f2b8",
-    "hash_23bc8e42a5988e8d:hash_c3b67de0": "#hash_23bc8e42a5988e8d",
+    "exertpainburn": "#hash_23bc8e42a5988e8d",
     "hash_45f566c8b3e82d7b:hash_1ca33ad4": "#hash_45f566c8b3e82d7b"
 }

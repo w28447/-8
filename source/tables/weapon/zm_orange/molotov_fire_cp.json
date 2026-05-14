@@ -2,7 +2,7 @@
     "name": "#molotov_fire_cp",
     "baseWeapon": "#molotov_fire",
     "displayname": "#weapon/molotov_grenade",
-    "streamkey": "#molotov_fire_soundbank",
+    "soundbank": "#molotov_fire_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

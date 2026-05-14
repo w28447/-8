@@ -4,7 +4,7 @@
     "displayname": "#zmweapon/sniper_quickscope_t8_upgraded",
     "xhash_60": "#hash_1c2fb7d246370cfa",
     "weapon70": "#sniper_quickscope_t8",
-    "streamkey": "#sniper_quickscope_t8_upgraded_soundbank",
+    "soundbank": "#sniper_quickscope_t8_upgraded_soundbank",
     "scrstr_8c8": [
         "tag_antenna_wire2b_pba",
         "tag_antenna_wire2_pba",
@@ -79,9 +79,9 @@
     "weaponCamo": "#hash_9af07c20a1295068",
     "cacWeaponXCam": "#ui_cam_cac_sniper_quickscope",
     "cacAttachmentsXCam": "#ui_cam_cac_sniper_quickscope",
-    "weaponIconXCam": "#hash_c212f517dce26f87",
+    "weaponIconXCam": "#ui_cam_icon_sniper_quickscope",
     "attachments": [
-        "#hash_f459a0af8e8f912b",
+        "#defaultattachment",
         "#acog_sniper_upgraded"
     ],
     "attachmentUniques": [
@@ -89,7 +89,7 @@
         "#hash_21a4a1a1b5c74a52"
     ],
     "sharedWeaponSounds": "#rifle",
-    "ballisticDesc": "#hash_f7ea811fd6047f63",
+    "ballisticDesc": "#338_fmj",
     "tracers": [
         "#hash_fa6c24626f115206",
         "#hash_f0561f677d3c0da1"
@@ -113,7 +113,7 @@
     "inventoryIconZm": "#ui_icon_weapons_zm_sniperquickscope",
     "image_e90": "#ui_icon_obit_sniper_quickscope",
     "fireRumble": "#sniper_fire",
-    "rumble_dc8": "#hash_ae361344d740b1c3",
+    "rumble_dc8": "#sniper_adsfire",
     "rumble_e20": "#hash_b22cc8a226215312",
     "fx_bc8": "#hash_3250e2dfb10f55ae",
     "fx_bd0": "#hash_1e626f5dc9860268",
@@ -122,8 +122,8 @@
     "fx_c88": "#hash_83613e307817774e",
     "fx_c90": "#hash_83613e307817774e",
     "fx_c98": "#hash_83613e307817774e",
-    "normalImpactFX": "#hash_fee0671def6af7a4",
-    "exitImpactFX": "#hash_d6ef4fc6c00cc18e",
+    "normalImpactFX": "#bullet_xlarge_enter",
+    "exitImpactFX": "#bullet_large_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

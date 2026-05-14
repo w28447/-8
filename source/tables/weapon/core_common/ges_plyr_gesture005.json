@@ -1,7 +1,7 @@
 {
     "name": "#ges_plyr_gesture005",
     "baseWeapon": "#ges_plyr_gesture005",
-    "streamkey": "#ges_plyr_gesture005_soundbank",
+    "soundbank": "#ges_plyr_gesture005_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",

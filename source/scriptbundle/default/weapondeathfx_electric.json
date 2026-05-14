@@ -5,6 +5,6 @@
     "name": "weapondeathfx_electric",
     "displayname": "localized17#hash_60a82395c46b52ac",
     "icon": "loot06_ui_icon_cac_death_fx_electric",
-    "bullet_electric_exit:hash_eeb78b92": "impact_fx_table#bullet_electric_exit",
+    "bullet_electric_exit": "impact_fx_table#bullet_electric_exit",
     "previewimage": "image#loot06_ui_icon_blackmarket_reserves_death_fx_eletric"
 }

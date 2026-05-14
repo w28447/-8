@@ -12,8 +12,8 @@
             "hash_a3841ae2": 0,
             "hash_5a8689a9": 1,
             "circleradius": 90000,
-            "hash_112f6f50": -4254,
-            "hash_b9aec05c": -1544,
+            "circleoriginy": -4254,
+            "circleoriginx": -1544,
             "hash_b97ecd26": 1,
             "hash_85589312": 30
         },
@@ -29,8 +29,8 @@
             "hash_a3841ae2": 72090,
             "hash_5a8689a9": 1,
             "circleradius": 40522,
-            "hash_112f6f50": -4254,
-            "hash_b9aec05c": -1544,
+            "circleoriginy": -4254,
+            "circleoriginx": -1544,
             "hash_b97ecd26": 1,
             "hash_85589312": 30
         },
@@ -46,8 +46,8 @@
             "hash_a3841ae2": 97090,
             "hash_5a8689a9": 1,
             "circleradius": 28473,
-            "hash_112f6f50": -4254,
-            "hash_b9aec05c": -1544,
+            "circleoriginy": -4254,
+            "circleoriginx": -1544,
             "hash_b97ecd26": 1,
             "hash_85589312": 30
         },
@@ -63,8 +63,8 @@
             "hash_a3841ae2": 112090,
             "hash_5a8689a9": 1,
             "circleradius": 12814,
-            "hash_112f6f50": -4254,
-            "hash_b9aec05c": -1544,
+            "circleoriginy": -4254,
+            "circleoriginx": -1544,
             "hash_b97ecd26": 1,
             "hash_85589312": 15
         },
@@ -80,8 +80,8 @@
             "hash_a3841ae2": 112090,
             "hash_5a8689a9": 1,
             "circleradius": 8596,
-            "hash_112f6f50": -4254,
-            "hash_b9aec05c": -1544,
+            "circleoriginy": -4254,
+            "circleoriginx": -1544,
             "hash_b97ecd26": 1,
             "hash_85589312": 15
         },
@@ -97,8 +97,8 @@
             "hash_a3841ae2": 112090,
             "hash_5a8689a9": 1,
             "circleradius": 4298,
-            "hash_112f6f50": -4254,
-            "hash_b9aec05c": -1544,
+            "circleoriginy": -4254,
+            "circleoriginx": -1544,
             "hash_b97ecd26": 1,
             "hash_85589312": 15
         },
@@ -114,8 +114,8 @@
             "hash_a3841ae2": 112090,
             "hash_5a8689a9": 1,
             "circleradius": 2124,
-            "hash_112f6f50": -4254,
-            "hash_b9aec05c": -1544,
+            "circleoriginy": -4254,
+            "circleoriginx": -1544,
             "hash_b97ecd26": 1,
             "hash_85589312": 15
         }
@@ -125,9 +125,9 @@
     "type": "deathcircle",
     "name": "wz_open_skyscraper_death_circles_debug_fast",
     "hash_8d8aa969": 0,
-    "hash_904b645e": 0,
+    "endgamedelay": 0,
     "hash_7a60538a": 7,
-    "hash_64232072": 30,
+    "initialcircledelay": 30,
     "hash_6c870a00": 10,
     "hash_ab9cd581": 20
 }

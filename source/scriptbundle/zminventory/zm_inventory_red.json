@@ -34,7 +34,7 @@
                         }
                     ],
                     "hash_1d91eeba": 7,
-                    "hash_7db3435c": 1,
+                    "ispersonalitem": 1,
                     "clientfield": "#hash_17f88a64d698025"
                 }
             ],
@@ -74,7 +74,7 @@
                         }
                     ],
                     "hash_1d91eeba": 7,
-                    "hash_7db3435c": 1,
+                    "ispersonalitem": 1,
                     "clientfield": "#hash_4bd139d5a6e3ca6f"
                 }
             ],
@@ -114,7 +114,7 @@
                         }
                     ],
                     "hash_1d91eeba": 7,
-                    "hash_7db3435c": 1,
+                    "ispersonalitem": 1,
                     "clientfield": "#hash_6afbd5b12dbdae9d"
                 }
             ],
@@ -154,7 +154,7 @@
                         }
                     ],
                     "hash_1d91eeba": 7,
-                    "hash_7db3435c": 1,
+                    "ispersonalitem": 1,
                     "clientfield": "#hash_3814a46a4c2f1235"
                 }
             ],
@@ -163,17 +163,17 @@
     ],
     "shieldpieces": [
         {
-            "hash_7db3435c": 0,
+            "ispersonalitem": 0,
             "pieceimage": "image#ui_icon_inventory_zm_red_shield_part_cover",
             "clientfield": "#zm_red_shield_part_1"
         },
         {
-            "hash_7db3435c": 0,
+            "ispersonalitem": 0,
             "pieceimage": "image#ui_icon_inventory_zm_red_shield_part_spear",
             "clientfield": "#zm_red_shield_part_2"
         },
         {
-            "hash_7db3435c": 0,
+            "ispersonalitem": 0,
             "pieceimage": "image#ui_icon_inventory_zm_red_shield_part_strap",
             "clientfield": "#zm_red_shield_part_3"
         }
@@ -190,14 +190,14 @@
                                 }
                             ],
                             "hash_1d91eeba": 1,
-                            "hash_7db3435c": 0,
+                            "ispersonalitem": 0,
                             "clientfield": "#zm_red_pegasus_bridle_item"
                         }
                     ],
                     "list_items": 1
                 }
             ],
-            "hash_7db3435c": 0,
+            "ispersonalitem": 0,
             "hash_516217cd": 1,
             "name": "zm_red_pegasus_bridle"
         },
@@ -212,7 +212,7 @@
                                 }
                             ],
                             "hash_1d91eeba": 1,
-                            "hash_7db3435c": 0,
+                            "ispersonalitem": 0,
                             "clientfield": "#hash_770d4d2226eb79"
                         },
                         {
@@ -222,7 +222,7 @@
                                 }
                             ],
                             "hash_1d91eeba": 1,
-                            "hash_7db3435c": 0,
+                            "ispersonalitem": 0,
                             "clientfield": "#hash_770a4d2226e660"
                         },
                         {
@@ -232,14 +232,14 @@
                                 }
                             ],
                             "hash_1d91eeba": 1,
-                            "hash_7db3435c": 0,
+                            "ispersonalitem": 0,
                             "clientfield": "#hash_770b4d2226e813"
                         }
                     ],
                     "list_items": 3
                 }
             ],
-            "hash_7db3435c": 0,
+            "ispersonalitem": 0,
             "hash_516217cd": 1,
             "name": "zm_red_pegasus_parts"
         }
@@ -284,6 +284,6 @@
     "hash_c029b82f": 4,
     "zm_red_objective_progress": "#zm_red_objective_progress",
     "hash_f3d39d90": 0,
-    "hash_38b9613": 0,
+    "isobjprogressnonlinear": 0,
     "hash_30727aefda60cbd4:hash_16fb993f": "image#hash_30727aefda60cbd4"
 }

@@ -19,7 +19,7 @@
     "characterselect": "#hash_6feeb54f1775f88f",
     "name": "weaver",
     "hash_bce1126fb314c41:hash_207908de": "#hash_bce1126fb314c41",
-    "hash_6813dbd3e0c88bc8:hash_b801796c": "#hash_6813dbd3e0c88bc8",
+    "exertpainpunched": "#hash_6813dbd3e0c88bc8",
     "boostloss": "#hash_1991a2c95e71f4be",
     "exertgascough": "#hash_35a94f45188ce0e",
     "exertpainfalling": "#hash_16c3031802e4a2f6",
@@ -37,6 +37,6 @@
     "exertbreathehurt": "#hash_342b4395ff9d3e2c",
     "exertfullyhealedbreath": "#exert_fully_healed",
     "exertdeathdrowned": "#hash_2cbc6bf978771c21",
-    "hash_231bb73c148a0bc0:hash_c3b67de0": "#hash_231bb73c148a0bc0",
+    "exertpainburn": "#hash_231bb73c148a0bc0",
     "hash_343f87382035ab02:hash_1ca33ad4": "#hash_343f87382035ab02"
 }

@@ -2,7 +2,7 @@
     "name": "#spectre_grenade_wz",
     "baseWeapon": "#spectre_grenade",
     "displayname": "#weapon/willy_pete",
-    "streamkey": "#spectre_grenade_soundbank",
+    "soundbank": "#spectre_grenade_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",
@@ -54,5 +54,5 @@
     "image_e90": "#ui_icon_inventory_smoke_grenade",
     "fx_ed8": "#hash_a86840611a72cf6",
     "bounceImpactFX": "#grenade_bounce",
-    "bounceImpactSounds": "#hash_c6d8f2152c519b03"
+    "bounceImpactSounds": "#smoke_bounce"
 }

@@ -2700,7 +2700,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -2713,7 +2713,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -2726,7 +2726,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -2739,7 +2739,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -2752,225 +2752,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
-                            "translationX": 0,
-                            "translationY": 0,
-                            "scaleX": 5,
-                            "scaleY": 5,
-                            "rotation": 0,
-                            "normalBlend": 1,
-                            "glossBlend": 1,
-                            "detailHeight": 0,
-                            "detailScale": "(0, 0)",
-                            "albedoTint": 0
-                        },
-                        {
-                            "camoMaterial": "#hash_c39f71a28db2062f",
-                            "translationX": 0,
-                            "translationY": 0,
-                            "scaleX": 5,
-                            "scaleY": 5,
-                            "rotation": 0,
-                            "normalBlend": 1,
-                            "glossBlend": 1,
-                            "detailHeight": 0,
-                            "detailScale": "(0, 0)",
-                            "albedoTint": 0
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "materials": [
-                {
-                    "baseMaterials": [
-                        {
-                            "material": "#hash_27cc91326871d94b"
-                        },
-                        {
-                            "material": "#hash_69b7947e820e9f3e"
-                        },
-                        {
-                            "material": "#hash_27cc92326871dafe"
-                        },
-                        {
-                            "material": "#hash_76c20ea9690863c8"
-                        },
-                        {
-                            "material": "#hash_237adde7877c0ba3"
-                        },
-                        {
-                            "material": "#hash_255e617ccbaf8e23"
-                        },
-                        {
-                            "material": "#hash_6824cb98de3d5447"
-                        },
-                        {
-                            "material": "#hash_96bc4e7ac447236"
-                        },
-                        {
-                            "material": "#hash_96bc6e7ac44759c"
-                        },
-                        {
-                            "material": "#hash_96bc7e7ac44774f"
-                        },
-                        {
-                            "material": "#hash_702e93efecac3010"
-                        },
-                        {
-                            "material": "#hash_7156c38ef09259e8"
-                        },
-                        {
-                            "material": "#hash_65f2fad4dbe88db9"
-                        }
-                    ],
-                    "camoMaterialChannels": [
-                        {
-                            "camoMaterial": "#hash_ed061764a3f26c52",
-                            "translationX": 0,
-                            "translationY": 0,
-                            "scaleX": 4,
-                            "scaleY": 4,
-                            "rotation": 0,
-                            "normalBlend": 1,
-                            "glossBlend": 1,
-                            "detailHeight": 0,
-                            "detailScale": "(0, 0)",
-                            "albedoTint": 0
-                        },
-                        {
-                            "camoMaterial": "#hash_ed061764a3f26c52",
-                            "translationX": 0,
-                            "translationY": 0,
-                            "scaleX": 4,
-                            "scaleY": 4,
-                            "rotation": 0,
-                            "normalBlend": 1,
-                            "glossBlend": 1,
-                            "detailHeight": 0,
-                            "detailScale": "(0, 0)",
-                            "albedoTint": 0
-                        },
-                        {
-                            "camoMaterial": "#hash_ed061764a3f26c52",
-                            "translationX": 0,
-                            "translationY": 0,
-                            "scaleX": 4,
-                            "scaleY": 4,
-                            "rotation": 0,
-                            "normalBlend": 1,
-                            "glossBlend": 1,
-                            "detailHeight": 0,
-                            "detailScale": "(0, 0)",
-                            "albedoTint": 0
-                        },
-                        {
-                            "camoMaterial": "#hash_ed061764a3f26c52",
-                            "translationX": 0,
-                            "translationY": 0,
-                            "scaleX": 4,
-                            "scaleY": 4,
-                            "rotation": 0,
-                            "normalBlend": 1,
-                            "glossBlend": 1,
-                            "detailHeight": 0,
-                            "detailScale": "(0, 0)",
-                            "albedoTint": 0
-                        },
-                        {
-                            "camoMaterial": "#hash_ed061764a3f26c52",
-                            "translationX": 0,
-                            "translationY": 0,
-                            "scaleX": 4,
-                            "scaleY": 4,
-                            "rotation": 0,
-                            "normalBlend": 1,
-                            "glossBlend": 1,
-                            "detailHeight": 0,
-                            "detailScale": "(0, 0)",
-                            "albedoTint": 0
-                        },
-                        {
-                            "camoMaterial": "#hash_ed061764a3f26c52",
-                            "translationX": 0,
-                            "translationY": 0,
-                            "scaleX": 4,
-                            "scaleY": 4,
-                            "rotation": 0,
-                            "normalBlend": 1,
-                            "glossBlend": 1,
-                            "detailHeight": 0,
-                            "detailScale": "(0, 0)",
-                            "albedoTint": 0
-                        },
-                        {
-                            "camoMaterial": "#hash_ed061764a3f26c52",
-                            "translationX": 0,
-                            "translationY": 0,
-                            "scaleX": 4,
-                            "scaleY": 4,
-                            "rotation": 0,
-                            "normalBlend": 1,
-                            "glossBlend": 1,
-                            "detailHeight": 0,
-                            "detailScale": "(0, 0)",
-                            "albedoTint": 0
-                        },
-                        {
-                            "camoMaterial": "#hash_c7973e537117af97",
-                            "translationX": 0,
-                            "translationY": 0,
-                            "scaleX": 5,
-                            "scaleY": 5,
-                            "rotation": 0,
-                            "normalBlend": 1,
-                            "glossBlend": 1,
-                            "detailHeight": 0,
-                            "detailScale": "(0, 0)",
-                            "albedoTint": 0
-                        },
-                        {
-                            "camoMaterial": "#hash_c7973e537117af97",
-                            "translationX": 0,
-                            "translationY": 0,
-                            "scaleX": 5,
-                            "scaleY": 5,
-                            "rotation": 0,
-                            "normalBlend": 1,
-                            "glossBlend": 1,
-                            "detailHeight": 0,
-                            "detailScale": "(0, 0)",
-                            "albedoTint": 0
-                        },
-                        {
-                            "camoMaterial": "#hash_c7973e537117af97",
-                            "translationX": 0,
-                            "translationY": 0,
-                            "scaleX": 5,
-                            "scaleY": 5,
-                            "rotation": 0,
-                            "normalBlend": 1,
-                            "glossBlend": 1,
-                            "detailHeight": 0,
-                            "detailScale": "(0, 0)",
-                            "albedoTint": 0
-                        },
-                        {
-                            "camoMaterial": "#hash_c7973e537117af97",
-                            "translationX": 0,
-                            "translationY": 0,
-                            "scaleX": 5,
-                            "scaleY": 5,
-                            "rotation": 0,
-                            "normalBlend": 1,
-                            "glossBlend": 1,
-                            "detailHeight": 0,
-                            "detailScale": "(0, 0)",
-                            "albedoTint": 0
-                        },
-                        {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -3045,7 +2827,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_ed061164a3f26220",
+                            "camoMaterial": "#hash_ed061764a3f26c52",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 4,
@@ -3058,7 +2840,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_ed061164a3f26220",
+                            "camoMaterial": "#hash_ed061764a3f26c52",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 4,
@@ -3071,7 +2853,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_ed061164a3f26220",
+                            "camoMaterial": "#hash_ed061764a3f26c52",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 4,
@@ -3084,7 +2866,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_ed061164a3f26220",
+                            "camoMaterial": "#hash_ed061764a3f26c52",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 4,
@@ -3097,7 +2879,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_ed061164a3f26220",
+                            "camoMaterial": "#hash_ed061764a3f26c52",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 4,
@@ -3110,7 +2892,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_ed061164a3f26220",
+                            "camoMaterial": "#hash_ed061764a3f26c52",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 4,
@@ -3123,7 +2905,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_ed061164a3f26220",
+                            "camoMaterial": "#hash_ed061764a3f26c52",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 4,
@@ -3136,7 +2918,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -3149,7 +2931,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -3162,7 +2944,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -3175,7 +2957,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -3188,7 +2970,225 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 5,
+                            "scaleY": 5,
+                            "rotation": 0,
+                            "normalBlend": 1,
+                            "glossBlend": 1,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        },
+                        {
+                            "camoMaterial": "#hash_c39f71a28db2062f",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 5,
+                            "scaleY": 5,
+                            "rotation": 0,
+                            "normalBlend": 1,
+                            "glossBlend": 1,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "materials": [
+                {
+                    "baseMaterials": [
+                        {
+                            "material": "#hash_27cc91326871d94b"
+                        },
+                        {
+                            "material": "#hash_69b7947e820e9f3e"
+                        },
+                        {
+                            "material": "#hash_27cc92326871dafe"
+                        },
+                        {
+                            "material": "#hash_76c20ea9690863c8"
+                        },
+                        {
+                            "material": "#hash_237adde7877c0ba3"
+                        },
+                        {
+                            "material": "#hash_255e617ccbaf8e23"
+                        },
+                        {
+                            "material": "#hash_6824cb98de3d5447"
+                        },
+                        {
+                            "material": "#hash_96bc4e7ac447236"
+                        },
+                        {
+                            "material": "#hash_96bc6e7ac44759c"
+                        },
+                        {
+                            "material": "#hash_96bc7e7ac44774f"
+                        },
+                        {
+                            "material": "#hash_702e93efecac3010"
+                        },
+                        {
+                            "material": "#hash_7156c38ef09259e8"
+                        },
+                        {
+                            "material": "#hash_65f2fad4dbe88db9"
+                        }
+                    ],
+                    "camoMaterialChannels": [
+                        {
+                            "camoMaterial": "#hash_ed061164a3f26220",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 4,
+                            "scaleY": 4,
+                            "rotation": 0,
+                            "normalBlend": 1,
+                            "glossBlend": 1,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        },
+                        {
+                            "camoMaterial": "#hash_ed061164a3f26220",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 4,
+                            "scaleY": 4,
+                            "rotation": 0,
+                            "normalBlend": 1,
+                            "glossBlend": 1,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        },
+                        {
+                            "camoMaterial": "#hash_ed061164a3f26220",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 4,
+                            "scaleY": 4,
+                            "rotation": 0,
+                            "normalBlend": 1,
+                            "glossBlend": 1,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        },
+                        {
+                            "camoMaterial": "#hash_ed061164a3f26220",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 4,
+                            "scaleY": 4,
+                            "rotation": 0,
+                            "normalBlend": 1,
+                            "glossBlend": 1,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        },
+                        {
+                            "camoMaterial": "#hash_ed061164a3f26220",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 4,
+                            "scaleY": 4,
+                            "rotation": 0,
+                            "normalBlend": 1,
+                            "glossBlend": 1,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        },
+                        {
+                            "camoMaterial": "#hash_ed061164a3f26220",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 4,
+                            "scaleY": 4,
+                            "rotation": 0,
+                            "normalBlend": 1,
+                            "glossBlend": 1,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        },
+                        {
+                            "camoMaterial": "#hash_ed061164a3f26220",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 4,
+                            "scaleY": 4,
+                            "rotation": 0,
+                            "normalBlend": 1,
+                            "glossBlend": 1,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        },
+                        {
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 5,
+                            "scaleY": 5,
+                            "rotation": 0,
+                            "normalBlend": 1,
+                            "glossBlend": 1,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        },
+                        {
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 5,
+                            "scaleY": 5,
+                            "rotation": 0,
+                            "normalBlend": 1,
+                            "glossBlend": 1,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        },
+                        {
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 5,
+                            "scaleY": 5,
+                            "rotation": 0,
+                            "normalBlend": 1,
+                            "glossBlend": 1,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        },
+                        {
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 5,
+                            "scaleY": 5,
+                            "rotation": 0,
+                            "normalBlend": 1,
+                            "glossBlend": 1,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        },
+                        {
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -49259,7 +49259,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 2,
@@ -49272,7 +49272,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 2,
@@ -49285,7 +49285,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 2,
@@ -49298,7 +49298,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 2,
@@ -49311,7 +49311,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 2,

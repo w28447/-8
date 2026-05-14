@@ -1,7 +1,7 @@
 {
     "name": "#smart_cover_detonator_mp",
     "baseWeapon": "#smart_cover_detonator",
-    "streamkey": "#smart_cover_detonator_soundbank",
+    "soundbank": "#smart_cover_detonator_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

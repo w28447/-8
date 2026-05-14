@@ -3,7 +3,7 @@
     "baseWeapon": "#ww_tesla_gun_t8",
     "displayname": "#zombie/tesla_gun",
     "weapon70": "#tesla_gun",
-    "streamkey": "#ww_tesla_gun_t8_soundbank",
+    "soundbank": "#ww_tesla_gun_t8_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -68,12 +68,12 @@
         "#wpn_t8_zm_dg2_world"
     ],
     "reticleCenter": "#hud_flamethrower_reticle",
-    "inventoryIconZm": "#hash_a5740919ad0c89d7",
+    "inventoryIconZm": "#ui_icon_weapons_zm_tricannon_yellow",
     "fireRumble": "#damage_heavy",
     "fx_bc8": "#zombie/fx_tesla_muz_view_zmb",
     "fx_bd0": "#zombie/fx_tesla_muz_world_zmb",
     "fx_f00": "#zombie/fx_tesla_electric_bolt_zmb",
     "normalImpactFX": "#projectile_tesla_enter",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

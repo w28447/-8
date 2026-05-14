@@ -3,7 +3,7 @@
     "baseWeapon": "#gadget_radiation_field_anims",
     "displayname": "#gadget_radiation_field/name",
     "weapon70": "#gadget_radiation_field",
-    "streamkey": "#gadget_radiation_field_anims_soundbank",
+    "soundbank": "#gadget_radiation_field_anims_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -47,13 +47,13 @@
     "worldModel": [
         "#wpn_t8_sig_radiation_device_world"
     ],
-    "gadgetIconAvailable": "#hash_8dc361b9f4099990",
+    "gadgetIconAvailable": "#ui_icon_ability_radiationfield",
     "gadgetIconUnavailable": "#ui_icon_ability_radiationfield_dark",
     "reticleSide": "#reticle_side_small",
     "inventoryIconZm": "#ui_icon_ability_radiationfield_dark",
-    "hudIcon": "#hash_8dc361b9f4099990",
-    "image_e90": "#hash_f1144dedf2d9352a",
-    "image_1048": "#hash_8dc361b9f4099990",
+    "hudIcon": "#ui_icon_ability_radiationfield",
+    "image_e90": "#ui_icon_obit_radiationfield",
+    "image_1048": "#ui_icon_ability_radiationfield",
     "fireRumble": "#assault_fire",
     "normalImpactSounds": "#bullet_impact"
 }

@@ -5,7 +5,7 @@
     "xhash_60": "#hash_742873882276263",
     "weapon70": "#pistol_topbreak_t8",
     "dualwieldWeaponName": "#pistol_topbreak_t8_upgraded_zm",
-    "streamkey": "#pistol_topbreak_t8_lh_upgraded_soundbank",
+    "soundbank": "#pistol_topbreak_t8_lh_upgraded_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -73,13 +73,13 @@
     "cacAttachmentsXCam": "#ui_cam_cac_pistol_topbreak",
     "weaponIconXCam": "#ui_cam_icon_pistol_shotgun",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_6d5da4c74dc6e246"
     ],
     "sharedWeaponSounds": "#pistol",
-    "ballisticDesc": "#hash_fa8de762a01fac90",
+    "ballisticDesc": "#9mm_fmj",
     "projectilemodel": "#wpn_t8_hero_war_machine_projectile",
     "viewmodel": [
         "#wpn_t8_zm_pistol_webly_view_dw"
@@ -88,16 +88,16 @@
         "#wpn_t8_zm_pistol_webly_world_dw"
     ],
     "reticleSide": "#reticle_side_small",
-    "inventoryIconZm": "#hash_faaaacd7f5bba0c7",
+    "inventoryIconZm": "#ui_icon_weapons_zm_pistoltopbreak",
     "image_e90": "#t7_icon_weapon_pistol_shotgun_kf",
     "fireRumble": "#damage_heavy",
     "fx_bc8": "#hash_785b070ad413a638",
     "fx_bd0": "#hash_59dcccd22b7d037e",
-    "fx_f00": "#hash_80e7395fb42d35f6",
-    "normalImpactFX": "#hash_c80a3191309d3449",
+    "fx_f00": "#weapon/fx_trail_grenade",
+    "normalImpactFX": "#grenade_explosion",
     "exitImpactFX": "#grenade_exit",
     "bounceImpactFX": "#grenade_bounce",
     "dudImpactFX": "#grenade_dud",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

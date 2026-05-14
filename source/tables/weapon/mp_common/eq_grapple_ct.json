@@ -3,7 +3,7 @@
     "baseWeapon": "#eq_grapple_ct",
     "displayname": "#weapon/grapple",
     "weapon70": "#eq_grapple",
-    "streamkey": "#eq_grapple_ct_soundbank",
+    "soundbank": "#eq_grapple_ct_soundbank",
     "scrstr_8c8": [
         "tag_equipment_hero"
     ],
@@ -60,17 +60,17 @@
     "worldModel": [
         "#wpn_t8_sig_grapple_gun_world"
     ],
-    "gadgetIconAvailable": "#hash_b96672094bfb90cc",
-    "gadgetIconUnavailable": "#hash_c0775f7aa5ce2e21",
+    "gadgetIconAvailable": "#ui_icon_equipment_grapplegun",
+    "gadgetIconUnavailable": "#ui_icon_equipment_grapplegun_dark",
     "inventoryIconZm": "#ui_icon_weapon_hud_sig_grapple_gun",
-    "hudIcon": "#hash_b96672094bfb90cc",
+    "hudIcon": "#ui_icon_equipment_grapplegun",
     "image_d90": "#hash_9113a4bd1b38c65",
     "image_d98": "#hash_2e9dc9b8c77929cf",
     "image_da0": "#hash_14f576f68f2c16fe",
     "image_da8": "#hash_14f576f68f2c16fe",
     "image_db0": "#hash_70b118a066344228",
     "image_db8": "#hash_4945885b626256e3",
-    "image_e90": "#hash_b96672094bfb90cc",
+    "image_e90": "#ui_icon_equipment_grapplegun",
     "rumble_e00": "#grapple_collision",
     "rumble_e08": "#grapple_hit",
     "rumble_e10": "#grapple_detach",

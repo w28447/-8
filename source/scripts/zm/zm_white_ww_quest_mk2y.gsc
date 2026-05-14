@@ -1,4 +1,3 @@
-#using scripts\zm\zm_white_defend_soul_capture.gsc;
 #using scripts\core_common\animation_shared;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\callbacks_shared;
@@ -9,6 +8,7 @@
 #using scripts\core_common\util_shared;
 #using scripts\core_common\values_shared;
 #using scripts\zm\zm_hms_util;
+#using scripts\zm\zm_white_defend_soul_capture;
 #using scripts\zm\zm_white_main_quest;
 #using scripts\zm\zm_white_portals;
 #using scripts\zm\zm_white_util;

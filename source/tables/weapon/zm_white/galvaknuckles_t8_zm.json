@@ -3,7 +3,7 @@
     "baseWeapon": "#galvaknuckles_t8",
     "displayname": "#zmweapon/galvaknuckles_t8",
     "weapon70": "#galvaknuckles_t8",
-    "streamkey": "#galvaknuckles_t8_soundbank",
+    "soundbank": "#galvaknuckles_t8_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -46,9 +46,9 @@
     "fireRumble": "#defaultweapon_melee",
     "fx_bc8": "#hash_133032a87e60f5e4",
     "fx_bd0": "#hash_133032a87e60f5e4",
-    "fx_c80": "#hash_b6479a6885575e5f",
-    "fx_c88": "#hash_b6479a6885575e5f",
-    "fx_c90": "#hash_b6479a6885575e5f",
-    "fx_c98": "#hash_b6479a6885575e5f",
+    "fx_c80": "#weapon/fx_shellejects_pistol",
+    "fx_c88": "#weapon/fx_shellejects_pistol",
+    "fx_c90": "#weapon/fx_shellejects_pistol",
+    "fx_c98": "#weapon/fx_shellejects_pistol",
     "normalImpactFX": "#hash_7dafc40ae5fd9e1e"
 }

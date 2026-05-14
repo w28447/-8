@@ -1,14 +1,14 @@
 {
-    "purifier_multikill_2": "#purifier_multikill_2",
-    "purifier_multikill_2": "#purifier_multikill_2",
-    "purifier_kill": "#purifier_kill",
+    "multikill2scoreevent": "#purifier_multikill_2",
+    "multikill6scoreevent": "#purifier_multikill_2",
+    "killscoreevent": "#purifier_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
-    "purifier_multikill_2": "#purifier_multikill_2",
+    "multikill4scoreevent": "#purifier_multikill_2",
     "name": "hero_flamethrower_scoreevents",
     "customsettingstype": "ability",
-    "purifier_multikill_2": "#purifier_multikill_2",
+    "multikill5scoreevent": "#purifier_multikill_2",
     "purifier_shutdown": "#purifier_shutdown",
-    "purifier_multikill_2": "#purifier_multikill_2"
+    "multikill3scoreevent": "#purifier_multikill_2"
 }

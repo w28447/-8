@@ -15,7 +15,7 @@ STRING "<dev string:x47>" 0x1fa4
 ######################################################
 # bat::__init__@184
 DEVBLOCK 0x444
-# bat::function_6c223039@f4
+# bat::batonspawned@f4
 DEVBLOCK 0x564
 # bat::function_1fff2d@c2
 DEVBLOCK 0x1452

@@ -3,7 +3,7 @@
     "baseWeapon": "#pistol_standard",
     "displayname": "#weapon/pistol_standard",
     "weapon70": "#pistol_standard",
-    "streamkey": "#pistol_standard_soundbank",
+    "soundbank": "#pistol_standard_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -57,11 +57,11 @@
     "tunables1": "#pistol_standard_tunables_zm",
     "cacWeaponXCam": "#ui_cam_cac_pistol_standard",
     "cacAttachmentsXCam": "#ui_cam_cac_pistol_standard",
-    "weaponIconXCam": "#hash_e42584bd33a7bcef",
+    "weaponIconXCam": "#ui_cam_icon_pistol_standard",
     "sharedWeaponSounds": "#pistol",
     "tracers": [
         "#pistol",
-        "#hash_c0ce0b8ef958c831"
+        "#pistol_enemy"
     ],
     "viewmodel": [
         "#wpn_t7_mr6_view"
@@ -79,8 +79,8 @@
     "fx_c88": "#hash_8a5567d0168ae02f",
     "fx_c90": "#hash_8a5567d0168ae02f",
     "fx_c98": "#hash_8a5567d0168ae02f",
-    "normalImpactFX": "#hash_e1b4c700060ee40c",
-    "exitImpactFX": "#hash_83b4b1d145ec9892",
+    "normalImpactFX": "#bullet_small_enter",
+    "exitImpactFX": "#bullet_small_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

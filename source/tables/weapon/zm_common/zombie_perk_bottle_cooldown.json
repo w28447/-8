@@ -1,7 +1,7 @@
 {
     "name": "#zombie_perk_bottle_cooldown",
     "baseWeapon": "#zombie_perk_bottle_cooldown",
-    "streamkey": "#zombie_perk_bottle_cooldown_soundbank",
+    "soundbank": "#zombie_perk_bottle_cooldown_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",

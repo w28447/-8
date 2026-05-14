@@ -4,7 +4,7 @@
     "displayname": "#weapon/ar_an94_t8",
     "xhash_60": "#hash_4a1bc221c1a6f989",
     "weapon70": "#ar_an94_t8",
-    "streamkey": "#ar_an94_t8_soundbank",
+    "soundbank": "#ar_an94_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -77,7 +77,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_ar_an94",
     "weaponIconXCam": "#ui_cam_icon_ar_an94",
     "attachments": [
-        "#hash_f459a0af8e8f912b",
+        "#defaultattachment",
         "#acog_wz"
     ],
     "attachmentUniques": [

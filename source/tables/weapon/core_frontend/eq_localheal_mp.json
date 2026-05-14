@@ -4,7 +4,7 @@
     "displayname": "#weapon/local_heal",
     "weapon70": "#eq_localheal",
     "luigiReticleWidget": "SwipeTak5",
-    "streamkey": "#eq_localheal_soundbank",
+    "soundbank": "#eq_localheal_soundbank",
     "scrstr_8c8": [
         "tag_tac_knife_animate",
         "tag_cord_animate"
@@ -48,7 +48,7 @@
     "tunables1": "#eq_localheal_tunables_mp",
     "cacWeaponXCam": "#ui_cam_cac_pistol_standard",
     "cacAttachmentsXCam": "#ui_cam_cac_pistol_standard",
-    "weaponIconXCam": "#hash_e42584bd33a7bcef",
+    "weaponIconXCam": "#ui_cam_icon_pistol_standard",
     "sharedWeaponSounds": "#equipment",
     "customsettings": "#localheal_custom_settings",
     "#hash_2e4a8800": "#localheal_scoreevents",
@@ -71,6 +71,6 @@
     "fx_c88": "#hash_8a5567d0168ae02f",
     "fx_c90": "#hash_8d185de6377a14df",
     "fx_c98": "#hash_8a5567d0168ae02f",
-    "normalImpactFX": "#hash_e1b4c700060ee40c",
-    "exitImpactFX": "#hash_83b4b1d145ec9892"
+    "normalImpactFX": "#bullet_small_enter",
+    "exitImpactFX": "#bullet_small_exit"
 }

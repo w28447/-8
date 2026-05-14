@@ -10,7 +10,7 @@
                         }
                     ],
                     "hash_1d91eeba": 1,
-                    "hash_7db3435c": 0,
+                    "ispersonalitem": 0,
                     "clientfield": "#hash_40b098e265f3e592"
                 },
                 {
@@ -21,7 +21,7 @@
                         }
                     ],
                     "hash_1d91eeba": 1,
-                    "hash_7db3435c": 0,
+                    "ispersonalitem": 0,
                     "clientfield": "#hash_40b097e265f3e3df"
                 },
                 {
@@ -32,7 +32,7 @@
                         }
                     ],
                     "hash_1d91eeba": 1,
-                    "hash_7db3435c": 0,
+                    "ispersonalitem": 0,
                     "clientfield": "#hash_40b096e265f3e22c"
                 }
             ],
@@ -41,17 +41,17 @@
     ],
     "shieldpieces": [
         {
-            "hash_7db3435c": 0,
+            "ispersonalitem": 0,
             "pieceimage": "image#hash_59dbf83a8853a547",
             "clientfield": "#zm_escape_shield_part2"
         },
         {
-            "hash_7db3435c": 0,
+            "ispersonalitem": 0,
             "pieceimage": "image#hash_7ecdca2dfb9523e8",
             "clientfield": "#zm_escape_shield_part1"
         },
         {
-            "hash_7db3435c": 0,
+            "ispersonalitem": 0,
             "pieceimage": "image#hash_463a54ad71577205",
             "clientfield": "#zm_escape_shield_part3"
         }
@@ -101,6 +101,6 @@
     "hash_c029b82f": 1,
     "zm_escape_paschal": "#zm_escape_paschal",
     "hash_f3d39d90": 0,
-    "hash_38b9613": 0,
+    "isobjprogressnonlinear": 0,
     "hash_30727aefda60cbd4:hash_16fb993f": "image#hash_30727aefda60cbd4"
 }

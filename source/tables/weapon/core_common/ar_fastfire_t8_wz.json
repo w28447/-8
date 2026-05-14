@@ -4,7 +4,7 @@
     "displayname": "#weapon/ar_fastfire_t8",
     "xhash_60": "#hash_33c9bd5cc6b9669d",
     "weapon70": "#ar_fastfire_t8",
-    "streamkey": "#ar_fastfire_t8_soundbank",
+    "soundbank": "#ar_fastfire_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -78,7 +78,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_ar_fastfire",
     "weaponIconXCam": "#hash_5a7ca5fcf93274d8",
     "attachments": [
-        "#hash_f459a0af8e8f912b",
+        "#defaultattachment",
         "#acog_wz"
     ],
     "attachmentUniques": [

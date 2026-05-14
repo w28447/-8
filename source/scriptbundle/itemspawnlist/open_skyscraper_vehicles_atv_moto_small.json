@@ -23,9 +23,9 @@
     "type": "itemspawnlist",
     "hash_345eba59": 3,
     "vehiclespawner": 1,
-    "hash_9b009839": -1,
+    "supplystashmaxspawns": -1,
     "hash_dc7ffbef": 1,
     "name": "open_skyscraper_vehicles_atv_moto_small",
     "supplystashweight": 100,
-    "hash_dc91e192": 0
+    "prioritizedspawning": 0
 }

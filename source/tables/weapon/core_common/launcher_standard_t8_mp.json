@@ -4,7 +4,7 @@
     "displayname": "#weapon/launcher_standard_t8",
     "weapon70": "#launcher_standard_t8",
     "luigiReticleWidget": "rocketLauncherReticle",
-    "streamkey": "#launcher_standard_t8_soundbank",
+    "soundbank": "#launcher_standard_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -65,7 +65,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_launcher_standard",
     "weaponIconXCam": "#ui_cam_icon_launcher_standard",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_b9d7526cd644a9c"

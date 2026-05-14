@@ -48,19 +48,19 @@ STRING "<dev string:x1b8>" 0x16f4 0x173c
 STRING "<dev string:x1c4>" 0x185c 0x18c4
 # wz_ai_utils::function_bdb2b85b@e0
 STRING "<dev string:x1d4>" 0x4a58
-# wz_ai_utils::function_b4f41a02@118 wz_ai_utils::function_b4f41a02@230 wz_ai_utils::function_b4f41a02@25c wz_ai_utils::function_b4f41a02@404
+# wz_ai_utils::wz_ai_devgui@118 wz_ai_utils::wz_ai_devgui@230 wz_ai_utils::wz_ai_devgui@25c wz_ai_utils::wz_ai_devgui@404
 STRING "<dev string:x38>" 0x780 0x898 0x8c4 0xa6c
-# wz_ai_utils::function_b4f41a02@188
+# wz_ai_utils::wz_ai_devgui@188
 STRING "<dev string:x3b>" 0x7f0
-# wz_ai_utils::function_b4f41a02@1a4
+# wz_ai_utils::wz_ai_devgui@1a4
 STRING "<dev string:x5b>" 0x80c
-# wz_ai_utils::function_b4f41a02@1c4
+# wz_ai_utils::wz_ai_devgui@1c4
 STRING "<dev string:x81>" 0x82c
-# wz_ai_utils::function_b4f41a02@1ec
+# wz_ai_utils::wz_ai_devgui@1ec
 STRING "<dev string:x86>" 0x854
-# wz_ai_utils::function_b4f41a02@208
+# wz_ai_utils::wz_ai_devgui@208
 STRING "<dev string:xa9>" 0x870
-# wz_ai_utils::function_b4f41a02@270
+# wz_ai_utils::wz_ai_devgui@270
 STRING "<dev string:xea>" 0x8d8
 # wz_ai_utils::debug_ai@68
 STRING "<dev string:xee>" 0xb08
@@ -71,7 +71,7 @@ STRING "<dev string:xfa>" 0xb20
 ######################################################
 # wz_ai_utils::__init__@48
 DEVBLOCK 0x2f8
-# wz_ai_utils::function_b4f41a02@7a
+# wz_ai_utils::wz_ai_devgui@7a
 DEVBLOCK 0x6e2
 # wz_ai_utils::debug_ai@42
 DEVBLOCK 0xae2

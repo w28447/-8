@@ -17,9 +17,9 @@ version 1 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 3 size 0xc0
@@ -47,13 +47,13 @@ version 1 {
     // offset 0x20, size 0x1f8
     telemetry_header telemetry;
     // offset 0x218, size 0x20
-    int hash_47b625c48c3b5fcc;
+    int build_changelist;
     // offset 0x238, size 0x400
     string(128) build_machine;
     // offset 0x638, size 0xc0
     client_header client;
     // offset 0x6f8, size 0x20
-    int hash_1514ae50c5450622;
+    int protocol_version;
     // offset 0x718, size 0x20
     int playlist_version;
     // offset 0x738, size 0x400

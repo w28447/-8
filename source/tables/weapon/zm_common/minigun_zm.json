@@ -3,7 +3,7 @@
     "baseWeapon": "#minigun",
     "displayname": "#weapon/minigun",
     "weapon70": "#minigun",
-    "streamkey": "#minigun_soundbank",
+    "soundbank": "#minigun_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -64,8 +64,8 @@
     "fx_c88": "#weapon/fx_shellejects_minigun",
     "fx_c90": "#weapon/fx_shellejects_minigun",
     "fx_c98": "#weapon/fx_shellejects_minigun",
-    "normalImpactFX": "#hash_9cafc46b8c735870",
-    "exitImpactFX": "#hash_d6ef4fc6c00cc18e",
+    "normalImpactFX": "#bullet_large_enter",
+    "exitImpactFX": "#bullet_large_exit",
     "normalImpactSounds": "#heavy_bullet_impact",
     "exitImpactSounds": "#heavy_bullet_exit"
 }

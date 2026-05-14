@@ -59753,7 +59753,7 @@
             "farVerbName": "",
             "duck": "default",
             "id": "#mp_casino_med_room",
-            "reverb": "#room_livingRoom",
+            "reverb": "#room_livingroom",
             "loop": "#hash_5f0cf846c1e5f92e",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",

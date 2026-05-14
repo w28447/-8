@@ -735,7 +735,7 @@ ddl,#hash_1250d02916e4218d
 ddl,#gamedata/ddl/generated/dlog_event_error.ddl
 ddl,#hash_1356aa968ce4b766
 ddl,#gamedata/ddl/generated/dlog_event_prestige.ddl
-ddl,#gamedata/ddl/common/profile_hardware.ddl
+ddl,#gamedata/ddl/common/prohardware.ddl
 ddl,#hash_1673548869c6e873
 ddl,#gamedata/ddl/generated/dlog_event_redeem_loot_drop.ddl
 ddl,#gamedata/ddl/generated/dlog_event_loading.ddl

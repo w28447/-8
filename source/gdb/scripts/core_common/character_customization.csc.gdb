@@ -43,9 +43,9 @@ DEVBLOCK 0x173e
 DEVBLOCK 0x17aa
 # namespace_7da27482::set_character_outfit_item@16
 DEVBLOCK 0x17ae
-# namespace_7da27482::function_158505aa@a
+# namespace_7da27482::set_character_war_paint_outfit@a
 DEVBLOCK 0x1872
-# namespace_7da27482::function_158505aa@e
+# namespace_7da27482::set_character_war_paint_outfit@e
 DEVBLOCK 0x1876
 # namespace_7da27482::update_model_attachment@3a
 DEVBLOCK 0x2f2a

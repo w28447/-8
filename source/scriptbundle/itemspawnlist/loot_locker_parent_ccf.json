@@ -86,11 +86,11 @@
     "lootlocker": 1,
     "hash_345eba59": 13,
     "vehiclespawner": 0,
-    "hash_9b009839": 32,
+    "supplystashmaxspawns": 32,
     "hash_dc7ffbef": 0,
     "name": "loot_locker_parent_ccf",
     "displayname": "localized18#wz/blackjackstash",
     "supplystashweight": 100,
-    "hash_dc91e192": 1,
+    "prioritizedspawning": 1,
     "supplystash": 1
 }

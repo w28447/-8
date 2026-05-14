@@ -29,6 +29,7 @@ class class_7b5e0861
     var m_spawnsentity;
     var m_timeout;
     var m_type;
+    var m_validmodel;
     var m_vehicle;
     var m_weapon;
     var var_28f1ce55;
@@ -37,7 +38,6 @@ class class_7b5e0861
     var var_656cbe2d;
     var var_b4662b52;
     var var_c59ba447;
-    var m_validmodel;
     var var_f81e0192;
 
     // Namespace class_7b5e0861/traps_deployable

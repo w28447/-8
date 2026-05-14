@@ -3,7 +3,7 @@
     "baseWeapon": "#ar_accurate_t8",
     "displayname": "#weapon/ar_accurate_t8",
     "weapon70": "#ar_accurate_t8",
-    "streamkey": "#ar_accurate_t8_soundbank",
+    "soundbank": "#ar_accurate_t8_soundbank",
     "scrstr_8c8": [
         "tag_sights_off",
         "tag_clan_tag",
@@ -79,7 +79,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_ar_accurate",
     "weaponIconXCam": "#ui_cam_icon_ar_accurate",
     "attachments": [
-        "#hash_f459a0af8e8f912b",
+        "#defaultattachment",
         "#acog"
     ],
     "attachmentUniques": [

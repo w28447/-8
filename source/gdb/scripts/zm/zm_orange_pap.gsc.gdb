@@ -12,9 +12,9 @@ STRING "<dev string:x50>" 0x2124
 STRING "<dev string:x6b>" 0x220c
 # zm_orange_pap::pap_rock_step2_cleanup@2c
 STRING "<dev string:x83>" 0x229c
-# zm_orange_pap::function_eaaea036@64
+# zm_orange_pap::pap_ice_melt@64
 STRING "<dev string:x9e>" 0x296c
-# zm_orange_pap::function_96ef31b7@64
+# zm_orange_pap::pap_ice_freeze@64
 STRING "<dev string:xa5>" 0x29fc
 ######################################################
 ####################  DEV BLOCKS  ####################
@@ -33,7 +33,7 @@ DEVBLOCK 0x281a
 DEVBLOCK 0x282a
 # zm_orange_pap::function_ccc079bc@1a
 DEVBLOCK 0x2862
-# zm_orange_pap::function_eaaea036@22
+# zm_orange_pap::pap_ice_melt@22
 DEVBLOCK 0x292a
-# zm_orange_pap::function_96ef31b7@22
+# zm_orange_pap::pap_ice_freeze@22
 DEVBLOCK 0x29ba

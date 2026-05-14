@@ -1,5 +1,4 @@
 #using script_36222395658446f5;
-#using scripts\zm\zm_escape_nixie_clock.gsc;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\clientfield_shared;
@@ -11,6 +10,7 @@
 #using scripts\core_common\trigger_shared;
 #using scripts\core_common\util_shared;
 #using scripts\zm\weapons\zm_weap_tomahawk;
+#using scripts\zm\zm_escape_nixie_clock;
 #using scripts\zm\zm_escape_pebble;
 #using scripts\zm\zm_escape_util;
 #using scripts\zm\zm_escape_vo_hooks;

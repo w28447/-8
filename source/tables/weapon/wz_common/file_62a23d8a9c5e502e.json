@@ -3,7 +3,7 @@
     "baseWeapon": "#hash_66401df7cd6bf292",
     "displayname": "#weapon/fraggrenade",
     "weapon70": "#eq_cluster_semtex_grenade",
-    "streamkey": "#hash_72d80a1a6a531c38",
+    "soundbank": "#hash_72d80a1a6a531c38",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -35,7 +35,7 @@
     "gadgetreadysoundplayer": "#hash_6f5b79a1a69b43a8",
     "projexplosionsound": "#exp_semtex_cluster_bomb",
     "tunables1": "#hash_19a3a2f2c6cb1d49",
-    "cacWeaponXCam": "#hash_e602e473c324fc07",
+    "cacWeaponXCam": "#ui_cam_cac_equip_frag",
     "sharedWeaponSounds": "#equipment",
     "statusEffects": [
         {
@@ -72,13 +72,13 @@
     "rumble_de8": "#grenade_rumble",
     "fx_f00": "#hash_dfdd021d80dd8fc6",
     "underwaterExplosionSurfaceFX": [
-        "#hash_fb70232b2892e045",
+        "#explosions/fx8_exp_grenade_water",
         "#hash_c15b461b7420c6d2",
         "#hash_bb3f97cf646813ac"
     ],
     "normalImpactFX": "#grenade_explosion_mini",
     "bounceImpactFX": "#grenade_bounce",
     "dudImpactFX": "#grenade_dud",
-    "normalImpactSounds": "#hash_e8e0a97bbbf0b555",
+    "normalImpactSounds": "#grenade_explode_material",
     "bounceImpactSounds": "#grenade_bounce"
 }

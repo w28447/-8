@@ -5,7 +5,7 @@
     "xhash_60": "#hash_2c00574f9088d906",
     "weapon70": "#smg_accurate_t8_operator",
     "weapon890": "#smg_accurate_t8_wz",
-    "streamkey": "#smg_accurate_t8_operator_soundbank",
+    "soundbank": "#smg_accurate_t8_operator_soundbank",
     "scrstr_8c8": [
         "tag_front_sights_off",
         "tag_rear_sights_off",
@@ -83,15 +83,15 @@
     "cacAttachmentsXCam": "#ui_cam_cac_smg_accurate",
     "weaponIconXCam": "#hash_bacdd9333263ab42",
     "attachments": [
-        "#hash_f459a0af8e8f912b",
-        "#hash_d7d4c8287286286b"
+        "#defaultattachment",
+        "#acog_smg_wz"
     ],
     "attachmentUniques": [
         "#hash_68835269b87ca2fd",
         "#hash_1813c93ac13b97d"
     ],
     "sharedWeaponSounds": "#smg",
-    "ballisticDesc": "#hash_e269fccbe6d86a70",
+    "ballisticDesc": "#45_fmj",
     "tracers": [
         "#hash_e5ee8c43e5f98cd8",
         "#hash_e0e8c9de7086f843"
@@ -119,7 +119,7 @@
     "hudIcon": "#t7_icon_weapon_smg_standard",
     "image_e90": "#ui_icon_obit_smg_accurate",
     "fireRumble": "#smg_fire",
-    "rumble_dc8": "#hash_a5737886a28a3a7b",
+    "rumble_dc8": "#smg_adsfire",
     "rumble_e20": "#hash_b22cc8a226215312",
     "fx_bc8": "#hash_ab95ce72c6f24335",
     "fx_bd0": "#hash_ab9bda72c6f6c347",
@@ -128,8 +128,8 @@
     "fx_c88": "#hash_8a5567d0168ae02f",
     "fx_c90": "#hash_8a5567d0168ae02f",
     "fx_c98": "#hash_8a5567d0168ae02f",
-    "normalImpactFX": "#hash_e1b4c700060ee40c",
-    "exitImpactFX": "#hash_83b4b1d145ec9892",
+    "normalImpactFX": "#bullet_small_enter",
+    "exitImpactFX": "#bullet_small_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

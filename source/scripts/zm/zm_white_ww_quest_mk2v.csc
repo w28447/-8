@@ -1,6 +1,6 @@
-#using scripts\zm\zm_white_defend_soul_capture.csc;
 #using scripts\core_common\clientfield_shared;
 #using scripts\core_common\util_shared;
+#using scripts\zm\zm_white_defend_soul_capture;
 
 #namespace zm_white_ww_quest_mk2v;
 

@@ -23942,7 +23942,7 @@
             "farVerbName": "",
             "duck": "default",
             "id": "#mp_museum_med_room",
-            "reverb": "#room_livingRoom",
+            "reverb": "#room_livingroom",
             "loop": "#hash_482771cbe2bb3fb8",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",

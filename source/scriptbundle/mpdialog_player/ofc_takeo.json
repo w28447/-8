@@ -18,7 +18,7 @@
     "characterselect": "#hash_5a773c28cf3b7171",
     "name": "ofc_takeo",
     "hash_25d7a8022ee67d41:hash_207908de": "#hash_25d7a8022ee67d41",
-    "hash_444e9ad0686e46c8:hash_b801796c": "#hash_444e9ad0686e46c8",
+    "exertpainpunched": "#hash_444e9ad0686e46c8",
     "boostloss": "#hash_5bbc90bf1fe91644",
     "exertgascough": "#hash_21e48453a600a70e",
     "exertpainfalling": "#hash_667bced3a45035f6",
@@ -36,6 +36,6 @@
     "exertbreathehurt": "#hash_11b8cab07e39ff2c",
     "exertfullyhealedbreath": "#exert_fully_healed",
     "exertdeathdrowned": "#hash_6dc3b9c471e23721",
-    "hash_16980db4f16c4ec0:hash_c3b67de0": "#hash_16980db4f16c4ec0",
+    "exertpainburn": "#hash_16980db4f16c4ec0",
     "hash_107a4634a7db6602:hash_1ca33ad4": "#hash_107a4634a7db6602"
 }

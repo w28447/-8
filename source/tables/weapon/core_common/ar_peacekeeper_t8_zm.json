@@ -3,7 +3,7 @@
     "baseWeapon": "#ar_peacekeeper_t8",
     "displayname": "#weapon/ar_peacekeeper_t8",
     "weapon70": "#ar_peacekeeper_t8",
-    "streamkey": "#ar_peacekeeper_t8_soundbank",
+    "soundbank": "#ar_peacekeeper_t8_soundbank",
     "scrstr_8c8": [
         "tag_sights_off",
         "tag_clan_tag",
@@ -76,7 +76,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_ar_peacekeeper",
     "weaponIconXCam": "#hash_47cd480757c242da",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_771010970c5860f4"

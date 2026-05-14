@@ -3,7 +3,7 @@
     "baseWeapon": "#incendiary_fire",
     "displayname": "#weapon/incendiary_grenade",
     "weapon70": "#incendiary_grenade",
-    "streamkey": "#incendiary_fire_soundbank",
+    "soundbank": "#incendiary_fire_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -52,7 +52,7 @@
     "image_eb0": "#t7_hud_icon_menu_incendiary",
     "rumble_de8": "#grenade_rumble",
     "fx_ed8": "#weapon/fx_incend_grenade_fire_sm",
-    "fx_f00": "#hash_80e7395fb42d35f6",
-    "normalImpactSounds": "#hash_e8e0a97bbbf0b555",
-    "bounceImpactSounds": "#hash_c6d8f2152c519b03"
+    "fx_f00": "#weapon/fx_trail_grenade",
+    "normalImpactSounds": "#grenade_explode_material",
+    "bounceImpactSounds": "#smoke_bounce"
 }

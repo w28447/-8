@@ -3,7 +3,7 @@
     "baseWeapon": "#hero_minigun_t8_lv3_Grenade",
     "displayname": "#hash_4e6ad0a0aed9c99",
     "weapon70": "#hero_minigun_t8_lv1",
-    "streamkey": "#hero_minigun_t8_lv3_grenade_soundbank",
+    "soundbank": "#hero_minigun_t8_lv3_grenade_soundbank",
     "scrstr_8c8": [
         "tag_handle_base"
     ],
@@ -52,16 +52,16 @@
     "image_e90": "#t7_hud_icon_menu_frag_kf",
     "rumble_de8": "#grenade_rumble",
     "fx_ed8": "#hash_b12af50d1a26758",
-    "fx_f00": "#hash_80e7395fb42d35f6",
+    "fx_f00": "#weapon/fx_trail_grenade",
     "fx_f08": "#hash_212a4a61f9e7ab9e",
     "underwaterExplosionSurfaceFX": [
-        "#hash_fb70232b2892e045",
+        "#explosions/fx8_exp_grenade_water",
         "#hash_c15b461b7420c6d2",
         "#hash_bb3f97cf646813ac"
     ],
-    "normalImpactFX": "#hash_c80a3191309d3449",
+    "normalImpactFX": "#grenade_explosion",
     "bounceImpactFX": "#grenade_bounce",
     "dudImpactFX": "#grenade_dud",
-    "normalImpactSounds": "#hash_e8e0a97bbbf0b555",
+    "normalImpactSounds": "#grenade_explode_material",
     "bounceImpactSounds": "#minigun_bounce"
 }

@@ -3,7 +3,7 @@
     "baseWeapon": "#zhield_spectral_lh_upgraded",
     "displayname": "#zmweapon/shield_spectral_upg",
     "dualwieldWeaponName": "#zhield_spectral_dw_upgraded_zm",
-    "streamkey": "#zhield_spectral_lh_upgraded_soundbank",
+    "soundbank": "#zhield_spectral_lh_upgraded_soundbank",
     "worldModelTagRight": "tag_weapon_left",
     "worldModelTagLeft": "tag_weapon_right",
     "stowedModelTag": "tag_stowed_back",
@@ -40,7 +40,7 @@
     "stowedmodel": [
         "#hash_7aa44eb45c359e1b"
     ],
-    "inventoryIconZm": "#hash_93ef923686346dc9",
+    "inventoryIconZm": "#ui_icon_weapons_zm_shield_spectral_door",
     "image_e90": "#t7_icon_weapon_hero_reaper_kf",
     "fireRumble": "#defaultweapon_fire",
     "#hash_21329beb": [

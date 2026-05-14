@@ -2502,7 +2502,7 @@ function function_b896f640()
 {
     callback::on_ai_killed( &function_8bdbbbf7 );
     level thread function_2db78acd();
-    level thread raw\sound\amb\chain\sway_loop\amb_lamp_sway_01.LL55.pc.snd();
+    level thread function_bedd034e();
 }
 
 // Namespace zm_red_pap_quest/zm_red_pap_quest
@@ -2682,7 +2682,7 @@ function function_8bdbbbf7( params )
 // Params 0
 // Checksum 0x72b4233e, Offset: 0x9220
 // Size: 0x198
-function raw\sound\amb\chain\sway_loop\amb_lamp_sway_01.LL55.pc.snd()
+function function_bedd034e()
 {
     level endon( #"egg_free" );
     level flag::wait_till( #"eagle_attack" );

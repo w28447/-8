@@ -3,7 +3,7 @@
     "baseWeapon": "#ar_damage_t8",
     "displayname": "#weapon/ar_damage_t8",
     "weapon70": "#ar_damage_t8",
-    "streamkey": "#ar_damage_t8_soundbank",
+    "soundbank": "#ar_damage_t8_soundbank",
     "scrstr_8c8": [
         "tag_sights_front_off",
         "tag_sights_rear_off",
@@ -80,7 +80,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_ar_damage",
     "weaponIconXCam": "#ui_cam_icon_ar_damage",
     "attachments": [
-        "#hash_f459a0af8e8f912b",
+        "#defaultattachment",
         "#acog"
     ],
     "attachmentUniques": [

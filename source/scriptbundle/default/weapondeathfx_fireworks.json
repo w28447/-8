@@ -5,6 +5,6 @@
     "name": "weapondeathfx_fireworks",
     "displayname": "localized17#hash_795b74ed5a4ae78f",
     "icon": "loot04_ui_icon_cac_death_fx_fireworks",
-    "bullet_fireworks_exit:hash_eeb78b92": "impact_fx_table#bullet_fireworks_exit",
+    "bullet_fireworks_exit": "impact_fx_table#bullet_fireworks_exit",
     "previewimage": "image#loot04_ui_icon_blackmarket_reserves_death_fx_fireworks"
 }

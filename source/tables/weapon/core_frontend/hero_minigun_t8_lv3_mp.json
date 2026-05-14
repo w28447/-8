@@ -3,7 +3,7 @@
     "baseWeapon": "#hero_minigun_t8_lv3",
     "displayname": "#hash_4e6ad0a0aed9c99",
     "weapon70": "#hero_minigun_t8_lv1",
-    "streamkey": "#hero_minigun_t8_lv3_soundbank",
+    "soundbank": "#hero_minigun_t8_lv3_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -74,8 +74,8 @@
     "fx_c88": "#weapon/fx_shellejects_minigun",
     "fx_c90": "#weapon/fx_shellejects_minigun",
     "fx_c98": "#weapon/fx_shellejects_minigun",
-    "normalImpactFX": "#hash_9cafc46b8c735870",
-    "exitImpactFX": "#hash_d6ef4fc6c00cc18e",
+    "normalImpactFX": "#bullet_large_enter",
+    "exitImpactFX": "#bullet_large_exit",
     "normalImpactSounds": "#heavy_bullet_impact",
     "exitImpactSounds": "#heavy_bullet_exit"
 }

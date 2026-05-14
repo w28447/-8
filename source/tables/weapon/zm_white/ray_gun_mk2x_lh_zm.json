@@ -4,7 +4,7 @@
     "displayname": "#zmweapon/ray_gun_mk2x_upgraded",
     "weapon70": "#ray_gun_mk2",
     "dualwieldWeaponName": "#ray_gun_mk2x_dw_zm",
-    "streamkey": "#ray_gun_mk2x_lh_soundbank",
+    "soundbank": "#ray_gun_mk2x_lh_soundbank",
     "worldModelTagRight": "tag_weapon_left",
     "worldModelTagLeft": "tag_weapon_right",
     "scrstr_118c": "tag_flash_le",

@@ -5,7 +5,7 @@
     "xhash_60": "#hash_687c2aab691854e5",
     "weapon70": "#smg_capacity_t8_gold",
     "weapon890": "#smg_capacity_t8_wz",
-    "streamkey": "#smg_capacity_t8_gold_soundbank",
+    "soundbank": "#smg_capacity_t8_gold_soundbank",
     "scrstr_8c8": [
         "tag_sights_off",
         "tag_camo_darkmatter",
@@ -76,17 +76,17 @@
     "weaponCamo": "#hash_bea7c9b468b492e1",
     "cacWeaponXCam": "#ui_cam_cac_smg_capacity",
     "cacAttachmentsXCam": "#ui_cam_cac_smg_capacity",
-    "weaponIconXCam": "#hash_a2e02d4a3a3f9300",
+    "weaponIconXCam": "#ui_cam_icon_smg_capacity",
     "attachments": [
-        "#hash_f459a0af8e8f912b",
-        "#hash_d7d4c8287286286b"
+        "#defaultattachment",
+        "#acog_smg_wz"
     ],
     "attachmentUniques": [
         "#hash_a42474df32f21d84",
         "#hash_b5d8835d362e36f8"
     ],
     "sharedWeaponSounds": "#smg",
-    "ballisticDesc": "#hash_fa8de762a01fac90",
+    "ballisticDesc": "#9mm_fmj",
     "tracers": [
         "#hash_e5ee8c43e5f98cd8",
         "#hash_e0e8c9de7086f843"
@@ -113,7 +113,7 @@
     "inventoryIconZm": "#ui_icon_weapon_hud_smg_capacity_tactical_wz",
     "image_e90": "#ui_icon_obit_smg_capacity",
     "fireRumble": "#smg_fire",
-    "rumble_dc8": "#hash_a5737886a28a3a7b",
+    "rumble_dc8": "#smg_adsfire",
     "rumble_e20": "#hash_b22cc8a226215312",
     "fx_bc8": "#hash_d027218e85c214ba",
     "fx_bd0": "#hash_d020158e85bbe1a8",
@@ -125,8 +125,8 @@
     "fx_f90": "#hash_ccfe9475f47d6ca2",
     "fx_f98": "#hash_a24ed66be5768225",
     "fx_fa0": "#hash_f640e06584066fc4",
-    "normalImpactFX": "#hash_e1b4c700060ee40c",
-    "exitImpactFX": "#hash_83b4b1d145ec9892",
+    "normalImpactFX": "#bullet_small_enter",
+    "exitImpactFX": "#bullet_small_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

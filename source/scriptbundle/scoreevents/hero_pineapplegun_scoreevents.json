@@ -1,15 +1,15 @@
 {
-    "war_machine_multikill_2": "#war_machine_multikill_2",
-    "war_machine_multikill_2": "#war_machine_multikill_2",
-    "war_machine_kill": "#war_machine_kill",
+    "multikill2scoreevent": "#war_machine_multikill_2",
+    "multikill6scoreevent": "#war_machine_multikill_2",
+    "killscoreevent": "#war_machine_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
-    "war_machine_multikill_2": "#war_machine_multikill_2",
+    "multikill4scoreevent": "#war_machine_multikill_2",
     "name": "hero_pineapplegun_scoreevents",
     "customsettingstype": "ability",
-    "war_machine_multikill_2": "#war_machine_multikill_2",
+    "multikill5scoreevent": "#war_machine_multikill_2",
     "war_machine_shutdown": "#war_machine_shutdown",
     "war_machine_demolition": "#war_machine_demolition",
-    "war_machine_multikill_2": "#war_machine_multikill_2"
+    "multikill3scoreevent": "#war_machine_multikill_2"
 }

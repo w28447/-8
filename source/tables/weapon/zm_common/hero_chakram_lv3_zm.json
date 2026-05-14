@@ -4,7 +4,7 @@
     "displayname": "#weapon/hero_chakram",
     "weapon70": "#hero_chakram_lv1",
     "dualwieldWeaponName": "#hero_chakram_lh_lv3_zm",
-    "streamkey": "#hero_chakram_lv3_soundbank",
+    "soundbank": "#hero_chakram_lv3_soundbank",
     "scrstr_8d8": [
         "tag_ik_loc_le_dw"
     ],

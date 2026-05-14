@@ -1,4 +1,3 @@
-#using scripts\mp_common\item_spawn_groups_util.gsc;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\clientfield_shared;
 #using scripts\core_common\infection;
@@ -9,6 +8,7 @@
 #using scripts\mp_common\gametypes\globallogic_defaults;
 #using scripts\mp_common\item_drop;
 #using scripts\mp_common\item_inventory;
+#using scripts\mp_common\item_spawn_groups_util;
 #using scripts\mp_common\item_world;
 #using scripts\wz_common\gametypes\warzone;
 #using scripts\wz_common\wz_ai_utils;

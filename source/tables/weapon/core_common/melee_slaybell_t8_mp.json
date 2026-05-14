@@ -3,7 +3,7 @@
     "baseWeapon": "#melee_slaybell_t8",
     "displayname": "#weapon/melee_slaybell_t8",
     "weapon70": "#melee_slaybell_t8",
-    "streamkey": "#melee_slaybell_t8_soundbank",
+    "soundbank": "#melee_slaybell_t8_soundbank",
     "scrstr_8c8": [
         "tag_camo_darkmatter",
         "tag_camo_diamond"
@@ -42,7 +42,7 @@
     "cacAttachmentsXCam": "#hash_5754220eabc95457",
     "weaponIconXCam": "#hash_6f4633e53eebee2f",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_f8ea6078bf0c62d"

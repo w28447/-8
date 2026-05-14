@@ -19,7 +19,7 @@
     "characterselect": "#hash_3ee450f289cadb4b",
     "name": "shadowman",
     "hash_7fd1c9b8c5fd4b6d:hash_207908de": "#hash_7fd1c9b8c5fd4b6d",
-    "hash_2e3ad86fbbde47ec:hash_b801796c": "#hash_2e3ad86fbbde47ec",
+    "exertpainpunched": "#hash_2e3ad86fbbde47ec",
     "boostloss": "#hash_1e799b766a8fedea",
     "exertgascough": "#hash_6af8d2df8b6b202a",
     "exertpainfalling": "#hash_451155be4f9a7eaa",
@@ -37,6 +37,6 @@
     "exertbreathehurt": "#hash_25afe488e04ae938",
     "exertfullyhealedbreath": "#exert_fully_healed",
     "exertdeathdrowned": "#hash_713c76249f9c3c8d",
-    "hash_13db393ba2bb0c2c:hash_c3b67de0": "#hash_13db393ba2bb0c2c",
+    "exertpainburn": "#hash_13db393ba2bb0c2c",
     "hash_6e6f34dac427c4ee:hash_1ca33ad4": "#hash_6e6f34dac427c4ee"
 }

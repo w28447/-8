@@ -5,7 +5,7 @@
     "xhash_60": "#hash_5bf4f8d513663459",
     "weapon70": "#shotgun_semiauto_t8_gold",
     "weapon890": "#shotgun_semiauto_t8_wz",
-    "streamkey": "#shotgun_semiauto_t8_gold_soundbank",
+    "soundbank": "#shotgun_semiauto_t8_gold_soundbank",
     "scrstr_8c8": [
         "tag_magwell_attach",
         "tag_clan_tag",
@@ -68,9 +68,9 @@
     "weaponCamo": "#hash_cb09dd7cf2ea4b99",
     "cacWeaponXCam": "#ui_cam_cac_shotgun_semiauto",
     "cacAttachmentsXCam": "#ui_cam_cac_shotgun_semiauto",
-    "weaponIconXCam": "#hash_b717a94ea371d784",
+    "weaponIconXCam": "#ui_cam_icon_shotgun_semiauto",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_ac4e18b977df73a8"
@@ -99,7 +99,7 @@
     "inventoryIconZm": "#ui_icon_weapon_hud_shotgun_semiauto",
     "image_e90": "#ui_icon_obit_shotgun_semiauto",
     "fireRumble": "#shotgun_fire",
-    "rumble_dc8": "#hash_f1fceb6e20f9fbdc",
+    "rumble_dc8": "#shotgun_adsfire",
     "rumble_e20": "#hash_b22cc8a226215312",
     "fx_bc8": "#hash_e772b94434b7d921",
     "fx_bd0": "#hash_e779a54434bdd5d3",
@@ -108,8 +108,8 @@
     "fx_c88": "#hash_e8c03a568bff9252",
     "fx_c90": "#hash_e8c03a568bff9252",
     "fx_c98": "#hash_e8c03a568bff9252",
-    "normalImpactFX": "#hash_f32fd0b76ec30328",
-    "exitImpactFX": "#hash_96e6f5bf4a293426",
-    "normalImpactSounds": "#hash_c15fba9edcdfd2e4",
-    "exitImpactSounds": "#hash_96e6f5bf4a293426"
+    "normalImpactFX": "#shotgun_enter",
+    "exitImpactFX": "#shotgun_exit",
+    "normalImpactSounds": "#shotgun_impact",
+    "exitImpactSounds": "#shotgun_exit"
 }

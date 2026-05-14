@@ -55354,7 +55354,7 @@ weapontunables,#hero_flamethrower_tunables_mp_pc
 weapontunables,#hero_katana_t8_lv2_tunables_zm
 weapontunables,#gadget_radiation_field_tunables_mp
 weapontunables,#hero_flamethrower_t8_lv3_tunables_zm
-weapontunables,d#hash_13f2b487336f8739
+weapontunables,d#acog_ar_galil_t8_tunables_mp
 weapontunables,#eq_sensor_tunables_mp
 weapontunables,#hero_minigun_t8_lv3_tunables_zm
 weapontunables,#hero_sword_pistol_lh_lv3_tunables_zm
@@ -56956,7 +56956,7 @@ luafile,#ui/uieditor/menus/aar_t8/levelup/aarlevelupoverlay.lua
 luafile,#hash_1ce9679b2f548619
 luafile,d#ui/uieditor/widgets/social/social_rankiconandranklargecontainer.lua
 luafile,#ui/uieditor/widgets/itemshop/reserves/reserveslootcasebuttoncontainer.lua
-luafile,#hash_ui/uieditor/widgets/zmfrontend/laboratory/laboratorylistiteminternal.lua
+luafile,#hash_1d02d67ea0c5eff1
 luafile,#ui/uieditor/widgets/lobby/common/vodviewerfootercontainer.lua
 luafile,#hash_1d1487b7dc9f92d1
 luafile,#ui/uieditor/menus/lobby/entitlementpopup.lua

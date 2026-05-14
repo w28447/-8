@@ -1,7 +1,7 @@
 {
     "name": "#stoker_melee",
     "baseWeapon": "#stoker_melee",
-    "streamkey": "#stoker_melee_soundbank",
+    "soundbank": "#stoker_melee_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

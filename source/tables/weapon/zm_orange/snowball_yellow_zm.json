@@ -3,7 +3,7 @@
     "baseWeapon": "#snowball_yellow",
     "displayname": "#weapon/snowball",
     "weapon70": "#snowball",
-    "streamkey": "#snowball_yellow_soundbank",
+    "soundbank": "#snowball_yellow_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",
@@ -43,7 +43,7 @@
     "worldModel": [
         "#wpn_t8_zm_snowball_yellow_world"
     ],
-    "gadgetIconAvailable": "#hash_f0791bbeb36d3342",
+    "gadgetIconAvailable": "#ui_icon_equipment_zm_snowball_yellow",
     "gadgetIconUnavailable": "#ui_icon_equipment_zm_snowball_dark",
     "reticleCenter": "#reticle_center_snowflake",
     "inventoryIconZm": "#ui_icon_equipment_zm_snowball",

@@ -3,7 +3,7 @@
     "baseWeapon": "#gadget_supplypod",
     "displayname": "#supplypod/name",
     "weapon70": "#gadget_supplypod",
-    "streamkey": "#gadget_supplypod_soundbank",
+    "soundbank": "#gadget_supplypod_soundbank",
     "scrstr_8c8": [
         "tag_equipment_hero"
     ],

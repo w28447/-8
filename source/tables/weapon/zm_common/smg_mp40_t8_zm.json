@@ -3,7 +3,7 @@
     "baseWeapon": "#smg_mp40_t8",
     "displayname": "#weapon/smg_mp40",
     "weapon70": "#smg_mp40_t8",
-    "streamkey": "#smg_mp40_t8_soundbank",
+    "soundbank": "#smg_mp40_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -70,13 +70,13 @@
     "cacWeaponXCam": "#ui_cam_cac_smg_mp40",
     "cacAttachmentsXCam": "#ui_cam_cac_smg_mp40",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_27bcc8d7d7fa8397"
     ],
     "sharedWeaponSounds": "#smg",
-    "ballisticDesc": "#hash_fa8de762a01fac90",
+    "ballisticDesc": "#9mm_fmj",
     "tracers": [
         "#hash_a6d5c1a903fba6f4",
         "#hash_e0e8c9de7086f843",
@@ -97,7 +97,7 @@
     "image_e98": "#ui_icon_obit_smg_mp40",
     "image_1048": "#ui_icon_weapon_hud_smg_mp40",
     "fireRumble": "#smg_fire",
-    "rumble_dc8": "#hash_a5737886a28a3a7b",
+    "rumble_dc8": "#smg_adsfire",
     "rumble_e20": "#hash_b22cc8a226215312",
     "fx_bc8": "#hash_a027e37012378951",
     "fx_bd0": "#hash_a02ecf70123d8603",
@@ -106,8 +106,8 @@
     "fx_c88": "#hash_8a5567d0168ae02f",
     "fx_c90": "#hash_8a5567d0168ae02f",
     "fx_c98": "#hash_8a5567d0168ae02f",
-    "normalImpactFX": "#hash_9cafc46b8c735870",
-    "exitImpactFX": "#hash_d6ef4fc6c00cc18e",
+    "normalImpactFX": "#bullet_large_enter",
+    "exitImpactFX": "#bullet_large_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

@@ -2,7 +2,7 @@
     "name": "#ww_hand_g_charged_zm",
     "baseWeapon": "#ww_hand_g_charged",
     "displayname": "#hash_5e7b4f837b6c6744",
-    "streamkey": "#ww_hand_g_charged_soundbank",
+    "soundbank": "#ww_hand_g_charged_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

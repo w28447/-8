@@ -1,7 +1,7 @@
-#using scripts\mp_common\item_spawn_groups_util.gsc;
 #using scripts\core_common\player\player_stats;
 #using scripts\core_common\struct;
 #using scripts\core_common\system_shared;
+#using scripts\mp_common\item_spawn_groups_util;
 #using scripts\mp_common\item_world;
 
 #namespace namespace_21c59b5;

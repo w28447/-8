@@ -1,8 +1,0 @@
-type,name
-streamkey,#mp_station_en_stream
-streamkey,#mp_station_en_loaded
-streamkey,#hash_60e819c7a2c338c2
-streamkey,#hash_1130909f4f54ebc3
-sound,#mp_station.en
-localizeentry,#hash_1adb9c66d7de991f
-keyvaluepairs,#ja_mp_station

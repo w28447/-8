@@ -3,7 +3,7 @@
     "baseWeapon": "#sig_blade_projectile",
     "altWeapon": "#sig_blade_mp",
     "weapon70": "#sig_blade",
-    "streamkey": "#sig_blade_projectile_soundbank",
+    "soundbank": "#sig_blade_projectile_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -87,6 +87,6 @@
     "fx_f00": "#hash_e283186b6bc356b",
     "normalImpactFX": "#hash_8aaefb1ba89bdf5",
     "bounceImpactFX": "#hash_5230ebe069afb123",
-    "normalImpactSounds": "#hash_a9ab4424affe55ad",
-    "bounceImpactSounds": "#hash_a9ab4424affe55ad"
+    "normalImpactSounds": "#hatchet_bounce",
+    "bounceImpactSounds": "#hatchet_bounce"
 }

@@ -5,6 +5,6 @@
     "name": "weapondeathfx_ice",
     "displayname": "localized17#hash_59fa842fea782ea2",
     "icon": "loot07_ui_icon_cac_death_fx_ice",
-    "bullet_ice_exit:hash_eeb78b92": "impact_fx_table#bullet_ice_exit",
+    "bullet_ice_exit": "impact_fx_table#bullet_ice_exit",
     "previewimage": "image#loot07_ui_icon_blackmarket_reserves_death_fx_ice"
 }

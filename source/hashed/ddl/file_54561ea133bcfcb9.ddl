@@ -17,9 +17,9 @@ version 2 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 3 size 0xc0
@@ -35,7 +35,7 @@ version 2 {
     // idx 3 members 3 size 0x48
     struct hash_614dd0ece0bfbd27 {
         // offset 0x0, size 0x20
-        uint hash_5fcf5a02824b74de;
+        uint ms_to_nat_trav_resolve;
         // offset 0x20, size 0x8
         byte result;
         // offset 0x28, size 0x20
@@ -45,25 +45,25 @@ version 2 {
     // idx 4 members 11 size 0x118
     struct hash_4110ed2df03bbae {
         // offset 0x0, size 0x20
-        uint hash_68d55c52aa13f7b4;
+        uint num_replies;
         // offset 0x20, size 0x20
-        uint hash_70259f4fbb3f7a05;
+        uint real_addr;
         // offset 0x40, size 0x10
-        uint:16 hash_52521ecd1275d391;
+        uint:16 real_port;
         // offset 0x50, size 0x20
-        uint hash_5424ed280cfa4b36;
+        uint reply_latency_count;
         // offset 0x70, size 0x20
-        float hash_3155d04edc797a1a;
+        float min_latency;
         // offset 0x90, size 0x20
         uint data_size;
         // offset 0xb0, size 0x20
         uint bandwidth_up;
         // offset 0xd0, size 0x20
-        uint hash_7663f2e4bf3b7a23;
+        uint bandwidth_down;
         // offset 0xf0, size 0x20
         float latency;
         // offset 0x110, size 0x1
-        bool hash_10843082d188230c;
+        bool remote_disabled;
         // offset 0x111, size 0x7
         uint:1 __pad[7];
     };
@@ -71,7 +71,7 @@ version 2 {
     // idx 5 members 1 size 0x20
     struct hash_fb47795e5d8f8d {
         // offset 0x0, size 0x20
-        float hash_e60a2bc44d9370a;
+        float reply_latency;
     };
 
     // idx 6 members 4 size 0x58
@@ -79,25 +79,25 @@ version 2 {
         // offset 0x0, size 0x8
         byte nat_type;
         // offset 0x8, size 0x20
-        int hash_78725a00fca985de;
+        int local_addr_count;
         // offset 0x28, size 0x20
-        uint hash_7eeb3b0b30e2921a;
+        uint public_addr;
         // offset 0x48, size 0x10
-        uint:16 hash_4b5ffc955581a19e;
+        uint:16 public_port;
     };
 
     // idx 7 members 2 size 0x30
     struct hash_c5a2a1d52b4736a {
         // offset 0x0, size 0x20
-        uint hash_585f73b9a8dbaec2;
+        uint local_addr;
         // offset 0x20, size 0x10
-        uint:16 hash_1a03a43c6642e4d6;
+        uint:16 local_port;
     };
 
     // idx 8 members 5 size 0x120
     struct hash_6a65101a136eab93 {
         // offset 0x0, size 0x40
-        uint64 hash_6bdd7ebe59310aa2;
+        uint64 match_making_id;
         // offset 0x40, size 0x40
         uint64 lobby_id;
         // offset 0x80, size 0x20
@@ -121,18 +121,18 @@ version 2 {
     // offset 0x0, size 0x1f8
     telemetry_header telemetry;
     // offset 0x1f8, size 0x48
-    hash_614dd0ece0bfbd27 hash_4323e09d2452778a;
+    hash_614dd0ece0bfbd27 qos_result;
     // offset 0x240, size 0x58
-    hash_e34a94c0792bab1 hash_20b0f8c6f632e6ff;
+    hash_e34a94c0792bab1 qos_remote_common_addr;
     // offset 0x298, size 0x118
-    hash_4110ed2df03bbae hash_157a5bbb9becf257;
+    hash_4110ed2df03bbae qos_info;
     // offset 0x3b0, size 0xc0
     client_header client;
     // offset 0x470, size 0x180
-    hash_c5a2a1d52b4736a hash_51c7d25da657076a[8];
+    hash_c5a2a1d52b4736a qos_remote_common_addrs_array[8];
     // offset 0x5f0, size 0x120
     hash_6a65101a136eab93 header;
     // offset 0x710, size 0x200
-    hash_fb47795e5d8f8d hash_56264bcd868c21cc[16];
+    hash_fb47795e5d8f8d reply_latency_array[16];
 }
 

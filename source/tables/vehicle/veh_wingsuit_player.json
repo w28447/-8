@@ -20,6 +20,6 @@
     "steerGraphName": "heli_hind_steer.graph",
     "bundle": {
         "healthpoolsize": 1000,
-        "hash_7812fce8": 1
+        "healthpools": 1
     }
 }

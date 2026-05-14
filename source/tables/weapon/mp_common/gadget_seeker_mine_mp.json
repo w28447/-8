@@ -3,7 +3,7 @@
     "baseWeapon": "#gadget_seeker_mine",
     "displayname": "#weapon/gadget_placeholder",
     "weapon70": "#eq_seeker_mine",
-    "streamkey": "#gadget_seeker_mine_soundbank",
+    "soundbank": "#gadget_seeker_mine_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

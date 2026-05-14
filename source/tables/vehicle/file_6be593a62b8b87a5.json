@@ -38,6 +38,6 @@
     "rumbletype": "raps_rumble",
     "bundle": {
         "healthpoolsize": 50,
-        "hash_7812fce8": 1
+        "healthpools": 1
     }
 }

@@ -40,14 +40,14 @@
                     {
                         "GAMEPAD": "#GAMEPAD",
                         "hash_7aecb1d7": 0,
-                        "menu/gas:hash_4be786c9": "localized17#menu/gas",
+                        "menu/gas": "localized17#menu/gas",
                         "hash_334a8e60": "left",
                         "prompt": "+movestick"
                     },
                     {
                         "GAMEPAD": "#GAMEPAD",
                         "hash_7aecb1d7": 0,
-                        "menu/hud_vehicle_steer:hash_4be786c9": "localized17#menu/hud_vehicle_steer",
+                        "menu/hud_vehicle_steer": "localized17#menu/hud_vehicle_steer",
                         "hash_334a8e60": "left",
                         "prompt": "+lookstick"
                     },
@@ -90,6 +90,6 @@
             }
         ],
         "healthpoolsize": 2100,
-        "hash_7812fce8": 1
+        "healthpools": 1
     }
 }

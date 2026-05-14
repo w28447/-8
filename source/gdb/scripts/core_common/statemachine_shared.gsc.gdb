@@ -8,13 +8,13 @@ CHECKSUM 0xdc2872a8
 STRING "<dev string:x38>" 0x7ac
 # statemachine::set_state@68
 STRING "<dev string:x56>" 0x7b8
-# statemachine::function_acc83382@128
+# statemachine::debugdrawstate@128
 STRING "<dev string:x6b>" 0xfd8
-# statemachine::function_acc83382@1b4 statemachine::function_acc83382@224
+# statemachine::debugdrawstate@1b4 statemachine::debugdrawstate@224
 STRING "<dev string:x76>" 0x1064 0x10d4
-# statemachine::function_acc83382@1c8 statemachine::function_acc83382@238
+# statemachine::debugdrawstate@1c8 statemachine::debugdrawstate@238
 STRING "<dev string:x7d>" 0x1078 0x10e8
-# statemachine::function_acc83382@20c
+# statemachine::debugdrawstate@20c
 STRING "<dev string:x82>" 0x10bc
 ######################################################
 ####################  DEV BLOCKS  ####################
@@ -31,5 +31,5 @@ DEVBLOCK 0xc12
 DEVBLOCK 0xc8a
 # statemachine::debugon@a
 DEVBLOCK 0xe72
-# statemachine::function_acc83382@4a
+# statemachine::debugdrawstate@4a
 DEVBLOCK 0xefa

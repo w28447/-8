@@ -30,8 +30,8 @@ class cdoor
     var m_v_open_pos;
     var origin;
     var stuck_items;
-    var v_trigger_offset;
     var stuckitems;
+    var v_trigger_offset;
     var var_3c6838bc;
     var var_7d28591d;
     var var_85f2454d;

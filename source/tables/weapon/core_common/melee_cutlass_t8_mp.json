@@ -3,7 +3,7 @@
     "baseWeapon": "#melee_cutlass_t8",
     "displayname": "#weapon/melee_cutlass_t8",
     "weapon70": "#melee_cutlass_t8",
-    "streamkey": "#melee_cutlass_t8_soundbank",
+    "soundbank": "#melee_cutlass_t8_soundbank",
     "scrstr_8c8": [
         "tag_camo_darkmatter",
         "tag_camo_diamond"
@@ -44,7 +44,7 @@
     "cacAttachmentsXCam": "#hash_708de109c1d50988",
     "weaponIconXCam": "#hash_38f6827505fa8ae0",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_50dd91c5badbedd6"

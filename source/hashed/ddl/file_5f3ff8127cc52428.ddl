@@ -17,9 +17,9 @@ version 2 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 3 size 0xc0
@@ -57,7 +57,7 @@ version 2 {
     // offset 0x8, size 0xc0
     match_header match;
     // offset 0xc8, size 0x10
-    short hash_2b8ff22fd2d85268;
+    short repair_count;
     // offset 0xd8, size 0x40
     uint64 player_xuid;
     // offset 0x118, size 0x1f8
@@ -71,7 +71,7 @@ version 2 {
     // offset 0x360, size 0xc0
     client_header client;
     // offset 0x420, size 0x10
-    short hash_1c0f4c02844d8e19;
+    short starting_armor;
     // offset 0x430, size 0x10
     short damage_taken;
     // offset 0x440, size 0x1

@@ -3,7 +3,7 @@
     "baseWeapon": "#pistol_fullauto_t8_oic",
     "displayname": "#weapon/pistol_fullauto_t8",
     "xhash_60": "#hash_66fcfc84e10fd06b",
-    "streamkey": "#pistol_fullauto_t8_oic_soundbank",
+    "soundbank": "#pistol_fullauto_t8_oic_soundbank",
     "scrstr_8c8": [
         "tag_camo_darkmatter",
         "tag_camo_diamond"
@@ -69,9 +69,9 @@
     "weaponCamo": "#hash_bcd76a821d6f0677",
     "cacWeaponXCam": "#ui_cam_cac_pistol_fullauto",
     "cacAttachmentsXCam": "#ui_cam_cac_pistol_fullauto",
-    "weaponIconXCam": "#hash_f705986aedfcc704",
+    "weaponIconXCam": "#ui_cam_icon_pistol_fullauto",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_e2ccac464b2043be"
@@ -101,7 +101,7 @@
     "inventoryIconZm": "#ui_icon_weapon_hud_pistol_fullauto",
     "image_e90": "#ui_icon_obit_pistol_fullauto",
     "fireRumble": "#pistol_fire",
-    "rumble_dc8": "#hash_b7945215019ab043",
+    "rumble_dc8": "#pistol_adsfire",
     "rumble_e20": "#hash_b22cc8a226215312",
     "fx_bc8": "#hash_e1e9b23b3f789a92",
     "fx_bd0": "#hash_e1e2a63b3f726780",
@@ -110,8 +110,8 @@
     "fx_c88": "#hash_8a5567d0168ae02f",
     "fx_c90": "#hash_8d185de6377a14df",
     "fx_c98": "#hash_8a5567d0168ae02f",
-    "normalImpactFX": "#hash_e1b4c700060ee40c",
-    "exitImpactFX": "#hash_83b4b1d145ec9892",
+    "normalImpactFX": "#bullet_small_enter",
+    "exitImpactFX": "#bullet_small_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

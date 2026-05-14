@@ -6,7 +6,7 @@
     "weapon50": "#hash_37a1da88ce6c33de",
     "weapon70": "#sig_bow_quickshot",
     "luigiReticleWidget": "BowLauncherReticle",
-    "streamkey": "#hash_447c13072ebd79db",
+    "soundbank": "#hash_447c13072ebd79db",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -83,12 +83,12 @@
     "fireRumble": "#bow_fire",
     "rumble_de8": "#grenade_rumble",
     "rumble_df0": "#bow_draw",
-    "rumble_df8": "#hash_8449520f94829141",
+    "rumble_df8": "#bow_draw_loop",
     "fx_bc8": "#hash_5fc376e533776975",
     "fx_bd0": "#hash_5fca82e5337d9c87",
     "fx_f00": "#hash_6146c36f1793cdc",
     "underwaterExplosionSurfaceFX": [
-        "#hash_fb70232b2892e045",
+        "#explosions/fx8_exp_grenade_water",
         "#hash_c15b461b7420c6d2",
         "#hash_bb3f97cf646813ac"
     ],

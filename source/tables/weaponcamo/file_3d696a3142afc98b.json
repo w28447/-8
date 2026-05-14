@@ -2308,7 +2308,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -2431,7 +2431,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -2554,7 +2554,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -2677,7 +2677,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -2800,7 +2800,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -2923,7 +2923,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -3188,11 +3188,11 @@
                         },
                         {
                             "material": "#hash_c9d88b49738022d1",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_c745647b203c4a88",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#mc/mtl_wpn_t7_zmb_zod_revolver38_loader"
@@ -3202,7 +3202,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -3757,7 +3757,7 @@
                         },
                         {
                             "material": "#hash_c745647b203c4a88",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
@@ -3955,7 +3955,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -4414,7 +4414,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -5005,7 +5005,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -5600,7 +5600,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -7007,7 +7007,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -7318,7 +7318,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -7565,7 +7565,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -8728,7 +8728,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -9007,7 +9007,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -9148,7 +9148,7 @@
                         },
                         {
                             "material": "#hash_c745647b203c4a88",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
@@ -9262,7 +9262,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -13311,7 +13311,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -13499,7 +13499,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49"
@@ -13644,7 +13644,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49"
@@ -13925,7 +13925,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -14088,7 +14088,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -14251,7 +14251,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -14414,7 +14414,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -14577,7 +14577,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -14740,7 +14740,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -15019,7 +15019,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -15163,7 +15163,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -15238,7 +15238,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -15380,7 +15380,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49"
@@ -15519,7 +15519,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49"
@@ -15658,7 +15658,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49"
@@ -15797,7 +15797,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49"
@@ -15936,7 +15936,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49"
@@ -17202,11 +17202,11 @@
                         },
                         {
                             "material": "#hash_c9d88b49738022d1",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_c745647b203c4a88",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#mc/mtl_wpn_t7_zmb_zod_revolver38_loader"
@@ -17216,7 +17216,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -17375,11 +17375,11 @@
                         },
                         {
                             "material": "#hash_c9d88b49738022d1",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_c745647b203c4a88",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#mc/mtl_wpn_t7_zmb_zod_revolver38_loader"
@@ -17389,7 +17389,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -17539,7 +17539,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49"
@@ -18373,7 +18373,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -18542,7 +18542,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -18711,7 +18711,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -18880,7 +18880,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -19049,7 +19049,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -19212,7 +19212,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -19365,7 +19365,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49"
@@ -19791,11 +19791,11 @@
                         },
                         {
                             "material": "#hash_c9d88b49738022d1",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_c745647b203c4a88",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#mc/mtl_wpn_t7_zmb_zod_revolver38_loader"
@@ -19805,7 +19805,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -19964,11 +19964,11 @@
                         },
                         {
                             "material": "#hash_c9d88b49738022d1",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_c745647b203c4a88",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#mc/mtl_wpn_t7_zmb_zod_revolver38_loader"
@@ -19978,7 +19978,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -20137,11 +20137,11 @@
                         },
                         {
                             "material": "#hash_c9d88b49738022d1",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_c745647b203c4a88",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#mc/mtl_wpn_t7_zmb_zod_revolver38_loader"
@@ -20151,7 +20151,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -21632,7 +21632,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -21820,7 +21820,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49"
@@ -21965,7 +21965,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49"
@@ -22246,7 +22246,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -22409,7 +22409,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -22572,7 +22572,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -22735,7 +22735,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -22898,7 +22898,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -23061,7 +23061,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -23340,7 +23340,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -23484,7 +23484,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -23559,7 +23559,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -23701,7 +23701,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49"
@@ -23840,7 +23840,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49"
@@ -23979,7 +23979,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49"
@@ -24118,7 +24118,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49"
@@ -24257,7 +24257,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49"
@@ -24384,7 +24384,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49"
@@ -25212,7 +25212,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -25365,7 +25365,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49"
@@ -26324,7 +26324,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -26634,7 +26634,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -26647,7 +26647,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -26739,7 +26739,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -26944,7 +26944,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -27150,7 +27150,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -27163,7 +27163,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -27256,7 +27256,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -27269,7 +27269,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -27362,7 +27362,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -27375,7 +27375,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -27468,7 +27468,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -27481,7 +27481,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -27531,7 +27531,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -27734,7 +27734,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -27824,7 +27824,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -27914,7 +27914,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -28004,7 +28004,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_c7973e537117af97",
+                            "camoMaterial": "#mc/mtl_t7_camo_flat_black_b",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -28054,7 +28054,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -28385,7 +28385,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -29153,11 +29153,11 @@
                         },
                         {
                             "material": "#hash_c9d88b49738022d1",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_c745647b203c4a88",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#mc/mtl_wpn_t7_zmb_zod_revolver38_loader"
@@ -29167,7 +29167,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -30467,7 +30467,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -30721,7 +30721,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -31157,7 +31157,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -31723,7 +31723,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -32209,7 +32209,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",
@@ -32414,7 +32414,7 @@
                         },
                         {
                             "material": "#hash_ac62b6198891357f",
-                            "mask": "#hash_a7d2980e98d88c55"
+                            "mask": "#$alpha"
                         },
                         {
                             "material": "#hash_f5c015fec9794a49",

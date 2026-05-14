@@ -1,7 +1,7 @@
 {
     "name": "#seeker_mine_success_mp",
     "baseWeapon": "#seeker_mine_success",
-    "streamkey": "#seeker_mine_success_soundbank",
+    "soundbank": "#seeker_mine_success_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",
@@ -28,7 +28,7 @@
     "#hash_554be9f7": false,
     "sound240": "#hash_631a067190b54300",
     "sound250": "#hash_242aa17124751841",
-    "tunables1": "#hash_a588ad5dccd547f",
+    "tunables1": "#seeker_mine_success_tunables_mp",
     "gestureTables": [
         "#gestable_shocked_success"
     ],

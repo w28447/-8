@@ -3,7 +3,7 @@
     "baseWeapon": "#hero_minigun_t8_lv2_Grenade",
     "displayname": "#hash_4e6ad0a0aed9c99",
     "weapon70": "#hero_minigun_t8_lv1",
-    "streamkey": "#hero_minigun_t8_lv2_grenade_soundbank",
+    "soundbank": "#hero_minigun_t8_lv2_grenade_soundbank",
     "scrstr_8c8": [
         "tag_handle_upgrade",
         "tag_handle_rotate_animate",
@@ -70,6 +70,6 @@
     "normalImpactFX": "#hash_17ceb54c38c1afe4",
     "bounceImpactFX": "#grenade_bounce",
     "dudImpactFX": "#grenade_dud",
-    "normalImpactSounds": "#hash_a43498ac40a58702",
-    "bounceImpactSounds": "#hash_ebde0439d1eb051d"
+    "normalImpactSounds": "#grenade_pineapple_explode_material",
+    "bounceImpactSounds": "#grenade_pineapple_bounce"
 }

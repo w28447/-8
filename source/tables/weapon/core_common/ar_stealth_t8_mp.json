@@ -3,7 +3,7 @@
     "baseWeapon": "#ar_stealth_t8",
     "displayname": "#weapon/ar_stealth_t8",
     "weapon70": "#ar_stealth_t8",
-    "streamkey": "#ar_stealth_t8_soundbank",
+    "soundbank": "#ar_stealth_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -76,7 +76,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_ar_stealth",
     "weaponIconXCam": "#hash_1cd470a3f8328c6d",
     "attachments": [
-        "#hash_f459a0af8e8f912b",
+        "#defaultattachment",
         "#acog"
     ],
     "attachmentUniques": [

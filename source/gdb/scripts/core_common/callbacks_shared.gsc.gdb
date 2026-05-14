@@ -59,5 +59,5 @@ DEVBLOCK 0x2ac2
 DEVBLOCK 0x3fba
 # callback::function_930ce3c3@a
 DEVBLOCK 0x4382
-# callback::function_f5026566@24
+# callback::codecallback_potmevent@24
 DEVBLOCK 0x463c

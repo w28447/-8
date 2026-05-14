@@ -25,7 +25,7 @@ version 1 {
         // offset 0x190, size 0x10
         uint:10 cur_kill_streak;
         // offset 0x1a0, size 0x140
-        string(40) hash_763e00a108f8960a;
+        string(40) currentclass;
         // offset 0x2e0, size 0x10
         uint:16 defends;
         // offset 0x2f0, size 0x10

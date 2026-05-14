@@ -1,4 +1,3 @@
-#using scripts\zm_common\zm_faction_buffs.gsc;
 #using scripts\core_common\ai\zombie_utility;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\callbacks_shared;
@@ -22,6 +21,7 @@
 #using scripts\zm_common\zm_contracts;
 #using scripts\zm_common\zm_customgame;
 #using scripts\zm_common\zm_equipment;
+#using scripts\zm_common\zm_faction_buffs;
 #using scripts\zm_common\zm_loadout;
 #using scripts\zm_common\zm_score;
 #using scripts\zm_common\zm_stats;

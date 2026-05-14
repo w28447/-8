@@ -47530,7 +47530,7 @@ weapontunables,d#ar_stealth_t8_operator_tunables_wz
 weapontunables,d#hash_9cb3e6c7e6fae9c
 weapontunables,d#tr_powersemi_t8_gold_tunables_wz
 weapontunables,d#ww_random_ray_gun1_tunables_wz
-weapontunables,d#hash_abfcf3cc5587235
+weapontunables,d#gadget_health_regen_large_tunables_wz
 weapontunables,d#ar_galil_t8_tunables_wz
 weapontunables,d#trophy_system_tunables_wz
 weapontunables,d#smg_standard_t8_tunables_wz
@@ -47567,7 +47567,7 @@ weapontunables,d#ww_crossbow_impaler_t8_tunables_wz
 weapontunables,d#melee_bowie_tunables_wz
 weapontunables,d#ar_stealth_t8_gold_tunables_wz
 weapontunables,d#hero_pineapplegun_tunables_wz
-weapontunables,d#hash_33275770ee8fffaf
+weapontunables,d#gadget_health_regen_medium_tunables_wz
 weapontunables,d#smg_accurate_t8_operator_tunables_wz
 weapontunables,d#shotgun_precision_t8_tunables_wz
 weapontunables,d#hero_flamethrower_tunables_wz
@@ -47641,7 +47641,7 @@ weapontunables,d#ar_damage_t8_tunables_wz
 weapontunables,d#sniper_powersemi_t8_tunables_wz
 weapontunables,#flare_gun_veh_tunables_wz
 weapontunables,d#spectre_grenade_tunables_wz
-weapontunables,d#hash_6cd8e10583df2669
+weapontunables,d#gadget_health_regen_small_tunables_wz
 weapontunables,d#tr_leveraction_t8_tunables_wz
 weapontunables,#hash_6db651e4016accd6
 weapontunables,d#eq_slow_grenade_tunables_wz

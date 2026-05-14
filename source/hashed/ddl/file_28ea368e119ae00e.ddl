@@ -17,9 +17,9 @@ version 2 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 3 size 0xc0
@@ -55,7 +55,7 @@ version 2 {
         // offset 0xa0, size 0x8
         byte state;
         // offset 0xa8, size 0x8
-        byte hash_4cc74f774380b24c;
+        byte keys_consumed;
         // offset 0xb0, size 0x1
         bool used;
         // offset 0xb1, size 0x1

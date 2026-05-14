@@ -1,7 +1,7 @@
 {
     "name": "#zombie_perk_totem_quick_revive",
     "baseWeapon": "#zombie_perk_totem_quick_revive",
-    "streamkey": "#zombie_perk_totem_quick_revive_soundbank",
+    "soundbank": "#zombie_perk_totem_quick_revive_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",

@@ -17,9 +17,9 @@ version 2 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 3 size 0xc0
@@ -65,7 +65,7 @@ version 2 {
     // offset 0x338, size 0x20
     int end_rank;
     // offset 0x358, size 0x20
-    int hash_42b20df98ca70b5d;
+    int totaltime_ms;
     // offset 0x378, size 0xc0
     string(24) gamertag;
     // offset 0x438, size 0x40

@@ -3,7 +3,7 @@
     "baseWeapon": "#ww_blundergat_acid_t8_upgraded",
     "displayname": "#zmweapon/acidgat_upgraded",
     "weapon70": "#ww_blundergat_t8",
-    "streamkey": "#ww_blundergat_acid_t8_upgraded_soundbank",
+    "soundbank": "#ww_blundergat_acid_t8_upgraded_soundbank",
     "scrstr_8c8": [
         "tag_armor_acid",
         "tag_barrel_le_in",

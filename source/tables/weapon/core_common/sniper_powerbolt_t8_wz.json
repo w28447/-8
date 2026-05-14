@@ -4,7 +4,7 @@
     "displayname": "#weapon/sniper_powerbolt_t8",
     "xhash_60": "#hash_336a92b4df2f5f5d",
     "weapon70": "#sniper_powerbolt_t8",
-    "streamkey": "#sniper_powerbolt_t8_soundbank",
+    "soundbank": "#sniper_powerbolt_t8_soundbank",
     "scrstr_8c8": [
         "tag_scope_mms_attach",
         "tag_clan_tag",
@@ -80,7 +80,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_sniper_powerbolt",
     "weaponIconXCam": "#ui_cam_icon_sniper_powerbolt",
     "attachments": [
-        "#hash_f459a0af8e8f912b",
+        "#defaultattachment",
         "#acog_wz",
         "#adsreload_wz"
     ],

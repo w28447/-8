@@ -1,5 +1,4 @@
 #using script_2c5daa95f8fec03c;
-#using scripts\core_common\vehicles\elephant_dust_ball.gsc;
 #using scripts\core_common\ai\archetype_damage_utility;
 #using scripts\core_common\ai\archetype_locomotion_utility;
 #using scripts\core_common\ai\systems\ai_blackboard;
@@ -24,6 +23,7 @@
 #using scripts\core_common\struct;
 #using scripts\core_common\util_shared;
 #using scripts\core_common\vehicle_ai_shared;
+#using scripts\core_common\vehicles\elephant_dust_ball;
 
 #namespace archetypeelephant;
 

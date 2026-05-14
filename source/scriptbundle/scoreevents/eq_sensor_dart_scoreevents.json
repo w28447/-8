@@ -1,14 +1,14 @@
 {
-    "sensor_dart_multikill_2": "#sensor_dart_multikill_2",
-    "sensor_dart_multikill_2": "#sensor_dart_multikill_2",
+    "multikill2scoreevent": "#sensor_dart_multikill_2",
+    "multikill6scoreevent": "#sensor_dart_multikill_2",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
-    "sensor_dart_multikill_2": "#sensor_dart_multikill_2",
+    "multikill4scoreevent": "#sensor_dart_multikill_2",
     "name": "eq_sensor_dart_scoreevents",
     "customsettingstype": "ability",
-    "sensor_dart_multikill_2": "#sensor_dart_multikill_2",
+    "multikill5scoreevent": "#sensor_dart_multikill_2",
     "sensor_dart_shutdown": "#sensor_dart_shutdown",
     "hash_fcd2ff3a": 1,
-    "sensor_dart_multikill_2": "#sensor_dart_multikill_2"
+    "multikill3scoreevent": "#sensor_dart_multikill_2"
 }

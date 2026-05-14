@@ -17,9 +17,9 @@ version 2 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 3 size 0xc0
@@ -35,37 +35,37 @@ version 2 {
     // idx 3 members 13 size 0x148
     struct hash_33bf07591958a6f1 {
         // offset 0x0, size 0x20
-        int hash_1264c84bbee08f80;
+        int send_seq_num;
         // offset 0x20, size 0x20
-        uint hash_4926ebe3920f1011;
+        uint stage_cookie_ack_ms_since_start;
         // offset 0x40, size 0x8
-        byte hash_a0f382d7c109dd4;
+        byte init_resends;
         // offset 0x48, size 0x20
-        uint hash_266b42dab96feeb0;
+        uint established_ms_since_start;
         // offset 0x68, size 0x20
-        uint hash_3b6396c9a7bb3501;
+        uint stage_init_ack_ms_since_start;
         // offset 0x88, size 0x10
-        uint:16 hash_21b204228b9c30ad;
+        uint:16 peer_port;
         // offset 0x98, size 0x8
         byte last_state;
         // offset 0xa0, size 0x20
-        uint hash_49b55debef4aed9b;
+        uint lifetime_ms;
         // offset 0xc0, size 0x8
-        byte hash_20d721b4939feee8;
+        byte cookie_resends;
         // offset 0xc8, size 0x20
-        uint hash_ebf5cf2789352f3;
+        uint peer_ip;
         // offset 0xe8, size 0x20
-        uint hash_1d3d37b4bfd07e57;
+        uint stage_init_ms_since_start;
         // offset 0x108, size 0x20
-        uint hash_57645f4f490fadfb;
+        uint stage_cookie_echo_ms_since_start;
         // offset 0x128, size 0x20
-        int hash_25dca3aaf0f14efe;
+        int recv_seq_num;
     };
 
     // idx 4 members 5 size 0x120
     struct hash_6a65101a136eab93 {
         // offset 0x0, size 0x40
-        uint64 hash_6bdd7ebe59310aa2;
+        uint64 match_making_id;
         // offset 0x40, size 0x40
         uint64 lobby_id;
         // offset 0x80, size 0x20
@@ -87,7 +87,7 @@ version 2 {
 
     // idx 0 members 4 size 0x520
     // offset 0x0, size 0x148
-    hash_33bf07591958a6f1 hash_2b1372bddf3a584c;
+    hash_33bf07591958a6f1 dtls_association;
     // offset 0x148, size 0x1f8
     telemetry_header telemetry;
     // offset 0x340, size 0xc0

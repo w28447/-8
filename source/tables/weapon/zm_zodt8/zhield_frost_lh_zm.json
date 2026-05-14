@@ -3,7 +3,7 @@
     "baseWeapon": "#zhield_frost_lh",
     "displayname": "#zmweapon/fhield",
     "dualwieldWeaponName": "#zhield_frost_dw_zm",
-    "streamkey": "#zhield_frost_lh_soundbank",
+    "soundbank": "#zhield_frost_lh_soundbank",
     "worldModelTagRight": "tag_weapon_left",
     "worldModelTagLeft": "tag_weapon_right",
     "stowedModelTag": "tag_stowed_back",

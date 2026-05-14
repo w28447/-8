@@ -3,7 +3,7 @@
     "baseWeapon": "#player_air_vehicle1_main_turret_3rd_person",
     "displayname": "#killstreak/overwatch_snipers",
     "weapon70": "#overwatch_helicopter",
-    "streamkey": "#player_air_vehicle1_main_turret_3rd_person_soundbank",
+    "soundbank": "#player_air_vehicle1_main_turret_3rd_person_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -57,5 +57,5 @@
     "normalImpactFX": "#bullet_xtreme_enter",
     "exitImpactFX": "#bullet_xtreme_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

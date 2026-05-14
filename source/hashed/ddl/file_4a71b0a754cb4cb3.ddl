@@ -17,9 +17,9 @@ version 10 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 3 size 0xc0
@@ -65,13 +65,13 @@ version 10 {
     // offset 0x318, size 0x20
     int clienttimediff;
     // offset 0x338, size 0x20
-    int hash_74c79e4016cb2b3;
+    int clientack;
     // offset 0x358, size 0xc0
     client_header client;
     // offset 0x418, size 0x20
     int clientpings;
     // offset 0x438, size 0x1
-    bool hash_4ae6291e7e06ff84;
+    bool unackdeltas;
     // offset 0x439, size 0x1
     bool boosting;
     // offset 0x43a, size 0x6

@@ -3,7 +3,7 @@
     "baseWeapon": "#ray_gun",
     "displayname": "#weapon/ray_gun",
     "weapon70": "#ray_gun",
-    "streamkey": "#ray_gun_soundbank",
+    "soundbank": "#ray_gun_soundbank",
     "scrstr_8c8": [
         "tag_tac_knife_animate",
         "tag_cord_animate"

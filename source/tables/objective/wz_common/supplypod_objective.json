@@ -20,7 +20,7 @@
     "bundle": {
         "hash_10b16ca8": 3,
         "hash_dcc46ee6": 0,
-        "weapon/supply_pod:hash_f8421c74": "localized17#weapon/supply_pod",
+        "weapon/supply_pod": "localized17#weapon/supply_pod",
         "hash_8196478f": 0,
         "hash_93fe2e89": 0,
         "hash_23b19d44": 0,

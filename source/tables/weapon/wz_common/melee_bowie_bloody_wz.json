@@ -3,7 +3,7 @@
     "baseWeapon": "#melee_bowie_bloody",
     "displayname": "#weapon/bowie",
     "weapon70": "#melee_bowie",
-    "streamkey": "#melee_bowie_bloody_soundbank",
+    "soundbank": "#melee_bowie_bloody_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "scrstr_118c": "tag_fx",
@@ -34,7 +34,7 @@
     "sound810": "#hash_5fd68d0455a0b8",
     "tunables1": "#melee_bowie_tunables_wz",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_25964a446ed086e8"
@@ -51,5 +51,5 @@
     "fireRumble": "#defaultweapon_melee",
     "fx_be0": "#hash_496068abb95ab99e",
     "fx_be8": "#hash_3259aa4abd8d4b2a",
-    "normalImpactFX": "#hash_a5f3e55b8e1070ab"
+    "normalImpactFX": "#knife_large_enter"
 }

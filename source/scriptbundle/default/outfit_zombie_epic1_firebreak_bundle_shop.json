@@ -1,6 +1,6 @@
 {
     "detailsicon": "image#loot05_ui_icon_blackmarket_itemdetail_bundle_astronaut_firebreak",
-    "loot05_ui_icon_blackmarket_itemshop_bundle_astronaut_firebreak:hash_6c274f86": "image#loot05_ui_icon_blackmarket_itemshop_bundle_astronaut_firebreak",
+    "loot05_ui_icon_blackmarket_itemshop_bundle_astronaut_firebreak": "image#loot05_ui_icon_blackmarket_itemshop_bundle_astronaut_firebreak",
     "nametext": "localized17#mpui/firebreak_zombie",
     "name": "outfit_zombie_epic1_firebreak_bundle_shop",
     "desctext": "localized17#hash_27a2987bb0507f6b"

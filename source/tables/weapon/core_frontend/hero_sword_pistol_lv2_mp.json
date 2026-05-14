@@ -4,7 +4,7 @@
     "displayname": "#weapon/hero_sword_pistol",
     "weapon70": "#hero_sword_pistol_lv1",
     "dualwieldWeaponName": "#hero_sword_pistol_lh_lv2_mp",
-    "streamkey": "#hero_sword_pistol_lv2_soundbank",
+    "soundbank": "#hero_sword_pistol_lv2_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

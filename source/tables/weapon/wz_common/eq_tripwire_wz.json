@@ -4,7 +4,7 @@
     "displayname": "#weapon/tripwire",
     "weapon40": "#eq_tripwire_anims_wz",
     "weapon70": "#eq_tripwire",
-    "streamkey": "#eq_tripwire_soundbank",
+    "soundbank": "#eq_tripwire_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -84,6 +84,6 @@
     "#hash_26f68e75": "#icepick_tripwire",
     "normalImpactFX": "#hash_3d863221d143a54e",
     "bounceImpactFX": "#tripwire_bounce",
-    "normalImpactSounds": "#hash_e8e0a97bbbf0b555",
+    "normalImpactSounds": "#grenade_explode_material",
     "bounceImpactSounds": "#gel_bounce"
 }

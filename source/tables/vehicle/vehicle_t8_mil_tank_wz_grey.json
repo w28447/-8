@@ -72,14 +72,14 @@
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "menu/switch_seats:hash_4be786c9": "localized17#menu/switch_seats",
+                        "menu/switch_seats": "localized17#menu/switch_seats",
                         "hash_334a8e60": "left",
                         "prompt": "+switchseat"
                     },
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "menu/aim_down_the_sight:hash_4be786c9": "localized17#menu/aim_down_the_sight",
+                        "menu/aim_down_the_sight": "localized17#menu/aim_down_the_sight",
                         "hash_334a8e60": "left",
                         "prompt": "+speed_throw"
                     }
@@ -119,14 +119,14 @@
                     {
                         "GAMEPAD": "#GAMEPAD",
                         "hash_7aecb1d7": 0,
-                        "menu/switch_seats:hash_4be786c9": "localized17#menu/switch_seats",
+                        "menu/switch_seats": "localized17#menu/switch_seats",
                         "hash_334a8e60": "left",
                         "prompt": "+switchseat"
                     },
                     {
                         "GAMEPAD": "#GAMEPAD",
                         "hash_7aecb1d7": 0,
-                        "menu/gas:hash_4be786c9": "localized17#menu/gas",
+                        "menu/gas": "localized17#menu/gas",
                         "hash_334a8e60": "left",
                         "prompt": "+movestick"
                     },
@@ -140,21 +140,21 @@
                     {
                         "GAMEPAD": "#GAMEPAD",
                         "hash_7aecb1d7": 0,
-                        "menu/hud_vehicle_steer:hash_4be786c9": "localized17#menu/hud_vehicle_steer",
+                        "menu/hud_vehicle_steer": "localized17#menu/hud_vehicle_steer",
                         "hash_334a8e60": "left",
                         "prompt": "+lookstick"
                     },
                     {
                         "kbm": "#kbm",
                         "hash_7aecb1d7": 0,
-                        "menu/switch_seats:hash_4be786c9": "localized17#menu/switch_seats",
+                        "menu/switch_seats": "localized17#menu/switch_seats",
                         "hash_334a8e60": "left",
                         "prompt": "+switchseat"
                     },
                     {
                         "GAMEPAD": "#GAMEPAD",
                         "hash_7aecb1d7": 0,
-                        "menu/aim_down_the_sight:hash_4be786c9": "localized17#menu/aim_down_the_sight",
+                        "menu/aim_down_the_sight": "localized17#menu/aim_down_the_sight",
                         "hash_334a8e60": "left",
                         "prompt": "+speed_throw"
                     }
@@ -191,6 +191,6 @@
             }
         ],
         "healthpoolsize": 12000,
-        "hash_7812fce8": 1
+        "healthpools": 1
     }
 }

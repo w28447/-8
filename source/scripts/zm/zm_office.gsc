@@ -1,7 +1,4 @@
 #using script_293299be863018bb;
-#using scripts\zm\zm_office_groom_lake_quest.gsc;
-#using scripts\zm\zm_office_vo_hooks.gsc;
-#using scripts\zm\zm_office_magicbox_screens.gsc;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\clientfield_shared;
 #using scripts\core_common\exploder_shared;
@@ -24,12 +21,15 @@
 #using scripts\zm\zm_office_floors;
 #using scripts\zm\zm_office_fx;
 #using scripts\zm\zm_office_gamemodes;
+#using scripts\zm\zm_office_groom_lake_quest;
+#using scripts\zm\zm_office_magicbox_screens;
 #using scripts\zm\zm_office_sound;
 #using scripts\zm\zm_office_special_rounds;
 #using scripts\zm\zm_office_teleporters;
 #using scripts\zm\zm_office_traps;
 #using scripts\zm\zm_office_trials;
 #using scripts\zm\zm_office_trophies;
+#using scripts\zm\zm_office_vo_hooks;
 #using scripts\zm\zm_office_ww_quest;
 #using scripts\zm\zm_office_zones;
 #using scripts\zm_common\bgbs\zm_bgb_nowhere_but_there;

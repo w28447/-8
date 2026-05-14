@@ -4,7 +4,7 @@
     "displayname": "#weapon/shotgun_precision_t8",
     "xhash_60": "#hash_318efaa117b3936c",
     "weapon70": "#shotgun_precision_t8",
-    "streamkey": "#shotgun_precision_t8_soundbank",
+    "soundbank": "#shotgun_precision_t8_soundbank",
     "scrstr_8c8": [
         "tag_sights_rear_off",
         "tag_clan_tag",
@@ -69,7 +69,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_shotgun_precision",
     "weaponIconXCam": "#ui_cam_icon_shotgun_precision",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_6e1cbfbfa92950af"

@@ -4,7 +4,7 @@
     "displayname": "#weapon/sniper_mini14_t8",
     "altWeapon": "#sniper_mini14_t8_mp",
     "weapon70": "#sniper_mini14_t8",
-    "streamkey": "#dualoptic_sniper_mini14_t8_soundbank",
+    "soundbank": "#dualoptic_sniper_mini14_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",

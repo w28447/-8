@@ -4,7 +4,7 @@
     "displayname": "#weapon/shotgun_semiauto_t8",
     "xhash_60": "#hash_5bf4f8d513663459",
     "weapon70": "#shotgun_semiauto_t8",
-    "streamkey": "#shotgun_semiauto_t8_soundbank",
+    "soundbank": "#shotgun_semiauto_t8_soundbank",
     "scrstr_8c8": [
         "tag_magwell_attach",
         "tag_clan_tag",
@@ -69,7 +69,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_shotgun_semiauto",
     "weaponIconXCam": "#ui_cam_icon_shotgun_semiauto",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_2c4e18b977df73a8"

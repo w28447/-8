@@ -153,7 +153,7 @@ scriptparsetree,#scripts/wz_common/wz_common_mode_spectre_rising_fixup.gsc
 scriptparsetree,#scripts/mp_common/item_inventory_util.csc
 scriptparsetree,#scripts/wz_common/wz_ai_vehicle.gsc
 scriptparsetree,#scripts/killstreaks/qrdrone.csc
-scriptparsetree,#hash_cb32d07c95e5628
+scriptparsetree,#scripts/mp_common/item_spawn_groups_util.gsc
 scriptparsetree,#scripts/core_common/infection.gsc
 scriptparsetree,#scripts/mp_common/pickup_health.gsc
 scriptparsetree,#scripts/killstreaks/ai/target.gsc

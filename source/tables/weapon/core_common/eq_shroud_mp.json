@@ -3,7 +3,7 @@
     "baseWeapon": "#eq_shroud",
     "displayname": "#weapon/radar_shroud",
     "weapon70": "#eq_shroud",
-    "streamkey": "#eq_shroud_soundbank",
+    "soundbank": "#eq_shroud_soundbank",
     "scrstr_8c8": [
         "tag_equipment_hero"
     ],

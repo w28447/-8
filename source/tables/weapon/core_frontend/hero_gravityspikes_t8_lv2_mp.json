@@ -4,7 +4,7 @@
     "displayname": "#hash_1cba478a3a2ba155",
     "weapon70": "#hero_gravityspikes_t8_lv1",
     "dualwieldWeaponName": "#hero_gravityspikes_t8_lh_lv2_mp",
-    "streamkey": "#hero_gravityspikes_t8_lv2_soundbank",
+    "soundbank": "#hero_gravityspikes_t8_lv2_soundbank",
     "scrstr_8d8": [
         "tag_ik_loc_le_dw"
     ],

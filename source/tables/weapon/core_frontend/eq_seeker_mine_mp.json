@@ -3,7 +3,7 @@
     "baseWeapon": "#eq_seeker_mine",
     "displayname": "#weapon/seeker_mine",
     "weapon70": "#eq_seeker_mine",
-    "streamkey": "#eq_seeker_mine_soundbank",
+    "soundbank": "#eq_seeker_mine_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -65,6 +65,6 @@
     "#hash_96850284": "#jammer_seeker",
     "#hash_26f68e75": "#icepick_seeker",
     "bounceImpactFX": "#euip_bounce",
-    "normalImpactSounds": "#hash_e8e0a97bbbf0b555",
+    "normalImpactSounds": "#grenade_explode_material",
     "bounceImpactSounds": "#trophy_bounce"
 }

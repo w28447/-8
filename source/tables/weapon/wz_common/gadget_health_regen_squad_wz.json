@@ -4,7 +4,7 @@
     "displayname": "#weapon/gadget_cleanse",
     "weapon70": "#gadget_health_regen",
     "luigiReticleWidget": "SwipeTak5",
-    "streamkey": "#gadget_health_regen_squad_soundbank",
+    "soundbank": "#gadget_health_regen_squad_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -41,7 +41,7 @@
     "worldModel": [
         "#hash_4acf86ecef26787e"
     ],
-    "gadgetIconAvailable": "#hash_f675ef2f1de24af8",
-    "gadgetIconUnavailable": "#hash_f675ef2f1de24af8",
+    "gadgetIconAvailable": "#ui_icon_gadget_cleanse_mp",
+    "gadgetIconUnavailable": "#ui_icon_gadget_cleanse_mp",
     "hudIcon": "#$blacktransparent"
 }

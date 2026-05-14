@@ -1,7 +1,7 @@
 {
     "name": "#hash_300b5026595febfd",
     "baseWeapon": "#hash_5dba840c6ed3ea3b",
-    "streamkey": "#hash_4417c35f11ff1ac9",
+    "soundbank": "#hash_4417c35f11ff1ac9",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

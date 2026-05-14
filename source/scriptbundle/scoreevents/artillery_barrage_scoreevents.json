@@ -1,5 +1,5 @@
 {
-    "artillery_barrage_kill": "#artillery_barrage_kill",
+    "killscoreevent": "#artillery_barrage_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",

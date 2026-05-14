@@ -3,7 +3,7 @@
     "baseWeapon": "#spork_alcatraz",
     "displayname": "#zmweapon/spork_knife",
     "xhash_60": "#au_spork_alcatraz",
-    "streamkey": "#spork_alcatraz_soundbank",
+    "soundbank": "#spork_alcatraz_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -30,7 +30,7 @@
     "#hash_554be9f7": false,
     "tunables1": "#spork_alcatraz_tunables_wz",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_175536a2e7fa7e1b"
@@ -48,5 +48,5 @@
     "meleeImpactRumble": "#defaultweapon_melee",
     "fx_f60": "#impacts/fx_flesh_hit_knife_zmb",
     "fx_f68": "#impacts/fx_flesh_hit_knife_zmb",
-    "normalImpactFX": "#hash_a5f3e55b8e1070ab"
+    "normalImpactFX": "#knife_large_enter"
 }

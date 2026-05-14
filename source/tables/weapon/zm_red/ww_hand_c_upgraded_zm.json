@@ -3,7 +3,7 @@
     "baseWeapon": "#ww_hand_c_upgraded",
     "displayname": "#hash_7de869e5ba802015",
     "weapon50": "#ww_hand_c_charged_zm",
-    "streamkey": "#ww_hand_c_upgraded_soundbank",
+    "soundbank": "#ww_hand_c_upgraded_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

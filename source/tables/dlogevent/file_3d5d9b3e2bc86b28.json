@@ -116,7 +116,7 @@
         },
         {
             "name": "#starting_armor",
-            "scrName": "#starting_armor",
+            "scrName": "#hash_4550558c",
             "type": "INT16"
         },
         {
@@ -126,7 +126,7 @@
         },
         {
             "name": "#repair_count",
-            "scrName": "#repair_count",
+            "scrName": "#hash_7352c057",
             "type": "INT16"
         },
         {

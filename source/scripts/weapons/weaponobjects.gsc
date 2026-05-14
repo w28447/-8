@@ -1,4 +1,3 @@
-#using scripts\weapons\weaponobjects_crap.gsc;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\challenges_shared;
@@ -17,6 +16,7 @@
 #using scripts\core_common\values_shared;
 #using scripts\core_common\weapons_shared;
 #using scripts\weapons\trophy_system;
+#using scripts\weapons\weaponobjects_crap;
 
 #namespace weaponobjects;
 

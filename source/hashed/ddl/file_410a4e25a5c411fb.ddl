@@ -17,9 +17,9 @@ version 6 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 3 size 0xc0
@@ -73,33 +73,33 @@ version 6 {
     // offset 0x388, size 0x20
     uint end_time;
     // offset 0x3a8, size 0x20
-    float hash_6373313e132d49b8;
+    float end_pos_x;
     // offset 0x3c8, size 0x20
-    float hash_6373323e132d4b6b;
+    float end_pos_y;
     // offset 0x3e8, size 0x10
     uint:16 hash_1f6f99c615ebe865;
     // offset 0x3f8, size 0x10
     uint:16 hash_7410c2f4f7747523;
     // offset 0x408, size 0x10
-    uint:16 hash_4b78f4ca0c0dd281;
+    uint:16 passenger_damage_taken;
     // offset 0x418, size 0x20
     uint start_time;
     // offset 0x438, size 0x8
-    byte hash_b165f7ced53ebf6;
+    byte max_occupants;
     // offset 0x440, size 0x20
-    float hash_4b57cd6a0164c365;
+    float start_pos_x;
     // offset 0x460, size 0x20
-    float hash_4b57cc6a0164c1b2;
+    float start_pos_y;
     // offset 0x480, size 0x10
     uint:16 hash_493b0b37aa073d11;
     // offset 0x490, size 0x10
     uint:16 hash_4c4e7e6968f548cd;
     // offset 0x4a0, size 0x20
-    uint hash_2da568278a84a90d;
+    uint vehicle_id;
     // offset 0x4c0, size 0xc0
     client_header client;
     // offset 0x580, size 0x10
-    uint:16 hash_2ade526a94b004f;
+    uint:16 passenger_deaths;
     // offset 0x590, size 0x10
     uint:16 start_health;
     // offset 0x5a0, size 0x40

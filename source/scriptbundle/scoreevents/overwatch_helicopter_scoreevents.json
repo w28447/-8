@@ -1,5 +1,5 @@
 {
-    "overwatch_helicopter_kill": "#overwatch_helicopter_kill",
+    "killscoreevent": "#overwatch_helicopter_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",

@@ -4,7 +4,7 @@
     "displayname": "#weapon/special_ballisticknife_t8",
     "weapon70": "#special_ballisticknife_t8_dw",
     "dualwieldWeaponName": "#special_ballisticknife_t8_dw_dw_mp",
-    "streamkey": "#special_ballisticknife_t8_lh_lh_soundbank",
+    "soundbank": "#special_ballisticknife_t8_lh_lh_soundbank",
     "scrstr_8c8": [
         "tag_camo_darkmatter",
         "tag_camo_diamond"
@@ -47,7 +47,7 @@
     "cacAttachmentsXCam": "#hash_4bb33dafd051a5c0",
     "weaponIconXCam": "#hash_4ae568f9358e0a98",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_4d5b6b33033c8a76"

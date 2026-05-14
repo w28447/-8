@@ -4,7 +4,7 @@
     "displayname": "#weapon/tr_powersemi_t8",
     "xhash_60": "#hash_75a72e8ca623829",
     "weapon70": "#tr_powersemi_t8",
-    "streamkey": "#tr_powersemi_t8_soundbank",
+    "soundbank": "#tr_powersemi_t8_soundbank",
     "scrstr_8c8": [
         "tag_rail",
         "tag_clan_tag",
@@ -76,7 +76,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_tr_powersemi",
     "weaponIconXCam": "#hash_4e9a910c37f05cb4",
     "attachments": [
-        "#hash_f459a0af8e8f912b",
+        "#defaultattachment",
         "#acog_wz",
         "#adsreload_wz"
     ],

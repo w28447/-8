@@ -3,7 +3,7 @@
     "baseWeapon": "#snowball_upgraded",
     "displayname": "#weapon/snowball",
     "weapon70": "#snowball",
-    "streamkey": "#snowball_upgraded_soundbank",
+    "soundbank": "#snowball_upgraded_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",

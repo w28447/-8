@@ -3,7 +3,7 @@
     "baseWeapon": "#hash_17df39d53492b0bf",
     "displayname": "#killstreak/ac130",
     "weapon70": "#ac130",
-    "streamkey": "#hash_269451c2acfebb7d",
+    "soundbank": "#hash_269451c2acfebb7d",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

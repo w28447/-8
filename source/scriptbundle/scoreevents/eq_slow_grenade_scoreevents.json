@@ -1,16 +1,16 @@
 {
-    "concussion_grenade_multikill_2": "#concussion_grenade_multikill_2",
-    "concussion_grenade_multikill_2": "#concussion_grenade_multikill_2",
-    "concussion_grenade_kill": "#concussion_grenade_kill",
+    "multikill2scoreevent": "#concussion_grenade_multikill_2",
+    "multikill6scoreevent": "#concussion_grenade_multikill_2",
+    "killscoreevent": "#concussion_grenade_kill",
     "hash_1352459d518467e4:hash_2eaed769": "#hash_1352459d518467e4",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
-    "concussion_grenade_concussed_enemy:hash_1253685d": "#concussion_grenade_concussed_enemy",
+    "concussion_grenade_concussed_enemy": "#concussion_grenade_concussed_enemy",
     "vmtype": "both",
-    "concussion_grenade_multikill_2": "#concussion_grenade_multikill_2",
+    "multikill4scoreevent": "#concussion_grenade_multikill_2",
     "name": "eq_slow_grenade_scoreevents",
     "customsettingstype": "status effect",
-    "concussion_grenade_multikill_2": "#concussion_grenade_multikill_2",
-    "concussion_grenade_assist": "#concussion_grenade_assist",
-    "concussion_grenade_multikill_2": "#concussion_grenade_multikill_2"
+    "multikill5scoreevent": "#concussion_grenade_multikill_2",
+    "assistscoreevent": "#concussion_grenade_assist",
+    "multikill3scoreevent": "#concussion_grenade_multikill_2"
 }

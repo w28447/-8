@@ -3,7 +3,7 @@
     "baseWeapon": "#ww_random_ray_gun2_charged",
     "displayname": "#hash_25ddfdd724070696",
     "weapon70": "#ww_random_ray_gun1",
-    "streamkey": "#ww_random_ray_gun2_charged_soundbank",
+    "soundbank": "#ww_random_ray_gun2_charged_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -69,7 +69,7 @@
         "#wpn_t8_zm_akud_clip_lvl2_world"
     ],
     "reticleSide": "#reticle_side_small",
-    "inventoryIconZm": "#hash_c5bc5c96b44a5900",
+    "inventoryIconZm": "#ui_icon_weapons_zm_akud_lvl02",
     "fireRumble": "#defaultweapon_fire",
     "rumble_df8": "#hash_1b194e26c256036c",
     "fx_bc8": "#hash_1f39d46ec954516f",

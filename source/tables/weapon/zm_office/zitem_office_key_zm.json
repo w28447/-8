@@ -1,7 +1,7 @@
 {
     "name": "#zitem_office_key_zm",
     "baseWeapon": "#zitem_office_key",
-    "streamkey": "#zitem_office_key_soundbank",
+    "soundbank": "#zitem_office_key_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

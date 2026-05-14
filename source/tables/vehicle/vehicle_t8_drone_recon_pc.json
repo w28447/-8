@@ -44,14 +44,14 @@
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "menu/hud_vehicle_jump:hash_4be786c9": "localized17#menu/hud_vehicle_jump",
+                        "menu/hud_vehicle_jump": "localized17#menu/hud_vehicle_jump",
                         "hash_334a8e60": "left",
                         "prompt": "+vehiclemoveup"
                     },
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "menu/hud_vehicle_speedboost:hash_4be786c9": "localized17#menu/hud_vehicle_speedboost",
+                        "menu/hud_vehicle_speedboost": "localized17#menu/hud_vehicle_speedboost",
                         "hash_334a8e60": "left",
                         "prompt": "+breath_sprint"
                     },
@@ -64,7 +64,7 @@
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "menu/hud_vehicle_detonate:hash_4be786c9": "localized17#menu/hud_vehicle_detonate",
+                        "menu/hud_vehicle_detonate": "localized17#menu/hud_vehicle_detonate",
                         "hash_334a8e60": "right",
                         "prompt": "+attack"
                     }
@@ -88,6 +88,6 @@
             }
         ],
         "healthpoolsize": 650,
-        "hash_7812fce8": 2
+        "healthpools": 2
     }
 }

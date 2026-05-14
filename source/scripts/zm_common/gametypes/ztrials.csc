@@ -1,4 +1,3 @@
-#using scripts\zm_common\trials\zm_trial_pack_a_punch_sacrifice.csc;
 #using script_45657e86e8f90414;
 #using script_5afd8ff8f8304cc4;
 #using script_70ab01a7690ea256;
@@ -6,6 +5,7 @@
 #using scripts\core_common\struct;
 #using scripts\zm_common\trials\zm_trial_disable_buys;
 #using scripts\zm_common\trials\zm_trial_disable_hud;
+#using scripts\zm_common\trials\zm_trial_pack_a_punch_sacrifice;
 #using scripts\zm_common\zm_trial;
 #using scripts\zm_common\zm_trial_util;
 

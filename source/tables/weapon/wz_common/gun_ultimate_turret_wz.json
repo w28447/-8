@@ -3,7 +3,7 @@
     "baseWeapon": "#gun_ultimate_turret",
     "displayname": "#weapon/mini_turret",
     "weapon70": "#ultimate_turret",
-    "streamkey": "#gun_ultimate_turret_soundbank",
+    "soundbank": "#gun_ultimate_turret_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -71,8 +71,8 @@
     "fx_c90": "#hash_8a5567d0168ae02f",
     "fx_c98": "#hash_8a5567d0168ae02f",
     "#hash_96850284": "#jammer_sentry",
-    "normalImpactFX": "#hash_e1b4c700060ee40c",
-    "exitImpactFX": "#hash_83b4b1d145ec9892",
+    "normalImpactFX": "#bullet_small_enter",
+    "exitImpactFX": "#bullet_small_exit",
     "normalImpactSounds": "#miniturret_bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

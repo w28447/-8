@@ -3,7 +3,7 @@
     "baseWeapon": "#inventory_ai_tank_marker",
     "displayname": "#weapon/ai_tank_drop",
     "weapon70": "#ai_tank_marker",
-    "streamkey": "#inventory_ai_tank_marker_soundbank",
+    "soundbank": "#inventory_ai_tank_marker_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -43,13 +43,13 @@
     "worldModel": [
         "#wpn_t8_eqp_grenade_smoke_world"
     ],
-    "gadgetIconAvailable": "#hash_ece3348a93cdacbf",
-    "gadgetIconUnavailable": "#hash_ece3348a93cdacbf",
+    "gadgetIconAvailable": "#ui_icon_ability_tankrobot",
+    "gadgetIconUnavailable": "#ui_icon_ability_tankrobot",
     "reticleSide": "#reticle_side_small",
-    "inventoryIconZm": "#hash_ece3348a93cdacbf",
-    "hudIcon": "#hash_ece3348a93cdacbf",
-    "image_e90": "#hash_ece3348a93cdacbf",
+    "inventoryIconZm": "#ui_icon_ability_tankrobot",
+    "hudIcon": "#ui_icon_ability_tankrobot",
+    "image_e90": "#ui_icon_ability_tankrobot",
     "image_1048": "#ui_icon_scorestreaks_tankrobot_hud",
     "#hash_26f68e75": "#icepick_tankrobot",
-    "bounceImpactSounds": "#hash_c6d8f2152c519b03"
+    "bounceImpactSounds": "#smoke_bounce"
 }

@@ -3,7 +3,7 @@
     "baseWeapon": "#explodable_barrel",
     "displayname": "#weapon/m2fraggrenade",
     "weapon70": "#weapon_null",
-    "streamkey": "#explodable_barrel_soundbank",
+    "soundbank": "#explodable_barrel_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -41,5 +41,5 @@
     ],
     "reticleCenter": "#reticle_center_cross",
     "image_e90": "#hud_obit_exploding_barrel",
-    "fx_f00": "#hash_80e7395fb42d35f6"
+    "fx_f00": "#weapon/fx_trail_grenade"
 }

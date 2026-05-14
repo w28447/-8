@@ -5,7 +5,7 @@
     "altWeapon": "#tr_flechette_t8_upgraded_zm",
     "xhash_60": "#hash_7f1dd646e48e88e",
     "weapon70": "#tr_flechette_t8",
-    "streamkey": "#dualoptic_tr_flechette_t8_upgraded_soundbank",
+    "soundbank": "#dualoptic_tr_flechette_t8_upgraded_soundbank",
     "scrstr_8c8": [
         "tag_sights",
         "tag_clan_tag",
@@ -71,7 +71,7 @@
     "sound610": "#hash_209cb2974ae55ec0",
     "sound800": "#hash_5ee962527afebfb1",
     "sound810": "#hash_5ee962527afebfb1",
-    "tunables1": "#hash_67b54501a6d42fb9",
+    "tunables1": "#dualoptic_tr_flechette_t8_upgraded_tunables_zm",
     "weaponCamo": "#hash_e449bdbb499a985e",
     "cacWeaponXCam": "#ui_cam_cac_tr_flechette",
     "cacAttachmentsXCam": "#ui_cam_cac_tr_flechette",
@@ -99,7 +99,7 @@
         "#wpn_t8_loot_tac_rifle_flechette_mag_mk2_world"
     ],
     "reticleSide": "#reticle_side_small",
-    "inventoryIcon": "#hash_9204155cf902d67d",
+    "inventoryIcon": "#loot04_ui_icon_blackmarket_reserves_weapon_ tr_flechette",
     "inventoryIconZm": "#ui_icon_weapons_zm_tr_flechette",
     "image_e90": "#ui_icon_obit_tr_flechette",
     "fireRumble": "#tr_fire",
@@ -113,10 +113,10 @@
     "fx_c90": "#hash_83613e307817774e",
     "fx_c98": "#hash_83613e307817774e",
     "fx_f00": "#hash_e11c104f1f9c8dbc",
-    "normalImpactFX": "#hash_811a47eea24a8f26",
-    "exitImpactFX": "#hash_d6ef4fc6c00cc18e",
-    "bounceImpactFX": "#hash_811a47eea24a8f26",
+    "normalImpactFX": "#flechette_enter",
+    "exitImpactFX": "#bullet_large_exit",
+    "bounceImpactFX": "#flechette_enter",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea",
-    "bounceImpactSounds": "#hash_c15fba9edcdfd2e4"
+    "exitImpactSounds": "#bullet_exit",
+    "bounceImpactSounds": "#shotgun_impact"
 }

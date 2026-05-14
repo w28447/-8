@@ -1,5 +1,5 @@
 {
-    "radiation_field_kill": "#radiation_field_kill",
+    "killscoreevent": "#radiation_field_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",

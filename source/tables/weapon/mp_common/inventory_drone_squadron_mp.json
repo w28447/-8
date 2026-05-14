@@ -3,7 +3,7 @@
     "baseWeapon": "#inventory_drone_squadron",
     "displayname": "#killstreak/drone_squadron",
     "weapon70": "#drone_squadron",
-    "streamkey": "#inventory_drone_squadron_soundbank",
+    "soundbank": "#inventory_drone_squadron_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",

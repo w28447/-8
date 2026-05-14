@@ -1,7 +1,7 @@
 {
     "name": "#zitem_zhield_zword_part_1_zm",
     "baseWeapon": "#zitem_zhield_zword_part_1",
-    "streamkey": "#zitem_zhield_zword_part_1_soundbank",
+    "soundbank": "#zitem_zhield_zword_part_1_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

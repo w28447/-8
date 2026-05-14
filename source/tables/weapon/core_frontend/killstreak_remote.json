@@ -1,7 +1,7 @@
 {
     "name": "#killstreak_remote",
     "baseWeapon": "#killstreak_remote",
-    "streamkey": "#killstreak_remote_soundbank",
+    "soundbank": "#killstreak_remote_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

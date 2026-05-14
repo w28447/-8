@@ -9,7 +9,7 @@ STRING "<dev string:x38>" 0x220
 ######################################################
 ####################  DEV BLOCKS  ####################
 ######################################################
-# archetypenovacrawler::function_32107b12@2
+# archetypenovacrawler::archetypenovacrawlerinit@2
 DEVBLOCK 0xea
 # archetypenovacrawler::function_3d50e4d0@a
 DEVBLOCK 0x1f2

@@ -1,14 +1,14 @@
 {
-    "hawk_tag_multikill_2": "#hawk_tag_multikill_2",
-    "hawk_tag_multikill_2": "#hawk_tag_multikill_2",
-    "hawk_tag_kill": "#hawk_tag_kill",
+    "multikill2scoreevent": "#hawk_tag_multikill_2",
+    "multikill6scoreevent": "#hawk_tag_multikill_2",
+    "killscoreevent": "#hawk_tag_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
-    "hawk_tag_multikill_2": "#hawk_tag_multikill_2",
+    "multikill4scoreevent": "#hawk_tag_multikill_2",
     "name": "eq_hawk_scoreevents",
     "customsettingstype": "ability",
-    "hawk_tag_multikill_2": "#hawk_tag_multikill_2",
+    "multikill5scoreevent": "#hawk_tag_multikill_2",
     "hash_fcd2ff3a": 1,
-    "hawk_tag_multikill_2": "#hawk_tag_multikill_2"
+    "multikill3scoreevent": "#hawk_tag_multikill_2"
 }

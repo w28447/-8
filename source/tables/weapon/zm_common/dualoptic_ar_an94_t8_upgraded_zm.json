@@ -5,7 +5,7 @@
     "altWeapon": "#ar_an94_t8_upgraded_zm",
     "xhash_60": "#hash_229d69919d134e9b",
     "weapon70": "#ar_an94_t8",
-    "streamkey": "#dualoptic_ar_an94_t8_upgraded_soundbank",
+    "soundbank": "#dualoptic_ar_an94_t8_upgraded_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -72,11 +72,11 @@
     "sound610": "#hash_209cb2974ae55ec0",
     "sound800": "#hash_5ee962527afebfb1",
     "sound810": "#hash_5ee962527afebfb1",
-    "tunables1": "#hash_72b256e42df29b3c",
+    "tunables1": "#dualoptic_ar_an94_t8_upgraded_tunables_zm",
     "weaponCamo": "#hash_a5f086b500e3e02f",
     "cacWeaponXCam": "#ui_cam_cac_ar_an94",
     "cacAttachmentsXCam": "#ui_cam_cac_ar_an94",
-    "weaponIconXCam": "#hash_bfdb8ca61bcf31dc",
+    "weaponIconXCam": "#ui_cam_icon_ar_an94",
     "sharedWeaponSounds": "#rifle",
     "tracers": [
         "#hash_c930471310f548b8",
@@ -96,7 +96,7 @@
     "inventoryIconZm": "#ui_icon_weapons_zm_ar_an94",
     "image_e90": "#ui_icon_obit_ar_an94",
     "fireRumble": "#assault_fire",
-    "rumble_dc8": "#hash_a17a158aac0f6479",
+    "rumble_dc8": "#assault_adsfire",
     "rumble_e20": "#hash_b22cc8a226215312",
     "fx_bc8": "#hash_25eca4954ed626fe",
     "fx_bd0": "#hash_446adecdf76cc9b8",
@@ -105,8 +105,8 @@
     "fx_c88": "#hash_83613e307817774e",
     "fx_c90": "#hash_83613e307817774e",
     "fx_c98": "#hash_83613e307817774e",
-    "normalImpactFX": "#hash_9cafc46b8c735870",
-    "exitImpactFX": "#hash_d6ef4fc6c00cc18e",
+    "normalImpactFX": "#bullet_large_enter",
+    "exitImpactFX": "#bullet_large_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

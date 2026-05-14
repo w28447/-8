@@ -3,7 +3,7 @@
     "baseWeapon": "#pickup_health_regen",
     "displayname": "#weapon/gadget_health_regen",
     "weapon70": "#gadget_health_regen",
-    "streamkey": "#pickup_health_regen_soundbank",
+    "soundbank": "#pickup_health_regen_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

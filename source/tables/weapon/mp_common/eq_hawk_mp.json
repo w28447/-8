@@ -3,7 +3,7 @@
     "baseWeapon": "#eq_hawk",
     "displayname": "#weapon/hawk",
     "weapon70": "#eq_hawk",
-    "streamkey": "#eq_hawk_soundbank",
+    "soundbank": "#eq_hawk_soundbank",
     "scrstr_8c8": [
         "tag_equipment_hero"
     ],
@@ -55,6 +55,6 @@
     "image_e90": "#hash_e51a0c08929c60d8",
     "image_1048": "#hash_e51a0c08929c60d8",
     "#hash_96850284": "#jammer_hawk",
-    "bounceImpactFX": "#hash_9cafc46b8c735870",
-    "bounceImpactSounds": "#hash_eea4f85282d97815"
+    "bounceImpactFX": "#bullet_large_enter",
+    "bounceImpactSounds": "#sensor_dart_projectile"
 }

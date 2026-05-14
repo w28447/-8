@@ -1,4 +1,3 @@
-#using scripts\weapons\weaponobjects_crap.gsc;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\clientfield_shared;
 #using scripts\core_common\flagsys_shared;
@@ -8,6 +7,7 @@
 #using scripts\core_common\weapons_shared;
 #using scripts\mp_common\util;
 #using scripts\weapons\weaponobjects;
+#using scripts\weapons\weaponobjects_crap;
 
 #namespace weaponobjects;
 

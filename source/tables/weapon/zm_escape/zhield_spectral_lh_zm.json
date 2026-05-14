@@ -3,7 +3,7 @@
     "baseWeapon": "#zhield_spectral_lh",
     "displayname": "#zmweapon/shield_spectral",
     "dualwieldWeaponName": "#zhield_spectral_dw_zm",
-    "streamkey": "#zhield_spectral_lh_soundbank",
+    "soundbank": "#zhield_spectral_lh_soundbank",
     "scrstr_8c8": [
         "tag_hellbox_lock_le"
     ],
@@ -43,7 +43,7 @@
     "stowedmodel": [
         "#hash_7aa44eb45c359e1b"
     ],
-    "inventoryIconZm": "#hash_93ef923686346dc9",
+    "inventoryIconZm": "#ui_icon_weapons_zm_shield_spectral_door",
     "image_e90": "#t7_icon_weapon_hero_reaper_kf",
     "fireRumble": "#defaultweapon_fire",
     "#hash_21329beb": [

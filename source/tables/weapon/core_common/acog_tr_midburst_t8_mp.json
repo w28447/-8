@@ -4,7 +4,7 @@
     "displayname": "#weapon/tr_midburst_t8",
     "altWeapon": "#tr_midburst_t8_mp",
     "weapon70": "#tr_midburst_t8",
-    "streamkey": "#acog_tr_midburst_t8_soundbank",
+    "soundbank": "#acog_tr_midburst_t8_soundbank",
     "scrstr_8c8": [
         "tag_cap_plug",
         "tag_flap_lft_lrg_stock_01_pba",

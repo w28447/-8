@@ -1,14 +1,14 @@
 {
-    "blade_multikill_2": "#blade_multikill_2",
-    "blade_multikill_2": "#blade_multikill_2",
-    "blade_kill": "#blade_kill",
+    "multikill2scoreevent": "#blade_multikill_2",
+    "multikill6scoreevent": "#blade_multikill_2",
+    "killscoreevent": "#blade_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
-    "blade_multikill_2": "#blade_multikill_2",
+    "multikill4scoreevent": "#blade_multikill_2",
     "name": "sig_blade_scoreevents",
     "customsettingstype": "ability",
-    "blade_multikill_2": "#blade_multikill_2",
+    "multikill5scoreevent": "#blade_multikill_2",
     "blade_shutdown": "#blade_shutdown",
-    "blade_multikill_2": "#blade_multikill_2"
+    "multikill3scoreevent": "#blade_multikill_2"
 }

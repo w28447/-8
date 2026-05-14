@@ -3,7 +3,7 @@
     "baseWeapon": "#hero_annihilator",
     "displayname": "#weapon/hero_annihilator",
     "weapon70": "#hero_annihilator",
-    "streamkey": "#hero_annihilator_soundbank",
+    "soundbank": "#hero_annihilator_soundbank",
     "scrstr_8c8": [
         "tag_ability_hero"
     ],
@@ -63,7 +63,7 @@
     "cacWeaponXCam": "#ui_cam_cac_hero_annihilator",
     "cacAttachmentsXCam": "#ui_cam_cac_hero_annihilator",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_5d0317de038f2247"
@@ -81,8 +81,8 @@
     "worldModel": [
         "#wpn_t8_sig_annihilator_world"
     ],
-    "gadgetIconAvailable": "#hash_dc480e11c561ec99",
-    "gadgetIconUnavailable": "#hash_c4420de9d387e30e",
+    "gadgetIconAvailable": "#ui_icon_ultimate_annihilator",
+    "gadgetIconUnavailable": "#ui_icon_ultimate_annihilator_dark",
     "reticleSide": "#reticle_side_small_rotated",
     "inventoryIconZm": "#ui_icon_weapon_hud_hero_annihilator",
     "hudIcon": "#ui_icon_ability_annihilator",
@@ -94,8 +94,8 @@
     "fx_bd0": "#hash_7634515f123ba37f",
     "fx_be8": "#weapon/fx_hero_annhilatr_glint",
     "enemyDeathFxSet": "#weapon_hero_annihilator_knockback",
-    "normalImpactFX": "#hash_fee0671def6af7a4",
-    "exitImpactFX": "#hash_d6ef4fc6c00cc18e",
-    "normalImpactSounds": "#hash_f8e291a8acdea947",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "normalImpactFX": "#bullet_xlarge_enter",
+    "exitImpactFX": "#bullet_large_exit",
+    "normalImpactSounds": "#bullet_explode",
+    "exitImpactSounds": "#bullet_exit"
 }

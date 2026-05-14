@@ -6,7 +6,7 @@
     "stackimage": "image#ui_icon_blackmarket_reserves_weapon_bribe",
     "desctext": "localized17#hash_14b6dedc2c899de5",
     "weapon/ar_modular_t8": "localized17#weapon/ar_modular_t8",
-    "ui_icon_blackmarket_itemshop_weapon_bribe:hash_76dc8b88": "image#ui_icon_blackmarket_itemshop_weapon_bribe",
+    "ui_icon_blackmarket_itemshop_weapon_bribe": "image#ui_icon_blackmarket_itemshop_weapon_bribe",
     "previewimage": "image#ui_icon_blackmarket_reserves_weapon_bribe",
     "hash_2b27d20d2cfc1069:hash_c1acffb6": "localized17#hash_2b27d20d2cfc1069"
 }

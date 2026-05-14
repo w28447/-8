@@ -7,7 +7,6 @@
 #using script_45993630a26b2d85;
 #using script_67da0c3654a906b6;
 #using script_6951ea86fdae9ae0;
-#using scripts\zm_common\trials\zm_trial_fast_travel_rush.gsc;
 #using scripts\core_common\ai\zombie_utility;
 #using scripts\core_common\util_shared;
 #using scripts\zm_common\trials\zm_trial_close_quarters;
@@ -19,6 +18,7 @@
 #using scripts\zm_common\trials\zm_trial_disable_perks;
 #using scripts\zm_common\trials\zm_trial_disable_regen;
 #using scripts\zm_common\trials\zm_trial_disable_upgraded_weapons;
+#using scripts\zm_common\trials\zm_trial_fast_travel_rush;
 #using scripts\zm_common\trials\zm_trial_force_archetypes;
 #using scripts\zm_common\trials\zm_trial_friendly_fire;
 #using scripts\zm_common\trials\zm_trial_no_ads;

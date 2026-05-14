@@ -1,14 +1,14 @@
 {
-    "sparrow_multikill_2": "#sparrow_multikill_2",
-    "sparrow_multikill_2": "#sparrow_multikill_2",
-    "sparrow_kill": "#sparrow_kill",
+    "multikill2scoreevent": "#sparrow_multikill_2",
+    "multikill6scoreevent": "#sparrow_multikill_2",
+    "killscoreevent": "#sparrow_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
-    "sparrow_multikill_2": "#sparrow_multikill_2",
+    "multikill4scoreevent": "#sparrow_multikill_2",
     "name": "sig_bow_scoreevents",
     "customsettingstype": "ability",
-    "sparrow_multikill_2": "#sparrow_multikill_2",
+    "multikill5scoreevent": "#sparrow_multikill_2",
     "quickshot_bow_shutdown": "#quickshot_bow_shutdown",
-    "sparrow_multikill_2": "#sparrow_multikill_2"
+    "multikill3scoreevent": "#sparrow_multikill_2"
 }

@@ -4,8 +4,8 @@
             "hash_8223b0cf": 1.5,
             "absolutehealth": 1,
             "type": "#weakpoint",
-            "hash_910e2f9b": "tag_carriage_ws_ri",
-            "hash_51e8b151": "tag_carriage_ws_le",
+            "hittag2": "tag_carriage_ws_ri",
+            "hittag1": "tag_carriage_ws_le",
             "activebydefault": 1,
             "hitradius": 0,
             "health": 55000
@@ -14,7 +14,7 @@
             "hash_8223b0cf": 2.5,
             "absolutehealth": 1,
             "type": "#weakpoint",
-            "hash_51e8b151": "tag_head_ws",
+            "hittag1": "tag_head_ws",
             "hitradius": 0,
             "health": 45000
         },
@@ -22,7 +22,7 @@
             "hash_8223b0cf": 1.5,
             "absolutehealth": 1,
             "type": "#weakpoint",
-            "hash_51e8b151": "tag_chest_armor_ws",
+            "hittag1": "tag_chest_armor_ws",
             "activebydefault": 1,
             "hitradius": 0,
             "health": 45000
@@ -31,7 +31,7 @@
             "hash_8223b0cf": 1.5,
             "absolutehealth": 1,
             "type": "#weakpoint",
-            "hash_51e8b151": "tag_body_ws",
+            "hittag1": "tag_body_ws",
             "hitradius": 0,
             "health": 60000
         }

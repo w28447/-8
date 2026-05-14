@@ -4,7 +4,7 @@
     "displayname": "#zmweapon/bowie",
     "xhash_60": "#au_bowie_knife",
     "weapon70": "#bowie_knife",
-    "streamkey": "#stake_knife_flourish_soundbank",
+    "soundbank": "#stake_knife_flourish_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -42,7 +42,7 @@
     "tunables1": "#stake_knife_flourish_tunables_zm",
     "weaponCamo": "#hash_d11c3f983cd01165",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_e38c7357797a4107"

@@ -1,7 +1,7 @@
 {
     "name": "#dog_ai_defaultmelee_wz",
     "baseWeapon": "#dog_ai_defaultmelee",
-    "streamkey": "#dog_ai_defaultmelee_soundbank",
+    "soundbank": "#dog_ai_defaultmelee_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

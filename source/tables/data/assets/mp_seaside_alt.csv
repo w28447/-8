@@ -25550,7 +25550,7 @@ streamkey,#hash_4026ee4323c0731b
 sound,#mp_seaside_alt.all
 com_map,#maps/mp/mp_seaside_alt.d3dbsp
 game_map,#maps/mp/mp_seaside_alt.d3dbsp
-weapontunables,#hash_621b652f36d11dec
+weapontunables,#quadtank_main_turret_player_tunables
 fx,d#tools/fx_null
 klf,#hash_232e7f899dc39f01
 fx,#hash_1f9064a00b900ea8

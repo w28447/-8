@@ -1,4 +1,3 @@
-#using scripts\zm\zm_white_defend_soul_capture.gsc;
 #using script_24c32478acf44108;
 #using scripts\core_common\ai\zombie_utility;
 #using scripts\core_common\array_shared;
@@ -10,6 +9,7 @@
 #using scripts\core_common\util_shared;
 #using scripts\core_common\values_shared;
 #using scripts\zm\zm_hms_util;
+#using scripts\zm\zm_white_defend_soul_capture;
 #using scripts\zm\zm_white_main_quest;
 #using scripts\zm\zm_white_util;
 #using scripts\zm\zm_white_ww_quest_weapon;

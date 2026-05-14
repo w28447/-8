@@ -3,7 +3,7 @@
     "baseWeapon": "#special_crossbow_t8",
     "displayname": "#weapon/special_crossbow_t8",
     "weapon70": "#special_crossbow_t8",
-    "streamkey": "#special_crossbow_t8_soundbank",
+    "soundbank": "#special_crossbow_t8_soundbank",
     "scrstr_8c8": [
         "tag_camo_darkmatter",
         "tag_camo_diamond"
@@ -60,7 +60,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_special_crossbow",
     "weaponIconXCam": "#ui_cam_icon_special_crossbow",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_3c87014f6faa4fbc"

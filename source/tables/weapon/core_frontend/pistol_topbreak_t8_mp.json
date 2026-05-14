@@ -3,7 +3,7 @@
     "baseWeapon": "#pistol_topbreak_t8",
     "displayname": "#weapon/pistol_topbreak_t8",
     "weapon70": "#pistol_topbreak_t8",
-    "streamkey": "#pistol_topbreak_t8_soundbank",
+    "soundbank": "#pistol_topbreak_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -67,7 +67,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_pistol_topbreak",
     "weaponIconXCam": "#ui_cam_icon_pistol_shotgun",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_6d5da4c74dc6e246"
@@ -87,15 +87,15 @@
     "inventoryIconZm": "#t7_icon_weapon_pistol_shotgun_pu",
     "image_e90": "#t7_icon_weapon_pistol_shotgun_kf",
     "fireRumble": "#shotgun_fire",
-    "rumble_dc8": "#hash_f1fceb6e20f9fbdc",
+    "rumble_dc8": "#shotgun_adsfire",
     "fx_bc8": "#hash_a75ec03fa8473f64",
     "fx_bd0": "#hash_a765ac3fa84d3c16",
     "fx_c80": "#weapon/fx_shellejects_shotgun",
     "fx_c88": "#weapon/fx_shellejects_pistol",
     "fx_c90": "#weapon/fx_shellejects_shotgun",
     "fx_c98": "#weapon/fx_shellejects_pistol",
-    "normalImpactFX": "#hash_e1b4c700060ee40c",
-    "exitImpactFX": "#hash_83b4b1d145ec9892",
+    "normalImpactFX": "#bullet_small_enter",
+    "exitImpactFX": "#bullet_small_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

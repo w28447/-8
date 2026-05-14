@@ -1,7 +1,7 @@
 {
     "name": "#zombie_bgb_grab",
     "baseWeapon": "#zombie_bgb_grab",
-    "streamkey": "#zombie_bgb_grab_soundbank",
+    "soundbank": "#zombie_bgb_grab_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

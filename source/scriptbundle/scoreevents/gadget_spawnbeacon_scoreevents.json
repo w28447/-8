@@ -1,16 +1,16 @@
 {
-    "spawn_beacon_multikill_2": "#spawn_beacon_multikill_2",
-    "spawn_beacon_multikill_2": "#spawn_beacon_multikill_2",
-    "spawn_beacon_kill": "#spawn_beacon_kill",
+    "multikill2scoreevent": "#spawn_beacon_multikill_2",
+    "multikill6scoreevent": "#spawn_beacon_multikill_2",
+    "killscoreevent": "#spawn_beacon_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "spawn_beacon_insertion": "#spawn_beacon_insertion",
     "vmtype": "both",
-    "spawn_beacon_multikill_2": "#spawn_beacon_multikill_2",
+    "multikill4scoreevent": "#spawn_beacon_multikill_2",
     "name": "gadget_spawnbeacon_scoreevents",
     "customsettingstype": "ability",
-    "spawn_beacon_multikill_2": "#spawn_beacon_multikill_2",
+    "multikill5scoreevent": "#spawn_beacon_multikill_2",
     "forward_spawn_deactivated": "#forward_spawn_deactivated",
     "hash_fcd2ff3a": 1,
-    "spawn_beacon_multikill_2": "#spawn_beacon_multikill_2"
+    "multikill3scoreevent": "#spawn_beacon_multikill_2"
 }

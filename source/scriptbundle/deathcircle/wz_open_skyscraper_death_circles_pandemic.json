@@ -12,8 +12,8 @@
             "hash_a3841ae2": 0,
             "hash_5a8689a9": 1,
             "circleradius": 90000,
-            "hash_112f6f50": -4254,
-            "hash_b9aec05c": -1544,
+            "circleoriginy": -4254,
+            "circleoriginx": -1544,
             "hash_b97ecd26": 1,
             "hash_85589312": 60
         },
@@ -29,8 +29,8 @@
             "hash_a3841ae2": 57090,
             "hash_5a8689a9": 1,
             "circleradius": 60000,
-            "hash_112f6f50": -4254,
-            "hash_b9aec05c": -1544,
+            "circleoriginy": -4254,
+            "circleoriginx": -1544,
             "hash_b97ecd26": 1,
             "hash_85589312": 60
         },
@@ -46,8 +46,8 @@
             "hash_a3841ae2": 97090,
             "hash_5a8689a9": 1,
             "circleradius": 35000,
-            "hash_112f6f50": -4254,
-            "hash_b9aec05c": -1544,
+            "circleoriginy": -4254,
+            "circleoriginx": -1544,
             "hash_b97ecd26": 2,
             "hash_85589312": 45
         },
@@ -63,8 +63,8 @@
             "hash_a3841ae2": 112090,
             "hash_5a8689a9": 1,
             "circleradius": 8596,
-            "hash_112f6f50": -4254,
-            "hash_b9aec05c": -1544,
+            "circleoriginy": -4254,
+            "circleoriginx": -1544,
             "hash_b97ecd26": 5,
             "hash_85589312": 30
         }
@@ -74,9 +74,9 @@
     "type": "deathcircle",
     "name": "wz_open_skyscraper_death_circles_pandemic",
     "hash_8d8aa969": 0,
-    "hash_904b645e": 0,
+    "endgamedelay": 0,
     "hash_7a60538a": 4,
-    "hash_64232072": 90,
+    "initialcircledelay": 90,
     "hash_6c870a00": 10,
     "hash_ab9cd581": 20
 }

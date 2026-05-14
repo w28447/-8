@@ -3,7 +3,7 @@
     "baseWeapon": "#hash_790eab2239858f5d",
     "displayname": "#zmweapon/shotgun_trenchgun_t8_upgraded",
     "weapon70": "#shotgun_trenchgun_t8",
-    "streamkey": "#hash_64d4a3ffb98cbe07",
+    "soundbank": "#hash_64d4a3ffb98cbe07",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -48,7 +48,7 @@
         "#hash_4ad8388ae3a5e0f7",
         "#hash_53953c55bab35a43"
     ],
-    "normalImpactFX": "#hash_c80a3191309d3449",
+    "normalImpactFX": "#grenade_explosion",
     "bounceImpactFX": "#grenade_bounce",
     "dudImpactFX": "#grenade_dud",
     "normalImpactSounds": "#grenade_pineapple_explode_material",

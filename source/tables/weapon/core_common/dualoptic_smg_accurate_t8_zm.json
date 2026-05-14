@@ -4,7 +4,7 @@
     "displayname": "#weapon/smg_accurate_t8",
     "altWeapon": "#smg_accurate_t8_zm",
     "weapon70": "#smg_accurate_t8",
-    "streamkey": "#dualoptic_smg_accurate_t8_soundbank",
+    "soundbank": "#dualoptic_smg_accurate_t8_soundbank",
     "scrstr_8c8": [
         "tag_front_sights_off",
         "tag_rear_sights_off",
@@ -72,7 +72,7 @@
     "sound610": "#hash_72a07537a35e0368",
     "sound800": "#hash_41b8cf5f69b41ad4",
     "sound810": "#hash_41b8cf5f69b41ad4",
-    "tunables1": "#hash_6943e32cfd033945",
+    "tunables1": "#dualoptic_smg_accurate_t8_tunables_zm",
     "weaponCamo": "#hash_2642897f58ec6e37",
     "cacWeaponXCam": "#ui_cam_cac_smg_accurate",
     "cacAttachmentsXCam": "#ui_cam_cac_smg_accurate",

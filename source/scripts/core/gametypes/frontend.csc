@@ -1,4 +1,3 @@
-#using scripts\core_common\player\player_free_fall_util.csc;
 #using scripts\core\gametypes\frontend_blackmarket;
 #using scripts\core\gametypes\frontend_draft;
 #using scripts\core_common\activecamo_shared;
@@ -11,6 +10,7 @@
 #using scripts\core_common\exploder_shared;
 #using scripts\core_common\lui_shared;
 #using scripts\core_common\math_shared;
+#using scripts\core_common\player\player_free_fall_util;
 #using scripts\core_common\postfx_shared;
 #using scripts\core_common\scene_shared;
 #using scripts\core_common\struct;
@@ -194,7 +194,7 @@ function function_3a965fac( scene_name, prt, mode, fields )
     
     if ( isdefined( var_8b15a963 ) )
     {
-        canselect = !( isdefined( fields.disallowselection ) && fields.disallowselection );
+        canselect = !( isdefined( fields.var_819846c7 ) && fields.var_819846c7 );
         var_7accf7bb = { #scene:scene_name, #prt:prt, #canselect:canselect, #dvar:fields.requireddvar, #role_index:var_8b15a963, #list_index:level.var_e362b5d9.size, #mode:mode, #fields:fields, #isdefault:isdefined( fields.var_c6376b99 ) && fields.var_c6376b99 };
         
         if ( !isdefined( level.var_e362b5d9 ) )

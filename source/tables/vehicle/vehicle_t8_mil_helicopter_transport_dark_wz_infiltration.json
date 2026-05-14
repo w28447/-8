@@ -42,28 +42,28 @@
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "menu/gas:hash_4be786c9": "localized17#menu/gas",
+                        "menu/gas": "localized17#menu/gas",
                         "hash_334a8e60": "left",
                         "prompt": "+movestick"
                     },
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "menu/switch_seats:hash_4be786c9": "localized17#menu/switch_seats",
+                        "menu/switch_seats": "localized17#menu/switch_seats",
                         "hash_334a8e60": "left",
                         "prompt": "+switchseat"
                     },
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "menu/hud_vehicle_flyup:hash_4be786c9": "localized17#menu/hud_vehicle_flyup",
+                        "menu/hud_vehicle_flyup": "localized17#menu/hud_vehicle_flyup",
                         "hash_334a8e60": "left",
                         "prompt": "+vehiclemoveup"
                     },
                     {
                         "none": "#none",
                         "hash_7aecb1d7": 0,
-                        "menu/hud_vehicle_flydown:hash_4be786c9": "localized17#menu/hud_vehicle_flydown",
+                        "menu/hud_vehicle_flydown": "localized17#menu/hud_vehicle_flydown",
                         "hash_334a8e60": "left",
                         "prompt": "+vehiclemovedown"
                     }
@@ -91,6 +91,6 @@
             }
         ],
         "healthpoolsize": 3000,
-        "hash_7812fce8": 1
+        "healthpools": 1
     }
 }

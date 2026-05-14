@@ -2,51 +2,51 @@
     "zombiesplitmdls": [
         {
             "c_t8_zmb_dlc0_zombie_male_body1": "#c_t8_zmb_dlc0_zombie_male_body1",
-            "hash_cdf1f53d": "model#"
+            "splitmdl": "model#"
         },
         {
             "c_t8_zmb_dlc0_zombie_male_body1_skin2": "#c_t8_zmb_dlc0_zombie_male_body1_skin2",
-            "hash_cdf1f53d": "model#"
+            "splitmdl": "model#"
         },
         {
             "c_t8_zmb_dlc0_zombie_male_body1_skin3": "#c_t8_zmb_dlc0_zombie_male_body1_skin3",
-            "hash_cdf1f53d": "model#"
+            "splitmdl": "model#"
         },
         {
             "c_t8_zmb_dlc0_zombie_male_body2": "#c_t8_zmb_dlc0_zombie_male_body2",
-            "hash_cdf1f53d": "model#"
+            "splitmdl": "model#"
         },
         {
             "c_t8_zmb_dlc0_zombie_male_body3": "#c_t8_zmb_dlc0_zombie_male_body3",
-            "hash_cdf1f53d": "model#"
+            "splitmdl": "model#"
         },
         {
             "c_t8_zmb_dlc0_zombie_male_body4": "#c_t8_zmb_dlc0_zombie_male_body4",
-            "hash_cdf1f53d": "model#"
+            "splitmdl": "model#"
         },
         {
             "c_t8_zmb_dlc0_zombie_female_body1": "#c_t8_zmb_dlc0_zombie_female_body1",
-            "hash_cdf1f53d": "model#"
+            "splitmdl": "model#"
         },
         {
             "c_t8_zmb_dlc0_zombie_female_body1_skin2": "#c_t8_zmb_dlc0_zombie_female_body1_skin2",
-            "hash_cdf1f53d": "model#"
+            "splitmdl": "model#"
         },
         {
             "hash_7004d9f4d44c574c:hash_a3c9023c": "#hash_7004d9f4d44c574c",
-            "hash_cdf1f53d": "model#"
+            "splitmdl": "model#"
         },
         {
             "hash_7004d8f4d44c5599:hash_a3c9023c": "#hash_7004d8f4d44c5599",
-            "hash_cdf1f53d": "model#"
+            "splitmdl": "model#"
         },
         {
             "c_t8_zmb_dlc0_zombie_female_body2": "#c_t8_zmb_dlc0_zombie_female_body2",
-            "hash_cdf1f53d": "model#"
+            "splitmdl": "model#"
         },
         {
             "c_t8_zmb_dlc0_zombie_female_body2_skin2": "#c_t8_zmb_dlc0_zombie_female_body2_skin2",
-            "hash_cdf1f53d": "model#"
+            "splitmdl": "model#"
         }
     ],
     "hash_9c0ebe1e": 5000,
@@ -81,7 +81,7 @@
     "hash_250a1683": 100,
     "hash_bacb0199": 2,
     "hash_6e7acfb4": 1.5,
-    "hash_97b22faa": 1,
+    "instakillweakpointdamagescale": 1,
     "damagescale": 1,
     "category": "#basic",
     "hash_854eebd": 0,

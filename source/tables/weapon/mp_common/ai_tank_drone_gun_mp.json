@@ -2,7 +2,7 @@
     "name": "#ai_tank_drone_gun_mp",
     "baseWeapon": "#ai_tank_drone_gun",
     "weapon70": "#ai_tank_marker",
-    "streamkey": "#ai_tank_drone_gun_soundbank",
+    "soundbank": "#ai_tank_drone_gun_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -52,6 +52,6 @@
     "fireRumble": "#smg_fire",
     "fx_bc8": "#killstreaks/fx_agr_gun_flash_1p",
     "fx_bd0": "#killstreaks/fx_agr_gun_flash_3p",
-    "normalImpactFX": "#hash_9cafc46b8c735870",
-    "exitImpactFX": "#hash_d6ef4fc6c00cc18e"
+    "normalImpactFX": "#bullet_large_enter",
+    "exitImpactFX": "#bullet_large_exit"
 }

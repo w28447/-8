@@ -4,6 +4,6 @@
     "vmtype": "both",
     "name": "wound_radiation_scoreevents",
     "customsettingstype": "status effect",
-    "radiation_field_wound_assist": "#radiation_field_wound_assist",
+    "assistscoreevent": "#radiation_field_wound_assist",
     "radiation_field_objective_wound_assist": "#radiation_field_objective_wound_assist"
 }

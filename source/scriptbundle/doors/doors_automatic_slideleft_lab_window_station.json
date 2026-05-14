@@ -17,7 +17,7 @@
     "hash_be86269a": 2,
     "door_slide_open_units": -48,
     "door_swing_angle": 120,
-    "hash_f2943dab": 120,
+    "door_swing_angle_barricaded": 120,
     "door_open_time": 0.2,
     "door_trigger_radius": 112,
     "door_slide_horizontal": 1,

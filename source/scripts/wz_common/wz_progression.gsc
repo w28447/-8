@@ -1,4 +1,3 @@
-#using scripts\core_common\player\player_free_fall_util.gsc;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\challenges_shared;
@@ -8,6 +7,7 @@
 #using scripts\core_common\infection;
 #using scripts\core_common\loot_tracking;
 #using scripts\core_common\match_record;
+#using scripts\core_common\player\player_free_fall_util;
 #using scripts\core_common\player\player_stats;
 #using scripts\core_common\scoreevents_shared;
 #using scripts\core_common\struct;

@@ -3,7 +3,7 @@
     "baseWeapon": "#wraith_fire_fire_small",
     "displayname": "#weapon/incendiary_grenade",
     "weapon70": "#incendiary_grenade",
-    "streamkey": "#wraith_fire_fire_small_soundbank",
+    "soundbank": "#wraith_fire_fire_small_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -54,7 +54,7 @@
     "image_eb0": "#t7_hud_icon_menu_incendiary",
     "rumble_de8": "#grenade_rumble",
     "fx_ed8": "#hash_abc2c2be87890dc4",
-    "fx_f00": "#hash_80e7395fb42d35f6",
-    "normalImpactSounds": "#hash_e8e0a97bbbf0b555",
-    "bounceImpactSounds": "#hash_c6d8f2152c519b03"
+    "fx_f00": "#weapon/fx_trail_grenade",
+    "normalImpactSounds": "#grenade_explode_material",
+    "bounceImpactSounds": "#smoke_bounce"
 }

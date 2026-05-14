@@ -4,7 +4,7 @@
     "displayname": "#weapon/ar_damage_t8",
     "altWeapon": "#ar_damage_t8_zm",
     "weapon70": "#ar_damage_t8",
-    "streamkey": "#dualoptic_ar_damage_t8_soundbank",
+    "soundbank": "#dualoptic_ar_damage_t8_soundbank",
     "scrstr_8c8": [
         "tag_sights_front_off",
         "tag_sights_rear_off",
@@ -74,7 +74,7 @@
     "sound610": "#hash_209cb2974ae55ec0",
     "sound800": "#hash_5ee962527afebfb1",
     "sound810": "#hash_5ee962527afebfb1",
-    "tunables1": "#hash_660bb8c25c5c196c",
+    "tunables1": "#dualoptic_ar_damage_t8_tunables_zm",
     "weaponCamo": "#hash_52723a3cdfc50264",
     "cacWeaponXCam": "#ui_cam_cac_ar_damage",
     "cacAttachmentsXCam": "#ui_cam_cac_ar_damage",

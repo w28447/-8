@@ -3,7 +3,7 @@
     "baseWeapon": "#hero_katana_t8_lv3",
     "displayname": "#hash_672c8450c778c664",
     "weapon70": "#hero_katana_t8_lv1",
-    "streamkey": "#hero_katana_t8_lv3_soundbank",
+    "soundbank": "#hero_katana_t8_lv3_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -58,5 +58,5 @@
     "fx_f38": "#hash_1f7c9b39945dce24",
     "fx_f40": "#hash_1f7c9b39945dce24",
     "viewPersistentEffectSet": "#hash_76190d2d09c1ca70",
-    "normalImpactFX": "#hash_a5f3e55b8e1070ab"
+    "normalImpactFX": "#knife_large_enter"
 }

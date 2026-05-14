@@ -1,7 +1,7 @@
 {
     "name": "#zombie_perk_totem_timeslip",
     "baseWeapon": "#zombie_perk_totem_timeslip",
-    "streamkey": "#zombie_perk_totem_timeslip_soundbank",
+    "soundbank": "#zombie_perk_totem_timeslip_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",

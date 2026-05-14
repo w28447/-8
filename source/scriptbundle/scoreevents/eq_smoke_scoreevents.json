@@ -1,14 +1,14 @@
 {
-    "smoke_multikill_2": "#smoke_multikill_2",
-    "smoke_multikill_2": "#smoke_multikill_2",
-    "smoke_kill": "#smoke_kill",
+    "multikill2scoreevent": "#smoke_multikill_2",
+    "multikill6scoreevent": "#smoke_multikill_2",
+    "killscoreevent": "#smoke_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
-    "smoke_multikill_2": "#smoke_multikill_2",
+    "multikill4scoreevent": "#smoke_multikill_2",
     "name": "eq_smoke_scoreevents",
     "customsettingstype": "ability",
-    "smoke_multikill_2": "#smoke_multikill_2",
+    "multikill5scoreevent": "#smoke_multikill_2",
     "hash_fcd2ff3a": 1,
-    "smoke_multikill_2": "#smoke_multikill_2"
+    "multikill3scoreevent": "#smoke_multikill_2"
 }

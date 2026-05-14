@@ -3,7 +3,7 @@
     "baseWeapon": "#tr_longburst_t8",
     "displayname": "#weapon/tr_longburst_t8",
     "weapon70": "#tr_longburst_t8",
-    "streamkey": "#tr_longburst_t8_soundbank",
+    "soundbank": "#tr_longburst_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -73,7 +73,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_tr_longburst",
     "weaponIconXCam": "#hash_40dc0f5074bce9d3",
     "attachments": [
-        "#hash_f459a0af8e8f912b",
+        "#defaultattachment",
         "#acog_tr"
     ],
     "attachmentUniques": [

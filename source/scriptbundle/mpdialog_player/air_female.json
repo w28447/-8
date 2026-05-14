@@ -19,7 +19,7 @@
     "characterselect": "#hash_6081368e325b6e2a",
     "name": "air_female",
     "hash_617fc3327f181e4:hash_207908de": "#hash_617fc3327f181e4",
-    "hash_4e75e8a14fa26343:hash_b801796c": "#hash_4e75e8a14fa26343",
+    "exertpainpunched": "#hash_4e75e8a14fa26343",
     "boostloss": "#hash_fcf8b7dc79005d1",
     "exertgascough": "#hash_5dd6963c2764c367",
     "exertpainfalling": "#hash_5c62f4858db83251",
@@ -37,6 +37,6 @@
     "exertbreathehurt": "#hash_7ae4f81666b83d3d",
     "exertfullyhealedbreath": "#exert_fully_healed",
     "exertdeathdrowned": "#hash_9efa973c6475ade",
-    "hash_194ac97bd58f54db:hash_c3b67de0": "#hash_194ac97bd58f54db",
+    "exertpainburn": "#hash_194ac97bd58f54db",
     "hash_b4aa53d5d5b9a99:hash_1ca33ad4": "#hash_b4aa53d5d5b9a99"
 }

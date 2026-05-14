@@ -19,7 +19,7 @@
     "characterselect": "#hash_7dc9488bcc72fb8f",
     "name": "land_male",
     "hash_1309e456575fc741:hash_207908de": "#hash_1309e456575fc741",
-    "hash_6dd8d1c98edeb4c8:hash_b801796c": "#hash_6dd8d1c98edeb4c8",
+    "exertpainpunched": "#hash_6dd8d1c98edeb4c8",
     "boostloss": "#hash_4a439b7978c165be",
     "exertgascough": "#hash_54931ea4420b810e",
     "exertpainfalling": "#hash_4774fbc81d3413f6",
@@ -37,6 +37,6 @@
     "exertbreathehurt": "#hash_1802340ccf44e92c",
     "exertfullyhealedbreath": "#exert_fully_healed",
     "exertdeathdrowned": "#hash_7609fa41982c6521",
-    "hash_1c3e90b5b7850cc0:hash_c3b67de0": "#hash_1c3e90b5b7850cc0",
+    "exertpainburn": "#hash_1c3e90b5b7850cc0",
     "hash_3a047d2dce4bd402:hash_1ca33ad4": "#hash_3a047d2dce4bd402"
 }

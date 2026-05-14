@@ -3,7 +3,7 @@
     "baseWeapon": "#sig_blade",
     "displayname": "#weapon/sig_blade",
     "weapon70": "#sig_blade",
-    "streamkey": "#sig_blade_soundbank",
+    "soundbank": "#sig_blade_soundbank",
     "scrstr_8c8": [
         "tag_ability_hero"
     ],
@@ -40,7 +40,7 @@
     "tunables1": "#sig_blade_tunables_wz",
     "cacWeaponXCam": "#hash_2547de4f2204205b",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_1febe4bed3f47247"
@@ -63,5 +63,5 @@
     "image_1048": "#ui_icon_equipment_zm_katana_lvl1",
     "fireRumble": "#defaultweapon_melee",
     "fx_f70": "#hash_5965b1535a7f73a1",
-    "normalImpactFX": "#hash_a5f3e55b8e1070ab"
+    "normalImpactFX": "#knife_large_enter"
 }

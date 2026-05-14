@@ -3,7 +3,7 @@
     "baseWeapon": "#lmg_stealth_t8",
     "displayname": "#weapon/lmg_stealth_t8",
     "weapon70": "#lmg_stealth_t8",
-    "streamkey": "#lmg_stealth_t8_soundbank",
+    "soundbank": "#lmg_stealth_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -76,7 +76,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_lmg_stealth",
     "weaponIconXCam": "#hash_4008e6e46e66b13e",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_3b95ac78aae02d14"

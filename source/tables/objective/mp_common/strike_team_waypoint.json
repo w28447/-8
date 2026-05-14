@@ -15,7 +15,7 @@
     "shouldCullDistance": false,
     "cullDistance": 300,
     "hasLowAmmoState": false,
-    "waypointImage": "#hash_9fb99e3cafe7be8e",
+    "waypointImage": "#ui_icon_scorestreaks_swat_team_dark",
     "unk30": 300,
     "bundle": {
         "hash_10b16ca8": 3,

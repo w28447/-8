@@ -91,7 +91,7 @@ DEVBLOCK 0x3e72
 DEVBLOCK 0x3ef2
 # namespace_ed876ec::debug_setup@2
 DEVBLOCK 0x488a
-# namespace_ed876ec::function_8f74831a@2
+# namespace_ed876ec::debug_zm_blockers@2
 DEVBLOCK 0x49b2
 # namespace_ed876ec::debug_zm_wallbuys@2
 DEVBLOCK 0x4a12

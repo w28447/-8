@@ -4,7 +4,7 @@
     "displayname": "#zmweapon/sniper_powerbolt_t8_upgraded",
     "xhash_60": "#hash_5705de554842193b",
     "weapon70": "#sniper_powerbolt_t8",
-    "streamkey": "#sniper_powerbolt_t8_upgraded_soundbank",
+    "soundbank": "#sniper_powerbolt_t8_upgraded_soundbank",
     "scrstr_8c8": [
         "tag_scope_mms_attach",
         "tag_clan_tag",
@@ -77,9 +77,9 @@
     "weaponCamo": "#hash_ba8bb47020a85ef1",
     "cacWeaponXCam": "#ui_cam_cac_sniper_powerbolt",
     "cacAttachmentsXCam": "#ui_cam_cac_sniper_powerbolt",
-    "weaponIconXCam": "#hash_dedd5d68b4135dc0",
+    "weaponIconXCam": "#ui_cam_icon_sniper_powerbolt",
     "attachments": [
-        "#hash_f459a0af8e8f912b",
+        "#defaultattachment",
         "#acog_sniper_upgraded",
         "#adsreload"
     ],
@@ -116,7 +116,7 @@
     "inventoryIconZm": "#ui_icon_weapons_zm_sniperpowerbolt",
     "image_e90": "#ui_icon_obit_sniper_powerbolt",
     "fireRumble": "#sniper_fire",
-    "rumble_dc8": "#hash_ae361344d740b1c3",
+    "rumble_dc8": "#sniper_adsfire",
     "rumble_e20": "#hash_b22cc8a226215312",
     "fx_bc8": "#hash_5268dd97baae3513",
     "fx_bd0": "#hash_25f5d5cd01b86a71",
@@ -127,5 +127,5 @@
     "fx_c98": "#hash_b22a4fa483be6b03",
     "normalImpactFX": "#hash_20c877e5a04849b6",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

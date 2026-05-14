@@ -1,7 +1,7 @@
 {
     "name": "#gegenees_melee",
     "baseWeapon": "#gegenees_melee",
-    "streamkey": "#gegenees_melee_soundbank",
+    "soundbank": "#gegenees_melee_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

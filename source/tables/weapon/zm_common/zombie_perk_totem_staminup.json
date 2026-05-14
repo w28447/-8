@@ -1,7 +1,7 @@
 {
     "name": "#zombie_perk_totem_staminup",
     "baseWeapon": "#zombie_perk_totem_staminup",
-    "streamkey": "#zombie_perk_totem_staminup_soundbank",
+    "soundbank": "#zombie_perk_totem_staminup_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",

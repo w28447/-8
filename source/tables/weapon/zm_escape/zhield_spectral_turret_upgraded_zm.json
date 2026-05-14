@@ -4,7 +4,7 @@
     "displayname": "#zmweapon/shield_spectral_upg",
     "altWeapon": "#zhield_spectral_dw_upgraded_zm",
     "weapon70": "#zhield_spectral_dw",
-    "streamkey": "#zhield_spectral_turret_upgraded_soundbank",
+    "soundbank": "#zhield_spectral_turret_upgraded_soundbank",
     "worldModelTagRight": "tag_weapon_left",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -50,7 +50,7 @@
     "sharedWeaponSounds": "#battle_shield",
     "tracers": [
         "#pistol",
-        "#hash_c0ce0b8ef958c831"
+        "#pistol_enemy"
     ],
     "viewmodel": [
         "#hash_6deba57dd1acd63b"
@@ -58,12 +58,12 @@
     "worldModel": [
         "#hash_5892f7f4c9a9720e"
     ],
-    "gadgetIconAvailable": "#hash_93ef923686346dc9",
-    "gadgetIconUnavailable": "#hash_93ef923686346dc9",
-    "inventoryIconZm": "#hash_93ef923686346dc9",
-    "hudIcon": "#hash_93ef923686346dc9",
-    "image_e90": "#hash_93ef923686346dc9",
-    "image_1048": "#hash_93ef923686346dc9",
+    "gadgetIconAvailable": "#ui_icon_weapons_zm_shield_spectral_door",
+    "gadgetIconUnavailable": "#ui_icon_weapons_zm_shield_spectral_door",
+    "inventoryIconZm": "#ui_icon_weapons_zm_shield_spectral_door",
+    "hudIcon": "#ui_icon_weapons_zm_shield_spectral_door",
+    "image_e90": "#ui_icon_weapons_zm_shield_spectral_door",
+    "image_1048": "#ui_icon_weapons_zm_shield_spectral_door",
     "fireRumble": "#pistol_fire",
     "fx_bc8": "#hash_e1e9b23b3f789a92",
     "fx_bd0": "#hash_e1e2a63b3f726780",
@@ -73,10 +73,10 @@
     "fx_c88": "#hash_8a5567d0168ae02f",
     "fx_c90": "#hash_8a5567d0168ae02f",
     "fx_c98": "#hash_8a5567d0168ae02f",
-    "normalImpactFX": "#hash_e1b4c700060ee40c",
-    "exitImpactFX": "#hash_83b4b1d145ec9892",
+    "normalImpactFX": "#bullet_small_enter",
+    "exitImpactFX": "#bullet_small_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea",
+    "exitImpactSounds": "#bullet_exit",
     "#hash_21329beb": [
         {
             "model": "#hash_5892f7f4c9a9720e"

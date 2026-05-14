@@ -1,9 +1,9 @@
-#using scripts\core_common\ai\archetype_nosferatu_interface.gsc;
 #using scripts\core_common\aat_shared;
 #using scripts\core_common\ai\archetype_damage_utility;
 #using scripts\core_common\ai\archetype_locomotion_utility;
 #using scripts\core_common\ai\archetype_mocomps_utility;
 #using scripts\core_common\ai\archetype_nosferatu;
+#using scripts\core_common\ai\archetype_nosferatu_interface;
 #using scripts\core_common\ai\archetype_utility;
 #using scripts\core_common\ai\systems\ai_blackboard;
 #using scripts\core_common\ai\systems\ai_interface;

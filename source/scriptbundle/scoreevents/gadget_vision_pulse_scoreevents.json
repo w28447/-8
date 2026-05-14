@@ -1,14 +1,14 @@
 {
-    "vision_pulse_multikill_2": "#vision_pulse_multikill_2",
-    "vision_pulse_multikill_2": "#vision_pulse_multikill_2",
-    "vision_pulse_kill": "#vision_pulse_kill",
+    "multikill2scoreevent": "#vision_pulse_multikill_2",
+    "multikill6scoreevent": "#vision_pulse_multikill_2",
+    "killscoreevent": "#vision_pulse_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vision_pulse_activated": "#vision_pulse_activated",
     "vmtype": "both",
-    "vision_pulse_multikill_2": "#vision_pulse_multikill_2",
+    "multikill4scoreevent": "#vision_pulse_multikill_2",
     "name": "gadget_vision_pulse_scoreevents",
     "customsettingstype": "ability",
-    "vision_pulse_multikill_2": "#vision_pulse_multikill_2",
-    "vision_pulse_multikill_2": "#vision_pulse_multikill_2"
+    "multikill5scoreevent": "#vision_pulse_multikill_2",
+    "multikill3scoreevent": "#vision_pulse_multikill_2"
 }

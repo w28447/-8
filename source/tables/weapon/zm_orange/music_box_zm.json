@@ -3,7 +3,7 @@
     "baseWeapon": "#music_box",
     "displayname": "#zmweapon/music_box",
     "weapon70": "#music_box",
-    "streamkey": "#music_box_soundbank",
+    "soundbank": "#music_box_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -35,7 +35,7 @@
     "sound450": "#hash_3c89dce559dfe797",
     "sound660": "#uin_unavailable_charging",
     "tunables1": "#music_box_tunables_zm",
-    "cacWeaponXCam": "#hash_ca93d9d6b1c015ab",
+    "cacWeaponXCam": "#ui_cam_cac_equip_semtex",
     "sharedWeaponSounds": "#equipment",
     "statusEffects": [
         {
@@ -69,7 +69,7 @@
     "image_eb0": "#hud_icon_acid_bomb",
     "fx_f00": "#hash_dfdd021d80dd8fc6",
     "underwaterExplosionSurfaceFX": [
-        "#hash_fb70232b2892e045",
+        "#explosions/fx8_exp_grenade_water",
         "#hash_c15b461b7420c6d2",
         "#hash_bb3f97cf646813ac"
     ],

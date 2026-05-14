@@ -2,7 +2,7 @@
     "name": "#cobra_20mm_mp",
     "baseWeapon": "#cobra_20mm",
     "weapon70": "#killstreak_helicopter_player_firstperson",
-    "streamkey": "#cobra_20mm_soundbank",
+    "soundbank": "#cobra_20mm_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

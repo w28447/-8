@@ -29,7 +29,7 @@ STRING "<dev string:xbc>" 0x36d0
 ######################################################
 ####################  DEV BLOCKS  ####################
 ######################################################
-# archetypenosferatu::function_5b800648@2
+# archetypenosferatu::archetypenosferatuinit@2
 DEVBLOCK 0x41a
 # archetypenosferatu::registerbehaviorscriptfunctions@2
 DEVBLOCK 0x522

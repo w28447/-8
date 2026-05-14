@@ -74,10 +74,10 @@
                 "scene": "scriptbundle&default_end_game_pose"
             }
         ],
-        "hash_b85069c": "t7_mp_notification_weapon_reaper",
+        "challengeSpecialist": "t7_mp_notification_weapon_reaper",
         "hash_75d28fb319a7c1e8:hash_7c1ccfd6": "localized17#hash_75d28fb319a7c1e8",
         "hash_be6ea125": "scriptbundle&scene_frontend_t8_wz_male_unlock",
-        "heroes/reaper_weapon_tips:hash_9dadc42e": "localized17#heroes/reaper_weapon_tips",
+        "heroes/reaper_weapon_tips": "localized17#heroes/reaper_weapon_tips",
         "digitalblood": 1,
         "hash_67e06199": 0,
         "hash_bb70c379": "scriptbundle&scene_frontend_t8_male_customization",
@@ -93,7 +93,7 @@
         "hash_e97eda81": 0,
         "mpdialog": "scriptbundle&reaper",
         "hash_8df0287c": 0,
-        "hash_49a55967": 0,
+        "iscombattrainingenabled": 0,
         "hash_8ef1b43f": 0,
         "hash_148d6d91": 0,
         "hash_5c403974": 0,

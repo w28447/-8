@@ -3,7 +3,7 @@
     "baseWeapon": "#ac130_autocannon",
     "displayname": "#killstreak/ac130",
     "weapon70": "#ac130",
-    "streamkey": "#ac130_autocannon_soundbank",
+    "soundbank": "#ac130_autocannon_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -36,7 +36,7 @@
     "sound520": "#hash_2f19eb86dc934074",
     "sound5e0": "#hash_21cfea621573025a",
     "projexplosionsound": "#hash_4e25b7e8e6211763",
-    "tunables1": "#hash_141c2fd790d1ceb",
+    "tunables1": "#ac130_autocannon_tunables",
     "tracers": [
         "#chopper_gunner",
         "#chopper_gunner"

@@ -1,7 +1,7 @@
 {
     "name": "#turret_vehicle_boct_mil_truck_cargo_wz",
     "baseWeapon": "#turret_vehicle_boct_mil_truck_cargo",
-    "streamkey": "#turret_vehicle_boct_mil_truck_cargo_soundbank",
+    "soundbank": "#turret_vehicle_boct_mil_truck_cargo_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -36,7 +36,7 @@
     "tunables2": "#hash_7afbc852016d0839",
     "tracers": [
         "#lmg",
-        "#hash_e2bdd456ce2308cc"
+        "#lmg_enemy"
     ],
     "turretAnimSettings": "#player_turret_cargo_truck_driver_anims",
     "inventoryIconZm": "#hud_icon_minigun",
@@ -48,8 +48,8 @@
     "fx_c88": "#weapon/fx_turret_shelleject_expel",
     "fx_c90": "#weapon/fx_turret_shelleject_expel",
     "fx_c98": "#weapon/fx_turret_shelleject_expel",
-    "normalImpactFX": "#hash_946d30ee171ae16a",
-    "exitImpactFX": "#hash_bf7991ca1680bd5c",
+    "normalImpactFX": "#bullet_ap_enter",
+    "exitImpactFX": "#bullet_ap_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

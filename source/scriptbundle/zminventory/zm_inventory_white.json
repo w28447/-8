@@ -10,7 +10,7 @@
                         }
                     ],
                     "hash_1d91eeba": 1,
-                    "hash_7db3435c": 0,
+                    "ispersonalitem": 0,
                     "clientfield": "#teleporter_modifier_item_1"
                 },
                 {
@@ -21,7 +21,7 @@
                         }
                     ],
                     "hash_1d91eeba": 1,
-                    "hash_7db3435c": 0,
+                    "ispersonalitem": 0,
                     "clientfield": "#teleporter_modifier_item_2"
                 },
                 {
@@ -32,7 +32,7 @@
                         }
                     ],
                     "hash_1d91eeba": 1,
-                    "hash_7db3435c": 0,
+                    "ispersonalitem": 0,
                     "clientfield": "#teleporter_modifier_item_3"
                 }
             ],
@@ -48,7 +48,7 @@
                         }
                     ],
                     "hash_1d91eeba": 1,
-                    "hash_7db3435c": 0,
+                    "ispersonalitem": 0,
                     "clientfield": "#teleporter_pad_1"
                 },
                 {
@@ -59,7 +59,7 @@
                         }
                     ],
                     "hash_1d91eeba": 1,
-                    "hash_7db3435c": 0,
+                    "ispersonalitem": 0,
                     "clientfield": "#teleporter_pad_2"
                 }
             ],
@@ -68,17 +68,17 @@
     ],
     "shieldpieces": [
         {
-            "hash_7db3435c": 0,
+            "ispersonalitem": 0,
             "pieceimage": "image#hash_57735462a52670f9",
             "clientfield": "#shield_1"
         },
         {
-            "hash_7db3435c": 0,
+            "ispersonalitem": 0,
             "pieceimage": "image#hash_57735162a5266be0",
             "clientfield": "#shield_2"
         },
         {
-            "hash_7db3435c": 0,
+            "ispersonalitem": 0,
             "pieceimage": "image#hash_57735262a5266d93",
             "clientfield": "#shield_3"
         }
@@ -98,7 +98,7 @@
                                 }
                             ],
                             "hash_1d91eeba": 2,
-                            "hash_7db3435c": 1,
+                            "ispersonalitem": 1,
                             "clientfield": "#zm_white_ww_mk2v_ammo"
                         }
                     ],
@@ -116,7 +116,7 @@
                                 }
                             ],
                             "hash_1d91eeba": 2,
-                            "hash_7db3435c": 1,
+                            "ispersonalitem": 1,
                             "clientfield": "#zm_white_ww_mk2x_ammo"
                         }
                     ],
@@ -134,7 +134,7 @@
                                 }
                             ],
                             "hash_1d91eeba": 2,
-                            "hash_7db3435c": 1,
+                            "ispersonalitem": 1,
                             "clientfield": "#zm_white_ww_mk2y_ammo"
                         }
                     ],
@@ -152,14 +152,14 @@
                                 }
                             ],
                             "hash_1d91eeba": 2,
-                            "hash_7db3435c": 1,
+                            "ispersonalitem": 1,
                             "clientfield": "#zm_white_ww_mk2z_ammo"
                         }
                     ],
                     "list_items": 1
                 }
             ],
-            "hash_7db3435c": 1,
+            "ispersonalitem": 1,
             "hash_516217cd": 4,
             "name": "zm_white_ww_mod",
             "zm_white_ww_mod_phase": "#zm_white_ww_mod_phase"
@@ -175,14 +175,14 @@
                                 }
                             ],
                             "hash_1d91eeba": 1,
-                            "hash_7db3435c": 1,
+                            "ispersonalitem": 1,
                             "clientfield": "#zm_white_ww_husk_part"
                         }
                     ],
                     "list_items": 1
                 }
             ],
-            "hash_7db3435c": 1,
+            "ispersonalitem": 1,
             "hash_516217cd": 1,
             "name": "zm_white_ww_husk"
         },
@@ -197,14 +197,14 @@
                                 }
                             ],
                             "hash_1d91eeba": 1,
-                            "hash_7db3435c": 0,
+                            "ispersonalitem": 0,
                             "clientfield": "#zm_white_private_mannequin_key_part"
                         }
                     ],
                     "list_items": 1
                 }
             ],
-            "hash_7db3435c": 0,
+            "ispersonalitem": 0,
             "hash_516217cd": 1,
             "name": "zm_white_private_mannequin_key"
         }
@@ -255,7 +255,7 @@
                 }
             ],
             "hash_1d91eeba": 1,
-            "hash_7db3435c": 0,
+            "ispersonalitem": 0,
             "clientfield": "#hash_133f5935959cbd21"
         },
         {
@@ -265,7 +265,7 @@
                 }
             ],
             "hash_1d91eeba": 1,
-            "hash_7db3435c": 0,
+            "ispersonalitem": 0,
             "clientfield": "#hash_133f5635959cb808"
         },
         {
@@ -275,7 +275,7 @@
                 }
             ],
             "hash_1d91eeba": 1,
-            "hash_7db3435c": 0,
+            "ispersonalitem": 0,
             "clientfield": "#hash_133f5735959cb9bb"
         }
     ],
@@ -293,6 +293,6 @@
     "hash_c029b82f": 2,
     "zm_white_breakfast_trial": "#zm_white_breakfast_trial",
     "hash_f3d39d90": 0,
-    "hash_38b9613": 0,
+    "isobjprogressnonlinear": 0,
     "hash_1ebd66c5e00ca2ef:hash_16fb993f": "image#hash_1ebd66c5e00ca2ef"
 }

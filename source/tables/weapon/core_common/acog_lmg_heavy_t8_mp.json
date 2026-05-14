@@ -4,7 +4,7 @@
     "displayname": "#weapon/lmg_heavy_t8",
     "altWeapon": "#lmg_heavy_t8_mp",
     "weapon70": "#lmg_heavy_t8",
-    "streamkey": "#acog_lmg_heavy_t8_soundbank",
+    "soundbank": "#acog_lmg_heavy_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -71,7 +71,7 @@
     "sound610": "#hash_209cb2974ae55ec0",
     "sound800": "#hash_5ee962527afebfb1",
     "sound810": "#hash_5ee962527afebfb1",
-    "tunables1": "#hash_6d3f37b24bf19786",
+    "tunables1": "#acog_lmg_heavy_t8_tunables_mp",
     "weaponCamo": "#hash_25eb22c2dd537925",
     "cacWeaponXCam": "#ui_cam_cac_lmg_heavy",
     "cacAttachmentsXCam": "#ui_cam_cac_lmg_heavy",

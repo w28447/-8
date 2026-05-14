@@ -1,7 +1,7 @@
 {
     "name": "#avogadro_ai_defaultmelee_zm",
     "baseWeapon": "#avogadro_ai_defaultmelee",
-    "streamkey": "#avogadro_ai_defaultmelee_soundbank",
+    "soundbank": "#avogadro_ai_defaultmelee_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

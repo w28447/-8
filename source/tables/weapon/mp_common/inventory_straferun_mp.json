@@ -3,7 +3,7 @@
     "baseWeapon": "#inventory_straferun",
     "displayname": "#killstreak/straferun",
     "weapon70": "#straferun",
-    "streamkey": "#inventory_straferun_soundbank",
+    "soundbank": "#inventory_straferun_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",
@@ -43,8 +43,8 @@
     "worldModel": [
         "#wpn_t8_eqp_radio_handheld_world"
     ],
-    "gadgetIconAvailable": "#hash_acf3b8e7fc6b084b",
-    "gadgetIconUnavailable": "#hash_e20b351c46fff869",
+    "gadgetIconAvailable": "#ui_icon_scorestreaks_straferun_light",
+    "gadgetIconUnavailable": "#ui_icon_scorestreaks_straferun_dark",
     "inventoryIconZm": "#ui_icon_scorestreaks_razorback",
     "hudIcon": "#ui_icon_scorestreaks_air_razorback",
     "image_e90": "#t7_hud_ks_drone_uav",

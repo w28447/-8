@@ -3,7 +3,7 @@
     "baseWeapon": "#tundragun_upgraded",
     "displayname": "#zmweapon/tundragun_upgraded",
     "weapon70": "#thundergun",
-    "streamkey": "#tundragun_upgraded_soundbank",
+    "soundbank": "#tundragun_upgraded_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "scrstr_118c": "tag_flash",

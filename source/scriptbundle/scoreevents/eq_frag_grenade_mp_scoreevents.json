@@ -1,13 +1,13 @@
 {
-    "frag_multikill_2": "#frag_multikill_2",
-    "frag_multikill_2": "#frag_multikill_2",
-    "frag_grenade_kill": "#frag_grenade_kill",
+    "multikill2scoreevent": "#frag_multikill_2",
+    "multikill6scoreevent": "#frag_multikill_2",
+    "killscoreevent": "#frag_grenade_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
-    "frag_multikill_2": "#frag_multikill_2",
+    "multikill4scoreevent": "#frag_multikill_2",
     "name": "eq_frag_grenade_mp_scoreevents",
     "customsettingstype": "ability",
-    "frag_multikill_2": "#frag_multikill_2",
-    "frag_multikill_2": "#frag_multikill_2"
+    "multikill5scoreevent": "#frag_multikill_2",
+    "multikill3scoreevent": "#frag_multikill_2"
 }

@@ -5,7 +5,7 @@
     "result": "weapon#zitem_silver_bullet_part_4_zm",
     "type": "craftblueprint",
     "hash_3c809ce0": 0,
-    "hash_e414062": 0,
+    "resultoffsety": 0,
     "hash_2206e7ed": 0,
     "component01": "weapon#zitem_silver_molten_part_1_zm",
     "component02": "weapon#zitem_silver_molten_part_2_zm",

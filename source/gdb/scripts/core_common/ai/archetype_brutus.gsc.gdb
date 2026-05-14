@@ -9,7 +9,7 @@ STRING "<dev string:x38>" 0x220
 ######################################################
 ####################  DEV BLOCKS  ####################
 ######################################################
-# archetypebrutus::function_651f04c3@2
+# archetypebrutus::archetypebrutusinit@2
 DEVBLOCK 0xea
 # archetypebrutus::function_f9f08bb1@a
 DEVBLOCK 0x1f2

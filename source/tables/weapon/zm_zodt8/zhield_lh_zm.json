@@ -3,7 +3,7 @@
     "baseWeapon": "#zhield_lh",
     "displayname": "#weapon/sig_buckler_dw",
     "dualwieldWeaponName": "#zhield_dw_zm",
-    "streamkey": "#zhield_lh_soundbank",
+    "soundbank": "#zhield_lh_soundbank",
     "worldModelTagRight": "tag_weapon_left",
     "worldModelTagLeft": "tag_weapon_right",
     "stowedModelTag": "tag_stowed_back",

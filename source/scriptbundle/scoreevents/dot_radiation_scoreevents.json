@@ -1,14 +1,14 @@
 {
-    "radiation_field_multikill_2": "#radiation_field_multikill_2",
-    "radiation_field_multikill_2": "#radiation_field_multikill_2",
+    "multikill2scoreevent": "#radiation_field_multikill_2",
+    "multikill6scoreevent": "#radiation_field_multikill_2",
     "hash_23ea1436025bb7d5:hash_2eaed769": "#hash_23ea1436025bb7d5",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
-    "radiation_field_multikill_2": "#radiation_field_multikill_2",
+    "multikill4scoreevent": "#radiation_field_multikill_2",
     "name": "dot_radiation_scoreevents",
     "customsettingstype": "status effect",
-    "radiation_field_multikill_2": "#radiation_field_multikill_2",
-    "radiation_field_assist": "#radiation_field_assist",
-    "radiation_field_multikill_2": "#radiation_field_multikill_2"
+    "multikill5scoreevent": "#radiation_field_multikill_2",
+    "assistscoreevent": "#radiation_field_assist",
+    "multikill3scoreevent": "#radiation_field_multikill_2"
 }

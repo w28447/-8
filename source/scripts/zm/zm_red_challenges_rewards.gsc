@@ -1,4 +1,3 @@
-#using scripts\zm_common\trials\zm_trial_red_oracle_boon.gsc;
 #using scripts\core_common\aat_shared;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\clientfield_shared;
@@ -10,6 +9,7 @@
 #using scripts\zm\zm_red_challenges_apollo;
 #using scripts\zm\zm_red_util;
 #using scripts\zm_common\bgbs\zm_bgb_bullet_boost;
+#using scripts\zm_common\trials\zm_trial_red_oracle_boon;
 #using scripts\zm_common\trials\zm_trial_red_tribute;
 #using scripts\zm_common\zm_audio;
 #using scripts\zm_common\zm_bgb;

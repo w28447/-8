@@ -53,9 +53,9 @@ DEVBLOCK 0x2232
 DEVBLOCK 0x3508
 # weapons::begin_grenade_tracking@13c
 DEVBLOCK 0x350c
-# weapons::function_4b7977fe@5a
+# weapons::on_grenade_launcher_fired@5a
 DEVBLOCK 0x4522
-# weapons::function_4b7977fe@5e
+# weapons::on_grenade_launcher_fired@5e
 DEVBLOCK 0x4526
 # weapons::damage_trace@ec
 DEVBLOCK 0x4ca4

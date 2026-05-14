@@ -3,7 +3,7 @@
     "baseWeapon": "#riotshield",
     "displayname": "#zmweapon/riotshield",
     "weapon70": "#riotshield",
-    "streamkey": "#riotshield_soundbank",
+    "soundbank": "#riotshield_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

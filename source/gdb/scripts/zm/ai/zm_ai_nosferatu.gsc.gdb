@@ -12,17 +12,17 @@ STRING "<dev string:x159>" 0x2fcc
 STRING "<dev string:x16e>" 0x2fec
 # zm_ai_nosferatu::__init__@324
 STRING "<dev string:x38>" 0x784
-# zm_ai_nosferatu::function_76d6482e@1c4
+# zm_ai_nosferatu::summonnosferatu@1c4
 STRING "<dev string:x44>" 0x29ec
-# zm_ai_nosferatu::function_76d6482e@2ec
+# zm_ai_nosferatu::summonnosferatu@2ec
 STRING "<dev string:x9e>" 0x2b14
-# zm_ai_nosferatu::function_76d6482e@2f8
+# zm_ai_nosferatu::summonnosferatu@2f8
 STRING "<dev string:xad>" 0x2b20
-# zm_ai_nosferatu::function_76d6482e@35c
+# zm_ai_nosferatu::summonnosferatu@35c
 STRING "<dev string:xd0>" 0x2b84
-# zm_ai_nosferatu::function_76d6482e@368
+# zm_ai_nosferatu::summonnosferatu@368
 STRING "<dev string:xe5>" 0x2b90
-# zm_ai_nosferatu::function_76d6482e@3bc
+# zm_ai_nosferatu::summonnosferatu@3bc
 STRING "<dev string:xf3>" 0x2be4
 ######################################################
 ####################  DEV BLOCKS  ####################
@@ -53,13 +53,13 @@ DEVBLOCK 0xb2a
 DEVBLOCK 0x10dc
 # zm_ai_nosferatu::function_cd801084@2a
 DEVBLOCK 0x13e2
-# zm_ai_nosferatu::function_76d6482e@1ba
+# zm_ai_nosferatu::summonnosferatu@1ba
 DEVBLOCK 0x29e2
-# zm_ai_nosferatu::function_76d6482e@2e4
+# zm_ai_nosferatu::summonnosferatu@2e4
 DEVBLOCK 0x2b0c
-# zm_ai_nosferatu::function_76d6482e@354
+# zm_ai_nosferatu::summonnosferatu@354
 DEVBLOCK 0x2b7c
-# zm_ai_nosferatu::function_76d6482e@3a6
+# zm_ai_nosferatu::summonnosferatu@3a6
 DEVBLOCK 0x2bce
 # zm_ai_nosferatu::function_13b48cdd@bc
 DEVBLOCK 0x2cc4

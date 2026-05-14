@@ -4,7 +4,7 @@
     "displayname": "#weapon/blind_grenade",
     "luigiReticleWidget": "NineBangReticle",
     "grenadeWeaponName": "#eq_blind_grenade_mp",
-    "streamkey": "#hash_4d73af43fcccb30d",
+    "soundbank": "#hash_4d73af43fcccb30d",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -35,7 +35,7 @@
     "sound660": "#uin_unavailable_charging",
     "projexplosionsound": "#wpn_flash_grenade_explode",
     "tunables1": "#hash_48d2fa0cd35d87f8",
-    "cacWeaponXCam": "#hash_925937342df621cd",
+    "cacWeaponXCam": "#ui_cam_cac_equip_flashbang",
     "sharedWeaponSounds": "#equipment",
     "#hash_8456d4d": "#damageeffecttype_concussion",
     "projectilemodel": "#wpn_t7_grenade_flashbang_projectile",
@@ -45,13 +45,13 @@
     "worldModel": [
         "#wpn_t7_grenade_flashbang_world"
     ],
-    "gadgetIconAvailable": "#hash_89b69f51cede55f2",
-    "gadgetIconUnavailable": "#hash_cca70cdca8b3f92f",
-    "inventoryIconZm": "#hash_cca70cdca8b3f92f",
-    "hudIcon": "#hash_89b69f51cede55f2",
-    "image_e90": "#hash_a4eff6a4580467f5",
-    "image_1048": "#hash_89b69f51cede55f2",
+    "gadgetIconAvailable": "#ui_icon_equipment_flashbangs",
+    "gadgetIconUnavailable": "#ui_icon_equipment_flashbangs_dark",
+    "inventoryIconZm": "#ui_icon_equipment_flashbangs_dark",
+    "hudIcon": "#ui_icon_equipment_flashbangs",
+    "image_e90": "#ui_icon_obit_swat_grenade",
+    "image_1048": "#ui_icon_equipment_flashbangs",
     "rumble_de8": "#tactical_rumble",
     "bounceImpactFX": "#grenade_bounce",
-    "bounceImpactSounds": "#hash_c48a0d9622bdb762"
+    "bounceImpactSounds": "#flash_bounce"
 }

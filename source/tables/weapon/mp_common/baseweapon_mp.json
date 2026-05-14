@@ -3,7 +3,7 @@
     "baseWeapon": "#baseweapon",
     "displayname": "#weapon/baseweapon",
     "weapon70": "#baseweapon",
-    "streamkey": "#baseweapon_soundbank",
+    "soundbank": "#baseweapon_soundbank",
     "scrstr_8c8": [
         "tag_sights_off"
     ],
@@ -70,9 +70,9 @@
     "tunables1": "#baseweapon_tunables_mp",
     "cacWeaponXCam": "#ui_cam_cac_ar_accurate",
     "cacAttachmentsXCam": "#ui_cam_cac_ar_accurate",
-    "weaponIconXCam": "#hash_8e8baf96fedf0a48",
+    "weaponIconXCam": "#ui_cam_icon_ar_accurate",
     "attachments": [
-        "#hash_f459a0af8e8f912b",
+        "#defaultattachment",
         "#acog"
     ],
     "attachmentUniques": [
@@ -97,7 +97,7 @@
     "inventoryIconZm": "#ui_icon_weapon_ar_accurate",
     "image_e90": "#ui_icon_weapon_ar_accurate_kf",
     "fireRumble": "#assault_fire",
-    "rumble_dc8": "#hash_a17a158aac0f6479",
+    "rumble_dc8": "#assault_adsfire",
     "fx_bc8": "#weapon/fx8_muz_ar_acc_1p",
     "fx_bd0": "#weapon/fx8_muz_ar_acc_3p",
     "fx_bd8": "#hash_f282363a66bd14e2",
@@ -105,8 +105,8 @@
     "fx_c88": "#hash_83613e307817774e",
     "fx_c90": "#hash_83613e307817774e",
     "fx_c98": "#hash_83613e307817774e",
-    "normalImpactFX": "#hash_9cafc46b8c735870",
-    "exitImpactFX": "#hash_d6ef4fc6c00cc18e",
+    "normalImpactFX": "#bullet_large_enter",
+    "exitImpactFX": "#bullet_large_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

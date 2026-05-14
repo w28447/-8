@@ -3,7 +3,7 @@
     "baseWeapon": "#hero_minigun",
     "displayname": "#weapon/hero_minigun",
     "weapon70": "#hero_minigun",
-    "streamkey": "#hero_minigun_soundbank",
+    "soundbank": "#hero_minigun_soundbank",
     "scrstr_8c8": [
         "tag_minigun_flaps"
     ],
@@ -79,8 +79,8 @@
     "worldModel": [
         "#wpn_t7_hero_reaper_minigun_world"
     ],
-    "gadgetIconAvailable": "#hash_d2e050dd3507d5a2",
-    "gadgetIconUnavailable": "#hash_9151f5aa76ee4c3f",
+    "gadgetIconAvailable": "#ui_icon_ultimate_scythe",
+    "gadgetIconUnavailable": "#ui_icon_ultimate_scythe_dark",
     "reticleCenter": "#t7_hud_reticle_mp_hero_scythe",
     "inventoryIconZm": "#t7_icon_weapon_hero_reaper_pu",
     "hudIcon": "#t7_icon_weapon_hero_reaper_kf",
@@ -94,7 +94,7 @@
     "fx_c90": "#weapon/fx_shellejects_minigun",
     "fx_c98": "#weapon/fx_shellejects_minigun",
     "normalImpactFX": "#hero_minigun_enter",
-    "exitImpactFX": "#hash_d6ef4fc6c00cc18e",
+    "exitImpactFX": "#bullet_large_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

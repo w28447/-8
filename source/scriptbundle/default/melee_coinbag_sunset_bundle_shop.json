@@ -1,6 +1,6 @@
 {
     "detailsicon": "image#loot07_ui_icon_blackmarket_itemdetail_melee_coinbag",
-    "loot07_ui_icon_blackmarket_itemshop_melee_coinbag:hash_6c274f86": "image#loot07_ui_icon_blackmarket_itemshop_melee_coinbag",
+    "loot07_ui_icon_blackmarket_itemshop_melee_coinbag": "image#loot07_ui_icon_blackmarket_itemshop_melee_coinbag",
     "nametext": "localized17#weapon/melee_coinbag_t8",
     "name": "melee_coinbag_sunset_bundle_shop",
     "desctext": "localized17#hash_3d3b920a2797bb1b"

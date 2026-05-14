@@ -4,7 +4,7 @@
     "displayname": "#weapon/smg_minigun_t8",
     "xhash_60": "#hash_661f179a63e7cd00",
     "weapon70": "#smg_minigun_t8",
-    "streamkey": "#smg_minigun_t8_soundbank",
+    "soundbank": "#smg_minigun_t8_soundbank",
     "scrstr_8c8": [
         "tag_camo_darkmatter",
         "tag_camo_diamond"
@@ -77,7 +77,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_smg_minigun",
     "weaponIconXCam": "#hash_320401c602936d0f",
     "attachments": [
-        "#hash_f459a0af8e8f912b",
+        "#defaultattachment",
         "#acog_wz"
     ],
     "attachmentUniques": [
@@ -99,8 +99,8 @@
     "clipmodel": [
         "#wpn_t8_loot_smg_minigun_mag_world"
     ],
-    "gadgetIconAvailable": "#hash_d2e050dd3507d5a2",
-    "gadgetIconUnavailable": "#hash_9151f5aa76ee4c3f",
+    "gadgetIconAvailable": "#ui_icon_ultimate_scythe",
+    "gadgetIconUnavailable": "#ui_icon_ultimate_scythe_dark",
     "reticleSide": "#reticle_side_small",
     "inventoryIcon": "#loot07_ui_icon_blackmarket_reserves_weapon_minigun",
     "inventoryIconZm": "#ui_icon_weapon_hud_smg_minigun",

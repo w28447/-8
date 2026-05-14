@@ -3,7 +3,7 @@
     "baseWeapon": "#planemortar",
     "displayname": "#killstreak/planemortar",
     "weapon70": "#planemortar",
-    "streamkey": "#planemortar_soundbank",
+    "soundbank": "#planemortar_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -59,11 +59,11 @@
     "worldModel": [
         "#wpn_t8_eqp_datapad_world"
     ],
-    "gadgetIconAvailable": "#hash_951654a79fe798c0",
-    "gadgetIconUnavailable": "#hash_82254319e13f3630",
+    "gadgetIconAvailable": "#ui_icon_scorestreaks_planemortar_light",
+    "gadgetIconUnavailable": "#ui_icon_scorestreaks_planemortar_dark",
     "inventoryIconZm": "#ui_icon_scorestreaks_airstrike_hud",
     "hudIcon": "#ui_icon_scorestreaks_airstrike_hud",
-    "image_e90": "#hash_aa0dbe24b65437c4",
+    "image_e90": "#ui_icon_obit_air_strike",
     "image_1048": "#ui_icon_scorestreaks_airstrike_hud",
     "rumble_de8": "#grenade_rumble",
     "fx_ed8": "#hash_1ae397a2f822f91f",

@@ -3,7 +3,7 @@
     "baseWeapon": "#destructible_car",
     "displayname": "#weapon/m2fraggrenade",
     "weapon70": "#destructible_car",
-    "streamkey": "#destructible_car_soundbank",
+    "soundbank": "#destructible_car_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -38,5 +38,5 @@
     "reticleCenter": "#reticle_center_cross",
     "inventoryIconZm": "#hud_obit_exploding_car",
     "image_e90": "#hud_obit_exploding_car",
-    "fx_f00": "#hash_80e7395fb42d35f6"
+    "fx_f00": "#weapon/fx_trail_grenade"
 }

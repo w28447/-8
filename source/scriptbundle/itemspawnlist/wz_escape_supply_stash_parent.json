@@ -37,10 +37,10 @@
     "type": "itemspawnlist",
     "hash_345eba59": 5,
     "vehiclespawner": 0,
-    "hash_9b009839": 10,
+    "supplystashmaxspawns": 10,
     "hash_dc7ffbef": 0,
     "name": "wz_escape_supply_stash_parent",
     "supplystashweight": 100,
-    "hash_dc91e192": 1,
+    "prioritizedspawning": 1,
     "supplystash": 1
 }

@@ -3,7 +3,7 @@
     "baseWeapon": "#ww_random_ray_gun1",
     "displayname": "#hash_4e413fbdde10b051",
     "weapon70": "#ww_random_ray_gun1",
-    "streamkey": "#ww_random_ray_gun1_soundbank",
+    "soundbank": "#ww_random_ray_gun1_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -58,13 +58,13 @@
     "sound810": "#hash_21cba6ae89a3493c",
     "tunables1": "#ww_random_ray_gun1_tunables_wz",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_31a8ef0f06d738a0"
     ],
     "sharedWeaponSounds": "#pistol",
-    "ballisticDesc": "#hash_e269fccbe6d86a70",
+    "ballisticDesc": "#45_fmj",
     "tracers": [
         "#hash_10413fd99fd44200",
         "#hash_10413fd99fd44200"

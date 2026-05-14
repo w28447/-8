@@ -1,4 +1,3 @@
-#using scripts\zm_common\zm_faction_buffs.gsc;
 #using scripts\core_common\clientfield_shared;
 #using scripts\core_common\flag_shared;
 #using scripts\core_common\struct;
@@ -11,6 +10,7 @@
 #using scripts\zm_common\zm_contracts;
 #using scripts\zm_common\zm_customgame;
 #using scripts\zm_common\zm_equipment;
+#using scripts\zm_common\zm_faction_buffs;
 #using scripts\zm_common\zm_loadout;
 #using scripts\zm_common\zm_magicbox;
 #using scripts\zm_common\zm_melee_weapon;

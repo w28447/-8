@@ -4,7 +4,7 @@
     "displayname": "#weapon/special_crossbow_t8",
     "altWeapon": "#special_crossbow_t8_mp",
     "weapon70": "#special_crossbow_t8",
-    "streamkey": "#pistolscope_special_crossbow_t8_soundbank",
+    "soundbank": "#pistolscope_special_crossbow_t8_soundbank",
     "scrstr_8c8": [
         "tag_camo_darkmatter",
         "tag_camo_diamond"
@@ -55,7 +55,7 @@
     "sound270": "#hash_24db08faf35699e1",
     "sound800": "#hash_54f28bb508a46096",
     "sound810": "#hash_54f28bb508a46096",
-    "tunables1": "#hash_57fba2b47eabfb1f",
+    "tunables1": "#pistolscope_special_crossbow_t8_tunables_mp",
     "weaponCamo": "#hash_174eecde35d75433",
     "cacWeaponXCam": "#ui_cam_cac_special_crossbow",
     "cacAttachmentsXCam": "#ui_cam_cac_special_crossbow",

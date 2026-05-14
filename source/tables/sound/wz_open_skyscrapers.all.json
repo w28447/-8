@@ -87609,7 +87609,7 @@
             "farVerbName": "",
             "duck": "default",
             "id": "#wz_dest_diner_01",
-            "reverb": "#room_livingRoom",
+            "reverb": "#room_livingroom",
             "loop": "#hash_5fe2ed383ca518d2",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",

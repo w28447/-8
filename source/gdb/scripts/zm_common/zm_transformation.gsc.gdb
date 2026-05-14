@@ -121,7 +121,7 @@ DEVBLOCK 0xd92
 DEVBLOCK 0xed2
 # zm_transform::function_1afce5aa@2a
 DEVBLOCK 0xef2
-# zm_transform::function_525526be@9a
+# zm_transform::clean_up_transformation@9a
 DEVBLOCK 0x13ea
 # zm_transform::function_c81eb299@22
 DEVBLOCK 0x14aa

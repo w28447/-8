@@ -19,7 +19,7 @@
     "characterselect": "#hash_18c9526abc8aea77",
     "name": "sergei",
     "hash_736e5596fdf9a609:hash_207908de": "#hash_736e5596fdf9a609",
-    "hash_68b5ae3c0e2a5d00:hash_b801796c": "#hash_68b5ae3c0e2a5d00",
+    "exertpainpunched": "#hash_68b5ae3c0e2a5d00",
     "boostloss": "#hash_48b48ca0c1b78f06",
     "exertgascough": "#hash_1412902160c3d6c6",
     "exertpainfalling": "#hash_2fe1f6b015348d2e",
@@ -37,6 +37,6 @@
     "exertbreathehurt": "#hash_31fc18fe9777de64",
     "exertfullyhealedbreath": "#exert_fully_healed",
     "exertdeathdrowned": "#hash_6456eb377703a439",
-    "hash_5886639a40c9148:hash_c3b67de0": "#hash_5886639a40c9148",
+    "exertpainburn": "#hash_5886639a40c9148",
     "hash_55844aa852598c5a:hash_1ca33ad4": "#hash_55844aa852598c5a"
 }

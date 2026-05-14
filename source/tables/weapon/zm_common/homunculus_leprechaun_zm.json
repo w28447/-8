@@ -3,7 +3,7 @@
     "baseWeapon": "#homunculus_leprechaun",
     "displayname": "#zmweapon/homunculus",
     "weapon70": "#zombie_homunculus",
-    "streamkey": "#homunculus_leprechaun_soundbank",
+    "soundbank": "#homunculus_leprechaun_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

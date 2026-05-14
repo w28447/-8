@@ -3,7 +3,7 @@
     "baseWeapon": "#sniper_powersemi_t8",
     "displayname": "#weapon/sniper_powersemi_t8",
     "weapon70": "#sniper_powersemi_t8",
-    "streamkey": "#sniper_powersemi_t8_soundbank",
+    "soundbank": "#sniper_powersemi_t8_soundbank",
     "scrstr_8c8": [
         "tag_sights_off",
         "tag_clan_tag",
@@ -79,7 +79,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_sniper_powersemi",
     "weaponIconXCam": "#hash_24924ce5fa767491",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_7db0a9808badf63f"

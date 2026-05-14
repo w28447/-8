@@ -19,7 +19,7 @@
     "characterselect": "#hash_56fd8181181d6789",
     "name": "misty",
     "hash_7ee8722207a8c61c:hash_207908de": "#hash_7ee8722207a8c61c",
-    "hash_4701a86f87966c4b:hash_b801796c": "#hash_4701a86f87966c4b",
+    "exertpainpunched": "#hash_4701a86f87966c4b",
     "boostloss": "#hash_6207f0dec298cc5c",
     "exertgascough": "#hash_53789948abf4132f",
     "exertpainfalling": "#hash_3067dcb8e7f72c99",
@@ -37,6 +37,6 @@
     "exertbreathehurt": "#hash_586aaf06a3858225",
     "exertfullyhealedbreath": "#exert_fully_healed",
     "exertdeathdrowned": "#hash_7a3d655a30e007c6",
-    "hash_21d3d28c238e3d53:hash_c3b67de0": "#hash_21d3d28c238e3d53",
+    "exertpainburn": "#hash_21d3d28c238e3d53",
     "hash_7a1614042eff6a21:hash_1ca33ad4": "#hash_7a1614042eff6a21"
 }

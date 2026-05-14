@@ -17,9 +17,9 @@ version 1 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 3 size 0xc0
@@ -51,7 +51,7 @@ version 1 {
     // offset 0x4b8, size 0x20
     uint region;
     // offset 0x4d8, size 0x1
-    bool hash_43580e5e98330afd;
+    bool is_consumable;
     // offset 0x4d9, size 0x7
     uint:1 __pad[7];
 }

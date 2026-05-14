@@ -5,6 +5,6 @@
     "name": "weapondeathfx_rainbow",
     "displayname": "localized17#hash_2d0b194fce727473",
     "icon": "loot04_ui_icon_cac_death_fx_rainbow",
-    "bullet_rainbow_exit:hash_eeb78b92": "impact_fx_table#bullet_rainbow_exit",
+    "bullet_rainbow_exit": "impact_fx_table#bullet_rainbow_exit",
     "previewimage": "image#loot04_ui_icon_blackmarket_reserves_death_fx_rainbow"
 }

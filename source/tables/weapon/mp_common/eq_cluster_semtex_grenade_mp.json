@@ -4,7 +4,7 @@
     "displayname": "#weapon/sticky_grenade",
     "weapon70": "#eq_cluster_semtex_grenade",
     "grenadeWeaponName": "#hash_62fb4f8a9caa979a",
-    "streamkey": "#eq_cluster_semtex_grenade_soundbank",
+    "soundbank": "#eq_cluster_semtex_grenade_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",
@@ -74,13 +74,13 @@
     "rumble_de8": "#grenade_rumble",
     "fx_f00": "#hash_dfdd021d80dd8fc6",
     "underwaterExplosionSurfaceFX": [
-        "#hash_fb70232b2892e045",
+        "#explosions/fx8_exp_grenade_water",
         "#hash_c15b461b7420c6d2",
         "#hash_bb3f97cf646813ac"
     ],
     "normalImpactFX": "#grenade_explosion_sticky",
     "bounceImpactFX": "#grenade_bounce",
     "dudImpactFX": "#grenade_dud",
-    "normalImpactSounds": "#hash_e8e0a97bbbf0b555",
+    "normalImpactSounds": "#grenade_explode_material",
     "bounceImpactSounds": "#sticky_bounce"
 }

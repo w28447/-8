@@ -3,7 +3,7 @@
     "baseWeapon": "#hero_flamethrower_t8_lv2",
     "displayname": "#hash_4a081ed23f9db2d8",
     "weapon70": "#hero_flamethrower_t8_lv1",
-    "streamkey": "#hero_flamethrower_t8_lv2_soundbank",
+    "soundbank": "#hero_flamethrower_t8_lv2_soundbank",
     "scrstr_8c8": [
         "tag_exhaust_flame",
         "tag_exhaust_cap"

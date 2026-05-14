@@ -3,7 +3,7 @@
     "baseWeapon": "#ww_tricannon_air_t8",
     "displayname": "#zmweapon/ww_tricannon_air_t8",
     "weapon70": "#ww_tricannon_t8",
-    "streamkey": "#ww_tricannon_air_t8_soundbank",
+    "soundbank": "#ww_tricannon_air_t8_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -47,15 +47,15 @@
         "#hash_2d0cb552b77d70ce"
     ],
     "reticleCenter": "#hash_1439ce5fc334afa9",
-    "inventoryIconZm": "#hash_a5740919ad0c89d7",
+    "inventoryIconZm": "#ui_icon_weapons_zm_tricannon_yellow",
     "image_e90": "#t7_icon_weapon_shotgun_energy_kf",
     "fireRumble": "#artillery_rumble",
     "fx_bc8": "#hash_2e5fd596924c0868",
     "fx_bd0": "#hash_2e65e1969250887a",
     "underwaterExplosionSurfaceFX": [
-        "#hash_df190015ac9ded95",
-        "#hash_9206d75150c2464e",
-        "#hash_a60fafe2e7ced71c"
+        "#explosions/fx_exp_grenade_water",
+        "#explosions/fx_exp_grenade_water_shllw",
+        "#explosions/fx_exp_grenade_water_surface_deep"
     ],
     "viewPersistentEffectSet": "#hash_26871218f8c94de7",
     "enemyDeathFxSet": "#weapon_pistol_energy_knockback",

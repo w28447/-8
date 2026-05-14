@@ -1,5 +1,4 @@
 #using script_23c01b321e642c31;
-#using scripts\zm_common\trials\zm_trial_death_from_above.gsc;
 #using script_30ba61ad5559c51d;
 #using script_43642da1b2402e5c;
 #using script_6951ea86fdae9ae0;
@@ -16,6 +15,7 @@
 #using scripts\zm\zm_white_toast;
 #using scripts\zm_common\bgbs\zm_bgb_anywhere_but_here;
 #using scripts\zm_common\trials\zm_trial_acquire_weapon;
+#using scripts\zm_common\trials\zm_trial_death_from_above;
 #using scripts\zm_common\trials\zm_trial_defend_area;
 #using scripts\zm_common\trials\zm_trial_flag_check;
 #using scripts\zm_common\trials\zm_trial_restrict_loadout;

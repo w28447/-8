@@ -1,4 +1,3 @@
-#using scripts\zm\zm_office_vo_hooks.gsc;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\clientfield_shared;
 #using scripts\core_common\exploder_shared;
@@ -9,6 +8,7 @@
 #using scripts\core_common\trigger_shared;
 #using scripts\core_common\util_shared;
 #using scripts\zm\zm_hms_util;
+#using scripts\zm\zm_office_vo_hooks;
 #using scripts\zm_common\zm_audio;
 #using scripts\zm_common\zm_equipment;
 #using scripts\zm_common\zm_item_pickup;

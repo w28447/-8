@@ -3,7 +3,7 @@
     "baseWeapon": "#lmg_light_robot",
     "displayname": "#killstreak/combat_robot",
     "weapon70": "#killstreak_combat_robot",
-    "streamkey": "#lmg_light_robot_soundbank",
+    "soundbank": "#lmg_light_robot_soundbank",
     "scrstr_8c8": [
         "tag_sights_off",
         "tag_rails_side",
@@ -64,14 +64,14 @@
     "sound610": "#hash_39ddbb9156937871",
     "sound800": "#hash_5ee962527afebfb1",
     "sound810": "#hash_490938a3ea225ed",
-    "tunables1": "#hash_3c1b3affda808d94",
+    "tunables1": "#lmg_light_robot_tunables_mp",
     "cacWeaponXCam": "#ui_cam_cac_lmg_light",
     "cacAttachmentsXCam": "#ui_cam_cac_lmg_light",
     "weaponIconXCam": "#ui_cam_icon_lmg_light",
     "sharedWeaponSounds": "#lmg",
     "tracers": [
         "#lmg",
-        "#hash_e2bdd456ce2308cc"
+        "#lmg_enemy"
     ],
     "viewmodel": [
         "#wpn_t7_lmg_brm_view"
@@ -92,8 +92,8 @@
     "fx_c88": "#hash_9c7f0dbc37829f85",
     "fx_c90": "#hash_9c7f0dbc37829f85",
     "fx_c98": "#hash_9c7f0dbc37829f85",
-    "normalImpactFX": "#hash_fee0671def6af7a4",
-    "exitImpactFX": "#hash_d6ef4fc6c00cc18e",
+    "normalImpactFX": "#bullet_xlarge_enter",
+    "exitImpactFX": "#bullet_large_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

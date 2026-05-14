@@ -3,7 +3,7 @@
     "baseWeapon": "#ar_galil_t8",
     "displayname": "#weapon/ar_galil_t8",
     "weapon70": "#ar_galil_t8",
-    "streamkey": "#ar_galil_t8_soundbank",
+    "soundbank": "#ar_galil_t8_soundbank",
     "scrstr_8c8": [
         "tag_camo_darkmatter",
         "tag_camo_diamond",
@@ -79,7 +79,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_ar_galil",
     "weaponIconXCam": "#ui_cam_icon_ar_galil",
     "attachments": [
-        "#hash_f459a0af8e8f912b",
+        "#defaultattachment",
         "#acog"
     ],
     "attachmentUniques": [

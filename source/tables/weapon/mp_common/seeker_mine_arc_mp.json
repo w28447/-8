@@ -4,7 +4,7 @@
     "displayname": "#weapon/hero_lightninggun",
     "weapon70": "#eq_seeker_mine",
     "luigiReticleWidget": "TempestReticle",
-    "streamkey": "#seeker_mine_arc_soundbank",
+    "soundbank": "#seeker_mine_arc_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "scrstr_118c": "tag_flash",

@@ -3,7 +3,7 @@
     "baseWeapon": "#snowball",
     "displayname": "#weapon/snowball",
     "weapon70": "#snowball",
-    "streamkey": "#snowball_soundbank",
+    "soundbank": "#snowball_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",
@@ -36,7 +36,7 @@
     "sound810": "#hash_5fd68d0455a0b8",
     "tunables1": "#snowball_tunables_wz",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_45054b240b25fe69"

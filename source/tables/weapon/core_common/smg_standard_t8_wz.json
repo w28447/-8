@@ -4,7 +4,7 @@
     "displayname": "#weapon/smg_standard_t8",
     "xhash_60": "#hash_305029398e6420d2",
     "weapon70": "#smg_standard_t8",
-    "streamkey": "#smg_standard_t8_soundbank",
+    "soundbank": "#smg_standard_t8_soundbank",
     "scrstr_8c8": [
         "tag_sights_off",
         "tag_clan_tag",
@@ -81,7 +81,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_smg_standard",
     "weaponIconXCam": "#ui_cam_icon_smg_standard",
     "attachments": [
-        "#hash_f459a0af8e8f912b",
+        "#defaultattachment",
         "#acog_wz"
     ],
     "attachmentUniques": [

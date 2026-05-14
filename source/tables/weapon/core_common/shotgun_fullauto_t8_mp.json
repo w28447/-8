@@ -3,7 +3,7 @@
     "baseWeapon": "#shotgun_fullauto_t8",
     "displayname": "#weapon/shotgun_fullauto_t8",
     "weapon70": "#shotgun_fullauto_t8",
-    "streamkey": "#shotgun_fullauto_t8_soundbank",
+    "soundbank": "#shotgun_fullauto_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -67,7 +67,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_shotgun_fullauto",
     "weaponIconXCam": "#ui_cam_icon_shotgun_fullauto",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_de01ac618c5dc25"

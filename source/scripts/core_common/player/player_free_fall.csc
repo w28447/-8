@@ -1,10 +1,10 @@
-#using scripts\core_common\player\player_free_fall_util.csc;
 #using scripts\core_common\animation_shared;
 #using scripts\core_common\audio_shared;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\clientfield_shared;
 #using scripts\core_common\explode;
 #using scripts\core_common\math_shared;
+#using scripts\core_common\player\player_free_fall_util;
 #using scripts\core_common\postfx_shared;
 #using scripts\core_common\system_shared;
 #using scripts\core_common\util_shared;

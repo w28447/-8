@@ -2,7 +2,7 @@
     "name": "#hash_78a462f65a5a2a09",
     "baseWeapon": "#hash_bb0c21626659973",
     "displayname": "#weapon/tank_gun",
-    "streamkey": "#hash_3197de2feda70851",
+    "soundbank": "#hash_3197de2feda70851",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -57,6 +57,6 @@
         "#hash_1f6e805eb9ebdcc9"
     ],
     "normalImpactFX": "#hash_6699bc919282c846",
-    "exitImpactFX": "#hash_e9050d7b3430366e",
+    "exitImpactFX": "#grenade_exit",
     "normalImpactSounds": "#quadrocket_explode_material"
 }

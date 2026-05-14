@@ -3,7 +3,7 @@
     "baseWeapon": "#hash_494f5501b3f8e1e9",
     "displayname": "#weapon/sticky_grenade",
     "weapon70": "#crossbow_explosive",
-    "streamkey": "#hash_722e418f701a74c3",
+    "soundbank": "#hash_722e418f701a74c3",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

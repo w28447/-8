@@ -1,14 +1,14 @@
 {
-    "gravity_slam_multikill_2": "#gravity_slam_multikill_2",
-    "gravity_slam_multikill_2": "#gravity_slam_multikill_2",
+    "multikill2scoreevent": "#gravity_slam_multikill_2",
+    "multikill6scoreevent": "#gravity_slam_multikill_2",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "gravity_slam_activated": "#gravity_slam_activated",
     "vmtype": "both",
-    "gravity_slam_multikill_2": "#gravity_slam_multikill_2",
+    "multikill4scoreevent": "#gravity_slam_multikill_2",
     "name": "eq_gravityslam_mp_scoreevents",
     "customsettingstype": "ability",
-    "gravity_slam_multikill_2": "#gravity_slam_multikill_2",
+    "multikill5scoreevent": "#gravity_slam_multikill_2",
     "gravity_slam_shutdown": "#gravity_slam_shutdown",
-    "gravity_slam_multikill_2": "#gravity_slam_multikill_2"
+    "multikill3scoreevent": "#gravity_slam_multikill_2"
 }

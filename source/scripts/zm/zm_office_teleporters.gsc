@@ -1,4 +1,3 @@
-#using scripts\zm\zm_office_groom_lake_quest.gsc;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\clientfield_shared;
@@ -13,6 +12,7 @@
 #using scripts\zm\zm_hms_util;
 #using scripts\zm\zm_office_defcon;
 #using scripts\zm\zm_office_floors;
+#using scripts\zm\zm_office_groom_lake_quest;
 #using scripts\zm_common\zm_fasttravel;
 #using scripts\zm_common\zm_pack_a_punch;
 #using scripts\zm_common\zm_unitrigger;

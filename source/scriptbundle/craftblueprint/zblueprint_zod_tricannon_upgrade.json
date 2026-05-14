@@ -5,7 +5,7 @@
     "result": "weapon#hash_41a492d8cc5893f9",
     "type": "craftblueprint",
     "hash_3c809ce0": 16,
-    "hash_e414062": 0,
+    "resultoffsety": 0,
     "component01": "weapon#zitem_tricannon_upgrade_part_1_zm",
     "component02": "weapon#zitem_tricannon_upgrade_part_2_zm",
     "component03": "weapon#zitem_tricannon_upgrade_part_3_zm",

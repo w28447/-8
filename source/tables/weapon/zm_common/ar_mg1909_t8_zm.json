@@ -3,7 +3,7 @@
     "baseWeapon": "#ar_mg1909_t8",
     "displayname": "#weapon/ar_mg1909_t8",
     "weapon70": "#ar_mg1909_t8",
-    "streamkey": "#ar_mg1909_t8_soundbank",
+    "soundbank": "#ar_mg1909_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -76,7 +76,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_ar_mg1909",
     "weaponIconXCam": "#ui_cam_icon_ar_cqb",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_649101f9582191f5"
@@ -100,15 +100,15 @@
     "inventoryIconZm": "#ui_icon_weapons_zm_armg1909",
     "image_e90": "#t7_icon_weapon_ar_cqb_kf",
     "fireRumble": "#assault_fire",
-    "rumble_dc8": "#hash_a17a158aac0f6479",
+    "rumble_dc8": "#assault_adsfire",
     "fx_bc8": "#hash_32457baee7c1d9bb",
     "fx_bd0": "#hash_7ac5491a266645d1",
     "fx_c80": "#hash_83613e307817774e",
     "fx_c88": "#hash_83613e307817774e",
     "fx_c90": "#hash_83613e307817774e",
     "fx_c98": "#hash_83613e307817774e",
-    "normalImpactFX": "#hash_9cafc46b8c735870",
-    "exitImpactFX": "#hash_d6ef4fc6c00cc18e",
+    "normalImpactFX": "#bullet_large_enter",
+    "exitImpactFX": "#bullet_large_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

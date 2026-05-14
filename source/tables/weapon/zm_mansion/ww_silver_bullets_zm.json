@@ -2,7 +2,7 @@
     "name": "#ww_silver_bullets_zm",
     "baseWeapon": "#ww_silver_bullets",
     "weapon70": "#ww_random_ray_gun1",
-    "streamkey": "#hash_148c6c6f02bed4f9",
+    "soundbank": "#ww_silver_bullets_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

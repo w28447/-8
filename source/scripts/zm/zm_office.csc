@@ -1,4 +1,3 @@
-#using scripts\zm\zm_office_magicbox_screens.csc;
 #using scripts\core_common\clientfield_shared;
 #using scripts\core_common\exploder_shared;
 #using scripts\core_common\renderoverridebundle;
@@ -10,6 +9,7 @@
 #using scripts\zm\weapons\zm_weap_minigun;
 #using scripts\zm\weapons\zm_weap_riotshield;
 #using scripts\zm\zm_office_gamemodes;
+#using scripts\zm\zm_office_magicbox_screens;
 #using scripts\zm\zm_office_sound;
 #using scripts\zm\zm_office_teleporters;
 #using scripts\zm\zm_office_ww_quest;

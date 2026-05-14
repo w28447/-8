@@ -3,7 +3,7 @@
     "baseWeapon": "#eq_molotov",
     "displayname": "#weapon/molotov",
     "weapon70": "#eq_molotov",
-    "streamkey": "#eq_molotov_soundbank",
+    "soundbank": "#eq_molotov_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "scrstr_1190": "tag_rag_05_animated",

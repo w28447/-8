@@ -3,7 +3,7 @@
     "baseWeapon": "#eq_sensor",
     "displayname": "#weapon/sensor_dart",
     "weapon70": "#eq_sensor",
-    "streamkey": "#eq_sensor_soundbank",
+    "soundbank": "#eq_sensor_soundbank",
     "scrstr_8c8": [
         "tag_equipment_hero"
     ],
@@ -56,15 +56,15 @@
     ],
     "gadgetIconAvailable": "#ui_icon_equipment_eq_sensor",
     "reticleCenter": "#reticle_crossbow",
-    "inventoryIconZm": "#hash_8108273ff089838d",
-    "hudIcon": "#hash_d47bf413316930d0",
-    "image_e90": "#hash_d47bf413316930d0",
-    "image_1048": "#hash_d47bf413316930d0",
+    "inventoryIconZm": "#ui_icon_equipment_sensordart_dark",
+    "hudIcon": "#ui_icon_equipment_sensordart",
+    "image_e90": "#ui_icon_equipment_sensordart",
+    "image_1048": "#ui_icon_equipment_sensordart",
     "fx_bc8": "#hash_d2381fc401c9fe06",
     "fx_bd0": "#hash_d23133c401c40154",
     "fx_f00": "#hash_af0d90d4922be0a2",
     "#hash_96850284": "#jammer_sensordart",
     "#hash_26f68e75": "#icepick_sensordart",
-    "bounceImpactFX": "#hash_9cafc46b8c735870",
-    "bounceImpactSounds": "#hash_eea4f85282d97815"
+    "bounceImpactFX": "#bullet_large_enter",
+    "bounceImpactSounds": "#sensor_dart_projectile"
 }

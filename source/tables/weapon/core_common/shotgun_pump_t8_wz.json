@@ -4,7 +4,7 @@
     "displayname": "#weapon/shotgun_pump_t8",
     "xhash_60": "#hash_59e7a29ac1b1baf8",
     "weapon70": "#shotgun_pump_t8",
-    "streamkey": "#shotgun_pump_t8_soundbank",
+    "soundbank": "#shotgun_pump_t8_soundbank",
     "scrstr_8c8": [
         "tag_side_strap_2",
         "tag_side_rail",
@@ -72,7 +72,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_shotgun_pump",
     "weaponIconXCam": "#ui_cam_icon_shotgun_pump",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_6f505797f9e4171b"

@@ -17,9 +17,9 @@ version 2 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 3 size 0xc0
@@ -35,43 +35,43 @@ version 2 {
     // idx 3 members 20 size 0x1b8
     struct hash_75410917f1349195 {
         // offset 0x0, size 0x20
-        uint hash_18cb1067529b24e6;
+        uint conf_port_pool_size;
         // offset 0x20, size 0x20
-        uint hash_4d8b250da4767eb7;
+        uint conf_discovery_retries;
         // offset 0x40, size 0x8
-        byte hash_58d62c257c3f9e9d;
+        byte conf_run_mode;
         // offset 0x48, size 0x20
-        uint hash_7a7ad9d0b762f0d3;
+        uint conf_mapping_retries;
         // offset 0x68, size 0x20
-        float hash_20f159c75c2c7f4e;
+        float conf_connect_timeout;
         // offset 0x88, size 0x10
-        uint:16 hash_34c5635e8db13ab3;
+        uint:16 game_port;
         // offset 0x98, size 0x8
-        byte hash_54d04e9876cf3bb2;
+        byte device_port_status;
         // offset 0xa0, size 0x20
-        float hash_20b0abc2a13dc92b;
+        float conf_response_timeout;
         // offset 0xc0, size 0x20
-        float hash_3772e4882104a032;
+        float conf_discovery_timeout;
         // offset 0xe0, size 0x8
-        byte hash_1050a7ff012698f8;
+        byte conf_port_selection_mode;
         // offset 0xe8, size 0x20
-        uint hash_2d44b36998706f7;
+        uint device_addr;
         // offset 0x108, size 0x10
-        uint:16 hash_383e72b38f06fdef;
+        uint:16 device_port;
         // offset 0x118, size 0x20
-        uint hash_4d8e465f87a92f48;
+        uint discovery_attempts;
         // offset 0x138, size 0x8
         byte result;
         // offset 0x140, size 0x20
-        uint hash_66838b2bb2c0d307;
+        uint device_external_addr;
         // offset 0x160, size 0x10
-        uint:16 hash_70f2b19ca673843f;
+        uint:16 device_external_port;
         // offset 0x170, size 0x20
         uint duration_ms;
         // offset 0x190, size 0x20
-        uint hash_1b0d39256f62ffa4;
+        uint conf_gateway_addr;
         // offset 0x1b0, size 0x1
-        bool hash_5bf606466b9e7bbb;
+        bool conf_only_use_gateway;
         // offset 0x1b1, size 0x7
         uint:1 __pad[7];
     };
@@ -83,15 +83,15 @@ version 2 {
         // offset 0x20, size 0x10
         uint:16 port;
         // offset 0x30, size 0x400
-        string(128) hash_113c5771496a44ed;
+        string(128) notify_server_field;
         // offset 0x430, size 0x20
-        uint hash_32e3f837e2ac1c9b;
+        uint ms_since_start;
     };
 
     // idx 5 members 5 size 0x120
     struct hash_6a65101a136eab93 {
         // offset 0x0, size 0x40
-        uint64 hash_6bdd7ebe59310aa2;
+        uint64 match_making_id;
         // offset 0x40, size 0x40
         uint64 lobby_id;
         // offset 0x80, size 0x20
@@ -113,11 +113,11 @@ version 2 {
 
     // idx 0 members 5 size 0x16d0
     // offset 0x0, size 0x1140
-    hash_3463e9551f90555 hash_7c0d8ffa40ab2f1c[4];
+    hash_3463e9551f90555 upnp_discovered_device[4];
     // offset 0x1140, size 0x1f8
     telemetry_header telemetry;
     // offset 0x1338, size 0x1b8
-    hash_75410917f1349195 hash_5d48574fc72fa62a;
+    hash_75410917f1349195 upnp_result;
     // offset 0x14f0, size 0xc0
     client_header client;
     // offset 0x15b0, size 0x120

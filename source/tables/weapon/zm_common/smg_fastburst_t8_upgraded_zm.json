@@ -4,7 +4,7 @@
     "displayname": "#zmweapon/smg_fastburst_t8_upgraded",
     "xhash_60": "#hash_66eda60d9860f053",
     "weapon70": "#smg_fastburst_t8",
-    "streamkey": "#smg_fastburst_t8_upgraded_soundbank",
+    "soundbank": "#smg_fastburst_t8_upgraded_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -77,7 +77,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_smg_fastburst",
     "weaponIconXCam": "#hash_8b9dc782c4ecc8d8",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_d3be768199f25db6"
@@ -108,7 +108,7 @@
     "inventoryIconZm": "#ui_icon_weapons_zm_smg_fastburst",
     "image_e90": "#ui_icon_obit_smg_fastburst",
     "fireRumble": "#smg_fire",
-    "rumble_dc8": "#hash_a5737886a28a3a7b",
+    "rumble_dc8": "#smg_adsfire",
     "rumble_e20": "#hash_b22cc8a226215312",
     "fx_bc8": "#hash_3e0f6f97cf55554c",
     "fx_bd0": "#hash_8ef83f9ee21cf92",
@@ -117,8 +117,8 @@
     "fx_c88": "#hash_8a5567d0168ae02f",
     "fx_c90": "#hash_8a5567d0168ae02f",
     "fx_c98": "#hash_8a5567d0168ae02f",
-    "normalImpactFX": "#hash_e1b4c700060ee40c",
-    "exitImpactFX": "#hash_83b4b1d145ec9892",
+    "normalImpactFX": "#bullet_small_enter",
+    "exitImpactFX": "#bullet_small_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

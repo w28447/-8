@@ -1,4 +1,3 @@
-#using scripts\mp_common\item_spawn_groups_util.gsc;
 #using scripts\abilities\gadgets\gadget_homunculus;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\callbacks_shared;
@@ -15,6 +14,7 @@
 #using scripts\mp_common\item_inventory;
 #using scripts\mp_common\item_inventory_util;
 #using scripts\mp_common\item_spawn_groups;
+#using scripts\mp_common\item_spawn_groups_util;
 #using scripts\mp_common\item_world_util;
 #using scripts\weapons\sensor_dart;
 #using scripts\weapons\weaponobjects;

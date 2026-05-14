@@ -4,7 +4,7 @@
     "displayname": "#hash_1cba478a3a2ba155",
     "weapon70": "#hero_gravityspikes_t8_lv1",
     "dualwieldWeaponName": "#hero_gravityspikes_t8_lh_lv1_zm",
-    "streamkey": "#hero_gravityspikes_t8_lv1_soundbank",
+    "soundbank": "#hero_gravityspikes_t8_lv1_soundbank",
     "scrstr_8d8": [
         "tag_ik_loc_le_dw"
     ],
@@ -57,12 +57,12 @@
     "image_e90": "#ui_icon_equipment_zm_gravityspikes_lvl1",
     "image_1048": "#ui_icon_equipment_zm_gravityspikes_lvl1",
     "fireRumble": "#defaultweapon_melee",
-    "fx_bc8": "#hash_d8ab77be91b4ae42",
-    "fx_bd0": "#hash_d8a46bbe91ae7b30",
-    "fx_c80": "#hash_b6479a6885575e5f",
-    "fx_c88": "#hash_b6479a6885575e5f",
-    "fx_c90": "#hash_b6479a6885575e5f",
-    "fx_c98": "#hash_b6479a6885575e5f",
+    "fx_bc8": "#weapon/fx_muz_sm_pistol_1p",
+    "fx_bd0": "#weapon/fx_muz_sm_pistol_3p",
+    "fx_c80": "#weapon/fx_shellejects_pistol",
+    "fx_c88": "#weapon/fx_shellejects_pistol",
+    "fx_c90": "#weapon/fx_shellejects_pistol",
+    "fx_c98": "#weapon/fx_shellejects_pistol",
     "viewPersistentEffectSet": "#weapon_hero_gravityspikes_zm_1p_persist",
     "worldPersistentEffectSet": "#weapon_hero_gravityspikes_zm_1p_persist"
 }

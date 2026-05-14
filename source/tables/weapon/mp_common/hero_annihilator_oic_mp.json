@@ -2,7 +2,7 @@
     "name": "#hero_annihilator_oic_mp",
     "baseWeapon": "#hero_annihilator_oic",
     "displayname": "#weapon/hero_annihilator",
-    "streamkey": "#hero_annihilator_oic_soundbank",
+    "soundbank": "#hero_annihilator_oic_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "scrstr_1190": "tag_laser",
@@ -69,8 +69,8 @@
     "worldModel": [
         "#wpn_t8_sig_annihilator_world"
     ],
-    "gadgetIconAvailable": "#hash_dc480e11c561ec99",
-    "gadgetIconUnavailable": "#hash_c4420de9d387e30e",
+    "gadgetIconAvailable": "#ui_icon_ultimate_annihilator",
+    "gadgetIconUnavailable": "#ui_icon_ultimate_annihilator_dark",
     "reticleSide": "#reticle_side_small_rotated",
     "inventoryIconZm": "#ui_icon_weapon_hud_hero_annihilator",
     "hudIcon": "#ui_icon_ability_annihilator",
@@ -83,7 +83,7 @@
     "fx_be8": "#weapon/fx_hero_annhilatr_glint",
     "enemyDeathFxSet": "#weapon_hero_annihilator_knockback",
     "normalImpactFX": "#hero_annihilator_explosion",
-    "exitImpactFX": "#hash_d6ef4fc6c00cc18e",
-    "normalImpactSounds": "#hash_f8e291a8acdea947",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactFX": "#bullet_large_exit",
+    "normalImpactSounds": "#bullet_explode",
+    "exitImpactSounds": "#bullet_exit"
 }

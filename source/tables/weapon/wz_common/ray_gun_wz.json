@@ -4,7 +4,7 @@
     "displayname": "#weapon/ray_gun",
     "xhash_60": "#au_ray_gun",
     "weapon70": "#ray_gun",
-    "streamkey": "#ray_gun_soundbank",
+    "soundbank": "#ray_gun_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -64,7 +64,7 @@
     "tunables1": "#ray_gun_tunables_wz",
     "weaponCamo": "#hash_d32489a10b7a480",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_395beda50c680534"

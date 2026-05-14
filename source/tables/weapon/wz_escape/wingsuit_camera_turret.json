@@ -1,7 +1,7 @@
 {
     "name": "#wingsuit_camera_turret",
     "baseWeapon": "#wingsuit_camera_turret",
-    "streamkey": "#wingsuit_camera_turret_soundbank",
+    "soundbank": "#wingsuit_camera_turret_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

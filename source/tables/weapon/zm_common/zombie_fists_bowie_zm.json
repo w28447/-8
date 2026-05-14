@@ -2,7 +2,7 @@
     "name": "#zombie_fists_bowie_zm",
     "baseWeapon": "#zombie_fists_bowie",
     "displayname": "#zmweapon/none",
-    "streamkey": "#zombie_fists_bowie_soundbank",
+    "soundbank": "#zombie_fists_bowie_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -47,5 +47,5 @@
     "meleeImpactRumble": "#defaultweapon_melee",
     "fx_f60": "#impacts/fx_flesh_hit_knife_zmb",
     "fx_f68": "#impacts/fx_flesh_hit_knife_zmb",
-    "normalImpactFX": "#hash_a5f3e55b8e1070ab"
+    "normalImpactFX": "#knife_large_enter"
 }

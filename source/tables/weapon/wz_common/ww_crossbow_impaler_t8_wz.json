@@ -3,7 +3,7 @@
     "baseWeapon": "#ww_crossbow_impaler_t8",
     "displayname": "#zmweapon/impaler",
     "weapon70": "#ww_crossbow_impaler_t8",
-    "streamkey": "#ww_crossbow_impaler_t8_soundbank",
+    "soundbank": "#ww_crossbow_impaler_t8_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -53,9 +53,9 @@
     "tunables1": "#ww_crossbow_impaler_t8_tunables_wz",
     "cacWeaponXCam": "#ui_cam_cac_special_crossbow",
     "cacAttachmentsXCam": "#ui_cam_cac_special_crossbow",
-    "weaponIconXCam": "#hash_b2556c49982dea72",
+    "weaponIconXCam": "#ui_cam_icon_special_crossbow",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_612d596186973654"
@@ -78,8 +78,8 @@
     "fireRumble": "#crossbow_fire",
     "fx_f00": "#hash_1fdca22d949f33df",
     "viewPersistentEffectSet": "#hash_64bdd1c73b61b539",
-    "normalImpactFX": "#hash_a5f3e55b8e1070ab",
-    "bounceImpactFX": "#hash_8410092704f4a03c",
-    "bounceImpactSounds": "#hash_9804b102c9e65ad1",
-    "dudImpactSounds": "#hash_9804b102c9e65ad1"
+    "normalImpactFX": "#knife_large_enter",
+    "bounceImpactFX": "#crossbow_enter",
+    "bounceImpactSounds": "#bolt_impact",
+    "dudImpactSounds": "#bolt_impact"
 }

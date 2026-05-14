@@ -3,7 +3,7 @@
     "type": "scoreevents",
     "vmtype": "both",
     "name": "eq_molotov_mp_scoreevents",
-    "molotov_cocktail_exploded": "#molotov_cocktail_exploded",
+    "detonationscoreevent": "#molotov_cocktail_exploded",
     "molotov_cocktail_threw": "#molotov_cocktail_threw",
     "customsettingstype": "ability"
 }

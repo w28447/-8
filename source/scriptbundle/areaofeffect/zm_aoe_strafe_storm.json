@@ -6,7 +6,7 @@
     "effectradius": 350,
     "vmtype": "client",
     "name": "zm_aoe_strafe_storm",
-    "hash_a8609f98": "rumble&damage_light",
+    "dmgrumble": "rumble&damage_light",
     "hash_e41627fe": "zmb_pegasus_aoe_start",
     "endrumble": "rumble&damage_heavy",
     "hash_1ee49376": "zmb_pegasus_aoe_lp",

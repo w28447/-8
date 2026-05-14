@@ -19,7 +19,7 @@
     "characterselect": "#hash_1ecb5b15598cb2cc",
     "name": "male2",
     "hash_7bb9f96a13de9eba:hash_207908de": "#hash_7bb9f96a13de9eba",
-    "hash_277d298cf39a2119:hash_b801796c": "#hash_277d298cf39a2119",
+    "exertpainpunched": "#hash_277d298cf39a2119",
     "boostloss": "#hash_2f4e09cae30d2c27",
     "exertgascough": "#hash_3df5396258847d29",
     "exertpainfalling": "#hash_6986c1ef63a8c733",
@@ -37,6 +37,6 @@
     "exertbreathehurt": "#hash_2d8f8d79d800431f",
     "exertfullyhealedbreath": "#exert_fully_healed",
     "exertdeathdrowned": "#hash_22f0275e647e01e8",
-    "hash_31e3fd3c1feef6fd:hash_c3b67de0": "#hash_31e3fd3c1feef6fd",
+    "exertpainburn": "#hash_31e3fd3c1feef6fd",
     "hash_3150a609d055a88b:hash_1ca33ad4": "#hash_3150a609d055a88b"
 }

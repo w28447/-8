@@ -3,7 +3,7 @@
     "baseWeapon": "#gadget_health_regen_medium",
     "displayname": "#weapon/gadget_health_regen_medium",
     "weapon70": "#gadget_health_regen",
-    "streamkey": "#gadget_health_regen_medium_soundbank",
+    "soundbank": "#gadget_health_regen_medium_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -33,7 +33,7 @@
     "sound320": "#hash_307304d46846fc74",
     "sound3b0": "#hash_390aa7d4252c46b5",
     "sound660": "#uin_unavailable_charging",
-    "tunables1": "#hash_33275770ee8fffaf",
+    "tunables1": "#gadget_health_regen_medium_tunables_wz",
     "viewmodel": [
         "#wpn_t8_eqp_heal_aid_view"
     ],

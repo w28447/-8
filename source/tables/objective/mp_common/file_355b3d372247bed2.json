@@ -15,7 +15,7 @@
     "shouldCullDistance": false,
     "cullDistance": 300,
     "hasLowAmmoState": false,
-    "waypointImage": "#hash_9a82c656623c9fbb",
+    "waypointImage": "#ui_icon_scorestreaks_overwatch_snipers_dark",
     "unk30": 300,
     "bundle": {
         "hash_10b16ca8": 3,

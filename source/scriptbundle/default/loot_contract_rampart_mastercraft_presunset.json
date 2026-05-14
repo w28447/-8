@@ -4,7 +4,7 @@
     "contracttitle": "localized17#menu/contract_afterburner",
     "name": "loot_contract_rampart_mastercraft_presunset",
     "hash_69b5a265": "core_frontend_ar_damage_sig_02",
-    "loot07_ui_icon_blackmarket_itemdetail_afterburner:hash_4b258f2c": "image#loot07_ui_icon_blackmarket_itemdetail_afterburner",
+    "loot07_ui_icon_blackmarket_itemdetail_afterburner": "image#loot07_ui_icon_blackmarket_itemdetail_afterburner",
     "contractdescription": "localized17#menu/mastercraft",
     "white": "#white",
     "loot07_ui_icon_blackmarket_itemshop_afterburner": "image#loot07_ui_icon_blackmarket_itemshop_afterburner",

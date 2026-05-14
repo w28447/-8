@@ -10,7 +10,7 @@
                         }
                     ],
                     "hash_1d91eeba": 1,
-                    "hash_7db3435c": 0,
+                    "ispersonalitem": 0,
                     "clientfield": "#ww_p1_1"
                 },
                 {
@@ -25,7 +25,7 @@
                         }
                     ],
                     "hash_1d91eeba": 2,
-                    "hash_7db3435c": 0,
+                    "ispersonalitem": 0,
                     "clientfield": "#ww_p1_2"
                 }
             ],
@@ -41,7 +41,7 @@
                         }
                     ],
                     "hash_1d91eeba": 1,
-                    "hash_7db3435c": 0,
+                    "ispersonalitem": 0,
                     "clientfield": "#ww_p2_1"
                 },
                 {
@@ -56,7 +56,7 @@
                         }
                     ],
                     "hash_1d91eeba": 2,
-                    "hash_7db3435c": 0,
+                    "ispersonalitem": 0,
                     "clientfield": "#ww_p2_2"
                 },
                 {
@@ -83,7 +83,7 @@
                         }
                     ],
                     "hash_1d91eeba": 5,
-                    "hash_7db3435c": 0,
+                    "ispersonalitem": 0,
                     "clientfield": "#ww_p2_3"
                 }
             ],
@@ -93,66 +93,66 @@
     "objnonlinearprogitems": [
         {
             "hash_2d022ee774661c5b:hash_f128673a": "image#hash_2d022ee774661c5b",
-            "zm_mansion_prog_1:hash_846fa8e": "#zm_mansion_prog_1"
+            "zm_mansion_prog_1": "#zm_mansion_prog_1"
         },
         {
             "hash_2d052ae774684b66:hash_f128673a": "image#hash_2d052ae774684b66",
-            "zm_mansion_prog_2:hash_846fa8e": "#zm_mansion_prog_2"
+            "zm_mansion_prog_2": "#zm_mansion_prog_2"
         },
         {
             "hash_2d052be774684d19:hash_f128673a": "image#hash_2d052be774684d19",
-            "zm_mansion_prog_3:hash_846fa8e": "#zm_mansion_prog_3"
+            "zm_mansion_prog_3": "#zm_mansion_prog_3"
         },
         {
             "hash_2d0529e7746849b3:hash_f128673a": "image#hash_2d0529e7746849b3",
-            "zm_mansion_prog_4:hash_846fa8e": "#zm_mansion_prog_4"
+            "zm_mansion_prog_4": "#zm_mansion_prog_4"
         },
         {
             "hash_2d0226e774660ec3:hash_f128673a": "image#hash_2d0226e774660ec3",
-            "zm_mansion_prog_5:hash_846fa8e": "#zm_mansion_prog_5"
+            "zm_mansion_prog_5": "#zm_mansion_prog_5"
         },
         {
             "hash_2d0227e774661076:hash_f128673a": "image#hash_2d0227e774661076",
-            "zm_mansion_prog_6:hash_846fa8e": "#zm_mansion_prog_6"
+            "zm_mansion_prog_6": "#zm_mansion_prog_6"
         },
         {
             "hash_2d0228e774661229:hash_f128673a": "image#hash_2d0228e774661229",
-            "zm_mansion_prog_7:hash_846fa8e": "#zm_mansion_prog_7"
+            "zm_mansion_prog_7": "#zm_mansion_prog_7"
         },
         {
             "hash_2d0229e7746613dc:hash_f128673a": "image#hash_2d0229e7746613dc",
-            "zm_mansion_prog_8:hash_846fa8e": "#zm_mansion_prog_8"
+            "zm_mansion_prog_8": "#zm_mansion_prog_8"
         },
         {
             "hash_2d022ae77466158f:hash_f128673a": "image#hash_2d022ae77466158f",
-            "zm_mansion_prog_9:hash_846fa8e": "#zm_mansion_prog_9"
+            "zm_mansion_prog_9": "#zm_mansion_prog_9"
         },
         {
             "hash_2d022be774661742:hash_f128673a": "image#hash_2d022be774661742",
-            "zm_mansion_prog_10:hash_846fa8e": "#zm_mansion_prog_10"
+            "zm_mansion_prog_10": "#zm_mansion_prog_10"
         },
         {
             "hash_2d022ce7746618f5:hash_f128673a": "image#hash_2d022ce7746618f5",
-            "zm_mansion_prog_11:hash_846fa8e": "#zm_mansion_prog_11"
+            "zm_mansion_prog_11": "#zm_mansion_prog_11"
         },
         {
             "hash_2d022de774661aa8:hash_f128673a": "image#hash_2d022de774661aa8",
-            "zm_mansion_prog_12:hash_846fa8e": "#zm_mansion_prog_12"
+            "zm_mansion_prog_12": "#zm_mansion_prog_12"
         }
     ],
     "shieldpieces": [
         {
-            "hash_7db3435c": 0,
+            "ispersonalitem": 0,
             "pieceimage": "image#hash_bf20c4b3a86ce4f",
             "clientfield": "#shield_1"
         },
         {
-            "hash_7db3435c": 0,
+            "ispersonalitem": 0,
             "pieceimage": "image#hash_bf20d4b3a86d002",
             "clientfield": "#shield_3"
         },
         {
-            "hash_7db3435c": 0,
+            "ispersonalitem": 0,
             "pieceimage": "image#hash_bf20e4b3a86d1b5",
             "clientfield": "#shield_2"
         }
@@ -172,7 +172,7 @@
                                 }
                             ],
                             "hash_1d91eeba": 2,
-                            "hash_7db3435c": 0,
+                            "ispersonalitem": 0,
                             "clientfield": "#hash_379a0cb8e272c259"
                         },
                         {
@@ -185,7 +185,7 @@
                                 }
                             ],
                             "hash_1d91eeba": 2,
-                            "hash_7db3435c": 0,
+                            "ispersonalitem": 0,
                             "clientfield": "#hash_379a09b8e272bd40"
                         },
                         {
@@ -198,14 +198,14 @@
                                 }
                             ],
                             "hash_1d91eeba": 2,
-                            "hash_7db3435c": 0,
+                            "ispersonalitem": 0,
                             "clientfield": "#hash_379a0ab8e272bef3"
                         }
                     ],
                     "list_items": 3
                 }
             ],
-            "hash_7db3435c": 0,
+            "ispersonalitem": 0,
             "hash_516217cd": 1,
             "name": "trap plasma"
         },
@@ -220,7 +220,7 @@
                                 }
                             ],
                             "hash_1d91eeba": 1,
-                            "hash_7db3435c": 0,
+                            "ispersonalitem": 0,
                             "clientfield": "#q_silver_bullets_1"
                         },
                         {
@@ -230,7 +230,7 @@
                                 }
                             ],
                             "hash_1d91eeba": 1,
-                            "hash_7db3435c": 0,
+                            "ispersonalitem": 0,
                             "clientfield": "#q_silver_bullets_2"
                         },
                         {
@@ -240,7 +240,7 @@
                                 }
                             ],
                             "hash_1d91eeba": 1,
-                            "hash_7db3435c": 0,
+                            "ispersonalitem": 0,
                             "clientfield": "#q_silver_bullets_3"
                         }
                     ],
@@ -255,17 +255,17 @@
                                 }
                             ],
                             "hash_1d91eeba": 1,
-                            "hash_7db3435c": 0,
+                            "ispersonalitem": 0,
                             "clientfield": "#hash_4cfdc97536e8c1ad"
                         }
                     ],
                     "list_items": 1
                 }
             ],
-            "hash_7db3435c": 0,
+            "ispersonalitem": 0,
             "hash_516217cd": 2,
             "name": "special ammo",
-            "q_silver_bullets_phase:hash_a0ebe517": "#q_silver_bullets_phase"
+            "q_silver_bullets_phase": "#q_silver_bullets_phase"
         },
         {
             "phases": [
@@ -278,7 +278,7 @@
                                 }
                             ],
                             "hash_1d91eeba": 1,
-                            "hash_7db3435c": 0,
+                            "ispersonalitem": 0,
                             "clientfield": "#q_silver_bullets_chems_1"
                         },
                         {
@@ -288,7 +288,7 @@
                                 }
                             ],
                             "hash_1d91eeba": 1,
-                            "hash_7db3435c": 0,
+                            "ispersonalitem": 0,
                             "clientfield": "#q_silver_bullets_chems_2"
                         },
                         {
@@ -298,14 +298,14 @@
                                 }
                             ],
                             "hash_1d91eeba": 1,
-                            "hash_7db3435c": 0,
+                            "ispersonalitem": 0,
                             "clientfield": "#q_silver_bullets_chems_3"
                         }
                     ],
                     "list_items": 3
                 }
             ],
-            "hash_7db3435c": 0,
+            "ispersonalitem": 0,
             "hash_516217cd": 1,
             "name": "special ammo ingredients"
         }
@@ -323,7 +323,7 @@
                 }
             ],
             "hash_1d91eeba": 1,
-            "hash_7db3435c": 0,
+            "ispersonalitem": 0,
             "clientfield": "#pap_1"
         },
         {
@@ -333,7 +333,7 @@
                 }
             ],
             "hash_1d91eeba": 1,
-            "hash_7db3435c": 0,
+            "ispersonalitem": 0,
             "clientfield": "#pap_2"
         },
         {
@@ -343,7 +343,7 @@
                 }
             ],
             "hash_1d91eeba": 1,
-            "hash_7db3435c": 0,
+            "ispersonalitem": 0,
             "clientfield": "#pap_3"
         }
     ],
@@ -361,5 +361,5 @@
     "hash_a05daa90": 3,
     "hash_c029b82f": 2,
     "hash_f3d39d90": 0,
-    "hash_38b9613": 1
+    "isobjprogressnonlinear": 1
 }

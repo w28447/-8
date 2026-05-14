@@ -2,7 +2,7 @@
     "contracticon": "image#loot07_ui_icon_blackmarket_contracts_tedd",
     "contracttitle": "localized17#menu/contract_tedd",
     "name": "loot_contract_tedd",
-    "loot07_ui_icon_blackmarket_itemdetail_bundle_tedd:hash_4b258f2c": "image#loot07_ui_icon_blackmarket_itemdetail_bundle_tedd",
+    "loot07_ui_icon_blackmarket_itemdetail_bundle_tedd": "image#loot07_ui_icon_blackmarket_itemdetail_bundle_tedd",
     "contractdescription": "localized17#menu/blackout_character",
     "white": "#white",
     "loot07_ui_icon_blackmarket_itemshop_bundle_tedd": "image#loot07_ui_icon_blackmarket_itemshop_bundle_tedd",

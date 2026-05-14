@@ -3,7 +3,7 @@
     "baseWeapon": "#eq_molotov_extra",
     "displayname": "#weapon/molotov",
     "weapon70": "#eq_molotov",
-    "streamkey": "#eq_molotov_extra_soundbank",
+    "soundbank": "#eq_molotov_extra_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "scrstr_1190": "tag_rag_05_animated",
@@ -36,7 +36,7 @@
     "sound660": "#hash_4b624dad2a08a6cd",
     "projexplosionsound": "#hash_2b2531a0230c359c",
     "tunables1": "#eq_molotov_extra_tunables_zm",
-    "cacWeaponXCam": "#hash_b9c848b73bfceab1",
+    "cacWeaponXCam": "#ui_cam_cac_equip_incendiary",
     "sharedWeaponSounds": "#equipment",
     "customsettings": "#molotov_custom_settings_zm",
     "#hash_2e4a8800": "#eq_molotov_mp_scoreevents",
@@ -64,6 +64,6 @@
     "fx_ed8": "#hash_be014af37ce6e996",
     "fx_f00": "#hash_8764c40cff30dca5",
     "bounceImpactFX": "#grenade_bounce",
-    "normalImpactSounds": "#hash_af56ecde75b1d028",
-    "bounceImpactSounds": "#hash_c6d8f2152c519b03"
+    "normalImpactSounds": "#incendiary_grenade_explode_material",
+    "bounceImpactSounds": "#smoke_bounce"
 }

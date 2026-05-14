@@ -19,7 +19,7 @@
     "characterselect": "#hash_40f3ff2645c76228",
     "name": "sea_male",
     "hash_5b809557262a2ac6:hash_207908de": "#hash_5b809557262a2ac6",
-    "hash_630631c5bdbf8acd:hash_b801796c": "#hash_630631c5bdbf8acd",
+    "exertpainpunched": "#hash_630631c5bdbf8acd",
     "boostloss": "#hash_c9f56bae25137c3",
     "exertgascough": "#hash_275d2c36c1f45905",
     "exertpainfalling": "#hash_6f02c4d11eeaf287",
@@ -37,6 +37,6 @@
     "exertbreathehurt": "#hash_68c06c2ee782d7bb",
     "exertfullyhealedbreath": "#exert_fully_healed",
     "exertdeathdrowned": "#hash_133599d220b99384",
-    "hash_52b66a4bf59496b9:hash_c3b67de0": "#hash_52b66a4bf59496b9",
+    "exertpainburn": "#hash_52b66a4bf59496b9",
     "hash_74c60d3bce2ddf57:hash_1ca33ad4": "#hash_74c60d3bce2ddf57"
 }

@@ -1,7 +1,7 @@
 {
     "name": "#apc_cougar_camera",
     "baseWeapon": "#apc_cougar_camera",
-    "streamkey": "#apc_cougar_camera_soundbank",
+    "soundbank": "#apc_cougar_camera_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -30,10 +30,10 @@
     "sound250": "#hash_242aa17124751841",
     "sound830": "#hash_36e25fd652fdfac2",
     "sound840": "#hash_7a5614b91f27d6ca",
-    "tunables1": "#hash_31d832da714e9424",
+    "tunables1": "#apc_cougar_camera_tunables",
     "tracers": [
         "#lmg",
-        "#hash_e2bdd456ce2308cc"
+        "#lmg_enemy"
     ],
     "fireRumble": "#defaultweapon_fire",
     "fx_bc8": "#weapon/fx_muz_veh_gun_med_3p",
@@ -45,5 +45,5 @@
     "normalImpactFX": "#bullet_ap_enter",
     "exitImpactFX": "#bullet_ap_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

@@ -1,5 +1,5 @@
 {
-    "dart_kill": "#dart_kill",
+    "killscoreevent": "#dart_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",

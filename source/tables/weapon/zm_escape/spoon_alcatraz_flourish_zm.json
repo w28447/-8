@@ -1,7 +1,7 @@
 {
     "name": "#spoon_alcatraz_flourish_zm",
     "baseWeapon": "#spoon_alcatraz_flourish",
-    "streamkey": "#spoon_alcatraz_flourish_soundbank",
+    "soundbank": "#spoon_alcatraz_flourish_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -41,7 +41,7 @@
         "#wpn_t8_zm_spoon_world"
     ],
     "meleeImpactRumble": "#defaultweapon_melee",
-    "fx_f60": "#hash_cf4f7d3d49485130",
-    "fx_f68": "#hash_cf4f7d3d49485130",
-    "normalImpactFX": "#hash_a5f3e55b8e1070ab"
+    "fx_f60": "#impacts/fx_flesh_hit_knife_zmb",
+    "fx_f68": "#impacts/fx_flesh_hit_knife_zmb",
+    "normalImpactFX": "#knife_large_enter"
 }

@@ -4,7 +4,7 @@
     "displayname": "#weapon/smg_accurate_t8",
     "altWeapon": "#smg_accurate_t8_mp",
     "weapon70": "#smg_accurate_t8",
-    "streamkey": "#acog_smg_accurate_t8_soundbank",
+    "soundbank": "#acog_smg_accurate_t8_soundbank",
     "scrstr_8c8": [
         "tag_front_sights_off",
         "tag_rear_sights_off",

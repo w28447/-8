@@ -4,7 +4,7 @@
     "displayname": "#zmweapon/tr_leveraction_t8_upgraded",
     "xhash_60": "#hash_42ac15db89bce434",
     "weapon70": "#tr_leveraction_t8",
-    "streamkey": "#tr_leveraction_t8_upgraded_soundbank",
+    "soundbank": "#tr_leveraction_t8_upgraded_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -73,7 +73,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_tr_leveraction",
     "weaponIconXCam": "#ui_cam_icon_ar_marksman",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_78cf61bac9012487"
@@ -100,8 +100,8 @@
     "fx_c88": "#hash_83613e307817774e",
     "fx_c90": "#hash_83613e307817774e",
     "fx_c98": "#hash_83613e307817774e",
-    "normalImpactFX": "#hash_9cafc46b8c735870",
-    "exitImpactFX": "#hash_d6ef4fc6c00cc18e",
+    "normalImpactFX": "#bullet_large_enter",
+    "exitImpactFX": "#bullet_large_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

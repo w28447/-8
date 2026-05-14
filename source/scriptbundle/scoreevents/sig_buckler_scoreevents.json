@@ -1,15 +1,15 @@
 {
-    "battle_shield_multikill_2": "#battle_shield_multikill_2",
-    "battle_shield_multikill_2": "#battle_shield_multikill_2",
-    "battle_shield_kill": "#battle_shield_kill",
+    "multikill2scoreevent": "#battle_shield_multikill_2",
+    "multikill6scoreevent": "#battle_shield_multikill_2",
+    "killscoreevent": "#battle_shield_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
-    "battle_shield_multikill_2": "#battle_shield_multikill_2",
+    "multikill4scoreevent": "#battle_shield_multikill_2",
     "name": "sig_buckler_scoreevents",
     "customsettingstype": "ability",
-    "battle_shield_multikill_2": "#battle_shield_multikill_2",
+    "multikill5scoreevent": "#battle_shield_multikill_2",
     "battle_shield_shutdown": "#battle_shield_shutdown",
-    "shield_assist": "#shield_assist",
-    "battle_shield_multikill_2": "#battle_shield_multikill_2"
+    "assistscoreevent": "#shield_assist",
+    "multikill3scoreevent": "#battle_shield_multikill_2"
 }

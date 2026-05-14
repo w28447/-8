@@ -12,9 +12,9 @@ version 1 {
     // offset 0xc0, size 0x20
     float m_pitch;
     // offset 0xe0, size 0x20
-    int hash_1932202b4f52dbf3;
+    int vid_xpos;
     // offset 0x100, size 0x20
-    int hash_f87421fe851174a;
+    int vid_ypos;
     // offset 0x120, size 0x200
     string(64) hash_1fdfb434e84cee5;
     // offset 0x320, size 0x20

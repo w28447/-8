@@ -1,6 +1,4 @@
 #using script_34e49e82e2f499e1;
-#using scripts\wz_common\wz_pot_of_gold.gsc;
-#using scripts\mp_common\item_supply_drop_system.gsc;
 #using script_7611295950bc2c87;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\callbacks_shared;
@@ -13,6 +11,7 @@
 #using scripts\core_common\util_shared;
 #using scripts\core_common\values_shared;
 #using scripts\mp_common\item_inventory;
+#using scripts\mp_common\item_supply_drop_system;
 #using scripts\mp_common\item_world;
 #using scripts\mp_common\load;
 #using scripts\wz\wz_open_skyscrapers_ai_zones;
@@ -32,6 +31,7 @@
 #using scripts\wz_common\wz_holiday;
 #using scripts\wz_common\wz_jukebox;
 #using scripts\wz_common\wz_loadouts;
+#using scripts\wz_common\wz_pot_of_gold;
 
 #namespace wz_open_skyscrapers;
 

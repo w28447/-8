@@ -3,7 +3,7 @@
     "baseWeapon": "#gadget_vision_pulse",
     "displayname": "#weapon/gadget_vision_pulse",
     "weapon70": "#gadget_vision_pulse",
-    "streamkey": "#gadget_vision_pulse_soundbank",
+    "soundbank": "#gadget_vision_pulse_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",
@@ -47,9 +47,9 @@
     "worldModel": [
         "#t7_wpn_rifle_base_world"
     ],
-    "gadgetIconAvailable": "#hash_e118d83bf14aa4df",
-    "gadgetIconUnavailable": "#hash_b2a1cdb257428b9c",
+    "gadgetIconAvailable": "#ui_icon_ultimate_visionpulse",
+    "gadgetIconUnavailable": "#ui_icon_ultimate_visionpulse_dark",
     "reticleSide": "#reticle_side_small",
-    "hudIcon": "#hash_dff5780f83e5c4e6",
+    "hudIcon": "#ui_icon_ability_visionpulse",
     "fireRumble": "#assault_fire"
 }

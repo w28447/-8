@@ -17,9 +17,9 @@ version 35 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 8 size 0x6d8
@@ -187,7 +187,7 @@ version 35 {
     // idx 14 members 1 size 0x10
     struct hash_1c86958671ff27fd {
         // offset 0x0, size 0x10
-        uint:16 hash_50ab8b7df567cd2a;
+        uint:16 purchasedbits;
     };
 
     // idx 15 members 6 size 0x108
@@ -216,8 +216,8 @@ version 35 {
     };
 
     // idx 1 members 135
-    enum hash_10d50fe10481423c {
-        hash_1773b576c62a506, // 0x0,
+    enum mpitems {
+        bare_hands_bounty, // 0x0,
         eq_tripwire, // 0x1,
         shock_rifle, // 0x2,
         ability_smart_cover, // 0x3,
@@ -345,7 +345,7 @@ version 35 {
         hash_7932008294f0d876, // 0x7d,
         smg_handling_t8, // 0x7e,
         shotgun_fullauto_t8, // 0x7f,
-        hash_7ab3f9a730359659, // 0x80,
+        spawn_beacon_held, // 0x80,
         tr_flechette_t8, // 0x81,
         melee_secretsanta_t8, // 0x82,
         gadget_icepick, // 0x83,
@@ -439,7 +439,7 @@ version 35 {
     };
 
     // idx 4 members 46
-    enum hash_1e2de876fb880be2 {
+    enum mpattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -489,7 +489,7 @@ version 35 {
     };
 
     // idx 5 members 42
-    enum hash_6cba734728a9b70 {
+    enum mpspecialties {
         bonuscard_overkill, // 0x0,
         talent_gungho, // 0x1,
         talent_engineer, // 0x2,
@@ -535,7 +535,7 @@ version 35 {
     };
 
     // idx 6 members 14
-    enum hash_d17b4e10fa9c28c {
+    enum mpcharacters {
         prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
@@ -556,7 +556,7 @@ version 35 {
     // offset 0x0, size 0x6d8
     region_info dml;
     // offset 0x6d8, size 0x140
-    string(40) hash_3ddb4b48b795bd91;
+    string(40) full_gamertag;
     // offset 0x818, size 0x318
     lootcontracts loot_contracts[3];
     // offset 0xb30, size 0x8
@@ -597,9 +597,9 @@ version 34 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 8 size 0x6d8
@@ -767,7 +767,7 @@ version 34 {
     // idx 14 members 1 size 0x10
     struct hash_1c86958671ff27fd {
         // offset 0x0, size 0x10
-        uint:16 hash_50ab8b7df567cd2a;
+        uint:16 purchasedbits;
     };
 
     // idx 15 members 6 size 0x108
@@ -796,8 +796,8 @@ version 34 {
     };
 
     // idx 1 members 133
-    enum hash_10d50fe10481423c {
-        hash_1773b576c62a506, // 0x0,
+    enum mpitems {
+        bare_hands_bounty, // 0x0,
         eq_tripwire, // 0x1,
         shock_rifle, // 0x2,
         ability_smart_cover, // 0x3,
@@ -923,7 +923,7 @@ version 34 {
         hash_7932008294f0d876, // 0x7b,
         smg_handling_t8, // 0x7c,
         shotgun_fullauto_t8, // 0x7d,
-        hash_7ab3f9a730359659, // 0x7e,
+        spawn_beacon_held, // 0x7e,
         tr_flechette_t8, // 0x7f,
         melee_secretsanta_t8, // 0x80,
         gadget_icepick, // 0x81,
@@ -1015,7 +1015,7 @@ version 34 {
     };
 
     // idx 4 members 46
-    enum hash_1e2de876fb880be2 {
+    enum mpattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -1065,7 +1065,7 @@ version 34 {
     };
 
     // idx 5 members 42
-    enum hash_6cba734728a9b70 {
+    enum mpspecialties {
         bonuscard_overkill, // 0x0,
         talent_gungho, // 0x1,
         talent_engineer, // 0x2,
@@ -1111,7 +1111,7 @@ version 34 {
     };
 
     // idx 6 members 14
-    enum hash_d17b4e10fa9c28c {
+    enum mpcharacters {
         prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
@@ -1132,7 +1132,7 @@ version 34 {
     // offset 0x0, size 0x6d8
     region_info dml;
     // offset 0x6d8, size 0x140
-    string(40) hash_3ddb4b48b795bd91;
+    string(40) full_gamertag;
     // offset 0x818, size 0x318
     lootcontracts loot_contracts[3];
     // offset 0xb30, size 0x8
@@ -1173,9 +1173,9 @@ version 33 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 8 size 0x6d8
@@ -1343,7 +1343,7 @@ version 33 {
     // idx 14 members 1 size 0x10
     struct hash_1c86958671ff27fd {
         // offset 0x0, size 0x10
-        uint:16 hash_50ab8b7df567cd2a;
+        uint:16 purchasedbits;
     };
 
     // idx 15 members 6 size 0x108
@@ -1372,8 +1372,8 @@ version 33 {
     };
 
     // idx 1 members 132
-    enum hash_10d50fe10481423c {
-        hash_1773b576c62a506, // 0x0,
+    enum mpitems {
+        bare_hands_bounty, // 0x0,
         eq_tripwire, // 0x1,
         shock_rifle, // 0x2,
         ability_smart_cover, // 0x3,
@@ -1498,7 +1498,7 @@ version 33 {
         hash_7932008294f0d876, // 0x7a,
         smg_handling_t8, // 0x7b,
         shotgun_fullauto_t8, // 0x7c,
-        hash_7ab3f9a730359659, // 0x7d,
+        spawn_beacon_held, // 0x7d,
         tr_flechette_t8, // 0x7e,
         melee_secretsanta_t8, // 0x7f,
         gadget_icepick, // 0x80,
@@ -1589,7 +1589,7 @@ version 33 {
     };
 
     // idx 4 members 46
-    enum hash_1e2de876fb880be2 {
+    enum mpattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -1639,7 +1639,7 @@ version 33 {
     };
 
     // idx 5 members 42
-    enum hash_6cba734728a9b70 {
+    enum mpspecialties {
         bonuscard_overkill, // 0x0,
         talent_gungho, // 0x1,
         talent_engineer, // 0x2,
@@ -1685,7 +1685,7 @@ version 33 {
     };
 
     // idx 6 members 14
-    enum hash_d17b4e10fa9c28c {
+    enum mpcharacters {
         prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
@@ -1706,7 +1706,7 @@ version 33 {
     // offset 0x0, size 0x6d8
     region_info dml;
     // offset 0x6d8, size 0x140
-    string(40) hash_3ddb4b48b795bd91;
+    string(40) full_gamertag;
     // offset 0x818, size 0x318
     lootcontracts loot_contracts[3];
     // offset 0xb30, size 0x8
@@ -1745,9 +1745,9 @@ version 32 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 8 size 0x6d8
@@ -1915,7 +1915,7 @@ version 32 {
     // idx 14 members 1 size 0x10
     struct hash_1c86958671ff27fd {
         // offset 0x0, size 0x10
-        uint:16 hash_50ab8b7df567cd2a;
+        uint:16 purchasedbits;
     };
 
     // idx 15 members 6 size 0x108
@@ -1944,8 +1944,8 @@ version 32 {
     };
 
     // idx 1 members 130
-    enum hash_10d50fe10481423c {
-        hash_1773b576c62a506, // 0x0,
+    enum mpitems {
+        bare_hands_bounty, // 0x0,
         eq_tripwire, // 0x1,
         shock_rifle, // 0x2,
         ability_smart_cover, // 0x3,
@@ -2068,7 +2068,7 @@ version 32 {
         hash_7932008294f0d876, // 0x78,
         smg_handling_t8, // 0x79,
         shotgun_fullauto_t8, // 0x7a,
-        hash_7ab3f9a730359659, // 0x7b,
+        spawn_beacon_held, // 0x7b,
         tr_flechette_t8, // 0x7c,
         melee_secretsanta_t8, // 0x7d,
         gadget_icepick, // 0x7e,
@@ -2157,7 +2157,7 @@ version 32 {
     };
 
     // idx 4 members 46
-    enum hash_1e2de876fb880be2 {
+    enum mpattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -2207,7 +2207,7 @@ version 32 {
     };
 
     // idx 5 members 42
-    enum hash_6cba734728a9b70 {
+    enum mpspecialties {
         bonuscard_overkill, // 0x0,
         talent_gungho, // 0x1,
         talent_engineer, // 0x2,
@@ -2253,7 +2253,7 @@ version 32 {
     };
 
     // idx 6 members 14
-    enum hash_d17b4e10fa9c28c {
+    enum mpcharacters {
         prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
@@ -2274,7 +2274,7 @@ version 32 {
     // offset 0x0, size 0x6d8
     region_info dml;
     // offset 0x6d8, size 0x140
-    string(40) hash_3ddb4b48b795bd91;
+    string(40) full_gamertag;
     // offset 0x818, size 0x318
     lootcontracts loot_contracts[3];
     // offset 0xb30, size 0x8
@@ -2315,9 +2315,9 @@ version 31 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 8 size 0x6d8
@@ -2485,7 +2485,7 @@ version 31 {
     // idx 14 members 1 size 0x10
     struct hash_1c86958671ff27fd {
         // offset 0x0, size 0x10
-        uint:16 hash_50ab8b7df567cd2a;
+        uint:16 purchasedbits;
     };
 
     // idx 15 members 6 size 0x108
@@ -2514,8 +2514,8 @@ version 31 {
     };
 
     // idx 1 members 130
-    enum hash_10d50fe10481423c {
-        hash_1773b576c62a506, // 0x0,
+    enum mpitems {
+        bare_hands_bounty, // 0x0,
         eq_tripwire, // 0x1,
         shock_rifle, // 0x2,
         ability_smart_cover, // 0x3,
@@ -2638,7 +2638,7 @@ version 31 {
         hash_7932008294f0d876, // 0x78,
         smg_handling_t8, // 0x79,
         shotgun_fullauto_t8, // 0x7a,
-        hash_7ab3f9a730359659, // 0x7b,
+        spawn_beacon_held, // 0x7b,
         tr_flechette_t8, // 0x7c,
         melee_secretsanta_t8, // 0x7d,
         gadget_icepick, // 0x7e,
@@ -2727,7 +2727,7 @@ version 31 {
     };
 
     // idx 4 members 46
-    enum hash_1e2de876fb880be2 {
+    enum mpattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -2777,7 +2777,7 @@ version 31 {
     };
 
     // idx 5 members 42
-    enum hash_6cba734728a9b70 {
+    enum mpspecialties {
         bonuscard_overkill, // 0x0,
         talent_gungho, // 0x1,
         talent_engineer, // 0x2,
@@ -2823,7 +2823,7 @@ version 31 {
     };
 
     // idx 6 members 14
-    enum hash_d17b4e10fa9c28c {
+    enum mpcharacters {
         prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
@@ -2883,9 +2883,9 @@ version 30 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 8 size 0x6d8
@@ -3053,7 +3053,7 @@ version 30 {
     // idx 14 members 1 size 0x10
     struct hash_1c86958671ff27fd {
         // offset 0x0, size 0x10
-        uint:16 hash_50ab8b7df567cd2a;
+        uint:16 purchasedbits;
     };
 
     // idx 15 members 6 size 0x108
@@ -3082,8 +3082,8 @@ version 30 {
     };
 
     // idx 1 members 129
-    enum hash_10d50fe10481423c {
-        hash_1773b576c62a506, // 0x0,
+    enum mpitems {
+        bare_hands_bounty, // 0x0,
         eq_tripwire, // 0x1,
         shock_rifle, // 0x2,
         ability_smart_cover, // 0x3,
@@ -3205,7 +3205,7 @@ version 30 {
         hash_7932008294f0d876, // 0x77,
         smg_handling_t8, // 0x78,
         shotgun_fullauto_t8, // 0x79,
-        hash_7ab3f9a730359659, // 0x7a,
+        spawn_beacon_held, // 0x7a,
         tr_flechette_t8, // 0x7b,
         melee_secretsanta_t8, // 0x7c,
         gadget_icepick, // 0x7d,
@@ -3293,7 +3293,7 @@ version 30 {
     };
 
     // idx 4 members 46
-    enum hash_1e2de876fb880be2 {
+    enum mpattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -3343,7 +3343,7 @@ version 30 {
     };
 
     // idx 5 members 42
-    enum hash_6cba734728a9b70 {
+    enum mpspecialties {
         bonuscard_overkill, // 0x0,
         talent_gungho, // 0x1,
         talent_engineer, // 0x2,
@@ -3389,7 +3389,7 @@ version 30 {
     };
 
     // idx 6 members 14
-    enum hash_d17b4e10fa9c28c {
+    enum mpcharacters {
         prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
@@ -3449,9 +3449,9 @@ version 29 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 8 size 0x6d8
@@ -3619,7 +3619,7 @@ version 29 {
     // idx 14 members 1 size 0x10
     struct hash_1c86958671ff27fd {
         // offset 0x0, size 0x10
-        uint:16 hash_50ab8b7df567cd2a;
+        uint:16 purchasedbits;
     };
 
     // idx 15 members 6 size 0x108
@@ -3648,8 +3648,8 @@ version 29 {
     };
 
     // idx 1 members 129
-    enum hash_10d50fe10481423c {
-        hash_1773b576c62a506, // 0x0,
+    enum mpitems {
+        bare_hands_bounty, // 0x0,
         eq_tripwire, // 0x1,
         shock_rifle, // 0x2,
         ability_smart_cover, // 0x3,
@@ -3771,7 +3771,7 @@ version 29 {
         hash_7932008294f0d876, // 0x77,
         smg_handling_t8, // 0x78,
         shotgun_fullauto_t8, // 0x79,
-        hash_7ab3f9a730359659, // 0x7a,
+        spawn_beacon_held, // 0x7a,
         tr_flechette_t8, // 0x7b,
         melee_secretsanta_t8, // 0x7c,
         gadget_icepick, // 0x7d,
@@ -3859,7 +3859,7 @@ version 29 {
     };
 
     // idx 4 members 47
-    enum hash_1e2de876fb880be2 {
+    enum mpattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -3910,7 +3910,7 @@ version 29 {
     };
 
     // idx 5 members 42
-    enum hash_6cba734728a9b70 {
+    enum mpspecialties {
         bonuscard_overkill, // 0x0,
         talent_gungho, // 0x1,
         talent_engineer, // 0x2,
@@ -3956,7 +3956,7 @@ version 29 {
     };
 
     // idx 6 members 14
-    enum hash_d17b4e10fa9c28c {
+    enum mpcharacters {
         prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
@@ -4016,9 +4016,9 @@ version 28 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 8 size 0x6d8
@@ -4186,7 +4186,7 @@ version 28 {
     // idx 14 members 1 size 0x10
     struct hash_1c86958671ff27fd {
         // offset 0x0, size 0x10
-        uint:16 hash_50ab8b7df567cd2a;
+        uint:16 purchasedbits;
     };
 
     // idx 15 members 5 size 0xe8
@@ -4213,8 +4213,8 @@ version 28 {
     };
 
     // idx 1 members 129
-    enum hash_10d50fe10481423c {
-        hash_1773b576c62a506, // 0x0,
+    enum mpitems {
+        bare_hands_bounty, // 0x0,
         eq_tripwire, // 0x1,
         shock_rifle, // 0x2,
         ability_smart_cover, // 0x3,
@@ -4336,7 +4336,7 @@ version 28 {
         hash_7932008294f0d876, // 0x77,
         smg_handling_t8, // 0x78,
         shotgun_fullauto_t8, // 0x79,
-        hash_7ab3f9a730359659, // 0x7a,
+        spawn_beacon_held, // 0x7a,
         tr_flechette_t8, // 0x7b,
         melee_secretsanta_t8, // 0x7c,
         gadget_icepick, // 0x7d,
@@ -4424,7 +4424,7 @@ version 28 {
     };
 
     // idx 4 members 47
-    enum hash_1e2de876fb880be2 {
+    enum mpattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -4475,7 +4475,7 @@ version 28 {
     };
 
     // idx 5 members 42
-    enum hash_6cba734728a9b70 {
+    enum mpspecialties {
         bonuscard_overkill, // 0x0,
         talent_gungho, // 0x1,
         talent_engineer, // 0x2,
@@ -4521,7 +4521,7 @@ version 28 {
     };
 
     // idx 6 members 14
-    enum hash_d17b4e10fa9c28c {
+    enum mpcharacters {
         prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
@@ -4581,9 +4581,9 @@ version 27 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 8 size 0x6d8
@@ -4751,7 +4751,7 @@ version 27 {
     // idx 14 members 1 size 0x10
     struct hash_1c86958671ff27fd {
         // offset 0x0, size 0x10
-        uint:16 hash_50ab8b7df567cd2a;
+        uint:16 purchasedbits;
     };
 
     // idx 15 members 5 size 0xe8
@@ -4778,8 +4778,8 @@ version 27 {
     };
 
     // idx 1 members 127
-    enum hash_10d50fe10481423c {
-        hash_1773b576c62a506, // 0x0,
+    enum mpitems {
+        bare_hands_bounty, // 0x0,
         eq_tripwire, // 0x1,
         shock_rifle, // 0x2,
         ability_smart_cover, // 0x3,
@@ -4899,7 +4899,7 @@ version 27 {
         hash_7932008294f0d876, // 0x75,
         smg_handling_t8, // 0x76,
         shotgun_fullauto_t8, // 0x77,
-        hash_7ab3f9a730359659, // 0x78,
+        spawn_beacon_held, // 0x78,
         tr_flechette_t8, // 0x79,
         melee_secretsanta_t8, // 0x7a,
         gadget_icepick, // 0x7b,
@@ -4985,7 +4985,7 @@ version 27 {
     };
 
     // idx 4 members 46
-    enum hash_1e2de876fb880be2 {
+    enum mpattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -5035,7 +5035,7 @@ version 27 {
     };
 
     // idx 5 members 42
-    enum hash_6cba734728a9b70 {
+    enum mpspecialties {
         bonuscard_overkill, // 0x0,
         talent_gungho, // 0x1,
         talent_engineer, // 0x2,
@@ -5081,7 +5081,7 @@ version 27 {
     };
 
     // idx 6 members 14
-    enum hash_d17b4e10fa9c28c {
+    enum mpcharacters {
         prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
@@ -5141,9 +5141,9 @@ version 26 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 8 size 0x6d8
@@ -5311,7 +5311,7 @@ version 26 {
     // idx 14 members 1 size 0x10
     struct hash_1c86958671ff27fd {
         // offset 0x0, size 0x10
-        uint:16 hash_50ab8b7df567cd2a;
+        uint:16 purchasedbits;
     };
 
     // idx 15 members 4 size 0xc8
@@ -5336,8 +5336,8 @@ version 26 {
     };
 
     // idx 1 members 127
-    enum hash_10d50fe10481423c {
-        hash_1773b576c62a506, // 0x0,
+    enum mpitems {
+        bare_hands_bounty, // 0x0,
         eq_tripwire, // 0x1,
         shock_rifle, // 0x2,
         ability_smart_cover, // 0x3,
@@ -5457,7 +5457,7 @@ version 26 {
         hash_7932008294f0d876, // 0x75,
         smg_handling_t8, // 0x76,
         shotgun_fullauto_t8, // 0x77,
-        hash_7ab3f9a730359659, // 0x78,
+        spawn_beacon_held, // 0x78,
         tr_flechette_t8, // 0x79,
         melee_secretsanta_t8, // 0x7a,
         gadget_icepick, // 0x7b,
@@ -5543,7 +5543,7 @@ version 26 {
     };
 
     // idx 4 members 46
-    enum hash_1e2de876fb880be2 {
+    enum mpattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -5593,7 +5593,7 @@ version 26 {
     };
 
     // idx 5 members 42
-    enum hash_6cba734728a9b70 {
+    enum mpspecialties {
         bonuscard_overkill, // 0x0,
         talent_gungho, // 0x1,
         talent_engineer, // 0x2,
@@ -5639,7 +5639,7 @@ version 26 {
     };
 
     // idx 6 members 14
-    enum hash_d17b4e10fa9c28c {
+    enum mpcharacters {
         prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
@@ -5699,9 +5699,9 @@ version 25 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 8 size 0x6d8
@@ -5869,7 +5869,7 @@ version 25 {
     // idx 14 members 1 size 0x10
     struct hash_1c86958671ff27fd {
         // offset 0x0, size 0x10
-        uint:16 hash_50ab8b7df567cd2a;
+        uint:16 purchasedbits;
     };
 
     // idx 15 members 4 size 0xc8
@@ -5894,8 +5894,8 @@ version 25 {
     };
 
     // idx 1 members 127
-    enum hash_10d50fe10481423c {
-        hash_1773b576c62a506, // 0x0,
+    enum mpitems {
+        bare_hands_bounty, // 0x0,
         eq_tripwire, // 0x1,
         shock_rifle, // 0x2,
         ability_smart_cover, // 0x3,
@@ -6015,7 +6015,7 @@ version 25 {
         hash_7932008294f0d876, // 0x75,
         smg_handling_t8, // 0x76,
         shotgun_fullauto_t8, // 0x77,
-        hash_7ab3f9a730359659, // 0x78,
+        spawn_beacon_held, // 0x78,
         tr_flechette_t8, // 0x79,
         melee_secretsanta_t8, // 0x7a,
         gadget_icepick, // 0x7b,
@@ -6101,7 +6101,7 @@ version 25 {
     };
 
     // idx 4 members 46
-    enum hash_1e2de876fb880be2 {
+    enum mpattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -6151,7 +6151,7 @@ version 25 {
     };
 
     // idx 5 members 42
-    enum hash_6cba734728a9b70 {
+    enum mpspecialties {
         bonuscard_overkill, // 0x0,
         talent_gungho, // 0x1,
         talent_engineer, // 0x2,
@@ -6197,7 +6197,7 @@ version 25 {
     };
 
     // idx 6 members 14
-    enum hash_d17b4e10fa9c28c {
+    enum mpcharacters {
         prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
@@ -6253,9 +6253,9 @@ version 24 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 8 size 0x6d8
@@ -6423,7 +6423,7 @@ version 24 {
     // idx 14 members 1 size 0x10
     struct hash_1c86958671ff27fd {
         // offset 0x0, size 0x10
-        uint:16 hash_50ab8b7df567cd2a;
+        uint:16 purchasedbits;
     };
 
     // idx 15 members 4 size 0xc8
@@ -6448,8 +6448,8 @@ version 24 {
     };
 
     // idx 1 members 126
-    enum hash_10d50fe10481423c {
-        hash_1773b576c62a506, // 0x0,
+    enum mpitems {
+        bare_hands_bounty, // 0x0,
         eq_tripwire, // 0x1,
         shock_rifle, // 0x2,
         ability_smart_cover, // 0x3,
@@ -6568,7 +6568,7 @@ version 24 {
         hash_7932008294f0d876, // 0x74,
         smg_handling_t8, // 0x75,
         shotgun_fullauto_t8, // 0x76,
-        hash_7ab3f9a730359659, // 0x77,
+        spawn_beacon_held, // 0x77,
         tr_flechette_t8, // 0x78,
         melee_secretsanta_t8, // 0x79,
         gadget_icepick, // 0x7a,
@@ -6654,7 +6654,7 @@ version 24 {
     };
 
     // idx 4 members 46
-    enum hash_1e2de876fb880be2 {
+    enum mpattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -6704,7 +6704,7 @@ version 24 {
     };
 
     // idx 5 members 42
-    enum hash_6cba734728a9b70 {
+    enum mpspecialties {
         bonuscard_overkill, // 0x0,
         talent_gungho, // 0x1,
         talent_engineer, // 0x2,
@@ -6750,7 +6750,7 @@ version 24 {
     };
 
     // idx 6 members 14
-    enum hash_d17b4e10fa9c28c {
+    enum mpcharacters {
         prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
@@ -6806,9 +6806,9 @@ version 23 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 8 size 0x6d8
@@ -6976,7 +6976,7 @@ version 23 {
     // idx 14 members 1 size 0x10
     struct hash_1c86958671ff27fd {
         // offset 0x0, size 0x10
-        uint:16 hash_50ab8b7df567cd2a;
+        uint:16 purchasedbits;
     };
 
     // idx 15 members 4 size 0xc8
@@ -7001,8 +7001,8 @@ version 23 {
     };
 
     // idx 1 members 121
-    enum hash_10d50fe10481423c {
-        hash_1773b576c62a506, // 0x0,
+    enum mpitems {
+        bare_hands_bounty, // 0x0,
         eq_tripwire, // 0x1,
         shock_rifle, // 0x2,
         ability_smart_cover, // 0x3,
@@ -7117,7 +7117,7 @@ version 23 {
         hash_7932008294f0d876, // 0x70,
         smg_handling_t8, // 0x71,
         shotgun_fullauto_t8, // 0x72,
-        hash_7ab3f9a730359659, // 0x73,
+        spawn_beacon_held, // 0x73,
         tr_flechette_t8, // 0x74,
         melee_secretsanta_t8, // 0x75,
         gadget_icepick, // 0x76,
@@ -7197,7 +7197,7 @@ version 23 {
     };
 
     // idx 4 members 46
-    enum hash_1e2de876fb880be2 {
+    enum mpattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -7247,7 +7247,7 @@ version 23 {
     };
 
     // idx 5 members 42
-    enum hash_6cba734728a9b70 {
+    enum mpspecialties {
         bonuscard_overkill, // 0x0,
         talent_gungho, // 0x1,
         talent_engineer, // 0x2,
@@ -7293,7 +7293,7 @@ version 23 {
     };
 
     // idx 6 members 14
-    enum hash_d17b4e10fa9c28c {
+    enum mpcharacters {
         prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
@@ -7349,9 +7349,9 @@ version 22 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 8 size 0x6d8
@@ -7519,7 +7519,7 @@ version 22 {
     // idx 14 members 1 size 0x10
     struct hash_1c86958671ff27fd {
         // offset 0x0, size 0x10
-        uint:16 hash_50ab8b7df567cd2a;
+        uint:16 purchasedbits;
     };
 
     // idx 15 members 4 size 0xc8
@@ -7544,8 +7544,8 @@ version 22 {
     };
 
     // idx 1 members 120
-    enum hash_10d50fe10481423c {
-        hash_1773b576c62a506, // 0x0,
+    enum mpitems {
+        bare_hands_bounty, // 0x0,
         eq_tripwire, // 0x1,
         shock_rifle, // 0x2,
         ability_smart_cover, // 0x3,
@@ -7659,7 +7659,7 @@ version 22 {
         hash_7932008294f0d876, // 0x6f,
         smg_handling_t8, // 0x70,
         shotgun_fullauto_t8, // 0x71,
-        hash_7ab3f9a730359659, // 0x72,
+        spawn_beacon_held, // 0x72,
         tr_flechette_t8, // 0x73,
         melee_secretsanta_t8, // 0x74,
         gadget_icepick, // 0x75,
@@ -7739,7 +7739,7 @@ version 22 {
     };
 
     // idx 4 members 46
-    enum hash_1e2de876fb880be2 {
+    enum mpattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -7789,7 +7789,7 @@ version 22 {
     };
 
     // idx 5 members 42
-    enum hash_6cba734728a9b70 {
+    enum mpspecialties {
         bonuscard_overkill, // 0x0,
         talent_gungho, // 0x1,
         talent_engineer, // 0x2,
@@ -7835,7 +7835,7 @@ version 22 {
     };
 
     // idx 6 members 14
-    enum hash_d17b4e10fa9c28c {
+    enum mpcharacters {
         prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
@@ -7891,9 +7891,9 @@ version 21 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 8 size 0x6d8
@@ -8061,13 +8061,13 @@ version 21 {
     // idx 14 members 1 size 0x10
     struct hash_1c86958671ff27fd {
         // offset 0x0, size 0x10
-        uint:16 hash_50ab8b7df567cd2a;
+        uint:16 purchasedbits;
     };
 
     // idx 15 members 5 size 0x108
     struct lootcontracts {
         // offset 0x0, size 0x40
-        xhash hash_6bcde715574b1e8;
+        xhash achievementhash;
         // offset 0x40, size 0x8
         uint:3 contractgamemode;
         // offset 0x48, size 0x40
@@ -8088,8 +8088,8 @@ version 21 {
     };
 
     // idx 1 members 120
-    enum hash_10d50fe10481423c {
-        hash_1773b576c62a506, // 0x0,
+    enum mpitems {
+        bare_hands_bounty, // 0x0,
         eq_tripwire, // 0x1,
         shock_rifle, // 0x2,
         ability_smart_cover, // 0x3,
@@ -8203,7 +8203,7 @@ version 21 {
         hash_7932008294f0d876, // 0x6f,
         smg_handling_t8, // 0x70,
         shotgun_fullauto_t8, // 0x71,
-        hash_7ab3f9a730359659, // 0x72,
+        spawn_beacon_held, // 0x72,
         tr_flechette_t8, // 0x73,
         melee_secretsanta_t8, // 0x74,
         gadget_icepick, // 0x75,
@@ -8283,7 +8283,7 @@ version 21 {
     };
 
     // idx 4 members 46
-    enum hash_1e2de876fb880be2 {
+    enum mpattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -8333,7 +8333,7 @@ version 21 {
     };
 
     // idx 5 members 42
-    enum hash_6cba734728a9b70 {
+    enum mpspecialties {
         bonuscard_overkill, // 0x0,
         talent_gungho, // 0x1,
         talent_engineer, // 0x2,
@@ -8379,7 +8379,7 @@ version 21 {
     };
 
     // idx 6 members 14
-    enum hash_d17b4e10fa9c28c {
+    enum mpcharacters {
         prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
@@ -8435,9 +8435,9 @@ version 20 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 8 size 0x6d8
@@ -8605,13 +8605,13 @@ version 20 {
     // idx 14 members 1 size 0x10
     struct hash_1c86958671ff27fd {
         // offset 0x0, size 0x10
-        uint:16 hash_50ab8b7df567cd2a;
+        uint:16 purchasedbits;
     };
 
     // idx 15 members 5 size 0x108
     struct lootcontracts {
         // offset 0x0, size 0x40
-        xhash hash_6bcde715574b1e8;
+        xhash achievementhash;
         // offset 0x40, size 0x8
         uint:3 contractgamemode;
         // offset 0x48, size 0x40
@@ -8632,8 +8632,8 @@ version 20 {
     };
 
     // idx 1 members 119
-    enum hash_10d50fe10481423c {
-        hash_1773b576c62a506, // 0x0,
+    enum mpitems {
+        bare_hands_bounty, // 0x0,
         eq_tripwire, // 0x1,
         shock_rifle, // 0x2,
         ability_smart_cover, // 0x3,
@@ -8746,7 +8746,7 @@ version 20 {
         hash_7932008294f0d876, // 0x6e,
         smg_handling_t8, // 0x6f,
         shotgun_fullauto_t8, // 0x70,
-        hash_7ab3f9a730359659, // 0x71,
+        spawn_beacon_held, // 0x71,
         tr_flechette_t8, // 0x72,
         melee_secretsanta_t8, // 0x73,
         gadget_icepick, // 0x74,
@@ -8825,7 +8825,7 @@ version 20 {
     };
 
     // idx 4 members 46
-    enum hash_1e2de876fb880be2 {
+    enum mpattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -8875,7 +8875,7 @@ version 20 {
     };
 
     // idx 5 members 42
-    enum hash_6cba734728a9b70 {
+    enum mpspecialties {
         bonuscard_overkill, // 0x0,
         talent_gungho, // 0x1,
         talent_engineer, // 0x2,
@@ -8921,7 +8921,7 @@ version 20 {
     };
 
     // idx 6 members 14
-    enum hash_d17b4e10fa9c28c {
+    enum mpcharacters {
         prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
@@ -8977,9 +8977,9 @@ version 19 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 8 size 0x6d8
@@ -9147,13 +9147,13 @@ version 19 {
     // idx 14 members 1 size 0x10
     struct hash_1c86958671ff27fd {
         // offset 0x0, size 0x10
-        uint:16 hash_50ab8b7df567cd2a;
+        uint:16 purchasedbits;
     };
 
     // idx 15 members 5 size 0x108
     struct lootcontracts {
         // offset 0x0, size 0x40
-        xhash hash_6bcde715574b1e8;
+        xhash achievementhash;
         // offset 0x40, size 0x8
         uint:3 contractgamemode;
         // offset 0x48, size 0x40
@@ -9174,8 +9174,8 @@ version 19 {
     };
 
     // idx 1 members 118
-    enum hash_10d50fe10481423c {
-        hash_1773b576c62a506, // 0x0,
+    enum mpitems {
+        bare_hands_bounty, // 0x0,
         eq_tripwire, // 0x1,
         shock_rifle, // 0x2,
         ability_smart_cover, // 0x3,
@@ -9287,7 +9287,7 @@ version 19 {
         hash_7932008294f0d876, // 0x6d,
         smg_handling_t8, // 0x6e,
         shotgun_fullauto_t8, // 0x6f,
-        hash_7ab3f9a730359659, // 0x70,
+        spawn_beacon_held, // 0x70,
         tr_flechette_t8, // 0x71,
         melee_secretsanta_t8, // 0x72,
         gadget_icepick, // 0x73,
@@ -9365,7 +9365,7 @@ version 19 {
     };
 
     // idx 4 members 46
-    enum hash_1e2de876fb880be2 {
+    enum mpattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -9415,7 +9415,7 @@ version 19 {
     };
 
     // idx 5 members 42
-    enum hash_6cba734728a9b70 {
+    enum mpspecialties {
         bonuscard_overkill, // 0x0,
         talent_gungho, // 0x1,
         talent_engineer, // 0x2,
@@ -9461,7 +9461,7 @@ version 19 {
     };
 
     // idx 6 members 14
-    enum hash_d17b4e10fa9c28c {
+    enum mpcharacters {
         prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
@@ -9517,9 +9517,9 @@ version 18 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 8 size 0x6d8
@@ -9687,13 +9687,13 @@ version 18 {
     // idx 14 members 1 size 0x10
     struct hash_1c86958671ff27fd {
         // offset 0x0, size 0x10
-        uint:16 hash_50ab8b7df567cd2a;
+        uint:16 purchasedbits;
     };
 
     // idx 15 members 5 size 0x108
     struct lootcontracts {
         // offset 0x0, size 0x40
-        xhash hash_6bcde715574b1e8;
+        xhash achievementhash;
         // offset 0x40, size 0x8
         uint:3 contractgamemode;
         // offset 0x48, size 0x40
@@ -9714,8 +9714,8 @@ version 18 {
     };
 
     // idx 1 members 118
-    enum hash_10d50fe10481423c {
-        hash_1773b576c62a506, // 0x0,
+    enum mpitems {
+        bare_hands_bounty, // 0x0,
         eq_tripwire, // 0x1,
         shock_rifle, // 0x2,
         ability_smart_cover, // 0x3,
@@ -9827,7 +9827,7 @@ version 18 {
         hash_7932008294f0d876, // 0x6d,
         smg_handling_t8, // 0x6e,
         shotgun_fullauto_t8, // 0x6f,
-        hash_7ab3f9a730359659, // 0x70,
+        spawn_beacon_held, // 0x70,
         tr_flechette_t8, // 0x71,
         melee_secretsanta_t8, // 0x72,
         gadget_icepick, // 0x73,
@@ -9905,7 +9905,7 @@ version 18 {
     };
 
     // idx 4 members 46
-    enum hash_1e2de876fb880be2 {
+    enum mpattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -9955,7 +9955,7 @@ version 18 {
     };
 
     // idx 5 members 42
-    enum hash_6cba734728a9b70 {
+    enum mpspecialties {
         bonuscard_overkill, // 0x0,
         talent_gungho, // 0x1,
         talent_engineer, // 0x2,
@@ -10001,7 +10001,7 @@ version 18 {
     };
 
     // idx 6 members 14
-    enum hash_d17b4e10fa9c28c {
+    enum mpcharacters {
         prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
@@ -10053,9 +10053,9 @@ version 17 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 8 size 0x6d8
@@ -10223,13 +10223,13 @@ version 17 {
     // idx 14 members 1 size 0x10
     struct hash_1c86958671ff27fd {
         // offset 0x0, size 0x10
-        uint:16 hash_50ab8b7df567cd2a;
+        uint:16 purchasedbits;
     };
 
     // idx 15 members 5 size 0x108
     struct lootcontracts {
         // offset 0x0, size 0x40
-        xhash hash_6bcde715574b1e8;
+        xhash achievementhash;
         // offset 0x40, size 0x8
         uint:3 contractgamemode;
         // offset 0x48, size 0x40
@@ -10250,8 +10250,8 @@ version 17 {
     };
 
     // idx 1 members 118
-    enum hash_10d50fe10481423c {
-        hash_1773b576c62a506, // 0x0,
+    enum mpitems {
+        bare_hands_bounty, // 0x0,
         eq_tripwire, // 0x1,
         shock_rifle, // 0x2,
         ability_smart_cover, // 0x3,
@@ -10363,7 +10363,7 @@ version 17 {
         hash_7932008294f0d876, // 0x6d,
         smg_handling_t8, // 0x6e,
         shotgun_fullauto_t8, // 0x6f,
-        hash_7ab3f9a730359659, // 0x70,
+        spawn_beacon_held, // 0x70,
         tr_flechette_t8, // 0x71,
         melee_secretsanta_t8, // 0x72,
         gadget_icepick, // 0x73,
@@ -10441,7 +10441,7 @@ version 17 {
     };
 
     // idx 4 members 45
-    enum hash_1e2de876fb880be2 {
+    enum mpattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -10490,7 +10490,7 @@ version 17 {
     };
 
     // idx 5 members 42
-    enum hash_6cba734728a9b70 {
+    enum mpspecialties {
         bonuscard_overkill, // 0x0,
         talent_gungho, // 0x1,
         talent_engineer, // 0x2,
@@ -10536,7 +10536,7 @@ version 17 {
     };
 
     // idx 6 members 14
-    enum hash_d17b4e10fa9c28c {
+    enum mpcharacters {
         prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
@@ -10588,9 +10588,9 @@ version 16 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 8 size 0x6d8
@@ -10758,7 +10758,7 @@ version 16 {
     // idx 14 members 1 size 0x10
     struct hash_1c86958671ff27fd {
         // offset 0x0, size 0x10
-        uint:16 hash_50ab8b7df567cd2a;
+        uint:16 purchasedbits;
     };
 
     // idx 15 members 4 size 0xc8
@@ -10783,8 +10783,8 @@ version 16 {
     };
 
     // idx 1 members 118
-    enum hash_10d50fe10481423c {
-        hash_1773b576c62a506, // 0x0,
+    enum mpitems {
+        bare_hands_bounty, // 0x0,
         eq_tripwire, // 0x1,
         shock_rifle, // 0x2,
         ability_smart_cover, // 0x3,
@@ -10896,7 +10896,7 @@ version 16 {
         hash_7932008294f0d876, // 0x6d,
         smg_handling_t8, // 0x6e,
         shotgun_fullauto_t8, // 0x6f,
-        hash_7ab3f9a730359659, // 0x70,
+        spawn_beacon_held, // 0x70,
         tr_flechette_t8, // 0x71,
         melee_secretsanta_t8, // 0x72,
         gadget_icepick, // 0x73,
@@ -10974,7 +10974,7 @@ version 16 {
     };
 
     // idx 4 members 45
-    enum hash_1e2de876fb880be2 {
+    enum mpattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -11023,7 +11023,7 @@ version 16 {
     };
 
     // idx 5 members 42
-    enum hash_6cba734728a9b70 {
+    enum mpspecialties {
         bonuscard_overkill, // 0x0,
         talent_gungho, // 0x1,
         talent_engineer, // 0x2,
@@ -11069,7 +11069,7 @@ version 16 {
     };
 
     // idx 6 members 14
-    enum hash_d17b4e10fa9c28c {
+    enum mpcharacters {
         prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
@@ -11121,9 +11121,9 @@ version 15 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 8 size 0x6d8
@@ -11291,7 +11291,7 @@ version 15 {
     // idx 14 members 1 size 0x10
     struct hash_1c86958671ff27fd {
         // offset 0x0, size 0x10
-        uint:16 hash_50ab8b7df567cd2a;
+        uint:16 purchasedbits;
     };
 
     // idx 0 members 5
@@ -11304,8 +11304,8 @@ version 15 {
     };
 
     // idx 1 members 118
-    enum hash_10d50fe10481423c {
-        hash_1773b576c62a506, // 0x0,
+    enum mpitems {
+        bare_hands_bounty, // 0x0,
         eq_tripwire, // 0x1,
         shock_rifle, // 0x2,
         ability_smart_cover, // 0x3,
@@ -11417,7 +11417,7 @@ version 15 {
         hash_7932008294f0d876, // 0x6d,
         smg_handling_t8, // 0x6e,
         shotgun_fullauto_t8, // 0x6f,
-        hash_7ab3f9a730359659, // 0x70,
+        spawn_beacon_held, // 0x70,
         tr_flechette_t8, // 0x71,
         melee_secretsanta_t8, // 0x72,
         gadget_icepick, // 0x73,
@@ -11495,7 +11495,7 @@ version 15 {
     };
 
     // idx 4 members 45
-    enum hash_1e2de876fb880be2 {
+    enum mpattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -11544,7 +11544,7 @@ version 15 {
     };
 
     // idx 5 members 42
-    enum hash_6cba734728a9b70 {
+    enum mpspecialties {
         bonuscard_overkill, // 0x0,
         talent_gungho, // 0x1,
         talent_engineer, // 0x2,
@@ -11590,7 +11590,7 @@ version 15 {
     };
 
     // idx 6 members 14
-    enum hash_d17b4e10fa9c28c {
+    enum mpcharacters {
         prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
@@ -11640,9 +11640,9 @@ version 14 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 8 size 0x6d8
@@ -11810,7 +11810,7 @@ version 14 {
     // idx 14 members 1 size 0x10
     struct hash_1c86958671ff27fd {
         // offset 0x0, size 0x10
-        uint:16 hash_50ab8b7df567cd2a;
+        uint:16 purchasedbits;
     };
 
     // idx 0 members 5
@@ -11823,8 +11823,8 @@ version 14 {
     };
 
     // idx 1 members 118
-    enum hash_10d50fe10481423c {
-        hash_1773b576c62a506, // 0x0,
+    enum mpitems {
+        bare_hands_bounty, // 0x0,
         eq_tripwire, // 0x1,
         shock_rifle, // 0x2,
         ability_smart_cover, // 0x3,
@@ -11936,7 +11936,7 @@ version 14 {
         hash_7932008294f0d876, // 0x6d,
         smg_handling_t8, // 0x6e,
         shotgun_fullauto_t8, // 0x6f,
-        hash_7ab3f9a730359659, // 0x70,
+        spawn_beacon_held, // 0x70,
         tr_flechette_t8, // 0x71,
         melee_secretsanta_t8, // 0x72,
         gadget_icepick, // 0x73,
@@ -12013,7 +12013,7 @@ version 14 {
     };
 
     // idx 4 members 45
-    enum hash_1e2de876fb880be2 {
+    enum mpattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -12062,7 +12062,7 @@ version 14 {
     };
 
     // idx 5 members 42
-    enum hash_6cba734728a9b70 {
+    enum mpspecialties {
         bonuscard_overkill, // 0x0,
         talent_gungho, // 0x1,
         talent_engineer, // 0x2,
@@ -12108,7 +12108,7 @@ version 14 {
     };
 
     // idx 6 members 14
-    enum hash_d17b4e10fa9c28c {
+    enum mpcharacters {
         prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
@@ -12158,9 +12158,9 @@ version 13 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 8 size 0x6d8
@@ -12328,7 +12328,7 @@ version 13 {
     // idx 14 members 1 size 0x10
     struct hash_1c86958671ff27fd {
         // offset 0x0, size 0x10
-        uint:16 hash_50ab8b7df567cd2a;
+        uint:16 purchasedbits;
     };
 
     // idx 0 members 5
@@ -12341,8 +12341,8 @@ version 13 {
     };
 
     // idx 1 members 117
-    enum hash_10d50fe10481423c {
-        hash_1773b576c62a506, // 0x0,
+    enum mpitems {
+        bare_hands_bounty, // 0x0,
         eq_tripwire, // 0x1,
         shock_rifle, // 0x2,
         ability_smart_cover, // 0x3,
@@ -12453,7 +12453,7 @@ version 13 {
         hash_7932008294f0d876, // 0x6c,
         smg_handling_t8, // 0x6d,
         shotgun_fullauto_t8, // 0x6e,
-        hash_7ab3f9a730359659, // 0x6f,
+        spawn_beacon_held, // 0x6f,
         tr_flechette_t8, // 0x70,
         melee_secretsanta_t8, // 0x71,
         gadget_icepick, // 0x72,
@@ -12530,7 +12530,7 @@ version 13 {
     };
 
     // idx 4 members 45
-    enum hash_1e2de876fb880be2 {
+    enum mpattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -12579,7 +12579,7 @@ version 13 {
     };
 
     // idx 5 members 42
-    enum hash_6cba734728a9b70 {
+    enum mpspecialties {
         bonuscard_overkill, // 0x0,
         talent_gungho, // 0x1,
         talent_engineer, // 0x2,
@@ -12625,7 +12625,7 @@ version 13 {
     };
 
     // idx 6 members 14
-    enum hash_d17b4e10fa9c28c {
+    enum mpcharacters {
         prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
@@ -12675,9 +12675,9 @@ version 12 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 8 size 0x6d8
@@ -12845,7 +12845,7 @@ version 12 {
     // idx 14 members 1 size 0x10
     struct hash_1c86958671ff27fd {
         // offset 0x0, size 0x10
-        uint:16 hash_50ab8b7df567cd2a;
+        uint:16 purchasedbits;
     };
 
     // idx 0 members 5
@@ -12858,8 +12858,8 @@ version 12 {
     };
 
     // idx 1 members 116
-    enum hash_10d50fe10481423c {
-        hash_1773b576c62a506, // 0x0,
+    enum mpitems {
+        bare_hands_bounty, // 0x0,
         eq_tripwire, // 0x1,
         shock_rifle, // 0x2,
         ability_smart_cover, // 0x3,
@@ -12969,7 +12969,7 @@ version 12 {
         hash_7932008294f0d876, // 0x6b,
         smg_handling_t8, // 0x6c,
         shotgun_fullauto_t8, // 0x6d,
-        hash_7ab3f9a730359659, // 0x6e,
+        spawn_beacon_held, // 0x6e,
         tr_flechette_t8, // 0x6f,
         melee_secretsanta_t8, // 0x70,
         gadget_icepick, // 0x71,
@@ -13045,7 +13045,7 @@ version 12 {
     };
 
     // idx 4 members 45
-    enum hash_1e2de876fb880be2 {
+    enum mpattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -13094,7 +13094,7 @@ version 12 {
     };
 
     // idx 5 members 42
-    enum hash_6cba734728a9b70 {
+    enum mpspecialties {
         bonuscard_overkill, // 0x0,
         talent_gungho, // 0x1,
         talent_engineer, // 0x2,
@@ -13140,7 +13140,7 @@ version 12 {
     };
 
     // idx 6 members 14
-    enum hash_d17b4e10fa9c28c {
+    enum mpcharacters {
         prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
@@ -13190,9 +13190,9 @@ version 11 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 8 size 0x6d8
@@ -13360,7 +13360,7 @@ version 11 {
     // idx 14 members 1 size 0x10
     struct hash_1c86958671ff27fd {
         // offset 0x0, size 0x10
-        uint:16 hash_50ab8b7df567cd2a;
+        uint:16 purchasedbits;
     };
 
     // idx 0 members 5
@@ -13373,8 +13373,8 @@ version 11 {
     };
 
     // idx 1 members 116
-    enum hash_10d50fe10481423c {
-        hash_1773b576c62a506, // 0x0,
+    enum mpitems {
+        bare_hands_bounty, // 0x0,
         eq_tripwire, // 0x1,
         shock_rifle, // 0x2,
         ability_smart_cover, // 0x3,
@@ -13484,7 +13484,7 @@ version 11 {
         hash_7932008294f0d876, // 0x6b,
         smg_handling_t8, // 0x6c,
         shotgun_fullauto_t8, // 0x6d,
-        hash_7ab3f9a730359659, // 0x6e,
+        spawn_beacon_held, // 0x6e,
         tr_flechette_t8, // 0x6f,
         melee_secretsanta_t8, // 0x70,
         gadget_icepick, // 0x71,
@@ -13560,7 +13560,7 @@ version 11 {
     };
 
     // idx 4 members 45
-    enum hash_1e2de876fb880be2 {
+    enum mpattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -13609,7 +13609,7 @@ version 11 {
     };
 
     // idx 5 members 42
-    enum hash_6cba734728a9b70 {
+    enum mpspecialties {
         bonuscard_overkill, // 0x0,
         talent_gungho, // 0x1,
         talent_engineer, // 0x2,
@@ -13655,7 +13655,7 @@ version 11 {
     };
 
     // idx 6 members 16
-    enum hash_d17b4e10fa9c28c {
+    enum mpcharacters {
         prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_zombie_male, // 0x2,
@@ -13707,9 +13707,9 @@ version 10 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 8 size 0x6d8
@@ -13877,7 +13877,7 @@ version 10 {
     // idx 14 members 1 size 0x10
     struct hash_1c86958671ff27fd {
         // offset 0x0, size 0x10
-        uint:16 hash_50ab8b7df567cd2a;
+        uint:16 purchasedbits;
     };
 
     // idx 0 members 5
@@ -13890,8 +13890,8 @@ version 10 {
     };
 
     // idx 1 members 116
-    enum hash_10d50fe10481423c {
-        hash_1773b576c62a506, // 0x0,
+    enum mpitems {
+        bare_hands_bounty, // 0x0,
         eq_tripwire, // 0x1,
         shock_rifle, // 0x2,
         ability_smart_cover, // 0x3,
@@ -14001,7 +14001,7 @@ version 10 {
         hash_7932008294f0d876, // 0x6b,
         smg_handling_t8, // 0x6c,
         shotgun_fullauto_t8, // 0x6d,
-        hash_7ab3f9a730359659, // 0x6e,
+        spawn_beacon_held, // 0x6e,
         tr_flechette_t8, // 0x6f,
         melee_secretsanta_t8, // 0x70,
         gadget_icepick, // 0x71,
@@ -14077,7 +14077,7 @@ version 10 {
     };
 
     // idx 4 members 45
-    enum hash_1e2de876fb880be2 {
+    enum mpattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -14126,7 +14126,7 @@ version 10 {
     };
 
     // idx 5 members 42
-    enum hash_6cba734728a9b70 {
+    enum mpspecialties {
         bonuscard_overkill, // 0x0,
         talent_gungho, // 0x1,
         talent_engineer, // 0x2,
@@ -14172,7 +14172,7 @@ version 10 {
     };
 
     // idx 6 members 14
-    enum hash_d17b4e10fa9c28c {
+    enum mpcharacters {
         prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
@@ -14222,9 +14222,9 @@ version 9 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 8 size 0x6d8
@@ -14392,7 +14392,7 @@ version 9 {
     // idx 14 members 1 size 0x10
     struct hash_1c86958671ff27fd {
         // offset 0x0, size 0x10
-        uint:16 hash_50ab8b7df567cd2a;
+        uint:16 purchasedbits;
     };
 
     // idx 0 members 5
@@ -14405,8 +14405,8 @@ version 9 {
     };
 
     // idx 1 members 116
-    enum hash_10d50fe10481423c {
-        hash_1773b576c62a506, // 0x0,
+    enum mpitems {
+        bare_hands_bounty, // 0x0,
         eq_tripwire, // 0x1,
         shock_rifle, // 0x2,
         ability_smart_cover, // 0x3,
@@ -14516,7 +14516,7 @@ version 9 {
         hash_7932008294f0d876, // 0x6b,
         smg_handling_t8, // 0x6c,
         shotgun_fullauto_t8, // 0x6d,
-        hash_7ab3f9a730359659, // 0x6e,
+        spawn_beacon_held, // 0x6e,
         tr_flechette_t8, // 0x6f,
         melee_secretsanta_t8, // 0x70,
         gadget_icepick, // 0x71,
@@ -14592,7 +14592,7 @@ version 9 {
     };
 
     // idx 4 members 44
-    enum hash_1e2de876fb880be2 {
+    enum mpattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -14640,7 +14640,7 @@ version 9 {
     };
 
     // idx 5 members 42
-    enum hash_6cba734728a9b70 {
+    enum mpspecialties {
         bonuscard_overkill, // 0x0,
         talent_gungho, // 0x1,
         talent_engineer, // 0x2,
@@ -14686,7 +14686,7 @@ version 9 {
     };
 
     // idx 6 members 14
-    enum hash_d17b4e10fa9c28c {
+    enum mpcharacters {
         prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
@@ -14736,9 +14736,9 @@ version 8 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 8 size 0x6d8
@@ -14906,7 +14906,7 @@ version 8 {
     // idx 14 members 1 size 0x10
     struct hash_1c86958671ff27fd {
         // offset 0x0, size 0x10
-        uint:16 hash_50ab8b7df567cd2a;
+        uint:16 purchasedbits;
     };
 
     // idx 0 members 5
@@ -14919,8 +14919,8 @@ version 8 {
     };
 
     // idx 1 members 115
-    enum hash_10d50fe10481423c {
-        hash_1773b576c62a506, // 0x0,
+    enum mpitems {
+        bare_hands_bounty, // 0x0,
         eq_tripwire, // 0x1,
         shock_rifle, // 0x2,
         ability_smart_cover, // 0x3,
@@ -15029,7 +15029,7 @@ version 8 {
         hash_7932008294f0d876, // 0x6a,
         smg_handling_t8, // 0x6b,
         shotgun_fullauto_t8, // 0x6c,
-        hash_7ab3f9a730359659, // 0x6d,
+        spawn_beacon_held, // 0x6d,
         tr_flechette_t8, // 0x6e,
         melee_secretsanta_t8, // 0x6f,
         gadget_icepick, // 0x70,
@@ -15105,7 +15105,7 @@ version 8 {
     };
 
     // idx 4 members 44
-    enum hash_1e2de876fb880be2 {
+    enum mpattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -15153,7 +15153,7 @@ version 8 {
     };
 
     // idx 5 members 42
-    enum hash_6cba734728a9b70 {
+    enum mpspecialties {
         bonuscard_overkill, // 0x0,
         talent_gungho, // 0x1,
         talent_engineer, // 0x2,
@@ -15199,7 +15199,7 @@ version 8 {
     };
 
     // idx 6 members 14
-    enum hash_d17b4e10fa9c28c {
+    enum mpcharacters {
         prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
@@ -15249,9 +15249,9 @@ version 7 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 8 size 0x6d8
@@ -15419,7 +15419,7 @@ version 7 {
     // idx 14 members 1 size 0x10
     struct hash_1c86958671ff27fd {
         // offset 0x0, size 0x10
-        uint:16 hash_50ab8b7df567cd2a;
+        uint:16 purchasedbits;
     };
 
     // idx 0 members 5
@@ -15432,8 +15432,8 @@ version 7 {
     };
 
     // idx 1 members 111
-    enum hash_10d50fe10481423c {
-        hash_1773b576c62a506, // 0x0,
+    enum mpitems {
+        bare_hands_bounty, // 0x0,
         eq_tripwire, // 0x1,
         shock_rifle, // 0x2,
         ability_smart_cover, // 0x3,
@@ -15538,7 +15538,7 @@ version 7 {
         hash_7932008294f0d876, // 0x66,
         smg_handling_t8, // 0x67,
         shotgun_fullauto_t8, // 0x68,
-        hash_7ab3f9a730359659, // 0x69,
+        spawn_beacon_held, // 0x69,
         tr_flechette_t8, // 0x6a,
         melee_secretsanta_t8, // 0x6b,
         gadget_icepick, // 0x6c,
@@ -15612,7 +15612,7 @@ version 7 {
     };
 
     // idx 4 members 44
-    enum hash_1e2de876fb880be2 {
+    enum mpattachments {
         speedreloader, // 0x0,
         quickdraw, // 0x1,
         acog, // 0x2,
@@ -15660,7 +15660,7 @@ version 7 {
     };
 
     // idx 5 members 42
-    enum hash_6cba734728a9b70 {
+    enum mpspecialties {
         bonuscard_overkill, // 0x0,
         talent_gungho, // 0x1,
         talent_engineer, // 0x2,
@@ -15706,7 +15706,7 @@ version 7 {
     };
 
     // idx 6 members 14
-    enum hash_d17b4e10fa9c28c {
+    enum mpcharacters {
         prt_mp_reaper, // 0x0,
         prt_mp_buffassault, // 0x1,
         prt_mp_mercenary, // 0x2,
@@ -15756,9 +15756,9 @@ version 6 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 8 size 0x6d8
@@ -15821,9 +15821,9 @@ version 5 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 8 size 0x6d8

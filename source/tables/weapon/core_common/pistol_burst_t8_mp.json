@@ -3,7 +3,7 @@
     "baseWeapon": "#pistol_burst_t8",
     "displayname": "#weapon/pistol_burst_t8",
     "weapon70": "#pistol_burst_t8",
-    "streamkey": "#pistol_burst_t8_soundbank",
+    "soundbank": "#pistol_burst_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -72,7 +72,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_pistol_burst",
     "weaponIconXCam": "#ui_cam_icon_pistol_burst",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_7d928090d9a6b68e"

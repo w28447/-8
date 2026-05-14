@@ -3,7 +3,7 @@
     "baseWeapon": "#hash_166200a2e04510f4",
     "displayname": "#zmweapon/nesting_doll_grenade",
     "weapon70": "#eq_nesting_doll_grenade",
-    "streamkey": "#hash_62aff2fb066d92d6",
+    "soundbank": "#hash_62aff2fb066d92d6",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",
@@ -36,7 +36,7 @@
     "sound660": "#uin_unavailable_charging",
     "projexplosionsound": "#hash_22cae3cc305d00a8",
     "tunables1": "#hash_1c564d537a48f896",
-    "cacWeaponXCam": "#hash_ca93d9d6b1c015ab",
+    "cacWeaponXCam": "#ui_cam_cac_equip_semtex",
     "sharedWeaponSounds": "#equipment",
     "statusEffects": [
         {
@@ -71,13 +71,13 @@
     "rumble_de8": "#grenade_rumble",
     "fx_f00": "#hash_dfdd021d80dd8fc6",
     "underwaterExplosionSurfaceFX": [
-        "#hash_fb70232b2892e045",
+        "#explosions/fx8_exp_grenade_water",
         "#hash_c15b461b7420c6d2",
         "#hash_bb3f97cf646813ac"
     ],
     "normalImpactFX": "#hash_215d157cbbf6a318",
     "bounceImpactFX": "#grenade_bounce",
     "dudImpactFX": "#grenade_dud",
-    "normalImpactSounds": "#hash_e8e0a97bbbf0b555",
+    "normalImpactSounds": "#grenade_explode_material",
     "bounceImpactSounds": "#matroyshka_bounce"
 }

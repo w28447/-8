@@ -25348,7 +25348,7 @@
             "farVerbName": "",
             "duck": "default",
             "id": "#mp_station_med_room",
-            "reverb": "#room_livingRoom",
+            "reverb": "#room_livingroom",
             "loop": "#hash_52fc54952755e8a8",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",

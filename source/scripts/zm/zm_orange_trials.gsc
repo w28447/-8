@@ -1,7 +1,5 @@
-#using scripts\zm_common\trials\zm_trial_death_from_above.gsc;
 #using script_3d07a022f5c96f45;
 #using script_4109fe9f86c53247;
-#using scripts\zm\zm_orange_trial_kills_with_flinger.gsc;
 #using script_67da0c3654a906b6;
 #using scripts\core_common\ai\zombie_utility;
 #using scripts\core_common\array_shared;
@@ -17,11 +15,13 @@
 #using scripts\zm\zm_orange_mq_hell;
 #using scripts\zm\zm_orange_snowball_piles;
 #using scripts\zm\zm_orange_special_rounds;
+#using scripts\zm\zm_orange_trial_kills_with_flinger;
 #using scripts\zm\zm_orange_trial_lighthouse_beam;
 #using scripts\zm\zm_orange_trial_shoot_from_water;
 #using scripts\zm\zm_orange_water;
 #using scripts\zm_common\bgbs\zm_bgb_anywhere_but_here;
 #using scripts\zm_common\trials\zm_trial_acquire_weapon;
+#using scripts\zm_common\trials\zm_trial_death_from_above;
 #using scripts\zm_common\trials\zm_trial_defend_area;
 #using scripts\zm_common\trials\zm_trial_disable_regen;
 #using scripts\zm_common\trials\zm_trial_flag_check;

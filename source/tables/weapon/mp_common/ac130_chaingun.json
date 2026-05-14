@@ -3,7 +3,7 @@
     "baseWeapon": "#ac130_chaingun",
     "displayname": "#killstreak/ac130",
     "weapon70": "#ac130",
-    "streamkey": "#ac130_chaingun_soundbank",
+    "soundbank": "#ac130_chaingun_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

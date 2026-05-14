@@ -4,7 +4,7 @@
     "displayname": "#zmweapon/smg_capacity_t8_upgraded",
     "xhash_60": "#hash_65d79bac84a18b13",
     "weapon70": "#smg_capacity_t8",
-    "streamkey": "#smg_capacity_t8_upgraded_soundbank",
+    "soundbank": "#smg_capacity_t8_upgraded_soundbank",
     "scrstr_8c8": [
         "tag_sights_off",
         "tag_camo_darkmatter",
@@ -75,15 +75,15 @@
     "weaponCamo": "#hash_bea7c9b468b492e1",
     "cacWeaponXCam": "#ui_cam_cac_smg_capacity",
     "cacAttachmentsXCam": "#ui_cam_cac_smg_capacity",
-    "weaponIconXCam": "#hash_a2e02d4a3a3f9300",
+    "weaponIconXCam": "#ui_cam_icon_smg_capacity",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_92dbf13570454076"
     ],
     "sharedWeaponSounds": "#smg",
-    "ballisticDesc": "#hash_fa8de762a01fac90",
+    "ballisticDesc": "#9mm_fmj",
     "tracers": [
         "#hash_a6d5c1a903fba6f4",
         "#hash_e0e8c9de7086f843"
@@ -110,7 +110,7 @@
     "inventoryIconZm": "#ui_icon_weapons_zm_smgcapacity",
     "image_e90": "#ui_icon_obit_smg_capacity",
     "fireRumble": "#smg_fire",
-    "rumble_dc8": "#hash_a5737886a28a3a7b",
+    "rumble_dc8": "#smg_adsfire",
     "rumble_e20": "#hash_b22cc8a226215312",
     "fx_bc8": "#hash_47523d06a3e412d0",
     "fx_bd0": "#hash_236bd85593e1b816",
@@ -122,8 +122,8 @@
     "fx_f90": "#hash_ccfe9475f47d6ca2",
     "fx_f98": "#hash_a24ed66be5768225",
     "fx_fa0": "#hash_f640e06584066fc4",
-    "normalImpactFX": "#hash_e1b4c700060ee40c",
-    "exitImpactFX": "#hash_83b4b1d145ec9892",
+    "normalImpactFX": "#bullet_small_enter",
+    "exitImpactFX": "#bullet_small_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

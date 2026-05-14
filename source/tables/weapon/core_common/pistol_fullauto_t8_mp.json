@@ -3,7 +3,7 @@
     "baseWeapon": "#pistol_fullauto_t8",
     "displayname": "#weapon/pistol_fullauto_t8",
     "weapon70": "#pistol_fullauto_t8",
-    "streamkey": "#pistol_fullauto_t8_soundbank",
+    "soundbank": "#pistol_fullauto_t8_soundbank",
     "scrstr_8c8": [
         "tag_camo_darkmatter",
         "tag_camo_diamond"
@@ -71,7 +71,7 @@
     "cacAttachmentsXCam": "#ui_cam_cac_pistol_fullauto",
     "weaponIconXCam": "#ui_cam_icon_pistol_fullauto",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_62ccac464b2043be"

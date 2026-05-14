@@ -2,7 +2,7 @@
     "name": "#hash_60a14d3f595a08c7",
     "baseWeapon": "#hash_1d3a973dee37ffd9",
     "displayname": "#weapon/empgrenade",
-    "streamkey": "#hash_5bb7a06de907f313",
+    "soundbank": "#hash_5bb7a06de907f313",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

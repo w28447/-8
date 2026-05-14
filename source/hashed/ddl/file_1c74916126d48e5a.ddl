@@ -17,9 +17,9 @@ version 12 {
         // offset 0x178, size 0x20
         uint title_id;
         // offset 0x198, size 0x20
-        uint hash_56a1b6d783aa7a25;
+        uint utc_timestamp_sent;
         // offset 0x1b8, size 0x40
-        uint64 hash_f2ad74d8edb8204;
+        uint64 game_session_id;
     };
 
     // idx 2 members 3 size 0xc0
@@ -35,7 +35,7 @@ version 12 {
     // idx 3 members 3 size 0x240
     struct hash_66d752d9db62566a {
         // offset 0x0, size 0x20
-        int hash_150666bd04ec9147;
+        int filedownloaderror;
         // offset 0x20, size 0x200
         string(64) filename;
         // offset 0x220, size 0x20
@@ -45,9 +45,9 @@ version 12 {
     // idx 4 members 4 size 0x48
     struct hash_33486934ef3da1df {
         // offset 0x0, size 0x20
-        uint hash_1f5a457ca2df8efc;
+        uint download_time_msec;
         // offset 0x20, size 0x20
-        uint hash_412519a915c261ba;
+        uint totalfilesize;
         // offset 0x40, size 0x1
         bool hash_58ac2791f8b98dea;
         // offset 0x41, size 0x7
@@ -65,12 +65,12 @@ version 12 {
 
     // idx 0 members 4 size 0x7380
     // offset 0x0, size 0x48
-    hash_33486934ef3da1df hash_608be004464944c0;
+    hash_33486934ef3da1df downloadattributes;
     // offset 0x48, size 0x1f8
     telemetry_header telemetry;
     // offset 0x240, size 0xc0
     client_header client;
     // offset 0x300, size 0x7080
-    hash_66d752d9db62566a hash_5792a9834bd40278[50];
+    hash_66d752d9db62566a filearray[50];
 }
 

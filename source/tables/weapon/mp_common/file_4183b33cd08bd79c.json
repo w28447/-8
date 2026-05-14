@@ -3,7 +3,7 @@
     "baseWeapon": "#hash_6c1be4b025206124",
     "displayname": "#weapon/sniper_powerbolt_t8",
     "weapon70": "#overwatch_helicopter",
-    "streamkey": "#hash_575fa6e8906fe926",
+    "soundbank": "#hash_575fa6e8906fe926",
     "scrstr_8c8": [
         "tag_scope_mms_attach",
         "tag_clan_tag",
@@ -76,7 +76,7 @@
     "weaponCamo": "#hash_ba8bb47020a85ef1",
     "cacWeaponXCam": "#ui_cam_cac_sniper_powerbolt",
     "cacAttachmentsXCam": "#ui_cam_cac_sniper_powerbolt",
-    "weaponIconXCam": "#hash_dedd5d68b4135dc0",
+    "weaponIconXCam": "#ui_cam_icon_sniper_powerbolt",
     "sharedWeaponSounds": "#rifle",
     "tracers": [
         "#hash_7e39a7a8c4c8ea0",
@@ -104,7 +104,7 @@
     "inventoryIconZm": "#ui_icon_weapon_hud_sniper_powerbolt",
     "image_e90": "#ui_icon_obit_overwatch",
     "fireRumble": "#sniper_fire",
-    "rumble_dc8": "#hash_ae361344d740b1c3",
+    "rumble_dc8": "#sniper_adsfire",
     "rumble_e20": "#hash_b22cc8a226215312",
     "laser_e40": "#hash_2ec4ef2748a71aa4",
     "fx_bc8": "#hash_917d2c2c6caa6f53",
@@ -117,5 +117,5 @@
     "normalImpactFX": "#bullet_xtreme_enter",
     "exitImpactFX": "#bullet_xtreme_exit",
     "normalImpactSounds": "#bullet_impact_sniper_nest",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

@@ -1,4 +1,3 @@
-#using scripts\mp_common\item_spawn_groups_util.gsc;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\clientfield_shared;
 #using scripts\core_common\flagsys_shared;
@@ -7,6 +6,7 @@
 #using scripts\core_common\system_shared;
 #using scripts\core_common\util_shared;
 #using scripts\core_common\values_shared;
+#using scripts\mp_common\item_spawn_groups_util;
 #using scripts\mp_common\item_world;
 #using scripts\mp_common\laststand_warzone;
 

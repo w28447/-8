@@ -1,4 +1,3 @@
-#using scripts\zm\zm_escape_nixie_clock.gsc;
 #using scripts\core_common\ai\systems\gib;
 #using scripts\core_common\ai\zombie_utility;
 #using scripts\core_common\ai_shared;
@@ -17,6 +16,7 @@
 #using scripts\core_common\values_shared;
 #using scripts\core_common\vehicle_shared;
 #using scripts\zm\weapons\zm_weap_spectral_shield;
+#using scripts\zm\zm_escape_nixie_clock;
 #using scripts\zm\zm_escape_paschal;
 #using scripts\zm\zm_escape_util;
 #using scripts\zm_common\ai\zm_ai_utility;

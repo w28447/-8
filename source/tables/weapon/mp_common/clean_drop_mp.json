@@ -1,7 +1,7 @@
 {
     "name": "#clean_drop_mp",
     "baseWeapon": "#clean_drop",
-    "streamkey": "#clean_drop_soundbank",
+    "soundbank": "#clean_drop_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

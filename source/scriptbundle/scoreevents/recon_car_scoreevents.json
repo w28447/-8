@@ -1,5 +1,5 @@
 {
-    "rcxd_kill": "#rcxd_kill",
+    "killscoreevent": "#rcxd_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",

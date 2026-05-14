@@ -2,7 +2,7 @@
     "name": "#eq_blind_grenade_mp",
     "baseWeapon": "#eq_blind_grenade",
     "displayname": "#weapon/blind_grenade",
-    "streamkey": "#eq_blind_grenade_soundbank",
+    "soundbank": "#eq_blind_grenade_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -33,7 +33,7 @@
     "sound660": "#uin_unavailable_charging",
     "projexplosionsound": "#wpn_flash_grenade_explode",
     "tunables1": "#eq_blind_grenade_tunables_mp",
-    "cacWeaponXCam": "#hash_925937342df621cd",
+    "cacWeaponXCam": "#ui_cam_cac_equip_flashbang",
     "sharedWeaponSounds": "#equipment",
     "statusEffects": [
         {
@@ -69,5 +69,5 @@
     "image_e90": "#t7_hud_icon_menu_flash_kf",
     "fx_ed8": "#explosions/fx8_exp_grenade_flshbng",
     "bounceImpactFX": "#grenade_bounce",
-    "bounceImpactSounds": "#hash_c48a0d9622bdb762"
+    "bounceImpactSounds": "#flash_bounce"
 }

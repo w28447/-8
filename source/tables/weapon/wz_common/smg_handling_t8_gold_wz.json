@@ -5,7 +5,7 @@
     "xhash_60": "#hash_5d39f1ac73c8836",
     "weapon70": "#smg_handling_t8_gold",
     "weapon890": "#smg_handling_t8_wz",
-    "streamkey": "#smg_handling_t8_gold_soundbank",
+    "soundbank": "#smg_handling_t8_gold_soundbank",
     "scrstr_8c8": [
         "tag_rail_optic",
         "tag_sights_off",
@@ -80,15 +80,15 @@
     "cacAttachmentsXCam": "#ui_cam_cac_smg_handling",
     "weaponIconXCam": "#hash_8bc51465dc452a2d",
     "attachments": [
-        "#hash_f459a0af8e8f912b",
-        "#hash_d7d4c8287286286b"
+        "#defaultattachment",
+        "#acog_smg_wz"
     ],
     "attachmentUniques": [
         "#hash_8ec4bd0900cfbced",
         "#hash_a6e8a732f3ad2fad"
     ],
     "sharedWeaponSounds": "#smg",
-    "ballisticDesc": "#hash_fa8de762a01fac90",
+    "ballisticDesc": "#9mm_fmj",
     "tracers": [
         "#hash_e5ee8c43e5f98cd8",
         "#hash_e0e8c9de7086f843"
@@ -115,7 +115,7 @@
     "inventoryIconZm": "#ui_icon_weapon_hud_smg_handling_tactical_wz",
     "image_e90": "#ui_icon_obit_smg_handling",
     "fireRumble": "#smg_fire",
-    "rumble_dc8": "#hash_a5737886a28a3a7b",
+    "rumble_dc8": "#smg_adsfire",
     "rumble_e20": "#hash_b22cc8a226215312",
     "fx_bc8": "#hash_dde65269d4d0326d",
     "fx_bd0": "#hash_dded3e69d4d62f1f",
@@ -124,8 +124,8 @@
     "fx_c88": "#hash_8a5567d0168ae02f",
     "fx_c90": "#hash_8a5567d0168ae02f",
     "fx_c98": "#hash_8a5567d0168ae02f",
-    "normalImpactFX": "#hash_e1b4c700060ee40c",
-    "exitImpactFX": "#hash_83b4b1d145ec9892",
+    "normalImpactFX": "#bullet_small_enter",
+    "exitImpactFX": "#bullet_small_exit",
     "normalImpactSounds": "#bullet_impact",
-    "exitImpactSounds": "#hash_d0191cc37bfbfeea"
+    "exitImpactSounds": "#bullet_exit"
 }

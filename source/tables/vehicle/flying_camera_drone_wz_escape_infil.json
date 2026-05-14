@@ -9,10 +9,10 @@
     "spawnInfluencers2": "#none",
     "exhaustFxTag1": "tag_origin",
     "scriptBundleSettings": "#waspsettings_mp",
-    "deathFx": "#hash_8fee81b0aad0ce10",
+    "deathFx": "#killstreaks/fx_sentinel_exp",
     "deathFxTag": "tag_origin",
     "lightFx": [
-        "#hash_9d066ebad8ad5d0c"
+        "#killstreaks/fx_sentinel_lights"
     ],
     "lightFxTag": [
         "tag_origin"
@@ -36,6 +36,6 @@
     "unk1618": "BUTTON_LSHLDR",
     "bundle": {
         "healthpoolsize": 650,
-        "hash_7812fce8": 2
+        "healthpools": 2
     }
 }

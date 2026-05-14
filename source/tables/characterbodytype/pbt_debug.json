@@ -20,7 +20,7 @@
     "characterFootstepsNPCLoud": "#defaultnpcloudfootstep",
     "characterFootstepsNPCQuiet": "#defaultnpcquietfootstep",
     "bundle": {
-        "hash_b85069c": "uie_t7_icon_error_overlays",
+        "challengeSpecialist": "uie_t7_icon_error_overlays",
         "digitalblood": 0,
         "hash_67e06199": 0,
         "hash_819846c7": 0,
@@ -32,7 +32,7 @@
         "hash_e97eda81": 0,
         "mpdialog": "scriptbundle&ruin",
         "hash_8df0287c": 0,
-        "hash_49a55967": 0,
+        "iscombattrainingenabled": 0,
         "hash_8ef1b43f": 0,
         "hash_148d6d91": 0,
         "hash_5c403974": 0,

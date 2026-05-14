@@ -1,7 +1,7 @@
 {
     "name": "#brutus_special_melee",
     "baseWeapon": "#brutus_special_melee",
-    "streamkey": "#brutus_special_melee_soundbank",
+    "soundbank": "#brutus_special_melee_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",
@@ -29,5 +29,5 @@
     "sound240": "#hash_631a067190b54300",
     "sound250": "#hash_242aa17124751841",
     "tunables1": "#brutus_special_melee_tunables",
-    "sharedWeaponSounds": "#hash_f4b924daa49aba34"
+    "sharedWeaponSounds": "#zm_zombie_melee"
 }

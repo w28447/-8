@@ -4,7 +4,7 @@
     "displayname": "#hash_4911d1f708fff427",
     "xhash_60": "#au_ray_gun",
     "weapon70": "#ray_gun_mk2z",
-    "streamkey": "#ray_gun_mk2z_soundbank",
+    "soundbank": "#ray_gun_mk2z_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "scrstr_118c": "tag_flash",
@@ -64,7 +64,7 @@
     "sound810": "#hash_21cba6ae89a3493c",
     "tunables1": "#ray_gun_mk2z_tunables_wz",
     "attachments": [
-        "#hash_f459a0af8e8f912b"
+        "#defaultattachment"
     ],
     "attachmentUniques": [
         "#hash_395beda50c680534"

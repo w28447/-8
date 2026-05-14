@@ -4,7 +4,7 @@
     "displayname": "#weapon/lmg_spray_t8",
     "altWeapon": "#lmg_spray_t8_mp",
     "weapon70": "#lmg_spray_t8",
-    "streamkey": "#dualoptic_lmg_spray_t8_soundbank",
+    "soundbank": "#dualoptic_lmg_spray_t8_soundbank",
     "scrstr_8c8": [
         "tag_clan_tag",
         "tag_camo_darkmatter",
@@ -73,7 +73,7 @@
     "sound610": "#hash_209cb2974ae55ec0",
     "sound800": "#hash_5ee962527afebfb1",
     "sound810": "#hash_5ee962527afebfb1",
-    "tunables1": "#hash_6c684029a35fe7ed",
+    "tunables1": "#dualoptic_lmg_spray_t8_tunables_mp",
     "weaponCamo": "#hash_f2254d8cc06e66f",
     "cacWeaponXCam": "#ui_cam_cac_lmg_spray",
     "cacAttachmentsXCam": "#ui_cam_cac_lmg_spray",
