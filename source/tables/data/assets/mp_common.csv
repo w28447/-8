@@ -24551,7 +24551,7 @@ weapontunables,#hatchet_bb_tunables_mp
 weapontunables,#hash_acca80144555671
 weapontunables,#trophy_system_tunables_mp
 weapontunables,#hero_lightninggun_arc_tunables_mp
-weapontunables,#hash_c27062d1f3c1ee3
+weapontunables,#tank_robot_launcher_turret_tunables_mp_pc
 weapontunables,#remote_missile_tunables_mp
 weapontunables,#hero_flamethrower_tunables_mp_pc
 weapontunables,#planemortar_tunables_mp
@@ -24565,7 +24565,7 @@ weapontunables,#inventory_remote_missile_tunables_mp
 weapontunables,#eq_slow_grenade_ph_tunables_mp
 weapontunables,#ac130_chaingun_tunables
 weapontunables,#eq_sensor_tunables_mp
-weapontunables,d#hash_14bfbd17c50d5454
+weapontunables,d#pistolscope_pistol_revolver_t8_tunables_mp_pc
 weapontunables,#eq_grapple_tunables_ct
 weapontunables,#eq_grapple_tunables_mp
 weapontunables,d#pistol_burst_t8_tunables_mp
@@ -24592,7 +24592,7 @@ weapontunables,#hero_pineapple_grenade_tunables_mp
 weapontunables,#gun_ultimate_turret_tunables_mp
 weapontunables,#hash_23a0de0cd67f2599
 weapontunables,#sig_bow_quickshot4_tunables_mp
-weapontunables,#hash_24523f8d4146bcdb
+weapontunables,#player_air_vehicle1_main_turret_3rd_person_tunables_pc
 weapontunables,#sig_buckler_dw_tunables_mp
 weapontunables,#hash_25c858e26896668d
 weapontunables,#hero_annihilator_oic_tunables_mp
@@ -24600,7 +24600,7 @@ weapontunables,#hero_lightninggun_tunables_mp
 weapontunables,#eq_hawk_tunables_mp
 weapontunables,#hash_29f123049b9d337e
 weapontunables,#explodable_barrel_tunables_mp
-weapontunables,d#hash_2e995ccc668e8fc6
+weapontunables,d#pistol_revolver_t8_tunables_mp_pc
 weapontunables,#melee_bowie_tunables_mp
 weapontunables,#player_air_vehicle1_main_turret_3rd_person_tunables
 weapontunables,#hash_30517af97ae97c06
@@ -24730,7 +24730,7 @@ weapontunables,d#knife_loadout_tunables_mp
 weapontunables,#eq_localheal_tunables_mp
 weapontunables,#eq_slow_grenade_bb_tunables_mp
 weapontunables,#cobra_20mm_tunables_mp
-weapontunables,#hash_731c2e0dff2acb6e
+weapontunables,#sig_buckler_dw_tunables_mp_pc
 weapontunables,#bare_hands_bounty_tunables_mp
 weapontunables,#inventory_drone_squadron_tunables_mp
 weapontunables,#sig_bow_quickshot5_tunables_mp

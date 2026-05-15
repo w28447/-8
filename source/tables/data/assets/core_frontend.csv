@@ -55409,7 +55409,7 @@ weapontunables,#hero_sword_pistol_lv3_tunables_zm
 weapontunables,#killstreak_remote_tunables
 weapontunables,#hero_chakram_lh_lv3_tunables_zm
 weapontunables,#hero_annihilator_tunables_mp
-weapontunables,d#hash_4ccaa418c855d55f
+weapontunables,d#acog_ar_galil_t8_tunables_mp_pc
 weapontunables,#gadget_jammer_mp_tunables
 weapontunables,#hero_minigun_t8_lv2_tunables_zm
 weapontunables,#gadget_supplypod_tunables_mp
@@ -55441,11 +55441,11 @@ weapontunables,#tr_leveraction_t8_tunables_mp
 weapontunables,#eq_slow_grenade_tunables_mp
 weapontunables,#hero_hammer_lv1_tunables_mp
 weapontunables,#ability_dog_tunables_mp
-weapontunables,d#hash_6ff3dfc05a90da7e
+weapontunables,d#ar_galil_t8_tunables_mp_pc
 weapontunables,#hero_chakram_lv1_tunables_mp
 weapontunables,d#knife_loadout_tunables_mp
 weapontunables,#eq_localheal_tunables_mp
-weapontunables,#hash_731c2e0dff2acb6e
+weapontunables,#sig_buckler_dw_tunables_mp_pc
 weapontunables,#hash_75a8ea284a49ffc7
 weapontunables,#hash_7606c89e840c37a2
 weapontunables,#sig_bow_quickshot_tunables_mp

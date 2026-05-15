@@ -29,8 +29,8 @@
     "sound240": "#hash_631a067190b54300",
     "sound250": "#hash_242aa17124751841",
     "sound830": "#platform/use_drive",
-    "tunables1": "#hash_18cc9a733a7e6997",
-    "tunables2": "#hash_18cc9a733a7e6997",
+    "tunables1": "#suv_camera_turret_tunables_pc",
+    "tunables2": "#suv_camera_turret_tunables_pc",
     "tracers": [
         "#lmg",
         "#lmg_enemy"

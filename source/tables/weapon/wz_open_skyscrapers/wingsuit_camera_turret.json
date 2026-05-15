@@ -28,7 +28,7 @@
     "#hash_554be9f7": false,
     "sound240": "#hash_631a067190b54300",
     "sound250": "#hash_242aa17124751841",
-    "tunables1": "#hash_3a66c69f7b0708dd",
-    "tunables2": "#hash_3a66c69f7b0708dd",
+    "tunables1": "#wingsuit_camera_turret_tunables_pc",
+    "tunables2": "#wingsuit_camera_turret_tunables_pc",
     "turretAnimSettings": "#wingsuitanims"
 }

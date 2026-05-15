@@ -69,8 +69,8 @@
     "sound6c0": "#hash_1e69091865bbdbb8",
     "sound800": "#hash_21cba6ae89a3493c",
     "sound810": "#hash_21cba6ae89a3493c",
-    "tunables1": "#hash_731c2e0dff2acb6e",
-    "tunables2": "#hash_731c2e0dff2acb6e",
+    "tunables1": "#sig_buckler_dw_tunables_mp_pc",
+    "tunables2": "#sig_buckler_dw_tunables_mp_pc",
     "sharedWeaponSounds": "#battle_shield",
     "ballisticDesc": "#hash_c1cafc088d9cee00",
     "tracers": [

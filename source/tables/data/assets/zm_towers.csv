@@ -22316,7 +22316,7 @@ sound,#zm_towers.all
 com_map,#maps/zm/zm_towers.d3dbsp
 game_map,#maps/zm/zm_towers.d3dbsp
 weapontunables,#zhield_zword_turret_tunables_zm
-weapontunables,#hash_16b3d7864d09b602
+weapontunables,#rider_spear_tunables_zm
 weapontunables,#zhield_zword_lh_tunables_upgraded_zm
 weapontunables,#incendiary_fire_tunables_zm
 weapontunables,#ww_crossbow_t8_tunables_zm

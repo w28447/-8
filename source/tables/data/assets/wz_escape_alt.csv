@@ -47521,9 +47521,9 @@ weapon,d#hash_7a0108792f3d8ef0
 weapon,d#hash_7a1ffe2704307abc
 weapon,d#hash_7ce568de41aecc59
 weapon,d#player_air_vehicle1_main_turret_3rd_person
-weapontunables,d#hash_479d792d632e9a
+weapontunables,d#pistol_revolver_t8_tunables_wz_pc
 weapontunables,d#ar_an94_t8_tunables_wz
-weapontunables,d#hash_130086227efbc11
+weapontunables,d#sniper_powerbolt_t8_tunables_wz_pc
 weapontunables,d#dart_tunables_wz
 weapontunables,#flare_gun_tunables_wz
 weapontunables,d#basketball_tunables_wz
@@ -47557,9 +47557,9 @@ weapontunables,d#ww_crossbow_t8_tunables_wz
 weapontunables,d#shotgun_semiauto_t8_tunables_wz
 weapontunables,d#hash_1d9ba0824341442c
 weapontunables,d#ar_peacekeeper_t8_tunables_wz
-weapontunables,d#hash_21d64ec2f9166f3b
+weapontunables,d#smg_fastburst_t8_tunables_wz_pc
 weapontunables,d#hash_232fd89a1ca2340d
-weapontunables,d#hash_235e84ef52a60c6a
+weapontunables,d#shotgun_pump_t8_tunables_wz_pc
 weapontunables,d#hero_flamethrower_tunables_wz_pc
 weapontunables,d#melee_club_t8_tunables_wz
 weapontunables,d#ar_accurate_t8_tunables_wz
@@ -47585,7 +47585,7 @@ weapontunables,d#zombie_ai_defaultmelee_tunables_wz
 weapontunables,d#tr_damageburst_t8_tunables_wz
 weapontunables,d#ar_standard_t8_tunables_wz
 weapontunables,d#sniper_fastrechamber_t8_tunables_wz
-weapontunables,#hash_3a66c69f7b0708dd
+weapontunables,#wingsuit_camera_turret_tunables_pc
 weapontunables,d#ray_gun_mk2x_tunables_wz
 weapontunables,#wingsuit_camera_turret_tunables
 weapontunables,d#recon_car_tunables_wz
@@ -47598,12 +47598,12 @@ weapontunables,#hash_414c33459cb72646
 weapontunables,d#smg_accurate_t8_tunables_wz
 weapontunables,d#hatchet_tunables_wz
 weapontunables,d#smg_mp40_t8_tunables_wz
-weapontunables,d#hash_4530ed8c4d342bc4
+weapontunables,d#sniper_powersemi_t8_tunables_wz_pc
 weapontunables,d#willy_pete_tunables_wz
 weapontunables,#willy_pete_tunables_zm
 weapontunables,d#ray_gun_mk2z_tunables_wz
 weapontunables,d#eq_concertina_wire_tunables_wz
-weapontunables,d#hash_46b84e62c386c1c4
+weapontunables,d#sniper_fastrechamber_t8_tunables_wz_pc
 weapontunables,d#eq_tripwire_tunables_wz_pc
 weapontunables,d#tr_longburst_t8_tunables_wz
 weapontunables,d#ray_gun_mk2_tunables_wz
@@ -47635,7 +47635,7 @@ weapontunables,d#lmg_standard_t8_tunables_wz
 weapontunables,d#hash_5ed936eae3508e33
 weapontunables,d#hero_pineapplegun_tunables_wz_pc
 weapontunables,d#lmg_spray_t8_tunables_wz
-weapontunables,d#hash_651cd4f070d28616
+weapontunables,d#tr_midburst_t8_tunables_wz_pc
 weapontunables,d#eq_wraith_fire_tunables_wz
 weapontunables,d#melee_stopsign_t8_tunables_wz
 weapontunables,d#hash_6635a6200c6c76ed
@@ -47653,7 +47653,7 @@ weapontunables,#hash_6db651e4016accd6
 weapontunables,d#eq_slow_grenade_tunables_wz
 weapontunables,d#sniper_locus_t8_tunables_wz
 weapontunables,d#hash_7253b070f6449421
-weapontunables,d#hash_726dc80d208f995d
+weapontunables,d#tr_powersemi_t8_tunables_wz_pc
 weapontunables,d#hash_73b99ec5708d8271
 weapontunables,d#eq_grapple_tunables_wz_pc
 weapontunables,d#sniper_quickscope_t8_operator_tunables_wz
@@ -47664,7 +47664,7 @@ weapontunables,d#sig_bow_quickshot_tunables_wz
 weapontunables,d#hash_78c07a59ea145935
 weapontunables,d#ultimate_turret_tunables_wz
 weapontunables,d#shotgun_fullauto_t8_tunables_wz
-weapontunables,d#hash_7a47272694a6617c
+weapontunables,d#sniper_quickscope_t8_tunables_wz_pc
 weapontunables,d#smg_folding_t8_tunables_wz
 weapontunables,d#eq_tripwire_tunables_wz
 weapontunables,d#ww_blundergat_t8_tunables_wz
